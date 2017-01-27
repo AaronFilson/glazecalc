@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Glazecalc</title>
+  <link rel="stylesheet" href="/sass/styles.css">
+  <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+  <script src="bundle.js"></script>
+</head>
+<body data-ng-app="glazeCalcApp">
+  <div data-ng-controller="authController" data-ng-init="updateEmail()">
+    <header data-ng-if="welcome">
+      Welcome to the Glazecalc App!
+    </header>
+    <p data-ng-if="email" class="header-text">{{'Hello ' + email}} <a href data-ng-click="logout()">logout</a>
+       or Go <a href="#/home">Home</a>
+    </p>
+  </div>
+  
+  <main data-ng-view>
+  </main>
+
+  <footer>
+    MIT License 2017, Aaron Filson, Readme at : <a href="https://github.com/AaronFilson/glazecalc/">github</a>.
+  </footer>
+</body>
+</html>
