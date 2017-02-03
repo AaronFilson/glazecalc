@@ -4,8 +4,9 @@ const jwt = require('jsonwebtoken');
 
 var userSchema = new mongoose.Schema({
   email: { type: String, required: true },
-  password: { type: String, required: true },
   displayname: String,
+  password: { type: String, required: true },
+  role: String,
   settings: [String]
 });
 
@@ -19,7 +20,7 @@ userSchema.methods.comparePassword = function(password) {
 };
 
 userSchema.methods.generateToken = function() {
-  return jwt.sign({ id: this._id }, process.env.APP_SECRET || 'changethis');
+  return jwt.sign({ id: this._id }, process.env.APP_SECRET || 'glazedefault');
 };
 
 module.exports = exports = mongoose.model('User', userSchema);

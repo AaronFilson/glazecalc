@@ -7,7 +7,7 @@ module.exports = exports = (req, res, next) => {
   let decoded;
   try {
     decoded =
-      jwt.verify(req.headers.token, process.env.APP_SECRET || 'changethis');
+      jwt.verify(req.headers.token, process.env.APP_SECRET || 'glazedefault');
   } catch (e) {
     return res.status(401).json({ msg: 'could not authenticate user' });
   }

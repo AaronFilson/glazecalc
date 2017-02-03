@@ -1,4 +1,4 @@
-var PORT = process.env.PORT || process.env.$PORT || 4000;
+var PORT = process.env.PORT || 4000;
 var clientPort = process.env.CLIENTPORT || 6000;
 var hostURL = process.env.HOSTURL || 'http://localhost:';
 const express = require('express');
@@ -15,20 +15,20 @@ app.use((req, res, next) => {
 
 const adviceRouter = require(__dirname + '/server/routes/advice_routes');
 const authRouter = require(__dirname + '/server/routes/auth_routes');
-const firingRouter = require(__dirname + '/server/routes/firing_routes');
-const materialsRouter = require(__dirname + '/server/routes/materials_routes');
-const notesRouter = require(__dirname + '/server/routes/notes_routes');
+// const firingRouter = require(__dirname + '/server/routes/firing_routes');
+// const materialsRouter = require(__dirname + '/server/routes/materials_routes');
+// const notesRouter = require(__dirname + '/server/routes/notes_routes');
 const recipeRouter = require(__dirname + '/server/routes/recipe_routes');
-const trashRouter = require(__dirname + '/server/routes/trash_routes');
+// const trashRouter = require(__dirname + '/server/routes/trash_routes');
 const userRouter = require(__dirname + '/server/routes/user_routes');
 
-app.use('/', adviceRouter);
+app.use('/advice', adviceRouter);
 app.use('/', authRouter);
-app.use('/', firingRouter);
-app.use('/', materialsRouter);
-app.use('/', notesRouter);
-app.use('/', recipeRouter);
-app.use('/', trashRouter);
+// app.use('/', firingRouter);
+// app.use('/', materialsRouter);
+// app.use('/', notesRouter);
+app.use('/recipe', recipeRouter);
+// app.use('/', trashRouter);
 app.use('/', userRouter);
 
 app.listen(PORT, () => console.log('Glazecalc backend server up on port: ' + PORT));

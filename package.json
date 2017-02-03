@@ -6,7 +6,7 @@
   "scripts": {
     "install": "gulp",
     "start": "mongod --dbpath=./db & node clientserver & node server",
-    "test": "mongod --dbpath=./db & mocha test"
+    "test": "mongod --dbpath=./db & mocha server/test"
   },
   "repository": {
     "type": "git",
@@ -61,5 +61,5 @@
     "karma-jasmine": "^1.0.2",
     "mocha": "^3.0.2",
     "protractor": "^4.0.11"
-  },
+  }
 }
