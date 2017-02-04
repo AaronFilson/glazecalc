@@ -1,4 +1,4 @@
-process.env.MONGOLAB_URI = 'mongodb://localhost/a_test';
+process.env.MONGOLAB_URI = 'mongodb://localhost/n_test';
 require(__dirname + '/../../server');
 const chai = require('chai');
 const chaiHttp = require('chai-http');
@@ -7,19 +7,23 @@ const expect = chai.expect;
 const request = chai.request;
 const mongoose = require('mongoose');
 var PORT = process.env.PORT || 4000;
-var baseUri = 'localhost:' + PORT + '/advice';
+var baseUri = 'localhost:' + PORT + '/notes';
 const User = require(__dirname + '/../models/user');
 var userToken;
 var testUser;
-var gotAdvice;
+var gotNote;
 
-describe('advice API', () => {
+var testNote = {};
+testNote.content = 'This is a note for testing. In the case of a real note, there would be a helpful bit of info here.';
+testNote.relatedCollection = 'This will tell the note what field or section to attach to.';
+testNote.relatedId = '7';
+
+describe('Notes API', () => {
 
   before((done) => {
     testUser = new User();
-    testUser.email = 'test6@advice.com';
+    testUser.email = 'test9@tester.com';
     testUser.hashPassword('password');
-    testUser.role = 'admin';
     testUser.save( (err, data) => {
       if (err) throw err;
       testUser.token = userToken = data.generateToken();
@@ -34,19 +38,16 @@ describe('advice API', () => {
   });
 
   describe('Simple post and get API calls', () => {
-    var testAdvice = {};
-    testAdvice.content = 'Use care in storing notes, and make backups of formulas.';
-    testAdvice.tags = ['test', 'test tag', 'test tags here', 'test one', 'advice tag'];
-    testAdvice.title = 'Test Advice';
-    it('should be able to add one piece of advice', (done) => {
+
+    it('should be able to add one note', (done) => {
       request(baseUri)
-        .post('/newAdvice')
+        .post('/newNote')
         .set('token', userToken)
-        .send( { user: testUser, advice: testAdvice } )
+        .send( { user: testUser, note: testNote } )
         .end((err, res) => {
           expect(err).to.eql(null);
           expect(res.body).to.not.eql(null);
-          expect(res.body.title).to.eql('Test Advice');
+          expect(res.body.relatedId).to.eql('7');
           done();
         });
     });
@@ -58,36 +59,32 @@ describe('advice API', () => {
         .end((err, res) => {
           expect(err).to.eql(null);
           expect(res.body).to.not.eql(null);
-          expect(res.body.title).to.eql('Test Advice');
-          gotAdvice = res.body;
+          expect(res.body.relatedId).to.eql('7');
+          gotNote = res.body;
           done();
         });
     });
   });
 
-  describe('The getAll for advices', () => {
-    var testAdvice = {};
-    testAdvice.content = 'Use care in storing notes, and make backups of formulas.';
-    testAdvice.tags = ['test', 'test tag', 'test tags here', 'test one', 'advice tag'];
-    testAdvice.title = 'Test Advice';
+  describe('The getAll for notes', () => {
 
     before((done) => {
       request(baseUri)
-        .post('/newAdvice')
+        .post('/newNote')
         .set('token', userToken)
-        .send( { user: testUser, advice: testAdvice } )
+        .send( { user: testUser, note: testNote } )
         .end((err) => {
           if (err) throw err;
           request(baseUri)
-            .post('/newAdvice')
+            .post('/newNote')
             .set('token', userToken)
-            .send( { user: testUser, advice: testAdvice } )
+            .send( { user: testUser, note: testNote } )
             .end((err) => {
               if (err) throw err;
               request(baseUri)
-                .post('/newAdvice')
+                .post('/newNote')
                 .set('token', userToken)
-                .send( { user: testUser, advice: testAdvice } )
+                .send( { user: testUser, note: testNote } )
                 .end((err) => {
                   if (err) throw err;
                   done();
@@ -95,40 +92,40 @@ describe('advice API', () => {
             });
         });
     });
-    it('should get multiple advice elements', (done) => {
+    it('should get multiple notes', (done) => {
       request(baseUri)
         .get('/getAll/')
         .set('token', userToken)
         .end((err, res) => {
           expect(err).to.eql(null);
           expect(res.body).to.not.eql(null);
-          expect(res.body[3].title).to.eql('Test Advice');
+          expect(res.body[3].relatedId).to.eql('7');
           done();
         });
     });
   });
 
   describe('ability to UPDATE and DELETE', () => {
-    it('should be able to UPDATE an advice', (done) => {
+    it('should be able to UPDATE a note', (done) => {
       request(baseUri)
-        .put('/change/' + gotAdvice._id)
+        .put('/change/' + gotNote._id)
         .set('token', userToken)
-        .send({ advice: gotAdvice })
+        .send({ note: gotNote })
         .end((err, res) => {
           expect(err).to.eql(null);
-          expect(res.body.msg).to.eql('Successfully updated advice');
+          expect(res.body.msg).to.eql('Successfully updated note');
           expect(res).to.have.status(200);
           done();
         });
     });
 
-    it('should be able to DELETE an advice', (done) => {
+    it('should be able to DELETE a note', (done) => {
       request(baseUri)
-        .delete('/delete/' + gotAdvice._id)
+        .delete('/delete/' + gotNote._id)
         .set('token', userToken)
         .end((err, res) => {
           expect(err).to.eql(null);
-          expect(res.body.msg).to.eql('Successfully deleted advice');
+          expect(res.body.msg).to.eql('Successfully deleted note');
           expect(res).to.have.status(200);
           done();
         });
