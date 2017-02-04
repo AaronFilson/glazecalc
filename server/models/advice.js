@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-
+mongoose.Promise = global.Promise;
 var adviceSchema = new mongoose.Schema({
   content: { type: String, required: true },
   ownedBy: { type: String, required: true },

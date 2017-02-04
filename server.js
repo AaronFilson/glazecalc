@@ -15,8 +15,8 @@ app.use((req, res, next) => {
 
 const adviceRouter = require(__dirname + '/server/routes/advice_routes');
 const authRouter = require(__dirname + '/server/routes/auth_routes');
-// const firingRouter = require(__dirname + '/server/routes/firing_routes');
-// const materialsRouter = require(__dirname + '/server/routes/materials_routes');
+const firingRouter = require(__dirname + '/server/routes/firing_routes');
+const materialsRouter = require(__dirname + '/server/routes/materials_routes');
 // const notesRouter = require(__dirname + '/server/routes/notes_routes');
 const recipeRouter = require(__dirname + '/server/routes/recipe_routes');
 // const trashRouter = require(__dirname + '/server/routes/trash_routes');
@@ -24,8 +24,8 @@ const userRouter = require(__dirname + '/server/routes/user_routes');
 
 app.use('/advice', adviceRouter);
 app.use('/', authRouter);
-// app.use('/', firingRouter);
-// app.use('/', materialsRouter);
+app.use('/firing', firingRouter);
+app.use('/materials', materialsRouter);
 // app.use('/', notesRouter);
 app.use('/recipe', recipeRouter);
 // app.use('/', trashRouter);

@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-
+mongoose.Promise = global.Promise;
 var firingSchema = new mongoose.Schema({
   date: String,
   fieldsIncluded: { type: [String], required: true },
@@ -7,7 +7,7 @@ var firingSchema = new mongoose.Schema({
   kiln: String,
   notes: { type: [String] },
   ownedBy: { type: String, required: true },
-  rows: { type: [String], required: true },
+  rows: { type: [[String]], required: true },
   title: { type: String, required: true }
 });
 
