@@ -9,7 +9,7 @@ const trashRouter = module.exports = exports = express.Router();
 trashRouter.post('/newTrash', jwtAuth, jsonParser, (req, res) => {
   var incTrash = req.body.trash || {};
   if (!req.user.id || !incTrash.content || !incTrash.fromCollection || !incTrash.date) {
-    res.status(400).json( { msg: 'Missing required information' } );
+    return res.status(400).json( { msg: 'Missing required information' } );
   }
   var newestTrash = new Trash();
   try {

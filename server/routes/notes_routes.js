@@ -9,7 +9,7 @@ const notesRouter = module.exports = exports = express.Router();
 notesRouter.post('/newNote', jwtAuth, jsonParser, (req, res) => {
   var incNote = req.body.note;
   if (!req.user.id || !incNote.content || !incNote.relatedCollection || !incNote.relatedId) {
-    res.status(400).json( { msg: 'Missing required information' } );
+    return res.status(400).json( { msg: 'Missing required information' } );
   }
   var newestNote = new Note();
   try {

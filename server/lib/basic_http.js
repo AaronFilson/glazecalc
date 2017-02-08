@@ -19,5 +19,5 @@ module.exports = exports = (req, res, next) => {
   } catch (e) {
     console.log('basic http error : ' + e);
   }
-  res.status(401).json({ msg: 'could not authenticate user' });
+  return res.status(401).json({ msg: 'could not authenticate user' });
 };

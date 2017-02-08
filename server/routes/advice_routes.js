@@ -9,7 +9,7 @@ const adviceRouter = module.exports = exports = express.Router();
 adviceRouter.post('/newAdvice', jwtAuth, jsonParser, (req, res) => {
   var incAdvice = req.body.advice;
   if (!req.user.id || !(req.user.role === 'admin') || !incAdvice.title || !incAdvice.content || !incAdvice.tags) {
-    res.status(400).json( { msg: 'Missing required information' } );
+    return res.status(400).json( { msg: 'Missing required information' } );
   }
   var newestAdvice = new Advice();
 
@@ -49,7 +49,7 @@ adviceRouter.put('/change/:id', jwtAuth, jsonParser, (req, res) => {
   var adviceData = req.body.advice;
   if (!req.params.id || !req.user.id || !(req.user.role === 'admin')
   || !adviceData.title || !adviceData.content || !adviceData.tags) {
-    res.status(400).json( { msg: 'Missing required information' } );
+    return res.status(400).json( { msg: 'Missing required information' } );
   }
   Advice.update({ _id: req.params.id }, adviceData, (err) => {
     if (err) return handleDBError(err, res);
@@ -60,7 +60,7 @@ adviceRouter.put('/change/:id', jwtAuth, jsonParser, (req, res) => {
 
 adviceRouter.delete('/delete/:id', jwtAuth, jsonParser, (req, res) => {
   if (!req.params.id || !req.user.id || !(req.user.role === 'admin')) {
-    res.status(400).json( { msg: 'Missing required information' } );
+    return res.status(400).json( { msg: 'Missing required information' } );
   }
   Advice.remove({ _id: req.params.id }, (err) => {
     if (err) return handleDBError(err, res);

@@ -9,7 +9,7 @@ const recipeRouter = module.exports = exports = express.Router();
 recipeRouter.post('/newRecipe', jwtAuth, jsonParser, (req, res) => {
   var incRecipe = req.body.recipe;
   if (!req.user.id || !incRecipe.title || !incRecipe.materials) {
-    res.status(400).json( { msg: 'Missing required information' } );
+    return res.status(400).json( { msg: 'Missing required information' } );
   }
   var newestRecipe = new Recipe();
   try {

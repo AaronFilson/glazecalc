@@ -10,7 +10,7 @@ materialsRouter.post('/newMaterial', jwtAuth, jsonParser, (req, res) => {
   var incMaterial = req.body.material || {};
 
   if (!req.user.id || !incMaterial.fields || !incMaterial.relatedTo || !incMaterial.title) {
-    res.status(400).json( { msg: 'Missing required information' } );
+    return res.status(400).json( { msg: 'Missing required information' } );
   }
   var newestMaterial = new Material();
   try {

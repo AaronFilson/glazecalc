@@ -11,7 +11,7 @@ firingRouter.post('/newFiring', jwtAuth, jsonParser, (req, res) => {
 
   if (!req.user.id || !incFiring.fieldsIncluded || !incFiring.fieldPositions
     || !incFiring.rows || !incFiring.title) {
-    res.status(400).json( { msg: 'Missing required information' } );
+    return res.status(400).json( { msg: 'Missing required information' } );
   }
   var newestFiring = new Firing();
   try {
