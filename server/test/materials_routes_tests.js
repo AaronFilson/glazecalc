@@ -42,7 +42,7 @@ describe('materials API', () => {
 
     it('should be able to add one material', (done) => {
       request(baseUri)
-        .post('/newMaterial')
+        .post('/create')
         .set('token', userToken)
         .send( { user: testUser, material: testMaterial } )
         .end((err, res) => {
@@ -71,19 +71,19 @@ describe('materials API', () => {
 
     before((done) => {
       request(baseUri)
-        .post('/newMaterial')
+        .post('/create')
         .set('token', userToken)
         .send( { user: testUser, material: testMaterial } )
         .end((err) => {
           if (err) throw err;
           request(baseUri)
-            .post('/newMaterial')
+            .post('/create')
             .set('token', userToken)
             .send( { user: testUser, material: testMaterial } )
             .end((err) => {
               if (err) throw err;
               request(baseUri)
-                .post('/newMaterial')
+                .post('/create')
                 .set('token', userToken)
                 .send( { user: testUser, material: testMaterial } )
                 .end((err) => {

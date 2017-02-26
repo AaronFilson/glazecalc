@@ -41,7 +41,7 @@ describe('Notes API', () => {
 
     it('should be able to add one note', (done) => {
       request(baseUri)
-        .post('/newNote')
+        .post('/create')
         .set('token', userToken)
         .send( { user: testUser, note: testNote } )
         .end((err, res) => {
@@ -70,19 +70,19 @@ describe('Notes API', () => {
 
     before((done) => {
       request(baseUri)
-        .post('/newNote')
+        .post('/create')
         .set('token', userToken)
         .send( { user: testUser, note: testNote } )
         .end((err) => {
           if (err) throw err;
           request(baseUri)
-            .post('/newNote')
+            .post('/create')
             .set('token', userToken)
             .send( { user: testUser, note: testNote } )
             .end((err) => {
               if (err) throw err;
               request(baseUri)
-                .post('/newNote')
+                .post('/create')
                 .set('token', userToken)
                 .send( { user: testUser, note: testNote } )
                 .end((err) => {

@@ -44,7 +44,7 @@ describe('firing API', () => {
 
     it('should be able to add one firing', (done) => {
       request(baseUri)
-        .post('/newFiring')
+        .post('/create')
         .set('token', userToken)
         .send( { user: testUser, firing: testFiring } )
         .end((err, res) => {
@@ -73,19 +73,19 @@ describe('firing API', () => {
 
     before((done) => {
       request(baseUri)
-        .post('/newFiring')
+        .post('/create')
         .set('token', userToken)
         .send( { user: testUser, firing: testFiring } )
         .end((err) => {
           if (err) throw err;
           request(baseUri)
-            .post('/newFiring')
+            .post('/create')
             .set('token', userToken)
             .send( { user: testUser, firing: testFiring } )
             .end((err) => {
               if (err) throw err;
               request(baseUri)
-                .post('/newFiring')
+                .post('/create')
                 .set('token', userToken)
                 .send( { user: testUser, firing: testFiring } )
                 .end((err) => {

@@ -6,7 +6,7 @@ const jwtAuth = require(__dirname + '/../lib/jwt_auth');
 
 const trashRouter = module.exports = exports = express.Router();
 
-trashRouter.post('/newTrash', jwtAuth, jsonParser, (req, res) => {
+trashRouter.post('/create', jwtAuth, jsonParser, (req, res) => {
   var incTrash = req.body.trash || {};
   if (!req.user.id || !incTrash.content || !incTrash.fromCollection || !incTrash.date) {
     return res.status(400).json( { msg: 'Missing required information' } );

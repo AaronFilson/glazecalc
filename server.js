@@ -1,5 +1,5 @@
 var PORT = process.env.PORT || 4000;
-var clientPort = process.env.CLIENTPORT || 6000;
+var clientPort = process.env.CLIENTPORT || 4001;
 var hostURL = process.env.HOSTURL || 'http://localhost:';
 const express = require('express');
 const app = module.exports = exports = express();

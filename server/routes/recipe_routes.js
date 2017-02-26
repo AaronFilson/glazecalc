@@ -6,7 +6,7 @@ const jwtAuth = require(__dirname + '/../lib/jwt_auth');
 
 const recipeRouter = module.exports = exports = express.Router();
 
-recipeRouter.post('/newRecipe', jwtAuth, jsonParser, (req, res) => {
+recipeRouter.post('/create', jwtAuth, jsonParser, (req, res) => {
   var incRecipe = req.body.recipe;
   if (!req.user.id || !incRecipe.title || !incRecipe.materials) {
     return res.status(400).json( { msg: 'Missing required information' } );

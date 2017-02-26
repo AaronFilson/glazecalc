@@ -6,7 +6,7 @@ const jwtAuth = require(__dirname + '/../lib/jwt_auth');
 
 const materialsRouter = module.exports = exports = express.Router();
 
-materialsRouter.post('/newMaterial', jwtAuth, jsonParser, (req, res) => {
+materialsRouter.post('/create', jwtAuth, jsonParser, (req, res) => {
   var incMaterial = req.body.material || {};
 
   if (!req.user.id || !incMaterial.fields || !incMaterial.relatedTo || !incMaterial.title) {

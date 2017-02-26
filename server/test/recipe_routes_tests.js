@@ -38,7 +38,7 @@ describe('recipe API', () => {
     testRecipe.title = 'Leach Celadon 4.5';
     it('should be able to add one recipe', (done) => {
       request(baseUri)
-        .post('/newRecipe')
+        .post('/create')
         .set('token', userToken)
         .send( { user: testUser, recipe: testRecipe } )
         .end((err, res) => {
@@ -70,19 +70,19 @@ describe('recipe API', () => {
 
     before((done) => {
       request(baseUri)
-        .post('/newRecipe')
+        .post('/create')
         .set('token', userToken)
         .send( { user: testUser, recipe: testRecipe } )
         .end((err) => {
           if (err) throw err;
           request(baseUri)
-            .post('/newRecipe')
+            .post('/create')
             .set('token', userToken)
             .send( { user: testUser, recipe: testRecipe } )
             .end((err) => {
               if (err) throw err;
               request(baseUri)
-                .post('/newRecipe')
+                .post('/create')
                 .set('token', userToken)
                 .send( { user: testUser, recipe: testRecipe } )
                 .end((err) => {

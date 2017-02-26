@@ -40,7 +40,7 @@ describe('advice API', () => {
     testAdvice.title = 'Test Advice';
     it('should be able to add one piece of advice', (done) => {
       request(baseUri)
-        .post('/newAdvice')
+        .post('/create')
         .set('token', userToken)
         .send( { user: testUser, advice: testAdvice } )
         .end((err, res) => {
@@ -73,19 +73,19 @@ describe('advice API', () => {
 
     before((done) => {
       request(baseUri)
-        .post('/newAdvice')
+        .post('/create')
         .set('token', userToken)
         .send( { user: testUser, advice: testAdvice } )
         .end((err) => {
           if (err) throw err;
           request(baseUri)
-            .post('/newAdvice')
+            .post('/create')
             .set('token', userToken)
             .send( { user: testUser, advice: testAdvice } )
             .end((err) => {
               if (err) throw err;
               request(baseUri)
-                .post('/newAdvice')
+                .post('/create')
                 .set('token', userToken)
                 .send( { user: testUser, advice: testAdvice } )
                 .end((err) => {

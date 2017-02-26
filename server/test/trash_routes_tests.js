@@ -41,7 +41,7 @@ describe('Trash API', () => {
 
     it('should be able to add one trash', (done) => {
       request(baseUri)
-        .post('/newTrash')
+        .post('/create')
         .set('token', userToken)
         .send( { user: testUser, trash: testTrash } )
         .end((err, res) => {
@@ -70,19 +70,19 @@ describe('Trash API', () => {
 
     before((done) => {
       request(baseUri)
-        .post('/newTrash')
+        .post('/create')
         .set('token', userToken)
         .send( { user: testUser, trash: testTrash } )
         .end((err) => {
           if (err) throw err;
           request(baseUri)
-            .post('/newTrash')
+            .post('/create')
             .set('token', userToken)
             .send( { user: testUser, trash: testTrash } )
             .end((err) => {
               if (err) throw err;
               request(baseUri)
-                .post('/newTrash')
+                .post('/create')
                 .set('token', userToken)
                 .send( { user: testUser, trash: testTrash } )
                 .end((err) => {

@@ -6,7 +6,7 @@ const jwtAuth = require(__dirname + '/../lib/jwt_auth');
 
 const adviceRouter = module.exports = exports = express.Router();
 
-adviceRouter.post('/newAdvice', jwtAuth, jsonParser, (req, res) => {
+adviceRouter.post('/create', jwtAuth, jsonParser, (req, res) => {
   var incAdvice = req.body.advice;
   if (!req.user.id || !(req.user.role === 'admin') || !incAdvice.title || !incAdvice.content || !incAdvice.tags) {
     return res.status(400).json( { msg: 'Missing required information' } );

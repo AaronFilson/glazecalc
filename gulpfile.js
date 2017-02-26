@@ -1,7 +1,11 @@
 const gulp = require('gulp');
 const webpack = require('webpack-stream');
+// require('babel');
+require('babel-core');
 require('babel-loader');
+require('babel-preset-es2015');
 require('html-loader');
+var babel = require('gulp-babel');
 const sass = require('gulp-sass');
 const maps = require('gulp-sourcemaps');
 const minifyCss = require('gulp-minify-css');
@@ -38,6 +42,14 @@ gulp.task('favicon:dev', () => {
 gulp.task('webpack:dev', () => {
   gulp.src('./app/js/client.js')
     .pipe(webpack({
+      module: {
+        loaders: [
+          {
+            test: /\.js$/,
+            loader: 'babel-loader'
+          }
+        ]
+      },
       output: {
         filename: 'bundle.js'
       }
@@ -52,7 +64,7 @@ gulp.task('webpack:test', () => {
         loaders: [
           {
             test: /\.html$/,
-            loader: 'html'
+            loader: 'html-loader'
           }
         ]
       },

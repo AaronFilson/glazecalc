@@ -6,7 +6,7 @@ const jwtAuth = require(__dirname + '/../lib/jwt_auth');
 
 const firingRouter = module.exports = exports = express.Router();
 
-firingRouter.post('/newFiring', jwtAuth, jsonParser, (req, res) => {
+firingRouter.post('/create', jwtAuth, jsonParser, (req, res) => {
   var incFiring = req.body.firing || {};
 
   if (!req.user.id || !incFiring.fieldsIncluded || !incFiring.fieldPositions
