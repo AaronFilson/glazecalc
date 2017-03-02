@@ -1,11 +1,8 @@
 const gulp = require('gulp');
 const webpack = require('webpack-stream');
-// require('babel');
-require('babel-core');
+require('gulp-babel');
 require('babel-loader');
-require('babel-preset-es2015');
 require('html-loader');
-var babel = require('gulp-babel');
 const sass = require('gulp-sass');
 const maps = require('gulp-sourcemaps');
 const minifyCss = require('gulp-minify-css');
