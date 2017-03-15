@@ -9,7 +9,7 @@ module.exports = function(app) {
       };
 
       $scope.submit = function(material) {
-        if (!user) {
+        if (!material) {
           $scope.errors.push('Error: there was no info to submit.');
           return console.log('No information in the object when calling submit!');
         }
