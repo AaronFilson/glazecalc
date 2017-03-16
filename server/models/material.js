@@ -7,7 +7,7 @@ var materialSchema = new mongoose.Schema({
   notes: { type: [String] },
   ownedBy: { type: String, required: true },
   relatedTo: { type: [String], required: true },
-  title: { type: String, required: true }
+  name: { type: String, required: true }
 });
 
 module.exports = mongoose.model('Material', materialSchema);

@@ -17,7 +17,7 @@ var testMaterial = {};
 testMaterial.fields = ['not really sure how this one is going yet', 4];
 testMaterial.notes = ['fake note id 1', 'fake note id 2'];
 testMaterial.relatedTo = ['china clay', 'kaolin'];
-testMaterial.title = 'porcelain';
+testMaterial.name = 'porcelain';
 
 describe('materials API', () => {
 
@@ -48,7 +48,7 @@ describe('materials API', () => {
         .end((err, res) => {
           expect(err).to.eql(null);
           expect(res.body).to.not.eql(null);
-          expect(res.body.title).to.eql('porcelain');
+          expect(res.body.name).to.eql('porcelain');
           done();
         });
     });
@@ -60,7 +60,7 @@ describe('materials API', () => {
         .end((err, res) => {
           expect(err).to.eql(null);
           expect(res.body).to.not.eql(null);
-          expect(res.body.title).to.eql('porcelain');
+          expect(res.body.name).to.eql('porcelain');
           gotMaterial = res.body;
           done();
         });
@@ -100,7 +100,7 @@ describe('materials API', () => {
         .end((err, res) => {
           expect(err).to.eql(null);
           expect(res.body).to.not.eql(null);
-          expect(res.body[3].title).to.eql('porcelain');
+          expect(res.body[3].name).to.eql('porcelain');
           done();
         });
     });

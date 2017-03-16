@@ -21,7 +21,6 @@ describe('user API', () => {
     testUser.save( (err, data) => {
       if (err) throw err;
       testUser.token = userToken = data.generateToken();
-      debugger;
       done();
     });
   });
@@ -52,7 +51,7 @@ describe('user API', () => {
         .put('/usersettings/' + testUser._id)
         .set('token', userToken)
         .send({ email: 'new email' })
-        .end(function(err, res) {
+        .end((err, res) => {
           expect(err).to.eql(null);
           expect(res.body.msg).to.eql('User updated');
           expect(res).to.have.status(200);

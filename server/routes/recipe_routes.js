@@ -20,7 +20,7 @@ recipeRouter.post('/create', jwtAuth, jsonParser, (req, res) => {
     newestRecipe.notes = incRecipe.notes;
     newestRecipe.title = incRecipe.title;
   } catch (e) {
-    console.log('err in setting recipe properties : ', e);
+    console.log('error in setting recipe properties : ', e);
     return res.status(500).json( { msg: 'Error in creating the new recipe.' } );
   }
 

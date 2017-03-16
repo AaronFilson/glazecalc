@@ -10,7 +10,8 @@ firingRouter.post('/create', jwtAuth, jsonParser, (req, res) => {
   var incFiring = req.body.firing || {};
 
   if (!req.user.id || !incFiring.fieldsIncluded || !incFiring.fieldPositions
-    || !incFiring.rows || !incFiring.title) {
+    || !incFiring.rows
+    || !incFiring.title) {
     return res.status(400).json( { msg: 'Missing required information' } );
   }
   var newestFiring = new Firing();
@@ -24,7 +25,7 @@ firingRouter.post('/create', jwtAuth, jsonParser, (req, res) => {
     newestFiring.rows = incFiring.rows;
     newestFiring.title = incFiring.title;
   } catch (e) {
-    console.log('err in setting firing properties : ', e);
+    console.log('error in setting firing properties : ', e);
     return res.status(500).json( { msg: 'Error in creating the new firing chart.' } );
   }
 
@@ -57,7 +58,14 @@ firingRouter.get('/getAll', jwtAuth, jsonParser, (req, res) => {
 
 firingRouter.put('/change/:id', jwtAuth, jsonParser, (req, res) => {
   var firingData = req.body.firing;
-  Firing.update({ _id: req.params.id }, firingData, (err) => {
+  console.log('firingData record id: ', firingData._id);
+  console.log('req.params.id record id: ', req.params.id);
+
+  if (!req.params.id || !req.user.id || !firingData.title || !firingData.ownedBy
+     || !firingData.rows || !firingData.fieldsIncluded || !firingData.fieldPositions ) {
+    return res.status(400).json( { msg: 'Missing required information' } );
+  }
+  Firing.update({ _id: req.params.id }, firingData, { overwrite: true }, (err) => {
     if (err) return handleDBError(err, res);
 
     res.status(200).json({ msg: 'Successfully updated firing' });

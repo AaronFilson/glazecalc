@@ -18,7 +18,7 @@ notesRouter.post('/create', jwtAuth, jsonParser, (req, res) => {
     newestNote.relatedCollection = incNote.relatedCollection;
     newestNote.relatedId = incNote.relatedId;
   } catch (e) {
-    console.log('err in setting note properties : ', e);
+    console.log('error in setting note properties : ', e);
     return res.status(500).json( { msg: 'Error in creating the new note.' } );
   }
 

@@ -7,7 +7,7 @@ var firingSchema = new mongoose.Schema({
   kiln: String,
   notes: { type: [String] },
   ownedBy: { type: String, required: true },
-  rows: { type: [[String]], required: true },
+  rows: { type: [String], required: true },
   title: { type: String, required: true }
 });
 

@@ -14,7 +14,7 @@ var testUser;
 var gotNote;
 
 var testNote = {};
-testNote.content = 'This is a note for testing. In the case of a real note, there would be a helpful bit of info here.';
+testNote.content = 'This is a note for testing.';
 testNote.relatedCollection = 'This will tell the note what field or section to attach to.';
 testNote.relatedId = '7';
 

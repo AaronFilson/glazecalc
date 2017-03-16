@@ -9,7 +9,7 @@ const materialsRouter = module.exports = exports = express.Router();
 materialsRouter.post('/create', jwtAuth, jsonParser, (req, res) => {
   var incMaterial = req.body.material || {};
 
-  if (!req.user.id || !incMaterial.fields || !incMaterial.relatedTo || !incMaterial.title) {
+  if (!req.user.id || !incMaterial.fields || !incMaterial.relatedTo || !incMaterial.name) {
     return res.status(400).json( { msg: 'Missing required information' } );
   }
   var newestMaterial = new Material();
@@ -18,9 +18,9 @@ materialsRouter.post('/create', jwtAuth, jsonParser, (req, res) => {
     newestMaterial.fields = incMaterial.fields;
     newestMaterial.notes = incMaterial.notes;
     newestMaterial.relatedTo = incMaterial.relatedTo;
-    newestMaterial.title = incMaterial.title;
+    newestMaterial.name = incMaterial.name;
   } catch (e) {
-    console.log('err in setting material properties : ', e);
+    console.log('error in setting material properties : ', e);
     return res.status(500).json( { msg: 'Error in creating the new material.' } );
   }
 

@@ -1,4 +1,4 @@
-process.env.MONGOLAB_URI = 'mongodb://localhost/f_test';
+process.env.MONGOLAB_URI = 'mongodb://localhost/firing_test';
 require(__dirname + '/../../server');
 const chai = require('chai');
 const chaiHttp = require('chai-http');
@@ -110,6 +110,9 @@ describe('firing API', () => {
 
   describe('ability to UPDATE and DELETE', () => {
     it('should be able to UPDATE a firing', (done) => {
+
+      gotFiring.title = 'newly updated title';
+
       request(baseUri)
         .put('/change/' + gotFiring._id)
         .set('token', userToken)

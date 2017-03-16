@@ -18,7 +18,7 @@ trashRouter.post('/create', jwtAuth, jsonParser, (req, res) => {
     newestTrash.date = incTrash.date;
     newestTrash.fromCollection = incTrash.fromCollection;
   } catch (e) {
-    console.log('err in setting trash properties : ', e);
+    console.log('error in setting trash properties : ', e);
     return res.status(500).json( { msg: 'Error in creating the new trash.' } );
   }
 
