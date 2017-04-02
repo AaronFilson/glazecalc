@@ -1,5 +1,3 @@
-material view file stub.
-
 <nav>
   links to pages:
   <a href="#/advice">home</a>
@@ -10,3 +8,38 @@ material view file stub.
   <a href="#/recipe">recipe</a>
   <a href="#/trash">trash</a>
 </nav>
+
+<section class="input" data-ng-init="getAll()">
+  Input information on the new material <br>
+  <label for="material-name"> Name of Material : </label>
+  <input id="material-name" type="text" name="MaterialName" value="" ng-model="name">
+  <label for="related-to"> Related To : </label>
+  <input id="related-to" type="text" name="RelatedTo" value="" ng-model="relatedTo">
+  <label for="notes"> Notes : </label>
+  <input id="notes" type="text" name="Notes" value="" ng-model="notes">
+  <br>
+  <p>1. Enter the formula:
+      <input type="radio" name="unityFormula" value="percent" checked="checked"> Percent
+      <input type="radio" name="unityFormula" value="unity"> Unity
+      <br>
+      Oxide Component Selection<component-select data-ng-model="component"></component-select><br>
+      Element Selection <element-select data-ng-model="element"></element-select><br>
+      Add an oxide or element : <button data-ng-click="addFormulaField(componentselect, elementselect)"> + </button> <br>
+    <ul>
+      <li data-ng-repeat="item in formula track by $index">
+        {{item.name}}
+        <p>Amount: <input type="text" name="amount" value="" data-ng-model="item.amount">
+          </p>
+        <button type="button" data-ng-click="removeFromFormula(item)">
+          Remove from formula list
+        </button>
+      </li>
+    </ul>
+    <label for="manualformulaweight">Manual entry of formula weight</label>
+    <input id="manualformulaweight" type="text" name="manualformulaweight" value="">
+    <label for="manualmolecularweight">Manual entry of molecular weight</label>
+    <input id="manualmolecularweight" type="text" name="manualmolecularweight" value="">
+  </p>
+
+  <button data-ng-click="submit()">Save</button>
+</section>
