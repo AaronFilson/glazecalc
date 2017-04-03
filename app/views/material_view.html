@@ -9,14 +9,26 @@
   <a href="#/trash">trash</a>
 </nav>
 
+<ol class="errors-section" data-ng-if="errors.length">
+  <li data-ng-repeat="error in errors">{{error}}
+    <button type="button" name="clear" data-ng-click="dismissError(error)">Dismiss</button>
+  </li>
+</ol>
+
+<ol data-ng-if="serverMessages.length">
+  <li data-ng-repeat="msg in serverMessages">{{msg}}
+    <button type="button" name="clear" data-ng-click="dismissMessage(msg)">Dismiss</button>
+  </li>
+</ol>
+
 <section class="input" data-ng-init="getAll()">
   Input information on the new material <br>
   <label for="material-name"> Name of Material : </label>
-  <input id="material-name" type="text" name="MaterialName" value="" ng-model="name">
+  <input id="material-name" type="text" name="MaterialName" value="" ng-model="matForm.name">
   <label for="related-to"> Related To : </label>
-  <input id="related-to" type="text" name="RelatedTo" value="" ng-model="relatedTo">
+  <input id="related-to" type="text" name="RelatedTo" value="" ng-model="matForm.relatedTo">
   <label for="notes"> Notes : </label>
-  <input id="notes" type="text" name="Notes" value="" ng-model="notes">
+  <input id="notes" type="text" name="Notes" value="" ng-model="matForm.notes">
   <br>
   <p>1. Enter the formula:
       <input type="radio" name="unityFormula" value="percent" checked="checked"> Percent
@@ -41,5 +53,5 @@
     <input id="manualmolecularweight" type="text" name="manualmolecularweight" value="">
   </p>
 
-  <button data-ng-click="submit()">Save</button>
+  <button data-ng-click="submit(matForm)">Save</button>
 </section>

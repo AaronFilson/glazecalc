@@ -7,8 +7,8 @@ const jwtAuth = require(__dirname + '/../lib/jwt_auth');
 const materialsRouter = module.exports = exports = express.Router();
 
 materialsRouter.post('/create', jwtAuth, jsonParser, (req, res) => {
-  var incMaterial = req.body.material || {};
-
+  var incMaterial = req.body || {};
+  debugger;
   if (!req.user.id || !incMaterial.fields || !incMaterial.relatedTo || !incMaterial.name) {
     return res.status(400).json( { msg: 'Missing required information' } );
   }
