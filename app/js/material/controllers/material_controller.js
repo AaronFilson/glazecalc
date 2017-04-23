@@ -6,6 +6,9 @@ module.exports = function(app) {
       $scope.serverMessages = [];
       $scope.formula = [];
       $scope.matForm = {};
+      $scope.myServerMats = [];
+      $scope.standardMats = [];
+      $scope.editToggle = false;
 
       var materialService = Resource('/materials/');
 
@@ -24,7 +27,7 @@ module.exports = function(app) {
           return console.log('No information in the object when calling submit!');
         }
         matCopy.fields = $scope.formula;
-        materialService.create(matCopy, function(err) {
+        materialService.create(matCopy, function(err, data) {
           if (err) {
             $scope.errors.push(err);
             console.dir('Error: ', err);
@@ -32,12 +35,19 @@ module.exports = function(app) {
             $scope.serverMessages.push('Success. Material added to database.');
             $scope.formula = [];
             $scope.matForm = {};
+            $scope.myServerMats.push(data);
           }
         });
       };
 
       $scope.getAll = function() {
-        materialService.getAll();
+        materialService.getAll((err, data) => {
+          if (err) {
+            $scope.errors.push('There was an error in getting the materials information.');
+            return console.log('Error: ', err);
+          }
+          $scope.myServerMats = data;
+        });
       };
 
       $scope.removeFromFormula = function(item) {
@@ -57,5 +67,28 @@ module.exports = function(app) {
         $scope.formula.push(localtry);
       };
 
+      $scope.getStandard = function() {
+        materialService.getStandard((err, data) => {
+          if (err) {
+            $scope.errors.push('There was an error in getting the standard materials information.');
+            return console.log('Error: ', err);
+          }
+          $scope.standardMats = data;
+        });
+      };
+
+      $scope.editMyListToggle = function() {
+        $scope.editToggle = !$scope.editToggle;
+      };
+
+      $scope.removeMyMat = function(theMat) {
+        materialService.delete(theMat, (err) => {
+          if (err) {
+            $scope.errors.push('Error in deleting the material from the server.');
+            return console.log('Error: ', err);
+          }
+        });
+        $scope.myServerMats.splice($scope.myServerMats.indexOf(theMat), 1);
+      };
     }]);
 };

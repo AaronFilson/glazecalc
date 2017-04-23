@@ -6,7 +6,7 @@ var materialSchema = new mongoose.Schema({
   fields: { type: [Schema.Types.Mixed], required: true },
   notes: { type: [String] },
   ownedBy: { type: String, required: true },
-  relatedTo: { type: [String], required: true },
+  relatedTo: String,
   name: { type: String, required: true }
 });
 

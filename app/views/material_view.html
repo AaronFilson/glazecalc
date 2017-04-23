@@ -1,9 +1,10 @@
 <nav>
+  You are on the Material page.
+  <br>
   links to pages:
-  <a href="#/advice">home</a>
+  <a href="#/advice">advice</a>
   <a href="#/firing">firing</a>
   <a href="#/home">home</a>
-  You are on the Material page.
   <a href="#/notes">notes</a>
   <a href="#/recipe">recipe</a>
   <a href="#/trash">trash</a>
@@ -21,8 +22,12 @@
   </li>
 </ol>
 
-<section class="input" data-ng-init="getAll()">
+<section class="inputbox" data-ng-init="getAll()">
   Input information on the new material <br>
+  <p>
+    Symbols to copy into your material formula:
+    ₁ ₂ ₃ ₄ ₅ ₆ ₇ ₈ ₉ ₀ •
+  </p>
   <label for="material-name"> Name of Material : </label>
   <input id="material-name" type="text" name="MaterialName" value="" ng-model="matForm.name">
   <label for="related-to"> Related To : </label>
@@ -30,13 +35,17 @@
   <label for="notes"> Notes : </label>
   <input id="notes" type="text" name="Notes" value="" ng-model="matForm.notes">
   <br>
-  <p>1. Enter the formula:
-      <input type="radio" name="unityFormula" value="percent" checked="checked"> Percent
+  <label for="manualformulaweight">Manual entry of formula weight</label>
+  <input id="manualformulaweight" type="text" name="manualformulaweight" value="">
+
+  <p>1. Enter the formula (fired):
+      <input type="radio" name="unityFormula" value="percent" checked="checked"> Percent or Batch / Part
       <input type="radio" name="unityFormula" value="unity"> Unity
+      <input type="radio" name="unityFormula" value="molecular"> Molecular
       <br>
       Oxide Component Selection<component-select data-ng-model="component"></component-select><br>
       Element Selection <element-select data-ng-model="element"></element-select><br>
-      Add an oxide or element : <button data-ng-click="addFormulaField(componentselect, elementselect)"> + </button> <br>
+      Add the above oxide, element : <button data-ng-click="addFormulaField(componentselect, elementselect)"> + </button> <br>
     <ul>
       <li data-ng-repeat="item in formula track by $index">
         {{item.name}}
@@ -47,11 +56,35 @@
         </button>
       </li>
     </ul>
-    <label for="manualformulaweight">Manual entry of formula weight</label>
-    <input id="manualformulaweight" type="text" name="manualformulaweight" value="">
-    <label for="manualmolecularweight">Manual entry of molecular weight</label>
+    <label for="manualmolecularweight">Manual entry of equivalent molecular weight</label>
     <input id="manualmolecularweight" type="text" name="manualmolecularweight" value="">
   </p>
 
   <button data-ng-click="submit(matForm)">Save</button>
+</section>
+
+<section data-ng-if="myServerMats.length">
+  <p>My server materials:
+    <br>
+    Edit / Remove toggle
+    <button type="button" name="serverMatEdit" data-ng-click="editMyListToggle()"> toggle </button>
+    <ul>
+      <li data-ng-repeat="mat in myServerMats">{{mat.name}}
+        {{mat.fields}}
+        <p data-ng-if="editToggle">Remove from the server:
+          <button type="button" name="remoteMat" data-ng-click="removeMyMat(mat)"> X </button></p>
+      </li>
+    </ul>
+  </p>
+
+</section>
+
+<section data-ng-init="getStandard()">
+  <p data-ng-if="standardMats.length">
+    The standard server materials:
+    <br>
+    <ul>
+      <li data-ng-repeat="stdMat in standardMats"></li>
+    </ul>
+  </p>
 </section>

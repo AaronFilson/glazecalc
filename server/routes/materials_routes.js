@@ -8,8 +8,7 @@ const materialsRouter = module.exports = exports = express.Router();
 
 materialsRouter.post('/create', jwtAuth, jsonParser, (req, res) => {
   var incMaterial = req.body || {};
-  debugger;
-  if (!req.user.id || !incMaterial.fields || !incMaterial.relatedTo || !incMaterial.name) {
+  if (!req.user.id || !incMaterial.fields || !incMaterial.name) {
     return res.status(400).json( { msg: 'Missing required information' } );
   }
   var newestMaterial = new Material();
@@ -65,5 +64,13 @@ materialsRouter.delete('/delete/:id', jwtAuth, jsonParser, (req, res) => {
     if (err) return handleDBError(err, res);
 
     res.status(200).json({ msg: 'Successfully deleted material' });
+  });
+});
+
+materialsRouter.get('/getStandard', jwtAuth, jsonParser, (req, res) => {
+  Material.find({ ownedBy: 'Standard' }, (err, data) => {
+    if (err) return handleDBError(err, res);
+
+    res.status(200).json(data);
   });
 });
