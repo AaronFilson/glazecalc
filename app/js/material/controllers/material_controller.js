@@ -30,7 +30,7 @@ module.exports = function(app) {
         materialService.create(matCopy, function(err, data) {
           if (err) {
             $scope.errors.push(err);
-            console.dir('Error: ', err);
+            console.log(err.msg);
           } else {
             $scope.serverMessages.push('Success. Material added to database.');
             $scope.formula = [];
