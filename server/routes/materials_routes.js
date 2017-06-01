@@ -10,7 +10,7 @@ materialsRouter.post('/create', jwtAuth, jsonParser, (req, res) => {
   var incMaterial = req.body || {};
   if (!req.user.id || !incMaterial.fields || !incMaterial.name
     || !incMaterial.formulaweight || !incMaterial.loi || !incMaterial.molecularweight
-    || !incMaterial.unityformula || !incMaterial.equivalent) {
+    || !incMaterial.percentmole || !incMaterial.equivalent) {
     return res.status(400).json( { msg: 'Missing required information' } );
   }
   var newestMaterial = new Material();
@@ -23,8 +23,9 @@ materialsRouter.post('/create', jwtAuth, jsonParser, (req, res) => {
     newestMaterial.formulaweight = incMaterial.formulaweight;
     newestMaterial.loi = incMaterial.loi;
     newestMaterial.molecularweight = incMaterial.molecularweight;
-    newestMaterial.unityformula = incMaterial.unityformula;
+    newestMaterial.percentmole = incMaterial.percentmole;
     newestMaterial.equivalent = incMaterial.equivalent;
+    newestMaterial.rawformula = incMaterial.rawformula;
   } catch (e) {
     console.log('error in setting material properties : ', e);
     return res.status(500).json( { msg: 'Error in creating the new material.' } );

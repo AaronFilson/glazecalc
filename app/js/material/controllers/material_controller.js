@@ -9,7 +9,7 @@ module.exports = function(app) {
       $scope.myServerMats = [];
       $scope.standardMats = [];
       $scope.editToggle = false;
-
+      $scope.matForm.percentmole = 'molecular';
       var materialService = Resource('/materials/');
 
       $scope.dismissError = function(err) {
@@ -54,15 +54,25 @@ module.exports = function(app) {
         $scope.formula.splice($scope.formula.indexOf(item), 1);
       };
 
-      $scope.addFormulaField = function(component, element) {
-        console.log('values for select vars: ', component, element);
+      // $scope.addFormulaField = function(component, element) {
+      //   console.log('values for select vars: ', component, element);
+      //   var localtry = {};
+      //   if (component && element) {
+      //     $scope.errors.push('Error: please select only one thing to add at a \
+      //      time. Reset to none and try again.');
+      //     return;
+      //   }
+      //   localtry.name = component || element || 'error- select a value above';
+      //   localtry.amount = 0;
+      //   $scope.formula.push(localtry);
+      // };
+      $scope.addFiredField = function(oxide) {
         var localtry = {};
-        if (component && element) {
-          $scope.errors.push('Error: please select only one thing to add at a \
-           time. Reset to none and try again.');
+        if (!oxide) {
+          $scope.errors.push('Error: please select an oxide.');
           return;
         }
-        localtry.name = component || element || 'error- select a value above';
+        localtry.name = oxide;
         localtry.amount = 0;
         $scope.formula.push(localtry);
       };
@@ -87,6 +97,7 @@ module.exports = function(app) {
             $scope.errors.push('Error in deleting the material from the server.');
             return console.log('Error: ', err);
           }
+          $scope.serverMessages.push('Success in removing the material from the server.');
         });
         $scope.myServerMats.splice($scope.myServerMats.indexOf(theMat), 1);
       };

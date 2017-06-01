@@ -12,7 +12,8 @@ var materialSchema = new mongoose.Schema({
   ownedBy: { type: String, required: true },
   relatedTo: String,
   name: { type: String, required: true },
-  unityformula: { type: String, required: true }
+  percentmole: { type: String, required: true },
+  rawformula: String
 });
 
 module.exports = mongoose.model('Material', materialSchema);

@@ -1,12 +1,84 @@
-recipe view file stub.
+Recipe view.
 
 <nav>
+  You are on the Recipe page.
+  <br>
   links to pages:
   <a href="#/advice">advice</a>
   <a href="#/firing">firing</a>
   <a href="#/home">home</a>
   <a href="#/material">material</a>
   <a href="#/notes">notes</a>
-  You are on the Recipe page.
   <a href="#/trash">trash</a>
 </nav>
+
+<ol class="errors-section" data-ng-if="errors.length">
+  <li data-ng-repeat="error in errors">{{error}}
+    <button type="button" name="clear" data-ng-click="dismissError(error)">Dismiss</button>
+  </li>
+</ol>
+
+<ol class="srvmsg-section" data-ng-if="serverMessages.length">
+  <li data-ng-repeat="msg in serverMessages">{{msg}}
+    <button type="button" name="clear" data-ng-click="dismissMessage(msg)">Dismiss</button>
+  </li>
+</ol>
+
+<section class="inputbox" data-ng-init="getMats()">
+  Create a new glaze recipe :
+  <br>
+  <label for="recipe-name">Recipe title : </label>
+  <input type="text" name="recipe-title" value="" data-ng-model="recipeForm.title">
+  <label for="recipe-date">Date (optional / default is today)</label>
+  <input type="date" name="recipe-date" value="" data-ng-model="recipeForm.date">
+  <label for="recipe-notes">Notes on the recipe</label>
+  <textarea name="recipe-notes" data-ng-model="recipeForm.notes"></textarea>
+  <br>
+
+  <p>
+    Add materials to the recipe :
+    <br>
+    My materials :
+    <select name="my-mats" data-ng-model="mynewmat">
+      <option data-ng-repeat="mymat in customs" value="{{mymat}}">{{mymat.name}}</option>
+    </select>
+    <br>
+    Standard materials :
+    <select name="std-mats" data-ng-model="stdnewmat">
+      <option data-ng-repeat="stdmat in standards" value="{{stdmat}}">{{stdmat.name}}</option>
+    </select>
+    <br>
+    Add the above material to the recipe : <button data-ng-click="addMaterialField(mynewmat, stdnewmat)"> + </button>
+  </p>
+
+  <p data-ng-if="recipeMats.length">
+    Enter the amounts of the materials as a percentage or as parts :
+    <br>
+    <ol>
+      <li data-ng-repeat="material in recipeMats">
+        {{material.name}}
+        <br>
+        Amount : <input type="text" name="amount" data-ng-model="material.amount">
+        <br>
+        <button type="button" data-ng-click="removeFromRecipe(material)">Remove from recipe</button>
+      </li>
+    </ol>
+  </p>
+  <br>
+  <button name="compute" data-ng-click="computeUnity(recipeMats)"> Compute recipe into Unity </button>
+
+  <button name="submit-button" data-ng-click="submit(recipeForm)"> Save the recipe </button>
+
+</section>
+
+<section>
+  Unity formula of the glaze recipe
+  {{recipeForm.computed}}
+</section>
+
+<section data-ng-init="getAll()">
+  My saved recipes :
+  <ul data-ng-if="myRecipes.length">
+    <li data-ng-repeat="rec in myRecipes">{{rec.title}}</li>
+  </ul>
+</section>

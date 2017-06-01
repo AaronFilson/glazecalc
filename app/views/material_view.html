@@ -16,7 +16,7 @@
   </li>
 </ol>
 
-<ol data-ng-if="serverMessages.length">
+<ol class="srvmsg-section" data-ng-if="serverMessages.length">
   <li data-ng-repeat="msg in serverMessages">{{msg}}
     <button type="button" name="clear" data-ng-click="dismissMessage(msg)">Dismiss</button>
   </li>
@@ -29,29 +29,33 @@
     ₁ ₂ ₃ ₄ ₅ ₆ ₇ ₈ ₉ ₀ •
   </p>
   <label for="material-name"> Name of Material : </label>
-  <input id="material-name" type="text" name="MaterialName" value="" ng-model="matForm.name">
+  <input id="material-name" type="text" name="MaterialName" value="" data-ng-model="matForm.name">
+
+  <label for="raw-formula"> Raw formula : </label>
+  <input id="raw-formula" type="text" name="RawFormula" value="" data-ng-model="matForm.rawformula">
   <label for="related-to"> Related To : </label>
-  <input id="related-to" type="text" name="RelatedTo" value="" ng-model="matForm.relatedTo">
+  <input id="related-to" type="text" name="RelatedTo" value="" data-ng-model="matForm.relatedTo">
   <label for="notes"> Notes : </label>
-  <input id="notes" type="text" name="Notes" value="" ng-model="matForm.notes">
+  <input id="notes" type="text" name="Notes" value="" data-ng-model="matForm.notes">
   <br>
   <label for="manualformulaweight">Manual entry of fired atomic weight</label>
-  <input id="manualformulaweight" type="text" name="manualformulaweight" value="" ng-model="matForm.formulaweight">
+  <input id="manualformulaweight" type="text" name="manualformulaweight" value="" data-ng-model="matForm.formulaweight">
   <label for="manualmolecularweight">Manual entry of molecular weight</label>
-  <input id="manualmolecularweight" type="text" name="manualmolecularweight" value="" ng-model="matForm.molecularweight">
+  <input id="manualmolecularweight" type="text" name="manualmolecularweight" value="" data-ng-model="matForm.molecularweight">
   <label for="manualequivalentweight">Manual entry of equivalent molecular weight</label>
-  <input id="manualequivalentweight" type="text" name="manualequivalentweight" value="" ng-model="matForm.equivalent">
+  <input id="manualequivalentweight" type="text" name="manualequivalentweight" value="" data-ng-model="matForm.equivalent">
   <label for="LOI">Loss on Ignition - LOI (percentage) </label>
-  <input id="LOI" type="text" name="LOI" value="" ng-model="matForm.loi">
+  <input id="LOI" type="text" name="LOI" value="" data-ng-model="matForm.loi">
 
-  <p>1. Enter the formula (fired):
-      <input type="radio" name="unityformula" value="percent" checked="checked" ng-model="matForm.unityformula"> Percent or Batch / Part
-      <input type="radio" name="unityformula" value="unity" ng-model="matForm.unityformula"> Unity
-      <input type="radio" name="unityformula" value="molecular" ng-model="matForm.unityformula"> Molecular
+  <p>Enter the formula (fired):
+    <br>
+    <input type="radio" name="percentmole" value="percent" data-ng-model="matForm.percentmole"> Percent / Part
+    <input type="radio" name="percentmole" value="molecular" data-ng-model="matForm.percentmole"> Molecular
       <br>
-      Oxide Component Selection<component-select data-ng-model="component"></component-select><br>
-      Element Selection <element-select data-ng-model="element"></element-select><br>
-      Add the above oxide or element : <button data-ng-click="addFormulaField(componentselect, elementselect)"> + </button> <br>
+      <!-- Oxide Component Selection<component-select data-ng-model="component"></component-select><br>
+      Element Selection <element-select data-ng-model="element"></element-select><br> -->
+      Oxide Selection<firedox-select data-ng-model="firedox"></firedox-select><br>
+      Add the above oxide: <button data-ng-click="addFiredField(firedoxselect)"> + </button> <br>
     <ul>
       <li data-ng-repeat="item in formula track by $index">
         {{item.name}}
@@ -76,6 +80,8 @@
     <ul>
       <li data-ng-repeat="mat in myServerMats">{{mat.name}}
         {{mat.fields}}
+        {{mat.equivalent}}
+        {{mat.molecularweight}}
         <p data-ng-if="editToggle">Remove from the server:
           <button type="button" name="remoteMat" data-ng-click="removeMyMat(mat)"> X </button></p>
       </li>

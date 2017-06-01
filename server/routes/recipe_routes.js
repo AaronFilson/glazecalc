@@ -1,5 +1,6 @@
 const express = require('express');
 const Recipe = require(__dirname + '/../models/recipe');
+// const Mat = require(__dirname + '/../models/material');
 const jsonParser = require('body-parser').json();
 const handleDBError = require(__dirname + '/../lib/handle_db_error');
 const jwtAuth = require(__dirname + '/../lib/jwt_auth');
@@ -45,6 +46,22 @@ recipeRouter.get('/getLatest', jwtAuth, jsonParser, (req, res) => {
 
 recipeRouter.get('/getAll', jwtAuth, jsonParser, (req, res) => {
   Recipe.find({ ownedBy: req.user.id }, (err, data) => {
+    if (err) return handleDBError(err, res);
+
+    res.status(200).json(data);
+  });
+});
+
+// recipeRouter.get('/getMyMats', jwtAuth, jsonParser, (req, res) => {
+//   Mat.find({ ownedBy: req.user.id }, (err, data) => {
+//     if (err) return handleDBError(err, res);
+//
+//     res.status(200).json(data);
+//   });
+// });
+
+recipeRouter.get('/getStandard', jwtAuth, jsonParser, (req, res) => {
+  Recipe.find({ ownedBy: 'Standard' }, (err, data) => {
     if (err) return handleDBError(err, res);
 
     res.status(200).json(data);
