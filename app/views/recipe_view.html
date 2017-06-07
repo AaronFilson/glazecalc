@@ -18,7 +18,7 @@ Recipe view.
   </li>
 </ol>
 
-<ol class="srvmsg-section" data-ng-if="serverMessages.length">
+<ol class="server-msg" data-ng-if="serverMessages.length">
   <li data-ng-repeat="msg in serverMessages">{{msg}}
     <button type="button" name="clear" data-ng-click="dismissMessage(msg)">Dismiss</button>
   </li>
@@ -71,12 +71,12 @@ Recipe view.
 
 </section>
 
-<section>
+<section class="tech-info">
   Unity formula of the glaze recipe
   {{recipeForm.computed}}
 </section>
 
-<section data-ng-init="getAll()">
+<section data-ng-init="getAll()" class="tech-info">
   My saved recipes :
   <ul data-ng-if="myRecipes.length">
     <li data-ng-repeat="rec in myRecipes">{{rec.title}}</li>

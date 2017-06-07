@@ -16,7 +16,7 @@
   </li>
 </ol>
 
-<ol class="srvmsg-section" data-ng-if="serverMessages.length">
+<ol class="server-msg" data-ng-if="serverMessages.length">
   <li data-ng-repeat="msg in serverMessages">{{msg}}
     <button type="button" name="clear" data-ng-click="dismissMessage(msg)">Dismiss</button>
   </li>
@@ -52,8 +52,6 @@
     <input type="radio" name="percentmole" value="percent" data-ng-model="matForm.percentmole"> Percent
     <input type="radio" name="percentmole" value="molecular" data-ng-model="matForm.percentmole"> Molecular / Unity
       <br>
-      <!-- Oxide Component Selection<component-select data-ng-model="component"></component-select><br>
-      Element Selection <element-select data-ng-model="element"></element-select><br> -->
       Oxide Selection<firedox-select data-ng-model="firedox"></firedox-select><br>
       Add the above oxide: <button data-ng-click="addFiredField(firedoxselect)"> + </button> <br>
     <ul>
@@ -72,7 +70,7 @@
   <button data-ng-click="submit(matForm)">Save</button>
 </section>
 
-<section data-ng-if="myServerMats.length">
+<section data-ng-if="myServerMats.length" class="tech-info">
   <p>My server materials:
     <br>
     Edit / Remove toggle

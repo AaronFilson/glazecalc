@@ -110,18 +110,6 @@ module.exports = function(app) {
         $scope.formula.splice($scope.formula.indexOf(item), 1);
       };
 
-      // $scope.addFormulaField = function(component, element) {
-      //   console.log('values for select vars: ', component, element);
-      //   var localtry = {};
-      //   if (component && element) {
-      //     $scope.errors.push('Error: please select only one thing to add at a \
-      //      time. Reset to none and try again.');
-      //     return;
-      //   }
-      //   localtry.name = component || element || 'error- select a value above';
-      //   localtry.amount = 0;
-      //   $scope.formula.push(localtry);
-      // };
       $scope.addFiredField = function(oxide) {
         var localtry = {};
         if (!oxide) {

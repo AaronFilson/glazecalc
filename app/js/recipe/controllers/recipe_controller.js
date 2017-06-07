@@ -41,37 +41,6 @@ module.exports = function(app) {
       $scope.computeUnity = function(inp) {
         console.log(inp);
         var unityTable = {};
-
-        // // add up the amounts of the materials
-        // var sumOfAmounts = inp.reduce( function(acc, currEle) {
-        //   return acc + Number(currEle.amount);
-        // }, 0);
-        // // find the relative percent divisor : what portion is the material
-        // var percentDivisor = sumOfAmounts / 100;
-        // // save the percent contribution from each material
-        // inp.forEach( function(ele) {
-        //   ele.percent = Number(ele.amount) / percentDivisor;
-        // });
-        // // from the percent and molecular equivalent get the empirical contrib
-        // inp.forEach( function(mat) {
-        //   mat.contrib = mat.percent / Number(mat.equivalent);
-        // });
-        // // go into each material and find percent amounts for the oxides
-        // inp.forEach( function(quan) {
-        //   // the percent should be adding to 100. If not correct it.
-        //   var totalOfPercents = quan.fields.reduce( function(acc, percs) {
-        //     return acc + Number(percs.amount);
-        //   }, 0);
-        //   var quanDivisor = totalOfPercents / 100;
-        //   quan.fields.forEach( function(per) {
-        //     per.mpercent = Number(per.amount) / quanDivisor;
-        //   });
-        //
-        //   // for each of the fields the molecular equivalent needs to be found
-        //   quan.fields.forEach( function(individualOx) {
-        //     individualOx.moleEquiv = individualOx.mpercent * oxides[individualOx.name];
-        //   });
-        // });
         // Step 1
         inp.forEach( function(mat) {
           mat.formulaEquivalent = Number(mat.amount) / Number(mat.equivalent);
@@ -113,6 +82,8 @@ module.exports = function(app) {
           unityTable.K2O + unityTable.CaO + unityTable.MgO + unityTable.ZnO +
           unityTable.BaO + unityTable.SrO;
 
+        // If there is no flux in this formula (yet I hope!) then don't divide by zero
+        if ( unityTable.fluxTotal < 0.001 ) unityTable.fluxTotal = 1;
         // Step 6
         // divide the amounts of all of the oxides by the fluxTotal and it is in unity!
         unityTable.uList = {};
