@@ -41,65 +41,59 @@ module.exports = function(app) {
       $scope.computeUnity = function(inp) {
         console.log(inp);
         var unityTable = {};
-        var oxides = {};
-        oxides.PbO = 223;
-        oxides.Na2O = 62;
-        oxides.K2O = 94;
-        oxides.ZnO = 81;
-        oxides.CaO = 56;
-        oxides.MgO = 40;
-        oxides.BaO = 153;
-        oxides.SrO = 120;
-        oxides.Li2O = 30;
-        oxides.Al2O3 = 102;
-        oxides.B2O3 = 70;
-        oxides.SiO2 = 60;
-        // add Ti and Fe later if needed
 
-        // add up the amounts of the materials
-        var sumOfAmounts = inp.reduce( function(acc, currEle) {
-          return acc + Number(currEle.amount);
-        }, 0);
-        // find the relative percent divisor : what portion is the material
-        var percentDivisor = sumOfAmounts; // inp.length;
-        // save the percent contribution from each material
-        inp.forEach( function(ele) {
-          ele.percent = (0 + ele.amount) / percentDivisor;
-        });
-        // from the percent and molecular equivalent get the empirical contrib
+        // // add up the amounts of the materials
+        // var sumOfAmounts = inp.reduce( function(acc, currEle) {
+        //   return acc + Number(currEle.amount);
+        // }, 0);
+        // // find the relative percent divisor : what portion is the material
+        // var percentDivisor = sumOfAmounts / 100;
+        // // save the percent contribution from each material
+        // inp.forEach( function(ele) {
+        //   ele.percent = Number(ele.amount) / percentDivisor;
+        // });
+        // // from the percent and molecular equivalent get the empirical contrib
+        // inp.forEach( function(mat) {
+        //   mat.contrib = mat.percent / Number(mat.equivalent);
+        // });
+        // // go into each material and find percent amounts for the oxides
+        // inp.forEach( function(quan) {
+        //   // the percent should be adding to 100. If not correct it.
+        //   var totalOfPercents = quan.fields.reduce( function(acc, percs) {
+        //     return acc + Number(percs.amount);
+        //   }, 0);
+        //   var quanDivisor = totalOfPercents / 100;
+        //   quan.fields.forEach( function(per) {
+        //     per.mpercent = Number(per.amount) / quanDivisor;
+        //   });
+        //
+        //   // for each of the fields the molecular equivalent needs to be found
+        //   quan.fields.forEach( function(individualOx) {
+        //     individualOx.moleEquiv = individualOx.mpercent * oxides[individualOx.name];
+        //   });
+        // });
+        // Step 1
         inp.forEach( function(mat) {
-          mat.contrib = mat.percent / Number(mat.equivalent);
-        });
-        // go into each material and find percent amounts for the oxides
-        inp.forEach( function(quan) {
-          // the percent should be adding to 100. If not correct it.
-          var totalOfPercents = quan.fields.reduce( function(acc, percs) {
-            return acc + Number(percs.amount);
-          }, 0);
-
-          quan.fields.forEach( function(per) {
-            per.mpercent = (Number(per.amount) / totalOfPercents) * 100;
-          });
-
-          // for each of the fields the molecular equivalent needs to be found
-          quan.fields.forEach( function(individualOx) {
-            individualOx.moleEquiv = individualOx.mpercent * oxides[individualOx.name];
-          });
+          mat.formulaEquivalent = Number(mat.amount) / Number(mat.equivalent);
         });
 
+        // Step 2  - ish
         // make the table of oxides to use in summing to unity
         inp.forEach( function(material) {
           material.fields.forEach( function(oxideEle) {
             unityTable[oxideEle.name] = 0;
           });
         });
+
+        // Step 3 and 4
         inp.forEach( function(material) {
+          var localEq = material.formulaEquivalent;
           material.fields.forEach( function(oxideEle) {
-            unityTable[oxideEle.name] += oxideEle.moleEquiv * material.contrib;
+            unityTable[oxideEle.name] += oxideEle.amountUnity * localEq;
           });
         });
-        debugger;
-        // add the values of the column one, RO / fluxes
+
+        // make the amounts 0 for those oxides not used
         unityTable.PbO = unityTable.PbO ? unityTable.PbO : 0;
         unityTable.Li2O = unityTable.Li2O ? unityTable.Li2O : 0;
         unityTable.Na2O = unityTable.Na2O ? unityTable.Na2O : 0;
@@ -109,11 +103,17 @@ module.exports = function(app) {
         unityTable.ZnO = unityTable.ZnO ? unityTable.ZnO : 0;
         unityTable.BaO = unityTable.BaO ? unityTable.BaO : 0;
         unityTable.SrO = unityTable.SrO ? unityTable.SrO : 0;
+        unityTable.SiO2 = unityTable.SiO2 ? unityTable.SiO2 : 0;
+        unityTable.Al2O3 = unityTable.Al2O3 ? unityTable.Al2O3 : 0;
+        unityTable.B2O3 = unityTable.B2O3 ? unityTable.B2O3 : 0;
 
+        // Step 5
+        // add the values of the column one, RO / fluxes
         unityTable.fluxTotal = unityTable.PbO + unityTable.Li2O + unityTable.Na2O +
           unityTable.K2O + unityTable.CaO + unityTable.MgO + unityTable.ZnO +
           unityTable.BaO + unityTable.SrO;
 
+        // Step 6
         // divide the amounts of all of the oxides by the fluxTotal and it is in unity!
         unityTable.uList = {};
         unityTable.uList.PbO = unityTable.PbO / unityTable.fluxTotal;
@@ -128,7 +128,6 @@ module.exports = function(app) {
         unityTable.uList.SiO2 = unityTable.SiO2 / unityTable.fluxTotal;
         unityTable.uList.Al2O3 = unityTable.Al2O3 / unityTable.fluxTotal;
         unityTable.uList.B2O3 = unityTable.B2O3 / unityTable.fluxTotal;
-
 
         // at this stage, the empirical formula is listed of each of the oxides,
         // and the unity formula is in a list as uList in the unityTable object

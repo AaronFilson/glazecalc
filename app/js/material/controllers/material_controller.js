@@ -26,7 +26,63 @@ module.exports = function(app) {
           $scope.errors.push('Error: there was no info to submit.');
           return console.log('No information in the object when calling submit!');
         }
+        var oxides = {};
+        oxides.PbO = 223;
+        oxides.Na2O = 62;
+        oxides.K2O = 94;
+        oxides.ZnO = 81;
+        oxides.CaO = 56;
+        oxides.MgO = 40;
+        oxides.BaO = 153;
+        oxides.SrO = 120;
+        oxides.Li2O = 30;
+        oxides.Al2O3 = 102;
+        oxides.B2O3 = 70;
+        oxides.SiO2 = 60;
+        // add Ti and Fe later if needed
         matCopy.fields = $scope.formula;
+        if (matCopy.percentmole === 'percent') {
+          var localUnity = {};
+          matCopy.fields.forEach( function(ox1) {
+            localUnity[ox1.name] = Number(ox1.amount) / oxides[ox1.name];
+          });
+          localUnity.findFlux = (localUnity.PbO ? localUnity.PbO : 0) +
+            (localUnity.Li2O ? localUnity.Li2O : 0) +
+            (localUnity.Na2O ? localUnity.Na2O : 0) +
+            (localUnity.K2O ? localUnity.K2O : 0) +
+            (localUnity.CaO ? localUnity.CaO : 0) +
+            (localUnity.MgO ? localUnity.MgO : 0) +
+            (localUnity.ZnO ? localUnity.ZnO : 0) +
+            (localUnity.BaO ? localUnity.BaO : 0) +
+            (localUnity.SrO ? localUnity.SrO : 0);
+
+          // If there is no flux, stop from dividing by zero!
+          if ( localUnity.findFlux < 0.001 ) localUnity.findFlux = 1;
+          matCopy.fields.forEach( function(ox2) {
+            ox2.amountUnity = localUnity[ox2.name] / localUnity.findFlux;
+          });
+        } else {
+          var checkUnity = {};
+          matCopy.fields.forEach( function(ox3) {
+            checkUnity[ox3.name] = Number(ox3.amount);
+          });
+          checkUnity.findFlux = (checkUnity.PbO ? checkUnity.PbO : 0) +
+            (checkUnity.Li2O ? checkUnity.Li2O : 0) +
+            (checkUnity.Na2O ? checkUnity.Na2O : 0) +
+            (checkUnity.K2O ? checkUnity.K2O : 0) +
+            (checkUnity.CaO ? checkUnity.CaO : 0) +
+            (checkUnity.MgO ? checkUnity.MgO : 0) +
+            (checkUnity.ZnO ? checkUnity.ZnO : 0) +
+            (checkUnity.BaO ? checkUnity.BaO : 0) +
+            (checkUnity.SrO ? checkUnity.SrO : 0);
+
+          // If there is no flux, stop from dividing by zero!
+          if ( checkUnity.findFlux < 0.001 ) checkUnity.findFlux = 1;
+          matCopy.fields.forEach( function(ox4) {
+            ox4.amountUnity = checkUnity[ox4.name] / checkUnity.findFlux;
+          });
+        }
+
         materialService.create(matCopy, function(err, data) {
           if (err) {
             $scope.errors.push(err);
