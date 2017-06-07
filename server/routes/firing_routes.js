@@ -58,9 +58,7 @@ firingRouter.get('/getAll', jwtAuth, jsonParser, (req, res) => {
 
 firingRouter.put('/change/:id', jwtAuth, jsonParser, (req, res) => {
   var firingData = req.body.firing;
-  console.log('firingData record id: ', firingData._id);
-  console.log('req.params.id record id: ', req.params.id);
-
+  
   if (!req.params.id || !req.user.id || !firingData.title || !firingData.ownedBy
      || !firingData.rows || !firingData.fieldsIncluded || !firingData.fieldPositions ) {
     return res.status(400).json( { msg: 'Missing required information' } );

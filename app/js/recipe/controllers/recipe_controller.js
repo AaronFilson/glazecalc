@@ -39,7 +39,6 @@ module.exports = function(app) {
       };
 
       $scope.computeUnity = function(inp) {
-        console.log(inp);
         var unityTable = {};
         // Step 1
         inp.forEach( function(mat) {
@@ -103,7 +102,7 @@ module.exports = function(app) {
         // at this stage, the empirical formula is listed of each of the oxides,
         // and the unity formula is in a list as uList in the unityTable object
         $scope.recipeForm.computed = unityTable;
-        return 'Success.';
+        return unityTable;
       };
 
       $scope.addMaterialField = function(mynewmat, stdnewmat) {
@@ -135,7 +134,7 @@ module.exports = function(app) {
           recipe.notes = '';
         }
         if (!recipe.computed) {
-          recipe.computed = $scope.computeUnity(recipe);
+          recipe.computed = $scope.computeUnity(recipe.materials);
         }
 
         recipeService.create(recipe, function(err) {
@@ -149,6 +148,16 @@ module.exports = function(app) {
           $scope.recipeMats = [];
           $scope.recipeForm = {};
           $scope.myRecipes.push(recipe);
+        });
+      };
+
+      $scope.getMyRecipes = function() {
+        recipeService.getAll((err, data) => {
+          if (err) {
+            $scope.errors.push('There was an error in getting the recipe information.');
+            return console.log('Error: ', err);
+          }
+          $scope.myRecipes = data;
         });
       };
     }]);

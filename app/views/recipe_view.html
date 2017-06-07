@@ -76,7 +76,7 @@ Recipe view.
   {{recipeForm.computed}}
 </section>
 
-<section data-ng-init="getAll()" class="tech-info">
+<section data-ng-init="getMyRecipes()" class="tech-info">
   My saved recipes :
   <ul data-ng-if="myRecipes.length">
     <li data-ng-repeat="rec in myRecipes">{{rec.title}}</li>

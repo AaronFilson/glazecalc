@@ -1,6 +1,5 @@
 const express = require('express');
 const Recipe = require(__dirname + '/../models/recipe');
-// const Mat = require(__dirname + '/../models/material');
 const jsonParser = require('body-parser').json();
 const handleDBError = require(__dirname + '/../lib/handle_db_error');
 const jwtAuth = require(__dirname + '/../lib/jwt_auth');
@@ -8,7 +7,7 @@ const jwtAuth = require(__dirname + '/../lib/jwt_auth');
 const recipeRouter = module.exports = exports = express.Router();
 
 recipeRouter.post('/create', jwtAuth, jsonParser, (req, res) => {
-  var incRecipe = req.body.recipe;
+  var incRecipe = req.body || {};
   if (!req.user.id || !incRecipe.title || !incRecipe.materials) {
     return res.status(400).json( { msg: 'Missing required information' } );
   }
@@ -51,14 +50,6 @@ recipeRouter.get('/getAll', jwtAuth, jsonParser, (req, res) => {
     res.status(200).json(data);
   });
 });
-
-// recipeRouter.get('/getMyMats', jwtAuth, jsonParser, (req, res) => {
-//   Mat.find({ ownedBy: req.user.id }, (err, data) => {
-//     if (err) return handleDBError(err, res);
-//
-//     res.status(200).json(data);
-//   });
-// });
 
 recipeRouter.get('/getStandard', jwtAuth, jsonParser, (req, res) => {
   Recipe.find({ ownedBy: 'Standard' }, (err, data) => {
