@@ -74,6 +74,9 @@ module.exports = function(app) {
         unityTable.SiO2 = unityTable.SiO2 ? unityTable.SiO2 : 0;
         unityTable.Al2O3 = unityTable.Al2O3 ? unityTable.Al2O3 : 0;
         unityTable.B2O3 = unityTable.B2O3 ? unityTable.B2O3 : 0;
+        unityTable.Fe2O3 = unityTable.Fe2O3 ? unityTable.Fe2O3 : 0;
+        unityTable.TiO2 = unityTable.TiO2 ? unityTable.TiO2 : 0;
+        unityTable.P2O5 = unityTable.P2O5 ? unityTable.P2O5 : 0;
 
         // Step 5
         // add the values of the column one, RO / fluxes
@@ -98,6 +101,9 @@ module.exports = function(app) {
         unityTable.uList.SiO2 = unityTable.SiO2 / unityTable.fluxTotal;
         unityTable.uList.Al2O3 = unityTable.Al2O3 / unityTable.fluxTotal;
         unityTable.uList.B2O3 = unityTable.B2O3 / unityTable.fluxTotal;
+        unityTable.uList.Fe2O3 = unityTable.Fe2O3 / unityTable.fluxTotal;
+        unityTable.uList.TiO2 = unityTable.TiO2 / unityTable.fluxTotal;
+        unityTable.uList.P2O5 = unityTable.P2O5 / unityTable.fluxTotal;
 
         // at this stage, the empirical formula is listed of each of the oxides,
         // and the unity formula is in a list as uList in the unityTable object
@@ -157,6 +163,7 @@ module.exports = function(app) {
             $scope.errors.push('There was an error in getting the recipe information.');
             return console.log('Error: ', err);
           }
+
           $scope.myRecipes = data;
         });
       };

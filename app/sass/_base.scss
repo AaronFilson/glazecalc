@@ -51,8 +51,8 @@ main {
 }
 
 .tech-info {
-  background-color: rgba(100, 100, 115, 0.85);
-  padding: 2px;
+  background-color: rgba(190, 190, 200, 0.85);
+  padding: 5px;
 }
 
 header {
@@ -60,14 +60,9 @@ header {
 }
 
 nav {
-	// background-image: url("../images/");
-	background-repeat: no-repeat;
-	margin-bottom: 10px;
+  background-color: rgba(190, 190, 190, 0.7);
 	font-size: 0.9em;
-	padding-top: 7px;
-	padding-bottom: 7px;
-	margin-left: 425px;
-	width: 80%;
+	width: 50%;
 }
 
 h1 {

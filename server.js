@@ -13,6 +13,7 @@ app.use((req, res, next) => {
   next();
 });
 
+const additivesRouter = require(__dirname + '/server/routes/additives_routes');
 const adviceRouter = require(__dirname + '/server/routes/advice_routes');
 const authRouter = require(__dirname + '/server/routes/auth_routes');
 const firingRouter = require(__dirname + '/server/routes/firing_routes');
@@ -22,6 +23,7 @@ const recipeRouter = require(__dirname + '/server/routes/recipe_routes');
 const trashRouter = require(__dirname + '/server/routes/trash_routes');
 const userRouter = require(__dirname + '/server/routes/user_routes');
 
+app.use('/additives', additivesRouter);
 app.use('/advice', adviceRouter);
 app.use('/', authRouter);
 app.use('/firing', firingRouter);

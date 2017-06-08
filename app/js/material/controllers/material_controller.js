@@ -39,7 +39,10 @@ module.exports = function(app) {
         oxides.Al2O3 = 102;
         oxides.B2O3 = 70;
         oxides.SiO2 = 60;
-        // add Ti and Fe later if needed
+        oxides.TiO2 = 80;
+        oxides.Fe2O3 = 160;
+        oxides.P2O5 = 142;
+
         matCopy.fields = $scope.formula;
         if (matCopy.percentmole === 'percent') {
           var localUnity = {};

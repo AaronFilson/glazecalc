@@ -5,6 +5,7 @@ const glazeCalcApp = angular.module('glazeCalcApp', ['ngRoute']);
 require('./services')(glazeCalcApp);
 
 require('./auth')(glazeCalcApp);
+require('./additive')(glazeCalcApp);
 require('./advice')(glazeCalcApp);
 require('./firing')(glazeCalcApp);
 require('./home')(glazeCalcApp);
@@ -35,6 +36,10 @@ glazeCalcApp.config(['$routeProvider', function(routes) {
     .when('/recipe', {
       controller: 'RecipeController',
       templateUrl: '/views/recipe_view.html'
+    })
+    .when('/additive', {
+      controller: 'AdditiveController',
+      templateUrl: '/views/additive_view.html'
     })
     .when('/advice', {
       controller: 'AdviceController',

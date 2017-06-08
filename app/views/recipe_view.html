@@ -4,6 +4,7 @@ Recipe view.
   You are on the Recipe page.
   <br>
   links to pages:
+  <a href="#/additive">additive</a>
   <a href="#/advice">advice</a>
   <a href="#/firing">firing</a>
   <a href="#/home">home</a>
@@ -73,12 +74,80 @@ Recipe view.
 
 <section class="tech-info">
   Unity formula of the glaze recipe
-  {{recipeForm.computed}}
+  <br>
+  <p data-ng-if="recipeForm.computed.uList.Li2O > 0">
+    Li₂O : {{recipeForm.computed.uList.Li2O | number:3}}</p>
+  <p data-ng-if="recipeForm.computed.uList.Na2O > 0">
+    Na₂O :{{recipeForm.computed.uList.Na2O | number:3}}</p>
+  <p data-ng-if="recipeForm.computed.uList.CaO > 0">
+    CaO : {{recipeForm.computed.uList.CaO | number:3}}</p>
+  <p data-ng-if="recipeForm.computed.uList.K2O > 0">
+    K₂O : {{recipeForm.computed.uList.K2O | number:3}}</p>
+  <p data-ng-if="recipeForm.computed.uList.MgO > 0">
+    MgO : {{recipeForm.computed.uList.MgO | number:3}}</p>
+  <p data-ng-if="recipeForm.computed.uList.BaO > 0">
+    BaO : {{recipeForm.computed.uList.BaO | number:3}}</p>
+  <p data-ng-if="recipeForm.computed.uList.Li2O > 0">
+    Li₂O : {{recipeForm.computed.uList.Li2O | number:3}}</p>
+  <p data-ng-if="recipeForm.computed.uList.SrO > 0">
+    SrO : {{recipeForm.computed.uList.SrO | number:3}}</p>
+  <p data-ng-if="recipeForm.computed.uList.ZnO > 0">
+    ZnO : {{recipeForm.computed.uList.ZnO | number:3}}</p>
+  <p data-ng-if="recipeForm.computed.uList.PbO > 0">
+    PbO : {{recipeForm.computed.uList.PbO | number:3}}</p>
+  <p data-ng-if="recipeForm.computed.uList.B2O3 > 0">
+    B₂O₃ : {{recipeForm.computed.uList.B2O3 | number:3}}</p>
+  <p data-ng-if="recipeForm.computed.uList.Al2O3 > 0">
+    Al₂O₃ : {{recipeForm.computed.uList.Al2O3 | number:3}}</p>
+  <p data-ng-if="recipeForm.computed.uList.Fe2O3 > 0">
+    Fe₂O₃ : {{recipeForm.computed.uList.Fe2O3 | number:3}}</p>
+  <p data-ng-if="recipeForm.computed.uList.SiO2 > 0">
+    SiO₂ : {{recipeForm.computed.uList.SiO2 | number:3}}</p>
+  <p data-ng-if="recipeForm.computed.uList.TiO2 > 0">
+    TiO₂ : {{recipeForm.computed.uList.TiO2 | number:3}}</p>
+  <p data-ng-if="recipeForm.computed.uList.P2O5 > 0">
+    P₂O₅ : {{recipeForm.computed.uList.P2O5 | number:3}}</p>
+
 </section>
 
 <section data-ng-init="getMyRecipes()" class="tech-info">
   My saved recipes :
   <ul data-ng-if="myRecipes.length">
-    <li data-ng-repeat="rec in myRecipes">{{rec.title}}</li>
+    <li data-ng-repeat="rec in myRecipes">
+      {{rec.title}}
+      <p data-ng-if="rec.computed[0].uList.Li2O > 0">
+        Li₂O : {{rec.computed[0].uList.Li2O | number:3}}</p>
+      <p data-ng-if="rec.computed[0].uList.Na2O > 0">
+        Na₂O :{{rec.computed[0].uList.Na2O | number:3}}</p>
+      <p data-ng-if="rec.computed[0].uList.CaO > 0">
+        CaO : {{rec.computed[0].uList.CaO | number:3}}</p>
+      <p data-ng-if="rec.computed[0].uList.K2O > 0">
+        K₂O : {{rec.computed[0].uList.K2O | number:3}}</p>
+      <p data-ng-if="rec.computed[0].uList.MgO > 0">
+        MgO : {{rec.computed[0].uList.MgO | number:3}}</p>
+      <p data-ng-if="rec.computed[0].uList.BaO > 0">
+        BaO : {{rec.computed[0].uList.BaO | number:3}}</p>
+      <p data-ng-if="rec.computed[0].uList.Li2O > 0">
+        Li₂O : {{rec.computed[0].uList.Li2O | number:3}}</p>
+      <p data-ng-if="rec.computed[0].uList.SrO > 0">
+        SrO : {{rec.computed[0].uList.SrO | number:3}}</p>
+      <p data-ng-if="rec.computed[0].uList.ZnO > 0">
+        ZnO : {{rec.computed[0].uList.ZnO | number:3}}</p>
+      <p data-ng-if="rec.computed[0].uList.PbO > 0">
+        PbO : {{rec.computed[0].uList.PbO | number:3}}</p>
+      <p data-ng-if="rec.computed[0].uList.B2O3 > 0">
+        B₂O₃ : {{rec.computed[0].uList.B2O3 | number:3}}</p>
+      <p data-ng-if="rec.computed[0].uList.Al2O3 > 0">
+        Al₂O₃ : {{rec.computed[0].uList.Al2O3 | number:3}}</p>
+      <p data-ng-if="rec.computed[0].uList.Fe2O3 > 0">
+        Fe₂O₃ : {{rec.computed[0].uList.Fe2O3 | number:3}}</p>
+      <p data-ng-if="rec.computed[0].uList.SiO2 > 0">
+        SiO₂ : {{rec.computed[0].uList.SiO2 | number:3}}</p>
+      <p data-ng-if="rec.computed[0].uList.TiO2 > 0">
+        TiO₂ : {{rec.computed[0].uList.TiO2 | number:3}}</p>
+      <p data-ng-if="rec.computed[0].uList.P2O5 > 0">
+        P₂O₅ : {{rec.computed[0].uList.P2O5 | number:3}}</p>
+
+    </li>
   </ul>
 </section>
