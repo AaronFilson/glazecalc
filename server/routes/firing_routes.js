@@ -7,7 +7,7 @@ const jwtAuth = require(__dirname + '/../lib/jwt_auth');
 const firingRouter = module.exports = exports = express.Router();
 
 firingRouter.post('/create', jwtAuth, jsonParser, (req, res) => {
-  var incFiring = req.body.firing || {};
+  var incFiring = req.body || {};
 
   if (!req.user.id || !incFiring.fieldsIncluded || !incFiring.fieldPositions
     || !incFiring.rows
@@ -57,7 +57,7 @@ firingRouter.get('/getAll', jwtAuth, jsonParser, (req, res) => {
 });
 
 firingRouter.put('/change/:id', jwtAuth, jsonParser, (req, res) => {
-  var firingData = req.body.firing;
+  var firingData = req.body;
 
   if (!req.params.id || !req.user.id || !firingData.title || !firingData.ownedBy
      || !firingData.rows || !firingData.fieldsIncluded || !firingData.fieldPositions ) {
