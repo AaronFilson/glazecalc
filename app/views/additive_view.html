@@ -29,14 +29,14 @@
     ₁ ₂ ₃ ₄ ₅ ₆ ₇ ₈ ₉ ₀ •
   </p>
   <label for="additive-name"> Name of Additive : </label>
-  <input id="additive-name" type="text" name="AdditiveName" value="" data-ng-model="addForm.name">
+  <input id="additive-name" type="text" name="AdditiveName" data-ng-model="addForm.name">
 
   <label for="formula">Formula : </label>
-  <input id="formula" type="text" name="Formula" value="" data-ng-model="addForm.rawformula">
+  <input id="formula" type="text" name="Formula" data-ng-model="addForm.rawformula">
   <label for="related-to"> Related To : </label>
-  <input id="related-to" type="text" name="RelatedTo" value="" data-ng-model="addForm.relatedTo">
+  <input id="related-to" type="text" name="RelatedTo" data-ng-model="addForm.relatedTo">
   <label for="notes"> Notes : </label>
-  <input id="notes" type="text" name="Notes" value="" data-ng-model="addForm.notes">
+  <textarea id="notes" name="notes" cols="40" rows="3" data-ng-model="addForm.notes"></textarea>
   <br>
 
   <p>Enter the formula:
@@ -50,7 +50,7 @@
     <ul>
       <li data-ng-repeat="item in formula track by $index">
         {{item.name}}
-        <p>Amount: <input type="text" name="amount" value="" data-ng-model="item.amount">
+        <p>Amount: <input type="text" name="amount" data-ng-model="item.amount">
           </p>
         <button type="button" data-ng-click="removeFromFormula(item)">
           Remove from formula list
@@ -73,7 +73,7 @@
       <li data-ng-repeat="add in myServerAdds">{{add.name}}
         {{add.fields}}
         <p data-ng-if="editToggle">Remove from the server:
-          <button type="button" name="remoteMat" data-ng-click="removeMyAdd(add)"> X </button></p>
+          <button type="button" name="removeAdd" data-ng-click="removeMyAdd(add)"> X </button></p>
       </li>
     </ul>
   </p>

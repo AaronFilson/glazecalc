@@ -9,9 +9,7 @@ const firingRouter = module.exports = exports = express.Router();
 firingRouter.post('/create', jwtAuth, jsonParser, (req, res) => {
   var incFiring = req.body || {};
 
-  if (!req.user.id || !incFiring.fieldsIncluded || !incFiring.fieldPositions
-    || !incFiring.rows
-    || !incFiring.title) {
+  if (!req.user.id || !incFiring.fieldsIncluded || !incFiring.rows || !incFiring.title) {
     return res.status(400).json( { msg: 'Missing required information' } );
   }
   var newestFiring = new Firing();
@@ -19,7 +17,6 @@ firingRouter.post('/create', jwtAuth, jsonParser, (req, res) => {
     newestFiring.ownedBy = req.user.id;
     newestFiring.date = incFiring.date;
     newestFiring.fieldsIncluded = incFiring.fieldsIncluded;
-    newestFiring.fieldPositions = incFiring.fieldPositions;
     newestFiring.kiln = incFiring.kiln;
     newestFiring.notes = incFiring.notes;
     newestFiring.rows = incFiring.rows;
@@ -60,7 +57,7 @@ firingRouter.put('/change/:id', jwtAuth, jsonParser, (req, res) => {
   var firingData = req.body;
 
   if (!req.params.id || !req.user.id || !firingData.title || !firingData.ownedBy
-     || !firingData.rows || !firingData.fieldsIncluded || !firingData.fieldPositions ) {
+     || !firingData.rows || !firingData.fieldsIncluded) {
     return res.status(400).json( { msg: 'Missing required information' } );
   }
   Firing.update({ _id: req.params.id }, firingData, { overwrite: true }, (err) => {

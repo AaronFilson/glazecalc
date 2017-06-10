@@ -30,23 +30,23 @@
     ₁ ₂ ₃ ₄ ₅ ₆ ₇ ₈ ₉ ₀ •
   </p>
   <label for="material-name"> Name of Material : </label>
-  <input id="material-name" type="text" name="MaterialName" value="" data-ng-model="matForm.name">
+  <input id="material-name" type="text" name="MaterialName" data-ng-model="matForm.name">
 
   <label for="raw-formula"> Raw formula : </label>
-  <input id="raw-formula" type="text" name="RawFormula" value="" data-ng-model="matForm.rawformula">
+  <input id="raw-formula" type="text" name="RawFormula" data-ng-model="matForm.rawformula">
   <label for="related-to"> Related To : </label>
-  <input id="related-to" type="text" name="RelatedTo" value="" data-ng-model="matForm.relatedTo">
+  <input id="related-to" type="text" name="RelatedTo" data-ng-model="matForm.relatedTo">
   <label for="notes"> Notes : </label>
-  <input id="notes" type="text" name="Notes" value="" data-ng-model="matForm.notes">
+  <textarea id="notes" name="notes" data-ng-model="matForm.notes" cols="40" rows="3"></textarea>
   <br>
   <label for="manualformulaweight">Manual entry of fired atomic weight</label>
-  <input id="manualformulaweight" type="text" name="manualformulaweight" value="" data-ng-model="matForm.formulaweight">
+  <input id="manualformulaweight" type="text" name="manualformulaweight" data-ng-model="matForm.formulaweight">
   <label for="manualmolecularweight">Manual entry of molecular weight</label>
-  <input id="manualmolecularweight" type="text" name="manualmolecularweight" value="" data-ng-model="matForm.molecularweight">
+  <input id="manualmolecularweight" type="text" name="manualmolecularweight" data-ng-model="matForm.molecularweight">
   <label for="manualequivalentweight">Manual entry of equivalent molecular weight</label>
-  <input id="manualequivalentweight" type="text" name="manualequivalentweight" value="" data-ng-model="matForm.equivalent">
+  <input id="manualequivalentweight" type="text" name="manualequivalentweight" data-ng-model="matForm.equivalent">
   <label for="LOI">Loss on Ignition - LOI (percentage) </label>
-  <input id="LOI" type="text" name="LOI" value="" data-ng-model="matForm.loi">
+  <input id="LOI" type="text" name="LOI" data-ng-model="matForm.loi">
 
   <p>Enter the formula (fired):
     <br>
@@ -58,7 +58,7 @@
     <ul>
       <li data-ng-repeat="item in formula track by $index">
         {{item.name}}
-        <p>Amount: <input type="text" name="amount" value="" data-ng-model="item.amount">
+        <p>Amount: <input type="text" name="amount" data-ng-model="item.amount">
           </p>
         <button type="button" data-ng-click="removeFromFormula(item)">
           Remove from formula list
@@ -80,9 +80,9 @@
       <li data-ng-repeat="mat in myServerMats">{{mat.name}}
         {{mat.fields}}
         {{mat.equivalent}}
-        {{mat.molecularweight}}
+        {{mat.notes}}
         <p data-ng-if="editToggle">Remove from the server:
-          <button type="button" name="remoteMat" data-ng-click="removeMyMat(mat)"> X </button></p>
+          <button type="button" name="removeMat" data-ng-click="removeMyMat(mat)"> X </button></p>
       </li>
     </ul>
   </p>

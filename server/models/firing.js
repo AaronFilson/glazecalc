@@ -3,7 +3,6 @@ mongoose.Promise = global.Promise;
 var firingSchema = new mongoose.Schema({
   date: String,
   fieldsIncluded: { type: [String], required: true },
-  fieldPositions: { type: [String], required: true },
   kiln: String,
   notes: { type: [String] },
   ownedBy: { type: String, required: true },

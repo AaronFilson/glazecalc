@@ -15,7 +15,6 @@ var gotFiring;
 var testFiring = {};
 testFiring.date = 'A date string';
 testFiring.fieldsIncluded = ['gas', 'air', 'damper', 'temp', 'cone', 'weather'];
-testFiring.fieldPositions = ['1', '2', '4', '3', '5', '6'];
 testFiring.kiln = 'Test kiln #1';
 testFiring.notes = ['fake note id 1', 'fake note id 2'];
 testFiring.rows = [['row1', 'a second part of row1'], ['row2', 'row2', 'row2 part 3']];
