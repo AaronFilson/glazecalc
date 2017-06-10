@@ -79,11 +79,16 @@
     <button type="button" name="serverFiringEdit" data-ng-click="editMyListToggle()"> toggle </button>
     <ul>
       <li data-ng-repeat="fr in myServerFirings">{{fr.title}},
-        {{fr.kiln}}, on {{fr.date}},
+        {{fr.kiln}}, on {{fr.date | date:'EEEE, MMMM yyyy'}},
         <br>
-        {{fr.fieldsIncluded}}
-        <br>
-        {{fr.rows}}
+        <table class="table table-bordered">
+          <tr>
+            <th data-ng-repeat="heading in fr.fieldsIncluded">{{heading}}</th>
+          </tr>
+          <tr data-ng-repeat="row in fr.rows track by $index">
+            <td data-ng-repeat="cell in row track by $index">{{cell}}</td>
+          </tr>
+        </table>
         <p data-ng-if="editToggle">Remove from the server:
           <button type="button" name="removeMat" data-ng-click="removeMyFiring(fr)"> X </button></p>
       </li>

@@ -175,7 +175,7 @@ module.exports = function(app) {
           recipe.computed = $scope.computeUnity(recipe.materials);
         }
 
-        recipeService.create(recipe, function(err) {
+        recipeService.create(recipe, function(err, data) {
           if (err) {
             $scope.errors.push(err);
             return console.dir('Error: ', err);
@@ -185,7 +185,7 @@ module.exports = function(app) {
           $scope.recipeMats = null;
           $scope.recipeMats = [];
           $scope.recipeForm = {};
-          $scope.myRecipes.push(recipe);
+          $scope.myRecipes.push(data);
         });
       };
 
