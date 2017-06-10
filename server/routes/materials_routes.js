@@ -7,9 +7,10 @@ const jwtAuth = require(__dirname + '/../lib/jwt_auth');
 const materialsRouter = module.exports = exports = express.Router();
 
 materialsRouter.post('/create', jwtAuth, jsonParser, (req, res) => {
-  var incMaterial = req.body.material || {};
-
-  if (!req.user.id || !incMaterial.fields || !incMaterial.relatedTo || !incMaterial.name) {
+  var incMaterial = req.body || {};
+  if (!req.user.id || !incMaterial.fields || !incMaterial.name
+    || !incMaterial.formulaweight || !incMaterial.loi || !incMaterial.molecularweight
+    || !incMaterial.percentmole || !incMaterial.equivalent) {
     return res.status(400).json( { msg: 'Missing required information' } );
   }
   var newestMaterial = new Material();
@@ -19,6 +20,12 @@ materialsRouter.post('/create', jwtAuth, jsonParser, (req, res) => {
     newestMaterial.notes = incMaterial.notes;
     newestMaterial.relatedTo = incMaterial.relatedTo;
     newestMaterial.name = incMaterial.name;
+    newestMaterial.formulaweight = incMaterial.formulaweight;
+    newestMaterial.loi = incMaterial.loi;
+    newestMaterial.molecularweight = incMaterial.molecularweight;
+    newestMaterial.percentmole = incMaterial.percentmole;
+    newestMaterial.equivalent = incMaterial.equivalent;
+    newestMaterial.rawformula = incMaterial.rawformula;
   } catch (e) {
     console.log('error in setting material properties : ', e);
     return res.status(500).json( { msg: 'Error in creating the new material.' } );
@@ -65,5 +72,13 @@ materialsRouter.delete('/delete/:id', jwtAuth, jsonParser, (req, res) => {
     if (err) return handleDBError(err, res);
 
     res.status(200).json({ msg: 'Successfully deleted material' });
+  });
+});
+
+materialsRouter.get('/getStandard', jwtAuth, jsonParser, (req, res) => {
+  Material.find({ ownedBy: 'Standard' }, (err, data) => {
+    if (err) return handleDBError(err, res);
+
+    res.status(200).json(data);
   });
 });

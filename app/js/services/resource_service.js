@@ -84,6 +84,17 @@ module.exports = exports = function(app) {
         .then(handleSuccess(callback), handleFailure(callback));
     };
 
+    Resource.prototype.getStandard = function(callback) {
+      $http({
+        method: 'GET',
+        url: 'http://localhost:4000' + this.resourceName + 'getStandard',
+        headers: {
+          token: userAuth.getToken()
+        }
+      })
+        .then(handleSuccess(callback), handleFailure(callback));
+    };
+
     return function(resourceName) {
       return new Resource(resourceName);
     };

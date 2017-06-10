@@ -1,12 +1,98 @@
-Firing view file stub.
-
 <nav>
-  links to pages:
-  <a href="#/advice">advice</a>
   You are on the Firing page.
+  <br>
+  links to pages:
+  <a href="#/additive">additive</a>
+  <a href="#/advice">advice</a>
   <a href="#/home">home</a>
   <a href="#/material">material</a>
   <a href="#/notes">notes</a>
   <a href="#/recipe">recipe</a>
   <a href="#/trash">trash</a>
 </nav>
+
+<ol class="errors-section" data-ng-if="errors.length">
+  <li data-ng-repeat="error in errors">{{error}}
+    <button type="button" name="clear" data-ng-click="dismissError(error)">Dismiss</button>
+  </li>
+</ol>
+
+<ol class="server-msg" data-ng-if="serverMessages.length">
+  <li data-ng-repeat="msg in serverMessages">{{msg}}
+    <button type="button" name="clear" data-ng-click="dismissMessage(msg)">Dismiss</button>
+  </li>
+</ol>
+
+<section class="inputbox" data-ng-init="getAll()">
+  <label for="firing-title">Title of Firing : </label>
+  <input id="firing-title" type="text" name="firing-title" data-ng-model="firingForm.title">
+
+  <label for="firing-kiln">Kiln used for firing : </label>
+  <input id="firing-kiln" type="text" name="firing-kiln" data-ng-model="firingForm.kiln">
+
+  <label for="firing-date">Date of firing : </label>
+  <input id="firing-date" type="date" name="firing-date" data-ng-model="firingForm.date">
+
+  <label for="firing-notes">Notes on the firing : </label>
+  <textarea id="firing-notes" name="firing-notes" cols="40" rows="3" data-ng-model="firingForm.notes">
+  </textarea>
+
+  <p>
+    <label for="fieldselect">Select and add fields to the firing record : </label>
+    <field-select>
+    </fields-select>
+  </p>
+
+  <label for="addFieldButton">Add the field</label>
+  <button id="addFieldButton" type="button" name="addFieldButton" data-ng-click="addField(fieldselect)">
+    +
+  </button>
+  <p>
+    <label for="addRow"> Add a row to the firing table : </label>
+    <button id="addRow" type="button" name="addRow" data-ng-click="addRow()"> _-_ </button>
+  </p>
+</section>
+
+<section class="tech-info">
+  Record the Firing
+  <table class="table table-bordered">
+    <tr>
+      <th data-ng-repeat="heading in firingForm.fieldsIncluded ">
+        {{heading}}
+      </th>
+    </tr>
+    <tr data-ng-repeat="row in rows track by $index">
+      <td data-ng-repeat="cell in row track by $index">
+        <input type="text" data-ng-model="row[$index]">
+      </td>
+    </tr>
+  </table>
+
+<label for="save">Save the firing information</label>
+<button id="save" type="button" name="save" data-ng-click="submit(firingForm)">Save!</button>
+</section>
+
+<section data-ng-if="myServerFirings.length" class="tech-info">
+  <p>My stored firings:
+    <br>
+    Edit / Remove toggle
+    <button type="button" name="serverFiringEdit" data-ng-click="editMyListToggle()"> toggle </button>
+    <ul>
+      <li data-ng-repeat="fr in myServerFirings">{{fr.title}},
+        {{fr.kiln}}, on {{fr.date | date:'EEEE, MMMM yyyy'}},
+        <br>
+        <table class="table table-bordered">
+          <tr>
+            <th data-ng-repeat="heading in fr.fieldsIncluded">{{heading}}</th>
+          </tr>
+          <tr data-ng-repeat="row in fr.rows track by $index">
+            <td data-ng-repeat="cell in row track by $index">{{cell}}</td>
+          </tr>
+        </table>
+        <p data-ng-if="editToggle">Remove from the server:
+          <button type="button" name="removeMat" data-ng-click="removeMyFiring(fr)"> X </button></p>
+      </li>
+    </ul>
+  </p>
+
+</section>

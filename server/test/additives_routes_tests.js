@@ -1,4 +1,4 @@
-process.env.MONGOLAB_URI = 'mongodb://localhost/firing_test';
+process.env.MONGOLAB_URI = 'mongodb://localhost/m_test';
 require(__dirname + '/../../server');
 const chai = require('chai');
 const chaiHttp = require('chai-http');
@@ -7,24 +7,23 @@ const expect = chai.expect;
 const request = chai.request;
 const mongoose = require('mongoose');
 var PORT = process.env.PORT || 4000;
-var baseUri = 'localhost:' + PORT + '/firing';
+var baseUri = 'localhost:' + PORT + '/additives';
 const User = require(__dirname + '/../models/user');
 var userToken;
 var testUser;
-var gotFiring;
-var testFiring = {};
-testFiring.date = 'A date string';
-testFiring.fieldsIncluded = ['gas', 'air', 'damper', 'temp', 'cone', 'weather'];
-testFiring.kiln = 'Test kiln #1';
-testFiring.notes = ['fake note id 1', 'fake note id 2'];
-testFiring.rows = [['row1', 'a second part of row1'], ['row2', 'row2', 'row2 part 3']];
-testFiring.title = 'test firing chart 1';
+var gotAdditive;
 
-describe('firing API', () => {
+var testAdditive = {};
+testAdditive.fields = [{ name: 'Iron', amount: 1 }, { name: 'Clay', amount: 1 }];
+testAdditive.name = 'Yellow Ochre';
+testAdditive.notes = ['fake note id 3', 'fake note id 4'];
+testAdditive.relatedTo = ['RIO', 'Rust', 'Clay'];
+
+describe('additives API', () => {
 
   before((done) => {
     testUser = new User();
-    testUser.email = 'test7@tester.com';
+    testUser.email = 'test9@tester.com';
     testUser.hashPassword('password');
     testUser.save( (err, data) => {
       if (err) throw err;
@@ -41,15 +40,15 @@ describe('firing API', () => {
 
   describe('Simple post and get API calls', () => {
 
-    it('should be able to add one firing', (done) => {
+    it('should be able to add one additive', (done) => {
       request(baseUri)
         .post('/create')
         .set('token', userToken)
-        .send( testFiring )
+        .send( testAdditive )
         .end((err, res) => {
           expect(err).to.eql(null);
           expect(res.body).to.not.eql(null);
-          expect(res.body.title).to.eql('test firing chart 1');
+          expect(res.body.name).to.eql('Yellow Ochre');
           done();
         });
     });
@@ -61,32 +60,32 @@ describe('firing API', () => {
         .end((err, res) => {
           expect(err).to.eql(null);
           expect(res.body).to.not.eql(null);
-          expect(res.body.title).to.eql('test firing chart 1');
-          gotFiring = res.body;
+          expect(res.body.name).to.eql('Yellow Ochre');
+          gotAdditive = res.body;
           done();
         });
     });
   });
 
-  describe('The getAll for firings', () => {
+  describe('The getAll for additives', () => {
 
     before((done) => {
       request(baseUri)
         .post('/create')
         .set('token', userToken)
-        .send( testFiring )
+        .send( testAdditive )
         .end((err) => {
           if (err) throw err;
           request(baseUri)
             .post('/create')
             .set('token', userToken)
-            .send( testFiring )
+            .send( testAdditive )
             .end((err) => {
               if (err) throw err;
               request(baseUri)
                 .post('/create')
                 .set('token', userToken)
-                .send( testFiring )
+                .send( testAdditive )
                 .end((err) => {
                   if (err) throw err;
                   done();
@@ -94,43 +93,40 @@ describe('firing API', () => {
             });
         });
     });
-    it('should get multiple firings', (done) => {
+    it('should get multiple additives', (done) => {
       request(baseUri)
         .get('/getAll/')
         .set('token', userToken)
         .end((err, res) => {
           expect(err).to.eql(null);
           expect(res.body).to.not.eql(null);
-          expect(res.body[3].title).to.eql('test firing chart 1');
+          expect(res.body[3].name).to.eql('Yellow Ochre');
           done();
         });
     });
   });
 
   describe('ability to UPDATE and DELETE', () => {
-    it('should be able to UPDATE a firing', (done) => {
-
-      gotFiring.title = 'newly updated title';
-
+    it('should be able to UPDATE an additive', (done) => {
       request(baseUri)
-        .put('/change/' + gotFiring._id)
+        .put('/change/' + gotAdditive._id)
         .set('token', userToken)
-        .send( gotFiring )
+        .send( gotAdditive )
         .end((err, res) => {
           expect(err).to.eql(null);
-          expect(res.body.msg).to.eql('Successfully updated firing');
+          expect(res.body.msg).to.eql('Successfully updated additive');
           expect(res).to.have.status(200);
           done();
         });
     });
 
-    it('should be able to DELETE a firing', (done) => {
+    it('should be able to DELETE an additive', (done) => {
       request(baseUri)
-        .delete('/delete/' + gotFiring._id)
+        .delete('/delete/' + gotAdditive._id)
         .set('token', userToken)
         .end((err, res) => {
           expect(err).to.eql(null);
-          expect(res.body.msg).to.eql('Successfully deleted firing');
+          expect(res.body.msg).to.eql('Successfully deleted additive');
           expect(res).to.have.status(200);
           done();
         });

@@ -14,10 +14,16 @@ var testUser;
 var gotMaterial;
 
 var testMaterial = {};
-testMaterial.fields = ['not really sure how this one is going yet', 4];
+testMaterial.fields = [{ name: 'Oxide1', amount: 1, amountUnity: 1 }, {}];
+testMaterial.formulaweight = 255;
+testMaterial.loi = 3;
+testMaterial.equivalent = 284;
+testMaterial.molecularweight = 284;
+testMaterial.percentmole = 'molecular';
+testMaterial.name = 'porcelain';
 testMaterial.notes = ['fake note id 1', 'fake note id 2'];
 testMaterial.relatedTo = ['china clay', 'kaolin'];
-testMaterial.name = 'porcelain';
+testMaterial.rawformula = 'Al2O3-2SiO2-2H2O';
 
 describe('materials API', () => {
 
@@ -44,7 +50,7 @@ describe('materials API', () => {
       request(baseUri)
         .post('/create')
         .set('token', userToken)
-        .send( { user: testUser, material: testMaterial } )
+        .send( testMaterial )
         .end((err, res) => {
           expect(err).to.eql(null);
           expect(res.body).to.not.eql(null);
@@ -73,19 +79,19 @@ describe('materials API', () => {
       request(baseUri)
         .post('/create')
         .set('token', userToken)
-        .send( { user: testUser, material: testMaterial } )
+        .send( testMaterial )
         .end((err) => {
           if (err) throw err;
           request(baseUri)
             .post('/create')
             .set('token', userToken)
-            .send( { user: testUser, material: testMaterial } )
+            .send( testMaterial )
             .end((err) => {
               if (err) throw err;
               request(baseUri)
                 .post('/create')
                 .set('token', userToken)
-                .send( { user: testUser, material: testMaterial } )
+                .send( testMaterial )
                 .end((err) => {
                   if (err) throw err;
                   done();
@@ -111,7 +117,7 @@ describe('materials API', () => {
       request(baseUri)
         .put('/change/' + gotMaterial._id)
         .set('token', userToken)
-        .send({ material: gotMaterial })
+        .send( gotMaterial )
         .end((err, res) => {
           expect(err).to.eql(null);
           expect(res.body.msg).to.eql('Successfully updated material');

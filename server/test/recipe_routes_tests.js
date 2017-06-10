@@ -40,7 +40,7 @@ describe('recipe API', () => {
       request(baseUri)
         .post('/create')
         .set('token', userToken)
-        .send( { user: testUser, recipe: testRecipe } )
+        .send( testRecipe )
         .end((err, res) => {
           expect(err).to.eql(null);
           expect(res.body).to.not.eql(null);
@@ -72,19 +72,19 @@ describe('recipe API', () => {
       request(baseUri)
         .post('/create')
         .set('token', userToken)
-        .send( { user: testUser, recipe: testRecipe } )
+        .send( testRecipe )
         .end((err) => {
           if (err) throw err;
           request(baseUri)
             .post('/create')
             .set('token', userToken)
-            .send( { user: testUser, recipe: testRecipe } )
+            .send( testRecipe )
             .end((err) => {
               if (err) throw err;
               request(baseUri)
                 .post('/create')
                 .set('token', userToken)
-                .send( { user: testUser, recipe: testRecipe } )
+                .send( testRecipe )
                 .end((err) => {
                   if (err) throw err;
                   done();
@@ -127,6 +127,33 @@ describe('recipe API', () => {
           expect(err).to.eql(null);
           expect(res.body.msg).to.eql('Successfully deleted recipe');
           expect(res).to.have.status(200);
+          done();
+        });
+    });
+  });
+
+  describe('Send a bad request intentially', () => {
+    var testRecipe = null;
+    it('and it should handle create error without crashing', (done) => {
+      request(baseUri)
+        .post('/create')
+        .set('token', userToken)
+        .send( testRecipe )
+        .end((err) => {
+          expect(err).to.not.eql(null);
+          expect(err.response.body.msg).to.eql('Missing required information');
+          done();
+        });
+    });
+
+    it('and it should handle error without crashing a second time', (done) => {
+      request(baseUri)
+        .post('/create')
+        .set('token', userToken)
+        .send( testRecipe )
+        .end((err) => {
+          expect(err).to.not.eql(null);
+          expect(err.response.body.msg).to.eql('Missing required information');
           done();
         });
     });

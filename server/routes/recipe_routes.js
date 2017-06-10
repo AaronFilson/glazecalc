@@ -7,13 +7,14 @@ const jwtAuth = require(__dirname + '/../lib/jwt_auth');
 const recipeRouter = module.exports = exports = express.Router();
 
 recipeRouter.post('/create', jwtAuth, jsonParser, (req, res) => {
-  var incRecipe = req.body.recipe;
+  var incRecipe = req.body || {};
   if (!req.user.id || !incRecipe.title || !incRecipe.materials) {
     return res.status(400).json( { msg: 'Missing required information' } );
   }
   var newestRecipe = new Recipe();
   try {
     newestRecipe.ownedBy = req.user.id;
+    newestRecipe.additives = incRecipe.additives;
     newestRecipe.computed = incRecipe.computed;
     newestRecipe.date = incRecipe.date;
     newestRecipe.materials = incRecipe.materials;
@@ -45,6 +46,14 @@ recipeRouter.get('/getLatest', jwtAuth, jsonParser, (req, res) => {
 
 recipeRouter.get('/getAll', jwtAuth, jsonParser, (req, res) => {
   Recipe.find({ ownedBy: req.user.id }, (err, data) => {
+    if (err) return handleDBError(err, res);
+
+    res.status(200).json(data);
+  });
+});
+
+recipeRouter.get('/getStandard', jwtAuth, jsonParser, (req, res) => {
+  Recipe.find({ ownedBy: 'Standard' }, (err, data) => {
     if (err) return handleDBError(err, res);
 
     res.status(200).json(data);
