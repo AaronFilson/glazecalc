@@ -8,10 +8,13 @@ module.exports = function(app) {
       $scope.myRecipes = [];
       $scope.customs = [];
       $scope.standards = [];
-      $scope.myRecipes = [];
+      $scope.additives = [];
+      $scope.standardadds = [];
+      $scope.addList = [];
 
       var recipeService = Resource('/recipe/');
       var matService = Resource('/materials/');
+      var addService = Resource('/additives/');
 
       $scope.getMats = function() {
         matService.getAll((err, data) => {
@@ -27,6 +30,23 @@ module.exports = function(app) {
             return console.log('Error: ', err);
           }
           $scope.standards = data;
+        });
+      };
+
+      $scope.getAdds = function() {
+        addService.getAll((err, data) => {
+          if (err) {
+            $scope.errors.push('There was an error in getting the custom additives information.');
+            return console.log('Error: ', err);
+          }
+          $scope.additives = data;
+        });
+        addService.getStandard((err, data) => {
+          if (err) {
+            $scope.errors.push('There was an error in getting standard additives information.');
+            return console.log('Error: ', err);
+          }
+          $scope.standardadds = data;
         });
       };
 
@@ -122,6 +142,17 @@ module.exports = function(app) {
         $scope.recipeMats.push(toAdd);
       };
 
+      $scope.addAdditiveField = function(mynewadd, stdnewadd) {
+        if (mynewadd && stdnewadd) {
+          return $scope.errors.push('Error: please select only one additive to add.');
+        }
+        if (!mynewadd && !stdnewadd) {
+          return $scope.errors.push('Error: please select a material to add.');
+        }
+        var theAdd = JSON.parse(mynewadd) || JSON.parse(stdnewadd);
+        $scope.addList.push(theAdd);
+      };
+
       $scope.removeFromRecipe = function(theMat) {
         $scope.recipeMats.splice($scope.recipeMats.indexOf(theMat), 1);
       };
@@ -133,6 +164,7 @@ module.exports = function(app) {
         }
 
         recipe.materials = $scope.recipeMats;
+        recipe.additives = $scope.addList;
         if (!recipe.date) {
           recipe.date = new Date();
         }
@@ -166,6 +198,25 @@ module.exports = function(app) {
 
           $scope.myRecipes = data;
         });
+      };
+
+      $scope.removeFromAdds = function(add) {
+        $scope.addList.splice($scope.addList.indexOf(add), 1);
+      };
+
+      $scope.editMyListToggle = function() {
+        $scope.editToggle = !$scope.editToggle;
+      };
+
+      $scope.removeMyRec = function(theRec) {
+        recipeService.delete(theRec, (err) => {
+          if (err) {
+            $scope.errors.push('Error in deleting the recipe from the server.');
+            return console.log('Error: ', err);
+          }
+          $scope.serverMessages.push('Success in removing the recipe from the server.');
+        });
+        $scope.myRecipes.splice($scope.myRecipes.indexOf(theRec), 1);
       };
     }]);
 };

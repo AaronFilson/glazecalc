@@ -52,6 +52,21 @@ Recipe view.
     Add the above material to the recipe : <button data-ng-click="addMaterialField(mynewmat, stdnewmat)"> + </button>
   </p>
 
+  <p data-ng-init="getAdds()">
+    Add colorants and additives to the recipe :
+    <br>
+    My additives :
+    <select name="my-adds" data-ng-model="mynewadd">
+      <option data-ng-repeat="myadd in additives" value="{{myadd}}">{{myadd.name}}</option>
+    </select>
+    <br>
+    Standard additives :
+    <select name="std-adds" data-ng-model="stdnewadd">
+      <option data-ng-repeat="stdadd in standardadds" value="{{stdadd}}">{{stdadd.name}}</option>
+    </select>
+    <br>
+    Add the above additive / colorant to the recipe : <button data-ng-click="addAdditiveField(mynewadd, stdnewadd)"> + </button>
+  </p>
   <p data-ng-if="recipeMats.length">
     Enter the amounts of the materials as a percentage or as parts :
     <br>
@@ -108,10 +123,25 @@ Recipe view.
   <p data-ng-if="recipeForm.computed.uList.P2O5 > 0">
     P₂O₅ : {{recipeForm.computed.uList.P2O5 | number:3}}</p>
 
+  <p>
+    Glaze additives and colorants :
+    <ol>
+      <li data-ng-repeat="add in addList">
+        {{add.name}}
+        <br>
+        Amount : <input type="text" name="amount" data-ng-model="add.amount">
+        <br>
+        <button type="button" data-ng-click="removeFromAdds(add)">Remove from recipe</button>
+      </li>
+    </ol>
+  </p>
 </section>
 
 <section data-ng-init="getMyRecipes()" class="tech-info">
   My saved recipes :
+  <br>
+  Edit / Remove toggle
+  <button type="button" name="serverRecEdit" data-ng-click="editMyListToggle()"> toggle </button>
   <ul data-ng-if="myRecipes.length">
     <li data-ng-repeat="rec in myRecipes">
       {{rec.title}}
@@ -148,6 +178,17 @@ Recipe view.
       <p data-ng-if="rec.computed[0].uList.P2O5 > 0">
         P₂O₅ : {{rec.computed[0].uList.P2O5 | number:3}}</p>
 
+      <p>
+        Additives :
+        <ol>
+          <li data-ng-repeat="singleAdd in rec.additives">
+            {{singleAdd.name}} : {{singleAdd.amount}}
+          </li>
+        </ol>
+      </p>
+
+      <p data-ng-if="editToggle">Remove from the server:
+        <button type="button" name="removeMat" data-ng-click="removeMyRec(rec)"> X </button></p>
     </li>
   </ul>
 </section>

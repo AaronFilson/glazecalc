@@ -14,6 +14,7 @@ recipeRouter.post('/create', jwtAuth, jsonParser, (req, res) => {
   var newestRecipe = new Recipe();
   try {
     newestRecipe.ownedBy = req.user.id;
+    newestRecipe.additives = incRecipe.additives;
     newestRecipe.computed = incRecipe.computed;
     newestRecipe.date = incRecipe.date;
     newestRecipe.materials = incRecipe.materials;
