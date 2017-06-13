@@ -5,6 +5,7 @@
   <a href="#/advice">advice</a>
   <a href="#/firing">firing</a>
   <a href="#/home">home</a>
+  <a href="#/material">material</a>
   <a href="#/notes">notes</a>
   <a href="#/recipe">recipe</a>
   <a href="#/trash">trash</a>
@@ -57,35 +58,51 @@
         </button>
       </li>
     </ul>
-
   </p>
-
   <button data-ng-click="submit(addForm)">Save</button>
 </section>
-
+<br>
 
 <section data-ng-if="myServerAdds.length" class="tech-info">
   <p>My server materials:
     <br>
     Edit / Remove toggle
     <button type="button" name="serverAddEdit" data-ng-click="editMyListToggle()"> toggle </button>
-    <ul>
-      <li data-ng-repeat="add in myServerAdds">{{add.name}}
-        {{add.fields}}
-        <p data-ng-if="editToggle">Remove from the server:
-          <button type="button" name="removeAdd" data-ng-click="removeMyAdd(add)"> X </button></p>
-      </li>
     </ul>
+    <table class="table table-bordered">
+      <tr>
+        <th>Name</th> <th>Notes</th> <th>Fields</th> <th>Remove</th>
+      </tr>
+      <tr data-ng-repeat="add in myServerAdds">
+        <td>{{add.name}}</td>
+        <td>{{add.notes[0]}}</td>
+        <td><span data-ng-repeat="element in add.fields">
+          {{element.name}} : {{element.amount}}<span data-ng-if="$index < add.fields.length - 1">; </span>
+        </span></td>
+        <td><div data-ng-if="editToggle">Remove from server:
+          <button type="button" name="removeMat" data-ng-click="removeMyMat(add)"> X </button></div>
+        </td>
+      </tr>
+    </table>
   </p>
-
 </section>
+<br>
 
 <section data-ng-init="getStandard()">
   <p data-ng-if="standardAdds.length">
     The standard server additives:
     <br>
-    <ul>
-      <li data-ng-repeat="stdAdd in standardAdds"></li>
-    </ul>
+    <table class="table table-bordered" data-ng-if="standardAdds.length">
+      <tr>
+        <th>Name</th> <th>notes</th> <th>fields</th>
+      </tr>
+      <tr data-ng-repeat="stdAdd in standardAdds">
+        <td>{{stdAdd.name}}</td>
+        <td>{{stdAdd.notes[0]}}</td>
+        <td><span data-ng-repeat="element in stdAdd.fields">
+          {{element.name}} : {{element.amount}}<span data-ng-if="$index < stdAdd.fields.length - 1">; </span>
+        </span></td>
+      </tr>
+    </table>
   </p>
 </section>

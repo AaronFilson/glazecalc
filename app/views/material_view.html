@@ -24,51 +24,75 @@
 </ol>
 
 <section class="inputbox" data-ng-init="getAll()">
-  Input information on the new material <br>
+  <h3>Input information on the new material</h3>
   <p>
     Symbols to copy into your material formula:
     ₁ ₂ ₃ ₄ ₅ ₆ ₇ ₈ ₉ ₀ •
   </p>
-  <label for="material-name"> Name of Material : </label>
-  <input id="material-name" type="text" name="MaterialName" data-ng-model="matForm.name">
+  <form>
+    <div class="row">
+      <div class="col-md-4">
+        <label for="material-name"> Name of Material : </label>
+        <input id="material-name" type="text" name="MaterialName" data-ng-model="matForm.name">
+      </div>
+      <div class="col-md-4">
+        <label for="raw-formula"> Raw formula : </label>
+        <input id="raw-formula" type="text" name="RawFormula" data-ng-model="matForm.rawformula">
+      </div>
+      <div class="col-md-4">
+        <label for="related-to"> Related To : </label>
+        <input id="related-to" type="text" name="RelatedTo" data-ng-model="matForm.relatedTo">
+      </div>
+    </div>
 
-  <label for="raw-formula"> Raw formula : </label>
-  <input id="raw-formula" type="text" name="RawFormula" data-ng-model="matForm.rawformula">
-  <label for="related-to"> Related To : </label>
-  <input id="related-to" type="text" name="RelatedTo" data-ng-model="matForm.relatedTo">
-  <label for="notes"> Notes : </label>
-  <textarea id="notes" name="notes" data-ng-model="matForm.notes" cols="40" rows="3"></textarea>
-  <br>
-  <label for="manualformulaweight">Manual entry of fired atomic weight</label>
-  <input id="manualformulaweight" type="text" name="manualformulaweight" data-ng-model="matForm.formulaweight">
-  <label for="manualmolecularweight">Manual entry of molecular weight</label>
-  <input id="manualmolecularweight" type="text" name="manualmolecularweight" data-ng-model="matForm.molecularweight">
-  <label for="manualequivalentweight">Manual entry of equivalent molecular weight</label>
-  <input id="manualequivalentweight" type="text" name="manualequivalentweight" data-ng-model="matForm.equivalent">
-  <label for="LOI">Loss on Ignition - LOI (percentage) </label>
-  <input id="LOI" type="text" name="LOI" data-ng-model="matForm.loi">
+    <label for="notes"> Notes : </label>
+    <textarea id="notes" name="notes" data-ng-model="matForm.notes" cols="40" rows="3"></textarea>
+    <div class="row">
+      <div class="col-md-3">
+        <label for="manualformulaweight">Manual entry of fired atomic weight</label>
+        <input id="manualformulaweight" type="text" name="manualformulaweight" data-ng-model="matForm.formulaweight">
+      </div>
+      <div class="col-md-3">
+        <label for="manualmolecularweight">Manual entry of molecular weight</label>
+        <input id="manualmolecularweight" type="text" name="manualmolecularweight" data-ng-model="matForm.molecularweight">
+      </div>
+      <div class="col-md-3">
+        <label for="manualequivalentweight">Manual entry of equivalent molecular weight</label>
+        <input id="manualequivalentweight" type="text" name="manualequivalentweight" data-ng-model="matForm.equivalent">
+      </div>
+      <div class="col-md-3">
+        <label for="LOI">Loss on Ignition - LOI (percentage) </label>
+        <input id="LOI" type="text" name="LOI" data-ng-model="matForm.loi">
+      </div>
 
-  <p>Enter the formula (fired):
-    <br>
-    <input type="radio" name="percentmole" value="percent" data-ng-model="matForm.percentmole"> Percent
-    <input type="radio" name="percentmole" value="molecular" data-ng-model="matForm.percentmole"> Molecular / Unity
-      <br>
-      Oxide Selection<firedox-select data-ng-model="firedox"></firedox-select><br>
-      Add the above oxide: <button data-ng-click="addFiredField(firedoxselect)"> + </button> <br>
-    <ul>
-      <li data-ng-repeat="item in formula track by $index">
-        {{item.name}}
-        <p>Amount: <input type="text" name="amount" data-ng-model="item.amount">
-          </p>
-        <button type="button" data-ng-click="removeFromFormula(item)">
-          Remove from formula list
-        </button>
-      </li>
-    </ul>
+    </div>
 
-  </p>
-
-  <button data-ng-click="submit(matForm)">Save</button>
+    <div>Enter the formula (fired):
+      <div class="row">
+        <div class="col-md-4">
+          <input type="radio" name="percentmole" value="percent" data-ng-model="matForm.percentmole"> Percent
+          <input type="radio" name="percentmole" value="molecular" data-ng-model="matForm.percentmole"> Molecular / Unity
+        </div>
+        <div class="col-md-4">
+          Oxide Selection<firedox-select data-ng-model="firedox"></firedox-select><br>
+        </div>
+        <div class="col-md-4">
+          <button data-ng-click="addFiredField(firedoxselect)">Add the oxide to the list</button>
+        </div>
+      </div>
+      <ul>
+        <li data-ng-repeat="item in formula track by $index">
+          {{item.name}}
+          <p>Amount: <input type="text" name="amount" data-ng-model="item.amount">
+            </p>
+          <button type="button" data-ng-click="removeFromFormula(item)">
+            Remove from formula list
+          </button>
+        </li>
+      </ul>
+    </div>
+    <button data-ng-click="submit(matForm)">Save</button>
+  </form>
 </section>
 
 <section data-ng-if="myServerMats.length" class="tech-info">
@@ -76,17 +100,23 @@
     <br>
     Edit / Remove toggle
     <button type="button" name="serverMatEdit" data-ng-click="editMyListToggle()"> toggle </button>
-    <ul>
-      <li data-ng-repeat="mat in myServerMats">{{mat.name}}
-        {{mat.fields}}
-        {{mat.equivalent}}
-        {{mat.notes}}
-        <p data-ng-if="editToggle">Remove from the server:
-          <button type="button" name="removeMat" data-ng-click="removeMyMat(mat)"> X </button></p>
-      </li>
-    </ul>
+    <table class="table table-bordered">
+      <tr>
+        <th>Name</th> <th>Equivalent</th> <th>notes</th> <th>fields</th> <th>Toggle remove</th>
+      </tr>
+      <tr data-ng-repeat="mat in myServerMats">
+        <td>{{mat.name}}</td>
+        <td>{{mat.equivalent}}</td>
+        <td>{{mat.notes[0]}}</td>
+        <td><span data-ng-repeat="oxide in mat.fields">
+          {{oxide.name}} : {{oxide.amount}}<span data-ng-if="$index < mat.fields.length - 1">; </span>
+        </span></td>
+        <td><div data-ng-if="editToggle">Remove from server:
+          <button type="button" name="removeMat" data-ng-click="removeMyMat(mat)"> X </button></div>
+        </td>
+      </tr>
+    </table>
   </p>
-
 </section>
 
 <section data-ng-init="getStandard()">
@@ -96,5 +126,18 @@
     <ul>
       <li data-ng-repeat="stdMat in standardMats"></li>
     </ul>
+    <table class="table table-bordered" data-ng-if="standardMats.length">
+      <tr>
+        <th>Name</th> <th>Equivalent</th> <th>notes</th> <th>fields</th>
+      </tr>
+      <tr data-ng-repeat="stdMat in standardMats">
+        <td>{{stdMat.name}}</td>
+        <td>{{stdMat.equivalent}}</td>
+        <td>{{stdMat.notes[0]}}</td>
+        <td><span data-ng-repeat="oxide in stdMat.fields">
+          {{oxide.name}} : {{oxide.amount}}<span data-ng-if="$index < stdMat.fields.length - 1">; </span>
+        </span></td>
+      </tr>
+    </table>
   </p>
 </section>

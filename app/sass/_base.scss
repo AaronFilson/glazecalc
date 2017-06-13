@@ -8,8 +8,9 @@ body {
   font-size: 1.6em;
   background-image: url("../images/background.jpg");
 	background-size: cover;
+  background-attachment: fixed;
   margin: 0 auto;
-  max-width: 1080px;
+  max-width: auto;
 }
 
 main {
@@ -52,6 +53,21 @@ main {
 
 .tech-info {
   background-color: rgba(190, 190, 200, 0.85);
+  padding: 5px;
+}
+
+.home-text {
+  background-color: rgba(210, 210, 200, 0.9);
+  padding: 5px;
+}
+
+.auth-text {
+  background-color: rgba(210, 210, 200, 0.9);
+  padding: 5px;
+}
+
+.signsubmit {
+  background-color: rgba(210, 240, 200, 0.9);
   padding: 5px;
 }
 

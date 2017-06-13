@@ -78,7 +78,7 @@ module.exports = function(app) {
         if (currPosition > 0) {
           $scope.firingForm.fieldsIncluded.splice(
             currPosition - 1, 0, $scope.firingForm.fieldsIncluded.splice(
-              currPosition, 1)
+              currPosition, 1)[0]
           );
         }
       };
@@ -91,7 +91,7 @@ module.exports = function(app) {
         if (currPosition < $scope.firingForm.fieldsIncluded.length - 1) {
           $scope.firingForm.fieldsIncluded.splice(
             currPosition + 1, 0, $scope.firingForm.fieldsIncluded.splice(
-              currPosition, 1)
+              currPosition, 1)[0]
           );
         }
       };

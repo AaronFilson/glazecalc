@@ -1,5 +1,3 @@
-Recipe view.
-
 <nav>
   You are on the Recipe page.
   <br>
@@ -25,167 +23,194 @@ Recipe view.
   </li>
 </ol>
 
-<section class="inputbox" data-ng-init="getMats()">
-  Create a new glaze recipe :
-  <br>
-  <label for="recipe-name">Recipe title : </label>
-  <input type="text" name="recipe-title" value="" data-ng-model="recipeForm.title">
-  <label for="recipe-date">Date (optional / default is today)</label>
-  <input type="date" name="recipe-date" value="" data-ng-model="recipeForm.date">
-  <label for="recipe-notes">Notes on the recipe</label>
-  <textarea name="recipe-notes" data-ng-model="recipeForm.notes"></textarea>
-  <br>
+<section class="inputbox">
+  <h3>Create a new glaze recipe : </h3>
+  <form class="">
+    <label for="recipe-name">Recipe title : </label>
+    <input type="text" name="recipe-title" value="" data-ng-model="recipeForm.title">
+    <label for="recipe-date">Date (optional / default is today)</label>
+    <input type="date" name="recipe-date" value="" data-ng-model="recipeForm.date">
+    <label for="recipe-notes">Notes on the recipe</label>
+    <textarea name="recipe-notes" data-ng-model="recipeForm.notes"></textarea>
 
-  <p>
-    Add materials to the recipe :
-    <br>
-    My materials :
-    <select name="my-mats" data-ng-model="mynewmat">
-      <option data-ng-repeat="mymat in customs" value="{{mymat}}">{{mymat.name}}</option>
-    </select>
-    <br>
-    Standard materials :
-    <select name="std-mats" data-ng-model="stdnewmat">
-      <option data-ng-repeat="stdmat in standards" value="{{stdmat}}">{{stdmat.name}}</option>
-    </select>
-    <br>
-    Add the above material to the recipe : <button data-ng-click="addMaterialField(mynewmat, stdnewmat)"> + </button>
-  </p>
-
-  <p data-ng-init="getAdds()">
-    Add colorants and additives to the recipe :
-    <br>
-    My additives :
-    <select name="my-adds" data-ng-model="mynewadd">
-      <option data-ng-repeat="myadd in additives" value="{{myadd}}">{{myadd.name}}</option>
-    </select>
-    <br>
-    Standard additives :
-    <select name="std-adds" data-ng-model="stdnewadd">
-      <option data-ng-repeat="stdadd in standardadds" value="{{stdadd}}">{{stdadd.name}}</option>
-    </select>
-    <br>
-    Add the above additive / colorant to the recipe : <button data-ng-click="addAdditiveField(mynewadd, stdnewadd)"> + </button>
-  </p>
-  <p data-ng-if="recipeMats.length">
-    Enter the amounts of the materials as a percentage or as parts :
-    <br>
-    <ol>
-      <li data-ng-repeat="material in recipeMats">
-        {{material.name}}
+    <div class="row">
+      <div class="col-md-6" data-ng-init="getMats()">
+        Add materials to the recipe :
         <br>
-        Amount : <input type="text" name="amount" data-ng-model="material.amount">
+        My materials :
+        <select name="my-mats" data-ng-model="mynewmat">
+          <option data-ng-repeat="mymat in customs" value="{{mymat}}">{{mymat.name}}</option>
+        </select>
         <br>
-        <button type="button" data-ng-click="removeFromRecipe(material)">Remove from recipe</button>
-      </li>
-    </ol>
-  </p>
-  <br>
-  <button name="compute" data-ng-click="computeUnity(recipeMats)"> Compute recipe into Unity </button>
+        Standard materials :
+        <select name="std-mats" data-ng-model="stdnewmat">
+          <option data-ng-repeat="stdmat in standards" value="{{stdmat}}">{{stdmat.name}}</option>
+        </select>
+        <br>
+        Add the above material to the recipe : <button data-ng-click="addMaterialField(mynewmat, stdnewmat)"> + </button>
+      </div>
+      <div class="col-md-6" data-ng-init="getAdds()">
+        Add colorants and additives to the recipe :
+        <br>
+        My additives :
+        <select name="my-adds" data-ng-model="mynewadd">
+          <option data-ng-repeat="myadd in additives" value="{{myadd}}">{{myadd.name}}</option>
+        </select>
+        <br>
+        Standard additives :
+        <select name="std-adds" data-ng-model="stdnewadd">
+          <option data-ng-repeat="stdadd in standardadds" value="{{stdadd}}">{{stdadd.name}}</option>
+        </select>
+        <br>
+        Add the above additive / colorant to the recipe : <button data-ng-click="addAdditiveField(mynewadd, stdnewadd)"> + </button>
+      </div>
+    </div>
 
-  <button name="submit-button" data-ng-click="submit(recipeForm)"> Save the recipe </button>
+    <p data-ng-if="recipeMats.length">
+      Enter the amounts of the materials as a percentage or as parts by weight :
+      <br>
+      <ol>
+        <li data-ng-repeat="material in recipeMats">
+          {{material.name}}
+          <br>
+          Amount : <input type="text" name="amount" data-ng-model="material.amount">
+          <br>
+          <button type="button" data-ng-click="removeFromRecipe(material)">Remove from recipe</button>
+        </li>
+      </ol>
+    </p>
+    <br>
+    <button name="compute" data-ng-click="computeUnity(recipeMats)"> Compute recipe into Unity </button>
 
+    <button name="submit-button" data-ng-click="submit(recipeForm)"> Save the recipe </button>
+  </form>
 </section>
 
-<section class="tech-info">
-  Unity formula of the glaze recipe
+<section class="tech-info" data-ng-if="recipeForm.computed.uList">
+  <h4>Unity formula of the glaze recipe</h4>
   <br>
-  <p data-ng-if="recipeForm.computed.uList.Li2O > 0">
-    Li₂O : {{recipeForm.computed.uList.Li2O | number:3}}</p>
-  <p data-ng-if="recipeForm.computed.uList.Na2O > 0">
-    Na₂O :{{recipeForm.computed.uList.Na2O | number:3}}</p>
-  <p data-ng-if="recipeForm.computed.uList.CaO > 0">
-    CaO : {{recipeForm.computed.uList.CaO | number:3}}</p>
-  <p data-ng-if="recipeForm.computed.uList.K2O > 0">
-    K₂O : {{recipeForm.computed.uList.K2O | number:3}}</p>
-  <p data-ng-if="recipeForm.computed.uList.MgO > 0">
-    MgO : {{recipeForm.computed.uList.MgO | number:3}}</p>
-  <p data-ng-if="recipeForm.computed.uList.BaO > 0">
-    BaO : {{recipeForm.computed.uList.BaO | number:3}}</p>
-  <p data-ng-if="recipeForm.computed.uList.Li2O > 0">
-    Li₂O : {{recipeForm.computed.uList.Li2O | number:3}}</p>
-  <p data-ng-if="recipeForm.computed.uList.SrO > 0">
-    SrO : {{recipeForm.computed.uList.SrO | number:3}}</p>
-  <p data-ng-if="recipeForm.computed.uList.ZnO > 0">
-    ZnO : {{recipeForm.computed.uList.ZnO | number:3}}</p>
-  <p data-ng-if="recipeForm.computed.uList.PbO > 0">
-    PbO : {{recipeForm.computed.uList.PbO | number:3}}</p>
-  <p data-ng-if="recipeForm.computed.uList.B2O3 > 0">
-    B₂O₃ : {{recipeForm.computed.uList.B2O3 | number:3}}</p>
-  <p data-ng-if="recipeForm.computed.uList.Al2O3 > 0">
-    Al₂O₃ : {{recipeForm.computed.uList.Al2O3 | number:3}}</p>
-  <p data-ng-if="recipeForm.computed.uList.Fe2O3 > 0">
-    Fe₂O₃ : {{recipeForm.computed.uList.Fe2O3 | number:3}}</p>
-  <p data-ng-if="recipeForm.computed.uList.SiO2 > 0">
-    SiO₂ : {{recipeForm.computed.uList.SiO2 | number:3}}</p>
-  <p data-ng-if="recipeForm.computed.uList.TiO2 > 0">
-    TiO₂ : {{recipeForm.computed.uList.TiO2 | number:3}}</p>
-  <p data-ng-if="recipeForm.computed.uList.P2O5 > 0">
-    P₂O₅ : {{recipeForm.computed.uList.P2O5 | number:3}}</p>
-
-  <p>
-    Glaze additives and colorants :
-    <ol>
-      <li data-ng-repeat="add in addList">
-        {{add.name}}
-        <br>
-        Amount : <input type="text" name="amount" data-ng-model="add.amount">
-        <br>
-        <button type="button" data-ng-click="removeFromAdds(add)">Remove from recipe</button>
+  <div class="row">
+    <ul class="col-md-3">
+      Fluxes - RO
+      <li data-ng-if="recipeForm.computed.uList.Li2O > 0">
+        Li₂O : {{recipeForm.computed.uList.Li2O | number:3}}</li>
+      <li data-ng-if="recipeForm.computed.uList.Na2O > 0">
+        Na₂O :{{recipeForm.computed.uList.Na2O | number:3}}</li>
+      <li data-ng-if="recipeForm.computed.uList.CaO > 0">
+        CaO : {{recipeForm.computed.uList.CaO | number:3}}</li>
+      <li data-ng-if="recipeForm.computed.uList.K2O > 0">
+        K₂O : {{recipeForm.computed.uList.K2O | number:3}}</li>
+      <li data-ng-if="recipeForm.computed.uList.MgO > 0">
+        MgO : {{recipeForm.computed.uList.MgO | number:3}}</li>
+      <li data-ng-if="recipeForm.computed.uList.BaO > 0">
+        BaO : {{recipeForm.computed.uList.BaO | number:3}}</li>
+      <li data-ng-if="recipeForm.computed.uList.Li2O > 0">
+        Li₂O : {{recipeForm.computed.uList.Li2O | number:3}}</li>
+      <li data-ng-if="recipeForm.computed.uList.SrO > 0">
+        SrO : {{recipeForm.computed.uList.SrO | number:3}}</li>
+      <li data-ng-if="recipeForm.computed.uList.ZnO > 0">
+        ZnO : {{recipeForm.computed.uList.ZnO | number:3}}</li>
+      <li data-ng-if="recipeForm.computed.uList.PbO > 0">
+        PbO : {{recipeForm.computed.uList.PbO | number:3}}</li>
+    </ul>
+    <ul class="col-md-3">
+      Stabilizers - R2O3
+      <li data-ng-if="recipeForm.computed.uList.B2O3 > 0">
+        B₂O₃ : {{recipeForm.computed.uList.B2O3 | number:3}}</li>
+      <li data-ng-if="recipeForm.computed.uList.Al2O3 > 0">
+          Al₂O₃ : {{recipeForm.computed.uList.Al2O3 | number:3}}</li>
+    </ul>
+    <ul class="col-md-3">
+      Glass Formers - RO2
+      <li data-ng-if="recipeForm.computed.uList.SiO2 > 0">
+          SiO₂ : {{recipeForm.computed.uList.SiO2 | number:3}}
       </li>
-    </ol>
-  </p>
-</section>
+    </ul>
+    <ul class="col-md-3">
+      Wildcards
+      <li data-ng-if="recipeForm.computed.uList.TiO2 > 0">
+        TiO₂ : {{recipeForm.computed.uList.TiO2 | number:3}}</li>
+      <li data-ng-if="recipeForm.computed.uList.P2O5 > 0">
+        P₂O₅ : {{recipeForm.computed.uList.P2O5 | number:3}}</li>
+      <li data-ng-if="recipeForm.computed.uList.Fe2O3 > 0">
+        Fe₂O₃ : {{recipeForm.computed.uList.Fe2O3 | number:3}}</li>
+    </ul>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      Ratio of Silica to Alumina : {{(recipeForm.computed.uList.SiO2 / recipeForm.computed.uList.Al2O3) | number:2}}
+    </div>
+    <div class="col-md-6" data-ng-if="addList.length">
+      Glaze additives and colorants :
+      <ol>
+        <li data-ng-repeat="add in addList">
+          {{add.name}}
+          <br>
+          Amount : <input type="text" name="amount" data-ng-model="add.amount">
+          <br>
+          <button type="button" data-ng-click="removeFromAdds(add)">Remove from recipe</button>
+        </li>
+      </ol>
+    </div>
+  </div>
 
+</section>
+<br>
 <section data-ng-init="getMyRecipes()" class="tech-info">
-  My saved recipes :
+  <h3>My saved recipes : </h3>
   <br>
   Edit / Remove toggle
   <button type="button" name="serverRecEdit" data-ng-click="editMyListToggle()"> toggle </button>
   <ul data-ng-if="myRecipes.length">
     <li data-ng-repeat="rec in myRecipes">
-      {{rec.title}}
-      <p data-ng-if="rec.computed[0].uList.Li2O > 0">
-        Li₂O : {{rec.computed[0].uList.Li2O | number:3}}</p>
-      <p data-ng-if="rec.computed[0].uList.Na2O > 0">
-        Na₂O :{{rec.computed[0].uList.Na2O | number:3}}</p>
-      <p data-ng-if="rec.computed[0].uList.CaO > 0">
-        CaO : {{rec.computed[0].uList.CaO | number:3}}</p>
-      <p data-ng-if="rec.computed[0].uList.K2O > 0">
-        K₂O : {{rec.computed[0].uList.K2O | number:3}}</p>
-      <p data-ng-if="rec.computed[0].uList.MgO > 0">
-        MgO : {{rec.computed[0].uList.MgO | number:3}}</p>
-      <p data-ng-if="rec.computed[0].uList.BaO > 0">
-        BaO : {{rec.computed[0].uList.BaO | number:3}}</p>
-      <p data-ng-if="rec.computed[0].uList.Li2O > 0">
-        Li₂O : {{rec.computed[0].uList.Li2O | number:3}}</p>
-      <p data-ng-if="rec.computed[0].uList.SrO > 0">
-        SrO : {{rec.computed[0].uList.SrO | number:3}}</p>
-      <p data-ng-if="rec.computed[0].uList.ZnO > 0">
-        ZnO : {{rec.computed[0].uList.ZnO | number:3}}</p>
-      <p data-ng-if="rec.computed[0].uList.PbO > 0">
-        PbO : {{rec.computed[0].uList.PbO | number:3}}</p>
-      <p data-ng-if="rec.computed[0].uList.B2O3 > 0">
-        B₂O₃ : {{rec.computed[0].uList.B2O3 | number:3}}</p>
-      <p data-ng-if="rec.computed[0].uList.Al2O3 > 0">
-        Al₂O₃ : {{rec.computed[0].uList.Al2O3 | number:3}}</p>
-      <p data-ng-if="rec.computed[0].uList.Fe2O3 > 0">
-        Fe₂O₃ : {{rec.computed[0].uList.Fe2O3 | number:3}}</p>
-      <p data-ng-if="rec.computed[0].uList.SiO2 > 0">
-        SiO₂ : {{rec.computed[0].uList.SiO2 | number:3}}</p>
-      <p data-ng-if="rec.computed[0].uList.TiO2 > 0">
-        TiO₂ : {{rec.computed[0].uList.TiO2 | number:3}}</p>
-      <p data-ng-if="rec.computed[0].uList.P2O5 > 0">
-        P₂O₅ : {{rec.computed[0].uList.P2O5 | number:3}}</p>
-
-      <p>
-        Additives :
-        <ol>
-          <li data-ng-repeat="singleAdd in rec.additives">
-            {{singleAdd.name}} : {{singleAdd.amount}}
-          </li>
-        </ol>
-      </p>
+      <h5>{{rec.title}}</h5>
+      <button type="button" data-ng-click="rec[$index].expView = true" data-ng-if="!rec[$index].expView">
+        Expand to View Info</button>
+      <button type="button" data-ng-click="rec[$index].expView = false" data-ng-if="rec[$index].expView">Hide the glaze info</button>
+      <div class="" data-ng-if="rec[$index].expView">
+        <div class="row" >
+          <div class="col-md-2 col-xs-4" data-ng-if="rec.computed[0].uList.Li2O > 0">
+            Li₂O : {{rec.computed[0].uList.Li2O | number:3}}</div>
+          <div class="col-md-2 col-xs-4" data-ng-if="rec.computed[0].uList.Na2O > 0">
+            Na₂O :{{rec.computed[0].uList.Na2O | number:3}}</div>
+          <div class="col-md-2 col-xs-4" data-ng-if="rec.computed[0].uList.CaO > 0">
+            CaO : {{rec.computed[0].uList.CaO | number:3}}</div>
+          <div class="col-md-2 col-xs-4" data-ng-if="rec.computed[0].uList.K2O > 0">
+            K₂O : {{rec.computed[0].uList.K2O | number:3}}</div>
+          <div class="col-md-2 col-xs-4" data-ng-if="rec.computed[0].uList.MgO > 0">
+            MgO : {{rec.computed[0].uList.MgO | number:3}}</div>
+          <div class="col-md-2 col-xs-4" data-ng-if="rec.computed[0].uList.BaO > 0">
+            BaO : {{rec.computed[0].uList.BaO | number:3}}</div>
+          <div class="col-md-2 col-xs-4" data-ng-if="rec.computed[0].uList.Li2O > 0">
+            Li₂O : {{rec.computed[0].uList.Li2O | number:3}}</div>
+          <div class="col-md-2 col-xs-4" data-ng-if="rec.computed[0].uList.SrO > 0">
+            SrO : {{rec.computed[0].uList.SrO | number:3}}</div>
+          <div class="col-md-2 col-xs-4" data-ng-if="rec.computed[0].uList.ZnO > 0">
+            ZnO : {{rec.computed[0].uList.ZnO | number:3}}</div>
+          <div class="col-md-2 col-xs-4" data-ng-if="rec.computed[0].uList.PbO > 0">
+            PbO : {{rec.computed[0].uList.PbO | number:3}}</div>
+          <div class="col-md-2 col-xs-4" data-ng-if="rec.computed[0].uList.B2O3 > 0">
+            B₂O₃ : {{rec.computed[0].uList.B2O3 | number:3}}</div>
+          <div class="col-md-2 col-xs-4" data-ng-if="rec.computed[0].uList.Al2O3 > 0">
+            Al₂O₃ : {{rec.computed[0].uList.Al2O3 | number:3}}</div>
+          <div class="col-md-2 col-xs-4" data-ng-if="rec.computed[0].uList.Fe2O3 > 0">
+            Fe₂O₃ : {{rec.computed[0].uList.Fe2O3 | number:3}}</div>
+          <div class="col-md-2 col-xs-4" data-ng-if="rec.computed[0].uList.SiO2 > 0">
+            SiO₂ : {{rec.computed[0].uList.SiO2 | number:3}}</div>
+          <div class="col-md-2 col-xs-4" data-ng-if="rec.computed[0].uList.TiO2 > 0">
+            TiO₂ : {{rec.computed[0].uList.TiO2 | number:3}}</div>
+          <div class="col-md-2 col-xs-4" data-ng-if="rec.computed[0].uList.P2O5 > 0">
+            P₂O₅ : {{rec.computed[0].uList.P2O5 | number:3}}</div>
+        </div>
+        <div class="row">
+          Additives :
+          <ol>
+            <li data-ng-repeat="singleAdd in rec.additives" class="col-md-2 col-xs-4">
+              {{singleAdd.name}} : {{singleAdd.amount}}
+            </li>
+          </ol>
+        </div>
+      </div>
 
       <p data-ng-if="editToggle">Remove from the server:
         <button type="button" name="removeMat" data-ng-click="removeMyRec(rec)"> X </button></p>
