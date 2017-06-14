@@ -1,53 +1,71 @@
 <nav>
-  You are on the Firing page.
-  <br>
-  links to pages:
-  <a href="#/additive">additive</a>
-  <a href="#/advice">advice</a>
-  <a href="#/home">home</a>
-  <a href="#/material">material</a>
-  <a href="#/notes">notes</a>
-  <a href="#/recipe">recipe</a>
-  <a href="#/trash">trash</a>
+  <h3>You are on the <b>Firing</b> page.</h3>
+  Links to pages:
+  <a href="#/additive" class="btn btn-default" role="button">additive</a>
+  <a href="#/advice" class="btn btn-default" role="button">advice</a>
+  <a href="#/home" class="btn btn-default" role="button">home</a>
+  <a href="#/material" class="btn btn-default" role="button">material</a>
+  <a href="#/notes" class="btn btn-default" role="button">notes</a>
+  <a href="#/recipe" class="btn btn-default" role="button">recipe</a>
+  <a href="#/trash" class="btn btn-default" role="button">trash</a>
 </nav>
 
 <ol class="errors-section" data-ng-if="errors.length">
   <li data-ng-repeat="error in errors">{{error}}
-    <button type="button" name="clear" data-ng-click="dismissError(error)">Dismiss</button>
+    <button type="button" name="clear-errors" data-ng-click="dismissError(error)" class="btn btn-default">
+      Dismiss
+    </button>
   </li>
 </ol>
 
 <ol class="server-msg" data-ng-if="serverMessages.length">
   <li data-ng-repeat="msg in serverMessages">{{msg}}
-    <button type="button" name="clear" data-ng-click="dismissMessage(msg)">Dismiss</button>
+    <button type="button" name="clear-message" data-ng-click="dismissMessage(msg)" class="btn btn-default">
+      Dismiss
+    </button>
   </li>
 </ol>
 
 <section class="inputbox" data-ng-init="getAll()">
-  <form class="">
-    <label for="firing-title">Title of Firing : </label>
-    <input id="firing-title" type="text" name="firing-title" data-ng-model="firingForm.title">
+  <form class="form-inline">
+    <div class="form-group">
+      <label for="firing-title">Title of Firing : </label>
+      <input id="firing-title" type="text" name="firing-title" data-ng-model="firingForm.title">
 
-    <label for="firing-kiln">Kiln used for firing : </label>
-    <input id="firing-kiln" type="text" name="firing-kiln" data-ng-model="firingForm.kiln">
+    </div>
+    <div class="form-group">
+      <label for="firing-kiln">Kiln used for firing : </label>
+      <input id="firing-kiln" type="text" name="firing-kiln" data-ng-model="firingForm.kiln">
 
-    <label for="firing-date">Date of firing : </label>
-    <input id="firing-date" type="date" name="firing-date" data-ng-model="firingForm.date">
+    </div>
+    <div class="form-group">
+      <label for="firing-date">Date of firing : </label>
+      <input id="firing-date" type="date" name="firing-date" data-ng-model="firingForm.date">
 
-    <label for="firing-notes">Notes on the firing : </label>
-    <textarea id="firing-notes" name="firing-notes" cols="40" rows="3" data-ng-model="firingForm.notes">
-    </textarea>
+    </div>
+    <div class="form-group">
+      <label for="firing-notes">Notes on the firing : </label>
+      <textarea id="firing-notes" name="firing-notes" cols="70" rows="3" data-ng-model="firingForm.notes">
+      </textarea>
 
-    <p>
-      <label for="fieldselect">Select and add fields to the firing record : </label>
-      <field-select>
-      </fields-select>
-    </p>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="form-group">
 
-    <label for="addFieldButton">Add the field</label>
-    <button id="addFieldButton" type="button" name="addFieldButton" data-ng-click="addField(fieldselect)">
-      +
-    </button>
+          <label for="fieldselect">Select and add fields to the firing record : </label>
+          <div>
+            <field-select id="fieldselect"></fields-select>
+
+          </div>
+          <button id="addFieldButton" class="btn btn-default" type="button" name="addFieldButton" data-ng-click="addField(fieldselect)">
+            Add the field
+          </button>
+
+        </div>
+      </div>
+    </div>
+
   </form>
   <p>
     The fields you have included :
@@ -63,8 +81,10 @@
   </p>
 
   <p>
-    <label for="addRow"> Add a row to the firing table : </label>
-    <button id="addRow" type="button" name="addRow" data-ng-click="addRow()"> _-_ </button>
+    <label for="addRow"></label>
+    <button id="addRow" type="button" name="addRow" data-ng-click="addRow()" class="btn btn-primary">
+      Add a row to the firing table
+     </button>
   </p>
 </section>
 <br>
@@ -94,8 +114,9 @@
 <section data-ng-if="myServerFirings.length" class="tech-info">
   <h3>My stored firings : </h3>
   <p>
-    Edit / Remove toggle
-    <button type="button" name="serverFiringEdit" data-ng-click="editMyListToggle()"> toggle </button>
+    <button type="button" name="serverFiringEdit" data-ng-click="editMyListToggle()" class="btn btn-default">
+      Remove toggle
+    </button>
     <ul>
       <li data-ng-repeat="fr in myServerFirings">
         Title : {{fr.title}},
@@ -110,8 +131,11 @@
             <td data-ng-repeat="cell in row track by $index">{{cell}}</td>
           </tr>
         </table>
-        <p data-ng-if="editToggle">Remove from the server:
-          <button type="button" name="removeFiringButton" data-ng-click="removeMyFiring(fr)"> X </button></p>
+        <p data-ng-if="editToggle">
+          <button type="button" name="removeFiringButton" data-ng-click="removeMyFiring(fr)" class="btn btn-warning">
+            Remove from the server
+          </button>
+        </p>
       </li>
     </ul>
   </p>

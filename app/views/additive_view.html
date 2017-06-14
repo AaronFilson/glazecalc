@@ -1,87 +1,125 @@
 <nav>
-  You are on the Additive page.
-  <br>
-  links to pages:
-  <a href="#/advice">advice</a>
-  <a href="#/firing">firing</a>
-  <a href="#/home">home</a>
-  <a href="#/material">material</a>
-  <a href="#/notes">notes</a>
-  <a href="#/recipe">recipe</a>
-  <a href="#/trash">trash</a>
+  <h3>You are on the <b>Additive</b> page.</h3>
+  Links to pages:
+  <a href="#/advice" class="btn btn-default" role="button">advice</a>
+  <a href="#/firing" class="btn btn-default" role="button">firing</a>
+  <a href="#/home" class="btn btn-default" role="button">home</a>
+  <a href="#/material" class="btn btn-default" role="button">material</a>
+  <a href="#/notes" class="btn btn-default" role="button">notes</a>
+  <a href="#/recipe" class="btn btn-default" role="button">recipe</a>
+  <a href="#/trash" class="btn btn-default" role="button">trash</a>
 </nav>
 
 <ol class="errors-section" data-ng-if="errors.length">
   <li data-ng-repeat="error in errors">{{error}}
-    <button type="button" name="clear" data-ng-click="dismissError(error)">Dismiss</button>
+    <button type="button" name="clear-error" data-ng-click="dismissError(error)" class="btn btn-default">
+      Dismiss
+    </button>
   </li>
 </ol>
 
 <ol class="server-msg" data-ng-if="serverMessages.length">
   <li data-ng-repeat="msg in serverMessages">{{msg}}
-    <button type="button" name="clear" data-ng-click="dismissMessage(msg)">Dismiss</button>
+    <button type="button" name="clear-message" data-ng-click="dismissMessage(msg)" class="btn btn-default">
+      Dismiss
+    </button>
   </li>
 </ol>
 
 <section class="inputbox" data-ng-init="getAll()">
-  Input information on the new additive <br>
+  <h3>Input information on the new additive</h3>
   <p>
     Symbols to copy into your additive formula:
     ₁ ₂ ₃ ₄ ₅ ₆ ₇ ₈ ₉ ₀ •
   </p>
-  <label for="additive-name"> Name of Additive : </label>
-  <input id="additive-name" type="text" name="AdditiveName" data-ng-model="addForm.name">
+  <form class="form-inline">
+    <div class="form-group">
+      <label for="additive-name">Name of Additive: </label>
+      <input id="additive-name" type="text" name="AdditiveName" data-ng-model="addForm.name">
+    </div>
+    <div class="form-group">
+      <label for="formula">Formula: </label>
+      <input id="formula" type="text" name="Formula" data-ng-model="addForm.rawformula">
+    </div>
+    <div class="form-group">
+      <label for="related-to">Related To: </label>
+      <input id="related-to" type="text" name="RelatedTo" data-ng-model="addForm.relatedTo">
+    </div>
 
-  <label for="formula">Formula : </label>
-  <input id="formula" type="text" name="Formula" data-ng-model="addForm.rawformula">
-  <label for="related-to"> Related To : </label>
-  <input id="related-to" type="text" name="RelatedTo" data-ng-model="addForm.relatedTo">
-  <label for="notes"> Notes : </label>
-  <textarea id="notes" name="notes" cols="40" rows="3" data-ng-model="addForm.notes"></textarea>
-  <br>
+    <div class="row">
+      <div class="col-md-12 form-group">
+        <label for="notes">Notes: </label>
+        <textarea id="notes" name="notes" cols="70" rows="3" data-ng-model="addForm.notes"></textarea>
 
-  <p>Enter the formula:
-    <br>
-    Component Selection<component-select data-ng-model="component"></component-select><br>
-    Add the above component: <button data-ng-click="addComponent(componentselect)"> + </button>
-    <br>
-    Element Selection<element-select data-ng-model="element"></element-select><br>
-    Add the above element: <button data-ng-click="addElement(elementselect)"> + </button>
-    <br>
-    <ul>
-      <li data-ng-repeat="item in formula track by $index">
-        {{item.name}}
-        <p>Amount: <input type="text" name="amount" data-ng-model="item.amount">
-          </p>
-        <button type="button" data-ng-click="removeFromFormula(item)">
-          Remove from formula list
+      </div>
+    </div>
+    <h4>Enter the formula:</h4>
+    <div class="row">
+      <div class="col-md-6 form-group">
+        <label for="componentselection">Component Selection: </label><br>
+        <component-select id="componentselection" data-ng-model="component"></component-select>
+        <button data-ng-click="addComponent(componentselect)" class="btn btn-default">
+          Add the component
         </button>
-      </li>
-    </ul>
-  </p>
-  <button data-ng-click="submit(addForm)">Save</button>
+      </div>
+      <div class="col-md-6 form-group">
+        <label for="elementselection">Element Selection: </label><br>
+        <element-select id="elementselection" data-ng-model="element"></element-select>
+        <button data-ng-click="addElement(elementselect)" class="btn btn-default">
+          Add the element
+        </button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <ul>
+          <li data-ng-repeat="item in formula track by $index">
+            {{item.name}}
+            <p>Amount: <input type="text" name="amount" data-ng-model="item.amount">
+            </p>
+            <button type="button" data-ng-click="removeFromFormula(item)" class="btn btn-default">
+              Remove from formula list
+            </button>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <button data-ng-click="submit(addForm)" class="btn btn-primary">
+          Save
+        </button>
+      </div>
+    </div>
+  </form>
 </section>
 <br>
 
 <section data-ng-if="myServerAdds.length" class="tech-info">
-  <p>My server materials:
-    <br>
-    Edit / Remove toggle
-    <button type="button" name="serverAddEdit" data-ng-click="editMyListToggle()"> toggle </button>
+  <h4>My server materials: </h4>
+  <p>
+    <button type="button" name="serverAddEdit" data-ng-click="editMyListToggle()" class="btn btn-default">
+      Remove toggle
+    </button>
     </ul>
     <table class="table table-bordered">
       <tr>
-        <th>Name</th> <th>Notes</th> <th>Fields</th> <th>Remove</th>
+        <th>Name</th> <th>Notes</th> <th>Fields</th>
       </tr>
       <tr data-ng-repeat="add in myServerAdds">
-        <td>{{add.name}}</td>
+        <td>
+          {{add.name}}
+          <div data-ng-if="editToggle">
+            <button type="button" name="removeMat" data-ng-click="removeMyMat(add)" class="btn btn-warning">
+              Remove from server
+            </button>
+          </div>
+        </td>
         <td>{{add.notes[0]}}</td>
         <td><span data-ng-repeat="element in add.fields">
           {{element.name}} : {{element.amount}}<span data-ng-if="$index < add.fields.length - 1">; </span>
         </span></td>
-        <td><div data-ng-if="editToggle">Remove from server:
-          <button type="button" name="removeMat" data-ng-click="removeMyMat(add)"> X </button></div>
-        </td>
       </tr>
     </table>
   </p>
@@ -89,8 +127,8 @@
 <br>
 
 <section data-ng-init="getStandard()">
-  <p data-ng-if="standardAdds.length">
-    The standard server additives:
+  <div data-ng-if="standardAdds.length">
+    <h4>The standard server additives: </h4>
     <br>
     <table class="table table-bordered" data-ng-if="standardAdds.length">
       <tr>
@@ -104,5 +142,5 @@
         </span></td>
       </tr>
     </table>
-  </p>
+  </div>
 </section>
