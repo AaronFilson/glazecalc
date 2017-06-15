@@ -7,7 +7,90 @@
   <a href="#/material" class="btn btn-default" role="button">material</a>
   <a href="#/notes" class="btn btn-default" role="button">notes</a>
   <a href="#/recipe" class="btn btn-default" role="button">recipe</a>
-  <a href="#/trash" class="btn btn-default" role="button">trash</a>
+  <!-- <a href="#/trash" class="btn btn-default" role="button">trash</a> -->
 </nav>
 
-<p class="help-text">The advice section of the Glaze Calc app is coming soon.</p>
+<ol class="errors-section" data-ng-if="errors.length">
+  <li data-ng-repeat="error in errors track by $index">{{error}}
+    <button type="button" name="clear-error" data-ng-click="dismissError(error)" class="btn btn-default">
+      Dismiss
+    </button>
+  </li>
+</ol>
+
+<ol class="server-msg" data-ng-if="serverMessages.length">
+  <li data-ng-repeat="msg in serverMessages track by $index">{{msg}}
+    <button type="button" name="clear-message" data-ng-click="dismissMessage(msg)" class="btn btn-default">
+      Dismiss
+    </button>
+  </li>
+</ol>
+
+<section data-ng-init="getAll()" class="help-text">
+  <p>
+    This is a page to store and view your favorite pieces of advice on glazes and firing.
+    Basic advice on glaze formulation and mixing is programmed in.
+  </p>
+  <form>
+    <div class="form-group">
+      <label for="advice-title">Title: </label>
+      <input id="advice-title" type="text" name="advice-title" data-ng-model="adviceForm.title">
+    </div>
+    <div class="form-group">
+      <label for="advice-tags">Tags: </label>
+      <input id="advice-tags" type="text" name="advice-tags" data-ng-model="adviceForm.tags">
+    </div>
+    <div class="row">
+      <div class="col-md-10">
+        <div class="form-group">
+          <label for="advice-content" class="boxlabel">Advice Content: </label>
+          <textarea id="advice-content" name="advice-content" rows="4" data-ng-model="adviceForm.content" class="form-control">
+          </textarea>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="submit-button" class="sr-only sr-only-focusable">Save</label>
+      <button id="submit-button" type="button" name="submit-button" data-ng-click="submit(adviceForm)"
+        class="btn btn-primary">
+        Save
+      </button>
+    </div>
+  </form>
+</section>
+<br>
+
+<section class="tech-info">
+  My advice :
+  <ul>
+    <li data-ng-repeat="adv in adviceData">
+      <b>{{adv.title}}</b>
+      <p>{{adv.content}}</p>
+      <div class="small">
+        Tags: {{adv.tags[0]}}
+      </div>
+      <div data-ng-if="editToggle">
+        <button type="button" name="remove" class="btn btn-default" data-ng-click="removeMyAdvice(adv)">
+          Remove
+        </button>
+      </div>
+    </li>
+    <button type="button" name="removetoggle" class="btn btn-default" data-ng-click="editMyListToggle()">
+      Toggle Remove Button
+    </button>
+  </ul>
+
+  <section data-ng-init="getStandard()">
+    General advice:
+    <ul>
+      <li data-ng-repeat="servAd in serverAdvice">
+        <b>{{servAd.title}}</b>
+        <p>{{servAd.content}}</p>
+        <div class="small">
+          Tags: {{servAd.tags}}
+        </div>
+      </li>
+    </ul>
+  </section>
+</section>

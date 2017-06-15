@@ -8,6 +8,7 @@
     </ul>
 </section>
 <section class="auth-text">
+  <h2>Glaze Calc App</h2>
   <form name="authForm" data-ng-submit="submit(auth)" class="form-inline">
     <div class="form-group">
       <span data-ng-if="!signup">Have an account? Sign in:</span>
@@ -28,7 +29,7 @@
     </div>
 
 
-    <button type="submit" class="signsubmit btn btn-primary" data-ng-disabled="(signup && (auth.confirmation !== auth.password)) || authForm.$invalid">
+    <button type="submit" class="btn btn-success" data-ng-disabled="(signup && (auth.confirmation !== auth.password)) || authForm.$invalid">
       {{signup ? 'Create New User' : 'Sign In'}}
     </button>
   </form>
@@ -40,5 +41,14 @@
   </p>
   <p data-ng-if="signup">
     A note on account creation: Email needs to have the domain (@domain.com), and the password needs to be 8 characters long at minimum.
+  </p>
+</section>
+
+<section class="help-text">
+  <p>
+    The Glaze Calc App is a glaze calculator application, for helping you formulate ceramic glazes.
+    It is useful for potters, ceramicists, and students. The Glaze Calc App takes a recipe of materials
+    and computes the Unity formula, allowing you to compare glazes effectively. You can create new
+    glazes, fix old ones, and understand how to adapt to changing materials.
   </p>
 </section>

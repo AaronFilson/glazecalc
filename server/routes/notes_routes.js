@@ -7,7 +7,7 @@ const jwtAuth = require(__dirname + '/../lib/jwt_auth');
 const notesRouter = module.exports = exports = express.Router();
 
 notesRouter.post('/create', jwtAuth, jsonParser, (req, res) => {
-  var incNote = req.body.note;
+  var incNote = req.body;
   if (!req.user.id || !incNote.content || !incNote.relatedCollection || !incNote.relatedId) {
     return res.status(400).json( { msg: 'Missing required information' } );
   }
@@ -50,7 +50,7 @@ notesRouter.get('/getAll', jwtAuth, jsonParser, (req, res) => {
 });
 
 notesRouter.put('/change/:id', jwtAuth, jsonParser, (req, res) => {
-  var noteData = req.body.note;
+  var noteData = req.body;
   Note.update({ _id: req.params.id }, noteData, (err) => {
     if (err) return handleDBError(err, res);
 

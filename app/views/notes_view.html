@@ -7,10 +7,68 @@
   <a href="#/home" class="btn btn-default" role="button">home</a>
   <a href="#/material" class="btn btn-default" role="button">material</a>
   <a href="#/recipe" class="btn btn-default" role="button">recipe</a>
-  <a href="#/trash" class="btn btn-default" role="button">trash</a>
+  <!-- <a href="#/trash" class="btn btn-default" role="button">trash</a> -->
 </nav>
 
-<p class="help-text">
-  This is the future home of the notes functionality of the Glaze Calc App.
-  It will have an interface to write and look up your notes.
-</p>
+<ol class="errors-section" data-ng-if="errors.length">
+  <li data-ng-repeat="error in errors track by $index">{{error}}
+    <button type="button" name="clear-error" data-ng-click="dismissError(error)" class="btn btn-default">
+      Dismiss
+    </button>
+  </li>
+</ol>
+
+<ol class="server-msg" data-ng-if="serverMessages.length">
+  <li data-ng-repeat="msg in serverMessages track by $index">{{msg}}
+    <button type="button" name="clear-message" data-ng-click="dismissMessage(msg)" class="btn btn-default">
+      Dismiss
+    </button>
+  </li>
+</ol>
+
+<section data-ng-init="getAll()" class="help-text">
+  <p>
+    This is the notes page. You can take notes and save them here.
+  </p>
+  <form>
+    <div class="form-group">
+      <label for="title">Title: </label>
+      <input id="title" type="text" name="title" data-ng-model="notesForm.title">
+    </div>
+    <div class="row">
+      <div class="col-md-10">
+        <div class="form-group">
+          <label for="content">Your Note: </label>
+          <textarea id="content" name="content" rows="4" class="form-control" data-ng-model="notesForm.content">
+          </textarea>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="submitbutton" class="sr-only">Save</label>
+      <button id="submitbutton" type="button" name="submitbutton" class="btn btn-primary" data-ng-click="submit(notesForm)">
+        Save
+      </button>
+    </div>
+  </form>
+</section>
+<br>
+
+<section class="tech-info">
+  <h3>My saved notes: </h3>
+  <ul>
+    <li data-ng-repeat="note in notesData">
+      <h6>{{note.title}}</h6>
+      <p>{{note.content}}</p>
+      <div data-ng-if="editToggle">
+        <button type="button" name="remove" class="btn btn-default" data-ng-click="removeMyNote(note)">
+          Remove
+        </button>
+      </div>
+    </li>
+  </ul>
+  <label for="toggleRemove"></label>
+  <button id="toggleRemove" type="button" name="toggleRemove" class="btn btn-default" data-ng-click="editMyListToggle()">
+    Toggle Remove button
+  </button>
+</section>

@@ -7,7 +7,7 @@
   <a href="#/material" class="btn btn-default" role="button">material</a>
   <a href="#/notes" class="btn btn-default" role="button">notes</a>
   <a href="#/recipe" class="btn btn-default" role="button">recipe</a>
-  <a href="#/trash" class="btn btn-default" role="button">trash</a>
+  <!-- <a href="#/trash" class="btn btn-default" role="button">trash</a> -->
 </nav>
 
 <ol class="errors-section" data-ng-if="errors.length">
@@ -27,41 +27,40 @@
 </ol>
 
 <section class="inputbox" data-ng-init="getAll()">
-  <form class="form-inline">
+  <form class="form">
     <div class="form-group">
-      <label for="firing-title">Title of Firing : </label>
+      <label for="firing-title">Title of Firing: </label>
       <input id="firing-title" type="text" name="firing-title" data-ng-model="firingForm.title">
-
     </div>
     <div class="form-group">
-      <label for="firing-kiln">Kiln used for firing : </label>
+      <label for="firing-kiln">Kiln used for firing: </label>
       <input id="firing-kiln" type="text" name="firing-kiln" data-ng-model="firingForm.kiln">
-
     </div>
     <div class="form-group">
-      <label for="firing-date">Date of firing : </label>
+      <label for="firing-date">Date of firing: </label>
       <input id="firing-date" type="date" name="firing-date" data-ng-model="firingForm.date">
-
     </div>
-    <div class="form-group">
-      <label for="firing-notes">Notes on the firing : </label>
-      <textarea id="firing-notes" name="firing-notes" cols="70" rows="3" data-ng-model="firingForm.notes">
-      </textarea>
-
+    <div class="row">
+      <div class="col-md-10">
+        <div class="form-group">
+          <label for="firing-notes" class="boxlabel">Notes on the firing: </label>
+          <textarea id="firing-notes" name="firing-notes"rows="3" class="form-control" data-ng-model="firingForm.notes">
+          </textarea>
+        </div>
+      </div>
     </div>
+
     <div class="row">
       <div class="col-lg-12">
         <div class="form-group">
-
           <label for="fieldselect">Select and add fields to the firing record : </label>
           <div>
             <field-select id="fieldselect"></fields-select>
-
           </div>
-          <button id="addFieldButton" class="btn btn-default" type="button" name="addFieldButton" data-ng-click="addField(fieldselect)">
+          <button id="addFieldButton" class="btn btn-default" type="button"
+            name="addFieldButton" data-ng-click="addField(fieldselect)">
             Add the field
           </button>
-
         </div>
       </div>
     </div>
@@ -72,9 +71,15 @@
     <ol>
       <li data-ng-repeat="field in firingForm.fieldsIncluded">
         Field name : {{field}}
-        <button type="button" data-ng-click="moveFieldLeft(field)">Move field left</button>
-        <button type="button" data-ng-click="moveFieldRight(field)">Move field right</button>
-        <button type="button" data-ng-click="removeFromFields(field)">Remove the field</button>
+        <button type="button" data-ng-click="moveFieldLeft(field)" class="btn btn-default">
+          Move field left
+        </button>
+        <button type="button" data-ng-click="moveFieldRight(field)" class="btn btn-default">
+          Move field right
+        </button>
+        <button type="button" data-ng-click="removeFromFields(field)" class="btn btn-default">
+          Remove the field
+        </button>
       </li>
     </ol>
     Please note that adding fields after adding rows will cause missing boxes in the table. (Known issue)
@@ -82,7 +87,7 @@
 
   <p>
     <label for="addRow"></label>
-    <button id="addRow" type="button" name="addRow" data-ng-click="addRow()" class="btn btn-primary">
+    <button id="addRow" type="button" name="addRow" data-ng-click="addRow()" class="btn btn-default">
       Add a row to the firing table
      </button>
   </p>
@@ -105,23 +110,25 @@
       </tr>
     </table>
 
-    <label for="save">Save the firing information</label>
-    <button id="save" type="button" name="save" data-ng-click="submit(firingForm)">Save!</button>
+    <label for="save" class="sr-only">Save</label>
+    <button id="save" type="button" name="save" data-ng-click="submit(firingForm)" class="btn btn-primary">
+      Save
+    </button>
   </form>
 </section>
 <br>
 
 <section data-ng-if="myServerFirings.length" class="tech-info">
-  <h3>My stored firings : </h3>
+  <h3>My stored firings: </h3>
   <p>
     <button type="button" name="serverFiringEdit" data-ng-click="editMyListToggle()" class="btn btn-default">
-      Remove toggle
+      Remove toggle button
     </button>
     <ul>
       <li data-ng-repeat="fr in myServerFirings">
-        Title : {{fr.title}},
-        Using kiln : {{fr.kiln}},
-        Date : {{fr.date | date:'EEEE, MMMM yyyy'}}
+        Title: {{fr.title}},
+        Using kiln: {{fr.kiln}},
+        Date: {{fr.date | date:'EEEE, MMMM yyyy'}}
         <br>
         <table class="table table-bordered">
           <tr>
@@ -133,7 +140,7 @@
         </table>
         <p data-ng-if="editToggle">
           <button type="button" name="removeFiringButton" data-ng-click="removeMyFiring(fr)" class="btn btn-warning">
-            Remove from the server
+            Remove
           </button>
         </p>
       </li>

@@ -7,11 +7,11 @@
   <a href="#/material" class="btn btn-default" role="button">material</a>
   <a href="#/notes" class="btn btn-default" role="button">notes</a>
   <a href="#/recipe" class="btn btn-default" role="button">recipe</a>
-  <a href="#/trash" class="btn btn-default" role="button">trash</a>
+  <!-- <a href="#/trash" class="btn btn-default" role="button">trash</a> -->
 </nav>
 
 <ol class="errors-section" data-ng-if="errors.length">
-  <li data-ng-repeat="error in errors">{{error}}
+  <li data-ng-repeat="error in errors track by $index">{{error}}
     <button type="button" name="clear-error" data-ng-click="dismissError(error)" class="btn btn-default">
       Dismiss
     </button>
@@ -19,7 +19,7 @@
 </ol>
 
 <ol class="server-msg" data-ng-if="serverMessages.length">
-  <li data-ng-repeat="msg in serverMessages">{{msg}}
+  <li data-ng-repeat="msg in serverMessages track by $index">{{msg}}
     <button type="button" name="clear-message" data-ng-click="dismissMessage(msg)" class="btn btn-default">
       Dismiss
     </button>
@@ -47,13 +47,14 @@
     </div>
 
     <div class="row">
-      <div class="col-md-12 form-group">
-        <label for="notes">Notes: </label>
-        <textarea id="notes" name="notes" cols="70" rows="3" data-ng-model="addForm.notes"></textarea>
+      <div class="col-md-10 form-group">
+        <label for="notes" class="boxlabel">Notes: </label>
+        <textarea id="notes" name="notes" rows="3" data-ng-model="addForm.notes" class="form-control">
+        </textarea>
 
       </div>
     </div>
-    <h4>Enter the formula:</h4>
+    <h4>Enter the formula: </h4>
     <div class="row">
       <div class="col-md-6 form-group">
         <label for="componentselection">Component Selection: </label><br>
@@ -127,20 +128,17 @@
 <br>
 
 <section data-ng-init="getStandard()">
-  <div data-ng-if="standardAdds.length">
-    <h4>The standard server additives: </h4>
-    <br>
-    <table class="table table-bordered" data-ng-if="standardAdds.length">
-      <tr>
-        <th>Name</th> <th>notes</th> <th>fields</th>
-      </tr>
-      <tr data-ng-repeat="stdAdd in standardAdds">
-        <td>{{stdAdd.name}}</td>
-        <td>{{stdAdd.notes[0]}}</td>
-        <td><span data-ng-repeat="element in stdAdd.fields">
-          {{element.name}} : {{element.amount}}<span data-ng-if="$index < stdAdd.fields.length - 1">; </span>
-        </span></td>
-      </tr>
-    </table>
-  </div>
+  <h4>The standard server additives: </h4>
+  <table class="table table-bordered">
+    <tr>
+      <th>Name</th> <th>Notes</th> <th>Fields</th>
+    </tr>
+    <tr data-ng-repeat="stdAdd in standardAdds">
+      <td>{{stdAdd.name}}</td>
+      <td>{{stdAdd.notes[0]}}</td>
+      <td><span data-ng-repeat="element in stdAdd.fields">
+        {{element.name}} : {{element.amount}}<span data-ng-if="$index < stdAdd.fields.length - 1">; </span>
+      </span></td>
+    </tr>
+  </table>
 </section>

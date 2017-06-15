@@ -43,7 +43,7 @@ describe('Notes API', () => {
       request(baseUri)
         .post('/create')
         .set('token', userToken)
-        .send( { user: testUser, note: testNote } )
+        .send( testNote )
         .end((err, res) => {
           expect(err).to.eql(null);
           expect(res.body).to.not.eql(null);
@@ -72,19 +72,19 @@ describe('Notes API', () => {
       request(baseUri)
         .post('/create')
         .set('token', userToken)
-        .send( { user: testUser, note: testNote } )
+        .send( testNote )
         .end((err) => {
           if (err) throw err;
           request(baseUri)
             .post('/create')
             .set('token', userToken)
-            .send( { user: testUser, note: testNote } )
+            .send( testNote )
             .end((err) => {
               if (err) throw err;
               request(baseUri)
                 .post('/create')
                 .set('token', userToken)
-                .send( { user: testUser, note: testNote } )
+                .send( testNote )
                 .end((err) => {
                   if (err) throw err;
                   done();
@@ -110,7 +110,7 @@ describe('Notes API', () => {
       request(baseUri)
         .put('/change/' + gotNote._id)
         .set('token', userToken)
-        .send({ note: gotNote })
+        .send( gotNote )
         .end((err, res) => {
           expect(err).to.eql(null);
           expect(res.body.msg).to.eql('Successfully updated note');
