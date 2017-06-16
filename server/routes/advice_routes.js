@@ -51,7 +51,7 @@ adviceRouter.put('/change/:id', jwtAuth, jsonParser, (req, res) => {
      || !adviceData.content || !adviceData.tags) {
     return res.status(400).json( { msg: 'Missing required information' } );
   }
-  Advice.update({ _id: req.params.id }, adviceData, (err) => {
+  Advice.update({ _id: req.params.id, ownedBy: req.user.id }, adviceData, (err) => {
     if (err) return handleDBError(err, res);
 
     res.status(200).json({ msg: 'Successfully updated advice' });

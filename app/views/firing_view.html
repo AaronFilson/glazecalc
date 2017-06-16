@@ -28,17 +28,25 @@
 
 <section class="inputbox" data-ng-init="getAll()">
   <form class="form">
-    <div class="form-group">
-      <label for="firing-title">Title of Firing: </label>
-      <input id="firing-title" type="text" name="firing-title" data-ng-model="firingForm.title">
-    </div>
-    <div class="form-group">
-      <label for="firing-kiln">Kiln used for firing: </label>
-      <input id="firing-kiln" type="text" name="firing-kiln" data-ng-model="firingForm.kiln">
-    </div>
-    <div class="form-group">
-      <label for="firing-date">Date of firing: </label>
-      <input id="firing-date" type="date" name="firing-date" data-ng-model="firingForm.date">
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-sm-10">
+        <div class="form-group">
+          <label for="firing-title">Title of Firing: </label>
+          <input id="firing-title" type="text" name="firing-title" data-ng-model="firingForm.title">
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-10">
+        <div class="form-group">
+          <label for="firing-kiln">Kiln used for firing: </label>
+          <input id="firing-kiln" type="text" name="firing-kiln" data-ng-model="firingForm.kiln">
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-10">
+        <div class="form-group">
+          <label for="firing-date">Date of firing: </label>
+          <input id="firing-date" type="date" name="firing-date" data-ng-model="firingForm.date">
+        </div>
+      </div>
     </div>
     <div class="row">
       <div class="col-md-10">

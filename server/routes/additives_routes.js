@@ -52,7 +52,7 @@ additivesRouter.get('/getAll', jwtAuth, jsonParser, (req, res) => {
 
 additivesRouter.put('/change/:id', jwtAuth, jsonParser, (req, res) => {
   var additiveData = req.body.additive;
-  Additive.update({ _id: req.params.id }, additiveData, (err) => {
+  Additive.update({ _id: req.params.id, ownedBy: req.user.id }, additiveData, (err) => {
     if (err) return handleDBError(err, res);
 
     res.status(200).json({ msg: 'Successfully updated additive' });
@@ -60,7 +60,7 @@ additivesRouter.put('/change/:id', jwtAuth, jsonParser, (req, res) => {
 });
 
 additivesRouter.delete('/delete/:id', jwtAuth, jsonParser, (req, res) => {
-  Additive.remove({ _id: req.params.id }, (err) => {
+  Additive.remove({ _id: req.params.id, ownedBy: req.user.id }, (err) => {
     if (err) return handleDBError(err, res);
 
     res.status(200).json({ msg: 'Successfully deleted additive' });

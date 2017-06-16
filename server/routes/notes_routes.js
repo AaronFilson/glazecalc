@@ -51,7 +51,7 @@ notesRouter.get('/getAll', jwtAuth, jsonParser, (req, res) => {
 
 notesRouter.put('/change/:id', jwtAuth, jsonParser, (req, res) => {
   var noteData = req.body;
-  Note.update({ _id: req.params.id }, noteData, (err) => {
+  Note.update({ _id: req.params.id, ownedBy: req.user.id }, noteData, (err) => {
     if (err) return handleDBError(err, res);
 
     res.status(200).json({ msg: 'Successfully updated note' });
@@ -59,7 +59,7 @@ notesRouter.put('/change/:id', jwtAuth, jsonParser, (req, res) => {
 });
 
 notesRouter.delete('/delete/:id', jwtAuth, jsonParser, (req, res) => {
-  Note.remove({ _id: req.params.id }, (err) => {
+  Note.remove({ _id: req.params.id, ownedBy: req.user.id }, (err) => {
     if (err) return handleDBError(err, res);
 
     res.status(200).json({ msg: 'Successfully deleted note' });

@@ -28,58 +28,80 @@
 
 <section class="inputbox">
   <h3>Create a new glaze recipe: </h3>
-  <form class="form-inline">
-    <div class="form-group">
-      <label for="recipe-name">Recipe title: </label>
-      <input type="text" name="recipe-title" data-ng-model="recipeForm.title">
-    </div>
-    <div class="form-group">
-      <label for="recipe-date">Date: </label>
-      <input type="date" name="recipe-date" data-ng-model="recipeForm.date">
+  <form class="form">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="recipe-name">Recipe title: </label>
+          <input type="text" name="recipe-title" data-ng-model="recipeForm.title">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="recipe-date">Date: </label>
+          <input type="date" name="recipe-date" data-ng-model="recipeForm.date">
+        </div>
+      </div>
     </div>
     <div class="row">
       <div class="col-md-10">
-        <div>
+        <div class="form-group">
           <label for="recipe-notes" class="boxlabel">Notes on the recipe: </label>
           <textarea name="recipe-notes" rows="3" class="form-control" data-ng-model="recipeForm.notes"></textarea>
         </div>
       </div>
     </div>
-
-
     <div class="row">
-      <div class="col-md-6" data-ng-init="getMats()">
-        Add materials to the recipe:
-        <br>
+      <div class="col-md-8">
+        <h4>Add materials to the recipe: </h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6" data-ng-init="getMats()">
         My materials:
         <select name="my-mats" data-ng-model="mynewmat">
+          <option value="">none</option>
           <option data-ng-repeat="mymat in customs" value="{{mymat}}">{{mymat.name}}</option>
         </select>
-        <br>
-        Standard materials:
-        <select name="std-mats" data-ng-model="stdnewmat">
-          <option data-ng-repeat="stdmat in standards" value="{{stdmat}}">{{stdmat.name}}</option>
-        </select>
-        <br>
-        <button data-ng-click="addMaterialField(mynewmat, stdnewmat)" class="btn btn-default">
-          Add the material to recipe
+        <button data-ng-click="addMyMaterialField(mynewmat)" class="btn btn-default">
+          Add my material to recipe
         </button>
       </div>
-      <div class="col-md-6" data-ng-init="getAdds()">
-        Add colorants and additives to the recipe:
-        <br>
+      <div class="col-sm-6">
+        Standard materials:
+        <select name="std-mats" data-ng-model="stdnewmat">
+          <option value="">none</option>
+          <option data-ng-repeat="stdmat in standards" value="{{stdmat}}">{{stdmat.name}}</option>
+        </select>
+        <button data-ng-click="addStdMaterialField(stdnewmat)" class="btn btn-default">
+          Add standard material to recipe
+        </button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8">
+        <h4>Add colorants and additives to the recipe: </h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6" data-ng-init="getAdds()">
         My additives:
         <select name="my-adds" data-ng-model="mynewadd">
+          <option value="">none</option>
           <option data-ng-repeat="myadd in additives" value="{{myadd}}">{{myadd.name}}</option>
         </select>
-        <br>
+        <button data-ng-click="addMyAdditiveField(mynewadd)" class="btn btn-default">
+          Add my additive / colorant
+        </button>
+      </div>
+      <div class="col-sm-6">
         Standard additives:
         <select name="std-adds" data-ng-model="stdnewadd">
+          <option value="">none</option>
           <option data-ng-repeat="stdadd in standardadds" value="{{stdadd}}">{{stdadd.name}}</option>
         </select>
-        <br>
-        <button data-ng-click="addAdditiveField(mynewadd, stdnewadd)" class="btn btn-default">
-          Add the additive / colorant to recipe
+        <button data-ng-click="addStdAdditiveField(stdnewadd)" class="btn btn-default">
+          Add standard additive / colorant
         </button>
       </div>
     </div>
@@ -94,6 +116,23 @@
           Amount: <input type="text" name="amount" data-ng-model="material.amount">
           <br>
           <button type="button" data-ng-click="removeFromRecipe(material)" class="btn btn-default btn-sm">
+            Remove from recipe
+          </button>
+        </li>
+      </ol>
+    </p>
+    <br>
+
+    <p data-ng-if="addList.length">
+      Enter the amounts of the additives as a percentage or as parts by weight:
+      <br>
+      <ol>
+        <li data-ng-repeat="additem in addList">
+          <b>{{additem.name}}</b>
+          <br>
+          Amount: <input type="text" name="amount" data-ng-model="additem.amount">
+          <br>
+          <button type="button" data-ng-click="removeFromAdds(additem)" class="btn btn-default btn-sm">
             Remove from recipe
           </button>
         </li>

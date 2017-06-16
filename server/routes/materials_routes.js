@@ -60,7 +60,7 @@ materialsRouter.get('/getAll', jwtAuth, jsonParser, (req, res) => {
 
 materialsRouter.put('/change/:id', jwtAuth, jsonParser, (req, res) => {
   var materialData = req.body.material;
-  Material.update({ _id: req.params.id }, materialData, (err) => {
+  Material.update({ _id: req.params.id, ownedBy: req.user.id }, materialData, (err) => {
     if (err) return handleDBError(err, res);
 
     res.status(200).json({ msg: 'Successfully updated material' });
@@ -68,7 +68,7 @@ materialsRouter.put('/change/:id', jwtAuth, jsonParser, (req, res) => {
 });
 
 materialsRouter.delete('/delete/:id', jwtAuth, jsonParser, (req, res) => {
-  Material.remove({ _id: req.params.id }, (err) => {
+  Material.remove({ _id: req.params.id, ownedBy: req.user.id }, (err) => {
     if (err) return handleDBError(err, res);
 
     res.status(200).json({ msg: 'Successfully deleted material' });
