@@ -1,5 +1,5 @@
 var PORT = process.env.PORT || 4000;
-var clientPort = process.env.CLIENTPORT || 4001;
+// var clientPort = process.env.CLIENTPORT || 4001;
 var hostURL = process.env.HOSTURL || 'http://localhost:';
 const express = require('express');
 const app = module.exports = exports = express();
@@ -8,7 +8,7 @@ mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost/glazecalc_app_
  { keepAlive: 120 });
 
 app.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', hostURL + clientPort);
+  res.header('Access-Control-Allow-Origin', hostURL);
   res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization, token');
   res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
   next();
