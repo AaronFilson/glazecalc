@@ -4,7 +4,7 @@ var hostURL = process.env.HOSTURL || 'http://ec2-35-163-34-249.us-west-2.compute
 const express = require('express');
 const app = module.exports = exports = express();
 const mongoose = require('mongoose');
-mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost/glazecalc_app_dev',
+mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost/glazecalc_app_prod',
  { keepAlive: 120 });
 
 app.use((req, res, next) => {
