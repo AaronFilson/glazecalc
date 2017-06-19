@@ -60,7 +60,7 @@ firingRouter.put('/change/:id', jwtAuth, jsonParser, (req, res) => {
      || !firingData.rows || !firingData.fieldsIncluded) {
     return res.status(400).json( { msg: 'Missing required information' } );
   }
-  Firing.update({ _id: req.params.id }, firingData, { overwrite: true }, (err) => {
+  Firing.update({ _id: req.params.id, ownedBy: req.user.id }, firingData, { overwrite: true }, (err) => {
     if (err) return handleDBError(err, res);
 
     res.status(200).json({ msg: 'Successfully updated firing' });
@@ -68,7 +68,7 @@ firingRouter.put('/change/:id', jwtAuth, jsonParser, (req, res) => {
 });
 
 firingRouter.delete('/delete/:id', jwtAuth, jsonParser, (req, res) => {
-  Firing.remove({ _id: req.params.id }, (err) => {
+  Firing.remove({ _id: req.params.id, ownedBy: req.user.id }, (err) => {
     if (err) return handleDBError(err, res);
 
     res.status(200).json({ msg: 'Successfully deleted firing' });

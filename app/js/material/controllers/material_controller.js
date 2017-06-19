@@ -94,6 +94,7 @@ module.exports = function(app) {
             $scope.serverMessages.push('Success. Material added to database.');
             $scope.formula = [];
             $scope.matForm = {};
+            $scope.matForm.percentmole = 'molecular';
             $scope.myServerMats.push(data);
           }
         });

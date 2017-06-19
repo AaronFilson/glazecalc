@@ -1,3 +1,7 @@
+<header data-ng-if="!email" class="header-text">
+  Oops! It seems you are not signed in. This will keep you from using the app. Go to
+  <a href="#/signin">signin</a> or make a new account here: <a href="#/signup">signup</a>.
+</header>
 <nav>
   <h3>You are on the <b>Material</b> page.</h3>
   Links to pages:
@@ -7,7 +11,7 @@
   <a href="#/home" class="btn btn-default" role="button">home</a>
   <a href="#/notes" class="btn btn-default" role="button">notes</a>
   <a href="#/recipe" class="btn btn-default" role="button">recipe</a>
-  <a href="#/trash" class="btn btn-default" role="button">trash</a>
+  <!-- <a href="#/trash" class="btn btn-default" role="button">trash</a> -->
 </nav>
 
 <ol class="errors-section" data-ng-if="errors.length">
@@ -30,7 +34,7 @@
   <h3>Input information on the new material</h3>
   <p>
     Symbols to copy into your material formula:
-    ₁ ₂ ₃ ₄ ₅ ₆ ₇ ₈ ₉ ₀ •
+    <span class="large">₁ ₂ ₃ ₄ ₅ ₆ ₇ ₈ ₉ ₀ •</span>
   </p>
   <form>
     <div class="row">
@@ -48,27 +52,27 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-12">
-        <label for="notes"> Notes :</label><br>
-        <textarea id="notes" name="notes" data-ng-model="matForm.notes" cols="70" rows="3"></textarea>
-
+      <div class="col-md-10">
+        <label for="notes" class="boxlabel"> Notes: </label>
+        <textarea id="notes" name="notes" data-ng-model="matForm.notes" rows="3" class="form-control">
+        </textarea>
       </div>
     </div>
     <div class="row">
       <div class="col-lg-3 col-sm-4 col-xs-8">
-        <label for="manualformulaweight">Manual entry of fired atomic weight</label>
+        <label for="manualformulaweight">Manual entry of fired atomic weight: </label>
         <input id="manualformulaweight" type="text" name="manualformulaweight" data-ng-model="matForm.formulaweight">
       </div>
       <div class="col-lg-3 col-sm-4 col-xs-8">
-        <label for="manualmolecularweight">Manual entry of molecular weight</label>
+        <label for="manualmolecularweight">Manual entry of molecular weight: </label>
         <input id="manualmolecularweight" type="text" name="manualmolecularweight" data-ng-model="matForm.molecularweight">
       </div>
       <div class="col-lg-3 col-sm-4 col-xs-8">
-        <label for="manualequivalentweight">Manual entry of equivalent molecular weight</label>
+        <label for="manualequivalentweight">Manual entry of equivalent molecular weight: </label>
         <input id="manualequivalentweight" type="text" name="manualequivalentweight" data-ng-model="matForm.equivalent">
       </div>
       <div class="col-lg-3 col-sm-4 col-xs-8">
-        <label for="LOI">Loss on Ignition - LOI (percentage) </label>
+        <label for="LOI">Loss on Ignition - LOI (percentage): </label>
         <input id="LOI" type="text" name="LOI" data-ng-model="matForm.loi">
       </div>
     </div>
@@ -76,28 +80,29 @@
     <div>
       <h4>Enter the formula (fired): </h4>
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-6">
           <label for="firedoxide">Oxide Selection</label>
-          <firedox-select id="firedoxide" data-ng-model="firedox"></firedox-select><br>
-        </div>
-        <div class="col-md-4">
+          <div>
+            <firedox-select id="firedoxide" data-ng-model="firedox"></firedox-select><br>
+          </div>
           <button data-ng-click="addFiredField(firedoxselect)" class="btn btn-default">
             Add the oxide to the list
           </button>
         </div>
-        <div class="col-md-4">
+
+        <div class="col-md-6">
           This formula is in : <br>
           <label for="radiopercent">Percent</label>
-          <input id="radiopercent" type="radio" name="percentmole" value="percent" data-ng-model="matForm.percentmole"><br>
+          <input id="radiopercent" class="radio" type="radio" name="percentmole" value="percent" data-ng-model="matForm.percentmole"><br>
           <label for="radiomole">Molecular / Unity</label>
-          <input id="radiomole" type="radio" name="percentmole" value="molecular" data-ng-model="matForm.percentmole">
+          <input id="radiomole" class="radio" type="radio" name="percentmole" value="molecular" data-ng-model="matForm.percentmole">
         </div>
       </div>
       <div class="row">
         <div class="col-md-12">
           <ul>
             <li data-ng-repeat="item in formula track by $index">
-              {{item.name}}
+              <b>{{item.name}}</b>
               <p>Amount: <input type="text" name="amount" data-ng-model="item.amount">
               </p>
               <button type="button" data-ng-click="removeFromFormula(item)" class="btn btn-default">
@@ -121,50 +126,46 @@
 
 <section data-ng-if="myServerMats.length" class="tech-info">
   <h4>My server materials: </h4>
-  <p>
-    <button type="button" name="serverMatEdit" data-ng-click="editMyListToggle()" class="btn btn-default">
-      Remove toggle
-    </button>
-    <table class="table table-bordered">
-      <tr>
-        <th>Name</th> <th>Equivalent</th> <th>notes</th> <th>fields</th>
-      </tr>
-      <tr data-ng-repeat="mat in myServerMats">
-        <td>
-          {{mat.name}}
-          <div data-ng-if="editToggle">:
-            <button type="button" name="removeMat" data-ng-click="removeMyMat(mat)" class="btn btn-warning">
-              Remove from server
-            </button>
-          </div>
-        </td>
-        <td>{{mat.equivalent}}</td>
-        <td>{{mat.notes[0]}}</td>
-        <td><span data-ng-repeat="oxide in mat.fields">
-          {{oxide.name}} : {{oxide.amount}}<span data-ng-if="$index < mat.fields.length - 1">; </span>
-        </span></td>
-      </tr>
-    </table>
-  </p>
+  <table class="table table-bordered">
+    <tr>
+      <th>Name</th> <th>Equivalent</th> <th>Notes</th> <th>Fields</th>
+    </tr>
+    <tr data-ng-repeat="mat in myServerMats | orderBy: 'mat.name'">
+      <td>
+        <b>{{mat.name}}</b>
+        <div data-ng-if="editToggle">
+          <button type="button" name="removeMat" data-ng-click="removeMyMat(mat)" class="btn btn-warning">
+            Remove from server
+          </button>
+        </div>
+      </td>
+      <td>{{mat.equivalent}}</td>
+      <td>{{mat.notes[0]}}</td>
+      <td><span data-ng-repeat="oxide in mat.fields">
+        {{oxide.name}} : {{oxide.amount}}<span data-ng-if="$index < mat.fields.length - 1">; </span>
+      </span></td>
+    </tr>
+  </table>
+  <button type="button" name="serverMatEdit" data-ng-click="editMyListToggle()" class="btn btn-default">
+    Remove toggle
+  </button>
 </section>
 <br>
 
-<section data-ng-init="getStandard()">
-  <p data-ng-if="standardMats.length">
-    <h4>The standard server materials: </h4>
-    <br>
-    <table class="table table-bordered" data-ng-if="standardMats.length">
-      <tr>
-        <th>Name</th> <th>Equivalent</th> <th>notes</th> <th>fields</th>
-      </tr>
-      <tr data-ng-repeat="stdMat in standardMats">
-        <td>{{stdMat.name}}</td>
-        <td>{{stdMat.equivalent}}</td>
-        <td>{{stdMat.notes[0]}}</td>
-        <td><span data-ng-repeat="oxide in stdMat.fields">
-          {{oxide.name}} : {{oxide.amount}}<span data-ng-if="$index < stdMat.fields.length - 1">; </span>
-        </span></td>
-      </tr>
-    </table>
-  </p>
+<section data-ng-init="getStandard()" class="tech-info">
+  <h4>The standard server materials: </h4>
+  <table class="table table-bordered">
+    <tr>
+      <th>Name</th> <th>Equivalent</th> <th>Notes</th> <th>Fields</th> <th>Raw Formula</th>
+    </tr>
+    <tr data-ng-repeat="stdMat in standardMats">
+      <td>{{stdMat.name}}</td>
+      <td>{{stdMat.equivalent}}</td>
+      <td>{{stdMat.notes[0]}}</td>
+      <td><span data-ng-repeat="oxide in stdMat.fields">
+        {{oxide.name}} : {{oxide.amount}}<span data-ng-if="$index < stdMat.fields.length - 1">; </span>
+      </span></td>
+      <td>{{stdMat.rawformula}}</td>
+    </tr>
+  </table>
 </section>

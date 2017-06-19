@@ -51,7 +51,7 @@ trashRouter.get('/getAll', jwtAuth, jsonParser, (req, res) => {
 
 trashRouter.put('/change/:id', jwtAuth, jsonParser, (req, res) => {
   var trashData = req.body.trash;
-  Trash.update({ _id: req.params.id }, trashData, (err) => {
+  Trash.update({ _id: req.params.id, ownedBy: req.user.id }, trashData, (err) => {
     if (err) return handleDBError(err, res);
 
     res.status(200).json({ msg: 'Successfully updated trash' });
@@ -59,7 +59,7 @@ trashRouter.put('/change/:id', jwtAuth, jsonParser, (req, res) => {
 });
 
 trashRouter.delete('/delete/:id', jwtAuth, jsonParser, (req, res) => {
-  Trash.remove({ _id: req.params.id }, (err) => {
+  Trash.remove({ _id: req.params.id, ownedBy: req.user.id }, (err) => {
     if (err) return handleDBError(err, res);
 
     res.status(200).json({ msg: 'Successfully deleted trash' });

@@ -1,3 +1,7 @@
+<header data-ng-if="!email" class="header-text">
+  Oops! It seems you are not signed in. This will keep you from using the app. Go to
+  <a href="#/signin">signin</a> or make a new account here: <a href="#/signup">signup</a>.
+</header>
 <nav>
   <h3>You are on the <b>Home</b> page.</h3>
   Links to pages:
@@ -7,8 +11,9 @@
   <a href="#/material" class="btn btn-default" role="button">material</a>
   <a href="#/notes" class="btn btn-default" role="button">notes</a>
   <a href="#/recipe" class="btn btn-default" role="button">recipe</a>
-  <a href="#/trash" class="btn btn-default" role="button">trash</a>
+  <!-- <a href="#/trash" class="btn btn-default" role="button">trash</a> -->
 </nav>
+
 <section class="home-text">
   <p>
     Hello, and welcome to the Glaze Calc App!
@@ -33,7 +38,7 @@
   <p>
     A small section of helpful advice on glazes and firing is included on the advice page.
     As this is a project in progress, please leave feedback and bug reports on the github
-    page, linked below. This is software is free to use, and the code is available for download
+    page : <a href="https://github.com/aaronfilson/glazecalc">GlazeCalc</a>. This is software is free to use, and the code is available for download
     and local use.
   </p>
 

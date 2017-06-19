@@ -7,9 +7,8 @@ const jwtAuth = require(__dirname + '/../lib/jwt_auth');
 const adviceRouter = module.exports = exports = express.Router();
 
 adviceRouter.post('/create', jwtAuth, jsonParser, (req, res) => {
-  var incAdvice = req.body.advice;
-  if (!req.user.id || !(req.user.role === 'admin') || !incAdvice.title
-   || !incAdvice.content || !incAdvice.tags) {
+  var incAdvice = req.body;
+  if (!req.user.id || !incAdvice.title || !incAdvice.content || !incAdvice.tags) {
     return res.status(400).json( { msg: 'Missing required information' } );
   }
   var newestAdvice = new Advice();
@@ -47,12 +46,12 @@ adviceRouter.get('/getAll', jwtAuth, jsonParser, (req, res) => {
 });
 
 adviceRouter.put('/change/:id', jwtAuth, jsonParser, (req, res) => {
-  var adviceData = req.body.advice;
-  if (!req.params.id || !req.user.id || !(req.user.role === 'admin')
-  || !adviceData.title || !adviceData.content || !adviceData.tags) {
+  var adviceData = req.body;
+  if (!req.params.id || !req.user.id || !adviceData.title
+     || !adviceData.content || !adviceData.tags) {
     return res.status(400).json( { msg: 'Missing required information' } );
   }
-  Advice.update({ _id: req.params.id }, adviceData, (err) => {
+  Advice.update({ _id: req.params.id, ownedBy: req.user.id }, adviceData, (err) => {
     if (err) return handleDBError(err, res);
 
     res.status(200).json({ msg: 'Successfully updated advice' });
@@ -60,12 +59,21 @@ adviceRouter.put('/change/:id', jwtAuth, jsonParser, (req, res) => {
 });
 
 adviceRouter.delete('/delete/:id', jwtAuth, jsonParser, (req, res) => {
-  if (!req.params.id || !req.user.id || !(req.user.role === 'admin')) {
+  if (!req.params.id || !req.user.id) {
     return res.status(400).json( { msg: 'Missing required information' } );
   }
-  Advice.remove({ _id: req.params.id }, (err) => {
+  Advice.remove({ _id: req.params.id, ownedBy: req.user.id }, (err) => {
     if (err) return handleDBError(err, res);
 
     res.status(200).json({ msg: 'Successfully deleted advice' });
+  });
+});
+
+
+adviceRouter.get('/getStandard', jwtAuth, jsonParser, (req, res) => {
+  Advice.find({ ownedBy: 'Standard' }, (err, data) => {
+    if (err) return handleDBError(err, res);
+
+    res.status(200).json(data);
   });
 });

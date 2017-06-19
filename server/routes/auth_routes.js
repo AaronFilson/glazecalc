@@ -14,7 +14,7 @@ authRouter.post('/signup', jsonParser, (req, res) => {
 
   if (!((req.body.password || '').length > 7)) {
     return res.status(400)
-      .json({ msg: 'Please enter a password longer than 7 characters' });
+      .json({ msg: 'Please enter a password 8 characters or longer.' });
   }
 
   var newUser = new User();

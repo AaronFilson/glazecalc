@@ -1,4 +1,4 @@
-process.env.MONGOLAB_URI = 'mongodb://localhost/a_test';
+process.env.MONGOLAB_URI = 'mongodb://localhost/test_a';
 require(__dirname + '/../../server');
 const chai = require('chai');
 const chaiHttp = require('chai-http');
@@ -42,7 +42,7 @@ describe('advice API', () => {
       request(baseUri)
         .post('/create')
         .set('token', userToken)
-        .send( { user: testUser, advice: testAdvice } )
+        .send(testAdvice)
         .end((err, res) => {
           expect(err).to.eql(null);
           expect(res.body).to.not.eql(null);
@@ -67,27 +67,27 @@ describe('advice API', () => {
 
   describe('The getAll for advices', () => {
     var testAdvice = {};
-    testAdvice.content = 'Use care in storing notes, and make backups of formulas.';
-    testAdvice.tags = ['test', 'test tag', 'test tags here', 'test one', 'advice tag'];
-    testAdvice.title = 'Test Advice';
+    testAdvice.content = 'Wear protective glasses when checking kilns.';
+    testAdvice.tags = ['test', 'test tag', 'test tags here', 'test two', 'advice tag'];
+    testAdvice.title = 'Test Advice 2';
 
     before((done) => {
       request(baseUri)
         .post('/create')
         .set('token', userToken)
-        .send( { user: testUser, advice: testAdvice } )
+        .send(testAdvice)
         .end((err) => {
           if (err) throw err;
           request(baseUri)
             .post('/create')
             .set('token', userToken)
-            .send( { user: testUser, advice: testAdvice } )
+            .send(testAdvice)
             .end((err) => {
               if (err) throw err;
               request(baseUri)
                 .post('/create')
                 .set('token', userToken)
-                .send( { user: testUser, advice: testAdvice } )
+                .send(testAdvice)
                 .end((err) => {
                   if (err) throw err;
                   done();
@@ -102,7 +102,7 @@ describe('advice API', () => {
         .end((err, res) => {
           expect(err).to.eql(null);
           expect(res.body).to.not.eql(null);
-          expect(res.body[3].title).to.eql('Test Advice');
+          expect(res.body[3].title).to.eql('Test Advice 2');
           done();
         });
     });
@@ -113,7 +113,7 @@ describe('advice API', () => {
       request(baseUri)
         .put('/change/' + gotAdvice._id)
         .set('token', userToken)
-        .send({ advice: gotAdvice })
+        .send( gotAdvice )
         .end((err, res) => {
           expect(err).to.eql(null);
           expect(res.body.msg).to.eql('Successfully updated advice');

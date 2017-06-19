@@ -7,13 +7,14 @@ const jwtAuth = require(__dirname + '/../lib/jwt_auth');
 const notesRouter = module.exports = exports = express.Router();
 
 notesRouter.post('/create', jwtAuth, jsonParser, (req, res) => {
-  var incNote = req.body.note;
+  var incNote = req.body;
   if (!req.user.id || !incNote.content || !incNote.relatedCollection || !incNote.relatedId) {
     return res.status(400).json( { msg: 'Missing required information' } );
   }
   var newestNote = new Note();
   try {
     newestNote.ownedBy = req.user.id;
+    newestNote.title = incNote.title;
     newestNote.content = incNote.content;
     newestNote.relatedCollection = incNote.relatedCollection;
     newestNote.relatedId = incNote.relatedId;
@@ -50,8 +51,8 @@ notesRouter.get('/getAll', jwtAuth, jsonParser, (req, res) => {
 });
 
 notesRouter.put('/change/:id', jwtAuth, jsonParser, (req, res) => {
-  var noteData = req.body.note;
-  Note.update({ _id: req.params.id }, noteData, (err) => {
+  var noteData = req.body;
+  Note.update({ _id: req.params.id, ownedBy: req.user.id }, noteData, (err) => {
     if (err) return handleDBError(err, res);
 
     res.status(200).json({ msg: 'Successfully updated note' });
@@ -59,7 +60,7 @@ notesRouter.put('/change/:id', jwtAuth, jsonParser, (req, res) => {
 });
 
 notesRouter.delete('/delete/:id', jwtAuth, jsonParser, (req, res) => {
-  Note.remove({ _id: req.params.id }, (err) => {
+  Note.remove({ _id: req.params.id, ownedBy: req.user.id }, (err) => {
     if (err) return handleDBError(err, res);
 
     res.status(200).json({ msg: 'Successfully deleted note' });

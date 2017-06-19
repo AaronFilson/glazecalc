@@ -1,3 +1,7 @@
+<header data-ng-if="!email" class="header-text">
+  Oops! It seems you are not signed in. This will keep you from using the app. Go to
+  <a href="#/signin">signin</a> or make a new account here: <a href="#/signup">signup</a>.
+</header>
 <nav>
   <h3>You are on the <b>Recipe</b> page.</h3>
   Links to pages:
@@ -7,11 +11,11 @@
   <a href="#/home" class="btn btn-default" role="button">home</a>
   <a href="#/material" class="btn btn-default" role="button">material</a>
   <a href="#/notes" class="btn btn-default" role="button">notes</a>
-  <a href="#/trash" class="btn btn-default" role="button">trash</a>
+  <!-- <a href="#/trash" class="btn btn-default" role="button">trash</a> -->
 </nav>
 
 <ol class="errors-section" data-ng-if="errors.length">
-  <li data-ng-repeat="error in errors">{{error}}
+  <li data-ng-repeat="error in errors track by $index">{{error}}
     <button type="button" name="clear" data-ng-click="dismissError(error)" class="btn btn-default">
       Dismiss
     </button>
@@ -19,7 +23,7 @@
 </ol>
 
 <ol class="server-msg" data-ng-if="serverMessages.length">
-  <li data-ng-repeat="msg in serverMessages">{{msg}}
+  <li data-ng-repeat="msg in serverMessages track by $index">{{msg}}
     <button type="button" name="clear" data-ng-click="dismissMessage(msg)" class="btn btn-default">
       Dismiss
     </button>
@@ -27,66 +31,94 @@
 </ol>
 
 <section class="inputbox">
-  <h3>Create a new glaze recipe : </h3>
-  <form class="form-inline">
-    <div class="form-group">
-      <label for="recipe-name">Recipe title: </label>
-      <input type="text" name="recipe-title" value="" data-ng-model="recipeForm.title">
-    </div>
-    <div class="form-group">
-      <label for="recipe-date">Date (optional / default is today): </label>
-      <input type="date" name="recipe-date" value="" data-ng-model="recipeForm.date">
-    </div>
-    <div class="form-group">
-      <label for="recipe-notes">Notes on the recipe: </label>
-      <textarea name="recipe-notes" cols="70" rows="3" data-ng-model="recipeForm.notes"></textarea>
-    </div>
-
+  <h3>Create a new glaze recipe: </h3>
+  <form class="form">
     <div class="row">
-      <div class="col-md-6" data-ng-init="getMats()">
-        Add materials to the recipe :
-        <br>
-        My materials :
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="recipe-name">Recipe title: </label>
+          <input id="recipe-name" type="text" name="recipe-title" data-ng-model="recipeForm.title">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="recipe-date">Date: </label>
+          <input id="recipe-date" type="date" name="recipe-date" placeholder="yyyy-MM-dd"
+           data-ng-model="recipeForm.date">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-10">
+        <div class="form-group">
+          <label for="recipe-notes" class="boxlabel">Notes on the recipe: </label>
+          <textarea id="recipe-notes" name="recipe-notes" rows="3" class="form-control" data-ng-model="recipeForm.notes"></textarea>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8">
+        <h4>Add materials to the recipe: </h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6" data-ng-init="getMats()">
+        My materials:
         <select name="my-mats" data-ng-model="mynewmat">
+          <option value="">none</option>
           <option data-ng-repeat="mymat in customs" value="{{mymat}}">{{mymat.name}}</option>
         </select>
-        <br>
-        Standard materials :
-        <select name="std-mats" data-ng-model="stdnewmat">
-          <option data-ng-repeat="stdmat in standards" value="{{stdmat}}">{{stdmat.name}}</option>
-        </select>
-        <br>
-        <button data-ng-click="addMaterialField(mynewmat, stdnewmat)" class="btn btn-default">
-          Add the material to recipe
+        <button data-ng-click="addMyMaterialField(mynewmat)" class="btn btn-default">
+          Add my material to recipe
         </button>
       </div>
-      <div class="col-md-6" data-ng-init="getAdds()">
-        Add colorants and additives to the recipe :
-        <br>
-        My additives :
+      <div class="col-sm-6">
+        Standard materials:
+        <select name="std-mats" data-ng-model="stdnewmat">
+          <option value="">none</option>
+          <option data-ng-repeat="stdmat in standards" value="{{stdmat}}">{{stdmat.name}}</option>
+        </select>
+        <button data-ng-click="addStdMaterialField(stdnewmat)" class="btn btn-default">
+          Add standard material to recipe
+        </button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8">
+        <h4>Add colorants and additives to the recipe: </h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6" data-ng-init="getAdds()">
+        My additives:
         <select name="my-adds" data-ng-model="mynewadd">
+          <option value="">none</option>
           <option data-ng-repeat="myadd in additives" value="{{myadd}}">{{myadd.name}}</option>
         </select>
-        <br>
-        Standard additives :
+        <button data-ng-click="addMyAdditiveField(mynewadd)" class="btn btn-default">
+          Add my additive / colorant
+        </button>
+      </div>
+      <div class="col-sm-6">
+        Standard additives:
         <select name="std-adds" data-ng-model="stdnewadd">
+          <option value="">none</option>
           <option data-ng-repeat="stdadd in standardadds" value="{{stdadd}}">{{stdadd.name}}</option>
         </select>
-        <br>
-        <button data-ng-click="addAdditiveField(mynewadd, stdnewadd)" class="btn btn-default">
-          Add the additive / colorant to recipe
+        <button data-ng-click="addStdAdditiveField(stdnewadd)" class="btn btn-default">
+          Add standard additive / colorant
         </button>
       </div>
     </div>
 
     <p data-ng-if="recipeMats.length">
-      Enter the amounts of the materials as a percentage or as parts by weight :
+      Enter the amounts of the materials as a percentage or as parts by weight:
       <br>
       <ol>
         <li data-ng-repeat="material in recipeMats">
-          {{material.name}}
+          <b>{{material.name}}</b>
           <br>
-          Amount : <input type="text" name="amount" data-ng-model="material.amount">
+          Amount: <input type="text" name="amount" data-ng-model="material.amount">
           <br>
           <button type="button" data-ng-click="removeFromRecipe(material)" class="btn btn-default btn-sm">
             Remove from recipe
@@ -95,15 +127,34 @@
       </ol>
     </p>
     <br>
+
+    <p data-ng-if="addList.length">
+      Enter the amounts of the additives as a percentage or as parts by weight:
+      <br>
+      <ol>
+        <li data-ng-repeat="additem in addList">
+          <b>{{additem.name}}</b>
+          <br>
+          Amount: <input type="text" name="amount" data-ng-model="additem.amount">
+          <br>
+          <button type="button" data-ng-click="removeFromAdds(additem)" class="btn btn-default btn-sm">
+            Remove from recipe
+          </button>
+        </li>
+      </ol>
+    </p>
+    <br>
+
     <button name="compute" data-ng-click="computeUnity(recipeMats)" class="btn btn-default">
       Compute recipe into Unity
     </button>
 
     <button name="submit-button" data-ng-click="submit(recipeForm)" class="btn btn-primary">
-      Save the recipe
+      Save
     </button>
   </form>
 </section>
+<br>
 
 <section class="tech-info" data-ng-if="recipeForm.computed.uList">
   <h4>Unity formula of the glaze recipe</h4>
@@ -160,29 +211,22 @@
       Ratio of Silica to Alumina : {{(recipeForm.computed.uList.SiO2 / recipeForm.computed.uList.Al2O3) | number:2}}
     </div>
     <div class="col-md-6" data-ng-if="addList.length">
-      Glaze additives and colorants :
+      Glaze additives and colorants:
       <ol>
         <li data-ng-repeat="add in addList">
           {{add.name}}
           <br>
-          Amount : <input type="text" name="amount" data-ng-model="add.amount">
-          <br>
-          <button type="button" data-ng-click="removeFromAdds(add)" class="btn btn-default btn-sm">
-            Remove from recipe
-          </button>
+          Amount: {{add.amount}}
+
         </li>
       </ol>
     </div>
   </div>
-
 </section>
 <br>
-<section data-ng-init="getMyRecipes()" class="tech-info">
-  <h3>My saved recipes : </h3>
 
-  <button type="button" name="serverRecEdit" data-ng-click="editMyListToggle()" class="btn btn-default btn-sm">
-    Remove toggle button
-  </button>
+<section data-ng-init="getMyRecipes()" class="tech-info">
+  <h3>My saved recipes: </h3>
   <ul data-ng-if="myRecipes.length">
     <li data-ng-repeat="rec in myRecipes">
       <b>{{rec.title}}</b>
@@ -240,13 +284,18 @@
         </div>
         <div class="row">
           <div class="col-lg-12">
-            Additives :
+            Additives:
             <ol>
               <li data-ng-repeat="singleAdd in rec.additives" class="col-lg-2 col-xs-4">
                 {{singleAdd.name}} : {{singleAdd.amount}}
               </li>
             </ol>
-
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-10">
+            Ratio of Silica to Alumina : {{(rec.computed[0].uList.SiO2 / rec.computed[0].uList.Al2O3) | number:2}}
+            <br><span data-ng-if="rec.date">Date: {{rec.date | date:'fullDate'}}</span>
           </div>
         </div>
       </div>
@@ -258,4 +307,8 @@
       </p>
     </li>
   </ul>
+
+  <button type="button" name="serverRecEdit" data-ng-click="editMyListToggle()" class="btn btn-default btn-sm">
+    Remove toggle button
+  </button>
 </section>

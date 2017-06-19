@@ -39,14 +39,14 @@ gulp.task('favicon:dev', () => {
 gulp.task('webpack:dev', () => {
   gulp.src('./app/js/client.js')
     .pipe(webpack({
-      module: {
-        loaders: [
-          {
-            test: /\.js$/,
-            loader: 'babel-loader'
-          }
-        ]
-      },
+      // module: {
+      //   loaders: [
+      //     {
+      //       test: /\.js$/,
+      //       loader: 'babel-loader'
+      //     }
+      //   ]
+      // },
       output: {
         filename: 'bundle.js'
       }

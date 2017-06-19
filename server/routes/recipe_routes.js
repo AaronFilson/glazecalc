@@ -62,7 +62,7 @@ recipeRouter.get('/getStandard', jwtAuth, jsonParser, (req, res) => {
 
 recipeRouter.put('/change/:id', jwtAuth, jsonParser, (req, res) => {
   var recipeData = req.body.recipe;
-  Recipe.update({ _id: req.params.id }, recipeData, (err) => {
+  Recipe.update({ _id: req.params.id, ownedBy: req.user.id }, recipeData, (err) => {
     if (err) return handleDBError(err, res);
 
     res.status(200).json({ msg: 'Successfully updated recipe' });
@@ -70,7 +70,7 @@ recipeRouter.put('/change/:id', jwtAuth, jsonParser, (req, res) => {
 });
 
 recipeRouter.delete('/delete/:id', jwtAuth, jsonParser, (req, res) => {
-  Recipe.remove({ _id: req.params.id }, (err) => {
+  Recipe.remove({ _id: req.params.id, ownedBy: req.user.id }, (err) => {
     if (err) return handleDBError(err, res);
 
     res.status(200).json({ msg: 'Successfully deleted recipe' });

@@ -131,26 +131,36 @@ module.exports = function(app) {
         return unityTable;
       };
 
-      $scope.addMaterialField = function(mynewmat, stdnewmat) {
-        if (mynewmat && stdnewmat) {
-          return $scope.errors.push('Error: please select only one material to add.');
-        }
-        if (!mynewmat && !stdnewmat) {
+      $scope.addMyMaterialField = function(mynewmat) {
+        if (!mynewmat) {
           return $scope.errors.push('Error: please select a material to add.');
         }
-        var toAdd = JSON.parse(mynewmat) || JSON.parse(stdnewmat);
-        $scope.recipeMats.push(toAdd);
+
+        $scope.recipeMats.push(JSON.parse(mynewmat));
       };
 
-      $scope.addAdditiveField = function(mynewadd, stdnewadd) {
-        if (mynewadd && stdnewadd) {
-          return $scope.errors.push('Error: please select only one additive to add.');
-        }
-        if (!mynewadd && !stdnewadd) {
+      $scope.addStdMaterialField = function(stdnewmat) {
+        if (!stdnewmat) {
           return $scope.errors.push('Error: please select a material to add.');
         }
-        var theAdd = JSON.parse(mynewadd) || JSON.parse(stdnewadd);
-        $scope.addList.push(theAdd);
+
+        $scope.recipeMats.push(JSON.parse(stdnewmat));
+      };
+
+      $scope.addMyAdditiveField = function(mynewadd) {
+        if (!mynewadd) {
+          return $scope.errors.push('Error: please select an additive to add.');
+        }
+
+        $scope.addList.push(JSON.parse(mynewadd));
+      };
+
+      $scope.addStdAdditiveField = function(stdnewadd) {
+        if (!stdnewadd) {
+          return $scope.errors.push('Error: please select an additive to add.');
+        }
+
+        $scope.addList.push(JSON.parse(stdnewadd));
       };
 
       $scope.removeFromRecipe = function(theMat) {
@@ -169,7 +179,7 @@ module.exports = function(app) {
           recipe.date = new Date();
         }
         if (!recipe.notes) {
-          recipe.notes = '';
+          recipe.notes = 'None.';
         }
         if (!recipe.computed) {
           recipe.computed = $scope.computeUnity(recipe.materials);
@@ -184,7 +194,9 @@ module.exports = function(app) {
           $scope.serverMessages.push('Success. Recipe added to database.');
           $scope.recipeMats = null;
           $scope.recipeMats = [];
+          $scope.recipeForm = null;
           $scope.recipeForm = {};
+          $scope.addList = [];
           $scope.myRecipes.push(data);
         });
       };
