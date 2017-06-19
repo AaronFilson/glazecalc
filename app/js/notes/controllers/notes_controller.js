@@ -48,5 +48,16 @@ module.exports = function(app) {
           $scope.serverMessages.push('Success in adding the note to the server.');
         });
       };
+
+      $scope.getAll = function() {
+        notesService.getAll((err, data) => {
+          if (err) {
+            $scope.errors.push('There was an error getting the notes information.');
+            return console.log('Err: ', err);
+          }
+
+          $scope.notesData = data;
+        });
+      };
     }]);
 };

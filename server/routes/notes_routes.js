@@ -14,6 +14,7 @@ notesRouter.post('/create', jwtAuth, jsonParser, (req, res) => {
   var newestNote = new Note();
   try {
     newestNote.ownedBy = req.user.id;
+    newestNote.title = incNote.title;
     newestNote.content = incNote.content;
     newestNote.relatedCollection = incNote.relatedCollection;
     newestNote.relatedId = incNote.relatedId;

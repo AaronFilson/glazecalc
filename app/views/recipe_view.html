@@ -1,3 +1,7 @@
+<header data-ng-if="!email" class="header-text">
+  Oops! It seems you are not signed in. This will keep you from using the app. Go to
+  <a href="#/signin">signin</a> or make a new account here: <a href="#/signup">signup</a>.
+</header>
 <nav>
   <h3>You are on the <b>Recipe</b> page.</h3>
   Links to pages:
@@ -11,7 +15,7 @@
 </nav>
 
 <ol class="errors-section" data-ng-if="errors.length">
-  <li data-ng-repeat="error in errors">{{error}}
+  <li data-ng-repeat="error in errors track by $index">{{error}}
     <button type="button" name="clear" data-ng-click="dismissError(error)" class="btn btn-default">
       Dismiss
     </button>
@@ -19,7 +23,7 @@
 </ol>
 
 <ol class="server-msg" data-ng-if="serverMessages.length">
-  <li data-ng-repeat="msg in serverMessages">{{msg}}
+  <li data-ng-repeat="msg in serverMessages track by $index">{{msg}}
     <button type="button" name="clear" data-ng-click="dismissMessage(msg)" class="btn btn-default">
       Dismiss
     </button>
@@ -33,13 +37,14 @@
       <div class="col-md-6">
         <div class="form-group">
           <label for="recipe-name">Recipe title: </label>
-          <input type="text" name="recipe-title" data-ng-model="recipeForm.title">
+          <input id="recipe-name" type="text" name="recipe-title" data-ng-model="recipeForm.title">
         </div>
       </div>
       <div class="col-md-6">
         <div class="form-group">
           <label for="recipe-date">Date: </label>
-          <input type="date" name="recipe-date" data-ng-model="recipeForm.date">
+          <input id="recipe-date" type="date" name="recipe-date" placeholder="yyyy-MM-dd"
+           data-ng-model="recipeForm.date">
         </div>
       </div>
     </div>
@@ -47,7 +52,7 @@
       <div class="col-md-10">
         <div class="form-group">
           <label for="recipe-notes" class="boxlabel">Notes on the recipe: </label>
-          <textarea name="recipe-notes" rows="3" class="form-control" data-ng-model="recipeForm.notes"></textarea>
+          <textarea id="recipe-notes" name="recipe-notes" rows="3" class="form-control" data-ng-model="recipeForm.notes"></textarea>
         </div>
       </div>
     </div>
@@ -149,6 +154,7 @@
     </button>
   </form>
 </section>
+<br>
 
 <section class="tech-info" data-ng-if="recipeForm.computed.uList">
   <h4>Unity formula of the glaze recipe</h4>
@@ -210,24 +216,17 @@
         <li data-ng-repeat="add in addList">
           {{add.name}}
           <br>
-          Amount: <input type="text" name="amount" data-ng-model="add.amount">
-          <br>
-          <button type="button" data-ng-click="removeFromAdds(add)" class="btn btn-default btn-sm">
-            Remove from recipe
-          </button>
+          Amount: {{add.amount}}
+
         </li>
       </ol>
     </div>
   </div>
-
 </section>
 <br>
+
 <section data-ng-init="getMyRecipes()" class="tech-info">
   <h3>My saved recipes: </h3>
-
-  <button type="button" name="serverRecEdit" data-ng-click="editMyListToggle()" class="btn btn-default btn-sm">
-    Remove toggle button
-  </button>
   <ul data-ng-if="myRecipes.length">
     <li data-ng-repeat="rec in myRecipes">
       <b>{{rec.title}}</b>
@@ -291,7 +290,12 @@
                 {{singleAdd.name}} : {{singleAdd.amount}}
               </li>
             </ol>
-
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-10">
+            Ratio of Silica to Alumina : {{(rec.computed[0].uList.SiO2 / rec.computed[0].uList.Al2O3) | number:2}}
+            <br><span data-ng-if="rec.date">Date: {{rec.date | date:'fullDate'}}</span>
           </div>
         </div>
       </div>
@@ -303,4 +307,8 @@
       </p>
     </li>
   </ul>
+
+  <button type="button" name="serverRecEdit" data-ng-click="editMyListToggle()" class="btn btn-default btn-sm">
+    Remove toggle button
+  </button>
 </section>

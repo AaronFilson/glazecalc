@@ -194,7 +194,9 @@ module.exports = function(app) {
           $scope.serverMessages.push('Success. Recipe added to database.');
           $scope.recipeMats = null;
           $scope.recipeMats = [];
+          $scope.recipeForm = null;
           $scope.recipeForm = {};
+          $scope.addList = [];
           $scope.myRecipes.push(data);
         });
       };

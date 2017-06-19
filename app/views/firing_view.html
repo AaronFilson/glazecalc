@@ -1,3 +1,7 @@
+<header data-ng-if="!email" class="header-text">
+  Oops! It seems you are not signed in. This will keep you from using the app. Go to
+  <a href="#/signin">signin</a> or make a new account here: <a href="#/signup">signup</a>.
+</header>
 <nav>
   <h3>You are on the <b>Firing</b> page.</h3>
   Links to pages:
@@ -37,14 +41,15 @@
       </div>
       <div class="col-lg-4 col-md-6 col-sm-10">
         <div class="form-group">
-          <label for="firing-kiln">Kiln used for firing: </label>
+          <label for="firing-kiln">Kiln: </label>
           <input id="firing-kiln" type="text" name="firing-kiln" data-ng-model="firingForm.kiln">
         </div>
       </div>
       <div class="col-lg-4 col-md-6 col-sm-10">
         <div class="form-group">
           <label for="firing-date">Date of firing: </label>
-          <input id="firing-date" type="date" name="firing-date" data-ng-model="firingForm.date">
+          <input id="firing-date" type="date" placeholder="yyyy-MM-dd"
+          name="firing-date" data-ng-model="firingForm.date">
         </div>
       </div>
     </div>
@@ -90,7 +95,8 @@
         </button>
       </li>
     </ol>
-    Please note that adding fields after adding rows will cause missing boxes in the table. (Known issue)
+    Please note that adding fields after adding rows will cause missing boxes in the table.
+    (Known issue, best to reload the page to reset.)
   </p>
 
   <p>
@@ -128,30 +134,28 @@
 
 <section data-ng-if="myServerFirings.length" class="tech-info">
   <h3>My stored firings: </h3>
-  <p>
-    <button type="button" name="serverFiringEdit" data-ng-click="editMyListToggle()" class="btn btn-default">
-      Remove toggle button
-    </button>
-    <ul>
-      <li data-ng-repeat="fr in myServerFirings">
-        Title: {{fr.title}},
-        Using kiln: {{fr.kiln}},
-        Date: {{fr.date | date:'EEEE, MMMM yyyy'}}
-        <br>
-        <table class="table table-bordered">
-          <tr>
-            <th data-ng-repeat="heading in fr.fieldsIncluded">{{heading}}</th>
-          </tr>
-          <tr data-ng-repeat="row in fr.rows track by $index">
-            <td data-ng-repeat="cell in row track by $index">{{cell}}</td>
-          </tr>
-        </table>
-        <p data-ng-if="editToggle">
-          <button type="button" name="removeFiringButton" data-ng-click="removeMyFiring(fr)" class="btn btn-warning">
-            Remove
-          </button>
-        </p>
-      </li>
-    </ul>
-  </p>
+  <ul>
+    <li data-ng-repeat="fr in myServerFirings">
+      Title: {{fr.title}},
+      Using kiln: {{fr.kiln}},
+      Date: {{fr.date | date:'fullDate'}}
+      <br>
+      <table class="table table-bordered">
+        <tr>
+          <th data-ng-repeat="heading in fr.fieldsIncluded">{{heading}}</th>
+        </tr>
+        <tr data-ng-repeat="row in fr.rows track by $index">
+          <td data-ng-repeat="cell in row track by $index">{{cell}}</td>
+        </tr>
+      </table>
+      <p data-ng-if="editToggle">
+        <button type="button" name="removeFiringButton" data-ng-click="removeMyFiring(fr)" class="btn btn-warning">
+          Remove
+        </button>
+      </p>
+    </li>
+  </ul>
+  <button type="button" name="serverFiringEdit" data-ng-click="editMyListToggle()" class="btn btn-default">
+    Remove toggle button
+  </button>
 </section>

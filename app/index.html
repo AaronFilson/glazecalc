@@ -10,7 +10,8 @@
 </head>
 <body data-ng-app="glazeCalcApp" class="container-fluid">
   <div data-ng-controller="authController" data-ng-init="updateEmail()">
-    <header data-ng-if="email" class="header-text">Welcome to the Glazecalc App! {{'Hello ' + email}} <a href data-ng-click="logout()">logout</a>
+    <header data-ng-if="email" class="header-text">
+      Welcome to the Glazecalc App! {{'Hello ' + email}} <a href data-ng-click="logout()">logout</a>
        or Go <a href="#/home">Home</a>
     </header>
     <main data-ng-view>

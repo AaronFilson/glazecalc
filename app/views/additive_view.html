@@ -1,3 +1,7 @@
+<header data-ng-if="!email" class="header-text">
+  Oops! It seems you are not signed in. This will keep you from using the app. Go to
+  <a href="#/signin">signin</a> or make a new account here: <a href="#/signup">signup</a>.
+</header>
 <nav>
   <h3>You are on the <b>Additive</b> page.</h3>
   Links to pages:
@@ -108,36 +112,33 @@
 <br>
 
 <section data-ng-if="myServerAdds.length" class="tech-info">
-  <h4>My server materials: </h4>
-  <p>
-    <button type="button" name="serverAddEdit" data-ng-click="editMyListToggle()" class="btn btn-default">
-      Remove toggle
-    </button>
-    </ul>
-    <table class="table table-bordered">
-      <tr>
-        <th>Name</th> <th>Notes</th> <th>Fields</th>
-      </tr>
-      <tr data-ng-repeat="add in myServerAdds">
-        <td>
-          {{add.name}}
-          <div data-ng-if="editToggle">
-            <button type="button" name="removeMat" data-ng-click="removeMyMat(add)" class="btn btn-warning">
-              Remove from server
-            </button>
-          </div>
-        </td>
-        <td>{{add.notes[0]}}</td>
-        <td><span data-ng-repeat="element in add.fields">
-          {{element.name}} : {{element.amount}}<span data-ng-if="$index < add.fields.length - 1">; </span>
-        </span></td>
-      </tr>
-    </table>
-  </p>
+  <h4>My server additives / colorants: </h4>
+  <table class="table table-bordered">
+    <tr>
+      <th>Name</th> <th>Notes</th> <th>Fields</th>
+    </tr>
+    <tr data-ng-repeat="add in myServerAdds">
+      <td>
+        {{add.name}}
+        <div data-ng-if="editToggle">
+          <button type="button" name="removeAdd" data-ng-click="removeMyAdd(add)" class="btn btn-warning">
+            Remove from server
+          </button>
+        </div>
+      </td>
+      <td>{{add.notes[0]}}</td>
+      <td><span data-ng-repeat="element in add.fields">
+        {{element.name}} : {{element.amount}}<span data-ng-if="$index < add.fields.length - 1">; </span>
+      </span></td>
+    </tr>
+  </table>
+  <button type="button" name="serverAddEdit" data-ng-click="editMyListToggle()" class="btn btn-default">
+    Remove toggle
+  </button>
 </section>
 <br>
 
-<section data-ng-init="getStandard()">
+<section data-ng-init="getStandard()" class="tech-info">
   <h4>The standard server additives: </h4>
   <table class="table table-bordered">
     <tr>

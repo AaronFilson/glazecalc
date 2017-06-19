@@ -1,3 +1,7 @@
+<header data-ng-if="!email" class="header-text">
+  Oops! It seems you are not signed in. This will keep you from using the app. Go to
+  <a href="#/signin">signin</a> or make a new account here: <a href="#/signup">signup</a>.
+</header>
 <nav>
   <h3>You are on the <b>Material</b> page.</h3>
   Links to pages:
@@ -30,7 +34,7 @@
   <h3>Input information on the new material</h3>
   <p>
     Symbols to copy into your material formula:
-    ₁ ₂ ₃ ₄ ₅ ₆ ₇ ₈ ₉ ₀ •
+    <span class="large">₁ ₂ ₃ ₄ ₅ ₆ ₇ ₈ ₉ ₀ •</span>
   </p>
   <form>
     <div class="row">
@@ -122,31 +126,29 @@
 
 <section data-ng-if="myServerMats.length" class="tech-info">
   <h4>My server materials: </h4>
-  <p>
-    <button type="button" name="serverMatEdit" data-ng-click="editMyListToggle()" class="btn btn-default">
-      Remove toggle
-    </button>
-    <table class="table table-bordered">
-      <tr>
-        <th>Name</th> <th>Equivalent</th> <th>Notes</th> <th>Fields</th>
-      </tr>
-      <tr data-ng-repeat="mat in myServerMats">
-        <td>
-          <b>{{mat.name}}</b>
-          <div data-ng-if="editToggle">:
-            <button type="button" name="removeMat" data-ng-click="removeMyMat(mat)" class="btn btn-warning">
-              Remove from server
-            </button>
-          </div>
-        </td>
-        <td>{{mat.equivalent}}</td>
-        <td>{{mat.notes[0]}}</td>
-        <td><span data-ng-repeat="oxide in mat.fields">
-          {{oxide.name}} : {{oxide.amount}}<span data-ng-if="$index < mat.fields.length - 1">; </span>
-        </span></td>
-      </tr>
-    </table>
-  </p>
+  <table class="table table-bordered">
+    <tr>
+      <th>Name</th> <th>Equivalent</th> <th>Notes</th> <th>Fields</th>
+    </tr>
+    <tr data-ng-repeat="mat in myServerMats | orderBy: 'mat.name'">
+      <td>
+        <b>{{mat.name}}</b>
+        <div data-ng-if="editToggle">
+          <button type="button" name="removeMat" data-ng-click="removeMyMat(mat)" class="btn btn-warning">
+            Remove from server
+          </button>
+        </div>
+      </td>
+      <td>{{mat.equivalent}}</td>
+      <td>{{mat.notes[0]}}</td>
+      <td><span data-ng-repeat="oxide in mat.fields">
+        {{oxide.name}} : {{oxide.amount}}<span data-ng-if="$index < mat.fields.length - 1">; </span>
+      </span></td>
+    </tr>
+  </table>
+  <button type="button" name="serverMatEdit" data-ng-click="editMyListToggle()" class="btn btn-default">
+    Remove toggle
+  </button>
 </section>
 <br>
 
@@ -154,7 +156,7 @@
   <h4>The standard server materials: </h4>
   <table class="table table-bordered">
     <tr>
-      <th>Name</th> <th>Equivalent</th> <th>Notes</th> <th>Fields</th>
+      <th>Name</th> <th>Equivalent</th> <th>Notes</th> <th>Fields</th> <th>Raw Formula</th>
     </tr>
     <tr data-ng-repeat="stdMat in standardMats">
       <td>{{stdMat.name}}</td>
@@ -163,6 +165,7 @@
       <td><span data-ng-repeat="oxide in stdMat.fields">
         {{oxide.name}} : {{oxide.amount}}<span data-ng-if="$index < stdMat.fields.length - 1">; </span>
       </span></td>
+      <td>{{stdMat.rawformula}}</td>
     </tr>
   </table>
 </section>

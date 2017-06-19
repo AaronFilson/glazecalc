@@ -1,3 +1,7 @@
+<header data-ng-if="!email" class="header-text">
+  Oops! It seems you are not signed in. This will keep you from using the app. Go to
+  <a href="#/signin">signin</a> or make a new account here: <a href="#/signup">signup</a>.
+</header>
 <nav>
   <h3>You are on the <b>Notes</b> page.</h3>
   Links to pages:
@@ -58,7 +62,7 @@
   <h3>My saved notes: </h3>
   <ul>
     <li data-ng-repeat="note in notesData">
-      <h6>{{note.title}}</h6>
+      <b>{{note.title}}</b>
       <p>{{note.content}}</p>
       <div data-ng-if="editToggle">
         <button type="button" name="remove" class="btn btn-default" data-ng-click="removeMyNote(note)">
