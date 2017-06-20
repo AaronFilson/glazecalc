@@ -1,4 +1,4 @@
-var host = 'http://' + 'ec2-35-163-34-249.us-west-2.compute.amazonaws.com';
+var host = 'http://glazecalcapp.com';
 
 var handleSuccess = function(callback) {
   return function(res) {

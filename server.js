@@ -1,6 +1,5 @@
 var PORT = process.env.PORT || 4000;
-// var clientPort = process.env.CLIENTPORT || 4001;
-var hostURL = process.env.HOSTURL || 'http://ec2-35-163-34-249.us-west-2.compute.amazonaws.com';
+var hostURL = process.env.HOSTURL || 'http://glazecalcapp.com';
 const express = require('express');
 const app = module.exports = exports = express();
 const mongoose = require('mongoose');

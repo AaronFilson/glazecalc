@@ -2,7 +2,7 @@ module.exports = function(app) {
   app.factory('userAuth', ['$http', '$window', function($http, $window) {
     var token;
     var user;
-    var host = 'http://ec2-35-163-34-249.us-west-2.compute.amazonaws.com';
+    var host = 'http://glazecalcapp.com';
     var auth = {
       createUser: function(user, cb) {
         cb = cb || function() {};
