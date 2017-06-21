@@ -148,13 +148,18 @@
           <td data-ng-repeat="cell in row track by $index">{{cell}}</td>
         </tr>
       </table>
+      Notes: {{fr.notes[0]}}
       <p data-ng-if="editToggle">
+        <br>
         <button type="button" name="removeFiringButton" data-ng-click="removeMyFiring(fr)" class="btn btn-warning">
           Remove
         </button>
+        <br>
       </p>
     </li>
   </ul>
+  <br>
+
   <button type="button" name="serverFiringEdit" data-ng-click="editMyListToggle()" class="btn btn-default">
     Remove toggle button
   </button>

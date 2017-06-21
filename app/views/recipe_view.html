@@ -196,7 +196,8 @@
           SiO₂ : {{recipeForm.computed.uList.SiO2 | number:3}}
       </li>
     </ul>
-    <ul class="col-md-3">
+    <ul class="col-md-3" data-ng-if="recipeForm.computed.uList.TiO2 ||
+    recipeForm.computed.uList.P2O5 || recipeForm.computed.uList.Fe2O3">
       Wildcards
       <li data-ng-if="recipeForm.computed.uList.TiO2 > 0">
         TiO₂ : {{recipeForm.computed.uList.TiO2 | number:3}}</li>
@@ -239,7 +240,36 @@
         Hide
       </button>
       <div data-ng-if="rec[$index].expView">
-        <div class="row" >
+        <div class="row">
+          <div class="col-md-12">
+            <em>Materials</em>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <ol>
+              <li data-ng-repeat="part in rec.materials">
+                {{part.name}} : {{part.amount}}
+              </li>
+            </ol>
+          </div>
+        </div>
+        <div class="row" data-ng-if="rec.additives.length">
+          <div class="col-lg-12">
+            <em>Additives:</em>
+            <ol>
+              <li data-ng-repeat="singleAdd in rec.additives" class="col-lg-3 col-xs-4">
+                {{singleAdd.name}} : {{singleAdd.amount}}
+              </li>
+            </ol>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <em>Unity Formula</em>
+          </div>
+        </div>
+        <div class="row">
           <div class="col-lg-4 col-md-4">
             <div data-ng-if="rec.computed[0].uList.Li2O > 0">
               Li₂O : {{rec.computed[0].uList.Li2O | number:3}}</div>
@@ -283,30 +313,28 @@
             P₂O₅ : {{rec.computed[0].uList.P2O5 | number:3}}</div>
         </div>
         <div class="row">
-          <div class="col-lg-12">
-            Additives:
-            <ol>
-              <li data-ng-repeat="singleAdd in rec.additives" class="col-lg-2 col-xs-4">
-                {{singleAdd.name}} : {{singleAdd.amount}}
-              </li>
-            </ol>
-          </div>
-        </div>
-        <div class="row">
           <div class="col-sm-10">
             Ratio of Silica to Alumina : {{(rec.computed[0].uList.SiO2 / rec.computed[0].uList.Al2O3) | number:2}}
             <br><span data-ng-if="rec.date">Date: {{rec.date | date:'fullDate'}}</span>
           </div>
         </div>
+        <div class="row">
+          <div class="col-sm-10">
+            Notes:
+            {{rec.notes[0]}}
+          </div>
+        </div>
       </div>
-
       <p data-ng-if="editToggle">
+        <br>
         <button type="button" name="removeMat" data-ng-click="removeMyRec(rec)" class="btn btn-warning">
           Remove from the server
         </button>
+        <br>
       </p>
     </li>
   </ul>
+  <br>
 
   <button type="button" name="serverRecEdit" data-ng-click="editMyListToggle()" class="btn btn-default btn-sm">
     Remove toggle button
