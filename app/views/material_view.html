@@ -128,7 +128,8 @@
   <h4>My server materials: </h4>
   <table class="table table-bordered">
     <tr>
-      <th>Name</th> <th>Equivalent</th> <th>Notes</th> <th>Fields</th>
+      <th>Name</th> <th>Equivalent Weight</th> <th>Fired Weight</th> <th>Notes</th>
+       <th>Elements</th> <th>Raw Formula</th>
     </tr>
     <tr data-ng-repeat="mat in myServerMats | orderBy: 'mat.name'">
       <td>
@@ -140,10 +141,12 @@
         </div>
       </td>
       <td>{{mat.equivalent}}</td>
+      <td>{{mat.formulaweight}}</td>
       <td>{{mat.notes[0]}}</td>
       <td><span data-ng-repeat="oxide in mat.fields">
         {{oxide.name}} : {{oxide.amount}}<span data-ng-if="$index < mat.fields.length - 1">; </span>
       </span></td>
+      <td>{{stdMat.rawformula}}</td>
     </tr>
   </table>
   <button type="button" name="serverMatEdit" data-ng-click="editMyListToggle()" class="btn btn-default">
@@ -156,11 +159,13 @@
   <h4>The standard server materials: </h4>
   <table class="table table-bordered">
     <tr>
-      <th>Name</th> <th>Equivalent</th> <th>Notes</th> <th>Fields</th> <th>Raw Formula</th>
+      <th>Name</th> <th>Equivalent Weight</th> <th>Fired Weight</th> <th>Notes</th>
+       <th>Elements</th> <th>Raw Formula</th>
     </tr>
     <tr data-ng-repeat="stdMat in standardMats">
       <td>{{stdMat.name}}</td>
       <td>{{stdMat.equivalent}}</td>
+      <td>{{stdMat.formulaweight}}</td>
       <td>{{stdMat.notes[0]}}</td>
       <td><span data-ng-repeat="oxide in stdMat.fields">
         {{oxide.name}} : {{oxide.amount}}<span data-ng-if="$index < stdMat.fields.length - 1">; </span>
