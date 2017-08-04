@@ -48,6 +48,7 @@
     "gulp-util": "^3.0.7",
     "html-loader": "latest",
     "jsonwebtoken": "5.7.0",
+    "moment": "^2.18.1",
     "mongoose": "4.8",
     "webpack": "latest",
     "webpack-stream": "latest"

@@ -3,7 +3,8 @@ require(__dirname + '/../../server.js');
 const User = require(__dirname + '/../models/user');
 var PORT = process.env.PORT || 4000;
 var baseUri = 'localhost:' + PORT;
-var chai = require('chai');
+const chai = require('chai');
+const request = chai.request;
 var chaiHTTP = require('chai-http');
 chai.use(chaiHTTP);
 var mongoose = require('mongoose');
@@ -19,7 +20,7 @@ describe('authorization route', () => {
     });
   });
   it('should create a new user with a POST request', (done) => {
-    chai.request(baseUri)
+    request(baseUri)
       .post('/signup')
       .send( { 'email': 'test@tester.com', 'password': 'password' } )
       .end((err, res) => {
@@ -46,7 +47,7 @@ describe('authorization route', () => {
       });
     });
     it('should check if the user has valid credentials', (done) => {
-      chai.request(baseUri)
+      request(baseUri)
         .get('/signin')
         .auth('test@tester.com', 'password')
         .end((err, res) => {
@@ -58,7 +59,7 @@ describe('authorization route', () => {
         });
     });
     it('should not allow user to enter a bad password', (done) => {
-      chai.request(baseUri)
+      request(baseUri)
         .get('/signin')
         .auth('test@tester.com', 'NOTpassword')
         .end((err, res) => {
@@ -66,6 +67,55 @@ describe('authorization route', () => {
           expect(res).to.have.status(401);
           expect(res.body).to.not.have.property('token');
           expect(res.body).to.not.have.property('email');
+          done();
+        });
+    });
+  });
+
+  describe('Send a bad post request intentially', () => {
+    var notuser = null;
+    it('and it should handle create error without crashing', (done) => {
+      request(baseUri)
+        .post('/signup')
+        .send( notuser )
+        .end((err) => {
+          expect(err).to.not.eql(null);
+          expect(err.status).to.eql(400);
+          expect(err.response.body.msg).to.eql('Please enter an email');
+          done();
+        });
+    });
+
+    it('and it should handle error without crashing a second time', (done) => {
+      request(baseUri)
+        .post('/signup')
+        .send( { trashdata: 'not anything good' } )
+        .end((err) => {
+          expect(err).to.not.eql(null);
+          expect(err.response.body.msg).to.eql('Please enter an email');
+          done();
+        });
+    });
+  });
+
+  describe('Send a bad get request intentially', () => {
+    it('and it should handle create error without crashing', (done) => {
+      request(baseUri)
+        .get('/signin')
+        .end((err) => {
+          expect(err).to.not.eql(null);
+          expect(err.status).to.eql(401);
+          expect(err.response.body.msg).to.eql('could not authenticate user');
+          done();
+        });
+    });
+
+    it('and it should handle error without crashing a second time', (done) => {
+      request(baseUri)
+        .get('/signin')
+        .end((err) => {
+          expect(err).to.not.eql(null);
+          expect(err.response.body.msg).to.eql('could not authenticate user');
           done();
         });
     });

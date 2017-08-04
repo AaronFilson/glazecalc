@@ -138,4 +138,32 @@ describe('materials API', () => {
         });
     });
   });
+
+  describe('Send a bad post request intentially', () => {
+    var mattest = null;
+    it('and it should handle create error without crashing', (done) => {
+      request(baseUri)
+        .post('/create')
+        .set('token', userToken)
+        .send( mattest )
+        .end((err) => {
+          expect(err).to.not.eql(null);
+          expect(err.status).to.eql(400);
+          expect(err.response.body.msg).to.eql('Missing required information');
+          done();
+        });
+    });
+
+    it('and it should handle error without crashing a second time', (done) => {
+      request(baseUri)
+        .post('/create')
+        .set('token', userToken)
+        .send( { trashdata: 'not anything good' } )
+        .end((err) => {
+          expect(err).to.not.eql(null);
+          expect(err.response.body.msg).to.eql('Missing required information');
+          done();
+        });
+    });
+  });
 });
