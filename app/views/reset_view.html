@@ -1,0 +1,49 @@
+<section data-ng-if="errors.length" class="errors-section">
+    <h2>Errors: </h2>
+    <ul>
+      <li data-ng-repeat="error in errors track by $index">
+         {{error}}
+         <button data-ng-click="dismissError(error)" alt="dismiss" class="btn btn-default">
+           X</button></li>
+    </ul>
+</section>
+<section class="auth-text" data-ng-init="checktoken()">
+  <h1>Glaze Calc App</h1>
+
+  <section class="help-text">
+    <p>
+      This page is to reset the password for your existing account. If you do not have an account, please go to the
+      Account creation page <a href="#/signup" class="btn btn-default" role="button">Create Account</a> .
+    </p>
+  </section>
+  <form name="resetForm" data-ng-submit="submit(reset)" class="form-inline"
+  data-ng-if="!ready">
+    Please enter the email account associated with your GCA account:
+    <div class="form-group">
+      <label for="email">Email: </label>
+      <input type="text" required name="email" data-ng-model="reset.email">
+
+      <label for="emailconf">Email Confirmed: </label>
+      <input type="text" required name="emailconf" data-ng-model="reset.emailconf">
+      (Entering your email to confirm helps prevent typos!)
+    </div>
+    <button type="submit" class="btn btn-success" data-ng-disabled="(reset.email !== reset.emailconf) || resetForm.$invalid">
+      Send Reset Email
+    </button>
+  </form>
+  <form name="changeForm" data-ng-submit="change(pswd)" class="form-inline"
+  data-ng-if="ready">
+    Please enter the new password:
+    <div class="form-group">
+      <label for="ps1">Password: </label>
+      <input type="password" required name="ps1" data-ng-model="newpass.ps1">
+
+      <label for="ps2">Password Confirmed: </label>
+      <input type="password" required name="ps2" data-ng-model="newpass.ps2">
+
+    </div>
+    <button type="submit" class="btn btn-success" data-ng-disabled="(newpass.ps1 !== newpass.ps2) || changeForm.$invalid">
+      Change Password
+    </button>
+  </form>
+</section>
