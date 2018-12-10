@@ -31,10 +31,13 @@
       Send Reset Email
     </button>
   </form>
-  <form name="changeForm" data-ng-submit="change(pswd)" class="form-inline"
+  <form name="changeForm" data-ng-submit="change(newpass.ps1, newpass.emailpass)" class="form-inline"
   data-ng-if="ready">
-    Please enter the new password:
+
     <div class="form-group">
+      <label for="emailpass">Email: </label>
+      <input type="text" required name="emailpass" data-ng-model="newpass.emailpass">
+
       <label for="ps1">Password: </label>
       <input type="password" required name="ps1" data-ng-model="newpass.ps1">
 
@@ -46,4 +49,9 @@
       Change Password
     </button>
   </form>
+  <p data-ng-if="sent">
+    An email has been sent to your email address with a link to reset your password.
+    If you don't see it, please check for it in junk or spam folders before repeating the process.
+    Otherwise, doublecheck the email you used to set up the GCA account.
+  </p>
 </section>

@@ -3,11 +3,10 @@ module.exports = function(app) {
     var token;
     var user;
     var rs = {
-      submit: function(email, token, cb) {
+      submit: function(email, cb) {
         cb = cb || function() {};
-        $http.post('http://localhost:4000/reset', email, token)
+        $http.post('http://localhost:4000/reset', email)
           .then(function(res) {
-            token = $window.localStorage.token = res.data.token;
             cb(null);
           }, function(res) {
             console.log('Reset submit fail promise, res status : ' + res.status);
@@ -42,18 +41,19 @@ module.exports = function(app) {
           });
 
       },
-      getEmail: function(cb) {
+      change: function(email, pass, token, cb) {
         cb = cb || function() {};
         $http({
-          method: 'GET',
-          url: 'http://localhost:4000/verify',
+          method: 'UPDATE',
+          url: 'http://localhost:4000/reset',
           headers: {
-            token: rs.getToken()
+            email: email,
+            pass: pass,
+            token: token
           }
         })
-        .then(function(res) {
-          user = res.data.email;
-          cb(res);
+        .then(function() {
+          cb(null);
         }, function(res) {
           cb(res);
         });

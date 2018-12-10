@@ -1,6 +1,6 @@
 {
   "name": "glazecalc",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Glaze calculation software to assist potters and ceramicists.",
   "main": "index.js",
   "scripts": {
@@ -14,6 +14,7 @@
   },
   "keywords": [
     "glaze",
+    "glazes",
     "glazecalc",
     "potter",
     "potters",
@@ -21,7 +22,10 @@
     "ceramics",
     "firing",
     "utility",
-    "clay"
+    "clay",
+    "kiln",
+    "chart",
+    "recipes"
   ],
   "author": "Aaron Filson",
   "license": "MIT",
