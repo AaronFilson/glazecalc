@@ -3,40 +3,45 @@ const webpack = require('webpack-stream');
 require('gulp-babel');
 require('babel-loader');
 require('html-loader');
-const sass = require('gulp-sass');
+const sass = require('gulp-sass')(require('sass'));
 const maps = require('gulp-sourcemaps');
-const minifyCss = require('gulp-minify-css');
+const cleanCss = require('gulp-clean-css');
 
-gulp.task('html:dev', () => {
+function htmldev(cb) {
   gulp.src(__dirname + '/app/**/*.html')
     .pipe(gulp.dest(__dirname + '/build'));
-});
+  cb();
+}
 
-gulp.task('css:dev', () => {
+function cssdev(cb) {
   gulp.src(__dirname + '/app/**/*.css')
     .pipe(gulp.dest(__dirname + '/build'));
-});
+  cb();
+}
 
-gulp.task('sass:dev', () => {
+function sassdev(cb) {
   gulp.src(__dirname + '/app/**/*.scss')
     .pipe(maps.init())
     .pipe(sass().on('error', sass.logError))
-    .pipe(minifyCss())
+    .pipe(cleanCss())
     .pipe(maps.write('./'))
     .pipe(gulp.dest(__dirname + '/build'));
-});
+  cb();
+}
 
-gulp.task('images:dev', () => {
+function imagesdev(cb) {
   gulp.src(__dirname + '/app/images/**/*')
     .pipe(gulp.dest(__dirname + '/build/images'));
-});
+  cb();
+}
 
-gulp.task('favicon:dev', () => {
+function favicondev(cb) {
   gulp.src(__dirname + '/favicon.ico')
     .pipe(gulp.dest(__dirname + '/build/'));
-});
+  cb();
+}
 
-gulp.task('webpack:dev', () => {
+function webpackdev(cb) {
   gulp.src('./app/js/client.js')
     .pipe(webpack({
       // module: {
@@ -49,12 +54,14 @@ gulp.task('webpack:dev', () => {
       // },
       output: {
         filename: 'bundle.js'
-      }
+      },
+      mode: "production"
     }))
     .pipe(gulp.dest(__dirname + '/build'));
-});
+  cb();
+}
 
-gulp.task('webpack:test', () => {
+function webpacktest(cb) {
   gulp.src(__dirname + '/app/test/test_entry.js')
     .pipe(webpack({
       module: {
@@ -70,8 +77,9 @@ gulp.task('webpack:test', () => {
       }
     }))
     .pipe(gulp.dest(__dirname + '/app/test/bndl/'));
-});
+  cb();
+}
 
-gulp.task('build:dev', ['webpack:dev', 'html:dev', 'css:dev',
-  'sass:dev', 'images:dev', 'favicon:dev']);
-gulp.task('default', ['build:dev', 'webpack:test']);
+exports.builddev = gulp.series(webpackdev, htmldev, cssdev,
+  sassdev, imagesdev, favicondev);
+exports.default = gulp.series(exports.builddev);
