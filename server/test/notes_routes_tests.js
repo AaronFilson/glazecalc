@@ -1,4 +1,4 @@
-process.env.MONGOLAB_URI = 'mongodb://localhost/n_test';
+process.env.MONGOLAB_URI = 'mongodb://127.0.0.1/n_test';
 require(__dirname + '/../../server');
 const chai = require('chai');
 const chaiHttp = require('chai-http');
@@ -7,7 +7,7 @@ const expect = chai.expect;
 const request = chai.request;
 const mongoose = require('mongoose');
 var PORT = process.env.PORT || 4000;
-var baseUri = 'localhost:' + PORT + '/notes';
+var baseUri = '127.0.0.1:' + PORT + '/notes';
 const User = require(__dirname + '/../models/user');
 var userToken;
 var testUser;
@@ -24,15 +24,15 @@ describe('Notes API', () => {
     testUser = new User();
     testUser.email = 'test9@tester.com';
     testUser.hashPassword('password');
-    testUser.save( (err, data) => {
-      if (err) throw err;
+    testUser.save().then( (data) => {
+      if (!data) throw "err";
       testUser.token = userToken = data.generateToken();
       done();
     });
   });
 
   after((done) => {
-    mongoose.connection.db.dropDatabase(() => {
+    mongoose.connection.dropDatabase().then(() => {
       done();
     });
   });
@@ -132,17 +132,16 @@ describe('Notes API', () => {
     });
   });
 
-  describe('Send a bad post request intentially', () => {
+  describe('Send a bad post request intentionally', () => {
     var noteTestBad = null;
     it('and it should handle create error without crashing', (done) => {
       request(baseUri)
         .post('/create')
         .set('token', userToken)
         .send( noteTestBad )
-        .end((err) => {
-          expect(err).to.not.eql(null);
-          expect(err.status).to.eql(400);
-          expect(err.response.body.msg).to.eql('Missing required information');
+        .end((err, msg) => {
+          expect(msg.status).to.eql(400);
+          expect(msg.body.msg).to.eql('Missing required information');
           done();
         });
     });
@@ -152,9 +151,8 @@ describe('Notes API', () => {
         .post('/create')
         .set('token', userToken)
         .send( { trashdata: 'not anything good' } )
-        .end((err) => {
-          expect(err).to.not.eql(null);
-          expect(err.response.body.msg).to.eql('Missing required information');
+        .end((err, msg) => {
+          expect(msg.body.msg).to.eql('Missing required information');
           done();
         });
     });

@@ -9,17 +9,15 @@ module.exports = exports = (req, res, next) => {
     decoded =
       jwt.verify(req.headers.token, process.env.APP_SECRET || 'glazedefault');
   } catch (e) {
-    return res.status(401).json({ msg: 'could not authenticate user' });
+    return res.status(444).json({ msg: 'could not authenticate user' });
   }
+  
+  if (!decoded) return res.status(499).json({ msg: 'could not authenticate user' });
 
-  if (!decoded) return res.status(401).json({ msg: 'could not authenticate user' });
+  if (!User.connection) {}
+  const u = User.findById(decoded.id).then( (user) => {
 
-  User.findOne({ _id: decoded.id }, (err, user) => {
-    if (err) {
-      console.log('find error in jwt error' + err);
-      return res.status(500).json({ msg: 'DB error' });
-    }
-    if (!user) return res.status(401).json({ msg: 'Error finding user' });
+    if (!user) return res.status(411).json({ msg: 'Error finding user' });
     delete user.password;
     req.user = user;
     next();

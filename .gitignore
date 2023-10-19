@@ -1,4 +1,5 @@
 db/**
+db-old
 build/**/**
 node_modules
 node_modules/**
@@ -6,6 +7,7 @@ node_modules/**
 app/test/bndl/test_bundle.js
 app/test/bndl/**
 .node-version
+.idea
 
 # Compiled source #
 ###################

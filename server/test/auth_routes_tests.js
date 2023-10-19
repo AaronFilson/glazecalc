@@ -1,12 +1,12 @@
-process.env.MONGOLAB_URI = 'mongodb://localhost/a_r_tests';
+process.env.MONGOLAB_URI = 'mongodb://127.0.0.1:27017/a_r_tests';
 require(__dirname + '/../../server.js');
 const User = require(__dirname + '/../models/user');
 var PORT = process.env.PORT || 4000;
 var baseUri = 'localhost:' + PORT;
 const chai = require('chai');
-const request = chai.request;
 var chaiHTTP = require('chai-http');
 chai.use(chaiHTTP);
+const request = chai.request;
 var mongoose = require('mongoose');
 var expect = chai.expect;
 
@@ -15,7 +15,7 @@ var userToken;
 
 describe('authorization route', () => {
   after((done) => {
-    mongoose.connection.db.dropDatabase(() => {
+    mongoose.connection.dropDatabase().then(() => {
       done();
     });
   });
@@ -36,11 +36,10 @@ describe('authorization route', () => {
       var newUser = new User();
       newUser.email = 'test@tester.com';
       newUser.hashPassword('password');
-      newUser.save((err, data) => {
-        if (err) throw err;
+      newUser.save().then((data) => {
+        if (!data) throw 'no data';
         userToken = data.generateToken();
         userId = data._id;
-        expect(err).to.eql(null);
         expect(userToken).to.not.eql(null);
         expect(userId).to.not.eql(null);
         done();
@@ -63,7 +62,6 @@ describe('authorization route', () => {
         .get('/signin')
         .auth('test@tester.com', 'NOTpassword')
         .end((err, res) => {
-          expect(err).to.not.eql(null);
           expect(res).to.have.status(401);
           expect(res.body).to.not.have.property('token');
           expect(res.body).to.not.have.property('email');
@@ -72,16 +70,15 @@ describe('authorization route', () => {
     });
   });
 
-  describe('Send a bad post request intentially', () => {
+  describe('Send a bad post request intentionally', () => {
     var notuser = null;
     it('and it should handle create error without crashing', (done) => {
       request(baseUri)
         .post('/signup')
         .send( notuser )
-        .end((err) => {
-          expect(err).to.not.eql(null);
-          expect(err.status).to.eql(400);
-          expect(err.response.body.msg).to.eql('Please enter an email');
+        .end((err, msg) => {
+          expect(msg.status).to.eql(400);
+          expect(msg.body.msg).to.eql('Please enter an email');
           done();
         });
     });
@@ -90,22 +87,20 @@ describe('authorization route', () => {
       request(baseUri)
         .post('/signup')
         .send( { trashdata: 'not anything good' } )
-        .end((err) => {
-          expect(err).to.not.eql(null);
-          expect(err.response.body.msg).to.eql('Please enter an email');
+        .end((err, msg) => {
+          expect(msg.body.msg).to.eql('Please enter an email');
           done();
         });
     });
   });
 
-  describe('Send a bad get request intentially', () => {
+  describe('Send a bad get request intentionally', () => {
     it('and it should handle create error without crashing', (done) => {
       request(baseUri)
         .get('/signin')
-        .end((err) => {
-          expect(err).to.not.eql(null);
-          expect(err.status).to.eql(401);
-          expect(err.response.body.msg).to.eql('could not authenticate user');
+        .end((err, msg) => {
+          expect(msg.status).to.eql(401);
+          expect(msg.body.msg).to.eql('could not authenticate user');
           done();
         });
     });
@@ -113,9 +108,8 @@ describe('authorization route', () => {
     it('and it should handle error without crashing a second time', (done) => {
       request(baseUri)
         .get('/signin')
-        .end((err) => {
-          expect(err).to.not.eql(null);
-          expect(err.response.body.msg).to.eql('could not authenticate user');
+        .end((err, msg) => {
+          expect(msg.body.msg).to.eql('could not authenticate user');
           done();
         });
     });

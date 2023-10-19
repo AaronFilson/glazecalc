@@ -12,56 +12,42 @@ trashRouter.post('/create', jwtAuth, jsonParser, (req, res) => {
     return res.status(400).json( { msg: 'Missing required information' } );
   }
   var newestTrash = new Trash();
-  try {
-    newestTrash.ownedBy = req.user.id;
-    newestTrash.content = incTrash.content;
-    newestTrash.date = incTrash.date;
-    newestTrash.fromCollection = incTrash.fromCollection;
-  } catch (e) {
-    console.log('error in setting trash properties : ', e);
-    return res.status(500).json( { msg: 'Error in creating the new trash.' } );
-  }
+  newestTrash.ownedBy = req.user.id;
+  newestTrash.content = incTrash.content;
+  newestTrash.date = incTrash.date;
+  newestTrash.fromCollection = incTrash.fromCollection;
 
-  newestTrash.save((err, data) => {
-    if (err) handleDBError(err, res);
-
+  newestTrash.save().then((data) => {
+    if (!data) return handleDBError(req.user.id, res);
     res.status(200).json(data);
   });
 });
 
 trashRouter.get('/getLatest', jwtAuth, jsonParser, (req, res) => {
-
-  Trash.findOne({ ownedBy: req.user.id }, (err, data) => {
-    if (err) {
-      console.log('error: ', err);
-      return handleDBError(err, res);
-    }
-
+  Trash.findOne({ ownedBy: req.user.id }).then((data) => {
+    if (!data) { return handleDBError(req.user.id, res); }
     res.status(200).json(data);
   });
 });
 
 trashRouter.get('/getAll', jwtAuth, jsonParser, (req, res) => {
-  Trash.find({ ownedBy: req.user.id }, (err, data) => {
-    if (err) return handleDBError(err, res);
-
+  Trash.find({ ownedBy: req.user.id }).then( (data) => {
+    if (!data) return handleDBError(req.user.id, res);
     res.status(200).json(data);
   });
 });
 
 trashRouter.put('/change/:id', jwtAuth, jsonParser, (req, res) => {
   var trashData = req.body.trash;
-  Trash.update({ _id: req.params.id, ownedBy: req.user.id }, trashData, (err) => {
-    if (err) return handleDBError(err, res);
-
+  Trash.replaceOne({ _id: req.params.id, ownedBy: req.user.id }, trashData).then( (updateResult) => {
+    if (!updateResult.acknowledged) return handleDBError(req.params.id, res);
     res.status(200).json({ msg: 'Successfully updated trash' });
   });
 });
 
 trashRouter.delete('/delete/:id', jwtAuth, jsonParser, (req, res) => {
-  Trash.remove({ _id: req.params.id, ownedBy: req.user.id }, (err) => {
-    if (err) return handleDBError(err, res);
-
+  Trash.deleteOne({ _id: req.params.id, ownedBy: req.user.id }).then( (t) => {
+    if (t.deletedCount != 1) return handleDBError(req.params.id, res);
     res.status(200).json({ msg: 'Successfully deleted trash' });
   });
 });

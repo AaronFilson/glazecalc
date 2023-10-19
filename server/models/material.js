@@ -10,7 +10,7 @@ var materialSchema = new mongoose.Schema({
   molecularweight: { type: Number, required: true },
   notes: { type: [String] },
   ownedBy: { type: String, required: true },
-  relatedTo: String,
+  relatedTo: { type: [String] },
   name: { type: String, required: true },
   percentmole: { type: String, required: true },
   rawformula: String

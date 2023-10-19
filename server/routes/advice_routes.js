@@ -12,47 +12,43 @@ adviceRouter.post('/create', jwtAuth, jsonParser, (req, res) => {
     return res.status(400).json( { msg: 'Missing required information' } );
   }
   var newestAdvice = new Advice();
-
   newestAdvice.content = incAdvice.content;
   newestAdvice.ownedBy = req.user.id;
   newestAdvice.tags = incAdvice.tags;
   newestAdvice.title = incAdvice.title;
 
-  newestAdvice.save((err, data) => {
-    if (err) handleDBError(err, res);
-
-    res.status(200).json(data);
-  });
+  try {
+    newestAdvice.save().then((data) => {
+      res.status(200).json(data);
+    });
+  } catch (e) {
+    return handleDBError(req.user.id, res);
+  }
+  
 });
 
 adviceRouter.get('/getLatest', jwtAuth, jsonParser, (req, res) => {
 
-  Advice.findOne({ ownedBy: req.user.id }, (err, data) => {
-    if (err) {
-      console.log('error: ', err);
-      return handleDBError(err, res);
-    }
-
+  Advice.findOne({ ownedBy: req.user.id }).then((data) => {
+    if (!data) { return handleDBError(req.user.id, res); }
     res.status(200).json(data);
   });
 });
 
 adviceRouter.get('/getAll', jwtAuth, jsonParser, (req, res) => {
-  Advice.find({ ownedBy: req.user.id }, (err, data) => {
-    if (err) return handleDBError(err, res);
-
+  Advice.find({ ownedBy: req.user.id }).then( (data) => {
+    if (!data) return handleDBError(req.user.id, res);
     res.status(200).json(data);
   });
 });
 
 adviceRouter.put('/change/:id', jwtAuth, jsonParser, (req, res) => {
   var adviceData = req.body;
-  if (!req.params.id || !req.user.id || !adviceData.title
-     || !adviceData.content || !adviceData.tags) {
+  if (!req.params.id || !req.user.id || !adviceData.title || !adviceData.content || !adviceData.tags) {
     return res.status(400).json( { msg: 'Missing required information' } );
   }
-  Advice.update({ _id: req.params.id, ownedBy: req.user.id }, adviceData, (err) => {
-    if (err) return handleDBError(err, res);
+  Advice.replaceOne({ _id: req.params.id, ownedBy: req.user.id }, adviceData).then( (updateResult) => {
+    if (!updateResult.acknowledged) return handleDBError(req.params.id, res);
 
     res.status(200).json({ msg: 'Successfully updated advice' });
   });
@@ -62,8 +58,8 @@ adviceRouter.delete('/delete/:id', jwtAuth, jsonParser, (req, res) => {
   if (!req.params.id || !req.user.id) {
     return res.status(400).json( { msg: 'Missing required information' } );
   }
-  Advice.remove({ _id: req.params.id, ownedBy: req.user.id }, (err) => {
-    if (err) return handleDBError(err, res);
+  Advice.deleteOne({ _id: req.params.id, ownedBy: req.user.id }).then( (a) => {
+    if (a.deletedCount != 1) return handleDBError(req.params.id, res);
 
     res.status(200).json({ msg: 'Successfully deleted advice' });
   });
@@ -71,8 +67,8 @@ adviceRouter.delete('/delete/:id', jwtAuth, jsonParser, (req, res) => {
 
 
 adviceRouter.get('/getStandard', jwtAuth, jsonParser, (req, res) => {
-  Advice.find({ ownedBy: 'Standard' }, (err, data) => {
-    if (err) return handleDBError(err, res);
+  Advice.find({ ownedBy: 'Standard' }).then((data) => {
+    if (!data) return handleDBError('Standard', res);
 
     res.status(200).json(data);
   });

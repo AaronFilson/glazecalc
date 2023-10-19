@@ -23,8 +23,8 @@ notesRouter.post('/create', jwtAuth, jsonParser, (req, res) => {
     return res.status(500).json( { msg: 'Error in creating the new note.' } );
   }
 
-  newestNote.save((err, data) => {
-    if (err) handleDBError(err, res);
+  newestNote.save().then((data) => {
+    if (!data) return handleDBError(req.user.id, res);
 
     res.status(200).json(data);
   });
@@ -32,10 +32,9 @@ notesRouter.post('/create', jwtAuth, jsonParser, (req, res) => {
 
 notesRouter.get('/getLatest', jwtAuth, jsonParser, (req, res) => {
 
-  Note.findOne({ ownedBy: req.user.id }, (err, data) => {
-    if (err) {
-      console.log('error: ', err);
-      return handleDBError(err, res);
+  Note.findOne({ ownedBy: req.user.id }).then((data) => {
+    if (!data) {
+      return handleDBError(req.user.id, res);
     }
 
     res.status(200).json(data);
@@ -43,8 +42,8 @@ notesRouter.get('/getLatest', jwtAuth, jsonParser, (req, res) => {
 });
 
 notesRouter.get('/getAll', jwtAuth, jsonParser, (req, res) => {
-  Note.find({ ownedBy: req.user.id }, (err, data) => {
-    if (err) return handleDBError(err, res);
+  Note.find({ ownedBy: req.user.id }).then((data) => {
+    if (!data) return handleDBError(req.user.id, res);
 
     res.status(200).json(data);
   });
@@ -52,16 +51,16 @@ notesRouter.get('/getAll', jwtAuth, jsonParser, (req, res) => {
 
 notesRouter.put('/change/:id', jwtAuth, jsonParser, (req, res) => {
   var noteData = req.body;
-  Note.update({ _id: req.params.id, ownedBy: req.user.id }, noteData, (err) => {
-    if (err) return handleDBError(err, res);
+  Note.replaceOne({ _id: req.params.id, ownedBy: req.user.id }, noteData).then((updateResult) => {
+    if (!updateResult.acknowledged) return handleDBError(req.params.id, res);
 
     res.status(200).json({ msg: 'Successfully updated note' });
   });
 });
 
 notesRouter.delete('/delete/:id', jwtAuth, jsonParser, (req, res) => {
-  Note.remove({ _id: req.params.id, ownedBy: req.user.id }, (err) => {
-    if (err) return handleDBError(err, res);
+  Note.deleteOne({ _id: req.params.id, ownedBy: req.user.id }).then((n) => {
+    if (n.deletedCount != 1) return handleDBError(req.params.id, res);
 
     res.status(200).json({ msg: 'Successfully deleted note' });
   });

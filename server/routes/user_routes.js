@@ -8,6 +8,7 @@ const jwtAuth = require(__dirname + '/../lib/jwt_auth');
 const User = require(__dirname + '/../models/user');
 
 const tokenFilter = (req, res, next) => {
+  console.log('in token filter');
   if (!req.headers.token || req.headers.token === 'null') {
     return res.status(200).json({ msg: 'No token yet, so there is no email to find. Goodbye.' });
   }
@@ -20,8 +21,8 @@ userRouter.get('/verify', tokenFilter, jwtAuth, (req, res) => {
 
   User.findOne({
     _id: req.user.id
-  }, (err, data) => {
-    if (err) {
+  }).then((data) => {
+    if (!data) {
       console.log('Error in verify after sending id to db');
       return res.status(500).json({
         msg: 'Error finding user'
@@ -39,14 +40,8 @@ userRouter.get('/verify', tokenFilter, jwtAuth, (req, res) => {
 userRouter.put('/usersettings/:id', jwtAuth, jsonParser, (req, res) => {
   var updateUser = req.body;
   delete updateUser._id;
-  User.update({
-    _id: req.params.id
-  }, updateUser, (err) => {
-    if (err) {
-      return res.status(500).json({
-        msg: 'Error updating user'
-      });
-    }
+  User.replaceOne({_id: req.params.id}, updateUser).then( (updateResult) => {
+    if (!updateResult.acknowledged) { return handleDBError(req.params.id, res); }
     res.status(200).json({
       msg: 'User updated'
     });
@@ -54,13 +49,9 @@ userRouter.put('/usersettings/:id', jwtAuth, jsonParser, (req, res) => {
 });
 
 userRouter.delete('/deleteuser/:id', jwtAuth, (req, res) => {
-  User.remove({
-    _id: req.params.id
-  }, (err) => {
-    if (err) {
-      return res.status(500).json({
-        msg: 'Error deleting user'
-      });
+  User.deleteOne({_id: req.params.id}).then( (u) => {
+    if (u.deletedCount != 1) {
+      return handleDBError(req.params.id, res);
     }
     res.status(200).json({
       msg: 'User deleted'

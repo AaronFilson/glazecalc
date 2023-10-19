@@ -1,11 +1,16 @@
 var PORT = process.env.PORT || 4000;
 var clientPort = process.env.CLIENTPORT || 4001;
-var hostURL = process.env.HOSTURL || 'http://localhost:';
+var hostURL = process.env.HOSTURL || 'http://127.0.0.1:';
 const express = require('express');
-const app = module.exports = exports = express();
+
 const mongoose = require('mongoose');
-mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost/glazecalc_app_dev',
- { keepAlive: 120 });
+mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://127.0.0.1/glazecalc_app_dev', {})
+  .catch(error => {
+    console.log('error ' + error);
+     throw error;
+  });
+
+const app = module.exports = exports = express();
 
 app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', hostURL + clientPort);
@@ -34,4 +39,5 @@ app.use('/recipe', recipeRouter);
 app.use('/trash', trashRouter);
 app.use('/', userRouter);
 
+console.log('hostURL is : ' + hostURL + ', and clientPort is : ' + clientPort);
 app.listen(PORT, () => console.log('Glazecalc backend server up on port: ' + PORT));

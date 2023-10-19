@@ -23,19 +23,23 @@ additivesRouter.post('/create', jwtAuth, jsonParser, (req, res) => {
     return res.status(500).json( { msg: 'Error in creating the new additive.' } );
   }
 
-  newestAdditive.save((err, data) => {
-    if (err) handleDBError(err, res);
-
-    res.status(200).json(data);
-  });
+  try {
+    newestAdditive.save().then((data) => {
+      res.status(200).json(data);
+    });
+  } catch (e) {
+    console.log('error in creating new additive :', e );
+    return res.status(500).json( {msg: 'Error in creating the new additive.' } );
+  }
+  
 });
 
 additivesRouter.get('/getLatest', jwtAuth, jsonParser, (req, res) => {
 
-  Additive.findOne({ ownedBy: req.user.id }, (err, data) => {
-    if (err) {
-      console.log('error: ', err);
-      return handleDBError(err, res);
+  Additive.findOne({ ownedBy: req.user.id }).then((data) => {
+    if (!data) {
+      console.log('error: no data for additive for user with id ' + req.user.id);
+      return handleDBError(req.user.id, res);
     }
 
     res.status(200).json(data);
@@ -43,33 +47,33 @@ additivesRouter.get('/getLatest', jwtAuth, jsonParser, (req, res) => {
 });
 
 additivesRouter.get('/getAll', jwtAuth, jsonParser, (req, res) => {
-  Additive.find({ ownedBy: req.user.id }, (err, data) => {
-    if (err) return handleDBError(err, res);
+  Additive.find({ ownedBy: req.user.id }).then( (data) => {
+    if (!data) return handleDBError(req.user.id, res);
 
     res.status(200).json(data);
   });
 });
 
 additivesRouter.put('/change/:id', jwtAuth, jsonParser, (req, res) => {
-  var additiveData = req.body.additive;
-  Additive.update({ _id: req.params.id, ownedBy: req.user.id }, additiveData, (err) => {
-    if (err) return handleDBError(err, res);
+  var additiveData = req.body;
+  Additive.replaceOne({ _id: req.params.id, ownedBy: req.user.id }, additiveData).then((updateResult) => {
+    if (!updateResult.acknowledged) return handleDBError(req.params.id, res);
 
     res.status(200).json({ msg: 'Successfully updated additive' });
   });
 });
 
 additivesRouter.delete('/delete/:id', jwtAuth, jsonParser, (req, res) => {
-  Additive.remove({ _id: req.params.id, ownedBy: req.user.id }, (err) => {
-    if (err) return handleDBError(err, res);
+  Additive.deleteOne({ _id: req.params.id, ownedBy: req.user.id }).then((a) => {
+    if (a.deletedCount != 1) return handleDBError(req.params.id, res);
 
     res.status(200).json({ msg: 'Successfully deleted additive' });
   });
 });
 
 additivesRouter.get('/getStandard', jwtAuth, jsonParser, (req, res) => {
-  Additive.find({ ownedBy: 'Standard' }, (err, data) => {
-    if (err) return handleDBError(err, res);
+  Additive.find({ ownedBy: 'Standard' }).then( (data) => {
+    if (!data) return handleDBError('Standard', res);
 
     res.status(200).json(data);
   });

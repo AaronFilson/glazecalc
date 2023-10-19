@@ -1,7 +1,7 @@
 # glazecalc
 Glaze calculation software to assist potters and ceramicists.
 
-This software package is under development at present. It aims to enable the formulation of glazes on a device of your choice, such as a PC web browser, an iPhone, and other platforms. It is open sourced under the MIT license, which is available for viewing under LICENSE.
+This software package is under development at present. It aims to enable the formulation of glazes on a device of your choice, such as a PC web browser, an iPhone or Android device, and other platforms. It is open sourced under the MIT license, which is available for viewing under LICENSE.
 
 For local install of the Glaze Calc, you will need Node, npm, and Mongo. Clone the
 repository to your machine, and create a directory 'db' alongside (at the same level) as the
@@ -22,8 +22,3 @@ variable APP_SECRET on the terminal to your secret phrase or hex value. Changing
 
 There is no size limit imposed on users of the Glaze Calc app, so if you host it
 on the internet, you may want to extend this package to do so.
-
-Phase two planning is started, so please use Github's Issues or Pull Requests to
-send in your ideas. Enjoy!
-
--Aaron

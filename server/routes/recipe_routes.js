@@ -25,8 +25,8 @@ recipeRouter.post('/create', jwtAuth, jsonParser, (req, res) => {
     return res.status(500).json( { msg: 'Error in creating the new recipe.' } );
   }
 
-  newestRecipe.save((err, data) => {
-    if (err) handleDBError(err, res);
+  newestRecipe.save().then((data) => {
+    if (!data) handleDBError(req.user.id, res);
 
     res.status(200).json(data);
   });
@@ -34,9 +34,9 @@ recipeRouter.post('/create', jwtAuth, jsonParser, (req, res) => {
 
 recipeRouter.get('/getLatest', jwtAuth, jsonParser, (req, res) => {
 
-  Recipe.findOne({ ownedBy: req.user.id }, (err, data) => {
-    if (err) {
-      console.log('error: ', err);
+  Recipe.findOne({ ownedBy: req.user.id }).then((data) => {
+    if (!data) {
+      console.log('error: ');
       return handleDBError(err, res);
     }
 
@@ -45,9 +45,8 @@ recipeRouter.get('/getLatest', jwtAuth, jsonParser, (req, res) => {
 });
 
 recipeRouter.get('/getAll', jwtAuth, jsonParser, (req, res) => {
-  Recipe.find({ ownedBy: req.user.id }, (err, data) => {
-    if (err) return handleDBError(err, res);
-
+  Recipe.find({ ownedBy: req.user.id }).then( (data) => {
+    if (!data) return handleDBError(req.user.id, res);
     res.status(200).json(data);
   });
 });
@@ -62,16 +61,16 @@ recipeRouter.get('/getStandard', jwtAuth, jsonParser, (req, res) => {
 
 recipeRouter.put('/change/:id', jwtAuth, jsonParser, (req, res) => {
   var recipeData = req.body.recipe;
-  Recipe.update({ _id: req.params.id, ownedBy: req.user.id }, recipeData, (err) => {
-    if (err) return handleDBError(err, res);
+  Recipe.replaceOne({ _id: req.params.id, ownedBy: req.user.id }, recipeData).then( (updateResult) => {
+    if (!updateResult.acknowledged) return handleDBError(req.params.id, res);
 
     res.status(200).json({ msg: 'Successfully updated recipe' });
   });
 });
 
 recipeRouter.delete('/delete/:id', jwtAuth, jsonParser, (req, res) => {
-  Recipe.remove({ _id: req.params.id, ownedBy: req.user.id }, (err) => {
-    if (err) return handleDBError(err, res);
+  Recipe.deleteOne({ _id: req.params.id, ownedBy: req.user.id }).then( (r) => {
+    if (r.deletedCount != 1) return handleDBError(req.user.id, res);
 
     res.status(200).json({ msg: 'Successfully deleted recipe' });
   });

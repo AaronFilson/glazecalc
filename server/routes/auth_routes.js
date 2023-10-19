@@ -20,18 +20,20 @@ authRouter.post('/signup', jsonParser, (req, res) => {
   var newUser = new User();
   newUser.email = req.body.email;
   newUser.hashPassword(req.body.password);
-  newUser.save((err, data) => {
-    if (err) return handleDBError(err, res);
-    res.status(200).json({ token: data.generateToken(), email: newUser.email });
-  });
+  try {
+    newUser.save().then((data) => {
+      res.status(200).json({ token: data.generateToken(), email: newUser.email });
+    });
+  } catch (e) {
+    console.error(e);
+    return handleDBError(req.body.email, res);
+  }
+
 });
 
 authRouter.get('/signin', basicHTTP, (req, res) => {
-
-  User.findOne({ 'email': req.basicHTTP.email }, (err, user) => {
-
-    if (err) return handleDBError(err, res);
-
+console.log('in signin with email:' + req.basicHTTP.email);
+  User.findOne({ 'email': req.basicHTTP.email }).then( (user) => {
     if (!user) return res.status(401).json({ msg: 'no user exists' });
 
     if (!user.comparePassword(req.basicHTTP.password)) {

@@ -6,7 +6,7 @@ var additiveSchema = new mongoose.Schema({
   fields: { type: [Schema.Types.Mixed], required: true },
   notes: { type: [String] },
   ownedBy: { type: String, required: true },
-  relatedTo: String,
+  relatedTo: { type: [String] },
   name: { type: String, required: true }
 });
 

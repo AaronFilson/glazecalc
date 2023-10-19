@@ -12,7 +12,7 @@ require('./home')(glazeCalcApp);
 require('./material')(glazeCalcApp);
 require('./notes')(glazeCalcApp);
 require('./recipe')(glazeCalcApp);
-require('./reset')(glazeCalcApp);
+// require('./reset')(glazeCalcApp);
 require('./services')(glazeCalcApp);
 require('./trash')(glazeCalcApp);
 
@@ -58,10 +58,10 @@ glazeCalcApp.config(['$routeProvider', function(routes) {
       controller: 'NotesController',
       templateUrl: '/views/notes_view.html'
     })
-    .when('/reset', {
-      controller: 'ResetController',
-      templateUrl: '/views/reset_view.html'
-    })
+    // .when('/reset', {
+    //   controller: 'ResetController',
+    //   templateUrl: '/views/reset_view.html'
+    // })
     .when('/', {
       redirectTo: '/signin'
     })
