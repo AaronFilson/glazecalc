@@ -8,7 +8,6 @@ const jwtAuth = require(__dirname + '/../lib/jwt_auth');
 const User = require(__dirname + '/../models/user');
 
 const tokenFilter = (req, res, next) => {
-  console.log('in token filter');
   if (!req.headers.token || req.headers.token === 'null') {
     return res.status(200).json({ msg: 'No token yet, so there is no email to find. Goodbye.' });
   }

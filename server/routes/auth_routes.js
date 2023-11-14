@@ -25,14 +25,12 @@ authRouter.post('/signup', jsonParser, (req, res) => {
       res.status(200).json({ token: data.generateToken(), email: newUser.email });
     });
   } catch (e) {
-    console.error(e);
     return handleDBError(req.body.email, res);
   }
 
 });
 
 authRouter.get('/signin', basicHTTP, (req, res) => {
-console.log('in signin with email:' + req.basicHTTP.email);
   User.findOne({ 'email': req.basicHTTP.email }).then( (user) => {
     if (!user) return res.status(401).json({ msg: 'no user exists' });
 

@@ -55,7 +55,7 @@ function webpackdev(cb) {
       output: {
         filename: 'bundle.js'
       },
-      mode: "production"
+      mode: "development"
     }))
     .pipe(gulp.dest(__dirname + '/build'));
   cb();
