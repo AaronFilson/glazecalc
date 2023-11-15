@@ -21,10 +21,10 @@
     Please enter the email account associated with your GCA account:
     <div class="form-group">
       <label for="email">Email: </label>
-      <input type="text" required name="email" data-ng-model="reset.email">
+      <input id="email" type="text" required name="email" data-ng-model="reset.email">
 
       <label for="emailconf">Email Confirmed: </label>
-      <input type="text" required name="emailconf" data-ng-model="reset.emailconf">
+      <input id="emailconf" type="text" required name="emailconf" data-ng-model="reset.emailconf">
       (Entering your email to confirm helps prevent typos!)
     </div>
     <button type="submit" class="btn btn-success" data-ng-disabled="(reset.email !== reset.emailconf) || resetForm.$invalid">
@@ -35,13 +35,13 @@
   data-ng-if="ready">
 
     <div class="form-group">
-      <label for="emailpass">Email: </label>
+      <label>Email: </label>
       <input type="text" required name="emailpass" data-ng-model="newpass.emailpass">
 
-      <label for="ps1">Password: </label>
+      <label>Password: </label>
       <input type="password" required name="ps1" data-ng-model="newpass.ps1">
 
-      <label for="ps2">Password Confirmed: </label>
+      <label>Password Confirmed: </label>
       <input type="password" required name="ps2" data-ng-model="newpass.ps2">
 
     </div>

@@ -27,14 +27,14 @@
     </div>
     <div class="form-group">
       <label for="email">Email: </label>
-      <input type="text" required name="email" data-ng-model="auth.email">
+      <input id="email" type="text" required name="email" data-ng-model="auth.email">
 
     </div>
     <div class="form-group">
       <label for="password">Password: </label>
-      <input type="password" required name="password" data-ng-model="auth.password">
+      <input id="password" type="password" required name="password" data-ng-model="auth.password">
       <label data-ng-if="signup" for="confirmation">Confirm Password: </label>
-      <input data-ng-if="signup" type="password" name="confirmation" data-ng-model="auth.confirmation">
+      <input data-ng-if="signup" type="password" name="confirmation" id="confirmation" data-ng-model="auth.confirmation">
 
     </div>
 
