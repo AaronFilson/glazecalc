@@ -17,23 +17,28 @@ const tokenFilter = (req, res, next) => {
 var userRouter = module.exports = exports = express.Router();
 
 userRouter.get('/verify', tokenFilter, jwtAuth, (req, res) => {
+  if (req.user && req.user.id) {
+    User.findOne({
+      _id: req.user.id
+    }).then((data) => {
+      if (!data) {
+        console.log('Error in verify after sending id to db');
+        return res.status(500).json({
+          msg: 'Error finding user'
+        });
+      }
 
-  User.findOne({
-    _id: req.user.id
-  }).then((data) => {
-    if (!data) {
-      console.log('Error in verify after sending id to db');
-      return res.status(500).json({
-        msg: 'Error finding user'
+      res.status(200).json({
+        msg: 'User verified',
+        email: data.email,
+        id: data.id
       });
-    }
-
-    res.status(200).json({
-      msg: 'User verified',
-      email: data.email,
-      id: data.id
     });
-  });
+  } else {
+    return res.status(200).json({
+      msg: 'No id sent, verify skipped'
+    })
+  }
 });
 
 userRouter.put('/usersettings/:id', jwtAuth, jsonParser, (req, res) => {
