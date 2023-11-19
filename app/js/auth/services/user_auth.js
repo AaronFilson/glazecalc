@@ -1,11 +1,12 @@
 module.exports = function(app) {
   app.factory('userAuth', ['$http', '$window', function($http, $window) {
     var token;
+    var host = 'http://glazecalcapp.com';
     var user;
     var auth = {
       createUser: function(user, cb) {
         cb = cb || function() {};
-        $http.post('http://localhost:4000/signup', user)
+        $http.post(host + ':4000/signup', user)
           .then(function(res) {
             token = $window.localStorage.token = res.data.token;
             cb(null);
@@ -18,7 +19,7 @@ module.exports = function(app) {
         cb = cb || function() {};
         $http({
           method: 'GET',
-          url: 'http://localhost:4000/signin',
+          url: host + ':4000/signin',
           headers: {
             'Authorization': 'Basic ' + btoa(user.email + ':' + user.password)
           }
@@ -45,7 +46,7 @@ module.exports = function(app) {
         cb = cb || function() {};
         $http({
           method: 'GET',
-          url: 'http://localhost:4000/verify',
+          url: host + ':4000/verify',
           headers: {
             token: auth.getToken()
           }

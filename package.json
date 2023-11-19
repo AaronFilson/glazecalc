@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "install": "gulp",
-    "start": "mongod --dbpath=./db & node clientserver & node server",
+    "start": "node clientserver & node server",
     "test": "mongod --dbpath=./db & mocha server/test"
   },
   "repository": {

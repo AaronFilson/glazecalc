@@ -1,3 +1,5 @@
+var host = 'http://glazecalcapp.com';
+
 var handleSuccess = function(callback) {
   return function(res) {
     callback(null, res.data);
@@ -19,7 +21,7 @@ module.exports = exports = function(app) {
     Resource.prototype.getAll = function(callback) {
       $http({
         method: 'GET',
-        url: 'http://localhost:4000' + this.resourceName + 'getAll',
+        url: host + ':4000' + this.resourceName + 'getAll',
         headers: {
           token: userAuth.getToken()
         }
@@ -30,7 +32,7 @@ module.exports = exports = function(app) {
     Resource.prototype.getLatest = function(callback) {
       $http({
         method: 'GET',
-        url: 'http://localhost:4000' + this.resourceName + 'getLatest',
+        url: host + ':4000' + this.resourceName + 'getLatest',
         headers: {
           token: userAuth.getToken()
         }
@@ -41,7 +43,7 @@ module.exports = exports = function(app) {
     Resource.prototype.create = function(data, callback) {
       $http({
         method: 'POST',
-        url: 'http://localhost:4000' + this.resourceName + 'create',
+        url: host + ':4000' + this.resourceName + 'create',
         data: data,
         headers: {
           token: userAuth.getToken()
@@ -53,7 +55,7 @@ module.exports = exports = function(app) {
     Resource.prototype.update = function(data, callback) {
       $http({
         method: 'PUT',
-        url: 'http://localhost:4000' + this.resourceName + '/' + data._id,
+        url: host + ':4000' + this.resourceName + '/' + data._id,
         data: data,
         headers: {
           token: userAuth.getToken()
@@ -65,7 +67,7 @@ module.exports = exports = function(app) {
     Resource.prototype.delete = function(data, callback) {
       $http({
         method: 'DELETE',
-        url: 'http://localhost:4000' + this.resourceName + 'delete/' + data._id,
+        url: host + ':4000' + this.resourceName + 'delete/' + data._id,
         headers: {
           token: userAuth.getToken()
         }
@@ -76,7 +78,7 @@ module.exports = exports = function(app) {
     Resource.prototype.verify = function(callback) {
       $http({
         method: 'GET',
-        url: 'http://localhost:4000/verify',
+        url: host + ':4000/verify',
         headers: {
           token: $window.localStorage.token
         }
@@ -87,7 +89,7 @@ module.exports = exports = function(app) {
     Resource.prototype.getStandard = function(callback) {
       $http({
         method: 'GET',
-        url: 'http://localhost:4000' + this.resourceName + 'getStandard',
+        url: host + ':4000' + this.resourceName + 'getStandard',
         headers: {
           token: userAuth.getToken()
         }
