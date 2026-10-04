@@ -1,0 +1,115 @@
+<gc-page-nav current="firing" />
+<gc-notices [notices]="notices" />
+
+<section class="inputbox">
+  <form class="form" (ngSubmit)="save()" id="firing-form">
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-sm-10 form-group">
+        <label for="firing-title">Title of Firing: </label>
+        <input id="firing-title" type="text" name="title" [(ngModel)]="title">
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-10 form-group">
+        <label for="firing-kiln">Kiln: </label>
+        <input id="firing-kiln" type="text" name="kiln" [(ngModel)]="kiln">
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-10 form-group">
+        <label for="firing-date">Date of firing: </label>
+        <input id="firing-date" type="date" name="date" [(ngModel)]="date">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-10 form-group">
+        <label for="firing-notes" class="boxlabel">Notes on the firing: </label>
+        <textarea id="firing-notes" name="notes" rows="3" class="form-control" [(ngModel)]="notes"></textarea>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="fieldselect">Select and add fields to the firing record : </label>
+      <div>
+        <select id="fieldselect" name="field-select" [(ngModel)]="selectedField">
+          @for (field of fieldOptions; track field) {
+            <option [value]="field">{{ field }}</option>
+          }
+        </select>
+      </div>
+      <button type="button" class="btn btn-default" (click)="addField()">Add the field</button>
+    </div>
+  </form>
+
+  <p>The fields you have included :</p>
+  <ol class="included-fields">
+    @for (field of log().fields; track $index) {
+      <li>
+        Field name : {{ field }}
+        <button type="button" class="btn btn-default" (click)="moveField($index, -1)"
+          [disabled]="$first">Move field left</button>
+        <button type="button" class="btn btn-default" (click)="moveField($index, 1)"
+          [disabled]="$last">Move field right</button>
+        <button type="button" class="btn btn-default" (click)="removeField($index)">Remove the field</button>
+      </li>
+    }
+  </ol>
+  <button type="button" class="btn btn-default" (click)="addRow()" [disabled]="!log().fields.length">
+    Add a row to the firing table
+  </button>
+</section>
+<br>
+
+<section class="tech-info" aria-labelledby="record-heading">
+  <h3 id="record-heading">Record the Firing</h3>
+  <table class="table table-bordered firing-table">
+    <tr>
+      @for (heading of log().fields; track $index) {
+        <th>{{ heading }}</th>
+      }
+      <th><span class="sr-only">Row actions</span></th>
+    </tr>
+    @for (row of log().rows; track $index; let r = $index) {
+      <tr>
+        @for (cell of row; track $index; let c = $index) {
+          <td>
+            <!-- ngModel rewrites the box whenever the model differs from what it shows,
+                 so cells stay right when columns or rows move under reused inputs. -->
+            <input type="text" class="firing-cell" [attr.aria-label]="log().fields[c] + ' row ' + (r + 1)"
+              [ngModel]="cell" (ngModelChange)="setCell(r, c, $event)" [ngModelOptions]="{ standalone: true }">
+          </td>
+        }
+        <td><button type="button" class="btn btn-default btn-xs" (click)="removeRow(r)">Remove row</button></td>
+      </tr>
+    }
+  </table>
+  <button type="submit" form="firing-form" class="btn btn-primary">Save</button>
+</section>
+<br>
+
+@if (myFirings().length) {
+  <section class="tech-info" aria-labelledby="stored-heading">
+    <h3 id="stored-heading">My stored firings: </h3>
+    <ul>
+      @for (fr of myFirings(); track fr._id) {
+        <li class="stored-firing">
+          Title: {{ fr.title }}, Using kiln: {{ fr.kiln }}, Date: {{ fr.date | date: 'fullDate' }}
+          <table class="table table-bordered">
+            <tr>
+              @for (heading of fr.fieldsIncluded; track $index) {
+                <th>{{ heading }}</th>
+              }
+            </tr>
+            @for (row of fr.rows; track $index) {
+              <tr>
+                @for (cell of row; track $index) {
+                  <td>{{ cell }}</td>
+                }
+              </tr>
+            }
+          </table>
+          Notes: {{ firstOf(fr.notes) }}
+          @if (showRemove()) {
+            <p><button type="button" class="btn btn-warning" (click)="remove(fr)">Remove</button></p>
+          }
+        </li>
+      }
+    </ul>
+    <button type="button" class="btn btn-default" (click)="showRemove.set(!showRemove())">Remove toggle button</button>
+  </section>
+}

@@ -170,6 +170,35 @@ describe('glaze chemistry', () => {
       expect(chemistry.materialWeights(stored).warnings[0]).to.contain('stored equivalent weight');
     });
 
+    it('should keep percent analyses on the raw basis when there is an LOI', () => {
+      // Whiting as an analysis: 56.03% CaO and 43.97% LOI holds one mole of CaO per 100.08 g.
+      var whiting = {
+        name: 'Whiting analysis', percentmole: 'percent', loi: 43.97,
+        fields: [{ name: 'CaO', amount: '56.03' }]
+      };
+      var weights = chemistry.materialWeights(whiting);
+      expect(weights.equivalent).to.be.closeTo(100.08, 0.01);
+      expect(weights.firedWeight).to.be.closeTo(MW.CaO, 0.01);
+      expect(weights.warnings).to.eql([]);
+    });
+
+    it('should use the formula as written for a material with no flux', () => {
+      var clay = { name: 'Clay', loi: 13.96, fields: [{ name: 'Al2O3', amount: '1' }, { name: 'SiO2', amount: '2' }] };
+      var weights = chemistry.materialWeights(clay);
+      expect(weights.unity.Al2O3).to.be.closeTo(1, 1e-9);
+      expect(weights.unity.SiO2).to.be.closeTo(2, 1e-9);
+      expect(weights.equivalent).to.be.closeTo(258.17, 0.01);
+      expect(weights.equivalent).to.eql(weights.molecularWeight);
+    });
+
+    it('should let user materials override the built-in ones by name', () => {
+      var cheapSilica = { name: 'Silica', analysis: { SiO2: 90, Al2O3: 10 } };
+      var result = calculateUMF({ Whiting: 100.08, Silica: 100 }, { materials: [cheapSilica] });
+      var flux = 100.08 / (MW.CaO + 44.009);
+      expect(result.umf.Al2O3).to.be.closeTo(10 / MW.Al2O3 / flux, 1e-6);
+      expect(result.umf.SiO2).to.be.closeTo(90 / MW.SiO2 / flux, 1e-6);
+    });
+
     it('should reject an LOI of 100% or more', () => {
       var bad = { name: 'Bad', loi: 100, fields: [{ name: 'CaO', amount: '1' }] };
       expect(() => chemistry.materialWeights(bad)).to.throw(/LOI/);

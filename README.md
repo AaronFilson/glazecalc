@@ -3,16 +3,21 @@ Glaze calculation software to assist potters and ceramicists.
 
 This software package is under development at present. It aims to enable the formulation of glazes on a device of your choice, such as a PC web browser, an iPhone or Android device, and other platforms. It is open sourced under the MIT license, which is available for viewing under LICENSE.
 
-For local install of the Glaze Calc, you will need Node 20.9 or newer (tested on Node 24 LTS),
-npm, and MongoDB 7.0. Clone the
+For local install of the Glaze Calc, you will need Node 22.22 or 24.15 or newer (tested on
+Node 24 LTS), npm, and MongoDB 7.0. Clone the
 repository to your machine, and create a directory 'db' alongside (at the same level) as the
-server and app directories. Run the command 'npm install' on your favorite terminal (in the root
-directory of the project, which contains the package.json file). The install also runs 'gulp'
-to build the app into the 'build' directory; 'npm run build:prod' makes a minified bundle.
-After the install, try the command 'npm test', which should run a series of basic tests on
-the project. If there are any failures on the tests, it may be there was a problem
-with the install or an unexpected version issue. The 'npm start' and 'npm test' scripts
-use '&' to run several programs at once, so on Windows run them from Git Bash or WSL.
+server and client directories. Run the command 'npm install' on your favorite terminal (in the root
+directory of the project, which contains the package.json file).
+
+The client is an Angular 22 app in 'client/'. 'npm run build' builds it into 'dist/glazecalc/browser',
+and 'npx ng serve' runs it on port 3000 with live reload while you work on it. The API server
+and the glaze chemistry ('lib/chemistry', shared by the client and server) are plain Node.
+
+With mongod running, 'npm test' runs the server and chemistry tests and 'npm run test:client' runs
+the client unit tests; 'npm run test:coverage' and 'npm run test:client:coverage' add coverage
+reports. If there are any failures on the tests, it may be there was a problem with the install
+or an unexpected version issue. The 'npm start' script uses '&' to run the API and client servers
+at once, so on Windows run it from Git Bash or WSL.
 
 Browser tests use Playwright. Install the browser once with 'npx playwright install chromium',
 start mongod, make sure nothing else is using port 4000, and run 'npm run test:e2e'. The tests

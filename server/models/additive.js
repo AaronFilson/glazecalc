@@ -7,7 +7,8 @@ var additiveSchema = new mongoose.Schema({
   notes: { type: [String] },
   ownedBy: { type: String, required: true },
   relatedTo: { type: [String] },
-  name: { type: String, required: true }
+  name: { type: String, required: true },
+  rawformula: String
 });
 
 module.exports = mongoose.model('Additive', additiveSchema);

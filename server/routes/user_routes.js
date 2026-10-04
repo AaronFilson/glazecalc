@@ -1,12 +1,14 @@
 const express = require('express');
 const jsonParser = require('body-parser').json();
 const mongoose = require('mongoose');
-mongoose.thisIsNotUsed = null;
-require(__dirname + '/../lib/basic_http');
+const email = require(__dirname + '/../lib/email');
 const handleDBError = require(__dirname + '/../lib/handle_db_error');
 const jwtAuth = require(__dirname + '/../lib/jwt_auth');
 
 const User = require(__dirname + '/../models/user');
+// Collections whose records belong to a user and go when the account does.
+const OWNED_MODELS = ['additive', 'advice', 'firing', 'material', 'note', 'recipe', 'trash']
+  .map((name) => require(__dirname + '/../models/' + name));
 
 const tokenFilter = (req, res, next) => {
   if (!req.headers.token || req.headers.token === 'null') {
@@ -44,6 +46,7 @@ userRouter.get('/verify', tokenFilter, jwtAuth, (req, res) => {
 
 // Users may only change or delete their own account; admins may act on any.
 const selfOrAdmin = (req, res, next) => {
+  if (!mongoose.isValidObjectId(req.params.id)) return res.status(400).json({ msg: 'Invalid id' });
   if (req.params.id === String(req.user._id) || req.user.role === 'admin') return next();
   return res.status(403).json({ msg: 'Not allowed to change another user' });
 };
@@ -57,16 +60,19 @@ userRouter.put('/usersettings/:id', jwtAuth, selfOrAdmin, jsonParser, (req, res)
   SETTABLE_FIELDS.forEach((field) => {
     if (req.body[field] !== undefined) changes[field] = req.body[field];
   });
-  if (changes.email !== undefined && String(changes.email).length < 5) {
-    return res.status(400).json({ msg: 'Please enter an email' });
+  if (changes.email !== undefined) {
+    changes.email = email.normalize(changes.email);
+    if (!changes.email || changes.email.length < 5) {
+      return res.status(400).json({ msg: 'Please enter an email' });
+    }
   }
 
   var emailTaken = changes.email === undefined ? Promise.resolve(null) :
-    User.findOne({ email: changes.email, _id: { $ne: req.params.id } });
+    User.findOne({ email: changes.email, _id: { $ne: req.params.id } }).collation(email.collation);
   emailTaken.then((other) => {
     if (other) return res.status(400).json({ msg: 'That email is already in use' });
     return User.updateOne({ _id: req.params.id }, { $set: changes }).then((updateResult) => {
-      if (!updateResult.acknowledged) { return handleDBError(req.params.id, res); }
+      if (!updateResult.matchedCount) return res.status(404).json({ msg: 'No user with that id' });
       res.status(200).json({
         msg: 'User updated'
       });
@@ -76,11 +82,12 @@ userRouter.put('/usersettings/:id', jwtAuth, selfOrAdmin, jsonParser, (req, res)
 
 userRouter.delete('/deleteuser/:id', jwtAuth, selfOrAdmin, (req, res) => {
   User.deleteOne({_id: req.params.id}).then( (u) => {
-    if (u.deletedCount != 1) {
-      return handleDBError(req.params.id, res);
-    }
-    res.status(200).json({
-      msg: 'User deleted'
+    if (u.deletedCount != 1) return res.status(404).json({ msg: 'No user with that id' });
+    // Remove the account's records too, so nothing is left without an owner.
+    return Promise.all(OWNED_MODELS.map((Model) => Model.deleteMany({ ownedBy: req.params.id }))).then(() => {
+      res.status(200).json({
+        msg: 'User deleted'
+      });
     });
   }).catch((err) => handleDBError(err, res));
 });

@@ -1,11 +1,12 @@
 db/**
 db-old
 build/**/**
+dist/
+.angular/
 node_modules
 node_modules/**
 **/node_modules
-app/test/bndl/test_bundle.js
-app/test/bndl/**
+coverage/
 .node-version
 .idea
 

@@ -14,7 +14,7 @@ test('signs up, logs out, and signs back in', async ({ page }) => {
   await expect(page).toHaveURL(/#\/home$/);
   await expect(header(page)).toContainText('Hello ' + email);
 
-  await page.getByRole('link', { name: 'logout' }).click();
+  await page.getByRole('button', { name: 'logout' }).click();
   await expect(page).toHaveURL(/#\/signin$/);
   await expect(header(page)).toHaveCount(0);
 

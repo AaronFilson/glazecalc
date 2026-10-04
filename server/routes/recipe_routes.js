@@ -3,6 +3,7 @@ const Recipe = require(__dirname + '/../models/recipe');
 const jsonParser = require('body-parser').json();
 const handleDBError = require(__dirname + '/../lib/handle_db_error');
 const jwtAuth = require(__dirname + '/../lib/jwt_auth');
+const owned = require(__dirname + '/../lib/owned_routes');
 
 const recipeRouter = module.exports = exports = express.Router();
 
@@ -32,14 +33,7 @@ recipeRouter.post('/create', jwtAuth, jsonParser, (req, res) => {
   }).catch((err) => handleDBError(err, res));
 });
 
-recipeRouter.get('/getLatest', jwtAuth, jsonParser, (req, res) => {
-
-  Recipe.findOne({ ownedBy: req.user.id }).then((data) => {
-    if (!data) return handleDBError(req.user.id, res);
-
-    res.status(200).json(data);
-  }).catch((err) => handleDBError(err, res));
-});
+recipeRouter.get('/getLatest', jwtAuth, owned.latest(Recipe, 'recipe'));
 
 recipeRouter.get('/getAll', jwtAuth, jsonParser, (req, res) => {
   Recipe.find({ ownedBy: req.user.id }).then( (data) => {
@@ -54,19 +48,7 @@ recipeRouter.get('/getStandard', jwtAuth, jsonParser, (req, res) => {
   }).catch((err) => handleDBError(err, res));
 });
 
-recipeRouter.put('/change/:id', jwtAuth, jsonParser, (req, res) => {
-  var recipeData = req.body.recipe;
-  Recipe.replaceOne({ _id: req.params.id, ownedBy: req.user.id }, recipeData).then( (updateResult) => {
-    if (!updateResult.acknowledged) return handleDBError(req.params.id, res);
+recipeRouter.put('/change/:id', jwtAuth, jsonParser,
+  owned.change(Recipe, 'recipe', ['title', 'date', 'notes', 'materials', 'additives', 'computed'], 'recipe'));
 
-    res.status(200).json({ msg: 'Successfully updated recipe' });
-  }).catch((err) => handleDBError(err, res));
-});
-
-recipeRouter.delete('/delete/:id', jwtAuth, jsonParser, (req, res) => {
-  Recipe.deleteOne({ _id: req.params.id, ownedBy: req.user.id }).then( (r) => {
-    if (r.deletedCount != 1) return handleDBError(req.user.id, res);
-
-    res.status(200).json({ msg: 'Successfully deleted recipe' });
-  }).catch((err) => handleDBError(err, res));
-});
+recipeRouter.delete('/delete/:id', jwtAuth, owned.remove(Recipe, 'recipe'));

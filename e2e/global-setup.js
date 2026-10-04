@@ -18,5 +18,9 @@ module.exports = async () => {
       .split(/\r?\n/).filter(Boolean).map((line) => EJSON.parse(line));
     await mongoose.connection.collection(name).insertMany(docs);
   }
+  // There is no standard advice data file yet; one record lets the advice page show its general list.
+  await mongoose.connection.collection('advice').insertOne({
+    title: 'Sieve your glazes', content: 'Pass mixed glaze through an 80 mesh sieve.', tags: ['mixing'], ownedBy: 'Standard'
+  });
   await mongoose.disconnect();
 };

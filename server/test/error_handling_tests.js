@@ -28,31 +28,31 @@ describe('error handling', () => {
 
   after(() => mongoose.connection.dropDatabase());
 
-  it('should return an error for an update with a malformed id', () => {
+  it('should reject an update with a malformed id', () => {
     return request(baseUri)
       .put('/recipe/change/not-an-id')
       .set('token', userToken)
       .send({ recipe: { title: 'x', materials: [1] } })
       .then((res) => {
-        expect(res).to.have.status(500);
+        expect(res).to.have.status(400);
       });
   });
 
-  it('should return an error for a delete with a malformed id', () => {
+  it('should reject a delete with a malformed id', () => {
     return request(baseUri)
       .delete('/materials/delete/not-an-id')
       .set('token', userToken)
       .then((res) => {
-        expect(res).to.have.status(500);
+        expect(res).to.have.status(400);
       });
   });
 
-  it('should answer getLatest for a user with no recipes', () => {
+  it('should answer getLatest with not found for a user with no recipes', () => {
     return request(baseUri)
       .get('/recipe/getLatest')
       .set('token', userToken)
       .then((res) => {
-        expect(res).to.have.status(500);
+        expect(res).to.have.status(404);
       });
   });
 

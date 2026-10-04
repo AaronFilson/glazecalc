@@ -9,7 +9,7 @@ const addOxide = async (page, oxide, amount) => {
   await page.locator('select[name="firedox-select"]').selectOption(oxide);
   await page.getByRole('button', { name: 'Add the oxide to the list' }).click();
   const row = page.locator('li', { has: page.locator('b', { hasText: new RegExp('^' + oxide + '$') }) });
-  await row.locator('input[name="amount"]').fill(String(amount));
+  await row.locator('input.oxide-amount').fill(String(amount));
 };
 
 test.beforeEach(async ({ page, request }) => {

@@ -4,15 +4,18 @@ const jwt = require('jsonwebtoken');
 const appSecret = require(__dirname + '/../lib/app_secret');
 
 var userSchema = new mongoose.Schema({
-  email: { type: String, required: true },
+  email: { type: String, required: true, trim: true, lowercase: true },
   displayname: String,
   password: { type: String, required: true },
   role: String,
   settings: [String]
 });
 
+// One account per email, ignoring case.
+userSchema.index({ email: 1 }, { unique: true, collation: { locale: 'en', strength: 2 } });
+
 userSchema.methods.hashPassword = function(password) {
-  var hash = this.password = bcrypt.hashSync(password, 8);
+  var hash = this.password = bcrypt.hashSync(password, 10);
   return hash;
 };
 

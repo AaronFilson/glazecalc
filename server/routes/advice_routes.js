@@ -3,6 +3,7 @@ const Advice = require(__dirname + '/../models/advice');
 const jsonParser = require('body-parser').json();
 const handleDBError = require(__dirname + '/../lib/handle_db_error');
 const jwtAuth = require(__dirname + '/../lib/jwt_auth');
+const owned = require(__dirname + '/../lib/owned_routes');
 
 const adviceRouter = module.exports = exports = express.Router();
 
@@ -27,13 +28,7 @@ adviceRouter.post('/create', jwtAuth, jsonParser, (req, res) => {
   
 });
 
-adviceRouter.get('/getLatest', jwtAuth, jsonParser, (req, res) => {
-
-  Advice.findOne({ ownedBy: req.user.id }).then((data) => {
-    if (!data) { return handleDBError(req.user.id, res); }
-    res.status(200).json(data);
-  }).catch((err) => handleDBError(err, res));
-});
+adviceRouter.get('/getLatest', jwtAuth, owned.latest(Advice, 'advice'));
 
 adviceRouter.get('/getAll', jwtAuth, jsonParser, (req, res) => {
   Advice.find({ ownedBy: req.user.id }).then( (data) => {
@@ -42,28 +37,10 @@ adviceRouter.get('/getAll', jwtAuth, jsonParser, (req, res) => {
   }).catch((err) => handleDBError(err, res));
 });
 
-adviceRouter.put('/change/:id', jwtAuth, jsonParser, (req, res) => {
-  var adviceData = req.body;
-  if (!req.params.id || !req.user.id || !adviceData.title || !adviceData.content || !adviceData.tags) {
-    return res.status(400).json( { msg: 'Missing required information' } );
-  }
-  Advice.replaceOne({ _id: req.params.id, ownedBy: req.user.id }, adviceData).then( (updateResult) => {
-    if (!updateResult.acknowledged) return handleDBError(req.params.id, res);
+adviceRouter.put('/change/:id', jwtAuth, jsonParser,
+  owned.change(Advice, 'advice', ['title', 'content', 'tags']));
 
-    res.status(200).json({ msg: 'Successfully updated advice' });
-  }).catch((err) => handleDBError(err, res));
-});
-
-adviceRouter.delete('/delete/:id', jwtAuth, jsonParser, (req, res) => {
-  if (!req.params.id || !req.user.id) {
-    return res.status(400).json( { msg: 'Missing required information' } );
-  }
-  Advice.deleteOne({ _id: req.params.id, ownedBy: req.user.id }).then( (a) => {
-    if (a.deletedCount != 1) return handleDBError(req.params.id, res);
-
-    res.status(200).json({ msg: 'Successfully deleted advice' });
-  }).catch((err) => handleDBError(err, res));
-});
+adviceRouter.delete('/delete/:id', jwtAuth, owned.remove(Advice, 'advice'));
 
 
 adviceRouter.get('/getStandard', jwtAuth, jsonParser, (req, res) => {

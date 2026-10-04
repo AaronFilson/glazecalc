@@ -1,0 +1,93 @@
+// Bootstrap 3 grid, forms, buttons and tables, from bootstrap-sass.
+$icon-font-path: 'bootstrap-sass/assets/fonts/bootstrap/';
+@import 'bootstrap';
+
+/*************** Main Page Layout **************/
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6em;
+  background-image: url('/images/background.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0 auto;
+}
+
+main {
+  font-size: 1.9rem;
+  margin-top: 3%;
+}
+
+.inputbox {
+  background-color: rgba(200, 200, 200, 0.7);
+  padding: 2px;
+}
+
+.header-text,
+.help-text {
+  background-color: rgba(200, 200, 200, 0.65);
+  padding: 2px;
+}
+
+.errors-section {
+  background-color: rgba(245, 200, 200, 0.65);
+  padding: 2px;
+}
+
+.server-msg {
+  background-color: rgba(200, 245, 200, 0.65);
+  padding: 2px;
+}
+
+.tech-info {
+  background-color: rgba(190, 190, 200, 0.85);
+  padding: 5px;
+}
+
+.home-text,
+.auth-text {
+  background-color: rgba(210, 210, 200, 0.9);
+  padding: 5px;
+}
+
+header {
+  display: inline;
+}
+
+nav {
+  background-color: rgba(190, 190, 190, 0.7);
+  font-size: 0.9em;
+  border: none;
+  margin: 2px;
+  padding: 2px;
+  max-width: max-content;
+}
+
+h1 {
+  font-size: 3.4rem;
+  text-shadow: 2px 2px #C3DEEC;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+footer {
+  text-align: center;
+  padding-top: 500px;
+  width: 100%;
+  color: green;
+}
+
+footer a {
+  color: #1111DD;
+}
+
+.boxlabel {
+  vertical-align: top;
+}

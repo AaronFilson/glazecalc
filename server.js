@@ -39,5 +39,14 @@ app.use('/recipe', recipeRouter);
 app.use('/trash', trashRouter);
 app.use('/', userRouter);
 
+// Errors that reach Express (such as malformed JSON) get a short JSON reply
+// instead of the default HTML page with a stack trace.
+app.use((err, req, res, next) => {
+  const status = err.status || err.statusCode || 500;
+  if (status >= 500) console.log('Server error : ' + err);
+  if (res.headersSent) return next(err);
+  res.status(status).json({ msg: status < 500 ? 'Bad request' : 'Server Error' });
+});
+
 console.log('hostURL is : ' + hostURL + ', and clientPort is : ' + clientPort);
 app.listen(PORT, () => console.log('Glazecalc backend server up on port: ' + PORT));

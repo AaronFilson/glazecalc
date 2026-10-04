@@ -3,6 +3,7 @@ const Material = require(__dirname + '/../models/material');
 const jsonParser = require('body-parser').json();
 const handleDBError = require(__dirname + '/../lib/handle_db_error');
 const jwtAuth = require(__dirname + '/../lib/jwt_auth');
+const owned = require(__dirname + '/../lib/owned_routes');
 
 const materialsRouter = module.exports = exports = express.Router();
 
@@ -39,17 +40,7 @@ materialsRouter.post('/create', jwtAuth, jsonParser, (req, res) => {
   }).catch((err) => handleDBError(err, res));
 });
 
-materialsRouter.get('/getLatest', jwtAuth, jsonParser, (req, res) => {
-
-  Material.findOne({ ownedBy: req.user.id }).then(( data) => {
-    if (!data) {
-      console.log('error: ', err);
-      return handleDBError(req.user.id, res);
-    }
-
-    res.status(200).json(data);
-  }).catch((err) => handleDBError(err, res));
-});
+materialsRouter.get('/getLatest', jwtAuth, owned.latest(Material, 'material'));
 
 materialsRouter.get('/getAll', jwtAuth, jsonParser, (req, res) => {
   Material.find({ ownedBy: req.user.id }).then( (data) => {
@@ -59,22 +50,10 @@ materialsRouter.get('/getAll', jwtAuth, jsonParser, (req, res) => {
   }).catch((err) => handleDBError(err, res));
 });
 
-materialsRouter.put('/change/:id', jwtAuth, jsonParser, (req, res) => {
-  var materialData = req.body;
-  Material.replaceOne({ _id: req.params.id, ownedBy: req.user.id }, materialData).then((updateResult) => {
-    if (!updateResult.acknowledged) return handleDBError(req.params.id, res);
+materialsRouter.put('/change/:id', jwtAuth, jsonParser,
+  owned.change(Material, 'material', ['name', 'rawformula', 'relatedTo', 'notes', 'fields', 'percentmole', 'loi', 'molecularweight', 'equivalent', 'formulaweight']));
 
-    res.status(200).json({ msg: 'Successfully updated material' });
-  }).catch((err) => handleDBError(err, res));
-});
-
-materialsRouter.delete('/delete/:id', jwtAuth, jsonParser, (req, res) => {
-  Material.deleteOne({ _id: req.params.id, ownedBy: req.user.id }).then((m) => {
-    if (m.deletedCount != 1) return handleDBError(req.params.id, res);
-
-    res.status(200).json({ msg: 'Successfully deleted material' });
-  }).catch((err) => handleDBError(err, res));
-});
+materialsRouter.delete('/delete/:id', jwtAuth, owned.remove(Material, 'material'));
 
 materialsRouter.get('/getStandard', jwtAuth, jsonParser, (req, res) => {
   Material.find({ ownedBy: 'Standard' }).then((data) => {

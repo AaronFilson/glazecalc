@@ -1,0 +1,108 @@
+<gc-page-nav current="additive" />
+<gc-notices [notices]="notices" />
+
+<section class="inputbox">
+  <h3>Input information on the new additive</h3>
+  <p>
+    Symbols to copy into your additive formula:
+    ₁ ₂ ₃ ₄ ₅ ₆ ₇ ₈ ₉ ₀ •
+  </p>
+  <form class="form" (ngSubmit)="save()">
+    <div class="row">
+      <div class="col-lg-4 col-sm-6 form-group">
+        <label for="additive-name">Name of Additive: </label>
+        <input id="additive-name" type="text" name="name" [(ngModel)]="name">
+      </div>
+      <div class="col-lg-4 col-sm-6 form-group">
+        <label for="formula">Formula: </label>
+        <input id="formula" type="text" name="rawformula" [(ngModel)]="rawformula">
+      </div>
+      <div class="col-lg-4 col-sm-6 form-group">
+        <label for="related-to">Related To: </label>
+        <input id="related-to" type="text" name="relatedTo" [(ngModel)]="relatedTo">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-10 form-group">
+        <label for="notes" class="boxlabel">Notes: </label>
+        <textarea id="notes" name="notes" rows="3" class="form-control" [(ngModel)]="notes"></textarea>
+      </div>
+    </div>
+
+    <h4>Enter the formula: </h4>
+    <div class="row">
+      <div class="col-md-6 form-group">
+        <label for="componentselection">Component Selection: </label><br>
+        <select id="componentselection" name="component-select" [(ngModel)]="selectedComponent">
+          <option value="">none</option>
+          @for (component of components; track component.value) {
+            <option [value]="component.value">{{ component.label }}</option>
+          }
+        </select>
+        <button type="button" class="btn btn-default" (click)="addToFormula(selectedComponent(), 'component')">Add the component</button>
+      </div>
+      <div class="col-md-6 form-group">
+        <label for="elementselection">Element Selection: </label><br>
+        <select id="elementselection" name="element-select" [(ngModel)]="selectedElement">
+          <option value="">none</option>
+          @for (element of elements; track element.value) {
+            <option [value]="element.value">{{ element.label }}</option>
+          }
+        </select>
+        <button type="button" class="btn btn-default" (click)="addToFormula(selectedElement(), 'element')">Add the element</button>
+      </div>
+    </div>
+    <ul>
+      @for (line of formula(); track $index) {
+        <li>
+          <b>{{ line.name }}</b>
+          <p>
+            <label [for]="'part-amount-' + $index">Amount: </label>
+            <input [id]="'part-amount-' + $index" type="text" [name]="'part-amount-' + $index" class="part-amount"
+              [(ngModel)]="line.amount">
+          </p>
+          <button type="button" class="btn btn-default" (click)="removeFromFormula($index)">Remove from formula list</button>
+        </li>
+      }
+    </ul>
+    <button type="submit" class="btn btn-primary">Save</button>
+  </form>
+</section>
+<br>
+
+@if (myAdditives().length) {
+  <section class="tech-info" aria-labelledby="my-additives-heading">
+    <h4 id="my-additives-heading">My server additives / colorants: </h4>
+    <table class="table table-bordered">
+      <tr><th>Name</th> <th>Notes</th> <th>Elements</th></tr>
+      @for (add of myAdditives(); track add._id) {
+        <tr>
+          <td>
+            {{ add.name }}
+            @if (showRemove()) {
+              <div><button type="button" class="btn btn-warning" (click)="remove(add)">Remove from server</button></div>
+            }
+          </td>
+          <td>{{ firstOf(add.notes) }}</td>
+          <td>{{ fieldsText(add) }}</td>
+        </tr>
+      }
+    </table>
+    <button type="button" class="btn btn-default" (click)="showRemove.set(!showRemove())">Remove toggle</button>
+  </section>
+  <br>
+}
+
+<section class="tech-info" aria-labelledby="standard-additives-heading">
+  <h4 id="standard-additives-heading">The standard server additives: </h4>
+  <table class="table table-bordered">
+    <tr><th>Name</th> <th>Notes</th> <th>Elements</th></tr>
+    @for (add of standardAdditives(); track add._id) {
+      <tr>
+        <td>{{ add.name }}</td>
+        <td>{{ firstOf(add.notes) }}</td>
+        <td>{{ fieldsText(add) }}</td>
+      </tr>
+    }
+  </table>
+</section>

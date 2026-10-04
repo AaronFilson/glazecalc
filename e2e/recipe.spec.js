@@ -59,13 +59,62 @@ test('saves the analysis of the amounts at save time, not at compute time', asyn
 
   // Remove the dolomite by setting it to zero, then save without recomputing.
   const dolomite = page.locator('li', { has: page.locator('b', { hasText: /^Dolomite$/ }) });
-  await dolomite.locator('input[name="amount"]').fill('0');
+  await dolomite.locator('input.material-amount').fill('0');
   await page.getByRole('button', { name: 'Save' }).click();
 
   await expect(page.locator('.server-msg')).toContainText('Recipe added');
   const saved = page.locator('li', { hasText: 'Edited After Compute' }).first();
   await saved.getByRole('button', { name: 'Expand to View' }).click();
   await expect(saved).not.toContainText('MgO');
+});
+
+test('uses my own materials and lists additives with the result', async ({ page, request }) => {
+  // A user material saved through the API, as the materials page would.
+  const token = await page.evaluate(() => localStorage.getItem('token'));
+  const myWhiting = { ...standard['Whiting'], name: 'My Whiting' };
+  delete myWhiting._id;
+  const res = await request.post('http://localhost:4000/materials/create', { headers: { token }, data: myWhiting });
+  expect(res.ok()).toBeTruthy();
+  await page.reload();
+
+  await page.locator('#recipe-name').fill('Mine');
+  await page.locator('select[name="my-mats"]').selectOption({ label: 'My Whiting' });
+  await page.getByRole('button', { name: 'Add my material to recipe' }).click();
+  await expect(page.locator('input.material-amount')).toHaveCount(1);
+  await page.locator('input.material-amount').fill('20');
+  await addStandardMaterial(page, 'Silica', 30);
+  await page.locator('select[name="std-adds"]').selectOption({ label: 'Cobalt carbonate' });
+  await page.getByRole('button', { name: 'Add standard additive / colorant' }).click();
+  await page.locator('input.additive-amount').fill('0.5');
+  await page.getByRole('button', { name: 'Compute recipe into Unity' }).click();
+
+  const section = unitySection(page);
+  await expect(section).toContainText('CaO : 1.000');
+  // Additives are listed but not part of the unity formula.
+  await expect(section).toContainText('Cobalt carbonate : 0.5');
+  await expect(section).not.toContainText('CoO');
+
+  await page.getByRole('button', { name: 'Save' }).click();
+  const saved = page.locator('.saved-recipe', { hasText: 'Mine' });
+  await saved.getByRole('button', { name: 'Expand to View' }).click();
+  await expect(saved).toContainText('My Whiting : 20');
+  await expect(saved).toContainText('Cobalt carbonate : 0.5');
+});
+
+test('removes a material from the recipe and a saved recipe from the list', async ({ page }) => {
+  await page.locator('#recipe-name').fill('Short lived');
+  await addStandardMaterial(page, 'Whiting', 20);
+  await addStandardMaterial(page, 'Dolomite', 10);
+  await page.locator('li', { has: page.locator('b', { hasText: /^Dolomite$/ }) })
+    .getByRole('button', { name: 'Remove from recipe' }).click();
+  await expect(page.locator('.recipe-materials li')).toHaveCount(1);
+  await page.getByRole('button', { name: 'Save' }).click();
+  await expect(page.locator('.saved-recipe', { hasText: 'Short lived' })).toBeVisible();
+
+  await page.getByRole('button', { name: 'Remove toggle' }).click();
+  await page.locator('.saved-recipe', { hasText: 'Short lived' }).getByRole('button', { name: 'Remove from the server' }).click();
+  await expect(page.locator('.server-msg')).toContainText('removing the recipe');
+  await expect(page.locator('.saved-recipe', { hasText: 'Short lived' })).toHaveCount(0);
 });
 
 test('refuses to save a recipe with no flux', async ({ page }) => {

@@ -36,7 +36,8 @@ module.exports = defineConfig({
       }
     },
     {
-      command: 'npx gulp && node clientserver.js',
+      command: 'npx ng build && node clientserver.js',
+      timeout: 180000,
       url: 'http://localhost:' + clientPort,
       reuseExistingServer: false,
       env: { CLIENTPORT: clientPort }

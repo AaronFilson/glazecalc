@@ -19,7 +19,7 @@ const addStandardMaterial = async (page, name, amount) => {
   await page.locator('select[name="std-mats"]').selectOption({ label: name });
   await page.getByRole('button', { name: 'Add standard material to recipe' }).click();
   const row = page.locator('li', { has: page.locator('b', { hasText: new RegExp('^' + name + '$') }) });
-  await row.locator('input[name="amount"]').fill(String(amount));
+  await row.locator('input.material-amount').fill(String(amount));
 };
 
 module.exports = { API, addStandardMaterial, signUpAndSignIn, uniqueEmail };

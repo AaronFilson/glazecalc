@@ -3,6 +3,7 @@ const Additive = require(__dirname + '/../models/additive');
 const jsonParser = require('body-parser').json();
 const handleDBError = require(__dirname + '/../lib/handle_db_error');
 const jwtAuth = require(__dirname + '/../lib/jwt_auth');
+const owned = require(__dirname + '/../lib/owned_routes');
 
 const additivesRouter = module.exports = exports = express.Router();
 
@@ -18,6 +19,7 @@ additivesRouter.post('/create', jwtAuth, jsonParser, (req, res) => {
     newestAdditive.notes = incAdditive.notes;
     newestAdditive.relatedTo = incAdditive.relatedTo;
     newestAdditive.name = incAdditive.name;
+    newestAdditive.rawformula = incAdditive.rawformula;
   } catch (e) {
     console.log('error in setting additive properties : ', e);
     return res.status(500).json( { msg: 'Error in creating the new additive.' } );
@@ -34,17 +36,7 @@ additivesRouter.post('/create', jwtAuth, jsonParser, (req, res) => {
   
 });
 
-additivesRouter.get('/getLatest', jwtAuth, jsonParser, (req, res) => {
-
-  Additive.findOne({ ownedBy: req.user.id }).then((data) => {
-    if (!data) {
-      console.log('error: no data for additive for user with id ' + req.user.id);
-      return handleDBError(req.user.id, res);
-    }
-
-    res.status(200).json(data);
-  }).catch((err) => handleDBError(err, res));
-});
+additivesRouter.get('/getLatest', jwtAuth, owned.latest(Additive, 'additive'));
 
 additivesRouter.get('/getAll', jwtAuth, jsonParser, (req, res) => {
   Additive.find({ ownedBy: req.user.id }).then( (data) => {
@@ -54,22 +46,10 @@ additivesRouter.get('/getAll', jwtAuth, jsonParser, (req, res) => {
   }).catch((err) => handleDBError(err, res));
 });
 
-additivesRouter.put('/change/:id', jwtAuth, jsonParser, (req, res) => {
-  var additiveData = req.body;
-  Additive.replaceOne({ _id: req.params.id, ownedBy: req.user.id }, additiveData).then((updateResult) => {
-    if (!updateResult.acknowledged) return handleDBError(req.params.id, res);
+additivesRouter.put('/change/:id', jwtAuth, jsonParser,
+  owned.change(Additive, 'additive', ['name', 'rawformula', 'fields', 'notes', 'relatedTo']));
 
-    res.status(200).json({ msg: 'Successfully updated additive' });
-  }).catch((err) => handleDBError(err, res));
-});
-
-additivesRouter.delete('/delete/:id', jwtAuth, jsonParser, (req, res) => {
-  Additive.deleteOne({ _id: req.params.id, ownedBy: req.user.id }).then((a) => {
-    if (a.deletedCount != 1) return handleDBError(req.params.id, res);
-
-    res.status(200).json({ msg: 'Successfully deleted additive' });
-  }).catch((err) => handleDBError(err, res));
-});
+additivesRouter.delete('/delete/:id', jwtAuth, owned.remove(Additive, 'additive'));
 
 additivesRouter.get('/getStandard', jwtAuth, jsonParser, (req, res) => {
   Additive.find({ ownedBy: 'Standard' }).then( (data) => {

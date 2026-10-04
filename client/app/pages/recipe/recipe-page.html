@@ -1,0 +1,168 @@
+<gc-page-nav current="recipe" />
+<gc-notices [notices]="notices" />
+
+<section class="inputbox">
+  <h3>Create a new glaze recipe: </h3>
+  <form class="form" (ngSubmit)="save()">
+    <div class="row">
+      <div class="col-md-6 form-group">
+        <label for="recipe-name">Recipe title: </label>
+        <input id="recipe-name" type="text" name="title" [(ngModel)]="title">
+      </div>
+      <div class="col-md-6 form-group">
+        <label for="recipe-date">Date: </label>
+        <input id="recipe-date" type="date" name="date" [(ngModel)]="date">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-10 form-group">
+        <label for="recipe-notes" class="boxlabel">Notes on the recipe: </label>
+        <textarea id="recipe-notes" name="notes" rows="3" class="form-control" [(ngModel)]="notes"></textarea>
+      </div>
+    </div>
+
+    <h4>Add materials to the recipe: </h4>
+    <div class="row">
+      <div class="col-sm-6">
+        <label for="my-mats">My materials:</label>
+        <select id="my-mats" name="my-mats" [(ngModel)]="selectedMyMaterial">
+          <option [ngValue]="null">none</option>
+          @for (mat of myMaterials(); track mat._id) {
+            <option [ngValue]="mat">{{ mat.name }}</option>
+          }
+        </select>
+        <button type="button" class="btn btn-default" (click)="addMaterial(selectedMyMaterial())">Add my material to recipe</button>
+      </div>
+      <div class="col-sm-6">
+        <label for="std-mats">Standard materials:</label>
+        <select id="std-mats" name="std-mats" [(ngModel)]="selectedStandardMaterial">
+          <option [ngValue]="null">none</option>
+          @for (mat of standardMaterials(); track mat._id) {
+            <option [ngValue]="mat">{{ mat.name }}</option>
+          }
+        </select>
+        <button type="button" class="btn btn-default" (click)="addMaterial(selectedStandardMaterial())">Add standard material to recipe</button>
+      </div>
+    </div>
+
+    <h4>Add colorants and additives to the recipe: </h4>
+    <div class="row">
+      <div class="col-sm-6">
+        <label for="my-adds">My additives:</label>
+        <select id="my-adds" name="my-adds" [(ngModel)]="selectedMyAdditive">
+          <option [ngValue]="null">none</option>
+          @for (add of myAdditives(); track add._id) {
+            <option [ngValue]="add">{{ add.name }}</option>
+          }
+        </select>
+        <button type="button" class="btn btn-default" (click)="addAdditive(selectedMyAdditive())">Add my additive / colorant</button>
+      </div>
+      <div class="col-sm-6">
+        <label for="std-adds">Standard additives:</label>
+        <select id="std-adds" name="std-adds" [(ngModel)]="selectedStandardAdditive">
+          <option [ngValue]="null">none</option>
+          @for (add of standardAdditives(); track add._id) {
+            <option [ngValue]="add">{{ add.name }}</option>
+          }
+        </select>
+        <button type="button" class="btn btn-default" (click)="addAdditive(selectedStandardAdditive())">Add standard additive / colorant</button>
+      </div>
+    </div>
+
+    @if (recipeMaterials().length) {
+      <p>Enter the amounts of the materials as a percentage or as parts by weight:</p>
+      <ol class="recipe-materials">
+        @for (material of recipeMaterials(); track $index) {
+          <li>
+            <b>{{ material.name }}</b><br>
+            <label [for]="'material-amount-' + $index">Amount: </label>
+            <input [id]="'material-amount-' + $index" type="text" [name]="'material-amount-' + $index"
+              class="material-amount" [(ngModel)]="material.amount"><br>
+            <button type="button" class="btn btn-default btn-sm" (click)="removeMaterial($index)">Remove from recipe</button>
+          </li>
+        }
+      </ol>
+    }
+
+    @if (recipeAdditives().length) {
+      <p>Enter the amounts of the additives as a percentage or as parts by weight:</p>
+      <ol class="recipe-additives">
+        @for (additive of recipeAdditives(); track $index) {
+          <li>
+            <b>{{ additive.name }}</b><br>
+            <label [for]="'additive-amount-' + $index">Amount: </label>
+            <input [id]="'additive-amount-' + $index" type="text" [name]="'additive-amount-' + $index"
+              class="additive-amount" [(ngModel)]="additive.amount"><br>
+            <button type="button" class="btn btn-default btn-sm" (click)="removeAdditive($index)">Remove from recipe</button>
+          </li>
+        }
+      </ol>
+    }
+
+    <button type="button" class="btn btn-default" (click)="compute()">Compute recipe into Unity</button>
+    <button type="submit" class="btn btn-primary">Save</button>
+  </form>
+</section>
+<br>
+
+@if (computed(); as analysis) {
+  <section class="tech-info unity-result" aria-labelledby="unity-heading">
+    <h4 id="unity-heading">Unity formula of the glaze recipe</h4>
+    <gc-unity-formula [analysis]="analysis" />
+    @if (recipeAdditives().length) {
+      Glaze additives and colorants:
+      <ol>
+        @for (additive of recipeAdditives(); track $index) {
+          <li>{{ additive.name }} : {{ additive.amount }}</li>
+        }
+      </ol>
+    }
+  </section>
+  <br>
+}
+
+<section class="tech-info saved-recipes" aria-labelledby="saved-heading">
+  <h3 id="saved-heading">My saved recipes: </h3>
+  @if (myRecipes().length) {
+    <ul>
+      @for (rec of myRecipes(); track rec._id) {
+        <li class="saved-recipe">
+          <b>{{ rec.title }}</b>
+          <button type="button" class="btn btn-default btn-xs" (click)="toggleExpanded(rec)">
+            {{ expanded().has(rec) ? 'Hide' : 'Expand to View' }}
+          </button>
+          @if (expanded().has(rec)) {
+            <div>
+              <em>Materials</em>
+              <ol>
+                @for (part of rec.materials; track $index) {
+                  <li>{{ part.name }} : {{ part.amount }}</li>
+                }
+              </ol>
+              @if (rec.additives?.length) {
+                <em>Additives:</em>
+                <ol>
+                  @for (add of rec.additives; track $index) {
+                    <li>{{ add.name }} : {{ add.amount }}</li>
+                  }
+                </ol>
+              }
+              @if (savedAnalysis(rec); as analysis) {
+                <em>Unity Formula</em>
+                <gc-unity-formula [analysis]="analysis" />
+              }
+              @if (rec.date) {
+                <div>Date: {{ rec.date | date: 'fullDate' }}</div>
+              }
+              <div>Notes: {{ firstOf(rec.notes) }}</div>
+            </div>
+          }
+          @if (showRemove()) {
+            <button type="button" class="btn btn-warning" (click)="remove(rec)">Remove from the server</button>
+          }
+        </li>
+      }
+    </ul>
+  }
+  <button type="button" class="btn btn-default" (click)="showRemove.set(!showRemove())">Remove toggle</button>
+</section>

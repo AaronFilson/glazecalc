@@ -4,20 +4,20 @@ module.exports = exports = (req, res, next) => {
   try {
     var authString = req.headers.authorization;
     var base64String = authString.split(' ')[1];
-    var authBuf = new Buffer.from(base64String, 'base64');
+    var authBuf = Buffer.from(base64String, 'base64');
     var utf8AuthString = authBuf.toString();
-    var authArr = utf8AuthString.split(':');
-
     zeroBuffer(authBuf);
-    if (authArr[0].length && authArr[1].length) {
-      req.basicHTTP = {
-        email: authArr[0],
-        password: authArr[1]
-      };
+
+    // Only the first colon separates the email; passwords may contain colons.
+    var colon = utf8AuthString.indexOf(':');
+    var email = utf8AuthString.slice(0, colon);
+    var password = utf8AuthString.slice(colon + 1);
+    if (colon > 0 && password.length) {
+      req.basicHTTP = { email: email, password: password };
       return next();
     }
   } catch (e) {
-//    console.error('basic http error : ' + e);
+    // A missing or malformed header falls through to the 401 below.
   }
   return res.status(401).json({ msg: 'could not authenticate user' });
 };

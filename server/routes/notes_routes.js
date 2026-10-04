@@ -3,6 +3,7 @@ const Note = require(__dirname + '/../models/note');
 const jsonParser = require('body-parser').json();
 const handleDBError = require(__dirname + '/../lib/handle_db_error');
 const jwtAuth = require(__dirname + '/../lib/jwt_auth');
+const owned = require(__dirname + '/../lib/owned_routes');
 
 const notesRouter = module.exports = exports = express.Router();
 
@@ -30,16 +31,7 @@ notesRouter.post('/create', jwtAuth, jsonParser, (req, res) => {
   }).catch((err) => handleDBError(err, res));
 });
 
-notesRouter.get('/getLatest', jwtAuth, jsonParser, (req, res) => {
-
-  Note.findOne({ ownedBy: req.user.id }).then((data) => {
-    if (!data) {
-      return handleDBError(req.user.id, res);
-    }
-
-    res.status(200).json(data);
-  }).catch((err) => handleDBError(err, res));
-});
+notesRouter.get('/getLatest', jwtAuth, owned.latest(Note, 'note'));
 
 notesRouter.get('/getAll', jwtAuth, jsonParser, (req, res) => {
   Note.find({ ownedBy: req.user.id }).then((data) => {
@@ -49,19 +41,7 @@ notesRouter.get('/getAll', jwtAuth, jsonParser, (req, res) => {
   }).catch((err) => handleDBError(err, res));
 });
 
-notesRouter.put('/change/:id', jwtAuth, jsonParser, (req, res) => {
-  var noteData = req.body;
-  Note.replaceOne({ _id: req.params.id, ownedBy: req.user.id }, noteData).then((updateResult) => {
-    if (!updateResult.acknowledged) return handleDBError(req.params.id, res);
+notesRouter.put('/change/:id', jwtAuth, jsonParser,
+  owned.change(Note, 'note', ['title', 'content', 'relatedCollection', 'relatedId']));
 
-    res.status(200).json({ msg: 'Successfully updated note' });
-  }).catch((err) => handleDBError(err, res));
-});
-
-notesRouter.delete('/delete/:id', jwtAuth, jsonParser, (req, res) => {
-  Note.deleteOne({ _id: req.params.id, ownedBy: req.user.id }).then((n) => {
-    if (n.deletedCount != 1) return handleDBError(req.params.id, res);
-
-    res.status(200).json({ msg: 'Successfully deleted note' });
-  }).catch((err) => handleDBError(err, res));
-});
+notesRouter.delete('/delete/:id', jwtAuth, owned.remove(Note, 'note'));
