@@ -1,12 +1,14 @@
 {
   "name": "glazecalc",
-  "version": "0.0.1",
+  "version": "0.2.0",
   "description": "Glaze calculation software to assist potters and ceramicists.",
   "main": "index.js",
   "scripts": {
     "install": "gulp",
-    "start": "mongod --dbpath=./db & node clientserver & node server",
-    "test": "mongod --dbpath=./db & mocha server/test"
+    "start": "node clientserver & node server",
+    "test": "mongod --dbpath=./db & mocha server/test",
+    "build:prod": "webpack --config webpack.config.js",
+    "test:e2e": "playwright test"
   },
   "repository": {
     "type": "git",
@@ -14,6 +16,7 @@
   },
   "keywords": [
     "glaze",
+    "glazes",
     "glazecalc",
     "potter",
     "potters",
@@ -21,7 +24,10 @@
     "ceramics",
     "firing",
     "utility",
-    "clay"
+    "clay",
+    "kiln",
+    "chart",
+    "recipes"
   ],
   "author": "Aaron Filson",
   "license": "MIT",
@@ -30,38 +36,31 @@
   },
   "homepage": "https://github.com/AaronFilson/glazecalc#readme",
   "dependencies": {
-    "angular": "1.5",
-    "angular-route": "1.5",
-    "babel-core": "latest",
-    "babel-loader": "latest",
-    "babel-preset-es2015": "latest",
-    "bcrypt": "0.8.5",
-    "body-parser": "1.15.2",
+    "angular": "1.8.3",
+    "angular-route": "1.8.3",
+    "bcrypt": "6.0.0",
+    "body-parser": "1.20.8",
     "bootstrap-sass": "^3.3.7",
-    "express": "^4.14.0",
-    "gulp": "^3.9.1",
-    "gulp-babel": "latest",
-    "gulp-minify-css": "latest",
-    "gulp-protractor": "^3.0.0",
-    "gulp-sass": "^2.2.0",
-    "gulp-sourcemaps": "^1.6.0",
-    "gulp-util": "^3.0.7",
-    "html-loader": "latest",
-    "jsonwebtoken": "5.7.0",
-    "mongoose": "4.8",
-    "webpack": "latest",
-    "webpack-stream": "latest"
+    "express": "4.22.3",
+    "gulp": "5.0.1",
+    "gulp-clean-css": "4.3.0",
+    "gulp-cli": "3.1.0",
+    "gulp-sass": "6.0.1",
+    "html-loader": "4.2.0",
+    "jsonwebtoken": "9.0.2",
+    "mongoose": "7.8.12",
+    "sass": "1.105.1",
+    "webpack": "5.111.1",
+    "webpack-stream": "7.0.0"
   },
   "devDependencies": {
-    "angular-mocks": "^1.5.0",
-    "chai": "^3.5.0",
-    "chai-http": "^3.0.0",
-    "jasmine-core": "^2.5.2",
-    "karma": "^0.13.22",
-    "karma-chrome-launcher": "^2.0.0",
-    "karma-firefox-launcher": "^1.0.0",
-    "karma-jasmine": "^1.0.2",
-    "mocha": "^3.0.2",
-    "protractor": "^4.0.11"
+    "@playwright/test": "1.63.0",
+    "chai": "4.5.0",
+    "chai-http": "4.4.0",
+    "mocha": "12.0.3",
+    "webpack-cli": "7.2.3"
+  },
+  "engines": {
+    "node": ">=20.9.0"
   }
 }

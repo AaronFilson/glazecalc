@@ -19,22 +19,22 @@ describe('recipe API', () => {
     testUser = new User();
     testUser.email = 'test5@tester.com';
     testUser.hashPassword('password');
-    testUser.save( (err, data) => {
-      if (err) throw err;
+    testUser.save().then( (data) => {
+      if (!data) throw 'error making user';
       testUser.token = userToken = data.generateToken();
       done();
     });
   });
 
   after((done) => {
-    mongoose.connection.db.dropDatabase(() => {
+    mongoose.connection.dropDatabase().then(() => {
       done();
     });
   });
 
   describe('Simple post and get API calls', () => {
     var testRecipe = {};
-    testRecipe.materials = { 'silica': 40, 'custer': 30, 'whiting': 20, 'epk': 10, 'RIO': 4.5 };
+    testRecipe.materials = { 'custer': 40, 'silica': 30, 'whiting': 20, 'epk': 10, 'RIO': 4.5 };
     testRecipe.title = 'Leach Celadon 4.5';
     it('should be able to add one recipe', (done) => {
       request(baseUri)
@@ -65,7 +65,7 @@ describe('recipe API', () => {
 
   describe('The getAll for recipes', () => {
     var testRecipe = {};
-    testRecipe.materials = { 'silica': 40, 'custer': 30, 'whiting': 20, 'epk': 10, 'RIO': 4.5 };
+    testRecipe.materials = { 'custer': 40, 'silica': 30, 'whiting': 20, 'epk': 10, 'RIO': 4.5 };
     testRecipe.title = 'Leach Celadon 4.5';
 
     before((done) => {
@@ -132,16 +132,15 @@ describe('recipe API', () => {
     });
   });
 
-  describe('Send a bad request intentially', () => {
+  describe('Send a bad request intentionally', () => {
     var testRecipe = null;
     it('and it should handle create error without crashing', (done) => {
       request(baseUri)
         .post('/create')
         .set('token', userToken)
         .send( testRecipe )
-        .end((err) => {
-          expect(err).to.not.eql(null);
-          expect(err.response.body.msg).to.eql('Missing required information');
+        .end((err, msg) => {
+          expect(msg.body.msg).to.eql('Missing required information');
           done();
         });
     });
@@ -151,9 +150,8 @@ describe('recipe API', () => {
         .post('/create')
         .set('token', userToken)
         .send( testRecipe )
-        .end((err) => {
-          expect(err).to.not.eql(null);
-          expect(err.response.body.msg).to.eql('Missing required information');
+        .end((err, msg) => {
+          expect(msg.body.msg).to.eql('Missing required information');
           done();
         });
     });

@@ -4,7 +4,7 @@ module.exports = exports = (req, res, next) => {
   try {
     var authString = req.headers.authorization;
     var base64String = authString.split(' ')[1];
-    var authBuf = new Buffer(base64String, 'base64');
+    var authBuf = new Buffer.from(base64String, 'base64');
     var utf8AuthString = authBuf.toString();
     var authArr = utf8AuthString.split(':');
 
@@ -17,7 +17,7 @@ module.exports = exports = (req, res, next) => {
       return next();
     }
   } catch (e) {
-    console.log('basic http error : ' + e);
+//    console.error('basic http error : ' + e);
   }
   return res.status(401).json({ msg: 'could not authenticate user' });
 };

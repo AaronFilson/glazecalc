@@ -59,23 +59,18 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-3 col-sm-4 col-xs-8">
-        <label for="manualformulaweight">Manual entry of fired atomic weight: </label>
-        <input id="manualformulaweight" type="text" name="manualformulaweight" data-ng-model="matForm.formulaweight">
-      </div>
-      <div class="col-lg-3 col-sm-4 col-xs-8">
-        <label for="manualmolecularweight">Manual entry of molecular weight: </label>
-        <input id="manualmolecularweight" type="text" name="manualmolecularweight" data-ng-model="matForm.molecularweight">
-      </div>
-      <div class="col-lg-3 col-sm-4 col-xs-8">
-        <label for="manualequivalentweight">Manual entry of equivalent molecular weight: </label>
-        <input id="manualequivalentweight" type="text" name="manualequivalentweight" data-ng-model="matForm.equivalent">
-      </div>
-      <div class="col-lg-3 col-sm-4 col-xs-8">
+      <div class="col-lg-4 col-sm-4 col-xs-8">
         <label for="LOI">Loss on Ignition - LOI (percentage): </label>
         <input id="LOI" type="text" name="LOI" data-ng-model="matForm.loi">
       </div>
+      <div class="col-lg-4 col-sm-4 col-xs-8">
+        <label for="manualmolecularweight">Raw molecular weight of the formula (used only if LOI is blank): </label>
+        <input id="manualmolecularweight" type="text" name="manualmolecularweight" data-ng-model="matForm.molecularweight">
+      </div>
     </div>
+    <p>
+      The equivalent and fired weights are calculated from the formula and LOI when you save.
+    </p>
 
     <div>
       <h4>Enter the formula (fired): </h4>
@@ -156,7 +151,7 @@
 <br>
 
 <section data-ng-init="getStandard()" class="tech-info">
-  <h4>The standard server materials: </h4>
+  <h4>The standard materials: </h4>
   <table class="table table-bordered">
     <tr>
       <th>Name</th> <th>Equivalent Weight</th> <th>Fired Weight</th> <th>Notes</th>

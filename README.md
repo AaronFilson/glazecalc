@@ -1,19 +1,34 @@
 # glazecalc
 Glaze calculation software to assist potters and ceramicists.
 
-This software package is under development at present. It aims to enable the formulation of glazes on a device of your choice, such as a PC web browser, an iPhone, and other platforms. It is open sourced under the MIT license, which is available for viewing under LICENSE.
+This software package is under development at present. It aims to enable the formulation of glazes on a device of your choice, such as a PC web browser, an iPhone or Android device, and other platforms. It is open sourced under the MIT license, which is available for viewing under LICENSE.
 
-For local install of the Glaze Calc, you will need Node, npm, and Mongo. Clone the
+For local install of the Glaze Calc, you will need Node 20.9 or newer (tested on Node 24 LTS),
+npm, and MongoDB 7.0. Clone the
 repository to your machine, and create a directory 'db' alongside (at the same level) as the
 server and app directories. Run the command 'npm install' on your favorite terminal (in the root
-directory of the project, which contains the package.json file). Then run the command 'gulp'.
+directory of the project, which contains the package.json file). The install also runs 'gulp'
+to build the app into the 'build' directory; 'npm run build:prod' makes a minified bundle.
 After the install, try the command 'npm test', which should run a series of basic tests on
 the project. If there are any failures on the tests, it may be there was a problem
-with the install or an unexpected version issue.
+with the install or an unexpected version issue. The 'npm start' and 'npm test' scripts
+use '&' to run several programs at once, so on Windows run them from Git Bash or WSL.
+
+Browser tests use Playwright. Install the browser once with 'npx playwright install chromium',
+start mongod, make sure nothing else is using port 4000, and run 'npm run test:e2e'. The tests
+build the app, start both servers, and use their own 'glazecalc_e2e' database, which they reset
+and fill with the standard materials each run. 'npx playwright show-report' opens the results.
+
+The standard materials and additives are loaded with mongoimport (part of the MongoDB
+Database Tools). Upsert mode refreshes them without touching users' own entries:
+
+    mongoimport --db glazecalc_app_dev --collection materials --mode upsert --file materials.json
+    mongoimport --db glazecalc_app_dev --collection additives --mode upsert --file additives.json
 
 Once installed, use 'npm start' on the terminal to start the server and client.
-The app is programmed to use port 4001 on the localhost (generally 127.0.0.1 if
-you prefer IPv4 addresses).
+The app is served on port 3000 of the localhost (set CLIENTPORT to change it), and it
+calls the API server on port 4000 of the same host. When hosting on a domain, set
+HOSTURL (for example 'http://glazecalcapp.com:') so the API accepts requests from the app.
 
 Create a user account to store the recipes and materials. If there is any chance
 the app will be exposed to multiple users or the internet, set the environment
@@ -22,8 +37,3 @@ variable APP_SECRET on the terminal to your secret phrase or hex value. Changing
 
 There is no size limit imposed on users of the Glaze Calc app, so if you host it
 on the internet, you may want to extend this package to do so.
-
-Phase two planning is started, so please use Github's Issues or Pull Requests to
-send in your ideas. Enjoy!
-
--Aaron

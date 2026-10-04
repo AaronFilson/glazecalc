@@ -9,7 +9,8 @@ const materialsRouter = module.exports = exports = express.Router();
 materialsRouter.post('/create', jwtAuth, jsonParser, (req, res) => {
   var incMaterial = req.body || {};
   if (!req.user.id || !incMaterial.fields || !incMaterial.name
-    || !incMaterial.formulaweight || !incMaterial.loi || !incMaterial.molecularweight
+    // An LOI of 0 is valid (silica, feldspars), so only reject a missing one.
+    || !incMaterial.formulaweight || incMaterial.loi == null || !incMaterial.molecularweight
     || !incMaterial.percentmole || !incMaterial.equivalent) {
     return res.status(400).json( { msg: 'Missing required information' } );
   }
@@ -31,54 +32,54 @@ materialsRouter.post('/create', jwtAuth, jsonParser, (req, res) => {
     return res.status(500).json( { msg: 'Error in creating the new material.' } );
   }
 
-  newestMaterial.save((err, data) => {
-    if (err) handleDBError(err, res);
+  newestMaterial.save().then((data) => {
+    if (!data) return handleDBError(req.user.id, res);
 
     res.status(200).json(data);
-  });
+  }).catch((err) => handleDBError(err, res));
 });
 
 materialsRouter.get('/getLatest', jwtAuth, jsonParser, (req, res) => {
 
-  Material.findOne({ ownedBy: req.user.id }, (err, data) => {
-    if (err) {
+  Material.findOne({ ownedBy: req.user.id }).then(( data) => {
+    if (!data) {
       console.log('error: ', err);
-      return handleDBError(err, res);
+      return handleDBError(req.user.id, res);
     }
 
     res.status(200).json(data);
-  });
+  }).catch((err) => handleDBError(err, res));
 });
 
 materialsRouter.get('/getAll', jwtAuth, jsonParser, (req, res) => {
-  Material.find({ ownedBy: req.user.id }, (err, data) => {
-    if (err) return handleDBError(err, res);
+  Material.find({ ownedBy: req.user.id }).then( (data) => {
+    if (!data) return handleDBError(req.user.id, res);
 
     res.status(200).json(data);
-  });
+  }).catch((err) => handleDBError(err, res));
 });
 
 materialsRouter.put('/change/:id', jwtAuth, jsonParser, (req, res) => {
-  var materialData = req.body.material;
-  Material.update({ _id: req.params.id, ownedBy: req.user.id }, materialData, (err) => {
-    if (err) return handleDBError(err, res);
+  var materialData = req.body;
+  Material.replaceOne({ _id: req.params.id, ownedBy: req.user.id }, materialData).then((updateResult) => {
+    if (!updateResult.acknowledged) return handleDBError(req.params.id, res);
 
     res.status(200).json({ msg: 'Successfully updated material' });
-  });
+  }).catch((err) => handleDBError(err, res));
 });
 
 materialsRouter.delete('/delete/:id', jwtAuth, jsonParser, (req, res) => {
-  Material.remove({ _id: req.params.id, ownedBy: req.user.id }, (err) => {
-    if (err) return handleDBError(err, res);
+  Material.deleteOne({ _id: req.params.id, ownedBy: req.user.id }).then((m) => {
+    if (m.deletedCount != 1) return handleDBError(req.params.id, res);
 
     res.status(200).json({ msg: 'Successfully deleted material' });
-  });
+  }).catch((err) => handleDBError(err, res));
 });
 
 materialsRouter.get('/getStandard', jwtAuth, jsonParser, (req, res) => {
-  Material.find({ ownedBy: 'Standard' }, (err, data) => {
-    if (err) return handleDBError(err, res);
+  Material.find({ ownedBy: 'Standard' }).then((data) => {
+    if (!data) return handleDBError('Standard', res);
 
     res.status(200).json(data);
-  });
+  }).catch((err) => handleDBError(err, res));
 });

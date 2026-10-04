@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
-mongoose.Promise = global.Promise;
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
+const appSecret = require(__dirname + '/../lib/app_secret');
 
 var userSchema = new mongoose.Schema({
   email: { type: String, required: true },
@@ -21,7 +21,7 @@ userSchema.methods.comparePassword = function(password) {
 };
 
 userSchema.methods.generateToken = function() {
-  return jwt.sign({ id: this._id }, process.env.APP_SECRET || 'glazedefault');
+  return jwt.sign({ id: this._id }, appSecret, { algorithm: 'HS256', expiresIn: '7d' });
 };
 
 module.exports = exports = mongoose.model('User', userSchema);

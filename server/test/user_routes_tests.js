@@ -1,4 +1,4 @@
-process.env.MONGOLAB_URI = 'mongodb://localhost/u_r_test';
+process.env.MONGOLAB_URI = 'mongodb://127.0.0.1/u_r_test';
 require(__dirname + '/../../server');
 const chai = require('chai');
 const chaiHttp = require('chai-http');
@@ -18,18 +18,18 @@ describe('user API', () => {
     testUser = new User();
     testUser.email = 'test3@tester.com';
     testUser.hashPassword('password');
-    testUser.save( (err, data) => {
-      if (err) throw err;
+    testUser.displayname = 'test 3';
+    testUser.save().then(function (data) {
       testUser.token = userToken = data.generateToken();
       done();
     });
   });
 
-  after((done) => {
-    mongoose.connection.db.dropDatabase(() => {
-      done();
-    });
-  });
+//  after((done) => {
+//    mongoose.connection.dropDatabase().then(() => {
+//      done();
+//    });
+//  });
 
   describe('check if user exists', () => {
     it('should be able to verify that a user exists', (done) => {
@@ -67,6 +67,102 @@ describe('user API', () => {
           expect(err).to.eql(null);
           expect(res.body.msg).to.eql('User deleted');
           expect(res).to.have.status(200);
+          done();
+        });
+    });
+  });
+
+  describe('changes to other accounts', () => {
+    var victim;
+    var attackerToken;
+
+    before(() => {
+      victim = new User({ email: 'victim@tester.com' });
+      victim.hashPassword('password');
+      var attacker = new User({ email: 'attacker@tester.com' });
+      attacker.hashPassword('password');
+      return Promise.all([victim.save(), attacker.save()]).then((saved) => {
+        attackerToken = saved[1].generateToken();
+      });
+    });
+
+    it('should not let a user update another account', () => {
+      return request(baseUri)
+        .put('/usersettings/' + victim._id)
+        .set('token', attackerToken)
+        .send({ email: 'stolen@tester.com' })
+        .then((res) => {
+          expect(res).to.have.status(403);
+          return User.findById(victim._id);
+        })
+        .then((user) => expect(user.email).to.eql('victim@tester.com'));
+    });
+
+    it('should not let a user delete another account', () => {
+      return request(baseUri)
+        .delete('/deleteuser/' + victim._id)
+        .set('token', attackerToken)
+        .then((res) => {
+          expect(res).to.have.status(403);
+          return User.findById(victim._id);
+        })
+        .then((user) => expect(user).to.not.eql(null));
+    });
+
+    it('should ignore role and password in settings changes', () => {
+      var victimToken = victim.generateToken();
+      return request(baseUri)
+        .put('/usersettings/' + victim._id)
+        .set('token', victimToken)
+        .send({ role: 'admin', password: 'plaintext', displayname: 'Victim' })
+        .then((res) => {
+          expect(res).to.have.status(200);
+          return User.findById(victim._id);
+        })
+        .then((user) => {
+          expect(user.role).to.eql(undefined);
+          expect(user.displayname).to.eql('Victim');
+          expect(user.comparePassword('password')).to.eql(true);
+        });
+    });
+
+    it('should not let a user take an email already in use', () => {
+      return request(baseUri)
+        .put('/usersettings/' + victim._id)
+        .set('token', victim.generateToken())
+        .send({ email: 'attacker@tester.com' })
+        .then((res) => expect(res).to.have.status(400));
+    });
+
+    it('should not sign up a second account with the same email', () => {
+      return request(baseUri)
+        .post('/signup')
+        .send({ email: 'victim@tester.com', password: 'password123' })
+        .then((res) => expect(res).to.have.status(400));
+    });
+  });
+
+  describe('Send a bad verify request intentionally', () => {
+    var badtoken = null;
+    it('and it should handle filter without crashing', (done) => {
+      request(baseUri)
+        .get('/verify')
+        .set('token', badtoken)
+        .end((err, res) => {
+          expect(err).to.eql(null);
+          expect(res.status).to.eql(200);
+          expect(res.body.msg).to.eql('No token yet, so there is no email to find. Goodbye.');
+          done();
+        });
+    });
+
+    it('and it should handle no token without crashing a second time', (done) => {
+      request(baseUri)
+        .get('/verify')
+        .set( { trashdata: 'not anything good' } )
+        .end((err, res) => {
+          expect(err).to.eql(null);
+          expect(res.body.msg).to.eql('No token yet, so there is no email to find. Goodbye.');
           done();
         });
     });

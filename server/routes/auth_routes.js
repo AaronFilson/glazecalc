@@ -17,21 +17,20 @@ authRouter.post('/signup', jsonParser, (req, res) => {
       .json({ msg: 'Please enter a password 8 characters or longer.' });
   }
 
-  var newUser = new User();
-  newUser.email = req.body.email;
-  newUser.hashPassword(req.body.password);
-  newUser.save((err, data) => {
-    if (err) return handleDBError(err, res);
-    res.status(200).json({ token: data.generateToken(), email: newUser.email });
-  });
+  User.findOne({ email: req.body.email }).then((existing) => {
+    if (existing) return res.status(400).json({ msg: 'An account with that email already exists.' });
+
+    var newUser = new User();
+    newUser.email = req.body.email;
+    newUser.hashPassword(req.body.password);
+    return newUser.save().then((data) => {
+      res.status(200).json({ token: data.generateToken(), email: newUser.email });
+    });
+  }).catch((err) => handleDBError(err, res));
 });
 
 authRouter.get('/signin', basicHTTP, (req, res) => {
-
-  User.findOne({ 'email': req.basicHTTP.email }, (err, user) => {
-
-    if (err) return handleDBError(err, res);
-
+  User.findOne({ 'email': req.basicHTTP.email }).then( (user) => {
     if (!user) return res.status(401).json({ msg: 'no user exists' });
 
     if (!user.comparePassword(req.basicHTTP.password)) {
@@ -39,5 +38,5 @@ authRouter.get('/signin', basicHTTP, (req, res) => {
     }
 
     res.json({ msg: 'Success in signin', token: user.generateToken(), email: user.email });
-  });
+  }).catch((err) => handleDBError(err, res));
 });

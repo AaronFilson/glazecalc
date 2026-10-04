@@ -12,8 +12,14 @@ require('./home')(glazeCalcApp);
 require('./material')(glazeCalcApp);
 require('./notes')(glazeCalcApp);
 require('./recipe')(glazeCalcApp);
+// require('./reset')(glazeCalcApp);
 require('./services')(glazeCalcApp);
 require('./trash')(glazeCalcApp);
+
+// AngularJS 1.6+ defaults to '#!/' links; keep the '#/' links the views use.
+glazeCalcApp.config(['$locationProvider', function($locationProvider) {
+  $locationProvider.hashPrefix('');
+}]);
 
 glazeCalcApp.config(['$routeProvider', function(routes) {
   routes
@@ -57,6 +63,10 @@ glazeCalcApp.config(['$routeProvider', function(routes) {
       controller: 'NotesController',
       templateUrl: '/views/notes_view.html'
     })
+    // .when('/reset', {
+    //   controller: 'ResetController',
+    //   templateUrl: '/views/reset_view.html'
+    // })
     .when('/', {
       redirectTo: '/signin'
     })

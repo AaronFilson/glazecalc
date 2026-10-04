@@ -15,7 +15,7 @@ module.exports = function(app) {
         }
         auth.createUser(user, function(err) {
           if (err) {
-            $scope.errors.push(err);
+            $scope.errors.push(err.data && err.data.msg ? err.data.msg : 'Error: could not create the account.');
             return console.dir('Error in signing up user : ', err);
           }
           $scope.updateEmail();

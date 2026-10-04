@@ -1,24 +1,11 @@
-const webpack = require('webpack');
+const path = require('path');
 
+// Production bundle: webpack minifies in production mode.
 module.exports = {
-  module: {
-    loaders: [{
-      test: /\.js$/,
-      exclude: /node_modules/,
-      loader: 'babel-loader'
-    }]
-  },
-  plugins: [
-    new webpack.optimize.UglifyJsPlugin({
-      compress: {
-        warnings: false
-      },
-      output: {
-        comments: false
-      },
-      mangle: {
-        except: ['$']
-      }
-    })
-  ]
+  mode: 'production',
+  entry: './app/js/client.js',
+  output: {
+    path: path.resolve(__dirname, 'build'),
+    filename: 'bundle.js'
+  }
 };

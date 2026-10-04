@@ -26,51 +26,44 @@ firingRouter.post('/create', jwtAuth, jsonParser, (req, res) => {
     return res.status(500).json( { msg: 'Error in creating the new firing chart.' } );
   }
 
-  newestFiring.save((err, data) => {
-    if (err) handleDBError(err, res);
+  newestFiring.save().then((data) => {
+    if (!data) return handleDBError(req.user.id, res);
 
     res.status(200).json(data);
-  });
+  }).catch((err) => handleDBError(err, res));
 });
 
 firingRouter.get('/getLatest', jwtAuth, jsonParser, (req, res) => {
 
-  Firing.findOne({ ownedBy: req.user.id }, (err, data) => {
-    if (err) {
-      console.log('error: ', err);
-      return handleDBError(err, res);
-    }
-
+  Firing.findOne({ ownedBy: req.user.id }).then( (data) => {
+    if (!data) { return handleDBError(req.user.id, res); }
     res.status(200).json(data);
-  });
+  }).catch((err) => handleDBError(err, res));
 });
 
 firingRouter.get('/getAll', jwtAuth, jsonParser, (req, res) => {
-  Firing.find({ ownedBy: req.user.id }, (err, data) => {
-    if (err) return handleDBError(err, res);
-
+  Firing.find({ ownedBy: req.user.id }).then((data) => {
+    if (!data) return handleDBError(req.user.id, res);
     res.status(200).json(data);
-  });
+  }).catch((err) => handleDBError(err, res));
 });
 
 firingRouter.put('/change/:id', jwtAuth, jsonParser, (req, res) => {
   var firingData = req.body;
-
   if (!req.params.id || !req.user.id || !firingData.title || !firingData.ownedBy
      || !firingData.rows || !firingData.fieldsIncluded) {
     return res.status(400).json( { msg: 'Missing required information' } );
   }
-  Firing.update({ _id: req.params.id, ownedBy: req.user.id }, firingData, { overwrite: true }, (err) => {
-    if (err) return handleDBError(err, res);
 
+  Firing.replaceOne({ _id: req.params.id, ownedBy: req.user.id }, firingData).then((updateResult) => {
+    if (!updateResult.acknowledged) return handleDBError(req.params.id, res);
     res.status(200).json({ msg: 'Successfully updated firing' });
-  });
+  }).catch((err) => handleDBError(err, res));
 });
 
 firingRouter.delete('/delete/:id', jwtAuth, jsonParser, (req, res) => {
-  Firing.remove({ _id: req.params.id, ownedBy: req.user.id }, (err) => {
-    if (err) return handleDBError(err, res);
-
+  Firing.deleteOne({ _id: req.params.id, ownedBy: req.user.id }).then( (f) => {
+    if (f.deletedCount != 1) return handleDBError(req.params.id, res);
     res.status(200).json({ msg: 'Successfully deleted firing' });
-  });
+  }).catch((err) => handleDBError(err, res));
 });

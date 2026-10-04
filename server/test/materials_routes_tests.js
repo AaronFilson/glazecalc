@@ -1,4 +1,4 @@
-process.env.MONGOLAB_URI = 'mongodb://localhost/m_test';
+process.env.MONGOLAB_URI = 'mongodb://127.0.0.1/m_test';
 require(__dirname + '/../../server');
 const chai = require('chai');
 const chaiHttp = require('chai-http');
@@ -7,7 +7,7 @@ const expect = chai.expect;
 const request = chai.request;
 const mongoose = require('mongoose');
 var PORT = process.env.PORT || 4000;
-var baseUri = 'localhost:' + PORT + '/materials';
+var baseUri = '127.0.0.1:' + PORT + '/materials';
 const User = require(__dirname + '/../models/user');
 var userToken;
 var testUser;
@@ -31,15 +31,15 @@ describe('materials API', () => {
     testUser = new User();
     testUser.email = 'test8@tester.com';
     testUser.hashPassword('password');
-    testUser.save( (err, data) => {
-      if (err) throw err;
+    testUser.save().then((data) => {
+      if (!data) throw 'err';
       testUser.token = userToken = data.generateToken();
       done();
     });
   });
 
   after((done) => {
-    mongoose.connection.db.dropDatabase(() => {
+    mongoose.connection.dropDatabase().then(() => {
       done();
     });
   });
@@ -136,6 +136,59 @@ describe('materials API', () => {
           expect(res).to.have.status(200);
           done();
         });
+    });
+  });
+
+  describe('Send a bad post request intentionally', () => {
+    var mattest = null;
+    it('and it should handle create error without crashing', (done) => {
+      request(baseUri)
+        .post('/create')
+        .set('token', userToken)
+        .send( mattest )
+        .end((err, msg) => {
+          expect(msg.status).to.eql(400);
+          expect(msg.body.msg).to.eql('Missing required information');
+          done();
+        });
+    });
+
+    it('and it should handle error without crashing a second time', (done) => {
+      request(baseUri)
+        .post('/create')
+        .set('token', userToken)
+        .send( { trashdata: 'not anything good' } )
+        .end((err, msg) => {
+          expect(msg.body.msg).to.eql('Missing required information');
+          done();
+        });
+    });
+  });
+
+  describe('Materials with no loss on ignition', () => {
+    it('should accept an LOI of 0', () => {
+      var silica = Object.assign({}, testMaterial, {
+        name: 'silica', loi: 0, fields: [{ name: 'SiO2', amount: 1, amountUnity: 1 }],
+        equivalent: 60.08, formulaweight: 60.08, molecularweight: 60.08
+      });
+      return request(baseUri)
+        .post('/create')
+        .set('token', userToken)
+        .send(silica)
+        .then((res) => {
+          expect(res).to.have.status(200);
+          expect(res.body.loi).to.eql(0);
+        });
+    });
+
+    it('should still reject a missing LOI', () => {
+      var noLoi = Object.assign({}, testMaterial);
+      delete noLoi.loi;
+      return request(baseUri)
+        .post('/create')
+        .set('token', userToken)
+        .send(noLoi)
+        .then((res) => expect(res).to.have.status(400));
     });
   });
 });

@@ -1,4 +1,4 @@
-process.env.MONGOLAB_URI = 'mongodb://localhost/firing_test';
+process.env.MONGOLAB_URI = 'mongodb://127.0.0.1/firing_test';
 require(__dirname + '/../../server');
 const chai = require('chai');
 const chaiHttp = require('chai-http');
@@ -7,7 +7,7 @@ const expect = chai.expect;
 const request = chai.request;
 const mongoose = require('mongoose');
 var PORT = process.env.PORT || 4000;
-var baseUri = 'localhost:' + PORT + '/firing';
+var baseUri = '127.0.0.1:' + PORT + '/firing';
 const User = require(__dirname + '/../models/user');
 var userToken;
 var testUser;
@@ -26,15 +26,15 @@ describe('firing API', () => {
     testUser = new User();
     testUser.email = 'test7@tester.com';
     testUser.hashPassword('password');
-    testUser.save( (err, data) => {
-      if (err) throw err;
+    testUser.save().then (function(data){
+      if (!data) throw err;
       testUser.token = userToken = data.generateToken();
       done();
     });
   });
 
   after((done) => {
-    mongoose.connection.db.dropDatabase(() => {
+    mongoose.connection.dropDatabase().then(() => {
       done();
     });
   });
@@ -136,4 +136,31 @@ describe('firing API', () => {
         });
     });
   });
+
+  describe('Send a bad post request intentionally', () => {
+    var firingtest = null;
+    it('and it should handle create error without crashing', (done) => {
+      request(baseUri)
+        .post('/create')
+        .set('token', userToken)
+        .send( firingtest )
+        .end((err, msg) => {
+          expect(msg.status).to.eql(400);
+          expect(msg.body.msg).to.eql('Missing required information');
+          done();
+        });
+    });
+
+    it('and it should handle error without crashing a second time', (done) => {
+      request(baseUri)
+        .post('/create')
+        .set('token', userToken)
+        .send( { trashdata: 'not anything good' } )
+        .end((err, msg) => {
+          expect(msg.body.msg).to.eql('Missing required information');
+          done();
+        });
+    });
+  });
+
 });

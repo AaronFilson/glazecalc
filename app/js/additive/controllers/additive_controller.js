@@ -30,7 +30,7 @@ module.exports = function(app) {
 
         additiveService.create(addCopy, function(err, data) {
           if (err) {
-            $scope.errors.push(err);
+            $scope.errors.push((err.data && err.data.msg) || 'Error: the request to the server failed.');
             console.log(err.msg);
           } else {
             $scope.serverMessages.push('Success. Additive added to database.');

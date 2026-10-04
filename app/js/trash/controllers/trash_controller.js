@@ -15,7 +15,7 @@ module.exports = function(app) {
         }
         trashService.create(trash, function(err) {
           if (err) {
-            $scope.errors.push(err);
+            $scope.errors.push((err.data && err.data.msg) || 'Error: the request to the server failed.');
             return console.dir('Error: ', err);
           }
         });

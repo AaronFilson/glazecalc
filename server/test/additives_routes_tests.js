@@ -1,17 +1,18 @@
-process.env.MONGOLAB_URI = 'mongodb://localhost/m_test';
-require(__dirname + '/../../server');
+process.env.MONGOLAB_URI = 'mongodb://127.0.0.1:27017/add_test';
+var app = require(__dirname + '/../../server');
 const chai = require('chai');
 const chaiHttp = require('chai-http');
 chai.use(chaiHttp);
 const expect = chai.expect;
 const request = chai.request;
-const mongoose = require('mongoose');
 var PORT = process.env.PORT || 4000;
-var baseUri = 'localhost:' + PORT + '/additives';
+var baseUri = '127.0.0.1:' + PORT + '/additives';
 const User = require(__dirname + '/../models/user');
 var userToken;
 var testUser;
 var gotAdditive;
+
+const mongoose = require('mongoose');
 
 var testAdditive = {};
 testAdditive.fields = [{ name: 'Iron', amount: 1 }, { name: 'Clay', amount: 1 }];
@@ -22,18 +23,19 @@ testAdditive.relatedTo = ['RIO', 'Rust', 'Clay'];
 describe('additives API', () => {
 
   before((done) => {
+    
     testUser = new User();
     testUser.email = 'test9@tester.com';
     testUser.hashPassword('password');
-    testUser.save( (err, data) => {
-      if (err) throw err;
-      testUser.token = userToken = data.generateToken();
+    var p = testUser.save();
+    p.then(function(doc) {
+      testUser.token = userToken = doc.generateToken();
       done();
     });
   });
 
   after((done) => {
-    mongoose.connection.db.dropDatabase(() => {
+    mongoose.connection.dropDatabase().then(() => {
       done();
     });
   });
@@ -128,6 +130,33 @@ describe('additives API', () => {
           expect(err).to.eql(null);
           expect(res.body.msg).to.eql('Successfully deleted additive');
           expect(res).to.have.status(200);
+          done();
+        });
+    });
+  });
+
+  describe('Send a bad post request intentionally', () => {
+    var testAd = null;
+    it('and it should handle create error without crashing', (done) => {
+      request(baseUri)
+        .post('/create')
+        .set('token', userToken)
+        .send( testAd )
+        .end((err, msg) => {
+          expect(msg).to.not.eql(null);
+          expect(msg.body.msg).to.eql('Missing required information');
+          done();
+        });
+    });
+
+    it('and it should handle error without crashing a second time', (done) => {
+      request(baseUri)
+        .post('/create')
+        .set('token', userToken)
+        .send( testAd )
+        .end((err, msg) => {
+          expect(msg).to.not.eql(null);
+          expect(msg.body.msg).to.eql('Missing required information');
           done();
         });
     });

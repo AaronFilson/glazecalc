@@ -1,4 +1,4 @@
-process.env.MONGOLAB_URI = 'mongodb://localhost/test_a';
+process.env.MONGOLAB_URI = 'mongodb://127.0.0.1/test_advice';
 require(__dirname + '/../../server');
 const chai = require('chai');
 const chaiHttp = require('chai-http');
@@ -7,7 +7,7 @@ const expect = chai.expect;
 const request = chai.request;
 const mongoose = require('mongoose');
 var PORT = process.env.PORT || 4000;
-var baseUri = 'localhost:' + PORT + '/advice';
+var baseUri = '127.0.0.1:' + PORT + '/advice';
 const User = require(__dirname + '/../models/user');
 var userToken;
 var testUser;
@@ -20,17 +20,17 @@ describe('advice API', () => {
     testUser.email = 'test6@advice.com';
     testUser.hashPassword('password');
     testUser.role = 'admin';
-    testUser.save( (err, data) => {
-      if (err) throw err;
+    testUser.save().then((data) => {
+      if (!data) throw "err";
       testUser.token = userToken = data.generateToken();
       done();
     });
   });
 
   after((done) => {
-    mongoose.connection.db.dropDatabase(() => {
+//    mongoose.connection.dropDatabase().then(() => {
       done();
-    });
+//    });
   });
 
   describe('Simple post and get API calls', () => {
@@ -66,28 +66,28 @@ describe('advice API', () => {
   });
 
   describe('The getAll for advices', () => {
-    var testAdvice = {};
-    testAdvice.content = 'Wear protective glasses when checking kilns.';
-    testAdvice.tags = ['test', 'test tag', 'test tags here', 'test two', 'advice tag'];
-    testAdvice.title = 'Test Advice 2';
+    var testAdvice2 = {};
+    testAdvice2.content = 'Wear protective glasses when checking kilns.';
+    testAdvice2.tags = ['test', 'test tag', 'test tags here', 'test two', 'advice tag'];
+    testAdvice2.title = 'Test Advice 2';
 
     before((done) => {
       request(baseUri)
         .post('/create')
         .set('token', userToken)
-        .send(testAdvice)
+        .send(testAdvice2)
         .end((err) => {
           if (err) throw err;
           request(baseUri)
             .post('/create')
             .set('token', userToken)
-            .send(testAdvice)
+            .send(testAdvice2)
             .end((err) => {
               if (err) throw err;
               request(baseUri)
                 .post('/create')
                 .set('token', userToken)
-                .send(testAdvice)
+                .send(testAdvice2)
                 .end((err) => {
                   if (err) throw err;
                   done();
@@ -130,6 +130,31 @@ describe('advice API', () => {
           expect(err).to.eql(null);
           expect(res.body.msg).to.eql('Successfully deleted advice');
           expect(res).to.have.status(200);
+          done();
+        });
+    });
+  });
+
+  describe('Send a bad post request intentionally', () => {
+    var testAd = null;
+    it('and it should handle create error without crashing', (done) => {
+      request(baseUri)
+        .post('/create')
+        .set('token', userToken)
+        .send( testAd )
+        .end((err, msg) => {
+          expect(msg.body.msg).to.eql('Missing required information');
+          done();
+        });
+    });
+
+    it('and it should handle error without crashing a second time', (done) => {
+      request(baseUri)
+        .post('/create')
+        .set('token', userToken)
+        .send( testAd )
+        .end((err, msg) => {
+          expect(msg.body.msg).to.eql('Missing required information');
           done();
         });
     });
