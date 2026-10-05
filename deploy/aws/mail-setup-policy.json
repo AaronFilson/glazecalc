@@ -1,0 +1,52 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "TheSendingDomainAndOneTestRecipient",
+      "Effect": "Allow",
+      "Action": [
+        "ses:CreateEmailIdentity",
+        "ses:GetEmailIdentity",
+        "ses:DeleteEmailIdentity",
+        "ses:PutEmailIdentityDkimAttributes",
+        "ses:PutEmailIdentityMailFromAttributes",
+        "ses:TagResource"
+      ],
+      "Resource": [
+        "arn:aws:ses:us-west-2:724654236968:identity/glazecalcapp.com",
+        "arn:aws:ses:us-west-2:724654236968:identity/bebaggins@hotmail.com"
+      ]
+    },
+    {
+      "Sid": "TestMailOnlyFromNoReply",
+      "Effect": "Allow",
+      "Action": "ses:SendEmail",
+      "Resource": "arn:aws:ses:us-west-2:724654236968:identity/*",
+      "Condition": { "StringEquals": { "ses:FromAddress": "no-reply@glazecalcapp.com" } }
+    },
+    {
+      "Sid": "AccountLevelSesActionsThatOnlyAcceptStar",
+      "Effect": "Allow",
+      "Action": [
+        "ses:GetAccount",
+        "ses:PutAccountDetails",
+        "ses:ListEmailIdentities",
+        "ses:SetIdentityNotificationTopic",
+        "ses:GetIdentityNotificationAttributes"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "AlertsTopic",
+      "Effect": "Allow",
+      "Action": [
+        "sns:CreateTopic",
+        "sns:Subscribe",
+        "sns:GetTopicAttributes",
+        "sns:ListSubscriptionsByTopic",
+        "sns:TagResource"
+      ],
+      "Resource": "arn:aws:sns:us-west-2:724654236968:glazecalc-alerts"
+    }
+  ]
+}

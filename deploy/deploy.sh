@@ -67,6 +67,16 @@ secret=$(aws ssm get-parameter --region "$region" --name /glazecalc/app-secret -
   --query Parameter.Value --output text)
 printf 'APP_SECRET=%s\n' "$secret" > app.env
 unset secret
+# Email (Amazon SES over SMTP) is on once /glazecalc/smtp-url exists (see
+# deploy/aws/create-mailer.sh); until then reset by email says it is unavailable.
+if smtp=$(aws ssm get-parameter --region "$region" --name /glazecalc/smtp-url --with-decryption \
+    --query Parameter.Value --output text 2>/dev/null) && [ -n "$smtp" ]; then
+  printf 'MAIL_TRANSPORT=smtp\nSMTP_URL=%s\n' "$smtp" >> app.env
+  echo "Email: on (SMTP settings from /glazecalc/smtp-url)."
+else
+  echo "Email: off (no /glazecalc/smtp-url)."
+fi
+unset smtp
 umask 022
 
 # compose.prod.yaml and .env (read by Compose and by glazecalc.service at boot)

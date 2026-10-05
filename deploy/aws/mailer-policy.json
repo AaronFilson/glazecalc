@@ -1,0 +1,12 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "SendOnlyAsNoReplyThroughSmtp",
+      "Effect": "Allow",
+      "Action": "ses:SendRawEmail",
+      "Resource": "arn:aws:ses:us-west-2:724654236968:identity/*",
+      "Condition": { "StringEquals": { "ses:FromAddress": "no-reply@glazecalcapp.com" } }
+    }
+  ]
+}

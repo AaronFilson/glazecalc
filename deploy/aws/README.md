@@ -255,3 +255,75 @@ aws ssm send-command --document-name AWS-RunShellScript --targets Key=tag:app,Va
 
 (Or in a Session Manager shell: `sudo /opt/glazecalc/enable-https.sh`.) Afterwards
 `https://glazecalcapp.com` serves the app and `http://` and `www.` redirect to it.
+
+## 14. Email: Amazon SES (password reset links and notices)
+
+Done 2026-10-05 as copper-bell, after the admin attached [mail-setup-policy.json](mail-setup-policy.json)
+as the managed policy `glazecalc-mail`. The app sends with SMTP (phase 3 adds the credentials).
+
+```bash
+# Domain identity with Easy DKIM, and a custom MAIL FROM domain so SPF passes for our own domain.
+aws sesv2 create-email-identity --email-identity glazecalcapp.com \
+  --dkim-signing-attributes NextSigningKeyLength=RSA_2048_BIT --tags Key=app,Value=glazecalc
+aws sesv2 put-email-identity-mail-from-attributes --email-identity glazecalcapp.com \
+  --mail-from-domain mail.glazecalcapp.com --behavior-on-mx-failure USE_DEFAULT_VALUE
+aws sesv2 get-email-identity --email-identity glazecalcapp.com --query DkimAttributes.Tokens
+```
+
+DNS records in the hosted zone (TTL 1800):
+
+| Name | Type | Value |
+| --- | --- | --- |
+| `<token>._domainkey.glazecalcapp.com` (three, one per DKIM token) | CNAME | `<token>.dkim.amazonses.com` |
+| `mail.glazecalcapp.com` | MX | `10 feedback-smtp.us-west-2.amazonses.com` |
+| `mail.glazecalcapp.com` | TXT | `"v=spf1 include:amazonses.com ~all"` |
+| `_dmarc.glazecalcapp.com` | TXT | `"v=DMARC1; p=none"` (tighten to `p=quarantine` after a few weeks of clean sending) |
+| `glazecalcapp.com` | TXT | `"v=spf1 -all"` (the bare domain sends no mail) |
+
+Bounces and complaints: the account suppression list stops mail to those addresses, SES sends each
+notice to the SNS topic `glazecalc-alerts` (emailed to the owner), and two alarms on that topic watch
+`Reputation.BounceRate` (over 4%) and `Reputation.ComplaintRate` (over 0.08%); AWS reviews accounts
+at 5% and 0.1%. `no-reply@glazecalcapp.com` has no mailbox, so notices must not rely on email forwarding.
+
+```bash
+aws sns create-topic --name glazecalc-alerts --tags Key=app,Value=glazecalc
+aws sns subscribe --topic-arn arn:aws:sns:us-west-2:724654236968:glazecalc-alerts \
+  --protocol email --notification-endpoint <owner email>          # then click the link in the email
+for type in Bounce Complaint; do
+  aws ses set-identity-notification-topic --identity glazecalcapp.com --notification-type $type \
+    --sns-topic arn:aws:sns:us-west-2:724654236968:glazecalc-alerts
+done
+# Alarms: AWS/SES Reputation.BounceRate > 0.04 and Reputation.ComplaintRate > 0.0008, Maximum over
+# 15 minutes, missing data not breaching, alarm and OK actions to glazecalc-alerts.
+```
+
+Testing from the sandbox: verify a recipient address (`aws sesv2 create-email-identity
+--email-identity <address>`, then click the link AWS emails), send to it from
+`no-reply@glazecalcapp.com`, and check the message source for `dkim=pass`, `spf=pass` and
+`dmarc=pass`. SES's mailbox simulator (`bounce@simulator.amazonses.com`,
+`complaint@simulator.amazonses.com`) tests the notices without affecting the account's reputation.
+
+Production access (out of the sandbox) is requested once with `aws sesv2 put-account-details
+--production-access-enabled --mail-type TRANSACTIONAL ...`; AWS answers within about a day. After
+that, `glazecalc-mail` can be detached: day-to-day sending uses the app's own credentials.
+
+### Turning email on: SMTP credentials (Admin)
+
+The app sends through SES's SMTP interface as the IAM user `glazecalc-mailer`, whose only
+permission is `ses:SendRawEmail` as `no-reply@glazecalcapp.com` ([mailer-policy.json](mailer-policy.json)).
+The containers cannot reach the instance role (metadata hop limit 1), so the app needs its own
+credentials. In CloudShell, from a clone of this repository:
+
+```bash
+bash deploy/aws/create-mailer.sh
+```
+
+It creates or updates the user, makes a new access key, turns it into SES SMTP credentials, and
+stores `smtps://USER:PASSWORD@email-smtp.us-west-2.amazonaws.com:465` as the SecureString
+`/glazecalc/smtp-url` without printing it. `deploy.sh` copies it into `app.env` as `SMTP_URL` with
+`MAIL_TRANSPORT=smtp`, and logs "Email: on". Run Deploy afterwards (new credentials can take a few
+minutes to work). Running the script again rotates the credentials: it stores the new key, then
+deletes the older ones.
+
+While SES is in the sandbox, reset emails reach verified addresses only; after production access
+they reach everyone.

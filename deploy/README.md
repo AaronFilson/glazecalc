@@ -35,7 +35,8 @@ app can be checked by IP address before the DNS switch. After DNS points at the 
 | `aws/*.json` | IAM, SSM, DLM | instance role, GitHub deploy role and its one command document, CLI user policy, snapshot policy |
 
 Settings come from SSM Parameter Store, never from the repository or user data:
-`/glazecalc/app-secret` (SecureString), `/glazecalc/backup-bucket`, and optionally
+`/glazecalc/app-secret` (SecureString), `/glazecalc/backup-bucket`, `/glazecalc/smtp-url` (SecureString,
+the SES SMTP credentials that turn email on; see aws/README.md section 14), and optionally
 `/glazecalc/acme-email` (Let's Encrypt account contact).
 
 Day to day:
