@@ -1,0 +1,42 @@
+#cloud-config
+# First-boot setup for the glazecalc EC2 instance (official Debian 13 AMI,
+# arm64 or amd64). Passed as user data by the launch template.
+#
+# No secrets here: user data is readable by any process on the instance and is
+# logged. APP_SECRET, the backup bucket name and the optional Let's Encrypt email
+# are read from SSM Parameter Store (/glazecalc/*) using the instance role.
+#
+# The setup itself is deploy/setup-instance.sh, downloaded and run once.
+# Progress and errors: /var/log/cloud-init-output.log
+#   (Session Manager: sudo tail -f /var/log/cloud-init-output.log)
+
+package_update: true
+package_upgrade: true
+packages:
+  - ca-certificates
+  - curl
+  - unzip
+  - jq
+  - unattended-upgrades
+
+write_files:
+  # MongoDB production notes; vm.overcommit_memory is set by mongodb-thp.service.
+  - path: /etc/sysctl.d/90-glazecalc.conf
+    content: |
+      vm.swappiness = 1
+      net.ipv4.tcp_keepalive_time = 120
+
+  # Security updates install automatically.
+  - path: /etc/apt/apt.conf.d/20auto-upgrades
+    content: |
+      APT::Periodic::Update-Package-Lists "1";
+      APT::Periodic::Unattended-Upgrade "1";
+
+  # Docker's "local" log driver rotates container logs by itself.
+  - path: /etc/docker/daemon.json
+    content: |
+      { "log-driver": "local" }
+
+runcmd:
+  - [curl, -fsSL, -o, /usr/local/sbin/glazecalc-setup.sh, 'https://raw.githubusercontent.com/AaronFilson/glazecalc/master/deploy/setup-instance.sh']
+  - [bash, /usr/local/sbin/glazecalc-setup.sh]

@@ -1,0 +1,249 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "Read",
+      "Effect": "Allow",
+      "Action": [
+        "ec2:Describe*",
+        "ec2:GetEbsEncryptionByDefault",
+        "ec2:GetInstanceMetadataDefaults",
+        "ssm:DescribeInstanceInformation",
+        "ssm:DescribeParameters",
+        "ssm:DescribeSessions",
+        "ssm:ListCommand*",
+        "ssm:GetCommandInvocation",
+        "cloudwatch:DescribeAlarms",
+        "dlm:GetLifecyclePolicies",
+        "ce:GetCostAndUsage",
+        "route53:Get*",
+        "route53:List*"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "AccountDefaults",
+      "Effect": "Allow",
+      "Action": ["ec2:EnableEbsEncryptionByDefault", "ec2:ModifyInstanceMetadataDefaults"],
+      "Resource": "*"
+    },
+    {
+      "Sid": "AppParams",
+      "Effect": "Allow",
+      "Action": ["ssm:PutParameter", "ssm:GetParameter*", "ssm:DeleteParameter"],
+      "Resource": [
+        "arn:aws:ssm:us-west-2:724654236968:parameter/glazecalc",
+        "arn:aws:ssm:us-west-2:724654236968:parameter/glazecalc/*"
+      ]
+    },
+    {
+      "Sid": "AmiParams",
+      "Effect": "Allow",
+      "Action": "ssm:GetParameter*",
+      "Resource": "arn:aws:ssm:us-west-2::parameter/aws/service/*"
+    },
+    {
+      "Sid": "Bucket",
+      "Effect": "Allow",
+      "Action": [
+        "s3:CreateBucket",
+        "s3:ListBucket",
+        "s3:GetBucketLocation",
+        "s3:*BucketPublicAccessBlock",
+        "s3:*LifecycleConfiguration"
+      ],
+      "Resource": "arn:aws:s3:::glazecalc-backups-724654236968"
+    },
+    {
+      "Sid": "Dumps",
+      "Effect": "Allow",
+      "Action": ["s3:GetObject", "s3:PutObject"],
+      "Resource": "arn:aws:s3:::glazecalc-backups-724654236968/*"
+    },
+    {
+      "Sid": "CreateTagged",
+      "Effect": "Allow",
+      "Action": ["ec2:CreateSecurityGroup", "ec2:CreateLaunchTemplate", "ec2:AllocateAddress"],
+      "Resource": [
+        "arn:aws:ec2:us-west-2:724654236968:security-group/*",
+        "arn:aws:ec2:us-west-2:724654236968:launch-template/*",
+        "arn:aws:ec2:us-west-2:724654236968:elastic-ip/*"
+      ],
+      "Condition": { "StringEquals": { "aws:RequestTag/app": "glazecalc" } }
+    },
+    {
+      "Sid": "SgVpc",
+      "Effect": "Allow",
+      "Action": "ec2:CreateSecurityGroup",
+      "Resource": "arn:aws:ec2:us-west-2:724654236968:vpc/*"
+    },
+    {
+      "Sid": "TagOnCreate",
+      "Effect": "Allow",
+      "Action": "ec2:CreateTags",
+      "Resource": ["arn:aws:ec2:us-west-2:724654236968:*/*", "arn:aws:ec2:us-west-2::snapshot/*"],
+      "Condition": {
+        "StringEquals": {
+          "ec2:CreateAction": [
+            "RunInstances",
+            "CreateSecurityGroup",
+            "CreateLaunchTemplate",
+            "AllocateAddress",
+            "CreateSnapshot"
+          ]
+        }
+      }
+    },
+    {
+      "Sid": "LaunchT4g",
+      "Effect": "Allow",
+      "Action": "ec2:RunInstances",
+      "Resource": "arn:aws:ec2:us-west-2:724654236968:instance/*",
+      "Condition": { "StringEquals": { "ec2:InstanceType": ["t4g.micro", "t4g.small"] } }
+    },
+    {
+      "Sid": "LaunchParts",
+      "Effect": "Allow",
+      "Action": "ec2:RunInstances",
+      "Resource": [
+        "arn:aws:ec2:us-west-2::image/*",
+        "arn:aws:ec2:us-west-2:724654236968:volume/*",
+        "arn:aws:ec2:us-west-2:724654236968:network-interface/*",
+        "arn:aws:ec2:us-west-2:724654236968:subnet/*",
+        "arn:aws:ec2:us-west-2:724654236968:security-group/*",
+        "arn:aws:ec2:us-west-2:724654236968:launch-template/*"
+      ]
+    },
+    {
+      "Sid": "PassInstanceRole",
+      "Effect": "Allow",
+      "Action": "iam:PassRole",
+      "Resource": "arn:aws:iam::724654236968:role/glazecalc-instance",
+      "Condition": { "StringEquals": { "iam:PassedToService": "ec2.amazonaws.com" } }
+    },
+    {
+      "Sid": "ManageTagged",
+      "Effect": "Allow",
+      "Action": [
+        "ec2:StartInstances",
+        "ec2:StopInstances",
+        "ec2:RebootInstances",
+        "ec2:TerminateInstances",
+        "ec2:ModifyInstanceAttribute",
+        "ec2:GetConsoleOutput",
+        "ec2:AuthorizeSecurityGroupIngress",
+        "ec2:RevokeSecurityGroupIngress",
+        "ec2:DeleteSecurityGroup",
+        "ec2:CreateLaunchTemplateVersion",
+        "ec2:ModifyLaunchTemplate",
+        "ec2:DeleteLaunchTemplate",
+        "ec2:DisassociateAddress",
+        "ec2:ReleaseAddress",
+        "ec2:DeleteSnapshot",
+        "ec2:CreateTags"
+      ],
+      "Resource": ["arn:aws:ec2:us-west-2:724654236968:*/*", "arn:aws:ec2:us-west-2::snapshot/*"],
+      "Condition": { "StringEquals": { "aws:ResourceTag/app": "glazecalc" } }
+    },
+    {
+      "Sid": "AttachIp",
+      "Effect": "Allow",
+      "Action": "ec2:AssociateAddress",
+      "Resource": "arn:aws:ec2:us-west-2:724654236968:*/*"
+    },
+    {
+      "Sid": "OldServers",
+      "Effect": "Allow",
+      "Action": ["ec2:StopInstances", "ec2:StartInstances", "ec2:TerminateInstances", "ec2:GetConsoleOutput"],
+      "Resource": [
+        "arn:aws:ec2:us-west-2:724654236968:instance/i-07a925b2d7d19f991",
+        "arn:aws:ec2:us-west-2:724654236968:instance/i-052d3dcd53fa88288"
+      ]
+    },
+    {
+      "Sid": "Snapshots",
+      "Effect": "Allow",
+      "Action": "ec2:CreateSnapshot",
+      "Resource": ["arn:aws:ec2:us-west-2:724654236968:volume/*", "arn:aws:ec2:us-west-2::snapshot/*"]
+    },
+    {
+      "Sid": "SsmOnApp",
+      "Effect": "Allow",
+      "Action": ["ssm:SendCommand", "ssm:StartSession"],
+      "Resource": "arn:aws:ec2:us-west-2:724654236968:instance/*",
+      "Condition": { "StringEquals": { "ssm:resourceTag/app": "glazecalc" } }
+    },
+    {
+      "Sid": "SsmDocs",
+      "Effect": "Allow",
+      "Action": ["ssm:SendCommand", "ssm:StartSession"],
+      "Resource": [
+        "arn:aws:ssm:us-west-2::document/AWS-RunShellScript",
+        "arn:aws:ssm:us-west-2:724654236968:document/SSM-SessionManagerRunShell"
+      ]
+    },
+    {
+      "Sid": "OwnSessions",
+      "Effect": "Allow",
+      "Action": ["ssm:ResumeSession", "ssm:TerminateSession"],
+      "Resource": "arn:aws:ssm:us-west-2:724654236968:session/${aws:username}-*"
+    },
+    {
+      "Sid": "Alarms",
+      "Effect": "Allow",
+      "Action": ["cloudwatch:PutMetricAlarm", "cloudwatch:DeleteAlarms", "cloudwatch:DescribeAlarmHistory"],
+      "Resource": "arn:aws:cloudwatch:us-west-2:724654236968:alarm:glazecalc-*"
+    },
+    {
+      "Sid": "AlarmEc2Actions",
+      "Effect": "Allow",
+      "Action": "iam:CreateServiceLinkedRole",
+      "Resource": "arn:aws:iam::724654236968:role/aws-service-role/events.amazonaws.com/AWSServiceRoleForCloudWatchEvents*",
+      "Condition": { "StringEquals": { "iam:AWSServiceName": "events.amazonaws.com" } }
+    },
+    {
+      "Sid": "Dlm",
+      "Effect": "Allow",
+      "Action": [
+        "dlm:CreateLifecyclePolicy",
+        "dlm:UpdateLifecyclePolicy",
+        "dlm:DeleteLifecyclePolicy",
+        "dlm:GetLifecyclePolicy"
+      ],
+      "Resource": "arn:aws:dlm:us-west-2:724654236968:policy/*"
+    },
+    {
+      "Sid": "PassDlmRole",
+      "Effect": "Allow",
+      "Action": "iam:PassRole",
+      "Resource": "arn:aws:iam::724654236968:role/AWSDataLifecycleManagerDefaultRole",
+      "Condition": { "StringEquals": { "iam:PassedToService": "dlm.amazonaws.com" } }
+    },
+    {
+      "Sid": "ReadRoles",
+      "Effect": "Allow",
+      "Action": ["iam:GetRole*", "iam:List*RolePolicies", "iam:GetInstanceProfile"],
+      "Resource": [
+        "arn:aws:iam::724654236968:role/glazecalc-*",
+        "arn:aws:iam::724654236968:instance-profile/glazecalc-*"
+      ]
+    },
+    {
+      "Sid": "Budget",
+      "Effect": "Allow",
+      "Action": ["budgets:ViewBudget", "budgets:ModifyBudget"],
+      "Resource": "arn:aws:budgets::724654236968:budget/*"
+    },
+    {
+      "Sid": "Dns",
+      "Effect": "Allow",
+      "Action": "route53:ChangeResourceRecordSets",
+      "Resource": "arn:aws:route53:::hostedzone/*",
+      "Condition": {
+        "ForAllValues:StringLike": {
+          "route53:ChangeResourceRecordSetsNormalizedRecordNames": ["glazecalcapp.com", "*.glazecalcapp.com"]
+        }
+      }
+    }
+  ]
+}

@@ -24,13 +24,21 @@ updates:
     schedule:
       interval: weekly
 
-  # Base image digests in the Dockerfile (node:24-slim) and compose.yaml (mongo:9.0).
+  # Base image digests in the Dockerfile (node:24-slim) and the Compose files
+  # (mongo:9.0). Major versions are moved by hand: Node only to an LTS release,
+  # MongoDB with its featureCompatibilityVersion upgrade steps.
   - package-ecosystem: docker
     directory: /
     schedule:
       interval: weekly
+    ignore:
+      - dependency-name: node
+        update-types: ['version-update:semver-major']
 
   - package-ecosystem: docker-compose
-    directory: /
+    directories: ['/', '/deploy']
     schedule:
       interval: weekly
+    ignore:
+      - dependency-name: mongo
+        update-types: ['version-update:semver-major']

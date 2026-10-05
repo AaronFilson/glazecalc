@@ -25,7 +25,7 @@ module.exports = defineConfig({
   ],
   webServer: {
     command: 'npx ng build && node server.js',
-    url: 'http://localhost:' + port + '/api/verify',
+    url: 'http://localhost:' + port + '/api/health',
     timeout: 180000,
     reuseExistingServer: false,
     env: {

@@ -1,0 +1,24 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "ReadAppSettings",
+      "Effect": "Allow",
+      "Action": "ssm:GetParameter",
+      "Resource": "arn:aws:ssm:us-west-2:724654236968:parameter/glazecalc/*"
+    },
+    {
+      "Sid": "WriteAndRestoreDatabaseDumps",
+      "Effect": "Allow",
+      "Action": ["s3:PutObject", "s3:GetObject"],
+      "Resource": "arn:aws:s3:::glazecalc-backups-724654236968/mongodump/*"
+    },
+    {
+      "Sid": "FindDumpsToRestore",
+      "Effect": "Allow",
+      "Action": "s3:ListBucket",
+      "Resource": "arn:aws:s3:::glazecalc-backups-724654236968",
+      "Condition": { "StringLike": { "s3:prefix": "mongodump/*" } }
+    }
+  ]
+}

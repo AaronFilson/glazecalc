@@ -1,0 +1,70 @@
+name: Deploy
+
+# Deploys a published image to the EC2 instance tagged app=glazecalc, by running
+# /opt/glazecalc/deploy.sh through SSM Run Command. No SSH and no stored AWS
+# keys: GitHub signs in to AWS with OIDC and assumes a role that may only run
+# the glazecalc-deploy document (deploy/aws/deploy-document.json) on that
+# instance, whose tag parameter AWS checks against the same pattern as below.
+#
+# Setup (once): the AWS side in deploy/aws/README.md, then in the repository
+# settings an environment named "production" (add yourself as a required
+# reviewer) with variables AWS_DEPLOY_ROLE_ARN and AWS_REGION.
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Image tag: latest or sha-<full commit SHA> (blank: this commit)'
+        required: false
+        type: string
+
+permissions: {}
+
+concurrency:
+  group: deploy-production
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    environment: production
+    permissions:
+      id-token: write
+    steps:
+      - uses: aws-actions/configure-aws-credentials@v6
+        with:
+          role-to-assume: ${{ vars.AWS_DEPLOY_ROLE_ARN }}
+          aws-region: ${{ vars.AWS_REGION }}
+
+      - name: Run deploy.sh on the instance
+        env:
+          TAG: ${{ inputs.tag || format('sha-{0}', github.sha) }}
+        run: |
+          if [[ ! "$TAG" =~ ^(latest|sha-[0-9a-f]{40})$ ]]; then
+            echo "Tag must be 'latest' or sha-<full 40-character commit SHA>: $TAG"
+            exit 1
+          fi
+          command_id=$(aws ssm send-command \
+            --document-name glazecalc-deploy \
+            --targets Key=tag:app,Values=glazecalc \
+            --comment "deploy $TAG from GitHub run $GITHUB_RUN_ID" \
+            --parameters "tag=$TAG" \
+            --timeout-seconds 600 \
+            --query Command.CommandId --output text)
+          echo "SSM command: $command_id"
+
+          for _ in $(seq 1 60); do
+            read -r status targets < <(aws ssm list-commands --command-id "$command_id" \
+              --query 'Commands[0].[Status,TargetCount]' --output text)
+            case "$status" in Pending|InProgress|Delayed) sleep 10 ;; *) break ;; esac
+          done
+          echo "Status: $status on $targets instance(s)"
+
+          aws ssm list-command-invocations --command-id "$command_id" --details \
+            --query 'CommandInvocations[].CommandPlugins[].[Status,Output]' --output text
+          # With no instance tagged app=glazecalc the command can finish with nothing deployed.
+          if [ "$targets" = 0 ]; then
+            echo 'No instance tagged app=glazecalc took the command; nothing was deployed.'
+            exit 1
+          fi
+          test "$status" = Success

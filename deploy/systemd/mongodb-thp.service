@@ -1,0 +1,21 @@
+# Kernel settings MongoDB 8.0+ asks for with its updated TCMalloc: transparent huge
+# pages enabled (the old advice to disable them no longer applies) and memory
+# overcommit on. They are system-wide, so they are set on the host even though
+# MongoDB runs in a container. Follows the unit in MongoDB's "TCMalloc
+# Performance Optimization" docs, ordered before Docker starts the database.
+[Unit]
+Description=Transparent huge page and overcommit settings for MongoDB
+DefaultDependencies=no
+After=sysinit.target local-fs.target
+Before=docker.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/bin/sh -c 'echo always > /sys/kernel/mm/transparent_hugepage/enabled'
+ExecStart=/bin/sh -c 'echo defer+madvise > /sys/kernel/mm/transparent_hugepage/defrag'
+ExecStart=/bin/sh -c 'echo 0 > /sys/kernel/mm/transparent_hugepage/khugepaged/max_ptes_none'
+ExecStart=/bin/sh -c 'echo 1 > /proc/sys/vm/overcommit_memory'
+
+[Install]
+WantedBy=basic.target

@@ -1,0 +1,8 @@
+[Unit]
+Description=Glazecalc MongoDB dump to S3
+Requires=docker.service
+After=docker.service glazecalc.service
+
+[Service]
+Type=oneshot
+ExecStart=/opt/glazecalc/backup.sh

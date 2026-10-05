@@ -15,6 +15,18 @@ const app = module.exports = exports = express();
 app.disable('x-powered-by');
 
 const api = express.Router();
+
+// For Docker health checks and uptime monitors: 200 only when MongoDB answers.
+api.get('/health', (req, res) => {
+  res.set('Cache-Control', 'no-store');
+  const unavailable = (reason) => res.status(503).json({ status: 'unavailable', database: reason });
+  if (mongoose.connection.readyState !== 1) return unavailable('not connected');
+  const timeout = new Promise((resolve, reject) => setTimeout(() => reject(new Error('timeout')), 2000).unref());
+  Promise.race([mongoose.connection.db.admin().ping(), timeout])
+    .then(() => res.json({ status: 'ok' }))
+    .catch(() => unavailable('not responding'));
+});
+
 api.use('/additives', require(__dirname + '/server/routes/additives_routes'));
 api.use('/advice', require(__dirname + '/server/routes/advice_routes'));
 api.use('/firing', require(__dirname + '/server/routes/firing_routes'));

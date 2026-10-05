@@ -1,0 +1,56 @@
+# Production stack on the EC2 instance, in /opt/glazecalc (see deploy/README.md).
+# The app image is built by CI and pulled from GHCR; nothing is built here.
+#
+#   GLAZECALC_TAG=<tag> docker compose -f compose.prod.yaml up -d   (deploy.sh does this)
+#
+# nginx on the host terminates HTTPS and proxies to 127.0.0.1:3000.
+name: glazecalc
+
+x-logging: &logging
+  # Docker's "local" driver rotates by itself (json-file does not by default).
+  driver: local
+  options:
+    max-size: 10m
+    max-file: '5'
+
+services:
+  app:
+    image: ghcr.io/aaronfilson/glazecalc:${GLAZECALC_TAG:-latest}
+    restart: unless-stopped
+    # APP_SECRET, written by deploy.sh from SSM Parameter Store (root-only file).
+    env_file: /opt/glazecalc/app.env
+    environment:
+      NODE_ENV: production
+      PORT: 3000
+      MONGOLAB_URI: mongodb://mongo:27017/glazecalc
+    ports:
+      - '127.0.0.1:3000:3000'
+    depends_on:
+      mongo:
+        condition: service_healthy
+    logging: *logging
+
+  mongo:
+    image: mongo:9.0@sha256:bac22ea7710d774103dcad3ec8ac13cba1eb378f488e3ce8a6b3a1adf2ba9dcc
+    restart: unless-stopped
+    # MongoDB production notes: an explicit cache size inside a container (this
+    # leaves room for Node and nginx on a 1 GB t4g.micro) and a high open-files limit.
+    command: ['mongod', '--wiredTigerCacheSizeGB', '0.25']
+    ulimits:
+      nofile:
+        soft: 64000
+        hard: 64000
+    volumes:
+      - mongo-data:/data/db
+      - mongo-config:/data/configdb
+    healthcheck:
+      test: ['CMD', 'mongosh', '--quiet', '--eval', "db.adminCommand('ping').ok"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 20s
+    logging: *logging
+
+volumes:
+  mongo-data:
+  mongo-config:

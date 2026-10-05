@@ -15,28 +15,33 @@ changed yet.
 
 ## Target design
 
-From the research (Debian cloud team, AWS, Docker, MongoDB and Caddy documentation):
+From the research (Debian cloud team, AWS, Docker, MongoDB, nginx and certbot documentation):
 
 - **Instance:** Debian 13 "trixie", official AMI from the Debian cloud team (owner account
   `136693071363`; look up the latest ID via the SSM public parameters under
   `/aws/service/debian/release/13/latest`). Debian 12 is LTS-only since June 2026.
-- **Size:** `t4g.small` (2 vCPU Graviton, 2 GB). Set CPU credits to `standard` so a busy
+- **Size:** `t4g.micro` (2 vCPU Graviton, 1 GB; MongoDB cache 0.25 GB plus 2 GB swap). Fine for
+  this site's traffic; `t4g.small` (2 GB) is the step up if memory gets tight. Set CPU credits to `standard` so a busy
   spell throttles instead of adding surprise charges (T4g defaults to `unlimited`).
-- **Launch template:** IMDSv2 required with hop limit 2 (containers need the extra hop), 20 GB
+- **Launch template:** IMDSv2 required with hop limit 1 (keeps the instance role's
+  credentials away from the containers; only host scripts use the role), 20 GB
   gp3 encrypted root volume, instance profile, detailed monitoring off (not needed at this size).
 - **Access:** no SSH. Install the SSM agent from cloud-init (Debian AMIs do not include it) and
   use Session Manager. Security group: 80 and 443 from anywhere, nothing else.
 - **Address:** one Elastic IP (about $3.65/month, billed even when idle), Route 53 A record.
-- **HTTPS:** Caddy on the host (official apt repository), automatic Let's Encrypt certificates,
-  `reverse_proxy 127.0.0.1:3000`. A load balancer would cost about $16-22/month more.
+- **HTTPS:** nginx on the host with a Let's Encrypt certificate from certbot (both from Debian's
+  own repository; `certbot.timer` renews), proxying to `127.0.0.1:3000`. Chosen over Caddy
+  (automatic HTTPS) because nginx is the industry standard worth knowing; the cost is one
+  manual step, `enable-https.sh` after the DNS switch. A load balancer would cost about $16-22/month more.
 - **App:** Docker Engine and Compose from Docker's apt repository. Compose runs the app image
   and `mongo:9.0` with a named volume, started by a systemd unit at boot. MongoDB must run
   from the Docker image on Graviton: MongoDB publishes no arm64 Debian packages.
 - **Images:** built in GitHub Actions for arm64, tagged with the commit, pushed to a registry
   (GHCR or ECR). The instance only pulls; nothing is built on it.
 - **Deploys:** GitHub Actions assumes an AWS role through OIDC (no stored keys) that may only run
-  SSM commands on instances tagged for this app; the command runs
-  `docker compose pull && docker compose up -d`. Start with a manual-approval deploy job.
+  one SSM command document, `glazecalc-deploy`, on instances tagged for this app. It runs
+  `deploy.sh <tag>`, which pulls and starts the new image and goes back to the previous one if
+  it fails its health check. Deploys wait for a manual approval.
 - **MongoDB settings** (production notes for 8.0+): transparent huge pages **enabled** (the old
   advice to disable them no longer applies), open-files limit at least 64000,
   `vm.swappiness=1`, a 1-2 GB swap file, and an explicit WiredTiger cache size in the container.
@@ -46,19 +51,24 @@ From the research (Debian cloud team, AWS, Docker, MongoDB and Caddy documentati
   check on `/api/health`, a monthly AWS budget alert, and Docker's `local` log driver (rotates).
 
 Rough monthly cost in us-west-2, on-demand, before tax (check current pricing):
-t4g.small about $12, 20 GB gp3 about $1.60, public IPv4 about $3.65, snapshots and S3 about $1,
-Route 53 zone $0.50. **About $19/month.**
+t4g.micro about $6, 20 GB gp3 about $1.60, public IPv4 about $3.65, snapshots and S3 about $1,
+Route 53 zone $0.50. **About $13/month** (the old t2.micro setup bills $15-17/month).
 
-## Decisions needed
+## Decisions (made 2026-10-05)
 
-1. **Region:** stay in us-west-2 next to the old instance (simplest: same Route 53 setup, can
-   copy the old volume's snapshot directly), or move to us-east-1.
-2. **Registry:** GHCR (free, needs a read token on the instance) or ECR (pull access through the
-   instance role, about $0.10/GB-month).
-3. **Database:** self-hosted `mongo:9.0` on the instance (as planned) or MongoDB Atlas Flex
-   (about $8-30/month, managed backups). Skip Amazon DocumentDB: partial MongoDB
-   compatibility, not version 9, and far larger than needed.
-4. **Email for Let's Encrypt** expiry notices, and whether to add `www.glazecalcapp.com`.
+1. **Region:** us-west-2, next to the old instance.
+2. **Registry:** GHCR, with the package public so the instance pulls without a token.
+3. **Database:** self-hosted `mongo:9.0` in a container on the instance. (Not Atlas; not
+   DocumentDB, which is only partly MongoDB-compatible.)
+4. **Size:** `t4g.micro`, to save money at this site's traffic. (The owner's other site, a
+   static shop page, goes to S3 separately and does not share this instance.)
+5. **Running the AWS setup:** AWS CloudShell with the console login (see
+   [deploy/aws/README.md](../deploy/aws/README.md)); the `copper-bell` key stays read-only.
+6. **Old data:** start fresh; no restore for now. The old accounts are all the owner's own. A
+   `mongodump` of `glazecalc_app_dev` taken 2026-10-05 is kept off the server in case it is
+   wanted later (restore it with `mongorestore --nsFrom 'glazecalc_app_dev.*' --nsTo 'glazecalc.*'`).
+
+Still open: the email address for Let's Encrypt expiry notices and the budget alert.
 
 ## Phases
 
@@ -89,12 +99,16 @@ and advice.
 
 ### 2. Repository work (no AWS needed)
 
+**Done** on the `deploy-ec2` branch (2026-10-05): see [deploy/README.md](../deploy/README.md)
+and the drafted AWS commands in [deploy/aws/README.md](../deploy/aws/README.md). The image is
+published for both amd64 and arm64, so the instance type can still change.
+
 - `/api/health` endpoint that pings MongoDB; point the Docker, Compose, Playwright and CI health
   checks at it (code review finding: `/api/verify` stays healthy when the database is down).
 - `compose.prod.yaml`: app image from the registry by tag, `mongo:9.0` with the ulimit, cache and
   `local` log driver settings, app on `127.0.0.1:3000`.
-- `deploy/` folder: Caddyfile, systemd unit for Compose, cloud-init user-data (SSM agent, Docker,
-  Caddy, swap, sysctl, unattended-upgrades), backup script and timer.
+- `deploy/` folder: nginx site files, systemd unit for Compose, cloud-init user-data (SSM agent,
+  Docker, nginx, certbot, swap, sysctl, unattended-upgrades), backup script and timer.
 - CI: build the arm64 image and push it to the registry on merges to master; a deploy workflow
   (OIDC role, `aws ssm send-command`) behind a manual approval.
 
@@ -115,7 +129,7 @@ AWS commands are drafted and reviewed before running; nothing is created without
 1. Lower the Route 53 record's TTL to 60 seconds a day ahead.
 2. Restore the dump into the new instance's MongoDB, run the seed, sign in and check recipes.
 3. Test with a hosts-file entry pointing glazecalcapp.com at the new Elastic IP.
-4. Switch the A record to the new Elastic IP; Caddy gets the certificate on the first request.
+4. Switch the A record to the new Elastic IP, then run `enable-https.sh` on the instance to get the certificate and turn on HTTPS.
 5. Keep the old instance **stopped, not terminated**, for two weeks with its snapshot; then
    terminate it and release its address (public IPv4 is billed while held).
 

@@ -68,6 +68,8 @@ on the same port, and keeps its data in MongoDB.
                       the standard data loaded by npm run seed
     Dockerfile, compose.yaml
                       production container image, and the app plus MongoDB in containers
+    deploy/           production on EC2: Compose file, nginx, cloud-init, deploy and backup
+                      scripts, AWS policies and setup commands (see deploy/README.md)
     .github/          CI workflow and Dependabot settings
     docs/             setup notes (Docker in WSL Debian on Windows)
 
@@ -110,7 +112,7 @@ builds and checks the Docker image.
 ## Docker
 
 The Dockerfile builds a production image (Node 24 on Debian slim, running as a non-root user,
-with a health check). compose.yaml runs it with MongoDB 9, storing the data in a named volume:
+with a health check on /api/health, which also checks the database). compose.yaml runs it with MongoDB 9, storing the data in a named volume:
 
     APP_SECRET=<long random string> docker compose up -d --build
     docker compose run --rm app node scripts/seed-standard.js    # standard data, once

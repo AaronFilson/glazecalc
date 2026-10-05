@@ -1,0 +1,19 @@
+# Starts the glazecalc Compose stack at boot (installed to /etc/systemd/system).
+# Containers also have restart: unless-stopped; this makes a fresh boot or a
+# `systemctl restart glazecalc` bring the whole stack up in order.
+[Unit]
+Description=Glazecalc (Docker Compose stack)
+Requires=docker.service
+After=docker.service network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+WorkingDirectory=/opt/glazecalc
+ExecStart=/usr/bin/docker compose -f compose.prod.yaml up -d --remove-orphans
+ExecStop=/usr/bin/docker compose -f compose.prod.yaml stop
+TimeoutStartSec=300
+
+[Install]
+WantedBy=multi-user.target
