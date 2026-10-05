@@ -109,8 +109,10 @@ test.describe('additives', () => {
 test.describe('advice', () => {
   test('shows general advice and saves, lists and removes my own', async ({ page }) => {
     await page.goto('/#/advice');
-    await expect(page.locator('.general-advice')).toContainText('Sieve your glazes');
-    await expect(page.locator('.general-advice')).toContainText('Tags: mixing');
+    // The standard advice from advice.json.
+    await expect(page.locator('.general-advice li')).toHaveCount(8);
+    await expect(page.locator('.general-advice')).toContainText('Have a system to your process.');
+    await expect(page.locator('.general-advice')).toContainText('Tags: system, methods, records');
 
     await page.locator('#advice-title').fill('Wax resist');
     await page.locator('#advice-tags').fill('glazing');

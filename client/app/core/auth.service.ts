@@ -15,6 +15,12 @@ interface VerifyResponse {
   email?: string;
 }
 
+interface MessageResponse {
+  msg: string;
+}
+
+interface ChangePasswordResponse extends MessageResponse, TokenResponse {}
+
 /** Signs users up, in and out, and keeps the login token in localStorage. */
 @Injectable({ providedIn: 'root' })
 export class AuthService {
@@ -51,17 +57,43 @@ export class AuthService {
    * failures (server down or restarting) keep it for the next try.
    */
   async refresh(): Promise<void> {
-    if (!this.tokenValue()) {
+    const sent = this.tokenValue();
+    if (!sent) {
       this.email.set(null);
       return;
     }
     try {
       const res = await firstValueFrom(this.http.get<VerifyResponse>(this.apiBase + '/verify'));
-      this.email.set(res.email ?? null);
+      // A sign-in while the request was out wins over its answer.
+      if (this.tokenValue() === sent) this.email.set(res.email ?? null);
     } catch (err) {
+      if (this.tokenValue() !== sent) return;
       if (err instanceof HttpErrorResponse && err.status === 401) this.signOut();
       else this.email.set(null);
     }
+  }
+
+  /** Asks for a password reset email; resolves with the server's message. */
+  async requestReset(email: string): Promise<string> {
+    const res = await firstValueFrom(
+      this.http.post<MessageResponse>(this.apiBase + '/password/forgot', { email }));
+    return res.msg;
+  }
+
+  /** Sets a new password with the token from a reset email. */
+  async resetPassword(token: string, password: string): Promise<string> {
+    const res = await firstValueFrom(
+      this.http.post<MessageResponse>(this.apiBase + '/password/reset', { token, password }));
+    return res.msg;
+  }
+
+  /** Changes the password; this device stays signed in with the new token, others are signed out. */
+  async changePassword(current: string, password: string): Promise<string> {
+    const res = await firstValueFrom(
+      this.http.put<ChangePasswordResponse>(this.apiBase + '/password', { current, password }));
+    this.setToken(res.token);
+    this.email.set(res.email);
+    return res.msg;
   }
 
   signOut(): void {

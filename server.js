@@ -13,6 +13,10 @@ mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://127.0.0.1/glazecalc_app_
 
 const app = module.exports = exports = express();
 app.disable('x-powered-by');
+// In production nginx is the only way in (port 3000 listens on 127.0.0.1) and
+// appends the client's address to X-Forwarded-For; trusting exactly that one hop
+// gives the rate limits the real address without letting clients choose it.
+app.set('trust proxy', 1);
 
 const api = express.Router();
 
@@ -32,6 +36,7 @@ api.use('/advice', require(__dirname + '/server/routes/advice_routes'));
 api.use('/firing', require(__dirname + '/server/routes/firing_routes'));
 api.use('/materials', require(__dirname + '/server/routes/materials_routes'));
 api.use('/notes', require(__dirname + '/server/routes/notes_routes'));
+api.use('/password', require(__dirname + '/server/routes/password_routes'));
 api.use('/recipe', require(__dirname + '/server/routes/recipe_routes'));
 api.use('/trash', require(__dirname + '/server/routes/trash_routes'));
 // /signup, /signin, /verify, /usersettings/:id and /deleteuser/:id

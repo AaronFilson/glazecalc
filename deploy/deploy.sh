@@ -8,7 +8,9 @@
 # To roll back, deploy the previous tag; it is printed at the end of each run.
 # If the new version fails to pull or to become healthy, the previous one is
 # started again and nothing is recorded, so a reboot never starts a failed deploy.
-# Each deploy also loads the standard data that ships with the image.
+# Each deploy also loads the standard data that ships with the image, and the
+# scripts here (deploy.sh, backup.sh, enable-https.sh) are updated from the
+# image's commit, so a change to them takes effect with the deploy that ships it.
 set -euo pipefail
 
 tag="${1:-latest}"
@@ -17,16 +19,46 @@ if [[ ! "$tag" =~ ^(latest|sha-[0-9a-f]{40})$ ]]; then
   exit 2
 fi
 dir=/opt/glazecalc
+image=ghcr.io/aaronfilson/glazecalc
 raw=https://raw.githubusercontent.com/AaronFilson/glazecalc
 cd "$dir"
+
+# Images exist only for master commits that passed CI, so pulling first proves
+# the tag is a real build before any file from its commit is used. The image's
+# revision label names that commit, which also pins "latest" to an exact one.
+if ! docker pull --quiet "$image:$tag" >/dev/null; then
+  echo "There is no published image $image:$tag (CI publishes one for each master commit)." >&2
+  exit 1
+fi
+ref=$(docker image inspect -f '{{ index .Config.Labels "org.opencontainers.image.revision" }}' "$image:$tag")
+if [[ ! "$ref" =~ ^[0-9a-f]{40}$ ]]; then
+  echo "$image:$tag has no commit label (org.opencontainers.image.revision)." >&2
+  exit 1
+fi
+
+# This commit's scripts. If deploy.sh itself changed, run the new one instead,
+# once: it sees GLAZECALC_DEPLOY_REF and skips this step.
+if [ "${GLAZECALC_DEPLOY_REF:-}" != "$ref" ]; then
+  for f in deploy.sh backup.sh enable-https.sh; do
+    curl -fsSL "$raw/$ref/deploy/$f" -o "$f.new"
+    bash -n "$f.new"
+    chmod 750 "$f.new"
+  done
+  mv backup.sh.new backup.sh
+  mv enable-https.sh.new enable-https.sh
+  if ! cmp -s deploy.sh.new deploy.sh; then
+    mv deploy.sh.new deploy.sh
+    echo "deploy.sh changed in ${ref:0:7}; running the new version."
+    GLAZECALC_DEPLOY_REF="$ref" exec "$dir/deploy.sh" "$tag"
+  fi
+  rm -f deploy.sh.new
+fi
 
 # Region from the instance metadata service (IMDSv2).
 token=$(curl -fsS -X PUT http://169.254.169.254/latest/api/token -H 'X-aws-ec2-metadata-token-ttl-seconds: 60')
 region=$(curl -fsS -H "X-aws-ec2-metadata-token: $token" http://169.254.169.254/latest/meta-data/placement/region)
 
 # The Compose file from the same commit as the image, so the two always match.
-ref=master
-[[ "$tag" == sha-* ]] && ref="${tag#sha-}"
 curl -fsSL "$raw/$ref/deploy/compose.prod.yaml" -o compose.prod.yaml.new
 
 # APP_SECRET lives in SSM Parameter Store, never in the repository or user data.

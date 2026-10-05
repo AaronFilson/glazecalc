@@ -49,7 +49,7 @@ describe('user API', () => {
       request(baseUri)
         .put('/usersettings/' + testUser._id)
         .set('token', userToken)
-        .send({ email: 'new email' })
+        .send({ email: 'new@email.com' })
         .end((err, res) => {
           expect(err).to.eql(null);
           expect(res.body.msg).to.eql('User updated');

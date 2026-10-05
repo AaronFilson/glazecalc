@@ -6,6 +6,7 @@ const handleDBError = require(__dirname + '/../lib/handle_db_error');
 const jwtAuth = require(__dirname + '/../lib/jwt_auth');
 
 const User = require(__dirname + '/../models/user');
+const PasswordReset = require(__dirname + '/../models/password_reset');
 // Collections whose records belong to a user and go when the account does.
 const OWNED_MODELS = ['additive', 'advice', 'firing', 'material', 'note', 'recipe', 'trash']
   .map((name) => require(__dirname + '/../models/' + name));
@@ -63,7 +64,7 @@ userRouter.put('/usersettings/:id', jwtAuth, selfOrAdmin, jsonParser, (req, res)
   });
   if (changes.email !== undefined) {
     changes.email = email.normalize(changes.email);
-    if (!changes.email || changes.email.length < 5) {
+    if (!email.isValid(changes.email)) {
       return res.status(400).json({ msg: 'Please enter an email' });
     }
   }
@@ -82,13 +83,15 @@ userRouter.put('/usersettings/:id', jwtAuth, selfOrAdmin, jsonParser, (req, res)
 });
 
 userRouter.delete('/deleteuser/:id', jwtAuth, selfOrAdmin, (req, res) => {
-  User.deleteOne({_id: req.params.id}).then( (u) => {
-    if (u.deletedCount != 1) return res.status(404).json({ msg: 'No user with that id' });
-    // Remove the account's records too, so nothing is left without an owner.
-    return Promise.all(OWNED_MODELS.map((Model) => Model.deleteMany({ ownedBy: req.params.id }))).then(() => {
+  // The account's records go first, so if one delete fails the account is still
+  // there and a retry finishes the job; nothing is left without an owner.
+  Promise.all(OWNED_MODELS.map((Model) => Model.deleteMany({ ownedBy: req.params.id }))
+    .concat(PasswordReset.deleteMany({ userId: req.params.id })))
+    .then(() => User.deleteOne({ _id: req.params.id }))
+    .then((u) => {
+      if (u.deletedCount != 1) return res.status(404).json({ msg: 'No user with that id' });
       res.status(200).json({
         msg: 'User deleted'
       });
-    });
-  }).catch((err) => handleDBError(err, res));
+    }).catch((err) => handleDBError(err, res));
 });

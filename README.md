@@ -130,7 +130,11 @@ on Windows.
 and the JSON API under `/api`, so the browser only ever talks to one address. When hosting on a
 domain, put a reverse proxy such as Caddy or nginx in front of that port for HTTPS.
 
-Create a user account to store the recipes and materials. If there is any chance the app will be
+Create a user account to store the recipes and materials. Forgotten passwords are reset by email
+(the Reset it link on the sign-in page); set MAIL_TRANSPORT and SMTP_URL so the app can send it, as
+described in `.env.example`. Sign-in, sign-up and password reset are rate limited per client address;
+behind a reverse proxy the app trusts one hop of X-Forwarded-For for that address. If there is any
+chance the app will be
 exposed to multiple users or the internet, set APP_SECRET to a long random value (it is required
 when NODE_ENV=production). Changing the APP_SECRET will invalidate tokens saved by users, which is
 useful in some cases.

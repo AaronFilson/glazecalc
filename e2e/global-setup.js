@@ -2,8 +2,8 @@ const fs = require('fs');
 const path = require('path');
 const mongoose = require('mongoose');
 
-// Resets the end-to-end database and loads the standard materials and
-// additives the way mongoimport would.
+// Resets the end-to-end database and loads the standard materials, additives
+// and advice from the same data files the production seed uses.
 module.exports = async () => {
   const uri = process.env.E2E_MONGO_URI;
   try {
@@ -13,14 +13,11 @@ module.exports = async () => {
   }
   const EJSON = mongoose.mongo.BSON.EJSON;
   await mongoose.connection.dropDatabase();
-  for (const name of ['materials', 'additives']) {
+  fs.rmSync(process.env.E2E_MAIL_DIR, { recursive: true, force: true });
+  for (const name of ['materials', 'additives', 'advice']) {
     const docs = fs.readFileSync(path.join(__dirname, '..', name + '.json'), 'utf8')
       .split(/\r?\n/).filter(Boolean).map((line) => EJSON.parse(line));
     await mongoose.connection.collection(name).insertMany(docs);
   }
-  // There is no standard advice data file yet; one record lets the advice page show its general list.
-  await mongoose.connection.collection('advice').insertOne({
-    title: 'Sieve your glazes', content: 'Pass mixed glaze through an 80 mesh sieve.', tags: ['mixing'], ownedBy: 'Standard'
-  });
   await mongoose.disconnect();
 };

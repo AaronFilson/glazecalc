@@ -31,7 +31,7 @@ import { Notices, NoticesList } from '../../shared/notices';
         </div>
         <div>
           <label for="email">Email: </label>
-          <input id="email" type="text" name="email" required autocomplete="username" [(ngModel)]="email">
+          <input id="email" type="email" name="email" required autocomplete="username" [(ngModel)]="email">
         </div>
         <div>
           <label for="password">Password: </label>
@@ -56,6 +56,7 @@ import { Notices, NoticesList } from '../../shared/notices';
           needs to be 8 characters long at minimum.
         </p>
       } @else {
+        <p>Forgot your password? <a routerLink="/forgot" class="btn btn-light border">Reset it</a></p>
         <p>Ready to create an account? <a routerLink="/signup" class="btn btn-light border">Sign Up</a></p>
       }
     </section>

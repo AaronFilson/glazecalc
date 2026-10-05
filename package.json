@@ -49,8 +49,10 @@
   "dependencies": {
     "bcrypt": "6.0.0",
     "express": "5.2.1",
+    "express-rate-limit": "8.7.0",
     "jsonwebtoken": "9.0.3",
-    "mongoose": "9.10.4"
+    "mongoose": "9.10.4",
+    "nodemailer": "10.0.15"
   },
   "devDependencies": {
     "@angular/build": "22.2.1",

@@ -17,9 +17,15 @@ module.exports = exports = (req, res, next) => {
 
   User.findById(decoded.id).select('-password').then((user) => {
     if (!user) return unauthorized(res);
+    // Tokens from before the last password change no longer count. Tokens made
+    // before versions existed have none, which matches an unchanged password.
+    if ((decoded.tv || 0) !== (user.tokenVersion || 0)) return unauthorized(res);
     req.user = user;
     next();
-  // A failed lookup (such as an id that is not an ObjectId) is an auth failure;
-  // errors thrown further down the route go to Express instead of crashing.
-  }, () => unauthorized(res)).catch(next);
+  }, (err) => {
+    // An id that is not an ObjectId is a bad token. Anything else (the database
+    // is down or restarting) is a server error, so clients keep their sign-in.
+    if (err && err.name === 'CastError') return unauthorized(res);
+    next(err);
+  }).catch(next);
 };

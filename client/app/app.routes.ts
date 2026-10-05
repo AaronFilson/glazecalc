@@ -11,6 +11,9 @@ export const routes: Routes = [
     path: 'signup', title: 'Sign up - Glazecalc', data: { mode: 'signup' },
     loadComponent: () => import('./pages/auth/auth-page').then((m) => m.AuthPage)
   },
+  { path: 'forgot', title: 'Reset your password - Glazecalc', loadComponent: () => import('./pages/password/forgot-page').then((m) => m.ForgotPage) },
+  { path: 'reset', title: 'Choose a new password - Glazecalc', loadComponent: () => import('./pages/password/reset-page').then((m) => m.ResetPage) },
+  { path: 'account', title: 'Your account - Glazecalc', loadComponent: () => import('./pages/password/account-page').then((m) => m.AccountPage) },
   { path: 'recipe', title: 'Recipes - Glazecalc', loadComponent: () => import('./pages/recipe/recipe-page').then((m) => m.RecipePage) },
   { path: 'material', title: 'Materials - Glazecalc', loadComponent: () => import('./pages/material/material-page').then((m) => m.MaterialPage) },
   { path: 'additive', title: 'Additives - Glazecalc', loadComponent: () => import('./pages/additive/additive-page').then((m) => m.AdditivePage) },

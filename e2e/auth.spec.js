@@ -41,7 +41,7 @@ test('shows an error for a wrong password', async ({ page, request }) => {
   await page.locator('#email').fill(email);
   await page.locator('#password').fill('not-the-password');
   await page.getByRole('button', { name: 'Sign In' }).click();
-  await expect(page.locator('.errors-section')).toContainText('incorrect password');
+  await expect(page.locator('.errors-section')).toContainText('Email or password is incorrect.');
   await expect(page).toHaveURL(/#\/signin$/);
 });
 

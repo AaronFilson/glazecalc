@@ -1,5 +1,6 @@
 {
   "spec": "server/test",
+  "require": "server/test/support/env.js",
   "exit": true,
   "timeout": 5000
 }
