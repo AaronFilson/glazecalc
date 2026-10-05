@@ -94,7 +94,7 @@ Still open: the email address for Let's Encrypt expiry notices and the budget al
 
 Notes for restored data: old password hashes still work; everyone signs in again because the
 token secret changes; recipes saved by the old app display correctly (the app reads their
-`uList` analysis); run `npm run seed` afterwards to refresh the standard materials, additives
+`uList` analysis). Every deploy loads the standard materials, additives
 and advice.
 
 ### 2. Repository work (no AWS needed)
@@ -127,7 +127,7 @@ AWS commands are drafted and reviewed before running; nothing is created without
 ### 4. Cut over
 
 1. Lower the Route 53 record's TTL to 60 seconds a day ahead.
-2. Restore the dump into the new instance's MongoDB, run the seed, sign in and check recipes.
+2. Restore the dump into the new instance's MongoDB if wanted, sign in and check recipes (deploys load the standard data).
 3. Test with a hosts-file entry pointing glazecalcapp.com at the new Elastic IP.
 4. Switch the A record to the new Elastic IP, then run `enable-https.sh` on the instance to get the certificate and turn on HTTPS.
 5. Keep the old instance **stopped, not terminated**, for two weeks with its snapshot; then

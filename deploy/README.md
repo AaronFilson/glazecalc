@@ -25,7 +25,7 @@ app can be checked by IP address before the DNS switch. After DNS points at the 
 | `cloud-init.yaml` | launch template user data | first-boot packages and settings; runs `setup-instance.sh` |
 | `setup-instance.sh` | `/usr/local/sbin/glazecalc-setup.sh` | installs the SSM agent, AWS CLI, Docker, nginx, certbot; installs the files below; first deploy |
 | `compose.prod.yaml` | `/opt/glazecalc/` | the app image from GHCR plus MongoDB with production settings |
-| `deploy.sh` | `/opt/glazecalc/` | deploys an image tag; refreshes the Compose file and secret; restarts the previous version if the new one fails |
+| `deploy.sh` | `/opt/glazecalc/` | deploys an image tag; refreshes the Compose file and secret; restarts the previous version if the new one fails; loads the standard materials, additives and advice from the image |
 | `enable-https.sh` | `/opt/glazecalc/` | once, after the DNS switch: certificate from Let's Encrypt, nginx to HTTPS; re-run to refresh the nginx files |
 | `backup.sh` | `/opt/glazecalc/` | `mongodump` streamed to the S3 backup bucket |
 | `nginx/glazecalc-http.conf` | `/etc/nginx/sites-available/glazecalc` | first-boot site: plain HTTP to the app, plus Let's Encrypt's check path |

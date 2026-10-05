@@ -8,6 +8,7 @@
 # To roll back, deploy the previous tag; it is printed at the end of each run.
 # If the new version fails to pull or to become healthy, the previous one is
 # started again and nothing is recorded, so a reboot never starts a failed deploy.
+# Each deploy also loads the standard data that ships with the image.
 set -euo pipefail
 
 tag="${1:-latest}"
@@ -58,8 +59,15 @@ new up -d --remove-orphans --wait --wait-timeout 180 || restore_previous
 
 mv compose.prod.yaml.new compose.prod.yaml
 printf 'GLAZECALC_TAG=%s\n' "$tag" > .env
+echo "Deployed $tag (previous: ${previous:-none})"
+
+# Standard materials, additives and advice from this image's data files. Safe to
+# repeat: records are replaced by _id and users' own records are not touched.
+if ! docker compose -f compose.prod.yaml run --rm --no-deps app node scripts/seed-standard.js; then
+  echo "The app is running $tag, but loading the standard data failed; run deploy.sh again." >&2
+  exit 1
+fi
+
 # Rolling back pulls an older image again, so keep only the images in use.
 docker image prune -af >/dev/null
-
-echo "Deployed $tag (previous: ${previous:-none})"
 curl -fsS http://127.0.0.1:3000/api/health && echo
