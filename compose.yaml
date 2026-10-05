@@ -1,0 +1,46 @@
+# Glazecalc and MongoDB 9 in containers.
+#
+#   APP_SECRET=... docker compose up -d --build   (or put APP_SECRET in .env)
+#   docker compose run --rm app node scripts/seed-standard.js   (standard materials, once)
+#   docker compose logs -f app
+#   docker compose down             (data stays in the mongo-data volume)
+#
+# The app is published on 127.0.0.1 only: put a reverse proxy such as nginx in
+# front for public access, since ports Docker publishes bypass ufw.
+name: glazecalc
+
+services:
+  app:
+    build: .
+    image: glazecalc:local
+    restart: unless-stopped
+    environment:
+      NODE_ENV: production
+      PORT: 3000
+      MONGOLAB_URI: mongodb://mongo:27017/glazecalc
+      # Required in production; Compose stops with this message if it is unset.
+      APP_SECRET: ${APP_SECRET:?Set APP_SECRET in the environment or in .env}
+    ports:
+      - '127.0.0.1:${APP_PORT:-3000}:3000'
+    depends_on:
+      mongo:
+        condition: service_healthy
+
+  mongo:
+    image: mongo:9.0@sha256:bac22ea7710d774103dcad3ec8ac13cba1eb378f488e3ce8a6b3a1adf2ba9dcc
+    restart: unless-stopped
+    volumes:
+      - mongo-data:/data/db
+      # The image declares this too; naming it stops a new unnamed volume
+      # being left behind on every `docker compose down`.
+      - mongo-config:/data/configdb
+    healthcheck:
+      test: ['CMD', 'mongosh', '--quiet', '--eval', "db.adminCommand('ping').ok"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 20s
+
+volumes:
+  mongo-data:
+  mongo-config:

@@ -9,7 +9,7 @@ import { AuthService } from './core/auth.service';
     @if (auth.email(); as email) {
       <header class="header-text">
         Welcome to the Glazecalc App! Hello {{ email }}
-        <button type="button" class="btn btn-link" (click)="logout()">logout</button>
+        <button type="button" class="btn btn-link p-0 align-baseline" (click)="logout()">logout</button>
         or Go <a routerLink="/home">Home</a>
       </header>
     }

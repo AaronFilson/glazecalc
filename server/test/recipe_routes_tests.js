@@ -1,13 +1,13 @@
 process.env.MONGOLAB_URI = 'mongodb://localhost/r_test';
 require(__dirname + '/../../server');
 const chai = require('chai');
-const chaiHttp = require('chai-http');
+const { default: chaiHttp, request: chaiRequest } = require('chai-http');
 chai.use(chaiHttp);
 const expect = chai.expect;
-const request = chai.request;
+const request = (url) => chaiRequest.execute(url);
 const mongoose = require('mongoose');
-var PORT = process.env.PORT || 4000;
-var baseUri = 'localhost:' + PORT + '/recipe';
+var PORT = process.env.PORT || 3000;
+var baseUri = 'localhost:' + PORT + '/api/recipe';
 const User = require(__dirname + '/../models/user');
 var userToken;
 var testUser;

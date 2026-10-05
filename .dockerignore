@@ -1,0 +1,21 @@
+# Keep the build context small and secrets out of images.
+.git
+.github
+.angular
+node_modules
+dist
+coverage
+playwright-report
+test-results
+db
+docs
+e2e
+server/test
+client/**/*.spec.ts
+client/app/testing
+.env
+.env.*
+!.env.example
+*.log
+Dockerfile
+compose.yaml

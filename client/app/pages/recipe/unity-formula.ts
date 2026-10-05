@@ -45,9 +45,9 @@ export function silicaAluminaRatio(analysis: RecipeAnalysis): number | null {
   selector: 'gc-unity-formula',
   imports: [DecimalPipe],
   template: `
-    <div class="row">
+    <div class="row mx-0">
       @for (column of columns(); track column.title) {
-        <ul class="col-md-3">
+        <ul class="col-lg-3 ps-4">
           {{ column.title }}
           @for (oxide of column.oxides; track oxide.label) {
             <li>{{ oxide.label }} : {{ oxide.value | number: '1.3-3' }}</li>

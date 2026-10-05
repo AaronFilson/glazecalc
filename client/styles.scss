@@ -1,15 +1,11 @@
-// Bootstrap 3 grid, forms, buttons and tables, from bootstrap-sass.
-$icon-font-path: 'bootstrap-sass/assets/fonts/bootstrap/';
-@import 'bootstrap';
+// Bootstrap 5's compiled CSS is loaded before this file (angular.json "styles").
+// Bootstrap 5 sizes everything in rem from a 16px root, so the sizes below are
+// the old 62.5%-root values converted to keep the same on-screen sizes.
 
 /*************** Main Page Layout **************/
 
-html {
-  font-size: 62.5%;
-}
-
 body {
-  font-size: 1.6em;
+  font-size: 1rem;
   background-image: url('/images/background.jpg');
   background-size: cover;
   background-attachment: fixed;
@@ -17,8 +13,13 @@ body {
 }
 
 main {
-  font-size: 1.9rem;
+  font-size: 1.1875rem;
   margin-top: 3%;
+}
+
+// Bootstrap 3 made labels bold; Bootstrap 5 leaves them normal weight.
+label {
+  font-weight: 700;
 }
 
 .inputbox {
@@ -67,7 +68,7 @@ nav {
 }
 
 h1 {
-  font-size: 3.4rem;
+  font-size: 2.125rem; // 34px
   text-shadow: 2px 2px #C3DEEC;
 }
 

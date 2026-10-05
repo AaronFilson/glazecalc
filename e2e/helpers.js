@@ -1,4 +1,4 @@
-const API = 'http://localhost:4000';
+const API = 'http://localhost:' + (process.env.E2E_PORT || '3100') + '/api';
 
 let count = 0;
 const uniqueEmail = (label) => label + '-' + Date.now() + '-' + (count++) + '@test.com';
@@ -10,7 +10,7 @@ const signUpAndSignIn = async (page, request) => {
   const res = await request.post(API + '/signup', { data: { email, password: 'password123' } });
   if (!res.ok()) throw new Error('signup failed: ' + res.status());
   const { token } = await res.json();
-  await page.addInitScript((value) => window.localStorage.setItem('token', value), token);
+  await page.addInitScript((value) => globalThis.localStorage.setItem('token', value), token);
   return { email, token };
 };
 

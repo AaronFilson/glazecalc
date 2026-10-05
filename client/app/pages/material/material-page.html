@@ -9,31 +9,31 @@
   </p>
   <form (ngSubmit)="save()">
     <div class="row">
-      <div class="col-lg-4 col-sm-4 col-xs-8">
+      <div class="col-xl-4 col-md-4 col-8">
         <label for="material-name">Name of Material: </label><br>
         <input id="material-name" type="text" name="name" [(ngModel)]="name">
       </div>
-      <div class="col-lg-4 col-sm-4 col-xs-8">
+      <div class="col-xl-4 col-md-4 col-8">
         <label for="raw-formula">Raw formula: </label><br>
         <input id="raw-formula" type="text" name="rawformula" [(ngModel)]="rawformula">
       </div>
-      <div class="col-lg-4 col-sm-4 col-xs-8">
+      <div class="col-xl-4 col-md-4 col-8">
         <label for="related-to">Related To: </label><br>
         <input id="related-to" type="text" name="relatedTo" [(ngModel)]="relatedTo">
       </div>
     </div>
     <div class="row">
-      <div class="col-md-10">
+      <div class="col-lg-10">
         <label for="notes" class="boxlabel"> Notes: </label>
         <textarea id="notes" name="notes" rows="3" class="form-control" [(ngModel)]="notes"></textarea>
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-4 col-sm-4 col-xs-8">
+      <div class="col-xl-4 col-md-4 col-8">
         <label for="LOI">Loss on Ignition - LOI (percentage): </label>
         <input id="LOI" type="text" name="loi" [(ngModel)]="loi">
       </div>
-      <div class="col-lg-4 col-sm-4 col-xs-8">
+      <div class="col-xl-4 col-md-4 col-8">
         <label for="manualmolecularweight">Raw molecular weight of the formula (used only if LOI is blank): </label>
         <input id="manualmolecularweight" type="text" name="molecularweight" [(ngModel)]="molecularweight">
       </div>
@@ -42,7 +42,7 @@
 
     <h4>Enter the formula (fired): </h4>
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-lg-6">
         <label for="firedoxide">Oxide Selection</label>
         <div>
           <select id="firedoxide" name="firedox-select" [(ngModel)]="selectedOxide">
@@ -52,18 +52,22 @@
             }
           </select>
         </div>
-        <button type="button" class="btn btn-default" (click)="addOxide()">Add the oxide to the list</button>
+        <button type="button" class="btn btn-light border" (click)="addOxide()">Add the oxide to the list</button>
       </div>
-      <fieldset class="col-md-6">
+      <fieldset class="col-lg-6">
         <legend class="h5">This formula is in :</legend>
-        <label for="radiopercent">Percent</label>
-        <input id="radiopercent" class="radio" type="radio" name="percentmole" value="percent" [(ngModel)]="percentmole"><br>
-        <label for="radiomole">Molecular / Unity</label>
-        <input id="radiomole" class="radio" type="radio" name="percentmole" value="molecular" [(ngModel)]="percentmole">
+        <div class="form-check">
+          <input id="radiopercent" class="form-check-input" type="radio" name="percentmole" value="percent" [(ngModel)]="percentmole">
+          <label for="radiopercent" class="form-check-label">Percent</label>
+        </div>
+        <div class="form-check">
+          <input id="radiomole" class="form-check-input" type="radio" name="percentmole" value="molecular" [(ngModel)]="percentmole">
+          <label for="radiomole" class="form-check-label">Molecular / Unity</label>
+        </div>
       </fieldset>
     </div>
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-lg-12">
         <ul>
           @for (line of formula(); track $index) {
             <li>
@@ -73,14 +77,14 @@
                 <input [id]="'oxide-amount-' + $index" type="text" [name]="'amount' + $index" class="oxide-amount"
                   [(ngModel)]="line.amount">
               </p>
-              <button type="button" class="btn btn-default" (click)="removeOxide($index)">Remove from formula list</button>
+              <button type="button" class="btn btn-light border" (click)="removeOxide($index)">Remove from formula list</button>
             </li>
           }
         </ul>
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-12">
+      <div class="col-xl-12">
         <button type="submit" class="btn btn-primary">Save</button>
       </div>
     </div>
@@ -114,7 +118,7 @@
         </tr>
       }
     </table>
-    <button type="button" class="btn btn-default" (click)="showRemove.set(!showRemove())">Remove toggle</button>
+    <button type="button" class="btn btn-light border" (click)="showRemove.set(!showRemove())">Remove toggle</button>
   </section>
   <br>
 }

@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-mongoose.Promise = global.Promise;
 var Schema = mongoose.Schema;
 
 var recipeSchema = new mongoose.Schema({

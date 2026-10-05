@@ -16,11 +16,11 @@ import { PageNav } from '../../shared/page-nav';
     <section class="help-text">
       <p>This is the notes page. You can take notes and save them here.</p>
       <form (ngSubmit)="save()">
-        <div class="form-group">
+        <div class="mb-3">
           <label for="title">Title: </label>
           <input id="title" type="text" name="title" [(ngModel)]="title">
         </div>
-        <div class="form-group">
+        <div class="mb-3">
           <label for="content">Your Note: </label>
           <textarea id="content" name="content" rows="4" class="form-control" [(ngModel)]="content"></textarea>
         </div>
@@ -37,12 +37,12 @@ import { PageNav } from '../../shared/page-nav';
             <b>{{ note.title }}</b>
             <p>{{ note.content }}</p>
             @if (showRemove()) {
-              <button type="button" class="btn btn-default" (click)="remove(note)">Remove</button>
+              <button type="button" class="btn btn-light border" (click)="remove(note)">Remove</button>
             }
           </li>
         }
       </ul>
-      <button type="button" class="btn btn-default" (click)="showRemove.set(!showRemove())">Toggle Remove button</button>
+      <button type="button" class="btn btn-light border" (click)="showRemove.set(!showRemove())">Toggle Remove button</button>
     </section>
   `
 })

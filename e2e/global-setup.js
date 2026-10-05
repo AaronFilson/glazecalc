@@ -9,7 +9,7 @@ module.exports = async () => {
   try {
     await mongoose.connect(uri, { serverSelectionTimeoutMS: 5000 });
   } catch (e) {
-    throw new Error('Could not reach MongoDB at ' + uri + '. Start mongod before running the e2e tests.');
+    throw new Error('Could not reach MongoDB at ' + uri + '. Start mongod before running the e2e tests.', { cause: e });
   }
   const EJSON = mongoose.mongo.BSON.EJSON;
   await mongoose.connection.dropDatabase();

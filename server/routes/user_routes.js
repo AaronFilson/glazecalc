@@ -1,5 +1,5 @@
 const express = require('express');
-const jsonParser = require('body-parser').json();
+const jsonParser = express.json();
 const mongoose = require('mongoose');
 const email = require(__dirname + '/../lib/email');
 const handleDBError = require(__dirname + '/../lib/handle_db_error');
@@ -56,9 +56,10 @@ const selfOrAdmin = (req, res, next) => {
 const SETTABLE_FIELDS = ['displayname', 'email', 'settings'];
 
 userRouter.put('/usersettings/:id', jwtAuth, selfOrAdmin, jsonParser, (req, res) => {
+  var body = req.body || {};
   var changes = {};
   SETTABLE_FIELDS.forEach((field) => {
-    if (req.body[field] !== undefined) changes[field] = req.body[field];
+    if (body[field] !== undefined) changes[field] = body[field];
   });
   if (changes.email !== undefined) {
     changes.email = email.normalize(changes.email);

@@ -1,6 +1,6 @@
 const express = require('express');
 const Material = require(__dirname + '/../models/material');
-const jsonParser = require('body-parser').json();
+const jsonParser = express.json();
 const handleDBError = require(__dirname + '/../lib/handle_db_error');
 const jwtAuth = require(__dirname + '/../lib/jwt_auth');
 const owned = require(__dirname + '/../lib/owned_routes');

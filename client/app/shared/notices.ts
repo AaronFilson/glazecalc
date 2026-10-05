@@ -29,7 +29,7 @@ export class Notices {
       <ol class="errors-section" role="alert">
         @for (error of notices().errors(); track $index) {
           <li>{{ error }}
-            <button type="button" class="btn btn-default" (click)="notices().dismissError($index)">Dismiss</button>
+            <button type="button" class="btn btn-light border" (click)="notices().dismissError($index)">Dismiss</button>
           </li>
         }
       </ol>
@@ -38,7 +38,7 @@ export class Notices {
       <ol class="server-msg" role="status">
         @for (message of notices().messages(); track $index) {
           <li>{{ message }}
-            <button type="button" class="btn btn-default" (click)="notices().dismissMessage($index)">Dismiss</button>
+            <button type="button" class="btn btn-light border" (click)="notices().dismissMessage($index)">Dismiss</button>
           </li>
         }
       </ol>

@@ -7,8 +7,8 @@ import { RouterLink } from '@angular/router';
   template: `
     <div class="help-text">
       <h1>Page Not Found.</h1>
-      Go to <a routerLink="/home" class="btn btn-default">home</a>
-      or <a routerLink="/signin" class="btn btn-default">sign in</a>.
+      Go to <a routerLink="/home" class="btn btn-light border">home</a>
+      or <a routerLink="/signin" class="btn btn-light border">sign in</a>.
     </div>
   `
 })

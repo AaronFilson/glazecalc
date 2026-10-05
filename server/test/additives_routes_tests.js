@@ -1,12 +1,12 @@
 process.env.MONGOLAB_URI = 'mongodb://127.0.0.1:27017/add_test';
-var app = require(__dirname + '/../../server');
+require(__dirname + '/../../server');
 const chai = require('chai');
-const chaiHttp = require('chai-http');
+const { default: chaiHttp, request: chaiRequest } = require('chai-http');
 chai.use(chaiHttp);
 const expect = chai.expect;
-const request = chai.request;
-var PORT = process.env.PORT || 4000;
-var baseUri = '127.0.0.1:' + PORT + '/additives';
+const request = (url) => chaiRequest.execute(url);
+var PORT = process.env.PORT || 3000;
+var baseUri = '127.0.0.1:' + PORT + '/api/additives';
 const User = require(__dirname + '/../models/user');
 var userToken;
 var testUser;

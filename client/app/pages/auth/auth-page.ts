@@ -24,15 +24,16 @@ import { Notices, NoticesList } from '../../shared/notices';
         </p>
       </section>
 
-      <form #authForm="ngForm" (ngSubmit)="submit()" class="form-inline">
-        <div class="form-group">
+      <!-- Bootstrap 5 dropped .form-inline; flex wrapping gives the same one-line form on wide screens. -->
+      <form #authForm="ngForm" (ngSubmit)="submit()" class="d-flex flex-wrap align-items-center gap-3 mb-3">
+        <div>
           {{ signup() ? 'Make an account? Enter info:' : 'Have an account? Sign in:' }}
         </div>
-        <div class="form-group">
+        <div>
           <label for="email">Email: </label>
           <input id="email" type="text" name="email" required autocomplete="username" [(ngModel)]="email">
         </div>
-        <div class="form-group">
+        <div>
           <label for="password">Password: </label>
           <input id="password" type="password" name="password" required
             [attr.autocomplete]="signup() ? 'new-password' : 'current-password'" [(ngModel)]="password">
@@ -49,13 +50,13 @@ import { Notices, NoticesList } from '../../shared/notices';
       </form>
 
       @if (signup()) {
-        <p>If you have an account, sign in here : <a routerLink="/signin" class="btn btn-default">Sign In</a></p>
+        <p>If you have an account, sign in here : <a routerLink="/signin" class="btn btn-light border">Sign In</a></p>
         <p>
           A note on account creation: Email needs to have the domain (&#64;domain.com), and the password
           needs to be 8 characters long at minimum.
         </p>
       } @else {
-        <p>Ready to create an account? <a routerLink="/signup" class="btn btn-default">Sign Up</a></p>
+        <p>Ready to create an account? <a routerLink="/signup" class="btn btn-light border">Sign Up</a></p>
       }
     </section>
   `

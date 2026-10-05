@@ -19,7 +19,7 @@ const PAGES = ['additive', 'advice', 'firing', 'home', 'material', 'notes', 'rec
       <h3>You are on the <b>{{ title() }}</b> page.</h3>
       Links to pages:
       @for (page of otherPages(); track page) {
-        <a [routerLink]="'/' + page" class="btn btn-default">{{ page }}</a>
+        <a [routerLink]="'/' + page" class="btn btn-light border">{{ page }}</a>
       }
     </nav>
   `

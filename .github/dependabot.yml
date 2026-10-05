@@ -1,0 +1,36 @@
+# Weekly pull requests for dependency updates; CI tests each one.
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 10
+    groups:
+      # Angular packages must move together (ng update handles migrations).
+      angular:
+        patterns: ['@angular/*', '@angular-devkit/*', 'angular-eslint']
+      lint-and-format:
+        patterns: ['eslint', '@eslint/*', 'typescript-eslint', 'globals', 'prettier']
+      test-tools:
+        patterns: ['vitest', '@vitest/*', 'jsdom', 'mocha', 'chai', 'chai-http', 'c8', '@playwright/test']
+    ignore:
+      # Angular sets the supported TypeScript range; move with an Angular update.
+      - dependency-name: typescript
+        update-types: ['version-update:semver-major', 'version-update:semver-minor']
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+
+  # Base image digests in the Dockerfile (node:24-slim) and compose.yaml (mongo:9.0).
+  - package-ecosystem: docker
+    directory: /
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: docker-compose
+    directory: /
+    schedule:
+      interval: weekly

@@ -19,15 +19,15 @@ import { PageNav } from '../../shared/page-nav';
         Basic advice on glaze formulation and mixing is programmed in.
       </p>
       <form (ngSubmit)="save()">
-        <div class="form-group">
+        <div class="mb-3">
           <label for="advice-title">Title: </label>
           <input id="advice-title" type="text" name="title" [(ngModel)]="title">
         </div>
-        <div class="form-group">
+        <div class="mb-3">
           <label for="advice-tags">Tags: </label>
           <input id="advice-tags" type="text" name="tags" [(ngModel)]="tags">
         </div>
-        <div class="form-group">
+        <div class="mb-3">
           <label for="advice-content" class="boxlabel">Advice Content: </label>
           <textarea id="advice-content" name="content" rows="4" class="form-control" [(ngModel)]="content"></textarea>
         </div>
@@ -45,12 +45,12 @@ import { PageNav } from '../../shared/page-nav';
             <p>{{ adv.content }}</p>
             <div class="small">Tags: {{ tagsText(adv) }}</div>
             @if (showRemove()) {
-              <button type="button" class="btn btn-default" (click)="remove(adv)">Remove</button>
+              <button type="button" class="btn btn-light border" (click)="remove(adv)">Remove</button>
             }
           </li>
         }
       </ul>
-      <button type="button" class="btn btn-default" (click)="showRemove.set(!showRemove())">Toggle Remove Button</button>
+      <button type="button" class="btn btn-light border" (click)="showRemove.set(!showRemove())">Toggle Remove Button</button>
 
       <h4>General advice:</h4>
       <ul class="general-advice">

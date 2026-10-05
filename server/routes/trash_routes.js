@@ -1,6 +1,6 @@
 const express = require('express');
 const Trash = require(__dirname + '/../models/trash');
-const jsonParser = require('body-parser').json();
+const jsonParser = express.json();
 const handleDBError = require(__dirname + '/../lib/handle_db_error');
 const jwtAuth = require(__dirname + '/../lib/jwt_auth');
 const owned = require(__dirname + '/../lib/owned_routes');
@@ -8,7 +8,7 @@ const owned = require(__dirname + '/../lib/owned_routes');
 const trashRouter = module.exports = exports = express.Router();
 
 trashRouter.post('/create', jwtAuth, jsonParser, (req, res) => {
-  var incTrash = req.body.trash || {};
+  var incTrash = (req.body || {}).trash || {};
   if (!req.user.id || !incTrash.content || !incTrash.fromCollection || !incTrash.date) {
     return res.status(400).json( { msg: 'Missing required information' } );
   }

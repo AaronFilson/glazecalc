@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const { test, expect } = require('@playwright/test');
 const chemistry = require('../lib/chemistry');
-const { addStandardMaterial, signUpAndSignIn } = require('./helpers');
+const { API, addStandardMaterial, signUpAndSignIn } = require('./helpers');
 
 const standard = {};
 fs.readFileSync(path.join(__dirname, '..', 'materials.json'), 'utf8')
@@ -73,7 +73,7 @@ test('uses my own materials and lists additives with the result', async ({ page,
   const token = await page.evaluate(() => localStorage.getItem('token'));
   const myWhiting = { ...standard['Whiting'], name: 'My Whiting' };
   delete myWhiting._id;
-  const res = await request.post('http://localhost:4000/materials/create', { headers: { token }, data: myWhiting });
+  const res = await request.post(API + '/materials/create', { headers: { token }, data: myWhiting });
   expect(res.ok()).toBeTruthy();
   await page.reload();
 

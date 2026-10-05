@@ -32,21 +32,16 @@
               }
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "client/styles.scss"
-            ],
-            "stylePreprocessorOptions": {
-              "includePaths": ["node_modules/bootstrap-sass/assets/stylesheets"],
-              "sass": {
-                "silenceDeprecations": ["import", "global-builtin", "color-functions", "if-function", "slash-div"]
-              }
-            }
+            ]
           },
           "configurations": {
             "production": {
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kB",
+                  "maximumWarning": "600kB",
                   "maximumError": "1MB"
                 },
                 {
@@ -55,7 +50,11 @@
                   "maximumError": "8kB"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "subresourceIntegrity": true,
+              "security": {
+                "autoCsp": true
+              }
             },
             "development": {
               "optimization": false,
@@ -68,7 +67,8 @@
         "serve": {
           "builder": "@angular/build:dev-server",
           "options": {
-            "port": 3000
+            "port": 3000,
+            "proxyConfig": "client/proxy.conf.json"
           },
           "configurations": {
             "production": {

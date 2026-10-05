@@ -5,17 +5,17 @@
   <h3>Create a new glaze recipe: </h3>
   <form class="form" (ngSubmit)="save()">
     <div class="row">
-      <div class="col-md-6 form-group">
+      <div class="col-lg-6 mb-3">
         <label for="recipe-name">Recipe title: </label>
         <input id="recipe-name" type="text" name="title" [(ngModel)]="title">
       </div>
-      <div class="col-md-6 form-group">
+      <div class="col-lg-6 mb-3">
         <label for="recipe-date">Date: </label>
         <input id="recipe-date" type="date" name="date" [(ngModel)]="date">
       </div>
     </div>
     <div class="row">
-      <div class="col-md-10 form-group">
+      <div class="col-lg-10 mb-3">
         <label for="recipe-notes" class="boxlabel">Notes on the recipe: </label>
         <textarea id="recipe-notes" name="notes" rows="3" class="form-control" [(ngModel)]="notes"></textarea>
       </div>
@@ -23,7 +23,7 @@
 
     <h4>Add materials to the recipe: </h4>
     <div class="row">
-      <div class="col-sm-6">
+      <div class="col-md-6">
         <label for="my-mats">My materials:</label>
         <select id="my-mats" name="my-mats" [(ngModel)]="selectedMyMaterial">
           <option [ngValue]="null">none</option>
@@ -31,9 +31,9 @@
             <option [ngValue]="mat">{{ mat.name }}</option>
           }
         </select>
-        <button type="button" class="btn btn-default" (click)="addMaterial(selectedMyMaterial())">Add my material to recipe</button>
+        <button type="button" class="btn btn-light border" (click)="addMaterial(selectedMyMaterial())">Add my material to recipe</button>
       </div>
-      <div class="col-sm-6">
+      <div class="col-md-6">
         <label for="std-mats">Standard materials:</label>
         <select id="std-mats" name="std-mats" [(ngModel)]="selectedStandardMaterial">
           <option [ngValue]="null">none</option>
@@ -41,13 +41,13 @@
             <option [ngValue]="mat">{{ mat.name }}</option>
           }
         </select>
-        <button type="button" class="btn btn-default" (click)="addMaterial(selectedStandardMaterial())">Add standard material to recipe</button>
+        <button type="button" class="btn btn-light border" (click)="addMaterial(selectedStandardMaterial())">Add standard material to recipe</button>
       </div>
     </div>
 
     <h4>Add colorants and additives to the recipe: </h4>
     <div class="row">
-      <div class="col-sm-6">
+      <div class="col-md-6">
         <label for="my-adds">My additives:</label>
         <select id="my-adds" name="my-adds" [(ngModel)]="selectedMyAdditive">
           <option [ngValue]="null">none</option>
@@ -55,9 +55,9 @@
             <option [ngValue]="add">{{ add.name }}</option>
           }
         </select>
-        <button type="button" class="btn btn-default" (click)="addAdditive(selectedMyAdditive())">Add my additive / colorant</button>
+        <button type="button" class="btn btn-light border" (click)="addAdditive(selectedMyAdditive())">Add my additive / colorant</button>
       </div>
-      <div class="col-sm-6">
+      <div class="col-md-6">
         <label for="std-adds">Standard additives:</label>
         <select id="std-adds" name="std-adds" [(ngModel)]="selectedStandardAdditive">
           <option [ngValue]="null">none</option>
@@ -65,7 +65,7 @@
             <option [ngValue]="add">{{ add.name }}</option>
           }
         </select>
-        <button type="button" class="btn btn-default" (click)="addAdditive(selectedStandardAdditive())">Add standard additive / colorant</button>
+        <button type="button" class="btn btn-light border" (click)="addAdditive(selectedStandardAdditive())">Add standard additive / colorant</button>
       </div>
     </div>
 
@@ -78,7 +78,7 @@
             <label [for]="'material-amount-' + $index">Amount: </label>
             <input [id]="'material-amount-' + $index" type="text" [name]="'material-amount-' + $index"
               class="material-amount" [(ngModel)]="material.amount"><br>
-            <button type="button" class="btn btn-default btn-sm" (click)="removeMaterial($index)">Remove from recipe</button>
+            <button type="button" class="btn btn-light border btn-sm" (click)="removeMaterial($index)">Remove from recipe</button>
           </li>
         }
       </ol>
@@ -93,13 +93,13 @@
             <label [for]="'additive-amount-' + $index">Amount: </label>
             <input [id]="'additive-amount-' + $index" type="text" [name]="'additive-amount-' + $index"
               class="additive-amount" [(ngModel)]="additive.amount"><br>
-            <button type="button" class="btn btn-default btn-sm" (click)="removeAdditive($index)">Remove from recipe</button>
+            <button type="button" class="btn btn-light border btn-sm" (click)="removeAdditive($index)">Remove from recipe</button>
           </li>
         }
       </ol>
     }
 
-    <button type="button" class="btn btn-default" (click)="compute()">Compute recipe into Unity</button>
+    <button type="button" class="btn btn-light border" (click)="compute()">Compute recipe into Unity</button>
     <button type="submit" class="btn btn-primary">Save</button>
   </form>
 </section>
@@ -128,7 +128,7 @@
       @for (rec of myRecipes(); track rec._id) {
         <li class="saved-recipe">
           <b>{{ rec.title }}</b>
-          <button type="button" class="btn btn-default btn-xs" (click)="toggleExpanded(rec)">
+          <button type="button" class="btn btn-light border btn-sm" (click)="toggleExpanded(rec)">
             {{ expanded().has(rec) ? 'Hide' : 'Expand to View' }}
           </button>
           @if (expanded().has(rec)) {
@@ -164,5 +164,5 @@
       }
     </ul>
   }
-  <button type="button" class="btn btn-default" (click)="showRemove.set(!showRemove())">Remove toggle</button>
+  <button type="button" class="btn btn-light border" (click)="showRemove.set(!showRemove())">Remove toggle</button>
 </section>

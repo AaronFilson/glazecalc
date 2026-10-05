@@ -4,26 +4,26 @@
 <section class="inputbox">
   <form class="form" (ngSubmit)="save()" id="firing-form">
     <div class="row">
-      <div class="col-lg-4 col-md-6 col-sm-10 form-group">
+      <div class="col-xl-4 col-lg-6 col-md-10 mb-3">
         <label for="firing-title">Title of Firing: </label>
         <input id="firing-title" type="text" name="title" [(ngModel)]="title">
       </div>
-      <div class="col-lg-4 col-md-6 col-sm-10 form-group">
+      <div class="col-xl-4 col-lg-6 col-md-10 mb-3">
         <label for="firing-kiln">Kiln: </label>
         <input id="firing-kiln" type="text" name="kiln" [(ngModel)]="kiln">
       </div>
-      <div class="col-lg-4 col-md-6 col-sm-10 form-group">
+      <div class="col-xl-4 col-lg-6 col-md-10 mb-3">
         <label for="firing-date">Date of firing: </label>
         <input id="firing-date" type="date" name="date" [(ngModel)]="date">
       </div>
     </div>
     <div class="row">
-      <div class="col-md-10 form-group">
+      <div class="col-lg-10 mb-3">
         <label for="firing-notes" class="boxlabel">Notes on the firing: </label>
         <textarea id="firing-notes" name="notes" rows="3" class="form-control" [(ngModel)]="notes"></textarea>
       </div>
     </div>
-    <div class="form-group">
+    <div class="mb-3">
       <label for="fieldselect">Select and add fields to the firing record : </label>
       <div>
         <select id="fieldselect" name="field-select" [(ngModel)]="selectedField">
@@ -32,7 +32,7 @@
           }
         </select>
       </div>
-      <button type="button" class="btn btn-default" (click)="addField()">Add the field</button>
+      <button type="button" class="btn btn-light border" (click)="addField()">Add the field</button>
     </div>
   </form>
 
@@ -41,15 +41,15 @@
     @for (field of log().fields; track $index) {
       <li>
         Field name : {{ field }}
-        <button type="button" class="btn btn-default" (click)="moveField($index, -1)"
+        <button type="button" class="btn btn-light border" (click)="moveField($index, -1)"
           [disabled]="$first">Move field left</button>
-        <button type="button" class="btn btn-default" (click)="moveField($index, 1)"
+        <button type="button" class="btn btn-light border" (click)="moveField($index, 1)"
           [disabled]="$last">Move field right</button>
-        <button type="button" class="btn btn-default" (click)="removeField($index)">Remove the field</button>
+        <button type="button" class="btn btn-light border" (click)="removeField($index)">Remove the field</button>
       </li>
     }
   </ol>
-  <button type="button" class="btn btn-default" (click)="addRow()" [disabled]="!log().fields.length">
+  <button type="button" class="btn btn-light border" (click)="addRow()" [disabled]="!log().fields.length">
     Add a row to the firing table
   </button>
 </section>
@@ -62,7 +62,7 @@
       @for (heading of log().fields; track $index) {
         <th>{{ heading }}</th>
       }
-      <th><span class="sr-only">Row actions</span></th>
+      <th><span class="visually-hidden">Row actions</span></th>
     </tr>
     @for (row of log().rows; track $index; let r = $index) {
       <tr>
@@ -74,7 +74,7 @@
               [ngModel]="cell" (ngModelChange)="setCell(r, c, $event)" [ngModelOptions]="{ standalone: true }">
           </td>
         }
-        <td><button type="button" class="btn btn-default btn-xs" (click)="removeRow(r)">Remove row</button></td>
+        <td><button type="button" class="btn btn-light border btn-sm" (click)="removeRow(r)">Remove row</button></td>
       </tr>
     }
   </table>
@@ -110,6 +110,6 @@
         </li>
       }
     </ul>
-    <button type="button" class="btn btn-default" (click)="showRemove.set(!showRemove())">Remove toggle button</button>
+    <button type="button" class="btn btn-light border" (click)="showRemove.set(!showRemove())">Remove toggle button</button>
   </section>
 }

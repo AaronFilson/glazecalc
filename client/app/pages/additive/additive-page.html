@@ -9,21 +9,21 @@
   </p>
   <form class="form" (ngSubmit)="save()">
     <div class="row">
-      <div class="col-lg-4 col-sm-6 form-group">
+      <div class="col-xl-4 col-md-6 mb-3">
         <label for="additive-name">Name of Additive: </label>
         <input id="additive-name" type="text" name="name" [(ngModel)]="name">
       </div>
-      <div class="col-lg-4 col-sm-6 form-group">
+      <div class="col-xl-4 col-md-6 mb-3">
         <label for="formula">Formula: </label>
         <input id="formula" type="text" name="rawformula" [(ngModel)]="rawformula">
       </div>
-      <div class="col-lg-4 col-sm-6 form-group">
+      <div class="col-xl-4 col-md-6 mb-3">
         <label for="related-to">Related To: </label>
         <input id="related-to" type="text" name="relatedTo" [(ngModel)]="relatedTo">
       </div>
     </div>
     <div class="row">
-      <div class="col-md-10 form-group">
+      <div class="col-lg-10 mb-3">
         <label for="notes" class="boxlabel">Notes: </label>
         <textarea id="notes" name="notes" rows="3" class="form-control" [(ngModel)]="notes"></textarea>
       </div>
@@ -31,7 +31,7 @@
 
     <h4>Enter the formula: </h4>
     <div class="row">
-      <div class="col-md-6 form-group">
+      <div class="col-lg-6 mb-3">
         <label for="componentselection">Component Selection: </label><br>
         <select id="componentselection" name="component-select" [(ngModel)]="selectedComponent">
           <option value="">none</option>
@@ -39,9 +39,9 @@
             <option [value]="component.value">{{ component.label }}</option>
           }
         </select>
-        <button type="button" class="btn btn-default" (click)="addToFormula(selectedComponent(), 'component')">Add the component</button>
+        <button type="button" class="btn btn-light border" (click)="addToFormula(selectedComponent(), 'component')">Add the component</button>
       </div>
-      <div class="col-md-6 form-group">
+      <div class="col-lg-6 mb-3">
         <label for="elementselection">Element Selection: </label><br>
         <select id="elementselection" name="element-select" [(ngModel)]="selectedElement">
           <option value="">none</option>
@@ -49,7 +49,7 @@
             <option [value]="element.value">{{ element.label }}</option>
           }
         </select>
-        <button type="button" class="btn btn-default" (click)="addToFormula(selectedElement(), 'element')">Add the element</button>
+        <button type="button" class="btn btn-light border" (click)="addToFormula(selectedElement(), 'element')">Add the element</button>
       </div>
     </div>
     <ul>
@@ -61,7 +61,7 @@
             <input [id]="'part-amount-' + $index" type="text" [name]="'part-amount-' + $index" class="part-amount"
               [(ngModel)]="line.amount">
           </p>
-          <button type="button" class="btn btn-default" (click)="removeFromFormula($index)">Remove from formula list</button>
+          <button type="button" class="btn btn-light border" (click)="removeFromFormula($index)">Remove from formula list</button>
         </li>
       }
     </ul>
@@ -88,7 +88,7 @@
         </tr>
       }
     </table>
-    <button type="button" class="btn btn-default" (click)="showRemove.set(!showRemove())">Remove toggle</button>
+    <button type="button" class="btn btn-light border" (click)="showRemove.set(!showRemove())">Remove toggle</button>
   </section>
   <br>
 }

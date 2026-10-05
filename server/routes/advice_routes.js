@@ -1,6 +1,6 @@
 const express = require('express');
 const Advice = require(__dirname + '/../models/advice');
-const jsonParser = require('body-parser').json();
+const jsonParser = express.json();
 const handleDBError = require(__dirname + '/../lib/handle_db_error');
 const jwtAuth = require(__dirname + '/../lib/jwt_auth');
 const owned = require(__dirname + '/../lib/owned_routes');
@@ -8,7 +8,7 @@ const owned = require(__dirname + '/../lib/owned_routes');
 const adviceRouter = module.exports = exports = express.Router();
 
 adviceRouter.post('/create', jwtAuth, jsonParser, (req, res) => {
-  var incAdvice = req.body;
+  var incAdvice = req.body || {};
   if (!req.user.id || !incAdvice.title || !incAdvice.content || !incAdvice.tags) {
     return res.status(400).json( { msg: 'Missing required information' } );
   }

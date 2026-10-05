@@ -51,3 +51,6 @@ Thumbs.db
 # Playwright output
 test-results/
 playwright-report/
+
+# Local settings loaded by the npm scripts; see .env.example
+.env

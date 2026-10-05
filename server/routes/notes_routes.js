@@ -1,6 +1,6 @@
 const express = require('express');
 const Note = require(__dirname + '/../models/note');
-const jsonParser = require('body-parser').json();
+const jsonParser = express.json();
 const handleDBError = require(__dirname + '/../lib/handle_db_error');
 const jwtAuth = require(__dirname + '/../lib/jwt_auth');
 const owned = require(__dirname + '/../lib/owned_routes');
@@ -8,7 +8,7 @@ const owned = require(__dirname + '/../lib/owned_routes');
 const notesRouter = module.exports = exports = express.Router();
 
 notesRouter.post('/create', jwtAuth, jsonParser, (req, res) => {
-  var incNote = req.body;
+  var incNote = req.body || {};
   if (!req.user.id || !incNote.content || !incNote.relatedCollection || !incNote.relatedId) {
     return res.status(400).json( { msg: 'Missing required information' } );
   }

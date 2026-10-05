@@ -1,0 +1,9 @@
+# Store text files with LF endings whatever each machine's Git settings are,
+# so Windows, CI (Linux) and the Debian server all see the same files.
+* text=auto eol=lf
+
+# Binary files: never convert.
+*.jpg binary
+*.png binary
+*.ico binary
+*.gz binary

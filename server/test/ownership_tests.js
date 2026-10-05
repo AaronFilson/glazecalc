@@ -1,18 +1,18 @@
 process.env.MONGOLAB_URI = 'mongodb://localhost/r_test';
 require(__dirname + '/../../server');
 const chai = require('chai');
-const chaiHttp = require('chai-http');
+const { default: chaiHttp, request: chaiRequest } = require('chai-http');
 chai.use(chaiHttp);
 const expect = chai.expect;
-const request = chai.request;
+const request = (url) => chaiRequest.execute(url);
 const mongoose = require('mongoose');
 const jwt = require('jsonwebtoken');
 const appSecret = require(__dirname + '/../lib/app_secret');
 const User = require(__dirname + '/../models/user');
 const Note = require(__dirname + '/../models/note');
 const Firing = require(__dirname + '/../models/firing');
-var PORT = process.env.PORT || 4000;
-var baseUri = 'localhost:' + PORT;
+var PORT = process.env.PORT || 3000;
+var baseUri = 'localhost:' + PORT + '/api';
 
 const makeUser = (address, role) => {
   var user = new User({ email: address, role: role });
@@ -22,12 +22,12 @@ const makeUser = (address, role) => {
 const basic = (address, password) => 'Basic ' + Buffer.from(address + ':' + password).toString('base64');
 
 describe('record ownership and input checks', () => {
-  var alice, bob, admin, aliceToken, bobToken, adminToken, aliceNote;
+  var alice, bob, aliceToken, bobToken, adminToken, aliceNote;
 
   before(() => Promise.all([
     makeUser('alice@owner.com'), makeUser('bob@owner.com'), makeUser('admin@owner.com', 'admin')
   ]).then((users) => {
-    [alice, bob, admin] = users;
+    [alice, bob] = users;
     [aliceToken, bobToken, adminToken] = users.map((u) => u.generateToken());
     return request(baseUri).post('/notes/create').set('token', aliceToken)
       .send({ title: 'Mine', content: 'alice only', relatedCollection: 'Notes', relatedId: 'general notes' });

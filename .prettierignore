@@ -1,0 +1,11 @@
+dist/
+coverage/
+playwright-report/
+test-results/
+.angular/
+db/
+package-lock.json
+# Standard data for npm run seed: one JSON document per line.
+materials.json
+additives.json
+advice.json

@@ -1,0 +1,5 @@
+{
+  "spec": "server/test",
+  "exit": true,
+  "timeout": 5000
+}
