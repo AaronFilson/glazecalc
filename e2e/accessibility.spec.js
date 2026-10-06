@@ -4,7 +4,7 @@
 // how a screen reader words things still need a person.
 const { test, expect } = require('@playwright/test');
 const { default: AxeBuilder } = require('@axe-core/playwright');
-const { API, addStandardMaterial, signUpAndSignIn } = require('./helpers');
+const { API, addColorant, addStandardMaterial, signUpAndSignIn } = require('./helpers');
 
 const WCAG = ['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa'];
 
@@ -44,8 +44,13 @@ for (const colorScheme of ['light', 'dark']) {
       await page.goto('/recipe');
       await addStandardMaterial(page, 'Whiting', 20);
       await addStandardMaterial(page, 'Silica', 30);
+      await addColorant(page, 'Cobalt carbonate', 1);
       await expect(page.locator('.unity-panel gc-unity-formula')).toBeVisible();
       await expectNoProblems(page, colorScheme + ' /recipe with a result');
+      // The question about unsaved changes, open.
+      await page.getByRole('button', { name: 'New recipe' }).click();
+      await expect(page.getByRole('button', { name: 'Keep editing' })).toBeFocused();
+      await expectNoProblems(page, colorScheme + ' /recipe unsaved question');
       // A saved record's Remove question, open.
       const note = { title: 'Kiln', content: 'Element 3', relatedCollection: 'Notes', relatedId: 'general notes' };
       expect((await page.request.post(API + '/notes/create', { data: note })).ok()).toBeTruthy();

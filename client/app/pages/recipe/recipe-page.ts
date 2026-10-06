@@ -4,14 +4,14 @@ import { FormsModule } from '@angular/forms';
 import { calculateUMF } from '../../../../lib/chemistry';
 import { ApiResourceFactory } from '../../core/api-resource.service';
 import { errorMessage } from '../../core/error-message';
-import { Additive, Material, Recipe, RecipeAnalysis, RecipeMaterial } from '../../core/models';
+import { Additive, AdditiveUnit, Material, Recipe, RecipeAnalysis, RecipeMaterial } from '../../core/models';
 import { Busy } from '../../shared/busy';
 import { localDate } from '../../shared/dates';
 import { Notices, NoticesList } from '../../shared/notices';
 import { firstOf } from '../../shared/options';
 import { PageHeader } from '../../shared/page-header';
 import { Removal, RemoveButton } from '../../shared/remove-button';
-import { Rebase, amountOf, formatAmount, rebase, totalOf } from './rebase';
+import { Rebase, amountOf, formatAmount, isAmount, rebase, totalOf, unitOf } from './rebase';
 import { RecipeHelp } from './recipe-help';
 import { RecipeLibrary, libraryKey } from './recipe-library';
 import { UnityFormula, silicaAluminaRatio, unityColumns } from './unity-formula';
@@ -43,6 +43,22 @@ export function evaluate(materials: RecipeMaterial[]): Evaluation {
   }
 }
 
+/** A colorant's amount with its unit: 2%, 3 parts, 5 g. */
+export function additiveAmount(additive: Additive): string {
+  const amount = (additive.amount ?? '').trim();
+  if (!amount) return '';
+  const unit = unitOf(additive);
+  if (unit === 'percent') return amount + '%';
+  if (unit === 'grams') return amount + ' g';
+  return amount + (amount === '1' ? ' part' : ' parts');
+}
+
+const ADDITIVE_UNITS: ReadonlyArray<{ value: AdditiveUnit; label: string }> = [
+  { value: 'percent', label: '% of base' },
+  { value: 'parts', label: 'parts' },
+  { value: 'grams', label: 'grams' }
+];
+
 const copy = <T>(value: T): T => structuredClone(value);
 const SCALE_NOTES: Record<Rebase['to'], string> = {
   percent: 'Now in percent: the materials add up to 100.',
@@ -51,6 +67,23 @@ const SCALE_NOTES: Record<Rebase['to'], string> = {
 };
 
 type SaveMode = 'save' | 'next' | 'copy';
+
+interface Saved {
+  title: string;
+  /** The page still shows this recipe: nothing cleared it or opened another meanwhile. */
+  stillOpen: boolean;
+  /** It was changed while it saved, so the page has changes that are not saved. */
+  changedSince: boolean;
+}
+
+/** Waiting on a decision about unsaved changes, before starting a new recipe or opening another. */
+interface PendingLeave {
+  next: () => void;
+  /** The saved recipe it would open. */
+  recipeId?: string;
+  /** What had the focus, to go back to on Keep editing. */
+  from: HTMLElement | null;
+}
 
 @Component({
   selector: 'gc-recipe-page',
@@ -68,6 +101,9 @@ export class RecipePage implements OnInit {
   protected readonly saving = new Busy();
   protected readonly savedAnalysis = savedAnalysis;
   protected readonly firstOf = firstOf;
+  protected readonly additiveAmount = additiveAmount;
+  protected readonly additiveUnits = ADDITIVE_UNITS;
+  protected readonly unitOf = unitOf;
 
   // The recipe being edited.
   protected readonly title = signal('');
@@ -94,7 +130,7 @@ export class RecipePage implements OnInit {
       date: this.date(),
       notes: this.notes(),
       materials: this.lines().map((l) => [libraryKey(l), l.amount ?? '']),
-      additives: this.additiveLines().map((a) => [libraryKey(a), a.amount ?? ''])
+      additives: this.additiveLines().map((a) => [libraryKey(a), a.amount ?? '', unitOf(a)])
     })
   );
   private readonly savedSnapshot = signal(this.snapshot());
@@ -102,13 +138,21 @@ export class RecipePage implements OnInit {
   protected readonly hasContent = computed(
     () => !!(this.title() || this.notes() || this.lines().length || this.additiveLines().length)
   );
-  /** Something waiting on a decision about unsaved changes (start new, or open another). */
-  protected readonly pendingLeave = signal<(() => void) | null>(null);
+  protected readonly pendingLeave = signal<PendingLeave | null>(null);
+  /** Why the last save did not happen, shown beside the save buttons. */
+  protected readonly saveProblem = signal('');
+  /**
+   * Which recipe the page shows: a new number each time it is cleared or
+   * another is opened. A save that comes back after that is not this page's.
+   */
+  private showing = 0;
 
   // Scale changes.
   protected readonly batchOpen = signal(false);
   protected readonly batchGrams = signal('500');
-  protected readonly scaleNote = signal('');
+  protected readonly scaleMessage = signal<{ text: string; problem: boolean } | null>(null);
+  /** Told to screen readers: what an action did that the focus does not show. */
+  protected readonly announcement = signal('');
 
   protected readonly evaluation = computed(() => evaluate(this.lines()));
   protected readonly total = computed(() => totalOf(this.lines().map((l) => l.amount)));
@@ -154,21 +198,24 @@ export class RecipePage implements OnInit {
 
   protected addMaterial(material: Material): void {
     this.lines.update((list) => [...list, { ...copy(material), amount: '' }]);
-    this.scaleNote.set('');
+    this.scaleMessage.set(null);
     this.focusAmount('material', this.lines().length - 1);
   }
 
   protected setAmount(index: number, amount: string): void {
     this.lines.update((list) => list.map((line, i) => (i === index ? { ...line, amount } : line)));
-    this.scaleNote.set('');
+    this.scaleMessage.set(null);
   }
 
   protected removeMaterial(index: number): void {
+    const name = this.lines()[index]?.name;
     this.lines.update((list) => list.filter((_, i) => i !== index));
+    this.afterTakingOut('material', name, index, this.lines().length);
   }
 
   protected addAdditive(additive: Additive): void {
-    this.additiveLines.update((list) => [...list, { ...copy(additive), amount: '' }]);
+    // Most recipes give colorants as a percent of the base.
+    this.additiveLines.update((list) => [...list, { ...copy(additive), amount: '', unit: 'percent' }]);
     this.focusAmount('additive', this.additiveLines().length - 1);
   }
 
@@ -176,8 +223,31 @@ export class RecipePage implements OnInit {
     this.additiveLines.update((list) => list.map((line, i) => (i === index ? { ...line, amount } : line)));
   }
 
+  protected setAdditiveUnit(index: number, unit: AdditiveUnit): void {
+    this.additiveLines.update((list) => list.map((line, i) => (i === index ? { ...line, unit } : line)));
+  }
+
   protected removeAdditive(index: number): void {
+    const name = this.additiveLines()[index]?.name;
     this.additiveLines.update((list) => list.filter((_, i) => i !== index));
+    this.afterTakingOut('additive', name, index, this.additiveLines().length);
+  }
+
+  /**
+   * Says what was taken out, and keeps the focus in the list: on the ✕ now in
+   * the same place, or the one before, or the list's heading once it is empty.
+   */
+  private afterTakingOut(kind: 'material' | 'additive', name: string | undefined, index: number, left: number): void {
+    this.announcement.set((name ?? 'It') + ' taken out of the recipe.');
+    afterNextRender(
+      () => {
+        const target = left
+          ? document.getElementById(kind + '-remove-' + Math.min(index, left - 1))
+          : document.getElementById(kind + 's-heading');
+        target?.focus();
+      },
+      { injector: this.injector }
+    );
   }
 
   /** A material's share of the batch, as a percent. */
@@ -191,21 +261,30 @@ export class RecipePage implements OnInit {
   }
 
   protected scale(how: Rebase): void {
+    // Scaling around an amount it cannot read would change the proportions.
+    const unreadable = this.unreadableLine();
+    if (unreadable) {
+      this.scaleMessage.set({
+        text: `The amount for ${unreadable.name} is not a number ("${unreadable.amount}"). Please fix it first.`,
+        problem: true
+      });
+      return;
+    }
     const result = rebase(
       this.lines().map((l) => l.amount),
-      this.additiveLines().map((a) => a.amount),
+      this.additiveLines(),
       how
     );
     if (!result) {
-      this.notices.error(
-        how.to === 'batch' ? 'Please enter the weight of the batch.' : 'Please enter the amounts first.'
-      );
+      const text =
+        how.to === 'batch' ? 'Please enter the weight of the batch, in grams.' : 'Please enter the amounts first.';
+      this.scaleMessage.set({ text, problem: true });
       return;
     }
     this.lines.update((list) => list.map((line, i) => ({ ...line, amount: result.materials[i] })));
     this.additiveLines.update((list) => list.map((line, i) => ({ ...line, amount: result.additives[i] })));
     this.batchOpen.set(false);
-    this.scaleNote.set(SCALE_NOTES[how.to]);
+    this.scaleMessage.set({ text: SCALE_NOTES[how.to], problem: false });
   }
 
   protected scaleToBatch(): void {
@@ -216,17 +295,23 @@ export class RecipePage implements OnInit {
 
   protected save(): Promise<void> {
     return this.saving.run(async () => {
-      if (await this.saveAs('save')) this.notices.success('Saved "' + this.title() + '".');
+      const saved = await this.saveAs('save');
+      if (saved) this.notices.success(`Saved "${saved.title}".`, 'save');
     });
   }
 
   /** Saves, then clears the page for the next recipe. */
   protected saveAndNext(): Promise<void> {
     return this.saving.run(async () => {
-      const title = this.title();
-      if (!(await this.saveAs('next'))) return;
+      const saved = await this.saveAs('next');
+      if (!saved) return;
+      // Nothing is cleared that is not saved: changes made while it saved, or another recipe opened meanwhile.
+      if (!saved.stillOpen || saved.changedSince) {
+        this.notices.success(`Saved "${saved.title}".`, 'save');
+        return;
+      }
       this.reset();
-      this.notices.success('Saved "' + title + '". Ready for the next recipe.');
+      this.notices.success(`Saved "${saved.title}". Ready for the next recipe.`, 'save');
       this.focusTitle();
     });
   }
@@ -234,17 +319,17 @@ export class RecipePage implements OnInit {
   /** Saves the changes as a new recipe, leaving the one opened as it was. */
   protected saveAsCopy(): Promise<void> {
     return this.saving.run(async () => {
-      if (await this.saveAs('copy')) this.notices.success('Saved as a new recipe: "' + this.title() + '".');
+      const saved = await this.saveAs('copy');
+      if (saved) this.notices.success(`Saved as a new recipe: "${saved.title}".`, 'save');
     });
   }
 
-  private async saveAs(mode: SaveMode): Promise<boolean> {
-    // Only the outcome of this save shows, not a pile of earlier ones.
-    this.notices.clear();
+  private async saveAs(mode: SaveMode): Promise<Saved | null> {
+    this.saveProblem.set('');
     const problem = this.problemBeforeSave();
     if (problem) {
-      this.notices.error(problem);
-      return false;
+      this.saveProblem.set(problem);
+      return null;
     }
     const analysis = this.evaluation().analysis!;
     if (!this.date()) this.date.set(localDate());
@@ -256,22 +341,33 @@ export class RecipePage implements OnInit {
       additives: this.additiveLines(),
       computed: analysis
     };
+    // What is sent, and which recipe the page shows: both can change before the server answers.
+    const sent = this.snapshot();
+    const showing = this.showing;
     const id = mode === 'copy' ? null : this.savedId();
     try {
+      let savedId = id;
       if (id) {
         await this.recipes.change(id, { recipe });
         this.myRecipes.update((list) => list.map((r) => (r._id === id ? { ...r, ...recipe } : r)));
       } else {
         const saved = await this.recipes.create(recipe);
         this.myRecipes.update((list) => [...list, saved]);
-        this.savedId.set(saved._id ?? null);
+        savedId = saved._id ?? null;
       }
-      this.savedSnapshot.set(this.snapshot());
-      this.savedAt.set(new Date());
-      return true;
+      const stillOpen = showing === this.showing;
+      if (stillOpen) {
+        this.savedId.set(savedId);
+        // Changes made while it saved are not in it, so they still count as not saved.
+        this.savedSnapshot.set(sent);
+        this.savedAt.set(new Date());
+      }
+      return { title: recipe.title, stillOpen, changedSince: this.snapshot() !== sent };
     } catch (err) {
-      this.notices.error(errorMessage(err, 'Error: the request to the server failed.'));
-      return false;
+      const message = errorMessage(err, 'It could not be saved. Please try again.');
+      if (showing === this.showing) this.saveProblem.set(message);
+      else this.notices.error(`"${recipe.title}" was not saved: ${message}`);
+      return null;
     }
   }
 
@@ -281,9 +377,18 @@ export class RecipePage implements OnInit {
     if (!this.lines().length) return 'Please add at least one material.';
     const blank = [...this.lines(), ...this.additiveLines()].find((line) => (line.amount ?? '').trim() === '');
     if (blank) return 'Please enter an amount for ' + blank.name + ' (0 is fine).';
+    const unreadable = this.unreadableLine();
+    if (unreadable) {
+      return `The amount for ${unreadable.name} is not a number ("${unreadable.amount}"). Use a point for decimals, such as 12.5.`;
+    }
     const { analysis, problem } = this.evaluation();
-    if (!analysis) return 'Error: ' + (problem ?? 'the unity formula could not be worked out.');
+    if (!analysis) return 'Not saved: ' + (problem ?? 'the unity formula could not be worked out.');
     return null;
+  }
+
+  /** The first material or colorant whose amount is not blank and not a number of 0 or more. */
+  private unreadableLine(): Additive | RecipeMaterial | undefined {
+    return [...this.lines(), ...this.additiveLines()].find((line) => !isAmount(line.amount));
   }
 
   // Starting over, and opening saved recipes.
@@ -298,6 +403,7 @@ export class RecipePage implements OnInit {
   /** Loads a saved recipe here to change it. */
   protected open(recipe: Recipe): void {
     this.leave(() => {
+      this.showing++;
       const notes = firstOf(recipe.notes);
       this.title.set(recipe.title);
       this.date.set(recipe.date ?? '');
@@ -307,25 +413,42 @@ export class RecipePage implements OnInit {
       this.savedId.set(recipe._id ?? null);
       this.savedSnapshot.set(this.snapshot());
       this.savedAt.set(null);
-      this.scaleNote.set('');
-      this.notices.clear();
+      this.scaleMessage.set(null);
+      this.saveProblem.set('');
       this.focusTitle();
-    });
+    }, recipe._id);
   }
 
-  /** Does `next` now, or after the user agrees to drop unsaved changes. */
-  private leave(next: () => void): void {
-    if (this.dirty() && this.hasContent()) this.pendingLeave.set(next);
-    else next();
+  /**
+   * Does `next` now, or asks first when there are unsaved changes: the
+   * question shows at the top of the editor, starting on Keep editing.
+   */
+  private leave(next: () => void, recipeId?: string): void {
+    if (!(this.dirty() && this.hasContent())) {
+      next();
+      return;
+    }
+    const from = document.activeElement instanceof HTMLElement ? document.activeElement : null;
+    this.pendingLeave.set({ next, recipeId, from });
+    afterNextRender(() => document.getElementById('unsaved-keep')?.focus(), { injector: this.injector });
   }
 
   protected discardAndLeave(): void {
-    const next = this.pendingLeave();
+    const pending = this.pendingLeave();
     this.pendingLeave.set(null);
-    next?.();
+    pending?.next();
+  }
+
+  protected keepEditing(): void {
+    const from = this.pendingLeave()?.from;
+    this.pendingLeave.set(null);
+    afterNextRender(() => (from?.isConnected ? from : document.getElementById('recipe-name'))?.focus(), {
+      injector: this.injector
+    });
   }
 
   private reset(): void {
+    this.showing++;
     this.title.set('');
     this.date.set('');
     this.notes.set('');
@@ -334,7 +457,8 @@ export class RecipePage implements OnInit {
     this.savedId.set(null);
     this.savedAt.set(null);
     this.savedSnapshot.set(this.snapshot());
-    this.scaleNote.set('');
+    this.scaleMessage.set(null);
+    this.saveProblem.set('');
     this.batchOpen.set(false);
   }
 
@@ -350,8 +474,11 @@ export class RecipePage implements OnInit {
   }
 
   protected async remove(recipe: Recipe): Promise<void> {
+    if (!(await this.removal.remove(recipe))) return;
+    // A question about opening it has nothing left to open.
+    if (this.pendingLeave()?.recipeId === recipe._id) this.pendingLeave.set(null);
     // The recipe on the page stays, but as one not saved yet.
-    if ((await this.removal.remove(recipe)) && recipe._id === this.savedId()) {
+    if (recipe._id === this.savedId()) {
       this.savedId.set(null);
       this.savedSnapshot.set('');
     }

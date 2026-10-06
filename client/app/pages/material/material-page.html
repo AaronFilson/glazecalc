@@ -137,6 +137,7 @@
                   [name]="removal.nameOf(mat)"
                   note="Saved recipes keep their own copy, so they won't change."
                   [busy]="removal.isPending(mat)"
+                  [problem]="removal.problemFor(mat)"
                   (confirmed)="removal.remove(mat)"
                 />
               </div>

@@ -116,6 +116,7 @@
             <gc-remove-button
               [name]="removal.nameOf(fr)"
               [busy]="removal.isPending(fr)"
+              [problem]="removal.problemFor(fr)"
               (confirmed)="removal.remove(fr)"
             />
           </div>

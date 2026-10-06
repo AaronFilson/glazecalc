@@ -18,6 +18,20 @@ describe('Notices', () => {
     expect(notices.messages()).toEqual([]);
   });
 
+  it("replaces a topic's last message, and leaves the others", () => {
+    const notices = new Notices();
+    notices.error('There was an error in getting your materials.');
+    notices.success('Saved "A".', 'save');
+    notices.success('Removed "B".', 'remove');
+    notices.success('Saved "A" again.', 'save');
+    expect(notices.messages()).toEqual(['Removed "B".', 'Saved "A" again.']);
+    expect(notices.errors()).toEqual(['There was an error in getting your materials.']);
+    // Dismissed by hand, the next on its topic is simply added.
+    notices.dismissMessage(1);
+    notices.success('Saved "A" a third time.', 'save');
+    expect(notices.messages()).toEqual(['Removed "B".', 'Saved "A" a third time.']);
+  });
+
   it('renders the lists and dismisses from the page', async () => {
     const notices = new Notices();
     notices.error('Missing required information');
@@ -28,6 +42,9 @@ describe('Notices', () => {
 
     expect(text(fixture, '.errors-section')).toBe('Missing required information Dismiss');
     expect(text(fixture, '.server-msg')).toBe('Saved Dismiss');
+    // In regions that were there before the messages.
+    expect(fixture.nativeElement.querySelector('[role=alert] .errors-section')).not.toBeNull();
+    expect(fixture.nativeElement.querySelector('[role=status] .server-msg')).not.toBeNull();
 
     fixture.debugElement.query(By.css('.errors-section button')).nativeElement.click();
     await fixture.whenStable();

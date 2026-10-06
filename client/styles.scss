@@ -586,6 +586,53 @@ main {
   color: var(--gc-success-text);
   font-size: 0.95rem;
   margin: 0.25rem 0 0;
+  &.is-problem {
+    color: var(--gc-danger-text);
+    font-weight: 600;
+  }
+  &:empty {
+    margin: 0;
+  }
+}
+
+// A colorant's amount and its unit: side by side, or the unit under it on a phone.
+.additive-amount-cell {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.5rem;
+  .additive-amount {
+    width: 6rem;
+    flex: none;
+  }
+}
+
+// A colorant's unit: % of base, parts or grams (radio buttons drawn as a row of buttons).
+.unit-choice {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  .btn {
+    --bs-btn-padding-y: 0.15rem;
+    --bs-btn-padding-x: 0.45rem;
+    white-space: nowrap;
+    background: var(--gc-surface);
+    border: 1px solid var(--gc-border);
+    color: var(--gc-text);
+  }
+  .btn-check:checked + .btn {
+    background: var(--gc-primary);
+    border-color: var(--gc-primary);
+    color: var(--gc-on-primary);
+  }
+  .btn-check:focus-visible + .btn {
+    outline: 3px solid rgba(var(--gc-primary-rgb), 0.45);
+    outline-offset: 1px;
+  }
 }
 
 .recipe-additives-heading .muted {
@@ -711,12 +758,24 @@ button.library-item:focus-visible {
   margin-left: 0.25rem;
 }
 
+// Why the last save did not happen, under the save buttons.
+.recipe-save-problem {
+  flex-basis: 100%;
+  margin: 0;
+  color: var(--gc-danger-text);
+  font-weight: 600;
+  // Out of the flex layout while empty, but still there as a live region.
+  &:empty {
+    position: absolute;
+  }
+}
+
 .recipe-unsaved {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 0.5rem;
-  margin-top: 0.75rem;
+  margin: 0.75rem 0;
   padding: 0.5rem 0.75rem;
   background: var(--gc-danger-bg);
   border-radius: var(--gc-radius);
@@ -821,6 +880,13 @@ code {
   --bs-btn-active-bg: var(--gc-accent);
   --bs-btn-active-color: var(--gc-on-accent);
   --bs-btn-focus-shadow-rgb: var(--gc-primary-rgb);
+}
+
+// Busy, such as Save while it saves: marked with aria-disabled rather than
+// disabled, which would drop the keyboard focus. Clicks are ignored meanwhile.
+.btn[aria-disabled='true'] {
+  opacity: 0.65;
+  cursor: progress;
 }
 
 // For actions that delete. Bootstrap's own red is too light on the tinted

@@ -41,6 +41,7 @@ import { Removal, RemoveButton } from '../../shared/remove-button';
             <gc-remove-button
               [name]="removal.nameOf(note)"
               [busy]="removal.isPending(note)"
+              [problem]="removal.problemFor(note)"
               (confirmed)="removal.remove(note)"
             />
           </li>

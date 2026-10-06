@@ -27,7 +27,8 @@ test.beforeEach(async ({ page }) => {
 test('asks before removing; Cancel and Escape keep the record', async ({ page }) => {
   const row = mine(page).locator('tr', { hasText: 'Whiting, bag 1' });
   await removeButton(page, 'Whiting, bag 1').click();
-  const question = row.getByRole('group', { name: 'Remove Whiting, bag 1' });
+  // Named by the question itself, so a screen reader reads all of it.
+  const question = row.getByRole('group', { name: /^Remove "Whiting, bag 1"\? Saved recipes keep/ });
   await expect(question).toContainText(
     `Remove "Whiting, bag 1"? Saved recipes keep their own copy, so they won't change. This can't be undone.`
   );
@@ -44,6 +45,19 @@ test('asks before removing; Cancel and Escape keep the record', async ({ page })
   await expect(mine(page).locator('tr', { hasText: 'Whiting, bag 1' })).toBeVisible();
 });
 
+test('says why, in the question, when the server cannot remove it', async ({ page }) => {
+  await page.route('**/api/materials/delete/**', (route) =>
+    route.fulfill({ status: 500, contentType: 'application/json', body: '{"msg":"The database is not answering."}' })
+  );
+  const row = mine(page).locator('tr', { hasText: 'Whiting, bag 1' });
+  await removeButton(page, 'Whiting, bag 1').click();
+  await row.getByRole('button', { name: 'Yes, remove' }).click();
+  await expect(row.getByRole('alert')).toHaveText('The database is not answering.');
+  await expect(row).toBeVisible();
+  // The question is still open, to try again or cancel.
+  await expect(row.getByRole('button', { name: 'Yes, remove' })).toBeVisible();
+});
+
 test('removes with the keyboard alone, and the focus moves on', async ({ page }) => {
   await removeButton(page, 'Whiting, bag 1').focus();
   await page.keyboard.press('Enter');
@@ -56,6 +70,7 @@ test('removes with the keyboard alone, and the focus moves on', async ({ page })
   await expect(removeButton(page, 'Whiting, bag 2')).toBeFocused();
 
   await page.keyboard.press('Enter');
+  await expect(page.getByRole('button', { name: 'Cancel' })).toBeFocused();
   await page.keyboard.press('Shift+Tab');
   await page.keyboard.press('Enter');
   await expect(page.locator('.server-msg')).toContainText('Removed "Whiting, bag 2".');

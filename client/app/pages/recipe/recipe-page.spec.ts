@@ -33,8 +33,13 @@ const HALF: Material = {
   ]
 };
 const IRON: Additive = { _id: 'rio', name: 'Iron oxide', fields: [{ name: 'Fe2O3', amount: '1' }] };
+const RUTILE: Additive = { _id: 'rut', name: 'Rutile', fields: [{ name: 'TiO2', amount: '1' }] };
 
 type Page = Record<string, any>;
+
+/** The colorants listed with the unity formula. */
+const additivesShown = (fixture: { nativeElement: HTMLElement }) =>
+  [...fixture.nativeElement.querySelectorAll('.unity-additives li')].map((li) => li.textContent?.trim());
 
 describe('RecipePage', () => {
   beforeEach(() => {
@@ -133,32 +138,75 @@ describe('RecipePage', () => {
     expect(fixture.nativeElement.querySelector('.unity-warnings')).toBeNull();
   });
 
-  it('changes the scale to percent, to parts and to a batch, additives included', async () => {
+  it('changes the scale; colorants in parts change with it, those in percent stay', async () => {
     const { fixture, page } = await create();
     fill(page, [
       [WHITING, '3'],
       [SILICA, '2']
     ]);
     page['addAdditive'](IRON);
-    page['setAdditiveAmount'](0, '1');
+    page['setAdditiveAmount'](0, '2');
+    page['addAdditive'](RUTILE);
+    page['setAdditiveAmount'](1, '1');
+    page['setAdditiveUnit'](1, 'parts');
+    // Colorants start as a percent of the base, as most recipes give them.
+    expect(page['additiveLines']()[0].unit).toBe('percent');
     const amounts = () => [
       ...page['lines']().map((l: { amount: string }) => l.amount),
       ...page['additiveLines']().map((a: { amount: string }) => a.amount)
     ];
 
     page['scale']({ to: 'percent' });
-    expect(amounts()).toEqual(['60', '40', '20']);
+    expect(amounts()).toEqual(['60', '40', '2', '20']);
     page['scale']({ to: 'parts' });
-    expect(amounts()).toEqual(['3', '2', '1']);
+    expect(amounts()).toEqual(['3', '2', '2', '1']);
     page['batchGrams'].set('500');
     page['scaleToBatch']();
-    expect(amounts()).toEqual(['300', '200', '100']);
+    expect(amounts()).toEqual(['300', '200', '2', '100']);
     await fixture.whenStable();
     expect(text(fixture, '.recipe-scale-note')).toBe('Now in grams for the batch.');
+    expect(additivesShown(fixture)).toEqual(['Iron oxide : 2%', 'Rutile : 100 parts']);
 
     page['batchGrams'].set('');
     page['scaleToBatch']();
-    expect(page['notices'].errors()).toEqual(['Please enter the weight of the batch.']);
+    await fixture.whenStable();
+    expect(text(fixture, '.recipe-scale-note')).toBe('Please enter the weight of the batch, in grams.');
+
+    // An amount it cannot read stops it, rather than changing the proportions around it.
+    page['setAmount'](1, '12,5');
+    page['scale']({ to: 'percent' });
+    expect(amounts()).toEqual(['300', '12,5', '2', '100']);
+    await fixture.whenStable();
+    expect(text(fixture, '.recipe-scale-note')).toBe(
+      'The amount for Silica is not a number ("12,5"). Please fix it first.'
+    );
+    expect(page['notices'].errors()).toEqual([]);
+  });
+
+  it("chooses and saves each colorant's unit; recipes saved without one read as percent", async () => {
+    const old: Recipe = {
+      _id: 'r1',
+      title: 'Old',
+      materials: [{ ...WHITING, amount: '10' }],
+      additives: [{ ...IRON, amount: '2' }]
+    };
+    const { fixture, page } = await create([old]);
+    page['open'](old);
+    await fixture.whenStable();
+    const radio = (unit: string) => fixture.nativeElement.querySelector('#additive-unit-0-' + unit) as HTMLInputElement;
+    expect(radio('percent').checked).toBe(true);
+    expect(page['dirty']()).toBe(false);
+
+    radio('grams').click();
+    await fixture.whenStable();
+    expect(page['additiveLines']()[0].unit).toBe('grams');
+    expect(page['status']()).toBe('Changes not saved yet');
+    expect(additivesShown(fixture)).toEqual(['Iron oxide : 2 g']);
+    const saving = page['save']();
+    const req = httpMock().expectOne({ method: 'PUT', url: API + '/recipe/change/r1' });
+    expect(req.request.body.recipe.additives[0]).toEqual(expect.objectContaining({ amount: '2', unit: 'grams' }));
+    req.flush({ msg: 'Successfully updated recipe' });
+    await saving;
   });
 
   it('saves without clearing the page, then updates the same recipe', async () => {
@@ -278,22 +326,26 @@ describe('RecipePage', () => {
     const { page } = await create();
     const tryToSave = async (expected: string) => {
       await page['save']();
-      expect(page['notices'].errors()).toEqual([expected]);
+      // Beside the save buttons, not at the top of the page.
+      expect(page['saveProblem']()).toBe(expected);
+      expect(page['notices'].errors()).toEqual([]);
     };
     await tryToSave('Please give the recipe a title.');
     page['title'].set('Matte');
     await tryToSave('Please add at least one material.');
     page['addMaterial'](WHITING);
     await tryToSave('Please enter an amount for Whiting (0 is fine).');
+    page['setAmount'](0, '-2');
+    await tryToSave('The amount for Whiting is not a number ("-2"). Use a point for decimals, such as 12.5.');
     page['setAmount'](0, '0');
     page['addMaterial'](SILICA);
     page['setAmount'](1, '30');
-    await tryToSave('Error: Recipe contains no flux oxides, so the UMF is undefined');
+    await tryToSave('Not saved: Recipe contains no flux oxides, so the UMF is undefined');
     httpMock().expectNone(API + '/recipe/create');
   });
 
   it('shows the server message when saving fails', async () => {
-    const { page } = await create();
+    const { fixture, page } = await create();
     page['title'].set('Matte');
     fill(page, [[WHITING, '10']]);
     const saving = page['save']();
@@ -301,7 +353,8 @@ describe('RecipePage', () => {
       .expectOne(API + '/recipe/create')
       .flush({ msg: 'Missing required information' }, { status: 400, statusText: 'Bad Request' });
     await saving;
-    expect(page['notices'].errors()).toEqual(['Missing required information']);
+    await fixture.whenStable();
+    expect(text(fixture, '.recipe-save-problem')).toBe('Missing required information');
     expect(page['savedId']()).toBeNull();
   });
 
@@ -316,13 +369,99 @@ describe('RecipePage', () => {
       [...fixture.nativeElement.querySelectorAll('.recipe-save button')].find(
         (b: Element) => b.textContent?.trim() === 'Save'
       ) as HTMLButtonElement;
-    expect(saveButton().disabled).toBe(true);
+    expect(saveButton().getAttribute('aria-disabled')).toBe('true');
     httpMock()
       .expectOne(API + '/recipe/create')
       .flush({ _id: 'r1', title: 'Twice', materials: [] });
     await Promise.all([first, second]);
     await fixture.whenStable();
-    expect(saveButton().disabled).toBe(false);
+    expect(saveButton().getAttribute('aria-disabled')).toBeNull();
+  });
+
+  it('leaves a save that returns after the page moved on out of the page it moved to', async () => {
+    const { fixture, page } = await create();
+    page['title'].set('First');
+    fill(page, [[WHITING, '10']]);
+    const saving = page['save']();
+    // While it saves: New recipe, and drop the changes.
+    page['startNew']();
+    await fixture.whenStable();
+    click(fixture, 'Discard them');
+    httpMock()
+      .expectOne(API + '/recipe/create')
+      .flush({ _id: 'r1', title: 'First', materials: [] });
+    await saving;
+    expect(page['myRecipes']().map((r: Recipe) => r.title)).toEqual(['First']);
+    expect(page['savedId']()).toBeNull();
+    expect(page['title']()).toBe('');
+
+    // The next recipe is saved as its own, not over the first.
+    page['title'].set('Second');
+    fill(page, [[WHITING, '20']]);
+    const next = page['save']();
+    httpMock()
+      .expectOne({ method: 'POST', url: API + '/recipe/create' })
+      .flush({ _id: 'r2', title: 'Second', materials: [] });
+    await next;
+    expect(page['savedId']()).toBe('r2');
+  });
+
+  it('counts changes made while saving as not saved; "Save and add next recipe" keeps them', async () => {
+    const { page } = await create();
+    page['title'].set('Matte');
+    fill(page, [[WHITING, '10']]);
+    const saving = page['saveAndNext']();
+    page['setAmount'](0, '12');
+    const req = httpMock().expectOne(API + '/recipe/create');
+    expect(req.request.body.materials[0].amount).toBe('10');
+    req.flush({ _id: 'r1', title: 'Matte', materials: [] });
+    await saving;
+    expect(page['title']()).toBe('Matte');
+    expect(page['lines']()[0].amount).toBe('12');
+    expect(page['savedId']()).toBe('r1');
+    expect(page['status']()).toBe('Changes not saved yet');
+    expect(page['notices'].messages()).toEqual(['Saved "Matte".']);
+  });
+
+  it('asks about unsaved changes at the top of the editor, starting on Keep editing', async () => {
+    const { fixture, page } = await create();
+    page['title'].set('Draft');
+    await fixture.whenStable();
+    const newRecipe = [...fixture.nativeElement.querySelectorAll('button')].find(
+      (b: Element) => b.textContent?.trim() === 'New recipe'
+    ) as HTMLButtonElement;
+    newRecipe.focus();
+    newRecipe.click();
+    await fixture.whenStable();
+    const question = fixture.nativeElement.querySelector('.recipe-editor .recipe-unsaved') as HTMLElement;
+    // Before the fields, where the button that asked is.
+    expect(question.compareDocumentPosition(fixture.nativeElement.querySelector('#recipe-name'))).toBe(
+      Node.DOCUMENT_POSITION_FOLLOWING
+    );
+    expect(document.activeElement?.id).toBe('unsaved-keep');
+
+    // Escape keeps editing, and the focus goes back to the button.
+    question.dispatchEvent(new KeyboardEvent('keydown', { key: 'Escape', bubbles: true }));
+    await fixture.whenStable();
+    expect(fixture.nativeElement.querySelector('.recipe-unsaved')).toBeNull();
+    expect(document.activeElement).toBe(newRecipe);
+    expect(page['title']()).toBe('Draft');
+  });
+
+  it('keeps the focus in the list when a material is taken out, and says so', async () => {
+    const { fixture, page } = await create();
+    fill(page, [
+      [WHITING, '1'],
+      [SILICA, '2']
+    ]);
+    await fixture.whenStable();
+    page['removeMaterial'](1);
+    await fixture.whenStable();
+    expect(document.activeElement?.id).toBe('material-remove-0');
+    expect(text(fixture, '.recipe-editor p.visually-hidden[role=status]')).toBe('Silica taken out of the recipe.');
+    page['removeMaterial'](0);
+    await fixture.whenStable();
+    expect(document.activeElement?.id).toBe('materials-heading');
   });
 
   it('expands a saved recipe, including ones saved before siAlRatio existed', async () => {
@@ -366,6 +505,22 @@ describe('RecipePage', () => {
     expect(page['title']()).toBe('Gone');
     expect(page['status']()).toBe('Not saved yet');
     expect(page['notices'].messages()).toEqual(['Removed "Gone".']);
+  });
+
+  it('drops a question about opening a recipe that has since been removed', async () => {
+    const two: Recipe = { _id: 'r2', title: 'Two', materials: [{ ...SILICA, amount: '50' }] };
+    const { fixture, page } = await create([two]);
+    page['title'].set('Draft');
+    page['open'](two);
+    await fixture.whenStable();
+    expect(page['pendingLeave']()).not.toBeNull();
+    const removing = page['remove'](two);
+    httpMock()
+      .expectOne({ method: 'DELETE', url: API + '/recipe/delete/r2' })
+      .flush({});
+    await removing;
+    expect(page['pendingLeave']()).toBeNull();
+    expect(page['title']()).toBe('Draft');
   });
 
   it('reports lists that fail to load', async () => {

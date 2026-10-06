@@ -14,19 +14,29 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
     amount.
   - Each material shows its share of the batch, with the total under the list.
   - Change the scale: to percent, to the smallest whole parts (3 flint, 2 dolomite, with exact
-    amounts kept for the rest), or to the grams of a batch.
+    amounts kept for the rest), or to the grams of a batch. New amounts keep up to five decimal
+    places, so small ones are not rounded away. An amount that is not a number stops it, rather
+    than the proportions changing around it.
+  - Each colorant or additive is given as a % of the base, in parts or in grams. When the scale
+    changes, a percent stays as it is; parts and grams change with the base. Recipes saved
+    before read as percent.
   - Save keeps the recipe on the page and saving again updates it; "Save and add next recipe" starts a
     new one; "Save as a copy" keeps the original; Open brings a saved recipe back to change it,
-    asking first if there are changes not saved.
+    asking first, at the top of the editor, if there are changes not saved. Why a save did not
+    happen shows beside the buttons. Changes made while a save is on its way still count as not
+    saved, and a save that returns after another recipe was opened is not tied to it.
   - Instructions at the top of the page, which can be hidden; the browser remembers, and a link
     brings them back.
 - On a phone, visitors can sign in from the header without opening the menu.
 - **Removing a saved record** (a recipe, material, additive, firing log, note or advice) works
   the same on every list. Each record has its own Remove button, which asks first, in place,
   and says what else changes. The question starts on Cancel, Escape closes it, and once the
-  record is gone the focus moves to the next one. This replaces a toggle at the bottom of each
-  list that showed a button on every record and removed with one click. The messages name the
-  record: Removed "Celadon".
+  record is gone the focus moves to the next one. Several can be removed at once; if one cannot
+  be, the question says why. This replaces a toggle at the bottom of each list that showed a
+  button on every record and removed with one click. The messages name the record: Removed
+  "Celadon".
+- Messages are announced reliably by screen readers, and a new message about saving or removing
+  replaces the last one on the same subject instead of clearing the others.
 
 ### Fixed
 

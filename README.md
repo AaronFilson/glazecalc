@@ -27,7 +27,8 @@ materials, colorants, firing logs and notes together in one private notebook.
   standard ones and watch its oxides in unity, grouped as fluxes, stabilizers and glass formers,
   with the silica to alumina ratio. That is how glaze chemists compare recipes, fix faults and
   substitute materials. Change the scale to percent, to the smallest whole parts, or to the grams
-  of a batch; save a recipe and keep working on it, or open a saved one to change it.
+  of a batch, with colorants as a percent of the base, in parts or in grams; save a recipe and
+  keep working on it, or open a saved one to change it.
 - **Your own materials,** from a chemical formula or a supplier's analysis, and colorants and
   opacifiers on top of a base glaze.
 - **A studio notebook:** firing logs (times, temperatures, cones), notes, and plain-language
@@ -46,7 +47,7 @@ For anyone reading the code:
   and put back online. The
   [case study](docs/case-study.md) tells how.
 - **Tested at three levels, in CI on every push:** 179 server tests (98% of statements) run
-  against the app in-process; 149 Angular unit tests (88%); 60 Playwright browser tests,
+  against the app in-process; 167 Angular unit tests (92%); 65 Playwright browser tests,
   including [axe](https://github.com/dequelabs/axe-core) accessibility checks of every page in
   light and dark mode.
 - **One glaze chemistry library** for the browser and the tests, checked against values worked

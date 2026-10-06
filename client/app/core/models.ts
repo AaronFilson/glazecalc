@@ -31,7 +31,18 @@ export interface Additive extends Owned {
   notes?: string[] | string;
   fields: Array<{ name: string; amount: string | number }>;
   amount?: string;
+  /** On a recipe: what the amount is in (see AdditiveUnit). */
+  unit?: AdditiveUnit;
 }
+
+/**
+ * A colorant's or additive's amount on top of a recipe's base:
+ *   percent  a percent of the base's total (2 = 2%), as most recipes give them
+ *   parts    in the base's own unit
+ *   grams    a weight, in the same batch as the base
+ * Saved recipes from before units were chosen have none; they read as percent.
+ */
+export type AdditiveUnit = 'percent' | 'parts' | 'grams';
 
 /** Saved analysis; recipes saved by older versions only have uList. */
 export interface RecipeAnalysis extends Partial<UmfResult> {

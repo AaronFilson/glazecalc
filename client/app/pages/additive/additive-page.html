@@ -102,6 +102,7 @@
                   [name]="removal.nameOf(add)"
                   note="Saved recipes keep their own copy, so they won't change."
                   [busy]="removal.isPending(add)"
+                  [problem]="removal.problemFor(add)"
                   (confirmed)="removal.remove(add)"
                 />
               </div>

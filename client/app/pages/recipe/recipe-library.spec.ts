@@ -113,6 +113,8 @@ describe('RecipeHelp', () => {
     expect(text(first.fixture, 'h2')).toBe('How to use the recipe calculator');
     await first.click('Hide these instructions');
     expect(first.fixture.nativeElement.querySelector('.recipe-help')).toBeNull();
+    // The focus goes to the link that replaced the button.
+    expect(document.activeElement?.textContent?.trim()).toBe('How to use this page');
     expect(localStorage.getItem('recipeHelp')).toBe('hidden');
 
     // A later visit starts with them hidden.
@@ -120,6 +122,7 @@ describe('RecipeHelp', () => {
     expect(later.fixture.nativeElement.querySelector('.recipe-help')).toBeNull();
     await later.click('How to use this page');
     expect(text(later.fixture, 'h2')).toBe('How to use the recipe calculator');
+    expect(document.activeElement?.id).toBe('recipe-help-heading');
     expect(localStorage.getItem('recipeHelp')).toBeNull();
   });
 });

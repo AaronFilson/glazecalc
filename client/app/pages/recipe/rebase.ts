@@ -1,18 +1,34 @@
+import type { Additive, AdditiveUnit } from '../../core/models';
+
 /**
  * Changing the scale of a recipe without changing its proportions, so the unity
- * formula stays the same. The base materials set the scale; colorants and
- * additives (amounts on top of the base) are scaled by the same factor.
+ * formula stays the same. The base materials set the scale. Colorants and
+ * additives in parts or grams change by the same factor; those given as a
+ * percent of the base stay as they are.
  *
  *   percent  the base materials add up to 100
  *   parts    small whole numbers where they fit (3 flint, 2 dolomite), and
  *            exact values for the rest (1.477 soda feldspar)
  *   batch    grams to weigh out for a batch of the given weight
+ *
+ * New amounts keep up to 5 decimal places (7.00001), without trailing zeros.
  */
 export type Rebase = { to: 'percent' } | { to: 'parts' } | { to: 'batch'; grams: number };
 
 export interface Rebased {
   materials: string[];
   additives: string[];
+}
+
+/** What a colorant's amount is in; saved recipes from before units read as percent. */
+export const unitOf = (additive: Pick<Additive, 'unit'>): AdditiveUnit => additive.unit ?? 'percent';
+
+/** True for a blank amount or a number of 0 or more; false for "12,5", "1o" or "-3". */
+export function isAmount(value: string | number | undefined | null): boolean {
+  const text = String(value ?? '').trim();
+  if (text === '') return true;
+  const n = Number(text);
+  return Number.isFinite(n) && n >= 0;
 }
 
 /** An amount as a number; blank or not a positive number counts as 0. */
@@ -60,15 +76,24 @@ export function wholePartsFactor(amounts: number[]): number {
   return best.factor;
 }
 
-const formatPart = (value: number): string => (isWhole(value) ? String(Math.round(value)) : formatAmount(value, 3));
+const SCALED_DECIMALS = 5;
+
+/** A scaled amount: up to 5 decimal places, and never 0 for something that is there. */
+export function formatScaled(value: number): string {
+  const shown = formatAmount(value, SCALED_DECIMALS);
+  return shown === '0' && value > 0 ? String(Number(value.toPrecision(3))) : shown;
+}
+
+const formatPart = (value: number): string => (isWhole(value) ? String(Math.round(value)) : formatScaled(value));
 
 /**
  * The recipe's amounts at the new scale, or null when the base materials have
- * no amounts to scale from. Blank or unreadable amounts are left as they are.
+ * no amounts to scale from. Blank or unreadable amounts are left as they are;
+ * the page checks for unreadable ones first.
  */
 export function rebase(
   materials: Array<string | undefined>,
-  additives: Array<string | undefined>,
+  additives: Array<Pick<Additive, 'amount' | 'unit'>>,
   how: Rebase
 ): Rebased | null {
   const base = materials.map(amountOf);
@@ -77,11 +102,14 @@ export function rebase(
   if (how.to === 'batch' && !(how.grams > 0)) return null;
 
   const factor = how.to === 'percent' ? 100 / total : how.to === 'batch' ? how.grams / total : wholePartsFactor(base);
-  const show = (n: number): string =>
-    how.to === 'percent' ? formatAmount(n, 2) : how.to === 'batch' ? formatAmount(n, 1) : formatPart(n);
+  const show = (n: number): string => (how.to === 'parts' ? formatPart(n) : formatScaled(n));
   const scale = (value: string | undefined): string => {
     const amount = amountOf(value);
     return amount ? show(amount * factor) : (value ?? '');
   };
-  return { materials: materials.map(scale), additives: additives.map(scale) };
+  return {
+    materials: materials.map(scale),
+    // A percent of the base is the same percent at any scale.
+    additives: additives.map((a) => (unitOf(a) === 'percent' ? (a.amount ?? '') : scale(a.amount)))
+  };
 }

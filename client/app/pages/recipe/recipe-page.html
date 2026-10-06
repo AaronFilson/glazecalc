@@ -13,6 +13,15 @@
         <button type="button" class="btn btn-light border btn-sm" (click)="startNew()">New recipe</button>
       }
     </div>
+    @if (pendingLeave()) {
+      <div class="recipe-unsaved" role="group" aria-labelledby="unsaved-text" (keydown.escape)="keepEditing()">
+        <span id="unsaved-text">This recipe has changes that are not saved.</span>
+        <button id="unsaved-keep" type="button" class="btn btn-light border btn-sm" (click)="keepEditing()">
+          Keep editing
+        </button>
+        <button type="button" class="btn btn-outline-danger btn-sm" (click)="discardAndLeave()">Discard them</button>
+      </div>
+    }
 
     <div class="recipe-fields">
       <div class="recipe-title-field">
@@ -36,7 +45,7 @@
       ></textarea>
     </div>
 
-    <h3>Materials</h3>
+    <h3 id="materials-heading" tabindex="-1">Materials</h3>
     @if (lines().length) {
       <table class="recipe-table recipe-materials">
         <thead>
@@ -67,6 +76,7 @@
                 <button
                   type="button"
                   class="btn btn-light border btn-sm recipe-remove"
+                  [id]="'material-remove-' + $index"
                   [attr.aria-label]="'Remove ' + line.name + ' from the recipe'"
                   (click)="removeMaterial($index)"
                 >
@@ -113,9 +123,9 @@
           </span>
         }
       </div>
-      @if (scaleNote()) {
-        <p class="recipe-scale-note" role="status">{{ scaleNote() }}</p>
-      }
+      <p class="recipe-scale-note" [class.is-problem]="scaleMessage()?.problem" role="status">
+        {{ scaleMessage()?.text }}
+      </p>
     } @else {
       <p class="muted">No materials yet. Add them from the list below.</p>
     }
@@ -129,7 +139,9 @@
       (pick)="addMaterial($event)"
     />
 
-    <h3 class="recipe-additives-heading">Colorants and additives <span class="muted">on top of the base</span></h3>
+    <h3 id="additives-heading" class="recipe-additives-heading" tabindex="-1">
+      Colorants and additives <span class="muted">on top of the base</span>
+    </h3>
     @if (additiveLines().length) {
       <table class="recipe-table recipe-additives">
         <thead>
@@ -140,24 +152,42 @@
           </tr>
         </thead>
         <tbody>
-          @for (line of additiveLines(); track $index) {
+          @for (line of additiveLines(); track $index; let i = $index) {
             <tr class="recipe-row">
               <th scope="row">{{ line.name }}</th>
               <td>
-                <input
-                  [id]="'additive-amount-' + $index"
-                  type="text"
-                  inputmode="decimal"
-                  class="form-control form-control-sm additive-amount"
-                  [attr.aria-label]="'Amount of ' + line.name"
-                  [value]="line.amount ?? ''"
-                  (input)="setAdditiveAmount($index, $any($event.target).value)"
-                />
+                <div class="additive-amount-cell">
+                  <input
+                    [id]="'additive-amount-' + $index"
+                    type="text"
+                    inputmode="decimal"
+                    class="form-control form-control-sm additive-amount"
+                    [attr.aria-label]="'Amount of ' + line.name"
+                    [value]="line.amount ?? ''"
+                    (input)="setAdditiveAmount($index, $any($event.target).value)"
+                  />
+                  <!-- Beside the amount, or under it on a phone. -->
+                  <fieldset class="unit-choice">
+                    <legend class="visually-hidden">Unit for {{ line.name }}</legend>
+                    @for (unit of additiveUnits; track unit.value) {
+                      <input
+                        type="radio"
+                        class="btn-check"
+                        [id]="'additive-unit-' + i + '-' + unit.value"
+                        [name]="'additive-unit-' + i"
+                        [checked]="unitOf(line) === unit.value"
+                        (change)="setAdditiveUnit(i, unit.value)"
+                      />
+                      <label class="btn btn-sm" [for]="'additive-unit-' + i + '-' + unit.value">{{ unit.label }}</label>
+                    }
+                  </fieldset>
+                </div>
               </td>
               <td>
                 <button
                   type="button"
                   class="btn btn-light border btn-sm recipe-remove"
+                  [id]="'additive-remove-' + $index"
                   [attr.aria-label]="'Remove ' + line.name + ' from the recipe'"
                   (click)="removeAdditive($index)"
                 >
@@ -182,24 +212,32 @@
     />
 
     <div class="recipe-save">
-      <button type="button" class="btn btn-primary" [disabled]="saving.active()" (click)="save()">Save</button>
-      <button type="button" class="btn btn-light border" [disabled]="saving.active()" (click)="saveAndNext()">
+      <button type="button" class="btn btn-primary" [attr.aria-disabled]="saving.active() || null" (click)="save()">
+        Save
+      </button>
+      <button
+        type="button"
+        class="btn btn-light border"
+        [attr.aria-disabled]="saving.active() || null"
+        (click)="saveAndNext()"
+      >
         Save and add next recipe
       </button>
       @if (savedId()) {
-        <button type="button" class="btn btn-light border" [disabled]="saving.active()" (click)="saveAsCopy()">
+        <button
+          type="button"
+          class="btn btn-light border"
+          [attr.aria-disabled]="saving.active() || null"
+          (click)="saveAsCopy()"
+        >
           Save as a copy
         </button>
       }
       <span class="recipe-status" role="status">{{ status() }}</span>
+      <p class="recipe-save-problem" role="alert">{{ saveProblem() }}</p>
     </div>
-    @if (pendingLeave()) {
-      <div class="recipe-unsaved" role="alert">
-        <span>This recipe has changes that are not saved.</span>
-        <button type="button" class="btn btn-outline-danger btn-sm" (click)="discardAndLeave()">Discard them</button>
-        <button type="button" class="btn btn-light border btn-sm" (click)="pendingLeave.set(null)">Keep editing</button>
-      </div>
-    }
+    <!-- What an action did that the focus does not show, for screen readers. -->
+    <p class="visually-hidden" role="status">{{ announcement() }}</p>
   </section>
 
   <section class="panel unity-panel unity-result" aria-labelledby="unity-heading">
@@ -222,7 +260,7 @@
       <h3 class="unity-additives-heading">Colorants and additives</h3>
       <ul class="unity-additives">
         @for (additive of additiveLines(); track $index) {
-          <li>{{ additive.name }} : {{ additive.amount }}</li>
+          <li>{{ additive.name }} : {{ additiveAmount(additive) }}</li>
         }
       </ul>
       <p class="small muted">On top of the base; not part of the unity formula.</p>
@@ -251,6 +289,7 @@
               [name]="rec.title"
               [note]="rec._id === savedId() ? 'It stays open above, as a recipe not saved yet.' : ''"
               [busy]="removal.isPending(rec)"
+              [problem]="removal.problemFor(rec)"
               (confirmed)="remove(rec)"
             />
           </div>
@@ -266,7 +305,7 @@
                 <em>Additives:</em>
                 <ol>
                   @for (add of rec.additives; track $index) {
-                    <li>{{ add.name }} : {{ add.amount }}</li>
+                    <li>{{ add.name }} : {{ additiveAmount(add) }}</li>
                   }
                 </ol>
               }

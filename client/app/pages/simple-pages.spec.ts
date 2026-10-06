@@ -106,7 +106,8 @@ describe('AdditivePage', () => {
       .expectOne(API + '/additives/delete/a1')
       .flush({}, { status: 500, statusText: 'Error' });
     expect(await removing).toBe(false);
-    expect(page['notices'].errors()).toEqual(['"My Stain" could not be removed. Please try again.']);
+    // Shown in the record's Remove question.
+    expect(page['removal'].problemFor(page['myAdditives']()[0])).toBe('It could not be removed. Please try again.');
     expect(page['myAdditives']().length).toBe(1);
   });
 });

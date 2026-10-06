@@ -25,4 +25,13 @@ const addMaterial = async (page, name, amount, tab = 'Standard') => {
 };
 const addStandardMaterial = (page, name, amount) => addMaterial(page, name, amount, 'Standard');
 
-module.exports = { API, addMaterial, addStandardMaterial, signUpAndSignIn, uniqueEmail };
+// Adds a standard colorant to the recipe and enters its amount (a percent of the base, unless changed).
+const addColorant = async (page, name, amount) => {
+  const library = page.locator('.library', { hasText: 'Add colorants and additives' });
+  await library.getByRole('button', { name: /^Standard/ }).click();
+  await library.getByRole('searchbox').fill(name);
+  await library.getByRole('button', { name: 'Add ' + name, exact: true }).click();
+  await page.getByRole('textbox', { name: 'Amount of ' + name, exact: true }).fill(String(amount));
+};
+
+module.exports = { API, addColorant, addMaterial, addStandardMaterial, signUpAndSignIn, uniqueEmail };

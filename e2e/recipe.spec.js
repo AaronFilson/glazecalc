@@ -1,7 +1,7 @@
 const { test, expect } = require('@playwright/test');
 const chemistry = require('../lib/chemistry');
 const standardData = require('../data');
-const { API, addMaterial, addStandardMaterial, signUpAndSignIn } = require('./helpers');
+const { API, addColorant, addMaterial, addStandardMaterial, signUpAndSignIn } = require('./helpers');
 
 const standard = {};
 standardData.load('materials').forEach((material) => (standard[material.name] = material));
@@ -138,14 +138,14 @@ test('uses my own materials and lists additives with the result', async ({ page 
 
   await expect(unity(page)).toContainText('CaO : 1.000');
   // Additives are listed but not part of the unity formula.
-  await expect(unity(page)).toContainText('Cobalt carbonate : 0.5');
+  await expect(unity(page)).toContainText('Cobalt carbonate : 0.5%');
   await expect(unity(page)).not.toContainText('CoO');
 
   await save(page);
   const entry = saved(page).locator('.saved-recipe', { hasText: 'Mine' });
   await entry.getByRole('button', { name: 'Expand to View' }).click();
   await expect(entry).toContainText('My Whiting : 20');
-  await expect(entry).toContainText('Cobalt carbonate : 0.5');
+  await expect(entry).toContainText('Cobalt carbonate : 0.5%');
 });
 
 test('changes the scale: to parts, to percent and to a batch', async ({ page }) => {
@@ -171,6 +171,50 @@ test('changes the scale: to parts, to percent and to a batch', async ({ page }) 
   await expect.poll(amounts).toEqual(['200', '150', '100', '50']);
   // The proportions, and so the unity formula, are unchanged.
   expect(await unity(page).locator('gc-unity-formula').textContent()).toBe(before);
+});
+
+test('colorants in % of base stay as they are when the scale changes; in parts or grams they change', async ({
+  page
+}) => {
+  await addStandardMaterial(page, 'Orthoclase', 60);
+  await addStandardMaterial(page, 'Whiting', 40);
+  await addColorant(page, 'Cobalt carbonate', 1);
+  await addColorant(page, 'Rutile', 4);
+  const rutile = page.locator('.recipe-additives tr', { hasText: 'Rutile' });
+  await expect(rutile.getByRole('radio', { name: '% of base' })).toBeChecked();
+  await rutile.getByText('grams', { exact: true }).click();
+  await expect(rutile.getByRole('radio', { name: 'grams' })).toBeChecked();
+
+  await page.getByRole('button', { name: 'Scale to a batch' }).click();
+  await page.getByLabel('Batch weight (g)').fill('500');
+  await page.getByLabel('Batch weight (g)').press('Enter');
+  await expect(amount(page, 'Orthoclase')).toHaveValue('300');
+  await expect(amount(page, 'Cobalt carbonate')).toHaveValue('1');
+  await expect(amount(page, 'Rutile')).toHaveValue('20');
+  await expect(unity(page)).toContainText('Cobalt carbonate : 1%');
+  await expect(unity(page)).toContainText('Rutile : 20 g');
+
+  // An amount that is not a number stops it, with the reason beside the buttons.
+  await amount(page, 'Whiting').fill('20,5');
+  await page.getByRole('button', { name: 'To percent' }).click();
+  await expect(page.locator('.recipe-scale-note')).toHaveText(
+    'The amount for Whiting is not a number ("20,5"). Please fix it first.'
+  );
+  await expect(amount(page, 'Orthoclase')).toHaveValue('300');
+});
+
+test('keeps edits, and the focus, when asked about unsaved changes', async ({ page }) => {
+  await page.locator('#recipe-name').fill('Draft');
+  await addStandardMaterial(page, 'Whiting', 20);
+  const newRecipe = page.getByRole('button', { name: 'New recipe' });
+  await newRecipe.click();
+  // The question is at the top of the editor, starting on the safe answer.
+  await expect(page.getByRole('group', { name: 'This recipe has changes that are not saved.' })).toBeVisible();
+  await expect(page.getByRole('button', { name: 'Keep editing' })).toBeFocused();
+  await page.keyboard.press('Escape');
+  await expect(page.locator('.recipe-unsaved')).toHaveCount(0);
+  await expect(newRecipe).toBeFocused();
+  await expect(page.locator('#recipe-name')).toHaveValue('Draft');
 });
 
 test('removes a material from the recipe and a saved recipe from the list', async ({ page }) => {
@@ -199,7 +243,8 @@ test('says when a recipe has no flux, and will not save it', async ({ page }) =>
   await expect(page.locator('.unity-problem')).toContainText('no flux');
   await save(page);
 
-  await expect(page.locator('.errors-section')).toContainText('no flux');
+  // Said beside the save buttons, where the person is looking.
+  await expect(page.locator('.recipe-save-problem')).toContainText('no flux');
   await expect(page.locator('.server-msg')).toHaveCount(0);
   await expect(saved(page)).not.toContainText('Just Silica');
 });
@@ -213,7 +258,7 @@ test('asks for an amount for every material', async ({ page }) => {
   // The cursor is ready in the new amount.
   await expect(amount(page, 'Whiting')).toBeFocused();
   await save(page);
-  await expect(page.locator('.errors-section')).toContainText('Please enter an amount for Whiting');
+  await expect(page.locator('.recipe-save-problem')).toContainText('Please enter an amount for Whiting');
 });
 
 test('the instructions can be hidden, stay hidden, and come back', async ({ page }) => {
