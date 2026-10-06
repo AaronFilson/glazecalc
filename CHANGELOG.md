@@ -2,6 +2,30 @@
 
 Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, from the history.
 
+## Unreleased
+
+### Changed
+
+- **The recipe page, rebuilt for entering recipes quickly:**
+  - The unity formula updates as you type, beside the recipe on a computer and in a line under it
+    on a phone; there is no Compute button.
+  - Materials and additives are added from a library with separate tabs for your own and the
+    standard ones, each a whole list with a filter; one click adds, and the cursor goes to the
+    amount.
+  - Each material shows its share of the batch, with the total under the list.
+  - Change the scale: to percent, to the smallest whole parts (3 flint, 2 dolomite, with exact
+    amounts kept for the rest), or to the grams of a batch.
+  - Save keeps the recipe on the page and saving again updates it; "Save and add next" starts a
+    new one; "Save as a copy" keeps the original; Open brings a saved recipe back to change it,
+    asking first if there are changes not saved.
+  - Instructions at the top of the page, which can be hidden; the browser remembers, and a link
+    brings them back.
+- On a phone, visitors can sign in from the header without opening the menu.
+
+### Removed
+
+- `.git-blame-ignore-revs`: the reformat it named was squashed into the 0.3.0 merge.
+
 ## 0.3.0 (2026-10-05)
 
 ### Added

@@ -21,6 +21,12 @@ export class Notices {
     this.messages.update((list) => [...list, text]);
   }
 
+  /** Removes every message, before showing the outcome of a new action. */
+  clear(): void {
+    this.errors.set([]);
+    this.messages.set([]);
+  }
+
   dismissError(index: number): void {
     this.errors.update((list) => list.filter((_, i) => i !== index));
   }

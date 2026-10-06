@@ -16,7 +16,7 @@ const startTrialWithRecipe = async (page) => {
   await page.locator('#recipe-name').fill('Trial matte');
   await addStandardMaterial(page, 'Whiting', 20);
   await addStandardMaterial(page, 'Silica', 30);
-  await page.getByRole('button', { name: 'Save' }).click();
+  await page.getByRole('button', { name: 'Save', exact: true }).click();
   await expect(page.locator('.saved-recipe', { hasText: 'Trial matte' })).toBeVisible();
   return name;
 };

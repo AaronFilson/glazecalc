@@ -44,8 +44,7 @@ for (const colorScheme of ['light', 'dark']) {
       await page.goto('/recipe');
       await addStandardMaterial(page, 'Whiting', 20);
       await addStandardMaterial(page, 'Silica', 30);
-      await page.getByRole('button', { name: 'Compute recipe into Unity' }).click();
-      await expect(page.locator('gc-unity-formula')).toBeVisible();
+      await expect(page.locator('.unity-panel gc-unity-formula')).toBeVisible();
       await expectNoProblems(page, colorScheme + ' /recipe with a result');
       await page.setViewportSize({ width: 390, height: 844 });
       await page.getByRole('button', { name: 'Menu' }).click();

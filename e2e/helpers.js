@@ -14,12 +14,15 @@ const signUpAndSignIn = async (page) => {
   return { email };
 };
 
-// Adds a standard material to the recipe form and enters its amount.
-const addStandardMaterial = async (page, name, amount) => {
-  await page.locator('select[name="std-mats"]').selectOption({ label: name });
-  await page.getByRole('button', { name: 'Add standard material to recipe' }).click();
-  const row = page.locator('li', { has: page.locator('b', { hasText: new RegExp('^' + name + '$') }) });
-  await row.locator('input.material-amount').fill(String(amount));
+// Adds a material to the recipe from the library ('Standard' or 'My materials')
+// and enters its amount.
+const addMaterial = async (page, name, amount, tab = 'Standard') => {
+  const library = page.locator('.library', { hasText: 'Add materials' });
+  await library.getByRole('button', { name: new RegExp('^' + tab) }).click();
+  await library.getByRole('searchbox').fill(name);
+  await library.getByRole('button', { name: 'Add ' + name, exact: true }).click();
+  await page.getByRole('textbox', { name: 'Amount of ' + name, exact: true }).fill(String(amount));
 };
+const addStandardMaterial = (page, name, amount) => addMaterial(page, name, amount, 'Standard');
 
-module.exports = { API, addStandardMaterial, signUpAndSignIn, uniqueEmail };
+module.exports = { API, addMaterial, addStandardMaterial, signUpAndSignIn, uniqueEmail };

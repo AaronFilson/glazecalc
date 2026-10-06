@@ -25,6 +25,14 @@ export class ApiResource<T extends Owned> {
     return firstValueFrom(this.http.post<T>(this.url + '/create', item));
   }
 
+  /**
+   * Changes a saved record. Some collections expect it wrapped: recipes as
+   * { recipe: {...} } (see server/routes/records.ts).
+   */
+  change(id: string, body: object): Promise<unknown> {
+    return firstValueFrom(this.http.put(this.url + '/change/' + id, body));
+  }
+
   remove(item: T): Promise<unknown> {
     return firstValueFrom(this.http.delete(this.url + '/delete/' + item._id));
   }

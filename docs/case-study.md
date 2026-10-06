@@ -74,7 +74,7 @@ intro page with a live example, dark mode, and a way to try the whole app withou
 
 | Measure                   | 2017                  | Now                                                    |
 | ------------------------- | --------------------- | ------------------------------------------------------ |
-| Automated tests           | basic API route tests | 369: server, Angular unit and browser, with axe checks |
+| Automated tests           | basic API route tests | 388: server, Angular unit and browser, with axe checks |
 | Server statement coverage | not measured          | 98%                                                    |
 | Deploys                   | SSH and restart       | approved click, keyless, rolls back on a failed check  |
 | Monthly cost              | $15-17                | about $13                                              |

@@ -1,169 +1,254 @@
-<gc-page-header title="Recipes" lead="Build a glaze from materials and see its unity molecular formula (UMF)." />
+<gc-page-header
+  title="Recipes"
+  lead="Build a glaze from materials and watch its unity molecular formula (UMF) as you go."
+/>
+<gc-recipe-help />
 <gc-notices [notices]="notices" />
 
-<section class="inputbox">
-  <h3>Create a new glaze recipe:</h3>
-  <form class="form" (ngSubmit)="save()">
-    <div class="row">
-      <div class="col-lg-6 mb-3">
-        <label for="recipe-name">Recipe title: </label>
-        <input id="recipe-name" type="text" name="title" [(ngModel)]="title" />
-      </div>
-      <div class="col-lg-6 mb-3">
-        <label for="recipe-date">Date: </label>
-        <input id="recipe-date" type="date" name="date" [(ngModel)]="date" />
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-10 mb-3">
-        <label for="recipe-notes" class="boxlabel">Notes on the recipe: </label>
-        <textarea id="recipe-notes" name="notes" rows="3" class="form-control" [(ngModel)]="notes"></textarea>
-      </div>
+<div class="recipe-layout">
+  <section class="panel recipe-editor" aria-labelledby="editor-heading">
+    <div class="editor-top">
+      <h2 id="editor-heading">{{ savedId() ? 'Saved recipe' : 'New recipe' }}</h2>
+      @if (hasContent()) {
+        <button type="button" class="btn btn-light border btn-sm" (click)="startNew()">New recipe</button>
+      }
     </div>
 
-    <h4>Add materials to the recipe:</h4>
-    <div class="row">
-      <div class="col-md-6">
-        <label for="my-mats">My materials:</label>
-        <select id="my-mats" name="my-mats" [(ngModel)]="selectedMyMaterial">
-          <option [ngValue]="null">none</option>
-          @for (mat of myMaterials(); track mat._id) {
-            <option [ngValue]="mat">{{ mat.name }}</option>
-          }
-        </select>
-        <button type="button" class="btn btn-light border" (click)="addMaterial(selectedMyMaterial())">
-          Add my material to recipe
-        </button>
+    <div class="recipe-fields">
+      <div class="recipe-title-field">
+        <label for="recipe-name" class="form-label">Title</label>
+        <input id="recipe-name" type="text" name="title" class="form-control" [(ngModel)]="title" />
       </div>
-      <div class="col-md-6">
-        <label for="std-mats">Standard materials:</label>
-        <select id="std-mats" name="std-mats" [(ngModel)]="selectedStandardMaterial">
-          <option [ngValue]="null">none</option>
-          @for (mat of standardMaterials(); track mat._id) {
-            <option [ngValue]="mat">{{ mat.name }}</option>
-          }
-        </select>
-        <button type="button" class="btn btn-light border" (click)="addMaterial(selectedStandardMaterial())">
-          Add standard material to recipe
-        </button>
+      <div>
+        <label for="recipe-date" class="form-label">Date</label>
+        <input id="recipe-date" type="date" name="date" class="form-control" [(ngModel)]="date" />
       </div>
     </div>
-
-    <h4>Add colorants and additives to the recipe:</h4>
-    <div class="row">
-      <div class="col-md-6">
-        <label for="my-adds">My additives:</label>
-        <select id="my-adds" name="my-adds" [(ngModel)]="selectedMyAdditive">
-          <option [ngValue]="null">none</option>
-          @for (add of myAdditives(); track add._id) {
-            <option [ngValue]="add">{{ add.name }}</option>
-          }
-        </select>
-        <button type="button" class="btn btn-light border" (click)="addAdditive(selectedMyAdditive())">
-          Add my additive / colorant
-        </button>
-      </div>
-      <div class="col-md-6">
-        <label for="std-adds">Standard additives:</label>
-        <select id="std-adds" name="std-adds" [(ngModel)]="selectedStandardAdditive">
-          <option [ngValue]="null">none</option>
-          @for (add of standardAdditives(); track add._id) {
-            <option [ngValue]="add">{{ add.name }}</option>
-          }
-        </select>
-        <button type="button" class="btn btn-light border" (click)="addAdditive(selectedStandardAdditive())">
-          Add standard additive / colorant
-        </button>
-      </div>
+    <div class="mb-3">
+      <label for="recipe-notes" class="form-label">Notes</label>
+      <textarea
+        id="recipe-notes"
+        name="notes"
+        rows="2"
+        class="form-control"
+        placeholder="Cone, atmosphere, how the test came out..."
+        [(ngModel)]="notes"
+      ></textarea>
     </div>
 
-    @if (recipeMaterials().length) {
-      <p>Enter the amounts of the materials as a percentage or as parts by weight:</p>
-      <ol class="recipe-materials">
-        @for (material of recipeMaterials(); track $index) {
-          <li>
-            <div class="recipe-line">
-              <b>{{ material.name }}</b>
-              <span class="recipe-line-amount">
-                <label [for]="'material-amount-' + $index">Amount</label>
+    <h3>Materials</h3>
+    @if (lines().length) {
+      <table class="recipe-table recipe-materials">
+        <thead>
+          <tr>
+            <th scope="col">Material</th>
+            <th scope="col">Amount</th>
+            <th scope="col">Share</th>
+            <th scope="col"><span class="visually-hidden">Remove</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          @for (line of lines(); track $index) {
+            <tr class="recipe-row">
+              <th scope="row">{{ line.name }}</th>
+              <td>
                 <input
                   [id]="'material-amount-' + $index"
                   type="text"
                   inputmode="decimal"
-                  [name]="'material-amount-' + $index"
                   class="form-control form-control-sm material-amount"
-                  [(ngModel)]="material.amount"
-                  (ngModelChange)="recipeChanged()"
+                  [attr.aria-label]="'Amount of ' + line.name"
+                  [value]="line.amount ?? ''"
+                  (input)="setAmount($index, $any($event.target).value)"
                 />
-              </span>
-              <button type="button" class="btn btn-light border btn-sm" (click)="removeMaterial($index)">
-                Remove from recipe
-              </button>
-            </div>
-          </li>
+              </td>
+              <td class="recipe-share">{{ share(line.amount) }}</td>
+              <td>
+                <button
+                  type="button"
+                  class="btn btn-light border btn-sm recipe-remove"
+                  [attr.aria-label]="'Remove ' + line.name + ' from the recipe'"
+                  (click)="removeMaterial($index)"
+                >
+                  ✕
+                </button>
+              </td>
+            </tr>
+          }
+        </tbody>
+        <tfoot>
+          <tr>
+            <th scope="row">Total</th>
+            <td class="recipe-total">{{ formatTotal() }}</td>
+            <td class="recipe-share">{{ total() ? '100%' : '' }}</td>
+            <td></td>
+          </tr>
+        </tfoot>
+      </table>
+
+      @if (inlineSummary(); as summary) {
+        <p class="unity-inline"><b>Unity:</b> {{ summary }}</p>
+      }
+
+      <div class="recipe-scale">
+        <span class="recipe-scale-label">Change the scale:</span>
+        <button type="button" class="btn btn-light border btn-sm" (click)="scale({ to: 'percent' })">To percent</button>
+        <button type="button" class="btn btn-light border btn-sm" (click)="scale({ to: 'parts' })">To parts</button>
+        <button type="button" class="btn btn-light border btn-sm" (click)="batchOpen.set(!batchOpen())">
+          Scale to a batch
+        </button>
+        @if (batchOpen()) {
+          <span class="recipe-batch">
+            <label for="batch-grams">Batch weight (g)</label>
+            <input
+              id="batch-grams"
+              type="text"
+              inputmode="decimal"
+              class="form-control form-control-sm"
+              [value]="batchGrams()"
+              (input)="batchGrams.set($any($event.target).value)"
+              (keydown.enter)="scaleToBatch()"
+            />
+            <button type="button" class="btn btn-primary btn-sm" (click)="scaleToBatch()">Scale</button>
+          </span>
         }
-      </ol>
+      </div>
+      @if (scaleNote()) {
+        <p class="recipe-scale-note" role="status">{{ scaleNote() }}</p>
+      }
+    } @else {
+      <p class="muted">No materials yet. Add them from the list below.</p>
     }
-    @if (recipeAdditives().length) {
-      <p>Enter the amounts of the additives as a percentage or as parts by weight:</p>
-      <ol class="recipe-additives">
-        @for (additive of recipeAdditives(); track $index) {
-          <li>
-            <div class="recipe-line">
-              <b>{{ additive.name }}</b>
-              <span class="recipe-line-amount">
-                <label [for]="'additive-amount-' + $index">Amount</label>
+
+    <gc-recipe-library
+      heading="Add materials"
+      noun="materials"
+      [mine]="myMaterials()"
+      [standard]="standardMaterials()"
+      [inRecipe]="materialKeys()"
+      (pick)="addMaterial($event)"
+    />
+
+    <h3 class="recipe-additives-heading">Colorants and additives <span class="muted">on top of the base</span></h3>
+    @if (additiveLines().length) {
+      <table class="recipe-table recipe-additives">
+        <thead>
+          <tr>
+            <th scope="col">Colorant or additive</th>
+            <th scope="col">Amount</th>
+            <th scope="col"><span class="visually-hidden">Remove</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          @for (line of additiveLines(); track $index) {
+            <tr class="recipe-row">
+              <th scope="row">{{ line.name }}</th>
+              <td>
                 <input
                   [id]="'additive-amount-' + $index"
                   type="text"
                   inputmode="decimal"
-                  [name]="'additive-amount-' + $index"
                   class="form-control form-control-sm additive-amount"
-                  [(ngModel)]="additive.amount"
+                  [attr.aria-label]="'Amount of ' + line.name"
+                  [value]="line.amount ?? ''"
+                  (input)="setAdditiveAmount($index, $any($event.target).value)"
                 />
-              </span>
-              <button type="button" class="btn btn-light border btn-sm" (click)="removeAdditive($index)">
-                Remove from recipe
-              </button>
-            </div>
-          </li>
-        }
-      </ol>
+              </td>
+              <td>
+                <button
+                  type="button"
+                  class="btn btn-light border btn-sm recipe-remove"
+                  [attr.aria-label]="'Remove ' + line.name + ' from the recipe'"
+                  (click)="removeAdditive($index)"
+                >
+                  ✕
+                </button>
+              </td>
+            </tr>
+          }
+        </tbody>
+      </table>
     }
 
-    <button type="button" class="btn btn-light border" (click)="compute()">Compute recipe into Unity</button>
-    <button type="submit" class="btn btn-primary" [disabled]="saving.active()">Save</button>
-  </form>
-</section>
-<br />
+    <gc-recipe-library
+      heading="Add colorants and additives"
+      noun="additives"
+      mineLink="/additive"
+      mineLinkLabel="Additives page"
+      [mine]="myAdditives()"
+      [standard]="standardAdditives()"
+      [inRecipe]="additiveKeys()"
+      (pick)="addAdditive($event)"
+    />
 
-@if (computed(); as analysis) {
-  <section class="tech-info unity-result" aria-labelledby="unity-heading">
-    <h4 id="unity-heading">Unity formula of the glaze recipe</h4>
-    <gc-unity-formula [analysis]="analysis" />
-    @if (recipeAdditives().length) {
-      Glaze additives and colorants:
-      <ol>
-        @for (additive of recipeAdditives(); track $index) {
-          <li>{{ additive.name }} : {{ additive.amount }}</li>
-        }
-      </ol>
+    <div class="recipe-save">
+      <button type="button" class="btn btn-primary" [disabled]="saving.active()" (click)="save()">Save</button>
+      <button type="button" class="btn btn-light border" [disabled]="saving.active()" (click)="saveAndNext()">
+        Save and add next
+      </button>
+      @if (savedId()) {
+        <button type="button" class="btn btn-light border" [disabled]="saving.active()" (click)="saveAsCopy()">
+          Save as a copy
+        </button>
+      }
+      <span class="recipe-status" role="status">{{ status() }}</span>
+    </div>
+    @if (pendingLeave()) {
+      <div class="recipe-unsaved" role="alert">
+        <span>This recipe has changes that are not saved.</span>
+        <button type="button" class="btn btn-outline-danger btn-sm" (click)="discardAndLeave()">Discard them</button>
+        <button type="button" class="btn btn-light border btn-sm" (click)="pendingLeave.set(null)">Keep editing</button>
+      </div>
     }
   </section>
-  <br />
-}
 
-<section class="tech-info saved-recipes" aria-labelledby="saved-heading">
-  <h3 id="saved-heading">My saved recipes:</h3>
+  <section class="panel unity-panel unity-result" aria-labelledby="unity-heading">
+    <h2 id="unity-heading">Unity formula</h2>
+    @if (evaluation().analysis; as analysis) {
+      <gc-unity-formula [analysis]="analysis" />
+      @if (evaluation().warnings.length) {
+        <ul class="unity-warnings">
+          @for (warning of evaluation().warnings; track warning) {
+            <li>{{ warning }}</li>
+          }
+        </ul>
+      }
+    } @else if (evaluation().problem; as problem) {
+      <p class="unity-problem">{{ problem }}</p>
+    } @else {
+      <p class="muted">Add materials and their amounts to see the unity formula.</p>
+    }
+    @if (additiveLines().length) {
+      <h3 class="unity-additives-heading">Colorants and additives</h3>
+      <ul class="unity-additives">
+        @for (additive of additiveLines(); track $index) {
+          <li>{{ additive.name }} : {{ additive.amount }}</li>
+        }
+      </ul>
+      <p class="small muted">On top of the base; not part of the unity formula.</p>
+    }
+  </section>
+</div>
+
+<section class="panel saved-recipes" aria-labelledby="saved-heading">
+  <h2 id="saved-heading">My saved recipes</h2>
   @if (myRecipes().length) {
     <ul>
       @for (rec of myRecipes(); track rec._id) {
-        <li class="saved-recipe">
-          <b>{{ rec.title }}</b>
-          <button type="button" class="btn btn-light border btn-sm" (click)="toggleExpanded(rec)">
-            {{ expanded().has(rec) ? 'Hide' : 'Expand to View' }}
-          </button>
-          @if (expanded().has(rec)) {
+        <li class="saved-recipe" [class.is-open]="rec._id === savedId()">
+          <div class="saved-recipe-top">
+            <b>{{ rec.title }}</b>
+            @if (rec._id === savedId()) {
+              <span class="saved-open-mark">Open above</span>
+            }
+            <span class="saved-recipe-actions">
+              <button type="button" class="btn btn-light border btn-sm" (click)="open(rec)">Open</button>
+              <button type="button" class="btn btn-light border btn-sm" (click)="toggleExpanded(rec)">
+                {{ expanded().has(rec._id ?? '') ? 'Hide' : 'Expand to View' }}
+              </button>
+            </span>
+          </div>
+          @if (expanded().has(rec._id ?? '')) {
             <div>
               <em>Materials</em>
               <ol>
@@ -195,6 +280,8 @@
         </li>
       }
     </ul>
+  } @else {
+    <p class="muted">None yet. Saved recipes appear here.</p>
   }
   <button type="button" class="btn btn-light border" (click)="showRemove.set(!showRemove())">Remove toggle</button>
 </section>
