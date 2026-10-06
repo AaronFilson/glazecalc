@@ -36,7 +36,8 @@ export class Notices {
     @if (notices().errors().length) {
       <ol class="errors-section" role="alert">
         @for (error of notices().errors(); track $index) {
-          <li>{{ error }}
+          <li>
+            {{ error }}
             <button type="button" class="btn btn-light border" (click)="notices().dismissError($index)">Dismiss</button>
           </li>
         }
@@ -45,8 +46,11 @@ export class Notices {
     @if (notices().messages().length) {
       <ol class="server-msg" role="status">
         @for (message of notices().messages(); track $index) {
-          <li>{{ message }}
-            <button type="button" class="btn btn-light border" (click)="notices().dismissMessage($index)">Dismiss</button>
+          <li>
+            {{ message }}
+            <button type="button" class="btn btn-light border" (click)="notices().dismissMessage($index)">
+              Dismiss
+            </button>
           </li>
         }
       </ol>

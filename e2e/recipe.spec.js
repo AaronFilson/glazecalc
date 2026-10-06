@@ -1,22 +1,25 @@
-const fs = require('fs');
-const path = require('path');
 const { test, expect } = require('@playwright/test');
 const chemistry = require('../lib/chemistry');
+const standardData = require('../data');
 const { API, addStandardMaterial, signUpAndSignIn } = require('./helpers');
 
 const standard = {};
-fs.readFileSync(path.join(__dirname, '..', 'materials.json'), 'utf8')
-  .split(/\r?\n/).filter(Boolean).map((line) => JSON.parse(line))
-  .forEach((material) => standard[material.name] = material);
+standardData.load('materials').forEach((material) => (standard[material.name] = material));
 
-const DOLOMITE_MATTE = [['Orthoclase', 40], ['Silica', 20], ['Whiting', 10], ['Dolomite', 20], ['China Clay', 10]];
+const DOLOMITE_MATTE = [
+  ['Orthoclase', 40],
+  ['Silica', 20],
+  ['Whiting', 10],
+  ['Dolomite', 20],
+  ['China Clay', 10]
+];
 const LABELS = { K2O: 'K₂O', CaO: 'CaO', MgO: 'MgO', Al2O3: 'Al₂O₃', SiO2: 'SiO₂' };
 
 const unitySection = (page) => page.locator('section.tech-info', { hasText: 'Unity formula of the glaze recipe' });
 
 test.beforeEach(async ({ page, request }) => {
-  await signUpAndSignIn(page, request);
-  await page.goto('/#/recipe');
+  await signUpAndSignIn(page);
+  await page.goto('/recipe');
   // Wait for the standard materials to load into the picker.
   await expect(page.locator('select[name="std-mats"] option', { hasText: 'Dolomite' })).toHaveCount(1);
 });
@@ -28,7 +31,9 @@ test('computes the unity formula of a dolomite matte', async ({ page }) => {
   const section = unitySection(page);
   // The old equivalent-weight bug reported MgO 0.194 for this recipe.
   await expect(section).toContainText('MgO : 0.279');
-  const expected = chemistry.calculateUMF(DOLOMITE_MATTE.map(([name, amount]) => ({ material: standard[name], amount })));
+  const expected = chemistry.calculateUMF(
+    DOLOMITE_MATTE.map(([name, amount]) => ({ material: standard[name], amount }))
+  );
   for (const oxide of Object.keys(LABELS)) {
     await expect(section).toContainText(new RegExp(LABELS[oxide] + '\\s*:\\s*' + expected.umf[oxide].toFixed(3)));
   }
@@ -41,7 +46,10 @@ test('saves a recipe and shows its unity formula in the saved list', async ({ pa
   await page.getByRole('button', { name: 'Save' }).click();
 
   await expect(page.locator('.server-msg')).toContainText('Recipe added');
-  const saved = page.locator('section.tech-info', { hasText: 'My saved recipes:' }).locator('li', { hasText: 'Dolomite Matte' }).first();
+  const saved = page
+    .locator('section.tech-info', { hasText: 'My saved recipes:' })
+    .locator('li', { hasText: 'Dolomite Matte' })
+    .first();
   await saved.getByRole('button', { name: 'Expand to View' }).click();
   await expect(saved).toContainText('Dolomite : 20');
   await expect(saved).toContainText('MgO : 0.279');
@@ -68,12 +76,11 @@ test('saves the analysis of the amounts at save time, not at compute time', asyn
   await expect(saved).not.toContainText('MgO');
 });
 
-test('uses my own materials and lists additives with the result', async ({ page, request }) => {
+test('uses my own materials and lists additives with the result', async ({ page }) => {
   // A user material saved through the API, as the materials page would.
-  const token = await page.evaluate(() => localStorage.getItem('token'));
   const myWhiting = { ...standard['Whiting'], name: 'My Whiting' };
   delete myWhiting._id;
-  const res = await request.post(API + '/materials/create', { headers: { token }, data: myWhiting });
+  const res = await page.request.post(API + '/materials/create', { data: myWhiting });
   expect(res.ok()).toBeTruthy();
   await page.reload();
 
@@ -105,14 +112,19 @@ test('removes a material from the recipe and a saved recipe from the list', asyn
   await page.locator('#recipe-name').fill('Short lived');
   await addStandardMaterial(page, 'Whiting', 20);
   await addStandardMaterial(page, 'Dolomite', 10);
-  await page.locator('li', { has: page.locator('b', { hasText: /^Dolomite$/ }) })
-    .getByRole('button', { name: 'Remove from recipe' }).click();
+  await page
+    .locator('li', { has: page.locator('b', { hasText: /^Dolomite$/ }) })
+    .getByRole('button', { name: 'Remove from recipe' })
+    .click();
   await expect(page.locator('.recipe-materials li')).toHaveCount(1);
   await page.getByRole('button', { name: 'Save' }).click();
   await expect(page.locator('.saved-recipe', { hasText: 'Short lived' })).toBeVisible();
 
   await page.getByRole('button', { name: 'Remove toggle' }).click();
-  await page.locator('.saved-recipe', { hasText: 'Short lived' }).getByRole('button', { name: 'Remove from the server' }).click();
+  await page
+    .locator('.saved-recipe', { hasText: 'Short lived' })
+    .getByRole('button', { name: 'Remove from the server' })
+    .click();
   await expect(page.locator('.server-msg')).toContainText('removing the recipe');
   await expect(page.locator('.saved-recipe', { hasText: 'Short lived' })).toHaveCount(0);
 });

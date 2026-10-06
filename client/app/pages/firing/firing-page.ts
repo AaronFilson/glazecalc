@@ -8,12 +8,12 @@ import { Busy } from '../../shared/busy';
 import { Notices, NoticesList } from '../../shared/notices';
 import { localDate, optional } from '../../shared/dates';
 import { FIRING_FIELDS, firstOf } from '../../shared/options';
-import { PageNav } from '../../shared/page-nav';
+import { PageHeader } from '../../shared/page-header';
 import { FiringLog } from './firing-log';
 
 @Component({
   selector: 'gc-firing-page',
-  imports: [DatePipe, FormsModule, NoticesList, PageNav],
+  imports: [DatePipe, FormsModule, NoticesList, PageHeader],
   templateUrl: './firing-page.html'
 })
 export class FiringPage implements OnInit {

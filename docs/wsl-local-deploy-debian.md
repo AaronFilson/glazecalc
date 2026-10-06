@@ -6,16 +6,16 @@ same way as the EC2 Debian production server. Started 2026-10-04 on the
 
 ## Status
 
-| Step | State |
-| --- | --- |
-| Check the machine | Done |
-| Update WSL | Done: WSL 3.0.1, kernel 6.18 (was the 2022 built-in version) |
-| Install Debian to `D:\WSL\Debian` | Done 2026-10-04 after the restart: Debian 13 (trixie), WSL 2 |
-| Docker setup script | Done: `D:\WSL\setup-docker.sh`; Docker 29.8.2, Compose 5.6.0 |
-| Docker Engine installed and verified | Done: systemd service, hello-world, port forwarding to Windows (`D:\WSL\check-docker.sh`) |
-| Linux password for `bellows` | To do (you) |
-| Sparse disk image | Skipped: WSL currently disables it (see step 6) |
-| Project Docker files | Done: `Dockerfile`, `.dockerignore`, `compose.yaml`, CI "Docker image" job; checked in WSL (`D:\WSL\compose-smoke.sh`, `compose-lifecycle.sh`, `ci-docker-local.sh`) |
+| Step                                 | State                                                                                                                                                                |
+| ------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Check the machine                    | Done                                                                                                                                                                 |
+| Update WSL                           | Done: WSL 3.0.1, kernel 6.18 (was the 2022 built-in version)                                                                                                         |
+| Install Debian to `D:\WSL\Debian`    | Done 2026-10-04 after the restart: Debian 13 (trixie), WSL 2                                                                                                         |
+| Docker setup script                  | Done: `D:\WSL\setup-docker.sh`; Docker 29.8.2, Compose 5.6.0                                                                                                         |
+| Docker Engine installed and verified | Done: systemd service, hello-world, port forwarding to Windows (`D:\WSL\check-docker.sh`)                                                                            |
+| Linux password for `bellows`         | To do (you)                                                                                                                                                          |
+| Sparse disk image                    | Skipped: WSL currently disables it (see step 6)                                                                                                                      |
+| Project Docker files                 | Done: `Dockerfile`, `.dockerignore`, `compose.yaml`, CI "Docker image" job; checked in WSL (`D:\WSL\compose-smoke.sh`, `compose-lifecycle.sh`, `ci-docker-local.sh`) |
 
 ## Machine facts
 
@@ -85,13 +85,13 @@ same way as the EC2 Debian production server. Started 2026-10-04 on the
    images and build cache (`docker system prune`), shut WSL down
    (`wsl --shutdown`), then compact the file from an admin PowerShell with
    `Optimize-VHD` (needs the Hyper-V module) or `diskpart` (`select vdisk
-   file=...`, `compact vdisk`). Try `--set-sparse true` again after future WSL
+file=...`, `compact vdisk`). Try `--set-sparse true` again after future WSL
    updates.
 
 7. Project Docker files (next piece of work):
    - multi-stage `Dockerfile` on `node:24-slim` (Debian-based, which bcrypt's
      prebuilt binaries need): build the Angular client, then a small runtime
-     image running the single `server.js`;
+     image running the single `server/main.ts`;
    - runs as the image's non-root `node` user with `NODE_ENV=production`;
    - `HEALTHCHECK` on `/api/verify`;
    - `.dockerignore` excluding `node_modules`, `db`, `dist` and `.env`;

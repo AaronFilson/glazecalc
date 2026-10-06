@@ -7,7 +7,7 @@ import { Busy } from '../../shared/busy';
 import { Notices, NoticesList } from '../../shared/notices';
 import { optional } from '../../shared/dates';
 import { ADDITIVE_COMPONENTS, ELEMENTS, firstOf } from '../../shared/options';
-import { PageNav } from '../../shared/page-nav';
+import { PageHeader } from '../../shared/page-header';
 
 interface FormulaLine {
   name: string;
@@ -16,7 +16,7 @@ interface FormulaLine {
 
 @Component({
   selector: 'gc-additive-page',
-  imports: [FormsModule, NoticesList, PageNav],
+  imports: [FormsModule, NoticesList, PageHeader],
   templateUrl: './additive-page.html'
 })
 export class AdditivePage implements OnInit {
@@ -41,10 +41,14 @@ export class AdditivePage implements OnInit {
   protected readonly showRemove = signal(false);
 
   ngOnInit(): void {
-    this.additives.getAll().then((list) => this.myAdditives.set(list),
-      () => this.notices.error('There was an error in getting the additives information.'));
-    this.additives.getStandard().then((list) => this.standardAdditives.set(list),
-      () => this.notices.error('There was an error in getting the standard additives information.'));
+    this.additives.getAll().then(
+      (list) => this.myAdditives.set(list),
+      () => this.notices.error('There was an error in getting the additives information.')
+    );
+    this.additives.getStandard().then(
+      (list) => this.standardAdditives.set(list),
+      () => this.notices.error('There was an error in getting the standard additives information.')
+    );
   }
 
   protected addToFormula(part: string, kind: 'component' | 'element'): void {

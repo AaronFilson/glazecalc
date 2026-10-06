@@ -21,7 +21,7 @@ import { Notices, NoticesList } from '../../shared/notices';
         <form #forgotForm="ngForm" (ngSubmit)="submit()" class="d-flex flex-wrap align-items-center gap-3 mb-3">
           <div>
             <label for="email">Email: </label>
-            <input id="email" type="email" name="email" required autocomplete="username" [(ngModel)]="email">
+            <input id="email" type="email" name="email" required autocomplete="username" [(ngModel)]="email" />
           </div>
           <button type="submit" class="btn btn-success" [disabled]="forgotForm.invalid || busy()">
             Send reset link

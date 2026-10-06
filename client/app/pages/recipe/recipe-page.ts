@@ -9,7 +9,7 @@ import { Busy } from '../../shared/busy';
 import { Notices, NoticesList } from '../../shared/notices';
 import { localDate } from '../../shared/dates';
 import { firstOf } from '../../shared/options';
-import { PageNav } from '../../shared/page-nav';
+import { PageHeader } from '../../shared/page-header';
 import { UnityFormula } from './unity-formula';
 
 /** Recipes saved by mongoose hold the analysis in a one-element array. */
@@ -22,7 +22,7 @@ const copy = <T>(value: T): T => structuredClone(value);
 
 @Component({
   selector: 'gc-recipe-page',
-  imports: [DatePipe, FormsModule, NoticesList, PageNav, UnityFormula],
+  imports: [DatePipe, FormsModule, NoticesList, PageHeader, UnityFormula],
   templateUrl: './recipe-page.html'
 })
 export class RecipePage implements OnInit {
@@ -57,10 +57,26 @@ export class RecipePage implements OnInit {
   protected readonly showRemove = signal(false);
 
   ngOnInit(): void {
-    void this.load(this.materials.getAll(), this.myMaterials, 'There was an error in getting the custom materials information.');
-    void this.load(this.materials.getStandard(), this.standardMaterials, 'There was an error in getting the standard materials information.');
-    void this.load(this.additives.getAll(), this.myAdditives, 'There was an error in getting the custom additives information.');
-    void this.load(this.additives.getStandard(), this.standardAdditives, 'There was an error in getting standard additives information.');
+    void this.load(
+      this.materials.getAll(),
+      this.myMaterials,
+      'There was an error in getting the custom materials information.'
+    );
+    void this.load(
+      this.materials.getStandard(),
+      this.standardMaterials,
+      'There was an error in getting the standard materials information.'
+    );
+    void this.load(
+      this.additives.getAll(),
+      this.myAdditives,
+      'There was an error in getting the custom additives information.'
+    );
+    void this.load(
+      this.additives.getStandard(),
+      this.standardAdditives,
+      'There was an error in getting standard additives information.'
+    );
     void this.load(this.recipes.getAll(), this.myRecipes, 'There was an error in getting the recipe information.');
   }
 

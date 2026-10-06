@@ -6,11 +6,11 @@ changed yet.
 
 ## What exists today
 
-| Item | Found |
-| --- | --- |
-| DNS | `glazecalcapp.com` A record → `34.211.187.250`, on Route 53 (ns-501.awsdns-62.com and others). No `www` record. |
-| Server | Debian 12 (bookworm): SSH banner `OpenSSH_9.2p1 Debian-2+deb12u10`. The address is in AWS's us-west-2 (Oregon) range, so the instance is most likely there, not in us-east-1 (the CLI's default region). |
-| Ports | 22 open. 80, 443, 3000 and 4000 refuse connections: the firewall lets them through but nothing is listening, so **the app is not running**, likely since a reboot (it was started by hand). 4001, 8080 and 27017 do not answer (blocked), so MongoDB is not exposed. |
+| Item           | Found                                                                                                                                                                                                                                                                                    |
+| -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS            | `glazecalcapp.com` A record → `34.211.187.250`, on Route 53 (ns-501.awsdns-62.com and others). No `www` record.                                                                                                                                                                          |
+| Server         | Debian 12 (bookworm): SSH banner `OpenSSH_9.2p1 Debian-2+deb12u10`. The address is in AWS's us-west-2 (Oregon) range, so the instance is most likely there, not in us-east-1 (the CLI's default region).                                                                                 |
+| Ports          | 22 open. 80, 443, 3000 and 4000 refuse connections: the firewall lets them through but nothing is listening, so **the app is not running**, likely since a reboot (it was started by hand). 4001, 8080 and 27017 do not answer (blocked), so MongoDB is not exposed.                     |
 | AWS CLI access | Works as IAM user `copper-bell` in account 724654236968, but that user has **no read permissions** (EC2, VPC, Route 53, SSM, ECR, IAM, S3, pricing and billing calls are all denied). So the instance itself, its volumes, security groups and the Route 53 zone could not be inspected. |
 
 ## Target design
@@ -127,9 +127,11 @@ AWS commands are drafted and reviewed before running; nothing is created without
 ### 4. Cut over
 
 1. Lower the Route 53 record's TTL to 60 seconds a day ahead.
-2. Restore the dump into the new instance's MongoDB if wanted, sign in and check recipes (deploys load the standard data).
-3. Test with a hosts-file entry pointing glazecalcapp.com at the new Elastic IP.
-4. Switch the A record to the new Elastic IP, then run `enable-https.sh` on the instance to get the certificate and turn on HTTPS.
+2. Restore the dump into the new instance's MongoDB if wanted (deploys load the standard data).
+3. Test with a hosts-file entry pointing glazecalcapp.com at the new Elastic IP: pages load over
+   plain HTTP, and the API can be checked with curl (`deploy/aws/README.md`, section 11). Signing
+   in needs HTTPS, because the session cookie is `Secure`.
+4. Switch the A record to the new Elastic IP, then run `enable-https.sh` on the instance to get the certificate and turn on HTTPS. Then sign in and check recipes.
 5. Keep the old instance **stopped, not terminated**, for two weeks with its snapshot; then
    terminate it and release its address (public IPv4 is billed while held).
 

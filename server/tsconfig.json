@@ -1,0 +1,23 @@
+{
+  // The server is TypeScript that Node 24 runs as it is, removing the types as it
+  // loads each file (no build step). tsc only checks it: npm run typecheck.
+  // erasableSyntaxOnly allows only TypeScript that can simply be erased (no
+  // enums or namespaces), which is what Node supports.
+  "compilerOptions": {
+    "target": "es2024",
+    "lib": ["es2024"],
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "types": ["node", "mocha"],
+    "strict": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "erasableSyntaxOnly": true,
+    "verbatimModuleSyntax": true,
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    "skipLibCheck": true
+  },
+  "include": ["**/*.ts"]
+}

@@ -13,12 +13,13 @@ const addOxide = async (page, oxide, amount) => {
 };
 
 test.beforeEach(async ({ page, request }) => {
-  await signUpAndSignIn(page, request);
-  await page.goto('/#/material');
+  await signUpAndSignIn(page);
+  await page.goto('/material');
 });
 
 test('lists standard materials with corrected equivalent weights', async ({ page }) => {
-  const row = (name) => standardTable(page).locator('tr', { has: page.locator('td', { hasText: new RegExp('^' + name + '$') }) });
+  const row = (name) =>
+    standardTable(page).locator('tr', { has: page.locator('td', { hasText: new RegExp('^' + name + '$') }) });
   await expect(row('Dolomite')).toContainText('92.2');
   await expect(row('Talc')).toContainText('126.42');
   await expect(row('Bone Ash')).toContainText('P2O5');
@@ -52,9 +53,13 @@ test('saves a percent analysis as a unity formula', async ({ page }) => {
 });
 
 test('shows the server message when a save is refused', async ({ page }) => {
-  await page.route('**/materials/create', (route) => route.fulfill({
-    status: 400, contentType: 'application/json', body: JSON.stringify({ msg: 'Missing required information' })
-  }));
+  await page.route('**/materials/create', (route) =>
+    route.fulfill({
+      status: 400,
+      contentType: 'application/json',
+      body: JSON.stringify({ msg: 'Missing required information' })
+    })
+  );
   await page.locator('#material-name').fill('Refused');
   await addOxide(page, 'CaO', 1);
   await page.locator('#LOI').fill('44');

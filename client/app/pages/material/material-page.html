@@ -1,4 +1,4 @@
-<gc-page-nav current="material" />
+<gc-page-header title="Materials" lead="Your own raw materials, entered as a chemical formula or an oxide analysis." />
 <gc-notices [notices]="notices" />
 
 <section class="inputbox">
@@ -10,16 +10,16 @@
   <form (ngSubmit)="save()">
     <div class="row">
       <div class="col-xl-4 col-md-4 col-8">
-        <label for="material-name">Name of Material: </label><br>
-        <input id="material-name" type="text" name="name" [(ngModel)]="name">
+        <label for="material-name">Name of Material: </label><br />
+        <input id="material-name" type="text" name="name" [(ngModel)]="name" />
       </div>
       <div class="col-xl-4 col-md-4 col-8">
-        <label for="raw-formula">Raw formula: </label><br>
-        <input id="raw-formula" type="text" name="rawformula" [(ngModel)]="rawformula">
+        <label for="raw-formula">Raw formula: </label><br />
+        <input id="raw-formula" type="text" name="rawformula" [(ngModel)]="rawformula" />
       </div>
       <div class="col-xl-4 col-md-4 col-8">
-        <label for="related-to">Related To: </label><br>
-        <input id="related-to" type="text" name="relatedTo" [(ngModel)]="relatedTo">
+        <label for="related-to">Related To: </label><br />
+        <input id="related-to" type="text" name="relatedTo" [(ngModel)]="relatedTo" />
       </div>
     </div>
     <div class="row">
@@ -31,16 +31,16 @@
     <div class="row">
       <div class="col-xl-4 col-md-4 col-8">
         <label for="LOI">Loss on Ignition - LOI (percentage): </label>
-        <input id="LOI" type="text" name="loi" [(ngModel)]="loi">
+        <input id="LOI" type="text" name="loi" [(ngModel)]="loi" />
       </div>
       <div class="col-xl-4 col-md-4 col-8">
         <label for="manualmolecularweight">Raw molecular weight of the formula (used only if LOI is blank): </label>
-        <input id="manualmolecularweight" type="text" name="molecularweight" [(ngModel)]="molecularweight">
+        <input id="manualmolecularweight" type="text" name="molecularweight" [(ngModel)]="molecularweight" />
       </div>
     </div>
     <p>The equivalent and fired weights are calculated from the formula and LOI when you save.</p>
 
-    <h4>Enter the formula (fired): </h4>
+    <h4>Enter the formula (fired):</h4>
     <div class="row">
       <div class="col-lg-6">
         <label for="firedoxide">Oxide Selection</label>
@@ -57,11 +57,25 @@
       <fieldset class="col-lg-6">
         <legend class="h5">This formula is in :</legend>
         <div class="form-check">
-          <input id="radiopercent" class="form-check-input" type="radio" name="percentmole" value="percent" [(ngModel)]="percentmole">
+          <input
+            id="radiopercent"
+            class="form-check-input"
+            type="radio"
+            name="percentmole"
+            value="percent"
+            [(ngModel)]="percentmole"
+          />
           <label for="radiopercent" class="form-check-label">Percent</label>
         </div>
         <div class="form-check">
-          <input id="radiomole" class="form-check-input" type="radio" name="percentmole" value="molecular" [(ngModel)]="percentmole">
+          <input
+            id="radiomole"
+            class="form-check-input"
+            type="radio"
+            name="percentmole"
+            value="molecular"
+            [(ngModel)]="percentmole"
+          />
           <label for="radiomole" class="form-check-label">Molecular / Unity</label>
         </div>
       </fieldset>
@@ -74,10 +88,17 @@
               <b>{{ line.name }}</b>
               <p>
                 <label [for]="'oxide-amount-' + $index">Amount: </label>
-                <input [id]="'oxide-amount-' + $index" type="text" [name]="'amount' + $index" class="oxide-amount"
-                  [(ngModel)]="line.amount">
+                <input
+                  [id]="'oxide-amount-' + $index"
+                  type="text"
+                  [name]="'amount' + $index"
+                  class="oxide-amount"
+                  [(ngModel)]="line.amount"
+                />
               </p>
-              <button type="button" class="btn btn-light border" (click)="removeOxide($index)">Remove from formula list</button>
+              <button type="button" class="btn btn-light border" (click)="removeOxide($index)">
+                Remove from formula list
+              </button>
             </li>
           }
         </ul>
@@ -90,15 +111,19 @@
     </div>
   </form>
 </section>
-<br>
+<br />
 
 @if (myMaterials().length) {
   <section class="tech-info" aria-labelledby="my-materials-heading">
-    <h4 id="my-materials-heading">My server materials: </h4>
+    <h4 id="my-materials-heading">My server materials:</h4>
     <table class="table table-bordered">
       <tr>
-        <th>Name</th> <th>Equivalent Weight</th> <th>Fired Weight</th> <th>Notes</th>
-        <th>Elements</th> <th>Raw Formula</th>
+        <th>Name</th>
+        <th>Equivalent Weight</th>
+        <th>Fired Weight</th>
+        <th>Notes</th>
+        <th>Elements</th>
+        <th>Raw Formula</th>
       </tr>
       @for (mat of sortedMyMaterials(); track mat._id) {
         <tr>
@@ -120,15 +145,19 @@
     </table>
     <button type="button" class="btn btn-light border" (click)="showRemove.set(!showRemove())">Remove toggle</button>
   </section>
-  <br>
+  <br />
 }
 
 <section class="tech-info" aria-labelledby="standard-materials-heading">
-  <h4 id="standard-materials-heading">The standard materials: </h4>
+  <h4 id="standard-materials-heading">The standard materials:</h4>
   <table class="table table-bordered">
     <tr>
-      <th>Name</th> <th>Equivalent Weight</th> <th>Fired Weight</th> <th>Notes</th>
-      <th>Elements</th> <th>Raw Formula</th>
+      <th>Name</th>
+      <th>Equivalent Weight</th>
+      <th>Fired Weight</th>
+      <th>Notes</th>
+      <th>Elements</th>
+      <th>Raw Formula</th>
     </tr>
     @for (mat of standardMaterials(); track mat._id) {
       <tr>

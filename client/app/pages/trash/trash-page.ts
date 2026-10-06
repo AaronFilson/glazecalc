@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
-import { PageNav } from '../../shared/page-nav';
+import { PageHeader } from '../../shared/page-header';
 
 @Component({
   selector: 'gc-trash-page',
-  imports: [PageNav],
+  imports: [PageHeader],
   template: `
-    <gc-page-nav current="trash" />
+    <gc-page-header title="Trash" />
     <p class="help-text">
-      The trash functionality is coming soon in the next version of the Glaze Calc app.
-      Until then, use the delete / remove with care: once it is gone the info is lost.
+      The trash functionality is coming soon in the next version of the Glaze Calc app. Until then, use the delete /
+      remove with care: once it is gone the info is lost.
     </p>
   `
 })

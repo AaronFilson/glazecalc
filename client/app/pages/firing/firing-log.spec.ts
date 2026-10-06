@@ -13,7 +13,10 @@ describe('FiringLog', () => {
     const log = logWith(['Time'], [['1:00'], ['2:00']]);
     log.addField('Cone');
     expect(log.fields).toEqual(['Time', 'Cone']);
-    expect(log.rows).toEqual([['1:00', ''], ['2:00', '']]);
+    expect(log.rows).toEqual([
+      ['1:00', ''],
+      ['2:00', '']
+    ]);
   });
 
   it('removes a field together with its column of cells', () => {

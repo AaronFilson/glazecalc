@@ -17,7 +17,7 @@ services:
     environment:
       NODE_ENV: production
       PORT: 3000
-      MONGOLAB_URI: mongodb://mongo:27017/glazecalc
+      MONGODB_URI: mongodb://mongo:27017/glazecalc
       # Required in production; Compose stops with this message if it is unset.
       APP_SECRET: ${APP_SECRET:?Set APP_SECRET in the environment or in .env}
     ports:

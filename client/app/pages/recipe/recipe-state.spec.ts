@@ -4,15 +4,29 @@ import { API, answer, httpMock, settle, testProviders } from '../../testing/test
 import { RecipePage } from './recipe-page';
 
 const WHITING: Material = {
-  _id: 'w', name: 'Whiting', percentmole: 'molecular', loi: 43.97, fields: [{ name: 'CaO', amount: 1 }]
+  _id: 'w',
+  name: 'Whiting',
+  percentmole: 'molecular',
+  loi: 43.97,
+  fields: [{ name: 'CaO', amount: 1 }]
 };
 const SILICA: Material = {
-  _id: 's', name: 'Silica', percentmole: 'molecular', loi: 0, fields: [{ name: 'SiO2', amount: 1 }]
+  _id: 's',
+  name: 'Silica',
+  percentmole: 'molecular',
+  loi: 0,
+  fields: [{ name: 'SiO2', amount: 1 }]
 };
 // A percent analysis that totals 50%, which the chemistry warns about.
 const HALF: Material = {
-  _id: 'h', name: 'Half spar', percentmole: 'percent', loi: 0,
-  fields: [{ name: 'SiO2', amount: 30 }, { name: 'CaO', amount: 20 }]
+  _id: 'h',
+  name: 'Half spar',
+  percentmole: 'percent',
+  loi: 0,
+  fields: [
+    { name: 'SiO2', amount: 30 },
+    { name: 'CaO', amount: 20 }
+  ]
 };
 
 // The unity result, its warnings and saving, as the recipe changes.
@@ -24,7 +38,8 @@ describe('RecipePage state', () => {
     const fixture = TestBed.createComponent(RecipePage);
     await fixture.whenStable();
     answer('/materials/getStandard', [WHITING, SILICA, HALF]);
-    for (const path of ['/materials/getAll', '/additives/getAll', '/additives/getStandard', '/recipe/getAll']) answer(path, []);
+    for (const path of ['/materials/getAll', '/additives/getAll', '/additives/getStandard', '/recipe/getAll'])
+      answer(path, []);
     await settle(fixture);
     const page = fixture.componentInstance as unknown as Record<string, any>;
     page['addMaterial'](WHITING);
@@ -74,7 +89,9 @@ describe('RecipePage state', () => {
     const second = page['save']();
     await fixture.whenStable();
     expect((fixture.nativeElement.querySelector('button[type=submit]') as HTMLButtonElement).disabled).toBe(true);
-    httpMock().expectOne(API + '/recipe/create').flush({ _id: 'r1', title: 'Twice' });
+    httpMock()
+      .expectOne(API + '/recipe/create')
+      .flush({ _id: 'r1', title: 'Twice' });
     await Promise.all([first, second]);
     await fixture.whenStable();
     expect((fixture.nativeElement.querySelector('button[type=submit]') as HTMLButtonElement).disabled).toBe(false);

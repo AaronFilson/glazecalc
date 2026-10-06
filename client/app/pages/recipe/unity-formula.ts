@@ -26,9 +26,8 @@ export function unityColumns(uList: Record<string, number>): UnityColumn[] {
   for (const [oxide, value] of Object.entries(uList)) {
     if (!(value > 0)) continue;
     const group = OXIDE_GROUPS[oxide];
-    const column = group === 'R2O' || group === 'RO' ? 0
-      : STABILIZERS.includes(oxide) ? 1
-        : GLASS_FORMERS.includes(oxide) ? 2 : 3;
+    const column =
+      group === 'R2O' || group === 'RO' ? 0 : STABILIZERS.includes(oxide) ? 1 : GLASS_FORMERS.includes(oxide) ? 2 : 3;
     columns[column].oxides.push({ label: subscript(oxide), value });
   }
   return columns.filter((column, index) => index < 3 || column.oxides.length);
@@ -45,18 +44,44 @@ export function silicaAluminaRatio(analysis: RecipeAnalysis): number | null {
   selector: 'gc-unity-formula',
   imports: [DecimalPipe],
   template: `
-    <div class="row mx-0">
+    <div class="umf-columns">
       @for (column of columns(); track column.title) {
-        <ul class="col-lg-3 ps-4">
-          {{ column.title }}
-          @for (oxide of column.oxides; track oxide.label) {
-            <li>{{ oxide.label }} : {{ oxide.value | number: '1.3-3' }}</li>
-          }
-        </ul>
+        <section class="umf-column">
+          <h3 class="umf-column-title">{{ column.title }}</h3>
+          <ul>
+            @for (oxide of column.oxides; track oxide.label) {
+              <li>{{ oxide.label }} : {{ oxide.value | number: '1.3-3' }}</li>
+            }
+          </ul>
+        </section>
       }
     </div>
     @if (ratio() !== null) {
-      <div>Ratio of Silica to Alumina : {{ ratio() | number: '1.2-2' }}</div>
+      <p class="umf-ratio">Ratio of Silica to Alumina : {{ ratio() | number: '1.2-2' }}</p>
+    }
+  `,
+  styles: `
+    .umf-columns {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+      gap: 0.75rem 1.5rem;
+    }
+    .umf-column-title {
+      font-family: var(--gc-sans);
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--gc-muted);
+      margin: 0 0 0.25rem;
+    }
+    .umf-column ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-variant-numeric: tabular-nums;
+    }
+    .umf-ratio {
+      margin: 0.75rem 0 0;
+      font-weight: 600;
     }
   `
 })

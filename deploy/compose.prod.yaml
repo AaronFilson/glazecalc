@@ -6,8 +6,8 @@
 # nginx on the host terminates HTTPS and proxies to 127.0.0.1:3000.
 name: glazecalc
 
+# Docker's "local" log driver rotates by itself (json-file does not by default).
 x-logging: &logging
-  # Docker's "local" driver rotates by itself (json-file does not by default).
   driver: local
   options:
     max-size: 10m
@@ -22,7 +22,7 @@ services:
     environment:
       NODE_ENV: production
       PORT: 3000
-      MONGOLAB_URI: mongodb://mongo:27017/glazecalc
+      MONGODB_URI: mongodb://mongo:27017/glazecalc
     ports:
       - '127.0.0.1:3000:3000'
     depends_on:

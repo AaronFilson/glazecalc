@@ -70,9 +70,14 @@ describe('FiringPage', () => {
 
     const saving = page['save']();
     const req = httpMock().expectOne(API + '/firing/create');
-    expect(req.request.body).toEqual(expect.objectContaining({
-      title: 'Bisque', kiln: 'Electric', fieldsIncluded: ['Time'], rows: [['1:00']]
-    }));
+    expect(req.request.body).toEqual(
+      expect.objectContaining({
+        title: 'Bisque',
+        kiln: 'Electric',
+        fieldsIncluded: ['Time'],
+        rows: [['1:00']]
+      })
+    );
     req.flush({ ...req.request.body, _id: 'f1', date: '2026-10-04' });
     await saving;
     await fixture.whenStable();
@@ -102,7 +107,9 @@ describe('FiringPage', () => {
     expect(page['log']().rows).toEqual([]);
 
     const removing = page['remove'](stored);
-    httpMock().expectOne({ method: 'DELETE', url: API + '/firing/delete/f1' }).flush({});
+    httpMock()
+      .expectOne({ method: 'DELETE', url: API + '/firing/delete/f1' })
+      .flush({});
     await removing;
     expect(page['myFirings']()).toEqual([]);
   });

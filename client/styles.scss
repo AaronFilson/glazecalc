@@ -1,94 +1,505 @@
-// Bootstrap 5's compiled CSS is loaded before this file (angular.json "styles").
-// Bootstrap 5 sizes everything in rem from a 16px root, so the sizes below are
-// the old 62.5%-root values converted to keep the same on-screen sizes.
+// Glazecalc's look: a pottery palette (porcelain, iron, tenmoku rust, celadon)
+// in light and dark, on top of Bootstrap 5's compiled CSS (loaded first, see
+// angular.json). Text and button color pairs meet WCAG AA contrast.
+// No web fonts: system fonts are fast and send no data to a font host.
 
-/*************** Main Page Layout **************/
+:root {
+  color-scheme: light dark;
+  --gc-bg: #f7f3ec; // porcelain
+  --gc-surface: #fffdf9;
+  --gc-surface-2: #efe8dc; // bisque
+  --gc-text: #2b2420; // iron
+  --gc-muted: #6b5e55;
+  --gc-border: #ddd2c2;
+  --gc-primary: #9c3d1f; // tenmoku rust
+  --gc-primary-rgb: 156, 61, 31;
+  --gc-primary-hover: #84331a;
+  --gc-on-primary: #ffffff;
+  --gc-accent: #3f6152; // celadon
+  --gc-on-accent: #ffffff;
+  --gc-danger-bg: #f8e1dc;
+  --gc-danger-text: #7a1f12;
+  --gc-success-bg: #e2ede6;
+  --gc-success-text: #24533f;
+  --gc-shadow: 0 1px 2px rgba(43, 36, 32, 0.06), 0 6px 18px rgba(43, 36, 32, 0.06);
+  --gc-radius: 12px;
+  --gc-serif: ui-serif, 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, serif;
+  --gc-sans: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --gc-bg: #1e1a17;
+    --gc-surface: #27221e;
+    --gc-surface-2: #312a24;
+    --gc-text: #ede6dc;
+    --gc-muted: #b4a89c;
+    --gc-border: #433a32;
+    --gc-primary: #e8956b;
+    --gc-primary-rgb: 232, 149, 107;
+    --gc-primary-hover: #f0a882;
+    --gc-on-primary: #1e1a17;
+    --gc-accent: #9cc3ae;
+    --gc-on-accent: #1e1a17;
+    --gc-danger-bg: #3d211c;
+    --gc-danger-text: #f5c4b8;
+    --gc-success-bg: #1f3329;
+    --gc-success-text: #b8dcc8;
+    --gc-shadow: none;
+  }
+}
+
+// Bootstrap reads its own variables; point them at the palette. This comes
+// after Bootstrap's [data-bs-theme] rules, so it wins in both themes.
+:root,
+[data-bs-theme] {
+  --bs-body-bg: var(--gc-bg);
+  --bs-body-color: var(--gc-text);
+  --bs-body-font-family: var(--gc-sans);
+  --bs-emphasis-color: var(--gc-text);
+  --bs-secondary-color: var(--gc-muted);
+  --bs-secondary-bg: var(--gc-surface-2);
+  --bs-tertiary-bg: var(--gc-surface-2);
+  --bs-border-color: var(--gc-border);
+  --bs-link-color: var(--gc-primary);
+  --bs-link-color-rgb: var(--gc-primary-rgb);
+  --bs-link-hover-color: var(--gc-primary-hover);
+  --bs-link-hover-color-rgb: var(--gc-primary-rgb);
+  --bs-focus-ring-color: rgba(var(--gc-primary-rgb), 0.35);
+  --bs-danger-text-emphasis: var(--gc-danger-text);
+}
+
+/*************** Page layout **************/
 
 body {
-  font-size: 1rem;
-  background-image: url('/images/background.jpg');
-  background-size: cover;
-  background-attachment: fixed;
+  background: var(--gc-bg);
+  color: var(--gc-text);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+}
+
+// Header, main and footer in a column that fills the window, so the footer
+// sits at the bottom from the first paint instead of jumping down later.
+gc-root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-main {
+  flex: 1 0 auto;
+  width: 100%;
+  max-width: 72rem;
   margin: 0 auto;
+  padding: 1.5rem 1rem 3rem;
 }
 
-main {
-  font-size: 1.1875rem;
-  margin-top: 3%;
-}
-
-// Bootstrap 3 made labels bold; Bootstrap 5 leaves them normal weight.
-label {
-  font-weight: 700;
-}
-
-.inputbox {
-  background-color: rgba(200, 200, 200, 0.7);
-  padding: 2px;
-}
-
-.header-text,
-.help-text {
-  background-color: rgba(200, 200, 200, 0.65);
-  padding: 2px;
-}
-
-.errors-section {
-  background-color: rgba(245, 200, 200, 0.65);
-  padding: 2px;
-}
-
-.server-msg {
-  background-color: rgba(200, 245, 200, 0.65);
-  padding: 2px;
-}
-
-.tech-info {
-  background-color: rgba(190, 190, 200, 0.85);
-  padding: 5px;
-}
-
-.home-text,
-.auth-text {
-  background-color: rgba(210, 210, 200, 0.9);
-  padding: 5px;
-}
-
-header {
-  display: inline;
-}
-
-nav {
-  background-color: rgba(190, 190, 190, 0.7);
-  font-size: 0.9em;
-  border: none;
-  margin: 2px;
-  padding: 2px;
-  max-width: max-content;
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--gc-serif);
+  color: var(--gc-text);
+  line-height: 1.2;
 }
 
 h1 {
-  font-size: 2.125rem; // 34px
-  text-shadow: 2px 2px #C3DEEC;
+  font-size: clamp(1.9rem, 1.3rem + 2.2vw, 2.75rem);
+}
+
+h2 {
+  font-size: clamp(1.4rem, 1.1rem + 1vw, 1.85rem);
+}
+
+label {
+  font-weight: 600;
 }
 
 img {
   max-width: 100%;
-  display: block;
   height: auto;
 }
 
-footer {
-  text-align: center;
-  padding-top: 500px;
-  width: 100%;
-  color: green;
+:focus-visible {
+  outline: 3px solid rgba(var(--gc-primary-rgb), 0.55);
+  outline-offset: 2px;
 }
 
-footer a {
-  color: #1111DD;
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -3rem;
+  z-index: 10;
+  padding: 0.5rem 1rem;
+  background: var(--gc-primary);
+  color: var(--gc-on-primary);
+  border-radius: 0 0 8px 8px;
+  &:focus {
+    top: 0;
+  }
+}
+
+.muted {
+  color: var(--gc-muted);
+}
+
+/*************** Navigation bar **************/
+
+.app-header {
+  background: var(--gc-surface);
+  border-bottom: 1px solid var(--gc-border);
+}
+
+.app-nav {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 0.6rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 1.5rem;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--gc-serif);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--gc-text);
+}
+
+.nav-toggle {
+  margin-left: auto;
+  display: none;
+}
+
+.nav-menu {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 1.5rem;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  a {
+    color: var(--gc-text);
+    padding: 0.25rem 0;
+    border-bottom: 2px solid transparent;
+    &:hover,
+    &.active {
+      color: var(--gc-primary);
+      border-bottom-color: var(--gc-primary);
+    }
+  }
+}
+
+.nav-account {
+  margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 1rem;
+}
+
+// Shown under the menu during a trial ("Try it now").
+.trial-bar {
+  background: var(--gc-success-bg);
+  color: var(--gc-success-text);
+  border-top: 1px solid var(--gc-border);
+}
+
+.trial-bar-inner {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem 1rem;
+
+  p {
+    margin: 0;
+  }
+}
+
+.trial-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.trial-error {
+  flex-basis: 100%;
+  color: var(--gc-danger-text);
+}
+
+.account-email {
+  color: var(--gc-muted);
+  max-width: 16rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media (max-width: 767.98px) {
+  .nav-toggle {
+    display: inline-block;
+  }
+  .nav-menu {
+    display: none;
+    flex-basis: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0.5rem 0;
+    &.open {
+      display: flex;
+    }
+  }
+  .nav-links {
+    flex-direction: column;
+  }
+  .nav-account {
+    margin-left: 0;
+  }
+}
+
+/*************** Footer **************/
+
+.app-footer {
+  flex-shrink: 0;
+  border-top: 1px solid var(--gc-border);
+  background: var(--gc-surface);
+  color: var(--gc-muted);
+  font-size: 0.95rem;
+  padding: 1.5rem 1rem;
+  text-align: center;
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.25rem 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+  p {
+    margin: 0;
+  }
+}
+
+/*************** Page sections **************/
+
+.page-header {
+  margin-bottom: 1.5rem;
+  h1 {
+    margin-bottom: 0.25rem;
+  }
+  .lead-text {
+    color: var(--gc-muted);
+    margin: 0;
+    max-width: 48rem;
+  }
+}
+
+// The panels every page uses: cards on the page background.
+.auth-text,
+.home-text,
+.tech-info,
+.help-text,
+.panel {
+  background: var(--gc-surface);
+  border: 1px solid var(--gc-border);
+  border-radius: var(--gc-radius);
+  box-shadow: var(--gc-shadow);
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.inputbox {
+  background: var(--gc-surface-2);
+  border-radius: 8px;
+  padding: 0.5rem 0.75rem;
+}
+
+.errors-section,
+.server-msg {
+  list-style: none;
+  padding: 0.75rem 1rem;
+  border-radius: var(--gc-radius);
+  margin-bottom: 1rem;
+  li + li {
+    margin-top: 0.4rem;
+  }
+  .btn {
+    margin-left: 0.5rem;
+  }
+}
+
+.errors-section {
+  background: var(--gc-danger-bg);
+  color: var(--gc-danger-text);
+}
+
+.server-msg {
+  background: var(--gc-success-bg);
+  color: var(--gc-success-text);
+}
+
+/*************** Forms and tables **************/
+
+main {
+  input:not([type='checkbox']):not([type='radio']):not([type='submit']):not([type='button']),
+  select,
+  textarea {
+    background: var(--gc-surface);
+    color: var(--gc-text);
+    border: 1px solid var(--gc-border);
+    border-radius: 8px;
+    padding: 0.4rem 0.65rem;
+    max-width: 100%;
+    &:focus {
+      border-color: var(--gc-primary);
+      outline: 3px solid rgba(var(--gc-primary-rgb), 0.3);
+      outline-offset: 0;
+    }
+  }
+
+  table {
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+    th,
+    td {
+      padding: 0.4rem 0.65rem;
+      border-bottom: 1px solid var(--gc-border);
+      vertical-align: top;
+    }
+    th {
+      background: var(--gc-surface-2);
+      text-align: left;
+    }
+  }
+}
+
+// A material or additive in the recipe being built: its name, amount and
+// remove button on one line, wrapping on a phone.
+.recipe-materials,
+.recipe-additives {
+  max-width: 44rem;
+  padding-left: 1.75rem;
+
+  li {
+    padding: 0.4rem 0;
+    border-bottom: 1px solid var(--gc-border);
+  }
+}
+
+.recipe-line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 1rem;
+
+  b {
+    flex: 1 1 12rem;
+  }
+}
+
+.recipe-line-amount {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  input {
+    width: 6.5rem;
+  }
+}
+
+code {
+  color: var(--gc-text);
+  background: var(--gc-surface-2);
+  border-radius: 4px;
+  padding: 0.05em 0.3em;
 }
 
 .boxlabel {
   vertical-align: top;
+}
+
+/*************** Buttons **************/
+
+.btn-primary,
+.btn-success {
+  --bs-btn-bg: var(--gc-primary);
+  --bs-btn-border-color: var(--gc-primary);
+  --bs-btn-color: var(--gc-on-primary);
+  --bs-btn-hover-bg: var(--gc-primary-hover);
+  --bs-btn-hover-border-color: var(--gc-primary-hover);
+  --bs-btn-hover-color: var(--gc-on-primary);
+  --bs-btn-active-bg: var(--gc-primary-hover);
+  --bs-btn-active-border-color: var(--gc-primary-hover);
+  --bs-btn-active-color: var(--gc-on-primary);
+  --bs-btn-disabled-bg: var(--gc-primary);
+  --bs-btn-disabled-border-color: var(--gc-primary);
+  --bs-btn-disabled-color: var(--gc-on-primary);
+  --bs-btn-focus-shadow-rgb: var(--gc-primary-rgb);
+}
+
+.btn-light,
+.btn-outline-secondary {
+  --bs-btn-bg: var(--gc-surface);
+  --bs-btn-border-color: var(--gc-border);
+  --bs-btn-color: var(--gc-text);
+  --bs-btn-hover-bg: var(--gc-surface-2);
+  --bs-btn-hover-border-color: var(--gc-border);
+  --bs-btn-hover-color: var(--gc-text);
+  --bs-btn-active-bg: var(--gc-surface-2);
+  --bs-btn-active-border-color: var(--gc-border);
+  --bs-btn-active-color: var(--gc-text);
+  --bs-btn-disabled-bg: var(--gc-surface);
+  --bs-btn-disabled-color: var(--gc-muted);
+}
+
+.btn-accent {
+  --bs-btn-bg: var(--gc-accent);
+  --bs-btn-border-color: var(--gc-accent);
+  --bs-btn-color: var(--gc-on-accent);
+  --bs-btn-hover-bg: var(--gc-accent);
+  --bs-btn-hover-border-color: var(--gc-accent);
+  --bs-btn-hover-color: var(--gc-on-accent);
+  --bs-btn-active-bg: var(--gc-accent);
+  --bs-btn-active-color: var(--gc-on-accent);
+  --bs-btn-focus-shadow-rgb: var(--gc-primary-rgb);
+}
+
+// For actions that delete. Bootstrap's own red is too light on the tinted
+// backgrounds (such as the trial bar); the palette's danger color is not.
+.btn-outline-danger {
+  --bs-btn-color: var(--gc-danger-text);
+  --bs-btn-border-color: var(--gc-danger-text);
+  --bs-btn-hover-bg: var(--gc-danger-text);
+  --bs-btn-hover-border-color: var(--gc-danger-text);
+  --bs-btn-hover-color: var(--gc-surface);
+  --bs-btn-active-bg: var(--gc-danger-text);
+  --bs-btn-active-border-color: var(--gc-danger-text);
+  --bs-btn-active-color: var(--gc-surface);
+  --bs-btn-disabled-color: var(--gc-danger-text);
+  --bs-btn-disabled-border-color: var(--gc-danger-text);
+}
+
+.btn-lg {
+  border-radius: 10px;
 }

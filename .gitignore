@@ -1,56 +1,25 @@
-db/**
-db-old
-build/**/**
+# Dependencies and build output
+node_modules/
 dist/
 .angular/
-node_modules
-node_modules/**
-**/node_modules
+
+# Local MongoDB data (mongod --dbpath ./db)
+db/
+
+# Test output
 coverage/
-.node-version
-.idea
-
-# Compiled source #
-###################
-*.com
-*.class
-*.dll
-*.exe
-*.o
-*.so
-​
-# Packages #
-############
-# it's better to unpack these files and commit the raw source
-# git has its own built in compression methods
-*.7z
-*.dmg
-*.gz
-*.iso
-*.jar
-*.rar
-*.tar
-*.zip
-​
-# Logs and databases #
-######################
-*.log
-*.sql
-*.sqlite
-​
-# OS generated files #
-######################
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
-
-# Playwright output
 test-results/
 playwright-report/
 
 # Local settings loaded by the npm scripts; see .env.example
 .env
+
+# Logs
+*.log
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+.node-version

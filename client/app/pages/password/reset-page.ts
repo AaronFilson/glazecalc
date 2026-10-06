@@ -7,9 +7,12 @@ import { errorMessage } from '../../core/error-message';
 import { Notices, NoticesList } from '../../shared/notices';
 
 /**
- * Chooses a new password from the link in a reset email (#/reset?token=...).
- * Opening the page uses nothing up: email link scanners open links too, so
- * the token is only spent when the new password is submitted.
+ * Chooses a new password from the link in a reset email (/reset#token=...).
+ * The token is after the #, so the browser never sends it to the server or
+ * puts it in a Referer header. Links from before 2026 (/#/reset?token=...)
+ * arrive as /reset?token=... and work too. Opening the page uses nothing up:
+ * email link scanners open links too, so the token is only spent when the new
+ * password is submitted.
  */
 @Component({
   selector: 'gc-reset-page',
@@ -28,13 +31,26 @@ import { Notices, NoticesList } from '../../shared/notices';
         <form #resetForm="ngForm" (ngSubmit)="submit()" class="d-flex flex-wrap align-items-center gap-3 mb-3">
           <div>
             <label for="password">New password: </label>
-            <input id="password" type="password" name="password" required minlength="8" autocomplete="new-password"
-              [(ngModel)]="password">
+            <input
+              id="password"
+              type="password"
+              name="password"
+              required
+              minlength="8"
+              autocomplete="new-password"
+              [(ngModel)]="password"
+            />
           </div>
           <div>
             <label for="confirmation">Confirm new password: </label>
-            <input id="confirmation" type="password" name="confirmation" required autocomplete="new-password"
-              [(ngModel)]="confirmation">
+            <input
+              id="confirmation"
+              type="password"
+              name="confirmation"
+              required
+              autocomplete="new-password"
+              [(ngModel)]="confirmation"
+            />
           </div>
           <button type="submit" class="btn btn-success" [disabled]="resetForm.invalid || !matches() || busy()">
             Save new password
@@ -51,7 +67,7 @@ import { Notices, NoticesList } from '../../shared/notices';
 export class ResetPage {
   private readonly auth = inject(AuthService);
 
-  protected readonly token = inject(ActivatedRoute).snapshot.queryParamMap.get('token');
+  protected readonly token = resetToken(inject(ActivatedRoute));
   protected readonly notices = new Notices();
   protected readonly password = signal('');
   protected readonly confirmation = signal('');
@@ -75,4 +91,10 @@ export class ResetPage {
       this.busy.set(false);
     }
   }
+}
+
+/** The token from #token=... (current links) or ?token=... (links from before 2026). */
+function resetToken(route: ActivatedRoute): string | null {
+  const { fragment, queryParamMap } = route.snapshot;
+  return new URLSearchParams(fragment ?? '').get('token') || queryParamMap.get('token');
 }

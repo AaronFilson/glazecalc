@@ -1,0 +1,5 @@
+# Public pages may be indexed; the API and signed-in pages have nothing to index.
+User-agent: *
+Disallow: /api/
+
+Sitemap: https://glazecalcapp.com/sitemap.xml

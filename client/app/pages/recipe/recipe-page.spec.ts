@@ -4,14 +4,24 @@ import { API, answer, httpMock, settle, testProviders, text } from '../../testin
 import { RecipePage, savedAnalysis } from './recipe-page';
 
 const material = (name: string, fields: Array<[string, number]>, loi: number): Material => ({
-  _id: name, name, percentmole: 'molecular', loi,
+  _id: name,
+  name,
+  percentmole: 'molecular',
+  loi,
   fields: fields.map(([oxide, amount]) => ({ name: oxide, amount }))
 });
 
 const STANDARD = [
   material('Whiting', [['CaO', 1]], 43.97),
   material('Silica', [['SiO2', 1]], 0),
-  material('Dolomite', [['CaO', 1], ['MgO', 1]], 47.73)
+  material(
+    'Dolomite',
+    [
+      ['CaO', 1],
+      ['MgO', 1]
+    ],
+    47.73
+  )
 ];
 
 describe('RecipePage', () => {
@@ -40,7 +50,9 @@ describe('RecipePage', () => {
 
   it('loads the material and additive pickers', async () => {
     const { fixture } = await create();
-    const options = [...fixture.nativeElement.querySelectorAll('#std-mats option')].map((o: Element) => o.textContent?.trim());
+    const options = [...fixture.nativeElement.querySelectorAll('#std-mats option')].map((o: Element) =>
+      o.textContent?.trim()
+    );
     expect(options).toEqual(['none', 'Whiting', 'Silica', 'Dolomite']);
     expect(text(fixture, '#std-adds')).toContain('Iron oxide');
   });
@@ -99,7 +111,10 @@ describe('RecipePage', () => {
     expect(body.title).toBe('Matte');
     expect(body.notes).toBe('None.');
     expect(body.date).toMatch(/^\d{4}-\d{2}-\d{2}$/);
-    expect(body.materials.map((m) => [m.name, m.amount])).toEqual([['Whiting', '10'], ['Dolomite', '20']]);
+    expect(body.materials.map((m) => [m.name, m.amount])).toEqual([
+      ['Whiting', '10'],
+      ['Dolomite', '20']
+    ]);
     expect(body.additives?.map((a) => a.name)).toEqual(['Iron oxide']);
     expect(savedAnalysis(body)?.uList['MgO']).toBeGreaterThan(0);
     req.flush({ ...body, _id: 'r1', computed: [body.computed] });
@@ -125,7 +140,9 @@ describe('RecipePage', () => {
     page['addMaterial'](STANDARD[0]);
     page['recipeMaterials']()[0].amount = '10';
     const saving = page['save']();
-    httpMock().expectOne(API + '/recipe/create').flush({ msg: 'Missing required information' }, { status: 400, statusText: 'Bad Request' });
+    httpMock()
+      .expectOne(API + '/recipe/create')
+      .flush({ msg: 'Missing required information' }, { status: 400, statusText: 'Bad Request' });
     await saving;
     expect(page['notices'].errors()).toEqual(['Missing required information']);
   });
@@ -133,7 +150,9 @@ describe('RecipePage', () => {
   it('expands a saved recipe, including ones saved before siAlRatio existed', async () => {
     const { fixture, page } = await create();
     const old: Recipe = {
-      _id: 'old', title: 'Old celadon', notes: ['Good'],
+      _id: 'old',
+      title: 'Old celadon',
+      notes: ['Good'],
       materials: [{ ...STANDARD[0], amount: '20' }],
       computed: [{ uList: { CaO: 1, Al2O3: 0.4, SiO2: 3.7 } }]
     };
@@ -159,7 +178,9 @@ describe('RecipePage', () => {
     click(fixture, 'Remove toggle');
     await fixture.whenStable();
     click(fixture, 'Remove from the server');
-    httpMock().expectOne({ method: 'DELETE', url: API + '/recipe/delete/r1' }).flush({});
+    httpMock()
+      .expectOne({ method: 'DELETE', url: API + '/recipe/delete/r1' })
+      .flush({});
     await settle(fixture);
     expect(page['myRecipes']()).toEqual([]);
   });
@@ -167,7 +188,9 @@ describe('RecipePage', () => {
   it('reports a list that fails to load', async () => {
     const fixture = TestBed.createComponent(RecipePage);
     await fixture.whenStable();
-    httpMock().match(() => true).forEach((req) => req.flush({}, { status: 500, statusText: 'Server Error' }));
+    httpMock()
+      .match(() => true)
+      .forEach((req) => req.flush({}, { status: 500, statusText: 'Server Error' }));
     await settle(fixture);
     const errors = (fixture.componentInstance as unknown as Record<string, any>)['notices'].errors();
     expect(errors).toContain('There was an error in getting the recipe information.');

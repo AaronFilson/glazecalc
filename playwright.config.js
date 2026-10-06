@@ -25,17 +25,15 @@ module.exports = defineConfig({
     headless: true,
     trace: 'retain-on-failure'
   },
-  projects: [
-    { name: 'chromium', use: { ...devices['Desktop Chrome'] } }
-  ],
+  projects: [{ name: 'chromium', use: { ...devices['Desktop Chrome'] } }],
   webServer: {
-    command: 'npx ng build && node server.js',
+    command: 'npx ng build && node server/main.ts',
     url: 'http://localhost:' + port + '/api/health',
     timeout: 180000,
     reuseExistingServer: false,
     env: {
       PORT: port,
-      MONGOLAB_URI: mongoUri,
+      MONGODB_URI: mongoUri,
       APP_SECRET: 'e2e-test-secret',
       APP_URL: 'http://localhost:' + port,
       MAIL_TRANSPORT: 'file',

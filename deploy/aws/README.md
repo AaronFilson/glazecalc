@@ -218,6 +218,21 @@ Before the DNS switch, nginx serves plain HTTP: open `http://<elastic-ip>/` from
 add a hosts-file line `<elastic-ip> glazecalcapp.com` and open `http://glazecalcapp.com/`.
 HTTPS comes after the DNS switch (section 13).
 
+Pages load over plain HTTP, but signing in does not stay signed in: the session cookie is
+`Secure`, and browsers keep it only over HTTPS. Check the API with curl instead, using a trial
+(it removes itself after 14 days, so no test account is left behind):
+
+```bash
+IP=<elastic-ip>
+curl -s http://$IP/api/health                                         # expect: {"status":"ok"}
+token=$(curl -s -D - -o /dev/null -X POST http://$IP/api/guest |
+  sed -nE 's/^[Ss]et-[Cc]ookie: glazecalc_session=([^;]+).*/\1/p')
+curl -s -H "Authorization: Bearer $token" http://$IP/api/verify        # expect: "guest":true
+curl -s http://$IP/api/materials/getStandard | grep -o '"ownedBy":"Standard"' | wc -l   # expect: 34
+```
+
+Sign in with a browser after `enable-https.sh`.
+
 ## 12. GitHub settings
 
 1. After the first **Publish image** run, open the package (GitHub profile → Packages →
@@ -272,13 +287,13 @@ aws sesv2 get-email-identity --email-identity glazecalcapp.com --query DkimAttri
 
 DNS records in the hosted zone (TTL 1800):
 
-| Name | Type | Value |
-| --- | --- | --- |
-| `<token>._domainkey.glazecalcapp.com` (three, one per DKIM token) | CNAME | `<token>.dkim.amazonses.com` |
-| `mail.glazecalcapp.com` | MX | `10 feedback-smtp.us-west-2.amazonses.com` |
-| `mail.glazecalcapp.com` | TXT | `"v=spf1 include:amazonses.com ~all"` |
-| `_dmarc.glazecalcapp.com` | TXT | `"v=DMARC1; p=none"` (tighten to `p=quarantine` after a few weeks of clean sending) |
-| `glazecalcapp.com` | TXT | `"v=spf1 -all"` (the bare domain sends no mail) |
+| Name                                                              | Type  | Value                                                                               |
+| ----------------------------------------------------------------- | ----- | ----------------------------------------------------------------------------------- |
+| `<token>._domainkey.glazecalcapp.com` (three, one per DKIM token) | CNAME | `<token>.dkim.amazonses.com`                                                        |
+| `mail.glazecalcapp.com`                                           | MX    | `10 feedback-smtp.us-west-2.amazonses.com`                                          |
+| `mail.glazecalcapp.com`                                           | TXT   | `"v=spf1 include:amazonses.com ~all"`                                               |
+| `_dmarc.glazecalcapp.com`                                         | TXT   | `"v=DMARC1; p=none"` (tighten to `p=quarantine` after a few weeks of clean sending) |
+| `glazecalcapp.com`                                                | TXT   | `"v=spf1 -all"` (the bare domain sends no mail)                                     |
 
 Bounces and complaints: the account suppression list stops mail to those addresses, SES sends each
 notice to the SNS topic `glazecalc-alerts` (emailed to the owner), and two alarms on that topic watch

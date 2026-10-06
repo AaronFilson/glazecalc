@@ -1,6 +1,6 @@
 {
-  "spec": "server/test",
-  "require": "server/test/support/env.js",
+  "spec": "server/test/*_tests.ts",
+  "require": ["server/test/support/env.ts", "server/test/support/app.ts"],
   "exit": true,
   "timeout": 5000
 }

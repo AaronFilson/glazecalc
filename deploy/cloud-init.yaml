@@ -46,5 +46,11 @@ write_files:
       { "log-driver": "local" }
 
 runcmd:
-  - [curl, -fsSL, -o, /usr/local/sbin/glazecalc-setup.sh, 'https://raw.githubusercontent.com/AaronFilson/glazecalc/master/deploy/setup-instance.sh']
+  - [
+      curl,
+      -fsSL,
+      -o,
+      /usr/local/sbin/glazecalc-setup.sh,
+      'https://raw.githubusercontent.com/AaronFilson/glazecalc/master/deploy/setup-instance.sh'
+    ]
   - [bash, /usr/local/sbin/glazecalc-setup.sh]

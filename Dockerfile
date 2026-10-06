@@ -33,7 +33,8 @@ ENV NODE_ENV=production \
     PORT=3000
 WORKDIR /app
 COPY --from=prod-deps /app/node_modules ./node_modules
-COPY package.json server.js materials.json additives.json advice.json ./
+COPY package.json ./
+COPY data ./data
 COPY server ./server
 COPY lib ./lib
 COPY scripts/seed-standard.js ./scripts/
@@ -45,4 +46,5 @@ EXPOSE 3000
 # The slim image has no curl, so the check uses Node's built-in fetch.
 HEALTHCHECK --interval=30s --timeout=5s --start-period=20s --retries=3 \
   CMD ["node", "-e", "fetch('http://127.0.0.1:' + process.env.PORT + '/api/health').then((r) => process.exit(r.ok ? 0 : 1), () => process.exit(1))"]
-CMD ["node", "server.js"]
+# The server is TypeScript; Node 24 runs it as it is, removing the types as it loads.
+CMD ["node", "server/main.ts"]

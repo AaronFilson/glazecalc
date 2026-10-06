@@ -1,0 +1,142 @@
+.hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  align-items: center;
+  margin: 1rem 0 2.5rem;
+
+  @media (min-width: 992px) {
+    grid-template-columns: 1.05fr 1fr;
+    gap: 3rem;
+  }
+}
+
+.eyebrow {
+  color: var(--gc-accent);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero h1 {
+  font-size: clamp(2.2rem, 1.4rem + 3.2vw, 3.6rem);
+  margin-bottom: 1rem;
+}
+
+.hero-lead {
+  font-size: 1.2rem;
+  color: var(--gc-muted);
+  max-width: 36rem;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 1.5rem 0 0.75rem;
+
+  .btn {
+    min-height: 2.9rem;
+  }
+}
+
+.hero-note {
+  color: var(--gc-muted);
+  font-size: 0.95rem;
+}
+
+.hero-figure {
+  margin: 0;
+
+  img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: var(--gc-radius);
+    box-shadow: var(--gc-shadow);
+  }
+
+  figcaption {
+    color: var(--gc-muted);
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+  }
+}
+
+.example-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+
+  @media (min-width: 768px) {
+    grid-template-columns: minmax(14rem, 1fr) 2fr;
+  }
+
+  h3 {
+    font-size: 1.15rem;
+  }
+}
+
+.example-recipe {
+  width: 100%;
+
+  caption {
+    caption-side: bottom;
+    color: var(--gc-muted);
+    font-size: 0.9rem;
+    padding-top: 0.5rem;
+  }
+
+  td:last-child,
+  th:last-child {
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+.example-note {
+  margin: 1rem 0 0;
+}
+
+.features ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.25rem;
+
+  li {
+    margin: 0;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    color: var(--gc-primary);
+  }
+
+  p {
+    margin: 0;
+    color: var(--gc-muted);
+  }
+}
+
+.closing {
+  text-align: center;
+  padding: 2rem 1rem 1rem;
+}
+
+.closing-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.hero-text .server-msg,
+.hero-text .errors-section {
+  margin: 1rem 0 0;
+}

@@ -1,73 +1,119 @@
-import { Component, OnInit, inject, signal } from '@angular/core';
+import { Component, OnInit, computed, inject, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { RouterLink } from '@angular/router';
 import { ApiResourceFactory } from '../../core/api-resource.service';
+import { AuthService } from '../../core/auth.service';
 import { errorMessage } from '../../core/error-message';
 import { Advice } from '../../core/models';
 import { Busy } from '../../shared/busy';
 import { Notices, NoticesList } from '../../shared/notices';
-import { PageNav } from '../../shared/page-nav';
+import { PageHeader } from '../../shared/page-header';
 
 @Component({
   selector: 'gc-advice-page',
-  imports: [FormsModule, NoticesList, PageNav],
+  imports: [FormsModule, NoticesList, PageHeader, RouterLink],
   template: `
-    <gc-page-nav current="advice" />
+    <gc-page-header
+      title="Glaze advice"
+      lead="Practical tips on mixing, glazing and firing, plus any advice of your own."
+    />
     <gc-notices [notices]="notices" />
 
-    <section class="help-text">
-      <p>
-        This is a page to store and view your favorite pieces of advice on glazes and firing.
-        Basic advice on glaze formulation and mixing is programmed in.
+    @if (!signedIn()) {
+      <p class="help-text">
+        <a routerLink="/signup">Create a free account</a> or <a routerLink="/signin">sign in</a> to keep advice of your
+        own.
       </p>
-      <form (ngSubmit)="save()">
-        <div class="mb-3">
-          <label for="advice-title">Title: </label>
-          <input id="advice-title" type="text" name="title" [(ngModel)]="title">
-        </div>
-        <div class="mb-3">
-          <label for="advice-tags">Tags: </label>
-          <input id="advice-tags" type="text" name="tags" [(ngModel)]="tags">
-        </div>
-        <div class="mb-3">
-          <label for="advice-content" class="boxlabel">Advice Content: </label>
-          <textarea id="advice-content" name="content" rows="4" class="form-control" [(ngModel)]="content"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary" [disabled]="saving.active()">Save</button>
-      </form>
-    </section>
-    <br>
+    }
 
-    <section class="tech-info">
-      <h4>My advice :</h4>
-      <ul class="my-advice">
-        @for (adv of myAdvice(); track adv._id) {
-          <li>
-            <b>{{ adv.title }}</b>
-            <p>{{ adv.content }}</p>
-            <div class="small">Tags: {{ tagsText(adv) }}</div>
-            @if (showRemove()) {
-              <button type="button" class="btn btn-light border" (click)="remove(adv)">Remove</button>
-            }
-          </li>
-        }
-      </ul>
-      <button type="button" class="btn btn-light border" (click)="showRemove.set(!showRemove())">Toggle Remove Button</button>
-
-      <h4>General advice:</h4>
+    <!-- Holds the window's height until the list arrives, so nothing below jumps when it does. -->
+    <section class="tech-info" [class.loading]="!standardLoaded()">
+      <h2>General advice</h2>
       <ul class="general-advice">
         @for (adv of standardAdvice(); track adv._id) {
           <li>
-            <b>{{ adv.title }}</b>
+            <h3>{{ adv.title }}</h3>
             <p>{{ adv.content }}</p>
-            <div class="small">Tags: {{ tagsText(adv) }}</div>
+            <div class="small muted">Tags: {{ tagsText(adv) }}</div>
           </li>
         }
       </ul>
     </section>
+
+    @if (signedIn()) {
+      <section class="help-text">
+        <h2>Add your own advice</h2>
+        <form (ngSubmit)="save()">
+          <div class="mb-3">
+            <label for="advice-title">Title: </label>
+            <input id="advice-title" type="text" name="title" [(ngModel)]="title" />
+          </div>
+          <div class="mb-3">
+            <label for="advice-tags">Tags: </label>
+            <input id="advice-tags" type="text" name="tags" [(ngModel)]="tags" />
+          </div>
+          <div class="mb-3">
+            <label for="advice-content" class="boxlabel">Advice Content: </label>
+            <textarea id="advice-content" name="content" rows="4" class="form-control" [(ngModel)]="content"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" [disabled]="saving.active()">Save</button>
+        </form>
+      </section>
+
+      <section class="tech-info">
+        <h2>My advice</h2>
+        <ul class="my-advice">
+          @for (adv of myAdvice(); track adv._id) {
+            <li>
+              <h3>{{ adv.title }}</h3>
+              <p>{{ adv.content }}</p>
+              <div class="small muted">Tags: {{ tagsText(adv) }}</div>
+              @if (showRemove()) {
+                <button type="button" class="btn btn-light border" (click)="remove(adv)">Remove</button>
+              }
+            </li>
+          } @empty {
+            <li class="muted">Nothing saved yet.</li>
+          }
+        </ul>
+        <button type="button" class="btn btn-light border" (click)="showRemove.set(!showRemove())">
+          Toggle Remove Button
+        </button>
+      </section>
+    }
+  `,
+  styles: `
+    .loading {
+      min-height: 100vh;
+    }
+    .general-advice,
+    .my-advice {
+      list-style: none;
+      padding: 0;
+    }
+    .general-advice li,
+    .my-advice li {
+      padding: 0.75rem 0;
+      border-bottom: 1px solid var(--gc-border);
+    }
+    .general-advice li:last-child,
+    .my-advice li:last-child {
+      border-bottom: 0;
+    }
+    h3 {
+      font-size: 1.15rem;
+      margin-bottom: 0.25rem;
+    }
+    p {
+      margin-bottom: 0.25rem;
+    }
   `
 })
 export class AdvicePage implements OnInit {
   private readonly advice = inject(ApiResourceFactory).for<Advice>('advice');
+  private readonly auth = inject(AuthService);
+
+  protected readonly signedIn = computed(() => this.auth.hasSession());
 
   protected readonly notices = new Notices();
   protected readonly saving = new Busy();
@@ -76,13 +122,24 @@ export class AdvicePage implements OnInit {
   protected readonly content = signal('');
   protected readonly myAdvice = signal<Advice[]>([]);
   protected readonly standardAdvice = signal<Advice[]>([]);
+  protected readonly standardLoaded = signal(false);
   protected readonly showRemove = signal(false);
 
   ngOnInit(): void {
-    this.advice.getAll().then((list) => this.myAdvice.set(list),
-      () => this.notices.error('There was an error in getting the advice information.'));
-    this.advice.getStandard().then((list) => this.standardAdvice.set(list),
-      () => this.notices.error('There was an error in getting the server advice information.'));
+    // The general advice is public; a visitor who is not signed in has none of their own.
+    if (this.signedIn()) {
+      this.advice.getAll().then(
+        (list) => this.myAdvice.set(list),
+        () => this.notices.error('There was an error in getting the advice information.')
+      );
+    }
+    this.advice
+      .getStandard()
+      .then(
+        (list) => this.standardAdvice.set(list),
+        () => this.notices.error('There was an error in getting the server advice information.')
+      )
+      .finally(() => this.standardLoaded.set(true));
   }
 
   protected save(): Promise<void> {

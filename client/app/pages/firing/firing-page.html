@@ -1,4 +1,4 @@
-<gc-page-nav current="firing" />
+<gc-page-header title="Firing logs" lead="Record each firing: times, temperatures, cones and kiln notes." />
 <gc-notices [notices]="notices" />
 
 <section class="inputbox">
@@ -6,15 +6,15 @@
     <div class="row">
       <div class="col-xl-4 col-lg-6 col-md-10 mb-3">
         <label for="firing-title">Title of Firing: </label>
-        <input id="firing-title" type="text" name="title" [(ngModel)]="title">
+        <input id="firing-title" type="text" name="title" [(ngModel)]="title" />
       </div>
       <div class="col-xl-4 col-lg-6 col-md-10 mb-3">
         <label for="firing-kiln">Kiln: </label>
-        <input id="firing-kiln" type="text" name="kiln" [(ngModel)]="kiln">
+        <input id="firing-kiln" type="text" name="kiln" [(ngModel)]="kiln" />
       </div>
       <div class="col-xl-4 col-lg-6 col-md-10 mb-3">
         <label for="firing-date">Date of firing: </label>
-        <input id="firing-date" type="date" name="date" [(ngModel)]="date">
+        <input id="firing-date" type="date" name="date" [(ngModel)]="date" />
       </div>
     </div>
     <div class="row">
@@ -41,10 +41,12 @@
     @for (field of log().fields; track $index) {
       <li>
         Field name : {{ field }}
-        <button type="button" class="btn btn-light border" (click)="moveField($index, -1)"
-          [disabled]="$first">Move field left</button>
-        <button type="button" class="btn btn-light border" (click)="moveField($index, 1)"
-          [disabled]="$last">Move field right</button>
+        <button type="button" class="btn btn-light border" (click)="moveField($index, -1)" [disabled]="$first">
+          Move field left
+        </button>
+        <button type="button" class="btn btn-light border" (click)="moveField($index, 1)" [disabled]="$last">
+          Move field right
+        </button>
         <button type="button" class="btn btn-light border" (click)="removeField($index)">Remove the field</button>
       </li>
     }
@@ -53,7 +55,7 @@
     Add a row to the firing table
   </button>
 </section>
-<br>
+<br />
 
 <section class="tech-info" aria-labelledby="record-heading">
   <h3 id="record-heading">Record the Firing</h3>
@@ -70,8 +72,14 @@
           <td>
             <!-- ngModel rewrites the box whenever the model differs from what it shows,
                  so cells stay right when columns or rows move under reused inputs. -->
-            <input type="text" class="firing-cell" [attr.aria-label]="log().fields[c] + ' row ' + (r + 1)"
-              [ngModel]="cell" (ngModelChange)="setCell(r, c, $event)" [ngModelOptions]="{ standalone: true }">
+            <input
+              type="text"
+              class="firing-cell"
+              [attr.aria-label]="log().fields[c] + ' row ' + (r + 1)"
+              [ngModel]="cell"
+              (ngModelChange)="setCell(r, c, $event)"
+              [ngModelOptions]="{ standalone: true }"
+            />
           </td>
         }
         <td><button type="button" class="btn btn-light border btn-sm" (click)="removeRow(r)">Remove row</button></td>
@@ -80,11 +88,11 @@
   </table>
   <button type="submit" form="firing-form" class="btn btn-primary" [disabled]="saving.active()">Save</button>
 </section>
-<br>
+<br />
 
 @if (myFirings().length) {
   <section class="tech-info" aria-labelledby="stored-heading">
-    <h3 id="stored-heading">My stored firings: </h3>
+    <h3 id="stored-heading">My stored firings:</h3>
     <ul>
       @for (fr of myFirings(); track fr._id) {
         <li class="stored-firing">
@@ -110,6 +118,8 @@
         </li>
       }
     </ul>
-    <button type="button" class="btn btn-light border" (click)="showRemove.set(!showRemove())">Remove toggle button</button>
+    <button type="button" class="btn btn-light border" (click)="showRemove.set(!showRemove())">
+      Remove toggle button
+    </button>
   </section>
 }

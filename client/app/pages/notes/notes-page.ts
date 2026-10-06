@@ -5,13 +5,13 @@ import { errorMessage } from '../../core/error-message';
 import { Note } from '../../core/models';
 import { Busy } from '../../shared/busy';
 import { Notices, NoticesList } from '../../shared/notices';
-import { PageNav } from '../../shared/page-nav';
+import { PageHeader } from '../../shared/page-header';
 
 @Component({
   selector: 'gc-notes-page',
-  imports: [FormsModule, NoticesList, PageNav],
+  imports: [FormsModule, NoticesList, PageHeader],
   template: `
-    <gc-page-nav current="notes" />
+    <gc-page-header title="Notes" lead="Anything else worth remembering about your glazes." />
     <gc-notices [notices]="notices" />
 
     <section class="help-text">
@@ -19,7 +19,7 @@ import { PageNav } from '../../shared/page-nav';
       <form (ngSubmit)="save()">
         <div class="mb-3">
           <label for="title">Title: </label>
-          <input id="title" type="text" name="title" [(ngModel)]="title">
+          <input id="title" type="text" name="title" [(ngModel)]="title" />
         </div>
         <div class="mb-3">
           <label for="content">Your Note: </label>
@@ -28,10 +28,10 @@ import { PageNav } from '../../shared/page-nav';
         <button type="submit" class="btn btn-primary" [disabled]="saving.active()">Save</button>
       </form>
     </section>
-    <br>
+    <br />
 
     <section class="tech-info">
-      <h3>My saved notes: </h3>
+      <h3>My saved notes:</h3>
       <ul class="my-notes">
         @for (note of notes(); track note._id) {
           <li>
@@ -43,7 +43,9 @@ import { PageNav } from '../../shared/page-nav';
           </li>
         }
       </ul>
-      <button type="button" class="btn btn-light border" (click)="showRemove.set(!showRemove())">Toggle Remove button</button>
+      <button type="button" class="btn btn-light border" (click)="showRemove.set(!showRemove())">
+        Toggle Remove button
+      </button>
     </section>
   `
 })

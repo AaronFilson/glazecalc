@@ -4,10 +4,13 @@ import { Router } from '@angular/router';
 import { App } from '../app';
 import { AuthService } from '../core/auth.service';
 import { API, answer, httpMock, settle, testProviders, text } from '../testing/test-providers';
+import { AboutPage } from './about/about-page';
 import { AdditivePage } from './additive/additive-page';
 import { AdvicePage } from './advice/advice-page';
 import { HomePage } from './home/home-page';
+import { LandingPage } from './landing/landing-page';
 import { NotFoundPage } from './not-found/not-found-page';
+import { PrivacyPage } from './privacy/privacy-page';
 import { NotesPage } from './notes/notes-page';
 import { TrashPage } from './trash/trash-page';
 
@@ -25,9 +28,49 @@ const create = async <T>(component: Type<T>) => {
 
 describe('static pages', () => {
   it('renders home, trash and not found', async () => {
-    expect(text((await create(HomePage)).fixture)).toContain('welcome to the Glaze Calc App');
+    const home = (await create(HomePage)).fixture;
+    expect(text(home, 'h1')).toBe('Your studio notebook');
+    const links = [...home.nativeElement.querySelectorAll('.home-card')].map((a: HTMLAnchorElement) =>
+      a.getAttribute('href')
+    );
+    expect(links).toEqual(['/recipe', '/material', '/additive', '/firing', '/notes', '/advice']);
     expect(text((await create(TrashPage)).fixture)).toContain('trash functionality is coming soon');
-    expect(text((await create(NotFoundPage)).fixture)).toContain('Page Not Found.');
+    expect(text((await create(NotFoundPage)).fixture)).toContain('Page not found');
+  });
+
+  it('shows the about and privacy pages with one h1 each', async () => {
+    for (const page of [AboutPage, PrivacyPage]) {
+      const { fixture } = await create(page);
+      expect(fixture.nativeElement.querySelectorAll('h1').length).toBe(1);
+    }
+  });
+});
+
+describe('LandingPage', () => {
+  it('shows the example recipe with its unity formula, worked out in the browser', async () => {
+    const { fixture } = await create(LandingPage);
+    expect(fixture.nativeElement.querySelectorAll('h1').length).toBe(1);
+    const rows = [...fixture.nativeElement.querySelectorAll('.example-recipe tbody tr')].map((tr: Element) =>
+      [...tr.querySelectorAll('td')].map((td) => td.textContent?.trim())
+    );
+    expect(rows).toEqual([
+      ['Potash Feldspar', '40'],
+      ['Silica', '30'],
+      ['Whiting', '20'],
+      ['Kaolin', '10']
+    ]);
+    const umf = text(fixture, '.unity-result');
+    // Leach 4321, checked by hand in the server chemistry tests.
+    expect(umf).toContain('K₂O : 0.264');
+    expect(umf).toContain('CaO : 0.736');
+    expect(umf).toContain('Al₂O₃ : 0.407');
+    expect(umf).toContain('SiO₂ : 3.710');
+    expect(umf).toContain('Ratio of Silica to Alumina : 9.11');
+    // "Try it now" (a button that starts a trial), then sign-up.
+    const cta = [...fixture.nativeElement.querySelectorAll('.hero-actions > *')].map(
+      (el: HTMLElement) => el.getAttribute('href') ?? el.textContent?.trim()
+    );
+    expect(cta).toEqual(['Try it now', '/signup']);
   });
 });
 
@@ -35,7 +78,9 @@ describe('AdditivePage', () => {
   it('saves components and elements with amounts', async () => {
     const { fixture, page } = await create(AdditivePage);
     answer('/additives/getAll', []);
-    answer('/additives/getStandard', [{ _id: 's', name: 'Tin oxide', notes: ['Opacifier'], fields: [{ name: 'SnO2', amount: '1' }] }]);
+    answer('/additives/getStandard', [
+      { _id: 's', name: 'Tin oxide', notes: ['Opacifier'], fields: [{ name: 'SnO2', amount: '1' }] }
+    ]);
     await settle(fixture);
     expect(text(fixture, 'table')).toContain('Tin oxide');
 
@@ -49,20 +94,35 @@ describe('AdditivePage', () => {
 
     const saving = page['save']();
     const req = httpMock().expectOne(API + '/additives/create');
-    expect(req.request.body).toEqual(expect.objectContaining({ name: 'My Stain', fields: [{ name: 'CoO', amount: '1' }] }));
+    expect(req.request.body).toEqual(
+      expect.objectContaining({ name: 'My Stain', fields: [{ name: 'CoO', amount: '1' }] })
+    );
     req.flush({ ...req.request.body, _id: 'a1' });
     await saving;
     expect(page['myAdditives']().map((a: { name: string }) => a.name)).toEqual(['My Stain']);
 
     const removing = page['remove'](page['myAdditives']()[0]);
-    httpMock().expectOne(API + '/additives/delete/a1').flush({ msg: 'no' }, { status: 500, statusText: 'Error' });
+    httpMock()
+      .expectOne(API + '/additives/delete/a1')
+      .flush({ msg: 'no' }, { status: 500, statusText: 'Error' });
     await removing;
     expect(page['notices'].errors()).toContain('Error in deleting the additive from the server.');
   });
 });
 
 describe('AdvicePage', () => {
+  it('shows the general advice to visitors, with no form and no request for their own', async () => {
+    const { fixture } = await create(AdvicePage);
+    answer('/advice/getStandard', [{ _id: 's', title: 'Sieve', content: 'Use 80 mesh', tags: ['mixing'] }]);
+    httpMock().expectNone(API + '/advice/getAll');
+    await settle(fixture);
+    expect(text(fixture, '.general-advice')).toContain('Use 80 mesh');
+    expect(fixture.nativeElement.querySelector('form')).toBeNull();
+    expect(text(fixture)).toContain('Create a free account or sign in to keep advice of your own.');
+  });
+
   it('lists, adds and removes advice', async () => {
+    localStorage.setItem('session', 'account');
     const { fixture, page } = await create(AdvicePage);
     answer('/advice/getAll', []);
     answer('/advice/getStandard', [{ _id: 's', title: 'Sieve', content: 'Use 80 mesh', tags: ['mixing', 'tools'] }]);
@@ -83,7 +143,9 @@ describe('AdvicePage', () => {
     expect(text(fixture, '.my-advice')).toContain('Wax the foot');
 
     const removing = page['remove'](page['myAdvice']()[0]);
-    httpMock().expectOne(API + '/advice/delete/a1').flush({});
+    httpMock()
+      .expectOne(API + '/advice/delete/a1')
+      .flush({});
     await removing;
     expect(page['myAdvice']()).toEqual([]);
   });
@@ -92,7 +154,9 @@ describe('AdvicePage', () => {
 describe('NotesPage', () => {
   it('saves notes as general notes', async () => {
     const { fixture, page } = await create(NotesPage);
-    answer('/notes/getAll', [{ _id: 'n0', title: 'Old', content: 'kept', relatedCollection: 'Notes', relatedId: 'general notes' }]);
+    answer('/notes/getAll', [
+      { _id: 'n0', title: 'Old', content: 'kept', relatedCollection: 'Notes', relatedId: 'general notes' }
+    ]);
     await settle(fixture);
     expect(text(fixture, '.my-notes')).toContain('kept');
 
@@ -101,7 +165,10 @@ describe('NotesPage', () => {
     const saving = page['save']();
     const req = httpMock().expectOne(API + '/notes/create');
     expect(req.request.body).toEqual({
-      title: 'Kiln', content: 'Element 3 is weak', relatedCollection: 'Notes', relatedId: 'general notes'
+      title: 'Kiln',
+      content: 'Element 3 is weak',
+      relatedCollection: 'Notes',
+      relatedId: 'general notes'
     });
     req.flush({ msg: 'Missing required information' }, { status: 400, statusText: 'Bad Request' });
     await saving;
@@ -111,20 +178,62 @@ describe('NotesPage', () => {
 });
 
 describe('App', () => {
-  it('greets the signed-in user and logs out to the sign in page', async () => {
-    localStorage.setItem('token', 'saved');
+  const navLinks = (fixture: { nativeElement: HTMLElement }) =>
+    [...fixture.nativeElement.querySelectorAll('.nav-links a')].map((a) => a.textContent?.trim());
+
+  it('shows the app menu and account to a signed-in user, and signs out to the sign-in page', async () => {
+    localStorage.setItem('session', 'account');
     TestBed.resetTestingModule();
     TestBed.configureTestingModule({ providers: testProviders() });
     const navigate = vi.spyOn(TestBed.inject(Router), 'navigateByUrl').mockResolvedValue(true);
     const { fixture } = await create(App);
-    httpMock().expectOne(API + '/verify').flush({ msg: 'User verified', email: 'a@b.com' });
+    httpMock()
+      .expectOne(API + '/verify')
+      .flush({ msg: 'User verified', id: 'u1', email: 'a@b.com' });
     await settle(fixture);
-    expect(text(fixture, 'header')).toContain('Hello a@b.com');
+    expect(navLinks(fixture)).toEqual(['Recipes', 'Materials', 'Additives', 'Firing logs', 'Notes', 'Advice']);
+    expect(text(fixture, '.account-email')).toBe('a@b.com');
 
-    (fixture.nativeElement.querySelector('header button') as HTMLButtonElement).click();
+    (fixture.nativeElement.querySelector('.nav-account button') as HTMLButtonElement).click();
+    httpMock()
+      .expectOne({ method: 'POST', url: API + '/signout' })
+      .flush({ msg: 'Signed out' });
     await fixture.whenStable();
-    expect(TestBed.inject(AuthService).token()).toBeNull();
-    expect(fixture.nativeElement.querySelector('header')).toBeNull();
+    expect(TestBed.inject(AuthService).hasSession()).toBe(false);
+    expect(navLinks(fixture)).toEqual(['Advice', 'About']);
     expect(navigate).toHaveBeenCalledWith('/signin');
+  });
+
+  it('opens and closes the phone menu', async () => {
+    const { fixture, page } = await create(App);
+    const toggle = fixture.nativeElement.querySelector('.nav-toggle') as HTMLButtonElement;
+    expect(toggle.getAttribute('aria-expanded')).toBe('false');
+    toggle.click();
+    await fixture.whenStable();
+    expect(toggle.getAttribute('aria-expanded')).toBe('true');
+    expect(fixture.nativeElement.querySelector('#main-menu').classList).toContain('open');
+    page['menuOpen'].set(false);
+    await fixture.whenStable();
+    expect(toggle.getAttribute('aria-expanded')).toBe('false');
+  });
+
+  it('has a skip link, one main landmark, and the footer once the first page is in place', async () => {
+    const { fixture } = await create(App);
+    expect(fixture.nativeElement.querySelector('a.skip-link').getAttribute('href')).toBe('#main');
+    expect(fixture.nativeElement.querySelectorAll('main#main').length).toBe(1);
+    // Not before: it would paint at the bottom of the window and then jump down.
+    expect(fixture.nativeElement.querySelector('footer')).toBeNull();
+    await TestBed.inject(Router).navigateByUrl('/');
+    await fixture.whenStable();
+    expect(text(fixture, 'footer')).toContain('Privacy');
+  });
+
+  it('skips to the content by moving focus, without following the link (which would reload the app)', async () => {
+    const { fixture } = await create(App);
+    const link = fixture.nativeElement.querySelector('a.skip-link') as HTMLAnchorElement;
+    const click = new MouseEvent('click', { bubbles: true, cancelable: true });
+    link.dispatchEvent(click);
+    expect(click.defaultPrevented).toBe(true);
+    expect(document.activeElement).toBe(fixture.nativeElement.querySelector('main#main'));
   });
 });

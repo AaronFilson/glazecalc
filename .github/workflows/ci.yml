@@ -36,6 +36,12 @@ jobs:
       - name: Lint
         run: npm run lint
 
+      - name: Type-check the server
+        run: npm run typecheck
+
+      - name: Check formatting
+        run: npm run format:check
+
       - name: Check for known vulnerabilities
         run: npm audit --audit-level=high
 
@@ -81,11 +87,15 @@ jobs:
       - name: Seed and check the API
         run: |
           docker compose run --rm app node scripts/seed-standard.js
-          curl -fsS http://127.0.0.1:3000/ | grep -q '<title>Glazecalc</title>'
-          token=$(curl -fsS -X POST -H 'Content-Type: application/json' \
-            -d '{"email":"ci-check@test.com","password":"password123"}' \
-            http://127.0.0.1:3000/api/signup | jq -r .token)
-          count=$(curl -fsS -H "token: $token" http://127.0.0.1:3000/api/materials/getStandard | jq length)
+          curl -fsS http://127.0.0.1:3000/ | grep -q '<title>Glazecalc'
+          # Sign up, then use the session it sets. The cookie is Secure in production
+          # and this check runs over plain HTTP, so its token goes in a Bearer header.
+          curl -fsS -D signup-headers.txt -o /dev/null -X POST -H 'Content-Type: application/json' \
+            -d '{"email":"ci-check@test.com","password":"password123"}' http://127.0.0.1:3000/api/signup
+          token=$(sed -nE 's/^[Ss]et-[Cc]ookie: glazecalc_session=([^;]+).*/\1/p' signup-headers.txt)
+          curl -fsS -H "Authorization: Bearer $token" http://127.0.0.1:3000/api/verify |
+            jq -e '.email == "ci-check@test.com"'
+          count=$(curl -fsS http://127.0.0.1:3000/api/materials/getStandard | jq length)
           echo "standard materials: $count"
           test "$count" -eq 34
 

@@ -1,11 +1,10 @@
 import { TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
-import { AuthService } from '../core/auth.service';
 import { testProviders, text } from '../testing/test-providers';
 import { localDate, optional } from './dates';
 import { Notices, NoticesList } from './notices';
 import { ADDITIVE_COMPONENTS, FIRING_FIELDS, firstOf, subscript } from './options';
-import { PageNav } from './page-nav';
+import { PageHeader } from './page-header';
 
 describe('Notices', () => {
   it('collects and dismisses errors and messages by position', () => {
@@ -36,30 +35,27 @@ describe('Notices', () => {
   });
 });
 
-describe('PageNav', () => {
+describe('PageHeader', () => {
   beforeEach(() => TestBed.configureTestingModule({ providers: testProviders() }));
 
-  const render = async (current: string) => {
-    const fixture = TestBed.createComponent(PageNav);
-    fixture.componentRef.setInput('current', current);
+  const render = async (title: string, lead?: string) => {
+    const fixture = TestBed.createComponent(PageHeader);
+    fixture.componentRef.setInput('title', title);
+    if (lead) fixture.componentRef.setInput('lead', lead);
     await fixture.whenStable();
     return fixture;
   };
 
-  it('links to every other page', async () => {
-    const fixture = await render('recipe');
-    const links = [...fixture.nativeElement.querySelectorAll('nav a')].map((a: HTMLAnchorElement) => a.textContent?.trim());
-    expect(links).toEqual(['additive', 'advice', 'firing', 'home', 'material', 'notes']);
-    expect(text(fixture, 'nav h3')).toBe('You are on the Recipe page.');
+  it('shows the page title as the one h1, with its lead line', async () => {
+    const fixture = await render('Recipes', 'Build a glaze.');
+    expect(fixture.nativeElement.querySelectorAll('h1').length).toBe(1);
+    expect(text(fixture, 'h1')).toBe('Recipes');
+    expect(text(fixture, '.lead-text')).toBe('Build a glaze.');
   });
 
-  it('warns only when nobody is signed in', async () => {
-    const fixture = await render('home');
-    expect(text(fixture, 'header')).toContain('not signed in');
-
-    TestBed.inject(AuthService).email.set('a@b.com');
-    await fixture.whenStable();
-    expect(fixture.nativeElement.querySelector('header')).toBeNull();
+  it('leaves the lead out when there is none', async () => {
+    const fixture = await render('Trash');
+    expect(fixture.nativeElement.querySelector('.lead-text')).toBeNull();
   });
 });
 

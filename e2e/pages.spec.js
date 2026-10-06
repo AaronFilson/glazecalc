@@ -15,53 +15,73 @@ const addPart = async (page, select, value, button, amount, amountClass) => {
 };
 
 test.beforeEach(async ({ page, request }) => {
-  await signUpAndSignIn(page, request);
+  await signUpAndSignIn(page);
 });
 
 test.describe('home and navigation', () => {
-  const PAGES = ['additive', 'advice', 'firing', 'material', 'notes', 'recipe'];
+  const MENU = [
+    ['Recipes', 'recipe', 'Recipes'],
+    ['Materials', 'material', 'Materials'],
+    ['Additives', 'additive', 'Additives and colorants'],
+    ['Firing logs', 'firing', 'Firing logs'],
+    ['Notes', 'notes', 'Notes'],
+    ['Advice', 'advice', 'Glaze advice']
+  ];
 
-  test('links from home reach every page and back', async ({ page }) => {
-    await page.goto('/#/home');
-    await expect(page.locator('nav h3')).toHaveText('You are on the Home page.');
-    await expect(page.locator('.home-text')).toContainText('welcome to the Glaze Calc App');
+  test('the menu reaches every page, and the brand goes home', async ({ page }) => {
+    await page.goto('/home');
+    await expect(page.locator('h1')).toHaveText('Your studio notebook');
 
-    for (const name of PAGES) {
-      await page.locator('nav').getByRole('link', { name, exact: true }).click();
-      await expect(page).toHaveURL(new RegExp('#/' + name + '$'));
-      const title = name.charAt(0).toUpperCase() + name.slice(1);
-      await expect(page.locator('nav h3')).toHaveText('You are on the ' + title + ' page.');
+    for (const [label, path, heading] of MENU) {
+      await page.locator('.nav-links').getByRole('link', { name: label, exact: true }).click();
+      await expect(page).toHaveURL(new RegExp('/' + path + '$'));
+      await expect(page.locator('h1')).toHaveText(heading);
+      await expect(page.locator('.nav-links a[aria-current="page"]')).toHaveText(label);
       await expect(page).toHaveTitle(/Glazecalc/);
-      await page.locator('nav').getByRole('link', { name: 'home', exact: true }).click();
-      await expect(page).toHaveURL(/#\/home$/);
+      await page.locator('.brand').click();
+      await expect(page).toHaveURL(/\/home$/);
     }
   });
 
-  test('the header Home link and the root URL go where expected', async ({ page }) => {
-    await page.goto('/#/notes');
-    await page.locator('header.header-text').getByRole('link', { name: 'Home' }).click();
-    await expect(page).toHaveURL(/#\/home$/);
+  test('the home page cards and the root URL go where expected', async ({ page }) => {
+    await page.goto('/home');
+    await page.locator('.home-card', { hasText: 'Firing logs' }).click();
+    await expect(page).toHaveURL(/\/firing$/);
     // Signed in, the site's root address goes home.
     await page.goto('/');
-    await expect(page).toHaveURL(/#\/home$/);
+    await expect(page).toHaveURL(/\/home$/);
   });
 
   test('signed-out visitors to a data page go to sign in, without errors', async ({ browser }) => {
     const visitor = await browser.newPage();
     const problems = [];
     visitor.on('response', (r) => r.status() >= 400 && problems.push(r.status() + ' ' + r.url()));
-    await visitor.goto('/#/recipe');
-    await expect(visitor).toHaveURL(/#\/signin$/);
+    await visitor.goto('/recipe');
+    await expect(visitor).toHaveURL(/\/signin$/);
     await expect(visitor.locator('.errors-section')).toHaveCount(0);
-    await visitor.goto('/');
-    await expect(visitor).toHaveURL(/#\/signin$/);
     expect(problems).toEqual([]);
     await visitor.close();
   });
 
+  test('visitors can read the public pages', async ({ browser }) => {
+    const visitor = await browser.newPage();
+    for (const [path, heading] of [
+      ['/advice', 'Glaze advice'],
+      ['/about', 'About Glazecalc'],
+      ['/privacy', 'Privacy']
+    ]) {
+      await visitor.goto(path);
+      await expect(visitor.locator('h1')).toHaveText(heading);
+    }
+    await visitor.goto('/advice');
+    await expect(visitor.locator('.general-advice li')).toHaveCount(8);
+    await expect(visitor.locator('form')).toHaveCount(0);
+    await visitor.close();
+  });
+
   test('the trash page explains that trash is not available yet', async ({ page }) => {
-    await page.goto('/#/trash');
-    await expect(page.locator('nav h3')).toHaveText('You are on the Trash page.');
+    await page.goto('/trash');
+    await expect(page.locator('h1')).toHaveText('Trash');
     await expect(page.locator('.help-text')).toContainText('trash functionality is coming soon');
   });
 
@@ -69,25 +89,37 @@ test.describe('home and navigation', () => {
     const problems = [];
     page.on('pageerror', (err) => problems.push(err.message));
     page.on('console', (msg) => msg.type() === 'error' && problems.push(msg.text()));
-    for (const name of ['home', 'additive', 'advice', 'firing', 'material', 'notes', 'recipe', 'trash']) {
-      await page.goto('/#/' + name);
-      await expect(page.locator('nav h3')).toBeVisible();
+    for (const name of ['home', 'additive', 'advice', 'firing', 'material', 'notes', 'recipe', 'trash', 'account']) {
+      await page.goto('/' + name);
+      await expect(page.locator('h1')).toBeVisible();
       await expect(errors(page)).toHaveCount(0);
     }
     expect(problems).toEqual([]);
+  });
+
+  test('the phone menu opens and closes', async ({ page }) => {
+    await page.setViewportSize({ width: 390, height: 844 });
+    await page.goto('/home');
+    const toggle = page.getByRole('button', { name: 'Menu' });
+    await expect(page.locator('.nav-links')).toBeHidden();
+    await toggle.click();
+    await expect(toggle).toHaveAttribute('aria-expanded', 'true');
+    await page.locator('.nav-links').getByRole('link', { name: 'Notes' }).click();
+    await expect(page).toHaveURL(/\/notes$/);
+    await expect(page.locator('.nav-links')).toBeHidden();
   });
 });
 
 test.describe('additives', () => {
   test('lists the standard additives', async ({ page }) => {
-    await page.goto('/#/additive');
+    await page.goto('/additive');
     const standard = page.locator('section', { hasText: 'The standard server additives:' });
     const row = standard.locator('tr', { has: page.locator('td', { hasText: /^\s*Cobalt carbonate\s*$/ }) });
     await expect(row).toContainText('CoO : 1');
   });
 
   test('saves an additive from components and elements, then removes it', async ({ page }) => {
-    await page.goto('/#/additive');
+    await page.goto('/additive');
     await page.locator('#additive-name').fill('Blue stain');
     await page.locator('#formula').fill('CoAl₂O₄');
     await page.locator('#notes').fill('Spinel');
@@ -112,7 +144,7 @@ test.describe('additives', () => {
   });
 
   test('asks for a component before adding one', async ({ page }) => {
-    await page.goto('/#/additive');
+    await page.goto('/additive');
     await page.getByRole('button', { name: 'Add the component' }).click();
     await expect(errors(page)).toContainText('please select an component');
     await page.getByRole('button', { name: 'Dismiss' }).click();
@@ -122,8 +154,8 @@ test.describe('additives', () => {
 
 test.describe('advice', () => {
   test('shows general advice and saves, lists and removes my own', async ({ page }) => {
-    await page.goto('/#/advice');
-    // The standard advice from advice.json.
+    await page.goto('/advice');
+    // The standard advice from data/advice.ndjson.
     await expect(page.locator('.general-advice li')).toHaveCount(8);
     await expect(page.locator('.general-advice')).toContainText('Have a system to your process.');
     await expect(page.locator('.general-advice')).toContainText('Tags: system, methods, records');
@@ -141,11 +173,12 @@ test.describe('advice', () => {
     await expect(mine).toBeVisible();
     await page.getByRole('button', { name: 'Toggle Remove Button' }).click();
     await mine.getByRole('button', { name: 'Remove' }).click();
-    await expect(page.locator('.my-advice li')).toHaveCount(0);
+    await expect(mine).toHaveCount(0);
+    await expect(page.locator('.my-advice')).toContainText('Nothing saved yet.');
   });
 
   test('needs a title and content', async ({ page }) => {
-    await page.goto('/#/advice');
+    await page.goto('/advice');
     await page.locator('#advice-title').fill('Only a title');
     await page.getByRole('button', { name: 'Save' }).click();
     await expect(errors(page)).toContainText('missing information');
@@ -154,7 +187,7 @@ test.describe('advice', () => {
 
 test.describe('notes', () => {
   test('saves, lists and removes notes', async ({ page }) => {
-    await page.goto('/#/notes');
+    await page.goto('/notes');
     await page.locator('#title').fill('Kiln');
     await page.locator('#content').fill('Element 3 needs replacing.');
     await page.getByRole('button', { name: 'Save' }).click();
@@ -171,7 +204,7 @@ test.describe('notes', () => {
   });
 
   test('needs a title and a note', async ({ page }) => {
-    await page.goto('/#/notes');
+    await page.goto('/notes');
     await page.getByRole('button', { name: 'Save' }).click();
     await expect(errors(page)).toContainText('missing info');
   });
@@ -181,7 +214,7 @@ test.describe('firing log', () => {
   const cells = (page) => page.locator('.firing-table input');
 
   test('builds a log, rearranges columns with their data, saves and removes it', async ({ page }) => {
-    await page.goto('/#/firing');
+    await page.goto('/firing');
     await page.locator('#firing-title').fill('Cone 10 reduction');
     await page.locator('#firing-kiln').fill('Car kiln');
     await page.locator('#firing-date').fill('2026-10-03');
@@ -197,7 +230,10 @@ test.describe('firing log', () => {
     await page.getByLabel('Cone row 2').fill('06');
 
     // Moving Time right keeps its values under its heading.
-    await page.locator('.included-fields li', { hasText: 'Time' }).getByRole('button', { name: 'Move field right' }).click();
+    await page
+      .locator('.included-fields li', { hasText: 'Time' })
+      .getByRole('button', { name: 'Move field right' })
+      .click();
     await expect(page.locator('.firing-table th')).toHaveText(['Cone', 'Time', 'Damper', 'Row actions']);
     await expect(page.getByLabel('Time row 1')).toHaveValue('8:00');
     await expect(page.getByLabel('Cone row 2')).toHaveValue('06');
@@ -209,7 +245,10 @@ test.describe('firing log', () => {
     await page.getByLabel('Temperature F row 2').fill('1830');
 
     // Removing a field and a row drops their cells.
-    await page.locator('.included-fields li', { hasText: 'Damper' }).getByRole('button', { name: 'Remove the field' }).click();
+    await page
+      .locator('.included-fields li', { hasText: 'Damper' })
+      .getByRole('button', { name: 'Remove the field' })
+      .click();
     await page.locator('.firing-table tr').nth(1).getByRole('button', { name: 'Remove row' }).click();
     await expect(cells(page)).toHaveCount(3);
     await expect(page.getByLabel('Time row 1')).toHaveValue('9:30');
@@ -232,7 +271,7 @@ test.describe('firing log', () => {
   });
 
   test('keeps move buttons from running off either end and rows from starting with no fields', async ({ page }) => {
-    await page.goto('/#/firing');
+    await page.goto('/firing');
     await expect(page.getByRole('button', { name: 'Add a row to the firing table' })).toBeDisabled();
     await page.getByRole('button', { name: 'Add the field' }).click();
     const only = page.locator('.included-fields li');
@@ -241,8 +280,34 @@ test.describe('firing log', () => {
   });
 
   test('needs a title and a field before saving', async ({ page }) => {
-    await page.goto('/#/firing');
+    await page.goto('/firing');
     await page.getByRole('button', { name: 'Save' }).click();
     await expect(errors(page)).toContainText('enter a title and at least one field');
   });
+});
+
+test('a tab opened before a new version loads the page afresh when its old code is gone', async ({ page }) => {
+  await page.goto('/home');
+  await expect(page.locator('h1')).toHaveText('Your studio notebook');
+  // After a deploy, the code file this tab would ask for next no longer exists.
+  await page.route(/\/chunk-[^/]+\.js$/, (route) => route.fulfill({ status: 404, body: 'Not found' }), { times: 1 });
+  await page.locator('.nav-links').getByRole('link', { name: 'Advice' }).click();
+  await expect(page).toHaveURL(/\/advice$/);
+  await expect(page.locator('h1')).toHaveText('Glaze advice');
+});
+
+test('"Skip to content" moves to the page without reloading it', async ({ page }) => {
+  await page.goto('/recipe');
+  // It is the first thing a keyboard user reaches.
+  await page.keyboard.press('Tab');
+  const skip = page.getByRole('link', { name: 'Skip to content' });
+  await expect(skip).toBeFocused();
+
+  // Used partway through a recipe, it keeps what has been typed.
+  await page.locator('#recipe-name').fill('Not saved yet');
+  await skip.focus();
+  await page.keyboard.press('Enter');
+  await expect(page).toHaveURL(/\/recipe$/);
+  await expect(page.locator('main#main')).toBeFocused();
+  await expect(page.locator('#recipe-name')).toHaveValue('Not saved yet');
 });

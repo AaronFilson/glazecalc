@@ -6,7 +6,10 @@ describe('Busy', () => {
     const busy = new Busy();
     let finish!: () => void;
     let runs = 0;
-    const task = () => { runs++; return new Promise<void>((resolve) => (finish = resolve)); };
+    const task = () => {
+      runs++;
+      return new Promise<void>((resolve) => (finish = resolve));
+    };
 
     const first = busy.run(task);
     expect(busy.active()).toBe(true);

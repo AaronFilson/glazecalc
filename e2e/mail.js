@@ -6,7 +6,10 @@ const { expect } = require('@playwright/test');
 const sentTo = (address) => {
   const dir = process.env.E2E_MAIL_DIR;
   if (!fs.existsSync(dir)) return [];
-  return fs.readdirSync(dir).filter((name) => name.endsWith('.json')).sort()
+  return fs
+    .readdirSync(dir)
+    .filter((name) => name.endsWith('.json'))
+    .sort()
     .map((name) => JSON.parse(fs.readFileSync(path.join(dir, name), 'utf8')))
     .filter((message) => message.to === address);
 };
@@ -18,6 +21,6 @@ const nextEmail = async (address, before = 0) => {
 };
 
 /** The reset link in a reset email. */
-const resetLink = (message) => /(https?:\/\/\S+#\/reset\?token=[A-Za-z0-9_-]+)/.exec(message.text)[1];
+const resetLink = (message) => /(https?:\/\/\S+\/reset#token=[A-Za-z0-9_-]+)/.exec(message.text)[1];
 
 module.exports = { nextEmail, resetLink, sentTo };

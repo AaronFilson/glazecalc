@@ -3,14 +3,14 @@ import { HttpTestingController, provideHttpClientTesting } from '@angular/common
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { provideRouter } from '@angular/router';
 import { API_BASE } from '../core/api-base';
-import { authTokenInterceptor } from '../core/auth-token.interceptor';
+import { sessionExpiredInterceptor } from '../core/session-expired.interceptor';
 
 export const API = 'http://api.test';
 
-/** HTTP (with the token interceptor) against a fake API, plus an empty router. */
+/** HTTP (with the session interceptor) against a fake API, plus an empty router. */
 export function testProviders() {
   return [
-    provideHttpClient(withInterceptors([authTokenInterceptor])),
+    provideHttpClient(withInterceptors([sessionExpiredInterceptor])),
     provideHttpClientTesting(),
     provideRouter([]),
     { provide: API_BASE, useValue: API }
@@ -29,7 +29,9 @@ export async function settle(fixture?: ComponentFixture<unknown>): Promise<void>
 
 /** Answers every outstanding GET whose URL ends with the path. */
 export function answer(path: string, body: object | null): void {
-  httpMock().match((req) => req.url.endsWith(path)).forEach((req) => req.flush(body));
+  httpMock()
+    .match((req) => req.url.endsWith(path))
+    .forEach((req) => req.flush(body));
 }
 
 export function text(fixture: ComponentFixture<unknown>, selector = ':root'): string {

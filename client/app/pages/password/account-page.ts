@@ -1,60 +1,128 @@
+import { DatePipe } from '@angular/common';
 import { Component, computed, inject, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { RouterLink } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import { AuthService } from '../../core/auth.service';
 import { errorMessage } from '../../core/error-message';
 import { Notices, NoticesList } from '../../shared/notices';
+import { PageHeader } from '../../shared/page-header';
 
-/** The signed-in user's account: change the password. */
+/**
+ * The signed-in user's account: change the password, or delete the account. A
+ * trial has no password, so it is offered an account instead.
+ */
 @Component({
   selector: 'gc-account-page',
-  imports: [FormsModule, NoticesList, RouterLink],
+  imports: [DatePipe, FormsModule, NoticesList, PageHeader, RouterLink],
   template: `
-    <gc-notices [notices]="notices" />
-    <section class="auth-text">
-      <h1>Your account</h1>
-      @if (auth.token()) {
-        @if (auth.email(); as email) {
-          <p>Signed in as {{ email }}.</p>
-        }
-        <h2 class="h4">Change your password</h2>
-        <form #changeForm="ngForm" (ngSubmit)="submit()" class="d-flex flex-wrap align-items-center gap-3 mb-3">
-          <div>
-            <label for="current">Current password: </label>
-            <input id="current" type="password" name="current" required autocomplete="current-password"
-              [(ngModel)]="current">
+    @if (auth.trial(); as trial) {
+      <gc-page-header title="Your trial" [lead]="'You are trying Glazecalc as ' + trial.name + '.'" />
+      <section class="auth-text trial-account">
+        <h2>Keep your work</h2>
+        <p>
+          This trial and everything in it are removed on {{ trial.expiresAt | date: 'EEEE, MMMM d' }}. Create a free
+          account to keep them: your recipes, materials and notes stay just as they are, and {{ trial.name }} stays your
+          display name.
+        </p>
+        <a routerLink="/signup" class="btn btn-primary">Create an account</a>
+      </section>
+    } @else {
+      <gc-page-header title="Your account" [lead]="auth.email() ? 'Signed in as ' + auth.email() + '.' : ''" />
+      <gc-notices [notices]="notices" />
+
+      <section class="auth-text">
+        <h2>Change your password</h2>
+        <form #changeForm="ngForm" (ngSubmit)="submit()" class="account-form">
+          <div class="mb-3">
+            <label for="current" class="form-label">Current password</label>
+            <input
+              id="current"
+              type="password"
+              name="current"
+              class="form-control"
+              required
+              autocomplete="current-password"
+              [(ngModel)]="current"
+            />
           </div>
-          <div>
-            <label for="password">New password: </label>
-            <input id="password" type="password" name="password" required minlength="8" autocomplete="new-password"
-              [(ngModel)]="password">
+          <div class="mb-3">
+            <label for="password" class="form-label">New password</label>
+            <input
+              id="password"
+              type="password"
+              name="password"
+              class="form-control"
+              required
+              minlength="8"
+              autocomplete="new-password"
+              [(ngModel)]="password"
+            />
+            <div class="form-text">
+              At least 8 characters. Other devices signed in to this account will be signed out.
+            </div>
           </div>
-          <div>
-            <label for="confirmation">Confirm new password: </label>
-            <input id="confirmation" type="password" name="confirmation" required autocomplete="new-password"
-              [(ngModel)]="confirmation">
+          <div class="mb-3">
+            <label for="confirmation" class="form-label">Confirm new password</label>
+            <input
+              id="confirmation"
+              type="password"
+              name="confirmation"
+              class="form-control"
+              required
+              autocomplete="new-password"
+              [(ngModel)]="confirmation"
+            />
+            @if (password() && confirmation() && !matches()) {
+              <div class="form-text text-danger">The two new passwords do not match.</div>
+            }
           </div>
-          <button type="submit" class="btn btn-success" [disabled]="changeForm.invalid || !matches() || busy()">
+          <button type="submit" class="btn btn-primary" [disabled]="changeForm.invalid || !matches() || busy()">
             Change password
           </button>
         </form>
-        <p class="small">At least 8 characters. Other devices signed in to this account will be signed out.</p>
-        @if (password() && confirmation() && !matches()) {
-          <p class="small text-danger">The two new passwords do not match.</p>
-        }
-      } @else {
-        <p class="help-text">Please <a routerLink="/signin">sign in</a> to change your password.</p>
-      }
-    </section>
+      </section>
+
+      <section class="auth-text">
+        <h2>Delete your account</h2>
+        <p>
+          This removes your account and everything you saved: recipes, materials, additives, notes, firing logs and
+          advice. It cannot be undone.
+        </p>
+        <form #deleteForm="ngForm" (ngSubmit)="deleteAccount()" class="account-form">
+          <div class="mb-3">
+            <label for="delete-password" class="form-label">Your password, to confirm</label>
+            <input
+              id="delete-password"
+              type="password"
+              name="deletePassword"
+              class="form-control"
+              required
+              autocomplete="current-password"
+              [(ngModel)]="deletePassword"
+            />
+          </div>
+          <button type="submit" class="btn btn-outline-danger" [disabled]="deleteForm.invalid || busy()">
+            Delete my account
+          </button>
+        </form>
+      </section>
+    }
+  `,
+  styles: `
+    .account-form {
+      max-width: 26rem;
+    }
   `
 })
 export class AccountPage {
   protected readonly auth = inject(AuthService);
+  private readonly router = inject(Router);
 
   protected readonly notices = new Notices();
   protected readonly current = signal('');
   protected readonly password = signal('');
   protected readonly confirmation = signal('');
+  protected readonly deletePassword = signal('');
   protected readonly matches = computed(() => this.password() === this.confirmation());
   protected readonly busy = signal(false);
 
@@ -70,6 +138,20 @@ export class AccountPage {
       this.notices.error(errorMessage(err, 'Error: could not change the password. Please try again.'));
     } finally {
       this.busy.set(false);
+    }
+  }
+
+  protected async deleteAccount(): Promise<void> {
+    if (this.busy()) return;
+    this.busy.set(true);
+    try {
+      await this.auth.deleteAccount(this.deletePassword());
+      await this.router.navigateByUrl('/');
+    } catch (err) {
+      this.notices.error(errorMessage(err, 'Error: could not delete the account. Please try again.'));
+    } finally {
+      this.busy.set(false);
+      this.deletePassword.set('');
     }
   }
 }

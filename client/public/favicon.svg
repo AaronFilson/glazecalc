@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Looking into a kiln through its peephole: the favicon of the 2017 version, redrawn. -->
+  <defs>
+    <radialGradient id="fire" cx="32" cy="31" r="22" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff6c2"/>
+      <stop offset="0.35" stop-color="#ffd84a"/>
+      <stop offset="0.65" stop-color="#fbb024"/>
+      <stop offset="0.82" stop-color="#e2711a"/>
+      <stop offset="0.93" stop-color="#7a2a0e"/>
+      <stop offset="1" stop-color="#1a0b05" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" rx="10" fill="#0d0806"/>
+  <circle cx="32" cy="31" r="22" fill="url(#fire)"/>
+</svg>

@@ -11,10 +11,19 @@ describe('MaterialPage', () => {
     const fixture = TestBed.createComponent(MaterialPage);
     await fixture.whenStable();
     answer('/materials/getAll', mine);
-    answer('/materials/getStandard', [{
-      _id: 's1', name: 'Whiting', percentmole: 'molecular', loi: 43.97, equivalent: 100.08, formulaweight: 56.08,
-      notes: ['Calcium carbonate'], rawformula: 'CaCO₃', fields: [{ name: 'CaO', amount: '1' }]
-    }]);
+    answer('/materials/getStandard', [
+      {
+        _id: 's1',
+        name: 'Whiting',
+        percentmole: 'molecular',
+        loi: 43.97,
+        equivalent: 100.08,
+        formulaweight: 56.08,
+        notes: ['Calcium carbonate'],
+        rawformula: 'CaCO₃',
+        fields: [{ name: 'CaO', amount: '1' }]
+      }
+    ]);
     await settle(fixture);
     const page = fixture.componentInstance as unknown as Record<string, any>;
     return { fixture, page };
@@ -23,7 +32,10 @@ describe('MaterialPage', () => {
   const enterTalc = (page: Record<string, any>) => {
     page['name'].set('My Talc');
     page['loi'].set('4.75');
-    for (const [oxide, amount] of [['MgO', '3'], ['SiO2', '4']]) {
+    for (const [oxide, amount] of [
+      ['MgO', '3'],
+      ['SiO2', '4']
+    ]) {
       page['selectedOxide'].set(oxide);
       page['addOxide']();
       const lines = page['formula']();
@@ -33,7 +45,9 @@ describe('MaterialPage', () => {
 
   it('lists the standard materials', async () => {
     const { fixture } = await create();
-    const cells = [...fixture.nativeElement.querySelectorAll('table tr:nth-child(2) td')].map((td: Element) => td.textContent?.trim());
+    const cells = [...fixture.nativeElement.querySelectorAll('table tr:nth-child(2) td')].map((td: Element) =>
+      td.textContent?.trim()
+    );
     expect(cells).toEqual(['Whiting', '100.08', '56.08', 'Calcium carbonate', 'CaO : 1', 'CaCO₃']);
   });
 
@@ -97,12 +111,20 @@ describe('MaterialPage', () => {
     page['addOxide']();
     page['formula']()[0].amount = '50';
     void page['save']();
-    httpMock().expectOne(API + '/materials/create').flush({});
+    httpMock()
+      .expectOne(API + '/materials/create')
+      .flush({});
     expect(page['notices'].errors()[0]).toContain('Warning: Analysis of Short spar totals 50.00%');
   });
 
   it('removes an oxide line and a saved material', async () => {
-    const mine: Material = { _id: 'm1', name: 'Mine', percentmole: 'molecular', loi: 0, fields: [{ name: 'CaO', amount: 1 }] };
+    const mine: Material = {
+      _id: 'm1',
+      name: 'Mine',
+      percentmole: 'molecular',
+      loi: 0,
+      fields: [{ name: 'CaO', amount: 1 }]
+    };
     const { fixture, page } = await create([mine]);
     page['selectedOxide'].set('CaO');
     page['addOxide']();
@@ -110,7 +132,9 @@ describe('MaterialPage', () => {
     expect(page['formula']()).toEqual([]);
 
     const removing = page['remove'](mine);
-    httpMock().expectOne({ method: 'DELETE', url: API + '/materials/delete/m1' }).flush({});
+    httpMock()
+      .expectOne({ method: 'DELETE', url: API + '/materials/delete/m1' })
+      .flush({});
     await removing;
     await fixture.whenStable();
     expect(page['myMaterials']()).toEqual([]);

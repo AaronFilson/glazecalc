@@ -20,7 +20,9 @@ export default tseslint.config(
     },
     rules: {
       // Express error handlers need all four parameters even when unused.
-      'no-unused-vars': ['error', { args: 'none', caughtErrors: 'none' }]
+      'no-unused-vars': ['error', { args: 'none', caughtErrors: 'none' }],
+      'no-var': 'error',
+      'prefer-const': 'error'
     }
   },
   {
@@ -31,8 +33,21 @@ export default tseslint.config(
       globals: { ...globals.node }
     }
   },
+  // The API server: TypeScript run by Node as it is (server/tsconfig.json).
   {
-    files: ['server/test/**/*.js'],
+    files: ['server/**/*.ts'],
+    extends: [...tseslint.configs.recommended],
+    languageOptions: {
+      sourceType: 'module',
+      globals: { ...globals.node }
+    },
+    rules: {
+      // Express error handlers need all four parameters even when unused.
+      '@typescript-eslint/no-unused-vars': ['error', { args: 'none', caughtErrors: 'none' }]
+    }
+  },
+  {
+    files: ['server/test/**/*.ts'],
     languageOptions: { globals: { ...globals.mocha } }
   },
   {

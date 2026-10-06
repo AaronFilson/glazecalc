@@ -5,7 +5,7 @@
 //
 //   node scripts/run.mjs dev
 //
-// Production needs only one process: `npm start` runs server.js, which serves
+// Production needs only one process: `npm start` runs server/main.ts, which serves
 // the built client and the API together.
 import { spawn } from 'node:child_process';
 import { createInterface } from 'node:readline';
@@ -21,7 +21,7 @@ const API_PORT = process.env.API_PORT || '4000';
 const MODES = {
   dev: [
     // PORT is set here, so it overrides any PORT in .env (that one is for production).
-    { name: 'api', color: 'cyan', args: ['--watch', envFile, 'server.js'], env: { PORT: API_PORT } },
+    { name: 'api', color: 'cyan', args: ['--watch', envFile, 'server/main.ts'], env: { PORT: API_PORT } },
     { name: 'client', color: 'magenta', args: [ng, 'serve'] }
   ]
 };

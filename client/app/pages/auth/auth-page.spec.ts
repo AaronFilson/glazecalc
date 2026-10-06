@@ -25,7 +25,9 @@ describe('AuthPage', () => {
     page['email'].set('a@b.com');
     page['password'].set('password123');
     const submitting = page['submit']();
-    httpMock().expectOne(API + '/signin').flush({ token: 't', email: 'a@b.com' });
+    httpMock()
+      .expectOne(API + '/signin')
+      .flush({ email: 'a@b.com' });
     await submitting;
     expect(TestBed.inject(AuthService).email()).toBe('a@b.com');
     expect(navigate).toHaveBeenCalledWith('/home');
@@ -36,7 +38,9 @@ describe('AuthPage', () => {
     page['email'].set('a@b.com');
     page['password'].set('nope');
     const submitting = page['submit']();
-    httpMock().expectOne(API + '/signin').flush({ msg: 'incorrect password' }, { status: 401, statusText: 'Unauthorized' });
+    httpMock()
+      .expectOne(API + '/signin')
+      .flush({ msg: 'incorrect password' }, { status: 401, statusText: 'Unauthorized' });
     await submitting;
     await fixture.whenStable();
     expect(text(fixture, '.errors-section')).toContain('incorrect password');
@@ -47,13 +51,15 @@ describe('AuthPage', () => {
   it('shows the confirmation box and creates accounts in sign up mode', async () => {
     const { fixture, page, navigate } = await create('signup');
     expect(fixture.nativeElement.querySelector('#confirmation')).not.toBeNull();
-    expect(text(fixture, 'button[type=submit]')).toBe('Create New User');
+    expect(text(fixture, 'button[type=submit]')).toBe('Create account');
 
     page['email'].set('a@b.com');
     page['password'].set('password123');
     page['confirmation'].set('password123');
     const submitting = page['submit']();
-    httpMock().expectOne(API + '/signup').flush({ token: 't', email: 'a@b.com' });
+    httpMock()
+      .expectOne(API + '/signup')
+      .flush({ email: 'a@b.com' });
     await submitting;
     expect(navigate).toHaveBeenCalledWith('/home');
   });
@@ -75,7 +81,9 @@ describe('AuthPage', () => {
     page['password'].set('password123');
     page['confirmation'].set('password123');
     const submitting = page['submit']();
-    httpMock().expectOne(API + '/signup').error(new ProgressEvent('error'));
+    httpMock()
+      .expectOne(API + '/signup')
+      .error(new ProgressEvent('error'));
     await submitting;
     expect(page['notices'].errors()).toEqual(['Error: could not create the account.']);
   });
@@ -89,6 +97,6 @@ describe('AuthPage hidden fields', () => {
     const fixture = TestBed.createComponent(AuthPage);
     await settle(fixture);
     expect(fixture.nativeElement.querySelector('#confirmation')).toBeNull();
-    expect(text(fixture, 'button[type=submit]')).toBe('Sign In');
+    expect(text(fixture, 'button[type=submit]')).toBe('Sign in');
   });
 });

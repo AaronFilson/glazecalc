@@ -8,7 +8,7 @@ import { Busy } from '../../shared/busy';
 import { Notices, NoticesList } from '../../shared/notices';
 import { optional } from '../../shared/dates';
 import { FIRED_OXIDES, firstOf } from '../../shared/options';
-import { PageNav } from '../../shared/page-nav';
+import { PageHeader } from '../../shared/page-header';
 
 interface FormulaLine {
   name: string;
@@ -19,7 +19,7 @@ const round = (value: number, places: number) => Number(value.toFixed(places));
 
 @Component({
   selector: 'gc-material-page',
-  imports: [FormsModule, NoticesList, PageNav],
+  imports: [FormsModule, NoticesList, PageHeader],
   templateUrl: './material-page.html'
 })
 export class MaterialPage implements OnInit {
@@ -43,14 +43,19 @@ export class MaterialPage implements OnInit {
   protected readonly myMaterials = signal<Material[]>([]);
   protected readonly standardMaterials = signal<Material[]>([]);
   protected readonly sortedMyMaterials = computed(() =>
-    [...this.myMaterials()].sort((a, b) => a.name.localeCompare(b.name)));
+    [...this.myMaterials()].sort((a, b) => a.name.localeCompare(b.name))
+  );
   protected readonly showRemove = signal(false);
 
   ngOnInit(): void {
-    this.materials.getAll().then((list) => this.myMaterials.set(list),
-      () => this.notices.error('There was an error in getting the materials information.'));
-    this.materials.getStandard().then((list) => this.standardMaterials.set(list),
-      () => this.notices.error('There was an error in getting the standard materials information.'));
+    this.materials.getAll().then(
+      (list) => this.myMaterials.set(list),
+      () => this.notices.error('There was an error in getting the materials information.')
+    );
+    this.materials.getStandard().then(
+      (list) => this.standardMaterials.set(list),
+      () => this.notices.error('There was an error in getting the standard materials information.')
+    );
   }
 
   protected addOxide(): void {
@@ -96,7 +101,7 @@ export class MaterialPage implements OnInit {
       return;
     }
     this.notices.warnings(weights.warnings);
-    material.fields.forEach((field) => field.amountUnity = round(weights.unity[field.name] ?? 0, 4));
+    material.fields.forEach((field) => (field.amountUnity = round(weights.unity[field.name] ?? 0, 4)));
     material.equivalent = round(weights.equivalent, 2);
     material.formulaweight = round(weights.firedWeight, 2);
     material.molecularweight = round(weights.molecularWeight, 2);
