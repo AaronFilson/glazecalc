@@ -12,7 +12,7 @@ version in a terminal.
 | Tool | Needed for | Install | Check the version |
 | --- | --- | --- | --- |
 | [Git](https://git-scm.com/) | Cloning the repository | [Downloads](https://git-scm.com/downloads) | `git --version` |
-| [Node.js](https://nodejs.org/) 24 LTS (22.22 or later also works) | Building and running the app | [Download Node.js](https://nodejs.org/en/download) | `node --version` |
+| [Node.js](https://nodejs.org/) 24 LTS (24.15 or later) | Building and running the app | [Download Node.js](https://nodejs.org/en/download) | `node --version` |
 | [npm](https://www.npmjs.com/) 11 (comes with Node.js 24) | Installing packages, running scripts | [Installing npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) | `npm --version` |
 | [MongoDB Community Server](https://www.mongodb.com/products/self-managed/community-edition) 9.0 (4.4 or later works) | The database | [Download MongoDB](https://www.mongodb.com/try/download/community) | `mongod --version` |
 | A modern web browser, such as [Firefox](https://www.mozilla.org/firefox/) or [Chrome](https://www.google.com/chrome/) | Using the app | [Firefox download](https://www.mozilla.org/firefox/new/) | Help → About in the browser |
