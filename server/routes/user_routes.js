@@ -62,6 +62,7 @@ userRouter.put('/usersettings/:id', jwtAuth, selfOrAdmin, jsonParser, (req, res)
   SETTABLE_FIELDS.forEach((field) => {
     if (body[field] !== undefined) changes[field] = body[field];
   });
+  if (!Object.keys(changes).length) return res.status(400).json({ msg: 'Nothing to update' });
   if (changes.email !== undefined) {
     changes.email = email.normalize(changes.email);
     if (!email.isValid(changes.email)) {
@@ -79,7 +80,11 @@ userRouter.put('/usersettings/:id', jwtAuth, selfOrAdmin, jsonParser, (req, res)
         msg: 'User updated'
       });
     });
-  }).catch((err) => handleDBError(err, res));
+  }).catch((err) => {
+    // The unique index catches two accounts racing for the same email.
+    if (err.code === 11000) return res.status(400).json({ msg: 'That email is already in use' });
+    handleDBError(err, res);
+  });
 });
 
 userRouter.delete('/deleteuser/:id', jwtAuth, selfOrAdmin, (req, res) => {

@@ -3,6 +3,7 @@ import { FormsModule } from '@angular/forms';
 import { ApiResourceFactory } from '../../core/api-resource.service';
 import { errorMessage } from '../../core/error-message';
 import { Note } from '../../core/models';
+import { Busy } from '../../shared/busy';
 import { Notices, NoticesList } from '../../shared/notices';
 import { PageNav } from '../../shared/page-nav';
 
@@ -24,7 +25,7 @@ import { PageNav } from '../../shared/page-nav';
           <label for="content">Your Note: </label>
           <textarea id="content" name="content" rows="4" class="form-control" [(ngModel)]="content"></textarea>
         </div>
-        <button type="submit" class="btn btn-primary">Save</button>
+        <button type="submit" class="btn btn-primary" [disabled]="saving.active()">Save</button>
       </form>
     </section>
     <br>
@@ -50,6 +51,7 @@ export class NotesPage implements OnInit {
   private readonly api = inject(ApiResourceFactory).for<Note>('notes');
 
   protected readonly notices = new Notices();
+  protected readonly saving = new Busy();
   protected readonly title = signal('');
   protected readonly content = signal('');
   protected readonly notes = signal<Note[]>([]);
@@ -63,7 +65,11 @@ export class NotesPage implements OnInit {
     }
   }
 
-  protected async save(): Promise<void> {
+  protected save(): Promise<void> {
+    return this.saving.run(() => this.saveNow());
+  }
+
+  private async saveNow(): Promise<void> {
     if (!this.title() || !this.content()) {
       this.notices.error('Error: there was missing info on submit.');
       return;

@@ -3,6 +3,7 @@ import { FormsModule } from '@angular/forms';
 import { ApiResourceFactory } from '../../core/api-resource.service';
 import { errorMessage } from '../../core/error-message';
 import { Advice } from '../../core/models';
+import { Busy } from '../../shared/busy';
 import { Notices, NoticesList } from '../../shared/notices';
 import { PageNav } from '../../shared/page-nav';
 
@@ -31,7 +32,7 @@ import { PageNav } from '../../shared/page-nav';
           <label for="advice-content" class="boxlabel">Advice Content: </label>
           <textarea id="advice-content" name="content" rows="4" class="form-control" [(ngModel)]="content"></textarea>
         </div>
-        <button type="submit" class="btn btn-primary">Save</button>
+        <button type="submit" class="btn btn-primary" [disabled]="saving.active()">Save</button>
       </form>
     </section>
     <br>
@@ -69,6 +70,7 @@ export class AdvicePage implements OnInit {
   private readonly advice = inject(ApiResourceFactory).for<Advice>('advice');
 
   protected readonly notices = new Notices();
+  protected readonly saving = new Busy();
   protected readonly title = signal('');
   protected readonly tags = signal('');
   protected readonly content = signal('');
@@ -83,7 +85,11 @@ export class AdvicePage implements OnInit {
       () => this.notices.error('There was an error in getting the server advice information.'));
   }
 
-  protected async save(): Promise<void> {
+  protected save(): Promise<void> {
+    return this.saving.run(() => this.saveNow());
+  }
+
+  private async saveNow(): Promise<void> {
     if (!this.title() || !this.content()) {
       this.notices.error('Error: there was missing information in the form.');
       return;

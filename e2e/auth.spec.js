@@ -57,9 +57,11 @@ test('refuses a second account with the same email', async ({ page, request }) =
   await expect(page.locator('.errors-section')).toContainText('already exists');
 });
 
-test('warns on app pages when not signed in', async ({ page }) => {
-  await page.goto('/#/recipe');
+test('warns on the home page when not signed in, and sends data pages to sign in', async ({ page }) => {
+  await page.goto('/#/home');
   await expect(page.locator('header.header-text')).toContainText('not signed in');
+  await page.goto('/#/recipe');
+  await expect(page).toHaveURL(/#\/signin$/);
 });
 
 test('sends unknown routes to the not-found page', async ({ page }) => {

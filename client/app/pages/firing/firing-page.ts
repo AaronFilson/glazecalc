@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { ApiResourceFactory } from '../../core/api-resource.service';
 import { errorMessage } from '../../core/error-message';
 import { Firing } from '../../core/models';
+import { Busy } from '../../shared/busy';
 import { Notices, NoticesList } from '../../shared/notices';
 import { localDate, optional } from '../../shared/dates';
 import { FIRING_FIELDS, firstOf } from '../../shared/options';
@@ -21,6 +22,7 @@ export class FiringPage implements OnInit {
   protected readonly fieldOptions = FIRING_FIELDS;
   protected readonly firstOf = firstOf;
   protected readonly notices = new Notices();
+  protected readonly saving = new Busy();
 
   protected readonly title = signal('');
   protected readonly kiln = signal('');
@@ -70,7 +72,11 @@ export class FiringPage implements OnInit {
     this.log().rows[row][column] = value;
   }
 
-  protected async save(): Promise<void> {
+  protected save(): Promise<void> {
+    return this.saving.run(() => this.saveNow());
+  }
+
+  private async saveNow(): Promise<void> {
     const log = this.log();
     if (!this.title() || !log.fields.length) {
       this.notices.error('Error: enter a title and at least one field.');

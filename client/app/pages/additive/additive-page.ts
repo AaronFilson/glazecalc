@@ -3,6 +3,7 @@ import { FormsModule } from '@angular/forms';
 import { ApiResourceFactory } from '../../core/api-resource.service';
 import { errorMessage } from '../../core/error-message';
 import { Additive } from '../../core/models';
+import { Busy } from '../../shared/busy';
 import { Notices, NoticesList } from '../../shared/notices';
 import { optional } from '../../shared/dates';
 import { ADDITIVE_COMPONENTS, ELEMENTS, firstOf } from '../../shared/options';
@@ -25,6 +26,7 @@ export class AdditivePage implements OnInit {
   protected readonly elements = ELEMENTS;
   protected readonly firstOf = firstOf;
   protected readonly notices = new Notices();
+  protected readonly saving = new Busy();
 
   protected readonly name = signal('');
   protected readonly rawformula = signal('');
@@ -57,7 +59,11 @@ export class AdditivePage implements OnInit {
     this.formula.update((lines) => lines.filter((_, i) => i !== index));
   }
 
-  protected async save(): Promise<void> {
+  protected save(): Promise<void> {
+    return this.saving.run(() => this.saveNow());
+  }
+
+  private async saveNow(): Promise<void> {
     if (!this.name() || !this.formula().length) {
       this.notices.error('Error: enter a name and at least one component or element.');
       return;

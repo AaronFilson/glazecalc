@@ -5,6 +5,7 @@ import { calculateUMF } from '../../../../lib/chemistry';
 import { ApiResourceFactory } from '../../core/api-resource.service';
 import { errorMessage } from '../../core/error-message';
 import { Additive, Material, Recipe, RecipeAnalysis, RecipeMaterial } from '../../core/models';
+import { Busy } from '../../shared/busy';
 import { Notices, NoticesList } from '../../shared/notices';
 import { localDate } from '../../shared/dates';
 import { firstOf } from '../../shared/options';
@@ -31,6 +32,7 @@ export class RecipePage implements OnInit {
   private readonly additives = this.resources.for<Additive>('additives');
 
   protected readonly notices = new Notices();
+  protected readonly saving = new Busy();
   protected readonly savedAnalysis = savedAnalysis;
   protected readonly firstOf = firstOf;
 
@@ -68,10 +70,17 @@ export class RecipePage implements OnInit {
       return;
     }
     this.recipeMaterials.update((list) => [...list, copy(material)]);
+    this.recipeChanged();
   }
 
   protected removeMaterial(index: number): void {
     this.recipeMaterials.update((list) => list.filter((_, i) => i !== index));
+    this.recipeChanged();
+  }
+
+  /** A shown unity formula no longer matches once the materials or amounts change. */
+  protected recipeChanged(): void {
+    this.computed.set(null);
   }
 
   protected addAdditive(additive: Additive | null): void {
@@ -90,19 +99,24 @@ export class RecipePage implements OnInit {
   protected compute(): RecipeAnalysis | null {
     try {
       const result = calculateUMF(this.recipeMaterials().map((material) => ({ material, amount: material.amount })));
-      result.warnings.forEach((warning) => this.notices.error('Warning: ' + warning));
+      this.notices.warnings(result.warnings);
       // uList is the key saved recipes and older versions of the app use.
       const analysis: RecipeAnalysis = { ...result, uList: result.umf };
       this.computed.set(analysis);
       return analysis;
     } catch (e) {
+      this.notices.warnings([]);
       this.notices.error('Error: ' + (e as Error).message);
       this.computed.set(null);
       return null;
     }
   }
 
-  protected async save(): Promise<void> {
+  protected save(): Promise<void> {
+    return this.saving.run(() => this.saveNow());
+  }
+
+  private async saveNow(): Promise<void> {
     if (!this.title() || !this.recipeMaterials().length) {
       this.notices.error('Error: there was missing info.');
       return;

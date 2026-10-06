@@ -41,8 +41,22 @@ test.describe('home and navigation', () => {
     await page.goto('/#/notes');
     await page.locator('header.header-text').getByRole('link', { name: 'Home' }).click();
     await expect(page).toHaveURL(/#\/home$/);
+    // Signed in, the site's root address goes home.
     await page.goto('/');
-    await expect(page).toHaveURL(/#\/signin$/);
+    await expect(page).toHaveURL(/#\/home$/);
+  });
+
+  test('signed-out visitors to a data page go to sign in, without errors', async ({ browser }) => {
+    const visitor = await browser.newPage();
+    const problems = [];
+    visitor.on('response', (r) => r.status() >= 400 && problems.push(r.status() + ' ' + r.url()));
+    await visitor.goto('/#/recipe');
+    await expect(visitor).toHaveURL(/#\/signin$/);
+    await expect(visitor.locator('.errors-section')).toHaveCount(0);
+    await visitor.goto('/');
+    await expect(visitor).toHaveURL(/#\/signin$/);
+    expect(problems).toEqual([]);
+    await visitor.close();
   });
 
   test('the trash page explains that trash is not available yet', async ({ page }) => {

@@ -9,6 +9,14 @@ export class Notices {
     this.errors.update((list) => [...list, text]);
   }
 
+  /** Shows a calculation's warnings in place of the previous calculation's. */
+  warnings(list: readonly string[]): void {
+    this.errors.update((errors) => [
+      ...errors.filter((text) => !text.startsWith('Warning: ')),
+      ...list.map((warning) => 'Warning: ' + warning)
+    ]);
+  }
+
   success(text: string): void {
     this.messages.update((list) => [...list, text]);
   }

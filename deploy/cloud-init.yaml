@@ -32,6 +32,14 @@ write_files:
       APT::Periodic::Update-Package-Lists "1";
       APT::Periodic::Unattended-Upgrade "1";
 
+  # Kernel and similar updates only take effect after a reboot. When one needs
+  # it, reboot at 11:30 UTC: after the 10:00 snapshot and the 10:30 (+20 min)
+  # backup. glazecalc.service brings the app back; about a minute of downtime.
+  - path: /etc/apt/apt.conf.d/52glazecalc-reboot
+    content: |
+      Unattended-Upgrade::Automatic-Reboot "true";
+      Unattended-Upgrade::Automatic-Reboot-Time "11:30";
+
   # Docker's "local" log driver rotates container logs by itself.
   - path: /etc/docker/daemon.json
     content: |

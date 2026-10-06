@@ -4,6 +4,7 @@ import { materialWeights } from '../../../../lib/chemistry';
 import { ApiResourceFactory } from '../../core/api-resource.service';
 import { errorMessage } from '../../core/error-message';
 import { Material } from '../../core/models';
+import { Busy } from '../../shared/busy';
 import { Notices, NoticesList } from '../../shared/notices';
 import { optional } from '../../shared/dates';
 import { FIRED_OXIDES, firstOf } from '../../shared/options';
@@ -27,6 +28,7 @@ export class MaterialPage implements OnInit {
   protected readonly oxides = FIRED_OXIDES;
   protected readonly firstOf = firstOf;
   protected readonly notices = new Notices();
+  protected readonly saving = new Busy();
 
   protected readonly name = signal('');
   protected readonly rawformula = signal('');
@@ -64,7 +66,11 @@ export class MaterialPage implements OnInit {
     this.formula.update((lines) => lines.filter((_, i) => i !== index));
   }
 
-  protected async save(): Promise<void> {
+  protected save(): Promise<void> {
+    return this.saving.run(() => this.saveNow());
+  }
+
+  private async saveNow(): Promise<void> {
     if (!this.name() || !this.formula().length) {
       this.notices.error('Error: enter a name and at least one oxide.');
       return;
@@ -89,7 +95,7 @@ export class MaterialPage implements OnInit {
       this.notices.error('Error: ' + (e as Error).message);
       return;
     }
-    weights.warnings.forEach((warning) => this.notices.error('Warning: ' + warning));
+    this.notices.warnings(weights.warnings);
     material.fields.forEach((field) => field.amountUnity = round(weights.unity[field.name] ?? 0, 4));
     material.equivalent = round(weights.equivalent, 2);
     material.formulaweight = round(weights.firedWeight, 2);
