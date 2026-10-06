@@ -184,7 +184,7 @@
     <div class="recipe-save">
       <button type="button" class="btn btn-primary" [disabled]="saving.active()" (click)="save()">Save</button>
       <button type="button" class="btn btn-light border" [disabled]="saving.active()" (click)="saveAndNext()">
-        Save and add next
+        Save and add next recipe
       </button>
       @if (savedId()) {
         <button type="button" class="btn btn-light border" [disabled]="saving.active()" (click)="saveAsCopy()">
@@ -247,6 +247,12 @@
                 {{ expanded().has(rec._id ?? '') ? 'Hide' : 'Expand to View' }}
               </button>
             </span>
+            <gc-remove-button
+              [name]="rec.title"
+              [note]="rec._id === savedId() ? 'It stays open above, as a recipe not saved yet.' : ''"
+              [busy]="removal.isPending(rec)"
+              (confirmed)="remove(rec)"
+            />
           </div>
           @if (expanded().has(rec._id ?? '')) {
             <div>
@@ -274,14 +280,10 @@
               <div>Notes: {{ firstOf(rec.notes) }}</div>
             </div>
           }
-          @if (showRemove()) {
-            <button type="button" class="btn btn-warning" (click)="remove(rec)">Remove from the server</button>
-          }
         </li>
       }
     </ul>
   } @else {
     <p class="muted">None yet. Saved recipes appear here.</p>
   }
-  <button type="button" class="btn btn-light border" (click)="showRemove.set(!showRemove())">Remove toggle</button>
 </section>

@@ -748,8 +748,14 @@ button.library-item:focus-visible {
 
 .saved-recipe-actions {
   display: inline-flex;
+  align-items: center;
   gap: 0.4rem;
   margin-left: auto;
+}
+
+// The Remove question takes a line of its own, under the record's buttons.
+.saved-recipe-top > gc-remove-button.asking {
+  flex-basis: 100%;
 }
 
 .saved-open-mark {

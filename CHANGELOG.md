@@ -15,12 +15,22 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   - Each material shows its share of the batch, with the total under the list.
   - Change the scale: to percent, to the smallest whole parts (3 flint, 2 dolomite, with exact
     amounts kept for the rest), or to the grams of a batch.
-  - Save keeps the recipe on the page and saving again updates it; "Save and add next" starts a
+  - Save keeps the recipe on the page and saving again updates it; "Save and add next recipe" starts a
     new one; "Save as a copy" keeps the original; Open brings a saved recipe back to change it,
     asking first if there are changes not saved.
   - Instructions at the top of the page, which can be hidden; the browser remembers, and a link
     brings them back.
 - On a phone, visitors can sign in from the header without opening the menu.
+- **Removing a saved record** (a recipe, material, additive, firing log, note or advice) works
+  the same on every list. Each record has its own Remove button, which asks first, in place,
+  and says what else changes. The question starts on Cancel, Escape closes it, and once the
+  record is gone the focus moves to the next one. This replaces a toggle at the bottom of each
+  list that showed a button on every record and removed with one click. The messages name the
+  record: Removed "Celadon".
+
+### Fixed
+
+- The tables of materials and additives styled the text inside each cell as a cell of its own.
 
 ### Removed
 

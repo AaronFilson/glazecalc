@@ -85,25 +85,33 @@
   <section class="tech-info" aria-labelledby="my-additives-heading">
     <h4 id="my-additives-heading">My server additives / colorants:</h4>
     <table class="table table-bordered">
-      <tr>
-        <th>Name</th>
-        <th>Notes</th>
-        <th>Elements</th>
-      </tr>
-      @for (add of myAdditives(); track add._id) {
+      <thead>
         <tr>
-          <td>
-            {{ add.name }}
-            @if (showRemove()) {
-              <div><button type="button" class="btn btn-warning" (click)="remove(add)">Remove from server</button></div>
-            }
-          </td>
-          <td>{{ firstOf(add.notes) }}</td>
-          <td>{{ fieldsText(add) }}</td>
+          <th>Name</th>
+          <th>Notes</th>
+          <th>Elements</th>
         </tr>
-      }
+      </thead>
+      <tbody>
+        @for (add of myAdditives(); track add._id) {
+          <tr>
+            <td>
+              {{ add.name }}
+              <div>
+                <gc-remove-button
+                  [name]="removal.nameOf(add)"
+                  note="Saved recipes keep their own copy, so they won't change."
+                  [busy]="removal.isPending(add)"
+                  (confirmed)="removal.remove(add)"
+                />
+              </div>
+            </td>
+            <td>{{ firstOf(add.notes) }}</td>
+            <td>{{ fieldsText(add) }}</td>
+          </tr>
+        }
+      </tbody>
     </table>
-    <button type="button" class="btn btn-light border" (click)="showRemove.set(!showRemove())">Remove toggle</button>
   </section>
   <br />
 }
@@ -111,17 +119,21 @@
 <section class="tech-info" aria-labelledby="standard-additives-heading">
   <h4 id="standard-additives-heading">The standard server additives:</h4>
   <table class="table table-bordered">
-    <tr>
-      <th>Name</th>
-      <th>Notes</th>
-      <th>Elements</th>
-    </tr>
-    @for (add of standardAdditives(); track add._id) {
+    <thead>
       <tr>
-        <td>{{ add.name }}</td>
-        <td>{{ firstOf(add.notes) }}</td>
-        <td>{{ fieldsText(add) }}</td>
+        <th>Name</th>
+        <th>Notes</th>
+        <th>Elements</th>
       </tr>
-    }
+    </thead>
+    <tbody>
+      @for (add of standardAdditives(); track add._id) {
+        <tr>
+          <td>{{ add.name }}</td>
+          <td>{{ firstOf(add.notes) }}</td>
+          <td>{{ fieldsText(add) }}</td>
+        </tr>
+      }
+    </tbody>
   </table>
 </section>

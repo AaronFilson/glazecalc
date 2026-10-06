@@ -137,9 +137,10 @@ test.describe('additives', () => {
 
     await page.reload();
     await expect(row).toBeVisible();
-    await mine.getByRole('button', { name: 'Remove toggle' }).click();
-    await row.getByRole('button', { name: 'Remove from server' }).click();
-    await expect(messages(page)).toContainText('removing the additive');
+    await row.getByRole('button', { name: 'Remove Blue stain' }).click();
+    await expect(row).toContainText("Saved recipes keep their own copy, so they won't change.");
+    await row.getByRole('button', { name: 'Yes, remove' }).click();
+    await expect(messages(page)).toContainText('Removed "Blue stain".');
     await expect(page.locator('section', { hasText: 'My server additives / colorants:' })).toHaveCount(0);
   });
 
@@ -171,8 +172,9 @@ test.describe('advice', () => {
     await page.reload();
     const mine = page.locator('.my-advice li', { hasText: 'Wax resist' });
     await expect(mine).toBeVisible();
-    await page.getByRole('button', { name: 'Toggle Remove Button' }).click();
-    await mine.getByRole('button', { name: 'Remove' }).click();
+    await mine.getByRole('button', { name: 'Remove Wax resist' }).click();
+    await mine.getByRole('button', { name: 'Yes, remove' }).click();
+    await expect(messages(page)).toContainText('Removed "Wax resist".');
     await expect(mine).toHaveCount(0);
     await expect(page.locator('.my-advice')).toContainText('Nothing saved yet.');
   });
@@ -197,9 +199,9 @@ test.describe('notes', () => {
     await page.reload();
     const note = page.locator('.my-notes li', { hasText: 'Kiln' });
     await expect(note).toContainText('Element 3 needs replacing.');
-    await page.getByRole('button', { name: 'Toggle Remove button' }).click();
-    await note.getByRole('button', { name: 'Remove' }).click();
-    await expect(messages(page)).toContainText('removing the note');
+    await note.getByRole('button', { name: 'Remove Kiln' }).click();
+    await note.getByRole('button', { name: 'Yes, remove' }).click();
+    await expect(messages(page)).toContainText('Removed "Kiln".');
     await expect(page.locator('.my-notes li')).toHaveCount(0);
   });
 
@@ -264,9 +266,9 @@ test.describe('firing log', () => {
     await expect(stored.locator('th')).toHaveText(['Cone', 'Time', 'Temperature F']);
     await expect(stored.locator('td')).toHaveText(['06', '9:30', '1830']);
 
-    await page.getByRole('button', { name: 'Remove toggle button' }).click();
-    await stored.getByRole('button', { name: 'Remove' }).click();
-    await expect(messages(page)).toContainText('removing the firing');
+    await stored.getByRole('button', { name: 'Remove Cone 10 reduction' }).click();
+    await stored.getByRole('button', { name: 'Yes, remove' }).click();
+    await expect(messages(page)).toContainText('Removed "Cone 10 reduction".');
     await expect(page.locator('.stored-firing')).toHaveCount(0);
   });
 

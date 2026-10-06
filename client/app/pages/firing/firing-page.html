@@ -112,14 +112,15 @@
             }
           </table>
           Notes: {{ firstOf(fr.notes) }}
-          @if (showRemove()) {
-            <p><button type="button" class="btn btn-warning" (click)="remove(fr)">Remove</button></p>
-          }
+          <div class="stored-firing-remove">
+            <gc-remove-button
+              [name]="removal.nameOf(fr)"
+              [busy]="removal.isPending(fr)"
+              (confirmed)="removal.remove(fr)"
+            />
+          </div>
         </li>
       }
     </ul>
-    <button type="button" class="btn btn-light border" (click)="showRemove.set(!showRemove())">
-      Remove toggle button
-    </button>
   </section>
 }

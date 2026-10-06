@@ -99,7 +99,7 @@ const readHidden = (): boolean => {
                 <b>Save</b> keeps the recipe here and adds it to My saved recipes. Saving again updates that same
                 recipe.
               </li>
-              <li><b>Save and add next</b> saves, then clears the page for the next recipe.</li>
+              <li><b>Save and add next recipe</b> saves, then clears the page for the next one.</li>
               <li>
                 <b>Save as a copy</b> saves your changes as a new recipe and leaves the original as it was: good for
                 variations on a recipe.

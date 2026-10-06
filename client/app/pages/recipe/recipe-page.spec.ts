@@ -208,7 +208,7 @@ describe('RecipePage', () => {
     expect(page['notices'].messages()).toEqual(['Saved "Matte".']);
   });
 
-  it('"Save and add next" saves, then clears the page for the next recipe', async () => {
+  it('"Save and add next recipe" saves, then clears the page for the next recipe', async () => {
     const { page } = await create();
     page['title'].set('First');
     fill(page, [[WHITING, '10']]);
@@ -351,9 +351,13 @@ describe('RecipePage', () => {
     const saved: Recipe = { _id: 'r1', title: 'Gone', materials: [{ ...WHITING, amount: '10' }] };
     const { fixture, page } = await create([saved]);
     page['open'](saved);
-    click(fixture, 'Remove toggle');
     await fixture.whenStable();
-    click(fixture, 'Remove from the server');
+    click(fixture, 'Remove');
+    await fixture.whenStable();
+    expect(text(fixture, '.remove-confirm')).toContain(
+      'Remove "Gone"? It stays open above, as a recipe not saved yet.'
+    );
+    click(fixture, 'Yes, remove');
     httpMock()
       .expectOne({ method: 'DELETE', url: API + '/recipe/delete/r1' })
       .flush({});
@@ -361,6 +365,7 @@ describe('RecipePage', () => {
     expect(page['myRecipes']()).toEqual([]);
     expect(page['title']()).toBe('Gone');
     expect(page['status']()).toBe('Not saved yet');
+    expect(page['notices'].messages()).toEqual(['Removed "Gone".']);
   });
 
   it('reports lists that fail to load', async () => {

@@ -106,11 +106,12 @@ describe('FiringPage', () => {
     page['removeField'](0);
     expect(page['log']().rows).toEqual([]);
 
-    const removing = page['remove'](stored);
+    const removing = page['removal'].remove(stored);
     httpMock()
       .expectOne({ method: 'DELETE', url: API + '/firing/delete/f1' })
       .flush({});
     await removing;
     expect(page['myFirings']()).toEqual([]);
+    expect(page['notices'].messages()).toEqual(['Removed "Old".']);
   });
 });

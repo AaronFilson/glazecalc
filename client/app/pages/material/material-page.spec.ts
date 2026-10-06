@@ -45,7 +45,7 @@ describe('MaterialPage', () => {
 
   it('lists the standard materials', async () => {
     const { fixture } = await create();
-    const cells = [...fixture.nativeElement.querySelectorAll('table tr:nth-child(2) td')].map((td: Element) =>
+    const cells = [...fixture.nativeElement.querySelectorAll('table tbody tr:first-child td')].map((td: Element) =>
       td.textContent?.trim()
     );
     expect(cells).toEqual(['Whiting', '100.08', '56.08', 'Calcium carbonate', 'CaO : 1', 'CaCO₃']);
@@ -131,12 +131,13 @@ describe('MaterialPage', () => {
     page['removeOxide'](0);
     expect(page['formula']()).toEqual([]);
 
-    const removing = page['remove'](mine);
+    const removing = page['removal'].remove(mine);
     httpMock()
       .expectOne({ method: 'DELETE', url: API + '/materials/delete/m1' })
       .flush({});
     await removing;
     await fixture.whenStable();
     expect(page['myMaterials']()).toEqual([]);
+    expect(page['notices'].messages()).toEqual(['Removed "' + mine.name + '".']);
   });
 });

@@ -117,6 +117,47 @@
   <section class="tech-info" aria-labelledby="my-materials-heading">
     <h4 id="my-materials-heading">My server materials:</h4>
     <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Equivalent Weight</th>
+          <th>Fired Weight</th>
+          <th>Notes</th>
+          <th>Elements</th>
+          <th>Raw Formula</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (mat of sortedMyMaterials(); track mat._id) {
+          <tr>
+            <td>
+              <b>{{ mat.name }}</b>
+              <div>
+                <gc-remove-button
+                  [name]="removal.nameOf(mat)"
+                  note="Saved recipes keep their own copy, so they won't change."
+                  [busy]="removal.isPending(mat)"
+                  (confirmed)="removal.remove(mat)"
+                />
+              </div>
+            </td>
+            <td>{{ mat.equivalent }}</td>
+            <td>{{ mat.formulaweight }}</td>
+            <td>{{ firstOf(mat.notes) }}</td>
+            <td>{{ fieldsText(mat) }}</td>
+            <td>{{ mat.rawformula }}</td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  </section>
+  <br />
+}
+
+<section class="tech-info" aria-labelledby="standard-materials-heading">
+  <h4 id="standard-materials-heading">The standard materials:</h4>
+  <table class="table table-bordered">
+    <thead>
       <tr>
         <th>Name</th>
         <th>Equivalent Weight</th>
@@ -125,16 +166,11 @@
         <th>Elements</th>
         <th>Raw Formula</th>
       </tr>
-      @for (mat of sortedMyMaterials(); track mat._id) {
+    </thead>
+    <tbody>
+      @for (mat of standardMaterials(); track mat._id) {
         <tr>
-          <td>
-            <b>{{ mat.name }}</b>
-            @if (showRemove()) {
-              <div>
-                <button type="button" class="btn btn-warning" (click)="remove(mat)">Remove from server</button>
-              </div>
-            }
-          </td>
+          <td>{{ mat.name }}</td>
           <td>{{ mat.equivalent }}</td>
           <td>{{ mat.formulaweight }}</td>
           <td>{{ firstOf(mat.notes) }}</td>
@@ -142,32 +178,6 @@
           <td>{{ mat.rawformula }}</td>
         </tr>
       }
-    </table>
-    <button type="button" class="btn btn-light border" (click)="showRemove.set(!showRemove())">Remove toggle</button>
-  </section>
-  <br />
-}
-
-<section class="tech-info" aria-labelledby="standard-materials-heading">
-  <h4 id="standard-materials-heading">The standard materials:</h4>
-  <table class="table table-bordered">
-    <tr>
-      <th>Name</th>
-      <th>Equivalent Weight</th>
-      <th>Fired Weight</th>
-      <th>Notes</th>
-      <th>Elements</th>
-      <th>Raw Formula</th>
-    </tr>
-    @for (mat of standardMaterials(); track mat._id) {
-      <tr>
-        <td>{{ mat.name }}</td>
-        <td>{{ mat.equivalent }}</td>
-        <td>{{ mat.formulaweight }}</td>
-        <td>{{ firstOf(mat.notes) }}</td>
-        <td>{{ fieldsText(mat) }}</td>
-        <td>{{ mat.rawformula }}</td>
-      </tr>
-    }
+    </tbody>
   </table>
 </section>

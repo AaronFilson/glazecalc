@@ -79,11 +79,11 @@ test('saves a recipe, keeps it open, and saves changes to the same recipe', asyn
   await expect(unity(page)).toContainText('K₂O');
 });
 
-test('"Save and add next" starts a fresh recipe; "Save as a copy" keeps the original', async ({ page }) => {
+test('"Save and add next recipe" starts a fresh one; "Save as a copy" keeps the original', async ({ page }) => {
   await page.locator('#recipe-name').fill('First');
   await addStandardMaterial(page, 'Whiting', 20);
   await addStandardMaterial(page, 'Silica', 30);
-  await save(page, 'Save and add next');
+  await save(page, 'Save and add next recipe');
   await expect(page.locator('.server-msg')).toContainText('Saved "First". Ready for the next recipe.');
   await expect(page.locator('#recipe-name')).toHaveValue('');
   await expect(page.locator('#recipe-name')).toBeFocused();
@@ -182,13 +182,15 @@ test('removes a material from the recipe and a saved recipe from the list', asyn
   await save(page);
   await expect(saved(page).locator('.saved-recipe', { hasText: 'Short lived' })).toBeVisible();
 
-  await page.getByRole('button', { name: 'Remove toggle' }).click();
-  await saved(page)
-    .locator('.saved-recipe', { hasText: 'Short lived' })
-    .getByRole('button', { name: 'Remove from the server' })
-    .click();
-  await expect(page.locator('.server-msg')).toContainText('removing the recipe');
-  await expect(saved(page).locator('.saved-recipe', { hasText: 'Short lived' })).toHaveCount(0);
+  // It is open above, so the question says what happens to it.
+  const entry = saved(page).locator('.saved-recipe', { hasText: 'Short lived' });
+  await entry.getByRole('button', { name: 'Remove Short lived' }).click();
+  await expect(entry).toContainText('It stays open above, as a recipe not saved yet.');
+  await entry.getByRole('button', { name: 'Yes, remove' }).click();
+  await expect(page.locator('.server-msg')).toContainText('Removed "Short lived".');
+  await expect(entry).toHaveCount(0);
+  await expect(page.locator('#recipe-name')).toHaveValue('Short lived');
+  await expect(page.locator('.recipe-status')).toHaveText('Not saved yet');
 });
 
 test('says when a recipe has no flux, and will not save it', async ({ page }) => {

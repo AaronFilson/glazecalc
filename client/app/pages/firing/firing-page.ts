@@ -9,11 +9,12 @@ import { Notices, NoticesList } from '../../shared/notices';
 import { localDate, optional } from '../../shared/dates';
 import { FIRING_FIELDS, firstOf } from '../../shared/options';
 import { PageHeader } from '../../shared/page-header';
+import { Removal, RemoveButton } from '../../shared/remove-button';
 import { FiringLog } from './firing-log';
 
 @Component({
   selector: 'gc-firing-page',
-  imports: [DatePipe, FormsModule, NoticesList, PageHeader],
+  imports: [DatePipe, FormsModule, NoticesList, PageHeader, RemoveButton],
   templateUrl: './firing-page.html'
 })
 export class FiringPage implements OnInit {
@@ -32,7 +33,7 @@ export class FiringPage implements OnInit {
   protected readonly log = signal(new FiringLog());
 
   protected readonly myFirings = signal<Firing[]>([]);
-  protected readonly showRemove = signal(false);
+  protected readonly removal = new Removal(this.firings, this.myFirings, this.notices, (firing) => firing.title);
 
   async ngOnInit(): Promise<void> {
     try {
@@ -107,15 +108,5 @@ export class FiringPage implements OnInit {
       edit(next);
       return next;
     });
-  }
-
-  protected async remove(firing: Firing): Promise<void> {
-    try {
-      await this.firings.remove(firing);
-      this.myFirings.update((list) => list.filter((f) => f !== firing));
-      this.notices.success('Success in removing the firing from the server.');
-    } catch {
-      this.notices.error('Error in deleting the firing from the server.');
-    }
   }
 }

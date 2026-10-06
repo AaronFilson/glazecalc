@@ -10,6 +10,7 @@ import { localDate } from '../../shared/dates';
 import { Notices, NoticesList } from '../../shared/notices';
 import { firstOf } from '../../shared/options';
 import { PageHeader } from '../../shared/page-header';
+import { Removal, RemoveButton } from '../../shared/remove-button';
 import { Rebase, amountOf, formatAmount, rebase, totalOf } from './rebase';
 import { RecipeHelp } from './recipe-help';
 import { RecipeLibrary, libraryKey } from './recipe-library';
@@ -53,7 +54,7 @@ type SaveMode = 'save' | 'next' | 'copy';
 
 @Component({
   selector: 'gc-recipe-page',
-  imports: [DatePipe, FormsModule, NoticesList, PageHeader, RecipeHelp, RecipeLibrary, UnityFormula],
+  imports: [DatePipe, FormsModule, NoticesList, PageHeader, RecipeHelp, RecipeLibrary, RemoveButton, UnityFormula],
   templateUrl: './recipe-page.html'
 })
 export class RecipePage implements OnInit {
@@ -82,7 +83,7 @@ export class RecipePage implements OnInit {
   protected readonly standardAdditives = signal<Additive[]>([]);
   protected readonly myRecipes = signal<Recipe[]>([]);
   protected readonly expanded = signal<ReadonlySet<string>>(new Set());
-  protected readonly showRemove = signal(false);
+  protected readonly removal = new Removal(this.recipes, this.myRecipes, this.notices, (recipe) => recipe.title);
 
   // Saving: the saved recipe this is (if any), and whether it has changed since.
   protected readonly savedId = signal<string | null>(null);
@@ -349,17 +350,10 @@ export class RecipePage implements OnInit {
   }
 
   protected async remove(recipe: Recipe): Promise<void> {
-    try {
-      await this.recipes.remove(recipe);
-      this.myRecipes.update((list) => list.filter((r) => r !== recipe));
-      // The recipe on the page stays, but as one not saved yet.
-      if (recipe._id && recipe._id === this.savedId()) {
-        this.savedId.set(null);
-        this.savedSnapshot.set('');
-      }
-      this.notices.success('Success in removing the recipe from the server.');
-    } catch {
-      this.notices.error('Error in deleting the recipe from the server.');
+    // The recipe on the page stays, but as one not saved yet.
+    if ((await this.removal.remove(recipe)) && recipe._id === this.savedId()) {
+      this.savedId.set(null);
+      this.savedSnapshot.set('');
     }
   }
 
