@@ -1,6 +1,6 @@
 import { Component, OnInit, computed, inject, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { materialWeights } from '../../../../lib/chemistry';
+import { formatFormula, materialWeights } from '../../../../lib/chemistry';
 import { ApiResourceFactory } from '../../core/api-resource.service';
 import { errorMessage } from '../../core/error-message';
 import { Material } from '../../core/models';
@@ -27,6 +27,7 @@ export class MaterialPage implements OnInit {
 
   protected readonly oxides = FIRED_OXIDES;
   protected readonly firstOf = firstOf;
+  protected readonly formatFormula = formatFormula;
   protected readonly notices = new Notices();
   protected readonly saving = new Busy();
 
@@ -128,7 +129,7 @@ export class MaterialPage implements OnInit {
   }
 
   protected fieldsText(material: Material): string {
-    return material.fields.map((field) => field.name + ' : ' + field.amount).join('; ');
+    return material.fields.map((field) => formatFormula(field.name) + ' : ' + field.amount).join('; ');
   }
 
   private resetForm(): void {

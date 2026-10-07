@@ -3,7 +3,7 @@ import { By } from '@angular/platform-browser';
 import { testProviders, text } from '../testing/test-providers';
 import { localDate, optional } from './dates';
 import { Notices, NoticesList } from './notices';
-import { ADDITIVE_COMPONENTS, FIRING_FIELDS, firstOf, subscript } from './options';
+import { ADDITIVE_COMPONENTS, FIRING_FIELDS, firstOf } from './options';
 import { PageHeader } from './page-header';
 
 describe('Notices', () => {
@@ -73,11 +73,6 @@ describe('dates', () => {
 });
 
 describe('options', () => {
-  it('writes formula digits as subscripts', () => {
-    expect(subscript('Al2O3')).toBe('Al₂O₃');
-    expect(subscript('CaO')).toBe('CaO');
-  });
-
   it('reads the first entry of list-or-text values', () => {
     expect(firstOf(['a', 'b'])).toBe('a');
     expect(firstOf('note')).toBe('note');

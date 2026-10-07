@@ -39,8 +39,10 @@ export const ADDITIVE_COMPONENTS: Option[] = [
   { value: 'TiO2', label: 'TiO₂ : Titanium dioxide' },
   { value: 'SiO2', label: 'SiO₂ : Silicon dioxide' },
   { value: 'Fe2O3', label: 'Fe₂O₃ : Red Iron oxide' },
-  { value: 'FeO', label: 'FeO : Black Iron oxide' },
-  { value: 'CoO', label: 'CoO : Cobalt oxide' },
+  { value: 'FeO', label: 'FeO : Ferrous oxide' },
+  { value: 'Fe3O4', label: 'Fe₃O₄ : Black iron oxide (magnetite)' },
+  { value: 'CoO', label: 'CoO : Cobalt(II) oxide' },
+  { value: 'Co3O4', label: 'Co₃O₄ : Black cobalt oxide' },
   { value: 'CuO', label: 'CuO : Copper oxide (Cupric oxide)' },
   { value: 'SnO2', label: 'SnO₂ : Tin oxide (Stannic oxide)' },
   { value: 'Cr2O3', label: 'Cr₂O₃ : Chromium oxide' },
@@ -50,7 +52,8 @@ export const ADDITIVE_COMPONENTS: Option[] = [
   { value: 'P2O5', label: 'P₂O₅ : Phosphorus pentoxide' },
   { value: 'H2O', label: 'H₂O : Water' },
   { value: 'PbO', label: 'PbO : Lead oxide' },
-  { value: 'PrO2', label: 'PrO₂ : Praseodymium oxide' },
+  { value: 'Pr6O11', label: 'Pr₆O₁₁ : Praseodymium oxide' },
+  { value: 'PrO2', label: 'PrO₂ : Praseodymium dioxide' },
   { value: 'V2O5', label: 'V₂O₅ : Vanadium pentoxide' }
 ];
 
@@ -149,11 +152,6 @@ export const FIRING_FIELDS: string[] = [
   'Burner 9',
   'Burner 10'
 ];
-
-/** Subscript forms of oxide formulas, for display. */
-export function subscript(formula: string): string {
-  return formula.replace(/\d/g, (digit) => String.fromCharCode(0x2080 + Number(digit)));
-}
 
 /** First entry of a value the server stores as a list but may return as text. */
 export function firstOf(value: string[] | string | undefined): string {

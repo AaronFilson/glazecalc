@@ -6,7 +6,10 @@
 
 <section class="inputbox">
   <h3>Input information on the new additive</h3>
-  <p>Symbols to copy into your additive formula: ₁ ₂ ₃ ₄ ₅ ₆ ₇ ₈ ₉ ₀ •</p>
+  <p>
+    Type a formula with plain numbers, such as CoAl2O4: the counts show as subscripts, CoAl₂O₄. To join the parts of a
+    formula, as in CuCO₃•Cu(OH)₂, copy this dot: <span class="large">•</span>
+  </p>
   <form class="form" (ngSubmit)="save()">
     <div class="row">
       <div class="col-xl-4 col-md-6 mb-3">
@@ -59,7 +62,7 @@
     <ul>
       @for (line of formula(); track $index) {
         <li>
-          <b>{{ line.name }}</b>
+          <b>{{ formatFormula(line.name) }}</b>
           <p>
             <label [for]="'part-amount-' + $index">Amount: </label>
             <input
@@ -87,6 +90,7 @@
     <table class="table table-bordered">
       <tr>
         <th>Name</th>
+        <th>Formula</th>
         <th>Notes</th>
         <th>Elements</th>
       </tr>
@@ -98,6 +102,7 @@
               <div><button type="button" class="btn btn-warning" (click)="remove(add)">Remove from server</button></div>
             }
           </td>
+          <td>{{ formatFormula(add.rawformula) }}</td>
           <td>{{ firstOf(add.notes) }}</td>
           <td>{{ fieldsText(add) }}</td>
         </tr>

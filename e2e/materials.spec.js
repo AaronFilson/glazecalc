@@ -1,4 +1,5 @@
 const { test, expect } = require('@playwright/test');
+const { formatFormula } = require('../lib/chemistry');
 const { signUpAndSignIn } = require('./helpers');
 
 const standardTable = (page) => page.locator('section', { hasText: 'The standard materials:' }).locator('table');
@@ -8,7 +9,8 @@ const myTable = (page) => page.locator('section', { hasText: 'My server material
 const addOxide = async (page, oxide, amount) => {
   await page.locator('select[name="firedox-select"]').selectOption(oxide);
   await page.getByRole('button', { name: 'Add the oxide to the list' }).click();
-  const row = page.locator('li', { has: page.locator('b', { hasText: new RegExp('^' + oxide + '$') }) });
+  // The list shows the oxide with subscripts: Al₂O₃.
+  const row = page.locator('li', { has: page.locator('b', { hasText: new RegExp('^' + formatFormula(oxide) + '$') }) });
   await row.locator('input.oxide-amount').fill(String(amount));
 };
 
@@ -22,11 +24,14 @@ test('lists standard materials with corrected equivalent weights', async ({ page
     standardTable(page).locator('tr', { has: page.locator('td', { hasText: new RegExp('^' + name + '$') }) });
   await expect(row('Dolomite')).toContainText('92.2');
   await expect(row('Talc')).toContainText('126.42');
-  await expect(row('Bone Ash')).toContainText('P2O5');
+  await expect(row('Bone Ash')).toContainText('CaO : 3; P₂O₅ : 1');
+  await expect(row('Bone Ash')).toContainText('Ca₃(PO₄)₂');
 });
 
 test('saves a molecular formula and calculates its weights from the LOI', async ({ page }) => {
   await page.locator('#material-name').fill('My Talc');
+  // Typed with plain numbers, shown with subscripts.
+  await page.locator('#raw-formula').fill('3MgO•4SiO2•H2O');
   await addOxide(page, 'MgO', 3);
   await addOxide(page, 'SiO2', 4);
   await page.locator('#LOI').fill('4.75');
@@ -36,7 +41,8 @@ test('saves a molecular formula and calculates its weights from the LOI', async 
   const row = myTable(page).locator('tr', { hasText: 'My Talc' });
   await expect(row.locator('td').nth(1)).toHaveText('126.42');
   await expect(row.locator('td').nth(2)).toHaveText('120.41');
-  await expect(row).toContainText('MgO : 3');
+  await expect(row).toContainText('MgO : 3; SiO₂ : 4');
+  await expect(row).toContainText('3MgO•4SiO₂•H₂O');
 });
 
 test('saves a percent analysis as a unity formula', async ({ page }) => {

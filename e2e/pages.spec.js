@@ -121,7 +121,7 @@ test.describe('additives', () => {
   test('saves an additive from components and elements, then removes it', async ({ page }) => {
     await page.goto('/additive');
     await page.locator('#additive-name').fill('Blue stain');
-    await page.locator('#formula').fill('CoAl₂O₄');
+    await page.locator('#formula').fill('CoAl2O4');
     await page.locator('#notes').fill('Spinel');
     await addPart(page, '#componentselection', 'CoO', 'Add the component', 1, '.part-amount');
     await addPart(page, '#componentselection', 'Al2O3', 'Add the component', 1, '.part-amount');
@@ -133,7 +133,9 @@ test.describe('additives', () => {
     const mine = page.locator('section', { hasText: 'My server additives / colorants:' });
     const row = mine.locator('tr', { hasText: 'Blue stain' });
     await expect(row).toContainText('Spinel');
-    await expect(row).toContainText('CoO : 1; Al2O3 : 1');
+    await expect(row).toContainText('CoO : 1; Al₂O₃ : 1');
+    // Typed with plain numbers, shown with subscripts.
+    await expect(row).toContainText('CoAl₂O₄');
 
     await page.reload();
     await expect(row).toBeVisible();

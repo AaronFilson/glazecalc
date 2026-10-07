@@ -4,8 +4,8 @@
 <section class="inputbox">
   <h3>Input information on the new material</h3>
   <p>
-    Symbols to copy into your material formula:
-    <span class="large">₁ ₂ ₃ ₄ ₅ ₆ ₇ ₈ ₉ ₀ •</span>
+    Type a formula with plain numbers, such as CaCO3: the counts show as subscripts, CaCO₃. To join the parts of a
+    formula, as in Al₂O₃•2SiO₂•2H₂O, copy this dot: <span class="large">•</span>
   </p>
   <form (ngSubmit)="save()">
     <div class="row">
@@ -85,7 +85,7 @@
         <ul>
           @for (line of formula(); track $index) {
             <li>
-              <b>{{ line.name }}</b>
+              <b>{{ formatFormula(line.name) }}</b>
               <p>
                 <label [for]="'oxide-amount-' + $index">Amount: </label>
                 <input
@@ -139,7 +139,7 @@
           <td>{{ mat.formulaweight }}</td>
           <td>{{ firstOf(mat.notes) }}</td>
           <td>{{ fieldsText(mat) }}</td>
-          <td>{{ mat.rawformula }}</td>
+          <td>{{ formatFormula(mat.rawformula) }}</td>
         </tr>
       }
     </table>
@@ -166,7 +166,7 @@
         <td>{{ mat.formulaweight }}</td>
         <td>{{ firstOf(mat.notes) }}</td>
         <td>{{ fieldsText(mat) }}</td>
-        <td>{{ mat.rawformula }}</td>
+        <td>{{ formatFormula(mat.rawformula) }}</td>
       </tr>
     }
   </table>

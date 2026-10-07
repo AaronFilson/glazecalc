@@ -12,8 +12,45 @@ interface StandardMaterial extends MaterialInput {
   equivalent: number;
   formulaweight: number;
   loi: number;
+  rawformula: string;
   fields: MaterialField[];
 }
+
+// Atomic weights for the raw formulas: the library's, and the elements that
+// only leave in the firing (fluorine in cryolite and fluorspar, nitrogen in nitrates).
+const ATOMIC_WEIGHTS: Record<string, number> = { ...chemistry.ATOMIC_WEIGHTS, F: 18.998, N: 14.007 };
+// Elements that leave as gases in the firing (or, as oxygen, come and go).
+const GASES = ['O', 'H', 'C', 'F', 'N'];
+
+/** Atoms in a formula as written, such as Ca₃(PO₄)₂ or Na₂O•2B₂O₃•10H₂O, scaled by k. */
+const atomsIn = (formula: string, k = 1): Record<string, number> => {
+  const atoms: Record<string, number> = {};
+  const plain = formula.replace(/[₀-₉]/g, (digit) => String(digit.charCodeAt(0) - 0x2080));
+  for (const part of plain.split('•')) {
+    const [, coefficient, rest] = part.trim().match(/^(\d*\.?\d*)(.*)$/)!;
+    const stack: Array<Record<string, number>> = [{}];
+    const tokens = rest.matchAll(/([A-Z][a-z]?)(\d*)|(\()|\)(\d*)/g);
+    let read = '';
+    for (const [token, element, count, open, groupCount] of tokens) {
+      read += token;
+      const top = stack[stack.length - 1];
+      if (element) {
+        expect(ATOMIC_WEIGHTS, 'an element in ' + formula).to.have.property(element);
+        top[element] = (top[element] ?? 0) + Number(count || 1);
+      } else if (open) stack.push({});
+      else {
+        const inner = stack.pop()!;
+        const outer = stack[stack.length - 1];
+        Object.entries(inner).forEach(([e, n]) => (outer[e] = (outer[e] ?? 0) + n * Number(groupCount || 1)));
+      }
+    }
+    expect(read, 'all of ' + formula).to.equal(rest);
+    Object.entries(stack[0]).forEach(([e, n]) => (atoms[e] = (atoms[e] ?? 0) + n * Number(coefficient || 1) * k));
+  }
+  return atoms;
+};
+const massOf = (atoms: Record<string, number>): number =>
+  Object.entries(atoms).reduce((mass, [element, n]) => mass + ATOMIC_WEIGHTS[element] * n, 0);
 
 describe('glaze chemistry', () => {
   describe('molar masses', () => {
@@ -194,6 +231,31 @@ describe('glaze chemistry', () => {
       expect(chemistry.materialWeights(stored).warnings[0]).to.contain('stored equivalent weight');
     });
 
+    it('should not warn about a trace oxide whose stored amount was rounded', () => {
+      // 0.04% Fe2O3 in a whiting is 0.00025 mol per unity formula, stored to 4 places as
+      // 0.0003: 20% off, though the stored weights are right.
+      const traced: MaterialInput = {
+        name: 'Whiting with a trace of iron',
+        percentmole: 'percent',
+        loi: 43.96,
+        fields: [
+          { name: 'CaO', amount: '56.00' },
+          { name: 'Fe2O3', amount: '0.04' }
+        ]
+      };
+      const weights = chemistry.materialWeights(traced);
+      const stored = {
+        ...traced,
+        equivalent: weights.equivalent,
+        fields: traced.fields!.map((field) => ({
+          ...field,
+          amountUnity: Number(weights.unity[field.name].toFixed(4))
+        }))
+      };
+      expect(stored.fields[1].amountUnity / weights.unity.Fe2O3).to.be.closeTo(1.2, 0.01);
+      expect(chemistry.materialWeights(stored).warnings).to.eql([]);
+    });
+
     it('should keep percent analyses on the raw basis when there is an LOI', () => {
       // Whiting as an analysis: 56.03% CaO and 43.97% LOI holds one mole of CaO per 100.08 g.
       const whiting = {
@@ -289,10 +351,57 @@ describe('glaze chemistry', () => {
       });
     });
 
+    it("should give each raw formula its oxides' metals, and its LOI", () => {
+      standard
+        // Feldspars and the like are written as an oxide analysis, which the fields copy.
+        .filter((material) => material.percentmole !== 'percent' && !material.rawformula.includes(':'))
+        .forEach((material) => {
+          const fromFields: Record<string, number> = {};
+          material.fields.forEach((field) =>
+            Object.entries(atomsIn(field.name, Number(field.amount))).forEach(
+              ([e, n]) => (fromFields[e] = (fromFields[e] ?? 0) + n)
+            )
+          );
+          // Scale the raw formula to the fields by their first metal, then every metal must agree.
+          const raw = atomsIn(material.rawformula);
+          const metals = Object.keys(raw).filter((e) => !GASES.includes(e));
+          const k = fromFields[metals[0]] / raw[metals[0]];
+          const scaled = atomsIn(material.rawformula, k);
+          const fieldMetals = Object.keys(fromFields).filter((e) => !GASES.includes(e));
+          expect(fieldMetals.sort(), material.name).to.eql(metals.sort());
+          metals.forEach((e) => expect(fromFields[e], material.name + ' ' + e).to.be.closeTo(scaled[e], 1e-9));
+
+          // What is lost on firing is the raw formula less its oxides.
+          const fired = material.fields.reduce((sum, field) => sum + Number(field.amount) * MW[field.name], 0);
+          const loi = (1 - fired / massOf(scaled)) * 100;
+          expect(material.loi, material.name + ' LOI').to.be.closeTo(loi, 0.05);
+        });
+    });
+
     it('should include phosphorus in bone ash', () => {
       const weights = chemistry.materialWeights(byName['Bone Ash']);
       expect(weights.unity.P2O5).to.be.closeTo(1 / 3, 1e-4);
       expect(weights.loi).to.eql(0);
+    });
+  });
+
+  describe('formula display', () => {
+    it('should write the counts in a formula as subscripts', () => {
+      expect(chemistry.formatFormula('Al2O3')).to.equal('Al₂O₃');
+      expect(chemistry.formatFormula('Ca3(PO4)2')).to.equal('Ca₃(PO₄)₂');
+      expect(chemistry.formatFormula('Pr6O11')).to.equal('Pr₆O₁₁');
+    });
+
+    it('should leave coefficients, amounts and text already in subscripts as they are', () => {
+      expect(chemistry.formatFormula('2CaO•3B2O3•5H2O')).to.equal('2CaO•3B₂O₃•5H₂O');
+      expect(chemistry.formatFormula('CaO: 0.304; SiO2: 8.10')).to.equal('CaO: 0.304; SiO₂: 8.10');
+      expect(chemistry.formatFormula('CaCO₃')).to.equal('CaCO₃');
+      expect(chemistry.formatFormula(undefined)).to.equal('');
+    });
+
+    it('should name an oxide in an error with subscripts', () => {
+      const bad = { name: 'Typo', analysis: { Al2O3: -1 } };
+      expect(() => calculateUMF([{ material: bad, amount: 1 }])).to.throw('Invalid amount for Al₂O₃ in material Typo');
     });
   });
 

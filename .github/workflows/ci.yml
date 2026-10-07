@@ -97,7 +97,7 @@ jobs:
             jq -e '.email == "ci-check@test.com"'
           count=$(curl -fsS http://127.0.0.1:3000/api/materials/getStandard | jq length)
           echo "standard materials: $count"
-          test "$count" -eq 34
+          test "$count" -eq "$(grep -c . data/materials.ndjson)"
 
       - name: Show logs
         if: failure()

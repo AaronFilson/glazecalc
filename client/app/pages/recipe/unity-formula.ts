@@ -1,8 +1,7 @@
 import { DecimalPipe } from '@angular/common';
 import { Component, computed, input } from '@angular/core';
-import { OXIDE_GROUPS } from '../../../../lib/chemistry';
+import { OXIDE_GROUPS, formatFormula } from '../../../../lib/chemistry';
 import { RecipeAnalysis } from '../../core/models';
-import { subscript } from '../../shared/options';
 
 export interface UnityColumn {
   title: string;
@@ -28,7 +27,7 @@ export function unityColumns(uList: Record<string, number>): UnityColumn[] {
     const group = OXIDE_GROUPS[oxide];
     const column =
       group === 'R2O' || group === 'RO' ? 0 : STABILIZERS.includes(oxide) ? 1 : GLASS_FORMERS.includes(oxide) ? 2 : 3;
-    columns[column].oxides.push({ label: subscript(oxide), value });
+    columns[column].oxides.push({ label: formatFormula(oxide), value });
   }
   return columns.filter((column, index) => index < 3 || column.oxides.length);
 }

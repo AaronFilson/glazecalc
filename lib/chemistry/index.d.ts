@@ -47,6 +47,8 @@ export interface MaterialWeights {
   warnings: string[];
 }
 
+/** IUPAC standard atomic weights (abridged), g/mol, of the elements in the oxides. */
+export const ATOMIC_WEIGHTS: Record<string, number>;
 export const MOLAR_MASS: Record<string, number>;
 export const OXIDE_GROUPS: Record<string, OxideGroup>;
 export const FORMULA_MATERIALS: Array<{ name: string; aliases?: string[]; formula: Record<string, number> }>;
@@ -63,3 +65,6 @@ export function formulaToAnalysis(formula: Record<string, number>): {
 };
 
 export function materialWeights(material: MaterialInput): MaterialWeights;
+
+/** A formula for display, with its counts as subscripts: Ca3(PO4)2 → Ca₃(PO₄)₂, 2CaO•3B2O3 → 2CaO•3B₂O₃. */
+export function formatFormula(text: string | null | undefined): string;

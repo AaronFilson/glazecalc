@@ -1,5 +1,6 @@
 import { Component, OnInit, inject, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { formatFormula } from '../../../../lib/chemistry';
 import { ApiResourceFactory } from '../../core/api-resource.service';
 import { errorMessage } from '../../core/error-message';
 import { Additive } from '../../core/models';
@@ -25,6 +26,7 @@ export class AdditivePage implements OnInit {
   protected readonly components = ADDITIVE_COMPONENTS;
   protected readonly elements = ELEMENTS;
   protected readonly firstOf = firstOf;
+  protected readonly formatFormula = formatFormula;
   protected readonly notices = new Notices();
   protected readonly saving = new Busy();
 
@@ -101,6 +103,6 @@ export class AdditivePage implements OnInit {
   }
 
   protected fieldsText(additive: Additive): string {
-    return additive.fields.map((field) => field.name + ' : ' + field.amount).join('; ');
+    return additive.fields.map((field) => formatFormula(field.name) + ' : ' + field.amount).join('; ');
   }
 }
