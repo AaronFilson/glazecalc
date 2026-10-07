@@ -686,6 +686,22 @@ main .form-control.is-invalid {
   }
 }
 
+// The narrowest phones (320px): tighter cells, so a recipe's rows fit across.
+@media (max-width: 399.98px) {
+  .recipe-table {
+    th,
+    td {
+      padding: 0.3rem 0.25rem;
+    }
+    input {
+      width: 4.5rem;
+    }
+  }
+  .recipe-remove {
+    padding: 0.3rem 0.4rem;
+  }
+}
+
 .recipe-share {
   color: var(--gc-muted);
   white-space: nowrap;
@@ -935,6 +951,19 @@ button.library-item:focus-visible {
   margin-left: 0.25rem;
 }
 
+// Materials no longer current, and what can take their place (Try modern materials).
+.recipe-swap {
+  border-left: 3px solid var(--gc-primary);
+  padding: 0.25rem 0 0.25rem 0.75rem;
+  margin: 0.5rem 0 1rem;
+  p {
+    margin: 0 0 0.5rem;
+  }
+  .recipe-swap-line {
+    display: block;
+  }
+}
+
 // Why the last save did not happen, under the save buttons.
 .recipe-save-problem {
   flex-basis: 100%;
@@ -984,6 +1013,7 @@ button.library-item:focus-visible {
 
 .saved-recipe-actions {
   display: inline-flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 0.4rem;
   margin-left: auto;

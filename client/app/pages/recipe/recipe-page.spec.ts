@@ -610,7 +610,7 @@ describe('RecipePage', () => {
     page['removeMaterial'](1);
     await fixture.whenStable();
     expect(document.activeElement?.id).toBe('material-remove-0');
-    expect(text(fixture, '.recipe-editor p.visually-hidden[role=status]')).toBe('Silica taken out of the recipe.');
+    expect(text(fixture, ':scope > p.visually-hidden[role=status]')).toBe('Silica taken out of the recipe.');
     page['removeMaterial'](0);
     await fixture.whenStable();
     expect(document.activeElement?.id).toBe('materials-heading');
@@ -792,6 +792,198 @@ describe('RecipePage', () => {
       );
       expect(document.activeElement?.id).toBe('material-amount-0');
       expect(TestBed.inject(Router).url).toBe('/');
+    });
+  });
+
+  describe('comparing', () => {
+    beforeEach(() => TestBed.configureTestingModule({ providers: [provideLocationMocks()] }));
+
+    const CUSTER: Material = {
+      ...material(
+        'Custer Spar',
+        [
+          ['K2O', 1],
+          ['Al2O3', 1],
+          ['SiO2', 6]
+        ],
+        0
+      ),
+      status: 'discontinued',
+      statusSince: '2023',
+      substitutes: ['G-200 EU Feldspar']
+    };
+    const G200: Material = material(
+      'G-200 EU Feldspar',
+      [
+        ['K2O', 0.8],
+        ['Na2O', 0.2],
+        ['Al2O3', 1],
+        ['SiO2', 6.5]
+      ],
+      0.5
+    );
+    const OLD: Recipe = {
+      _id: 'r1',
+      title: 'Old celadon',
+      materials: [
+        { ...CUSTER, amount: '40' },
+        { ...WHITING, amount: '20' },
+        { ...SILICA, amount: '40' }
+      ],
+      additives: [],
+      notes: ['None.']
+    };
+
+    const start = async (recipes: Recipe[] = [OLD]) => {
+      const fixture = TestBed.createComponent(RecipePage);
+      const router = TestBed.inject(Router);
+      router.initialNavigation();
+      await fixture.whenStable();
+      answer('/materials/getStandard', [WHITING, SILICA, CUSTER, G200]);
+      answer('/materials/getAll', []);
+      answer('/additives/getAll', []);
+      answer('/additives/getStandard', []);
+      answer('/recipe/getAll', recipes);
+      await settle(fixture);
+      return { fixture, router, page: fixture.componentInstance as unknown as Page };
+    };
+
+    it('compares the recipe being edited with a saved one, and goes back to it', async () => {
+      const { fixture, router, page } = await start();
+      page['title'].set('Matte');
+      fill(page, [
+        [WHITING, '25'],
+        [SILICA, '75']
+      ]);
+      await settle(fixture);
+      click(fixture, 'Compare');
+      await settle(fixture);
+      expect(router.url).toBe('/?compare=draft,r1');
+      expect(text(fixture, '#compare-title')).toBe('Matte and Old celadon');
+      expect(document.activeElement?.id).toBe('compare-heading');
+
+      // Another choice replaces the address, so Back still leaves the comparison.
+      page['chooseCompared']({ side: 'right', key: 'draft' });
+      await settle(fixture);
+      expect(router.url).toBe('/?compare=draft,draft');
+      click(fixture, 'Back to the recipe');
+      await settle(fixture);
+      expect(router.url).toBe('/');
+      expect(page['lines']().map((l: { amount: string }) => l.amount)).toEqual(['25', '75']);
+      expect(document.activeElement?.id).toBe('compare-draft');
+    });
+
+    it('compares a saved recipe from the list', async () => {
+      const { fixture, router } = await start();
+      const button = fixture.nativeElement.querySelector('#compare-r1') as HTMLButtonElement;
+      expect(button.getAttribute('aria-label')).toBe('Compare Old celadon');
+      button.click();
+      await settle(fixture);
+      // Nothing is being edited, and there is no other saved recipe: the second is to choose.
+      expect(router.url).toBe('/?compare=r1,');
+      expect(text(fixture, '#compare-title')).toBe('Old celadon and a recipe to choose');
+    });
+
+    it('tries modern materials as a new recipe, and compares it with the saved one', async () => {
+      const { fixture, router, page } = await start();
+      page['open'](OLD);
+      await settle(fixture);
+      expect(text(fixture, '.recipe-swap')).toContain(
+        'Custer Spar (Discontinued 2023): G-200 EU Feldspar can take its place, gram for gram.'
+      );
+
+      click(fixture, 'Try modern materials and compare');
+      await settle(fixture);
+      expect(router.url).toBe('/?compare=r1,draft');
+      expect(page['lines']().map((l: Material) => l.name)).toEqual(['G-200 EU Feldspar', 'Whiting', 'Silica']);
+      expect(page['lines']()[0].amount).toBe('40');
+      expect(page['title']()).toBe('Old celadon with modern materials');
+      expect(page['notes']()).toBe('Swapped one for one: Custer Spar became G-200 EU Feldspar.');
+      // A new recipe: saving it leaves the old one as it was.
+      expect(page['savedId']()).toBeNull();
+      expect(text(fixture, '#compare-title')).toBe('Old celadon and Old celadon with modern materials');
+      const k2o = [...fixture.nativeElement.querySelectorAll('.compare-table tbody tr')]
+        .map((tr: Element) => [...tr.children].map((cell) => cell.textContent?.trim()))
+        .find((cells: Array<string | undefined>) => cells[0] === 'Na₂O');
+      expect(k2o?.[1]).toBe('-');
+    });
+
+    it('undoes the swap: the saved recipe is back, as saved', async () => {
+      const { fixture, page } = await start();
+      page['open'](OLD);
+      await settle(fixture);
+      click(fixture, 'Try modern materials and compare');
+      await settle(fixture);
+      click(fixture, 'Back to the recipe');
+      await settle(fixture);
+      expect(text(fixture, '.recipe-swap')).toContain('Swapped for modern materials');
+      click(fixture, 'Undo the swap');
+      await settle(fixture);
+      expect(page['lines']().map((l: Material) => l.name)).toEqual(['Custer Spar', 'Whiting', 'Silica']);
+      expect(page['title']()).toBe('Old celadon');
+      expect(page['savedId']()).toBe('r1');
+      expect(page['dirty']()).toBe(false);
+      expect(document.activeElement?.id).toBe('recipe-name');
+    });
+
+    it('says when a swap is not like for like, and when lead is still in it', async () => {
+      const LITHARGE: Material = {
+        ...material('Litharge', [['PbO', 1]], 0),
+        status: 'historical',
+        substitutes: ['Lead Bisilicate Frit']
+      };
+      const BISILICATE: Material = material(
+        'Lead Bisilicate Frit',
+        [
+          ['PbO', 1],
+          ['SiO2', 2]
+        ],
+        0
+      );
+      const fixture = TestBed.createComponent(RecipePage);
+      TestBed.inject(Router).initialNavigation();
+      await fixture.whenStable();
+      answer('/materials/getStandard', [WHITING, SILICA, LITHARGE, BISILICATE]);
+      answer('/materials/getAll', []);
+      answer('/additives/getAll', []);
+      answer('/additives/getStandard', []);
+      answer('/recipe/getAll', []);
+      await settle(fixture);
+      const page = fixture.componentInstance as unknown as Page;
+      fill(page, [
+        [LITHARGE, '60'],
+        [SILICA, '40']
+      ]);
+      await settle(fixture);
+      const note = text(fixture, '.recipe-swap');
+      expect(note).toContain('Lead Bisilicate Frit is what is used now, but it is not like for like');
+      expect(note).toContain('Lead Bisilicate Frit still contains lead.');
+      page['tryModernMaterials']();
+      await settle(fixture);
+      expect(page['notes']()).toBe(
+        'Swapped one for one: Litharge became Lead Bisilicate Frit (work its amount out again).'
+      );
+    });
+
+    it('compares a changed recipe with itself before the swap', async () => {
+      const { fixture, router, page } = await start([]);
+      fill(page, [
+        [CUSTER, '40'],
+        [WHITING, '20'],
+        [SILICA, '40']
+      ]);
+      await settle(fixture);
+      page['tryModernMaterials']();
+      await settle(fixture);
+      expect(router.url).toBe('/?compare=before,draft');
+      expect(text(fixture, '#compare-title')).toBe('Untitled recipe and Untitled recipe with modern materials');
+      const choices = [...(fixture.nativeElement.querySelector('#compare-left') as HTMLSelectElement).options].map(
+        (o) => o.textContent?.trim()
+      );
+      expect(choices).toEqual([
+        'Being edited: Untitled recipe with modern materials',
+        'Before the swap: Untitled recipe'
+      ]);
     });
   });
 });

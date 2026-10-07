@@ -15,13 +15,20 @@ const signUpAndSignIn = async (page) => {
   return { email };
 };
 
+// Text to match as it is, inside a regular expression.
+const escapeRegExp = (text) => text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+// A library entry's Add button: "Add Custer Spar", with ", Discontinued 2023" after
+// the name when it is no longer current.
+const addButtonName = (name) => new RegExp('^Add ' + escapeRegExp(name) + '(,|$)');
+
 // Adds a material to the recipe from the library ('Standard' or 'My materials')
 // and enters its amount.
 const addMaterial = async (page, name, amount, tab = 'Standard') => {
   const library = page.locator('.library', { hasText: 'Add materials' });
   await library.getByRole('button', { name: new RegExp('^' + tab) }).click();
   await library.getByRole('searchbox').fill(name);
-  await library.getByRole('button', { name: 'Add ' + name, exact: true }).click();
+  await library.getByRole('button', { name: addButtonName(name) }).click();
   await page.getByRole('textbox', { name: 'Amount of ' + name, exact: true }).fill(String(amount));
 };
 const addStandardMaterial = (page, name, amount) => addMaterial(page, name, amount, 'Standard');
@@ -31,7 +38,7 @@ const addColorant = async (page, name, amount) => {
   const library = page.locator('.library', { hasText: 'Add colorants and additives' });
   await library.getByRole('button', { name: /^Standard/ }).click();
   await library.getByRole('searchbox').fill(name);
-  await library.getByRole('button', { name: 'Add ' + name, exact: true }).click();
+  await library.getByRole('button', { name: addButtonName(name) }).click();
   await page.getByRole('textbox', { name: 'Amount of ' + name, exact: true }).fill(String(amount));
 };
 
@@ -40,7 +47,7 @@ const addColorant = async (page, name, amount) => {
 const expectFieldProblem = async (page, id, message) => {
   const field = page.locator('#' + id);
   await expect(field).toHaveAttribute('aria-invalid', 'true');
-  await expect(field).toHaveAccessibleDescription(new RegExp(message.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '$'));
+  await expect(field).toHaveAccessibleDescription(new RegExp(escapeRegExp(message) + '$'));
   await expect(page.locator('#' + id + '-problem')).toHaveText(message);
 };
 

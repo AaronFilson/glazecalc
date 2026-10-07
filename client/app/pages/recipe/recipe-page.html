@@ -2,9 +2,22 @@
   <gc-recipe-print [recipe]="recipe" [chemistryOf]="chemistryOf" (back)="closePrint()" />
 } @else if (printWaiting()) {
   <p class="muted" role="status">Getting the recipe to print...</p>
+} @else if (comparing()) {
+  <gc-recipe-compare
+    [left]="compareLeft()"
+    [right]="compareRight()"
+    [leftKey]="compareKeys()?.left ?? ''"
+    [rightKey]="compareKeys()?.right ?? ''"
+    [choices]="compareChoices()"
+    [chemistryOf]="chemistryOf"
+    (choose)="chooseCompared($event)"
+    (back)="closeCompare()"
+  />
+} @else if (compareWaiting()) {
+  <p class="muted" role="status">Getting the recipes to compare...</p>
 }
-<!-- Hidden, not removed, while printing: what is being edited stays just as it was. -->
-<div [hidden]="printRecipe() || printWaiting()">
+<!-- Hidden, not removed, while printing or comparing: what is being edited stays just as it was. -->
+<div [hidden]="printRecipe() || printWaiting() || comparing() || compareWaiting()">
   <gc-page-header
     title="Recipes"
     lead="Build a glaze from materials and watch its unity molecular formula (UMF) as you go."
@@ -145,8 +158,38 @@
         <p class="recipe-scale-note" [class.is-problem]="scaleMessage()?.problem" role="status">
           {{ scaleMessage()?.text }}
         </p>
+        @if (modern().swaps.length) {
+          <div class="recipe-swap">
+            <p>
+              @for (swap of modern().swaps; track $index) {
+                <span class="recipe-swap-line">
+                  <b>{{ swap.from }}</b> ({{ swap.status }}):
+                  @if (swap.like) {
+                    {{ swap.to }} can take its place, gram for gram.
+                  } @else {
+                    {{ swap.to }} is what is used now, but it is not like for like: work its amount out again.
+                  }
+                  @if (swap.lead) {
+                    <b>{{ swap.to }} still contains lead.</b>
+                  }
+                </span>
+              }
+            </p>
+            <button id="try-modern" type="button" class="btn btn-light border btn-sm" (click)="tryModernMaterials()">
+              Try modern materials and compare
+            </button>
+          </div>
+        }
       } @else {
         <p class="muted">No materials yet. Add them from the list below.</p>
+      }
+      @if (swapUndo(); as undo) {
+        <div class="recipe-swap">
+          <p>Swapped for modern materials, as a new recipe not saved yet.</p>
+          <button id="undo-swap" type="button" class="btn btn-light border btn-sm" (click)="undoSwap()">
+            Undo the swap
+          </button>
+        </div>
       }
 
       <gc-recipe-library
@@ -257,11 +300,10 @@
           </button>
         }
         <button id="print-draft" type="button" class="btn btn-light border" (click)="printDraft()">Print</button>
+        <button id="compare-draft" type="button" class="btn btn-light border" (click)="compareDraft()">Compare</button>
         <span class="recipe-status" role="status">{{ status() }}</span>
         <p class="recipe-save-problem" role="alert">{{ saveProblem() }}</p>
       </div>
-      <!-- What an action did that the focus does not show, for screen readers. -->
-      <p class="visually-hidden" role="status">{{ announcement() }}</p>
     </section>
 
     <section class="panel unity-panel unity-result" aria-labelledby="unity-heading">
@@ -330,6 +372,15 @@
                 >
                   Print
                 </button>
+                <button
+                  [id]="'compare-' + rec._id"
+                  type="button"
+                  class="btn btn-light border btn-sm"
+                  [attr.aria-label]="'Compare ' + rec.title"
+                  (click)="compareSaved(rec)"
+                >
+                  Compare
+                </button>
                 <button type="button" class="btn btn-light border btn-sm" (click)="toggleExpanded(rec)">
                   {{ expanded().has(rec._id ?? '') ? 'Hide' : 'Expand to View' }}
                 </button>
@@ -376,3 +427,5 @@
     }
   </section>
 </div>
+<!-- What an action did that the focus does not show, for screen readers; outside the part hidden while printing or comparing. -->
+<p class="visually-hidden" role="status">{{ announcement() }}</p>

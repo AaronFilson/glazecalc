@@ -1,3 +1,4 @@
+import { signal } from '@angular/core';
 import { LibraryInfo } from '../core/models';
 
 /** Regions the standard library can be narrowed to; records with no region are general. */
@@ -18,7 +19,11 @@ export function readRegion(): string {
   }
 }
 
+/** The region chosen last, for any page to follow as it changes (saveRegion sets it). */
+export const chosenRegion = signal(readRegion());
+
 export function saveRegion(region: string): void {
+  chosenRegion.set(region);
   try {
     if (region) localStorage.setItem(REGION_KEY, region);
     else localStorage.removeItem(REGION_KEY);

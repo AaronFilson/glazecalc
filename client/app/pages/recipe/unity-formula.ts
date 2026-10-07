@@ -11,23 +11,25 @@ export interface UnityColumn {
 const STABILIZERS = ['Al2O3', 'B2O3'];
 const GLASS_FORMERS = ['SiO2'];
 
+/** The columns potters read a unity formula in, in order. */
+export const UNITY_TITLES = ['Fluxes - RO', 'Stabilizers - R₂O₃', 'Glass Formers - RO₂', 'Wildcards'];
+
+/** Which of the UNITY_TITLES an oxide goes under. */
+export function unityColumnOf(oxide: string): number {
+  const group = OXIDE_GROUPS[oxide];
+  if (group === 'R2O' || group === 'RO') return 0;
+  return STABILIZERS.includes(oxide) ? 1 : GLASS_FORMERS.includes(oxide) ? 2 : 3;
+}
+
 /**
  * Splits a unity formula into the columns potters read: fluxes (which sum to
  * 1), stabilizers, glass formers, and everything else.
  */
 export function unityColumns(uList: Record<string, number>): UnityColumn[] {
-  const columns: UnityColumn[] = [
-    { title: 'Fluxes - RO', oxides: [] },
-    { title: 'Stabilizers - R₂O₃', oxides: [] },
-    { title: 'Glass Formers - RO₂', oxides: [] },
-    { title: 'Wildcards', oxides: [] }
-  ];
+  const columns: UnityColumn[] = UNITY_TITLES.map((title) => ({ title, oxides: [] }));
   for (const [oxide, value] of Object.entries(uList)) {
     if (!(value > 0)) continue;
-    const group = OXIDE_GROUPS[oxide];
-    const column =
-      group === 'R2O' || group === 'RO' ? 0 : STABILIZERS.includes(oxide) ? 1 : GLASS_FORMERS.includes(oxide) ? 2 : 3;
-    columns[column].oxides.push({ label: formatFormula(oxide), value });
+    columns[unityColumnOf(oxide)].oxides.push({ label: formatFormula(oxide), value });
   }
   return columns.filter((column, index) => index < 3 || column.oxides.length);
 }

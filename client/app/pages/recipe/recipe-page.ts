@@ -22,11 +22,14 @@ import { Busy } from '../../shared/busy';
 import { Check, FieldCheck, FieldChecks, required } from '../../shared/field-checks';
 import { localDate } from '../../shared/dates';
 import { Notices, NoticesList } from '../../shared/notices';
+import { chosenRegion } from '../../shared/library-info';
 import { firstOf } from '../../shared/options';
 import { PageHeader } from '../../shared/page-header';
 import { Removal, RemoveButton } from '../../shared/remove-button';
+import { LibraryMaterial, modernMaterials } from './compare';
 import { Rebase, amountOf, formatAmount, isAmount, rebase, totalOf, unitOf } from './rebase';
 import { additiveAmount, evaluate, savedAnalysis } from './recipe-analysis';
+import { CompareChoice, RecipeCompare } from './recipe-compare';
 import { RecipeHelp } from './recipe-help';
 import { RecipeLibrary, libraryKey } from './recipe-library';
 import { RecipePrint } from './recipe-print';
@@ -94,6 +97,7 @@ interface PendingLeave {
     NoticesList,
     PageHeader,
     RecipeHelp,
+    RecipeCompare,
     RecipeLibrary,
     RecipePrint,
     RemoveButton,
@@ -232,14 +236,74 @@ export class RecipePage implements OnInit {
   protected readonly printWaiting = computed(
     () => !!this.printParam() && this.printParam() !== 'draft' && !this.recipesLoaded()
   );
-  /** Whether this page opened the print view, so closing it can go back in the history. */
-  private printOpenedHere = false;
+  /** Whether this page opened the print or compare view, so closing it can go back in the history. */
+  private viewOpenedHere = false;
   protected readonly chemistryOf = (name: string) => this.findByName(name);
+
+  // Comparing: ?compare=<first>,<second>, each 'draft' (the recipe being edited),
+  // 'before' (it before Try modern materials) or a saved recipe's id.
+  private readonly compareParam = toSignal(this.route.queryParamMap.pipe(map((params) => params.get('compare'))), {
+    initialValue: null
+  });
+  /** The recipe being edited as it was before Try modern materials, to compare with. */
+  private readonly beforeSwap = signal<Recipe | null>(null);
+  protected readonly compareKeys = computed(() => {
+    const param = this.compareParam();
+    if (param === null) return null;
+    const [left = '', right = ''] = param.split(',');
+    return { left, right };
+  });
+  protected readonly compareLeft = computed(() => this.recipeFor(this.compareKeys()?.left));
+  protected readonly compareRight = computed(() => this.recipeFor(this.compareKeys()?.right));
+  /** Whether the compare view is open: asked for, and at least one of the two is there. */
+  protected readonly comparing = computed(() => !!this.compareKeys() && !!(this.compareLeft() || this.compareRight()));
+  protected readonly compareWaiting = computed(() => !!this.compareKeys() && !this.recipesLoaded());
+  protected readonly compareChoices = computed<CompareChoice[]>(() => {
+    const before = this.beforeSwap();
+    return [
+      ...(this.lines().length
+        ? [{ key: 'draft', label: 'Being edited: ' + (this.title().trim() || 'Untitled recipe') }]
+        : []),
+      ...(before ? [{ key: 'before', label: 'Before the swap: ' + before.title }] : []),
+      ...this.myRecipes().map((recipe) => ({ key: recipe._id ?? '', label: recipe.title }))
+    ];
+  });
+  /** The button that opened the compare view, for the focus to go back to. */
+  private compareOpener = '';
+  /** What Undo the swap puts back: the recipe as it was, and whether (and as what) it was saved. */
+  protected readonly swapUndo = signal<{
+    recipe: Recipe;
+    savedId: string | null;
+    savedSnapshot: string;
+    savedAt: Date | null;
+  } | null>(null);
+
+  /** Materials that are no longer current, with what the library says replaces them. */
+  protected readonly modern = computed(() =>
+    modernMaterials(this.lines(), (name) => this.findMaterial(name), chosenRegion())
+  );
 
   constructor() {
     // Asked to print what is not there (an empty page after a reload, a recipe removed elsewhere): show the editor.
     effect(() => {
       if (this.printParam() && !this.printRecipe() && !this.printWaiting()) untracked(() => this.leavePrint());
+    });
+    // Asked to compare two recipes neither of which is there: show the editor.
+    effect(() => {
+      if (this.compareKeys() && !this.comparing() && !this.compareWaiting()) untracked(() => this.leaveCompare());
+    });
+    // The focus goes to the compare options when they open, and back to the button that opened them.
+    let compared = false;
+    effect(() => {
+      const comparing = this.comparing();
+      if (comparing === compared) return;
+      compared = comparing;
+      const target = comparing ? 'compare-heading' : this.compareOpener;
+      untracked(() =>
+        afterNextRender(() => (document.getElementById(target) ?? document.getElementById('recipe-name'))?.focus(), {
+          injector: this.injector
+        })
+      );
     });
     // The focus goes to the print options when they open, and back to the Print button that opened them.
     let printed: string | null = null;
@@ -437,6 +501,7 @@ export class RecipePage implements OnInit {
       }
       const stillOpen = showing === this.showing;
       if (stillOpen) {
+        this.swapUndo.set(null);
         this.savedId.set(savedId);
         // Changes made while it saved are not in it, so they still count as not saved.
         this.savedSnapshot.set(sent);
@@ -498,7 +563,7 @@ export class RecipePage implements OnInit {
 
   /** Opens the print view: for 'draft', or a saved recipe's id. Back in the browser closes it. */
   protected openPrint(what: string): void {
-    this.printOpenedHere = true;
+    this.viewOpenedHere = true;
     void this.router.navigate([], {
       relativeTo: this.route,
       queryParams: { print: what },
@@ -507,8 +572,8 @@ export class RecipePage implements OnInit {
   }
 
   protected closePrint(): void {
-    if (!this.printOpenedHere) return this.leavePrint();
-    this.printOpenedHere = false;
+    if (!this.viewOpenedHere) return this.leavePrint();
+    this.viewOpenedHere = false;
     this.location.back();
   }
 
@@ -519,6 +584,139 @@ export class RecipePage implements OnInit {
       queryParamsHandling: 'merge',
       replaceUrl: true
     });
+  }
+
+  // Comparing (issue #6).
+
+  /** Compares the recipe being edited with a saved one (the first other, to start with). */
+  protected compareDraft(): void {
+    this.saveProblem.set('');
+    if (!this.lines().length) {
+      this.saveProblem.set('Please add at least one material to compare.');
+      return;
+    }
+    const unreadable = this.unreadableField();
+    if (unreadable) {
+      this.checks.report(unreadable, NOT_A_NUMBER);
+      return;
+    }
+    const other = this.myRecipes().find((recipe) => recipe._id !== this.savedId());
+    this.openCompare('draft', other?._id ?? '', 'compare-draft');
+  }
+
+  /** Compares a saved recipe with the one being edited, or with another saved one. */
+  protected compareSaved(recipe: Recipe): void {
+    const id = recipe._id ?? '';
+    const other =
+      this.lines().length && this.savedId() !== id ? 'draft' : (this.myRecipes().find((r) => r._id !== id)?._id ?? '');
+    this.openCompare(id, other, 'compare-' + id);
+  }
+
+  protected chooseCompared(choice: { side: 'left' | 'right'; key: string }): void {
+    const keys = { left: '', right: '', ...this.compareKeys(), [choice.side]: choice.key };
+    void this.router.navigate([], {
+      relativeTo: this.route,
+      queryParams: { compare: keys.left + ',' + keys.right },
+      queryParamsHandling: 'merge',
+      replaceUrl: true
+    });
+  }
+
+  protected closeCompare(): void {
+    if (!this.viewOpenedHere) return this.leaveCompare();
+    this.viewOpenedHere = false;
+    this.location.back();
+  }
+
+  private openCompare(left: string, right: string, opener: string): void {
+    this.viewOpenedHere = true;
+    this.compareOpener = opener;
+    void this.router.navigate([], {
+      relativeTo: this.route,
+      queryParams: { compare: left + ',' + right },
+      queryParamsHandling: 'merge'
+    });
+  }
+
+  private leaveCompare(): void {
+    void this.router.navigate([], {
+      relativeTo: this.route,
+      queryParams: { compare: null },
+      queryParamsHandling: 'merge',
+      replaceUrl: true
+    });
+  }
+
+  private recipeFor(key: string | undefined): Recipe | null {
+    if (!key) return null;
+    if (key === 'draft') return this.lines().length ? this.draft() : null;
+    if (key === 'before') return this.beforeSwap();
+    return this.myRecipes().find((recipe) => recipe._id === key) ?? null;
+  }
+
+  /**
+   * Swaps each material that is no longer current for what replaces it, one for
+   * one, as a new recipe (the one opened stays as it was), and compares the two.
+   */
+  protected tryModernMaterials(): void {
+    const { materials, swaps } = this.modern();
+    if (!swaps.length) return;
+    const title = this.title().trim() || 'Untitled recipe';
+    // The saved recipe, if this is one as saved; otherwise a copy of the page as it is.
+    const before = this.savedId() && !this.dirty() ? this.savedId()! : 'before';
+    this.beforeSwap.set(structuredClone({ ...this.draft(), title }));
+    // Nothing is lost: Undo the swap puts the page back, saved or not, changes and all.
+    this.swapUndo.set({
+      recipe: structuredClone(this.draft()),
+      savedId: this.savedId(),
+      savedSnapshot: this.savedSnapshot(),
+      savedAt: this.savedAt()
+    });
+    this.showing++;
+    this.lines.set(materials);
+    this.title.set(title + ' with modern materials');
+    this.date.set('');
+    const swapped = swaps.map((s) => s.from + ' became ' + s.to + (s.like ? '' : ' (work its amount out again)'));
+    const note = 'Swapped one for one: ' + swapped.join(', ') + '.';
+    this.notes.set([note, this.notes()].filter(Boolean).join('\n'));
+    this.savedId.set(null);
+    this.savedAt.set(null);
+    this.savedSnapshot.set('');
+    this.checks.clear();
+    this.scaleMessage.set(null);
+    this.saveProblem.set('');
+    this.announcement.set(swaps.length + (swaps.length === 1 ? ' material' : ' materials') + ' swapped.');
+    this.openCompare(before, 'draft', 'try-modern');
+  }
+
+  /** Puts the recipe back as it was before Try modern materials. */
+  protected undoSwap(): void {
+    const undo = this.swapUndo();
+    if (!undo) return;
+    this.showing++;
+    this.title.set(undo.recipe.title);
+    this.date.set(undo.recipe.date ?? '');
+    this.notes.set(firstOf(undo.recipe.notes));
+    this.lines.set(undo.recipe.materials);
+    this.additiveLines.set(undo.recipe.additives ?? []);
+    this.includeAdditives.set(!!undo.recipe.includeAdditives);
+    this.savedId.set(undo.savedId);
+    this.savedSnapshot.set(undo.savedSnapshot);
+    this.savedAt.set(undo.savedAt);
+    this.swapUndo.set(null);
+    this.beforeSwap.set(null);
+    this.checks.clear();
+    this.announcement.set('The swap is undone: the recipe is as it was.');
+    this.focusTitle();
+  }
+
+  /** A material by its name or another name: a standard one, or one of the user's. */
+  private findMaterial(name: string): LibraryMaterial | undefined {
+    const wanted = name.trim().toLowerCase();
+    return [...this.standardMaterials(), ...this.myMaterials()].find(
+      (record) =>
+        record.name.toLowerCase() === wanted || (record.aliases ?? []).some((alias) => alias.toLowerCase() === wanted)
+    );
   }
 
   // Starting over, and opening saved recipes.
@@ -547,6 +745,7 @@ export class RecipePage implements OnInit {
       this.scaleMessage.set(null);
       this.saveProblem.set('');
       this.checks.clear();
+      this.swapUndo.set(null);
       this.focusTitle();
     }, recipe._id);
   }
@@ -593,6 +792,7 @@ export class RecipePage implements OnInit {
     this.scaleMessage.set(null);
     this.saveProblem.set('');
     this.checks.clear();
+    this.swapUndo.set(null);
     this.batchOpen.set(false);
   }
 

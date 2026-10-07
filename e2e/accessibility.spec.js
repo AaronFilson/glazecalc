@@ -77,6 +77,11 @@ for (const colorScheme of ['light', 'dark']) {
       await page.getByLabel(/^Just a batch list/).check();
       await expectNoProblems(page, colorScheme + ' /recipe print view, batch list');
       await page.getByRole('button', { name: 'Back to the recipe' }).click();
+      // The compare view.
+      await page.getByRole('button', { name: 'Compare', exact: true }).click();
+      await expect(page.getByRole('heading', { name: 'Compare two recipes' })).toBeFocused();
+      await expectNoProblems(page, colorScheme + ' /recipe compare view');
+      await page.getByRole('button', { name: 'Back to the recipe' }).click();
       // The recipe's fields marked with problems.
       await page.locator('#recipe-name').fill('');
       await page.getByRole('button', { name: 'Save', exact: true }).click();

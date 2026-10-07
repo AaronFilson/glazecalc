@@ -308,3 +308,18 @@ test('the instructions can be hidden, stay hidden, and come back', async ({ page
   await page.getByRole('button', { name: 'How to use this page' }).click();
   await expect(heading).toBeVisible();
 });
+
+test('fits the narrowest phone, 320px, without scrolling sideways', async ({ page }) => {
+  await page.setViewportSize({ width: 320, height: 800 });
+  await page.locator('#recipe-name').fill('Phone test');
+  await addStandardMaterial(page, 'Nepheline Syenite (Norwegian, UK)', 30);
+  await addStandardMaterial(page, 'Wollastonite (NYAD 400)', 20);
+  await addColorant(page, 'Spanish red iron oxide', 2);
+  await save(page);
+  // The saved recipe's buttons are the widest row.
+  await expect(saved(page).getByRole('button', { name: 'Compare Phone test' })).toBeVisible();
+  const overflow = await page.evaluate(
+    () => globalThis.document.documentElement.scrollWidth - globalThis.document.documentElement.clientWidth
+  );
+  expect(overflow).toBe(0);
+});

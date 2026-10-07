@@ -6,6 +6,20 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Added
 
+- **Compare two recipes side by side**
+  ([#6](https://github.com/AaronFilson/glazecalc/issues/6)). **Compare**, beside Save or on a
+  saved recipe, lines up their unity formulas oxide by oxide with the change from the first to
+  the second, then the silica to alumina ratio, flux balance and LOI, and each recipe's materials.
+  - Colorants count as each recipe says, or in both, or in neither, to compare like with like;
+    it says when the two count them differently.
+  - Prints on one page; Back, or the browser's Back, returns to the recipe as it was.
+- **Old recipes with modern materials.** A recipe that uses a material that is discontinued,
+  historical or hard to get says what is used now (preferring one sold in your region).
+  **Try modern materials and compare** swaps them in, one for one at the same amount, as a new
+  recipe, and compares it with the old one; **Undo the swap** puts it back.
+  - A swap is called like for like only when the two give much the same oxides gram for gram
+    (Custer Spar and G-200 EU). Others, such as niter to a soda frit or red lead to a lead frit,
+    say to work the amount out again, and a replacement that still has lead says so.
 - **Your own colors** ([#13](https://github.com/AaronFilson/glazecalc/issues/13)): Settings
   chooses light, dark, or as the device is set, and a palette for buttons, links and tabs named
   for glazes: tenmoku rust, celadon green, cobalt blue, oxblood red, shino orange or wood ash

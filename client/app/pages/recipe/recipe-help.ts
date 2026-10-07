@@ -124,6 +124,19 @@ const readHidden = (): boolean => {
             </ul>
           </li>
           <li>
+            <h3>Compare two recipes</h3>
+            <p>
+              <b>Compare</b>, beside Save or on a saved recipe, lines up two unity formulas oxide by oxide, with the
+              change from the first to the second. To compare like with like, count the colorants in both or in neither.
+            </p>
+            <p>
+              A recipe that uses a material no longer made, such as Custer Spar, says what is used now, and whether it
+              can take its place gram for gram. <b>Try modern materials and compare</b> swaps them in, one for one, as a
+              new recipe, and compares it with the old one; <b>Undo the swap</b> puts it back. Where a swap is not like
+              for like, work the amount out again until the unity formulas match; then save it.
+            </p>
+          </li>
+          <li>
             <h3>Print it for the glaze room</h3>
             <p>
               <b>Print</b>, beside Save or on a saved recipe, lays it out for paper. Print the whole recipe with its

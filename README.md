@@ -29,6 +29,9 @@ materials, colorants, firing logs and notes together in one private notebook.
   substitute materials. Change the scale to percent, to the smallest whole parts, or to the grams
   of a batch, with colorants as a percent of the base, in parts or in grams; save a recipe and
   keep working on it, or open a saved one to change it.
+- **Compare two recipes side by side,** oxide by oxide, and try an old recipe with the modern
+  materials that replace its discontinued ones (Custer Spar to G-200 EU), compared with the
+  original.
 - **Print it for the glaze room:** the whole recipe with its unity formula and analysis, or just
   a batch list to tick off while weighing, with a running total for weighing into one bucket. One
   page on Letter or A4; weights in grams, or in pounds and ounces as set in your account.
@@ -56,7 +59,7 @@ For anyone reading the code:
   and put back online. The
   [case study](docs/case-study.md) tells how.
 - **Tested at three levels, in CI on every push:** 195 server tests (98% of statements) run
-  against the app in-process; 226 Angular unit tests (93%); 75 Playwright browser tests,
+  against the app in-process; 243 Angular unit tests (93%); 78 Playwright browser tests,
   including [axe](https://github.com/dequelabs/axe-core) accessibility checks of every page in
   light and dark mode.
 - **One glaze chemistry library** for the browser and the tests, checked against values worked
