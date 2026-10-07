@@ -171,6 +171,7 @@ describe('password reset and change', () => {
       const short = await reset(token, 'short');
       expect(short).to.have.status(400);
       expect(short.body.msg).to.match(/8 characters or longer/);
+      expect(short.body.field).to.equal('password');
       // bcrypt would ignore everything past 72 bytes.
       const long = await reset(token, 'a'.repeat(73));
       expect(long).to.have.status(400);
@@ -195,7 +196,7 @@ describe('password reset and change', () => {
 
       const wrong = await change(thisDevice, { current: 'not-it', password: 'changed-password' });
       expect(wrong).to.have.status(400);
-      expect(wrong.body.msg).to.eql('Your current password is not correct.');
+      expect(wrong.body).to.eql({ msg: 'Your current password is not correct.', field: 'current' });
       expect(await verify(thisDevice)).to.have.status(200);
 
       const res = await change(thisDevice, { current: 'old-password', password: 'changed-password' });

@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 import { Firing } from '../../core/models';
-import { API, answer, httpMock, settle, testProviders, text } from '../../testing/test-providers';
+import { answer, API, fieldProblem, httpMock, settle, testProviders, text } from '../../testing/test-providers';
 import { FiringPage } from './firing-page';
 
 describe('FiringPage', () => {
@@ -88,12 +88,20 @@ describe('FiringPage', () => {
     expect(text(fixture, '.stored-firing')).toContain('Sunday, October 4, 2026');
   });
 
-  it('needs a title and a field before saving', async () => {
-    const { page } = await create();
-    page['title'].set('No fields');
+  it('needs a title and a field before saving, and marks what is missing', async () => {
+    const { fixture, page } = await create();
     await page['save']();
+    await fixture.whenStable();
     httpMock().expectNone(API + '/firing/create');
-    expect(page['notices'].errors()).toEqual(['Error: enter a title and at least one field.']);
+    expect(fieldProblem(fixture, 'firing-title')).toBe('Give the firing a title.');
+    expect(fieldProblem(fixture, 'fieldselect')).toBe('Add at least one field to record, such as Time.');
+    expect(document.activeElement?.id).toBe('firing-title');
+
+    // Adding a field clears its mark.
+    page['addField']();
+    await fixture.whenStable();
+    expect(fieldProblem(fixture, 'fieldselect')).toBe('');
+    expect(page['notices'].errors()).toEqual([]);
   });
 
   it('removes a stored firing and a row', async () => {

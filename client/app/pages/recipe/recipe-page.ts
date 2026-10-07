@@ -19,6 +19,7 @@ import { ApiResourceFactory } from '../../core/api-resource.service';
 import { errorMessage } from '../../core/error-message';
 import { Additive, AdditiveUnit, Material, Recipe, RecipeMaterial } from '../../core/models';
 import { Busy } from '../../shared/busy';
+import { Check, FieldCheck, FieldChecks, required } from '../../shared/field-checks';
 import { localDate } from '../../shared/dates';
 import { Notices, NoticesList } from '../../shared/notices';
 import { firstOf } from '../../shared/options';
@@ -57,6 +58,16 @@ const SCALE_NOTES: Record<Rebase['to'], string> = {
 
 type SaveMode = 'save' | 'next' | 'copy';
 
+const NOT_A_NUMBER = 'Enter a number, such as 12.5, with a point for decimals.';
+
+/** An amount to save: blank is not one, though 0 is. */
+const amountCheck =
+  (amount: string | undefined): Check =>
+  () => {
+    if ((amount ?? '').trim() === '') return 'Enter an amount (0 is fine).';
+    return isAmount(amount) ? null : NOT_A_NUMBER;
+  };
+
 interface Saved {
   title: string;
   /** The page still shows this recipe: nothing cleared it or opened another meanwhile. */
@@ -78,6 +89,7 @@ interface PendingLeave {
   selector: 'gc-recipe-page',
   imports: [
     DatePipe,
+    FieldCheck,
     FormsModule,
     NoticesList,
     PageHeader,
@@ -145,7 +157,13 @@ export class RecipePage implements OnInit {
     () => !!(this.title() || this.notes() || this.lines().length || this.additiveLines().length)
   );
   protected readonly pendingLeave = signal<PendingLeave | null>(null);
-  /** Why the last save (or print) did not happen, shown beside the save buttons. */
+  /** The title and each amount: material-amount-0, additive-amount-0 and so on, by their inputs' ids. */
+  protected readonly checks = new FieldChecks(() => ({
+    title: required(this.title, 'Give the recipe a title.'),
+    ...Object.fromEntries(this.lines().map((line, i) => ['material-amount-' + i, amountCheck(line.amount)])),
+    ...Object.fromEntries(this.additiveLines().map((line, i) => ['additive-amount-' + i, amountCheck(line.amount)]))
+  }));
+  /** Why the last save (or print) did not happen, when it is not about one field; shown beside the save buttons. */
   protected readonly saveProblem = signal('');
   /**
    * Which recipe the page shows: a new number each time it is cleared or
@@ -268,6 +286,8 @@ export class RecipePage implements OnInit {
   protected removeMaterial(index: number): void {
     const name = this.lines()[index]?.name;
     this.lines.update((list) => list.filter((_, i) => i !== index));
+    // The amounts after it move up a place, so their marks would be on the wrong lines.
+    this.checks.clear();
     this.afterTakingOut('material', name, index, this.lines().length);
   }
 
@@ -288,6 +308,7 @@ export class RecipePage implements OnInit {
   protected removeAdditive(index: number): void {
     const name = this.additiveLines()[index]?.name;
     this.additiveLines.update((list) => list.filter((_, i) => i !== index));
+    this.checks.clear();
     this.afterTakingOut('additive', name, index, this.additiveLines().length);
   }
 
@@ -385,7 +406,7 @@ export class RecipePage implements OnInit {
   private async saveAs(mode: SaveMode): Promise<Saved | null> {
     this.saveProblem.set('');
     const problem = this.problemBeforeSave();
-    if (problem) {
+    if (problem !== null) {
       this.saveProblem.set(problem);
       return null;
     }
@@ -430,16 +451,15 @@ export class RecipePage implements OnInit {
     }
   }
 
-  /** What stops this recipe being saved, if anything. */
+  /**
+   * What stops this recipe being saved, if anything: a problem with the title
+   * or an amount is marked on the field, and the focus goes to the first one
+   * ('' here); others are said beside the save buttons.
+   */
   private problemBeforeSave(): string | null {
-    if (!this.title().trim()) return 'Please give the recipe a title.';
+    const fieldsOk = this.checks.validate();
     if (!this.lines().length) return 'Please add at least one material.';
-    const blank = [...this.lines(), ...this.additiveLines()].find((line) => (line.amount ?? '').trim() === '');
-    if (blank) return 'Please enter an amount for ' + blank.name + ' (0 is fine).';
-    const unreadable = this.unreadableLine();
-    if (unreadable) {
-      return `The amount for ${unreadable.name} is not a number ("${unreadable.amount}"). Use a point for decimals, such as 12.5.`;
-    }
+    if (!fieldsOk) return '';
     const { analysis, problem } = this.evaluation();
     if (!analysis) return 'Not saved: ' + (problem ?? 'the unity formula could not be worked out.');
     return null;
@@ -448,6 +468,14 @@ export class RecipePage implements OnInit {
   /** The first material or colorant whose amount is not blank and not a number of 0 or more. */
   private unreadableLine(): Additive | RecipeMaterial | undefined {
     return [...this.lines(), ...this.additiveLines()].find((line) => !isAmount(line.amount));
+  }
+
+  /** The field of that amount, such as material-amount-2. */
+  private unreadableField(): string | null {
+    const material = this.lines().findIndex((line) => !isAmount(line.amount));
+    if (material >= 0) return 'material-amount-' + material;
+    const additive = this.additiveLines().findIndex((line) => !isAmount(line.amount));
+    return additive >= 0 ? 'additive-amount-' + additive : null;
   }
 
   // Printing.
@@ -459,11 +487,10 @@ export class RecipePage implements OnInit {
       this.saveProblem.set('Please add at least one material to print.');
       return;
     }
-    const unreadable = this.unreadableLine();
+    // It would print as 0 g. (Blank amounts are fine to print; they count as 0.)
+    const unreadable = this.unreadableField();
     if (unreadable) {
-      this.saveProblem.set(
-        `The amount for ${unreadable.name} is not a number ("${unreadable.amount}"). Please fix it before printing.`
-      );
+      this.checks.report(unreadable, NOT_A_NUMBER);
       return;
     }
     this.openPrint('draft');
@@ -519,6 +546,7 @@ export class RecipePage implements OnInit {
       this.savedAt.set(null);
       this.scaleMessage.set(null);
       this.saveProblem.set('');
+      this.checks.clear();
       this.focusTitle();
     }, recipe._id);
   }
@@ -564,6 +592,7 @@ export class RecipePage implements OnInit {
     this.savedSnapshot.set(this.snapshot());
     this.scaleMessage.set(null);
     this.saveProblem.set('');
+    this.checks.clear();
     this.batchOpen.set(false);
   }
 

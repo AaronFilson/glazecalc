@@ -1,7 +1,14 @@
 const { test, expect } = require('@playwright/test');
 const chemistry = require('../lib/chemistry');
 const standardData = require('../data');
-const { API, addColorant, addMaterial, addStandardMaterial, signUpAndSignIn } = require('./helpers');
+const {
+  API,
+  addColorant,
+  addMaterial,
+  addStandardMaterial,
+  expectFieldProblem,
+  signUpAndSignIn
+} = require('./helpers');
 
 const standard = {};
 standardData.load('materials').forEach((material) => (standard[material.name] = material));
@@ -285,7 +292,11 @@ test('asks for an amount for every material', async ({ page }) => {
   // The cursor is ready in the new amount.
   await expect(amount(page, 'Whiting')).toBeFocused();
   await save(page);
-  await expect(page.locator('.recipe-save-problem')).toContainText('Please enter an amount for Whiting');
+  await expectFieldProblem(page, 'material-amount-0', 'Enter an amount (0 is fine).');
+  await expect(amount(page, 'Whiting')).toBeFocused();
+  // Fixed, the mark goes as it is typed.
+  await amount(page, 'Whiting').fill('20');
+  await expect(amount(page, 'Whiting')).not.toHaveAttribute('aria-invalid');
 });
 
 test('the instructions can be hidden, stay hidden, and come back', async ({ page }) => {

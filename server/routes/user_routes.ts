@@ -112,10 +112,10 @@ userRouter.put(
 
     if (changes.email !== undefined) {
       changes.email = email.normalize(changes.email);
-      if (!email.isValid(changes.email)) return res.status(400).json({ msg: 'Please enter an email' });
-      if (!(await ownPasswordConfirmed(req))) return res.status(400).json({ msg: WRONG_PASSWORD });
+      if (!email.isValid(changes.email)) return res.status(400).json({ msg: 'Please enter an email', field: 'email' });
+      if (!(await ownPasswordConfirmed(req))) return res.status(400).json({ msg: WRONG_PASSWORD, field: 'password' });
       const other = await User.exists({ email: changes.email, _id: { $ne: req.params.id } }).collation(email.collation);
-      if (other) return res.status(400).json({ msg: EMAIL_IN_USE });
+      if (other) return res.status(400).json({ msg: EMAIL_IN_USE, field: 'email' });
     }
 
     try {
@@ -124,14 +124,14 @@ userRouter.put(
       return res.status(200).json({ msg: 'User updated' });
     } catch (err) {
       // The unique index catches two accounts racing for the same email.
-      if (isDuplicateKey(err)) return res.status(400).json({ msg: EMAIL_IN_USE });
+      if (isDuplicateKey(err)) return res.status(400).json({ msg: EMAIL_IN_USE, field: 'email' });
       throw err;
     }
   }
 );
 
 userRouter.delete('/deleteuser/:id', jwtAuth, selfOrAdmin, limits.passwordCheck, express.json(), async (req, res) => {
-  if (!(await ownPasswordConfirmed(req))) return res.status(400).json({ msg: WRONG_PASSWORD });
+  if (!(await ownPasswordConfirmed(req))) return res.status(400).json({ msg: WRONG_PASSWORD, field: 'password' });
   const id = req.params.id as string;
   if (!(await deleteAccount(id))) return res.status(404).json({ msg: 'No user with that id' });
   if (id === String(userOf(req)._id)) session.end(res);

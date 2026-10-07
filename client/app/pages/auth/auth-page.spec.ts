@@ -2,7 +2,7 @@ import { TestBed } from '@angular/core/testing';
 import { ActivatedRoute, Router } from '@angular/router';
 import { of } from 'rxjs';
 import { AuthService } from '../../core/auth.service';
-import { API, httpMock, settle, testProviders, text } from '../../testing/test-providers';
+import { API, fieldProblem, httpMock, settle, testProviders, text } from '../../testing/test-providers';
 import { AuthPage } from './auth-page';
 
 describe('AuthPage', () => {
@@ -64,15 +64,58 @@ describe('AuthPage', () => {
     expect(navigate).toHaveBeenCalledWith('/home');
   });
 
-  it('will not submit a sign up whose passwords differ', async () => {
+  it('will not submit a sign up whose passwords differ, and marks the field', async () => {
     const { fixture, page } = await create('signup');
     page['email'].set('a@b.com');
     page['password'].set('password123');
     page['confirmation'].set('password124');
     await fixture.whenStable();
-    expect((fixture.nativeElement.querySelector('button[type=submit]') as HTMLButtonElement).disabled).toBe(true);
+    // The button stays usable; pressing it says what is wrong.
+    expect((fixture.nativeElement.querySelector('button[type=submit]') as HTMLButtonElement).disabled).toBe(false);
     await page['submit']();
+    await fixture.whenStable();
     httpMock().expectNone(API + '/signup');
+    expect(fieldProblem(fixture, 'confirmation')).toBe('The two passwords do not match.');
+    expect(fieldProblem(fixture, 'email')).toBe('');
+    expect(document.activeElement?.id).toBe('confirmation');
+  });
+
+  it('marks every field with a problem, and the first takes the focus', async () => {
+    const { fixture, page } = await create('signup');
+    page['email'].set('not-an-email');
+    page['password'].set('short');
+    await page['submit']();
+    await fixture.whenStable();
+    expect(fieldProblem(fixture, 'email')).toBe('Enter an email address like name@example.com.');
+    expect(fieldProblem(fixture, 'password')).toBe('Use at least 8 characters.');
+    expect(fieldProblem(fixture, 'confirmation')).toBe('Enter the password again.');
+    expect(document.activeElement?.id).toBe('email');
+    // Fixed, the mark goes as it is typed.
+    const email = fixture.nativeElement.querySelector('#email') as HTMLInputElement;
+    email.value = 'a@b.com';
+    email.dispatchEvent(new Event('input'));
+    await fixture.whenStable();
+    await Promise.resolve();
+    await fixture.whenStable();
+    expect(fieldProblem(fixture, 'email')).toBe('');
+  });
+
+  it("puts the server's answer about a field on that field", async () => {
+    const { fixture, page } = await create('signup');
+    page['email'].set('taken@b.com');
+    page['password'].set('password123');
+    page['confirmation'].set('password123');
+    const submitting = page['submit']();
+    httpMock()
+      .expectOne(API + '/signup')
+      .flush(
+        { msg: 'An account with that email already exists.', field: 'email' },
+        { status: 400, statusText: 'Bad Request' }
+      );
+    await submitting;
+    await fixture.whenStable();
+    expect(fieldProblem(fixture, 'email')).toBe('An account with that email already exists.');
+    expect(page['notices'].errors()).toEqual([]);
   });
 
   it('shows a fallback message when the server is unreachable', async () => {

@@ -67,6 +67,9 @@
   --bs-link-hover-color-rgb: var(--gc-primary-rgb);
   --bs-focus-ring-color: rgba(var(--gc-primary-rgb), 0.35);
   --bs-danger-text-emphasis: var(--gc-danger-text);
+  // Fields with a problem (shared/field-checks.ts).
+  --bs-form-invalid-color: var(--gc-danger-text);
+  --bs-form-invalid-border-color: var(--gc-danger-text);
 }
 
 /*************** Page layout **************/
@@ -407,6 +410,25 @@ main {
   }
 }
 
+// A field with a problem (shared/field-checks.ts): a thicker outline in the
+// danger color, without Bootstrap's icon, and what is wrong under it.
+main input.is-invalid:not([type='checkbox']):not([type='radio']):not([type='submit']):not([type='button']),
+main select.is-invalid,
+main textarea.is-invalid,
+main .form-control.is-invalid {
+  border-color: var(--gc-danger-text);
+  box-shadow: 0 0 0 1px var(--gc-danger-text);
+  background-image: none;
+  padding-right: 0.65rem;
+}
+
+.field-problem {
+  color: var(--gc-danger-text);
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-top: 0.25rem;
+}
+
 /*************** Recipe page **************/
 
 .help-reopen {
@@ -601,6 +623,12 @@ main {
   flex-wrap: wrap;
   align-items: center;
   gap: 0.35rem 0.5rem;
+  // A problem with the amount goes on a line of its own, under the amount and unit.
+  .field-problem {
+    flex-basis: 100%;
+    order: 1;
+    margin-top: 0;
+  }
   .additive-amount {
     width: 6rem;
     flex: none;

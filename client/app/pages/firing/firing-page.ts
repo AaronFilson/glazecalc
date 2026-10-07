@@ -5,6 +5,7 @@ import { ApiResourceFactory } from '../../core/api-resource.service';
 import { errorMessage } from '../../core/error-message';
 import { Firing } from '../../core/models';
 import { Busy } from '../../shared/busy';
+import { FieldCheck, FieldChecks, required } from '../../shared/field-checks';
 import { Notices, NoticesList } from '../../shared/notices';
 import { localDate, optional } from '../../shared/dates';
 import { FIRING_FIELDS, firstOf } from '../../shared/options';
@@ -14,7 +15,7 @@ import { FiringLog } from './firing-log';
 
 @Component({
   selector: 'gc-firing-page',
-  imports: [DatePipe, FormsModule, NoticesList, PageHeader, RemoveButton],
+  imports: [DatePipe, FieldCheck, FormsModule, NoticesList, PageHeader, RemoveButton],
   templateUrl: './firing-page.html'
 })
 export class FiringPage implements OnInit {
@@ -31,6 +32,13 @@ export class FiringPage implements OnInit {
   protected readonly notes = signal('');
   protected readonly selectedField = signal(FIRING_FIELDS[0]);
   protected readonly log = signal(new FiringLog());
+  protected readonly checks = new FieldChecks(
+    () => ({
+      title: required(this.title, 'Give the firing a title.'),
+      fields: () => (this.log().fields.length ? null : 'Add at least one field to record, such as Time.')
+    }),
+    { sendOnly: ['fields'] }
+  );
 
   protected readonly myFirings = signal<Firing[]>([]);
   protected readonly removal = new Removal(this.firings, this.myFirings, this.notices, (firing) => firing.title);
@@ -46,10 +54,11 @@ export class FiringPage implements OnInit {
   protected addField(): void {
     const field = this.selectedField();
     if (!field) {
-      this.notices.error('Error: please select a field.');
+      this.checks.report('fields', 'Choose a field to add, then Add the field.');
       return;
     }
     this.change((log) => log.addField(field));
+    this.checks.recheck('fields');
   }
 
   protected moveField(index: number, direction: -1 | 1): void {
@@ -79,10 +88,7 @@ export class FiringPage implements OnInit {
 
   private async saveNow(): Promise<void> {
     const log = this.log();
-    if (!this.title() || !log.fields.length) {
-      this.notices.error('Error: enter a title and at least one field.');
-      return;
-    }
+    if (!this.checks.validate()) return;
     try {
       const saved = await this.firings.create({
         title: this.title(),

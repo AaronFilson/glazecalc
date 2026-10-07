@@ -298,7 +298,7 @@ describe('trial accounts', () => {
 
     const taken = await claim({ email: user.email.toUpperCase(), password: 'long-enough-1' });
     expect(taken).to.have.status(400);
-    expect(taken.body.msg).to.eql('An account with that email already exists.');
+    expect(taken.body).to.eql({ msg: 'An account with that email already exists.', field: 'email' });
     expect(await claim({ email: 'me@guest.invalid', password: 'long-enough-1' })).to.have.status(400);
     expect(await claim({ email: 'new' + Date.now() + '@tester.com', password: 'short' })).to.have.status(400);
     const notTrial = await claim({ email: 'other@tester.com', password: 'long-enough-1' }, user.generateToken());

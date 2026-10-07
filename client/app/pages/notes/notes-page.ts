@@ -4,13 +4,14 @@ import { ApiResourceFactory } from '../../core/api-resource.service';
 import { errorMessage } from '../../core/error-message';
 import { Note } from '../../core/models';
 import { Busy } from '../../shared/busy';
+import { FieldCheck, FieldChecks, required } from '../../shared/field-checks';
 import { Notices, NoticesList } from '../../shared/notices';
 import { PageHeader } from '../../shared/page-header';
 import { Removal, RemoveButton } from '../../shared/remove-button';
 
 @Component({
   selector: 'gc-notes-page',
-  imports: [FormsModule, NoticesList, PageHeader, RemoveButton],
+  imports: [FieldCheck, FormsModule, NoticesList, PageHeader, RemoveButton],
   template: `
     <gc-page-header title="Notes" lead="Anything else worth remembering about your glazes." />
     <gc-notices [notices]="notices" />
@@ -20,11 +21,28 @@ import { Removal, RemoveButton } from '../../shared/remove-button';
       <form (ngSubmit)="save()">
         <div class="mb-3">
           <label for="title">Title: </label>
-          <input id="title" type="text" name="title" [(ngModel)]="title" />
+          <input
+            id="title"
+            type="text"
+            name="title"
+            required
+            [(ngModel)]="title"
+            [gcField]="checks"
+            gcFieldName="title"
+          />
         </div>
         <div class="mb-3">
           <label for="content">Your Note: </label>
-          <textarea id="content" name="content" rows="4" class="form-control" [(ngModel)]="content"></textarea>
+          <textarea
+            id="content"
+            name="content"
+            rows="4"
+            class="form-control"
+            required
+            [(ngModel)]="content"
+            [gcField]="checks"
+            gcFieldName="content"
+          ></textarea>
         </div>
         <button type="submit" class="btn btn-primary" [disabled]="saving.active()">Save</button>
       </form>
@@ -57,6 +75,10 @@ export class NotesPage implements OnInit {
   protected readonly saving = new Busy();
   protected readonly title = signal('');
   protected readonly content = signal('');
+  protected readonly checks = new FieldChecks(() => ({
+    title: required(this.title, 'Give the note a title.'),
+    content: required(this.content, 'Write the note.')
+  }));
   protected readonly notes = signal<Note[]>([]);
   protected readonly removal = new Removal(this.api, this.notes, this.notices, (note) => note.title || 'Untitled note');
 
@@ -73,10 +95,7 @@ export class NotesPage implements OnInit {
   }
 
   private async saveNow(): Promise<void> {
-    if (!this.title() || !this.content()) {
-      this.notices.error('Error: there was missing info on submit.');
-      return;
-    }
+    if (!this.checks.validate()) return;
     try {
       const saved = await this.api.create({
         title: this.title(),

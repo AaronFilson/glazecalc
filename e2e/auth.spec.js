@@ -1,5 +1,5 @@
 const { test, expect } = require('@playwright/test');
-const { API, uniqueEmail } = require('./helpers');
+const { API, expectFieldProblem, uniqueEmail } = require('./helpers');
 
 const header = (page) => page.locator('.account-email');
 
@@ -25,12 +25,20 @@ test('signs up, logs out, and signs back in', async ({ page }) => {
   await expect(header(page)).toHaveText(email);
 });
 
-test('keeps the create button disabled until the passwords match', async ({ page }) => {
+test('marks the fields to fix, and the first takes the focus', async ({ page }) => {
   await page.goto('/signup');
+  await page.locator('#email').fill('not-an-email');
+  // Leaving a field with something wrong in it marks it at once.
+  await page.locator('#password').focus();
+  await expectFieldProblem(page, 'email', 'Enter an email address like name@example.com.');
   await page.locator('#email').fill(uniqueEmail('mismatch'));
+  await expect(page.locator('#email')).not.toHaveAttribute('aria-invalid');
   await page.locator('#password').fill('password123');
   await page.locator('#confirmation').fill('password124');
-  await expect(page.getByRole('button', { name: 'Create account' })).toBeDisabled();
+  await page.getByRole('button', { name: 'Create account' }).click();
+  await expectFieldProblem(page, 'confirmation', 'The two passwords do not match.');
+  await expect(page.locator('#confirmation')).toBeFocused();
+  await expect(page).toHaveURL(/\/signup$/);
 });
 
 test('shows an error for a wrong password', async ({ page, request }) => {
@@ -54,7 +62,8 @@ test('refuses a second account with the same email', async ({ page, request }) =
   await page.locator('#password').fill('password123');
   await page.locator('#confirmation').fill('password123');
   await page.getByRole('button', { name: 'Create account' }).click();
-  await expect(page.locator('.errors-section')).toContainText('already exists');
+  await expectFieldProblem(page, 'email', 'An account with that email already exists.');
+  await expect(page.locator('#email')).toBeFocused();
 });
 
 test('shows visitors the intro page, and sends app pages to sign in', async ({ page }) => {

@@ -1,5 +1,5 @@
 const { test, expect } = require('@playwright/test');
-const { signUpAndSignIn } = require('./helpers');
+const { expectFieldProblem, signUpAndSignIn } = require('./helpers');
 
 const errors = (page) => page.locator('.errors-section');
 const messages = (page) => page.locator('.server-msg');
@@ -151,8 +151,11 @@ test.describe('additives', () => {
   test('asks for an oxide before adding one', async ({ page }) => {
     await page.goto('/additive');
     await page.getByRole('button', { name: 'Add the oxide to the list' }).click();
-    await expect(errors(page)).toContainText('please select an oxide');
-    await page.getByRole('button', { name: 'Dismiss' }).click();
+    await expectFieldProblem(page, 'additive-oxide', 'Choose an oxide, then Add the oxide to the list.');
+    await expect(page.locator('#additive-oxide')).toBeFocused();
+    await page.locator('#additive-oxide').selectOption('CoO');
+    await page.getByRole('button', { name: 'Add the oxide to the list' }).click();
+    await expect(page.locator('#additive-oxide')).not.toHaveAttribute('aria-invalid');
     await expect(errors(page)).toHaveCount(0);
   });
 });
@@ -187,7 +190,9 @@ test.describe('advice', () => {
     await page.goto('/advice');
     await page.locator('#advice-title').fill('Only a title');
     await page.getByRole('button', { name: 'Save' }).click();
-    await expect(errors(page)).toContainText('missing information');
+    await expectFieldProblem(page, 'advice-content', 'Write the advice.');
+    await expect(page.locator('#advice-content')).toBeFocused();
+    await expect(page.locator('#advice-title')).not.toHaveAttribute('aria-invalid');
   });
 });
 
@@ -212,7 +217,9 @@ test.describe('notes', () => {
   test('needs a title and a note', async ({ page }) => {
     await page.goto('/notes');
     await page.getByRole('button', { name: 'Save' }).click();
-    await expect(errors(page)).toContainText('missing info');
+    await expectFieldProblem(page, 'title', 'Give the note a title.');
+    await expectFieldProblem(page, 'content', 'Write the note.');
+    await expect(page.locator('#title')).toBeFocused();
   });
 });
 
@@ -288,7 +295,10 @@ test.describe('firing log', () => {
   test('needs a title and a field before saving', async ({ page }) => {
     await page.goto('/firing');
     await page.getByRole('button', { name: 'Save' }).click();
-    await expect(errors(page)).toContainText('enter a title and at least one field');
+    await expectFieldProblem(page, 'firing-title', 'Give the firing a title.');
+    await expectFieldProblem(page, 'fieldselect', 'Add at least one field to record, such as Time.');
+    await page.getByRole('button', { name: 'Add the field' }).click();
+    await expect(page.locator('#fieldselect')).not.toHaveAttribute('aria-invalid');
   });
 });
 

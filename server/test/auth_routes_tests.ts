@@ -36,7 +36,7 @@ describe('sign-up and sign-in API', () => {
         .post('/signup')
         .send(body as object);
       expect(res).to.have.status(400);
-      expect(res.body.msg).to.eql('Please enter an email');
+      expect(res.body).to.eql({ msg: 'Please enter an email', field: 'email' });
     }
   });
 

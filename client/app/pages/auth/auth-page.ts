@@ -5,6 +5,7 @@ import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { map } from 'rxjs';
 import { AuthService } from '../../core/auth.service';
 import { errorMessage } from '../../core/error-message';
+import { FieldCheck, FieldChecks, emailAddress, filled, newPassword, samePassword } from '../../shared/field-checks';
 import { Notices, NoticesList } from '../../shared/notices';
 
 /**
@@ -13,7 +14,7 @@ import { Notices, NoticesList } from '../../shared/notices';
  */
 @Component({
   selector: 'gc-auth-page',
-  imports: [FormsModule, NoticesList, RouterLink],
+  imports: [FieldCheck, FormsModule, NoticesList, RouterLink],
   template: `
     <div class="auth-card">
       <gc-notices [notices]="notices" />
@@ -27,7 +28,7 @@ import { Notices, NoticesList } from '../../shared/notices';
           </p>
         }
 
-        <form #authForm="ngForm" (ngSubmit)="submit()">
+        <form (ngSubmit)="submit()">
           <div class="mb-3">
             <label for="email" class="form-label">Email</label>
             <input
@@ -38,6 +39,8 @@ import { Notices, NoticesList } from '../../shared/notices';
               required
               autocomplete="username"
               [(ngModel)]="email"
+              [gcField]="checks"
+              gcFieldName="email"
             />
           </div>
           <div class="mb-3">
@@ -51,6 +54,8 @@ import { Notices, NoticesList } from '../../shared/notices';
               [attr.minlength]="signup() ? 8 : null"
               [attr.autocomplete]="signup() ? 'new-password' : 'current-password'"
               [(ngModel)]="password"
+              [gcField]="checks"
+              gcFieldName="password"
             />
             @if (signup()) {
               <div class="form-text">At least 8 characters.</div>
@@ -64,16 +69,15 @@ import { Notices, NoticesList } from '../../shared/notices';
                 type="password"
                 name="confirmation"
                 class="form-control"
+                required
                 autocomplete="new-password"
                 [(ngModel)]="confirmation"
+                [gcField]="checks"
+                gcFieldName="confirmation"
               />
             </div>
           }
-          <button
-            type="submit"
-            class="btn btn-primary w-100"
-            [disabled]="authForm.invalid || busy() || (signup() && confirmation() !== password())"
-          >
+          <button type="submit" class="btn btn-primary w-100" [attr.aria-disabled]="busy() || null">
             {{ signup() ? 'Create account' : 'Sign in' }}
           </button>
         </form>
@@ -116,7 +120,11 @@ export class AuthPage {
   protected readonly password = signal('');
   protected readonly confirmation = signal('');
   protected readonly busy = signal(false);
-  protected readonly canSubmit = computed(() => !this.signup() || this.password() === this.confirmation());
+  protected readonly checks = new FieldChecks(() => ({
+    email: emailAddress(this.email),
+    password: this.signup() ? newPassword(this.password) : filled(this.password, 'Enter your password.'),
+    ...(this.signup() ? { confirmation: samePassword(this.confirmation, this.password) } : {})
+  }));
   protected readonly heading = computed(() =>
     !this.signup() ? 'Sign in' : this.auth.trial() ? 'Keep your work' : 'Create your account'
   );
@@ -129,13 +137,15 @@ export class AuthPage {
   });
 
   protected async submit(): Promise<void> {
-    if (!this.canSubmit()) return;
+    if (this.busy() || !this.checks.validate()) return;
     this.busy.set(true);
     try {
       if (this.signup()) await this.auth.signUp(this.email(), this.password());
       else await this.auth.signIn(this.email(), this.password());
       await this.router.navigateByUrl('/home');
     } catch (err) {
+      // A problem with one field shows on it; others, such as a wrong password at sign-in, above the form.
+      if (this.checks.reportServer(err)) return;
       this.notices.error(
         errorMessage(err, this.signup() ? 'Error: could not create the account.' : 'Error: could not sign in.')
       );

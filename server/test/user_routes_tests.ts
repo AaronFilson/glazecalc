@@ -147,7 +147,7 @@ describe('user API', () => {
     it('does not sign up a second account with the same email', async () => {
       const res = await api().post('/signup').send({ email: user.email, password: 'password123' });
       expect(res).to.have.status(400);
-      expect(res.body.msg).to.eql('An account with that email already exists.');
+      expect(res.body).to.eql({ msg: 'An account with that email already exists.', field: 'email' });
     });
   });
 

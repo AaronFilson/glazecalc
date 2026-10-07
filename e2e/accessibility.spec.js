@@ -31,6 +31,11 @@ for (const colorScheme of ['light', 'dark']) {
         await expect(page.locator('h1')).toBeVisible();
         await expectNoProblems(page, colorScheme + ' ' + path);
       }
+      // Fields marked with problems: the outline and the message in this mode's colors.
+      await page.goto('/signup');
+      await page.getByRole('button', { name: 'Create account' }).click();
+      await expect(page.locator('#email')).toHaveAttribute('aria-invalid', 'true');
+      await expectNoProblems(page, colorScheme + ' /signup with problems marked');
     });
 
     test('the app pages, signed in', async ({ page, request }) => {
@@ -54,6 +59,11 @@ for (const colorScheme of ['light', 'dark']) {
       await page.getByLabel(/^Just a batch list/).check();
       await expectNoProblems(page, colorScheme + ' /recipe print view, batch list');
       await page.getByRole('button', { name: 'Back to the recipe' }).click();
+      // The recipe's fields marked with problems.
+      await page.locator('#recipe-name').fill('');
+      await page.getByRole('button', { name: 'Save', exact: true }).click();
+      await expect(page.locator('#recipe-name')).toHaveAttribute('aria-invalid', 'true');
+      await expectNoProblems(page, colorScheme + ' /recipe with problems marked');
       // The question about unsaved changes, open.
       await page.getByRole('button', { name: 'New recipe' }).click();
       await expect(page.getByRole('button', { name: 'Keep editing' })).toBeFocused();

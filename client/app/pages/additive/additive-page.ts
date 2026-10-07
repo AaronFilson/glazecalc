@@ -6,6 +6,7 @@ import { errorMessage } from '../../core/error-message';
 import { Additive } from '../../core/models';
 import { Busy } from '../../shared/busy';
 import { ChemistryForm } from '../../shared/chemistry-form';
+import { FieldCheck } from '../../shared/field-checks';
 import { Notices, NoticesList } from '../../shared/notices';
 import { ADDITIVE_OXIDES, fieldsText, firstOf } from '../../shared/options';
 import { PageHeader } from '../../shared/page-header';
@@ -14,7 +15,7 @@ import { StandardList } from '../../shared/standard-list';
 
 @Component({
   selector: 'gc-additive-page',
-  imports: [FormsModule, NoticesList, PageHeader, RemoveButton, StandardList],
+  imports: [FieldCheck, FormsModule, NoticesList, PageHeader, RemoveButton, StandardList],
   templateUrl: './additive-page.html'
 })
 export class AdditivePage implements OnInit {
@@ -28,7 +29,7 @@ export class AdditivePage implements OnInit {
   protected readonly saving = new Busy();
 
   // An additive is entered as a material is (fired oxides and LOI), so a recipe can count it in the unity formula.
-  protected readonly form = new ChemistryForm(this.notices);
+  protected readonly form = new ChemistryForm(this.notices, 'additive');
 
   protected readonly myAdditives = signal<Additive[]>([]);
   protected readonly standardAdditives = signal<Additive[]>([]);

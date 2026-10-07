@@ -1,6 +1,6 @@
 const { test, expect } = require('@playwright/test');
 const { formatFormula } = require('../lib/chemistry');
-const { signUpAndSignIn } = require('./helpers');
+const { expectFieldProblem, signUpAndSignIn } = require('./helpers');
 
 const standardTable = (page) => page.locator('section', { hasText: 'The standard materials:' }).locator('table');
 const myTable = (page) => page.locator('section', { hasText: 'My server materials:' }).locator('table');
@@ -101,6 +101,7 @@ test('rejects an LOI of 100 percent', async ({ page }) => {
   await page.locator('#LOI').fill('100');
   await page.getByRole('button', { name: 'Save' }).click();
 
-  await expect(page.locator('.errors-section')).toContainText('LOI');
+  await expectFieldProblem(page, 'LOI', 'Enter the LOI as a percent from 0 to under 100, such as 12.5.');
+  await expect(page.locator('#LOI')).toBeFocused();
   await expect(page.locator('.server-msg')).toHaveCount(0);
 });

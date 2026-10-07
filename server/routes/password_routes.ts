@@ -5,7 +5,8 @@
 //   PUT  /api/password         { current, password } (signed in) changes it
 //
 // A new password signs out every device (the user's tokenVersion goes up) and
-// sends a notice to the account's address.
+// sends a notice to the account's address. A 400 about one field names it:
+// { msg, field: 'password' }.
 import crypto from 'node:crypto';
 import express from 'express';
 import type { Types } from 'mongoose';
@@ -43,7 +44,7 @@ passwordRouter.post('/forgot', limits.forgotPassword, express.json(), (req, res)
     return res.status(503).json({ msg: 'Password reset by email is not available yet.' });
   }
   const address = email.normalize(((req.body ?? {}) as { email?: unknown }).email);
-  if (!email.isValid(address)) return res.status(400).json({ msg: 'Please enter an email' });
+  if (!email.isValid(address)) return res.status(400).json({ msg: 'Please enter an email', field: 'email' });
 
   // The same reply whether or not the account exists, sent before looking.
   res.status(200).json({ msg: SENT });
@@ -75,7 +76,7 @@ passwordRouter.post('/reset', limits.resetPassword, express.json(), async (req, 
   const body = (req.body ?? {}) as { token?: unknown; password?: unknown };
   if (typeof body.token !== 'string' || !body.token) return res.status(400).json({ msg: BAD_LINK });
   const problem = password.problem(body.password);
-  if (problem) return res.status(400).json({ msg: problem });
+  if (problem) return res.status(400).json({ msg: problem, field: 'password' });
 
   // Marking the request used in the same step makes each link work only once.
   const now = new Date();
@@ -99,13 +100,13 @@ passwordRouter.put(
   async (req, res) => {
     const body = (req.body ?? {}) as { current?: unknown; password?: unknown };
     const problem = password.problem(body.password);
-    if (problem) return res.status(400).json({ msg: problem });
+    if (problem) return res.status(400).json({ msg: problem, field: 'password' });
 
     const user = await User.findById(userOf(req)._id);
     if (!user) return res.status(404).json({ msg: 'No user with that id' });
     // 400 rather than 401: the user is signed in, and a 401 would sign them out.
     if (!(await password.matches(body.current, user.password))) {
-      return res.status(400).json({ msg: 'Your current password is not correct.' });
+      return res.status(400).json({ msg: 'Your current password is not correct.', field: 'current' });
     }
     await setPassword(user, body.password as string);
     // A new session keeps this browser signed in; every other one is signed out.

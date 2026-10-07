@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 import { Material } from '../../core/models';
-import { API, answer, httpMock, settle, testProviders, text } from '../../testing/test-providers';
+import { answer, API, fieldProblem, httpMock, settle, testProviders, text } from '../../testing/test-providers';
 import { MaterialPage } from './material-page';
 
 describe('MaterialPage', () => {
@@ -112,20 +112,40 @@ describe('MaterialPage', () => {
   });
 
   it('refuses an LOI of 100 percent without calling the server', async () => {
-    const { page } = await create();
+    const { fixture, page } = await create();
     enterTalc(page);
     page['form'].loi.set('100');
     await page['save']();
+    await fixture.whenStable();
     httpMock().expectNone(API + '/materials/create');
-    expect(page['notices'].errors()[0]).toContain('LOI');
+    expect(fieldProblem(fixture, 'LOI')).toBe('Enter the LOI as a percent from 0 to under 100, such as 12.5.');
+    expect(document.activeElement?.id).toBe('LOI');
   });
 
-  it('needs a name and an oxide', async () => {
-    const { page } = await create();
+  it('needs a name and an oxide, each with an amount', async () => {
+    const { fixture, page } = await create();
     page['form'].addOxide();
-    expect(page['notices'].errors()).toEqual(['Error: please select an oxide.']);
+    await fixture.whenStable();
+    expect(fieldProblem(fixture, 'firedoxide')).toBe('Choose an oxide, then Add the oxide to the list.');
     await page['save']();
-    expect(page['notices'].errors()[1]).toBe('Error: enter a name and at least one oxide.');
+    await fixture.whenStable();
+    expect(fieldProblem(fixture, 'material-name')).toBe('Give the material a name.');
+    expect(fieldProblem(fixture, 'firedoxide')).toBe(
+      'Add at least one oxide: choose it, then Add the oxide to the list.'
+    );
+    expect(document.activeElement?.id).toBe('material-name');
+
+    page['form'].name.set('Mine');
+    page['form'].selectedOxide.set('CaO');
+    page['form'].addOxide();
+    page['form'].formula()[0].amount = 'one';
+    await fixture.whenStable();
+    expect(fieldProblem(fixture, 'firedoxide')).toBe('');
+    await page['save']();
+    await fixture.whenStable();
+    expect(fieldProblem(fixture, 'oxide-amount-0')).toBe('Enter the amount as a number, such as 0.5.');
+    httpMock().expectNone(API + '/materials/create');
+    expect(page['notices'].errors()).toEqual([]);
   });
 
   it('warns when a percent analysis does not total about 100', async () => {

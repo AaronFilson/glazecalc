@@ -6,6 +6,17 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Added
 
+- **Problems show on the fields themselves**
+  ([#9](https://github.com/AaronFilson/glazecalc/issues/9)), on every form: sign-in and sign-up,
+  password reset and change, deleting the account, materials, additives, firing logs, notes,
+  advice and recipes.
+  - A field with a problem is outlined, marked for screen readers (aria-invalid), and says what
+    is wrong under it: "Enter an amount (0 is fine).", "The two passwords do not match."
+  - Fields are checked when you leave one with something in it, and all of them when you save;
+    the focus goes to the first problem. A mark goes as soon as the field is fixed.
+  - The server says which field a problem is about, so "An account with that email already
+    exists" shows on the email field.
+  - Buttons are no longer greyed out without saying why; pressing one says what to fix.
 - **Print a recipe for the glaze room** ([#4](https://github.com/AaronFilson/glazecalc/issues/4)).
   - **Print**, beside Save or on a saved recipe, lays it out for paper: one page on Letter or A4,
     black on white whatever the screen's theme.

@@ -33,7 +33,15 @@
       <div class="recipe-fields">
         <div class="recipe-title-field">
           <label for="recipe-name" class="form-label">Title</label>
-          <input id="recipe-name" type="text" name="title" class="form-control" [(ngModel)]="title" />
+          <input
+            id="recipe-name"
+            type="text"
+            name="title"
+            class="form-control"
+            [(ngModel)]="title"
+            [gcField]="checks"
+            gcFieldName="title"
+          />
         </div>
         <div>
           <label for="recipe-date" class="form-label">Date</label>
@@ -76,6 +84,8 @@
                     [attr.aria-label]="'Amount of ' + line.name"
                     [value]="line.amount ?? ''"
                     (input)="setAmount($index, $any($event.target).value)"
+                    [gcField]="checks"
+                    [gcFieldName]="'material-amount-' + $index"
                   />
                 </td>
                 <td class="recipe-share">{{ share(line.amount) }}</td>
@@ -174,6 +184,8 @@
                       [attr.aria-label]="'Amount of ' + line.name"
                       [value]="line.amount ?? ''"
                       (input)="setAdditiveAmount($index, $any($event.target).value)"
+                      [gcField]="checks"
+                      [gcFieldName]="'additive-amount-' + $index"
                     />
                     <!-- Beside the amount, or under it on a phone. -->
                     <fieldset class="unit-choice">

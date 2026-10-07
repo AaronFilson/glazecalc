@@ -54,7 +54,7 @@ For anyone reading the code:
   and put back online. The
   [case study](docs/case-study.md) tells how.
 - **Tested at three levels, in CI on every push:** 195 server tests (98% of statements) run
-  against the app in-process; 210 Angular unit tests (93%); 72 Playwright browser tests,
+  against the app in-process; 221 Angular unit tests (93%); 72 Playwright browser tests,
   including [axe](https://github.com/dequelabs/axe-core) accessibility checks of every page in
   light and dark mode.
 - **One glaze chemistry library** for the browser and the tests, checked against values worked

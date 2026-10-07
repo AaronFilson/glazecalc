@@ -80,13 +80,13 @@ guestRouter.post('/claim', limits.signUp, jwtAuth, express.json(), async (req, r
   if (!trial.guest) return res.status(403).json({ msg: NOT_A_TRIAL });
   const body = (req.body ?? {}) as { email?: unknown; password?: unknown };
   const address = email.normalize(body.email);
-  if (!email.isValid(address)) return res.status(400).json({ msg: 'Please enter an email' });
+  if (!email.isValid(address)) return res.status(400).json({ msg: 'Please enter an email', field: 'email' });
   const problem = password.problem(body.password);
-  if (problem) return res.status(400).json({ msg: problem });
+  if (problem) return res.status(400).json({ msg: problem, field: 'password' });
 
   try {
     if (await User.exists({ email: address }).collation(email.collation)) {
-      return res.status(400).json({ msg: EXISTS });
+      return res.status(400).json({ msg: EXISTS, field: 'email' });
     }
     const hash = await password.hash(body.password as string);
     // The trial's records are already its own, so keeping them is just turning
@@ -107,7 +107,7 @@ guestRouter.post('/claim', limits.signUp, jwtAuth, express.json(), async (req, r
     return res.status(200).json({ email: user.email });
   } catch (err) {
     // The unique index catches a sign-up for the same email racing this one.
-    if (isDuplicateKey(err)) return res.status(400).json({ msg: EXISTS });
+    if (isDuplicateKey(err)) return res.status(400).json({ msg: EXISTS, field: 'email' });
     throw err;
   }
 });

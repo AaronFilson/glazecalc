@@ -2,7 +2,7 @@ import { provideLocationMocks } from '@angular/common/testing';
 import { TestBed } from '@angular/core/testing';
 import { Router } from '@angular/router';
 import { Additive, Material, Recipe } from '../../core/models';
-import { API, answer, httpMock, settle, testProviders, text } from '../../testing/test-providers';
+import { answer, API, fieldProblem, httpMock, settle, testProviders, text } from '../../testing/test-providers';
 import { MOLAR_MASS } from '../../../../lib/chemistry';
 import { evaluate, savedAnalysis } from './recipe-analysis';
 import { RecipePage } from './recipe-page';
@@ -468,20 +468,27 @@ describe('RecipePage', () => {
   });
 
   it('asks for a title, a material and every amount before saving', async () => {
-    const { page } = await create();
+    const { fixture, page } = await create();
     const tryToSave = async (expected: string) => {
       await page['save']();
+      await fixture.whenStable();
       // Beside the save buttons, not at the top of the page.
       expect(page['saveProblem']()).toBe(expected);
       expect(page['notices'].errors()).toEqual([]);
     };
-    await tryToSave('Please give the recipe a title.');
-    page['title'].set('Matte');
+    // The title is marked on its field; a missing material is said beside the buttons.
     await tryToSave('Please add at least one material.');
+    expect(fieldProblem(fixture, 'recipe-name')).toBe('Give the recipe a title.');
+    expect(document.activeElement?.id).toBe('recipe-name');
+    page['title'].set('Matte');
     page['addMaterial'](WHITING);
-    await tryToSave('Please enter an amount for Whiting (0 is fine).');
+    await tryToSave('');
+    expect(fieldProblem(fixture, 'recipe-name')).toBe('');
+    expect(fieldProblem(fixture, 'material-amount-0')).toBe('Enter an amount (0 is fine).');
+    expect(document.activeElement?.id).toBe('material-amount-0');
     page['setAmount'](0, '-2');
-    await tryToSave('The amount for Whiting is not a number ("-2"). Use a point for decimals, such as 12.5.');
+    await tryToSave('');
+    expect(fieldProblem(fixture, 'material-amount-0')).toBe('Enter a number, such as 12.5, with a point for decimals.');
     page['setAmount'](0, '0');
     page['addMaterial'](SILICA);
     page['setAmount'](1, '30');
@@ -779,9 +786,11 @@ describe('RecipePage', () => {
       fill(page, [[WHITING, '2o']]);
       click(fixture, 'Print');
       await fixture.whenStable();
-      expect(text(fixture, '.recipe-save-problem')).toBe(
-        'The amount for Whiting is not a number ("2o"). Please fix it before printing.'
+      expect(text(fixture, '.recipe-save-problem')).toBe('');
+      expect(fieldProblem(fixture, 'material-amount-0')).toBe(
+        'Enter a number, such as 12.5, with a point for decimals.'
       );
+      expect(document.activeElement?.id).toBe('material-amount-0');
       expect(TestBed.inject(Router).url).toBe('/');
     });
   });

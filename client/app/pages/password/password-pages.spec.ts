@@ -2,7 +2,7 @@ import { Location } from '@angular/common';
 import { TestBed } from '@angular/core/testing';
 import { ActivatedRoute, Router, convertToParamMap } from '@angular/router';
 import { AuthService } from '../../core/auth.service';
-import { API, answer, httpMock, settle, testProviders, text } from '../../testing/test-providers';
+import { answer, API, fieldProblem, httpMock, settle, testProviders, text } from '../../testing/test-providers';
 import { AccountPage } from './account-page';
 import { ForgotPage } from './forgot-page';
 import { ResetPage } from './reset-page';
@@ -97,10 +97,10 @@ describe('ResetPage', () => {
     page['password'].set('new-password');
     page['confirmation'].set('new-passwor');
     await fixture.whenStable();
-    expect(text(fixture)).toContain('The two passwords do not match.');
-    expect((fixture.nativeElement.querySelector('button[type=submit]') as HTMLButtonElement).disabled).toBe(true);
     await page['submit']();
+    await fixture.whenStable();
     httpMock().expectNone(API + '/password/reset');
+    expect(fieldProblem(fixture, 'confirmation')).toBe('The two passwords do not match.');
   });
 
   it('shows an expired link and lets the user try again', async () => {

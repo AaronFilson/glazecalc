@@ -3,12 +3,13 @@ import { FormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
 import { AuthService } from '../../core/auth.service';
 import { errorMessage } from '../../core/error-message';
+import { FieldCheck, FieldChecks, emailAddress } from '../../shared/field-checks';
 import { Notices, NoticesList } from '../../shared/notices';
 
 /** Asks for a password reset email. */
 @Component({
   selector: 'gc-forgot-page',
-  imports: [FormsModule, NoticesList, RouterLink],
+  imports: [FieldCheck, FormsModule, NoticesList, RouterLink],
   template: `
     <gc-notices [notices]="notices" />
     <section class="auth-text">
@@ -18,14 +19,21 @@ import { Notices, NoticesList } from '../../shared/notices';
         <p>Check your inbox and junk folder. If nothing arrives, check the address and ask again.</p>
       } @else {
         <p>Enter the email for your account, and we will send you a link to choose a new password.</p>
-        <form #forgotForm="ngForm" (ngSubmit)="submit()" class="d-flex flex-wrap align-items-center gap-3 mb-3">
+        <form (ngSubmit)="submit()" class="d-flex flex-wrap align-items-center gap-3 mb-3">
           <div>
             <label for="email">Email: </label>
-            <input id="email" type="email" name="email" required autocomplete="username" [(ngModel)]="email" />
+            <input
+              id="email"
+              type="email"
+              name="email"
+              required
+              autocomplete="username"
+              [(ngModel)]="email"
+              [gcField]="checks"
+              gcFieldName="email"
+            />
           </div>
-          <button type="submit" class="btn btn-success" [disabled]="forgotForm.invalid || busy()">
-            Send reset link
-          </button>
+          <button type="submit" class="btn btn-success" [attr.aria-disabled]="busy() || null">Send reset link</button>
         </form>
       }
       <p><a routerLink="/signin" class="btn btn-light border">Back to sign in</a></p>
@@ -39,13 +47,15 @@ export class ForgotPage {
   protected readonly email = signal('');
   protected readonly busy = signal(false);
   protected readonly sent = signal<string | null>(null);
+  protected readonly checks = new FieldChecks(() => ({ email: emailAddress(this.email) }));
 
   protected async submit(): Promise<void> {
-    if (this.busy()) return;
+    if (this.busy() || !this.checks.validate()) return;
     this.busy.set(true);
     try {
       this.sent.set(await this.auth.requestReset(this.email()));
     } catch (err) {
+      if (this.checks.reportServer(err)) return;
       this.notices.error(errorMessage(err, 'Error: could not send the reset email. Please try again.'));
     } finally {
       this.busy.set(false);

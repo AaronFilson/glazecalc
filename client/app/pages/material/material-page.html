@@ -11,7 +11,14 @@
     <div class="row">
       <div class="col-xl-4 col-md-4 col-8">
         <label for="material-name">Name of Material: </label><br />
-        <input id="material-name" type="text" name="name" [(ngModel)]="form.name" />
+        <input
+          id="material-name"
+          type="text"
+          name="name"
+          [(ngModel)]="form.name"
+          [gcField]="form.checks"
+          gcFieldName="name"
+        />
       </div>
       <div class="col-xl-4 col-md-4 col-8">
         <label for="raw-formula">Raw formula: </label><br />
@@ -31,11 +38,18 @@
     <div class="row">
       <div class="col-xl-4 col-md-4 col-8">
         <label for="LOI">Loss on Ignition - LOI (percentage): </label>
-        <input id="LOI" type="text" name="loi" [(ngModel)]="form.loi" />
+        <input id="LOI" type="text" name="loi" [(ngModel)]="form.loi" [gcField]="form.checks" gcFieldName="loi" />
       </div>
       <div class="col-xl-4 col-md-4 col-8">
         <label for="manualmolecularweight">Raw molecular weight of the formula (used only if LOI is blank): </label>
-        <input id="manualmolecularweight" type="text" name="molecularweight" [(ngModel)]="form.molecularweight" />
+        <input
+          id="manualmolecularweight"
+          type="text"
+          name="molecularweight"
+          [(ngModel)]="form.molecularweight"
+          [gcField]="form.checks"
+          gcFieldName="molecularweight"
+        />
       </div>
     </div>
     <p>The equivalent and fired weights are calculated from the formula and LOI when you save.</p>
@@ -45,7 +59,13 @@
       <div class="col-lg-6">
         <label for="firedoxide">Oxide Selection</label>
         <div>
-          <select id="firedoxide" name="firedox-select" [(ngModel)]="form.selectedOxide">
+          <select
+            id="firedoxide"
+            name="firedox-select"
+            [(ngModel)]="form.selectedOxide"
+            [gcField]="form.checks"
+            gcFieldName="oxide"
+          >
             <option value="">none</option>
             @for (oxide of oxides; track oxide.value) {
               <option [value]="oxide.value">{{ oxide.label }}</option>
@@ -93,6 +113,8 @@
                   type="text"
                   [name]="'amount' + $index"
                   class="oxide-amount"
+                  [gcField]="form.checks"
+                  [gcFieldName]="'amount-' + $index"
                   [(ngModel)]="line.amount"
                 />
               </p>

@@ -3,7 +3,7 @@ import { TestBed } from '@angular/core/testing';
 import { Router } from '@angular/router';
 import { App } from '../app';
 import { AuthService } from '../core/auth.service';
-import { API, answer, httpMock, settle, testProviders, text } from '../testing/test-providers';
+import { answer, API, fieldProblem, httpMock, settle, testProviders, text } from '../testing/test-providers';
 import { AboutPage } from './about/about-page';
 import { AdditivePage } from './additive/additive-page';
 import { AdvicePage } from './advice/advice-page';
@@ -105,7 +105,8 @@ describe('AdditivePage', () => {
 
     const form = page['form'];
     form.addOxide();
-    expect(page['notices'].errors()).toEqual(['Error: please select an oxide.']);
+    await fixture.whenStable();
+    expect(fieldProblem(fixture, 'additive-oxide')).toBe('Choose an oxide, then Add the oxide to the list.');
     // Black cobalt oxide, Co3O4: CoO with a 6.64% LOI.
     form.name.set('My Stain');
     form.loi.set('6.64');
@@ -164,7 +165,9 @@ describe('AdvicePage', () => {
     expect(text(fixture, '.general-advice')).toContain('Tags: mixing, tools');
 
     await page['save']();
-    expect(page['notices'].errors()).toEqual(['Error: there was missing information in the form.']);
+    await fixture.whenStable();
+    expect(fieldProblem(fixture, 'advice-title')).toBe('Give the advice a title.');
+    expect(fieldProblem(fixture, 'advice-content')).toBe('Write the advice.');
 
     page['title'].set('Wax');
     page['content'].set('Wax the foot');

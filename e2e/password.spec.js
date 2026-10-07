@@ -1,5 +1,5 @@
 const { test, expect } = require('@playwright/test');
-const { API, uniqueEmail } = require('./helpers');
+const { API, expectFieldProblem, uniqueEmail } = require('./helpers');
 const { nextEmail, resetLink, sentTo } = require('./mail');
 
 const header = (page) => page.locator('.account-email');
@@ -101,7 +101,8 @@ test('changes the password from the account page', async ({ browser, page, reque
   await page.locator('#password').fill('changed-password');
   await page.locator('#confirmation').fill('changed-password');
   await page.getByRole('button', { name: 'Change password' }).click();
-  await expect(page.locator('.errors-section')).toContainText('Your current password is not correct.');
+  await expectFieldProblem(page, 'current', 'Your current password is not correct.');
+  await expect(page.locator('#current')).toBeFocused();
   await expect(header(page)).toHaveText(email);
 
   await page.locator('#current').fill('old-password');

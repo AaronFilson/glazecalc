@@ -1,3 +1,4 @@
+const { expect } = require('@playwright/test');
 const API = 'http://localhost:' + (process.env.E2E_PORT || '3100') + '/api';
 
 let count = 0;
@@ -34,4 +35,21 @@ const addColorant = async (page, name, amount) => {
   await page.getByRole('textbox', { name: 'Amount of ' + name, exact: true }).fill(String(amount));
 };
 
-module.exports = { API, addColorant, addMaterial, addStandardMaterial, signUpAndSignIn, uniqueEmail };
+// A field marked wrong (client/app/shared/field-checks.ts): aria-invalid, and
+// the message under it is the field's description, so a screen reader says it.
+const expectFieldProblem = async (page, id, message) => {
+  const field = page.locator('#' + id);
+  await expect(field).toHaveAttribute('aria-invalid', 'true');
+  await expect(field).toHaveAccessibleDescription(new RegExp(message.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '$'));
+  await expect(page.locator('#' + id + '-problem')).toHaveText(message);
+};
+
+module.exports = {
+  API,
+  addColorant,
+  addMaterial,
+  addStandardMaterial,
+  expectFieldProblem,
+  signUpAndSignIn,
+  uniqueEmail
+};

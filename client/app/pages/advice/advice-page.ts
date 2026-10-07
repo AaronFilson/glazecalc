@@ -6,13 +6,14 @@ import { AuthService } from '../../core/auth.service';
 import { errorMessage } from '../../core/error-message';
 import { Advice } from '../../core/models';
 import { Busy } from '../../shared/busy';
+import { FieldCheck, FieldChecks, required } from '../../shared/field-checks';
 import { Notices, NoticesList } from '../../shared/notices';
 import { PageHeader } from '../../shared/page-header';
 import { Removal, RemoveButton } from '../../shared/remove-button';
 
 @Component({
   selector: 'gc-advice-page',
-  imports: [FormsModule, NoticesList, PageHeader, RemoveButton, RouterLink],
+  imports: [FieldCheck, FormsModule, NoticesList, PageHeader, RemoveButton, RouterLink],
   template: `
     <gc-page-header
       title="Glaze advice"
@@ -47,7 +48,15 @@ import { Removal, RemoveButton } from '../../shared/remove-button';
         <form (ngSubmit)="save()">
           <div class="mb-3">
             <label for="advice-title">Title: </label>
-            <input id="advice-title" type="text" name="title" [(ngModel)]="title" />
+            <input
+              id="advice-title"
+              type="text"
+              name="title"
+              required
+              [(ngModel)]="title"
+              [gcField]="checks"
+              gcFieldName="title"
+            />
           </div>
           <div class="mb-3">
             <label for="advice-tags">Tags: </label>
@@ -55,7 +64,16 @@ import { Removal, RemoveButton } from '../../shared/remove-button';
           </div>
           <div class="mb-3">
             <label for="advice-content" class="boxlabel">Advice Content: </label>
-            <textarea id="advice-content" name="content" rows="4" class="form-control" [(ngModel)]="content"></textarea>
+            <textarea
+              id="advice-content"
+              name="content"
+              rows="4"
+              class="form-control"
+              required
+              [(ngModel)]="content"
+              [gcField]="checks"
+              gcFieldName="content"
+            ></textarea>
           </div>
           <button type="submit" class="btn btn-primary" [disabled]="saving.active()">Save</button>
         </form>
@@ -121,6 +139,10 @@ export class AdvicePage implements OnInit {
   protected readonly title = signal('');
   protected readonly tags = signal('');
   protected readonly content = signal('');
+  protected readonly checks = new FieldChecks(() => ({
+    title: required(this.title, 'Give the advice a title.'),
+    content: required(this.content, 'Write the advice.')
+  }));
   protected readonly myAdvice = signal<Advice[]>([]);
   protected readonly standardAdvice = signal<Advice[]>([]);
   protected readonly standardLoaded = signal(false);
@@ -148,10 +170,7 @@ export class AdvicePage implements OnInit {
   }
 
   private async saveNow(): Promise<void> {
-    if (!this.title() || !this.content()) {
-      this.notices.error('Error: there was missing information in the form.');
-      return;
-    }
+    if (!this.checks.validate()) return;
     try {
       const saved = await this.advice.create({
         title: this.title(),

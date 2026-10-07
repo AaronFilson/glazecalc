@@ -1,9 +1,10 @@
 import { DatePipe } from '@angular/common';
-import { Component, computed, inject, signal } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Router, RouterLink } from '@angular/router';
 import { AuthService } from '../../core/auth.service';
 import { errorMessage } from '../../core/error-message';
+import { FieldCheck, FieldChecks, filled, newPassword, samePassword } from '../../shared/field-checks';
 import { Notices, NoticesList } from '../../shared/notices';
 import { PageHeader } from '../../shared/page-header';
 import { SettingsSection } from './settings-section';
@@ -15,7 +16,7 @@ import { SettingsSection } from './settings-section';
  */
 @Component({
   selector: 'gc-account-page',
-  imports: [DatePipe, FormsModule, NoticesList, PageHeader, RouterLink, SettingsSection],
+  imports: [DatePipe, FieldCheck, FormsModule, NoticesList, PageHeader, RouterLink, SettingsSection],
   template: `
     @if (auth.trial(); as trial) {
       <gc-page-header title="Your trial" [lead]="'You are trying Glazecalc as ' + trial.name + '.'" />
@@ -36,7 +37,7 @@ import { SettingsSection } from './settings-section';
 
       <section class="auth-text">
         <h2>Change your password</h2>
-        <form #changeForm="ngForm" (ngSubmit)="submit()" class="account-form">
+        <form (ngSubmit)="submit()" class="account-form">
           <div class="mb-3">
             <label for="current" class="form-label">Current password</label>
             <input
@@ -47,6 +48,8 @@ import { SettingsSection } from './settings-section';
               required
               autocomplete="current-password"
               [(ngModel)]="current"
+              [gcField]="changeChecks"
+              gcFieldName="current"
             />
           </div>
           <div class="mb-3">
@@ -60,6 +63,8 @@ import { SettingsSection } from './settings-section';
               minlength="8"
               autocomplete="new-password"
               [(ngModel)]="password"
+              [gcField]="changeChecks"
+              gcFieldName="password"
             />
             <div class="form-text">
               At least 8 characters. Other devices signed in to this account will be signed out.
@@ -75,14 +80,11 @@ import { SettingsSection } from './settings-section';
               required
               autocomplete="new-password"
               [(ngModel)]="confirmation"
+              [gcField]="changeChecks"
+              gcFieldName="confirmation"
             />
-            @if (password() && confirmation() && !matches()) {
-              <div class="form-text text-danger">The two new passwords do not match.</div>
-            }
           </div>
-          <button type="submit" class="btn btn-primary" [disabled]="changeForm.invalid || !matches() || busy()">
-            Change password
-          </button>
+          <button type="submit" class="btn btn-primary" [attr.aria-disabled]="busy() || null">Change password</button>
         </form>
       </section>
 
@@ -92,7 +94,7 @@ import { SettingsSection } from './settings-section';
           This removes your account and everything you saved: recipes, materials, additives, notes, firing logs and
           advice. It cannot be undone.
         </p>
-        <form #deleteForm="ngForm" (ngSubmit)="deleteAccount()" class="account-form">
+        <form (ngSubmit)="deleteAccount()" class="account-form">
           <div class="mb-3">
             <label for="delete-password" class="form-label">Your password, to confirm</label>
             <input
@@ -103,9 +105,11 @@ import { SettingsSection } from './settings-section';
               required
               autocomplete="current-password"
               [(ngModel)]="deletePassword"
+              [gcField]="deleteChecks"
+              gcFieldName="deletePassword"
             />
           </div>
-          <button type="submit" class="btn btn-outline-danger" [disabled]="deleteForm.invalid || busy()">
+          <button type="submit" class="btn btn-outline-danger" [attr.aria-disabled]="busy() || null">
             Delete my account
           </button>
         </form>
@@ -127,11 +131,18 @@ export class AccountPage {
   protected readonly password = signal('');
   protected readonly confirmation = signal('');
   protected readonly deletePassword = signal('');
-  protected readonly matches = computed(() => this.password() === this.confirmation());
+  protected readonly changeChecks = new FieldChecks(() => ({
+    current: filled(this.current, 'Enter your current password.'),
+    password: newPassword(this.password),
+    confirmation: samePassword(this.confirmation, this.password)
+  }));
+  protected readonly deleteChecks = new FieldChecks(() => ({
+    deletePassword: filled(this.deletePassword, 'Enter your password to confirm.')
+  }));
   protected readonly busy = signal(false);
 
   protected async submit(): Promise<void> {
-    if (!this.matches() || this.busy()) return;
+    if (this.busy() || !this.changeChecks.validate()) return;
     this.busy.set(true);
     try {
       this.notices.success(await this.auth.changePassword(this.current(), this.password()));
@@ -139,6 +150,7 @@ export class AccountPage {
       this.password.set('');
       this.confirmation.set('');
     } catch (err) {
+      if (this.changeChecks.reportServer(err)) return;
       this.notices.error(errorMessage(err, 'Error: could not change the password. Please try again.'));
     } finally {
       this.busy.set(false);
@@ -146,16 +158,18 @@ export class AccountPage {
   }
 
   protected async deleteAccount(): Promise<void> {
-    if (this.busy()) return;
+    if (this.busy() || !this.deleteChecks.validate()) return;
     this.busy.set(true);
     try {
       await this.auth.deleteAccount(this.deletePassword());
       await this.router.navigateByUrl('/');
     } catch (err) {
+      this.deletePassword.set('');
+      // The server calls the password it checks "password".
+      if (this.deleteChecks.reportServer(err, { password: 'deletePassword' })) return;
       this.notices.error(errorMessage(err, 'Error: could not delete the account. Please try again.'));
     } finally {
       this.busy.set(false);
-      this.deletePassword.set('');
     }
   }
 }

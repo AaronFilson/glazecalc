@@ -6,6 +6,7 @@ import { errorMessage } from '../../core/error-message';
 import { Material } from '../../core/models';
 import { Busy } from '../../shared/busy';
 import { ChemistryForm } from '../../shared/chemistry-form';
+import { FieldCheck } from '../../shared/field-checks';
 import { Notices, NoticesList } from '../../shared/notices';
 import { FIRED_OXIDES, fieldsText, firstOf } from '../../shared/options';
 import { PageHeader } from '../../shared/page-header';
@@ -14,7 +15,7 @@ import { StandardList } from '../../shared/standard-list';
 
 @Component({
   selector: 'gc-material-page',
-  imports: [FormsModule, NoticesList, PageHeader, RemoveButton, StandardList],
+  imports: [FieldCheck, FormsModule, NoticesList, PageHeader, RemoveButton, StandardList],
   templateUrl: './material-page.html'
 })
 export class MaterialPage implements OnInit {

@@ -1,9 +1,10 @@
 import { Location } from '@angular/common';
-import { Component, computed, inject, signal } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { AuthService } from '../../core/auth.service';
 import { errorMessage } from '../../core/error-message';
+import { FieldCheck, FieldChecks, newPassword, samePassword } from '../../shared/field-checks';
 import { Notices, NoticesList } from '../../shared/notices';
 
 /**
@@ -16,7 +17,7 @@ import { Notices, NoticesList } from '../../shared/notices';
  */
 @Component({
   selector: 'gc-reset-page',
-  imports: [FormsModule, NoticesList, RouterLink],
+  imports: [FieldCheck, FormsModule, NoticesList, RouterLink],
   template: `
     <gc-notices [notices]="notices" />
     <section class="auth-text">
@@ -28,7 +29,7 @@ import { Notices, NoticesList } from '../../shared/notices';
         <p class="help-text">This page needs the link from a password reset email, and this one is incomplete.</p>
         <p><a routerLink="/forgot" class="btn btn-light border">Ask for a new link</a></p>
       } @else {
-        <form #resetForm="ngForm" (ngSubmit)="submit()" class="d-flex flex-wrap align-items-center gap-3 mb-3">
+        <form (ngSubmit)="submit()" class="d-flex flex-wrap align-items-center gap-3 mb-3">
           <div>
             <label for="password">New password: </label>
             <input
@@ -39,6 +40,8 @@ import { Notices, NoticesList } from '../../shared/notices';
               minlength="8"
               autocomplete="new-password"
               [(ngModel)]="password"
+              [gcField]="checks"
+              gcFieldName="password"
             />
           </div>
           <div>
@@ -50,16 +53,13 @@ import { Notices, NoticesList } from '../../shared/notices';
               required
               autocomplete="new-password"
               [(ngModel)]="confirmation"
+              [gcField]="checks"
+              gcFieldName="confirmation"
             />
           </div>
-          <button type="submit" class="btn btn-success" [disabled]="resetForm.invalid || !matches() || busy()">
-            Save new password
-          </button>
+          <button type="submit" class="btn btn-success" [attr.aria-disabled]="busy() || null">Save new password</button>
         </form>
         <p class="small">At least 8 characters. Every device signed in to the account will be signed out.</p>
-        @if (password() && confirmation() && !matches()) {
-          <p class="small text-danger">The two passwords do not match.</p>
-        }
       }
     </section>
   `
@@ -71,7 +71,10 @@ export class ResetPage {
   protected readonly notices = new Notices();
   protected readonly password = signal('');
   protected readonly confirmation = signal('');
-  protected readonly matches = computed(() => this.password() === this.confirmation());
+  protected readonly checks = new FieldChecks(() => ({
+    password: newPassword(this.password),
+    confirmation: samePassword(this.confirmation, this.password)
+  }));
   protected readonly busy = signal(false);
   protected readonly done = signal<string | null>(null);
 
@@ -81,11 +84,12 @@ export class ResetPage {
   }
 
   protected async submit(): Promise<void> {
-    if (!this.token || !this.matches() || this.busy()) return;
+    if (!this.token || this.busy() || !this.checks.validate()) return;
     this.busy.set(true);
     try {
       this.done.set(await this.auth.resetPassword(this.token, this.password()));
     } catch (err) {
+      if (this.checks.reportServer(err)) return;
       this.notices.error(errorMessage(err, 'Error: could not change the password. Please try again.'));
     } finally {
       this.busy.set(false);

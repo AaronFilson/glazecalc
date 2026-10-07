@@ -4,6 +4,9 @@
 //   POST /api/signup   { email, password }            { email }
 //   GET  /api/signin   Authorization: Basic email:pw  { email, kept }
 //   POST /api/signout
+//
+// A 400 about one of the fields sent names it, so the app can mark that field:
+// { msg, field: 'email' }. The same goes for the password and account routes.
 import express from 'express';
 import { mergeTrial } from '../lib/account_data.ts';
 import basicHTTP from '../lib/basic_http.ts';
@@ -26,12 +29,12 @@ const SIGN_IN_FAILED = 'Email or password is incorrect.';
 authRouter.post('/signup', limits.signUp, express.json(), async (req, res) => {
   const body = (req.body ?? {}) as { email?: unknown; password?: unknown };
   const address = email.normalize(body.email);
-  if (!email.isValid(address)) return res.status(400).json({ msg: 'Please enter an email' });
+  if (!email.isValid(address)) return res.status(400).json({ msg: 'Please enter an email', field: 'email' });
   const problem = password.problem(body.password);
-  if (problem) return res.status(400).json({ msg: problem });
+  if (problem) return res.status(400).json({ msg: problem, field: 'password' });
 
   if (await User.exists({ email: address }).collation(email.collation)) {
-    return res.status(400).json({ msg: EXISTS });
+    return res.status(400).json({ msg: EXISTS, field: 'email' });
   }
   try {
     const user = await User.create({ email: address, password: await password.hash(body.password as string) });
@@ -39,7 +42,7 @@ authRouter.post('/signup', limits.signUp, express.json(), async (req, res) => {
     return res.status(200).json({ email: user.email });
   } catch (err) {
     // The unique index catches two sign-ups for one email racing each other.
-    if (isDuplicateKey(err)) return res.status(400).json({ msg: EXISTS });
+    if (isDuplicateKey(err)) return res.status(400).json({ msg: EXISTS, field: 'email' });
     throw err;
   }
 });

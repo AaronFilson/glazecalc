@@ -6,7 +6,15 @@
     <div class="row">
       <div class="col-xl-4 col-lg-6 col-md-10 mb-3">
         <label for="firing-title">Title of Firing: </label>
-        <input id="firing-title" type="text" name="title" [(ngModel)]="title" />
+        <input
+          id="firing-title"
+          type="text"
+          name="title"
+          required
+          [(ngModel)]="title"
+          [gcField]="checks"
+          gcFieldName="title"
+        />
       </div>
       <div class="col-xl-4 col-lg-6 col-md-10 mb-3">
         <label for="firing-kiln">Kiln: </label>
@@ -26,7 +34,13 @@
     <div class="mb-3">
       <label for="fieldselect">Select and add fields to the firing record : </label>
       <div>
-        <select id="fieldselect" name="field-select" [(ngModel)]="selectedField">
+        <select
+          id="fieldselect"
+          name="field-select"
+          [(ngModel)]="selectedField"
+          [gcField]="checks"
+          gcFieldName="fields"
+        >
           @for (field of fieldOptions; track field) {
             <option [value]="field">{{ field }}</option>
           }

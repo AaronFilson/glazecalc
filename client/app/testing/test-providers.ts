@@ -34,6 +34,20 @@ export function answer(path: string, body: object | null): void {
     .forEach((req) => req.flush(body));
 }
 
+/**
+ * What a field is marked wrong with (shared/field-checks.ts), read as assistive
+ * technology does: aria-invalid, and the message its aria-describedby names. ''
+ * when it is not marked.
+ */
+export function fieldProblem(fixture: ComponentFixture<unknown>, id: string): string {
+  const field = (fixture.nativeElement as HTMLElement).querySelector('#' + id);
+  if (!field) throw new Error('no field #' + id);
+  if (field.getAttribute('aria-invalid') !== 'true') return '';
+  const ids = (field.getAttribute('aria-describedby') ?? '').split(' ');
+  const message = ids.map((one) => document.getElementById(one)).find((el) => el?.classList.contains('field-problem'));
+  return message?.textContent?.trim() ?? '';
+}
+
 export function text(fixture: ComponentFixture<unknown>, selector = ':root'): string {
   const root = fixture.nativeElement as HTMLElement;
   const el = selector === ':root' ? root : root.querySelector(selector);
