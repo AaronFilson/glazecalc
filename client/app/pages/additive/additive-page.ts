@@ -9,6 +9,7 @@ import { Notices, NoticesList } from '../../shared/notices';
 import { optional } from '../../shared/dates';
 import { ADDITIVE_COMPONENTS, ELEMENTS, firstOf } from '../../shared/options';
 import { PageHeader } from '../../shared/page-header';
+import { Removal, RemoveButton } from '../../shared/remove-button';
 
 interface FormulaLine {
   name: string;
@@ -17,7 +18,7 @@ interface FormulaLine {
 
 @Component({
   selector: 'gc-additive-page',
-  imports: [FormsModule, NoticesList, PageHeader],
+  imports: [FormsModule, NoticesList, PageHeader, RemoveButton],
   templateUrl: './additive-page.html'
 })
 export class AdditivePage implements OnInit {
@@ -40,7 +41,7 @@ export class AdditivePage implements OnInit {
 
   protected readonly myAdditives = signal<Additive[]>([]);
   protected readonly standardAdditives = signal<Additive[]>([]);
-  protected readonly showRemove = signal(false);
+  protected readonly removal = new Removal(this.additives, this.myAdditives, this.notices, (additive) => additive.name);
 
   ngOnInit(): void {
     this.additives.getAll().then(
@@ -89,16 +90,6 @@ export class AdditivePage implements OnInit {
       this.formula.set([]);
     } catch (err) {
       this.notices.error(errorMessage(err, 'Error: the request to the server failed.'));
-    }
-  }
-
-  protected async remove(additive: Additive): Promise<void> {
-    try {
-      await this.additives.remove(additive);
-      this.myAdditives.update((list) => list.filter((a) => a !== additive));
-      this.notices.success('Success in removing the additive from the server.');
-    } catch {
-      this.notices.error('Error in deleting the additive from the server.');
     }
   }
 

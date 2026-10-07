@@ -9,6 +9,7 @@ import { Notices, NoticesList } from '../../shared/notices';
 import { optional } from '../../shared/dates';
 import { FIRED_OXIDES, firstOf } from '../../shared/options';
 import { PageHeader } from '../../shared/page-header';
+import { Removal, RemoveButton } from '../../shared/remove-button';
 
 interface FormulaLine {
   name: string;
@@ -19,7 +20,7 @@ const round = (value: number, places: number) => Number(value.toFixed(places));
 
 @Component({
   selector: 'gc-material-page',
-  imports: [FormsModule, NoticesList, PageHeader],
+  imports: [FormsModule, NoticesList, PageHeader, RemoveButton],
   templateUrl: './material-page.html'
 })
 export class MaterialPage implements OnInit {
@@ -46,7 +47,7 @@ export class MaterialPage implements OnInit {
   protected readonly sortedMyMaterials = computed(() =>
     [...this.myMaterials()].sort((a, b) => a.name.localeCompare(b.name))
   );
-  protected readonly showRemove = signal(false);
+  protected readonly removal = new Removal(this.materials, this.myMaterials, this.notices, (material) => material.name);
 
   ngOnInit(): void {
     this.materials.getAll().then(
@@ -115,16 +116,6 @@ export class MaterialPage implements OnInit {
       this.resetForm();
     } catch (err) {
       this.notices.error(errorMessage(err, 'Error: the request to the server failed.'));
-    }
-  }
-
-  protected async remove(material: Material): Promise<void> {
-    try {
-      await this.materials.remove(material);
-      this.myMaterials.update((list) => list.filter((m) => m !== material));
-      this.notices.success('Success in removing the material from the server.');
-    } catch {
-      this.notices.error('Error in deleting the material from the server.');
     }
   }
 

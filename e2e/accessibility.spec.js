@@ -4,7 +4,7 @@
 // how a screen reader words things still need a person.
 const { test, expect } = require('@playwright/test');
 const { default: AxeBuilder } = require('@axe-core/playwright');
-const { addStandardMaterial, signUpAndSignIn } = require('./helpers');
+const { API, addColorant, addStandardMaterial, signUpAndSignIn } = require('./helpers');
 
 const WCAG = ['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa'];
 
@@ -40,13 +40,25 @@ for (const colorScheme of ['light', 'dark']) {
         await expect(page.locator('h1')).toBeVisible();
         await expectNoProblems(page, colorScheme + ' ' + path);
       }
-      // The calculator with a recipe worked out, and the phone menu open.
+      // The calculator with a recipe worked out.
       await page.goto('/recipe');
       await addStandardMaterial(page, 'Whiting', 20);
       await addStandardMaterial(page, 'Silica', 30);
-      await page.getByRole('button', { name: 'Compute recipe into Unity' }).click();
-      await expect(page.locator('gc-unity-formula')).toBeVisible();
+      await addColorant(page, 'Cobalt carbonate', 1);
+      await expect(page.locator('.unity-panel gc-unity-formula')).toBeVisible();
       await expectNoProblems(page, colorScheme + ' /recipe with a result');
+      // The question about unsaved changes, open.
+      await page.getByRole('button', { name: 'New recipe' }).click();
+      await expect(page.getByRole('button', { name: 'Keep editing' })).toBeFocused();
+      await expectNoProblems(page, colorScheme + ' /recipe unsaved question');
+      // A saved record's Remove question, open.
+      const note = { title: 'Kiln', content: 'Element 3', relatedCollection: 'Notes', relatedId: 'general notes' };
+      expect((await page.request.post(API + '/notes/create', { data: note })).ok()).toBeTruthy();
+      await page.goto('/notes');
+      await page.getByRole('button', { name: 'Remove Kiln' }).click();
+      await expect(page.getByRole('button', { name: 'Yes, remove' })).toBeVisible();
+      await expectNoProblems(page, colorScheme + ' remove question');
+      // The phone menu, open.
       await page.setViewportSize({ width: 390, height: 844 });
       await page.getByRole('button', { name: 'Menu' }).click();
       await expectNoProblems(page, colorScheme + ' phone menu');

@@ -101,12 +101,14 @@ describe('AdditivePage', () => {
     await saving;
     expect(page['myAdditives']().map((a: { name: string }) => a.name)).toEqual(['My Stain']);
 
-    const removing = page['remove'](page['myAdditives']()[0]);
+    const removing = page['removal'].remove(page['myAdditives']()[0]);
     httpMock()
       .expectOne(API + '/additives/delete/a1')
-      .flush({ msg: 'no' }, { status: 500, statusText: 'Error' });
-    await removing;
-    expect(page['notices'].errors()).toContain('Error in deleting the additive from the server.');
+      .flush({}, { status: 500, statusText: 'Error' });
+    expect(await removing).toBe(false);
+    // Shown in the record's Remove question.
+    expect(page['removal'].problemFor(page['myAdditives']()[0])).toBe('It could not be removed. Please try again.');
+    expect(page['myAdditives']().length).toBe(1);
   });
 });
 
@@ -142,7 +144,7 @@ describe('AdvicePage', () => {
     await fixture.whenStable();
     expect(text(fixture, '.my-advice')).toContain('Wax the foot');
 
-    const removing = page['remove'](page['myAdvice']()[0]);
+    const removing = page['removal'].remove(page['myAdvice']()[0]);
     httpMock()
       .expectOne(API + '/advice/delete/a1')
       .flush({});

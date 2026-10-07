@@ -179,6 +179,11 @@ img {
   display: none;
 }
 
+// Only on a phone, where the menu is folded away (see app.ts).
+.nav-quick-signin {
+  display: none;
+}
+
 .nav-menu {
   flex: 1;
   display: flex;
@@ -259,6 +264,14 @@ img {
 @media (max-width: 767.98px) {
   .nav-toggle {
     display: inline-block;
+  }
+  .nav-quick-signin {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: 0.75rem;
+  }
+  .nav-quick-signin + .nav-toggle {
+    margin-left: 0;
   }
   .nav-menu {
     display: none;
@@ -394,38 +407,422 @@ main {
   }
 }
 
-// A material or additive in the recipe being built: its name, amount and
-// remove button on one line, wrapping on a phone.
-.recipe-materials,
-.recipe-additives {
-  max-width: 44rem;
-  padding-left: 1.75rem;
+/*************** Recipe page **************/
 
-  li {
-    padding: 0.4rem 0;
+.help-reopen {
+  margin: -0.5rem 0 1rem;
+}
+
+.recipe-help {
+  .recipe-help-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 0.5rem 1rem;
+  }
+  h2 {
+    font-size: 1.4rem;
+    margin: 0 0 0.5rem;
+  }
+  h3 {
+    font-family: var(--gc-sans);
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin: 0 0 0.25rem;
+  }
+  .recipe-help-steps > li {
+    margin-bottom: 0.75rem;
+  }
+  p,
+  ul {
+    margin-bottom: 0.4rem;
+  }
+  .recipe-help-tips {
+    margin: 0;
+  }
+}
+
+// The recipe on the left and its unity formula on the right, stacked on a phone.
+.recipe-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0 1.25rem;
+  align-items: start;
+}
+
+@media (min-width: 992px) {
+  .recipe-layout {
+    grid-template-columns: minmax(0, 1fr) 19rem;
+  }
+  // Stays in view while the recipe scrolls.
+  .unity-panel {
+    position: sticky;
+    top: 1rem;
+  }
+}
+
+.recipe-editor,
+.unity-panel,
+.saved-recipes {
+  h2 {
+    font-size: 1.4rem;
+    margin-bottom: 0.75rem;
+  }
+}
+
+.recipe-editor h3 {
+  font-size: 1.15rem;
+  margin: 1.25rem 0 0.5rem;
+}
+
+.editor-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.recipe-fields {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 11rem;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+@media (max-width: 575.98px) {
+  .recipe-fields {
+    grid-template-columns: 1fr;
+  }
+}
+
+.recipe-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 0.5rem;
+
+  th,
+  td {
+    padding: 0.3rem 0.5rem;
     border-bottom: 1px solid var(--gc-border);
+    vertical-align: middle;
   }
-}
-
-.recipe-line {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.4rem 1rem;
-
-  b {
-    flex: 1 1 12rem;
+  thead th {
+    color: var(--gc-muted);
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-align: left;
   }
-}
-
-.recipe-line-amount {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-
+  tbody th,
+  tfoot th {
+    background: none;
+  }
+  tbody th {
+    font-weight: 600;
+  }
+  tfoot th,
+  tfoot td {
+    border-bottom: 0;
+    font-weight: 600;
+  }
+  td:last-child {
+    width: 1%;
+    text-align: right;
+  }
   input {
     width: 6.5rem;
   }
+}
+
+.recipe-share {
+  color: var(--gc-muted);
+  white-space: nowrap;
+}
+
+.recipe-remove {
+  line-height: 1;
+  padding: 0.3rem 0.55rem;
+}
+
+// On a phone the unity formula is far below; this line keeps it in sight.
+.unity-inline {
+  background: var(--gc-surface-2);
+  border-radius: 6px;
+  font-size: 0.9rem;
+  margin: 0.25rem 0 0.5rem;
+  padding: 0.35rem 0.6rem;
+}
+
+@media (min-width: 992px) {
+  .unity-inline {
+    display: none;
+  }
+}
+
+.recipe-scale {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+.recipe-scale-label {
+  color: var(--gc-muted);
+  font-size: 0.95rem;
+}
+
+.recipe-batch {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+
+  input {
+    width: 5.5rem;
+  }
+}
+
+.recipe-scale-note {
+  color: var(--gc-success-text);
+  font-size: 0.95rem;
+  margin: 0.25rem 0 0;
+  &.is-problem {
+    color: var(--gc-danger-text);
+    font-weight: 600;
+  }
+  &:empty {
+    margin: 0;
+  }
+}
+
+// A colorant's amount and its unit: side by side, or the unit under it on a phone.
+.additive-amount-cell {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.5rem;
+  .additive-amount {
+    width: 6rem;
+    flex: none;
+  }
+}
+
+// A colorant's unit: % of base, parts or grams (radio buttons drawn as a row of buttons).
+.unit-choice {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  .btn {
+    --bs-btn-padding-y: 0.15rem;
+    --bs-btn-padding-x: 0.45rem;
+    white-space: nowrap;
+    background: var(--gc-surface);
+    border: 1px solid var(--gc-border);
+    color: var(--gc-text);
+  }
+  .btn-check:checked + .btn {
+    background: var(--gc-primary);
+    border-color: var(--gc-primary);
+    color: var(--gc-on-primary);
+  }
+  .btn-check:focus-visible + .btn {
+    outline: 3px solid rgba(var(--gc-primary-rgb), 0.45);
+    outline-offset: 1px;
+  }
+}
+
+.recipe-additives-heading .muted {
+  font-family: var(--gc-sans);
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+// Adding from "My" or "Standard" (pages/recipe/recipe-library.ts).
+.library {
+  background: var(--gc-surface-2);
+  border: 1px solid var(--gc-border);
+  border-radius: var(--gc-radius);
+  padding: 0.75rem;
+  margin: 0.75rem 0 0.5rem;
+}
+
+.library-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.recipe-editor .library-heading {
+  font-family: var(--gc-sans);
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.library-tabs {
+  display: inline-flex;
+  border: 1px solid var(--gc-border);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.library-tab {
+  background: var(--gc-surface);
+  border: 0;
+  color: var(--gc-text);
+  font-size: 0.9rem;
+  padding: 0.25rem 0.85rem;
+
+  &.active {
+    background: var(--gc-primary);
+    color: var(--gc-on-primary);
+  }
+  &:focus-visible {
+    outline: 2px solid var(--gc-primary);
+    outline-offset: -2px;
+  }
+}
+
+.library-filter {
+  margin-bottom: 0.5rem;
+}
+
+.library-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 14rem;
+  overflow-y: auto;
+  background: var(--gc-surface);
+  border: 1px solid var(--gc-border);
+  border-radius: 6px;
+}
+
+.library-item {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.35rem 0.75rem;
+  background: none;
+  border: 0;
+  border-bottom: 1px solid var(--gc-border);
+  color: var(--gc-text);
+  text-align: left;
+}
+
+button.library-item:hover,
+button.library-item:focus-visible {
+  background: var(--gc-surface-2);
+}
+
+.library-mark {
+  color: var(--gc-primary);
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.library-item.in-recipe {
+  color: var(--gc-muted);
+
+  .library-mark {
+    color: var(--gc-success-text);
+  }
+}
+
+.library-empty {
+  color: var(--gc-muted);
+  padding: 0.5rem 0.75rem;
+}
+
+.recipe-save {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--gc-border);
+}
+
+.recipe-status {
+  color: var(--gc-muted);
+  margin-left: 0.25rem;
+}
+
+// Why the last save did not happen, under the save buttons.
+.recipe-save-problem {
+  flex-basis: 100%;
+  margin: 0;
+  color: var(--gc-danger-text);
+  font-weight: 600;
+  // Out of the flex layout while empty, but still there as a live region.
+  &:empty {
+    position: absolute;
+  }
+}
+
+.recipe-unsaved {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.75rem 0;
+  padding: 0.5rem 0.75rem;
+  background: var(--gc-danger-bg);
+  border-radius: var(--gc-radius);
+  color: var(--gc-danger-text);
+}
+
+.unity-problem,
+.unity-warnings {
+  color: var(--gc-danger-text);
+}
+
+.unity-warnings,
+.unity-additives {
+  font-size: 0.95rem;
+  padding-left: 1.1rem;
+}
+
+.unity-panel h3.unity-additives-heading {
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.saved-recipe-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.saved-recipe-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-left: auto;
+}
+
+// The Remove question takes a line of its own, under the record's buttons.
+.saved-recipe-top > gc-remove-button.asking {
+  flex-basis: 100%;
+}
+
+.saved-open-mark {
+  background: var(--gc-success-bg);
+  border-radius: 999px;
+  color: var(--gc-success-text);
+  font-size: 0.8rem;
+  padding: 0.1rem 0.5rem;
 }
 
 code {
@@ -483,6 +880,13 @@ code {
   --bs-btn-active-bg: var(--gc-accent);
   --bs-btn-active-color: var(--gc-on-accent);
   --bs-btn-focus-shadow-rgb: var(--gc-primary-rgb);
+}
+
+// Busy, such as Save while it saves: marked with aria-disabled rather than
+// disabled, which would drop the keyboard focus. Clicks are ignored meanwhile.
+.btn[aria-disabled='true'] {
+  opacity: 0.65;
+  cursor: progress;
 }
 
 // For actions that delete. Bootstrap's own red is too light on the tinted

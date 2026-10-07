@@ -28,6 +28,10 @@ const APP_PAGES = [
           <img src="/images/logo.webp" alt="" width="30" height="30" />
           Glazecalc
         </a>
+        <!-- On a phone the menu is folded away; returning visitors sign in without opening it. -->
+        @if (!auth.hasSession()) {
+          <a routerLink="/signin" class="nav-quick-signin">Sign in</a>
+        }
         <button
           type="button"
           class="btn btn-light btn-sm nav-toggle"

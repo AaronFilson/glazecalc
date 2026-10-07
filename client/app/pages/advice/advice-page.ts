@@ -8,10 +8,11 @@ import { Advice } from '../../core/models';
 import { Busy } from '../../shared/busy';
 import { Notices, NoticesList } from '../../shared/notices';
 import { PageHeader } from '../../shared/page-header';
+import { Removal, RemoveButton } from '../../shared/remove-button';
 
 @Component({
   selector: 'gc-advice-page',
-  imports: [FormsModule, NoticesList, PageHeader, RouterLink],
+  imports: [FormsModule, NoticesList, PageHeader, RemoveButton, RouterLink],
   template: `
     <gc-page-header
       title="Glaze advice"
@@ -68,17 +69,17 @@ import { PageHeader } from '../../shared/page-header';
               <h3>{{ adv.title }}</h3>
               <p>{{ adv.content }}</p>
               <div class="small muted">Tags: {{ tagsText(adv) }}</div>
-              @if (showRemove()) {
-                <button type="button" class="btn btn-light border" (click)="remove(adv)">Remove</button>
-              }
+              <gc-remove-button
+                [name]="removal.nameOf(adv)"
+                [busy]="removal.isPending(adv)"
+                [problem]="removal.problemFor(adv)"
+                (confirmed)="removal.remove(adv)"
+              />
             </li>
           } @empty {
             <li class="muted">Nothing saved yet.</li>
           }
         </ul>
-        <button type="button" class="btn btn-light border" (click)="showRemove.set(!showRemove())">
-          Toggle Remove Button
-        </button>
       </section>
     }
   `,
@@ -123,7 +124,7 @@ export class AdvicePage implements OnInit {
   protected readonly myAdvice = signal<Advice[]>([]);
   protected readonly standardAdvice = signal<Advice[]>([]);
   protected readonly standardLoaded = signal(false);
-  protected readonly showRemove = signal(false);
+  protected readonly removal = new Removal(this.advice, this.myAdvice, this.notices, (adv) => adv.title);
 
   ngOnInit(): void {
     // The general advice is public; a visitor who is not signed in has none of their own.
@@ -164,16 +165,6 @@ export class AdvicePage implements OnInit {
       this.content.set('');
     } catch (err) {
       this.notices.error(errorMessage(err, 'There was an error in submitting the advice information.'));
-    }
-  }
-
-  protected async remove(adv: Advice): Promise<void> {
-    try {
-      await this.advice.remove(adv);
-      this.myAdvice.update((list) => list.filter((a) => a !== adv));
-      this.notices.success('Success in removing the advice from the server.');
-    } catch {
-      this.notices.error('Error in deleting the advice from the server.');
     }
   }
 

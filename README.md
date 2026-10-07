@@ -17,15 +17,18 @@ materials, colorants, firing logs and notes together in one private notebook.
 <table>
   <tr>
     <td width="66%"><img src="docs/images/calculator-dark.png" alt="The recipe calculator in dark mode, showing Leach's 4321 celadon and its unity formula: K2O 0.264, CaO 0.736, Al2O3 0.407, SiO2 3.710, silica to alumina ratio 9.11"></td>
-    <td><img src="docs/images/trial-phone.png" alt="A trial on a phone: a green bar says You're trying Glazecalc as misty bright calipers, with buttons to create an account or discard the trial"></td>
+    <td><img src="docs/images/trial-phone.png" alt="A trial on a phone: a green bar says You're trying Glazecalc as mellow dusty sunsets, with buttons to create an account or discard the trial"></td>
   </tr>
 </table>
 
 ## What it does
 
-- **Recipe to unity formula.** Build a glaze from standard or your own materials and see its
-  oxides in unity, grouped as fluxes, stabilizers and glass formers, with the silica to alumina
-  ratio. That is how glaze chemists compare recipes, fix faults and substitute materials.
+- **Recipe to unity formula, as you type.** Build a glaze from your own materials or the
+  standard ones and watch its oxides in unity, grouped as fluxes, stabilizers and glass formers,
+  with the silica to alumina ratio. That is how glaze chemists compare recipes, fix faults and
+  substitute materials. Change the scale to percent, to the smallest whole parts, or to the grams
+  of a batch, with colorants as a percent of the base, in parts or in grams; save a recipe and
+  keep working on it, or open a saved one to change it.
 - **Your own materials,** from a chemical formula or a supplier's analysis, and colorants and
   opacifiers on top of a base glaze.
 - **A studio notebook:** firing logs (times, temperatures, cones), notes, and plain-language
@@ -44,7 +47,7 @@ For anyone reading the code:
   and put back online. The
   [case study](docs/case-study.md) tells how.
 - **Tested at three levels, in CI on every push:** 179 server tests (98% of statements) run
-  against the app in-process; 134 Angular unit tests (88%); 56 Playwright browser tests,
+  against the app in-process; 167 Angular unit tests (92%); 65 Playwright browser tests,
   including [axe](https://github.com/dequelabs/axe-core) accessibility checks of every page in
   light and dark mode.
 - **One glaze chemistry library** for the browser and the tests, checked against values worked
@@ -174,8 +177,7 @@ including PowerShell and cmd.
 `npx playwright show-report` opens the browser test results. GitHub Actions runs lint, the format
 check, an npm audit, the build and all three suites on pushes to master and on pull requests,
 against a MongoDB 9 service container, and builds and checks the Docker image
-(`.github/workflows/ci.yml`). The one-time Prettier reformat is listed in
-`.git-blame-ignore-revs`, so `git blame` skips it.
+(`.github/workflows/ci.yml`).
 
 ## Project structure
 

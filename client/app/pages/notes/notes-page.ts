@@ -6,10 +6,11 @@ import { Note } from '../../core/models';
 import { Busy } from '../../shared/busy';
 import { Notices, NoticesList } from '../../shared/notices';
 import { PageHeader } from '../../shared/page-header';
+import { Removal, RemoveButton } from '../../shared/remove-button';
 
 @Component({
   selector: 'gc-notes-page',
-  imports: [FormsModule, NoticesList, PageHeader],
+  imports: [FormsModule, NoticesList, PageHeader, RemoveButton],
   template: `
     <gc-page-header title="Notes" lead="Anything else worth remembering about your glazes." />
     <gc-notices [notices]="notices" />
@@ -37,15 +38,15 @@ import { PageHeader } from '../../shared/page-header';
           <li>
             <b>{{ note.title }}</b>
             <p>{{ note.content }}</p>
-            @if (showRemove()) {
-              <button type="button" class="btn btn-light border" (click)="remove(note)">Remove</button>
-            }
+            <gc-remove-button
+              [name]="removal.nameOf(note)"
+              [busy]="removal.isPending(note)"
+              [problem]="removal.problemFor(note)"
+              (confirmed)="removal.remove(note)"
+            />
           </li>
         }
       </ul>
-      <button type="button" class="btn btn-light border" (click)="showRemove.set(!showRemove())">
-        Toggle Remove button
-      </button>
     </section>
   `
 })
@@ -57,7 +58,7 @@ export class NotesPage implements OnInit {
   protected readonly title = signal('');
   protected readonly content = signal('');
   protected readonly notes = signal<Note[]>([]);
-  protected readonly showRemove = signal(false);
+  protected readonly removal = new Removal(this.api, this.notes, this.notices, (note) => note.title || 'Untitled note');
 
   async ngOnInit(): Promise<void> {
     try {
@@ -89,16 +90,6 @@ export class NotesPage implements OnInit {
       this.content.set('');
     } catch (err) {
       this.notices.error(errorMessage(err, 'Error: the request to the server failed.'));
-    }
-  }
-
-  protected async remove(note: Note): Promise<void> {
-    try {
-      await this.api.remove(note);
-      this.notes.update((list) => list.filter((n) => n !== note));
-      this.notices.success('Success in removing the note from the server.');
-    } catch {
-      this.notices.error('Error in deleting the note from the server.');
     }
   }
 }

@@ -107,3 +107,11 @@ test('a sign-in that expired while the site was closed goes to the sign-in page,
   await expect(page.locator('.errors-section')).toHaveCount(0);
   await expect(page.locator('.nav-account')).toContainText('Create a free account');
 });
+
+test('on a phone, visitors can sign in without opening the menu', async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto('/');
+  await expect(page.locator('.nav-links')).toBeHidden();
+  await page.locator('.app-header').getByRole('link', { name: 'Sign in', exact: true }).click();
+  await expect(page).toHaveURL(/\/signin$/);
+});
