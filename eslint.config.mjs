@@ -7,7 +7,7 @@ import tseslint from 'typescript-eslint';
 
 export default tseslint.config(
   {
-    ignores: ['dist/', 'coverage/', 'playwright-report/', 'test-results/', '.angular/', 'db/']
+    ignores: ['dist/', 'coverage/', 'playwright-report/', 'test-results/', 'test-results-linux/', '.angular/', 'db/']
   },
 
   // Node: API server, chemistry library, build scripts and browser tests.

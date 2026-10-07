@@ -9,6 +9,7 @@ db/
 # Test output
 coverage/
 test-results/
+test-results-linux/
 playwright-report/
 
 # Local settings loaded by the npm scripts; see .env.example

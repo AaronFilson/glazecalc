@@ -17,7 +17,9 @@
     "test": "mocha",
     "test:client": "ng test --watch=false",
     "test:e2e": "playwright test",
+    "test:e2e:linux": "node scripts/test-e2e-linux.mjs",
     "test:all": "npm test && npm run test:client && npm run test:e2e",
+    "test:all:linux": "npm test && npm run test:client && npm run test:e2e:linux",
     "test:coverage": "c8 --include \"server/**\" --include \"lib/**\" --exclude \"server/test/**\" --reporter text-summary --reporter html mocha",
     "test:client:coverage": "ng test --watch=false --coverage",
     "seed": "node --env-file-if-exists=.env scripts/seed-standard.js"
