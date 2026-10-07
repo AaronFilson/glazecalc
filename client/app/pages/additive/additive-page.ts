@@ -5,39 +5,30 @@ import { ApiResourceFactory } from '../../core/api-resource.service';
 import { errorMessage } from '../../core/error-message';
 import { Additive } from '../../core/models';
 import { Busy } from '../../shared/busy';
+import { ChemistryForm } from '../../shared/chemistry-form';
 import { Notices, NoticesList } from '../../shared/notices';
-import { optional } from '../../shared/dates';
-import { ADDITIVE_COMPONENTS, ELEMENTS, firstOf } from '../../shared/options';
+import { ADDITIVE_OXIDES, fieldsText, firstOf } from '../../shared/options';
 import { PageHeader } from '../../shared/page-header';
 import { Removal, RemoveButton } from '../../shared/remove-button';
-
-interface FormulaLine {
-  name: string;
-  amount: string;
-}
+import { StandardList } from '../../shared/standard-list';
 
 @Component({
   selector: 'gc-additive-page',
-  imports: [FormsModule, NoticesList, PageHeader, RemoveButton],
+  imports: [FormsModule, NoticesList, PageHeader, RemoveButton, StandardList],
   templateUrl: './additive-page.html'
 })
 export class AdditivePage implements OnInit {
   private readonly additives = inject(ApiResourceFactory).for<Additive>('additives');
 
-  protected readonly components = ADDITIVE_COMPONENTS;
-  protected readonly elements = ELEMENTS;
+  protected readonly oxides = ADDITIVE_OXIDES;
   protected readonly firstOf = firstOf;
+  protected readonly fieldsText = fieldsText;
   protected readonly formatFormula = formatFormula;
   protected readonly notices = new Notices();
   protected readonly saving = new Busy();
 
-  protected readonly name = signal('');
-  protected readonly rawformula = signal('');
-  protected readonly relatedTo = signal('');
-  protected readonly notes = signal('');
-  protected readonly selectedComponent = signal('');
-  protected readonly selectedElement = signal('');
-  protected readonly formula = signal<FormulaLine[]>([]);
+  // An additive is entered as a material is (fired oxides and LOI), so a recipe can count it in the unity formula.
+  protected readonly form = new ChemistryForm(this.notices);
 
   protected readonly myAdditives = signal<Additive[]>([]);
   protected readonly standardAdditives = signal<Additive[]>([]);
@@ -54,46 +45,20 @@ export class AdditivePage implements OnInit {
     );
   }
 
-  protected addToFormula(part: string, kind: 'component' | 'element'): void {
-    if (!part) {
-      this.notices.error('Error: please select an ' + kind + '.');
-      return;
-    }
-    this.formula.update((lines) => [...lines, { name: part, amount: '0' }]);
-  }
-
-  protected removeFromFormula(index: number): void {
-    this.formula.update((lines) => lines.filter((_, i) => i !== index));
-  }
-
   protected save(): Promise<void> {
     return this.saving.run(() => this.saveNow());
   }
 
   private async saveNow(): Promise<void> {
-    if (!this.name() || !this.formula().length) {
-      this.notices.error('Error: enter a name and at least one component or element.');
-      return;
-    }
-    const additive: Additive = {
-      name: this.name(),
-      rawformula: optional(this.rawformula()),
-      relatedTo: optional(this.relatedTo()),
-      notes: optional(this.notes()),
-      fields: this.formula().map((line) => ({ ...line }))
-    };
+    const additive = this.form.build();
+    if (!additive) return;
     try {
       const saved = await this.additives.create(additive);
       this.myAdditives.update((list) => [...list, saved]);
       this.notices.success('Success. Additive added to database.');
-      for (const field of [this.name, this.rawformula, this.relatedTo, this.notes]) field.set('');
-      this.formula.set([]);
+      this.form.reset();
     } catch (err) {
       this.notices.error(errorMessage(err, 'Error: the request to the server failed.'));
     }
-  }
-
-  protected fieldsText(additive: Additive): string {
-    return additive.fields.map((field) => formatFormula(field.name) + ' : ' + field.amount).join('; ');
   }
 }

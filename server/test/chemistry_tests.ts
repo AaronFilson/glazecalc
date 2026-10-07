@@ -16,6 +16,20 @@ interface StandardMaterial extends MaterialInput {
   fields: MaterialField[];
 }
 
+/** What every standard material and additive records about itself (server/models/library_info.ts). */
+interface LibraryRecord {
+  name: string;
+  aliases?: string[];
+  category?: string;
+  region?: string[];
+  status?: string;
+  substitutes?: string[];
+  replaces?: string[];
+  source?: { name?: string; url?: string; kind?: string };
+  noChemistry?: boolean;
+  chemistryOf?: string;
+}
+
 // Atomic weights for the raw formulas: the library's, and the elements that
 // only leave in the firing (fluorine in cryolite and fluorspar, nitrogen in nitrates).
 const ATOMIC_WEIGHTS: Record<string, number> = { ...chemistry.ATOMIC_WEIGHTS, F: 18.998, N: 14.007 };
@@ -306,6 +320,86 @@ describe('glaze chemistry', () => {
       ]);
       expect(result.umf.CaO).to.be.closeTo(0.5, 1e-4);
       expect(result.umf.SiO2).to.be.closeTo(30 / MW.SiO2 / (20 / 92.2), 0.001);
+    });
+  });
+
+  describe('standard library', () => {
+    const materials: Array<StandardMaterial & LibraryRecord> = standardData.load('materials');
+    const additives: Array<StandardMaterial & LibraryRecord> = standardData.load('additives');
+    const all = [...materials, ...additives];
+    const names = new Map<string, string>();
+    for (const record of all)
+      for (const name of [record.name, ...(record.aliases ?? [])]) names.set(name.toLowerCase(), record.name);
+
+    it('should give every record a category and a named source', () => {
+      for (const record of all) {
+        expect(record.category, record.name).to.be.oneOf([
+          'feldspar',
+          'clay',
+          'frit',
+          'boron',
+          'flux',
+          'silica',
+          'alumina',
+          'opacifier',
+          'colorant',
+          'suspender',
+          'other'
+        ]);
+        expect(record.source?.name, record.name).to.be.a('string');
+        expect(record.source?.kind, record.name).to.be.oneOf([
+          'manufacturer',
+          'supplier',
+          'sds',
+          'digitalfire',
+          'glazy',
+          'theoretical',
+          'book'
+        ]);
+      }
+    });
+
+    it('should use known statuses and regions, and give every name to one record only', () => {
+      const seen = new Set<string>();
+      for (const record of all) {
+        if (record.status)
+          expect(record.status, record.name).to.be.oneOf(['current', 'scarce', 'discontinued', 'historical']);
+        for (const region of record.region ?? [])
+          expect(region, record.name).to.be.oneOf(['US', 'UK', 'EU', 'CA', 'AU']);
+        for (const name of [record.name, ...(record.aliases ?? [])]) {
+          expect(seen.has(name.toLowerCase()), name).to.equal(false);
+          seen.add(name.toLowerCase());
+        }
+      }
+    });
+
+    it('should name a modern substitute for everything discontinued, scarce or historical', () => {
+      for (const record of all.filter((r) => ['discontinued', 'scarce', 'historical'].includes(r.status ?? ''))) {
+        expect((record.substitutes ?? []).length, record.name).to.be.greaterThan(0);
+      }
+    });
+
+    it('should refer only to records in the library', () => {
+      for (const record of all) {
+        for (const ref of [
+          ...(record.substitutes ?? []),
+          ...(record.replaces ?? []),
+          record.chemistryOf ?? []
+        ].flat()) {
+          expect(names.has(ref.toLowerCase()), record.name + ' -> ' + ref).to.equal(true);
+        }
+      }
+    });
+
+    it('should store additive chemistry that agrees with its analysis and LOI', () => {
+      for (const additive of additives.filter((a) => !a.noChemistry && !a.chemistryOf)) {
+        const weights = chemistry.materialWeights(additive);
+        expect(weights.warnings, additive.name).to.eql([]);
+        expect(additive.equivalent, additive.name).to.be.closeTo(weights.equivalent, 0.01);
+        additive.fields.forEach((field) => {
+          expect(field.amountUnity, additive.name + ' ' + field.name).to.be.closeTo(weights.unity[field.name], 1e-4);
+        });
+      }
     });
   });
 

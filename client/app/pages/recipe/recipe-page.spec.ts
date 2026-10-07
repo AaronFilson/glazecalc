@@ -1,7 +1,8 @@
 import { TestBed } from '@angular/core/testing';
 import { Additive, Material, Recipe } from '../../core/models';
 import { API, answer, httpMock, settle, testProviders, text } from '../../testing/test-providers';
-import { RecipePage, savedAnalysis } from './recipe-page';
+import { MOLAR_MASS } from '../../../../lib/chemistry';
+import { RecipePage, evaluate, savedAnalysis } from './recipe-page';
 
 const material = (name: string, fields: Array<[string, number]>, loi: number): Material => ({
   _id: name,
@@ -34,6 +35,25 @@ const HALF: Material = {
 };
 const IRON: Additive = { _id: 'rio', name: 'Iron oxide', fields: [{ name: 'Fe2O3', amount: '1' }] };
 const RUTILE: Additive = { _id: 'rut', name: 'Rutile', fields: [{ name: 'TiO2', amount: '1' }] };
+// Black cobalt oxide, Co3O4: CoO with a 6.64% LOI.
+const COBALT: Additive = {
+  _id: 'co',
+  name: 'Cobalt Oxide',
+  percentmole: 'molecular',
+  loi: 6.64,
+  fields: [{ name: 'CoO', amount: '1' }]
+};
+const BENTONITE: Additive = {
+  _id: 'bent',
+  name: 'Bentonite',
+  percentmole: 'percent',
+  loi: 10,
+  fields: [
+    { name: 'SiO2', amount: '60' },
+    { name: 'Al2O3', amount: '20' },
+    { name: 'MgO', amount: '10' }
+  ]
+};
 
 type Page = Record<string, any>;
 
@@ -48,13 +68,13 @@ describe('RecipePage', () => {
   });
   afterEach(() => httpMock().verify());
 
-  const create = async (recipes: Recipe[] = []) => {
+  const create = async (recipes: Recipe[] = [], standardAdditives: Additive[] = [IRON]) => {
     const fixture = TestBed.createComponent(RecipePage);
     await fixture.whenStable();
     answer('/materials/getStandard', [WHITING, SILICA, DOLOMITE, HALF]);
     answer('/materials/getAll', []);
     answer('/additives/getAll', []);
-    answer('/additives/getStandard', [IRON]);
+    answer('/additives/getStandard', standardAdditives);
     answer('/recipe/getAll', recipes);
     await settle(fixture);
     // Protected members are reached through a loose view of the component.
@@ -100,6 +120,84 @@ describe('RecipePage', () => {
     page['setAmount'](1, '60');
     await fixture.whenStable();
     expect(text(fixture, '.unity-result')).toContain('SiO₂ : ' + (60 / 60.083 / (20 / 100.08)).toFixed(3));
+  });
+
+  it('counts colorants in the unity formula when asked, at their weight in the batch', async () => {
+    const { fixture, page } = await create();
+    fill(page, [
+      [WHITING, '20'],
+      [SILICA, '30']
+    ]);
+    page['addAdditive'](COBALT);
+    page['setAdditiveAmount'](0, '2');
+    await fixture.whenStable();
+    // Left out by default, as many calculators do.
+    expect(page['evaluation']().analysis.uList.CoO).toBeUndefined();
+
+    const checkbox = fixture.nativeElement.querySelector('#include-additives') as HTMLInputElement;
+    checkbox.click();
+    await fixture.whenStable();
+    // 2% of a 50 g base is 1 g of cobalt oxide, 93.36% of it CoO.
+    const cobalt = (1 * (1 - 0.0664)) / MOLAR_MASS['CoO'];
+    const calcium = 20 / (MOLAR_MASS['CaO'] / (1 - 0.4397));
+    const unity = page['evaluation']().analysis.uList;
+    expect(unity.CoO / unity.CaO).toBeCloseTo(cobalt / calcium, 6);
+    expect(text(fixture, '.unity-result')).toContain('CoO');
+    expect(text(fixture, '.unity-result')).toContain('Counted in the unity formula');
+
+    // In parts, the amount is a weight in the base's own unit.
+    page['setAdditiveUnit'](0, 'parts');
+    page['setAdditiveAmount'](0, '1');
+    expect(page['evaluation']().analysis.uList.CoO / page['evaluation']().analysis.uList.CaO).toBeCloseTo(
+      cobalt / calcium,
+      6
+    );
+    // The choice is remembered for new recipes.
+    expect(localStorage.getItem('includeAdditives')).toBe('yes');
+  });
+
+  it('leaves out additives it cannot count, and borrows chemistry where one says to', () => {
+    const base = [
+      { ...WHITING, amount: '20' },
+      { ...SILICA, amount: '30' }
+    ];
+    const stain: Additive = { name: 'Stain 6600', noChemistry: true, fields: [], amount: '5' };
+    const old: Additive = { name: 'Old ochre', fields: [{ name: 'Fe', amount: '1' }], amount: '3' };
+    const veegum: Additive = { name: 'Veegum T', chemistryOf: 'bentonite', fields: [], amount: '2' };
+    const result = evaluate(base, [stain, old, veegum], {
+      includeAdditives: true,
+      chemistryOf: (name) => (name === 'bentonite' ? BENTONITE : undefined)
+    });
+    expect(result.warnings).toEqual(['Old ochre has no oxide analysis the unity formula can use, so it is left out.']);
+    // Veegum counts as bentonite: it brings magnesia.
+    expect(result.analysis?.uList['MgO']).toBeGreaterThan(0);
+    // Left out, nothing is counted or warned about.
+    expect(evaluate(base, [stain, old, veegum]).warnings).toEqual([]);
+  });
+
+  it('saves the choice with the recipe and opens a recipe with its own', async () => {
+    const counted: Recipe = {
+      _id: 'r1',
+      title: 'Blue',
+      includeAdditives: true,
+      materials: [{ ...WHITING, amount: '20' }],
+      additives: [{ ...COBALT, amount: '1', unit: 'percent' }]
+    };
+    const { fixture, page } = await create([counted], [IRON, COBALT]);
+    page['open'](counted);
+    await fixture.whenStable();
+    expect(page['includeAdditives']()).toBe(true);
+    expect((fixture.nativeElement.querySelector('#include-additives') as HTMLInputElement).checked).toBe(true);
+    expect(page['dirty']()).toBe(false);
+
+    page['setIncludeAdditives'](false);
+    expect(page['status']()).toBe('Changes not saved yet');
+    const saving = page['save']();
+    const req = httpMock().expectOne({ method: 'PUT', url: API + '/recipe/change/r1' });
+    expect(req.request.body.recipe.includeAdditives).toBe(false);
+    expect(req.request.body.recipe.computed.uList.CoO).toBeUndefined();
+    req.flush({ msg: 'Successfully updated recipe' });
+    await saving;
   });
 
   it('copies picked materials, so amounts leave the lists alone', async () => {

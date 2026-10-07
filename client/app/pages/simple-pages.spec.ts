@@ -75,7 +75,7 @@ describe('LandingPage', () => {
 });
 
 describe('AdditivePage', () => {
-  it('saves components and elements with amounts', async () => {
+  it('saves an additive as fired oxides, with its weights worked out', async () => {
     const { fixture, page } = await create(AdditivePage);
     answer('/additives/getAll', []);
     answer('/additives/getStandard', [
@@ -84,22 +84,35 @@ describe('AdditivePage', () => {
     await settle(fixture);
     expect(text(fixture, 'table')).toContain('Tin oxide');
 
-    page['addToFormula']('', 'element');
-    expect(page['notices'].errors()).toEqual(['Error: please select an element.']);
-    page['name'].set('My Stain');
-    page['addToFormula']('CoO', 'component');
-    page['addToFormula']('Zr', 'element');
-    page['formula']()[0].amount = '1';
-    page['removeFromFormula'](1);
+    const form = page['form'];
+    form.addOxide();
+    expect(page['notices'].errors()).toEqual(['Error: please select an oxide.']);
+    // Black cobalt oxide, Co3O4: CoO with a 6.64% LOI.
+    form.name.set('My Stain');
+    form.loi.set('6.64');
+    for (const oxide of ['CoO', 'NiO']) {
+      form.selectedOxide.set(oxide);
+      form.addOxide();
+    }
+    form.formula()[0].amount = '1';
+    form.removeOxide(1);
 
     const saving = page['save']();
     const req = httpMock().expectOne(API + '/additives/create');
     expect(req.request.body).toEqual(
-      expect.objectContaining({ name: 'My Stain', fields: [{ name: 'CoO', amount: '1' }] })
+      expect.objectContaining({
+        name: 'My Stain',
+        percentmole: 'molecular',
+        loi: 6.64,
+        equivalent: 80.26,
+        formulaweight: 74.93,
+        fields: [{ name: 'CoO', amount: '1', amountUnity: 1 }]
+      })
     );
     req.flush({ ...req.request.body, _id: 'a1' });
     await saving;
     expect(page['myAdditives']().map((a: { name: string }) => a.name)).toEqual(['My Stain']);
+    expect(form.name()).toBe('');
 
     const removing = page['removal'].remove(page['myAdditives']()[0]);
     httpMock()

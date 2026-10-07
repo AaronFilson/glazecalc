@@ -89,6 +89,49 @@ describe('RecipeLibrary', () => {
   });
 });
 
+describe('RecipeLibrary with the standard library', () => {
+  beforeEach(() => {
+    localStorage.clear();
+    TestBed.configureTestingModule({ providers: [provideRouter([])] });
+  });
+
+  it('matches other names, marks what is no longer current, and narrows the standard list by region', async () => {
+    const fixture = TestBed.createComponent(RecipeLibrary);
+    fixture.componentRef.setInput('heading', 'Add materials');
+    fixture.componentRef.setInput('noun', 'materials');
+    fixture.componentRef.setInput('mine', []);
+    fixture.componentRef.setInput('standard', [
+      { _id: 'w', name: 'Whiting' },
+      { _id: 'c', name: 'Custer Spar', region: ['US'], status: 'discontinued', statusSince: '2023' },
+      { _id: 'z', name: 'Zircon', aliases: ['Zircopax', 'Superpax'] },
+      { _id: 'g', name: 'Grolleg China Clay', region: ['UK'] }
+    ]);
+    await fixture.whenStable();
+    const names = () =>
+      [...fixture.nativeElement.querySelectorAll('.library-item')].map((item: Element) =>
+        item.firstElementChild?.firstChild?.textContent?.trim()
+      );
+    // Alphabetical.
+    expect(names()).toEqual(['Custer Spar', 'Grolleg China Clay', 'Whiting', 'Zircon']);
+    expect(text(fixture, '.library-status')).toBe('Discontinued 2023');
+
+    const filter = fixture.nativeElement.querySelector('input[type=search]') as HTMLInputElement;
+    filter.value = 'zircopax';
+    filter.dispatchEvent(new Event('input'));
+    await fixture.whenStable();
+    expect(names()).toEqual(['Zircon']);
+    filter.value = '';
+    filter.dispatchEvent(new Event('input'));
+
+    const region = fixture.nativeElement.querySelector('.library-region') as HTMLSelectElement;
+    region.value = 'UK';
+    region.dispatchEvent(new Event('change'));
+    await fixture.whenStable();
+    expect(names()).toEqual(['Grolleg China Clay', 'Whiting', 'Zircon']);
+    expect(localStorage.getItem('region')).toBe('UK');
+  });
+});
+
 describe('RecipeHelp', () => {
   beforeEach(() => {
     localStorage.clear();

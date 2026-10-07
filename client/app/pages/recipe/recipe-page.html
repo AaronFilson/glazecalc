@@ -242,6 +242,16 @@
 
   <section class="panel unity-panel unity-result" aria-labelledby="unity-heading">
     <h2 id="unity-heading">Unity formula</h2>
+    <div class="form-check unity-include">
+      <input
+        id="include-additives"
+        class="form-check-input"
+        type="checkbox"
+        [checked]="includeAdditives()"
+        (change)="setIncludeAdditives($any($event.target).checked)"
+      />
+      <label for="include-additives" class="form-check-label">Count colorants and additives in it</label>
+    </div>
     @if (evaluation().analysis; as analysis) {
       <gc-unity-formula [analysis]="analysis" />
       @if (evaluation().warnings.length) {
@@ -263,7 +273,13 @@
           <li>{{ additive.name }} : {{ additiveAmount(additive) }}</li>
         }
       </ul>
-      <p class="small muted">On top of the base; not part of the unity formula.</p>
+      <p class="small muted">
+        @if (includeAdditives()) {
+          Counted in the unity formula at their weight in the batch.
+        } @else {
+          On top of the base; not part of the unity formula.
+        }
+      </p>
     }
   </section>
 </div>
@@ -310,7 +326,7 @@
                 </ol>
               }
               @if (savedAnalysis(rec); as analysis) {
-                <em>Unity Formula</em>
+                <em>Unity Formula{{ rec.includeAdditives ? ', counting colorants and additives' : '' }}</em>
                 <gc-unity-formula [analysis]="analysis" />
               }
               @if (rec.date) {

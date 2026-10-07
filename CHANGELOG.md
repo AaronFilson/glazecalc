@@ -4,50 +4,31 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ## Unreleased
 
-### Changed
+### Added
 
-- Chemical formulas show their counts as subscripts everywhere: the oxides of each material and
-  additive (P₂O₅, not P2O5), the oxides chosen for a new one, raw formulas, and error messages.
-  Formulas can be typed with plain numbers (CaCO3, 2CaO•3B2O3•5H2O) and show as CaCO₃ and
-  2CaO•3B₂O₃•5H₂O; coefficients and analysis amounts stay as they are.
-- The formula of each of your own additives is shown in your list; it was saved but never shown.
-- A test checks every standard material's raw formula against its oxides and LOI.
-- Standard materials, checked against manufacturers' data sheets and ceramics references:
-  - Custer Spar is Pacer's typical analysis with its iron and LOI, and is marked discontinued
-    (Pacer closed in October 2023), with G-200 EU and Mahavir as substitutes.
-  - "Magnesium Carbonate" is renamed for what it is, magnesite; Light Magnesium Carbonate,
-    which potters usually buy (43.1% MgO, not 47.8%), is added.
-  - "Calcium Borate" is renamed Colemanite (theoretical), and Colemanite (commercial) is added
-    from Etimine's analysis: about 40% B₂O₃, not 50.8%.
-  - Spodumene is labelled theoretical; China Clay is noted as theoretical kaolin; Cornwall
-    Stone is noted as no longer quarried.
-- Standard additives:
-  - Zircon (zirconium silicate: Zircopax, Superpax, Ultrox and others) is added; recipes that
-    say Zircopax mean it, not zirconium oxide.
-  - Titanium dioxide is added as an additive as well as a material.
-  - Cobalt oxide is Co₃O₄, as sold, and black iron oxide is Fe₃O₄ (magnetite). "Magnetic
-    iron" was the same product and is merged into black iron oxide.
-  - Notes are corrected from ceramics references and safety data sheets. The temperatures
-    that came from an older book are replaced: cobalt oxide becomes CoO at 900–950 C, not
-    800 C; manganese dioxide never becomes MnO in air; black copper oxide melts at about
-    1326 C; copper carbonate decomposes from 290 C rather than melting; tin oxide melts at
-    about 1630 C; the 932 C given for praseodymium oxide was the metal's melting point. Cobalt
-    oxide is about 1.5 times as strong as cobalt carbonate, not 1.4. Hazards follow current
-    classifications: praseodymium oxide is an irritant, not "very toxic"; cobalt and nickel
-    compounds are carcinogens by inhalation.
-- `npm run seed` removes standard records that are no longer in the data files.
-
-### Fixed
-
-- Oxford Spar's analysis had a quarter less silica per unit of flux than the published one;
-  it now uses the published analysis, and is marked discontinued.
-- A material with a trace oxide, such as 0.04% Fe₂O₃, no longer warns that its stored
-  equivalent weight is wrong: the 4-place rounding of tiny amounts set it off.
-- Rutile was entered as one FeO to each TiO₂, which is ilmenite. It is now titanium dioxide with
-  some iron: 0.05 Fe₂O₃ to each TiO₂, about 9% iron oxide by weight.
-- Praseodymium oxide is Pr₆O₁₁, the form sold for stains, not PrO₂.
-
-## Unreleased
+- **A larger standard library: 109 materials and 34 additives**, from manufacturers' data sheets
+  where they exist (ADR 0009).
+  - **Modern replacements for every discontinued material:** G-200 EU and Mahavir for Custer,
+    Oxford and G-200; Minspar 200 for Kona F-4; Alberta Slip for Albany slip; Gillespie Borate
+    for Gerstley, Laguna Borate and Boraq; Wilco UPF for EPK; current Cornwall stone
+    substitutes.
+  - **More US materials:** Ferro (Vibrantz) and Fusion frits, nepheline syenite A270,
+    wollastonite, ball clays and others.
+  - **A UK set:** Grolleg, Molochite, Hyplas 71, UK feldspars, and borax, alkaline, calcium
+    borate, low-expansion and lead frits.
+  - **More additives:** bentonite, zircon, Veegum, Macaloid, carbonates and more.
+  - **The old entries stay,** marked discontinued or historical with their substitutes, for
+    comparing with old recipes.
+  - **Every entry shows its source,** linked and dated, with its other names, status, maker and
+    hazards.
+  - **The materials and additives pages filter** by name or other name, kind and region. The
+    recipe page's list matches other names, marks old entries and remembers the region.
+- **Count colorants and additives in the unity formula, or not.** Calculators differ, which makes
+  recipes hard to compare.
+  - A checkbox under the unity formula chooses. Each additive counts at its weight in the batch.
+  - The choice is saved with the recipe; new recipes start with the choice made last.
+  - To make this possible, additives are now entered as materials are (fired oxides and LOI) and
+    carry their chemistry.
 
 ### Changed
 
@@ -82,10 +63,54 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   "Celadon".
 - Messages are announced reliably by screen readers, and a new message about saving or removing
   replaces the last one on the same subject instead of clearing the others.
+- Chemical formulas show their counts as subscripts everywhere: the oxides of each material and
+  additive (P₂O₅, not P2O5), the oxides chosen for a new one, raw formulas, and error messages.
+  Formulas can be typed with plain numbers (CaCO3, 2CaO•3B2O3•5H2O) and show as CaCO₃ and
+  2CaO•3B₂O₃•5H₂O; coefficients and analysis amounts stay as they are.
+- The formula of each of your own additives is shown in your list; it was saved but never shown.
+- A test checks every standard material's raw formula against its oxides and LOI.
+- Standard materials, checked against manufacturers' data sheets and ceramics references:
+  - Custer Spar is Pacer's typical analysis with its iron and LOI, and is marked discontinued
+    (Pacer closed in October 2023), with G-200 EU and Mahavir as substitutes.
+  - "Magnesium Carbonate" is renamed for what it is, magnesite; Light Magnesium Carbonate,
+    which potters usually buy (43.1% MgO, not 47.8%), is added.
+  - "Calcium Borate" is renamed Colemanite (theoretical), and Colemanite (commercial) is added
+    from Etimine's analysis: about 40% B₂O₃, not 50.8%.
+  - Spodumene is labelled theoretical; China Clay is noted as theoretical kaolin; Cornwall
+    Stone is noted as no longer quarried.
+- Standard additives:
+  - Zircon (zirconium silicate: Zircopax, Superpax, Ultrox and others) is added; recipes that
+    say Zircopax mean it, not zirconium oxide.
+  - Titanium dioxide is added as an additive as well as a material.
+  - Cobalt oxide is Co₃O₄, as sold, and black iron oxide is Fe₃O₄ (magnetite). "Magnetic
+    iron" was the same product and is merged into black iron oxide.
+  - Notes are corrected from ceramics references and safety data sheets. The temperatures
+    that came from an older book are replaced: cobalt oxide becomes CoO at 900–950 C, not
+    800 C; manganese dioxide never becomes MnO in air; black copper oxide melts at about
+    1326 C; copper carbonate decomposes from 290 C rather than melting; tin oxide melts at
+    about 1630 C; the 932 C given for praseodymium oxide was the metal's melting point. Cobalt
+    oxide is about 1.5 times as strong as cobalt carbonate, not 1.4. Hazards follow current
+    classifications: praseodymium oxide is an irritant, not "very toxic"; cobalt and nickel
+    compounds are carcinogens by inhalation.
+- `npm run seed` removes standard records that are no longer in the data files.
 
 ### Fixed
 
+- Corrected from data sheets:
+  - Cobalt oxide is 91% CoO, not 100%.
+  - Cobalt carbonate is 58% CoO.
+  - Copper carbonate is 70% CuO.
+  - Rutile is about 95% TiO₂ with under 1% iron.
+  - Manganese dioxide ore gives about 61% MnO.
+- The nickel note's unsupported "unstable above 1200 C" is gone.
 - The tables of materials and additives styled the text inside each cell as a cell of its own.
+- Oxford Spar's analysis had a quarter less silica per unit of flux than the published one;
+  it now uses the published analysis, and is marked discontinued.
+- A material with a trace oxide, such as 0.04% Fe₂O₃, no longer warns that its stored
+  equivalent weight is wrong: the 4-place rounding of tiny amounts set it off.
+- Rutile was entered as one FeO to each TiO₂, which is ilmenite. It is now titanium dioxide with
+  some iron: 0.05 Fe₂O₃ to each TiO₂, about 9% iron oxide by weight.
+- Praseodymium oxide is Pr₆O₁₁, the form sold for stains, not PrO₂.
 
 ### Removed
 

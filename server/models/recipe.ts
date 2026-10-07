@@ -6,6 +6,8 @@ const recipeSchema = new mongoose.Schema({
   additives: [mongoose.Schema.Types.Mixed],
   computed: [mongoose.Schema.Types.Mixed],
   date: String,
+  // Whether the unity formula counts the additives (colorants) too.
+  includeAdditives: Boolean,
   materials: { type: [mongoose.Schema.Types.Mixed], required: true },
   notes: [String],
   ownedBy: { type: String, required: true },

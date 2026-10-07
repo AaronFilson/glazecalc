@@ -30,15 +30,15 @@ describe('MaterialPage', () => {
   };
 
   const enterTalc = (page: Record<string, any>) => {
-    page['name'].set('My Talc');
-    page['loi'].set('4.75');
+    page['form'].name.set('My Talc');
+    page['form'].loi.set('4.75');
     for (const [oxide, amount] of [
       ['MgO', '3'],
       ['SiO2', '4']
     ]) {
-      page['selectedOxide'].set(oxide);
-      page['addOxide']();
-      const lines = page['formula']();
+      page['form'].selectedOxide.set(oxide);
+      page['form'].addOxide();
+      const lines = page['form'].formula();
       lines[lines.length - 1].amount = amount;
     }
   };
@@ -71,8 +71,8 @@ describe('MaterialPage', () => {
     expect(row.textContent).toContain('Ca₃(PO₄)₂');
 
     // And the oxides chosen for a new material.
-    page['selectedOxide'].set('Al2O3');
-    page['addOxide']();
+    page['form'].selectedOxide.set('Al2O3');
+    page['form'].addOxide();
     await fixture.whenStable();
     expect(text(fixture, 'form li b')).toBe('Al₂O₃');
   });
@@ -95,16 +95,16 @@ describe('MaterialPage', () => {
     await fixture.whenStable();
 
     expect(page['notices'].messages()).toEqual(['Success. Material added to database.']);
-    expect(page['name']()).toBe('');
-    expect(page['formula']()).toEqual([]);
+    expect(page['form'].name()).toBe('');
+    expect(page['form'].formula()).toEqual([]);
     expect(text(fixture, '#my-materials-heading')).toBe('My server materials:');
   });
 
   it('works out the LOI from the molecular weight when no LOI is given', async () => {
     const { page } = await create();
     enterTalc(page);
-    page['loi'].set('');
-    page['molecularweight'].set('379.27');
+    page['form'].loi.set('');
+    page['form'].molecularweight.set('379.27');
     void page['save']();
     const req = httpMock().expectOne(API + '/materials/create');
     expect(req.request.body.loi).toBeCloseTo(4.75, 2);
@@ -114,7 +114,7 @@ describe('MaterialPage', () => {
   it('refuses an LOI of 100 percent without calling the server', async () => {
     const { page } = await create();
     enterTalc(page);
-    page['loi'].set('100');
+    page['form'].loi.set('100');
     await page['save']();
     httpMock().expectNone(API + '/materials/create');
     expect(page['notices'].errors()[0]).toContain('LOI');
@@ -122,7 +122,7 @@ describe('MaterialPage', () => {
 
   it('needs a name and an oxide', async () => {
     const { page } = await create();
-    page['addOxide']();
+    page['form'].addOxide();
     expect(page['notices'].errors()).toEqual(['Error: please select an oxide.']);
     await page['save']();
     expect(page['notices'].errors()[1]).toBe('Error: enter a name and at least one oxide.');
@@ -130,12 +130,12 @@ describe('MaterialPage', () => {
 
   it('warns when a percent analysis does not total about 100', async () => {
     const { page } = await create();
-    page['name'].set('Short spar');
-    page['percentmole'].set('percent');
-    page['loi'].set('0');
-    page['selectedOxide'].set('K2O');
-    page['addOxide']();
-    page['formula']()[0].amount = '50';
+    page['form'].name.set('Short spar');
+    page['form'].percentmole.set('percent');
+    page['form'].loi.set('0');
+    page['form'].selectedOxide.set('K2O');
+    page['form'].addOxide();
+    page['form'].formula()[0].amount = '50';
     void page['save']();
     httpMock()
       .expectOne(API + '/materials/create')
@@ -152,10 +152,10 @@ describe('MaterialPage', () => {
       fields: [{ name: 'CaO', amount: 1 }]
     };
     const { fixture, page } = await create([mine]);
-    page['selectedOxide'].set('CaO');
-    page['addOxide']();
-    page['removeOxide'](0);
-    expect(page['formula']()).toEqual([]);
+    page['form'].selectedOxide.set('CaO');
+    page['form'].addOxide();
+    page['form'].removeOxide(0);
+    expect(page['form'].formula()).toEqual([]);
 
     const removing = page['removal'].remove(mine);
     httpMock()

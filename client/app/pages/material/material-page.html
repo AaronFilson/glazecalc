@@ -11,31 +11,31 @@
     <div class="row">
       <div class="col-xl-4 col-md-4 col-8">
         <label for="material-name">Name of Material: </label><br />
-        <input id="material-name" type="text" name="name" [(ngModel)]="name" />
+        <input id="material-name" type="text" name="name" [(ngModel)]="form.name" />
       </div>
       <div class="col-xl-4 col-md-4 col-8">
         <label for="raw-formula">Raw formula: </label><br />
-        <input id="raw-formula" type="text" name="rawformula" [(ngModel)]="rawformula" />
+        <input id="raw-formula" type="text" name="rawformula" [(ngModel)]="form.rawformula" />
       </div>
       <div class="col-xl-4 col-md-4 col-8">
         <label for="related-to">Related To: </label><br />
-        <input id="related-to" type="text" name="relatedTo" [(ngModel)]="relatedTo" />
+        <input id="related-to" type="text" name="relatedTo" [(ngModel)]="form.relatedTo" />
       </div>
     </div>
     <div class="row">
       <div class="col-lg-10">
         <label for="notes" class="boxlabel"> Notes: </label>
-        <textarea id="notes" name="notes" rows="3" class="form-control" [(ngModel)]="notes"></textarea>
+        <textarea id="notes" name="notes" rows="3" class="form-control" [(ngModel)]="form.notes"></textarea>
       </div>
     </div>
     <div class="row">
       <div class="col-xl-4 col-md-4 col-8">
         <label for="LOI">Loss on Ignition - LOI (percentage): </label>
-        <input id="LOI" type="text" name="loi" [(ngModel)]="loi" />
+        <input id="LOI" type="text" name="loi" [(ngModel)]="form.loi" />
       </div>
       <div class="col-xl-4 col-md-4 col-8">
         <label for="manualmolecularweight">Raw molecular weight of the formula (used only if LOI is blank): </label>
-        <input id="manualmolecularweight" type="text" name="molecularweight" [(ngModel)]="molecularweight" />
+        <input id="manualmolecularweight" type="text" name="molecularweight" [(ngModel)]="form.molecularweight" />
       </div>
     </div>
     <p>The equivalent and fired weights are calculated from the formula and LOI when you save.</p>
@@ -45,14 +45,14 @@
       <div class="col-lg-6">
         <label for="firedoxide">Oxide Selection</label>
         <div>
-          <select id="firedoxide" name="firedox-select" [(ngModel)]="selectedOxide">
+          <select id="firedoxide" name="firedox-select" [(ngModel)]="form.selectedOxide">
             <option value="">none</option>
             @for (oxide of oxides; track oxide.value) {
               <option [value]="oxide.value">{{ oxide.label }}</option>
             }
           </select>
         </div>
-        <button type="button" class="btn btn-light border" (click)="addOxide()">Add the oxide to the list</button>
+        <button type="button" class="btn btn-light border" (click)="form.addOxide()">Add the oxide to the list</button>
       </div>
       <fieldset class="col-lg-6">
         <legend class="h5">This formula is in :</legend>
@@ -63,7 +63,7 @@
             type="radio"
             name="percentmole"
             value="percent"
-            [(ngModel)]="percentmole"
+            [(ngModel)]="form.percentmole"
           />
           <label for="radiopercent" class="form-check-label">Percent</label>
         </div>
@@ -74,7 +74,7 @@
             type="radio"
             name="percentmole"
             value="molecular"
-            [(ngModel)]="percentmole"
+            [(ngModel)]="form.percentmole"
           />
           <label for="radiomole" class="form-check-label">Molecular / Unity</label>
         </div>
@@ -83,7 +83,7 @@
     <div class="row">
       <div class="col-lg-12">
         <ul>
-          @for (line of formula(); track $index) {
+          @for (line of form.formula(); track $index) {
             <li>
               <b>{{ formatFormula(line.name) }}</b>
               <p>
@@ -96,7 +96,7 @@
                   [(ngModel)]="line.amount"
                 />
               </p>
-              <button type="button" class="btn btn-light border" (click)="removeOxide($index)">
+              <button type="button" class="btn btn-light border" (click)="form.removeOxide($index)">
                 Remove from formula list
               </button>
             </li>
@@ -157,28 +157,5 @@
 
 <section class="tech-info" aria-labelledby="standard-materials-heading">
   <h4 id="standard-materials-heading">The standard materials:</h4>
-  <table class="table table-bordered">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Equivalent Weight</th>
-        <th>Fired Weight</th>
-        <th>Notes</th>
-        <th>Elements</th>
-        <th>Raw Formula</th>
-      </tr>
-    </thead>
-    <tbody>
-      @for (mat of standardMaterials(); track mat._id) {
-        <tr>
-          <td>{{ mat.name }}</td>
-          <td>{{ mat.equivalent }}</td>
-          <td>{{ mat.formulaweight }}</td>
-          <td>{{ firstOf(mat.notes) }}</td>
-          <td>{{ fieldsText(mat) }}</td>
-          <td>{{ formatFormula(mat.rawformula) }}</td>
-        </tr>
-      }
-    </tbody>
-  </table>
+  <gc-standard-list [records]="standardMaterials()" noun="materials" />
 </section>

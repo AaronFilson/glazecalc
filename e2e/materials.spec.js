@@ -21,11 +21,28 @@ test.beforeEach(async ({ page, request }) => {
 
 test('lists standard materials with corrected equivalent weights', async ({ page }) => {
   const row = (name) =>
-    standardTable(page).locator('tr', { has: page.locator('td', { hasText: new RegExp('^' + name + '$') }) });
+    standardTable(page).locator('tr', { has: page.locator('td', { hasText: new RegExp('^\\s*' + name + '\\s*$') }) });
   await expect(row('Dolomite')).toContainText('92.2');
   await expect(row('Talc')).toContainText('126.42');
   await expect(row('Bone Ash')).toContainText('CaO : 3; P₂O₅ : 1');
   await expect(row('Bone Ash')).toContainText('Ca₃(PO₄)₂');
+});
+
+test('narrows the standard materials by kind and region, and says what replaced the old ones', async ({ page }) => {
+  const tools = page.locator('.standard-tools');
+  await tools.getByLabel('Kind').selectOption('feldspar');
+  const custer = standardTable(page).locator('tr', { hasText: 'Custer Spar' });
+  await expect(custer.locator('.status-badge')).toHaveText('Discontinued 2023');
+  await expect(custer).toContainText('Use instead: G-200 EU Feldspar, Mahavir Potash Feldspar');
+  await expect(custer.getByRole('link')).toHaveAttribute('href', /^https:/);
+
+  await tools.getByLabel('Kind').selectOption('');
+  await tools.getByLabel('Sold in').selectOption('UK');
+  await tools.getByLabel('Filter').fill('frit');
+  await expect(standardTable(page)).toContainText('Standard Borax Frit (Potclays 2263)');
+  // A US-only frit is left out; one sold in both is not.
+  await expect(standardTable(page)).not.toContainText('Fusion Frit F-19');
+  await expect(standardTable(page)).toContainText('Ferro Frit 3134');
 });
 
 test('saves a molecular formula and calculates its weights from the LOI', async ({ page }) => {

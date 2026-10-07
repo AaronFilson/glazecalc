@@ -1,6 +1,6 @@
 <gc-page-header
   title="Additives and colorants"
-  lead="Colorants and opacifiers measured on top of the base recipe, such as cobalt or tin oxide. They are not part of the unity formula."
+  lead="Colorants and opacifiers measured on top of the base recipe, such as cobalt or tin oxide. A recipe can leave them out of the unity formula or count them in it."
 />
 <gc-notices [notices]="notices" />
 
@@ -14,53 +14,80 @@
     <div class="row">
       <div class="col-xl-4 col-md-6 mb-3">
         <label for="additive-name">Name of Additive: </label>
-        <input id="additive-name" type="text" name="name" [(ngModel)]="name" />
+        <input id="additive-name" type="text" name="name" [(ngModel)]="form.name" />
       </div>
       <div class="col-xl-4 col-md-6 mb-3">
-        <label for="formula">Formula: </label>
-        <input id="formula" type="text" name="rawformula" [(ngModel)]="rawformula" />
+        <label for="formula">Formula, as sold: </label>
+        <input id="formula" type="text" name="rawformula" [(ngModel)]="form.rawformula" />
       </div>
       <div class="col-xl-4 col-md-6 mb-3">
         <label for="related-to">Related To: </label>
-        <input id="related-to" type="text" name="relatedTo" [(ngModel)]="relatedTo" />
+        <input id="related-to" type="text" name="relatedTo" [(ngModel)]="form.relatedTo" />
       </div>
     </div>
     <div class="row">
       <div class="col-lg-10 mb-3">
         <label for="notes" class="boxlabel">Notes: </label>
-        <textarea id="notes" name="notes" rows="3" class="form-control" [(ngModel)]="notes"></textarea>
+        <textarea id="notes" name="notes" rows="3" class="form-control" [(ngModel)]="form.notes"></textarea>
       </div>
     </div>
+    <div class="row">
+      <div class="col-xl-4 col-md-6 mb-3">
+        <label for="additive-loi">Loss on Ignition - LOI (percentage): </label>
+        <input id="additive-loi" type="text" name="loi" [(ngModel)]="form.loi" />
+      </div>
+      <div class="col-xl-4 col-md-6 mb-3">
+        <label for="additive-molecularweight">Raw molecular weight of the formula (used only if LOI is blank): </label>
+        <input id="additive-molecularweight" type="text" name="molecularweight" [(ngModel)]="form.molecularweight" />
+      </div>
+    </div>
+    <p>
+      Enter what it gives the glaze once fired: black cobalt oxide, Co₃O₄, is CoO with a 6.6% LOI. A recipe can then
+      count it in the unity formula.
+    </p>
 
-    <h4>Enter the formula:</h4>
+    <h4>Enter the formula (fired):</h4>
     <div class="row">
       <div class="col-lg-6 mb-3">
-        <label for="componentselection">Component Selection: </label><br />
-        <select id="componentselection" name="component-select" [(ngModel)]="selectedComponent">
-          <option value="">none</option>
-          @for (component of components; track component.value) {
-            <option [value]="component.value">{{ component.label }}</option>
-          }
-        </select>
-        <button type="button" class="btn btn-light border" (click)="addToFormula(selectedComponent(), 'component')">
-          Add the component
-        </button>
+        <label for="additive-oxide">Oxide Selection</label>
+        <div>
+          <select id="additive-oxide" name="additive-oxide-select" [(ngModel)]="form.selectedOxide">
+            <option value="">none</option>
+            @for (oxide of oxides; track oxide.value) {
+              <option [value]="oxide.value">{{ oxide.label }}</option>
+            }
+          </select>
+        </div>
+        <button type="button" class="btn btn-light border" (click)="form.addOxide()">Add the oxide to the list</button>
       </div>
-      <div class="col-lg-6 mb-3">
-        <label for="elementselection">Element Selection: </label><br />
-        <select id="elementselection" name="element-select" [(ngModel)]="selectedElement">
-          <option value="">none</option>
-          @for (element of elements; track element.value) {
-            <option [value]="element.value">{{ element.label }}</option>
-          }
-        </select>
-        <button type="button" class="btn btn-light border" (click)="addToFormula(selectedElement(), 'element')">
-          Add the element
-        </button>
-      </div>
+      <fieldset class="col-lg-6 mb-3">
+        <legend class="h5">This formula is in :</legend>
+        <div class="form-check">
+          <input
+            id="additive-percent"
+            class="form-check-input"
+            type="radio"
+            name="percentmole"
+            value="percent"
+            [(ngModel)]="form.percentmole"
+          />
+          <label for="additive-percent" class="form-check-label">Percent</label>
+        </div>
+        <div class="form-check">
+          <input
+            id="additive-mole"
+            class="form-check-input"
+            type="radio"
+            name="percentmole"
+            value="molecular"
+            [(ngModel)]="form.percentmole"
+          />
+          <label for="additive-mole" class="form-check-label">Molecular / Unity</label>
+        </div>
+      </fieldset>
     </div>
     <ul>
-      @for (line of formula(); track $index) {
+      @for (line of form.formula(); track $index) {
         <li>
           <b>{{ formatFormula(line.name) }}</b>
           <p>
@@ -73,7 +100,7 @@
               [(ngModel)]="line.amount"
             />
           </p>
-          <button type="button" class="btn btn-light border" (click)="removeFromFormula($index)">
+          <button type="button" class="btn btn-light border" (click)="form.removeOxide($index)">
             Remove from formula list
           </button>
         </li>
@@ -92,7 +119,7 @@
         <tr>
           <th>Name</th>
           <th>Formula</th>
-        <th>Notes</th>
+          <th>Notes</th>
           <th>Elements</th>
         </tr>
       </thead>
@@ -111,7 +138,7 @@
                 />
               </div>
             </td>
-          <td>{{ formatFormula(add.rawformula) }}</td>
+            <td>{{ formatFormula(add.rawformula) }}</td>
             <td>{{ firstOf(add.notes) }}</td>
             <td>{{ fieldsText(add) }}</td>
           </tr>
@@ -124,22 +151,5 @@
 
 <section class="tech-info" aria-labelledby="standard-additives-heading">
   <h4 id="standard-additives-heading">The standard server additives:</h4>
-  <table class="table table-bordered">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Notes</th>
-        <th>Elements</th>
-      </tr>
-    </thead>
-    <tbody>
-      @for (add of standardAdditives(); track add._id) {
-        <tr>
-          <td>{{ add.name }}</td>
-          <td>{{ firstOf(add.notes) }}</td>
-          <td>{{ fieldsText(add) }}</td>
-        </tr>
-      }
-    </tbody>
-  </table>
+  <gc-standard-list [records]="standardAdditives()" noun="additives" />
 </section>

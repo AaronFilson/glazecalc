@@ -6,7 +6,26 @@ export interface Owned {
   ownedBy?: string;
 }
 
-export interface Material extends Owned {
+/** What a standard material or additive is and where its numbers come from (server/models/library_info.ts). */
+export interface LibraryInfo {
+  aliases?: string[];
+  category?: string;
+  region?: string[];
+  status?: 'current' | 'scarce' | 'discontinued' | 'historical';
+  statusSince?: string;
+  substitutes?: string[];
+  replaces?: string[];
+  manufacturer?: string;
+  /** Hazard classification from a current safety data sheet. */
+  hazards?: string;
+  source?: { name: string; url?: string; date?: string; kind?: string };
+  /** Adds nothing to the unity formula: stains, gums, silicon carbide. */
+  noChemistry?: boolean;
+  /** Uses another record's chemistry, as Veegum uses bentonite's. */
+  chemistryOf?: string;
+}
+
+export interface Material extends Owned, LibraryInfo {
   name: string;
   rawformula?: string;
   relatedTo?: string[] | string;
@@ -24,12 +43,22 @@ export interface RecipeMaterial extends Material {
   amount?: string;
 }
 
-export interface Additive extends Owned {
+/**
+ * A colorant, opacifier or other additive. Its chemistry is stored as a
+ * material's is, so a recipe can count it in the unity formula; additives saved
+ * before that have only their fields, which may name elements.
+ */
+export interface Additive extends Owned, LibraryInfo {
   name: string;
   rawformula?: string;
   relatedTo?: string[] | string;
   notes?: string[] | string;
-  fields: Array<{ name: string; amount: string | number }>;
+  fields: MaterialField[];
+  percentmole?: 'molecular' | 'percent';
+  loi?: number | string | null;
+  molecularweight?: number | string | null;
+  equivalent?: number;
+  formulaweight?: number;
   amount?: string;
   /** On a recipe: what the amount is in (see AdditiveUnit). */
   unit?: AdditiveUnit;
@@ -56,6 +85,8 @@ export interface Recipe extends Owned {
   materials: RecipeMaterial[];
   additives?: Additive[];
   computed?: RecipeAnalysis[] | RecipeAnalysis;
+  /** Whether the unity formula counts the additives too. */
+  includeAdditives?: boolean;
 }
 
 export interface Advice extends Owned {

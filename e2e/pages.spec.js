@@ -115,18 +115,20 @@ test.describe('additives', () => {
     await page.goto('/additive');
     const standard = page.locator('section', { hasText: 'The standard server additives:' });
     const row = standard.locator('tr', { has: page.locator('td', { hasText: /^\s*Cobalt carbonate\s*$/ }) });
-    await expect(row).toContainText('CoO : 1');
+    // From the supplier's data sheet: a weight-percent analysis.
+    await expect(row).toContainText('CoO 58.49%');
   });
 
-  test('saves an additive from components and elements, then removes it', async ({ page }) => {
+  test('saves an additive as fired oxides, then removes it', async ({ page }) => {
     await page.goto('/additive');
     await page.locator('#additive-name').fill('Blue stain');
     await page.locator('#formula').fill('CoAl2O4');
     await page.locator('#notes').fill('Spinel');
-    await addPart(page, '#componentselection', 'CoO', 'Add the component', 1, '.part-amount');
-    await addPart(page, '#componentselection', 'Al2O3', 'Add the component', 1, '.part-amount');
-    await addPart(page, '#elementselection', 'Zn', 'Add the element', 0.1, '.part-amount');
-    await page.locator('li', { hasText: 'Zn' }).getByRole('button', { name: 'Remove from formula list' }).click();
+    await page.locator('#additive-loi').fill('0');
+    await addPart(page, '#additive-oxide', 'CoO', 'Add the oxide to the list', 1, '.part-amount');
+    await addPart(page, '#additive-oxide', 'Al2O3', 'Add the oxide to the list', 1, '.part-amount');
+    await addPart(page, '#additive-oxide', 'ZnO', 'Add the oxide to the list', 0.1, '.part-amount');
+    await page.locator('li', { hasText: 'ZnO' }).getByRole('button', { name: 'Remove from formula list' }).click();
     await page.getByRole('button', { name: 'Save' }).click();
 
     await expect(messages(page)).toContainText('Additive added');
@@ -146,10 +148,10 @@ test.describe('additives', () => {
     await expect(page.locator('section', { hasText: 'My server additives / colorants:' })).toHaveCount(0);
   });
 
-  test('asks for a component before adding one', async ({ page }) => {
+  test('asks for an oxide before adding one', async ({ page }) => {
     await page.goto('/additive');
-    await page.getByRole('button', { name: 'Add the component' }).click();
-    await expect(errors(page)).toContainText('please select an component');
+    await page.getByRole('button', { name: 'Add the oxide to the list' }).click();
+    await expect(errors(page)).toContainText('please select an oxide');
     await page.getByRole('button', { name: 'Dismiss' }).click();
     await expect(errors(page)).toHaveCount(0);
   });

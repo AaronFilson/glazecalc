@@ -3,7 +3,8 @@ import { By } from '@angular/platform-browser';
 import { testProviders, text } from '../testing/test-providers';
 import { localDate, optional } from './dates';
 import { Notices, NoticesList } from './notices';
-import { ADDITIVE_COMPONENTS, FIRING_FIELDS, firstOf } from './options';
+import { OXIDE_GROUPS } from '../../../lib/chemistry';
+import { ADDITIVE_OXIDES, FIRED_OXIDES, FIRING_FIELDS, fieldsText, firstOf } from './options';
 import { PageHeader } from './page-header';
 
 describe('Notices', () => {
@@ -97,11 +98,23 @@ describe('options', () => {
     expect(firstOf([])).toBe('');
   });
 
-  it('stores real oxide formulas for the additive picker', () => {
-    const values = ADDITIVE_COMPONENTS.map((c) => c.value);
-    expect(values).toContain('Sb2O3');
-    expect(values).toContain('P2O5');
-    expect(new Set(values).size).toBe(values.length);
+  it('offers only oxides the unity formula knows, each once', () => {
+    for (const list of [FIRED_OXIDES, ADDITIVE_OXIDES]) {
+      const values = list.map((option) => option.value);
+      expect(values.filter((value) => !(value in OXIDE_GROUPS))).toEqual([]);
+      expect(new Set(values).size).toBe(values.length);
+    }
+    expect(ADDITIVE_OXIDES.map((option) => option.value)).toEqual(expect.arrayContaining(['CoO', 'Sb2O3', 'P2O5']));
+  });
+
+  it('writes an analysis in percent and a formula in moles', () => {
+    const fields = [
+      { name: 'SiO2', amount: '68.5' },
+      { name: 'Al2O3', amount: '17' }
+    ];
+    expect(fieldsText({ percentmole: 'percent', fields })).toBe('SiO₂ 68.5%, Al₂O₃ 17%');
+    expect(fieldsText({ percentmole: 'molecular', fields })).toBe('SiO₂ : 68.5; Al₂O₃ : 17');
+    expect(fieldsText({ fields })).toBe('SiO₂ : 68.5; Al₂O₃ : 17');
   });
 
   it('keeps all sixty firing log fields', () => {

@@ -24,7 +24,9 @@ test.beforeEach(async ({ page }) => {
   await signUpAndSignIn(page);
   await page.goto('/recipe');
   // The standard materials have loaded into the library.
-  await expect(page.locator('.library', { hasText: 'Add materials' })).toContainText('Standard (34)');
+  await expect(page.locator('.library', { hasText: 'Add materials' })).toContainText(
+    `Standard (${standardData.load('materials').length})`
+  );
 });
 
 test('shows the unity formula of a dolomite matte as it is typed', async ({ page }) => {
@@ -201,6 +203,31 @@ test('colorants in % of base stay as they are when the scale changes; in parts o
     'The amount for Whiting is not a number ("20,5"). Please fix it first.'
   );
   await expect(amount(page, 'Orthoclase')).toHaveValue('300');
+});
+
+test('counts colorants in the unity formula only when asked, and saves the choice', async ({ page }) => {
+  await page.locator('#recipe-name').fill('Cobalt blue');
+  await addStandardMaterial(page, 'Whiting', 20);
+  await addStandardMaterial(page, 'Silica', 30);
+  await addColorant(page, 'Cobalt carbonate', 1);
+  const include = page.getByLabel('Count colorants and additives in it');
+  await expect(include).not.toBeChecked();
+  await expect(unity(page)).not.toContainText('CoO');
+
+  await include.check();
+  await expect(unity(page)).toContainText('CoO');
+  await expect(unity(page)).toContainText('Counted in the unity formula');
+  await save(page);
+  await expect(page.locator('.recipe-status')).toContainText('Saved at');
+
+  // Opened again after a reload, it still counts its colorant.
+  await page.reload();
+  const entry = saved(page).locator('.saved-recipe', { hasText: 'Cobalt blue' });
+  await entry.getByRole('button', { name: 'Expand to View' }).click();
+  await expect(entry).toContainText('counting colorants and additives');
+  await entry.getByRole('button', { name: 'Open' }).click();
+  await expect(page.getByLabel('Count colorants and additives in it')).toBeChecked();
+  await expect(unity(page)).toContainText('CoO');
 });
 
 test('keeps edits, and the focus, when asked about unsaved changes', async ({ page }) => {

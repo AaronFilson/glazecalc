@@ -37,6 +37,23 @@ describe('additives API', () => {
     expect(res.body._id).to.be.a('string');
   });
 
+  it('keeps the chemistry of an additive, so a recipe can count it in the unity formula', async () => {
+    const cobalt = {
+      name: 'My cobalt oxide',
+      rawformula: 'Co₃O₄',
+      percentmole: 'molecular',
+      loi: 6.64,
+      molecularweight: 80.26,
+      equivalent: 80.26,
+      formulaweight: 74.93,
+      fields: [{ name: 'CoO', amount: '1', amountUnity: 1 }]
+    };
+    const res = await create(cobalt);
+    expect(res).to.have.status(200);
+    expect(res.body).to.include({ percentmole: 'molecular', loi: 6.64, equivalent: 80.26, formulaweight: 74.93 });
+    expect(res.body.fields).to.eql(cobalt.fields);
+  });
+
   it('lists all of your additives, and finds the newest', async () => {
     for (const name of ['First', 'Second', 'Third', 'Fourth']) {
       expect(await create({ ...ochre, name })).to.have.status(200);

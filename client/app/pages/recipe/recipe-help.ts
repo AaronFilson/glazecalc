@@ -86,6 +86,11 @@ const readHidden = (): boolean => {
               <li><b>parts</b>: the same unit as the materials, such as 1 part on a base of 3 flint and 2 dolomite.</li>
               <li><b>grams</b>: a weight, in the same batch as the materials.</li>
             </ul>
+            <p>
+              Some calculators count colorants in the unity formula and some do not. Tick
+              <b>Count colorants and additives in it</b>, under the unity formula, to count them at their weight in the
+              batch, or leave it clear to compare with one that does not. The choice is saved with the recipe.
+            </p>
           </li>
           <li>
             <h3>Change the scale when you need to</h3>

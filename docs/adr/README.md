@@ -13,3 +13,4 @@ Each one is written once; a later change gets a new record that replaces the old
 | [0006](0006-email-through-ses-smtp.md)            | Email through Amazon SES over SMTP                         | 2026-10-05 |
 | [0007](0007-trials-as-real-accounts.md)           | Trials are real accounts with placeholder emails           | 2026-10-05 |
 | [0008](0008-typescript-server-without-a-build.md) | A TypeScript server that Node runs without a build step    | 2026-10-05 |
+| [0009](0009-standard-library-from-data-sheets.md) | The standard library comes from manufacturers' data sheets | 2026-10-07 |

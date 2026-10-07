@@ -1,4 +1,5 @@
 import mongoose from 'mongoose';
+import { libraryInfo } from './library_info.ts';
 
 // A raw material with its oxide analysis (fields) and molecular weights.
 const materialSchema = new mongoose.Schema({
@@ -12,7 +13,8 @@ const materialSchema = new mongoose.Schema({
   relatedTo: { type: [String] },
   name: { type: String, required: true },
   percentmole: { type: String, required: true },
-  rawformula: String
+  rawformula: String,
+  ...libraryInfo
 });
 
 export default mongoose.model('Material', materialSchema);

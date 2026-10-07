@@ -1,7 +1,7 @@
 import { DatePipe } from '@angular/common';
 import { Component, Injector, OnInit, afterNextRender, computed, inject, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { calculateUMF } from '../../../../lib/chemistry';
+import { MaterialInput, RecipeLine, calculateUMF, materialWeights } from '../../../../lib/chemistry';
 import { ApiResourceFactory } from '../../core/api-resource.service';
 import { errorMessage } from '../../core/error-message';
 import { Additive, AdditiveUnit, Material, Recipe, RecipeAnalysis, RecipeMaterial } from '../../core/models';
@@ -29,19 +29,73 @@ export interface Evaluation {
   warnings: string[];
 }
 
-/** The unity formula of the materials; additives are not part of it. Blank amounts count as 0. */
-export function evaluate(materials: RecipeMaterial[]): Evaluation {
+export interface EvaluateOptions {
+  /** Count the colorants and additives in the unity formula too. */
+  includeAdditives?: boolean;
+  /** The chemistry an additive borrows by name, as Veegum borrows bentonite's. */
+  chemistryOf?: (name: string) => MaterialInput | undefined;
+}
+
+/** Whether the unity formula can read a material's or additive's chemistry. */
+function hasChemistry(record: MaterialInput): boolean {
+  try {
+    materialWeights(record);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+/**
+ * The unity formula of a recipe. Blank amounts count as 0. Additives are left
+ * out unless they are included; then each counts at its weight in the base's
+ * unit: a percent of the base's total, or its parts or grams as they are.
+ * Stains and other additives with no chemistry add nothing, and an additive
+ * whose analysis the unity formula cannot read is left out, with a warning.
+ */
+export function evaluate(
+  materials: RecipeMaterial[],
+  additives: Additive[] = [],
+  options: EvaluateOptions = {}
+): Evaluation {
   if (!materials.some((m) => amountOf(m.amount) > 0 || (m.amount ?? '').trim() !== '')) {
     return { analysis: null, problem: null, warnings: [] };
   }
+  const lines: RecipeLine[] = materials.map((material) => ({ material, amount: material.amount ?? '' }));
+  const leftOut: string[] = [];
+  if (options.includeAdditives) {
+    const baseTotal = totalOf(materials.map((m) => m.amount));
+    for (const additive of additives) {
+      const amount = amountOf(additive.amount);
+      if (!amount || additive.noChemistry) continue;
+      const chemistry = additive.chemistryOf ? options.chemistryOf?.(additive.chemistryOf) : additive;
+      if (!chemistry || !hasChemistry(chemistry)) {
+        leftOut.push(additive.name + ' has no oxide analysis the unity formula can use, so it is left out.');
+        continue;
+      }
+      const weight = unitOf(additive) === 'percent' ? (amount * baseTotal) / 100 : amount;
+      lines.push({ material: { ...chemistry, name: additive.name }, amount: weight });
+    }
+  }
   try {
-    const result = calculateUMF(materials.map((material) => ({ material, amount: material.amount ?? '' })));
+    const result = calculateUMF(lines);
     // uList is the key saved recipes and older versions of the app use.
-    return { analysis: { ...result, uList: result.umf }, problem: null, warnings: result.warnings };
+    return { analysis: { ...result, uList: result.umf }, problem: null, warnings: [...result.warnings, ...leftOut] };
   } catch (e) {
     return { analysis: null, problem: (e as Error).message, warnings: [] };
   }
 }
+
+const INCLUDE_KEY = 'includeAdditives';
+
+/** Whether new recipes count their additives: the choice made last on this browser. */
+const includeByDefault = (): boolean => {
+  try {
+    return localStorage.getItem(INCLUDE_KEY) === 'yes';
+  } catch {
+    return false;
+  }
+};
 
 /** A colorant's amount with its unit: 2%, 3 parts, 5 g. */
 export function additiveAmount(additive: Additive): string {
@@ -121,6 +175,9 @@ export class RecipePage implements OnInit {
   protected readonly expanded = signal<ReadonlySet<string>>(new Set());
   protected readonly removal = new Removal(this.recipes, this.myRecipes, this.notices, (recipe) => recipe.title);
 
+  /** Whether the unity formula counts the colorants and additives too; saved with the recipe. */
+  protected readonly includeAdditives = signal(includeByDefault());
+
   // Saving: the saved recipe this is (if any), and whether it has changed since.
   protected readonly savedId = signal<string | null>(null);
   protected readonly savedAt = signal<Date | null>(null);
@@ -130,7 +187,8 @@ export class RecipePage implements OnInit {
       date: this.date(),
       notes: this.notes(),
       materials: this.lines().map((l) => [libraryKey(l), l.amount ?? '']),
-      additives: this.additiveLines().map((a) => [libraryKey(a), a.amount ?? '', unitOf(a)])
+      additives: this.additiveLines().map((a) => [libraryKey(a), a.amount ?? '', unitOf(a)]),
+      includeAdditives: this.includeAdditives()
     })
   );
   private readonly savedSnapshot = signal(this.snapshot());
@@ -154,7 +212,12 @@ export class RecipePage implements OnInit {
   /** Told to screen readers: what an action did that the focus does not show. */
   protected readonly announcement = signal('');
 
-  protected readonly evaluation = computed(() => evaluate(this.lines()));
+  protected readonly evaluation = computed(() =>
+    evaluate(this.lines(), this.additiveLines(), {
+      includeAdditives: this.includeAdditives(),
+      chemistryOf: (name) => this.findByName(name)
+    })
+  );
   protected readonly total = computed(() => totalOf(this.lines().map((l) => l.amount)));
   /** The unity formula on one line: K₂O 0.264 · CaO 0.736 · Al₂O₃ 0.407 · SiO₂ 3.710 · Si:Al 9.11. */
   protected readonly inlineSummary = computed(() => {
@@ -339,7 +402,8 @@ export class RecipePage implements OnInit {
       notes: this.notes() || 'None.',
       materials: this.lines(),
       additives: this.additiveLines(),
-      computed: analysis
+      computed: analysis,
+      includeAdditives: this.includeAdditives()
     };
     // What is sent, and which recipe the page shows: both can change before the server answers.
     const sent = this.snapshot();
@@ -410,6 +474,7 @@ export class RecipePage implements OnInit {
       this.notes.set(notes === 'None.' ? '' : notes);
       this.lines.set(copy(recipe.materials ?? []));
       this.additiveLines.set(copy(recipe.additives ?? []));
+      this.includeAdditives.set(!!recipe.includeAdditives);
       this.savedId.set(recipe._id ?? null);
       this.savedSnapshot.set(this.snapshot());
       this.savedAt.set(null);
@@ -454,12 +519,38 @@ export class RecipePage implements OnInit {
     this.notes.set('');
     this.lines.set([]);
     this.additiveLines.set([]);
+    this.includeAdditives.set(includeByDefault());
     this.savedId.set(null);
     this.savedAt.set(null);
     this.savedSnapshot.set(this.snapshot());
     this.scaleMessage.set(null);
     this.saveProblem.set('');
     this.batchOpen.set(false);
+  }
+
+  /** Counts the additives in the unity formula, or not; new recipes start with the choice made last. */
+  protected setIncludeAdditives(include: boolean): void {
+    this.includeAdditives.set(include);
+    try {
+      localStorage.setItem(INCLUDE_KEY, include ? 'yes' : 'no');
+    } catch {
+      // Without storage the choice still holds for this recipe.
+    }
+  }
+
+  /** A material or additive by its name or one of its aliases, for one that borrows another's chemistry. */
+  private findByName(name: string): MaterialInput | undefined {
+    const wanted = name.trim().toLowerCase();
+    const records = [
+      ...this.standardAdditives(),
+      ...this.myAdditives(),
+      ...this.standardMaterials(),
+      ...this.myMaterials()
+    ];
+    return records.find(
+      (record) =>
+        record.name.toLowerCase() === wanted || (record.aliases ?? []).some((alias) => alias.toLowerCase() === wanted)
+    );
   }
 
   // The saved list.

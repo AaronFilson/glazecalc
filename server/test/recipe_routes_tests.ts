@@ -35,6 +35,12 @@ describe('recipe API', () => {
     expect(res.body._id).to.be.a('string');
   });
 
+  it('keeps whether the unity formula counts the additives', async () => {
+    const res = await create({ ...leach, includeAdditives: true });
+    expect(res).to.have.status(200);
+    expect(res.body.includeAdditives).to.equal(true);
+  });
+
   it('lists all of your recipes, and finds the newest', async () => {
     for (const title of ['First', 'Second', 'Third']) {
       expect(await create({ ...leach, title })).to.have.status(200);

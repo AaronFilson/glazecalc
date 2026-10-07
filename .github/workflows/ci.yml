@@ -88,6 +88,8 @@ jobs:
         run: |
           docker compose run --rm app node scripts/seed-standard.js
           curl -fsS http://127.0.0.1:3000/ | grep -q '<title>Glazecalc'
+          # The app's own pages come from the client too: /reset is where reset emails link.
+          curl -fsS http://127.0.0.1:3000/reset | grep -q '<title>Glazecalc'
           # Sign up, then use the session it sets. The cookie is Secure in production
           # and this check runs over plain HTTP, so its token goes in a Bearer header.
           curl -fsS -D signup-headers.txt -o /dev/null -X POST -H 'Content-Type: application/json' \

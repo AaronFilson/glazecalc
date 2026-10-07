@@ -1,3 +1,5 @@
+import { MaterialField, formatFormula } from '../../../lib/chemistry';
+
 export interface Option {
   value: string;
   label: string;
@@ -22,72 +24,28 @@ export const FIRED_OXIDES: Option[] = [
   { value: 'PbO', label: 'PbO : Lead oxide' }
 ];
 
-/** Compounds an additive formula can contain. */
-export const ADDITIVE_COMPONENTS: Option[] = [
-  { value: 'Na2O', label: 'Na₂O : Sodium oxide (Natrium oxide)' },
-  { value: 'K2O', label: 'K₂O : Potassium oxide (Kalium oxide)' },
-  { value: 'KNaO', label: 'KNaO : Potassium or Sodium oxide' },
-  { value: 'CaO', label: 'CaO : Calcium oxide' },
-  { value: 'MgO', label: 'MgO : Magnesium oxide' },
-  { value: 'BaO', label: 'BaO : Barium oxide' },
-  { value: 'Li2O', label: 'Li₂O : Lithium oxide' },
-  { value: 'SrO', label: 'SrO : Strontium oxide' },
-  { value: 'Sb2O3', label: 'Sb₂O₃ : Antimony oxide (Stibium oxide)' },
-  { value: 'B2O3', label: 'B₂O₃ : Boric oxide' },
-  { value: 'ZnO', label: 'ZnO : Zinc oxide' },
-  { value: 'Al2O3', label: 'Al₂O₃ : Aluminum oxide' },
-  { value: 'TiO2', label: 'TiO₂ : Titanium dioxide' },
-  { value: 'SiO2', label: 'SiO₂ : Silicon dioxide' },
-  { value: 'Fe2O3', label: 'Fe₂O₃ : Red Iron oxide' },
-  { value: 'FeO', label: 'FeO : Ferrous oxide' },
-  { value: 'Fe3O4', label: 'Fe₃O₄ : Black iron oxide (magnetite)' },
-  { value: 'CoO', label: 'CoO : Cobalt(II) oxide' },
-  { value: 'Co3O4', label: 'Co₃O₄ : Black cobalt oxide' },
-  { value: 'CuO', label: 'CuO : Copper oxide (Cupric oxide)' },
-  { value: 'SnO2', label: 'SnO₂ : Tin oxide (Stannic oxide)' },
-  { value: 'Cr2O3', label: 'Cr₂O₃ : Chromium oxide' },
-  { value: 'ZrO2', label: 'ZrO₂ : Zirconium oxide' },
-  { value: 'MnO2', label: 'MnO₂ : Manganese dioxide' },
+/**
+ * Fired oxides an additive's analysis can contain: the colorants and
+ * opacifiers first, then the oxides of the base. All of them are oxides the
+ * unity formula knows, so an additive can be counted in it.
+ */
+export const ADDITIVE_OXIDES: Option[] = [
+  { value: 'CoO', label: 'CoO : Cobalt oxide' },
+  { value: 'CuO', label: 'CuO : Copper oxide' },
+  { value: 'Fe2O3', label: 'Fe₂O₃ : Iron oxide (ferric, red)' },
+  { value: 'FeO', label: 'FeO : Iron oxide (ferrous)' },
+  { value: 'MnO', label: 'MnO : Manganese oxide' },
   { value: 'NiO', label: 'NiO : Nickel oxide' },
-  { value: 'P2O5', label: 'P₂O₅ : Phosphorus pentoxide' },
-  { value: 'H2O', label: 'H₂O : Water' },
-  { value: 'PbO', label: 'PbO : Lead oxide' },
-  { value: 'Pr6O11', label: 'Pr₆O₁₁ : Praseodymium oxide' },
-  { value: 'PrO2', label: 'PrO₂ : Praseodymium dioxide' },
-  { value: 'V2O5', label: 'V₂O₅ : Vanadium pentoxide' }
+  { value: 'Cr2O3', label: 'Cr₂O₃ : Chromium oxide' },
+  { value: 'V2O5', label: 'V₂O₅ : Vanadium pentoxide' },
+  { value: 'Pr2O3', label: 'Pr₂O₃ : Praseodymium oxide' },
+  { value: 'CeO2', label: 'CeO₂ : Cerium oxide' },
+  { value: 'Sb2O3', label: 'Sb₂O₃ : Antimony oxide' },
+  { value: 'SnO2', label: 'SnO₂ : Tin oxide' },
+  { value: 'ZrO2', label: 'ZrO₂ : Zirconium oxide' },
+  { value: 'TiO2', label: 'TiO₂ : Titanium dioxide' },
+  ...FIRED_OXIDES.filter((oxide) => !['Fe2O3', 'TiO2'].includes(oxide.value))
 ];
-
-/** Elements an additive formula can contain. */
-export const ELEMENTS: Option[] = [
-  ['Al', 'Aluminum'],
-  ['Ba', 'Barium'],
-  ['B', 'Boron'],
-  ['C', 'Carbon'],
-  ['Ca', 'Calcium'],
-  ['Co', 'Cobalt'],
-  ['Cr', 'Chromium'],
-  ['F', 'Fluorine'],
-  ['Fe', 'Iron'],
-  ['H', 'Hydrogen'],
-  ['K', 'Potassium'],
-  ['Li', 'Lithium'],
-  ['Mg', 'Magnesium'],
-  ['Mn', 'Manganese'],
-  ['Na', 'Sodium'],
-  ['Ni', 'Nickel'],
-  ['O', 'Oxygen'],
-  ['P', 'Phosphorus'],
-  ['Pb', 'Lead'],
-  ['S', 'Sulfur'],
-  ['Sb', 'Antimony'],
-  ['Si', 'Silicon'],
-  ['Sn', 'Tin'],
-  ['Sr', 'Strontium'],
-  ['Ti', 'Titanium'],
-  ['V', 'Vanadium'],
-  ['Zn', 'Zinc'],
-  ['Zr', 'Zirconium']
-].map(([value, name]) => ({ value, label: value + ' ' + name }));
 
 /** Columns a firing log can record. */
 export const FIRING_FIELDS: string[] = [
@@ -152,6 +110,16 @@ export const FIRING_FIELDS: string[] = [
   'Burner 9',
   'Burner 10'
 ];
+
+/**
+ * A material's or additive's oxides as stored: "SiO₂ 68.5%, Al₂O₃ 17%" for a
+ * weight-percent analysis, "CaO : 1; MgO : 1" for a molar formula.
+ */
+export function fieldsText(record: { fields: MaterialField[]; percentmole?: string }): string {
+  return record.percentmole === 'percent'
+    ? record.fields.map((field) => formatFormula(field.name) + ' ' + field.amount + '%').join(', ')
+    : record.fields.map((field) => formatFormula(field.name) + ' : ' + field.amount).join('; ');
+}
 
 /** First entry of a value the server stores as a list but may return as text. */
 export function firstOf(value: string[] | string | undefined): string {

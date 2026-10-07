@@ -15,7 +15,18 @@ const records: Record<string, Router> = {
   additives: recordRoutes(Additive, {
     label: 'additive',
     plural: 'additives',
-    fields: ['name', 'rawformula', 'fields', 'notes', 'relatedTo'],
+    fields: [
+      'name',
+      'rawformula',
+      'fields',
+      'notes',
+      'relatedTo',
+      'percentmole',
+      'loi',
+      'molecularweight',
+      'equivalent',
+      'formulaweight'
+    ],
     required: ['name', 'fields'],
     standard: true
   }),
@@ -60,7 +71,7 @@ const records: Record<string, Router> = {
   recipe: recordRoutes(Recipe, {
     label: 'recipe',
     plural: 'recipes',
-    fields: ['title', 'date', 'notes', 'materials', 'additives', 'computed'],
+    fields: ['title', 'date', 'notes', 'materials', 'additives', 'computed', 'includeAdditives'],
     required: ['title', 'materials'],
     wrapper: { change: 'recipe' },
     standard: true
