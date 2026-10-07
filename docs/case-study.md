@@ -40,7 +40,10 @@ instance, with a parameter that must look like an image tag
 ([ADR 2](adr/0002-keyless-deploys.md)).
 
 **Then the features that make it usable:** password reset by email through Amazon SES, a public
-intro page with a live example, dark mode, and a way to try the whole app without an account.
+intro page with a live example, and a way to try the whole app without an account. After that came
+the ones written up as issues: printing a recipe, or just a batch list to weigh from, in grams or
+in pounds and ounces; comparing two recipes oxide by oxide; problems shown on the form fields
+themselves; and light, dark and six palettes named for glazes.
 
 ## Problems worth telling
 
@@ -66,20 +69,42 @@ intro page with a live example, dark mode, and a way to try the whole app withou
   dropped it between files, which also dropped the unique email index, so some results depended
   on file order. Rewriting them to run against the app in-process, each test making its own data,
   turned up two tests that had quietly been testing something other than their names said.
+- **Old recipes and materials that are gone.** The standard materials came from a well-regarded
+  potters' book, and many of them can no longer be bought: Custer Spar closed in 2023, and Gerstley
+  Borate is running out. Each standard material now has a source, the manufacturer's data sheet
+  first, and says whether it is current, discontinued (and since when) or hard to get. With the
+  colorants there are 204, from the US, UK, EU, Australia and New Zealand. A recipe that uses one
+  that is gone names what is used now, and can swap it in and compare the two. The hard part was not overclaiming: a swap counts as
+  like for like only when the two give much the same oxides gram for gram. Niter to a frit does
+  not, so the app says to work the amount out again, and it says so when a replacement still has
+  lead.
+- **Colors before the first paint.** A saved dark theme has to apply before Angular starts, or the
+  page flashes white first. A few lines of script in index.html apply it from the browser's copy,
+  and the Content Security Policy allows them by hash rather than allowing inline scripts in
+  general. Each palette is checked for WCAG AA contrast by axe, in light and in dark.
+- **Tests that passed on Windows and failed on Linux.** After a merge, CI failed although every
+  test had passed on my machine. Ubuntu's fonts are wider than Windows', enough to push a recipe
+  table 29 pixels past a 320-pixel phone screen, and the slower runner took an accessibility test
+  past its time limit. I reproduced CI in Docker under WSL and fixed both. Then I made that a
+  command: `npm run test:e2e:linux` runs the browser tests in CI's Ubuntu, on the code as it is,
+  in about six minutes. CI is pinned to that Ubuntu, so the next upgrade, and its fonts, come by
+  choice.
 - **A page that jumped.** Lighthouse measured a layout shift of 0.64 on the intro page: the
   footer painted at the bottom of the window and was pushed down when the page arrived. Showing
   it after the first navigation brought it to 0.
 
 ## Where it ended up
 
-| Measure                   | 2017                  | Now                                                    |
-| ------------------------- | --------------------- | ------------------------------------------------------ |
-| Automated tests           | basic API route tests | 433: server, Angular unit and browser, with axe checks |
-| Server statement coverage | not measured          | 98%                                                    |
-| Deploys                   | SSH and restart       | approved click, keyless, rolls back on a failed check  |
-| Monthly cost              | $15-17                | about $13                                              |
-| Lighthouse (desktop)      | not measured          | performance 99; accessibility, best practices, SEO 100 |
+| Measure                          | 2017                  | Now                                                    |
+| -------------------------------- | --------------------- | ------------------------------------------------------ |
+| Automated tests                  | basic API route tests | 522: server, Angular unit and browser, with axe checks |
+| Server statement coverage        | not measured          | 98.5%                                                  |
+| Standard materials and colorants | 53, from one book     | 204, each with a source and a status                   |
+| Deploys                          | SSH and restart       | approved click, keyless, rolls back on a failed check  |
+| Monthly cost                     | $15-17                | about $13                                              |
+| Lighthouse (desktop)             | not measured          | performance 99; accessibility, best practices, SEO 100 |
 
 ## What I would do next
 
-- Give the recipe form a fuller redesign, and let potters compare two glazes side by side.
+- When a swap is not like for like, suggest amounts that bring the unity formula back.
+- Give the recipe form a fuller redesign.

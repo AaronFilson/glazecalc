@@ -6,7 +6,8 @@ export const REGIONS: ReadonlyArray<{ value: string; label: string }> = [
   { value: '', label: 'All regions' },
   { value: 'US', label: 'US' },
   { value: 'UK', label: 'UK' },
-  { value: 'EU', label: 'EU' }
+  { value: 'EU', label: 'EU' },
+  { value: 'AU', label: 'AU and NZ' }
 ];
 
 const REGION_KEY = 'region';

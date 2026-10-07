@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-# Runs the browser tests on Linux in Docker, as CI (Ubuntu) runs them: Node 24,
-# MongoDB 9.0, and Chromium with Linux's fonts, which are wider than Windows'
-# and have broken layouts that passed on Windows. Called by
+# Runs the browser tests on Linux in Docker, as CI runs them: the Ubuntu named in
+# ci.yml, Node 24, MongoDB 9.0, and Chromium with Linux's fonts, which are wider
+# than Windows' and have broken layouts that passed on Windows. Called by
 # scripts/test-e2e-linux.mjs (npm run test:e2e:linux), which makes the source tar.
 #
 #   bash scripts/test-e2e-linux.sh <source.tar> <results dir> [playwright args]
@@ -13,12 +13,15 @@ HERE=$(cd "$(dirname "$0")" && pwd)
 CACHE=$HOME/.cache/glazecalc-e2e-linux
 WORK=$CACHE/app
 
-# An image with Node and Playwright's Chromium, built once for each Playwright version.
+# An image of CI's Ubuntu with Node and Playwright's Chromium, built once for each
+# Ubuntu and Playwright version.
 PLAYWRIGHT=$(tar -xOf "$TAR" package.json | grep -o '"@playwright/test": *"[^"]*"' | grep -o '[0-9][0-9.]*')
-IMAGE=glazecalc-e2e:$PLAYWRIGHT
+UBUNTU=$(tar -xOf "$TAR" .github/workflows/ci.yml | grep -m1 -o 'runs-on: ubuntu-[0-9.]*' | grep -o '[0-9][0-9.]*')
+IMAGE=glazecalc-e2e:ubuntu$UBUNTU-playwright$PLAYWRIGHT
 if ! docker image inspect "$IMAGE" >/dev/null 2>&1; then
-  echo "Building $IMAGE, once for this Playwright version..."
-  docker build -q -t "$IMAGE" --build-arg PLAYWRIGHT="$PLAYWRIGHT" - <"$HERE/test-e2e-linux.Dockerfile" >/dev/null
+  echo "Building $IMAGE, once for this Ubuntu and Playwright..."
+  docker build -q -t "$IMAGE" --build-arg UBUNTU="$UBUNTU" --build-arg PLAYWRIGHT="$PLAYWRIGHT" - \
+    <"$HERE/test-e2e-linux.Dockerfile" >/dev/null
 fi
 
 # A clean copy of the source. The containers leave root-owned files, so a container clears the last one.

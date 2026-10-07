@@ -709,6 +709,15 @@ main .form-control.is-invalid {
   }
 }
 
+// An amount in a batch in pounds, in pounds and ounces as a scale reads it.
+.recipe-weight {
+  display: block;
+  color: var(--gc-muted);
+  font-size: 0.85rem;
+  line-height: 1.2;
+  margin-top: 0.15rem;
+}
+
 .recipe-share {
   color: var(--gc-muted);
   white-space: nowrap;
@@ -776,8 +785,10 @@ main .form-control.is-invalid {
   flex-wrap: wrap;
   align-items: center;
   gap: 0.35rem 0.5rem;
-  // A problem with the amount goes on a line of its own, under the amount and unit.
-  .field-problem {
+  // A problem with the amount, and its weight in a batch in pounds, each go on a line
+  // of their own, under the amount and unit.
+  .field-problem,
+  .recipe-weight {
     flex-basis: 100%;
     order: 1;
     margin-top: 0;

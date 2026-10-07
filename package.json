@@ -1,6 +1,6 @@
 {
   "name": "glazecalc",
-  "version": "0.3.0",
+  "version": "0.5.0",
   "description": "Glaze calculation software to assist potters and ceramicists.",
   "private": true,
   "scripts": {

@@ -18,6 +18,7 @@ import { MaterialInput } from '../../../../lib/chemistry';
 import { ApiResourceFactory } from '../../core/api-resource.service';
 import { errorMessage } from '../../core/error-message';
 import { Additive, AdditiveUnit, Material, Recipe, RecipeMaterial } from '../../core/models';
+import { PreferencesService } from '../../core/preferences.service';
 import { Busy } from '../../shared/busy';
 import { Check, FieldCheck, FieldChecks, required } from '../../shared/field-checks';
 import { localDate } from '../../shared/dates';
@@ -26,6 +27,7 @@ import { chosenRegion } from '../../shared/library-info';
 import { firstOf } from '../../shared/options';
 import { PageHeader } from '../../shared/page-header';
 import { Removal, RemoveButton } from '../../shared/remove-button';
+import { GRAMS_PER_POUND, WeightUnit, formatWeight } from '../../shared/weights';
 import { LibraryMaterial, modernMaterials } from './compare';
 import { Rebase, amountOf, formatAmount, isAmount, rebase, totalOf, unitOf } from './rebase';
 import { additiveAmount, evaluate, savedAnalysis } from './recipe-analysis';
@@ -53,11 +55,13 @@ const ADDITIVE_UNITS: ReadonlyArray<{ value: AdditiveUnit; label: string }> = [
 ];
 
 const copy = <T>(value: T): T => structuredClone(value);
-const SCALE_NOTES: Record<Rebase['to'], string> = {
+const SCALE_NOTES: Record<Exclude<Rebase['to'], 'batch'>, string> = {
   percent: 'Now in percent: the materials add up to 100.',
-  parts: 'Now in parts: whole numbers where they fit.',
-  batch: 'Now in grams for the batch.'
+  parts: 'Now in parts: whole numbers where they fit.'
 };
+
+/** A batch weight to start from, in each unit: about a pound either way. */
+const DEFAULT_BATCH: Record<WeightUnit, string> = { g: '500', lb: '1' };
 
 type SaveMode = 'save' | 'next' | 'copy';
 
@@ -111,6 +115,7 @@ export class RecipePage implements OnInit {
   private readonly route = inject(ActivatedRoute);
   private readonly router = inject(Router);
   private readonly location = inject(Location);
+  private readonly weightUnit = inject(PreferencesService).weightUnit;
   private readonly recipes = this.resources.for<Recipe>('recipe');
   private readonly materials = this.resources.for<Material>('materials');
   private readonly additives = this.resources.for<Additive>('additives');
@@ -177,8 +182,34 @@ export class RecipePage implements OnInit {
 
   // Scale changes.
   protected readonly batchOpen = signal(false);
-  protected readonly batchGrams = signal('500');
+  /** The batch weight as typed, and the unit it was typed in. */
+  private readonly batchTyped = signal<{ text: string; unit: WeightUnit } | null>(null);
+  /** The batch weight in the account's unit (grams, or pounds). */
+  protected readonly batchText = computed(() => {
+    const typed = this.batchTyped();
+    const unit = this.weightUnit();
+    return typed?.unit === unit ? typed.text : DEFAULT_BATCH[unit];
+  });
+  protected readonly batchUnit = computed(() => (this.weightUnit() === 'lb' ? 'lb' : 'g'));
   protected readonly scaleMessage = signal<{ text: string; problem: boolean } | null>(null);
+  /**
+   * Scaled to a batch in pounds: the amounts are pounds, and each shows what it
+   * weighs in pounds and ounces, until the scale changes or another recipe opens.
+   */
+  private readonly inPounds = signal(false);
+  protected readonly poundReadings = computed(() => {
+    if (!this.inPounds()) return null;
+    const reading = (pounds: number): string => (pounds > 0 ? formatWeight(pounds * GRAMS_PER_POUND, 'lb') : '');
+    const base = this.total();
+    return {
+      materials: this.lines().map((line) => reading(amountOf(line.amount))),
+      // A percent of the base is that share of the batch.
+      additives: this.additiveLines().map((line) =>
+        reading(unitOf(line) === 'percent' ? (amountOf(line.amount) / 100) * base : amountOf(line.amount))
+      ),
+      total: reading(base)
+    };
+  });
   /** Told to screen readers: what an action did that the focus does not show. */
   protected readonly announcement = signal('');
 
@@ -403,7 +434,45 @@ export class RecipePage implements OnInit {
     return formatAmount(this.total(), 3);
   }
 
-  protected scale(how: Rebase): void {
+  protected scale(how: Exclude<Rebase, { to: 'batch' }>): void {
+    if (this.rescale(how, 'Please enter the amounts first.')) {
+      this.inPounds.set(false);
+      this.scaleMessage.set({ text: SCALE_NOTES[how.to], problem: false });
+    }
+  }
+
+  protected setBatchText(text: string): void {
+    this.batchTyped.set({ text, unit: this.weightUnit() });
+  }
+
+  /** Scales to a batch in the account's unit: grams, or pounds (shown in pounds and ounces too). */
+  protected scaleToBatch(): void {
+    const pounds = this.weightUnit() === 'lb';
+    const missing = pounds
+      ? 'Please enter the weight of the batch in pounds, such as 2.5.'
+      : 'Please enter the weight of the batch, in grams.';
+    if (!this.rescale({ to: 'batch', weight: amountOf(this.batchText()) }, missing)) return;
+    if (!pounds) {
+      this.inPounds.set(false);
+      this.scaleMessage.set({ text: 'Now in grams for the batch.', problem: false });
+      return;
+    }
+    // Colorants in grams would now be pounds: in parts, they say they scale as the materials do.
+    const inGrams = this.additiveLines().some((line) => unitOf(line) === 'grams');
+    this.additiveLines.update((list) =>
+      list.map((line) => (unitOf(line) === 'grams' ? { ...line, unit: 'parts' as const } : line))
+    );
+    this.inPounds.set(true);
+    this.scaleMessage.set({
+      text:
+        'Now in pounds for the batch, with each in pounds and ounces under it.' +
+        (inGrams ? ' Colorants that were in grams are now in parts: pounds, like the materials.' : ''),
+      problem: false
+    });
+  }
+
+  /** Puts the recipe on a new scale; false, with the reason shown, when it cannot. */
+  private rescale(how: Rebase, missing: string): boolean {
     // Scaling around an amount it cannot read would change the proportions.
     const unreadable = this.unreadableLine();
     if (unreadable) {
@@ -411,7 +480,7 @@ export class RecipePage implements OnInit {
         text: `The amount for ${unreadable.name} is not a number ("${unreadable.amount}"). Please fix it first.`,
         problem: true
       });
-      return;
+      return false;
     }
     const result = rebase(
       this.lines().map((l) => l.amount),
@@ -419,19 +488,13 @@ export class RecipePage implements OnInit {
       how
     );
     if (!result) {
-      const text =
-        how.to === 'batch' ? 'Please enter the weight of the batch, in grams.' : 'Please enter the amounts first.';
-      this.scaleMessage.set({ text, problem: true });
-      return;
+      this.scaleMessage.set({ text: missing, problem: true });
+      return false;
     }
     this.lines.update((list) => list.map((line, i) => ({ ...line, amount: result.materials[i] })));
     this.additiveLines.update((list) => list.map((line, i) => ({ ...line, amount: result.additives[i] })));
     this.batchOpen.set(false);
-    this.scaleMessage.set({ text: SCALE_NOTES[how.to], problem: false });
-  }
-
-  protected scaleToBatch(): void {
-    this.scale({ to: 'batch', grams: amountOf(this.batchGrams()) });
+    return true;
   }
 
   // Saving.
@@ -743,6 +806,7 @@ export class RecipePage implements OnInit {
       this.savedSnapshot.set(this.snapshot());
       this.savedAt.set(null);
       this.scaleMessage.set(null);
+      this.inPounds.set(false);
       this.saveProblem.set('');
       this.checks.clear();
       this.swapUndo.set(null);
@@ -790,6 +854,7 @@ export class RecipePage implements OnInit {
     this.savedAt.set(null);
     this.savedSnapshot.set(this.snapshot());
     this.scaleMessage.set(null);
+    this.inPounds.set(false);
     this.saveProblem.set('');
     this.checks.clear();
     this.swapUndo.set(null);

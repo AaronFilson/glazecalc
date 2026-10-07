@@ -56,7 +56,7 @@ describe('rebasing a recipe', () => {
       { amount: '2', unit: 'grams' as const },
       { amount: '2', unit: 'percent' as const }
     ];
-    expect(rebase(['40', '30', '20', '10'], additives, { to: 'batch', grams: 500 })).toEqual({
+    expect(rebase(['40', '30', '20', '10'], additives, { to: 'batch', weight: 500 })).toEqual({
       materials: ['200', '150', '100', '50'],
       additives: ['10', '2']
     });
@@ -64,7 +64,7 @@ describe('rebasing a recipe', () => {
 
   it('keeps small amounts small, never rounding them away', () => {
     // A 10 g test batch: 0.3% becomes 0.03 g, and 0.05 g of a colorant 0.005 g.
-    expect(rebase(['99.7', '0.3'], [{ amount: '0.05', unit: 'grams' }], { to: 'batch', grams: 10 })).toEqual({
+    expect(rebase(['99.7', '0.3'], [{ amount: '0.05', unit: 'grams' }], { to: 'batch', weight: 10 })).toEqual({
       materials: ['9.97', '0.03'],
       additives: ['0.005']
     });
@@ -77,7 +77,7 @@ describe('rebasing a recipe', () => {
       additives: ['']
     });
     expect(rebase(['', '0'], [{ amount: '5', unit: 'parts' }], { to: 'percent' })).toBeNull();
-    expect(rebase(['10'], [], { to: 'batch', grams: 0 })).toBeNull();
+    expect(rebase(['10'], [], { to: 'batch', weight: 0 })).toBeNull();
   });
 
   it('reads amounts, totals and units forgivingly', () => {

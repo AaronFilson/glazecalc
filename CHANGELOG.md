@@ -2,7 +2,7 @@
 
 Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, from the history.
 
-## Unreleased
+## 0.5.0 (not yet released)
 
 ### Added
 
@@ -51,9 +51,11 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 - **Settings, on the account page,** kept with the account so they hold on every device; trials
   have them too.
   - Batch weights in grams, or in pounds and ounces (2 lb 3.5 oz). The print view can change
-    this as well.
+    this as well, and **Scale to a batch** on the recipe page follows it: the batch is in pounds,
+    and each amount shows its weight in pounds and ounces under it. Colorants in grams become
+    parts there, since they would now be pounds.
   - Grams to a tenth (4938.2 g, with hundredths under 10 g), or in full (4938.23517 g).
-- **A larger standard library: 148 materials and 36 additives**, from manufacturers' data sheets
+- **A larger standard library: 167 materials and 37 additives**, from manufacturers' data sheets
   where they exist (ADR 0009).
   - **Modern replacements for every discontinued material:** G-200 EU and Mahavir for Custer,
     Oxford and G-200; Minspar 200 for Kona F-4; Alberta Slip for Albany slip; Gillespie Borate
@@ -64,10 +66,17 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   - **An EU set:** German, French, Spanish, Italian, Swiss and Swedish feldspars (Sibelco
     Norflux, Bodmer, Ceradel, Prodesco, Sila); Zettlitz and other European kaolins, a Westerwald
     and a Sibelco ball clay, and two bentonites; and the frits German and Dutch recipes name by
-    number: Vibrantz (ex-Degussa) 90xxx, Mondré & Manz, Reimbold & Strick and Keramikos,
+    number: Vibrantz (ex-Degussa) 90xxx (90255 and 90428 from Hans Wolbring's formulas), Mondré & Manz, Reimbold & Strick and Keramikos,
     including clearly marked lead frits. Grolleg, Molochite, Hyplas 71, Sibelco FFF, the
     nepheline syenites, H&G Cornwall Stone and the Ferro frits are marked as sold in the EU too,
     and "Sold in" offers EU.
+  - **An Australia and New Zealand set:** the Eckalite kaolins, New Zealand halloysite, Claypro
+    ball clay, a Thai potash feldspar and an Indian soda feldspar as sold there, Walker's
+    synthetic Cornish stone, Sibelco Lang Lang silica and Trubond bentonite. Also the Ferro
+    Australia frits that Australian recipes name (4110, 4124, 4108, 4131, 4113, 4171 and 9146,
+    all now replaced by the US frits, and the 4064 lead bisilicate, clearly marked), and the
+    Clay Ceram of older recipes. The US frits, Grolleg, EPK, Molochite, nepheline syenite A270,
+    Gerstley Borate and others are marked as sold there too, and "Sold in" offers AU and NZ.
   - **A UK set:** Grolleg, Molochite, Hyplas 71, UK feldspars, and borax, alkaline, calcium
     borate, low-expansion and lead frits.
   - **More additives:** bentonite, zircon, Veegum, Macaloid, carbonates and more.
@@ -85,8 +94,14 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   - The choice is saved with the recipe; new recipes start with the choice made last.
   - To make this possible, additives are now entered as materials are (fired oxides and LOI) and
     carry their chemistry.
+- `npm run test:e2e:linux` runs the browser tests on Linux in Docker, in the Ubuntu that CI
+  uses (through WSL on Windows), on the working tree as it is; `npm run test:all:linux` runs
+  every suite that way. Linux's wider fonts break layouts that pass on Windows.
 
 ### Changed
+
+- CI, image builds and deploys run on Ubuntu 26.04, named rather than `ubuntu-latest`, so a new
+  Ubuntu (and its fonts) comes by choice.
 
 - **The recipe page, rebuilt for entering recipes quickly:**
   - The unity formula updates as you type, beside the recipe on a computer and in a line under it
@@ -156,11 +171,17 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   - Every material and additive now has a hazard line from its safety data sheet (47 had none),
     and 18 more sources carry their date.
   - Black cobalt oxide counts as 92.7% CoO with 6.3% lost in firing (it was 90.9% and 8.2%).
-  - Potclays' low-expansion frit has 1.1% lithium oxide, not 0.1%; CTM's calcium borate frit uses
+  - Potclays' low-expansion frit has 1.1% lithium oxide, not 0.1%: Potclays' own 2010 sheet
+    prints 0.10, but its formula on the same sheet gives 1.06%. CTM's calcium borate frit uses
     the analysis CTM printed from 2016 on.
+  - Better sources: Potclays' own 2010 frit sheet for its four frits, Carl Jäger's data sheet
+    for Kaolin 233, and Hans Wolbring's formulas for Vibrantz 90368 and 90328; nine more sources
+    carry their date. Potterycrafts' 2025 sheet shows its potash feldspar is now Sibelco's
+    Norflux K 11, which is marked as sold in the UK.
   - Veegum T has its own magnesium-rich analysis instead of bentonite's.
   - Discontinued years for Kona F-4 (2009), Oxford Spar and lepidolite (by 1997), Godfrey Spar
-    (by 1999, and a potash feldspar, not soda) and CTM's calcium borate frit (by 2025).
+    (by 1999, and a potash feldspar, not soda), CTM's calcium borate frit (by 2025), Laguna
+    Borate (2012) and Boraq (by 2018).
 
 - Corrected from data sheets:
   - Cobalt carbonate is 58% CoO.

@@ -100,7 +100,11 @@ const readHidden = (): boolean => {
                 <b>To parts</b>: the smallest whole numbers that fit, such as 3 flint and 2 dolomite; a material that
                 does not divide evenly keeps its exact amount, such as 1.477.
               </li>
-              <li><b>Scale to a batch</b>: enter a weight, such as 500 g, to get the grams to weigh out.</li>
+              <li>
+                <b>Scale to a batch</b>: enter a weight, such as 500 g, to get the grams to weigh out. With weights in
+                pounds and ounces (under Settings on your account page), enter pounds, such as 12.5: the amounts become
+                pounds, each shown in pounds and ounces under it.
+              </li>
             </ul>
             <p>
               Every amount changes at once, to up to five decimal places, and the unity formula stays the same.

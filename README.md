@@ -26,8 +26,9 @@ materials, colorants, firing logs and notes together in one private notebook.
 - **Recipe to unity formula, as you type.** Build a glaze from your own materials or the
   standard ones and watch its oxides in unity, grouped as fluxes, stabilizers and glass formers,
   with the silica to alumina ratio. That is how glaze chemists compare recipes, fix faults and
-  substitute materials. Change the scale to percent, to the smallest whole parts, or to the grams
-  of a batch, with colorants as a percent of the base, in parts or in grams; save a recipe and
+  substitute materials. Change the scale to percent, to the smallest whole parts, or to a batch
+  in grams or in pounds (each shown in pounds and ounces), with colorants as a percent of the
+  base, in parts or in grams; save a recipe and
   keep working on it, or open a saved one to change it.
 - **Compare two recipes side by side,** oxide by oxide, and try an old recipe with the modern
   materials that replace its discontinued ones (Custer Spar to G-200 EU), compared with the
@@ -37,8 +38,8 @@ materials, colorants, firing logs and notes together in one private notebook.
   page on Letter or A4; weights in grams, or in pounds and ounces as set in your account.
 - **Your own colors:** light, dark or as the device is set, and six palettes named for glazes,
   each readable in both.
-- **A standard library of 148 materials and 36 colorants and additives,** from manufacturers'
-  data sheets, US, UK and EU, each with its source and other names, and hazards where the data sheet gives them. Discontinued materials
+- **A standard library of 167 materials and 37 colorants and additives,** from manufacturers'
+  data sheets, for the US, UK, EU, Australia and New Zealand, each with its source and other names, and hazards where the data sheet gives them. Discontinued materials
   stay for old recipes, each pointing to its modern replacement. Count colorants in the unity
   formula or leave them out, to compare with other calculators.
 - **Your own materials,** from a chemical formula or a supplier's analysis, and colorants and

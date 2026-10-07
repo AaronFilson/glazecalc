@@ -9,11 +9,12 @@ import type { Additive, AdditiveUnit } from '../../core/models';
  *   percent  the base materials add up to 100
  *   parts    small whole numbers where they fit (3 flint, 2 dolomite), and
  *            exact values for the rest (1.477 soda feldspar)
- *   batch    grams to weigh out for a batch of the given weight
+ *   batch    what to weigh out for a batch of the given weight, in the
+ *            batch's unit (grams, or pounds)
  *
  * New amounts keep up to 5 decimal places (7.00001), without trailing zeros.
  */
-export type Rebase = { to: 'percent' } | { to: 'parts' } | { to: 'batch'; grams: number };
+export type Rebase = { to: 'percent' } | { to: 'parts' } | { to: 'batch'; weight: number };
 
 export interface Rebased {
   materials: string[];
@@ -99,9 +100,9 @@ export function rebase(
   const base = materials.map(amountOf);
   const total = totalOf(base);
   if (!total) return null;
-  if (how.to === 'batch' && !(how.grams > 0)) return null;
+  if (how.to === 'batch' && !(how.weight > 0)) return null;
 
-  const factor = how.to === 'percent' ? 100 / total : how.to === 'batch' ? how.grams / total : wholePartsFactor(base);
+  const factor = how.to === 'percent' ? 100 / total : how.to === 'batch' ? how.weight / total : wholePartsFactor(base);
   const show = (n: number): string => (how.to === 'parts' ? formatPart(n) : formatScaled(n));
   const scale = (value: string | undefined): string => {
     const amount = amountOf(value);

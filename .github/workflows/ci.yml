@@ -13,7 +13,9 @@ jobs:
   build-and-test:
     # Node 24 LTS only, matching package.json "engines" and the Docker image.
     name: Node 24
-    runs-on: ubuntu-latest
+    # A pinned Ubuntu, so a new one (and its fonts, which change layouts) comes by
+    # choice. npm run test:e2e:linux builds its image from the version named here.
+    runs-on: ubuntu-26.04
     timeout-minutes: 20
 
     services:
@@ -71,7 +73,7 @@ jobs:
   # Builds the production image and runs it with MongoDB, as compose.yaml does.
   docker:
     name: Docker image
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04
     timeout-minutes: 15
     env:
       APP_SECRET: ci-only-secret

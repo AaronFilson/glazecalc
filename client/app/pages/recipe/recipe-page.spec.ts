@@ -2,6 +2,7 @@ import { provideLocationMocks } from '@angular/common/testing';
 import { TestBed } from '@angular/core/testing';
 import { Router } from '@angular/router';
 import { Additive, Material, Recipe } from '../../core/models';
+import { PreferencesService } from '../../core/preferences.service';
 import { answer, API, fieldProblem, httpMock, settle, testProviders, text } from '../../testing/test-providers';
 import { MOLAR_MASS } from '../../../../lib/chemistry';
 import { evaluate, savedAnalysis } from './recipe-analysis';
@@ -305,14 +306,14 @@ describe('RecipePage', () => {
     expect(amounts()).toEqual(['60', '40', '2', '20']);
     page['scale']({ to: 'parts' });
     expect(amounts()).toEqual(['3', '2', '2', '1']);
-    page['batchGrams'].set('500');
+    page['setBatchText']('500');
     page['scaleToBatch']();
     expect(amounts()).toEqual(['300', '200', '2', '100']);
     await fixture.whenStable();
     expect(text(fixture, '.recipe-scale-note')).toBe('Now in grams for the batch.');
     expect(additivesShown(fixture)).toEqual(['Iron oxide : 2%', 'Rutile : 100 parts']);
 
-    page['batchGrams'].set('');
+    page['setBatchText']('');
     page['scaleToBatch']();
     await fixture.whenStable();
     expect(text(fixture, '.recipe-scale-note')).toBe('Please enter the weight of the batch, in grams.');
@@ -326,6 +327,67 @@ describe('RecipePage', () => {
       'The amount for Silica is not a number ("12,5"). Please fix it first.'
     );
     expect(page['notices'].errors()).toEqual([]);
+  });
+
+  it('scales to a batch in pounds when weights are in pounds and ounces, and shows each as a scale reads it', async () => {
+    const weightUnit = TestBed.inject(PreferencesService).weightUnit;
+    weightUnit.set('lb');
+    const { fixture, page } = await create();
+    fill(page, [
+      [WHITING, '3'],
+      [SILICA, '2']
+    ]);
+    page['addAdditive'](IRON);
+    page['setAdditiveAmount'](0, '2');
+    page['addAdditive'](RUTILE);
+    page['setAdditiveAmount'](1, '0.5');
+    page['setAdditiveUnit'](1, 'grams');
+    const amounts = () => [
+      ...page['lines']().map((l: { amount: string }) => l.amount),
+      ...page['additiveLines']().map((a: { amount: string }) => a.amount)
+    ];
+    const weights = () =>
+      [...fixture.nativeElement.querySelectorAll('.recipe-weight')].map((el: Element) => el.textContent?.trim());
+
+    await fixture.whenStable();
+    click(fixture, 'Scale to a batch');
+    await fixture.whenStable();
+    expect(text(fixture, 'label[for="batch-weight"]')).toBe('Batch weight (lb)');
+    expect(page['batchText']()).toBe('1');
+    page['setBatchText']('');
+    page['scaleToBatch']();
+    await fixture.whenStable();
+    expect(text(fixture, '.recipe-scale-note')).toBe('Please enter the weight of the batch in pounds, such as 2.5.');
+
+    page['setBatchText']('2.5');
+    page['scaleToBatch']();
+    await fixture.whenStable();
+    // Pounds: 1.5 lb whiting and 1 lb silica; the iron stays 2% of the base, and the rutile scales with it.
+    expect(amounts()).toEqual(['1.5', '1', '2', '0.25']);
+    // In grams it would now be pounds, so it is in parts, which scale as the materials do.
+    expect(page['additiveLines']()[1].unit).toBe('parts');
+    expect(additivesShown(fixture)).toEqual(['Iron oxide : 2%', 'Rutile : 0.25 parts']);
+    expect(text(fixture, '.recipe-scale-note')).toBe(
+      'Now in pounds for the batch, with each in pounds and ounces under it.' +
+        ' Colorants that were in grams are now in parts: pounds, like the materials.'
+    );
+    // Materials, the total, then the colorants: 2% of 2.5 lb is 0.8 oz.
+    expect(weights()).toEqual(['1 lb 8 oz', '1 lb', '2 lb 8 oz', '0.8 oz', '4 oz']);
+    // They follow the amounts.
+    page['setAdditiveAmount'](0, '4');
+    await fixture.whenStable();
+    expect(weights()[3]).toBe('1.6 oz');
+
+    // Another scale is not in pounds.
+    page['scale']({ to: 'percent' });
+    await fixture.whenStable();
+    expect(weights()).toEqual([]);
+
+    // Typed in pounds, so in grams it starts from the gram default.
+    weightUnit.set('g');
+    expect(page['batchText']()).toBe('500');
+    weightUnit.set('lb');
+    expect(page['batchText']()).toBe('2.5');
   });
 
   it("chooses and saves each colorant's unit; recipes saved without one read as percent", async () => {

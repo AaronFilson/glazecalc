@@ -323,3 +323,28 @@ test('fits the narrowest phone, 320px, without scrolling sideways', async ({ pag
   );
   expect(overflow).toBe(0);
 });
+
+test('scales to a batch in pounds once weights are in pounds and ounces, showing each as a scale reads it', async ({
+  page
+}) => {
+  await page.goto('/account');
+  await page.getByRole('radio', { name: /^Pounds and ounces/ }).check();
+  await expect(page.locator('.settings-status')).toHaveText('Saved: batch weights are in pounds and ounces.');
+  await page.goto('/recipe');
+  await page.setViewportSize({ width: 320, height: 800 });
+  await addStandardMaterial(page, 'Orthoclase', 60);
+  await addStandardMaterial(page, 'Whiting', 40);
+  await addColorant(page, 'Rutile', 4);
+
+  await page.getByRole('button', { name: 'Scale to a batch' }).click();
+  await page.getByLabel('Batch weight (lb)').fill('12.5');
+  await page.getByLabel('Batch weight (lb)').press('Enter');
+  await expect(amount(page, 'Orthoclase')).toHaveValue('7.5');
+  await expect(amount(page, 'Rutile')).toHaveValue('4');
+  // Each material, the total, then the rutile: 4% of 12.5 lb.
+  await expect(page.locator('.recipe-weight')).toHaveText(['7 lb 8 oz', '5 lb', '12 lb 8 oz', '8 oz']);
+  const overflow = await page.evaluate(
+    () => globalThis.document.documentElement.scrollWidth - globalThis.document.documentElement.clientWidth
+  );
+  expect(overflow).toBe(0);
+});

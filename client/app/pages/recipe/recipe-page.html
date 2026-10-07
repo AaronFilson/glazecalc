@@ -100,6 +100,9 @@
                     [gcField]="checks"
                     [gcFieldName]="'material-amount-' + $index"
                   />
+                  @if (poundReadings()?.materials?.[$index]; as weight) {
+                    <span class="recipe-weight">{{ weight }}</span>
+                  }
                 </td>
                 <td class="recipe-share">{{ share(line.amount) }}</td>
                 <td>
@@ -119,7 +122,12 @@
           <tfoot>
             <tr>
               <th scope="row">Total</th>
-              <td class="recipe-total">{{ formatTotal() }}</td>
+              <td class="recipe-total">
+                {{ formatTotal() }}
+                @if (poundReadings()?.total; as weight) {
+                  <span class="recipe-weight">{{ weight }}</span>
+                }
+              </td>
               <td class="recipe-share">{{ total() ? '100%' : '' }}</td>
               <td></td>
             </tr>
@@ -141,14 +149,14 @@
           </button>
           @if (batchOpen()) {
             <span class="recipe-batch">
-              <label for="batch-grams">Batch weight (g)</label>
+              <label for="batch-weight">Batch weight ({{ batchUnit() }})</label>
               <input
-                id="batch-grams"
+                id="batch-weight"
                 type="text"
                 inputmode="decimal"
                 class="form-control form-control-sm"
-                [value]="batchGrams()"
-                (input)="batchGrams.set($any($event.target).value)"
+                [value]="batchText()"
+                (input)="setBatchText($any($event.target).value)"
                 (keydown.enter)="scaleToBatch()"
               />
               <button type="button" class="btn btn-primary btn-sm" (click)="scaleToBatch()">Scale</button>
@@ -247,6 +255,9 @@
                         }}</label>
                       }
                     </fieldset>
+                    @if (poundReadings()?.additives?.[i]; as weight) {
+                      <span class="recipe-weight">{{ weight }}</span>
+                    }
                   </div>
                 </td>
                 <td>
