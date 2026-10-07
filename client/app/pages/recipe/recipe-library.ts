@@ -63,11 +63,10 @@ let nextId = 0;
           <select
             [id]="filterId + '-region'"
             class="form-select form-select-sm library-region"
-            [value]="region()"
             (change)="setRegion($any($event.target).value)"
           >
             @for (option of regions; track option.value) {
-              <option [value]="option.value">{{ option.label }}</option>
+              <option [value]="option.value" [selected]="option.value === region()">{{ option.label }}</option>
             }
           </select>
         }
@@ -86,7 +85,12 @@ let nextId = 0;
                 <span class="library-mark">In recipe</span>
               </span>
             } @else {
-              <button type="button" class="library-item" [attr.aria-label]="'Add ' + item.name" (click)="choose(item)">
+              <button
+                type="button"
+                class="library-item"
+                [attr.aria-label]="'Add ' + item.name + (statusText(item) ? ', ' + statusText(item) : '')"
+                (click)="choose(item)"
+              >
                 <span
                   >{{ item.name }}
                   @if (statusText(item); as status) {

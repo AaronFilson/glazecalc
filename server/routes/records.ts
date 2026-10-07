@@ -25,7 +25,9 @@ const records: Record<string, Router> = {
       'loi',
       'molecularweight',
       'equivalent',
-      'formulaweight'
+      'formulaweight',
+      // A commercial stain, say: left out of the unity formula.
+      'noChemistry'
     ],
     required: ['name', 'fields'],
     standard: true

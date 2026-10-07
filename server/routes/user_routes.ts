@@ -1,6 +1,8 @@
 // The signed-in account.
 //
 //   GET    /api/verify            who the session belongs to
+//   GET    /api/preferences       the account's (or trial's) choices: { weightUnit, gramPrecision }
+//   PUT    /api/preferences       any of { weightUnit: 'g' | 'lb', gramPrecision: 'single' | 'full' }
 //   PUT    /api/usersettings/:id  { displayname, email, settings, password }
 //   DELETE /api/deleteuser/:id    { password } removes the account and everything in it
 import express, { type NextFunction, type Request, type Response } from 'express';
@@ -13,7 +15,7 @@ import { isDuplicateKey } from '../lib/mongo_errors.ts';
 import * as password from '../lib/password.ts';
 import * as limits from '../lib/rate_limit.ts';
 import * as session from '../lib/session.ts';
-import User from '../models/user.ts';
+import User, { PREFERENCES, type Preferences } from '../models/user.ts';
 
 const userRouter = express.Router();
 export default userRouter;
@@ -32,6 +34,38 @@ userRouter.get('/verify', tokenFilter, jwtAuth, (req, res) => {
   res
     .status(200)
     .json(user.guest ? { ...identity, guest: true, expiresAt: user.expiresAt } : { ...identity, email: user.email });
+});
+
+// Choices about how the app shows things. Unlike the account's details below,
+// a trial may set them too, and they need no password.
+const PREFERENCE_NAMES = Object.keys(PREFERENCES) as Array<keyof Preferences>;
+const NOT_A_CHOICE: Record<keyof Preferences, string> = {
+  weightUnit: 'Weights can be in grams (g) or pounds and ounces (lb).',
+  gramPrecision: 'Grams can show to a tenth (single) or in full (full).'
+};
+
+/** Every preference: the one chosen, or the default. */
+const preferencesOf = (saved: Partial<Preferences> = {}): Preferences =>
+  Object.fromEntries(PREFERENCE_NAMES.map((name) => [name, saved[name] ?? PREFERENCES[name][0]])) as Preferences;
+
+userRouter.get('/preferences', jwtAuth, (req, res) => {
+  res.status(200).json(preferencesOf(userOf(req).preferences));
+});
+
+// Changes the preferences sent, leaving the others as they are.
+userRouter.put('/preferences', jwtAuth, express.json(), async (req, res) => {
+  const body = (req.body ?? {}) as Record<string, unknown>;
+  const changing = PREFERENCE_NAMES.filter((name) => body[name] !== undefined);
+  if (!changing.length) return res.status(400).json({ msg: 'Nothing to change' });
+  const refused = changing.find((name) => !(PREFERENCES[name] as readonly unknown[]).includes(body[name]));
+  if (refused) return res.status(400).json({ msg: NOT_A_CHOICE[refused] });
+  const changes = Object.fromEntries(changing.map((name) => ['preferences.' + name, body[name]]));
+  const user = await User.findByIdAndUpdate(
+    userOf(req)._id,
+    { $set: changes },
+    { returnDocument: 'after', projection: { preferences: 1 } }
+  );
+  return res.status(200).json(preferencesOf(user?.preferences));
 });
 
 // Users may only change or delete their own account; admins may act on any.

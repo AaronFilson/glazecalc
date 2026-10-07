@@ -31,18 +31,22 @@ test('lists standard materials with corrected equivalent weights', async ({ page
 test('narrows the standard materials by kind and region, and says what replaced the old ones', async ({ page }) => {
   const tools = page.locator('.standard-tools');
   await tools.getByLabel('Kind').selectOption('feldspar');
-  const custer = standardTable(page).locator('tr', { hasText: 'Custer Spar' });
+  // By the name cell: other rows mention Custer Spar too ("Replaces: Custer Spar").
+  const row = (name) =>
+    standardTable(page).locator('tr', { has: page.locator('td:first-child', { hasText: new RegExp('^\\s*' + name) }) });
+  const custer = row('Custer Spar');
   await expect(custer.locator('.status-badge')).toHaveText('Discontinued 2023');
   await expect(custer).toContainText('Use instead: G-200 EU Feldspar, Mahavir Potash Feldspar');
   await expect(custer.getByRole('link')).toHaveAttribute('href', /^https:/);
+  await expect(row('G-200 EU Feldspar')).toContainText(/Replaces: [^.]*Custer Spar/);
 
   await tools.getByLabel('Kind').selectOption('');
   await tools.getByLabel('Sold in').selectOption('UK');
   await tools.getByLabel('Filter').fill('frit');
-  await expect(standardTable(page)).toContainText('Standard Borax Frit (Potclays 2263)');
-  // A US-only frit is left out; one sold in both is not.
-  await expect(standardTable(page)).not.toContainText('Fusion Frit F-19');
-  await expect(standardTable(page)).toContainText('Ferro Frit 3134');
+  await expect(row('Standard Borax Frit')).toHaveCount(1);
+  // A US-only frit is left out (though another row may name it as similar); one sold in both is not.
+  await expect(row('Fusion Frit F-19')).toHaveCount(0);
+  await expect(row('Ferro Frit 3134')).toHaveCount(1);
 });
 
 test('saves a molecular formula and calculates its weights from the LOI', async ({ page }) => {

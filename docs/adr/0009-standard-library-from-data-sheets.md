@@ -11,7 +11,7 @@ several entries had drifted from what potters buy:
 - black cobalt oxide is sold as Co₃O₄ and black iron oxide as magnetite, Fe₃O₄;
 - several temperatures matched no measurement;
 - Custer, Oxford, G-200, Kona F-4 and Albany slip are no longer made;
-- the library held 34 materials, where established calculators ship 230 to 700.
+- the library held 36 materials, where established calculators ship 230 to 700.
 
 Glazy's data is licensed CC BY-NC-SA and Digitalfire's is all rights reserved, so neither can be
 copied wholesale. Old recipes still name the discontinued materials, and people want to compare

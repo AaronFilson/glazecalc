@@ -40,6 +40,8 @@ export class ChemistryForm {
   readonly percentmole = signal<'molecular' | 'percent'>('molecular');
   readonly selectedOxide = signal('');
   readonly formula = signal<FormulaLine[]>([]);
+  /** An additive with no oxide analysis, such as a commercial stain (not offered for materials). */
+  readonly noChemistry = signal(false);
 
   constructor(private readonly notices: Notices) {}
 
@@ -98,5 +100,32 @@ export class ChemistryForm {
     this.percentmole.set('molecular');
     this.selectedOxide.set('');
     this.formula.set([]);
+    this.noChemistry.set(false);
   }
+
+  /** An additive with no chemistry to save, or null when it has no name (said in the notices). */
+  buildWithoutChemistry(): NoChemistryRecord | null {
+    if (!this.name().trim()) {
+      this.notices.error('Error: enter a name.');
+      return null;
+    }
+    return {
+      name: this.name(),
+      rawformula: optional(this.rawformula()),
+      relatedTo: optional(this.relatedTo()),
+      notes: optional(this.notes()),
+      noChemistry: true,
+      fields: []
+    };
+  }
+}
+
+/** An additive left out of the unity formula: no oxides, LOI or weights. */
+export interface NoChemistryRecord {
+  name: string;
+  rawformula?: string;
+  relatedTo?: string;
+  notes?: string;
+  noChemistry: true;
+  fields: [];
 }

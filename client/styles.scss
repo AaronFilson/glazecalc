@@ -967,3 +967,34 @@ code {
 .btn-lg {
   border-radius: 10px;
 }
+
+// Printing (pages/recipe/recipe-print.ts): only the page's own content, black
+// on white whatever the screen's theme. Controls marked .no-print stay on screen.
+@media print {
+  @page {
+    margin: 12mm;
+  }
+  :root {
+    color-scheme: light;
+    --gc-bg: #fff;
+    --gc-surface: #fff;
+    --gc-surface-2: #fff;
+    --gc-text: #000;
+    --gc-muted: #333;
+    --gc-border: #888;
+    --gc-shadow: none;
+  }
+  .skip-link,
+  .app-header,
+  .app-footer,
+  .no-print {
+    display: none !important;
+  }
+  gc-root {
+    min-height: 0;
+  }
+  .app-main {
+    max-width: none;
+    padding: 0;
+  }
+}

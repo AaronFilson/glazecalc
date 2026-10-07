@@ -9,7 +9,7 @@ import { AuthPage } from './pages/auth/auth-page';
 import { HomePage } from './pages/home/home-page';
 import { LandingPage } from './pages/landing/landing-page';
 import { AccountPage } from './pages/password/account-page';
-import { API, httpMock, settle, testProviders, text } from './testing/test-providers';
+import { API, answer, httpMock, settle, testProviders, text } from './testing/test-providers';
 
 // Trials ("Try it now"): an account with a generated name and no email or
 // password, removed when it expires, that can become a real account.
@@ -299,9 +299,12 @@ describe('pages during a trial', () => {
     storeTrial();
     setup();
     const { fixture } = await create(AccountPage);
+    answer('/preferences', { weightUnit: 'g' });
     expect(text(fixture, 'h1')).toBe('Your trial');
     expect(text(fixture, '.trial-account')).toContain(NAME + ' stays your display name');
     expect(fixture.nativeElement.querySelector('form')).toBeNull();
+    // A trial has settings too.
+    expect(text(fixture, '.settings h2')).toBe('Settings');
   });
 
   it('the home page greets the trial by name', async () => {

@@ -37,6 +37,13 @@ describe('additives API', () => {
     expect(res.body._id).to.be.a('string');
   });
 
+  it('saves a stain with no chemistry, for recipes to leave out of the unity formula', async () => {
+    const res = await create({ name: 'Mason 6600', fields: [], noChemistry: true });
+    expect(res).to.have.status(200);
+    expect(res.body).to.include({ name: 'Mason 6600', noChemistry: true });
+    expect(res.body.fields).to.eql([]);
+  });
+
   it('keeps the chemistry of an additive, so a recipe can count it in the unity formula', async () => {
     const cobalt = {
       name: 'My cobalt oxide',

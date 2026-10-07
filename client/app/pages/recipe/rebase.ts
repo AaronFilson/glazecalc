@@ -113,3 +113,39 @@ export function rebase(
     additives: additives.map((a) => (unitOf(a) === 'percent' ? (a.amount ?? '') : scale(a.amount)))
   };
 }
+
+export interface BatchWeights {
+  /** Grams of each material, in the recipe's order. */
+  materials: number[];
+  /** Grams of each colorant or additive, in the recipe's order. */
+  additives: number[];
+  /** The base (the materials) in grams: the batch size. */
+  base: number;
+  /** Everything to weigh, base and additives. */
+  total: number;
+}
+
+/**
+ * The grams to weigh for a batch whose base (the materials) weighs `baseGrams`.
+ * A colorant given as a percent of the base is that percent of the batch;
+ * one in parts or grams scales with the base, as the materials do.
+ */
+export function batchWeights(
+  materials: Array<string | undefined>,
+  additives: Array<Pick<Additive, 'amount' | 'unit'>>,
+  baseGrams: number
+): BatchWeights | null {
+  const total = totalOf(materials);
+  if (!total || !(baseGrams > 0)) return null;
+  const factor = baseGrams / total;
+  const materialGrams = materials.map((amount) => amountOf(amount) * factor);
+  const additiveGrams = additives.map((additive) =>
+    unitOf(additive) === 'percent' ? (amountOf(additive.amount) / 100) * baseGrams : amountOf(additive.amount) * factor
+  );
+  return {
+    materials: materialGrams,
+    additives: additiveGrams,
+    base: baseGrams,
+    total: baseGrams + additiveGrams.reduce((sum, grams) => sum + grams, 0)
+  };
+}

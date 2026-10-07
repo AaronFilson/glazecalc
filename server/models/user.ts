@@ -6,12 +6,26 @@ import appSecret from '../lib/app_secret.ts';
 /** How long a sign-in token lasts, in days: '7d'. */
 export type TokenLifetime = `${number}d`;
 
+/**
+ * Choices about how the app shows things, and the values each may take; the
+ * first is the default.
+ *   weightUnit     batch weights in grams, or in pounds and ounces
+ *   gramPrecision  grams to a tenth (hundredths under 10 g), or in full
+ */
+export const PREFERENCES = {
+  weightUnit: ['g', 'lb'],
+  gramPrecision: ['single', 'full']
+} as const;
+export type Preferences = { -readonly [K in keyof typeof PREFERENCES]: (typeof PREFERENCES)[K][number] };
+
 export interface UserFields {
   email: string;
   displayname?: string;
   password: string;
   role?: string;
   settings: string[];
+  /** Choices that shape how the app shows things; any account or trial may set them. */
+  preferences?: Partial<Preferences>;
   /**
    * Goes up when the password changes; login tokens carry it, so older tokens
    * (on other devices, or a stolen one) stop working.
@@ -40,6 +54,10 @@ const userSchema = new mongoose.Schema<UserFields, UserModel, UserMethods>({
   password: { type: String, required: true },
   role: String,
   settings: [String],
+  preferences: {
+    weightUnit: { type: String, enum: PREFERENCES.weightUnit },
+    gramPrecision: { type: String, enum: PREFERENCES.gramPrecision }
+  },
   tokenVersion: { type: Number, default: 0 },
   guest: Boolean,
   expiresAt: Date,

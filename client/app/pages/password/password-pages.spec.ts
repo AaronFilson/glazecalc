@@ -2,7 +2,7 @@ import { Location } from '@angular/common';
 import { TestBed } from '@angular/core/testing';
 import { ActivatedRoute, Router, convertToParamMap } from '@angular/router';
 import { AuthService } from '../../core/auth.service';
-import { API, httpMock, settle, testProviders, text } from '../../testing/test-providers';
+import { API, answer, httpMock, settle, testProviders, text } from '../../testing/test-providers';
 import { AccountPage } from './account-page';
 import { ForgotPage } from './forgot-page';
 import { ResetPage } from './reset-page';
@@ -135,9 +135,18 @@ describe('AccountPage', () => {
     TestBed.configureTestingModule({ providers: testProviders() });
     const fixture = TestBed.createComponent(AccountPage);
     await fixture.whenStable();
+    answer('/preferences', { weightUnit: 'g' });
+    await settle(fixture);
     return { fixture, page: fixture.componentInstance as unknown as Page };
   };
   afterEach(() => httpMock().verify());
+
+  it('has the settings before the password forms', async () => {
+    const { fixture } = await create();
+    const headings = [...fixture.nativeElement.querySelectorAll('h2')].map((h: Element) => h.textContent?.trim());
+    expect(headings).toEqual(['Settings', 'Change your password', 'Delete your account']);
+    expect((fixture.nativeElement.querySelector('#weight-unit-g') as HTMLInputElement).checked).toBe(true);
+  });
 
   it('changes the password and keeps this browser signed in', async () => {
     const { fixture, page } = await create();

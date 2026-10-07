@@ -50,7 +50,7 @@ export class AdditivePage implements OnInit {
   }
 
   private async saveNow(): Promise<void> {
-    const additive = this.form.build();
+    const additive = this.form.noChemistry() ? this.form.buildWithoutChemistry() : this.form.build();
     if (!additive) return;
     try {
       const saved = await this.additives.create(additive);

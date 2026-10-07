@@ -6,6 +6,21 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Added
 
+- **Print a recipe for the glaze room** ([#4](https://github.com/AaronFilson/glazecalc/issues/4)).
+  - **Print**, beside Save or on a saved recipe, lays it out for paper: one page on Letter or A4,
+    black on white whatever the screen's theme.
+  - Print the whole recipe, with its unity formula, flux balance, oxide analysis, LOI and notes,
+    or just a batch list: what to weigh for a batch of any size, a running total for weighing
+    into one bucket, and a box to tick for each.
+  - Colorants given as a percent of the base are that percent of the batch; those in parts or
+    grams scale with the base. A saved PDF is named after the recipe.
+  - Back, or the browser's Back, returns to the recipe just as it was. A saved recipe's print
+    view has its own address, so a reload or a bookmark opens it again.
+- **Settings, on the account page,** kept with the account so they hold on every device; trials
+  have them too.
+  - Batch weights in grams, or in pounds and ounces (2 lb 3.5 oz). The print view can change
+    this as well.
+  - Grams to a tenth (4938.2 g, with hundredths under 10 g), or in full (4938.23517 g).
 - **A larger standard library: 109 materials and 34 additives**, from manufacturers' data sheets
   where they exist (ADR 0009).
   - **Modern replacements for every discontinued material:** G-200 EU and Mahavir for Custer,
@@ -19,13 +34,15 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   - **More additives:** bentonite, zircon, Veegum, Macaloid, carbonates and more.
   - **The old entries stay,** marked discontinued or historical with their substitutes, for
     comparing with old recipes.
-  - **Every entry shows its source,** linked and dated, with its other names, status, maker and
-    hazards.
+  - **Your own additives can have no oxide analysis,** such as a commercial stain; recipes leave
+    them out of the unity formula.
+  - **Every entry shows its source,** linked when it is online and dated when the source is,
+    with its other names, status and maker, and hazards where the data sheet gives them.
   - **The materials and additives pages filter** by name or other name, kind and region. The
     recipe page's list matches other names, marks old entries and remembers the region.
 - **Count colorants and additives in the unity formula, or not.** Calculators differ, which makes
   recipes hard to compare.
-  - A checkbox under the unity formula chooses. Each additive counts at its weight in the batch.
+  - A checkbox under the Unity formula heading chooses. Each additive counts at its weight in the batch.
   - The choice is saved with the recipe; new recipes start with the choice made last.
   - To make this possible, additives are now entered as materials are (fired oxides and LOI) and
     carry their chemistry.

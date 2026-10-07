@@ -1,8 +1,11 @@
+import { provideLocationMocks } from '@angular/common/testing';
 import { TestBed } from '@angular/core/testing';
+import { Router } from '@angular/router';
 import { Additive, Material, Recipe } from '../../core/models';
 import { API, answer, httpMock, settle, testProviders, text } from '../../testing/test-providers';
 import { MOLAR_MASS } from '../../../../lib/chemistry';
-import { RecipePage, evaluate, savedAnalysis } from './recipe-page';
+import { evaluate, savedAnalysis } from './recipe-analysis';
+import { RecipePage } from './recipe-page';
 
 const material = (name: string, fields: Array<[string, number]>, loi: number): Material => ({
   _id: name,
@@ -33,8 +36,20 @@ const HALF: Material = {
     { name: 'CaO', amount: 20 }
   ]
 };
-const IRON: Additive = { _id: 'rio', name: 'Iron oxide', fields: [{ name: 'Fe2O3', amount: '1' }] };
-const RUTILE: Additive = { _id: 'rut', name: 'Rutile', fields: [{ name: 'TiO2', amount: '1' }] };
+const IRON: Additive = {
+  _id: 'rio',
+  name: 'Iron oxide',
+  percentmole: 'molecular',
+  loi: 0,
+  fields: [{ name: 'Fe2O3', amount: '1' }]
+};
+const RUTILE: Additive = {
+  _id: 'rut',
+  name: 'Rutile',
+  percentmole: 'molecular',
+  loi: 0,
+  fields: [{ name: 'TiO2', amount: '1' }]
+};
 // Black cobalt oxide, Co3O4: CoO with a 6.64% LOI.
 const COBALT: Additive = {
   _id: 'co',
@@ -162,17 +177,49 @@ describe('RecipePage', () => {
       { ...SILICA, amount: '30' }
     ];
     const stain: Additive = { name: 'Stain 6600', noChemistry: true, fields: [], amount: '5' };
-    const old: Additive = { name: 'Old ochre', fields: [{ name: 'Fe', amount: '1' }], amount: '3' };
+    const odd: Additive = {
+      name: 'Odd ochre',
+      percentmole: 'percent',
+      loi: 0,
+      fields: [{ name: 'Fe', amount: '100' }],
+      amount: '3'
+    };
     const veegum: Additive = { name: 'Veegum T', chemistryOf: 'bentonite', fields: [], amount: '2' };
-    const result = evaluate(base, [stain, old, veegum], {
+    const result = evaluate(base, [stain, odd, veegum], {
       includeAdditives: true,
       chemistryOf: (name) => (name === 'bentonite' ? BENTONITE : undefined)
     });
-    expect(result.warnings).toEqual(['Old ochre has no oxide analysis the unity formula can use, so it is left out.']);
+    expect(result.warnings).toEqual(['Odd ochre has no oxide analysis the unity formula can use, so it is left out.']);
     // Veegum counts as bentonite: it brings magnesia.
     expect(result.analysis?.uList['MgO']).toBeGreaterThan(0);
     // Left out, nothing is counted or warned about.
-    expect(evaluate(base, [stain, old, veegum]).warnings).toEqual([]);
+    expect(evaluate(base, [stain, odd, veegum]).warnings).toEqual([]);
+  });
+
+  it("counts a colorant saved by an older version with the library's chemistry for it, or leaves it out", () => {
+    const base = [
+      { ...WHITING, amount: '20' },
+      { ...SILICA, amount: '30' }
+    ];
+    // Before October 2026 additives had no LOI: cobalt carbonate was saved as plain CoO.
+    const oldCopy: Additive = { name: 'Cobalt Oxide', fields: [{ name: 'CoO', amount: '1' }], amount: '2' };
+    const counted = evaluate(base, [oldCopy], {
+      includeAdditives: true,
+      chemistryOf: (name) => (name === 'Cobalt Oxide' ? COBALT : undefined)
+    });
+    const fresh = evaluate(base, [{ ...COBALT, amount: '2' }], { includeAdditives: true });
+    expect(counted.warnings).toEqual([]);
+    expect(counted.analysis?.uList['CoO']).toBeCloseTo(fresh.analysis!.uList['CoO'], 10);
+
+    const gone = evaluate(base, [{ ...oldCopy, name: 'Old blue' }], {
+      includeAdditives: true,
+      chemistryOf: () => undefined
+    });
+    expect(gone.warnings).toEqual([
+      'Old blue was saved by an older version of Glazecalc, without its LOI, so it is left out. ' +
+        'Add it to the recipe again to count it.'
+    ]);
+    expect(gone.analysis?.uList['CoO']).toBeUndefined();
   });
 
   it('saves the choice with the recipe and opens a recipe with its own', async () => {
@@ -631,5 +678,111 @@ describe('RecipePage', () => {
     const errors = (fixture.componentInstance as unknown as Page)['notices'].errors();
     expect(errors).toContain('There was an error in getting your recipes.');
     expect(errors).toHaveLength(5);
+  });
+
+  describe('printing', () => {
+    // Closing the print view steps back in the (mock) browser history.
+    beforeEach(() => TestBed.configureTestingModule({ providers: [provideLocationMocks()] }));
+
+    const SAVED: Recipe = {
+      _id: 'r1',
+      title: 'Saved matte',
+      materials: [
+        { ...WHITING, amount: '20' },
+        { ...SILICA, amount: '30' }
+      ],
+      additives: [],
+      notes: ['None.']
+    };
+
+    /** Lets the print view open and fetch the weight setting. */
+    const opened = async (fixture: Parameters<typeof settle>[0]) => {
+      await settle(fixture);
+      answer('/preferences', { weightUnit: 'g' });
+      await settle(fixture);
+    };
+
+    it('prints the recipe being edited, and goes back to it just as it was', async () => {
+      const { fixture, page } = await create();
+      const router = TestBed.inject(Router);
+      router.initialNavigation();
+      page['title'].set('Matte');
+      fill(page, [
+        [WHITING, '20'],
+        [SILICA, '30']
+      ]);
+      await settle(fixture);
+      click(fixture, 'Print');
+      await opened(fixture);
+      expect(router.url).toBe('/?print=draft');
+      expect(text(fixture, '.print-sheet h2')).toBe('Matte');
+      expect((fixture.nativeElement.querySelector('.recipe-layout') as HTMLElement).closest('[hidden]')).not.toBeNull();
+      expect(document.activeElement?.id).toBe('print-heading');
+
+      click(fixture, 'Back to the recipe');
+      await settle(fixture);
+      expect(router.url).toBe('/');
+      expect(fixture.nativeElement.querySelector('gc-recipe-print')).toBeNull();
+      expect(page['title']()).toBe('Matte');
+      expect(page['lines']().map((line: { amount: string }) => line.amount)).toEqual(['20', '30']);
+      expect(document.activeElement?.id).toBe('print-draft');
+    });
+
+    it('prints a saved recipe from the list', async () => {
+      const { fixture } = await create([SAVED]);
+      const router = TestBed.inject(Router);
+      router.initialNavigation();
+      await settle(fixture);
+      const button = fixture.nativeElement.querySelector('#print-r1') as HTMLButtonElement;
+      expect(button.getAttribute('aria-label')).toBe('Print Saved matte');
+      button.click();
+      await opened(fixture);
+      expect(router.url).toBe('/?print=r1');
+      expect(text(fixture, '.print-sheet h2')).toBe('Saved matte');
+
+      click(fixture, 'Back to the recipe');
+      await settle(fixture);
+      expect(router.url).toBe('/');
+      expect(document.activeElement?.id).toBe('print-r1');
+    });
+
+    it('opens from the address once the saved recipes are in, and drops a print of what is not there', async () => {
+      const router = TestBed.inject(Router);
+      await router.navigateByUrl('/?print=r1');
+      const fixture = TestBed.createComponent(RecipePage);
+      await fixture.whenStable();
+      expect(text(fixture)).toContain('Getting the recipe to print');
+      answer('/materials/getStandard', [WHITING, SILICA]);
+      answer('/materials/getAll', []);
+      answer('/additives/getAll', []);
+      answer('/additives/getStandard', []);
+      answer('/recipe/getAll', [SAVED]);
+      await opened(fixture);
+      expect(text(fixture, '.print-sheet h2')).toBe('Saved matte');
+      // Not opened from this page (a reload, or a bookmark): Back replaces the address.
+      click(fixture, 'Back to the recipe');
+      await settle(fixture);
+      expect(router.url).toBe('/');
+
+      // Nothing is being edited, so there is nothing to print.
+      await router.navigateByUrl('/?print=draft');
+      await settle(fixture);
+      expect(router.url).toBe('/');
+      expect(fixture.nativeElement.querySelector('gc-recipe-print')).toBeNull();
+    });
+
+    it('asks for a material, and amounts it can read, before printing', async () => {
+      const { fixture, page } = await create();
+      click(fixture, 'Print');
+      await fixture.whenStable();
+      expect(text(fixture, '.recipe-save-problem')).toBe('Please add at least one material to print.');
+      fill(page, [[WHITING, '2o']]);
+      click(fixture, 'Print');
+      await fixture.whenStable();
+      expect(text(fixture, '.recipe-save-problem')).toBe(
+        'The amount for Whiting is not a number ("2o"). Please fix it before printing.'
+      );
+      expect(TestBed.inject(Router).url).toBe('/');
+    });
   });
 });

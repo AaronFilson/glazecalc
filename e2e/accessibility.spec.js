@@ -47,6 +47,13 @@ for (const colorScheme of ['light', 'dark']) {
       await addColorant(page, 'Cobalt carbonate', 1);
       await expect(page.locator('.unity-panel gc-unity-formula')).toBeVisible();
       await expectNoProblems(page, colorScheme + ' /recipe with a result');
+      // The print view: the whole recipe, then the batch list.
+      await page.getByRole('button', { name: 'Print', exact: true }).click();
+      await expect(page.getByRole('heading', { name: 'Print a recipe' })).toBeFocused();
+      await expectNoProblems(page, colorScheme + ' /recipe print view');
+      await page.getByLabel(/^Just a batch list/).check();
+      await expectNoProblems(page, colorScheme + ' /recipe print view, batch list');
+      await page.getByRole('button', { name: 'Back to the recipe' }).click();
       // The question about unsaved changes, open.
       await page.getByRole('button', { name: 'New recipe' }).click();
       await expect(page.getByRole('button', { name: 'Keep editing' })).toBeFocused();

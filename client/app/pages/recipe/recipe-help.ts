@@ -88,8 +88,8 @@ const readHidden = (): boolean => {
             </ul>
             <p>
               Some calculators count colorants in the unity formula and some do not. Tick
-              <b>Count colorants and additives in it</b>, under the unity formula, to count them at their weight in the
-              batch, or leave it clear to compare with one that does not. The choice is saved with the recipe.
+              <b>Count colorants and additives in it</b>, under the Unity formula heading, to count them at their weight
+              in the batch, or leave it clear to compare with one that does not. The choice is saved with the recipe.
             </p>
           </li>
           <li>
@@ -122,6 +122,15 @@ const readHidden = (): boolean => {
               </li>
               <li><b>Open</b>, in My saved recipes, brings a saved recipe back here to change it.</li>
             </ul>
+          </li>
+          <li>
+            <h3>Print it for the glaze room</h3>
+            <p>
+              <b>Print</b>, beside Save or on a saved recipe, lays it out for paper. Print the whole recipe with its
+              unity formula and analysis, or just a batch list: what to weigh for a batch of any size, a running total
+              for weighing into one bucket, and boxes to tick. Weights are in grams, to a tenth or in full, or in pounds
+              and ounces: choose under Settings on your account page.
+            </p>
           </li>
         </ol>
         <p class="recipe-help-tips">

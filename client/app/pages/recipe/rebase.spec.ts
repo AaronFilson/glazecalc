@@ -1,4 +1,14 @@
-import { amountOf, formatAmount, formatScaled, isAmount, rebase, totalOf, unitOf, wholePartsFactor } from './rebase';
+import {
+  amountOf,
+  batchWeights,
+  formatAmount,
+  formatScaled,
+  isAmount,
+  rebase,
+  totalOf,
+  unitOf,
+  wholePartsFactor
+} from './rebase';
 
 describe('rebasing a recipe', () => {
   it('turns parts into percent; colorants in parts change with the base, those in percent do not', () => {
@@ -84,5 +94,25 @@ describe('rebasing a recipe', () => {
   it('tells a number from something that only looks like one', () => {
     expect(['', ' ', '0', '12.5', ' 7 '].every(isAmount)).toBe(true);
     expect(['12,5', '1o', '-3', 'abc'].some(isAmount)).toBe(false);
+  });
+});
+
+describe('batch weights', () => {
+  it('scale the materials to the batch; a colorant in % is that % of it, in parts or grams it scales too', () => {
+    const weights = batchWeights(
+      ['60', '40', ''],
+      [
+        { amount: '2', unit: 'percent' },
+        { amount: '1', unit: 'parts' },
+        { amount: '5', unit: 'grams' }
+      ],
+      1000
+    );
+    expect(weights).toEqual({ materials: [600, 400, 0], additives: [20, 10, 50], base: 1000, total: 1080 });
+  });
+
+  it('need amounts and a batch size', () => {
+    expect(batchWeights(['', '0'], [], 500)).toBeNull();
+    expect(batchWeights(['1'], [], 0)).toBeNull();
   });
 });

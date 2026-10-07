@@ -114,6 +114,10 @@ describe('RecipeLibrary with the standard library', () => {
     // Alphabetical.
     expect(names()).toEqual(['Custer Spar', 'Grolleg China Clay', 'Whiting', 'Zircon']);
     expect(text(fixture, '.library-status')).toBe('Discontinued 2023');
+    // A screen reader hears the status too.
+    expect(
+      [...fixture.nativeElement.querySelectorAll('.library-item')].map((b: Element) => b.getAttribute('aria-label'))
+    ).toEqual(['Add Custer Spar, Discontinued 2023', 'Add Grolleg China Clay', 'Add Whiting', 'Add Zircon']);
 
     const filter = fixture.nativeElement.querySelector('input[type=search]') as HTMLInputElement;
     filter.value = 'zircopax';

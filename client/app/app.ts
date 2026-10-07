@@ -53,7 +53,7 @@ const APP_PAGES = [
               }
             </ul>
             <div class="nav-account">
-              <a routerLink="/account" class="account-email" title="Your account">{{
+              <a routerLink="/account" class="account-email" title="Your account and settings">{{
                 auth.displayName() ?? 'Account'
               }}</a>
               <!-- A trial has no password to come back with; the trial bar offers its way out. -->

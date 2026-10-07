@@ -55,11 +55,11 @@ let nextId = 0;
         <select
           [id]="id + '-region'"
           class="form-select form-select-sm"
-          [value]="region()"
           (change)="setRegion($any($event.target).value)"
         >
+          <!-- Each option says whether it is the one: a value on the select comes before its options. -->
           @for (option of regions; track option.value) {
-            <option [value]="option.value">{{ option.label }}</option>
+            <option [value]="option.value" [selected]="option.value === region()">{{ option.label }}</option>
           }
         </select>
       </div>
@@ -89,8 +89,15 @@ let nextId = 0;
             <td>{{ record.formulaweight }}</td>
             <td class="standard-notes">
               {{ firstOf(record.notes) }}
-              @if (record.substitutes?.length && record.status && record.status !== 'current') {
-                <p class="standard-detail"><b>Use instead:</b> {{ record.substitutes!.join(', ') }}</p>
+              @if (record.substitutes?.length) {
+                @if (record.status && record.status !== 'current') {
+                  <p class="standard-detail"><b>Use instead:</b> {{ record.substitutes!.join(', ') }}</p>
+                } @else {
+                  <p class="standard-detail">Similar: {{ record.substitutes!.join(', ') }}</p>
+                }
+              }
+              @if (record.replaces?.length) {
+                <p class="standard-detail">Replaces: {{ record.replaces!.join(', ') }}</p>
               }
               @if (record.aliases?.length) {
                 <p class="standard-detail">Also called: {{ record.aliases!.join(', ') }}</p>

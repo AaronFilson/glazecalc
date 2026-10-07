@@ -75,6 +75,25 @@ describe('LandingPage', () => {
 });
 
 describe('AdditivePage', () => {
+  it('saves a stain with no oxide analysis, leaving out the oxide fields', async () => {
+    const { fixture, page } = await create(AdditivePage);
+    answer('/additives/getAll', []);
+    answer('/additives/getStandard', []);
+    await settle(fixture);
+    const box = fixture.nativeElement.querySelector('#additive-no-chemistry') as HTMLInputElement;
+    box.click();
+    await fixture.whenStable();
+    expect(fixture.nativeElement.querySelector('#additive-oxide')).toBeNull();
+    expect(fixture.nativeElement.querySelector('#additive-loi')).toBeNull();
+    page['form'].name.set('Mason 6600');
+    const saving = page['save']();
+    const req = httpMock().expectOne(API + '/additives/create');
+    expect(req.request.body).toEqual({ name: 'Mason 6600', noChemistry: true, fields: [] });
+    req.flush({ ...req.request.body, _id: 'm1' });
+    await saving;
+    expect(page['form'].noChemistry()).toBe(false);
+  });
+
   it('saves an additive as fired oxides, with its weights worked out', async () => {
     const { fixture, page } = await create(AdditivePage);
     answer('/additives/getAll', []);

@@ -69,6 +69,29 @@ describe('StandardList', () => {
     expect(localStorage.getItem('region')).toBe('UK');
   });
 
+  it('shows the region chosen last as chosen, not just filtered by', async () => {
+    localStorage.setItem('region', 'UK');
+    const { fixture, names } = await create();
+    const select = [...fixture.nativeElement.querySelectorAll('.standard-tools select')].find((s: HTMLSelectElement) =>
+      [...s.options].some((o) => o.value === 'UK')
+    ) as HTMLSelectElement;
+    expect(select.value).toBe('UK');
+    expect(names()).toEqual(['Grolleg China Clay', 'Silica', 'Stain (proprietary)']);
+  });
+
+  it('says what a current record is like and what it replaces', async () => {
+    const { fixture } = await create([
+      record('G-200 EU Feldspar', {
+        status: 'current',
+        substitutes: ['Mahavir Potash Feldspar'],
+        replaces: ['Custer Spar']
+      })
+    ]);
+    expect(text(fixture, 'tbody')).toContain('Similar: Mahavir Potash Feldspar');
+    expect(text(fixture, 'tbody')).toContain('Replaces: Custer Spar');
+    expect(text(fixture, 'tbody')).not.toContain('Use instead');
+  });
+
   it('marks what is no longer current, says what to use, and links the source', async () => {
     const { fixture } = await create();
     const custer = [...fixture.nativeElement.querySelectorAll('tbody tr')][0] as HTMLElement;

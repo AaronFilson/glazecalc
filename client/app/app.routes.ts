@@ -95,7 +95,7 @@ export const routes: Routes = [
   },
   {
     path: 'account',
-    title: 'Your account - ' + SITE,
+    title: 'Your account and settings - ' + SITE,
     canActivate: [signedInGuard],
     loadComponent: () => import('./pages/password/account-page').then((m) => m.AccountPage)
   },

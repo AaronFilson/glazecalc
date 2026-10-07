@@ -29,8 +29,11 @@ materials, colorants, firing logs and notes together in one private notebook.
   substitute materials. Change the scale to percent, to the smallest whole parts, or to the grams
   of a batch, with colorants as a percent of the base, in parts or in grams; save a recipe and
   keep working on it, or open a saved one to change it.
+- **Print it for the glaze room:** the whole recipe with its unity formula and analysis, or just
+  a batch list to tick off while weighing, with a running total for weighing into one bucket. One
+  page on Letter or A4; weights in grams, or in pounds and ounces as set in your account.
 - **A standard library of 109 materials and 34 colorants and additives,** from manufacturers'
-  data sheets, US and UK, each with its source, other names and hazards. Discontinued materials
+  data sheets, US and UK, each with its source and other names, and hazards where the data sheet gives them. Discontinued materials
   stay for old recipes, each pointing to its modern replacement. Count colorants in the unity
   formula or leave them out, to compare with other calculators.
 - **Your own materials,** from a chemical formula or a supplier's analysis, and colorants and
@@ -50,8 +53,8 @@ For anyone reading the code:
   `.ts` files directly with no build step ([ADR 8](docs/adr/0008-typescript-server-without-a-build.md)),
   and put back online. The
   [case study](docs/case-study.md) tells how.
-- **Tested at three levels, in CI on every push:** 191 server tests (98% of statements) run
-  against the app in-process; 175 Angular unit tests (93%); 67 Playwright browser tests,
+- **Tested at three levels, in CI on every push:** 195 server tests (98% of statements) run
+  against the app in-process; 210 Angular unit tests (93%); 72 Playwright browser tests,
   including [axe](https://github.com/dequelabs/axe-core) accessibility checks of every page in
   light and dark mode.
 - **One glaze chemistry library** for the browser and the tests, checked against values worked

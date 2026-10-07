@@ -1,10 +1,23 @@
-import { DatePipe } from '@angular/common';
-import { Component, Injector, OnInit, afterNextRender, computed, inject, signal } from '@angular/core';
+import { DatePipe, Location } from '@angular/common';
+import {
+  Component,
+  Injector,
+  OnInit,
+  afterNextRender,
+  computed,
+  effect,
+  inject,
+  signal,
+  untracked
+} from '@angular/core';
+import { toSignal } from '@angular/core/rxjs-interop';
 import { FormsModule } from '@angular/forms';
-import { MaterialInput, RecipeLine, calculateUMF, materialWeights } from '../../../../lib/chemistry';
+import { ActivatedRoute, Router } from '@angular/router';
+import { map } from 'rxjs';
+import { MaterialInput } from '../../../../lib/chemistry';
 import { ApiResourceFactory } from '../../core/api-resource.service';
 import { errorMessage } from '../../core/error-message';
-import { Additive, AdditiveUnit, Material, Recipe, RecipeAnalysis, RecipeMaterial } from '../../core/models';
+import { Additive, AdditiveUnit, Material, Recipe, RecipeMaterial } from '../../core/models';
 import { Busy } from '../../shared/busy';
 import { localDate } from '../../shared/dates';
 import { Notices, NoticesList } from '../../shared/notices';
@@ -12,79 +25,11 @@ import { firstOf } from '../../shared/options';
 import { PageHeader } from '../../shared/page-header';
 import { Removal, RemoveButton } from '../../shared/remove-button';
 import { Rebase, amountOf, formatAmount, isAmount, rebase, totalOf, unitOf } from './rebase';
+import { additiveAmount, evaluate, savedAnalysis } from './recipe-analysis';
 import { RecipeHelp } from './recipe-help';
 import { RecipeLibrary, libraryKey } from './recipe-library';
+import { RecipePrint } from './recipe-print';
 import { UnityFormula, silicaAluminaRatio, unityColumns } from './unity-formula';
-
-/** Recipes saved by mongoose hold the analysis in a one-element array. */
-export function savedAnalysis(recipe: Recipe): RecipeAnalysis | null {
-  const computed = Array.isArray(recipe.computed) ? recipe.computed[0] : recipe.computed;
-  return computed && computed.uList ? computed : null;
-}
-
-export interface Evaluation {
-  analysis: RecipeAnalysis | null;
-  /** Why there is no unity formula, such as a recipe with no flux. */
-  problem: string | null;
-  warnings: string[];
-}
-
-export interface EvaluateOptions {
-  /** Count the colorants and additives in the unity formula too. */
-  includeAdditives?: boolean;
-  /** The chemistry an additive borrows by name, as Veegum borrows bentonite's. */
-  chemistryOf?: (name: string) => MaterialInput | undefined;
-}
-
-/** Whether the unity formula can read a material's or additive's chemistry. */
-function hasChemistry(record: MaterialInput): boolean {
-  try {
-    materialWeights(record);
-    return true;
-  } catch {
-    return false;
-  }
-}
-
-/**
- * The unity formula of a recipe. Blank amounts count as 0. Additives are left
- * out unless they are included; then each counts at its weight in the base's
- * unit: a percent of the base's total, or its parts or grams as they are.
- * Stains and other additives with no chemistry add nothing, and an additive
- * whose analysis the unity formula cannot read is left out, with a warning.
- */
-export function evaluate(
-  materials: RecipeMaterial[],
-  additives: Additive[] = [],
-  options: EvaluateOptions = {}
-): Evaluation {
-  if (!materials.some((m) => amountOf(m.amount) > 0 || (m.amount ?? '').trim() !== '')) {
-    return { analysis: null, problem: null, warnings: [] };
-  }
-  const lines: RecipeLine[] = materials.map((material) => ({ material, amount: material.amount ?? '' }));
-  const leftOut: string[] = [];
-  if (options.includeAdditives) {
-    const baseTotal = totalOf(materials.map((m) => m.amount));
-    for (const additive of additives) {
-      const amount = amountOf(additive.amount);
-      if (!amount || additive.noChemistry) continue;
-      const chemistry = additive.chemistryOf ? options.chemistryOf?.(additive.chemistryOf) : additive;
-      if (!chemistry || !hasChemistry(chemistry)) {
-        leftOut.push(additive.name + ' has no oxide analysis the unity formula can use, so it is left out.');
-        continue;
-      }
-      const weight = unitOf(additive) === 'percent' ? (amount * baseTotal) / 100 : amount;
-      lines.push({ material: { ...chemistry, name: additive.name }, amount: weight });
-    }
-  }
-  try {
-    const result = calculateUMF(lines);
-    // uList is the key saved recipes and older versions of the app use.
-    return { analysis: { ...result, uList: result.umf }, problem: null, warnings: [...result.warnings, ...leftOut] };
-  } catch (e) {
-    return { analysis: null, problem: (e as Error).message, warnings: [] };
-  }
-}
 
 const INCLUDE_KEY = 'includeAdditives';
 
@@ -96,16 +41,6 @@ const includeByDefault = (): boolean => {
     return false;
   }
 };
-
-/** A colorant's amount with its unit: 2%, 3 parts, 5 g. */
-export function additiveAmount(additive: Additive): string {
-  const amount = (additive.amount ?? '').trim();
-  if (!amount) return '';
-  const unit = unitOf(additive);
-  if (unit === 'percent') return amount + '%';
-  if (unit === 'grams') return amount + ' g';
-  return amount + (amount === '1' ? ' part' : ' parts');
-}
 
 const ADDITIVE_UNITS: ReadonlyArray<{ value: AdditiveUnit; label: string }> = [
   { value: 'percent', label: '% of base' },
@@ -141,12 +76,25 @@ interface PendingLeave {
 
 @Component({
   selector: 'gc-recipe-page',
-  imports: [DatePipe, FormsModule, NoticesList, PageHeader, RecipeHelp, RecipeLibrary, RemoveButton, UnityFormula],
+  imports: [
+    DatePipe,
+    FormsModule,
+    NoticesList,
+    PageHeader,
+    RecipeHelp,
+    RecipeLibrary,
+    RecipePrint,
+    RemoveButton,
+    UnityFormula
+  ],
   templateUrl: './recipe-page.html'
 })
 export class RecipePage implements OnInit {
   private readonly resources = inject(ApiResourceFactory);
   private readonly injector = inject(Injector);
+  private readonly route = inject(ActivatedRoute);
+  private readonly router = inject(Router);
+  private readonly location = inject(Location);
   private readonly recipes = this.resources.for<Recipe>('recipe');
   private readonly materials = this.resources.for<Material>('materials');
   private readonly additives = this.resources.for<Additive>('additives');
@@ -197,7 +145,7 @@ export class RecipePage implements OnInit {
     () => !!(this.title() || this.notes() || this.lines().length || this.additiveLines().length)
   );
   protected readonly pendingLeave = signal<PendingLeave | null>(null);
-  /** Why the last save did not happen, shown beside the save buttons. */
+  /** Why the last save (or print) did not happen, shown beside the save buttons. */
   protected readonly saveProblem = signal('');
   /**
    * Which recipe the page shows: a new number each time it is cleared or
@@ -241,6 +189,51 @@ export class RecipePage implements OnInit {
     return this.hasContent() ? 'Not saved yet' : '';
   });
 
+  // Printing: ?print=draft prints the recipe being edited, ?print=<id> a saved one.
+  private readonly printParam = toSignal(this.route.queryParamMap.pipe(map((params) => params.get('print'))), {
+    initialValue: null
+  });
+  private readonly recipesLoaded = signal(false);
+  /** The recipe being edited, as it would be saved. */
+  private readonly draft = computed<Recipe>(() => ({
+    title: this.title(),
+    date: this.date(),
+    notes: this.notes(),
+    materials: this.lines(),
+    additives: this.additiveLines(),
+    includeAdditives: this.includeAdditives()
+  }));
+  /** The recipe in the print view, while it is open. */
+  protected readonly printRecipe = computed<Recipe | null>(() => {
+    const wanted = this.printParam();
+    if (!wanted) return null;
+    if (wanted === 'draft') return this.lines().length ? this.draft() : null;
+    return this.myRecipes().find((recipe) => recipe._id === wanted) ?? null;
+  });
+  /** Asked to print a saved recipe, before the saved recipes are in. */
+  protected readonly printWaiting = computed(
+    () => !!this.printParam() && this.printParam() !== 'draft' && !this.recipesLoaded()
+  );
+  /** Whether this page opened the print view, so closing it can go back in the history. */
+  private printOpenedHere = false;
+  protected readonly chemistryOf = (name: string) => this.findByName(name);
+
+  constructor() {
+    // Asked to print what is not there (an empty page after a reload, a recipe removed elsewhere): show the editor.
+    effect(() => {
+      if (this.printParam() && !this.printRecipe() && !this.printWaiting()) untracked(() => this.leavePrint());
+    });
+    // The focus goes to the print options when they open, and back to the Print button that opened them.
+    let printed: string | null = null;
+    effect(() => {
+      const printing = this.printRecipe() ? this.printParam() : null;
+      if (printing === printed) return;
+      const target = printing ? 'print-heading' : 'print-' + printed;
+      printed = printing;
+      untracked(() => afterNextRender(() => document.getElementById(target)?.focus(), { injector: this.injector }));
+    });
+  }
+
   ngOnInit(): void {
     void this.load(this.materials.getAll(), this.myMaterials, 'There was an error in getting your materials.');
     void this.load(
@@ -254,7 +247,9 @@ export class RecipePage implements OnInit {
       this.standardAdditives,
       'There was an error in getting the standard additives.'
     );
-    void this.load(this.recipes.getAll(), this.myRecipes, 'There was an error in getting your recipes.');
+    void this.load(this.recipes.getAll(), this.myRecipes, 'There was an error in getting your recipes.').then(() =>
+      this.recipesLoaded.set(true)
+    );
   }
 
   // Materials and additives.
@@ -453,6 +448,50 @@ export class RecipePage implements OnInit {
   /** The first material or colorant whose amount is not blank and not a number of 0 or more. */
   private unreadableLine(): Additive | RecipeMaterial | undefined {
     return [...this.lines(), ...this.additiveLines()].find((line) => !isAmount(line.amount));
+  }
+
+  // Printing.
+
+  /** Opens the print view for the recipe being edited, saved or not. */
+  protected printDraft(): void {
+    this.saveProblem.set('');
+    if (!this.lines().length) {
+      this.saveProblem.set('Please add at least one material to print.');
+      return;
+    }
+    const unreadable = this.unreadableLine();
+    if (unreadable) {
+      this.saveProblem.set(
+        `The amount for ${unreadable.name} is not a number ("${unreadable.amount}"). Please fix it before printing.`
+      );
+      return;
+    }
+    this.openPrint('draft');
+  }
+
+  /** Opens the print view: for 'draft', or a saved recipe's id. Back in the browser closes it. */
+  protected openPrint(what: string): void {
+    this.printOpenedHere = true;
+    void this.router.navigate([], {
+      relativeTo: this.route,
+      queryParams: { print: what },
+      queryParamsHandling: 'merge'
+    });
+  }
+
+  protected closePrint(): void {
+    if (!this.printOpenedHere) return this.leavePrint();
+    this.printOpenedHere = false;
+    this.location.back();
+  }
+
+  private leavePrint(): void {
+    void this.router.navigate([], {
+      relativeTo: this.route,
+      queryParams: { print: null },
+      queryParamsHandling: 'merge',
+      replaceUrl: true
+    });
   }
 
   // Starting over, and opening saved recipes.

@@ -31,81 +31,99 @@
         <textarea id="notes" name="notes" rows="3" class="form-control" [(ngModel)]="form.notes"></textarea>
       </div>
     </div>
-    <div class="row">
-      <div class="col-xl-4 col-md-6 mb-3">
-        <label for="additive-loi">Loss on Ignition - LOI (percentage): </label>
-        <input id="additive-loi" type="text" name="loi" [(ngModel)]="form.loi" />
-      </div>
-      <div class="col-xl-4 col-md-6 mb-3">
-        <label for="additive-molecularweight">Raw molecular weight of the formula (used only if LOI is blank): </label>
-        <input id="additive-molecularweight" type="text" name="molecularweight" [(ngModel)]="form.molecularweight" />
-      </div>
+    <div class="form-check mb-3">
+      <input
+        id="additive-no-chemistry"
+        class="form-check-input"
+        type="checkbox"
+        name="noChemistry"
+        [(ngModel)]="form.noChemistry"
+      />
+      <label for="additive-no-chemistry" class="form-check-label">
+        It has no oxide analysis, such as a commercial stain: leave it out of the unity formula
+      </label>
     </div>
-    <p>
-      Enter what it gives the glaze once fired: black cobalt oxide, Co₃O₄, is CoO with a 6.6% LOI. A recipe can then
-      count it in the unity formula.
-    </p>
+    @if (!form.noChemistry()) {
+      <div class="row">
+        <div class="col-xl-4 col-md-6 mb-3">
+          <label for="additive-loi">Loss on Ignition - LOI (percentage): </label>
+          <input id="additive-loi" type="text" name="loi" [(ngModel)]="form.loi" />
+        </div>
+        <div class="col-xl-4 col-md-6 mb-3">
+          <label for="additive-molecularweight"
+            >Raw molecular weight of the formula (used only if LOI is blank):
+          </label>
+          <input id="additive-molecularweight" type="text" name="molecularweight" [(ngModel)]="form.molecularweight" />
+        </div>
+      </div>
+      <p>
+        Enter what it gives the glaze once fired: black cobalt oxide, Co₃O₄, is CoO with a 6.6% LOI. A recipe can then
+        count it in the unity formula.
+      </p>
 
-    <h4>Enter the formula (fired):</h4>
-    <div class="row">
-      <div class="col-lg-6 mb-3">
-        <label for="additive-oxide">Oxide Selection</label>
-        <div>
-          <select id="additive-oxide" name="additive-oxide-select" [(ngModel)]="form.selectedOxide">
-            <option value="">none</option>
-            @for (oxide of oxides; track oxide.value) {
-              <option [value]="oxide.value">{{ oxide.label }}</option>
-            }
-          </select>
-        </div>
-        <button type="button" class="btn btn-light border" (click)="form.addOxide()">Add the oxide to the list</button>
-      </div>
-      <fieldset class="col-lg-6 mb-3">
-        <legend class="h5">This formula is in :</legend>
-        <div class="form-check">
-          <input
-            id="additive-percent"
-            class="form-check-input"
-            type="radio"
-            name="percentmole"
-            value="percent"
-            [(ngModel)]="form.percentmole"
-          />
-          <label for="additive-percent" class="form-check-label">Percent</label>
-        </div>
-        <div class="form-check">
-          <input
-            id="additive-mole"
-            class="form-check-input"
-            type="radio"
-            name="percentmole"
-            value="molecular"
-            [(ngModel)]="form.percentmole"
-          />
-          <label for="additive-mole" class="form-check-label">Molecular / Unity</label>
-        </div>
-      </fieldset>
-    </div>
-    <ul>
-      @for (line of form.formula(); track $index) {
-        <li>
-          <b>{{ formatFormula(line.name) }}</b>
-          <p>
-            <label [for]="'part-amount-' + $index">Amount: </label>
-            <input
-              [id]="'part-amount-' + $index"
-              type="text"
-              [name]="'part-amount-' + $index"
-              class="part-amount"
-              [(ngModel)]="line.amount"
-            />
-          </p>
-          <button type="button" class="btn btn-light border" (click)="form.removeOxide($index)">
-            Remove from formula list
+      <h4>Enter the formula (fired):</h4>
+      <div class="row">
+        <div class="col-lg-6 mb-3">
+          <label for="additive-oxide">Oxide Selection</label>
+          <div>
+            <select id="additive-oxide" name="additive-oxide-select" [(ngModel)]="form.selectedOxide">
+              <option value="">none</option>
+              @for (oxide of oxides; track oxide.value) {
+                <option [value]="oxide.value">{{ oxide.label }}</option>
+              }
+            </select>
+          </div>
+          <button type="button" class="btn btn-light border" (click)="form.addOxide()">
+            Add the oxide to the list
           </button>
-        </li>
-      }
-    </ul>
+        </div>
+        <fieldset class="col-lg-6 mb-3">
+          <legend class="h5">This formula is in :</legend>
+          <div class="form-check">
+            <input
+              id="additive-percent"
+              class="form-check-input"
+              type="radio"
+              name="percentmole"
+              value="percent"
+              [(ngModel)]="form.percentmole"
+            />
+            <label for="additive-percent" class="form-check-label">Percent</label>
+          </div>
+          <div class="form-check">
+            <input
+              id="additive-mole"
+              class="form-check-input"
+              type="radio"
+              name="percentmole"
+              value="molecular"
+              [(ngModel)]="form.percentmole"
+            />
+            <label for="additive-mole" class="form-check-label">Molecular / Unity</label>
+          </div>
+        </fieldset>
+      </div>
+      <ul>
+        @for (line of form.formula(); track $index) {
+          <li>
+            <b>{{ formatFormula(line.name) }}</b>
+            <p>
+              <label [for]="'part-amount-' + $index">Amount: </label>
+              <input
+                [id]="'part-amount-' + $index"
+                type="text"
+                [name]="'part-amount-' + $index"
+                class="part-amount"
+                [(ngModel)]="line.amount"
+              />
+            </p>
+            <button type="button" class="btn btn-light border" (click)="form.removeOxide($index)">
+              Remove from formula list
+            </button>
+          </li>
+        }
+      </ul>
+    }
     <button type="submit" class="btn btn-primary" [disabled]="saving.active()">Save</button>
   </form>
 </section>

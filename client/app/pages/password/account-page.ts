@@ -6,14 +6,16 @@ import { AuthService } from '../../core/auth.service';
 import { errorMessage } from '../../core/error-message';
 import { Notices, NoticesList } from '../../shared/notices';
 import { PageHeader } from '../../shared/page-header';
+import { SettingsSection } from './settings-section';
 
 /**
- * The signed-in user's account: change the password, or delete the account. A
- * trial has no password, so it is offered an account instead.
+ * The signed-in user's account: settings, changing the password, or deleting
+ * the account. A trial has settings too, but no password, so it is offered an
+ * account instead.
  */
 @Component({
   selector: 'gc-account-page',
-  imports: [DatePipe, FormsModule, NoticesList, PageHeader, RouterLink],
+  imports: [DatePipe, FormsModule, NoticesList, PageHeader, RouterLink, SettingsSection],
   template: `
     @if (auth.trial(); as trial) {
       <gc-page-header title="Your trial" [lead]="'You are trying Glazecalc as ' + trial.name + '.'" />
@@ -26,9 +28,11 @@ import { PageHeader } from '../../shared/page-header';
         </p>
         <a routerLink="/signup" class="btn btn-primary">Create an account</a>
       </section>
+      <gc-settings />
     } @else {
       <gc-page-header title="Your account" [lead]="auth.email() ? 'Signed in as ' + auth.email() + '.' : ''" />
       <gc-notices [notices]="notices" />
+      <gc-settings />
 
       <section class="auth-text">
         <h2>Change your password</h2>

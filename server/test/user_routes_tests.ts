@@ -1,5 +1,5 @@
 import User, { type UserDocument } from '../models/user.ts';
-import { api, expect, makeUser, uniqueEmail } from './support/app.ts';
+import { api, expect, makeUser, sessionToken, uniqueEmail } from './support/app.ts';
 
 // Checking a sign-in, and changing or deleting accounts. The password checks on
 // email changes and deletes are covered in account_password_tests.ts.
@@ -41,6 +41,61 @@ describe('user API', () => {
         .get('/verify')
         .set('Authorization', 'Bearer ' + 'not-a-token');
       expect(res).to.have.status(401);
+    });
+  });
+
+  describe('preferences', () => {
+    const get = (bearer: string) =>
+      api()
+        .get('/preferences')
+        .set('Authorization', 'Bearer ' + bearer);
+    const put = (bearer: string, body: object) =>
+      api()
+        .put('/preferences')
+        .set('Authorization', 'Bearer ' + bearer)
+        .send(body);
+
+    const DEFAULTS = { weightUnit: 'g', gramPrecision: 'single' };
+
+    it('start in grams to a tenth, and change one at a time', async () => {
+      expect((await get(token)).body).to.eql(DEFAULTS);
+      const res = await put(token, { weightUnit: 'lb' });
+      expect(res).to.have.status(200);
+      expect(res.body).to.eql({ weightUnit: 'lb', gramPrecision: 'single' });
+      // A change to one leaves the other as it was.
+      expect((await put(token, { gramPrecision: 'full' })).body).to.eql({ weightUnit: 'lb', gramPrecision: 'full' });
+      expect((await get(token)).body).to.eql({ weightUnit: 'lb', gramPrecision: 'full' });
+      const saved = (await User.findById(user._id))?.preferences;
+      expect([saved?.weightUnit, saved?.gramPrecision]).to.eql(['lb', 'full']);
+    });
+
+    it('refuse a choice the app does not know, and changing nothing', async () => {
+      for (const body of [
+        { weightUnit: 'kg' },
+        { weightUnit: '' },
+        { weightUnit: null },
+        { weightUnit: 3 },
+        { gramPrecision: 'double' },
+        // One good and one bad: nothing changes.
+        { weightUnit: 'lb', gramPrecision: 2 }
+      ]) {
+        const res = await put(token, body);
+        expect(res, JSON.stringify(body)).to.have.status(400);
+      }
+      expect((await put(token, { gramPrecision: 'none' })).body.msg).to.equal(
+        'Grams can show to a tenth (single) or in full (full).'
+      );
+      expect((await put(token, { theme: 'dark' })).body.msg).to.equal('Nothing to change');
+      expect((await get(token)).body).to.eql(DEFAULTS);
+    });
+
+    it('can be set by a trial, and need a sign-in', async () => {
+      const trial = await api().post('/guest');
+      const trialToken = sessionToken(trial) ?? '';
+      expect(await put(trialToken, { weightUnit: 'lb' })).to.have.status(200);
+      expect((await get(trialToken)).body).to.eql({ weightUnit: 'lb', gramPrecision: 'single' });
+      expect(await api().get('/preferences')).to.have.status(401);
+      expect(await api().put('/preferences').send({ weightUnit: 'lb' })).to.have.status(401);
     });
   });
 
