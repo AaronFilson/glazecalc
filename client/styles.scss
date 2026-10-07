@@ -2,6 +2,13 @@
 // in light and dark, on top of Bootstrap 5's compiled CSS (loaded first, see
 // angular.json). Text and button color pairs meet WCAG AA contrast.
 // No web fonts: system fonts are fast and send no data to a font host.
+//
+// Light or dark follows the device, unless Settings chooses one (data-theme on
+// <html>), and Settings can choose another palette for buttons, links and tabs
+// (data-palette). core/theme.ts and a script in index.html set them.
+
+@use 'sass:list';
+@use 'sass:map';
 
 :root {
   color-scheme: light dark;
@@ -27,25 +34,135 @@
   --gc-sans: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
 
+@mixin dark-tokens {
+  --gc-bg: #1e1a17;
+  --gc-surface: #27221e;
+  --gc-surface-2: #312a24;
+  --gc-text: #ede6dc;
+  --gc-muted: #b4a89c;
+  --gc-border: #433a32;
+  --gc-primary: #e8956b;
+  --gc-primary-rgb: 232, 149, 107;
+  --gc-primary-hover: #f0a882;
+  --gc-on-primary: #1e1a17;
+  --gc-accent: #9cc3ae;
+  --gc-on-accent: #1e1a17;
+  --gc-danger-bg: #3d211c;
+  --gc-danger-text: #f5c4b8;
+  --gc-success-bg: #1f3329;
+  --gc-success-text: #b8dcc8;
+  --gc-shadow: none;
+}
+
+:root[data-theme='light'] {
+  color-scheme: light;
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  @include dark-tokens;
+}
+
 @media (prefers-color-scheme: dark) {
-  :root {
-    --gc-bg: #1e1a17;
-    --gc-surface: #27221e;
-    --gc-surface-2: #312a24;
-    --gc-text: #ede6dc;
-    --gc-muted: #b4a89c;
-    --gc-border: #433a32;
-    --gc-primary: #e8956b;
-    --gc-primary-rgb: 232, 149, 107;
-    --gc-primary-hover: #f0a882;
-    --gc-on-primary: #1e1a17;
-    --gc-accent: #9cc3ae;
-    --gc-on-accent: #1e1a17;
-    --gc-danger-bg: #3d211c;
-    --gc-danger-text: #f5c4b8;
-    --gc-success-bg: #1f3329;
-    --gc-success-text: #b8dcc8;
-    --gc-shadow: none;
+  :root:not([data-theme='light']) {
+    @include dark-tokens;
+  }
+}
+
+// The palettes Settings offers besides tenmoku (core/theme.ts PALETTES): the
+// primary color, its RGB and hover, and the accent, in light and in dark. Each
+// meets WCAG AA contrast (4.5:1) on every background and with the text on it.
+$palettes: (
+  celadon: (
+    light: (
+      #2e6650,
+      '46, 102, 80',
+      #24513f,
+      #9c3d1f
+    ),
+    dark: (
+      #8fcfb2,
+      '143, 207, 178',
+      #a9dcc4,
+      #e8956b
+    )
+  ),
+  cobalt: (
+    light: (
+      #24509e,
+      '36, 80, 158',
+      #1c4084,
+      #8a5a14
+    ),
+    dark: (
+      #9db9f2,
+      '157, 185, 242',
+      #b6cbf6,
+      #e3b46a
+    )
+  ),
+  oxblood: (
+    light: (
+      #962231,
+      '150, 34, 49',
+      #7d1c29,
+      #3f6152
+    ),
+    dark: (
+      #f2a0a9,
+      '242, 160, 169',
+      #f6b8bf,
+      #9cc3ae
+    )
+  ),
+  shino: (
+    light: (
+      #94501a,
+      '148, 80, 26',
+      #7c4216,
+      #4f5f6e
+    ),
+    dark: (
+      #f0b27a,
+      '240, 178, 122',
+      #f5c496,
+      #b0c0cf
+    )
+  ),
+  ash: (
+    light: (
+      #5a6136,
+      '90, 97, 54',
+      #4a502c,
+      #9c3d1f
+    ),
+    dark: (
+      #c5cc93,
+      '197, 204, 147',
+      #d4d9ab,
+      #e8956b
+    )
+  )
+);
+
+@mixin palette-tokens($colors) {
+  --gc-primary: #{list.nth($colors, 1)};
+  --gc-primary-rgb: #{list.nth($colors, 2)};
+  --gc-primary-hover: #{list.nth($colors, 3)};
+  --gc-accent: #{list.nth($colors, 4)};
+}
+
+@each $name, $modes in $palettes {
+  :root[data-palette='#{$name}'] {
+    @include palette-tokens(map.get($modes, light));
+  }
+  :root[data-palette='#{$name}'][data-theme='dark'] {
+    @include palette-tokens(map.get($modes, dark));
+  }
+  @media (prefers-color-scheme: dark) {
+    :root[data-palette='#{$name}']:not([data-theme='light']) {
+      @include palette-tokens(map.get($modes, dark));
+    }
   }
 }
 
@@ -408,6 +525,19 @@ main {
       text-align: left;
     }
   }
+}
+
+// Checked radio buttons and checkboxes in the palette's color. In dark the
+// palette's colors are light, so the dot and tick are dark (the on-primary color).
+.form-check-input:checked {
+  background-color: var(--gc-primary);
+  border-color: var(--gc-primary);
+}
+[data-bs-theme='dark'] .form-check-input:checked[type='radio'] {
+  --bs-form-check-bg-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%231e1a17'/%3e%3c/svg%3e");
+}
+[data-bs-theme='dark'] .form-check-input:checked[type='checkbox'] {
+  --bs-form-check-bg-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%231e1a17' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e");
 }
 
 // A field with a problem (shared/field-checks.ts): a thicker outline in the
@@ -1002,8 +1132,20 @@ code {
   @page {
     margin: 12mm;
   }
-  :root {
+  // More specific than the dark and palette rules above, so paper is always
+  // black on white, every color.
+  :root:is([data-theme], :not([data-theme])):is([data-palette], :not([data-palette])) {
     color-scheme: light;
+    --gc-primary: #000;
+    --gc-primary-rgb: 0, 0, 0;
+    --gc-primary-hover: #000;
+    --gc-on-primary: #fff;
+    --gc-accent: #000;
+    --gc-on-accent: #fff;
+    --gc-danger-bg: #fff;
+    --gc-danger-text: #000;
+    --gc-success-bg: #fff;
+    --gc-success-text: #000;
     --gc-bg: #fff;
     --gc-surface: #fff;
     --gc-surface-2: #fff;

@@ -6,6 +6,13 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Added
 
+- **Your own colors** ([#13](https://github.com/AaronFilson/glazecalc/issues/13)): Settings
+  chooses light, dark, or as the device is set, and a palette for buttons, links and tabs named
+  for glazes: tenmoku rust, celadon green, cobalt blue, oxblood red, shino orange or wood ash
+  olive. Each meets WCAG AA contrast in light and dark, checked by axe on every palette.
+  - Kept with the account, so they follow it to every device; this browser's copy is applied
+    before the page first paints, so it never flashes in the wrong colors.
+  - Printed recipes stay black on white.
 - **Problems show on the fields themselves**
   ([#9](https://github.com/AaronFilson/glazecalc/issues/9)), on every form: sign-in and sign-up,
   password reset and change, deleting the account, materials, additives, firing logs, notes,

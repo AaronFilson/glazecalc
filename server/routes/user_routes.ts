@@ -1,8 +1,8 @@
 // The signed-in account.
 //
 //   GET    /api/verify            who the session belongs to
-//   GET    /api/preferences       the account's (or trial's) choices: { weightUnit, gramPrecision }
-//   PUT    /api/preferences       any of { weightUnit: 'g' | 'lb', gramPrecision: 'single' | 'full' }
+//   GET    /api/preferences       the account's (or trial's) choices: { weightUnit, gramPrecision, theme, palette }
+//   PUT    /api/preferences       any of them (models/user.ts PREFERENCES lists what each may be)
 //   PUT    /api/usersettings/:id  { displayname, email, settings, password }
 //   DELETE /api/deleteuser/:id    { password } removes the account and everything in it
 import express, { type NextFunction, type Request, type Response } from 'express';
@@ -41,7 +41,9 @@ userRouter.get('/verify', tokenFilter, jwtAuth, (req, res) => {
 const PREFERENCE_NAMES = Object.keys(PREFERENCES) as Array<keyof Preferences>;
 const NOT_A_CHOICE: Record<keyof Preferences, string> = {
   weightUnit: 'Weights can be in grams (g) or pounds and ounces (lb).',
-  gramPrecision: 'Grams can show to a tenth (single) or in full (full).'
+  gramPrecision: 'Grams can show to a tenth (single) or in full (full).',
+  theme: 'The theme can follow the device (system), or be light or dark.',
+  palette: 'Choose one of the palettes: ' + PREFERENCES.palette.join(', ') + '.'
 };
 
 /** Every preference: the one chosen, or the default. */

@@ -1,11 +1,14 @@
 import { Component, OnInit, inject, signal } from '@angular/core';
 import { errorMessage } from '../../core/error-message';
 import { Preferences, PreferencesService } from '../../core/preferences.service';
+import { PALETTES } from '../../core/theme';
 
 interface Choice {
   value: string;
   label: string;
-  example: string;
+  example?: string;
+  /** A palette's color, light and dark. */
+  swatch?: readonly [string, string];
   /** Said once it is saved. */
   saved: string;
 }
@@ -20,6 +23,29 @@ interface Setting {
 }
 
 const SETTINGS: Setting[] = [
+  {
+    name: 'theme',
+    id: 'theme',
+    legend: 'Light or dark',
+    choices: [
+      { value: 'system', label: 'As this device is set', saved: 'Saved: light or dark as each device is set.' },
+      { value: 'light', label: 'Light', saved: 'Saved: always light.' },
+      { value: 'dark', label: 'Dark', saved: 'Saved: always dark.' }
+    ],
+    help: 'Printed recipes are always black on white.'
+  },
+  {
+    name: 'palette',
+    id: 'palette',
+    legend: 'Colors',
+    choices: PALETTES.map((palette) => ({
+      value: palette.value,
+      label: palette.label,
+      swatch: palette.swatch,
+      saved: `Saved: ${palette.label} buttons and links.`
+    })),
+    help: 'For buttons, links and tabs, named for glazes. Each is easy to read in light and in dark.'
+  },
   {
     name: 'weightUnit',
     id: 'weight-unit',
@@ -79,7 +105,17 @@ const SETTINGS: Setting[] = [
                 (change)="choose(setting, choice)"
               />
               <label class="form-check-label" [for]="setting.id + '-' + choice.value">
-                {{ choice.label }} <span class="muted">({{ choice.example }})</span>
+                @if (choice.swatch; as swatch) {
+                  <span
+                    class="swatch"
+                    aria-hidden="true"
+                    [style.background]="'linear-gradient(90deg, ' + swatch[0] + ' 50%, ' + swatch[1] + ' 50%)'"
+                  ></span>
+                }
+                {{ choice.label }}
+                @if (choice.example) {
+                  <span class="muted">({{ choice.example }})</span>
+                }
               </label>
             </div>
           }
@@ -92,6 +128,15 @@ const SETTINGS: Setting[] = [
   styles: `
     .settings-group + .settings-group {
       margin-top: 1rem;
+    }
+    .swatch {
+      display: inline-block;
+      width: 1.1em;
+      height: 1.1em;
+      border-radius: 50%;
+      border: 1px solid var(--gc-border);
+      vertical-align: -0.15em;
+      margin-right: 0.25rem;
     }
     .settings-status.is-problem {
       color: var(--gc-danger-text);

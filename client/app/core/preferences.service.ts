@@ -2,18 +2,23 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable, WritableSignal, inject, signal } from '@angular/core';
 import { firstValueFrom } from 'rxjs';
 import { GramPrecision, WeightUnit } from '../shared/weights';
+import type { Palette, ThemeMode } from './theme';
 import { API_BASE } from './api-base';
 import { AuthService } from './auth.service';
 
 export interface Preferences {
   weightUnit: WeightUnit;
   gramPrecision: GramPrecision;
+  theme: ThemeMode;
+  palette: Palette;
 }
 
 /** The values each preference may take; the first is the default (as on the server, models/user.ts). */
 const CHOICES: { [K in keyof Preferences]: ReadonlyArray<Preferences[K]> } = {
   weightUnit: ['g', 'lb'],
-  gramPrecision: ['single', 'full']
+  gramPrecision: ['single', 'full'],
+  theme: ['system', 'light', 'dark'],
+  palette: ['tenmoku', 'celadon', 'cobalt', 'oxblood', 'shino', 'ash']
 };
 const NAMES = Object.keys(CHOICES) as Array<keyof Preferences>;
 
@@ -46,16 +51,22 @@ export class PreferencesService {
   /** The sign-in the choices were fetched for, and the request. */
   private fetched: { session: number; request: Promise<void> } | null = null;
   /** Counts saves of each, so only the latest one's failure puts the old choice back. */
-  private readonly saves: Record<keyof Preferences, number> = { weightUnit: 0, gramPrecision: 0 };
+  private readonly saves: Record<keyof Preferences, number> = { weightUnit: 0, gramPrecision: 0, theme: 0, palette: 0 };
 
   /** Batch weights in grams, or in pounds and ounces. */
   readonly weightUnit = signal<WeightUnit>(readCopy('weightUnit'));
   /** Grams to a tenth, or in full. */
   readonly gramPrecision = signal<GramPrecision>(readCopy('gramPrecision'));
+  /** Light or dark, or as the device is set (core/theme.ts applies it). */
+  readonly theme = signal<ThemeMode>(readCopy('theme'));
+  /** The colors of buttons, links and tabs. */
+  readonly palette = signal<Palette>(readCopy('palette'));
 
   private readonly values: { [K in keyof Preferences]: WritableSignal<Preferences[K]> } = {
     weightUnit: this.weightUnit,
-    gramPrecision: this.gramPrecision
+    gramPrecision: this.gramPrecision,
+    theme: this.theme,
+    palette: this.palette
   };
 
   /** Fetches the account's choices, once per sign-in. If that fails, the copy on this browser stays. */

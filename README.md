@@ -32,6 +32,8 @@ materials, colorants, firing logs and notes together in one private notebook.
 - **Print it for the glaze room:** the whole recipe with its unity formula and analysis, or just
   a batch list to tick off while weighing, with a running total for weighing into one bucket. One
   page on Letter or A4; weights in grams, or in pounds and ounces as set in your account.
+- **Your own colors:** light, dark or as the device is set, and six palettes named for glazes,
+  each readable in both.
 - **A standard library of 109 materials and 34 colorants and additives,** from manufacturers'
   data sheets, US and UK, each with its source and other names, and hazards where the data sheet gives them. Discontinued materials
   stay for old recipes, each pointing to its modern replacement. Count colorants in the unity
@@ -54,7 +56,7 @@ For anyone reading the code:
   and put back online. The
   [case study](docs/case-study.md) tells how.
 - **Tested at three levels, in CI on every push:** 195 server tests (98% of statements) run
-  against the app in-process; 221 Angular unit tests (93%); 72 Playwright browser tests,
+  against the app in-process; 226 Angular unit tests (93%); 75 Playwright browser tests,
   including [axe](https://github.com/dequelabs/axe-core) accessibility checks of every page in
   light and dark mode.
 - **One glaze chemistry library** for the browser and the tests, checked against values worked

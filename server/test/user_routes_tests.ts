@@ -55,16 +55,25 @@ describe('user API', () => {
         .set('Authorization', 'Bearer ' + bearer)
         .send(body);
 
-    const DEFAULTS = { weightUnit: 'g', gramPrecision: 'single' };
+    const DEFAULTS = { weightUnit: 'g', gramPrecision: 'single', theme: 'system', palette: 'tenmoku' };
 
     it('start in grams to a tenth, and change one at a time', async () => {
       expect((await get(token)).body).to.eql(DEFAULTS);
       const res = await put(token, { weightUnit: 'lb' });
       expect(res).to.have.status(200);
-      expect(res.body).to.eql({ weightUnit: 'lb', gramPrecision: 'single' });
-      // A change to one leaves the other as it was.
-      expect((await put(token, { gramPrecision: 'full' })).body).to.eql({ weightUnit: 'lb', gramPrecision: 'full' });
-      expect((await get(token)).body).to.eql({ weightUnit: 'lb', gramPrecision: 'full' });
+      expect(res.body).to.eql({ ...DEFAULTS, weightUnit: 'lb' });
+      // A change to one leaves the others as they were.
+      expect((await put(token, { gramPrecision: 'full' })).body).to.eql({
+        ...DEFAULTS,
+        weightUnit: 'lb',
+        gramPrecision: 'full'
+      });
+      expect((await put(token, { theme: 'dark', palette: 'cobalt' })).body).to.eql({
+        weightUnit: 'lb',
+        gramPrecision: 'full',
+        theme: 'dark',
+        palette: 'cobalt'
+      });
       const saved = (await User.findById(user._id))?.preferences;
       expect([saved?.weightUnit, saved?.gramPrecision]).to.eql(['lb', 'full']);
     });
@@ -76,6 +85,8 @@ describe('user API', () => {
         { weightUnit: null },
         { weightUnit: 3 },
         { gramPrecision: 'double' },
+        { theme: 'sepia' },
+        { palette: 'neon' },
         // One good and one bad: nothing changes.
         { weightUnit: 'lb', gramPrecision: 2 }
       ]) {
@@ -85,7 +96,7 @@ describe('user API', () => {
       expect((await put(token, { gramPrecision: 'none' })).body.msg).to.equal(
         'Grams can show to a tenth (single) or in full (full).'
       );
-      expect((await put(token, { theme: 'dark' })).body.msg).to.equal('Nothing to change');
+      expect((await put(token, { font: 'serif' })).body.msg).to.equal('Nothing to change');
       expect((await get(token)).body).to.eql(DEFAULTS);
     });
 
@@ -93,7 +104,7 @@ describe('user API', () => {
       const trial = await api().post('/guest');
       const trialToken = sessionToken(trial) ?? '';
       expect(await put(trialToken, { weightUnit: 'lb' })).to.have.status(200);
-      expect((await get(trialToken)).body).to.eql({ weightUnit: 'lb', gramPrecision: 'single' });
+      expect((await get(trialToken)).body).to.eql({ ...DEFAULTS, weightUnit: 'lb' });
       expect(await api().get('/preferences')).to.have.status(401);
       expect(await api().put('/preferences').send({ weightUnit: 'lb' })).to.have.status(401);
     });

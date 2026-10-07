@@ -21,6 +21,24 @@ const expectNoProblems = async (page, label) => {
 const PUBLIC_PAGES = ['/', '/advice', '/about', '/privacy', '/signin', '/signup', '/forgot', '/no-such-page'];
 const APP_PAGES = ['/home', '/material', '/additive', '/firing', '/notes', '/advice', '/account', '/trash'];
 
+// The palettes in Settings, light and dark: contrast of buttons, links, tabs and choices.
+test('every palette, light and dark', async ({ page }) => {
+  test.setTimeout(120000);
+  await signUpAndSignIn(page);
+  for (const palette of ['tenmoku', 'celadon', 'cobalt', 'oxblood', 'shino', 'ash']) {
+    for (const theme of ['light', 'dark']) {
+      const res = await page.request.put(API + '/preferences', { data: { palette, theme } });
+      expect(res.ok()).toBe(true);
+      for (const path of ['/recipe', '/account']) {
+        await page.goto(path);
+        await expect(page.locator('html')).toHaveAttribute('data-theme', theme);
+        await expect(page.locator('h1')).toBeVisible();
+        await expectNoProblems(page, palette + ' ' + theme + ' ' + path);
+      }
+    }
+  }
+});
+
 for (const colorScheme of ['light', 'dark']) {
   test.describe(colorScheme + ' mode', () => {
     test.use({ colorScheme });

@@ -51,6 +51,14 @@
               "subresourceIntegrity": true,
               "security": {
                 "autoCsp": true
+              },
+              "optimization": {
+                "scripts": true,
+                "styles": {
+                  "minify": true,
+                  "inlineCritical": false
+                },
+                "fonts": true
               }
             },
             "development": {

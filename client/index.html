@@ -12,6 +12,32 @@
     <meta name="color-scheme" content="light dark" />
     <meta name="theme-color" content="#f7f3ec" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#1e1a17" media="(prefers-color-scheme: dark)" />
+    <!--
+      The colors chosen in Settings, from this browser's copy, before the first paint (core/theme.ts keeps
+      them in step once the app has started). Inline, so it runs before anything is drawn; the build's CSP
+      allows it by its hash. The stylesheet is not split for "critical" inlining (angular.json), so the
+      dark and palette rules are there for the first paint too.
+    -->
+    <script>
+      (() => {
+        try {
+          const root = document.documentElement;
+          const mode = localStorage.getItem('theme');
+          const palette = localStorage.getItem('palette');
+          if (mode === 'light' || mode === 'dark') root.setAttribute('data-theme', mode);
+          if (palette && palette !== 'tenmoku' && /^[a-z]+$/.test(palette)) root.setAttribute('data-palette', palette);
+          const dark = mode === 'dark' || (mode !== 'light' && matchMedia('(prefers-color-scheme: dark)').matches);
+          root.setAttribute('data-bs-theme', dark ? 'dark' : 'light');
+          if (mode === 'light' || mode === 'dark') {
+            for (const meta of document.querySelectorAll('meta[name="theme-color"]')) {
+              meta.setAttribute('content', mode === 'dark' ? '#1e1a17' : '#f7f3ec');
+            }
+          }
+        } catch {
+          // Without storage the page follows the device.
+        }
+      })();
+    </script>
     <link rel="icon" href="/favicon.ico" sizes="48x48" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />

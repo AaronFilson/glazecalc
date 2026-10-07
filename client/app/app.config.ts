@@ -5,6 +5,7 @@ import { routes } from './app.routes';
 import { sessionExpiredInterceptor } from './core/session-expired.interceptor';
 import { redirectLegacyHashUrl } from './core/legacy-hash-url';
 import { reloadIfCodeIsMissing } from './core/stale-build';
+import { watchTheme } from './core/theme';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -16,6 +17,8 @@ export const appConfig: ApplicationConfig = {
       routes,
       withNavigationErrorHandler((error) => reloadIfCodeIsMissing(error))
     ),
-    provideHttpClient(withFetch(), withInterceptors([sessionExpiredInterceptor]))
+    provideHttpClient(withFetch(), withInterceptors([sessionExpiredInterceptor])),
+    // The colors chosen in Settings, light, dark or as the device is set.
+    provideAppInitializer(() => watchTheme())
   ]
 };

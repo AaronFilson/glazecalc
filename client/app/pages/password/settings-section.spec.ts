@@ -47,6 +47,35 @@ describe('SettingsSection', () => {
     expect(localStorage.getItem('gramPrecision')).toBe('full');
   });
 
+  it('offers light, dark or as the device is set, and palettes named for glazes', async () => {
+    const { fixture } = await create();
+    const labels = (name: string) =>
+      [...fixture.nativeElement.querySelectorAll(`input[name="${name}"]`)].map((input: HTMLInputElement) =>
+        fixture.nativeElement.querySelector(`label[for="${input.id}"]`)?.textContent?.replace(/\s+/g, ' ').trim()
+      );
+    expect(labels('theme')).toEqual(['As this device is set', 'Light', 'Dark']);
+    expect(labels('palette')).toEqual([
+      'Tenmoku rust',
+      'Celadon green',
+      'Cobalt blue',
+      'Oxblood red',
+      'Shino orange',
+      'Wood ash olive'
+    ]);
+    expect((fixture.nativeElement.querySelector('#theme-system') as HTMLInputElement).checked).toBe(true);
+    // Each palette shows its light and dark color, hidden from screen readers.
+    const swatch = fixture.nativeElement.querySelector('label[for="palette-cobalt"] .swatch') as HTMLElement;
+    expect(swatch.getAttribute('aria-hidden')).toBe('true');
+
+    (fixture.nativeElement.querySelector('#palette-cobalt') as HTMLInputElement).click();
+    await fixture.whenStable();
+    const req = httpMock().expectOne(API + '/preferences');
+    expect(req.request.body).toEqual({ palette: 'cobalt' });
+    req.flush({});
+    await settle(fixture);
+    expect(text(fixture, '.settings-status')).toBe('Saved: Cobalt blue buttons and links.');
+  });
+
   it('says when the choice could not be saved, and shows the one still in place', async () => {
     const { fixture, radio } = await create();
     radio('g').click();

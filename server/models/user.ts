@@ -11,10 +11,14 @@ export type TokenLifetime = `${number}d`;
  * first is the default.
  *   weightUnit     batch weights in grams, or in pounds and ounces
  *   gramPrecision  grams to a tenth (hundredths under 10 g), or in full
+ *   theme          light or dark as the device is set, or always one
+ *   palette        the colors of buttons, links and tabs, named for glazes
  */
 export const PREFERENCES = {
   weightUnit: ['g', 'lb'],
-  gramPrecision: ['single', 'full']
+  gramPrecision: ['single', 'full'],
+  theme: ['system', 'light', 'dark'],
+  palette: ['tenmoku', 'celadon', 'cobalt', 'oxblood', 'shino', 'ash']
 } as const;
 export type Preferences = { -readonly [K in keyof typeof PREFERENCES]: (typeof PREFERENCES)[K][number] };
 
@@ -56,7 +60,9 @@ const userSchema = new mongoose.Schema<UserFields, UserModel, UserMethods>({
   settings: [String],
   preferences: {
     weightUnit: { type: String, enum: PREFERENCES.weightUnit },
-    gramPrecision: { type: String, enum: PREFERENCES.gramPrecision }
+    gramPrecision: { type: String, enum: PREFERENCES.gramPrecision },
+    theme: { type: String, enum: PREFERENCES.theme },
+    palette: { type: String, enum: PREFERENCES.palette }
   },
   tokenVersion: { type: Number, default: 0 },
   guest: Boolean,
