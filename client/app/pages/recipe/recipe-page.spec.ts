@@ -184,13 +184,13 @@ describe('RecipePage', () => {
       fields: [{ name: 'Fe', amount: '100' }],
       amount: '3'
     };
-    const veegum: Additive = { name: 'Veegum T', chemistryOf: 'bentonite', fields: [], amount: '2' };
+    const veegum: Additive = { name: 'Suspender blend', chemistryOf: 'bentonite', fields: [], amount: '2' };
     const result = evaluate(base, [stain, odd, veegum], {
       includeAdditives: true,
       chemistryOf: (name) => (name === 'bentonite' ? BENTONITE : undefined)
     });
     expect(result.warnings).toEqual(['Odd ochre has no oxide analysis the unity formula can use, so it is left out.']);
-    // Veegum counts as bentonite: it brings magnesia.
+    // The blend counts as bentonite: it brings magnesia.
     expect(result.analysis?.uList['MgO']).toBeGreaterThan(0);
     // Left out, nothing is counted or warned about.
     expect(evaluate(base, [stain, odd, veegum]).warnings).toEqual([]);

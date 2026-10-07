@@ -343,7 +343,7 @@ export class RecipeCompare implements OnDestroy {
   readonly leftKey = input('');
   readonly rightKey = input('');
   readonly choices = input<CompareChoice[]>([]);
-  /** The chemistry an additive borrows by name, as Veegum borrows bentonite's. */
+  /** The chemistry an additive borrows by name (chemistryOf), for one with no analysis of its own. */
   readonly chemistryOf = input<(name: string) => MaterialInput | undefined>();
   readonly choose = output<{ side: 'left' | 'right'; key: string }>();
   readonly back = output<void>();

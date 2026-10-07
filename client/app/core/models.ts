@@ -21,7 +21,7 @@ export interface LibraryInfo {
   source?: { name: string; url?: string; date?: string; kind?: string };
   /** Adds nothing to the unity formula: stains, gums, silicon carbide. */
   noChemistry?: boolean;
-  /** Uses another record's chemistry, as Veegum uses bentonite's. */
+  /** Uses another record's chemistry, named here, for one with no analysis of its own. */
   chemistryOf?: string;
 }
 

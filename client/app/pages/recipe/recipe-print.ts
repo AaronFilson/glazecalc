@@ -666,7 +666,7 @@ export class RecipePrint implements OnInit, OnDestroy {
   private titleBefore = '';
 
   readonly recipe = input.required<Recipe>();
-  /** The chemistry an additive borrows by name, as Veegum borrows bentonite's. */
+  /** The chemistry an additive borrows by name (chemistryOf), for one with no analysis of its own. */
   readonly chemistryOf = input<(name: string) => MaterialInput | undefined>();
   readonly back = output<void>();
 

@@ -37,8 +37,8 @@ materials, colorants, firing logs and notes together in one private notebook.
   page on Letter or A4; weights in grams, or in pounds and ounces as set in your account.
 - **Your own colors:** light, dark or as the device is set, and six palettes named for glazes,
   each readable in both.
-- **A standard library of 109 materials and 34 colorants and additives,** from manufacturers'
-  data sheets, US and UK, each with its source and other names, and hazards where the data sheet gives them. Discontinued materials
+- **A standard library of 148 materials and 36 colorants and additives,** from manufacturers'
+  data sheets, US, UK and EU, each with its source and other names, and hazards where the data sheet gives them. Discontinued materials
   stay for old recipes, each pointing to its modern replacement. Count colorants in the unity
   formula or leave them out, to compare with other calculators.
 - **Your own materials,** from a chemical formula or a supplier's analysis, and colorants and

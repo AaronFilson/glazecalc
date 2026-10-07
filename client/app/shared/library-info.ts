@@ -5,7 +5,8 @@ import { LibraryInfo } from '../core/models';
 export const REGIONS: ReadonlyArray<{ value: string; label: string }> = [
   { value: '', label: 'All regions' },
   { value: 'US', label: 'US' },
-  { value: 'UK', label: 'UK' }
+  { value: 'UK', label: 'UK' },
+  { value: 'EU', label: 'EU' }
 ];
 
 const REGION_KEY = 'region';

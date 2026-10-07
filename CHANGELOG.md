@@ -53,7 +53,7 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   - Batch weights in grams, or in pounds and ounces (2 lb 3.5 oz). The print view can change
     this as well.
   - Grams to a tenth (4938.2 g, with hundredths under 10 g), or in full (4938.23517 g).
-- **A larger standard library: 109 materials and 34 additives**, from manufacturers' data sheets
+- **A larger standard library: 148 materials and 36 additives**, from manufacturers' data sheets
   where they exist (ADR 0009).
   - **Modern replacements for every discontinued material:** G-200 EU and Mahavir for Custer,
     Oxford and G-200; Minspar 200 for Kona F-4; Alberta Slip for Albany slip; Gillespie Borate
@@ -61,6 +61,13 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
     substitutes.
   - **More US materials:** Ferro (Vibrantz) and Fusion frits, nepheline syenite A270,
     wollastonite, ball clays and others.
+  - **An EU set:** German, French, Spanish, Italian, Swiss and Swedish feldspars (Sibelco
+    Norflux, Bodmer, Ceradel, Prodesco, Sila); Zettlitz and other European kaolins, a Westerwald
+    and a Sibelco ball clay, and two bentonites; and the frits German and Dutch recipes name by
+    number: Vibrantz (ex-Degussa) 90xxx, Mondré & Manz, Reimbold & Strick and Keramikos,
+    including clearly marked lead frits. Grolleg, Molochite, Hyplas 71, Sibelco FFF, the
+    nepheline syenites, H&G Cornwall Stone and the Ferro frits are marked as sold in the EU too,
+    and "Sold in" offers EU.
   - **A UK set:** Grolleg, Molochite, Hyplas 71, UK feldspars, and borax, alkaline, calcium
     borate, low-expansion and lead frits.
   - **More additives:** bentonite, zircon, Veegum, Macaloid, carbonates and more.
@@ -145,8 +152,17 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Fixed
 
+- **Library data, checked against data sheets and safety sheets:**
+  - Every material and additive now has a hazard line from its safety data sheet (47 had none),
+    and 18 more sources carry their date.
+  - Black cobalt oxide counts as 92.7% CoO with 6.3% lost in firing (it was 90.9% and 8.2%).
+  - Potclays' low-expansion frit has 1.1% lithium oxide, not 0.1%; CTM's calcium borate frit uses
+    the analysis CTM printed from 2016 on.
+  - Veegum T has its own magnesium-rich analysis instead of bentonite's.
+  - Discontinued years for Kona F-4 (2009), Oxford Spar and lepidolite (by 1997), Godfrey Spar
+    (by 1999, and a potash feldspar, not soda) and CTM's calcium borate frit (by 2025).
+
 - Corrected from data sheets:
-  - Cobalt oxide is 91% CoO, not 100%.
   - Cobalt carbonate is 58% CoO.
   - Copper carbonate is 70% CuO.
   - Rutile is about 95% TiO₂ with under 1% iron.

@@ -33,7 +33,14 @@ them with recipes made from today's.
 - **Colorants and additives carry their chemistry** as materials do: fired oxides, LOI and
   weights. That lets a recipe choose whether its unity formula counts them, since calculators
   differ on this.
-- **Regions grow one at a time.** The US and UK are first; the EU, then Australia, come next.
+- **Regions grow one at a time.** The US and UK came first, then the EU (October 2026); Australia
+  comes next.
+- **New records are added, never regenerated.** `scripts/add-library-records.js` takes the
+  gathered records (a JSON array: name, other names, kind, category, region, status, source with
+  its date and kind, fired-oxide analysis and LOI, notes and hazards), checks that each analysis
+  comes to 100% within 2% and that its oxides are known, works out the chemistry as the materials
+  page does, and appends the records. Records already there keep their ids, so a region added
+  later changes nothing for the ones before it.
 - `npm run seed` replaces standard records by id and removes those no longer in `data/`, so a
   deploy that changes the data updates the database.
 
@@ -48,7 +55,7 @@ them with recipes made from today's.
 
 ## Consequences
 
-- The library is now 109 materials and 34 additives. The pages filter by name or alias, kind and
+- The library is now 148 materials and 36 additives. The pages filter by name or alias, kind and
   region, and remember the region chosen.
 - Data sheets change and suppliers come and go, so each record's source and date show how old it
   is. Updating an entry means finding a newer sheet, not copying another tool.

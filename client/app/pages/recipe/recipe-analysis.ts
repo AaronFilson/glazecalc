@@ -20,7 +20,7 @@ export interface Evaluation {
 export interface EvaluateOptions {
   /** Count the colorants and additives in the unity formula too. */
   includeAdditives?: boolean;
-  /** The chemistry an additive borrows by name, as Veegum borrows bentonite's. */
+  /** The chemistry an additive borrows by name (chemistryOf), for one with no analysis of its own. */
   chemistryOf?: (name: string) => MaterialInput | undefined;
 }
 

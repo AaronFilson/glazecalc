@@ -47,6 +47,14 @@ test('narrows the standard materials by kind and region, and says what replaced 
   // A US-only frit is left out (though another row may name it as similar); one sold in both is not.
   await expect(row('Fusion Frit F-19')).toHaveCount(0);
   await expect(row('Ferro Frit 3134')).toHaveCount(1);
+
+  // The EU: German frits by number, and the Ferro frits sold there too; not US-only ones.
+  await tools.getByLabel('Sold in').selectOption('EU');
+  await expect(row('Vibrantz Frit 90167')).toHaveCount(1);
+  await expect(row('Mondré & Manz Calcium Borate Frit M 9152')).toHaveCount(1);
+  await expect(row('Ferro Frit 3134')).toHaveCount(1);
+  await expect(row('Fusion Frit F-19')).toHaveCount(0);
+  await expect(row('Standard Borax Frit')).toHaveCount(0);
 });
 
 test('saves a molecular formula and calculates its weights from the LOI', async ({ page }) => {
