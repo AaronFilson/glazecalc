@@ -63,6 +63,24 @@ for (const colorScheme of ['light', 'dark']) {
         await expect(page.locator('h1')).toBeVisible();
         await expectNoProblems(page, colorScheme + ' ' + path);
       }
+      // A saved record's Remove question, open.
+      const note = { title: 'Kiln', content: 'Element 3', relatedCollection: 'Notes', relatedId: 'general notes' };
+      expect((await page.request.post(API + '/notes/create', { data: note })).ok()).toBeTruthy();
+      await page.goto('/notes');
+      await page.getByRole('button', { name: 'Remove Kiln' }).click();
+      await expect(page.getByRole('button', { name: 'Yes, remove' })).toBeVisible();
+      await expectNoProblems(page, colorScheme + ' remove question');
+      // The phone menu, open.
+      await page.setViewportSize({ width: 390, height: 844 });
+      await page.getByRole('button', { name: 'Menu' }).click();
+      await expectNoProblems(page, colorScheme + ' phone menu');
+    });
+
+    // The recipe page in each of its states. It is the heaviest page to check (every
+    // standard material is listed), so it has its own test and more time.
+    test('the recipe page: a result, printing, comparing, problems and questions', async ({ page }) => {
+      test.setTimeout(90000);
+      await signUpAndSignIn(page);
       // The calculator with a recipe worked out.
       await page.goto('/recipe');
       await addStandardMaterial(page, 'Whiting', 20);
@@ -91,17 +109,6 @@ for (const colorScheme of ['light', 'dark']) {
       await page.getByRole('button', { name: 'New recipe' }).click();
       await expect(page.getByRole('button', { name: 'Keep editing' })).toBeFocused();
       await expectNoProblems(page, colorScheme + ' /recipe unsaved question');
-      // A saved record's Remove question, open.
-      const note = { title: 'Kiln', content: 'Element 3', relatedCollection: 'Notes', relatedId: 'general notes' };
-      expect((await page.request.post(API + '/notes/create', { data: note })).ok()).toBeTruthy();
-      await page.goto('/notes');
-      await page.getByRole('button', { name: 'Remove Kiln' }).click();
-      await expect(page.getByRole('button', { name: 'Yes, remove' })).toBeVisible();
-      await expectNoProblems(page, colorScheme + ' remove question');
-      // The phone menu, open.
-      await page.setViewportSize({ width: 390, height: 844 });
-      await page.getByRole('button', { name: 'Menu' }).click();
-      await expectNoProblems(page, colorScheme + ' phone menu');
     });
 
     test('a trial', async ({ page }) => {

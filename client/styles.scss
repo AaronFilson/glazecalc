@@ -686,8 +686,15 @@ main .form-control.is-invalid {
   }
 }
 
-// The narrowest phones (320px): tighter cells, so a recipe's rows fit across.
+// The narrowest phones (320px): tighter panels and cells, and long material
+// names may break anywhere, so a recipe's rows fit across whatever the fonts.
 @media (max-width: 399.98px) {
+  .panel {
+    padding: 1rem 0.75rem;
+  }
+  .recipe-table tbody th {
+    overflow-wrap: anywhere;
+  }
   .recipe-table {
     th,
     td {
