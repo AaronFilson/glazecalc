@@ -15,8 +15,12 @@ WORK=$CACHE/app
 
 # An image of CI's Ubuntu with Node and Playwright's Chromium, built once for each
 # Ubuntu and Playwright version.
-PLAYWRIGHT=$(tar -xOf "$TAR" package.json | grep -o '"@playwright/test": *"[^"]*"' | grep -o '[0-9][0-9.]*')
-UBUNTU=$(tar -xOf "$TAR" .github/workflows/ci.yml | grep -m1 -o 'runs-on: ubuntu-[0-9.]*' | grep -o '[0-9][0-9.]*')
+# Each file is read whole before it is searched: grep stopping early would cut
+# tar off mid-write, and pipefail would end the script.
+PACKAGE=$(tar -xOf "$TAR" package.json)
+CI=$(tar -xOf "$TAR" .github/workflows/ci.yml)
+PLAYWRIGHT=$(grep -o '"@playwright/test": *"[^"]*"' <<<"$PACKAGE" | grep -o '[0-9][0-9.]*')
+UBUNTU=$(sed -n 's/.*runs-on: ubuntu-\([0-9.]*\).*/\1/p' <<<"$CI" | sed -n 1p)
 IMAGE=glazecalc-e2e:ubuntu$UBUNTU-playwright$PLAYWRIGHT
 if ! docker image inspect "$IMAGE" >/dev/null 2>&1; then
   echo "Building $IMAGE, once for this Ubuntu and Playwright..."

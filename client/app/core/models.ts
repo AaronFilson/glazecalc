@@ -7,9 +7,23 @@ export interface Owned {
 }
 
 /** What a standard material or additive is and where its numbers come from (server/models/library_info.ts). */
+/** A frit's job, from its maker's stated use (research_notes/Base frits for lead free glazes). */
+export type FritRole =
+  | 'base'
+  | 'base-alkaline'
+  | 'alkali'
+  | 'boron'
+  | 'low-expansion'
+  | 'opacified'
+  | 'zinc'
+  | 'matte'
+  | 'stoneware'
+  | 'lead';
+
 export interface LibraryInfo {
   aliases?: string[];
   category?: string;
+  fritRole?: FritRole;
   region?: string[];
   status?: 'current' | 'scarce' | 'discontinued' | 'historical';
   statusSince?: string;
@@ -23,6 +37,10 @@ export interface LibraryInfo {
   noChemistry?: boolean;
   /** Uses another record's chemistry, named here, for one with no analysis of its own. */
   chemistryOf?: string;
+  /** Dissolves in water (borax, boric acid, soda ash): not suggested, though it can be added. */
+  soluble?: boolean;
+  /** Releases fluorine in firing (fluorspar, cryolite): not suggested, though it can be added. */
+  fluorine?: boolean;
 }
 
 export interface Material extends Owned, LibraryInfo {

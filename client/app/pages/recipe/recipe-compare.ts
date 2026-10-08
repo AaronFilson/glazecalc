@@ -80,6 +80,8 @@ const COUNTING: ReadonlyArray<{ value: Counting; label: string }> = [
         <button type="button" class="btn btn-primary" (click)="print()">Print</button>
         <button type="button" class="btn btn-light border" (click)="back.emit()">Back to the recipe</button>
       </div>
+      <!-- How a new recipe was made, when the page has one to show. -->
+      <ng-content />
     </section>
 
     <article class="compare-sheet" aria-labelledby="compare-title">

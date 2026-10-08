@@ -11,14 +11,19 @@ export interface Preferences {
   gramPrecision: GramPrecision;
   theme: ThemeMode;
   palette: Palette;
+  lead: LeadChoice;
 }
+
+/** Whether materials with lead may be added to recipes and suggested: off unless chosen. */
+export type LeadChoice = 'off' | 'on';
 
 /** The values each preference may take; the first is the default (as on the server, models/user.ts). */
 const CHOICES: { [K in keyof Preferences]: ReadonlyArray<Preferences[K]> } = {
   weightUnit: ['g', 'lb'],
   gramPrecision: ['single', 'full'],
   theme: ['system', 'light', 'dark'],
-  palette: ['tenmoku', 'celadon', 'cobalt', 'oxblood', 'shino', 'ash']
+  palette: ['tenmoku', 'celadon', 'cobalt', 'oxblood', 'shino', 'ash'],
+  lead: ['off', 'on']
 };
 const NAMES = Object.keys(CHOICES) as Array<keyof Preferences>;
 
@@ -51,7 +56,13 @@ export class PreferencesService {
   /** The sign-in the choices were fetched for, and the request. */
   private fetched: { session: number; request: Promise<void> } | null = null;
   /** Counts saves of each, so only the latest one's failure puts the old choice back. */
-  private readonly saves: Record<keyof Preferences, number> = { weightUnit: 0, gramPrecision: 0, theme: 0, palette: 0 };
+  private readonly saves: Record<keyof Preferences, number> = {
+    weightUnit: 0,
+    gramPrecision: 0,
+    theme: 0,
+    palette: 0,
+    lead: 0
+  };
 
   /** Batch weights in grams, or in pounds and ounces. */
   readonly weightUnit = signal<WeightUnit>(readCopy('weightUnit'));
@@ -61,12 +72,15 @@ export class PreferencesService {
   readonly theme = signal<ThemeMode>(readCopy('theme'));
   /** The colors of buttons, links and tabs. */
   readonly palette = signal<Palette>(readCopy('palette'));
+  /** Whether materials with lead may be added to recipes and suggested. */
+  readonly lead = signal<LeadChoice>(readCopy('lead'));
 
   private readonly values: { [K in keyof Preferences]: WritableSignal<Preferences[K]> } = {
     weightUnit: this.weightUnit,
     gramPrecision: this.gramPrecision,
     theme: this.theme,
-    palette: this.palette
+    palette: this.palette,
+    lead: this.lead
   };
 
   /** Fetches the account's choices, once per sign-in. If that fails, the copy on this browser stays. */

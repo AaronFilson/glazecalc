@@ -13,7 +13,8 @@ const APP_PAGES = [
   { path: '/additive', label: 'Additives' },
   { path: '/firing', label: 'Firing logs' },
   { path: '/notes', label: 'Notes' },
-  { path: '/advice', label: 'Advice' }
+  { path: '/advice', label: 'Advice' },
+  { path: '/guides', label: 'Guides' }
 ];
 
 @Component({
@@ -63,6 +64,7 @@ const APP_PAGES = [
             </div>
           } @else {
             <ul class="nav-links">
+              <li><a routerLink="/guides" routerLinkActive="active" ariaCurrentWhenActive="page">Guides</a></li>
               <li><a routerLink="/advice" routerLinkActive="active" ariaCurrentWhenActive="page">Advice</a></li>
               <li><a routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page">About</a></li>
             </ul>
@@ -120,6 +122,7 @@ const APP_PAGES = [
       <footer class="app-footer">
         <nav aria-label="Site">
           <a routerLink="/about">About</a>
+          <a routerLink="/guides">Guides</a>
           <a routerLink="/advice">Glaze advice</a>
           <a routerLink="/privacy">Privacy</a>
           <a href="https://github.com/AaronFilson/glazecalc">Source code</a>

@@ -76,6 +76,47 @@ describe('SettingsSection', () => {
     expect(text(fixture, '.settings-status')).toBe('Saved: Cobalt blue buttons and links.');
   });
 
+  it('keeps lead off unless its warning is confirmed', async () => {
+    const { fixture } = await create();
+    const lead = (value: string) => fixture.nativeElement.querySelector('#lead-' + value) as HTMLInputElement;
+    // Off unless chosen.
+    expect(lead('off').checked).toBe(true);
+
+    // Choosing On asks first, and saves nothing yet.
+    lead('on').click();
+    await settle(fixture);
+    httpMock().expectNone(API + '/preferences');
+    expect(document.activeElement?.id).toBe('lead-confirm');
+    expect(text(fixture, '#lead-confirm')).toContain('Use lead only as a frit');
+    const button = (label: string) =>
+      [...fixture.nativeElement.querySelectorAll('.settings-confirm button')].find(
+        (b: HTMLButtonElement) => b.textContent?.trim() === label
+      ) as HTMLButtonElement;
+
+    // Keep it off: Off again, with the focus on it.
+    button('Keep it off').click();
+    await settle(fixture);
+    expect(fixture.nativeElement.querySelector('.settings-confirm')).toBeNull();
+    expect(lead('off').checked).toBe(true);
+    expect(document.activeElement?.id).toBe('lead-off');
+
+    // Turn lead on: saved.
+    lead('on').click();
+    await settle(fixture);
+    button('Turn lead on').click();
+    await fixture.whenStable();
+    const req = httpMock().expectOne(API + '/preferences');
+    expect(req.request.body).toEqual({ lead: 'on' });
+    req.flush({ weightUnit: 'lb', lead: 'on' });
+    await settle(fixture);
+    expect(text(fixture, '.settings-status')).toBe('Saved: materials with lead can be added and suggested.');
+
+    // Turning it off needs no question.
+    lead('off').click();
+    await fixture.whenStable();
+    expect(httpMock().expectOne(API + '/preferences').request.body).toEqual({ lead: 'off' });
+  });
+
   it('says when the choice could not be saved, and shows the one still in place', async () => {
     const { fixture, radio } = await create();
     radio('g').click();

@@ -77,7 +77,18 @@ themselves; and light, dark and six palettes named for glazes.
   that is gone names what is used now, and can swap it in and compare the two. The hard part was not overclaiming: a swap counts as
   like for like only when the two give much the same oxides gram for gram. Niter to a frit does
   not, so the app says to work the amount out again, and it says so when a replacement still has
-  lead.
+  lead. It can also work the amounts out: a weighted least-squares fit to the old unity formula,
+  pulled back toward the recipe as it was so it changes as few amounts as it can
+  ([ADR 10](adr/0010-suggested-amounts.md)). When the new material cannot bring an oxide back,
+  it asks which material should, rather than choosing for the potter.
+- **Lead, with no rule to convert it.** Old recipes use red lead and lead frits, and nothing
+  lead-free supplies lead oxide, so matching the old formula put in no frit at all. Research found
+  no published conversion ratio; what works is to keep the glaze's silica and alumina, give lead's
+  share of the fluxes to soda, potash and calcium, and set boron by the firing temperature (Matt
+  Katz's rule, about 0.5 at cone 04). Replace lead does that from the lead-free frits sold in the
+  potter's region, or keeps the colour on a frit and kaolin base, and Compare shows the calculated
+  expansion, since crazing is what converted glazes most often do. Lead is off unless chosen, and
+  turning it on asks first ([ADR 11](adr/0011-replacing-lead.md)).
 - **Colors before the first paint.** A saved dark theme has to apply before Angular starts, or the
   page flashes white first. A few lines of script in index.html apply it from the browser's copy,
   and the Content Security Policy allows them by hash rather than allowing inline scripts in
@@ -97,8 +108,8 @@ themselves; and light, dark and six palettes named for glazes.
 
 | Measure                          | 2017                  | Now                                                    |
 | -------------------------------- | --------------------- | ------------------------------------------------------ |
-| Automated tests                  | basic API route tests | 522: server, Angular unit and browser, with axe checks |
-| Server statement coverage        | not measured          | 98.5%                                                  |
+| Automated tests                  | basic API route tests | 600: server, Angular unit and browser, with axe checks |
+| Server statement coverage        | not measured          | 98.4%                                                  |
 | Standard materials and colorants | 53, from one book     | 204, each with a source and a status                   |
 | Deploys                          | SSH and restart       | approved click, keyless, rolls back on a failed check  |
 | Monthly cost                     | $15-17                | about $13                                              |
@@ -106,5 +117,4 @@ themselves; and light, dark and six palettes named for glazes.
 
 ## What I would do next
 
-- When a swap is not like for like, suggest amounts that bring the unity formula back.
 - Give the recipe form a fuller redesign.

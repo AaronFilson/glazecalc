@@ -18,6 +18,36 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/advice/advice-page').then((m) => m.AdvicePage)
   },
   {
+    path: 'guides',
+    title: 'Guides - ' + SITE,
+    loadComponent: () => import('./pages/guides/guides-page').then((m) => m.GuidesPage)
+  },
+  {
+    path: 'guides/glazing-basics',
+    title: 'Glazing from first principles - ' + SITE,
+    loadComponent: () => import('./pages/guides/glazing-basics').then((m) => m.GlazingBasicsGuide)
+  },
+  {
+    path: 'guides/making-a-glaze',
+    title: 'How to make a glaze - ' + SITE,
+    loadComponent: () => import('./pages/guides/making-a-glaze').then((m) => m.MakingAGlazeGuide)
+  },
+  {
+    path: 'guides/safe-mixing',
+    title: 'Safe mixing and ventilation - ' + SITE,
+    loadComponent: () => import('./pages/guides/safe-mixing').then((m) => m.SafeMixingGuide)
+  },
+  {
+    path: 'guides/home-safety',
+    title: "Don't poison your family - " + SITE,
+    loadComponent: () => import('./pages/guides/home-safety').then((m) => m.HomeSafetyGuide)
+  },
+  {
+    path: 'guides/firing',
+    title: 'Firing a basic kiln - ' + SITE,
+    loadComponent: () => import('./pages/guides/firing-guide').then((m) => m.FiringGuide)
+  },
+  {
     path: 'about',
     title: 'About - ' + SITE,
     loadComponent: () => import('./pages/about/about-page').then((m) => m.AboutPage)

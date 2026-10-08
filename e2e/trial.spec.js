@@ -119,7 +119,7 @@ test('the sign-in lives in a cookie that scripts on the page cannot read', async
   expect(session).toMatchObject({ httpOnly: true, sameSite: 'Strict', path: '/api' });
   expect(await page.evaluate(() => globalThis.document.cookie)).not.toContain('glazecalc_session');
   // A note that there is a session, the trial's name, and the display settings' copies: nothing that signs in.
-  const settings = ['gramPrecision', 'palette', 'theme', 'weightUnit'];
+  const settings = ['gramPrecision', 'lead', 'palette', 'theme', 'weightUnit'];
   const stored = await page.evaluate(() => Object.keys(localStorage).sort());
   expect(stored.filter((key) => !settings.includes(key))).toEqual(['session', 'trial']);
 });

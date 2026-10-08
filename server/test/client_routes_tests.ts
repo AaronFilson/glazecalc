@@ -12,7 +12,7 @@ describe('client routes', function () {
   });
 
   it('sends index.html for the app pages, never cached', async () => {
-    for (const page of ['/', '/recipe', '/reset', '/advice', '/no-such-page']) {
+    for (const page of ['/', '/recipe', '/reset', '/advice', '/guides/firing', '/no-such-page']) {
       const res = await site().get(page);
       expect(res, page).to.have.status(200);
       // eslint-disable-next-line @typescript-eslint/no-unused-expressions -- chai-http's property assertion

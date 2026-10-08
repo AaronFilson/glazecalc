@@ -30,9 +30,12 @@ const amount = (page, name) => page.getByRole('textbox', { name: 'Amount of ' + 
 test.beforeEach(async ({ page }) => {
   await signUpAndSignIn(page);
   await page.goto('/recipe');
-  // The standard materials have loaded into the library.
+  // The standard materials have loaded into the library: all but those with lead, which is off unless chosen.
+  const withoutLead = standardData
+    .load('materials')
+    .filter((m) => !m.fields.some((field) => field.name === 'PbO' && Number(field.amount) > 0));
   await expect(page.locator('.library', { hasText: 'Add materials' })).toContainText(
-    `Standard (${standardData.load('materials').length})`
+    `Standard (${withoutLead.length})`
   );
 });
 

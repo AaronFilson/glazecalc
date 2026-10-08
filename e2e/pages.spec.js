@@ -25,7 +25,8 @@ test.describe('home and navigation', () => {
     ['Additives', 'additive', 'Additives and colorants'],
     ['Firing logs', 'firing', 'Firing logs'],
     ['Notes', 'notes', 'Notes'],
-    ['Advice', 'advice', 'Glaze advice']
+    ['Advice', 'advice', 'Glaze advice'],
+    ['Guides', 'guides', 'Guides']
   ];
 
   test('the menu reaches every page, and the brand goes home', async ({ page }) => {
@@ -67,6 +68,12 @@ test.describe('home and navigation', () => {
     const visitor = await browser.newPage();
     for (const [path, heading] of [
       ['/advice', 'Glaze advice'],
+      ['/guides', 'Guides'],
+      ['/guides/glazing-basics', 'Glazing from first principles'],
+      ['/guides/making-a-glaze', 'How to make a glaze'],
+      ['/guides/safe-mixing', 'Safe mixing and ventilation'],
+      ['/guides/home-safety', "Don't poison your family"],
+      ['/guides/firing', 'Firing a basic kiln'],
       ['/about', 'About Glazecalc'],
       ['/privacy', 'Privacy']
     ]) {

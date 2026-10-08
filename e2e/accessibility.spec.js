@@ -18,7 +18,25 @@ const expectNoProblems = async (page, label) => {
   expect(problems, label).toEqual([]);
 };
 
-const PUBLIC_PAGES = ['/', '/advice', '/about', '/privacy', '/signin', '/signup', '/forgot', '/no-such-page'];
+const GUIDES = [
+  '/guides',
+  '/guides/glazing-basics',
+  '/guides/making-a-glaze',
+  '/guides/safe-mixing',
+  '/guides/home-safety',
+  '/guides/firing'
+];
+const PUBLIC_PAGES = [
+  '/',
+  '/advice',
+  '/about',
+  ...GUIDES,
+  '/privacy',
+  '/signin',
+  '/signup',
+  '/forgot',
+  '/no-such-page'
+];
 const APP_PAGES = ['/home', '/material', '/additive', '/firing', '/notes', '/advice', '/account', '/trash'];
 
 // The palettes in Settings, light and dark: contrast of buttons, links, tabs and choices.

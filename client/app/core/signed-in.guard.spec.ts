@@ -74,6 +74,20 @@ describe('signedInGuard and visitorsOnlyGuard', () => {
 
   it('keeps the public pages public', () => {
     const open = routes.filter((r) => !r.canActivate?.length && r.path !== '**').map((r) => r.path);
-    expect(open).toEqual(['advice', 'about', 'privacy', 'signin', 'signup', 'forgot', 'reset']);
+    expect(open).toEqual([
+      'advice',
+      'guides',
+      'guides/glazing-basics',
+      'guides/making-a-glaze',
+      'guides/safe-mixing',
+      'guides/home-safety',
+      'guides/firing',
+      'about',
+      'privacy',
+      'signin',
+      'signup',
+      'forgot',
+      'reset'
+    ]);
   });
 });

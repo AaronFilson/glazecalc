@@ -52,6 +52,7 @@ const ORDER = [
   'fields',
   'aliases',
   'category',
+  'fritRole',
   'region',
   'status',
   'statusSince',
@@ -59,6 +60,8 @@ const ORDER = [
   'replaces',
   'manufacturer',
   'hazards',
+  'soluble',
+  'fluorine',
   'source'
 ];
 

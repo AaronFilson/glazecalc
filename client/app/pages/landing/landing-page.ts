@@ -29,7 +29,7 @@ const FEATURES = [
   },
   {
     title: 'Learn as you go',
-    text: 'Plain-language advice on mixing, glazing and firing sits next to the numbers.'
+    text: 'Plain-language guides, from what a glaze is to firing it safely, sit next to the numbers.'
   }
 ];
 

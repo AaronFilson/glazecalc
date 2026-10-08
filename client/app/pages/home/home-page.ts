@@ -21,7 +21,12 @@ const SECTIONS = [
   },
   { path: '/firing', title: 'Firing logs', text: 'Record times, temperatures and cones for each firing.' },
   { path: '/notes', title: 'Notes', text: 'Keep test results and anything else worth remembering.' },
-  { path: '/advice', title: 'Glaze advice', text: 'Tips on mixing, glazing and firing, and your own advice.' }
+  { path: '/advice', title: 'Glaze advice', text: 'Tips on mixing, glazing and firing, and your own advice.' },
+  {
+    path: '/guides',
+    title: 'Guides',
+    text: 'From what a glaze is to firing it, and keeping everyone safe on the way.'
+  }
 ];
 
 /** The signed-in start page: where to go next. */

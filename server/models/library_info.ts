@@ -7,6 +7,9 @@ export const libraryInfo = {
   aliases: { type: [String] },
   // feldspar, clay, frit, boron, flux, silica, alumina, opacifier, colorant, suspender, other.
   category: String,
+  // A frit's job, from its maker's stated use: base, base-alkaline, alkali, boron, low-expansion,
+  // opacified, zinc, matte, stoneware or lead.
+  fritRole: String,
   // Where it is sold: US, UK, EU, AU.
   region: { type: [String] },
   // current; scarce (hard to get); discontinued; historical (kept to compare with old recipes).
@@ -24,5 +27,9 @@ export const libraryInfo = {
   // Stains, gums and silicon carbide add nothing to the unity formula.
   noChemistry: Boolean,
   // Uses another record's chemistry, as Veegum uses bentonite's.
-  chemistryOf: String
+  chemistryOf: String,
+  // Dissolves in water (borax, boric acid, soda ash): a poor glaze material, not suggested.
+  soluble: Boolean,
+  // Releases fluorine in firing (fluorspar, cryolite): not suggested.
+  fluorine: Boolean
 };

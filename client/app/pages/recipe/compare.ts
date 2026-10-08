@@ -1,6 +1,6 @@
-import { MOLAR_MASS, MaterialInput, formatFormula, materialWeights } from '../../../../lib/chemistry';
+import { MOLAR_MASS, MaterialInput, expansion, formatFormula, materialWeights } from '../../../../lib/chemistry';
 import { LibraryInfo, Material, RecipeAnalysis, RecipeMaterial } from '../../core/models';
-import { inRegion, statusText } from '../../shared/library-info';
+import { hasLead, inRegion, statusText } from '../../shared/library-info';
 import { UNITY_TITLES, silicaAluminaRatio, unityColumnOf } from './unity-formula';
 
 // Comparing two recipes (issue #6), and trying an old recipe with the
@@ -43,7 +43,8 @@ const fact = (label: string, left: number | null, right: number | null, places: 
 /**
  * Two unity formulas side by side: a row for every oxide in either, under the
  * columns potters read them in (fluxes, stabilizers, glass formers, others),
- * then the silica to alumina ratio, the flux balance and the loss on ignition.
+ * then the silica to alumina ratio, the flux balance, the loss on ignition and
+ * the calculated thermal expansion.
  */
 export function compareUnity(left: RecipeAnalysis | null, right: RecipeAnalysis | null): CompareGroup[] {
   const groups: CompareGroup[] = UNITY_TITLES.map((title) => ({ title, rows: [] }));
@@ -56,13 +57,17 @@ export function compareUnity(left: RecipeAnalysis | null, right: RecipeAnalysis 
     groups[unityColumnOf(oxide)].rows.push(row(formatFormula(oxide), a, b, both));
   }
   const ratio = (analysis: RecipeAnalysis | null) => (analysis ? silicaAluminaRatio(analysis) : null);
+  // Worked out from the fired analysis when a saved one has no figure of its own.
+  const expands = (analysis: RecipeAnalysis | null) =>
+    analysis ? (analysis.expansion ?? expansion(analysis.analysis)) : null;
   const facts: CompareGroup = {
     title: 'Balance',
     rows: [
       fact('Silica to alumina', ratio(left), ratio(right), 2),
       fact('R₂O fluxes', left?.groups?.R2O ?? null, right?.groups?.R2O ?? null, 2),
       fact('RO fluxes', left?.groups?.RO ?? null, right?.groups?.RO ?? null, 2),
-      fact('Loss on ignition, %', left?.loi ?? null, right?.loi ?? null, 1)
+      fact('Loss on ignition, %', left?.loi ?? null, right?.loi ?? null, 1),
+      fact('Expansion, ×10⁻⁶/°C', expands(left), expands(right), 2)
     ]
   };
   return [...groups.filter((group, i) => i < 3 || group.rows.length), facts];
@@ -129,7 +134,8 @@ export type LibraryMaterial = Material & LibraryInfo;
 export function modernMaterials(
   materials: RecipeMaterial[],
   find: (name: string) => LibraryMaterial | undefined,
-  region = ''
+  region = '',
+  { allowLead = true }: { allowLead?: boolean } = {}
 ): { materials: RecipeMaterial[]; swaps: Swap[] } {
   const swaps: Swap[] = [];
   const modern = materials.map((material) => {
@@ -137,7 +143,9 @@ export function modernMaterials(
     if (!record?.status || record.status === 'current' || !record.substitutes?.length) return material;
     const substitutes = record.substitutes
       .map((name) => find(name))
-      .filter((sub): sub is LibraryMaterial => !!sub && (!sub.status || sub.status === 'current'));
+      .filter((sub): sub is LibraryMaterial => !!sub && (!sub.status || sub.status === 'current'))
+      // With lead off, only a substitute without lead.
+      .filter((sub) => allowLead || !hasLead(sub));
     const substitute =
       substitutes.find((sub) => region && sub.region?.includes(region)) ??
       substitutes.find((sub) => inRegion(sub, region)) ??
@@ -148,7 +156,7 @@ export function modernMaterials(
       status: statusText(record),
       to: substitute.name,
       like: likeForLike(record, substitute),
-      lead: substitute.fields.some((field) => field.name === 'PbO')
+      lead: hasLead(substitute)
     });
     return { ...structuredClone(substitute), amount: material.amount };
   });

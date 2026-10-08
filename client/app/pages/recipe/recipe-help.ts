@@ -137,7 +137,26 @@ const readHidden = (): boolean => {
               A recipe that uses a material no longer made, such as Custer Spar, says what is used now, and whether it
               can take its place gram for gram. <b>Try modern materials and compare</b> swaps them in, one for one, as a
               new recipe, and compares it with the old one; <b>Undo the swap</b> puts it back. Where a swap is not like
-              for like, work the amount out again until the unity formulas match; then save it.
+              for like, <b>Suggest amounts and compare</b> works the amounts out again to bring the unity formula back,
+              changing as few as it can. If the new material cannot bring back something the old one gave, such as
+              niter's potash, it asks what should. It matches the fired oxides only, so test a small batch first.
+            </p>
+            <p>
+              A recipe with lead says so. <b>Replace lead</b> asks the cone you fire to and which lead-free frit to
+              build on, then either rebuilds the glaze (its silica and alumina kept, with boron and other fluxes doing
+              lead's work) or keeps its colorants on a lead-free base of the frit and kaolin, 85 to 15. Materials with
+              lead are listed to add only when lead is on under Settings on your account page.
+            </p>
+            <p>
+              <b>Match with what I have</b> makes the recipe again from only the materials you have on hand, as near its
+              fired oxides as they allow. Your list of materials on hand is kept with your account.
+            </p>
+            <p>
+              Each of these can take <b>materials to try</b>, any you have or would like considered, and tick
+              <b>Must use</b> to keep one in. The new recipe says what each material supplies and whether the match
+              needs it, what else would help, and what to watch for. Past a recommended limit, such as a lot of boron at
+              cone 6 or raw whiting at cone 04, it says what the glaze will likely do rather than refuse. Its buttons
+              work the recipe out again from the old one: leave a material out, add one, or allow more past a limit.
             </p>
           </li>
           <li>

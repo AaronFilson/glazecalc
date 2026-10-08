@@ -34,6 +34,11 @@ export function saveRegion(region: string): void {
   }
 }
 
+/** Whether a material or additive has lead in it: PbO among its oxides. */
+export function hasLead(record: { fields?: Array<{ name: string; amount: string | number }> }): boolean {
+  return (record.fields ?? []).some((field) => field.name === 'PbO' && Number(field.amount) > 0);
+}
+
 /** Whether a record is sold in the region. General records, with no region, count everywhere. */
 export function inRegion(record: LibraryInfo, region: string): boolean {
   return !region || !record.region?.length || record.region.includes(region);

@@ -20,6 +20,78 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   - A swap is called like for like only when the two give much the same oxides gram for gram
     (Custer Spar and G-200 EU). Others, such as niter to a soda frit or red lead to a lead frit,
     say to work the amount out again, and a replacement that still has lead says so.
+  - **Suggest amounts and compare,** for a swap that is not like for like, works the amounts out
+    again to bring the old recipe's unity formula back, changing as few as it can: red lead 55,
+    china clay 15, silica 30 becomes lead bisilicate frit 81.6, china clay 9.7, silica 6.2.
+    When the new material cannot bring back something the old one gave (a soda frit has almost
+    no potash), it asks which material should, offering the best three sold in your region, or
+    none ([ADR 10](docs/adr/0010-suggested-amounts.md)).
+- **Lead, off unless chosen** ([ADR 11](docs/adr/0011-replacing-lead.md)). Settings gains Lead,
+  off by default: materials with lead are not listed to add or suggested, and turning it on asks
+  once, with the handling and food-contact warning. Recipes that already have lead still open,
+  with a warning that says how much lead is in the glaze.
+  - **Replace lead** asks the cone and which lead-free frit to build on (the three best sold in
+    your region), then rebuilds the glaze: its silica and alumina kept, lead's share of the fluxes
+    given to soda and potash, calcium and a little zinc, and boron set for the firing (about 0.5
+    at cone 04). Or it keeps the colour on a lead-free base of the frit and kaolin, 85 to 15.
+  - The new recipe says what to expect: colours that need lead (Naples yellow, chrome reds),
+    copper turning bluer, honey glazes less warm, possible clouding and crazing, and that having
+    no lead does not by itself make ware safe with food.
+- **Choosing materials, and saying why** ([ADR 12](docs/adr/0012-choosing-materials.md)).
+  - **Materials to try:** Suggest amounts and Replace lead take any number of materials from the
+    library or your own, each perhaps marked **Must use**. The match uses those that help, as few as
+    it can.
+  - **How the new recipe was made,** beside the comparison and under Materials. It says what each
+    material supplies ("all the potash and 71% of the alumina") and whether the match needs it, what
+    else would help, near-identical choices, and oxides nothing on offer has. It also says what to
+    watch for.
+  - Its buttons work the recipe out again from the old one:
+    - **Leave it out** (and **Allow them again**);
+    - **Add it**;
+    - **Use it instead**, for a near-identical material;
+    - **Allow more**, past a suggested cap;
+    - **Try other materials**.
+  - **Replace lead** picks up to four materials beside the base frit, from those sold in your
+    region:
+    - a partner frit;
+    - feldspar or wollastonite;
+    - a little whiting, dolomite or zinc where they melt.
+
+    The base frits are ones their makers sell as bases, so calcium borate and craze-cure frits are
+    not offered as bases. It keeps at least 10% clay so the glaze stays suspended, and leaves zinc
+    out with chrome, iron or copper or below cone 03. To keep the colour, it offers only bases with
+    enough alumina.
+
+  - **Past a recommended limit, it says what the glaze will likely do** rather than refuse, in two
+    strengths ("tends to", "will probably"), by firing, and only where the old recipe was not
+    already past it. Limits cover:
+    - boron, alumina, soda and potash, magnesia and zinc;
+    - raw whiting at low fire, fluorine and soluble materials, and too much or too little clay;
+    - a frit doing the wrong job;
+    - expansion;
+    - many materials, and amounts too small to weigh.
+  - Materials that dissolve in water (borax, soda ash, niter) or give off fluorine (fluorspar,
+    cryolite) are no longer suggested, though you can still add them.
+- **Match with what I have.** On any recipe, choose the materials you have on hand, from the
+  library, your own, or the recipe in one click. The match makes the recipe again from only those,
+  as near its fired oxides as they allow, as a new recipe compared with the old one. The list is
+  kept with your account for next time.
+- **Guides for new potters** (Guides, in the menu), each with its sources and the points where
+  they disagree:
+  - **Glazing from first principles:** what a glaze is, and every word a recipe, a bag or a cone
+    chart uses, with a glossary.
+  - **How to make a glaze:** buying, storing, weighing, mixing, sieving, specific gravity, test
+    tiles, line blends and records.
+  - **Safe mixing and ventilation:** silica dust, respirators by region, wet cleaning, spraying,
+    venting the kiln, the materials that need most care, and safety data sheets.
+  - **Don't poison your family:** pottery at home with children and pets, with poison lines for
+    the US, UK, Ireland, EU, Australia and New Zealand.
+  - **Firing a basic kiln:** cones and how to read them, kiln sitters, and manual kilns, with
+    published schedules for bisque and glaze firings in °F and °C.
+- **Calculated thermal expansion** in Compare, old against new, worked out as Digitalfire's
+  Insight and Glazy do it (each fired oxide's weight percent times its coefficient): Leach's 4321
+  comes to 7.49, as in Glazy. Replace lead says when the expansion rises, since crazing is the
+  commonest failure of a converted glaze.
 - **Your own colors** ([#13](https://github.com/AaronFilson/glazecalc/issues/13)): Settings
   chooses light, dark, or as the device is set, and a palette for buttons, links and tabs named
   for glazes: tenmoku rust, celadon green, cobalt blue, oxblood red, shino orange or wood ash

@@ -21,7 +21,8 @@ import { PageHeader } from '../../shared/page-header';
       </p>
       <p>
         Alongside the calculator it keeps your recipes, your own materials, colorants and other additives, notes and
-        firing logs, and a page of practical <a routerLink="/advice">glaze advice</a>.
+        firing logs, a page of practical <a routerLink="/advice">glaze advice</a>, and
+        <a routerLink="/guides">guides</a> for new potters, from what a glaze is to firing it safely.
       </p>
     </section>
 

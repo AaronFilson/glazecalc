@@ -33,7 +33,7 @@ describe('static pages', () => {
     const links = [...home.nativeElement.querySelectorAll('.home-card')].map((a: HTMLAnchorElement) =>
       a.getAttribute('href')
     );
-    expect(links).toEqual(['/recipe', '/material', '/additive', '/firing', '/notes', '/advice']);
+    expect(links).toEqual(['/recipe', '/material', '/additive', '/firing', '/notes', '/advice', '/guides']);
     expect(text((await create(TrashPage)).fixture)).toContain('trash functionality is coming soon');
     expect(text((await create(NotFoundPage)).fixture)).toContain('Page not found');
   });
@@ -228,7 +228,15 @@ describe('App', () => {
       .expectOne(API + '/verify')
       .flush({ msg: 'User verified', id: 'u1', email: 'a@b.com' });
     await settle(fixture);
-    expect(navLinks(fixture)).toEqual(['Recipes', 'Materials', 'Additives', 'Firing logs', 'Notes', 'Advice']);
+    expect(navLinks(fixture)).toEqual([
+      'Recipes',
+      'Materials',
+      'Additives',
+      'Firing logs',
+      'Notes',
+      'Advice',
+      'Guides'
+    ]);
     expect(text(fixture, '.account-email')).toBe('a@b.com');
 
     (fixture.nativeElement.querySelector('.nav-account button') as HTMLButtonElement).click();
@@ -237,7 +245,7 @@ describe('App', () => {
       .flush({ msg: 'Signed out' });
     await fixture.whenStable();
     expect(TestBed.inject(AuthService).hasSession()).toBe(false);
-    expect(navLinks(fixture)).toEqual(['Advice', 'About']);
+    expect(navLinks(fixture)).toEqual(['Guides', 'Advice', 'About']);
     expect(navigate).toHaveBeenCalledWith('/signin');
   });
 

@@ -989,6 +989,8 @@ describe('RecipePage', () => {
     });
 
     it('says when a swap is not like for like, and when lead is still in it', async () => {
+      // Lead is allowed in Settings.
+      TestBed.inject(PreferencesService).lead.set('on');
       const LITHARGE: Material = {
         ...material('Litharge', [['PbO', 1]], 0),
         status: 'historical',
@@ -1027,6 +1029,195 @@ describe('RecipePage', () => {
       );
     });
 
+    it('suggests amounts for a swap that is not like for like, asking what brings back what it leaves short', async () => {
+      const NITER: Material = {
+        ...material('Niter', [['K2O', 1]], 53.42),
+        status: 'historical',
+        substitutes: ['Soda frit']
+      };
+      const SODA_FRIT = material(
+        'Soda frit',
+        [
+          ['Na2O', 0.7],
+          ['CaO', 0.3],
+          ['Al2O3', 0.1],
+          ['B2O3', 0.1],
+          ['SiO2', 3]
+        ],
+        0
+      );
+      const SPAR = material(
+        'Potash feldspar',
+        [
+          ['K2O', 1],
+          ['Al2O3', 1],
+          ['SiO2', 6]
+        ],
+        0
+      );
+      const KAOLIN = material(
+        'Kaolin',
+        [
+          ['Al2O3', 1],
+          ['SiO2', 2]
+        ],
+        13.96
+      );
+      const fixture = TestBed.createComponent(RecipePage);
+      const router = TestBed.inject(Router);
+      router.initialNavigation();
+      await fixture.whenStable();
+      answer('/materials/getStandard', [WHITING, SILICA, CUSTER, G200, NITER, SODA_FRIT, SPAR, KAOLIN]);
+      answer('/materials/getAll', []);
+      answer('/additives/getAll', []);
+      answer('/additives/getStandard', []);
+      answer('/recipe/getAll', []);
+      await settle(fixture);
+      const page = fixture.componentInstance as unknown as Page;
+      const buttons = () => [...fixture.nativeElement.querySelectorAll('.recipe-swap button')].map((b) => b.id);
+
+      // Only a swap that is not like for like needs its amounts worked out.
+      fill(page, [
+        [CUSTER, '40'],
+        [WHITING, '20'],
+        [SILICA, '40']
+      ]);
+      await settle(fixture);
+      expect(buttons()).toEqual(['try-modern']);
+
+      page['reset']();
+      fill(page, [
+        [NITER, '10'],
+        [WHITING, '20'],
+        [KAOLIN, '20'],
+        [SILICA, '50']
+      ]);
+      await settle(fixture);
+      expect(buttons()).toEqual(['try-modern', 'suggest-amounts']);
+      click(fixture, 'Suggest amounts and compare');
+      await settle(fixture);
+      expect(document.activeElement?.id).toBe('suggest-heading');
+      const legend = text(fixture, '.recipe-suggest legend');
+      expect(legend).toMatch(/^Niter gave potash \(K₂O\): 0\.\d{3} in the unity formula\. With Soda frit it comes to/);
+      const checked = fixture.nativeElement.querySelector('.recipe-suggest input:checked') as HTMLInputElement;
+      expect(checked.labels?.[0].textContent?.replace(/\s+/g, ' ').trim()).toBe('Potash feldspar (17% potash (K₂O))');
+
+      // Cancel closes it, with the focus back on the button.
+      click(fixture, 'Cancel');
+      await settle(fixture);
+      expect(fixture.nativeElement.querySelector('.recipe-suggest')).toBeNull();
+      expect(document.activeElement?.id).toBe('suggest-amounts');
+
+      click(fixture, 'Suggest amounts and compare');
+      await settle(fixture);
+      click(fixture, 'Work it out and compare');
+      await settle(fixture);
+      expect(router.url).toBe('/?compare=before,draft');
+      const amounts = Object.fromEntries(page['lines']().map((l: Material & { amount: string }) => [l.name, l.amount]));
+      expect(Object.keys(amounts)).not.toContain('Niter');
+      expect(Number(amounts['Potash feldspar'])).toBeGreaterThan(20);
+      expect(amounts['Whiting']).toBe('20');
+      expect(page['title']()).toBe('Untitled recipe with modern materials');
+      expect(page['notes']()).toMatch(
+        /^Amounts worked out to bring the unity formula back: Niter became Soda frit\. Changed: .*Potash feldspar [\d.]+, new.* This matches the fired oxides only; test a small batch first\.$/
+      );
+
+      // Undo puts the recipe back as it was.
+      click(fixture, 'Back to the recipe');
+      await settle(fixture);
+      click(fixture, 'Undo the swap');
+      await settle(fixture);
+      expect(page['lines']().map((l: Material & { amount: string }) => [l.name, l.amount])).toEqual([
+        ['Niter', '10'],
+        ['Whiting', '20'],
+        ['Kaolin', '20'],
+        ['Silica', '50']
+      ]);
+    });
+
+    it('warns of lead, hides it from the lists while it is off, and replaces it', async () => {
+      const RED_LEAD: Material = { ...material('Red lead', [['PbO', 1]], 2.33), status: 'historical' };
+      const BASE_FRIT: Material = {
+        ...material(
+          'Borosilicate frit',
+          [
+            ['Na2O', 0.3],
+            ['CaO', 0.7],
+            ['Al2O3', 0.25],
+            ['B2O3', 0.6],
+            ['SiO2', 2.6]
+          ],
+          0
+        ),
+        category: 'frit'
+      };
+      const KAOLIN: Material = {
+        ...material(
+          'China Clay',
+          [
+            ['Al2O3', 1],
+            ['SiO2', 2]
+          ],
+          13.96
+        ),
+        category: 'clay'
+      };
+      const fixture = TestBed.createComponent(RecipePage);
+      const router = TestBed.inject(Router);
+      router.initialNavigation();
+      await fixture.whenStable();
+      answer('/materials/getStandard', [WHITING, SILICA, KAOLIN, RED_LEAD, BASE_FRIT]);
+      answer('/materials/getAll', []);
+      answer('/additives/getAll', []);
+      answer('/additives/getStandard', []);
+      answer('/recipe/getAll', []);
+      await settle(fixture);
+      const page = fixture.componentInstance as unknown as Page;
+
+      // Lead is off unless chosen: red lead is not listed to add.
+      const list = fixture.nativeElement.querySelector('.library') as HTMLElement;
+      expect(list.textContent).not.toContain('Red lead');
+      expect(text(fixture, '.library-hidden')).toBe('1 with lead is not listed: lead is off in Settings.');
+
+      // An old recipe with lead still opens, with a warning.
+      fill(page, [
+        [RED_LEAD, '55'],
+        [KAOLIN, '15'],
+        [SILICA, '30']
+      ]);
+      await settle(fixture);
+      expect(text(fixture, '.recipe-lead')).toMatch(
+        /^Contains lead: PbO 1\.000 in the unity formula \(\d+% of the fired glaze\)/
+      );
+
+      click(fixture, 'Replace lead');
+      await settle(fixture);
+      expect(document.activeElement?.id).toBe('lead-heading');
+      expect((fixture.nativeElement.querySelector('#lead-cone') as HTMLSelectElement).value).toBe('04');
+      expect(text(fixture, 'label[for="lead-base-0"]')).toBe('Borosilicate frit (15% boron, B₂O₃)');
+      page['chooseCone']('06');
+      await settle(fixture);
+
+      click(fixture, 'Replace lead and compare');
+      await settle(fixture);
+      expect(router.url).toBe('/?compare=before,draft');
+      const names = page['lines']().map((l: Material) => l.name);
+      expect(names).not.toContain('Red lead');
+      expect(names).toContain('Borosilicate frit');
+      expect(page['title']()).toBe('Untitled recipe without lead');
+      expect(page['notes']()).toMatch(
+        /^Lead replaced for cone 06 on Borosilicate frit: the old recipe's silica and alumina kept, with boron and other fluxes doing lead's work\. Changed: .*Red lead 55 → 0/
+      );
+      expect(page['notes']()).toContain('Having no lead does not by itself make a glaze safe with food');
+
+      click(fixture, 'Back to the recipe');
+      await settle(fixture);
+      expect(fixture.nativeElement.querySelector('.recipe-lead')).toBeNull();
+      click(fixture, 'Undo the swap');
+      await settle(fixture);
+      expect(page['lines']().map((l: Material) => l.name)).toEqual(['Red lead', 'China Clay', 'Silica']);
+    });
+
     it('compares a changed recipe with itself before the swap', async () => {
       const { fixture, router, page } = await start([]);
       fill(page, [
@@ -1046,6 +1237,63 @@ describe('RecipePage', () => {
         'Being edited: Untitled recipe with modern materials',
         'Before the swap: Untitled recipe'
       ]);
+    });
+
+    it('makes the recipe from what is on hand, kept with the account, and works it out again from its report', async () => {
+      const { fixture, router, page } = await start([]);
+      fill(page, [
+        [CUSTER, '40'],
+        [WHITING, '20'],
+        [SILICA, '40']
+      ]);
+      await settle(fixture);
+      click(fixture, 'Match with what I have');
+      await settle(fixture);
+      expect(document.activeElement?.id).toBe('shelf-heading');
+      // On hand: the feldspar and whiting, as fetched from the account.
+      answer('/shelf', { shelf: ['G-200 EU Feldspar', 'Whiting'] });
+      await settle(fixture);
+      expect(text(fixture, '.recipe-shelf .try-list')).toContain('G-200 EU Feldspar');
+
+      // The recipe's materials added in one click, saved with the account.
+      click(fixture, 'Add the materials in this recipe');
+      const put = httpMock().expectOne(API + '/shelf');
+      expect(put.request.body).toEqual({ shelf: ['G-200 EU Feldspar', 'Whiting', 'Custer Spar', 'Silica'] });
+      put.flush({ shelf: put.request.body.shelf });
+      await settle(fixture);
+      expect(text(fixture, '.recipe-shelf-status')).toBe('Saved with your account.');
+
+      // Custer is not really on hand: removed, and saved again.
+      (
+        fixture.nativeElement.querySelector(
+          '[aria-label="Remove Custer Spar from your materials on hand"]'
+        ) as HTMLElement
+      ).click();
+      httpMock()
+        .expectOne(API + '/shelf')
+        .flush({ shelf: ['G-200 EU Feldspar', 'Whiting', 'Silica'] });
+      await settle(fixture);
+
+      click(fixture, 'Match and compare');
+      await settle(fixture);
+      expect(router.url).toBe('/?compare=before,draft');
+      expect(page['title']()).toBe('Untitled recipe from what I have');
+      expect(page['lines']().map((l: Material) => l.name)).toEqual(['G-200 EU Feldspar', 'Whiting', 'Silica']);
+      expect(page['notes']()).toMatch(/^Made from what you have on hand.*Custer Spar 40 → 0/);
+      // How it was made, beside the comparison.
+      expect(text(fixture, '.compare-controls .swap-report')).toContain('G-200 EU Feldspar');
+
+      // Left out, it is worked out again from the recipe as it was.
+      (fixture.nativeElement.querySelector('[aria-label="Leave out Silica"]') as HTMLElement).click();
+      await settle(fixture);
+      expect(page['lines']().map((l: Material) => l.name)).not.toContain('Silica');
+      expect(text(fixture, '.swap-report')).toContain('Left out: Silica.');
+      expect(document.activeElement?.id).toBe('swap-report-heading');
+      click(fixture, 'Back to the recipe');
+      await settle(fixture);
+      click(fixture, 'Undo the swap');
+      await settle(fixture);
+      expect(page['lines']().map((l: Material) => l.name)).toEqual(['Custer Spar', 'Whiting', 'Silica']);
     });
   });
 });

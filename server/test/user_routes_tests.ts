@@ -55,7 +55,7 @@ describe('user API', () => {
         .set('Authorization', 'Bearer ' + bearer)
         .send(body);
 
-    const DEFAULTS = { weightUnit: 'g', gramPrecision: 'single', theme: 'system', palette: 'tenmoku' };
+    const DEFAULTS = { weightUnit: 'g', gramPrecision: 'single', theme: 'system', palette: 'tenmoku', lead: 'off' };
 
     it('start in grams to a tenth, and change one at a time', async () => {
       expect((await get(token)).body).to.eql(DEFAULTS);
@@ -72,8 +72,11 @@ describe('user API', () => {
         weightUnit: 'lb',
         gramPrecision: 'full',
         theme: 'dark',
-        palette: 'cobalt'
+        palette: 'cobalt',
+        lead: 'off'
       });
+      // Lead starts off; turning it on is a choice like any other.
+      expect((await put(token, { lead: 'on' })).body.lead).to.equal('on');
       const saved = (await User.findById(user._id))?.preferences;
       expect([saved?.weightUnit, saved?.gramPrecision]).to.eql(['lb', 'full']);
     });
@@ -87,6 +90,8 @@ describe('user API', () => {
         { gramPrecision: 'double' },
         { theme: 'sepia' },
         { palette: 'neon' },
+        { lead: true },
+        { lead: 'yes' },
         // One good and one bad: nothing changes.
         { weightUnit: 'lb', gramPrecision: 2 }
       ]) {
@@ -107,6 +112,49 @@ describe('user API', () => {
       expect((await get(trialToken)).body).to.eql({ ...DEFAULTS, weightUnit: 'lb' });
       expect(await api().get('/preferences')).to.have.status(401);
       expect(await api().put('/preferences').send({ weightUnit: 'lb' })).to.have.status(401);
+    });
+  });
+
+  describe('materials on hand', () => {
+    const get = (bearer: string) =>
+      api()
+        .get('/shelf')
+        .set('Authorization', 'Bearer ' + bearer);
+    const put = (bearer: string, body: object) =>
+      api()
+        .put('/shelf')
+        .set('Authorization', 'Bearer ' + bearer)
+        .send(body);
+
+    it('keeps the list of materials the account has, each once, in the order chosen', async () => {
+      expect((await get(token)).body).to.eql({ shelf: [] });
+      const res = await put(token, { shelf: ['6fd1f9f8c006e8f7e23d9126', 'name:Whiting', 'name:Whiting'] });
+      expect(res).to.have.status(200);
+      expect(res.body).to.eql({ shelf: ['6fd1f9f8c006e8f7e23d9126', 'name:Whiting'] });
+      expect((await get(token)).body.shelf).to.eql(['6fd1f9f8c006e8f7e23d9126', 'name:Whiting']);
+      // Emptied, it stays empty.
+      expect((await put(token, { shelf: [] })).body).to.eql({ shelf: [] });
+      expect((await get(token)).body).to.eql({ shelf: [] });
+    });
+
+    it('refuses what is not a list of keys, or too long a one', async () => {
+      for (const body of [{}, { shelf: 'Whiting' }, { shelf: [3] }, { shelf: [''] }, { shelf: ['x'.repeat(201)] }]) {
+        const res = await put(token, body);
+        expect(res, JSON.stringify(body)).to.have.status(400);
+        expect(res.body.msg).to.equal('The shelf is a list of up to 500 materials.');
+      }
+      const many = Array.from({ length: 501 }, (_, i) => 'name:M' + i);
+      expect(await put(token, { shelf: many })).to.have.status(400);
+      expect((await get(token)).body).to.eql({ shelf: [] });
+    });
+
+    it('can be kept by a trial, and needs a sign-in', async () => {
+      const trial = await api().post('/guest');
+      const trialToken = sessionToken(trial) ?? '';
+      expect(await put(trialToken, { shelf: ['name:Silica'] })).to.have.status(200);
+      expect((await get(trialToken)).body).to.eql({ shelf: ['name:Silica'] });
+      expect(await api().get('/shelf')).to.have.status(401);
+      expect(await api().put('/shelf').send({ shelf: [] })).to.have.status(401);
     });
   });
 

@@ -12,7 +12,19 @@
     [chemistryOf]="chemistryOf"
     (choose)="chooseCompared($event)"
     (back)="closeCompare()"
-  />
+  >
+    @if (reportInCompare() && swapResult(); as result) {
+      <gc-swap-report
+        [result]="result"
+        [level]="2"
+        [mine]="myMaterials()"
+        [standard]="standardMaterials()"
+        [hideLead]="leadOff()"
+        [inRecipe]="swapKeys()"
+        (rerun)="rerun($event)"
+      />
+    }
+  </gc-recipe-compare>
 } @else if (compareWaiting()) {
   <p class="muted" role="status">Getting the recipes to compare...</p>
 }
@@ -183,13 +195,280 @@
                 </span>
               }
             </p>
-            <button id="try-modern" type="button" class="btn btn-light border btn-sm" (click)="tryModernMaterials()">
-              Try modern materials and compare
-            </button>
+            <div class="recipe-swap-buttons">
+              <button id="try-modern" type="button" class="btn btn-light border btn-sm" (click)="tryModernMaterials()">
+                Try modern materials and compare
+              </button>
+              @if (notLikeForLike()) {
+                <button
+                  id="suggest-amounts"
+                  type="button"
+                  class="btn btn-light border btn-sm"
+                  [attr.aria-expanded]="!!suggestQuestion()"
+                  (click)="suggestModernAmounts()"
+                >
+                  Suggest amounts and compare
+                </button>
+              }
+            </div>
+            @if (suggestProblem()) {
+              <p class="recipe-swap-problem" role="alert">{{ suggestProblem() }}</p>
+            }
+            @if (suggestQuestion(); as question) {
+              <section class="recipe-suggest" aria-labelledby="suggest-heading">
+                <h4 id="suggest-heading" tabindex="-1">Bring back what the old materials gave</h4>
+                @for (short of question.plan.shortfalls; track short.oxide) {
+                  <fieldset>
+                    <legend>
+                      {{ short.from.join(' and ') }} gave {{ oxideLabel(short.oxide) }}: {{ short.was.toFixed(3) }} in
+                      the unity formula. With {{ short.instead.join(' and ') }} it comes to {{ short.now.toFixed(3) }}.
+                      Bring it back with:
+                    </legend>
+                    @for (choice of short.choices; track choice.name) {
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          [id]="'bring-' + short.oxide + '-' + $index"
+                          [name]="'bring-' + short.oxide"
+                          [checked]="question.chosen[short.oxide] === choice.name"
+                          (change)="chooseBringIn(short.oxide, choice.name)"
+                        />
+                        <label class="form-check-label" [for]="'bring-' + short.oxide + '-' + $index">
+                          {{ choice.name }}
+                          <span class="muted">({{ choice.percent }}% {{ oxideLabel(short.oxide) }})</span>
+                        </label>
+                      </div>
+                    }
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        [id]="'bring-' + short.oxide + '-none'"
+                        [name]="'bring-' + short.oxide"
+                        [checked]="question.chosen[short.oxide] === ''"
+                        (change)="chooseBringIn(short.oxide, '')"
+                      />
+                      <label class="form-check-label" [for]="'bring-' + short.oxide + '-none'">
+                        Leave it out ({{ short.now.toFixed(3) }})
+                      </label>
+                    </div>
+                    @if (!short.choices.length) {
+                      <p class="muted">No current material sold in your region has much of it.</p>
+                    }
+                  </fieldset>
+                }
+                <div class="recipe-swap-buttons">
+                  <button
+                    type="button"
+                    class="btn btn-light border btn-sm"
+                    [attr.aria-expanded]="tryingMore()"
+                    (click)="tryingMore.set(!tryingMore())"
+                  >
+                    Materials to try ({{ suggestTries().length }})
+                  </button>
+                </div>
+                @if (tryingMore()) {
+                  <gc-try-materials
+                    [(tries)]="suggestTries"
+                    [mine]="myMaterials()"
+                    [standard]="standardMaterials()"
+                    [hideLead]="leadOff()"
+                    [inRecipe]="materialKeys()"
+                  />
+                }
+                <div class="recipe-swap-buttons">
+                  <button type="button" class="btn btn-primary btn-sm" (click)="workOutSuggestion()">
+                    Work it out and compare
+                  </button>
+                  <button type="button" class="btn btn-light border btn-sm" (click)="cancelSuggestion()">Cancel</button>
+                </div>
+              </section>
+            }
           </div>
         }
       } @else {
         <p class="muted">No materials yet. Add them from the list below.</p>
+      }
+      @if (leadAmount(); as lead) {
+        <div class="recipe-swap recipe-lead">
+          <p>
+            <b>Contains lead:</b> PbO {{ lead.unity.toFixed(3) }} in the unity formula ({{ lead.percent.toFixed(0) }}%
+            of the fired glaze). Lead can leach from fired ware into food and drink, and only a laboratory leach test of
+            the fired piece can tell whether this glaze does; a calculation cannot. Use it only where it never touches
+            food or drink, or replace the lead.
+          </p>
+          <div class="recipe-swap-buttons">
+            <button
+              id="replace-lead"
+              type="button"
+              class="btn btn-light border btn-sm"
+              [attr.aria-expanded]="!!leadQuestion()"
+              (click)="askReplaceLead()"
+            >
+              Replace lead
+            </button>
+          </div>
+          @if (leadQuestion(); as question) {
+            <section class="recipe-suggest" aria-labelledby="lead-heading">
+              <h4 id="lead-heading" tabindex="-1">Replace the lead</h4>
+              <div class="recipe-lead-cone">
+                <label for="lead-cone">Fired to cone</label>
+                <select
+                  id="lead-cone"
+                  class="form-select form-select-sm"
+                  (change)="chooseCone($any($event.target).value)"
+                >
+                  @for (c of cones; track c.cone) {
+                    <option [value]="c.cone" [selected]="c.cone === question.cone">
+                      {{ c.cone }} ({{ c.celsius }} °C)
+                    </option>
+                  }
+                </select>
+              </div>
+              <fieldset>
+                <legend>How</legend>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    id="lead-mode-rebuild"
+                    name="lead-mode"
+                    [checked]="question.mode === 'rebuild'"
+                    (change)="chooseLeadMode('rebuild')"
+                  />
+                  <label class="form-check-label" for="lead-mode-rebuild">
+                    Rebuild the glaze: keep its silica and alumina, with boron and other fluxes for the lead
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    id="lead-mode-colour"
+                    name="lead-mode"
+                    [checked]="question.mode === 'colour'"
+                    (change)="chooseLeadMode('colour')"
+                  />
+                  <label class="form-check-label" for="lead-mode-colour">
+                    Keep the colour on a lead-free base: the frit and kaolin, 85 to 15, with the recipe's colorants
+                  </label>
+                </div>
+              </fieldset>
+              <fieldset>
+                <legend>Lead-free frit to build on, best first</legend>
+                @for (choice of question.bases; track choice.name) {
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      [id]="'lead-base-' + $index"
+                      name="lead-base"
+                      [checked]="question.base === choice.name"
+                      (change)="chooseLeadBase(choice.name)"
+                    />
+                    <label class="form-check-label" [for]="'lead-base-' + $index">
+                      {{ choice.name }} <span class="muted">({{ choice.boron }}% boron, B₂O₃)</span>
+                    </label>
+                  </div>
+                } @empty {
+                  <p class="muted">No lead-free frit sold in your region is in the library.</p>
+                }
+              </fieldset>
+              @if (question.mode === 'rebuild') {
+                <div class="recipe-swap-buttons">
+                  <button
+                    type="button"
+                    class="btn btn-light border btn-sm"
+                    [attr.aria-expanded]="tryingMore()"
+                    (click)="tryingMore.set(!tryingMore())"
+                  >
+                    Materials to try ({{ leadTries().length }})
+                  </button>
+                </div>
+                @if (tryingMore()) {
+                  <gc-try-materials
+                    [(tries)]="leadTries"
+                    [mine]="myMaterials()"
+                    [standard]="standardMaterials()"
+                    [hideLead]="leadOff()"
+                    [inRecipe]="materialKeys()"
+                    intro="The rebuild picks up to four materials beside the frit from those sold in your region. Add any others you have or would like it to consider; tick Must use to keep one in."
+                  />
+                }
+              }
+              <div class="recipe-swap-buttons">
+                <button
+                  type="button"
+                  class="btn btn-primary btn-sm"
+                  [attr.aria-disabled]="!question.base || null"
+                  (click)="workOutReplaceLead()"
+                >
+                  Replace lead and compare
+                </button>
+                <button type="button" class="btn btn-light border btn-sm" (click)="cancelReplaceLead()">Cancel</button>
+              </div>
+            </section>
+          }
+        </div>
+      }
+      @if (lines().length) {
+        <div class="recipe-shelf">
+          <div class="recipe-swap-buttons">
+            <button
+              id="match-shelf"
+              type="button"
+              class="btn btn-light border btn-sm"
+              [attr.aria-expanded]="shelfOpen()"
+              (click)="askShelf()"
+            >
+              Match with what I have
+            </button>
+          </div>
+          @if (shelfOpen()) {
+            <section class="recipe-suggest" aria-labelledby="shelf-heading">
+              <h4 id="shelf-heading" tabindex="-1">Make it from what you have</h4>
+              <p>
+                The match uses only the materials you have on hand, as few as it can, to come as near this recipe's
+                fired oxides as they allow. Your list is kept with your account for next time.
+              </p>
+              @if (shelfLoaded()) {
+                <div class="recipe-swap-buttons">
+                  <button type="button" class="btn btn-light border btn-sm" (click)="addRecipeToShelf()">
+                    Add the materials in this recipe
+                  </button>
+                </div>
+                <gc-try-materials
+                  [tries]="shelfTries()"
+                  (triesChange)="changeShelf($event)"
+                  [mine]="myMaterials()"
+                  [standard]="standardMaterials()"
+                  [hideLead]="leadOff()"
+                  [inRecipe]="noKeys"
+                  intro="Your materials on hand. Tick Must use to keep one in the match."
+                  listName="your materials on hand"
+                />
+              } @else {
+                <p class="muted">Getting your materials on hand...</p>
+              }
+              <p class="recipe-shelf-status" role="status">{{ shelfStatus() }}</p>
+              @if (shelfProblem()) {
+                <p class="recipe-swap-problem" role="alert">{{ shelfProblem() }}</p>
+              }
+              <div class="recipe-swap-buttons">
+                <button
+                  type="button"
+                  class="btn btn-primary btn-sm"
+                  [attr.aria-disabled]="!shelfTries().length || null"
+                  (click)="matchShelf()"
+                >
+                  Match and compare
+                </button>
+                <button type="button" class="btn btn-light border btn-sm" (click)="closeShelf()">Cancel</button>
+              </div>
+            </section>
+          }
+        </div>
       }
       @if (swapUndo(); as undo) {
         <div class="recipe-swap">
@@ -197,6 +476,17 @@
           <button id="undo-swap" type="button" class="btn btn-light border btn-sm" (click)="undoSwap()">
             Undo the swap
           </button>
+          @if (!reportInCompare() && undo.result; as result) {
+            <gc-swap-report
+              [result]="result"
+              [level]="4"
+              [mine]="myMaterials()"
+              [standard]="standardMaterials()"
+              [hideLead]="leadOff()"
+              [inRecipe]="swapKeys()"
+              (rerun)="rerun($event)"
+            />
+          }
         </div>
       }
 
@@ -206,6 +496,7 @@
         [mine]="myMaterials()"
         [standard]="standardMaterials()"
         [inRecipe]="materialKeys()"
+        [hideLead]="leadOff()"
         (pick)="addMaterial($event)"
       />
 
@@ -285,6 +576,7 @@
         [mine]="myAdditives()"
         [standard]="standardAdditives()"
         [inRecipe]="additiveKeys()"
+        [hideLead]="leadOff()"
         (pick)="addAdditive($event)"
       />
 

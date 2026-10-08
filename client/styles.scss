@@ -954,6 +954,13 @@ button.library-item:focus-visible {
   padding: 0.5rem 0.75rem;
 }
 
+// Under an add list: how many materials with lead it leaves out, and where to change that.
+.library-hidden {
+  color: var(--gc-muted);
+  font-size: 0.9rem;
+  margin: 0.35rem 0 0;
+}
+
 .recipe-save {
   display: flex;
   flex-wrap: wrap;
@@ -970,7 +977,8 @@ button.library-item:focus-visible {
 }
 
 // Materials no longer current, and what can take their place (Try modern materials).
-.recipe-swap {
+.recipe-swap,
+.recipe-shelf {
   border-left: 3px solid var(--gc-primary);
   padding: 0.25rem 0 0.25rem 0.75rem;
   margin: 0.5rem 0 1rem;
@@ -979,6 +987,116 @@ button.library-item:focus-visible {
   }
   .recipe-swap-line {
     display: block;
+  }
+  .recipe-swap-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .recipe-swap-problem {
+    margin: 0.5rem 0 0;
+    color: var(--gc-danger-text);
+    font-weight: 600;
+  }
+}
+
+// A recipe with lead: warned in the danger color, with Replace lead.
+.recipe-lead {
+  border-left-color: var(--gc-danger-text);
+}
+
+.recipe-lead-cone {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+  select {
+    width: auto;
+  }
+}
+
+// Suggest amounts' question: what brings back an oxide a swap leaves short.
+.recipe-suggest {
+  margin-top: 0.75rem;
+  h4 {
+    font-size: 1rem;
+    margin: 0 0 0.5rem;
+  }
+  fieldset {
+    margin: 0 0 0.75rem;
+  }
+  legend {
+    font-size: 0.95rem;
+    margin-bottom: 0.35rem;
+  }
+}
+
+// How a new recipe was made (Suggest amounts, Replace lead): what each material
+// does, what else would help, what to watch for; under Materials or in the compare view.
+.swap-report {
+  margin-top: 0.75rem;
+  .swap-report-heading {
+    font-size: 1rem;
+    margin: 0 0 0.5rem;
+  }
+  p {
+    margin: 0 0 0.5rem;
+  }
+  .swap-uses,
+  .swap-cautions {
+    padding-left: 1.1rem;
+    margin: 0 0 0.75rem;
+  }
+  .swap-uses li {
+    margin-bottom: 0.15rem;
+  }
+  .swap-action {
+    padding: 0 0.25rem;
+    vertical-align: baseline;
+  }
+  .swap-watch {
+    margin-bottom: 0.25rem;
+  }
+  .swap-cautions {
+    color: var(--gc-danger-text);
+  }
+}
+
+.compare-controls .swap-report {
+  max-width: 48rem;
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--gc-border);
+}
+
+// Materials to try in a substitution: what was added, each perhaps a must, then the list to add from.
+.try-materials {
+  margin: 0.5rem 0 0.75rem;
+  .try-intro {
+    font-size: 0.95rem;
+  }
+  .try-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 0.5rem;
+    li {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.25rem 0.75rem;
+      padding: 0.2rem 0;
+      border-bottom: 1px solid var(--gc-border);
+    }
+  }
+  .try-name {
+    font-weight: 600;
+  }
+  .form-check-inline {
+    margin: 0;
+  }
+  .try-remove {
+    padding: 0;
   }
 }
 
@@ -1214,5 +1332,110 @@ code {
   .app-main {
     max-width: none;
     padding: 0;
+  }
+}
+
+// Guides (pages/guides): contents, then sections as panels, with tables, callouts, a glossary and sources.
+.guide-note {
+  color: var(--gc-muted);
+  max-width: 48rem;
+}
+
+.guide-contents {
+  margin: 0 0 1.25rem;
+  .guide-contents-heading {
+    font-size: 1rem;
+    margin: 0 0 0.35rem;
+  }
+  ol {
+    columns: 2 16rem;
+    column-gap: 2rem;
+    margin: 0;
+    padding-left: 1.25rem;
+  }
+  li {
+    break-inside: avoid;
+    margin-bottom: 0.2rem;
+  }
+}
+
+.guide {
+  max-width: 52rem;
+  h2 {
+    scroll-margin-top: 1rem;
+    &:focus {
+      outline: none;
+    }
+    &:focus-visible {
+      outline: 2px solid var(--gc-primary);
+      outline-offset: 2px;
+    }
+  }
+  h3 {
+    font-size: 1.1rem;
+    margin-top: 1.25rem;
+  }
+  dl {
+    margin: 0;
+  }
+  dt {
+    font-weight: 600;
+    margin-top: 0.6rem;
+  }
+  dd {
+    margin: 0 0 0 1rem;
+  }
+}
+
+.guide-callout {
+  border-left: 3px solid var(--gc-primary);
+  padding: 0.35rem 0 0.35rem 0.75rem;
+  margin: 0.75rem 0;
+}
+
+.guide-warning {
+  border-left: 3px solid var(--gc-danger-text);
+  background: var(--gc-danger-bg);
+  border-radius: 0 var(--gc-radius) var(--gc-radius) 0;
+  padding: 0.5rem 0.75rem;
+  margin: 0.75rem 0;
+}
+
+.guide-table-scroll {
+  overflow-x: auto;
+  margin: 0.75rem 0;
+}
+
+.guide-table {
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  caption {
+    caption-side: top;
+    text-align: left;
+    font-weight: 600;
+    color: inherit;
+    padding: 0 0 0.35rem;
+  }
+  th,
+  td {
+    border-bottom: 1px solid var(--gc-border);
+    padding: 0.3rem 0.75rem 0.3rem 0;
+    text-align: left;
+    vertical-align: top;
+  }
+  thead th {
+    border-bottom-width: 2px;
+  }
+  .num {
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+.guide-sources {
+  font-size: 0.9rem;
+  li {
+    margin-bottom: 0.2rem;
+    overflow-wrap: anywhere;
   }
 }

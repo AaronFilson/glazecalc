@@ -30,9 +30,20 @@ materials, colorants, firing logs and notes together in one private notebook.
   in grams or in pounds (each shown in pounds and ounces), with colorants as a percent of the
   base, in parts or in grams; save a recipe and
   keep working on it, or open a saved one to change it.
-- **Compare two recipes side by side,** oxide by oxide, and try an old recipe with the modern
+- **Compare two recipes side by side,** oxide by oxide and by calculated thermal expansion, and try an old recipe with the modern
   materials that replace its discontinued ones (Custer Spar to G-200 EU), compared with the
-  original.
+  original. Where a swap is not like for like, it works the amounts out again, changing as few as
+  it can, from materials sold in your region or any you add, and says what each one does and what
+  to watch for past a recommended limit.
+- **Match with what I have:** make a recipe again from only the materials on hand, a list kept
+  with your account.
+- **Guides for new potters,** sourced: glazing from first principles with a glossary, how to make
+  a glaze, safe mixing and ventilation, pottery at home with children and pets, and firing a
+  basic kiln with cones, kiln sitters and manual switches.
+- **Lead off unless you choose it,** and old lead glazes rebuilt without it: Replace lead keeps
+  the glaze's silica and alumina and gives lead's work to boron and other fluxes, on a lead-free
+  base frit sold in your region with up to four other materials chosen for it, or keeps the
+  colour on a lead-free base.
 - **Print it for the glaze room:** the whole recipe with its unity formula and analysis, or just
   a batch list to tick off while weighing, with a running total for weighing into one bucket. One
   page on Letter or A4; weights in grams, or in pounds and ounces as set in your account.

@@ -1,11 +1,21 @@
 import { Component, computed, input, output, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { LibraryInfo } from '../../core/models';
-import { REGIONS, byName, inRegion, matchesWords, readRegion, saveRegion, statusText } from '../../shared/library-info';
+import {
+  REGIONS,
+  byName,
+  hasLead,
+  inRegion,
+  matchesWords,
+  readRegion,
+  saveRegion,
+  statusText
+} from '../../shared/library-info';
 
 export interface LibraryItem extends LibraryInfo {
   _id?: string;
   name: string;
+  fields?: Array<{ name: string; amount: string | number }>;
 }
 
 type Tab = 'mine' | 'standard';
@@ -23,7 +33,11 @@ let nextId = 0;
   template: `
     <div class="library">
       <div class="library-top">
-        <h3 class="library-heading">{{ heading() }}</h3>
+        @if (nested()) {
+          <h5 class="library-heading">{{ heading() }}</h5>
+        } @else {
+          <h3 class="library-heading">{{ heading() }}</h3>
+        }
         <div class="library-tabs" role="group" [attr.aria-label]="'Which ' + noun()">
           <button
             type="button"
@@ -32,7 +46,7 @@ let nextId = 0;
             [attr.aria-pressed]="tab() === 'mine'"
             (click)="chosenTab.set('mine')"
           >
-            My {{ noun() }} ({{ mine().length }})
+            My {{ noun() }} ({{ mineShown().length }})
           </button>
           <button
             type="button"
@@ -41,7 +55,7 @@ let nextId = 0;
             [attr.aria-pressed]="tab() === 'standard'"
             (click)="chosenTab.set('standard')"
           >
-            Standard ({{ standard().length }})
+            Standard ({{ standardShown().length }})
           </button>
         </div>
       </div>
@@ -82,7 +96,7 @@ let nextId = 0;
                     <span class="library-status">{{ status }}</span>
                   }
                 </span>
-                <span class="library-mark">In recipe</span>
+                <span class="library-mark">{{ markLabel() }}</span>
               </span>
             } @else {
               <button
@@ -114,6 +128,12 @@ let nextId = 0;
           </li>
         }
       </ul>
+      @if (leadHidden(); as hidden) {
+        <p class="library-hidden">
+          {{ hidden }} with lead {{ hidden === 1 ? 'is' : 'are' }} not listed: lead is off in
+          <a routerLink="/account">Settings</a>.
+        </p>
+      }
     </div>
   `
 })
@@ -127,6 +147,12 @@ export class RecipeLibrary<T extends LibraryItem = LibraryItem> {
   readonly inRecipe = input<ReadonlySet<string>>(new Set());
   readonly mineLink = input('/material');
   readonly mineLinkLabel = input('Materials page');
+  /** Leave out materials with lead: the account's lead setting is off. */
+  readonly hideLead = input(false);
+  /** What marks an item in inRecipe: "In recipe", or "Added" in a list to try. */
+  readonly markLabel = input('In recipe');
+  /** Inside a panel with its own heading: the heading a level below. */
+  readonly nested = input(false);
   readonly pick = output<T>();
 
   protected readonly filterId = 'library-filter-' + nextId++;
@@ -136,13 +162,22 @@ export class RecipeLibrary<T extends LibraryItem = LibraryItem> {
   protected readonly region = signal(readRegion());
   protected readonly statusText = statusText;
   protected readonly chosenTab = signal<Tab | null>(null);
+  private readonly addable = (item: T): boolean => !(this.hideLead() && hasLead(item));
+  protected readonly mineShown = computed(() => this.mine().filter(this.addable));
+  protected readonly standardShown = computed(() => this.standard().filter(this.addable));
   /** Your own list first when you have one. */
-  protected readonly tab = computed<Tab>(() => this.chosenTab() ?? (this.mine().length ? 'mine' : 'standard'));
+  protected readonly tab = computed<Tab>(() => this.chosenTab() ?? (this.mineShown().length ? 'mine' : 'standard'));
   /** Alphabetical; a filter matches names and the other names a material is sold under. */
   protected readonly shown = computed(() => {
     const standard = this.tab() === 'standard';
-    const list = standard ? this.standard().filter((item) => inRegion(item, this.region())) : this.mine();
+    const list = standard ? this.standardShown().filter((item) => inRegion(item, this.region())) : this.mineShown();
     return list.filter((item) => matchesWords(item, this.filter())).sort(byName);
+  });
+  /** How many in this tab are left out for their lead. */
+  protected readonly leadHidden = computed(() => {
+    const all = this.tab() === 'standard' ? this.standard() : this.mine();
+    const shown = this.tab() === 'standard' ? this.standardShown() : this.mineShown();
+    return all.length - shown.length;
   });
 
   protected setRegion(region: string): void {

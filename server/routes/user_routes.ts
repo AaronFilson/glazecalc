@@ -1,8 +1,10 @@
 // The signed-in account.
 //
 //   GET    /api/verify            who the session belongs to
-//   GET    /api/preferences       the account's (or trial's) choices: { weightUnit, gramPrecision, theme, palette }
+//   GET    /api/preferences       the account's (or trial's) choices: { weightUnit, gramPrecision, theme, palette, lead }
 //   PUT    /api/preferences       any of them (models/user.ts PREFERENCES lists what each may be)
+//   GET    /api/shelf             the materials the account (or trial) has on hand: { shelf: [key] }
+//   PUT    /api/shelf             { shelf: [key] } in place of the list
 //   PUT    /api/usersettings/:id  { displayname, email, settings, password }
 //   DELETE /api/deleteuser/:id    { password } removes the account and everything in it
 import express, { type NextFunction, type Request, type Response } from 'express';
@@ -43,7 +45,8 @@ const NOT_A_CHOICE: Record<keyof Preferences, string> = {
   weightUnit: 'Weights can be in grams (g) or pounds and ounces (lb).',
   gramPrecision: 'Grams can show to a tenth (single) or in full (full).',
   theme: 'The theme can follow the device (system), or be light or dark.',
-  palette: 'Choose one of the palettes: ' + PREFERENCES.palette.join(', ') + '.'
+  palette: 'Choose one of the palettes: ' + PREFERENCES.palette.join(', ') + '.',
+  lead: 'Lead can be off (never added or suggested) or on.'
 };
 
 /** Every preference: the one chosen, or the default. */
@@ -68,6 +71,30 @@ userRouter.put('/preferences', jwtAuth, express.json(), async (req, res) => {
     { returnDocument: 'after', projection: { preferences: 1 } }
   );
   return res.status(200).json(preferencesOf(user?.preferences));
+});
+
+// The materials on hand, for Match with what I have: library keys, as the
+// client's libraryKey makes them. Like the preferences, a trial may keep one.
+const SHELF_MOST = 500;
+const KEY_LONGEST = 200;
+const NOT_A_SHELF = `The shelf is a list of up to ${SHELF_MOST} materials.`;
+
+userRouter.get('/shelf', jwtAuth, (req, res) => {
+  res.status(200).json({ shelf: userOf(req).shelf ?? [] });
+});
+
+userRouter.put('/shelf', jwtAuth, express.json(), async (req, res) => {
+  const shelf = ((req.body ?? {}) as { shelf?: unknown }).shelf;
+  const keys = Array.isArray(shelf) ? [...new Set(shelf)] : null;
+  if (
+    !keys ||
+    keys.length > SHELF_MOST ||
+    keys.some((key) => typeof key !== 'string' || !key || key.length > KEY_LONGEST)
+  ) {
+    return res.status(400).json({ msg: NOT_A_SHELF });
+  }
+  await User.updateOne({ _id: userOf(req)._id }, { $set: { shelf: keys } });
+  return res.status(200).json({ shelf: keys });
 });
 
 // Users may only change or delete their own account; admins may act on any.

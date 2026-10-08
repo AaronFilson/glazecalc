@@ -25,6 +25,16 @@ describe('comparing two unity formulas', () => {
     expect(balance['Loss on ignition, %']).toEqual([10, 12]);
   });
 
+  it("compares the calculated expansion, working it out from a saved recipe's analysis when it has no figure", () => {
+    const left = analysis({ CaO: 1, SiO2: 2 }, { analysis: { CaO: 30, SiO2: 70 } });
+    const right = analysis({ Na2O: 1, SiO2: 2 }, { expansion: 9.5 });
+    const balance = compareUnity(left, right).at(-1)!;
+    const row = balance.rows.find((r) => r.label === 'Expansion, ×10⁻⁶/°C')!;
+    expect(row.left).toBeCloseTo(30 * 0.148 + 70 * 0.035, 9);
+    expect(row.right).toBe(9.5);
+    expect(formatChange(row.change, row.places)).toBe('+' + (9.5 - (30 * 0.148 + 70 * 0.035)).toFixed(2));
+  });
+
   it('shows one side when the other has no recipe or no unity formula yet', () => {
     const groups = compareUnity(analysis({ CaO: 1, SiO2: 2, ZrO2: 0.1 }), null);
     // Anything else goes under a fourth column, shown only when there is any.

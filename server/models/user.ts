@@ -13,12 +13,14 @@ export type TokenLifetime = `${number}d`;
  *   gramPrecision  grams to a tenth (hundredths under 10 g), or in full
  *   theme          light or dark as the device is set, or always one
  *   palette        the colors of buttons, links and tabs, named for glazes
+ *   lead           whether materials with lead may be added to recipes and suggested
  */
 export const PREFERENCES = {
   weightUnit: ['g', 'lb'],
   gramPrecision: ['single', 'full'],
   theme: ['system', 'light', 'dark'],
-  palette: ['tenmoku', 'celadon', 'cobalt', 'oxblood', 'shino', 'ash']
+  palette: ['tenmoku', 'celadon', 'cobalt', 'oxblood', 'shino', 'ash'],
+  lead: ['off', 'on']
 } as const;
 export type Preferences = { -readonly [K in keyof typeof PREFERENCES]: (typeof PREFERENCES)[K][number] };
 
@@ -30,6 +32,11 @@ export interface UserFields {
   settings: string[];
   /** Choices that shape how the app shows things; any account or trial may set them. */
   preferences?: Partial<Preferences>;
+  /**
+   * The materials the potter has on hand, for Match with what I have: library
+   * keys (a standard or own material's _id, or "name:" and its name).
+   */
+  shelf?: string[];
   /**
    * Goes up when the password changes; login tokens carry it, so older tokens
    * (on other devices, or a stolen one) stop working.
@@ -62,8 +69,10 @@ const userSchema = new mongoose.Schema<UserFields, UserModel, UserMethods>({
     weightUnit: { type: String, enum: PREFERENCES.weightUnit },
     gramPrecision: { type: String, enum: PREFERENCES.gramPrecision },
     theme: { type: String, enum: PREFERENCES.theme },
-    palette: { type: String, enum: PREFERENCES.palette }
+    palette: { type: String, enum: PREFERENCES.palette },
+    lead: { type: String, enum: PREFERENCES.lead }
   },
+  shelf: { type: [String], default: undefined },
   tokenVersion: { type: Number, default: 0 },
   guest: Boolean,
   expiresAt: Date,
