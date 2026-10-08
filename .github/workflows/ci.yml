@@ -15,7 +15,11 @@ jobs:
     name: Node 24
     # A pinned Ubuntu, so a new one (and its fonts, which change layouts) comes by
     # choice. npm run test:e2e:linux builds its image from the version named here.
-    runs-on: ubuntu-26.04
+    # Not 26.04 yet: its runners have Linux 7.0, and MongoDB 8 and later stop at
+    # startup on kernels 6.19 through 7.0.13 (its production notes), so neither the
+    # MongoDB service here nor the one in the Docker job comes up. Move once the
+    # 26.04 runners have kernel 7.0.14 or later.
+    runs-on: ubuntu-24.04
     timeout-minutes: 20
 
     services:
@@ -73,7 +77,8 @@ jobs:
   # Builds the production image and runs it with MongoDB, as compose.yaml does.
   docker:
     name: Docker image
-    runs-on: ubuntu-26.04
+    # 24.04 for MongoDB's sake, as above.
+    runs-on: ubuntu-24.04
     timeout-minutes: 15
     env:
       APP_SECRET: ci-only-secret
