@@ -175,7 +175,8 @@ describe('the trial bar', () => {
     ) as HTMLButtonElement;
 
   it('names the trial and its end date, with no sign-out button', async () => {
-    storeTrial(new Date(2026, 9, 12, 12));
+    // Far in the future, so the trial never runs out before the test does (12 October 2099 is a Monday).
+    storeTrial(new Date(2099, 9, 12, 12));
     setup();
     const { fixture } = await create(App);
     httpMock().expectOne(API + '/verify');
