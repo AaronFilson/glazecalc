@@ -1,4 +1,5 @@
 import { Component, input } from '@angular/core';
+import { TranslocoDirective } from '@jsverse/transloco';
 
 /** A section of a guide, for its contents list. */
 export interface GuideSection {
@@ -13,9 +14,10 @@ export interface GuideSection {
  */
 @Component({
   selector: 'gc-guide-contents',
-  template: `
-    <nav class="guide-contents" aria-label="On this page">
-      <h2 class="guide-contents-heading">On this page</h2>
+  imports: [TranslocoDirective],
+  template: `<ng-container *transloco="let t">
+    <nav class="guide-contents" [attr.aria-label]="t('guides.contents')">
+      <h2 class="guide-contents-heading">{{ t('guides.contents') }}</h2>
       <ol>
         @for (section of sections(); track section.id) {
           <li>
@@ -24,7 +26,7 @@ export interface GuideSection {
         }
       </ol>
     </nav>
-  `
+  </ng-container>`
 })
 export class GuideContents {
   readonly sections = input.required<GuideSection[]>();

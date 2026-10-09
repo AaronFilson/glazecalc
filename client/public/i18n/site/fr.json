@@ -1,0 +1,111 @@
+{
+  "landing": {
+    "eyebrow": "Calculateur d’émaux et carnet d’atelier",
+    "heading": "La chimie des émaux, gratuite, pour les céramistes.",
+    "lead": "Comprenez vos émaux au lieu de seulement les préparer. Saisissez une recette et voyez aussitôt sa formule de Seger (UMF), son rapport silice/alumine et l’équilibre de ses fondants. Gardez vos recettes, matières, colorants, notes et relevés de cuisson ensemble, dans un carnet privé.",
+    "trialEnded": "Votre période d’essai est terminée. Commencez-en une nouvelle, ou créez un compte gratuit pour conserver votre travail.",
+    "tryIt": "Essayer maintenant",
+    "createAccount": "Créer un compte gratuit",
+    "trialFailed": "Impossible de lancer une période d’essai pour le moment. Veuillez réessayer.",
+    "heroNote": "Essai sans inscription · Gratuit et open source · Vos recettes restent privées",
+    "heroAlt": "Une rangée de jeux de cônes après cuisson : dans chaque jeu, les cônes pyrométriques blancs se sont courbés sous la chaleur du four.",
+    "heroCaption": "Jeux de cônes après une cuisson : chaque cône se courbe une fois que le four a fourni assez de travail thermique.",
+    "exampleHeading": "Un exemple : une base céladon classique",
+    "exampleCaption": "Le « 4321 » de Bernard Leach, souvent cuit au cône 10, en parts en poids.",
+    "material": "Matière",
+    "parts": "Parts",
+    "unityHeading": "Sa formule de Seger",
+    "exampleNote": "La somme des fondants vaut 1, ce qui permet de comparer équitablement deux émaux quels qu’ils soient. Le calcul est fait ici même, dans votre navigateur, par le même code que celui du calculateur.",
+    "featuresHeading": "Ce que fait Glazecalc",
+    "features": {
+      "unity": {
+        "title": "La formule de Seger, instantanément",
+        "text": "Voyez les fondants, l’alumine et la silice en formule de Seger, comme les chimistes des émaux comparent les recettes, dès que vous saisissez une recette."
+      },
+      "substitute": {
+        "title": "Corriger et remplacer",
+        "text": "Une matière n’est plus fabriquée ? Comparez les formules pour trouver un substitut qui fond de la même façon."
+      },
+      "notebook": {
+        "title": "Votre carnet d’atelier",
+        "text": "Gardez ensemble, au même endroit, vos recettes, vos propres matières, vos colorants, vos notes et vos relevés de cuisson."
+      },
+      "learn": {
+        "title": "Apprendre en pratiquant",
+        "text": "Des guides en langage simple, de ce qu’est un émail jusqu’à sa cuisson en toute sécurité, accompagnent les chiffres."
+      }
+    },
+    "umfHeading": "Qu’est-ce que la formule de Seger (UMF) ?",
+    "umfRecipe": "Une recette d’émail indique la quantité de chaque matière à peser. La formule de Seger, aussi appelée formule unitaire, indique ce que deviennent ces matières dans le four : combien de molécules de chaque oxyde il y a, ramenées à une échelle où la somme des fondants vaut un.",
+    "umfGroups": "Les fondants font fondre l’émail, l’alumine rend l’émail en fusion plus visqueux et la silice forme le verre. Comparer ces trois groupes explique pourquoi un émail est brillant et un autre mat, ou pourquoi l’un coule alors qu’un autre reste en place, et montre comment remplacer une matière qui n’est plus vendue.",
+    "readAdvice": "Lire d’autres conseils sur les émaux",
+    "closingHeading": "À vous de jouer.",
+    "closingText": "Essayez le calculateur dès maintenant, puis créez un compte pour conserver ce que vous avez fait."
+  },
+  "about": {
+    "title": "À propos de Glazecalc",
+    "lead": "Un calculateur de chimie des émaux et un carnet, gratuits et open source, pour les potiers, les céramistes et les étudiants.",
+    "whatHeading": "Ce qu’il fait",
+    "what": "Glazecalc transforme une recette d’émail, c’est-à-dire les matières et la quantité de chacune que vous pesez, en sa formule de Seger (UMF) : les oxydes qui composent l’émail une fois cuit, ramenés à une échelle où la somme des fondants vaut un. Les recettes deviennent ainsi comparables ; cela aide à comprendre le comportement d’un émail, et à remplacer une matière quand il le faut.",
+    "alongside": "À côté du calculateur, il conserve vos recettes, vos propres matières, vos colorants et autres additifs, vos notes et vos relevés de cuisson, une page de <advice>conseils pratiques sur les émaux</advice> et des <guides>guides</guides> pour les céramistes débutants, de ce qu’est un émail jusqu’à sa cuisson en toute sécurité.",
+    "numbersHeading": "Comment les chiffres sont calculés",
+    "numbers": "Chaque matière est décrite par sa formule chimique ou par une analyse en oxydes, plus sa perte au feu (PAF) : la part qui disparaît dans le four, comme le dioxyde de carbone du carbonate de calcium ou l’eau du kaolin. Glazecalc convertit chaque quantité en moles de chaque oxyde à l’aide des masses molaires standard, les additionne sur toute la recette, puis divise par le nombre total de moles de fondants. Les colorants et autres additifs figurent dans la recette mais sont exclus de la formule de Seger, comme c’est l’usage.",
+    "guide": "Les résultats sont une indication, pas une garantie. Les matières réelles varient d’un fournisseur à l’autre et d’un lot à l’autre, et la cuisson compte autant que la chimie : testez donc chaque émail. Les émaux destinés aux surfaces en contact avec les aliments devraient faire l’objet d’un test de relargage.",
+    "builtHeading": "Comment il est construit",
+    "built": "Glazecalc a vu le jour en 2017 et a été reconstruit en 2026. C’est une petite application web, et son <source>code source est sur GitHub</source> sous licence MIT.",
+    "stackBrowser": "Angular 22 dans le navigateur (composants autonomes et signaux), avec la chimie des émaux dans une petite bibliothèque partagée.",
+    "stackServer": "Une API TypeScript sur Node.js 24 et Express 5, avec MongoDB 9, vérifiée par plus de 350 tests automatisés.",
+    "stackHosting": "Fonctionne dans Docker sur Amazon Web Services, derrière nginx, avec HTTPS fourni par Let’s Encrypt.",
+    "stackDeploy": "Déployé par GitHub Actions : les images sont construites et testées à chaque modification, et les déploiements se connectent à AWS sans clés stockées.",
+    "whoHeading": "Qui l’a créé",
+    "who": "Glazecalc est créé par Aaron Filson. Un problème ou une idée ? <issues>Ouvrez un ticket sur GitHub</issues>.",
+    "studio": "Les poteries faites main d’Aaron Filson sont à découvrir sur <studio>Updraft Pottery Studio</studio>, à Tacoma, dans l’État de Washington. Jetez un œil à ses pièces, et commandez-en une si l’une d’elles vous parle."
+  },
+  "privacy": {
+    "title": "Confidentialité",
+    "lead": "Dernière mise à jour : octobre 2026.",
+    "shortHeading": "En bref",
+    "short": "Glazecalc conserve ce dont il a besoin pour faire fonctionner votre compte, et rien de plus. Il n’y a ni publicité, ni outil de mesure d’audience, ni cookie de suivi, ni script tiers. Vos données ne sont jamais vendues ni partagées.",
+    "storedHeading": "Ce qui est stocké",
+    "storedAccount": "<b>Votre compte :</b> votre adresse e-mail et votre mot de passe, qui n’est stocké que sous forme de hachage à sens unique (bcrypt), jamais tel quel.",
+    "storedTrial": "<b>Une période d’essai (Essayer maintenant) :</b> ni e-mail ni mot de passe, seulement un nom généré, comme « speckled quiet kilns ». Une période d’essai et tout ce qui y est enregistré sont supprimés automatiquement 14 jours après son début, sauf si vous créez un compte pour les conserver.",
+    "storedSaved": "<b>Ce que vous enregistrez :</b> vos recettes, matières, additifs, notes, relevés de cuisson et conseils. Les autres utilisateurs ne peuvent pas les voir.",
+    "storedResets": "<b>Demandes de réinitialisation du mot de passe :</b> une empreinte de chaque lien de réinitialisation (pas le lien lui-même), supprimée automatiquement quand elle expire, 30 minutes plus tard.",
+    "storedBrowser": "<b>Dans votre navigateur :</b> un cookie, <code>glazecalc_session</code>, qui maintient votre session ouverte. Il contient votre jeton de connexion, les scripts de la page ne peuvent pas le lire, il n’est envoyé qu’au serveur de Glazecalc lui-même, et il dure 7 jours (14 pour une période d’essai). Le stockage local conserve une note indiquant que votre session est ouverte et, pendant une période d’essai, son nom et sa date de fin. La déconnexion les supprime.",
+    "emailHeading": "E-mail",
+    "email": "Glazecalc n’envoie d’e-mail que lorsque vous demandez à réinitialiser votre mot de passe et lorsque votre mot de passe change. Les e-mails sont envoyés par Amazon Simple Email Service. Il n’y a ni lettre d’information ni e-mail publicitaire.",
+    "hostingHeading": "Journaux, sauvegardes et hébergement",
+    "logs": "Le serveur web enregistre chaque requête, y compris votre adresse IP, dans un journal conservé 14 jours pour faire fonctionner et sécuriser le site.",
+    "backups": "Des sauvegardes chiffrées de la base de données sont conservées 30 jours, et des copies du disque du serveur 7 jours, pour pouvoir restaurer le site après une panne.",
+    "hosting": "Tout est hébergé par Amazon Web Services aux États-Unis (Oregon).",
+    "deletingHeading": "Supprimer vos données",
+    "deleting": "Vous pouvez supprimer votre compte depuis votre <account>page de compte</account>. Cela supprime immédiatement votre compte et tout ce que vous avez enregistré ; le bouton Abandonner l’essai fait de même pour une période d’essai. Les copies présentes dans les sauvegardes disparaissent à mesure que ces sauvegardes expirent, sous 30 jours.",
+    "questionsHeading": "Questions",
+    "questions": "Posez-les en <issues>ouvrant un ticket sur GitHub</issues>. Si cette politique change, la date en haut de cette page change aussi."
+  },
+  "notFound": {
+    "heading": "Page introuvable",
+    "text": "Il n’y a aucune page à cette adresse. Elle a peut-être été déplacée, ou le lien contient peut-être une faute de frappe.",
+    "start": "Aller à la page d’accueil"
+  },
+  "advice": {
+    "title": "Conseils sur les émaux",
+    "lead": "Des conseils pratiques sur la préparation, l’émaillage et la cuisson, ainsi que vos propres conseils.",
+    "signUp": "<signup>Créez un compte gratuit</signup> ou <signin>connectez-vous</signin> pour conserver vos propres conseils.",
+    "generalHeading": "Conseils généraux",
+    "tags": "Mots-clés : {list}",
+    "addHeading": "Ajouter vos propres conseils",
+    "titleLabel": "Titre :",
+    "tagsLabel": "Mots-clés :",
+    "contentLabel": "Contenu du conseil :",
+    "save": "Enregistrer",
+    "mineHeading": "Mes conseils",
+    "nothingSaved": "Rien d’enregistré pour l’instant.",
+    "titleMissing": "Donnez un titre au conseil.",
+    "contentMissing": "Rédigez le conseil.",
+    "fetchFailed": "Impossible de charger les conseils.",
+    "standardFetchFailed": "Impossible de charger les conseils du serveur.",
+    "saved": "Conseil ajouté.",
+    "saveFailed": "Impossible d’envoyer le conseil."
+  }
+}

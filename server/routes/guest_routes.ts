@@ -25,14 +25,13 @@ import * as password from '../lib/password.ts';
 import * as limits from '../lib/rate_limit.ts';
 import * as session from '../lib/session.ts';
 import User from '../models/user.ts';
+import { say } from '../lib/messages.ts';
 
 const TRIAL_DAYS = 14;
 // Plain names first; after that many clashes a number is added. With about
 // 930,000 names and at most a few hundred trials, even one clash is rare.
 const PLAIN_TRIES = 5;
 const ALL_TRIES = 10;
-const EXISTS = 'An account with that email already exists.';
-const NOT_A_TRIAL = 'This account is not a trial.';
 
 const maxActive = (): number => Number(process.env.GUEST_MAX_ACTIVE) || 500;
 
@@ -40,12 +39,10 @@ const guestRouter = express.Router();
 export default guestRouter;
 
 guestRouter.post('/', limits.guest, async (req, res) => {
-  if (process.env.GUEST_TRIAL === 'off') return res.status(404).json({ msg: 'Not found' });
+  if (process.env.GUEST_TRIAL === 'off') return res.status(404).json(say('not-found'));
   const now = new Date();
   if ((await User.countDocuments({ guest: true, expiresAt: { $gt: now } })) >= maxActive()) {
-    return res
-      .status(503)
-      .json({ msg: 'Too many people are trying Glazecalc right now. Please create a free account instead.' });
+    return res.status(503).json(say('trials-full'));
   }
   const unusable = await password.hash(crypto.randomBytes(32).toString('base64url'));
   const expiresAt = new Date(now.getTime() + TRIAL_DAYS * 24 * 60 * 60 * 1000);
@@ -72,21 +69,21 @@ guestRouter.post('/', limits.guest, async (req, res) => {
       if (!isDuplicateKey(err)) throw err;
     }
   }
-  return res.status(503).json({ msg: 'Could not start a trial just now. Please try again.' });
+  return res.status(503).json(say('trial-failed'));
 });
 
 guestRouter.post('/claim', limits.signUp, jwtAuth, express.json(), async (req, res) => {
   const trial = userOf(req);
-  if (!trial.guest) return res.status(403).json({ msg: NOT_A_TRIAL });
+  if (!trial.guest) return res.status(403).json(say('not-a-trial'));
   const body = (req.body ?? {}) as { email?: unknown; password?: unknown };
   const address = email.normalize(body.email);
-  if (!email.isValid(address)) return res.status(400).json({ msg: 'Please enter an email', field: 'email' });
+  if (!email.isValid(address)) return res.status(400).json(say('email-required', undefined, { field: 'email' }));
   const problem = password.problem(body.password);
-  if (problem) return res.status(400).json({ msg: problem, field: 'password' });
+  if (problem) return res.status(400).json(say(problem, undefined, { field: 'password' }));
 
   try {
     if (await User.exists({ email: address }).collation(email.collation)) {
-      return res.status(400).json({ msg: EXISTS, field: 'email' });
+      return res.status(400).json(say('account-exists', undefined, { field: 'email' }));
     }
     const hash = await password.hash(body.password as string);
     // The trial's records are already its own, so keeping them is just turning
@@ -102,12 +99,12 @@ guestRouter.post('/claim', limits.signUp, jwtAuth, express.json(), async (req, r
       { returnDocument: 'after' }
     );
     // Claimed or discarded by another request in the meantime.
-    if (!user) return res.status(403).json({ msg: NOT_A_TRIAL });
+    if (!user) return res.status(403).json(say('not-a-trial'));
     session.start(res, user);
     return res.status(200).json({ email: user.email });
   } catch (err) {
     // The unique index catches a sign-up for the same email racing this one.
-    if (isDuplicateKey(err)) return res.status(400).json({ msg: EXISTS, field: 'email' });
+    if (isDuplicateKey(err)) return res.status(400).json(say('account-exists', undefined, { field: 'email' }));
     throw err;
   }
 });

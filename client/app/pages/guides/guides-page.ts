@@ -1,61 +1,56 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { TranslocoDirective } from '@jsverse/transloco';
+import { marker } from '@jsverse/transloco-keys-manager/marker';
 import { PageHeader } from '../../shared/page-header';
 
-/** The guides, in the order a new potter would read them. */
+/** The guides, in the order a new potter would read them; title and text are message keys. */
 export const GUIDES = [
   {
     path: '/guides/glazing-basics',
-    title: 'Glazing from first principles',
-    text: 'What a glaze is, how it melts, and every word you will meet on a recipe or a bag, explained.'
+    title: marker('guides.list.glazingBasics.title'),
+    text: marker('guides.list.glazingBasics.text')
   },
   {
     path: '/guides/making-a-glaze',
-    title: 'How to make a glaze',
-    text: 'Buying, storing, weighing, mixing and sieving a glaze, then testing it and keeping records.'
+    title: marker('guides.list.makingAGlaze.title'),
+    text: marker('guides.list.makingAGlaze.text')
   },
   {
     path: '/guides/safe-mixing',
-    title: 'Safe mixing and ventilation',
-    text: 'Dust, respirators, cleaning, the materials that need most care, and venting the kiln.'
+    title: marker('guides.list.safeMixing.title'),
+    text: marker('guides.list.safeMixing.text')
   },
   {
     path: '/guides/home-safety',
-    title: "Don't poison your family",
-    text: 'Pottery at home with children and pets: storage, dust, the kiln, and what to do if something is swallowed.'
+    title: marker('guides.list.homeSafety.title'),
+    text: marker('guides.list.homeSafety.text')
   },
   {
     path: '/guides/firing',
-    title: 'Firing a basic kiln',
-    text: 'Cones, kiln sitters and manual switches, with schedules for bisque and glaze firings.'
+    title: marker('guides.list.firing.title'),
+    text: marker('guides.list.firing.text')
   }
 ] as const;
 
 /** The guides for new potters, listed. */
 @Component({
   selector: 'gc-guides-page',
-  imports: [PageHeader, RouterLink],
-  template: `
-    <gc-page-header
-      title="Guides"
-      lead="Plain-language guides for new potters: from what a glaze is to firing it, and keeping everyone safe on the way."
-    />
+  imports: [PageHeader, RouterLink, TranslocoDirective],
+  template: `<ng-container *transloco="let t">
+    <gc-page-header [title]="t('guides.list.title')" [lead]="t('guides.list.lead')" />
     <ul class="guide-cards">
       @for (guide of guides; track guide.path) {
         <li>
           <a [routerLink]="guide.path" class="panel guide-card">
-            <h2>{{ guide.title }}</h2>
-            <p>{{ guide.text }}</p>
+            <h2>{{ t(guide.title) }}</h2>
+            <p>{{ t(guide.text) }}</p>
           </a>
         </li>
       }
     </ul>
-    <p class="guide-note">
-      These guides gather what manufacturers, safety agencies and experienced potters publish, with the sources at the
-      end of each. They are a starting point, not a substitute for your materials' safety data sheets, your kiln's
-      manual or local rules.
-    </p>
-  `,
+    <p class="guide-note">{{ t('guides.list.note') }}</p>
+  </ng-container>`,
   styles: `
     .guide-cards {
       display: grid;

@@ -1,6 +1,7 @@
 import { Component, inject, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
+import { TranslocoDirective, translate } from '@jsverse/transloco';
 import { AuthService } from '../../core/auth.service';
 import { errorMessage } from '../../core/error-message';
 import { FieldCheck, FieldChecks, emailAddress } from '../../shared/field-checks';
@@ -9,19 +10,19 @@ import { Notices, NoticesList } from '../../shared/notices';
 /** Asks for a password reset email. */
 @Component({
   selector: 'gc-forgot-page',
-  imports: [FieldCheck, FormsModule, NoticesList, RouterLink],
-  template: `
+  imports: [FieldCheck, FormsModule, NoticesList, RouterLink, TranslocoDirective],
+  template: `<ng-container *transloco="let t">
     <gc-notices [notices]="notices" />
     <section class="auth-text">
-      <h1>Reset your password</h1>
+      <h1>{{ t('account.forgot.heading') }}</h1>
       @if (sent(); as message) {
         <p class="sent-text" role="status">{{ message }}</p>
-        <p>Check your inbox and junk folder. If nothing arrives, check the address and ask again.</p>
+        <p>{{ t('account.forgot.checkInbox') }}</p>
       } @else {
-        <p>Enter the email for your account, and we will send you a link to choose a new password.</p>
+        <p>{{ t('account.forgot.intro') }}</p>
         <form (ngSubmit)="submit()" class="d-flex flex-wrap align-items-center gap-3 mb-3">
           <div>
-            <label for="email">Email: </label>
+            <label for="email">{{ t('account.forgot.email') }} </label>
             <input
               id="email"
               type="email"
@@ -33,12 +34,16 @@ import { Notices, NoticesList } from '../../shared/notices';
               gcFieldName="email"
             />
           </div>
-          <button type="submit" class="btn btn-success" [attr.aria-disabled]="busy() || null">Send reset link</button>
+          <button type="submit" class="btn btn-success" [attr.aria-disabled]="busy() || null">
+            {{ t('account.forgot.send') }}
+          </button>
         </form>
       }
-      <p><a routerLink="/signin" class="btn btn-light border">Back to sign in</a></p>
+      <p>
+        <a routerLink="/signin" class="btn btn-light border">{{ t('account.forgot.back') }}</a>
+      </p>
     </section>
-  `
+  </ng-container>`
 })
 export class ForgotPage {
   private readonly auth = inject(AuthService);
@@ -56,7 +61,7 @@ export class ForgotPage {
       this.sent.set(await this.auth.requestReset(this.email()));
     } catch (err) {
       if (this.checks.reportServer(err)) return;
-      this.notices.error(errorMessage(err, 'Error: could not send the reset email. Please try again.'));
+      this.notices.error(errorMessage(err, translate('account.forgot.failed')));
     } finally {
       this.busy.set(false);
     }

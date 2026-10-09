@@ -1,0 +1,62 @@
+{
+  "version": {
+    "cones": "This guide is shown for firing to cones, as set in Settings.",
+    "temperature": "This guide is shown for firing by temperature, as set in Settings.",
+    "showTemperature": "Show it for firing by temperature",
+    "showCones": "Show it for firing to cones"
+  },
+  "notTranslated": "This guide is not translated yet, so it is shown in English.",
+  "sectionInEnglish": "This section has changed since it was translated, so it is shown in English until its translation is brought up to date.",
+  "list": {
+    "title": "Guides",
+    "lead": "Plain-language guides for new potters: from what a glaze is to firing it, and keeping everyone safe on the way.",
+    "note": "These guides gather what manufacturers, safety agencies and experienced potters publish, with the sources at the end of each. They are a starting point, not a substitute for your materials' safety data sheets, your kiln's manual or local rules.",
+    "glazingBasics": {
+      "title": "Glazing from first principles",
+      "text": "What a glaze is, how it melts, and every word you will meet on a recipe or a bag, explained."
+    },
+    "makingAGlaze": {
+      "title": "How to make a glaze",
+      "text": "Buying, storing, weighing, mixing and sieving a glaze, then testing it and keeping records."
+    },
+    "safeMixing": {
+      "title": "Safe mixing and ventilation",
+      "text": "Dust, respirators, cleaning, the materials that need most care, and venting the kiln."
+    },
+    "homeSafety": {
+      "title": "Don't poison your family",
+      "text": "Pottery at home with children and pets: storage, dust, the kiln, and what to do if something is swallowed."
+    },
+    "firing": {
+      "title": "Firing a basic kiln",
+      "text": "Cones, kiln sitters and manual switches, with schedules for bisque and glaze firings."
+    }
+  },
+  "contents": "On this page",
+  "poison": {
+    "numbersFor": "Numbers for",
+    "choose": "Choose your country",
+    "label": "Who to call in {region}",
+    "caption": "Who to call in {region} (numbers checked {date})",
+    "for": "For",
+    "call": "Call",
+    "notes": "Hours and notes",
+    "emergency": "An emergency: unconscious, not breathing, a seizure",
+    "poisonAdvice": "{who, select, children {Poison advice: {name} (children only)} other {Poison advice: {name}}}",
+    "or": "or {number}",
+    "online": "Online: <link>{name}</link>.",
+    "poisonAdviceNone": "Poison advice",
+    "noLine": "We could not confirm a public poison line here. Call your doctor, or the emergency number if it is urgent.",
+    "medicalAdvice": "Medical advice: {name}",
+    "animals": "Animals: {name}",
+    "animalsNone": "Animals",
+    "vet": "Call your vet.",
+    "checkedOn": "Checked on:",
+    "choosePrompt": "Choose your country to see who to call there."
+  },
+  "density": {
+    "sg": "SG {value}",
+    "baume": "{value} °Bé ({sg})",
+    "pint": "{value} oz per imperial pint ({sg})"
+  }
+}

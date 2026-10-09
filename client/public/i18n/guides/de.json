@@ -1,0 +1,62 @@
+{
+  "version": {
+    "cones": "Diese Anleitung wird für das Brennen nach Kegeln angezeigt, wie in den Einstellungen festgelegt.",
+    "temperature": "Diese Anleitung wird für das Brennen nach Temperatur angezeigt, wie in den Einstellungen festgelegt.",
+    "showTemperature": "Für das Brennen nach Temperatur anzeigen",
+    "showCones": "Für das Brennen nach Kegeln anzeigen"
+  },
+  "notTranslated": "Diese Anleitung ist noch nicht übersetzt und wird daher auf Englisch angezeigt.",
+  "sectionInEnglish": "Dieser Abschnitt wurde seit der Übersetzung geändert und wird daher auf Englisch angezeigt, bis seine Übersetzung auf dem neuesten Stand ist.",
+  "list": {
+    "title": "Anleitungen",
+    "lead": "Leicht verständliche Anleitungen für alle, die mit dem Töpfern beginnen: von der Frage, was eine Glasur ist, bis zum Brennen – und wie dabei alle sicher bleiben.",
+    "note": "Diese Anleitungen fassen zusammen, was Hersteller, Arbeitsschutzbehörden und erfahrene Töpferinnen und Töpfer veröffentlichen, mit den Quellen jeweils am Ende. Sie sind ein Ausgangspunkt, kein Ersatz für die Sicherheitsdatenblätter Ihrer Rohstoffe, die Bedienungsanleitung Ihres Ofens oder die Vorschriften vor Ort.",
+    "glazingBasics": {
+      "title": "Glasieren von Grund auf",
+      "text": "Was eine Glasur ist, wie sie schmilzt – und jeder Begriff erklärt, der Ihnen in einem Rezept oder auf einem Sack begegnet."
+    },
+    "makingAGlaze": {
+      "title": "Eine Glasur ansetzen",
+      "text": "Eine Glasur einkaufen, lagern, abwiegen, anrühren und sieben, dann testen und Buch führen."
+    },
+    "safeMixing": {
+      "title": "Sicheres Anmischen und Lüften",
+      "text": "Staub, Atemschutzmasken, Reinigung, die Rohstoffe, die am meisten Vorsicht verlangen, und das Entlüften des Ofens."
+    },
+    "homeSafety": {
+      "title": "Vergiften Sie Ihre Familie nicht",
+      "text": "Töpfern zu Hause mit Kindern und Haustieren: Aufbewahrung, Staub, der Ofen und was zu tun ist, wenn etwas verschluckt wurde."
+    },
+    "firing": {
+      "title": "Brennen mit einem einfachen Ofen",
+      "text": "Kegel, Kiln-Sitter und Handschaltung, mit Brennkurven für den Schrühbrand und den Glasurbrand."
+    }
+  },
+  "contents": "Auf dieser Seite",
+  "poison": {
+    "numbersFor": "Nummern für",
+    "choose": "Land auswählen",
+    "label": "Wen Sie anrufen: {region}",
+    "caption": "Wen Sie anrufen: {region} (Nummern geprüft am {date})",
+    "for": "Wofür",
+    "call": "Rufnummer",
+    "notes": "Zeiten und Hinweise",
+    "emergency": "Ein Notfall: bewusstlos, atmet nicht, ein Krampfanfall",
+    "poisonAdvice": "{who, select, children {Giftberatung: {name} (nur für Kinder)} other {Giftberatung: {name}}}",
+    "or": "oder {number}",
+    "online": "Online: <link>{name}</link>.",
+    "poisonAdviceNone": "Giftberatung",
+    "noLine": "Wir konnten hier keinen öffentlichen Giftnotruf bestätigen. Rufen Sie Ihre Arztpraxis an oder, wenn es dringend ist, die Notrufnummer.",
+    "medicalAdvice": "Medizinische Beratung: {name}",
+    "animals": "Tiere: {name}",
+    "animalsNone": "Tiere",
+    "vet": "Rufen Sie Ihre Tierarztpraxis an.",
+    "checkedOn": "Geprüft anhand von:",
+    "choosePrompt": "Wählen Sie Ihr Land, um zu sehen, wen Sie dort anrufen."
+  },
+  "density": {
+    "sg": "spez. Gewicht {value}",
+    "baume": "{value} °Bé ({sg})",
+    "pint": "{value} oz je britischem Pint ({sg})"
+  }
+}

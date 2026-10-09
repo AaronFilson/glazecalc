@@ -6,6 +6,7 @@ import User, { type UserDocument } from '../models/user.ts';
 import appSecret from './app_secret.ts';
 import * as guestLimits from './guest_limits.ts';
 import * as session from './session.ts';
+import { say } from './messages.ts';
 
 /**
  * The sign-in token: from an `Authorization: Bearer` header (scripts and tests),
@@ -58,7 +59,7 @@ export const userOf = (req: Request): UserDocument => {
 export default async function jwtAuth(req: Request, res: Response, next: NextFunction): Promise<void> {
   const user = await currentUser(req);
   if (!user) {
-    res.status(401).json({ msg: 'could not authenticate user' });
+    res.status(401).json(say('not-signed-in'));
     return;
   }
   req.user = user;

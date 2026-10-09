@@ -1,0 +1,88 @@
+{
+  "home": {
+    "title": "Il quaderno di laboratorio",
+    "signedInAs": "Accesso effettuato come {email}.",
+    "trying": "Sta provando Glazecalc come {name}. Cominci da una ricetta.",
+    "welcomeBack": "Riprenda da dove aveva lasciato.",
+    "sections": {
+      "recipe": {
+        "title": "Ricette",
+        "text": "Comporre uno smalto con materiali e quantità, vederne la formula di Seger (UMF) e salvarlo."
+      },
+      "material": {
+        "title": "Materiali",
+        "text": "Aggiungere materie prime proprie, da una formula chimica o dall’analisi di un fornitore."
+      },
+      "additive": {
+        "title": "Additivi e coloranti",
+        "text": "Conservare i coloranti e gli opacizzanti che si mettono in aggiunta a uno smalto base."
+      },
+      "firing": {
+        "title": "Registri di cottura",
+        "text": "Registrare tempi, temperature e coni di ogni cottura."
+      },
+      "notes": {
+        "title": "Note",
+        "text": "Conservare i risultati delle prove e tutto ciò che vale la pena ricordare."
+      },
+      "advice": {
+        "title": "Consigli sugli smalti",
+        "text": "Suggerimenti su preparazione, smaltatura e cottura, e i propri consigli."
+      },
+      "guides": {
+        "title": "Guide",
+        "text": "Da che cos’è uno smalto alla sua cottura, e come tenere tutti al sicuro lungo il percorso."
+      }
+    },
+    "newHere": "La formula di Seger è una novità? La <advice>pagina dei consigli</advice> ne spiega le basi e la <about>pagina Informazioni</about> dice come funziona Glazecalc."
+  },
+  "firing": {
+    "title": "Registri di cottura",
+    "lead": "Registrare ogni cottura: tempi, temperature, coni e note sul forno.",
+    "titleLabel": "Titolo della cottura:",
+    "kiln": "Forno:",
+    "date": "Data della cottura:",
+    "notes": "Note sulla cottura:",
+    "fieldSelect": "Selezionare i campi e aggiungerli al registro di cottura:",
+    "addField": "Aggiungi il campo",
+    "included": "I campi inclusi:",
+    "fieldName": "Nome del campo: {name}",
+    "moveLeft": "Sposta il campo a sinistra",
+    "moveRight": "Sposta il campo a destra",
+    "removeField": "Rimuovi il campo",
+    "addRow": "Aggiungi una riga alla tabella di cottura",
+    "recordHeading": "Registra la cottura",
+    "rowActions": "Azioni sulla riga",
+    "cell": "{field}, riga {row}",
+    "removeRow": "Rimuovi la riga",
+    "save": "Salva",
+    "storedHeading": "Le mie cotture salvate:",
+    "stored": "Titolo: {title}, Forno: {kiln}, Data: {date}",
+    "storedNotes": "Note: {notes}",
+    "titleMissing": "Dare un titolo alla cottura.",
+    "fieldsMissing": "Aggiungere almeno un campo da registrare, come {example}.",
+    "chooseField": "Scegliere un campo da aggiungere, poi fare clic su Aggiungi il campo.",
+    "fetchFailed": "Si è verificato un errore nel recupero dei registri di cottura.",
+    "saved": "Il registro di cottura è stato aggiunto al server.",
+    "saveFailed": "Errore: la richiesta al server non è riuscita."
+  },
+  "notes": {
+    "title": "Note",
+    "lead": "Tutto il resto che vale la pena ricordare sui propri smalti.",
+    "intro": "Questa è la pagina delle note. Qui si possono scrivere e salvare appunti.",
+    "titleLabel": "Titolo:",
+    "content": "Testo della nota:",
+    "save": "Salva",
+    "mineHeading": "Le mie note salvate:",
+    "titleMissing": "Dare un titolo alla nota.",
+    "contentMissing": "Scrivere la nota.",
+    "untitled": "Nota senza titolo",
+    "fetchFailed": "Si è verificato un errore nel recupero delle note.",
+    "saved": "La nota è stata aggiunta al server.",
+    "saveFailed": "Errore: la richiesta al server non è riuscita."
+  },
+  "trash": {
+    "title": "Cestino",
+    "comingSoon": "Il cestino arriverà presto, nella prossima versione di Glazecalc. Fino ad allora, usare con attenzione i comandi per eliminare e rimuovere: ciò che viene cancellato va perso."
+  }
+}

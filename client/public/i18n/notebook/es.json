@@ -1,0 +1,88 @@
+{
+  "home": {
+    "title": "Su cuaderno de taller",
+    "signedInAs": "Ha iniciado sesión como {email}.",
+    "trying": "Está probando Glazecalc como {name}. Empiece por una receta.",
+    "welcomeBack": "Continúe donde lo dejó.",
+    "sections": {
+      "recipe": {
+        "title": "Recetas",
+        "text": "Componga un esmalte a partir de materiales y cantidades, vea su fórmula Seger y guárdelo."
+      },
+      "material": {
+        "title": "Materiales",
+        "text": "Añada sus propias materias primas, a partir de una fórmula química o del análisis de un proveedor."
+      },
+      "additive": {
+        "title": "Aditivos y colorantes",
+        "text": "Guarde los colorantes y opacificantes que añade sobre un esmalte base."
+      },
+      "firing": {
+        "title": "Registros de cocción",
+        "text": "Anote las horas, las temperaturas y los conos de cada cocción."
+      },
+      "notes": {
+        "title": "Notas",
+        "text": "Guarde los resultados de sus pruebas y cualquier otra cosa que merezca la pena recordar."
+      },
+      "advice": {
+        "title": "Consejos sobre esmaltes",
+        "text": "Trucos para mezclar, esmaltar y cocer, y sus propios consejos."
+      },
+      "guides": {
+        "title": "Guías",
+        "text": "Desde qué es un esmalte hasta su cocción, y cómo mantener a salvo a todo el mundo por el camino."
+      }
+    },
+    "newHere": "¿Las fórmulas Seger son nuevas para usted? La <advice>página de consejos</advice> explica lo básico, y la <about>página Acerca de</about> cuenta cómo funciona Glazecalc."
+  },
+  "firing": {
+    "title": "Registros de cocción",
+    "lead": "Anote cada cocción: horas, temperaturas, conos y notas sobre el horno.",
+    "titleLabel": "Título de la cocción:",
+    "kiln": "Horno:",
+    "date": "Fecha de la cocción:",
+    "notes": "Notas sobre la cocción:",
+    "fieldSelect": "Elija y añada campos al registro de cocción:",
+    "addField": "Añadir el campo",
+    "included": "Los campos que ha incluido:",
+    "fieldName": "Nombre del campo: {name}",
+    "moveLeft": "Mover el campo a la izquierda",
+    "moveRight": "Mover el campo a la derecha",
+    "removeField": "Quitar el campo",
+    "addRow": "Añadir una fila a la tabla de cocción",
+    "recordHeading": "Registrar la cocción",
+    "rowActions": "Acciones de la fila",
+    "cell": "{field}, fila {row}",
+    "removeRow": "Quitar la fila",
+    "save": "Guardar",
+    "storedHeading": "Mis cocciones guardadas:",
+    "stored": "Título: {title}, Horno: {kiln}, Fecha: {date}",
+    "storedNotes": "Notas: {notes}",
+    "titleMissing": "Ponga un título a la cocción.",
+    "fieldsMissing": "Añada al menos un campo que registrar, como {example}.",
+    "chooseField": "Elija el campo que quiere añadir y luego pulse Añadir el campo.",
+    "fetchFailed": "Se ha producido un error al obtener los registros de cocción.",
+    "saved": "Se ha añadido correctamente el registro de cocción al servidor.",
+    "saveFailed": "Error: ha fallado la solicitud al servidor."
+  },
+  "notes": {
+    "title": "Notas",
+    "lead": "Cualquier otra cosa sobre sus esmaltes que merezca la pena recordar.",
+    "intro": "Esta es la página de notas. Aquí puede tomar notas y guardarlas.",
+    "titleLabel": "Título:",
+    "content": "Su nota:",
+    "save": "Guardar",
+    "mineHeading": "Mis notas guardadas:",
+    "titleMissing": "Ponga un título a la nota.",
+    "contentMissing": "Escriba la nota.",
+    "untitled": "Nota sin título",
+    "fetchFailed": "Se ha producido un error al obtener las notas.",
+    "saved": "Se ha añadido correctamente la nota al servidor.",
+    "saveFailed": "Error: ha fallado la solicitud al servidor."
+  },
+  "trash": {
+    "title": "Papelera",
+    "comingSoon": "La papelera llegará pronto, en la próxima versión de Glazecalc. Hasta entonces, use con cuidado las opciones de eliminar y quitar: una vez borrada, la información se pierde."
+  }
+}

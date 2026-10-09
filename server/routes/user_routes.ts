@@ -1,7 +1,9 @@
 // The signed-in account.
 //
 //   GET    /api/verify            who the session belongs to
-//   GET    /api/preferences       the account's (or trial's) choices: { weightUnit, gramPrecision, theme, palette, lead }
+//   GET    /api/preferences       the account's (or trial's) choices: { weightUnit, gramPrecision, theme, palette, lead,
+//                                  region, format, decimalMark, temperature, cones, language,
+//                                  density, englishTerms, notice }
 //   PUT    /api/preferences       any of them (models/user.ts PREFERENCES lists what each may be)
 //   GET    /api/shelf             the materials the account (or trial) has on hand: { shelf: [key] }
 //   PUT    /api/shelf             { shelf: [key] } in place of the list
@@ -18,13 +20,14 @@ import * as password from '../lib/password.ts';
 import * as limits from '../lib/rate_limit.ts';
 import * as session from '../lib/session.ts';
 import User, { PREFERENCES, type Preferences } from '../models/user.ts';
+import { say } from '../lib/messages.ts';
 
 const userRouter = express.Router();
 export default userRouter;
 
 const tokenFilter = (req: Request, res: Response, next: NextFunction) => {
   if (!tokenOf(req)) {
-    return res.status(200).json({ msg: 'No token yet, so there is no email to find. Goodbye.' });
+    return res.status(200).json(say('no-token'));
   }
   return next();
 };
@@ -32,7 +35,7 @@ const tokenFilter = (req: Request, res: Response, next: NextFunction) => {
 userRouter.get('/verify', tokenFilter, jwtAuth, (req, res) => {
   const user = userOf(req);
   // A trial's placeholder email stays on the server; the app shows its name.
-  const identity = { msg: 'User verified', id: user.id as string, name: user.displayname };
+  const identity = { ...say('verified'), id: user.id as string, name: user.displayname };
   res
     .status(200)
     .json(user.guest ? { ...identity, guest: true, expiresAt: user.expiresAt } : { ...identity, email: user.email });
@@ -41,13 +44,6 @@ userRouter.get('/verify', tokenFilter, jwtAuth, (req, res) => {
 // Choices about how the app shows things. Unlike the account's details below,
 // a trial may set them too, and they need no password.
 const PREFERENCE_NAMES = Object.keys(PREFERENCES) as Array<keyof Preferences>;
-const NOT_A_CHOICE: Record<keyof Preferences, string> = {
-  weightUnit: 'Weights can be in grams (g) or pounds and ounces (lb).',
-  gramPrecision: 'Grams can show to a tenth (single) or in full (full).',
-  theme: 'The theme can follow the device (system), or be light or dark.',
-  palette: 'Choose one of the palettes: ' + PREFERENCES.palette.join(', ') + '.',
-  lead: 'Lead can be off (never added or suggested) or on.'
-};
 
 /** Every preference: the one chosen, or the default. */
 const preferencesOf = (saved: Partial<Preferences> = {}): Preferences =>
@@ -61,9 +57,14 @@ userRouter.get('/preferences', jwtAuth, (req, res) => {
 userRouter.put('/preferences', jwtAuth, express.json(), async (req, res) => {
   const body = (req.body ?? {}) as Record<string, unknown>;
   const changing = PREFERENCE_NAMES.filter((name) => body[name] !== undefined);
-  if (!changing.length) return res.status(400).json({ msg: 'Nothing to change' });
+  if (!changing.length) return res.status(400).json(say('nothing-to-change'));
   const refused = changing.find((name) => !(PREFERENCES[name] as readonly unknown[]).includes(body[name]));
-  if (refused) return res.status(400).json({ msg: NOT_A_CHOICE[refused] });
+  if (refused)
+    return res
+      .status(400)
+      .json(
+        say(`${refused}-choices`, refused === 'palette' ? { palettes: PREFERENCES.palette.join(', ') } : undefined)
+      );
   const changes = Object.fromEntries(changing.map((name) => ['preferences.' + name, body[name]]));
   const user = await User.findByIdAndUpdate(
     userOf(req)._id,
@@ -77,7 +78,6 @@ userRouter.put('/preferences', jwtAuth, express.json(), async (req, res) => {
 // client's libraryKey makes them. Like the preferences, a trial may keep one.
 const SHELF_MOST = 500;
 const KEY_LONGEST = 200;
-const NOT_A_SHELF = `The shelf is a list of up to ${SHELF_MOST} materials.`;
 
 userRouter.get('/shelf', jwtAuth, (req, res) => {
   res.status(200).json({ shelf: userOf(req).shelf ?? [] });
@@ -91,7 +91,7 @@ userRouter.put('/shelf', jwtAuth, express.json(), async (req, res) => {
     keys.length > SHELF_MOST ||
     keys.some((key) => typeof key !== 'string' || !key || key.length > KEY_LONGEST)
   ) {
-    return res.status(400).json({ msg: NOT_A_SHELF });
+    return res.status(400).json(say('shelf-invalid', { most: SHELF_MOST }));
   }
   await User.updateOne({ _id: userOf(req)._id }, { $set: { shelf: keys } });
   return res.status(200).json({ shelf: keys });
@@ -99,10 +99,10 @@ userRouter.put('/shelf', jwtAuth, express.json(), async (req, res) => {
 
 // Users may only change or delete their own account; admins may act on any.
 const selfOrAdmin = (req: Request, res: Response, next: NextFunction) => {
-  if (!mongoose.isValidObjectId(req.params.id)) return res.status(400).json({ msg: 'Invalid id' });
+  if (!mongoose.isValidObjectId(req.params.id)) return res.status(400).json(say('invalid-id'));
   const user = userOf(req);
   if (req.params.id === String(user._id) || user.role === 'admin') return next();
-  return res.status(403).json({ msg: 'Not allowed to change another user' });
+  return res.status(403).json(say('not-allowed'));
 };
 
 // Fields a user may set on their own account. Role and password are not
@@ -121,8 +121,6 @@ const ownPasswordConfirmed = async (req: Request): Promise<boolean> => {
   return password.matches(((req.body ?? {}) as { password?: unknown }).password, user?.password);
 };
 // 400 rather than 401: the sign-in is fine, and a 401 would sign the user out.
-const WRONG_PASSWORD = 'Please enter your current password.';
-const EMAIL_IN_USE = 'That email is already in use';
 
 // Trials change nothing here; they create an account (POST /api/guest/claim).
 userRouter.put(
@@ -137,32 +135,35 @@ userRouter.put(
     const changes = Object.fromEntries(
       SETTABLE_FIELDS.filter((field) => body[field] !== undefined).map((field) => [field, body[field]])
     );
-    if (!Object.keys(changes).length) return res.status(400).json({ msg: 'Nothing to update' });
+    if (!Object.keys(changes).length) return res.status(400).json(say('nothing-to-update'));
 
     if (changes.email !== undefined) {
       changes.email = email.normalize(changes.email);
-      if (!email.isValid(changes.email)) return res.status(400).json({ msg: 'Please enter an email', field: 'email' });
-      if (!(await ownPasswordConfirmed(req))) return res.status(400).json({ msg: WRONG_PASSWORD, field: 'password' });
+      if (!email.isValid(changes.email))
+        return res.status(400).json(say('email-required', undefined, { field: 'email' }));
+      if (!(await ownPasswordConfirmed(req)))
+        return res.status(400).json(say('current-password-needed', undefined, { field: 'password' }));
       const other = await User.exists({ email: changes.email, _id: { $ne: req.params.id } }).collation(email.collation);
-      if (other) return res.status(400).json({ msg: EMAIL_IN_USE, field: 'email' });
+      if (other) return res.status(400).json(say('email-in-use', undefined, { field: 'email' }));
     }
 
     try {
       const result = await User.updateOne({ _id: req.params.id }, { $set: changes });
-      if (!result.matchedCount) return res.status(404).json({ msg: 'No user with that id' });
-      return res.status(200).json({ msg: 'User updated' });
+      if (!result.matchedCount) return res.status(404).json(say('no-user'));
+      return res.status(200).json(say('user-updated'));
     } catch (err) {
       // The unique index catches two accounts racing for the same email.
-      if (isDuplicateKey(err)) return res.status(400).json({ msg: EMAIL_IN_USE, field: 'email' });
+      if (isDuplicateKey(err)) return res.status(400).json(say('email-in-use', undefined, { field: 'email' }));
       throw err;
     }
   }
 );
 
 userRouter.delete('/deleteuser/:id', jwtAuth, selfOrAdmin, limits.passwordCheck, express.json(), async (req, res) => {
-  if (!(await ownPasswordConfirmed(req))) return res.status(400).json({ msg: WRONG_PASSWORD, field: 'password' });
+  if (!(await ownPasswordConfirmed(req)))
+    return res.status(400).json(say('current-password-needed', undefined, { field: 'password' }));
   const id = req.params.id as string;
-  if (!(await deleteAccount(id))) return res.status(404).json({ msg: 'No user with that id' });
+  if (!(await deleteAccount(id))) return res.status(404).json(say('no-user'));
   if (id === String(userOf(req)._id)) session.end(res);
-  return res.status(200).json({ msg: 'User deleted' });
+  return res.status(200).json(say('user-deleted'));
 });

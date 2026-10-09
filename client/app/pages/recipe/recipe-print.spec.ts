@@ -1,8 +1,10 @@
 import { TestBed } from '@angular/core/testing';
 import { Title } from '@angular/platform-browser';
+import { TranslocoService } from '@jsverse/transloco';
 import { calculateUMF } from '../../../../lib/chemistry';
 import { Additive, Material, Recipe } from '../../core/models';
 import { GRAMS_PER_POUND } from '../../shared/weights';
+import { provideEnglish } from '../../testing/i18n';
 import { API, answer, httpMock, settle, testProviders, text } from '../../testing/test-providers';
 import { RecipePrint, printLines } from './recipe-print';
 
@@ -66,6 +68,12 @@ const rows = (root: HTMLElement, selector: string) =>
   );
 
 describe('printLines', () => {
+  // An amount that is not a number is said in a message.
+  beforeEach(() => {
+    TestBed.configureTestingModule({ providers: provideEnglish() });
+    TestBed.inject(TranslocoService);
+  });
+
   it('gives each line its share, what to weigh and the running total', () => {
     const { materials, additives, total, weights } = printLines(RECIPE, 1000, 'g');
     expect(total).toBe('100');

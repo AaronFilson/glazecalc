@@ -1,13 +1,18 @@
+import { translate } from '@jsverse/transloco';
 import { MOLAR_MASS, MaterialInput, expansion, formatFormula, materialWeights } from '../../../../lib/chemistry';
 import { LibraryInfo, Material, RecipeAnalysis, RecipeMaterial } from '../../core/models';
 import { hasLead, inRegion, statusText } from '../../shared/library-info';
 import { UNITY_TITLES, silicaAluminaRatio, unityColumnOf } from './unity-formula';
+import { fixed } from '../../shared/format';
 
 // Comparing two recipes (issue #6), and trying an old recipe with the
 // materials that replace its discontinued ones.
 
 export interface CompareRow {
+  /** An oxide's formula, or what the row is, in the page's language. */
   label: string;
+  /** Whether the label is a formula, which is never translated. */
+  formula?: boolean;
   /** The value in each recipe; null where it has none. */
   left: number | null;
   right: number | null;
@@ -54,20 +59,20 @@ export function compareUnity(left: RecipeAnalysis | null, right: RecipeAnalysis 
     const a = value(left?.uList[oxide]);
     const b = value(right?.uList[oxide]);
     if (a === null && b === null) continue;
-    groups[unityColumnOf(oxide)].rows.push(row(formatFormula(oxide), a, b, both));
+    groups[unityColumnOf(oxide)].rows.push({ ...row(formatFormula(oxide), a, b, both), formula: true });
   }
   const ratio = (analysis: RecipeAnalysis | null) => (analysis ? silicaAluminaRatio(analysis) : null);
   // Worked out from the fired analysis when a saved one has no figure of its own.
   const expands = (analysis: RecipeAnalysis | null) =>
     analysis ? (analysis.expansion ?? expansion(analysis.analysis)) : null;
   const facts: CompareGroup = {
-    title: 'Balance',
+    title: translate('recipe.compare.balance'),
     rows: [
-      fact('Silica to alumina', ratio(left), ratio(right), 2),
-      fact('R₂O fluxes', left?.groups?.R2O ?? null, right?.groups?.R2O ?? null, 2),
-      fact('RO fluxes', left?.groups?.RO ?? null, right?.groups?.RO ?? null, 2),
-      fact('Loss on ignition, %', left?.loi ?? null, right?.loi ?? null, 1),
-      fact('Expansion, ×10⁻⁶/°C', expands(left), expands(right), 2)
+      fact(translate('recipe.compare.silicaToAlumina'), ratio(left), ratio(right), 2),
+      fact(translate('recipe.compare.r2oFluxes'), left?.groups?.R2O ?? null, right?.groups?.R2O ?? null, 2),
+      fact(translate('recipe.compare.roFluxes'), left?.groups?.RO ?? null, right?.groups?.RO ?? null, 2),
+      fact(translate('recipe.compare.loi'), left?.loi ?? null, right?.loi ?? null, 1),
+      fact(translate('recipe.compare.expansion'), expands(left), expands(right), 2)
     ]
   };
   return [...groups.filter((group, i) => i < 3 || group.rows.length), facts];
@@ -77,8 +82,8 @@ export function compareUnity(left: RecipeAnalysis | null, right: RecipeAnalysis 
 export function formatChange(change: number | null, places: number): string {
   if (change === null) return '';
   const rounded = Number(change.toFixed(places));
-  if (rounded === 0) return 'same';
-  return (rounded > 0 ? '+' : '−') + Math.abs(rounded).toFixed(places);
+  if (rounded === 0) return translate('recipe.compare.same');
+  return (rounded > 0 ? '+' : '−') + fixed(Math.abs(rounded), places);
 }
 
 export interface Swap {

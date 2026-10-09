@@ -1,4 +1,7 @@
+import { PlainPipe } from '../../shared/format-pipes';
 import { Component, inject, signal } from '@angular/core';
+import { TranslocoDirective, translate } from '@jsverse/transloco';
+import { marker } from '@jsverse/transloco-keys-manager/marker';
 import { Router, RouterLink } from '@angular/router';
 import { calculateUMF } from '../../../../lib/chemistry';
 import { AuthService } from '../../core/auth.service';
@@ -14,29 +17,18 @@ export const EXAMPLE_RECIPE = [
   { material: 'Kaolin', amount: 10 }
 ];
 
+/** What Glazecalc does, as keys to the messages shown. */
 const FEATURES = [
-  {
-    title: 'Instant unity formula',
-    text: 'See fluxes, alumina and silica in unity, the way glaze chemists compare recipes, as soon as you enter a recipe.'
-  },
-  {
-    title: 'Fix and substitute',
-    text: 'A material discontinued? Compare formulas to find a replacement that melts the same way.'
-  },
-  {
-    title: 'Your studio notebook',
-    text: 'Keep recipes, your own materials, colorants, notes and firing logs together in one place.'
-  },
-  {
-    title: 'Learn as you go',
-    text: 'Plain-language guides, from what a glaze is to firing it safely, sit next to the numbers.'
-  }
+  { title: marker('site.landing.features.unity.title'), text: marker('site.landing.features.unity.text') },
+  { title: marker('site.landing.features.substitute.title'), text: marker('site.landing.features.substitute.text') },
+  { title: marker('site.landing.features.notebook.title'), text: marker('site.landing.features.notebook.text') },
+  { title: marker('site.landing.features.learn.title'), text: marker('site.landing.features.learn.text') }
 ];
 
 /** The public start page: what Glazecalc does, shown with a real calculation. */
 @Component({
   selector: 'gc-landing-page',
-  imports: [RouterLink, UnityFormula],
+  imports: [PlainPipe, RouterLink, TranslocoDirective, UnityFormula],
   templateUrl: './landing-page.html',
   styleUrl: './landing-page.scss'
 })
@@ -63,7 +55,7 @@ export class LandingPage {
       await this.auth.startTrial();
       await this.router.navigateByUrl('/recipe');
     } catch (err) {
-      this.startError.set(errorMessage(err, 'Could not start a trial just now. Please try again.'));
+      this.startError.set(errorMessage(err, translate('site.landing.trialFailed')));
     } finally {
       this.starting.set(false);
     }

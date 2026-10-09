@@ -1,0 +1,50 @@
+{
+  "common": {
+    "formulaHelp": "Escreva a fórmula com algarismos normais, como {typed}: os números aparecem em índice, {shown}. Para juntar as partes de uma fórmula, como em {joined}, copie este ponto:",
+    "relatedTo": "Relacionado com:",
+    "notes": "Notas:",
+    "loi": "Perda ao fogo – PF (percentagem):",
+    "molecularWeight": "Peso molecular da fórmula em cru (usado só se a PF estiver em branco):",
+    "formulaHeading": "Introduza a fórmula (após cozedura):",
+    "oxideSelection": "Seleção do óxido",
+    "noOxide": "nenhum",
+    "addOxide": "Adicionar o óxido à lista",
+    "formulaIn": "Esta fórmula está expressa em:",
+    "percent": "Percentagem",
+    "molecular": "Molecular / Unitária",
+    "amount": "Quantidade:",
+    "removeOxide": "Remover da lista da fórmula",
+    "save": "Guardar",
+    "elements": "Elementos",
+    "removeNote": "As receitas guardadas mantêm a sua própria cópia, por isso não vão mudar.",
+    "saveFailed": "Erro: o pedido ao servidor falhou."
+  },
+  "material": {
+    "title": "Matérias-primas",
+    "lead": "As suas próprias matérias-primas, introduzidas como fórmula química ou como análise de óxidos.",
+    "newHeading": "Introduzir os dados da nova matéria-prima",
+    "name": "Nome da matéria-prima:",
+    "rawFormula": "Fórmula em cru:",
+    "weightsNote": "O peso equivalente e o peso após cozedura são calculados a partir da fórmula e da PF quando guardar.",
+    "mineHeading": "As minhas matérias-primas:",
+    "rawFormulaColumn": "Fórmula em cru",
+    "standardHeading": "As matérias-primas padrão:",
+    "fetchFailed": "Ocorreu um erro ao obter as informações das matérias-primas.",
+    "standardFetchFailed": "Ocorreu um erro ao obter as informações das matérias-primas padrão.",
+    "saved": "Concluído. Matéria-prima adicionada à base de dados."
+  },
+  "additive": {
+    "title": "Aditivos e corantes",
+    "lead": "Corantes e opacificantes pesados à parte, acrescentados à receita base, como o cobalto ou o óxido de estanho. Uma receita pode deixá-los fora da fórmula de Seger (UMF) ou incluí-los nela.",
+    "newHeading": "Introduzir os dados do novo aditivo",
+    "name": "Nome do aditivo:",
+    "formulaAsSold": "Fórmula, tal como é vendida:",
+    "noChemistry": "Não tem análise de óxidos, como um pigmento cerâmico comercial: deixá-lo fora da fórmula de Seger",
+    "firedNote": "Introduza o que dá ao vidrado depois da cozedura: o óxido de cobalto negro, {asSold}, é {fired} com uma PF de {loi}%. Assim, uma receita pode incluí-lo na fórmula de Seger.",
+    "mineHeading": "Os meus aditivos e corantes:",
+    "standardHeading": "Os aditivos padrão:",
+    "fetchFailed": "Ocorreu um erro ao obter as informações dos aditivos.",
+    "standardFetchFailed": "Ocorreu um erro ao obter as informações dos aditivos padrão.",
+    "saved": "Concluído. Aditivo adicionado à base de dados."
+  }
+}

@@ -1,0 +1,236 @@
+{
+  "auth": {
+    "signInHeading": "Anmelden",
+    "keepHeading": "Ihre Arbeit behalten",
+    "signUpHeading": "Ihr Konto erstellen",
+    "signInLead": "Willkommen zurück in Ihrem Glasur-Notizbuch.",
+    "keepLead": "Behalten Sie alles, was Sie als {name} erstellt haben: Fügen Sie Ihre E-Mail-Adresse und ein Passwort hinzu. Es bleibt kostenlos.",
+    "signUpLead": "Kostenlos. Ihre Rezepte, Rohstoffe und Notizen bleiben privat in Ihrem Konto.",
+    "trialNote": "Sie haben schon ein Konto? Beim Anmelden wird alles, was Sie als {name} erstellt haben, in dieses Konto übernommen. Neu hier? <signup>Erstellen Sie ein Konto</signup>, um es stattdessen dort zu behalten.",
+    "email": "E-Mail",
+    "password": "Passwort",
+    "passwordHint": "Mindestens 8 Zeichen.",
+    "confirmation": "Passwort bestätigen",
+    "passwordMissing": "Geben Sie Ihr Passwort ein.",
+    "createAccount": "Konto erstellen",
+    "signIn": "Anmelden",
+    "haveAccount": "Sie haben schon ein Konto? <signin>Anmelden</signin>",
+    "forgot": "Passwort vergessen? Jetzt zurücksetzen",
+    "newHere": "Neu hier? <signup>Kostenloses Konto erstellen</signup>",
+    "signUpFailed": "Fehler: Das Konto konnte nicht erstellt werden.",
+    "signInFailed": "Fehler: Die Anmeldung ist fehlgeschlagen."
+  },
+  "forgot": {
+    "heading": "Passwort zurücksetzen",
+    "checkInbox": "Sehen Sie in Ihrem Posteingang und im Spam-Ordner nach. Wenn nichts ankommt, prüfen Sie die Adresse und fordern Sie den Link erneut an.",
+    "intro": "Geben Sie die E-Mail-Adresse Ihres Kontos ein, und wir senden Ihnen einen Link, mit dem Sie ein neues Passwort wählen können.",
+    "email": "E-Mail:",
+    "send": "Link zum Zurücksetzen senden",
+    "back": "Zurück zur Anmeldung",
+    "failed": "Fehler: Die E-Mail zum Zurücksetzen konnte nicht gesendet werden. Bitte versuchen Sie es erneut."
+  },
+  "reset": {
+    "heading": "Neues Passwort wählen",
+    "signIn": "Anmelden",
+    "incomplete": "Diese Seite braucht den Link aus einer E-Mail zum Zurücksetzen des Passworts, und dieser Link ist unvollständig.",
+    "askAgain": "Neuen Link anfordern",
+    "password": "Neues Passwort:",
+    "confirmation": "Neues Passwort bestätigen:",
+    "save": "Neues Passwort speichern",
+    "hint": "Mindestens 8 Zeichen. Alle Geräte, die mit dem Konto angemeldet sind, werden abgemeldet.",
+    "failed": "Fehler: Das Passwort konnte nicht geändert werden. Bitte versuchen Sie es erneut."
+  },
+  "account": {
+    "trialTitle": "Ihr Testzugang",
+    "trialLead": "Sie testen Glazecalc als {name}.",
+    "keepHeading": "Ihre Arbeit behalten",
+    "keepText": "Dieser Testzugang und alles darin werden am {date} entfernt. Erstellen Sie ein kostenloses Konto, um alles zu behalten: Ihre Rezepte, Rohstoffe und Notizen bleiben genau so, wie sie sind, und {name} bleibt Ihr Anzeigename.",
+    "createAccount": "Konto erstellen",
+    "title": "Ihr Konto",
+    "signedInAs": "Angemeldet als {email}.",
+    "changeHeading": "Passwort ändern",
+    "current": "Aktuelles Passwort",
+    "currentMissing": "Geben Sie Ihr aktuelles Passwort ein.",
+    "password": "Neues Passwort",
+    "passwordHint": "Mindestens 8 Zeichen. Andere Geräte, die mit diesem Konto angemeldet sind, werden abgemeldet.",
+    "confirmation": "Neues Passwort bestätigen",
+    "change": "Passwort ändern",
+    "changeFailed": "Fehler: Das Passwort konnte nicht geändert werden. Bitte versuchen Sie es erneut.",
+    "deleteHeading": "Ihr Konto löschen",
+    "deleteText": "Damit werden Ihr Konto und alles, was Sie gespeichert haben, entfernt: Rezepte, Rohstoffe, Zusätze, Notizen, Brennprotokolle und Tipps. Das lässt sich nicht rückgängig machen.",
+    "deletePassword": "Ihr Passwort, zur Bestätigung",
+    "deletePasswordMissing": "Geben Sie zur Bestätigung Ihr Passwort ein.",
+    "delete": "Mein Konto löschen",
+    "deleteFailed": "Fehler: Das Konto konnte nicht gelöscht werden. Bitte versuchen Sie es erneut."
+  },
+  "settings": {
+    "heading": "Einstellungen",
+    "intro": "Die Einstellungen werden mit Ihrem Konto gespeichert und gelten daher auf jedem Gerät.",
+    "saveFailed": "Die Einstellung konnte nicht gespeichert werden. Bitte versuchen Sie es erneut.",
+    "language": {
+      "legend": "Sprache",
+      "help": "Die Sprache der App, der Anleitungen und Ihrer E-Mails. Wenn Sie sie ändern, öffnet sich diese Seite in der gewählten Sprache.",
+      "saved": "Gespeichert: {language}."
+    },
+    "region": {
+      "legend": "Ihr Standort",
+      "none": {
+        "label": "Nicht gewählt",
+        "saved": "Gespeichert: keine Region gewählt; die Voreinstellungen richten sich nach Ihrem Browser."
+      },
+      "saved": "Gespeichert: {region}.",
+      "help": "Die dort verkauften Rohstoffe und die Voreinstellungen für Zahlen, Datumsangaben, Temperaturen und Kegel weiter unten. Bis Sie eine Region wählen, richten sie sich nach der Sprache Ihres Browsers."
+    },
+    "format": {
+      "legend": "Zahlen und Datumsangaben",
+      "auto": {
+        "label": "Nach meiner Sprache und Region",
+        "saved": "Gespeichert: Zahlen und Datumsangaben so, wie Ihre Sprache und Region sie schreiben."
+      },
+      "saved": "Gespeichert: Zahlen und Datumsangaben im Format {language}.",
+      "help": "Wie Zahlen und Datumsangaben geschrieben werden: 12,345.6 oder 12.345,6, und die Reihenfolge von Tag und Monat."
+    },
+    "decimalMark": {
+      "legend": "Eingabe von Mengen",
+      "either": {
+        "label": "Komma oder Punkt als Dezimalzeichen",
+        "example": "12,5 oder 12.5",
+        "saved": "Gespeichert: Mengen können mit Komma oder Punkt eingegeben werden."
+      },
+      "comma": {
+        "label": "Komma als Dezimalzeichen",
+        "saved": "Gespeichert: Mengen werden mit Komma als Dezimalzeichen eingegeben."
+      },
+      "point": {
+        "label": "Punkt als Dezimalzeichen",
+        "saved": "Gespeichert: Mengen werden mit Punkt als Dezimalzeichen eingegeben."
+      },
+      "help": "Bei „Komma oder Punkt“ wird eine Menge wie 1.250 so gelesen, wie Ihre Zahlen oben geschrieben werden."
+    },
+    "temperature": {
+      "legend": "Temperaturen",
+      "celsius": {
+        "label": "Celsius",
+        "saved": "Gespeichert: Temperaturen in °C."
+      },
+      "fahrenheit": {
+        "label": "Fahrenheit",
+        "saved": "Gespeichert: Temperaturen in °F."
+      },
+      "help": "Bis Sie wählen, richtet sich dies nach Ihrer Region: °F in den Vereinigten Staaten, sonst °C."
+    },
+    "cones": {
+      "legend": "Brennen",
+      "orton": {
+        "label": "Nach Ortonkegeln",
+        "example": "Kegel 04, Kegel 6",
+        "saved": "Gespeichert: Brennen nach Ortonkegeln."
+      },
+      "temperature": {
+        "label": "Nach Temperatur, wie im Programm einer Ofensteuerung",
+        "saved": "Gespeichert: Brennen nach Temperatur."
+      },
+      "help": "Bis Sie wählen, richtet sich dies nach Ihrer Region: Ortonkegel in den USA, im Vereinigten Königreich, in Irland, Australien und Neuseeland, Temperatur im übrigen Europa."
+    },
+    "density": {
+      "legend": "Glasurdichte",
+      "sg": {
+        "label": "Spezifisches Gewicht",
+        "saved": "Gespeichert: Glasurdichte als spezifisches Gewicht."
+      },
+      "baume": {
+        "label": "Grad Baumé, mit dem Aräometer",
+        "saved": "Gespeichert: Glasurdichte in Grad Baumé."
+      },
+      "pint": {
+        "label": "Pint-Gewicht, Unzen je britischem Pint",
+        "saved": "Gespeichert: Glasurdichte als Pint-Gewicht."
+      },
+      "help": "Wie die Anleitungen angeben, wie dick eine Glasur angerührt ist. Bis Sie wählen, richtet sich dies nach Ihrer Region: Grad Baumé in Italien, sonst spezifisches Gewicht."
+    },
+    "theme": {
+      "legend": "Hell oder dunkel",
+      "system": {
+        "label": "Wie dieses Gerät eingestellt ist",
+        "saved": "Gespeichert: hell oder dunkel, wie das jeweilige Gerät eingestellt ist."
+      },
+      "light": {
+        "label": "Hell",
+        "saved": "Gespeichert: immer hell."
+      },
+      "dark": {
+        "label": "Dunkel",
+        "saved": "Gespeichert: immer dunkel."
+      },
+      "help": "Gedruckte Rezepte sind immer schwarz auf weiß."
+    },
+    "palette": {
+      "legend": "Farben",
+      "saved": "Gespeichert: Schaltflächen und Links in {palette}.",
+      "help": "Für Schaltflächen, Links und Registerkarten, benannt nach Glasuren. Jede Palette ist hell wie dunkel gut lesbar."
+    },
+    "weightUnit": {
+      "legend": "Ansatzgewichte",
+      "grams": {
+        "label": "Gramm",
+        "saved": "Gespeichert: Ansatzgewichte in Gramm."
+      },
+      "pounds": {
+        "label": "Pfund und Unzen",
+        "saved": "Gespeichert: Ansatzgewichte in Pfund und Unzen."
+      },
+      "help": "Für gedruckte Ansätze."
+    },
+    "gramPrecision": {
+      "legend": "Gramm auf gedruckten Ansätzen",
+      "single": {
+        "label": "Auf ein Zehntelgramm",
+        "saved": "Gespeichert: Gramm auf ein Zehntel genau."
+      },
+      "full": {
+        "label": "Volle Genauigkeit",
+        "saved": "Gespeichert: Gramm in voller Genauigkeit, auf 5 Dezimalstellen."
+      },
+      "help": "Bei „Auf ein Zehntelgramm“ zeigen Mengen unter 10 g trotzdem Hundertstel (2,35 g), für Färbemittel in kleinen Testansätzen."
+    },
+    "lead": {
+      "legend": "Blei",
+      "off": {
+        "label": "Aus: Blei nie zu einem Rezept hinzufügen oder vorschlagen",
+        "saved": "Gespeichert: Blei wird nie zu einem Rezept hinzugefügt oder vorgeschlagen."
+      },
+      "on": {
+        "label": "Ein: Rohstoffe mit Blei können hinzugefügt und vorgeschlagen werden",
+        "saved": "Gespeichert: Rohstoffe mit Blei können hinzugefügt und vorgeschlagen werden."
+      },
+      "help": "Blei ist giftig beim Einatmen oder Verschlucken und reichert sich im Körper an, und eine Bleiglasur kann es an Speisen und Getränke abgeben; ob ein gebranntes Stück das tut, kann keine Berechnung sagen. Bei „Aus“ öffnen sich Rezepte, die schon Blei enthalten, weiterhin so, wie sie waren.",
+      "warning": "Verwenden Sie Blei nur als Fritte, nie ungefrittet als Mennige, Bleiweiß, gelbes Bleioxid oder Bleiglätte. Rühren Sie es nass an, spritzen Sie es nie auf, tragen Sie eine Atemschutzmaske und reinigen Sie nass. Halten Sie bleiglasierte Ware von Speisen und Getränken fern, es sei denn, das gebrannte Stück hat eine Laborprüfung der Bleiabgabe bestanden.",
+      "turnOn": "Blei einschalten",
+      "keepOff": "Ausgeschaltet lassen"
+    },
+    "englishTerms": {
+      "legend": "Englische Fachbegriffe",
+      "off": {
+        "label": "Aus",
+        "saved": "Gespeichert: keine englischen Fachbegriffe."
+      },
+      "on": {
+        "label": "Englischen Begriff nach wichtigen Fachbegriffen anzeigen",
+        "saved": "Gespeichert: Der englische Begriff wird nach wichtigen Fachbegriffen angezeigt."
+      },
+      "help": "Zum Lesen englischer Quellen wie Digitalfire neben dieser Seite: Wichtige Fachbegriffe bekommen ihre englische Entsprechung in Klammern."
+    },
+    "notice": {
+      "legend": "Übersetzungshinweis",
+      "shown": {
+        "label": "Angezeigt",
+        "saved": "Gespeichert: Der Hinweis wird angezeigt."
+      },
+      "hidden": {
+        "label": "Ausgeblendet",
+        "saved": "Gespeichert: Der Hinweis wird ausgeblendet. Eine Zeile davon bleibt in den Anleitungen zur Sicherheit."
+      },
+      "help": "Der Hinweis oben auf jeder Seite, dass sie mit KI übersetzt wurde, mit einer Möglichkeit, eine Korrektur vorzuschlagen."
+    }
+  }
+}

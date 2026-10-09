@@ -1,4 +1,6 @@
 import { effect, inject, signal, untracked } from '@angular/core';
+import { translate } from '@jsverse/transloco';
+import { marker } from '@jsverse/transloco-keys-manager/marker';
 import { AuthService } from './auth.service';
 import { PreferencesService } from './preferences.service';
 
@@ -8,13 +10,22 @@ export type ThemeMode = 'system' | 'light' | 'dark';
 /** The colors of the buttons, links and tabs, named for glazes; styles.scss has their values. */
 export type Palette = 'tenmoku' | 'celadon' | 'cobalt' | 'oxblood' | 'shino' | 'ash';
 
+const palette = (value: Palette, name: string, swatch: [light: string, dark: string]) => ({
+  value,
+  /** In the page's language. */
+  get label() {
+    return translate(name);
+  },
+  swatch
+});
+
 export const PALETTES: ReadonlyArray<{ value: Palette; label: string; swatch: [light: string, dark: string] }> = [
-  { value: 'tenmoku', label: 'Tenmoku rust', swatch: ['#9c3d1f', '#e8956b'] },
-  { value: 'celadon', label: 'Celadon green', swatch: ['#2e6650', '#8fcfb2'] },
-  { value: 'cobalt', label: 'Cobalt blue', swatch: ['#24509e', '#9db9f2'] },
-  { value: 'oxblood', label: 'Oxblood red', swatch: ['#962231', '#f2a0a9'] },
-  { value: 'shino', label: 'Shino orange', swatch: ['#94501a', '#f0b27a'] },
-  { value: 'ash', label: 'Wood ash olive', swatch: ['#5a6136', '#c5cc93'] }
+  palette('tenmoku', marker('palettes.tenmoku'), ['#9c3d1f', '#e8956b']),
+  palette('celadon', marker('palettes.celadon'), ['#2e6650', '#8fcfb2']),
+  palette('cobalt', marker('palettes.cobalt'), ['#24509e', '#9db9f2']),
+  palette('oxblood', marker('palettes.oxblood'), ['#962231', '#f2a0a9']),
+  palette('shino', marker('palettes.shino'), ['#94501a', '#f0b27a']),
+  palette('ash', marker('palettes.ash'), ['#5a6136', '#c5cc93'])
 ];
 
 /**

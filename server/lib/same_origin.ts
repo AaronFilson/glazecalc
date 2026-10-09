@@ -5,6 +5,7 @@
 // ones in Origin. Scripts and tests send neither; they use a Bearer token, which
 // another site cannot make a browser send.
 import type { NextFunction, Request, Response } from 'express';
+import { say } from './messages.ts';
 
 const SAFE = new Set(['GET', 'HEAD', 'OPTIONS']);
 
@@ -23,7 +24,7 @@ export default function sameOrigin(req: Request, res: Response, next: NextFuncti
   // 'none' is a request the user started themselves, such as from the address bar.
   const fromElsewhere = site ? site !== 'same-origin' && site !== 'none' : Boolean(origin) && !sameHost(origin!, req);
   if (fromElsewhere) {
-    res.status(403).json({ msg: 'Requests from other sites are not accepted.' });
+    res.status(403).json(say('other-site'));
     return;
   }
   next();

@@ -6,6 +6,48 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Added
 
+- **Where you work, and numbers your way** (the groundwork for other languages,
+  [plan](docs/i18n-plan.md)). Settings gain:
+  - **Where you work:** the EU countries, the US, UK, Australia and New Zealand. It sets the
+    defaults below and which standard materials are listed; until chosen, your browser's region does.
+  - **Numbers and dates:** as your language and region write them (12.345,6 in Germany, 12 345,6
+    in France), or a format you choose.
+  - **Typing amounts** with a comma or a point for decimals, or only one of them. A recipe typed as
+    12,5 in Germany is saved as 12.5 and opens the same anywhere.
+  - **Temperatures** in °C or °F, and **firing** to Orton cones or by temperature: both follow your
+    region until you choose. Replace lead names firings the same way.
+- **Who to call, for your region**, in the home-safety guide: the emergency number, poison lines
+  and animal poison lines for each of the 31 regions, each checked on an official page (dated, with
+  its source), and only those that could be checked. It says where a country has no public poison
+  line.
+- **In German, French, Spanish, Italian, Polish and Portuguese.** Every page, the five guides,
+  the standard materials' notes and hazards, the server's messages and the password emails, in the
+  formal register, with each language's potters' terms (a glossary per language, built from
+  suppliers' catalogues). Each was translated by AI, reviewed part by part, and its safety text
+  translated back into English and compared with the original. Every translated page says it was
+  translated by AI and links to a form to suggest a better wording; [CONTRIBUTING.md](CONTRIBUTING.md)
+  says how to help.
+- **Ready for other languages** ([ADR 13](docs/adr/0013-translations.md),
+  [how to write text](docs/translating.md)). Every piece of text the app shows now comes from a
+  messages file, in ICU MessageFormat through Transloco, so a language is added by translating
+  files.
+  - Each language has its own addresses (`/de/recipe`), with English at the ones it has
+    today. Search engines are told about each page's languages, and the sitemap lists them.
+  - **Settings:** your language (once there is more than one), and how you read glaze density
+    (specific gravity, degrees Baumé, or pint weight). A translated page offers the English
+    after key terms, and a notice that it was translated by AI, with a GitHub form to suggest a
+    correction.
+  - **The guides** are now Markdown, one file per language. Temperatures show in your scale first,
+    and the firing guide shows firing to cones or by temperature, as you fire, with the other a
+    click away. Glaze densities show your way.
+  - The chemistry's and the server's messages, the standard materials' notes and hazards, and who
+    to call can all be translated. A translation of a hazard shows only for exactly the English it
+    was made from.
+  - **Checks in CI:** every key has its English and every English is used; translations keep the
+    English's placeholders, tags and the plural forms their language needs; each page tested in a
+    pseudo-locale shows no text left unmarked; and a mirrored right-to-left page was tried in
+    Arabic.
+
 - **Compare two recipes side by side**
   ([#6](https://github.com/AaronFilson/glazecalc/issues/6)). **Compare**, beside Save or on a
   saved recipe, lines up their unity formulas oxide by oxide with the change from the first to

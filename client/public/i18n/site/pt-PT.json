@@ -1,0 +1,111 @@
+{
+  "landing": {
+    "eyebrow": "Calculadora de vidrados e caderno do atelier",
+    "heading": "Química de vidrados gratuita para ceramistas.",
+    "lead": "Compreenda os seus vidrados, em vez de apenas os misturar. Introduza uma receita e veja de imediato a sua fórmula de Seger (UMF), a relação sílica/alumina e o equilíbrio dos fundentes. Guarde as suas receitas, matérias-primas, corantes, notas e registos de cozedura juntos, num só caderno privado.",
+    "trialEnded": "O seu período de experiência terminou. Comece um novo ou crie uma conta gratuita para guardar o seu trabalho.",
+    "tryIt": "Experimentar agora",
+    "createAccount": "Criar uma conta gratuita",
+    "trialFailed": "Neste momento não foi possível iniciar um período de experiência. Tente novamente.",
+    "heroNote": "Pode experimentar sem se registar · Gratuito e de código aberto · As suas receitas ficam privadas",
+    "heroAlt": "Uma fila de conjuntos de cones já cozidos: os cones pirométricos brancos de cada conjunto dobraram-se com o calor do forno.",
+    "heroCaption": "Conjuntos de cones depois de uma cozedura: cada cone dobra-se quando o forno atinge trabalho térmico suficiente.",
+    "exampleHeading": "Veja como funciona: uma base clássica de celadon",
+    "exampleCaption": "O «4321» de Bernard Leach, muitas vezes cozido ao cone 10, em partes em peso.",
+    "material": "Matéria-prima",
+    "parts": "Partes",
+    "unityHeading": "A fórmula de Seger do vidrado",
+    "exampleNote": "Os fundentes somam 1, por isso quaisquer dois vidrados podem ser comparados em pé de igualdade. Calculado aqui mesmo, no seu navegador, pelo mesmo código que a calculadora usa.",
+    "featuresHeading": "O que o Glazecalc faz",
+    "features": {
+      "unity": {
+        "title": "Fórmula de Seger instantânea",
+        "text": "Veja os fundentes, a alumina e a sílica normalizados à unidade, tal como os químicos de vidrados comparam receitas, assim que introduz uma receita."
+      },
+      "substitute": {
+        "title": "Corrigir e substituir",
+        "text": "Uma matéria-prima foi descontinuada? Compare fórmulas para encontrar um substituto que funda da mesma maneira."
+      },
+      "notebook": {
+        "title": "O seu caderno do atelier",
+        "text": "Guarde receitas, as suas próprias matérias-primas, corantes, notas e registos de cozedura juntos, num só lugar."
+      },
+      "learn": {
+        "title": "Aprenda pelo caminho",
+        "text": "Ao lado dos números há guias em linguagem simples, desde o que é um vidrado até à sua cozedura em segurança."
+      }
+    },
+    "umfHeading": "O que é a fórmula de Seger (UMF)?",
+    "umfRecipe": "Uma receita de vidrado diz quanto pesar de cada matéria-prima. A fórmula de Seger, também chamada fórmula molecular unitária (UMF), diz em que se transformam essas matérias-primas no forno: quantas moléculas há de cada óxido, numa escala em que os fundentes somam um.",
+    "umfGroups": "Os fundentes fazem o vidrado fundir, a alumina torna o vidrado fundido mais viscoso e a sílica forma o vidro. Comparar estes três grupos explica porque é que um vidrado é brilhante e outro mate, ou porque é que um escorre enquanto outro fica no lugar, e mostra como substituir uma matéria-prima que já não se vende.",
+    "readAdvice": "Ler mais conselhos sobre vidrados",
+    "closingHeading": "Tudo pronto, quando quiser.",
+    "closingText": "Experimente já a calculadora e depois crie uma conta para guardar o que fez."
+  },
+  "about": {
+    "title": "Sobre o Glazecalc",
+    "lead": "Uma calculadora e um caderno de química de vidrados, gratuitos e de código aberto, para oleiros, ceramistas e estudantes.",
+    "whatHeading": "O que faz",
+    "what": "O Glazecalc transforma uma receita de vidrado, ou seja, as matérias-primas e a quantidade que pesa de cada uma, na sua fórmula de Seger (UMF): os óxidos de que o vidrado é feito depois de cozido, numa escala em que os fundentes somam um. Isso torna as receitas comparáveis, ajuda a explicar o comportamento de um vidrado e ajuda quando é preciso substituir uma matéria-prima.",
+    "alongside": "Além da calculadora, guarda as suas receitas, as suas próprias matérias-primas, corantes e outros aditivos, notas e registos de cozedura, uma página de <advice>conselhos práticos sobre vidrados</advice> e <guides>guias</guides> para quem começa, desde o que é um vidrado até à sua cozedura em segurança.",
+    "numbersHeading": "Como os números são calculados",
+    "numbers": "Cada matéria-prima é descrita pela sua fórmula química ou por uma análise de óxidos, mais a sua perda ao fogo: a parte que se perde no forno, como o dióxido de carbono do carbonato de cálcio ou a água do caulino. O Glazecalc converte cada quantidade em moles de cada óxido com as massas molares padrão, soma-as em toda a receita e divide pelo total de moles de fundente. Os corantes e outros aditivos aparecem com a receita, mas ficam fora da fórmula de Seger, como é habitual.",
+    "guide": "Os resultados são uma orientação, não uma garantia. As matérias-primas reais variam de fornecedor para fornecedor e de lote para lote, e a cozedura conta tanto como a química, por isso teste todos os vidrados. Os vidrados para superfícies em contacto com alimentos devem ser testados quanto à libertação de metais.",
+    "builtHeading": "Como é feito",
+    "built": "O Glazecalc começou em 2017 e foi refeito em 2026. É uma pequena aplicação web, e o seu <source>código-fonte está no GitHub</source> sob a licença MIT.",
+    "stackBrowser": "Angular 22 no navegador (componentes autónomos e signals), com a química dos vidrados numa pequena biblioteca partilhada.",
+    "stackServer": "Uma API em TypeScript sobre Node.js 24 e Express 5, com MongoDB 9, verificada por mais de 350 testes automáticos.",
+    "stackHosting": "Corre em Docker na Amazon Web Services, atrás de nginx, com HTTPS da Let's Encrypt.",
+    "stackDeploy": "Implementado pelo GitHub Actions: as imagens são criadas e testadas a cada alteração, e as implementações iniciam sessão na AWS sem chaves guardadas.",
+    "whoHeading": "Quem o fez",
+    "who": "O Glazecalc é feito por Aaron Filson. Encontrou um problema ou tem uma ideia? <issues>Abra uma issue no GitHub</issues>.",
+    "studio": "A cerâmica feita à mão de Aaron Filson está no <studio>Updraft Pottery Studio</studio>, em Tacoma, Washington. Veja o trabalho e encomende uma peça, se alguma lhe disser alguma coisa."
+  },
+  "privacy": {
+    "title": "Privacidade",
+    "lead": "Última atualização: outubro de 2026.",
+    "shortHeading": "Em resumo",
+    "short": "O Glazecalc guarda o que precisa para gerir a sua conta e nada mais. Não há anúncios, nem ferramentas de análise, nem cookies de rastreio, nem scripts de terceiros. Os seus dados nunca são vendidos nem partilhados.",
+    "storedHeading": "O que é guardado",
+    "storedAccount": "<b>A sua conta:</b> o seu endereço de e-mail e a sua palavra-passe, que é guardada apenas como um hash unidirecional (bcrypt), nunca como a própria palavra-passe.",
+    "storedTrial": "<b>Um período de experiência («Experimentar agora»):</b> sem e-mail nem palavra-passe, apenas um nome gerado, como «speckled quiet kilns». Um período de experiência e tudo o que nele for guardado são eliminados automaticamente 14 dias depois do início, a não ser que crie uma conta para os manter.",
+    "storedSaved": "<b>O que guarda:</b> as suas receitas, matérias-primas, aditivos, notas, registos de cozedura e conselhos. Os outros utilizadores não os podem ver.",
+    "storedResets": "<b>Pedidos de reposição da palavra-passe:</b> uma impressão digital de cada ligação de reposição (não a própria ligação), eliminada automaticamente quando expira, 30 minutos depois.",
+    "storedBrowser": "<b>No seu navegador:</b> um cookie, <code>glazecalc_session</code>, que mantém a sua sessão iniciada. Contém o seu token de sessão, os scripts da página não o podem ler, só é enviado para o servidor do próprio Glazecalc e dura 7 dias (14 num período de experiência). O armazenamento local guarda uma nota de que tem a sessão iniciada e, durante um período de experiência, o nome e a data de fim deste. Terminar a sessão remove-os.",
+    "emailHeading": "E-mail",
+    "email": "O Glazecalc só envia e-mails quando pede para repor a sua palavra-passe e quando a sua palavra-passe muda. São enviados através do Amazon Simple Email Service. Não há newsletter nem e-mails de marketing.",
+    "hostingHeading": "Registos, cópias de segurança e alojamento",
+    "logs": "O servidor web regista cada pedido, incluindo o seu endereço IP, num ficheiro de registo guardado durante 14 dias para gerir e proteger o site.",
+    "backups": "As cópias de segurança encriptadas da base de dados são guardadas durante 30 dias, e as cópias do disco do servidor durante 7 dias, para que o site possa ser reposto após uma falha.",
+    "hosting": "Tudo está alojado na Amazon Web Services, nos Estados Unidos (Oregon).",
+    "deletingHeading": "Eliminar os seus dados",
+    "deleting": "Pode eliminar a sua conta na <account>página da sua conta</account>. Isso remove de imediato a sua conta e tudo o que guardou; «Descartar a experiência» faz o mesmo num período de experiência. Os dados nas cópias de segurança desaparecem à medida que estas expiram, no prazo de 30 dias.",
+    "questionsHeading": "Perguntas",
+    "questions": "Para perguntar, <issues>abra uma issue no GitHub</issues>. Se esta política mudar, a data no topo desta página também muda."
+  },
+  "notFound": {
+    "heading": "Página não encontrada",
+    "text": "Não existe nenhuma página neste endereço. Pode ter mudado de endereço, ou a ligação pode estar mal escrita.",
+    "start": "Ir para a página inicial"
+  },
+  "advice": {
+    "title": "Conselhos sobre vidrados",
+    "lead": "Dicas práticas sobre misturar, vidrar e cozer, e também os seus próprios conselhos.",
+    "signUp": "<signup>Crie uma conta gratuita</signup> ou <signin>inicie sessão</signin> para guardar os seus próprios conselhos.",
+    "generalHeading": "Conselhos gerais",
+    "tags": "Etiquetas: {list}",
+    "addHeading": "Adicionar os seus próprios conselhos",
+    "titleLabel": "Título:",
+    "tagsLabel": "Etiquetas:",
+    "contentLabel": "Conteúdo do conselho:",
+    "save": "Guardar",
+    "mineHeading": "Os meus conselhos",
+    "nothingSaved": "Ainda não há nada guardado.",
+    "titleMissing": "Dê um título ao conselho.",
+    "contentMissing": "Escreva o conselho.",
+    "fetchFailed": "Ocorreu um erro ao obter os conselhos.",
+    "standardFetchFailed": "Ocorreu um erro ao obter os conselhos do servidor.",
+    "saved": "O conselho foi adicionado.",
+    "saveFailed": "Ocorreu um erro ao enviar o conselho."
+  }
+}

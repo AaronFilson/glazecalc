@@ -11,6 +11,7 @@ import {
   input,
   signal
 } from '@angular/core';
+import { translate } from '@jsverse/transloco';
 
 /** What is wrong with a field's value, or null when it is fine. */
 export type Check = () => string | null;
@@ -85,7 +86,9 @@ export class FieldChecks {
     this.focus(fields[0]);
     // The focus may already be on the field (Enter in it), so screen readers are told too.
     announce(
-      fields.length === 1 ? found[fields[0]] : `${fields.length} fields need attention. The first: ${found[fields[0]]}`
+      fields.length === 1
+        ? found[fields[0]]
+        : translate('fieldChecks.several', { count: fields.length, first: found[fields[0]] })
     );
     return false;
   }
@@ -258,8 +261,8 @@ export const emailAddress =
   (value: Value): Check =>
   () => {
     const address = text(value);
-    if (!address) return 'Enter your email address.';
-    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(address) ? null : 'Enter an email address like name@example.com.';
+    if (!address) return translate('fieldChecks.emailMissing');
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(address) ? null : translate('fieldChecks.emailFormat');
   };
 
 /** A new password: 8 characters or more, as the server asks. */
@@ -267,16 +270,16 @@ export const newPassword =
   (value: Value): Check =>
   () => {
     const password = String(value() ?? '');
-    if (!password) return 'Choose a password of at least 8 characters.';
-    return password.length < 8 ? 'Use at least 8 characters.' : null;
+    if (!password) return translate('fieldChecks.passwordMissing');
+    return password.length < 8 ? translate('fieldChecks.passwordShort') : null;
   };
 
 /** The new password typed again. */
 export const samePassword =
   (value: Value, password: Value): Check =>
   () => {
-    if (!String(value() ?? '')) return 'Enter the password again.';
-    return value() === password() ? null : 'The two passwords do not match.';
+    if (!String(value() ?? '')) return translate('fieldChecks.passwordAgain');
+    return value() === password() ? null : translate('fieldChecks.passwordsDiffer');
   };
 
 /**

@@ -13,7 +13,7 @@ const saveMaterial = async (page, name) => {
   expect(res.ok()).toBeTruthy();
 };
 
-const mine = (page) => page.locator('section', { hasText: 'My server materials:' });
+const mine = (page) => page.locator('section', { hasText: 'My materials:' });
 const removeButton = (page, name) => page.getByRole('button', { name: 'Remove ' + name, exact: true });
 
 test.beforeEach(async ({ page }) => {

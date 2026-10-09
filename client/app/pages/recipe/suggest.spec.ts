@@ -1,5 +1,8 @@
+import { TestBed } from '@angular/core/testing';
+import { TranslocoService } from '@jsverse/transloco';
 import { calculateUMF } from '../../../../lib/chemistry';
 import { RecipeMaterial } from '../../core/models';
+import { provideEnglish } from '../../testing/i18n';
 import { LibraryMaterial } from './compare';
 import { planSuggestion, suggestAmounts } from './suggest';
 
@@ -132,6 +135,12 @@ const OLD = recipe([
 ]);
 
 describe('suggesting amounts for a swap that is not like for like', () => {
+  // A material's status is a message.
+  beforeEach(() => {
+    TestBed.configureTestingModule({ providers: provideEnglish() });
+    TestBed.inject(TranslocoService);
+  });
+
   it('asks what brings back an oxide the swap leaves short: current materials sold in the region, best first', () => {
     const plan = planSuggestion(OLD, find, library, 'US');
     expect(plan.swaps.map((s) => [s.from, s.to, s.like])).toEqual([['Niter', 'Soda frit', false]]);

@@ -97,7 +97,7 @@ describe('MaterialPage', () => {
     expect(page['notices'].messages()).toEqual(['Success. Material added to database.']);
     expect(page['form'].name()).toBe('');
     expect(page['form'].formula()).toEqual([]);
-    expect(text(fixture, '#my-materials-heading')).toBe('My server materials:');
+    expect(text(fixture, '#my-materials-heading')).toBe('My materials:');
   });
 
   it('works out the LOI from the molecular weight when no LOI is given', async () => {

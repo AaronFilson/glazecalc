@@ -1,4 +1,7 @@
+import { TestBed } from '@angular/core/testing';
+import { TranslocoService } from '@jsverse/transloco';
 import { Additive, Material } from '../../core/models';
+import { provideEnglish } from '../../testing/i18n';
 import { pastLimits, rawClayPercent, sizeNotes } from './checks';
 
 const material = (name: string, info: Partial<Material> = {}): Material => ({
@@ -22,6 +25,12 @@ const additive = (name: string, oxide: string): Additive => ({
 });
 const BASE = [line('Frit', 80, { category: 'frit' }), line('Kaolin', 20, { category: 'clay' })];
 const GLOSSY = { CaO: 0.7, Na2O: 0.15, K2O: 0.15, Al2O3: 0.3, B2O3: 0.5, SiO2: 3 };
+
+// The warnings are messages.
+beforeEach(() => {
+  TestBed.configureTestingModule({ providers: provideEnglish() });
+  TestBed.inject(TranslocoService);
+});
 
 describe('saying what is past a limit', () => {
   it('says nothing for a glaze within every limit', () => {
@@ -84,7 +93,7 @@ describe('saying what is past a limit', () => {
     expect(warnings.some((w) => w.startsWith('A calcium borate frit is normally a small boron top-up'))).toBe(true);
     expect(warnings.some((w) => w.startsWith('Over 20% raw clay (25%)'))).toBe(true);
     const bare = pastLimits({ lines: [line('Frit', 100, { category: 'frit' })], unity: GLOSSY, oldClay: 20 });
-    expect(bare.some((w) => w.startsWith('This has no raw clay (the old recipe had 20%)'))).toBe(true);
+    expect(bare.some((w) => w.startsWith('This has no raw clay; the old recipe had 20%.'))).toBe(true);
   });
 
   it('says how the expansion moves against the old recipe', () => {

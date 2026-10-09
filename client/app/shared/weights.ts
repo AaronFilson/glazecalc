@@ -1,3 +1,5 @@
+import { upTo } from './format';
+
 /** How batch weights are shown: grams, or pounds and ounces (the account's setting). */
 export type WeightUnit = 'g' | 'lb';
 
@@ -7,8 +9,8 @@ export type GramPrecision = 'single' | 'full';
 export const GRAMS_PER_POUND = 453.59237;
 export const GRAMS_PER_OUNCE = GRAMS_PER_POUND / 16;
 
-/** Up to `places` decimals, without trailing zeros. */
-const trim = (value: number, places: number): string => String(Number(value.toFixed(places)));
+/** Up to `places` decimals, without trailing zeros, as the reader writes numbers. */
+const trim = (value: number, places: number): string => upTo(value, places);
 
 /**
  * A weight as a scale reads it: "4938.2 g" (2 decimals under 10 g, for small

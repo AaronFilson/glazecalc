@@ -228,7 +228,7 @@ describe('record ownership and input checks', () => {
     it('answers bad JSON with a short JSON error, not a stack trace', async () => {
       const res = await api().post('/signup').set('Content-Type', 'application/json').send('{bad');
       expect(res).to.have.status(400);
-      expect(res.body).to.eql({ msg: 'Bad request' });
+      expect(res.body).to.eql({ code: 'bad-request', msg: 'Bad request' });
     });
   });
 });

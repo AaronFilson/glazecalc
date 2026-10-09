@@ -1,15 +1,13 @@
 import { Component } from '@angular/core';
+import { TranslocoDirective } from '@jsverse/transloco';
 import { PageHeader } from '../../shared/page-header';
 
 @Component({
   selector: 'gc-trash-page',
-  imports: [PageHeader],
-  template: `
-    <gc-page-header title="Trash" />
-    <p class="help-text">
-      The trash functionality is coming soon in the next version of the Glaze Calc app. Until then, use the delete /
-      remove with care: once it is gone the info is lost.
-    </p>
-  `
+  imports: [PageHeader, TranslocoDirective],
+  template: `<ng-container *transloco="let t">
+    <gc-page-header [title]="t('notebook.trash.title')" />
+    <p class="help-text">{{ t('notebook.trash.comingSoon') }}</p>
+  </ng-container>`
 })
 export class TrashPage {}

@@ -16,12 +16,11 @@ import express, { type Request, type Response } from 'express';
 import mongoose from 'mongoose';
 import { giveBack, quota, type RecordModel } from './guest_limits.ts';
 import jwtAuth, { userOf } from './jwt_auth.ts';
+import { say } from './messages.ts';
 
 export interface RecordRoutesOptions {
-  /** One record, in messages: 'recipe'. */
+  /** The kind of record, a code the messages name it by (server/lib/messages.ts): 'recipe'. */
   label: string;
-  /** Several, in the trial limit message: 'recipes'. */
-  plural: string;
   /** What a user may set. */
   fields: string[];
   /** What a new record must have. */
@@ -34,7 +33,7 @@ export interface RecordRoutesOptions {
 
 type Body = Record<string, unknown>;
 
-const MISSING = { msg: 'Missing required information' };
+const MISSING = say('missing-information');
 
 /** Absent or empty. 0 is a value: a material's loss on ignition can be 0. */
 const missing = (value: unknown): boolean => value === undefined || value === null || value === '';
@@ -53,19 +52,19 @@ const pick = (source: Body, fields: string[]): Body =>
 
 const validId = (req: Request, res: Response): boolean => {
   if (mongoose.isValidObjectId(req.params.id)) return true;
-  res.status(400).json({ msg: 'Invalid id' });
+  res.status(400).json(say('invalid-id'));
   return false;
 };
 
 export default function recordRoutes(
   Model: RecordModel,
-  { label, plural, fields, required, wrapper = {}, standard = false }: RecordRoutesOptions
+  { label, fields, required, wrapper = {}, standard = false }: RecordRoutesOptions
 ): express.Router {
   const router = express.Router();
   const jsonParser = express.json();
-  const notFound = { msg: 'No ' + label + ' with that id' };
+  const notFound = say('record-not-found', { label });
 
-  router.post('/create', jwtAuth, quota(Model, plural), jsonParser, async (req, res) => {
+  router.post('/create', jwtAuth, quota(Model, label), jsonParser, async (req, res) => {
     const source = recordIn(req, wrapper.create) ?? {};
     if (required.some((field) => missing(source[field]))) {
       res.status(400).json(MISSING);
@@ -81,7 +80,7 @@ export default function recordRoutes(
   router.get('/getLatest', jwtAuth, async (req, res) => {
     const newest = await Model.findOne({ ownedBy: userOf(req).id }).sort({ _id: -1 });
     if (!newest) {
-      res.status(404).json({ msg: 'No ' + label + ' saved yet' });
+      res.status(404).json(say('none-saved', { label }));
       return;
     }
     res.status(200).json(newest);
@@ -96,7 +95,7 @@ export default function recordRoutes(
     }
     const changes = pick(source, fields);
     if (!Object.keys(changes).length) {
-      res.status(400).json({ msg: 'Nothing to update' });
+      res.status(400).json(say('nothing-to-update'));
       return;
     }
     try {
@@ -109,10 +108,10 @@ export default function recordRoutes(
         res.status(404).json(notFound);
         return;
       }
-      res.status(200).json({ msg: 'Successfully updated ' + label });
+      res.status(200).json(say('record-updated', { label }));
     } catch (err) {
       if (err instanceof Error && (err.name === 'ValidationError' || err.name === 'CastError')) {
-        res.status(400).json({ msg: 'Invalid ' + label });
+        res.status(400).json(say('record-invalid', { label }));
         return;
       }
       throw err;
@@ -129,7 +128,7 @@ export default function recordRoutes(
     }
     // A trial gets the place back for another record.
     if (user.guest) await giveBack(user._id, Model);
-    res.status(200).json({ msg: 'Successfully deleted ' + label });
+    res.status(200).json(say('record-deleted', { label }));
   });
 
   if (standard) {

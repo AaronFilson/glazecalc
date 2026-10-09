@@ -1,3 +1,6 @@
+import { TestBed } from '@angular/core/testing';
+import { TranslocoService } from '@jsverse/transloco';
+import { testProviders } from '../testing/test-providers';
 import { Busy } from './busy';
 import { Notices } from './notices';
 
@@ -32,6 +35,12 @@ describe('Busy', () => {
 });
 
 describe('Notices.warnings', () => {
+  // The English messages, which these checks are written in.
+  beforeEach(() => {
+    TestBed.configureTestingModule({ providers: testProviders() });
+    TestBed.inject(TranslocoService);
+  });
+
   it('replaces the previous warnings and keeps other errors', () => {
     const notices = new Notices();
     notices.error('Error: something else');

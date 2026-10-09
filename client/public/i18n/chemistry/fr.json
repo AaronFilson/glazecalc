@@ -1,0 +1,22 @@
+{
+  "unknown-compound": "Composé inconnu dans la formule : {compound}.",
+  "unknown-oxide": "Oxyde inconnu {oxide} dans la matière {material}.",
+  "invalid-oxide-amount": "Quantité non valide pour {oxide} dans la matière {material}.",
+  "loi-range": "La PAF de la matière {material} doit être supérieure ou égale à 0 et inférieure à 100.",
+  "no-oxides": "La matière {material} ne contient aucun oxyde.",
+  "no-name": "La matière doit avoir un nom.",
+  "no-analysis": "La matière {material} a besoin d’une formule ou d’une analyse.",
+  "recipe-shape": "La recette doit être un tableau de '{ material, amount }' ou une table de quantités.",
+  "invalid-amount": "Quantité non valide pour la matière {material}.",
+  "missing-material": "Il manque une matière dans une ligne de la recette.",
+  "unknown-material": "Matière inconnue : {material}.",
+  "no-flux": "La recette ne contient aucun oxyde fondant : la formule de Seger (UMF) n’est donc pas définie.",
+  "no-target": "La formule cible ne contient aucun oxyde à atteindre.",
+  "no-materials": "Il n’y a aucune matière à calculer.",
+  "no-temperature": "La température de cuisson est nécessaire pour fixer la teneur en bore.",
+  "no-flux-to-rebuild": "L’émail n’a aucun fondant à reconstruire.",
+  "unknown-element": "Élément inconnu {element} dans la formule {formula}.",
+  "bad-formula": "Impossible de lire la formule {formula}.",
+  "analysis-total": "L’analyse de la matière {material} fait un total de {total} %, PAF comprise ; on attend environ 100 %.",
+  "stored-equivalent": "La masse équivalente enregistrée pour la matière {material} ne correspond pas à sa formule et à sa PAF ; la formule et la PAF ont été utilisées à la place."
+}

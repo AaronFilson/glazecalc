@@ -1,5 +1,8 @@
+import { TestBed } from '@angular/core/testing';
+import { TranslocoService } from '@jsverse/transloco';
 import { calculateUMF } from '../../../../lib/chemistry';
 import { Additive, RecipeMaterial } from '../../core/models';
+import { provideEnglish } from '../../testing/i18n';
 import { LibraryMaterial } from './compare';
 import { leadFreeBases, leadIn, recipeHasLead, replaceLead } from './lead';
 
@@ -15,6 +18,12 @@ const material = (
   loi,
   fields: fields.map(([oxide, amount]) => ({ name: oxide, amount })),
   ...info
+});
+
+// What changed and what to watch for are messages.
+beforeEach(() => {
+  TestBed.configureTestingModule({ providers: provideEnglish() });
+  TestBed.inject(TranslocoService);
 });
 
 // Red lead, Pb₃O₄: PbO with a little oxygen lost in the firing.
@@ -118,6 +127,14 @@ describe('replacing lead', () => {
     // A line with no amount yet is not lead in the glaze.
     expect(recipeHasLead(recipe([[RED_LEAD, '']]))).toBe(false);
     const lead = leadIn(HONEY);
+    expect(lead.unity).toBeCloseTo(1, 6);
+    expect(lead.percent).toBeGreaterThan(50);
+  });
+
+  it('still says how much lead there is when another line cannot be read', () => {
+    // A material saved with no oxides: the page says what is wrong with it, and the lead is still counted.
+    const empty = material('Mystery', [], 0);
+    const lead = leadIn([...HONEY, { ...empty, amount: '5' }]);
     expect(lead.unity).toBeCloseTo(1, 6);
     expect(lead.percent).toBeGreaterThan(50);
   });

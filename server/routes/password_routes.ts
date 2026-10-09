@@ -21,16 +21,11 @@ import * as limits from '../lib/rate_limit.ts';
 import * as session from '../lib/session.ts';
 import PasswordReset from '../models/password_reset.ts';
 import User, { type UserDocument } from '../models/user.ts';
+import { say } from '../lib/messages.ts';
 
 const RESET_MINUTES = 30;
 // Requests per account per hour, on top of the per-address rate limit.
 const RESETS_PER_HOUR = 3;
-const SENT =
-  'If an account uses that email, we have sent it a link to reset the password. ' +
-  'The link works for ' +
-  RESET_MINUTES +
-  ' minutes.';
-const BAD_LINK = 'This reset link is not valid or has expired. Please ask for a new one.';
 
 const hashToken = (token: string): string => crypto.createHash('sha256').update(token).digest('hex');
 // Mail goes out after the reply, so it never delays or fails a request.
@@ -41,13 +36,13 @@ export default passwordRouter;
 
 passwordRouter.post('/forgot', limits.forgotPassword, express.json(), (req, res) => {
   if (!mailer.available()) {
-    return res.status(503).json({ msg: 'Password reset by email is not available yet.' });
+    return res.status(503).json(say('reset-unavailable'));
   }
   const address = email.normalize(((req.body ?? {}) as { email?: unknown }).email);
-  if (!email.isValid(address)) return res.status(400).json({ msg: 'Please enter an email', field: 'email' });
+  if (!email.isValid(address)) return res.status(400).json(say('email-required', undefined, { field: 'email' }));
 
   // The same reply whether or not the account exists, sent before looking.
-  res.status(200).json({ msg: SENT });
+  res.status(200).json(say('reset-sent', { minutes: RESET_MINUTES }));
   sendResetLink(address).catch(logMailError('password reset'));
   return undefined;
 });
@@ -69,14 +64,14 @@ async function sendResetLink(address: string): Promise<void> {
     tokenHash: hashToken(token),
     expiresAt: new Date(Date.now() + RESET_MINUTES * 60 * 1000)
   });
-  await accountMail.sendReset(user.email, token, RESET_MINUTES);
+  await accountMail.sendReset(user.email, token, RESET_MINUTES, user.preferences?.language);
 }
 
 passwordRouter.post('/reset', limits.resetPassword, express.json(), async (req, res) => {
   const body = (req.body ?? {}) as { token?: unknown; password?: unknown };
-  if (typeof body.token !== 'string' || !body.token) return res.status(400).json({ msg: BAD_LINK });
+  if (typeof body.token !== 'string' || !body.token) return res.status(400).json(say('reset-link-bad'));
   const problem = password.problem(body.password);
-  if (problem) return res.status(400).json({ msg: problem, field: 'password' });
+  if (problem) return res.status(400).json(say(problem, undefined, { field: 'password' }));
 
   // Marking the request used in the same step makes each link work only once.
   const now = new Date();
@@ -85,9 +80,9 @@ passwordRouter.post('/reset', limits.resetPassword, express.json(), async (req, 
     { $set: { usedAt: now } }
   );
   const user = reset && (await User.findById(reset.userId));
-  if (!user) return res.status(400).json({ msg: BAD_LINK });
+  if (!user) return res.status(400).json(say('reset-link-bad'));
   await setPassword(user, body.password as string);
-  return res.status(200).json({ msg: 'Your password has been changed. Please sign in with your new password.' });
+  return res.status(200).json(say('password-reset'));
 });
 
 passwordRouter.put(
@@ -100,18 +95,18 @@ passwordRouter.put(
   async (req, res) => {
     const body = (req.body ?? {}) as { current?: unknown; password?: unknown };
     const problem = password.problem(body.password);
-    if (problem) return res.status(400).json({ msg: problem, field: 'password' });
+    if (problem) return res.status(400).json(say(problem, undefined, { field: 'password' }));
 
     const user = await User.findById(userOf(req)._id);
-    if (!user) return res.status(404).json({ msg: 'No user with that id' });
+    if (!user) return res.status(404).json(say('no-user'));
     // 400 rather than 401: the user is signed in, and a 401 would sign them out.
     if (!(await password.matches(body.current, user.password))) {
-      return res.status(400).json({ msg: 'Your current password is not correct.', field: 'current' });
+      return res.status(400).json(say('current-password-wrong', undefined, { field: 'current' }));
     }
     await setPassword(user, body.password as string);
     // A new session keeps this browser signed in; every other one is signed out.
     session.start(res, user);
-    return res.status(200).json({ msg: 'Your password has been changed.', email: user.email });
+    return res.status(200).json(say('password-changed', undefined, { email: user.email }));
   }
 );
 
@@ -122,7 +117,7 @@ async function setPassword(user: UserDocument, newPassword: string): Promise<voi
   user.tokenVersion = (user.tokenVersion || 0) + 1;
   await user.save();
   await cancelLinks(user._id);
-  accountMail.sendChanged(user.email).catch(logMailError('password changed'));
+  accountMail.sendChanged(user.email, user.preferences?.language).catch(logMailError('password changed'));
 }
 
 function cancelLinks(userId: Types.ObjectId) {

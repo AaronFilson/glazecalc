@@ -4,6 +4,7 @@
 import express, { type NextFunction, type Request, type Response } from 'express';
 import type { Model, Types } from 'mongoose';
 import User from '../models/user.ts';
+import { say } from './messages.ts';
 
 /** A model of records that belong to a user (they have ownedBy); the seven differ in their other fields. */
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -20,7 +21,7 @@ export const parseBody = (req: Request, res: Response, next: NextFunction): void
 /** For routes that need a real account. */
 export const notGuest = (req: Request, res: Response, next: NextFunction): void => {
   if (req.user?.guest) {
-    res.status(403).json({ msg: 'Please create an account first.' });
+    res.status(403).json(say('account-needed'));
     return;
   }
   next();
@@ -46,9 +47,7 @@ export const quota =
       { $inc: { [field]: 1 } }
     );
     if (!taken.modifiedCount) {
-      res.status(403).json({
-        msg: 'A trial can keep up to ' + maxRecords() + ' ' + label + '. Create a free account to save more.'
-      });
+      res.status(403).json(say('trial-limit', { limit: maxRecords(), label }));
       return;
     }
     res.once('finish', () => {

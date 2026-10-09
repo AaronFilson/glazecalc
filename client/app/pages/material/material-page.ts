@@ -1,5 +1,6 @@
 import { Component, OnInit, computed, inject, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { TranslocoDirective, translate } from '@jsverse/transloco';
 import { formatFormula } from '../../../../lib/chemistry';
 import { ApiResourceFactory } from '../../core/api-resource.service';
 import { errorMessage } from '../../core/error-message';
@@ -15,7 +16,7 @@ import { StandardList } from '../../shared/standard-list';
 
 @Component({
   selector: 'gc-material-page',
-  imports: [FieldCheck, FormsModule, NoticesList, PageHeader, RemoveButton, StandardList],
+  imports: [FieldCheck, FormsModule, NoticesList, PageHeader, RemoveButton, StandardList, TranslocoDirective],
   templateUrl: './material-page.html'
 })
 export class MaterialPage implements OnInit {
@@ -40,11 +41,11 @@ export class MaterialPage implements OnInit {
   ngOnInit(): void {
     this.materials.getAll().then(
       (list) => this.myMaterials.set(list),
-      () => this.notices.error('There was an error in getting the materials information.')
+      () => this.notices.error(translate('library.material.fetchFailed'))
     );
     this.materials.getStandard().then(
       (list) => this.standardMaterials.set(list),
-      () => this.notices.error('There was an error in getting the standard materials information.')
+      () => this.notices.error(translate('library.material.standardFetchFailed'))
     );
   }
 
@@ -58,10 +59,10 @@ export class MaterialPage implements OnInit {
     try {
       const saved = await this.materials.create(material);
       this.myMaterials.update((list) => [...list, saved]);
-      this.notices.success('Success. Material added to database.');
+      this.notices.success(translate('library.material.saved'));
       this.form.reset();
     } catch (err) {
-      this.notices.error(errorMessage(err, 'Error: the request to the server failed.'));
+      this.notices.error(errorMessage(err, translate('library.common.saveFailed')));
     }
   }
 }

@@ -1,5 +1,6 @@
 import { Component, OnInit, inject, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { TranslocoDirective, translate } from '@jsverse/transloco';
 import { formatFormula } from '../../../../lib/chemistry';
 import { ApiResourceFactory } from '../../core/api-resource.service';
 import { errorMessage } from '../../core/error-message';
@@ -7,6 +8,7 @@ import { Additive } from '../../core/models';
 import { Busy } from '../../shared/busy';
 import { ChemistryForm } from '../../shared/chemistry-form';
 import { FieldCheck } from '../../shared/field-checks';
+import { fixed } from '../../shared/format';
 import { Notices, NoticesList } from '../../shared/notices';
 import { ADDITIVE_OXIDES, fieldsText, firstOf } from '../../shared/options';
 import { PageHeader } from '../../shared/page-header';
@@ -15,7 +17,7 @@ import { StandardList } from '../../shared/standard-list';
 
 @Component({
   selector: 'gc-additive-page',
-  imports: [FieldCheck, FormsModule, NoticesList, PageHeader, RemoveButton, StandardList],
+  imports: [FieldCheck, FormsModule, NoticesList, PageHeader, RemoveButton, StandardList, TranslocoDirective],
   templateUrl: './additive-page.html'
 })
 export class AdditivePage implements OnInit {
@@ -25,6 +27,7 @@ export class AdditivePage implements OnInit {
   protected readonly firstOf = firstOf;
   protected readonly fieldsText = fieldsText;
   protected readonly formatFormula = formatFormula;
+  protected readonly fixed = fixed;
   protected readonly notices = new Notices();
   protected readonly saving = new Busy();
 
@@ -38,11 +41,11 @@ export class AdditivePage implements OnInit {
   ngOnInit(): void {
     this.additives.getAll().then(
       (list) => this.myAdditives.set(list),
-      () => this.notices.error('There was an error in getting the additives information.')
+      () => this.notices.error(translate('library.additive.fetchFailed'))
     );
     this.additives.getStandard().then(
       (list) => this.standardAdditives.set(list),
-      () => this.notices.error('There was an error in getting the standard additives information.')
+      () => this.notices.error(translate('library.additive.standardFetchFailed'))
     );
   }
 
@@ -56,10 +59,10 @@ export class AdditivePage implements OnInit {
     try {
       const saved = await this.additives.create(additive);
       this.myAdditives.update((list) => [...list, saved]);
-      this.notices.success('Success. Additive added to database.');
+      this.notices.success(translate('library.additive.saved'));
       this.form.reset();
     } catch (err) {
-      this.notices.error(errorMessage(err, 'Error: the request to the server failed.'));
+      this.notices.error(errorMessage(err, translate('library.common.saveFailed')));
     }
   }
 }

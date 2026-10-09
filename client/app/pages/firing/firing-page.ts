@@ -1,6 +1,7 @@
-import { DatePipe } from '@angular/common';
+import { DatePipe } from '../../shared/format-pipes';
 import { Component, OnInit, inject, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { TranslocoDirective, translate } from '@jsverse/transloco';
 import { ApiResourceFactory } from '../../core/api-resource.service';
 import { errorMessage } from '../../core/error-message';
 import { Firing } from '../../core/models';
@@ -8,20 +9,22 @@ import { Busy } from '../../shared/busy';
 import { FieldCheck, FieldChecks, required } from '../../shared/field-checks';
 import { Notices, NoticesList } from '../../shared/notices';
 import { localDate, optional } from '../../shared/dates';
-import { FIRING_FIELDS, firstOf } from '../../shared/options';
+import { FIRING_FIELDS, firingFieldLabel, firstOf } from '../../shared/options';
 import { PageHeader } from '../../shared/page-header';
 import { Removal, RemoveButton } from '../../shared/remove-button';
 import { FiringLog } from './firing-log';
 
 @Component({
   selector: 'gc-firing-page',
-  imports: [DatePipe, FieldCheck, FormsModule, NoticesList, PageHeader, RemoveButton],
+  imports: [DatePipe, FieldCheck, FormsModule, NoticesList, PageHeader, RemoveButton, TranslocoDirective],
   templateUrl: './firing-page.html'
 })
 export class FiringPage implements OnInit {
   private readonly firings = inject(ApiResourceFactory).for<Firing>('firing');
 
   protected readonly fieldOptions = FIRING_FIELDS;
+  /** A column as the reader reads it; the log keeps its English name. */
+  protected readonly fieldLabel = firingFieldLabel;
   protected readonly firstOf = firstOf;
   protected readonly notices = new Notices();
   protected readonly saving = new Busy();
@@ -34,8 +37,11 @@ export class FiringPage implements OnInit {
   protected readonly log = signal(new FiringLog());
   protected readonly checks = new FieldChecks(
     () => ({
-      title: required(this.title, 'Give the firing a title.'),
-      fields: () => (this.log().fields.length ? null : 'Add at least one field to record, such as Time.')
+      title: required(this.title, translate('notebook.firing.titleMissing')),
+      fields: () =>
+        this.log().fields.length
+          ? null
+          : translate('notebook.firing.fieldsMissing', { example: firingFieldLabel('Time') })
     }),
     { sendOnly: ['fields'] }
   );
@@ -47,14 +53,14 @@ export class FiringPage implements OnInit {
     try {
       this.myFirings.set(await this.firings.getAll());
     } catch {
-      this.notices.error('There was an error in getting the firing records information.');
+      this.notices.error(translate('notebook.firing.fetchFailed'));
     }
   }
 
   protected addField(): void {
     const field = this.selectedField();
     if (!field) {
-      this.checks.report('fields', 'Choose a field to add, then Add the field.');
+      this.checks.report('fields', translate('notebook.firing.chooseField'));
       return;
     }
     this.change((log) => log.addField(field));
@@ -99,11 +105,11 @@ export class FiringPage implements OnInit {
         rows: log.rows
       });
       this.myFirings.update((list) => [...list, saved]);
-      this.notices.success('Success in adding the firing record to the server.');
+      this.notices.success(translate('notebook.firing.saved'));
       for (const field of [this.title, this.kiln, this.date, this.notes]) field.set('');
       this.log.set(new FiringLog());
     } catch (err) {
-      this.notices.error(errorMessage(err, 'Error: the request to the server failed.'));
+      this.notices.error(errorMessage(err, translate('notebook.firing.saveFailed')));
     }
   }
 

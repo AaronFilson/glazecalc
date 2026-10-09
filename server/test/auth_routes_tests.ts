@@ -36,7 +36,7 @@ describe('sign-up and sign-in API', () => {
         .post('/signup')
         .send(body as object);
       expect(res).to.have.status(400);
-      expect(res.body).to.eql({ msg: 'Please enter an email', field: 'email' });
+      expect(res.body).to.eql({ code: 'email-required', msg: 'Please enter an email', field: 'email' });
     }
   });
 
@@ -51,14 +51,14 @@ describe('sign-up and sign-in API', () => {
     it('signs in with the right password and sets the session cookie', async () => {
       const res = await signIn(email, password);
       expect(res).to.have.status(200);
-      expect(res.body).to.eql({ msg: 'Success in signin', email, kept: 0 });
+      expect(res.body).to.eql({ code: 'signed-in', msg: 'Success in signin', email, kept: 0 });
       expect(await verify(sessionToken(res))).to.have.status(200);
     });
 
     it('refuses a wrong password without a token', async () => {
       const res = await signIn(email, 'NOT' + password);
       expect(res).to.have.status(401);
-      expect(res.body).to.eql({ msg: 'Email or password is incorrect.' });
+      expect(res.body).to.eql({ code: 'sign-in-failed', msg: 'Email or password is incorrect.' });
     });
   });
 

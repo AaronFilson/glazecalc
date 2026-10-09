@@ -1,4 +1,7 @@
+import { translate } from '@jsverse/transloco';
 import { MaterialInput, RecipeLine, calculateUMF, materialWeights } from '../../../../lib/chemistry';
+import type { ChemistryError } from '../../../../lib/chemistry';
+import { chemistryText } from '../../i18n/coded';
 import { Additive, Recipe, RecipeAnalysis, RecipeMaterial } from '../../core/models';
 import { amountOf, totalOf, unitOf } from './rebase';
 
@@ -68,17 +71,13 @@ export function evaluate(
       if (!amount) continue;
       const record = isOldCopy(additive) ? (options.chemistryOf?.(additive.name) as Additive | undefined) : additive;
       if (!record || isOldCopy(record)) {
-        leftOut.push(
-          additive.name +
-            ' was saved by an older version of Glazecalc, without its LOI, so it is left out.' +
-            ' Add it to the recipe again to count it.'
-        );
+        leftOut.push(translate('recipe.analysis.oldCopy', { name: additive.name }));
         continue;
       }
       if (record.noChemistry) continue;
       const chemistry = record.chemistryOf ? options.chemistryOf?.(record.chemistryOf) : record;
       if (!chemistry || !hasChemistry(chemistry)) {
-        leftOut.push(additive.name + ' has no oxide analysis the unity formula can use, so it is left out.');
+        leftOut.push(translate('recipe.analysis.noAnalysis', { name: additive.name }));
         continue;
       }
       const weight = unitOf(additive) === 'percent' ? (amount * baseTotal) / 100 : amount;
@@ -88,18 +87,23 @@ export function evaluate(
   try {
     const result = calculateUMF(lines);
     // uList is the key saved recipes and older versions of the app use.
-    return { analysis: { ...result, uList: result.umf }, problem: null, warnings: [...result.warnings, ...leftOut] };
+    return {
+      analysis: { ...result, uList: result.umf },
+      problem: null,
+      warnings: [...result.warningCodes.map(chemistryText), ...leftOut]
+    };
   } catch (e) {
-    return { analysis: null, problem: (e as Error).message, warnings: [] };
+    return { analysis: null, problem: chemistryText(e as ChemistryError), warnings: [] };
   }
 }
 
-/** A colorant's amount with its unit: 2%, 3 parts, 5 g. */
+/** A colorant's amount with its unit: 2%, 3 parts, 5 g. The amount is as typed. */
 export function additiveAmount(additive: Additive): string {
   const amount = (additive.amount ?? '').trim();
   if (!amount) return '';
   const unit = unitOf(additive);
   if (unit === 'percent') return amount + '%';
   if (unit === 'grams') return amount + ' g';
-  return amount + (amount === '1' ? ' part' : ' parts');
+  // The amount as typed decides the plural: "1 part", but "1.0 parts", as English counts them.
+  return translate('recipe.analysis.parts', { amount });
 }

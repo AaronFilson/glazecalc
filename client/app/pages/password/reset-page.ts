@@ -2,6 +2,7 @@ import { Location } from '@angular/common';
 import { Component, inject, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ActivatedRoute, RouterLink } from '@angular/router';
+import { TranslocoDirective, translate } from '@jsverse/transloco';
 import { AuthService } from '../../core/auth.service';
 import { errorMessage } from '../../core/error-message';
 import { FieldCheck, FieldChecks, newPassword, samePassword } from '../../shared/field-checks';
@@ -17,21 +18,25 @@ import { Notices, NoticesList } from '../../shared/notices';
  */
 @Component({
   selector: 'gc-reset-page',
-  imports: [FieldCheck, FormsModule, NoticesList, RouterLink],
-  template: `
+  imports: [FieldCheck, FormsModule, NoticesList, RouterLink, TranslocoDirective],
+  template: `<ng-container *transloco="let t">
     <gc-notices [notices]="notices" />
     <section class="auth-text">
-      <h1>Choose a new password</h1>
+      <h1>{{ t('account.reset.heading') }}</h1>
       @if (done(); as message) {
         <p class="done-text" role="status">{{ message }}</p>
-        <p><a routerLink="/signin" class="btn btn-success">Sign in</a></p>
+        <p>
+          <a routerLink="/signin" class="btn btn-success">{{ t('account.reset.signIn') }}</a>
+        </p>
       } @else if (!token) {
-        <p class="help-text">This page needs the link from a password reset email, and this one is incomplete.</p>
-        <p><a routerLink="/forgot" class="btn btn-light border">Ask for a new link</a></p>
+        <p class="help-text">{{ t('account.reset.incomplete') }}</p>
+        <p>
+          <a routerLink="/forgot" class="btn btn-light border">{{ t('account.reset.askAgain') }}</a>
+        </p>
       } @else {
         <form (ngSubmit)="submit()" class="d-flex flex-wrap align-items-center gap-3 mb-3">
           <div>
-            <label for="password">New password: </label>
+            <label for="password">{{ t('account.reset.password') }} </label>
             <input
               id="password"
               type="password"
@@ -45,7 +50,7 @@ import { Notices, NoticesList } from '../../shared/notices';
             />
           </div>
           <div>
-            <label for="confirmation">Confirm new password: </label>
+            <label for="confirmation">{{ t('account.reset.confirmation') }} </label>
             <input
               id="confirmation"
               type="password"
@@ -57,12 +62,14 @@ import { Notices, NoticesList } from '../../shared/notices';
               gcFieldName="confirmation"
             />
           </div>
-          <button type="submit" class="btn btn-success" [attr.aria-disabled]="busy() || null">Save new password</button>
+          <button type="submit" class="btn btn-success" [attr.aria-disabled]="busy() || null">
+            {{ t('account.reset.save') }}
+          </button>
         </form>
-        <p class="small">At least 8 characters. Every device signed in to the account will be signed out.</p>
+        <p class="small">{{ t('account.reset.hint') }}</p>
       }
     </section>
-  `
+  </ng-container>`
 })
 export class ResetPage {
   private readonly auth = inject(AuthService);
@@ -90,7 +97,7 @@ export class ResetPage {
       this.done.set(await this.auth.resetPassword(this.token, this.password()));
     } catch (err) {
       if (this.checks.reportServer(err)) return;
-      this.notices.error(errorMessage(err, 'Error: could not change the password. Please try again.'));
+      this.notices.error(errorMessage(err, translate('account.reset.failed')));
     } finally {
       this.busy.set(false);
     }

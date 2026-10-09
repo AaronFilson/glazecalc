@@ -1,5 +1,8 @@
+import { TestBed } from '@angular/core/testing';
+import { TranslocoService } from '@jsverse/transloco';
 import { calculateUMF } from '../../../../lib/chemistry';
 import { RecipeMaterial } from '../../core/models';
+import { provideEnglish } from '../../testing/i18n';
 import { LibraryMaterial } from './compare';
 import { matchFromShelf } from './shelf';
 
@@ -15,6 +18,12 @@ const material = (
   loi,
   fields: fields.map(([oxide, amount]) => ({ name: oxide, amount })),
   ...info
+});
+
+// What changed and what to watch for are messages.
+beforeEach(() => {
+  TestBed.configureTestingModule({ providers: provideEnglish() });
+  TestBed.inject(TranslocoService);
 });
 
 const CUSTER = material(

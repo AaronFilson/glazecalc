@@ -1,5 +1,8 @@
+import { TestBed } from '@angular/core/testing';
+import { TranslocoService } from '@jsverse/transloco';
 import { Selection } from '../../../../lib/chemistry';
 import { RecipeMaterial } from '../../core/models';
+import { provideEnglish } from '../../testing/i18n';
 import { LibraryMaterial } from './compare';
 import { explain, recipeFrom, suggestable } from './pool';
 
@@ -11,6 +14,13 @@ const material = (name: string, info: Partial<LibraryMaterial> = {}): LibraryMat
   fields: [{ name: 'SiO2', amount: 1 }],
   ...info
 });
+
+// What each material supplies, and what changed, are messages.
+beforeEach(() => {
+  TestBed.configureTestingModule({ providers: provideEnglish() });
+  TestBed.inject(TranslocoService);
+});
+
 const line = (name: string, start: number, info: Partial<RecipeMaterial> = {}) => ({
   material: { ...material(name), amount: start ? String(start) : '', ...info } as RecipeMaterial,
   start

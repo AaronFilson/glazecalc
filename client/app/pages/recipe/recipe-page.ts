@@ -1,4 +1,4 @@
-import { DatePipe, Location } from '@angular/common';
+import { Location } from '@angular/common';
 import {
   Component,
   Injector,
@@ -13,14 +13,21 @@ import {
 import { toSignal } from '@angular/core/rxjs-interop';
 import { FormsModule } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
+import { TranslocoDirective, translate } from '@jsverse/transloco';
+import { marker } from '@jsverse/transloco-keys-manager/marker';
 import { map } from 'rxjs';
 import { CONES, MaterialInput } from '../../../../lib/chemistry';
 import { ApiResourceFactory } from '../../core/api-resource.service';
 import { errorMessage } from '../../core/error-message';
 import { Additive, AdditiveUnit, Material, Recipe, RecipeMaterial } from '../../core/models';
 import { PreferencesService } from '../../core/preferences.service';
+import { LocaleService } from '../../core/locale.service';
 import { ShelfService } from '../../core/shelf.service';
+import { RichText } from '../../i18n/rich-text';
 import { Busy } from '../../shared/busy';
+import { fixed, formatTemperature, formatTime, listOf, notANumber, upTo } from '../../shared/format';
+import { DatePipe, FixedPipe, PlainPipe } from '../../shared/format-pipes';
+import { NumberInput } from '../../shared/number-input';
 import { Check, FieldCheck, FieldChecks, required } from '../../shared/field-checks';
 import { localDate } from '../../shared/dates';
 import { Notices, NoticesList } from '../../shared/notices';
@@ -30,7 +37,7 @@ import { PageHeader } from '../../shared/page-header';
 import { Removal, RemoveButton } from '../../shared/remove-button';
 import { GRAMS_PER_POUND, WeightUnit, formatWeight } from '../../shared/weights';
 import { LibraryMaterial, modernMaterials } from './compare';
-import { Rebase, amountOf, formatAmount, isAmount, rebase, totalOf, unitOf } from './rebase';
+import { Rebase, amountOf, isAmount, rebase, totalOf, unitOf } from './rebase';
 import { additiveAmount, evaluate, savedAnalysis } from './recipe-analysis';
 import { CompareChoice, RecipeCompare } from './recipe-compare';
 import { RecipeHelp } from './recipe-help';
@@ -55,16 +62,18 @@ const includeByDefault = (): boolean => {
   }
 };
 
+/** Each label is the key of its message. */
 const ADDITIVE_UNITS: ReadonlyArray<{ value: AdditiveUnit; label: string }> = [
-  { value: 'percent', label: '% of base' },
-  { value: 'parts', label: 'parts' },
-  { value: 'grams', label: 'grams' }
+  { value: 'percent', label: marker('recipe.page.units.percent') },
+  { value: 'parts', label: marker('recipe.page.units.parts') },
+  { value: 'grams', label: marker('recipe.page.units.grams') }
 ];
 
 const copy = <T>(value: T): T => structuredClone(value);
+/** What a change of scale did, as the key of its message. */
 const SCALE_NOTES: Record<Exclude<Rebase['to'], 'batch'>, string> = {
-  percent: 'Now in percent: the materials add up to 100.',
-  parts: 'Now in parts: whole numbers where they fit.'
+  percent: marker('recipe.page.scaledPercent'),
+  parts: marker('recipe.page.scaledParts')
 };
 
 /** A batch weight to start from, in each unit: about a pound either way. */
@@ -72,14 +81,12 @@ const DEFAULT_BATCH: Record<WeightUnit, string> = { g: '500', lb: '1' };
 
 type SaveMode = 'save' | 'next' | 'copy';
 
-const NOT_A_NUMBER = 'Enter a number, such as 12.5, with a point for decimals.';
-
 /** An amount to save: blank is not one, though 0 is. */
 const amountCheck =
   (amount: string | undefined): Check =>
   () => {
-    if ((amount ?? '').trim() === '') return 'Enter an amount (0 is fine).';
-    return isAmount(amount) ? null : NOT_A_NUMBER;
+    if ((amount ?? '').trim() === '') return translate('recipe.page.amountMissing');
+    return isAmount(amount) ? null : notANumber();
   };
 
 interface Saved {
@@ -100,6 +107,9 @@ interface SwapUndo {
   result?: SwapResult;
 }
 
+/** What a swap makes of the recipe, for its new title: "Celadon with modern materials". */
+type SwapKind = 'modern' | 'lead' | 'shelf';
+
 /** Waiting on a decision about unsaved changes, before starting a new recipe or opening another. */
 interface PendingLeave {
   next: () => void;
@@ -114,15 +124,20 @@ interface PendingLeave {
   imports: [
     DatePipe,
     FieldCheck,
+    FixedPipe,
+    PlainPipe,
     FormsModule,
     NoticesList,
+    NumberInput,
     PageHeader,
     RecipeHelp,
     RecipeCompare,
     RecipeLibrary,
     RecipePrint,
     RemoveButton,
+    RichText,
     SwapReport,
+    TranslocoDirective,
     TryMaterials,
     UnityFormula
   ],
@@ -191,7 +206,7 @@ export class RecipePage implements OnInit {
   protected readonly pendingLeave = signal<PendingLeave | null>(null);
   /** The title and each amount: material-amount-0, additive-amount-0 and so on, by their inputs' ids. */
   protected readonly checks = new FieldChecks(() => ({
-    title: required(this.title, 'Give the recipe a title.'),
+    title: required(this.title, translate('recipe.page.titleMissing')),
     ...Object.fromEntries(this.lines().map((line, i) => ['material-amount-' + i, amountCheck(line.amount)])),
     ...Object.fromEntries(this.additiveLines().map((line, i) => ['additive-amount-' + i, amountCheck(line.amount)]))
   }));
@@ -248,21 +263,21 @@ export class RecipePage implements OnInit {
     const analysis = this.evaluation().analysis;
     if (!analysis) return this.evaluation().problem;
     const oxides = unityColumns(analysis.uList).flatMap((column) =>
-      column.oxides.map((oxide) => oxide.label + ' ' + oxide.value.toFixed(3))
+      column.oxides.map((oxide) => oxide.label + ' ' + fixed(oxide.value, 3))
     );
     const ratio = silicaAluminaRatio(analysis);
-    return [...oxides, ...(ratio === null ? [] : ['Si:Al ' + ratio.toFixed(2)])].join(' · ');
+    return [...oxides, ...(ratio === null ? [] : ['Si:Al ' + fixed(ratio, 2)])].join(' · ');
   });
   protected readonly materialKeys = computed(() => new Set(this.lines().map(libraryKey)));
   protected readonly additiveKeys = computed(() => new Set(this.additiveLines().map(libraryKey)));
   protected readonly status = computed(() => {
-    if (this.saving.active()) return 'Saving...';
+    if (this.saving.active()) return translate('recipe.page.saving');
     if (this.savedId()) {
-      if (this.dirty()) return 'Changes not saved yet';
+      if (this.dirty()) return translate('recipe.page.changesNotSaved');
       const at = this.savedAt();
-      return at ? 'Saved at ' + at.toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' }) : 'Saved';
+      return at ? translate('recipe.page.savedAt', { time: formatTime(at) }) : translate('recipe.page.saved');
     }
-    return this.hasContent() ? 'Not saved yet' : '';
+    return this.hasContent() ? translate('recipe.page.notSavedYet') : '';
   });
 
   // Printing: ?print=draft prints the recipe being edited, ?print=<id> a saved one.
@@ -316,9 +331,16 @@ export class RecipePage implements OnInit {
     const before = this.beforeSwap();
     return [
       ...(this.lines().length
-        ? [{ key: 'draft', label: 'Being edited: ' + (this.title().trim() || 'Untitled recipe') }]
+        ? [
+            {
+              key: 'draft',
+              label: translate('recipe.page.beingEdited', {
+                title: this.title().trim() || translate('recipe.page.untitled')
+              })
+            }
+          ]
         : []),
-      ...(before ? [{ key: 'before', label: 'Before the swap: ' + before.title }] : []),
+      ...(before ? [{ key: 'before', label: translate('recipe.page.beforeSwap', { title: before.title }) }] : []),
       ...this.myRecipes().map((recipe) => ({ key: recipe._id ?? '', label: recipe.title }))
     ];
   });
@@ -359,6 +381,15 @@ export class RecipePage implements OnInit {
 
   // Replace lead: the recipe without lead, rebuilt or with its colour carried onto a lead-free base.
   protected readonly cones = CONES;
+  protected readonly listOf = listOf;
+  private readonly locale = inject(LocaleService);
+  /** Firing to Orton cones, or by temperature alone (Settings). */
+  protected readonly byCones = computed(() => this.locale.cones() === 'orton');
+  /** A firing as the potter names it: "04 (1060 °C)" to cones, or "1060 °C" by temperature. */
+  protected firingLabel(firing: { cone: string; celsius: number }): string {
+    const temperature = formatTemperature(firing.celsius, this.locale.temperature());
+    return this.byCones() ? `${firing.cone} (${temperature})` : temperature;
+  }
   protected readonly hasLead = computed(() => recipeHasLead(this.lines()));
   protected readonly leadAmount = computed(() => (this.hasLead() ? leadIn(this.lines()) : null));
   protected readonly leadQuestion = signal<{
@@ -402,19 +433,11 @@ export class RecipePage implements OnInit {
   }
 
   ngOnInit(): void {
-    void this.load(this.materials.getAll(), this.myMaterials, 'There was an error in getting your materials.');
-    void this.load(
-      this.materials.getStandard(),
-      this.standardMaterials,
-      'There was an error in getting the standard materials.'
-    );
-    void this.load(this.additives.getAll(), this.myAdditives, 'There was an error in getting your additives.');
-    void this.load(
-      this.additives.getStandard(),
-      this.standardAdditives,
-      'There was an error in getting the standard additives.'
-    );
-    void this.load(this.recipes.getAll(), this.myRecipes, 'There was an error in getting your recipes.').then(() =>
+    void this.load(this.materials.getAll(), this.myMaterials, marker('recipe.page.fetchMaterials'));
+    void this.load(this.materials.getStandard(), this.standardMaterials, marker('recipe.page.fetchStandardMaterials'));
+    void this.load(this.additives.getAll(), this.myAdditives, marker('recipe.page.fetchAdditives'));
+    void this.load(this.additives.getStandard(), this.standardAdditives, marker('recipe.page.fetchStandardAdditives'));
+    void this.load(this.recipes.getAll(), this.myRecipes, marker('recipe.page.fetchRecipes')).then(() =>
       this.recipesLoaded.set(true)
     );
   }
@@ -475,7 +498,9 @@ export class RecipePage implements OnInit {
    * the same place, or the one before, or the list's heading once it is empty.
    */
   private afterTakingOut(kind: 'material' | 'additive', name: string | undefined, index: number, left: number): void {
-    this.announcement.set((name ?? 'It') + ' taken out of the recipe.');
+    this.announcement.set(
+      name === undefined ? translate('recipe.page.itTakenOut') : translate('recipe.page.takenOut', { name })
+    );
     afterNextRender(
       () => {
         const target = left
@@ -490,17 +515,17 @@ export class RecipePage implements OnInit {
   /** A material's share of the batch, as a percent. */
   protected share(amount: string | undefined): string {
     const total = this.total();
-    return total && amountOf(amount) ? formatAmount((amountOf(amount) / total) * 100, 1) + '%' : '';
+    return total && amountOf(amount) ? upTo((amountOf(amount) / total) * 100, 1) + '%' : '';
   }
 
   protected formatTotal(): string {
-    return formatAmount(this.total(), 3);
+    return upTo(this.total(), 3);
   }
 
   protected scale(how: Exclude<Rebase, { to: 'batch' }>): void {
-    if (this.rescale(how, 'Please enter the amounts first.')) {
+    if (this.rescale(how, translate('recipe.page.enterAmountsFirst'))) {
       this.inPounds.set(false);
-      this.scaleMessage.set({ text: SCALE_NOTES[how.to], problem: false });
+      this.scaleMessage.set({ text: translate(SCALE_NOTES[how.to]), problem: false });
     }
   }
 
@@ -511,13 +536,11 @@ export class RecipePage implements OnInit {
   /** Scales to a batch in the account's unit: grams, or pounds (shown in pounds and ounces too). */
   protected scaleToBatch(): void {
     const pounds = this.weightUnit() === 'lb';
-    const missing = pounds
-      ? 'Please enter the weight of the batch in pounds, such as 2.5.'
-      : 'Please enter the weight of the batch, in grams.';
+    const missing = pounds ? translate('recipe.page.batchPounds') : translate('recipe.page.batchGrams');
     if (!this.rescale({ to: 'batch', weight: amountOf(this.batchText()) }, missing)) return;
     if (!pounds) {
       this.inPounds.set(false);
-      this.scaleMessage.set({ text: 'Now in grams for the batch.', problem: false });
+      this.scaleMessage.set({ text: translate('recipe.page.scaledGrams'), problem: false });
       return;
     }
     // Colorants in grams would now be pounds: in parts, they say they scale as the materials do.
@@ -527,9 +550,7 @@ export class RecipePage implements OnInit {
     );
     this.inPounds.set(true);
     this.scaleMessage.set({
-      text:
-        'Now in pounds for the batch, with each in pounds and ounces under it.' +
-        (inGrams ? ' Colorants that were in grams are now in parts: pounds, like the materials.' : ''),
+      text: inGrams ? translate('recipe.page.scaledPoundsParts') : translate('recipe.page.scaledPounds'),
       problem: false
     });
   }
@@ -539,10 +560,7 @@ export class RecipePage implements OnInit {
     // Scaling around an amount it cannot read would change the proportions.
     const unreadable = this.unreadableLine();
     if (unreadable) {
-      this.scaleMessage.set({
-        text: `The amount for ${unreadable.name} is not a number ("${unreadable.amount}"). Please fix it first.`,
-        problem: true
-      });
+      this.scaleMessage.set({ text: this.notANumber(unreadable), problem: true });
       return false;
     }
     const result = rebase(
@@ -565,7 +583,7 @@ export class RecipePage implements OnInit {
   protected save(): Promise<void> {
     return this.saving.run(async () => {
       const saved = await this.saveAs('save');
-      if (saved) this.notices.success(`Saved "${saved.title}".`, 'save');
+      if (saved) this.notices.success(translate('recipe.page.savedNotice', { title: saved.title }), 'save');
     });
   }
 
@@ -576,11 +594,11 @@ export class RecipePage implements OnInit {
       if (!saved) return;
       // Nothing is cleared that is not saved: changes made while it saved, or another recipe opened meanwhile.
       if (!saved.stillOpen || saved.changedSince) {
-        this.notices.success(`Saved "${saved.title}".`, 'save');
+        this.notices.success(translate('recipe.page.savedNotice', { title: saved.title }), 'save');
         return;
       }
       this.reset();
-      this.notices.success(`Saved "${saved.title}". Ready for the next recipe.`, 'save');
+      this.notices.success(translate('recipe.page.savedNext', { title: saved.title }), 'save');
       this.focusTitle();
     });
   }
@@ -589,7 +607,7 @@ export class RecipePage implements OnInit {
   protected saveAsCopy(): Promise<void> {
     return this.saving.run(async () => {
       const saved = await this.saveAs('copy');
-      if (saved) this.notices.success(`Saved as a new recipe: "${saved.title}".`, 'save');
+      if (saved) this.notices.success(translate('recipe.page.savedCopy', { title: saved.title }), 'save');
     });
   }
 
@@ -635,9 +653,9 @@ export class RecipePage implements OnInit {
       }
       return { title: recipe.title, stillOpen, changedSince: this.snapshot() !== sent };
     } catch (err) {
-      const message = errorMessage(err, 'It could not be saved. Please try again.');
+      const message = errorMessage(err, translate('recipe.page.saveFailed'));
       if (showing === this.showing) this.saveProblem.set(message);
-      else this.notices.error(`"${recipe.title}" was not saved: ${message}`);
+      else this.notices.error(translate('recipe.page.notSavedNamed', { title: recipe.title, problem: message }));
       return null;
     }
   }
@@ -649,11 +667,20 @@ export class RecipePage implements OnInit {
    */
   private problemBeforeSave(): string | null {
     const fieldsOk = this.checks.validate();
-    if (!this.lines().length) return 'Please add at least one material.';
+    if (!this.lines().length) return translate('recipe.page.addMaterial');
     if (!fieldsOk) return '';
     const { analysis, problem } = this.evaluation();
-    if (!analysis) return 'Not saved: ' + (problem ?? 'the unity formula could not be worked out.');
+    if (!analysis) {
+      return problem !== null
+        ? translate('recipe.page.notSaved', { problem })
+        : translate('recipe.page.notSavedNoUnity');
+    }
     return null;
+  }
+
+  /** Why a line's amount stops a change: it is not a number. */
+  private notANumber(line: Additive | RecipeMaterial): string {
+    return translate('recipe.page.notANumber', { name: line.name, amount: line.amount ?? '' });
   }
 
   /** The first material or colorant whose amount is not blank and not a number of 0 or more. */
@@ -675,13 +702,13 @@ export class RecipePage implements OnInit {
   protected printDraft(): void {
     this.saveProblem.set('');
     if (!this.lines().length) {
-      this.saveProblem.set('Please add at least one material to print.');
+      this.saveProblem.set(translate('recipe.page.addMaterialToPrint'));
       return;
     }
     // It would print as 0 g. (Blank amounts are fine to print; they count as 0.)
     const unreadable = this.unreadableField();
     if (unreadable) {
-      this.checks.report(unreadable, NOT_A_NUMBER);
+      this.checks.report(unreadable, notANumber());
       return;
     }
     this.openPrint('draft');
@@ -718,12 +745,12 @@ export class RecipePage implements OnInit {
   protected compareDraft(): void {
     this.saveProblem.set('');
     if (!this.lines().length) {
-      this.saveProblem.set('Please add at least one material to compare.');
+      this.saveProblem.set(translate('recipe.page.addMaterialToCompare'));
       return;
     }
     const unreadable = this.unreadableField();
     if (unreadable) {
-      this.checks.report(unreadable, NOT_A_NUMBER);
+      this.checks.report(unreadable, notANumber());
       return;
     }
     const other = this.myRecipes().find((recipe) => recipe._id !== this.savedId());
@@ -787,11 +814,15 @@ export class RecipePage implements OnInit {
   protected tryModernMaterials(): void {
     const { materials, swaps } = this.modern();
     if (!swaps.length) return;
-    const swapped = swaps.map((s) => s.from + ' became ' + s.to + (s.like ? '' : ' (work its amount out again)'));
+    const swapped = swaps.map((s) =>
+      s.like
+        ? translate('recipe.page.became', { from: s.from, to: s.to })
+        : translate('recipe.page.becameNotLike', { from: s.from, to: s.to })
+    );
     this.swapIn(
       materials,
-      'Swapped one for one: ' + swapped.join(', ') + '.',
-      swaps.length + (swaps.length === 1 ? ' material' : ' materials') + ' swapped.',
+      translate('recipe.page.swappedNote', { list: listOf(swapped) }),
+      translate('recipe.page.swappedCount', { count: swaps.length }),
       'try-modern'
     );
   }
@@ -808,9 +839,7 @@ export class RecipePage implements OnInit {
     this.shelfOpen.set(false);
     const unreadable = this.unreadableLine();
     if (unreadable) {
-      this.suggestProblem.set(
-        `The amount for ${unreadable.name} is not a number ("${unreadable.amount}"). Please fix it first.`
-      );
+      this.suggestProblem.set(this.notANumber(unreadable));
       return;
     }
     let plan: Plan;
@@ -819,9 +848,7 @@ export class RecipePage implements OnInit {
         allowLead: !this.leadOff()
       });
     } catch {
-      this.suggestProblem.set(
-        'The amounts cannot be worked out: a material in the recipe has no analysis to work from.'
-      );
+      this.suggestProblem.set(translate('recipe.page.cannotSuggest'));
       return;
     }
     if (!plan.shortfalls.length) {
@@ -874,24 +901,31 @@ export class RecipePage implements OnInit {
       avoid: run.avoid,
       additives: this.additiveLines()
     });
-    const swapped = swaps.map((s) => s.from + ' became ' + s.to).join(', ');
+    const swapped = listOf(swaps.map((s) => translate('recipe.page.became', { from: s.from, to: s.to })));
     const parts = [
-      'Amounts worked out to bring the unity formula back: ' + swapped + '.',
-      suggestion.changes.length ? 'Changed: ' + suggestion.changes.join('; ') + '.' : '',
-      suggestion.unused.length ? 'Not needed after all: ' + suggestion.unused.join(', ') + '.' : '',
-      suggestion.stillShort.length ? 'Still short of ' + suggestion.stillShort.join(' and ') + '.' : '',
+      translate('recipe.page.suggestedNote', { list: swapped }),
+      this.changedNote(suggestion.changes),
+      suggestion.unused.length ? translate('recipe.page.unusedNote', { list: listOf(suggestion.unused) }) : '',
+      suggestion.stillShort.length
+        ? translate('recipe.page.stillShortNote', { list: listOf(suggestion.stillShort) })
+        : '',
       ...suggestion.cautions,
-      'This matches the fired oxides only; test a small batch first.'
+      translate('recipe.page.testFirst')
     ];
     this.swapIn(
       suggestion.materials,
       parts.filter(Boolean).join(' '),
-      compare ? 'Amounts worked out for the modern materials.' : 'Worked out again.',
+      compare ? translate('recipe.page.suggested') : translate('recipe.page.workedOutAgain'),
       'suggest-amounts',
-      ' with modern materials',
+      'modern',
       { run, report: suggestion.report, cautions: suggestion.cautions },
       compare
     );
+  }
+
+  /** What a substitution changed, for the new recipe's notes: "Changed: Whiting 20 → 18.1; Silica 30 → 31.5." */
+  private changedNote(changes: string[]): string {
+    return changes.length ? translate('recipe.page.changedNote', { changes: changes.join('; ') }) : '';
   }
 
   private celsiusOf(cone: string): number {
@@ -920,7 +954,7 @@ export class RecipePage implements OnInit {
     try {
       bases = this.basesFor(cone);
     } catch {
-      this.suggestProblem.set('The lead cannot be replaced: a material in the recipe has no analysis to work from.');
+      this.suggestProblem.set(translate('recipe.page.cannotReplaceLead'));
       return;
     }
     this.leadTries.set([]);
@@ -984,23 +1018,26 @@ export class RecipePage implements OnInit {
         uncapped: run.uncapped
       }
     );
+    const firing = CONES.find((c) => c.cone === run.cone) ?? { cone: run.cone, celsius: 0 };
     const how =
       run.mode === 'rebuild'
-        ? `Lead replaced for cone ${run.cone} on ${run.base}: the old recipe's silica and alumina kept, with boron and other fluxes doing lead's work.`
-        : `Lead replaced: the colorants carried onto a lead-free base of ${run.base} and kaolin, 85 to 15.`;
+        ? this.byCones()
+          ? translate('recipe.page.leadRebuiltCone', { cone: run.cone, base: run.base })
+          : translate('recipe.page.leadRebuilt', { firing: this.firingLabel(firing), base: run.base })
+        : translate('recipe.page.leadColour', { base: run.base });
     const parts = [
       how,
-      replacement.changes.length ? 'Changed: ' + replacement.changes.join('; ') + '.' : '',
+      this.changedNote(replacement.changes),
       ...replacement.cautions,
-      "It will not match lead's gloss, clarity or colour exactly: expect less brilliance, and possible clouding over red clay or crazing. Test a small batch on your own clay.",
-      'Having no lead does not by itself make a glaze safe with food; that depends on the whole formula and the firing.'
+      translate('recipe.page.leadGloss'),
+      translate('recipe.page.leadSafety')
     ];
     this.swapIn(
       replacement.materials,
       parts.filter(Boolean).join(' '),
-      compare ? 'The lead is replaced.' : 'Worked out again.',
+      compare ? translate('recipe.page.leadReplaced') : translate('recipe.page.workedOutAgain'),
       'replace-lead',
-      ' without lead',
+      'lead',
       { run, report: replacement.report, cautions: replacement.cautions },
       compare
     );
@@ -1041,7 +1078,7 @@ export class RecipePage implements OnInit {
     const keys = [...new Set(tries.map((tried) => libraryKey(tried.material)))];
     if (keys.join('\n') === (this.shelf.keys() ?? []).join('\n')) return;
     this.shelfStatus.set('');
-    if (await this.shelf.save(keys)) this.shelfStatus.set('Saved with your account.');
+    if (await this.shelf.save(keys)) this.shelfStatus.set(translate('recipe.page.shelfSaved'));
   }
 
   /** Adds the materials this recipe uses to those on hand. */
@@ -1060,16 +1097,14 @@ export class RecipePage implements OnInit {
     if (!this.shelfTries().length) return;
     const unreadable = this.unreadableLine();
     if (unreadable) {
-      this.suggestProblem.set(
-        `The amount for ${unreadable.name} is not a number ("${unreadable.amount}"). Please fix it first.`
-      );
+      this.suggestProblem.set(this.notANumber(unreadable));
       return;
     }
     const run: Run = { ...this.runOf('shelf'), tries: this.shelfTries() };
     try {
       this.applyShelf(run);
     } catch {
-      this.suggestProblem.set('It cannot be matched: a material has no analysis to work from.');
+      this.suggestProblem.set(translate('recipe.page.cannotMatch'));
       return;
     }
     this.shelfOpen.set(false);
@@ -1078,17 +1113,17 @@ export class RecipePage implements OnInit {
   private applyShelf(run: Run, compare = true): void {
     const match = matchFromShelf(this.lines(), run.tries, { avoid: run.avoid, additives: this.additiveLines() });
     const parts = [
-      "Made from what you have on hand, coming as near the old recipe's fired oxides as those materials allow.",
-      match.changes.length ? 'Changed: ' + match.changes.join('; ') + '.' : '',
+      translate('recipe.page.shelfNote'),
+      this.changedNote(match.changes),
       ...match.cautions,
-      'This matches the fired oxides only; test a small batch first.'
+      translate('recipe.page.testFirst')
     ];
     this.swapIn(
       match.materials,
       parts.filter(Boolean).join(' '),
-      compare ? 'Made from what you have.' : 'Worked out again.',
+      compare ? translate('recipe.page.shelfMade') : translate('recipe.page.workedOutAgain'),
       'match-shelf',
-      ' from what I have',
+      'shelf',
       { run, report: match.report, cautions: match.cautions },
       compare
     );
@@ -1108,7 +1143,7 @@ export class RecipePage implements OnInit {
       else if (run.kind === 'shelf') this.applyShelf(run, false);
       else this.applyLead(run, false);
     } catch {
-      this.suggestProblem.set('It cannot be worked out that way: a material has no analysis to work from.');
+      this.suggestProblem.set(translate('recipe.page.cannotRerun'));
       return;
     }
     afterNextRender(() => document.getElementById('swap-report-heading')?.focus(), { injector: this.injector });
@@ -1123,11 +1158,11 @@ export class RecipePage implements OnInit {
     note: string,
     announcement: string,
     opener: string,
-    titleEnd = ' with modern materials',
+    kind: SwapKind = 'modern',
     result?: SwapResult,
     compare = true
   ): void {
-    const title = this.title().trim() || 'Untitled recipe';
+    const title = this.title().trim() || translate('recipe.page.untitled');
     // The saved recipe, if this is one as saved; otherwise a copy of the page as it is.
     const before = this.savedId() && !this.dirty() ? this.savedId()! : 'before';
     this.beforeSwap.set(structuredClone({ ...this.draft(), title }));
@@ -1141,7 +1176,7 @@ export class RecipePage implements OnInit {
     });
     this.showing++;
     this.lines.set(materials);
-    this.title.set(title + titleEnd);
+    this.title.set(translate('recipe.page.swappedTitle', { kind, title }));
     this.date.set('');
     this.notes.set([note, this.notes()].filter(Boolean).join('\n'));
     this.savedId.set(null);
@@ -1163,7 +1198,7 @@ export class RecipePage implements OnInit {
     this.suggestQuestion.set(null);
     this.leadQuestion.set(null);
     this.shelfOpen.set(false);
-    this.announcement.set('The swap is undone: the recipe is as it was.');
+    this.announcement.set(translate('recipe.page.swapUndone'));
     this.focusTitle();
   }
 
@@ -1307,6 +1342,12 @@ export class RecipePage implements OnInit {
 
   // The saved list.
 
+  /** A saved recipe's notes; "None." is saved for a recipe with none. */
+  protected savedNotes(recipe: Recipe): string {
+    const notes = firstOf(recipe.notes);
+    return notes === 'None.' ? translate('recipe.page.noNotes') : notes;
+  }
+
   protected toggleExpanded(recipe: Recipe): void {
     const id = recipe._id ?? '';
     this.expanded.update((set) => {
@@ -1327,11 +1368,12 @@ export class RecipePage implements OnInit {
     }
   }
 
+  /** Fills the list, or says it could not: failure is the key of the message. */
   private async load<T>(request: Promise<T[]>, target: { set(value: T[]): void }, failure: string): Promise<void> {
     try {
       target.set(await request);
     } catch {
-      this.notices.error(failure);
+      this.notices.error(translate(failure));
     }
   }
 

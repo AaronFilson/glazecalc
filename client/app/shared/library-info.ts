@@ -1,13 +1,25 @@
 import { signal } from '@angular/core';
+import { translate } from '@jsverse/transloco';
+import { marker } from '@jsverse/transloco-keys-manager/marker';
+import { textKey } from '../../../lib/regions/languages';
 import { LibraryInfo } from '../core/models';
+import { codedMessage } from '../i18n/coded';
 
 /** Regions the standard library can be narrowed to; records with no region are general. */
+const region = (value: string, name: string) => ({
+  value,
+  /** In the page's language. */
+  get label() {
+    return translate(name);
+  }
+});
+
 export const REGIONS: ReadonlyArray<{ value: string; label: string }> = [
-  { value: '', label: 'All regions' },
-  { value: 'US', label: 'US' },
-  { value: 'UK', label: 'UK' },
-  { value: 'EU', label: 'EU' },
-  { value: 'AU', label: 'AU and NZ' }
+  region('', marker('libraryRegions.all')),
+  region('US', marker('libraryRegions.US')),
+  region('UK', marker('libraryRegions.UK')),
+  region('EU', marker('libraryRegions.EU')),
+  region('AU', marker('libraryRegions.AU'))
 ];
 
 const REGION_KEY = 'region';
@@ -34,6 +46,16 @@ export function saveRegion(region: string): void {
   }
 }
 
+/**
+ * A standard record's words (a material's notes or hazards, the standard
+ * advice) in the page's language, where there is a translation of exactly
+ * them (client/public/i18n/records/); a potter's own records as written.
+ */
+export function standardText(record: { ownedBy?: string }, text: string | undefined | null): string {
+  if (!text) return '';
+  return (record.ownedBy === 'Standard' && codedMessage('records', textKey(text))) || text;
+}
+
 /** Whether a material or additive has lead in it: PbO among its oxides. */
 export function hasLead(record: { fields?: Array<{ name: string; amount: string | number }> }): boolean {
   return (record.fields ?? []).some((field) => field.name === 'PbO' && Number(field.amount) > 0);
@@ -47,9 +69,12 @@ export function inRegion(record: LibraryInfo, region: string): boolean {
 /** A short word on a record that is not simply current: "Discontinued 2023", "Hard to get", "Historical". */
 export function statusText(record: LibraryInfo): string {
   const since = record.statusSince;
-  if (record.status === 'discontinued') return 'Discontinued' + (since ? ' ' + since : '');
-  if (record.status === 'scarce') return 'Hard to get' + (since ? ' since ' + since : '');
-  if (record.status === 'historical') return 'Historical';
+  if (record.status === 'discontinued') {
+    return since ? translate('status.discontinuedSince', { year: since }) : translate('status.discontinued');
+  }
+  if (record.status === 'scarce')
+    return since ? translate('status.scarceSince', { year: since }) : translate('status.scarce');
+  if (record.status === 'historical') return translate('status.historical');
   return '';
 }
 
@@ -64,17 +89,24 @@ export function matchesWords(record: { name: string; aliases?: string[] }, filte
 export const byName = (a: { name: string }, b: { name: string }): number =>
   a.name.localeCompare(b.name, undefined, { sensitivity: 'base' });
 
-/** The categories, as headings people read. */
-export const CATEGORY_LABELS: Record<string, string> = {
-  feldspar: 'Feldspars and stones',
-  clay: 'Clays',
-  frit: 'Frits',
-  boron: 'Boron sources',
-  flux: 'Fluxes',
-  silica: 'Silica',
-  alumina: 'Alumina',
-  opacifier: 'Opacifiers',
-  colorant: 'Colorants',
-  suspender: 'Suspenders',
-  other: 'Other'
+const CATEGORY_KEYS: Record<string, string> = {
+  feldspar: marker('categories.feldspar'),
+  clay: marker('categories.clay'),
+  frit: marker('categories.frit'),
+  boron: marker('categories.boron'),
+  flux: marker('categories.flux'),
+  silica: marker('categories.silica'),
+  alumina: marker('categories.alumina'),
+  opacifier: marker('categories.opacifier'),
+  colorant: marker('categories.colorant'),
+  suspender: marker('categories.suspender'),
+  other: marker('categories.other')
 };
+
+/** The categories, as headings people read, in the page's language, in this order. */
+export const CATEGORY_LABELS: Readonly<Record<string, string>> = Object.defineProperties(
+  {},
+  Object.fromEntries(
+    Object.entries(CATEGORY_KEYS).map(([category, key]) => [category, { enumerable: true, get: () => translate(key) }])
+  )
+);

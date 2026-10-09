@@ -1,0 +1,236 @@
+{
+  "auth": {
+    "signInHeading": "Iniciar sessão",
+    "keepHeading": "Guardar o seu trabalho",
+    "signUpHeading": "Criar a sua conta",
+    "signInLead": "De volta ao seu caderno de vidrados.",
+    "keepLead": "Guarde tudo o que fez como {name}: adicione o seu e-mail e uma palavra-passe. Continua a ser gratuito.",
+    "signUpLead": "Gratuito. As suas receitas, matérias-primas e notas ficam privadas na sua conta.",
+    "trialNote": "Já tem uma conta? Ao iniciar sessão, o que fez como {name} passa para essa conta. Primeira vez aqui? Em vez disso, <signup>crie uma conta</signup> para o guardar.",
+    "email": "E-mail",
+    "password": "Palavra-passe",
+    "passwordHint": "Pelo menos 8 caracteres.",
+    "confirmation": "Confirmar a palavra-passe",
+    "passwordMissing": "Introduza a sua palavra-passe.",
+    "createAccount": "Criar conta",
+    "signIn": "Iniciar sessão",
+    "haveAccount": "Já tem uma conta? <signin>Inicie sessão</signin>",
+    "forgot": "Esqueceu-se da palavra-passe? Reponha-a",
+    "newHere": "Primeira vez aqui? <signup>Crie uma conta gratuita</signup>",
+    "signUpFailed": "Erro: não foi possível criar a conta.",
+    "signInFailed": "Erro: não foi possível iniciar sessão."
+  },
+  "forgot": {
+    "heading": "Repor a sua palavra-passe",
+    "checkInbox": "Verifique a caixa de entrada e a pasta de lixo eletrónico. Se não chegar nada, verifique o endereço e peça novamente.",
+    "intro": "Introduza o e-mail da sua conta e vamos enviar-lhe uma ligação para escolher uma nova palavra-passe.",
+    "email": "E-mail:",
+    "send": "Enviar a ligação de reposição",
+    "back": "Voltar ao início de sessão",
+    "failed": "Erro: não foi possível enviar o e-mail de reposição. Tente novamente."
+  },
+  "reset": {
+    "heading": "Escolher uma nova palavra-passe",
+    "signIn": "Iniciar sessão",
+    "incomplete": "Esta página precisa da ligação de um e-mail de reposição da palavra-passe, e esta ligação está incompleta.",
+    "askAgain": "Pedir uma nova ligação",
+    "password": "Nova palavra-passe:",
+    "confirmation": "Confirmar a nova palavra-passe:",
+    "save": "Guardar a nova palavra-passe",
+    "hint": "Pelo menos 8 caracteres. A sessão será terminada em todos os dispositivos com sessão iniciada na conta.",
+    "failed": "Erro: não foi possível alterar a palavra-passe. Tente novamente."
+  },
+  "account": {
+    "trialTitle": "A sua experiência",
+    "trialLead": "Está a experimentar o Glazecalc como {name}.",
+    "keepHeading": "Guardar o seu trabalho",
+    "keepText": "A remoção deste período de experiência e de tudo o que contém está prevista para {date}. Crie uma conta gratuita para guardar tudo: as suas receitas, matérias-primas e notas ficam tal como estão, e {name} continua a ser o seu nome a apresentar.",
+    "createAccount": "Criar uma conta",
+    "title": "A sua conta",
+    "signedInAs": "Sessão iniciada como {email}.",
+    "changeHeading": "Alterar a sua palavra-passe",
+    "current": "Palavra-passe atual",
+    "currentMissing": "Introduza a sua palavra-passe atual.",
+    "password": "Nova palavra-passe",
+    "passwordHint": "Pelo menos 8 caracteres. A sessão será terminada nos outros dispositivos com sessão iniciada nesta conta.",
+    "confirmation": "Confirmar a nova palavra-passe",
+    "change": "Alterar a palavra-passe",
+    "changeFailed": "Erro: não foi possível alterar a palavra-passe. Tente novamente.",
+    "deleteHeading": "Eliminar a sua conta",
+    "deleteText": "Isto remove a sua conta e tudo o que guardou: receitas, matérias-primas, aditivos, notas, registos de cozedura e conselhos. Esta ação não pode ser anulada.",
+    "deletePassword": "A sua palavra-passe, para confirmar",
+    "deletePasswordMissing": "Introduza a sua palavra-passe para confirmar.",
+    "delete": "Eliminar a minha conta",
+    "deleteFailed": "Erro: não foi possível eliminar a conta. Tente novamente."
+  },
+  "settings": {
+    "heading": "Definições",
+    "intro": "Guardadas com a sua conta, por isso valem em todos os dispositivos.",
+    "saveFailed": "Não foi possível guardar a definição. Tente novamente.",
+    "language": {
+      "legend": "Idioma",
+      "help": "O idioma da aplicação, dos guias e dos seus e-mails. Ao alterá-lo, esta página abre nesse idioma.",
+      "saved": "Guardado: {language}."
+    },
+    "region": {
+      "legend": "Onde trabalha",
+      "none": {
+        "label": "Por escolher",
+        "saved": "Guardado: nenhuma região escolhida; as predefinições seguem o seu navegador."
+      },
+      "saved": "Guardado: {region}.",
+      "help": "As matérias-primas à venda nessa região e as predefinições de números, datas, temperaturas e cones abaixo. Até escolher, seguem o idioma do seu navegador."
+    },
+    "format": {
+      "legend": "Números e datas",
+      "auto": {
+        "label": "Conforme o meu idioma e região",
+        "saved": "Guardado: números e datas tal como o seu idioma e região os escrevem."
+      },
+      "saved": "Guardado: números e datas como em {language}.",
+      "help": "Como se escrevem os números e as datas: 12,345.6 ou 12.345,6, e a ordem do dia e do mês."
+    },
+    "decimalMark": {
+      "legend": "Introdução de quantidades",
+      "either": {
+        "label": "Vírgula ou ponto para as décimas",
+        "example": "12,5 ou 12.5",
+        "saved": "Guardado: as quantidades podem ser escritas com vírgula ou com ponto."
+      },
+      "comma": {
+        "label": "Vírgula para as décimas",
+        "saved": "Guardado: as quantidades são escritas com vírgula para as décimas."
+      },
+      "point": {
+        "label": "Ponto para as décimas",
+        "saved": "Guardado: as quantidades são escritas com ponto para as décimas."
+      },
+      "help": "Com vírgula ou ponto, uma quantidade como 1.250 é lida da forma como os seus números estão escritos acima."
+    },
+    "temperature": {
+      "legend": "Temperaturas",
+      "celsius": {
+        "label": "Celsius",
+        "saved": "Guardado: temperaturas em °C."
+      },
+      "fahrenheit": {
+        "label": "Fahrenheit",
+        "saved": "Guardado: temperaturas em °F."
+      },
+      "help": "Até escolher, segue a sua região: °F nos Estados Unidos, °C nos outros países."
+    },
+    "cones": {
+      "legend": "Cozedura",
+      "orton": {
+        "label": "Por cones Orton",
+        "example": "cone 04, cone 6",
+        "saved": "Guardado: cozedura por cones Orton."
+      },
+      "temperature": {
+        "label": "Por temperatura, como no programa de um controlador",
+        "saved": "Guardado: cozedura por temperatura."
+      },
+      "help": "Até escolher, segue a sua região: cones Orton nos EUA, no Reino Unido, na Irlanda, na Austrália e na Nova Zelândia, temperatura no resto da Europa."
+    },
+    "density": {
+      "legend": "Densidade do vidrado",
+      "sg": {
+        "label": "Densidade relativa",
+        "saved": "Guardado: densidade do vidrado como densidade relativa."
+      },
+      "baume": {
+        "label": "Graus Baumé, com um densímetro",
+        "saved": "Guardado: densidade do vidrado em graus Baumé."
+      },
+      "pint": {
+        "label": "Peso por pinta: as onças numa pinta imperial",
+        "saved": "Guardado: densidade do vidrado como peso por pinta."
+      },
+      "help": "Como os guias indicam a consistência de um vidrado. Até escolher, segue a sua região: graus Baumé em Itália, densidade relativa nos outros países."
+    },
+    "theme": {
+      "legend": "Claro ou escuro",
+      "system": {
+        "label": "Conforme a definição deste dispositivo",
+        "saved": "Guardado: claro ou escuro conforme a definição de cada dispositivo."
+      },
+      "light": {
+        "label": "Claro",
+        "saved": "Guardado: sempre claro."
+      },
+      "dark": {
+        "label": "Escuro",
+        "saved": "Guardado: sempre escuro."
+      },
+      "help": "As receitas impressas são sempre a preto sobre branco."
+    },
+    "palette": {
+      "legend": "Cores",
+      "saved": "Guardado: botões e ligações em {palette}.",
+      "help": "Para botões, ligações e separadores, com nomes de vidrados. Todas as opções se leem bem em claro e em escuro."
+    },
+    "weightUnit": {
+      "legend": "Pesos do lote",
+      "grams": {
+        "label": "Gramas",
+        "saved": "Guardado: pesos do lote em gramas."
+      },
+      "pounds": {
+        "label": "Libras e onças",
+        "saved": "Guardado: pesos do lote em libras e onças."
+      },
+      "help": "Para os lotes impressos."
+    },
+    "gramPrecision": {
+      "legend": "Gramas nos lotes impressos",
+      "single": {
+        "label": "À décima de grama",
+        "saved": "Guardado: gramas à décima."
+      },
+      "full": {
+        "label": "Precisão total",
+        "saved": "Guardado: gramas com precisão total, até 5 casas decimais."
+      },
+      "help": "À décima, as quantidades abaixo de 10 g continuam a mostrar as centésimas (2,35 g), para os corantes em pequenos lotes de teste."
+    },
+    "lead": {
+      "legend": "Chumbo",
+      "off": {
+        "label": "Desligado: nunca adicionar chumbo a uma receita nem sugeri-lo",
+        "saved": "Guardado: o chumbo nunca é adicionado a uma receita nem sugerido."
+      },
+      "on": {
+        "label": "Ligado: as matérias-primas com chumbo podem ser adicionadas e sugeridas",
+        "saved": "Guardado: as matérias-primas com chumbo podem ser adicionadas e sugeridas."
+      },
+      "help": "O chumbo é venenoso se for respirado ou engolido e acumula-se no corpo, e um vidrado com chumbo pode libertá-lo para os alimentos e as bebidas; nenhum cálculo pode dizer se uma peça cozida o faz. Com esta opção desligada, as receitas que já têm chumbo continuam a abrir tal como estavam.",
+      "warning": "Use o chumbo apenas em frita, nunca em cru como mínio (chumbo vermelho), alvaiade (chumbo branco), massicote (chumbo amarelo) ou litargírio. Misture-o a húmido, nunca o pulverize, use uma máscara de proteção respiratória e limpe a húmido. Mantenha as peças com vidrado de chumbo longe de alimentos e bebidas, a não ser que a peça cozida tenha passado num ensaio laboratorial de libertação de chumbo.",
+      "turnOn": "Ativar o chumbo",
+      "keepOff": "Manter desligado"
+    },
+    "englishTerms": {
+      "legend": "Termos em inglês",
+      "off": {
+        "label": "Desligado",
+        "saved": "Guardado: sem termos em inglês."
+      },
+      "on": {
+        "label": "Mostrar o inglês a seguir aos termos principais",
+        "saved": "Guardado: o inglês é mostrado a seguir aos termos principais."
+      },
+      "help": "Para ler fontes em inglês, como o Digitalfire, ao lado desta: os termos principais aparecem com o inglês entre parênteses."
+    },
+    "notice": {
+      "legend": "Aviso de tradução",
+      "shown": {
+        "label": "Visível",
+        "saved": "Guardado: o aviso é mostrado."
+      },
+      "hidden": {
+        "label": "Oculto",
+        "saved": "Guardado: o aviso fica oculto. Uma linha dele mantém-se nos guias de segurança."
+      },
+      "help": "A nota no topo de cada página que diz que foi traduzida por IA, com uma forma de sugerir uma correção."
+    }
+  }
+}

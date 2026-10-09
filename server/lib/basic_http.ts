@@ -1,5 +1,6 @@
 import type { NextFunction, Request, Response } from 'express';
 import zeroBuffer from './zero_buffer.ts';
+import { say } from './messages.ts';
 
 /** Reads HTTP Basic credentials (sign-in) into req.basicHTTP = { email, password }, or answers 401. */
 export default function basicHTTP(req: Request, res: Response, next: NextFunction): void {
@@ -16,5 +17,5 @@ export default function basicHTTP(req: Request, res: Response, next: NextFunctio
       return next();
     }
   }
-  res.status(401).json({ msg: 'could not authenticate user' });
+  res.status(401).json(say('not-signed-in'));
 }

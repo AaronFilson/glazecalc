@@ -1,0 +1,22 @@
+{
+  "unknown-compound": "Composto sconosciuto {compound} nella formula",
+  "unknown-oxide": "Ossido sconosciuto {oxide} nel materiale {material}",
+  "invalid-oxide-amount": "Quantità non valida per {oxide} nel materiale {material}",
+  "loi-range": "La P.F. di {material} deve essere almeno 0 e meno di 100",
+  "no-oxides": "Il materiale {material} non ha ossidi",
+  "no-name": "Il materiale deve avere un nome",
+  "no-analysis": "Il materiale {material} ha bisogno di una formula o di un’analisi",
+  "recipe-shape": "La ricetta deve essere un array di '{ material, amount }' o una mappa di quantità",
+  "invalid-amount": "Quantità non valida per il materiale {material}",
+  "missing-material": "In una riga della ricetta manca il materiale",
+  "unknown-material": "Materiale sconosciuto {material}",
+  "no-flux": "La ricetta non contiene ossidi fondenti, quindi la formula di Seger (UMF) non è definita",
+  "no-target": "L’obiettivo non ha ossidi a cui mirare",
+  "no-materials": "Non ci sono materiali di cui calcolare le quantità",
+  "no-temperature": "Per stabilire il boro serve la temperatura di cottura",
+  "no-flux-to-rebuild": "Lo smalto non ha fondenti da ricostruire",
+  "unknown-element": "Elemento sconosciuto {element} in {formula}",
+  "bad-formula": "Impossibile leggere la formula {formula}",
+  "analysis-total": "L’analisi di {material} dà un totale di {total}% compresa la P.F.; ci si aspetta circa il 100%.",
+  "stored-equivalent": "Il peso equivalente salvato di {material} non corrisponde alla sua formula e alla P.F.; sono state usate invece la formula e la P.F."
+}

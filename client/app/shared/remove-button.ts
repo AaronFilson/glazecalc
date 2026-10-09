@@ -12,6 +12,7 @@ import {
   signal,
   viewChild
 } from '@angular/core';
+import { TranslocoDirective, translate } from '@jsverse/transloco';
 import { ApiResource } from '../core/api-resource.service';
 import { errorMessage } from '../core/error-message';
 import { Owned } from '../core/models';
@@ -51,15 +52,15 @@ export class Removal<T extends Owned> {
     this.setProblem(id, '');
     try {
       await this.api.remove(item);
-      this.notices.success(`Removed "${name}".`, 'remove');
+      this.notices.success(translate('remove.removed', { name }), 'remove');
     } catch (err) {
       // The server has no such record: it was removed already, in another tab
       // or by an earlier try whose answer was lost.
       if (!(err instanceof HttpErrorResponse && err.status === 404)) {
-        this.setProblem(id, errorMessage(err, 'It could not be removed. Please try again.'));
+        this.setProblem(id, errorMessage(err, translate('remove.failed')));
         return false;
       }
-      this.notices.success(`"${name}" was already removed.`, 'remove');
+      this.notices.success(translate('remove.alreadyRemoved', { name }), 'remove');
     } finally {
       this.pending.update((ids) => {
         const next = new Set(ids);
@@ -96,15 +97,16 @@ let nextQuestionId = 0;
   selector: 'gc-remove-button',
   // Lets a page lay the question out on a line of its own.
   host: { '[class.asking]': 'asking()' },
-  template: `
+  imports: [TranslocoDirective],
+  template: `<ng-container *transloco="let t">
     @if (asking()) {
       <span class="remove-confirm" role="group" [attr.aria-labelledby]="questionId" (keydown.escape)="cancel()">
         <span class="remove-question" [id]="questionId">
-          Remove "{{ name() }}"?
+          {{ t('remove.question', { name: name() }) }}
           @if (note()) {
             {{ note() }}
           }
-          This can't be undone.
+          {{ t('remove.cannotUndo') }}
         </span>
         <span class="remove-answers">
           <button
@@ -113,7 +115,7 @@ let nextQuestionId = 0;
             [attr.aria-disabled]="busy() || null"
             (click)="confirm()"
           >
-            {{ busy() ? 'Removing...' : 'Yes, remove' }}
+            {{ busy() ? t('remove.removing') : t('remove.yes') }}
           </button>
           <button
             #cancelButton
@@ -122,7 +124,7 @@ let nextQuestionId = 0;
             [attr.aria-disabled]="busy() || null"
             (click)="cancel()"
           >
-            Cancel
+            {{ t('remove.cancel') }}
           </button>
         </span>
         <span class="remove-problem" role="alert">{{ problem() }}</span>
@@ -132,13 +134,13 @@ let nextQuestionId = 0;
         #removeButton
         type="button"
         class="btn btn-light border btn-sm remove-start"
-        [attr.aria-label]="'Remove ' + name()"
+        [attr.aria-label]="t('remove.removeName', { name: name() })"
         (click)="ask()"
       >
-        Remove
+        {{ t('remove.remove') }}
       </button>
     }
-  `,
+  </ng-container>`,
   styles: `
     .remove-confirm {
       display: inline-flex;

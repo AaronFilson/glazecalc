@@ -19,7 +19,13 @@ describe('user API', () => {
         .get('/verify')
         .set('Authorization', 'Bearer ' + token);
       expect(res).to.have.status(200);
-      expect(res.body).to.eql({ msg: 'User verified', id: String(user._id), name: 'Test Potter', email: user.email });
+      expect(res.body).to.eql({
+        code: 'verified',
+        msg: 'User verified',
+        id: String(user._id),
+        name: 'Test Potter',
+        email: user.email
+      });
     });
 
     it('says goodbye, without an error, when there is no token yet', async () => {
@@ -55,7 +61,22 @@ describe('user API', () => {
         .set('Authorization', 'Bearer ' + bearer)
         .send(body);
 
-    const DEFAULTS = { weightUnit: 'g', gramPrecision: 'single', theme: 'system', palette: 'tenmoku', lead: 'off' };
+    const DEFAULTS = {
+      weightUnit: 'g',
+      gramPrecision: 'single',
+      theme: 'system',
+      palette: 'tenmoku',
+      lead: 'off',
+      region: '',
+      format: 'auto',
+      decimalMark: 'either',
+      temperature: '',
+      cones: '',
+      language: 'en',
+      density: '',
+      englishTerms: 'off',
+      notice: 'shown'
+    };
 
     it('start in grams to a tenth, and change one at a time', async () => {
       expect((await get(token)).body).to.eql(DEFAULTS);
@@ -69,16 +90,51 @@ describe('user API', () => {
         gramPrecision: 'full'
       });
       expect((await put(token, { theme: 'dark', palette: 'cobalt' })).body).to.eql({
+        ...DEFAULTS,
         weightUnit: 'lb',
         gramPrecision: 'full',
         theme: 'dark',
-        palette: 'cobalt',
-        lead: 'off'
+        palette: 'cobalt'
       });
       // Lead starts off; turning it on is a choice like any other.
       expect((await put(token, { lead: 'on' })).body.lead).to.equal('on');
       const saved = (await User.findById(user._id))?.preferences;
       expect([saved?.weightUnit, saved?.gramPrecision]).to.eql(['lb', 'full']);
+    });
+
+    it('keep where the potter works and how numbers, temperatures and firing are shown', async () => {
+      const res = await put(token, {
+        region: 'DE',
+        format: 'en-GB',
+        decimalMark: 'point',
+        temperature: 'F',
+        cones: 'orton'
+      });
+      expect(res).to.have.status(200);
+      expect(res.body).to.include({
+        region: 'DE',
+        format: 'en-GB',
+        decimalMark: 'point',
+        temperature: 'F',
+        cones: 'orton'
+      });
+      // Back to following the region.
+      const back = await put(token, { region: '', format: 'auto', temperature: '', cones: '' });
+      expect(back.body).to.include({ region: '', format: 'auto', temperature: '', cones: '' });
+      for (const body of [
+        { region: 'XX' },
+        { region: 'de' },
+        { format: 'xx-YY' },
+        { decimalMark: ',' },
+        { temperature: 'K' },
+        { cones: 'seger' }
+      ]) {
+        const refused = await put(token, body);
+        expect(refused, JSON.stringify(body)).to.have.status(400);
+      }
+      expect((await put(token, { temperature: 'K' })).body.msg).to.equal(
+        'Temperatures can be in °C (C) or °F (F), or follow the region.'
+      );
     });
 
     it('refuse a choice the app does not know, and changing nothing', async () => {
@@ -206,7 +262,11 @@ describe('user API', () => {
     it('does not sign up a second account with the same email', async () => {
       const res = await api().post('/signup').send({ email: user.email, password: 'password123' });
       expect(res).to.have.status(400);
-      expect(res.body).to.eql({ msg: 'An account with that email already exists.', field: 'email' });
+      expect(res.body).to.eql({
+        code: 'account-exists',
+        msg: 'An account with that email already exists.',
+        field: 'email'
+      });
     });
   });
 

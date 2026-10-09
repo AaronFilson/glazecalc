@@ -1,6 +1,7 @@
 import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http';
 import { Injectable, computed, inject, signal } from '@angular/core';
 import { firstValueFrom } from 'rxjs';
+import { codedMessage } from '../i18n/coded';
 import { API_BASE } from './api-base';
 
 const SESSION_KEY = 'session';
@@ -39,9 +40,16 @@ export interface Trial {
   expiresAt: Date;
 }
 
+/** A message from the server (server/lib/messages.ts): its English, and the code it is translated by. */
 interface MessageResponse {
   msg: string;
+  code?: string;
+  params?: Record<string, string | number>;
 }
+
+/** The server's message in the reader's language where its code has a translation, or the server's own English. */
+const said = (res: MessageResponse): string =>
+  (typeof res.code === 'string' && codedMessage('server', res.code, res.params)) || res.msg;
 
 /**
  * Signs users up, in and out. The sign-in itself is an httpOnly cookie that the
@@ -143,7 +151,7 @@ export class AuthService {
   /** Asks for a password reset email; resolves with the server's message. */
   async requestReset(email: string): Promise<string> {
     const res = await firstValueFrom(this.http.post<MessageResponse>(this.apiBase + '/password/forgot', { email }));
-    return res.msg;
+    return said(res);
   }
 
   /** Sets a new password with the token from a reset email. */
@@ -151,7 +159,7 @@ export class AuthService {
     const res = await firstValueFrom(
       this.http.post<MessageResponse>(this.apiBase + '/password/reset', { token, password })
     );
-    return res.msg;
+    return said(res);
   }
 
   /** Changes the password; this browser stays signed in (the server renews the cookie), others are signed out. */
@@ -160,7 +168,7 @@ export class AuthService {
       this.http.put<MessageResponse & EmailResponse>(this.apiBase + '/password', { current, password })
     );
     this.email.set(res.email);
-    return res.msg;
+    return said(res);
   }
 
   /** Deletes the account and everything saved in it (the password confirms it); the server signs the browser out. */

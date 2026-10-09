@@ -1,0 +1,22 @@
+{
+  "unknown-compound": "Compuesto desconocido {compound} en la fórmula",
+  "unknown-oxide": "Óxido desconocido {oxide} en el material {material}",
+  "invalid-oxide-amount": "Cantidad no válida de {oxide} en el material {material}",
+  "loi-range": "La PF de {material} debe ser igual o mayor que 0 y menor que 100",
+  "no-oxides": "El material {material} no tiene óxidos",
+  "no-name": "El material debe tener un nombre",
+  "no-analysis": "El material {material} necesita una fórmula o un análisis",
+  "recipe-shape": "La receta debe ser una lista de '{ material, amount }' o un mapa de cantidades",
+  "invalid-amount": "Cantidad no válida para el material {material}",
+  "missing-material": "A una línea de la receta le falta el material",
+  "unknown-material": "Material desconocido {material}",
+  "no-flux": "La receta no contiene óxidos fundentes, así que la fórmula Seger no está definida",
+  "no-target": "La fórmula objetivo no tiene óxidos a los que acercarse",
+  "no-materials": "No hay materiales con los que hacer el cálculo",
+  "no-temperature": "Hace falta la temperatura de cocción para fijar el boro",
+  "no-flux-to-rebuild": "El esmalte no tiene fundentes que rehacer",
+  "unknown-element": "Elemento desconocido {element} en {formula}",
+  "bad-formula": "No se ha podido interpretar la fórmula {formula}",
+  "analysis-total": "El análisis de {material} suma {total} % con la PF incluida; se esperaba aproximadamente un 100 %.",
+  "stored-equivalent": "El peso equivalente guardado de {material} no coincide con su fórmula y su PF; en su lugar se han usado la fórmula y la PF."
+}

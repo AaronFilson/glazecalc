@@ -1,0 +1,88 @@
+{
+  "home": {
+    "title": "O seu caderno do atelier",
+    "signedInAs": "Sessão iniciada como {email}.",
+    "trying": "Está a experimentar o Glazecalc como {name}. Comece por uma receita.",
+    "welcomeBack": "Continue onde parou.",
+    "sections": {
+      "recipe": {
+        "title": "Receitas",
+        "text": "Monte um vidrado a partir de matérias-primas e quantidades, veja a sua fórmula de Seger (UMF) e guarde-o."
+      },
+      "material": {
+        "title": "Matérias-primas",
+        "text": "Adicione as suas próprias matérias-primas, a partir de uma fórmula química ou da análise de um fornecedor."
+      },
+      "additive": {
+        "title": "Aditivos e corantes",
+        "text": "Guarde os corantes e opacificantes que acrescenta a um vidrado base."
+      },
+      "firing": {
+        "title": "Registos de cozedura",
+        "text": "Registe as horas, as temperaturas e os cones de cada cozedura."
+      },
+      "notes": {
+        "title": "Notas",
+        "text": "Guarde os resultados dos testes e tudo o resto que valha a pena lembrar."
+      },
+      "advice": {
+        "title": "Conselhos sobre vidrados",
+        "text": "Dicas sobre mistura, vidragem e cozedura, e os seus próprios conselhos."
+      },
+      "guides": {
+        "title": "Guias",
+        "text": "Desde o que é um vidrado até à sua cozedura, mantendo todos em segurança pelo caminho."
+      }
+    },
+    "newHere": "Nunca usou fórmulas de Seger? A <advice>página de conselhos</advice> explica o básico, e a <about>página Sobre</about> explica como funciona o Glazecalc."
+  },
+  "firing": {
+    "title": "Registos de cozedura",
+    "lead": "Registe cada cozedura: horas, temperaturas, cones e notas sobre o forno.",
+    "titleLabel": "Título da cozedura:",
+    "kiln": "Forno:",
+    "date": "Data da cozedura:",
+    "notes": "Notas sobre a cozedura:",
+    "fieldSelect": "Selecione e adicione campos ao registo de cozedura:",
+    "addField": "Adicionar o campo",
+    "included": "Os campos que incluiu:",
+    "fieldName": "Nome do campo: {name}",
+    "moveLeft": "Mover o campo para a esquerda",
+    "moveRight": "Mover o campo para a direita",
+    "removeField": "Remover o campo",
+    "addRow": "Adicionar uma linha à tabela da cozedura",
+    "recordHeading": "Registar a cozedura",
+    "rowActions": "Ações da linha",
+    "cell": "{field}, linha {row}",
+    "removeRow": "Remover a linha",
+    "save": "Guardar",
+    "storedHeading": "As minhas cozeduras guardadas:",
+    "stored": "Título: {title}, forno usado: {kiln}, data: {date}",
+    "storedNotes": "Notas: {notes}",
+    "titleMissing": "Dê um título à cozedura.",
+    "fieldsMissing": "Adicione pelo menos um campo a registar, como {example}.",
+    "chooseField": "Escolha um campo a adicionar e, depois, clique em «Adicionar o campo».",
+    "fetchFailed": "Ocorreu um erro ao obter as informações dos registos de cozedura.",
+    "saved": "Registo de cozedura adicionado ao servidor com sucesso.",
+    "saveFailed": "Erro: o pedido ao servidor falhou."
+  },
+  "notes": {
+    "title": "Notas",
+    "lead": "Tudo o resto que valha a pena lembrar sobre os seus vidrados.",
+    "intro": "Esta é a página das notas. Aqui pode tomar notas e guardá-las.",
+    "titleLabel": "Título:",
+    "content": "A sua nota:",
+    "save": "Guardar",
+    "mineHeading": "As minhas notas guardadas:",
+    "titleMissing": "Dê um título à nota.",
+    "contentMissing": "Escreva a nota.",
+    "untitled": "Nota sem título",
+    "fetchFailed": "Ocorreu um erro ao obter as informações das notas.",
+    "saved": "Nota adicionada ao servidor com sucesso.",
+    "saveFailed": "Erro: o pedido ao servidor falhou."
+  },
+  "trash": {
+    "title": "Lixo",
+    "comingSoon": "A funcionalidade do lixo chega em breve, na próxima versão do Glazecalc. Até lá, use com cuidado as opções de eliminar / remover: depois de removida, a informação perde-se."
+  }
+}

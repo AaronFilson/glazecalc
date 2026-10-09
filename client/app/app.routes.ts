@@ -1,137 +1,194 @@
 import { Routes } from '@angular/router';
+import { provideTranslocoScope } from '@jsverse/transloco';
+import { marker } from '@jsverse/transloco-keys-manager/marker';
 import { signedInGuard, visitorsOnlyGuard } from './core/signed-in.guard';
+import { scopeTranslations } from './i18n/provide-i18n';
+import { guideText } from './pages/guides/guide-text';
 
-const SITE = 'Glazecalc';
+// Each title is the key of its message (i18n/titles.ts). Each route names the
+// part of the app whose messages it needs (client/public/i18n/<scope>/), which
+// load before it opens.
 
 export const routes: Routes = [
   // Public pages.
   {
     path: '',
     pathMatch: 'full',
-    title: 'Glazecalc: a free glaze chemistry calculator for potters',
+    title: marker('titles.landing'),
     canActivate: [visitorsOnlyGuard],
+    providers: [provideTranslocoScope('site')],
+    resolve: { messages: scopeTranslations },
     loadComponent: () => import('./pages/landing/landing-page').then((m) => m.LandingPage)
   },
   {
     path: 'advice',
-    title: 'Glaze advice - ' + SITE,
+    title: marker('titles.advice'),
+    providers: [provideTranslocoScope('site', 'records')],
+    resolve: { messages: scopeTranslations },
     loadComponent: () => import('./pages/advice/advice-page').then((m) => m.AdvicePage)
   },
   {
     path: 'guides',
-    title: 'Guides - ' + SITE,
+    title: marker('titles.guides'),
+    providers: [provideTranslocoScope('guides')],
+    resolve: { messages: scopeTranslations },
     loadComponent: () => import('./pages/guides/guides-page').then((m) => m.GuidesPage)
   },
   {
     path: 'guides/glazing-basics',
-    title: 'Glazing from first principles - ' + SITE,
-    loadComponent: () => import('./pages/guides/glazing-basics').then((m) => m.GlazingBasicsGuide)
+    title: marker('titles.glazingBasics'),
+    providers: [provideTranslocoScope('guides')],
+    data: { guide: 'glazing-basics' },
+    resolve: { messages: scopeTranslations, text: guideText },
+    loadComponent: () => import('./pages/guides/guide-page').then((m) => m.GuidePage)
   },
   {
     path: 'guides/making-a-glaze',
-    title: 'How to make a glaze - ' + SITE,
-    loadComponent: () => import('./pages/guides/making-a-glaze').then((m) => m.MakingAGlazeGuide)
+    title: marker('titles.makingAGlaze'),
+    providers: [provideTranslocoScope('guides')],
+    data: { guide: 'making-a-glaze' },
+    resolve: { messages: scopeTranslations, text: guideText },
+    loadComponent: () => import('./pages/guides/guide-page').then((m) => m.GuidePage)
   },
   {
     path: 'guides/safe-mixing',
-    title: 'Safe mixing and ventilation - ' + SITE,
-    loadComponent: () => import('./pages/guides/safe-mixing').then((m) => m.SafeMixingGuide)
+    title: marker('titles.safeMixing'),
+    providers: [provideTranslocoScope('guides')],
+    data: { guide: 'safe-mixing', safety: true },
+    resolve: { messages: scopeTranslations, text: guideText },
+    loadComponent: () => import('./pages/guides/guide-page').then((m) => m.GuidePage)
   },
   {
     path: 'guides/home-safety',
-    title: "Don't poison your family - " + SITE,
-    loadComponent: () => import('./pages/guides/home-safety').then((m) => m.HomeSafetyGuide)
+    title: marker('titles.homeSafety'),
+    providers: [provideTranslocoScope('guides', 'safety')],
+    data: { guide: 'home-safety', safety: true },
+    resolve: { messages: scopeTranslations, text: guideText },
+    loadComponent: () => import('./pages/guides/guide-page').then((m) => m.GuidePage)
   },
   {
     path: 'guides/firing',
-    title: 'Firing a basic kiln - ' + SITE,
-    loadComponent: () => import('./pages/guides/firing-guide').then((m) => m.FiringGuide)
+    title: marker('titles.firing'),
+    providers: [provideTranslocoScope('guides')],
+    data: { guide: 'firing' },
+    resolve: { messages: scopeTranslations, text: guideText },
+    loadComponent: () => import('./pages/guides/guide-page').then((m) => m.GuidePage)
   },
   {
     path: 'about',
-    title: 'About - ' + SITE,
+    title: marker('titles.about'),
+    providers: [provideTranslocoScope('site')],
+    resolve: { messages: scopeTranslations },
     loadComponent: () => import('./pages/about/about-page').then((m) => m.AboutPage)
   },
   {
     path: 'privacy',
-    title: 'Privacy - ' + SITE,
+    title: marker('titles.privacy'),
+    providers: [provideTranslocoScope('site')],
+    resolve: { messages: scopeTranslations },
     loadComponent: () => import('./pages/privacy/privacy-page').then((m) => m.PrivacyPage)
   },
   {
     path: 'signin',
-    title: 'Sign in - ' + SITE,
+    title: marker('titles.signin'),
     data: { mode: 'signin' },
+    providers: [provideTranslocoScope('account')],
+    resolve: { messages: scopeTranslations },
     loadComponent: () => import('./pages/auth/auth-page').then((m) => m.AuthPage)
   },
   {
     path: 'signup',
-    title: 'Create an account - ' + SITE,
+    title: marker('titles.signup'),
     data: { mode: 'signup' },
+    providers: [provideTranslocoScope('account')],
+    resolve: { messages: scopeTranslations },
     loadComponent: () => import('./pages/auth/auth-page').then((m) => m.AuthPage)
   },
   {
     path: 'forgot',
-    title: 'Reset your password - ' + SITE,
+    title: marker('titles.forgot'),
+    providers: [provideTranslocoScope('account')],
+    resolve: { messages: scopeTranslations },
     loadComponent: () => import('./pages/password/forgot-page').then((m) => m.ForgotPage)
   },
   {
     path: 'reset',
-    title: 'Choose a new password - ' + SITE,
+    title: marker('titles.reset'),
+    providers: [provideTranslocoScope('account')],
+    resolve: { messages: scopeTranslations },
     loadComponent: () => import('./pages/password/reset-page').then((m) => m.ResetPage)
   },
 
   // The app itself, once signed in.
   {
     path: 'home',
-    title: 'Your studio notebook - ' + SITE,
+    title: marker('titles.home'),
     canActivate: [signedInGuard],
+    providers: [provideTranslocoScope('notebook')],
+    resolve: { messages: scopeTranslations },
     loadComponent: () => import('./pages/home/home-page').then((m) => m.HomePage)
   },
   {
     path: 'recipe',
-    title: 'Recipes - ' + SITE,
+    title: marker('titles.recipe'),
     canActivate: [signedInGuard],
+    providers: [provideTranslocoScope('recipe', 'records')],
+    resolve: { messages: scopeTranslations },
     loadComponent: () => import('./pages/recipe/recipe-page').then((m) => m.RecipePage)
   },
   {
     path: 'material',
-    title: 'Materials - ' + SITE,
+    title: marker('titles.material'),
     canActivate: [signedInGuard],
+    providers: [provideTranslocoScope('library', 'records')],
+    resolve: { messages: scopeTranslations },
     loadComponent: () => import('./pages/material/material-page').then((m) => m.MaterialPage)
   },
   {
     path: 'additive',
-    title: 'Additives - ' + SITE,
+    title: marker('titles.additive'),
     canActivate: [signedInGuard],
+    providers: [provideTranslocoScope('library', 'records')],
+    resolve: { messages: scopeTranslations },
     loadComponent: () => import('./pages/additive/additive-page').then((m) => m.AdditivePage)
   },
   {
     path: 'firing',
-    title: 'Firing logs - ' + SITE,
+    title: marker('titles.firingLogs'),
     canActivate: [signedInGuard],
+    providers: [provideTranslocoScope('notebook')],
+    resolve: { messages: scopeTranslations },
     loadComponent: () => import('./pages/firing/firing-page').then((m) => m.FiringPage)
   },
   {
     path: 'notes',
-    title: 'Notes - ' + SITE,
+    title: marker('titles.notes'),
     canActivate: [signedInGuard],
+    providers: [provideTranslocoScope('notebook')],
+    resolve: { messages: scopeTranslations },
     loadComponent: () => import('./pages/notes/notes-page').then((m) => m.NotesPage)
   },
   {
     path: 'trash',
-    title: 'Trash - ' + SITE,
+    title: marker('titles.trash'),
     canActivate: [signedInGuard],
+    providers: [provideTranslocoScope('notebook')],
+    resolve: { messages: scopeTranslations },
     loadComponent: () => import('./pages/trash/trash-page').then((m) => m.TrashPage)
   },
   {
     path: 'account',
-    title: 'Your account and settings - ' + SITE,
+    title: marker('titles.account'),
     canActivate: [signedInGuard],
+    providers: [provideTranslocoScope('account')],
+    resolve: { messages: scopeTranslations },
     loadComponent: () => import('./pages/password/account-page').then((m) => m.AccountPage)
   },
   {
     path: '**',
-    title: 'Not found - ' + SITE,
+    title: marker('titles.notFound'),
+    providers: [provideTranslocoScope('site')],
+    resolve: { messages: scopeTranslations },
     loadComponent: () => import('./pages/not-found/not-found-page').then((m) => m.NotFoundPage)
   }
 ];

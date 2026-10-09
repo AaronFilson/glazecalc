@@ -1,107 +1,104 @@
-<section class="hero">
-  <div class="hero-text">
-    <p class="eyebrow">Glaze calculator and studio notebook</p>
-    <h1>Free glaze chemistry for potters.</h1>
-    <p class="hero-lead">
-      Understand your glazes, not just mix them. Enter a recipe and see its unity molecular formula (UMF), its silica to
-      alumina ratio and its balance of fluxes at once. Keep your recipes, materials, colorants, notes and firing logs
-      together in one private notebook.
-    </p>
-    @if (auth.trialEnded()) {
-      <p class="server-msg" role="status">
-        Your trial has ended. Start a new one, or create a free account to keep your work.
-      </p>
-    }
-    <div class="hero-actions">
-      <button type="button" class="btn btn-primary btn-lg" [disabled]="starting()" (click)="tryIt()">Try it now</button>
-      <a routerLink="/signup" class="btn btn-light btn-lg">Create a free account</a>
+<ng-container *transloco="let t">
+  <section class="hero">
+    <div class="hero-text">
+      <p class="eyebrow">{{ t('site.landing.eyebrow') }}</p>
+      <h1>{{ t('site.landing.heading') }}</h1>
+      <p class="hero-lead">{{ t('site.landing.lead') }}</p>
+      @if (auth.trialEnded()) {
+        <p class="server-msg" role="status">{{ t('site.landing.trialEnded') }}</p>
+      }
+      <div class="hero-actions">
+        <button type="button" class="btn btn-primary btn-lg" [disabled]="starting()" (click)="tryIt()">
+          {{ t('site.landing.tryIt') }}
+        </button>
+        <a routerLink="/signup" class="btn btn-light btn-lg">{{ t('site.landing.createAccount') }}</a>
+      </div>
+      @if (startError()) {
+        <p class="errors-section" role="alert">{{ startError() }}</p>
+      }
+      <p class="hero-note">{{ t('site.landing.heroNote') }}</p>
     </div>
-    @if (startError()) {
-      <p class="errors-section" role="alert">{{ startError() }}</p>
-    }
-    <p class="hero-note">No sign-up needed to try it · Free and open source · Your recipes stay private</p>
-  </div>
-  <figure class="hero-figure">
-    <img
-      src="/images/cone-packs-1200.webp"
-      srcset="/images/cone-packs-800.webp 800w, /images/cone-packs-1200.webp 1200w, /images/cone-packs-1600.webp 1600w"
-      sizes="(min-width: 992px) 34rem, 100vw"
-      width="1200"
-      height="675"
-      fetchpriority="high"
-      alt="A row of fired cone packs: the white pyrometric cones in each pack have bent over in the heat of the kiln."
-    />
-    <figcaption>Cone packs after a firing: each cone bends once the kiln has done enough heat work.</figcaption>
-  </figure>
-</section>
+    <figure class="hero-figure">
+      <img
+        src="/images/cone-packs-1200.webp"
+        srcset="
+          /images/cone-packs-800.webp   800w,
+          /images/cone-packs-1200.webp 1200w,
+          /images/cone-packs-1600.webp 1600w
+        "
+        sizes="(min-width: 992px) 34rem, 100vw"
+        width="1200"
+        height="675"
+        fetchpriority="high"
+        [alt]="t('site.landing.heroAlt')"
+      />
+      <figcaption>{{ t('site.landing.heroCaption') }}</figcaption>
+    </figure>
+  </section>
 
-<section class="panel example" aria-labelledby="example-title">
-  <h2 id="example-title">See it work: a classic celadon base</h2>
-  <div class="example-grid">
-    <div>
-      <table class="example-recipe">
-        <caption>
-          Bernard Leach's "4321", often fired to cone 10, in parts by weight.
-        </caption>
-        <thead>
-          <tr>
-            <th scope="col">Material</th>
-            <th scope="col">Parts</th>
-          </tr>
-        </thead>
-        <tbody>
-          @for (line of example; track line.material) {
+  <section class="panel example" aria-labelledby="example-title">
+    <h2 id="example-title">{{ t('site.landing.exampleHeading') }}</h2>
+    <div class="example-grid">
+      <div>
+        <table class="example-recipe">
+          <caption>
+            {{
+              t('site.landing.exampleCaption')
+            }}
+          </caption>
+          <thead>
             <tr>
-              <td>{{ line.material }}</td>
-              <td>{{ line.amount }}</td>
+              <th scope="col">{{ t('site.landing.material') }}</th>
+              <th scope="col">{{ t('site.landing.parts') }}</th>
             </tr>
-          }
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            @for (line of example; track line.material) {
+              <tr>
+                <td>{{ line.material }}</td>
+                <td>{{ line.amount | gcPlain }}</td>
+              </tr>
+            }
+          </tbody>
+        </table>
+      </div>
+      <div class="unity-result">
+        <h3>{{ t('site.landing.unityHeading') }}</h3>
+        <gc-unity-formula [analysis]="analysis" />
+      </div>
     </div>
-    <div class="unity-result">
-      <h3>Its unity molecular formula</h3>
-      <gc-unity-formula [analysis]="analysis" />
+    <p class="muted example-note">{{ t('site.landing.exampleNote') }}</p>
+  </section>
+
+  <section class="features" aria-labelledby="features-title">
+    <h2 id="features-title" class="visually-hidden">{{ t('site.landing.featuresHeading') }}</h2>
+    <ul>
+      @for (feature of features; track feature.title) {
+        <li class="panel">
+          <h3>{{ t(feature.title) }}</h3>
+          <p>{{ t(feature.text) }}</p>
+        </li>
+      }
+    </ul>
+  </section>
+
+  <section class="panel" aria-labelledby="umf-title">
+    <h2 id="umf-title">{{ t('site.landing.umfHeading') }}</h2>
+    <p>{{ t('site.landing.umfRecipe') }}</p>
+    <p>{{ t('site.landing.umfGroups') }}</p>
+    <p>
+      <a routerLink="/advice">{{ t('site.landing.readAdvice') }}</a>
+    </p>
+  </section>
+
+  <section class="closing">
+    <h2>{{ t('site.landing.closingHeading') }}</h2>
+    <p class="muted">{{ t('site.landing.closingText') }}</p>
+    <div class="closing-actions">
+      <button type="button" class="btn btn-primary btn-lg" [disabled]="starting()" (click)="tryIt()">
+        {{ t('site.landing.tryIt') }}
+      </button>
+      <a routerLink="/signup" class="btn btn-light btn-lg">{{ t('site.landing.createAccount') }}</a>
     </div>
-  </div>
-  <p class="muted example-note">
-    The fluxes add up to 1, so any two glazes can be compared fairly. Worked out right here in your browser by the same
-    code the calculator uses.
-  </p>
-</section>
-
-<section class="features" aria-labelledby="features-title">
-  <h2 id="features-title" class="visually-hidden">What Glazecalc does</h2>
-  <ul>
-    @for (feature of features; track feature.title) {
-      <li class="panel">
-        <h3>{{ feature.title }}</h3>
-        <p>{{ feature.text }}</p>
-      </li>
-    }
-  </ul>
-</section>
-
-<section class="panel" aria-labelledby="umf-title">
-  <h2 id="umf-title">What is a unity molecular formula?</h2>
-  <p>
-    A glaze recipe says how much of each material to weigh out. The unity molecular formula, also called the Seger
-    formula, says what those materials become in the kiln: how many molecules of each oxide there are, scaled so that
-    the fluxes add up to one.
-  </p>
-  <p>
-    Fluxes make the glaze melt, alumina stiffens the melt, and silica forms the glass. Comparing those three groups
-    explains why one glaze is glossy and another matte, or why one runs while another stays put, and it shows how to
-    replace a material that is no longer sold.
-  </p>
-  <p><a routerLink="/advice">Read more glaze advice</a></p>
-</section>
-
-<section class="closing">
-  <h2>Ready when you are.</h2>
-  <p class="muted">Try the calculator now, then create an account to keep what you made.</p>
-  <div class="closing-actions">
-    <button type="button" class="btn btn-primary btn-lg" [disabled]="starting()" (click)="tryIt()">Try it now</button>
-    <a routerLink="/signup" class="btn btn-light btn-lg">Create a free account</a>
-  </div>
-</section>
+  </section>
+</ng-container>

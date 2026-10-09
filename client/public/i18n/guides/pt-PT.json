@@ -1,0 +1,62 @@
+{
+  "version": {
+    "cones": "Este guia é mostrado para cozedura por cones, conforme definido em «Definições».",
+    "temperature": "Este guia é mostrado para cozedura por temperatura, conforme definido em «Definições».",
+    "showTemperature": "Mostrar para cozedura por temperatura",
+    "showCones": "Mostrar para cozedura por cones"
+  },
+  "notTranslated": "Este guia ainda não está traduzido, por isso é mostrado em inglês.",
+  "sectionInEnglish": "Esta secção mudou desde que foi traduzida, por isso é mostrada em inglês até a tradução ser atualizada.",
+  "list": {
+    "title": "Guias",
+    "lead": "Guias em linguagem simples para quem começa na cerâmica: desde o que é um vidrado até à sua cozedura, mantendo todos em segurança pelo caminho.",
+    "note": "Estes guias reúnem o que os fabricantes, as entidades de segurança e os ceramistas experientes publicam, com as fontes no fim de cada um. São um ponto de partida e não substituem as fichas de dados de segurança das suas matérias-primas, o manual do seu forno nem as regras locais.",
+    "glazingBasics": {
+      "title": "Vidrados desde os princípios básicos",
+      "text": "O que é um vidrado, como funde, e a explicação de cada palavra que vai encontrar numa receita ou num saco."
+    },
+    "makingAGlaze": {
+      "title": "Como fazer um vidrado",
+      "text": "Comprar, armazenar, pesar, misturar e peneirar um vidrado, depois testá-lo e manter registos."
+    },
+    "safeMixing": {
+      "title": "Mistura segura e ventilação",
+      "text": "Poeiras, máscaras de proteção respiratória, limpeza, as matérias-primas que exigem mais cuidado e a ventilação do forno."
+    },
+    "homeSafety": {
+      "title": "Não envenene a sua família",
+      "text": "Cerâmica em casa com crianças e animais de estimação: arrumação, poeiras, o forno e o que fazer se alguma coisa for engolida."
+    },
+    "firing": {
+      "title": "Cozer num forno simples",
+      "text": "Cones, kiln sitters e reguladores manuais, com curvas de cozedura para chacota e para vidrado."
+    }
+  },
+  "contents": "Nesta página",
+  "poison": {
+    "numbersFor": "Números para",
+    "choose": "Escolha o seu país",
+    "label": "A quem ligar: {region}",
+    "caption": "A quem ligar: {region} (números verificados em {date})",
+    "for": "Situação",
+    "call": "Ligar",
+    "notes": "Horário e notas",
+    "emergency": "Uma emergência: inconsciência, ausência de respiração, uma convulsão",
+    "poisonAdvice": "{who, select, children {Informação antivenenos: {name} (apenas para crianças)} other {Informação antivenenos: {name}}}",
+    "or": "ou {number}",
+    "online": "Online: <link>{name}</link>.",
+    "poisonAdviceNone": "Informação antivenenos",
+    "noLine": "Não conseguimos confirmar a existência de uma linha antivenenos pública aqui. Ligue para o seu médico ou, se for urgente, para o número de emergência.",
+    "medicalAdvice": "Aconselhamento médico: {name}",
+    "animals": "Animais: {name}",
+    "animalsNone": "Animais",
+    "vet": "Ligue para o seu veterinário.",
+    "checkedOn": "Verificado em:",
+    "choosePrompt": "Escolha o seu país para ver a quem ligar."
+  },
+  "density": {
+    "sg": "SG {value}",
+    "baume": "{value} °Bé ({sg})",
+    "pint": "{value} oz por pinta imperial ({sg})"
+  }
+}

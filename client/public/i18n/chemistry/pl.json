@@ -1,0 +1,22 @@
+{
+  "unknown-compound": "Nieznany związek {compound} we wzorze",
+  "unknown-oxide": "Nieznany tlenek {oxide} w surowcu {material}",
+  "invalid-oxide-amount": "Nieprawidłowa ilość {oxide} w surowcu {material}",
+  "loi-range": "LOI surowca {material} musi wynosić co najmniej 0 i mniej niż 100",
+  "no-oxides": "Surowiec {material} nie zawiera tlenków",
+  "no-name": "Surowiec musi mieć nazwę",
+  "no-analysis": "Surowiec {material} wymaga wzoru lub składu chemicznego",
+  "recipe-shape": "Receptura musi być tablicą '{ material, amount }' lub mapą ilości",
+  "invalid-amount": "Nieprawidłowa ilość surowca {material}",
+  "missing-material": "W wierszu receptury brakuje surowca",
+  "unknown-material": "Nieznany surowiec {material}",
+  "no-flux": "Receptura nie zawiera tlenków będących topnikami, więc wzór Segera (UMF) jest nieokreślony",
+  "no-target": "We wzorze docelowym nie ma tlenków, do których można by dążyć",
+  "no-materials": "Nie ma surowców do obliczeń",
+  "no-temperature": "Do ustalenia ilości boru potrzebna jest temperatura wypału",
+  "no-flux-to-rebuild": "W szkliwie nie ma topników do odbudowania",
+  "unknown-element": "Nieznany pierwiastek {element} we wzorze {formula}",
+  "bad-formula": "Nie udało się odczytać wzoru {formula}",
+  "analysis-total": "Skład chemiczny surowca {material} sumuje się do {total} % łącznie z LOI; oczekiwano około 100 %.",
+  "stored-equivalent": "Zapisana masa równoważnikowa surowca {material} nie zgadza się z jego wzorem i LOI; zamiast niej użyto wzoru i LOI."
+}

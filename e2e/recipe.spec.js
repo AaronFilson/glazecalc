@@ -207,10 +207,11 @@ test('colorants in % of base stay as they are when the scale changes; in parts o
   await expect(unity(page)).toContainText('Rutile : 20 g');
 
   // An amount that is not a number stops it, with the reason beside the buttons.
-  await amount(page, 'Whiting').fill('20,5');
+  // (20,5 is a number now, in either decimal style; 20,5,1 is not.)
+  await amount(page, 'Whiting').fill('20,5,1');
   await page.getByRole('button', { name: 'To percent' }).click();
   await expect(page.locator('.recipe-scale-note')).toHaveText(
-    'The amount for Whiting is not a number ("20,5"). Please fix it first.'
+    'The amount for Whiting is not a number ("20,5,1"). Please fix it first.'
   );
   await expect(amount(page, 'Orthoclase')).toHaveValue('300');
 });

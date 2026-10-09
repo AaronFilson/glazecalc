@@ -1,13 +1,16 @@
-import { DatePipe } from '@angular/common';
+import { fixed, formatPlain, upTo } from '../../shared/format';
+import { DatePipe } from '../../shared/format-pipes';
 import { Component, OnDestroy, OnInit, computed, inject, input, output, signal } from '@angular/core';
 import { Title } from '@angular/platform-browser';
+import { TranslocoDirective, translate } from '@jsverse/transloco';
+import { marker } from '@jsverse/transloco-keys-manager/marker';
 import { MaterialInput, formatFormula } from '../../../../lib/chemistry';
 import { errorMessage } from '../../core/error-message';
 import { Recipe } from '../../core/models';
 import { PreferencesService } from '../../core/preferences.service';
 import { firstOf } from '../../shared/options';
 import { GramPrecision, WeightUnit, formatWeight, fromGrams, toGrams, unitLabel } from '../../shared/weights';
-import { BatchWeights, amountOf, batchWeights, formatAmount, isAmount, totalOf } from './rebase';
+import { BatchWeights, amountOf, batchWeights, isAmount, totalOf } from './rebase';
 import { additiveAmount, evaluate } from './recipe-analysis';
 import { UnityFormula, unityColumns } from './unity-formula';
 
@@ -58,7 +61,7 @@ export function printLines(
   const total = totalOf(materials.map((m) => m.amount));
   const unreadable = [...materials, ...additives]
     .filter((line) => !isAmount(line.amount))
-    .map((line) => `The amount for ${line.name} is not a number ("${line.amount}").`);
+    .map((line) => translate('recipe.print.notANumber', { name: line.name, amount: line.amount ?? '' }));
   const weights = unreadable.length
     ? null
     : batchWeights(
@@ -79,8 +82,8 @@ export function printLines(
     materials: materials.map((material, i) => ({
       name: material.name,
       formula: material.rawformula ? formatFormula(material.rawformula) : '',
-      amount: (material.amount ?? '').trim(),
-      share: total && amountOf(material.amount) ? formatAmount((amountOf(material.amount) / total) * 100, 1) + '%' : '',
+      amount: formatPlain((material.amount ?? '').trim()),
+      share: total && amountOf(material.amount) ? upTo((amountOf(material.amount) / total) * 100, 1) + '%' : '',
       ...weighed(weights?.materials[i])
     })),
     additives: additives.map((additive, i) => ({
@@ -90,7 +93,7 @@ export function printLines(
       share: '',
       ...weighed(weights?.additives[i])
     })),
-    total: formatAmount(total, 3),
+    total: upTo(total, 3),
     weights,
     unreadable
   };
@@ -135,9 +138,10 @@ function remember(key: string, value: string): void {
   }
 }
 
+/** The units to weigh in, each with its label's key. */
 const UNITS: ReadonlyArray<{ value: WeightUnit; label: string }> = [
-  { value: 'g', label: 'Grams' },
-  { value: 'lb', label: 'Pounds and ounces' }
+  { value: 'g', label: marker('recipe.print.grams') },
+  { value: 'lb', label: marker('recipe.print.pounds') }
 ];
 
 /**
@@ -147,13 +151,13 @@ const UNITS: ReadonlyArray<{ value: WeightUnit; label: string }> = [
  */
 @Component({
   selector: 'gc-recipe-print',
-  imports: [DatePipe, UnityFormula],
-  template: `
+  imports: [DatePipe, TranslocoDirective, UnityFormula],
+  template: `<ng-container *transloco="let t">
     <section class="print-controls no-print" aria-labelledby="print-heading">
-      <h1 id="print-heading" tabindex="-1">Print a recipe</h1>
+      <h1 id="print-heading" tabindex="-1">{{ t('recipe.print.heading') }}</h1>
       <div class="print-options">
         <fieldset>
-          <legend class="form-label">What to print</legend>
+          <legend class="form-label">{{ t('recipe.print.what') }}</legend>
           <div class="form-check">
             <input
               id="print-full"
@@ -164,9 +168,7 @@ const UNITS: ReadonlyArray<{ value: WeightUnit; label: string }> = [
               [checked]="mode() === 'full'"
               (change)="setMode('full')"
             />
-            <label for="print-full" class="form-check-label"
-              >The whole recipe, with its unity formula and analysis</label
-            >
+            <label for="print-full" class="form-check-label">{{ t('recipe.print.whole') }}</label>
           </div>
           <div class="form-check">
             <input
@@ -178,13 +180,11 @@ const UNITS: ReadonlyArray<{ value: WeightUnit; label: string }> = [
               [checked]="mode() === 'batch'"
               (change)="setMode('batch')"
             />
-            <label for="print-batch-list" class="form-check-label"
-              >Just a batch list: what to weigh, with boxes to tick</label
-            >
+            <label for="print-batch-list" class="form-check-label">{{ t('recipe.print.batchList') }}</label>
           </div>
         </fieldset>
         <div>
-          <label for="print-batch-size" class="form-label">Batch size: the base materials</label>
+          <label for="print-batch-size" class="form-label">{{ t('recipe.print.batchSize') }}</label>
           <div class="input-group print-batch-size">
             <input
               id="print-batch-size"
@@ -199,17 +199,16 @@ const UNITS: ReadonlyArray<{ value: WeightUnit; label: string }> = [
             <span class="input-group-text">{{ unitLabel(unit()) }}</span>
           </div>
           <div id="print-batch-help" class="form-text">
-            {{ unit() === 'lb' ? 'In pounds, such as 2.5.' : 'In grams, such as 5000.' }} Colorants given as a % of the
-            base are that % of it. Leave it blank to print the amounts as written.
+            {{ t('recipe.print.batchHelp', { unit: unit(), example: example() }) }}
           </div>
           @if (batchProblem()) {
             <p id="print-batch-problem" class="print-problem" role="alert">
-              Enter the batch size as a number, such as {{ unit() === 'lb' ? '2.5' : '5000' }}.
+              {{ t('recipe.print.batchProblem', { example: example() }) }}
             </p>
           }
         </div>
         <fieldset>
-          <legend class="form-label">Weigh in</legend>
+          <legend class="form-label">{{ t('recipe.print.weighIn') }}</legend>
           @for (choice of units; track choice.value) {
             <div class="form-check">
               <input
@@ -221,18 +220,18 @@ const UNITS: ReadonlyArray<{ value: WeightUnit; label: string }> = [
                 [checked]="unit() === choice.value"
                 (change)="setUnit(choice.value)"
               />
-              <label class="form-check-label" [for]="'print-unit-' + choice.value">{{ choice.label }}</label>
+              <label class="form-check-label" [for]="'print-unit-' + choice.value">{{ t(choice.label) }}</label>
             </div>
           }
-          <div class="form-text">Your account's setting; also under Settings on your account page.</div>
+          <div class="form-text">{{ t('recipe.print.accountSetting') }}</div>
           @if (unitProblem()) {
             <p class="print-problem" role="alert">{{ unitProblem() }}</p>
           }
         </fieldset>
       </div>
       <div class="print-actions">
-        <button type="button" class="btn btn-primary" (click)="print()">Print</button>
-        <button type="button" class="btn btn-light border" (click)="back.emit()">Back to the recipe</button>
+        <button type="button" class="btn btn-primary" (click)="print()">{{ t('recipe.print.print') }}</button>
+        <button type="button" class="btn btn-light border" (click)="back.emit()">{{ t('recipe.print.back') }}</button>
       </div>
     </section>
 
@@ -240,9 +239,9 @@ const UNITS: ReadonlyArray<{ value: WeightUnit; label: string }> = [
     @let weights = printed.weights;
     <article class="print-sheet" aria-labelledby="print-title">
       <header class="print-sheet-header">
-        <h2 id="print-title">{{ title() }}</h2>
+        <h2 id="print-title" translate="no">{{ title() }}</h2>
         @if (recipe().date) {
-          <p class="print-meta">{{ recipe().date | date: 'fullDate' }}</p>
+          <p class="print-meta">{{ recipe().date | gcDate }}</p>
         }
         @if (batchSummary(); as summary) {
           <p class="print-batch-summary">{{ summary }}</p>
@@ -254,24 +253,26 @@ const UNITS: ReadonlyArray<{ value: WeightUnit; label: string }> = [
           @for (problem of printed.unreadable; track problem) {
             <p>{{ problem }}</p>
           }
-          <p>So there are no weights to print. Fix it in the recipe, with a point for decimals (12.5).</p>
+          <p>{{ t('recipe.print.noWeights') }}</p>
         </div>
       }
 
       @if (mode() === 'full') {
-        <div class="print-table-scroll" tabindex="0" role="region" aria-label="Materials">
+        <div class="print-table-scroll" tabindex="0" role="region" [attr.aria-label]="t('recipe.print.materials')">
           <table class="print-table">
             <caption>
-              Materials
+              {{
+                t('recipe.print.materials')
+              }}
             </caption>
             <thead>
               <tr>
-                <th scope="col">Material</th>
-                <th scope="col" class="num">Amount</th>
-                <th scope="col" class="num">% of base</th>
+                <th scope="col">{{ t('recipe.print.material') }}</th>
+                <th scope="col" class="num">{{ t('recipe.print.amount') }}</th>
+                <th scope="col" class="num">{{ t('recipe.print.share') }}</th>
                 @if (weights) {
-                  <th scope="col" class="num">Weigh</th>
-                  <th scope="col" class="num">Running total</th>
+                  <th scope="col" class="num">{{ t('recipe.print.weigh') }}</th>
+                  <th scope="col" class="num">{{ t('recipe.print.runningTotal') }}</th>
                 }
               </tr>
             </thead>
@@ -281,7 +282,7 @@ const UNITS: ReadonlyArray<{ value: WeightUnit; label: string }> = [
                   <th scope="row">
                     {{ line.name }}
                     @if (line.formula) {
-                      <span class="print-formula">{{ line.formula }}</span>
+                      <span class="print-formula" translate="no">{{ line.formula }}</span>
                     }
                   </th>
                   <td class="num">{{ line.amount }}</td>
@@ -295,7 +296,7 @@ const UNITS: ReadonlyArray<{ value: WeightUnit; label: string }> = [
             </tbody>
             <tfoot>
               <tr>
-                <th scope="row">Total</th>
+                <th scope="row">{{ t('recipe.print.total') }}</th>
                 <td class="num">{{ printed.total }}</td>
                 <td class="num">100%</td>
                 @if (weights) {
@@ -308,21 +309,23 @@ const UNITS: ReadonlyArray<{ value: WeightUnit; label: string }> = [
         </div>
 
         @if (printed.additives.length) {
-          <div class="print-table-scroll" tabindex="0" role="region" aria-label="Colorants and additives">
+          <div class="print-table-scroll" tabindex="0" role="region" [attr.aria-label]="t('recipe.print.additives')">
             <table class="print-table">
               <caption>
-                Colorants and additives
+                {{
+                  t('recipe.print.additives')
+                }}
                 <span class="print-caption-note">{{
-                  recipe().includeAdditives ? 'counted in the unity formula' : 'on top of the base'
+                  recipe().includeAdditives ? t('recipe.print.counted') : t('recipe.print.onTop')
                 }}</span>
               </caption>
               <thead>
                 <tr>
-                  <th scope="col">Colorant or additive</th>
-                  <th scope="col" class="num">Amount</th>
+                  <th scope="col">{{ t('recipe.print.additive') }}</th>
+                  <th scope="col" class="num">{{ t('recipe.print.amount') }}</th>
                   @if (weights) {
-                    <th scope="col" class="num">Weigh</th>
-                    <th scope="col" class="num">Running total</th>
+                    <th scope="col" class="num">{{ t('recipe.print.weigh') }}</th>
+                    <th scope="col" class="num">{{ t('recipe.print.runningTotal') }}</th>
                   }
                 </tr>
               </thead>
@@ -344,21 +347,21 @@ const UNITS: ReadonlyArray<{ value: WeightUnit; label: string }> = [
 
         <section class="print-chemistry" aria-labelledby="print-unity">
           <h3 id="print-unity">
-            Unity formula{{ recipe().includeAdditives ? ', counting colorants and additives' : '' }}
+            {{ recipe().includeAdditives ? t('recipe.print.unityCounted') : t('recipe.print.unity') }}
           </h3>
           @if (evaluation().analysis; as analysis) {
             <gc-unity-formula [analysis]="analysis" />
             <dl class="print-facts">
               @if (fluxBalance(); as balance) {
-                <dt>Flux balance</dt>
-                <dd>{{ balance }}</dd>
+                <dt>{{ t('recipe.print.fluxBalance') }}</dt>
+                <dd translate="no">{{ balance }}</dd>
               }
               @if (oxideAnalysis(); as oxides) {
-                <dt>Oxide analysis, fired, by weight</dt>
-                <dd>{{ oxides }}</dd>
+                <dt>{{ t('recipe.print.oxideAnalysis') }}</dt>
+                <dd translate="no">{{ oxides }}</dd>
               }
               @if (loi(); as loi) {
-                <dt>Loss on ignition</dt>
+                <dt>{{ t('recipe.print.loi') }}</dt>
                 <dd>{{ loi }}</dd>
               }
             </dl>
@@ -370,29 +373,33 @@ const UNITS: ReadonlyArray<{ value: WeightUnit; label: string }> = [
               </ul>
             }
           } @else {
-            <p>{{ evaluation().problem ?? 'There is no unity formula: the materials have no amounts.' }}</p>
+            <p>{{ evaluation().problem ?? t('recipe.print.noAmounts') }}</p>
           }
         </section>
 
         @if (notes()) {
           <section class="print-notes" aria-labelledby="print-notes-heading">
-            <h3 id="print-notes-heading">Notes</h3>
+            <h3 id="print-notes-heading">{{ t('recipe.print.notes') }}</h3>
             <p>{{ notes() }}</p>
           </section>
         }
       } @else {
-        <div class="print-table-scroll" tabindex="0" role="region" aria-label="What to weigh">
+        <div class="print-table-scroll" tabindex="0" role="region" [attr.aria-label]="t('recipe.print.toWeigh')">
           <table class="print-table print-batch-list">
             <caption class="visually-hidden">
-              What to weigh
+              {{
+                t('recipe.print.toWeigh')
+              }}
             </caption>
             <thead>
               <tr>
-                <th scope="col" class="tick"><span class="visually-hidden">Weighed</span></th>
-                <th scope="col">Material</th>
-                <th scope="col" class="num">{{ weights ? 'Weigh' : 'Amount' }}</th>
+                <th scope="col" class="tick">
+                  <span class="visually-hidden">{{ t('recipe.print.weighed') }}</span>
+                </th>
+                <th scope="col">{{ t('recipe.print.material') }}</th>
+                <th scope="col" class="num">{{ weights ? t('recipe.print.weigh') : t('recipe.print.amount') }}</th>
                 @if (weights) {
-                  <th scope="col" class="num">Running total</th>
+                  <th scope="col" class="num">{{ t('recipe.print.runningTotal') }}</th>
                 }
               </tr>
             </thead>
@@ -411,7 +418,7 @@ const UNITS: ReadonlyArray<{ value: WeightUnit; label: string }> = [
             @if (printed.additives.length) {
               <tbody>
                 <tr class="print-group">
-                  <th scope="rowgroup" [attr.colspan]="weights ? 4 : 3">Colorants and additives</th>
+                  <th scope="rowgroup" [attr.colspan]="weights ? 4 : 3">{{ t('recipe.print.additives') }}</th>
                 </tr>
                 @for (line of printed.additives; track $index) {
                   <tr>
@@ -429,7 +436,7 @@ const UNITS: ReadonlyArray<{ value: WeightUnit; label: string }> = [
               <tfoot>
                 <tr>
                   <td></td>
-                  <th scope="row">All together</th>
+                  <th scope="row">{{ t('recipe.print.allTogether') }}</th>
                   <td class="num">{{ weight(weights.total) }}</td>
                   <td></td>
                 </tr>
@@ -438,11 +445,11 @@ const UNITS: ReadonlyArray<{ value: WeightUnit; label: string }> = [
           </table>
         </div>
         @if (!weights) {
-          <p class="print-note">The amounts as written. Enter a batch size for the weights to weigh.</p>
+          <p class="print-note">{{ t('recipe.print.asWritten') }}</p>
         }
       }
     </article>
-  `,
+  </ng-container>`,
   styles: `
     :host {
       display: block;
@@ -536,14 +543,14 @@ const UNITS: ReadonlyArray<{ value: WeightUnit; label: string }> = [
       background: none;
       border-bottom: 1px solid var(--gc-border);
       padding: 0.3rem 0.5rem;
-      text-align: left;
+      text-align: start;
       vertical-align: top;
     }
     .print-table tbody th {
       font-weight: normal;
     }
     .print-table .num {
-      text-align: right;
+      text-align: end;
     }
     .print-table tfoot th,
     .print-table tfoot td {
@@ -677,7 +684,9 @@ export class RecipePrint implements OnInit, OnDestroy {
   protected readonly mode = signal<PrintMode>(readMode());
   private readonly batch = signal<BatchSize>(readBatch());
 
-  protected readonly title = computed(() => this.recipe().title.trim() || 'Untitled recipe');
+  protected readonly title = computed(() => this.recipe().title.trim() || translate('recipe.page.untitled'));
+  /** What a PDF of it is named: the page's title. */
+  private readonly pageTitle = computed(() => translate('recipe.print.pageTitle', { title: this.title() }));
   protected readonly notes = computed(() => {
     const notes = firstOf(this.recipe().notes).trim();
     return notes === 'None.' ? '' : notes;
@@ -689,9 +698,11 @@ export class RecipePrint implements OnInit, OnDestroy {
     const now = this.unit();
     if (unit === now) return text;
     const grams = toGrams(text, unit);
-    return grams ? formatAmount(fromGrams(grams, now), now === 'lb' ? 2 : 0) : text;
+    return grams ? upTo(fromGrams(grams, now), now === 'lb' ? 2 : 0) : formatPlain(text);
   });
   private readonly batchGrams = computed(() => toGrams(this.batchText(), this.unit()));
+  /** A batch size to give as an example, in the unit: as the field reads it. */
+  protected readonly example = computed(() => (this.unit() === 'lb' ? '2.5' : '5000'));
   protected readonly batchProblem = computed(() => this.batchText().trim() !== '' && !this.batchGrams());
 
   private readonly precision = this.preferences.gramPrecision;
@@ -702,8 +713,12 @@ export class RecipePrint implements OnInit, OnDestroy {
     const weights = this.lines().weights;
     if (!weights) return '';
     const extra = weights.total - weights.base;
-    if (!(extra > 0)) return 'Batch: ' + this.weight(weights.base) + '.';
-    return `Batch: ${this.weight(weights.base)} of base materials and ${this.weight(extra)} of colorants and additives, ${this.weight(weights.total)} in all.`;
+    if (!(extra > 0)) return translate('recipe.print.batchBase', { base: this.weight(weights.base) });
+    return translate('recipe.print.batch', {
+      base: this.weight(weights.base),
+      extra: this.weight(extra),
+      total: this.weight(weights.total)
+    });
   });
 
   protected readonly evaluation = computed(() =>
@@ -715,7 +730,7 @@ export class RecipePrint implements OnInit, OnDestroy {
   /** R₂O 0.28 : RO 0.72. */
   protected readonly fluxBalance = computed(() => {
     const groups = this.evaluation().analysis?.groups;
-    return groups ? `R₂O ${groups.R2O.toFixed(2)} : RO ${groups.RO.toFixed(2)}` : '';
+    return groups ? `R₂O ${fixed(groups.R2O, 2)} : RO ${fixed(groups.RO, 2)}` : '';
   });
   /** SiO₂ 61.2% · Al₂O₃ 14.1% ..., in the unity formula's order. */
   protected readonly oxideAnalysis = computed(() => {
@@ -723,23 +738,23 @@ export class RecipePrint implements OnInit, OnDestroy {
     if (!analysis) return '';
     return unityColumns(analysis)
       .flatMap((column) => column.oxides)
-      .map((oxide) => oxide.label + ' ' + oxide.value.toFixed(1) + '%')
+      .map((oxide) => oxide.label + ' ' + fixed(oxide.value, 1) + '%')
       .join(' · ');
   });
   protected readonly loi = computed(() => {
     const loi = this.evaluation().analysis?.loi;
-    return typeof loi === 'number' ? loi.toFixed(1) + '% of the raw batch' : '';
+    return typeof loi === 'number' ? translate('recipe.print.loiValue', { loi: fixed(loi, 1) }) : '';
   });
 
   ngOnInit(): void {
     void this.preferences.load();
     // Saved as a PDF, the file takes the page's title.
     this.titleBefore = this.titleService.getTitle();
-    this.titleService.setTitle(this.title() + ' - Glazecalc');
+    this.titleService.setTitle(this.pageTitle());
   }
 
   ngOnDestroy(): void {
-    if (this.titleService.getTitle() === this.title() + ' - Glazecalc') this.titleService.setTitle(this.titleBefore);
+    if (this.titleService.getTitle() === this.pageTitle()) this.titleService.setTitle(this.titleBefore);
   }
 
   protected weight(grams: number): string {
@@ -762,7 +777,7 @@ export class RecipePrint implements OnInit, OnDestroy {
     try {
       await this.preferences.set('weightUnit', unit);
     } catch (err) {
-      this.unitProblem.set(errorMessage(err, 'The weight setting could not be saved. Please try again.'));
+      this.unitProblem.set(errorMessage(err, translate('recipe.print.unitFailed')));
     }
   }
 

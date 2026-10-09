@@ -1,0 +1,236 @@
+{
+  "auth": {
+    "signInHeading": "Sign in",
+    "keepHeading": "Keep your work",
+    "signUpHeading": "Create your account",
+    "signInLead": "Welcome back to your glaze notebook.",
+    "keepLead": "Keep everything you made as {name}: add your email and a password. It stays free.",
+    "signUpLead": "Free. Your recipes, materials and notes are kept private to your account.",
+    "trialNote": "Already have an account? Signing in brings what you made as {name} into it. New here? <signup>Create an account</signup> to keep it instead.",
+    "email": "Email",
+    "password": "Password",
+    "passwordHint": "At least 8 characters.",
+    "confirmation": "Confirm password",
+    "passwordMissing": "Enter your password.",
+    "createAccount": "Create account",
+    "signIn": "Sign in",
+    "haveAccount": "Already have an account? <signin>Sign in</signin>",
+    "forgot": "Forgot your password? Reset it",
+    "newHere": "New here? <signup>Create a free account</signup>",
+    "signUpFailed": "Error: could not create the account.",
+    "signInFailed": "Error: could not sign in."
+  },
+  "forgot": {
+    "heading": "Reset your password",
+    "checkInbox": "Check your inbox and junk folder. If nothing arrives, check the address and ask again.",
+    "intro": "Enter the email for your account, and we will send you a link to choose a new password.",
+    "email": "Email:",
+    "send": "Send reset link",
+    "back": "Back to sign in",
+    "failed": "Error: could not send the reset email. Please try again."
+  },
+  "reset": {
+    "heading": "Choose a new password",
+    "signIn": "Sign in",
+    "incomplete": "This page needs the link from a password reset email, and this one is incomplete.",
+    "askAgain": "Ask for a new link",
+    "password": "New password:",
+    "confirmation": "Confirm new password:",
+    "save": "Save new password",
+    "hint": "At least 8 characters. Every device signed in to the account will be signed out.",
+    "failed": "Error: could not change the password. Please try again."
+  },
+  "account": {
+    "trialTitle": "Your trial",
+    "trialLead": "You are trying Glazecalc as {name}.",
+    "keepHeading": "Keep your work",
+    "keepText": "This trial and everything in it are removed on {date}. Create a free account to keep them: your recipes, materials and notes stay just as they are, and {name} stays your display name.",
+    "createAccount": "Create an account",
+    "title": "Your account",
+    "signedInAs": "Signed in as {email}.",
+    "changeHeading": "Change your password",
+    "current": "Current password",
+    "currentMissing": "Enter your current password.",
+    "password": "New password",
+    "passwordHint": "At least 8 characters. Other devices signed in to this account will be signed out.",
+    "confirmation": "Confirm new password",
+    "change": "Change password",
+    "changeFailed": "Error: could not change the password. Please try again.",
+    "deleteHeading": "Delete your account",
+    "deleteText": "This removes your account and everything you saved: recipes, materials, additives, notes, firing logs and advice. It cannot be undone.",
+    "deletePassword": "Your password, to confirm",
+    "deletePasswordMissing": "Enter your password to confirm.",
+    "delete": "Delete my account",
+    "deleteFailed": "Error: could not delete the account. Please try again."
+  },
+  "settings": {
+    "heading": "Settings",
+    "intro": "Saved with your account, so they hold on every device.",
+    "saveFailed": "The setting could not be saved. Please try again.",
+    "language": {
+      "legend": "Language",
+      "help": "The language of the app, the guides and your emails. Changing it opens this page in that language.",
+      "saved": "Saved: {language}."
+    },
+    "region": {
+      "legend": "Where you work",
+      "none": {
+        "label": "Not chosen",
+        "saved": "Saved: no region chosen; defaults follow your browser."
+      },
+      "saved": "Saved: {region}.",
+      "help": "The materials sold there, and the defaults for numbers, dates, temperatures and cones below. Until you choose, they follow your browser's language."
+    },
+    "format": {
+      "legend": "Numbers and dates",
+      "auto": {
+        "label": "As my language and region",
+        "saved": "Saved: numbers and dates as your language and region write them."
+      },
+      "saved": "Saved: numbers and dates as in {language}.",
+      "help": "How numbers and dates are written: 12,345.6 or 12.345,6, and the order of day and month."
+    },
+    "decimalMark": {
+      "legend": "Typing amounts",
+      "either": {
+        "label": "A comma or a point for decimals",
+        "example": "12,5 or 12.5",
+        "saved": "Saved: amounts can be typed with a comma or a point."
+      },
+      "comma": {
+        "label": "A comma for decimals",
+        "saved": "Saved: amounts are typed with a comma for decimals."
+      },
+      "point": {
+        "label": "A point for decimals",
+        "saved": "Saved: amounts are typed with a point for decimals."
+      },
+      "help": "With either, an amount such as 1,250 is read the way your numbers are written above."
+    },
+    "temperature": {
+      "legend": "Temperatures",
+      "celsius": {
+        "label": "Celsius",
+        "saved": "Saved: temperatures in °C."
+      },
+      "fahrenheit": {
+        "label": "Fahrenheit",
+        "saved": "Saved: temperatures in °F."
+      },
+      "help": "Until you choose, this follows your region: °F in the United States, °C elsewhere."
+    },
+    "cones": {
+      "legend": "Firing",
+      "orton": {
+        "label": "To Orton cones",
+        "example": "cone 04, cone 6",
+        "saved": "Saved: firing to Orton cones."
+      },
+      "temperature": {
+        "label": "By temperature, as a kiln controller's program",
+        "saved": "Saved: firing by temperature."
+      },
+      "help": "Until you choose, this follows your region: Orton cones in the US, UK, Ireland, Australia and New Zealand, temperature in the rest of Europe."
+    },
+    "density": {
+      "legend": "Glaze density",
+      "sg": {
+        "label": "Specific gravity",
+        "saved": "Saved: glaze density as specific gravity."
+      },
+      "baume": {
+        "label": "Degrees Baumé, from a hydrometer",
+        "saved": "Saved: glaze density in degrees Baumé."
+      },
+      "pint": {
+        "label": "Pint weight, the ounces in an imperial pint",
+        "saved": "Saved: glaze density as pint weight."
+      },
+      "help": "How the guides give the thickness of a glaze. Until you choose, this follows your region: degrees Baumé in Italy, specific gravity elsewhere."
+    },
+    "theme": {
+      "legend": "Light or dark",
+      "system": {
+        "label": "As this device is set",
+        "saved": "Saved: light or dark as each device is set."
+      },
+      "light": {
+        "label": "Light",
+        "saved": "Saved: always light."
+      },
+      "dark": {
+        "label": "Dark",
+        "saved": "Saved: always dark."
+      },
+      "help": "Printed recipes are always black on white."
+    },
+    "palette": {
+      "legend": "Colors",
+      "saved": "Saved: {palette} buttons and links.",
+      "help": "For buttons, links and tabs, named for glazes. Each is easy to read in light and in dark."
+    },
+    "weightUnit": {
+      "legend": "Batch weights",
+      "grams": {
+        "label": "Grams",
+        "saved": "Saved: batch weights are in grams."
+      },
+      "pounds": {
+        "label": "Pounds and ounces",
+        "saved": "Saved: batch weights are in pounds and ounces."
+      },
+      "help": "For printed batches."
+    },
+    "gramPrecision": {
+      "legend": "Grams on printed batches",
+      "single": {
+        "label": "To a tenth of a gram",
+        "saved": "Saved: grams show to a tenth."
+      },
+      "full": {
+        "label": "Full precision",
+        "saved": "Saved: grams show in full, to 5 decimal places."
+      },
+      "help": "To a tenth, amounts under 10 g still show hundredths (2.35 g), for colorants in small test batches."
+    },
+    "lead": {
+      "legend": "Lead",
+      "off": {
+        "label": "Off: never add lead to a recipe or suggest it",
+        "saved": "Saved: lead is never added to a recipe or suggested."
+      },
+      "on": {
+        "label": "On: materials with lead can be added and suggested",
+        "saved": "Saved: materials with lead can be added and suggested."
+      },
+      "help": "Lead is poisonous to breathe or swallow and builds up in the body, and a lead glaze can release it into food and drink; no calculation can tell whether a fired piece does. Off, recipes that already have lead still open as they were.",
+      "warning": "Use lead only as a frit, never as raw red, white or yellow lead or litharge. Mix it wet, never spray it, wear a respirator and clean up wet. Keep lead-glazed ware away from food and drink unless a laboratory leach test of the fired piece has passed.",
+      "turnOn": "Turn lead on",
+      "keepOff": "Keep it off"
+    },
+    "englishTerms": {
+      "legend": "English terms",
+      "off": {
+        "label": "Off",
+        "saved": "Saved: no English terms."
+      },
+      "on": {
+        "label": "Show the English after key terms",
+        "saved": "Saved: the English shown after key terms."
+      },
+      "help": "For reading English sources, such as Digitalfire, beside this one: key terms get their English in brackets."
+    },
+    "notice": {
+      "legend": "Translation notice",
+      "shown": {
+        "label": "Shown",
+        "saved": "Saved: the notice is shown."
+      },
+      "hidden": {
+        "label": "Hidden",
+        "saved": "Saved: the notice is hidden. A line of it stays in the safety guides."
+      },
+      "help": "The note at the top of each page saying it was translated by AI, with a way to suggest a correction."
+    }
+  }
+}

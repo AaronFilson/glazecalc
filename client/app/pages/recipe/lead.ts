@@ -1,3 +1,4 @@
+import { translate } from '@jsverse/transloco';
 import {
   MOLAR_MASS,
   OXIDE_GROUPS,
@@ -11,8 +12,19 @@ import { Additive, FritRole, Material, RecipeMaterial } from '../../core/models'
 import { hasLead } from '../../shared/library-info';
 import { pastLimits, sizeNotes } from './checks';
 import { LibraryMaterial, modernMaterials } from './compare';
-import { Report, TryMaterial, explain, oxidePercent, placesFor, recipeFrom, suggestable } from './pool';
+import {
+  Report,
+  TryMaterial,
+  changeText,
+  explain,
+  newText,
+  oxidePercent,
+  placesFor,
+  recipeFrom,
+  suggestable
+} from './pool';
 import { amountOf, formatAmount, totalOf } from './rebase';
+import { formatPlain, upTo } from '../../shared/format';
 
 // Replace lead (docs/adr/0011-replacing-lead.md and 0012): an old lead glaze
 // rebuilt without lead. Either its formula is rebuilt (silica and alumina kept,
@@ -87,8 +99,6 @@ const BASE_DOING_LITTLE = 0.2;
 const COLOUR_ALUMINA = 0.2;
 const CHOICES = 3;
 const RAW_CALCIUM = /^(whiting|dolomite)$/i;
-const RAW_CALCIUM_WHY =
-  "this app's own guideline for raw whiting and dolomite at low fire, where they barely melt and give off gas";
 
 /** Whether the recipe has lead in it: a material with PbO, with an amount. */
 export const recipeHasLead = (lines: RecipeMaterial[]): boolean =>
@@ -201,6 +211,8 @@ function linesFor(setting: Setting, base: Material, size: number): Line[] {
   if (clay) Object.assign(clay, { must: true, fixed: true, least: Math.min(clay.start, CLAY_SHARE * size) });
   const uncapped = new Set(extras.uncapped ?? []);
   const lowFire = celsius < LOW_FIRE_BELOW;
+  // Why each is capped, for the report: in the page's language.
+  const rawCalciumWhy = translate('recipe.lead.why.rawCalcium');
   const add = (material: Material | undefined, extra: Partial<Line> = {}) => {
     if (!material || inRecipe.has(material.name)) return;
     inRecipe.add(material.name);
@@ -222,12 +234,12 @@ function linesFor(setting: Setting, base: Material, size: number): Line[] {
     const role = roleOf(m);
     if (role === 'alkali' && soldWith(m, base)) add(m);
     else if (role === 'low-expansion' && soldWith(m, base))
-      add(m, { most: LOW_EXPANSION_SHARE * size, why: 'low-expansion frits are craze cures, used at about 5 to 10%' });
+      add(m, { most: LOW_EXPANSION_SHARE * size, why: translate('recipe.lead.why.lowExpansion') });
     else if (role === 'boron' && soldWith(m, base))
-      add(m, { most: BORON_FRIT_SHARE * size, why: 'a calcium borate frit is a boron top-up, not a base' });
+      add(m, { most: BORON_FRIT_SHARE * size, why: translate('recipe.lead.why.boronFrit') });
     else if (m.category === 'feldspar') add(m);
     else if (/wollastonite/i.test(m.name)) add(m);
-    else if (RAW_CALCIUM.test(m.name)) add(m, lowFire ? { group: 'raw calcium', why: RAW_CALCIUM_WHY } : {});
+    else if (RAW_CALCIUM.test(m.name)) add(m, lowFire ? { group: 'raw calcium', why: rawCalciumWhy } : {});
   }
   const zincWanted = !(
     hasChrome(additives) ||
@@ -237,7 +249,7 @@ function linesFor(setting: Setting, base: Material, size: number): Line[] {
   if (zincWanted)
     add(
       offered.find((m) => m.name === 'Zinc Oxide'),
-      { most: RAW_SHARE * size, why: "raw zinc oxide's melting power drops quickly above about 5%, and it can crawl" }
+      { most: RAW_SHARE * size, why: translate('recipe.lead.why.zinc') }
     );
   if (!clay) {
     add(
@@ -379,12 +391,12 @@ export function replaceLead(
     const old = new Map(lines.map((line) => [line.name, amountOf(line.amount)]));
     changes = materials.map((m) =>
       old.has(m.name)
-        ? `${m.name} ${formatAmount(old.get(m.name)!, places)} → ${m.amount}`
-        : `${m.name} ${m.amount}, new`
+        ? changeText(m.name, upTo(old.get(m.name)!, places), formatPlain(m.amount))
+        : newText(m.name, formatPlain(m.amount))
     );
     for (const line of lines) {
       if (!materials.some((m) => m.name === line.name) && amountOf(line.amount) > 0) {
-        changes.push(`${line.name} ${formatAmount(amountOf(line.amount), places)} → 0`);
+        changes.push(changeText(line.name, upTo(amountOf(line.amount), places), upTo(0, 0)));
       }
     }
   } else {
@@ -402,13 +414,14 @@ export function replaceLead(
     materials = made.materials;
     changes = made.changes;
     for (const line of lines.filter(hasLead)) {
-      if (amountOf(line.amount) > 0) changes.push(`${line.name} ${formatAmount(amountOf(line.amount), places)} → 0`);
+      if (amountOf(line.amount) > 0)
+        changes.push(changeText(line.name, upTo(amountOf(line.amount), places), upTo(0, 0)));
     }
     report = explain(scaled, fit, places);
     const baseShare = (scaled.amounts[fit.findIndex((line) => line.material.name === base.name)] ?? 0) / oldTotal;
     if (baseShare < BASE_DOING_LITTLE) {
       cautions.push(
-        `The match uses only ${Math.round(baseShare * 100)}% of ${base.name}: at this firing the other materials do most of the melting, so the choice of base frit matters little here.`
+        translate('recipe.lead.baseDoingLittle', { percent: upTo(Math.round(baseShare * 100), 0), base: base.name })
       );
     }
   }
@@ -437,26 +450,35 @@ function cautionsFor(lines: RecipeMaterial[], additives: Additive[]): string[] {
   const lead = fluxes > 0 ? (moles['PbO'] ?? 0) / fluxes : 0;
   const cautions: string[] = [];
   if (has(additives, ['Sb2O3', 'Sb2O5'], /antimon|naples/i)) {
-    cautions.push(
-      'Antimony gives Naples yellow only with lead: without it the yellow will not form. Use a commercial yellow stain rated for your cone.'
-    );
+    cautions.push(translate('recipe.lead.antimony'));
   }
   if (hasChrome(additives) && lead >= 0.5) {
-    cautions.push(
-      'Red, orange or yellow from chrome comes from lead; without it chrome turns green. Use a stain rated for your cone for those colours.'
-    );
+    cautions.push(translate('recipe.lead.chrome'));
   }
-  if (has(additives, ['CuO'])) cautions.push('Copper turns bluer, toward turquoise, without lead.');
-  if (has(additives, ['MnO'])) cautions.push('Manganese turns plum or violet rather than brown.');
+  if (has(additives, ['CuO'])) cautions.push(translate('recipe.lead.copper'));
+  if (has(additives, ['MnO'])) cautions.push(translate('recipe.lead.manganese'));
   if (has(additives, ['Fe2O3', 'FeO']) || (moles['Fe2O3'] ?? 0) / (fluxes || 1) > 0.02) {
-    cautions.push('An iron honey glaze is less warm without lead, and can turn olive.');
+    cautions.push(translate('recipe.lead.iron'));
   }
   return cautions;
 }
 
-/** The share of the fired glaze that is lead oxide, and PbO in the unity formula, for the recipe's warning. */
+/**
+ * The share of the fired glaze that is lead oxide, and PbO in the unity
+ * formula, for the recipe's warning. A line whose material cannot be read (one
+ * saved with no oxides, say) adds nothing: the page says what is wrong with it,
+ * and the lead in the rest is still worth warning about.
+ */
 export function leadIn(lines: RecipeMaterial[]): { unity: number; percent: number } {
-  const moles = oxideMoles(lines.map((line) => ({ material: line, amount: amountOf(line.amount) })));
+  const readable = lines.filter((line) => {
+    try {
+      oxideMoles([{ material: line, amount: 1 }]);
+      return true;
+    } catch {
+      return false;
+    }
+  });
+  const moles = oxideMoles(readable.map((line) => ({ material: line, amount: amountOf(line.amount) })));
   const fluxes = fluxesOf(moles);
   const grams = Object.entries(moles).reduce((sum, [oxide, amount]) => sum + amount * MOLAR_MASS[oxide], 0);
   const lead = moles['PbO'] ?? 0;

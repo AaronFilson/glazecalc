@@ -1,4 +1,6 @@
 import { Component, computed, input, signal } from '@angular/core';
+import { TranslocoDirective } from '@jsverse/transloco';
+import { RichText } from '../i18n/rich-text';
 import { formatFormula } from '../../../lib/chemistry';
 import { Additive, Material } from '../core/models';
 import {
@@ -9,8 +11,10 @@ import {
   matchesWords,
   readRegion,
   saveRegion,
+  standardText,
   statusText
 } from './library-info';
+import { listOf } from './format';
 import { fieldsText, firstOf } from './options';
 
 let nextId = 0;
@@ -22,36 +26,37 @@ let nextId = 0;
  */
 @Component({
   selector: 'gc-standard-list',
-  template: `
+  imports: [RichText, TranslocoDirective],
+  template: `<ng-container *transloco="let t">
     <div class="standard-tools">
       <div>
-        <label class="form-label" [for]="id + '-filter'">Filter</label>
+        <label class="form-label" [for]="id + '-filter'">{{ t('standard.filter') }}</label>
         <input
           [id]="id + '-filter'"
           type="search"
           class="form-control form-control-sm"
-          placeholder="Name or other name"
+          [placeholder]="t('standard.filterPlaceholder')"
           autocomplete="off"
           [value]="filter()"
           (input)="filter.set($any($event.target).value)"
         />
       </div>
       <div>
-        <label class="form-label" [for]="id + '-category'">Kind</label>
+        <label class="form-label" [for]="id + '-category'">{{ t('standard.kind') }}</label>
         <select
           [id]="id + '-category'"
           class="form-select form-select-sm"
           [value]="category()"
           (change)="category.set($any($event.target).value)"
         >
-          <option value="">All kinds</option>
+          <option value="">{{ t('standard.allKinds') }}</option>
           @for (option of categories(); track option.value) {
             <option [value]="option.value">{{ option.label }}</option>
           }
         </select>
       </div>
       <div>
-        <label class="form-label" [for]="id + '-region'">Sold in</label>
+        <label class="form-label" [for]="id + '-region'">{{ t('standard.soldIn') }}</label>
         <select
           [id]="id + '-region'"
           class="form-select form-select-sm"
@@ -63,97 +68,108 @@ let nextId = 0;
           }
         </select>
       </div>
-      <p class="standard-count" role="status">Showing {{ shown().length }} of {{ records().length }} {{ noun() }}</p>
+      <p class="standard-count" role="status" [id]="id + '-count'">
+        {{ t('standard.showing', { shown: shown().length, total: records().length, noun: noun() }) }}
+      </p>
     </div>
-    <table class="table table-bordered standard-table">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Equivalent Weight</th>
-          <th>Fired Weight</th>
-          <th>Notes</th>
-          <th>Analysis</th>
-          <th>Formula</th>
-        </tr>
-      </thead>
-      <tbody>
-        @for (record of shown(); track record._id ?? record.name) {
-          <tr [class.not-current]="record.status && record.status !== 'current'">
-            <td>
-              {{ record.name }}
-              @if (statusText(record); as status) {
-                <span class="status-badge">{{ status }}</span>
-              }
-            </td>
-            <td>{{ record.equivalent }}</td>
-            <td>{{ record.formulaweight }}</td>
-            <td class="standard-notes">
-              {{ firstOf(record.notes) }}
-              @if (record.substitutes?.length) {
-                @if (record.status && record.status !== 'current') {
-                  <p class="standard-detail"><b>Use instead:</b> {{ record.substitutes!.join(', ') }}</p>
-                } @else {
-                  <p class="standard-detail">Similar: {{ record.substitutes!.join(', ') }}</p>
-                }
-              }
-              @if (record.replaces?.length) {
-                <p class="standard-detail">Replaces: {{ record.replaces!.join(', ') }}</p>
-              }
-              @if (record.aliases?.length) {
-                <p class="standard-detail">Also called: {{ record.aliases!.join(', ') }}</p>
-              }
-              @if (record.manufacturer) {
-                <p class="standard-detail">Made by: {{ record.manufacturer }}</p>
-              }
-              @if (record.source; as source) {
-                <p class="standard-detail">
-                  Source:
-                  @if (source.url) {
-                    <a [href]="source.url" target="_blank" rel="noopener">{{ source.name }}</a>
-                  } @else {
-                    {{ source.name }}
-                  }
-                  @if (source.date) {
-                    ({{ source.date }})
-                  }
-                </p>
-              }
-              @if (record.hazards) {
-                <details class="standard-detail">
-                  <summary>Hazards</summary>
-                  {{ record.hazards }}
-                </details>
-              }
-            </td>
-            <td>
-              @if (record.noChemistry) {
-                <span class="muted">No chemistry: left out of the unity formula</span>
-              } @else if (record.chemistryOf) {
-                <span class="muted">Counted as {{ record.chemistryOf }}</span>
-              } @else {
-                {{ fieldsText(record) }}
-              }
-            </td>
-            <td>{{ formatFormula(record.rawformula) }}</td>
-          </tr>
-        } @empty {
+    <!-- The table scrolls on its own on a narrow screen, so the page does not. -->
+    <div class="standard-table-scroll" tabindex="0" role="region" [attr.aria-labelledby]="id + '-count'">
+      <table class="table table-bordered standard-table">
+        <thead>
           <tr>
-            <td colspan="6" class="muted">
-              @if (records().length) {
-                Nothing matches. Try another name, kind or region.
-              } @else {
-                Loading...
-              }
-            </td>
+            <th>{{ t('standard.name') }}</th>
+            <th>{{ t('standard.equivalentWeight') }}</th>
+            <th>{{ t('standard.firedWeight') }}</th>
+            <th>{{ t('standard.notes') }}</th>
+            <th>{{ t('standard.analysis') }}</th>
+            <th>{{ t('standard.formula') }}</th>
           </tr>
-        }
-      </tbody>
-    </table>
-  `
+        </thead>
+        <tbody>
+          @for (record of shown(); track record._id ?? record.name) {
+            <tr [class.not-current]="record.status && record.status !== 'current'">
+              <td>
+                {{ record.name }}
+                @if (statusText(record); as status) {
+                  <span class="status-badge">{{ status }}</span>
+                }
+              </td>
+              <td>{{ record.equivalent }}</td>
+              <td>{{ record.formulaweight }}</td>
+              <td class="standard-notes">
+                {{ standardText(record, firstOf(record.notes)) }}
+                @if (record.substitutes?.length) {
+                  @if (record.status && record.status !== 'current') {
+                    <p class="standard-detail">
+                      <gc-rich [text]="t('standard.useInstead', { list: listOf(record.substitutes!, 'unit') })" />
+                    </p>
+                  } @else {
+                    <p class="standard-detail">
+                      {{ t('standard.similar', { list: listOf(record.substitutes!, 'unit') }) }}
+                    </p>
+                  }
+                }
+                @if (record.replaces?.length) {
+                  <p class="standard-detail">
+                    {{ t('standard.replaces', { list: listOf(record.replaces!, 'unit') }) }}
+                  </p>
+                }
+                @if (record.aliases?.length) {
+                  <p class="standard-detail">{{ t('standard.aliases', { list: listOf(record.aliases!, 'unit') }) }}</p>
+                }
+                @if (record.manufacturer) {
+                  <p class="standard-detail">{{ t('standard.madeBy', { name: record.manufacturer }) }}</p>
+                }
+                @if (record.source; as source) {
+                  <p class="standard-detail">
+                    {{ t('standard.source') }}
+                    @if (source.url) {
+                      <a [href]="source.url" target="_blank" rel="noopener">{{ source.name }}</a>
+                    } @else {
+                      {{ source.name }}
+                    }
+                    @if (source.date) {
+                      ({{ source.date }})
+                    }
+                  </p>
+                }
+                @if (record.hazards) {
+                  <details class="standard-detail">
+                    <summary>{{ t('standard.hazards') }}</summary>
+                    {{ standardText(record, record.hazards) }}
+                  </details>
+                }
+              </td>
+              <td>
+                @if (record.noChemistry) {
+                  <span class="muted">{{ t('standard.noChemistry') }}</span>
+                } @else if (record.chemistryOf) {
+                  <span class="muted">{{ t('standard.countedAs', { name: record.chemistryOf }) }}</span>
+                } @else {
+                  {{ fieldsText(record) }}
+                }
+              </td>
+              <td translate="no">{{ formatFormula(record.rawformula) }}</td>
+            </tr>
+          } @empty {
+            <tr>
+              <td colspan="6" class="muted">
+                @if (records().length) {
+                  {{ t('standard.nothingMatches') }}
+                } @else {
+                  {{ t('standard.loading') }}
+                }
+              </td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+  </ng-container>`
 })
 export class StandardList {
   readonly records = input.required<Array<Material | Additive>>();
-  /** Plural, lower case: 'materials', 'additives'. */
+  /** What the list holds: 'materials' or 'additives'. */
   readonly noun = input.required<string>();
 
   protected readonly id = 'standard-' + nextId++;
@@ -162,6 +178,8 @@ export class StandardList {
   protected readonly category = signal('');
   protected readonly region = signal(readRegion());
   protected readonly statusText = statusText;
+  protected readonly standardText = standardText;
+  protected readonly listOf = listOf;
   protected readonly fieldsText = fieldsText;
   protected readonly firstOf = firstOf;
   protected readonly formatFormula = formatFormula;

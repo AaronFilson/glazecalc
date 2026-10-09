@@ -1,0 +1,88 @@
+{
+  "home": {
+    "title": "Ihr Werkstatt-Notizbuch",
+    "signedInAs": "Angemeldet als {email}.",
+    "trying": "Sie probieren Glazecalc als {name} aus. Beginnen Sie mit einem Rezept.",
+    "welcomeBack": "Machen Sie dort weiter, wo Sie aufgehört haben.",
+    "sections": {
+      "recipe": {
+        "title": "Rezepte",
+        "text": "Stellen Sie eine Glasur aus Rohstoffen und Mengen zusammen, sehen Sie ihre Segerformel (UMF) und speichern Sie sie."
+      },
+      "material": {
+        "title": "Rohstoffe",
+        "text": "Fügen Sie eigene Rohstoffe hinzu, aus einer chemischen Formel oder der Analyse eines Lieferanten."
+      },
+      "additive": {
+        "title": "Zusätze und Färbemittel",
+        "text": "Speichern Sie die Färbe- und Trübungsmittel, die Sie einer Grundglasur zusätzlich zugeben."
+      },
+      "firing": {
+        "title": "Brennprotokolle",
+        "text": "Notieren Sie Zeiten, Temperaturen und Kegel für jeden Brand."
+      },
+      "notes": {
+        "title": "Notizen",
+        "text": "Halten Sie Testergebnisse fest und alles andere, was sich zu merken lohnt."
+      },
+      "advice": {
+        "title": "Glasurtipps",
+        "text": "Tipps zum Anrühren, Glasieren und Brennen sowie Ihre eigenen Tipps."
+      },
+      "guides": {
+        "title": "Anleitungen",
+        "text": "Von der Frage, was eine Glasur ist, bis zum Brennen – und wie dabei alle sicher bleiben."
+      }
+    },
+    "newHere": "Neu bei der Segerformel<en>unity formula</en>? Die <advice>Seite mit Tipps</advice> erklärt die Grundlagen, und die <about>Seite über Glazecalc</about> beschreibt, wie Glazecalc funktioniert."
+  },
+  "firing": {
+    "title": "Brennprotokolle",
+    "lead": "Protokollieren Sie jeden Brand: Zeiten, Temperaturen, Kegel und Notizen zum Ofen.",
+    "titleLabel": "Titel des Brandes:",
+    "kiln": "Ofen:",
+    "date": "Datum des Brandes:",
+    "notes": "Notizen zum Brand:",
+    "fieldSelect": "Felder für das Brennprotokoll auswählen und hinzufügen:",
+    "addField": "Feld hinzufügen",
+    "included": "Die Felder, die Sie aufgenommen haben:",
+    "fieldName": "Feldname: {name}",
+    "moveLeft": "Feld nach links verschieben",
+    "moveRight": "Feld nach rechts verschieben",
+    "removeField": "Feld entfernen",
+    "addRow": "Zeile zur Brandtabelle hinzufügen",
+    "recordHeading": "Brand protokollieren",
+    "rowActions": "Zeilenaktionen",
+    "cell": "{field}, Zeile {row}",
+    "removeRow": "Zeile entfernen",
+    "save": "Speichern",
+    "storedHeading": "Meine gespeicherten Brände:",
+    "stored": "Titel: {title}, Ofen: {kiln}, Datum: {date}",
+    "storedNotes": "Notizen: {notes}",
+    "titleMissing": "Geben Sie dem Brand einen Titel.",
+    "fieldsMissing": "Fügen Sie mindestens ein Feld zum Protokollieren hinzu, etwa {example}.",
+    "chooseField": "Wählen Sie ein Feld aus und klicken Sie dann auf „Feld hinzufügen“.",
+    "fetchFailed": "Beim Abrufen der Brennprotokolle ist ein Fehler aufgetreten.",
+    "saved": "Das Brennprotokoll wurde erfolgreich auf dem Server gespeichert.",
+    "saveFailed": "Fehler: Die Anfrage an den Server ist fehlgeschlagen."
+  },
+  "notes": {
+    "title": "Notizen",
+    "lead": "Alles Weitere, was sich über Ihre Glasuren zu merken lohnt.",
+    "intro": "Dies ist die Seite für Notizen. Hier können Sie Notizen schreiben und speichern.",
+    "titleLabel": "Titel:",
+    "content": "Ihre Notiz:",
+    "save": "Speichern",
+    "mineHeading": "Meine gespeicherten Notizen:",
+    "titleMissing": "Geben Sie der Notiz einen Titel.",
+    "contentMissing": "Schreiben Sie einen Text für die Notiz.",
+    "untitled": "Notiz ohne Titel",
+    "fetchFailed": "Beim Abrufen der Notizen ist ein Fehler aufgetreten.",
+    "saved": "Die Notiz wurde erfolgreich auf dem Server gespeichert.",
+    "saveFailed": "Fehler: Die Anfrage an den Server ist fehlgeschlagen."
+  },
+  "trash": {
+    "title": "Papierkorb",
+    "comingSoon": "Der Papierkorb kommt bald, mit der nächsten Version von Glazecalc. Gehen Sie bis dahin vorsichtig mit Löschen und Entfernen um: Ist etwas einmal weg, sind die Daten verloren."
+  }
+}

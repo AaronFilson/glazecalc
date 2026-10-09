@@ -1,3 +1,4 @@
+import { translate } from '@jsverse/transloco';
 import { HttpClient } from '@angular/common/http';
 import { Injectable, inject, signal } from '@angular/core';
 import { firstValueFrom } from 'rxjs';
@@ -37,7 +38,7 @@ export class ShelfService {
         // Asked again next time.
         this.fetched = null;
         this.keys.set([]);
-        this.problem.set(errorMessage(err, 'Your materials on hand could not be fetched. Please try again.'));
+        this.problem.set(errorMessage(err, translate('shelf.fetchFailed')));
       }
     })();
     this.fetched = { session, request };
@@ -54,7 +55,7 @@ export class ShelfService {
       return true;
     } catch (err) {
       if (save === this.saves) {
-        this.problem.set(errorMessage(err, 'Your materials on hand could not be saved. Please try again.'));
+        this.problem.set(errorMessage(err, translate('shelf.saveFailed')));
       }
       return false;
     }

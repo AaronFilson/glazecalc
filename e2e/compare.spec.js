@@ -49,7 +49,7 @@ test('tries modern materials for an old recipe, compares the two, prints them, a
   // Custer is potash spar with some soda; G-200 EU has less soda.
   await expect(compareRow(page, 'Na₂O').locator('td').nth(2)).toHaveText(/^\u2212\d/);
   await expect(page.locator('.compare-recipe').nth(1)).toContainText(
-    'Swapped one for one: Custer Spar became G-200 EU Feldspar, EPK Kaolin became Wilco UPF Kaolin.'
+    'Swapped one for one: Custer Spar became G-200 EU Feldspar and EPK Kaolin became Wilco UPF Kaolin.'
   );
 
   await page.emulateMedia({ media: 'print' });

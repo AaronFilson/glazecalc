@@ -1,4 +1,8 @@
 import { signal } from '@angular/core';
+import { translate } from '@jsverse/transloco';
+import type { ChemistryError } from '../../../lib/chemistry';
+import { chemistryText } from '../i18n/coded';
+import { forTyping } from './format';
 import { MaterialField, materialWeights } from '../../../lib/chemistry';
 import { optional } from './dates';
 import { Check, FieldChecks, numberCheck, required } from './field-checks';
@@ -47,20 +51,19 @@ export class ChemistryForm {
   /** The fields' problems: oxide amounts are amount-0, amount-1 and so on. */
   readonly checks = new FieldChecks(
     () => ({
-      name: required(this.name, `Give the ${this.noun} a name.`),
+      name: required(this.name, translate('chemistryForm.name', { noun: this.noun })),
       // An additive with no chemistry needs only its name.
       ...(this.noChemistry()
         ? {}
         : {
-            loi: numberCheck(this.loi, 'Enter the LOI as a percent from 0 to under 100, such as 12.5.', {
+            loi: numberCheck(this.loi, translate('chemistryForm.loi', { example: forTyping('12.5') }), {
               below: 100
             }),
             molecularweight: numberCheck(
               this.molecularweight,
-              'Enter the molecular weight as a number, such as 100.09.'
+              translate('chemistryForm.molecularWeight', { example: forTyping('100.09') })
             ),
-            oxide: () =>
-              this.formula().length ? null : 'Add at least one oxide: choose it, then Add the oxide to the list.',
+            oxide: () => (this.formula().length ? null : translate('chemistryForm.addOxide')),
             ...Object.fromEntries(this.formula().map((line, i) => ['amount-' + i, amountCheck(line)]))
           })
     }),
@@ -76,7 +79,7 @@ export class ChemistryForm {
   addOxide(): void {
     const oxide = this.selectedOxide();
     if (!oxide) {
-      this.checks.report('oxide', 'Choose an oxide, then Add the oxide to the list.');
+      this.checks.report('oxide', translate('chemistryForm.chooseOxide'));
       return;
     }
     this.formula.update((lines) => [...lines, { name: oxide, amount: '0' }]);
@@ -103,10 +106,10 @@ export class ChemistryForm {
     try {
       weights = materialWeights(entered);
     } catch (e) {
-      this.notices.error('Error: ' + (e as Error).message);
+      this.notices.error(translate('notices.error', { text: chemistryText(e as ChemistryError) }));
       return null;
     }
-    this.notices.warnings(weights.warnings);
+    this.notices.warnings(weights.warningCodes.map(chemistryText));
     return {
       name: entered.name,
       rawformula: optional(this.rawformula()),
@@ -160,6 +163,6 @@ export interface NoChemistryRecord {
 function amountCheck(line: FormulaLine): Check {
   return () =>
     String(line.amount ?? '').trim() === ''
-      ? 'Enter an amount, such as 0.5.'
-      : numberCheck(() => line.amount, 'Enter the amount as a number, such as 0.5.')();
+      ? translate('chemistryForm.amount', { example: forTyping('0.5') })
+      : numberCheck(() => line.amount, translate('chemistryForm.amountNumber', { example: forTyping('0.5') }))();
 }

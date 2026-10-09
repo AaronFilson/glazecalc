@@ -1,0 +1,111 @@
+{
+  "landing": {
+    "eyebrow": "Glasurrechner und Werkstatt-Notizbuch",
+    "heading": "Kostenlose Glasurchemie für alle, die töpfern.",
+    "lead": "Verstehen Sie Ihre Glasuren, statt sie nur anzurühren. Geben Sie ein Rezept ein und sehen Sie sofort seine Segerformel (UMF), sein Kieselsäure-Tonerde-Verhältnis und das Verhältnis seiner Flussmittel. Bewahren Sie Ihre Rezepte, Rohstoffe, Färbemittel, Notizen und Brennprotokolle zusammen in einem privaten Notizbuch auf.",
+    "trialEnded": "Ihr Testzugang ist abgelaufen. Starten Sie einen neuen oder erstellen Sie ein kostenloses Konto, um Ihre Arbeit zu behalten.",
+    "tryIt": "Jetzt ausprobieren",
+    "createAccount": "Kostenloses Konto erstellen",
+    "trialFailed": "Der Testzugang konnte gerade nicht gestartet werden. Bitte versuchen Sie es erneut.",
+    "heroNote": "Ausprobieren ohne Registrierung · Kostenlos und Open Source · Ihre Rezepte bleiben privat",
+    "heroAlt": "Eine Reihe gebrannter Kegelsätze: Die weißen Messkegel in jedem Satz haben sich in der Hitze des Ofens umgebogen.",
+    "heroCaption": "Kegelsätze nach einem Brand: Jeder Kegel biegt sich um, sobald der Ofen genug Wärmearbeit geleistet hat.",
+    "exampleHeading": "So funktioniert es: eine klassische Seladon-Grundglasur",
+    "exampleCaption": "Bernard Leachs „4321“, oft auf Kegel 10 gebrannt, in Gewichtsteilen.",
+    "material": "Rohstoff",
+    "parts": "Teile",
+    "unityHeading": "Die Segerformel der Glasur",
+    "exampleNote": "Die Flussmittel ergeben zusammen 1, so lassen sich zwei beliebige Glasuren fair vergleichen. Berechnet direkt hier in Ihrem Browser, mit demselben Code, den der Rechner verwendet.",
+    "featuresHeading": "Was Glazecalc kann",
+    "features": {
+      "unity": {
+        "title": "Sofort die Segerformel",
+        "text": "Sobald Sie ein Rezept eingeben, sehen Sie Flussmittel, Tonerde und Kieselsäure in der Segerformel, so wie in der Glasurchemie Rezepte verglichen werden."
+      },
+      "substitute": {
+        "title": "Korrigieren und ersetzen",
+        "text": "Ein Rohstoff wird nicht mehr hergestellt? Vergleichen Sie Formeln, um einen Ersatz zu finden, der genauso schmilzt."
+      },
+      "notebook": {
+        "title": "Ihr Werkstatt-Notizbuch",
+        "text": "Bewahren Sie Rezepte, Ihre eigenen Rohstoffe, Färbemittel, Notizen und Brennprotokolle zusammen an einem Ort auf."
+      },
+      "learn": {
+        "title": "Nebenbei lernen",
+        "text": "Anleitungen in einfacher Sprache, von der Frage, was eine Glasur ist, bis zum sicheren Brennen, stehen gleich neben den Zahlen."
+      }
+    },
+    "umfHeading": "Was ist die Segerformel?",
+    "umfRecipe": "Ein Glasurrezept sagt, wie viel von jedem Rohstoff abzuwiegen ist. Die Segerformel, im Englischen „unity molecular formula“ (UMF), sagt, was aus diesen Rohstoffen im Ofen wird: wie viele Moleküle jedes Oxids es gibt, so umgerechnet, dass die Flussmittel zusammen eins ergeben.",
+    "umfGroups": "Flussmittel bringen die Glasur zum Schmelzen, Tonerde macht die Schmelze zäher, und Kieselsäure bildet das Glas. Der Vergleich dieser drei Gruppen erklärt, warum eine Glasur glänzend und eine andere matt ist oder warum eine abläuft, während eine andere stehen bleibt, und er zeigt, wie sich ein Rohstoff ersetzen lässt, der nicht mehr verkauft wird.",
+    "readAdvice": "Weitere Glasurtipps lesen",
+    "closingHeading": "Legen Sie los, wann Sie möchten.",
+    "closingText": "Probieren Sie den Rechner jetzt aus und erstellen Sie dann ein Konto, um zu behalten, was Sie gemacht haben."
+  },
+  "about": {
+    "title": "Über Glazecalc",
+    "lead": "Ein kostenloser Open-Source-Rechner für Glasurchemie mit Notizbuch, für alle, die töpfern, keramisch arbeiten oder Keramik studieren.",
+    "whatHeading": "Was Glazecalc kann",
+    "what": "Glazecalc wandelt ein Glasurrezept, also die Rohstoffe und wie viel Sie von jedem abwiegen, in seine Segerformel (UMF) um: die Oxide, aus denen die Glasur nach dem Brand besteht, so umgerechnet, dass die Flussmittel zusammen eins ergeben. Das macht Rezepte vergleichbar, hilft zu erklären, wie sich eine Glasur verhält, und hilft, wenn ein Rohstoff ersetzt werden muss.",
+    "alongside": "Neben dem Rechner bewahrt Glazecalc Ihre Rezepte, Ihre eigenen Rohstoffe, Färbemittel und andere Zusätze, Notizen und Brennprotokolle auf und bietet eine Seite mit praktischen <advice>Glasurtipps</advice> sowie <guides>Anleitungen</guides> für den Einstieg in die Töpferei, von der Frage, was eine Glasur ist, bis zum sicheren Brennen.",
+    "numbersHeading": "Wie die Zahlen berechnet werden",
+    "numbers": "Jeder Rohstoff wird durch seine chemische Formel oder eine Oxidanalyse beschrieben, dazu sein Glühverlust: der Anteil, der im Ofen ausbrennt, etwa das Kohlendioxid in der Kreide oder das Wasser im Kaolin. Glazecalc rechnet jede Menge mit den üblichen Molmassen in Mol der einzelnen Oxide um, addiert sie über das ganze Rezept und teilt durch die gesamte Molzahl der Flussmittel. Färbemittel und andere Zusätze werden beim Rezept aufgeführt, aber wie üblich nicht in die Segerformel eingerechnet.",
+    "guide": "Die Ergebnisse sind ein Anhaltspunkt, keine Garantie. Echte Rohstoffe schwanken von Lieferant zu Lieferant und von Charge zu Charge, und das Brennen zählt genauso viel wie die Chemie, also testen Sie jede Glasur. Glasuren für Flächen mit Lebensmittelkontakt sollten auf die Abgabe von Metallen geprüft werden.",
+    "builtHeading": "Wie Glazecalc gebaut ist",
+    "built": "Glazecalc entstand 2017 und wurde 2026 neu gebaut: eine einzige kleine Webanwendung, deren <source>Quellcode auf GitHub</source> unter der MIT-Lizenz steht.",
+    "stackBrowser": "Angular 22 im Browser (Standalone-Komponenten und Signals), mit der Glasurchemie in einer kleinen, gemeinsam genutzten Codebibliothek.",
+    "stackServer": "Eine TypeScript-API auf Node.js 24 und Express 5, mit MongoDB 9, geprüft von mehr als 350 automatischen Tests.",
+    "stackHosting": "Läuft in Docker auf Amazon Web Services, hinter nginx mit HTTPS von Let's Encrypt.",
+    "stackDeploy": "Bereitgestellt mit GitHub Actions: Bei jeder Änderung werden Images gebaut und getestet, und Deployments melden sich ohne gespeicherte Schlüssel bei AWS an.",
+    "whoHeading": "Wer Glazecalc gemacht hat",
+    "who": "Glazecalc wird von Aaron Filson entwickelt. Ein Problem gefunden oder eine Idee? <issues>Eröffnen Sie ein Issue auf GitHub</issues>.",
+    "studio": "Aaron Filsons handgemachte Keramik gibt es bei <studio>Updraft Pottery Studio</studio> in Tacoma, Washington. Schauen Sie sich die Arbeiten an und bestellen Sie ein Stück, wenn eines Sie anspricht."
+  },
+  "privacy": {
+    "title": "Datenschutz",
+    "lead": "Stand: Oktober 2026.",
+    "shortHeading": "Kurz gesagt",
+    "short": "Glazecalc speichert, was für den Betrieb Ihres Kontos nötig ist, und nichts weiter. Es gibt keine Werbung, keine Webanalyse, keine Tracking-Cookies und keine Skripte von Dritten. Ihre Daten werden nie verkauft oder weitergegeben.",
+    "storedHeading": "Was gespeichert wird",
+    "storedAccount": "<b>Ihr Konto:</b> Ihre E-Mail-Adresse und Ihr Passwort, das nur als Einweg-Hash (bcrypt) gespeichert wird, nie als das Passwort selbst.",
+    "storedTrial": "<b>Ein Testzugang („Jetzt ausprobieren“):</b> keine E-Mail-Adresse und kein Passwort, nur ein erzeugter Name wie „speckled quiet kilns“. Ein Testzugang und alles darin Gespeicherte werden 14 Tage nach dem Start automatisch gelöscht, es sei denn, Sie erstellen ein Konto, um sie zu behalten.",
+    "storedSaved": "<b>Was Sie speichern:</b> Ihre Rezepte, Rohstoffe, Zusätze, Notizen, Brennprotokolle und Tipps. Wer sonst Glazecalc nutzt, kann sie nicht sehen.",
+    "storedResets": "<b>Anfragen zum Zurücksetzen des Passworts:</b> ein Fingerabdruck jedes Links zum Zurücksetzen (nicht der Link selbst), der automatisch gelöscht wird, wenn der Link 30 Minuten später abläuft.",
+    "storedBrowser": "<b>In Ihrem Browser:</b> ein Cookie, <code>glazecalc_session</code>, das Sie angemeldet hält. Es enthält Ihr Anmelde-Token, Skripte auf der Seite können es nicht lesen, es wird nur an den eigenen Server von Glazecalc gesendet, und es gilt 7 Tage (14 bei einem Testzugang). Im lokalen Speicher (Local Storage) steht ein Vermerk, dass Sie angemeldet sind, und während eines Testzugangs dessen Name und Enddatum. Beim Abmelden wird beides entfernt.",
+    "emailHeading": "E-Mail",
+    "email": "Glazecalc sendet nur dann E-Mails, wenn Sie das Zurücksetzen Ihres Passworts anfordern und wenn sich Ihr Passwort ändert. Sie werden über Amazon Simple Email Service versendet. Es gibt keinen Newsletter und keine Werbe-E-Mails.",
+    "hostingHeading": "Server-Logs, Backups und Hosting",
+    "logs": "Der Webserver protokolliert jede Anfrage, einschließlich Ihrer IP-Adresse, in einem Log, das 14 Tage aufbewahrt wird, um die Website zu betreiben und abzusichern.",
+    "backups": "Verschlüsselte Backups der Datenbank werden 30 Tage aufbewahrt und Kopien der Serverfestplatte 7 Tage, damit die Website nach einem Ausfall wiederhergestellt werden kann.",
+    "hosting": "Alles wird von Amazon Web Services in den Vereinigten Staaten (Oregon) gehostet.",
+    "deletingHeading": "Ihre Daten löschen",
+    "deleting": "Sie können Ihr Konto auf Ihrer <account>Kontoseite</account> löschen. Damit werden Ihr Konto und alles, was Sie gespeichert haben, sofort entfernt; „Testzugang verwerfen“ tut dasselbe für einen Testzugang. Kopien in Backups verschwinden, wenn die Backups ablaufen, innerhalb von 30 Tagen.",
+    "questionsHeading": "Fragen",
+    "questions": "Stellen Sie Ihre Frage, indem Sie <issues>ein Issue auf GitHub eröffnen</issues>. Wenn sich diese Datenschutzhinweise ändern, ändert sich auch das Datum oben auf dieser Seite."
+  },
+  "notFound": {
+    "heading": "Seite nicht gefunden",
+    "text": "Unter dieser Adresse gibt es keine Seite. Sie wurde vielleicht verschoben, oder der Link ist falsch geschrieben.",
+    "start": "Zur Startseite"
+  },
+  "advice": {
+    "title": "Glasurtipps",
+    "lead": "Praktische Tipps zum Anrühren, Glasieren und Brennen, dazu Ihre eigenen Tipps.",
+    "signUp": "<signup>Erstellen Sie ein kostenloses Konto</signup> oder <signin>melden Sie sich an</signin>, um eigene Tipps zu speichern.",
+    "generalHeading": "Allgemeine Tipps",
+    "tags": "Schlagwörter: {list}",
+    "addHeading": "Eigene Tipps hinzufügen",
+    "titleLabel": "Titel:",
+    "tagsLabel": "Schlagwörter:",
+    "contentLabel": "Inhalt des Tipps:",
+    "save": "Speichern",
+    "mineHeading": "Meine Tipps",
+    "nothingSaved": "Noch nichts gespeichert.",
+    "titleMissing": "Geben Sie dem Tipp einen Titel.",
+    "contentMissing": "Schreiben Sie den Tipp.",
+    "fetchFailed": "Beim Abrufen der Tipps ist ein Fehler aufgetreten.",
+    "standardFetchFailed": "Beim Abrufen der Tipps vom Server ist ein Fehler aufgetreten.",
+    "saved": "Tipp erfolgreich hinzugefügt.",
+    "saveFailed": "Beim Senden des Tipps ist ein Fehler aufgetreten."
+  }
+}

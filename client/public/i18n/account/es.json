@@ -1,0 +1,236 @@
+{
+  "auth": {
+    "signInHeading": "Iniciar sesión",
+    "keepHeading": "Conservar su trabajo",
+    "signUpHeading": "Crear su cuenta",
+    "signInLead": "Le damos de nuevo la bienvenida a su cuaderno de esmaltes.",
+    "keepLead": "Conserve todo lo que ha hecho como {name}: añada su correo electrónico y una contraseña. Sigue siendo gratuito.",
+    "signUpLead": "Gratuito. Sus recetas, materiales y notas se guardan en privado en su cuenta.",
+    "trialNote": "¿Ya tiene una cuenta? Al iniciar sesión, lo que ha hecho como {name} pasa a ella. ¿Primera vez aquí? En ese caso, <signup>cree una cuenta</signup> para conservarlo.",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "passwordHint": "Al menos 8 caracteres.",
+    "confirmation": "Confirmar la contraseña",
+    "passwordMissing": "Introduzca su contraseña.",
+    "createAccount": "Crear la cuenta",
+    "signIn": "Iniciar sesión",
+    "haveAccount": "¿Ya tiene una cuenta? <signin>Iniciar sesión</signin>",
+    "forgot": "¿Ha olvidado su contraseña? Restablézcala",
+    "newHere": "¿Primera vez aquí? <signup>Crear una cuenta gratuita</signup>",
+    "signUpFailed": "Error: no se ha podido crear la cuenta.",
+    "signInFailed": "Error: no se ha podido iniciar sesión."
+  },
+  "forgot": {
+    "heading": "Restablecer la contraseña",
+    "checkInbox": "Revise su bandeja de entrada y la carpeta de correo no deseado. Si no llega nada, compruebe la dirección y vuelva a pedirlo.",
+    "intro": "Introduzca el correo electrónico de su cuenta y le enviaremos un enlace para elegir una contraseña nueva.",
+    "email": "Correo electrónico:",
+    "send": "Enviar el enlace de restablecimiento",
+    "back": "Volver al inicio de sesión",
+    "failed": "Error: no se ha podido enviar el correo para restablecer la contraseña. Inténtelo de nuevo."
+  },
+  "reset": {
+    "heading": "Elegir una contraseña nueva",
+    "signIn": "Iniciar sesión",
+    "incomplete": "Esta página necesita el enlace de un correo para restablecer la contraseña, y este está incompleto.",
+    "askAgain": "Pedir un enlace nuevo",
+    "password": "Contraseña nueva:",
+    "confirmation": "Confirmar la contraseña nueva:",
+    "save": "Guardar la contraseña nueva",
+    "hint": "Al menos 8 caracteres. Se cerrará la sesión en todos los dispositivos conectados a la cuenta.",
+    "failed": "Error: no se ha podido cambiar la contraseña. Inténtelo de nuevo."
+  },
+  "account": {
+    "trialTitle": "Su periodo de prueba",
+    "trialLead": "Está probando Glazecalc como {name}.",
+    "keepHeading": "Conservar su trabajo",
+    "keepText": "Este periodo de prueba y todo lo que contiene se eliminan el {date}. Cree una cuenta gratuita para conservarlos: sus recetas, materiales y notas se quedan tal como están, y {name} sigue siendo su nombre visible.",
+    "createAccount": "Crear una cuenta",
+    "title": "Su cuenta",
+    "signedInAs": "Ha iniciado sesión como {email}.",
+    "changeHeading": "Cambiar la contraseña",
+    "current": "Contraseña actual",
+    "currentMissing": "Introduzca su contraseña actual.",
+    "password": "Contraseña nueva",
+    "passwordHint": "Al menos 8 caracteres. Se cerrará la sesión en los demás dispositivos conectados a esta cuenta.",
+    "confirmation": "Confirmar la contraseña nueva",
+    "change": "Cambiar la contraseña",
+    "changeFailed": "Error: no se ha podido cambiar la contraseña. Inténtelo de nuevo.",
+    "deleteHeading": "Eliminar su cuenta",
+    "deleteText": "Así se eliminan su cuenta y todo lo que haya guardado: recetas, materiales, aditivos, notas, registros de cocción y consejos. No se puede deshacer.",
+    "deletePassword": "Su contraseña, para confirmar",
+    "deletePasswordMissing": "Introduzca su contraseña para confirmar.",
+    "delete": "Eliminar mi cuenta",
+    "deleteFailed": "Error: no se ha podido eliminar la cuenta. Inténtelo de nuevo."
+  },
+  "settings": {
+    "heading": "Ajustes",
+    "intro": "Se guardan con su cuenta, así que se aplican en todos los dispositivos.",
+    "saveFailed": "No se ha podido guardar el ajuste. Inténtelo de nuevo.",
+    "language": {
+      "legend": "Idioma",
+      "help": "El idioma de la aplicación, de las guías y de sus correos electrónicos. Al cambiarlo, esta página se abre en ese idioma.",
+      "saved": "Guardado: {language}."
+    },
+    "region": {
+      "legend": "Dónde trabaja",
+      "none": {
+        "label": "Sin elegir",
+        "saved": "Guardado: ninguna región; los valores predeterminados dependen de su navegador."
+      },
+      "saved": "Guardado: {region}.",
+      "help": "Los materiales que se venden allí y los valores predeterminados de números, fechas, temperaturas y conos que aparecen más abajo. Mientras no elija, dependen del idioma de su navegador."
+    },
+    "format": {
+      "legend": "Números y fechas",
+      "auto": {
+        "label": "Según mi idioma y mi región",
+        "saved": "Guardado: números y fechas tal como los escriben su idioma y su región."
+      },
+      "saved": "Guardado: números y fechas como en {language}.",
+      "help": "Cómo se escriben los números y las fechas: 12,345.6 o 12.345,6, y el orden del día y el mes."
+    },
+    "decimalMark": {
+      "legend": "Escritura de cantidades",
+      "either": {
+        "label": "Coma o punto para los decimales",
+        "example": "12,5 o 12.5",
+        "saved": "Guardado: las cantidades se pueden escribir con coma o con punto."
+      },
+      "comma": {
+        "label": "Coma para los decimales",
+        "saved": "Guardado: las cantidades se escriben con coma para los decimales."
+      },
+      "point": {
+        "label": "Punto para los decimales",
+        "saved": "Guardado: las cantidades se escriben con punto para los decimales."
+      },
+      "help": "Con cualquiera de los dos, una cantidad como 1.250 se lee según la forma de escribir los números elegida arriba."
+    },
+    "temperature": {
+      "legend": "Temperaturas",
+      "celsius": {
+        "label": "Celsius",
+        "saved": "Guardado: temperaturas en °C."
+      },
+      "fahrenheit": {
+        "label": "Fahrenheit",
+        "saved": "Guardado: temperaturas en °F."
+      },
+      "help": "Mientras no elija, depende de su región: °F en Estados Unidos y °C en el resto."
+    },
+    "cones": {
+      "legend": "Cocción",
+      "orton": {
+        "label": "Por conos Orton",
+        "example": "cono 04, cono 6",
+        "saved": "Guardado: cocción por conos Orton."
+      },
+      "temperature": {
+        "label": "Por temperatura, como el programa de un programador de horno",
+        "saved": "Guardado: cocción por temperatura."
+      },
+      "help": "Mientras no elija, depende de su región: conos Orton en EE. UU., Reino Unido, Irlanda, Australia y Nueva Zelanda; temperatura en el resto de Europa."
+    },
+    "density": {
+      "legend": "Densidad del esmalte",
+      "sg": {
+        "label": "Densidad relativa",
+        "saved": "Guardado: densidad del esmalte como densidad relativa."
+      },
+      "baume": {
+        "label": "Grados Baumé, con un densímetro",
+        "saved": "Guardado: densidad del esmalte en grados Baumé."
+      },
+      "pint": {
+        "label": "Peso por pinta: las onzas en una pinta imperial",
+        "saved": "Guardado: densidad del esmalte como peso por pinta."
+      },
+      "help": "Cómo indican las guías lo espeso que está un esmalte. Mientras no elija, depende de su región: grados Baumé en Italia y densidad relativa en el resto."
+    },
+    "theme": {
+      "legend": "Claro u oscuro",
+      "system": {
+        "label": "Según el ajuste de este dispositivo",
+        "saved": "Guardado: claro u oscuro según el ajuste de cada dispositivo."
+      },
+      "light": {
+        "label": "Claro",
+        "saved": "Guardado: siempre claro."
+      },
+      "dark": {
+        "label": "Oscuro",
+        "saved": "Guardado: siempre oscuro."
+      },
+      "help": "Las recetas impresas salen siempre en negro sobre blanco."
+    },
+    "palette": {
+      "legend": "Colores",
+      "saved": "Guardado: la paleta {palette} para botones y enlaces.",
+      "help": "Para botones, enlaces y pestañas, con nombres de esmaltes. Cada una se lee con facilidad tanto en claro como en oscuro."
+    },
+    "weightUnit": {
+      "legend": "Pesos de la tanda",
+      "grams": {
+        "label": "Gramos",
+        "saved": "Guardado: los pesos de la tanda, en gramos."
+      },
+      "pounds": {
+        "label": "Libras y onzas",
+        "saved": "Guardado: los pesos de la tanda, en libras y onzas."
+      },
+      "help": "Para las tandas impresas."
+    },
+    "gramPrecision": {
+      "legend": "Gramos en las tandas impresas",
+      "single": {
+        "label": "Con una décima de gramo",
+        "saved": "Guardado: gramos con una décima."
+      },
+      "full": {
+        "label": "Precisión completa",
+        "saved": "Guardado: gramos con precisión completa, hasta 5 decimales."
+      },
+      "help": "Con una décima, las cantidades de menos de 10 g siguen mostrando las centésimas (2,35 g), para los colorantes de las tandas de prueba pequeñas."
+    },
+    "lead": {
+      "legend": "Plomo",
+      "off": {
+        "label": "Desactivado: no añadir nunca plomo a una receta ni sugerirlo",
+        "saved": "Guardado: nunca se añade plomo a una receta ni se sugiere."
+      },
+      "on": {
+        "label": "Activado: se pueden añadir y sugerir materiales con plomo",
+        "saved": "Guardado: se pueden añadir y sugerir materiales con plomo."
+      },
+      "help": "El plomo es tóxico si se respira o se traga y se acumula en el cuerpo, y un esmalte de plomo puede cederlo a la comida y la bebida; ningún cálculo puede decir si una pieza cocida lo cede. Con el plomo desactivado, las recetas que ya lo llevan se siguen abriendo tal como estaban.",
+      "warning": "Use el plomo solo en forma de frita, nunca sin fritar: ni minio, ni albayalde, ni masicote, ni litargirio. Mézclelo en húmedo, no lo aplique nunca a pistola, lleve un equipo de protección respiratoria y limpie en húmedo. Mantenga las piezas con esmalte de plomo lejos de la comida y la bebida, salvo que la pieza cocida haya superado un ensayo de cesión en laboratorio.",
+      "turnOn": "Activar el plomo",
+      "keepOff": "Mantenerlo desactivado"
+    },
+    "englishTerms": {
+      "legend": "Términos en inglés",
+      "off": {
+        "label": "Desactivado",
+        "saved": "Guardado: sin términos en inglés."
+      },
+      "on": {
+        "label": "Mostrar el inglés tras los términos clave",
+        "saved": "Guardado: el inglés se muestra tras los términos clave."
+      },
+      "help": "Para leer fuentes en inglés, como Digitalfire, junto a esta: los términos clave llevan su nombre en inglés entre paréntesis."
+    },
+    "notice": {
+      "legend": "Aviso de traducción",
+      "shown": {
+        "label": "Visible",
+        "saved": "Guardado: el aviso se muestra."
+      },
+      "hidden": {
+        "label": "Oculto",
+        "saved": "Guardado: el aviso se oculta. Una línea del aviso se mantiene en las guías de seguridad."
+      },
+      "help": "La nota al principio de cada página que dice que se ha traducido mediante IA, con una forma de sugerir una corrección."
+    }
+  }
+}

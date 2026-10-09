@@ -1,5 +1,6 @@
 import { Component, OnInit, inject, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { TranslocoDirective, translate } from '@jsverse/transloco';
 import { ApiResourceFactory } from '../../core/api-resource.service';
 import { errorMessage } from '../../core/error-message';
 import { Note } from '../../core/models';
@@ -11,16 +12,16 @@ import { Removal, RemoveButton } from '../../shared/remove-button';
 
 @Component({
   selector: 'gc-notes-page',
-  imports: [FieldCheck, FormsModule, NoticesList, PageHeader, RemoveButton],
-  template: `
-    <gc-page-header title="Notes" lead="Anything else worth remembering about your glazes." />
+  imports: [FieldCheck, FormsModule, NoticesList, PageHeader, RemoveButton, TranslocoDirective],
+  template: `<ng-container *transloco="let t">
+    <gc-page-header [title]="t('notebook.notes.title')" [lead]="t('notebook.notes.lead')" />
     <gc-notices [notices]="notices" />
 
     <section class="help-text">
-      <p>This is the notes page. You can take notes and save them here.</p>
+      <p>{{ t('notebook.notes.intro') }}</p>
       <form (ngSubmit)="save()">
         <div class="mb-3">
-          <label for="title">Title: </label>
+          <label for="title">{{ t('notebook.notes.titleLabel') }} </label>
           <input
             id="title"
             type="text"
@@ -32,7 +33,7 @@ import { Removal, RemoveButton } from '../../shared/remove-button';
           />
         </div>
         <div class="mb-3">
-          <label for="content">Your Note: </label>
+          <label for="content">{{ t('notebook.notes.content') }} </label>
           <textarea
             id="content"
             name="content"
@@ -44,13 +45,15 @@ import { Removal, RemoveButton } from '../../shared/remove-button';
             gcFieldName="content"
           ></textarea>
         </div>
-        <button type="submit" class="btn btn-primary" [disabled]="saving.active()">Save</button>
+        <button type="submit" class="btn btn-primary" [disabled]="saving.active()">
+          {{ t('notebook.notes.save') }}
+        </button>
       </form>
     </section>
     <br />
 
     <section class="tech-info">
-      <h3>My saved notes:</h3>
+      <h3>{{ t('notebook.notes.mineHeading') }}</h3>
       <ul class="my-notes">
         @for (note of notes(); track note._id) {
           <li>
@@ -66,7 +69,7 @@ import { Removal, RemoveButton } from '../../shared/remove-button';
         }
       </ul>
     </section>
-  `
+  </ng-container>`
 })
 export class NotesPage implements OnInit {
   private readonly api = inject(ApiResourceFactory).for<Note>('notes');
@@ -76,17 +79,22 @@ export class NotesPage implements OnInit {
   protected readonly title = signal('');
   protected readonly content = signal('');
   protected readonly checks = new FieldChecks(() => ({
-    title: required(this.title, 'Give the note a title.'),
-    content: required(this.content, 'Write the note.')
+    title: required(this.title, translate('notebook.notes.titleMissing')),
+    content: required(this.content, translate('notebook.notes.contentMissing'))
   }));
   protected readonly notes = signal<Note[]>([]);
-  protected readonly removal = new Removal(this.api, this.notes, this.notices, (note) => note.title || 'Untitled note');
+  protected readonly removal = new Removal(
+    this.api,
+    this.notes,
+    this.notices,
+    (note) => note.title || translate('notebook.notes.untitled')
+  );
 
   async ngOnInit(): Promise<void> {
     try {
       this.notes.set(await this.api.getAll());
     } catch {
-      this.notices.error('There was an error getting the notes information.');
+      this.notices.error(translate('notebook.notes.fetchFailed'));
     }
   }
 
@@ -104,11 +112,11 @@ export class NotesPage implements OnInit {
         relatedId: 'general notes'
       });
       this.notes.update((list) => [...list, saved]);
-      this.notices.success('Success in adding the note to the server.');
+      this.notices.success(translate('notebook.notes.saved'));
       this.title.set('');
       this.content.set('');
     } catch (err) {
-      this.notices.error(errorMessage(err, 'Error: the request to the server failed.'));
+      this.notices.error(errorMessage(err, translate('notebook.notes.saveFailed')));
     }
   }
 }

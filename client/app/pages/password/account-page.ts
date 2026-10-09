@@ -1,7 +1,8 @@
-import { DatePipe } from '@angular/common';
+import { DatePipe } from '../../shared/format-pipes';
 import { Component, inject, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Router, RouterLink } from '@angular/router';
+import { TranslocoDirective, translate } from '@jsverse/transloco';
 import { AuthService } from '../../core/auth.service';
 import { errorMessage } from '../../core/error-message';
 import { FieldCheck, FieldChecks, filled, newPassword, samePassword } from '../../shared/field-checks';
@@ -16,30 +17,43 @@ import { SettingsSection } from './settings-section';
  */
 @Component({
   selector: 'gc-account-page',
-  imports: [DatePipe, FieldCheck, FormsModule, NoticesList, PageHeader, RouterLink, SettingsSection],
-  template: `
+  imports: [
+    DatePipe,
+    FieldCheck,
+    FormsModule,
+    NoticesList,
+    PageHeader,
+    RouterLink,
+    SettingsSection,
+    TranslocoDirective
+  ],
+  template: `<ng-container *transloco="let t">
     @if (auth.trial(); as trial) {
-      <gc-page-header title="Your trial" [lead]="'You are trying Glazecalc as ' + trial.name + '.'" />
+      <gc-page-header
+        [title]="t('account.account.trialTitle')"
+        [lead]="t('account.account.trialLead', { name: trial.name })"
+      />
       <section class="auth-text trial-account">
-        <h2>Keep your work</h2>
+        <h2>{{ t('account.account.keepHeading') }}</h2>
         <p>
-          This trial and everything in it are removed on {{ trial.expiresAt | date: 'EEEE, MMMM d' }}. Create a free
-          account to keep them: your recipes, materials and notes stay just as they are, and {{ trial.name }} stays your
-          display name.
+          {{ t('account.account.keepText', { date: (trial.expiresAt | gcDate: 'weekday'), name: trial.name }) }}
         </p>
-        <a routerLink="/signup" class="btn btn-primary">Create an account</a>
+        <a routerLink="/signup" class="btn btn-primary">{{ t('account.account.createAccount') }}</a>
       </section>
       <gc-settings />
     } @else {
-      <gc-page-header title="Your account" [lead]="auth.email() ? 'Signed in as ' + auth.email() + '.' : ''" />
+      <gc-page-header
+        [title]="t('account.account.title')"
+        [lead]="auth.email() ? t('account.account.signedInAs', { email: auth.email() }) : ''"
+      />
       <gc-notices [notices]="notices" />
       <gc-settings />
 
       <section class="auth-text">
-        <h2>Change your password</h2>
+        <h2>{{ t('account.account.changeHeading') }}</h2>
         <form (ngSubmit)="submit()" class="account-form">
           <div class="mb-3">
-            <label for="current" class="form-label">Current password</label>
+            <label for="current" class="form-label">{{ t('account.account.current') }}</label>
             <input
               id="current"
               type="password"
@@ -53,7 +67,7 @@ import { SettingsSection } from './settings-section';
             />
           </div>
           <div class="mb-3">
-            <label for="password" class="form-label">New password</label>
+            <label for="password" class="form-label">{{ t('account.account.password') }}</label>
             <input
               id="password"
               type="password"
@@ -66,12 +80,10 @@ import { SettingsSection } from './settings-section';
               [gcField]="changeChecks"
               gcFieldName="password"
             />
-            <div class="form-text">
-              At least 8 characters. Other devices signed in to this account will be signed out.
-            </div>
+            <div class="form-text">{{ t('account.account.passwordHint') }}</div>
           </div>
           <div class="mb-3">
-            <label for="confirmation" class="form-label">Confirm new password</label>
+            <label for="confirmation" class="form-label">{{ t('account.account.confirmation') }}</label>
             <input
               id="confirmation"
               type="password"
@@ -84,19 +96,18 @@ import { SettingsSection } from './settings-section';
               gcFieldName="confirmation"
             />
           </div>
-          <button type="submit" class="btn btn-primary" [attr.aria-disabled]="busy() || null">Change password</button>
+          <button type="submit" class="btn btn-primary" [attr.aria-disabled]="busy() || null">
+            {{ t('account.account.change') }}
+          </button>
         </form>
       </section>
 
       <section class="auth-text">
-        <h2>Delete your account</h2>
-        <p>
-          This removes your account and everything you saved: recipes, materials, additives, notes, firing logs and
-          advice. It cannot be undone.
-        </p>
+        <h2>{{ t('account.account.deleteHeading') }}</h2>
+        <p>{{ t('account.account.deleteText') }}</p>
         <form (ngSubmit)="deleteAccount()" class="account-form">
           <div class="mb-3">
-            <label for="delete-password" class="form-label">Your password, to confirm</label>
+            <label for="delete-password" class="form-label">{{ t('account.account.deletePassword') }}</label>
             <input
               id="delete-password"
               type="password"
@@ -110,12 +121,12 @@ import { SettingsSection } from './settings-section';
             />
           </div>
           <button type="submit" class="btn btn-outline-danger" [attr.aria-disabled]="busy() || null">
-            Delete my account
+            {{ t('account.account.delete') }}
           </button>
         </form>
       </section>
     }
-  `,
+  </ng-container>`,
   styles: `
     .account-form {
       max-width: 26rem;
@@ -132,12 +143,12 @@ export class AccountPage {
   protected readonly confirmation = signal('');
   protected readonly deletePassword = signal('');
   protected readonly changeChecks = new FieldChecks(() => ({
-    current: filled(this.current, 'Enter your current password.'),
+    current: filled(this.current, translate('account.account.currentMissing')),
     password: newPassword(this.password),
     confirmation: samePassword(this.confirmation, this.password)
   }));
   protected readonly deleteChecks = new FieldChecks(() => ({
-    deletePassword: filled(this.deletePassword, 'Enter your password to confirm.')
+    deletePassword: filled(this.deletePassword, translate('account.account.deletePasswordMissing'))
   }));
   protected readonly busy = signal(false);
 
@@ -151,7 +162,7 @@ export class AccountPage {
       this.confirmation.set('');
     } catch (err) {
       if (this.changeChecks.reportServer(err)) return;
-      this.notices.error(errorMessage(err, 'Error: could not change the password. Please try again.'));
+      this.notices.error(errorMessage(err, translate('account.account.changeFailed')));
     } finally {
       this.busy.set(false);
     }
@@ -167,7 +178,7 @@ export class AccountPage {
       this.deletePassword.set('');
       // The server calls the password it checks "password".
       if (this.deleteChecks.reportServer(err, { password: 'deletePassword' })) return;
-      this.notices.error(errorMessage(err, 'Error: could not delete the account. Please try again.'));
+      this.notices.error(errorMessage(err, translate('account.account.deleteFailed')));
     } finally {
       this.busy.set(false);
     }

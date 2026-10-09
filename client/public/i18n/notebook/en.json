@@ -1,0 +1,88 @@
+{
+  "home": {
+    "title": "Your studio notebook",
+    "signedInAs": "Signed in as {email}.",
+    "trying": "Trying Glazecalc as {name}. Start with a recipe.",
+    "welcomeBack": "Pick up where you left off.",
+    "sections": {
+      "recipe": {
+        "title": "Recipes",
+        "text": "Build a glaze from materials and amounts, see its unity formula, and save it."
+      },
+      "material": {
+        "title": "Materials",
+        "text": "Add raw materials of your own, from a chemical formula or a supplier’s analysis."
+      },
+      "additive": {
+        "title": "Additives and colorants",
+        "text": "Keep the colorants and opacifiers you add on top of a base glaze."
+      },
+      "firing": {
+        "title": "Firing logs",
+        "text": "Record times, temperatures and cones for each firing."
+      },
+      "notes": {
+        "title": "Notes",
+        "text": "Keep test results and anything else worth remembering."
+      },
+      "advice": {
+        "title": "Glaze advice",
+        "text": "Tips on mixing, glazing and firing, and your own advice."
+      },
+      "guides": {
+        "title": "Guides",
+        "text": "From what a glaze is to firing it, and keeping everyone safe on the way."
+      }
+    },
+    "newHere": "New to unity formulas? The <advice>advice page</advice> explains the basics, and the <about>about page</about> says how Glazecalc works."
+  },
+  "firing": {
+    "title": "Firing logs",
+    "lead": "Record each firing: times, temperatures, cones and kiln notes.",
+    "titleLabel": "Title of Firing:",
+    "kiln": "Kiln:",
+    "date": "Date of firing:",
+    "notes": "Notes on the firing:",
+    "fieldSelect": "Select and add fields to the firing record :",
+    "addField": "Add the field",
+    "included": "The fields you have included :",
+    "fieldName": "Field name : {name}",
+    "moveLeft": "Move field left",
+    "moveRight": "Move field right",
+    "removeField": "Remove the field",
+    "addRow": "Add a row to the firing table",
+    "recordHeading": "Record the Firing",
+    "rowActions": "Row actions",
+    "cell": "{field} row {row}",
+    "removeRow": "Remove row",
+    "save": "Save",
+    "storedHeading": "My stored firings:",
+    "stored": "Title: {title}, Using kiln: {kiln}, Date: {date}",
+    "storedNotes": "Notes: {notes}",
+    "titleMissing": "Give the firing a title.",
+    "fieldsMissing": "Add at least one field to record, such as {example}.",
+    "chooseField": "Choose a field to add, then Add the field.",
+    "fetchFailed": "There was an error in getting the firing records information.",
+    "saved": "Success in adding the firing record to the server.",
+    "saveFailed": "Error: the request to the server failed."
+  },
+  "notes": {
+    "title": "Notes",
+    "lead": "Anything else worth remembering about your glazes.",
+    "intro": "This is the notes page. You can take notes and save them here.",
+    "titleLabel": "Title:",
+    "content": "Your Note:",
+    "save": "Save",
+    "mineHeading": "My saved notes:",
+    "titleMissing": "Give the note a title.",
+    "contentMissing": "Write the note.",
+    "untitled": "Untitled note",
+    "fetchFailed": "There was an error getting the notes information.",
+    "saved": "Success in adding the note to the server.",
+    "saveFailed": "Error: the request to the server failed."
+  },
+  "trash": {
+    "title": "Trash",
+    "comingSoon": "The trash functionality is coming soon in the next version of Glazecalc. Until then, use the delete / remove with care: once it is gone the info is lost."
+  }
+}

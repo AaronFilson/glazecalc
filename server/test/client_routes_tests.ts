@@ -27,7 +27,7 @@ describe('client routes', function () {
     expect(file).to.have.status(404);
     const api = await site().get('/api/no-such-thing');
     expect(api).to.have.status(404);
-    expect(api.body).to.eql({ msg: 'Not found' });
+    expect(api.body).to.eql({ code: 'not-found', msg: 'Not found' });
   });
 
   it('does not answer other methods with the page', async () => {

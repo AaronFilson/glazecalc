@@ -1,55 +1,70 @@
 import { Component, computed, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { TranslocoDirective, translate } from '@jsverse/transloco';
+import { marker } from '@jsverse/transloco-keys-manager/marker';
 import { AuthService } from '../../core/auth.service';
+import { RichText } from '../../i18n/rich-text';
 import { PageHeader } from '../../shared/page-header';
 
+// Each section's title and text are the keys of their messages, translated where they are shown.
 const SECTIONS = [
   {
     path: '/recipe',
-    title: 'Recipes',
-    text: 'Build a glaze from materials and amounts, see its unity formula, and save it.'
+    title: marker('notebook.home.sections.recipe.title'),
+    text: marker('notebook.home.sections.recipe.text')
   },
   {
     path: '/material',
-    title: 'Materials',
-    text: 'Add raw materials of your own, from a chemical formula or a supplier’s analysis.'
+    title: marker('notebook.home.sections.material.title'),
+    text: marker('notebook.home.sections.material.text')
   },
   {
     path: '/additive',
-    title: 'Additives and colorants',
-    text: 'Keep the colorants and opacifiers you add on top of a base glaze.'
+    title: marker('notebook.home.sections.additive.title'),
+    text: marker('notebook.home.sections.additive.text')
   },
-  { path: '/firing', title: 'Firing logs', text: 'Record times, temperatures and cones for each firing.' },
-  { path: '/notes', title: 'Notes', text: 'Keep test results and anything else worth remembering.' },
-  { path: '/advice', title: 'Glaze advice', text: 'Tips on mixing, glazing and firing, and your own advice.' },
+  {
+    path: '/firing',
+    title: marker('notebook.home.sections.firing.title'),
+    text: marker('notebook.home.sections.firing.text')
+  },
+  {
+    path: '/notes',
+    title: marker('notebook.home.sections.notes.title'),
+    text: marker('notebook.home.sections.notes.text')
+  },
+  {
+    path: '/advice',
+    title: marker('notebook.home.sections.advice.title'),
+    text: marker('notebook.home.sections.advice.text')
+  },
   {
     path: '/guides',
-    title: 'Guides',
-    text: 'From what a glaze is to firing it, and keeping everyone safe on the way.'
+    title: marker('notebook.home.sections.guides.title'),
+    text: marker('notebook.home.sections.guides.text')
   }
 ];
 
 /** The signed-in start page: where to go next. */
 @Component({
   selector: 'gc-home-page',
-  imports: [PageHeader, RouterLink],
-  template: `
-    <gc-page-header title="Your studio notebook" [lead]="greeting()" />
+  imports: [PageHeader, RichText, RouterLink, TranslocoDirective],
+  template: `<ng-container *transloco="let t">
+    <gc-page-header [title]="t('notebook.home.title')" [lead]="greeting()" />
     <ul class="home-sections">
       @for (section of sections; track section.path) {
         <li>
           <a [routerLink]="section.path" class="panel home-card">
-            <h2>{{ section.title }}</h2>
-            <p>{{ section.text }}</p>
+            <h2>{{ t(section.title) }}</h2>
+            <p>{{ t(section.text) }}</p>
           </a>
         </li>
       }
     </ul>
     <p class="muted">
-      New to unity formulas? The <a routerLink="/advice">advice page</a> explains the basics, and the
-      <a routerLink="/about">about page</a> says how Glazecalc works.
+      <gc-rich [text]="t('notebook.home.newHere')" [links]="{ advice: '/advice', about: '/about' }" />
     </p>
-  `,
+  </ng-container>`,
   styles: `
     .home-sections {
       display: grid;
@@ -89,8 +104,8 @@ export class HomePage {
   protected readonly greeting = computed(() => {
     const email = this.auth.email();
     const trial = this.auth.trial();
-    if (email) return 'Signed in as ' + email + '.';
-    if (trial) return 'Trying Glazecalc as ' + trial.name + '. Start with a recipe.';
-    return 'Pick up where you left off.';
+    if (email) return translate('notebook.home.signedInAs', { email });
+    if (trial) return translate('notebook.home.trying', { name: trial.name });
+    return translate('notebook.home.welcomeBack');
   });
 }

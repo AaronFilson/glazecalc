@@ -1,6 +1,7 @@
 import { provideLocationMocks } from '@angular/common/testing';
 import { TestBed } from '@angular/core/testing';
 import { Router } from '@angular/router';
+import { TranslocoService } from '@jsverse/transloco';
 import { Additive, Material, Recipe } from '../../core/models';
 import { PreferencesService } from '../../core/preferences.service';
 import { answer, API, fieldProblem, httpMock, settle, testProviders, text } from '../../testing/test-providers';
@@ -173,6 +174,7 @@ describe('RecipePage', () => {
   });
 
   it('leaves out additives it cannot count, and borrows chemistry where one says to', () => {
+    TestBed.inject(TranslocoService);
     const base = [
       { ...WHITING, amount: '20' },
       { ...SILICA, amount: '30' }
@@ -198,6 +200,7 @@ describe('RecipePage', () => {
   });
 
   it("counts a colorant saved by an older version with the library's chemistry for it, or leaves it out", () => {
+    TestBed.inject(TranslocoService);
     const base = [
       { ...WHITING, amount: '20' },
       { ...SILICA, amount: '30' }
@@ -550,7 +553,7 @@ describe('RecipePage', () => {
     expect(document.activeElement?.id).toBe('material-amount-0');
     page['setAmount'](0, '-2');
     await tryToSave('');
-    expect(fieldProblem(fixture, 'material-amount-0')).toBe('Enter a number, such as 12.5, with a point for decimals.');
+    expect(fieldProblem(fixture, 'material-amount-0')).toBe('Enter a number, such as 12.5.');
     page['setAmount'](0, '0');
     page['addMaterial'](SILICA);
     page['setAmount'](1, '30');
@@ -849,9 +852,7 @@ describe('RecipePage', () => {
       click(fixture, 'Print');
       await fixture.whenStable();
       expect(text(fixture, '.recipe-save-problem')).toBe('');
-      expect(fieldProblem(fixture, 'material-amount-0')).toBe(
-        'Enter a number, such as 12.5, with a point for decimals.'
-      );
+      expect(fieldProblem(fixture, 'material-amount-0')).toBe('Enter a number, such as 12.5.');
       expect(document.activeElement?.id).toBe('material-amount-0');
       expect(TestBed.inject(Router).url).toBe('/');
     });

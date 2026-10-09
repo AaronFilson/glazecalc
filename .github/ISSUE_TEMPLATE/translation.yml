@@ -1,0 +1,47 @@
+# The form the app's translation notice links to (docs/translating.md): the
+# language and page arrive filled in from the link.
+name: Suggest a better translation
+description: Something in Glazecalc reads wrong, or is unclear, in your language.
+title: '[Translation] '
+labels: ['translation']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you. Glazecalc is translated from English by AI and checked by people who use it.
+        You can write in your own language.
+  - type: input
+    id: language
+    attributes:
+      label: Language
+      description: The language of the page (filled in from the app).
+    validations:
+      required: true
+  - type: input
+    id: page
+    attributes:
+      label: Page
+      description: The address of the page (filled in from the app).
+    validations:
+      required: true
+  - type: textarea
+    id: wrong
+    attributes:
+      label: What reads wrong
+      description: Copy the words as they appear on the page.
+    validations:
+      required: true
+  - type: textarea
+    id: better
+    attributes:
+      label: A better way to say it
+      description: How a potter would say it, if you know. A reason helps too.
+  - type: dropdown
+    id: safety
+    attributes:
+      label: Could this mislead someone about safety?
+      options:
+        - 'No'
+        - 'Yes: it is about safety (poisons, dust, kilns, food use)'
+    validations:
+      required: true

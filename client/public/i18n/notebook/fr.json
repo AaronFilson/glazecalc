@@ -1,0 +1,88 @@
+{
+  "home": {
+    "title": "Votre carnet d’atelier",
+    "signedInAs": "Session ouverte : {email}.",
+    "trying": "Vous essayez Glazecalc sous le nom {name}. Commencez par une recette.",
+    "welcomeBack": "Reprenez là où vous en étiez.",
+    "sections": {
+      "recipe": {
+        "title": "Recettes",
+        "text": "Composez un émail à partir de matières et de quantités, consultez sa formule de Seger et enregistrez-le."
+      },
+      "material": {
+        "title": "Matières",
+        "text": "Ajoutez vos propres matières premières, à partir d’une formule chimique ou de l’analyse d’un fournisseur."
+      },
+      "additive": {
+        "title": "Additifs et colorants",
+        "text": "Conservez les colorants et opacifiants que vous ajoutez à un émail de base."
+      },
+      "firing": {
+        "title": "Relevés de cuisson",
+        "text": "Notez les heures, les températures et les cônes de chaque cuisson."
+      },
+      "notes": {
+        "title": "Notes",
+        "text": "Gardez les résultats d’essais et tout ce qui mérite d’être retenu."
+      },
+      "advice": {
+        "title": "Conseils sur les émaux",
+        "text": "Des astuces sur la préparation, l’émaillage et la cuisson, et vos propres conseils."
+      },
+      "guides": {
+        "title": "Guides",
+        "text": "De ce qu’est un émail jusqu’à sa cuisson, en protégeant tout le monde en chemin."
+      }
+    },
+    "newHere": "Vous découvrez les formules de Seger ? La <advice>page Conseils</advice> explique les bases, et la <about>page À propos</about> décrit le fonctionnement de Glazecalc."
+  },
+  "firing": {
+    "title": "Relevés de cuisson",
+    "lead": "Notez chaque cuisson : heures, températures, cônes et remarques sur le four.",
+    "titleLabel": "Titre de la cuisson :",
+    "kiln": "Four :",
+    "date": "Date de la cuisson :",
+    "notes": "Notes sur la cuisson :",
+    "fieldSelect": "Choisissez des champs et ajoutez-les au relevé de cuisson :",
+    "addField": "Ajouter le champ",
+    "included": "Les champs que vous avez inclus :",
+    "fieldName": "Nom du champ : {name}",
+    "moveLeft": "Déplacer le champ vers la gauche",
+    "moveRight": "Déplacer le champ vers la droite",
+    "removeField": "Retirer le champ",
+    "addRow": "Ajouter une ligne au tableau de cuisson",
+    "recordHeading": "Enregistrer la cuisson",
+    "rowActions": "Actions sur la ligne",
+    "cell": "{field}, ligne {row}",
+    "removeRow": "Retirer la ligne",
+    "save": "Enregistrer",
+    "storedHeading": "Mes cuissons enregistrées :",
+    "stored": "Titre : {title}, four utilisé : {kiln}, date : {date}",
+    "storedNotes": "Notes : {notes}",
+    "titleMissing": "Donnez un titre à la cuisson.",
+    "fieldsMissing": "Ajoutez au moins un champ à relever, par exemple {example}.",
+    "chooseField": "Choisissez un champ à ajouter, puis cliquez sur Ajouter le champ.",
+    "fetchFailed": "Impossible de récupérer les relevés de cuisson.",
+    "saved": "Opération réussie : relevé de cuisson ajouté sur le serveur.",
+    "saveFailed": "Erreur : la requête au serveur a échoué."
+  },
+  "notes": {
+    "title": "Notes",
+    "lead": "Tout ce qui mérite d’être retenu sur vos émaux.",
+    "intro": "Voici la page des notes. Vous pouvez y prendre des notes et les enregistrer.",
+    "titleLabel": "Titre :",
+    "content": "Votre note :",
+    "save": "Enregistrer",
+    "mineHeading": "Mes notes enregistrées :",
+    "titleMissing": "Donnez un titre à la note.",
+    "contentMissing": "Écrivez la note.",
+    "untitled": "Note sans titre",
+    "fetchFailed": "Impossible de récupérer les notes.",
+    "saved": "Opération réussie : note ajoutée sur le serveur.",
+    "saveFailed": "Erreur : la requête au serveur a échoué."
+  },
+  "trash": {
+    "title": "Corbeille",
+    "comingSoon": "La corbeille arrive bientôt, dans la prochaine version de Glazecalc. D’ici là, supprimez et retirez avec prudence : une fois effacées, les informations sont perdues."
+  }
+}

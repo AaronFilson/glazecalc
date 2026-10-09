@@ -6,6 +6,7 @@ import { sessionExpiredInterceptor } from './core/session-expired.interceptor';
 import { redirectLegacyHashUrl } from './core/legacy-hash-url';
 import { reloadIfCodeIsMissing } from './core/stale-build';
 import { watchTheme } from './core/theme';
+import { provideI18n } from './i18n/provide-i18n';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -18,6 +19,8 @@ export const appConfig: ApplicationConfig = {
       withNavigationErrorHandler((error) => reloadIfCodeIsMissing(error))
     ),
     provideHttpClient(withFetch(), withInterceptors([sessionExpiredInterceptor])),
+    // The page's language from its URL (/de/recipe), and its messages.
+    ...provideI18n(),
     // The colors chosen in Settings, light, dark or as the device is set.
     provideAppInitializer(() => watchTheme())
   ]

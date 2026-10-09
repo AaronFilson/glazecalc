@@ -1,0 +1,36 @@
+{
+  "titles": {
+    "landing": "Glazecalc: حاسبة مجانية لكيمياء التزجيج للخزّافين",
+    "guides": "أدلة - Glazecalc",
+    "about": "حول - Glazecalc"
+  },
+  "nav": {
+    "skip": "انتقل إلى المحتوى",
+    "main": "القائمة الرئيسية",
+    "signIn": "تسجيل الدخول",
+    "menu": "القائمة",
+    "recipes": "الوصفات",
+    "materials": "المواد",
+    "additives": "الإضافات",
+    "firingLogs": "سجلات الحرق",
+    "notes": "الملاحظات",
+    "advice": "نصائح",
+    "guides": "أدلة",
+    "about": "حول",
+    "account": "الحساب",
+    "accountTitle": "حسابك وإعداداتك",
+    "signOut": "تسجيل الخروج",
+    "createAccount": "أنشئ حسابًا مجانيًا"
+  },
+  "footer": {
+    "site": "الموقع",
+    "about": "حول",
+    "guides": "أدلة",
+    "advice": "نصائح التزجيج",
+    "privacy": "الخصوصية",
+    "source": "الشيفرة المصدرية",
+    "problem": "أبلغ عن مشكلة",
+    "pottery": "فخار يدوي: Updraft Pottery Studio",
+    "copyright": "© 2017–2026 Aaron Filson / Candling Development Studio · مجاني ومفتوح المصدر (رخصة MIT)"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "common": {
+    "formulaHelp": "Scrivere la formula con numeri normali, come {typed}: i numeri appaiono come pedici, {shown}. Per unire le parti di una formula, come in {joined}, copiare questo punto:",
+    "relatedTo": "Correlato a:",
+    "notes": "Note:",
+    "loi": "Perdita al fuoco - P.F. (percentuale):",
+    "molecularWeight": "Peso molecolare della formula tal quale (usato solo se la P.F. non è indicata):",
+    "formulaHeading": "Inserire la formula (dopo cottura):",
+    "oxideSelection": "Selezione dell’ossido",
+    "noOxide": "nessuno",
+    "addOxide": "Aggiungi l’ossido all’elenco",
+    "formulaIn": "Questa formula è espressa in:",
+    "percent": "Percentuale",
+    "molecular": "Molecolare / Unitaria",
+    "amount": "Quantità:",
+    "removeOxide": "Rimuovi dall’elenco della formula",
+    "save": "Salva",
+    "elements": "Elementi",
+    "removeNote": "Le ricette salvate ne conservano una copia propria, quindi non cambiano.",
+    "saveFailed": "Errore: la richiesta al server non è riuscita."
+  },
+  "material": {
+    "title": "Materiali",
+    "lead": "Le proprie materie prime, inserite come formula chimica o come analisi degli ossidi.",
+    "newHeading": "Inserire i dati del nuovo materiale",
+    "name": "Nome del materiale:",
+    "rawFormula": "Formula tal quale:",
+    "weightsNote": "Il peso equivalente e il peso dopo cottura si calcolano dalla formula e dalla P.F. al momento del salvataggio.",
+    "mineHeading": "I miei materiali:",
+    "rawFormulaColumn": "Formula tal quale",
+    "standardHeading": "I materiali standard:",
+    "fetchFailed": "Si è verificato un errore nel recupero dei dati dei materiali.",
+    "standardFetchFailed": "Si è verificato un errore nel recupero dei dati dei materiali standard.",
+    "saved": "Fatto. Materiale aggiunto al database."
+  },
+  "additive": {
+    "title": "Additivi e coloranti",
+    "lead": "Coloranti e opacizzanti dosati in aggiunta alla ricetta base, come il cobalto o l’ossido di stagno. Una ricetta può escluderli dalla formula di Seger (UMF) o conteggiarli.",
+    "newHeading": "Inserire i dati del nuovo additivo",
+    "name": "Nome dell’additivo:",
+    "formulaAsSold": "Formula, come venduto:",
+    "noChemistry": "Non ha un’analisi degli ossidi, come un pigmento commerciale: escluderlo dalla formula di Seger",
+    "firedNote": "Inserire ciò che dà allo smalto dopo la cottura: l’ossido di cobalto nero, {asSold}, è {fired} con una P.F. del {loi}%. Così una ricetta può conteggiarlo nella formula di Seger.",
+    "mineHeading": "I miei additivi e coloranti:",
+    "standardHeading": "Gli additivi standard:",
+    "fetchFailed": "Si è verificato un errore nel recupero dei dati degli additivi.",
+    "standardFetchFailed": "Si è verificato un errore nel recupero dei dati degli additivi standard.",
+    "saved": "Fatto. Additivo aggiunto al database."
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "common": {
+    "formulaHelp": "Escriba la fórmula con números normales, como {typed}: los números se muestran como subíndices, {shown}. Para unir las partes de una fórmula, como en {joined}, copie este punto:",
+    "relatedTo": "Relacionado con:",
+    "notes": "Notas:",
+    "loi": "Pérdida al fuego - PF (porcentaje):",
+    "molecularWeight": "Peso molecular de la fórmula en crudo (solo se usa si la PF está vacía):",
+    "formulaHeading": "Introduzca la fórmula (cocida):",
+    "oxideSelection": "Selección de óxidos",
+    "noOxide": "ninguno",
+    "addOxide": "Añadir el óxido a la lista",
+    "formulaIn": "Esta fórmula se expresa en:",
+    "percent": "Porcentaje",
+    "molecular": "Molecular / Seger",
+    "amount": "Cantidad:",
+    "removeOxide": "Quitar de la lista de la fórmula",
+    "save": "Guardar",
+    "elements": "Elementos",
+    "removeNote": "Las recetas guardadas conservan su propia copia, así que no cambiarán.",
+    "saveFailed": "Error: ha fallado la solicitud al servidor."
+  },
+  "material": {
+    "title": "Materiales",
+    "lead": "Sus propias materias primas, introducidas como fórmula química o como análisis de óxidos.",
+    "newHeading": "Datos del nuevo material",
+    "name": "Nombre del material:",
+    "rawFormula": "Fórmula en crudo:",
+    "weightsNote": "El peso equivalente y el peso cocido se calculan a partir de la fórmula y la PF al guardar.",
+    "mineHeading": "Mis materiales:",
+    "rawFormulaColumn": "Fórmula en crudo",
+    "standardHeading": "Los materiales de la lista estándar:",
+    "fetchFailed": "Se ha producido un error al obtener los datos de los materiales.",
+    "standardFetchFailed": "Se ha producido un error al obtener los datos de los materiales de la lista estándar.",
+    "saved": "Listo. Se ha añadido el material a la base de datos."
+  },
+  "additive": {
+    "title": "Aditivos y colorantes",
+    "lead": "Colorantes y opacificantes que se añaden sobre la receta base, como el óxido de cobalto o el de estaño. Una receta puede dejarlos fuera de la fórmula Seger o contarlos en ella.",
+    "newHeading": "Datos del nuevo aditivo",
+    "name": "Nombre del aditivo:",
+    "formulaAsSold": "Fórmula, tal como se vende:",
+    "noChemistry": "No tiene análisis de óxidos, como un pigmento comercial: dejarlo fuera de la fórmula Seger",
+    "firedNote": "Introduzca lo que aporta al esmalte una vez cocido: el óxido de cobalto negro, {asSold}, es {fired} con una PF del {loi} %. Así, una receta podrá contarlo en la fórmula Seger.",
+    "mineHeading": "Mis aditivos y colorantes:",
+    "standardHeading": "Los aditivos de la lista estándar:",
+    "fetchFailed": "Se ha producido un error al obtener los datos de los aditivos.",
+    "standardFetchFailed": "Se ha producido un error al obtener los datos de los aditivos de la lista estándar.",
+    "saved": "Listo. Se ha añadido el aditivo a la base de datos."
+  }
+}

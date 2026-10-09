@@ -120,7 +120,7 @@ test.describe('home and navigation', () => {
 test.describe('additives', () => {
   test('lists the standard additives', async ({ page }) => {
     await page.goto('/additive');
-    const standard = page.locator('section', { hasText: 'The standard server additives:' });
+    const standard = page.locator('section', { hasText: 'The standard additives:' });
     const row = standard.locator('tr', { has: page.locator('td', { hasText: /^\s*Cobalt carbonate\s*$/ }) });
     // From the supplier's data sheet: a weight-percent analysis.
     await expect(row).toContainText('CoO 58.49%');
@@ -139,7 +139,7 @@ test.describe('additives', () => {
     await page.getByRole('button', { name: 'Save' }).click();
 
     await expect(messages(page)).toContainText('Additive added');
-    const mine = page.locator('section', { hasText: 'My server additives / colorants:' });
+    const mine = page.locator('section', { hasText: 'My additives and colorants:' });
     const row = mine.locator('tr', { hasText: 'Blue stain' });
     await expect(row).toContainText('Spinel');
     await expect(row).toContainText('CoO : 1; Al₂O₃ : 1');
@@ -152,7 +152,7 @@ test.describe('additives', () => {
     await expect(row).toContainText("Saved recipes keep their own copy, so they won't change.");
     await row.getByRole('button', { name: 'Yes, remove' }).click();
     await expect(messages(page)).toContainText('Removed "Blue stain".');
-    await expect(page.locator('section', { hasText: 'My server additives / colorants:' })).toHaveCount(0);
+    await expect(page.locator('section', { hasText: 'My additives and colorants:' })).toHaveCount(0);
   });
 
   test('asks for an oxide before adding one', async ({ page }) => {

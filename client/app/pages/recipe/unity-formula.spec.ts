@@ -1,8 +1,16 @@
 import { TestBed } from '@angular/core/testing';
+import { TranslocoService } from '@jsverse/transloco';
+import { provideEnglish } from '../../testing/i18n';
 import { text } from '../../testing/test-providers';
 import { UnityFormula, silicaAluminaRatio, unityColumns } from './unity-formula';
 
 describe('unityColumns', () => {
+  // The columns' titles are messages.
+  beforeEach(() => {
+    TestBed.configureTestingModule({ providers: provideEnglish() });
+    TestBed.inject(TranslocoService);
+  });
+
   it('groups oxides into fluxes, stabilizers, glass formers and wildcards', () => {
     const columns = unityColumns({ K2O: 0.3, CaO: 0.7, Al2O3: 0.4, B2O3: 0.2, SiO2: 3.5, Fe2O3: 0.05, TiO2: 0.1 });
     expect(columns.map((c) => c.title)).toEqual([
@@ -43,6 +51,8 @@ describe('silicaAluminaRatio', () => {
 });
 
 describe('UnityFormula', () => {
+  beforeEach(() => TestBed.configureTestingModule({ providers: provideEnglish() }));
+
   it('shows each oxide to three places and the ratio to two', async () => {
     const fixture = TestBed.createComponent(UnityFormula);
     fixture.componentRef.setInput('analysis', { uList: { CaO: 1, Al2O3: 0.3, SiO2: 3.14159 } });

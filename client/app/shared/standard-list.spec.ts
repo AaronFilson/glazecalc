@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 import { Additive, Material } from '../core/models';
-import { text } from '../testing/test-providers';
+import { testProviders, text } from '../testing/test-providers';
 import { StandardList } from './standard-list';
 
 const record = (name: string, extra: Partial<Material> = {}): Material => ({
@@ -27,7 +27,10 @@ const RECORDS: Array<Material | Additive> = [
 ];
 
 describe('StandardList', () => {
-  beforeEach(() => localStorage.clear());
+  beforeEach(() => {
+    localStorage.clear();
+    TestBed.configureTestingModule({ providers: testProviders() });
+  });
 
   const create = async (records = RECORDS) => {
     const fixture = TestBed.createComponent(StandardList);

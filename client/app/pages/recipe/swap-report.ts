@@ -1,8 +1,12 @@
 import { Component, computed, input, output, signal } from '@angular/core';
+import { TranslocoDirective, translate } from '@jsverse/transloco';
 import { Material } from '../../core/models';
+import { RichText } from '../../i18n/rich-text';
 import { LeadMode } from './lead';
 import { Report, TryMaterial, oxideName } from './pool';
 import { TryMaterials } from './try-materials';
+import { listOf } from '../../shared/format';
+import { FixedPipe } from '../../shared/format-pipes';
 
 /** A substitution as asked, to run again with changes from its report. */
 export interface Run {
@@ -31,8 +35,7 @@ const CLOSE = 1;
 /** More than this above the best the materials could do, and the match could come nearer. */
 const COULD_BE_NEARER = 0.5;
 
-const list = (names: string[]): string =>
-  names.length > 1 ? names.slice(0, -1).join(', ') + ' and ' + names.at(-1) : (names[0] ?? '');
+const list = (names: string[]): string => listOf(names);
 
 /**
  * How a substitution was made (docs/adr/0012): what each material supplies,
@@ -42,55 +45,69 @@ const list = (names: string[]): string =>
  */
 @Component({
   selector: 'gc-swap-report',
-  imports: [TryMaterials],
-  template: `
+  imports: [FixedPipe, RichText, TranslocoDirective, TryMaterials],
+  template: `<ng-container *transloco="let t">
     <section class="swap-report" [attr.aria-labelledby]="headingId()">
       @if (level() === 2) {
-        <h2 [id]="headingId()" class="swap-report-heading" tabindex="-1">How the new recipe was made</h2>
+        <h2 [id]="headingId()" class="swap-report-heading" tabindex="-1">{{ t('recipe.swapReport.heading') }}</h2>
       } @else {
-        <h4 [id]="headingId()" class="swap-report-heading" tabindex="-1">How the new recipe was made</h4>
+        <h4 [id]="headingId()" class="swap-report-heading" tabindex="-1">{{ t('recipe.swapReport.heading') }}</h4>
       }
       @if (result().report; as report) {
         <p>{{ summary() }}</p>
         <ul class="swap-uses">
           @for (use of report.uses; track use.name) {
             <li>
-              <b>{{ use.name }}</b> {{ use.amount }}: {{ use.supplies }}.
+              <gc-rich
+                [text]="t('recipe.swapReport.use', { name: use.name, amount: use.amount, supplies: use.supplies })"
+              />{{ ' ' }}
               @if (!use.needed) {
-                <span class="muted">The match is nearly as good without it.</span>
+                <span class="muted">{{ t('recipe.swapReport.nearlyAsGood') }}</span>
               }
               @if (!use.fixed) {
                 <button
                   type="button"
                   class="btn btn-link btn-sm swap-action"
-                  [attr.aria-label]="'Leave out ' + use.name"
+                  [attr.aria-label]="t('recipe.swapReport.leaveOutName', { name: use.name })"
                   (click)="leaveOut(use.name)"
                 >
-                  Leave it out
+                  {{ t('recipe.swapReport.leaveOut') }}
                 </button>
               }
             </li>
           }
         </ul>
         @if (report.unreachable.length) {
-          <p>Nothing on offer has {{ unreachable() }}. Add a material with it to try, below, to bring it back.</p>
+          <p>{{ t('recipe.swapReport.unreachable', { list: unreachable() }) }}</p>
         }
         @for (cap of report.capped; track cap.name) {
           <p>
-            A closer match needs {{ cap.wouldBe.toFixed(0) }}% {{ list(cap.members) }}, more than the
-            {{ cap.most.toFixed(0) }}% suggested{{ cap.why ? ': ' + cap.why : '' }}.
+            {{
+              cap.why
+                ? t('recipe.swapReport.cappedWhy', {
+                    wouldBe: (cap.wouldBe | gcFixed: 0),
+                    list: list(cap.members),
+                    most: (cap.most | gcFixed: 0),
+                    why: cap.why
+                  })
+                : t('recipe.swapReport.capped', {
+                    wouldBe: (cap.wouldBe | gcFixed: 0),
+                    list: list(cap.members),
+                    most: (cap.most | gcFixed: 0)
+                  })
+            }}
             <button
               type="button"
               class="btn btn-link btn-sm swap-action"
-              [attr.aria-label]="'Allow more ' + list(cap.members)"
+              [attr.aria-label]="t('recipe.swapReport.allowMoreOf', { list: list(cap.members) })"
               (click)="allowMore(cap.members)"
             >
-              Allow more
+              {{ t('recipe.swapReport.allowMore') }}
             </button>
           </p>
         }
         @if (report.couldHelp.length) {
-          <p>Not used, but would bring it a little closer:</p>
+          <p>{{ t('recipe.swapReport.couldHelp') }}</p>
           <ul class="swap-uses">
             @for (help of report.couldHelp; track help.name) {
               <li>
@@ -98,28 +115,28 @@ const list = (names: string[]): string =>
                 <button
                   type="button"
                   class="btn btn-link btn-sm swap-action"
-                  [attr.aria-label]="'Add ' + help.name"
+                  [attr.aria-label]="t('recipe.swapReport.addName', { name: help.name })"
                   (click)="add(help.name)"
                 >
-                  Add it
+                  {{ t('recipe.swapReport.add') }}
                 </button>
               </li>
             }
           </ul>
         }
         @if (report.alike.length) {
-          <p>Near enough the same, if one is easier to get:</p>
+          <p>{{ t('recipe.swapReport.alike') }}</p>
           <ul class="swap-uses">
             @for (pair of report.alike; track pair.used + pair.other) {
               <li>
-                {{ pair.other }} could stand in for {{ pair.used }}.
+                {{ t('recipe.swapReport.standIn', { other: pair.other, used: pair.used }) }}
                 <button
                   type="button"
                   class="btn btn-link btn-sm swap-action"
-                  [attr.aria-label]="'Use ' + pair.other + ' instead of ' + pair.used"
+                  [attr.aria-label]="t('recipe.swapReport.useInsteadOf', { other: pair.other, used: pair.used })"
                   (click)="useInstead(pair.used, pair.other)"
                 >
-                  Use it instead
+                  {{ t('recipe.swapReport.useInstead') }}
                 </button>
               </li>
             }
@@ -127,13 +144,14 @@ const list = (names: string[]): string =>
         }
         @if (report.countCost >= 0.1) {
           <p class="muted">
-            It uses at most four new materials; with more it could come a little closer, at the cost of more to buy and
-            weigh.
+            {{ t('recipe.swapReport.fourAtMost') }}
           </p>
         }
       }
       @if (result().cautions.length) {
-        <p class="swap-watch"><b>What to watch for</b></p>
+        <p class="swap-watch">
+          <b>{{ t('recipe.swapReport.watchFor') }}</b>
+        </p>
         <ul class="swap-cautions">
           @for (caution of result().cautions; track caution) {
             <li>{{ caution }}</li>
@@ -142,9 +160,9 @@ const list = (names: string[]): string =>
       }
       @if (result().run.avoid.length) {
         <p>
-          Left out: {{ list(result().run.avoid) }}.
+          {{ t('recipe.swapReport.leftOut', { list: list(result().run.avoid) }) }}
           <button type="button" class="btn btn-link btn-sm swap-action" (click)="rerun.emit({ avoid: [] })">
-            Allow them again
+            {{ t('recipe.swapReport.allowAgain') }}
           </button>
         </p>
       }
@@ -155,7 +173,7 @@ const list = (names: string[]): string =>
           [attr.aria-expanded]="trying()"
           (click)="toggleTrying()"
         >
-          Try other materials
+          {{ t('recipe.swapReport.tryOthers') }}
         </button>
       </div>
       @if (trying()) {
@@ -167,11 +185,13 @@ const list = (names: string[]): string =>
           [inRecipe]="inRecipe()"
         />
         <div class="recipe-swap-buttons">
-          <button type="button" class="btn btn-primary btn-sm" (click)="workOutAgain()">Work it out again</button>
+          <button type="button" class="btn btn-primary btn-sm" (click)="workOutAgain()">
+            {{ t('recipe.swapReport.workOutAgain') }}
+          </button>
         </div>
       }
     </section>
-  `
+  </ng-container>`
 })
 export class SwapReport {
   readonly result = input.required<SwapResult>();
@@ -192,12 +212,11 @@ export class SwapReport {
   protected readonly summary = computed(() => {
     const { report, run } = this.result();
     if (!report) return '';
-    const aim = run.kind === 'lead' ? 'the lead-free formula for the firing' : "the old recipe's fired oxides";
-    if (report.miss < CLOSE) return `Its fired oxides come close to ${aim}.`;
-    if (report.miss - report.best < COULD_BE_NEARER) {
-      return `This is as near to ${aim} as these materials come; the comparison shows which oxides are off.`;
-    }
-    return `These materials could come nearer to ${aim}: see what would help, below.`;
+    // What it aims at: the lead-free formula for the firing, or the old recipe's fired oxides.
+    const aim = run.kind === 'lead' ? 'lead' : 'old';
+    if (report.miss < CLOSE) return translate('recipe.swapReport.close', { aim });
+    if (report.miss - report.best < COULD_BE_NEARER) return translate('recipe.swapReport.asNear', { aim });
+    return translate('recipe.swapReport.couldBeNearer', { aim });
   });
   protected readonly unreachable = computed(() => list((this.result().report?.unreachable ?? []).map(oxideName)));
 

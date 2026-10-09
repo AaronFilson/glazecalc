@@ -1,0 +1,175 @@
+<!--
+  Inline parts are each wrapped in an element or ng-container with nothing around their text:
+  Angular drops the whitespace between these tags, so a sentence reads exactly as its Markdown.
+-->
+<gc-page-header [title]="show(guide().title)" [lead]="show(guide().lead)" [attr.lang]="guide().language" />
+<gc-guide-contents [sections]="contents()" />
+<ng-content />
+<div class="guide" [attr.lang]="textLanguage()">
+  <div [attr.lang]="guide().language">
+    <ng-container *ngTemplateOutlet="blockList; context: { $implicit: intro() }" />
+  </div>
+  @for (section of sections(); track section.id) {
+    <section class="panel" [attr.aria-labelledby]="section.id" [attr.lang]="section.language">
+      <h2 [id]="section.id" tabindex="-1">{{ show(section.label) }}</h2>
+      @if (section.language) {
+        <p class="guide-note" [attr.lang]="pageLanguage">{{ sectionInEnglish }}</p>
+      }
+      <ng-container *ngTemplateOutlet="blockList; context: { $implicit: section.content }" />
+    </section>
+  }
+</div>
+
+<ng-template #blockList let-list>
+  @for (block of asBlocks(list); track $index) {
+    @switch (block.kind) {
+      @case ('paragraph') {
+        <p><ng-container *ngTemplateOutlet="inline; context: { $implicit: block.content }" /></p>
+      }
+      @case ('text') {
+        <ng-container *ngTemplateOutlet="inline; context: { $implicit: block.content }" />
+      }
+      @case ('heading') {
+        @if (block.level === 3) {
+          <h3 [attr.id]="block.id || null" [attr.tabindex]="block.id ? -1 : null">
+            <ng-container *ngTemplateOutlet="inline; context: { $implicit: block.content }" />
+          </h3>
+        } @else {
+          <h4 [attr.id]="block.id || null" [attr.tabindex]="block.id ? -1 : null">
+            <ng-container *ngTemplateOutlet="inline; context: { $implicit: block.content }" />
+          </h4>
+        }
+      }
+      @case ('list') {
+        @if (block.ordered) {
+          <ol [class.guide-sources]="block.sources">
+            @for (item of block.items; track $index) {
+              <li><ng-container *ngTemplateOutlet="blockList; context: { $implicit: item }" /></li>
+            }
+          </ol>
+        } @else {
+          <ul [class.guide-sources]="block.sources">
+            @for (item of block.items; track $index) {
+              <li><ng-container *ngTemplateOutlet="blockList; context: { $implicit: item }" /></li>
+            }
+          </ul>
+        }
+      }
+      @case ('table') {
+        <div
+          class="guide-table-scroll"
+          tabindex="0"
+          role="region"
+          [attr.aria-label]="block.label ? show(block.label) : plain(block.caption)"
+        >
+          <table class="guide-table">
+            <caption>
+              <ng-container *ngTemplateOutlet="inline; context: { $implicit: block.caption }" />
+            </caption>
+            <thead>
+              <tr>
+                @for (cell of block.head; track $index) {
+                  <th scope="col" [class.num]="block.numeric[$index]">
+                    <ng-container *ngTemplateOutlet="inline; context: { $implicit: cell }" />
+                  </th>
+                }
+              </tr>
+            </thead>
+            <tbody>
+              @for (row of block.rows; track $index) {
+                <tr>
+                  @for (cell of row; track $index; let first = $first) {
+                    @if (first) {
+                      <th scope="row" [class.num]="block.numeric[$index]">
+                        <ng-container *ngTemplateOutlet="inline; context: { $implicit: cell }" />
+                      </th>
+                    } @else {
+                      <td [class.num]="block.numeric[$index]">
+                        <ng-container *ngTemplateOutlet="inline; context: { $implicit: cell }" />
+                      </td>
+                    }
+                  }
+                </tr>
+              }
+            </tbody>
+          </table>
+        </div>
+      }
+      @case ('callout') {
+        @if (block.tone === 'note' && block.blocks.length === 1 && block.blocks[0].kind === 'paragraph') {
+          <p class="guide-callout">
+            <ng-container *ngTemplateOutlet="inline; context: { $implicit: block.blocks[0].content }" />
+          </p>
+        } @else {
+          <div [class]="block.tone === 'warning' ? 'guide-warning' : 'guide-callout'" role="note">
+            <ng-container *ngTemplateOutlet="blockList; context: { $implicit: block.blocks }" />
+          </div>
+        }
+      }
+      @case ('definitions') {
+        <dl>
+          @for (item of block.items; track $index) {
+            <dt><ng-container *ngTemplateOutlet="inline; context: { $implicit: item.term }" /></dt>
+            <dd><ng-container *ngTemplateOutlet="inline; context: { $implicit: item.definition }" /></dd>
+          }
+        </dl>
+      }
+      @case ('poison-lines') {
+        <gc-poison-lines />
+      }
+      @case ('rule') {
+        <hr />
+      }
+    }
+  }
+</ng-template>
+
+<ng-template #inline let-parts>
+  @for (part of asInlines(parts); track $index) {
+    @switch (part.kind) {
+      @case ('text') {
+        <ng-container>{{ show(part.text) }}</ng-container>
+      }
+      @case ('temperature') {
+        <span class="temperature">{{ temperature(part) }}</span>
+      }
+      @case ('density') {
+        <span class="density">{{ density(part) }}</span>
+      }
+      @case ('english') {
+        @if (englishTerms()) {
+          <span class="english-term" lang="en"> ({{ part.text }})</span>
+        }
+      }
+      @case ('strong') {
+        <b><ng-container *ngTemplateOutlet="inline; context: { $implicit: part.content }" /></b>
+      }
+      @case ('em') {
+        <em><ng-container *ngTemplateOutlet="inline; context: { $implicit: part.content }" /></em>
+      }
+      @case ('code') {
+        <code>{{ part.text }}</code>
+      }
+      @case ('link') {
+        @switch (linkKind(part.href)) {
+          @case ('route') {
+            <a [routerLink]="path(part.href)" [fragment]="fragment(part.href)"
+              ><ng-container *ngTemplateOutlet="inline; context: { $implicit: part.content }"
+            /></a>
+          }
+          @case ('here') {
+            <a [href]="part.href" (click)="goTo($event, part.href)"
+              ><ng-container *ngTemplateOutlet="inline; context: { $implicit: part.content }"
+            /></a>
+          }
+          @default {
+            <a [href]="part.href"><ng-container *ngTemplateOutlet="inline; context: { $implicit: part.content }" /></a>
+          }
+        }
+      }
+      @case ('break') {
+        <br />
+      }
+    }
+  }
+</ng-template>

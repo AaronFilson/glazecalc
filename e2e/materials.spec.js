@@ -3,7 +3,7 @@ const { formatFormula } = require('../lib/chemistry');
 const { expectFieldProblem, signUpAndSignIn } = require('./helpers');
 
 const standardTable = (page) => page.locator('section', { hasText: 'The standard materials:' }).locator('table');
-const myTable = (page) => page.locator('section', { hasText: 'My server materials:' }).locator('table');
+const myTable = (page) => page.locator('section', { hasText: 'My materials:' }).locator('table');
 
 // Adds an oxide with the oxide picker and enters its amount.
 const addOxide = async (page, oxide, amount) => {

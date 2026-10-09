@@ -1,0 +1,62 @@
+{
+  "version": {
+    "cones": "Ce guide est affiché pour une cuisson aux cônes, comme réglé dans vos paramètres.",
+    "temperature": "Ce guide est affiché pour une cuisson par température, comme réglé dans vos paramètres.",
+    "showTemperature": "Afficher pour une cuisson par température",
+    "showCones": "Afficher pour une cuisson aux cônes"
+  },
+  "notTranslated": "Ce guide n’est pas encore traduit : il est donc affiché en anglais.",
+  "sectionInEnglish": "Cette section a changé depuis sa traduction : elle est donc affichée en anglais jusqu’à la mise à jour de sa traduction.",
+  "list": {
+    "title": "Guides",
+    "lead": "Des guides en langage simple pour débuter en céramique : de ce qu’est un émail jusqu’à sa cuisson, en protégeant tout le monde en chemin.",
+    "note": "Ces guides rassemblent ce que publient les fabricants, les organismes de sécurité et des céramistes expérimentés, avec les sources à la fin de chacun. Ils sont un point de départ : ils ne remplacent pas les fiches de données de sécurité de vos matières, le manuel de votre four ni la réglementation locale.",
+    "glazingBasics": {
+      "title": "Les principes de base de l’émaillage",
+      "text": "Ce qu’est un émail, comment il fond, et l’explication de chaque mot rencontré sur une recette ou un sac."
+    },
+    "makingAGlaze": {
+      "title": "Comment préparer un émail",
+      "text": "Acheter, stocker, peser, mélanger et tamiser un émail, puis le tester et garder une trace de tout."
+    },
+    "safeMixing": {
+      "title": "Préparation en sécurité et ventilation",
+      "text": "Poussières, masques de protection respiratoire, nettoyage, les matières qui demandent le plus de précautions, et l’évacuation des fumées du four."
+    },
+    "homeSafety": {
+      "title": "N’empoisonnez pas votre famille",
+      "text": "La céramique à la maison avec des enfants et des animaux : rangement, poussière, le four, et que faire si quelque chose a été avalé."
+    },
+    "firing": {
+      "title": "Cuire dans un four simple",
+      "text": "Cônes, Kiln-Sitter et commandes manuelles, avec des courbes pour la cuisson de biscuit et la cuisson d’émail."
+    }
+  },
+  "contents": "Sur cette page",
+  "poison": {
+    "numbersFor": "Numéros pour",
+    "choose": "Choisissez votre pays",
+    "label": "Qui appeler : {region}",
+    "caption": "Qui appeler : {region} (numéros vérifiés le {date})",
+    "for": "Situation",
+    "call": "Appeler",
+    "notes": "Horaires et remarques",
+    "emergency": "Une urgence : perte de connaissance, absence de respiration, crise convulsive",
+    "poisonAdvice": "{who, select, children {Intoxication : {name} (enfants uniquement)} other {Intoxication : {name}}}",
+    "or": "ou {number}",
+    "online": "En ligne : <link>{name}</link>.",
+    "poisonAdviceNone": "Intoxication",
+    "noLine": "Nous n’avons pas pu confirmer l’existence d’une ligne antipoison publique ici. Appelez votre médecin, ou le numéro d’urgence si c’est urgent.",
+    "medicalAdvice": "Conseil médical : {name}",
+    "animals": "Animaux : {name}",
+    "animalsNone": "Animaux",
+    "vet": "Appelez votre vétérinaire.",
+    "checkedOn": "Vérifié sur :",
+    "choosePrompt": "Choisissez votre pays pour voir qui appeler."
+  },
+  "density": {
+    "sg": "SG {value}",
+    "baume": "{value} °Bé ({sg})",
+    "pint": "{value} oz par pinte impériale ({sg})"
+  }
+}

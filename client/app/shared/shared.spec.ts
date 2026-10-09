@@ -4,10 +4,16 @@ import { testProviders, text } from '../testing/test-providers';
 import { localDate, optional } from './dates';
 import { Notices, NoticesList } from './notices';
 import { OXIDE_GROUPS } from '../../../lib/chemistry';
-import { ADDITIVE_OXIDES, FIRED_OXIDES, FIRING_FIELDS, fieldsText, firstOf } from './options';
+import { ADDITIVE_OXIDES, FIRED_OXIDES, FIRING_FIELDS, fieldsText, firingFieldLabel, firstOf } from './options';
+import { TranslocoService } from '@jsverse/transloco';
+import { textKey } from '../../../lib/regions/languages';
+import { useCodedMessages } from '../i18n/coded';
+import { standardText } from './library-info';
 import { PageHeader } from './page-header';
 
 describe('Notices', () => {
+  beforeEach(() => TestBed.configureTestingModule({ providers: testProviders() }));
+
   it('collects and dismisses errors and messages by position', () => {
     const notices = new Notices();
     notices.error('one');
@@ -31,6 +37,18 @@ describe('Notices', () => {
     notices.dismissMessage(1);
     notices.success('Saved "A" a third time.', 'save');
     expect(notices.messages()).toEqual(['Removed "B".', 'Saved "A" a third time.']);
+  });
+
+  it("replaces a calculation's warnings with the next one's, leaving other errors", () => {
+    TestBed.inject(TranslocoService);
+    const notices = new Notices();
+    notices.error('Not saved.');
+    notices.warnings(['Analysis of A totals 50.00%.']);
+    expect(notices.errors()).toEqual(['Not saved.', 'Warning: Analysis of A totals 50.00%.']);
+    notices.warnings(['Analysis of B totals 60.00%.']);
+    expect(notices.errors()).toEqual(['Not saved.', 'Warning: Analysis of B totals 60.00%.']);
+    notices.warnings([]);
+    expect(notices.errors()).toEqual(['Not saved.']);
   });
 
   it('renders the lists and dismisses from the page', async () => {
@@ -91,6 +109,11 @@ describe('dates', () => {
 });
 
 describe('options', () => {
+  beforeEach(() => {
+    TestBed.configureTestingModule({ providers: testProviders() });
+    TestBed.inject(TranslocoService);
+  });
+
   it('reads the first entry of list-or-text values', () => {
     expect(firstOf(['a', 'b'])).toBe('a');
     expect(firstOf('note')).toBe('note');
@@ -120,5 +143,36 @@ describe('options', () => {
   it('keeps all sixty firing log fields', () => {
     expect(FIRING_FIELDS).toHaveLength(60);
     expect(new Set(FIRING_FIELDS).size).toBe(60);
+  });
+
+  it('names each oxide and firing log column in the page’s language, and keeps a column it does not know', () => {
+    expect(FIRED_OXIDES[0]!.label).toBe('Li₂O : Lithium oxide');
+    expect(ADDITIVE_OXIDES.find((o) => o.value === 'Fe2O3')!.label).toBe('Fe₂O₃ : Iron oxide (ferric, red)');
+    expect(FIRING_FIELDS.map(firingFieldLabel)).toEqual(FIRING_FIELDS);
+    expect(firingFieldLabel('My own column')).toBe('My own column');
+  });
+});
+
+describe('standard records’ words', () => {
+  beforeEach(() => TestBed.configureTestingModule({ providers: testProviders() }));
+  afterEach(() => {
+    useCodedMessages(null);
+    TestBed.inject(TranslocoService).setActiveLang('en');
+  });
+
+  it('shows a standard record’s notes translated, by a key made from exactly their English, and a potter’s own as written', () => {
+    const transloco = TestBed.inject(TranslocoService);
+    const note = 'Toxic. Almost insoluble.';
+    expect(standardText({ ownedBy: 'Standard' }, note)).toBe(note);
+    transloco.setTranslation({ ['records.' + textKey(note)]: 'Giftig. Fast unlöslich.' }, 'de');
+    transloco.setActiveLang('de');
+    useCodedMessages(transloco);
+    expect(standardText({ ownedBy: 'Standard' }, note)).toBe('Giftig. Fast unlöslich.');
+    expect(standardText({ ownedBy: 'someone' }, note)).toBe(note);
+    // A changed note has no translation until it is translated again.
+    expect(standardText({ ownedBy: 'Standard' }, 'Toxic. Almost insoluble in water.')).toBe(
+      'Toxic. Almost insoluble in water.'
+    );
+    expect(standardText({ ownedBy: 'Standard' }, undefined)).toBe('');
   });
 });

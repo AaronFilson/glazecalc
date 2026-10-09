@@ -1,4 +1,5 @@
 import { provideRouter } from '@angular/router';
+import { provideEnglish } from '../../testing/i18n';
 import { TestBed } from '@angular/core/testing';
 import { Material } from '../../core/models';
 import { text } from '../../testing/test-providers';
@@ -43,7 +44,7 @@ const REPORT: Report = {
 };
 
 describe('SwapReport', () => {
-  beforeEach(() => TestBed.configureTestingModule({ providers: [provideRouter([])] }));
+  beforeEach(() => TestBed.configureTestingModule({ providers: [provideRouter([]), ...provideEnglish()] }));
 
   const create = async (result: SwapResult) => {
     const fixture = TestBed.createComponent(SwapReport);
@@ -101,7 +102,7 @@ describe('SwapReport', () => {
 });
 
 describe('TryMaterials', () => {
-  beforeEach(() => TestBed.configureTestingModule({ providers: [provideRouter([])] }));
+  beforeEach(() => TestBed.configureTestingModule({ providers: [provideRouter([]), ...provideEnglish()] }));
 
   it('adds materials to try from the library, each perhaps a must, and removes them', async () => {
     const fixture = TestBed.createComponent(TryMaterials);

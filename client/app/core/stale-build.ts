@@ -1,4 +1,5 @@
 import { NavigationError } from '@angular/router';
+import { languageOfPath, pathIn } from '../i18n/language';
 
 const RELOADED_KEY = 'reloadedFor';
 const ONE_MINUTE = 60_000;
@@ -13,7 +14,8 @@ const ONE_MINUTE = 60_000;
 export function reloadIfCodeIsMissing(
   error: NavigationError,
   location: Pick<Location, 'assign'> = window.location,
-  storage: Pick<Storage, 'getItem' | 'setItem'> = sessionStorage
+  storage: Pick<Storage, 'getItem' | 'setItem'> = sessionStorage,
+  language = languageOfPath(window.location.pathname)
 ): void {
   if (!isMissingCode(error.error)) return;
   try {
@@ -24,7 +26,8 @@ export function reloadIfCodeIsMissing(
     // Without storage there is no loop guard, so do not reload.
     return;
   }
-  location.assign(error.url);
+  // The router's URL leaves out the language's path (/de/), which the address needs.
+  location.assign(pathIn(language, error.url));
 }
 
 /** A failed import of a page's code file, as each browser words it. */

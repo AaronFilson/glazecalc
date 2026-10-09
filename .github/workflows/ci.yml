@@ -45,6 +45,9 @@ jobs:
       - name: Type-check the server
         run: npm run typecheck
 
+      - name: Messages (every key has its English; translations match it)
+        run: npm run check:i18n
+
       - name: Check formatting
         run: npm run format:check
 

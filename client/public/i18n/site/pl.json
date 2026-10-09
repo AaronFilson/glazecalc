@@ -1,0 +1,111 @@
+{
+  "landing": {
+    "eyebrow": "Kalkulator szkliw i notatnik pracowni",
+    "heading": "Bezpłatna chemia szkliw dla ceramików.",
+    "lead": "Rozumieć szkliwa, a nie tylko je mieszać. Po wpisaniu receptury od razu widać jej wzór Segera (UMF), stosunek krzemionki do tlenku glinu i proporcję topników. Receptury, surowce, barwniki, notatki i dzienniki wypałów można trzymać razem, w jednym prywatnym notatniku.",
+    "trialEnded": "Okres próbny dobiegł końca. Można rozpocząć nowy albo założyć bezpłatne konto, aby zachować pracę.",
+    "tryIt": "Wypróbuj teraz",
+    "createAccount": "Załóż bezpłatne konto",
+    "trialFailed": "Nie udało się teraz rozpocząć okresu próbnego. Proszę spróbować ponownie.",
+    "heroNote": "Wypróbowanie nie wymaga rejestracji · Bezpłatne oprogramowanie open source · Receptury pozostają prywatne",
+    "heroAlt": "Rząd wypalonych zestawów stożków: białe stożki pirometryczne w każdym zestawie wygięły się w żarze pieca.",
+    "heroCaption": "Zestawy stożków po wypale: każdy stożek wygina się, gdy piec wykona wystarczającą pracę cieplną.",
+    "exampleHeading": "W praktyce: klasyczna baza celadonowa",
+    "exampleCaption": "Receptura „4321” Bernarda Leacha, często wypalana do stożka 10, w częściach wagowych.",
+    "material": "Surowiec",
+    "parts": "Części",
+    "unityHeading": "Jej wzór Segera",
+    "exampleNote": "Topniki sumują się do 1, więc dowolne dwa szkliwa można rzetelnie porównać. Wynik obliczono tutaj, w przeglądarce, tym samym kodem, którego używa kalkulator.",
+    "featuresHeading": "Co potrafi Glazecalc",
+    "features": {
+      "unity": {
+        "title": "Wzór Segera od razu",
+        "text": "Po wpisaniu receptury od razu widać topniki, tlenek glinu i krzemionkę we wzorze Segera, czyli tak, jak porównują receptury chemicy zajmujący się szkliwami."
+      },
+      "substitute": {
+        "title": "Poprawki i zamienniki",
+        "text": "Surowiec wycofany z produkcji? Porównanie wzorów pomaga znaleźć zamiennik, który topi się tak samo."
+      },
+      "notebook": {
+        "title": "Notatnik pracowni",
+        "text": "Receptury, własne surowce, barwniki, notatki i dzienniki wypałów razem, w jednym miejscu."
+      },
+      "learn": {
+        "title": "Nauka w trakcie pracy",
+        "text": "Poradniki pisane prostym językiem, od tego, czym jest szkliwo, po jego bezpieczny wypał, są tuż obok liczb."
+      }
+    },
+    "umfHeading": "Czym jest wzór Segera (UMF)?",
+    "umfRecipe": "Receptura szkliwa mówi, ile każdego surowca trzeba odważyć. Wzór Segera (po angielsku unity molecular formula, UMF) mówi, czym te surowce stają się w piecu: ile jest cząsteczek każdego tlenku, w proporcji przeliczonej tak, by topniki sumowały się do jedności.",
+    "umfGroups": "Topniki sprawiają, że szkliwo się topi, tlenek glinu zwiększa lepkość stopu, a krzemionka tworzy szkło. Porównanie tych trzech grup wyjaśnia, dlaczego jedno szkliwo jest błyszczące, a inne matowe, albo dlaczego jedno spływa, a inne zostaje na miejscu, i pokazuje, jak zastąpić surowiec, którego już się nie sprzedaje.",
+    "readAdvice": "Więcej porad o szkliwach",
+    "closingHeading": "Wszystko gotowe.",
+    "closingText": "Najpierw można wypróbować kalkulator, a potem założyć konto, aby zachować to, co powstało."
+  },
+  "about": {
+    "title": "O aplikacji Glazecalc",
+    "lead": "Bezpłatny kalkulator chemii szkliw i notatnik o otwartym kodzie źródłowym dla garncarzy, ceramików i studentów.",
+    "whatHeading": "Do czego służy",
+    "what": "Glazecalc zamienia recepturę szkliwa, czyli surowce i odważane ilości każdego z nich, na jej wzór Segera (UMF): tlenki, z których składa się szkliwo po wypale, przeliczone tak, by topniki sumowały się do jedności. Dzięki temu receptury można porównywać, łatwiej zrozumieć zachowanie szkliwa i łatwiej zastąpić surowiec, gdy trzeba.",
+    "alongside": "Oprócz kalkulatora aplikacja przechowuje receptury, własne surowce, barwniki i inne dodatki, notatki i dzienniki wypałów, a także stronę praktycznych <advice>porad o szkliwach</advice> oraz <guides>poradniki</guides> dla początkujących ceramików, od tego, czym jest szkliwo, po jego bezpieczny wypał.",
+    "numbersHeading": "Jak są obliczane wyniki",
+    "numbers": "Każdy surowiec jest opisany wzorem chemicznym lub składem tlenkowym oraz stratą prażenia: częścią, która ulatnia się w piecu, jak dwutlenek węgla z kredy lub woda z kaolinu. Glazecalc przelicza każdą ilość na mole poszczególnych tlenków na podstawie standardowych mas molowych, sumuje je dla całej receptury i dzieli przez łączną liczbę moli topników. Barwniki i inne dodatki są wymienione przy recepturze, ale, jak się zwykle przyjmuje, pominięte we wzorze Segera.",
+    "guide": "Wyniki są wskazówką, a nie gwarancją. Prawdziwe surowce różnią się w zależności od dostawcy i partii, a wypał ma takie samo znaczenie jak chemia, dlatego każde szkliwo trzeba przetestować. Szkliwa na powierzchnie stykające się z żywnością należy poddać badaniu uwalniania metali.",
+    "builtHeading": "Budowa aplikacji",
+    "built": "Aplikacja Glazecalc powstała w 2017 r. i została przebudowana w 2026 r. To jedna niewielka aplikacja internetowa, a jej <source>kod źródłowy jest w serwisie GitHub</source> na licencji MIT.",
+    "stackBrowser": "Angular 22 w przeglądarce (komponenty standalone i sygnały), z chemią szkliw w małej, wspólnej bibliotece.",
+    "stackServer": "API w języku TypeScript na Node.js 24 i Express 5, z bazą MongoDB 9, sprawdzane przez ponad 350 testów automatycznych.",
+    "stackHosting": "Działa w kontenerach Docker w Amazon Web Services, za serwerem nginx, z HTTPS od Let's Encrypt.",
+    "stackDeploy": "Wdrażana przez GitHub Actions: obrazy są budowane i testowane przy każdej zmianie, a wdrożenia logują się do AWS bez przechowywanych kluczy.",
+    "whoHeading": "Autor",
+    "who": "Aplikację Glazecalc tworzy Aaron Filson. Problem lub pomysł można <issues>zgłosić w serwisie GitHub</issues>.",
+    "studio": "Ręcznie robiona ceramika Aarona Filsona jest w <studio>Updraft Pottery Studio</studio> w Tacomie w stanie Waszyngton. Można obejrzeć prace i zamówić tę, która przypadnie do gustu."
+  },
+  "privacy": {
+    "title": "Prywatność",
+    "lead": "Ostatnia aktualizacja: październik 2026 r.",
+    "shortHeading": "W skrócie",
+    "short": "Glazecalc przechowuje tylko to, co jest potrzebne do obsługi konta, i nic więcej. Nie ma reklam, analityki, śledzących plików cookie ani skryptów firm trzecich. Dane nigdy nie są sprzedawane ani udostępniane.",
+    "storedHeading": "Co jest przechowywane",
+    "storedAccount": "<b>Konto:</b> adres e-mail i hasło, które jest przechowywane wyłącznie jako jednokierunkowy skrót (bcrypt), nigdy jako samo hasło.",
+    "storedTrial": "<b>Okres próbny (przycisk Wypróbuj teraz):</b> bez adresu e-mail i hasła, tylko wygenerowana nazwa, np. „speckled quiet kilns”. Okres próbny i wszystko, co w nim zapisano, są usuwane automatycznie 14 dni po jego rozpoczęciu, chyba że zostanie założone konto, aby je zachować.",
+    "storedSaved": "<b>Zapisywane treści:</b> receptury, surowce, dodatki, notatki, dzienniki wypałów i porady. Inni użytkownicy ich nie widzą.",
+    "storedResets": "<b>Prośby o zresetowanie hasła:</b> odcisk cyfrowy każdego linku do resetowania hasła (nie sam link), usuwany automatycznie, gdy link wygasa 30 minut później.",
+    "storedBrowser": "<b>W przeglądarce:</b> jeden plik cookie, <code>glazecalc_session</code>, który podtrzymuje zalogowanie. Zawiera token logowania, skrypty na stronie nie mogą go odczytać, trafia wyłącznie na własny serwer aplikacji Glazecalc i jest ważny 7 dni (14 w okresie próbnym). Pamięć lokalna przechowuje informację o zalogowaniu oraz, w okresie próbnym, jego nazwę i datę zakończenia. Wylogowanie je usuwa.",
+    "emailHeading": "E-mail",
+    "email": "Glazecalc wysyła wiadomości e-mail tylko na prośbę o zresetowanie hasła i po zmianie hasła. Są one wysyłane przez Amazon Simple Email Service. Nie ma newslettera ani e-maili marketingowych.",
+    "hostingHeading": "Logi, kopie zapasowe i hosting",
+    "logs": "Serwer WWW zapisuje każde żądanie, w tym adres IP, w logu przechowywanym przez 14 dni w celu obsługi i zabezpieczenia witryny.",
+    "backups": "Zaszyfrowane kopie zapasowe bazy danych są przechowywane przez 30 dni, a kopie dysku serwera przez 7 dni, aby po awarii można było przywrócić witrynę.",
+    "hosting": "Wszystko jest hostowane przez Amazon Web Services w Stanach Zjednoczonych (Oregon).",
+    "deletingHeading": "Usuwanie danych",
+    "deleting": "Konto można usunąć na <account>stronie konta</account>. Spowoduje to natychmiastowe usunięcie konta i wszystkiego, co zostało w nim zapisane; przycisk Zakończ okres próbny robi to samo z okresem próbnym. Dane w kopiach zapasowych znikają w miarę wygasania tych kopii, w ciągu 30 dni.",
+    "questionsHeading": "Pytania",
+    "questions": "Pytania można zadawać, <issues>otwierając zgłoszenie w serwisie GitHub</issues>. Jeśli te zasady się zmienią, zmieni się też data na górze tej strony."
+  },
+  "notFound": {
+    "heading": "Nie znaleziono strony",
+    "text": "Pod tym adresem nie ma strony. Mogła zostać przeniesiona albo link może zawierać literówkę.",
+    "start": "Przejdź do strony głównej"
+  },
+  "advice": {
+    "title": "Porady o szkliwach",
+    "lead": "Praktyczne wskazówki dotyczące mieszania, szkliwienia i wypału, a także własne porady.",
+    "signUp": "Aby przechowywać własne porady, trzeba <signup>założyć bezpłatne konto</signup> lub <signin>się zalogować</signin>.",
+    "generalHeading": "Porady ogólne",
+    "tags": "Tagi: {list}",
+    "addHeading": "Dodawanie własnej porady",
+    "titleLabel": "Tytuł:",
+    "tagsLabel": "Tagi:",
+    "contentLabel": "Treść porady:",
+    "save": "Zapisz",
+    "mineHeading": "Moje porady",
+    "nothingSaved": "Nic jeszcze nie zapisano.",
+    "titleMissing": "Należy nadać poradzie tytuł.",
+    "contentMissing": "Należy wpisać treść porady.",
+    "fetchFailed": "Wystąpił błąd podczas pobierania porad.",
+    "standardFetchFailed": "Wystąpił błąd podczas pobierania porad z serwera.",
+    "saved": "Porada została dodana.",
+    "saveFailed": "Wystąpił błąd podczas wysyłania porady."
+  }
+}

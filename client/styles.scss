@@ -247,7 +247,7 @@ img {
 
 .skip-link {
   position: absolute;
-  left: 1rem;
+  inset-inline-start: 1rem;
   top: -3rem;
   z-index: 10;
   padding: 0.5rem 1rem;
@@ -295,7 +295,7 @@ img {
 }
 
 .nav-toggle {
-  margin-left: auto;
+  margin-inline-start: auto;
   display: none;
 }
 
@@ -333,7 +333,7 @@ img {
 }
 
 .nav-account {
-  margin-left: auto;
+  margin-inline-start: auto;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -387,11 +387,11 @@ img {
   }
   .nav-quick-signin {
     display: inline-block;
-    margin-left: auto;
-    margin-right: 0.75rem;
+    margin-inline-start: auto;
+    margin-inline-end: 0.75rem;
   }
   .nav-quick-signin + .nav-toggle {
-    margin-left: 0;
+    margin-inline-start: 0;
   }
   .nav-menu {
     display: none;
@@ -407,7 +407,7 @@ img {
     flex-direction: column;
   }
   .nav-account {
-    margin-left: 0;
+    margin-inline-start: 0;
   }
 }
 
@@ -478,7 +478,7 @@ img {
     margin-top: 0.4rem;
   }
   .btn {
-    margin-left: 0.5rem;
+    margin-inline-start: 0.5rem;
   }
 }
 
@@ -522,7 +522,7 @@ main {
     }
     th {
       background: var(--gc-surface-2);
-      text-align: left;
+      text-align: start;
     }
   }
 }
@@ -549,7 +549,7 @@ main .form-control.is-invalid {
   border-color: var(--gc-danger-text);
   box-shadow: 0 0 0 1px var(--gc-danger-text);
   background-image: none;
-  padding-right: 0.65rem;
+  padding-inline-end: 0.65rem;
 }
 
 .field-problem {
@@ -663,7 +663,7 @@ main .form-control.is-invalid {
     color: var(--gc-muted);
     font-size: 0.85rem;
     font-weight: 600;
-    text-align: left;
+    text-align: start;
   }
   tbody th,
   tfoot th {
@@ -679,7 +679,7 @@ main .form-control.is-invalid {
   }
   td:last-child {
     width: 1%;
-    text-align: right;
+    text-align: end;
   }
   input {
     width: 6.5rem;
@@ -901,7 +901,7 @@ main .form-control.is-invalid {
 .library-status {
   color: var(--gc-muted);
   font-size: 0.8rem;
-  margin-left: 0.35rem;
+  margin-inline-start: 0.35rem;
   white-space: nowrap;
 }
 
@@ -927,7 +927,7 @@ main .form-control.is-invalid {
   border: 0;
   border-bottom: 1px solid var(--gc-border);
   color: var(--gc-text);
-  text-align: left;
+  text-align: start;
 }
 
 button.library-item:hover,
@@ -973,13 +973,13 @@ button.library-item:focus-visible {
 
 .recipe-status {
   color: var(--gc-muted);
-  margin-left: 0.25rem;
+  margin-inline-start: 0.25rem;
 }
 
 // Materials no longer current, and what can take their place (Try modern materials).
 .recipe-swap,
 .recipe-shelf {
-  border-left: 3px solid var(--gc-primary);
+  border-inline-start: 3px solid var(--gc-primary);
   padding: 0.25rem 0 0.25rem 0.75rem;
   margin: 0.5rem 0 1rem;
   p {
@@ -1002,7 +1002,7 @@ button.library-item:focus-visible {
 
 // A recipe with lead: warned in the danger color, with Replace lead.
 .recipe-lead {
-  border-left-color: var(--gc-danger-text);
+  border-inline-start-color: var(--gc-danger-text);
 }
 
 .recipe-lead-cone {
@@ -1045,7 +1045,7 @@ button.library-item:focus-visible {
   }
   .swap-uses,
   .swap-cautions {
-    padding-left: 1.1rem;
+    padding-inline-start: 1.1rem;
     margin: 0 0 0.75rem;
   }
   .swap-uses li {
@@ -1132,7 +1132,7 @@ button.library-item:focus-visible {
 .unity-warnings,
 .unity-additives {
   font-size: 0.95rem;
-  padding-left: 1.1rem;
+  padding-inline-start: 1.1rem;
 }
 
 .unity-panel h3.unity-additives-heading {
@@ -1152,7 +1152,7 @@ button.library-item:focus-visible {
   flex-wrap: wrap;
   align-items: center;
   gap: 0.4rem;
-  margin-left: auto;
+  margin-inline-start: auto;
 }
 
 // The Remove question takes a line of its own, under the record's buttons.
@@ -1174,6 +1174,10 @@ button.library-item:focus-visible {
   }
 }
 
+.standard-table-scroll {
+  overflow-x: auto;
+}
+
 .standard-count {
   color: var(--gc-muted);
   font-size: 0.9rem;
@@ -1186,7 +1190,7 @@ button.library-item:focus-visible {
   border-radius: 999px;
   color: var(--gc-danger-text);
   font-size: 0.75rem;
-  margin-left: 0.25rem;
+  margin-inline-start: 0.25rem;
   padding: 0.05rem 0.45rem;
   white-space: nowrap;
 }
@@ -1336,6 +1340,13 @@ code {
 }
 
 // Guides (pages/guides): contents, then sections as panels, with tables, callouts, a glossary and sources.
+// Formulas and names keep their own direction inside right-to-left text, and
+// browser translation leaves formulas alone (translate="no" on them).
+.formula,
+bdi {
+  unicode-bidi: isolate;
+}
+
 .guide-note {
   color: var(--gc-muted);
   max-width: 48rem;
@@ -1351,7 +1362,7 @@ code {
     columns: 2 16rem;
     column-gap: 2rem;
     margin: 0;
-    padding-left: 1.25rem;
+    padding-inline-start: 1.25rem;
   }
   li {
     break-inside: avoid;
@@ -1388,15 +1399,16 @@ code {
 }
 
 .guide-callout {
-  border-left: 3px solid var(--gc-primary);
+  border-inline-start: 3px solid var(--gc-primary);
   padding: 0.35rem 0 0.35rem 0.75rem;
   margin: 0.75rem 0;
 }
 
 .guide-warning {
-  border-left: 3px solid var(--gc-danger-text);
+  border-inline-start: 3px solid var(--gc-danger-text);
   background: var(--gc-danger-bg);
-  border-radius: 0 var(--gc-radius) var(--gc-radius) 0;
+  border-start-end-radius: var(--gc-radius);
+  border-end-end-radius: var(--gc-radius);
   padding: 0.5rem 0.75rem;
   margin: 0.75rem 0;
 }
@@ -1411,7 +1423,7 @@ code {
   font-size: 0.95rem;
   caption {
     caption-side: top;
-    text-align: left;
+    text-align: start;
     font-weight: 600;
     color: inherit;
     padding: 0 0 0.35rem;
@@ -1420,14 +1432,14 @@ code {
   td {
     border-bottom: 1px solid var(--gc-border);
     padding: 0.3rem 0.75rem 0.3rem 0;
-    text-align: left;
+    text-align: start;
     vertical-align: top;
   }
   thead th {
     border-bottom-width: 2px;
   }
   .num {
-    text-align: right;
+    text-align: end;
     font-variant-numeric: tabular-nums;
   }
 }

@@ -1,0 +1,88 @@
+{
+  "home": {
+    "title": "Notatnik pracowni",
+    "signedInAs": "Zalogowano jako {email}.",
+    "trying": "Trwa okres próbny aplikacji Glazecalc pod nazwą {name}. Warto zacząć od receptury.",
+    "welcomeBack": "Można wrócić do przerwanej pracy.",
+    "sections": {
+      "recipe": {
+        "title": "Receptury",
+        "text": "Można zbudować szkliwo z surowców i ich ilości, zobaczyć jego wzór Segera (UMF) i je zapisać."
+      },
+      "material": {
+        "title": "Surowce",
+        "text": "Można dodać własne surowce, ze wzoru chemicznego lub ze składu podanego przez dostawcę."
+      },
+      "additive": {
+        "title": "Dodatki i barwniki",
+        "text": "Można tu przechowywać barwniki i zmętniacze dodawane ponad szkliwo bazowe."
+      },
+      "firing": {
+        "title": "Dzienniki wypałów",
+        "text": "Można zapisywać czasy, temperatury i stożki każdego wypału."
+      },
+      "notes": {
+        "title": "Notatki",
+        "text": "Można zapisywać wyniki testów i wszystko inne, co warto zapamiętać."
+      },
+      "advice": {
+        "title": "Porady o szkliwach",
+        "text": "Wskazówki dotyczące mieszania, szkliwienia i wypału oraz własne porady."
+      },
+      "guides": {
+        "title": "Poradniki",
+        "text": "Od tego, czym jest szkliwo, po jego wypał – z dbałością o bezpieczeństwo wszystkich po drodze."
+      }
+    },
+    "newHere": "Pierwsze spotkanie ze wzorem Segera? Podstawy wyjaśnia <advice>strona z poradami</advice>, a to, jak działa Glazecalc, opisuje <about>strona o aplikacji</about>."
+  },
+  "firing": {
+    "title": "Dzienniki wypałów",
+    "lead": "Zapis każdego wypału: czasy, temperatury, stożki i uwagi o piecu.",
+    "titleLabel": "Nazwa wypału:",
+    "kiln": "Piec:",
+    "date": "Data wypału:",
+    "notes": "Uwagi o wypale:",
+    "fieldSelect": "Pola do dodania do zapisu wypału:",
+    "addField": "Dodaj pole",
+    "included": "Dodane pola:",
+    "fieldName": "Nazwa pola: {name}",
+    "moveLeft": "Przesuń pole w lewo",
+    "moveRight": "Przesuń pole w prawo",
+    "removeField": "Usuń pole",
+    "addRow": "Dodaj wiersz do tabeli wypału",
+    "recordHeading": "Zapisz wypał",
+    "rowActions": "Działania na wierszu",
+    "cell": "{field}, wiersz {row}",
+    "removeRow": "Usuń wiersz",
+    "save": "Zapisz",
+    "storedHeading": "Moje zapisane wypały:",
+    "stored": "Nazwa: {title}, piec: {kiln}, data: {date}",
+    "storedNotes": "Uwagi: {notes}",
+    "titleMissing": "Należy nadać wypałowi nazwę.",
+    "fieldsMissing": "Należy dodać co najmniej jedno pole do zapisu, na przykład {example}.",
+    "chooseField": "Należy wybrać pole do dodania, a potem użyć przycisku Dodaj pole.",
+    "fetchFailed": "Wystąpił błąd podczas pobierania zapisów wypałów.",
+    "saved": "Zapisano wypał na serwerze.",
+    "saveFailed": "Błąd: żądanie do serwera nie powiodło się."
+  },
+  "notes": {
+    "title": "Notatki",
+    "lead": "Wszystko inne, co warto zapamiętać o szkliwach.",
+    "intro": "To jest strona notatek. Można tu robić notatki i je zapisywać.",
+    "titleLabel": "Tytuł:",
+    "content": "Notatka:",
+    "save": "Zapisz",
+    "mineHeading": "Moje zapisane notatki:",
+    "titleMissing": "Należy nadać notatce tytuł.",
+    "contentMissing": "Należy wpisać treść notatki.",
+    "untitled": "Notatka bez tytułu",
+    "fetchFailed": "Wystąpił błąd podczas pobierania notatek.",
+    "saved": "Zapisano notatkę na serwerze.",
+    "saveFailed": "Błąd: żądanie do serwera nie powiodło się."
+  },
+  "trash": {
+    "title": "Kosz",
+    "comingSoon": "Kosz pojawi się wkrótce, w następnej wersji aplikacji Glazecalc. Do tego czasu z usuwania należy korzystać ostrożnie: usunięte dane przepadają."
+  }
+}

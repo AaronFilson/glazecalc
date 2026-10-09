@@ -2,9 +2,11 @@ import { Component, computed, inject, signal } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { FormsModule } from '@angular/forms';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
+import { TranslocoDirective, translate } from '@jsverse/transloco';
 import { map } from 'rxjs';
 import { AuthService } from '../../core/auth.service';
 import { errorMessage } from '../../core/error-message';
+import { RichText } from '../../i18n/rich-text';
 import { FieldCheck, FieldChecks, emailAddress, filled, newPassword, samePassword } from '../../shared/field-checks';
 import { Notices, NoticesList } from '../../shared/notices';
 
@@ -14,8 +16,8 @@ import { Notices, NoticesList } from '../../shared/notices';
  */
 @Component({
   selector: 'gc-auth-page',
-  imports: [FieldCheck, FormsModule, NoticesList, RouterLink],
-  template: `
+  imports: [FieldCheck, FormsModule, NoticesList, RichText, RouterLink, TranslocoDirective],
+  template: `<ng-container *transloco="let t">
     <div class="auth-card">
       <gc-notices [notices]="notices" />
       <section class="auth-text">
@@ -23,14 +25,13 @@ import { Notices, NoticesList } from '../../shared/notices';
         <p class="muted">{{ lead() }}</p>
         @if (!signup() && auth.trial(); as trial) {
           <p class="trial-note">
-            Already have an account? Signing in brings what you made as {{ trial.name }} into it. New here?
-            <a routerLink="/signup">Create an account</a> to keep it instead.
+            <gc-rich [text]="t('account.auth.trialNote', { name: trial.name })" [links]="{ signup: '/signup' }" />
           </p>
         }
 
         <form (ngSubmit)="submit()">
           <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
+            <label for="email" class="form-label">{{ t('account.auth.email') }}</label>
             <input
               id="email"
               type="email"
@@ -44,7 +45,7 @@ import { Notices, NoticesList } from '../../shared/notices';
             />
           </div>
           <div class="mb-3">
-            <label for="password" class="form-label">Password</label>
+            <label for="password" class="form-label">{{ t('account.auth.password') }}</label>
             <input
               id="password"
               type="password"
@@ -58,12 +59,12 @@ import { Notices, NoticesList } from '../../shared/notices';
               gcFieldName="password"
             />
             @if (signup()) {
-              <div class="form-text">At least 8 characters.</div>
+              <div class="form-text">{{ t('account.auth.passwordHint') }}</div>
             }
           </div>
           @if (signup()) {
             <div class="mb-3">
-              <label for="confirmation" class="form-label">Confirm password</label>
+              <label for="confirmation" class="form-label">{{ t('account.auth.confirmation') }}</label>
               <input
                 id="confirmation"
                 type="password"
@@ -78,21 +79,24 @@ import { Notices, NoticesList } from '../../shared/notices';
             </div>
           }
           <button type="submit" class="btn btn-primary w-100" [attr.aria-disabled]="busy() || null">
-            {{ signup() ? 'Create account' : 'Sign in' }}
+            {{ signup() ? t('account.auth.createAccount') : t('account.auth.signIn') }}
           </button>
         </form>
 
         @if (signup()) {
-          <p class="auth-links">Already have an account? <a routerLink="/signin">Sign in</a></p>
+          <p class="auth-links">
+            <gc-rich [text]="t('account.auth.haveAccount')" [links]="{ signin: '/signin' }" />
+          </p>
         } @else {
           <p class="auth-links">
-            <a routerLink="/forgot">Forgot your password? Reset it</a><br />
-            New here? <a routerLink="/signup">Create a free account</a>
+            <a routerLink="/forgot">{{ t('account.auth.forgot') }}</a
+            ><br />
+            <gc-rich [text]="t('account.auth.newHere')" [links]="{ signup: '/signup' }" />
           </p>
         }
       </section>
     </div>
-  `,
+  </ng-container>`,
   styles: `
     .auth-card {
       max-width: 28rem;
@@ -122,18 +126,22 @@ export class AuthPage {
   protected readonly busy = signal(false);
   protected readonly checks = new FieldChecks(() => ({
     email: emailAddress(this.email),
-    password: this.signup() ? newPassword(this.password) : filled(this.password, 'Enter your password.'),
+    password: this.signup()
+      ? newPassword(this.password)
+      : filled(this.password, translate('account.auth.passwordMissing')),
     ...(this.signup() ? { confirmation: samePassword(this.confirmation, this.password) } : {})
   }));
   protected readonly heading = computed(() =>
-    !this.signup() ? 'Sign in' : this.auth.trial() ? 'Keep your work' : 'Create your account'
+    !this.signup()
+      ? translate('account.auth.signInHeading')
+      : this.auth.trial()
+        ? translate('account.auth.keepHeading')
+        : translate('account.auth.signUpHeading')
   );
   protected readonly lead = computed(() => {
-    if (!this.signup()) return 'Welcome back to your glaze notebook.';
+    if (!this.signup()) return translate('account.auth.signInLead');
     const trial = this.auth.trial();
-    return trial
-      ? 'Keep everything you made as ' + trial.name + ': add your email and a password. It stays free.'
-      : 'Free. Your recipes, materials and notes are kept private to your account.';
+    return trial ? translate('account.auth.keepLead', { name: trial.name }) : translate('account.auth.signUpLead');
   });
 
   protected async submit(): Promise<void> {
@@ -147,7 +155,10 @@ export class AuthPage {
       // A problem with one field shows on it; others, such as a wrong password at sign-in, above the form.
       if (this.checks.reportServer(err)) return;
       this.notices.error(
-        errorMessage(err, this.signup() ? 'Error: could not create the account.' : 'Error: could not sign in.')
+        errorMessage(
+          err,
+          this.signup() ? translate('account.auth.signUpFailed') : translate('account.auth.signInFailed')
+        )
       );
     } finally {
       this.busy.set(false);

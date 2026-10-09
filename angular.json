@@ -31,14 +31,17 @@
                 "input": "client/public"
               }
             ],
-            "styles": ["node_modules/bootstrap/dist/css/bootstrap.min.css", "client/styles.scss"]
+            "styles": ["node_modules/bootstrap/dist/css/bootstrap.min.css", "client/styles.scss"],
+            "loader": {
+              ".md": "text"
+            }
           },
           "configurations": {
             "production": {
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "600kB",
+                  "maximumWarning": "650kB",
                   "maximumError": "1MB"
                 },
                 {

@@ -1,0 +1,22 @@
+{
+  "unknown-compound": "Unknown compound {compound} in formula",
+  "unknown-oxide": "Unknown oxide {oxide} in material {material}",
+  "invalid-oxide-amount": "Invalid amount for {oxide} in material {material}",
+  "loi-range": "LOI of {material} must be at least 0 and less than 100",
+  "no-oxides": "Material {material} has no oxides",
+  "no-name": "Material must have a name",
+  "no-analysis": "Material {material} needs a formula or an analysis",
+  "recipe-shape": "Recipe must be an array of '{ material, amount }' or a map of amounts",
+  "invalid-amount": "Invalid amount for material {material}",
+  "missing-material": "Recipe line is missing a material",
+  "unknown-material": "Unknown material {material}",
+  "no-flux": "Recipe contains no flux oxides, so the UMF is undefined",
+  "no-target": "The target has no oxides to aim for",
+  "no-materials": "There are no materials to work out",
+  "no-temperature": "The firing temperature is needed to set the boron",
+  "no-flux-to-rebuild": "The glaze has no flux to rebuild",
+  "unknown-element": "Unknown element {element} in {formula}",
+  "bad-formula": "Could not parse formula {formula}",
+  "analysis-total": "Analysis of {material} totals {total}% including LOI; expected about 100%.",
+  "stored-equivalent": "The stored equivalent weight of {material} does not match its formula and LOI; the formula and LOI were used instead."
+}

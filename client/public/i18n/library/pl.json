@@ -1,0 +1,50 @@
+{
+  "common": {
+    "formulaHelp": "Wzór wpisuje się zwykłymi cyframi, na przykład {typed}: liczby pokażą się jako indeksy dolne, {shown}. Aby połączyć części wzoru, jak w {joined}, należy skopiować tę kropkę:",
+    "relatedTo": "Powiązany z:",
+    "notes": "Uwagi:",
+    "loi": "Strata prażenia – LOI (w procentach):",
+    "molecularWeight": "Masa cząsteczkowa wzoru surowca (używana tylko wtedy, gdy pole LOI jest puste):",
+    "formulaHeading": "Wpisywanie wzoru (po wypale):",
+    "oxideSelection": "Wybór tlenku",
+    "noOxide": "brak",
+    "addOxide": "Dodaj tlenek do listy",
+    "formulaIn": "Zapis wzoru:",
+    "percent": "Procentowo",
+    "molecular": "Cząsteczkowo / Wzór Segera",
+    "amount": "Ilość:",
+    "removeOxide": "Usuń ze wzoru",
+    "save": "Zapisz",
+    "elements": "Pierwiastki",
+    "removeNote": "Zapisane receptury mają własną kopię, więc się nie zmienią.",
+    "saveFailed": "Błąd: żądanie do serwera nie powiodło się."
+  },
+  "material": {
+    "title": "Surowce",
+    "lead": "Własne surowce, wprowadzone jako wzór chemiczny lub skład tlenkowy.",
+    "newHeading": "Dane nowego surowca",
+    "name": "Nazwa surowca:",
+    "rawFormula": "Wzór surowca:",
+    "weightsNote": "Masa równoważnikowa i masa po wypale są obliczane ze wzoru i LOI przy zapisie.",
+    "mineHeading": "Moje surowce:",
+    "rawFormulaColumn": "Wzór surowca",
+    "standardHeading": "Surowce standardowe:",
+    "fetchFailed": "Wystąpił błąd podczas pobierania danych o surowcach.",
+    "standardFetchFailed": "Wystąpił błąd podczas pobierania danych o surowcach standardowych.",
+    "saved": "Gotowe. Dodano surowiec do bazy danych."
+  },
+  "additive": {
+    "title": "Dodatki i barwniki",
+    "lead": "Barwniki i zmętniacze liczone ponad recepturę bazową, takie jak tlenek kobaltu czy tlenek cyny. Receptura może je pomijać we wzorze Segera (UMF) albo je w nim uwzględniać.",
+    "newHeading": "Dane nowego dodatku",
+    "name": "Nazwa dodatku:",
+    "formulaAsSold": "Wzór w postaci handlowej:",
+    "noChemistry": "Nie ma składu tlenkowego, jak pigment handlowy: pomijać go we wzorze Segera",
+    "firedNote": "Należy wpisać to, co dodatek daje szkliwu po wypale: czarny tlenek kobaltu, {asSold}, to {fired} przy LOI {loi} %. Receptura może go wtedy uwzględnić we wzorze Segera.",
+    "mineHeading": "Moje dodatki i barwniki:",
+    "standardHeading": "Dodatki standardowe:",
+    "fetchFailed": "Wystąpił błąd podczas pobierania danych o dodatkach.",
+    "standardFetchFailed": "Wystąpił błąd podczas pobierania danych o dodatkach standardowych.",
+    "saved": "Gotowe. Dodano dodatek do bazy danych."
+  }
+}

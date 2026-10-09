@@ -1,0 +1,62 @@
+{
+  "version": {
+    "cones": "Esta guía se muestra para cocción por conos, según lo elegido en Ajustes.",
+    "temperature": "Esta guía se muestra para cocción por temperatura, según lo elegido en Ajustes.",
+    "showTemperature": "Mostrarla para cocción por temperatura",
+    "showCones": "Mostrarla para cocción por conos"
+  },
+  "notTranslated": "Esta guía aún no está traducida, así que se muestra en inglés.",
+  "sectionInEnglish": "Esta sección ha cambiado desde que se tradujo, así que se muestra en inglés hasta que se actualice su traducción.",
+  "list": {
+    "title": "Guías",
+    "lead": "Guías en lenguaje sencillo para ceramistas que empiezan: desde qué es un esmalte hasta su cocción, y cómo mantener a salvo a todo el mundo por el camino.",
+    "note": "Estas guías reúnen lo que publican fabricantes, organismos de seguridad y ceramistas con experiencia, con las fuentes al final de cada una. Son un punto de partida, no sustituyen a las fichas de datos de seguridad de sus materiales, al manual de su horno ni a las normas locales.",
+    "glazingBasics": {
+      "title": "El esmaltado desde sus fundamentos",
+      "text": "Qué es un esmalte, cómo se funde, y cada palabra que encontrará en una receta o en un saco, explicada."
+    },
+    "makingAGlaze": {
+      "title": "Cómo preparar un esmalte",
+      "text": "Comprar, guardar, pesar, mezclar y tamizar un esmalte; después, probarlo y llevar un registro."
+    },
+    "safeMixing": {
+      "title": "Preparación segura y ventilación",
+      "text": "El polvo, la protección respiratoria, la limpieza, los materiales que exigen más cuidado y la ventilación del horno."
+    },
+    "homeSafety": {
+      "title": "No envenene a su familia",
+      "text": "La cerámica en casa con niños y mascotas: el almacenamiento, el polvo, el horno cerámico y qué hacer si alguien se traga algo."
+    },
+    "firing": {
+      "title": "La cocción en un horno sencillo",
+      "text": "Conos, kiln sitters (interruptores de cono) y reguladores manuales, con curvas para la cocción de bizcocho y la de esmalte."
+    }
+  },
+  "contents": "En esta página",
+  "poison": {
+    "numbersFor": "Teléfonos de",
+    "choose": "Elija su país",
+    "label": "A quién llamar en {region}",
+    "caption": "A quién llamar en {region} (números comprobados el {date})",
+    "for": "Para qué",
+    "call": "Teléfono",
+    "notes": "Horario y notas",
+    "emergency": "Una emergencia: alguien está inconsciente, no respira o tiene una convulsión",
+    "poisonAdvice": "{who, select, children {Información toxicológica: {name} (solo para niños)} other {Información toxicológica: {name}}}",
+    "or": "o {number}",
+    "online": "En internet: <link>{name}</link>.",
+    "poisonAdviceNone": "Información toxicológica",
+    "noLine": "No hemos podido confirmar que aquí haya una línea pública de información toxicológica. Llame a su médico, o al número de emergencias si es urgente.",
+    "medicalAdvice": "Consejo médico: {name}",
+    "animals": "Animales: {name}",
+    "animalsNone": "Animales",
+    "vet": "Llame a su veterinario.",
+    "checkedOn": "Comprobado en:",
+    "choosePrompt": "Elija su país para ver a quién llamar allí."
+  },
+  "density": {
+    "sg": "densidad {value}",
+    "baume": "{value} °Bé ({sg})",
+    "pint": "{value} oz por pinta imperial ({sg})"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "common": {
+    "formulaHelp": "Saisissez une formule avec des chiffres ordinaires, comme {typed} : les chiffres s’affichent en indice, {shown}. Pour relier les parties d’une formule, comme dans {joined}, copiez ce point :",
+    "relatedTo": "En rapport avec :",
+    "notes": "Notes :",
+    "loi": "Perte au feu (PAF), en pourcentage :",
+    "molecularWeight": "Masse molaire de la formule crue (utilisée seulement si la PAF est vide) :",
+    "formulaHeading": "Saisissez la formule (après cuisson) :",
+    "oxideSelection": "Choix de l’oxyde",
+    "noOxide": "aucun",
+    "addOxide": "Ajouter l’oxyde à la liste",
+    "formulaIn": "Formule exprimée en :",
+    "percent": "Pourcentage",
+    "molecular": "Moléculaire / unitaire",
+    "amount": "Quantité :",
+    "removeOxide": "Retirer de la formule",
+    "save": "Enregistrer",
+    "elements": "Éléments",
+    "removeNote": "Les recettes enregistrées en gardent leur propre copie : elles ne changeront pas.",
+    "saveFailed": "Erreur : la requête au serveur a échoué."
+  },
+  "material": {
+    "title": "Matières",
+    "lead": "Vos propres matières premières, saisies sous forme de formule chimique ou d’analyse en oxydes.",
+    "newHeading": "Informations sur la nouvelle matière",
+    "name": "Nom de la matière :",
+    "rawFormula": "Formule (crue) :",
+    "weightsNote": "La masse équivalente et la masse après cuisson sont calculées à partir de la formule et de la PAF lors de l’enregistrement.",
+    "mineHeading": "Mes matières :",
+    "rawFormulaColumn": "Formule (crue)",
+    "standardHeading": "Les matières standard :",
+    "fetchFailed": "Impossible de récupérer les informations sur les matières.",
+    "standardFetchFailed": "Impossible de récupérer les informations sur les matières standard.",
+    "saved": "Opération réussie : matière ajoutée à la base de données."
+  },
+  "additive": {
+    "title": "Additifs et colorants",
+    "lead": "Colorants et opacifiants dosés en ajout à la recette de base, comme l’oxyde de cobalt ou l’oxyde d’étain. Une recette peut les exclure de la formule de Seger ou les y compter.",
+    "newHeading": "Informations sur le nouvel additif",
+    "name": "Nom de l’additif :",
+    "formulaAsSold": "Formule, telle que vendue :",
+    "noChemistry": "Additif sans analyse en oxydes, comme un pigment du commerce : l’exclure de la formule de Seger",
+    "firedNote": "Saisissez ce qu’il apporte à l’émail après cuisson : l’oxyde de cobalt noir, {asSold}, correspond à {fired} avec une PAF de {loi} %. Une recette peut alors le compter dans la formule de Seger.",
+    "mineHeading": "Mes additifs et colorants :",
+    "standardHeading": "Les additifs standard :",
+    "fetchFailed": "Impossible de récupérer les informations sur les additifs.",
+    "standardFetchFailed": "Impossible de récupérer les informations sur les additifs standard.",
+    "saved": "Opération réussie : additif ajouté à la base de données."
+  }
+}

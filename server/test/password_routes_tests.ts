@@ -196,7 +196,11 @@ describe('password reset and change', () => {
 
       const wrong = await change(thisDevice, { current: 'not-it', password: 'changed-password' });
       expect(wrong).to.have.status(400);
-      expect(wrong.body).to.eql({ msg: 'Your current password is not correct.', field: 'current' });
+      expect(wrong.body).to.eql({
+        code: 'current-password-wrong',
+        msg: 'Your current password is not correct.',
+        field: 'current'
+      });
       expect(await verify(thisDevice)).to.have.status(200);
 
       const res = await change(thisDevice, { current: 'old-password', password: 'changed-password' });

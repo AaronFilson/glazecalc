@@ -1,183 +1,189 @@
-<gc-page-header title="Materials" lead="Your own raw materials, entered as a chemical formula or an oxide analysis." />
-<gc-notices [notices]="notices" />
+<ng-container *transloco="let t">
+  <gc-page-header [title]="t('library.material.title')" [lead]="t('library.material.lead')" />
+  <gc-notices [notices]="notices" />
 
-<section class="inputbox">
-  <h3>Input information on the new material</h3>
-  <p>
-    Type a formula with plain numbers, such as CaCO3: the counts show as subscripts, CaCO₃. To join the parts of a
-    formula, as in Al₂O₃•2SiO₂•2H₂O, copy this dot: <span class="large">•</span>
-  </p>
-  <form (ngSubmit)="save()">
-    <div class="row">
-      <div class="col-xl-4 col-md-4 col-8">
-        <label for="material-name">Name of Material: </label><br />
-        <input
-          id="material-name"
-          type="text"
-          name="name"
-          [(ngModel)]="form.name"
-          [gcField]="form.checks"
-          gcFieldName="name"
-        />
-      </div>
-      <div class="col-xl-4 col-md-4 col-8">
-        <label for="raw-formula">Raw formula: </label><br />
-        <input id="raw-formula" type="text" name="rawformula" [(ngModel)]="form.rawformula" />
-      </div>
-      <div class="col-xl-4 col-md-4 col-8">
-        <label for="related-to">Related To: </label><br />
-        <input id="related-to" type="text" name="relatedTo" [(ngModel)]="form.relatedTo" />
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-10">
-        <label for="notes" class="boxlabel"> Notes: </label>
-        <textarea id="notes" name="notes" rows="3" class="form-control" [(ngModel)]="form.notes"></textarea>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-xl-4 col-md-4 col-8">
-        <label for="LOI">Loss on Ignition - LOI (percentage): </label>
-        <input id="LOI" type="text" name="loi" [(ngModel)]="form.loi" [gcField]="form.checks" gcFieldName="loi" />
-      </div>
-      <div class="col-xl-4 col-md-4 col-8">
-        <label for="manualmolecularweight">Raw molecular weight of the formula (used only if LOI is blank): </label>
-        <input
-          id="manualmolecularweight"
-          type="text"
-          name="molecularweight"
-          [(ngModel)]="form.molecularweight"
-          [gcField]="form.checks"
-          gcFieldName="molecularweight"
-        />
-      </div>
-    </div>
-    <p>The equivalent and fired weights are calculated from the formula and LOI when you save.</p>
-
-    <h4>Enter the formula (fired):</h4>
-    <div class="row">
-      <div class="col-lg-6">
-        <label for="firedoxide">Oxide Selection</label>
-        <div>
-          <select
-            id="firedoxide"
-            name="firedox-select"
-            [(ngModel)]="form.selectedOxide"
+  <section class="inputbox">
+    <h3>{{ t('library.material.newHeading') }}</h3>
+    <p>
+      {{ t('library.common.formulaHelp', { typed: 'CaCO3', shown: 'CaCO₃', joined: 'Al₂O₃•2SiO₂•2H₂O' }) }}
+      <span class="large">•</span>
+    </p>
+    <form (ngSubmit)="save()">
+      <div class="row">
+        <div class="col-xl-4 col-md-4 col-8">
+          <label for="material-name">{{ t('library.material.name') }} </label><br />
+          <input
+            id="material-name"
+            type="text"
+            name="name"
+            [(ngModel)]="form.name"
             [gcField]="form.checks"
-            gcFieldName="oxide"
-          >
-            <option value="">none</option>
-            @for (oxide of oxides; track oxide.value) {
-              <option [value]="oxide.value">{{ oxide.label }}</option>
-            }
-          </select>
-        </div>
-        <button type="button" class="btn btn-light border" (click)="form.addOxide()">Add the oxide to the list</button>
-      </div>
-      <fieldset class="col-lg-6">
-        <legend class="h5">This formula is in :</legend>
-        <div class="form-check">
-          <input
-            id="radiopercent"
-            class="form-check-input"
-            type="radio"
-            name="percentmole"
-            value="percent"
-            [(ngModel)]="form.percentmole"
+            gcFieldName="name"
           />
-          <label for="radiopercent" class="form-check-label">Percent</label>
         </div>
-        <div class="form-check">
+        <div class="col-xl-4 col-md-4 col-8">
+          <label for="raw-formula">{{ t('library.material.rawFormula') }} </label><br />
+          <input id="raw-formula" type="text" name="rawformula" [(ngModel)]="form.rawformula" />
+        </div>
+        <div class="col-xl-4 col-md-4 col-8">
+          <label for="related-to">{{ t('library.common.relatedTo') }} </label><br />
+          <input id="related-to" type="text" name="relatedTo" [(ngModel)]="form.relatedTo" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-10">
+          <label for="notes" class="boxlabel"> {{ t('library.common.notes') }} </label>
+          <textarea id="notes" name="notes" rows="3" class="form-control" [(ngModel)]="form.notes"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-4 col-md-4 col-8">
+          <label for="LOI">{{ t('library.common.loi') }} </label>
+          <input id="LOI" type="text" name="loi" [(ngModel)]="form.loi" [gcField]="form.checks" gcFieldName="loi" />
+        </div>
+        <div class="col-xl-4 col-md-4 col-8">
+          <label for="manualmolecularweight">{{ t('library.common.molecularWeight') }} </label>
           <input
-            id="radiomole"
-            class="form-check-input"
-            type="radio"
-            name="percentmole"
-            value="molecular"
-            [(ngModel)]="form.percentmole"
+            id="manualmolecularweight"
+            type="text"
+            name="molecularweight"
+            [(ngModel)]="form.molecularweight"
+            [gcField]="form.checks"
+            gcFieldName="molecularweight"
           />
-          <label for="radiomole" class="form-check-label">Molecular / Unity</label>
         </div>
-      </fieldset>
-    </div>
-    <div class="row">
-      <div class="col-lg-12">
-        <ul>
-          @for (line of form.formula(); track $index) {
-            <li>
-              <b>{{ formatFormula(line.name) }}</b>
-              <p>
-                <label [for]="'oxide-amount-' + $index">Amount: </label>
-                <input
-                  [id]="'oxide-amount-' + $index"
-                  type="text"
-                  [name]="'amount' + $index"
-                  class="oxide-amount"
-                  [gcField]="form.checks"
-                  [gcFieldName]="'amount-' + $index"
-                  [(ngModel)]="line.amount"
-                />
-              </p>
-              <button type="button" class="btn btn-light border" (click)="form.removeOxide($index)">
-                Remove from formula list
-              </button>
-            </li>
-          }
-        </ul>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-xl-12">
-        <button type="submit" class="btn btn-primary" [disabled]="saving.active()">Save</button>
-      </div>
-    </div>
-  </form>
-</section>
-<br />
+      <p>{{ t('library.material.weightsNote') }}</p>
 
-@if (myMaterials().length) {
-  <section class="tech-info" aria-labelledby="my-materials-heading">
-    <h4 id="my-materials-heading">My server materials:</h4>
-    <table class="table table-bordered">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Equivalent Weight</th>
-          <th>Fired Weight</th>
-          <th>Notes</th>
-          <th>Elements</th>
-          <th>Raw Formula</th>
-        </tr>
-      </thead>
-      <tbody>
-        @for (mat of sortedMyMaterials(); track mat._id) {
-          <tr>
-            <td>
-              <b>{{ mat.name }}</b>
-              <div>
-                <gc-remove-button
-                  [name]="removal.nameOf(mat)"
-                  note="Saved recipes keep their own copy, so they won't change."
-                  [busy]="removal.isPending(mat)"
-                  [problem]="removal.problemFor(mat)"
-                  (confirmed)="removal.remove(mat)"
-                />
-              </div>
-            </td>
-            <td>{{ mat.equivalent }}</td>
-            <td>{{ mat.formulaweight }}</td>
-            <td>{{ firstOf(mat.notes) }}</td>
-            <td>{{ fieldsText(mat) }}</td>
-            <td>{{ formatFormula(mat.rawformula) }}</td>
-          </tr>
-        }
-      </tbody>
-    </table>
+      <h4>{{ t('library.common.formulaHeading') }}</h4>
+      <div class="row">
+        <div class="col-lg-6">
+          <label for="firedoxide">{{ t('library.common.oxideSelection') }}</label>
+          <div>
+            <select
+              id="firedoxide"
+              name="firedox-select"
+              [(ngModel)]="form.selectedOxide"
+              [gcField]="form.checks"
+              gcFieldName="oxide"
+            >
+              <option value="">{{ t('library.common.noOxide') }}</option>
+              @for (oxide of oxides; track oxide.value) {
+                <option [value]="oxide.value">{{ oxide.label }}</option>
+              }
+            </select>
+          </div>
+          <button type="button" class="btn btn-light border" (click)="form.addOxide()">
+            {{ t('library.common.addOxide') }}
+          </button>
+        </div>
+        <fieldset class="col-lg-6">
+          <legend class="h5">{{ t('library.common.formulaIn') }}</legend>
+          <div class="form-check">
+            <input
+              id="radiopercent"
+              class="form-check-input"
+              type="radio"
+              name="percentmole"
+              value="percent"
+              [(ngModel)]="form.percentmole"
+            />
+            <label for="radiopercent" class="form-check-label">{{ t('library.common.percent') }}</label>
+          </div>
+          <div class="form-check">
+            <input
+              id="radiomole"
+              class="form-check-input"
+              type="radio"
+              name="percentmole"
+              value="molecular"
+              [(ngModel)]="form.percentmole"
+            />
+            <label for="radiomole" class="form-check-label">{{ t('library.common.molecular') }}</label>
+          </div>
+        </fieldset>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <ul>
+            @for (line of form.formula(); track $index) {
+              <li>
+                <b translate="no">{{ formatFormula(line.name) }}</b>
+                <p>
+                  <label [for]="'oxide-amount-' + $index">{{ t('library.common.amount') }} </label>
+                  <input
+                    [id]="'oxide-amount-' + $index"
+                    type="text"
+                    [name]="'amount' + $index"
+                    class="oxide-amount"
+                    [gcField]="form.checks"
+                    [gcFieldName]="'amount-' + $index"
+                    [(ngModel)]="line.amount"
+                  />
+                </p>
+                <button type="button" class="btn btn-light border" (click)="form.removeOxide($index)">
+                  {{ t('library.common.removeOxide') }}
+                </button>
+              </li>
+            }
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-12">
+          <button type="submit" class="btn btn-primary" [disabled]="saving.active()">
+            {{ t('library.common.save') }}
+          </button>
+        </div>
+      </div>
+    </form>
   </section>
   <br />
-}
 
-<section class="tech-info" aria-labelledby="standard-materials-heading">
-  <h4 id="standard-materials-heading">The standard materials:</h4>
-  <gc-standard-list [records]="standardMaterials()" noun="materials" />
-</section>
+  @if (myMaterials().length) {
+    <section class="tech-info" aria-labelledby="my-materials-heading">
+      <h4 id="my-materials-heading">{{ t('library.material.mineHeading') }}</h4>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>{{ t('standard.name') }}</th>
+            <th>{{ t('standard.equivalentWeight') }}</th>
+            <th>{{ t('standard.firedWeight') }}</th>
+            <th>{{ t('standard.notes') }}</th>
+            <th>{{ t('library.common.elements') }}</th>
+            <th>{{ t('library.material.rawFormulaColumn') }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          @for (mat of sortedMyMaterials(); track mat._id) {
+            <tr>
+              <td>
+                <b>{{ mat.name }}</b>
+                <div>
+                  <gc-remove-button
+                    [name]="removal.nameOf(mat)"
+                    [note]="t('library.common.removeNote')"
+                    [busy]="removal.isPending(mat)"
+                    [problem]="removal.problemFor(mat)"
+                    (confirmed)="removal.remove(mat)"
+                  />
+                </div>
+              </td>
+              <td>{{ mat.equivalent }}</td>
+              <td>{{ mat.formulaweight }}</td>
+              <td>{{ firstOf(mat.notes) }}</td>
+              <td translate="no">{{ fieldsText(mat) }}</td>
+              <td translate="no">{{ formatFormula(mat.rawformula) }}</td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    </section>
+    <br />
+  }
+
+  <section class="tech-info" aria-labelledby="standard-materials-heading">
+    <h4 id="standard-materials-heading">{{ t('library.material.standardHeading') }}</h4>
+    <gc-standard-list [records]="standardMaterials()" noun="materials" />
+  </section>
+</ng-container>

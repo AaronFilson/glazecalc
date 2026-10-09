@@ -29,6 +29,19 @@ export interface RecipeLine {
   amount: number | string | undefined;
 }
 
+/** A message from the chemistry: its code and values, for the app to translate, and its English (messages.js). */
+export interface ChemistryMessage {
+  code: string;
+  params: Record<string, string | number>;
+  message: string;
+}
+
+/** An error that stops a calculation carries its code and values too. */
+export interface ChemistryError extends Error {
+  code?: string;
+  params?: Record<string, string | number>;
+}
+
 export interface UmfResult {
   umf: Record<string, number>;
   groups: Record<OxideGroup, number>;
@@ -37,7 +50,10 @@ export interface UmfResult {
   loi: number;
   /** Calculated thermal expansion, x10^-6 per °C, as Digitalfire and Glazy work it out; null with nothing to go on. */
   expansion: number | null;
+  /** In English. */
   warnings: string[];
+  /** The same warnings with their codes. */
+  warningCodes: ChemistryMessage[];
 }
 
 export interface MaterialWeights {
@@ -46,7 +62,10 @@ export interface MaterialWeights {
   firedWeight: number;
   molecularWeight: number;
   loi: number;
+  /** In English. */
   warnings: string[];
+  /** The same warnings with their codes. */
+  warningCodes: ChemistryMessage[];
 }
 
 /** IUPAC standard atomic weights (abridged), g/mol, of the elements in the oxides. */
@@ -190,3 +209,6 @@ export function selectMaterials(
   target: Record<string, number>,
   options?: FitOptions & { closer?: boolean; extras?: number; keepOwn?: boolean }
 ): Selection;
+
+/** The chemistry's messages by code, in English (lib/chemistry/messages.js). */
+export const MESSAGES: Readonly<Record<string, string>>;

@@ -1,11 +1,15 @@
-import { DecimalPipe } from '@angular/common';
+import { listOf, upTo } from '../../shared/format';
+import { FixedPipe, PlainPipe } from '../../shared/format-pipes';
 import { Component, OnDestroy, computed, effect, inject, input, output, signal, untracked } from '@angular/core';
 import { Title } from '@angular/platform-browser';
+import { TranslocoDirective, translate } from '@jsverse/transloco';
+import { marker } from '@jsverse/transloco-keys-manager/marker';
 import { MaterialInput } from '../../../../lib/chemistry';
-import { Recipe } from '../../core/models';
+import { Additive, Recipe } from '../../core/models';
+import { RichText } from '../../i18n/rich-text';
 import { firstOf } from '../../shared/options';
 import { compareUnity, formatChange } from './compare';
-import { amountOf, formatAmount, totalOf } from './rebase';
+import { amountOf, totalOf } from './rebase';
 import { additiveAmount, evaluate } from './recipe-analysis';
 
 export interface CompareChoice {
@@ -17,10 +21,11 @@ export interface CompareChoice {
 /** How colorants count in both unity formulas: as each recipe says, or the same in both. */
 type Counting = 'each' | 'both' | 'neither';
 
+/** The choices, each with its label's key. */
 const COUNTING: ReadonlyArray<{ value: Counting; label: string }> = [
-  { value: 'each', label: 'As each recipe says' },
-  { value: 'both', label: 'Count them in both' },
-  { value: 'neither', label: 'Leave them out of both' }
+  { value: 'each', label: marker('recipe.compare.countEach') },
+  { value: 'both', label: marker('recipe.compare.countBoth') },
+  { value: 'neither', label: marker('recipe.compare.countNeither') }
 ];
 
 /**
@@ -30,21 +35,21 @@ const COUNTING: ReadonlyArray<{ value: Counting; label: string }> = [
  */
 @Component({
   selector: 'gc-recipe-compare',
-  imports: [DecimalPipe],
-  template: `
+  imports: [FixedPipe, PlainPipe, RichText, TranslocoDirective],
+  template: `<ng-container *transloco="let t">
     <section class="compare-controls no-print" aria-labelledby="compare-heading">
-      <h1 id="compare-heading" tabindex="-1">Compare two recipes</h1>
+      <h1 id="compare-heading" tabindex="-1">{{ t('recipe.compare.heading') }}</h1>
       <div class="compare-options">
         @for (side of sides; track side.name) {
           <div>
-            <label class="form-label" [for]="'compare-' + side.name">{{ side.label }}</label>
+            <label class="form-label" [for]="'compare-' + side.name">{{ t(side.label) }}</label>
             <select
               class="form-select"
               [id]="'compare-' + side.name"
               (change)="choose.emit({ side: side.name, key: $any($event.target).value })"
             >
               @if (!chosen(side.name)) {
-                <option value="" selected>Choose a recipe</option>
+                <option value="" selected>{{ t('recipe.compare.choose') }}</option>
               }
               @for (choice of choices(); track choice.key) {
                 <option [value]="choice.key" [selected]="choice.key === keyOf(side.name)">{{ choice.label }}</option>
@@ -53,7 +58,7 @@ const COUNTING: ReadonlyArray<{ value: Counting; label: string }> = [
           </div>
         }
         <fieldset>
-          <legend class="form-label">Colorants and additives in the unity formulas</legend>
+          <legend class="form-label">{{ t('recipe.compare.counting') }}</legend>
           @for (option of countings; track option.value) {
             <div class="form-check">
               <input
@@ -65,41 +70,40 @@ const COUNTING: ReadonlyArray<{ value: Counting; label: string }> = [
                 [checked]="counting() === option.value"
                 (change)="counting.set(option.value)"
               />
-              <label class="form-check-label" [for]="'compare-counting-' + option.value">{{ option.label }}</label>
+              <label class="form-check-label" [for]="'compare-counting-' + option.value">{{ t(option.label) }}</label>
             </div>
           }
         </fieldset>
       </div>
       @if (countingDiffers()) {
         <p class="compare-note">
-          One of these counts its colorants in the unity formula and the other does not. To compare like with like,
-          count them in both or leave them out of both.
+          {{ t('recipe.compare.countingDiffers') }}
         </p>
       }
       <div class="compare-actions">
-        <button type="button" class="btn btn-primary" (click)="print()">Print</button>
-        <button type="button" class="btn btn-light border" (click)="back.emit()">Back to the recipe</button>
+        <button type="button" class="btn btn-primary" (click)="print()">{{ t('recipe.compare.print') }}</button>
+        <button type="button" class="btn btn-light border" (click)="back.emit()">{{ t('recipe.compare.back') }}</button>
       </div>
       <!-- How a new recipe was made, when the page has one to show. -->
       <ng-content />
     </section>
 
     <article class="compare-sheet" aria-labelledby="compare-title">
-      <h2 id="compare-title">{{ titleOf(left()) }} and {{ titleOf(right()) }}</h2>
+      <h2 id="compare-title">{{ t('recipe.compare.title', { left: titleOf(left()), right: titleOf(right()) }) }}</h2>
 
-      <div class="compare-table-scroll" tabindex="0" role="region" aria-label="Unity formulas compared">
+      <div class="compare-table-scroll" tabindex="0" role="region" [attr.aria-label]="t('recipe.compare.tableLabel')">
         <table class="compare-table">
           <caption>
-            Unity formulas{{
-              counting() === 'both' ? ', counting colorants' : counting() === 'neither' ? ', without colorants' : ''
+            {{
+              t('recipe.compare.caption', { counting: counting() })
             }}
           </caption>
           <thead>
             <tr>
-              <th scope="col">Oxide</th>
-              <th scope="col" class="num">{{ headingOf('left') }}</th>
-              <th scope="col" class="num">{{ headingOf('right') }}</th>
-              <th scope="col" class="num">Change</th>
+              <th scope="col">{{ t('recipe.compare.oxide') }}</th>
+              <th scope="col" class="num" translate="no">{{ headingOf('left') }}</th>
+              <th scope="col" class="num" translate="no">{{ headingOf('right') }}</th>
+              <th scope="col" class="num">{{ t('recipe.compare.change') }}</th>
             </tr>
           </thead>
           @for (group of groups(); track group.title) {
@@ -109,14 +113,14 @@ const COUNTING: ReadonlyArray<{ value: Counting; label: string }> = [
               </tr>
               @for (row of group.rows; track row.label) {
                 <tr>
-                  <th scope="row">{{ row.label }}</th>
-                  <td class="num">{{ row.left === null ? '-' : (row.left | number: digits(row.places)) }}</td>
-                  <td class="num">{{ row.right === null ? '-' : (row.right | number: digits(row.places)) }}</td>
+                  <th scope="row" [attr.translate]="row.formula ? 'no' : null">{{ row.label }}</th>
+                  <td class="num">{{ row.left === null ? '-' : (row.left | gcFixed: row.places) }}</td>
+                  <td class="num">{{ row.right === null ? '-' : (row.right | gcFixed: row.places) }}</td>
                   <td class="num compare-change">{{ change(row.change, row.places) }}</td>
                 </tr>
               } @empty {
                 <tr>
-                  <td colspan="4" class="muted">None in either.</td>
+                  <td colspan="4" class="muted">{{ t('recipe.compare.noneInEither') }}</td>
                 </tr>
               }
             </tbody>
@@ -133,26 +137,25 @@ const COUNTING: ReadonlyArray<{ value: Counting; label: string }> = [
       <div class="compare-recipes">
         @for (side of recipesShown(); track side.name) {
           <section class="compare-recipe" [attr.aria-labelledby]="'compare-recipe-' + side.name">
-            <h3 [id]="'compare-recipe-' + side.name">{{ titleOf(side.recipe) }}</h3>
+            <h3 [id]="'compare-recipe-' + side.name" translate="no">{{ titleOf(side.recipe) }}</h3>
             <table class="compare-materials">
               <caption class="visually-hidden">
-                Materials of
                 {{
-                  titleOf(side.recipe)
+                  t('recipe.compare.materialsOf', { title: titleOf(side.recipe) })
                 }}
               </caption>
               <thead>
                 <tr>
-                  <th scope="col">Material</th>
-                  <th scope="col" class="num">Amount</th>
-                  <th scope="col" class="num">% of base</th>
+                  <th scope="col">{{ t('recipe.compare.material') }}</th>
+                  <th scope="col" class="num">{{ t('recipe.compare.amount') }}</th>
+                  <th scope="col" class="num">{{ t('recipe.compare.share') }}</th>
                 </tr>
               </thead>
               <tbody>
                 @for (material of side.recipe.materials; track $index) {
                   <tr>
                     <th scope="row">{{ material.name }}</th>
-                    <td class="num">{{ material.amount }}</td>
+                    <td class="num">{{ material.amount | gcPlain }}</td>
                     <td class="num">{{ share(side.recipe, material.amount) }}</td>
                   </tr>
                 }
@@ -160,10 +163,7 @@ const COUNTING: ReadonlyArray<{ value: Counting; label: string }> = [
             </table>
             @if (side.recipe.additives?.length) {
               <p class="compare-additives">
-                <b>Colorants and additives:</b>
-                @for (additive of side.recipe.additives; track $index; let last = $last) {
-                  {{ additive.name }} {{ additiveAmount(additive) }}{{ last ? '' : ', ' }}
-                }
+                <gc-rich [text]="t('recipe.compare.additives', { list: additivesOf(side.recipe.additives) })" />
               </p>
             }
             @if (notesOf(side.recipe); as notes) {
@@ -173,7 +173,7 @@ const COUNTING: ReadonlyArray<{ value: Counting; label: string }> = [
         }
       </div>
     </article>
-  `,
+  </ng-container>`,
   styles: `
     :host {
       display: block;
@@ -243,7 +243,7 @@ const COUNTING: ReadonlyArray<{ value: Counting; label: string }> = [
       background: none;
       border-bottom: 1px solid var(--gc-border);
       padding: 0.3rem 0.5rem;
-      text-align: left;
+      text-align: start;
       vertical-align: top;
     }
     .compare-table tbody th,
@@ -256,7 +256,7 @@ const COUNTING: ReadonlyArray<{ value: Counting; label: string }> = [
       padding-top: 0.75rem;
     }
     .num {
-      text-align: right !important;
+      text-align: end !important;
     }
     /* Numbers stay whole; a column's heading (a recipe's title) wraps instead. */
     td.num {
@@ -351,12 +351,11 @@ export class RecipeCompare implements OnDestroy {
   readonly back = output<void>();
 
   protected readonly sides = [
-    { name: 'left' as const, label: 'First recipe' },
-    { name: 'right' as const, label: 'Second recipe' }
+    { name: 'left' as const, label: marker('recipe.compare.first') },
+    { name: 'right' as const, label: marker('recipe.compare.second') }
   ];
   protected readonly countings = COUNTING;
   protected readonly counting = signal<Counting>('each');
-  protected readonly additiveAmount = additiveAmount;
 
   private readonly analyses = computed(() =>
     [this.left(), this.right()].map((recipe) => {
@@ -375,13 +374,17 @@ export class RecipeCompare implements OnDestroy {
   protected readonly problems = computed(() =>
     [this.left(), this.right()].flatMap((recipe, i) => {
       const problem = this.analyses()[i]?.problem;
-      return recipe && problem ? [this.titleOf(recipe) + ' has no unity formula: ' + problem] : [];
+      return recipe && problem ? [translate('recipe.compare.noUnity', { title: this.titleOf(recipe), problem })] : [];
     })
   );
   /** What the unity formulas left out, such as a colorant with no analysis to count, by recipe. */
   protected readonly warnings = computed(() =>
     [this.left(), this.right()].flatMap((recipe, i) =>
-      recipe ? (this.analyses()[i]?.warnings ?? []).map((warning) => this.titleOf(recipe) + ': ' + warning) : []
+      recipe
+        ? (this.analyses()[i]?.warnings ?? []).map((warning) =>
+            translate('recipe.compare.warning', { title: this.titleOf(recipe), warning })
+          )
+        : []
     )
   );
   protected readonly countingDiffers = computed(
@@ -399,8 +402,8 @@ export class RecipeCompare implements OnDestroy {
   );
 
   /** The page's title names both recipes; a PDF of the comparison takes it as its file name. */
-  private readonly pageTitle = computed(
-    () => 'Compare ' + this.titleOf(this.left()) + ' and ' + this.titleOf(this.right()) + ' - Glazecalc'
+  private readonly pageTitle = computed(() =>
+    translate('recipe.compare.pageTitle', { left: this.titleOf(this.left()), right: this.titleOf(this.right()) })
   );
 
   constructor() {
@@ -445,8 +448,16 @@ export class RecipeCompare implements OnDestroy {
   }
 
   protected titleOf(recipe: Recipe | null): string {
-    if (!recipe) return 'a recipe to choose';
-    return recipe.title.trim() || 'Untitled recipe';
+    if (!recipe) return translate('recipe.compare.toChoose');
+    return recipe.title.trim() || translate('recipe.page.untitled');
+  }
+
+  /** A recipe's colorants and additives, each with its amount: "Rutile 4%, Red iron oxide 2%". */
+  protected additivesOf(additives: Additive[]): string {
+    return listOf(
+      additives.map((additive) => additive.name + ' ' + additiveAmount(additive)),
+      'unit'
+    );
   }
 
   protected notesOf(recipe: Recipe): string {
@@ -456,11 +467,7 @@ export class RecipeCompare implements OnDestroy {
 
   protected share(recipe: Recipe, amount: string | undefined): string {
     const total = totalOf((recipe.materials ?? []).map((m) => m.amount));
-    return total && amountOf(amount) ? formatAmount((amountOf(amount) / total) * 100, 1) + '%' : '';
-  }
-
-  protected digits(places: number): string {
-    return `1.${places}-${places}`;
+    return total && amountOf(amount) ? upTo((amountOf(amount) / total) * 100, 1) + '%' : '';
   }
 
   protected change(change: number | null, places: number): string {

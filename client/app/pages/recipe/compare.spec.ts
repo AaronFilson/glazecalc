@@ -1,4 +1,7 @@
+import { TestBed } from '@angular/core/testing';
+import { TranslocoService } from '@jsverse/transloco';
 import { RecipeAnalysis, RecipeMaterial } from '../../core/models';
+import { provideEnglish } from '../../testing/i18n';
 import { LibraryMaterial, compareUnity, formatChange, likeForLike, modernMaterials } from './compare';
 
 const analysis = (uList: Record<string, number>, extra: Partial<RecipeAnalysis> = {}): RecipeAnalysis => ({
@@ -6,6 +9,12 @@ const analysis = (uList: Record<string, number>, extra: Partial<RecipeAnalysis> 
   groups: { R2O: 0, RO: 1, R2O3: 0, RO2: 0 },
   loi: 10,
   ...extra
+});
+
+// Column titles and a material's status are messages.
+beforeEach(() => {
+  TestBed.configureTestingModule({ providers: provideEnglish() });
+  TestBed.inject(TranslocoService);
 });
 
 describe('comparing two unity formulas', () => {

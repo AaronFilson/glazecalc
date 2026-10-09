@@ -1,0 +1,111 @@
+{
+  "landing": {
+    "eyebrow": "Glaze calculator and studio notebook",
+    "heading": "Free glaze chemistry for potters.",
+    "lead": "Understand your glazes, not just mix them. Enter a recipe and see its unity molecular formula (UMF), its silica to alumina ratio and its balance of fluxes at once. Keep your recipes, materials, colorants, notes and firing logs together in one private notebook.",
+    "trialEnded": "Your trial has ended. Start a new one, or create a free account to keep your work.",
+    "tryIt": "Try it now",
+    "createAccount": "Create a free account",
+    "trialFailed": "Could not start a trial just now. Please try again.",
+    "heroNote": "No sign-up needed to try it · Free and open source · Your recipes stay private",
+    "heroAlt": "A row of fired cone packs: the white pyrometric cones in each pack have bent over in the heat of the kiln.",
+    "heroCaption": "Cone packs after a firing: each cone bends once the kiln has done enough heat work.",
+    "exampleHeading": "See it work: a classic celadon base",
+    "exampleCaption": "Bernard Leach's \"4321\", often fired to cone 10, in parts by weight.",
+    "material": "Material",
+    "parts": "Parts",
+    "unityHeading": "Its unity molecular formula",
+    "exampleNote": "The fluxes add up to 1, so any two glazes can be compared fairly. Worked out right here in your browser by the same code the calculator uses.",
+    "featuresHeading": "What Glazecalc does",
+    "features": {
+      "unity": {
+        "title": "Instant unity formula",
+        "text": "See fluxes, alumina and silica in unity, the way glaze chemists compare recipes, as soon as you enter a recipe."
+      },
+      "substitute": {
+        "title": "Fix and substitute",
+        "text": "A material discontinued? Compare formulas to find a replacement that melts the same way."
+      },
+      "notebook": {
+        "title": "Your studio notebook",
+        "text": "Keep recipes, your own materials, colorants, notes and firing logs together in one place."
+      },
+      "learn": {
+        "title": "Learn as you go",
+        "text": "Plain-language guides, from what a glaze is to firing it safely, sit next to the numbers."
+      }
+    },
+    "umfHeading": "What is a unity molecular formula?",
+    "umfRecipe": "A glaze recipe says how much of each material to weigh out. The unity molecular formula, also called the Seger formula, says what those materials become in the kiln: how many molecules of each oxide there are, scaled so that the fluxes add up to one.",
+    "umfGroups": "Fluxes make the glaze melt, alumina stiffens the melt, and silica forms the glass. Comparing those three groups explains why one glaze is glossy and another matte, or why one runs while another stays put, and it shows how to replace a material that is no longer sold.",
+    "readAdvice": "Read more glaze advice",
+    "closingHeading": "Ready when you are.",
+    "closingText": "Try the calculator now, then create an account to keep what you made."
+  },
+  "about": {
+    "title": "About Glazecalc",
+    "lead": "A free, open-source glaze chemistry calculator and notebook for potters, ceramicists and students.",
+    "whatHeading": "What it does",
+    "what": "Glazecalc turns a glaze recipe, the materials and how much of each you weigh out, into its unity molecular formula: the oxides the glaze is made of once fired, scaled so the fluxes add up to one. That makes recipes comparable, helps explain how a glaze behaves, and helps when a material has to be replaced.",
+    "alongside": "Alongside the calculator it keeps your recipes, your own materials, colorants and other additives, notes and firing logs, a page of practical <advice>glaze advice</advice>, and <guides>guides</guides> for new potters, from what a glaze is to firing it safely.",
+    "numbersHeading": "How the numbers are worked out",
+    "numbers": "Each material is described by its chemical formula or by an oxide analysis, plus its loss on ignition: the part that burns off in the kiln, such as the carbon dioxide in whiting or the water in kaolin. Glazecalc converts each amount to moles of each oxide using standard molar masses, adds them up across the recipe, and divides by the total moles of flux. Colorants and other additives are listed with a recipe but left out of the unity formula, as is usual.",
+    "guide": "The results are a guide, not a guarantee. Real materials vary from supplier to supplier and batch to batch, and firing matters as much as chemistry, so test every glaze. Glazes for food surfaces should be tested for leaching.",
+    "builtHeading": "How it is built",
+    "built": "Glazecalc started in 2017 and was rebuilt in 2026. It is one small web application, and its <source>source code is on GitHub</source> under the MIT License.",
+    "stackBrowser": "Angular 22 in the browser (standalone components and signals), with the glaze chemistry in a small shared library.",
+    "stackServer": "A TypeScript API on Node.js 24 and Express 5, with MongoDB 9, checked by more than 350 automated tests.",
+    "stackHosting": "Runs in Docker on Amazon Web Services, behind nginx with HTTPS from Let's Encrypt.",
+    "stackDeploy": "Deployed by GitHub Actions: images are built and tested on every change, and deploys sign in to AWS without stored keys.",
+    "whoHeading": "Who made it",
+    "who": "Glazecalc is made by Aaron Filson. Found a problem or have an idea? <issues>Open an issue on GitHub</issues>.",
+    "studio": "Aaron Filson's handmade pottery is at <studio>Updraft Pottery Studio</studio> in Tacoma, Washington. Have a look at the work, and order a piece if one speaks to you."
+  },
+  "privacy": {
+    "title": "Privacy",
+    "lead": "Last updated October 2026.",
+    "shortHeading": "In short",
+    "short": "Glazecalc keeps what it needs to run your account and nothing more. There are no ads, no analytics, no tracking cookies and no third-party scripts. Your data is never sold or shared.",
+    "storedHeading": "What is stored",
+    "storedAccount": "<b>Your account:</b> your email address and your password, which is stored only as a one-way hash (bcrypt), never as the password itself.",
+    "storedTrial": "<b>A trial (\"Try it now\"):</b> no email or password, only a generated name such as \"speckled quiet kilns\". A trial and everything saved in it are deleted automatically 14 days after it starts, unless you create an account to keep them.",
+    "storedSaved": "<b>What you save:</b> your recipes, materials, additives, notes, firing logs and advice. Other users cannot see them.",
+    "storedResets": "<b>Password reset requests:</b> a fingerprint of each reset link (not the link itself), deleted automatically when it expires 30 minutes later.",
+    "storedBrowser": "<b>In your browser:</b> one cookie, <code>glazecalc_session</code>, that keeps you signed in. It holds your sign-in token, scripts on the page cannot read it, it goes only to Glazecalc's own server, and it lasts 7 days (14 for a trial). Local storage holds a note that you are signed in and, during a trial, its name and end date. Signing out removes them.",
+    "emailHeading": "Email",
+    "email": "Glazecalc sends email only when you ask to reset your password and when your password changes. It is sent through Amazon Simple Email Service. There is no newsletter or marketing email.",
+    "hostingHeading": "Logs, backups and hosting",
+    "logs": "The web server records each request, including your IP address, in a log kept for 14 days to run and secure the site.",
+    "backups": "Encrypted backups of the database are kept for 30 days, and copies of the server's disk for 7 days, so the site can be restored after a failure.",
+    "hosting": "Everything is hosted by Amazon Web Services in the United States (Oregon).",
+    "deletingHeading": "Deleting your data",
+    "deleting": "You can delete your account from your <account>account page</account>. That removes your account and everything you saved right away; \"Discard trial\" does the same for a trial. Copies in backups disappear as the backups age out, within 30 days.",
+    "questionsHeading": "Questions",
+    "questions": "Ask by <issues>opening an issue on GitHub</issues>. If this policy changes, the date at the top of this page changes too."
+  },
+  "notFound": {
+    "heading": "Page not found",
+    "text": "There is no page at this address. It may have moved, or the link may be mistyped.",
+    "start": "Go to the start page"
+  },
+  "advice": {
+    "title": "Glaze advice",
+    "lead": "Practical tips on mixing, glazing and firing, plus any advice of your own.",
+    "signUp": "<signup>Create a free account</signup> or <signin>sign in</signin> to keep advice of your own.",
+    "generalHeading": "General advice",
+    "tags": "Tags: {list}",
+    "addHeading": "Add your own advice",
+    "titleLabel": "Title:",
+    "tagsLabel": "Tags:",
+    "contentLabel": "Advice Content:",
+    "save": "Save",
+    "mineHeading": "My advice",
+    "nothingSaved": "Nothing saved yet.",
+    "titleMissing": "Give the advice a title.",
+    "contentMissing": "Write the advice.",
+    "fetchFailed": "There was an error in getting the advice information.",
+    "standardFetchFailed": "There was an error in getting the server advice information.",
+    "saved": "Success in adding to the advice records.",
+    "saveFailed": "There was an error in submitting the advice information."
+  }
+}

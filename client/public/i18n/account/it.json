@@ -1,0 +1,236 @@
+{
+  "auth": {
+    "signInHeading": "Accesso",
+    "keepHeading": "Conservare il proprio lavoro",
+    "signUpHeading": "Creare un account",
+    "signInLead": "Le diamo il bentornato nel quaderno degli smalti.",
+    "keepLead": "Per conservare tutto ciò che ha creato come {name}, aggiunga la Sua email e una password. Resta gratuito.",
+    "signUpLead": "Gratuito. Ricette, materiali e note restano riservati al Suo account.",
+    "trialNote": "Ha già un account? Accedendo, ciò che ha creato come {name} viene trasferito nell’account. Prima volta qui? <signup>Crei invece un account</signup> per conservarlo.",
+    "email": "Email",
+    "password": "Password",
+    "passwordHint": "Almeno 8 caratteri.",
+    "confirmation": "Conferma password",
+    "passwordMissing": "Inserire la password.",
+    "createAccount": "Crea l’account",
+    "signIn": "Accedi",
+    "haveAccount": "Ha già un account? <signin>Accedi</signin>",
+    "forgot": "Password dimenticata? Reimpostala",
+    "newHere": "Prima volta qui? <signup>Crea un account gratuito</signup>",
+    "signUpFailed": "Errore: impossibile creare l’account.",
+    "signInFailed": "Errore: impossibile accedere."
+  },
+  "forgot": {
+    "heading": "Reimpostare la password",
+    "checkInbox": "Controllare la posta in arrivo e la cartella della posta indesiderata. Se non arriva nulla, verificare l’indirizzo e fare una nuova richiesta.",
+    "intro": "Inserire l’email del Suo account: Le invieremo un link per scegliere una nuova password.",
+    "email": "Email:",
+    "send": "Invia il link di reimpostazione",
+    "back": "Torna all’accesso",
+    "failed": "Errore: impossibile inviare l’email di reimpostazione. Riprovare."
+  },
+  "reset": {
+    "heading": "Scegliere una nuova password",
+    "signIn": "Accedi",
+    "incomplete": "Questa pagina richiede il link di un’email di reimpostazione della password, e questo link è incompleto.",
+    "askAgain": "Richiedi un nuovo link",
+    "password": "Nuova password:",
+    "confirmation": "Conferma nuova password:",
+    "save": "Salva la nuova password",
+    "hint": "Almeno 8 caratteri. Ogni dispositivo connesso all’account verrà disconnesso.",
+    "failed": "Errore: impossibile cambiare la password. Riprovare."
+  },
+  "account": {
+    "trialTitle": "La Sua prova",
+    "trialLead": "Sta provando Glazecalc come {name}.",
+    "keepHeading": "Conservare il proprio lavoro",
+    "keepText": "Questa prova e tutto ciò che contiene verranno rimossi {date}. Crei un account gratuito per conservarli: ricette, materiali e note restano esattamente come sono e {name} resta il Suo nome visualizzato.",
+    "createAccount": "Crea un account",
+    "title": "Il Suo account",
+    "signedInAs": "Accesso effettuato come {email}.",
+    "changeHeading": "Cambiare la password",
+    "current": "Password attuale",
+    "currentMissing": "Inserire la password attuale.",
+    "password": "Nuova password",
+    "passwordHint": "Almeno 8 caratteri. Gli altri dispositivi connessi a questo account verranno disconnessi.",
+    "confirmation": "Conferma nuova password",
+    "change": "Cambia password",
+    "changeFailed": "Errore: impossibile cambiare la password. Riprovare.",
+    "deleteHeading": "Eliminare l’account",
+    "deleteText": "Rimuove il Suo account e tutto ciò che ha salvato: ricette, materiali, additivi, note, registri di cottura e consigli. L’operazione non si può annullare.",
+    "deletePassword": "La Sua password, per conferma",
+    "deletePasswordMissing": "Inserire la password per confermare.",
+    "delete": "Elimina il mio account",
+    "deleteFailed": "Errore: impossibile eliminare l’account. Riprovare."
+  },
+  "settings": {
+    "heading": "Impostazioni",
+    "intro": "Salvate con il Suo account, quindi valgono su ogni dispositivo.",
+    "saveFailed": "Impossibile salvare l’impostazione. Riprovare.",
+    "language": {
+      "legend": "Lingua",
+      "help": "La lingua dell’app, delle guide e delle email. Cambiandola, questa pagina si riapre in quella lingua.",
+      "saved": "Salvato: {language}."
+    },
+    "region": {
+      "legend": "Dove lavora",
+      "none": {
+        "label": "Nessuna scelta",
+        "saved": "Salvato: nessun paese scelto; le impostazioni predefinite seguono il browser."
+      },
+      "saved": "Salvato: {region}.",
+      "help": "I materiali venduti lì e le impostazioni predefinite per numeri, date, temperature e coni qui sotto. Finché non si sceglie, seguono la lingua del browser."
+    },
+    "format": {
+      "legend": "Numeri e date",
+      "auto": {
+        "label": "Come la mia lingua e il mio paese",
+        "saved": "Salvato: numeri e date come li scrivono la Sua lingua e il Suo paese."
+      },
+      "saved": "Salvato: numeri e date come in {language}.",
+      "help": "Come si scrivono numeri e date: 12.345,6 o 12,345.6, e l’ordine di giorno e mese."
+    },
+    "decimalMark": {
+      "legend": "Inserimento delle quantità",
+      "either": {
+        "label": "Virgola o punto per i decimali",
+        "example": "12,5 o 12.5",
+        "saved": "Salvato: le quantità si possono inserire con la virgola o con il punto."
+      },
+      "comma": {
+        "label": "Virgola per i decimali",
+        "saved": "Salvato: le quantità si inseriscono con la virgola per i decimali."
+      },
+      "point": {
+        "label": "Punto per i decimali",
+        "saved": "Salvato: le quantità si inseriscono con il punto per i decimali."
+      },
+      "help": "Con virgola o punto, una quantità come 1.250 si legge come sono scritti i numeri qui sopra."
+    },
+    "temperature": {
+      "legend": "Temperature",
+      "celsius": {
+        "label": "Celsius",
+        "saved": "Salvato: temperature in °C."
+      },
+      "fahrenheit": {
+        "label": "Fahrenheit",
+        "saved": "Salvato: temperature in °F."
+      },
+      "help": "Finché non si sceglie, segue il paese: °F negli Stati Uniti, °C altrove."
+    },
+    "cones": {
+      "legend": "Cottura",
+      "orton": {
+        "label": "A coni Orton",
+        "example": "cono 04, cono 6",
+        "saved": "Salvato: cottura a coni Orton."
+      },
+      "temperature": {
+        "label": "In temperatura, come nel programma di una centralina",
+        "saved": "Salvato: cottura in temperatura."
+      },
+      "help": "Finché non si sceglie, segue il paese: coni Orton negli Stati Uniti, nel Regno Unito, in Irlanda, in Australia e in Nuova Zelanda, temperatura nel resto d’Europa."
+    },
+    "density": {
+      "legend": "Densità dello smalto",
+      "sg": {
+        "label": "Peso specifico",
+        "saved": "Salvato: densità dello smalto come peso specifico."
+      },
+      "baume": {
+        "label": "Gradi Baumé, dal densimetro",
+        "saved": "Salvato: densità dello smalto in gradi Baumé."
+      },
+      "pint": {
+        "label": "Peso a pinta: le once in una pinta imperiale",
+        "saved": "Salvato: densità dello smalto come peso a pinta."
+      },
+      "help": "Come le guide indicano la densità di uno smalto. Finché non si sceglie, segue il paese: gradi Baumé in Italia, peso specifico altrove."
+    },
+    "theme": {
+      "legend": "Chiaro o scuro",
+      "system": {
+        "label": "Come il dispositivo",
+        "saved": "Salvato: chiaro o scuro come impostato su ogni dispositivo."
+      },
+      "light": {
+        "label": "Chiaro",
+        "saved": "Salvato: sempre chiaro."
+      },
+      "dark": {
+        "label": "Scuro",
+        "saved": "Salvato: sempre scuro."
+      },
+      "help": "Le ricette stampate sono sempre nero su bianco."
+    },
+    "palette": {
+      "legend": "Colori",
+      "saved": "Salvato: pulsanti e link in {palette}.",
+      "help": "Per pulsanti, link e schede, con nomi di smalti. Ognuno si legge bene sia in chiaro sia in scuro."
+    },
+    "weightUnit": {
+      "legend": "Unità delle pesate",
+      "grams": {
+        "label": "Grammi",
+        "saved": "Salvato: pesate in grammi."
+      },
+      "pounds": {
+        "label": "Libbre e once",
+        "saved": "Salvato: pesate in libbre e once."
+      },
+      "help": "Per le pesate stampate."
+    },
+    "gramPrecision": {
+      "legend": "Grammi nelle pesate stampate",
+      "single": {
+        "label": "Al decimo di grammo",
+        "saved": "Salvato: grammi al decimo."
+      },
+      "full": {
+        "label": "Precisione completa",
+        "saved": "Salvato: grammi per intero, con 5 decimali."
+      },
+      "help": "Al decimo, le quantità sotto i 10 g mostrano comunque i centesimi (2,35 g), per i coloranti nelle piccole pesate di prova."
+    },
+    "lead": {
+      "legend": "Piombo",
+      "off": {
+        "label": "Disattivato: il piombo non viene mai aggiunto a una ricetta né suggerito",
+        "saved": "Salvato: il piombo non viene mai aggiunto a una ricetta né suggerito."
+      },
+      "on": {
+        "label": "Attivato: i materiali con piombo possono essere aggiunti e suggeriti",
+        "saved": "Salvato: i materiali con piombo possono essere aggiunti e suggeriti."
+      },
+      "help": "Il piombo è velenoso se respirato o ingerito e si accumula nell’organismo, e uno smalto piombico può cederlo a cibi e bevande; nessun calcolo può stabilire se un pezzo cotto lo cede. Con il piombo disattivato, le ricette che contengono già piombo si aprono comunque come erano.",
+      "warning": "Usare il piombo solo in forma di fritta, mai come piombo non frittato: minio, biacca, massicot o litargirio. Prepararlo a umido, non spruzzarlo mai, indossare una maschera filtrante e pulire a umido. Tenere i pezzi con smalto piombico lontani da cibi e bevande, a meno che il pezzo cotto non abbia superato una prova di cessione in laboratorio.",
+      "turnOn": "Attiva il piombo",
+      "keepOff": "Lascialo disattivato"
+    },
+    "englishTerms": {
+      "legend": "Termini inglesi",
+      "off": {
+        "label": "Disattivato",
+        "saved": "Salvato: nessun termine inglese."
+      },
+      "on": {
+        "label": "Mostra l’inglese dopo i termini chiave",
+        "saved": "Salvato: l’inglese viene mostrato dopo i termini chiave."
+      },
+      "help": "Per leggere fonti in inglese, come Digitalfire, accanto a questa: i termini chiave sono seguiti dall’inglese tra parentesi."
+    },
+    "notice": {
+      "legend": "Avviso sulla traduzione",
+      "shown": {
+        "label": "Visibile",
+        "saved": "Salvato: l’avviso è visibile."
+      },
+      "hidden": {
+        "label": "Nascosto",
+        "saved": "Salvato: l’avviso è nascosto. Una sua riga resta nelle guide sulla sicurezza."
+      },
+      "help": "La nota in cima a ogni pagina che avvisa che la pagina è stata tradotta con l’IA, con un modo per suggerire una correzione."
+    }
+  }
+}

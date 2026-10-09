@@ -1,5 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 import { API, answer, httpMock, settle, testProviders, text } from '../../testing/test-providers';
+import { OFFERED_LANGUAGES, OPEN_PAGE, PAGE_LANGUAGE } from '../../i18n/language';
 import { SettingsSection } from './settings-section';
 
 describe('SettingsSection', () => {
@@ -117,6 +118,44 @@ describe('SettingsSection', () => {
     expect(httpMock().expectOne(API + '/preferences').request.body).toEqual({ lead: 'off' });
   });
 
+  it('asks where the potter works, from a list, and saves it', async () => {
+    const { fixture } = await create();
+    const region = fixture.nativeElement.querySelector('#region') as HTMLSelectElement;
+    const options = [...region.options].map((o) => o.textContent?.trim());
+    expect(options[0]).toBe('Not chosen');
+    expect(options).toContain('Germany');
+    expect(options).toContain('United States');
+    region.value = 'DE';
+    region.dispatchEvent(new Event('change'));
+    await fixture.whenStable();
+    const req = httpMock().expectOne(API + '/preferences');
+    expect(req.request.body).toEqual({ region: 'DE' });
+    req.flush({ region: 'DE' });
+    await settle(fixture);
+    expect(text(fixture, '.settings-status')).toBe('Saved: Germany.');
+    expect(localStorage.getItem('preferredRegion')).toBe('DE');
+    // Germany fires by temperature, in °C, until the potter chooses otherwise.
+    const checked = (name: string) =>
+      (fixture.nativeElement.querySelector('input[name="' + name + '"]:checked') as HTMLInputElement | null)?.value;
+    expect([checked('temperature'), checked('cones')]).toEqual(['C', 'temperature']);
+  });
+
+  it('offers number and date formats with an example of each, and how amounts are typed', async () => {
+    const { fixture } = await create();
+    const format = fixture.nativeElement.querySelector('#format') as HTMLSelectElement;
+    const options = [...format.options].map((o) => o.textContent?.replace(/\s+/g, ' ').trim());
+    expect(options[0]).toMatch(/^As my language and region \(.+\)$/);
+    expect(options).toContain('German (Germany) (12.345,6 · 08.10.26)');
+    expect(text(fixture, 'label[for="decimal-mark-either"]')).toBe('A comma or a point for decimals (12,5 or 12.5)');
+    (fixture.nativeElement.querySelector('#decimal-mark-point') as HTMLInputElement).click();
+    await fixture.whenStable();
+    const req = httpMock().expectOne(API + '/preferences');
+    expect(req.request.body).toEqual({ decimalMark: 'point' });
+    req.flush({ decimalMark: 'point' });
+    await settle(fixture);
+    expect(text(fixture, '.settings-status')).toBe('Saved: amounts are typed with a point for decimals.');
+  });
+
   it('says when the choice could not be saved, and shows the one still in place', async () => {
     const { fixture, radio } = await create();
     radio('g').click();
@@ -127,5 +166,62 @@ describe('SettingsSection', () => {
     await settle(fixture);
     expect(text(fixture, '.settings-status')).toBe('The setting could not be saved. Please try again.');
     expect(radio('lb').checked).toBe(true);
+  });
+
+  it('asks how glaze density is read, following the region until chosen', async () => {
+    const fixture = TestBed.createComponent(SettingsSection);
+    await fixture.whenStable();
+    answer('/preferences', { region: 'IT' });
+    await settle(fixture);
+    const choice = (value: string) => fixture.nativeElement.querySelector('#density-' + value) as HTMLInputElement;
+    // Italy reads density in degrees Baumé.
+    expect(choice('baume').checked).toBe(true);
+    expect(text(fixture, 'label[for="density-pint"]')).toBe('Pint weight, the ounces in an imperial pint (29 oz)');
+    choice('sg').click();
+    await fixture.whenStable();
+    const req = httpMock().expectOne(API + '/preferences');
+    expect(req.request.body).toEqual({ density: 'sg' });
+    req.flush({ density: 'sg' });
+    await settle(fixture);
+    expect(text(fixture, '.settings-status')).toBe('Saved: glaze density as specific gravity.');
+  });
+
+  it('offers English terms and the translation notice only on a translated page, and a language only when there is a choice', async () => {
+    TestBed.overrideProvider(OFFERED_LANGUAGES, { useValue: ['en'] });
+    const english = await create();
+    expect(english.fixture.nativeElement.querySelector('#english-terms-on')).toBeNull();
+    expect(english.fixture.nativeElement.querySelector('#notice-hidden')).toBeNull();
+    expect(english.fixture.nativeElement.querySelector('#language')).toBeNull();
+  });
+
+  describe('on a page in another language', () => {
+    const opened: string[] = [];
+    beforeEach(() => {
+      opened.length = 0;
+      TestBed.overrideProvider(PAGE_LANGUAGE, { useValue: 'en-XA' });
+      TestBed.overrideProvider(OFFERED_LANGUAGES, { useValue: ['en', 'en-XA'] });
+      TestBed.overrideProvider(OPEN_PAGE, { useValue: (address: string) => opened.push(address) });
+    });
+
+    it('chooses a language, saves it, and opens this page in it', async () => {
+      const { fixture } = await create();
+      const select = fixture.nativeElement.querySelector('#language') as HTMLSelectElement;
+      expect([...select.options].map((option) => option.textContent?.trim())).toEqual(['English', 'Ëñĝļîšĥ (pseudo)']);
+      expect(select.value).toBe('en-XA');
+      select.value = 'en';
+      select.dispatchEvent(new Event('change'));
+      await fixture.whenStable();
+      const req = httpMock().expectOne(API + '/preferences');
+      expect(req.request.body).toEqual({ language: 'en' });
+      req.flush({ language: 'en' });
+      await settle(fixture);
+      expect(opened).toEqual([location.pathname]);
+    });
+
+    it('offers the English after key terms, and hiding the translation notice', async () => {
+      const { fixture } = await create();
+      expect(fixture.nativeElement.querySelector('#english-terms-on')).not.toBeNull();
+      expect(fixture.nativeElement.querySelector('#notice-hidden')).not.toBeNull();
+    });
   });
 });

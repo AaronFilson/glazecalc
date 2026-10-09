@@ -1,5 +1,7 @@
-import { DecimalPipe } from '@angular/common';
+import { FixedPipe } from '../../shared/format-pipes';
 import { Component, computed, input } from '@angular/core';
+import { TranslocoDirective, translate } from '@jsverse/transloco';
+import { marker } from '@jsverse/transloco-keys-manager/marker';
 import { OXIDE_GROUPS, formatFormula } from '../../../../lib/chemistry';
 import { RecipeAnalysis } from '../../core/models';
 
@@ -11,8 +13,20 @@ export interface UnityColumn {
 const STABILIZERS = ['Al2O3', 'B2O3'];
 const GLASS_FORMERS = ['SiO2'];
 
-/** The columns potters read a unity formula in, in order. */
-export const UNITY_TITLES = ['Fluxes - RO', 'Stabilizers - R₂O₃', 'Glass Formers - RO₂', 'Wildcards'];
+const UNITY_TITLE_KEYS = [
+  marker('unity.fluxes'),
+  marker('unity.stabilizers'),
+  marker('unity.glassFormers'),
+  marker('unity.wildcards')
+];
+
+/** The columns potters read a unity formula in, in order, in the page's language. */
+export const UNITY_TITLES: readonly string[] = Object.defineProperties(
+  [] as string[],
+  Object.fromEntries(
+    UNITY_TITLE_KEYS.map((key, index) => [index, { enumerable: true, get: () => translate(key) }])
+  ) as PropertyDescriptorMap
+);
 
 /** Which of the UNITY_TITLES an oxide goes under. */
 export function unityColumnOf(oxide: string): number {
@@ -43,24 +57,27 @@ export function silicaAluminaRatio(analysis: RecipeAnalysis): number | null {
 
 @Component({
   selector: 'gc-unity-formula',
-  imports: [DecimalPipe],
-  template: `
+  imports: [FixedPipe, TranslocoDirective],
+  // Its messages are the recipe page's; the landing page shows it too, so it loads them itself.
+  template: `<ng-container *transloco="let t">
     <div class="umf-columns">
       @for (column of columns(); track column.title) {
         <section class="umf-column">
           <h3 class="umf-column-title">{{ column.title }}</h3>
           <ul>
             @for (oxide of column.oxides; track oxide.label) {
-              <li>{{ oxide.label }} : {{ oxide.value | number: '1.3-3' }}</li>
+              <li>
+                <span class="formula" translate="no">{{ oxide.label }}</span> : {{ oxide.value | gcFixed: 3 }}
+              </li>
             }
           </ul>
         </section>
       }
     </div>
     @if (ratio() !== null) {
-      <p class="umf-ratio">Ratio of Silica to Alumina : {{ ratio() | number: '1.2-2' }}</p>
+      <p class="umf-ratio">{{ t('unity.ratio', { ratio: (ratio() | gcFixed: 2) }) }}</p>
     }
-  `,
+  </ng-container>`,
   styles: `
     .umf-columns {
       display: grid;

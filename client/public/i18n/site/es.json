@@ -1,0 +1,111 @@
+{
+  "landing": {
+    "eyebrow": "Calculadora de esmaltes y cuaderno de taller",
+    "heading": "Química de esmaltes gratuita para ceramistas.",
+    "lead": "Entienda sus esmaltes, no se limite a mezclarlos. Introduzca una receta y vea al momento su fórmula Seger (UMF), su relación sílice/alúmina y su equilibrio de fundentes. Guarde sus recetas, materiales, colorantes, notas y registros de cocción juntos en un cuaderno privado.",
+    "trialEnded": "Su periodo de prueba ha terminado. Empiece uno nuevo o cree una cuenta gratuita para conservar su trabajo.",
+    "tryIt": "Probar ahora",
+    "createAccount": "Crear una cuenta gratuita",
+    "trialFailed": "Ahora mismo no se ha podido iniciar un periodo de prueba. Inténtelo de nuevo.",
+    "heroNote": "Para probarlo no hace falta registrarse · Gratuito y de código abierto · Sus recetas son privadas",
+    "heroAlt": "Una fila de tríos de conos cocidos: los conos pirométricos blancos de cada trío se han doblado con el calor del horno.",
+    "heroCaption": "Tríos de conos después de una cocción: cada cono se dobla cuando el horno ha aportado suficiente trabajo térmico.",
+    "exampleHeading": "Véalo en acción: una base clásica de celadón",
+    "exampleCaption": "El «4321» de Bernard Leach, que se suele cocer a cono 10, en partes en peso.",
+    "material": "Material",
+    "parts": "Partes",
+    "unityHeading": "Su fórmula Seger",
+    "exampleNote": "Los fundentes suman 1, así que dos esmaltes cualesquiera se pueden comparar en igualdad de condiciones. Calculada aquí mismo, en su navegador, con el mismo código que usa la calculadora.",
+    "featuresHeading": "Qué hace Glazecalc",
+    "features": {
+      "unity": {
+        "title": "Fórmula Seger al instante",
+        "text": "Vea los fundentes, la alúmina y la sílice referidos a la unidad, como comparan las recetas los químicos de esmaltes, en cuanto introduce una receta."
+      },
+      "substitute": {
+        "title": "Corregir y sustituir",
+        "text": "¿Han descatalogado un material? Compare fórmulas para encontrar un sustituto que funda igual."
+      },
+      "notebook": {
+        "title": "Su cuaderno de taller",
+        "text": "Guarde las recetas, sus propios materiales, colorantes, notas y registros de cocción juntos en un solo lugar."
+      },
+      "learn": {
+        "title": "Aprenda sobre la marcha",
+        "text": "Guías en lenguaje sencillo, desde qué es un esmalte hasta cómo cocerlo con seguridad, junto a los números."
+      }
+    },
+    "umfHeading": "¿Qué es la fórmula Seger?",
+    "umfRecipe": "Una receta de esmalte dice cuánto hay que pesar de cada material. La fórmula Seger, también llamada fórmula molecular unitaria (UMF), dice en qué se convierten esos materiales en el horno: cuántas moléculas de cada óxido hay, en una escala en la que los fundentes suman uno.",
+    "umfGroups": "Los fundentes hacen que el esmalte se funda, la alúmina hace más viscoso el fundido y la sílice forma el vidrio. Comparar esos tres grupos explica por qué un esmalte es brillante y otro mate, o por qué uno escurre mientras otro se queda en su sitio, y muestra cómo sustituir un material que ya no se vende.",
+    "readAdvice": "Leer más consejos sobre esmaltes",
+    "closingHeading": "Todo listo cuando usted quiera.",
+    "closingText": "Pruebe ahora la calculadora y luego cree una cuenta para conservar lo que haya hecho."
+  },
+  "about": {
+    "title": "Acerca de Glazecalc",
+    "lead": "Una calculadora de química de esmaltes y un cuaderno de taller, gratuitos y de código abierto, para ceramistas, profesionales de la cerámica y estudiantes.",
+    "whatHeading": "Qué hace",
+    "what": "Glazecalc convierte una receta de esmalte, es decir, los materiales y cuánto se pesa de cada uno, en su fórmula Seger (UMF): los óxidos de los que está hecho el esmalte una vez cocido, en una escala en la que los fundentes suman uno. Así las recetas se pueden comparar, se entiende mejor cómo se comporta un esmalte y es más fácil sustituir un material cuando hace falta.",
+    "alongside": "Además de la calculadora, guarda sus recetas, sus propios materiales, colorantes y otros aditivos, notas y registros de cocción, e incluye una página de <advice>consejos sobre esmaltes</advice> prácticos y <guides>guías</guides> para ceramistas que empiezan, desde qué es un esmalte hasta cómo cocerlo con seguridad.",
+    "numbersHeading": "Cómo se calculan los números",
+    "numbers": "Cada material se describe por su fórmula química o por un análisis de óxidos, más su pérdida al fuego: la parte que se desprende en el horno, como el dióxido de carbono del carbonato cálcico o el agua del caolín. Glazecalc convierte cada cantidad en moles de cada óxido con masas molares estándar, los suma en toda la receta y los divide por el total de moles de fundente. Los colorantes y otros aditivos aparecen con la receta, pero quedan fuera de la fórmula Seger, como es habitual.",
+    "guide": "Los resultados son una orientación, no una garantía. Los materiales reales varían de un proveedor a otro y de un lote a otro, y la cocción importa tanto como la química, así que pruebe cada esmalte. Los esmaltes para superficies en contacto con alimentos deberían someterse a un ensayo de cesión.",
+    "builtHeading": "Cómo está hecho",
+    "built": "Glazecalc nació en 2017 y se rehízo en 2026. Es una pequeña aplicación web, y su <source>código fuente está en GitHub</source> con licencia MIT.",
+    "stackBrowser": "Angular 22 en el navegador (componentes standalone y signals), con la química de esmaltes en una pequeña biblioteca compartida.",
+    "stackServer": "Una API en TypeScript sobre Node.js 24 y Express 5, con MongoDB 9, comprobada por más de 350 pruebas automáticas.",
+    "stackHosting": "Funciona en Docker en Amazon Web Services, detrás de nginx, con HTTPS de Let’s Encrypt.",
+    "stackDeploy": "Se despliega con GitHub Actions: las imágenes se crean y se prueban con cada cambio, y los despliegues inician sesión en AWS sin claves guardadas.",
+    "whoHeading": "Quién lo ha hecho",
+    "who": "Glazecalc es obra de Aaron Filson. ¿Ha encontrado un problema o tiene una idea? <issues>Abra una incidencia en GitHub</issues>.",
+    "studio": "La cerámica hecha a mano de Aaron Filson está en <studio>Updraft Pottery Studio</studio>, en Tacoma (Washington). Eche un vistazo a la obra y encargue una pieza si alguna le llama la atención."
+  },
+  "privacy": {
+    "title": "Privacidad",
+    "lead": "Última actualización: octubre de 2026.",
+    "shortHeading": "En resumen",
+    "short": "Glazecalc guarda lo que necesita para que funcione su cuenta, y nada más. No hay anuncios, ni analítica, ni cookies de seguimiento, ni scripts de terceros. Sus datos nunca se venden ni se comparten.",
+    "storedHeading": "Qué se guarda",
+    "storedAccount": "<b>Su cuenta:</b> su dirección de correo electrónico y su contraseña, que se guarda solo como un hash unidireccional (bcrypt), nunca la contraseña en sí.",
+    "storedTrial": "<b>Un periodo de prueba («Probar ahora»):</b> sin correo electrónico ni contraseña, solo un nombre generado, como «speckled quiet kilns». El periodo de prueba y todo lo guardado en él se eliminan automáticamente 14 días después de empezar, salvo que cree una cuenta para conservarlos.",
+    "storedSaved": "<b>Lo que usted guarda:</b> sus recetas, materiales, aditivos, notas, registros de cocción y consejos. Otras personas que usan Glazecalc no pueden verlos.",
+    "storedResets": "<b>Solicitudes para restablecer la contraseña:</b> una huella de cada enlace de restablecimiento (no el enlace en sí), que se elimina automáticamente cuando caduca, 30 minutos después.",
+    "storedBrowser": "<b>En su navegador:</b> una cookie, <code>glazecalc_session</code>, que mantiene su sesión iniciada. Contiene su token de inicio de sesión, los scripts de la página no pueden leerla, solo se envía al servidor de Glazecalc y dura 7 días (14 en un periodo de prueba). El almacenamiento local guarda una nota de que ha iniciado sesión y, durante un periodo de prueba, el nombre de la prueba y la fecha en que termina. Al cerrar sesión se eliminan.",
+    "emailHeading": "Correo electrónico",
+    "email": "Glazecalc solo envía correos electrónicos cuando usted pide restablecer su contraseña y cuando su contraseña cambia. Se envían a través de Amazon Simple Email Service. No hay boletín ni correos publicitarios.",
+    "hostingHeading": "Registros, copias de seguridad y alojamiento",
+    "logs": "El servidor web registra cada solicitud, incluida su dirección IP, en un registro que se conserva 14 días para hacer funcionar el sitio y protegerlo.",
+    "backups": "Las copias de seguridad cifradas de la base de datos se conservan 30 días, y las copias del disco del servidor, 7 días, para poder restaurar el sitio tras un fallo.",
+    "hosting": "Todo está alojado en Amazon Web Services, en Estados Unidos (Oregón).",
+    "deletingHeading": "Eliminar sus datos",
+    "deleting": "Puede eliminar su cuenta desde la <account>página de su cuenta</account>. Así se eliminan de inmediato su cuenta y todo lo que haya guardado; «Descartar la prueba» hace lo mismo con un periodo de prueba. Las copias que haya en las copias de seguridad desaparecen a medida que estas caducan, en un plazo de 30 días.",
+    "questionsHeading": "Preguntas",
+    "questions": "Pregunte <issues>abriendo una incidencia en GitHub</issues>. Si esta política cambia, también cambia la fecha que figura al principio de esta página."
+  },
+  "notFound": {
+    "heading": "Página no encontrada",
+    "text": "No hay ninguna página en esta dirección. Puede que se haya movido o que el enlace esté mal escrito.",
+    "start": "Ir a la página de inicio"
+  },
+  "advice": {
+    "title": "Consejos sobre esmaltes",
+    "lead": "Consejos prácticos para mezclar, esmaltar y cocer, además de los suyos propios.",
+    "signUp": "<signup>Cree una cuenta gratuita</signup> o <signin>inicie sesión</signin> para guardar sus propios consejos.",
+    "generalHeading": "Consejos generales",
+    "tags": "Etiquetas: {list}",
+    "addHeading": "Añadir sus propios consejos",
+    "titleLabel": "Título:",
+    "tagsLabel": "Etiquetas:",
+    "contentLabel": "Contenido del consejo:",
+    "save": "Guardar",
+    "mineHeading": "Mis consejos",
+    "nothingSaved": "Aún no hay nada guardado.",
+    "titleMissing": "Ponga un título al consejo.",
+    "contentMissing": "Escriba el consejo.",
+    "fetchFailed": "Se ha producido un error al obtener los consejos.",
+    "standardFetchFailed": "Se ha producido un error al obtener los consejos del servidor.",
+    "saved": "El consejo se ha añadido correctamente.",
+    "saveFailed": "Se ha producido un error al enviar el consejo."
+  }
+}

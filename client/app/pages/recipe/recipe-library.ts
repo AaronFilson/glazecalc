@@ -1,6 +1,7 @@
 import { Component, computed, input, output, signal } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { TranslocoDirective } from '@jsverse/transloco';
 import { LibraryInfo } from '../../core/models';
+import { RichText } from '../../i18n/rich-text';
 import {
   REGIONS,
   byName,
@@ -29,8 +30,8 @@ let nextId = 0;
  */
 @Component({
   selector: 'gc-recipe-library',
-  imports: [RouterLink],
-  template: `
+  imports: [RichText, TranslocoDirective],
+  template: `<ng-container *transloco="let t">
     <div class="library">
       <div class="library-top">
         @if (nested()) {
@@ -38,7 +39,7 @@ let nextId = 0;
         } @else {
           <h3 class="library-heading">{{ heading() }}</h3>
         }
-        <div class="library-tabs" role="group" [attr.aria-label]="'Which ' + noun()">
+        <div class="library-tabs" role="group" [attr.aria-label]="t('recipe.library.which', { noun: noun() })">
           <button
             type="button"
             class="library-tab"
@@ -46,7 +47,7 @@ let nextId = 0;
             [attr.aria-pressed]="tab() === 'mine'"
             (click)="chosenTab.set('mine')"
           >
-            My {{ noun() }} ({{ mineShown().length }})
+            {{ t('recipe.library.mine', { noun: noun(), count: mineShown().length }) }}
           </button>
           <button
             type="button"
@@ -55,25 +56,27 @@ let nextId = 0;
             [attr.aria-pressed]="tab() === 'standard'"
             (click)="chosenTab.set('standard')"
           >
-            Standard ({{ standardShown().length }})
+            {{ t('recipe.library.standard', { count: standardShown().length }) }}
           </button>
         </div>
       </div>
-      <label class="visually-hidden" [for]="filterId"
-        >Filter {{ tab() === 'mine' ? 'my' : 'standard' }} {{ noun() }}</label
-      >
+      <label class="visually-hidden" [for]="filterId">{{
+        t('recipe.library.filterLabel', { tab: tab(), noun: noun() })
+      }}</label>
       <div class="library-tools">
         <input
           [id]="filterId"
           type="search"
           class="form-control form-control-sm library-filter"
-          placeholder="Filter"
+          [placeholder]="t('standard.filter')"
           autocomplete="off"
           [value]="filter()"
           (input)="filter.set($any($event.target).value)"
         />
         @if (tab() === 'standard') {
-          <label class="visually-hidden" [for]="filterId + '-region'">Standard {{ noun() }} sold in</label>
+          <label class="visually-hidden" [for]="filterId + '-region'">{{
+            t('recipe.library.soldIn', { noun: noun() })
+          }}</label>
           <select
             [id]="filterId + '-region'"
             class="form-select form-select-sm library-region"
@@ -96,13 +99,17 @@ let nextId = 0;
                     <span class="library-status">{{ status }}</span>
                   }
                 </span>
-                <span class="library-mark">{{ markLabel() }}</span>
+                <span class="library-mark">{{ markLabel() || t('recipe.library.inRecipe') }}</span>
               </span>
             } @else {
               <button
                 type="button"
                 class="library-item"
-                [attr.aria-label]="'Add ' + item.name + (statusText(item) ? ', ' + statusText(item) : '')"
+                [attr.aria-label]="
+                  statusText(item)
+                    ? t('recipe.library.addWithStatus', { name: item.name, status: statusText(item) })
+                    : t('recipe.library.add', { name: item.name })
+                "
                 (click)="choose(item)"
               >
                 <span
@@ -111,46 +118,45 @@ let nextId = 0;
                     <span class="library-status">{{ status }}</span>
                   }
                 </span>
-                <span class="library-mark" aria-hidden="true">+ Add</span>
+                <span class="library-mark" aria-hidden="true">{{ t('recipe.library.addMark') }}</span>
               </button>
             }
           </li>
         } @empty {
           <li class="library-empty">
             @if (filter()) {
-              Nothing matches "{{ filter() }}".
+              {{ t('recipe.library.nothingMatches', { filter: filter() }) }}
             } @else if (tab() === 'mine') {
-              None yet. Add your own on the <a [routerLink]="mineLink()">{{ mineLinkLabel() }}</a
-              >.
+              <gc-rich [text]="t('recipe.library.noneYet', { noun: noun() })" [links]="{ page: mineLink() }" />
             } @else {
-              Loading...
+              {{ t('standard.loading') }}
             }
           </li>
         }
       </ul>
       @if (leadHidden(); as hidden) {
         <p class="library-hidden">
-          {{ hidden }} with lead {{ hidden === 1 ? 'is' : 'are' }} not listed: lead is off in
-          <a routerLink="/account">Settings</a>.
+          <gc-rich [text]="t('recipe.library.leadHidden', { count: hidden })" [links]="{ settings: '/account' }" />
         </p>
       }
     </div>
-  `
+  </ng-container>`
 })
 export class RecipeLibrary<T extends LibraryItem = LibraryItem> {
+  /** In the page's language. */
   readonly heading = input.required<string>();
-  /** Plural, lower case: 'materials', 'additives'. */
-  readonly noun = input.required<string>();
+  /** What the lists hold, for their labels and the page to add your own on. */
+  readonly noun = input.required<'materials' | 'additives'>();
   readonly mine = input.required<T[]>();
   readonly standard = input.required<T[]>();
   /** Keys (see key()) of what the recipe already holds. */
   readonly inRecipe = input<ReadonlySet<string>>(new Set());
+  /** The page to add your own on: the Materials page, or the Additives page for additives. */
   readonly mineLink = input('/material');
-  readonly mineLinkLabel = input('Materials page');
   /** Leave out materials with lead: the account's lead setting is off. */
   readonly hideLead = input(false);
-  /** What marks an item in inRecipe: "In recipe", or "Added" in a list to try. */
-  readonly markLabel = input('In recipe');
+  /** What marks an item in inRecipe, in the page's language: "In recipe" when blank, or "Added" in a list to try. */
+  readonly markLabel = input('');
   /** Inside a panel with its own heading: the heading a level below. */
   readonly nested = input(false);
   readonly pick = output<T>();

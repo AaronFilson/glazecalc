@@ -1,6 +1,5 @@
-import { provideRouter } from '@angular/router';
 import { TestBed } from '@angular/core/testing';
-import { text } from '../../testing/test-providers';
+import { testProviders, text } from '../../testing/test-providers';
 import { LibraryItem, RecipeLibrary } from './recipe-library';
 import { RecipeHelp } from './recipe-help';
 
@@ -9,7 +8,7 @@ const MINE = [item('Custer Spar (my analysis)'), item('Soda spar, batch from 202
 const STANDARD = [item('Custer Feldspar'), item('Minspar 200'), item('Silica'), item('Whiting')];
 
 describe('RecipeLibrary', () => {
-  beforeEach(() => TestBed.configureTestingModule({ providers: [provideRouter([])] }));
+  beforeEach(() => TestBed.configureTestingModule({ providers: testProviders() }));
 
   const create = async (mine: LibraryItem[] = MINE, inRecipe = new Set<string>()) => {
     const fixture = TestBed.createComponent(RecipeLibrary);
@@ -92,7 +91,7 @@ describe('RecipeLibrary', () => {
 describe('RecipeLibrary with the standard library', () => {
   beforeEach(() => {
     localStorage.clear();
-    TestBed.configureTestingModule({ providers: [provideRouter([])] });
+    TestBed.configureTestingModule({ providers: testProviders() });
   });
 
   it('matches other names, marks what is no longer current, and narrows the standard list by region', async () => {
@@ -139,7 +138,7 @@ describe('RecipeLibrary with the standard library', () => {
 describe('RecipeHelp', () => {
   beforeEach(() => {
     localStorage.clear();
-    TestBed.configureTestingModule({ providers: [provideRouter([])] });
+    TestBed.configureTestingModule({ providers: testProviders() });
   });
 
   const create = async () => {

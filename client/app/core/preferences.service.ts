@@ -1,6 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable, WritableSignal, inject, signal } from '@angular/core';
 import { firstValueFrom } from 'rxjs';
+import { FORMAT_LOCALES, REGION_CODES } from '../../../lib/regions';
+import { LIVE_LANGUAGES } from '../../../lib/regions/languages';
 import { GramPrecision, WeightUnit } from '../shared/weights';
 import type { Palette, ThemeMode } from './theme';
 import { API_BASE } from './api-base';
@@ -12,10 +14,34 @@ export interface Preferences {
   theme: ThemeMode;
   palette: Palette;
   lead: LeadChoice;
+  /** Where the potter works (lib/regions), or '' until chosen. */
+  region: string;
+  /** Numbers and dates as the language and region write them ('auto'), or a named locale. */
+  format: string;
+  decimalMark: DecimalMark;
+  /** '' follows the region. */
+  temperature: '' | TemperatureScale;
+  /** '' follows the region. */
+  cones: '' | ConeSystem;
+  /** The language of the app and of emails: one of those offered (lib/regions/languages.js). */
+  language: string;
+  /** '' follows the region. */
+  density: '' | Density;
+  /** The English after key terms in a translated page. */
+  englishTerms: 'off' | 'on';
+  /** The translation notice, until it is closed. */
+  notice: 'shown' | 'hidden';
 }
 
 /** Whether materials with lead may be added to recipes and suggested: off unless chosen. */
 export type LeadChoice = 'off' | 'on';
+/** Which decimal mark typed amounts may use. */
+export type DecimalMark = 'either' | 'comma' | 'point';
+export type TemperatureScale = 'C' | 'F';
+/** Firing to Orton cones, or by temperature alone. */
+export type ConeSystem = 'orton' | 'temperature';
+/** Glaze density as specific gravity, degrees Baumé, or the ounces in an imperial pint. */
+export type Density = 'sg' | 'baume' | 'pint';
 
 /** The values each preference may take; the first is the default (as on the server, models/user.ts). */
 const CHOICES: { [K in keyof Preferences]: ReadonlyArray<Preferences[K]> } = {
@@ -23,7 +49,16 @@ const CHOICES: { [K in keyof Preferences]: ReadonlyArray<Preferences[K]> } = {
   gramPrecision: ['single', 'full'],
   theme: ['system', 'light', 'dark'],
   palette: ['tenmoku', 'celadon', 'cobalt', 'oxblood', 'shino', 'ash'],
-  lead: ['off', 'on']
+  lead: ['off', 'on'],
+  region: ['', ...REGION_CODES],
+  format: ['auto', ...FORMAT_LOCALES],
+  decimalMark: ['either', 'comma', 'point'],
+  temperature: ['', 'C', 'F'],
+  cones: ['', 'orton', 'temperature'],
+  language: LIVE_LANGUAGES,
+  density: ['', 'sg', 'baume', 'pint'],
+  englishTerms: ['off', 'on'],
+  notice: ['shown', 'hidden']
 };
 const NAMES = Object.keys(CHOICES) as Array<keyof Preferences>;
 
@@ -33,10 +68,13 @@ function asChoice<K extends keyof Preferences>(name: K, value: unknown): Prefere
   return choices.includes(value as Preferences[K]) ? (value as Preferences[K]) : choices[0];
 }
 
-// This browser's copy is kept under each preference's name.
+// This browser's copy is kept under each preference's name (the region as preferredRegion,
+// since the library's own region filter came first).
+const copyKey = (name: keyof Preferences): string => (name === 'region' ? 'preferredRegion' : name);
+
 function readCopy<K extends keyof Preferences>(name: K): Preferences[K] {
   try {
-    return asChoice(name, localStorage.getItem(name));
+    return asChoice(name, localStorage.getItem(copyKey(name)));
   } catch {
     return CHOICES[name][0];
   }
@@ -61,7 +99,16 @@ export class PreferencesService {
     gramPrecision: 0,
     theme: 0,
     palette: 0,
-    lead: 0
+    lead: 0,
+    region: 0,
+    format: 0,
+    decimalMark: 0,
+    temperature: 0,
+    cones: 0,
+    language: 0,
+    density: 0,
+    englishTerms: 0,
+    notice: 0
   };
 
   /** Batch weights in grams, or in pounds and ounces. */
@@ -74,13 +121,32 @@ export class PreferencesService {
   readonly palette = signal<Palette>(readCopy('palette'));
   /** Whether materials with lead may be added to recipes and suggested. */
   readonly lead = signal<LeadChoice>(readCopy('lead'));
+  /** Where the potter works, or '' until chosen (core/locale.ts turns these into formats). */
+  readonly region = signal<string>(readCopy('region'));
+  readonly format = signal<string>(readCopy('format'));
+  readonly decimalMark = signal<DecimalMark>(readCopy('decimalMark'));
+  readonly temperature = signal<'' | TemperatureScale>(readCopy('temperature'));
+  readonly cones = signal<'' | ConeSystem>(readCopy('cones'));
+  readonly language = signal<string>(readCopy('language'));
+  readonly density = signal<'' | Density>(readCopy('density'));
+  readonly englishTerms = signal<'off' | 'on'>(readCopy('englishTerms'));
+  readonly notice = signal<'shown' | 'hidden'>(readCopy('notice'));
 
   private readonly values: { [K in keyof Preferences]: WritableSignal<Preferences[K]> } = {
     weightUnit: this.weightUnit,
     gramPrecision: this.gramPrecision,
     theme: this.theme,
     palette: this.palette,
-    lead: this.lead
+    lead: this.lead,
+    region: this.region,
+    format: this.format,
+    decimalMark: this.decimalMark,
+    temperature: this.temperature,
+    cones: this.cones,
+    language: this.language,
+    density: this.density,
+    englishTerms: this.englishTerms,
+    notice: this.notice
   };
 
   /** Fetches the account's choices, once per sign-in. If that fails, the copy on this browser stays. */
@@ -120,10 +186,15 @@ export class PreferencesService {
     }
   }
 
+  /** Keeps a choice on this browser only, for a visitor with no account to save it to. */
+  remember<K extends keyof Preferences>(name: K, value: Preferences[K]): void {
+    this.keep(name, value);
+  }
+
   private keep<K extends keyof Preferences>(name: K, value: Preferences[K]): void {
     this.values[name].set(value);
     try {
-      localStorage.setItem(name, value);
+      localStorage.setItem(copyKey(name), value);
     } catch {
       // Without storage, the account's choices are fetched again on each visit.
     }

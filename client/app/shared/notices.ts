@@ -1,4 +1,5 @@
 import { Component, input, signal } from '@angular/core';
+import { TranslocoDirective, translate } from '@jsverse/transloco';
 
 /**
  * Error and success messages for one page. A message can name a topic, such as
@@ -9,6 +10,8 @@ export class Notices {
   readonly errors = signal<string[]>([]);
   readonly messages = signal<string[]>([]);
   private readonly latest = new Map<string, string>();
+  /** The warnings shown now, which the next calculation's replace. */
+  private shownWarnings: string[] = [];
 
   error(text: string): void {
     this.errors.update((list) => [...list, text]);
@@ -16,10 +19,10 @@ export class Notices {
 
   /** Shows a calculation's warnings in place of the previous calculation's. */
   warnings(list: readonly string[]): void {
-    this.errors.update((errors) => [
-      ...errors.filter((text) => !text.startsWith('Warning: ')),
-      ...list.map((warning) => 'Warning: ' + warning)
-    ]);
+    const previous = this.shownWarnings;
+    const next = list.map((warning) => translate('notices.warning', { text: warning }));
+    this.errors.update((errors) => [...errors.filter((text) => !previous.includes(text)), ...next]);
+    this.shownWarnings = next;
   }
 
   success(text: string, topic?: string): void {
@@ -42,10 +45,11 @@ export class Notices {
 
 @Component({
   selector: 'gc-notices',
+  imports: [TranslocoDirective],
   // The live regions are always on the page, empty or not: screen readers
   // announce what is added to a region they already know, and can miss a
   // region that arrives with its message already in it.
-  template: `
+  template: `<ng-container *transloco="let t">
     <div role="alert">
       @if (notices().errors().length) {
         <ol class="errors-section">
@@ -53,7 +57,7 @@ export class Notices {
             <li>
               {{ error }}
               <button type="button" class="btn btn-light border" (click)="notices().dismissError($index)">
-                Dismiss
+                {{ t('notices.dismiss') }}
               </button>
             </li>
           }
@@ -67,14 +71,14 @@ export class Notices {
             <li>
               {{ message }}
               <button type="button" class="btn btn-light border" (click)="notices().dismissMessage($index)">
-                Dismiss
+                {{ t('notices.dismiss') }}
               </button>
             </li>
           }
         </ol>
       }
     </div>
-  `
+  </ng-container>`
 })
 export class NoticesList {
   readonly notices = input.required<Notices>();

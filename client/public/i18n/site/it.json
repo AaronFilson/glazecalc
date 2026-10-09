@@ -1,0 +1,111 @@
+{
+  "landing": {
+    "eyebrow": "Calcolatore di smalti e quaderno di laboratorio",
+    "heading": "La chimica degli smalti, gratuita, per chi fa ceramica.",
+    "lead": "Capire i propri smalti, non solo prepararli. Si inserisce una ricetta e si vedono subito la formula di Seger (UMF), il rapporto silice/allumina e l’equilibrio dei fondenti. Ricette, materiali, coloranti, note e registri di cottura stanno insieme in un unico quaderno privato.",
+    "trialEnded": "La Sua prova è terminata. Ne inizi una nuova o crei un account gratuito per conservare il Suo lavoro.",
+    "tryIt": "Prova ora",
+    "createAccount": "Crea un account gratuito",
+    "trialFailed": "Impossibile avviare una prova in questo momento. Riprovare.",
+    "heroNote": "Nessuna registrazione necessaria per provarlo · Gratuito e open source · Le Sue ricette restano private",
+    "heroAlt": "Una fila di terne di coni dopo la cottura: i coni pirometrici bianchi di ogni terna si sono piegati nel calore del forno.",
+    "heroCaption": "Terne di coni dopo una cottura: ogni cono si piega quando il forno ha svolto abbastanza lavoro termico.",
+    "exampleHeading": "Un esempio pratico: una classica base celadon",
+    "exampleCaption": "Il «4321» di Bernard Leach, spesso cotto a cono 10, in parti in peso.",
+    "material": "Materiale",
+    "parts": "Parti",
+    "unityHeading": "La sua formula di Seger",
+    "exampleNote": "La somma dei fondenti è 1, quindi due smalti qualsiasi si possono confrontare alla pari. Calcolata qui, nel Suo browser, con lo stesso codice che usa il calcolatore.",
+    "featuresHeading": "Cosa fa Glazecalc",
+    "features": {
+      "unity": {
+        "title": "Formula di Seger immediata",
+        "text": "Appena si inserisce una ricetta, si vedono fondenti, allumina e silice nella formula di Seger: è così che i chimici degli smalti confrontano le ricette."
+      },
+      "substitute": {
+        "title": "Correggere e sostituire",
+        "text": "Un materiale fuori produzione? Confrontare le formule per trovare un sostituto che fonda allo stesso modo."
+      },
+      "notebook": {
+        "title": "Il quaderno di laboratorio",
+        "text": "Tenere insieme, in un unico posto, ricette, materiali propri, coloranti, note e registri di cottura."
+      },
+      "learn": {
+        "title": "Imparare strada facendo",
+        "text": "Guide in parole semplici, da cos’è uno smalto a come cuocerlo in sicurezza, accanto ai numeri."
+      }
+    },
+    "umfHeading": "Che cos’è la formula di Seger?",
+    "umfRecipe": "La ricetta di uno smalto dice quanto pesare di ogni materiale. La formula di Seger (UMF), detta anche formula unitaria, dice che cosa diventano quei materiali nel forno: quante molecole di ogni ossido ci sono, riportate all’unità in modo che la somma dei fondenti sia uno.",
+    "umfGroups": "I fondenti fanno fondere lo smalto, l’allumina rende più viscoso lo smalto fuso e la silice forma il vetro. Confrontare questi tre gruppi spiega perché uno smalto è lucido e un altro opaco, o perché uno cola mentre un altro resta al suo posto, e mostra come sostituire un materiale che non è più in vendita.",
+    "readAdvice": "Leggi altri consigli sugli smalti",
+    "closingHeading": "Pronto quando vuole.",
+    "closingText": "Provare subito il calcolatore, poi creare un account per conservare ciò che si è fatto."
+  },
+  "about": {
+    "title": "Informazioni su Glazecalc",
+    "lead": "Un calcolatore di chimica degli smalti e un quaderno, gratuiti e open source, per ceramisti, artisti della ceramica e studenti.",
+    "whatHeading": "Cosa fa",
+    "what": "Glazecalc trasforma la ricetta di uno smalto, cioè i materiali e quanto se ne pesa di ognuno, nella sua formula di Seger (UMF): gli ossidi di cui è fatto lo smalto dopo cottura, riportati all’unità in modo che la somma dei fondenti sia uno. Così le ricette diventano confrontabili, si capisce meglio come si comporta uno smalto ed è più facile sostituire un materiale quando serve.",
+    "alongside": "Accanto al calcolatore conserva le ricette, i materiali propri, i coloranti e gli altri additivi, le note e i registri di cottura, una pagina pratica di <advice>consigli sugli smalti</advice> e <guides>guide</guides> per chi inizia, da cos’è uno smalto a come cuocerlo in sicurezza.",
+    "numbersHeading": "Come si calcolano i numeri",
+    "numbers": "Ogni materiale è descritto dalla sua formula chimica o da un’analisi degli ossidi, più la perdita al fuoco: la parte che si perde nel forno, come l’anidride carbonica del carbonato di calcio o l’acqua del caolino. Glazecalc converte ogni quantità in moli di ciascun ossido con le masse molari standard, le somma su tutta la ricetta e divide per le moli totali di fondente. Coloranti e altri additivi compaiono con la ricetta ma, come d’uso, restano fuori dalla formula di Seger.",
+    "guide": "I risultati sono un’indicazione, non una garanzia. I materiali reali variano da fornitore a fornitore e da lotto a lotto, e la cottura conta quanto la chimica: quindi ogni smalto va provato. Gli smalti per superfici a contatto con il cibo andrebbero sottoposti a una prova di cessione.",
+    "builtHeading": "Come è fatto",
+    "built": "Glazecalc è nato nel 2017 ed è stato ricostruito nel 2026. È una sola, piccola applicazione web e il suo <source>codice sorgente è su GitHub</source> con licenza MIT.",
+    "stackBrowser": "Angular 22 nel browser (componenti standalone e signals), con la chimica degli smalti in una piccola libreria condivisa.",
+    "stackServer": "Un’API in TypeScript su Node.js 24 ed Express 5, con MongoDB 9, verificata da più di 350 test automatici.",
+    "stackHosting": "Gira in Docker su Amazon Web Services, dietro nginx, con HTTPS di Let's Encrypt.",
+    "stackDeploy": "Distribuito con GitHub Actions: le immagini vengono create e testate a ogni modifica e i rilasci accedono ad AWS senza chiavi memorizzate.",
+    "whoHeading": "Chi l’ha fatto",
+    "who": "Glazecalc è opera di Aaron Filson. Ha trovato un problema o ha un’idea? <issues>Apra una segnalazione su GitHub</issues>.",
+    "studio": "Le ceramiche fatte a mano di Aaron Filson si trovano presso <studio>Updraft Pottery Studio</studio>, a Tacoma, nello stato di Washington. Dia un’occhiata ai lavori e ordini un pezzo, se uno La colpisce."
+  },
+  "privacy": {
+    "title": "Privacy",
+    "lead": "Ultimo aggiornamento: ottobre 2026.",
+    "shortHeading": "In breve",
+    "short": "Glazecalc conserva ciò che serve a far funzionare il Suo account, e niente di più. Non ci sono pubblicità, strumenti di analisi, cookie di tracciamento né script di terze parti. I Suoi dati non vengono mai venduti né condivisi.",
+    "storedHeading": "Cosa viene conservato",
+    "storedAccount": "<b>Il Suo account:</b> l’indirizzo email e la password, conservata solo come hash unidirezionale (bcrypt), mai così com’è.",
+    "storedTrial": "<b>Una prova («Prova ora»):</b> nessuna email né password, solo un nome generato come «speckled quiet kilns». La prova e tutto ciò che vi è salvato vengono eliminati automaticamente 14 giorni dopo l’inizio, a meno che non si crei un account per conservarli.",
+    "storedSaved": "<b>Ciò che salva:</b> ricette, materiali, additivi, note, registri di cottura e consigli. Gli altri utenti non possono vederli.",
+    "storedResets": "<b>Richieste di reimpostazione della password:</b> un’impronta di ogni link di reimpostazione (non il link stesso), eliminata automaticamente alla scadenza, 30 minuti dopo.",
+    "storedBrowser": "<b>Nel Suo browser:</b> un solo cookie, <code>glazecalc_session</code>, che mantiene l’accesso. Contiene il token di accesso, gli script della pagina non possono leggerlo, viene inviato solo al server di Glazecalc e dura 7 giorni (14 per una prova). La memoria locale (local storage) conserva un’indicazione che l’accesso è attivo e, durante una prova, il nome e la data di fine della prova. Uscendo dall’account vengono rimossi.",
+    "emailHeading": "Email",
+    "email": "Glazecalc invia email solo quando si chiede di reimpostare la password e quando la password cambia. Le email passano da Amazon Simple Email Service. Non ci sono newsletter né email promozionali.",
+    "hostingHeading": "Log, backup e hosting",
+    "logs": "Il server web registra ogni richiesta, compreso il Suo indirizzo IP, in un log conservato per 14 giorni, per far funzionare il sito e proteggerlo.",
+    "backups": "I backup cifrati del database sono conservati per 30 giorni e le copie del disco del server per 7 giorni, così il sito può essere ripristinato dopo un guasto.",
+    "hosting": "Tutto è ospitato da Amazon Web Services negli Stati Uniti (Oregon).",
+    "deletingHeading": "Eliminare i propri dati",
+    "deleting": "Può eliminare il Suo account dalla <account>pagina dell’account</account>. Questo rimuove subito l’account e tutto ciò che ha salvato; «Elimina la prova» fa lo stesso per una prova. Le copie nei backup scompaiono man mano che i backup scadono, entro 30 giorni.",
+    "questionsHeading": "Domande",
+    "questions": "Per domande, <issues>aprire una segnalazione su GitHub</issues>. Se questa informativa cambia, cambia anche la data in cima a questa pagina."
+  },
+  "notFound": {
+    "heading": "Pagina non trovata",
+    "text": "A questo indirizzo non c’è nessuna pagina. Potrebbe essere stata spostata, oppure il link potrebbe contenere un errore di battitura.",
+    "start": "Vai alla pagina iniziale"
+  },
+  "advice": {
+    "title": "Consigli sugli smalti",
+    "lead": "Suggerimenti pratici su preparazione, smaltatura e cottura, più eventuali consigli propri.",
+    "signUp": "<signup>Creare un account gratuito</signup> o <signin>accedere</signin> per conservare i propri consigli.",
+    "generalHeading": "Consigli generali",
+    "tags": "Tag: {list}",
+    "addHeading": "Aggiungere i propri consigli",
+    "titleLabel": "Titolo:",
+    "tagsLabel": "Tag:",
+    "contentLabel": "Testo del consiglio:",
+    "save": "Salva",
+    "mineHeading": "I miei consigli",
+    "nothingSaved": "Non c’è ancora nulla di salvato.",
+    "titleMissing": "Dare un titolo al consiglio.",
+    "contentMissing": "Scrivere il consiglio.",
+    "fetchFailed": "Si è verificato un errore nel caricamento dei consigli.",
+    "standardFetchFailed": "Si è verificato un errore nel caricamento dei consigli dal server.",
+    "saved": "Aggiunta ai consigli riuscita.",
+    "saveFailed": "Si è verificato un errore nell’invio del consiglio."
+  }
+}

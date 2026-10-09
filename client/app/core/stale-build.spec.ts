@@ -27,6 +27,12 @@ describe('reloadIfCodeIsMissing', () => {
     expect(location.assign).toHaveBeenLastCalledWith('/about');
   });
 
+  it('stays in the language of the page', () => {
+    const location = { assign: vi.fn() };
+    reloadIfCodeIsMissing(missing('/advice'), location, memoryStorage(), 'de');
+    expect(location.assign).toHaveBeenCalledWith('/de/advice');
+  });
+
   it('leaves other navigation errors to the router', () => {
     const location = { assign: vi.fn() };
     reloadIfCodeIsMissing(new NavigationError(1, '/recipe', new Error('guard failed')), location, memoryStorage());

@@ -1,0 +1,50 @@
+{
+  "common": {
+    "formulaHelp": "Type a formula with plain numbers, such as {typed}: the counts show as subscripts, {shown}. To join the parts of a formula, as in {joined}, copy this dot:",
+    "relatedTo": "Related To:",
+    "notes": "Notes:",
+    "loi": "Loss on Ignition - LOI (percentage):",
+    "molecularWeight": "Raw molecular weight of the formula (used only if LOI is blank):",
+    "formulaHeading": "Enter the formula (fired):",
+    "oxideSelection": "Oxide Selection",
+    "noOxide": "none",
+    "addOxide": "Add the oxide to the list",
+    "formulaIn": "This formula is in :",
+    "percent": "Percent",
+    "molecular": "Molecular / Unity",
+    "amount": "Amount:",
+    "removeOxide": "Remove from formula list",
+    "save": "Save",
+    "elements": "Elements",
+    "removeNote": "Saved recipes keep their own copy, so they won't change.",
+    "saveFailed": "Error: the request to the server failed."
+  },
+  "material": {
+    "title": "Materials",
+    "lead": "Your own raw materials, entered as a chemical formula or an oxide analysis.",
+    "newHeading": "Input information on the new material",
+    "name": "Name of Material:",
+    "rawFormula": "Raw formula:",
+    "weightsNote": "The equivalent and fired weights are calculated from the formula and LOI when you save.",
+    "mineHeading": "My materials:",
+    "rawFormulaColumn": "Raw Formula",
+    "standardHeading": "The standard materials:",
+    "fetchFailed": "There was an error in getting the materials information.",
+    "standardFetchFailed": "There was an error in getting the standard materials information.",
+    "saved": "Success. Material added to database."
+  },
+  "additive": {
+    "title": "Additives and colorants",
+    "lead": "Colorants and opacifiers measured on top of the base recipe, such as cobalt or tin oxide. A recipe can leave them out of the unity formula or count them in it.",
+    "newHeading": "Input information on the new additive",
+    "name": "Name of Additive:",
+    "formulaAsSold": "Formula, as sold:",
+    "noChemistry": "It has no oxide analysis, such as a commercial stain: leave it out of the unity formula",
+    "firedNote": "Enter what it gives the glaze once fired: black cobalt oxide, {asSold}, is {fired} with a {loi}% LOI. A recipe can then count it in the unity formula.",
+    "mineHeading": "My additives and colorants:",
+    "standardHeading": "The standard additives:",
+    "fetchFailed": "There was an error in getting the additives information.",
+    "standardFetchFailed": "There was an error in getting the standard additives information.",
+    "saved": "Success. Additive added to database."
+  }
+}

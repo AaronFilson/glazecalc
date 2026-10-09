@@ -1,0 +1,22 @@
+{
+  "unknown-compound": "Unbekannte Verbindung {compound} in der Formel",
+  "unknown-oxide": "Unbekanntes Oxid {oxide} im Rohstoff {material}",
+  "invalid-oxide-amount": "Ungültige Menge für {oxide} im Rohstoff {material}",
+  "loi-range": "Der Glühverlust von {material} muss mindestens 0 und kleiner als 100 sein",
+  "no-oxides": "Der Rohstoff {material} enthält keine Oxide",
+  "no-name": "Der Rohstoff braucht einen Namen",
+  "no-analysis": "Der Rohstoff {material} braucht eine Formel oder eine Analyse",
+  "recipe-shape": "Das Rezept muss ein Array aus '{ material, amount }' oder eine Zuordnung von Mengen sein",
+  "invalid-amount": "Ungültige Menge für den Rohstoff {material}",
+  "missing-material": "In einer Rezeptzeile fehlt der Rohstoff",
+  "unknown-material": "Unbekannter Rohstoff {material}",
+  "no-flux": "Das Rezept enthält keine Flussmitteloxide, daher ist die Segerformel (UMF) nicht definiert",
+  "no-target": "Das Ziel enthält keine Oxide, die angestrebt werden könnten",
+  "no-materials": "Es gibt keine Rohstoffe zum Berechnen",
+  "no-temperature": "Die Brenntemperatur wird benötigt, um den Boranteil festzulegen",
+  "no-flux-to-rebuild": "Die Glasur enthält keine Flussmittel, die neu aufgebaut werden könnten",
+  "unknown-element": "Unbekanntes Element {element} in {formula}",
+  "bad-formula": "Die Formel {formula} konnte nicht gelesen werden",
+  "analysis-total": "Die Analyse von {material} ergibt zusammen {total} % einschließlich Glühverlust; erwartet sind etwa 100 %.",
+  "stored-equivalent": "Das gespeicherte Äquivalentgewicht von {material} passt nicht zu seiner Formel und seinem Glühverlust; stattdessen wurden die Formel und der Glühverlust verwendet."
+}

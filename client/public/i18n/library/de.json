@@ -1,0 +1,50 @@
+{
+  "common": {
+    "formulaHelp": "Geben Sie eine Formel mit normalen Ziffern ein, etwa {typed}: Die Anzahlen erscheinen tiefgestellt, {shown}. Um die Teile einer Formel zu verbinden, wie in {joined}, kopieren Sie diesen Punkt:",
+    "relatedTo": "Verwandt mit:",
+    "notes": "Notizen:",
+    "loi": "Glühverlust – GV (Prozent):",
+    "molecularWeight": "Molekulargewicht der Rohformel (wird nur verwendet, wenn kein GV eingetragen ist):",
+    "formulaHeading": "Formel eingeben (gebrannt):",
+    "oxideSelection": "Oxidauswahl",
+    "noOxide": "keines",
+    "addOxide": "Oxid zur Liste hinzufügen",
+    "formulaIn": "Diese Formel ist angegeben in:",
+    "percent": "Prozent",
+    "molecular": "Molar / Segerformel",
+    "amount": "Menge:",
+    "removeOxide": "Aus der Formelliste entfernen",
+    "save": "Speichern",
+    "elements": "Elemente",
+    "removeNote": "Gespeicherte Rezepte behalten ihre eigene Kopie und ändern sich daher nicht.",
+    "saveFailed": "Fehler: Die Anfrage an den Server ist fehlgeschlagen."
+  },
+  "material": {
+    "title": "Rohstoffe",
+    "lead": "Ihre eigenen Rohstoffe, eingegeben als chemische Formel oder als Oxidanalyse.",
+    "newHeading": "Angaben zum neuen Rohstoff eingeben",
+    "name": "Name des Rohstoffs:",
+    "rawFormula": "Rohformel:",
+    "weightsNote": "Äquivalentgewicht und Gewicht nach dem Brand werden beim Speichern aus der Formel und dem Glühverlust berechnet.",
+    "mineHeading": "Meine Rohstoffe:",
+    "rawFormulaColumn": "Rohformel",
+    "standardHeading": "Die Standardrohstoffe:",
+    "fetchFailed": "Beim Abrufen der Daten zu den Rohstoffen ist ein Fehler aufgetreten.",
+    "standardFetchFailed": "Beim Abrufen der Daten zu den Standardrohstoffen ist ein Fehler aufgetreten.",
+    "saved": "Der Rohstoff wurde erfolgreich zur Datenbank hinzugefügt."
+  },
+  "additive": {
+    "title": "Zusätze und Färbemittel",
+    "lead": "Färbemittel und Trübungsmittel, die zusätzlich zur Grundglasur gerechnet werden, etwa Kobalt- oder Zinnoxid. Ein Rezept kann sie aus der Segerformel (UMF) herauslassen oder in ihr mitzählen.",
+    "newHeading": "Angaben zum neuen Zusatz eingeben",
+    "name": "Name des Zusatzes:",
+    "formulaAsSold": "Formel, wie geliefert:",
+    "noChemistry": "Keine Oxidanalyse vorhanden, etwa bei einem handelsüblichen Farbkörper: nicht in die Segerformel einrechnen",
+    "firedNote": "Geben Sie ein, was der Zusatz der Glasur nach dem Brand liefert: Schwarzes Kobaltoxid, {asSold}, ist {fired} mit {loi} % Glühverlust. Ein Rezept kann ihn dann in der Segerformel mitzählen.",
+    "mineHeading": "Meine Zusätze und Färbemittel:",
+    "standardHeading": "Die Standardzusätze:",
+    "fetchFailed": "Beim Abrufen der Daten zu den Zusätzen ist ein Fehler aufgetreten.",
+    "standardFetchFailed": "Beim Abrufen der Daten zu den Standardzusätzen ist ein Fehler aufgetreten.",
+    "saved": "Der Zusatz wurde erfolgreich zur Datenbank hinzugefügt."
+  }
+}

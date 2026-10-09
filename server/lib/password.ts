@@ -6,12 +6,12 @@ const COST = 10;
 const MAX_BYTES = 72;
 
 /** Why a new password cannot be used, or null when it is fine. */
-export const problem = (password: unknown): string | null => {
+export const problem = (password: unknown): 'password-short' | 'password-long' | null => {
   if (typeof password !== 'string' || password.length < 8) {
-    return 'Please enter a password 8 characters or longer.';
+    return 'password-short';
   }
   if (Buffer.byteLength(password, 'utf8') > MAX_BYTES) {
-    return 'Please enter a password of at most 72 characters (fewer with accented letters or symbols).';
+    return 'password-long';
   }
   return null;
 };

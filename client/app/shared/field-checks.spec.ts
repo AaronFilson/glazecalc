@@ -1,7 +1,8 @@
 import { HttpErrorResponse } from '@angular/common/http';
 import { Component, signal } from '@angular/core';
 import { TestBed } from '@angular/core/testing';
-import { fieldProblem } from '../testing/test-providers';
+import { TranslocoService } from '@jsverse/transloco';
+import { fieldProblem, testProviders } from '../testing/test-providers';
 import {
   FieldCheck,
   FieldChecks,
@@ -67,6 +68,12 @@ class PasswordForm {
 const wait = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
 describe('FieldChecks', () => {
+  // The English messages, which these checks are written in.
+  beforeEach(() => {
+    TestBed.configureTestingModule({ providers: testProviders() });
+    TestBed.inject(TranslocoService);
+  });
+
   const create = async () => {
     const fixture = TestBed.createComponent(TestForm);
     await fixture.whenStable();
@@ -182,6 +189,12 @@ describe('FieldChecks', () => {
 });
 
 describe('field checks', () => {
+  // The English messages, which these checks are written in.
+  beforeEach(() => {
+    TestBed.configureTestingModule({ providers: testProviders() });
+    TestBed.inject(TranslocoService);
+  });
+
   const value = (v: string) => () => v;
 
   it('need a value, a likely email, and a new password of 8 characters typed twice', () => {

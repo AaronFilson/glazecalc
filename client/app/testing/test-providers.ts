@@ -4,12 +4,14 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { provideRouter } from '@angular/router';
 import { API_BASE } from '../core/api-base';
 import { sessionExpiredInterceptor } from '../core/session-expired.interceptor';
+import { provideEnglish } from './i18n';
 
 export const API = 'http://api.test';
 
-/** HTTP (with the session interceptor) against a fake API, plus an empty router. */
+/** HTTP (with the session interceptor) against a fake API, an empty router, and the English messages. */
 export function testProviders() {
   return [
+    ...provideEnglish(),
     provideHttpClient(withInterceptors([sessionExpiredInterceptor])),
     provideHttpClientTesting(),
     provideRouter([]),

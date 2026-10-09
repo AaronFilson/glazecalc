@@ -1,0 +1,236 @@
+{
+  "auth": {
+    "signInHeading": "Connexion",
+    "keepHeading": "Conserver votre travail",
+    "signUpHeading": "Créer votre compte",
+    "signInLead": "Bon retour dans votre carnet d’émaux.",
+    "keepLead": "Conservez tout ce que vous avez créé sous le nom {name} : ajoutez votre adresse e-mail et un mot de passe. Cela reste gratuit.",
+    "signUpLead": "Gratuit. Vos recettes, matières et notes restent privées, réservées à votre compte.",
+    "trialNote": "Vous avez déjà un compte ? En vous connectant, vous y ajoutez ce que vous avez créé sous le nom {name}. Première visite ? <signup>Créez plutôt un compte</signup> pour le conserver.",
+    "email": "Adresse e-mail",
+    "password": "Mot de passe",
+    "passwordHint": "Au moins 8 caractères.",
+    "confirmation": "Confirmation du mot de passe",
+    "passwordMissing": "Saisissez votre mot de passe.",
+    "createAccount": "Créer le compte",
+    "signIn": "Se connecter",
+    "haveAccount": "Vous avez déjà un compte ? <signin>Connectez-vous</signin>",
+    "forgot": "Mot de passe oublié ? Réinitialisez-le",
+    "newHere": "Première visite ? <signup>Créez un compte gratuit</signup>",
+    "signUpFailed": "Erreur : impossible de créer le compte.",
+    "signInFailed": "Erreur : connexion impossible."
+  },
+  "forgot": {
+    "heading": "Réinitialiser votre mot de passe",
+    "checkInbox": "Consultez votre boîte de réception et votre dossier de courrier indésirable. Si rien n’arrive, vérifiez l’adresse et refaites la demande.",
+    "intro": "Saisissez l’adresse e-mail de votre compte : nous vous enverrons un lien pour choisir un nouveau mot de passe.",
+    "email": "Adresse e-mail :",
+    "send": "Envoyer le lien de réinitialisation",
+    "back": "Retour à la connexion",
+    "failed": "Erreur : impossible d’envoyer l’e-mail de réinitialisation. Veuillez réessayer."
+  },
+  "reset": {
+    "heading": "Choisir un nouveau mot de passe",
+    "signIn": "Se connecter",
+    "incomplete": "Cette page a besoin du lien d’un e-mail de réinitialisation du mot de passe, et celui-ci est incomplet.",
+    "askAgain": "Demander un nouveau lien",
+    "password": "Nouveau mot de passe :",
+    "confirmation": "Confirmation du nouveau mot de passe :",
+    "save": "Enregistrer le nouveau mot de passe",
+    "hint": "Au moins 8 caractères. Tous les appareils connectés au compte seront déconnectés.",
+    "failed": "Erreur : impossible de changer le mot de passe. Veuillez réessayer."
+  },
+  "account": {
+    "trialTitle": "Votre période d’essai",
+    "trialLead": "Vous essayez Glazecalc sous le nom {name}.",
+    "keepHeading": "Conserver votre travail",
+    "keepText": "Cette période d’essai et tout son contenu sont supprimés le {date}. Créez un compte gratuit pour les conserver : vos recettes, matières et notes restent telles quelles, et {name} reste votre nom d’affichage.",
+    "createAccount": "Créer un compte",
+    "title": "Votre compte",
+    "signedInAs": "Session ouverte : {email}.",
+    "changeHeading": "Changer votre mot de passe",
+    "current": "Mot de passe actuel",
+    "currentMissing": "Saisissez votre mot de passe actuel.",
+    "password": "Nouveau mot de passe",
+    "passwordHint": "Au moins 8 caractères. Les autres appareils connectés à ce compte seront déconnectés.",
+    "confirmation": "Confirmation du nouveau mot de passe",
+    "change": "Changer le mot de passe",
+    "changeFailed": "Erreur : impossible de changer le mot de passe. Veuillez réessayer.",
+    "deleteHeading": "Supprimer votre compte",
+    "deleteText": "Cette action supprime votre compte et tout ce que vous avez enregistré : recettes, matières, additifs, notes, relevés de cuisson et conseils. Elle est irréversible.",
+    "deletePassword": "Votre mot de passe, pour confirmer",
+    "deletePasswordMissing": "Saisissez votre mot de passe pour confirmer.",
+    "delete": "Supprimer mon compte",
+    "deleteFailed": "Erreur : impossible de supprimer le compte. Veuillez réessayer."
+  },
+  "settings": {
+    "heading": "Paramètres",
+    "intro": "Enregistrés avec votre compte : ils s’appliquent sur tous vos appareils.",
+    "saveFailed": "Impossible d’enregistrer le paramètre. Veuillez réessayer.",
+    "language": {
+      "legend": "Langue",
+      "help": "La langue de l’application, des guides et de vos e-mails. Si vous la changez, cette page s’ouvre dans la nouvelle langue.",
+      "saved": "Enregistré : {language}."
+    },
+    "region": {
+      "legend": "Votre région",
+      "none": {
+        "label": "Non choisie",
+        "saved": "Enregistré : aucune région choisie ; les valeurs par défaut suivent votre navigateur."
+      },
+      "saved": "Enregistré : {region}.",
+      "help": "Les matières qui y sont vendues, et les valeurs par défaut des nombres, des dates, des températures et des cônes ci-dessous. Tant que vous n’avez pas choisi, elles suivent la langue de votre navigateur."
+    },
+    "format": {
+      "legend": "Nombres et dates",
+      "auto": {
+        "label": "Selon ma langue et ma région",
+        "saved": "Enregistré : nombres et dates écrits selon votre langue et votre région."
+      },
+      "saved": "Enregistré : nombres et dates comme en {language}.",
+      "help": "La façon d’écrire les nombres et les dates : 12,345.6 ou 12.345,6, et l’ordre du jour et du mois."
+    },
+    "decimalMark": {
+      "legend": "Saisie des quantités",
+      "either": {
+        "label": "Une virgule ou un point pour les décimales",
+        "example": "12,5 ou 12.5",
+        "saved": "Enregistré : les quantités peuvent être saisies avec une virgule ou un point."
+      },
+      "comma": {
+        "label": "Une virgule pour les décimales",
+        "saved": "Enregistré : les quantités sont saisies avec une virgule pour les décimales."
+      },
+      "point": {
+        "label": "Un point pour les décimales",
+        "saved": "Enregistré : les quantités sont saisies avec un point pour les décimales."
+      },
+      "help": "Avec la virgule ou le point, une quantité comme 1.250 est lue selon la façon dont vos nombres s’écrivent ci-dessus."
+    },
+    "temperature": {
+      "legend": "Températures",
+      "celsius": {
+        "label": "Celsius",
+        "saved": "Enregistré : températures en °C."
+      },
+      "fahrenheit": {
+        "label": "Fahrenheit",
+        "saved": "Enregistré : températures en °F."
+      },
+      "help": "Tant que vous n’avez pas choisi, ce paramètre suit votre région : °F aux États-Unis, °C ailleurs."
+    },
+    "cones": {
+      "legend": "Cuisson",
+      "orton": {
+        "label": "En cônes Orton",
+        "example": "cône 04, cône 6",
+        "saved": "Enregistré : cuisson en cônes Orton."
+      },
+      "temperature": {
+        "label": "Par température, comme sur le programmateur du four",
+        "saved": "Enregistré : cuisson par température."
+      },
+      "help": "Tant que vous n’avez pas choisi, ce paramètre suit votre région : cônes Orton aux États-Unis, au Royaume-Uni, en Irlande, en Australie et en Nouvelle-Zélande, température dans le reste de l’Europe."
+    },
+    "density": {
+      "legend": "Densité de l’émail",
+      "sg": {
+        "label": "Densité relative",
+        "saved": "Enregistré : densité de l’émail exprimée en densité relative."
+      },
+      "baume": {
+        "label": "Degrés Baumé, lus au densimètre",
+        "saved": "Enregistré : densité de l’émail en degrés Baumé."
+      },
+      "pint": {
+        "label": "Poids de la pinte, en onces par pinte impériale",
+        "saved": "Enregistré : densité de l’émail en poids de la pinte."
+      },
+      "help": "La façon dont les guides indiquent l’épaisseur du bain d’émail. Tant que vous n’avez pas choisi, ce paramètre suit votre région : degrés Baumé en Italie, densité relative ailleurs."
+    },
+    "theme": {
+      "legend": "Clair ou sombre",
+      "system": {
+        "label": "Selon le réglage de cet appareil",
+        "saved": "Enregistré : clair ou sombre selon le réglage de chaque appareil."
+      },
+      "light": {
+        "label": "Clair",
+        "saved": "Enregistré : toujours clair."
+      },
+      "dark": {
+        "label": "Sombre",
+        "saved": "Enregistré : toujours sombre."
+      },
+      "help": "Les recettes imprimées sont toujours en noir sur blanc."
+    },
+    "palette": {
+      "legend": "Couleurs",
+      "saved": "Enregistré : la palette {palette} pour les boutons et les liens.",
+      "help": "Pour les boutons, les liens et les onglets, avec des noms d’émaux. Chacune se lit facilement en clair comme en sombre."
+    },
+    "weightUnit": {
+      "legend": "Poids de pesée",
+      "grams": {
+        "label": "Grammes",
+        "saved": "Enregistré : poids de pesée en grammes."
+      },
+      "pounds": {
+        "label": "Livres et onces",
+        "saved": "Enregistré : poids de pesée en livres et onces."
+      },
+      "help": "Pour les pesées imprimées."
+    },
+    "gramPrecision": {
+      "legend": "Grammes sur les pesées imprimées",
+      "single": {
+        "label": "Au dixième de gramme",
+        "saved": "Enregistré : grammes affichés au dixième."
+      },
+      "full": {
+        "label": "Précision complète",
+        "saved": "Enregistré : grammes affichés en entier, à 5 décimales."
+      },
+      "help": "Au dixième, les quantités de moins de 10 g s’affichent quand même au centième (2,35 g), pour les colorants des petites préparations d’essai."
+    },
+    "lead": {
+      "legend": "Plomb",
+      "off": {
+        "label": "Désactivé : ne jamais ajouter de plomb à une recette ni en proposer",
+        "saved": "Enregistré : le plomb n’est jamais ajouté à une recette ni proposé."
+      },
+      "on": {
+        "label": "Activé : les matières contenant du plomb peuvent être ajoutées et proposées",
+        "saved": "Enregistré : les matières contenant du plomb peuvent être ajoutées et proposées."
+      },
+      "help": "Le plomb est toxique s’il est respiré ou avalé, il s’accumule dans l’organisme, et un émail au plomb peut en libérer dans les aliments et les boissons ; aucun calcul ne peut dire si une pièce cuite en libère. Si ce paramètre est désactivé, les recettes qui contiennent déjà du plomb s’ouvrent toujours telles qu’elles étaient.",
+      "warning": "N’utilisez le plomb que sous forme de fritte, jamais cru : ni minium, ni céruse, ni massicot, ni litharge. Préparez-le à l’humide, ne l’appliquez jamais au pistolet, portez un masque de protection respiratoire et nettoyez à l’humide. Tenez les pièces émaillées au plomb à l’écart des aliments et des boissons, sauf si la pièce cuite a réussi un test de relargage en laboratoire.",
+      "turnOn": "Activer le plomb",
+      "keepOff": "Laisser désactivé"
+    },
+    "englishTerms": {
+      "legend": "Termes anglais",
+      "off": {
+        "label": "Désactivé",
+        "saved": "Enregistré : pas de termes anglais."
+      },
+      "on": {
+        "label": "Afficher l’anglais après les termes clés",
+        "saved": "Enregistré : l’anglais s’affiche après les termes clés."
+      },
+      "help": "Pour lire en parallèle des sources en anglais, comme Digitalfire : les termes clés sont suivis de leur équivalent anglais entre parenthèses."
+    },
+    "notice": {
+      "legend": "Avis de traduction",
+      "shown": {
+        "label": "Affiché",
+        "saved": "Enregistré : l’avis est affiché."
+      },
+      "hidden": {
+        "label": "Masqué",
+        "saved": "Enregistré : l’avis est masqué. Une ligne en reste dans les guides de sécurité."
+      },
+      "help": "La note en haut de chaque page indiquant qu’elle a été traduite par une IA, avec un moyen de proposer une correction."
+    }
+  }
+}

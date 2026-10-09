@@ -100,6 +100,15 @@ themselves; and light, dark and six palettes named for glazes.
   command: `npm run test:e2e:linux` runs the browser tests in CI's Ubuntu, on the code as it is,
   in about six minutes. CI is pinned to that Ubuntu, so the next upgrade, and its fonts, come by
   choice.
+- **Translating safety advice with no budget for translators.** Glazecalc is now in six more
+  languages, translated by AI. Each language had a glossary built from its own suppliers' catalogues,
+  each part a second reviewer, and the safety text a third pass that translated it back into English
+  without looking at the original, then compared. That pass found what reviewers missed: "locked
+  storage" that had become merely closed, a respirator that applied only outdoors, a pet's food bowl
+  where the English meant any bowl. Where several languages made the same mistake, the fault was the
+  English, and the English was made plain. Checks in CI catch a changed number, unit or link in any
+  translation, and each translation records the English it was made from, so a page never shows a
+  translation of words the English no longer says.
 - **A page that jumped.** Lighthouse measured a layout shift of 0.64 on the intro page: the
   footer painted at the bottom of the window and was pushed down when the page arrived. Showing
   it after the first navigation brought it to 0.
@@ -108,8 +117,8 @@ themselves; and light, dark and six palettes named for glazes.
 
 | Measure                          | 2017                  | Now                                                    |
 | -------------------------------- | --------------------- | ------------------------------------------------------ |
-| Automated tests                  | basic API route tests | 600: server, Angular unit and browser, with axe checks |
-| Server statement coverage        | not measured          | 98.4%                                                  |
+| Automated tests                  | basic API route tests | 713: server, Angular unit and browser, with axe checks |
+| Server statement coverage        | not measured          | 98.1%                                                  |
 | Standard materials and colorants | 53, from one book     | 204, each with a source and a status                   |
 | Deploys                          | SSH and restart       | approved click, keyless, rolls back on a failed check  |
 | Monthly cost                     | $15-17                | about $13                                              |

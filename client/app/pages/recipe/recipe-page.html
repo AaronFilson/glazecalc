@@ -1,734 +1,787 @@
-@if (printRecipe(); as recipe) {
-  <gc-recipe-print [recipe]="recipe" [chemistryOf]="chemistryOf" (back)="closePrint()" />
-} @else if (printWaiting()) {
-  <p class="muted" role="status">Getting the recipe to print...</p>
-} @else if (comparing()) {
-  <gc-recipe-compare
-    [left]="compareLeft()"
-    [right]="compareRight()"
-    [leftKey]="compareKeys()?.left ?? ''"
-    [rightKey]="compareKeys()?.right ?? ''"
-    [choices]="compareChoices()"
-    [chemistryOf]="chemistryOf"
-    (choose)="chooseCompared($event)"
-    (back)="closeCompare()"
-  >
-    @if (reportInCompare() && swapResult(); as result) {
-      <gc-swap-report
-        [result]="result"
-        [level]="2"
-        [mine]="myMaterials()"
-        [standard]="standardMaterials()"
-        [hideLead]="leadOff()"
-        [inRecipe]="swapKeys()"
-        (rerun)="rerun($event)"
-      />
-    }
-  </gc-recipe-compare>
-} @else if (compareWaiting()) {
-  <p class="muted" role="status">Getting the recipes to compare...</p>
-}
-<!-- Hidden, not removed, while printing or comparing: what is being edited stays just as it was. -->
-<div [hidden]="printRecipe() || printWaiting() || comparing() || compareWaiting()">
-  <gc-page-header
-    title="Recipes"
-    lead="Build a glaze from materials and watch its unity molecular formula (UMF) as you go."
-  />
-  <gc-recipe-help />
-  <gc-notices [notices]="notices" />
-
-  <div class="recipe-layout">
-    <section class="panel recipe-editor" aria-labelledby="editor-heading">
-      <div class="editor-top">
-        <h2 id="editor-heading">{{ savedId() ? 'Saved recipe' : 'New recipe' }}</h2>
-        @if (hasContent()) {
-          <button type="button" class="btn btn-light border btn-sm" (click)="startNew()">New recipe</button>
-        }
-      </div>
-      @if (pendingLeave()) {
-        <div class="recipe-unsaved" role="group" aria-labelledby="unsaved-text" (keydown.escape)="keepEditing()">
-          <span id="unsaved-text">This recipe has changes that are not saved.</span>
-          <button id="unsaved-keep" type="button" class="btn btn-light border btn-sm" (click)="keepEditing()">
-            Keep editing
-          </button>
-          <button type="button" class="btn btn-outline-danger btn-sm" (click)="discardAndLeave()">Discard them</button>
-        </div>
+<ng-container *transloco="let t">
+  @if (printRecipe(); as recipe) {
+    <gc-recipe-print [recipe]="recipe" [chemistryOf]="chemistryOf" (back)="closePrint()" />
+  } @else if (printWaiting()) {
+    <p class="muted" role="status">{{ t('recipe.page.gettingPrint') }}</p>
+  } @else if (comparing()) {
+    <gc-recipe-compare
+      [left]="compareLeft()"
+      [right]="compareRight()"
+      [leftKey]="compareKeys()?.left ?? ''"
+      [rightKey]="compareKeys()?.right ?? ''"
+      [choices]="compareChoices()"
+      [chemistryOf]="chemistryOf"
+      (choose)="chooseCompared($event)"
+      (back)="closeCompare()"
+    >
+      @if (reportInCompare() && swapResult(); as result) {
+        <gc-swap-report
+          [result]="result"
+          [level]="2"
+          [mine]="myMaterials()"
+          [standard]="standardMaterials()"
+          [hideLead]="leadOff()"
+          [inRecipe]="swapKeys()"
+          (rerun)="rerun($event)"
+        />
       }
+    </gc-recipe-compare>
+  } @else if (compareWaiting()) {
+    <p class="muted" role="status">{{ t('recipe.page.gettingCompare') }}</p>
+  }
+  <!-- Hidden, not removed, while printing or comparing: what is being edited stays just as it was. -->
+  <div [hidden]="printRecipe() || printWaiting() || comparing() || compareWaiting()">
+    <gc-page-header [title]="t('recipe.page.title')" [lead]="t('recipe.page.lead')" />
+    <gc-recipe-help />
+    <gc-notices [notices]="notices" />
 
-      <div class="recipe-fields">
-        <div class="recipe-title-field">
-          <label for="recipe-name" class="form-label">Title</label>
-          <input
-            id="recipe-name"
-            type="text"
-            name="title"
+    <div class="recipe-layout">
+      <section class="panel recipe-editor" aria-labelledby="editor-heading">
+        <div class="editor-top">
+          <h2 id="editor-heading">{{ savedId() ? t('recipe.page.editorSaved') : t('recipe.page.editorNew') }}</h2>
+          @if (hasContent()) {
+            <button type="button" class="btn btn-light border btn-sm" (click)="startNew()">
+              {{ t('recipe.page.startNew') }}
+            </button>
+          }
+        </div>
+        @if (pendingLeave()) {
+          <div class="recipe-unsaved" role="group" aria-labelledby="unsaved-text" (keydown.escape)="keepEditing()">
+            <span id="unsaved-text">{{ t('recipe.page.unsaved') }}</span>
+            <button id="unsaved-keep" type="button" class="btn btn-light border btn-sm" (click)="keepEditing()">
+              {{ t('recipe.page.keepEditing') }}
+            </button>
+            <button type="button" class="btn btn-outline-danger btn-sm" (click)="discardAndLeave()">
+              {{ t('recipe.page.discard') }}
+            </button>
+          </div>
+        }
+
+        <div class="recipe-fields">
+          <div class="recipe-title-field">
+            <label for="recipe-name" class="form-label">{{ t('recipe.page.titleLabel') }}</label>
+            <input
+              id="recipe-name"
+              type="text"
+              name="title"
+              class="form-control"
+              [(ngModel)]="title"
+              [gcField]="checks"
+              gcFieldName="title"
+            />
+          </div>
+          <div>
+            <label for="recipe-date" class="form-label">{{ t('recipe.page.dateLabel') }}</label>
+            <input id="recipe-date" type="date" name="date" class="form-control" [(ngModel)]="date" />
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="recipe-notes" class="form-label">{{ t('recipe.page.notesLabel') }}</label>
+          <textarea
+            id="recipe-notes"
+            name="notes"
+            rows="2"
             class="form-control"
-            [(ngModel)]="title"
-            [gcField]="checks"
-            gcFieldName="title"
-          />
+            [placeholder]="t('recipe.page.notesPlaceholder')"
+            [(ngModel)]="notes"
+          ></textarea>
         </div>
-        <div>
-          <label for="recipe-date" class="form-label">Date</label>
-          <input id="recipe-date" type="date" name="date" class="form-control" [(ngModel)]="date" />
-        </div>
-      </div>
-      <div class="mb-3">
-        <label for="recipe-notes" class="form-label">Notes</label>
-        <textarea
-          id="recipe-notes"
-          name="notes"
-          rows="2"
-          class="form-control"
-          placeholder="Cone, atmosphere, how the test came out..."
-          [(ngModel)]="notes"
-        ></textarea>
-      </div>
 
-      <h3 id="materials-heading" tabindex="-1">Materials</h3>
-      @if (lines().length) {
-        <table class="recipe-table recipe-materials">
-          <thead>
-            <tr>
-              <th scope="col">Material</th>
-              <th scope="col">Amount</th>
-              <th scope="col">Share</th>
-              <th scope="col"><span class="visually-hidden">Remove</span></th>
-            </tr>
-          </thead>
-          <tbody>
-            @for (line of lines(); track $index) {
-              <tr class="recipe-row">
-                <th scope="row">{{ line.name }}</th>
-                <td>
-                  <input
-                    [id]="'material-amount-' + $index"
-                    type="text"
-                    inputmode="decimal"
-                    class="form-control form-control-sm material-amount"
-                    [attr.aria-label]="'Amount of ' + line.name"
-                    [value]="line.amount ?? ''"
-                    (input)="setAmount($index, $any($event.target).value)"
-                    [gcField]="checks"
-                    [gcFieldName]="'material-amount-' + $index"
-                  />
-                  @if (poundReadings()?.materials?.[$index]; as weight) {
+        <h3 id="materials-heading" tabindex="-1">{{ t('recipe.page.materialsHeading') }}</h3>
+        @if (lines().length) {
+          <table class="recipe-table recipe-materials">
+            <thead>
+              <tr>
+                <th scope="col">{{ t('recipe.page.materialColumn') }}</th>
+                <th scope="col">{{ t('recipe.page.amountColumn') }}</th>
+                <th scope="col">{{ t('recipe.page.shareColumn') }}</th>
+                <th scope="col">
+                  <span class="visually-hidden">{{ t('recipe.page.removeColumn') }}</span>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              @for (line of lines(); track $index) {
+                <tr class="recipe-row">
+                  <th scope="row">
+                    <bdi>{{ line.name }}</bdi>
+                  </th>
+                  <td>
+                    <input
+                      [id]="'material-amount-' + $index"
+                      type="text"
+                      inputmode="decimal"
+                      class="form-control form-control-sm material-amount"
+                      [attr.aria-label]="t('recipe.page.amountOf', { name: line.name })"
+                      [gcNumber]="line.amount"
+                      (gcNumberChange)="setAmount($index, $event)"
+                      [gcField]="checks"
+                      [gcFieldName]="'material-amount-' + $index"
+                    />
+                    @if (poundReadings()?.materials?.[$index]; as weight) {
+                      <span class="recipe-weight">{{ weight }}</span>
+                    }
+                  </td>
+                  <td class="recipe-share">{{ share(line.amount) }}</td>
+                  <td>
+                    <button
+                      type="button"
+                      class="btn btn-light border btn-sm recipe-remove"
+                      [id]="'material-remove-' + $index"
+                      [attr.aria-label]="t('recipe.page.removeLine', { name: line.name })"
+                      (click)="removeMaterial($index)"
+                    >
+                      ✕
+                    </button>
+                  </td>
+                </tr>
+              }
+            </tbody>
+            <tfoot>
+              <tr>
+                <th scope="row">{{ t('recipe.page.total') }}</th>
+                <td class="recipe-total">
+                  {{ formatTotal() }}
+                  @if (poundReadings()?.total; as weight) {
                     <span class="recipe-weight">{{ weight }}</span>
                   }
                 </td>
-                <td class="recipe-share">{{ share(line.amount) }}</td>
-                <td>
-                  <button
-                    type="button"
-                    class="btn btn-light border btn-sm recipe-remove"
-                    [id]="'material-remove-' + $index"
-                    [attr.aria-label]="'Remove ' + line.name + ' from the recipe'"
-                    (click)="removeMaterial($index)"
-                  >
-                    ✕
-                  </button>
-                </td>
+                <td class="recipe-share">{{ total() ? '100%' : '' }}</td>
+                <td></td>
               </tr>
-            }
-          </tbody>
-          <tfoot>
-            <tr>
-              <th scope="row">Total</th>
-              <td class="recipe-total">
-                {{ formatTotal() }}
-                @if (poundReadings()?.total; as weight) {
-                  <span class="recipe-weight">{{ weight }}</span>
-                }
-              </td>
-              <td class="recipe-share">{{ total() ? '100%' : '' }}</td>
-              <td></td>
-            </tr>
-          </tfoot>
-        </table>
+            </tfoot>
+          </table>
 
-        @if (inlineSummary(); as summary) {
-          <p class="unity-inline"><b>Unity:</b> {{ summary }}</p>
-        }
-
-        <div class="recipe-scale">
-          <span class="recipe-scale-label">Change the scale:</span>
-          <button type="button" class="btn btn-light border btn-sm" (click)="scale({ to: 'percent' })">
-            To percent
-          </button>
-          <button type="button" class="btn btn-light border btn-sm" (click)="scale({ to: 'parts' })">To parts</button>
-          <button type="button" class="btn btn-light border btn-sm" (click)="batchOpen.set(!batchOpen())">
-            Scale to a batch
-          </button>
-          @if (batchOpen()) {
-            <span class="recipe-batch">
-              <label for="batch-weight">Batch weight ({{ batchUnit() }})</label>
-              <input
-                id="batch-weight"
-                type="text"
-                inputmode="decimal"
-                class="form-control form-control-sm"
-                [value]="batchText()"
-                (input)="setBatchText($any($event.target).value)"
-                (keydown.enter)="scaleToBatch()"
-              />
-              <button type="button" class="btn btn-primary btn-sm" (click)="scaleToBatch()">Scale</button>
-            </span>
-          }
-        </div>
-        <p class="recipe-scale-note" [class.is-problem]="scaleMessage()?.problem" role="status">
-          {{ scaleMessage()?.text }}
-        </p>
-        @if (modern().swaps.length) {
-          <div class="recipe-swap">
-            <p>
-              @for (swap of modern().swaps; track $index) {
-                <span class="recipe-swap-line">
-                  <b>{{ swap.from }}</b> ({{ swap.status }}):
-                  @if (swap.like) {
-                    {{ swap.to }} can take its place, gram for gram.
-                  } @else {
-                    {{ swap.to }} is what is used now, but it is not like for like: work its amount out again.
-                  }
-                  @if (swap.lead) {
-                    <b>{{ swap.to }} still contains lead.</b>
-                  }
-                </span>
-              }
+          @if (inlineSummary(); as summary) {
+            <p class="unity-inline">
+              <b>{{ t('recipe.page.unityInline') }}</b> {{ summary }}
             </p>
-            <div class="recipe-swap-buttons">
-              <button id="try-modern" type="button" class="btn btn-light border btn-sm" (click)="tryModernMaterials()">
-                Try modern materials and compare
-              </button>
-              @if (notLikeForLike()) {
+          }
+
+          <div class="recipe-scale">
+            <span class="recipe-scale-label">{{ t('recipe.page.changeScale') }}</span>
+            <button type="button" class="btn btn-light border btn-sm" (click)="scale({ to: 'percent' })">
+              {{ t('recipe.page.toPercent') }}
+            </button>
+            <button type="button" class="btn btn-light border btn-sm" (click)="scale({ to: 'parts' })">
+              {{ t('recipe.page.toParts') }}
+            </button>
+            <button type="button" class="btn btn-light border btn-sm" (click)="batchOpen.set(!batchOpen())">
+              {{ t('recipe.page.scaleToBatch') }}
+            </button>
+            @if (batchOpen()) {
+              <span class="recipe-batch">
+                <label for="batch-weight">{{ t('recipe.page.batchWeight', { unit: batchUnit() }) }}</label>
+                <input
+                  id="batch-weight"
+                  type="text"
+                  inputmode="decimal"
+                  class="form-control form-control-sm"
+                  [gcNumber]="batchText()"
+                  (gcNumberChange)="setBatchText($event)"
+                  (keydown.enter)="scaleToBatch()"
+                />
+                <button type="button" class="btn btn-primary btn-sm" (click)="scaleToBatch()">
+                  {{ t('recipe.page.scale') }}
+                </button>
+              </span>
+            }
+          </div>
+          <p class="recipe-scale-note" [class.is-problem]="scaleMessage()?.problem" role="status">
+            {{ scaleMessage()?.text }}
+          </p>
+          @if (modern().swaps.length) {
+            <div class="recipe-swap">
+              <p>
+                @for (swap of modern().swaps; track $index) {
+                  <span class="recipe-swap-line">
+                    <gc-rich
+                      [text]="
+                        swap.like
+                          ? t('recipe.page.swapLike', { from: swap.from, status: swap.status, to: swap.to })
+                          : t('recipe.page.swapNotLike', { from: swap.from, status: swap.status, to: swap.to })
+                      "
+                    />{{ ' ' }}
+                    @if (swap.lead) {
+                      <b>{{ t('recipe.page.stillLead', { name: swap.to }) }}</b>
+                    }
+                  </span>
+                }
+              </p>
+              <div class="recipe-swap-buttons">
                 <button
-                  id="suggest-amounts"
+                  id="try-modern"
                   type="button"
                   class="btn btn-light border btn-sm"
-                  [attr.aria-expanded]="!!suggestQuestion()"
-                  (click)="suggestModernAmounts()"
+                  (click)="tryModernMaterials()"
                 >
-                  Suggest amounts and compare
+                  {{ t('recipe.page.tryModern') }}
                 </button>
+                @if (notLikeForLike()) {
+                  <button
+                    id="suggest-amounts"
+                    type="button"
+                    class="btn btn-light border btn-sm"
+                    [attr.aria-expanded]="!!suggestQuestion()"
+                    (click)="suggestModernAmounts()"
+                  >
+                    {{ t('recipe.page.suggestAmounts') }}
+                  </button>
+                }
+              </div>
+              @if (suggestProblem()) {
+                <p class="recipe-swap-problem" role="alert">{{ suggestProblem() }}</p>
               }
-            </div>
-            @if (suggestProblem()) {
-              <p class="recipe-swap-problem" role="alert">{{ suggestProblem() }}</p>
-            }
-            @if (suggestQuestion(); as question) {
-              <section class="recipe-suggest" aria-labelledby="suggest-heading">
-                <h4 id="suggest-heading" tabindex="-1">Bring back what the old materials gave</h4>
-                @for (short of question.plan.shortfalls; track short.oxide) {
-                  <fieldset>
-                    <legend>
-                      {{ short.from.join(' and ') }} gave {{ oxideLabel(short.oxide) }}: {{ short.was.toFixed(3) }} in
-                      the unity formula. With {{ short.instead.join(' and ') }} it comes to {{ short.now.toFixed(3) }}.
-                      Bring it back with:
-                    </legend>
-                    @for (choice of short.choices; track choice.name) {
+              @if (suggestQuestion(); as question) {
+                <section class="recipe-suggest" aria-labelledby="suggest-heading">
+                  <h4 id="suggest-heading" tabindex="-1">{{ t('recipe.page.suggestHeading') }}</h4>
+                  @for (short of question.plan.shortfalls; track short.oxide) {
+                    <fieldset>
+                      <legend>
+                        {{
+                          t('recipe.page.shortfall', {
+                            from: listOf(short.from),
+                            oxide: oxideLabel(short.oxide),
+                            was: (short.was | gcFixed: 3),
+                            instead: listOf(short.instead),
+                            now: (short.now | gcFixed: 3)
+                          })
+                        }}
+                      </legend>
+                      @for (choice of short.choices; track choice.name) {
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            [id]="'bring-' + short.oxide + '-' + $index"
+                            [name]="'bring-' + short.oxide"
+                            [checked]="question.chosen[short.oxide] === choice.name"
+                            (change)="chooseBringIn(short.oxide, choice.name)"
+                          />
+                          <label class="form-check-label" [for]="'bring-' + short.oxide + '-' + $index">
+                            {{ choice.name }}
+                            <span class="muted">{{
+                              t('recipe.page.choicePercent', {
+                                percent: (choice.percent | gcFixed: 0),
+                                oxide: oxideLabel(short.oxide)
+                              })
+                            }}</span>
+                          </label>
+                        </div>
+                      }
                       <div class="form-check">
                         <input
                           class="form-check-input"
                           type="radio"
-                          [id]="'bring-' + short.oxide + '-' + $index"
+                          [id]="'bring-' + short.oxide + '-none'"
                           [name]="'bring-' + short.oxide"
-                          [checked]="question.chosen[short.oxide] === choice.name"
-                          (change)="chooseBringIn(short.oxide, choice.name)"
+                          [checked]="question.chosen[short.oxide] === ''"
+                          (change)="chooseBringIn(short.oxide, '')"
                         />
-                        <label class="form-check-label" [for]="'bring-' + short.oxide + '-' + $index">
-                          {{ choice.name }}
-                          <span class="muted">({{ choice.percent }}% {{ oxideLabel(short.oxide) }})</span>
+                        <label class="form-check-label" [for]="'bring-' + short.oxide + '-none'">
+                          {{ t('recipe.page.leaveOut', { amount: (short.now | gcFixed: 3) }) }}
                         </label>
                       </div>
+                      @if (!short.choices.length) {
+                        <p class="muted">{{ t('recipe.page.noChoices') }}</p>
+                      }
+                    </fieldset>
+                  }
+                  <div class="recipe-swap-buttons">
+                    <button
+                      type="button"
+                      class="btn btn-light border btn-sm"
+                      [attr.aria-expanded]="tryingMore()"
+                      (click)="tryingMore.set(!tryingMore())"
+                    >
+                      {{ t('recipe.page.materialsToTry', { count: suggestTries().length }) }}
+                    </button>
+                  </div>
+                  @if (tryingMore()) {
+                    <gc-try-materials
+                      [(tries)]="suggestTries"
+                      [mine]="myMaterials()"
+                      [standard]="standardMaterials()"
+                      [hideLead]="leadOff()"
+                      [inRecipe]="materialKeys()"
+                    />
+                  }
+                  <div class="recipe-swap-buttons">
+                    <button type="button" class="btn btn-primary btn-sm" (click)="workOutSuggestion()">
+                      {{ t('recipe.page.workOut') }}
+                    </button>
+                    <button type="button" class="btn btn-light border btn-sm" (click)="cancelSuggestion()">
+                      {{ t('recipe.page.cancel') }}
+                    </button>
+                  </div>
+                </section>
+              }
+            </div>
+          }
+        } @else {
+          <p class="muted">{{ t('recipe.page.noMaterials') }}</p>
+        }
+        @if (leadAmount(); as lead) {
+          <div class="recipe-swap recipe-lead">
+            <p>
+              <gc-rich
+                [text]="
+                  t('recipe.page.containsLead', {
+                    unity: (lead.unity | gcFixed: 3),
+                    percent: (lead.percent | gcFixed: 0)
+                  })
+                "
+              />
+            </p>
+            <div class="recipe-swap-buttons">
+              <button
+                id="replace-lead"
+                type="button"
+                class="btn btn-light border btn-sm"
+                [attr.aria-expanded]="!!leadQuestion()"
+                (click)="askReplaceLead()"
+              >
+                {{ t('recipe.page.replaceLead') }}
+              </button>
+            </div>
+            @if (leadQuestion(); as question) {
+              <section class="recipe-suggest" aria-labelledby="lead-heading">
+                <h4 id="lead-heading" tabindex="-1">{{ t('recipe.page.replaceHeading') }}</h4>
+                <div class="recipe-lead-cone">
+                  <label for="lead-cone">{{
+                    byCones() ? t('recipe.page.firedToCone') : t('recipe.page.firedTo')
+                  }}</label>
+                  <select
+                    id="lead-cone"
+                    class="form-select form-select-sm"
+                    (change)="chooseCone($any($event.target).value)"
+                  >
+                    @for (c of cones; track c.cone) {
+                      <option [value]="c.cone" [selected]="c.cone === question.cone">
+                        {{ firingLabel(c) }}
+                      </option>
                     }
+                  </select>
+                </div>
+                <fieldset>
+                  <legend>{{ t('recipe.page.how') }}</legend>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      id="lead-mode-rebuild"
+                      name="lead-mode"
+                      [checked]="question.mode === 'rebuild'"
+                      (change)="chooseLeadMode('rebuild')"
+                    />
+                    <label class="form-check-label" for="lead-mode-rebuild">
+                      {{ t('recipe.page.rebuild') }}
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      id="lead-mode-colour"
+                      name="lead-mode"
+                      [checked]="question.mode === 'colour'"
+                      (change)="chooseLeadMode('colour')"
+                    />
+                    <label class="form-check-label" for="lead-mode-colour">
+                      {{ t('recipe.page.keepColour') }}
+                    </label>
+                  </div>
+                </fieldset>
+                <fieldset>
+                  <legend>{{ t('recipe.page.fritHeading') }}</legend>
+                  @for (choice of question.bases; track choice.name) {
                     <div class="form-check">
                       <input
                         class="form-check-input"
                         type="radio"
-                        [id]="'bring-' + short.oxide + '-none'"
-                        [name]="'bring-' + short.oxide"
-                        [checked]="question.chosen[short.oxide] === ''"
-                        (change)="chooseBringIn(short.oxide, '')"
+                        [id]="'lead-base-' + $index"
+                        name="lead-base"
+                        [checked]="question.base === choice.name"
+                        (change)="chooseLeadBase(choice.name)"
                       />
-                      <label class="form-check-label" [for]="'bring-' + short.oxide + '-none'">
-                        Leave it out ({{ short.now.toFixed(3) }})
+                      <label class="form-check-label" [for]="'lead-base-' + $index">
+                        {{ choice.name }}
+                        <span class="muted">{{
+                          t('recipe.page.fritBoron', { boron: (choice.boron | gcFixed: 0) })
+                        }}</span>
                       </label>
                     </div>
-                    @if (!short.choices.length) {
-                      <p class="muted">No current material sold in your region has much of it.</p>
-                    }
-                  </fieldset>
+                  } @empty {
+                    <p class="muted">{{ t('recipe.page.noFrit') }}</p>
+                  }
+                </fieldset>
+                @if (question.mode === 'rebuild') {
+                  <div class="recipe-swap-buttons">
+                    <button
+                      type="button"
+                      class="btn btn-light border btn-sm"
+                      [attr.aria-expanded]="tryingMore()"
+                      (click)="tryingMore.set(!tryingMore())"
+                    >
+                      {{ t('recipe.page.materialsToTry', { count: leadTries().length }) }}
+                    </button>
+                  </div>
+                  @if (tryingMore()) {
+                    <gc-try-materials
+                      [(tries)]="leadTries"
+                      [mine]="myMaterials()"
+                      [standard]="standardMaterials()"
+                      [hideLead]="leadOff()"
+                      [inRecipe]="materialKeys()"
+                      [intro]="t('recipe.page.leadTriesIntro')"
+                    />
+                  }
                 }
                 <div class="recipe-swap-buttons">
                   <button
                     type="button"
-                    class="btn btn-light border btn-sm"
-                    [attr.aria-expanded]="tryingMore()"
-                    (click)="tryingMore.set(!tryingMore())"
+                    class="btn btn-primary btn-sm"
+                    [attr.aria-disabled]="!question.base || null"
+                    (click)="workOutReplaceLead()"
                   >
-                    Materials to try ({{ suggestTries().length }})
+                    {{ t('recipe.page.replaceAndCompare') }}
                   </button>
-                </div>
-                @if (tryingMore()) {
-                  <gc-try-materials
-                    [(tries)]="suggestTries"
-                    [mine]="myMaterials()"
-                    [standard]="standardMaterials()"
-                    [hideLead]="leadOff()"
-                    [inRecipe]="materialKeys()"
-                  />
-                }
-                <div class="recipe-swap-buttons">
-                  <button type="button" class="btn btn-primary btn-sm" (click)="workOutSuggestion()">
-                    Work it out and compare
+                  <button type="button" class="btn btn-light border btn-sm" (click)="cancelReplaceLead()">
+                    {{ t('recipe.page.cancel') }}
                   </button>
-                  <button type="button" class="btn btn-light border btn-sm" (click)="cancelSuggestion()">Cancel</button>
                 </div>
               </section>
             }
           </div>
         }
-      } @else {
-        <p class="muted">No materials yet. Add them from the list below.</p>
-      }
-      @if (leadAmount(); as lead) {
-        <div class="recipe-swap recipe-lead">
-          <p>
-            <b>Contains lead:</b> PbO {{ lead.unity.toFixed(3) }} in the unity formula ({{ lead.percent.toFixed(0) }}%
-            of the fired glaze). Lead can leach from fired ware into food and drink, and only a laboratory leach test of
-            the fired piece can tell whether this glaze does; a calculation cannot. Use it only where it never touches
-            food or drink, or replace the lead.
-          </p>
-          <div class="recipe-swap-buttons">
-            <button
-              id="replace-lead"
-              type="button"
-              class="btn btn-light border btn-sm"
-              [attr.aria-expanded]="!!leadQuestion()"
-              (click)="askReplaceLead()"
-            >
-              Replace lead
-            </button>
-          </div>
-          @if (leadQuestion(); as question) {
-            <section class="recipe-suggest" aria-labelledby="lead-heading">
-              <h4 id="lead-heading" tabindex="-1">Replace the lead</h4>
-              <div class="recipe-lead-cone">
-                <label for="lead-cone">Fired to cone</label>
-                <select
-                  id="lead-cone"
-                  class="form-select form-select-sm"
-                  (change)="chooseCone($any($event.target).value)"
-                >
-                  @for (c of cones; track c.cone) {
-                    <option [value]="c.cone" [selected]="c.cone === question.cone">
-                      {{ c.cone }} ({{ c.celsius }} °C)
-                    </option>
-                  }
-                </select>
-              </div>
-              <fieldset>
-                <legend>How</legend>
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    id="lead-mode-rebuild"
-                    name="lead-mode"
-                    [checked]="question.mode === 'rebuild'"
-                    (change)="chooseLeadMode('rebuild')"
-                  />
-                  <label class="form-check-label" for="lead-mode-rebuild">
-                    Rebuild the glaze: keep its silica and alumina, with boron and other fluxes for the lead
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    id="lead-mode-colour"
-                    name="lead-mode"
-                    [checked]="question.mode === 'colour'"
-                    (change)="chooseLeadMode('colour')"
-                  />
-                  <label class="form-check-label" for="lead-mode-colour">
-                    Keep the colour on a lead-free base: the frit and kaolin, 85 to 15, with the recipe's colorants
-                  </label>
-                </div>
-              </fieldset>
-              <fieldset>
-                <legend>Lead-free frit to build on, best first</legend>
-                @for (choice of question.bases; track choice.name) {
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      [id]="'lead-base-' + $index"
-                      name="lead-base"
-                      [checked]="question.base === choice.name"
-                      (change)="chooseLeadBase(choice.name)"
-                    />
-                    <label class="form-check-label" [for]="'lead-base-' + $index">
-                      {{ choice.name }} <span class="muted">({{ choice.boron }}% boron, B₂O₃)</span>
-                    </label>
+        @if (lines().length) {
+          <div class="recipe-shelf">
+            <div class="recipe-swap-buttons">
+              <button
+                id="match-shelf"
+                type="button"
+                class="btn btn-light border btn-sm"
+                [attr.aria-expanded]="shelfOpen()"
+                (click)="askShelf()"
+              >
+                {{ t('recipe.page.matchShelf') }}
+              </button>
+            </div>
+            @if (shelfOpen()) {
+              <section class="recipe-suggest" aria-labelledby="shelf-heading">
+                <h4 id="shelf-heading" tabindex="-1">{{ t('recipe.page.shelfHeading') }}</h4>
+                <p>{{ t('recipe.page.shelfIntro') }}</p>
+                @if (shelfLoaded()) {
+                  <div class="recipe-swap-buttons">
+                    <button type="button" class="btn btn-light border btn-sm" (click)="addRecipeToShelf()">
+                      {{ t('recipe.page.addRecipeToShelf') }}
+                    </button>
                   </div>
-                } @empty {
-                  <p class="muted">No lead-free frit sold in your region is in the library.</p>
-                }
-              </fieldset>
-              @if (question.mode === 'rebuild') {
-                <div class="recipe-swap-buttons">
-                  <button
-                    type="button"
-                    class="btn btn-light border btn-sm"
-                    [attr.aria-expanded]="tryingMore()"
-                    (click)="tryingMore.set(!tryingMore())"
-                  >
-                    Materials to try ({{ leadTries().length }})
-                  </button>
-                </div>
-                @if (tryingMore()) {
                   <gc-try-materials
-                    [(tries)]="leadTries"
+                    [tries]="shelfTries()"
+                    (triesChange)="changeShelf($event)"
                     [mine]="myMaterials()"
                     [standard]="standardMaterials()"
                     [hideLead]="leadOff()"
-                    [inRecipe]="materialKeys()"
-                    intro="The rebuild picks up to four materials beside the frit from those sold in your region. Add any others you have or would like it to consider; tick Must use to keep one in."
+                    [inRecipe]="noKeys"
+                    [intro]="t('recipe.page.shelfTriesIntro')"
+                    list="shelf"
                   />
+                } @else {
+                  <p class="muted">{{ t('recipe.page.gettingShelf') }}</p>
                 }
-              }
-              <div class="recipe-swap-buttons">
-                <button
-                  type="button"
-                  class="btn btn-primary btn-sm"
-                  [attr.aria-disabled]="!question.base || null"
-                  (click)="workOutReplaceLead()"
-                >
-                  Replace lead and compare
-                </button>
-                <button type="button" class="btn btn-light border btn-sm" (click)="cancelReplaceLead()">Cancel</button>
-              </div>
-            </section>
-          }
-        </div>
-      }
-      @if (lines().length) {
-        <div class="recipe-shelf">
-          <div class="recipe-swap-buttons">
-            <button
-              id="match-shelf"
-              type="button"
-              class="btn btn-light border btn-sm"
-              [attr.aria-expanded]="shelfOpen()"
-              (click)="askShelf()"
-            >
-              Match with what I have
-            </button>
-          </div>
-          @if (shelfOpen()) {
-            <section class="recipe-suggest" aria-labelledby="shelf-heading">
-              <h4 id="shelf-heading" tabindex="-1">Make it from what you have</h4>
-              <p>
-                The match uses only the materials you have on hand, as few as it can, to come as near this recipe's
-                fired oxides as they allow. Your list is kept with your account for next time.
-              </p>
-              @if (shelfLoaded()) {
+                <p class="recipe-shelf-status" role="status">{{ shelfStatus() }}</p>
+                @if (shelfProblem()) {
+                  <p class="recipe-swap-problem" role="alert">{{ shelfProblem() }}</p>
+                }
                 <div class="recipe-swap-buttons">
-                  <button type="button" class="btn btn-light border btn-sm" (click)="addRecipeToShelf()">
-                    Add the materials in this recipe
-                  </button>
-                </div>
-                <gc-try-materials
-                  [tries]="shelfTries()"
-                  (triesChange)="changeShelf($event)"
-                  [mine]="myMaterials()"
-                  [standard]="standardMaterials()"
-                  [hideLead]="leadOff()"
-                  [inRecipe]="noKeys"
-                  intro="Your materials on hand. Tick Must use to keep one in the match."
-                  listName="your materials on hand"
-                />
-              } @else {
-                <p class="muted">Getting your materials on hand...</p>
-              }
-              <p class="recipe-shelf-status" role="status">{{ shelfStatus() }}</p>
-              @if (shelfProblem()) {
-                <p class="recipe-swap-problem" role="alert">{{ shelfProblem() }}</p>
-              }
-              <div class="recipe-swap-buttons">
-                <button
-                  type="button"
-                  class="btn btn-primary btn-sm"
-                  [attr.aria-disabled]="!shelfTries().length || null"
-                  (click)="matchShelf()"
-                >
-                  Match and compare
-                </button>
-                <button type="button" class="btn btn-light border btn-sm" (click)="closeShelf()">Cancel</button>
-              </div>
-            </section>
-          }
-        </div>
-      }
-      @if (swapUndo(); as undo) {
-        <div class="recipe-swap">
-          <p>Swapped for modern materials, as a new recipe not saved yet.</p>
-          <button id="undo-swap" type="button" class="btn btn-light border btn-sm" (click)="undoSwap()">
-            Undo the swap
-          </button>
-          @if (!reportInCompare() && undo.result; as result) {
-            <gc-swap-report
-              [result]="result"
-              [level]="4"
-              [mine]="myMaterials()"
-              [standard]="standardMaterials()"
-              [hideLead]="leadOff()"
-              [inRecipe]="swapKeys()"
-              (rerun)="rerun($event)"
-            />
-          }
-        </div>
-      }
-
-      <gc-recipe-library
-        heading="Add materials"
-        noun="materials"
-        [mine]="myMaterials()"
-        [standard]="standardMaterials()"
-        [inRecipe]="materialKeys()"
-        [hideLead]="leadOff()"
-        (pick)="addMaterial($event)"
-      />
-
-      <h3 id="additives-heading" class="recipe-additives-heading" tabindex="-1">
-        Colorants and additives <span class="muted">on top of the base</span>
-      </h3>
-      @if (additiveLines().length) {
-        <table class="recipe-table recipe-additives">
-          <thead>
-            <tr>
-              <th scope="col">Colorant or additive</th>
-              <th scope="col">Amount</th>
-              <th scope="col"><span class="visually-hidden">Remove</span></th>
-            </tr>
-          </thead>
-          <tbody>
-            @for (line of additiveLines(); track $index; let i = $index) {
-              <tr class="recipe-row">
-                <th scope="row">{{ line.name }}</th>
-                <td>
-                  <div class="additive-amount-cell">
-                    <input
-                      [id]="'additive-amount-' + $index"
-                      type="text"
-                      inputmode="decimal"
-                      class="form-control form-control-sm additive-amount"
-                      [attr.aria-label]="'Amount of ' + line.name"
-                      [value]="line.amount ?? ''"
-                      (input)="setAdditiveAmount($index, $any($event.target).value)"
-                      [gcField]="checks"
-                      [gcFieldName]="'additive-amount-' + $index"
-                    />
-                    <!-- Beside the amount, or under it on a phone. -->
-                    <fieldset class="unit-choice">
-                      <legend class="visually-hidden">Unit for {{ line.name }}</legend>
-                      @for (unit of additiveUnits; track unit.value) {
-                        <input
-                          type="radio"
-                          class="btn-check"
-                          [id]="'additive-unit-' + i + '-' + unit.value"
-                          [name]="'additive-unit-' + i"
-                          [checked]="unitOf(line) === unit.value"
-                          (change)="setAdditiveUnit(i, unit.value)"
-                        />
-                        <label class="btn btn-sm" [for]="'additive-unit-' + i + '-' + unit.value">{{
-                          unit.label
-                        }}</label>
-                      }
-                    </fieldset>
-                    @if (poundReadings()?.additives?.[i]; as weight) {
-                      <span class="recipe-weight">{{ weight }}</span>
-                    }
-                  </div>
-                </td>
-                <td>
                   <button
                     type="button"
-                    class="btn btn-light border btn-sm recipe-remove"
-                    [id]="'additive-remove-' + $index"
-                    [attr.aria-label]="'Remove ' + line.name + ' from the recipe'"
-                    (click)="removeAdditive($index)"
+                    class="btn btn-primary btn-sm"
+                    [attr.aria-disabled]="!shelfTries().length || null"
+                    (click)="matchShelf()"
                   >
-                    ✕
+                    {{ t('recipe.page.matchAndCompare') }}
                   </button>
-                </td>
-              </tr>
+                  <button type="button" class="btn btn-light border btn-sm" (click)="closeShelf()">
+                    {{ t('recipe.page.cancel') }}
+                  </button>
+                </div>
+              </section>
             }
-          </tbody>
-        </table>
-      }
+          </div>
+        }
+        @if (swapUndo(); as undo) {
+          <div class="recipe-swap">
+            <p>{{ t('recipe.page.swapped') }}</p>
+            <button id="undo-swap" type="button" class="btn btn-light border btn-sm" (click)="undoSwap()">
+              {{ t('recipe.page.undoSwap') }}
+            </button>
+            @if (!reportInCompare() && undo.result; as result) {
+              <gc-swap-report
+                [result]="result"
+                [level]="4"
+                [mine]="myMaterials()"
+                [standard]="standardMaterials()"
+                [hideLead]="leadOff()"
+                [inRecipe]="swapKeys()"
+                (rerun)="rerun($event)"
+              />
+            }
+          </div>
+        }
 
-      <gc-recipe-library
-        heading="Add colorants and additives"
-        noun="additives"
-        mineLink="/additive"
-        mineLinkLabel="Additives page"
-        [mine]="myAdditives()"
-        [standard]="standardAdditives()"
-        [inRecipe]="additiveKeys()"
-        [hideLead]="leadOff()"
-        (pick)="addAdditive($event)"
-      />
+        <gc-recipe-library
+          [heading]="t('recipe.page.addMaterials')"
+          noun="materials"
+          [mine]="myMaterials()"
+          [standard]="standardMaterials()"
+          [inRecipe]="materialKeys()"
+          [hideLead]="leadOff()"
+          (pick)="addMaterial($event)"
+        />
 
-      <div class="recipe-save">
-        <button type="button" class="btn btn-primary" [attr.aria-disabled]="saving.active() || null" (click)="save()">
-          Save
-        </button>
-        <button
-          type="button"
-          class="btn btn-light border"
-          [attr.aria-disabled]="saving.active() || null"
-          (click)="saveAndNext()"
-        >
-          Save and add next recipe
-        </button>
-        @if (savedId()) {
+        <h3 id="additives-heading" class="recipe-additives-heading" tabindex="-1">
+          {{ t('recipe.page.additivesHeading') }} <span class="muted">{{ t('recipe.page.onTopOfBase') }}</span>
+        </h3>
+        @if (additiveLines().length) {
+          <table class="recipe-table recipe-additives">
+            <thead>
+              <tr>
+                <th scope="col">{{ t('recipe.page.additiveColumn') }}</th>
+                <th scope="col">{{ t('recipe.page.amountColumn') }}</th>
+                <th scope="col">
+                  <span class="visually-hidden">{{ t('recipe.page.removeColumn') }}</span>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              @for (line of additiveLines(); track $index; let i = $index) {
+                <tr class="recipe-row">
+                  <th scope="row">
+                    <bdi>{{ line.name }}</bdi>
+                  </th>
+                  <td>
+                    <div class="additive-amount-cell">
+                      <input
+                        [id]="'additive-amount-' + $index"
+                        type="text"
+                        inputmode="decimal"
+                        class="form-control form-control-sm additive-amount"
+                        [attr.aria-label]="t('recipe.page.amountOf', { name: line.name })"
+                        [gcNumber]="line.amount"
+                        (gcNumberChange)="setAdditiveAmount($index, $event)"
+                        [gcField]="checks"
+                        [gcFieldName]="'additive-amount-' + $index"
+                      />
+                      <!-- Beside the amount, or under it on a phone. -->
+                      <fieldset class="unit-choice">
+                        <legend class="visually-hidden">{{ t('recipe.page.unitFor', { name: line.name }) }}</legend>
+                        @for (unit of additiveUnits; track unit.value) {
+                          <input
+                            type="radio"
+                            class="btn-check"
+                            [id]="'additive-unit-' + i + '-' + unit.value"
+                            [name]="'additive-unit-' + i"
+                            [checked]="unitOf(line) === unit.value"
+                            (change)="setAdditiveUnit(i, unit.value)"
+                          />
+                          <label class="btn btn-sm" [for]="'additive-unit-' + i + '-' + unit.value">{{
+                            t(unit.label)
+                          }}</label>
+                        }
+                      </fieldset>
+                      @if (poundReadings()?.additives?.[i]; as weight) {
+                        <span class="recipe-weight">{{ weight }}</span>
+                      }
+                    </div>
+                  </td>
+                  <td>
+                    <button
+                      type="button"
+                      class="btn btn-light border btn-sm recipe-remove"
+                      [id]="'additive-remove-' + $index"
+                      [attr.aria-label]="t('recipe.page.removeLine', { name: line.name })"
+                      (click)="removeAdditive($index)"
+                    >
+                      ✕
+                    </button>
+                  </td>
+                </tr>
+              }
+            </tbody>
+          </table>
+        }
+
+        <gc-recipe-library
+          [heading]="t('recipe.page.addAdditives')"
+          noun="additives"
+          mineLink="/additive"
+          [mine]="myAdditives()"
+          [standard]="standardAdditives()"
+          [inRecipe]="additiveKeys()"
+          [hideLead]="leadOff()"
+          (pick)="addAdditive($event)"
+        />
+
+        <div class="recipe-save">
+          <button type="button" class="btn btn-primary" [attr.aria-disabled]="saving.active() || null" (click)="save()">
+            {{ t('recipe.page.save') }}
+          </button>
           <button
             type="button"
             class="btn btn-light border"
             [attr.aria-disabled]="saving.active() || null"
-            (click)="saveAsCopy()"
+            (click)="saveAndNext()"
           >
-            Save as a copy
+            {{ t('recipe.page.saveAndNext') }}
           </button>
-        }
-        <button id="print-draft" type="button" class="btn btn-light border" (click)="printDraft()">Print</button>
-        <button id="compare-draft" type="button" class="btn btn-light border" (click)="compareDraft()">Compare</button>
-        <span class="recipe-status" role="status">{{ status() }}</span>
-        <p class="recipe-save-problem" role="alert">{{ saveProblem() }}</p>
-      </div>
-    </section>
+          @if (savedId()) {
+            <button
+              type="button"
+              class="btn btn-light border"
+              [attr.aria-disabled]="saving.active() || null"
+              (click)="saveAsCopy()"
+            >
+              {{ t('recipe.page.saveAsCopy') }}
+            </button>
+          }
+          <button id="print-draft" type="button" class="btn btn-light border" (click)="printDraft()">
+            {{ t('recipe.page.print') }}
+          </button>
+          <button id="compare-draft" type="button" class="btn btn-light border" (click)="compareDraft()">
+            {{ t('recipe.page.compare') }}
+          </button>
+          <span class="recipe-status" role="status">{{ status() }}</span>
+          <p class="recipe-save-problem" role="alert">{{ saveProblem() }}</p>
+        </div>
+      </section>
 
-    <section class="panel unity-panel unity-result" aria-labelledby="unity-heading">
-      <h2 id="unity-heading">Unity formula</h2>
-      <div class="form-check unity-include">
-        <input
-          id="include-additives"
-          class="form-check-input"
-          type="checkbox"
-          [checked]="includeAdditives()"
-          (change)="setIncludeAdditives($any($event.target).checked)"
-        />
-        <label for="include-additives" class="form-check-label">Count colorants and additives in it</label>
-      </div>
-      @if (evaluation().analysis; as analysis) {
-        <gc-unity-formula [analysis]="analysis" />
-        @if (evaluation().warnings.length) {
-          <ul class="unity-warnings">
-            @for (warning of evaluation().warnings; track warning) {
-              <li>{{ warning }}</li>
+      <section class="panel unity-panel unity-result" aria-labelledby="unity-heading">
+        <h2 id="unity-heading">{{ t('recipe.page.unityHeading') }}</h2>
+        <div class="form-check unity-include">
+          <input
+            id="include-additives"
+            class="form-check-input"
+            type="checkbox"
+            [checked]="includeAdditives()"
+            (change)="setIncludeAdditives($any($event.target).checked)"
+          />
+          <label for="include-additives" class="form-check-label">{{ t('recipe.page.includeAdditives') }}</label>
+        </div>
+        @if (evaluation().analysis; as analysis) {
+          <gc-unity-formula [analysis]="analysis" />
+          @if (evaluation().warnings.length) {
+            <ul class="unity-warnings">
+              @for (warning of evaluation().warnings; track warning) {
+                <li>{{ warning }}</li>
+              }
+            </ul>
+          }
+        } @else if (evaluation().problem; as problem) {
+          <p class="unity-problem">{{ problem }}</p>
+        } @else {
+          <p class="muted">{{ t('recipe.page.unityEmpty') }}</p>
+        }
+        @if (additiveLines().length) {
+          <h3 class="unity-additives-heading">{{ t('recipe.page.unityAdditivesHeading') }}</h3>
+          <ul class="unity-additives">
+            @for (additive of additiveLines(); track $index) {
+              <li>{{ additive.name }} : {{ additiveAmount(additive) }}</li>
             }
           </ul>
+          <p class="small muted">
+            @if (includeAdditives()) {
+              {{ t('recipe.page.counted') }}
+            } @else {
+              {{ t('recipe.page.notCounted') }}
+            }
+          </p>
         }
-      } @else if (evaluation().problem; as problem) {
-        <p class="unity-problem">{{ problem }}</p>
-      } @else {
-        <p class="muted">Add materials and their amounts to see the unity formula.</p>
-      }
-      @if (additiveLines().length) {
-        <h3 class="unity-additives-heading">Colorants and additives</h3>
-        <ul class="unity-additives">
-          @for (additive of additiveLines(); track $index) {
-            <li>{{ additive.name }} : {{ additiveAmount(additive) }}</li>
+      </section>
+    </div>
+
+    <section class="panel saved-recipes" aria-labelledby="saved-heading">
+      <h2 id="saved-heading">{{ t('recipe.page.mineHeading') }}</h2>
+      @if (myRecipes().length) {
+        <ul>
+          @for (rec of myRecipes(); track rec._id) {
+            <li class="saved-recipe" [class.is-open]="rec._id === savedId()">
+              <div class="saved-recipe-top">
+                <b>{{ rec.title }}</b>
+                @if (rec._id === savedId()) {
+                  <span class="saved-open-mark">{{ t('recipe.page.openAbove') }}</span>
+                }
+                <span class="saved-recipe-actions">
+                  <button type="button" class="btn btn-light border btn-sm" (click)="open(rec)">
+                    {{ t('recipe.page.open') }}
+                  </button>
+                  <button
+                    [id]="'print-' + rec._id"
+                    type="button"
+                    class="btn btn-light border btn-sm"
+                    [attr.aria-label]="t('recipe.page.printName', { title: rec.title })"
+                    (click)="openPrint(rec._id ?? '')"
+                  >
+                    {{ t('recipe.page.print') }}
+                  </button>
+                  <button
+                    [id]="'compare-' + rec._id"
+                    type="button"
+                    class="btn btn-light border btn-sm"
+                    [attr.aria-label]="t('recipe.page.compareName', { title: rec.title })"
+                    (click)="compareSaved(rec)"
+                  >
+                    {{ t('recipe.page.compare') }}
+                  </button>
+                  <button type="button" class="btn btn-light border btn-sm" (click)="toggleExpanded(rec)">
+                    {{ expanded().has(rec._id ?? '') ? t('recipe.page.hide') : t('recipe.page.expand') }}
+                  </button>
+                </span>
+                <gc-remove-button
+                  [name]="rec.title"
+                  [note]="rec._id === savedId() ? t('recipe.page.removeOpenNote') : ''"
+                  [busy]="removal.isPending(rec)"
+                  [problem]="removal.problemFor(rec)"
+                  (confirmed)="remove(rec)"
+                />
+              </div>
+              @if (expanded().has(rec._id ?? '')) {
+                <div>
+                  <em>{{ t('recipe.page.savedMaterials') }}</em>
+                  <ol>
+                    @for (part of rec.materials; track $index) {
+                      <li>{{ part.name }} : {{ part.amount | gcPlain }}</li>
+                    }
+                  </ol>
+                  @if (rec.additives?.length) {
+                    <em>{{ t('recipe.page.savedAdditives') }}</em>
+                    <ol>
+                      @for (add of rec.additives; track $index) {
+                        <li>{{ add.name }} : {{ additiveAmount(add) }}</li>
+                      }
+                    </ol>
+                  }
+                  @if (savedAnalysis(rec); as analysis) {
+                    <em>{{
+                      rec.includeAdditives ? t('recipe.page.savedUnityCounted') : t('recipe.page.savedUnity')
+                    }}</em>
+                    <gc-unity-formula [analysis]="analysis" />
+                  }
+                  @if (rec.date) {
+                    <div>{{ t('recipe.page.savedDate', { date: (rec.date | gcDate) }) }}</div>
+                  }
+                  <div>{{ t('recipe.page.savedNotes', { notes: savedNotes(rec) }) }}</div>
+                </div>
+              }
+            </li>
           }
         </ul>
-        <p class="small muted">
-          @if (includeAdditives()) {
-            Counted in the unity formula at their weight in the batch.
-          } @else {
-            On top of the base; not part of the unity formula.
-          }
-        </p>
+      } @else {
+        <p class="muted">{{ t('recipe.page.noneSaved') }}</p>
       }
     </section>
   </div>
-
-  <section class="panel saved-recipes" aria-labelledby="saved-heading">
-    <h2 id="saved-heading">My saved recipes</h2>
-    @if (myRecipes().length) {
-      <ul>
-        @for (rec of myRecipes(); track rec._id) {
-          <li class="saved-recipe" [class.is-open]="rec._id === savedId()">
-            <div class="saved-recipe-top">
-              <b>{{ rec.title }}</b>
-              @if (rec._id === savedId()) {
-                <span class="saved-open-mark">Open above</span>
-              }
-              <span class="saved-recipe-actions">
-                <button type="button" class="btn btn-light border btn-sm" (click)="open(rec)">Open</button>
-                <button
-                  [id]="'print-' + rec._id"
-                  type="button"
-                  class="btn btn-light border btn-sm"
-                  [attr.aria-label]="'Print ' + rec.title"
-                  (click)="openPrint(rec._id ?? '')"
-                >
-                  Print
-                </button>
-                <button
-                  [id]="'compare-' + rec._id"
-                  type="button"
-                  class="btn btn-light border btn-sm"
-                  [attr.aria-label]="'Compare ' + rec.title"
-                  (click)="compareSaved(rec)"
-                >
-                  Compare
-                </button>
-                <button type="button" class="btn btn-light border btn-sm" (click)="toggleExpanded(rec)">
-                  {{ expanded().has(rec._id ?? '') ? 'Hide' : 'Expand to View' }}
-                </button>
-              </span>
-              <gc-remove-button
-                [name]="rec.title"
-                [note]="rec._id === savedId() ? 'It stays open above, as a recipe not saved yet.' : ''"
-                [busy]="removal.isPending(rec)"
-                [problem]="removal.problemFor(rec)"
-                (confirmed)="remove(rec)"
-              />
-            </div>
-            @if (expanded().has(rec._id ?? '')) {
-              <div>
-                <em>Materials</em>
-                <ol>
-                  @for (part of rec.materials; track $index) {
-                    <li>{{ part.name }} : {{ part.amount }}</li>
-                  }
-                </ol>
-                @if (rec.additives?.length) {
-                  <em>Additives:</em>
-                  <ol>
-                    @for (add of rec.additives; track $index) {
-                      <li>{{ add.name }} : {{ additiveAmount(add) }}</li>
-                    }
-                  </ol>
-                }
-                @if (savedAnalysis(rec); as analysis) {
-                  <em>Unity Formula{{ rec.includeAdditives ? ', counting colorants and additives' : '' }}</em>
-                  <gc-unity-formula [analysis]="analysis" />
-                }
-                @if (rec.date) {
-                  <div>Date: {{ rec.date | date: 'fullDate' }}</div>
-                }
-                <div>Notes: {{ firstOf(rec.notes) }}</div>
-              </div>
-            }
-          </li>
-        }
-      </ul>
-    } @else {
-      <p class="muted">None yet. Saved recipes appear here.</p>
-    }
-  </section>
-</div>
-<!-- What an action did that the focus does not show, for screen readers; outside the part hidden while printing or comparing. -->
-<p class="visually-hidden" role="status">{{ announcement() }}</p>
+  <!-- What an action did that the focus does not show, for screen readers; outside the part hidden while printing or comparing. -->
+  <p class="visually-hidden" role="status">{{ announcement() }}</p>
+</ng-container>

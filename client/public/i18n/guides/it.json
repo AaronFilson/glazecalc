@@ -1,0 +1,62 @@
+{
+  "version": {
+    "cones": "Questa guida è mostrata per la cottura a coni, come indicato in Impostazioni.",
+    "temperature": "Questa guida è mostrata per la cottura in temperatura, come indicato in Impostazioni.",
+    "showTemperature": "Mostra per la cottura in temperatura",
+    "showCones": "Mostra per la cottura a coni"
+  },
+  "notTranslated": "Questa guida non è ancora tradotta, quindi è mostrata in inglese.",
+  "sectionInEnglish": "Questa sezione è cambiata dopo la traduzione, quindi è mostrata in inglese finché la traduzione non sarà aggiornata.",
+  "list": {
+    "title": "Guide",
+    "lead": "Guide in parole semplici per chi comincia con la ceramica: da che cos’è uno smalto alla sua cottura, e come tenere tutti al sicuro lungo il percorso.",
+    "note": "Queste guide raccolgono ciò che pubblicano produttori, enti per la sicurezza e ceramisti esperti, con le fonti alla fine di ciascuna. Sono un punto di partenza e non sostituiscono le schede di dati di sicurezza dei materiali, il manuale del forno o le norme locali.",
+    "glazingBasics": {
+      "title": "Lo smalto dai principi di base",
+      "text": "Che cos’è uno smalto, come fonde, e la spiegazione di ogni parola che si incontra in una ricetta o su un sacco."
+    },
+    "makingAGlaze": {
+      "title": "Come preparare uno smalto",
+      "text": "Acquistare, conservare, pesare, mescolare e setacciare uno smalto, poi provarlo e tenere un registro."
+    },
+    "safeMixing": {
+      "title": "Miscelazione sicura e ventilazione",
+      "text": "Polveri, maschere filtranti, pulizia, i materiali che richiedono più attenzione e l’aerazione del forno."
+    },
+    "homeSafety": {
+      "title": "Non avvelenare la propria famiglia",
+      "text": "La ceramica in casa con bambini e animali domestici: conservazione, polveri, il forno e cosa fare se qualcosa viene ingerito."
+    },
+    "firing": {
+      "title": "Cuocere in un forno semplice",
+      "text": "Coni, kiln sitter e commutatori manuali, con le curve di cottura per la biscottatura e la cottura dello smalto."
+    }
+  },
+  "contents": "In questa pagina",
+  "poison": {
+    "numbersFor": "Numeri per",
+    "choose": "Scegliere il paese",
+    "label": "Chi chiamare: {region}",
+    "caption": "Chi chiamare: {region} (numeri verificati in data {date})",
+    "for": "Per",
+    "call": "Chiamare",
+    "notes": "Orari e note",
+    "emergency": "Un’emergenza: perdita di coscienza, respiro assente, una crisi convulsiva",
+    "poisonAdvice": "{who, select, children {Consulenza antiveleni: {name} (solo bambini)} other {Consulenza antiveleni: {name}}}",
+    "or": "oppure {number}",
+    "online": "Online: <link>{name}</link>.",
+    "poisonAdviceNone": "Consulenza antiveleni",
+    "noLine": "Non abbiamo potuto confermare un numero antiveleni pubblico in questo paese. Chiamare il proprio medico, oppure il numero di emergenza se è urgente.",
+    "medicalAdvice": "Consulenza medica: {name}",
+    "animals": "Animali: {name}",
+    "animalsNone": "Animali",
+    "vet": "Chiamare il proprio veterinario.",
+    "checkedOn": "Verificati su:",
+    "choosePrompt": "Scegliere il paese per vedere chi chiamare."
+  },
+  "density": {
+    "sg": "peso specifico {value}",
+    "baume": "{value} °Bé ({sg})",
+    "pint": "{value} oz per pinta imperiale ({sg})"
+  }
+}

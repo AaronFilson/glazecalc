@@ -1,8 +1,9 @@
 import { OXIDE_GROUPS, calculateUMF, oxideMoles, selectMaterials } from '../../../../lib/chemistry';
 import { Additive, RecipeMaterial } from '../../core/models';
 import { pastLimits, rawClayPercent, sizeNotes } from './checks';
-import { Report, TryMaterial, explain, placesFor, recipeFrom } from './pool';
-import { amountOf, formatAmount, totalOf } from './rebase';
+import { Report, TryMaterial, changeText, explain, placesFor, recipeFrom } from './pool';
+import { amountOf, totalOf } from './rebase';
+import { upTo } from '../../shared/format';
 
 // Match with what I have (docs/adr/0012): a recipe made again from only the
 // materials the potter has on hand, as few of them as come near its fired
@@ -74,7 +75,7 @@ export function matchFromShelf(
   const onShelf = new Set(shelf.map((tried) => tried.material.name));
   for (const line of lines) {
     if (!onShelf.has(line.name) && amountOf(line.amount) > 0) {
-      changes.push(`${line.name} ${formatAmount(amountOf(line.amount), places)} → 0`);
+      changes.push(changeText(line.name, upTo(amountOf(line.amount), places), upTo(0, 0)));
     }
   }
   const cautions = [

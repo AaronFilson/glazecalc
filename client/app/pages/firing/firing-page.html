@@ -1,141 +1,156 @@
-<gc-page-header title="Firing logs" lead="Record each firing: times, temperatures, cones and kiln notes." />
-<gc-notices [notices]="notices" />
+<ng-container *transloco="let t">
+  <gc-page-header [title]="t('notebook.firing.title')" [lead]="t('notebook.firing.lead')" />
+  <gc-notices [notices]="notices" />
 
-<section class="inputbox">
-  <form class="form" (ngSubmit)="save()" id="firing-form">
-    <div class="row">
-      <div class="col-xl-4 col-lg-6 col-md-10 mb-3">
-        <label for="firing-title">Title of Firing: </label>
-        <input
-          id="firing-title"
-          type="text"
-          name="title"
-          required
-          [(ngModel)]="title"
-          [gcField]="checks"
-          gcFieldName="title"
-        />
+  <section class="inputbox">
+    <form class="form" (ngSubmit)="save()" id="firing-form">
+      <div class="row">
+        <div class="col-xl-4 col-lg-6 col-md-10 mb-3">
+          <label for="firing-title">{{ t('notebook.firing.titleLabel') }} </label>
+          <input
+            id="firing-title"
+            type="text"
+            name="title"
+            required
+            [(ngModel)]="title"
+            [gcField]="checks"
+            gcFieldName="title"
+          />
+        </div>
+        <div class="col-xl-4 col-lg-6 col-md-10 mb-3">
+          <label for="firing-kiln">{{ t('notebook.firing.kiln') }} </label>
+          <input id="firing-kiln" type="text" name="kiln" [(ngModel)]="kiln" />
+        </div>
+        <div class="col-xl-4 col-lg-6 col-md-10 mb-3">
+          <label for="firing-date">{{ t('notebook.firing.date') }} </label>
+          <input id="firing-date" type="date" name="date" [(ngModel)]="date" />
+        </div>
       </div>
-      <div class="col-xl-4 col-lg-6 col-md-10 mb-3">
-        <label for="firing-kiln">Kiln: </label>
-        <input id="firing-kiln" type="text" name="kiln" [(ngModel)]="kiln" />
+      <div class="row">
+        <div class="col-lg-10 mb-3">
+          <label for="firing-notes" class="boxlabel">{{ t('notebook.firing.notes') }} </label>
+          <textarea id="firing-notes" name="notes" rows="3" class="form-control" [(ngModel)]="notes"></textarea>
+        </div>
       </div>
-      <div class="col-xl-4 col-lg-6 col-md-10 mb-3">
-        <label for="firing-date">Date of firing: </label>
-        <input id="firing-date" type="date" name="date" [(ngModel)]="date" />
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-10 mb-3">
-        <label for="firing-notes" class="boxlabel">Notes on the firing: </label>
-        <textarea id="firing-notes" name="notes" rows="3" class="form-control" [(ngModel)]="notes"></textarea>
-      </div>
-    </div>
-    <div class="mb-3">
-      <label for="fieldselect">Select and add fields to the firing record : </label>
-      <div>
-        <select
-          id="fieldselect"
-          name="field-select"
-          [(ngModel)]="selectedField"
-          [gcField]="checks"
-          gcFieldName="fields"
-        >
-          @for (field of fieldOptions; track field) {
-            <option [value]="field">{{ field }}</option>
-          }
-        </select>
-      </div>
-      <button type="button" class="btn btn-light border" (click)="addField()">Add the field</button>
-    </div>
-  </form>
-
-  <p>The fields you have included :</p>
-  <ol class="included-fields">
-    @for (field of log().fields; track $index) {
-      <li>
-        Field name : {{ field }}
-        <button type="button" class="btn btn-light border" (click)="moveField($index, -1)" [disabled]="$first">
-          Move field left
-        </button>
-        <button type="button" class="btn btn-light border" (click)="moveField($index, 1)" [disabled]="$last">
-          Move field right
-        </button>
-        <button type="button" class="btn btn-light border" (click)="removeField($index)">Remove the field</button>
-      </li>
-    }
-  </ol>
-  <button type="button" class="btn btn-light border" (click)="addRow()" [disabled]="!log().fields.length">
-    Add a row to the firing table
-  </button>
-</section>
-<br />
-
-<section class="tech-info" aria-labelledby="record-heading">
-  <h3 id="record-heading">Record the Firing</h3>
-  <table class="table table-bordered firing-table">
-    <tr>
-      @for (heading of log().fields; track $index) {
-        <th>{{ heading }}</th>
-      }
-      <th><span class="visually-hidden">Row actions</span></th>
-    </tr>
-    @for (row of log().rows; track $index; let r = $index) {
-      <tr>
-        @for (cell of row; track $index; let c = $index) {
-          <td>
-            <!-- ngModel rewrites the box whenever the model differs from what it shows,
-                 so cells stay right when columns or rows move under reused inputs. -->
-            <input
-              type="text"
-              class="firing-cell"
-              [attr.aria-label]="log().fields[c] + ' row ' + (r + 1)"
-              [ngModel]="cell"
-              (ngModelChange)="setCell(r, c, $event)"
-              [ngModelOptions]="{ standalone: true }"
-            />
-          </td>
-        }
-        <td><button type="button" class="btn btn-light border btn-sm" (click)="removeRow(r)">Remove row</button></td>
-      </tr>
-    }
-  </table>
-  <button type="submit" form="firing-form" class="btn btn-primary" [disabled]="saving.active()">Save</button>
-</section>
-<br />
-
-@if (myFirings().length) {
-  <section class="tech-info" aria-labelledby="stored-heading">
-    <h3 id="stored-heading">My stored firings:</h3>
-    <ul>
-      @for (fr of myFirings(); track fr._id) {
-        <li class="stored-firing">
-          Title: {{ fr.title }}, Using kiln: {{ fr.kiln }}, Date: {{ fr.date | date: 'fullDate' }}
-          <table class="table table-bordered">
-            <tr>
-              @for (heading of fr.fieldsIncluded; track $index) {
-                <th>{{ heading }}</th>
-              }
-            </tr>
-            @for (row of fr.rows; track $index) {
-              <tr>
-                @for (cell of row; track $index) {
-                  <td>{{ cell }}</td>
-                }
-              </tr>
+      <div class="mb-3">
+        <label for="fieldselect">{{ t('notebook.firing.fieldSelect') }} </label>
+        <div>
+          <select
+            id="fieldselect"
+            name="field-select"
+            [(ngModel)]="selectedField"
+            [gcField]="checks"
+            gcFieldName="fields"
+          >
+            <!-- Each column is saved by its English name, and shown in the page's language. -->
+            @for (field of fieldOptions; track field) {
+              <option [value]="field">{{ fieldLabel(field) }}</option>
             }
-          </table>
-          Notes: {{ firstOf(fr.notes) }}
-          <div class="stored-firing-remove">
-            <gc-remove-button
-              [name]="removal.nameOf(fr)"
-              [busy]="removal.isPending(fr)"
-              [problem]="removal.problemFor(fr)"
-              (confirmed)="removal.remove(fr)"
-            />
-          </div>
+          </select>
+        </div>
+        <button type="button" class="btn btn-light border" (click)="addField()">
+          {{ t('notebook.firing.addField') }}
+        </button>
+      </div>
+    </form>
+
+    <p>{{ t('notebook.firing.included') }}</p>
+    <ol class="included-fields">
+      @for (field of log().fields; track $index) {
+        <li>
+          {{ t('notebook.firing.fieldName', { name: fieldLabel(field) }) }}
+          <button type="button" class="btn btn-light border" (click)="moveField($index, -1)" [disabled]="$first">
+            {{ t('notebook.firing.moveLeft') }}
+          </button>
+          <button type="button" class="btn btn-light border" (click)="moveField($index, 1)" [disabled]="$last">
+            {{ t('notebook.firing.moveRight') }}
+          </button>
+          <button type="button" class="btn btn-light border" (click)="removeField($index)">
+            {{ t('notebook.firing.removeField') }}
+          </button>
         </li>
       }
-    </ul>
+    </ol>
+    <button type="button" class="btn btn-light border" (click)="addRow()" [disabled]="!log().fields.length">
+      {{ t('notebook.firing.addRow') }}
+    </button>
   </section>
-}
+  <br />
+
+  <section class="tech-info" aria-labelledby="record-heading">
+    <h3 id="record-heading">{{ t('notebook.firing.recordHeading') }}</h3>
+    <table class="table table-bordered firing-table">
+      <tr>
+        @for (heading of log().fields; track $index) {
+          <th>{{ fieldLabel(heading) }}</th>
+        }
+        <th>
+          <span class="visually-hidden">{{ t('notebook.firing.rowActions') }}</span>
+        </th>
+      </tr>
+      @for (row of log().rows; track $index; let r = $index) {
+        <tr>
+          @for (cell of row; track $index; let c = $index) {
+            <td>
+              <!-- ngModel rewrites the box whenever the model differs from what it shows,
+                 so cells stay right when columns or rows move under reused inputs. -->
+              <input
+                type="text"
+                class="firing-cell"
+                [attr.aria-label]="t('notebook.firing.cell', { field: fieldLabel(log().fields[c]), row: r + 1 })"
+                [ngModel]="cell"
+                (ngModelChange)="setCell(r, c, $event)"
+                [ngModelOptions]="{ standalone: true }"
+              />
+            </td>
+          }
+          <td>
+            <button type="button" class="btn btn-light border btn-sm" (click)="removeRow(r)">
+              {{ t('notebook.firing.removeRow') }}
+            </button>
+          </td>
+        </tr>
+      }
+    </table>
+    <button type="submit" form="firing-form" class="btn btn-primary" [disabled]="saving.active()">
+      {{ t('notebook.firing.save') }}
+    </button>
+  </section>
+  <br />
+
+  @if (myFirings().length) {
+    <section class="tech-info" aria-labelledby="stored-heading">
+      <h3 id="stored-heading">{{ t('notebook.firing.storedHeading') }}</h3>
+      <ul>
+        @for (fr of myFirings(); track fr._id) {
+          <li class="stored-firing">
+            {{ t('notebook.firing.stored', { title: fr.title, kiln: fr.kiln ?? '', date: (fr.date | gcDate) }) }}
+            <table class="table table-bordered">
+              <tr>
+                @for (heading of fr.fieldsIncluded; track $index) {
+                  <th>{{ fieldLabel(heading) }}</th>
+                }
+              </tr>
+              @for (row of fr.rows; track $index) {
+                <tr>
+                  @for (cell of row; track $index) {
+                    <td>{{ cell }}</td>
+                  }
+                </tr>
+              }
+            </table>
+            {{ t('notebook.firing.storedNotes', { notes: firstOf(fr.notes) }) }}
+            <div class="stored-firing-remove">
+              <gc-remove-button
+                [name]="removal.nameOf(fr)"
+                [busy]="removal.isPending(fr)"
+                [problem]="removal.problemFor(fr)"
+                (confirmed)="removal.remove(fr)"
+              />
+            </div>
+          </li>
+        }
+      </ul>
+    </section>
+  }
+</ng-container>

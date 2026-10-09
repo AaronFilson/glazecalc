@@ -1,0 +1,236 @@
+{
+  "auth": {
+    "signInHeading": "Logowanie",
+    "keepHeading": "Zachowanie pracy",
+    "signUpHeading": "Zakładanie konta",
+    "signInLead": "Witamy ponownie w notatniku szkliw.",
+    "keepLead": "Aby zachować wszystko, co powstało pod nazwą {name}, wystarczy dodać adres e-mail i hasło. Nadal bezpłatnie.",
+    "signUpLead": "Bezpłatnie. Receptury, surowce i notatki pozostają prywatne, dostępne tylko na tym koncie.",
+    "trialNote": "Jeśli konto już istnieje, zalogowanie przeniesie do niego to, co powstało pod nazwą {name}. Pierwszy raz tutaj? Aby to zachować, można zamiast tego <signup>założyć konto</signup>.",
+    "email": "Adres e-mail",
+    "password": "Hasło",
+    "passwordHint": "Co najmniej 8 znaków.",
+    "confirmation": "Potwierdzenie hasła",
+    "passwordMissing": "Należy wpisać hasło.",
+    "createAccount": "Załóż konto",
+    "signIn": "Zaloguj się",
+    "haveAccount": "Konto już założone? <signin>Zaloguj się</signin>",
+    "forgot": "Zapomniane hasło? Zresetuj je",
+    "newHere": "Pierwszy raz tutaj? <signup>Załóż bezpłatne konto</signup>",
+    "signUpFailed": "Błąd: nie udało się utworzyć konta.",
+    "signInFailed": "Błąd: nie udało się zalogować."
+  },
+  "forgot": {
+    "heading": "Resetowanie hasła",
+    "checkInbox": "Należy sprawdzić skrzynkę odbiorczą i folder ze spamem. Jeśli nic nie przyjdzie, warto sprawdzić adres i poprosić ponownie.",
+    "intro": "Po wpisaniu adresu e-mail konta wyślemy link do ustawienia nowego hasła.",
+    "email": "Adres e-mail:",
+    "send": "Wyślij link resetujący",
+    "back": "Wróć do logowania",
+    "failed": "Błąd: nie udało się wysłać wiadomości do resetowania hasła. Proszę spróbować ponownie."
+  },
+  "reset": {
+    "heading": "Ustawianie nowego hasła",
+    "signIn": "Zaloguj się",
+    "incomplete": "Ta strona wymaga linku z wiadomości do resetowania hasła, a ten link jest niekompletny.",
+    "askAgain": "Poproś o nowy link",
+    "password": "Nowe hasło:",
+    "confirmation": "Potwierdzenie nowego hasła:",
+    "save": "Zapisz nowe hasło",
+    "hint": "Co najmniej 8 znaków. Wszystkie urządzenia zalogowane na to konto zostaną wylogowane.",
+    "failed": "Błąd: nie udało się zmienić hasła. Proszę spróbować ponownie."
+  },
+  "account": {
+    "trialTitle": "Okres próbny",
+    "trialLead": "Trwa okres próbny aplikacji Glazecalc pod nazwą {name}.",
+    "keepHeading": "Zachowanie pracy",
+    "keepText": "Ten okres próbny i wszystko, co w nim powstało, zostaną usunięte w dniu: {date}. Aby je zachować, wystarczy założyć bezpłatne konto: receptury, surowce i notatki pozostaną dokładnie takie, jakie są, a {name} pozostanie nazwą wyświetlaną.",
+    "createAccount": "Załóż konto",
+    "title": "Konto",
+    "signedInAs": "Zalogowano jako {email}.",
+    "changeHeading": "Zmiana hasła",
+    "current": "Obecne hasło",
+    "currentMissing": "Należy wpisać obecne hasło.",
+    "password": "Nowe hasło",
+    "passwordHint": "Co najmniej 8 znaków. Inne urządzenia zalogowane na to konto zostaną wylogowane.",
+    "confirmation": "Potwierdzenie nowego hasła",
+    "change": "Zmień hasło",
+    "changeFailed": "Błąd: nie udało się zmienić hasła. Proszę spróbować ponownie.",
+    "deleteHeading": "Usuwanie konta",
+    "deleteText": "Spowoduje to usunięcie konta i wszystkiego, co zostało zapisane: receptur, surowców, dodatków, notatek, dzienników wypałów i porad. Tej operacji nie można cofnąć.",
+    "deletePassword": "Hasło, aby potwierdzić",
+    "deletePasswordMissing": "Należy wpisać hasło, aby potwierdzić.",
+    "delete": "Usuń moje konto",
+    "deleteFailed": "Błąd: nie udało się usunąć konta. Proszę spróbować ponownie."
+  },
+  "settings": {
+    "heading": "Ustawienia",
+    "intro": "Zapisywane razem z kontem, więc obowiązują na każdym urządzeniu.",
+    "saveFailed": "Nie udało się zapisać ustawienia. Proszę spróbować ponownie.",
+    "language": {
+      "legend": "Język",
+      "help": "Język aplikacji, poradników i wiadomości e-mail. Po jego zmianie ta strona otworzy się w wybranym języku.",
+      "saved": "Zapisano: {language}."
+    },
+    "region": {
+      "legend": "Region pracowni",
+      "none": {
+        "label": "Nie wybrano",
+        "saved": "Zapisano: nie wybrano regionu; ustawienia domyślne zależą od przeglądarki."
+      },
+      "saved": "Zapisano: {region}.",
+      "help": "Surowce dostępne w sprzedaży w danym regionie oraz domyślne ustawienia liczb, dat, temperatur i stożków poniżej. Do czasu wyboru zależą one od języka przeglądarki."
+    },
+    "format": {
+      "legend": "Liczby i daty",
+      "auto": {
+        "label": "Zgodnie z moim językiem i regionem",
+        "saved": "Zapisano: liczby i daty zapisywane zgodnie z językiem i regionem."
+      },
+      "saved": "Zapisano: format liczb i dat – {language}.",
+      "help": "Sposób zapisu liczb i dat: 12,345.6 lub 12.345,6 oraz kolejność dnia i miesiąca."
+    },
+    "decimalMark": {
+      "legend": "Wpisywanie ilości",
+      "either": {
+        "label": "Przecinek lub kropka jako separator dziesiętny",
+        "example": "12,5 lub 12.5",
+        "saved": "Zapisano: ilości można wpisywać z przecinkiem lub kropką."
+      },
+      "comma": {
+        "label": "Przecinek jako separator dziesiętny",
+        "saved": "Zapisano: ilości wpisuje się z przecinkiem jako separatorem dziesiętnym."
+      },
+      "point": {
+        "label": "Kropka jako separator dziesiętny",
+        "saved": "Zapisano: ilości wpisuje się z kropką jako separatorem dziesiętnym."
+      },
+      "help": "Przy obu znakach ilość taka jak 1.250 jest odczytywana zgodnie z zapisem liczb wybranym powyżej."
+    },
+    "temperature": {
+      "legend": "Temperatury",
+      "celsius": {
+        "label": "Stopnie Celsjusza",
+        "saved": "Zapisano: temperatury w °C."
+      },
+      "fahrenheit": {
+        "label": "Stopnie Fahrenheita",
+        "saved": "Zapisano: temperatury w °F."
+      },
+      "help": "Do czasu wyboru zależy od regionu: °F w Stanach Zjednoczonych, °C w pozostałych krajach."
+    },
+    "cones": {
+      "legend": "Wypał",
+      "orton": {
+        "label": "Według stożków Ortona",
+        "example": "stożek 04, stożek 6",
+        "saved": "Zapisano: wypał według stożków Ortona."
+      },
+      "temperature": {
+        "label": "Według temperatury, jak w programie sterownika pieca",
+        "saved": "Zapisano: wypał według temperatury."
+      },
+      "help": "Do czasu wyboru zależy od regionu: stożki Ortona w USA, Wielkiej Brytanii, Irlandii, Australii i Nowej Zelandii, temperatura w pozostałej części Europy."
+    },
+    "density": {
+      "legend": "Gęstość szkliwa",
+      "sg": {
+        "label": "Gęstość względna (SG)",
+        "saved": "Zapisano: gęstość szkliwa jako gęstość względna."
+      },
+      "baume": {
+        "label": "Stopnie Baumé, z areometru",
+        "saved": "Zapisano: gęstość szkliwa w stopniach Baumé."
+      },
+      "pint": {
+        "label": "Masa pinty: uncje w pincie imperialnej",
+        "saved": "Zapisano: gęstość szkliwa jako masa pinty."
+      },
+      "help": "Jak poradniki podają gęstość zawiesiny szkliwa. Do czasu wyboru zależy od regionu: stopnie Baumé we Włoszech, gęstość względna w pozostałych krajach."
+    },
+    "theme": {
+      "legend": "Jasny lub ciemny",
+      "system": {
+        "label": "Zgodnie z ustawieniem urządzenia",
+        "saved": "Zapisano: jasny lub ciemny zgodnie z ustawieniem każdego urządzenia."
+      },
+      "light": {
+        "label": "Jasny",
+        "saved": "Zapisano: zawsze jasny."
+      },
+      "dark": {
+        "label": "Ciemny",
+        "saved": "Zapisano: zawsze ciemny."
+      },
+      "help": "Receptury drukują się zawsze na czarno na białym tle."
+    },
+    "palette": {
+      "legend": "Kolory",
+      "saved": "Zapisano: paleta {palette} dla przycisków i linków.",
+      "help": "Dla przycisków, linków i zakładek, z nazwami od szkliw. Każda paleta jest czytelna w trybie jasnym i ciemnym."
+    },
+    "weightUnit": {
+      "legend": "Masy porcji",
+      "grams": {
+        "label": "Gramy",
+        "saved": "Zapisano: masy porcji w gramach."
+      },
+      "pounds": {
+        "label": "Funty i uncje",
+        "saved": "Zapisano: masy porcji w funtach i uncjach."
+      },
+      "help": "Na wydrukach porcji."
+    },
+    "gramPrecision": {
+      "legend": "Gramy na wydruku",
+      "single": {
+        "label": "Z dokładnością do dziesiątej części grama",
+        "saved": "Zapisano: gramy z dokładnością do dziesiątej części."
+      },
+      "full": {
+        "label": "Pełna dokładność",
+        "saved": "Zapisano: gramy z pełną dokładnością, do 5 miejsc po przecinku."
+      },
+      "help": "Przy dokładności do dziesiątej części ilości poniżej 10 g nadal są pokazywane z setnymi częściami (2,35 g), z myślą o barwnikach w małych porcjach testowych."
+    },
+    "lead": {
+      "legend": "Ołów",
+      "off": {
+        "label": "Wyłączony: nigdy nie dodawać ołowiu do receptury ani go nie proponować",
+        "saved": "Zapisano: ołów nigdy nie jest dodawany do receptury ani proponowany."
+      },
+      "on": {
+        "label": "Włączony: surowce z ołowiem można dodawać i proponować",
+        "saved": "Zapisano: surowce z ołowiem można dodawać i proponować."
+      },
+      "help": "Ołów jest trujący przy wdychaniu lub połknięciu oraz kumuluje się w organizmie, a szkliwo ołowiowe może uwalniać go do żywności i napojów; żadne obliczenie nie pokaże, czy dany wypalony wyrób to robi. Przy ustawieniu Wyłączony receptury, które już zawierają ołów, nadal otwierają się bez zmian.",
+      "warning": "Ołów należy stosować wyłącznie w postaci fryty, nigdy w postaci surowej minii, bieli ołowianej, żółtego tlenku ołowiu ani glejty. Należy go mieszać na mokro, nigdy nie nakładać natryskiem, używać półmaski filtrującej i sprzątać na mokro. Wyroby ze szkliwem ołowiowym należy trzymać z dala od żywności i napojów, chyba że wypalony wyrób przeszedł laboratoryjne badanie uwalniania metali.",
+      "turnOn": "Włącz ołów",
+      "keepOff": "Pozostaw wyłączony"
+    },
+    "englishTerms": {
+      "legend": "Terminy angielskie",
+      "off": {
+        "label": "Wyłączone",
+        "saved": "Zapisano: bez terminów angielskich."
+      },
+      "on": {
+        "label": "Pokazuj angielski termin po kluczowych terminach",
+        "saved": "Zapisano: angielski termin widoczny po kluczowych terminach."
+      },
+      "help": "Przydatne przy czytaniu angielskich źródeł, takich jak Digitalfire, równolegle z tą stroną: kluczowe terminy mają w nawiasie swój angielski odpowiednik."
+    },
+    "notice": {
+      "legend": "Informacja o tłumaczeniu",
+      "shown": {
+        "label": "Widoczna",
+        "saved": "Zapisano: informacja jest widoczna."
+      },
+      "hidden": {
+        "label": "Ukryta",
+        "saved": "Zapisano: informacja jest ukryta. Jeden jej wiersz pozostaje w poradnikach o bezpieczeństwie."
+      },
+      "help": "Informacja na górze każdej strony, że została przetłumaczona przez AI, z możliwością zaproponowania poprawki."
+    }
+  }
+}

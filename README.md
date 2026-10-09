@@ -47,6 +47,15 @@ materials, colorants, firing logs and notes together in one private notebook.
 - **Print it for the glaze room:** the whole recipe with its unity formula and analysis, or just
   a batch list to tick off while weighing, with a running total for weighing into one bucket. One
   page on Letter or A4; weights in grams, or in pounds and ounces as set in your account.
+- **Your region and your numbers:** where you work sets numbers and dates as you write them
+  (12,5 or 12.5 typed either way), °C or °F, Orton cones or firing by temperature, the standard
+  materials sold there, and who to call in an emergency, for 31 countries.
+- **In seven languages:** English, German, French, Spanish, Italian, Polish and Portuguese, each
+  at its own addresses (`/de/recipe`). Translated by AI with a glossary per language from
+  suppliers' catalogues, reviewed, and the safety text checked by translating it back; every
+  translated page says so and links to a form to suggest a better wording. Every piece of text is
+  a message (Transloco with ICU plurals), and the guides are Markdown per language
+  ([how translations are made](docs/translations/README.md)).
 - **Your own colors:** light, dark or as the device is set, and six palettes named for glazes,
   each readable in both.
 - **A standard library of 167 materials and 37 colorants and additives,** from manufacturers'
@@ -70,10 +79,11 @@ For anyone reading the code:
   `.ts` files directly with no build step ([ADR 8](docs/adr/0008-typescript-server-without-a-build.md)),
   and put back online. The
   [case study](docs/case-study.md) tells how.
-- **Tested at three levels, in CI on every push:** 195 server tests (98% of statements) run
-  against the app in-process; 243 Angular unit tests (93%); 78 Playwright browser tests,
+- **Tested at three levels, in CI on every push:** 257 server tests (98% of statements) run
+  against the app in-process; 350 Angular unit tests (92%); 106 Playwright browser tests,
   including [axe](https://github.com/dequelabs/axe-core) accessibility checks of every page in
-  light and dark mode.
+  light and dark mode, every page in a pseudo-locale to find text not marked for translation, and
+  every page in each language at a phone's width.
 - **One glaze chemistry library** for the browser and the tests, checked against values worked
   out by hand ([ADR 4](docs/adr/0004-shared-chemistry.md)).
 - **Keyless deploys with approval:** GitHub Actions gets short-lived AWS credentials through
@@ -121,13 +131,13 @@ process, which serves the JSON API under `/api` and the built Angular client for
 A deploy runs `deploy.sh` on the instance through SSM: it pulls the new image, starts it, and goes
 back to the previous one if the health check fails.
 
-| Part           | Built with                                                                         |
-| -------------- | ---------------------------------------------------------------------------------- |
-| Client         | Angular 22, TypeScript (strict), Bootstrap 5 with a custom palette, Vitest         |
-| Server         | TypeScript run directly by Node.js 24, Express 5, Mongoose 9, JWT, bcrypt, Mocha   |
-| Data           | MongoDB 9                                                                          |
-| Infrastructure | AWS (EC2, SSM, SES, S3, CloudWatch, IAM with OIDC), Docker Compose, nginx, certbot |
-| Delivery       | GitHub Actions, GHCR, Playwright with axe, ESLint, Prettier, Dependabot            |
+| Part           | Built with                                                                                              |
+| -------------- | ------------------------------------------------------------------------------------------------------- |
+| Client         | Angular 22, TypeScript (strict), Transloco with ICU messages, Bootstrap 5 with a custom palette, Vitest |
+| Server         | TypeScript run directly by Node.js 24, Express 5, Mongoose 9, JWT, bcrypt, Mocha                        |
+| Data           | MongoDB 9                                                                                               |
+| Infrastructure | AWS (EC2, SSM, SES, S3, CloudWatch, IAM with OIDC), Docker Compose, nginx, certbot                      |
+| Delivery       | GitHub Actions, GHCR, Playwright with axe, ESLint, Prettier, Dependabot                                 |
 
 ## Run it locally
 
@@ -196,6 +206,8 @@ including PowerShell and cmd.
 | `npm run test:client`    | Angular unit tests (Vitest), with no server or database.                                                                                                                                                                                                                                                   |
 | `npm run test:e2e`       | Browser and accessibility tests (Playwright and axe). They build the app, run it on port 3100 (`E2E_PORT`) with a `glazecalc_e2e` database they reset, and need Chromium once: `npx playwright install chromium`.                                                                                          |
 | `npm run test:e2e:linux` | The browser tests on Linux in Docker, as CI runs them: Ubuntu's fonts are wider than Windows', which matters for layout and print. It tests the working tree, uncommitted changes included, and copies what failed to `test-results-linux/`. On Windows it runs through WSL, which needs Docker inside it. |
+| `npm run check:i18n`     | The messages: every key the app uses has its English and every English is used, translations keep the English's placeholders, tags and plural forms, and the English written from code is current ([how to write text](docs/translating.md)).                                                              |
+| `npm run i18n:sources`   | Writes the English of the messages kept in code and data (the server's, the chemistry's, the standard records', who to call) for translators.                                                                                                                                                              |
 | `npm run test:all`       | The server, Angular and browser tests, on this machine.                                                                                                                                                                                                                                                    |
 | `npm run test:all:linux` | The server and Angular tests, then the browser tests on Linux. Run it before pushing anything that changes layout or printing.                                                                                                                                                                             |
 

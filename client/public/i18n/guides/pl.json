@@ -1,0 +1,62 @@
+{
+  "version": {
+    "cones": "Ten poradnik jest pokazany w wersji dla wypału według stożków, zgodnie z ustawieniami konta.",
+    "temperature": "Ten poradnik jest pokazany w wersji dla wypału według temperatury, zgodnie z ustawieniami konta.",
+    "showTemperature": "Pokaż dla wypału według temperatury",
+    "showCones": "Pokaż dla wypału według stożków"
+  },
+  "notTranslated": "Ten poradnik nie został jeszcze przetłumaczony, więc jest pokazany po angielsku.",
+  "sectionInEnglish": "Ta sekcja zmieniła się od czasu tłumaczenia, więc jest pokazana po angielsku, dopóki jej tłumaczenie nie zostanie zaktualizowane.",
+  "list": {
+    "title": "Poradniki",
+    "lead": "Poradniki pisane prostym językiem dla początkujących: od tego, czym jest szkliwo, po jego wypał – z dbałością o bezpieczeństwo wszystkich po drodze.",
+    "note": "Te poradniki zbierają to, co publikują producenci, instytucje zajmujące się bezpieczeństwem i doświadczeni ceramicy; źródła podano na końcu każdego z nich. Są punktem wyjścia, a nie zamiennikiem kart charakterystyki surowców, instrukcji obsługi pieca ani lokalnych przepisów.",
+    "glazingBasics": {
+      "title": "Szkliwienie od podstaw",
+      "text": "Czym jest szkliwo, jak się topi i co znaczy każde słowo, które można spotkać w recepturze lub na worku."
+    },
+    "makingAGlaze": {
+      "title": "Jak przygotować szkliwo",
+      "text": "Zakup, przechowywanie, ważenie, mieszanie i przesiewanie szkliwa, a potem testowanie go i prowadzenie zapisków."
+    },
+    "safeMixing": {
+      "title": "Bezpieczne rozrabianie szkliw i wentylacja",
+      "text": "Pył, półmaski filtrujące, sprzątanie, surowce wymagające największej ostrożności i wietrzenie pieca."
+    },
+    "homeSafety": {
+      "title": "Jak nie otruć własnej rodziny",
+      "text": "Ceramika w domu, w którym są dzieci i zwierzęta: przechowywanie, pył, piec i co robić, gdy coś zostanie połknięte."
+    },
+    "firing": {
+      "title": "Wypał w prostym piecu",
+      "text": "Stożki, wyłączniki stożkowe Kiln-Sitter i ręczne regulatory mocy, z programami wypału biskwitowego i wypału szkliwa."
+    }
+  },
+  "contents": "Na tej stronie",
+  "poison": {
+    "numbersFor": "Numery dla kraju",
+    "choose": "Wybierz kraj",
+    "label": "Gdzie dzwonić: {region}",
+    "caption": "Gdzie dzwonić: {region} (numery sprawdzone {date})",
+    "for": "W jakiej sprawie",
+    "call": "Numer",
+    "notes": "Godziny i uwagi",
+    "emergency": "Nagły wypadek: utrata przytomności, brak oddechu, napad drgawek",
+    "poisonAdvice": "{who, select, children {Porada w razie zatrucia: {name} (tylko dla dzieci)} other {Porada w razie zatrucia: {name}}}",
+    "or": "lub {number}",
+    "online": "W internecie: <link>{name}</link>.",
+    "poisonAdviceNone": "Porada w razie zatrucia",
+    "noLine": "Nie udało nam się potwierdzić, że działa tu publiczna linia informacji o zatruciach. Należy zadzwonić do lekarza, a jeśli sprawa jest pilna – na numer alarmowy.",
+    "medicalAdvice": "Porada medyczna: {name}",
+    "animals": "Zwierzęta: {name}",
+    "animalsNone": "Zwierzęta",
+    "vet": "Należy zadzwonić do weterynarza.",
+    "checkedOn": "Sprawdzono na stronach:",
+    "choosePrompt": "Wystarczy wybrać kraj, aby zobaczyć, gdzie tam dzwonić."
+  },
+  "density": {
+    "sg": "SG {value}",
+    "baume": "{value} °Bé ({sg})",
+    "pint": "{value} oz na pintę imperialną ({sg})"
+  }
+}

@@ -1,4 +1,5 @@
 import { Component, computed, input, model } from '@angular/core';
+import { TranslocoDirective } from '@jsverse/transloco';
 import { Material } from '../../core/models';
 import { TryMaterial } from './pool';
 import { RecipeLibrary, libraryKey } from './recipe-library';
@@ -12,14 +13,14 @@ let nextId = 0;
  */
 @Component({
   selector: 'gc-try-materials',
-  imports: [RecipeLibrary],
-  template: `
+  imports: [RecipeLibrary, TranslocoDirective],
+  template: `<ng-container *transloco="let t">
     <div class="try-materials">
       <p class="try-intro">
-        {{ intro() }}
+        {{ intro() || t('recipe.tryMaterials.intro') }}
       </p>
       @if (tries().length) {
-        <ul class="try-list" [attr.aria-label]="listLabel() + ' (' + tries().length + ')'">
+        <ul class="try-list" [attr.aria-label]="t('recipe.tryMaterials.list', { list: list(), count: tries().length })">
           @for (tried of tries(); track tried.material.name; let i = $index) {
             <li>
               <span class="try-name">{{ tried.material.name }}</span>
@@ -31,24 +32,24 @@ let nextId = 0;
                   [checked]="tried.must"
                   (change)="setMust(i, $any($event.target).checked)"
                 />
-                <label class="form-check-label" [for]="id + '-must-' + i">Must use</label>
+                <label class="form-check-label" [for]="id + '-must-' + i">{{ t('recipe.tryMaterials.mustUse') }}</label>
               </span>
               <button
                 type="button"
                 class="btn btn-link btn-sm try-remove"
-                [attr.aria-label]="'Remove ' + tried.material.name + ' from ' + listName()"
+                [attr.aria-label]="t('recipe.tryMaterials.removeFrom', { list: list(), name: tried.material.name })"
                 (click)="remove(i)"
               >
-                Remove
+                {{ t('recipe.tryMaterials.remove') }}
               </button>
             </li>
           }
         </ul>
       }
       <gc-recipe-library
-        heading="Add a material to try"
+        [heading]="t('recipe.tryMaterials.heading')"
         noun="materials"
-        markLabel="Added"
+        [markLabel]="t('recipe.tryMaterials.added')"
         [nested]="true"
         [mine]="mine()"
         [standard]="standard()"
@@ -57,7 +58,7 @@ let nextId = 0;
         (pick)="add($event)"
       />
     </div>
-  `
+  </ng-container>`
 })
 export class TryMaterials {
   readonly mine = input.required<Material[]>();
@@ -65,19 +66,13 @@ export class TryMaterials {
   readonly hideLead = input(false);
   /** Keys of the recipe's own materials, marked rather than offered. */
   readonly inRecipe = input<ReadonlySet<string>>(new Set());
-  readonly intro = input(
-    'Add any materials you have or would like the match to consider: it uses those that help, as few as it can. Tick "Must use" to keep one in.'
-  );
-  /** What the list is, for its label and its Remove buttons: "the materials to try". */
-  readonly listName = input('the materials to try');
+  /** What to say above the list, in the page's language; blank for the usual. */
+  readonly intro = input('');
+  /** What the list is, for its label and its Remove buttons: the materials to try, or your materials on hand. */
+  readonly list = input<'tries' | 'shelf'>('tries');
   readonly tries = model<TryMaterial[]>([]);
 
   protected readonly id = 'try-' + nextId++;
-  /** "Your materials on hand": the list's name, as a label. */
-  protected readonly listLabel = computed(() => {
-    const name = this.listName().replace(/^the /, '');
-    return name.charAt(0).toUpperCase() + name.slice(1);
-  });
   protected readonly marked = computed(
     () => new Set([...this.inRecipe(), ...this.tries().map((tried) => libraryKey(tried.material))])
   );

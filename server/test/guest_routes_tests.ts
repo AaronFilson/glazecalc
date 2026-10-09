@@ -298,7 +298,11 @@ describe('trial accounts', () => {
 
     const taken = await claim({ email: user.email.toUpperCase(), password: 'long-enough-1' });
     expect(taken).to.have.status(400);
-    expect(taken.body).to.eql({ msg: 'An account with that email already exists.', field: 'email' });
+    expect(taken.body).to.eql({
+      code: 'account-exists',
+      msg: 'An account with that email already exists.',
+      field: 'email'
+    });
     expect(await claim({ email: 'me@guest.invalid', password: 'long-enough-1' })).to.have.status(400);
     expect(await claim({ email: 'new' + Date.now() + '@tester.com', password: 'short' })).to.have.status(400);
     const notTrial = await claim({ email: 'other@tester.com', password: 'long-enough-1' }, user.generateToken());
@@ -326,7 +330,7 @@ describe('trial accounts', () => {
 
     const res = await signIn(email, password).set('Cookie', 'glazecalc_session=' + trial.token);
     expect(res).to.have.status(200);
-    expect(res.body).to.eql({ msg: 'Success in signin', email, kept: 2 });
+    expect(res.body).to.eql({ code: 'signed-in', msg: 'Success in signin', email, kept: 2 });
 
     const notes = await api()
       .get('/notes/getAll')
