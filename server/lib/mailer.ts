@@ -19,6 +19,8 @@ export interface Message {
 
 let smtp: Transporter | null = null;
 let smtpUrl: string | undefined;
+/** Messages written to files so far, so their names sort in the order they were sent. */
+let written = 0;
 
 const transport = (): string | null =>
   process.env.MAIL_TRANSPORT || (process.env.NODE_ENV === 'production' ? null : 'log');
@@ -50,8 +52,10 @@ export const send = async ({ to, subject, text }: Message): Promise<void> => {
     case 'file': {
       const dir = process.env.MAIL_DIR;
       if (!dir) throw new Error('MAIL_DIR is not set');
+      // Two messages can be sent in the same millisecond: the count keeps them in order.
+      const name = Date.now() + '-' + String(written++).padStart(9, '0') + '-' + crypto.randomBytes(4).toString('hex');
       await fs.promises.mkdir(dir, { recursive: true });
-      const file = path.join(dir, Date.now() + '-' + crypto.randomBytes(4).toString('hex'));
+      const file = path.join(dir, name);
       // Renamed into place once written, so readers never see half a message.
       await fs.promises.writeFile(file + '.tmp', JSON.stringify({ ...message, date: new Date() }));
       await fs.promises.rename(file + '.tmp', file + '.json');
