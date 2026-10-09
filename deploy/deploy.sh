@@ -83,29 +83,37 @@ umask 022
 # describe the running version; they change only after the new one is healthy.
 previous=$(sed -n 's/^GLAZECALC_TAG=//p' .env 2>/dev/null || true)
 
+# Compose's progress lines go to stderr, where the SSM log shows them as if
+# they were errors. Quiet still prints Compose's own errors; the states and the
+# app's last lines below say the rest.
+compose() { docker compose --progress quiet "$@"; }
+
 restore_previous() {
   echo "Deploying $tag failed." >&2
+  new ps -a --format '{{.Service}}: {{.Status}}' >&2 || true
+  new logs --no-color --tail 20 app >&2 || true
   rm -f compose.prod.yaml.new
   if [ -n "$previous" ] && [ -f compose.prod.yaml ]; then
     echo "Starting the previous version again: $previous" >&2
-    GLAZECALC_TAG="$previous" docker compose -f compose.prod.yaml up -d --remove-orphans \
+    GLAZECALC_TAG="$previous" compose -f compose.prod.yaml up -d --remove-orphans \
       --wait --wait-timeout 180 \
       || echo "The previous version is not healthy either: docker compose -f $dir/compose.prod.yaml ps" >&2
   fi
   exit 1
 }
 
-new() { GLAZECALC_TAG="$tag" docker compose -f compose.prod.yaml.new "$@"; }
+new() { GLAZECALC_TAG="$tag" compose -f compose.prod.yaml.new "$@"; }
 new pull --quiet || restore_previous
 new up -d --remove-orphans --wait --wait-timeout 180 || restore_previous
 
 mv compose.prod.yaml.new compose.prod.yaml
 printf 'GLAZECALC_TAG=%s\n' "$tag" > .env
 echo "Deployed $tag (previous: ${previous:-none})"
+compose -f compose.prod.yaml ps --format '{{.Service}}: {{.Status}}'
 
 # Standard materials, additives and advice from this image's data files. Safe to
 # repeat: records are replaced by _id and users' own records are not touched.
-if ! docker compose -f compose.prod.yaml run --rm --no-deps app node scripts/seed-standard.js; then
+if ! compose -f compose.prod.yaml run --rm --no-deps app node scripts/seed-standard.js; then
   echo "The app is running $tag, but loading the standard data failed; run deploy.sh again." >&2
   exit 1
 fi
