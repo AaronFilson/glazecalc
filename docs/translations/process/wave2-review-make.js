@@ -1,7 +1,9 @@
 // Six review prompts per language (wave 2), from Phase 3's review prompt.
 const fs = require('fs');
-const S = 'C:/Users/bellows/AppData/Local/Temp/claude/C--Users-bellows-gh-glazecalc/c9e2de23-6bd0-4c08-9910-8c09a9678344/scratchpad/';
-const WIN = 'C:\\Users\\bellows\\AppData\\Local\\Temp\\claude\\C--Users-bellows-gh-glazecalc\\c9e2de23-6bd0-4c08-9910-8c09a9678344\\scratchpad\\';
+const S =
+  'C:/Users/bellows/AppData/Local/Temp/claude/C--Users-bellows-gh-glazecalc/c9e2de23-6bd0-4c08-9910-8c09a9678344/scratchpad/';
+const WIN =
+  'C:\\Users\\bellows\\AppData\\Local\\Temp\\claude\\C--Users-bellows-gh-glazecalc\\c9e2de23-6bd0-4c08-9910-8c09a9678344\\scratchpad\\';
 let t = fs.readFileSync(S + 'translation-review-prompt.md', 'utf8');
 const rep = (a, b) => {
   if (!t.includes(a)) throw new Error('missing: ' + a.slice(0, 60));

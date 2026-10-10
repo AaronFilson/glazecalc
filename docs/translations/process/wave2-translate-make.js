@@ -1,6 +1,7 @@
 // One translation prompt per language and part (wave 2).
 const fs = require('fs');
-const S = 'C:/Users/bellows/AppData/Local/Temp/claude/C--Users-bellows-gh-glazecalc/c9e2de23-6bd0-4c08-9910-8c09a9678344/scratchpad/';
+const S =
+  'C:/Users/bellows/AppData/Local/Temp/claude/C--Users-bellows-gh-glazecalc/c9e2de23-6bd0-4c08-9910-8c09a9678344/scratchpad/';
 const CHUNKS =
   'C:\\Users\\bellows\\AppData\\Local\\Temp\\claude\\C--Users-bellows-gh-glazecalc\\c9e2de23-6bd0-4c08-9910-8c09a9678344\\scratchpad\\wave2-chunks.md';
 let t = fs.readFileSync(S + 'translate-prompt.md', 'utf8');
@@ -24,7 +25,17 @@ What the reviews of the languages done before yours found, to get right the firs
 if (!t.includes('What the reviews of the languages done before yours found')) throw new Error('lessons not added');
 if (!t.includes('{FILES}')) throw new Error('no FILES');
 fs.writeFileSync(S + 'wave2-translate-prompt.md', t);
-const PARTS = ['app', 'parts', 'recipe', 'records', 'glazing-basics', 'making-a-glaze', 'safe-mixing', 'home-safety', 'firing'];
+const PARTS = [
+  'app',
+  'parts',
+  'recipe',
+  'records',
+  'glazing-basics',
+  'making-a-glaze',
+  'safe-mixing',
+  'home-safety',
+  'firing'
+];
 const L = {
   nl: ['Dutch', 'the Netherlands and Flanders'],
   ro: ['Romanian', 'Romania'],

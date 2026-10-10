@@ -6,7 +6,8 @@
 const fs = require('fs');
 const ROOT = 'C:/Users/bellows/gh/glazecalc/';
 const I18N = ROOT + 'client/public/i18n/';
-const OUT = 'C:/Users/bellows/AppData/Local/Temp/claude/C--Users-bellows-gh-glazecalc/c9e2de23-6bd0-4c08-9910-8c09a9678344/scratchpad/backtranslation/';
+const OUT =
+  'C:/Users/bellows/AppData/Local/Temp/claude/C--Users-bellows-gh-glazecalc/c9e2de23-6bd0-4c08-9910-8c09a9678344/scratchpad/backtranslation/';
 const { textKey } = require(ROOT + 'lib/regions/languages.js');
 const code = process.argv[2];
 if (!code) throw new Error('language code?');
@@ -40,9 +41,15 @@ for (const file of ['materials', 'additives']) {
     if (line.trim() && JSON.parse(line).hazards) hazards.add(textKey(JSON.parse(line).hazards));
   }
 }
-add('records', keysOf('records').filter((key) => hazards.has(key)));
+add(
+  'records',
+  keysOf('records').filter((key) => hazards.has(key))
+);
 // The lead setting, the recipe's lead and safety checks, and the guides' who to call, silica and food limits.
-add('account', keysOf('account').filter((key) => key.startsWith('settings.lead.')));
+add(
+  'account',
+  keysOf('account').filter((key) => key.startsWith('settings.lead.'))
+);
 const recipeEn = flat(load('recipe', 'en'));
 const safetyWords = /lead|food|leach|toxic|poison|dust|safe|respirator|hazard|fluorine|barium|lithium/i;
 add(
@@ -53,7 +60,10 @@ add(
       ((key.startsWith('checks.') || key.startsWith('page.')) && safetyWords.test(recipeEn[key] || ''))
   )
 );
-add('guides', keysOf('guides').filter((key) => /^(poison|silica|food)\./.test(key)));
+add(
+  'guides',
+  keysOf('guides').filter((key) => /^(poison|silica|food)\./.test(key))
+);
 
 fs.mkdirSync(OUT, { recursive: true });
 fs.writeFileSync(OUT + code + '-warnings-source.json', JSON.stringify(source, null, 1) + '\n');
