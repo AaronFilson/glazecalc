@@ -262,6 +262,16 @@ describe('message checks', () => {
       expect(update().changes).to.eql(['guides/firing de cones: fingerprinted with its English']);
     });
 
+    it('counts the plainer notice as still in English only in the languages that show it', () => {
+      const english = { nav: { menu: 'Menu', help: 'Help' }, notice: { plain: 'Translated by AI, less well.' } };
+      writeFileSync(path.join(dir, 'en.json'), JSON.stringify(english));
+      writeFileSync(path.join(dir, 'ga.json'), JSON.stringify({ nav: { menu: 'Roghchlár', help: 'Cabhair' } }));
+      writeFileSync(path.join(dir, 'records', 'ga.json'), JSON.stringify({ 'toxic-1a': 'Tocsaineach.' }));
+      const { inEnglish } = update();
+      expect(inEnglish.de!.messages).to.equal(0);
+      expect(inEnglish.ga!.messages).to.equal(1);
+    });
+
     it('shows a section new in the English in English, and drops one it no longer has', () => {
       update();
       const english = guide('Cones bend.', 'It trips.').replace('## Sitter {#sitter}', '## Switch {#switch}');

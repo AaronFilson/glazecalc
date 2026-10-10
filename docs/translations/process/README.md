@@ -46,18 +46,16 @@ the sessions that wrote them.
 parts first, interleaving the next language's translations with the last one's reviews. A log in the scratch folder
 (as `wave3-log.md`) keeps the queue and what each agent reported.
 
-## Wave 4: Irish and Maltese (not started)
+## Wave 4: Irish and Maltese
 
-Decide first, with the owner (docs/i18n-plan.md, "The plan, reviewed critically", point 2): translate them, or leave
-them in English with their region data only. Over 90% of Irish and Maltese respondents read English, and machine
-translation is weakest for them.
+The owner chose to translate both (2026-10-10; docs/i18n-plan.md, "The plan, reviewed critically", point 2). Over 90%
+of Irish and Maltese respondents read English, and machine translation is weakest for them, so:
 
-If they are translated:
-
-- **The plainer notice** the plan promises them ("their notice says so more plainly"): today every translated page
-  shows the same `notice` messages (client/public/i18n/en.json `notice`). Irish and Maltese need a variant that says
-  plainly the translation is machine-made and the English may read better, with the link to it. That is a code and
-  message change before go-live, with a test.
+- **The plainer notice** the plan promises them ("their notice says so more plainly"): `plainNotice: true` in
+  lib/regions/languages.js shows `notice.plain` (AI handles this language less well than most; the English page may
+  read better) and, once closed, `notice.plainBrief` on every page, not only on the safety guides. Settings says so
+  (`account.settings.notice.hidden.savedPlain`). Only these languages translate the three messages; the others do
+  not count them as still in English (scripts/i18n-fingerprints.mjs).
 - **Glossaries:** Irish ceramics vocabulary is thin (téarma.ie has much of it); Maltese draws on Italian and English
   loanwords, and the glossary must say which the Maltese potter uses. Irish has five plural categories in CLDR
   (one, two, few, many, other) and initial mutations after the article and numbers; Maltese has its own five

@@ -226,4 +226,19 @@ describe('SettingsSection', () => {
       expect(fixture.nativeElement.querySelector('#notice-hidden')).not.toBeNull();
     });
   });
+
+  it('says a line of the notice stays on every page in a language AI translates less well', async () => {
+    TestBed.overrideProvider(PAGE_LANGUAGE, { useValue: 'ga' });
+    TestBed.overrideProvider(OFFERED_LANGUAGES, { useValue: ['en', 'ga'] });
+    const { fixture } = await create();
+    (fixture.nativeElement.querySelector('#notice-hidden') as HTMLInputElement).click();
+    await fixture.whenStable();
+    const req = httpMock().expectOne(API + '/preferences');
+    expect(req.request.body).toEqual({ notice: 'hidden' });
+    req.flush({ notice: 'hidden' });
+    await settle(fixture);
+    expect(text(fixture, '.settings-status')).toBe(
+      'Saved: the notice is hidden. A line of it stays at the top of each page.'
+    );
+  });
 });
