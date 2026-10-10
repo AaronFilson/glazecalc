@@ -80,7 +80,7 @@ De tabel geeft voor een zelfstaande kegel 6 {{2232 °F; 1222 °C}}, maar alleen 
 
 ## De kegeltabel {#cone-chart}
 
-Deze waarden komen uit de kegeltabel van Orton (©2001) voor zelfstaande kegels{{en: cones}}. Kies de kolom die past bij hoe snel uw oven over de laatste {{180 °F; 100 °C}} is gestegen. De vuistregel van Orton is de kolom {{270 °F/h; 150 °C/h}} voor een snelle stook, de kolom {{108 °F/h; 60 °C/h}} voor een gemiddelde en de kolom {{27 °F/h; 15 °C/h}} voor een langzame. Om een stooksnelheid uit te rekenen, deelt u de temperatuurstijging door het aantal uren dat die duurde: een oven die in 3 uur {{900 °F; 482 °C}} bereikt, stijgt met ongeveer {{300 °F/h; 167 °C/h}}.
+Deze waarden komen uit de kegeltabel van Orton (©2001) voor zelfstaande kegels{{en: cones}}. Kies de kolom die past bij hoe snel uw oven over de laatste {{180 °F; 100 °C}} is gestegen. De vuistregel van Orton is de kolom {{270 °F/h; 150 °C/h}} voor een snelle stook, de kolom {{108 °F/h; 60 °C/h}} voor een gemiddelde en de kolom {{27 °F/h; 15 °C/h}} voor een langzame. Om een stooksnelheid uit te rekenen, deelt u de temperatuurstijging door het aantal uren dat die duurde: een oven die in 3 uur {{900 °F; 500 °C}} stijgt, warmt op met ongeveer {{300 °F/h; 167 °C/h}}.
 
 Table: Zelfstaande Ortonkegels: de temperatuur waarbij elke kegel ombuigt, per stooksnelheid over de laatste {{180 °F; 100 °C}}
 Label: Kegeltabel van Orton
@@ -248,7 +248,7 @@ Bij een handbediende oven is het kijkgat uw enige directe signaal tijdens de sto
 
 ### Na de stook
 
-Orton leest het ombuigen af als een wijzerplaat. Een kegel die niet is omgebogen, wijst omhoog, naar 12 uur. Het eindpunt is 6 uur, de punt even hoog als de voet: het punt waarop de temperaturen in de tabel zijn gemeten. Tussen 4 uur en het moment dat de kegel de plaat raakt, is het verschil klein, “meestal 1 of 2 graden”.
+Orton leest het ombuigen af als een wijzerplaat. Een kegel die niet is omgebogen, wijst omhoog, naar 12 uur. Het eindpunt is een buiging van 90°, de punt even hoog als de voet, wat Orton de stand van 5 uur noemt: het punt waarop de temperaturen in de tabel zijn gemeten. Een kegel die de plaat raakt, staat op 6 uur; tussen 4 uur en het moment dat de kegel de plaat raakt, is het verschil klein, “meestal 1 of 2 graden”.
 
 Table: Een kegeldrietal aflezen na de stook (voorbeeld: kegels 5, 6 en 7 voor een glazuur voor kegel 6)
 Label: Een kegeldrietal aflezen

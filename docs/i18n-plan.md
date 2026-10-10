@@ -275,6 +275,20 @@ its commit. As in wave 1, with these additions:
   guidance for a respirator's seal, which a morning shave and an evening session do not. It now says shave shortly
   before you work, and every language says so.
 
+**Wave 3 done, 2026-10-10, on branch `i18n-wave3`:** Lithuanian, then Latvian, then Estonian, each tested in the
+browser on Windows and Linux before its commit, with at most six agents at a time. As in wave 2, with these additions:
+
+- **The legal texts are not always right.** The Latvian text of Directive 84/500/EEC gives the third category as
+  vessels of no more than three litres (as the Bulgarian does), and the Latvian and Estonian silica laws write
+  "inhalable" where the directive says respirable. The translations follow the English and explain the legal word
+  once; the hazard statements use the official Annex III wording of each language, read on EUR-Lex.
+- **Lessons carried forward as the wave ran.** "may not melt fully" made "may not melt at all" in two languages'
+  recipe checks: a rule for every prompt not yet started, and the 18 live languages checked (none had it). Others:
+  "ends of even SG" means the same SG, not a uniform one; "the parent rock is quartz" means it contains quartz.
+- **Two corrections to the English firing guide:** the cone's end point is a 90° bend, the 5 o'clock position, as
+  Orton's chart says (6 o'clock is a cone touching the shelf), and the worked rate divides the temperature climbed,
+  not the temperature reached. Every language says so.
+
 ### What Claude produces, per language
 
 - **A glossary of 150–250 terms**, built from the research notes and the suppliers' catalogues in that language, never

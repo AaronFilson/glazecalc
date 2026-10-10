@@ -80,7 +80,7 @@ Tabulā pašstāvošam konusam 6 norādīts {{2232 °F; 1222 °C}}, bet tikai ta
 
 ## Konusu tabula {#cone-chart}
 
-Šie skaitļi ņemti no Ortona pašstāvošo konusu{{en: cones}} tabulas (©2001). Izvēlieties kolonnu, kas atbilst tam, cik ātri jūsu krāsns temperatūra kāpa pēdējo {{180 °F; 100 °C}} laikā. Orton iesaka vienkāršu likumu: ātrai apdedzināšanai kolonna {{270 °F/h; 150 °C/h}}, vidējai – {{108 °F/h; 60 °C/h}}, lēnai – {{27 °F/h; 15 °C/h}}. Lai aprēķinātu ātrumu, daliet temperatūras pieaugumu ar stundām, kas tam bija vajadzīgas: krāsns, kas {{900 °F; 482 °C}} sasniedz 3 stundās, sildās ar ātrumu apmēram {{300 °F/h; 167 °C/h}}.
+Šie skaitļi ņemti no Ortona pašstāvošo konusu{{en: cones}} tabulas (©2001). Izvēlieties kolonnu, kas atbilst tam, cik ātri jūsu krāsns temperatūra kāpa pēdējo {{180 °F; 100 °C}} laikā. Orton iesaka vienkāršu likumu: ātrai apdedzināšanai kolonna {{270 °F/h; 150 °C/h}}, vidējai – {{108 °F/h; 60 °C/h}}, lēnai – {{27 °F/h; 15 °C/h}}. Lai aprēķinātu ātrumu, daliet temperatūras pieaugumu ar stundām, kas tam bija vajadzīgas: krāsns, kuras temperatūra 3 stundās kāpj par {{900 °F; 500 °C}}, sildās ar ātrumu apmēram {{300 °F/h; 167 °C/h}}.
 
 Table: Ortona pašstāvošie konusi: temperatūra, kurā katrs saliecas, atkarībā no sildīšanas ātruma pēdējo {{180 °F; 100 °C}} laikā
 Label: Ortona konusu tabula
@@ -248,7 +248,7 @@ Manuāli vadāmā krāsnī skatlodziņš ir vienīgais signāls reāllaikā, tā
 
 ### Pēc apdedzināšanas
 
-Orton liekumu nolasa kā pulksteņa ciparnīcu. Nesaliecies konuss rāda uz augšu, pulksten 12 pozīcijā. Beigu punkts ir pulksten 6 pozīcija, kad smaile ir pamatnes līmenī: tas ir punkts, kurā mērītas tabulas temperatūras. Starp pulksten 4 pozīciju un brīdi, kad konuss pieskaras plauktam, atšķirība ir maza, “parasti 1 vai 2 grādi”.
+Orton liekumu nolasa kā pulksteņa ciparnīcu. Nesaliecies konuss rāda uz augšu, pulksten 12 pozīcijā. Beigu punkts ir 90° liekums, kad smaile ir pamatnes līmenī, ko Orton sauc par pulksten 5 pozīciju: tas ir punkts, kurā mērītas tabulas temperatūras. Konuss, kas pieskaras plauktam, ir pulksten 6 pozīcijā; starp pulksten 4 pozīciju un brīdi, kad konuss pieskaras plauktam, atšķirība ir maza, “parasti 1 vai 2 grādi”.
 
 Table: Konusu komplekta nolasīšana pēc apdedzināšanas (piemērs: konusi 5, 6 un 7 glazūrai līdz konusam 6)
 Label: Konusu komplekta nolasīšana

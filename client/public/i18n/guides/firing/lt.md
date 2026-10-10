@@ -80,7 +80,7 @@ Lentelėje savaime stovinčio piroskopo 6 temperatūra nurodyta {{2232 °F; 1222
 
 ## Piroskopų lentelė {#cone-chart}
 
-Šie skaičiai paimti iš Ortono savaime stovinčių piroskopų{{en: cones}} lentelės (©2001). Pasirinkite stulpelį, atitinkantį, kaip greitai jūsų krosnis kaito per paskutinius {{180 °F; 100 °C}}. Pagal apytikslę Ortono taisyklę greitam degimui tinka {{270 °F/h; 150 °C/h}} stulpelis, vidutiniam – {{108 °F/h; 60 °C/h}}, o lėtam – {{27 °F/h; 15 °C/h}}. Spartai apskaičiuoti padalykite pakilusius laipsnius iš tam prireikusių valandų: krosnis, kuri iki {{900 °F; 482 °C}} įkaista per 3 valandas, kaista maždaug {{300 °F/h; 167 °C/h}} sparta.
+Šie skaičiai paimti iš Ortono savaime stovinčių piroskopų{{en: cones}} lentelės (©2001). Pasirinkite stulpelį, atitinkantį, kaip greitai jūsų krosnis kaito per paskutinius {{180 °F; 100 °C}}. Pagal apytikslę Ortono taisyklę greitam degimui tinka {{270 °F/h; 150 °C/h}} stulpelis, vidutiniam – {{108 °F/h; 60 °C/h}}, o lėtam – {{27 °F/h; 15 °C/h}}. Spartai apskaičiuoti padalykite pakilusius laipsnius iš tam prireikusių valandų: krosnis, kurios temperatūra per 3 valandas pakyla {{900 °F; 500 °C}}, kaista maždaug {{300 °F/h; 167 °C/h}} sparta.
 
 Table: Ortono savaime stovintys piroskopai: temperatūra, kurioje kiekvienas sulinksta, pagal kaitinimo spartą per paskutinius {{180 °F; 100 °C}}
 Label: Ortono piroskopų lentelė
@@ -248,7 +248,7 @@ Rankinio valdymo krosnyje stebėjimo anga – vienintelis signalas realiuoju lai
 
 ### Po degimo
 
-Ortonas linkimą vertina kaip laikrodžio ciferblatą. Nesulinkęs piroskopas rodo aukštyn, į 12 valandos padėtį. Galutinis taškas – 6 valandos padėtis, kai viršūnė yra viename lygyje su pagrindu: būtent ties šiuo tašku išmatuotos lentelės temperatūros. Tarp 4 valandos padėties ir prisilietimo prie plokštės skirtumas mažas, „paprastai 1 ar 2 laipsniai“.
+Ortonas linkimą vertina kaip laikrodžio ciferblatą. Nesulinkęs piroskopas rodo aukštyn, į 12 valandos padėtį. Galutinis taškas – sulinkimas 90° kampu, kai viršūnė yra viename lygyje su pagrindu, Ortono vadinamas 5 valandos padėtimi: būtent ties šiuo tašku išmatuotos lentelės temperatūros. Prie plokštės prisilietęs piroskopas yra 6 valandos padėtyje; tarp 4 valandos padėties ir prisilietimo prie plokštės skirtumas mažas, „paprastai 1 ar 2 laipsniai“.
 
 Table: Piroskopų rinkinio vertinimas po degimo (pavyzdys: piroskopai 5, 6 ir 7 glazūrai piroskopui 6)
 Label: Rinkinio vertinimas

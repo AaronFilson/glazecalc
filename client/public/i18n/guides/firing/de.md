@@ -80,7 +80,7 @@ Die Kegeltabelle gibt für einen selbststehenden Kegel 6 {{2232 °F; 1222 °C}} 
 
 ## Die Kegeltabelle {#cone-chart}
 
-Diese Werte stammen aus Ortons Kegeltabelle (©2001) für selbststehende Kegel{{en: cones}}. Wählen Sie die Spalte, die dazu passt, wie schnell Ihr Ofen in den letzten {{180 °F; 100 °C}} gestiegen ist. Ortons Faustregel: die Spalte {{270 °F/h; 150 °C/h}} für einen schnellen Brand, die Spalte {{108 °F/h; 60 °C/h}} für einen mittleren und die Spalte {{27 °F/h; 15 °C/h}} für einen langsamen. Um eine Heizrate zu berechnen, teilen Sie den Temperaturanstieg durch die Stunden, die er gedauert hat: Ein Ofen, der in 3 Stunden {{900 °F; 482 °C}} erreicht, heizt mit etwa {{300 °F/h; 167 °C/h}}.
+Diese Werte stammen aus Ortons Kegeltabelle (©2001) für selbststehende Kegel{{en: cones}}. Wählen Sie die Spalte, die dazu passt, wie schnell Ihr Ofen in den letzten {{180 °F; 100 °C}} gestiegen ist. Ortons Faustregel: die Spalte {{270 °F/h; 150 °C/h}} für einen schnellen Brand, die Spalte {{108 °F/h; 60 °C/h}} für einen mittleren und die Spalte {{27 °F/h; 15 °C/h}} für einen langsamen. Um eine Heizrate zu berechnen, teilen Sie den Temperaturanstieg durch die Stunden, die er gedauert hat: Ein Ofen, der in 3 Stunden um {{900 °F; 500 °C}} steigt, heizt mit etwa {{300 °F/h; 167 °C/h}}.
 
 Table: Selbststehende Ortonkegel: die Temperatur, bei der sich jeder umbiegt, nach Heizrate in den letzten {{180 °F; 100 °C}}
 Label: Orton-Kegeltabelle
@@ -248,7 +248,7 @@ An einem handgeschalteten Ofen ist das Schauloch Ihr einziges Signal während de
 
 ### Nach dem Brand
 
-Orton liest die Biegung wie ein Zifferblatt. Ein ungebogener Kegel zeigt nach oben, auf 12 Uhr. Der Endpunkt ist 6 Uhr, die Spitze auf gleicher Höhe mit dem Fuß: der Punkt, für den die Temperaturen der Tabelle gemessen sind. Zwischen 4 Uhr und dem Berühren der Platte ist der Unterschied klein, „meist 1 oder 2 Grad“.
+Orton liest die Biegung wie ein Zifferblatt. Ein ungebogener Kegel zeigt nach oben, auf 12 Uhr. Der Endpunkt ist eine Biegung um 90°, die Spitze auf gleicher Höhe mit dem Fuß, von Orton die 5-Uhr-Stellung genannt: der Punkt, für den die Temperaturen der Tabelle gemessen sind. Ein Kegel, der die Platte berührt, steht auf 6 Uhr; zwischen 4 Uhr und dem Berühren der Platte ist der Unterschied klein, „meist 1 oder 2 Grad“.
 
 Table: Einen Kegelsatz nach dem Brand ablesen (Beispiel: Kegel 5, 6 und 7 für einen Glasurbrand auf Kegel 6)
 Label: Kegelsatz ablesen

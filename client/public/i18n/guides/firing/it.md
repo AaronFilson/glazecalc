@@ -80,7 +80,7 @@ La tabella dà per un cono 6 autoportante {{2232 °F; 1222 °C}}, ma solo se neg
 
 ## La tabella dei coni {#cone-chart}
 
-Questi valori vengono dalla tabella dei coni{{en: cone chart}} di Orton (©2001) per i coni autoportanti. Scegliere la colonna che corrisponde alla velocità con cui il forno è salito negli ultimi {{180 °F; 100 °C}}. La regola pratica di Orton è la colonna {{270 °F/h; 150 °C/h}} per una cottura veloce, la colonna {{108 °F/h; 60 °C/h}} per una media e la colonna {{27 °F/h; 15 °C/h}} per una lenta. Per calcolare una velocità, dividere i gradi saliti per le ore impiegate: un forno che raggiunge {{900 °F; 482 °C}} in 3 ore si riscalda a circa {{300 °F/h; 167 °C/h}}.
+Questi valori vengono dalla tabella dei coni{{en: cone chart}} di Orton (©2001) per i coni autoportanti. Scegliere la colonna che corrisponde alla velocità con cui il forno è salito negli ultimi {{180 °F; 100 °C}}. La regola pratica di Orton è la colonna {{270 °F/h; 150 °C/h}} per una cottura veloce, la colonna {{108 °F/h; 60 °C/h}} per una media e la colonna {{27 °F/h; 15 °C/h}} per una lenta. Per calcolare una velocità, dividere i gradi saliti per le ore impiegate: un forno che sale di {{900 °F; 500 °C}} in 3 ore si riscalda a circa {{300 °F/h; 167 °C/h}}.
 
 Table: Coni autoportanti Orton: la temperatura alla quale si piega ciascuno, secondo la velocità di riscaldamento negli ultimi {{180 °F; 100 °C}}
 Label: Tabella dei coni Orton
@@ -248,7 +248,7 @@ In un forno manuale lo spioncino è l’unico segnale in tempo reale, ed è per 
 
 ### Dopo la cottura
 
-Orton legge la piegatura come il quadrante di un orologio. Un cono non piegato punta in alto, a ore 12. Il punto finale è a ore 6, con la punta all’altezza della base: il punto a cui sono misurate le temperature della tabella. Tra la posizione a ore 4 e il contatto con la piastra la differenza è piccola, «di solito 1 o 2 gradi».
+Orton legge la piegatura come il quadrante di un orologio. Un cono non piegato punta in alto, a ore 12. Il punto finale è una piegatura di 90°, con la punta all’altezza della base, che Orton chiama la posizione a ore 5: il punto a cui sono misurate le temperature della tabella. Un cono che tocca la piastra è a ore 6; tra la posizione a ore 4 e il contatto con la piastra la differenza è piccola, «di solito 1 o 2 gradi».
 
 Table: Leggere una terna di coni dopo la cottura (esempio: coni 5, 6 e 7 per uno smalto per cono 6)
 Label: Leggere una terna di coni

@@ -80,7 +80,7 @@ Kägeltabellen anger {{2232 °F; 1222 °C}} för en självstående kägla 6, men
 
 ## Kägeltabellen {#cone-chart}
 
-Siffrorna kommer från Ortons kägeltabell (©2001) för självstående käglor{{en: cones}}. Välj den kolumn som motsvarar hur snabbt ugnen steg under de sista {{180 °F; 100 °C}}. Ortons tumregel är kolumnen {{270 °F/h; 150 °C/h}} för en snabb bränning, kolumnen {{108 °F/h; 60 °C/h}} för en medelsnabb och kolumnen {{27 °F/h; 15 °C/h}} för en långsam. Räkna ut stigningen genom att dela temperaturökningen med antalet timmar den tog: en ugn som når {{900 °F; 482 °C}} på 3 timmar stiger med ungefär {{300 °F/h; 167 °C/h}}.
+Siffrorna kommer från Ortons kägeltabell (©2001) för självstående käglor{{en: cones}}. Välj den kolumn som motsvarar hur snabbt ugnen steg under de sista {{180 °F; 100 °C}}. Ortons tumregel är kolumnen {{270 °F/h; 150 °C/h}} för en snabb bränning, kolumnen {{108 °F/h; 60 °C/h}} för en medelsnabb och kolumnen {{27 °F/h; 15 °C/h}} för en långsam. Räkna ut stigningen genom att dela temperaturökningen med antalet timmar den tog: en ugn som stiger {{900 °F; 500 °C}} på 3 timmar har en stigning på ungefär {{300 °F/h; 167 °C/h}}.
 
 Table: Ortons självstående käglor: temperaturen där varje kägla böjer sig, efter stigning under de sista {{180 °F; 100 °C}}
 Label: Ortons kägeltabell
@@ -248,7 +248,7 @@ På en ugn utan automatik är titthålet den enda signalen i realtid, och därf�
 
 ### Efter bränningen
 
-Orton läser böjningen som en urtavla. En oböjd kägla pekar uppåt, mot klockan 12. Slutpunkten är klockan 6, med spetsen i höjd med foten: den punkt där tabellens temperaturer är mätta. Mellan klockan 4 och att spetsen nuddar ugnsplattan är skillnaden liten, ”vanligtvis 1 eller 2 grader”.
+Orton läser böjningen som en urtavla. En oböjd kägla pekar uppåt, mot klockan 12. Slutpunkten är en böjning på 90°, med spetsen i höjd med foten, vilket Orton kallar läget klockan 5: den punkt där tabellens temperaturer är mätta. En kägla som nuddar ugnsplattan är vid klockan 6; mellan klockan 4 och att spetsen nuddar ugnsplattan är skillnaden liten, ”vanligtvis 1 eller 2 grader”.
 
 Table: Läsa av en kägelsats efter bränningen (exempel: käglorna 5, 6 och 7 för en glasyr för kägla 6)
 Label: Läsa av en kägelsats

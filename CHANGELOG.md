@@ -46,6 +46,9 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 - **In Estonian, Latvian and Lithuanian**, the third wave, made the same way. The reviews' lessons went into the prompts as
   the wave ran: "may not melt fully" is not "may not melt at all", a rule a translation of the recipe
   checks had broken.
+- **The firing guide's cone end point** is a 90° bend, the 5 o'clock position, as Orton's chart says (it
+  said 6 o'clock, a cone touching the shelf), and its worked heating rate divides the temperature climbed. In every
+  language.
 - **Ready for other languages** ([ADR 13](docs/adr/0013-translations.md),
   [how to write text](docs/translating.md)). Every piece of text the app shows now comes from a
   messages file, in ICU MessageFormat through Transloco, so a language is added by translating

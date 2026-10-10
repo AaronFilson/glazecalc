@@ -80,7 +80,7 @@ Tabela podaje dla samonośnego stożka 6 temperaturę {{2232 °F; 1222 °C}}, al
 
 ## Tabela stożków {#cone-chart}
 
-Te dane pochodzą z tabeli stożków Ortona (©2001) dla stożków samonośnych. Należy wybrać kolumnę odpowiadającą temu, jak szybko rosła temperatura w piecu w ostatnich {{180 °F; 100 °C}}. Praktyczna zasada Ortona: kolumna {{270 °F/h; 150 °C/h}} dla szybkiego wypału, kolumna {{108 °F/h; 60 °C/h}} dla średniego i kolumna {{27 °F/h; 15 °C/h}} dla wolnego. Aby obliczyć szybkość grzania, należy podzielić wzrost temperatury przez liczbę godzin, które zajął: piec, który osiąga {{900 °F; 482 °C}} w 3 godziny, grzeje w tempie około {{300 °F/h; 167 °C/h}}.
+Te dane pochodzą z tabeli stożków Ortona (©2001) dla stożków samonośnych. Należy wybrać kolumnę odpowiadającą temu, jak szybko rosła temperatura w piecu w ostatnich {{180 °F; 100 °C}}. Praktyczna zasada Ortona: kolumna {{270 °F/h; 150 °C/h}} dla szybkiego wypału, kolumna {{108 °F/h; 60 °C/h}} dla średniego i kolumna {{27 °F/h; 15 °C/h}} dla wolnego. Aby obliczyć szybkość grzania, należy podzielić wzrost temperatury przez liczbę godzin, które zajął: piec, w którym temperatura wzrasta o {{900 °F; 500 °C}} w 3 godziny, grzeje w tempie około {{300 °F/h; 167 °C/h}}.
 
 Table: Stożki samonośne Ortona: temperatura, w której zgina się każdy z nich, według szybkości grzania w ostatnich {{180 °F; 100 °C}}
 Label: Tabela stożków Ortona
@@ -248,7 +248,7 @@ W piecu sterowanym ręcznie wziernik jest jedynym źródłem bieżącej informac
 
 ### Po wypale
 
-Orton odczytuje zgięcie jak tarczę zegara. Niezgięty stożek wskazuje w górę, na godzinę 12. Punkt końcowy to godzina 6, czubek na wysokości podstawy: w tym punkcie mierzy się temperatury z tabeli. Między godziną 4 a dotknięciem płyty różnica jest niewielka, „zwykle 1 lub 2 stopnie”.
+Orton odczytuje zgięcie jak tarczę zegara. Niezgięty stożek wskazuje w górę, na godzinę 12. Punkt końcowy to zgięcie o 90°, czubek na wysokości podstawy, które Orton nazywa pozycją na godzinie 5: w tym punkcie mierzy się temperatury z tabeli. Stożek dotykający płyty jest na godzinie 6; między godziną 4 a dotknięciem płyty różnica jest niewielka, „zwykle 1 lub 2 stopnie”.
 
 Table: Odczyt zestawu stożków po wypale (przykład: stożki 5, 6 i 7 dla szkliwa na stożek 6)
 Label: Odczyt zestawu stożków

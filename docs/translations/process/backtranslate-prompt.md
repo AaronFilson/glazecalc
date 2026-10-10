@@ -5,7 +5,8 @@ Ground rules:
 - Do not run git commands that change anything (no add, commit, checkout, stash, reset, restore).
 - Edit only the translation text named under "What to check". Other agents are working on other files at the same time; never edit an English file.
 - In Git Bash, Node is on PATH after `export PATH="/c/nvm4w/nodejs:$PATH"`.
-- Write your scratch files only in C:\Users\bellows\AppData\Local\Temp\claude\C--Users-bellows-gh-glazecalc\c9e2de23-6bd0-4c08-9910-8c09a9678344\scratchpad\backtranslation\ (create it if needed), named {CODE}-{PART}-….
+- Never put the user's name, email address or other personal details in a web request (headers such as User-Agent, URLs, form data).
+- Write your scratch files only in C:\Users\bellows\AppData\Local\Temp\claude\C--Users-bellows-gh-glazecalc\fe37625a-51db-4239-bee8-4e00779ae983\scratchpad\backtranslation\ (create it if needed), named {CODE}-{PART}-….
 
 What to check:
 {WHAT}

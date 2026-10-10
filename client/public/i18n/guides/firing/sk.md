@@ -80,7 +80,7 @@ Tabuľka uvádza pre samostojný kužeľ 6 teplotu {{2232 °F; 1222 °C}}, ale l
 
 ## Tabuľka kužeľov {#cone-chart}
 
-Tieto údaje sú z Ortonovej tabuľky kužeľov (©2001) pre samostojné kužele{{en: cones}}. Vyberte stĺpec, ktorý zodpovedá tomu, ako rýchlo teplota vo vašej peci stúpala počas posledných {{180 °F; 100 °C}}. Podľa Ortonovho orientačného pravidla platí stĺpec {{270 °F/h; 150 °C/h}} pre rýchly výpal, stĺpec {{108 °F/h; 60 °C/h}} pre stredný a stĺpec {{27 °F/h; 15 °C/h}} pre pomalý. Rýchlosť vypočítate tak, že nárast teploty vydelíte počtom hodín, ktoré trval: pec, ktorá dosiahne {{900 °F; 482 °C}} za 3 hodiny, sa ohrieva rýchlosťou asi {{300 °F/h; 167 °C/h}}.
+Tieto údaje sú z Ortonovej tabuľky kužeľov (©2001) pre samostojné kužele{{en: cones}}. Vyberte stĺpec, ktorý zodpovedá tomu, ako rýchlo teplota vo vašej peci stúpala počas posledných {{180 °F; 100 °C}}. Podľa Ortonovho orientačného pravidla platí stĺpec {{270 °F/h; 150 °C/h}} pre rýchly výpal, stĺpec {{108 °F/h; 60 °C/h}} pre stredný a stĺpec {{27 °F/h; 15 °C/h}} pre pomalý. Rýchlosť vypočítate tak, že nárast teploty vydelíte počtom hodín, ktoré trval: pec, ktorej teplota stúpne o {{900 °F; 500 °C}} za 3 hodiny, sa ohrieva rýchlosťou asi {{300 °F/h; 167 °C/h}}.
 
 Table: Ortonove samostojné kužele: teplota, pri ktorej sa každý ohne, podľa rýchlosti ohrevu počas posledných {{180 °F; 100 °C}}
 Label: Tabuľka Ortonových kužeľov
@@ -248,7 +248,7 @@ Pri peci bez regulátora (s ručným ovládaním) je kontrolný otvor jediným s
 
 ### Po výpale
 
-Orton číta ohnutie ako ciferník hodín. Neohnutý kužeľ smeruje nahor, na 12 hodín. Koncovým bodom je poloha na 6 hodín, keď je špička na úrovni základne: v tomto bode sa merajú teploty v tabuľke. Medzi polohou na 4 hodiny a dotykom s doskou je rozdiel malý, „zvyčajne 1 alebo 2 stupne“.
+Orton číta ohnutie ako ciferník hodín. Neohnutý kužeľ smeruje nahor, na 12 hodín. Koncovým bodom je ohnutie o 90°, keď je špička na úrovni základne, čo Orton nazýva polohou na 5 hodín: v tomto bode sa merajú teploty v tabuľke. Kužeľ, ktorý sa dotýka dosky, je v polohe na 6 hodín; medzi polohou na 4 hodiny a dotykom s doskou je rozdiel malý, „zvyčajne 1 alebo 2 stupne“.
 
 Table: Čítanie sady kužeľov po výpale (príklad: kužele 5, 6 a 7 pre glazúru na kužeľ 6)
 Label: Čítanie sady kužeľov

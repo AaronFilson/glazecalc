@@ -80,7 +80,7 @@ A táblázat szerint az önálló 6-os gúla {{2232 °F; 1222 °C}} hőmérsékl
 
 ## A gúlatáblázat {#cone-chart}
 
-Ezek az adatok az Orton önálló gúlákra{{en: cones}} vonatkozó gúlatáblázatából (©2001) származnak. Azt az oszlopot válassza, amelyik annak felel meg, milyen gyorsan emelkedett a kemencéje hőmérséklete az utolsó {{180 °F; 100 °C}} emelkedés során. Az Orton ökölszabálya: gyors égetéshez a {{270 °F/h; 150 °C/h}} oszlop, közepeshez a {{108 °F/h; 60 °C/h}} oszlop, lassúhoz a {{27 °F/h; 15 °C/h}} oszlop. A felfűtési sebesség kiszámításához ossza el a hőmérséklet-emelkedést az eltelt órák számával: az a kemence, amely 3 óra alatt ér el {{900 °F; 482 °C}} hőmérsékletet, körülbelül {{300 °F/h; 167 °C/h}} sebességgel fűt.
+Ezek az adatok az Orton önálló gúlákra{{en: cones}} vonatkozó gúlatáblázatából (©2001) származnak. Azt az oszlopot válassza, amelyik annak felel meg, milyen gyorsan emelkedett a kemencéje hőmérséklete az utolsó {{180 °F; 100 °C}} emelkedés során. Az Orton ökölszabálya: gyors égetéshez a {{270 °F/h; 150 °C/h}} oszlop, közepeshez a {{108 °F/h; 60 °C/h}} oszlop, lassúhoz a {{27 °F/h; 15 °C/h}} oszlop. A felfűtési sebesség kiszámításához ossza el a hőmérséklet-emelkedést az eltelt órák számával: az a kemence, amelynek hőmérséklete 3 óra alatt {{900 °F; 500 °C}} értékkel emelkedik, körülbelül {{300 °F/h; 167 °C/h}} sebességgel fűt.
 
 Table: Önálló Orton-gúlák: az egyes gúlák hajlási hőmérséklete az utolsó {{180 °F; 100 °C}} emelkedés felfűtési sebessége szerint
 Label: Orton-gúlatáblázat
@@ -248,7 +248,7 @@ Kézi kapcsolású kemencénél a kémlelőnyílás az egyetlen valós idejű je
 
 ### Égetés után
 
-Az Orton a hajlást óralapként olvassa le. A meg nem hajlott gúla felfelé mutat, 12 órás állásban. A végpont a 6 órás állás, amikor a csúcs egy szintben van a talppal: a táblázat hőmérsékletei erre a pontra vonatkoznak. A 4 órás állás és az égetőlap érintése között kicsi a különbség, „általában 1 vagy 2 fok”.
+Az Orton a hajlást óralapként olvassa le. A meg nem hajlott gúla felfelé mutat, 12 órás állásban. A végpont a 90°-os hajlás, amikor a csúcs egy szintben van a talppal, és amelyet az Orton 5 órás állásnak nevez: a táblázat hőmérsékletei erre a pontra vonatkoznak. Az égetőlapot érintő gúla 6 órás állásban van; a 4 órás állás és az égetőlap érintése között kicsi a különbség, „általában 1 vagy 2 fok”.
 
 Table: A gúlasor leolvasása égetés után (példa: 5-ös, 6-os és 7-es gúla egy 6-os gúlás mázhoz{{en: glaze}})
 Label: A gúlasor leolvasása

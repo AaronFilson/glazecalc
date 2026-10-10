@@ -80,7 +80,7 @@ Keilataulukko antaa itsestään seisovalle keilalle 6 lämpötilan {{2232 °F; 1
 
 ## Keilataulukko {#cone-chart}
 
-Nämä luvut ovat Ortonin keilataulukosta (©2001) itsestään seisoville keiloille{{en: cones}}. Valitse sarake sen mukaan, kuinka nopeasti uunin lämpötila nousi polton viimeiset {{180 °F; 100 °C}}. Ortonin nyrkkisääntö on sarake {{270 °F/h; 150 °C/h}} nopealle poltolle, sarake {{108 °F/h; 60 °C/h}} keskinopealle ja sarake {{27 °F/h; 15 °C/h}} hitaalle. Nousunopeus lasketaan jakamalla lämpötilan nousu siihen kuluneilla tunneilla: uuni, joka nousee lämpötilaan {{900 °F; 482 °C}} 3 tunnissa, lämpenee noin nopeudella {{300 °F/h; 167 °C/h}}.
+Nämä luvut ovat Ortonin keilataulukosta (©2001) itsestään seisoville keiloille{{en: cones}}. Valitse sarake sen mukaan, kuinka nopeasti uunin lämpötila nousi polton viimeiset {{180 °F; 100 °C}}. Ortonin nyrkkisääntö on sarake {{270 °F/h; 150 °C/h}} nopealle poltolle, sarake {{108 °F/h; 60 °C/h}} keskinopealle ja sarake {{27 °F/h; 15 °C/h}} hitaalle. Nousunopeus lasketaan jakamalla lämpötilan nousu siihen kuluneilla tunneilla: uuni, jonka lämpötila nousee 3 tunnissa {{900 °F; 500 °C}}, lämpenee noin nopeudella {{300 °F/h; 167 °C/h}}.
 
 Table: Ortonin itsestään seisovat keilat: lämpötila, jossa kukin taipuu, polton viimeisten {{180 °F; 100 °C}} nousunopeuden mukaan
 Label: Ortonin keilataulukko
@@ -248,7 +248,7 @@ Käsisäätöisessä uunissa tirkistysaukko on ainoa reaaliaikainen merkki, mink
 
 ### Polton jälkeen
 
-Orton lukee taipumaa kuin kellotaulua. Taipumaton keila osoittaa suoraan ylös, kello 12:een. Loppupiste on kello 6, jolloin kärki on pohjan tasolla: tässä pisteessä taulukon lämpötilat on mitattu. Kello 4:n asennon ja levyyn koskettamisen välillä ero on pieni, ”yleensä 1 tai 2 astetta”.
+Orton lukee taipumaa kuin kellotaulua. Taipumaton keila osoittaa suoraan ylös, kello 12:een. Loppupiste on 90°:n taipuma, jossa kärki on pohjan tasolla ja jota Orton kutsuu kello 5:n asennoksi: tässä pisteessä taulukon lämpötilat on mitattu. Levyyn koskettava keila on kello 6:ssa; kello 4:n asennon ja levyyn koskettamisen välillä ero on pieni, ”yleensä 1 tai 2 astetta”.
 
 Table: Keilasarjan lukeminen polton jälkeen (esimerkki: keilat 5, 6 ja 7 keilan 6 lasitteelle)
 Label: Keilasarjan lukeminen

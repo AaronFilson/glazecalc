@@ -80,7 +80,7 @@ A tabela dá para um cone 6 autossuportado {{2232 °F; 1222 °C}}, mas só quand
 
 ## A tabela de cones {#cone-chart}
 
-Estes valores vêm da tabela de cones Orton (©2001) para cones autossuportados. Escolha a coluna que corresponde à rapidez com que o seu forno subiu nos últimos {{180 °F; 100 °C}}. A regra prática da Orton é a coluna {{270 °F/h; 150 °C/h}} para uma cozedura rápida, a coluna {{108 °F/h; 60 °C/h}} para uma média e a coluna {{27 °F/h; 15 °C/h}} para uma lenta. Para calcular uma velocidade, divida a subida de temperatura pelas horas que demorou: um forno que chega a {{900 °F; 482 °C}} em 3 horas aquece a cerca de {{300 °F/h; 167 °C/h}}.
+Estes valores vêm da tabela de cones Orton (©2001) para cones autossuportados. Escolha a coluna que corresponde à rapidez com que o seu forno subiu nos últimos {{180 °F; 100 °C}}. A regra prática da Orton é a coluna {{270 °F/h; 150 °C/h}} para uma cozedura rápida, a coluna {{108 °F/h; 60 °C/h}} para uma média e a coluna {{27 °F/h; 15 °C/h}} para uma lenta. Para calcular uma velocidade, divida a subida de temperatura pelas horas que demorou: um forno que sobe {{900 °F; 500 °C}} em 3 horas aquece a cerca de {{300 °F/h; 167 °C/h}}.
 
 Table: Cones Orton autossuportados: a temperatura a que cada um dobra, por velocidade de aquecimento nos últimos {{180 °F; 100 °C}}
 Label: Tabela de cones Orton
@@ -248,7 +248,7 @@ Num forno manual, o óculo é o seu único sinal em tempo real; é por isso que 
 
 ### Depois da cozedura
 
-A Orton lê a dobragem como o mostrador de um relógio. Um cone por dobrar aponta para cima, para as 12 horas. O ponto final são as 6 horas, com a ponta ao nível da base: o ponto em que se medem as temperaturas da tabela. Entre as 4 horas e o momento em que toca na placa, a diferença é pequena, «normalmente 1 ou 2 graus».
+A Orton lê a dobragem como o mostrador de um relógio. Um cone por dobrar aponta para cima, para as 12 horas. O ponto final é uma dobragem de 90°, com a ponta ao nível da base, a que a Orton chama a posição das 5 horas: o ponto em que se medem as temperaturas da tabela. Um cone que toca na placa está nas 6 horas; entre as 4 horas e o momento em que toca na placa, a diferença é pequena, «normalmente 1 ou 2 graus».
 
 Table: Ler um conjunto de cones depois da cozedura (exemplo: cones 5, 6 e 7 num vidrado para cone 6)
 Label: Ler um conjunto de cones
