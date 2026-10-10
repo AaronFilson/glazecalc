@@ -1,0 +1,50 @@
+{
+  "common": {
+    "formulaHelp": "Sisestage valem tavaliste numbritega, näiteks {typed}: arvud kuvatakse alaindeksina, {shown}. Valemi osade ühendamiseks, nagu {joined}, kopeerige see punkt:",
+    "relatedTo": "Seotud:",
+    "notes": "Märkused:",
+    "loi": "Hõõgumiskadu (protsentides):",
+    "molecularWeight": "Valemi molaarmass põletamata kujul (kasutatakse ainult siis, kui hõõgumiskao väli on tühi):",
+    "formulaHeading": "Sisestage valem (põletatult):",
+    "oxideSelection": "Oksiidi valik",
+    "noOxide": "puudub",
+    "addOxide": "Lisa oksiid loendisse",
+    "formulaIn": "Valemi esitusviis:",
+    "percent": "Protsendid",
+    "molecular": "Moolid / Segeri valem",
+    "amount": "Kogus:",
+    "removeOxide": "Eemalda valemi loendist",
+    "save": "Salvesta",
+    "elements": "Keemilised elemendid",
+    "removeNote": "Salvestatud retseptidel on oma koopia, seega need ei muutu.",
+    "saveFailed": "Viga: päring serverile ebaõnnestus."
+  },
+  "material": {
+    "title": "Toorained",
+    "lead": "Teie oma toorained, sisestatud keemilise valemi või oksiidanalüüsina.",
+    "newHeading": "Uue tooraine andmed",
+    "name": "Tooraine nimi:",
+    "rawFormula": "Valem põletamata kujul:",
+    "weightsNote": "Ekvivalentmass ja mass põletatult arvutatakse salvestamisel valemi ja hõõgumiskao põhjal.",
+    "mineHeading": "Minu toorained:",
+    "rawFormulaColumn": "Valem põletamata kujul",
+    "standardHeading": "Standardsed toorained:",
+    "fetchFailed": "Toorainete andmete laadimisel tekkis viga.",
+    "standardFetchFailed": "Standardsete toorainete andmete laadimisel tekkis viga.",
+    "saved": "Õnnestus. Tooraine lisati andmebaasi."
+  },
+  "additive": {
+    "title": "Lisaained ja värvained",
+    "lead": "Värvained ja hägustajad, mida mõõdetakse põhiretseptile lisaks, näiteks koobaltoksiid või tinaoksiid. Retsept võib jätta need Segeri valemist (UMF) välja või arvestada need sisse.",
+    "newHeading": "Uue lisaaine andmed",
+    "name": "Lisaaine nimi:",
+    "formulaAsSold": "Valem müügikujul:",
+    "noChemistry": "Sellel puudub oksiidanalüüs, nagu tööstuslikul pigmendil: jäta see Segeri valemist välja",
+    "firedNote": "Sisestage, mida see annab glasuurile pärast põletamist: must koobaltoksiid, {asSold}, on põletatult {fired}, hõõgumiskaoga {loi}%. Siis saab retsept selle Segeri valemisse sisse arvestada.",
+    "mineHeading": "Minu lisaained ja värvained:",
+    "standardHeading": "Standardsed lisaained:",
+    "fetchFailed": "Lisaainete andmete laadimisel tekkis viga.",
+    "standardFetchFailed": "Standardsete lisaainete andmete laadimisel tekkis viga.",
+    "saved": "Õnnestus. Lisaaine lisati andmebaasi."
+  }
+}

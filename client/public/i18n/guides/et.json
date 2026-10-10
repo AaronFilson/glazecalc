@@ -1,0 +1,154 @@
+{
+  "version": {
+    "cones": "See juhend on kuvatud koonuste järgi põletamiseks, nagu on määratud sätetes.",
+    "temperature": "See juhend on kuvatud temperatuuri järgi põletamiseks, nagu on määratud sätetes.",
+    "showTemperature": "Näita temperatuuri järgi põletamiseks",
+    "showCones": "Näita koonuste järgi põletamiseks"
+  },
+  "notTranslated": "Seda juhendit ei ole veel tõlgitud, seega on see kuvatud inglise keeles.",
+  "sectionInEnglish": "See jaotis on pärast tõlkimist muutunud, seega on see kuvatud inglise keeles, kuni selle tõlge on ajakohastatud.",
+  "list": {
+    "title": "Juhendid",
+    "lead": "Lihtsas keeles juhendid algajatele keraamikutele: alates sellest, mis on glasuur, kuni selle põletamiseni, ning kuidas seejuures kõigi ohutus tagada.",
+    "note": "Need juhendid koondavad seda, mida avaldavad tootjad, ohutusasutused ja kogenud keraamikud, ning iga juhendi lõpus on selle allikad. Juhendid on lähtepunkt ega asenda teie toorainete ohutuskaarte, teie ahju kasutusjuhendit ega kohalikke eeskirju.",
+    "glazingBasics": {
+      "title": "Glasuurimise alused",
+      "text": "Mis on glasuur, kuidas see sulab, ja selgitus igale sõnale, mida retseptis või kotil kohtate."
+    },
+    "makingAGlaze": {
+      "title": "Glasuuri valmistamine",
+      "text": "Glasuuri ostmine, hoiustamine, kaalumine, segamine ja sõelumine, seejärel katsetamine ja märkmete pidamine."
+    },
+    "safeMixing": {
+      "title": "Ohutu segamine ja ventilatsioon",
+      "text": "Tolm, respiraatorid, koristamine, kõige rohkem ettevaatust nõudvad toorained ja ahju aurude väljajuhtimine."
+    },
+    "homeSafety": {
+      "title": "Ärge mürgitage oma peret",
+      "text": "Keraamika kodus laste ja lemmikloomadega: hoiustamine, tolm, ahi ja mida teha, kui midagi on alla neelatud."
+    },
+    "firing": {
+      "title": "Põletamine lihtsas keraamikaahjus",
+      "text": "Koonused, Kiln-Sitterid ja käsilülitid ning põletusprogrammid eel- ja glasuuripõletuseks."
+    }
+  },
+  "contents": "Sellel lehel",
+  "poison": {
+    "numbersFor": "Numbrid riigis:",
+    "choose": "Valige oma riik",
+    "label": "Kellele helistada (riik: {region})",
+    "caption": "Kellele helistada (riik: {region}; numbrid kontrollitud: {date})",
+    "for": "Olukord",
+    "call": "Telefon",
+    "notes": "Tööajad ja märkused",
+    "emergency": "Hädaolukord: teadvuseta, ei hinga, krambihoog",
+    "poisonAdvice": "{who, select, children {Mürgistusteave: {name} (ainult lastele)} other {Mürgistusteave: {name}}}",
+    "or": "või {number}",
+    "online": "Veebis: <link>{name}</link>.",
+    "poisonAdviceNone": "Mürgistusteave",
+    "noLine": "Avalikku mürgistusteabeliini ei õnnestunud siin kinnitada. Helistage oma arstile või kiireloomulisel juhul hädaabinumbrile.",
+    "medicalAdvice": "Tervisenõu: {name}",
+    "animals": "Loomad: {name}",
+    "animalsNone": "Loomad",
+    "vet": "Helistage oma loomaarstile.",
+    "checkedOn": "Kontrollitud:",
+    "choosePrompt": "Valige oma riik, et näha, kellele seal helistada.",
+    "ministry": "Tervishoiuministeeriumi leht: <link>{name}</link>."
+  },
+  "density": {
+    "sg": "suhteline tihedus {value}",
+    "baume": "{value} °Bé ({sg})",
+    "pint": "{value} oz Briti pindi kohta ({sg})"
+  },
+  "shops": {
+    "shopsIn": "Poed riigis:",
+    "label": "Poed: {region}",
+    "caption": "Mõned glasuuri tooraineid müüvad poed (riik: {region}; kontrollitud: {date})",
+    "nearbyCaption": "Mujal asuvad poed, mis teatavad, et tarnivad riiki {region} (kontrollitud: {date})",
+    "shop": "Pood",
+    "sells": "Müüb",
+    "packs": "Nähtud pakendisuurused",
+    "seen": "Nähtud toorained poe nimetustega",
+    "what": {
+      "materials": "glasuuri toorained",
+      "frits": "fritid",
+      "oxides": "oksiidid",
+      "stains": "pigmendid",
+      "clays": "savi",
+      "glazes": "valmisglasuurid",
+      "kilns": "keraamikaahjud"
+    },
+    "none": "Glasuuri tooraineid müüvat poodi ei leitud (riik: {region}).",
+    "unknown": "Poode ei ole veel otsitud (riik: {region}).",
+    "choosePrompt": "Valige oma riik, et näha seal asuvaid poode."
+  },
+  "silica": {
+    "limitIn": "Piirnorm riigis:",
+    "label": "Ränidioksiidi piirnorm (riik: {region})",
+    "caption": "Respireeritava kristallilise ränidioksiidi töökeskkonna piirnorm, 8 tunni keskmine (riik: {region}; kontrollitud: {date})",
+    "both": "Kvarts ja kristobaliit",
+    "quartz": "Kvarts",
+    "cristobalite": "Kristobaliit",
+    "actionLevel": "Rakendusväärtus",
+    "value": "{value} mg/m³",
+    "kind": {
+      "binding": "Siduv piirnorm.",
+      "indicative": "Soovituslik piirnorm: suunisväärtus, mitte seadusega kehtestatud ülempiir.",
+      "assessment": "Hindamiskriteerium, mitte siduv piirnorm."
+    },
+    "setBy": "Kehtestatud: <link>{law}</link>.",
+    "lowerThanEu": "Madalam kui EL-i siduv piirnorm {value} mg/m³.",
+    "sameAsEu": "Sama mis EL-i siduv piirnorm.",
+    "unknown": "Riiklikku piirnormi ei õnnestunud kinnitada (riik: {region}). EL-i siduv piirnorm {value} mg/m³ kehtib igas liikmesriigis.",
+    "noData": "Piirnormi ei ole veel kinnitatud (riik: {region}).",
+    "agency": "Riiklik tööohutusasutus: <link>{name}</link>.",
+    "agencySilica": "Asutuse <link>leht ränidioksiidi kohta</link>.",
+    "choosePrompt": "Valige oma riik, et näha selle piirnormi."
+  },
+  "food": {
+    "rulesIn": "Reeglid riigis:",
+    "label": "Keraamiliste esemete piirnormid (riik: {region})",
+    "caption": "Kui palju võib põletatud esemest seadusjärgses katses eralduda (riik: {region}; kontrollitud: {date})",
+    "article": "Eseme liik",
+    "lead": "Plii",
+    "cadmium": "Kaadmium",
+    "category": {
+      "flat": "Esemed, mida ei täideta, ja esemed, mille sisemine sügavus ei ületa 25 mm",
+      "fillable": "Kõik muud täidetavad esemed",
+      "cooking": "Toiduvalmistamisnõud (mis tahes suurusega) ning pakke- ja hoiuanumad, mille maht ületab 3 L",
+      "rimBand": "Joogianuma serv: 2 cm laiune vöönd seest ja väljast",
+      "rimArticle": "Joogianuma serv: 20 mm laiune vöönd ülaserva välisküljel, eseme kohta",
+      "flatware": "Lamedad nõud, sügavus kuni 25 mm",
+      "smallHollow": "Väikesed sügavad nõud, alla 1,1 L, v.a tassid ja kruusid",
+      "cups": "Tassid ja kruusid",
+      "largeHollow": "Suured sügavad nõud, 1,1 L või rohkem, v.a kannud",
+      "pitchers": "Kannud",
+      "auSmall": "Tassid, kruusid, kannud, kausid, teekannud ja muud lauanõud alla 1100 mL",
+      "auLarge": "Samad, 1100 mL või rohkem",
+      "auPlates": "Taldrikud, alustassid ja sarnased lauanõud",
+      "auCooking": "Toiduvalmistamisnõud"
+    },
+    "judged": {
+      "average": "6 eseme keskmine",
+      "each": "iga 6 esemest"
+    },
+    "euRules": "Siin kehtivad EL-i reeglid.",
+    "law": "Kehtestatud: <link>{law}</link>.",
+    "inForce": "Jõustumise kuupäev: {date}.",
+    "unknown": "Reegleid ei ole veel kinnitatud (riik: {region}).",
+    "choosePrompt": "Valige oma riik, et näha selle reegleid."
+  },
+  "equivalents": {
+    "buyingIn": "Ostmine riigis:",
+    "label": "{library, select, US {USA-s müüdavad vasted} UK {Ühendkuningriigis müüdavad vasted} EU {EL-is müüdavad vasted} other {Austraalias ja Uus-Meremaal müüdavad vasted}}",
+    "caption": "{library, select, US {Toorained, mida USA-s ei müüda, igaühe kõrval lähim seal müüdav} UK {Toorained, mida Ühendkuningriigis ei müüda, igaühe kõrval lähim seal müüdav} EU {Toorained, mida EL-is ei müüda, igaühe kõrval lähim seal müüdav} other {Toorained, mida Austraalias ja Uus-Meremaal ei müüda, igaühe kõrval lähim seal müüdav}}",
+    "material": "Retseptis",
+    "soldIn": "Müügil",
+    "closest": "{library, select, US {Lähim USA-s müüdav} UK {Lähim Ühendkuningriigis müüdav} EU {Lähim EL-is müüdav} other {Lähim Austraalias ja Uus-Meremaal müüdav}}",
+    "apart": "erinevus {grams} g/100 g",
+    "noneClose": "Midagi ei jää 15 g/100 g piiresse: võrrelge keemilise koostise järgi.",
+    "loading": "Teegi laadimine…",
+    "failed": "Teeki ei õnnestunud laadida. Proovige hiljem uuesti.",
+    "choosePrompt": "Valige oma riik, et näha, mida seal müüakse."
+  }
+}

@@ -222,6 +222,16 @@ export const RESET: Record<string, Email> = {
       'Saite darbojas vienu reizi. Ja to nepieprasījāt, neņemiet vērā šo vēstuli – Jūsu parole paliek tā pati.\n' +
       '\n' +
       '-- \nGlazecalc, {app}\n'
+  },
+  et: {
+    subject: 'Glazecalci parooli lähtestamine',
+    text:
+      'Keegi (loodetavasti teie) palus lähtestada Glazecalci konto {account} parooli.\n\n' +
+      'Uue parooli valimiseks avage see link {minutes} minuti jooksul:\n\n' +
+      '{link}\n\n' +
+      'Link töötab ühe korra. Kui te seda ei palunud, jätke see e-kiri tähelepanuta; teie parool jääb samaks.\n' +
+      '\n' +
+      '-- \nGlazecalc, {app}\n'
   }
 };
 
@@ -391,6 +401,14 @@ export const CHANGED: Record<string, Email> = {
     text:
       'Lietotnes Glazecalc konta {account} parole tikko ir nomainīta, un konts ir izrakstīts no visām ierīcēm, kurās tas bija pierakstīts.\n\n' +
       'Ja to izdarījāt Jūs, nekas cits nav jādara. Ja ne, nekavējoties atiestatiet paroli šeit: {forgot}\n' +
+      '\n' +
+      '-- \nGlazecalc, {app}\n'
+  },
+  et: {
+    subject: 'Teie Glazecalci parool on muudetud',
+    text:
+      'Glazecalci konto {account} parool muudeti just praegu ja kõik seadmed, kus konto oli sisse logitud, on välja logitud.\n\n' +
+      'Kui see olite teie, ei pea te midagi muud tegema. Kui mitte, lähtestage parool kohe siin: {forgot}\n' +
       '\n' +
       '-- \nGlazecalc, {app}\n'
   }
