@@ -91,7 +91,7 @@ for (const code of codes) {
 const require = createRequire(import.meta.url);
 delete require.cache[languagesFile];
 const live = new Set([...(dry ? [] : require(languagesFile).LIVE_LANGUAGES), ...codes]);
-if (dry) for (const m of languages.matchAll(/^  language\('([^']+)'[^\n]*live: true/gm)) live.add(m[1]);
+if (dry) for (const m of languages.matchAll(/^ {2}language\('([^']+)'[^\n]*live: true/gm)) live.add(m[1]);
 const tmp = mkdtempSync(path.join(tmpdir(), 'golive-'));
 const copyI18n = tmp + '/i18n/';
 const copyPrints = tmp + '/prints/';
