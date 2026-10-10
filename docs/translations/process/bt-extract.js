@@ -1,13 +1,14 @@
-// The app's warnings in one language, for blind back-translation (wave 2):
-// backtranslation/<code>-warnings-source.json holds the translation only, keyed
-// "scope:key" (where each lives); <code>-warnings-english.json the English under
-// the same keys, opened only after. Keys are chosen from the English and the data.
-//   node wave2-bt-extract.js sk
+// The app's warnings in one language, for blind back-translation:
+// <scratch>/backtranslation/<code>-warnings-source.json holds the translation only,
+// keyed "scope:key" (where each lives); <code>-warnings-english.json the English
+// under the same keys, opened only after. Keys are chosen from the English and the
+// data. Run by make-bt-prompts.js.
+//   GLAZECALC_SCRATCH=... node bt-extract.js ga
 const fs = require('fs');
-const ROOT = 'C:/Users/bellows/gh/glazecalc/';
+const wave = require('./wave');
+const ROOT = wave.ROOT.replace(/\\/g, '/') + '/';
 const I18N = ROOT + 'client/public/i18n/';
-const OUT =
-  'C:/Users/bellows/AppData/Local/Temp/claude/C--Users-bellows-gh-glazecalc/c9e2de23-6bd0-4c08-9910-8c09a9678344/scratchpad/backtranslation/';
+const OUT = wave.SCRATCH + 'backtranslation/';
 const { textKey } = require(ROOT + 'lib/regions/languages.js');
 const code = process.argv[2];
 if (!code) throw new Error('language code?');
