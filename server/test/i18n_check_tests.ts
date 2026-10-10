@@ -67,6 +67,9 @@ describe('message checks', () => {
     expect(numbersIn('Fire to 1,222 °C at 1.5% for cone 06, then 6.', 'en')).to.eql(['06', '1.5 %', '1222 °C', '6']);
     expect(numbersIn('Bei 1.222 °C mit 1,5 % für Kegel 06, dann 6.', 'de')).to.eql(['06', '1.5 %', '1222 °C', '6']);
     expect(numbersIn('À 1\u202f222 °C avec 1,5 %.', 'fr')).to.eql(['1.5 %', '1222 °C']);
+    // Irish and Maltese write 1,222 and 1.5 as English does; 1.000 is one, to three places.
+    expect(numbersIn('Ag 1,222 °C le 1.5 % agus 1.000 RO.', 'ga')).to.eql(['1.000', '1.5 %', '1222 °C']);
+    expect(numbersIn('0.025 mg/m³', 'mt')).to.eql(numbersIn('0.025 mg/m³', 'en'));
     // A temperature is the same with its degree sign or without it.
     expect(numbersIn('1742 F (950 C), 40° F', 'en')).to.eql(numbersIn('1742 °F (950 °C), 40 °F', 'de'));
     // A clock time's hour with or without its leading zero; cone 06 keeps its.
