@@ -1,0 +1,50 @@
+{
+  "common": {
+    "formulaHelp": "Formulę rašykite paprastais skaitmenimis, pvz., {typed}: skaičiai bus rodomi kaip apatiniai indeksai – {shown}. Norėdami sujungti formulės dalis, kaip {joined}, nukopijuokite šį tašką:",
+    "relatedTo": "Susiję su:",
+    "notes": "Pastabos:",
+    "loi": "Degimo nuostoliai – LOI (procentais):",
+    "molecularWeight": "Formulės molekulinė masė prieš degimą (naudojama, tik jei LOI laukas tuščias):",
+    "formulaHeading": "Įveskite formulę (po degimo):",
+    "oxideSelection": "Oksido pasirinkimas",
+    "noOxide": "nepasirinkta",
+    "addOxide": "Pridėti oksidą į sąrašą",
+    "formulaIn": "Formulės išraiška:",
+    "percent": "Procentai",
+    "molecular": "Molekulinė / Segerio formulė",
+    "amount": "Kiekis:",
+    "removeOxide": "Pašalinti iš formulės sąrašo",
+    "save": "Įrašyti",
+    "elements": "Cheminiai elementai",
+    "removeNote": "Įrašyti receptai turi savo kopiją, todėl jie nepasikeis.",
+    "saveFailed": "Klaida: užklausa serveriui nepavyko."
+  },
+  "material": {
+    "title": "Žaliavos",
+    "lead": "Jūsų pačių žaliavos, įvestos kaip cheminė formulė arba oksidų analizė.",
+    "newHeading": "Naujos žaliavos duomenys",
+    "name": "Žaliavos pavadinimas:",
+    "rawFormula": "Formulė prieš degimą:",
+    "weightsNote": "Įrašant ekvivalentinė masė ir masė po degimo apskaičiuojamos iš formulės ir LOI.",
+    "mineHeading": "Mano žaliavos:",
+    "rawFormulaColumn": "Formulė prieš degimą",
+    "standardHeading": "Standartinės žaliavos:",
+    "fetchFailed": "Gauti žaliavų duomenų nepavyko.",
+    "standardFetchFailed": "Gauti standartinių žaliavų duomenų nepavyko.",
+    "saved": "Pavyko. Žaliava pridėta į duomenų bazę."
+  },
+  "additive": {
+    "title": "Priedai ir dažikliai",
+    "lead": "Dažikliai ir drumstikliai, sveriami papildomai prie bazinio recepto, pvz., kobalto ar alavo oksidas. Receptas gali jų neįtraukti į Segerio formulę arba juos įskaičiuoti.",
+    "newHeading": "Naujo priedo duomenys",
+    "name": "Priedo pavadinimas:",
+    "formulaAsSold": "Formulė (kaip parduodama):",
+    "noChemistry": "Neturi oksidų analizės, pvz., parduodamas keramikos pigmentas: neįtraukti į Segerio formulę",
+    "firedNote": "Įveskite, ką jis duoda glazūrai po degimo: juodasis kobalto oksidas {asSold} po degimo yra {fired}, o jo LOI – {loi} %. Tada receptas galės jį įskaičiuoti į Segerio formulę.",
+    "mineHeading": "Mano priedai ir dažikliai:",
+    "standardHeading": "Standartiniai priedai:",
+    "fetchFailed": "Gauti priedų duomenų nepavyko.",
+    "standardFetchFailed": "Gauti standartinių priedų duomenų nepavyko.",
+    "saved": "Pavyko. Priedas pridėtas į duomenų bazę."
+  }
+}

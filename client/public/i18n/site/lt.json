@@ -1,0 +1,111 @@
+{
+  "landing": {
+    "eyebrow": "Glazūrų skaičiuoklė ir dirbtuvės sąsiuvinis",
+    "heading": "Nemokama glazūrų chemija keramikams.",
+    "lead": "Supraskite savo glazūras, o ne tik jas maišykite. Įveskite receptą ir iš karto pamatykite jo Segerio formulę (UMF), silicio dioksido ir aliuminio oksido santykį ir fliusų santykį. Laikykite receptus, žaliavas, dažiklius, užrašus ir degimo žurnalus kartu viename privačiame sąsiuvinyje.",
+    "trialEnded": "Jūsų bandomasis laikotarpis baigėsi. Pradėkite naują arba sukurkite nemokamą paskyrą ir pasilikite savo darbą.",
+    "tryIt": "Išbandyti dabar",
+    "createAccount": "Sukurti nemokamą paskyrą",
+    "trialFailed": "Šiuo metu bandomojo laikotarpio pradėti nepavyko. Bandykite dar kartą.",
+    "heroNote": "Išbandyti galima neprisiregistravus · Nemokama ir atvirojo kodo · Jūsų receptai lieka privatūs",
+    "heroAlt": "Eilė išdegtų piroskopų rinkinių: balti pirometriniai kūgiai kiekviename rinkinyje sulinko nuo krosnies karščio.",
+    "heroCaption": "Piroskopų rinkiniai po degimo: kiekvienas piroskopas sulinksta, kai krosnyje gauna pakankamą šilumos poveikį.",
+    "exampleHeading": "Kaip tai veikia: klasikinė bazinė seladono glazūra",
+    "exampleCaption": "Bernardo Leacho glazūra „4321“, dažnai degama iki piroskopo 10, masės dalimis.",
+    "material": "Žaliava",
+    "parts": "Dalys",
+    "unityHeading": "Jos Segerio formulė",
+    "exampleNote": "Fliusų suma lygi 1, todėl bet kurias dvi glazūras galima palyginti lygiomis sąlygomis. Apskaičiuota čia pat, jūsų naršyklėje, tuo pačiu kodu, kurį naudoja skaičiuoklė.",
+    "featuresHeading": "Ką daro Glazecalc",
+    "features": {
+      "unity": {
+        "title": "Segerio formulė iš karto",
+        "text": "Kai tik įvedate receptą, matote fliusus, aliuminio oksidą ir silicio dioksidą Segerio formulėje – taip receptus lygina glazūrų chemikai."
+      },
+      "substitute": {
+        "title": "Pataisymai ir pakaitalai",
+        "text": "Žaliava nebegaminama? Palyginkite formules ir raskite pakaitalą, kuris lydosi taip pat."
+      },
+      "notebook": {
+        "title": "Jūsų dirbtuvės sąsiuvinis",
+        "text": "Laikykite receptus, savo žaliavas, dažiklius, užrašus ir degimo žurnalus kartu, vienoje vietoje."
+      },
+      "learn": {
+        "title": "Mokymasis dirbant",
+        "text": "Šalia skaičių – paprasta kalba parašyti vadovai: nuo to, kas yra glazūra, iki saugaus jos degimo."
+      }
+    },
+    "umfHeading": "Kas yra Segerio formulė?",
+    "umfRecipe": "Glazūros receptas nurodo, kiek kiekvienos žaliavos pasverti. Segerio formulė (angliškai – unity molecular formula, UMF) parodo, kuo tos žaliavos virsta krosnyje: kiek yra kiekvieno oksido molekulių, perskaičiavus taip, kad fliusų suma būtų lygi vienetui.",
+    "umfGroups": "Dėl fliusų glazūra lydosi, aliuminio oksidas padaro lydalą klampesnį, o silicio dioksidas sudaro stiklą. Šių trijų grupių palyginimas paaiškina, kodėl viena glazūra blizgi, o kita matinė, arba kodėl viena nubėga, o kita lieka vietoje, ir parodo, kaip pakeisti nebeparduodamą žaliavą.",
+    "readAdvice": "Skaityti daugiau patarimų apie glazūras",
+    "closingHeading": "Pradėkite, kada tik norite.",
+    "closingText": "Išbandykite skaičiuoklę dabar, o paskui sukurkite paskyrą ir pasilikite tai, ką sukūrėte."
+  },
+  "about": {
+    "title": "Apie programą Glazecalc",
+    "lead": "Nemokama atvirojo kodo glazūrų chemijos skaičiuoklė ir sąsiuvinis puodžiams, keramikams ir studentams.",
+    "whatHeading": "Ką ji daro",
+    "what": "Glazecalc paverčia glazūros receptą – žaliavas ir tai, kiek kiekvienos pasveriate, – jo Segerio formule (UMF): oksidais, iš kurių glazūra susideda po degimo, perskaičiuotais taip, kad fliusų suma būtų lygi vienetui. Tada receptus galima palyginti tarpusavyje; tai padeda paaiškinti, kaip glazūra elgiasi, ir praverčia, kai žaliavą tenka pakeisti.",
+    "alongside": "Be skaičiuoklės, joje saugomi jūsų receptai, jūsų žaliavos, dažikliai ir kiti priedai, užrašai ir degimo žurnalai, taip pat yra puslapis su praktiškais <advice>patarimais apie glazūras</advice> ir <guides>vadovai</guides> pradedantiesiems keramikams: nuo to, kas yra glazūra, iki saugaus jos degimo.",
+    "numbersHeading": "Kaip apskaičiuojami skaičiai",
+    "numbers": "Kiekviena žaliava aprašoma chemine formule arba oksidų analize, taip pat degimo nuostoliais (LOI) – tai dalis, kuri krosnyje išdega, pavyzdžiui, kreidoje esantis anglies dioksidas ar kaoline esantis vanduo. Glazecalc kiekvieną kiekį pagal standartines molines mases perskaičiuoja į kiekvieno oksido molius (mol), susumuoja visame recepte ir padalija iš bendro fliusų molių skaičiaus. Dažikliai ir kiti priedai nurodomi kartu su receptu, bet, kaip įprasta, į Segerio formulę neįtraukiami.",
+    "guide": "Rezultatai yra orientyras, o ne garantija. Tikros žaliavos skiriasi pas skirtingus tiekėjus ir nuo partijos iki partijos, o degimas lemia tiek pat, kiek chemija, todėl išbandykite kiekvieną glazūrą. Glazūras paviršiams, kurie liečiasi su maistu, reikėtų ištirti, kiek iš jų išsiskiria metalų.",
+    "builtHeading": "Kaip ji sukurta",
+    "built": "Programa Glazecalc pradėta kurti 2017 m., o 2026 m. sukurta iš naujo. Tai viena nedidelė žiniatinklio programa, o jos <source>pirminis kodas skelbiamas svetainėje GitHub</source> pagal MIT licenciją.",
+    "stackBrowser": "Naršyklėje – Angular 22 (savarankiški komponentai ir signalai), o glazūrų chemija iškelta į nedidelę bendrą biblioteką.",
+    "stackServer": "Serveryje – TypeScript API su Node.js 24, Express 5 ir MongoDB 9; ją tikrina daugiau nei 350 automatinių testų.",
+    "stackHosting": "Veikia Docker aplinkoje platformoje Amazon Web Services, už serverio nginx, su Let's Encrypt suteiktu HTTPS sertifikatu.",
+    "stackDeploy": "Diegiama per GitHub Actions: po kiekvieno pakeitimo atvaizdai sukuriami ir išbandomi, o diegiant prie AWS prisijungiama be saugomų raktų.",
+    "whoHeading": "Kas ją sukūrė",
+    "who": "Programą Glazecalc kuria Aaronas Filsonas. Radote problemą ar turite idėją? <issues>Sukurkite pranešimą svetainėje GitHub</issues>.",
+    "studio": "Aarono Filsono rankų darbo keramiką rasite studijoje <studio>Updraft Pottery Studio</studio> Takomoje, Vašingtono valstijoje. Apžiūrėkite darbus ir užsisakykite dirbinį, jei kuris nors prilips prie širdies."
+  },
+  "privacy": {
+    "title": "Privatumas",
+    "lead": "Paskutinį kartą atnaujinta 2026 m. spalio mėn.",
+    "shortHeading": "Trumpai",
+    "short": "Glazecalc saugo tik tai, ko reikia jūsų paskyrai veikti, ir nieko daugiau. Nėra reklamų, analitikos, sekimo slapukų ir trečiųjų šalių scenarijų. Jūsų duomenys niekada neparduodami ir niekam neperduodami.",
+    "storedHeading": "Kas saugoma",
+    "storedAccount": "<b>Jūsų paskyra:</b> el. pašto adresas ir slaptažodis, kuris saugomas tik kaip vienkryptė maišos reikšmė (bcrypt), niekada ne pats slaptažodis.",
+    "storedTrial": "<b>Bandomasis laikotarpis (mygtukas Išbandyti dabar):</b> jokio el. pašto adreso ar slaptažodžio, tik sugeneruotas vardas, pvz., „speckled quiet kilns“. Bandomasis laikotarpis ir viskas, kas per jį įrašyta, automatiškai panaikinami praėjus 14 dienų nuo jo pradžios, nebent sukuriate paskyrą, kad juos pasiliktumėte.",
+    "storedSaved": "<b>Tai, ką įrašote:</b> jūsų receptai, žaliavos, priedai, užrašai, degimo žurnalai ir patarimai. Kiti naudotojai jų nemato.",
+    "storedResets": "<b>Slaptažodžio atkūrimo užklausos:</b> kiekvienos atkūrimo nuorodos kontrolinis kodas (ne pati nuoroda), kuris automatiškai panaikinamas, kai po 30 minučių nuorodos galiojimas baigiasi.",
+    "storedBrowser": "<b>Jūsų naršyklėje:</b> vienas slapukas, <code>glazecalc_session</code>, kuris palaiko jūsų prisijungimą. Jame saugomas jūsų prisijungimo žetonas, puslapio scenarijai negali jo perskaityti, jis siunčiamas tik į pačios programos Glazecalc serverį ir galioja 7 dienas (bandomuoju laikotarpiu – 14). Vietinėje saugykloje laikoma žymė, kad prisijungėte, o bandomuoju laikotarpiu – ir jo vardas bei pabaigos data. Atsijungus visa tai pašalinama.",
+    "emailHeading": "El. paštas",
+    "email": "Glazecalc siunčia el. laiškus tik tada, kai paprašote atkurti slaptažodį ir kai jūsų slaptažodis pakeičiamas. Laiškai siunčiami per paslaugą Amazon Simple Email Service. Jokių naujienlaiškių ar rinkodaros laiškų nėra.",
+    "hostingHeading": "Žurnalai, atsarginės kopijos ir talpinimas",
+    "logs": "Žiniatinklio serveris kiekvieną užklausą, įskaitant jūsų IP adresą, įrašo į žurnalą, kuris saugomas 14 dienų, kad svetainė veiktų ir būtų apsaugota.",
+    "backups": "Šifruotos duomenų bazės atsarginės kopijos saugomos 30 dienų, o serverio disko kopijos – 7 dienas, kad po gedimo svetainę būtų galima atkurti.",
+    "hosting": "Viską talpina Amazon Web Services JAV (Oregono valstijoje).",
+    "deletingHeading": "Duomenų panaikinimas",
+    "deleting": "Paskyrą galite panaikinti <account>paskyros puslapyje</account>. Taip iš karto pašalinama jūsų paskyra ir viskas, ką įrašėte; bandomajam laikotarpiui tą patį daro mygtukas Atsisakyti bandomojo laikotarpio. Atsarginėse kopijose likę duomenys išnyksta, kai senos atsarginės kopijos pašalinamos, per 30 dienų.",
+    "questionsHeading": "Klausimai",
+    "questions": "Klausimą galima užduoti <issues>sukūrus pranešimą svetainėje GitHub</issues>. Jei ši politika pasikeis, pasikeis ir data šio puslapio viršuje."
+  },
+  "notFound": {
+    "heading": "Puslapis nerastas",
+    "text": "Šiuo adresu puslapio nėra. Galbūt jis perkeltas arba nuoroda parašyta su klaida.",
+    "start": "Eiti į pradžios puslapį"
+  },
+  "advice": {
+    "title": "Patarimai apie glazūras",
+    "lead": "Praktiški patarimai apie maišymą, glazūravimą ir degimą, taip pat jūsų pačių patarimai.",
+    "signUp": "<signup>Sukurkite nemokamą paskyrą</signup> arba <signin>prisijunkite</signin>, kad galėtumėte saugoti savo patarimus.",
+    "generalHeading": "Bendrieji patarimai",
+    "tags": "Žymos: {list}",
+    "addHeading": "Savo patarimo pridėjimas",
+    "titleLabel": "Pavadinimas:",
+    "tagsLabel": "Žymos:",
+    "contentLabel": "Patarimo tekstas:",
+    "save": "Įrašyti",
+    "mineHeading": "Mano patarimai",
+    "nothingSaved": "Kol kas nieko neįrašyta.",
+    "titleMissing": "Įveskite patarimo pavadinimą.",
+    "contentMissing": "Parašykite patarimą.",
+    "fetchFailed": "Gaunant patarimus įvyko klaida.",
+    "standardFetchFailed": "Gaunant serverio patarimus įvyko klaida.",
+    "saved": "Sėkmingai pridėta prie patarimų.",
+    "saveFailed": "Siunčiant patarimą įvyko klaida."
+  }
+}
