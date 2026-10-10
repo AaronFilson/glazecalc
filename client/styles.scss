@@ -1378,6 +1378,8 @@ bdi {
 
 .guide {
   max-width: 52rem;
+  // A word longer than a phone's line ("Eksponeringskontrol/personlige") breaks rather than widening the page.
+  overflow-wrap: break-word;
   h2 {
     scroll-margin-top: 1rem;
     &:focus {
