@@ -1,0 +1,23 @@
+{
+  "unknown-compound": "Formulā ir nezināms savienojums {compound}.",
+  "unknown-oxide": "Izejvielā {material} ir nezināms oksīds {oxide}.",
+  "invalid-oxide-amount": "Nederīgs oksīda {oxide} daudzums izejvielā {material}.",
+  "loi-range": "Izejvielas {material} karsēšanas zudumiem jābūt vismaz 0 un mazākiem par 100.",
+  "no-oxides": "Izejvielai {material} nav oksīdu.",
+  "no-name": "Izejvielai jābūt nosaukumam.",
+  "no-analysis": "Izejvielai {material} vajadzīga formula vai analīze.",
+  "recipe-shape": "Receptei jābūt '{ material, amount }' objektu masīvam vai daudzumu kartei.",
+  "invalid-amount": "Nederīgs izejvielas {material} daudzums.",
+  "missing-material": "Receptes rindā nav izejvielas.",
+  "unknown-material": "Nezināma izejviela {material}.",
+  "no-flux": "Receptē nav kušņu oksīdu, tāpēc Zēgera formulu (UMF) nevar noteikt.",
+  "no-target": "Mērķa formulā nav oksīdu, uz ko tiekties.",
+  "no-materials": "Nav izejvielu, kuru daudzumus aprēķināt.",
+  "no-temperature": "Lai noteiktu bora daudzumu, vajadzīga apdedzināšanas temperatūra.",
+  "no-flux-to-rebuild": "Glazūrā nav kušņu, ko sastādīt no jauna.",
+  "unknown-element": "Formulā {formula} ir nezināms ķīmiskais elements {element}.",
+  "bad-formula": "Neizdevās nolasīt formulu {formula}.",
+  "analysis-total": "Izejvielas {material} analīzes summa kopā ar karsēšanas zudumiem ir {total}%, bet vajadzētu būt apmēram 100%.",
+  "stored-equivalent": "Izejvielas {material} saglabātā ekvivalentmasa neatbilst tās formulai un karsēšanas zudumiem, tāpēc aprēķinā tās vietā izmantoti formula un karsēšanas zudumi.",
+  "trace-flux": "Receptē ir tikai kušņu oksīdu pēdas, tāpēc Zēgera formula (UMF) nav jēgpilna."
+}

@@ -1,0 +1,50 @@
+{
+  "common": {
+    "formulaHelp": "Rakstiet formulu ar parastiem cipariem, piemēram, {typed}: skaitļi parādās kā apakšindeksi, {shown}. Lai savienotu formulas daļas, kā {joined}, nokopējiet šo punktu:",
+    "relatedTo": "Saistīts ar:",
+    "notes": "Piezīmes:",
+    "loi": "Karsēšanas zudumi – LOI (procentos):",
+    "molecularWeight": "Formulas molekulmasa neapdedzinātā veidā (izmanto tikai tad, ja karsēšanas zudumi nav norādīti):",
+    "formulaHeading": "Ievadiet formulu (pēc apdedzināšanas):",
+    "oxideSelection": "Oksīda izvēle",
+    "noOxide": "nav",
+    "addOxide": "Pievienot oksīdu sarakstam",
+    "formulaIn": "Formulas veids:",
+    "percent": "Procenti",
+    "molecular": "Moli / Zēgera formula",
+    "amount": "Daudzums:",
+    "removeOxide": "Noņemt no formulas saraksta",
+    "save": "Saglabāt",
+    "elements": "Ķīmiskie elementi",
+    "removeNote": "Saglabātās receptes glabā savu kopiju, tāpēc tās nemainīsies.",
+    "saveFailed": "Kļūda: pieprasījums serverim neizdevās."
+  },
+  "material": {
+    "title": "Izejvielas",
+    "lead": "Jūsu pašu izejvielas, ievadītas kā ķīmiskā formula vai oksīdu analīze.",
+    "newHeading": "Jaunās izejvielas dati",
+    "name": "Izejvielas nosaukums:",
+    "rawFormula": "Formula neapdedzinātā veidā:",
+    "weightsNote": "Ekvivalentmasu un masu pēc apdedzināšanas aprēķina no formulas un karsēšanas zudumiem, kad saglabājat.",
+    "mineHeading": "Manas izejvielas:",
+    "rawFormulaColumn": "Formula neapdedzinātā veidā",
+    "standardHeading": "Standarta izejvielas:",
+    "fetchFailed": "Neizdevās ielādēt izejvielu datus.",
+    "standardFetchFailed": "Neizdevās ielādēt standarta izejvielu datus.",
+    "saved": "Izdevās: izejviela ir pievienota datubāzei."
+  },
+  "additive": {
+    "title": "Piedevas un krāsvielas",
+    "lead": "Krāsvielas un blāvotāji, ko mēra papildus pamatreceptei, piemēram, kobalta vai alvas oksīds. Recepte var tos neieskaitīt Zēgera formulā (UMF) vai ieskaitīt.",
+    "newHeading": "Jaunās piedevas dati",
+    "name": "Piedevas nosaukums:",
+    "formulaAsSold": "Formula pārdošanas veidā:",
+    "noChemistry": "Tai nav oksīdu analīzes, piemēram, rūpnieciski ražotam keramikas pigmentam: neieskaitīt Zēgera formulā",
+    "firedNote": "Ievadiet, ko tā dod glazūrai pēc apdedzināšanas: melnais kobalta oksīds, {asSold}, ir {fired} ar {loi}% karsēšanas zudumiem. Tad recepte to var ieskaitīt Zēgera formulā.",
+    "mineHeading": "Manas piedevas un krāsvielas:",
+    "standardHeading": "Standarta piedevas:",
+    "fetchFailed": "Neizdevās ielādēt piedevu datus.",
+    "standardFetchFailed": "Neizdevās ielādēt standarta piedevu datus.",
+    "saved": "Izdevās: piedeva ir pievienota datubāzei."
+  }
+}

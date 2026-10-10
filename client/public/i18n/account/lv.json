@@ -1,0 +1,237 @@
+{
+  "auth": {
+    "signInHeading": "Pierakstīšanās",
+    "keepHeading": "Darba saglabāšana",
+    "signUpHeading": "Konta izveide",
+    "signInLead": "Laipni lūdzam atpakaļ jūsu glazūru burtnīcā.",
+    "keepLead": "Saglabājiet visu, ko izveidojāt kā {name}: pievienojiet savu e-pasta adresi un paroli. Tas joprojām būs bez maksas.",
+    "signUpLead": "Bez maksas. Jūsu receptes, izejvielas un piezīmes glabājas jūsu kontā un ir privātas.",
+    "trialNote": "Vai jums jau ir konts? Pierakstoties tajā tiks pārnests viss, ko izveidojāt kā {name}. Vai esat šeit pirmo reizi? Tā vietā <signup>izveidojiet kontu</signup>, lai to saglabātu.",
+    "email": "E-pasts",
+    "password": "Parole",
+    "passwordHint": "Vismaz 8 rakstzīmes.",
+    "confirmation": "Paroles apstiprinājums",
+    "passwordMissing": "Ievadiet paroli.",
+    "createAccount": "Izveidot kontu",
+    "signIn": "Pierakstīties",
+    "haveAccount": "Vai jums jau ir konts? <signin>Pierakstīties</signin>",
+    "forgot": "Vai aizmirsāt paroli? Atiestatīt to",
+    "newHere": "Vai esat šeit pirmo reizi? <signup>Izveidot bezmaksas kontu</signup>",
+    "signUpFailed": "Kļūda: neizdevās izveidot kontu.",
+    "signInFailed": "Kļūda: neizdevās pierakstīties."
+  },
+  "forgot": {
+    "heading": "Paroles atiestatīšana",
+    "checkInbox": "Pārbaudiet iesūtni un nevēlamā e-pasta mapi. Ja nekas nepienāk, pārbaudiet adresi un pieprasiet vēlreiz.",
+    "intro": "Ievadiet sava konta e-pasta adresi, un mēs jums nosūtīsim saiti jaunas paroles izvēlei.",
+    "email": "E-pasts:",
+    "send": "Sūtīt atiestatīšanas saiti",
+    "back": "Atpakaļ uz pierakstīšanos",
+    "failed": "Kļūda: neizdevās nosūtīt atiestatīšanas e-pastu. Mēģiniet vēlreiz."
+  },
+  "reset": {
+    "heading": "Jaunas paroles izvēle",
+    "signIn": "Pierakstīties",
+    "incomplete": "Šai lapai nepieciešama saite no paroles atiestatīšanas e-pasta, bet šī saite ir nepilnīga.",
+    "askAgain": "Pieprasīt jaunu saiti",
+    "password": "Jaunā parole:",
+    "confirmation": "Jaunās paroles apstiprinājums:",
+    "save": "Saglabāt jauno paroli",
+    "hint": "Vismaz 8 rakstzīmes. Konts tiks izrakstīts visās ierīcēs, kurās tas ir pierakstīts.",
+    "failed": "Kļūda: neizdevās nomainīt paroli. Mēģiniet vēlreiz."
+  },
+  "account": {
+    "trialTitle": "Jūsu izmēģinājums",
+    "trialLead": "Jūs izmēģināt lietotni Glazecalc kā {name}.",
+    "keepHeading": "Darba saglabāšana",
+    "keepText": "Šo izmēģinājumu un visu tajā esošo dzēsīs šajā datumā: {date}. Izveidojiet bezmaksas kontu, lai tos saglabātu: jūsu receptes, izejvielas un piezīmes paliks tieši tādas pašas, un {name} paliks jūsu parādāmais vārds.",
+    "createAccount": "Izveidot kontu",
+    "title": "Jūsu konts",
+    "signedInAs": "Jūs pierakstījāties kā {email}.",
+    "changeHeading": "Paroles maiņa",
+    "current": "Pašreizējā parole",
+    "currentMissing": "Ievadiet pašreizējo paroli.",
+    "password": "Jaunā parole",
+    "passwordHint": "Vismaz 8 rakstzīmes. Citās ierīcēs šis konts tiks izrakstīts.",
+    "confirmation": "Jaunās paroles apstiprinājums",
+    "change": "Mainīt paroli",
+    "changeFailed": "Kļūda: neizdevās nomainīt paroli. Mēģiniet vēlreiz.",
+    "deleteHeading": "Konta dzēšana",
+    "deleteText": "Tiks dzēsts jūsu konts un viss saglabātais: receptes, izejvielas, piedevas, piezīmes, apdedzināšanas žurnāli un padomi. Šo darbību nevar atsaukt.",
+    "deletePassword": "Jūsu parole apstiprināšanai",
+    "deletePasswordMissing": "Lai apstiprinātu, ievadiet paroli.",
+    "delete": "Dzēst manu kontu",
+    "deleteFailed": "Kļūda: neizdevās dzēst kontu. Mēģiniet vēlreiz."
+  },
+  "settings": {
+    "heading": "Iestatījumi",
+    "intro": "Saglabāti jūsu kontā, tāpēc ir spēkā visās ierīcēs.",
+    "saveFailed": "Neizdevās saglabāt iestatījumu. Mēģiniet vēlreiz.",
+    "language": {
+      "legend": "Valoda",
+      "help": "Lietotnes, ceļvežu un jūsu e-pasta vēstuļu valoda. Ja to maināt, šī lapa atveras izvēlētajā valodā.",
+      "saved": "Saglabāts: {language}."
+    },
+    "region": {
+      "legend": "Kur strādājat",
+      "none": {
+        "label": "Nav izvēlēts",
+        "saved": "Saglabāts: reģions nav izvēlēts. Noklusējumi atbilst jūsu pārlūkprogrammai."
+      },
+      "saved": "Saglabāts: {region}.",
+      "help": "Tur pārdotās izejvielas, kā arī tālāk norādītie skaitļu, datumu, temperatūru un konusu noklusējumi. Kamēr neizvēlaties, tie atbilst jūsu pārlūkprogrammas valodai."
+    },
+    "format": {
+      "legend": "Skaitļi un datumi",
+      "auto": {
+        "label": "Atbilstoši manai valodai un reģionam",
+        "saved": "Saglabāts: skaitļus un datumus raksta atbilstoši jūsu valodai un reģionam."
+      },
+      "saved": "Saglabāts skaitļu un datumu formāts: {language}.",
+      "help": "Kā raksta skaitļus un datumus: 12,345.6 vai 12.345,6, un kādā secībā ir diena un mēnesis."
+    },
+    "decimalMark": {
+      "legend": "Daudzumu ievade",
+      "either": {
+        "label": "Decimālzīme: komats vai punkts",
+        "example": "12,5 vai 12.5",
+        "saved": "Saglabāts: daudzumus var ievadīt ar komatu vai punktu."
+      },
+      "comma": {
+        "label": "Decimālkomats",
+        "saved": "Saglabāts: daudzumus ievada ar decimālkomatu."
+      },
+      "point": {
+        "label": "Decimālpunkts",
+        "saved": "Saglabāts: daudzumus ievada ar decimālpunktu."
+      },
+      "help": "Ja der gan komats, gan punkts, daudzumu, piemēram, 1.250, nolasa tā, kā jūsu skaitļi rakstīti augstāk izvēlētajā formātā."
+    },
+    "temperature": {
+      "legend": "Temperatūras",
+      "celsius": {
+        "label": "Celsija grādi",
+        "saved": "Saglabāts: temperatūras °C."
+      },
+      "fahrenheit": {
+        "label": "Fārenheita grādi",
+        "saved": "Saglabāts: temperatūras °F."
+      },
+      "help": "Kamēr neizvēlaties, tas atbilst jūsu reģionam: ASV – °F, citur – °C."
+    },
+    "cones": {
+      "legend": "Apdedzināšana",
+      "orton": {
+        "label": "Pēc Ortona konusiem",
+        "example": "konuss 04, konuss 6",
+        "saved": "Saglabāts: apdedzināšana pēc Ortona konusiem."
+      },
+      "temperature": {
+        "label": "Pēc temperatūras, kā krāsns kontroliera programmā",
+        "saved": "Saglabāts: apdedzināšana pēc temperatūras."
+      },
+      "help": "Kamēr neizvēlaties, tas atbilst jūsu reģionam: ASV, Apvienotajā Karalistē, Īrijā, Austrālijā un Jaunzēlandē – Ortona konusi, pārējā Eiropā – temperatūra."
+    },
+    "density": {
+      "legend": "Glazūras blīvums",
+      "sg": {
+        "label": "Relatīvais blīvums",
+        "saved": "Saglabāts: glazūras blīvums kā relatīvais blīvums.",
+        "example": "rel. blīvums 1,45"
+      },
+      "baume": {
+        "label": "Bomē grādi, ar areometru",
+        "saved": "Saglabāts: glazūras blīvums Bomē grādos."
+      },
+      "pint": {
+        "label": "Pintes svars, unces britu pintē",
+        "saved": "Saglabāts: glazūras blīvums kā pintes svars."
+      },
+      "help": "Kā ceļvežos norāda glazūras biezumu. Kamēr neizvēlaties, tas atbilst jūsu reģionam: Itālijā – Bomē grādi, citur – relatīvais blīvums."
+    },
+    "theme": {
+      "legend": "Gaišs vai tumšs",
+      "system": {
+        "label": "Kā iestatīts šajā ierīcē",
+        "saved": "Saglabāts: gaišs vai tumšs atbilstoši katras ierīces iestatījumam."
+      },
+      "light": {
+        "label": "Gaišs",
+        "saved": "Saglabāts: vienmēr gaišs."
+      },
+      "dark": {
+        "label": "Tumšs",
+        "saved": "Saglabāts: vienmēr tumšs."
+      },
+      "help": "Izdrukātās receptes vienmēr ir melnas uz balta fona."
+    },
+    "palette": {
+      "legend": "Krāsas",
+      "saved": "Saglabātas pogu un saišu krāsas: {palette}.",
+      "help": "Pogu, saišu un ciļņu krāsas, nosauktas glazūru vārdā. Katra ir labi salasāma gan gaišā, gan tumšā režīmā."
+    },
+    "weightUnit": {
+      "legend": "Svēršanas daudzumi",
+      "grams": {
+        "label": "Grami",
+        "saved": "Saglabāts: svēršanas daudzumi gramos."
+      },
+      "pounds": {
+        "label": "Mārciņas un unces",
+        "saved": "Saglabāts: svēršanas daudzumi mārciņās un uncēs."
+      },
+      "help": "Izdrukātajām porcijām."
+    },
+    "gramPrecision": {
+      "legend": "Grami izdrukātajās porcijās",
+      "single": {
+        "label": "Ar grama desmitdaļas precizitāti",
+        "saved": "Saglabāts: grami ar desmitdaļas precizitāti."
+      },
+      "full": {
+        "label": "Pilna precizitāte",
+        "saved": "Saglabāts: grami pilnā precizitātē, līdz 5 cipariem aiz komata."
+      },
+      "help": "Arī ar desmitdaļas precizitāti daudzumus, kas mazāki par 10 g, rāda ar simtdaļām (2,35 g) – krāsvielām nelielās provju porcijās."
+    },
+    "lead": {
+      "legend": "Svins",
+      "off": {
+        "label": "Izslēgts: nekad nepievienot svinu receptei un neieteikt to",
+        "saved": "Saglabāts: svinu nekad nepievieno receptei un neiesaka."
+      },
+      "on": {
+        "label": "Ieslēgts: izejvielas ar svinu var pievienot un ieteikt",
+        "saved": "Saglabāts: izejvielas ar svinu var pievienot un ieteikt."
+      },
+      "help": "Svins ir indīgs, ja to ieelpo vai norij, un uzkrājas organismā, un svina glazūra var to izdalīt pārtikā un dzērienos. Neviens aprēķins nevar pateikt, vai apdedzināts izstrādājums to dara. Ja iestatījums ir izslēgts, receptes, kurās jau ir svins, joprojām atveras tādas, kādas bija.",
+      "warning": "Izmantojiet svinu tikai kā friti, nekad kā nefritētu sarkano, balto vai dzelteno svinu vai svina gleti. Jauciet to mitrā veidā, nekad neuzsmidziniet, lietojiet respiratoru un uzkopiet mitrā veidā. Nepieļaujiet, ka izstrādājumi ar svina glazūru saskaras ar pārtiku un dzērieniem, ja vien apdedzinātais izstrādājums nav izturējis metālu izskalošanās laboratorijas pārbaudi.",
+      "turnOn": "Ieslēgt svinu",
+      "keepOff": "Atstāt izslēgtu"
+    },
+    "englishTerms": {
+      "legend": "Angļu termini",
+      "off": {
+        "label": "Izslēgts",
+        "saved": "Saglabāts: bez angļu terminiem."
+      },
+      "on": {
+        "label": "Rādīt angļu terminu aiz galvenajiem terminiem",
+        "saved": "Saglabāts: aiz galvenajiem terminiem rāda angļu terminu."
+      },
+      "help": "Lai līdztekus šai lietotnei varētu lasīt angļu valodas avotus, piemēram, Digitalfire: galvenajiem terminiem iekavās ir norādīts angļu termins."
+    },
+    "notice": {
+      "legend": "Tulkojuma paziņojums",
+      "shown": {
+        "label": "Rādīts",
+        "saved": "Saglabāts: paziņojums ir redzams."
+      },
+      "hidden": {
+        "label": "Paslēpts",
+        "saved": "Saglabāts: paziņojums ir paslēpts. Drošības ceļvežos paliek viena tā rindiņa."
+      },
+      "help": "Piezīme katras lapas augšdaļā par to, ka lapu tulkojis mākslīgais intelekts, ar iespēju ieteikt labojumu."
+    }
+  }
+}

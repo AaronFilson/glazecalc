@@ -1,0 +1,154 @@
+{
+  "version": {
+    "cones": "Šis ceļvedis ir parādīts apdedzināšanai pēc konusiem, kā norādīts iestatījumos.",
+    "temperature": "Šis ceļvedis ir parādīts apdedzināšanai pēc temperatūras, kā norādīts iestatījumos.",
+    "showTemperature": "Rādīt apdedzināšanai pēc temperatūras",
+    "showCones": "Rādīt apdedzināšanai pēc konusiem"
+  },
+  "notTranslated": "Šis ceļvedis vēl nav iztulkots, tāpēc tas ir parādīts angļu valodā.",
+  "sectionInEnglish": "Šī sadaļa ir mainīta kopš tās tulkošanas, tāpēc līdz tulkojuma atjaunināšanai tā ir parādīta angļu valodā.",
+  "list": {
+    "title": "Ceļveži",
+    "lead": "Ceļveži vienkāršā valodā tiem, kas keramikā ir iesācēji: no tā, kas ir glazūra, līdz tās apdedzināšanai, un kā pa ceļam pasargāt visus.",
+    "note": "Šajos ceļvežos apkopots tas, ko publicē ražotāji, drošības iestādes un pieredzējuši keramiķi, un katra ceļveža beigās ir norādīti avoti. Tie ir sākumpunkts, bet neaizstāj jūsu izejvielu drošības datu lapas, krāsns lietošanas instrukciju vai vietējos noteikumus.",
+    "glazingBasics": {
+      "title": "Glazēšana no pašiem pamatiem",
+      "text": "Kas ir glazūra, kā tā kūst, un skaidrojums katram vārdam, ko sastapsiet receptē vai uz maisa."
+    },
+    "makingAGlaze": {
+      "title": "Kā sagatavot glazūru",
+      "text": "Glazūras iegāde, uzglabāšana, svēršana, jaukšana un izkāšana, pēc tam tās pārbaude un pieraksti."
+    },
+    "safeMixing": {
+      "title": "Droša jaukšana un ventilācija",
+      "text": "Putekļi, respiratori, uzkopšana, izejvielas, kurām vajadzīga vislielākā piesardzība, un krāsns vēdināšana."
+    },
+    "homeSafety": {
+      "title": "Nesaindējiet savu ģimeni",
+      "text": "Keramika mājās, kur ir bērni un mājdzīvnieki: uzglabāšana, putekļi, krāsns un ko darīt, ja kaut kas ir norīts."
+    },
+    "firing": {
+      "title": "Apdedzināšana vienkāršā krāsnī",
+      "text": "Konusi, Kiln-Sitter un manuālie slēdži, kā arī biskvīta un glazūras apdedzināšanas programmas."
+    }
+  },
+  "contents": "Šajā lapā",
+  "poison": {
+    "numbersFor": "Tālruņa numuri:",
+    "choose": "Izvēlieties valsti",
+    "label": "Kur zvanīt: {region}",
+    "caption": "Kur zvanīt: {region} (numuri pārbaudīti: {date})",
+    "for": "Kādā gadījumā",
+    "call": "Zvanīt",
+    "notes": "Darba laiks un piezīmes",
+    "emergency": "Ārkārtas situācija: bezsamaņa, nav elpošanas, krampju lēkme",
+    "poisonAdvice": "{who, select, children {Konsultācijas saindēšanās gadījumā: {name} (tikai bērniem)} other {Konsultācijas saindēšanās gadījumā: {name}}}",
+    "or": "vai {number}",
+    "online": "Tiešsaistē: <link>{name}</link>.",
+    "poisonAdviceNone": "Konsultācijas saindēšanās gadījumā",
+    "noLine": "Mēs nevarējām pārliecināties, ka šeit darbojas publisks saindēšanās informācijas tālrunis. Zvaniet savam ārstam vai, ja tas ir steidzami, uz ārkārtas palīdzības numuru.",
+    "medicalAdvice": "Medicīniskas konsultācijas: {name}",
+    "animals": "Dzīvnieki: {name}",
+    "animalsNone": "Dzīvnieki",
+    "vet": "Zvaniet savam veterinārārstam.",
+    "checkedOn": "Pārbaudīts vietnēs:",
+    "choosePrompt": "Izvēlieties valsti, lai redzētu, kur tur zvanīt.",
+    "ministry": "Veselības ministrijas lapa: <link>{name}</link>."
+  },
+  "density": {
+    "sg": "rel. blīvums {value}",
+    "baume": "{value} °Bé ({sg})",
+    "pint": "{value} oz britu pintē ({sg})"
+  },
+  "shops": {
+    "shopsIn": "Veikali:",
+    "label": "Veikali: {region}",
+    "caption": "Daži veikali valstī {region}, kas pārdod glazūru izejvielas (pārbaudīts: {date})",
+    "nearbyCaption": "Veikali citās valstīs, kas norāda, ka piegādā uz valsti {region} (pārbaudīts: {date})",
+    "shop": "Veikals",
+    "sells": "Pārdod",
+    "packs": "Redzētie iepakojumi",
+    "seen": "Redzētās izejvielas, kā tās nosauc veikals",
+    "what": {
+      "materials": "glazūru izejvielas",
+      "frits": "frites",
+      "oxides": "oksīdi",
+      "stains": "keramikas pigmenti",
+      "clays": "māls",
+      "glazes": "gatavas glazūras",
+      "kilns": "krāsnis"
+    },
+    "none": "Valstī {region} neatradām nevienu veikalu, kas pārdotu glazūru izejvielas.",
+    "unknown": "Veikalus valstī {region} vēl neesam meklējuši.",
+    "choosePrompt": "Izvēlieties valsti, lai redzētu tās veikalus."
+  },
+  "silica": {
+    "limitIn": "Robežvērtība:",
+    "label": "Silīcija dioksīda robežvērtība: {region}",
+    "caption": "Ieelpojamā kristāliskā silīcija dioksīda robežvērtība darba vietā valstī {region}, 8 stundu vidējā vērtība (pārbaudīts: {date})",
+    "both": "Kvarcs un kristobalīts",
+    "quartz": "Kvarcs",
+    "cristobalite": "Kristobalīts",
+    "actionLevel": "Rīcības līmenis",
+    "value": "{value} mg/m³",
+    "kind": {
+      "binding": "Saistoša robežvērtība.",
+      "indicative": "Indikatīva robežvērtība: orientējoša vērtība, nevis likumā noteikta augšējā robeža.",
+      "assessment": "Novērtēšanas kritērijs, nevis saistoša robežvērtība."
+    },
+    "setBy": "Nosaka: <link>{law}</link>.",
+    "lowerThanEu": "Zemāka par ES saistošo robežvērtību {value} mg/m³.",
+    "sameAsEu": "Tāda pati kā ES saistošā robežvērtība.",
+    "unknown": "Nevarējām pārliecināties, kāda robežvērtība noteikta valstī {region}. ES saistošā robežvērtība {value} mg/m³ ir spēkā visās dalībvalstīs.",
+    "noData": "Robežvērtību valstī {region} vēl neesam noskaidrojuši.",
+    "agency": "Valsts iestāde, kas atbild par darba drošību: <link>{name}</link>.",
+    "agencySilica": "Tās <link>lapa par silīcija dioksīdu</link>.",
+    "choosePrompt": "Izvēlieties valsti, lai redzētu tās robežvērtību."
+  },
+  "food": {
+    "rulesIn": "Noteikumi:",
+    "label": "Keramikas izstrādājumu robežvērtības: {region}",
+    "caption": "Cik daudz apdedzināts izstrādājums valstī {region} drīkst izdalīt likumā noteiktajā pārbaudē (pārbaudīts: {date})",
+    "article": "Izstrādājuma veids",
+    "lead": "Svins",
+    "cadmium": "Kadmijs",
+    "category": {
+      "flat": "Nepildāmi izstrādājumi vai izstrādājumi, kuru iekšējais dziļums nepārsniedz 25 mm",
+      "fillable": "Visi pārējie pildāmie izstrādājumi",
+      "cooking": "Jebkura izmēra ēdiena gatavošanas piederumi, kā arī iesaiņošanas un uzglabāšanas trauki, kuru ietilpība pārsniedz 3 L",
+      "rimBand": "Dzeramā trauka mala: 2 cm plata josla iekšpusē un ārpusē",
+      "rimArticle": "Dzeramā trauka mala: 20 mm plata josla ārpusē, sākot no augšējās malas, uz vienu izstrādājumu",
+      "flatware": "Plakani trauki, dziļums ne vairāk kā 25 mm",
+      "smallHollow": "Mazi dobi trauki, mazāk par 1,1 L, izņemot tases un krūzes",
+      "cups": "Tases un krūzes",
+      "largeHollow": "Lieli dobi trauki, 1,1 L vai vairāk, izņemot krūkas",
+      "pitchers": "Krūkas",
+      "auSmall": "Tases, krūzes, krūkas, bļodas, tējkannas un citi galda trauki, mazāk par 1100 mL",
+      "auLarge": "Tādi paši trauki, 1100 mL vai vairāk",
+      "auPlates": "Šķīvji, apakštasītes un līdzīgi galda trauki",
+      "auCooking": "Ēdiena gatavošanas piederumi"
+    },
+    "judged": {
+      "average": "6 izstrādājumu vidējais",
+      "each": "katrs no 6"
+    },
+    "euRules": "Šeit ir spēkā ES noteikumi.",
+    "law": "Nosaka: <link>{law}</link>.",
+    "inForce": "Spēkā stāšanās datums: {date}.",
+    "unknown": "Noteikumus valstī {region} vēl neesam noskaidrojuši.",
+    "choosePrompt": "Izvēlieties valsti, lai redzētu tās noteikumus."
+  },
+  "equivalents": {
+    "buyingIn": "Iegādes valstis:",
+    "label": "{library, select, US {Līdzvērtīgas izejvielas, ko pārdod ASV} UK {Līdzvērtīgas izejvielas, ko pārdod Apvienotajā Karalistē} EU {Līdzvērtīgas izejvielas, ko pārdod ES} other {Līdzvērtīgas izejvielas, ko pārdod Austrālijā un Jaunzēlandē}}",
+    "caption": "{library, select, US {Izejvielas, ko nepārdod ASV, un katrai tuvākā, ko tur pārdod} UK {Izejvielas, ko nepārdod Apvienotajā Karalistē, un katrai tuvākā, ko tur pārdod} EU {Izejvielas, ko nepārdod ES, un katrai tuvākā, ko tur pārdod} other {Izejvielas, ko nepārdod Austrālijā un Jaunzēlandē, un katrai tuvākā, ko tur pārdod}}",
+    "material": "Receptē",
+    "soldIn": "Pārdod",
+    "closest": "{library, select, US {Tuvākā, ko pārdod ASV} UK {Tuvākā, ko pārdod Apvienotajā Karalistē} EU {Tuvākā, ko pārdod ES} other {Tuvākā, ko pārdod Austrālijā un Jaunzēlandē}}",
+    "apart": "atšķiras par {grams} g uz 100 g",
+    "noneClose": "Nav nevienas izejvielas, kas atšķirtos ne vairāk kā par 15 g uz 100 g: salīdziniet ķīmisko sastāvu.",
+    "loading": "Ielādē bibliotēku…",
+    "failed": "Bibliotēku neizdevās ielādēt. Mēģiniet vēlreiz vēlāk.",
+    "choosePrompt": "Izvēlieties valsti, lai redzētu, ko tur pārdod."
+  }
+}

@@ -43,7 +43,7 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   Slovenian and Swedish**, the second wave, made the same way, then
   checked for consistency across each language's files: the same word for the guides, never the word
   for a kiln's own manual, and the same guide titles in every link and list.
-- **In Lithuanian**, the third wave, made the same way. The reviews' lessons went into the prompts as
+- **In Latvian and Lithuanian**, the third wave, made the same way. The reviews' lessons went into the prompts as
   the wave ran: "may not melt fully" is not "may not melt at all", a rule a translation of the recipe
   checks had broken.
 - **Ready for other languages** ([ADR 13](docs/adr/0013-translations.md),

@@ -212,6 +212,16 @@ export const RESET: Record<string, Email> = {
       'Nuorodą galima panaudoti vieną kartą. Jei to neprašėte, nekreipkite dėmesio į šį laišką; jūsų slaptažodis liks toks pat.\n' +
       '\n' +
       '-- \nGlazecalc, {app}\n'
+  },
+  lv: {
+    subject: 'Lietotnes Glazecalc paroles atiestatīšana',
+    text:
+      'Kāds (cerams, Jūs) pieprasīja atiestatīt paroli lietotnes Glazecalc kontam {account}.\n\n' +
+      'Lai izvēlētos jaunu paroli, atveriet šo saiti {minutes} min laikā:\n\n' +
+      '{link}\n\n' +
+      'Saite darbojas vienu reizi. Ja to nepieprasījāt, neņemiet vērā šo vēstuli – Jūsu parole paliek tā pati.\n' +
+      '\n' +
+      '-- \nGlazecalc, {app}\n'
   }
 };
 
@@ -373,6 +383,14 @@ export const CHANGED: Record<string, Email> = {
     text:
       'Programos Glazecalc paskyros {account} slaptažodis ką tik pakeistas, ir visi įrenginiai, kuriuose buvo prisijungta, atjungti.\n\n' +
       'Jei tai buvote jūs, daugiau nieko daryti nereikia. Jei ne, nedelsdami atkurkite slaptažodį čia: {forgot}\n' +
+      '\n' +
+      '-- \nGlazecalc, {app}\n'
+  },
+  lv: {
+    subject: 'Jūsu lietotnes Glazecalc parole ir nomainīta',
+    text:
+      'Lietotnes Glazecalc konta {account} parole tikko ir nomainīta, un konts ir izrakstīts no visām ierīcēm, kurās tas bija pierakstīts.\n\n' +
+      'Ja to izdarījāt Jūs, nekas cits nav jādara. Ja ne, nekavējoties atiestatiet paroli šeit: {forgot}\n' +
       '\n' +
       '-- \nGlazecalc, {app}\n'
   }
