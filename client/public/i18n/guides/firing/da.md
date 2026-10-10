@@ -80,7 +80,7 @@ Kegletabellen angiver en selvstående kegle 6 til {{2232 °F; 1222 °C}}, men ku
 
 ## Kegletabellen {#cone-chart}
 
-Tallene er fra Ortons kegletabel (©2001) for selvstående kegler{{en: cones}}. Vælg den kolonne, der passer til, hvor hurtigt ovnen steg i de sidste {{180 °F; 100 °C}}. Ortons tommelfingerregel er kolonnen {{270 °F/h; 150 °C/h}} for en hurtig brænding, kolonnen {{108 °F/h; 60 °C/h}} for en middel og kolonnen {{27 °F/h; 15 °C/h}} for en langsom. Opvarmningshastigheden findes ved at dividere temperaturstigningen med det antal timer, den tog: En ovn, der når {{900 °F; 482 °C}} på 3 timer, varmer op med ca. {{300 °F/h; 167 °C/h}}.
+Tallene er fra Ortons kegletabel (©2001) for selvstående kegler{{en: cones}}. Vælg den kolonne, der passer til, hvor hurtigt ovnen steg i de sidste {{180 °F; 100 °C}}. Ortons tommelfingerregel er kolonnen {{270 °F/h; 150 °C/h}} for en hurtig brænding, kolonnen {{108 °F/h; 60 °C/h}} for en middel og kolonnen {{27 °F/h; 15 °C/h}} for en langsom. Opvarmningshastigheden findes ved at dividere temperaturstigningen med det antal timer, den tog: En ovn, der stiger {{900 °F; 500 °C}} på 3 timer, varmer op med ca. {{300 °F/h; 167 °C/h}}.
 
 Table: Ortons selvstående kegler: den temperatur, hver kegle bøjer ved, efter opvarmningshastighed i de sidste {{180 °F; 100 °C}}
 Label: Ortons kegletabel
@@ -248,7 +248,7 @@ På en manuelt styret ovn er kighullet den eneste måde at følge brændingen p�
 
 ### Efter brændingen
 
-Orton aflæser bøjningen som en urskive. En ubøjet kegle peger opad, på klokken 12. Slutpunktet er klokken 6, med spidsen i niveau med grundfladen: det punkt, tabellens temperaturer er målt ved. Fra klokken 4 til keglen rører ovnpladen er forskellen lille, »som regel 1 eller 2 grader«.
+Orton aflæser bøjningen som en urskive. En ubøjet kegle peger opad, på klokken 12. Slutpunktet er en bøjning på 90°, med spidsen i niveau med grundfladen, eller det Orton kalder klokken 5-stillingen: det punkt, tabellens temperaturer er målt ved. En kegle, der rører ovnpladen, står på klokken 6; fra klokken 4 til keglen rører ovnpladen er forskellen lille, »som regel 1 eller 2 grader«.
 
 Table: Aflæsning af et keglesæt efter brændingen (eksempel: kegle 5, 6 og 7 til en glasur til kegle 6)
 Label: Aflæsning af et keglesæt

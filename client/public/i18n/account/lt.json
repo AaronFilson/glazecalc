@@ -1,0 +1,237 @@
+{
+  "auth": {
+    "signInHeading": "Prisijungimas",
+    "keepHeading": "Pasilikite savo darbą",
+    "signUpHeading": "Paskyros kūrimas",
+    "signInLead": "Su sugrįžimu į savo glazūrų sąsiuvinį.",
+    "keepLead": "Pasilikite viską, ką sukūrėte kaip {name}: pridėkite el. pašto adresą ir slaptažodį. Tai ir toliau nemokama.",
+    "signUpLead": "Nemokama. Jūsų receptai, žaliavos ir užrašai lieka privatūs, prieinami tik jūsų paskyrai.",
+    "trialNote": "Jau turite paskyrą? Prisijungus į ją bus perkelta tai, ką sukūrėte kaip {name}. Čia pirmą kartą? Tuomet verčiau <signup>sukurkite paskyrą</signup> ir pasilikite darbą joje.",
+    "email": "El. paštas",
+    "password": "Slaptažodis",
+    "passwordHint": "Bent 8 simboliai.",
+    "confirmation": "Slaptažodžio patvirtinimas",
+    "passwordMissing": "Įveskite slaptažodį.",
+    "createAccount": "Sukurti paskyrą",
+    "signIn": "Prisijungti",
+    "haveAccount": "Jau turite paskyrą? <signin>Prisijunkite</signin>",
+    "forgot": "Pamiršote slaptažodį? Atkurkite jį",
+    "newHere": "Čia pirmą kartą? <signup>Sukurkite nemokamą paskyrą</signup>",
+    "signUpFailed": "Klaida: paskyros sukurti nepavyko.",
+    "signInFailed": "Klaida: prisijungti nepavyko."
+  },
+  "forgot": {
+    "heading": "Slaptažodžio atkūrimas",
+    "checkInbox": "Patikrinkite gautuosius ir šlamšto aplanką. Jei nieko negausite, patikrinkite adresą ir paprašykite dar kartą.",
+    "intro": "Įveskite savo paskyros el. pašto adresą ir atsiųsime nuorodą naujam slaptažodžiui pasirinkti.",
+    "email": "El. paštas:",
+    "send": "Siųsti atkūrimo nuorodą",
+    "back": "Grįžti į prisijungimą",
+    "failed": "Klaida: atkūrimo laiško išsiųsti nepavyko. Bandykite dar kartą."
+  },
+  "reset": {
+    "heading": "Naujo slaptažodžio pasirinkimas",
+    "signIn": "Prisijungti",
+    "incomplete": "Šiam puslapiui reikia nuorodos iš slaptažodžio atkūrimo laiško, o ši nuoroda nepilna.",
+    "askAgain": "Paprašyti naujos nuorodos",
+    "password": "Naujas slaptažodis:",
+    "confirmation": "Naujo slaptažodžio patvirtinimas:",
+    "save": "Įrašyti naują slaptažodį",
+    "hint": "Bent 8 simboliai. Visi prie paskyros prisijungę įrenginiai bus atjungti.",
+    "failed": "Klaida: slaptažodžio pakeisti nepavyko. Bandykite dar kartą."
+  },
+  "account": {
+    "trialTitle": "Jūsų bandomasis laikotarpis",
+    "trialLead": "Išbandote programą Glazecalc kaip {name}.",
+    "keepHeading": "Pasilikite savo darbą",
+    "keepText": "Šis bandomasis laikotarpis ir viskas, kas jame sukurta, bus pašalinta {date}. Sukurkite nemokamą paskyrą ir pasilikite tai: jūsų receptai, žaliavos ir užrašai liks tokie, kokie yra, o {name} liks jūsų rodomas vardas.",
+    "createAccount": "Sukurti paskyrą",
+    "title": "Jūsų paskyra",
+    "signedInAs": "Prisijungta kaip {email}.",
+    "changeHeading": "Slaptažodžio keitimas",
+    "current": "Dabartinis slaptažodis",
+    "currentMissing": "Įveskite dabartinį slaptažodį.",
+    "password": "Naujas slaptažodis",
+    "passwordHint": "Bent 8 simboliai. Kiti prie šios paskyros prisijungę įrenginiai bus atjungti.",
+    "confirmation": "Naujo slaptažodžio patvirtinimas",
+    "change": "Pakeisti slaptažodį",
+    "changeFailed": "Klaida: slaptažodžio pakeisti nepavyko. Bandykite dar kartą.",
+    "deleteHeading": "Paskyros panaikinimas",
+    "deleteText": "Bus pašalinta jūsų paskyra ir viskas, ką įrašėte: receptai, žaliavos, priedai, užrašai, degimo žurnalai ir patarimai. Šio veiksmo anuliuoti negalima.",
+    "deletePassword": "Patvirtinkite slaptažodžiu",
+    "deletePasswordMissing": "Įveskite slaptažodį, kad patvirtintumėte.",
+    "delete": "Panaikinti paskyrą",
+    "deleteFailed": "Klaida: paskyros panaikinti nepavyko. Bandykite dar kartą."
+  },
+  "settings": {
+    "heading": "Nustatymai",
+    "intro": "Įrašomi jūsų paskyroje, todėl galioja visuose įrenginiuose.",
+    "saveFailed": "Nustatymo įrašyti nepavyko. Bandykite dar kartą.",
+    "language": {
+      "legend": "Kalba",
+      "help": "Programos, vadovų ir jums siunčiamų laiškų kalba. Ją pakeitus, šis puslapis atsidaro ta kalba.",
+      "saved": "Įrašyta: {language}."
+    },
+    "region": {
+      "legend": "Kur dirbate",
+      "none": {
+        "label": "Nepasirinkta",
+        "saved": "Įrašyta: regionas nepasirinktas; numatytosios reikšmės nustatomos pagal naršyklę."
+      },
+      "saved": "Įrašyta: {region}.",
+      "help": "Ten parduodamos žaliavos ir toliau esančių nustatymų – skaičių, datų, temperatūrų ir piroskopų – numatytosios reikšmės. Kol nepasirinksite, jos nustatomos pagal naršyklės kalbą."
+    },
+    "format": {
+      "legend": "Skaičiai ir datos",
+      "auto": {
+        "label": "Pagal mano kalbą ir regioną",
+        "saved": "Įrašyta: skaičiai ir datos rašomi taip, kaip įprasta jūsų kalboje ir regione."
+      },
+      "saved": "Įrašyta: skaičių ir datų formatas – {language}.",
+      "help": "Kaip rašomi skaičiai ir datos: 12,345.6 ar 12.345,6, ir dienos bei mėnesio tvarka."
+    },
+    "decimalMark": {
+      "legend": "Kiekių įvedimas",
+      "either": {
+        "label": "Dešimtainis kablelis arba taškas",
+        "example": "12,5 arba 12.5",
+        "saved": "Įrašyta: kiekius galima įvesti su kableliu arba tašku."
+      },
+      "comma": {
+        "label": "Dešimtainis kablelis",
+        "saved": "Įrašyta: kiekiai įvedami su dešimtainiu kableliu."
+      },
+      "point": {
+        "label": "Dešimtainis taškas",
+        "saved": "Įrašyta: kiekiai įvedami su dešimtainiu tašku."
+      },
+      "help": "Kai tinka abu, kiekis, pvz., 1.250, skaitomas taip, kaip skaičiai rašomi pagal aukščiau esantį nustatymą."
+    },
+    "temperature": {
+      "legend": "Temperatūros",
+      "celsius": {
+        "label": "Celsijaus laipsniai",
+        "saved": "Įrašyta: temperatūros rodomos °C."
+      },
+      "fahrenheit": {
+        "label": "Farenheito laipsniai",
+        "saved": "Įrašyta: temperatūros rodomos °F."
+      },
+      "help": "Kol nepasirinksite, tai nustatoma pagal regioną: JAV – °F, kitur – °C."
+    },
+    "cones": {
+      "legend": "Degimas",
+      "orton": {
+        "label": "Pagal Ortono piroskopus",
+        "example": "piroskopas 04, piroskopas 6",
+        "saved": "Įrašyta: degimas pagal Ortono piroskopus."
+      },
+      "temperature": {
+        "label": "Pagal temperatūrą, kaip krosnies valdiklio programoje",
+        "saved": "Įrašyta: degimas pagal temperatūrą."
+      },
+      "help": "Kol nepasirinksite, tai nustatoma pagal regioną: JAV, Jungtinėje Karalystėje, Airijoje, Australijoje ir Naujojoje Zelandijoje – Ortono piroskopai, likusioje Europoje – temperatūra."
+    },
+    "density": {
+      "legend": "Glazūros tankis",
+      "sg": {
+        "label": "Santykinis tankis",
+        "saved": "Įrašyta: glazūros tankis nurodomas santykiniu tankiu.",
+        "example": "1,45"
+      },
+      "baume": {
+        "label": "Baumé laipsniai, pagal areometrą",
+        "saved": "Įrašyta: glazūros tankis nurodomas Baumé laipsniais."
+      },
+      "pint": {
+        "label": "Pintos masė, uncijos imperinėje pintoje",
+        "saved": "Įrašyta: glazūros tankis nurodomas pintos mase."
+      },
+      "help": "Kaip vadovuose nurodomas glazūros tirštumas. Kol nepasirinksite, tai nustatoma pagal regioną: Italijoje – Baumé laipsniai, kitur – santykinis tankis."
+    },
+    "theme": {
+      "legend": "Šviesus ar tamsus",
+      "system": {
+        "label": "Kaip nustatyta šiame įrenginyje",
+        "saved": "Įrašyta: šviesus ar tamsus – kaip nustatyta kiekviename įrenginyje."
+      },
+      "light": {
+        "label": "Šviesus",
+        "saved": "Įrašyta: visada šviesus."
+      },
+      "dark": {
+        "label": "Tamsus",
+        "saved": "Įrašyta: visada tamsus."
+      },
+      "help": "Receptai visada spausdinami juodu ant balto."
+    },
+    "palette": {
+      "legend": "Spalvos",
+      "saved": "Įrašyta: mygtukų ir nuorodų spalva – {palette}.",
+      "help": "Mygtukų, nuorodų ir kortelių spalvos, pavadintos glazūrų vardais. Kiekvieną lengva įskaityti ir šviesiame, ir tamsiame režime."
+    },
+    "weightUnit": {
+      "legend": "Svėrimo kiekiai",
+      "grams": {
+        "label": "Gramai",
+        "saved": "Įrašyta: svėrimo kiekiai gramais."
+      },
+      "pounds": {
+        "label": "Svarai ir uncijos",
+        "saved": "Įrašyta: svėrimo kiekiai svarais ir uncijomis."
+      },
+      "help": "Spausdintiems svėrimo sąrašams."
+    },
+    "gramPrecision": {
+      "legend": "Gramai spausdintuose sąrašuose",
+      "single": {
+        "label": "Gramo dešimtosios tikslumu",
+        "saved": "Įrašyta: gramai rodomi dešimtosios tikslumu."
+      },
+      "full": {
+        "label": "Visu tikslumu",
+        "saved": "Įrašyta: gramai rodomi visu tikslumu, iki 5 skaitmenų po kablelio."
+      },
+      "help": "Pasirinkus dešimtosios tikslumą, kiekiai, mažesni nei 10 g, vis tiek rodomi šimtųjų tikslumu (2,35 g) – tai skirta dažikliams mažuose bandomuosiuose užmaišuose."
+    },
+    "lead": {
+      "legend": "Švinas",
+      "off": {
+        "label": "Išjungta: niekada nepridėti švino į receptą ir jo nesiūlyti",
+        "saved": "Įrašyta: švinas niekada nepridedamas į receptą ir nesiūlomas."
+      },
+      "on": {
+        "label": "Įjungta: žaliavas su švinu galima pridėti ir siūlyti",
+        "saved": "Įrašyta: žaliavas su švinu galima pridėti ir siūlyti."
+      },
+      "help": "Švinas nuodingas jį įkvėpus ar prarijus ir kaupiasi organizme, o švino glazūra gali išskirti šviną į maistą ir gėrimus; jokie skaičiavimai negali parodyti, ar išdegtas dirbinys jį išskiria. Kai nustatymas išjungtas, receptai, kuriuose jau yra švino, vis tiek atsidaro tokie, kokie buvo.",
+      "warning": "Šviną naudokite tik kaip fritą, niekada ne kaip nefrituotą raudonąjį, baltąjį ar geltonąjį šviną ar švino glėtą. Maišykite šlapiuoju būdu, niekada jo nepurkškite, dėvėkite respiratorių ir valykite drėgnai. Švino glazūra padengtus dirbinius laikykite atokiau nuo maisto ir gėrimų, nebent išdegtas dirbinys išlaikė laboratorinį metalų išsiskyrimo tyrimą.",
+      "turnOn": "Įjungti šviną",
+      "keepOff": "Palikti išjungtą"
+    },
+    "englishTerms": {
+      "legend": "Angliški terminai",
+      "off": {
+        "label": "Išjungta",
+        "saved": "Įrašyta: angliški terminai nerodomi."
+      },
+      "on": {
+        "label": "Rodyti anglišką terminą po pagrindinių terminų",
+        "saved": "Įrašyta: po pagrindinių terminų rodomas angliškas terminas."
+      },
+      "help": "Patogu skaitant angliškus šaltinius, pvz., Digitalfire, kartu su šiuo: prie pagrindinių terminų skliaustuose nurodomas angliškas atitikmuo."
+    },
+    "notice": {
+      "legend": "Pranešimas apie vertimą",
+      "shown": {
+        "label": "Rodomas",
+        "saved": "Įrašyta: pranešimas rodomas."
+      },
+      "hidden": {
+        "label": "Paslėptas",
+        "saved": "Įrašyta: pranešimas paslėptas. Saugos vadovuose lieka viena jo eilutė."
+      },
+      "help": "Pastaba kiekvieno puslapio viršuje, kad jį išvertė dirbtinis intelektas, su galimybe pasiūlyti pataisymą."
+    }
+  }
+}

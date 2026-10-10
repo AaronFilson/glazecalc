@@ -80,7 +80,7 @@ The chart gives a self-supporting cone 6 as {{2232 °F; 1222 °C}}, but only whe
 
 ## The cone chart {#cone-chart}
 
-These figures are from Orton's cone chart (©2001) for self-supporting cones. Choose the column that matches how fast your kiln climbed over the last {{180 °F; 100 °C}}. Orton's rule of thumb is the {{270 °F/h; 150 °C/h}} column for a fast firing, the {{108 °F/h; 60 °C/h}} column for a medium one and the {{27 °F/h; 15 °C/h}} column for a slow one. To work out a rate, divide the temperature climbed by the hours it took: a kiln that reaches {{900 °F; 482 °C}} in 3 hours is heating at about {{300 °F/h; 167 °C/h}}.
+These figures are from Orton's cone chart (©2001) for self-supporting cones. Choose the column that matches how fast your kiln climbed over the last {{180 °F; 100 °C}}. Orton's rule of thumb is the {{270 °F/h; 150 °C/h}} column for a fast firing, the {{108 °F/h; 60 °C/h}} column for a medium one and the {{27 °F/h; 15 °C/h}} column for a slow one. To work out a rate, divide the temperature climbed by the hours it took: a kiln that climbs {{900 °F; 500 °C}} in 3 hours is heating at about {{300 °F/h; 167 °C/h}}.
 
 Table: Orton self-supporting cones: the temperature at which each bends, by heating rate over the last {{180 °F; 100 °C}}
 Label: Orton cone chart
@@ -248,7 +248,7 @@ On a manual kiln, the peephole is your only real-time signal, which is why the p
 
 ### After the firing
 
-Orton reads the bend as a clock face. An unbent cone points up, at 12 o'clock. The end point is 6 o'clock, the tip level with the base: the point the chart's temperatures are measured at. Between 4 o'clock and touching the shelf the difference is small, "usually 1 or 2 degrees".
+Orton reads the bend as a clock face. An unbent cone points up, at 12 o'clock. The end point is a 90° bend, the tip level with the base, which Orton calls the 5 o'clock position: the point the chart's temperatures are measured at. A cone touching the shelf is at 6 o'clock; between 4 o'clock and touching the shelf the difference is small, "usually 1 or 2 degrees".
 
 Table: Reading a cone pack after the firing (example: cones 5, 6 and 7 for a cone 6 glaze)
 Label: Reading a cone pack

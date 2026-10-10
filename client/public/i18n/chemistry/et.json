@@ -1,0 +1,23 @@
+{
+  "unknown-compound": "Valemis on tundmatu ühend {compound}",
+  "unknown-oxide": "Tooraines {material} on tundmatu oksiid {oxide}",
+  "invalid-oxide-amount": "Tooraines {material} on oksiidi {oxide} kogus vigane",
+  "loi-range": "Tooraine {material} hõõgumiskadu peab olema vähemalt 0 ja alla 100",
+  "no-oxides": "Tooraines {material} ei ole oksiide",
+  "no-name": "Toorainel peab olema nimi",
+  "no-analysis": "Toorainel {material} peab olema valem või analüüs",
+  "recipe-shape": "Retsept peab olema kirjete '{ material, amount }' massiiv või koguste vastendus",
+  "invalid-amount": "Tooraine {material} kogus on vigane",
+  "missing-material": "Retsepti real puudub tooraine",
+  "unknown-material": "Tundmatu tooraine {material}",
+  "no-flux": "Retseptis ei ole sulandavaid oksiide, seega on Segeri valem (UMF) määramata",
+  "no-target": "Sihtkoostises ei ole oksiide, mille poole püüelda",
+  "no-materials": "Arvutamiseks ei ole tooraineid",
+  "no-temperature": "Boori koguse määramiseks on vaja põletustemperatuuri",
+  "no-flux-to-rebuild": "Glasuuris ei ole sulandajaid, mida uuesti koostada",
+  "unknown-element": "Valemis {formula} on tundmatu element {element}",
+  "bad-formula": "Valemit {formula} ei õnnestunud tõlgendada",
+  "analysis-total": "Tooraine {material} analüüsi summa koos hõõgumiskaoga on {total}%; oodati umbes 100%.",
+  "stored-equivalent": "Tooraine {material} salvestatud ekvivalentmass ei vasta selle valemile ja hõõgumiskaole; selle asemel kasutati valemit ja hõõgumiskadu.",
+  "trace-flux": "Retseptis on sulandavaid oksiide ainult jälgedena, seega ei ole Segeri valem (UMF) sisukas."
+}

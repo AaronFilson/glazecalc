@@ -5,6 +5,7 @@ Ground rules:
 - Do not run git commands that change anything (no add, commit, checkout, stash, reset, restore).
 - Create or edit only the file(s) named under "Your files". Other translators are working in the same folder at the same time on other files and other languages; never touch theirs, and never edit any English file.
 - In Git Bash, Node is on PATH after `export PATH="/c/nvm4w/nodejs:$PATH"`.
+- Never put the user's name, email address or other personal details in a web request (headers such as User-Agent, URLs, form data).
 
 Read first, in full:
 
@@ -15,7 +16,7 @@ Read first, in full:
 Your files:
 {FILES}
 
-If an earlier attempt at your files was cut off, it may have left a partial translation file, or scratch files in the scratchpad folder (C:\Users\bellows\AppData\Local\Temp\claude\C--Users-bellows-gh-glazecalc\c9e2de23-6bd0-4c08-9910-8c09a9678344\scratchpad, folders named after the part and language). You may use that work only after checking each piece against the English; otherwise start over. Keep your own scratch files in a new folder there named {CODE}-<part>-2.
+If an earlier attempt at your files was cut off, it may have left a partial translation file, or scratch files in the scratchpad folder (C:\Users\bellows\AppData\Local\Temp\claude\C--Users-bellows-gh-glazecalc\fe37625a-51db-4239-bee8-4e00779ae983\scratchpad, folders named after the part and language). You may use that work only after checking each piece against the English; otherwise start over. Keep your own scratch files in a new folder there named {CODE}-<part>-2.
 
 How to work:
 

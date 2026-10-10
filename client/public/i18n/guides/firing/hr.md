@@ -80,7 +80,7 @@ Tablica za samostojeći stožac 6 daje {{2232 °F; 1222 °C}}, ali samo kad se u
 
 ## Tablica stožaca {#cone-chart}
 
-Ovi su podaci iz Ortonove tablice stožaca (©2001) za samostojeće stošce{{en: cones}}. Odaberite stupac koji odgovara brzini kojom se vaša peć zagrijavala u posljednjih {{180 °F; 100 °C}}. Ortonovo je okvirno pravilo: stupac {{270 °F/h; 150 °C/h}} za brzo pečenje, stupac {{108 °F/h; 60 °C/h}} za srednje i stupac {{27 °F/h; 15 °C/h}} za sporo. Brzinu izračunate tako da porast temperature podijelite s brojem sati koliko je trajao: peć koja dosegne {{900 °F; 482 °C}} za 3 sata zagrijava se brzinom od oko {{300 °F/h; 167 °C/h}}.
+Ovi su podaci iz Ortonove tablice stožaca (©2001) za samostojeće stošce{{en: cones}}. Odaberite stupac koji odgovara brzini kojom se vaša peć zagrijavala u posljednjih {{180 °F; 100 °C}}. Ortonovo je okvirno pravilo: stupac {{270 °F/h; 150 °C/h}} za brzo pečenje, stupac {{108 °F/h; 60 °C/h}} za srednje i stupac {{27 °F/h; 15 °C/h}} za sporo. Brzinu izračunate tako da porast temperature podijelite s brojem sati koliko je trajao: peć kojoj temperatura u 3 sata poraste za {{900 °F; 500 °C}} zagrijava se brzinom od oko {{300 °F/h; 167 °C/h}}.
 
 Table: Ortonovi samostojeći stošci: temperatura pri kojoj se svaki savije, prema brzini zagrijavanja u posljednjih {{180 °F; 100 °C}}
 Label: Ortonova tablica stožaca
@@ -248,7 +248,7 @@ Na peći s ručnim upravljanjem kontrolni otvor jedini vam je znak u stvarnom vr
 
 ### Nakon pečenja
 
-Orton savijanje očitava kao na brojčaniku sata. Nesavijeni stožac pokazuje prema gore, na 12 sati. Završna točka je na 6 sati, kad je vrh u razini podnožja: to je točka pri kojoj su mjerene temperature u tablici. Između položaja na 4 sata i dodira s pločom razlika je mala, „obično 1 ili 2 stupnja”.
+Orton savijanje očitava kao na brojčaniku sata. Nesavijeni stožac pokazuje prema gore, na 12 sati. Završna točka je savijanje za 90°, kad je vrh u razini podnožja, što Orton naziva položajem na 5 sati: to je točka pri kojoj su mjerene temperature u tablici. Stožac koji dodiruje ploču nalazi se na 6 sati; između položaja na 4 sata i dodira s pločom razlika je mala, „obično 1 ili 2 stupnja”.
 
 Table: Očitavanje skupa stožaca nakon pečenja (primjer: stošci 5, 6 i 7 za glazuru za stožac 6)
 Label: Očitavanje skupa stožaca

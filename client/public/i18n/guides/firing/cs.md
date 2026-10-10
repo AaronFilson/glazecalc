@@ -80,7 +80,7 @@ Tabulka uvádí pro samostojnou žároměrku 6 teplotu {{2232 °F; 1222 °C}}, a
 
 ## Tabulka žároměrek {#cone-chart}
 
-Tyto údaje pocházejí z Ortonovy tabulky žároměrek (©2001) pro samostojné žároměrky{{en: cones}}. Vyberte sloupec, který odpovídá tomu, jak rychle teplota ve vaší peci stoupala během posledních {{180 °F; 100 °C}}. Podle Ortonova orientačního pravidla platí pro rychlý výpal sloupec {{270 °F/h; 150 °C/h}}, pro střední sloupec {{108 °F/h; 60 °C/h}} a pro pomalý sloupec {{27 °F/h; 15 °C/h}}. Rychlost spočítáte tak, že nárůst teploty vydělíte počtem hodin, které trval: pec, která dosáhne {{900 °F; 482 °C}} za 3 hodiny, se ohřívá rychlostí asi {{300 °F/h; 167 °C/h}}.
+Tyto údaje pocházejí z Ortonovy tabulky žároměrek (©2001) pro samostojné žároměrky{{en: cones}}. Vyberte sloupec, který odpovídá tomu, jak rychle teplota ve vaší peci stoupala během posledních {{180 °F; 100 °C}}. Podle Ortonova orientačního pravidla platí pro rychlý výpal sloupec {{270 °F/h; 150 °C/h}}, pro střední sloupec {{108 °F/h; 60 °C/h}} a pro pomalý sloupec {{27 °F/h; 15 °C/h}}. Rychlost spočítáte tak, že nárůst teploty vydělíte počtem hodin, které trval: pec, ve které teplota za 3 hodiny stoupne o {{900 °F; 500 °C}}, se ohřívá rychlostí asi {{300 °F/h; 167 °C/h}}.
 
 Table: Ortonovy samostojné žároměrky: teplota, při které se každá ohne, podle rychlosti ohřevu během posledních {{180 °F; 100 °C}}
 Label: Tabulka Ortonových žároměrek
@@ -248,7 +248,7 @@ U ručně ovládané pece (bez regulátoru) je průzor vaším jediným signále
 
 ### Po výpalu
 
-Orton odečítá ohnutí jako na ciferníku hodin. Neohnutá žároměrka míří nahoru, na 12 hodin. Konečný bod je na 6 hodinách, se špičkou na úrovni základny: v tomto bodě se měří teploty v tabulce. Mezi polohou na 4 hodinách a dotykem plátu je rozdíl malý, „obvykle 1 nebo 2 stupně“.
+Orton odečítá ohnutí jako na ciferníku hodin. Neohnutá žároměrka míří nahoru, na 12 hodin. Konečný bod je ohnutí o 90°, se špičkou na úrovni základny, které Orton nazývá polohou na 5 hodinách: v tomto bodě se měří teploty v tabulce. Žároměrka, která se dotýká plátu, je na 6 hodinách; mezi polohou na 4 hodinách a dotykem plátu je rozdíl malý, „obvykle 1 nebo 2 stupně“.
 
 Table: Odečtení sady tří žároměrek po výpalu (příklad: žároměrky 5, 6 a 7 pro glazuru na žároměrku 6)
 Label: Odečtení sady žároměrek

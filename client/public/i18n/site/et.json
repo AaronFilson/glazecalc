@@ -1,0 +1,111 @@
+{
+  "landing": {
+    "eyebrow": "Glasuurikalkulaator ja töökoja märkmik",
+    "heading": "Tasuta glasuurikeemia keraamikutele.",
+    "lead": "Mõistke oma glasuure, ärge ainult segage neid. Sisestage retsept ja näete kohe selle Segeri valemit (UMF), ränidioksiidi ja alumiiniumoksiidi suhet ning sulandajate tasakaalu. Hoidke oma retseptid, toorained, värvained, märkmed ja põletuspäevikud koos ühes privaatses märkmikus.",
+    "trialEnded": "Teie proovikasutus on lõppenud. Alustage uut või looge tasuta konto, et oma töö säilitada.",
+    "tryIt": "Proovi kohe",
+    "createAccount": "Loo tasuta konto",
+    "trialFailed": "Proovikasutust ei õnnestunud praegu alustada. Proovige uuesti.",
+    "heroNote": "Proovimiseks pole registreerumist vaja · Tasuta ja avatud lähtekoodiga · Teie retseptid jäävad privaatseks",
+    "heroAlt": "Rida põletatud koonusekomplekte: iga komplekti valged püromeetrilised koonused on ahju kuumuses üle paindunud.",
+    "heroCaption": "Koonusekomplektid pärast põletust: iga koonus paindub, kui ahi on teinud piisavalt kuumustööd.",
+    "exampleHeading": "Vaadake, kuidas see töötab: klassikaline seladoni põhiglasuur",
+    "exampleCaption": "Bernard Leachi „4321“, mida põletatakse sageli koonuseni 10, massiosades.",
+    "material": "Tooraine",
+    "parts": "Osad",
+    "unityHeading": "Selle Segeri valem",
+    "exampleNote": "Sulandajate summa on 1, nii et mis tahes kaht glasuuri saab võrrelda võrdsetel alustel. Arvutatud siinsamas teie brauseris sama koodiga, mida kasutab kalkulaator.",
+    "featuresHeading": "Mida Glazecalc teeb",
+    "features": {
+      "unity": {
+        "title": "Segeri valem kohe",
+        "text": "Näete sulandajaid, alumiiniumoksiidi ja ränidioksiidi ühele viidud kujul, nii nagu glasuurikeemikud retsepte võrdlevad, kohe kui olete retsepti sisestanud."
+      },
+      "substitute": {
+        "title": "Parandamine ja asendamine",
+        "text": "Mõne tooraine tootmine lõpetati? Võrrelge valemeid, et leida asendustooraine, mis sulab samamoodi."
+      },
+      "notebook": {
+        "title": "Töökoja märkmik",
+        "text": "Hoidke retseptid, oma toorained, värvained, märkmed ja põletuspäevikud koos ühes kohas."
+      },
+      "learn": {
+        "title": "Õppimine töö käigus",
+        "text": "Lihtsas keeles juhendid, alates sellest, mis on glasuur, kuni selle ohutu põletamiseni, on kohe arvude kõrval."
+      }
+    },
+    "umfHeading": "Mis on Segeri valem?",
+    "umfRecipe": "Glasuuriretsept ütleb, kui palju igat toorainet kaaluda. Segeri valem (inglise keeles unity molecular formula, UMF) näitab, milleks need toorained ahjus muutuvad: mitu molekuli igat oksiidi on, ümber arvutatuna nii, et sulandajate summa on üks.",
+    "umfGroups": "Sulandajad panevad glasuuri sulama, alumiiniumoksiid muudab sulatise jäigemaks ja ränidioksiid moodustab klaasi. Nende kolme rühma võrdlemine selgitab, miks üks glasuur on läikiv ja teine matt või miks üks voolab, teine aga püsib paigal, ning näitab, kuidas asendada toorainet, mida enam ei müüda.",
+    "readAdvice": "Loe veel glasuurinõuandeid",
+    "closingHeading": "Alustage, kui olete valmis.",
+    "closingText": "Proovige kalkulaatorit kohe ja looge siis konto, et tehtu säilitada."
+  },
+  "about": {
+    "title": "Teave Glazecalci kohta",
+    "lead": "Tasuta avatud lähtekoodiga glasuurikeemia kalkulaator ja märkmik keraamikutele, keraamikakunstnikele ja õppijatele.",
+    "whatHeading": "Mida see teeb",
+    "what": "Glazecalc arvutab glasuuriretseptist – toorainetest ja sellest, kui palju igaüht kaalute – selle Segeri valemi (UMF): oksiidid, millest põletatud glasuur koosneb, ümber arvutatuna nii, et sulandajate summa on üks. Nii saab retsepte võrrelda, see aitab selgitada, kuidas glasuur käitub, ja on abiks, kui mõni tooraine tuleb asendada.",
+    "alongside": "Kalkulaatori kõrval hoiab see teie retsepte, teie enda tooraineid, värvaineid ja muid lisaaineid, märkmeid ja põletuspäevikuid; seal on ka leht praktiliste <advice>glasuurinõuannetega</advice> ja <guides>juhendid</guides> algajatele keraamikutele, alates sellest, mis on glasuur, kuni selle ohutu põletamiseni.",
+    "numbersHeading": "Kuidas arvud välja arvutatakse",
+    "numbers": "Iga toorainet kirjeldab selle keemiline valem või oksiidanalüüs ning lisaks hõõgumiskadu: osa, mis ahjus ära põleb, näiteks kriidis olev süsinikdioksiid või kaoliinis olev vesi. Glazecalc arvutab standardsete molaarmasside abil iga koguse ümber iga oksiidi mooliks, liidab need kogu retsepti ulatuses kokku ja jagab sulandajate moolide koguarvuga. Värvained ja muud lisaained on retsepti juures loetletud, kuid Segeri valemist välja jäetud, nagu tavaks.",
+    "guide": "Tulemused on suunised, mitte garantii. Päris toorained erinevad tarnijast tarnijasse ja partiist partiisse ning põletus on sama oluline kui keemia, seega katsetage iga glasuuri. Toiduga kokku puutuvate pindade glasuure tuleks katsetada metallide eraldumise suhtes.",
+    "builtHeading": "Kuidas see on ehitatud",
+    "built": "Glazecalc sai alguse 2017. aastal ja ehitati uuesti 2026. aastal. See on üks väike veebirakendus ja selle <source>lähtekood on GitHubis</source> MIT-litsentsi alusel.",
+    "stackBrowser": "Brauseris Angular 22 (eraldiseisvad komponendid ja signaalid), glasuurikeemia on väikeses ühises teegis.",
+    "stackServer": "TypeScripti API Node.js 24 ja Express 5 peal, andmebaasiks MongoDB 9; seda kontrollib üle 350 automaattesti.",
+    "stackHosting": "Töötab Dockeris Amazon Web Servicesis, nginxi taga, HTTPS-iga (Let’s Encrypt).",
+    "stackDeploy": "Juurutamine käib GitHub Actionsiga: iga muudatuse järel ehitatakse ja testitakse konteinerikujutised ning juurutamisel logitakse AWS-i sisse ilma salvestatud võtmeteta.",
+    "whoHeading": "Kes selle tegi",
+    "who": "Glazecalci on teinud Aaron Filson. Leidsite vea või on teil idee? <issues>Looge GitHubis probleemiteade</issues>.",
+    "studio": "Aaron Filsoni käsitöökeraamikat leiab stuudiost <studio>Updraft Pottery Studio</studio> Tacomas Washingtoni osariigis. Vaadake töid ja tellige ese, kui mõni teid kõnetab."
+  },
+  "privacy": {
+    "title": "Privaatsus",
+    "lead": "Viimati uuendatud oktoobris 2026.",
+    "shortHeading": "Lühidalt",
+    "short": "Glazecalc hoiab alles ainult selle, mida on vaja teie konto toimimiseks, ja mitte midagi enamat. Reklaame, analüütikat, jälgimisküpsiseid ega kolmandate osapoolte skripte ei ole. Teie andmeid ei müüda ega jagata kunagi.",
+    "storedHeading": "Mida salvestatakse",
+    "storedAccount": "<b>Teie konto:</b> teie e-posti aadress ja parool, mis salvestatakse ainult ühesuunalise räsina (bcrypt), mitte kunagi parooli enda kujul.",
+    "storedTrial": "<b>Proovikasutus (nupp Proovi kohe):</b> e-posti aadressi ega parooli pole, ainult loodud nimi, näiteks „speckled quiet kilns“. Proovikasutus ja kõik sellesse salvestatu kustutatakse automaatselt 14 päeva pärast selle algust, kui te ei loo nende säilitamiseks kontot.",
+    "storedSaved": "<b>Mida salvestate:</b> teie retseptid, toorained, lisaained, märkmed, põletuspäevikud ja nõuanded. Teised kasutajad neid ei näe.",
+    "storedResets": "<b>Parooli lähtestustaotlused:</b> iga lähtestuslingi sõrmejälg (mitte link ise), mis kustutatakse automaatselt, kui see 30 minuti pärast aegub.",
+    "storedBrowser": "<b>Teie brauseris:</b> üks küpsis, <code>glazecalc_session</code>, mis hoiab teid sisselogituna. See sisaldab teie sisselogimisluba, lehe skriptid ei saa seda lugeda, see saadetakse ainult Glazecalci enda serverisse ja kehtib 7 päeva (proovikasutuse puhul 14). Brauseri kohalikus salvestusruumis on märge, et olete sisse logitud, ning proovikasutuse ajal selle nimi ja lõppkuupäev. Väljalogimine eemaldab need.",
+    "emailHeading": "E-post",
+    "email": "Glazecalc saadab e-kirju ainult siis, kui palute parooli lähtestada, ja siis, kui teie parool muutub. Kirjad saadetakse teenuse Amazon Simple Email Service kaudu. Uudiskirja ega turunduskirju ei ole.",
+    "hostingHeading": "Logid, varukoopiad ja majutus",
+    "logs": "Veebiserver salvestab iga päringu koos teie IP-aadressiga logisse, mida hoitakse 14 päeva saidi käitamiseks ja turvamiseks.",
+    "backups": "Andmebaasi krüpteeritud varukoopiaid hoitakse 30 päeva ja serveri ketta koopiaid 7 päeva, et saiti saaks pärast riket taastada.",
+    "hosting": "Kõik on majutatud teenuses Amazon Web Services Ameerika Ühendriikides (Oregonis).",
+    "deletingHeading": "Andmete kustutamine",
+    "deleting": "Konto saab kustutada oma <account>kontolehel</account>. See eemaldab kohe teie konto ja kõik, mille olete salvestanud; proovikasutuse puhul teeb sama nupp Loobu proovikasutusest. Varukoopiates olevad koopiad kaovad varukoopiate aegudes 30 päeva jooksul.",
+    "questionsHeading": "Küsimused",
+    "questions": "Küsige, <issues>luues GitHubis probleemiteate</issues>. Kui need privaatsuspõhimõtted muutuvad, muutub ka selle lehe ülaosas olev kuupäev."
+  },
+  "notFound": {
+    "heading": "Lehte ei leitud",
+    "text": "Sellel aadressil lehte ei ole. See võib olla teisaldatud või võib link olla valesti kirjutatud.",
+    "start": "Mine avalehele"
+  },
+  "advice": {
+    "title": "Glasuurinõuanded",
+    "lead": "Praktilised näpunäited segamise, glasuurimise ja põletamise kohta ning teie enda nõuanded.",
+    "signUp": "Oma nõuannete hoidmiseks <signup>looge tasuta konto</signup> või <signin>logige sisse</signin>.",
+    "generalHeading": "Üldised nõuanded",
+    "tags": "Sildid: {list}",
+    "addHeading": "Oma nõuande lisamine",
+    "titleLabel": "Pealkiri:",
+    "tagsLabel": "Sildid:",
+    "contentLabel": "Nõuande sisu:",
+    "save": "Salvesta",
+    "mineHeading": "Minu nõuanded",
+    "nothingSaved": "Midagi pole veel salvestatud.",
+    "titleMissing": "Sisestage nõuande pealkiri.",
+    "contentMissing": "Kirjutage nõuanne.",
+    "fetchFailed": "Nõuannete laadimisel tekkis viga.",
+    "standardFetchFailed": "Serveri nõuannete laadimisel tekkis viga.",
+    "saved": "Nõuanne on lisatud.",
+    "saveFailed": "Nõuande saatmisel tekkis viga."
+  }
+}

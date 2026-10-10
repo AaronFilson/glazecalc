@@ -1,0 +1,88 @@
+{
+  "home": {
+    "title": "Jūsu darbnīcas burtnīca",
+    "signedInAs": "Jūs pierakstījāties kā {email}.",
+    "trying": "Jūs izmēģināt lietotni Glazecalc kā {name}. Sāciet ar recepti.",
+    "welcomeBack": "Turpiniet tur, kur pārtraucāt.",
+    "sections": {
+      "recipe": {
+        "title": "Receptes",
+        "text": "Sastādiet glazūru no izejvielām un daudzumiem, apskatiet tās Zēgera formulu (UMF) un saglabājiet to."
+      },
+      "material": {
+        "title": "Izejvielas",
+        "text": "Pievienojiet savas izejvielas no ķīmiskās formulas vai piegādātāja analīzes."
+      },
+      "additive": {
+        "title": "Piedevas un krāsvielas",
+        "text": "Glabājiet krāsvielas un blāvotājus, ko pievienojat papildus pamatglazūrai."
+      },
+      "firing": {
+        "title": "Apdedzināšanas žurnāli",
+        "text": "Pierakstiet katras apdedzināšanas laikus, temperatūras un konusus."
+      },
+      "notes": {
+        "title": "Piezīmes",
+        "text": "Glabājiet provju rezultātus un visu citu, ko vērts atcerēties."
+      },
+      "advice": {
+        "title": "Padomi par glazūrām",
+        "text": "Padomi par jaukšanu, glazēšanu un apdedzināšanu, kā arī jūsu pašu padomi."
+      },
+      "guides": {
+        "title": "Ceļveži",
+        "text": "No tā, kas ir glazūra, līdz tās apdedzināšanai, un kā pa ceļam pasargāt visus."
+      }
+    },
+    "newHere": "Vai Zēgera formula jums ir kas jauns? <advice>Padomu lapā</advice> ir izskaidroti pamati, bet <about>lapā par lietotni</about> aprakstīts, kā darbojas lietotne Glazecalc."
+  },
+  "firing": {
+    "title": "Apdedzināšanas žurnāli",
+    "lead": "Pierakstiet katru apdedzināšanu: laikus, temperatūras, konusus un piezīmes par krāsni.",
+    "titleLabel": "Apdedzināšanas nosaukums:",
+    "kiln": "Krāsns:",
+    "date": "Apdedzināšanas datums:",
+    "notes": "Piezīmes par apdedzināšanu:",
+    "fieldSelect": "Izvēlieties un pievienojiet apdedzināšanas žurnālam laukus:",
+    "addField": "Pievienot lauku",
+    "included": "Pievienotie lauki:",
+    "fieldName": "Lauka nosaukums: {name}",
+    "moveLeft": "Pārvietot lauku pa kreisi",
+    "moveRight": "Pārvietot lauku pa labi",
+    "removeField": "Noņemt lauku",
+    "addRow": "Pievienot rindu apdedzināšanas tabulai",
+    "recordHeading": "Reģistrēt apdedzināšanu",
+    "rowActions": "Darbības ar rindu",
+    "cell": "{field}, rinda {row}",
+    "removeRow": "Noņemt rindu",
+    "save": "Saglabāt",
+    "storedHeading": "Manas saglabātās apdedzināšanas:",
+    "stored": "Nosaukums: {title}, krāsns: {kiln}, datums: {date}",
+    "storedNotes": "Piezīmes: {notes}",
+    "titleMissing": "Ievadiet apdedzināšanas nosaukumu.",
+    "fieldsMissing": "Pievienojiet vismaz vienu lauku, ko reģistrēt, piemēram, lauku {example}.",
+    "chooseField": "Izvēlieties pievienojamo lauku, pēc tam nospiediet pogu Pievienot lauku.",
+    "fetchFailed": "Neizdevās ielādēt apdedzināšanas žurnālu datus.",
+    "saved": "Izdevās: apdedzināšanas žurnāls ir saglabāts serverī.",
+    "saveFailed": "Kļūda: pieprasījums serverim neizdevās."
+  },
+  "notes": {
+    "title": "Piezīmes",
+    "lead": "Viss cits par jūsu glazūrām, ko vērts atcerēties.",
+    "intro": "Šī ir piezīmju lapa. Šeit varat rakstīt piezīmes un tās saglabāt.",
+    "titleLabel": "Nosaukums:",
+    "content": "Jūsu piezīme:",
+    "save": "Saglabāt",
+    "mineHeading": "Manas saglabātās piezīmes:",
+    "titleMissing": "Ievadiet piezīmes nosaukumu.",
+    "contentMissing": "Uzrakstiet piezīmi.",
+    "untitled": "Piezīme bez nosaukuma",
+    "fetchFailed": "Neizdevās ielādēt piezīmju datus.",
+    "saved": "Izdevās: piezīme ir saglabāta serverī.",
+    "saveFailed": "Kļūda: pieprasījums serverim neizdevās."
+  },
+  "trash": {
+    "title": "Atkritne",
+    "comingSoon": "Atkritne būs pieejama drīzumā, nākamajā lietotnes Glazecalc versijā. Līdz tam dzēsiet un noņemiet uzmanīgi: kad kaut kas ir izdzēsts, informācija ir zaudēta."
+  }
+}

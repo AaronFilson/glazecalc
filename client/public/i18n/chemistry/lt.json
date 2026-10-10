@@ -1,0 +1,23 @@
+{
+  "unknown-compound": "Formulėje yra nežinomas junginys {compound}",
+  "unknown-oxide": "Žaliavoje {material} yra nežinomas oksidas {oxide}",
+  "invalid-oxide-amount": "Neteisingas oksido {oxide} kiekis žaliavoje {material}",
+  "loi-range": "Žaliavos {material} LOI turi būti ne mažesnis kaip 0 ir mažesnis nei 100",
+  "no-oxides": "Žaliava {material} neturi oksidų",
+  "no-name": "Žaliavai būtinas pavadinimas",
+  "no-analysis": "Žaliavai {material} reikia formulės arba analizės",
+  "recipe-shape": "Receptas turi būti '{ material, amount }' įrašų masyvas arba kiekių rinkinys",
+  "invalid-amount": "Neteisingas žaliavos {material} kiekis",
+  "missing-material": "Recepto eilutėje trūksta žaliavos",
+  "unknown-material": "Nežinoma žaliava {material}",
+  "no-flux": "Recepte nėra fliusų oksidų, todėl Segerio formulė (UMF) neapibrėžta",
+  "no-target": "Tikslinėje formulėje nėra oksidų, kurių būtų galima siekti",
+  "no-materials": "Nėra žaliavų, kurioms būtų galima apskaičiuoti kiekius",
+  "no-temperature": "Boro kiekiui nustatyti reikia degimo temperatūros",
+  "no-flux-to-rebuild": "Glazūroje nėra fliusų, kuriuos būtų galima sudaryti iš naujo",
+  "unknown-element": "Formulėje {formula} yra nežinomas cheminis elementas {element}",
+  "bad-formula": "Nepavyko atpažinti formulės {formula}",
+  "analysis-total": "Žaliavos {material} analizės suma su LOI yra {total} %; tikėtasi maždaug 100 %.",
+  "stored-equivalent": "Įrašyta žaliavos {material} ekvivalentinė masė neatitinka jos formulės ir LOI; vietoj jos panaudotos formulė ir LOI.",
+  "trace-flux": "Recepte yra tik fliusų oksidų pėdsakų, todėl Segerio formulė (UMF) neturi prasmės."
+}

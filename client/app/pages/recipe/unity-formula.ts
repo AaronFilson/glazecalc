@@ -85,7 +85,6 @@ export function silicaAluminaRatio(analysis: RecipeAnalysis): number | null {
       gap: 0.75rem 1.5rem;
     }
     .umf-column-title {
-      font-family: var(--gc-sans);
       font-size: 0.95rem;
       font-weight: 600;
       color: var(--gc-muted);

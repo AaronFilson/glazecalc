@@ -80,7 +80,7 @@ La tabla da para un cono 6 con pie {{2232 °F; 1222 °C}}, pero solo cuando los 
 
 ## Tabla de conos {#cone-chart}
 
-Estas cifras proceden de la tabla de conos{{en: cone chart}} de Orton (©2001) para conos con pie. Elija la columna que corresponda a la velocidad a la que subió su horno durante los últimos {{180 °F; 100 °C}}. La regla práctica de Orton es la columna de {{270 °F/h; 150 °C/h}} para una cocción rápida, la de {{108 °F/h; 60 °C/h}} para una media y la de {{27 °F/h; 15 °C/h}} para una lenta. Para calcular una velocidad, divida los grados que ha subido entre las horas que ha tardado: un horno que llega a {{900 °F; 482 °C}} en 3 horas calienta a unos {{300 °F/h; 167 °C/h}}.
+Estas cifras proceden de la tabla de conos{{en: cone chart}} de Orton (©2001) para conos con pie. Elija la columna que corresponda a la velocidad a la que subió su horno durante los últimos {{180 °F; 100 °C}}. La regla práctica de Orton es la columna de {{270 °F/h; 150 °C/h}} para una cocción rápida, la de {{108 °F/h; 60 °C/h}} para una media y la de {{27 °F/h; 15 °C/h}} para una lenta. Para calcular una velocidad, divida los grados que ha subido entre las horas que ha tardado: un horno que sube {{900 °F; 500 °C}} en 3 horas calienta a unos {{300 °F/h; 167 °C/h}}.
 
 Table: Conos Orton con pie: la temperatura a la que se dobla cada uno, según la velocidad de subida durante los últimos {{180 °F; 100 °C}}
 Label: Tabla de conos Orton
@@ -248,7 +248,7 @@ En un horno manual, la mirilla es su única señal en tiempo real; por eso el tr
 
 ### Después de la cocción
 
-Orton lee el doblado como la esfera de un reloj. Un cono sin doblar apunta hacia arriba, a las 12 en punto. El punto final son las 6 en punto, con la punta a la altura de la base: el punto al que corresponden las temperaturas de la tabla. Entre las 4 en punto y tocar la placa, la diferencia es pequeña, «normalmente 1 o 2 grados».
+Orton lee el doblado como la esfera de un reloj. Un cono sin doblar apunta hacia arriba, a las 12 en punto. El punto final es un doblado de 90°, con la punta a la altura de la base, lo que Orton llama la posición de las 5 en punto: el punto al que corresponden las temperaturas de la tabla. Un cono que toca la placa está a las 6 en punto; entre las 4 en punto y tocar la placa, la diferencia es pequeña, «normalmente 1 o 2 grados».
 
 Table: Cómo leer un trío de conos después de la cocción (ejemplo: conos 5, 6 y 7 para un esmalte de cono 6)
 Label: Cómo leer un trío de conos

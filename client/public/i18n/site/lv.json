@@ -1,0 +1,111 @@
+{
+  "landing": {
+    "eyebrow": "Glazūru kalkulators un darbnīcas burtnīca",
+    "heading": "Bezmaksas glazūru ķīmija keramiķiem.",
+    "lead": "Izprotiet savas glazūras, ne tikai sajauciet tās. Ievadiet recepti un uzreiz redziet tās Zēgera formulu (UMF), silīcija dioksīda un alumīnija oksīda attiecību un kušņu attiecību. Glabājiet receptes, izejvielas, krāsvielas, piezīmes un apdedzināšanas žurnālus kopā vienā privātā burtnīcā.",
+    "trialEnded": "Jūsu izmēģinājums ir beidzies. Sāciet jaunu vai izveidojiet bezmaksas kontu, lai saglabātu savu darbu.",
+    "tryIt": "Izmēģināt tūlīt",
+    "createAccount": "Izveidot bezmaksas kontu",
+    "trialFailed": "Pašlaik neizdevās sākt izmēģinājumu. Mēģiniet vēlreiz.",
+    "heroNote": "Lai izmēģinātu, nav jāreģistrējas · Bezmaksas atvērtā pirmkoda lietotne · Jūsu receptes paliek privātas",
+    "heroAlt": "Apdedzinātu konusu komplektu rinda: katra komplekta baltie temperatūras kontroles konusi krāsns karstumā ir saliekušies.",
+    "heroCaption": "Konusu komplekti pēc apdedzināšanas: katrs konuss saliecas, kad krāsnī ir bijusi pietiekama siltuma iedarbība.",
+    "exampleHeading": "Kā tas darbojas: klasiska seladona pamatglazūra",
+    "exampleCaption": "Bernarda Līča (Bernard Leach) recepte “4321”, ko bieži apdedzina līdz konusam 10, masas daļās.",
+    "material": "Izejviela",
+    "parts": "Daļas",
+    "unityHeading": "Tās Zēgera formula",
+    "exampleNote": "Kušņu summa ir 1, tāpēc jebkuras divas glazūras var salīdzināt objektīvi. Aprēķināts turpat jūsu pārlūkprogrammā ar to pašu kodu, ko izmanto kalkulators.",
+    "featuresHeading": "Ko dara lietotne Glazecalc",
+    "features": {
+      "unity": {
+        "title": "Zēgera formula uzreiz",
+        "text": "Tiklīdz ievadāt recepti, redziet kušņus, alumīnija oksīdu un silīcija dioksīdu Zēgera formulā – tā, kā receptes salīdzina glazūru ķīmiķi."
+      },
+      "substitute": {
+        "title": "Labošana un aizstāšana",
+        "text": "Vai kādu izejvielu vairs neražo? Salīdziniet formulas un atrodiet aizstājēju, kas kūst tāpat."
+      },
+      "notebook": {
+        "title": "Jūsu darbnīcas burtnīca",
+        "text": "Glabājiet receptes, savas izejvielas, krāsvielas, piezīmes un apdedzināšanas žurnālus vienuviet."
+      },
+      "learn": {
+        "title": "Mācieties darot",
+        "text": "Blakus skaitļiem ir vienkāršā valodā rakstīti ceļveži: no tā, kas ir glazūra, līdz tās drošai apdedzināšanai."
+      }
+    },
+    "umfHeading": "Kas ir Zēgera formula?",
+    "umfRecipe": "Glazūras recepte norāda, cik daudz katras izejvielas jānosver. Zēgera formula (angļu valodā unity molecular formula, UMF) parāda, par ko šīs izejvielas pārvēršas krāsnī: cik ir katra oksīda molekulu, pārrēķinot tā, lai kušņu summa būtu viens.",
+    "umfGroups": "Kušņi liek glazūrai izkust, alumīnija oksīds padara kausējumu stigrāku, un silīcija dioksīds veido stiklu. Salīdzinot šīs trīs grupas, var saprast, kāpēc viena glazūra ir spīdīga, bet cita matēta vai kāpēc viena notek, bet cita paliek vietā, un var redzēt, kā aizstāt izejvielu, ko vairs nepārdod.",
+    "readAdvice": "Lasīt citus padomus par glazūrām",
+    "closingHeading": "Viss gatavs – sāciet, kad vēlaties.",
+    "closingText": "Izmēģiniet kalkulatoru tūlīt un pēc tam izveidojiet kontu, lai saglabātu paveikto."
+  },
+  "about": {
+    "title": "Par lietotni Glazecalc",
+    "lead": "Bezmaksas atvērtā pirmkoda glazūru ķīmijas kalkulators un burtnīca podniekiem, keramiķiem un studentiem.",
+    "whatHeading": "Ko tā dara",
+    "what": "Lietotne Glazecalc pārvērš glazūras recepti – izejvielas un to, cik daudz katras nosverat, – tās Zēgera formulā: oksīdos, no kuriem glazūra sastāv pēc apdedzināšanas, pārrēķinot tā, lai kušņu summa būtu viens. Tādējādi receptes var salīdzināt, tas palīdz izskaidrot, kā glazūra uzvedas, un noder, kad kāda izejviela jāaizstāj.",
+    "alongside": "Papildus kalkulatoram lietotnē glabājas jūsu receptes, jūsu pašu izejvielas, krāsvielas un citas piedevas, piezīmes un apdedzināšanas žurnāli, lapa ar praktiskiem <advice>padomiem par glazūrām</advice> un <guides>ceļveži</guides> iesācējiem: no tā, kas ir glazūra, līdz tās drošai apdedzināšanai.",
+    "numbersHeading": "Kā aprēķina skaitļus",
+    "numbers": "Katru izejvielu raksturo tās ķīmiskā formula vai oksīdu analīze, kā arī karsēšanas zudumi: daļa, kas krāsnī zūd, piemēram, oglekļa dioksīds krītā vai ūdens kaolīnā. Lietotne Glazecalc ar standarta molmasām pārrēķina katru daudzumu katra oksīda molos, saskaita tos visā receptē un dala ar kopējo kušņu molu skaitu. Krāsvielas un citas piedevas ir norādītas receptē, bet, kā ierasts, Zēgera formulā tās neieskaita.",
+    "guide": "Rezultāti ir orientieris, nevis garantija. Reālās izejvielas atšķiras no piegādātāja uz piegādātāju un no partijas uz partiju, un apdedzināšana ir tikpat svarīga kā ķīmija, tāpēc pārbaudiet katru glazūru. Glazūras virsmām, kas saskaras ar pārtiku, vajadzētu pārbaudīt, vai no tām neizskalojas metāli.",
+    "builtHeading": "Kā tā ir veidota",
+    "built": "Lietotne Glazecalc tapa 2017. gadā un tika pārbūvēta 2026. gadā. Tā ir viena neliela tīmekļa lietotne, un tās <source>pirmkods ir pieejams vietnē GitHub</source> saskaņā ar MIT licenci.",
+    "stackBrowser": "Angular 22 pārlūkprogrammā (standalone komponenti un signāli), glazūru ķīmija – nelielā kopīgā bibliotēkā.",
+    "stackServer": "TypeScript API uz Node.js 24 un Express 5 ar MongoDB 9, ko pārbauda vairāk nekā 350 automātisko testu.",
+    "stackHosting": "Darbojas Docker vidē Amazon Web Services platformā aiz nginx ar HTTPS no Let’s Encrypt.",
+    "stackDeploy": "Izvietošanu veic GitHub Actions: pēc katras izmaiņas konteineru attēlus izveido un pārbauda, un izvietošanas laikā pierakstās AWS bez saglabātām atslēgām.",
+    "whoHeading": "Kas to izveidoja",
+    "who": "Lietotni Glazecalc veido Ārons Filsons (Aaron Filson). Vai atradāt problēmu vai jums ir ideja? <issues>Izveidojiet pieteikumu vietnē GitHub</issues>.",
+    "studio": "Ārona Filsona ar rokām darinātā keramika ir apskatāma darbnīcā <studio>Updraft Pottery Studio</studio> Takomā, Vašingtonas štatā. Aplūkojiet darbus un pasūtiet kādu, ja tas jūs uzrunā."
+  },
+  "privacy": {
+    "title": "Privātums",
+    "lead": "Pēdējo reizi atjaunināts 2026. gada oktobrī.",
+    "shortHeading": "Īsumā",
+    "short": "Lietotne Glazecalc glabā tikai to, kas nepieciešams jūsu konta darbībai, un neko vairāk. Nav reklāmu, analītikas, izsekošanas sīkfailu un trešo pušu skriptu. Jūsu datus nekad nepārdod un nenodod citiem.",
+    "storedHeading": "Ko glabā",
+    "storedAccount": "<b>Jūsu konts:</b> jūsu e-pasta adrese un parole, ko glabā tikai kā vienvirziena jaucējvērtību (bcrypt), nekad kā pašu paroli.",
+    "storedTrial": "<b>Izmēģinājums (poga Izmēģināt tūlīt):</b> bez e-pasta adreses un paroles, tikai ģenerēts vārds, piemēram, “speckled quiet kilns”. Izmēģinājumu un visu tajā saglabāto automātiski dzēš 14 dienas pēc tā sākuma, ja vien neizveidojat kontu, lai tos saglabātu.",
+    "storedSaved": "<b>Tas, ko saglabājat:</b> jūsu receptes, izejvielas, piedevas, piezīmes, apdedzināšanas žurnāli un padomi. Citi lietotāji tos neredz.",
+    "storedResets": "<b>Paroles atiestatīšanas pieprasījumi:</b> katras atiestatīšanas saites nospiedums (nevis pati saite), ko automātiski dzēš, kad pēc 30 minūtēm beidzas saites derīgums.",
+    "storedBrowser": "<b>Jūsu pārlūkprogrammā:</b> viens sīkfails, <code>glazecalc_session</code>, kas uztur jūsu pierakstīšanos. Tajā ir jūsu pierakstīšanās marķieris, lapas skripti to nevar nolasīt, to sūta tikai uz lietotnes Glazecalc serveri, un tas ir derīgs 7 dienas (izmēģinājumam – 14). Lokālajā krātuvē glabājas atzīme, ka jūsu pierakstīšanās ir aktīva, un izmēģinājuma laikā – tā nosaukums un beigu datums. Izrakstīšanās tos dzēš.",
+    "emailHeading": "E-pasts",
+    "email": "Lietotne Glazecalc sūta e-pastu tikai tad, ja lūdzat atiestatīt paroli, un tad, kad jūsu parole mainās. To sūta ar Amazon Simple Email Service starpniecību. Nav ne jaunumu vēstuļu, ne mārketinga e-pasta.",
+    "hostingHeading": "Žurnāli, rezerves kopijas un mitināšana",
+    "logs": "Tīmekļa serveris katru pieprasījumu, arī jūsu IP adresi, ieraksta žurnālā, ko glabā 14 dienas, lai nodrošinātu vietnes darbību un drošību.",
+    "backups": "Datubāzes šifrētās rezerves kopijas glabā 30 dienas, bet servera diska kopijas – 7 dienas, lai pēc kļūmes vietni varētu atjaunot.",
+    "hosting": "Visu mitina Amazon Web Services ASV (Oregonā).",
+    "deletingHeading": "Jūsu datu dzēšana",
+    "deleting": "Savu kontu varat dzēst <account>konta lapā</account>. Tas nekavējoties dzēš jūsu kontu un visu saglabāto. Poga Atmest izmēģinājumu to pašu dara ar izmēģinājumu. Rezerves kopijās esošie dati izzūd, kad šīs kopijas noveco, 30 dienu laikā.",
+    "questionsHeading": "Jautājumi",
+    "questions": "Jautājumus uzdodiet, <issues>izveidojot pieteikumu vietnē GitHub</issues>. Ja šī politika mainās, mainās arī datums šīs lapas augšdaļā."
+  },
+  "notFound": {
+    "heading": "Lapa nav atrasta",
+    "text": "Šajā adresē nav lapas. Iespējams, tā ir pārvietota vai saitē ir drukas kļūda.",
+    "start": "Doties uz sākumlapu"
+  },
+  "advice": {
+    "title": "Padomi par glazūrām",
+    "lead": "Praktiski padomi par jaukšanu, glazēšanu un apdedzināšanu, kā arī jūsu pašu padomi.",
+    "signUp": "<signup>Izveidojiet bezmaksas kontu</signup> vai <signin>pierakstieties</signin>, lai saglabātu savus padomus.",
+    "generalHeading": "Vispārīgi padomi",
+    "tags": "Birkas: {list}",
+    "addHeading": "Sava padoma pievienošana",
+    "titleLabel": "Virsraksts:",
+    "tagsLabel": "Birkas:",
+    "contentLabel": "Padoma saturs:",
+    "save": "Saglabāt",
+    "mineHeading": "Mani padomi",
+    "nothingSaved": "Pagaidām nekas nav saglabāts.",
+    "titleMissing": "Ievadiet padoma virsrakstu.",
+    "contentMissing": "Uzrakstiet padomu.",
+    "fetchFailed": "Ielādējot padomus, radās kļūda.",
+    "standardFetchFailed": "Ielādējot padomus no servera, radās kļūda.",
+    "saved": "Padoms ir pievienots.",
+    "saveFailed": "Iesniedzot padomu, radās kļūda."
+  }
+}

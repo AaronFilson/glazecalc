@@ -202,6 +202,36 @@ export const RESET: Record<string, Email> = {
       'Poveznica vrijedi samo jednom. Ako to niste zatražili, zanemarite ovu e-poruku; vaša lozinka ostaje ista.\n' +
       '\n' +
       '-- \nGlazecalc, {app}\n'
+  },
+  lt: {
+    subject: 'Glazecalc: slaptažodžio atkūrimas',
+    text:
+      'Kažkas (tikimės, kad jūs) paprašė atkurti programos Glazecalc paskyros {account} slaptažodį.\n\n' +
+      'Norėdami pasirinkti naują slaptažodį, per {minutes} min. atidarykite šią nuorodą:\n\n' +
+      '{link}\n\n' +
+      'Nuorodą galima panaudoti vieną kartą. Jei to neprašėte, nekreipkite dėmesio į šį laišką; jūsų slaptažodis liks toks pat.\n' +
+      '\n' +
+      '-- \nGlazecalc, {app}\n'
+  },
+  lv: {
+    subject: 'Lietotnes Glazecalc paroles atiestatīšana',
+    text:
+      'Kāds (cerams, Jūs) pieprasīja atiestatīt paroli lietotnes Glazecalc kontam {account}.\n\n' +
+      'Lai izvēlētos jaunu paroli, atveriet šo saiti {minutes} min laikā:\n\n' +
+      '{link}\n\n' +
+      'Saite darbojas vienu reizi. Ja to nepieprasījāt, neņemiet vērā šo vēstuli – Jūsu parole paliek tā pati.\n' +
+      '\n' +
+      '-- \nGlazecalc, {app}\n'
+  },
+  et: {
+    subject: 'Glazecalci parooli lähtestamine',
+    text:
+      'Keegi (loodetavasti teie) palus lähtestada Glazecalci konto {account} parooli.\n\n' +
+      'Uue parooli valimiseks avage see link {minutes} minuti jooksul:\n\n' +
+      '{link}\n\n' +
+      'Link töötab ühe korra. Kui te seda ei palunud, jätke see e-kiri tähelepanuta; teie parool jääb samaks.\n' +
+      '\n' +
+      '-- \nGlazecalc, {app}\n'
   }
 };
 
@@ -355,6 +385,30 @@ export const CHANGED: Record<string, Email> = {
     text:
       'Lozinka za račun {account} u aplikaciji Glazecalc upravo je promijenjena, a svi uređaji na kojima je račun bio prijavljen odjavljeni su.\n\n' +
       'Ako ste to bili vi, ne morate ništa drugo učiniti. Ako niste, odmah ponovno postavite lozinku ovdje: {forgot}\n' +
+      '\n' +
+      '-- \nGlazecalc, {app}\n'
+  },
+  lt: {
+    subject: 'Glazecalc: slaptažodis pakeistas',
+    text:
+      'Programos Glazecalc paskyros {account} slaptažodis ką tik pakeistas, ir visi įrenginiai, kuriuose buvo prisijungta, atjungti.\n\n' +
+      'Jei tai buvote jūs, daugiau nieko daryti nereikia. Jei ne, nedelsdami atkurkite slaptažodį čia: {forgot}\n' +
+      '\n' +
+      '-- \nGlazecalc, {app}\n'
+  },
+  lv: {
+    subject: 'Jūsu lietotnes Glazecalc parole ir nomainīta',
+    text:
+      'Lietotnes Glazecalc konta {account} parole tikko ir nomainīta, un konts ir izrakstīts no visām ierīcēm, kurās tas bija pierakstīts.\n\n' +
+      'Ja to izdarījāt Jūs, nekas cits nav jādara. Ja ne, nekavējoties atiestatiet paroli šeit: {forgot}\n' +
+      '\n' +
+      '-- \nGlazecalc, {app}\n'
+  },
+  et: {
+    subject: 'Teie Glazecalci parool on muudetud',
+    text:
+      'Glazecalci konto {account} parool muudeti just praegu ja kõik seadmed, kus konto oli sisse logitud, on välja logitud.\n\n' +
+      'Kui see olite teie, ei pea te midagi muud tegema. Kui mitte, lähtestage parool kohe siin: {forgot}\n' +
       '\n' +
       '-- \nGlazecalc, {app}\n'
   }

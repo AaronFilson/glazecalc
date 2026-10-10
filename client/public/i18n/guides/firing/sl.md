@@ -80,7 +80,7 @@ Preglednica za samostoječi stožec 6 navaja {{2232 °F; 1222 °C}}, vendar le, 
 
 ## Preglednica stožcev {#cone-chart}
 
-Te vrednosti so iz Ortonove preglednice stožcev (©2001) za samostoječe stožce{{en: cones}}. Izberite stolpec, ki ustreza temu, kako hitro je temperatura v vaši peči naraščala v zadnjih {{180 °F; 100 °C}}. Po Ortonovem pravilu velja za hitro žganje stolpec {{270 °F/h; 150 °C/h}}, za srednje hitro stolpec {{108 °F/h; 60 °C/h}} in za počasno stolpec {{27 °F/h; 15 °C/h}}. Hitrost izračunate tako, da dvig temperature delite s številom ur, ki jih je potreboval: peč, ki doseže {{900 °F; 482 °C}} v 3 urah, se segreva s hitrostjo približno {{300 °F/h; 167 °C/h}}.
+Te vrednosti so iz Ortonove preglednice stožcev (©2001) za samostoječe stožce{{en: cones}}. Izberite stolpec, ki ustreza temu, kako hitro je temperatura v vaši peči naraščala v zadnjih {{180 °F; 100 °C}}. Po Ortonovem pravilu velja za hitro žganje stolpec {{270 °F/h; 150 °C/h}}, za srednje hitro stolpec {{108 °F/h; 60 °C/h}} in za počasno stolpec {{27 °F/h; 15 °C/h}}. Hitrost izračunate tako, da dvig temperature delite s številom ur, ki jih je potreboval: peč, v kateri se temperatura v 3 urah dvigne za {{900 °F; 500 °C}}, se segreva s hitrostjo približno {{300 °F/h; 167 °C/h}}.
 
 Table: Ortonovi samostoječi stožci: temperatura, pri kateri se upogne posamezni stožec, glede na hitrost segrevanja v zadnjih {{180 °F; 100 °C}}
 Label: Preglednica Ortonovih stožcev
@@ -248,7 +248,7 @@ Pri peči brez krmilnika je opazovalna odprtina vaš edini signal v realnem čas
 
 ### Po žganju
 
-Orton upogib bere kot številčnico ure. Neupognjen stožec kaže navzgor, na položaj ob 12. Končna točka je položaj ob 6, ko je konica v višini podnožja: pri tej točki so izmerjene temperature v preglednici. Med položajem ob 4 in dotikom plošče je razlika majhna, »običajno 1 ali 2 stopinji«.
+Orton upogib bere kot številčnico ure. Neupognjen stožec kaže navzgor, na položaj ob 12. Končna točka je upogib za 90°, ko je konica v višini podnožja, kar Orton imenuje položaj ob 5: pri tej točki so izmerjene temperature v preglednici. Stožec, ki se dotika plošče, je v položaju ob 6; med položajem ob 4 in dotikom plošče je razlika majhna, »običajno 1 ali 2 stopinji«.
 
 Table: Odčitavanje niza stožcev po žganju (primer: stožci 5, 6 in 7 za glazuro za stožec 6)
 Label: Odčitavanje niza stožcev

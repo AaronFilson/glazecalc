@@ -80,7 +80,7 @@ Le tableau donne {{2232 °F; 1222 °C}} pour un cône 6 autoportant, mais seul
 
 ## Le tableau des cônes {#cone-chart}
 
-Ces chiffres viennent du tableau des cônes{{en: cone chart}} d’Orton (©2001) pour les cônes autoportants. Choisissez la colonne qui correspond à la vitesse de montée de votre four sur les derniers {{180 °F; 100 °C}}. La règle empirique d’Orton : la colonne {{270 °F/h; 150 °C/h}} pour une cuisson rapide, la colonne {{108 °F/h; 60 °C/h}} pour une cuisson moyenne et la colonne {{27 °F/h; 15 °C/h}} pour une cuisson lente. Pour calculer une vitesse, divisez la hausse de température par le nombre d’heures nécessaires : un four qui atteint {{900 °F; 482 °C}} en 3 heures chauffe à environ {{300 °F/h; 167 °C/h}}.
+Ces chiffres viennent du tableau des cônes{{en: cone chart}} d’Orton (©2001) pour les cônes autoportants. Choisissez la colonne qui correspond à la vitesse de montée de votre four sur les derniers {{180 °F; 100 °C}}. La règle empirique d’Orton : la colonne {{270 °F/h; 150 °C/h}} pour une cuisson rapide, la colonne {{108 °F/h; 60 °C/h}} pour une cuisson moyenne et la colonne {{27 °F/h; 15 °C/h}} pour une cuisson lente. Pour calculer une vitesse, divisez la hausse de température par le nombre d’heures nécessaires : un four qui monte de {{900 °F; 500 °C}} en 3 heures chauffe à environ {{300 °F/h; 167 °C/h}}.
 
 Table: Cônes autoportants Orton : la température à laquelle chacun se courbe, selon la vitesse de montée sur les derniers {{180 °F; 100 °C}}
 Label: Tableau des cônes Orton
@@ -248,7 +248,7 @@ Sur un four à commande manuelle, le regard est votre seul signal en temps réel
 
 ### Après la cuisson
 
-Orton lit la courbure comme un cadran d’horloge. Un cône qui n’a pas bougé pointe vers le haut, à 12 heures. Le point final est 6 heures, la pointe au niveau de la base : c’est le point auquel les températures du tableau sont mesurées. Entre 4 heures et le contact avec la plaque, la différence est faible, « généralement 1 ou 2 degrés ».
+Orton lit la courbure comme un cadran d’horloge. Un cône qui n’a pas bougé pointe vers le haut, à 12 heures. Le point final est une courbure de 90°, la pointe au niveau de la base, ce qu’Orton appelle la position de 5 heures : c’est le point auquel les températures du tableau sont mesurées. Un cône qui touche la plaque est à 6 heures ; entre 4 heures et le contact avec la plaque, la différence est faible, « généralement 1 ou 2 degrés ».
 
 Table: Lire un jeu de cônes après la cuisson (exemple : les cônes 5, 6 et 7 avec un émail pour le cône 6)
 Label: Lire un jeu de cônes

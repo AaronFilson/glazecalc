@@ -80,7 +80,7 @@ Tabelul dă pentru un con 6 autoportant {{2232 °F; 1222 °C}}, dar numai dacă 
 
 ## Tabelul conurilor {#cone-chart}
 
-Aceste valori provin din tabelul conurilor Orton (©2001) pentru conuri{{en: cones}} autoportante. Alegeți coloana care corespunde vitezei cu care a urcat cuptorul în ultimele {{180 °F; 100 °C}}. Regula practică de la Orton: coloana {{270 °F/h; 150 °C/h}} pentru o ardere rapidă, coloana {{108 °F/h; 60 °C/h}} pentru una medie și coloana {{27 °F/h; 15 °C/h}} pentru una lentă. Ca să calculați rata, împărțiți câte grade a urcat cuptorul la numărul de ore în care le-a urcat: un cuptor care ajunge la {{900 °F; 482 °C}} în 3 ore se încălzește cu aproximativ {{300 °F/h; 167 °C/h}}.
+Aceste valori provin din tabelul conurilor Orton (©2001) pentru conuri{{en: cones}} autoportante. Alegeți coloana care corespunde vitezei cu care a urcat cuptorul în ultimele {{180 °F; 100 °C}}. Regula practică de la Orton: coloana {{270 °F/h; 150 °C/h}} pentru o ardere rapidă, coloana {{108 °F/h; 60 °C/h}} pentru una medie și coloana {{27 °F/h; 15 °C/h}} pentru una lentă. Ca să calculați rata, împărțiți câte grade a urcat cuptorul la numărul de ore în care le-a urcat: un cuptor care urcă cu {{900 °F; 500 °C}} în 3 ore se încălzește cu aproximativ {{300 °F/h; 167 °C/h}}.
 
 Table: Conuri Orton autoportante: temperatura la care se îndoaie fiecare, după rata de încălzire în ultimele {{180 °F; 100 °C}}
 Label: Tabelul conurilor Orton
@@ -248,7 +248,7 @@ La un cuptor cu comandă manuală, vizorul este singurul semnal în timp real; d
 
 ### După ardere
 
-Orton citește îndoirea ca pe un cadran de ceas. Un con neîndoit arată în sus, la ora 12. Punctul final este ora 6, cu vârful la nivelul bazei: punctul la care sunt măsurate temperaturile din tabel. Între ora 4 și atingerea plăcii diferența este mică, „de obicei 1 sau 2 grade”.
+Orton citește îndoirea ca pe un cadran de ceas. Un con neîndoit arată în sus, la ora 12. Punctul final este o îndoire de 90°, cu vârful la nivelul bazei, pe care Orton o numește poziția orei 5: punctul la care sunt măsurate temperaturile din tabel. Un con care atinge placa este la ora 6; între ora 4 și atingerea plăcii diferența este mică, „de obicei 1 sau 2 grade”.
 
 Table: Citirea unui set de conuri{{en: cone pack}} după ardere (exemplu: conurile 5, 6 și 7 pentru o glazură arsă la conul 6)
 Label: Citirea unui set de conuri

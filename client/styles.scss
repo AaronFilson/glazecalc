@@ -30,8 +30,30 @@
   --gc-success-text: #24533f;
   --gc-shadow: 0 1px 2px rgba(43, 36, 32, 0.06), 0 6px 18px rgba(43, 36, 32, 0.06);
   --gc-radius: 12px;
-  --gc-serif: ui-serif, 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, serif;
-  --gc-sans: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  // Lora, served with the app (angular.json), so every device and test lays out the same; Noto Serif for what
+  // Lora lacks: Greek, and the subscripts of formulas (SiO₂).
+  --gc-font: 'Lora Variable', 'Noto Serif Fill', Georgia, serif;
+}
+
+// Noto Serif's Greek and math faces only (its Latin is Lora's to set), from @fontsource-variable/noto-serif.
+@font-face {
+  font-family: 'Noto Serif Fill';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url('../node_modules/@fontsource-variable/noto-serif/files/noto-serif-greek-wght-normal.woff2')
+    format('woff2-variations');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+@font-face {
+  font-family: 'Noto Serif Fill';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url('../node_modules/@fontsource-variable/noto-serif/files/noto-serif-math-wght-normal.woff2')
+    format('woff2-variations');
+  // The subscripts and superscripts, arrows and math signs.
+  unicode-range: U+2070-2071, U+2074-208E, U+2090-209C, U+2190-21FF, U+2200-22FF;
 }
 
 @mixin dark-tokens {
@@ -172,7 +194,7 @@ $palettes: (
 [data-bs-theme] {
   --bs-body-bg: var(--gc-bg);
   --bs-body-color: var(--gc-text);
-  --bs-body-font-family: var(--gc-sans);
+  --bs-body-font-family: var(--gc-font);
   --bs-emphasis-color: var(--gc-text);
   --bs-secondary-color: var(--gc-muted);
   --bs-secondary-bg: var(--gc-surface-2);
@@ -218,7 +240,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: var(--gc-serif);
+  font-family: var(--gc-font);
   color: var(--gc-text);
   line-height: 1.2;
 }
@@ -293,7 +315,7 @@ img {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  font-family: var(--gc-serif);
+  font-family: var(--gc-font);
   font-size: 1.35rem;
   font-weight: 700;
   color: var(--gc-text);
@@ -583,7 +605,6 @@ main .form-control.is-invalid {
     margin: 0 0 0.5rem;
   }
   h3 {
-    font-family: var(--gc-sans);
     font-size: 1.05rem;
     font-weight: 600;
     margin: 0 0 0.25rem;
@@ -833,7 +854,6 @@ main .form-control.is-invalid {
 }
 
 .recipe-additives-heading .muted {
-  font-family: var(--gc-sans);
   font-size: 0.9rem;
   font-weight: 400;
 }
@@ -857,7 +877,6 @@ main .form-control.is-invalid {
 }
 
 .recipe-editor .library-heading {
-  font-family: var(--gc-sans);
   font-size: 1rem;
   font-weight: 600;
   margin: 0;

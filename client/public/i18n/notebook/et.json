@@ -1,0 +1,88 @@
+{
+  "home": {
+    "title": "Töökoja märkmik",
+    "signedInAs": "Sisse logitud kasutajana {email}.",
+    "trying": "Proovite Glazecalci nimega {name}. Alustage retseptist.",
+    "welcomeBack": "Jätkake sealt, kus pooleli jäi.",
+    "sections": {
+      "recipe": {
+        "title": "Retseptid",
+        "text": "Koostage glasuur toorainetest ja kogustest, vaadake selle Segeri valemit (UMF) ja salvestage see."
+      },
+      "material": {
+        "title": "Toorained",
+        "text": "Lisage oma tooraineid keemilise valemi või tarnija analüüsi põhjal."
+      },
+      "additive": {
+        "title": "Lisaained ja värvained",
+        "text": "Hoidke siin värvaineid ja hägustajaid, mida kasutate põhiglasuurile lisaks."
+      },
+      "firing": {
+        "title": "Põletuspäevikud",
+        "text": "Pange iga põletuse kohta kirja ajad, temperatuurid ja koonused."
+      },
+      "notes": {
+        "title": "Märkmed",
+        "text": "Hoidke alles katsetulemused ja kõik muu, mida tasub meeles pidada."
+      },
+      "advice": {
+        "title": "Glasuurinõuanded",
+        "text": "Näpunäited segamise, glasuurimise ja põletamise kohta ning teie enda nõuanded."
+      },
+      "guides": {
+        "title": "Juhendid",
+        "text": "Alates sellest, mis on glasuur, kuni selle põletamiseni, ning kuidas seejuures kõigi ohutus tagada."
+      }
+    },
+    "newHere": "Kas Segeri valem on teile uus? <advice>Nõuannete leht</advice> selgitab põhitõdesid ja <about>teabeleht</about> räägib, kuidas Glazecalc töötab."
+  },
+  "firing": {
+    "title": "Põletuspäevikud",
+    "lead": "Pange kirja iga põletus: ajad, temperatuurid, koonused ja märkused ahju kohta.",
+    "titleLabel": "Põletuse nimetus:",
+    "kiln": "Ahi:",
+    "date": "Põletuse kuupäev:",
+    "notes": "Märkused põletuse kohta:",
+    "fieldSelect": "Valige väljad ja lisage need põletuspäevikusse:",
+    "addField": "Lisa väli",
+    "included": "Lisatud väljad:",
+    "fieldName": "Välja nimi: {name}",
+    "moveLeft": "Nihuta väli vasakule",
+    "moveRight": "Nihuta väli paremale",
+    "removeField": "Eemalda väli",
+    "addRow": "Lisa põletustabelisse rida",
+    "recordHeading": "Põletuse salvestamine",
+    "rowActions": "Rea toimingud",
+    "cell": "{field}, rida {row}",
+    "removeRow": "Eemalda rida",
+    "save": "Salvesta",
+    "storedHeading": "Minu salvestatud põletused:",
+    "stored": "Nimetus: {title}, ahi: {kiln}, kuupäev: {date}",
+    "storedNotes": "Märkused: {notes}",
+    "titleMissing": "Andke põletusele nimetus.",
+    "fieldsMissing": "Lisage vähemalt üks salvestatav väli, näiteks {example}.",
+    "chooseField": "Valige lisatav väli ja seejärel nupp Lisa väli.",
+    "fetchFailed": "Põletuspäevikute andmete laadimisel tekkis viga.",
+    "saved": "Põletuspäeviku lisamine serverisse õnnestus.",
+    "saveFailed": "Viga: päring serverile ebaõnnestus."
+  },
+  "notes": {
+    "title": "Märkmed",
+    "lead": "Kõik muu, mida tasub oma glasuuride kohta meeles pidada.",
+    "intro": "See on märkmete leht. Siin saate märkmeid teha ja salvestada.",
+    "titleLabel": "Pealkiri:",
+    "content": "Teie märge:",
+    "save": "Salvesta",
+    "mineHeading": "Minu salvestatud märkmed:",
+    "titleMissing": "Andke märkmele pealkiri.",
+    "contentMissing": "Kirjutage märge.",
+    "untitled": "Pealkirjata märge",
+    "fetchFailed": "Märkmete laadimisel tekkis viga.",
+    "saved": "Märkme lisamine serverisse õnnestus.",
+    "saveFailed": "Viga: päring serverile ebaõnnestus."
+  },
+  "trash": {
+    "title": "Prügikast",
+    "comingSoon": "Prügikast lisandub peagi, Glazecalci järgmises versioonis. Seni kasutage kustutamist ja eemaldamist ettevaatlikult: kui midagi on kustutatud, on see teave kadunud."
+  }
+}

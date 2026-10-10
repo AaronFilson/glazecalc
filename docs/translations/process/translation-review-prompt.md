@@ -5,6 +5,7 @@ Ground rules:
 - Do not run git commands that change anything (no add, commit, checkout, stash, reset, restore). `git diff` and `git status` are fine.
 - Edit only the translation file(s) named under "Your files". Other reviewers are working on other files at the same time; never touch theirs, and never edit an English file.
 - In Git Bash, Node is on PATH after `export PATH="/c/nvm4w/nodejs:$PATH"`.
+- Never put the user's name, email address or other personal details in a web request (headers such as User-Agent, URLs, form data).
 
 Read first:
 
@@ -12,7 +13,7 @@ Read first:
 2. docs/translations/{CODE}.md: the {LANGUAGE} style sheet and glossary.
 
 Your files (English → translation; `<code>` is {CODE}): the section(s) {SECTIONS} of
-C:\Users\bellows\AppData\Local\Temp\claude\C--Users-bellows-gh-glazecalc\c9e2de23-6bd0-4c08-9910-8c09a9678344\scratchpad\chunks.md.
+C:\Users\bellows\AppData\Local\Temp\claude\C--Users-bellows-gh-glazecalc\fe37625a-51db-4239-bee8-4e00779ae983\scratchpad\chunks.md.
 
 Read the English and the translation side by side, every segment (a message, a paragraph, a table row, a list item), and check:
 

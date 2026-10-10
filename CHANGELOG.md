@@ -43,6 +43,12 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   Slovenian and Swedish**, the second wave, made the same way, then
   checked for consistency across each language's files: the same word for the guides, never the word
   for a kiln's own manual, and the same guide titles in every link and list.
+- **In Estonian, Latvian and Lithuanian**, the third wave, made the same way. The reviews' lessons went into the prompts as
+  the wave ran: "may not melt fully" is not "may not melt at all", a rule a translation of the recipe
+  checks had broken.
+- **The firing guide's cone end point** is a 90° bend, the 5 o'clock position, as Orton's chart says (it
+  said 6 o'clock, a cone touching the shelf), and its worked heating rate divides the temperature climbed. In every
+  language.
 - **Ready for other languages** ([ADR 13](docs/adr/0013-translations.md),
   [how to write text](docs/translating.md)). Every piece of text the app shows now comes from a
   messages file, in ICU MessageFormat through Transloco, so a language is added by translating
@@ -230,6 +236,11 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Changed
 
+- **Lora, served with the app**, for every heading and paragraph, with Noto Serif for what Lora lacks
+  (Greek, and the subscripts of formulas such as SiO₂). A page now lays out the same on every device
+  instead of in each one's own font, and the browser tests measure what people see.
+- **The browser tests run in Playwright's own image**, in CI and in `npm run test:e2e:linux` alike, so
+  a layout that passes locally passes in CI.
 - **Plainer English where translators misread it**, in the guides, and every language with it:
   cooking ware of any size is in the food-contact category (not only over 3 L); small children and pets
   cannot understand a warning sign, so keep them behind a locked door (not only those who cannot);

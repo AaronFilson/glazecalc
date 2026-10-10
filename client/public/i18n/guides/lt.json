@@ -1,0 +1,154 @@
+{
+  "version": {
+    "cones": "Šis vadovas rodomas degimui pagal piroskopus, kaip pasirinkta nustatymuose.",
+    "temperature": "Šis vadovas rodomas degimui pagal temperatūrą, kaip pasirinkta nustatymuose.",
+    "showTemperature": "Rodyti degimui pagal temperatūrą",
+    "showCones": "Rodyti degimui pagal piroskopus"
+  },
+  "notTranslated": "Šis vadovas dar neišverstas, todėl rodomas anglų kalba.",
+  "sectionInEnglish": "Šis skyrius pasikeitė po to, kai buvo išverstas, todėl rodomas anglų kalba, kol jo vertimas bus atnaujintas.",
+  "list": {
+    "title": "Vadovai",
+    "lead": "Paprasta kalba parašyti vadovai pradedantiesiems keramikams: nuo to, kas yra glazūra, iki jos degimo, ir kaip visą tą laiką užtikrinti visų saugumą.",
+    "note": "Šiuose vadovuose surinkta tai, ką skelbia gamintojai, saugos institucijos ir patyrę keramikai; šaltiniai nurodyti kiekvieno vadovo pabaigoje. Tai atspirties taškas, o ne jūsų žaliavų saugos duomenų lapų, krosnies naudojimo instrukcijos ar vietinių taisyklių pakaitalas.",
+    "glazingBasics": {
+      "title": "Glazūravimas nuo pagrindų",
+      "text": "Kas yra glazūra, kaip ji lydosi ir ką reiškia kiekvienas žodis, kurį rasite recepte ar ant maišo."
+    },
+    "makingAGlaze": {
+      "title": "Kaip pasigaminti glazūrą",
+      "text": "Glazūros pirkimas, laikymas, svėrimas, maišymas ir persijojimas, paskui jos bandymas ir įrašų vedimas."
+    },
+    "safeMixing": {
+      "title": "Saugus maišymas ir vėdinimas",
+      "text": "Dulkės, respiratoriai, valymas, žaliavos, su kuriomis reikia elgtis atsargiausiai, ir krosnies vėdinimas."
+    },
+    "homeSafety": {
+      "title": "Neapnuodykite savo šeimos",
+      "text": "Keramika namuose, kur yra vaikų ir gyvūnų: laikymas, dulkės, krosnis ir ką daryti, jei kas nors buvo praryta."
+    },
+    "firing": {
+      "title": "Degimas paprastoje krosnyje",
+      "text": "Piroskopai, Kiln-Sitter išjungikliai ir rankiniai galios reguliatoriai, su biskvitinio ir glazūros degimo programomis."
+    }
+  },
+  "contents": "Šiame puslapyje",
+  "poison": {
+    "numbersFor": "Numeriai šioje šalyje:",
+    "choose": "Pasirinkite šalį",
+    "label": "Kur skambinti: {region}",
+    "caption": "Kur skambinti: {region} (numeriai patikrinti {date})",
+    "for": "Kokiu atveju",
+    "call": "Numeris",
+    "notes": "Darbo laikas ir pastabos",
+    "emergency": "Skubus atvejis: žmogus be sąmonės, nekvėpuoja, ištiko traukuliai",
+    "poisonAdvice": "{who, select, children {Konsultacija dėl apsinuodijimo: {name} (tik dėl vaikų)} other {Konsultacija dėl apsinuodijimo: {name}}}",
+    "or": "arba {number}",
+    "online": "Internete: <link>{name}</link>.",
+    "poisonAdviceNone": "Konsultacija dėl apsinuodijimo",
+    "noLine": "Nepavyko patvirtinti, kad šioje šalyje veikia vieša apsinuodijimų informacijos linija. Skambinkite savo gydytojui arba, jei skubu, pagalbos numeriu.",
+    "medicalAdvice": "Medicininė konsultacija: {name}",
+    "animals": "Gyvūnai: {name}",
+    "animalsNone": "Gyvūnai",
+    "vet": "Skambinkite savo veterinarui.",
+    "checkedOn": "Patikrinta:",
+    "choosePrompt": "Pasirinkite šalį, kad pamatytumėte, kur ten skambinti.",
+    "ministry": "Sveikatos apsaugos ministerijos puslapis: <link>{name}</link>."
+  },
+  "density": {
+    "sg": "santykinis tankis {value}",
+    "baume": "{value} °Bé ({sg})",
+    "pint": "{value} oz imperinėje pintoje ({sg})"
+  },
+  "shops": {
+    "shopsIn": "Parduotuvės šioje šalyje:",
+    "label": "Parduotuvės: {region}",
+    "caption": "Kai kurios glazūrų žaliavomis prekiaujančios parduotuvės: {region} (patikrinta {date})",
+    "nearbyCaption": "Kitų šalių parduotuvės, kurios nurodo, kad pristato į šią šalį: {region} (patikrinta {date})",
+    "shop": "Parduotuvė",
+    "sells": "Asortimentas",
+    "packs": "Matytos pakuotės",
+    "seen": "Matytos žaliavos (parduotuvės pavadinimais)",
+    "what": {
+      "materials": "glazūrų žaliavos",
+      "frits": "fritai",
+      "oxides": "oksidai",
+      "stains": "keramikos pigmentai",
+      "clays": "molis",
+      "glazes": "paruoštos glazūros",
+      "kilns": "krosnys"
+    },
+    "none": "Neradome parduotuvės, prekiaujančios glazūrų žaliavomis ({region}).",
+    "unknown": "Parduotuvių dar neieškojome ({region}).",
+    "choosePrompt": "Pasirinkite šalį, kad pamatytumėte jos parduotuves."
+  },
+  "silica": {
+    "limitIn": "Ribinė vertė šioje šalyje:",
+    "label": "Silicio dioksido ribinė vertė: {region}",
+    "caption": "Įkvepiamojo kristalinio silicio dioksido dulkių (alveolinė frakcija) ribinė vertė darbo vietoje, 8 valandų vidurkis: {region} (patikrinta {date})",
+    "both": "Kvarcas ir kristobalitas",
+    "quartz": "Kvarcas",
+    "cristobalite": "Kristobalitas",
+    "actionLevel": "Veiksmų lygis",
+    "value": "{value} mg/m³",
+    "kind": {
+      "binding": "Privaloma ribinė vertė.",
+      "indicative": "Orientacinė ribinė vertė: rekomenduojama, bet teisės aktais neprivaloma viršutinė riba.",
+      "assessment": "Vertinimo kriterijus, o ne privaloma ribinė vertė."
+    },
+    "setBy": "Nustatyta: <link>{law}</link>.",
+    "lowerThanEu": "Mažesnė už privalomą ES ribinę vertę – {value} mg/m³.",
+    "sameAsEu": "Tokia pati kaip privaloma ES ribinė vertė.",
+    "unknown": "Nepavyko patvirtinti nacionalinės ribinės vertės ({region}). Privaloma ES ribinė vertė – {value} mg/m³ – taikoma visose valstybėse narėse.",
+    "noData": "Ribinės vertės dar nepatvirtinome ({region}).",
+    "agency": "Nacionalinė darbuotojų saugos ir sveikatos institucija: <link>{name}</link>.",
+    "agencySilica": "Jos <link>puslapis apie silicio dioksidą</link>.",
+    "choosePrompt": "Pasirinkite šalį, kad pamatytumėte jos ribinę vertę."
+  },
+  "food": {
+    "rulesIn": "Taisyklės šioje šalyje:",
+    "label": "Keramikos gaminių ribos ({region})",
+    "caption": "Kiek išdegtas gaminys gali išskirti per teisės aktuose nustatytą bandymą: {region} (patikrinta {date})",
+    "article": "Gaminio rūšis",
+    "lead": "Švinas",
+    "cadmium": "Kadmis",
+    "category": {
+      "flat": "Gaminiai, kurių negalima pripildyti, arba kurių vidinis gylis ne didesnis kaip 25 mm",
+      "fillable": "Kiti gaminiai, kuriuos galima pripildyti",
+      "cooking": "Bet kokio dydžio indai maistui kepti, taip pat pakavimo ir laikymo indai, didesni kaip 3 L",
+      "rimBand": "Indo, iš kurio geriama, kraštas: 2 cm pločio juosta iš vidaus ir iš išorės",
+      "rimArticle": "Indo, iš kurio geriama, kraštas: 20 mm pločio juosta išorėje nuo viršutinio krašto, vienam gaminiui",
+      "flatware": "Plokšti indai, ne gilesni kaip 25 mm",
+      "smallHollow": "Maži gilūs indai, mažesni nei 1,1 L, išskyrus puodelius",
+      "cups": "Puodeliai",
+      "largeHollow": "Dideli gilūs indai, 1,1 L ar didesni, išskyrus ąsočius",
+      "pitchers": "Ąsočiai",
+      "auSmall": "Puodeliai, ąsočiai, dubenys, arbatinukai ir kiti stalo indai, mažesni nei 1100 mL",
+      "auLarge": "Tie patys, 1100 mL ar didesni",
+      "auPlates": "Lėkštės, lėkštelės ir panašūs stalo indai",
+      "auCooking": "Indai maistui gaminti"
+    },
+    "judged": {
+      "average": "6 gaminių vidurkis",
+      "each": "kiekvienas iš 6"
+    },
+    "euRules": "Čia taikomos ES taisyklės.",
+    "law": "Nustatyta: <link>{law}</link>.",
+    "inForce": "Galioja nuo {date}.",
+    "unknown": "Taisyklių dar nepatvirtinome ({region}).",
+    "choosePrompt": "Pasirinkite šalį, kad pamatytumėte jos taisykles."
+  },
+  "equivalents": {
+    "buyingIn": "Pirkimo šalis:",
+    "label": "{library, select, US {Atitikmenys, parduodami JAV} UK {Atitikmenys, parduodami Jungtinėje Karalystėje} EU {Atitikmenys, parduodami ES} other {Atitikmenys, parduodami Australijoje ir Naujojoje Zelandijoje}}",
+    "caption": "{library, select, US {Žaliavos, neparduodamos JAV, su artimiausia ten parduodama žaliava} UK {Žaliavos, neparduodamos Jungtinėje Karalystėje, su artimiausia ten parduodama žaliava} EU {Žaliavos, neparduodamos ES, su artimiausia ten parduodama žaliava} other {Žaliavos, neparduodamos Australijoje ir Naujojoje Zelandijoje, su artimiausia ten parduodama žaliava}}",
+    "material": "Recepte",
+    "soldIn": "Parduodama",
+    "closest": "{library, select, US {Artimiausia, parduodama JAV} UK {Artimiausia, parduodama Jungtinėje Karalystėje} EU {Artimiausia, parduodama ES} other {Artimiausia, parduodama Australijoje ir Naujojoje Zelandijoje}}",
+    "apart": "skiriasi {grams} g/100 g",
+    "noneClose": "Nėra nė vienos, kuri skirtųsi ne daugiau kaip 15 g/100 g: lyginkite pagal cheminę sudėtį.",
+    "loading": "Įkeliama biblioteka…",
+    "failed": "Bibliotekos įkelti nepavyko. Bandykite dar kartą vėliau.",
+    "choosePrompt": "Pasirinkite šalį, kad pamatytumėte, kas ten parduodama."
+  }
+}

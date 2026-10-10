@@ -1,0 +1,237 @@
+{
+  "auth": {
+    "signInHeading": "Sisselogimine",
+    "keepHeading": "Töö säilitamine",
+    "signUpHeading": "Konto loomine",
+    "signInLead": "Tere tulemast tagasi oma glasuurimärkmikku.",
+    "keepLead": "Säilitage kõik, mille tegite nimega {name}: lisage oma e-posti aadress ja parool. See jääb tasuta.",
+    "signUpLead": "Tasuta. Teie retseptid, toorained ja märkmed on privaatsed ja kuuluvad ainult teie kontole.",
+    "trialNote": "Teil on juba konto? Sisselogimisel tuuakse see, mille tegite nimega {name}, teie kontole üle. Olete siin uus? <signup>Looge konto</signup> ja säilitage töö hoopis selles.",
+    "email": "E-post",
+    "password": "Parool",
+    "passwordHint": "Vähemalt 8 märki.",
+    "confirmation": "Parooli kinnitus",
+    "passwordMissing": "Sisestage oma parool.",
+    "createAccount": "Loo konto",
+    "signIn": "Logi sisse",
+    "haveAccount": "Teil on juba konto? <signin>Logi sisse</signin>",
+    "forgot": "Unustasite parooli? Lähtestage see",
+    "newHere": "Olete siin uus? <signup>Loo tasuta konto</signup>",
+    "signUpFailed": "Viga: kontot ei saanud luua.",
+    "signInFailed": "Viga: sisselogimine ebaõnnestus."
+  },
+  "forgot": {
+    "heading": "Parooli lähtestamine",
+    "checkInbox": "Vaadake oma postkasti ja rämpsposti kausta. Kui kirja ei tule, kontrollige aadressi ja küsige uuesti.",
+    "intro": "Sisestage oma konto e-posti aadress ja teile saadetakse link uue parooli valimiseks.",
+    "email": "E-post:",
+    "send": "Saada lähtestuslink",
+    "back": "Tagasi sisselogimise juurde",
+    "failed": "Viga: lähtestuskirja ei saanud saata. Proovige uuesti."
+  },
+  "reset": {
+    "heading": "Uue parooli valimine",
+    "signIn": "Logi sisse",
+    "incomplete": "Selle lehe jaoks on vaja parooli lähtestuskirjas olevat linki, kuid see link on puudulik.",
+    "askAgain": "Küsi uut linki",
+    "password": "Uus parool:",
+    "confirmation": "Uue parooli kinnitus:",
+    "save": "Salvesta uus parool",
+    "hint": "Vähemalt 8 märki. Kõik sellesse kontosse sisse logitud seadmed logitakse välja.",
+    "failed": "Viga: parooli ei saanud muuta. Proovige uuesti."
+  },
+  "account": {
+    "trialTitle": "Teie proovikasutus",
+    "trialLead": "Proovite Glazecalci nimega {name}.",
+    "keepHeading": "Töö säilitamine",
+    "keepText": "See proovikasutus ja kõik selles olev eemaldatakse kuupäeval {date}. Nende säilitamiseks looge tasuta konto: teie retseptid, toorained ja märkmed jäävad täpselt samaks ning {name} jääb teie kuvatavaks nimeks.",
+    "createAccount": "Loo konto",
+    "title": "Teie konto",
+    "signedInAs": "Sisse logitud kasutajana {email}.",
+    "changeHeading": "Parooli muutmine",
+    "current": "Praegune parool",
+    "currentMissing": "Sisestage oma praegune parool.",
+    "password": "Uus parool",
+    "passwordHint": "Vähemalt 8 märki. Teised sellesse kontosse sisse logitud seadmed logitakse välja.",
+    "confirmation": "Uue parooli kinnitus",
+    "change": "Muuda parooli",
+    "changeFailed": "Viga: parooli ei saanud muuta. Proovige uuesti.",
+    "deleteHeading": "Konto kustutamine",
+    "deleteText": "See eemaldab teie konto ja kõik, mille olete salvestanud: retseptid, toorained, lisaained, märkmed, põletuspäevikud ja nõuanded. Seda ei saa tagasi võtta.",
+    "deletePassword": "Teie parool kinnitamiseks",
+    "deletePasswordMissing": "Kinnitamiseks sisestage oma parool.",
+    "delete": "Kustuta minu konto",
+    "deleteFailed": "Viga: kontot ei saanud kustutada. Proovige uuesti."
+  },
+  "settings": {
+    "heading": "Sätted",
+    "intro": "Salvestatakse koos teie kontoga, seega kehtivad need igas seadmes.",
+    "saveFailed": "Sätet ei saanud salvestada. Proovige uuesti.",
+    "language": {
+      "legend": "Keel",
+      "help": "Rakenduse, juhendite ja teile saadetavate e-kirjade keel. Muutmisel avaneb see leht valitud keeles.",
+      "saved": "Salvestatud: {language}."
+    },
+    "region": {
+      "legend": "Teie piirkond",
+      "none": {
+        "label": "Valimata",
+        "saved": "Salvestatud: piirkond on valimata; vaikesätted järgivad teie brauserit."
+      },
+      "saved": "Salvestatud: {region}.",
+      "help": "Seal müüdavad toorained ning allpool olevate arvude, kuupäevade, temperatuuride ja koonuste vaikesätted. Kuni te pole valinud, järgivad need teie brauseri keelt."
+    },
+    "format": {
+      "legend": "Arvud ja kuupäevad",
+      "auto": {
+        "label": "Minu keele ja piirkonna järgi",
+        "saved": "Salvestatud: arvud ja kuupäevad nii, nagu neid kirjutatakse teie keeles ja piirkonnas."
+      },
+      "saved": "Salvestatud: arvud ja kuupäevad nagu keeles {language}.",
+      "help": "Kuidas arve ja kuupäevi kirjutatakse: 12,345.6 või 12.345,6 ning päeva ja kuu järjekord."
+    },
+    "decimalMark": {
+      "legend": "Koguste sisestamine",
+      "either": {
+        "label": "Kümnendkoma või -punkt",
+        "example": "12,5 või 12.5",
+        "saved": "Salvestatud: koguseid saab sisestada koma või punktiga."
+      },
+      "comma": {
+        "label": "Kümnendkoma",
+        "saved": "Salvestatud: kogused sisestatakse kümnendkomaga."
+      },
+      "point": {
+        "label": "Kümnendpunkt",
+        "saved": "Salvestatud: kogused sisestatakse kümnendpunktiga."
+      },
+      "help": "Kui sobivad mõlemad, loetakse kogust, näiteks 1.250, nii, nagu teie arvud on ülal kirjutatud."
+    },
+    "temperature": {
+      "legend": "Temperatuurid",
+      "celsius": {
+        "label": "Celsius",
+        "saved": "Salvestatud: temperatuurid ühikus °C."
+      },
+      "fahrenheit": {
+        "label": "Fahrenheit",
+        "saved": "Salvestatud: temperatuurid ühikus °F."
+      },
+      "help": "Kuni te pole valinud, järgib see teie piirkonda: Ameerika Ühendriikides °F, mujal °C."
+    },
+    "cones": {
+      "legend": "Põletus",
+      "orton": {
+        "label": "Ortoni koonuste järgi",
+        "example": "koonus 04, koonus 6",
+        "saved": "Salvestatud: põletus Ortoni koonuste järgi."
+      },
+      "temperature": {
+        "label": "Temperatuuri järgi, nagu ahju kontrolleri programmis",
+        "saved": "Salvestatud: põletus temperatuuri järgi."
+      },
+      "help": "Kuni te pole valinud, järgib see teie piirkonda: Ameerika Ühendriikides, Ühendkuningriigis, Iirimaal, Austraalias ja Uus-Meremaal Ortoni koonused, ülejäänud Euroopas temperatuur."
+    },
+    "density": {
+      "legend": "Glasuuri tihedus",
+      "sg": {
+        "label": "Suhteline tihedus",
+        "saved": "Salvestatud: glasuuri tihedus suhtelise tihedusena.",
+        "example": "1,45"
+      },
+      "baume": {
+        "label": "Baumé kraadid, areomeetriga",
+        "saved": "Salvestatud: glasuuri tihedus Baumé kraadides."
+      },
+      "pint": {
+        "label": "Pindi kaal, untsides Briti pindi kohta",
+        "saved": "Salvestatud: glasuuri tihedus pindi kaaluna."
+      },
+      "help": "Kuidas juhendid glasuurilahuse paksust esitavad. Kuni te pole valinud, järgib see teie piirkonda: Itaalias Baumé kraadid, mujal suhteline tihedus."
+    },
+    "theme": {
+      "legend": "Hele või tume",
+      "system": {
+        "label": "Seadme sätte järgi",
+        "saved": "Salvestatud: hele või tume iga seadme sätte järgi."
+      },
+      "light": {
+        "label": "Hele",
+        "saved": "Salvestatud: alati hele."
+      },
+      "dark": {
+        "label": "Tume",
+        "saved": "Salvestatud: alati tume."
+      },
+      "help": "Prinditud retseptid on alati must kiri valgel taustal."
+    },
+    "palette": {
+      "legend": "Värvid",
+      "saved": "Salvestatud: nuppude ja linkide värvilahendus {palette}.",
+      "help": "Nuppude, linkide ja vahekaartide jaoks, nimetatud glasuuride järgi. Kõik on hästi loetavad nii heledas kui ka tumedas kujunduses."
+    },
+    "weightUnit": {
+      "legend": "Kaalumiskogused",
+      "grams": {
+        "label": "Grammid",
+        "saved": "Salvestatud: kaalumiskogused grammides."
+      },
+      "pounds": {
+        "label": "Naelad ja untsid",
+        "saved": "Salvestatud: kaalumiskogused naelades ja untsides."
+      },
+      "help": "Prinditud segude jaoks."
+    },
+    "gramPrecision": {
+      "legend": "Grammid prinditud segudel",
+      "single": {
+        "label": "Kümnendikgrammi täpsusega",
+        "saved": "Salvestatud: grammid kuvatakse kümnendiku täpsusega."
+      },
+      "full": {
+        "label": "Täistäpsus",
+        "saved": "Salvestatud: grammid kuvatakse täielikult, 5 kümnendkohani."
+      },
+      "help": "Kümnendiku täpsuse korral kuvatakse alla 10 g kogused siiski sajandikeni (2,35 g) – väikeste proovisegude värvainete jaoks."
+    },
+    "lead": {
+      "legend": "Plii",
+      "off": {
+        "label": "Väljas: pliid ei lisata kunagi retsepti ega soovitata",
+        "saved": "Salvestatud: pliid ei lisata kunagi retsepti ega soovitata."
+      },
+      "on": {
+        "label": "Sees: pliid sisaldavaid tooraineid võib lisada ja soovitada",
+        "saved": "Salvestatud: pliid sisaldavaid tooraineid võib lisada ja soovitada."
+      },
+      "help": "Plii on sissehingamisel või allaneelamisel mürgine ja koguneb organismi ning pliiglasuurist võib pliid eralduda toitu ja jooki; ükski arvutus ei näita, kas põletatud esemest seda eraldub. Kui säte on väljas, avanevad retseptid, milles on juba pliid, endiselt nii, nagu need olid.",
+      "warning": "Kasutage pliid ainult fritina, mitte kunagi frittimata pliimennikuna, pliivalgena, pliikollasena ega plii(II)oksiidina. Segage seda märjalt, ärge seda kunagi pritsige, kandke respiraatorit ja koristage märgpuhastusega. Hoidke pliiglasuuriga esemed toidust ja joogist eemal, välja arvatud juhul, kui põletatud ese on läbinud metallide eraldumise laborikatse.",
+      "turnOn": "Lülita plii sisse",
+      "keepOff": "Jäta välja"
+    },
+    "englishTerms": {
+      "legend": "Ingliskeelsed terminid",
+      "off": {
+        "label": "Väljas",
+        "saved": "Salvestatud: ingliskeelseid termineid ei näidata."
+      },
+      "on": {
+        "label": "Näita põhiterminite järel ingliskeelset vastet",
+        "saved": "Salvestatud: põhiterminite järel näidatakse ingliskeelset vastet."
+      },
+      "help": "Ingliskeelsete allikate, näiteks Digitalfire’i, lugemiseks selle kõrval: põhiterminite järel on sulgudes ingliskeelne vaste."
+    },
+    "notice": {
+      "legend": "Tõlketeade",
+      "shown": {
+        "label": "Kuvatakse",
+        "saved": "Salvestatud: teadet kuvatakse."
+      },
+      "hidden": {
+        "label": "Peidetud",
+        "saved": "Salvestatud: teade on peidetud. Üks rida sellest jääb ohutust käsitlevatesse juhenditesse."
+      },
+      "help": "Iga lehe ülaosas olev märkus, et lehe on tõlkinud tehisintellekt, koos võimalusega soovitada parandust."
+    }
+  }
+}

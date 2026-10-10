@@ -1,0 +1,88 @@
+{
+  "home": {
+    "title": "Jūsų dirbtuvės sąsiuvinis",
+    "signedInAs": "Prisijungta kaip {email}.",
+    "trying": "Išbandote programą Glazecalc kaip {name}. Pradėkite nuo recepto.",
+    "welcomeBack": "Tęskite nuo ten, kur baigėte.",
+    "sections": {
+      "recipe": {
+        "title": "Receptai",
+        "text": "Sudarykite glazūrą iš žaliavų ir kiekių, peržiūrėkite jos Segerio formulę (UMF) ir įrašykite ją."
+      },
+      "material": {
+        "title": "Žaliavos",
+        "text": "Pridėkite savo žaliavų pagal cheminę formulę arba tiekėjo pateiktą analizę."
+      },
+      "additive": {
+        "title": "Priedai ir dažikliai",
+        "text": "Laikykite čia dažiklius ir drumstiklius, kuriuos dedate papildomai prie bazinės glazūros."
+      },
+      "firing": {
+        "title": "Degimo žurnalai",
+        "text": "Įrašykite kiekvieno degimo laikus, temperatūras ir piroskopus."
+      },
+      "notes": {
+        "title": "Užrašai",
+        "text": "Laikykite čia bandymų rezultatus ir visa kita, ką verta prisiminti."
+      },
+      "advice": {
+        "title": "Patarimai apie glazūras",
+        "text": "Patarimai apie maišymą, glazūravimą ir degimą, taip pat jūsų pačių patarimai."
+      },
+      "guides": {
+        "title": "Vadovai",
+        "text": "Nuo to, kas yra glazūra, iki jos degimo, ir kaip visą tą laiką užtikrinti visų saugumą."
+      }
+    },
+    "newHere": "Segerio formulė jums nauja? <advice>Patarimų puslapyje</advice> paaiškinti pagrindai, o <about>puslapyje apie programą</about> – kaip veikia Glazecalc."
+  },
+  "firing": {
+    "title": "Degimo žurnalai",
+    "lead": "Įrašykite kiekvieną degimą: laikus, temperatūras, piroskopus ir pastabas apie krosnį.",
+    "titleLabel": "Degimo pavadinimas:",
+    "kiln": "Krosnis:",
+    "date": "Degimo data:",
+    "notes": "Pastabos apie degimą:",
+    "fieldSelect": "Pasirinkite ir pridėkite laukų į degimo įrašą:",
+    "addField": "Pridėti lauką",
+    "included": "Įtraukti laukai:",
+    "fieldName": "Lauko pavadinimas: {name}",
+    "moveLeft": "Perkelti lauką į kairę",
+    "moveRight": "Perkelti lauką į dešinę",
+    "removeField": "Pašalinti lauką",
+    "addRow": "Pridėti eilutę į degimo lentelę",
+    "recordHeading": "Įrašyti degimą",
+    "rowActions": "Eilutės veiksmai",
+    "cell": "{field}, eilutė {row}",
+    "removeRow": "Pašalinti eilutę",
+    "save": "Įrašyti",
+    "storedHeading": "Mano įrašyti degimai:",
+    "stored": "Pavadinimas: {title}, krosnis: {kiln}, data: {date}",
+    "storedNotes": "Pastabos: {notes}",
+    "titleMissing": "Įveskite degimo pavadinimą.",
+    "fieldsMissing": "Pridėkite bent vieną įrašomą lauką, pvz., {example}.",
+    "chooseField": "Pasirinkite lauką, kurį norite pridėti, tada spustelėkite Pridėti lauką.",
+    "fetchFailed": "Gauti degimo įrašų duomenų nepavyko.",
+    "saved": "Degimo įrašas sėkmingai pridėtas į serverį.",
+    "saveFailed": "Klaida: užklausa serveriui nepavyko."
+  },
+  "notes": {
+    "title": "Užrašai",
+    "lead": "Visa kita, ką verta prisiminti apie jūsų glazūras.",
+    "intro": "Tai užrašų puslapis. Čia galite rašyti užrašus ir juos įrašyti.",
+    "titleLabel": "Pavadinimas:",
+    "content": "Jūsų užrašas:",
+    "save": "Įrašyti",
+    "mineHeading": "Mano įrašyti užrašai:",
+    "titleMissing": "Įveskite užrašo pavadinimą.",
+    "contentMissing": "Parašykite užrašą.",
+    "untitled": "Užrašas be pavadinimo",
+    "fetchFailed": "Gauti užrašų duomenų nepavyko.",
+    "saved": "Užrašas sėkmingai pridėtas į serverį.",
+    "saveFailed": "Klaida: užklausa serveriui nepavyko."
+  },
+  "trash": {
+    "title": "Šiukšlinė",
+    "comingSoon": "Šiukšlinės funkcija netrukus atsiras kitoje programos Glazecalc versijoje. Iki tol naikinkite ir šalinkite atsargiai: kas pašalinta, prarandama visam laikui."
+  }
+}
