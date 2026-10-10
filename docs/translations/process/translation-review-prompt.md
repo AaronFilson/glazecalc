@@ -36,6 +36,8 @@ Read the English and the translation side by side, every segment (a message, a p
    - Plural forms: every CLDR category of the language is written and agrees with its number, including the form that fractions such as 1.5 take.
    - `account.settings.density.sg.example` stays in English until go-live: leave it.
    - "not fully" is not "not at all": "may not melt fully" must not become "may not melt at all". Check where the negation falls in every "not fully", "not completely", "not always".
+   - Every negation survives: a wave-4 safety guide lost the "never" in "never use compressed air", so a prohibition read as an instruction. Check each never, not, no, don't and without in your English, and each comparison of two things (the less toxic of two materials must not read as the other).
+   - "HSE" in the guides is the UK's Health and Safety Executive. Where a country has its own HSE (Ireland's Health Service Executive), name it as the UK's at its first mention in each section.
    - The glossary was built from suppliers' catalogues, not by potters, and lists its uncertain choices. Where a glossary term reads wrong to you in context, keep the translation consistent with the glossary unless it is plainly wrong, and say so in your report; do not edit the glossary.
 10. **Mechanics.** Placeholders, tags, plural forms, `{{…}}` values, ids and marks as the README says.
 

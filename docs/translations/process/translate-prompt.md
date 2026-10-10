@@ -26,6 +26,8 @@ What the reviews of the languages done before yours found, to get right the firs
 - Plural forms: write every CLDR category your language has, each agreeing with its number, including the form that fractions such as 1.5 take.
 - `account.settings.density.sg.example` stays in English until the language goes live, when a script fills it: ignore it.
 - "not fully" is not "not at all": "may not melt fully" must not become "may not melt at all". Check where the negation falls in every "not fully", "not completely", "not always".
+- Every negation survives: a wave-4 safety guide lost the "never" in "never use compressed air", so a prohibition read as an instruction. Check each never, not, no, don't and without in your English, and each comparison of two things (the less toxic of two materials must not read as the other).
+- "HSE" in the guides is the UK's Health and Safety Executive. Where a country has its own HSE (Ireland's Health Service Executive), name it as the UK's at its first mention in each section.
 - The app's guides and a kiln's own manual must not be the same bare word. Where another translator of your language has already written a guide (client/public/i18n/guides/*/{CODE}.md), use its front-matter title, the same in every link, page title and list.
 
 Your files:

@@ -1,0 +1,238 @@
+{
+  "auth": {
+    "signInHeading": "Síniú isteach",
+    "keepHeading": "Do chuid oibre a choinneáil",
+    "signUpHeading": "Do chuntas a chruthú",
+    "signInLead": "Fáilte ar ais chuig do leabhar nótaí glónraí.",
+    "keepLead": "Coinnigh gach a ndearna tú mar {name}: cuir do ríomhphost agus pasfhocal leis. Fanann sé saor in aisce.",
+    "signUpLead": "Saor in aisce. Coinnítear d’oidis, d’ábhair agus do nótaí príobháideach i do chuntas.",
+    "trialNote": "An bhfuil cuntas agat cheana? Má shíníonn tú isteach, tabharfar a ndearna tú mar {name} isteach ann. An bhfuil tú nua anseo? <signup>Cruthaigh cuntas</signup> chun é a choinneáil ina ionad sin.",
+    "email": "Ríomhphost",
+    "password": "Pasfhocal",
+    "passwordHint": "8 gcarachtar ar a laghad.",
+    "confirmation": "Deimhnigh an pasfhocal",
+    "passwordMissing": "Cuir isteach do phasfhocal.",
+    "createAccount": "Cruthaigh cuntas",
+    "signIn": "Sínigh isteach",
+    "haveAccount": "An bhfuil cuntas agat cheana? <signin>Sínigh isteach</signin>",
+    "forgot": "Ar dhearmad tú do phasfhocal? Athshocraigh é",
+    "newHere": "An bhfuil tú nua anseo? <signup>Cruthaigh cuntas saor in aisce</signup>",
+    "signUpFailed": "Earráid: níorbh fhéidir an cuntas a chruthú.",
+    "signInFailed": "Earráid: níorbh fhéidir síniú isteach."
+  },
+  "forgot": {
+    "heading": "Do phasfhocal a athshocrú",
+    "checkInbox": "Féach i do bhosca isteach agus i d’fhillteán dramhphoist. Mura dtagann aon rud, seiceáil an seoladh agus iarr arís.",
+    "intro": "Cuir isteach ríomhphost do chuntais, agus seolfaimid nasc chugat chun pasfhocal nua a roghnú.",
+    "email": "Ríomhphost:",
+    "send": "Seol nasc athshocraithe",
+    "back": "Ar ais chuig síniú isteach",
+    "failed": "Earráid: níorbh fhéidir an ríomhphost athshocraithe a sheoladh. Bain triail eile as."
+  },
+  "reset": {
+    "heading": "Pasfhocal nua a roghnú",
+    "signIn": "Sínigh isteach",
+    "incomplete": "Teastaíonn an nasc ó ríomhphost athshocraithe pasfhocail ón leathanach seo, agus níl an nasc seo iomlán.",
+    "askAgain": "Iarr nasc nua",
+    "password": "Pasfhocal nua:",
+    "confirmation": "Deimhnigh an pasfhocal nua:",
+    "save": "Sábháil an pasfhocal nua",
+    "hint": "8 gcarachtar ar a laghad. Síneofar amach gach gléas atá sínithe isteach sa chuntas.",
+    "failed": "Earráid: níorbh fhéidir an pasfhocal a athrú. Bain triail eile as."
+  },
+  "account": {
+    "trialTitle": "Do thriail",
+    "trialLead": "Tá tú ag baint triail as Glazecalc mar {name}.",
+    "keepHeading": "Do chuid oibre a choinneáil",
+    "keepText": "Bainfear an triail seo agus gach a bhfuil inti ar {date}. Cruthaigh cuntas saor in aisce chun iad a choinneáil: fanfaidh d’oidis, d’ábhair agus do nótaí díreach mar atá siad, agus fanfaidh {name} mar d’ainm taispeána.",
+    "createAccount": "Cruthaigh cuntas",
+    "title": "Do chuntas",
+    "signedInAs": "Sínithe isteach mar {email}.",
+    "changeHeading": "Do phasfhocal a athrú",
+    "current": "Pasfhocal reatha",
+    "currentMissing": "Cuir isteach do phasfhocal reatha.",
+    "password": "Pasfhocal nua",
+    "passwordHint": "8 gcarachtar ar a laghad. Síneofar amach gléasanna eile atá sínithe isteach sa chuntas seo.",
+    "confirmation": "Deimhnigh an pasfhocal nua",
+    "change": "Athraigh an pasfhocal",
+    "changeFailed": "Earráid: níorbh fhéidir an pasfhocal a athrú. Bain triail eile as.",
+    "deleteHeading": "Do chuntas a scriosadh",
+    "deleteText": "Baineann sé seo do chuntas agus gach a shábháil tú: oidis, ábhair, breiseáin, nótaí, taifid bhácála agus comhairle. Ní féidir é a chealú.",
+    "deletePassword": "Do phasfhocal, le deimhniú",
+    "deletePasswordMissing": "Cuir isteach do phasfhocal le deimhniú.",
+    "delete": "Scrios mo chuntas",
+    "deleteFailed": "Earráid: níorbh fhéidir an cuntas a scriosadh. Bain triail eile as."
+  },
+  "settings": {
+    "heading": "Socruithe",
+    "intro": "Sábháilte le do chuntas, mar sin bíonn siad i bhfeidhm ar gach gléas.",
+    "saveFailed": "Níorbh fhéidir an socrú a shábháil. Bain triail eile as.",
+    "language": {
+      "legend": "Teanga",
+      "help": "Teanga na haipe, na dtreoirleabhar agus do chuid ríomhphost. Má athraíonn tú í, osclófar an leathanach seo sa teanga sin.",
+      "saved": "Sábháilte: {language}."
+    },
+    "region": {
+      "legend": "An áit a n-oibríonn tú",
+      "none": {
+        "label": "Gan roghnú",
+        "saved": "Sábháilte: níl réigiún roghnaithe; leanann na réamhshocruithe do bhrabhsálaí."
+      },
+      "saved": "Sábháilte: {region}.",
+      "help": "Na hábhair a dhíoltar ansin, agus na réamhshocruithe d’uimhreacha, do dhátaí, do theochtaí agus do chóin thíos. Go dtí go roghnaíonn tú, leanann siad teanga do bhrabhsálaí."
+    },
+    "format": {
+      "legend": "Uimhreacha agus dátaí",
+      "auto": {
+        "label": "De réir mo theanga agus mo réigiúin",
+        "saved": "Sábháilte: uimhreacha agus dátaí mar a scríobhann do theanga agus do réigiún iad."
+      },
+      "saved": "Sábháilte: uimhreacha agus dátaí mar atá siad sa teanga {language}.",
+      "help": "Conas a scríobhtar uimhreacha agus dátaí: 12,345.6 nó 12.345,6, agus ord an lae agus na míosa."
+    },
+    "decimalMark": {
+      "legend": "Méideanna a chlóscríobh",
+      "either": {
+        "label": "Camóg nó pointe do dheachúlacha",
+        "example": "12,5 nó 12.5",
+        "saved": "Sábháilte: is féidir méideanna a chlóscríobh le camóg nó le pointe."
+      },
+      "comma": {
+        "label": "Camóg do dheachúlacha",
+        "saved": "Sábháilte: clóscríobhtar méideanna le camóg do dheachúlacha."
+      },
+      "point": {
+        "label": "Pointe do dheachúlacha",
+        "saved": "Sábháilte: clóscríobhtar méideanna le pointe do dheachúlacha."
+      },
+      "help": "Le ceachtar acu, léitear méid ar nós 1,250 ar an mbealach a scríobhtar d’uimhreacha thuas."
+    },
+    "temperature": {
+      "legend": "Teochtaí",
+      "celsius": {
+        "label": "Celsius",
+        "saved": "Sábháilte: teochtaí in °C."
+      },
+      "fahrenheit": {
+        "label": "Fahrenheit",
+        "saved": "Sábháilte: teochtaí in °F."
+      },
+      "help": "Go dtí go roghnaíonn tú, leanann sé seo do réigiún: °F i Stáit Aontaithe Mheiriceá, °C in áiteanna eile."
+    },
+    "cones": {
+      "legend": "Bácáil",
+      "orton": {
+        "label": "Go cóin Orton",
+        "example": "cón 04, cón 6",
+        "saved": "Sábháilte: bácáil go cóin Orton."
+      },
+      "temperature": {
+        "label": "De réir teochta, mar a bheadh i gclár rialaitheora áithe",
+        "saved": "Sábháilte: bácáil de réir teochta."
+      },
+      "help": "Go dtí go roghnaíonn tú, leanann sé seo do réigiún: cóin Orton i SAM, sa Ríocht Aontaithe, in Éirinn, san Astráil agus sa Nua-Shéalainn, teocht sa chuid eile den Eoraip."
+    },
+    "density": {
+      "legend": "Dlús glónra",
+      "sg": {
+        "label": "Sainmheáchan",
+        "saved": "Sábháilte: dlús glónra mar shainmheáchan.",
+        "example": "SG 1.45"
+      },
+      "baume": {
+        "label": "Céimeanna Baumé, ó hidriméadar",
+        "saved": "Sábháilte: dlús glónra i gcéimeanna Baumé."
+      },
+      "pint": {
+        "label": "Meáchan pionta, na hunsaí i bpionta impiriúil",
+        "saved": "Sábháilte: dlús glónra mar mheáchan pionta."
+      },
+      "help": "Conas a thugann na treoirleabhair tiús glónra. Go dtí go roghnaíonn tú, leanann sé seo do réigiún: céimeanna Baumé san Iodáil, sainmheáchan in áiteanna eile."
+    },
+    "theme": {
+      "legend": "Geal nó dorcha",
+      "system": {
+        "label": "Mar atá an gléas seo socraithe",
+        "saved": "Sábháilte: geal nó dorcha de réir mar atá gach gléas socraithe."
+      },
+      "light": {
+        "label": "Geal",
+        "saved": "Sábháilte: geal i gcónaí."
+      },
+      "dark": {
+        "label": "Dorcha",
+        "saved": "Sábháilte: dorcha i gcónaí."
+      },
+      "help": "Bíonn oidis phriontáilte dubh ar bhán i gcónaí."
+    },
+    "palette": {
+      "legend": "Dathanna",
+      "saved": "Sábháilte: {palette} do chnaipí agus do naisc.",
+      "help": "Do chnaipí, do naisc agus do chluaisíní, ainmnithe as glónraí. Is furasta gach ceann a léamh sa mhód geal agus sa mhód dorcha."
+    },
+    "weightUnit": {
+      "legend": "Meáchain bhaisce",
+      "grams": {
+        "label": "Graim",
+        "saved": "Sábháilte: tá meáchain bhaisce i ngraim."
+      },
+      "pounds": {
+        "label": "Puint agus unsaí",
+        "saved": "Sábháilte: tá meáchain bhaisce i bpuint agus in unsaí."
+      },
+      "help": "Do bhaisceanna priontáilte."
+    },
+    "gramPrecision": {
+      "legend": "Graim ar bhaisceanna priontáilte",
+      "single": {
+        "label": "Go dtí an deichiú cuid de ghram",
+        "saved": "Sábháilte: taispeántar graim go dtí an deichiú cuid."
+      },
+      "full": {
+        "label": "Beachtas iomlán",
+        "saved": "Sábháilte: taispeántar graim ina n-iomláine, go 5 ionad deachúlach."
+      },
+      "help": "Go dtí an deichiú cuid: taispeántar céadúna fós i méideanna faoi 10 g (2.35 g), d’ábhair datha i mbaisceanna beaga tástála."
+    },
+    "lead": {
+      "legend": "Luaidhe",
+      "off": {
+        "label": "As: ná cuir luaidhe le hoideas riamh, agus ná mol í",
+        "saved": "Sábháilte: ní chuirtear luaidhe le hoideas riamh, agus ní mholtar í."
+      },
+      "on": {
+        "label": "Ar siúl: is féidir ábhair ina bhfuil luaidhe a chur leis agus a mholadh",
+        "saved": "Sábháilte: is féidir ábhair ina bhfuil luaidhe a chur leis agus a mholadh."
+      },
+      "help": "Tá an luaidhe nimhiúil má análaítear isteach í nó má shlogtar í, carnann sí sa chorp, agus is féidir le glónra luaidhe í a scaoileadh isteach i mbia agus i ndeoch; ní féidir le haon ríomh a rá an ndéanann píosa bácáilte é sin. Nuair atá an socrú as, osclaítear fós, mar a bhí siad, oidis a bhfuil luaidhe iontu cheana.",
+      "warning": "Ná húsáid luaidhe ach mar fhriot, agus ná húsáid riamh í mar luaidhe dhearg, bhán nó bhuí nach ndearnadh friot di, ná mar liotáirse. Measc fliuch í, ná spraeáil riamh í, caith masc análaitheora agus déan glanadh fliuch. Coinnigh earraí a bhfuil glónra luaidhe orthu amach ó bhia agus ó dheoch mura bhfuil pas faighte ag an bpíosa bácáilte i dtástáil saotharlainne láistithe miotal.",
+      "turnOn": "Cuir an luaidhe ar siúl",
+      "keepOff": "Coinnigh as í"
+    },
+    "englishTerms": {
+      "legend": "Téarmaí Béarla",
+      "off": {
+        "label": "As",
+        "saved": "Sábháilte: gan téarmaí Béarla."
+      },
+      "on": {
+        "label": "Taispeáin an Béarla i ndiaidh na bpríomhthéarmaí",
+        "saved": "Sábháilte: an Béarla á thaispeáint i ndiaidh na bpríomhthéarmaí."
+      },
+      "help": "Chun foinsí Béarla, mar shampla Digitalfire, a léamh taobh leis an gceann seo: tugtar Béarla na bpríomhthéarmaí idir lúibíní."
+    },
+    "notice": {
+      "legend": "Fógra aistriúcháin",
+      "shown": {
+        "label": "Ar taispeáint",
+        "saved": "Sábháilte: tá an fógra ar taispeáint."
+      },
+      "hidden": {
+        "label": "I bhfolach",
+        "saved": "Sábháilte: tá an fógra i bhfolach. Fanann líne de sna treoirleabhair sábháilteachta.",
+        "savedPlain": "Sábháilte: tá an fógra i bhfolach. Fanann líne de ag barr gach leathanaigh."
+      },
+      "help": "An nóta ag barr gach leathanaigh a deir gur intleacht shaorga a d’aistrigh é, le bealach chun ceartúchán a mholadh."
+    }
+  }
+}

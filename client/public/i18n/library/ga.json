@@ -1,0 +1,50 @@
+{
+  "common": {
+    "formulaHelp": "Clóscríobh foirmle le gnáthuimhreacha, mar shampla {typed}: taispeántar na líonta mar fhoscripteanna, {shown}. Chun codanna d’fhoirmle a nascadh, mar atá san fhoirmle {joined}, cóipeáil an ponc seo:",
+    "relatedTo": "Gaolmhar le:",
+    "notes": "Nótaí:",
+    "loi": "Cailliúint ar adhaint – LOI (céatadán):",
+    "molecularWeight": "Meáchan móilíneach na foirmle roimh bhácáil (ní úsáidtear é ach má tá LOI folamh):",
+    "formulaHeading": "An fhoirmle a chur isteach (tar éis bácála):",
+    "oxideSelection": "Rogha ocsaíde",
+    "noOxide": "dada",
+    "addOxide": "Cuir an ocsaíd leis an liosta",
+    "formulaIn": "Tugtar an fhoirmle seo mar:",
+    "percent": "Céatadán",
+    "molecular": "Mólanna / Foirmle Seger",
+    "amount": "Méid:",
+    "removeOxide": "Bain as liosta na foirmle",
+    "save": "Sábháil",
+    "elements": "Dúile",
+    "removeNote": "Coinníonn oidis shábháilte a gcóip féin, mar sin ní athróidh siad.",
+    "saveFailed": "Earráid: theip ar an iarratas chuig an bhfreastalaí."
+  },
+  "material": {
+    "title": "Ábhair",
+    "lead": "Do chuid amhábhar féin, curtha isteach mar fhoirmle cheimiceach nó mar anailís ocsaíde.",
+    "newHeading": "Eolas faoin ábhar nua",
+    "name": "Ainm an ábhair:",
+    "rawFormula": "Foirmle roimh bhácáil:",
+    "weightsNote": "Ríomhtar an meáchan coibhéiseach agus an meáchan tar éis bácála ón bhfoirmle agus ón LOI nuair a shábhálann tú.",
+    "mineHeading": "Mo chuid ábhar:",
+    "rawFormulaColumn": "Foirmle roimh bhácáil",
+    "standardHeading": "Na hábhair chaighdeánacha:",
+    "fetchFailed": "Tharla earráid agus eolas na n-ábhar á fháil.",
+    "standardFetchFailed": "Tharla earráid agus eolas na n-ábhar caighdeánach á fháil.",
+    "saved": "D’éirigh leis. Cuireadh an t-ábhar leis an mbunachar sonraí."
+  },
+  "additive": {
+    "title": "Breiseáin agus ábhair datha",
+    "lead": "Ábhair datha agus teimhneoirí a mheáitear anuas ar oideas an bhunghlónra, mar shampla cóbalt nó ocsaíd stáin. Is féidir le hoideas iad a fhágáil as an bhfoirmle Seger nó iad a áireamh inti.",
+    "newHeading": "Eolas faoin mbreiseán nua",
+    "name": "Ainm an bhreiseáin:",
+    "formulaAsSold": "Foirmle, mar a dhíoltar é:",
+    "noChemistry": "Níl anailís ocsaíde aige, mar shampla lí tráchtála: fág as an bhfoirmle Seger é",
+    "firedNote": "Cuir isteach a dtugann sé don ghlónra tar éis bácála: is ionann ocsaíd chóbailt dhubh, {asSold}, agus {fired} le LOI {loi}%. Is féidir le hoideas é a áireamh san fhoirmle Seger ansin.",
+    "mineHeading": "Mo chuid breiseán agus ábhar datha:",
+    "standardHeading": "Na breiseáin chaighdeánacha:",
+    "fetchFailed": "Tharla earráid agus eolas na mbreiseán á fháil.",
+    "standardFetchFailed": "Tharla earráid agus eolas na mbreiseán caighdeánach á fháil.",
+    "saved": "D’éirigh leis. Cuireadh an breiseán leis an mbunachar sonraí."
+  }
+}
