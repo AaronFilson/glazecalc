@@ -1,15 +1,13 @@
-# The Ubuntu that CI runs on, with Node 24 and Playwright's Chromium and the
-# Linux libraries and fonts it needs, installed as CI installs them (npx
-# playwright install --with-deps chromium). scripts/test-e2e-linux.sh builds it
-# once for each Ubuntu and Playwright version.
-ARG UBUNTU
+# The browser tests' Linux: Playwright's own image for the version in
+# package.json (Ubuntu 24.04 with Chromium, its libraries and a fixed set of
+# fonts), with Node 24. CI and npm run test:e2e:linux both run the tests in it,
+# so a page lays out the same in both; a new image comes only with a new
+# Playwright. scripts/test-e2e-linux.sh builds it once for each version.
+ARG PLAYWRIGHT
 FROM node:24 AS node
 
-FROM ubuntu:${UBUNTU}
-ARG PLAYWRIGHT
+FROM mcr.microsoft.com/playwright:v${PLAYWRIGHT}-noble
 COPY --from=node /usr/local/bin/node /usr/local/bin/
 COPY --from=node /usr/local/lib/node_modules /usr/local/lib/node_modules
-RUN ln -s ../lib/node_modules/npm/bin/npm-cli.js /usr/local/bin/npm \
-  && ln -s ../lib/node_modules/npm/bin/npx-cli.js /usr/local/bin/npx
-ENV PLAYWRIGHT_BROWSERS_PATH=/ms-playwright
-RUN npx -y playwright@${PLAYWRIGHT} install --with-deps chromium && rm -rf /root/.npm
+RUN ln -sf ../lib/node_modules/npm/bin/npm-cli.js /usr/local/bin/npm \
+  && ln -sf ../lib/node_modules/npm/bin/npx-cli.js /usr/local/bin/npx

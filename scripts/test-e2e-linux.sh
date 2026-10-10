@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
-# Runs the browser tests on Linux in Docker, as CI runs them: the Ubuntu named in
-# ci.yml, Node 24, MongoDB 9.0, and Chromium with Linux's fonts, which are wider
-# than Windows' and have broken layouts that passed on Windows. Called by
-# scripts/test-e2e-linux.mjs (npm run test:e2e:linux), which makes the source tar.
+# Runs the browser tests on Linux in Docker, exactly as CI runs them (CI calls
+# this too): Playwright's image for its version, Node 24, MongoDB 9.0. Linux
+# lays pages out differently from Windows, and layouts that passed on Windows
+# have broken there. Called by scripts/test-e2e-linux.mjs (npm run
+# test:e2e:linux), which makes the source tar.
 #
 #   bash scripts/test-e2e-linux.sh <source.tar> <results dir> [playwright args]
 set -euo pipefail
@@ -13,18 +14,16 @@ HERE=$(cd "$(dirname "$0")" && pwd)
 CACHE=$HOME/.cache/glazecalc-e2e-linux
 WORK=$CACHE/app
 
-# An image of CI's Ubuntu with Node and Playwright's Chromium, built once for each
-# Ubuntu and Playwright version.
-# Each file is read whole before it is searched: grep stopping early would cut
+# Playwright's own image for the version in package.json, with Node, built once
+# for each version (test-e2e-linux.Dockerfile). CI runs the tests in it too.
+# The file is read whole before it is searched: grep stopping early would cut
 # tar off mid-write, and pipefail would end the script.
 PACKAGE=$(tar -xOf "$TAR" package.json)
-CI=$(tar -xOf "$TAR" .github/workflows/ci.yml)
 PLAYWRIGHT=$(grep -o '"@playwright/test": *"[^"]*"' <<<"$PACKAGE" | grep -o '[0-9][0-9.]*')
-UBUNTU=$(sed -n 's/.*runs-on: ubuntu-\([0-9.]*\).*/\1/p' <<<"$CI" | sed -n 1p)
-IMAGE=glazecalc-e2e:ubuntu$UBUNTU-playwright$PLAYWRIGHT
+IMAGE=glazecalc-e2e:playwright$PLAYWRIGHT
 if ! docker image inspect "$IMAGE" >/dev/null 2>&1; then
-  echo "Building $IMAGE, once for this Ubuntu and Playwright..."
-  docker build -q -t "$IMAGE" --build-arg UBUNTU="$UBUNTU" --build-arg PLAYWRIGHT="$PLAYWRIGHT" - \
+  echo "Building $IMAGE, once for this Playwright..."
+  docker build -q -t "$IMAGE" --build-arg PLAYWRIGHT="$PLAYWRIGHT" - \
     <"$HERE/test-e2e-linux.Dockerfile" >/dev/null
 fi
 

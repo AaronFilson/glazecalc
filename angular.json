@@ -31,7 +31,12 @@
                 "input": "client/public"
               }
             ],
-            "styles": ["node_modules/bootstrap/dist/css/bootstrap.min.css", "client/styles.scss"],
+            "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/@fontsource-variable/lora/wght.css",
+              "node_modules/@fontsource-variable/lora/wght-italic.css",
+              "client/styles.scss"
+            ],
             "loader": {
               ".md": "text"
             }

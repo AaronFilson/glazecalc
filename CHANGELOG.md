@@ -236,6 +236,11 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Changed
 
+- **Lora, served with the app**, for every heading and paragraph, with Noto Serif for what Lora lacks
+  (Greek, and the subscripts of formulas such as SiO₂). A page now lays out the same on every device
+  instead of in each one's own font, and the browser tests measure what people see.
+- **The browser tests run in Playwright's own image**, in CI and in `npm run test:e2e:linux` alike, so
+  a layout that passes locally passes in CI.
 - **Plainer English where translators misread it**, in the guides, and every language with it:
   cooking ware of any size is in the food-contact category (not only over 3 L); small children and pets
   cannot understand a warning sign, so keep them behind a locked door (not only those who cannot);
