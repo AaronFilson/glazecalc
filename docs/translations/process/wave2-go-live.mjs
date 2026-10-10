@@ -17,7 +17,8 @@ import { createRequire } from 'node:module';
 const ROOT = 'C:/Users/bellows/gh/glazecalc/';
 const I18N = ROOT + 'client/public/i18n/';
 const FINGERPRINTS = ROOT + 'client/i18n-fingerprints/';
-const EMAILS = 'C:/Users/bellows/AppData/Local/Temp/claude/C--Users-bellows-gh-glazecalc/c9e2de23-6bd0-4c08-9910-8c09a9678344/scratchpad/emails/';
+const EMAILS =
+  'C:/Users/bellows/AppData/Local/Temp/claude/C--Users-bellows-gh-glazecalc/c9e2de23-6bd0-4c08-9910-8c09a9678344/scratchpad/emails/';
 const dry = process.argv.includes('--dry');
 const codes = process.argv.slice(2).filter((a) => a !== '--dry');
 if (!codes.length) throw new Error('which languages?');
@@ -29,7 +30,8 @@ let languages = readFileSync(languagesFile, 'utf8');
 for (const code of codes) {
   const line = new RegExp(`^(  language\\('${code}', '[^']+', '[^']+')\\),$`, 'm');
   if (line.test(languages)) languages = languages.replace(line, '$1, { live: true }),');
-  else if (!new RegExp(`^  language\\('${code}', [^\\n]*live: true`, 'm').test(languages)) throw new Error(code + ': not in languages.js');
+  else if (!new RegExp(`^  language\\('${code}', [^\\n]*live: true`, 'm').test(languages))
+    throw new Error(code + ': not in languages.js');
 }
 write(languagesFile, languages);
 
@@ -91,7 +93,7 @@ for (const code of codes) {
 const require = createRequire(import.meta.url);
 delete require.cache[languagesFile];
 const live = new Set([...(dry ? [] : require(languagesFile).LIVE_LANGUAGES), ...codes]);
-if (dry) for (const m of languages.matchAll(/^  language\('([^']+)'[^\n]*live: true/gm)) live.add(m[1]);
+if (dry) for (const m of languages.matchAll(/^ {2}language\('([^']+)'[^\n]*live: true/gm)) live.add(m[1]);
 const tmp = mkdtempSync(path.join(tmpdir(), 'golive-'));
 const copyI18n = tmp + '/i18n/';
 const copyPrints = tmp + '/prints/';
@@ -109,7 +111,13 @@ for (const entry of readdirSync(I18N, { recursive: true, withFileTypes: true }))
 cpSync(FINGERPRINTS, copyPrints, { recursive: true });
 const { updateTranslations } = await import('file:///' + ROOT + 'scripts/i18n-fingerprints.mjs');
 // English made plainer during wave 2 without changing its meaning: their translations stay.
-const KEEP = ['guides:food.category.cooking', 'guides/home-safety:the-kiln', 'guides/making-a-glaze:testing', 'guides/safe-mixing:respirators', 'guides/home-safety:pets'];
+const KEEP = [
+  'guides:food.category.cooking',
+  'guides/home-safety:the-kiln',
+  'guides/making-a-glaze:testing',
+  'guides/safe-mixing:respirators',
+  'guides/home-safety:pets'
+];
 const result = updateTranslations({ dir: copyI18n, fingerprints: copyPrints, write: true, keep: KEEP });
 const changes = Array.isArray(result) ? result : (result?.changes ?? []);
 const kinds = {};

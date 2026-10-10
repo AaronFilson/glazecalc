@@ -3,11 +3,23 @@
 //   node wave2-bt-make.js sk
 const fs = require('fs');
 const { execFileSync } = require('child_process');
-const S = 'C:/Users/bellows/AppData/Local/Temp/claude/C--Users-bellows-gh-glazecalc/c9e2de23-6bd0-4c08-9910-8c09a9678344/scratchpad/';
-const WIN = 'C:\\Users\\bellows\\AppData\\Local\\Temp\\claude\\C--Users-bellows-gh-glazecalc\\c9e2de23-6bd0-4c08-9910-8c09a9678344\\scratchpad\\';
+const S =
+  'C:/Users/bellows/AppData/Local/Temp/claude/C--Users-bellows-gh-glazecalc/c9e2de23-6bd0-4c08-9910-8c09a9678344/scratchpad/';
+const WIN =
+  'C:\\Users\\bellows\\AppData\\Local\\Temp\\claude\\C--Users-bellows-gh-glazecalc\\c9e2de23-6bd0-4c08-9910-8c09a9678344\\scratchpad\\';
 const L = {
-  nl: 'Dutch', ro: 'Romanian', cs: 'Czech', hu: 'Hungarian', el: 'Greek', sv: 'Swedish',
-  da: 'Danish', fi: 'Finnish', sk: 'Slovak', sl: 'Slovenian', hr: 'Croatian', bg: 'Bulgarian'
+  nl: 'Dutch',
+  ro: 'Romanian',
+  cs: 'Czech',
+  hu: 'Hungarian',
+  el: 'Greek',
+  sv: 'Swedish',
+  da: 'Danish',
+  fi: 'Finnish',
+  sk: 'Slovak',
+  sl: 'Slovenian',
+  hr: 'Croatian',
+  bg: 'Bulgarian'
 };
 const code = process.argv[2];
 if (!L[code]) throw new Error('language code?');
