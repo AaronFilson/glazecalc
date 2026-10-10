@@ -255,6 +255,8 @@
     "label": "About this translation",
     "text": "This page was translated from English by AI. Glazecalc is open source: if something reads wrong, please suggest a correction on GitHub.",
     "brief": "Translated from English by AI.",
+    "plain": "This page was translated from English by AI, which handles this language less well than most languages. The English page may read better. Glazecalc is open source: if something reads wrong, please suggest a correction on GitHub.",
+    "plainBrief": "Translated by AI; the English may read better.",
     "suggest": "Suggest a correction",
     "english": "Read the English",
     "close": "Close"

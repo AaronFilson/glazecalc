@@ -50,7 +50,7 @@ Messages are [ICU MessageFormat](https://formatjs.github.io/docs/core-concepts/i
   kg, %, ml, lb, oz), product and trade names (Ferro 3134, Gerstley borate, Custer, Orton, Skutt), the name Glazecalc,
   web addresses, and anything a person typed. An EU directive or regulation takes its official form in the language
   (84/500/CEE in French, Italian, Spanish and Portuguese, 84/500/EWG in German, 84/500/EWG in Polish).
-- **Numbers keep their digits** and are written the language's way: `1,5` for 1.5 in every language here, thousands
+- **Numbers keep their digits** and are written the language's way: `1,5` for 1.5 in most languages here (Irish and Maltese write `1.5`, as English does: the check takes each language's decimal mark from CLDR), thousands
   with the language's separator or none (`1222 °C`). A number in the English is a number in the translation, never a
   word, and the same unit follows it. A unit symbol keeps its symbol: 100 g stays `100 g`, never `100 Gramm`. Inches
   and feet are the exception: write the language's word for them (Zoll, pouces, pollici, cale, polegadas, pulgadas;

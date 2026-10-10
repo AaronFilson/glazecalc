@@ -24,13 +24,24 @@
 // guides/firing:cones (app: for the app's own messages, guides/<guide>: for a
 // section, guides/<guide>:intro for the part before the first).
 import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from 'node:fs';
+import { createRequire } from 'node:module';
 import path from 'node:path';
+
+const { languageFor } = createRequire(import.meta.url)('../lib/regions/languages.js');
 
 const ROOT = path.resolve(import.meta.dirname, '..');
 export const I18N = path.join(ROOT, 'client', 'public', 'i18n');
 export const FINGERPRINTS = path.join(ROOT, 'client', 'i18n-fingerprints');
 /** Scopes keyed by a hash of their English, which therefore need no fingerprints. */
 const SELF_KEYED = ['safety', 'regions', 'records'];
+/**
+ * The plainer notice's messages, shown only in the languages AI translates less
+ * well (plainNotice in lib/regions/languages.js): no other language counts them
+ * as still in English.
+ */
+const PLAIN_NOTICE = ['app:notice.plain', 'app:notice.plainBrief', 'account:settings.notice.hidden.savedPlain'];
+const shownIn = (language, name, key) =>
+  !PLAIN_NOTICE.includes(`${name}:${key}`) || !!languageFor(language)?.plainNotice;
 
 /** A short fingerprint of a text (FNV-1a, as textKey's). */
 export function fingerprint(text) {
@@ -169,7 +180,7 @@ export function updateTranslations({ dir = I18N, fingerprints = FINGERPRINTS, wr
       const english = flatten(readJson(path.join(dir, scope, 'en.json')));
       const file = path.join(dir, scope, language + '.json');
       if (!existsSync(file)) {
-        left.messages += Object.keys(english).length;
+        left.messages += Object.keys(english).filter((key) => shownIn(language, name, key)).length;
         continue;
       }
       const theirs = flatten(readJson(file));
@@ -178,7 +189,7 @@ export function updateTranslations({ dir = I18N, fingerprints = FINGERPRINTS, wr
       const nextPrints = {};
       for (const [key, english_] of Object.entries(english)) {
         if (!(key in theirs)) {
-          left.messages++;
+          if (shownIn(language, name, key)) left.messages++;
           continue;
         }
         const now = fingerprint(english_);

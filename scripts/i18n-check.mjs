@@ -123,6 +123,10 @@ const UNIT_AFTER = new RegExp(`^[ \\u00a0\\u202f]?(${UNITS.join('|')})(?![\\p{L}
 /** A temperature written without its degree sign, 1742 F, or with it apart, 40° F: °F all the same. */
 const DEGREES_AFTER = /^°?[ \u00a0\u202f]?°?([CF])(?![\p{L}\d])/u;
 
+/** Whether a language writes 1.5 with a point, as English does, rather than a comma. */
+const decimalPoint = (language) =>
+  new Intl.NumberFormat(language).formatToParts(1.5).find((part) => part.type === 'decimal')?.value === '.';
+
 /**
  * The numbers in a text, as English writes them, each with the unit after it:
  * ['1222 °C', '06', '1.5 %']. German 1.222 and 1,5 are 1222 and 1.5; French
@@ -130,9 +134,10 @@ const DEGREES_AFTER = /^°?[ \u00a0\u202f]?°?([CF])(?![\p{L}\d])/u;
  * A dot before one or two digits cannot group thousands, so it is a decimal
  * point in any language: a product's code, Keramikos 10.05, stays as it is.
  * Times are read on the 24-hour clock, as most languages write them: 8pm is 20.
+ * Irish and Maltese write numbers as English does (CLDR's, through Intl).
  */
 export function numbersIn(text, language) {
-  const english = language === 'en';
+  const english = decimalPoint(language);
   text = text.replace(/\b(\d{1,2})(?::(\d{2}))?\s?([ap])\.?m\b\.?/gi, (_, hour, minutes, half) => {
     const h = (Number(hour) % 12) + (half.toLowerCase() === 'p' ? 12 : 0);
     return minutes ? `${h}:${minutes}` : String(h);

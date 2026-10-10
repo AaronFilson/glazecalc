@@ -1,0 +1,88 @@
+{
+  "home": {
+    "title": "Il-pitazz tal-istudjo",
+    "signedInAs": "Dħalt bħala {email}.",
+    "trying": "Qed tipprova Glazecalc bħala {name}. Ibda b’riċetta.",
+    "welcomeBack": "Kompli minn fejn ħallejt.",
+    "sections": {
+      "recipe": {
+        "title": "Riċetti",
+        "text": "Ibni glejż minn materjali u ammonti, ara l-formula ta’ Seger (UMF) tiegħu, u ssejvjah."
+      },
+      "material": {
+        "title": "Materjali",
+        "text": "Żid il-materji primi tiegħek, minn formula kimika jew mill-analiżi tal-fornitur."
+      },
+      "additive": {
+        "title": "Addittivi u kuluranti",
+        "text": "Żomm hawn il-kuluranti u l-opaċifikaturi li żżid fuq glejż bażi."
+      },
+      "firing": {
+        "title": "Reġistri tal-ħami",
+        "text": "Irreġistra l-ħinijiet, it-temperaturi u l-koni ta’ kull ħamja."
+      },
+      "notes": {
+        "title": "Noti",
+        "text": "Żomm ir-riżultati tat-testijiet u kull ħaġa oħra li ta’ min tiftakarha."
+      },
+      "advice": {
+        "title": "Pariri dwar il-glejż",
+        "text": "Suġġerimenti dwar it-taħlit, it-tqegħid tal-glejż u l-ħami, u l-pariri tiegħek stess."
+      },
+      "guides": {
+        "title": "Gwidi",
+        "text": "Minn x’inhu glejż sal-ħami tiegħu, u kif iżżomm lil kulħadd sikur matul it-triq."
+      }
+    },
+    "newHere": "L-ewwel darba li qed tiltaqa’ mal-formuli ta’ Seger? <advice>Il-paġna Pariri</advice> tispjega l-bażi, u <about>il-paġna Dwar</about> tgħid kif jaħdem Glazecalc."
+  },
+  "firing": {
+    "title": "Reġistri tal-ħami",
+    "lead": "Irreġistra kull ħamja: il-ħinijiet, it-temperaturi, il-koni u n-noti dwar il-forn.",
+    "titleLabel": "Isem il-ħamja:",
+    "kiln": "Forn:",
+    "date": "Data tal-ħamja:",
+    "notes": "Noti dwar il-ħamja:",
+    "fieldSelect": "Agħżel u żid oqsma mar-reġistru tal-ħami:",
+    "addField": "Żid il-qasam",
+    "included": "L-oqsma li inkludejt:",
+    "fieldName": "Isem il-qasam: {name}",
+    "moveLeft": "Mexxi l-qasam lejn ix-xellug",
+    "moveRight": "Mexxi l-qasam lejn il-lemin",
+    "removeField": "Neħħi l-qasam",
+    "addRow": "Żid ringiela mat-tabella tal-ħami",
+    "recordHeading": "Irreġistra l-ħamja",
+    "rowActions": "Azzjonijiet tar-ringiela",
+    "cell": "{field}, ringiela {row}",
+    "removeRow": "Neħħi r-ringiela",
+    "save": "Issejvja",
+    "storedHeading": "Il-ħamjiet li ssejvjajt:",
+    "stored": "Isem: {title}, Forn użat: {kiln}, Data: {date}",
+    "storedNotes": "Noti: {notes}",
+    "titleMissing": "Agħti isem lill-ħamja.",
+    "fieldsMissing": "Żid mill-inqas qasam wieħed biex tirreġistra, bħal {example}.",
+    "chooseField": "Agħżel qasam biex iżżidu, imbagħad agħżel Żid il-qasam.",
+    "fetchFailed": "Kien hemm żball fil-ġbir tal-informazzjoni dwar ir-reġistri tal-ħami.",
+    "saved": "Ir-reġistru tal-ħami ġie miżjud mas-server.",
+    "saveFailed": "Żball: it-talba lis-server ma rnexxietx."
+  },
+  "notes": {
+    "title": "Noti",
+    "lead": "Kull ħaġa oħra li ta’ min tiftakar dwar il-glejżijiet tiegħek.",
+    "intro": "Din hija l-paġna tan-noti. Hawn tista’ tieħu n-noti u tissejvjahom.",
+    "titleLabel": "Titlu:",
+    "content": "In-nota tiegħek:",
+    "save": "Issejvja",
+    "mineHeading": "In-noti li ssejvjajt:",
+    "titleMissing": "Agħti titlu lin-nota.",
+    "contentMissing": "Ikteb in-nota.",
+    "untitled": "Nota bla titlu",
+    "fetchFailed": "Kien hemm żball fil-ġbir tal-informazzjoni dwar in-noti.",
+    "saved": "In-nota ġiet miżjuda mas-server.",
+    "saveFailed": "Żball: it-talba lis-server ma rnexxietx."
+  },
+  "trash": {
+    "title": "Barmil",
+    "comingSoon": "Il-funzjoni tal-barmil ġejja fil-verżjoni li jmiss ta’ Glazecalc. Sa dakinhar, uża Ħassar / Neħħi b’attenzjoni: ladarba xi ħaġa titħassar, l-informazzjoni tintilef."
+  }
+}

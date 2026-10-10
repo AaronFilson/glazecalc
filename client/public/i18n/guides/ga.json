@@ -1,0 +1,154 @@
+{
+  "version": {
+    "cones": "Taispeántar an treoirleabhar seo do bhácáil go cóin, mar a roghnaíodh sna socruithe.",
+    "temperature": "Taispeántar an treoirleabhar seo do bhácáil de réir teochta, mar a roghnaíodh sna socruithe.",
+    "showTemperature": "Taispeáin é do bhácáil de réir teochta",
+    "showCones": "Taispeáin é do bhácáil go cóin"
+  },
+  "notTranslated": "Níl an treoirleabhar seo aistrithe fós, mar sin taispeántar i mBéarla é.",
+  "sectionInEnglish": "Athraíodh an chuid seo ó aistríodh í, mar sin taispeántar i mBéarla í go dtí go dtabharfar a haistriúchán cothrom le dáta.",
+  "list": {
+    "title": "Treoirleabhair",
+    "lead": "Treoirleabhair i dteanga shimplí do photadóirí nua: ó cad is glónra ann go dtí é a bhácáil, agus gach duine a choinneáil slán ar an mbealach.",
+    "note": "Bailíonn na treoirleabhair seo an méid a fhoilsíonn déantóirí, gníomhaireachtaí sábháilteachta agus potadóirí a bhfuil taithí acu, agus na foinsí ag deireadh gach ceann acu. Is pointe tosaigh iad, agus ní thagann siad in ionad bileog sonraí sábháilteachta do chuid ábhar, lámhleabhair d’áithe ná rialacha áitiúla.",
+    "glazingBasics": {
+      "title": "Glónrú ó bhunphrionsabail",
+      "text": "Cad is glónra ann, conas a leánn sé, agus míniú ar gach focal a chasfar ort ar oideas nó ar mhála."
+    },
+    "makingAGlaze": {
+      "title": "Conas glónra a dhéanamh",
+      "text": "Glónra a cheannach, a stóráil, a mheá, a mheascadh agus a chriathrú, ansin é a thástáil agus taifid a choinneáil."
+    },
+    "safeMixing": {
+      "title": "Meascadh sábháilte agus aeráil",
+      "text": "Deannach, maisc análaitheora, glanadh, na hábhair is mó a éilíonn cúram, agus an áith a aeráil."
+    },
+    "homeSafety": {
+      "title": "Ná nimhigh do theaghlach",
+      "text": "Potaireacht sa bhaile le páistí agus peataí: stóráil, deannach, an áith, agus cad atá le déanamh má shlogtar rud éigin."
+    },
+    "firing": {
+      "title": "Bácáil in áith shimplí",
+      "text": "Cóin, an Kiln-Sitter agus lasca láimhe, le cláir bhácála don bhrioscbhácáil agus don bhácáil glónra."
+    }
+  },
+  "contents": "Ar an leathanach seo",
+  "poison": {
+    "numbersFor": "Uimhreacha sa tír:",
+    "choose": "Roghnaigh do thír",
+    "label": "Cé air a nglaofar: {region}",
+    "caption": "Cé air a nglaofar: {region} (uimhreacha seiceáilte {date})",
+    "for": "Cás",
+    "call": "Glaoigh ar",
+    "notes": "Uaireanta agus nótaí",
+    "emergency": "Éigeandáil: gan aithne, gan anáil, taom",
+    "poisonAdvice": "{who, select, children {Comhairle faoi nimh: {name} (do pháistí amháin)} other {Comhairle faoi nimh: {name}}}",
+    "or": "nó {number}",
+    "online": "Ar líne: <link>{name}</link>.",
+    "poisonAdviceNone": "Comhairle faoi nimh",
+    "noLine": "Níorbh fhéidir linn líne phoiblí chomhairle faoi nimh a dheimhniú anseo. Glaoigh ar do dhochtúir, nó ar an uimhir éigeandála más práinneach é.",
+    "medicalAdvice": "Comhairle leighis: {name}",
+    "animals": "Ainmhithe: {name}",
+    "animalsNone": "Ainmhithe",
+    "vet": "Glaoigh ar do thréidlia.",
+    "checkedOn": "Seiceáilte:",
+    "choosePrompt": "Roghnaigh do thír chun a fheiceáil cé air a nglaofar ansin.",
+    "ministry": "Leathanach na haireachta sláinte: <link>{name}</link>."
+  },
+  "density": {
+    "sg": "sainmheáchan {value}",
+    "baume": "{value} °Bé ({sg})",
+    "pint": "{value} oz an pionta impiriúil ({sg})"
+  },
+  "shops": {
+    "shopsIn": "Siopaí sa tír:",
+    "label": "Siopaí: {region}",
+    "caption": "Roinnt siopaí a dhíolann amhábhair ghlónra: {region} (seiceáilte {date})",
+    "nearbyCaption": "Siopaí in áiteanna eile a deir go seachadann siad chuig an tír seo: {region} (seiceáilte {date})",
+    "shop": "Siopa",
+    "sells": "Díolann",
+    "packs": "Pacáistí a chonacthas",
+    "seen": "Ábhair a chonacthas, faoi ainmneacha an tsiopa",
+    "what": {
+      "materials": "amhábhair ghlónra",
+      "frits": "friotanna",
+      "oxides": "ocsaídí",
+      "stains": "líocha",
+      "clays": "cré",
+      "glazes": "glónraí réamhdhéanta",
+      "kilns": "áitheanna"
+    },
+    "none": "Níor aimsíomar aon siopa a dhíolann amhábhair ghlónra sa tír seo: {region}.",
+    "unknown": "Níor chuardaíomar siopaí fós sa tír seo: {region}.",
+    "choosePrompt": "Roghnaigh do thír chun siopaí ansin a fheiceáil."
+  },
+  "silica": {
+    "limitIn": "Teorainn sa tír:",
+    "label": "Teorainn na silice: {region}",
+    "caption": "An teorainnluach nochta ceirde do shilice chriostalta inanálaithe: {region}, meán thar 8 n-uaire an chloig (seiceáilte {date})",
+    "both": "Grianchloch agus críostabailít",
+    "quartz": "Grianchloch",
+    "cristobalite": "Críostabailít",
+    "actionLevel": "Leibhéal gníomhaíochta",
+    "value": "{value} mg/m³",
+    "kind": {
+      "binding": "Teorainnluach ceangailteach.",
+      "indicative": "Teorainnluach táscach: luach treorach, ní uasteorainn dhlíthiúil.",
+      "assessment": "Critéar measúnaithe, ní teorainnluach ceangailteach."
+    },
+    "setBy": "Leagtha síos sa dlí seo: <link>{law}</link>.",
+    "lowerThanEu": "Níos ísle ná teorainnluach ceangailteach an Aontais Eorpaigh, {value} mg/m³.",
+    "sameAsEu": "Is ionann é agus teorainnluach ceangailteach an Aontais Eorpaigh.",
+    "unknown": "Níorbh fhéidir linn an teorainn náisiúnta a dheimhniú sa tír seo: {region}. Tá feidhm ag teorainnluach ceangailteach an Aontais Eorpaigh, {value} mg/m³, i ngach ballstát.",
+    "noData": "Níor dheimhníomar an teorainn fós sa tír seo: {region}.",
+    "agency": "An comhlacht náisiúnta atá freagrach as sábháilteacht ag an obair: <link>{name}</link>.",
+    "agencySilica": "A <link>leathanach faoi shilice</link>.",
+    "choosePrompt": "Roghnaigh do thír chun a teorainn a fheiceáil."
+  },
+  "food": {
+    "rulesIn": "Rialacha sa tír:",
+    "label": "Teorainneacha d’earraí ceirmeacha: {region}",
+    "caption": "An méid a fhéadfaidh píosa bácáilte a scaoileadh sa tástáil dhlíthiúil: {region} (seiceáilte {date})",
+    "article": "Cineál píosa",
+    "lead": "Luaidhe",
+    "cadmium": "Caidmiam",
+    "category": {
+      "flat": "Píosaí nach féidir a líonadh, nó nach bhfuil níos doimhne ná 25 mm",
+      "fillable": "Píosaí eile is féidir a líonadh",
+      "cooking": "Gréithe cócaireachta d’aon mhéid; soithí pacáistíochta agus stórála os cionn 3 L",
+      "rimBand": "Béal píosa le hól as: banda 2 cm, taobh istigh agus taobh amuigh",
+      "rimArticle": "Béal píosa le hól as: banda 20 mm ar an taobh amuigh, faoin gciumhais uachtarach, in aghaidh an phíosa",
+      "flatware": "Earraí cothroma, nach bhfuil níos doimhne ná 25 mm",
+      "smallHollow": "Earraí tolla beaga, faoi 1.1 L, seachas cupáin agus mugaí",
+      "cups": "Cupáin agus mugaí",
+      "largeHollow": "Earraí tolla móra, 1.1 L nó níos mó, seachas crúscaí",
+      "pitchers": "Crúscaí",
+      "auSmall": "Cupáin, mugaí, crúiscíní, babhlaí, taephotaí agus earraí boird eile faoi 1100 mL",
+      "auLarge": "Mar an gcéanna, 1100 mL nó níos mó",
+      "auPlates": "Plátaí, sásair agus earraí boird cosúla",
+      "auCooking": "Gréithe cócaireachta"
+    },
+    "judged": {
+      "average": "meán 6 phíosa",
+      "each": "aon cheann de 6"
+    },
+    "euRules": "Tá feidhm ag rialacha an Aontais Eorpaigh anseo.",
+    "law": "Leagtha síos sa dlí seo: <link>{law}</link>.",
+    "inForce": "I bhfeidhm ó {date}.",
+    "unknown": "Níor dheimhníomar na rialacha fós sa tír seo: {region}.",
+    "choosePrompt": "Roghnaigh do thír chun a rialacha a fheiceáil."
+  },
+  "equivalents": {
+    "buyingIn": "Ag ceannach sa tír:",
+    "label": "{library, select, US {Coibhéisí a dhíoltar i Stáit Aontaithe Mheiriceá} UK {Coibhéisí a dhíoltar sa Ríocht Aontaithe} EU {Coibhéisí a dhíoltar san Aontas Eorpach} other {Coibhéisí a dhíoltar san Astráil agus sa Nua-Shéalainn}}",
+    "caption": "{library, select, US {Ábhair nach ndíoltar i Stáit Aontaithe Mheiriceá, gach ceann acu leis an ábhar is gaire dó a dhíoltar ansin} UK {Ábhair nach ndíoltar sa Ríocht Aontaithe, gach ceann acu leis an ábhar is gaire dó a dhíoltar ansin} EU {Ábhair nach ndíoltar san Aontas Eorpach, gach ceann acu leis an ábhar is gaire dó a dhíoltar ansin} other {Ábhair nach ndíoltar san Astráil agus sa Nua-Shéalainn, gach ceann acu leis an ábhar is gaire dó a dhíoltar ansin}}",
+    "material": "In oideas",
+    "soldIn": "Ar díol i",
+    "closest": "{library, select, US {An ceann is gaire a dhíoltar i Stáit Aontaithe Mheiriceá} UK {An ceann is gaire a dhíoltar sa Ríocht Aontaithe} EU {An ceann is gaire a dhíoltar san Aontas Eorpach} other {An ceann is gaire a dhíoltar san Astráil agus sa Nua-Shéalainn}}",
+    "apart": "difríocht {grams} g sa 100 g",
+    "noneClose": "Níl aon rud laistigh de 15 g sa 100 g: déan comparáid de réir na ceimice.",
+    "loading": "Ag lódáil na leabharlainne…",
+    "failed": "Níorbh fhéidir an leabharlann a lódáil. Bain triail eile as ar ball.",
+    "choosePrompt": "Roghnaigh do thír chun a fheiceáil cad a dhíoltar ansin."
+  }
+}

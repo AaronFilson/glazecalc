@@ -1,0 +1,50 @@
+{
+  "common": {
+    "formulaHelp": "Ikteb formula b’numri normali, bħal {typed}: in-numri jidhru żgħar u ’l isfel, {shown}. Biex tgħaqqad il-partijiet ta’ formula, bħal fil-formula {joined}, ikkopja din it-tikka:",
+    "relatedTo": "Relatat ma’:",
+    "notes": "Noti:",
+    "loi": "Telf mit-tqabbid bin-nar – LOI (perċentwal):",
+    "molecularWeight": "Piż molekulari tal-formula qabel il-ħami (jintuża biss jekk il-qasam LOI ikun vojt):",
+    "formulaHeading": "Daħħal il-formula (wara l-ħami):",
+    "oxideSelection": "Għażla tal-ossidu",
+    "noOxide": "xejn",
+    "addOxide": "Żid l-ossidu mal-lista",
+    "formulaIn": "Kif inhi miktuba l-formula:",
+    "percent": "Perċentwal",
+    "molecular": "Molekulari / Seger",
+    "amount": "Ammont:",
+    "removeOxide": "Neħħi mil-lista tal-formula",
+    "save": "Issejvja",
+    "elements": "Elementi",
+    "removeNote": "Ir-riċetti ssejvjati jżommu kopja tagħhom, għalhekk ma jinbidlux.",
+    "saveFailed": "Żball: it-talba lis-server ma rnexxietx."
+  },
+  "material": {
+    "title": "Materjali",
+    "lead": "Il-materji primi tiegħek, imdaħħla bħala formula kimika jew bħala analiżi tal-ossidi.",
+    "newHeading": "Daħħal l-informazzjoni dwar il-materjal il-ġdid",
+    "name": "Isem il-materjal:",
+    "rawFormula": "Formula qabel il-ħami:",
+    "weightsNote": "Il-piż ekwivalenti u l-piż wara l-ħami jiġu kkalkulati mill-formula u mill-valur LOI meta tissejvja.",
+    "mineHeading": "Il-materjali tiegħi:",
+    "rawFormulaColumn": "Formula qabel il-ħami",
+    "standardHeading": "Il-materjali standard:",
+    "fetchFailed": "Kien hemm żball fil-ġbir tal-informazzjoni dwar il-materjali.",
+    "standardFetchFailed": "Kien hemm żball fil-ġbir tal-informazzjoni dwar il-materjali standard.",
+    "saved": "Irnexxa. Il-materjal ġie miżjud mad-database."
+  },
+  "additive": {
+    "title": "Addittivi u kuluranti",
+    "lead": "Kuluranti u opaċifikaturi mkejla fuq ir-riċetta bażi, bħall-ossidu tal-kobalt jew l-ossidu tal-landa. Riċetta tista’ tħallihom barra mill-formula ta’ Seger (UMF) jew tgħoddhom fiha.",
+    "newHeading": "Daħħal l-informazzjoni dwar l-addittiv il-ġdid",
+    "name": "Isem l-addittiv:",
+    "formulaAsSold": "Formula, kif tinbiegħ:",
+    "noChemistry": "M’għandux analiżi tal-ossidi, bħal pigment kummerċjali: ħallih barra mill-formula ta’ Seger",
+    "firedNote": "Daħħal dak li jagħti lill-glejż wara l-ħami: l-ossidu tal-kobalt iswed, {asSold}, isir {fired} b’LOI ta’ {loi}%. Imbagħad riċetta tista’ tgħoddu fil-formula ta’ Seger.",
+    "mineHeading": "L-addittivi u l-kuluranti tiegħi:",
+    "standardHeading": "L-addittivi standard:",
+    "fetchFailed": "Kien hemm żball fil-ġbir tal-informazzjoni dwar l-addittivi.",
+    "standardFetchFailed": "Kien hemm żball fil-ġbir tal-informazzjoni dwar l-addittivi standard.",
+    "saved": "Irnexxa. L-addittiv ġie miżjud mad-database."
+  }
+}

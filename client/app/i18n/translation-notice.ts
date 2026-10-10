@@ -32,7 +32,9 @@ const innermost = (route: ActivatedRouteSnapshot): ActivatedRouteSnapshot =>
  * the page was translated by AI, Glazecalc is open source, and here is where to
  * suggest a correction, with the language and page filled in, or read the
  * English. It can be closed (Settings can show it again), except on the safety
- * guides (their routes say safety: true), where a line of it stays.
+ * guides (their routes say safety: true), where a line of it stays. In the
+ * languages AI translates less well (plainNotice: Irish, Maltese) it says so
+ * plainly, and the line stays on every page.
  */
 @Component({
   selector: 'gc-translation-notice',
@@ -41,7 +43,11 @@ const innermost = (route: ActivatedRouteSnapshot): ActivatedRouteSnapshot =>
     @if (shown()) {
       <aside class="translation-notice" [attr.aria-label]="t('notice.label')">
         <p>
-          {{ brief() ? t('notice.brief') : t('notice.text') }}
+          @if (plain) {
+            {{ brief() ? t('notice.plainBrief') : t('notice.plain') }}
+          } @else {
+            {{ brief() ? t('notice.brief') : t('notice.text') }}
+          }
           <a [href]="suggestUrl()" target="_blank" rel="noopener">{{ t('notice.suggest') }}</a>
           <a [href]="englishUrl()" (click)="readEnglish()">{{ t('notice.english') }}</a>
           @if (!brief()) {
@@ -75,14 +81,18 @@ export class TranslationNotice {
   private readonly router = inject(Router);
 
   private readonly translated = languageFor(this.language) !== undefined && this.language !== 'en';
+  /** AI translates the language less well than most, so the notice says so and a line of it stays. */
+  protected readonly plain = !!languageFor(this.language)?.plainNotice;
   /** The page is a safety guide. */
   private readonly safety = signal(false);
+  /** A line of the notice stays here once it is closed. */
+  private readonly stays = computed(() => this.plain || this.safety());
   private readonly path = signal(location.pathname);
   /** The query and section in the address: ?compare=draft,abc, #cones. */
   private readonly rest = signal(location.search + location.hash);
-  protected readonly brief = computed(() => this.safety() && this.preferences.notice() === 'hidden');
+  protected readonly brief = computed(() => this.stays() && this.preferences.notice() === 'hidden');
   protected readonly shown = computed(
-    () => this.translated && (this.safety() || this.preferences.notice() !== 'hidden')
+    () => this.translated && (this.stays() || this.preferences.notice() !== 'hidden')
   );
 
   constructor() {
