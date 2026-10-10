@@ -268,11 +268,11 @@ Label: Il-qari ta’ sett ta’ koni
 Table: X’għandek tibdel il-darba li jmiss
 Label: L-aġġustament tal-ħamja li jmiss
 
-| Il-koni wrew                                              | Sitter                                                                                                                                                        | Kontrollur                                                                                                                                            |
-| --------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Il-koni wrew                                              | Sitter                                                                                                                                                        | Kontrollur                                                                                                                                                        |
+| --------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Moħmi wisq ftit                                           | Kon numru wieħed aktar sħun fis-sitter, jew il-parti l-eħxen taħt il-virga                                                                                    | Uża l-aġġustament tal-kon biex taħmi ftit aktar sħun, jew żid żamma{{en: hold}} qasira (madwar 20 minuta jiswew daqs {{18 °F; 10 °C}} aktar fl-ogħla temperatura) |
-| Moħmi żżejjed                                             | Kon numru wieħed aktar kiesaħ, jew il-parti l-irqaq taħt il-virga; jekk il-kon tas-sitter niżel ħafna aktar minn 90°, naqqas il-pożizzjonijiet tas-swiċċijiet | Uża l-aġġustament tal-kon biex taħmi ftit aktar kiesaħ, jew qassar jew neħħi ż-żamma                                                                  |
-| Il-parti ta’ fuq u dik ta’ isfel ivarjaw b’aktar minn kon | Ibdel kif tħaddem is-swiċċijiet (ara t-taqsima Fran mingħajr kontrollur, fid-dettall)                                                                         | Imla l-parti l-aktar kiesħa b’inqas oġġetti; segwi l-manwal tiegħek                                                                                   |
+| Moħmi żżejjed                                             | Kon numru wieħed aktar kiesaħ, jew il-parti l-irqaq taħt il-virga; jekk il-kon tas-sitter niżel ħafna aktar minn 90°, naqqas il-pożizzjonijiet tas-swiċċijiet | Uża l-aġġustament tal-kon biex taħmi ftit aktar kiesaħ, jew qassar jew neħħi ż-żamma                                                                              |
+| Il-parti ta’ fuq u dik ta’ isfel ivarjaw b’aktar minn kon | Ibdel kif tħaddem is-swiċċijiet (ara t-taqsima Fran mingħajr kontrollur, fid-dettall)                                                                         | Imla l-parti l-aktar kiesħa b’inqas oġġetti; segwi l-manwal tiegħek                                                                                               |
 
 L-**aġġustament tal-kon** huwa issettjar tal-kontrollur li jgħolli jew ibaxxi t-temperatura li juża għal kon, biex taqbel ma’ dak li juru l-koni xhieda{{en: witness cones}} tiegħek. Żomm kull sett moħmi u niżżel kif tgħawweġ kull wieħed (ara t-taqsima Wara l-ħami, aktar ’l isfel).
 
@@ -289,16 +289,16 @@ L-ilma, meta jsir fwar, “jespandi 1170 darba”, jinnota Bracker’s, għalhek
 Table: X’jiġri hekk kif jisħon il-bisque
 Label: X’jiġri fil-ħamja tal-bisque
 
-|                      Temperatura | X’jiġri                                                                              |
-| -------------------------------: | ------------------------------------------------------------------------------------ |
-|       {{300–500 °F; 149–260 °C}} | Il-leganti jinħarqu                                                                  |
-|        Madwar {{450 °F; 232 °C}} | Il-materja organika tibda tinħaraq                                                   |
-|            Sa {{700 °F; 371 °C}} | L-ilma jibqa’ joħroġ mit-tafal sakemm tinqabeż din it-temperatura                    |
-|      {{842–1022 °F; 450–550 °C}} | L-ilma marbut kimikament joħroġ mit-tafal                                            |
+|                      Temperatura | X’jiġri                                                                                            |
+| -------------------------------: | -------------------------------------------------------------------------------------------------- |
+|       {{300–500 °F; 149–260 °C}} | Il-leganti jinħarqu                                                                                |
+|        Madwar {{450 °F; 232 °C}} | Il-materja organika tibda tinħaraq                                                                 |
+|            Sa {{700 °F; 371 °C}} | L-ilma jibqa’ joħroġ mit-tafal sakemm tinqabeż din it-temperatura                                  |
+|      {{842–1022 °F; 450–550 °C}} | L-ilma marbut kimikament joħroġ mit-tafal                                                          |
 |              {{1063 °F; 573 °C}} | L-inverżjoni tal-kwarz{{en: quartz inversion}}: is-silika{{en: silica}} fit-tafal tespandi f’daqqa |
-| ’Il fuq minn {{1112 °F; 600 °C}} | Il-kubrit jinħaraq u joħroġ                                                          |
-|  Sa {{1200–1400 °F; 649–760 °C}} | Il-karbonju naturali jinħaraq; dan għandu jispiċċa qabel ma tasal is-sħana ħamra     |
-| ’Il fuq minn {{1544 °F; 840 °C}} | Il-karbonat tal-kalċju jiddekomponi                                                  |
+| ’Il fuq minn {{1112 °F; 600 °C}} | Il-kubrit jinħaraq u joħroġ                                                                        |
+|  Sa {{1200–1400 °F; 649–760 °C}} | Il-karbonju naturali jinħaraq; dan għandu jispiċċa qabel ma tasal is-sħana ħamra                   |
+| ’Il fuq minn {{1544 °F; 840 °C}} | Il-karbonat tal-kalċju jiddekomponi                                                                |
 
 L-**inverżjoni tal-kwarz** hija l-bidla f’daqqa fid-daqs tas-silika fit-tafal f’{{1063 °F; 573 °C}}: tespandi meta t-temperatura titla’ u tiċkien meta tinżel. Il-programm Slow Bisque ta’ L&L jimxi bil-mod minnha, bejn {{1000 °F; 538 °C}} u {{1100 °F; 593 °C}}. Digitalfire sab li dan “mhux meħtieġ għall-ħamjiet tal-bisque”, u Ceramics Monthly jgħid li l-aktar li jgħodd huwa meta jitkessħu oġġetti densi. Li timxi bil-mod ma jiswiex wisq, għalhekk nissuġġerixxu li żżommu għall-biċċiet ħoxnin.
 
@@ -311,7 +311,7 @@ Table: Temperaturi tat-tnixxif fil-forn
 | Sors             | Tnixxif fil-forn                                                                                                   |
 | ---------------- | ------------------------------------------------------------------------------------------------------------------ |
 | Ceramics Monthly | Ftit taħt il-punt tat-togħlija; per eżempju, it-temperatura titla’ b’rata ta’ {{25 °F/h; 14 °C/h}} għal 4–6 sigħat |
-| Preheat ta’ L&L  | Żamma{{en: hold}} f’{{150–200 °F; 66–93 °C}}                                                                                   |
+| Preheat ta’ L&L  | Żamma{{en: hold}} f’{{150–200 °F; 66–93 °C}}                                                                       |
 | Digitalfire      | Żamma f’{{250 °F; 121 °C}}, għax żamma taħt il-punt tat-togħlija “ma toħroġx l-ilma kollu”                         |
 
 > [!NOTE]
@@ -444,7 +444,7 @@ Label: Il-proċedura ta’ L u L
 | Medium                                          | Agħlaq l-għatu. Iż-żewġ swiċċijiet ta’ fuq għal 5, is-swiċċ ta’ isfel għal 6.                                                                                                                                                                                                                    |
 | L-ewwel sħana ħamra                             | Malli tara xi dawl, poġġi t-tappijiet fiż-żewġ toqob tal-ħarsa ta’ isfel. Ħalli dik ta’ fuq miftuħa għall-ħamja kollha.                                                                                                                                                                          |
 | Sħana ħamra qawwija, madwar {{1400 °F; 760 °C}} | Iż-żewġ swiċċijiet ta’ isfel għal High, is-swiċċ ta’ fuq għal 9                                                                                                                                                                                                                                  |
-| Tmiem                                           | Segwi l-koni u rranġa bir-reqqa s-swiċċijiet ta’ fuq u ta’ isfel. Meta l-koni jinżlu, itfi s-swiċċijiet kollha u tfi l-interruttur taċ-ċirkwit. Ħalli l-forn jiksaħ għal kollox qabel ma tiftħu.                                                                                                |
+| Tmiem                                           | Segwi l-koni u rranġa bir-reqqa s-swiċċijiet ta’ fuq u ta’ isfel. Meta l-koni jinżlu, itfi s-swiċċijiet kollha u tfi l-interruttur taċ-ċirkwit. Ħalli l-forn jiksaħ għal kollox qabel ma tiftħu.                                                                                                 |
 
 ### Il-programmi ta’ Bracker’s
 
@@ -455,7 +455,7 @@ Label: Il-programmi ta’ Bracker’s bl-idejn
 
 | Stadju           | Bisque                                                                                                           | Glejż għal ħami baxx                                                                 |
 | ---------------- | ---------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
-| Sitter           | Kon żgħir 03                                                                                                     | Il-kon żgħir tal-glejż{{en: glaze}}                                                               |
+| Sitter           | Kon żgħir 03                                                                                                     | Il-kon żgħir tal-glejż{{en: glaze}}                                                  |
 | Tnixxif fil-forn | Il-lejl kollu: is-swiċċ ta’ isfel biss fuq Low, it-tappijiet barra, l-għatu miftuħ ftit, it-timer fuq il-massimu | Xejn                                                                                 |
 | Timer            | Filgħodu, erġa’ ssettjah għal 30–60 minuta aktar mill-ħin mistenni tal-ħamja                                     | 30–60 minuta aktar mill-ħin mistenni tal-ħamja                                       |
 | Low              | Is-swiċċijiet kollha fuq Low, 3–4 sigħat; it-tappijiet barra, l-għatu miftuħ ftit                                | Is-swiċċijiet kollha fuq Low, 3–4 sigħat; it-tappijiet barra, l-għatu miftuħ ftit    |
@@ -530,12 +530,12 @@ It-tkessiħ huwa parti mill-ħamja. L&L u Orton jagħtu dan il-parir: “Ħalli 
 Table: Meta tiftaħ il-forn: is-sorsi ma jaqblux
 Label: Il-ftuħ u t-tbattil
 
-| Sors                                              | Parir                                                                          |
-| ------------------------------------------------- | ------------------------------------------------------------------------------ |
-| L&L, fran mingħajr kontrollur                     | “Stenna li jiksaħ għal kollox qabel ma tiftħu.”                                |
-| Il-manwal tal-kontrollur ta’ Skutt (kif ikkwotat) | Evita li tbattal il-forn ’il fuq minn {{125 °F; 52 °C}}                        |
+| Sors                                              | Parir                                                                                       |
+| ------------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| L&L, fran mingħajr kontrollur                     | “Stenna li jiksaħ għal kollox qabel ma tiftħu.”                                             |
+| Il-manwal tal-kontrollur ta’ Skutt (kif ikkwotat) | Evita li tbattal il-forn ’il fuq minn {{125 °F; 52 °C}}                                     |
 | Manifatturi oħra (kif irrappurtat)                | Sa {{250 °F; 121 °C}}, bil-ħamjiet tal-glejż{{en: glaze}} jinfetħu aktar kesħin mill-bisque |
-| Glazy                                             | Tiftaħx qabel ma t-temperatura tinżel taħt madwar {{392 °F; 200 °C}}           |
+| Glazy                                             | Tiftaħx qabel ma t-temperatura tinżel taħt madwar {{392 °F; 200 °C}}                        |
 
 > [!NOTE]
 > Is-suġġeriment tagħna: iftaħ l-għatu biss taħt madwar {{200 °F; 93 °C}}, u battal il-forn taħt madwar {{125 °F; 52 °C}}, jew meta tkun tista’ żżomm l-oġġetti b’idejk mikxufa mingħajr diffikultà. Il-ħamjiet tal-glejż, densi u bħall-ħġieġ, iridu aktar paċenzja mill-bisque. Mingħajr pirometru, stenna sakemm il-forn jiksaħ għal kollox.
