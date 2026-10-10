@@ -70,6 +70,49 @@ describe('PreferencesService', () => {
     expect(localStorage.getItem('weightUnit')).toBe('lb');
   });
 
+  it("drops the account's choices when its session ends, and brings back the visitor's own", async () => {
+    // A visitor chose German from the footer, then signed in to an account that has lead on.
+    localStorage.setItem('session', 'account');
+    const preferences = TestBed.inject(PreferencesService);
+    const auth = TestBed.inject(AuthService);
+    preferences.remember('language', 'de');
+    const loading = preferences.load();
+    httpMock()
+      .expectOne(API + '/preferences')
+      .flush({ lead: 'on', language: 'fr', weightUnit: 'lb' });
+    await loading;
+    expect([preferences.lead(), preferences.language(), localStorage.getItem('lead')]).toEqual(['on', 'fr', 'on']);
+
+    const out = auth.signOut();
+    httpMock()
+      .expectOne(API + '/signout')
+      .flush({});
+    await out;
+    expect([preferences.lead(), preferences.language(), preferences.weightUnit()]).toEqual(['off', 'de', 'g']);
+    expect([localStorage.getItem('lead'), localStorage.getItem('language')]).toEqual(['off', 'de']);
+
+    // The next person's trial starts from that, and keeps it if its own choices cannot be fetched.
+    const starting = auth.startTrial();
+    httpMock()
+      .expectOne(API + '/guest')
+      .flush({ name: 'quiet kilns', expiresAt: new Date(Date.now() + 86400000).toISOString() });
+    await starting;
+    const again = preferences.load();
+    httpMock()
+      .expectOne(API + '/preferences')
+      .flush(null, serverError);
+    await again;
+    expect(preferences.lead()).toBe('off');
+  });
+
+  it('drops the choices of a trial that ran out while the site was closed', () => {
+    localStorage.setItem('session', 'trial');
+    localStorage.setItem('trial', JSON.stringify({ name: 'rusty humble jugs', expiresAt: '2020-01-01T00:00:00Z' }));
+    localStorage.setItem('lead', 'on');
+    expect(TestBed.inject(PreferencesService).lead()).toBe('off');
+    expect(localStorage.getItem('lead')).toBe('off');
+  });
+
   it('saves a choice to the account, and puts the old one back if that fails', async () => {
     const preferences = TestBed.inject(PreferencesService);
     const saving = preferences.set('weightUnit', 'lb');

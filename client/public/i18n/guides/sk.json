@@ -1,0 +1,154 @@
+{
+  "version": {
+    "cones": "Tento návod je zobrazený vo verzii pre výpal podľa kužeľov, ako to máte v nastaveniach.",
+    "temperature": "Tento návod je zobrazený vo verzii pre výpal podľa teploty, ako to máte v nastaveniach.",
+    "showTemperature": "Zobraziť pre výpal podľa teploty",
+    "showCones": "Zobraziť pre výpal podľa kužeľov"
+  },
+  "notTranslated": "Tento návod ešte nie je preložený, preto sa zobrazuje v angličtine.",
+  "sectionInEnglish": "Táto časť sa od prekladu zmenila, preto sa zobrazuje v angličtine, kým sa jej preklad neaktualizuje.",
+  "list": {
+    "title": "Návody",
+    "lead": "Návody jednoduchým jazykom pre začínajúcich keramikárov: od toho, čo je glazúra, až po jej výpal, a ako pritom udržať všetkých v bezpečí.",
+    "note": "Tieto návody zhŕňajú to, čo zverejňujú výrobcovia, úrady pre bezpečnosť a skúsení keramikári; zdroje sú na konci každého z nich. Sú východiskom, nie náhradou za karty bezpečnostných údajov vašich surovín, návod na obsluhu vašej pece ani miestne predpisy.",
+    "glazingBasics": {
+      "title": "Glazovanie od základov",
+      "text": "Čo je glazúra, ako sa taví a čo znamená každé slovo, ktoré nájdete v recepte alebo na vrecku."
+    },
+    "makingAGlaze": {
+      "title": "Ako pripraviť glazúru",
+      "text": "Nákup, skladovanie, váženie, miešanie a preosievanie glazúry, potom jej skúšanie a vedenie záznamov."
+    },
+    "safeMixing": {
+      "title": "Bezpečné miešanie a vetranie",
+      "text": "Prach, respirátory, upratovanie, suroviny, ktoré si vyžadujú najväčšiu opatrnosť, a vetranie pece."
+    },
+    "homeSafety": {
+      "title": "Neotrávte svoju rodinu",
+      "text": "Keramika doma s deťmi a domácimi zvieratami: skladovanie, prach, pec a čo robiť, ak niekto niečo prehltne."
+    },
+    "firing": {
+      "title": "Výpal v jednoduchej peci",
+      "text": "Kužele, vypínače Kiln-Sitter a ručné prepínače, s krivkami výpalu na prežah a ostrý výpal."
+    }
+  },
+  "contents": "Na tejto stránke",
+  "poison": {
+    "numbersFor": "Telefónne čísla v krajinách:",
+    "choose": "Vyberte krajinu",
+    "label": "Kam volať v krajine {region}",
+    "caption": "Kam volať v krajine {region} (čísla overené {date})",
+    "for": "Účel",
+    "call": "Číslo",
+    "notes": "Prevádzková doba a poznámky",
+    "emergency": "Núdzová situácia: bezvedomie, zástava dýchania, kŕčový záchvat",
+    "poisonAdvice": "{who, select, children {Poradenstvo pri otravách: {name} (len pre deti)} other {Poradenstvo pri otravách: {name}}}",
+    "or": "alebo {number}",
+    "online": "Na internete: <link>{name}</link>.",
+    "poisonAdviceNone": "Poradenstvo pri otravách",
+    "noLine": "Verejnú toxikologickú linku sa nám v tejto krajine nepodarilo overiť. Zavolajte svojmu lekárovi, alebo ak je to naliehavé, na číslo tiesňového volania.",
+    "medicalAdvice": "Lekárske poradenstvo: {name}",
+    "animals": "Zvieratá: {name}",
+    "animalsNone": "Zvieratá",
+    "vet": "Zavolajte veterinárovi.",
+    "checkedOn": "Overené na stránkach:",
+    "choosePrompt": "Vyberte krajinu, aby ste videli, kam tam volať.",
+    "ministry": "Stránka ministerstva zdravotníctva: <link>{name}</link>."
+  },
+  "density": {
+    "sg": "hustota {value}",
+    "baume": "{value} °Bé ({sg})",
+    "pint": "{value} oz na britskú pintu ({sg})"
+  },
+  "shops": {
+    "shopsIn": "Obchody v krajinách:",
+    "label": "Obchody v krajine {region}",
+    "caption": "Niektoré obchody so surovinami na glazúry v krajine {region} (overené {date})",
+    "nearbyCaption": "Obchody inde, ktoré uvádzajú, že dodávajú do krajiny {region} (overené {date})",
+    "shop": "Obchod",
+    "sells": "Sortiment",
+    "packs": "Zistené balenia",
+    "seen": "Zistené suroviny, s názvami podľa obchodu",
+    "what": {
+      "materials": "suroviny na glazúry",
+      "frits": "frity",
+      "oxides": "oxidy",
+      "stains": "farbítka",
+      "clays": "hliny",
+      "glazes": "hotové glazúry",
+      "kilns": "pece"
+    },
+    "none": "V krajine {region} sme nenašli žiadny obchod so surovinami na glazúry.",
+    "unknown": "Obchody v krajine {region} sme zatiaľ nehľadali.",
+    "choosePrompt": "Vyberte krajinu, aby ste videli tamojšie obchody."
+  },
+  "silica": {
+    "limitIn": "Limitné hodnoty v krajinách:",
+    "label": "Limitná hodnota pre oxid kremičitý v krajine {region}",
+    "caption": "Limitná hodnota na pracovisku pre respirabilný prach kryštalického oxidu kremičitého v krajine {region}, priemer za 8 hodín (overené {date})",
+    "both": "Kremeň a kristobalit",
+    "quartz": "Kremeň",
+    "cristobalite": "Kristobalit",
+    "actionLevel": "Akčná úroveň",
+    "value": "{value} mg/m³",
+    "kind": {
+      "binding": "Záväzná limitná hodnota.",
+      "indicative": "Indikačná limitná hodnota: orientačná hodnota, nie zákonná horná hranica.",
+      "assessment": "Hodnotiace kritérium, nie záväzná limitná hodnota."
+    },
+    "setBy": "Túto hodnotu stanovuje <link>{law}</link>.",
+    "lowerThanEu": "Táto hodnota je nižšia ako záväzná limitná hodnota EÚ {value} mg/m³.",
+    "sameAsEu": "Táto hodnota je rovnaká ako záväzná limitná hodnota EÚ.",
+    "unknown": "Národnú limitnú hodnotu v krajine {region} sa nám nepodarilo overiť. Záväzná limitná hodnota EÚ {value} mg/m³ platí v každom členskom štáte.",
+    "noData": "Limitnú hodnotu v krajine {region} sme zatiaľ neoverili.",
+    "agency": "Národný orgán pre bezpečnosť a ochranu zdravia pri práci: <link>{name}</link>.",
+    "agencySilica": "Jeho <link>stránka o oxide kremičitom</link>.",
+    "choosePrompt": "Vyberte krajinu, aby ste videli jej limitnú hodnotu."
+  },
+  "food": {
+    "rulesIn": "Pravidlá v krajinách:",
+    "label": "Limity pre keramické predmety v krajine {region}",
+    "caption": "Koľko smie vypálený kus uvoľniť pri skúške predpísanej zákonom v krajine {region} (overené {date})",
+    "article": "Druh predmetu",
+    "lead": "Olovo",
+    "cadmium": "Kadmium",
+    "category": {
+      "flat": "Predmety, ktoré nemôžu byť plnené, alebo s vnútornou hĺbkou najviac 25 mm",
+      "fillable": "Ostatné predmety, ktoré môžu byť plnené",
+      "cooking": "Nádoby na varenie; nádoby na balenie a skladovanie s objemom viac ako 3 L",
+      "rimBand": "Okraj nádoby na pitie: pás široký 2 cm zvnútra aj zvonku",
+      "rimArticle": "Okraj nádoby na pitie: pás 20 mm zvonku pod horným okrajom, na jeden kus",
+      "flatware": "Ploché predmety s hĺbkou najviac 25 mm",
+      "smallHollow": "Malé duté predmety pod 1,1 L, okrem šálok a hrnčekov",
+      "cups": "Šálky a hrnčeky",
+      "largeHollow": "Veľké duté predmety od 1,1 L, okrem džbánov",
+      "pitchers": "Džbány",
+      "auSmall": "Šálky, hrnčeky, džbány, misky, čajníky a iný stolový riad pod 1100 mL",
+      "auLarge": "To isté, od 1100 mL",
+      "auPlates": "Taniere, podšálky a podobný stolový riad",
+      "auCooking": "Nádoby na varenie"
+    },
+    "judged": {
+      "average": "priemer zo 6 kusov",
+      "each": "každý zo 6 kusov"
+    },
+    "euRules": "Platia tu pravidlá EÚ.",
+    "law": "Tieto limity stanovuje <link>{law}</link>.",
+    "inForce": "Platia od {date}.",
+    "unknown": "Pravidlá v krajine {region} sme zatiaľ neoverili.",
+    "choosePrompt": "Vyberte krajinu, aby ste videli jej pravidlá."
+  },
+  "equivalents": {
+    "buyingIn": "Nákup v krajinách:",
+    "label": "{library, select, US {Náhrady predávané v USA} UK {Náhrady predávané v Spojenom kráľovstve} EU {Náhrady predávané v EÚ} other {Náhrady predávané v Austrálii a na Novom Zélande}}",
+    "caption": "{library, select, US {Suroviny, ktoré sa nepredávajú v USA, každá s najbližšou surovinou, ktorá sa tam predáva} UK {Suroviny, ktoré sa nepredávajú v Spojenom kráľovstve, každá s najbližšou surovinou, ktorá sa tam predáva} EU {Suroviny, ktoré sa nepredávajú v EÚ, každá s najbližšou surovinou, ktorá sa tam predáva} other {Suroviny, ktoré sa nepredávajú v Austrálii a na Novom Zélande, každá s najbližšou surovinou, ktorá sa tam predáva}}",
+    "material": "V recepte",
+    "soldIn": "Predáva sa v",
+    "closest": "{library, select, US {Najbližšia surovina predávaná v USA} UK {Najbližšia surovina predávaná v Spojenom kráľovstve} EU {Najbližšia surovina predávaná v EÚ} other {Najbližšia surovina predávaná v Austrálii a na Novom Zélande}}",
+    "apart": "líši sa o {grams} g na 100 g",
+    "noneClose": "Nič v rozmedzí 15 g na 100 g: porovnajte podľa chemického zloženia.",
+    "loading": "Načítava sa knižnica…",
+    "failed": "Knižnicu sa nepodarilo načítať. Skúste to znova neskôr.",
+    "choosePrompt": "Vyberte krajinu, aby ste videli, čo sa tam predáva."
+  }
+}

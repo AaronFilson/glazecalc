@@ -244,23 +244,17 @@ A **libertação de metais**{{en: leaching}} é a passagem de metal de um vidrad
 
 ### Sem chumbo não é o mesmo que apto para contacto com alimentos
 
-As regras dos EUA, da UE, do Reino Unido, da Austrália e da Nova Zelândia limitam o chumbo e o cádmio que uma peça cozida liberta, não o que o vidrado contém. «Sem chumbo» elimina um perigo; não é uma classificação de segurança alimentar. Outros óxidos também se libertam: o Glazy avisa que os vidrados ricos em bário «podem libertar metais e geralmente não são aptos para contacto com alimentos{{en: food-safe}}», o Digitalfire diz que o cobre «pode fazer um vidrado libertar metais; teste-o», e o Glazy deixou de aconselhar vidrados de chumbo para loiça utilitária.
+As regras dos EUA, da UE, do Reino Unido e da Austrália limitam o chumbo e o cádmio que uma peça cozida liberta, não o que o vidrado contém. «Sem chumbo» elimina um perigo; não é uma classificação de segurança alimentar. Outros óxidos também se libertam: o Glazy avisa que os vidrados ricos em bário «podem libertar metais e geralmente não são aptos para contacto com alimentos{{en: food-safe}}», o Digitalfire diz que o cobre «pode fazer um vidrado libertar metais; teste-o», e o Glazy deixou de aconselhar vidrados de chumbo para loiça utilitária.
 
 Um **vidrado de interior**{{en: liner glaze}} é um vidrado estável, normalmente transparente ou branco, para as superfícies que tocam nos alimentos. Na nossa opinião, um vidrado sem corante{{en: colorant}}, bário, chumbo nem lítio, que funda completamente, não fendilhe{{en: craze}} e resista bem ao uso é a escolha de menor risco. Menor risco não é prova.
 
 As **fórmulas-limite**{{en: limit formulas}} (o Digitalfire prefere **fórmulas de referência**{{en: target formulas}}) dão gamas típicas da fórmula de Seger (UMF){{en: unity formula}} para vidrados estáveis num dado cone: os valores de referência do Digitalfire para o cone 6 põem a alumina em 0,285–0,64 e a sílica{{en: silica}} em 2,4–4,7. Orientam para uma química sólida, mas não provam nada; o Digitalfire evita a palavra «limite» porque sugere que os vidrados dentro das gamas «são de alguma forma seguros». As ferramentas do Glazecalc para alterar uma receita avisam quando a nova receita ultrapassa um limite recomendado, como muito boro no cone 6, e dizem o que o vidrado provavelmente fará.
 
-Table: Limites da FDA dos EUA para o chumbo libertado pela cerâmica (CPG Sec. 545.450), em microgramas por mililitro de solução de ensaio
-Label: Limites de chumbo da FDA
+Os limites legais variam de país para país. A tabela mostra os do país onde vive, nas unidades da própria lei; escolha outro país para comparar.
 
-| Peça                                     | Chumbo (µg/mL) | Critério           |
-| ---------------------------------------- | -------------: | ------------------ |
-| Peças planas (até 25 mm de profundidade) |            3,0 | Média de 6 peças   |
-| Peças ocas pequenas (menos de 1,1 L)     |            2,0 | Qualquer uma das 6 |
-| Peças ocas grandes (1,1 L ou mais)       |            1,0 | Qualquer uma das 6 |
-| Chávenas, canecas e jarros               |            0,5 | Qualquer uma das 6 |
+::food-limits
 
-Nos EUA, as peças que não se destinam a alimentos têm de ter um aviso permanente, cozido, «Not for Food Use» (não destinado a alimentos), ou um furo que atravesse a superfície que contacta com os alimentos. A UE fixa limites de chumbo e de cádmio na Diretiva 84/500/CEE, que a Inglaterra mantém na sua própria lei. Os Países Baixos e o Luxemburgo reduziram os seus limites de chumbo cerca de 130–150 vezes a partir de 29 de maio de 2026, seguidos pela Bélgica. A Austrália e a Nova Zelândia usam a norma AS 4371, cujos valores só se podem consultar pagando.
+Nos EUA, as peças que não se destinam a alimentos têm de ter um aviso permanente, cozido, «Not for Food Use» (não destinado a alimentos), ou um furo que atravesse a superfície que contacta com os alimentos. A UE fixa limites de chumbo e de cádmio na Diretiva 84/500/CEE, e o Reino Unido mantém os mesmos valores na sua própria lei. A partir de 29 de maio de 2026, os Países Baixos, a Bélgica e o Luxemburgo permitem cerca de 130 a 150 vezes menos chumbo e cerca de 15 vezes menos cádmio. A Austrália fixa limites para as peças importadas; não encontrámos nenhum limite oficial para as peças fabricadas na Austrália ou na Nova Zelândia.
 
 ### Ensaios
 

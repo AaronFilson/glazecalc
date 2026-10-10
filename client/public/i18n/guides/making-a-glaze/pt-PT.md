@@ -26,18 +26,9 @@ Fazer um vidrado{{en: glaze}} é pesar, segundo uma receita, **matérias-primas*
 
 ### Onde comprar
 
-Os ceramistas compram a fornecedores de cerâmica, que vendem pastas, matérias-primas para vidrados{{en: glaze materials}} e ferramentas. A tabela indica alguns, confirmados na pesquisa feita para este guia. As existências mudam, por isso confirme antes de encomendar. Para outros locais, o site de referência sobre cerâmica Digitalfire mantém um diretório de lojas de fornecedores.
+Os ceramistas compram a fornecedores de cerâmica, que vendem pastas, matérias-primas para vidrados{{en: glaze materials}} e ferramentas. A tabela mostra alguns do seu país, cada um verificado no site da própria loja, e pode escolher outro país para ver as lojas desse país. As existências mudam, por isso confirme antes de encomendar. Os grandes produtores, como a Sibelco e a Imerys, vendem à indústria; os ceramistas compram as matérias-primas desses produtores em lojas como estas. Para outros locais, o site de referência sobre cerâmica Digitalfire mantém um diretório de lojas de fornecedores.
 
-Table: Alguns fornecedores de matérias-primas para vidrados, por região
-Label: Fornecedores por região
-
-| Região        | Fornecedores                                                                                                                                                                                                 | Embalagens encontradas |
-| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------- |
-| EUA           | Laguna Clay; Clay Art Center; The Ceramic Shop; New Mexico Clay; Seattle Pottery Supply                                                                                                                      | 50 lb (22,7 kg)        |
-| Reino Unido   | Potterycrafts; Bath Potters; Potclays; Valentine Clays                                                                                                                                                       | 1, 5 e 25 kg           |
-| UE            | Mondré & Manz (Alemanha); Goerg & Schneider (Alemanha, sobretudo argilas); Ceradel (França)                                                                                                                  | Pergunte ao fornecedor |
-| Austrália     | Walker Ceramics (que opera como Ozclay, com a Feeneys e a Cesco); Northcote Pottery Supplies, através da Bunnings; Oxerra para fritas{{en: frits}} e pigmentos cerâmicos{{en: stains}} (corantes comerciais) | 10 a 25 kg             |
-| Nova Zelândia | CCG; Decopot                                                                                                                                                                                                 | 2,5; 5 e 25 kg         |
+::shops
 
 ### Quanto comprar
 
@@ -76,6 +67,10 @@ As marcas aparecem e desaparecem à medida que as minas fecham. O feldspato Cust
 A **Gerstley Borate**, um mineral natural de boro presente em muitas receitas antigas, é escassa desde que a sua mina fechou em 2000, embora a New Mexico Clay tenha referido em novembro de 2025 que a Laguna estava a fornecer «Gerstley Borate Original». As fontes não concordam quanto à **Gillespie Borate** como substituto. O fabricante vende-a como substituta libra a libra. O Berkeley Potters Studio diz que «não é um substituto direto», e o Digitalfire verificou que alterava a cor de um vidrado. O mais seguro é comparar as duas pelos seus óxidos e depois testar.
 
 Os nomes também mudam de região para região. Na América do Norte, **flint** (sílex), quartzo e sílica designam a mesma sílica moída, e o Digitalfire diz que provavelmente não encontrará pó de sílex verdadeiro nos fornecedores. No Reino Unido, o sílex é um produto à parte: o da Valentine é sílica calcinada (aquecida). Ambos são sílica quase pura, por isso esperamos que sejam semelhantes, mas confirme a análise. Quanto ao caulino, o Glazy diz que as trocas de um por outro, como EPK por um china clay, «muitas vezes funcionam bem, sobretudo quando as quantidades são \<10%».
+
+Muitas receitas indicam matérias-primas que se vendem num país e não noutro. A tabela abaixo pega em cada matéria-prima da biblioteca do Glazecalc que não está à venda onde compra e encontra a mais próxima do mesmo tipo que lá esteja à venda, com base nas análises de ambas. O número indica a distância entre as duas: os gramas em que os seus óxidos após cozedura diferem, por 100 g de matéria-prima, somados em todos os óxidos. Até cerca de 15 g, uma pode normalmente substituir a outra num primeiro teste. Os nomes trazem os códigos próprios dos fabricantes e das lojas, por isso pode pedi-las pelo nome.
+
+::local-equivalents
 
 > [!NOTE]
 > O Glazecalc compara as matérias-primas pelo que trazem ao vidrado cozido, não pelo nome. Uma [receita](/recipe) com uma matéria-prima que já não se fabrica indica o que se usa agora. **Sugerir quantidades e comparar** recalcula as quantidades para um substituto, e **Fazer com o que tenho** refaz a receita com as matérias-primas da sua prateleira. Ambos acertam apenas os óxidos após cozedura, por isso teste primeiro um lote pequeno.

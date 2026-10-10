@@ -82,14 +82,17 @@ describe('saying what is past a limit', () => {
 
   it('warns of soluble and fluorine materials, a frit doing the wrong job, and clay out of range', () => {
     const lines = [
-      line('Calcium borate frit', 60, { category: 'frit', fritRole: 'boron' }),
+      line('Calcium borate frit', 55, { category: 'frit', fritRole: 'boron' }),
       line('Borax', 10, { soluble: true }),
       line('Fluorspar', 5, { fluorine: true }),
+      // A frit that releases a little fluorine is named as such too.
+      line('Ferro Frit 3269', 5, { category: 'frit', fritRole: 'alkali', fluorine: true }),
       line('Kaolin', 25, { category: 'clay' })
     ];
     const warnings = pastLimits({ lines, unity: GLOSSY });
     expect(warnings.some((w) => w.startsWith('Borax dissolves in water'))).toBe(true);
-    expect(warnings.some((w) => w.startsWith('Fluorspar and cryolite release fluorine'))).toBe(true);
+    expect(warnings.some((w) => w.startsWith('Fluorspar releases fluorine as it fires.'))).toBe(true);
+    expect(warnings.some((w) => w.startsWith('Ferro Frit 3269 releases fluorine as it fires.'))).toBe(true);
     expect(warnings.some((w) => w.startsWith('A calcium borate frit is normally a small boron top-up'))).toBe(true);
     expect(warnings.some((w) => w.startsWith('Over 20% raw clay (25%)'))).toBe(true);
     const bare = pastLimits({ lines: [line('Frit', 100, { category: 'frit' })], unity: GLOSSY, oldClay: 20 });

@@ -1,6 +1,7 @@
 # AWS setup for the glazecalc EC2 instance
 
-Every AWS step, in order, as commands to review and run. Nothing here has been run yet.
+Every AWS step, in order, as commands to review and run. Production was set up with them in
+October 2026; they are kept to rebuild it or to set up another instance.
 Background and reasoning: [docs/ec2-deploy-plan.md](../../docs/ec2-deploy-plan.md).
 
 **Who runs what:**
@@ -228,7 +229,8 @@ curl -s http://$IP/api/health                                         # expect: 
 token=$(curl -s -D - -o /dev/null -X POST http://$IP/api/guest |
   sed -nE 's/^[Ss]et-[Cc]ookie: glazecalc_session=([^;]+).*/\1/p')
 curl -s -H "Authorization: Bearer $token" http://$IP/api/verify        # expect: "guest":true
-curl -s http://$IP/api/materials/getStandard | grep -o '"ownedBy":"Standard"' | wc -l   # expect: 34
+curl -s http://$IP/api/materials/getStandard | grep -o '"ownedBy":"Standard"' | wc -l
+grep -c . data/materials.ndjson                                       # expect: the same number
 ```
 
 Sign in with a browser after `enable-https.sh`.

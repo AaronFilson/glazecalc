@@ -1,0 +1,111 @@
+{
+  "landing": {
+    "eyebrow": "Calculator de glazuri și caiet de atelier",
+    "heading": "Chimia glazurilor pentru ceramiști, gratuit.",
+    "lead": "Înțelegeți glazurile, nu doar amestecați-le. Introduceți o rețetă și vedeți imediat formula Seger (UMF), raportul silice–alumină și raportul dintre fondanți. Păstrați rețetele, materiile prime, coloranții, notițele și jurnalele de ardere împreună, într-un singur caiet privat.",
+    "trialEnded": "Perioada de probă s-a încheiat. Începeți una nouă sau creați un cont gratuit pentru a vă păstra lucrările.",
+    "tryIt": "Încercați acum",
+    "createAccount": "Creați un cont gratuit",
+    "trialFailed": "Nu s-a putut începe o perioadă de probă în acest moment. Încercați din nou.",
+    "heroNote": "Puteți încerca fără înregistrare · Gratuit și open source · Rețetele dumneavoastră rămân private",
+    "heroAlt": "Un șir de seturi de conuri arse: conurile pirometrice albe din fiecare set s-au îndoit în căldura cuptorului.",
+    "heroCaption": "Seturi de conuri după o ardere: fiecare con se îndoaie când cuptorul a furnizat destul lucru termic.",
+    "exampleHeading": "Vedeți cum funcționează: o glazură de bază clasică pentru celadon",
+    "exampleCaption": "Rețeta „4321” a lui Bernard Leach, arsă adesea la conul 10, în părți de masă.",
+    "material": "Materie primă",
+    "parts": "Părți",
+    "unityHeading": "Formula Seger a glazurii",
+    "exampleNote": "Fondanții însumează 1, așa că oricare două glazuri pot fi comparate corect. Calculul se face chiar aici, în browserul dumneavoastră, cu același cod pe care îl folosește calculatorul.",
+    "featuresHeading": "Ce face Glazecalc",
+    "features": {
+      "unity": {
+        "title": "Formula Seger, pe loc",
+        "text": "Vedeți fondanții, alumina și silicea în formula Seger, așa cum compară chimiștii glazurilor rețetele, imediat ce introduceți o rețetă."
+      },
+      "substitute": {
+        "title": "Corectați și înlocuiți",
+        "text": "O materie primă a fost scoasă din fabricație? Comparați formulele pentru a găsi un înlocuitor care se topește la fel."
+      },
+      "notebook": {
+        "title": "Caietul dumneavoastră de atelier",
+        "text": "Păstrați rețetele, materiile prime proprii, coloranții, notițele și jurnalele de ardere împreună, într-un singur loc."
+      },
+      "learn": {
+        "title": "Învățați pe parcurs",
+        "text": "Ghiduri pe înțelesul tuturor, de la ce este o glazură până la arderea ei în siguranță, stau chiar lângă cifre."
+      }
+    },
+    "umfHeading": "Ce este formula Seger?",
+    "umfRecipe": "O rețetă de glazură spune cât trebuie cântărit din fiecare materie primă. Formula Seger, numită în engleză „unity molecular formula” (UMF), spune ce devin aceste materii prime în cuptor: câte molecule din fiecare oxid există, raportate astfel încât fondanții să însumeze unu.",
+    "umfGroups": "Fondanții fac glazura să se topească, alumina face topitura mai vâscoasă, iar silicea formează sticla. Compararea acestor trei grupe explică de ce o glazură este lucioasă și alta mată sau de ce una curge, iar alta rămâne pe loc, și arată cum să înlocuiți o materie primă care nu se mai vinde.",
+    "readAdvice": "Citiți mai multe sfaturi despre glazuri",
+    "closingHeading": "Gata oricând doriți.",
+    "closingText": "Încercați calculatorul acum, apoi creați un cont pentru a păstra ce ați creat."
+  },
+  "about": {
+    "title": "Despre Glazecalc",
+    "lead": "Un calculator gratuit și open source de chimie a glazurilor și un caiet pentru olari, ceramiști și studenți.",
+    "whatHeading": "Ce face",
+    "what": "Glazecalc transformă o rețetă de glazură, adică materiile prime și cât cântăriți din fiecare, în formula ei Seger (UMF): oxizii din care este făcută glazura după ardere, raportați astfel încât fondanții să însumeze unu. Astfel rețetele pot fi comparate, se explică mai ușor cum se comportă o glazură și este mai simplu atunci când o materie primă trebuie înlocuită.",
+    "alongside": "Pe lângă calculator, păstrează rețetele, materiile prime proprii, coloranții și ceilalți aditivi, notițele și jurnalele de ardere și oferă o pagină de <advice>sfaturi practice despre glazuri</advice> și <guides>ghiduri</guides> pentru ceramiștii începători, de la ce este o glazură până la arderea ei în siguranță.",
+    "numbersHeading": "Cum se calculează cifrele",
+    "numbers": "Fiecare materie primă este descrisă prin formula ei chimică sau printr-o analiză a oxizilor, plus pierderea la calcinare: partea care se elimină în cuptor, cum ar fi dioxidul de carbon din carbonatul de calciu sau apa din caolin. Glazecalc transformă fiecare cantitate în moli din fiecare oxid, folosind masele molare standard, îi adună pentru întreaga rețetă și împarte la totalul molilor de fondanți. Coloranții și ceilalți aditivi sunt listați împreună cu rețeta, dar, cum se obișnuiește, nu intră în formula Seger.",
+    "guide": "Rezultatele sunt orientative, nu o garanție. Materiile prime reale diferă de la un furnizor la altul și de la un lot la altul, iar arderea contează cât chimia, așa că testați fiecare glazură. Glazurile pentru suprafețele în contact cu alimentele ar trebui testate pentru migrarea metalelor.",
+    "builtHeading": "Cum este construit",
+    "built": "Glazecalc a început în 2017 și a fost refăcut în 2026. Este o singură aplicație web mică, iar <source>codul sursă este pe GitHub</source>, sub licența MIT.",
+    "stackBrowser": "Angular 22 în browser (componente standalone și semnale), cu chimia glazurilor într-o mică bibliotecă partajată.",
+    "stackServer": "Un API în TypeScript pe Node.js 24 și Express 5, cu MongoDB 9, verificat de peste 350 de teste automate.",
+    "stackHosting": "Rulează în Docker pe Amazon Web Services, în spatele nginx, cu HTTPS de la Let’s Encrypt.",
+    "stackDeploy": "Se implementează prin GitHub Actions: imaginile sunt construite și testate la fiecare modificare, iar implementările se conectează la AWS fără chei stocate.",
+    "whoHeading": "Cine a creat aplicația",
+    "who": "Glazecalc este creat de Aaron Filson. Ați găsit o problemă sau aveți o idee? <issues>Deschideți un tichet pe GitHub</issues>.",
+    "studio": "Ceramica lucrată manual de Aaron Filson se găsește la <studio>Updraft Pottery Studio</studio> din Tacoma, Washington. Aruncați o privire la lucrări și comandați o piesă dacă vreuna vă atrage."
+  },
+  "privacy": {
+    "title": "Confidențialitate",
+    "lead": "Ultima actualizare: octombrie 2026.",
+    "shortHeading": "Pe scurt",
+    "short": "Glazecalc păstrează ce îi trebuie pentru a vă gestiona contul și nimic mai mult. Nu există reclame, instrumente de analiză, cookie-uri de urmărire sau scripturi de la terți. Datele dumneavoastră nu sunt niciodată vândute sau partajate.",
+    "storedHeading": "Ce se stochează",
+    "storedAccount": "<b>Contul dumneavoastră:</b> adresa de e-mail și parola, care este stocată numai ca hash unidirecțional (bcrypt), niciodată ca parola propriu-zisă.",
+    "storedTrial": "<b>O perioadă de probă („Încercați acum”):</b> fără e-mail sau parolă, doar un nume generat, de exemplu „speckled quiet kilns”. O perioadă de probă și tot ce s-a salvat în ea se șterg automat la 14 zile de la început, dacă nu creați un cont pentru a le păstra.",
+    "storedSaved": "<b>Ce salvați:</b> rețetele, materiile prime, aditivii, notițele, jurnalele de ardere și sfaturile. Ceilalți utilizatori nu le pot vedea.",
+    "storedResets": "<b>Cererile de resetare a parolei:</b> o amprentă a fiecărui link de resetare (nu linkul propriu-zis), ștearsă automat când linkul expiră, 30 de minute mai târziu.",
+    "storedBrowser": "<b>În browser:</b> un singur cookie, <code>glazecalc_session</code>, care vă păstrează sesiunea deschisă. Conține tokenul de conectare, scripturile din pagină nu îl pot citi, este trimis numai către serverul aplicației Glazecalc și durează 7 zile (14 pentru o perioadă de probă). Spațiul de stocare local al browserului păstrează o notă că v-ați conectat și, în timpul unei perioade de probă, numele și data de încheiere ale acesteia. Deconectarea le șterge.",
+    "emailHeading": "E-mail",
+    "email": "Glazecalc trimite e-mailuri numai când cereți resetarea parolei și când parola se schimbă. Ele sunt trimise prin Amazon Simple Email Service. Nu există newsletter sau e-mailuri de marketing.",
+    "hostingHeading": "Jurnalele serverului, copiile de rezervă și găzduirea",
+    "logs": "Serverul web înregistrează fiecare cerere, inclusiv adresa dumneavoastră IP, într-un jurnal păstrat 14 zile, pentru funcționarea și securitatea site-ului.",
+    "backups": "Copiile de rezervă criptate ale bazei de date se păstrează 30 de zile, iar copiile discului serverului 7 zile, pentru ca site-ul să poată fi restabilit după o defecțiune.",
+    "hosting": "Totul este găzduit de Amazon Web Services în Statele Unite (Oregon).",
+    "deletingHeading": "Ștergerea datelor",
+    "deleting": "Vă puteți șterge contul de pe <account>pagina contului</account>. Astfel se șterg imediat contul și tot ce ați salvat; „Renunțați la perioada de probă” face același lucru pentru o perioadă de probă. Datele din copiile de rezervă dispar pe măsură ce acestea expiră, în cel mult 30 de zile.",
+    "questionsHeading": "Întrebări",
+    "questions": "Puneți întrebări <issues>deschizând un tichet pe GitHub</issues>. Dacă această politică se schimbă, se schimbă și data din partea de sus a acestei pagini."
+  },
+  "notFound": {
+    "heading": "Pagina nu a fost găsită",
+    "text": "Nu există nicio pagină la această adresă. Poate a fost mutată sau linkul a fost scris greșit.",
+    "start": "Mergeți la pagina principală"
+  },
+  "advice": {
+    "title": "Sfaturi despre glazuri",
+    "lead": "Sfaturi practice despre amestecare, glazurare și ardere, plus propriile dumneavoastră sfaturi.",
+    "signUp": "<signup>Creați un cont gratuit</signup> sau <signin>conectați-vă</signin> pentru a vă păstra propriile sfaturi.",
+    "generalHeading": "Sfaturi generale",
+    "tags": "Etichete: {list}",
+    "addHeading": "Adăugați propriile sfaturi",
+    "titleLabel": "Titlu:",
+    "tagsLabel": "Etichete:",
+    "contentLabel": "Conținutul sfatului:",
+    "save": "Salvați",
+    "mineHeading": "Sfaturile mele",
+    "nothingSaved": "Nu ați salvat încă nimic.",
+    "titleMissing": "Dați un titlu sfatului.",
+    "contentMissing": "Scrieți sfatul.",
+    "fetchFailed": "A apărut o eroare la încărcarea sfaturilor.",
+    "standardFetchFailed": "A apărut o eroare la încărcarea sfaturilor de pe server.",
+    "saved": "Sfatul a fost adăugat cu succes.",
+    "saveFailed": "A apărut o eroare la trimiterea sfatului."
+  }
+}

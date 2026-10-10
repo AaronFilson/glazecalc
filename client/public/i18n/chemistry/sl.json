@@ -1,0 +1,23 @@
+{
+  "unknown-compound": "Neznana spojina {compound} v formuli",
+  "unknown-oxide": "Neznan oksid {oxide} v surovini {material}",
+  "invalid-oxide-amount": "Neveljavna količina za {oxide} v surovini {material}",
+  "loi-range": "LOI surovine {material} mora biti vsaj 0 in manj kot 100",
+  "no-oxides": "Surovina {material} nima oksidov",
+  "no-name": "Surovina mora imeti ime",
+  "no-analysis": "Surovina {material} potrebuje formulo ali analizo",
+  "recipe-shape": "Recept mora biti seznam '{ material, amount }' ali preslikava količin",
+  "invalid-amount": "Neveljavna količina za surovino {material}",
+  "missing-material": "V vrstici recepta manjka surovina",
+  "unknown-material": "Neznana surovina {material}",
+  "no-flux": "Recept ne vsebuje oksidov talil, zato Segerjeva formula (UMF) ni določena",
+  "no-target": "Ciljna formula nima oksidov, h katerim bi lahko merili",
+  "no-materials": "Ni surovin za izračun",
+  "no-temperature": "Za določitev bora je potrebna temperatura žganja",
+  "no-flux-to-rebuild": "Glazura nima talil, ki bi jih lahko sestavili na novo",
+  "unknown-element": "Neznan element {element} v formuli {formula}",
+  "bad-formula": "Formule {formula} ni bilo mogoče razčleniti",
+  "analysis-total": "Analiza surovine {material} skupaj z LOI znaša {total} %; pričakovano je približno 100 %.",
+  "stored-equivalent": "Shranjena ekvivalentna masa surovine {material} se ne ujema z njeno formulo in LOI; namesto nje sta bila uporabljena formula in LOI.",
+  "trace-flux": "Recept vsebuje le sledi oksidov talil, zato Segerjeva formula (UMF) nima pomena."
+}

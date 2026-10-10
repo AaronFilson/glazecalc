@@ -136,7 +136,8 @@
       "legend": "Gęstość szkliwa",
       "sg": {
         "label": "Gęstość względna (SG)",
-        "saved": "Zapisano: gęstość szkliwa jako gęstość względna."
+        "saved": "Zapisano: gęstość szkliwa jako gęstość względna.",
+        "example": "SG 1,45"
       },
       "baume": {
         "label": "Stopnie Baumé, z areometru",

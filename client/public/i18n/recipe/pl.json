@@ -31,6 +31,7 @@
     "scale": "Przelicz",
     "swapLike": "<b>{from}</b> ({status}): {to} może go zastąpić, gram za gram.",
     "swapNotLike": "<b>{from}</b> ({status}): obecnie używa się {to}, ale nie jest to zamiennik jeden do jednego: należy ponownie obliczyć jego ilość.",
+    "swapColorant": "<b>{from}</b> ({status}): obecnie używa się {to}, w sekcji „Barwniki i dodatki”. Należy dodać tam {to} zamiast tej pozycji i ponownie obliczyć ilość.",
     "stillLead": "{name} nadal zawiera ołów.",
     "tryModern": "Wypróbuj współczesne surowce i porównaj",
     "suggestAmounts": "Zaproponuj ilości i porównaj",
@@ -62,6 +63,8 @@
     "addRecipeToShelf": "Dodaj surowce z tej receptury",
     "shelfTriesIntro": "Posiadane surowce. Aby dany surowiec na pewno został użyty w dopasowaniu, należy zaznaczyć pole Obowiązkowo.",
     "gettingShelf": "Pobieranie listy posiadanych surowców…",
+    "shelfTryAgain": "Spróbuj ponownie",
+    "shelfLeadHidden": "{count, plural, one {# pozycja z ołowiem nie jest używana: ołów jest wyłączony na stronie <settings>Ustawienia</settings>.} few {# pozycje z ołowiem nie są używane: ołów jest wyłączony na stronie <settings>Ustawienia</settings>.} many {# pozycji z ołowiem nie jest używanych: ołów jest wyłączony na stronie <settings>Ustawienia</settings>.} other {# pozycji z ołowiem nie jest używanych: ołów jest wyłączony na stronie <settings>Ustawienia</settings>.}}",
     "matchAndCompare": "Dopasuj i porównaj",
     "swapped": "Zamieniono na współczesne surowce; to nowa, jeszcze niezapisana receptura.",
     "undoSwap": "Cofnij zamianę",
@@ -169,7 +172,7 @@
   "analysis": {
     "oldCopy": "{name} zapisano w starszej wersji aplikacji Glazecalc, bez straty prażenia (LOI), więc go pominięto. Aby go uwzględnić, należy ponownie dodać ten surowiec do receptury.",
     "noAnalysis": "{name} nie ma składu tlenkowego, którego można użyć we wzorze Segera, więc go pominięto.",
-    "parts": "{amount} {amount, plural, =1 {część} one {część} few {części} many {części} other {części}}"
+    "parts": "{amount} {count, plural, =1 {część} one {część} few {części} many {części} other {części}}"
   },
   "library": {
     "which": "{noun, select, additives {Które dodatki} other {Które surowce}}",
@@ -387,7 +390,7 @@
     "whitingProbably": "Przy {percent} % prawdopodobnie pojawią się nakłucia lub pęcherze, a powierzchnia będzie sucha, matowa lub kredowa.",
     "whitingTends": "Przy {percent} % zwykle pojawiają się nakłucia lub pęcherze, a powierzchnia jest sucha, matowa lub kredowa.",
     "whitingFix": "Wapń z fryty lub z wollastonitu pozwala uniknąć obu problemów. (5 % to wytyczna tej aplikacji; nigdzie nie opublikowano takiej granicy.)",
-    "fluorine": "Fluoryt i kriolit podczas wypału uwalniają fluor. Należy dobrze wietrzyć piec albo wprowadzić wapń lub sód z fryty lub wollastonitu.",
+    "fluorine": "{name} podczas wypału uwalnia fluor. Należy dobrze wietrzyć piec albo zastąpić ten surowiec takim, który nie zawiera fluoru.",
     "clayLowWas": "Zawiera tylko {clay} % surowej gliny; dawna receptura miała {was} %.",
     "clayLow": "Zawiera tylko {clay} % surowej gliny.",
     "clayNoneWas": "Nie zawiera surowej gliny; dawna receptura miała {was} %.",

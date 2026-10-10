@@ -52,6 +52,9 @@
     "keepTrying": "Keep trying",
     "discardFailed": "Could not discard the trial. Please try again."
   },
+  "signedOut": {
+    "recipeLost": "You were signed out before your changes to \"{title}\" were saved, so they were lost."
+  },
   "footer": {
     "site": "Site",
     "about": "About",
@@ -70,7 +73,8 @@
     "notANumberPoint": "Enter a number, such as {example}, with a point for decimals."
   },
   "meta": {
-    "description": "Enter a glaze recipe and see its unity formula (UMF), silica to alumina ratio and flux balance. Free and open source, for recipes, materials and firing logs."
+    "description": "Enter a glaze recipe and see its unity formula (UMF), silica to alumina ratio and flux balance. Free and open source, for recipes, materials and firing logs.",
+    "imageAlt": "Glazecalc: understand your glazes, not just mix them."
   },
   "notices": {
     "dismiss": "Dismiss",
@@ -222,7 +226,8 @@
     "noChemistry": "No chemistry: left out of the unity formula",
     "countedAs": "Counted as {name}",
     "nothingMatches": "Nothing matches. Try another name, kind or region.",
-    "loading": "Loading..."
+    "loading": "Loading...",
+    "notFetched": "The list could not be fetched. <retry>Try again</retry>"
   },
   "chemistryForm": {
     "name": "{noun, select, additive {Give the additive a name.} other {Give the material a name.}}",

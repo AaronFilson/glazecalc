@@ -1,0 +1,50 @@
+{
+  "common": {
+    "formulaHelp": "Typ een formule met gewone cijfers, zoals {typed}: de aantallen verschijnen als subscript, {shown}. Om de delen van een formule te verbinden, zoals in {joined}, kopieert u deze punt:",
+    "relatedTo": "Verwant aan:",
+    "notes": "Opmerkingen:",
+    "loi": "Gloeiverlies – LOI (percentage):",
+    "molecularWeight": "Molgewicht van de formule, ongebakken (alleen gebruikt als het gloeiverlies niet is ingevuld):",
+    "formulaHeading": "Voer de formule in (gebakken):",
+    "oxideSelection": "Oxidekeuze",
+    "noOxide": "geen",
+    "addOxide": "Oxide aan de lijst toevoegen",
+    "formulaIn": "Deze formule is uitgedrukt in:",
+    "percent": "Procent",
+    "molecular": "Molair / Segerformule",
+    "amount": "Hoeveelheid:",
+    "removeOxide": "Uit de formulelijst verwijderen",
+    "save": "Opslaan",
+    "elements": "Elementen",
+    "removeNote": "Opgeslagen recepten houden hun eigen kopie, dus die veranderen niet.",
+    "saveFailed": "Fout: het verzoek aan de server is mislukt."
+  },
+  "material": {
+    "title": "Grondstoffen",
+    "lead": "Uw eigen grondstoffen, ingevoerd als chemische formule of als oxideanalyse.",
+    "newHeading": "Gegevens van de nieuwe grondstof",
+    "name": "Naam van de grondstof:",
+    "rawFormula": "Formule (ongebakken):",
+    "weightsNote": "Het equivalentgewicht en het gewicht na stoken worden bij het opslaan berekend uit de formule en het gloeiverlies.",
+    "mineHeading": "Mijn grondstoffen:",
+    "rawFormulaColumn": "Formule (ongebakken)",
+    "standardHeading": "De standaardgrondstoffen:",
+    "fetchFailed": "Er is een fout opgetreden bij het ophalen van de gegevens van de grondstoffen.",
+    "standardFetchFailed": "Er is een fout opgetreden bij het ophalen van de gegevens van de standaardgrondstoffen.",
+    "saved": "Gelukt. De grondstof staat nu in de database."
+  },
+  "additive": {
+    "title": "Toevoegingen en kleurstoffen",
+    "lead": "Kleurstoffen en opaakmakers die u extra afweegt, bovenop het basisrecept, zoals kobaltoxide of tinoxide. Een recept kan ze buiten de Segerformule laten of erin meetellen.",
+    "newHeading": "Gegevens van de nieuwe toevoeging",
+    "name": "Naam van de toevoeging:",
+    "formulaAsSold": "Formule, zoals geleverd:",
+    "noChemistry": "Heeft geen oxideanalyse, zoals een commercieel pigment: buiten de Segerformule laten",
+    "firedNote": "Voer in wat het na het stoken aan het glazuur geeft: zwart kobaltoxide, {asSold}, is {fired} met een gloeiverlies van {loi}%. Een recept kan het dan in de Segerformule meetellen.",
+    "mineHeading": "Mijn toevoegingen en kleurstoffen:",
+    "standardHeading": "De standaardtoevoegingen:",
+    "fetchFailed": "Er is een fout opgetreden bij het ophalen van de gegevens van de toevoegingen.",
+    "standardFetchFailed": "Er is een fout opgetreden bij het ophalen van de gegevens van de standaardtoevoegingen.",
+    "saved": "Gelukt. De toevoeging staat nu in de database."
+  }
+}

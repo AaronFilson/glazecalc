@@ -1,0 +1,154 @@
+{
+  "version": {
+    "cones": "Vejledningen vises for brænding efter kegler, som angivet under Indstillinger.",
+    "temperature": "Vejledningen vises for brænding efter temperatur, som angivet under Indstillinger.",
+    "showTemperature": "Vis det for brænding efter temperatur",
+    "showCones": "Vis det for brænding efter kegler"
+  },
+  "notTranslated": "Vejledningen er endnu ikke oversat og vises derfor på engelsk.",
+  "sectionInEnglish": "Dette afsnit er ændret, siden det blev oversat, og vises derfor på engelsk, indtil oversættelsen er opdateret.",
+  "list": {
+    "title": "Vejledninger",
+    "lead": "Letforståelige vejledninger for nye keramikere: fra hvad en glasur er, til hvordan den brændes, og hvordan alle holdes i sikkerhed undervejs.",
+    "note": "Vejledningerne samler, hvad producenter, sikkerhedsmyndigheder og erfarne keramikere udgiver, med kilderne sidst i hver vejledning. De er et udgangspunkt, ikke en erstatning for råvarernes sikkerhedsdatablade, ovnens brugsanvisning eller lokale regler.",
+    "glazingBasics": {
+      "title": "Glasering fra grunden",
+      "text": "Hvad en glasur er, hvordan den smelter, og en forklaring på hvert ord, der står i en opskrift eller på en pose."
+    },
+    "makingAGlaze": {
+      "title": "Sådan laver man en glasur",
+      "text": "Indkøb, opbevaring, afvejning, blanding og sigtning af en glasur, og derefter test og notater."
+    },
+    "safeMixing": {
+      "title": "Sikker blanding og ventilation",
+      "text": "Støv, åndedrætsværn, rengøring, de råvarer, der kræver mest omtanke, og udluftning fra ovnen."
+    },
+    "homeSafety": {
+      "title": "Forgift ikke familien",
+      "text": "Keramik derhjemme med børn og kæledyr: opbevaring, støv, ovnen og hvad der skal gøres, hvis noget er blevet slugt."
+    },
+    "firing": {
+      "title": "Brænding i en enkel ovn",
+      "text": "Kegler, Kiln-Sitter og manuelle kontakter, med brændekurver til forglødning og glasurbrænding."
+    }
+  },
+  "contents": "På denne side",
+  "poison": {
+    "numbersFor": "Numre for",
+    "choose": "Vælg land",
+    "label": "Hvem man ringer til i {region}",
+    "caption": "Hvem man ringer til i {region} (numrene er kontrolleret den {date})",
+    "for": "Hjælp til",
+    "call": "Ring til",
+    "notes": "Åbningstider og bemærkninger",
+    "emergency": "Et nødstilfælde: bevidstløs, trækker ikke vejret, krampeanfald",
+    "poisonAdvice": "{who, select, children {Giftrådgivning: {name} (kun for børn)} other {Giftrådgivning: {name}}}",
+    "or": "eller {number}",
+    "online": "Online: <link>{name}</link>.",
+    "poisonAdviceNone": "Giftrådgivning",
+    "noLine": "Vi kunne ikke bekræfte en offentlig giftlinje her. Ring til egen læge, eller til alarmnummeret, hvis det haster.",
+    "medicalAdvice": "Lægelig rådgivning: {name}",
+    "animals": "Dyr: {name}",
+    "animalsNone": "Dyr",
+    "vet": "Ring til dyrlægen.",
+    "checkedOn": "Kontrolleret på:",
+    "choosePrompt": "Vælg land for at se, hvem man ringer til der.",
+    "ministry": "Sundhedsministeriets side: <link>{name}</link>."
+  },
+  "density": {
+    "sg": "massefylde {value}",
+    "baume": "{value} °Bé ({sg})",
+    "pint": "{value} oz pr. britisk pint ({sg})"
+  },
+  "shops": {
+    "shopsIn": "Forhandlere i",
+    "label": "Forhandlere i {region}",
+    "caption": "Nogle forhandlere af råvarer til glasur i {region} (kontrolleret den {date})",
+    "nearbyCaption": "Forhandlere andre steder, der oplyser, at de leverer til {region} (kontrolleret den {date})",
+    "shop": "Forhandler",
+    "sells": "Sortiment",
+    "packs": "Fundne pakningsstørrelser",
+    "seen": "Fundne råvarer, med forhandlerens navne",
+    "what": {
+      "materials": "råvarer til glasur",
+      "frits": "fritter",
+      "oxides": "oxider",
+      "stains": "universalfarver",
+      "clays": "ler",
+      "glazes": "færdige glasurer",
+      "kilns": "ovne"
+    },
+    "none": "Vi fandt ingen forhandler af råvarer til glasur i {region}.",
+    "unknown": "Vi har endnu ikke søgt efter forhandlere i {region}.",
+    "choosePrompt": "Vælg land for at se forhandlere der."
+  },
+  "silica": {
+    "limitIn": "Grænseværdi i",
+    "label": "Grænseværdien for silica i {region}",
+    "caption": "Grænseværdien på arbejdspladsen for respirabelt krystallinsk silica i {region}, som gennemsnit over 8 timer (kontrolleret den {date})",
+    "both": "Kvarts og cristobalit",
+    "quartz": "Kvarts",
+    "cristobalite": "Cristobalit",
+    "actionLevel": "Aktionsværdi",
+    "value": "{value} mg/m³",
+    "kind": {
+      "binding": "En bindende grænseværdi.",
+      "indicative": "En vejledende grænseværdi: en rettesnor, ikke et lovfastsat loft.",
+      "assessment": "Et vurderingskriterium, ikke en bindende grænseværdi."
+    },
+    "setBy": "Fastsat i <link>{law}</link>.",
+    "lowerThanEu": "Lavere end EU’s bindende grænseværdi på {value} mg/m³.",
+    "sameAsEu": "Den samme som EU’s bindende grænseværdi.",
+    "unknown": "Vi kunne ikke bekræfte den nationale grænseværdi i {region}. EU’s bindende grænseværdi på {value} mg/m³ gælder i alle medlemsstater.",
+    "noData": "Vi har endnu ikke bekræftet grænseværdien i {region}.",
+    "agency": "Den nationale myndighed for arbejdsmiljø: <link>{name}</link>.",
+    "agencySilica": "Myndighedens <link>side om silica</link>.",
+    "choosePrompt": "Vælg land for at se grænseværdien der."
+  },
+  "food": {
+    "rulesIn": "Regler i",
+    "label": "Grænseværdier for keramiske genstande i {region}",
+    "caption": "Hvad et brændt emne må afgive ved den lovbestemte prøvning i {region} (kontrolleret den {date})",
+    "article": "Type genstand",
+    "lead": "Bly",
+    "cadmium": "Cadmium",
+    "category": {
+      "flat": "Genstande, der ikke kan fyldes, eller som højst er 25 mm dybe",
+      "fillable": "Andre genstande, der kan fyldes",
+      "cooking": "Koge- og stegeredskaber uanset størrelse samt emballage og opbevaringsbeholdere på over 3 L",
+      "rimBand": "Mundranden på en genstand, der drikkes af: et bånd på 2 cm, indvendigt og udvendigt",
+      "rimArticle": "Mundranden på en genstand, der drikkes af: et bånd på 20 mm udvendigt fra overkanten, pr. genstand",
+      "flatware": "Fladvarer, højst 25 mm dybe",
+      "smallHollow": "Små hulvarer under 1,1 L, bortset fra kopper og krus",
+      "cups": "Kopper og krus",
+      "largeHollow": "Store hulvarer på 1,1 L eller mere, bortset fra kander",
+      "pitchers": "Kander",
+      "auSmall": "Kopper, krus, kander, skåle, tekander og andet service under 1100 mL",
+      "auLarge": "Det samme, 1100 mL eller mere",
+      "auPlates": "Tallerkener, underkopper og lignende service",
+      "auCooking": "Koge- og stegeredskaber"
+    },
+    "judged": {
+      "average": "gennemsnit af 6 genstande",
+      "each": "hver af de 6 for sig"
+    },
+    "euRules": "Her gælder EU’s regler.",
+    "law": "Fastsat i <link>{law}</link>.",
+    "inForce": "Gælder fra den {date}.",
+    "unknown": "Vi har endnu ikke bekræftet reglerne i {region}.",
+    "choosePrompt": "Vælg land for at se reglerne der."
+  },
+  "equivalents": {
+    "buyingIn": "Indkøb i",
+    "label": "{library, select, US {Tilsvarende råvarer, der sælges i USA} UK {Tilsvarende råvarer, der sælges i Storbritannien} EU {Tilsvarende råvarer, der sælges i EU} other {Tilsvarende råvarer, der sælges i Australien og New Zealand}}",
+    "caption": "{library, select, US {Råvarer, der ikke sælges i USA, hver med den nærmeste, der sælges der} UK {Råvarer, der ikke sælges i Storbritannien, hver med den nærmeste, der sælges der} EU {Råvarer, der ikke sælges i EU, hver med den nærmeste, der sælges der} other {Råvarer, der ikke sælges i Australien og New Zealand, hver med den nærmeste, der sælges der}}",
+    "material": "I en opskrift",
+    "soldIn": "Sælges i",
+    "closest": "{library, select, US {Nærmeste, der sælges i USA} UK {Nærmeste, der sælges i Storbritannien} EU {Nærmeste, der sælges i EU} other {Nærmeste, der sælges i Australien og New Zealand}}",
+    "apart": "afviger med {grams} g pr. 100 g",
+    "noneClose": "Intet inden for 15 g pr. 100 g: sammenlign ud fra kemien.",
+    "loading": "Indlæser biblioteket…",
+    "failed": "Biblioteket kunne ikke indlæses. Prøv igen senere.",
+    "choosePrompt": "Vælg land for at se, hvad der sælges der."
+  }
+}

@@ -52,6 +52,9 @@
     "keepTrying": "Continuer l’essai",
     "discardFailed": "Impossible d’abandonner l’essai. Veuillez réessayer."
   },
+  "signedOut": {
+    "recipeLost": "Votre session a été fermée avant l’enregistrement des modifications apportées à « {title} » : elles sont perdues."
+  },
   "footer": {
     "site": "Site",
     "about": "À propos",
@@ -70,7 +73,8 @@
     "notANumberPoint": "Saisissez un nombre, par exemple {example}, avec un point pour les décimales."
   },
   "meta": {
-    "description": "Saisissez une recette d’émail : formule de Seger (UMF), rapport silice/alumine, fondants. Gratuit et open source, pour recettes, matières et cuissons."
+    "description": "Saisissez une recette d’émail : formule de Seger (UMF), rapport silice/alumine, fondants. Gratuit et open source, pour recettes, matières et cuissons.",
+    "imageAlt": "Glazecalc : comprenez vos émaux au lieu de seulement les préparer."
   },
   "notices": {
     "dismiss": "Fermer",
@@ -222,7 +226,8 @@
     "noChemistry": "Sans chimie : exclue de la formule de Seger",
     "countedAs": "Compté comme {name}",
     "nothingMatches": "Aucun résultat. Essayez un autre nom, une autre catégorie ou une autre région.",
-    "loading": "Chargement…"
+    "loading": "Chargement…",
+    "notFetched": "Impossible de charger la liste. <retry>Réessayer</retry>"
   },
   "chemistryForm": {
     "name": "{noun, select, additive {Donnez un nom à l’additif.} other {Donnez un nom à la matière.}}",

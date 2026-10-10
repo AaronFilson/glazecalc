@@ -1,0 +1,111 @@
+{
+  "landing": {
+    "eyebrow": "Lasitelaskin ja pajan muistikirja",
+    "heading": "Ilmaista lasitekemiaa keraamikoille.",
+    "lead": "Ymmärrä lasitteita, älä vain sekoita niitä. Kirjoita resepti ja näe heti sen Segerin kaava (UMF), piidioksidin ja alumiinioksidin suhde ja sulattajien suhde. Pidä reseptit, raaka-aineet, väriaineet, muistiinpanot ja polttopäiväkirjat tallessa samassa yksityisessä muistikirjassa.",
+    "trialEnded": "Kokeilu on päättynyt. Aloita uusi tai luo ilmainen tili, jotta työ säilyy.",
+    "tryIt": "Kokeile nyt",
+    "createAccount": "Luo ilmainen tili",
+    "trialFailed": "Kokeilun aloittaminen ei onnistunut juuri nyt. Yritä uudelleen.",
+    "heroNote": "Kokeiluun ei tarvita rekisteröitymistä · Ilmainen, avoin lähdekoodi · Reseptit pysyvät yksityisinä",
+    "heroAlt": "Rivi poltettuja keilasarjoja: kunkin sarjan valkoiset pyrometriset keilat ovat taipuneet uunin kuumuudessa.",
+    "heroCaption": "Keilasarjat polton jälkeen: kukin keila taipuu, kun uuni on tehnyt riittävästi lämpötyötä.",
+    "exampleHeading": "Näin se toimii: klassinen seladonin pohjalasite",
+    "exampleCaption": "Bernard Leachin ”4321”, jota poltetaan usein keilaan 10, paino-osina.",
+    "material": "Raaka-aine",
+    "parts": "Osat",
+    "unityHeading": "Sen Segerin kaava",
+    "exampleNote": "Sulattajien summa on 1, joten mitä tahansa kahta lasitetta voi verrata tasapuolisesti. Laskettu tässä selaimessa samalla koodilla, jota laskin käyttää.",
+    "featuresHeading": "Mitä Glazecalc tekee",
+    "features": {
+      "unity": {
+        "title": "Segerin kaava heti",
+        "text": "Näe sulattajat, alumiinioksidi ja piidioksidi Segerin kaavassa, niin kuin lasitekemistit vertaavat reseptejä, heti kun resepti on kirjoitettu."
+      },
+      "substitute": {
+        "title": "Korjaa ja korvaa",
+        "text": "Raaka-aine lopetettu? Vertaa kaavoja ja löydä korvaava raaka-aine, joka sulaa samalla tavalla."
+      },
+      "notebook": {
+        "title": "Pajan muistikirja",
+        "text": "Pidä reseptit, omat raaka-aineet, väriaineet, muistiinpanot ja polttopäiväkirjat yhdessä paikassa."
+      },
+      "learn": {
+        "title": "Opi samalla",
+        "text": "Lukujen vieressä ovat selkeäkieliset oppaat aina siitä, mitä lasite on, sen turvalliseen polttamiseen asti."
+      }
+    },
+    "umfHeading": "Mikä on Segerin kaava?",
+    "umfRecipe": "Lasitteen resepti kertoo, kuinka paljon kutakin raaka-ainetta punnitaan. Segerin kaava (englanniksi unity molecular formula, UMF) kertoo, mitä raaka-aineista tulee uunissa: kuinka monta molekyyliä kutakin oksidia on, skaalattuna niin, että sulattajien summa on yksi.",
+    "umfGroups": "Sulattajat saavat lasitteen sulamaan, alumiinioksidi jäykistää sulaa ja piidioksidi muodostaa lasin. Näiden kolmen ryhmän vertailu selittää, miksi yksi lasite on kiiltävä ja toinen matta tai miksi yksi valuu ja toinen pysyy paikallaan, ja se näyttää, miten raaka-aineen, jota ei enää myydä, voi korvata.",
+    "readAdvice": "Lue lisää lasiteneuvoja",
+    "closingHeading": "Valmiina milloin vain.",
+    "closingText": "Kokeile laskinta nyt ja luo sitten tili, jotta tehty työ säilyy."
+  },
+  "about": {
+    "title": "Tietoja Glazecalcista",
+    "lead": "Ilmainen avoimen lähdekoodin lasitekemian laskin ja muistikirja savenvalajille, keraamikoille ja opiskelijoille.",
+    "whatHeading": "Mitä se tekee",
+    "what": "Glazecalc muuntaa lasitteen reseptin eli raaka-aineet ja kunkin punnittavan määrän Segerin kaavaksi (UMF): oksideiksi, joista lasite poltettuna koostuu, skaalattuna niin, että sulattajien summa on yksi. Näin reseptejä voi verrata keskenään, lasitteen käyttäytymistä on helpompi ymmärtää ja raaka-aineen korvaaminen helpottuu.",
+    "alongside": "Laskimen lisäksi Glazecalcissa voi säilyttää reseptit, omat raaka-aineet, väriaineet ja muut lisäaineet, muistiinpanot ja polttopäiväkirjat, ja siinä on sivu käytännön <advice>lasiteneuvoja</advice> sekä <guides>oppaita</guides> aloitteleville keraamikoille aina siitä, mitä lasite on, sen turvalliseen polttamiseen asti.",
+    "numbersHeading": "Miten luvut lasketaan",
+    "numbers": "Kukin raaka-aine kuvataan kemiallisella kaavalla tai oksidianalyysillä sekä polttohäviöllä: osalla, joka poistuu uunissa, kuten liidun hiilidioksidi tai kaoliinin vesi. Glazecalc muuntaa kunkin määrän kunkin oksidin mooleiksi vakiintuneilla moolimassoilla, laskee ne yhteen koko reseptistä ja jakaa sulattajien moolien kokonaismäärällä. Väriaineet ja muut lisäaineet näytetään reseptin yhteydessä, mutta tavan mukaan ne jätetään Segerin kaavan ulkopuolelle.",
+    "guide": "Tulokset ovat suuntaa antavia, eivät takuu. Todelliset raaka-aineet vaihtelevat toimittajasta toiseen ja erästä toiseen, ja poltto vaikuttaa yhtä paljon kuin kemia, joten testaa jokainen lasite. Elintarvikkeiden kanssa kosketuksiin tulevien pintojen lasitteet pitäisi testata metallien liukenemisen varalta.",
+    "builtHeading": "Miten se on rakennettu",
+    "built": "Glazecalc sai alkunsa vuonna 2017, ja se rakennettiin uudelleen vuonna 2026. Se on yksi pieni verkkosovellus, ja sen <source>lähdekoodi on GitHubissa</source> MIT-lisenssillä.",
+    "stackBrowser": "Selaimessa Angular 22 (standalone-komponentit ja signaalit), ja lasitekemia on pienessä jaetussa kirjastossa.",
+    "stackServer": "TypeScript-rajapinta, joka toimii Node.js 24:llä ja Express 5:llä, tietokantana MongoDB 9, ja sen tarkistaa yli 350 automaattista testiä.",
+    "stackHosting": "Toimii Dockerissa Amazon Web Services -palvelussa nginxin takana, ja HTTPS-varmenne tulee Let's Encrypt -palvelusta.",
+    "stackDeploy": "Julkaistaan GitHub Actionsilla: konttikuvat rakennetaan ja testataan jokaisen muutoksen yhteydessä, ja julkaisut kirjautuvat AWS:ään ilman tallennettuja avaimia.",
+    "whoHeading": "Kuka sen teki",
+    "who": "Glazecalcin on tehnyt Aaron Filson. Löytyikö ongelma tai heräsikö idea? <issues>Tee ilmoitus GitHubissa</issues>.",
+    "studio": "Aaron Filsonin käsintehtyä keramiikkaa on Tacomassa Washingtonin osavaltiossa: <studio>Updraft Pottery Studio</studio>. Tutustu töihin ja tilaa esine, jos jokin puhuttelee."
+  },
+  "privacy": {
+    "title": "Tietosuoja",
+    "lead": "Päivitetty viimeksi lokakuussa 2026.",
+    "shortHeading": "Lyhyesti",
+    "short": "Glazecalc säilyttää vain sen, mitä tilin ylläpito vaatii, eikä mitään muuta. Ei mainoksia, ei analytiikkaa, ei seurantaevästeitä eikä kolmansien osapuolten skriptejä. Tietoja ei koskaan myydä eikä jaeta.",
+    "storedHeading": "Mitä tallennetaan",
+    "storedAccount": "<b>Tili:</b> sähköpostiosoite ja salasana, joka tallennetaan vain yksisuuntaisena tiivisteenä (bcrypt), ei koskaan itse salasanana.",
+    "storedTrial": "<b>Kokeilu (Kokeile nyt):</b> ei sähköpostiosoitetta eikä salasanaa, vain luotu nimi, kuten ”speckled quiet kilns”. Kokeilu ja kaikki siihen tallennettu poistetaan automaattisesti 14 päivän kuluttua sen alkamisesta, ellei niitä säilytetä luomalla tili.",
+    "storedSaved": "<b>Tallennettu sisältö:</b> reseptit, raaka-aineet, lisäaineet, muistiinpanot, polttopäiväkirjat ja neuvot. Muut käyttäjät eivät näe niitä.",
+    "storedResets": "<b>Salasanan palautuspyynnöt:</b> kunkin palautuslinkin sormenjälki (ei itse linkki), joka poistetaan automaattisesti, kun linkki vanhenee 30 minuutin kuluttua.",
+    "storedBrowser": "<b>Selaimessa:</b> yksi eväste, <code>glazecalc_session</code>, joka pitää käyttäjän kirjautuneena. Siinä on kirjautumistunniste, sivun skriptit eivät voi lukea sitä, se lähetetään vain Glazecalcin omalle palvelimelle, ja se on voimassa 7 päivää (kokeilussa 14). Paikallisessa tallennustilassa on merkintä kirjautumisesta ja kokeilun aikana kokeilun nimi ja päättymispäivä. Uloskirjautuminen poistaa ne.",
+    "emailHeading": "Sähköposti",
+    "email": "Glazecalc lähettää sähköpostia vain, kun salasanan palauttamista pyydetään ja kun salasana vaihtuu. Viestit lähetetään Amazon Simple Email Service -palvelun kautta. Uutiskirjettä tai markkinointiviestejä ei ole.",
+    "hostingHeading": "Lokit, varmuuskopiot ja palvelin",
+    "logs": "Verkkopalvelin kirjaa jokaisen pyynnön IP-osoitteineen lokiin, jota säilytetään 14 päivää sivuston ylläpitoa ja suojaamista varten.",
+    "backups": "Tietokannan salattuja varmuuskopioita säilytetään 30 päivää ja palvelimen levyn kopioita 7 päivää, jotta sivusto voidaan palauttaa vian jälkeen.",
+    "hosting": "Kaikkea ylläpitää Amazon Web Services Yhdysvalloissa (Oregon).",
+    "deletingHeading": "Tietojen poistaminen",
+    "deleting": "Tilin voi poistaa <account>tilisivulla</account>. Se poistaa heti tilin ja kaiken tallennetun; Hylkää kokeilu -painike tekee saman kokeilulle. Varmuuskopioissa olevat kopiot häviävät, kun varmuuskopiot vanhenevat, 30 päivän kuluessa.",
+    "questionsHeading": "Kysymykset",
+    "questions": "Kysy <issues>tekemällä ilmoitus GitHubissa</issues>. Jos tämä käytäntö muuttuu, myös sivun yläreunan päivämäärä muuttuu."
+  },
+  "notFound": {
+    "heading": "Sivua ei löydy",
+    "text": "Tässä osoitteessa ei ole sivua. Se on ehkä siirretty, tai linkissä voi olla kirjoitusvirhe.",
+    "start": "Siirry etusivulle"
+  },
+  "advice": {
+    "title": "Lasiteneuvot",
+    "lead": "Käytännön vinkkejä sekoittamiseen, lasittamiseen ja polttamiseen sekä omat neuvot.",
+    "signUp": "<signup>Luo ilmainen tili</signup> tai <signin>kirjaudu sisään</signin>, niin omia neuvoja voi säilyttää.",
+    "generalHeading": "Yleisiä neuvoja",
+    "tags": "Tunnisteet: {list}",
+    "addHeading": "Lisää oma neuvo",
+    "titleLabel": "Otsikko:",
+    "tagsLabel": "Tunnisteet:",
+    "contentLabel": "Neuvon sisältö:",
+    "save": "Tallenna",
+    "mineHeading": "Omat neuvot",
+    "nothingSaved": "Mitään ei ole vielä tallennettu.",
+    "titleMissing": "Anna neuvolle otsikko.",
+    "contentMissing": "Kirjoita neuvo.",
+    "fetchFailed": "Neuvojen hakemisessa tapahtui virhe.",
+    "standardFetchFailed": "Palvelimen neuvojen hakemisessa tapahtui virhe.",
+    "saved": "Neuvo lisättiin.",
+    "saveFailed": "Neuvon lähettämisessä tapahtui virhe."
+  }
+}

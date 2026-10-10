@@ -50,6 +50,7 @@
   "record-updated": "{label, select, additive {Zusatz} advice {Tipp} firing {Brennprotokoll} material {Rohstoff} note {Notiz} recipe {Rezept} trash {Eintrag im Papierkorb} other {Eintrag}} erfolgreich aktualisiert",
   "record-invalid": "{label, select, additive {Ungültiger Zusatz} advice {Ungültiger Tipp} firing {Ungültiges Brennprotokoll} material {Ungültiger Rohstoff} note {Ungültige Notiz} recipe {Ungültiges Rezept} trash {Ungültiger Eintrag im Papierkorb} other {Ungültiger Eintrag}}",
   "record-deleted": "{label, select, additive {Zusatz} advice {Tipp} firing {Brennprotokoll} material {Rohstoff} note {Notiz} recipe {Rezept} trash {Eintrag im Papierkorb} other {Eintrag}} erfolgreich gelöscht",
+  "account-limit": "Ein Konto kann bis zu {limit} {label, select, additive {Zusätze} advice {Tipps} firing {Brennprotokolle} material {Rohstoffe} note {Notizen} recipe {Rezepte} trash {Einträge im Papierkorb} other {Einträge}} behalten. Bitte entfernen Sie einige, um mehr zu speichern.",
   "not-found": "Nicht gefunden",
   "other-site": "Anfragen von anderen Websites werden nicht angenommen.",
   "invalid-input": "Einige der gesendeten Angaben sind ungültig.",

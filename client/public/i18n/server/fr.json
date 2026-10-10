@@ -50,6 +50,7 @@
   "record-updated": "{label, select, additive {Additif mis à jour} advice {Conseil mis à jour} firing {Relevé de cuisson mis à jour} material {Matière mise à jour} note {Note mise à jour} recipe {Recette mise à jour} trash {Élément de la corbeille mis à jour} other {Élément mis à jour}}",
   "record-invalid": "{label, select, additive {Additif non valide} advice {Conseil non valide} firing {Relevé de cuisson non valide} material {Matière non valide} note {Note non valide} recipe {Recette non valide} trash {Élément de la corbeille non valide} other {Élément non valide}}.",
   "record-deleted": "{label, select, additive {Additif supprimé} advice {Conseil supprimé} firing {Relevé de cuisson supprimé} material {Matière supprimée} note {Note supprimée} recipe {Recette supprimée} trash {Élément de la corbeille supprimé} other {Élément supprimé}}",
+  "account-limit": "Un compte peut garder jusqu’à {limit} {label, select, additive {additifs} advice {conseils} firing {relevés de cuisson} material {matières} note {notes} recipe {recettes} trash {éléments dans la corbeille} other {éléments}}. Retirez-en pour en enregistrer davantage.",
   "not-found": "Introuvable.",
   "other-site": "Les requêtes provenant d’autres sites ne sont pas acceptées.",
   "invalid-input": "Certaines des informations envoyées ne sont pas valides.",

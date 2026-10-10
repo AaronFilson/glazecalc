@@ -1,4 +1,4 @@
-import { upTo } from './format';
+import { plainNumber, upTo } from './format';
 
 /** How batch weights are shown: grams, or pounds and ounces (the account's setting). */
 export type WeightUnit = 'g' | 'lb';
@@ -30,10 +30,13 @@ export function formatWeight(grams: number, unit: WeightUnit, precision: GramPre
   return rest ? `${pounds} lb ${trim(rest, 1)} oz` : `${pounds} lb`;
 }
 
-/** A batch size typed in the account's unit (grams, or decimal pounds), in grams; 0 if not a weight. */
+/**
+ * A batch size in the account's unit (grams, or decimal pounds), as a number
+ * box saves it ("2.5", shared/number-input.ts), in grams; 0 if not a weight.
+ */
 export function toGrams(amount: string | number, unit: WeightUnit): number {
-  const n = Number(String(amount).trim());
-  if (!Number.isFinite(n) || n <= 0) return 0;
+  const n = plainNumber(amount) ?? 0;
+  if (!(n > 0)) return 0;
   return unit === 'lb' ? n * GRAMS_PER_POUND : n;
 }
 

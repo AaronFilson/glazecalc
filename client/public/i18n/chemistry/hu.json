@@ -1,0 +1,23 @@
+{
+  "unknown-compound": "Ismeretlen vegyület a képletben: {compound}",
+  "unknown-oxide": "Ismeretlen oxid ({oxide}) a(z) {material} nyersanyagban",
+  "invalid-oxide-amount": "A(z) {material} nyersanyagban érvénytelen a(z) {oxide} mennyisége",
+  "loi-range": "A(z) {material} nyersanyag LOI-értékének legalább 0-nak és 100-nál kisebbnek kell lennie",
+  "no-oxides": "A(z) {material} nyersanyag nem tartalmaz oxidot",
+  "no-name": "A nyersanyagnak nevet kell adni",
+  "no-analysis": "A(z) {material} nyersanyaghoz képlet vagy összetétel szükséges",
+  "recipe-shape": "A receptnek '{ material, amount }' elemekből álló tömbnek vagy mennyiségeket tartalmazó objektumnak kell lennie",
+  "invalid-amount": "Érvénytelen mennyiség a(z) {material} nyersanyagnál",
+  "missing-material": "A recept egyik sorából hiányzik a nyersanyag",
+  "unknown-material": "Ismeretlen nyersanyag: {material}",
+  "no-flux": "A recept nem tartalmaz olvasztóanyag-oxidot, így a Seger-képlet (UMF) nem határozható meg",
+  "no-target": "A célösszetételben nincs elérendő oxid",
+  "no-materials": "Nincs nyersanyag, amelynek a mennyiségét ki lehetne számítani",
+  "no-temperature": "A bór beállításához meg kell adni az égetési hőmérsékletet",
+  "no-flux-to-rebuild": "A mázban nincs újraépíthető olvasztóanyag",
+  "unknown-element": "Ismeretlen elem ({element}) ebben a képletben: {formula}",
+  "bad-formula": "A képlet nem értelmezhető: {formula}",
+  "analysis-total": "A(z) {material} nyersanyag összetételének összege a LOI-val együtt {total}%; körülbelül 100% volna várható.",
+  "stored-equivalent": "A(z) {material} nyersanyag tárolt egyenértéktömege nem egyezik a képletével és a LOI-értékével; helyette a képletet és a LOI-t használtuk.",
+  "trace-flux": "A recept csak nyomokban tartalmaz olvasztóanyag-oxidokat, így a Seger-képletnek (UMF) nincs értelme."
+}

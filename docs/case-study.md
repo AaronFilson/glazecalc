@@ -117,8 +117,8 @@ themselves; and light, dark and six palettes named for glazes.
 
 | Measure                          | 2017                  | Now                                                    |
 | -------------------------------- | --------------------- | ------------------------------------------------------ |
-| Automated tests                  | basic API route tests | 713: server, Angular unit and browser, with axe checks |
-| Server statement coverage        | not measured          | 98.1%                                                  |
+| Automated tests                  | basic API route tests | 789: server, Angular unit and browser, with axe checks |
+| Server statement coverage        | not measured          | 98.6%                                                  |
 | Standard materials and colorants | 53, from one book     | 204, each with a source and a status                   |
 | Deploys                          | SSH and restart       | approved click, keyless, rolls back on a failed check  |
 | Monthly cost                     | $15-17                | about $13                                              |

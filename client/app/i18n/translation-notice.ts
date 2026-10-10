@@ -1,4 +1,5 @@
-import { Component, computed, inject, signal } from '@angular/core';
+import { Location } from '@angular/common';
+import { Component, DestroyRef, computed, inject, signal } from '@angular/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { ActivatedRouteSnapshot, NavigationEnd, Router } from '@angular/router';
 import { TranslocoDirective } from '@jsverse/transloco';
@@ -77,6 +78,8 @@ export class TranslationNotice {
   /** The page is a safety guide. */
   private readonly safety = signal(false);
   private readonly path = signal(location.pathname);
+  /** The query and section in the address: ?compare=draft,abc, #cones. */
+  private readonly rest = signal(location.search + location.hash);
   protected readonly brief = computed(() => this.safety() && this.preferences.notice() === 'hidden');
   protected readonly shown = computed(
     () => this.translated && (this.safety() || this.preferences.notice() !== 'hidden')
@@ -88,10 +91,13 @@ export class TranslationNotice {
         filter((event) => event instanceof NavigationEnd),
         takeUntilDestroyed()
       )
-      .subscribe(() => {
-        this.safety.set(!!innermost(this.router.routerState.snapshot.root).data['safety']);
-        this.path.set(location.pathname);
-      });
+      .subscribe(() => this.safety.set(!!innermost(this.router.routerState.snapshot.root).data['safety']));
+    // The address, whenever it changes: another page, its query, or the section a guide's contents went to.
+    const stop = inject(Location).onUrlChange(() => {
+      this.path.set(location.pathname);
+      this.rest.set(location.search + location.hash);
+    });
+    inject(DestroyRef).onDestroy(stop);
   }
 
   /** A GitHub issue with the language and page filled in (.github/ISSUE_TEMPLATE/translation.yml). */
@@ -106,7 +112,8 @@ export class TranslationNotice {
     return ISSUES + '?' + params.toString();
   });
 
-  protected readonly englishUrl = computed(() => pathIn('en', this.path()));
+  /** This page in English, with its query and section. */
+  protected readonly englishUrl = computed(() => pathIn('en', this.path(), this.rest()));
 
   protected readEnglish(): void {
     try {

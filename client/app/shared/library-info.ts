@@ -78,6 +78,22 @@ export function statusText(record: LibraryInfo): string {
   return '';
 }
 
+/**
+ * The first record with this name, or else the first with it as another name,
+ * whatever the case. List a potter's own records first, so their "Potash
+ * Feldspar" is theirs, not a standard record that also goes by that name.
+ */
+export function findNamed<T extends { name: string; aliases?: string[] }>(
+  records: readonly T[],
+  name: string
+): T | undefined {
+  const wanted = name.trim().toLowerCase();
+  return (
+    records.find((record) => record.name.toLowerCase() === wanted) ??
+    records.find((record) => (record.aliases ?? []).some((alias) => alias.toLowerCase() === wanted))
+  );
+}
+
 /** Whether every word typed is in the record's name or one of its aliases. */
 export function matchesWords(record: { name: string; aliases?: string[] }, filter: string): boolean {
   const words = filter.trim().toLowerCase().split(/\s+/).filter(Boolean);

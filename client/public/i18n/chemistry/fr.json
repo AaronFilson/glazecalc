@@ -18,5 +18,6 @@
   "unknown-element": "Élément inconnu {element} dans la formule {formula}.",
   "bad-formula": "Impossible de lire la formule {formula}.",
   "analysis-total": "L’analyse de la matière {material} fait un total de {total} %, PAF comprise ; on attend environ 100 %.",
-  "stored-equivalent": "La masse équivalente enregistrée pour la matière {material} ne correspond pas à sa formule et à sa PAF ; la formule et la PAF ont été utilisées à la place."
+  "stored-equivalent": "La masse équivalente enregistrée pour la matière {material} ne correspond pas à sa formule et à sa PAF ; la formule et la PAF ont été utilisées à la place.",
+  "trace-flux": "La recette ne contient que des traces d’oxydes fondants : la formule de Seger (UMF) n’est donc pas significative."
 }

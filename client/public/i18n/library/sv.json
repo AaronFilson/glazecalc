@@ -1,0 +1,50 @@
+{
+  "common": {
+    "formulaHelp": "Skriv formeln med vanliga siffror, till exempel {typed}: siffrorna visas sedan nedsänkta, {shown}. Kopiera den här punkten för att foga ihop delarna i en formel, som i {joined}:",
+    "relatedTo": "Besläktad med:",
+    "notes": "Anteckningar:",
+    "loi": "Glödförlust – LOI (procent):",
+    "molecularWeight": "Råformelns molekylvikt (används bara om fältet för glödförlust är tomt):",
+    "formulaHeading": "Ange formeln (bränd):",
+    "oxideSelection": "Val av oxid",
+    "noOxide": "ingen",
+    "addOxide": "Lägg till oxiden i listan",
+    "formulaIn": "Formeln anges i:",
+    "percent": "Procent",
+    "molecular": "Molar / Segerformel",
+    "amount": "Mängd:",
+    "removeOxide": "Ta bort ur formellistan",
+    "save": "Spara",
+    "elements": "Grundämnen",
+    "removeNote": "Sparade recept har en egen kopia, så de ändras inte.",
+    "saveFailed": "Fel: begäran till servern misslyckades."
+  },
+  "material": {
+    "title": "Råvaror",
+    "lead": "Egna råvaror, angivna som kemisk formel eller som oxidanalys.",
+    "newHeading": "Uppgifter om den nya råvaran",
+    "name": "Råvarans namn:",
+    "rawFormula": "Råformel:",
+    "weightsNote": "Ekvivalentvikten och den brända vikten beräknas från formeln och glödförlusten när råvaran sparas.",
+    "mineHeading": "Egna råvaror:",
+    "rawFormulaColumn": "Råformel",
+    "standardHeading": "Standardråvarorna:",
+    "fetchFailed": "Ett fel uppstod när uppgifterna om råvarorna skulle hämtas.",
+    "standardFetchFailed": "Ett fel uppstod när uppgifterna om standardråvarorna skulle hämtas.",
+    "saved": "Klart. Råvaran har lagts till i databasen."
+  },
+  "additive": {
+    "title": "Tillsatser och färgmedel",
+    "lead": "Färgmedel och täckmedel som vägs utöver basreceptet, till exempel kobolt- eller tennoxid. Ett recept kan utelämna dem ur Segerformeln (UMF) eller räkna med dem i den.",
+    "newHeading": "Uppgifter om den nya tillsatsen",
+    "name": "Tillsatsens namn:",
+    "formulaAsSold": "Formel, som den säljs:",
+    "noChemistry": "Den har ingen oxidanalys, till exempel en köpt färgkropp: utelämna den ur Segerformeln",
+    "firedNote": "Ange vad den ger glasyren efter bränning: svart koboltoxid, {asSold}, är {fired} med {loi} % glödförlust. Ett recept kan då räkna med den i Segerformeln.",
+    "mineHeading": "Egna tillsatser och färgmedel:",
+    "standardHeading": "Standardtillsatserna:",
+    "fetchFailed": "Ett fel uppstod när uppgifterna om tillsatserna skulle hämtas.",
+    "standardFetchFailed": "Ett fel uppstod när uppgifterna om standardtillsatserna skulle hämtas.",
+    "saved": "Klart. Tillsatsen har lagts till i databasen."
+  }
+}

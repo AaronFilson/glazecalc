@@ -49,9 +49,12 @@ materials, colorants, firing logs and notes together in one private notebook.
   page on Letter or A4; weights in grams, or in pounds and ounces as set in your account.
 - **Your region and your numbers:** where you work sets numbers and dates as you write them
   (12,5 or 12.5 typed either way), °C or °F, Orton cones or firing by temperature, the standard
-  materials sold there, and who to call in an emergency, for 31 countries.
-- **In seven languages:** English, German, French, Spanish, Italian, Polish and Portuguese, each
-  at its own addresses (`/de/recipe`). Translated by AI with a glossary per language from
+  materials sold there, and in the guides, for 31 countries: who to call in an emergency, shops that
+  sell glaze materials, the closest materials sold there to those a recipe names, the workplace
+  limit for silica dust and the food-contact limits for glazed ware (for 30: no official limit
+  was found for New Zealand), each checked on an official or the shop's own page.
+- **In nineteen languages:** English, German, French, Spanish, Italian, Polish, Portuguese, Bulgarian,
+  Croatian, Czech, Danish, Dutch, Finnish, Greek, Hungarian, Romanian, Slovak, Slovenian and Swedish, each at its own addresses (`/de/recipe`). Translated by AI with a glossary per language from
   suppliers' catalogues, reviewed, and the safety text checked by translating it back; every
   translated page says so and links to a form to suggest a better wording. Every piece of text is
   a message (Transloco with ICU plurals), and the guides are Markdown per language
@@ -79,8 +82,8 @@ For anyone reading the code:
   `.ts` files directly with no build step ([ADR 8](docs/adr/0008-typescript-server-without-a-build.md)),
   and put back online. The
   [case study](docs/case-study.md) tells how.
-- **Tested at three levels, in CI on every push:** 257 server tests (98% of statements) run
-  against the app in-process; 350 Angular unit tests (92%); 106 Playwright browser tests,
+- **Tested at three levels, in CI on every pull request and push to master:** 286 server tests (98% of statements) run
+  against the app in-process; 392 Angular unit tests (92%); 135 Playwright browser tests,
   including [axe](https://github.com/dequelabs/axe-core) accessibility checks of every page in
   light and dark mode, every page in a pseudo-locale to find text not marked for translation, and
   every page in each language at a phone's width.
@@ -207,7 +210,7 @@ including PowerShell and cmd.
 | `npm run test:e2e`       | Browser and accessibility tests (Playwright and axe). They build the app, run it on port 3100 (`E2E_PORT`) with a `glazecalc_e2e` database they reset, and need Chromium once: `npx playwright install chromium`.                                                                                          |
 | `npm run test:e2e:linux` | The browser tests on Linux in Docker, as CI runs them: Ubuntu's fonts are wider than Windows', which matters for layout and print. It tests the working tree, uncommitted changes included, and copies what failed to `test-results-linux/`. On Windows it runs through WSL, which needs Docker inside it. |
 | `npm run check:i18n`     | The messages: every key the app uses has its English and every English is used, translations keep the English's placeholders, tags and plural forms, and the English written from code is current ([how to write text](docs/translating.md)).                                                              |
-| `npm run i18n:sources`   | Writes the English of the messages kept in code and data (the server's, the chemistry's, the standard records', who to call) for translators.                                                                                                                                                              |
+| `npm run i18n:sources`   | Writes the English of the messages kept in code and data (the server's, the chemistry's, the standard records', who to call, the region data) for translators.                                                                                                                                             |
 | `npm run test:all`       | The server, Angular and browser tests, on this machine.                                                                                                                                                                                                                                                    |
 | `npm run test:all:linux` | The server and Angular tests, then the browser tests on Linux. Run it before pushing anything that changes layout or printing.                                                                                                                                                                             |
 
@@ -221,14 +224,20 @@ against a MongoDB 9 service container, and builds and checks the Docker image
 
     client/           Angular 22 app (standalone components, signals, no zone.js)
       app/core/         API access, sign-in and trials, route guards, data models
+      app/i18n/         languages: loading messages, the language in the address, the AI notice
       app/pages/        one folder per screen: landing, recipe, material, additive, firing, ...
       app/shared/       page header, messages, option lists
-      public/           icons, images, manifest, robots.txt and sitemap, copied into the build
+      public/           icons, images, manifest and robots.txt, copied into the build
+      public/i18n/      the messages in each language, and the guides in Markdown
+      i18n-fingerprints/  the English each translation was made from
       styles.scss       the palette and dark mode, on top of Bootstrap 5
     lib/chemistry/    glaze chemistry: molar masses, material analyses, the unity formula
+    lib/regions/      the regions and languages, and each country's facts for the guides:
+                      who to call, shops, silica limits, food-contact rules
     server/           the API server, in TypeScript that Node runs as it is (no build step)
       main.ts           starts it: connects to MongoDB, listens, shuts down cleanly
-      app.ts            the Express app: the API under /api, the built client for the rest
+      app.ts            the Express app: the API under /api, the built client for the rest,
+                        and the sitemap (/sitemap.xml), written for each language
       routes/           accounts, password reset, trials, and records.ts: the seven kinds of
                         record a user keeps, served by one route factory
       lib/              sign-in tokens, the record routes, trial limits and cleanup, email, logging
@@ -236,12 +245,15 @@ against a MongoDB 9 service container, and builds and checks the Docker image
       test/             server and chemistry tests (Mocha)
     e2e/              browser and accessibility tests (Playwright, axe)
     data/             the standard materials, additives and advice, loaded by npm run seed
-    scripts/          the dev runner (npm run dev) and the seed script
+    scripts/          the dev runner (npm run dev), the seed script, the messages check and
+                      sources (npm run check:i18n, i18n:sources), the browser tests on Linux
+                      (npm run test:e2e:linux), and one that adds records to the library
     Dockerfile, compose.yaml
                       the production image, and the app plus MongoDB in containers
     deploy/           production on EC2: Compose file, nginx, cloud-init, deploy and backup
                       scripts, AWS policies and setup commands
-    docs/             decision records (adr/), the case study, setup notes
+    docs/             decision records (adr/), the case study, the translation plan and guides
+                      (translating.md, translations/), setup notes
     .github/          CI, image publishing and deploy workflows, Dependabot
 
 ## Docker and deployment
@@ -256,13 +268,17 @@ MongoDB 9, keeping the data in a named volume:
 
 The app is published on 127.0.0.1:3000 only; put a reverse proxy in front for public access,
 because ports Docker publishes bypass ufw. Production on AWS is described step by step in
-[deploy/README.md](deploy/README.md) and [deploy/aws/README.md](deploy/aws/README.md), and running
-Docker inside WSL Debian on Windows in [docs/wsl-local-deploy-debian.md](docs/wsl-local-deploy-debian.md).
+[deploy/README.md](deploy/README.md) and [deploy/aws/README.md](deploy/aws/README.md). On Windows,
+Docker Engine runs inside WSL: [docs/wsl-local-deploy-debian.md](docs/wsl-local-deploy-debian.md)
+has notes from setting it up in WSL Debian.
 
 When the app is reachable by other people, set `APP_SECRET` to a long random value (production
-requires it; changing it signs everyone out), and set `MAIL_TRANSPORT` and `SMTP_URL` so password
-reset emails can go out. Sign-in, sign-up, trials and password reset are rate limited per client
-address; behind a reverse proxy the app trusts one hop of `X-Forwarded-For` for that address.
+requires it; changing it signs everyone out), set `MAIL_TRANSPORT` and `SMTP_URL` so password
+reset emails can go out, and set `APP_URL` to the address people open the app at, which the links
+in those emails use. Put them in the environment or in `.env`; `compose.yaml` passes them to the
+app ([.env.example](.env.example) describes each one). Sign-in, sign-up, trials and password reset
+are rate limited per client address; behind a reverse proxy the app trusts one hop of
+`X-Forwarded-For` for that address.
 
 ## More
 

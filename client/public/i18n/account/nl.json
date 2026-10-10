@@ -1,0 +1,237 @@
+{
+  "auth": {
+    "signInHeading": "Inloggen",
+    "keepHeading": "Uw werk bewaren",
+    "signUpHeading": "Uw account aanmaken",
+    "signInLead": "Welkom terug in uw glazuurlogboek.",
+    "keepLead": "Bewaar alles wat u als {name} hebt gemaakt: voeg uw e-mailadres en een wachtwoord toe. Het blijft gratis.",
+    "signUpLead": "Gratis. Uw recepten, grondstoffen en notities blijven privé in uw account.",
+    "trialNote": "Hebt u al een account? Als u inlogt, komt wat u als {name} hebt gemaakt in dat account. Nieuw hier? <signup>Maak dan een account aan</signup> om het daarin te bewaren.",
+    "email": "E-mailadres",
+    "password": "Wachtwoord",
+    "passwordHint": "Ten minste 8 tekens.",
+    "confirmation": "Wachtwoord bevestigen",
+    "passwordMissing": "Voer uw wachtwoord in.",
+    "createAccount": "Account aanmaken",
+    "signIn": "Inloggen",
+    "haveAccount": "Hebt u al een account? <signin>Inloggen</signin>",
+    "forgot": "Wachtwoord vergeten? Opnieuw instellen",
+    "newHere": "Nieuw hier? <signup>Gratis account aanmaken</signup>",
+    "signUpFailed": "Fout: het account aanmaken is niet gelukt.",
+    "signInFailed": "Fout: inloggen is niet gelukt."
+  },
+  "forgot": {
+    "heading": "Wachtwoord opnieuw instellen",
+    "checkInbox": "Kijk in uw inbox en in de map met ongewenste e-mail. Komt er niets aan, controleer dan het adres en vraag het opnieuw aan.",
+    "intro": "Voer het e-mailadres van uw account in, dan sturen we u een link om een nieuw wachtwoord te kiezen.",
+    "email": "E-mailadres:",
+    "send": "Resetlink versturen",
+    "back": "Terug naar inloggen",
+    "failed": "Fout: de resetmail kon niet worden verstuurd. Probeer het opnieuw."
+  },
+  "reset": {
+    "heading": "Nieuw wachtwoord kiezen",
+    "signIn": "Inloggen",
+    "incomplete": "Voor deze pagina is de link uit een e-mail om uw wachtwoord opnieuw in te stellen nodig, en deze link is onvolledig.",
+    "askAgain": "Nieuwe link aanvragen",
+    "password": "Nieuw wachtwoord:",
+    "confirmation": "Nieuw wachtwoord bevestigen:",
+    "save": "Nieuw wachtwoord opslaan",
+    "hint": "Ten minste 8 tekens. Elk apparaat dat bij het account is ingelogd, wordt uitgelogd.",
+    "failed": "Fout: het wachtwoord kon niet worden gewijzigd. Probeer het opnieuw."
+  },
+  "account": {
+    "trialTitle": "Uw proefperiode",
+    "trialLead": "U probeert Glazecalc als {name}.",
+    "keepHeading": "Uw werk bewaren",
+    "keepText": "Deze proefperiode en alles erin worden op {date} verwijderd. Maak een gratis account aan om ze te bewaren: uw recepten, grondstoffen en notities blijven precies zoals ze zijn, en {name} blijft uw weergavenaam.",
+    "createAccount": "Account aanmaken",
+    "title": "Uw account",
+    "signedInAs": "Ingelogd als {email}.",
+    "changeHeading": "Uw wachtwoord wijzigen",
+    "current": "Huidig wachtwoord",
+    "currentMissing": "Voer uw huidige wachtwoord in.",
+    "password": "Nieuw wachtwoord",
+    "passwordHint": "Ten minste 8 tekens. Andere apparaten die bij dit account zijn ingelogd, worden uitgelogd.",
+    "confirmation": "Nieuw wachtwoord bevestigen",
+    "change": "Wachtwoord wijzigen",
+    "changeFailed": "Fout: het wachtwoord kon niet worden gewijzigd. Probeer het opnieuw.",
+    "deleteHeading": "Uw account verwijderen",
+    "deleteText": "Hiermee worden uw account en alles wat u hebt opgeslagen verwijderd: recepten, grondstoffen, toevoegingen, notities, stookverslagen en adviezen. Dit kan niet ongedaan worden gemaakt.",
+    "deletePassword": "Uw wachtwoord, ter bevestiging",
+    "deletePasswordMissing": "Voer ter bevestiging uw wachtwoord in.",
+    "delete": "Mijn account verwijderen",
+    "deleteFailed": "Fout: het account kon niet worden verwijderd. Probeer het opnieuw."
+  },
+  "settings": {
+    "heading": "Instellingen",
+    "intro": "Opgeslagen bij uw account, dus ze gelden op elk apparaat.",
+    "saveFailed": "De instelling kon niet worden opgeslagen. Probeer het opnieuw.",
+    "language": {
+      "legend": "Taal",
+      "help": "De taal van de app, de gidsen en uw e-mails. Als u de taal wijzigt, wordt deze pagina in die taal geopend.",
+      "saved": "Opgeslagen: {language}."
+    },
+    "region": {
+      "legend": "Waar u werkt",
+      "none": {
+        "label": "Niet gekozen",
+        "saved": "Opgeslagen: geen regio gekozen; de standaardinstellingen volgen uw browser."
+      },
+      "saved": "Opgeslagen: {region}.",
+      "help": "De grondstoffen die daar worden verkocht, en de standaardinstellingen voor getallen, datums, temperaturen en kegels hieronder. Zolang u niets kiest, volgen ze de taal van uw browser."
+    },
+    "format": {
+      "legend": "Getallen en datums",
+      "auto": {
+        "label": "Zoals mijn taal en regio",
+        "saved": "Opgeslagen: getallen en datums zoals uw taal en regio ze schrijven."
+      },
+      "saved": "Opgeslagen: getallen en datums zoals in het {language}.",
+      "help": "Hoe getallen en datums worden geschreven: 12,345.6 of 12.345,6, en de volgorde van dag en maand."
+    },
+    "decimalMark": {
+      "legend": "Hoeveelheden invoeren",
+      "either": {
+        "label": "Komma of punt als decimaalteken",
+        "example": "12,5 of 12.5",
+        "saved": "Opgeslagen: hoeveelheden kunnen met een komma of een punt worden ingevoerd."
+      },
+      "comma": {
+        "label": "Komma als decimaalteken",
+        "saved": "Opgeslagen: hoeveelheden worden ingevoerd met een komma als decimaalteken."
+      },
+      "point": {
+        "label": "Punt als decimaalteken",
+        "saved": "Opgeslagen: hoeveelheden worden ingevoerd met een punt als decimaalteken."
+      },
+      "help": "Bij Komma of punt wordt een hoeveelheid zoals 1.250 gelezen zoals uw getallen hierboven worden geschreven."
+    },
+    "temperature": {
+      "legend": "Temperaturen",
+      "celsius": {
+        "label": "Celsius",
+        "saved": "Opgeslagen: temperaturen in °C."
+      },
+      "fahrenheit": {
+        "label": "Fahrenheit",
+        "saved": "Opgeslagen: temperaturen in °F."
+      },
+      "help": "Zolang u niets kiest, volgt dit uw regio: °F in de Verenigde Staten, °C elders."
+    },
+    "cones": {
+      "legend": "Stoken",
+      "orton": {
+        "label": "Volgens Ortonkegels",
+        "example": "kegel 04, kegel 6",
+        "saved": "Opgeslagen: stoken volgens Ortonkegels."
+      },
+      "temperature": {
+        "label": "Volgens temperatuur, zoals in het programma van een ovenregelaar",
+        "saved": "Opgeslagen: stoken volgens temperatuur."
+      },
+      "help": "Zolang u niets kiest, volgt dit uw regio: Ortonkegels in de Verenigde Staten, het Verenigd Koninkrijk, Ierland, Australië en Nieuw-Zeeland, temperatuur in de rest van Europa."
+    },
+    "density": {
+      "legend": "Dichtheid van het glazuur",
+      "sg": {
+        "label": "Soortelijk gewicht",
+        "saved": "Opgeslagen: dichtheid van het glazuur als soortelijk gewicht.",
+        "example": "1,45"
+      },
+      "baume": {
+        "label": "Graden Baumé, met een areometer",
+        "saved": "Opgeslagen: dichtheid van het glazuur in graden Baumé."
+      },
+      "pint": {
+        "label": "Pintgewicht, ounces per Engelse pint",
+        "saved": "Opgeslagen: dichtheid van het glazuur als pintgewicht."
+      },
+      "help": "Hoe de gidsen de dikte van een glazuur aangeven. Zolang u niets kiest, volgt dit uw regio: graden Baumé in Italië, soortelijk gewicht elders."
+    },
+    "theme": {
+      "legend": "Licht of donker",
+      "system": {
+        "label": "Zoals dit apparaat is ingesteld",
+        "saved": "Opgeslagen: licht of donker zoals elk apparaat is ingesteld."
+      },
+      "light": {
+        "label": "Licht",
+        "saved": "Opgeslagen: altijd licht."
+      },
+      "dark": {
+        "label": "Donker",
+        "saved": "Opgeslagen: altijd donker."
+      },
+      "help": "Afgedrukte recepten zijn altijd zwart op wit."
+    },
+    "palette": {
+      "legend": "Kleuren",
+      "saved": "Opgeslagen: knoppen en links in {palette}.",
+      "help": "Voor knoppen, links en tabbladen, genoemd naar glazuren. Elk kleurenschema is goed leesbaar in licht en in donker."
+    },
+    "weightUnit": {
+      "legend": "Afweeggewichten",
+      "grams": {
+        "label": "Gram",
+        "saved": "Opgeslagen: afweeggewichten in gram."
+      },
+      "pounds": {
+        "label": "lb en oz",
+        "saved": "Opgeslagen: afweeggewichten in Engelse ponden en ounces."
+      },
+      "help": "Voor afgedrukte afweeglijsten."
+    },
+    "gramPrecision": {
+      "legend": "Gram op afgedrukte afweeglijsten",
+      "single": {
+        "label": "Op een tiende gram",
+        "saved": "Opgeslagen: gram tot op een tiende."
+      },
+      "full": {
+        "label": "Volledige nauwkeurigheid",
+        "saved": "Opgeslagen: gram volledig, tot op 5 decimalen."
+      },
+      "help": "Bij Op een tiende gram tonen hoeveelheden onder 10 g toch honderdsten (2,35 g), voor kleurstoffen in kleine proefhoeveelheden."
+    },
+    "lead": {
+      "legend": "Lood",
+      "off": {
+        "label": "Uit: nooit lood aan een recept toevoegen of voorstellen",
+        "saved": "Opgeslagen: lood wordt nooit aan een recept toegevoegd of voorgesteld."
+      },
+      "on": {
+        "label": "Aan: grondstoffen met lood kunnen worden toegevoegd en voorgesteld",
+        "saved": "Opgeslagen: grondstoffen met lood kunnen worden toegevoegd en voorgesteld."
+      },
+      "help": "Lood is giftig bij inademen of inslikken en hoopt zich op in het lichaam, en een loodglazuur kan het afgeven aan eten en drinken; geen berekening kan zeggen of een gebakken stuk dat doet. Bij Uit openen recepten die al lood bevatten nog steeds zoals ze waren.",
+      "warning": "Gebruik lood alleen als fritte, nooit ongefrit als menie, loodwit, geel lood of loodglit. Meng het nat, spuit het nooit, draag een stofmasker en maak nat schoon. Houd werk met loodglazuur weg van eten en drinken, tenzij het gebakken stuk een migratietest in een laboratorium heeft doorstaan.",
+      "turnOn": "Lood inschakelen",
+      "keepOff": "Uit laten"
+    },
+    "englishTerms": {
+      "legend": "Engelse termen",
+      "off": {
+        "label": "Uit",
+        "saved": "Opgeslagen: geen Engelse termen."
+      },
+      "on": {
+        "label": "De Engelse term achter vaktermen tonen",
+        "saved": "Opgeslagen: de Engelse term wordt achter vaktermen getoond."
+      },
+      "help": "Om naast deze bron Engelse bronnen te lezen, zoals Digitalfire: vaktermen krijgen hun Engelse naam tussen haakjes."
+    },
+    "notice": {
+      "legend": "Vertalingsmelding",
+      "shown": {
+        "label": "Zichtbaar",
+        "saved": "Opgeslagen: de melding wordt getoond."
+      },
+      "hidden": {
+        "label": "Verborgen",
+        "saved": "Opgeslagen: de melding is verborgen. Eén regel ervan blijft staan in de veiligheidsgidsen."
+      },
+      "help": "De melding bovenaan elke pagina die zegt dat de pagina met AI is vertaald, met een manier om een correctie voor te stellen."
+    }
+  }
+}

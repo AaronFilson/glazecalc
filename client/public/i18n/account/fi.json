@@ -1,0 +1,237 @@
+{
+  "auth": {
+    "signInHeading": "Kirjautuminen",
+    "keepHeading": "Työn säilyttäminen",
+    "signUpHeading": "Tilin luominen",
+    "signInLead": "Tervetuloa takaisin lasitemuistikirjaan.",
+    "keepLead": "Säilytä kaikki nimellä {name} tehty: lisää sähköpostiosoite ja salasana. Käyttö pysyy ilmaisena.",
+    "signUpLead": "Ilmainen. Reseptit, raaka-aineet ja muistiinpanot pysyvät yksityisinä omalla tilillä.",
+    "trialNote": "Onko tili jo olemassa? Sisäänkirjautuminen siirtää nimellä {name} tehdyn työn tilille. Uusi käyttäjä? <signup>Luo tili</signup>, niin työ säilyy sen sijaan uudella tilillä.",
+    "email": "Sähköposti",
+    "password": "Salasana",
+    "passwordHint": "Vähintään 8 merkkiä.",
+    "confirmation": "Vahvista salasana",
+    "passwordMissing": "Anna salasana.",
+    "createAccount": "Luo tili",
+    "signIn": "Kirjaudu sisään",
+    "haveAccount": "Onko tili jo olemassa? <signin>Kirjaudu sisään</signin>",
+    "forgot": "Unohtuiko salasana? Palauta se",
+    "newHere": "Uusi käyttäjä? <signup>Luo ilmainen tili</signup>",
+    "signUpFailed": "Virhe: tilin luominen ei onnistunut.",
+    "signInFailed": "Virhe: kirjautuminen ei onnistunut."
+  },
+  "forgot": {
+    "heading": "Salasanan palauttaminen",
+    "checkInbox": "Tarkista saapuneet viestit ja roskapostikansio. Jos mitään ei tule, tarkista osoite ja pyydä uudelleen.",
+    "intro": "Anna tilin sähköpostiosoite, niin lähetämme linkin uuden salasanan valitsemiseen.",
+    "email": "Sähköposti:",
+    "send": "Lähetä palautuslinkki",
+    "back": "Takaisin kirjautumiseen",
+    "failed": "Virhe: palautusviestin lähettäminen ei onnistunut. Yritä uudelleen."
+  },
+  "reset": {
+    "heading": "Uusi salasana",
+    "signIn": "Kirjaudu sisään",
+    "incomplete": "Tämä sivu tarvitsee salasanan palautusviestin linkin, ja tämä linkki on puutteellinen.",
+    "askAgain": "Pyydä uusi linkki",
+    "password": "Uusi salasana:",
+    "confirmation": "Vahvista uusi salasana:",
+    "save": "Tallenna uusi salasana",
+    "hint": "Vähintään 8 merkkiä. Kaikki tilille kirjautuneet laitteet kirjataan ulos.",
+    "failed": "Virhe: salasanan vaihtaminen ei onnistunut. Yritä uudelleen."
+  },
+  "account": {
+    "trialTitle": "Kokeilu",
+    "trialLead": "Glazecalc on kokeilukäytössä nimellä {name}.",
+    "keepHeading": "Työn säilyttäminen",
+    "keepText": "Tämä kokeilu ja kaikki sen sisältö poistetaan {date}. Säilytä ne luomalla ilmainen tili: reseptit, raaka-aineet ja muistiinpanot pysyvät ennallaan, ja {name} säilyy näyttönimenä.",
+    "createAccount": "Luo tili",
+    "title": "Oma tili",
+    "signedInAs": "Kirjautuneena: {email}.",
+    "changeHeading": "Salasanan vaihtaminen",
+    "current": "Nykyinen salasana",
+    "currentMissing": "Anna nykyinen salasana.",
+    "password": "Uusi salasana",
+    "passwordHint": "Vähintään 8 merkkiä. Muut tilille kirjautuneet laitteet kirjataan ulos.",
+    "confirmation": "Vahvista uusi salasana",
+    "change": "Vaihda salasana",
+    "changeFailed": "Virhe: salasanan vaihtaminen ei onnistunut. Yritä uudelleen.",
+    "deleteHeading": "Tilin poistaminen",
+    "deleteText": "Tämä poistaa tilin ja kaiken tallennetun: reseptit, raaka-aineet, lisäaineet, muistiinpanot, polttopäiväkirjat ja neuvot. Toimintoa ei voi kumota.",
+    "deletePassword": "Salasana vahvistukseksi",
+    "deletePasswordMissing": "Anna salasana vahvistukseksi.",
+    "delete": "Poista tili",
+    "deleteFailed": "Virhe: tilin poistaminen ei onnistunut. Yritä uudelleen."
+  },
+  "settings": {
+    "heading": "Asetukset",
+    "intro": "Tallennetaan tilille, joten ne ovat voimassa kaikilla laitteilla.",
+    "saveFailed": "Asetusta ei voitu tallentaa. Yritä uudelleen.",
+    "language": {
+      "legend": "Kieli",
+      "help": "Sovelluksen, oppaiden ja sähköpostiviestien kieli. Kun kieli vaihdetaan, tämä sivu avautuu valitulla kielellä.",
+      "saved": "Tallennettu: {language}."
+    },
+    "region": {
+      "legend": "Oma alue",
+      "none": {
+        "label": "Ei valittu",
+        "saved": "Tallennettu: aluetta ei ole valittu; oletukset määräytyvät selaimen mukaan."
+      },
+      "saved": "Tallennettu: {region}.",
+      "help": "Siellä myytävät raaka-aineet sekä alla olevien lukujen, päivämäärien, lämpötilojen ja keilojen oletukset. Kunnes alue valitaan, ne määräytyvät selaimen kielen mukaan."
+    },
+    "format": {
+      "legend": "Luvut ja päivämäärät",
+      "auto": {
+        "label": "Kielen ja alueen mukaan",
+        "saved": "Tallennettu: luvut ja päivämäärät kirjoitetaan valitun kielen ja alueen tapaan."
+      },
+      "saved": "Tallennettu: luvut ja päivämäärät kirjoitetaan kielen {language} tapaan.",
+      "help": "Miten luvut ja päivämäärät kirjoitetaan: 12,345.6 tai 12.345,6, sekä päivän ja kuukauden järjestys."
+    },
+    "decimalMark": {
+      "legend": "Määrien kirjoittaminen",
+      "either": {
+        "label": "Desimaalipilkku tai -piste",
+        "example": "12,5 tai 12.5",
+        "saved": "Tallennettu: määrät voi kirjoittaa desimaalipilkulla tai -pisteellä."
+      },
+      "comma": {
+        "label": "Desimaalipilkku",
+        "saved": "Tallennettu: määrät kirjoitetaan desimaalipilkulla."
+      },
+      "point": {
+        "label": "Desimaalipiste",
+        "saved": "Tallennettu: määrät kirjoitetaan desimaalipisteellä."
+      },
+      "help": "Kun kumpi tahansa käy, esimerkiksi määrä 1.250 luetaan niin kuin luvut kirjoitetaan yllä valitussa muodossa."
+    },
+    "temperature": {
+      "legend": "Lämpötilat",
+      "celsius": {
+        "label": "Celsius",
+        "saved": "Tallennettu: lämpötilat yksikössä °C."
+      },
+      "fahrenheit": {
+        "label": "Fahrenheit",
+        "saved": "Tallennettu: lämpötilat yksikössä °F."
+      },
+      "help": "Kunnes valinta tehdään, tämä määräytyy alueen mukaan: Yhdysvalloissa °F, muualla °C."
+    },
+    "cones": {
+      "legend": "Poltto",
+      "orton": {
+        "label": "Orton-keiloina",
+        "example": "keila 04, keila 6",
+        "saved": "Tallennettu: poltto Orton-keiloina."
+      },
+      "temperature": {
+        "label": "Lämpötiloina, kuten uunin automatiikan ohjelmassa",
+        "saved": "Tallennettu: poltto lämpötiloina."
+      },
+      "help": "Kunnes valinta tehdään, tämä määräytyy alueen mukaan: Orton-keilat Yhdysvalloissa, Isossa-Britanniassa, Irlannissa, Australiassa ja Uudessa-Seelannissa, lämpötilat muualla Euroopassa."
+    },
+    "density": {
+      "legend": "Lasitteen tiheys",
+      "sg": {
+        "label": "Ominaispaino (litrapaino)",
+        "saved": "Tallennettu: lasitteen tiheys ominaispainona.",
+        "example": "1,45"
+      },
+      "baume": {
+        "label": "Baumé-asteet, Baumé-mittarilla",
+        "saved": "Tallennettu: lasitteen tiheys Baumé-asteina."
+      },
+      "pint": {
+        "label": "Pinttipaino, unssia brittiläisessä pintissä",
+        "saved": "Tallennettu: lasitteen tiheys pinttipainona."
+      },
+      "help": "Miten oppaat ilmoittavat lasitteen sakeuden. Kunnes valinta tehdään, tämä määräytyy alueen mukaan: Italiassa Baumé-asteet, muualla ominaispaino."
+    },
+    "theme": {
+      "legend": "Vaalea tai tumma",
+      "system": {
+        "label": "Laitteen asetuksen mukaan",
+        "saved": "Tallennettu: vaalea tai tumma kunkin laitteen asetuksen mukaan."
+      },
+      "light": {
+        "label": "Vaalea",
+        "saved": "Tallennettu: aina vaalea."
+      },
+      "dark": {
+        "label": "Tumma",
+        "saved": "Tallennettu: aina tumma."
+      },
+      "help": "Tulostetut reseptit ovat aina mustaa valkoisella."
+    },
+    "palette": {
+      "legend": "Värit",
+      "saved": "Tallennettu: {palette} painikkeille ja linkeille.",
+      "help": "Painikkeille, linkeille ja välilehdille, nimetty lasitteiden mukaan. Jokainen on helppo lukea sekä vaaleana että tummana."
+    },
+    "weightUnit": {
+      "legend": "Punnitusmäärät",
+      "grams": {
+        "label": "Grammat",
+        "saved": "Tallennettu: punnitusmäärät grammoina."
+      },
+      "pounds": {
+        "label": "Paunat ja unssit",
+        "saved": "Tallennettu: punnitusmäärät paunoina ja unsseina."
+      },
+      "help": "Tulostetuille punnituslistoille."
+    },
+    "gramPrecision": {
+      "legend": "Grammat tulosteissa",
+      "single": {
+        "label": "Gramman kymmenesosan tarkkuudella",
+        "saved": "Tallennettu: grammat kymmenesosan tarkkuudella."
+      },
+      "full": {
+        "label": "Täysi tarkkuus",
+        "saved": "Tallennettu: grammat näytetään täydellä tarkkuudella, 5 desimaaliin."
+      },
+      "help": "Kymmenesosan tarkkuudellakin alle 10 g:n määrät näytetään sadasosina (2,35 g) pienten koe-erien väriaineita varten."
+    },
+    "lead": {
+      "legend": "Lyijy",
+      "off": {
+        "label": "Pois: lyijyä ei koskaan lisätä reseptiin eikä ehdoteta",
+        "saved": "Tallennettu: lyijyä ei koskaan lisätä reseptiin eikä ehdoteta."
+      },
+      "on": {
+        "label": "Päällä: lyijyä sisältäviä raaka-aineita voidaan lisätä ja ehdottaa",
+        "saved": "Tallennettu: lyijyä sisältäviä raaka-aineita voidaan lisätä ja ehdottaa."
+      },
+      "help": "Lyijy on myrkyllistä hengitettynä tai nieltynä ja kertyy elimistöön, ja lyijylasitteesta voi siirtyä lyijyä ruokaan ja juomaan; mikään laskelma ei voi kertoa, siirtyykö sitä poltetusta esineestä. Kun asetus on Pois, reseptit, joissa on jo lyijyä, avautuvat edelleen ennallaan.",
+      "warning": "Käytä lyijyä vain frittinä, älä koskaan fritittämättömänä lyijymönjänä, lyijyvalkoisena, keltaisena lyijyoksidina tai lyijyglittinä. Sekoita lyijy märkänä, älä koskaan ruiskuta sitä, käytä hengityksensuojainta ja siivoa märkäpuhdistuksella. Pidä lyijylasitetut esineet erossa ruoasta ja juomasta, ellei poltettu esine ole läpäissyt metallien liukenemisen laboratoriotestiä.",
+      "turnOn": "Ota lyijy käyttöön",
+      "keepOff": "Pidä poissa käytöstä"
+    },
+    "englishTerms": {
+      "legend": "Englanninkieliset termit",
+      "off": {
+        "label": "Pois",
+        "saved": "Tallennettu: ei englanninkielisiä termejä."
+      },
+      "on": {
+        "label": "Näytä englanninkielinen termi keskeisten termien jälkeen",
+        "saved": "Tallennettu: englanninkielinen termi näytetään keskeisten termien jälkeen."
+      },
+      "help": "Englanninkielisten lähteiden (esimerkiksi Digitalfire) lukemiseen tämän rinnalla: keskeiset termit saavat englanninkielisen vastineensa sulkeisiin."
+    },
+    "notice": {
+      "legend": "Ilmoitus käännöksestä",
+      "shown": {
+        "label": "Näkyvissä",
+        "saved": "Tallennettu: ilmoitus näytetään."
+      },
+      "hidden": {
+        "label": "Piilotettu",
+        "saved": "Tallennettu: ilmoitus on piilotettu. Turvallisuusoppaissa siitä näkyy edelleen yksi rivi."
+      },
+      "help": "Jokaisen sivun yläreunan huomautus siitä, että sivu on käännetty tekoälyllä, ja mahdollisuus ehdottaa korjausta."
+    }
+  }
+}

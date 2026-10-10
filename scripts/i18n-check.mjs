@@ -36,7 +36,7 @@ const ROOT = path.resolve(import.meta.dirname, '..');
 const APP = path.join(ROOT, 'client', 'app');
 const I18N = path.join(ROOT, 'client', 'public', 'i18n');
 /** Scopes shown by code rather than by key, whose English comes from code (scripts/i18n-sources.mjs). */
-const FROM_CODE = ['server', 'chemistry', 'safety', 'records'];
+const FROM_CODE = ['server', 'chemistry', 'safety', 'regions', 'records'];
 /**
  * Messages whose figures show how numbers are written ("12,5 or 12.5"), not
  * values, so a language writes them its own way: left out of the numbers check.
@@ -379,7 +379,7 @@ export function guideMarks(markdown) {
     // A section still in English is marked {#id lang=en} (scripts/i18n-fingerprints.mjs).
     ids: all(/\{#[\w-]+(?: lang=en)?\}/g).map((id) => id.replace(' lang=en', '')),
     values: all(/\{\{(?!\s*en:)[^}]+\}\}/g),
-    marks: all(/^(?::::(?:orton|temperature)?|::poison-lines)$/gm)
+    marks: all(/^(?::::(?:orton|temperature)?|::(?:poison-lines|shops|silica-limit|food-limits|local-equivalents))$/gm)
   };
 }
 

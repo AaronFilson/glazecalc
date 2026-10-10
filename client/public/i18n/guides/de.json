@@ -52,11 +52,103 @@
     "animalsNone": "Tiere",
     "vet": "Rufen Sie Ihre Tierarztpraxis an.",
     "checkedOn": "Geprüft anhand von:",
-    "choosePrompt": "Wählen Sie Ihr Land, um zu sehen, wen Sie dort anrufen."
+    "choosePrompt": "Wählen Sie Ihr Land, um zu sehen, wen Sie dort anrufen.",
+    "ministry": "Die Seite des Gesundheitsministeriums: <link>{name}</link>."
   },
   "density": {
     "sg": "spez. Gewicht {value}",
     "baume": "{value} °Bé ({sg})",
     "pint": "{value} oz je britischem Pint ({sg})"
+  },
+  "shops": {
+    "shopsIn": "Händler in",
+    "label": "Händler: {region}",
+    "caption": "Einige Händler für Glasurrohstoffe: {region} (geprüft am {date})",
+    "nearbyCaption": "Händler in anderen Ländern, die nach eigener Angabe in dieses Land liefern: {region} (geprüft am {date})",
+    "shop": "Händler",
+    "sells": "Sortiment",
+    "packs": "Gefundene Packungsgrößen",
+    "seen": "Gefundene Rohstoffe, unter den Namen des Händlers",
+    "what": {
+      "materials": "Glasurrohstoffe",
+      "frits": "Fritten",
+      "oxides": "Oxide",
+      "stains": "Farbkörper",
+      "clays": "Ton",
+      "glazes": "fertige Glasuren",
+      "kilns": "Brennöfen"
+    },
+    "none": "{region}: Wir haben dort keinen Händler gefunden, der Glasurrohstoffe verkauft.",
+    "unknown": "{region}: Dort haben wir noch nicht nach Händlern gesucht.",
+    "choosePrompt": "Wählen Sie Ihr Land, um die Händler dort zu sehen."
+  },
+  "silica": {
+    "limitIn": "Grenzwert in",
+    "label": "Grenzwert für Quarzstaub: {region}",
+    "caption": "Arbeitsplatzgrenzwert für alveolengängigen Quarzstaub: {region}, als Mittelwert über 8 Stunden (geprüft am {date})",
+    "both": "Quarz und Cristobalit",
+    "quartz": "Quarz",
+    "cristobalite": "Cristobalit",
+    "actionLevel": "Auslösewert",
+    "value": "{value} mg/m³",
+    "kind": {
+      "binding": "Ein verbindlicher Grenzwert.",
+      "indicative": "Ein Richtgrenzwert: ein Orientierungswert, keine gesetzliche Obergrenze.",
+      "assessment": "Ein Beurteilungsmaßstab, kein verbindlicher Grenzwert."
+    },
+    "setBy": "Festgelegt in: <link>{law}</link>.",
+    "lowerThanEu": "Niedriger als der verbindliche Grenzwert der EU von {value} mg/m³.",
+    "sameAsEu": "Derselbe Wert wie der verbindliche Grenzwert der EU.",
+    "unknown": "{region}: Den nationalen Grenzwert konnten wir nicht bestätigen. Der verbindliche Grenzwert der EU von {value} mg/m³ gilt in jedem Mitgliedstaat.",
+    "noData": "{region}: Den dortigen Grenzwert haben wir noch nicht bestätigt.",
+    "agency": "Die nationale Stelle für Arbeitsschutz: <link>{name}</link>.",
+    "agencySilica": "Deren <link>Seite zu Quarzstaub</link>.",
+    "choosePrompt": "Wählen Sie Ihr Land, um den dortigen Grenzwert zu sehen."
+  },
+  "food": {
+    "rulesIn": "Vorschriften in",
+    "label": "Grenzwerte für Keramikgegenstände: {region}",
+    "caption": "Was ein gebranntes Stück bei der gesetzlichen Prüfung abgeben darf: {region} (geprüft am {date})",
+    "article": "Art des Gegenstands",
+    "lead": "Blei",
+    "cadmium": "Cadmium",
+    "category": {
+      "flat": "Nicht füllbare Gegenstände oder Gegenstände mit höchstens 25 mm Fülltiefe",
+      "fillable": "Andere füllbare Gegenstände",
+      "cooking": "Kochgeschirr jeder Größe sowie Verpackungs- und Lagerbehältnisse mit mehr als 3 L",
+      "rimBand": "Der Rand eines Trinkgefäßes: ein 2 cm breiter Streifen, innen und außen",
+      "rimArticle": "Der Rand eines Trinkgefäßes: ein 20 mm breiter Streifen außen am oberen Rand, je Gegenstand",
+      "flatware": "Flachware, höchstens 25 mm tief",
+      "smallHollow": "Kleine Hohlware unter 1,1 L, außer Tassen und Bechern",
+      "cups": "Tassen und Becher",
+      "largeHollow": "Große Hohlware ab 1,1 L, außer Krügen",
+      "pitchers": "Krüge",
+      "auSmall": "Tassen, Becher, Krüge, Schalen, Teekannen und anderes Tafelgeschirr unter 1100 mL",
+      "auLarge": "Wie oben, ab 1100 mL",
+      "auPlates": "Teller, Untertassen und ähnliches Tafelgeschirr",
+      "auCooking": "Kochgeschirr"
+    },
+    "judged": {
+      "average": "Mittelwert aus 6 Stücken",
+      "each": "jedes von 6 einzeln"
+    },
+    "euRules": "Hier gelten die Vorschriften der EU.",
+    "law": "Festgelegt in: <link>{law}</link>.",
+    "inForce": "In Kraft ab dem {date}.",
+    "unknown": "{region}: Die dortigen Vorschriften haben wir noch nicht bestätigt.",
+    "choosePrompt": "Wählen Sie Ihr Land, um die dortigen Vorschriften zu sehen."
+  },
+  "equivalents": {
+    "buyingIn": "Einkauf in",
+    "label": "{library, select, US {In den USA erhältliche Entsprechungen} UK {Im Vereinigten Königreich erhältliche Entsprechungen} EU {In der EU erhältliche Entsprechungen} other {In Australien und Neuseeland erhältliche Entsprechungen}}",
+    "caption": "{library, select, US {Rohstoffe, die in den USA nicht erhältlich sind, jeweils mit dem ähnlichsten, der dort erhältlich ist} UK {Rohstoffe, die im Vereinigten Königreich nicht erhältlich sind, jeweils mit dem ähnlichsten, der dort erhältlich ist} EU {Rohstoffe, die in der EU nicht erhältlich sind, jeweils mit dem ähnlichsten, der dort erhältlich ist} other {Rohstoffe, die in Australien und Neuseeland nicht erhältlich sind, jeweils mit dem ähnlichsten, der dort erhältlich ist}}",
+    "material": "Im Rezept",
+    "soldIn": "Erhältlich in",
+    "closest": "{library, select, US {Am ähnlichsten, in den USA erhältlich} UK {Am ähnlichsten, im Vereinigten Königreich erhältlich} EU {Am ähnlichsten, in der EU erhältlich} other {Am ähnlichsten, in Australien und Neuseeland erhältlich}}",
+    "apart": "weicht um {grams} g je 100 g ab",
+    "noneClose": "Nichts innerhalb von 15 g je 100 g: Vergleichen Sie anhand der Chemie.",
+    "loading": "Die Bibliothek wird geladen …",
+    "failed": "Die Bibliothek konnte nicht geladen werden. Versuchen Sie es später erneut.",
+    "choosePrompt": "Wählen Sie Ihr Land, um zu sehen, was dort erhältlich ist."
   }
 }

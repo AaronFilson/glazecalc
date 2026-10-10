@@ -85,6 +85,9 @@ jobs:
     timeout-minutes: 15
     env:
       APP_SECRET: ci-only-secret
+      # compose.yaml passes these to the app: emails go to its log, linking here.
+      MAIL_TRANSPORT: log
+      APP_URL: http://ci.example
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
@@ -110,6 +113,14 @@ jobs:
           count=$(curl -fsS http://127.0.0.1:3000/api/materials/getStandard | jq length)
           echo "standard materials: $count"
           test "$count" -eq "$(grep -c . data/materials.ndjson)"
+          # The email settings reach the app: a reset email goes out, linking to APP_URL.
+          curl -fsS -o /dev/null -X POST -H 'Content-Type: application/json' \
+            -d '{"email":"ci-check@test.com"}' http://127.0.0.1:3000/api/password/forgot
+          for _ in $(seq 1 10); do
+            docker compose logs app | grep -qF "$APP_URL/reset#token=" && break
+            sleep 1
+          done
+          docker compose logs app | grep -qF "$APP_URL/reset#token="
 
       - name: Show logs
         if: failure()

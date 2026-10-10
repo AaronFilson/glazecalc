@@ -1,6 +1,16 @@
 import { TestBed } from '@angular/core/testing';
 import { Material } from '../../core/models';
-import { answer, API, fieldProblem, httpMock, settle, testProviders, text } from '../../testing/test-providers';
+import { formatLocale } from '../../shared/format';
+import {
+  answer,
+  API,
+  fieldProblem,
+  httpMock,
+  settle,
+  skippedHeadings,
+  testProviders,
+  text
+} from '../../testing/test-providers';
 import { MaterialPage } from './material-page';
 
 describe('MaterialPage', () => {
@@ -43,12 +53,58 @@ describe('MaterialPage', () => {
     }
   };
 
+  it('says in the list when the standard materials could not be fetched, and asks again', async () => {
+    const fixture = TestBed.createComponent(MaterialPage);
+    await fixture.whenStable();
+    answer('/materials/getAll', []);
+    httpMock()
+      .expectOne(API + '/materials/getStandard')
+      .flush({}, { status: 503, statusText: 'Unavailable' });
+    await settle(fixture);
+    expect(text(fixture, '.standard-table tbody')).toBe('The list could not be fetched. Try again');
+    (fixture.nativeElement.querySelector('.standard-table tbody button') as HTMLButtonElement).click();
+    answer('/materials/getStandard', [
+      { _id: 's1', name: 'Whiting', percentmole: 'molecular', loi: 43.97, fields: [] }
+    ]);
+    await settle(fixture);
+    expect(text(fixture, '.standard-table tbody')).toContain('Whiting');
+  });
+
   it('lists the standard materials', async () => {
     const { fixture } = await create();
     const cells = [...fixture.nativeElement.querySelectorAll('table tbody tr:first-child td')].map((td: Element) =>
       td.textContent?.trim()
     );
     expect(cells).toEqual(['Whiting', '100.08', '56.08', 'Calcium carbonate', 'CaO : 1', 'CaCO₃']);
+  });
+
+  it("writes the weights and analyses the reader's way", async () => {
+    formatLocale.set('de-DE');
+    try {
+      const mine: Material = {
+        _id: 'm1',
+        name: 'My spar',
+        percentmole: 'percent',
+        loi: 0.5,
+        equivalent: 556.8,
+        formulaweight: 554.02,
+        fields: [{ name: 'SiO2', amount: '68.5' }]
+      };
+      const { fixture } = await create([mine]);
+      const row = (table: string) =>
+        [...fixture.nativeElement.querySelectorAll(table + ' tbody tr:first-child td')].map((td: Element) =>
+          td.textContent?.trim()
+        );
+      expect(row('.standard-table').slice(1, 3)).toEqual(['100,08', '56,08']);
+      expect(row('[aria-labelledby="my-materials-heading"]').slice(1, 5)).toEqual([
+        '556,8',
+        '554,02',
+        '',
+        'SiO₂ 68,5%'
+      ]);
+    } finally {
+      formatLocale.set('en');
+    }
   });
 
   it('shows formulas typed with plain numbers with subscripts', async () => {
@@ -69,6 +125,8 @@ describe('MaterialPage', () => {
     ) as HTMLElement;
     expect(row.textContent).toContain('CaO : 3; P₂O₅ : 1');
     expect(row.textContent).toContain('Ca₃(PO₄)₂');
+    // New, mine and the standard ones are each a part of the page under its title.
+    expect(skippedHeadings(fixture)).toEqual([]);
 
     // And the oxides chosen for a new material.
     page['form'].selectedOxide.set('Al2O3');
@@ -98,6 +156,46 @@ describe('MaterialPage', () => {
     expect(page['form'].name()).toBe('');
     expect(page['form'].formula()).toEqual([]);
     expect(text(fixture, '#my-materials-heading')).toBe('My materials:');
+  });
+
+  it("takes numbers typed the reader's way, and saves them plainly", async () => {
+    formatLocale.set('de-DE');
+    try {
+      const { fixture, page } = await create();
+      const type = async (id: string, value: string) => {
+        const input = fixture.nativeElement.querySelector('#' + id) as HTMLInputElement;
+        input.value = value;
+        input.dispatchEvent(new Event('input'));
+        await fixture.whenStable();
+      };
+      page['form'].name.set('My spar');
+      page['form'].percentmole.set('percent');
+      for (const oxide of ['SiO2', 'Al2O3']) {
+        page['form'].selectedOxide.set(oxide);
+        page['form'].addOxide();
+      }
+      await fixture.whenStable();
+      await type('LOI', '0,5');
+      await type('oxide-amount-0', '80,5');
+      await type('oxide-amount-1', '19');
+      const saving = page['save']();
+      const req = httpMock().expectOne(API + '/materials/create');
+      expect(req.request.body.loi).toBe(0.5);
+      expect(req.request.body.fields.map((field: { amount: string }) => field.amount)).toEqual(['80.5', '19']);
+      req.flush({ ...req.request.body, _id: 'm1' });
+      await saving;
+
+      // Not a number, by the number parser's rules: marked, with an example the reader's way.
+      enterTalc(page);
+      await fixture.whenStable();
+      await type('LOI', '1e3');
+      await page['save']();
+      await fixture.whenStable();
+      httpMock().expectNone(API + '/materials/create');
+      expect(fieldProblem(fixture, 'LOI')).toBe('Enter the LOI as a percent from 0 to under 100, such as 12,5.');
+    } finally {
+      formatLocale.set('en');
+    }
   });
 
   it('works out the LOI from the molecular weight when no LOI is given', async () => {

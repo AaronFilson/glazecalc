@@ -18,5 +18,6 @@
   "unknown-element": "Unbekanntes Element {element} in {formula}",
   "bad-formula": "Die Formel {formula} konnte nicht gelesen werden",
   "analysis-total": "Die Analyse von {material} ergibt zusammen {total} % einschließlich Glühverlust; erwartet sind etwa 100 %.",
-  "stored-equivalent": "Das gespeicherte Äquivalentgewicht von {material} passt nicht zu seiner Formel und seinem Glühverlust; stattdessen wurden die Formel und der Glühverlust verwendet."
+  "stored-equivalent": "Das gespeicherte Äquivalentgewicht von {material} passt nicht zu seiner Formel und seinem Glühverlust; stattdessen wurden die Formel und der Glühverlust verwendet.",
+  "trace-flux": "Das Rezept enthält nur Spuren von Flussmitteloxiden, daher ist die Segerformel (UMF) nicht aussagekräftig."
 }

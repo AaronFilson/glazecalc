@@ -60,6 +60,17 @@ describe('account emails', () => {
     expect(changed!.text).to.include('/pt-PT/forgot');
   });
 
+  it('should keep emails in the order they were sent, even within a millisecond', async () => {
+    const mailer = await import('../lib/mailer.ts');
+    const mail = await import('./support/mail.ts');
+    const address = 'order-' + Date.now() + '@test.com';
+    const subjects = [...Array(20).keys()].map((i) => 'Message ' + i);
+    // Started together, so they share a millisecond however fast the disk is.
+    await Promise.all(subjects.map((subject) => mailer.send({ to: address, subject, text: '' })));
+    const sent = await mail.waitFor(address, subjects.length);
+    expect(sent.map((message) => message.subject)).to.eql(subjects);
+  });
+
   it('should give every translation the values and signature of the English', async () => {
     const { RESET, CHANGED } = await import('../lib/account_mail.ts');
     const values = (text: string) => [...text.matchAll(/\{(\w+)\}/g)].map((match) => match[1]).sort();

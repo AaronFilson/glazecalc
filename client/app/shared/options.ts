@@ -1,6 +1,7 @@
 import { translate } from '@jsverse/transloco';
 import { marker } from '@jsverse/transloco-keys-manager/marker';
 import { MaterialField, formatFormula } from '../../../lib/chemistry';
+import { formatPlain } from './format';
 
 export interface Option {
   value: string;
@@ -183,13 +184,14 @@ export function firingFieldLabel(field: string): string {
 }
 
 /**
- * A material's or additive's oxides as stored: "SiO₂ 68.5%, Al₂O₃ 17%" for a
- * weight-percent analysis, "CaO : 1; MgO : 1" for a molar formula.
+ * A material's or additive's oxides as stored, with numbers the reader's way:
+ * "SiO₂ 68.5%, Al₂O₃ 17%" (or "SiO₂ 68,5%") for a weight-percent analysis,
+ * "CaO : 1; MgO : 1" for a molar formula.
  */
 export function fieldsText(record: { fields: MaterialField[]; percentmole?: string }): string {
   return record.percentmole === 'percent'
-    ? record.fields.map((field) => formatFormula(field.name) + ' ' + field.amount + '%').join(', ')
-    : record.fields.map((field) => formatFormula(field.name) + ' : ' + field.amount).join('; ');
+    ? record.fields.map((field) => formatFormula(field.name) + ' ' + formatPlain(field.amount) + '%').join(', ')
+    : record.fields.map((field) => formatFormula(field.name) + ' : ' + formatPlain(field.amount)).join('; ');
 }
 
 /** First entry of a value the server stores as a list but may return as text. */

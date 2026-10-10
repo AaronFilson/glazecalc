@@ -1,6 +1,7 @@
 import { translate } from '@jsverse/transloco';
-import { MOLAR_MASS, MaterialInput, expansion, formatFormula, materialWeights } from '../../../../lib/chemistry';
+import { MaterialInput, expansion, formatFormula } from '../../../../lib/chemistry';
 import { LibraryInfo, Material, RecipeAnalysis, RecipeMaterial } from '../../core/models';
+import { LIKE_FOR_LIKE_GRAMS, gramsApart } from '../../shared/alike';
 import { hasLead, inRegion, statusText } from '../../shared/library-info';
 import { UNITY_TITLES, silicaAluminaRatio, unityColumnOf } from './unity-formula';
 import { fixed } from '../../shared/format';
@@ -97,21 +98,6 @@ export interface Swap {
   lead: boolean;
 }
 
-/** Fired oxides per gram of the raw material, or null when it has no chemistry the app can read. */
-function oxidesPerGram(material: MaterialInput): Record<string, number> | null {
-  try {
-    const { unity, equivalent } = materialWeights(material);
-    return Object.fromEntries(
-      Object.entries(unity).map(([oxide, moles]) => [oxide, (moles * MOLAR_MASS[oxide]) / equivalent])
-    );
-  } catch {
-    return null;
-  }
-}
-
-/** Grams of oxides two materials may differ by, per 100 g, and still swap one for one. */
-const LIKE_FOR_LIKE_GRAMS = 15;
-
 /**
  * Whether one material can stand in for another gram for gram: their fired
  * oxides per 100 g of raw material differ by 15 g or less in all. Custer Spar
@@ -119,15 +105,19 @@ const LIKE_FOR_LIKE_GRAMS = 15;
  * lead frit, do not, so their amounts need working out again.
  */
 export function likeForLike(a: MaterialInput, b: MaterialInput): boolean {
-  const [x, y] = [oxidesPerGram(a), oxidesPerGram(b)];
   // Without oxides to compare, nothing says they are alike.
-  if (!x || !y || !Object.keys(x).length || !Object.keys(y).length) return false;
-  const oxides = new Set([...Object.keys(x), ...Object.keys(y)]);
-  const grams = [...oxides].reduce((sum, oxide) => sum + Math.abs((x[oxide] ?? 0) - (y[oxide] ?? 0)), 0) * 100;
-  return grams <= LIKE_FOR_LIKE_GRAMS;
+  const grams = gramsApart(a, b);
+  return grams !== null && grams <= LIKE_FOR_LIKE_GRAMS;
 }
 
 export type LibraryMaterial = Material & LibraryInfo;
+
+/** An old colorant among the materials whose substitute is an additive (Potassium Bichromate's Chromium Oxide). */
+export interface ColorantSwap {
+  from: string;
+  status: string;
+  to: string;
+}
 
 /**
  * The recipe's materials with each one that is no longer current (discontinued,
@@ -135,27 +125,42 @@ export type LibraryMaterial = Material & LibraryInfo;
  * first substitute the library gives for it: one sold in `region` if there is
  * one. `find` looks a material up by name or other name. Swaps are a starting
  * point; amounts may need adjusting to bring the unity formula back.
+ *
+ * An old colorant whose substitute is among the additives (`findAdditive`)
+ * stays as it is, and is listed in `colorants` for the potter to move.
  */
 export function modernMaterials(
   materials: RecipeMaterial[],
   find: (name: string) => LibraryMaterial | undefined,
   region = '',
-  { allowLead = true }: { allowLead?: boolean } = {}
-): { materials: RecipeMaterial[]; swaps: Swap[] } {
+  {
+    allowLead = true,
+    findAdditive
+  }: { allowLead?: boolean; findAdditive?: (name: string) => (LibraryInfo & { name: string }) | undefined } = {}
+): { materials: RecipeMaterial[]; swaps: Swap[]; colorants: ColorantSwap[] } {
   const swaps: Swap[] = [];
+  const colorants: ColorantSwap[] = [];
+  const current = (record: LibraryInfo | undefined) => !!record && (!record.status || record.status === 'current');
   const modern = materials.map((material) => {
     const record = find(material.name);
     if (!record?.status || record.status === 'current' || !record.substitutes?.length) return material;
     const substitutes = record.substitutes
       .map((name) => find(name))
-      .filter((sub): sub is LibraryMaterial => !!sub && (!sub.status || sub.status === 'current'))
+      .filter((sub): sub is LibraryMaterial => current(sub))
       // With lead off, only a substitute without lead.
       .filter((sub) => allowLead || !hasLead(sub));
     const substitute =
       substitutes.find((sub) => region && sub.region?.includes(region)) ??
       substitutes.find((sub) => inRegion(sub, region)) ??
       substitutes[0];
-    if (!substitute) return material;
+    if (!substitute) {
+      const additive =
+        record.category === 'colorant'
+          ? record.substitutes.map((name) => findAdditive?.(name)).find(current)
+          : undefined;
+      if (additive) colorants.push({ from: material.name, status: statusText(record), to: additive.name });
+      return material;
+    }
     swaps.push({
       from: material.name,
       status: statusText(record),
@@ -165,7 +170,7 @@ export function modernMaterials(
     });
     return { ...structuredClone(substitute), amount: material.amount };
   });
-  return { materials: mergeSameMaterials(modern), swaps };
+  return { materials: mergeSameMaterials(modern), swaps, colorants };
 }
 
 /**

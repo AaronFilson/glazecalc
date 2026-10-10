@@ -86,6 +86,11 @@ export class ChemistryForm {
     this.checks.recheck('oxide');
   }
 
+  /** An oxide's amount as typed: a plain number ("0.5"), or the text, for its check (shared/number-input.ts). */
+  setAmount(index: number, amount: string): void {
+    this.formula.update((lines) => lines.map((line, i) => (i === index ? { ...line, amount } : line)));
+  }
+
   removeOxide(index: number): void {
     // The amounts after it move up a place, so their marks would be on the wrong lines.
     this.formula().forEach((_, i) => this.checks.clear('amount-' + i));

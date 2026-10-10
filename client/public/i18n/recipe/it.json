@@ -31,6 +31,7 @@
     "scale": "Ricalcola",
     "swapLike": "<b>{from}</b> ({status}): {to} può prenderne il posto, grammo per grammo.",
     "swapNotLike": "<b>{from}</b> ({status}): oggi si usa {to}, ma non è un sostituto alla pari: ricalcolarne la quantità.",
+    "swapColorant": "<b>{from}</b> ({status}): oggi si usa {to}, tra «Coloranti e additivi». Aggiungere {to} lì al suo posto e ricalcolarne la quantità.",
     "stillLead": "{name} contiene ancora piombo.",
     "tryModern": "Prova i materiali attuali e confronta",
     "suggestAmounts": "Suggerisci le quantità e confronta",
@@ -62,6 +63,8 @@
     "addRecipeToShelf": "Aggiungi i materiali di questa ricetta",
     "shelfTriesIntro": "I materiali disponibili. Selezionare Obbligatorio per includerne uno in ogni caso nell’adattamento.",
     "gettingShelf": "Caricamento dei materiali disponibili...",
+    "shelfTryAgain": "Riprova",
+    "shelfLeadHidden": "{count, plural, one {# materiale con piombo non viene usato: il piombo è disattivato in <settings>Impostazioni</settings>.} many {# materiali con piombo non vengono usati: il piombo è disattivato in <settings>Impostazioni</settings>.} other {# materiali con piombo non vengono usati: il piombo è disattivato in <settings>Impostazioni</settings>.}}",
     "matchAndCompare": "Adatta e confronta",
     "swapped": "Sostituiti con materiali attuali, in una nuova ricetta non ancora salvata.",
     "undoSwap": "Annulla la sostituzione",
@@ -169,7 +172,7 @@
   "analysis": {
     "oldCopy": "{name} è stato salvato da una versione precedente di Glazecalc, senza la sua perdita al fuoco (P.F.), quindi è escluso. Aggiungerlo di nuovo alla ricetta per conteggiarlo.",
     "noAnalysis": "{name} non ha un’analisi degli ossidi utilizzabile dalla formula di Seger, quindi è escluso.",
-    "parts": "{amount} {amount, plural, =1 {parte} one {parte} many {parti} other {parti}}"
+    "parts": "{amount} {count, plural, =1 {parte} one {parte} many {parti} other {parti}}"
   },
   "library": {
     "which": "{noun, select, additives {Quali additivi} other {Quali materiali}}",
@@ -387,7 +390,7 @@
     "whitingProbably": "Con un {percent}% probabilmente darà puntinatura o bollitura e risulterà secco, opaco o gessoso.",
     "whitingTends": "Con un {percent}% tende a dare puntinatura o bollitura e a risultare secco, opaco o gessoso.",
     "whitingFix": "Il calcio da una fritta o dalla wollastonite evita entrambi i problemi. (Il 5% è una linea guida di questa app; non esiste un limite pubblicato.)",
-    "fluorine": "La fluorite e la criolite liberano fluoro durante la cottura. Aerare bene il forno, oppure prendere il calcio o il sodio da una fritta o dalla wollastonite.",
+    "fluorine": "{name} libera fluoro durante la cottura. Aerare bene il forno, oppure usare al suo posto un materiale senza fluoro.",
     "clayLowWas": "Questa ricetta ha solo un {clay}% di argilla cruda; la vecchia ricetta ne aveva un {was}%.",
     "clayLow": "Questa ricetta ha solo un {clay}% di argilla cruda.",
     "clayNoneWas": "Questa ricetta non ha argilla cruda; la vecchia ricetta ne aveva un {was}%.",

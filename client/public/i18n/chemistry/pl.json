@@ -18,5 +18,6 @@
   "unknown-element": "Nieznany pierwiastek {element} we wzorze {formula}",
   "bad-formula": "Nie udało się odczytać wzoru {formula}",
   "analysis-total": "Skład chemiczny surowca {material} sumuje się do {total} % łącznie z LOI; oczekiwano około 100 %.",
-  "stored-equivalent": "Zapisana masa równoważnikowa surowca {material} nie zgadza się z jego wzorem i LOI; zamiast niej użyto wzoru i LOI."
+  "stored-equivalent": "Zapisana masa równoważnikowa surowca {material} nie zgadza się z jego wzorem i LOI; zamiast niej użyto wzoru i LOI.",
+  "trace-flux": "Receptura zawiera tylko śladowe ilości tlenków będących topnikami, więc wzór Segera (UMF) nie jest miarodajny."
 }

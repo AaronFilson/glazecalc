@@ -1,9 +1,21 @@
-import { Type } from '@angular/core';
-import { TestBed } from '@angular/core/testing';
-import { Router } from '@angular/router';
+import { Location } from '@angular/common';
+import { Component, Type } from '@angular/core';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { NavigationEnd, Router, provideRouter } from '@angular/router';
+import { filter, firstValueFrom } from 'rxjs';
+import type { MockInstance } from 'vitest';
 import { App } from '../app';
 import { AuthService } from '../core/auth.service';
-import { answer, API, fieldProblem, httpMock, settle, testProviders, text } from '../testing/test-providers';
+import {
+  answer,
+  API,
+  fieldProblem,
+  httpMock,
+  settle,
+  skippedHeadings,
+  testProviders,
+  text
+} from '../testing/test-providers';
 import { AboutPage } from './about/about-page';
 import { AdditivePage } from './additive/additive-page';
 import { AdvicePage } from './advice/advice-page';
@@ -133,6 +145,9 @@ describe('AdditivePage', () => {
     await saving;
     expect(page['myAdditives']().map((a: { name: string }) => a.name)).toEqual(['My Stain']);
     expect(form.name()).toBe('');
+    // New, mine and the standard ones are each a part of the page under its title.
+    await fixture.whenStable();
+    expect(skippedHeadings(fixture)).toEqual([]);
 
     const removing = page['removal'].remove(page['myAdditives']()[0]);
     httpMock()
@@ -192,10 +207,12 @@ describe('NotesPage', () => {
   it('saves notes as general notes', async () => {
     const { fixture, page } = await create(NotesPage);
     answer('/notes/getAll', [
-      { _id: 'n0', title: 'Old', content: 'kept', relatedCollection: 'Notes', relatedId: 'general notes' }
+      { _id: 'n0', title: 'Old', content: '1. Sieve\n2. Wax', relatedCollection: 'Notes', relatedId: 'general notes' }
     ]);
     await settle(fixture);
-    expect(text(fixture, '.my-notes')).toContain('kept');
+    // Shown with its line breaks (.keep-lines in styles.scss).
+    expect(fixture.nativeElement.querySelector('.my-notes .keep-lines').textContent).toBe('1. Sieve\n2. Wax');
+    expect(skippedHeadings(fixture)).toEqual([]);
 
     page['title'].set('Kiln');
     page['content'].set('Element 3 is weak');
@@ -239,14 +256,24 @@ describe('App', () => {
     ]);
     expect(text(fixture, '.account-email')).toBe('a@b.com');
 
-    (fixture.nativeElement.querySelector('.nav-account button') as HTMLButtonElement).click();
+    // A page with changes not saved can keep the visitor (core/leave.guard.ts): then nothing happens.
+    navigate.mockResolvedValueOnce(false);
+    const signOut = () => (fixture.nativeElement.querySelector('.nav-account button') as HTMLButtonElement).click();
+    signOut();
+    await settle(fixture);
+    httpMock().expectNone(API + '/signout');
+    expect(TestBed.inject(AuthService).hasSession()).toBe(true);
+
+    // The page is left first, then the session ends.
+    signOut();
+    await settle(fixture);
     httpMock()
       .expectOne({ method: 'POST', url: API + '/signout' })
       .flush({ msg: 'Signed out' });
     await fixture.whenStable();
     expect(TestBed.inject(AuthService).hasSession()).toBe(false);
     expect(navLinks(fixture)).toEqual(['Guides', 'Advice', 'About']);
-    expect(navigate).toHaveBeenCalledWith('/signin');
+    expect(navigate).toHaveBeenCalledWith('/signin', { onSameUrlNavigation: 'reload' });
   });
 
   it('opens and closes the phone menu', async () => {
@@ -280,5 +307,73 @@ describe('App', () => {
     link.dispatchEvent(click);
     expect(click.defaultPrevented).toBe(true);
     expect(document.activeElement).toBe(fixture.nativeElement.querySelector('main#main'));
+  });
+
+  describe('moving to another page', () => {
+    @Component({ template: '<h1>First</h1>' })
+    class First {}
+    @Component({ template: '<h1>Second</h1><p>Text</p><h2 id="part" tabindex="-1">Part</h2>' })
+    class Second {}
+
+    const open = async (url: string) => {
+      await TestBed.inject(Router).navigateByUrl(url);
+      await settle(fixture);
+    };
+    let fixture: ComponentFixture<App>;
+    let scrollTo: MockInstance<typeof window.scrollTo>;
+    beforeEach(async () => {
+      TestBed.resetTestingModule();
+      TestBed.configureTestingModule({
+        providers: [
+          ...testProviders(),
+          provideRouter([
+            { path: 'first', component: First },
+            { path: 'second', component: Second }
+          ])
+        ]
+      });
+      scrollTo = vi.spyOn(window, 'scrollTo').mockImplementation(() => undefined);
+      // Back and forward, as the app's start sets them up.
+      TestBed.inject(Router).setUpLocationChangeListener();
+      ({ fixture } = await create(App));
+      await open('/first');
+    });
+    afterEach(() => scrollTo.mockRestore());
+    const focused = () => document.activeElement?.textContent;
+
+    it('opens it at its top, with the focus on its heading, as a page loads', async () => {
+      // Not the first page, which the browser opens.
+      expect(scrollTo).not.toHaveBeenCalled();
+      expect(document.activeElement).toBe(document.body);
+      await open('/second');
+      expect(scrollTo).toHaveBeenCalledWith({ top: 0, left: 0, behavior: 'instant' });
+      expect(focused()).toBe('Second');
+      expect(document.activeElement?.getAttribute('tabindex')).toBe('-1');
+    });
+
+    it('opens it at the section its address names, with the focus there', async () => {
+      await open('/second#part');
+      // The router scrolls to the section (app.config.ts).
+      expect(scrollTo).not.toHaveBeenCalled();
+      expect(focused()).toBe('Part');
+    });
+
+    it('leaves the scroll position to the browser on back and forward', async () => {
+      await open('/second');
+      scrollTo.mockClear();
+      const router = TestBed.inject(Router);
+      const back = firstValueFrom(router.events.pipe(filter((event) => event instanceof NavigationEnd)));
+      TestBed.inject(Location).back();
+      expect((await back).url).toBe('/first');
+      await settle(fixture);
+      expect(focused()).toBe('First');
+      expect(scrollTo).not.toHaveBeenCalled();
+    });
+
+    it('leaves the page as it is when only its query changes (the recipe’s print view places the focus itself)', async () => {
+      await open('/first?print=draft');
+      expect(scrollTo).not.toHaveBeenCalled();
+      expect(document.activeElement).toBe(document.body);
+    });
   });
 });

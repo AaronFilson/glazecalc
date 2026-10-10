@@ -48,6 +48,45 @@ test('a right-to-left page mirrors its layout, and its links stay in the languag
   await expect(html).toHaveAttribute('dir', 'rtl');
 });
 
+test('a right-to-left guide keeps its gaps beside the rules and in its tables, on the mirrored side', async ({
+  page
+}) => {
+  await page.goto('/ar-XB/guides/firing');
+  await expect(page.locator('html')).toHaveAttribute('dir', 'rtl');
+  // The rule is on the right, and the text keeps its distance from it.
+  const callout = page.locator('.guide-callout').first();
+  await expect(callout).toHaveCSS('padding-right', '12px');
+  await expect(callout).toHaveCSS('padding-left', '0px');
+  const cell = page.locator('.guide-table td').first();
+  await expect(cell).toHaveCSS('padding-left', '12px');
+  await expect(cell).toHaveCSS('padding-right', '0px');
+});
+
+test('a guide links its sections at its own address, in its language, and a new page opens at its top', async ({
+  page
+}) => {
+  await page.goto('/de/guides/firing');
+  const section = page.locator('.guide h2').nth(1);
+  const id = await section.getAttribute('id');
+  const link = page.locator('.guide-contents a').nth(1);
+  // Copied, shared or opened in a new tab, it is this section of the German guide.
+  await expect(link).toHaveAttribute('href', '/de/guides/firing#' + id);
+  await link.click();
+  await expect(section).toBeFocused();
+  await expect(page).toHaveURL(new RegExp('/de/guides/firing#' + id + '$'));
+  // Opened at that address, the guide shows the section.
+  await page.goto('/de/guides');
+  await page.goto('/de/guides/firing#' + id);
+  await expect(section).toBeInViewport();
+  // A link to another guide, far down the page: it opens at its top, with the focus on its title.
+  const other = page.locator('.guide a[href="/de/guides/safe-mixing"]').first();
+  await other.scrollIntoViewIfNeeded();
+  await other.click();
+  await expect(page).toHaveURL(/\/de\/guides\/safe-mixing$/);
+  await expect(page.locator('h1')).toBeFocused();
+  expect(await page.evaluate(() => globalThis.scrollY)).toBe(0);
+});
+
 test('the pseudo-locale accents every message, which shows any left unmarked', async ({ page }) => {
   await page.goto('/en-XA/about');
   await expect(page.locator('html')).toHaveAttribute('lang', 'en-XA');

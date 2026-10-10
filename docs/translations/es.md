@@ -409,6 +409,37 @@ them exactly. INSST is Spain's occupational-safety institute.
 | Trash                                                                                  | Papelera                                                                                            |                                                                                                                                                                                                                      |
 | Remove (Yes, remove), Delete my account                                                | Quitar (Sí, quitar), Eliminar mi cuenta                                                             | _Quitar_ a record, _eliminar_ the account. "This can't be undone.": _No se puede deshacer._                                                                                                                          |
 
+### 2.9 Where the potter works
+
+Terms of the region parts of the guides (shops, the silica limit, food-contact rules, materials sold nearby), as
+the reviewed translation uses them. Names of shops, laws and agencies stay as they are written there.
+
+| English                                                               | Español                                                                          | Where                                         |
+| --------------------------------------------------------------------- | -------------------------------------------------------------------------------- | --------------------------------------------- |
+| Shops in (the label before a list of countries)                       | Tiendas en                                                                       | guides: shops.shopsIn                         |
+| raw glaze materials (what a shop sells)                               | materias primas para esmaltes                                                    | guides: shops.what.materials                  |
+| ready-made glazes                                                     | esmaltes ya preparados                                                           | guides: shops.what.glazes                     |
+| Packs seen                                                            | Formatos vistos                                                                  | guides: shops.packs                           |
+| A binding limit.                                                      | Un límite vinculante.                                                            | guides: silica.kind.binding                   |
+| An indicative limit: a guide value, not a legal ceiling.              | Un límite indicativo: un valor orientativo, no un máximo legal.                  | guides: silica.kind.indicative                |
+| An assessment criterion, not a binding limit. (Germany)               | Un criterio de evaluación, no un límite vinculante.                              | guides: silica.kind.assessment                |
+| action level (US)                                                     | Nivel de acción                                                                  | guides: silica.actionLevel                    |
+| quartz and cristobalite                                               | Cuarzo y cristobalita                                                            | guides: silica.both                           |
+| The national body for safety at work: <link>{name}</link>.            | El organismo nacional de seguridad en el trabajo: <link>{name}</link>.           | guides: silica.agency                         |
+| Kind of piece (food-contact rules)                                    | Tipo de pieza                                                                    | guides: food.article                          |
+| pieces that cannot be filled, or no deeper than 25 mm                 | Piezas que no se pueden llenar, o de no más de 25 mm de profundidad              | guides: food.category.flat                    |
+| other pieces that can be filled                                       | Las demás piezas que se pueden llenar                                            | guides: food.category.fillable                |
+| cooking ware                                                          | Recipientes para cocinar                                                         | guides: food.category.auCooking               |
+| The rim of a piece for drinking from: a 2 cm band, inside and out     | El borde de un recipiente para beber: una franja de 2 cm, por dentro y por fuera | guides: food.category.rimBand                 |
+| Flatware, no deeper than 25 mm (US)                                   | Piezas planas, de no más de 25 mm de profundidad                                 | guides: food.category.flatware                |
+| Small hollowware, under 1.1 L, other than cups and mugs (US)          | Piezas huecas pequeñas, de menos de 1,1 L, salvo tazas y tazones                 | guides: food.category.smallHollow             |
+| Large hollowware, 1.1 L or more, other than pitchers (US)             | Piezas huecas grandes, de 1,1 L o más, salvo jarras                              | guides: food.category.largeHollow             |
+| average of 6 pieces / any one of 6                                    | media de 6 piezas / cualquiera de 6 piezas                                       | guides: food.judged.average, food.judged.each |
+| Buying in (the label before a list of countries)                      | Compras en                                                                       | guides: equivalents.buyingIn                  |
+| differs by {grams} g per 100 g                                        | difiere en {grams} g por cada 100 g                                              | guides: equivalents.apart                     |
+| Directive 84/500/EEC (its official name)                              | Directiva 84/500/CEE (modificada por la Directiva 2005/31/CE)                    | regions: the directive                        |
+| Latvia's law gives this limit for the inhalable fraction of the dust. | La ley de Letonia fija este límite para la fracción inhalable del polvo.         | regions: Latvia                               |
+
 ## 3. Never translated
 
 Everything in terms.md's list, in Spanish text exactly as there:

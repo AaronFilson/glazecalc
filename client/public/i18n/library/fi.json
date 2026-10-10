@@ -1,0 +1,50 @@
+{
+  "common": {
+    "formulaHelp": "Kirjoita kaava tavallisin numeroin, esimerkiksi {typed}: lukumäärät näkyvät alaindekseinä, {shown}. Kun kaavan osat yhdistetään, kuten {joined}, kopioi tämä piste:",
+    "relatedTo": "Liittyy:",
+    "notes": "Muistiinpanot:",
+    "loi": "Polttohäviö – LOI (prosentteina):",
+    "molecularWeight": "Kaavan moolimassa polttamattomana (käytetään vain, jos polttohäviö on tyhjä):",
+    "formulaHeading": "Anna kaava (poltettuna):",
+    "oxideSelection": "Oksidin valinta",
+    "noOxide": "ei mitään",
+    "addOxide": "Lisää oksidi luetteloon",
+    "formulaIn": "Kaavan muoto:",
+    "percent": "Prosentit",
+    "molecular": "Moolit / Segerin kaava",
+    "amount": "Määrä:",
+    "removeOxide": "Poista kaavan luettelosta",
+    "save": "Tallenna",
+    "elements": "Alkuaineet",
+    "removeNote": "Tallennetuilla resepteillä on oma kopionsa, joten ne eivät muutu.",
+    "saveFailed": "Virhe: pyyntö palvelimelle ei onnistunut."
+  },
+  "material": {
+    "title": "Raaka-aineet",
+    "lead": "Omat raaka-aineet kemiallisena kaavana tai oksidianalyysinä.",
+    "newHeading": "Uuden raaka-aineen tiedot",
+    "name": "Raaka-aineen nimi:",
+    "rawFormula": "Kaava polttamattomana:",
+    "weightsNote": "Ekvivalenttipaino ja paino poltettuna lasketaan tallennettaessa kaavasta ja polttohäviöstä.",
+    "mineHeading": "Omat raaka-aineet:",
+    "rawFormulaColumn": "Kaava polttamattomana",
+    "standardHeading": "Vakioraaka-aineet:",
+    "fetchFailed": "Raaka-aineiden tietojen hakemisessa tapahtui virhe.",
+    "standardFetchFailed": "Vakioraaka-aineiden tietojen hakemisessa tapahtui virhe.",
+    "saved": "Onnistui. Raaka-aine lisätty tietokantaan."
+  },
+  "additive": {
+    "title": "Lisäaineet ja väriaineet",
+    "lead": "Väriaineet ja opalisoivat aineet, jotka punnitaan pohjalasitteen reseptin lisäksi, kuten koboltti- tai tinaoksidi. Resepti voi jättää ne pois Segerin kaavasta (UMF) tai laskea ne siihen mukaan.",
+    "newHeading": "Uuden lisäaineen tiedot",
+    "name": "Lisäaineen nimi:",
+    "formulaAsSold": "Kaava myyntimuodossa:",
+    "noChemistry": "Sillä ei ole oksidianalyysiä, kuten kaupallisella väripigmentillä: jätä se pois Segerin kaavasta",
+    "firedNote": "Anna koostumus, jonka se antaa lasitteelle poltettuna: musta kobolttioksidi, {asSold}, on {fired}, ja sen polttohäviö on {loi} %. Resepti voi silloin laskea sen mukaan Segerin kaavaan.",
+    "mineHeading": "Omat lisäaineet ja väriaineet:",
+    "standardHeading": "Vakiolisäaineet:",
+    "fetchFailed": "Lisäaineiden tietojen hakemisessa tapahtui virhe.",
+    "standardFetchFailed": "Vakiolisäaineiden tietojen hakemisessa tapahtui virhe.",
+    "saved": "Onnistui. Lisäaine lisätty tietokantaan."
+  }
+}

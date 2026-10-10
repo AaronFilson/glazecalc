@@ -183,8 +183,10 @@ export function pastLimits(input: CheckInput): string[] {
       translate('recipe.checks.whitingFix')
     );
   }
-  if (input.lines.some((line) => line.material.fluorine && amountOf(line.amount) > 0)) {
-    warnings.push(translate('recipe.checks.fluorine'));
+  for (const line of input.lines) {
+    if (line.material.fluorine && amountOf(line.amount) > 0) {
+      warnings.push(translate('recipe.checks.fluorine', { name: line.material.name }));
+    }
   }
   const clay = input.lines
     .filter((line) => line.material.category === 'clay' && !/calcined/i.test(line.material.name))

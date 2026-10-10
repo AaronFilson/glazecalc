@@ -1,7 +1,7 @@
 import { Injectable, computed, effect, inject, signal } from '@angular/core';
 import { REGION_CODES, formatLocaleFor, regionFor } from '../../../lib/regions';
 import { PAGE_LANGUAGE } from '../i18n/language';
-import { formatLocale, typedDecimalMark } from '../shared/format';
+import { formatLocale, listLocale, typedDecimalMark } from '../shared/format';
 import { saveRegion } from '../shared/library-info';
 import { ConeSystem, Density, PreferencesService, TemperatureScale } from './preferences.service';
 
@@ -36,6 +36,8 @@ export class LocaleService {
   readonly regionInfo = computed(() => regionFor(this.region()));
   /** The locale numbers and dates are written in. */
   readonly locale = computed(() => formatLocaleFor(this.language(), this.region(), this.preferences.format()));
+  /** The locale lists in a sentence are joined in: its language, as the region writes it, whatever the format chosen. */
+  readonly listLocale = computed(() => formatLocaleFor(this.language(), this.region(), 'auto'));
   /** °C or °F: the one chosen, or the region's. */
   readonly temperature = computed<TemperatureScale>(
     () => this.preferences.temperature() || this.regionInfo()?.temperature || 'C'
@@ -48,8 +50,10 @@ export class LocaleService {
   constructor() {
     // At once, so the first page is written right, and again on every change.
     formatLocale.set(this.locale());
+    listLocale.set(this.listLocale());
     typedDecimalMark.set(this.preferences.decimalMark());
     effect(() => formatLocale.set(this.locale()));
+    effect(() => listLocale.set(this.listLocale()));
     effect(() => typedDecimalMark.set(this.preferences.decimalMark()));
     // The library lists what is sold where the potter works, once a region is chosen.
     effect(() => {

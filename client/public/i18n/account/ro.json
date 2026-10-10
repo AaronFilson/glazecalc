@@ -1,0 +1,237 @@
+{
+  "auth": {
+    "signInHeading": "Conectare",
+    "keepHeading": "Păstrați-vă lucrările",
+    "signUpHeading": "Creați-vă contul",
+    "signInLead": "Bine ați revenit la caietul de glazuri.",
+    "keepLead": "Păstrați tot ce ați creat sub numele {name}: adăugați adresa de e-mail și o parolă. Rămâne gratuit.",
+    "signUpLead": "Gratuit. Rețetele, materiile prime și notițele rămân private, numai în contul dumneavoastră.",
+    "trialNote": "Aveți deja un cont? Dacă vă conectați, lucrările create sub numele {name} trec în acel cont. Prima dată aici? Atunci <signup>creați un cont</signup> în care să le păstrați.",
+    "email": "E-mail",
+    "password": "Parolă",
+    "passwordHint": "Cel puțin 8 caractere.",
+    "confirmation": "Confirmați parola",
+    "passwordMissing": "Introduceți parola.",
+    "createAccount": "Creați contul",
+    "signIn": "Conectați-vă",
+    "haveAccount": "Aveți deja un cont? <signin>Conectați-vă</signin>",
+    "forgot": "Ați uitat parola? Resetați-o",
+    "newHere": "Prima dată aici? <signup>Creați un cont gratuit</signup>",
+    "signUpFailed": "Eroare: contul nu a putut fi creat.",
+    "signInFailed": "Eroare: conectarea nu a reușit."
+  },
+  "forgot": {
+    "heading": "Resetați parola",
+    "checkInbox": "Verificați căsuța de e-mail și dosarul de spam. Dacă nu primiți nimic, verificați adresa și cereți din nou.",
+    "intro": "Introduceți adresa de e-mail a contului și vă vom trimite un link pentru a alege o parolă nouă.",
+    "email": "E-mail:",
+    "send": "Trimiteți linkul de resetare",
+    "back": "Înapoi la conectare",
+    "failed": "Eroare: e-mailul de resetare nu a putut fi trimis. Încercați din nou."
+  },
+  "reset": {
+    "heading": "Alegeți o parolă nouă",
+    "signIn": "Conectați-vă",
+    "incomplete": "Această pagină are nevoie de linkul dintr-un e-mail de resetare a parolei, iar acesta este incomplet.",
+    "askAgain": "Cereți un link nou",
+    "password": "Parola nouă:",
+    "confirmation": "Confirmați parola nouă:",
+    "save": "Salvați parola nouă",
+    "hint": "Cel puțin 8 caractere. Toate dispozitivele conectate la cont vor fi deconectate.",
+    "failed": "Eroare: parola nu a putut fi schimbată. Încercați din nou."
+  },
+  "account": {
+    "trialTitle": "Perioada dumneavoastră de probă",
+    "trialLead": "Încercați Glazecalc sub numele {name}.",
+    "keepHeading": "Păstrați-vă lucrările",
+    "keepText": "Această perioadă de probă și tot ce conține se șterg pe {date}. Creați un cont gratuit pentru a le păstra: rețetele, materiile prime și notițele rămân exact așa cum sunt, iar {name} rămâne numele afișat.",
+    "createAccount": "Creați un cont",
+    "title": "Contul dumneavoastră",
+    "signedInAs": "V-ați conectat cu {email}.",
+    "changeHeading": "Schimbați parola",
+    "current": "Parola actuală",
+    "currentMissing": "Introduceți parola actuală.",
+    "password": "Parola nouă",
+    "passwordHint": "Cel puțin 8 caractere. Celelalte dispozitive conectate la acest cont vor fi deconectate.",
+    "confirmation": "Confirmați parola nouă",
+    "change": "Schimbați parola",
+    "changeFailed": "Eroare: parola nu a putut fi schimbată. Încercați din nou.",
+    "deleteHeading": "Ștergeți contul",
+    "deleteText": "Astfel se șterg contul și tot ce ați salvat: rețete, materii prime, aditivi, notițe, jurnale de ardere și sfaturi. Acțiunea nu poate fi anulată.",
+    "deletePassword": "Parola, pentru confirmare",
+    "deletePasswordMissing": "Introduceți parola pentru confirmare.",
+    "delete": "Ștergeți contul meu",
+    "deleteFailed": "Eroare: contul nu a putut fi șters. Încercați din nou."
+  },
+  "settings": {
+    "heading": "Setări",
+    "intro": "Se salvează în cont, așa că se aplică pe orice dispozitiv.",
+    "saveFailed": "Setarea nu a putut fi salvată. Încercați din nou.",
+    "language": {
+      "legend": "Limbă",
+      "help": "Limba aplicației, a ghidurilor și a e-mailurilor primite. Dacă o schimbați, această pagină se deschide în limba respectivă.",
+      "saved": "S-a salvat: {language}."
+    },
+    "region": {
+      "legend": "Unde lucrați",
+      "none": {
+        "label": "Nicio regiune aleasă",
+        "saved": "S-a salvat: nicio regiune aleasă; valorile implicite urmează browserul."
+      },
+      "saved": "S-a salvat: {region}.",
+      "help": "Materiile prime care se vând acolo și valorile implicite pentru numerele, datele, temperaturile și conurile de mai jos. Până când alegeți, acestea urmează limba browserului."
+    },
+    "format": {
+      "legend": "Numere și date",
+      "auto": {
+        "label": "Ca în limba și regiunea mea",
+        "saved": "S-a salvat: numerele și datele, așa cum le scriu limba și regiunea dumneavoastră."
+      },
+      "saved": "S-a salvat: numerele și datele ca în {language}.",
+      "help": "Cum se scriu numerele și datele: 12,345.6 sau 12.345,6 și ordinea zilei și a lunii."
+    },
+    "decimalMark": {
+      "legend": "Introducerea cantităților",
+      "either": {
+        "label": "Virgulă sau punct pentru zecimale",
+        "example": "12,5 sau 12.5",
+        "saved": "S-a salvat: cantitățile pot fi introduse cu virgulă sau cu punct."
+      },
+      "comma": {
+        "label": "Virgulă pentru zecimale",
+        "saved": "S-a salvat: cantitățile se introduc cu virgulă pentru zecimale."
+      },
+      "point": {
+        "label": "Punct pentru zecimale",
+        "saved": "S-a salvat: cantitățile se introduc cu punct pentru zecimale."
+      },
+      "help": "Cu „Virgulă sau punct”, o cantitate precum 1.250 este citită așa cum se scriu numerele, după alegerea de mai sus."
+    },
+    "temperature": {
+      "legend": "Temperaturi",
+      "celsius": {
+        "label": "Celsius",
+        "saved": "S-a salvat: temperaturi în °C."
+      },
+      "fahrenheit": {
+        "label": "Fahrenheit",
+        "saved": "S-a salvat: temperaturi în °F."
+      },
+      "help": "Până când alegeți, aceasta urmează regiunea: °F în Statele Unite, °C în rest."
+    },
+    "cones": {
+      "legend": "Ardere",
+      "orton": {
+        "label": "La conuri Orton",
+        "example": "conul 04, conul 6",
+        "saved": "S-a salvat: arderea la conuri Orton."
+      },
+      "temperature": {
+        "label": "După temperatură, ca în programul unui controler de cuptor",
+        "saved": "S-a salvat: arderea după temperatură."
+      },
+      "help": "Până când alegeți, aceasta urmează regiunea: conuri Orton în SUA, Regatul Unit, Irlanda, Australia și Noua Zeelandă, temperatură în restul Europei."
+    },
+    "density": {
+      "legend": "Densitatea glazurii",
+      "sg": {
+        "label": "Greutate specifică",
+        "saved": "S-a salvat: densitatea glazurii ca greutate specifică.",
+        "example": "1,45"
+      },
+      "baume": {
+        "label": "Grade Baumé, cu areometrul",
+        "saved": "S-a salvat: densitatea glazurii în grade Baumé."
+      },
+      "pint": {
+        "label": "Greutatea pintei, în uncii la o pintă imperială",
+        "saved": "S-a salvat: densitatea glazurii ca greutate a pintei."
+      },
+      "help": "Cum indică ghidurile densitatea unei glazuri. Până când alegeți, aceasta urmează regiunea: grade Baumé în Italia, greutate specifică în rest."
+    },
+    "theme": {
+      "legend": "Luminos sau întunecat",
+      "system": {
+        "label": "Ca setarea acestui dispozitiv",
+        "saved": "S-a salvat: luminos sau întunecat, după setarea fiecărui dispozitiv."
+      },
+      "light": {
+        "label": "Luminos",
+        "saved": "S-a salvat: mereu luminos."
+      },
+      "dark": {
+        "label": "Întunecat",
+        "saved": "S-a salvat: mereu întunecat."
+      },
+      "help": "Rețetele se tipăresc mereu negru pe alb."
+    },
+    "palette": {
+      "legend": "Culori",
+      "saved": "S-a salvat: butoane și linkuri în culorile {palette}.",
+      "help": "Pentru butoane, linkuri și file, cu nume de glazuri. Fiecare se citește ușor atât în modul luminos, cât și în cel întunecat."
+    },
+    "weightUnit": {
+      "legend": "Cantități de cântărit",
+      "grams": {
+        "label": "Grame",
+        "saved": "S-a salvat: cantitățile de cântărit sunt în grame."
+      },
+      "pounds": {
+        "label": "Livre și uncii",
+        "saved": "S-a salvat: cantitățile de cântărit sunt în livre și uncii."
+      },
+      "help": "Pentru listele de cântărire tipărite."
+    },
+    "gramPrecision": {
+      "legend": "Grame pe listele tipărite",
+      "single": {
+        "label": "La o zecime de gram",
+        "saved": "S-a salvat: gramele se afișează la o zecime."
+      },
+      "full": {
+        "label": "Precizie completă",
+        "saved": "S-a salvat: gramele se afișează complet, cu 5 zecimale."
+      },
+      "help": "La o zecime, cantitățile sub 10 g se afișează totuși cu sutimi (2,35 g), pentru coloranții din amestecurile mici de test."
+    },
+    "lead": {
+      "legend": "Plumb",
+      "off": {
+        "label": "Dezactivat: plumbul nu se adaugă niciodată într-o rețetă și nu se sugerează",
+        "saved": "S-a salvat: plumbul nu este niciodată adăugat într-o rețetă sau sugerat."
+      },
+      "on": {
+        "label": "Activat: materiile prime cu plumb pot fi adăugate și sugerate",
+        "saved": "S-a salvat: materiile prime cu plumb pot fi adăugate și sugerate."
+      },
+      "help": "Plumbul este toxic dacă este inspirat sau înghițit și se acumulează în organism, iar o glazură cu plumb îl poate ceda în alimente și băuturi; niciun calcul nu poate arăta dacă o piesă arsă face acest lucru. Cu plumbul dezactivat, rețetele care conțin deja plumb se deschid în continuare așa cum erau.",
+      "warning": "Folosiți plumbul numai sub formă de frită, niciodată nefritat, ca miniu de plumb, ceruză, oxid galben de plumb sau litargă. Amestecați-l în stare umedă, nu-l pulverizați niciodată, purtați o mască de protecție respiratorie și curățați umed. Țineți piesele glazurate cu plumb departe de alimente și băuturi, cu excepția cazului în care piesa arsă a trecut un test de laborator privind migrarea metalelor.",
+      "turnOn": "Activați plumbul",
+      "keepOff": "Lăsați-l dezactivat"
+    },
+    "englishTerms": {
+      "legend": "Termeni în engleză",
+      "off": {
+        "label": "Dezactivat",
+        "saved": "S-a salvat: fără termeni în engleză."
+      },
+      "on": {
+        "label": "Afișați termenul în engleză după termenii-cheie",
+        "saved": "S-a salvat: termenul în engleză se afișează după termenii-cheie."
+      },
+      "help": "Pentru a citi surse în engleză, cum ar fi Digitalfire, în paralel cu această aplicație: termenii-cheie primesc între paranteze denumirea în engleză."
+    },
+    "notice": {
+      "legend": "Nota despre traducere",
+      "shown": {
+        "label": "Afișată",
+        "saved": "S-a salvat: nota este afișată."
+      },
+      "hidden": {
+        "label": "Ascunsă",
+        "saved": "S-a salvat: nota este ascunsă. Un rând din ea rămâne în ghidurile despre siguranță."
+      },
+      "help": "Nota din partea de sus a fiecărei pagini care spune că pagina a fost tradusă de inteligența artificială, cu o modalitate de a sugera o corectură."
+    }
+  }
+}

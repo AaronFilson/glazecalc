@@ -18,5 +18,6 @@
   "unknown-element": "Elemento sconosciuto {element} in {formula}",
   "bad-formula": "Impossibile leggere la formula {formula}",
   "analysis-total": "L’analisi di {material} dà un totale di {total}% compresa la P.F.; ci si aspetta circa il 100%.",
-  "stored-equivalent": "Il peso equivalente salvato di {material} non corrisponde alla sua formula e alla P.F.; sono state usate invece la formula e la P.F."
+  "stored-equivalent": "Il peso equivalente salvato di {material} non corrisponde alla sua formula e alla P.F.; sono state usate invece la formula e la P.F.",
+  "trace-flux": "La ricetta contiene solo tracce di ossidi fondenti, quindi la formula di Seger (UMF) non è significativa."
 }

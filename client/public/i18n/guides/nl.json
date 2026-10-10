@@ -1,0 +1,154 @@
+{
+  "version": {
+    "cones": "Deze gids wordt weergegeven voor stoken op kegels, zoals ingesteld in Instellingen.",
+    "temperature": "Deze gids wordt weergegeven voor stoken op temperatuur, zoals ingesteld in Instellingen.",
+    "showTemperature": "Weergeven voor stoken op temperatuur",
+    "showCones": "Weergeven voor stoken op kegels"
+  },
+  "notTranslated": "Deze gids is nog niet vertaald en wordt daarom in het Engels weergegeven.",
+  "sectionInEnglish": "Dit gedeelte is gewijzigd sinds het werd vertaald en wordt daarom in het Engels weergegeven tot de vertaling is bijgewerkt.",
+  "list": {
+    "title": "Gidsen",
+    "lead": "Gidsen in gewone taal voor beginnende pottenbakkers: van wat een glazuur is tot het stoken ervan, en hoe iedereen onderweg veilig blijft.",
+    "note": "Deze gidsen brengen samen wat fabrikanten, veiligheidsinstanties en ervaren pottenbakkers publiceren, met de bronnen aan het eind van elke gids. Ze zijn een startpunt, geen vervanging voor de veiligheidsinformatiebladen van uw grondstoffen, de handleiding van uw oven of de plaatselijke regels.",
+    "glazingBasics": {
+      "title": "Glazuren vanaf de basis",
+      "text": "Wat een glazuur is, hoe het smelt, en uitleg bij elk woord dat u op een recept of een zak tegenkomt."
+    },
+    "makingAGlaze": {
+      "title": "Een glazuur aanmaken",
+      "text": "Inkopen, bewaren, afwegen, aanmaken en zeven, en daarna het glazuur testen en aantekeningen bijhouden."
+    },
+    "safeMixing": {
+      "title": "Veilig mengen en ventileren",
+      "text": "Stof, adembescherming, schoonmaken, de grondstoffen die de meeste zorg vragen, en de afzuiging van de oven."
+    },
+    "homeSafety": {
+      "title": "Vergiftig uw gezin niet",
+      "text": "Pottenbakken thuis, met kinderen en huisdieren: opbergen, stof, de oven, en wat u doet als er iets is ingeslikt."
+    },
+    "firing": {
+      "title": "Een eenvoudige oven stoken",
+      "text": "Kegels, kiln sitters en handbediende schakelaars, met stookschema’s voor de biscuitstook en de glazuurstook."
+    }
+  },
+  "contents": "Op deze pagina",
+  "poison": {
+    "numbersFor": "Nummers voor",
+    "choose": "Kies uw land",
+    "label": "Wie u kunt bellen: {region}",
+    "caption": "Wie u kunt bellen: {region} (nummers gecontroleerd op {date})",
+    "for": "Waarvoor",
+    "call": "Nummer",
+    "notes": "Tijden en opmerkingen",
+    "emergency": "Een noodgeval: bewusteloos, ademt niet, stuiptrekkingen",
+    "poisonAdvice": "{who, select, children {Advies bij vergiftiging: {name} (alleen voor kinderen)} other {Advies bij vergiftiging: {name}}}",
+    "or": "of {number}",
+    "online": "Online: <link>{name}</link>.",
+    "poisonAdviceNone": "Advies bij vergiftiging",
+    "noLine": "We konden hier geen openbare hulplijn voor vergiftigingen bevestigen. Bel uw huisarts, of het noodnummer als het dringend is.",
+    "medicalAdvice": "Medisch advies: {name}",
+    "animals": "Dieren: {name}",
+    "animalsNone": "Dieren",
+    "vet": "Bel uw dierenarts.",
+    "checkedOn": "Gecontroleerd aan de hand van:",
+    "choosePrompt": "Kies uw land om te zien wie u daar kunt bellen.",
+    "ministry": "De pagina van het ministerie van Volksgezondheid: <link>{name}</link>."
+  },
+  "density": {
+    "sg": "soortelijk gewicht {value}",
+    "baume": "{value} °Bé ({sg})",
+    "pint": "{value} oz per Engelse pint ({sg})"
+  },
+  "shops": {
+    "shopsIn": "Leveranciers in",
+    "label": "Leveranciers: {region}",
+    "caption": "Enkele leveranciers die glazuurgrondstoffen verkopen: {region} (gecontroleerd op {date})",
+    "nearbyCaption": "Leveranciers in andere landen die naar eigen zeggen naar dit land leveren: {region} (gecontroleerd op {date})",
+    "shop": "Leverancier",
+    "sells": "Assortiment",
+    "packs": "Gevonden verpakkingen",
+    "seen": "Gevonden grondstoffen, onder de namen van de leverancier",
+    "what": {
+      "materials": "glazuurgrondstoffen",
+      "frits": "fritten",
+      "oxides": "oxiden",
+      "stains": "pigmenten",
+      "clays": "klei",
+      "glazes": "kant-en-klare glazuren",
+      "kilns": "ovens"
+    },
+    "none": "{region}: we hebben er geen leverancier gevonden die glazuurgrondstoffen verkoopt.",
+    "unknown": "{region}: we hebben daar nog niet naar leveranciers gezocht.",
+    "choosePrompt": "Kies uw land om de leveranciers daar te zien."
+  },
+  "silica": {
+    "limitIn": "Grenswaarde in",
+    "label": "De grenswaarde voor silica: {region}",
+    "caption": "De grenswaarde op de werkplek voor respirabel kristallijn silica, als gemiddelde over 8 uur: {region} (gecontroleerd op {date})",
+    "both": "Kwarts en cristobaliet",
+    "quartz": "Kwarts",
+    "cristobalite": "Cristobaliet",
+    "actionLevel": "Actieniveau",
+    "value": "{value} mg/m³",
+    "kind": {
+      "binding": "Een bindende grenswaarde.",
+      "indicative": "Een indicatieve grenswaarde: een richtwaarde, geen wettelijk maximum.",
+      "assessment": "Een beoordelingsmaatstaf, geen bindende grenswaarde."
+    },
+    "setBy": "Vastgelegd in <link>{law}</link>.",
+    "lowerThanEu": "Lager dan de bindende EU-grenswaarde van {value} mg/m³.",
+    "sameAsEu": "Gelijk aan de bindende EU-grenswaarde.",
+    "unknown": "{region}: we konden de nationale grenswaarde niet bevestigen. De bindende EU-grenswaarde van {value} mg/m³ geldt in elke lidstaat.",
+    "noData": "{region}: we hebben de grenswaarde daar nog niet bevestigd.",
+    "agency": "De nationale instantie voor veiligheid op het werk: <link>{name}</link>.",
+    "agencySilica": "De <link>pagina over silica</link> van die instantie.",
+    "choosePrompt": "Kies uw land om de grenswaarde daar te zien."
+  },
+  "food": {
+    "rulesIn": "Regels in",
+    "label": "Grenswaarden voor keramische voorwerpen: {region}",
+    "caption": "Wat een gebakken stuk bij de wettelijke test mag afgeven: {region} (gecontroleerd op {date})",
+    "article": "Soort voorwerp",
+    "lead": "Lood",
+    "cadmium": "Cadmium",
+    "category": {
+      "flat": "Niet-vulbare voorwerpen, of ten hoogste 25 mm diep",
+      "fillable": "Alle andere vulbare voorwerpen",
+      "cooking": "Kookgerei van elke grootte; verpakkingen en opslagvaten met een inhoud van meer dan 3 L",
+      "rimBand": "De rand van drinkgerei: een strook van 2 cm, binnen en buiten",
+      "rimArticle": "De rand van drinkgerei: een strook van 20 mm aan de buitenkant, vanaf de bovenrand, per stuk",
+      "flatware": "Platte voorwerpen, ten hoogste 25 mm diep",
+      "smallHollow": "Kleine holle voorwerpen, minder dan 1,1 L, behalve kopjes en mokken",
+      "cups": "Kopjes en mokken",
+      "largeHollow": "Grote holle voorwerpen, 1,1 L of meer, behalve kannen",
+      "pitchers": "Kannen",
+      "auSmall": "Kopjes, mokken, kannen, kommen, theepotten en ander serviesgoed van minder dan 1100 mL",
+      "auLarge": "Hetzelfde, 1100 mL of meer",
+      "auPlates": "Borden, schoteltjes en vergelijkbaar serviesgoed",
+      "auCooking": "Kookgerei"
+    },
+    "judged": {
+      "average": "gemiddelde van 6 stuks",
+      "each": "elk van de 6 afzonderlijk"
+    },
+    "euRules": "Hier gelden de regels van de EU.",
+    "law": "Vastgelegd in <link>{law}</link>.",
+    "inForce": "Van kracht vanaf {date}.",
+    "unknown": "{region}: we hebben de regels daar nog niet bevestigd.",
+    "choosePrompt": "Kies uw land om de regels daar te zien."
+  },
+  "equivalents": {
+    "buyingIn": "Inkopen in",
+    "label": "{library, select, US {Equivalenten verkrijgbaar in de Verenigde Staten} UK {Equivalenten verkrijgbaar in het Verenigd Koninkrijk} EU {Equivalenten verkrijgbaar in de EU} other {Equivalenten verkrijgbaar in Australië en Nieuw-Zeeland}}",
+    "caption": "{library, select, US {Grondstoffen die niet in de Verenigde Staten verkrijgbaar zijn, elk met de meest vergelijkbare die daar wel verkrijgbaar is} UK {Grondstoffen die niet in het Verenigd Koninkrijk verkrijgbaar zijn, elk met de meest vergelijkbare die daar wel verkrijgbaar is} EU {Grondstoffen die niet in de EU verkrijgbaar zijn, elk met de meest vergelijkbare die daar wel verkrijgbaar is} other {Grondstoffen die niet in Australië en Nieuw-Zeeland verkrijgbaar zijn, elk met de meest vergelijkbare die daar wel verkrijgbaar is}}",
+    "material": "In een recept",
+    "soldIn": "Verkrijgbaar in",
+    "closest": "{library, select, US {Meest vergelijkbaar, verkrijgbaar in de Verenigde Staten} UK {Meest vergelijkbaar, verkrijgbaar in het Verenigd Koninkrijk} EU {Meest vergelijkbaar, verkrijgbaar in de EU} other {Meest vergelijkbaar, verkrijgbaar in Australië en Nieuw-Zeeland}}",
+    "apart": "wijkt {grams} g per 100 g af",
+    "noneClose": "Niets binnen 15 g per 100 g: vergelijk op basis van de chemische samenstelling.",
+    "loading": "De bibliotheek wordt geladen…",
+    "failed": "De bibliotheek kon niet worden geladen. Probeer het later opnieuw.",
+    "choosePrompt": "Kies uw land om te zien wat daar verkrijgbaar is."
+  }
+}

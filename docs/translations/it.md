@@ -479,6 +479,37 @@ ask to see: `Fritta<en>frit</en>` in messages, `la fritta{{en: frit}}` in the gu
 | Trash                                                                                  | Cestino                                                                                                 |                                                                                                                                                                                                           |
 | Remove (Yes, remove), Delete my account                                                | Rimuovi (Sì, rimuovi); Elimina il mio account                                                           | "This can't be undone." L’operazione non si può annullare.                                                                                                                                                |
 
+### 2.9 Where the potter works
+
+Terms of the region parts of the guides (shops, the silica limit, food-contact rules, materials sold nearby), as
+the reviewed translation uses them. Names of shops, laws and agencies stay as they are written there.
+
+| English                                                               | Italiano                                                                        | Where                                         |
+| --------------------------------------------------------------------- | ------------------------------------------------------------------------------- | --------------------------------------------- |
+| Shops in (the label before a list of countries)                       | Negozi per                                                                      | guides: shops.shopsIn                         |
+| raw glaze materials (what a shop sells)                               | materie prime per smalti                                                        | guides: shops.what.materials                  |
+| ready-made glazes                                                     | smalti pronti                                                                   | guides: shops.what.glazes                     |
+| Packs seen                                                            | Confezioni viste                                                                | guides: shops.packs                           |
+| A binding limit.                                                      | Limite vincolante.                                                              | guides: silica.kind.binding                   |
+| An indicative limit: a guide value, not a legal ceiling.              | Limite indicativo: un valore di riferimento, non un massimo di legge.           | guides: silica.kind.indicative                |
+| An assessment criterion, not a binding limit. (Germany)               | Criterio di valutazione, non un limite vincolante.                              | guides: silica.kind.assessment                |
+| action level (US)                                                     | Livello d’azione                                                                | guides: silica.actionLevel                    |
+| quartz and cristobalite                                               | Quarzo e cristobalite                                                           | guides: silica.both                           |
+| The national body for safety at work: <link>{name}</link>.            | L’ente nazionale per la sicurezza sul lavoro: <link>{name}</link>.              | guides: silica.agency                         |
+| Kind of piece (food-contact rules)                                    | Tipo di oggetto                                                                 | guides: food.article                          |
+| pieces that cannot be filled, or no deeper than 25 mm                 | Oggetti non riempibili, o con profondità interna non superiore a 25 mm          | guides: food.category.flat                    |
+| other pieces that can be filled                                       | Tutti gli altri oggetti riempibili                                              | guides: food.category.fillable                |
+| cooking ware                                                          | Recipienti da cottura                                                           | guides: food.category.auCooking               |
+| The rim of a piece for drinking from: a 2 cm band, inside and out     | Il bordo di un oggetto per bere: una fascia di 2 cm, all’interno e all’esterno  | guides: food.category.rimBand                 |
+| Flatware, no deeper than 25 mm (US)                                   | Oggetti piani, con profondità non superiore a 25 mm                             | guides: food.category.flatware                |
+| Small hollowware, under 1.1 L, other than cups and mugs (US)          | Oggetti cavi piccoli, meno di 1,1 L, escluse tazze e mug                        | guides: food.category.smallHollow             |
+| Large hollowware, 1.1 L or more, other than pitchers (US)             | Oggetti cavi grandi, 1,1 L o più, escluse le brocche                            | guides: food.category.largeHollow             |
+| average of 6 pieces / any one of 6                                    | media di 6 pezzi / ciascuno dei 6 pezzi                                         | guides: food.judged.average, food.judged.each |
+| Buying in (the label before a list of countries)                      | Paese di acquisto                                                               | guides: equivalents.buyingIn                  |
+| differs by {grams} g per 100 g                                        | differisce di {grams} g ogni 100 g                                              | guides: equivalents.apart                     |
+| Directive 84/500/EEC (its official name)                              | Direttiva 84/500/CEE (modificata dalla direttiva 2005/31/CE)                    | regions: the directive                        |
+| Latvia's law gives this limit for the inhalable fraction of the dust. | La legge lettone riferisce questo limite alla frazione inalabile della polvere. | regions: Latvia                               |
+
 ## 3. Never translated
 
 - **Formulas and symbols:** SiO₂, Al₂O₃, B₂O₃, K₂O, Na₂O, Li₂O, CaO, MgO, BaO, SrO, ZnO, PbO, Fe₂O₃, FeO, Fe₃O₄, TiO₂,

@@ -69,6 +69,11 @@ describe('numbers, dates and temperatures as the reader writes them', () => {
     ]).toEqual(['12.5', '1234.5', '20']);
     // Not a number: kept as typed, for the field's check.
     expect(toPlain('12,5,3', 'either', 'de-DE')).toBe('12,5,3');
+    // Digits even for a tiny number, never "1e-7".
+    expect([toPlain('0,0000001', 'either', 'de-DE'), toPlain('0.00000000001', 'point', 'en')]).toEqual([
+      '0.0000001',
+      '0'
+    ]);
     expect([
       forTyping('12.5', 'either', 'de-DE'),
       forTyping('12.5', 'either', 'en-US'),

@@ -50,6 +50,20 @@ export function fieldProblem(fixture: ComponentFixture<unknown>, id: string): st
   return message?.textContent?.trim() ?? '';
 }
 
+/**
+ * Headings that skip a level, such as an h3 straight after the h1: a screen
+ * reader's list of headings shows them as parts of the one before. [] when
+ * the outline goes down one level at a time.
+ */
+export function skippedHeadings(fixture: ComponentFixture<unknown>): string[] {
+  const headings = [...(fixture.nativeElement as HTMLElement).querySelectorAll('h1, h2, h3, h4, h5, h6')];
+  return headings.flatMap((heading, i) => {
+    const level = Number(heading.tagName[1]);
+    const before = i ? Number(headings[i - 1]!.tagName[1]) : 0;
+    return level > before + 1 ? [`h${level} after h${before}: ${heading.textContent?.trim()}`] : [];
+  });
+}
+
 export function text(fixture: ComponentFixture<unknown>, selector = ':root'): string {
   const root = fixture.nativeElement as HTMLElement;
   const el = selector === ':root' ? root : root.querySelector(selector);

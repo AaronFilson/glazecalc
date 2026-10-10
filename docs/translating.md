@@ -13,6 +13,8 @@ is the source: translations are made from it (see [the plan](i18n-plan.md)).
 | `client/public/i18n/server/en.json`       | The server's messages, written from `server/lib/messages.ts` by `npm run i18n:sources`                       |
 | `client/public/i18n/chemistry/en.json`    | The chemistry library's errors and warnings, written from `lib/chemistry/messages.js` likewise               |
 | `client/public/i18n/safety/en.json`       | The words of who to call (`lib/regions/safety.js`), each under a key made from its English, written likewise |
+| `client/public/i18n/regions/en.json`      | Likewise the words of the other region data: silica limits, food-contact rules and shops (`lib/regions`)     |
+| `client/public/i18n/records/en.json`      | Likewise the standard records' words (`data/`): materials' and additives' notes and hazards, the advice      |
 | `client/public/i18n/guides/<guide>/en.md` | Each guide, a whole document in Markdown                                                                     |
 
 A route names the scope it needs (`providers: [provideTranslocoScope('recipe')]` in
@@ -108,6 +110,10 @@ Markdown:
 | `{{2232 °F; 1222 °C}}`                                                   | A temperature, rate or difference in both scales, as the source gives them. The reader sees their scale first and the other in brackets, with numbers written their way. Translate the words around it, never inside it. |
 | `:::orton` … `:::` and `:::temperature` … `:::`, with blank lines around | Parts only for those who fire to cones, or by temperature (Settings). The page offers the other version.                                                                                                                 |
 | `::poison-lines`                                                         | Who to call, for the reader's region                                                                                                                                                                                     |
+| `::shops`                                                                | Shops that sell glaze materials, for the reader's region                                                                                                                                                                 |
+| `::local-equivalents`                                                    | The closest materials sold in the reader's region to those sold elsewhere                                                                                                                                                |
+| `::silica-limit`                                                         | The workplace limit for silica dust, for the reader's region                                                                                                                                                             |
+| `::food-limits`                                                          | The limits on lead and cadmium from glazed ware, for the reader's region                                                                                                                                                 |
 
 A quotation keeps its temperatures as the source wrote them, not as `{{…}}`.
 

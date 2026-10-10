@@ -14,7 +14,7 @@ Los conos miden el **trabajo térmico**{{en: heatwork}}, el efecto conjunto de l
 
 ### Números de cono
 
-Los números de cono van del 022, el más bajo, al 42. Un cero delante indica la serie más baja y se lee «cero»: el cono 06 («cero seis») es más bajo que el cono 04, y el cono 01 necesita menos calor que el cono 1. Orton advierte de que es importante no confundir las dos series. La diferencia es grande: el cono 06 se dobla a más de {{400 °F; 220 °C}} menos que el cono 6.
+Los números de cono van del 022, el más frío, al 42. Un cero delante indica la serie más fría y se lee «cero»: el cono 06 («cero seis») es más frío que el cono 04, y el cono 01 necesita menos calor que el cono 1. Orton advierte de que es importante no confundir las dos series. La diferencia es grande: el cono 06 se dobla a más de {{400 °F; 220 °C}} menos que el cono 6.
 
 Table: Intervalos de cocción habituales, para conos con pie a {{108 °F/h; 60 °C/h}}
 Label: Intervalos de cocción
@@ -40,7 +40,7 @@ Label: Mantenimiento y trabajo térmico
 | 40–60 minutos   | Una temperatura máxima {{36 °F; 20 °C}} más alta                        |
 | Unas 2 horas    | Una temperatura máxima {{54 °F; 30 °C}} más alta                        |
 | 1–2 horas       | «puede bastar para deformar el cono del número inmediatamente superior» |
-| 4–6 horas       | Suficiente para doblar un cono dos números más alto                     |
+| 4–6 horas       | Suficiente para doblar un cono dos números más caliente                 |
 
 Así que un mantenimiento nunca sale gratis: si añade uno, cuente con que los conos se doblen más, y baje la temperatura máxima en la misma medida.
 
@@ -112,7 +112,7 @@ Un guion indica una cifra que no se ha copiado aquí; consulte la tabla completa
 
 Los conos grandes se doblan a pocos grados de estas cifras: un cono 6 grande a {{108 °F/h; 60 °C/h}} corresponde a {{2228 °F; 1220 °C}}. Los conos pequeños, los que se usan en un kiln sitter, solo figuran a {{540 °F/h; 300 °C/h}}, así que la tabla da para un cono 6 pequeño {{2291 °F; 1255 °C}}. Esa no es la temperatura a la que un kiln sitter apaga el horno. La función del cono del kiln sitter es coincidir con el cono de la placa, y el cono de la placa tiene la última palabra.
 
-Dos advertencias. El folleto de Orton de 2019 da para el cono 06 a la velocidad rápida {{1875 °F; 1024 °C}}, pero la tabla y las preguntas frecuentes de Orton dan {{1855 °F; 1013 °C}}, la cifra que se usa aquí. Y la tabla de conos grandes del final del manual del kiln sitter de Dawson tiene errores de copia (el cono 5, más alto que el cono 6), así que no la use.
+Dos advertencias. El folleto de Orton de 2019 da para el cono 06 a la velocidad rápida {{1875 °F; 1024 °C}}, pero la tabla y las preguntas frecuentes de Orton dan {{1855 °F; 1013 °C}}, la cifra que se usa aquí. Y la tabla de conos grandes del final del manual del kiln sitter de Dawson tiene errores de copia (el cono 5, más caliente que el cono 6), así que no la use.
 
 :::temperature
 
@@ -124,7 +124,7 @@ Una temperatura sola no dice cuánto se han cocido las piezas. Los esmaltes{{en:
 
 Cuando una receta da un cono en su lugar, búsquelo en la tabla de arriba, en la columna de la velocidad a la que sube su horno al final de la cocción. Un mantenimiento también añade trabajo térmico: vea «El mantenimiento añade trabajo térmico», más arriba.
 
-La sonda mide el aire cerca de la pared, no las piezas. Si las cocciones salen más altas o más bajas de lo que deberían, el manual de su programador explica su **corrección (offset)**, que ajusta la lectura.
+La sonda mide el aire cerca de la pared, no las piezas. Si las cocciones salen más calientes o más frías de lo que deberían, el manual de su programador explica su **corrección (offset)**, que ajusta la lectura.
 
 :::
 
@@ -139,11 +139,11 @@ Un **trío de conos**{{en: cone pack}} son tres conos testigo colocados juntos, 
 Table: El trío de conos
 Label: Trío de conos
 
-| Cono       | Qué número                        | Bizcocho{{en: bisque}} a cono 04 | Esmalte{{en: glaze}} de cono 6 | Cuándo se dobla                                |
-| ---------- | --------------------------------- | -------------------------------- | ------------------------------ | ---------------------------------------------- |
-| De aviso   | Un número por debajo del objetivo | 05                               | 5                              | Las piezas se acercan a su punto de maduración |
-| De cocción | El objetivo                       | 04                               | 6                              | La cocción está en su punto                    |
-| De control | Un número por encima              | 03                               | 7                              | La cocción se ha pasado                        |
+| Cono       | Qué número                         | Bizcocho{{en: bisque}} a cono 04 | Esmalte{{en: glaze}} de cono 6 | Cuándo se dobla                                |
+| ---------- | ---------------------------------- | -------------------------------- | ------------------------------ | ---------------------------------------------- |
+| De aviso   | Un número más frío que el objetivo | 05                               | 5                              | Las piezas se acercan a su punto de maduración |
+| De cocción | El objetivo                        | 04                               | 6                              | La cocción está en su punto                    |
+| De control | Un número más caliente             | 03                               | 7                              | La cocción se ha pasado                        |
 
 ### Conos con pie o soporte para conos
 
@@ -176,10 +176,10 @@ Los conos pequeños y las barras «dan un tratamiento térmico equivalente». Or
 
 ### Qué cono va en el kiln sitter
 
-Las fuentes no coinciden. Dawson, fabricante del kiln sitter, dice que se use el mismo número que el cono de cocción de la placa, y que se suba un número solo si el cono de la placa queda sin doblar. L&L dice que se use un número más alto que los conos de la placa, porque el kiln sitter está cerca de la pared y de las resistencias, recibe más calor y tiende a apagar el horno antes de tiempo. Orton deja claro el principio: «El cono de la placa es el juez final del proceso de cocción, no el cono ni la barra del Kiln-Sitter».
+Las fuentes no coinciden. Dawson, fabricante del kiln sitter, dice que se use el mismo número que el cono de cocción de la placa, y que se pase a un número más caliente solo si el cono de la placa queda sin doblar. L&L dice que se use un número más caliente que los conos de la placa, porque el kiln sitter está cerca de la pared y de las resistencias, recibe más calor y tiende a apagar el horno antes de tiempo. Orton deja claro el principio: «El cono de la placa es el juez final del proceso de cocción, no el cono ni la barra del Kiln-Sitter».
 
 > [!NOTE]
-> Nuestro punto de partida: ponga en el kiln sitter un cono pequeño del mismo número que su objetivo, con un trío de conos{{en: cone pack}} en la placa. Si el cono de cocción de la placa ha quedado poco doblado cuando el horno se apaga, suba un número en el kiln sitter la próxima vez, o coloque la parte más gruesa del cono bajo la varilla. Si se ha doblado de más, haga lo contrario.
+> Nuestro punto de partida: ponga en el kiln sitter un cono pequeño del mismo número que su objetivo, con un trío de conos{{en: cone pack}} en la placa. Si el cono de cocción de la placa ha quedado poco doblado cuando el horno se apaga, pase a un número más caliente en el kiln sitter la próxima vez, o coloque la parte más gruesa del cono bajo la varilla. Si se ha doblado de más, haga lo contrario.
 
 ### Preparación y comprobaciones antes de cada cocción
 
@@ -216,7 +216,7 @@ Label: Problemas del kiln sitter
 
 | Lo que ve                                                                    | Causa probable                                                                                                   | Qué hacer                                                                          |
 | ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
-| El kiln sitter ha saltado y el cono de cocción de la placa está poco doblado | El kiln sitter estaba más caliente que la placa (está cerca de la pared)                                         | Un cono más alto en el kiln sitter, o la parte más gruesa bajo la varilla          |
+| El kiln sitter ha saltado y el cono de cocción de la placa está poco doblado | El kiln sitter estaba más caliente que la placa (está cerca de la pared)                                         | Un cono más caliente en el kiln sitter, o la parte más gruesa bajo la varilla      |
 | El cono del kiln sitter se ha doblado mucho más allá de 90°                  | El horno subió demasiado deprisa al final                                                                        | Bajar las posiciones de los reguladores, para que la subida sea más lenta (Dawson) |
 | El cono del kiln sitter no se dobló, o se fundió en un pegote                | El propio kiln sitter: mal ajuste, una varilla doblada o corroída, o algo atascado dentro del tubo o pegado a él | Revisar y ajustar el kiln sitter según su manual antes de volver a cocer           |
 | Siempre se apaga antes o después de tiempo                                   | Desajustado, o una varilla gastada                                                                               | Comprobarlo con la galga de ajuste; mover la placa de disparo                      |
@@ -268,11 +268,11 @@ Label: Cómo leer un trío de conos
 Table: Qué cambiar la próxima vez
 Label: Ajustes para la próxima cocción
 
-| Lo que dijeron los conos                  | Kiln sitter                                                                                                                                               | Programador                                                                                                                                                                           |
-| ----------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Poco cocido                               | Un cono más alto en el kiln sitter, o la parte más gruesa bajo la varilla                                                                                 | Usar la corrección de cono (offset) para cocer un poco más alto, o añadir un mantenimiento{{en: hold}} corto (unos 20 minutos equivalen a {{18 °F; 10 °C}} más de temperatura máxima) |
-| Sobrecocido                               | Un cono más bajo, o la parte más fina bajo la varilla; si el cono del kiln sitter se dobló mucho más allá de 90°, bajar las posiciones de los reguladores | Usar la corrección de cono para cocer un poco más bajo, o acortar o quitar el mantenimiento                                                                                           |
-| Arriba y abajo difieren en más de un cono | Cambiar la combinación de posiciones de los reguladores (vea «Hornos manuales en detalle»)                                                                | Cargar menos la zona más fría; seguir el manual del horno                                                                                                                             |
+| Lo que dijeron los conos                  | Kiln sitter                                                                                                                                               | Programador                                                                                                                                                                               |
+| ----------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Poco cocido                               | Un cono más caliente en el kiln sitter, o la parte más gruesa bajo la varilla                                                                             | Usar la corrección de cono (offset) para cocer un poco más caliente, o añadir un mantenimiento{{en: hold}} corto (unos 20 minutos equivalen a {{18 °F; 10 °C}} más de temperatura máxima) |
+| Sobrecocido                               | Un cono más frío, o la parte más fina bajo la varilla; si el cono del kiln sitter se dobló mucho más allá de 90°, bajar las posiciones de los reguladores | Usar la corrección de cono para cocer un poco más frío, o acortar o quitar el mantenimiento                                                                                               |
+| Arriba y abajo difieren en más de un cono | Cambiar la combinación de posiciones de los reguladores (vea «Hornos manuales en detalle»)                                                                | Cargar menos la zona más fría; seguir el manual del horno                                                                                                                                 |
 
 La **corrección de cono** (offset) es un ajuste del programador que sube o baja la temperatura que asigna a un cono, para que coincida con lo que muestran sus conos testigo{{en: witness cones}}. Guarde cada trío cocido y anote cómo se dobló cada uno (vea «Después de la cocción», más abajo).
 
@@ -422,7 +422,7 @@ Los programadores de Skutt ofrecen igualmente un precalentamiento y una opción 
 
 ### En un horno manual
 
-Un horno manual no puede seguir estas curvas con exactitud, pero el plan es el mismo: suave al principio, constante en la parte central y un final vigilado. La curva de Bracker’s para esmaltes de baja temperatura está en «Hornos manuales en detalle», más abajo; para conos más altos añade «una media de 15–30 minutos por número de cono». Con un pirómetro, práctica y un registro, puede imitar aproximadamente una bajada con mantenimiento o un enfriamiento lento bajando los reguladores a mano, como sugiere Digitalfire.
+Un horno manual no puede seguir estas curvas con exactitud, pero el plan es el mismo: suave al principio, constante en la parte central y un final vigilado. La curva de Bracker’s para esmaltes de baja temperatura está en «Hornos manuales en detalle», más abajo; para conos más calientes añade «una media de 15–30 minutos por número de cono». Con un pirómetro, práctica y un registro, puede imitar aproximadamente una bajada con mantenimiento o un enfriamiento lento bajando los reguladores a mano, como sugiere Digitalfire.
 
 ## Hornos manuales en detalle {#manual-kilns}
 
@@ -437,14 +437,14 @@ El procedimiento que propone L&L para un horno con tres reguladores, kiln sitter
 Table: El procedimiento de cocción manual de L&L
 Label: Procedimiento de L y L
 
-| Fase                                        | Qué hacer                                                                                                                                                                                                                                                                                         |
-| ------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Preparación                                 | Cono del kiln sitter un número más alto que los conos de la placa (el consejo de L&L; vea «El kiln sitter»). Deje la tapa entreabierta «unas 4 o 5 pulgadas» (10–13 cm) y quite todos los tapones de las mirillas. Ponga el temporizador muy alto la primera vez, y anote cuánto dura la cocción. |
-| Bajo                                        | Todos los reguladores en Bajo (1): 3 horas si la arcilla está seca, de 8 a 20 horas o más si parece húmeda                                                                                                                                                                                        |
-| Medio                                       | Cierre la tapa. Los dos reguladores de arriba a 5, el de abajo a 6.                                                                                                                                                                                                                               |
-| Primer rojo                                 | En cuanto vea cualquier resplandor, tape las dos mirillas de abajo. Deje la de arriba abierta durante toda la cocción.                                                                                                                                                                            |
-| Rojo bien visible, unos {{1400 °F; 760 °C}} | Los dos reguladores de abajo en Alto, el de arriba a 9                                                                                                                                                                                                                                            |
-| Final                                       | Vigile los conos y afine los reguladores de arriba y de abajo. Cuando los conos se doblen, apague todos los reguladores y desconecte el interruptor automático. Deje que el horno se enfríe por completo antes de abrirlo.                                                                        |
+| Fase                                        | Qué hacer                                                                                                                                                                                                                                                                                             |
+| ------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Preparación                                 | Cono del kiln sitter un número más caliente que los conos de la placa (el consejo de L&L; vea «El kiln sitter»). Deje la tapa entreabierta «unas 4 o 5 pulgadas» (10–13 cm) y quite todos los tapones de las mirillas. Ponga el temporizador muy alto la primera vez, y anote cuánto dura la cocción. |
+| Bajo                                        | Todos los reguladores en Bajo (1): 3 horas si la arcilla está seca, de 8 a 20 horas o más si parece húmeda                                                                                                                                                                                            |
+| Medio                                       | Cierre la tapa. Los dos reguladores de arriba a 5, el de abajo a 6.                                                                                                                                                                                                                                   |
+| Primer rojo                                 | En cuanto vea cualquier resplandor, tape las dos mirillas de abajo. Deje la de arriba abierta durante toda la cocción.                                                                                                                                                                                |
+| Rojo bien visible, unos {{1400 °F; 760 °C}} | Los dos reguladores de abajo en Alto, el de arriba a 9                                                                                                                                                                                                                                                |
+| Final                                       | Vigile los conos y afine los reguladores de arriba y de abajo. Cuando los conos se doblen, apague todos los reguladores y desconecte el interruptor automático. Deje que el horno se enfríe por completo antes de abrirlo.                                                                            |
 
 ### Curvas de Bracker’s
 
@@ -460,7 +460,7 @@ Label: Curvas manuales de Bracker’s
 | Temporizador     | Por la mañana, volver a ponerlo en 30–60 minutos más que la duración prevista de la cocción                | 30–60 minutos más que la duración prevista de la cocción                 |
 | Bajo             | Todos los reguladores en Bajo, 3–4 horas; sin tapones, tapa entreabierta                                   | Todos los reguladores en Bajo, 3–4 horas; sin tapones, tapa entreabierta |
 | Medio            | Tapones puestos, tapa cerrada; todos los reguladores en Medio, 3–4 horas                                   | Tapones puestos, tapa cerrada; todos los reguladores en Medio, 3–4 horas |
-| Alto             | Unas 2–3 horas, hasta que el kiln sitter apague el horno                                                   | Unas 3 horas; 15–30 minutos más por cada cono más alto                   |
+| Alto             | Unas 2–3 horas, hasta que el kiln sitter apague el horno                                                   | Unas 3 horas; 15–30 minutos más por cada cono más caliente               |
 
 Bracker’s no dice a qué cono de la placa corresponde su cono de kiln sitter para el bizcocho, así que compruébelo con su propio trío de conos{{en: cone pack}}. Con un extractor de tiro descendente, los pasos son los mismos, pero el extractor funciona durante toda la cocción y el enfriamiento, y la tapa queda cerrada. Bracker’s también sugiere escalonar: subir los reguladores de uno en uno, con unos 30 minutos de diferencia.
 
@@ -498,7 +498,7 @@ Label: Punto de partida para un horno manual
 | Alto                                        | Hasta que salte el kiln sitter; al rojo oscuro, tape todas las mirillas menos la de arriba                                                                                       | Hasta que salte el kiln sitter               |
 | Total previsto                              | 8–12 horas                                                                                                                                                                       | 8–12 horas                                   |
 
-Si el kiln sitter salta antes de que caigan los conos de la placa, suba un cono en el kiln sitter la próxima vez, como aconseja L&L.
+Si el kiln sitter salta antes de que caigan los conos de la placa, pase a un cono más caliente en el kiln sitter la próxima vez, como aconseja L&L.
 
 ### Cómo usar un pirómetro
 

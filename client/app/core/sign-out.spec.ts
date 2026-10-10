@@ -35,7 +35,7 @@ describe('rejected sign-ins', () => {
     expect(auth.hasSession()).toBe(false);
     expect(auth.email()).toBeNull();
     expect(localStorage.getItem('session')).toBeNull();
-    expect(navigate).toHaveBeenCalledWith('/signin');
+    expect(navigate).toHaveBeenCalledWith('/signin', { state: { sessionEnded: true } });
   });
 
   it('keeps a sign-in made while the rejected request was out', async () => {

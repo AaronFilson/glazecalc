@@ -136,7 +136,8 @@
       "legend": "Glaze density",
       "sg": {
         "label": "Specific gravity",
-        "saved": "Saved: glaze density as specific gravity."
+        "saved": "Saved: glaze density as specific gravity.",
+        "example": "SG 1.45"
       },
       "baume": {
         "label": "Degrees Baumé, from a hydrometer",

@@ -3,6 +3,7 @@ import { MaterialInput, RecipeLine, calculateUMF, materialWeights } from '../../
 import type { ChemistryError } from '../../../../lib/chemistry';
 import { chemistryText } from '../../i18n/coded';
 import { Additive, Recipe, RecipeAnalysis, RecipeMaterial } from '../../core/models';
+import { formatPlain } from '../../shared/format';
 import { amountOf, totalOf, unitOf } from './rebase';
 
 // A recipe's chemistry, shared by the recipe page and the print view.
@@ -97,13 +98,14 @@ export function evaluate(
   }
 }
 
-/** A colorant's amount with its unit: 2%, 3 parts, 5 g. The amount is as typed. */
+/** A colorant's amount with its unit, written the reader's way: 2%, 1,5%, 3 parts, 5 g. */
 export function additiveAmount(additive: Additive): string {
   const amount = (additive.amount ?? '').trim();
   if (!amount) return '';
   const unit = unitOf(additive);
-  if (unit === 'percent') return amount + '%';
-  if (unit === 'grams') return amount + ' g';
-  // The amount as typed decides the plural: "1 part", but "1.0 parts", as English counts them.
-  return translate('recipe.analysis.parts', { amount });
+  const shown = formatPlain(amount);
+  if (unit === 'percent') return shown + '%';
+  if (unit === 'grams') return shown + ' g';
+  // The number decides the plural: 1 part, 1,5 parts (but 1,5 part in French).
+  return translate('recipe.analysis.parts', { amount: shown, count: amountOf(amount) });
 }

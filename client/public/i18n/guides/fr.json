@@ -52,11 +52,103 @@
     "animalsNone": "Animaux",
     "vet": "Appelez votre vétérinaire.",
     "checkedOn": "Vérifié sur :",
-    "choosePrompt": "Choisissez votre pays pour voir qui appeler."
+    "choosePrompt": "Choisissez votre pays pour voir qui appeler.",
+    "ministry": "La page du ministère de la Santé : <link>{name}</link>."
   },
   "density": {
     "sg": "SG {value}",
     "baume": "{value} °Bé ({sg})",
     "pint": "{value} oz par pinte impériale ({sg})"
+  },
+  "shops": {
+    "shopsIn": "Magasins pour",
+    "label": "Magasins : {region}",
+    "caption": "Quelques magasins vendant des matières premières pour émaux : {region} (vérifiés le {date})",
+    "nearbyCaption": "Magasins d’autres pays qui disent livrer dans ce pays : {region} (vérifiés le {date})",
+    "shop": "Magasin",
+    "sells": "Produits vendus",
+    "packs": "Conditionnements relevés",
+    "seen": "Matières relevées, sous les noms du magasin",
+    "what": {
+      "materials": "matières premières pour émaux",
+      "frits": "frittes",
+      "oxides": "oxydes",
+      "stains": "pigments",
+      "clays": "terres",
+      "glazes": "émaux prêts à l’emploi",
+      "kilns": "fours"
+    },
+    "none": "Nous n’avons trouvé aucun magasin vendant des matières premières pour émaux dans ce pays ({region}).",
+    "unknown": "Nous n’avons pas encore cherché de magasins dans ce pays ({region}).",
+    "choosePrompt": "Choisissez votre pays pour voir les magasins qui s’y trouvent."
+  },
+  "silica": {
+    "limitIn": "Valeur limite pour",
+    "label": "Valeur limite pour la silice : {region}",
+    "caption": "Valeur limite d’exposition professionnelle à la silice cristalline alvéolaire, moyenne sur 8 heures : {region} (vérifiée le {date})",
+    "both": "Quartz et cristobalite",
+    "quartz": "Quartz",
+    "cristobalite": "Cristobalite",
+    "actionLevel": "Seuil d’action",
+    "value": "{value} mg/m³",
+    "kind": {
+      "binding": "Une valeur limite contraignante.",
+      "indicative": "Une valeur limite indicative : une valeur guide, pas un plafond légal.",
+      "assessment": "Un critère d’évaluation, pas une valeur limite contraignante."
+    },
+    "setBy": "Valeur fixée par <link>{law}</link>.",
+    "lowerThanEu": "Inférieure à la valeur limite contraignante de l’UE, qui est de {value} mg/m³.",
+    "sameAsEu": "Identique à la valeur limite contraignante de l’UE.",
+    "unknown": "Nous n’avons pas pu confirmer la valeur limite nationale de ce pays ({region}). La valeur limite contraignante de l’UE, {value} mg/m³, s’applique dans chaque État membre.",
+    "noData": "Nous n’avons pas encore confirmé la valeur limite de ce pays ({region}).",
+    "agency": "L’organisme national chargé de la sécurité au travail : <link>{name}</link>.",
+    "agencySilica": "Sa <link>page sur la silice</link>.",
+    "choosePrompt": "Choisissez votre pays pour voir sa valeur limite."
+  },
+  "food": {
+    "rulesIn": "Règles pour",
+    "label": "Limites pour les objets en céramique : {region}",
+    "caption": "Ce qu’une pièce cuite peut libérer lors de l’essai réglementaire : {region} (vérifié le {date})",
+    "article": "Type d’objet",
+    "lead": "Plomb",
+    "cadmium": "Cadmium",
+    "category": {
+      "flat": "Objets non remplissables, ou de profondeur interne inférieure ou égale à 25 mm",
+      "fillable": "Autres objets remplissables",
+      "cooking": "Ustensiles de cuisson ; emballages et récipients de stockage d’une capacité supérieure à 3 L",
+      "rimBand": "Le bord d’un objet dans lequel on boit : une bande de 2 cm, à l’intérieur et à l’extérieur",
+      "rimArticle": "Le bord d’un objet dans lequel on boit : une bande de 20 mm à l’extérieur, sous le bord supérieur, par objet",
+      "flatware": "Objets plats, pas plus de 25 mm de profondeur",
+      "smallHollow": "Petits objets creux, moins de 1,1 L, autres que les tasses et les mugs",
+      "cups": "Tasses et mugs",
+      "largeHollow": "Grands objets creux, 1,1 L ou plus, autres que les pichets",
+      "pitchers": "Pichets",
+      "auSmall": "Tasses, mugs, pichets, bols, théières et autre vaisselle de moins de 1100 mL",
+      "auLarge": "Les mêmes, 1100 mL ou plus",
+      "auPlates": "Assiettes, soucoupes et vaisselle semblable",
+      "auCooking": "Ustensiles de cuisson"
+    },
+    "judged": {
+      "average": "moyenne de 6 pièces",
+      "each": "chacune des 6"
+    },
+    "euRules": "Les règles de l’UE s’appliquent ici.",
+    "law": "Limites fixées par <link>{law}</link>.",
+    "inForce": "En vigueur à partir du {date}.",
+    "unknown": "Nous n’avons pas encore confirmé les règles de ce pays ({region}).",
+    "choosePrompt": "Choisissez votre pays pour voir ses règles."
+  },
+  "equivalents": {
+    "buyingIn": "Pays d’achat",
+    "label": "{library, select, US {Équivalents vendus aux États-Unis} UK {Équivalents vendus au Royaume-Uni} EU {Équivalents vendus dans l’UE} other {Équivalents vendus en Australie et en Nouvelle-Zélande}}",
+    "caption": "{library, select, US {Matières non vendues aux États-Unis, chacune avec la plus proche qui y est vendue} UK {Matières non vendues au Royaume-Uni, chacune avec la plus proche qui y est vendue} EU {Matières non vendues dans l’UE, chacune avec la plus proche qui y est vendue} other {Matières non vendues en Australie et en Nouvelle-Zélande, chacune avec la plus proche qui y est vendue}}",
+    "material": "Dans une recette",
+    "soldIn": "Disponible",
+    "closest": "{library, select, US {Matière la plus proche vendue aux États-Unis} UK {Matière la plus proche vendue au Royaume-Uni} EU {Matière la plus proche vendue dans l’UE} other {Matière la plus proche vendue en Australie et en Nouvelle-Zélande}}",
+    "apart": "écart de {grams} g pour 100 g",
+    "noneClose": "Aucune matière à 15 g d’écart ou moins pour 100 g : comparez d’après la chimie.",
+    "loading": "Chargement de la bibliothèque…",
+    "failed": "Impossible de charger la bibliothèque. Veuillez réessayer plus tard.",
+    "choosePrompt": "Choisissez votre pays pour voir ce qui s’y vend."
   }
 }

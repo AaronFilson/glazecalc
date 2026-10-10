@@ -2,6 +2,7 @@ import { HttpErrorResponse } from '@angular/common/http';
 import { Component, signal } from '@angular/core';
 import { TestBed } from '@angular/core/testing';
 import { TranslocoService } from '@jsverse/transloco';
+import { useCodedMessages } from '../i18n/coded';
 import { fieldProblem, testProviders } from '../testing/test-providers';
 import {
   FieldCheck,
@@ -177,6 +178,26 @@ describe('FieldChecks', () => {
     expect(form.checks.reportServer(new Error('offline'))).toBe(false);
   });
 
+  it("puts the server's message on the field in the reader's language, where it is translated", async () => {
+    const { fixture, form } = await create();
+    const transloco = TestBed.inject(TranslocoService);
+    transloco.setTranslation({ 'server.account-exists': 'Ein Konto mit dieser E-Mail-Adresse gibt es bereits.' }, 'de');
+    transloco.setActiveLang('de');
+    useCodedMessages(transloco);
+    try {
+      const err = new HttpErrorResponse({
+        status: 400,
+        error: { code: 'account-exists', msg: 'An account with that email already exists.', field: 'email' }
+      });
+      expect(form.checks.reportServer(err)).toBe(true);
+      await fixture.whenStable();
+      expect(fieldProblem(fixture, 'email')).toBe('Ein Konto mit dieser E-Mail-Adresse gibt es bereits.');
+    } finally {
+      useCodedMessages(null);
+      transloco.setActiveLang('en');
+    }
+  });
+
   it('takes the message away with a field that leaves the page', async () => {
     const { fixture, form } = await create();
     form.checks.validate();
@@ -216,6 +237,7 @@ describe('field checks', () => {
   it('take a number in its range, or nothing', () => {
     const loi = (v: string) => numberCheck(value(v), 'Bad LOI.', { below: 100 })();
     expect(['', '0', '12.5', '99.99'].map(loi)).toEqual([null, null, null, null]);
-    expect(['100', '-1', '12,5', 'abc'].map(loi)).toEqual(['Bad LOI.', 'Bad LOI.', 'Bad LOI.', 'Bad LOI.']);
+    // A number box saves "12.5" for 12,5; text it cannot read stays as typed, and is not a number here either.
+    expect(['100', '-1', '12,5', 'abc', '1e3', '0x10'].map(loi)).toEqual(Array(6).fill('Bad LOI.'));
   });
 });

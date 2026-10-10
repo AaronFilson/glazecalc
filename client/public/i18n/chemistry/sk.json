@@ -1,0 +1,23 @@
+{
+  "unknown-compound": "Neznáma zlúčenina {compound} vo vzorci",
+  "unknown-oxide": "Neznámy oxid {oxide} v surovine {material}",
+  "invalid-oxide-amount": "Neplatné množstvo {oxide} v surovine {material}",
+  "loi-range": "Strata žíhaním suroviny {material} musí byť aspoň 0 a menej ako 100",
+  "no-oxides": "Surovina {material} nemá žiadne oxidy",
+  "no-name": "Surovina musí mať názov",
+  "no-analysis": "Surovina {material} potrebuje vzorec alebo chemické zloženie",
+  "recipe-shape": "Recept musí byť pole '{ material, amount }' alebo mapa množstiev",
+  "invalid-amount": "Neplatné množstvo suroviny {material}",
+  "missing-material": "V riadku receptu chýba surovina",
+  "unknown-material": "Neznáma surovina {material}",
+  "no-flux": "Recept neobsahuje žiadne oxidy tavív, preto Segerov vzorec (UMF) nie je definovaný",
+  "no-target": "Cieľové zloženie neobsahuje žiadne oxidy, ku ktorým by sa dalo smerovať",
+  "no-materials": "Nie sú k dispozícii žiadne suroviny na výpočet",
+  "no-temperature": "Na nastavenie bóru je potrebná teplota výpalu",
+  "no-flux-to-rebuild": "Glazúra nemá žiadne tavivo, ktoré by sa dalo zostaviť nanovo",
+  "unknown-element": "Neznámy prvok {element} vo vzorci {formula}",
+  "bad-formula": "Vzorec {formula} sa nepodarilo spracovať",
+  "analysis-total": "Chemické zloženie suroviny {material} dáva spolu so stratou žíhaním {total} %; očakáva sa približne 100 %.",
+  "stored-equivalent": "Uložená ekvivalentová hmotnosť suroviny {material} nezodpovedá jej vzorcu a strate žíhaním; namiesto nej sa použil vzorec a strata žíhaním.",
+  "trace-flux": "Recept obsahuje len stopy oxidov tavív, preto Segerov vzorec (UMF) nemá zmysel."
+}

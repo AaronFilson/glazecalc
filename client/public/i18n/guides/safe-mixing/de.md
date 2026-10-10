@@ -18,15 +18,19 @@ Vorschriften für Arbeitsplätze legen einen **Arbeitsplatzgrenzwert** fest: die
 Table: Arbeitsplatzgrenzwerte für alveolengängigen Quarzstaub (Mittelwert über 8 Stunden)
 Label: Grenzwerte für Quarzstaub
 
-| Region                 |             Grenzwert | Hinweise                                                                                       |
-| ---------------------- | --------------------: | ---------------------------------------------------------------------------------------------- |
-| USA                    | 0,05 mg/m³ (50 µg/m³) | Grenzwert der OSHA. Arbeitgeber müssen ab 25 µg/m³, dem „Auslösewert“, mit Maßnahmen beginnen. |
-| Vereinigtes Königreich |             0,1 mg/m³ | Die Exposition muss außerdem „so gering wie vernünftigerweise machbar“ gehalten werden.        |
-| Europäische Union      |             0,1 mg/m³ | Verbindlicher Grenzwert (Richtlinie 2017/2398). Einige Mitgliedstaaten legen niedrigere fest.  |
-| Australien             |            0,05 mg/m³ | Seit Juli 2020. Im Juni 2026 lehnten die Ministerinnen und Minister eine Senkung auf 0,025 ab. |
-| Neuseeland             |           0,025 mg/m³ | Seit November 2023.                                                                            |
+| Region                 |             Grenzwert | Hinweise                                                                                                        |
+| ---------------------- | --------------------: | --------------------------------------------------------------------------------------------------------------- |
+| USA                    | 0,05 mg/m³ (50 µg/m³) | Grenzwert der OSHA. Arbeitgeber müssen ab 25 µg/m³, dem „Auslösewert“, mit Maßnahmen beginnen.                  |
+| Vereinigtes Königreich |             0,1 mg/m³ | Die Exposition muss außerdem „so gering wie vernünftigerweise machbar“ gehalten werden.                         |
+| Europäische Union      |             0,1 mg/m³ | Verbindlicher Grenzwert (Richtlinie 2017/2398). Einige Mitgliedstaaten legen niedrigere fest.                   |
+| Australien             |            0,05 mg/m³ | Seit Juli 2020. Im Juni 2026 unterstützten die meisten Ministerinnen und Minister eine Senkung auf 0,025 nicht. |
+| Neuseeland             |           0,025 mg/m³ | Seit 2023. Die Standards von WorkSafe sind Empfehlungen, keine gesetzlichen Grenzwerte.                         |
 
 Manche Seiten nennen für Australien 0,025 mg/m³, doch der offizielle Grenzwert liegt weiterhin bei 0,05. So oder so gilt derselbe Rat: Halten Sie den Staub so gering wie möglich.
+
+Mehrere EU-Mitgliedstaaten legen niedrigere Grenzwerte fest als die EU. Der Grenzwert dort, wo Sie leben, die Vorschrift, die ihn festlegt, und die nationale Stelle für Arbeitsschutz:
+
+::silica-limit
 
 > [!NOTE]
 > Das sind Grenzwerte für Arbeitsplätze. Sie verpflichten Arbeitgeber; wer allein zu Hause töpfert, wird also von niemandem kontrolliert, Gemeinschaftswerkstätten und Schulen mit Personal fallen aber meist darunter (prüfen Sie die Vorschriften bei Ihnen vor Ort). Zu Hause ist der Staub derselbe, und die Grenzwerte zeigen die Größenordnung der Gefahr: 25 bis 100 Millionstel Gramm in jedem Kubikmeter Luft, gemittelt über einen Tag.
@@ -82,7 +86,7 @@ Die höhere Klasse filtert einen größeren Anteil feiner Partikel. Die Quellen 
 
 Eine undichte Maske lässt an ihren Rändern Staub durch, ganz gleich, welche Klasse sie hat. Die HSE warnt, dass Bartstoppeln und Bärte es „unmöglich machen, eine gute Abdichtung zu erreichen“.
 
-- **Rasieren Sie sich am selben Tag.** Die Empfehlungen gehen auseinander, wie frisch „glatt rasiert“ sein muss: innerhalb von 8 Stunden (ein britischer Hersteller, unter Berufung auf die HSE) oder möglichst innerhalb von 12 (die australisch-neuseeländische Norm für den Fit-Test). Wenn Sie sich an dem Tag rasieren, an dem Sie arbeiten, erfüllen Sie beides.
+- **Rasieren Sie sich kurz vor der Arbeit.** Die Empfehlungen gehen auseinander, wie frisch „glatt rasiert“ sein muss: innerhalb von 8 Stunden (ein britischer Hersteller, unter Berufung auf die HSE) oder möglichst innerhalb von 12 (die australisch-neuseeländische Norm für den Fit-Test). Wenn Sie sich kurz vor der Arbeit rasieren, erfüllen Sie beides.
 - **Wenn Sie Ihren Bart behalten,** braucht ein locker sitzendes **Gebläsefiltergerät** (PAPR: eine Haube oder ein Helm mit Gebläse, das gefilterte Luft zuführt) keine Abdichtung am Gesicht.
 - **Wählen Sie die richtige Größe.** Schlechter Sitz ist eine Hauptursache für Undichtigkeiten. Betriebe nutzen einen **Fit-Test** (Anpassungsüberprüfung): eine Prüfung, ob eine bestimmte Maske auf einem bestimmten Gesicht dicht sitzt. Zu Hause schlagen wir vor, bei jedem Aufsetzen den Dichtsitz so zu prüfen, wie es die Anleitung des Herstellers beschreibt.
 
@@ -243,7 +247,7 @@ Das sind die Primärquellen, deren Lektüre sich am meisten lohnt. Die meisten s
 
 - **USA:** die [Vorschrift zu Quarzstaub](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.1053) der OSHA (29 CFR 1910.1053) und ihre [Hinweise für Personen, die sich entscheiden, eine Atemschutzmaske zu tragen](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.134AppD); die [Silikose-Warnung](https://www.cdc.gov/niosh/docs/92-107) des NIOSH.
 - **Vereinigtes Königreich:** die Merkblätter „COSHH essentials“ der HSE für Keramik (COSHH steht für die Control of Substances Hazardous to Health Regulations, die Vorschriften zur Kontrolle gesundheitsgefährdender Stoffe), vor allem [CR1 zum Ansetzen von Glasuren{{en: glazes}} und Farben](https://www.hse.gov.uk/PUBNS/guidance/cr1.pdf) und [CR5 zum Spritzen](https://www.hse.gov.uk/PUBNS/guidance/cr5.pdf), sowie die [Grundlagen zum Fit-Test](https://www.hse.gov.uk/respiratory-protective-equipment/fit-testing-basics.htm) der HSE.
-- **Europäische Union:** Die Richtlinie (EU) 2017/2398 legt den verbindlichen Grenzwert für Quarzstaub fest; die [Tabelle der Grenzwerte](https://nepsi.eu/wp-content/uploads/2022/10/oel_full_table_september_2020_europe.pdf) von NEPSI nennt die Werte jedes Landes. Die ECHA, die Europäische Chemikalienagentur, veröffentlicht Einstufungen, etwa die für Borate.
+- **Europäische Union:** Die Richtlinie (EU) 2017/2398 legt den verbindlichen Grenzwert für Quarzstaub fest; den eigenen Grenzwert jedes Mitgliedstaats und seine nationale Stelle für Arbeitsschutz finden Sie oben unter „Grenzwerte“. Die ECHA, die Europäische Chemikalienagentur, veröffentlicht Einstufungen, etwa die für Borate.
 - **Australien:** die [Seiten zu kristallinem Siliciumdioxid und Silikose](https://www.safeworkaustralia.gov.au/safety-topic/hazards/crystalline-silica-and-silicosis/research-lower-workplace-exposure-standard-respirable-crystalline-silica-0) von Safe Work Australia.
 - **Neuseeland:** WorkSafe New Zealand legt die Arbeitsplatzgrenzwerte fest; die [Geschichte des Grenzwerts für Quarzstaub](https://mbie.govt.nz/building-and-energy/building/building-and-construction-consultations/work-with-engineered-stone-and-materials-containing-crystalline-silica/annex-iii) des MBIE nennt die Daten.
 - **Brennöfen:** der [Leitfaden für den Ofenraum](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Designing-A-Kiln-Room-1.pdf) von Skutt, das [Merkblatt von Orton und CCSA zu Brenngasen](https://assets.noviams.com/novi-file-uploads/ccsa/Product_Safety/Fumes.pdf) und vor allem die Bedienungsanleitung Ihres eigenen Ofens.
@@ -257,7 +261,6 @@ Das sind die Primärquellen, deren Lektüre sich am meisten lohnt. Die meisten s
 - [HSE: COSHH essentials CR1, Glaze and colour preparation](https://www.hse.gov.uk/PUBNS/guidance/cr1.pdf)
 - [HSE: COSHH essentials CR5, Spraying glazes and colours](https://www.hse.gov.uk/PUBNS/guidance/cr5.pdf)
 - [HSE: Fit testing basics](https://www.hse.gov.uk/respiratory-protective-equipment/fit-testing-basics.htm)
-- [NEPSI: Occupational exposure limits for respirable crystalline silica in Europe](https://nepsi.eu/wp-content/uploads/2022/10/oel_full_table_september_2020_europe.pdf)
 - [Safe Work Australia: Research on a lower workplace exposure standard for respirable crystalline silica](https://www.safeworkaustralia.gov.au/safety-topic/hazards/crystalline-silica-and-silicosis/research-lower-workplace-exposure-standard-respirable-crystalline-silica-0)
 - [Enviliance: Report 16612, Australia's June 2026 decision on the silica exposure standard](https://enviliance.com/regions/oceania/au/report_16612)
 - [MBIE (Neuseeland): Work with engineered stone and materials containing crystalline silica, Annex III](https://mbie.govt.nz/building-and-energy/building/building-and-construction-consultations/work-with-engineered-stone-and-materials-containing-crystalline-silica/annex-iii)

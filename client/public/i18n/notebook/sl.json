@@ -1,0 +1,88 @@
+{
+  "home": {
+    "title": "Vaša delavniška beležnica",
+    "signedInAs": "Prijavljeni ste kot {email}.",
+    "trying": "Aplikacijo Glazecalc preizkušate kot {name}. Začnite z receptom.",
+    "welcomeBack": "Nadaljujte, kjer ste ostali.",
+    "sections": {
+      "recipe": {
+        "title": "Recepti",
+        "text": "Sestavite glazuro iz surovin in količin, poglejte njeno Segerjevo formulo (UMF) in jo shranite."
+      },
+      "material": {
+        "title": "Surovine",
+        "text": "Dodajte lastne surovine iz kemijske formule ali analize dobavitelja."
+      },
+      "additive": {
+        "title": "Dodatki in barvila",
+        "text": "Hranite barvila in sredstva za motnost, ki jih dodajate k osnovni glazuri."
+      },
+      "firing": {
+        "title": "Dnevniki žganja",
+        "text": "Zapisujte čase, temperature in stožce pri vsakem žganju."
+      },
+      "notes": {
+        "title": "Zapiski",
+        "text": "Hranite rezultate testov in vse drugo, kar si je vredno zapomniti."
+      },
+      "advice": {
+        "title": "Nasveti za glazure",
+        "text": "Nasveti o mešanju, glaziranju in žganju ter vaši lastni nasveti."
+      },
+      "guides": {
+        "title": "Vodniki",
+        "text": "Od tega, kaj je glazura, do njenega žganja, in kako pri tem poskrbeti za varnost vseh."
+      }
+    },
+    "newHere": "Se s Segerjevo formulo šele spoznavate? <advice>Stran z nasveti</advice> razloži osnove, <about>stran o aplikaciji</about> pa, kako deluje Glazecalc."
+  },
+  "firing": {
+    "title": "Dnevniki žganja",
+    "lead": "Zapišite vsako žganje: čase, temperature, stožce in opombe o peči.",
+    "titleLabel": "Naslov žganja:",
+    "kiln": "Peč:",
+    "date": "Datum žganja:",
+    "notes": "Opombe o žganju:",
+    "fieldSelect": "Izberite polja in jih dodajte v zapis žganja:",
+    "addField": "Dodaj polje",
+    "included": "Polja, ki ste jih dodali:",
+    "fieldName": "Ime polja: {name}",
+    "moveLeft": "Premakni polje levo",
+    "moveRight": "Premakni polje desno",
+    "removeField": "Odstrani polje",
+    "addRow": "Dodaj vrstico v preglednico žganja",
+    "recordHeading": "Zapiši žganje",
+    "rowActions": "Dejanja za vrstico",
+    "cell": "{field}, vrstica {row}",
+    "removeRow": "Odstrani vrstico",
+    "save": "Shrani",
+    "storedHeading": "Moja shranjena žganja:",
+    "stored": "Naslov: {title}, peč: {kiln}, datum: {date}",
+    "storedNotes": "Opombe: {notes}",
+    "titleMissing": "Vnesite naslov žganja.",
+    "fieldsMissing": "Dodajte vsaj eno polje za zapis, na primer {example}.",
+    "chooseField": "Izberite polje, nato kliknite »Dodaj polje«.",
+    "fetchFailed": "Pri pridobivanju podatkov o dnevnikih žganja je prišlo do napake.",
+    "saved": "Zapis žganja je uspešno dodan na strežnik.",
+    "saveFailed": "Napaka: zahteva strežniku ni uspela."
+  },
+  "notes": {
+    "title": "Zapiski",
+    "lead": "Vse drugo, kar si je vredno zapomniti o glazurah.",
+    "intro": "To je stran za zapiske. Tu lahko pišete zapiske in jih shranite.",
+    "titleLabel": "Naslov:",
+    "content": "Zapisek:",
+    "save": "Shrani",
+    "mineHeading": "Moji shranjeni zapiski:",
+    "titleMissing": "Vnesite naslov zapiska.",
+    "contentMissing": "Napišite zapisek.",
+    "untitled": "Zapisek brez naslova",
+    "fetchFailed": "Pri pridobivanju zapiskov je prišlo do napake.",
+    "saved": "Zapisek je uspešno dodan na strežnik.",
+    "saveFailed": "Napaka: zahteva strežniku ni uspela."
+  },
+  "trash": {
+    "title": "Koš",
+    "comingSoon": "Koš bo na voljo v naslednji različici aplikacije Glazecalc. Do takrat brišite in odstranjujte previdno: ko podatki izginejo, so izgubljeni."
+  }
+}

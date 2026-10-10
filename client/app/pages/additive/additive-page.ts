@@ -9,6 +9,7 @@ import { Busy } from '../../shared/busy';
 import { ChemistryForm } from '../../shared/chemistry-form';
 import { FieldCheck } from '../../shared/field-checks';
 import { fixed } from '../../shared/format';
+import { NumberInput } from '../../shared/number-input';
 import { Notices, NoticesList } from '../../shared/notices';
 import { ADDITIVE_OXIDES, fieldsText, firstOf } from '../../shared/options';
 import { PageHeader } from '../../shared/page-header';
@@ -17,7 +18,16 @@ import { StandardList } from '../../shared/standard-list';
 
 @Component({
   selector: 'gc-additive-page',
-  imports: [FieldCheck, FormsModule, NoticesList, PageHeader, RemoveButton, StandardList, TranslocoDirective],
+  imports: [
+    FieldCheck,
+    FormsModule,
+    NoticesList,
+    NumberInput,
+    PageHeader,
+    RemoveButton,
+    StandardList,
+    TranslocoDirective
+  ],
   templateUrl: './additive-page.html'
 })
 export class AdditivePage implements OnInit {
@@ -36,6 +46,8 @@ export class AdditivePage implements OnInit {
 
   protected readonly myAdditives = signal<Additive[]>([]);
   protected readonly standardAdditives = signal<Additive[]>([]);
+  /** The standard list could not be fetched: the list says so, and offers to try again. */
+  protected readonly standardFailed = signal(false);
   protected readonly removal = new Removal(this.additives, this.myAdditives, this.notices, (additive) => additive.name);
 
   ngOnInit(): void {
@@ -43,9 +55,20 @@ export class AdditivePage implements OnInit {
       (list) => this.myAdditives.set(list),
       () => this.notices.error(translate('library.additive.fetchFailed'))
     );
+    this.loadStandard();
+  }
+
+  protected loadStandard(): void {
     this.additives.getStandard().then(
-      (list) => this.standardAdditives.set(list),
-      () => this.notices.error(translate('library.additive.standardFetchFailed'))
+      (list) => {
+        this.standardAdditives.set(list);
+        this.standardFailed.set(false);
+      },
+      () => {
+        // Said once above; the list says it too, where it would be.
+        if (!this.standardFailed()) this.notices.error(translate('library.additive.standardFetchFailed'));
+        this.standardFailed.set(true);
+      }
     );
   }
 

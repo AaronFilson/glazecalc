@@ -1,0 +1,237 @@
+{
+  "auth": {
+    "signInHeading": "Prijava",
+    "keepHeading": "Ohranite svoje delo",
+    "signUpHeading": "Ustvarjanje računa",
+    "signInLead": "Dobrodošli nazaj v beležnici glazur.",
+    "keepLead": "Ohranite vse, kar ste ustvarili kot {name}: dodajte e-poštni naslov in geslo. Še naprej bo brezplačno.",
+    "signUpLead": "Brezplačno. Vaši recepti, surovine in zapiski so zasebni, vidni samo v vašem računu.",
+    "trialNote": "Že imate račun? Ob prijavi se vanj prenese, kar ste ustvarili kot {name}. Ste tu prvič? Namesto tega <signup>ustvarite račun</signup> in delo ohranite v njem.",
+    "email": "E-pošta",
+    "password": "Geslo",
+    "passwordHint": "Vsaj 8 znakov.",
+    "confirmation": "Potrditev gesla",
+    "passwordMissing": "Vnesite geslo.",
+    "createAccount": "Ustvari račun",
+    "signIn": "Prijavi se",
+    "haveAccount": "Že imate račun? <signin>Prijavite se</signin>",
+    "forgot": "Ste pozabili geslo? Ponastavite ga",
+    "newHere": "Ste tu prvič? <signup>Ustvarite brezplačen račun</signup>",
+    "signUpFailed": "Napaka: računa ni bilo mogoče ustvariti.",
+    "signInFailed": "Napaka: prijava ni uspela."
+  },
+  "forgot": {
+    "heading": "Ponastavitev gesla",
+    "checkInbox": "Preverite mapo Prejeto in mapo z neželeno pošto. Če ne prejmete ničesar, preverite naslov in zahtevo pošljite znova.",
+    "intro": "Vnesite e-poštni naslov svojega računa in poslali vam bomo povezavo, s katero boste izbrali novo geslo.",
+    "email": "E-pošta:",
+    "send": "Pošlji povezavo za ponastavitev",
+    "back": "Nazaj na prijavo",
+    "failed": "Napaka: e-poštnega sporočila za ponastavitev ni bilo mogoče poslati. Poskusite znova."
+  },
+  "reset": {
+    "heading": "Izbira novega gesla",
+    "signIn": "Prijava",
+    "incomplete": "Ta stran potrebuje povezavo iz e-poštnega sporočila za ponastavitev gesla, ta povezava pa je nepopolna.",
+    "askAgain": "Zahtevaj novo povezavo",
+    "password": "Novo geslo:",
+    "confirmation": "Potrditev novega gesla:",
+    "save": "Shrani novo geslo",
+    "hint": "Vsaj 8 znakov. Vse naprave, ki so prijavljene v račun, bodo odjavljene.",
+    "failed": "Napaka: gesla ni bilo mogoče spremeniti. Poskusite znova."
+  },
+  "account": {
+    "trialTitle": "Vaš preizkus",
+    "trialLead": "Aplikacijo Glazecalc preizkušate kot {name}.",
+    "keepHeading": "Ohranite svoje delo",
+    "keepText": "Ta preizkus bo skupaj z vsem, kar je v njem, odstranjen ob izteku ({date}). Ustvarite brezplačen račun in ohranite vse: recepti, surovine in zapiski ostanejo takšni, kot so, {name} pa ostane vaše prikazno ime.",
+    "createAccount": "Ustvari račun",
+    "title": "Vaš račun",
+    "signedInAs": "Prijavljeni ste kot {email}.",
+    "changeHeading": "Sprememba gesla",
+    "current": "Trenutno geslo",
+    "currentMissing": "Vnesite trenutno geslo.",
+    "password": "Novo geslo",
+    "passwordHint": "Vsaj 8 znakov. Druge naprave, ki so prijavljene v ta račun, bodo odjavljene.",
+    "confirmation": "Potrditev novega gesla",
+    "change": "Spremeni geslo",
+    "changeFailed": "Napaka: gesla ni bilo mogoče spremeniti. Poskusite znova.",
+    "deleteHeading": "Izbris računa",
+    "deleteText": "S tem odstranite račun in vse, kar ste shranili: recepte, surovine, dodatke, zapiske, dnevnike žganja in nasvete. Tega ni mogoče razveljaviti.",
+    "deletePassword": "Geslo za potrditev",
+    "deletePasswordMissing": "Za potrditev vnesite geslo.",
+    "delete": "Izbriši moj račun",
+    "deleteFailed": "Napaka: računa ni bilo mogoče izbrisati. Poskusite znova."
+  },
+  "settings": {
+    "heading": "Nastavitve",
+    "intro": "Shranjene so v vašem računu, zato veljajo na vseh napravah.",
+    "saveFailed": "Nastavitve ni bilo mogoče shraniti. Poskusite znova.",
+    "language": {
+      "legend": "Jezik",
+      "help": "Jezik aplikacije, vodnikov in e-poštnih sporočil, ki jih prejmete. Ko ga spremenite, se ta stran odpre v izbranem jeziku.",
+      "saved": "Shranjeno: {language}."
+    },
+    "region": {
+      "legend": "Kje delate",
+      "none": {
+        "label": "Ni izbrano",
+        "saved": "Shranjeno: regija ni izbrana; privzete nastavitve sledijo brskalniku."
+      },
+      "saved": "Shranjeno: {region}.",
+      "help": "Surovine, ki se tam prodajajo, in privzete nastavitve za številke, datume, temperature in stožce spodaj. Dokler ne izberete, sledijo jeziku brskalnika."
+    },
+    "format": {
+      "legend": "Številke in datumi",
+      "auto": {
+        "label": "Kot v mojem jeziku in regiji",
+        "saved": "Shranjeno: številke in datumi, kot jih zapisujeta vaš jezik in regija."
+      },
+      "saved": "Shranjeno: številke in datumi kot v jeziku {language}.",
+      "help": "Kako se zapisujejo številke in datumi: 12,345.6 ali 12.345,6 ter vrstni red dneva in meseca."
+    },
+    "decimalMark": {
+      "legend": "Vnos količin",
+      "either": {
+        "label": "Decimalna vejica ali pika",
+        "example": "12,5 ali 12.5",
+        "saved": "Shranjeno: količine lahko vnašate z vejico ali piko."
+      },
+      "comma": {
+        "label": "Decimalna vejica",
+        "saved": "Shranjeno: količine vnašate z decimalno vejico."
+      },
+      "point": {
+        "label": "Decimalna pika",
+        "saved": "Shranjeno: količine vnašate z decimalno piko."
+      },
+      "help": "Pri možnosti »Decimalna vejica ali pika« se količina, kot je 1.250, prebere tako, kot so vaše številke zapisane zgoraj."
+    },
+    "temperature": {
+      "legend": "Temperature",
+      "celsius": {
+        "label": "Celzij",
+        "saved": "Shranjeno: temperature v °C."
+      },
+      "fahrenheit": {
+        "label": "Fahrenheit",
+        "saved": "Shranjeno: temperature v °F."
+      },
+      "help": "Dokler ne izberete, ta nastavitev sledi vaši regiji: °F v ZDA, drugod °C."
+    },
+    "cones": {
+      "legend": "Žganje",
+      "orton": {
+        "label": "Po Ortonovih stožcih",
+        "example": "stožec 04, stožec 6",
+        "saved": "Shranjeno: žganje po Ortonovih stožcih."
+      },
+      "temperature": {
+        "label": "Po temperaturi, kot v programu krmilnika peči",
+        "saved": "Shranjeno: žganje po temperaturi."
+      },
+      "help": "Dokler ne izberete, ta nastavitev sledi vaši regiji: Ortonovi stožci v ZDA, Združenem kraljestvu, na Irskem, v Avstraliji in na Novi Zelandiji, temperatura v preostali Evropi."
+    },
+    "density": {
+      "legend": "Gostota glazure",
+      "sg": {
+        "label": "Relativna gostota",
+        "saved": "Shranjeno: gostota glazure kot relativna gostota.",
+        "example": "rel. gostota 1,45"
+      },
+      "baume": {
+        "label": "Stopinje Baumé, z areometrom",
+        "saved": "Shranjeno: gostota glazure v stopinjah Baumé."
+      },
+      "pint": {
+        "label": "Masa pinte: unče v britanski pinti",
+        "saved": "Shranjeno: gostota glazure kot masa pinte."
+      },
+      "help": "Kako vodniki navajajo, kako gosta je glazura. Dokler ne izberete, ta nastavitev sledi vaši regiji: stopinje Baumé v Italiji, drugod relativna gostota."
+    },
+    "theme": {
+      "legend": "Svetlo ali temno",
+      "system": {
+        "label": "Kot je nastavljeno v napravi",
+        "saved": "Shranjeno: svetlo ali temno, kot je nastavljeno v posamezni napravi."
+      },
+      "light": {
+        "label": "Svetlo",
+        "saved": "Shranjeno: vedno svetlo."
+      },
+      "dark": {
+        "label": "Temno",
+        "saved": "Shranjeno: vedno temno."
+      },
+      "help": "Natisnjeni recepti so vedno črni na belem."
+    },
+    "palette": {
+      "legend": "Barve",
+      "saved": "Shranjeno: gumbi in povezave v barvi {palette}.",
+      "help": "Barve gumbov, povezav in zavihkov, poimenovane po glazurah. Vsaka je dobro berljiva v svetlem in v temnem načinu."
+    },
+    "weightUnit": {
+      "legend": "Mase za tehtanje",
+      "grams": {
+        "label": "Grami",
+        "saved": "Shranjeno: mase za tehtanje so v gramih."
+      },
+      "pounds": {
+        "label": "Funti in unče",
+        "saved": "Shranjeno: mase za tehtanje so v funtih in unčah."
+      },
+      "help": "Za natisnjene sezname za tehtanje."
+    },
+    "gramPrecision": {
+      "legend": "Grami na natisnjenih seznamih",
+      "single": {
+        "label": "Na desetinko grama",
+        "saved": "Shranjeno: grami so prikazani na desetinko natančno."
+      },
+      "full": {
+        "label": "Polna natančnost",
+        "saved": "Shranjeno: grami so prikazani v celoti, na 5 decimalnih mest."
+      },
+      "help": "Pri prikazu na desetinko so količine pod 10 g še vedno prikazane na stotinko (2,35 g), zaradi barvil v majhnih testnih mešanicah."
+    },
+    "lead": {
+      "legend": "Svinec",
+      "off": {
+        "label": "Izklopljeno: svinec se nikoli ne doda v recept niti ne predlaga",
+        "saved": "Shranjeno: svinec se nikoli ne doda v recept niti ne predlaga."
+      },
+      "on": {
+        "label": "Vklopljeno: surovine s svincem se lahko dodajo in predlagajo",
+        "saved": "Shranjeno: surovine s svincem se lahko dodajo in predlagajo."
+      },
+      "help": "Svinec je strupen pri vdihavanju ali zaužitju in se kopiči v telesu, svinčena glazura pa ga lahko sprošča v hrano in pijačo; noben izračun ne more pokazati, ali ga žgan izdelek sprošča. Ko je izklopljeno, se recepti, ki že vsebujejo svinec, še vedno odprejo takšni, kot so bili.",
+      "warning": "Svinec uporabljajte samo kot frito, nikoli kot nefritani rdeči, beli ali rumeni svinec ali svinčevo glajo. Mešajte ga mokro, nikoli ga ne razpršujte, nosite zaščitno dihalno masko in čistite mokro. Izdelke s svinčeno glazuro držite stran od hrane in pijače, razen če je žgan izdelek uspešno prestal laboratorijski preskus sproščanja kovin.",
+      "turnOn": "Vklopi svinec",
+      "keepOff": "Pusti izklopljeno"
+    },
+    "englishTerms": {
+      "legend": "Angleški izrazi",
+      "off": {
+        "label": "Izklopljeno",
+        "saved": "Shranjeno: brez angleških izrazov."
+      },
+      "on": {
+        "label": "Prikaži angleški izraz za ključnimi izrazi",
+        "saved": "Shranjeno: za ključnimi izrazi je prikazan angleški izraz."
+      },
+      "help": "Za branje angleških virov, kot je Digitalfire, vzporedno s to aplikacijo: za ključnimi izrazi se v oklepaju prikaže angleški izraz."
+    },
+    "notice": {
+      "legend": "Obvestilo o prevodu",
+      "shown": {
+        "label": "Prikazano",
+        "saved": "Shranjeno: obvestilo je prikazano."
+      },
+      "hidden": {
+        "label": "Skrito",
+        "saved": "Shranjeno: obvestilo je skrito. V vodnikih o varnosti ostane ena vrstica obvestila."
+      },
+      "help": "Opomba na vrhu vsake strani, da jo je prevedla umetna inteligenca, z možnostjo, da predlagate popravek."
+    }
+  }
+}

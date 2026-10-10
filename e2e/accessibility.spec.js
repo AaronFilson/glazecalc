@@ -7,11 +7,16 @@ const { default: AxeBuilder } = require('@axe-core/playwright');
 const { API, addColorant, addStandardMaterial, signUpAndSignIn } = require('./helpers');
 
 const WCAG = ['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa'];
+// Landmarks and headings, which axe tags as best practice rather than WCAG: one main
+// landmark with all the content in landmarks, one h1, and no heading levels skipped.
+const STRUCTURE = Object.fromEntries(
+  ['landmark-one-main', 'region', 'page-has-heading-one', 'heading-order'].map((rule) => [rule, { enabled: true }])
+);
 
 // Fails with one line per problem and the elements it was found on.
 const expectNoProblems = async (page, label) => {
   await page.waitForLoadState('networkidle');
-  const { violations } = await new AxeBuilder({ page }).withTags(WCAG).analyze();
+  const { violations } = await new AxeBuilder({ page }).options({ rules: STRUCTURE }).withTags(WCAG).analyze();
   const problems = violations.map(
     (v) => `${v.id} (${v.impact}): ${v.help} at ${v.nodes.map((n) => n.target.join(' ')).join(', ')}`
   );
@@ -62,6 +67,8 @@ for (const colorScheme of ['light', 'dark']) {
     test.use({ colorScheme });
 
     test('the public pages', async ({ page }) => {
+      // Sixteen pages, the guides long ones, each checked whole: more than the default 30 seconds on a busy machine.
+      test.setTimeout(90000);
       for (const path of PUBLIC_PAGES) {
         await page.goto(path);
         await expect(page.locator('h1')).toBeVisible();

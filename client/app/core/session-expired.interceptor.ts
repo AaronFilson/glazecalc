@@ -36,7 +36,8 @@ export const sessionExpiredInterceptor: HttpInterceptorFn = (req, next) => {
       ) {
         const wasTrial = auth.trial() !== null;
         auth.sessionEnded();
-        void router.navigateByUrl(wasTrial ? '/' : '/signin');
+        // The page left can tell why (core/leave.guard.ts): nothing on it can be saved now.
+        void router.navigateByUrl(wasTrial ? '/' : '/signin', { state: { sessionEnded: true } });
       }
       return throwError(() => err);
     })

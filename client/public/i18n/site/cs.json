@@ -1,0 +1,111 @@
+{
+  "landing": {
+    "eyebrow": "Kalkulačka glazur a dílenský zápisník",
+    "heading": "Chemie glazur pro keramiky, zdarma.",
+    "lead": "Glazurám rozumějte, nejen je míchejte. Zadejte recept a hned uvidíte jeho Segerův vzorec (UMF), poměr oxidu křemičitého k oxidu hlinitému a poměr taviv. Mějte recepty, suroviny, barviva, poznámky a záznamy výpalů pohromadě v jednom soukromém zápisníku.",
+    "trialEnded": "Váš zkušební přístup skončil. Začněte nový, nebo si vytvořte účet zdarma a uchovejte si svou práci.",
+    "tryIt": "Vyzkoušet hned",
+    "createAccount": "Vytvořit účet zdarma",
+    "trialFailed": "Zkušební přístup se teď nepodařilo spustit. Zkuste to prosím znovu.",
+    "heroNote": "Vyzkoušíte bez registrace · Zdarma a open source · Vaše recepty zůstanou soukromé",
+    "heroAlt": "Řada vypálených sad žároměrek: bílé pyrometrické kužely v každé sadě se v žáru pece ohnuly.",
+    "heroCaption": "Sady žároměrek po výpalu: každá žároměrka se ohne, jakmile v peci dostane dostatečnou tepelnou expozici.",
+    "exampleHeading": "Ukázka: klasická základní glazura na seladon",
+    "exampleCaption": "Glazura „4321“ (autor Bernard Leach), často vypalovaná na žároměrku 10, v hmotnostních dílech.",
+    "material": "Surovina",
+    "parts": "Díly",
+    "unityHeading": "Její Segerův vzorec",
+    "exampleNote": "Taviva dávají dohromady 1, takže lze jakékoli dvě glazury porovnat na stejném základě. Spočítáno přímo tady ve vašem prohlížeči stejným kódem, jaký používá kalkulačka.",
+    "featuresHeading": "Co Glazecalc umí",
+    "features": {
+      "unity": {
+        "title": "Segerův vzorec okamžitě",
+        "text": "Hned po zadání receptu uvidíte taviva, oxid hlinitý a oxid křemičitý v Segerově vzorci, tedy tak, jak recepty porovnávají odborníci na chemii glazur."
+      },
+      "substitute": {
+        "title": "Opravy a náhrady",
+        "text": "Surovina se přestala vyrábět? Porovnejte vzorce a najděte náhradu, která se taví stejně."
+      },
+      "notebook": {
+        "title": "Váš dílenský zápisník",
+        "text": "Mějte recepty, vlastní suroviny, barviva, poznámky a záznamy výpalů pohromadě na jednom místě."
+      },
+      "learn": {
+        "title": "Učte se průběžně",
+        "text": "Hned vedle čísel najdete srozumitelné návody: od toho, co je glazura, až po její bezpečný výpal."
+      }
+    },
+    "umfHeading": "Co je Segerův vzorec?",
+    "umfRecipe": "Recept na glazuru říká, kolik které suroviny navážit. Segerův vzorec, anglicky unity molecular formula (UMF), říká, čím se tyto suroviny stanou v peci: kolik molekul kterého oxidu v nich je, přepočteno tak, aby taviva dávala dohromady jedna.",
+    "umfGroups": "Taviva způsobují, že se glazura taví, oxid hlinitý zvyšuje viskozitu taveniny a oxid křemičitý tvoří sklo. Porovnání těchto tří skupin vysvětlí, proč je jedna glazura lesklá a jiná matná nebo proč jedna stéká a jiná zůstane na místě, a ukáže, jak nahradit surovinu, která se už neprodává.",
+    "readAdvice": "Přečíst další rady ke glazurám",
+    "closingHeading": "Začněte, kdykoli budete chtít.",
+    "closingText": "Vyzkoušejte kalkulačku hned a pak si vytvořte účet, ať vám vaše práce zůstane."
+  },
+  "about": {
+    "title": "O aplikaci Glazecalc",
+    "lead": "Bezplatná open source kalkulačka chemie glazur a zápisník pro keramiky, keramické výtvarníky a studenty.",
+    "whatHeading": "Co aplikace dělá",
+    "what": "Glazecalc převádí recept na glazuru, tedy suroviny a kolik které navážíte, na její Segerův vzorec (UMF): oxidy, z nichž se glazura po výpalu skládá, přepočtené tak, aby taviva dávala dohromady jedna. Díky tomu lze recepty porovnávat, lépe se vysvětlí, jak se glazura chová, a snáz se najde náhrada, když je třeba některou surovinu nahradit.",
+    "alongside": "Vedle kalkulačky uchovává vaše recepty, vlastní suroviny, barviva a další přísady, poznámky a záznamy výpalů a nabízí stránku praktických <advice>rad ke glazurám</advice> a <guides>návody</guides> pro začínající keramiky: od toho, co je glazura, až po její bezpečný výpal.",
+    "numbersHeading": "Jak se čísla počítají",
+    "numbers": "Každá surovina je popsaná chemickým vzorcem nebo oxidovým rozborem a k tomu ztrátou žíháním: částí, která v peci odejde, například oxidem uhličitým v křídě nebo vodou v kaolinu. Glazecalc převede každé množství na moly jednotlivých oxidů podle standardních molárních hmotností, sečte je za celý recept a vydělí celkovým počtem molů taviv. Barviva a další přísady se u receptu uvádějí, ale do Segerova vzorce se, jak je obvyklé, nezapočítávají.",
+    "guide": "Výsledky jsou vodítko, ne záruka. Skutečné suroviny se liší od dodavatele k dodavateli i od šarže k šarži a výpal je stejně důležitý jako chemie, proto každou glazuru vyzkoušejte. Glazury na plochy ve styku s potravinami by se měly otestovat na uvolňování kovů.",
+    "builtHeading": "Jak je aplikace postavená",
+    "built": "Aplikace Glazecalc vznikla v roce 2017 a v roce 2026 byla postavena znovu. Je to jedna malá webová aplikace a její <source>zdrojový kód je na webu GitHub</source> pod licencí MIT.",
+    "stackBrowser": "Angular 22 v prohlížeči (standalone komponenty a signály), chemie glazur v malé sdílené knihovně.",
+    "stackServer": "API v jazyce TypeScript na Node.js 24 a Express 5 s databází MongoDB 9, ověřované více než 350 automatickými testy.",
+    "stackHosting": "Běží v kontejnerech Docker na Amazon Web Services, za serverem nginx s HTTPS od Let's Encrypt.",
+    "stackDeploy": "Nasazování přes GitHub Actions: obrazy se při každé změně sestaví a otestují a nasazení se k AWS přihlašuje bez uložených klíčů.",
+    "whoHeading": "Kdo aplikaci vytváří",
+    "who": "Glazecalc vytváří Aaron Filson. Narazíte na problém nebo máte nápad? <issues>Založte hlášení na webu GitHub</issues>.",
+    "studio": "Ručně vyráběnou keramiku, kterou dělá Aaron Filson, najdete v ateliéru <studio>Updraft Pottery Studio</studio> ve městě Tacoma ve státě Washington. Prohlédněte si ji, a pokud vás některý kus osloví, objednejte si ho."
+  },
+  "privacy": {
+    "title": "Ochrana soukromí",
+    "lead": "Naposledy aktualizováno v říjnu 2026.",
+    "shortHeading": "Stručně",
+    "short": "Glazecalc uchovává to, co potřebuje k provozu vašeho účtu, a nic víc. Nejsou tu žádné reklamy, žádná analytika, žádné sledovací soubory cookie ani skripty třetích stran. Vaše data se nikdy neprodávají ani nesdílejí.",
+    "storedHeading": "Co se ukládá",
+    "storedAccount": "<b>Váš účet:</b> vaše e-mailová adresa a heslo, které se ukládá jen jako jednosměrný hash (bcrypt), nikdy jako samotné heslo.",
+    "storedTrial": "<b>Zkušební přístup (tlačítko Vyzkoušet hned):</b> žádný e-mail ani heslo, jen vygenerované jméno, například „speckled quiet kilns“. Zkušební přístup a vše, co je v něm uložené, se automaticky odstraní 14 dní po jeho začátku, pokud si je neuchováte vytvořením účtu.",
+    "storedSaved": "<b>Co uložíte:</b> vaše recepty, suroviny, přísady, poznámky, záznamy výpalů a rady. Ostatní uživatelé je nevidí.",
+    "storedResets": "<b>Žádosti o obnovení hesla:</b> otisk každého odkazu pro obnovení (ne samotný odkaz), který se automaticky smaže, když po 30 minutách vyprší.",
+    "storedBrowser": "<b>Ve vašem prohlížeči:</b> jeden soubor cookie, <code>glazecalc_session</code>, který udržuje vaše přihlášení. Obsahuje váš přihlašovací token, skripty na stránce ho nemohou číst, posílá se jen na vlastní server aplikace Glazecalc a platí 7 dní (u zkušebního přístupu 14). V místním úložišti prohlížeče je záznam o vašem přihlášení a během zkušebního přístupu také jeho jméno a datum konce. Odhlášením se tyto údaje odstraní.",
+    "emailHeading": "E-mail",
+    "email": "Glazecalc posílá e-maily jen tehdy, když požádáte o obnovení hesla a když se vaše heslo změní. Odesílají se přes službu Amazon Simple Email Service. Žádný zpravodaj ani marketingové e-maily se neposílají.",
+    "hostingHeading": "Protokoly, zálohy a hosting",
+    "logs": "Webový server zapisuje každý požadavek včetně vaší IP adresy do protokolu, který se uchovává 14 dní kvůli provozu a zabezpečení webu.",
+    "backups": "Šifrované zálohy databáze se uchovávají 30 dní a kopie disku serveru 7 dní, aby bylo možné web po výpadku obnovit.",
+    "hosting": "Vše hostuje společnost Amazon Web Services ve Spojených státech (Oregon).",
+    "deletingHeading": "Odstranění vašich dat",
+    "deleting": "Účet můžete odstranit na <account>stránce účtu</account>. Tím se okamžitě odstraní váš účet i vše, co je v něm uložené; tlačítko Zahodit zkušební přístup udělá totéž se zkušebním přístupem. Kopie v zálohách zmizí, až zálohy vyprší, tedy do 30 dní.",
+    "questionsHeading": "Dotazy",
+    "questions": "Ptejte se <issues>založením hlášení na webu GitHub</issues>. Pokud se tyto zásady změní, změní se i datum v horní části této stránky."
+  },
+  "notFound": {
+    "heading": "Stránka nenalezena",
+    "text": "Na této adrese žádná stránka není. Možná byla přesunuta, nebo je odkaz chybně napsaný.",
+    "start": "Přejít na úvodní stránku"
+  },
+  "advice": {
+    "title": "Rady ke glazurám",
+    "lead": "Praktické tipy k míchání, glazování a výpalu a k tomu vaše vlastní rady.",
+    "signUp": "<signup>Vytvořte si účet zdarma</signup> nebo se <signin>přihlaste</signin> a ukládejte si vlastní rady.",
+    "generalHeading": "Obecné rady",
+    "tags": "Štítky: {list}",
+    "addHeading": "Přidejte vlastní radu",
+    "titleLabel": "Název:",
+    "tagsLabel": "Štítky:",
+    "contentLabel": "Text rady:",
+    "save": "Uložit",
+    "mineHeading": "Moje rady",
+    "nothingSaved": "Zatím nic uloženo.",
+    "titleMissing": "Zadejte název rady.",
+    "contentMissing": "Napište text rady.",
+    "fetchFailed": "Při načítání rad došlo k chybě.",
+    "standardFetchFailed": "Při načítání rad ze serveru došlo k chybě.",
+    "saved": "Rada byla úspěšně přidána.",
+    "saveFailed": "Při odesílání rady došlo k chybě."
+  }
+}

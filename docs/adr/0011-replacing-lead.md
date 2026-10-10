@@ -10,13 +10,13 @@ breathe and swallow, builds up in the body, and can leach from fired ware into f
 those recipes without lead, but nothing lead-free supplies PbO, so Suggest amounts (ADR 10), which
 aims at the old recipe's oxides, cannot do it: with lead-free frits it put in no frit at all.
 
-Research for this decision (research_notes/Replacing lead in old glazes, and the report in
-reports/) found no published rule converting PbO mole for mole. Lead is often the only flux in an
+Research for this decision (notes on replacing lead in old glazes, and a report; both kept
+outside the repository) found no published rule converting PbO mole for mole. Lead is often the only flux in an
 old honey or slipware glaze, so deleting it leaves nothing to scale against. What potters and
 references do is give lead's work to boron (from calcium-borosilicate frits) and other fluxes,
 with boron set by the firing: Matt Katz's rule of at least 0.1 B₂O₃ for every 50 °C below
-1300 °C, about 0.5 at cone 04, which agrees with Digitalfire. No other glaze program found hides
-or blocks lead.
+1300 °C, about 0.5 at cone 04 and 0.6 at cone 06, near Digitalfire's "0.5 molar parts" at cone 06.
+No other glaze program found hides or blocks lead.
 
 ## Decision
 

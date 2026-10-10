@@ -52,6 +52,9 @@
     "keepTrying": "Continua a provare",
     "discardFailed": "Impossibile eliminare la prova. Riprovare."
   },
+  "signedOut": {
+    "recipeLost": "La sessione è stata chiusa prima che le modifiche a «{title}» venissero salvate, quindi sono andate perse."
+  },
   "footer": {
     "site": "Sito",
     "about": "Informazioni",
@@ -70,7 +73,8 @@
     "notANumberPoint": "Inserire un numero, ad esempio {example}, con il punto per i decimali."
   },
   "meta": {
-    "description": "Inserire una ricetta di smalto: formula di Seger (UMF), rapporto silice/allumina, fondenti. Gratuito e open source, per ricette, materiali e cotture."
+    "description": "Inserire una ricetta di smalto: formula di Seger (UMF), rapporto silice/allumina, fondenti. Gratuito e open source, per ricette, materiali e cotture.",
+    "imageAlt": "Glazecalc: capire i propri smalti, non solo prepararli."
   },
   "notices": {
     "dismiss": "Chiudi",
@@ -222,7 +226,8 @@
     "noChemistry": "Senza chimica: escluso dalla formula di Seger",
     "countedAs": "Conteggiato come {name}",
     "nothingMatches": "Nessun risultato. Provare un altro nome, tipo o area.",
-    "loading": "Caricamento..."
+    "loading": "Caricamento...",
+    "notFetched": "Impossibile caricare l’elenco. <retry>Riprova</retry>"
   },
   "chemistryForm": {
     "name": "{noun, select, additive {Dare un nome all’additivo.} other {Dare un nome al materiale.}}",

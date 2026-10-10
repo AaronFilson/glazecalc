@@ -1,0 +1,154 @@
+{
+  "version": {
+    "cones": "Guiden visas för bränning efter käglor, enligt valet under Inställningar.",
+    "temperature": "Guiden visas för bränning efter temperatur, enligt valet under Inställningar.",
+    "showTemperature": "Visa för bränning efter temperatur",
+    "showCones": "Visa för bränning efter käglor"
+  },
+  "notTranslated": "Guiden är inte översatt ännu och visas därför på engelska.",
+  "sectionInEnglish": "Avsnittet har ändrats sedan det översattes och visas därför på engelska tills översättningen har uppdaterats.",
+  "list": {
+    "title": "Guider",
+    "lead": "Guider på enkelt språk för nya keramiker: från vad en glasyr är till hur den bränns, och hur alla skyddas på vägen.",
+    "note": "Guiderna samlar det som tillverkare, säkerhetsmyndigheter och erfarna keramiker publicerar, med källorna i slutet av varje guide. De är en utgångspunkt, inte en ersättning för råvarornas säkerhetsdatablad, ugnens bruksanvisning eller lokala regler.",
+    "glazingBasics": {
+      "title": "Glasering från grunden",
+      "text": "Vad en glasyr är, hur den smälter och vad alla ord i ett recept eller på en säck betyder."
+    },
+    "makingAGlaze": {
+      "title": "Blanda en glasyr",
+      "text": "Köpa, förvara, väga, blanda och sikta en glasyr, sedan prova den och föra anteckningar."
+    },
+    "safeMixing": {
+      "title": "Säker blandning och ventilation",
+      "text": "Damm, andningsskydd, städning, de råvaror som kräver mest försiktighet och hur ugnen ventileras."
+    },
+    "homeSafety": {
+      "title": "Förgifta inte familjen",
+      "text": "Keramik hemma med barn och husdjur: förvaring, damm, ugnen och vad man gör om något har svalts."
+    },
+    "firing": {
+      "title": "Bränna i en enkel keramikugn",
+      "text": "Käglor, Kiln-Sitter och manuella vred, med brännprogram för skröjbränning och glasyrbränning."
+    }
+  },
+  "contents": "På den här sidan",
+  "poison": {
+    "numbersFor": "Nummer för",
+    "choose": "Välj land",
+    "label": "Vem man ringer i {region}",
+    "caption": "Vem man ringer i {region} (numren kontrollerade den {date})",
+    "for": "Gäller",
+    "call": "Ring",
+    "notes": "Öppettider och anmärkningar",
+    "emergency": "Nödsituation: medvetslös, andas inte, krampanfall",
+    "poisonAdvice": "{who, select, children {Råd vid förgiftning: {name} (endast för barn)} other {Råd vid förgiftning: {name}}}",
+    "or": "eller {number}",
+    "online": "På nätet: <link>{name}</link>.",
+    "poisonAdviceNone": "Råd vid förgiftning",
+    "noLine": "Vi kunde inte bekräfta någon allmän telefonlinje för giftinformation här. Ring din läkare, eller larmnumret om det är brådskande.",
+    "medicalAdvice": "Sjukvårdsrådgivning: {name}",
+    "animals": "Djur: {name}",
+    "animalsNone": "Djur",
+    "vet": "Ring veterinären.",
+    "checkedOn": "Kontrollerat på:",
+    "choosePrompt": "Välj land för att se vem man ringer där.",
+    "ministry": "Hälsoministeriets sida: <link>{name}</link>."
+  },
+  "density": {
+    "sg": "specifik vikt {value}",
+    "baume": "{value} °Bé ({sg})",
+    "pint": "{value} oz per brittisk pint ({sg})"
+  },
+  "shops": {
+    "shopsIn": "Butiker i",
+    "label": "Butiker i {region}",
+    "caption": "Några butiker som säljer glasyrråvaror i {region} (kontrollerat den {date})",
+    "nearbyCaption": "Butiker på andra håll som uppger att de levererar till {region} (kontrollerat den {date})",
+    "shop": "Butik",
+    "sells": "Säljer",
+    "packs": "Förpackningsstorlekar som hittats",
+    "seen": "Råvaror som hittats, under butikens namn",
+    "what": {
+      "materials": "glasyrråvaror",
+      "frits": "frittor",
+      "oxides": "oxider",
+      "stains": "färgkroppar",
+      "clays": "lera",
+      "glazes": "färdiga glasyrer",
+      "kilns": "keramikugnar"
+    },
+    "none": "Vi hittade ingen butik som säljer glasyrråvaror i {region}.",
+    "unknown": "Vi har ännu inte letat efter butiker i {region}.",
+    "choosePrompt": "Välj land för att se butiker där."
+  },
+  "silica": {
+    "limitIn": "Gränsvärde i",
+    "label": "Gränsvärdet för kvartsdamm i {region}",
+    "caption": "Det hygieniska gränsvärdet för respirabel kristallin kiseldioxid i {region}, ett medelvärde över 8 timmar (kontrollerat den {date})",
+    "both": "Kvarts och kristobalit",
+    "quartz": "Kvarts",
+    "cristobalite": "Kristobalit",
+    "actionLevel": "Insatsnivå",
+    "value": "{value} mg/m³",
+    "kind": {
+      "binding": "Ett bindande gränsvärde.",
+      "indicative": "Ett vägledande gränsvärde: ett riktvärde, inte ett lagstadgat tak.",
+      "assessment": "Ett bedömningsvärde, inte ett bindande gränsvärde."
+    },
+    "setBy": "Fastställt i <link>{law}</link>.",
+    "lowerThanEu": "Lägre än EU:s bindande gränsvärde på {value} mg/m³.",
+    "sameAsEu": "Samma som EU:s bindande gränsvärde.",
+    "unknown": "Vi kunde inte bekräfta det nationella gränsvärdet i {region}. EU:s bindande gränsvärde på {value} mg/m³ gäller i alla medlemsstater.",
+    "noData": "Vi har ännu inte bekräftat gränsvärdet i {region}.",
+    "agency": "Den nationella myndigheten för arbetsmiljö: <link>{name}</link>.",
+    "agencySilica": "Myndighetens <link>sida om kvartsdamm</link>.",
+    "choosePrompt": "Välj land för att se gränsvärdet där."
+  },
+  "food": {
+    "rulesIn": "Regler i",
+    "label": "Gränsvärden för keramiska föremål i {region}",
+    "caption": "Hur mycket som får lösas ut från ett bränt föremål vid den lagstadgade provningen i {region} (kontrollerat den {date})",
+    "article": "Typ av föremål",
+    "lead": "Bly",
+    "cadmium": "Kadmium",
+    "category": {
+      "flat": "Föremål som inte kan fyllas, eller med ett inre djup på högst 25 mm",
+      "fillable": "Andra föremål som kan fyllas",
+      "cooking": "Kokkärl av alla storlekar samt förpacknings- och förvaringskärl som rymmer mer än 3 L",
+      "rimBand": "Kanten på ett dryckeskärl: ett 2 cm brett band, in- och utvändigt",
+      "rimArticle": "Kanten på ett dryckeskärl: ett 20 mm brett band utvändigt nedanför överkanten, per föremål",
+      "flatware": "Flata föremål, högst 25 mm djupa",
+      "smallHollow": "Små föremål som kan fyllas, under 1,1 L, utom koppar och muggar",
+      "cups": "Koppar och muggar",
+      "largeHollow": "Stora föremål som kan fyllas, från 1,1 L, utom kannor",
+      "pitchers": "Kannor",
+      "auSmall": "Koppar, muggar, kannor, skålar, tekannor och annat servisgods under 1100 mL",
+      "auLarge": "Samma sak, 1100 mL eller mer",
+      "auPlates": "Tallrikar, tefat och liknande servisgods",
+      "auCooking": "Kokkärl"
+    },
+    "judged": {
+      "average": "medelvärde av 6 föremål",
+      "each": "vart och ett av 6"
+    },
+    "euRules": "EU:s regler gäller här.",
+    "law": "Fastställda i <link>{law}</link>.",
+    "inForce": "Gäller från den {date}.",
+    "unknown": "Vi har ännu inte bekräftat reglerna i {region}.",
+    "choosePrompt": "Välj land för att se reglerna där."
+  },
+  "equivalents": {
+    "buyingIn": "Inköp i",
+    "label": "{library, select, US {Motsvarigheter som säljs i USA} UK {Motsvarigheter som säljs i Storbritannien} EU {Motsvarigheter som säljs i EU} other {Motsvarigheter som säljs i Australien och Nya Zeeland}}",
+    "caption": "{library, select, US {Råvaror som inte säljs i USA, var och en med den närmaste motsvarighet som säljs där} UK {Råvaror som inte säljs i Storbritannien, var och en med den närmaste motsvarighet som säljs där} EU {Råvaror som inte säljs i EU, var och en med den närmaste motsvarighet som säljs där} other {Råvaror som inte säljs i Australien och Nya Zeeland, var och en med den närmaste motsvarighet som säljs där}}",
+    "material": "I ett recept",
+    "soldIn": "Säljs i",
+    "closest": "{library, select, US {Närmaste som säljs i USA} UK {Närmaste som säljs i Storbritannien} EU {Närmaste som säljs i EU} other {Närmaste som säljs i Australien och Nya Zeeland}}",
+    "apart": "skiljer sig med {grams} g per 100 g",
+    "noneClose": "Inget inom 15 g per 100 g: jämför efter kemisk analys.",
+    "loading": "Hämtar biblioteket…",
+    "failed": "Biblioteket kunde inte hämtas. Försök igen senare.",
+    "choosePrompt": "Välj land för att se vad som säljs där."
+  }
+}

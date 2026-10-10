@@ -26,18 +26,9 @@ Making a glaze means weighing powdered **raw materials** (ground minerals, clays
 
 ### Where to buy
 
-Potters buy from ceramic suppliers, which sell clay, glaze materials and tools. The table lists some confirmed in the research for this guide. Stock changes, so check before you order. The ceramics reference site Digitalfire keeps a directory of supplier stores for other places.
+Potters buy from ceramic suppliers, which sell clay, glaze materials and tools. The table shows some for your country, each checked on the shop's own site, and you can choose another country to see its shops. Stock changes, so check before you order. Large producers such as Sibelco and Imerys sell to industry; potters buy their materials through shops like these. The ceramics reference site Digitalfire keeps a directory of supplier stores for other places.
 
-Table: Some suppliers of glaze materials, by region
-Label: Suppliers by region
-
-| Region      | Suppliers                                                                                                                              | Pack sizes seen  |
-| ----------- | -------------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
-| US          | Laguna Clay; Clay Art Center; The Ceramic Shop; New Mexico Clay; Seattle Pottery Supply                                                | 50 lb (22.7 kg)  |
-| UK          | Potterycrafts; Bath Potters; Potclays; Valentine Clays                                                                                 | 1, 5 and 25 kg   |
-| EU          | Mondré & Manz (Germany); Goerg & Schneider (Germany, mainly clays); Ceradel (France)                                                   | Ask the supplier |
-| Australia   | Walker Ceramics (trading as Ozclay, with Feeneys and Cesco); Northcote Pottery Supplies, through Bunnings; Oxerra for frits and stains | 10 to 25 kg      |
-| New Zealand | CCG; Decopot                                                                                                                           | 2.5, 5 and 25 kg |
+::shops
 
 ### How much to buy
 
@@ -76,6 +67,10 @@ Brand names come and go as mines close. Custer feldspar, mined in South Dakota f
 **Gerstley Borate**, a natural boron mineral in many older recipes, has been scarce since its mine closed in 2000, though New Mexico Clay reported in November 2025 that Laguna was supplying "Gerstley Borate Original". Sources disagree about **Gillespie Borate** as a replacement. Its maker sells it as pound-for-pound. Berkeley Potters Studio says it "is not a direct substitute", and Digitalfire found it changed a glaze's color. The safe course is to compare the two by their oxides, then test.
 
 Regional names differ too. In North America, **flint**, quartz and silica mean the same ground silica, and Digitalfire says you probably won't find true flint powder from suppliers. In the UK, flint is its own product: Valentine's is calcined (heated) silica. Both are nearly pure silica, so we expect them to be close, but check the analysis. For kaolin, Glazy says one-for-one swaps, such as EPK for a china clay, "often work just fine, especially when amounts are \<10%".
+
+Many recipes name materials that are sold in one country and not another. The table below takes each material in Glazecalc's library that is not sold where you buy, and finds the closest of its kind that is, by their analyses. The figure is how far apart the two are: the grams by which their fired oxides differ, per 100 g of material, added up over every oxide. Within about 15 g, one can usually stand in for the other in a first test. The names carry the makers' and shops' own codes, so you can ask for them by name.
+
+::local-equivalents
 
 > [!NOTE]
 > Glazecalc compares materials by what they bring to the fired glaze, not by name. A [recipe](/recipe) with a material no longer made says what is used now. **Suggest amounts and compare** works the amounts out again for a substitute, and **Match with what I have** makes the recipe again from the materials on your shelf. Both match the fired oxides only, so test a small batch first.
@@ -234,7 +229,7 @@ A glaze can look quite different on another clay or in another kiln: Clay Art Ce
 - every tile in the same kiln load
 - a mark on each tile before firing, with a stamp, carving or underglaze pencil.
 
-We suggest tiles that stand upright, since a flat tile hides how far a glaze runs, with a textured band to show how the glaze breaks over edges, and a bare foot. Set each on a small dish, a scrap of bisque or kiln wash to catch drips. Put a **witness cone**, a small ceramic cone that bends when it has had enough heat, near the tiles to show what they received; the [firing guide](/guides/firing) explains cones. Give each tile a short code, and write it against the recipe in your records. Willers, writing for Ceramic Arts Network, uses numbers and letters, and writes the system itself in the front of the notebook.
+We suggest tiles that stand upright, since a flat tile hides how far a glaze runs, with a textured band to show how the glaze breaks over edges, and a bare foot. Set each on a small dish or a scrap of bisque, or on a kiln-washed shelf, to catch drips. Put a **witness cone**, a small ceramic cone that bends when it has had enough heat, near the tiles to show what they received; the [firing guide](/guides/firing) explains cones. Give each tile a short code, and write it against the recipe in your records. Willers, writing for Ceramic Arts Network, uses numbers and letters, and writes the system itself in the front of the notebook.
 
 ### Line blends
 

@@ -1,11 +1,17 @@
 import { provideLocationMocks } from '@angular/common/testing';
+import { Component } from '@angular/core';
 import { TestBed } from '@angular/core/testing';
-import { Router } from '@angular/router';
+import { Router, provideRouter } from '@angular/router';
+import { RouterTestingHarness } from '@angular/router/testing';
 import { TranslocoService } from '@jsverse/transloco';
+import { AuthService } from '../../core/auth.service';
+import { routes } from '../../app.routes';
+import { askBeforeLeaving } from '../../core/leave.guard';
 import { Additive, Material, Recipe } from '../../core/models';
 import { PreferencesService } from '../../core/preferences.service';
 import { answer, API, fieldProblem, httpMock, settle, testProviders, text } from '../../testing/test-providers';
 import { MOLAR_MASS } from '../../../../lib/chemistry';
+import { formatLocale } from '../../shared/format';
 import { evaluate, savedAnalysis } from './recipe-analysis';
 import { RecipePage } from './recipe-page';
 
@@ -73,6 +79,10 @@ const BENTONITE: Additive = {
 };
 
 type Page = Record<string, any>;
+
+/** Another page of the app, to leave the recipe page for. */
+@Component({ template: 'Another page' })
+class OtherPage {}
 
 /** The colorants listed with the unity formula. */
 const additivesShown = (fixture: { nativeElement: HTMLElement }) =>
@@ -419,6 +429,26 @@ describe('RecipePage', () => {
     await saving;
   });
 
+  it("writes colorant amounts the reader's way, as it does the materials'", async () => {
+    const { fixture, page } = await create([], [IRON, RUTILE, COBALT]);
+    formatLocale.set('de-DE');
+    try {
+      fill(page, [[WHITING, '10']]);
+      page['addAdditive'](IRON);
+      page['setAdditiveAmount'](0, '0.5');
+      page['addAdditive'](RUTILE);
+      page['setAdditiveAmount'](1, '1.5');
+      page['setAdditiveUnit'](1, 'parts');
+      page['addAdditive'](COBALT);
+      page['setAdditiveAmount'](2, '1');
+      page['setAdditiveUnit'](2, 'parts');
+      await fixture.whenStable();
+      expect(additivesShown(fixture)).toEqual(['Iron oxide : 0,5%', 'Rutile : 1,5 parts', 'Cobalt Oxide : 1 part']);
+    } finally {
+      formatLocale.set('en');
+    }
+  });
+
   it('saves without clearing the page, then updates the same recipe', async () => {
     const { fixture, page } = await create();
     page['title'].set('Matte');
@@ -685,7 +715,7 @@ describe('RecipePage', () => {
     const old: Recipe = {
       _id: 'old',
       title: 'Old celadon',
-      notes: ['Good'],
+      notes: ['Good\nGlossy at cone 6'],
       materials: [{ ...WHITING, amount: '20' }],
       computed: [{ uList: { CaO: 1, Al2O3: 0.4, SiO2: 3.7 } }]
     };
@@ -697,7 +727,10 @@ describe('RecipePage', () => {
     expect(shown).toContain('Whiting : 20');
     expect(shown).toContain('SiO₂ : 3.700');
     expect(shown).toContain('Ratio of Silica to Alumina : 9.25');
-    expect(shown).toContain('Notes: Good');
+    // The notes keep their line breaks (.keep-lines in styles.scss).
+    expect(fixture.nativeElement.querySelector('.saved-recipe .keep-lines').textContent).toBe(
+      'Notes: Good\nGlossy at cone 6'
+    );
     click(fixture, 'Hide');
     await fixture.whenStable();
     expect(text(fixture, '.saved-recipe')).not.toContain('Whiting : 20');
@@ -740,6 +773,37 @@ describe('RecipePage', () => {
     expect(page['title']()).toBe('Draft');
   });
 
+  it('says in the list when the standard materials could not be fetched, and asks again', async () => {
+    const fixture = TestBed.createComponent(RecipePage);
+    await fixture.whenStable();
+    httpMock()
+      .match((req) => req.url.endsWith('/getStandard'))
+      .forEach((req) => req.flush({}, { status: 503, statusText: 'Unavailable' }));
+    answer('/materials/getAll', []);
+    answer('/additives/getAll', []);
+    answer('/recipe/getAll', []);
+    await settle(fixture);
+    const page = fixture.componentInstance as unknown as Page;
+    const library = () => fixture.nativeElement.querySelector('.library') as HTMLElement;
+    expect(library().querySelector('.library-empty')?.textContent?.trim()).toBe(
+      'The list could not be fetched. Try again'
+    );
+
+    // Failing again is not said twice above.
+    click({ nativeElement: library() }, 'Try again');
+    httpMock()
+      .expectOne(API + '/materials/getStandard')
+      .flush({}, { status: 503, statusText: 'Unavailable' });
+    await settle(fixture);
+    expect(page['notices'].errors()).toHaveLength(2);
+
+    click({ nativeElement: library() }, 'Try again');
+    answer('/materials/getStandard', [WHITING]);
+    await settle(fixture);
+    expect(library().textContent).toContain('Whiting');
+    expect(page['standardMaterialsFailed']()).toBe(false);
+  });
+
   it('reports lists that fail to load', async () => {
     const fixture = TestBed.createComponent(RecipePage);
     await fixture.whenStable();
@@ -750,6 +814,103 @@ describe('RecipePage', () => {
     const errors = (fixture.componentInstance as unknown as Page)['notices'].errors();
     expect(errors).toContain('There was an error in getting your recipes.');
     expect(errors).toHaveLength(5);
+  });
+
+  describe('leaving the page', () => {
+    beforeEach(() => {
+      localStorage.setItem('session', 'account');
+      TestBed.configureTestingModule({
+        providers: [
+          provideLocationMocks(),
+          provideRouter([
+            { path: 'recipe', component: RecipePage, canDeactivate: [askBeforeLeaving] },
+            { path: 'material', component: OtherPage },
+            { path: 'signin', component: OtherPage }
+          ])
+        ]
+      });
+    });
+
+    const openPage = async (recipes: Recipe[] = []) => {
+      const harness = await RouterTestingHarness.create();
+      const page = (await harness.navigateByUrl('/recipe', RecipePage)) as unknown as Page;
+      answer('/materials/getStandard', [WHITING, SILICA]);
+      answer('/materials/getAll', []);
+      answer('/additives/getAll', []);
+      answer('/additives/getStandard', []);
+      answer('/recipe/getAll', recipes);
+      await settle(harness.fixture);
+      return { harness, page, router: TestBed.inject(Router) };
+    };
+
+    /** Renders while a navigation waits on the question (whenStable would wait for the navigation too). */
+    const render = async () => {
+      await new Promise((resolve) => setTimeout(resolve));
+      TestBed.tick();
+    };
+
+    it('asks before a link in the app takes away changes not saved, at the top of the page whatever is open', async () => {
+      const { harness, page, router } = await openPage();
+      page['title'].set('My celadon');
+      fill(page, [[WHITING, '20']]);
+      // The compare view hides the editor; the question still shows.
+      page['compareDraft']();
+      await settle(harness.fixture);
+      const root = harness.routeNativeElement!;
+      expect(root.querySelector('.recipe-editor')!.closest('[hidden]')).not.toBeNull();
+
+      const leaving = router.navigateByUrl('/material');
+      await render();
+      const question = root.querySelector('.recipe-unsaved') as HTMLElement;
+      expect(question.closest('[hidden]')).toBeNull();
+      expect(question.textContent).toContain('This recipe has changes that are not saved.');
+      expect(document.activeElement?.id).toBe('unsaved-keep');
+      click({ nativeElement: root }, 'Keep editing');
+      expect(await leaving).toBe(false);
+      await settle(harness.fixture);
+      expect(root.querySelector('.recipe-unsaved')).toBeNull();
+      expect(page['title']()).toBe('My celadon');
+
+      const again = router.navigateByUrl('/material');
+      await render();
+      click({ nativeElement: root }, 'Discard them');
+      expect(await again).toBe(true);
+      expect(router.url).toBe('/material');
+    });
+
+    it("is asked by the app's route to the recipe page", () => {
+      expect(routes.find((route) => route.path === 'recipe')?.canDeactivate).toEqual([askBeforeLeaving]);
+    });
+
+    it('leaves at once when nothing would be lost', async () => {
+      const saved: Recipe = { _id: 'r1', title: 'Celadon', materials: [{ ...WHITING, amount: '20' }] };
+      const { page, router } = await openPage([saved]);
+      page['open'](saved);
+      expect(await router.navigateByUrl('/material')).toBe(true);
+    });
+
+    it('asks the browser to ask before a reload or a link out of the app, when there are changes not saved', async () => {
+      const { harness, page } = await openPage();
+      const unload = () => {
+        const event = new Event('beforeunload', { cancelable: true });
+        window.dispatchEvent(event);
+        return event.defaultPrevented;
+      };
+      expect(unload()).toBe(false);
+      page['title'].set('My celadon');
+      await settle(harness.fixture);
+      expect(unload()).toBe(true);
+    });
+
+    it('goes when the session has ended, and the next page says what was lost', async () => {
+      const { page, router } = await openPage();
+      page['title'].set('My celadon');
+      fill(page, [[WHITING, '20']]);
+      const auth = TestBed.inject(AuthService);
+      auth.sessionEnded();
+      expect(await router.navigateByUrl('/signin', { state: { sessionEnded: true } })).toBe(true);
+      expect(auth.lostRecipe()).toBe('My celadon');
+    });
   });
 
   describe('printing', () => {
@@ -989,6 +1150,54 @@ describe('RecipePage', () => {
       expect(document.activeElement?.id).toBe('recipe-name');
     });
 
+    it('undoes the swap of a recipe removed meanwhile as one not saved yet', async () => {
+      const { fixture, page } = await start();
+      page['open'](OLD);
+      await settle(fixture);
+      page['tryModernMaterials']();
+      await settle(fixture);
+      page['closeCompare']();
+      await settle(fixture);
+      const removing = page['remove'](OLD);
+      httpMock()
+        .expectOne({ method: 'DELETE', url: API + '/recipe/delete/r1' })
+        .flush({});
+      await removing;
+      page['undoSwap']();
+      await settle(fixture);
+      expect(page['title']()).toBe('Old celadon');
+      expect(page['savedId']()).toBeNull();
+      expect(page['status']()).toBe('Not saved yet');
+      // Saving it makes a new recipe, not a change to the one removed.
+      const saving = page['save']();
+      httpMock()
+        .expectOne({ method: 'POST', url: API + '/recipe/create' })
+        .flush({ ...OLD, _id: 'r2' });
+      await saving;
+      expect(page['savedId']()).toBe('r2');
+    });
+
+    it('offers "before the swap" to compare only while that recipe is on the page', async () => {
+      const { fixture, page } = await start([]);
+      page['title'].set('Celadon A');
+      fill(page, [
+        [CUSTER, '40'],
+        [WHITING, '20'],
+        [SILICA, '40']
+      ]);
+      page['tryModernMaterials']();
+      await settle(fixture);
+      page['closeCompare']();
+      await settle(fixture);
+      const labels = () => page['compareChoices']().map((choice: { label: string }) => choice.label);
+      expect(labels()).toContain('Before the swap: Celadon A');
+      page['startNew']();
+      page['discardAndLeave']();
+      page['title'].set('Matte B');
+      fill(page, [[WHITING, '10']]);
+      expect(labels()).toEqual(['Being edited: Matte B']);
+    });
+
     it('says when a swap is not like for like, and when lead is still in it', async () => {
       // Lead is allowed in Settings.
       TestBed.inject(PreferencesService).lead.set('on');
@@ -1028,6 +1237,100 @@ describe('RecipePage', () => {
       expect(page['notes']()).toBe(
         'Swapped one for one: Litharge became Lead Bisilicate Frit (work its amount out again).'
       );
+    });
+
+    it('says where an old colorant among the materials is now, when it is among the additives', async () => {
+      const BICHROMATE: Material = {
+        ...material(
+          'Potassium Bichromate',
+          [
+            ['K2O', 1],
+            ['Cr2O3', 1]
+          ],
+          16.32
+        ),
+        category: 'colorant',
+        status: 'historical',
+        substitutes: ['Chromium Oxide']
+      };
+      const CHROME: Additive = {
+        _id: 'cr',
+        name: 'Chromium Oxide',
+        percentmole: 'molecular',
+        loi: 0,
+        fields: [{ name: 'Cr2O3', amount: '1' }],
+        category: 'colorant',
+        status: 'current'
+      };
+      const fixture = TestBed.createComponent(RecipePage);
+      TestBed.inject(Router).initialNavigation();
+      await fixture.whenStable();
+      answer('/materials/getStandard', [WHITING, SILICA, BICHROMATE]);
+      answer('/materials/getAll', []);
+      answer('/additives/getAll', []);
+      answer('/additives/getStandard', [CHROME]);
+      answer('/recipe/getAll', []);
+      await settle(fixture);
+      const page = fixture.componentInstance as unknown as Page;
+      fill(page, [
+        [BICHROMATE, '2'],
+        [WHITING, '38'],
+        [SILICA, '60']
+      ]);
+      await settle(fixture);
+      expect(text(fixture, '.recipe-swap')).toContain(
+        'Potassium Bichromate (Historical): Chromium Oxide is what is used now, under Colorants and additives.'
+      );
+      // Nothing among the materials to swap it for.
+      expect(fixture.nativeElement.querySelector('#try-modern')).toBeNull();
+    });
+
+    it("takes a recipe's material for the potter's own before a standard one that also goes by its name", async () => {
+      const MINE: Material = {
+        ...material(
+          'Potash Feldspar',
+          [
+            ['K2O', 1],
+            ['Al2O3', 1],
+            ['SiO2', 6]
+          ],
+          0
+        ),
+        _id: 'mine',
+        ownedBy: 'u1'
+      };
+      const POTCLAYS: Material = {
+        ...MINE,
+        _id: 'potclays',
+        name: 'Potash Feldspar (Potclays 3426)',
+        ownedBy: 'Standard',
+        aliases: ['Potash Feldspar']
+      };
+      const fixture = TestBed.createComponent(RecipePage);
+      TestBed.inject(Router).initialNavigation();
+      await fixture.whenStable();
+      answer('/materials/getStandard', [WHITING, SILICA, POTCLAYS]);
+      answer('/materials/getAll', [MINE]);
+      answer('/additives/getAll', []);
+      answer('/additives/getStandard', []);
+      answer('/recipe/getAll', []);
+      await settle(fixture);
+      const page = fixture.componentInstance as unknown as Page;
+      fill(page, [
+        [MINE, '40'],
+        [WHITING, '20'],
+        [SILICA, '40']
+      ]);
+      await settle(fixture);
+      click(fixture, 'Match with what I have');
+      await settle(fixture);
+      answer('/shelf', { shelf: [] });
+      await settle(fixture);
+      click(fixture, 'Add the materials in this recipe');
+      const put = httpMock().expectOne(API + '/shelf');
+      expect(put.request.body).toEqual({ shelf: ['mine', 'Whiting', 'Silica'] });
+      put.flush({ shelf: put.request.body.shelf });
+      await settle(fixture);
     });
 
     it('suggests amounts for a swap that is not like for like, asking what brings back what it leaves short', async () => {
@@ -1295,6 +1598,92 @@ describe('RecipePage', () => {
       click(fixture, 'Undo the swap');
       await settle(fixture);
       expect(page['lines']().map((l: Material) => l.name)).toEqual(['Custer Spar', 'Whiting', 'Silica']);
+    });
+
+    it('changes nothing on hand it could not fetch, and keeps on it what it cannot list', async () => {
+      const { fixture, page } = await start([]);
+      fill(page, [
+        [CUSTER, '40'],
+        [WHITING, '20'],
+        [SILICA, '40']
+      ]);
+      await settle(fixture);
+      click(fixture, 'Match with what I have');
+      await settle(fixture);
+      httpMock()
+        .expectOne(API + '/shelf')
+        .flush({}, { status: 500, statusText: 'Server Error' });
+      await settle(fixture);
+      // Nothing to change, so nothing can replace the list kept with the account.
+      expect(text(fixture, '.recipe-shelf')).toContain('Your materials on hand could not be fetched.');
+      expect(text(fixture, '.recipe-shelf')).not.toContain('Add the materials in this recipe');
+      expect(text(fixture, '.recipe-shelf')).not.toContain('Getting your materials on hand');
+
+      click(fixture, 'Try again');
+      // On hand: whiting, the feldspar, and one of the potter's own that this page does not have.
+      answer('/shelf', { shelf: ['Whiting', 'mine-1', 'G-200 EU Feldspar'] });
+      await settle(fixture);
+      expect(page['shelfTries']().map((tried: { material: Material }) => tried.material.name)).toEqual([
+        'Whiting',
+        'G-200 EU Feldspar'
+      ]);
+      click(fixture, 'Add the materials in this recipe');
+      const put = httpMock().expectOne(API + '/shelf');
+      expect(put.request.body).toEqual({ shelf: ['Whiting', 'mine-1', 'G-200 EU Feldspar', 'Custer Spar', 'Silica'] });
+      put.flush({});
+      await settle(fixture);
+    });
+
+    it('leaves materials with lead on hand out of a match while lead is off, and says so', async () => {
+      const LEAD_FRIT: Material = {
+        ...material(
+          'Lead bisilicate',
+          [
+            ['PbO', 1],
+            ['Al2O3', 0.1],
+            ['SiO2', 2]
+          ],
+          0
+        ),
+        category: 'frit'
+      };
+      const fixture = TestBed.createComponent(RecipePage);
+      TestBed.inject(Router).initialNavigation();
+      await fixture.whenStable();
+      answer('/materials/getStandard', [WHITING, SILICA, CUSTER, G200, LEAD_FRIT]);
+      answer('/materials/getAll', []);
+      answer('/additives/getAll', []);
+      answer('/additives/getStandard', []);
+      answer('/recipe/getAll', []);
+      await settle(fixture);
+      const page = fixture.componentInstance as unknown as Page;
+      fill(page, [
+        [CUSTER, '40'],
+        [WHITING, '20'],
+        [SILICA, '40']
+      ]);
+      await settle(fixture);
+      click(fixture, 'Match with what I have');
+      await settle(fixture);
+      answer('/shelf', { shelf: ['Lead bisilicate', 'G-200 EU Feldspar', 'Whiting', 'Silica'] });
+      await settle(fixture);
+      expect(text(fixture, '.recipe-shelf-lead')).toBe('1 with lead is not used: lead is off in Settings.');
+      expect(page['shelfTries']().map((tried: { material: Material }) => tried.material.name)).not.toContain(
+        'Lead bisilicate'
+      );
+
+      // Still on hand, for when lead is on: a change keeps it.
+      (
+        fixture.nativeElement.querySelector('[aria-label="Remove Silica from your materials on hand"]') as HTMLElement
+      ).click();
+      const put = httpMock().expectOne(API + '/shelf');
+      expect(put.request.body).toEqual({ shelf: ['Lead bisilicate', 'G-200 EU Feldspar', 'Whiting'] });
+      put.flush({});
+      await settle(fixture);
+
+      click(fixture, 'Match and compare');
+      await settle(fixture);
+      expect(page['lines']().map((l: Material) => l.name)).not.toContain('Lead bisilicate');
     });
   });
 });

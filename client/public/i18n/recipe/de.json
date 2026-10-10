@@ -31,6 +31,7 @@
     "scale": "Umrechnen",
     "swapLike": "<b>{from}</b> ({status}): {to} lässt sich stattdessen Gramm für Gramm verwenden.",
     "swapNotLike": "<b>{from}</b> ({status}): Heute wird {to} verwendet, aber das ist kein gleichwertiger Ersatz: Berechnen Sie die Menge neu.",
+    "swapColorant": "<b>{from}</b> ({status}): Heute wird {to} verwendet, unter „Färbemittel und Zusätze“. Fügen Sie {to} dort hinzu und berechnen Sie die Menge neu.",
     "stillLead": "{name} enthält ebenfalls Blei.",
     "tryModern": "Heutige Rohstoffe einsetzen und vergleichen",
     "suggestAmounts": "Mengen vorschlagen und vergleichen",
@@ -62,6 +63,8 @@
     "addRecipeToShelf": "Rohstoffe dieses Rezepts hinzufügen",
     "shelfTriesIntro": "Ihre vorhandenen Rohstoffe. Kreuzen Sie „Muss verwendet werden“ an, damit ein Rohstoff im Nachbau auf jeden Fall verwendet wird.",
     "gettingShelf": "Ihr Vorrat wird geladen …",
+    "shelfTryAgain": "Erneut versuchen",
+    "shelfLeadHidden": "{count, plural, one {# bleihaltiger Rohstoff wird nicht verwendet: Blei ist in den <settings>Einstellungen</settings> ausgeschaltet.} other {# bleihaltige Rohstoffe werden nicht verwendet: Blei ist in den <settings>Einstellungen</settings> ausgeschaltet.}}",
     "matchAndCompare": "Nachbauen und vergleichen",
     "swapped": "Durch heutige Rohstoffe ersetzt, als neues, noch nicht gespeichertes Rezept.",
     "undoSwap": "Austausch rückgängig machen",
@@ -169,7 +172,7 @@
   "analysis": {
     "oldCopy": "{name} wurde von einer älteren Version von Glazecalc ohne Glühverlust gespeichert und wird daher nicht berücksichtigt. Fügen Sie den Zusatz dem Rezept erneut hinzu, damit er mitgezählt wird.",
     "noAnalysis": "{name} hat keine Oxidanalyse, die die Segerformel verwenden kann, und wird daher nicht berücksichtigt.",
-    "parts": "{amount} {amount, plural, =1 {Teil} one {Teil} other {Teile}}"
+    "parts": "{amount} {count, plural, =1 {Teil} one {Teil} other {Teile}}"
   },
   "library": {
     "which": "{noun, select, additives {Welche Zusätze} other {Welche Rohstoffe}}",
@@ -387,7 +390,7 @@
     "whitingProbably": "Bei {percent} % bildet die Glasur wahrscheinlich Nadelstiche oder Blasen und wird trocken, matt oder stumpf.",
     "whitingTends": "Bei {percent} % neigt die Glasur zu Nadelstichen oder Blasen und dazu, trocken, matt oder stumpf zu werden.",
     "whitingFix": "Calcium aus einer Fritte oder aus Wollastonit vermeidet beides. (5 % ist die Richtlinie dieser App; eine veröffentlichte Grenze gibt es dafür nicht.)",
-    "fluorine": "Flussspat und Kryolith setzen beim Brand Fluor frei. Entlüften Sie den Ofen gut oder nehmen Sie das Calcium oder Natrium aus einer Fritte oder aus Wollastonit.",
+    "fluorine": "{name} setzt beim Brand Fluor frei. Entlüften Sie den Ofen gut oder verwenden Sie stattdessen einen Rohstoff ohne Fluor.",
     "clayLowWas": "Diese Glasur enthält nur {clay} % ungebrannten Ton; das alte Rezept hatte {was} %.",
     "clayLow": "Diese Glasur enthält nur {clay} % ungebrannten Ton.",
     "clayNoneWas": "Diese Glasur enthält keinen ungebrannten Ton; das alte Rezept hatte {was} %.",

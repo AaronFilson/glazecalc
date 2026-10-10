@@ -1,0 +1,88 @@
+{
+  "home": {
+    "title": "Az Ön műhelyfüzete",
+    "signedInAs": "Bejelentkezve: {email}.",
+    "trying": "A Glazecalc próbahasználata ezen a néven: {name}. Kezdje egy recepttel.",
+    "welcomeBack": "Folytassa ott, ahol abbahagyta.",
+    "sections": {
+      "recipe": {
+        "title": "Receptek",
+        "text": "Állítson össze mázat nyersanyagokból és mennyiségekből, nézze meg a Seger-képletét (UMF), és mentse el."
+      },
+      "material": {
+        "title": "Nyersanyagok",
+        "text": "Adjon hozzá saját nyersanyagokat kémiai képlet vagy a forgalmazó által közölt összetétel alapján."
+      },
+      "additive": {
+        "title": "Adalékok és színezők",
+        "text": "Itt tarthatja nyilván az alapmázon felül adagolt színezőket és zavarosítókat."
+      },
+      "firing": {
+        "title": "Égetési naplók",
+        "text": "Rögzítse minden égetésnél az időket, a hőmérsékleteket és a gúlákat."
+      },
+      "notes": {
+        "title": "Jegyzetek",
+        "text": "Őrizze meg a próbák eredményeit és minden mást, amit érdemes megjegyezni."
+      },
+      "advice": {
+        "title": "Tanácsok mázakhoz",
+        "text": "Tippek a keveréshez, a mázazáshoz és az égetéshez, valamint saját tanácsai."
+      },
+      "guides": {
+        "title": "Útmutatók",
+        "text": "Attól, hogy mi a máz, egészen az égetéséig, és hogy közben mindenki biztonságban maradjon."
+      }
+    },
+    "newHere": "Most ismerkedik a Seger-képlettel? A <advice>tanácsok oldala</advice> elmagyarázza az alapokat, az <about>alkalmazásról szóló oldal</about> pedig azt, hogyan működik a Glazecalc."
+  },
+  "firing": {
+    "title": "Égetési naplók",
+    "lead": "Rögzítsen minden égetést: az időket, a hőmérsékleteket, a gúlákat és a kemencével kapcsolatos megjegyzéseket.",
+    "titleLabel": "Az égetés címe:",
+    "kiln": "Kemence:",
+    "date": "Az égetés dátuma:",
+    "notes": "Megjegyzések az égetésről:",
+    "fieldSelect": "Mezők kiválasztása és hozzáadása az égetési naplóhoz:",
+    "addField": "Mező hozzáadása",
+    "included": "A felvett mezők:",
+    "fieldName": "Mező neve: {name}",
+    "moveLeft": "Mező mozgatása balra",
+    "moveRight": "Mező mozgatása jobbra",
+    "removeField": "Mező eltávolítása",
+    "addRow": "Sor hozzáadása az égetési táblázathoz",
+    "recordHeading": "Égetés rögzítése",
+    "rowActions": "Sorműveletek",
+    "cell": "{field}, {row}. sor",
+    "removeRow": "Sor eltávolítása",
+    "save": "Mentés",
+    "storedHeading": "Saját mentett égetések:",
+    "stored": "Cím: {title}, kemence: {kiln}, dátum: {date}",
+    "storedNotes": "Megjegyzések: {notes}",
+    "titleMissing": "Adjon címet az égetésnek.",
+    "fieldsMissing": "Adjon hozzá legalább egy rögzítendő mezőt, például: {example}.",
+    "chooseField": "Válassza ki a hozzáadandó mezőt, majd kattintson a Mező hozzáadása gombra.",
+    "fetchFailed": "Hiba történt az égetési naplók adatainak lekérésekor.",
+    "saved": "Az égetési naplót sikeresen hozzáadtuk a szerverhez.",
+    "saveFailed": "Hiba: a szervernek küldött kérés sikertelen volt."
+  },
+  "notes": {
+    "title": "Jegyzetek",
+    "lead": "Minden más, amit érdemes megjegyezni a mázairól.",
+    "intro": "Ez a jegyzetek oldala. Itt jegyzeteket írhat és menthet.",
+    "titleLabel": "Cím:",
+    "content": "Jegyzet:",
+    "save": "Mentés",
+    "mineHeading": "Saját mentett jegyzetek:",
+    "titleMissing": "Adjon címet a jegyzetnek.",
+    "contentMissing": "Írja meg a jegyzetet.",
+    "untitled": "Cím nélküli jegyzet",
+    "fetchFailed": "Hiba történt a jegyzetek adatainak lekérésekor.",
+    "saved": "A jegyzetet sikeresen hozzáadtuk a szerverhez.",
+    "saveFailed": "Hiba: a szervernek küldött kérés sikertelen volt."
+  },
+  "trash": {
+    "title": "Lomtár",
+    "comingSoon": "A lomtár funkció a Glazecalc következő verziójában érkezik. Addig óvatosan használja a törlést / eltávolítást: ami egyszer eltűnt, annak az adatai elvesznek."
+  }
+}

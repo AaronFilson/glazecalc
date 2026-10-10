@@ -26,9 +26,8 @@ Key to sources cited by name in the notes (the full address is given once here):
   [Dz.U. 2026 poz. 447](https://api.sejm.gov.pl/eli/acts/DU/2026/447/text.pdf)
 - **MS**: the [Microsoft Polish Style Guide](https://download.microsoft.com/download/b/d/c/bdc253ac-dbf3-4261-86a2-ffedfa718425/pol-pol-StyleGuide.pdf)
 
-IATE has no Polish entry in the ceramic sense for "glaze", "bisque" or "pyrometric cone" (see the
-[EU languages report](../../reports/Internationalizing%20glazecalc%20for%20EU%20languages.md)), so no term here comes
-from it.
+IATE has no Polish entry in the ceramic sense for "glaze", "bisque" or "pyrometric cone" (as the EU languages report
+found; the research is kept outside the repository), so no term here comes from it.
 
 ## 1. Style sheet
 
@@ -491,6 +490,37 @@ English a reader can ask for: `<en>…</en>` in messages, `{{en: …}}` in the g
 | Translation notice (About this translation, Suggest a correction, Read the English)    | O tym tłumaczeniu, Zaproponuj poprawkę, Przeczytaj po angielsku                            |                                                                                                                                                                                   |
 | Trash                                                                                  | Kosz (m)                                                                                   |                                                                                                                                                                                   |
 | Remove (Yes, remove), Delete my account                                                | Usuń (Tak, usuń), Usuń moje konto                                                          | "This can't be undone.": _Tej operacji nie można cofnąć._ (MS wording).                                                                                                           |
+
+### 2.9 Where the potter works
+
+Terms of the region parts of the guides (shops, the silica limit, food-contact rules, materials sold nearby), as
+the reviewed translation uses them. Names of shops, laws and agencies stay as they are written there.
+
+| English                                                               | Polski                                                                         | Where                                         |
+| --------------------------------------------------------------------- | ------------------------------------------------------------------------------ | --------------------------------------------- |
+| Shops in (the label before a list of countries)                       | Sklepy w kraju                                                                 | guides: shops.shopsIn                         |
+| raw glaze materials (what a shop sells)                               | surowce do szkliw                                                              | guides: shops.what.materials                  |
+| ready-made glazes                                                     | gotowe szkliwa                                                                 | guides: shops.what.glazes                     |
+| Packs seen                                                            | Zauważone opakowania                                                           | guides: shops.packs                           |
+| A binding limit.                                                      | Limit wiążący.                                                                 | guides: silica.kind.binding                   |
+| An indicative limit: a guide value, not a legal ceiling.              | Limit indykatywny: wartość orientacyjna, a nie pułap wyznaczony prawem.        | guides: silica.kind.indicative                |
+| An assessment criterion, not a binding limit. (Germany)               | Kryterium oceny, a nie limit wiążący.                                          | guides: silica.kind.assessment                |
+| action level (US)                                                     | Próg podjęcia działań                                                          | guides: silica.actionLevel                    |
+| quartz and cristobalite                                               | Kwarc i krystobalit                                                            | guides: silica.both                           |
+| The national body for safety at work: <link>{name}</link>.            | Krajowa instytucja ds. bezpieczeństwa i higieny pracy: <link>{name}</link>.    | guides: silica.agency                         |
+| Kind of piece (food-contact rules)                                    | Rodzaj wyrobu                                                                  | guides: food.article                          |
+| pieces that cannot be filled, or no deeper than 25 mm                 | Wyroby, których nie można napełniać, lub o głębokości nieprzekraczającej 25 mm | guides: food.category.flat                    |
+| other pieces that can be filled                                       | Pozostałe wyroby, które mogą być napełniane                                    | guides: food.category.fillable                |
+| cooking ware                                                          | Naczynia do gotowania                                                          | guides: food.category.auCooking               |
+| The rim of a piece for drinking from: a 2 cm band, inside and out     | Brzeg naczynia do picia: pas o szerokości 2 cm od wewnątrz i od zewnątrz       | guides: food.category.rimBand                 |
+| Flatware, no deeper than 25 mm (US)                                   | Naczynia płaskie, o głębokości do 25 mm                                        | guides: food.category.flatware                |
+| Small hollowware, under 1.1 L, other than cups and mugs (US)          | Małe naczynia głębokie, poniżej 1,1 L, inne niż filiżanki i kubki              | guides: food.category.smallHollow             |
+| Large hollowware, 1.1 L or more, other than pitchers (US)             | Duże naczynia głębokie, 1,1 L lub więcej, inne niż dzbanki                     | guides: food.category.largeHollow             |
+| average of 6 pieces / any one of 6                                    | średnia z 6 sztuk / każda z 6 sztuk                                            | guides: food.judged.average, food.judged.each |
+| Buying in (the label before a list of countries)                      | Zakupy w kraju                                                                 | guides: equivalents.buyingIn                  |
+| differs by {grams} g per 100 g                                        | różni się o {grams} g na 100 g                                                 | guides: equivalents.apart                     |
+| Directive 84/500/EEC (its official name)                              | dyrektywa 84/500/EWG (zmieniona dyrektywą 2005/31/WE)                          | regions: the directive                        |
+| Latvia's law gives this limit for the inhalable fraction of the dust. | Prawo łotewskie podaje ten limit dla frakcji wdychalnej pyłu.                  | regions: Latvia                               |
 
 ## 3. Never translated
 

@@ -244,23 +244,17 @@ La **cesión**{{en: leaching}} es la disolución de metales de un esmalte cocido
 
 ### Sin plomo no es lo mismo que apto para uso alimentario
 
-Las normas de EE. UU., la UE, el Reino Unido, Australia y Nueva Zelanda limitan el plomo y el cadmio que libera una pieza cocida, no lo que contiene el esmalte. «Sin plomo» elimina un peligro; no es una calificación de seguridad alimentaria. También se ceden otros óxidos: Glazy advierte que los esmaltes con mucho bario «pueden ceder metales y en general no son aptos para uso alimentario»{{en: food-safe}}, Digitalfire dice que el cobre «puede hacer que un esmalte ceda metales; analícelo», y Glazy ya no recomienda esmaltes de plomo para la cerámica funcional.
+Las normas de EE. UU., la UE, el Reino Unido y Australia limitan el plomo y el cadmio que libera una pieza cocida, no lo que contiene el esmalte. «Sin plomo» elimina un peligro; no es una calificación de seguridad alimentaria. También se ceden otros óxidos: Glazy advierte que los esmaltes con mucho bario «pueden ceder metales y en general no son aptos para uso alimentario»{{en: food-safe}}, Digitalfire dice que el cobre «puede hacer que un esmalte ceda metales; analícelo», y Glazy ya no recomienda esmaltes de plomo para la cerámica funcional.
 
 Un **esmalte de interior**{{en: liner glaze}} es un esmalte estable, normalmente transparente o blanco, para las superficies que tocan los alimentos. En nuestra opinión, uno sin colorantes, bario, plomo ni litio, que funda por completo, no se cuartee y resista bien el desgaste es la opción de menor riesgo. Que el riesgo sea menor no demuestra que sea seguro.
 
 Las **fórmulas límite**{{en: limit formulas}} (Digitalfire prefiere **fórmulas objetivo**{{en: target formulas}}) dan intervalos típicos de la fórmula Seger{{en: unity formula}} para esmaltes estables a un cono: los objetivos de Digitalfire para cono 6 sitúan la alúmina en 0,285–0,64 y la sílice en 2,4–4,7. Le orientan hacia una química sólida, pero no demuestran nada; Digitalfire evita la palabra «límite» porque sugiere que los esmaltes dentro de los intervalos «son de algún modo seguros». Las herramientas de Glazecalc para modificar una receta avisan cuando la nueva supera un límite recomendado, como mucho boro a cono 6, y dicen qué hará probablemente el esmalte.
 
-Table: Límites de la FDA de EE. UU. para el plomo que libera la cerámica (CPG Sec. 545.450), en microgramos por mililitro de solución de ensayo
-Label: Límites de plomo de la FDA
+Los límites legales varían de un país a otro. La tabla muestra los del lugar donde usted vive, en las unidades de la propia norma; elija otro país para compararlos.
 
-| Pieza                                             | Plomo (µg/mL) | Se evalúa sobre      |
-| ------------------------------------------------- | ------------: | -------------------- |
-| Piezas planas (de no más de 25 mm de profundidad) |           3,0 | La media de 6 piezas |
-| Piezas huecas pequeñas (menos de 1,1 L)           |           2,0 | Cualquiera de las 6  |
-| Piezas huecas grandes (1,1 L o más)               |           1,0 | Cualquiera de las 6  |
-| Tazas, tazones y jarras                           |           0,5 | Cualquiera de las 6  |
+::food-limits
 
-En EE. UU., las piezas que no son para alimentos deben llevar un aviso permanente y cocido, «Not for Food Use» (no apto para alimentos), o tener un agujero que atraviese la superficie destinada a los alimentos. La UE fija límites de plomo y cadmio en la Directiva 84/500/CEE, que Inglaterra mantiene en su propia legislación. Los Países Bajos y Luxemburgo reducen sus límites de plomo unas 130–150 veces a partir del 29 de mayo de 2026, y Bélgica les sigue. Australia y Nueva Zelanda aplican la AS 4371, cuyas cifras solo pueden consultarse pagando.
+En EE. UU., las piezas que no son para alimentos deben llevar un aviso permanente y cocido, «Not for Food Use» (no apto para alimentos), o tener un agujero que atraviese la superficie destinada a los alimentos. La UE fija límites de plomo y cadmio en la Directiva 84/500/CEE, y el Reino Unido mantiene las mismas cifras en su propia legislación. A partir del 29 de mayo de 2026, los Países Bajos, Bélgica y Luxemburgo permiten unas 130 a 150 veces menos plomo, y unas 15 veces menos cadmio. Australia fija límites para las piezas importadas; no hemos encontrado ningún límite oficial para las piezas fabricadas en Australia o Nueva Zelanda.
 
 ### Ensayos
 

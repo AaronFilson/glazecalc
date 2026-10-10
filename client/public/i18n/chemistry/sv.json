@@ -1,0 +1,23 @@
+{
+  "unknown-compound": "Okänd förening {compound} i formeln",
+  "unknown-oxide": "Okänd oxid {oxide} i råvaran {material}",
+  "invalid-oxide-amount": "Ogiltig mängd för {oxide} i råvaran {material}",
+  "loi-range": "Glödförlusten för {material} måste vara minst 0 och mindre än 100",
+  "no-oxides": "Råvaran {material} har inga oxider",
+  "no-name": "Råvaran måste ha ett namn",
+  "no-analysis": "Råvaran {material} behöver en formel eller en analys",
+  "recipe-shape": "Receptet måste vara en lista med '{ material, amount }' eller en tabell över mängder",
+  "invalid-amount": "Ogiltig mängd för råvaran {material}",
+  "missing-material": "En rad i receptet saknar råvara",
+  "unknown-material": "Okänd råvara {material}",
+  "no-flux": "Receptet innehåller inga flussmedelsoxider, så Segerformeln (UMF) kan inte beräknas",
+  "no-target": "Målet har inga oxider att sikta mot",
+  "no-materials": "Det finns inga råvaror att räkna på",
+  "no-temperature": "Bränntemperaturen behövs för att bestämma mängden bor",
+  "no-flux-to-rebuild": "Glasyren har inga flussmedel att bygga om",
+  "unknown-element": "Okänt grundämne {element} i {formula}",
+  "bad-formula": "Det gick inte att tolka formeln {formula}",
+  "analysis-total": "Analysen av {material} summerar till {total} % inklusive glödförlust; omkring 100 % väntades.",
+  "stored-equivalent": "Den sparade ekvivalentvikten för {material} stämmer inte med formeln och glödförlusten; formeln och glödförlusten användes i stället.",
+  "trace-flux": "Receptet innehåller bara spår av flussmedelsoxider, så Segerformeln (UMF) är inte meningsfull."
+}

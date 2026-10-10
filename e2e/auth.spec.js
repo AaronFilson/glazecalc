@@ -66,6 +66,16 @@ test('refuses a second account with the same email', async ({ page, request }) =
   await expect(page.locator('#email')).toBeFocused();
 });
 
+test('makes one account from sign-ups for the same email sent at once', async ({ request }) => {
+  // Each passes the check for an existing account before any is saved, so the
+  // database's unique index decides. The global setup must leave it in place.
+  const email = uniqueEmail('race');
+  const replies = await Promise.all(
+    Array.from({ length: 5 }, () => request.post(API + '/signup', { data: { email, password: 'password123' } }))
+  );
+  expect(replies.filter((res) => res.ok())).toHaveLength(1);
+});
+
 test('shows visitors the intro page, and sends app pages to sign in', async ({ page }) => {
   await page.goto('/');
   await expect(page.locator('h1')).toHaveText('Free glaze chemistry for potters.');

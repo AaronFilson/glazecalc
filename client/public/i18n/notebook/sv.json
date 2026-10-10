@@ -1,0 +1,88 @@
+{
+  "home": {
+    "title": "Verkstadens anteckningsbok",
+    "signedInAs": "Inloggad som {email}.",
+    "trying": "Provperiod som {name}. Börja med ett recept.",
+    "welcomeBack": "Fortsätt där du slutade senast.",
+    "sections": {
+      "recipe": {
+        "title": "Recept",
+        "text": "Bygg en glasyr av råvaror och mängder, se dess Segerformel (UMF) och spara den."
+      },
+      "material": {
+        "title": "Råvaror",
+        "text": "Lägg till egna råvaror, från en kemisk formel eller en leverantörs analys."
+      },
+      "additive": {
+        "title": "Tillsatser och färgmedel",
+        "text": "Spara de färgmedel och täckmedel som läggs till utöver en basglasyr."
+      },
+      "firing": {
+        "title": "Brännloggar",
+        "text": "Registrera tider, temperaturer och käglor för varje bränning."
+      },
+      "notes": {
+        "title": "Anteckningar",
+        "text": "Spara provresultat och allt annat som är värt att komma ihåg."
+      },
+      "advice": {
+        "title": "Glasyrråd",
+        "text": "Tips om blandning, glasering och bränning, och egna råd."
+      },
+      "guides": {
+        "title": "Guider",
+        "text": "Från vad en glasyr är till hur den bränns, och hur alla skyddas på vägen."
+      }
+    },
+    "newHere": "Aldrig arbetat med Segerformeln förut? <advice>Rådsidan</advice> förklarar grunderna och <about>Om-sidan</about> beskriver hur Glazecalc fungerar."
+  },
+  "firing": {
+    "title": "Brännloggar",
+    "lead": "Registrera varje bränning: tider, temperaturer, käglor och anteckningar om ugnen.",
+    "titleLabel": "Bränningens titel:",
+    "kiln": "Ugn:",
+    "date": "Datum för bränningen:",
+    "notes": "Anteckningar om bränningen:",
+    "fieldSelect": "Välj fält och lägg till dem i brännloggen:",
+    "addField": "Lägg till fältet",
+    "included": "Fälten som ingår:",
+    "fieldName": "Fältnamn: {name}",
+    "moveLeft": "Flytta fältet åt vänster",
+    "moveRight": "Flytta fältet åt höger",
+    "removeField": "Ta bort fältet",
+    "addRow": "Lägg till en rad i bränningstabellen",
+    "recordHeading": "Registrera bränningen",
+    "rowActions": "Åtgärder för raden",
+    "cell": "{field}, rad {row}",
+    "removeRow": "Ta bort raden",
+    "save": "Spara",
+    "storedHeading": "Sparade bränningar:",
+    "stored": "Titel: {title}, Ugn: {kiln}, Datum: {date}",
+    "storedNotes": "Anteckningar: {notes}",
+    "titleMissing": "Ge bränningen en titel.",
+    "fieldsMissing": "Lägg till minst ett fält att registrera, till exempel {example}.",
+    "chooseField": "Välj ett fält att lägga till och välj sedan Lägg till fältet.",
+    "fetchFailed": "Ett fel uppstod när brännloggarna skulle hämtas.",
+    "saved": "Brännloggen har sparats på servern.",
+    "saveFailed": "Fel: begäran till servern misslyckades."
+  },
+  "notes": {
+    "title": "Anteckningar",
+    "lead": "Allt annat som är värt att komma ihåg om glasyrerna.",
+    "intro": "Det här är sidan för anteckningar. Skriv anteckningar och spara dem här.",
+    "titleLabel": "Titel:",
+    "content": "Anteckning:",
+    "save": "Spara",
+    "mineHeading": "Sparade anteckningar:",
+    "titleMissing": "Ge anteckningen en titel.",
+    "contentMissing": "Skriv anteckningen.",
+    "untitled": "Anteckning utan titel",
+    "fetchFailed": "Ett fel uppstod när anteckningarna skulle hämtas.",
+    "saved": "Anteckningen har sparats på servern.",
+    "saveFailed": "Fel: begäran till servern misslyckades."
+  },
+  "trash": {
+    "title": "Papperskorgen",
+    "comingSoon": "Papperskorgen kommer snart, i nästa version av Glazecalc. Använd till dess radera / ta bort med försiktighet: när något väl är borta går uppgifterna förlorade."
+  }
+}

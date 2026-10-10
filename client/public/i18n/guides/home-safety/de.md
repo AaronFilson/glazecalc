@@ -142,7 +142,7 @@ Die Pet Poison Helpline schreibt: „Blei ist für alle Tierarten giftig, aber j
 
 - Halten Sie Haustiere aus der Werkstatt heraus, und lassen Sie die Tür geschlossen.
 - Hunde kauen an Säcken und trinken aus Eimern. Bewahren Sie Säcke in einem geschlossenen Schrank auf, und setzen Sie auf jeden Eimer einen Deckel.
-- Katzen laufen durch Staub und lecken ihn von Pfoten und Fell. Wischen Sie den Boden feucht, und halten Sie Katzen fern, damit sie sich nichts aus dem Fell putzen können.
+- Katzen laufen durch Staub und lecken ihn von Pfoten und Fell. Wischen Sie den Boden feucht, und halten Sie Katzen aus der Werkstatt heraus, damit sie sich nichts aus dem Fell putzen können.
 - Vögel und kleine Säugetiere (Kaninchen, Meerschweinchen, Hamster) atmen dieselbe Luft wie alle im Haus. Halten Sie sie in einem entfernten Raum bei geschlossener Tür, während Sie mit trockenen Rohstoffen arbeiten und während der Ofen brennt.
 - In Aquarien sammelt sich absinkender Staub. Stellen Sie sie nicht in die Werkstatt, und halten Sie sie abgedeckt.
 - Halten Sie Futter- und Wassernäpfe von Werkstatt und Ofen fern, und verwenden Sie gekaufte oder geprüfte Näpfe, keine Experimente aus der Werkstatt.
@@ -155,7 +155,7 @@ Wenn ein Haustier etwas aus der Werkstatt gefressen oder getrunken haben könnte
 
 Eine britische Gefährdungsbeurteilung für Schulen sagt, dass die Außenseite eines Brennofens „160 °C und möglicherweise mehr erreichen kann“ (etwa 320 °F), und ein Leitfaden für Brennöfen in Schulen berichtet von bis zu 460 °F (etwa 240 °C) an den Metallbändern. Skutt, ein Ofenhersteller, empfiehlt einen Ofenraum, der sich abschließen lässt, damit Kinder und Haustiere nicht hineinkommen. Wo sich ein Raum nicht abschließen lässt, schlägt der Leitfaden für Schulen eine Absperrung vor, etwa ein Schutzgitter für den Ofen.
 
-Wir schlagen vor, kleine Kinder und Haustiere, die ein Warnschild nicht verstehen können, hinter einer abgeschlossenen Tür oder einer Absperrung zu halten, solange der Ofen brennt und solange er abkühlt, und für alle anderen ein Warnschild anzubringen.
+Kleine Kinder und Haustiere können ein Warnschild nicht verstehen. Wir schlagen vor, sie hinter einer abgeschlossenen Tür oder einer Absperrung zu halten, solange der Ofen brennt und solange er abkühlt, und für alle anderen ein Warnschild anzubringen.
 
 ### Platz um den Ofen
 

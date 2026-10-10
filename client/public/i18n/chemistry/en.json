@@ -18,5 +18,6 @@
   "unknown-element": "Unknown element {element} in {formula}",
   "bad-formula": "Could not parse formula {formula}",
   "analysis-total": "Analysis of {material} totals {total}% including LOI; expected about 100%.",
-  "stored-equivalent": "The stored equivalent weight of {material} does not match its formula and LOI; the formula and LOI were used instead."
+  "stored-equivalent": "The stored equivalent weight of {material} does not match its formula and LOI; the formula and LOI were used instead.",
+  "trace-flux": "Recipe contains only traces of flux oxides, so the UMF is not meaningful."
 }

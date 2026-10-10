@@ -129,3 +129,7 @@ without changes to the stylesheets.
 - **A message names a kind of record by a code** that each language words in its own phrase
   (ICU `select`), never by an English word put into the sentence, since German and French need
   gender and case to agree.
+- **Templates use the full key, with no `prefix`**: `*transloco="let t"` and
+  `t('recipe.print.title')`, as code does, so a key reads the same wherever it is used and a
+  search for it finds every use ([translating.md](../translating.md#keys)). This replaces the
+  `prefix: 'recipe'` under Consequences.

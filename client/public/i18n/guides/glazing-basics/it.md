@@ -244,23 +244,17 @@ La **cessione**{{en: leaching}} è il passaggio di metalli da uno smalto cotto a
 
 ### Senza piombo non vuol dire idoneo al contatto con gli alimenti
 
-Le norme di Stati Uniti, UE, Regno Unito, Australia e Nuova Zelanda limitano il piombo e il cadmio che un pezzo cotto cede, non quello che lo smalto{{en: glaze}} contiene. «Senza piombo» elimina un pericolo; non è una valutazione di idoneità al contatto con gli alimenti{{en: food safe}}. Anche altri ossidi vengono ceduti: Glazy avverte che gli smalti ad alto contenuto di bario «possono essere soggetti a cessione e in genere non sono idonei al contatto con gli alimenti», Digitalfire dice che il rame «può rendere uno smalto soggetto a cessione; va provato», e Glazy non consiglia più gli smalti al piombo per la ceramica d’uso.
+Le norme di Stati Uniti, UE, Regno Unito e Australia limitano il piombo e il cadmio che un pezzo cotto cede, non quello che lo smalto{{en: glaze}} contiene. «Senza piombo» elimina un pericolo; non è una valutazione di idoneità al contatto con gli alimenti{{en: food safe}}. Anche altri ossidi vengono ceduti: Glazy avverte che gli smalti ad alto contenuto di bario «possono essere soggetti a cessione e in genere non sono idonei al contatto con gli alimenti», Digitalfire dice che il rame «può rendere uno smalto soggetto a cessione; va provato», e Glazy non consiglia più gli smalti al piombo per la ceramica d’uso.
 
 Lo **smalto interno**{{en: liner glaze}} è uno smalto stabile, di solito trasparente o bianco, per le superfici a contatto con il cibo. Secondo noi, uno senza coloranti, bario, piombo o litio, che fonde completamente, non cavilla e resiste bene all’usura, è la scelta a minor rischio. Minor rischio non è una prova.
 
 Le **formule limite**{{en: limit formulas}} (Digitalfire preferisce **formule obiettivo**, _target formulas_) danno gli intervalli tipici della formula di Seger (UMF) per gli smalti stabili a un dato cono: i valori obiettivo di Digitalfire per il cono 6 mettono l’allumina a 0,285–0,64 e la silice a 2,4–4,7. Orientano verso una chimica corretta ma non provano nulla; Digitalfire evita la parola «limite» perché fa pensare che gli smalti entro gli intervalli «siano in qualche modo sicuri». Gli strumenti di Glazecalc per modificare una ricetta segnalano quando la nuova supera un limite consigliato, per esempio molto boro a cono 6, e che cosa probabilmente farà lo smalto.
 
-Table: Limiti della FDA statunitense per il piombo ceduto dalla ceramica (CPG Sec. 545.450), in microgrammi per millilitro di soluzione di prova
-Label: Limiti FDA per il piombo
+I limiti di legge cambiano da un paese all’altro. La tabella mostra quelli del proprio paese, nelle unità usate dalla norma stessa; scegliere un altro paese per fare un confronto.
 
-| Oggetto                                          | Piombo (µg/mL) | Valutazione          |
-| ------------------------------------------------ | -------------: | -------------------- |
-| Oggetti piani (profondità non superiore a 25 mm) |            3,0 | Media di 6 pezzi     |
-| Oggetti cavi piccoli (meno di 1,1 L)             |            2,0 | Ciascuno dei 6 pezzi |
-| Oggetti cavi grandi (1,1 L o più)                |            1,0 | Ciascuno dei 6 pezzi |
-| Tazze, mug e brocche                             |            0,5 | Ciascuno dei 6 pezzi |
+::food-limits
 
-Negli Stati Uniti i pezzi non destinati agli alimenti devono riportare la dicitura permanente, cotta sul pezzo, «Not for Food Use» (non per uso alimentare) oppure avere un foro che attraversa la superficie destinata al cibo. L’UE fissa i limiti di piombo e cadmio nella direttiva 84/500/CEE, che l’Inghilterra mantiene nella propria legislazione. I Paesi Bassi e il Lussemburgo hanno ridotto i loro limiti per il piombo di circa 130–150 volte dal 29 maggio 2026, e il Belgio li segue. Australia e Nuova Zelanda usano la norma AS 4371, i cui valori sono consultabili solo a pagamento.
+Negli Stati Uniti i pezzi non destinati agli alimenti devono riportare la dicitura permanente, cotta sul pezzo, «Not for Food Use» (non per uso alimentare) oppure avere un foro che attraversa la superficie destinata al cibo. L’UE fissa i limiti di piombo e cadmio nella direttiva 84/500/CEE, e il Regno Unito mantiene gli stessi valori nella propria legislazione. Dal 29 maggio 2026 i Paesi Bassi, il Belgio e il Lussemburgo ammettono circa da 130 a 150 volte meno piombo e circa 15 volte meno cadmio. L’Australia fissa limiti per la ceramica importata; non abbiamo trovato limiti ufficiali per la ceramica prodotta in Australia o in Nuova Zelanda.
 
 ### Le prove
 

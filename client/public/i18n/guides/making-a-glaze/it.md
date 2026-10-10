@@ -26,18 +26,9 @@ Preparare uno smalto{{en: glaze}} significa pesare secondo una ricetta le **mate
 
 ### Dove acquistare
 
-Chi fa ceramica acquista dai fornitori di materiali ceramici, che vendono argilla, materiali per smalti{{en: glaze}} e attrezzi. La tabella ne elenca alcuni confermati dalle ricerche fatte per questa guida. Gli assortimenti cambiano, quindi verificare prima di ordinare. Digitalfire, un sito di riferimento sulla ceramica, tiene un elenco di negozi di fornitori per altri paesi.
+Chi fa ceramica acquista dai fornitori di materiali ceramici, che vendono argilla, materiali per smalti{{en: glaze}} e attrezzi. La tabella ne mostra alcuni per il proprio paese, ciascuno verificato sul sito del negozio stesso, e si può scegliere un altro paese per vederne i negozi. Gli assortimenti cambiano, quindi verificare prima di ordinare. I grandi produttori come Sibelco e Imerys vendono all’industria; chi fa ceramica acquista i loro materiali tramite negozi come questi. Digitalfire, un sito di riferimento sulla ceramica, tiene un elenco di negozi di fornitori per altri paesi.
 
-Table: Alcuni fornitori di materiali per smalti, per area
-Label: Fornitori per area
-
-| Area          | Fornitori                                                                                                                                   | Confezioni viste      |
-| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | --------------------- |
-| Stati Uniti   | Laguna Clay; Clay Art Center; The Ceramic Shop; New Mexico Clay; Seattle Pottery Supply                                                     | 50 lb (22,7 kg)       |
-| Regno Unito   | Potterycrafts; Bath Potters; Potclays; Valentine Clays                                                                                      | 1, 5 e 25 kg          |
-| UE            | Mondré & Manz (Germania); Goerg & Schneider (Germania, soprattutto argille); Ceradel (Francia)                                              | Chiedere al fornitore |
-| Australia     | Walker Ceramics (con il nome Ozclay, insieme a Feeneys e Cesco); Northcote Pottery Supplies, tramite Bunnings; Oxerra per fritte e pigmenti | Da 10 a 25 kg         |
-| Nuova Zelanda | CCG; Decopot                                                                                                                                | 2,5; 5 e 25 kg        |
+::shops
 
 ### Quanto acquistare
 
@@ -76,6 +67,10 @@ I nomi commerciali vanno e vengono man mano che le miniere chiudono. Il feldspat
 Il **Gerstley Borate**, un minerale naturale di boro presente in molte ricette più vecchie, è difficile da trovare da quando la sua miniera ha chiuso nel 2000, anche se New Mexico Clay ha riferito nel novembre 2025 che Laguna forniva il «Gerstley Borate Original». Le fonti non concordano sul **Gillespie Borate** come sostituto. Il produttore lo vende come sostituto libbra per libbra. Berkeley Potters Studio dice che «non è un sostituto diretto», e Digitalfire ha visto che cambiava il colore di uno smalto. La via sicura è confrontare i due in base ai loro ossidi, poi fare una prova.
 
 Anche i nomi cambiano da un paese all’altro. In Nord America le parole **flint** (selce), _quartz_ (quarzo) e _silica_ (silice) indicano la stessa silice macinata, e Digitalfire dice che probabilmente dai fornitori non si trova vera polvere di selce. Nel Regno Unito il _flint_ è un prodotto a sé: quello di Valentine è silice calcinata (riscaldata). Entrambi sono silice quasi pura, quindi ci aspettiamo che siano simili, ma controllare l’analisi. Per il caolino, Glazy dice che le sostituzioni uno a uno, come EPK al posto di un china clay, «spesso funzionano benissimo, soprattutto quando le quantità sono \<10%».
+
+Molte ricette indicano materiali venduti in un paese e non in un altro. La tabella qui sotto prende ogni materiale dell’elenco standard di Glazecalc che non è in vendita dove si acquista e, in base alle analisi, trova il più simile dello stesso tipo che invece lo è. Il numero indica quanto i due sono distanti: i grammi di cui differiscono i loro ossidi dopo cottura, ogni 100 g di materiale, sommati su tutti gli ossidi. Entro circa 15 g, di solito l’uno può sostituire l’altro in una prima prova. I nomi riportano i codici propri dei produttori e dei negozi, così si possono chiedere per nome.
+
+::local-equivalents
 
 > [!NOTE]
 > Glazecalc confronta i materiali in base a ciò che apportano allo smalto cotto, non in base al nome. Una [ricetta](/recipe) con un materiale non più prodotto indica cosa si usa oggi. **Suggerisci le quantità e confronta** ricalcola le quantità per un sostituto, e **Adatta ai materiali che ho** rifà la ricetta con i materiali che si hanno sullo scaffale. Entrambe le funzioni fanno corrispondere solo gli ossidi dopo cottura, quindi provare prima una piccola pesata.

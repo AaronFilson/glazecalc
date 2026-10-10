@@ -2,7 +2,8 @@ name: Publish image
 
 # After CI passes on master, builds the production image natively for amd64 and
 # arm64 (Graviton) and publishes one multi-architecture image to GHCR, tagged
-# with the full commit SHA and "latest". deploy/deploy.sh pulls these tags.
+# with the full commit SHA, and "latest" if it is still master's newest commit.
+# deploy/deploy.sh pulls these tags.
 on:
   workflow_run:
     workflows: [CI]
@@ -76,6 +77,7 @@ jobs:
     runs-on: ubuntu-26.04
     timeout-minutes: 10
     permissions:
+      contents: read
       packages: write
     steps:
       - uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
@@ -96,11 +98,20 @@ jobs:
         working-directory: /tmp/digests
         env:
           SHA: ${{ github.event.workflow_run.head_sha }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           sources=()
           for digest in *; do sources+=("$IMAGE@sha256:$digest"); done
-          docker buildx imagetools create \
-            --tag "$IMAGE:sha-$SHA" --tag "$IMAGE:latest" \
-            "${sources[@]}"
+          tags=(--tag "$IMAGE:sha-$SHA")
+          # "latest" only for master's newest commit, so a run that finishes late,
+          # or a re-run for an older commit, cannot move it back.
+          head=$(curl -fsS -H "Authorization: Bearer $GH_TOKEN" -H 'Accept: application/vnd.github.sha' \
+            "$GITHUB_API_URL/repos/$GITHUB_REPOSITORY/commits/master")
+          if [ "$head" = "$SHA" ]; then
+            tags+=(--tag "$IMAGE:latest")
+          else
+            echo "Not tagging latest: master is now at $head."
+          fi
+          docker buildx imagetools create "${tags[@]}" "${sources[@]}"
           docker buildx imagetools inspect "$IMAGE:sha-$SHA"
           echo "Published $IMAGE:sha-$SHA" >> "$GITHUB_STEP_SUMMARY"

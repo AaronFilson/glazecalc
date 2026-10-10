@@ -136,7 +136,8 @@
       "legend": "Glasurdichte",
       "sg": {
         "label": "Spezifisches Gewicht",
-        "saved": "Gespeichert: Glasurdichte als spezifisches Gewicht."
+        "saved": "Gespeichert: Glasurdichte als spezifisches Gewicht.",
+        "example": "spez. Gewicht 1,45"
       },
       "baume": {
         "label": "Grad Baumé, mit dem Aräometer",

@@ -1,0 +1,237 @@
+{
+  "auth": {
+    "signInHeading": "Logga in",
+    "keepHeading": "Behåll arbetet",
+    "signUpHeading": "Skapa ett konto",
+    "signInLead": "Välkommen tillbaka till glasyranteckningarna.",
+    "keepLead": "Behåll allt som har skapats under namnet {name}: lägg till en e-postadress och ett lösenord. Det förblir gratis.",
+    "signUpLead": "Gratis. Recept, råvaror och anteckningar är privata och hör bara till kontot.",
+    "trialNote": "Redan registrerad? Vid inloggning flyttas det som har skapats under namnet {name} in i kontot. Ny här? <signup>Skapa ett konto</signup> för att behålla det i stället.",
+    "email": "E-post",
+    "password": "Lösenord",
+    "passwordHint": "Minst 8 tecken.",
+    "confirmation": "Bekräfta lösenordet",
+    "passwordMissing": "Ange lösenordet.",
+    "createAccount": "Skapa konto",
+    "signIn": "Logga in",
+    "haveAccount": "Redan registrerad? <signin>Logga in</signin>",
+    "forgot": "Glömt lösenordet? Återställ det",
+    "newHere": "Ny här? <signup>Skapa ett gratis konto</signup>",
+    "signUpFailed": "Fel: det gick inte att skapa kontot.",
+    "signInFailed": "Fel: det gick inte att logga in."
+  },
+  "forgot": {
+    "heading": "Återställ lösenordet",
+    "checkInbox": "Titta i inkorgen och i skräppostmappen. Om inget kommer, kontrollera adressen och begär en länk igen.",
+    "intro": "Ange kontots e-postadress, så skickar vi en länk för att välja ett nytt lösenord.",
+    "email": "E-post:",
+    "send": "Skicka återställningslänk",
+    "back": "Tillbaka till inloggningen",
+    "failed": "Fel: det gick inte att skicka e-postmeddelandet för återställning. Försök igen."
+  },
+  "reset": {
+    "heading": "Välj ett nytt lösenord",
+    "signIn": "Logga in",
+    "incomplete": "Den här sidan behöver länken från ett e-postmeddelande om återställning av lösenord, och den här länken är ofullständig.",
+    "askAgain": "Begär en ny länk",
+    "password": "Nytt lösenord:",
+    "confirmation": "Bekräfta det nya lösenordet:",
+    "save": "Spara nytt lösenord",
+    "hint": "Minst 8 tecken. Alla enheter som är inloggade på kontot loggas ut.",
+    "failed": "Fel: det gick inte att ändra lösenordet. Försök igen."
+  },
+  "account": {
+    "trialTitle": "Provperiod",
+    "trialLead": "Glazecalc används på prov under namnet {name}.",
+    "keepHeading": "Behåll arbetet",
+    "keepText": "Provperioden och allt i den tas bort {date}. Skapa ett gratis konto för att behålla dem: recept, råvaror och anteckningar blir kvar precis som de är, och {name} förblir visningsnamnet.",
+    "createAccount": "Skapa ett konto",
+    "title": "Konto",
+    "signedInAs": "Inloggad som {email}.",
+    "changeHeading": "Ändra lösenordet",
+    "current": "Nuvarande lösenord",
+    "currentMissing": "Ange det nuvarande lösenordet.",
+    "password": "Nytt lösenord",
+    "passwordHint": "Minst 8 tecken. Andra enheter som är inloggade på kontot loggas ut.",
+    "confirmation": "Bekräfta det nya lösenordet",
+    "change": "Ändra lösenord",
+    "changeFailed": "Fel: det gick inte att ändra lösenordet. Försök igen.",
+    "deleteHeading": "Radera kontot",
+    "deleteText": "Det här tar bort kontot och allt som har sparats: recept, råvaror, tillsatser, anteckningar, brännloggar och råd. Det går inte att ångra.",
+    "deletePassword": "Lösenordet, för att bekräfta",
+    "deletePasswordMissing": "Ange lösenordet för att bekräfta.",
+    "delete": "Radera kontot",
+    "deleteFailed": "Fel: det gick inte att radera kontot. Försök igen."
+  },
+  "settings": {
+    "heading": "Inställningar",
+    "intro": "Sparas med kontot och gäller därför på alla enheter.",
+    "saveFailed": "Det gick inte att spara inställningen. Försök igen.",
+    "language": {
+      "legend": "Språk",
+      "help": "Språket i appen, guiderna och e-postmeddelandena. När det ändras öppnas den här sidan på det språket.",
+      "saved": "Sparat: {language}."
+    },
+    "region": {
+      "legend": "Verkstadens region",
+      "none": {
+        "label": "Ingen vald",
+        "saved": "Sparat: ingen region vald; standardvärdena följer webbläsaren."
+      },
+      "saved": "Sparat: {region}.",
+      "help": "Råvarorna som säljs där och standardvärdena för tal, datum, temperaturer och käglor nedan. Tills ett val görs följer de webbläsarens språk."
+    },
+    "format": {
+      "legend": "Tal och datum",
+      "auto": {
+        "label": "Efter språk och region",
+        "saved": "Sparat: tal och datum skrivs som i det valda språket och den valda regionen."
+      },
+      "saved": "Sparat: tal och datum som på {language}.",
+      "help": "Hur tal och datum skrivs: 12,345.6 eller 12.345,6, och i vilken ordning dag och månad står."
+    },
+    "decimalMark": {
+      "legend": "Inmatning av mängder",
+      "either": {
+        "label": "Komma eller punkt som decimaltecken",
+        "example": "12,5 eller 12.5",
+        "saved": "Sparat: mängder kan skrivas med komma eller punkt."
+      },
+      "comma": {
+        "label": "Komma som decimaltecken",
+        "saved": "Sparat: mängder skrivs med komma som decimaltecken."
+      },
+      "point": {
+        "label": "Punkt som decimaltecken",
+        "saved": "Sparat: mängder skrivs med punkt som decimaltecken."
+      },
+      "help": "Med komma eller punkt läses en mängd som 1.250 på samma sätt som talen skrivs enligt inställningen ovan."
+    },
+    "temperature": {
+      "legend": "Temperaturer",
+      "celsius": {
+        "label": "Celsius",
+        "saved": "Sparat: temperaturer i °C."
+      },
+      "fahrenheit": {
+        "label": "Fahrenheit",
+        "saved": "Sparat: temperaturer i °F."
+      },
+      "help": "Tills ett val görs följer detta regionen: °F i USA, °C på andra håll."
+    },
+    "cones": {
+      "legend": "Bränning",
+      "orton": {
+        "label": "Efter Ortonkäglor",
+        "example": "kägla 04, kägla 6",
+        "saved": "Sparat: bränning efter Ortonkäglor."
+      },
+      "temperature": {
+        "label": "Efter temperatur, som i automatikens program",
+        "saved": "Sparat: bränning efter temperatur."
+      },
+      "help": "Tills ett val görs följer detta regionen: Ortonkäglor i USA, Storbritannien, Irland, Australien och Nya Zeeland, temperatur i övriga Europa."
+    },
+    "density": {
+      "legend": "Glasyrens densitet",
+      "sg": {
+        "label": "Specifik vikt",
+        "saved": "Sparat: glasyrens densitet som specifik vikt.",
+        "example": "1,45"
+      },
+      "baume": {
+        "label": "Baumégrader, med flytvikt",
+        "saved": "Sparat: glasyrens densitet i baumégrader."
+      },
+      "pint": {
+        "label": "Pintvikt, uns per brittisk pint",
+        "saved": "Sparat: glasyrens densitet som pintvikt."
+      },
+      "help": "Hur guiderna anger hur tjock en glasyr är. Tills ett val görs följer detta regionen: baumégrader i Italien, specifik vikt på andra håll."
+    },
+    "theme": {
+      "legend": "Ljust eller mörkt",
+      "system": {
+        "label": "Som enheten är inställd",
+        "saved": "Sparat: ljust eller mörkt enligt varje enhets inställning."
+      },
+      "light": {
+        "label": "Ljust",
+        "saved": "Sparat: alltid ljust."
+      },
+      "dark": {
+        "label": "Mörkt",
+        "saved": "Sparat: alltid mörkt."
+      },
+      "help": "Utskrivna recept är alltid svart på vitt."
+    },
+    "palette": {
+      "legend": "Färger",
+      "saved": "Sparat: knappar och länkar i {palette}.",
+      "help": "För knappar, länkar och flikar, med namn efter glasyrer. Var och en är lätt att läsa både i ljust och i mörkt läge."
+    },
+    "weightUnit": {
+      "legend": "Satsvikter",
+      "grams": {
+        "label": "Gram",
+        "saved": "Sparat: satsvikter i gram."
+      },
+      "pounds": {
+        "label": "Pund och uns",
+        "saved": "Sparat: satsvikter i pund och uns."
+      },
+      "help": "För utskrivna satser."
+    },
+    "gramPrecision": {
+      "legend": "Gram på utskrivna satser",
+      "single": {
+        "label": "På en tiondels gram",
+        "saved": "Sparat: gram visas med tiondelar."
+      },
+      "full": {
+        "label": "Full precision",
+        "saved": "Sparat: gram visas fullständigt, med 5 decimaler."
+      },
+      "help": "Med en tiondels gram visas mängder under 10 g ändå med hundradelar (2,35 g), för färgmedel i små provsatser."
+    },
+    "lead": {
+      "legend": "Bly",
+      "off": {
+        "label": "Av: bly läggs aldrig till i ett recept och föreslås aldrig",
+        "saved": "Sparat: bly läggs aldrig till i ett recept och föreslås aldrig."
+      },
+      "on": {
+        "label": "På: råvaror med bly kan läggas till och föreslås",
+        "saved": "Sparat: råvaror med bly kan läggas till och föreslås."
+      },
+      "help": "Bly är giftigt att andas in eller svälja och ansamlas i kroppen, och en blyglasyr kan avge bly till mat och dryck; ingen beräkning kan avgöra om ett bränt föremål gör det. Med inställningen Av öppnas recept som redan innehåller bly fortfarande som de var.",
+      "warning": "Använd bly bara som fritta, aldrig ofrittat som blymönja, blyvitt, gul blyoxid eller blyglete. Blanda det vått, spruta det aldrig, bär andningsskydd och våtstäda. Håll blyglaserat gods borta från mat och dryck om inte det brända föremålet har klarat ett laboratorietest av metallavgivning.",
+      "turnOn": "Slå på bly",
+      "keepOff": "Låt vara avstängt"
+    },
+    "englishTerms": {
+      "legend": "Engelska facktermer",
+      "off": {
+        "label": "Av",
+        "saved": "Sparat: inga engelska facktermer."
+      },
+      "on": {
+        "label": "Visa engelska efter viktiga facktermer",
+        "saved": "Sparat: engelska visas efter viktiga facktermer."
+      },
+      "help": "För den som läser engelska källor, som Digitalfire, vid sidan av den här: viktiga facktermer får sin engelska motsvarighet inom parentes."
+    },
+    "notice": {
+      "legend": "Meddelande om översättningen",
+      "shown": {
+        "label": "Visas",
+        "saved": "Sparat: meddelandet visas."
+      },
+      "hidden": {
+        "label": "Döljs",
+        "saved": "Sparat: meddelandet döljs. En rad av det står kvar i säkerhetsguiderna."
+      },
+      "help": "Meddelandet överst på varje sida om att den har översatts med AI, med en möjlighet att föreslå en rättelse."
+    }
+  }
+}

@@ -1,4 +1,19 @@
 <ng-container *transloco="let t">
+  <!-- Asked before Start new or Open, in the editor; before leaving the page, here, whatever view is open. -->
+  <ng-template #unsavedQuestion>
+    <div class="recipe-unsaved" role="group" aria-labelledby="unsaved-text" (keydown.escape)="keepEditing()">
+      <span id="unsaved-text">{{ t('recipe.page.unsaved') }}</span>
+      <button id="unsaved-keep" type="button" class="btn btn-light border btn-sm" (click)="keepEditing()">
+        {{ t('recipe.page.keepEditing') }}
+      </button>
+      <button type="button" class="btn btn-outline-danger btn-sm" (click)="discardAndLeave()">
+        {{ t('recipe.page.discard') }}
+      </button>
+    </div>
+  </ng-template>
+  @if (pendingLeave()?.page) {
+    <ng-container [ngTemplateOutlet]="unsavedQuestion" />
+  }
   @if (printRecipe(); as recipe) {
     <gc-recipe-print [recipe]="recipe" [chemistryOf]="chemistryOf" (back)="closePrint()" />
   } @else if (printWaiting()) {
@@ -45,16 +60,8 @@
             </button>
           }
         </div>
-        @if (pendingLeave()) {
-          <div class="recipe-unsaved" role="group" aria-labelledby="unsaved-text" (keydown.escape)="keepEditing()">
-            <span id="unsaved-text">{{ t('recipe.page.unsaved') }}</span>
-            <button id="unsaved-keep" type="button" class="btn btn-light border btn-sm" (click)="keepEditing()">
-              {{ t('recipe.page.keepEditing') }}
-            </button>
-            <button type="button" class="btn btn-outline-danger btn-sm" (click)="discardAndLeave()">
-              {{ t('recipe.page.discard') }}
-            </button>
-          </div>
+        @if (pendingLeave() && !pendingLeave()?.page) {
+          <ng-container [ngTemplateOutlet]="unsavedQuestion" />
         }
 
         <div class="recipe-fields">
@@ -190,7 +197,7 @@
           <p class="recipe-scale-note" [class.is-problem]="scaleMessage()?.problem" role="status">
             {{ scaleMessage()?.text }}
           </p>
-          @if (modern().swaps.length) {
+          @if (modern().swaps.length || modern().colorants.length) {
             <div class="recipe-swap">
               <p>
                 @for (swap of modern().swaps; track $index) {
@@ -207,28 +214,37 @@
                     }
                   </span>
                 }
+                @for (swap of modern().colorants; track $index) {
+                  <span class="recipe-swap-line">
+                    <gc-rich
+                      [text]="t('recipe.page.swapColorant', { from: swap.from, status: swap.status, to: swap.to })"
+                    />
+                  </span>
+                }
               </p>
-              <div class="recipe-swap-buttons">
-                <button
-                  id="try-modern"
-                  type="button"
-                  class="btn btn-light border btn-sm"
-                  (click)="tryModernMaterials()"
-                >
-                  {{ t('recipe.page.tryModern') }}
-                </button>
-                @if (notLikeForLike()) {
+              @if (modern().swaps.length) {
+                <div class="recipe-swap-buttons">
                   <button
-                    id="suggest-amounts"
+                    id="try-modern"
                     type="button"
                     class="btn btn-light border btn-sm"
-                    [attr.aria-expanded]="!!suggestQuestion()"
-                    (click)="suggestModernAmounts()"
+                    (click)="tryModernMaterials()"
                   >
-                    {{ t('recipe.page.suggestAmounts') }}
+                    {{ t('recipe.page.tryModern') }}
                   </button>
-                }
-              </div>
+                  @if (notLikeForLike()) {
+                    <button
+                      id="suggest-amounts"
+                      type="button"
+                      class="btn btn-light border btn-sm"
+                      [attr.aria-expanded]="!!suggestQuestion()"
+                      (click)="suggestModernAmounts()"
+                    >
+                      {{ t('recipe.page.suggestAmounts') }}
+                    </button>
+                  }
+                </div>
+              }
               @if (suggestProblem()) {
                 <p class="recipe-swap-problem" role="alert">{{ suggestProblem() }}</p>
               }
@@ -302,6 +318,8 @@
                       [(tries)]="suggestTries"
                       [mine]="myMaterials()"
                       [standard]="standardMaterials()"
+                      [standardFailed]="standardMaterialsFailed()"
+                      (retry)="loadStandardMaterials()"
                       [hideLead]="leadOff()"
                       [inRecipe]="materialKeys()"
                     />
@@ -431,6 +449,8 @@
                       [(tries)]="leadTries"
                       [mine]="myMaterials()"
                       [standard]="standardMaterials()"
+                      [standardFailed]="standardMaterialsFailed()"
+                      (retry)="loadStandardMaterials()"
                       [hideLead]="leadOff()"
                       [inRecipe]="materialKeys()"
                       [intro]="t('recipe.page.leadTriesIntro')"
@@ -482,17 +502,34 @@
                     (triesChange)="changeShelf($event)"
                     [mine]="myMaterials()"
                     [standard]="standardMaterials()"
+                    [standardFailed]="standardMaterialsFailed()"
+                    (retry)="loadStandardMaterials()"
                     [hideLead]="leadOff()"
                     [inRecipe]="noKeys"
                     [intro]="t('recipe.page.shelfTriesIntro')"
                     list="shelf"
                   />
-                } @else {
+                  @if (shelfLeadHidden(); as hidden) {
+                    <p class="library-hidden recipe-shelf-lead">
+                      <gc-rich
+                        [text]="t('recipe.page.shelfLeadHidden', { count: hidden })"
+                        [links]="{ settings: '/account' }"
+                      />
+                    </p>
+                  }
+                } @else if (!shelfProblem()) {
                   <p class="muted">{{ t('recipe.page.gettingShelf') }}</p>
                 }
                 <p class="recipe-shelf-status" role="status">{{ shelfStatus() }}</p>
                 @if (shelfProblem()) {
                   <p class="recipe-swap-problem" role="alert">{{ shelfProblem() }}</p>
+                  @if (!shelfLoaded()) {
+                    <div class="recipe-swap-buttons">
+                      <button type="button" class="btn btn-light border btn-sm" (click)="loadShelf()">
+                        {{ t('recipe.page.shelfTryAgain') }}
+                      </button>
+                    </div>
+                  }
                 }
                 <div class="recipe-swap-buttons">
                   <button
@@ -536,9 +573,11 @@
           noun="materials"
           [mine]="myMaterials()"
           [standard]="standardMaterials()"
+          [standardFailed]="standardMaterialsFailed()"
           [inRecipe]="materialKeys()"
           [hideLead]="leadOff()"
           (pick)="addMaterial($event)"
+          (retry)="loadStandardMaterials()"
         />
 
         <h3 id="additives-heading" class="recipe-additives-heading" tabindex="-1">
@@ -619,9 +658,11 @@
           mineLink="/additive"
           [mine]="myAdditives()"
           [standard]="standardAdditives()"
+          [standardFailed]="standardAdditivesFailed()"
           [inRecipe]="additiveKeys()"
           [hideLead]="leadOff()"
           (pick)="addAdditive($event)"
+          (retry)="loadStandardAdditives()"
         />
 
         <div class="recipe-save">
@@ -771,7 +812,7 @@
                   @if (rec.date) {
                     <div>{{ t('recipe.page.savedDate', { date: (rec.date | gcDate) }) }}</div>
                   }
-                  <div>{{ t('recipe.page.savedNotes', { notes: savedNotes(rec) }) }}</div>
+                  <div class="keep-lines">{{ t('recipe.page.savedNotes', { notes: savedNotes(rec) }) }}</div>
                 </div>
               }
             </li>

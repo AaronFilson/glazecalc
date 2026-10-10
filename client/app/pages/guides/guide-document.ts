@@ -31,7 +31,12 @@ import { Lexer, Marked, type Token, type Tokens, type TokenizerExtension } from 
 //                             it, shown to readers who ask for English terms
 //   :::orton ... :::          shown only to those who fire to cones;
 //   :::temperature ... :::    only to those who fire by temperature
-//   ::poison-lines            who to call, for the reader's region
+//   ::poison-lines            who to call, for the reader's region; likewise
+//   ::shops                   where to buy glaze materials,
+//   ::silica-limit            the workplace limit for silica dust,
+//   ::food-limits             the limits for ceramic ware in contact with food,
+//   ::local-equivalents       and the materials sold there closest to those
+//                             sold elsewhere (lib/regions)
 
 export interface GuideSection {
   id: string;
@@ -166,8 +171,13 @@ export type Block =
     }
   | { kind: 'callout'; tone: 'note' | 'warning'; blocks: Block[] }
   | { kind: 'definitions'; items: Array<{ term: Inline[]; definition: Inline[] }> }
-  | { kind: 'poison-lines' }
+  | { kind: RegionBlock }
   | { kind: 'rule' };
+
+/** Parts of a guide drawn from data for the reader's region, each a line ::name of its own. */
+export const REGION_BLOCKS = ['poison-lines', 'shops', 'silica-limit', 'food-limits', 'local-equivalents'] as const;
+export type RegionBlock = (typeof REGION_BLOCKS)[number];
+const isRegionBlock = (name: string): name is RegionBlock => (REGION_BLOCKS as readonly string[]).includes(name);
 
 const READING = /^\s*(\d[\d,.]*)(?:\s*[–-]\s*(\d[\d,.]*))?\s*(°[CF](?:\/h)?)\s*$/;
 const number = (text: string): number => Number(text.replace(/,/g, ''));
@@ -234,8 +244,9 @@ export function blocks(tokens: readonly Token[], sectionId = ''): Block[] {
     switch (token.type) {
       case 'paragraph': {
         const text = token.text.trim();
-        if (text === '::poison-lines') {
-          out.push({ kind: 'poison-lines' });
+        const name = /^::([\w-]+)$/.exec(text)?.[1];
+        if (name && isRegionBlock(name)) {
+          out.push({ kind: name });
         } else if (text.startsWith('Table: ')) {
           const [line, labelLine] = text.split('\n');
           caption = {

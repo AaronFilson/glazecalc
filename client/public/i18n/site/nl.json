@@ -1,0 +1,111 @@
+{
+  "landing": {
+    "eyebrow": "Glazuurcalculator en atelierlogboek",
+    "heading": "Gratis glazuurchemie voor pottenbakkers.",
+    "lead": "Begrijp uw glazuren, in plaats van ze alleen te mengen. Voer een recept in en zie meteen de Segerformule (UMF), de verhouding siliciumoxide tot aluminiumoxide en de verhouding van de smeltmiddelen. Bewaar uw recepten, grondstoffen, kleurstoffen, notities en stookverslagen bij elkaar in één privélogboek.",
+    "trialEnded": "Uw proefperiode is afgelopen. Begin een nieuwe, of maak een gratis account aan om uw werk te bewaren.",
+    "tryIt": "Nu proberen",
+    "createAccount": "Gratis account aanmaken",
+    "trialFailed": "Een proefperiode starten is nu niet gelukt. Probeer het opnieuw.",
+    "heroNote": "Proberen kan zonder account · Gratis en open source · Uw recepten blijven privé",
+    "heroAlt": "Een rij gestookte kegeldrietallen: de witte pyrometrische kegels in elk drietal zijn in de hitte van de oven omgebogen.",
+    "heroCaption": "Kegeldrietallen na een stook: elke kegel buigt zodra de oven genoeg heatwork (temperatuur en tijd samen) heeft geleverd.",
+    "exampleHeading": "Zo werkt het: een klassiek basisglazuur voor celadon",
+    "exampleCaption": "“4321” van Bernard Leach, vaak gestookt tot kegel 10, in gewichtsdelen.",
+    "material": "Grondstof",
+    "parts": "Delen",
+    "unityHeading": "De Segerformule ervan",
+    "exampleNote": "De smeltmiddelen zijn samen 1, zodat u twee willekeurige glazuren eerlijk kunt vergelijken. Hier in uw browser berekend door dezelfde code die de calculator gebruikt.",
+    "featuresHeading": "Wat Glazecalc doet",
+    "features": {
+      "unity": {
+        "title": "Meteen de Segerformule",
+        "text": "Zie smeltmiddelen, aluminiumoxide en siliciumoxide in de Segerformule, zoals glazuurchemici recepten vergelijken, zodra u een recept invoert."
+      },
+      "substitute": {
+        "title": "Herstellen en vervangen",
+        "text": "Is een grondstof niet meer leverbaar? Vergelijk formules om een vervanger te vinden die op dezelfde manier smelt."
+      },
+      "notebook": {
+        "title": "Uw atelierlogboek",
+        "text": "Bewaar recepten, uw eigen grondstoffen, kleurstoffen, notities en stookverslagen op één plek."
+      },
+      "learn": {
+        "title": "Al doende leren",
+        "text": "Gidsen in gewone taal, van wat een glazuur is tot hoe u het veilig stookt, staan naast de getallen."
+      }
+    },
+    "umfHeading": "Wat is een Segerformule?",
+    "umfRecipe": "Een glazuurrecept zegt hoeveel u van elke grondstof moet afwegen. De Segerformule, in het Engels unity molecular formula (UMF), zegt wat die grondstoffen in de oven worden: hoeveel moleculen van elk oxide er zijn, zo omgerekend dat de smeltmiddelen samen één zijn.",
+    "umfGroups": "Smeltmiddelen laten het glazuur smelten, aluminiumoxide maakt het gesmolten glazuur taaier en siliciumoxide vormt het glas. Als u die drie groepen vergelijkt, ziet u waarom het ene glazuur glanzend is en het andere mat, of waarom het ene loopt terwijl het andere blijft staan, en hoe u een grondstof vervangt die niet meer wordt verkocht.",
+    "readAdvice": "Meer glazuuradvies lezen",
+    "closingHeading": "Begin wanneer u wilt.",
+    "closingText": "Probeer de calculator nu en maak daarna een account aan om te bewaren wat u hebt gemaakt."
+  },
+  "about": {
+    "title": "Over Glazecalc",
+    "lead": "Een gratis, open source calculator voor glazuurchemie en een logboek voor pottenbakkers, keramisten en studenten.",
+    "whatHeading": "Wat het doet",
+    "what": "Glazecalc zet een glazuurrecept, de grondstoffen en hoeveel u van elk afweegt, om in de Segerformule (UMF): de oxiden waaruit het glazuur na het stoken bestaat, zo omgerekend dat de smeltmiddelen samen één zijn. Zo worden recepten vergelijkbaar, wordt duidelijker hoe een glazuur zich gedraagt, en hebt u houvast wanneer een grondstof vervangen moet worden.",
+    "alongside": "Naast de calculator bewaart Glazecalc uw recepten, uw eigen grondstoffen, kleurstoffen en andere toevoegingen, notities en stookverslagen, met een pagina praktisch <advice>glazuuradvies</advice> en <guides>gidsen</guides> voor beginnende pottenbakkers, van wat een glazuur is tot hoe u het veilig stookt.",
+    "numbersHeading": "Hoe de getallen worden berekend",
+    "numbers": "Elke grondstof wordt beschreven met een chemische formule of een oxideanalyse, plus het gloeiverlies: het deel dat in de oven wegbrandt, zoals het koolstofdioxide in krijt of het water in kaolien. Glazecalc rekent elke hoeveelheid met standaard molmassa’s om naar mol van elk oxide, telt die op over het hele recept en deelt door het totale aantal mol smeltmiddel. Kleurstoffen en andere toevoegingen staan bij een recept, maar tellen, zoals gebruikelijk, niet mee in de Segerformule.",
+    "guide": "De uitkomsten zijn een richtlijn, geen garantie. Echte grondstoffen verschillen van leverancier tot leverancier en van partij tot partij, en het stoken telt even zwaar als de chemie, dus test elk glazuur. Glazuren voor vlakken die met voedsel in aanraking komen, zouden op de afgifte van metalen getest moeten worden.",
+    "builtHeading": "Hoe het is gebouwd",
+    "built": "Glazecalc begon in 2017 en werd in 2026 opnieuw gebouwd. Het is één kleine webapplicatie, en de <source>broncode staat op GitHub</source> onder de MIT-licentie.",
+    "stackBrowser": "Angular 22 in de browser (standalone components en signals), met de glazuurchemie in een kleine gedeelde codebibliotheek.",
+    "stackServer": "Een TypeScript-API op Node.js 24 en Express 5, met MongoDB 9, gecontroleerd door meer dan 350 geautomatiseerde tests.",
+    "stackHosting": "Draait in Docker op Amazon Web Services, achter nginx met HTTPS van Let's Encrypt.",
+    "stackDeploy": "Uitgerold met GitHub Actions: bij elke wijziging worden images gebouwd en getest, en de uitrol logt zonder opgeslagen sleutels in bij AWS.",
+    "whoHeading": "Wie het heeft gemaakt",
+    "who": "Glazecalc wordt gemaakt door Aaron Filson. Een probleem gevonden of een idee? <issues>Open een issue op GitHub</issues>.",
+    "studio": "De handgemaakte keramiek van Aaron Filson is te vinden bij <studio>Updraft Pottery Studio</studio> in Tacoma, Washington. Bekijk het werk, en bestel een stuk als er een u aanspreekt."
+  },
+  "privacy": {
+    "title": "Privacy",
+    "lead": "Laatst bijgewerkt in oktober 2026.",
+    "shortHeading": "In het kort",
+    "short": "Glazecalc bewaart wat nodig is om uw account te laten werken, en niets meer. Er zijn geen advertenties, geen analysetools, geen trackingcookies en geen scripts van derden. Uw gegevens worden nooit verkocht of gedeeld.",
+    "storedHeading": "Wat er wordt opgeslagen",
+    "storedAccount": "<b>Uw account:</b> uw e-mailadres en uw wachtwoord, dat alleen als eenrichtingshash (bcrypt) wordt opgeslagen, nooit als het wachtwoord zelf.",
+    "storedTrial": "<b>Een proefperiode (de knop Nu proberen):</b> geen e-mailadres of wachtwoord, alleen een gegenereerde naam zoals “speckled quiet kilns”. Een proefperiode en alles wat erin is opgeslagen, worden 14 dagen na de start automatisch verwijderd, tenzij u een account aanmaakt om ze te bewaren.",
+    "storedSaved": "<b>Wat u opslaat:</b> uw recepten, grondstoffen, toevoegingen, notities, stookverslagen en adviezen. Andere gebruikers kunnen ze niet zien.",
+    "storedResets": "<b>Verzoeken om een wachtwoord opnieuw in te stellen:</b> een vingerafdruk van elke resetlink (niet de link zelf), die automatisch wordt verwijderd wanneer de link 30 minuten later verloopt.",
+    "storedBrowser": "<b>In uw browser:</b> één cookie, <code>glazecalc_session</code>, die u ingelogd houdt. Hij bevat uw inlogtoken, scripts op de pagina kunnen hem niet lezen, hij gaat alleen naar de eigen server van Glazecalc, en hij blijft 7 dagen geldig (14 voor een proefperiode). De lokale opslag bevat een notitie dat u bent ingelogd en, tijdens een proefperiode, de naam en de einddatum ervan. Uitloggen verwijdert ze.",
+    "emailHeading": "E-mail",
+    "email": "Glazecalc stuurt alleen e-mail wanneer u vraagt om uw wachtwoord opnieuw in te stellen en wanneer uw wachtwoord verandert. Die e-mail wordt verstuurd via Amazon Simple Email Service. Er is geen nieuwsbrief en geen marketingmail.",
+    "hostingHeading": "Logbestanden, back-ups en hosting",
+    "logs": "De webserver legt elk verzoek vast, met uw IP-adres, in een logbestand dat 14 dagen wordt bewaard om de site te laten werken en te beveiligen.",
+    "backups": "Versleutelde back-ups van de database worden 30 dagen bewaard, en kopieën van de schijf van de server 7 dagen, zodat de site na een storing kan worden hersteld.",
+    "hosting": "Alles wordt gehost door Amazon Web Services in de Verenigde Staten (Oregon).",
+    "deletingHeading": "Uw gegevens verwijderen",
+    "deleting": "U kunt uw account verwijderen op uw <account>accountpagina</account>. Daarmee worden uw account en alles wat u hebt opgeslagen meteen verwijderd; de knop Proefperiode wissen doet hetzelfde voor een proefperiode. Kopieën in back-ups verdwijnen naarmate de back-ups verlopen, binnen 30 dagen.",
+    "questionsHeading": "Vragen",
+    "questions": "Stel uw vraag door <issues>een issue te openen op GitHub</issues>. Als dit beleid verandert, verandert ook de datum bovenaan deze pagina."
+  },
+  "notFound": {
+    "heading": "Pagina niet gevonden",
+    "text": "Er is geen pagina op dit adres. Misschien is de pagina verplaatst, of bevat de link een typefout.",
+    "start": "Naar de startpagina"
+  },
+  "advice": {
+    "title": "Glazuuradvies",
+    "lead": "Praktische tips voor aanmaken, glazuren en stoken, en eventueel uw eigen adviezen.",
+    "signUp": "<signup>Maak een gratis account aan</signup> of <signin>log in</signin> om uw eigen adviezen te bewaren.",
+    "generalHeading": "Algemeen advies",
+    "tags": "Labels: {list}",
+    "addHeading": "Uw eigen advies toevoegen",
+    "titleLabel": "Titel:",
+    "tagsLabel": "Labels:",
+    "contentLabel": "Inhoud van het advies:",
+    "save": "Opslaan",
+    "mineHeading": "Mijn adviezen",
+    "nothingSaved": "Nog niets opgeslagen.",
+    "titleMissing": "Geef het advies een titel.",
+    "contentMissing": "Schrijf het advies.",
+    "fetchFailed": "Het ophalen van de adviezen is niet gelukt.",
+    "standardFetchFailed": "Het ophalen van de adviezen van de server is niet gelukt.",
+    "saved": "Het advies is toegevoegd.",
+    "saveFailed": "Het opslaan van het advies is niet gelukt."
+  }
+}

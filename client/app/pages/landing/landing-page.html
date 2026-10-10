@@ -7,6 +7,9 @@
       @if (auth.trialEnded()) {
         <p class="server-msg" role="status">{{ t('site.landing.trialEnded') }}</p>
       }
+      @if (auth.lostRecipe(); as title) {
+        <p class="errors-section" role="alert">{{ t('signedOut.recipeLost', { title }) }}</p>
+      }
       <div class="hero-actions">
         <button type="button" class="btn btn-primary btn-lg" [disabled]="starting()" (click)="tryIt()">
           {{ t('site.landing.tryIt') }}

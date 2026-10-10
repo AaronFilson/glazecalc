@@ -19,6 +19,7 @@ import { isDuplicateKey } from '../lib/mongo_errors.ts';
 import * as password from '../lib/password.ts';
 import * as limits from '../lib/rate_limit.ts';
 import * as session from '../lib/session.ts';
+import { cancelLinks } from '../models/password_reset.ts';
 import User, { PREFERENCES, type Preferences } from '../models/user.ts';
 import { say } from '../lib/messages.ts';
 
@@ -98,8 +99,11 @@ userRouter.put('/shelf', jwtAuth, express.json(), async (req, res) => {
 });
 
 // Users may only change or delete their own account; admins may act on any.
+// The id is written in lower case from here on, as the user's own id and the
+// records' owners are: an id in capitals is the same account.
 const selfOrAdmin = (req: Request, res: Response, next: NextFunction) => {
-  if (!mongoose.isValidObjectId(req.params.id)) return res.status(400).json(say('invalid-id'));
+  if (!mongoose.isObjectIdOrHexString(req.params.id)) return res.status(400).json(say('invalid-id'));
+  req.params.id = String(req.params.id).toLowerCase();
   const user = userOf(req);
   if (req.params.id === String(user._id) || user.role === 'admin') return next();
   return res.status(403).json(say('not-allowed'));
@@ -150,6 +154,8 @@ userRouter.put(
     try {
       const result = await User.updateOne({ _id: req.params.id }, { $set: changes });
       if (!result.matchedCount) return res.status(404).json(say('no-user'));
+      // A reset link sent to the old address must not work for the account now.
+      if (changes.email !== undefined) await cancelLinks(req.params.id as string);
       return res.status(200).json(say('user-updated'));
     } catch (err) {
       // The unique index catches two accounts racing for the same email.

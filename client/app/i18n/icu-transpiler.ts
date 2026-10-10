@@ -61,7 +61,8 @@ export class IcuTranspiler implements TranslocoTranspiler {
   }
 
   transpile({ value, params, key }: TranspileParams): unknown {
-    if (typeof value !== 'string' || !/[{<]/.test(value)) return value;
+    // Plain text needs no formatting, unless it has an apostrophe: ICU writes one as two (d''Azur).
+    if (typeof value !== 'string' || !/[{<']/.test(value)) return value;
     try {
       const { format, tags } = this.compile(value);
       return format.format({ ...tags, ...params }) as string;

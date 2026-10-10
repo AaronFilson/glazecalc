@@ -14,7 +14,7 @@ Kegel messen die **Wärmearbeit**{{en: heatwork}}, das Zusammenwirken von Temper
 
 ### Kegelnummern
 
-Die Kegelnummern reichen von 022, dem niedrigsten, bis 42. Eine vorangestellte Null kennzeichnet die niedrigere Reihe und wird als „null“ gelesen: Kegel 06 („null sechs“) liegt niedriger als Kegel 04, und Kegel 01 braucht weniger Hitze als Kegel 1. Orton betont, wie wichtig es ist, die beiden Reihen nicht zu verwechseln. Der Abstand ist groß: Kegel 06 biegt sich bei einer um mehr als {{400 °F; 220 °C}} niedrigeren Temperatur als Kegel 6.
+Die Kegelnummern reichen von 022, dem kühlsten, bis 42. Eine vorangestellte Null kennzeichnet die kühlere Reihe und wird als „null“ gelesen: Kegel 06 („null sechs“) ist kühler als Kegel 04, und Kegel 01 braucht weniger Hitze als Kegel 1. Orton betont, wie wichtig es ist, die beiden Reihen nicht zu verwechseln. Der Abstand ist groß: Kegel 06 biegt sich bei einer um mehr als {{400 °F; 220 °C}} niedrigeren Temperatur als Kegel 6.
 
 Table: Übliche Brennbereiche, für selbststehende Kegel bei {{108 °F/h; 60 °C/h}}
 Label: Brennbereiche
@@ -40,7 +40,7 @@ Label: Haltezeit und Wärmearbeit
 | 40–60 Minuten   | Eine um {{36 °F; 20 °C}} höhere Endtemperatur                   |
 | Etwa 2 Stunden  | Eine um {{54 °F; 30 °C}} höhere Endtemperatur                   |
 | 1–2 Stunden     | „kann ausreichen, um die nächsthöhere Kegelnummer zu verformen“ |
-| 4–6 Stunden     | Genug, um einen zwei Nummern höheren Kegel umzubiegen           |
+| 4–6 Stunden     | Genug, um einen zwei Nummern heißeren Kegel umzubiegen          |
 
 Eine Haltezeit gibt es also nie umsonst: Wenn Sie eine hinzufügen, rechnen Sie damit, dass sich die Kegel weiter biegen, und senken Sie die Endtemperatur entsprechend.
 
@@ -112,7 +112,7 @@ Ein Strich steht für einen Wert, der hier nicht übernommen wurde; Sie finden i
 
 Normalkegel weichen nur um wenige Grad von diesen Werten ab: Ein Normalkegel 6 bei {{108 °F/h; 60 °C/h}} liegt bei {{2228 °F; 1220 °C}}. Kleine Kegel, wie sie im Kiln-Sitter verwendet werden, sind nur für {{540 °F/h; 300 °C/h}} aufgeführt; deshalb nennt die Tabelle für einen kleinen Kegel 6 {{2291 °F; 1255 °C}}. Das ist nicht die Temperatur, bei der ein Kiln-Sitter den Ofen abschaltet. Der Kegel im Kiln-Sitter soll mit dem Kegel auf der Ofenplatte übereinstimmen, und der Kegel auf der Ofenplatte hat das letzte Wort.
 
-Zwei Vorsichtshinweise. Ortons Broschüre von 2019 gibt Kegel 06 bei schneller Heizrate mit {{1875 °F; 1024 °C}} an, die Tabelle und Ortons FAQ dagegen beide mit {{1855 °F; 1013 °C}}; dieser Wert wird hier verwendet. Und die Tabelle für Normalkegel hinten in der Bedienungsanleitung des Kiln-Sitters von Dawson enthält Abschreibfehler (Kegel 5 höher als Kegel 6); verwenden Sie sie deshalb nicht.
+Zwei Vorsichtshinweise. Ortons Broschüre von 2019 gibt Kegel 06 bei schneller Heizrate mit {{1875 °F; 1024 °C}} an, die Tabelle und Ortons FAQ dagegen beide mit {{1855 °F; 1013 °C}}; dieser Wert wird hier verwendet. Und die Tabelle für Normalkegel hinten in der Bedienungsanleitung des Kiln-Sitters von Dawson enthält Abschreibfehler (Kegel 5 heißer als Kegel 6); verwenden Sie sie deshalb nicht.
 
 :::temperature
 
@@ -139,11 +139,11 @@ Ein **Kegelsatz**{{en: cone pack}} besteht aus drei Messkegeln, die zusammen ste
 Table: Der Kegelsatz aus drei Kegeln
 Label: Kegelsatz aus drei Kegeln
 
-| Kegel         | Welche Nummer              | Schrühbrand auf Kegel 04 | Glasur für Kegel 6 | Wenn er sich biegt                         |
-| ------------- | -------------------------- | ------------------------ | ------------------ | ------------------------------------------ |
-| Führungskegel | Eine Nummer unter dem Ziel | 05                       | 5                  | Die Ware ist bald gar gebrannt             |
-| Hauptkegel    | Das Ziel                   | 04                       | 6                  | Der Brand hat den richtigen Punkt erreicht |
-| Wachkegel     | Eine Nummer höher          | 03                       | 7                  | Der Brand ist zu weit gegangen             |
+| Kegel         | Welche Nummer                   | Schrühbrand auf Kegel 04 | Glasur für Kegel 6 | Wenn er sich biegt                         |
+| ------------- | ------------------------------- | ------------------------ | ------------------ | ------------------------------------------ |
+| Führungskegel | Eine Nummer kühler als das Ziel | 05                       | 5                  | Die Ware ist bald gar gebrannt             |
+| Hauptkegel    | Das Ziel                        | 04                       | 6                  | Der Brand hat den richtigen Punkt erreicht |
+| Wachkegel     | Eine Nummer heißer              | 03                       | 7                  | Der Brand ist zu weit gegangen             |
 
 ### Selbststehende Kegel oder eine Unterlegplatte
 
@@ -176,10 +176,10 @@ Kleine Kegel und Temperaturstäbchen „ergeben eine gleichwertige Wärmebehandl
 
 ### Welcher Kegel in den Kiln-Sitter gehört
 
-Die Quellen sind sich nicht einig. Dawson, der Hersteller des Kiln-Sitters, rät, dieselbe Nummer wie der Hauptkegel auf der Ofenplatte zu nehmen und nur dann eine Nummer höher zu gehen, wenn der Kegel auf der Ofenplatte ungebogen bleibt. L&L rät zu einer Nummer höher als die Kegel auf der Ofenplatte, weil der Kiln-Sitter nahe an Wand und Heizspiralen sitzt, mehr Hitze abbekommt und dazu neigt, zu früh abzuschalten. Orton klärt den Grundsatz: „Der Kegel auf der Ofenplatte entscheidet letztlich über den Brand, nicht der Kegel oder das Stäbchen im Kiln-Sitter.“
+Die Quellen sind sich nicht einig. Dawson, der Hersteller des Kiln-Sitters, rät, dieselbe Nummer wie der Hauptkegel auf der Ofenplatte zu nehmen und nur dann eine Nummer heißer zu gehen, wenn der Kegel auf der Ofenplatte ungebogen bleibt. L&L rät zu einer Nummer heißer als die Kegel auf der Ofenplatte, weil der Kiln-Sitter nahe an Wand und Heizspiralen sitzt, mehr Hitze abbekommt und dazu neigt, zu früh abzuschalten. Orton klärt den Grundsatz: „Der Kegel auf der Ofenplatte entscheidet letztlich über den Brand, nicht der Kegel oder das Stäbchen im Kiln-Sitter.“
 
 > [!NOTE]
-> Unser Ausgangspunkt: Legen Sie einen kleinen Kegel mit der Nummer Ihres Ziels in den Kiln-Sitter und stellen Sie einen Kegelsatz{{en: cone pack}} auf die Ofenplatte. Ist der Hauptkegel auf der Ofenplatte beim Abschalten zu wenig gebogen, nehmen Sie beim nächsten Mal eine Nummer höher im Kiln-Sitter, oder legen Sie den dickeren Teil des Kegels unter den Hebel. Ist er zu stark gebogen, machen Sie es umgekehrt.
+> Unser Ausgangspunkt: Legen Sie einen kleinen Kegel mit der Nummer Ihres Ziels in den Kiln-Sitter und stellen Sie einen Kegelsatz{{en: cone pack}} auf die Ofenplatte. Ist der Hauptkegel auf der Ofenplatte beim Abschalten zu wenig gebogen, nehmen Sie beim nächsten Mal eine Nummer heißer im Kiln-Sitter, oder legen Sie den dickeren Teil des Kegels unter den Hebel. Ist er zu stark gebogen, machen Sie es umgekehrt.
 
 ### Einrichten und Prüfen vor jedem Brand
 
@@ -216,7 +216,7 @@ Label: Probleme mit dem Kiln-Sitter
 
 | Was Sie sehen                                                         | Wahrscheinliche Ursache                                                                                                     | Was zu tun ist                                                                                            |
 | --------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| Kiln-Sitter ausgelöst, Hauptkegel auf der Ofenplatte zu wenig gebogen | Am Kiln-Sitter war es heißer als auf der Ofenplatte (er sitzt nahe der Wand)                                                | Einen Kegel höher im Kiln-Sitter, oder den dickeren Teil unter den Hebel                                  |
+| Kiln-Sitter ausgelöst, Hauptkegel auf der Ofenplatte zu wenig gebogen | Am Kiln-Sitter war es heißer als auf der Ofenplatte (er sitzt nahe der Wand)                                                | Einen Kegel heißer im Kiln-Sitter, oder den dickeren Teil unter den Hebel                                 |
 | Kegel im Kiln-Sitter weit über 90° hinaus abgesackt                   | Der Ofen ist gegen Ende zu schnell gestiegen                                                                                | Stellen Sie die Schalter niedriger, damit der Anstieg langsamer wird (Dawson)                             |
 | Kegel im Kiln-Sitter nicht gebogen oder zu einem Klumpen geschmolzen  | Der Kiln-Sitter selbst: schlecht eingestellt, Hebel verbogen oder korrodiert, oder etwas steckt im Rohr oder liegt daran an | Prüfen Sie den Kiln-Sitter vor dem nächsten Brand nach seiner Bedienungsanleitung und stellen Sie ihn ein |
 | Jedes Mal zu früh oder zu spät                                        | Verstellt, oder Hebel abgenutzt                                                                                             | Prüfen Sie mit der Schablone; verschieben Sie die Auslöseplatte                                           |
@@ -268,11 +268,11 @@ Label: Kegelsatz ablesen
 Table: Was Sie beim nächsten Mal ändern
 Label: Nächsten Brand anpassen
 
-| Die Kegel zeigten                               | Kiln-Sitter                                                                                                                                             | Steuerung                                                                                                                                                              |
-| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Zu schwach gebrannt                             | Einen Kegel höher im Kiln-Sitter, oder den dickeren Teil unter den Hebel                                                                                | Brennen Sie mit dem Kegel-Offset etwas heißer, oder fügen Sie eine kurze Haltezeit{{en: hold}} hinzu (etwa 20 Minuten entsprechen {{18 °F; 10 °C}} mehr Endtemperatur) |
-| Zu stark gebrannt                               | Einen Kegel niedriger, oder den dünneren Teil unter den Hebel; ist der Kegel im Kiln-Sitter weit über 90° abgesackt, stellen Sie die Schalter niedriger | Brennen Sie mit dem Kegel-Offset etwas kühler, oder kürzen Sie die Haltezeit oder lassen Sie sie weg                                                                   |
-| Oben und unten mehr als einen Kegel Unterschied | Stellen Sie die Schalter anders ein (siehe „Handgeschaltete Öfen im Einzelnen“)                                                                         | Besetzen Sie den kühleren Bereich lockerer; folgen Sie Ihrer Bedienungsanleitung                                                                                       |
+| Die Kegel zeigten                               | Kiln-Sitter                                                                                                                                          | Steuerung                                                                                                                                                              |
+| ----------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Zu schwach gebrannt                             | Einen Kegel heißer im Kiln-Sitter, oder den dickeren Teil unter den Hebel                                                                            | Brennen Sie mit dem Kegel-Offset etwas heißer, oder fügen Sie eine kurze Haltezeit{{en: hold}} hinzu (etwa 20 Minuten entsprechen {{18 °F; 10 °C}} mehr Endtemperatur) |
+| Zu stark gebrannt                               | Einen Kegel kühler, oder den dünneren Teil unter den Hebel; ist der Kegel im Kiln-Sitter weit über 90° abgesackt, stellen Sie die Schalter niedriger | Brennen Sie mit dem Kegel-Offset etwas kühler, oder kürzen Sie die Haltezeit oder lassen Sie sie weg                                                                   |
+| Oben und unten mehr als einen Kegel Unterschied | Stellen Sie die Schalter anders ein (siehe „Handgeschaltete Öfen im Einzelnen“)                                                                      | Besetzen Sie den kühleren Bereich lockerer; folgen Sie Ihrer Bedienungsanleitung                                                                                       |
 
 Ein **Kegel-Offset** ist eine Einstellung der Steuerung, die ihre Temperatur für einen Kegel nach oben oder unten verschiebt, damit sie zu dem passt, was Ihre Messkegel{{en: witness cones}} zeigen. Bewahren Sie jeden gebrannten Kegelsatz auf und notieren Sie, wie sich jeder gebogen hat (siehe „Nach dem Brand“ unten).
 
@@ -422,7 +422,7 @@ Die Steuerungen von Skutt bieten ebenfalls ein Vorwärmen und eine einstufige Ab
 
 ### Am handgeschalteten Ofen
 
-Ein handgeschalteter Ofen kann diese Brennkurven nicht genau nachfahren, aber der Plan ist derselbe: anfangs sanft, in der Mitte gleichmäßig und am Ende unter Beobachtung. Die Brennkurve von Bracker’s für niedrig brennende Glasuren steht unten unter „Handgeschaltete Öfen im Einzelnen“; für höhere Kegel rechnet Bracker’s „im Durchschnitt 15–30 Minuten pro Kegelnummer“ dazu. Mit einem Pyrometer, Übung und einem Brennprotokoll können Sie ein Absenken und Halten oder ein geregeltes Abkühlen ungefähr nachahmen, indem Sie die Schalter von Hand herunterdrehen, wie Digitalfire vorschlägt.
+Ein handgeschalteter Ofen kann diese Brennkurven nicht genau nachfahren, aber der Plan ist derselbe: anfangs sanft, in der Mitte gleichmäßig und am Ende unter Beobachtung. Die Brennkurve von Bracker’s für niedrig brennende Glasuren steht unten unter „Handgeschaltete Öfen im Einzelnen“; für heißere Kegel rechnet Bracker’s „im Durchschnitt 15–30 Minuten pro Kegelnummer“ dazu. Mit einem Pyrometer, Übung und einem Brennprotokoll können Sie ein Absenken und Halten oder ein geregeltes Abkühlen ungefähr nachahmen, indem Sie die Schalter von Hand herunterdrehen, wie Digitalfire vorschlägt.
 
 ## Handgeschaltete Öfen im Einzelnen {#manual-kilns}
 
@@ -437,14 +437,14 @@ Das von L&L vorgeschlagene Vorgehen für einen Ofen mit drei Schaltern, Kiln-Sit
 Table: Brennen von Hand nach L&L
 Label: Vorgehen nach L und L
 
-| Phase                                      | Was zu tun ist                                                                                                                                                                                                                                                                                                                             |
-| ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Vorbereiten                                | Kegel im Kiln-Sitter eine Nummer höher als die Messkegel auf der Ofenplatte (der Rat von L&L; siehe „Der Kiln-Sitter“). Stellen Sie den Deckel „etwa 4 oder 5 Zoll“ (10–13 cm) weit auf und nehmen Sie alle Schaulochstopfen heraus. Stellen Sie den Zeitbegrenzer beim ersten Mal sehr hoch und notieren Sie, wie lange der Brand dauert. |
-| Low                                        | Alle Schalter auf Low (1): 3 Stunden, wenn der Ton trocken ist, 8 bis 20 Stunden oder mehr, wenn er feucht wirkt                                                                                                                                                                                                                           |
-| Medium                                     | Schließen Sie den Deckel. Obere zwei Schalter auf 5, unterer Schalter auf 6.                                                                                                                                                                                                                                                               |
-| Erste Rotglut                              | Sobald Sie ein Glühen sehen, verschließen Sie die unteren zwei Schaulöcher. Lassen Sie das obere den ganzen Brand über offen.                                                                                                                                                                                                              |
-| Kräftige Rotglut, etwa {{1400 °F; 760 °C}} | Untere zwei Schalter auf High, oberer Schalter auf 9                                                                                                                                                                                                                                                                                       |
-| Ende                                       | Beobachten Sie die Kegel und regeln Sie den oberen und den unteren Schalter fein nach. Wenn die Kegel umsinken, schalten Sie alle Schalter aus und schalten Sie die Sicherung aus. Lassen Sie den Ofen vollständig abkühlen, bevor Sie ihn öffnen.                                                                                         |
+| Phase                                      | Was zu tun ist                                                                                                                                                                                                                                                                                                                              |
+| ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Vorbereiten                                | Kegel im Kiln-Sitter eine Nummer heißer als die Messkegel auf der Ofenplatte (der Rat von L&L; siehe „Der Kiln-Sitter“). Stellen Sie den Deckel „etwa 4 oder 5 Zoll“ (10–13 cm) weit auf und nehmen Sie alle Schaulochstopfen heraus. Stellen Sie den Zeitbegrenzer beim ersten Mal sehr hoch und notieren Sie, wie lange der Brand dauert. |
+| Low                                        | Alle Schalter auf Low (1): 3 Stunden, wenn der Ton trocken ist, 8 bis 20 Stunden oder mehr, wenn er feucht wirkt                                                                                                                                                                                                                            |
+| Medium                                     | Schließen Sie den Deckel. Obere zwei Schalter auf 5, unterer Schalter auf 6.                                                                                                                                                                                                                                                                |
+| Erste Rotglut                              | Sobald Sie ein Glühen sehen, verschließen Sie die unteren zwei Schaulöcher. Lassen Sie das obere den ganzen Brand über offen.                                                                                                                                                                                                               |
+| Kräftige Rotglut, etwa {{1400 °F; 760 °C}} | Untere zwei Schalter auf High, oberer Schalter auf 9                                                                                                                                                                                                                                                                                        |
+| Ende                                       | Beobachten Sie die Kegel und regeln Sie den oberen und den unteren Schalter fein nach. Wenn die Kegel umsinken, schalten Sie alle Schalter aus und schalten Sie die Sicherung aus. Lassen Sie den Ofen vollständig abkühlen, bevor Sie ihn öffnen.                                                                                          |
 
 ### Die Brennkurven von Bracker’s
 
@@ -460,7 +460,7 @@ Label: Bracker’s, handgeschaltete Öfen
 | Zeitbegrenzer | Am Morgen neu stellen, auf 30–60 Minuten länger als die erwartete Brenndauer                                     | 30–60 Minuten länger als die erwartete Brenndauer                            |
 | Low           | Alle Schalter auf Low, 3–4 Stunden; Stopfen heraus, Deckel einen Spalt offen                                     | Alle Schalter auf Low, 3–4 Stunden; Stopfen heraus, Deckel einen Spalt offen |
 | Medium        | Stopfen hinein, Deckel geschlossen; alle Schalter auf Medium, 3–4 Stunden                                        | Stopfen hinein, Deckel geschlossen; alle Schalter auf Medium, 3–4 Stunden    |
-| High          | Etwa 2–3 Stunden, bis der Kiln-Sitter abschaltet                                                                 | Etwa 3 Stunden; 15–30 Minuten mehr für jeden Kegel höher                     |
+| High          | Etwa 2–3 Stunden, bis der Kiln-Sitter abschaltet                                                                 | Etwa 3 Stunden; 15–30 Minuten mehr für jeden Kegel heißer                    |
 
 Bracker’s sagt nicht, welchem Messkegel auf der Ofenplatte sein Kegel im Kiln-Sitter beim Schrühbrand entspricht; prüfen Sie das deshalb mit Ihrem eigenen Kegelsatz. Mit einer Bodenabsaugung sind die Schritte dieselben, aber die Absaugung läuft während des Brandes und des Abkühlens, und der Deckel bleibt geschlossen. Bracker’s schlägt außerdem vor, gestaffelt hochzuschalten: die Schalter einzeln, im Abstand von etwa 30 Minuten, höher zu stellen.
 
@@ -498,7 +498,7 @@ Label: Ausgangspunkt, handgeschalteter Ofen
 | High                                 | Bis der Kiln-Sitter auslöst; bei dunkler Rotglut alle Schaulöcher außer dem oberen verschließen                                                                                      | Bis der Kiln-Sitter auslöst                              |
 | Erwartete Gesamtdauer                | 8–12 Stunden                                                                                                                                                                         | 8–12 Stunden                                             |
 
-Löst der Kiln-Sitter aus, bevor die Messkegel auf der Ofenplatte umgebogen sind, nehmen Sie beim nächsten Mal einen Kegel höher im Kiln-Sitter, wie L&L rät.
+Löst der Kiln-Sitter aus, bevor die Messkegel auf der Ofenplatte umgebogen sind, nehmen Sie beim nächsten Mal einen Kegel heißer im Kiln-Sitter, wie L&L rät.
 
 ### Mit einem Pyrometer arbeiten
 

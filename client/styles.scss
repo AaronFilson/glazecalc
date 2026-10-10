@@ -263,6 +263,11 @@ img {
   color: var(--gc-muted);
 }
 
+/* Notes typed on several lines keep their line breaks. */
+.keep-lines {
+  white-space: pre-line;
+}
+
 /*************** Navigation bar **************/
 
 .app-header {
@@ -980,7 +985,8 @@ button.library-item:focus-visible {
 .recipe-swap,
 .recipe-shelf {
   border-inline-start: 3px solid var(--gc-primary);
-  padding: 0.25rem 0 0.25rem 0.75rem;
+  padding-block: 0.25rem;
+  padding-inline: 0.75rem 0;
   margin: 0.5rem 0 1rem;
   p {
     margin: 0 0 0.5rem;
@@ -1394,13 +1400,15 @@ bdi {
     margin-top: 0.6rem;
   }
   dd {
-    margin: 0 0 0 1rem;
+    margin: 0;
+    margin-inline-start: 1rem;
   }
 }
 
 .guide-callout {
   border-inline-start: 3px solid var(--gc-primary);
-  padding: 0.35rem 0 0.35rem 0.75rem;
+  padding-block: 0.35rem;
+  padding-inline: 0.75rem 0;
   margin: 0.75rem 0;
 }
 
@@ -1431,7 +1439,8 @@ bdi {
   th,
   td {
     border-bottom: 1px solid var(--gc-border);
-    padding: 0.3rem 0.75rem 0.3rem 0;
+    padding-block: 0.3rem;
+    padding-inline: 0 0.75rem;
     text-align: start;
     vertical-align: top;
   }

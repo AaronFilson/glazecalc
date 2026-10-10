@@ -1,0 +1,50 @@
+{
+  "common": {
+    "formulaHelp": "Írja be a képletet egyszerű számokkal, például így: {typed}; a számok alsó indexként jelennek meg: {shown}. A képlet részeinek összekapcsolásához (például: {joined}) másolja ki ezt a pontot:",
+    "relatedTo": "Kapcsolódó anyagok:",
+    "notes": "Megjegyzések:",
+    "loi": "Izzítási veszteség – LOI (százalék):",
+    "molecularWeight": "A nyers képlet moláris tömege (csak akkor használjuk, ha a LOI üres):",
+    "formulaHeading": "Adja meg a képletet (égetett):",
+    "oxideSelection": "Oxid kiválasztása",
+    "noOxide": "nincs",
+    "addOxide": "Oxid hozzáadása a listához",
+    "formulaIn": "A képlet megadási módja:",
+    "percent": "Százalék",
+    "molecular": "Mól / Seger-képlet",
+    "amount": "Mennyiség:",
+    "removeOxide": "Eltávolítás a képlet listájából",
+    "save": "Mentés",
+    "elements": "Elemek",
+    "removeNote": "A mentett receptek saját másolatot őriznek róla, így nem változnak meg.",
+    "saveFailed": "Hiba: a szervernek küldött kérés sikertelen volt."
+  },
+  "material": {
+    "title": "Nyersanyagok",
+    "lead": "Saját nyersanyagai, kémiai képletként vagy oxidos összetételként megadva.",
+    "newHeading": "Az új nyersanyag adatai",
+    "name": "A nyersanyag neve:",
+    "rawFormula": "Nyers képlet:",
+    "weightsNote": "Az egyenértéktömeget és az égetett tömeget mentéskor a képletből és a LOI-ból számítjuk ki.",
+    "mineHeading": "Saját nyersanyagok:",
+    "rawFormulaColumn": "Nyers képlet",
+    "standardHeading": "A beépített nyersanyagok:",
+    "fetchFailed": "Hiba történt a nyersanyagok adatainak lekérésekor.",
+    "standardFetchFailed": "Hiba történt a beépített nyersanyagok adatainak lekérésekor.",
+    "saved": "Sikerült. A nyersanyag bekerült az adatbázisba."
+  },
+  "additive": {
+    "title": "Adalékok és színezők",
+    "lead": "Az alapmázon felül adagolt színezők és zavarosítók, például a kobalt- vagy az ón-oxid. A recept kihagyhatja őket a Seger-képletből (UMF), vagy beszámíthatja őket.",
+    "newHeading": "Az új adalék adatai",
+    "name": "Az adalék neve:",
+    "formulaAsSold": "Képlet, ahogy forgalmazzák:",
+    "noChemistry": "Nincs oxidos összetétele (ilyen például egy kereskedelmi színtest): maradjon ki a Seger-képletből",
+    "firedNote": "Adja meg, mit ad a máznak égetés után: a fekete kobalt-oxid ({asSold}) égetve {fired}, a LOI-ja {loi}%. Így a recept beszámíthatja a Seger-képletbe.",
+    "mineHeading": "Saját adalékok és színezők:",
+    "standardHeading": "A beépített adalékok:",
+    "fetchFailed": "Hiba történt az adalékok adatainak lekérésekor.",
+    "standardFetchFailed": "Hiba történt a beépített adalékok adatainak lekérésekor.",
+    "saved": "Sikerült. Az adalék bekerült az adatbázisba."
+  }
+}

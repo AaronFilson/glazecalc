@@ -8,6 +8,8 @@ import { Material } from '../../core/models';
 import { Busy } from '../../shared/busy';
 import { ChemistryForm } from '../../shared/chemistry-form';
 import { FieldCheck } from '../../shared/field-checks';
+import { PlainPipe } from '../../shared/format-pipes';
+import { NumberInput } from '../../shared/number-input';
 import { Notices, NoticesList } from '../../shared/notices';
 import { FIRED_OXIDES, fieldsText, firstOf } from '../../shared/options';
 import { PageHeader } from '../../shared/page-header';
@@ -16,7 +18,17 @@ import { StandardList } from '../../shared/standard-list';
 
 @Component({
   selector: 'gc-material-page',
-  imports: [FieldCheck, FormsModule, NoticesList, PageHeader, RemoveButton, StandardList, TranslocoDirective],
+  imports: [
+    FieldCheck,
+    FormsModule,
+    NoticesList,
+    NumberInput,
+    PageHeader,
+    PlainPipe,
+    RemoveButton,
+    StandardList,
+    TranslocoDirective
+  ],
   templateUrl: './material-page.html'
 })
 export class MaterialPage implements OnInit {
@@ -33,6 +45,8 @@ export class MaterialPage implements OnInit {
 
   protected readonly myMaterials = signal<Material[]>([]);
   protected readonly standardMaterials = signal<Material[]>([]);
+  /** The standard list could not be fetched: the list says so, and offers to try again. */
+  protected readonly standardFailed = signal(false);
   protected readonly sortedMyMaterials = computed(() =>
     [...this.myMaterials()].sort((a, b) => a.name.localeCompare(b.name))
   );
@@ -43,9 +57,20 @@ export class MaterialPage implements OnInit {
       (list) => this.myMaterials.set(list),
       () => this.notices.error(translate('library.material.fetchFailed'))
     );
+    this.loadStandard();
+  }
+
+  protected loadStandard(): void {
     this.materials.getStandard().then(
-      (list) => this.standardMaterials.set(list),
-      () => this.notices.error(translate('library.material.standardFetchFailed'))
+      (list) => {
+        this.standardMaterials.set(list);
+        this.standardFailed.set(false);
+      },
+      () => {
+        // Said once above; the list says it too, where it would be.
+        if (!this.standardFailed()) this.notices.error(translate('library.material.standardFetchFailed'));
+        this.standardFailed.set(true);
+      }
     );
   }
 

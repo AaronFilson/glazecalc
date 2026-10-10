@@ -71,7 +71,7 @@ Label: Zakresy wypału
 | Wysoki wypał | 9–10   | 2300–2345 | 1260–1285 | Kamionka i porcelana                                                    |
 
 > [!NOTE]
-> Wypały należy nazywać i programować według stożków, a temperatury traktować jako przybliżone. **Stożek kontrolny**{{en: witness cone}} postawiony na płycie wśród naczyń albo **zestaw stożków**{{en: cone pack}} złożony z trzech (stożek ostrzegawczy o numer niższy, stożek docelowy i stożek zabezpieczający o numer wyższy) pokazuje, jaką pracę cieplną naprawdę otrzymały wyroby.
+> Wypały należy nazywać i programować według stożków, a temperatury traktować jako przybliżone. **Stożek kontrolny**{{en: witness cone}} postawiony na płycie wśród naczyń albo **zestaw stożków**{{en: cone pack}} złożony z trzech (stożek ostrzegawczy, o jeden stożek chłodniejszy, stożek docelowy i stożek zabezpieczający, o jeden stożek gorętszy) pokazuje, jaką pracę cieplną naprawdę otrzymały wyroby.
 
 Publikowane temperatury się różnią. Glazy podaje dla wysokiego wypału, stożka 9–11, około {{2336–2390 °F; 1280–1310 °C}}, co odpowiada kolumnie szybkiego grzania w tabeli Ortona, a Digitalfire podaje, że większość pieców osiąga stożek 6 w około {{2200 °F; 1204 °C}}. Nasza rada: korzystać z wartości Ortona dla średniej szybkości grzania, tak jak ten poradnik, programować według stożków, a rozstrzygnięcie zostawić stożkowi kontrolnemu.
 
@@ -244,23 +244,17 @@ Label: Typowe wady szkliwa
 
 ### Bezołowiowe nie znaczy bezpieczne w kontakcie z żywnością
 
-Przepisy w USA, UE, Wielkiej Brytanii, Australii i Nowej Zelandii ograniczają ilość ołowiu i kadmu, którą uwalnia wypalony wyrób, a nie to, co zawiera szkliwo. Określenie „bezołowiowe” oznacza usunięcie jednego zagrożenia; nie jest oceną bezpieczeństwa w kontakcie z żywnością{{en: food safety}}. Uwalniają się też inne tlenki: Glazy ostrzega, że szkliwa bogate w bar „mogą uwalniać metale i na ogół nie nadają się do kontaktu z żywnością”, Digitalfire pisze, że miedź „może powodować uwalnianie metali ze szkliwa; trzeba to zbadać”, a Glazy nie zaleca już szkliw ołowiowych do naczyń użytkowych.
+Przepisy w USA, UE, Wielkiej Brytanii i Australii ograniczają ilość ołowiu i kadmu, którą uwalnia wypalony wyrób, a nie to, co zawiera szkliwo. Określenie „bezołowiowe” oznacza usunięcie jednego zagrożenia; nie jest oceną bezpieczeństwa w kontakcie z żywnością{{en: food safety}}. Uwalniają się też inne tlenki: Glazy ostrzega, że szkliwa bogate w bar „mogą uwalniać metale i na ogół nie nadają się do kontaktu z żywnością”, Digitalfire pisze, że miedź „może powodować uwalnianie metali ze szkliwa; trzeba to zbadać”, a Glazy nie zaleca już szkliw ołowiowych do naczyń użytkowych.
 
 **Szkliwo do wnętrza naczyń**{{en: liner glaze}} to stabilne, zwykle bezbarwne lub białe szkliwo na powierzchnie stykające się z żywnością. Naszym zdaniem mniejsze ryzyko niesie szkliwo bez barwników{{en: colorants}}, baru, ołowiu i litu, które w pełni się topi, nie pęka włoskowato{{en: craze}} i jest odporne na ścieranie. Mniejsze ryzyko nie jest dowodem.
 
 **Wzory graniczne**{{en: limit formulas}} (Digitalfire woli określenie **wzory docelowe**{{en: target formulas}}) podają typowe zakresy wzoru Segera{{en: unity formula}} dla stabilnych szkliw na dany stożek{{en: cone}}: według wzorów docelowych Digitalfire dla stożka 6 tlenek glinu powinien wynosić 0,285–0,64, a krzemionka{{en: silica}} 2,4–4,7. Wskazują kierunek ku poprawnej chemii, ale niczego nie dowodzą; Digitalfire unika słowa „granica”, bo sugeruje ono, że szkliwa mieszczące się w tych zakresach „są w jakiś sposób bezpieczne”. Narzędzia aplikacji Glazecalc do zmiany receptury informują, gdy nowa receptura przekracza zalecaną granicę, np. zawiera dużo boru przy stożku 6, i co szkliwo prawdopodobnie zrobi.
 
-Table: Limity FDA (USA) dla ołowiu uwalnianego z wyrobów ceramicznych (CPG Sec. 545.450), w mikrogramach na mililitr roztworu testowego
-Label: Limity ołowiu FDA
+Limity prawne różnią się w zależności od kraju. Tabela pokazuje te obowiązujące w kraju zamieszkania, w jednostkach, w jakich podają je same przepisy; dla porównania można wybrać inny kraj.
 
-| Wyrób                                     | Ołów (µg/mL) | Oceniane na podstawie |
-| ----------------------------------------- | -----------: | --------------------- |
-| Naczynia płaskie (o głębokości do 25 mm)  |          3,0 | Średnia z 6 sztuk     |
-| Małe naczynia głębokie (poniżej 1,1 L)    |          2,0 | Każda z 6 sztuk       |
-| Duże naczynia głębokie (1,1 L lub więcej) |          1,0 | Każda z 6 sztuk       |
-| Filiżanki, kubki i dzbanki                |          0,5 | Każda z 6 sztuk       |
+::food-limits
 
-W USA wyroby nieprzeznaczone do kontaktu z żywnością muszą mieć trwały, wypalony napis „Not for Food Use” (nie do kontaktu z żywnością) albo otwór przechodzący przez powierzchnię stykającą się z żywnością. UE określa limity ołowiu i kadmu w dyrektywie 84/500/EWG, którą Anglia zachowała we własnym prawie. Holandia i Luksemburg obniżyły swoje limity ołowiu mniej więcej 130–150 razy z dniem 29 maja 2026 roku, a w ich ślady idzie Belgia. Australia i Nowa Zelandia stosują normę AS 4371, której wartości są dostępne tylko odpłatnie.
+W USA wyroby nieprzeznaczone do kontaktu z żywnością muszą mieć trwały, wypalony napis „Not for Food Use” (nie do kontaktu z żywnością) albo otwór przechodzący przez powierzchnię stykającą się z żywnością. UE określa limity ołowiu i kadmu w dyrektywie 84/500/EWG, a Wielka Brytania zachowuje te same wartości we własnym prawie. Od 29 maja 2026 r. Holandia, Belgia i Luksemburg dopuszczają ok. 130–150 razy mniej ołowiu i ok. 15 razy mniej kadmu. Australia ustala limity dla wyrobów importowanych; nie znaleźliśmy oficjalnego limitu dla wyrobów wytwarzanych w Australii ani w Nowej Zelandii.
 
 ### Badania
 

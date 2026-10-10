@@ -1,0 +1,111 @@
+{
+  "landing": {
+    "eyebrow": "Kalkulator glazura i radionička bilježnica",
+    "heading": "Besplatna kemija glazura za lončarstvo.",
+    "lead": "Glazure ne samo miješajte nego ih i razumijte. Unesite recept i odmah vidite njegovu Segerovu formulu (UMF), omjer silicijeva dioksida i glinice te omjer topitelja. Svoje recepte, sirovine, bojila, bilješke i zapisnike pečenja čuvajte zajedno u jednoj privatnoj bilježnici.",
+    "trialEnded": "Vaše je probno korištenje završilo. Započnite novo ili stvorite besplatan račun da biste zadržali svoj rad.",
+    "tryIt": "Isprobajte odmah",
+    "createAccount": "Stvori besplatan račun",
+    "trialFailed": "Probno korištenje trenutačno nije moguće pokrenuti. Pokušajte ponovno.",
+    "heroNote": "Za isprobavanje nije potrebna registracija · Besplatno i otvorenog koda · Vaši recepti ostaju privatni",
+    "heroAlt": "Niz skupova kontrolnih stožaca nakon pečenja: bijeli pirometrijski stošci u svakom skupu savili su se od topline u peći.",
+    "heroCaption": "Skupovi kontrolnih stožaca nakon pečenja: svaki se stožac savije kad peć postigne dovoljan toplinski učinak.",
+    "exampleHeading": "Pogledajte kako radi: klasična osnovna glazura za seladon",
+    "exampleCaption": "„4321” Bernarda Leacha, glazura koja se često peče na stožac 10; recept u masenim dijelovima.",
+    "material": "Sirovina",
+    "parts": "Dijelovi",
+    "unityHeading": "Njezina Segerova formula",
+    "exampleNote": "Topitelji zajedno daju 1, pa se bilo koje dvije glazure mogu pošteno usporediti. Izračunato upravo ovdje, u vašem pregledniku, istim kodom koji koristi kalkulator.",
+    "featuresHeading": "Što Glazecalc radi",
+    "features": {
+      "unity": {
+        "title": "Segerova formula odmah",
+        "text": "Čim unesete recept, vidite topitelje, glinicu i silicijev dioksid u Segerovoj formuli, onako kako recepte uspoređuju stručnjaci za kemiju glazura."
+      },
+      "substitute": {
+        "title": "Popravak i zamjena",
+        "text": "Sirovina se više ne proizvodi? Usporedite formule i pronađite zamjenu koja se tali na isti način."
+      },
+      "notebook": {
+        "title": "Vaša radionička bilježnica",
+        "text": "Recepte, vlastite sirovine, bojila, bilješke i zapisnike pečenja čuvajte zajedno na jednom mjestu."
+      },
+      "learn": {
+        "title": "Učite usput",
+        "text": "Uz brojke su i vodiči pisani jednostavnim jezikom, od toga što je glazura do sigurnog pečenja."
+      }
+    },
+    "umfHeading": "Što je Segerova formula?",
+    "umfRecipe": "Recept glazure kaže koliko koje sirovine treba odvagati. Segerova formula (na engleskom unity molecular formula, UMF) kaže što te sirovine postaju u peći: koliko ima molekula svakog oksida, preračunato tako da topitelji zajedno daju jedan.",
+    "umfGroups": "Topitelji tale glazuru, glinica čini talinu viskoznijom, a silicijev dioksid gradi staklo. Usporedba tih triju skupina objašnjava zašto je jedna glazura sjajna, a druga mat, ili zašto jedna curi dok druga ostaje na mjestu, te pokazuje kako zamijeniti sirovinu koja se više ne prodaje.",
+    "readAdvice": "Pročitajte još savjeta za glazure",
+    "closingHeading": "Spremni smo kad i vi.",
+    "closingText": "Isprobajte kalkulator odmah, a zatim stvorite račun da biste zadržali ono što ste napravili."
+  },
+  "about": {
+    "title": "O aplikaciji Glazecalc",
+    "lead": "Besplatan kalkulator kemije glazura i bilježnica, otvorenog koda, za sve koji se bave lončarstvom i keramikom ili ih uče.",
+    "whatHeading": "Što radi",
+    "what": "Glazecalc pretvara recept glazure, odnosno sirovine i količinu svake od njih koju odvažete, u njegovu Segerovu formulu (UMF): okside od kojih se glazura sastoji nakon pečenja, preračunate tako da topitelji zajedno daju jedan. Tako se recepti mogu uspoređivati, lakše je objasniti kako se glazura ponaša, a to pomaže i kad neku sirovinu treba zamijeniti.",
+    "alongside": "Uz kalkulator čuva vaše recepte, vlastite sirovine, bojila i druge dodatke, bilješke i zapisnike pečenja, a tu su i stranica praktičnih <advice>savjeta za glazure</advice> te <guides>vodiči</guides> za one koji tek počinju s keramikom, od toga što je glazura do sigurnog pečenja.",
+    "numbersHeading": "Kako se izračunavaju brojke",
+    "numbers": "Svaka je sirovina opisana kemijskom formulom ili oksidnom analizom te gubitkom žarenjem (LOI): dijelom koji se u peći oslobodi, kao što je ugljikov dioksid iz krede ili voda iz kaolina. Glazecalc svaku količinu pretvara u molove svakog oksida pomoću standardnih molarnih masa, zbraja ih za cijeli recept i dijeli s ukupnim brojem molova topitelja. Bojila i drugi dodaci navode se uz recept, ali se, kako je i uobičajeno, ne uračunavaju u Segerovu formulu.",
+    "guide": "Rezultati su smjernica, a ne jamstvo. Stvarne sirovine razlikuju se od dobavljača do dobavljača i od šarže do šarže, a pečenje je jednako važno kao kemija, zato isprobajte svaku glazuru. Glazure za površine u dodiru s hranom trebalo bi ispitati na otpuštanje metala.",
+    "builtHeading": "Kako je izrađen",
+    "built": "Glazecalc je nastao 2017., a iznova je izgrađen 2026. To je jedna mala web-aplikacija, a njezin je <source>izvorni kod na GitHubu</source> pod licencom MIT.",
+    "stackBrowser": "Angular 22 u pregledniku (samostalne komponente i signali), s kemijom glazura u maloj zajedničkoj biblioteci.",
+    "stackServer": "API u TypeScriptu na platformama Node.js 24 i Express 5, s bazom MongoDB 9; provjerava ga više od 350 automatiziranih testova.",
+    "stackHosting": "Radi u Dockeru na platformi Amazon Web Services, iza poslužitelja nginx, s HTTPS-om tvrtke Let's Encrypt.",
+    "stackDeploy": "Objavljuje se pomoću servisa GitHub Actions: slike se izgrađuju i testiraju pri svakoj promjeni, a objava se prijavljuje u AWS bez pohranjenih ključeva.",
+    "whoHeading": "Tko ga je napravio",
+    "who": "Glazecalc izrađuje Aaron Filson. Pronašli ste problem ili imate ideju? <issues>Otvorite prijavu na GitHubu</issues>.",
+    "studio": "Ručno rađena keramika Aarona Filsona nalazi se u studiju <studio>Updraft Pottery Studio</studio> u Tacomi u saveznoj državi Washington. Pogledajte radove i, ako vam se neki svidi, naručite ga."
+  },
+  "privacy": {
+    "title": "Privatnost",
+    "lead": "Posljednje ažuriranje: listopad 2026.",
+    "shortHeading": "Ukratko",
+    "short": "Glazecalc čuva samo ono što mu je potrebno za vođenje vašeg računa, i ništa više. Nema oglasa, analitike, kolačića za praćenje ni skripti trećih strana. Vaši se podaci nikad ne prodaju niti dijele.",
+    "storedHeading": "Što se pohranjuje",
+    "storedAccount": "<b>Vaš račun:</b> vaša adresa e-pošte i lozinka, koja se pohranjuje samo kao jednosmjerni sažetak (bcrypt), nikad kao sama lozinka.",
+    "storedTrial": "<b>Probno korištenje (gumb Isprobajte odmah):</b> bez e-pošte i lozinke, samo automatski stvoreno ime, na primjer „speckled quiet kilns”. Probno korištenje i sve što je u njemu spremljeno automatski se brišu 14 dana nakon početka, osim ako stvorite račun da biste ih zadržali.",
+    "storedSaved": "<b>Ono što spremite:</b> vaši recepti, sirovine, dodaci, bilješke, zapisnici pečenja i savjeti. Drugi ih korisnici ne mogu vidjeti.",
+    "storedResets": "<b>Zahtjevi za ponovno postavljanje lozinke:</b> otisak svake poveznice za ponovno postavljanje (ne sama poveznica), koji se automatski briše kad istekne, 30 minuta kasnije.",
+    "storedBrowser": "<b>U vašem pregledniku:</b> jedan kolačić, <code>glazecalc_session</code>, zahvaljujući kojem ostajete prijavljeni. Sadrži vaš token za prijavu, skripte na stranici ne mogu ga pročitati, šalje se samo vlastitom poslužitelju aplikacije Glazecalc i traje 7 dana (14 za probno korištenje). U lokalnoj pohrani nalazi se zabilješka da ste prijavljeni te, tijekom probnog korištenja, njegovo ime i datum završetka. Odjavom se oni uklanjaju.",
+    "emailHeading": "E-pošta",
+    "email": "Glazecalc šalje e-poštu samo kad zatražite ponovno postavljanje lozinke i kad se vaša lozinka promijeni. Šalje se preko servisa Amazon Simple Email Service. Nema biltena ni marketinške e-pošte.",
+    "hostingHeading": "Zapisi, sigurnosne kopije i hosting",
+    "logs": "Web-poslužitelj bilježi svaki zahtjev, uključujući vašu IP adresu, u zapis koji se čuva 14 dana radi rada i zaštite web-mjesta.",
+    "backups": "Šifrirane sigurnosne kopije baze podataka čuvaju se 30 dana, a kopije diska poslužitelja 7 dana, kako bi se web-mjesto moglo obnoviti nakon kvara.",
+    "hosting": "Sve je smješteno na poslužiteljima tvrtke Amazon Web Services u Sjedinjenim Američkim Državama (Oregon).",
+    "deletingHeading": "Brisanje vaših podataka",
+    "deleting": "Svoj račun možete izbrisati na <account>stranici računa</account>. Time se odmah uklanjaju vaš račun i sve što ste spremili; gumb Odbaci probno korištenje čini isto za probno korištenje. Podaci u sigurnosnim kopijama nestaju kako te kopije istječu, u roku od 30 dana.",
+    "questionsHeading": "Pitanja",
+    "questions": "Pitajte tako da <issues>otvorite prijavu na GitHubu</issues>. Ako se ova pravila promijene, promijenit će se i datum na vrhu ove stranice."
+  },
+  "notFound": {
+    "heading": "Stranica nije pronađena",
+    "text": "Na ovoj adresi nema stranice. Možda je premještena ili je poveznica pogrešno upisana.",
+    "start": "Idi na početnu stranicu"
+  },
+  "advice": {
+    "title": "Savjeti za glazure",
+    "lead": "Praktični savjeti o miješanju, glaziranju i pečenju te vaši vlastiti savjeti.",
+    "signUp": "<signup>Stvorite besplatan račun</signup> ili se <signin>prijavite</signin> da biste spremali vlastite savjete.",
+    "generalHeading": "Opći savjeti",
+    "tags": "Oznake: {list}",
+    "addHeading": "Dodajte vlastiti savjet",
+    "titleLabel": "Naslov:",
+    "tagsLabel": "Oznake:",
+    "contentLabel": "Sadržaj savjeta:",
+    "save": "Spremi",
+    "mineHeading": "Moji savjeti",
+    "nothingSaved": "Još ništa nije spremljeno.",
+    "titleMissing": "Unesite naslov savjeta.",
+    "contentMissing": "Napišite savjet.",
+    "fetchFailed": "Došlo je do pogreške pri dohvaćanju savjeta.",
+    "standardFetchFailed": "Došlo je do pogreške pri dohvaćanju savjeta s poslužitelja.",
+    "saved": "Savjet je uspješno dodan.",
+    "saveFailed": "Došlo je do pogreške pri slanju savjeta."
+  }
+}

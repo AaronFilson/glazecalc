@@ -222,6 +222,25 @@ describe('record ownership and input checks', () => {
       // Only that account's records.
       expect(await Firing.countDocuments({ ownedBy: String(alice.user._id) })).to.eql(1);
     });
+
+    it('reads an id in capitals as the same account', async () => {
+      // An admin's own email still needs the admin's password, so a stolen token cannot take the account.
+      const own = await api()
+        .put('/usersettings/' + String(admin.user._id).toUpperCase())
+        .set('Authorization', 'Bearer ' + admin.token)
+        .send({ email: uniqueEmail('taken') });
+      expect(own).to.have.status(400);
+      expect(own.body.code).to.eql('current-password-needed');
+      expect((await User.findById(admin.user._id))!.email).to.eql(admin.email);
+      // And another account goes with all its records.
+      await Firing.create([firing(bob.user, 'bob 1')]);
+      const removed = await api()
+        .delete('/deleteuser/' + String(bob.user._id).toUpperCase())
+        .set('Authorization', 'Bearer ' + admin.token);
+      expect(removed).to.have.status(200);
+      expect(await User.findById(bob.user._id)).to.eql(null);
+      expect(await Firing.countDocuments({ ownedBy: String(bob.user._id) })).to.eql(0);
+    });
   });
 
   describe('malformed requests', () => {

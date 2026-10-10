@@ -1,0 +1,237 @@
+{
+  "auth": {
+    "signInHeading": "Prijava",
+    "keepHeading": "Zadržite svoj rad",
+    "signUpHeading": "Stvaranje računa",
+    "signInLead": "Dobro došli natrag u svoju bilježnicu glazura.",
+    "keepLead": "Zadržite sve što ste napravili kao {name}: dodajte svoju adresu e-pošte i lozinku. I dalje je besplatno.",
+    "signUpLead": "Besplatno. Vaši recepti, sirovine i bilješke ostaju privatni, samo u vašem računu.",
+    "trialNote": "Već imate račun? Prijavom u njega prenosite ono što ste napravili kao {name}. Prvi put ste ovdje? Umjesto toga <signup>stvorite račun</signup> da biste to zadržali.",
+    "email": "E-pošta",
+    "password": "Lozinka",
+    "passwordHint": "Najmanje 8 znakova.",
+    "confirmation": "Potvrda lozinke",
+    "passwordMissing": "Unesite lozinku.",
+    "createAccount": "Stvori račun",
+    "signIn": "Prijavi se",
+    "haveAccount": "Već imate račun? <signin>Prijavite se</signin>",
+    "forgot": "Zaboravili ste lozinku? Postavite novu",
+    "newHere": "Prvi put ste ovdje? <signup>Stvorite besplatan račun</signup>",
+    "signUpFailed": "Pogreška: račun nije moguće stvoriti.",
+    "signInFailed": "Pogreška: prijava nije uspjela."
+  },
+  "forgot": {
+    "heading": "Ponovno postavljanje lozinke",
+    "checkInbox": "Provjerite pristiglu poštu i mapu neželjene pošte. Ako ništa ne stigne, provjerite adresu i zatražite ponovno.",
+    "intro": "Unesite adresu e-pošte svojeg računa i poslat ćemo vam poveznicu za odabir nove lozinke.",
+    "email": "E-pošta:",
+    "send": "Pošalji poveznicu",
+    "back": "Natrag na prijavu",
+    "failed": "Pogreška: e-poruku za ponovno postavljanje lozinke nije moguće poslati. Pokušajte ponovno."
+  },
+  "reset": {
+    "heading": "Odabir nove lozinke",
+    "signIn": "Prijavi se",
+    "incomplete": "Za ovu je stranicu potrebna poveznica iz e-poruke za ponovno postavljanje lozinke, a ova je nepotpuna.",
+    "askAgain": "Zatraži novu poveznicu",
+    "password": "Nova lozinka:",
+    "confirmation": "Potvrda nove lozinke:",
+    "save": "Spremi novu lozinku",
+    "hint": "Najmanje 8 znakova. Svi uređaji prijavljeni u račun bit će odjavljeni.",
+    "failed": "Pogreška: lozinku nije moguće promijeniti. Pokušajte ponovno."
+  },
+  "account": {
+    "trialTitle": "Vaše probno korištenje",
+    "trialLead": "Aplikaciju Glazecalc isprobavate kao {name}.",
+    "keepHeading": "Zadržite svoj rad",
+    "keepText": "Ovo probno korištenje i sve u njemu bit će uklonjeno. Datum uklanjanja: {date}. Stvorite besplatan račun da biste sve zadržali: vaši recepti, sirovine i bilješke ostaju točno onakvi kakvi jesu, a {name} ostaje vaše prikazano ime.",
+    "createAccount": "Stvori račun",
+    "title": "Vaš račun",
+    "signedInAs": "Prijavljeni ste kao {email}.",
+    "changeHeading": "Promjena lozinke",
+    "current": "Trenutačna lozinka",
+    "currentMissing": "Unesite trenutačnu lozinku.",
+    "password": "Nova lozinka",
+    "passwordHint": "Najmanje 8 znakova. Drugi uređaji prijavljeni u ovaj račun bit će odjavljeni.",
+    "confirmation": "Potvrda nove lozinke",
+    "change": "Promijeni lozinku",
+    "changeFailed": "Pogreška: lozinku nije moguće promijeniti. Pokušajte ponovno.",
+    "deleteHeading": "Brisanje računa",
+    "deleteText": "Time se uklanjaju vaš račun i sve što ste spremili: recepti, sirovine, dodaci, bilješke, zapisnici pečenja i savjeti. To se ne može poništiti.",
+    "deletePassword": "Vaša lozinka, za potvrdu",
+    "deletePasswordMissing": "Unesite lozinku za potvrdu.",
+    "delete": "Izbriši moj račun",
+    "deleteFailed": "Pogreška: račun nije moguće izbrisati. Pokušajte ponovno."
+  },
+  "settings": {
+    "heading": "Postavke",
+    "intro": "Spremaju se uz vaš račun, pa vrijede na svakom uređaju.",
+    "saveFailed": "Postavku nije moguće spremiti. Pokušajte ponovno.",
+    "language": {
+      "legend": "Jezik",
+      "help": "Jezik aplikacije, vodiča i vaše e-pošte. Kad ga promijenite, ova se stranica otvara na tom jeziku.",
+      "saved": "Spremljeno: {language}."
+    },
+    "region": {
+      "legend": "Gdje radite",
+      "none": {
+        "label": "Nije odabrano",
+        "saved": "Spremljeno: regija nije odabrana; zadane postavke slijede vaš preglednik."
+      },
+      "saved": "Spremljeno: {region}.",
+      "help": "Sirovine koje se ondje prodaju i zadane postavke za brojeve, datume, temperature i stošce u nastavku. Dok ne odaberete, one slijede jezik vašeg preglednika."
+    },
+    "format": {
+      "legend": "Brojevi i datumi",
+      "auto": {
+        "label": "Prema mojem jeziku i regiji",
+        "saved": "Spremljeno: brojevi i datumi onako kako se pišu u vašem jeziku i regiji."
+      },
+      "saved": "Spremljeno: zapis brojeva i datuma – {language}.",
+      "help": "Kako se pišu brojevi i datumi: 12,345.6 ili 12.345,6 te redoslijed dana i mjeseca."
+    },
+    "decimalMark": {
+      "legend": "Unos količina",
+      "either": {
+        "label": "Decimalni zarez ili točka",
+        "example": "12,5 ili 12.5",
+        "saved": "Spremljeno: količine se mogu upisivati s decimalnim zarezom ili točkom."
+      },
+      "comma": {
+        "label": "Decimalni zarez",
+        "saved": "Spremljeno: količine se upisuju s decimalnim zarezom."
+      },
+      "point": {
+        "label": "Decimalna točka",
+        "saved": "Spremljeno: količine se upisuju s decimalnom točkom."
+      },
+      "help": "Uz mogućnost Decimalni zarez ili točka, količina kao što je 1.250 čita se onako kako su zapisani vaši brojevi iznad."
+    },
+    "temperature": {
+      "legend": "Temperature",
+      "celsius": {
+        "label": "Celzijevi stupnjevi",
+        "saved": "Spremljeno: temperature u °C."
+      },
+      "fahrenheit": {
+        "label": "Fahrenheitovi stupnjevi",
+        "saved": "Spremljeno: temperature u °F."
+      },
+      "help": "Dok ne odaberete, ova postavka slijedi vašu regiju: °F u Sjedinjenim Američkim Državama, °C drugdje."
+    },
+    "cones": {
+      "legend": "Pečenje",
+      "orton": {
+        "label": "Na Ortonove stošce",
+        "example": "stožac 04, stožac 6",
+        "saved": "Spremljeno: pečenje na Ortonove stošce."
+      },
+      "temperature": {
+        "label": "Po temperaturi, kao u programu regulatora peći",
+        "saved": "Spremljeno: pečenje po temperaturi."
+      },
+      "help": "Dok ne odaberete, ova postavka slijedi vašu regiju: Ortonovi stošci u SAD-u, Ujedinjenom Kraljevstvu, Irskoj, Australiji i na Novom Zelandu, temperatura u ostatku Europe."
+    },
+    "density": {
+      "legend": "Gustoća glazure",
+      "sg": {
+        "label": "Relativna gustoća",
+        "saved": "Spremljeno: gustoća glazure kao relativna gustoća.",
+        "example": "rel. gustoća 1,45"
+      },
+      "baume": {
+        "label": "Stupnjevi Baumé, s areometra",
+        "saved": "Spremljeno: gustoća glazure u stupnjevima Baumé."
+      },
+      "pint": {
+        "label": "Masa pinte, unce u britanskoj pinti",
+        "saved": "Spremljeno: gustoća glazure kao masa pinte."
+      },
+      "help": "Kako vodiči navode gustoću glazure. Dok ne odaberete, ova postavka slijedi vašu regiju: stupnjevi Baumé u Italiji, relativna gustoća drugdje."
+    },
+    "theme": {
+      "legend": "Svijetlo ili tamno",
+      "system": {
+        "label": "Kako je postavljen ovaj uređaj",
+        "saved": "Spremljeno: svijetlo ili tamno, kako je postavljen pojedini uređaj."
+      },
+      "light": {
+        "label": "Svijetlo",
+        "saved": "Spremljeno: uvijek svijetlo."
+      },
+      "dark": {
+        "label": "Tamno",
+        "saved": "Spremljeno: uvijek tamno."
+      },
+      "help": "Ispisani recepti uvijek su crni na bijelom."
+    },
+    "palette": {
+      "legend": "Boje",
+      "saved": "Spremljeno: gumbi i poveznice u paleti {palette}.",
+      "help": "Za gumbe, poveznice i kartice, s nazivima po glazurama. Svaka je paleta lako čitljiva i u svijetlom i u tamnom načinu."
+    },
+    "weightUnit": {
+      "legend": "Mase za vaganje",
+      "grams": {
+        "label": "Grami",
+        "saved": "Spremljeno: mase za vaganje u gramima."
+      },
+      "pounds": {
+        "label": "Funte i unce",
+        "saved": "Spremljeno: mase za vaganje u funtama i uncama."
+      },
+      "help": "Za ispisane smjese."
+    },
+    "gramPrecision": {
+      "legend": "Grami na ispisanim smjesama",
+      "single": {
+        "label": "Na desetinku grama",
+        "saved": "Spremljeno: grami se prikazuju na desetinku."
+      },
+      "full": {
+        "label": "Puna preciznost",
+        "saved": "Spremljeno: grami se prikazuju u punoj preciznosti, na 5 decimala."
+      },
+      "help": "Pri prikazu na desetinku količine manje od 10 g i dalje se prikazuju na stotinku (2,35 g), zbog bojila u malim probnim smjesama."
+    },
+    "lead": {
+      "legend": "Olovo",
+      "off": {
+        "label": "Isključeno: nikad ne dodaj olovo u recept i ne predlaži ga",
+        "saved": "Spremljeno: olovo se nikad ne dodaje u recept niti se predlaže."
+      },
+      "on": {
+        "label": "Uključeno: sirovine s olovom mogu se dodavati i predlagati",
+        "saved": "Spremljeno: sirovine s olovom mogu se dodavati i predlagati."
+      },
+      "help": "Olovo je otrovno ako se udiše ili proguta i nakuplja se u tijelu, a olovna glazura može ga otpuštati u hranu i piće; nijedan izračun ne može pokazati čini li to pečeni predmet. Kad je isključeno, recepti koji već sadrže olovo i dalje se otvaraju onakvi kakvi su bili.",
+      "warning": "Olovo koristite samo u obliku frite, nikad kao sirovi minij, olovno bjelilo, žuti olovni oksid ili litargit. Miješajte ga na mokro, nikad ga ne prskajte, nosite zaštitnu masku i čistite na mokro. Predmete s olovnom glazurom držite podalje od hrane i pića, osim ako je pečeni predmet prošao laboratorijsko ispitivanje otpuštanja metala.",
+      "turnOn": "Uključi olovo",
+      "keepOff": "Ostavi isključeno"
+    },
+    "englishTerms": {
+      "legend": "Engleski nazivi",
+      "off": {
+        "label": "Isključeno",
+        "saved": "Spremljeno: bez engleskih naziva."
+      },
+      "on": {
+        "label": "Prikaži engleski naziv iza ključnih pojmova",
+        "saved": "Spremljeno: engleski naziv prikazuje se iza ključnih pojmova."
+      },
+      "help": "Za čitanje engleskih izvora, kao što je Digitalfire, usporedo s ovom aplikacijom: uz ključne pojmove u zagradama se prikazuje engleski naziv."
+    },
+    "notice": {
+      "legend": "Obavijest o prijevodu",
+      "shown": {
+        "label": "Prikazana",
+        "saved": "Spremljeno: obavijest se prikazuje."
+      },
+      "hidden": {
+        "label": "Skrivena",
+        "saved": "Spremljeno: obavijest je skrivena. Jedan njezin redak ostaje u vodičima o sigurnosti."
+      },
+      "help": "Napomena na vrhu svake stranice da ju je prevela umjetna inteligencija, s mogućnošću da predložite ispravak."
+    }
+  }
+}

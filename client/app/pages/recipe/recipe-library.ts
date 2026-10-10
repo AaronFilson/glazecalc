@@ -128,6 +128,8 @@ let nextId = 0;
               {{ t('recipe.library.nothingMatches', { filter: filter() }) }}
             } @else if (tab() === 'mine') {
               <gc-rich [text]="t('recipe.library.noneYet', { noun: noun() })" [links]="{ page: mineLink() }" />
+            } @else if (standardFailed()) {
+              <gc-rich [text]="t('standard.notFetched')" [links]="{ retry: tryAgain }" />
             } @else {
               {{ t('standard.loading') }}
             }
@@ -159,7 +161,10 @@ export class RecipeLibrary<T extends LibraryItem = LibraryItem> {
   readonly markLabel = input('');
   /** Inside a panel with its own heading: the heading a level below. */
   readonly nested = input(false);
+  /** The standard list could not be fetched: it says so, with a button to ask for it again (retry). */
+  readonly standardFailed = input(false);
   readonly pick = output<T>();
+  readonly retry = output<void>();
 
   protected readonly filterId = 'library-filter-' + nextId++;
   protected readonly filter = signal('');
@@ -190,6 +195,8 @@ export class RecipeLibrary<T extends LibraryItem = LibraryItem> {
     this.region.set(region);
     saveRegion(region);
   }
+
+  protected readonly tryAgain = (): void => this.retry.emit();
 
   protected choose(item: T): void {
     this.pick.emit(item);

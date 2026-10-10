@@ -26,18 +26,9 @@ Preparar un esmalte{{en: glaze}} consiste en pesar **materias primas** en polvo 
 
 ### Dónde comprar
 
-Los ceramistas compran a proveedores de cerámica, que venden arcilla, materiales para esmaltes{{en: glaze materials}} y herramientas. La tabla recoge algunos, confirmados durante la investigación para esta guía. Las existencias cambian, así que compruébelo antes de hacer un pedido. Para otros lugares, Digitalfire, un sitio de referencia sobre cerámica, mantiene un directorio de tiendas de proveedores.
+Los ceramistas compran a proveedores de cerámica, que venden arcilla, materiales para esmaltes{{en: glaze materials}} y herramientas. La tabla muestra algunos de su país, cada uno comprobado en el sitio web de la propia tienda, y puede elegir otro país para ver las tiendas de allí. Las existencias cambian, así que compruébelo antes de hacer un pedido. Los grandes productores, como Sibelco e Imerys, venden a la industria; los ceramistas compran sus materiales a través de tiendas como estas. Para otros lugares, Digitalfire, un sitio de referencia sobre cerámica, mantiene un directorio de tiendas de proveedores.
 
-Table: Algunos proveedores de materiales para esmaltes, por región
-Label: Proveedores por región
-
-| Región        | Proveedores                                                                                                                                                                              | Formatos vistos       |
-| ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------- |
-| EE. UU.       | Laguna Clay; Clay Art Center; The Ceramic Shop; New Mexico Clay; Seattle Pottery Supply                                                                                                  | 50 lb (22,7 kg)       |
-| Reino Unido   | Potterycrafts; Bath Potters; Potclays; Valentine Clays                                                                                                                                   | 1, 5 y 25 kg          |
-| UE            | Mondré & Manz (Alemania); Goerg & Schneider (Alemania, sobre todo arcillas); Ceradel (Francia)                                                                                           | Pregunte al proveedor |
-| Australia     | Walker Ceramics (con el nombre comercial Ozclay, junto con Feeneys y Cesco); Northcote Pottery Supplies, a través de Bunnings; Oxerra para fritas{{en: frits}} y pigmentos{{en: stains}} | De 10 a 25 kg         |
-| Nueva Zelanda | CCG; Decopot                                                                                                                                                                             | 2,5; 5 y 25 kg        |
+::shops
 
 ### Cuánto comprar
 
@@ -76,6 +67,10 @@ Las marcas aparecen y desaparecen a medida que cierran las minas. El feldespato 
 El **Gerstley Borate**, un mineral natural de boro presente en muchas recetas antiguas, escasea desde que su mina cerró en 2000, aunque New Mexico Clay informó en noviembre de 2025 de que Laguna estaba suministrando «Gerstley Borate Original». Las fuentes no coinciden sobre el **Gillespie Borate** como sustituto. Su fabricante lo vende para usarlo en la misma cantidad. Berkeley Potters Studio dice que «no es un sustituto directo», y Digitalfire comprobó que cambiaba el color de un esmalte. Lo prudente es comparar los dos por sus óxidos y después hacer pruebas.
 
 Los nombres también cambian de una región a otra. En Norteamérica, **flint** (sílex), quartz (cuarzo) y silica (sílice) designan la misma sílice molida, y Digitalfire dice que probablemente no encontrará en los proveedores auténtico sílex en polvo. En el Reino Unido, el flint es un producto aparte: el de Valentine es sílice calcinada (calentada). Los dos son sílice casi pura, así que esperamos que se parezcan, pero compruebe el análisis. En el caso del caolín, Glazy dice que los cambios uno por uno, como EPK por una china clay, «a menudo funcionan perfectamente, sobre todo cuando las cantidades son \<10 %».
+
+Muchas recetas nombran materiales que se venden en un país y no en otro. La tabla de abajo toma cada material de la biblioteca de Glazecalc que no se vende donde usted compra y busca, por sus análisis, el más parecido de su tipo que sí se vende allí. La cifra indica cuánto se diferencian los dos: los gramos en que difieren los óxidos que dejan tras la cocción, por cada 100 g de material, sumando todos los óxidos. Si la diferencia no pasa de unos 15 g, normalmente uno puede sustituir al otro en una primera prueba. Los nombres llevan los códigos propios de los fabricantes y de las tiendas, así que puede pedirlos por su nombre.
+
+::local-equivalents
 
 > [!NOTE]
 > Glazecalc compara los materiales por lo que aportan al esmalte cocido, no por su nombre. Una [receta](/recipe) con un material que ya no se fabrica indica qué se usa ahora. **Sugerir cantidades y comparar** vuelve a calcular las cantidades para un sustituto, y **Rehacer con lo que tengo** rehace la receta con los materiales que usted tiene a mano. Las dos funciones igualan solo los óxidos del esmalte cocido, así que pruebe antes una tanda pequeña.

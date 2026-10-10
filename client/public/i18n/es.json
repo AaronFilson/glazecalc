@@ -52,6 +52,9 @@
     "keepTrying": "Seguir probando",
     "discardFailed": "No se ha podido descartar la prueba. Inténtelo de nuevo."
   },
+  "signedOut": {
+    "recipeLost": "Se ha cerrado su sesión antes de guardar los cambios de «{title}», así que se han perdido."
+  },
   "footer": {
     "site": "Sitio",
     "about": "Acerca de",
@@ -70,7 +73,8 @@
     "notANumberPoint": "Introduzca un número, como {example}, con punto para los decimales."
   },
   "meta": {
-    "description": "Introduzca una receta de esmalte y vea su fórmula Seger (UMF), la relación sílice/alúmina y los fundentes. Gratuito y de código abierto, con sus recetas."
+    "description": "Introduzca una receta de esmalte y vea su fórmula Seger (UMF), la relación sílice/alúmina y los fundentes. Gratuito y de código abierto, con sus recetas.",
+    "imageAlt": "Glazecalc: entienda sus esmaltes, no se limite a mezclarlos."
   },
   "notices": {
     "dismiss": "Cerrar",
@@ -222,7 +226,8 @@
     "noChemistry": "Sin química: fuera de la fórmula Seger",
     "countedAs": "Contado como {name}",
     "nothingMatches": "No hay coincidencias. Pruebe con otro nombre, tipo o región.",
-    "loading": "Cargando..."
+    "loading": "Cargando...",
+    "notFetched": "No se ha podido obtener la lista. <retry>Reintentar</retry>"
   },
   "chemistryForm": {
     "name": "{noun, select, additive {Ponga un nombre al aditivo.} other {Ponga un nombre al material.}}",

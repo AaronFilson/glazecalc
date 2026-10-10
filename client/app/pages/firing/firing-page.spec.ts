@@ -1,6 +1,15 @@
 import { TestBed } from '@angular/core/testing';
 import { Firing } from '../../core/models';
-import { answer, API, fieldProblem, httpMock, settle, testProviders, text } from '../../testing/test-providers';
+import {
+  answer,
+  API,
+  fieldProblem,
+  httpMock,
+  settle,
+  skippedHeadings,
+  testProviders,
+  text
+} from '../../testing/test-providers';
 import { FiringPage } from './firing-page';
 
 describe('FiringPage', () => {
@@ -106,7 +115,9 @@ describe('FiringPage', () => {
 
   it('removes a stored firing and a row', async () => {
     const stored: Firing = { _id: 'f1', title: 'Old', fieldsIncluded: ['Time'], rows: [['1:00']] };
-    const { page } = await create([stored]);
+    const { fixture, page } = await create([stored]);
+    // The log being made and those stored are each a part of the page under its title.
+    expect(skippedHeadings(fixture)).toEqual([]);
     page['selectedField'].set('Time');
     page['addField']();
     page['addRow']();

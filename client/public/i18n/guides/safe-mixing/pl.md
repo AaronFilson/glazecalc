@@ -23,10 +23,14 @@ Label: Dopuszczalne stężenia krzemionki
 | Stany Zjednoczone | 0,05 mg/m³ (50 µg/m³) | Limit OSHA. Pracodawcy muszą zacząć podejmować działania od 25 µg/m³, tak zwanego „progu podjęcia działań”. |
 | Wielka Brytania   |             0,1 mg/m³ | Narażenie musi być ponadto utrzymywane na poziomie „tak niskim, jak jest to racjonalnie wykonalne”.         |
 | Unia Europejska   |             0,1 mg/m³ | Wiążący limit (dyrektywa 2017/2398). Niektóre państwa członkowskie ustalają niższe.                         |
-| Australia         |            0,05 mg/m³ | Od lipca 2020 r. W czerwcu 2026 r. ministrowie odrzucili obniżenie do 0,025.                                |
-| Nowa Zelandia     |           0,025 mg/m³ | Od listopada 2023 r.                                                                                        |
+| Australia         |            0,05 mg/m³ | Od lipca 2020 r. W czerwcu 2026 r. większość ministrów nie poparła obniżenia do 0,025.                      |
+| Nowa Zelandia     |           0,025 mg/m³ | Od 2023 r. Wartości ustalane przez WorkSafe to wytyczne, a nie limity prawne.                               |
 
 Niektóre strony podają dla Australii 0,025 mg/m³, ale oficjalny limit nadal wynosi 0,05. Tak czy inaczej, zalecenie jest to samo: należy utrzymywać ilość pyłu na możliwie najniższym poziomie.
+
+Kilka państw członkowskich UE ustala limity niższe niż unijny. Limit obowiązujący w kraju zamieszkania, przepis, który go ustala, i krajowa instytucja ds. bezpieczeństwa i higieny pracy:
+
+::silica-limit
 
 > [!NOTE]
 > To limity dla miejsc pracy. Obowiązują pracodawców, więc nikt nie kontroluje osoby, która sama zajmuje się ceramiką w domu, choć pracownie ogólnodostępne i szkoły zatrudniające personel zwykle im podlegają (należy sprawdzić miejscowe przepisy). W domu pył jest taki sam, a limity pokazują skalę zagrożenia: od 25 do 100 milionowych części grama w każdym metrze sześciennym powietrza, uśrednione w ciągu dnia.
@@ -39,7 +43,7 @@ Ochronę zapewniają głównie nawyki, a nie sprzęt. Zalecenia HSE dla zakład�
 
 ### Unikanie proszku, gdy tylko to możliwe
 
-- **Kupować gotowe szkliwo**{{en: glaze}}, jeśli pasuje do wykonywanej pracy. Pierwsza rada HSE brzmi: „W miarę możliwości kupować szkliwo gotowe do użycia”, ewentualnie w postaci granulatu lub zawiesiny{{en: slurry}}.
+- **Kupować gotowe płynne szkliwo**{{en: glaze}}, jeśli pasuje do wykonywanej pracy. Pierwsza rada HSE brzmi: „W miarę możliwości kupować szkliwo gotowe do użycia”, ewentualnie w postaci granulatu lub zawiesiny{{en: slurry}}.
 - **Wybierać bezpieczniejsze receptury.** HSE proponuje „szkliwa, które zawierają mniej krzemionki krystalicznej”. Digitalfire proponuje zamiast surowego węglanu baru **frytę**{{en: frit}} (fabrycznie wytworzone szkło zmielone na proszek, które rozpuszcza się znacznie słabiej niż surowce niefrytowane), a zamiast dużych ilości manganu, kobaltu lub niklu do uzyskania czerni – **pigment**{{en: stain}} (fabrycznie wytwarzany barwnik ceramiczny).
 
 ### Gdy jednak używa się proszku
@@ -82,7 +86,7 @@ Wyższa klasa zatrzymuje większą część drobnych cząstek. Źródła różni
 
 Nieszczelna maska wpuszcza pył przy krawędziach, niezależnie od swojej klasy. HSE ostrzega, że zarost i broda „uniemożliwiają dobre uszczelnienie”.
 
-- **Golić się tego samego dnia.** Zalecenia różnią się co do tego, ile czasu może upłynąć od golenia, by twarz była „gładko ogolona”: do 8 godzin (brytyjski producent, powołujący się na HSE) albo najlepiej do 12 (australijska i nowozelandzka norma dotycząca testu dopasowania). Golenie się w dniu pracy spełnia oba wymagania.
+- **Golić się krótko przed pracą.** Zalecenia różnią się co do tego, ile czasu może upłynąć od golenia, by twarz była „gładko ogolona”: do 8 godzin (brytyjski producent, powołujący się na HSE) albo najlepiej do 12 (australijska i nowozelandzka norma dotycząca testu dopasowania). Golenie się krótko przed pracą spełnia oba wymagania.
 - **Jeśli nosi się brodę,** luźny **sprzęt z wymuszonym przepływem powietrza** (PAPR: kaptur lub hełm z wentylatorem, który dostarcza przefiltrowane powietrze) nie wymaga szczelnego przylegania do twarzy.
 - **Dobrać właściwy rozmiar.** Złe dopasowanie to jedna z głównych przyczyn nieszczelności. W zakładach pracy wykonuje się **test dopasowania**, czyli sprawdzenie, czy konkretna maska szczelnie przylega do konkretnej twarzy. W domu proponujemy sprawdzać szczelność według instrukcji producenta za każdym razem po założeniu maski.
 
@@ -243,7 +247,7 @@ Oto źródła pierwotne, które najbardziej warto przeczytać. Większość z ni
 
 - **Stany Zjednoczone:** [przepis OSHA dotyczący krzemionki](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.1053) (29 CFR 1910.1053) i [zalecenia OSHA dla osób, które z własnego wyboru noszą półmaskę](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.134AppD); [ostrzeżenie NIOSH dotyczące pylicy krzemowej](https://www.cdc.gov/niosh/docs/92-107).
 - **Wielka Brytania:** karty HSE COSHH essentials dla ceramiki (COSHH to przepisy o kontroli substancji niebezpiecznych dla zdrowia, Control of Substances Hazardous to Health), zwłaszcza [CR1 o przygotowywaniu szkliw{{en: glazes}} i barwników](https://www.hse.gov.uk/PUBNS/guidance/cr1.pdf) i [CR5 o ich natryskiwaniu](https://www.hse.gov.uk/PUBNS/guidance/cr5.pdf), a także [podstawy testu dopasowania](https://www.hse.gov.uk/respiratory-protective-equipment/fit-testing-basics.htm) opracowane przez HSE.
-- **Unia Europejska:** dyrektywa (UE) 2017/2398 ustala wiążący limit dla krzemionki; [tabela dopuszczalnych stężeń](https://nepsi.eu/wp-content/uploads/2022/10/oel_full_table_september_2020_europe.pdf) NEPSI podaje limity poszczególnych państw. ECHA, Europejska Agencja Chemikaliów, publikuje klasyfikacje, np. boranów.
+- **Unia Europejska:** dyrektywa (UE) 2017/2398 ustala wiążący limit dla krzemionki; własny limit każdego państwa członkowskiego i jego krajową instytucję ds. bezpieczeństwa i higieny pracy podano wyżej, w części Najwyższe dopuszczalne stężenia. ECHA, Europejska Agencja Chemikaliów, publikuje klasyfikacje, np. boranów.
 - **Australia:** [strony Safe Work Australia o krzemionce krystalicznej i pylicy krzemowej](https://www.safeworkaustralia.gov.au/safety-topic/hazards/crystalline-silica-and-silicosis/research-lower-workplace-exposure-standard-respirable-crystalline-silica-0).
 - **Nowa Zelandia:** WorkSafe New Zealand ustala dopuszczalne stężenia w miejscach pracy; [historia limitu dla krzemionki](https://mbie.govt.nz/building-and-energy/building/building-and-construction-consultations/work-with-engineered-stone-and-materials-containing-crystalline-silica/annex-iii) opracowana przez MBIE podaje daty.
 - **Piece:** [poradnik Skutt o pomieszczeniu na piec](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Designing-A-Kiln-Room-1.pdf), [ulotka Orton i CCSA o gazach i oparach z pieca](https://assets.noviams.com/novi-file-uploads/ccsa/Product_Safety/Fumes.pdf), a przede wszystkim instrukcja własnego pieca.
@@ -257,7 +261,6 @@ Oto źródła pierwotne, które najbardziej warto przeczytać. Większość z ni
 - [HSE: COSHH essentials CR1, Glaze and colour preparation](https://www.hse.gov.uk/PUBNS/guidance/cr1.pdf)
 - [HSE: COSHH essentials CR5, Spraying glazes and colours](https://www.hse.gov.uk/PUBNS/guidance/cr5.pdf)
 - [HSE: Fit testing basics](https://www.hse.gov.uk/respiratory-protective-equipment/fit-testing-basics.htm)
-- [NEPSI: Occupational exposure limits for respirable crystalline silica in Europe](https://nepsi.eu/wp-content/uploads/2022/10/oel_full_table_september_2020_europe.pdf)
 - [Safe Work Australia: Research on a lower workplace exposure standard for respirable crystalline silica](https://www.safeworkaustralia.gov.au/safety-topic/hazards/crystalline-silica-and-silicosis/research-lower-workplace-exposure-standard-respirable-crystalline-silica-0)
 - [Enviliance: Report 16612, Australia's June 2026 decision on the silica exposure standard](https://enviliance.com/regions/oceania/au/report_16612)
 - [MBIE (Nowa Zelandia): Work with engineered stone and materials containing crystalline silica, Annex III](https://mbie.govt.nz/building-and-energy/building/building-and-construction-consultations/work-with-engineered-stone-and-materials-containing-crystalline-silica/annex-iii)

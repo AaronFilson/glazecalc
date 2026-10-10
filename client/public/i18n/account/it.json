@@ -136,7 +136,8 @@
       "legend": "Densità dello smalto",
       "sg": {
         "label": "Peso specifico",
-        "saved": "Salvato: densità dello smalto come peso specifico."
+        "saved": "Salvato: densità dello smalto come peso specifico.",
+        "example": "1,45"
       },
       "baume": {
         "label": "Gradi Baumé, dal densimetro",

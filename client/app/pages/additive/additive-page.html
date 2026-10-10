@@ -3,7 +3,7 @@
   <gc-notices [notices]="notices" />
 
   <section class="inputbox">
-    <h3>{{ t('library.additive.newHeading') }}</h3>
+    <h2 class="h3">{{ t('library.additive.newHeading') }}</h2>
     <p>
       {{ t('library.common.formulaHelp', { typed: 'CoAl2O4', shown: 'CoAl₂O₄', joined: 'CuCO₃•Cu(OH)₂' }) }}
       <span class="large">•</span>
@@ -56,8 +56,9 @@
             <input
               id="additive-loi"
               type="text"
-              name="loi"
-              [(ngModel)]="form.loi"
+              inputmode="decimal"
+              [gcNumber]="form.loi()"
+              (gcNumberChange)="form.loi.set($event)"
               [gcField]="form.checks"
               gcFieldName="loi"
             />
@@ -67,8 +68,9 @@
             <input
               id="additive-molecularweight"
               type="text"
-              name="molecularweight"
-              [(ngModel)]="form.molecularweight"
+              inputmode="decimal"
+              [gcNumber]="form.molecularweight()"
+              (gcNumberChange)="form.molecularweight.set($event)"
               [gcField]="form.checks"
               gcFieldName="molecularweight"
             />
@@ -76,7 +78,7 @@
         </div>
         <p>{{ t('library.additive.firedNote', { asSold: 'Co₃O₄', fired: 'CoO', loi: fixed(6.6, 1) }) }}</p>
 
-        <h4>{{ t('library.common.formulaHeading') }}</h4>
+        <h3 class="h4">{{ t('library.common.formulaHeading') }}</h3>
         <div class="row">
           <div class="col-lg-6 mb-3">
             <label for="additive-oxide">{{ t('library.common.oxideSelection') }}</label>
@@ -133,11 +135,12 @@
                 <input
                   [id]="'part-amount-' + $index"
                   type="text"
-                  [name]="'part-amount-' + $index"
+                  inputmode="decimal"
                   class="part-amount"
                   [gcField]="form.checks"
                   [gcFieldName]="'amount-' + $index"
-                  [(ngModel)]="line.amount"
+                  [gcNumber]="line.amount"
+                  (gcNumberChange)="form.setAmount($index, $event)"
                 />
               </p>
               <button type="button" class="btn btn-light border" (click)="form.removeOxide($index)">
@@ -154,7 +157,7 @@
 
   @if (myAdditives().length) {
     <section class="tech-info" aria-labelledby="my-additives-heading">
-      <h4 id="my-additives-heading">{{ t('library.additive.mineHeading') }}</h4>
+      <h2 class="h4" id="my-additives-heading">{{ t('library.additive.mineHeading') }}</h2>
       <table class="table table-bordered">
         <thead>
           <tr>
@@ -180,7 +183,7 @@
                 </div>
               </td>
               <td translate="no">{{ formatFormula(add.rawformula) }}</td>
-              <td>{{ firstOf(add.notes) }}</td>
+              <td class="keep-lines">{{ firstOf(add.notes) }}</td>
               <td translate="no">{{ fieldsText(add) }}</td>
             </tr>
           }
@@ -191,7 +194,12 @@
   }
 
   <section class="tech-info" aria-labelledby="standard-additives-heading">
-    <h4 id="standard-additives-heading">{{ t('library.additive.standardHeading') }}</h4>
-    <gc-standard-list [records]="standardAdditives()" noun="additives" />
+    <h2 class="h4" id="standard-additives-heading">{{ t('library.additive.standardHeading') }}</h2>
+    <gc-standard-list
+      [records]="standardAdditives()"
+      noun="additives"
+      [failed]="standardFailed()"
+      (retry)="loadStandard()"
+    />
   </section>
 </ng-container>

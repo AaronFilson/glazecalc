@@ -142,7 +142,7 @@ The Pet Poison Helpline says "Lead is toxic for all species, but young and/or ma
 
 - Keep pets out of the studio, with the door shut.
 - Dogs chew bags and drink from buckets. Keep bags in a closed cabinet and a lid on every bucket.
-- Cats walk through dust and lick it off their paws and fur. Wet-clean the floor and keep cats out, so there is nothing to groom off.
+- Cats walk through dust and lick it off their paws and fur. Wet-clean the floor and keep cats out of the studio, so there is nothing to groom off.
 - Birds and small mammals (rabbits, guinea pigs, hamsters) share the household air. Keep them in a far room with the door shut while you handle dry materials and while the kiln fires.
 - Fish tanks collect settling dust. Keep them out of the studio, and covered.
 - Keep pet food and water bowls away from the studio and kiln, and use commercial or tested bowls, not studio experiments.
@@ -155,7 +155,7 @@ If a pet may have eaten or drunk anything from the studio, or shows signs like t
 
 A UK schools risk assessment says a kiln's outside "can reach 160 °C and possibly more" (about 320 °F), and a school kiln guide reports metal bands at up to 460 °F (about 240 °C). Skutt, a kiln maker, recommends a kiln room that can be locked against children and pets. Where a room cannot be locked, the school guide suggests a barrier such as a kiln safety screen.
 
-We suggest keeping small children and pets, who cannot understand a warning sign, behind a locked door or a barrier while the kiln fires and while it cools, and posting a warning sign for everyone else.
+Small children and pets cannot understand a warning sign. We suggest keeping them behind a locked door or a barrier while the kiln fires and while it cools, and posting a warning sign for everyone else.
 
 ### Space around it
 
@@ -165,7 +165,7 @@ Sources disagree on clearance. Rio Grande says at least 12 inches (30 cm) from w
 
 Rio Grande recommends a **dedicated circuit** (one that powers nothing else) with a properly grounded outlet. We suggest no extension cord. Between firings, switch off the kiln's breaker or disconnect switch, or unplug it, so a child cannot start it.
 
-### Stay for the end of the firing
+### Be there when the firing ends
 
 A **kiln sitter** is the mechanical switch on many manual kilns: a small cone bends at the end of the firing and trips the switch off. Its manual says it "is NOT intended to perform as a fail-safe shut-off device." Rio Grande says never to leave a firing kiln unattended, "especially near the expected shut-off time". So fire only when an adult will be home and awake for the end of the firing, check that the kiln has switched off, and keep an ABC fire extinguisher in the kiln room. For how sitters, controllers and schedules work, see [Firing a basic kiln](/guides/firing).
 

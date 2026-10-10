@@ -151,7 +151,8 @@ describe('AuthService trials', () => {
     expect((await result).status).toBe(401);
     expect(auth.hasSession()).toBe(false);
     expect(auth.trialEnded()).toBe(true);
-    expect(navigate).toHaveBeenCalledWith('/');
+    // Saying why, so a page left with changes not saved can tell (core/leave.guard.ts).
+    expect(navigate).toHaveBeenCalledWith('/', { state: { sessionEnded: true } });
 
     // So does a rejected /verify, without leaving the page.
     TestBed.resetTestingModule();
@@ -175,7 +176,8 @@ describe('the trial bar', () => {
     ) as HTMLButtonElement;
 
   it('names the trial and its end date, with no sign-out button', async () => {
-    storeTrial(new Date(2026, 9, 12, 12));
+    // Far in the future, so the trial never runs out before the test does (12 October 2099 is a Monday).
+    storeTrial(new Date(2099, 9, 12, 12));
     setup();
     const { fixture } = await create(App);
     httpMock().expectOne(API + '/verify');

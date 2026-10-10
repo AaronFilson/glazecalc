@@ -5,6 +5,9 @@
 //   client/public/i18n/chemistry/en.json  from lib/chemistry/messages.js
 //   client/public/i18n/safety/en.json     the words in lib/regions/safety.js
 //                                         (who to call), each under its textKey
+//   client/public/i18n/regions/en.json    likewise the words in the other region
+//                                         data: workplace.js, food.js and
+//                                         suppliers.js
 //   client/public/i18n/records/en.json    the standard records' words in data/:
 //                                         materials' and additives' notes and
 //                                         hazards, the advice; likewise
@@ -35,12 +38,16 @@ export async function sources() {
   const require = createRequire(import.meta.url);
   const { MESSAGES: chemistry } = require('../lib/chemistry/messages.js');
   const safety = require('../lib/regions/safety.js');
+  const regionData = ['workplace', 'food', 'suppliers'].map((name) => require('../lib/regions/' + name + '.js'));
   // Safety text is plain text: braces and apostrophes in it are quoted for ICU.
   const plainAsIcu = (text) => text.replace(/'/g, "''").replace(/[{}]/g, (brace) => "'" + brace + "'");
   const json = (messages) =>
     JSON.stringify(Object.fromEntries(Object.entries(messages).map(([code, text]) => [code, asIcu(text)])), null, 2) +
     '\n';
   const safetyTexts = Object.fromEntries(safety.texts().map((text) => [safety.textKey(text), plainAsIcu(text)]));
+  const regionTexts = Object.fromEntries(
+    regionData.flatMap((data) => data.texts()).map((text) => [safety.textKey(text), plainAsIcu(text)])
+  );
   const records = new Set();
   for (const file of ['materials', 'additives', 'advice']) {
     for (const line of readFileSync(path.join(ROOT, 'data', file + '.ndjson'), 'utf8').split('\n')) {
@@ -62,13 +69,16 @@ export async function sources() {
     'server/en.json': json(server),
     'chemistry/en.json': json(chemistry),
     'safety/en.json': JSON.stringify(safetyTexts, null, 2) + '\n',
+    'regions/en.json': JSON.stringify(regionTexts, null, 2) + '\n',
     'records/en.json': JSON.stringify(recordTexts, null, 2) + '\n'
   };
 }
 
 if (import.meta.url === pathToFileURL(process.argv[1] ?? '').href) {
   for (const [file, text] of Object.entries(await sources())) writeFileSync(path.join(I18N, file), text);
-  console.log("Wrote the English of the server's, the chemistry's, who to call's and the standard records' messages.");
+  console.log(
+    "Wrote the English of the server's, the chemistry's, who to call's, the region data's and the standard records' messages."
+  );
   // --keep recipe:print.title: an English change that keeps the meaning keeps its translations.
   const keep = process.argv.flatMap((arg, i, args) => (args[i - 1] === '--keep' ? [arg] : []));
   const { changes } = updateTranslations({ keep });

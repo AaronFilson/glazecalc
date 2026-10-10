@@ -1,0 +1,154 @@
+{
+  "version": {
+    "cones": "Ta vodnik je prikazan za žganje po stožcih, kot je nastavljeno v nastavitvah.",
+    "temperature": "Ta vodnik je prikazan za žganje po temperaturi, kot je nastavljeno v nastavitvah.",
+    "showTemperature": "Prikaži za žganje po temperaturi",
+    "showCones": "Prikaži za žganje po stožcih"
+  },
+  "notTranslated": "Ta vodnik še ni preveden, zato je prikazan v angleščini.",
+  "sectionInEnglish": "Ta razdelek se je spremenil, odkar je bil preveden, zato je prikazan v angleščini, dokler njegov prevod ne bo posodobljen.",
+  "list": {
+    "title": "Vodniki",
+    "lead": "Vodniki v preprostem jeziku za začetnike v lončarstvu: od tega, kaj je glazura, do njenega žganja, in kako pri tem poskrbeti za varnost vseh.",
+    "note": "Ti vodniki zbirajo, kar objavljajo proizvajalci, agencije za varnost in izkušeni lončarji, z viri na koncu vsakega. So izhodišče, ne pa nadomestilo za varnostne liste surovin, navodila za uporabo peči ali lokalne predpise.",
+    "glazingBasics": {
+      "title": "Glaziranje od osnov",
+      "text": "Kaj je glazura, kako se stali, in razlaga vseh izrazov, ki jih boste srečali v receptu ali na vreči."
+    },
+    "makingAGlaze": {
+      "title": "Kako pripraviti glazuro",
+      "text": "Nakup, shranjevanje, tehtanje, mešanje in sejanje glazure, nato preizkušanje in vodenje zapiskov."
+    },
+    "safeMixing": {
+      "title": "Varno mešanje in prezračevanje",
+      "text": "Prah, zaščitne dihalne maske, čiščenje, surovine, ki zahtevajo največ previdnosti, in odzračevanje peči."
+    },
+    "homeSafety": {
+      "title": "Ne zastrupite svoje družine",
+      "text": "Lončarstvo doma z otroki in hišnimi ljubljenčki: shranjevanje, prah, peč in kaj storiti, če kdo kaj pogoltne."
+    },
+    "firing": {
+      "title": "Žganje v preprosti peči",
+      "text": "Stožci, stikala Kiln-Sitter in ročna stikala ter programi za biskvitno in glazurno žganje."
+    }
+  },
+  "contents": "Na tej strani",
+  "poison": {
+    "numbersFor": "Številke za državo",
+    "choose": "Izberite državo",
+    "label": "Koga poklicati v državi {region}",
+    "caption": "Koga poklicati v državi {region} (številke preverjene: {date})",
+    "for": "Namen",
+    "call": "Pokličite",
+    "notes": "Delovni čas in opombe",
+    "emergency": "Nujni primer: nezavest, zastoj dihanja, napad krčev",
+    "poisonAdvice": "{who, select, children {Svetovanje pri zastrupitvah: {name} (samo za otroke)} other {Svetovanje pri zastrupitvah: {name}}}",
+    "or": "ali {number}",
+    "online": "Na spletu: <link>{name}</link>.",
+    "poisonAdviceNone": "Svetovanje pri zastrupitvah",
+    "noLine": "Javne linije za zastrupitve tu nismo mogli potrditi. Pokličite svojega zdravnika ali, če je nujno, številko za nujne primere.",
+    "medicalAdvice": "Zdravniški nasvet: {name}",
+    "animals": "Živali: {name}",
+    "animalsNone": "Živali",
+    "vet": "Pokličite veterinarja.",
+    "checkedOn": "Preverjeno na:",
+    "choosePrompt": "Izberite državo, da vidite, koga poklicati tam.",
+    "ministry": "Stran ministrstva za zdravje: <link>{name}</link>."
+  },
+  "density": {
+    "sg": "rel. gostota {value}",
+    "baume": "{value} °Bé ({sg})",
+    "pint": "{value} oz na britansko pinto ({sg})"
+  },
+  "shops": {
+    "shopsIn": "Trgovine v državi",
+    "label": "Trgovine v državi {region}",
+    "caption": "Nekaj trgovin s surovinami za glazure v državi {region} (preverjeno: {date})",
+    "nearbyCaption": "Trgovine drugje, ki navajajo, da dostavljajo v državo {region} (preverjeno: {date})",
+    "shop": "Trgovina",
+    "sells": "Prodaja",
+    "packs": "Najdena pakiranja",
+    "seen": "Najdene surovine, kot jih imenuje trgovina",
+    "what": {
+      "materials": "surovine za glazure",
+      "frits": "frite",
+      "oxides": "oksidi",
+      "stains": "keramični pigmenti",
+      "clays": "glina",
+      "glazes": "pripravljene glazure",
+      "kilns": "peči"
+    },
+    "none": "V državi {region} nismo našli nobene trgovine s surovinami za glazure.",
+    "unknown": "Trgovin v državi {region} še nismo iskali.",
+    "choosePrompt": "Izberite državo, da vidite tamkajšnje trgovine."
+  },
+  "silica": {
+    "limitIn": "Mejna vrednost v državi",
+    "label": "Mejna vrednost za kremen v državi {region}",
+    "caption": "Mejna vrednost na delovnem mestu za prah kristalnega kremena, ki se vdihuje (respirabilna frakcija), v državi {region}, 8-urno povprečje (preverjeno: {date})",
+    "both": "Kremen in kristobalit",
+    "quartz": "Kremen",
+    "cristobalite": "Kristobalit",
+    "actionLevel": "Opozorilna vrednost",
+    "value": "{value} mg/m³",
+    "kind": {
+      "binding": "Zavezujoča mejna vrednost.",
+      "indicative": "Indikativna mejna vrednost: priporočilo, ne zakonska zgornja meja.",
+      "assessment": "Merilo za ocenjevanje, ne zavezujoča mejna vrednost."
+    },
+    "setBy": "Določa jo <link>{law}</link>.",
+    "lowerThanEu": "Nižja od zavezujoče mejne vrednosti EU, ki znaša {value} mg/m³.",
+    "sameAsEu": "Enaka zavezujoči mejni vrednosti EU.",
+    "unknown": "Nacionalne mejne vrednosti v državi {region} nismo mogli potrditi. Zavezujoča mejna vrednost EU, {value} mg/m³, velja v vsaki državi članici.",
+    "noData": "Mejne vrednosti v državi {region} še nismo potrdili.",
+    "agency": "Državni organ za varnost in zdravje pri delu: <link>{name}</link>.",
+    "agencySilica": "Njegova <link>stran o kremenu</link>.",
+    "choosePrompt": "Izberite državo, da vidite njeno mejno vrednost."
+  },
+  "food": {
+    "rulesIn": "Pravila v državi",
+    "label": "Mejne vrednosti za keramične izdelke v državi {region}",
+    "caption": "Koliko sme žgan izdelek sprostiti pri predpisanem preskusu, v državi {region} (preverjeno: {date})",
+    "article": "Vrsta izdelka",
+    "lead": "Svinec",
+    "cadmium": "Kadmij",
+    "category": {
+      "flat": "Izdelki, ki jih ni mogoče napolniti, ali z višino polnjenja največ 25 mm",
+      "fillable": "Drugi izdelki, ki se lahko napolnijo",
+      "cooking": "Posoda za kuhanje katere koli velikosti ter embalažna posoda in posoda za shranjevanje s prostornino več kakor 3 L",
+      "rimBand": "Rob posode za pitje: 2 cm širok pas na notranji in zunanji strani",
+      "rimArticle": "Rob posode za pitje: 20 mm širok pas na zunanji strani ob zgornjem robu, na kos",
+      "flatware": "Ploska posoda, globoka največ 25 mm",
+      "smallHollow": "Majhna votla posoda pod 1,1 L, razen skodelic in lončkov",
+      "cups": "Skodelice in lončki",
+      "largeHollow": "Velika votla posoda od 1,1 L naprej, razen vrčev",
+      "pitchers": "Vrči",
+      "auSmall": "Skodelice, lončki, vrči, sklede, čajniki in druga namizna posoda pod 1100 mL",
+      "auLarge": "Enako, 1100 mL ali več",
+      "auPlates": "Krožniki, krožnički in podobna namizna posoda",
+      "auCooking": "Posoda za kuhanje"
+    },
+    "judged": {
+      "average": "povprečje 6 kosov",
+      "each": "vsak od 6 kosov"
+    },
+    "euRules": "Tu veljajo pravila EU.",
+    "law": "Določa jih <link>{law}</link>.",
+    "inForce": "Začetek veljavnosti: {date}.",
+    "unknown": "Pravil v državi {region} še nismo potrdili.",
+    "choosePrompt": "Izberite državo, da vidite njena pravila."
+  },
+  "equivalents": {
+    "buyingIn": "Nakup v državi",
+    "label": "{library, select, US {Nadomestne surovine, ki se prodajajo v ZDA} UK {Nadomestne surovine, ki se prodajajo v Združenem kraljestvu} EU {Nadomestne surovine, ki se prodajajo v EU} other {Nadomestne surovine, ki se prodajajo v Avstraliji in na Novi Zelandiji}}",
+    "caption": "{library, select, US {Surovine, ki se v ZDA ne prodajajo, vsaka z najbližjo, ki se tam prodaja} UK {Surovine, ki se v Združenem kraljestvu ne prodajajo, vsaka z najbližjo, ki se tam prodaja} EU {Surovine, ki se v EU ne prodajajo, vsaka z najbližjo, ki se tam prodaja} other {Surovine, ki se v Avstraliji in na Novi Zelandiji ne prodajajo, vsaka z najbližjo, ki se tam prodaja}}",
+    "material": "V receptu",
+    "soldIn": "Kje se prodaja",
+    "closest": "{library, select, US {Najbližja, ki se prodaja v ZDA} UK {Najbližja, ki se prodaja v Združenem kraljestvu} EU {Najbližja, ki se prodaja v EU} other {Najbližja, ki se prodaja v Avstraliji in na Novi Zelandiji}}",
+    "apart": "razlika {grams} g na 100 g",
+    "noneClose": "Nobena ni v okviru 15 g na 100 g: primerjajte kemijsko sestavo.",
+    "loading": "Nalaganje knjižnice …",
+    "failed": "Knjižnice ni bilo mogoče naložiti. Poskusite znova pozneje.",
+    "choosePrompt": "Izberite državo, da vidite, kaj se tam prodaja."
+  }
+}

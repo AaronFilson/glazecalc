@@ -50,6 +50,7 @@
   "record-updated": "Successfully updated {label, select, additive {additive} advice {advice} firing {firing} material {material} note {note} recipe {recipe} trash {trash} other {record}}",
   "record-invalid": "Invalid {label, select, additive {additive} advice {advice} firing {firing} material {material} note {note} recipe {recipe} trash {trash} other {record}}",
   "record-deleted": "Successfully deleted {label, select, additive {additive} advice {advice} firing {firing} material {material} note {note} recipe {recipe} trash {trash} other {record}}",
+  "account-limit": "An account can keep up to {limit} {label, select, additive {additives} advice {pieces of advice} firing {firing logs} material {materials} note {notes} recipe {recipes} trash {items in the trash} other {records}}. Please remove some to save more.",
   "not-found": "Not found",
   "other-site": "Requests from other sites are not accepted.",
   "invalid-input": "Some of the information sent is not valid.",

@@ -12,13 +12,26 @@ describe('client routes', function () {
   });
 
   it('sends index.html for the app pages, never cached', async () => {
-    for (const page of ['/', '/recipe', '/reset', '/advice', '/guides/firing', '/no-such-page']) {
+    for (const page of ['/', '/recipe', '/reset', '/advice', '/guides/firing', '/de/recipe']) {
       const res = await site().get(page);
       expect(res, page).to.have.status(200);
       // eslint-disable-next-line @typescript-eslint/no-unused-expressions -- chai-http's property assertion
       expect(res, page).to.be.html;
       expect(res.text, page).to.include('<gc-root');
       expect(res.headers['cache-control'], page).to.eql('no-cache');
+    }
+  });
+
+  it('sends the app, with a 404 and no address of its own, for any other address', async () => {
+    // The app shows its not-found page; search engines see that nothing is there.
+    for (const page of ['/no-such-page', '/xx/recipe', '/pt/guides', '/de/no-such-page', '/.../']) {
+      const res = await site().get(page);
+      expect(res, page).to.have.status(404);
+      // eslint-disable-next-line @typescript-eslint/no-unused-expressions -- chai-http's property assertion
+      expect(res, page).to.be.html;
+      expect(res.text, page).to.include('<gc-root');
+      expect(res.text, page).not.to.include('rel="canonical"');
+      expect(res.text, page).not.to.include('hreflang');
     }
   });
 

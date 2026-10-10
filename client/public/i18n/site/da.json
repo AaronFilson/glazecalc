@@ -1,0 +1,111 @@
+{
+  "landing": {
+    "eyebrow": "Glasurberegner og værkstedsnotesbog",
+    "heading": "Gratis glasurkemi til keramikere.",
+    "lead": "Bland ikke bare glasurerne – forstå dem. Indtast en opskrift, og se med det samme dens Seger-formel (UMF), forholdet mellem silica og aluminiumoxid og fordelingen af flusmidler. Hav opskrifter, råvarer, farvestoffer, noter og brændingsjournaler samlet i én privat notesbog.",
+    "trialEnded": "Prøveperioden er slut. Start en ny, eller opret en gratis konto for at beholde arbejdet.",
+    "tryIt": "Prøv nu",
+    "createAccount": "Opret en gratis konto",
+    "trialFailed": "Der kunne ikke startes en prøveperiode lige nu. Prøv igen.",
+    "heroNote": "Prøv uden at oprette en konto · Gratis og open source · Opskrifterne forbliver private",
+    "heroAlt": "En række brændte keglesæt: De hvide kegler i hvert sæt er bøjet over i ovnens varme.",
+    "heroCaption": "Keglesæt efter en brænding: Hver kegle bøjer, når ovnen har givet nok varmepåvirkning.",
+    "exampleHeading": "Se det i praksis: en klassisk grundglasur til seladon",
+    "exampleCaption": "Bernard Leachs »4321«, ofte brændt til kegle 10, i vægtdele.",
+    "material": "Råvare",
+    "parts": "Dele",
+    "unityHeading": "Glasurens Seger-formel",
+    "exampleNote": "Flusmidlerne giver tilsammen 1, så to vilkårlige glasurer kan sammenlignes på lige fod. Beregnet her i browseren med den samme kode, som beregneren bruger.",
+    "featuresHeading": "Det kan Glazecalc",
+    "features": {
+      "unity": {
+        "title": "Seger-formlen med det samme",
+        "text": "Se flusmidler, aluminiumoxid og silica i Seger-formlen, sådan som glasurkemikere sammenligner opskrifter, så snart en opskrift er indtastet."
+      },
+      "substitute": {
+        "title": "Ret og erstat",
+        "text": "Er en råvare udgået? Sammenlign formler for at finde en erstatning, der smelter på samme måde."
+      },
+      "notebook": {
+        "title": "Notesbog til værkstedet",
+        "text": "Saml opskrifter, egne råvarer, farvestoffer, noter og brændingsjournaler ét sted."
+      },
+      "learn": {
+        "title": "Lær undervejs",
+        "text": "Vejledninger i et enkelt sprog, fra hvad en glasur er, til hvordan den brændes sikkert, ligger lige ved siden af tallene."
+      }
+    },
+    "umfHeading": "Hvad er en Seger-formel?",
+    "umfRecipe": "En glasuropskrift fortæller, hvor meget der skal afvejes af hver råvare. Seger-formlen, også kaldet UMF (unity molecular formula), fortæller, hvad råvarerne bliver til i ovnen: hvor mange molekyler der er af hvert oxid, normeret, så flusmidlerne tilsammen giver én.",
+    "umfGroups": "Flusmidlerne får glasuren til at smelte, aluminiumoxid gør smelten mere sej, og silica danner glasset. Når de tre grupper sammenlignes, kan man se, hvorfor én glasur er blank og en anden mat, eller hvorfor én løber, mens en anden bliver siddende, og det viser, hvordan en råvare, der ikke længere sælges, kan erstattes.",
+    "readAdvice": "Læs flere glasurråd",
+    "closingHeading": "Klar, når du er.",
+    "closingText": "Prøv beregneren nu, og opret så en konto for at beholde arbejdet."
+  },
+  "about": {
+    "title": "Om Glazecalc",
+    "lead": "En gratis open source-beregner til glasurkemi og en notesbog for pottemagere, keramikere og studerende.",
+    "whatHeading": "Hvad den gør",
+    "what": "Glazecalc omregner en glasuropskrift – råvarerne, og hvor meget der afvejes af hver – til dens Seger-formel (UMF): de oxider, glasuren består af efter brændingen, normeret, så flusmidlerne tilsammen giver én. Det gør opskrifter sammenlignelige, hjælper med at forklare, hvordan en glasur opfører sig, og hjælper, når en råvare skal erstattes.",
+    "alongside": "Ud over beregneren gemmer den opskrifter, egne råvarer, farvestoffer og andre tilsætninger, noter og brændingsjournaler, og den har en side med praktiske <advice>glasurråd</advice> og <guides>vejledninger</guides> til nye keramikere, fra hvad en glasur er, til hvordan den brændes sikkert.",
+    "numbersHeading": "Sådan beregnes tallene",
+    "numbers": "Hver råvare beskrives ved sin kemiske formel eller en oxidanalyse plus sit glødetab: den del, der brænder bort i ovnen, fx kuldioxiden i kridt eller vandet i kaolin. Glazecalc omregner hver mængde til mol af hvert oxid med standardværdier for molmasserne, lægger dem sammen for hele opskriften og dividerer med det samlede antal mol flusmiddel. Farvestoffer og andre tilsætninger står sammen med opskriften, men er ikke med i Seger-formlen, som det er almindeligt.",
+    "guide": "Resultaterne er vejledende, ikke en garanti. Råvarerne varierer i praksis fra leverandør til leverandør og fra parti til parti, og brændingen betyder lige så meget som kemien, så test hver glasur. Glasurer til flader med fødevarekontakt bør testes for afgivelse af metaller.",
+    "builtHeading": "Sådan er den bygget",
+    "built": "Glazecalc blev startet i 2017 og bygget om i 2026. Det er én lille webapplikation, og <source>kildekoden ligger på GitHub</source> under MIT-licensen.",
+    "stackBrowser": "Angular 22 i browseren (standalone-komponenter og signals), med glasurkemien i et lille delt bibliotek.",
+    "stackServer": "Et TypeScript-API på Node.js 24 og Express 5 med MongoDB 9, kontrolleret af mere end 350 automatiske test.",
+    "stackHosting": "Kører i Docker på Amazon Web Services bag nginx med HTTPS fra Let's Encrypt.",
+    "stackDeploy": "Udrulles med GitHub Actions: images bygges og testes ved hver ændring, og udrulningerne logger ind på AWS uden gemte nøgler.",
+    "whoHeading": "Hvem står bag",
+    "who": "Glazecalc er lavet af Aaron Filson. Har du fundet et problem eller fået en idé? <issues>Opret et issue på GitHub</issues>.",
+    "studio": "Aaron Filsons håndlavede keramik findes hos <studio>Updraft Pottery Studio</studio> i Tacoma, Washington. Tag et kig på arbejderne, og bestil et stykke, hvis et af dem siger dig noget."
+  },
+  "privacy": {
+    "title": "Privatlivspolitik",
+    "lead": "Senest opdateret oktober 2026.",
+    "shortHeading": "Kort fortalt",
+    "short": "Glazecalc gemmer det, der skal til for at drive kontoen, og intet andet. Der er ingen reklamer, ingen webanalyse, ingen sporingscookies og ingen scripts fra tredjeparter. Dine data bliver aldrig solgt eller delt.",
+    "storedHeading": "Hvad der gemmes",
+    "storedAccount": "<b>Kontoen:</b> e-mailadressen og adgangskoden, som kun gemmes som en envejs-hash (bcrypt), aldrig som selve adgangskoden.",
+    "storedTrial": "<b>En prøveperiode (»Prøv nu«):</b> ingen e-mail eller adgangskode, kun et genereret navn som »speckled quiet kilns«. En prøveperiode og alt, der er gemt i den, slettes automatisk 14 dage efter start, medmindre der oprettes en konto for at beholde dem.",
+    "storedSaved": "<b>Det, du gemmer:</b> opskrifter, råvarer, tilsætninger, noter, brændingsjournaler og råd. Andre brugere kan ikke se dem.",
+    "storedResets": "<b>Anmodninger om nulstilling af adgangskoden:</b> et fingeraftryk af hvert nulstillingslink (ikke selve linket), som slettes automatisk, når det udløber 30 minutter senere.",
+    "storedBrowser": "<b>I browseren:</b> én cookie, <code>glazecalc_session</code>, der holder dig logget ind. Den indeholder dit login-token, scripts på siden kan ikke læse den, den sendes kun til Glazecalcs egen server, og den varer 7 dage (14 for en prøveperiode). I browserens lokale lagring (local storage) gemmes en note om, at du er logget ind, og under en prøveperiode dens navn og slutdato. Når du logger ud, fjernes de.",
+    "emailHeading": "E-mail",
+    "email": "Glazecalc sender kun e-mail, når du beder om at nulstille adgangskoden, og når adgangskoden ændres. Den sendes via Amazon Simple Email Service. Der er intet nyhedsbrev og ingen markedsføringsmails.",
+    "hostingHeading": "Logfiler, sikkerhedskopier og hosting",
+    "logs": "Webserveren registrerer hver forespørgsel, herunder din IP-adresse, i en log, der gemmes i 14 dage for at drive og sikre webstedet.",
+    "backups": "Krypterede sikkerhedskopier af databasen gemmes i 30 dage og kopier af serverens disk i 7 dage, så webstedet kan genoprettes efter et nedbrud.",
+    "hosting": "Alt hostes af Amazon Web Services i USA (Oregon).",
+    "deletingHeading": "Sletning af dine data",
+    "deleting": "Kontoen kan slettes fra <account>kontosiden</account>. Det fjerner med det samme kontoen og alt, hvad der er gemt; »Kassér prøveperioden« gør det samme for en prøveperiode. Kopier i sikkerhedskopierne forsvinder, efterhånden som sikkerhedskopierne udløber, inden for 30 dage.",
+    "questionsHeading": "Spørgsmål",
+    "questions": "Spørg ved at <issues>oprette et issue på GitHub</issues>. Hvis denne politik ændres, ændres datoen øverst på siden også."
+  },
+  "notFound": {
+    "heading": "Siden blev ikke fundet",
+    "text": "Der er ingen side på denne adresse. Den kan være flyttet, eller linket kan være skrevet forkert.",
+    "start": "Gå til forsiden"
+  },
+  "advice": {
+    "title": "Glasurråd",
+    "lead": "Praktiske tips om blanding, glasering og brænding plus egne råd.",
+    "signUp": "<signup>Opret en gratis konto</signup>, eller <signin>log ind</signin> for at gemme egne råd.",
+    "generalHeading": "Generelle råd",
+    "tags": "Mærker: {list}",
+    "addHeading": "Tilføj egne råd",
+    "titleLabel": "Titel:",
+    "tagsLabel": "Mærker:",
+    "contentLabel": "Rådets indhold:",
+    "save": "Gem",
+    "mineHeading": "Mine råd",
+    "nothingSaved": "Intet gemt endnu.",
+    "titleMissing": "Giv rådet en titel.",
+    "contentMissing": "Skriv rådet.",
+    "fetchFailed": "Der opstod en fejl under hentning af rådene.",
+    "standardFetchFailed": "Der opstod en fejl under hentning af rådene fra serveren.",
+    "saved": "Rådet er tilføjet.",
+    "saveFailed": "Der opstod en fejl under indsendelse af rådet."
+  }
+}

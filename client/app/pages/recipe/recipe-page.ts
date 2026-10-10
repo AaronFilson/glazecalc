@@ -1,8 +1,9 @@
-import { Location } from '@angular/common';
+import { Location, NgTemplateOutlet } from '@angular/common';
 import {
   Component,
   Injector,
   OnInit,
+  WritableSignal,
   afterNextRender,
   computed,
   effect,
@@ -18,7 +19,9 @@ import { marker } from '@jsverse/transloco-keys-manager/marker';
 import { map } from 'rxjs';
 import { CONES, MaterialInput } from '../../../../lib/chemistry';
 import { ApiResourceFactory } from '../../core/api-resource.service';
+import { AuthService } from '../../core/auth.service';
 import { errorMessage } from '../../core/error-message';
+import { AsksBeforeLeaving } from '../../core/leave.guard';
 import { Additive, AdditiveUnit, Material, Recipe, RecipeMaterial } from '../../core/models';
 import { PreferencesService } from '../../core/preferences.service';
 import { LocaleService } from '../../core/locale.service';
@@ -31,7 +34,7 @@ import { NumberInput } from '../../shared/number-input';
 import { Check, FieldCheck, FieldChecks, required } from '../../shared/field-checks';
 import { localDate } from '../../shared/dates';
 import { Notices, NoticesList } from '../../shared/notices';
-import { chosenRegion, hasLead } from '../../shared/library-info';
+import { chosenRegion, findNamed, hasLead } from '../../shared/library-info';
 import { firstOf } from '../../shared/options';
 import { PageHeader } from '../../shared/page-header';
 import { Removal, RemoveButton } from '../../shared/remove-button';
@@ -110,9 +113,13 @@ interface SwapUndo {
 /** What a swap makes of the recipe, for its new title: "Celadon with modern materials". */
 type SwapKind = 'modern' | 'lead' | 'shelf';
 
-/** Waiting on a decision about unsaved changes, before starting a new recipe or opening another. */
+/** Waiting on a decision about unsaved changes, before starting a new recipe, opening another or leaving the page. */
 interface PendingLeave {
   next: () => void;
+  /** What Keep editing does besides: the page stays, when it was to be left. */
+  stay?: () => void;
+  /** Leaving the page for another: asked at the top of the page, which shows whatever view is open. */
+  page?: boolean;
   /** The saved recipe it would open. */
   recipeId?: string;
   /** What had the focus, to go back to on Keep editing. */
@@ -127,6 +134,7 @@ interface PendingLeave {
     FixedPipe,
     PlainPipe,
     FormsModule,
+    NgTemplateOutlet,
     NoticesList,
     NumberInput,
     PageHeader,
@@ -141,10 +149,12 @@ interface PendingLeave {
     TryMaterials,
     UnityFormula
   ],
-  templateUrl: './recipe-page.html'
+  templateUrl: './recipe-page.html',
+  host: { '(window:beforeunload)': 'beforeUnload($event)' }
 })
-export class RecipePage implements OnInit {
+export class RecipePage implements OnInit, AsksBeforeLeaving {
   private readonly resources = inject(ApiResourceFactory);
+  private readonly auth = inject(AuthService);
   private readonly injector = inject(Injector);
   private readonly route = inject(ActivatedRoute);
   private readonly router = inject(Router);
@@ -178,6 +188,9 @@ export class RecipePage implements OnInit {
   protected readonly standardMaterials = signal<Material[]>([]);
   protected readonly myAdditives = signal<Additive[]>([]);
   protected readonly standardAdditives = signal<Additive[]>([]);
+  /** The standard lists could not be fetched: the lists say so, and offer to try again. */
+  protected readonly standardMaterialsFailed = signal(false);
+  protected readonly standardAdditivesFailed = signal(false);
   protected readonly myRecipes = signal<Recipe[]>([]);
   protected readonly expanded = signal<ReadonlySet<string>>(new Set());
   protected readonly removal = new Removal(this.recipes, this.myRecipes, this.notices, (recipe) => recipe.title);
@@ -203,6 +216,8 @@ export class RecipePage implements OnInit {
   protected readonly hasContent = computed(
     () => !!(this.title() || this.notes() || this.lines().length || this.additiveLines().length)
   );
+  /** Changes that leaving would lose: a recipe with something in it, changed since it was opened or saved. */
+  private readonly unsaved = computed(() => this.dirty() && this.hasContent());
   protected readonly pendingLeave = signal<PendingLeave | null>(null);
   /** The title and each amount: material-amount-0, additive-amount-0 and so on, by their inputs' ids. */
   protected readonly checks = new FieldChecks(() => ({
@@ -358,7 +373,10 @@ export class RecipePage implements OnInit {
 
   /** Materials that are no longer current, with what the library says replaces them. */
   protected readonly modern = computed(() =>
-    modernMaterials(this.lines(), (name) => this.findMaterial(name), chosenRegion(), { allowLead: !this.leadOff() })
+    modernMaterials(this.lines(), (name) => this.findMaterial(name), chosenRegion(), {
+      allowLead: !this.leadOff(),
+      findAdditive: (name) => findNamed(this.standardAdditives(), name)
+    })
   );
   /** Whether a swap needs its amounts worked out again, so Suggest amounts is offered. */
   protected readonly notLikeForLike = computed(() => this.modern().swaps.some((swap) => !swap.like));
@@ -376,6 +394,15 @@ export class RecipePage implements OnInit {
   protected readonly shelfTries = signal<TryMaterial[]>([]);
   protected readonly shelfLoaded = computed(() => this.shelf.keys() !== null);
   protected readonly shelfProblem = this.shelf.problem;
+  /** How many on hand have lead, left out while lead is off. */
+  protected readonly shelfLeadHidden = computed(() =>
+    this.leadOff()
+      ? (this.shelf.keys() ?? []).filter((key) => {
+          const material = this.libraryMaterial(key);
+          return !!material && hasLead(material);
+        }).length
+      : 0
+  );
   protected readonly shelfStatus = signal('');
   protected readonly noKeys: ReadonlySet<string> = new Set();
 
@@ -434,9 +461,9 @@ export class RecipePage implements OnInit {
 
   ngOnInit(): void {
     void this.load(this.materials.getAll(), this.myMaterials, marker('recipe.page.fetchMaterials'));
-    void this.load(this.materials.getStandard(), this.standardMaterials, marker('recipe.page.fetchStandardMaterials'));
+    this.loadStandardMaterials();
     void this.load(this.additives.getAll(), this.myAdditives, marker('recipe.page.fetchAdditives'));
-    void this.load(this.additives.getStandard(), this.standardAdditives, marker('recipe.page.fetchStandardAdditives'));
+    this.loadStandardAdditives();
     void this.load(this.recipes.getAll(), this.myRecipes, marker('recipe.page.fetchRecipes')).then(() =>
       this.recipesLoaded.set(true)
     );
@@ -1052,13 +1079,16 @@ export class RecipePage implements OnInit {
     this.shelfStatus.set('');
     this.shelfOpen.set(true);
     afterNextRender(() => document.getElementById('shelf-heading')?.focus(), { injector: this.injector });
+    await this.loadShelf();
+  }
+
+  /** Fetches the materials on hand (again, after a fetch that failed), and lists those this page can use. */
+  protected async loadShelf(): Promise<void> {
     await this.shelf.load();
-    const all = [...this.standardMaterials(), ...this.myMaterials()];
-    const byKey = new Map(all.map((material) => [libraryKey(material), material]));
     const kept = this.shelfTries();
     this.shelfTries.set(
       (this.shelf.keys() ?? [])
-        .map((key) => byKey.get(key))
+        .map((key) => this.shelfMaterial(key))
         .filter((material): material is LibraryMaterial => !!material)
         .map((material) => ({
           material,
@@ -1067,16 +1097,33 @@ export class RecipePage implements OnInit {
     );
   }
 
+  /** A material in the standard library or the user's own, by its key (recipe-library.ts libraryKey). */
+  private libraryMaterial(key: string): LibraryMaterial | undefined {
+    return [...this.standardMaterials(), ...this.myMaterials()].find((material) => libraryKey(material) === key);
+  }
+
+  /** A material on hand that a match may use: one that is loaded, and without lead while lead is off. */
+  private shelfMaterial(key: string): LibraryMaterial | undefined {
+    const material = this.libraryMaterial(key);
+    return material && !(this.leadOff() && hasLead(material)) ? material : undefined;
+  }
+
   protected closeShelf(): void {
     this.shelfOpen.set(false);
     afterNextRender(() => document.getElementById('match-shelf')?.focus(), { injector: this.injector });
   }
 
-  /** A change to the materials on hand, saved with the account at once. */
+  /**
+   * A change to the materials on hand, saved with the account at once. Those
+   * not listed here (not loaded, or with lead while lead is off) stay on it.
+   */
   protected async changeShelf(tries: TryMaterial[]): Promise<void> {
+    const saved = this.shelf.keys();
+    if (saved === null) return;
     this.shelfTries.set(tries);
-    const keys = [...new Set(tries.map((tried) => libraryKey(tried.material)))];
-    if (keys.join('\n') === (this.shelf.keys() ?? []).join('\n')) return;
+    const listed = tries.map((tried) => libraryKey(tried.material));
+    const keys = [...new Set([...saved.filter((key) => listed.includes(key) || !this.shelfMaterial(key)), ...listed])];
+    if (keys.join('\n') === saved.join('\n')) return;
     this.shelfStatus.set('');
     if (await this.shelf.save(keys)) this.shelfStatus.set(translate('recipe.page.shelfSaved'));
   }
@@ -1219,13 +1266,9 @@ export class RecipePage implements OnInit {
     this.checks.clear();
   }
 
-  /** A material by its name or another name: a standard one, or one of the user's. */
+  /** A material by its name, or else another name: the user's own before a standard one. */
   private findMaterial(name: string): LibraryMaterial | undefined {
-    const wanted = name.trim().toLowerCase();
-    return [...this.standardMaterials(), ...this.myMaterials()].find(
-      (record) =>
-        record.name.toLowerCase() === wanted || (record.aliases ?? []).some((alias) => alias.toLowerCase() === wanted)
-    );
+    return findNamed([...this.myMaterials(), ...this.standardMaterials()], name);
   }
 
   // Starting over, and opening saved recipes.
@@ -1239,42 +1282,49 @@ export class RecipePage implements OnInit {
 
   /** Loads a saved recipe here to change it. */
   protected open(recipe: Recipe): void {
-    this.leave(() => {
-      this.showing++;
-      const notes = firstOf(recipe.notes);
-      this.title.set(recipe.title);
-      this.date.set(recipe.date ?? '');
-      this.notes.set(notes === 'None.' ? '' : notes);
-      this.lines.set(copy(recipe.materials ?? []));
-      this.additiveLines.set(copy(recipe.additives ?? []));
-      this.includeAdditives.set(!!recipe.includeAdditives);
-      this.savedId.set(recipe._id ?? null);
-      this.savedSnapshot.set(this.snapshot());
-      this.savedAt.set(null);
-      this.scaleMessage.set(null);
-      this.inPounds.set(false);
-      this.saveProblem.set('');
-      this.checks.clear();
-      this.swapUndo.set(null);
-      this.suggestQuestion.set(null);
-      this.leadQuestion.set(null);
-      this.shelfOpen.set(false);
-      this.suggestProblem.set('');
-      this.focusTitle();
-    }, recipe._id);
+    this.leave(
+      () => {
+        this.showing++;
+        const notes = firstOf(recipe.notes);
+        this.title.set(recipe.title);
+        this.date.set(recipe.date ?? '');
+        this.notes.set(notes === 'None.' ? '' : notes);
+        this.lines.set(copy(recipe.materials ?? []));
+        this.additiveLines.set(copy(recipe.additives ?? []));
+        this.includeAdditives.set(!!recipe.includeAdditives);
+        this.savedId.set(recipe._id ?? null);
+        this.savedSnapshot.set(this.snapshot());
+        this.savedAt.set(null);
+        this.scaleMessage.set(null);
+        this.inPounds.set(false);
+        this.saveProblem.set('');
+        this.checks.clear();
+        this.swapUndo.set(null);
+        this.beforeSwap.set(null);
+        this.suggestQuestion.set(null);
+        this.leadQuestion.set(null);
+        this.shelfOpen.set(false);
+        this.suggestProblem.set('');
+        this.focusTitle();
+      },
+      { recipeId: recipe._id }
+    );
   }
 
   /**
    * Does `next` now, or asks first when there are unsaved changes: the
-   * question shows at the top of the editor, starting on Keep editing.
+   * question shows at the top of the editor (of the page, for leaving it),
+   * starting on Keep editing.
    */
-  private leave(next: () => void, recipeId?: string): void {
-    if (!(this.dirty() && this.hasContent())) {
+  private leave(next: () => void, more: Pick<PendingLeave, 'recipeId' | 'stay' | 'page'> = {}): void {
+    if (!this.unsaved()) {
       next();
       return;
     }
+    // A question already asked gives way: if it was about leaving the page, the page stays.
+    this.pendingLeave()?.stay?.();
     const from = document.activeElement instanceof HTMLElement ? document.activeElement : null;
-    this.pendingLeave.set({ next, recipeId, from });
+    this.pendingLeave.set({ next, ...more, from });
     afterNextRender(() => document.getElementById('unsaved-keep')?.focus(), { injector: this.injector });
   }
 
@@ -1285,11 +1335,35 @@ export class RecipePage implements OnInit {
   }
 
   protected keepEditing(): void {
-    const from = this.pendingLeave()?.from;
+    const pending = this.pendingLeave();
     this.pendingLeave.set(null);
+    pending?.stay?.();
+    const from = pending?.from;
     afterNextRender(() => (from?.isConnected ? from : document.getElementById('recipe-name'))?.focus(), {
       injector: this.injector
     });
+  }
+
+  /**
+   * Whether a link in the app may take the page away (core/leave.guard.ts):
+   * at once when nothing would be lost, or once the potter answers. When the
+   * session has ended nothing can be saved here, so the page goes, and the
+   * page it goes to says what was lost.
+   */
+  canLeave(): boolean | Promise<boolean> {
+    if (!this.unsaved()) return true;
+    if (!this.auth.hasSession()) {
+      if (this.router.currentNavigation()?.extras.state?.['sessionEnded']) {
+        this.auth.lostRecipe.set(this.title().trim() || translate('recipe.page.untitled'));
+      }
+      return true;
+    }
+    return new Promise((resolve) => this.leave(() => resolve(true), { stay: () => resolve(false), page: true }));
+  }
+
+  /** A reload, a closed tab or a link out of the app (such as another language): the browser asks, in its own words. */
+  protected beforeUnload(event: BeforeUnloadEvent): void {
+    if (this.unsaved()) event.preventDefault();
   }
 
   private reset(): void {
@@ -1308,6 +1382,7 @@ export class RecipePage implements OnInit {
     this.saveProblem.set('');
     this.checks.clear();
     this.swapUndo.set(null);
+    this.beforeSwap.set(null);
     this.suggestQuestion.set(null);
     this.leadQuestion.set(null);
     this.shelfOpen.set(false);
@@ -1366,14 +1441,47 @@ export class RecipePage implements OnInit {
       this.savedId.set(null);
       this.savedSnapshot.set('');
     }
+    // Undo the swap puts it back the same way.
+    const undo = this.swapUndo();
+    if (undo && undo.savedId === recipe._id) {
+      this.swapUndo.set({ ...undo, savedId: null, savedSnapshot: '', savedAt: null });
+    }
   }
 
-  /** Fills the list, or says it could not: failure is the key of the message. */
-  private async load<T>(request: Promise<T[]>, target: { set(value: T[]): void }, failure: string): Promise<void> {
+  protected loadStandardMaterials(): void {
+    void this.load(
+      this.materials.getStandard(),
+      this.standardMaterials,
+      marker('recipe.page.fetchStandardMaterials'),
+      this.standardMaterialsFailed
+    );
+  }
+
+  protected loadStandardAdditives(): void {
+    void this.load(
+      this.additives.getStandard(),
+      this.standardAdditives,
+      marker('recipe.page.fetchStandardAdditives'),
+      this.standardAdditivesFailed
+    );
+  }
+
+  /**
+   * Fills the list, or says it could not: failure is the key of the message.
+   * A list that can be asked for again keeps whether it failed, and says so once.
+   */
+  private async load<T>(
+    request: Promise<T[]>,
+    target: { set(value: T[]): void },
+    failure: string,
+    failed?: WritableSignal<boolean>
+  ): Promise<void> {
     try {
       target.set(await request);
+      failed?.set(false);
     } catch {
-      this.notices.error(translate(failure));
+      if (!failed?.()) this.notices.error(translate(failure));
+      failed?.set(true);
     }
   }
 

@@ -23,6 +23,9 @@ import { Notices, NoticesList } from '../../shared/notices';
       <section class="auth-text">
         <h1>{{ heading() }}</h1>
         <p class="muted">{{ lead() }}</p>
+        @if (!signup() && auth.lostRecipe(); as title) {
+          <p class="errors-section" role="alert">{{ t('signedOut.recipeLost', { title }) }}</p>
+        }
         @if (!signup() && auth.trial(); as trial) {
           <p class="trial-note">
             <gc-rich [text]="t('account.auth.trialNote', { name: trial.name })" [links]="{ signup: '/signup' }" />

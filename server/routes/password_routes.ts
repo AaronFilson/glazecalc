@@ -9,7 +9,6 @@
 // { msg, field: 'password' }.
 import crypto from 'node:crypto';
 import express from 'express';
-import type { Types } from 'mongoose';
 import * as accountMail from '../lib/account_mail.ts';
 import * as email from '../lib/email.ts';
 import { notGuest } from '../lib/guest_limits.ts';
@@ -19,13 +18,15 @@ import * as mailer from '../lib/mailer.ts';
 import * as password from '../lib/password.ts';
 import * as limits from '../lib/rate_limit.ts';
 import * as session from '../lib/session.ts';
-import PasswordReset from '../models/password_reset.ts';
+import PasswordReset, { cancelLinks } from '../models/password_reset.ts';
 import User, { type UserDocument } from '../models/user.ts';
 import { say } from '../lib/messages.ts';
 
 const RESET_MINUTES = 30;
-// Requests per account per hour, on top of the per-address rate limit.
+// Requests per account per hour, on top of the per-address rate limit. Each
+// request is kept for the hour, after its link has expired, so all count.
 const RESETS_PER_HOUR = 3;
+const HOUR = 60 * 60 * 1000;
 
 const hashToken = (token: string): string => crypto.createHash('sha256').update(token).digest('hex');
 // Mail goes out after the reply, so it never delays or fails a request.
@@ -51,18 +52,17 @@ async function sendResetLink(address: string): Promise<void> {
   const user = await User.findOne({ email: address }).collation(email.collation);
   // Trials have only a placeholder address (which isValid refuses anyway).
   if (!user || user.guest) return;
-  const hourAgo = new Date(Date.now() - 60 * 60 * 1000);
+  const hourAgo = new Date(Date.now() - HOUR);
   if ((await PasswordReset.countDocuments({ userId: user._id, createdAt: { $gt: hourAgo } })) >= RESETS_PER_HOUR) {
     return;
   }
   const token = crypto.randomBytes(32).toString('base64url');
-  // Only the newest link works. Older ones are marked used rather than deleted,
-  // so they still count towards the hourly limit until they expire.
+  // Only the newest link works.
   await cancelLinks(user._id);
   await PasswordReset.create({
     userId: user._id,
     tokenHash: hashToken(token),
-    expiresAt: new Date(Date.now() + RESET_MINUTES * 60 * 1000)
+    expiresAt: new Date(Date.now() + HOUR)
   });
   await accountMail.sendReset(user.email, token, RESET_MINUTES, user.preferences?.language);
 }
@@ -76,7 +76,11 @@ passwordRouter.post('/reset', limits.resetPassword, express.json(), async (req, 
   // Marking the request used in the same step makes each link work only once.
   const now = new Date();
   const reset = await PasswordReset.findOneAndUpdate(
-    { tokenHash: hashToken(body.token), usedAt: null, expiresAt: { $gt: now } },
+    {
+      tokenHash: hashToken(body.token),
+      usedAt: null,
+      createdAt: { $gt: new Date(now.getTime() - RESET_MINUTES * 60 * 1000) }
+    },
     { $set: { usedAt: now } }
   );
   const user = reset && (await User.findById(reset.userId));
@@ -118,8 +122,4 @@ async function setPassword(user: UserDocument, newPassword: string): Promise<voi
   await user.save();
   await cancelLinks(user._id);
   accountMail.sendChanged(user.email, user.preferences?.language).catch(logMailError('password changed'));
-}
-
-function cancelLinks(userId: Types.ObjectId) {
-  return PasswordReset.updateMany({ userId, usedAt: null }, { $set: { usedAt: new Date() } });
 }

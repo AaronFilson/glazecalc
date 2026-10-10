@@ -79,7 +79,11 @@ export function calculateUMF(
   options?: { materials?: MaterialInput[] }
 ): UmfResult;
 
-export function formulaToAnalysis(formula: Record<string, number>): {
+/** A molar formula's weight-percent analysis and LOI; the material's name is for its messages. */
+export function formulaToAnalysis(
+  formula: Record<string, number>,
+  materialName?: string
+): {
   analysis: Record<string, number>;
   loi: number;
   formulaWeight: number;
@@ -160,8 +164,8 @@ export const EXPANSION: Record<string, number>;
 export function expansion(analysis: Record<string, number> | null | undefined): number | null;
 
 /**
- * Bounded least squares (lsq.js): the x within lo..hi that makes |A x - b|^2 + lambda |x - pullTo|^2
- * smallest, with A given by its columns.
+ * Bounded least squares (lsq.js): the x within lo..hi that makes
+ * |A x - b|^2 + lambda |x - pullTo|^2 + 2 cost . x smallest, with A given by its columns.
  */
 export function boundedLeastSquares(problem: {
   columns: number[][];
@@ -170,6 +174,7 @@ export function boundedLeastSquares(problem: {
   hi: number[];
   lambda?: number;
   pullTo?: number[];
+  cost?: number[];
 }): number[];
 
 /** A line offered to selectMaterials: the recipe's own (start > 0) or a material to try. */
@@ -185,7 +190,9 @@ export interface Selection {
   best: number;
   chosen: number[];
   unreachable: string[];
+  /** missWithout: miss, worse by what the best match within the chosen lines loses without it. */
   contributions: Array<{ index: number; supplies: Array<{ oxide: string; share: number }>; missWithout: number }>;
+  /** helps: how much closer the match comes when it is added as a must and chosen again, or 0. */
   unused: Array<{ index: number; helps: number }>;
   alike: Array<{ used: number; other: number }>;
   /**

@@ -78,7 +78,7 @@
   <br />
 
   <section class="tech-info" aria-labelledby="record-heading">
-    <h3 id="record-heading">{{ t('notebook.firing.recordHeading') }}</h3>
+    <h2 class="h3" id="record-heading">{{ t('notebook.firing.recordHeading') }}</h2>
     <table class="table table-bordered firing-table">
       <tr>
         @for (heading of log().fields; track $index) {
@@ -120,7 +120,7 @@
 
   @if (myFirings().length) {
     <section class="tech-info" aria-labelledby="stored-heading">
-      <h3 id="stored-heading">{{ t('notebook.firing.storedHeading') }}</h3>
+      <h2 class="h3" id="stored-heading">{{ t('notebook.firing.storedHeading') }}</h2>
       <ul>
         @for (fr of myFirings(); track fr._id) {
           <li class="stored-firing">
@@ -139,7 +139,7 @@
                 </tr>
               }
             </table>
-            {{ t('notebook.firing.storedNotes', { notes: firstOf(fr.notes) }) }}
+            <div class="keep-lines">{{ t('notebook.firing.storedNotes', { notes: firstOf(fr.notes) }) }}</div>
             <div class="stored-firing-remove">
               <gc-remove-button
                 [name]="removal.nameOf(fr)"

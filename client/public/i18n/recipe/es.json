@@ -31,6 +31,7 @@
     "scale": "Ajustar",
     "swapLike": "<b>{from}</b> ({status}): {to} puede ocupar su lugar, gramo a gramo.",
     "swapNotLike": "<b>{from}</b> ({status}): hoy se usa {to}, pero no en la misma cantidad: vuelva a calcular cuánto poner.",
+    "swapColorant": "<b>{from}</b> ({status}): hoy se usa {to}, en «Colorantes y aditivos». Añada {to} allí en su lugar y vuelva a calcular cuánto poner.",
     "stillLead": "{name} todavía contiene plomo.",
     "tryModern": "Probar materiales actuales y comparar",
     "suggestAmounts": "Sugerir cantidades y comparar",
@@ -62,6 +63,8 @@
     "addRecipeToShelf": "Añadir los materiales de esta receta",
     "shelfTriesIntro": "Sus materiales disponibles. Marque Usar siempre para que uno se incluya siempre en el cálculo.",
     "gettingShelf": "Cargando sus materiales disponibles...",
+    "shelfTryAgain": "Reintentar",
+    "shelfLeadHidden": "{count, plural, one {# con plomo no se usa: el plomo está desactivado en <settings>Ajustes</settings>.} many {# con plomo no se usan: el plomo está desactivado en <settings>Ajustes</settings>.} other {# con plomo no se usan: el plomo está desactivado en <settings>Ajustes</settings>.}}",
     "matchAndCompare": "Rehacer y comparar",
     "swapped": "Cambiado por materiales actuales, como receta nueva aún sin guardar.",
     "undoSwap": "Deshacer el cambio",
@@ -169,7 +172,7 @@
   "analysis": {
     "oldCopy": "{name} se guardó con una versión anterior de Glazecalc, sin su PF, así que se deja fuera. Vuelva a añadirlo a la receta para contarlo.",
     "noAnalysis": "{name} no tiene un análisis de óxidos que pueda usar la fórmula Seger, así que se deja fuera.",
-    "parts": "{amount} {amount, plural, =1 {parte} one {parte} many {partes} other {partes}}"
+    "parts": "{amount} {count, plural, =1 {parte} one {parte} many {partes} other {partes}}"
   },
   "library": {
     "which": "{noun, select, additives {Qué aditivos} other {Qué materiales}}",
@@ -359,7 +362,7 @@
     "boronMidFireTends": "Los esmaltes así tienden a escurrir, a quedar lechosos o con vetas, y pueden cuartearse o resistir peor el desgaste.",
     "boronMidFireFix": "Use solo el boro necesario para que funda; el caolín y la sílice lo estabilizan.",
     "boronShort": "Tiene menos boro ({boron}) del que suelen necesitar los esmaltes en esta cocción (alrededor de {needed}).",
-    "boronShortEffects": "Puede no fundir del todo y quedar poco fluido, seco o con pinchados. Pruébelo; si queda poco cocido, ayuda cocer más alto o añadir un poco más de frita base.",
+    "boronShortEffects": "Puede no fundir del todo y quedar poco fluido, seco o con pinchados. Pruébelo; si queda poco cocido, ayuda cocer más caliente o añadir un poco más de frita base.",
     "aluminaLow": "Hay muy poca alúmina ({alumina}).",
     "aluminaLowProbably": "Probablemente será un esmalte brillante que escurre, que puede formar cristales o enturbiarse al enfriarse, y que es más blando y menos duradero.",
     "aluminaLowTends": "Tiende a dar un esmalte brillante que escurre, que puede formar cristales o enturbiarse al enfriarse, y que es más blando y menos duradero.",
@@ -387,7 +390,7 @@
     "whitingProbably": "Al {percent} %, probablemente dará pinchados o ampollas y saldrá seco, mate o terroso.",
     "whitingTends": "Al {percent} %, tiende a dar pinchados o ampollas y a salir seco, mate o terroso.",
     "whitingFix": "El calcio de una frita o de la wollastonita evita ambos problemas. (El 5 % es una pauta de esta aplicación; no hay ningún límite publicado.)",
-    "fluorine": "La fluorita y la criolita desprenden flúor durante la cocción. Ventile bien el horno, o tome el calcio o el sodio de una frita o de la wollastonita.",
+    "fluorine": "{name} desprende flúor durante la cocción. Ventile bien el horno, o use en su lugar un material sin flúor.",
     "clayLowWas": "Solo tiene un {clay} % de arcilla cruda; la receta antigua tenía un {was} %.",
     "clayLow": "Solo tiene un {clay} % de arcilla cruda.",
     "clayNoneWas": "No tiene arcilla cruda; la receta antigua tenía un {was} %.",

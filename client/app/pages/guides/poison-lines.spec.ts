@@ -28,7 +28,7 @@ describe('PoisonLines', () => {
     const { element, calls } = await create('US');
     expect(element.querySelector('caption')?.textContent).toContain('Who to call in United States (numbers checked');
     expect(calls()).toEqual(['tel:911', 'tel:+18002221222', 'tel:+18884264435', 'tel:+18557647661']);
-    expect(element.querySelector('.poison-sources')?.textContent).toContain('poisoncenters.org');
+    expect(element.querySelector('.region-sources')?.textContent).toContain('poisoncenters.org');
   });
 
   it("shows another country's on request: regional centres, and where there is no public line", async () => {
@@ -40,8 +40,15 @@ describe('PoisonLines', () => {
     await choose('NL');
     expect(element.textContent).toContain('We could not confirm a public poison line here.');
     expect(element.textContent).toContain('NVIC takes calls from professionals only');
-    // Malta's line is seen only in a search extract so far: not shown.
+    // Malta's line, read on the centre's own pages, with its hours.
     await choose('MT');
+    expect(calls()).toEqual(['tel:112', 'tel:1774']);
+    expect(element.textContent).toContain('08:00 to 20:00, every day');
+    // Bulgaria's could not be confirmed: the emergency number, and the health ministry's page.
+    await choose('BG');
     expect(calls()).toEqual(['tel:112']);
+    const ministry = element.querySelector('a[href="https://www.mh.government.bg/"]');
+    expect(ministry?.textContent).toBe('Министерство на здравеопазването');
+    expect(ministry?.closest('td')?.textContent).toContain("The health ministry's page:");
   });
 });

@@ -17,7 +17,7 @@ frit with a fixed handful of others. Three things were missing:
   "paint the picture" for someone going past them, rather than refuse.
 
 The research behind this is in the reports "Extra materials in glaze substitution" and "Base frits
-for lead free glazes" (reports/, with notes in research_notes/).
+for lead free glazes", with their notes, kept outside the repository.
 
 ## Decision
 

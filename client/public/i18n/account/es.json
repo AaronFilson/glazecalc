@@ -136,7 +136,8 @@
       "legend": "Densidad del esmalte",
       "sg": {
         "label": "Densidad relativa",
-        "saved": "Guardado: densidad del esmalte como densidad relativa."
+        "saved": "Guardado: densidad del esmalte como densidad relativa.",
+        "example": "densidad 1,45"
       },
       "baume": {
         "label": "Grados Baumé, con un densímetro",

@@ -1,0 +1,50 @@
+{
+  "common": {
+    "formulaHelp": "Skriv en formel med almindelige tal, fx {typed}: antallet vises med sænket skrift, {shown}. Kopiér dette punkt for at forbinde delene af en formel, som i {joined}:",
+    "relatedTo": "Relateret til:",
+    "notes": "Noter:",
+    "loi": "Glødetab (i procent):",
+    "molecularWeight": "Råformlens molvægt (bruges kun, hvis glødetabet ikke er udfyldt):",
+    "formulaHeading": "Angiv formlen (brændt):",
+    "oxideSelection": "Valg af oxid",
+    "noOxide": "ingen",
+    "addOxide": "Tilføj oxidet til listen",
+    "formulaIn": "Formlen er angivet i:",
+    "percent": "Procent",
+    "molecular": "Molær / Seger-formel",
+    "amount": "Mængde:",
+    "removeOxide": "Fjern fra formellisten",
+    "save": "Gem",
+    "elements": "Grundstoffer",
+    "removeNote": "Gemte opskrifter har deres egen kopi, så de ændres ikke.",
+    "saveFailed": "Fejl: Anmodningen til serveren mislykkedes."
+  },
+  "material": {
+    "title": "Råvarer",
+    "lead": "Egne råvarer, angivet som kemisk formel eller som oxidanalyse.",
+    "newHeading": "Oplysninger om den nye råvare",
+    "name": "Råvarens navn:",
+    "rawFormula": "Råformel:",
+    "weightsNote": "Ækvivalentvægt og brændt vægt beregnes ud fra formlen og glødetabet, når råvaren gemmes.",
+    "mineHeading": "Mine råvarer:",
+    "rawFormulaColumn": "Råformel",
+    "standardHeading": "Standardråvarerne:",
+    "fetchFailed": "Der opstod en fejl under hentning af oplysningerne om råvarerne.",
+    "standardFetchFailed": "Der opstod en fejl under hentning af oplysningerne om standardråvarerne.",
+    "saved": "Udført. Råvaren er tilføjet til databasen."
+  },
+  "additive": {
+    "title": "Tilsætninger og farvestoffer",
+    "lead": "Farvestoffer og opakgørende midler, der regnes ud over grundglasuren, fx kobolt- eller tinoxid. En opskrift kan udelade dem af Seger-formlen (UMF) eller medregne dem i den.",
+    "newHeading": "Oplysninger om den nye tilsætning",
+    "name": "Tilsætningens navn:",
+    "formulaAsSold": "Formel, som leveret:",
+    "noChemistry": "Den har ingen oxidanalyse, fx en købt universalfarve: udelad den af Seger-formlen",
+    "firedNote": "Angiv, hvad den giver glasuren efter brændingen: sort koboltoxid, {asSold}, er {fired} med {loi} % glødetab. En opskrift kan så medregne den i Seger-formlen.",
+    "mineHeading": "Mine tilsætninger og farvestoffer:",
+    "standardHeading": "Standardtilsætningerne:",
+    "fetchFailed": "Der opstod en fejl under hentning af oplysningerne om tilsætningerne.",
+    "standardFetchFailed": "Der opstod en fejl under hentning af oplysningerne om standardtilsætningerne.",
+    "saved": "Udført. Tilsætningen er tilføjet til databasen."
+  }
+}

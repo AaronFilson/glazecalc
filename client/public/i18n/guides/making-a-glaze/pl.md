@@ -26,18 +26,9 @@ Przygotowanie szkliwa{{en: glaze}} polega na odważeniu według receptury sprosz
 
 ### Gdzie kupować
 
-Ceramicy kupują u dostawców artykułów ceramicznych, którzy sprzedają gliny, surowce do szkliw i narzędzia. W tabeli wymieniono niektórych z nich, potwierdzonych podczas zbierania materiałów do tego poradnika. Asortyment się zmienia, więc przed zamówieniem należy go sprawdzić. Dla innych miejsc katalog sklepów z artykułami ceramicznymi prowadzi Digitalfire, serwis z wiedzą o ceramice.
+Ceramicy kupują u dostawców artykułów ceramicznych, którzy sprzedają gliny, surowce do szkliw i narzędzia. Tabela pokazuje kilka sklepów we własnym kraju, a każdy z nich sprawdzono na jego własnej stronie internetowej; po wybraniu innego kraju można zobaczyć tamtejsze sklepy. Asortyment się zmienia, więc przed zamówieniem należy go sprawdzić. Duzi producenci, tacy jak Sibelco i Imerys, sprzedają odbiorcom przemysłowym; ceramicy kupują ich surowce w sklepach takich jak te. Dla innych miejsc katalog sklepów z artykułami ceramicznymi prowadzi Digitalfire, serwis z wiedzą o ceramice.
 
-Table: Wybrani dostawcy surowców do szkliw według regionu
-Label: Dostawcy według regionu
-
-| Region          | Dostawcy                                                                                                                         | Spotykane opakowania |
-| --------------- | -------------------------------------------------------------------------------------------------------------------------------- | -------------------- |
-| USA             | Laguna Clay; Clay Art Center; The Ceramic Shop; New Mexico Clay; Seattle Pottery Supply                                          | 50 lb (22,7 kg)      |
-| Wielka Brytania | Potterycrafts; Bath Potters; Potclays; Valentine Clays                                                                           | 1, 5 i 25 kg         |
-| UE              | Mondré & Manz (Niemcy); Goerg & Schneider (Niemcy, głównie gliny); Ceradel (Francja)                                             | Zapytać dostawcę     |
-| Australia       | Walker Ceramics (pod marką Ozclay, wraz z Feeneys i Cesco); Northcote Pottery Supplies, przez Bunnings; Oxerra: fryty i pigmenty | Od 10 do 25 kg       |
-| Nowa Zelandia   | CCG; Decopot                                                                                                                     | 2,5; 5 i 25 kg       |
+::shops
 
 ### Ile kupować
 
@@ -76,6 +67,10 @@ Nazwy handlowe pojawiają się i znikają wraz z zamykaniem kopalń. Skaleń Cus
 **Gerstley Borate**, naturalny minerał boru obecny w wielu starszych recepturach, jest trudno dostępny od zamknięcia jego kopalni w 2000 r., choć według informacji New Mexico Clay z listopada 2025 r. Laguna dostarczała „Gerstley Borate Original”. Źródła nie są zgodne co do **Gillespie Borate** jako zamiennika. Producent sprzedaje go jako zamiennik funt za funt. Berkeley Potters Studio twierdzi, że „nie jest bezpośrednim zamiennikiem”, a w Digitalfire stwierdzono, że zmienił on kolor szkliwa. Bezpieczne wyjście to porównać oba surowce pod względem tlenków, a potem je przetestować.
 
 Nazwy różnią się też w zależności od regionu. W Ameryce Północnej **flint** (krzemień), quartz (kwarc) i silica (krzemionka) oznaczają tę samą mieloną krzemionkę, a Digitalfire pisze, że prawdziwego mielonego krzemienia u dostawców raczej się nie znajdzie. W Wielkiej Brytanii flint to osobny produkt: flint firmy Valentine Clays to kalcynowana (wyprażona) krzemionka. Oba produkty to niemal czysta krzemionka, więc spodziewamy się, że są do siebie zbliżone, ale należy sprawdzić skład chemiczny. W przypadku kaolinu Glazy pisze, że zamiany jeden do jednego, np. EPK na china clay, „często sprawdzają się bez problemu, zwłaszcza przy ilościach \<10 %”.
+
+Wiele receptur wymienia surowce, które są sprzedawane w jednym kraju, a w innym nie. Poniższa tabela zestawia każdy surowiec z biblioteki aplikacji Glazecalc, którego nie sprzedaje się tam, gdzie robi się zakupy, z najbliższym surowcem tego samego rodzaju, który jest tam w sprzedaży, na podstawie ich składów chemicznych. Podana liczba mówi, jak bardzo te dwa surowce się od siebie różnią: to różnice w gramach między ich tlenkami po wypale, na 100 g surowca, zsumowane dla wszystkich tlenków. Przy różnicy do ok. 15 g jeden surowiec zwykle może zastąpić drugi w pierwszym teście. Nazwy zawierają własne kody producentów i sklepów, więc można o nie poprosić, podając nazwę.
+
+::local-equivalents
 
 > [!NOTE]
 > Glazecalc porównuje surowce według tego, co wnoszą do wypalonego szkliwa, a nie według nazwy. [Receptura](/recipe) z surowcem, którego już się nie produkuje, podaje, czego używa się obecnie. Przycisk **Zaproponuj ilości i porównaj** przelicza ilości na nowo dla zamiennika, a funkcja **Dopasuj do tego, co mam** odtwarza recepturę z posiadanych surowców. Obie dopasowują wyłącznie tlenki po wypale, dlatego najpierw należy przetestować małą porcję.

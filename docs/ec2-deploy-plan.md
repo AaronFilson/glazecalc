@@ -1,8 +1,9 @@
 # Plan: a new EC2 instance for glazecalcapp.com
 
 Drafted 2026-10-05 on the `building10-4` branch, from the research summary below, the
-AWS EC2 guidance, and a check of the current site. Nothing in AWS has been created or
-changed yet.
+AWS EC2 guidance, and a check of the current site. Carried out in October 2026: production
+runs on the new instance, set up with [deploy/aws/README.md](../deploy/aws/README.md). The
+plan is kept as it was written, for its reasoning; the deploy files are the current setup.
 
 ## What exists today
 

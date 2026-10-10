@@ -1,4 +1,4 @@
-import { Component, computed, input, signal } from '@angular/core';
+import { Component, computed, input, output, signal } from '@angular/core';
 import { TranslocoDirective } from '@jsverse/transloco';
 import { RichText } from '../i18n/rich-text';
 import { formatFormula } from '../../../lib/chemistry';
@@ -15,6 +15,7 @@ import {
   statusText
 } from './library-info';
 import { listOf } from './format';
+import { PlainPipe } from './format-pipes';
 import { fieldsText, firstOf } from './options';
 
 let nextId = 0;
@@ -26,7 +27,7 @@ let nextId = 0;
  */
 @Component({
   selector: 'gc-standard-list',
-  imports: [RichText, TranslocoDirective],
+  imports: [PlainPipe, RichText, TranslocoDirective],
   template: `<ng-container *transloco="let t">
     <div class="standard-tools">
       <div>
@@ -94,8 +95,8 @@ let nextId = 0;
                   <span class="status-badge">{{ status }}</span>
                 }
               </td>
-              <td>{{ record.equivalent }}</td>
-              <td>{{ record.formulaweight }}</td>
+              <td>{{ record.equivalent | gcPlain }}</td>
+              <td>{{ record.formulaweight | gcPlain }}</td>
               <td class="standard-notes">
                 {{ standardText(record, firstOf(record.notes)) }}
                 @if (record.substitutes?.length) {
@@ -156,6 +157,8 @@ let nextId = 0;
               <td colspan="6" class="muted">
                 @if (records().length) {
                   {{ t('standard.nothingMatches') }}
+                } @else if (failed()) {
+                  <gc-rich [text]="t('standard.notFetched')" [links]="{ retry: tryAgain }" />
                 } @else {
                   {{ t('standard.loading') }}
                 }
@@ -171,6 +174,9 @@ export class StandardList {
   readonly records = input.required<Array<Material | Additive>>();
   /** What the list holds: 'materials' or 'additives'. */
   readonly noun = input.required<string>();
+  /** The list could not be fetched: it says so, with a button to ask for it again (retry). */
+  readonly failed = input(false);
+  readonly retry = output<void>();
 
   protected readonly id = 'standard-' + nextId++;
   protected readonly regions = REGIONS;
@@ -207,4 +213,6 @@ export class StandardList {
     this.region.set(region);
     saveRegion(region);
   }
+
+  protected readonly tryAgain = (): void => this.retry.emit();
 }

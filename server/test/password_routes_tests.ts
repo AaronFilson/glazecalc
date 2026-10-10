@@ -63,7 +63,7 @@ describe('password reset and change', () => {
       expect(await mail.waitFor(address, 1)).to.have.length(1);
     });
 
-    it('stores only a hash of the token, with an expiry', async () => {
+    it('stores only a hash of the token, kept for the hour the limit counts', async () => {
       const address = newAddress();
       const user = await makeUser(address);
       const token = await resetToken(address);
@@ -71,8 +71,9 @@ describe('password reset and change', () => {
       expect(stored).to.have.length(1);
       expect(stored[0].tokenHash).to.eql(crypto.createHash('sha256').update(token!).digest('hex'));
       expect(JSON.stringify(stored[0])).to.not.include(token);
+      // MongoDB deletes it then; deleted after the link's 30 minutes, it would no longer count.
       const minutes = (stored[0].expiresAt.getTime() - Date.now()) / 60000;
-      expect(minutes).to.be.within(29, 30.1);
+      expect(minutes).to.be.within(59, 60.1);
     });
 
     it('needs an email', async () => {
@@ -148,11 +149,30 @@ describe('password reset and change', () => {
       expect(await reset(second, 'new-password-2')).to.have.status(200);
     });
 
+    it("stops working when the account's email changes", async () => {
+      // A link sent to the old address, which someone else may read.
+      const address = newAddress();
+      const user = await makeUser(address);
+      const token = await resetToken(address);
+      const moved = newAddress();
+      const change = await api()
+        .put('/usersettings/' + user._id)
+        .set('Authorization', 'Bearer ' + user.generateToken())
+        .send({ email: moved, password: 'old-password' });
+      expect(change).to.have.status(200);
+      expect(await reset(token, 'taken-over-password')).to.have.status(400);
+      expect(await signIn(moved, 'old-password')).to.have.status(200);
+    });
+
     it('refuses expired, unknown and missing tokens', async () => {
       const address = newAddress();
       const user = await makeUser(address);
       const token = await resetToken(address);
-      await PasswordReset.updateOne({ userId: user._id }, { $set: { expiresAt: new Date(Date.now() - 1000) } });
+      // Sent 31 minutes ago: the link has expired, though the request is kept for the hour.
+      await PasswordReset.collection.updateOne(
+        { userId: user._id },
+        { $set: { createdAt: new Date(Date.now() - 31 * 60 * 1000) } }
+      );
       expect(await reset(token, 'new-password')).to.have.status(400);
       expect(await reset('not-a-real-token', 'new-password')).to.have.status(400);
       expect(await api().post('/password/reset').send({ password: 'new-password' })).to.have.status(400);

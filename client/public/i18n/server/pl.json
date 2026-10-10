@@ -50,6 +50,7 @@
   "record-updated": "Zaktualizowano {label, select, additive {dodatek} advice {poradę} firing {wypał} material {surowiec} note {notatkę} recipe {recepturę} trash {element w koszu} other {zapis}}",
   "record-invalid": "{label, select, additive {Nieprawidłowy dodatek} advice {Nieprawidłowa porada} firing {Nieprawidłowy wypał} material {Nieprawidłowy surowiec} note {Nieprawidłowa notatka} recipe {Nieprawidłowa receptura} trash {Nieprawidłowy element w koszu} other {Nieprawidłowy zapis}}",
   "record-deleted": "Usunięto {label, select, additive {dodatek} advice {poradę} firing {wypał} material {surowiec} note {notatkę} recipe {recepturę} trash {element w koszu} other {zapis}}",
+  "account-limit": "Na koncie można zachować do {limit} {label, select, additive {dodatków} advice {porad} firing {dzienników wypałów} material {surowców} note {notatek} recipe {receptur} trash {elementów w koszu} other {zapisów}}. Aby zapisać więcej, należy usunąć część z nich.",
   "not-found": "Nie znaleziono",
   "other-site": "Żądania z innych witryn nie są przyjmowane.",
   "invalid-input": "Część przesłanych informacji jest nieprawidłowa.",

@@ -30,7 +30,7 @@ const ROOT = path.resolve(import.meta.dirname, '..');
 export const I18N = path.join(ROOT, 'client', 'public', 'i18n');
 export const FINGERPRINTS = path.join(ROOT, 'client', 'i18n-fingerprints');
 /** Scopes keyed by a hash of their English, which therefore need no fingerprints. */
-const SELF_KEYED = ['safety', 'records'];
+const SELF_KEYED = ['safety', 'regions', 'records'];
 
 /** A short fingerprint of a text (FNV-1a, as textKey's). */
 export function fingerprint(text) {

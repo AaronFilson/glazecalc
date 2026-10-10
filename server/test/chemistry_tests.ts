@@ -1,6 +1,6 @@
 import * as chai from 'chai';
 import chemistry from '../../lib/chemistry/index.js';
-import type { MaterialField, MaterialInput } from '../../lib/chemistry/index.js';
+import type { ChemistryError, MaterialField, MaterialInput } from '../../lib/chemistry/index.js';
 import standardData from '../../data/index.js';
 
 const expect = chai.expect;
@@ -23,8 +23,11 @@ interface LibraryRecord {
   category?: string;
   region?: string[];
   status?: string;
+  statusSince?: string;
   substitutes?: string[];
   replaces?: string[];
+  hazards?: string;
+  fluorine?: boolean;
   source?: { name?: string; url?: string; kind?: string };
   noChemistry?: boolean;
   chemistryOf?: string;
@@ -194,6 +197,18 @@ describe('glaze chemistry', () => {
       const result = calculateUMF([{ material: { name: 'Bad spar', analysis: { SiO2: 50, K2O: 10 } }, amount: 10 }]);
       expect(result.warnings.length).to.eql(1);
       expect(result.warnings[0]).to.contain('Bad spar');
+    });
+
+    it('should warn when the fluxes are only traces, as in a slip of clay and silica', () => {
+      const records: StandardMaterial[] = standardData.load('materials');
+      const library = new Map(records.map((m) => [m.name, m]));
+      const slip = calculateUMF([
+        { material: library.get('Silica')!, amount: 60 },
+        { material: library.get('EPK Kaolin')!, amount: 40 }
+      ]);
+      expect(slip.warningCodes.map((w) => w.code)).to.deep.equal(['trace-flux']);
+      // A glaze, even one with much silica, is not.
+      expect(calculateUMF({ 'Potash Feldspar': 25, Whiting: 10, Kaolin: 15, Silica: 50 }).warnings).to.eql([]);
     });
   });
 
@@ -391,6 +406,71 @@ describe('glaze chemistry', () => {
       }
     });
 
+    // What a swap to modern materials can find (client/app/pages/recipe/compare.ts):
+    // a current material, or for a colorant among the materials, an additive.
+    const current = (name: string, records: LibraryRecord[]) =>
+      records.find((r) => r.name === name && (!r.status || r.status === 'current'));
+    const old = materials.filter((r) => r.status && r.status !== 'current');
+
+    it('should name, for each old material, a substitute the swap can find', () => {
+      for (const record of old) {
+        const found = (record.substitutes ?? []).filter(
+          (name) => current(name, materials) || (record.category === 'colorant' && current(name, additives))
+        );
+        expect(found.length, record.name).to.be.greaterThan(0);
+      }
+    });
+
+    it('should name, for each old feldspar, a substitute sold in each region', () => {
+      for (const record of old.filter((r) => r.category === 'feldspar')) {
+        for (const region of ['US', 'UK', 'EU', 'AU']) {
+          const sold = (record.substitutes ?? [])
+            .map((name) => current(name, materials))
+            .filter((sub) => sub && (!sub.region?.length || sub.region.includes(region)));
+          expect(sold.length, record.name + ' in ' + region).to.be.greaterThan(0);
+        }
+      }
+    });
+
+    it('should list each current record that replaces another among its substitutes, for the swap to find', () => {
+      for (const record of all.filter((r) => !r.status || r.status === 'current')) {
+        for (const name of record.replaces ?? []) {
+          const replaced = all.find((r) => r.name === name)!;
+          expect(replaced.substitutes ?? [], record.name + ' replaces ' + name).to.include(record.name);
+        }
+      }
+    });
+
+    it('should give the year a status began as a year alone, as it goes into a sentence in each language', () => {
+      for (const record of all.filter((r) => r.statusSince)) {
+        expect(record.statusSince, record.name).to.match(/^\d{4}$/);
+      }
+    });
+
+    it('should keep a region only for a named product among the colorants and additives', () => {
+      // A generic oxide, carbonate or mineral is sold everywhere, so every region lists it.
+      // These are one maker's product, or sold under that name in one region, as their notes say.
+      const named = [
+        'Bentonite',
+        'Veegum T',
+        'Macaloid',
+        'Spanish red iron oxide',
+        'Crocus martis',
+        'Bentonit 57 (Carl Jäger / Bodmer Ton 507)',
+        'Bentonita (Prodesco)',
+        'Bentonite Trubond (Miles, Queensland)'
+      ];
+      for (const additive of additives.filter((a) => a.region?.length)) {
+        expect(named, additive.name + ' is sold everywhere').to.include(additive.name);
+      }
+    });
+
+    it('should mark every material whose hazards say it gives off fluorine, so it is not suggested', () => {
+      for (const record of materials.filter((r) => /fluorine/i.test(r.hazards ?? ''))) {
+        expect(record.fluorine, record.name).to.equal(true);
+      }
+    });
+
     it('should refer only to records in the library', () => {
       for (const record of all) {
         for (const ref of [
@@ -564,6 +644,12 @@ describe('glaze chemistry', () => {
       near(boundedLeastSquares({ columns: [[1]], b: [2], lo: [0], hi: [Infinity], lambda: 1, pullTo: [0] }), [1]);
     });
 
+    it('should put a price on each variable', () => {
+      // |x - 2|^2 + 2 cost x is least at 2 - cost, and no lower than its bound.
+      near(boundedLeastSquares({ columns: [[1]], b: [2], lo: [0], hi: [Infinity], cost: [0.5] }), [1.5]);
+      near(boundedLeastSquares({ columns: [[1]], b: [2], lo: [0.5], hi: [Infinity], cost: [3] }), [0.5]);
+    });
+
     it('should cope with near-duplicate columns, and match a slow method on random problems', () => {
       let seed = 11;
       const random = () => (seed = (seed * 1103515245 + 12345) % 2147483648) / 2147483648;
@@ -686,6 +772,45 @@ describe('glaze chemistry', () => {
         ]
       );
       for (const [name, amount] of suggested) expect(amount, name).to.be.at.least(0);
+    });
+
+    it('should give a shared cap to the member that helps most, keeping each one its least', () => {
+      // A cone 02 style glaze: its calcium mostly from the frit, a little from whiting and more dolomite.
+      const glaze = (whiting: number, dolomite: number) =>
+        chemistry.oxideMoles(
+          lines([
+            ['Ferro Frit 3134', 60],
+            ['Whiting', whiting],
+            ['Dolomite', dolomite],
+            ['China Clay', 15],
+            ['Silica', 13]
+          ])
+        );
+      const target = glaze(4, 8);
+      const pool = (whiting: object, dolomite: object) => [
+        { material: library.get('Ferro Frit 3134')!, start: 0 },
+        { material: library.get('China Clay')!, start: 0 },
+        { material: library.get('Silica')!, start: 0 },
+        { material: library.get('Whiting')!, start: 0, group: 'raw calcium', ...whiting },
+        { material: library.get('Dolomite')!, start: 0, group: 'raw calcium', ...dolomite }
+      ];
+      const groups = { 'raw calcium': 5 };
+      const capped = chemistry.bestFit(pool({}, {}), target, { groups });
+      expect(capped.amounts[3] + capped.amounts[4]).to.be.closeTo(5, 1e-6);
+      // No split of the 5 g matches better: here all of it goes to the dolomite, for its magnesia.
+      for (let whiting = 0; whiting <= 5; whiting += 0.5) {
+        const split = chemistry.bestFit(
+          pool({ least: whiting, most: whiting }, { least: 5 - whiting, most: 5 - whiting }),
+          target
+        );
+        expect(capped.miss, 'whiting ' + whiting).to.be.at.most(split.miss + 1e-9);
+      }
+      expect(capped.amounts[4]).to.be.closeTo(5, 1e-6);
+      // A member's least holds under the cap, the rest of the cap going to the other.
+      const { amounts } = chemistry.fitAmounts(pool({ least: 1 }, { least: 1 }), glaze(2, 10), { groups });
+      expect(amounts[3]).to.be.at.least(1 - 1e-9);
+      expect(amounts[4]).to.be.at.least(1 - 1e-9);
+      expect(amounts[3] + amounts[4]).to.be.at.most(5 + 1e-6);
     });
 
     it('should say when there is nothing to work out', () => {
@@ -846,6 +971,109 @@ describe('glaze chemistry', () => {
       expect(single.capped).to.have.length(1);
       expect(single.capped[0].wouldBe).to.be.closeTo(15, 1);
       expect(single.capped[0].missLifted).to.be.below(single.miss);
+    });
+
+    it("should say what lifting a cap alone would give, keeping every other line's least", () => {
+      // Zinc capped at 5 g, and the clay held at 10 g or more, as Replace lead holds it.
+      const target = molesOf([
+        ['Ferro Frit 3134', 80],
+        ['China Clay', 3],
+        ['Silica', 10],
+        ['Zinc Oxide', 7]
+      ]);
+      const lines = [
+        { ...own('Ferro Frit 3134', 80), must: true },
+        { ...own('China Clay', 3), must: true, least: 10 },
+        own('Silica', 10),
+        offer('Zinc Oxide', { most: 5, least: 1 })
+      ];
+      const result = chemistry.selectMaterials(lines, target, { keepOwn: true });
+      expect(result.amounts[3]).to.be.closeTo(5, 1e-6);
+      expect(result.capped).to.have.length(1);
+      const [zinc] = result.capped;
+      expect(zinc.wouldBe).to.be.closeTo(7, 0.1);
+      // With the clay still at 10 g: not the exact match it would be if the clay could go back to 3.
+      const lifted = chemistry.bestFit(
+        lines.map((line, i) => ({ ...line, least: i === 1 ? 10 : 0, most: undefined })),
+        target
+      );
+      expect(zinc.missLifted).to.be.closeTo(lifted.miss, 1e-3);
+      expect(zinc.missLifted).to.be.above(1);
+    });
+
+    describe('what it says of the materials', () => {
+      // A cone 6 glaze matched from what is on the shelf, as Match with what I have does.
+      const recipe: Array<[string, number]> = [
+        ['Custer Spar', 20],
+        ['Ferro Frit 3134', 20],
+        ['Whiting', 15],
+        ['EPK Kaolin', 20],
+        ['Silica', 25]
+      ];
+      const target = molesOf(recipe);
+      const old = new Map(recipe);
+      const shelf = [
+        'G-200 EU Feldspar',
+        'Mahavir Potash Feldspar',
+        'Minspar 200',
+        'Nepheline Syenite A270',
+        'Ferro Frit 3134',
+        'Ferro Frit 3124',
+        'Whiting',
+        'Dolomite',
+        'Talc',
+        'EPK Kaolin',
+        'Silica',
+        'Wollastonite (NYAD 400)',
+        'Zinc Oxide',
+        'Gerstley Borate'
+      ].map((name) => ({ material: library.get(name)!, start: old.get(name) ?? 0, least: 1 }));
+      const withMust = <T extends object>(lines: T[], index: number) =>
+        lines.map((line, i) => (i === index ? { ...line, must: true } : line));
+
+      it('should offer a material not used only for what adding it really gains, chosen again', () => {
+        const result = chemistry.selectMaterials(shelf, target);
+        // The other feldspars would only stand in for the one used: none is worth offering.
+        expect(result.unused.filter((u) => u.helps >= 0.05)).to.deep.equal([]);
+        for (const { index, helps } of result.unused) {
+          const added = chemistry.selectMaterials(withMust(shelf, index), target);
+          expect(helps, shelf[index].material.name).to.be.at.most(Math.max(0, result.miss - added.miss) + 1e-9);
+        }
+        // Under a limit on new materials, the potash source left out is worth adding back, by what it gives.
+        const lines = [
+          own('Ferro Frit 3110', 10),
+          own('Whiting', 20),
+          own('China Clay', 20),
+          own('Silica', 40),
+          own('Talc', 10),
+          offer('Mahavir Potash Feldspar'),
+          offer('Ferro Frit 3124', { must: true })
+        ];
+        const limited = chemistry.selectMaterials(lines, NITER, { extras: 0 });
+        const feldspar = limited.unused.find((u) => u.index === 5)!;
+        const added = chemistry.selectMaterials(withMust(lines, 5), NITER, { extras: 0 });
+        expect(feldspar.helps).to.be.above(0.05);
+        expect(feldspar.helps).to.be.closeTo(limited.miss - added.miss, 1e-9);
+      });
+
+      it('should measure what each material used is worth against the best match within the recipe', () => {
+        const result = chemistry.selectMaterials(shelf, target);
+        const plain = shelf.map((line) => ({ ...line, least: 0 }));
+        const bestWith = (use: Set<number>) =>
+          chemistry.bestFit(
+            plain.filter((_, i) => use.has(i)),
+            target
+          ).miss;
+        const used = new Set(result.chosen);
+        for (const { index, missWithout } of result.contributions) {
+          const without = new Set(used);
+          without.delete(index);
+          expect(missWithout - result.miss, shelf[index].material.name).to.be.closeTo(
+            bestWith(without) - bestWith(used),
+            0.01
+          );
+        }
+      });
     });
 
     it("should keep the recipe's own materials when asked, and hold a must's least while choosing", () => {
@@ -1069,6 +1297,44 @@ describe('glaze chemistry', () => {
       expect(() => calculateUMF({ Whiting: -5 })).to.throw(/Invalid amount/);
       // Not a number, which the types rule out; the check is for callers without them.
       expect(() => calculateUMF({ Whiting: 'lots' } as unknown as Record<string, number>)).to.throw(/Invalid amount/);
+    });
+
+    it('should refuse, by code, materials and batches that would give negative or not-a-number results', () => {
+      const codeOf = (work: () => unknown): string | undefined => {
+        try {
+          work();
+        } catch (e) {
+          return (e as ChemistryError).code;
+        }
+        return undefined;
+      };
+      const withWhiting = (material: MaterialInput) => () =>
+        calculateUMF([
+          { material, amount: 10 },
+          { material: 'Whiting', amount: 10 }
+        ]);
+      // A formula's counts: at least 0, numbers, and something left after firing.
+      expect(codeOf(withWhiting({ name: 'Odd', formula: { CaO: -1, SiO2: 2 } }))).to.equal('invalid-oxide-amount');
+      expect(codeOf(withWhiting({ name: 'Odd', formula: { CaO: NaN } }))).to.equal('invalid-oxide-amount');
+      expect(codeOf(withWhiting({ name: 'Odd', formula: { CaO: 0 } }))).to.equal('no-oxides');
+      expect(codeOf(() => chemistry.materialWeights({ name: 'Water', formula: { H2O: 1 } }))).to.equal('no-oxides');
+      // An analysis's LOI, as the stored shape's.
+      expect(codeOf(withWhiting({ name: 'Odd', analysis: { CaO: 56 }, loi: 150 }))).to.equal('loi-range');
+      expect(codeOf(withWhiting({ name: 'Odd', analysis: { CaO: 56 }, loi: -50 }))).to.equal('loi-range');
+      // An oxide given twice: each amount checked, in either order.
+      const twice = (first: string, second: string) => () =>
+        chemistry.materialWeights({
+          name: 'Twice',
+          percentmole: 'percent',
+          fields: [
+            { name: 'CaO', amount: first },
+            { name: 'CaO', amount: second }
+          ]
+        });
+      expect(codeOf(twice('abc', '56'))).to.equal('invalid-oxide-amount');
+      expect(codeOf(twice('56', 'abc'))).to.equal('invalid-oxide-amount');
+      // A batch so large its sums overflow.
+      expect(codeOf(() => calculateUMF({ Whiting: 1e308, Silica: 1e308 }))).to.equal('invalid-amount');
     });
   });
 });

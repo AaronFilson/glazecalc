@@ -5,11 +5,14 @@ Thank you for helping. Glazecalc is a free, open source glaze chemistry app; iss
 
 ## Code
 
-- Run `npm test`, `npm run test:client`, `npm run lint`, `npm run typecheck` and `npm run check:i18n` before a pull
-  request. The [README](README.md) explains how to run the app and its browser tests.
+- Run `npm test`, `npm run test:client`, `npm run lint`, `npm run typecheck`, `npm run check:i18n` and
+  `npm run format:check` before a pull request (`npm run format -- .` fixes the formatting). The [README](README.md)
+  explains how to run the app and its browser tests.
 - Text the app shows lives in messages files, never in the code: [docs/translating.md](docs/translating.md) says how
   to add or change it.
-- Decisions that shaped the app are recorded in [docs/adr](docs/adr).
+- Decisions that shaped the app are recorded in [docs/adr](docs/adr). The research behind them and behind the
+  region data (the `reports/` and `research_notes/` some comments name) is kept outside the repository; each fact
+  in `lib/regions` and `data/` carries its own source.
 
 ## Translations
 

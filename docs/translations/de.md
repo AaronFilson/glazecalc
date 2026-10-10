@@ -470,6 +470,37 @@ for signal words and hazard statements. The best single German source for potter
 | Trash                                                                                  | der Papierkorb                                                                                             | As in German Windows.                                                                                                                                                                                                                                                              |
 | Remove (Yes, remove), Delete my account                                                | Entfernen (Ja, entfernen); Mein Konto löschen                                                              | "This can't be undone." → „Das lässt sich nicht rückgängig machen.“                                                                                                                                                                                                                |
 
+### 2.9 Where the potter works
+
+Terms of the region parts of the guides (shops, the silica limit, food-contact rules, materials sold nearby), as
+the reviewed translation uses them. Names of shops, laws and agencies stay as they are written there.
+
+| English                                                               | Deutsch                                                                             | Where                                         |
+| --------------------------------------------------------------------- | ----------------------------------------------------------------------------------- | --------------------------------------------- |
+| Shops in (the label before a list of countries)                       | Händler in                                                                          | guides: shops.shopsIn                         |
+| raw glaze materials (what a shop sells)                               | Glasurrohstoffe                                                                     | guides: shops.what.materials                  |
+| ready-made glazes                                                     | fertige Glasuren                                                                    | guides: shops.what.glazes                     |
+| Packs seen                                                            | Gefundene Packungsgrößen                                                            | guides: shops.packs                           |
+| A binding limit.                                                      | Ein verbindlicher Grenzwert.                                                        | guides: silica.kind.binding                   |
+| An indicative limit: a guide value, not a legal ceiling.              | Ein Richtgrenzwert: ein Orientierungswert, keine gesetzliche Obergrenze.            | guides: silica.kind.indicative                |
+| An assessment criterion, not a binding limit. (Germany)               | Ein Beurteilungsmaßstab, kein verbindlicher Grenzwert.                              | guides: silica.kind.assessment                |
+| action level (US)                                                     | Auslösewert                                                                         | guides: silica.actionLevel                    |
+| quartz and cristobalite                                               | Quarz und Cristobalit                                                               | guides: silica.both                           |
+| The national body for safety at work: <link>{name}</link>.            | Die nationale Stelle für Arbeitsschutz: <link>{name}</link>.                        | guides: silica.agency                         |
+| Kind of piece (food-contact rules)                                    | Art des Gegenstands                                                                 | guides: food.article                          |
+| pieces that cannot be filled, or no deeper than 25 mm                 | Nicht füllbare Gegenstände oder Gegenstände mit höchstens 25 mm Fülltiefe           | guides: food.category.flat                    |
+| other pieces that can be filled                                       | Andere füllbare Gegenstände                                                         | guides: food.category.fillable                |
+| cooking ware                                                          | Kochgeschirr                                                                        | guides: food.category.auCooking               |
+| The rim of a piece for drinking from: a 2 cm band, inside and out     | Der Rand eines Trinkgefäßes: ein 2 cm breiter Streifen, innen und außen             | guides: food.category.rimBand                 |
+| Flatware, no deeper than 25 mm (US)                                   | Flachware, höchstens 25 mm tief                                                     | guides: food.category.flatware                |
+| Small hollowware, under 1.1 L, other than cups and mugs (US)          | Kleine Hohlware unter 1,1 L, außer Tassen und Bechern                               | guides: food.category.smallHollow             |
+| Large hollowware, 1.1 L or more, other than pitchers (US)             | Große Hohlware ab 1,1 L, außer Krügen                                               | guides: food.category.largeHollow             |
+| average of 6 pieces / any one of 6                                    | Mittelwert aus 6 Stücken / jedes von 6 einzeln                                      | guides: food.judged.average, food.judged.each |
+| Buying in (the label before a list of countries)                      | Einkauf in                                                                          | guides: equivalents.buyingIn                  |
+| differs by {grams} g per 100 g                                        | weicht um {grams} g je 100 g ab                                                     | guides: equivalents.apart                     |
+| Directive 84/500/EEC (its official name)                              | Richtlinie 84/500/EWG (geändert durch die Richtlinie 2005/31/EG)                    | regions: the directive                        |
+| Latvia's law gives this limit for the inhalable fraction of the dust. | Das lettische Recht nennt diesen Grenzwert für die einatembare Fraktion des Staubs. | regions: Latvia                               |
+
 ## 3. Never translated
 
 From terms.md, unchanged:

@@ -177,6 +177,8 @@ describe('SettingsSection', () => {
     // Italy reads density in degrees Baumé.
     expect(choice('baume').checked).toBe(true);
     expect(text(fixture, 'label[for="density-pint"]')).toBe('Pint weight, the ounces in an imperial pint (29 oz)');
+    // The example is a message, so each language writes it its own way.
+    expect(text(fixture, 'label[for="density-sg"]')).toBe('Specific gravity (SG 1.45)');
     choice('sg').click();
     await fixture.whenStable();
     const req = httpMock().expectOne(API + '/preferences');

@@ -2,7 +2,11 @@
   Inline parts are each wrapped in an element or ng-container with nothing around their text:
   Angular drops the whitespace between these tags, so a sentence reads exactly as its Markdown.
 -->
-<gc-page-header [title]="show(guide().title)" [lead]="show(guide().lead)" [attr.lang]="guide().language" />
+<gc-page-header
+  [title]="show(guide().title)"
+  [lead]="show(guide().lead)"
+  [attr.lang]="guide().language ?? textLanguage()"
+/>
 <gc-guide-contents [sections]="contents()" />
 <ng-content />
 <div class="guide" [attr.lang]="textLanguage()">
@@ -117,6 +121,18 @@
       @case ('poison-lines') {
         <gc-poison-lines />
       }
+      @case ('shops') {
+        <gc-shops />
+      }
+      @case ('silica-limit') {
+        <gc-silica-limit />
+      }
+      @case ('food-limits') {
+        <gc-food-limits />
+      }
+      @case ('local-equivalents') {
+        <gc-local-equivalents />
+      }
       @case ('rule') {
         <hr />
       }
@@ -158,7 +174,7 @@
             /></a>
           }
           @case ('here') {
-            <a [href]="part.href" (click)="goTo($event, part.href)"
+            <a [href]="sectionLinks.href(part.href.slice(1))" (click)="sectionLinks.go($event, part.href.slice(1))"
               ><ng-container *ngTemplateOutlet="inline; context: { $implicit: part.content }"
             /></a>
           }

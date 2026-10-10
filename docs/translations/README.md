@@ -17,6 +17,7 @@ beside it with the same name but the code:
 | `client/public/i18n/server/en.json`       | The server's messages (errors, field checks), shown as plain text                      |
 | `client/public/i18n/chemistry/en.json`    | The chemistry's errors and warnings, shown as plain text                               |
 | `client/public/i18n/safety/en.json`       | The words of who to call in an emergency, shown as plain text                          |
+| `client/public/i18n/regions/en.json`      | Notes in the region data (silica limits, food-contact rules, shops), as plain text     |
 | `client/public/i18n/records/en.json`      | The standard materials' notes and hazards, and the advice page, shown as plain text    |
 | `client/public/i18n/guides/<guide>/en.md` | The five guides, whole documents in Markdown                                           |
 | `server/lib/account_mail.ts`              | The two emails about a password, in code                                               |
@@ -41,10 +42,10 @@ Messages are [ICU MessageFormat](https://formatjs.github.io/docs/core-concepts/i
   `<settings>Einstellungen</settings>`. Never rename a tag or add one, with one exception: a message whose English has a
   tag may give the English for a key term after it, `Fritte<en>frit</en>`, which readers who ask for English terms see
   in brackets. Only in such messages, and only for the terms the glossary marks "show English".
-- **The files `server`, `chemistry`, `safety` and `records` are plain text**: no tags at all.
+- **The files `server`, `chemistry`, `safety`, `regions` and `records` are plain text**: no tags at all.
 - **Apostrophes**: the typographic `’` is always safe, and the style sheet says which to use. A straight `'` is fine in
-  text (`l'émail`) except just before `{`, `}` or `#`, where ICU reads it as a quote: write `''` there. (The `safety`
-  and `records` files write every straight apostrophe as `''`; either way shows one.) A literal brace is `'{'`.
+  text (`l'émail`) except just before `{`, `}` or `#`, where ICU reads it as a quote: write `''` there. (The `safety`,
+  `regions` and `records` files write every straight apostrophe as `''`; either way shows one.) A literal brace is `'{'`.
 - **Never translated**: oxide formulas (SiO₂, Al₂O₃, B₂O₃), cone numbers (06, 04, 6), mesh numbers, units (°C, °F, g,
   kg, %, ml, lb, oz), product and trade names (Ferro 3134, Gerstley borate, Custer, Orton, Skutt), the name Glazecalc,
   web addresses, and anything a person typed. An EU directive or regulation takes its official form in the language
@@ -74,7 +75,8 @@ describes them all). Translate the words, and keep everything else:
   reader's scale and number style. Translate the words around them.
 - **`{{en: term}}`** after a key term gives its English to readers who ask for English terms:
   `die Fritte{{en: frit}}`. Add one at the first use of each glossary term marked "show English" in each section.
-- **`:::orton`, `:::temperature`, `:::` and `::poison-lines`** lines stay as they are, where they are.
+- **`:::orton`, `:::temperature`, `:::`, `::poison-lines`, `::shops`, `::local-equivalents`, `::silica-limit` and
+  `::food-limits`** lines stay as they are, where they are.
 - **Tables** keep their rows and columns, and `Table:` and `Label:` lines keep their names (translate what follows).
   `---:` alignment stays.
 - **Callouts**: `> [!NOTE]` and `> [!WARNING]` stay in English; translate the text after them.

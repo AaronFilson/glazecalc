@@ -1,0 +1,50 @@
+{
+  "common": {
+    "formulaHelp": "Formulo vnesite z navadnimi številkami, na primer {typed}: števila se prikažejo kot podpisani indeksi, {shown}. Če želite povezati dele formule, kot v {joined}, kopirajte to piko:",
+    "relatedTo": "Sorodno:",
+    "notes": "Opombe:",
+    "loi": "Izguba pri žarenju – LOI (v odstotkih):",
+    "molecularWeight": "Molska masa surove formule (uporabi se samo, če polje LOI ostane prazno):",
+    "formulaHeading": "Vnesite formulo (po žganju):",
+    "oxideSelection": "Izbira oksida",
+    "noOxide": "brez",
+    "addOxide": "Dodaj oksid na seznam",
+    "formulaIn": "Zapis formule:",
+    "percent": "Odstotki",
+    "molecular": "Molsko / Segerjeva formula",
+    "amount": "Količina:",
+    "removeOxide": "Odstrani s seznama formule",
+    "save": "Shrani",
+    "elements": "Elementi",
+    "removeNote": "Shranjeni recepti hranijo svojo kopijo, zato se ne bodo spremenili.",
+    "saveFailed": "Napaka: zahteva strežniku ni uspela."
+  },
+  "material": {
+    "title": "Surovine",
+    "lead": "Vaše lastne surovine, vnesene kot kemijska formula ali oksidna analiza.",
+    "newHeading": "Podatki o novi surovini",
+    "name": "Ime surovine:",
+    "rawFormula": "Surova formula:",
+    "weightsNote": "Ekvivalentna masa in masa po žganju se ob shranjevanju izračunata iz formule in LOI.",
+    "mineHeading": "Moje surovine:",
+    "rawFormulaColumn": "Surova formula",
+    "standardHeading": "Standardne surovine:",
+    "fetchFailed": "Pri pridobivanju podatkov o surovinah je prišlo do napake.",
+    "standardFetchFailed": "Pri pridobivanju podatkov o standardnih surovinah je prišlo do napake.",
+    "saved": "Uspešno. Surovina je dodana v zbirko podatkov."
+  },
+  "additive": {
+    "title": "Dodatki in barvila",
+    "lead": "Barvila in sredstva za motnost, ki se odmerijo dodatno k osnovnemu receptu, na primer kobaltov ali kositrov oksid. Recept jih lahko izpusti iz Segerjeve formule (UMF) ali jih v njej upošteva.",
+    "newHeading": "Podatki o novem dodatku",
+    "name": "Ime dodatka:",
+    "formulaAsSold": "Formula, kot se prodaja:",
+    "noChemistry": "Nima oksidne analize, na primer kupljeni keramični pigment: izpusti ga iz Segerjeve formule",
+    "firedNote": "Vnesite, kaj da glazuri po žganju: črni kobaltov oksid, {asSold}, je {fired} z LOI {loi} %. Recept ga lahko nato upošteva v Segerjevi formuli.",
+    "mineHeading": "Moji dodatki in barvila:",
+    "standardHeading": "Standardni dodatki:",
+    "fetchFailed": "Pri pridobivanju podatkov o dodatkih je prišlo do napake.",
+    "standardFetchFailed": "Pri pridobivanju podatkov o standardnih dodatkih je prišlo do napake.",
+    "saved": "Uspešno. Dodatek je dodan v zbirko podatkov."
+  }
+}

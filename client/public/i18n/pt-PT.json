@@ -52,6 +52,9 @@
     "keepTrying": "Continuar a experimentar",
     "discardFailed": "Não foi possível descartar a experiência. Tente novamente."
   },
+  "signedOut": {
+    "recipeLost": "A sessão foi terminada antes de as alterações a «{title}» serem guardadas, por isso perderam-se."
+  },
   "footer": {
     "site": "Site",
     "about": "Sobre",
@@ -70,7 +73,8 @@
     "notANumberPoint": "Introduza um número, por exemplo {example}, com ponto para as décimas."
   },
   "meta": {
-    "description": "Introduza uma receita de vidrado e veja a fórmula de Seger (UMF), a relação sílica/alumina e os fundentes. Gratuito e de código aberto, com as suas receitas."
+    "description": "Introduza uma receita de vidrado e veja a fórmula de Seger (UMF), a relação sílica/alumina e os fundentes. Gratuito e de código aberto, com as suas receitas.",
+    "imageAlt": "Glazecalc: compreenda os seus vidrados, em vez de apenas os misturar."
   },
   "notices": {
     "dismiss": "Dispensar",
@@ -222,7 +226,8 @@
     "noChemistry": "Sem química: fica fora da fórmula de Seger",
     "countedAs": "Contada como {name}",
     "nothingMatches": "Nenhum resultado. Experimente outro nome, tipo ou região.",
-    "loading": "A carregar…"
+    "loading": "A carregar…",
+    "notFetched": "Não foi possível obter a lista. <retry>Tentar novamente</retry>"
   },
   "chemistryForm": {
     "name": "{noun, select, additive {Dê um nome ao aditivo.} other {Dê um nome à matéria-prima.}}",

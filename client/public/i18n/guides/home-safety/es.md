@@ -142,7 +142,7 @@ La Pet Poison Helpline dice que «El plomo es tóxico para todas las especies, p
 
 - Mantenga a las mascotas fuera del taller, con la puerta cerrada.
 - Los perros muerden los sacos y beben de los cubos. Guarde los sacos en un armario cerrado y ponga tapa a todos los cubos.
-- Los gatos pisan el polvo y luego se lo quitan lamiéndose las patas y el pelo. Limpie el suelo en húmedo y no deje entrar a los gatos, para que no tengan nada que lamerse.
+- Los gatos pisan el polvo y luego se lo quitan lamiéndose las patas y el pelo. Limpie el suelo en húmedo y mantenga a los gatos fuera del taller, para que no tengan nada que lamerse.
 - Las aves y los mamíferos pequeños (conejos, cobayas, hámsteres) comparten el aire de la casa. Téngalos en una habitación alejada, con la puerta cerrada, mientras manipula materiales secos y mientras el horno cerámico está cociendo.
 - En las peceras se acumula el polvo que se posa. Manténgalas fuera del taller, y tapadas.
 - Mantenga los comederos y bebederos de las mascotas lejos del taller y del horno, y use cuencos comerciales o ensayados, no experimentos del taller.
@@ -165,7 +165,7 @@ Las fuentes no coinciden en la distancia de seguridad. Rio Grande indica al meno
 
 Rio Grande recomienda un **circuito independiente** (uno que no alimente nada más), con una toma de corriente bien conectada a tierra. Le recomendamos no usar alargadores. Entre cocciones, desconecte el interruptor automático o el seccionador del horno, o desenchúfelo, para que un niño no pueda ponerlo en marcha.
 
-### Quédese hasta el final de la cocción
+### Esté presente al final de la cocción
 
 Un **kiln sitter** es el interruptor mecánico de muchos hornos manuales: un cono{{en: cone}} pequeño se dobla al final de la cocción y hace saltar el interruptor. Su manual dice que «NO está pensado para funcionar como dispositivo de apagado a prueba de fallos». Rio Grande dice que nunca se deje sin vigilancia un horno que está cociendo, «sobre todo cerca de la hora prevista de apagado». Así que cueza solo cuando vaya a haber un adulto en casa y despierto al final de la cocción, compruebe que el horno se ha apagado y tenga un extintor ABC en la sala del horno. Para saber cómo funcionan los kiln sitters, los programadores y las curvas de cocción, vea [La cocción en un horno sencillo](/guides/firing).
 

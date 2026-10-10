@@ -1,0 +1,154 @@
+{
+  "version": {
+    "cones": "Tento návod je zobrazen pro výpal na žároměrky, jak máte v nastavení.",
+    "temperature": "Tento návod je zobrazen pro výpal podle teploty, jak máte v nastavení.",
+    "showTemperature": "Zobrazit pro výpal podle teploty",
+    "showCones": "Zobrazit pro výpal na žároměrky"
+  },
+  "notTranslated": "Tento návod zatím není přeložený, proto se zobrazuje v angličtině.",
+  "sectionInEnglish": "Tato část se od překladu změnila, proto se zobrazuje v angličtině, dokud nebude její překlad aktualizován.",
+  "list": {
+    "title": "Návody",
+    "lead": "Návody srozumitelným jazykem pro začínající keramiky: od toho, co je glazura, až po její výpal, a jak přitom zajistit bezpečnost všech.",
+    "note": "Tyto návody shrnují, co zveřejňují výrobci, úřady pro bezpečnost a zkušení keramici, a na konci každého z nich jsou uvedeny zdroje. Jsou výchozím bodem, ne náhradou za bezpečnostní listy vašich surovin, návod k obsluze vaší pece nebo místní předpisy.",
+    "glazingBasics": {
+      "title": "Glazování od základů",
+      "text": "Co je glazura, jak se taví, a vysvětlení všech slov, na která narazíte v receptu nebo na obalu."
+    },
+    "makingAGlaze": {
+      "title": "Jak připravit glazuru",
+      "text": "Nákup, skladování, vážení, míchání a prosévání glazury, potom její zkoušení a vedení záznamů."
+    },
+    "safeMixing": {
+      "title": "Bezpečné míchání a větrání",
+      "text": "Prach, respirátory, úklid, suroviny, které vyžadují největší opatrnost, a větrání pece."
+    },
+    "homeSafety": {
+      "title": "Neotravte svou rodinu",
+      "text": "Keramika doma s dětmi a domácími zvířaty: skladování, prach, pec a co dělat, když dojde ke spolknutí."
+    },
+    "firing": {
+      "title": "Výpal v jednoduché peci",
+      "text": "Žároměrky, vypínače Kiln-Sitter a ruční přepínače, s vypalovacími křivkami pro přežah a glazurový výpal."
+    }
+  },
+  "contents": "Na této stránce",
+  "poison": {
+    "numbersFor": "Telefonní čísla v zemi",
+    "choose": "Vyberte svou zemi",
+    "label": "Kam volat v zemi {region}",
+    "caption": "Kam volat v zemi {region} (čísla ověřena {date})",
+    "for": "Účel",
+    "call": "Volejte",
+    "notes": "Provozní doba a poznámky",
+    "emergency": "Tísňová situace: bezvědomí, zástava dechu, záchvat křečí",
+    "poisonAdvice": "{who, select, children {Poradenství při otravách: {name} (jen pro děti)} other {Poradenství při otravách: {name}}}",
+    "or": "nebo {number}",
+    "online": "Na internetu: <link>{name}</link>.",
+    "poisonAdviceNone": "Poradenství při otravách",
+    "noLine": "Veřejnou toxikologickou linku se nám v této zemi nepodařilo ověřit. Zavolejte svému lékaři, nebo, je-li to naléhavé, na tísňovou linku.",
+    "medicalAdvice": "Lékařské poradenství: {name}",
+    "animals": "Zvířata: {name}",
+    "animalsNone": "Zvířata",
+    "vet": "Zavolejte svému veterináři.",
+    "checkedOn": "Ověřeno na stránkách:",
+    "choosePrompt": "Vyberte svou zemi a zobrazí se, kam tam volat.",
+    "ministry": "Stránka ministerstva zdravotnictví: <link>{name}</link>."
+  },
+  "density": {
+    "sg": "měrná hmotnost {value}",
+    "baume": "{value} °Bé ({sg})",
+    "pint": "{value} oz na britskou pintu ({sg})"
+  },
+  "shops": {
+    "shopsIn": "Obchody v zemi",
+    "label": "Obchody v zemi {region}",
+    "caption": "Některé obchody se surovinami pro glazury v zemi {region} (ověřeno {date})",
+    "nearbyCaption": "Obchody jinde, které uvádějí, že dodávají do země {region} (ověřeno {date})",
+    "shop": "Obchod",
+    "sells": "Sortiment",
+    "packs": "Zjištěná balení",
+    "seen": "Zjištěné suroviny, s názvy podle obchodu",
+    "what": {
+      "materials": "suroviny pro glazury",
+      "frits": "frity",
+      "oxides": "oxidy",
+      "stains": "barvítka",
+      "clays": "hlíny",
+      "glazes": "hotové glazury",
+      "kilns": "pece"
+    },
+    "none": "V zemi {region} jsme nenašli žádný obchod se surovinami pro glazury.",
+    "unknown": "Obchody v zemi {region} jsme zatím nehledali.",
+    "choosePrompt": "Vyberte svou zemi a zobrazí se tamní obchody."
+  },
+  "silica": {
+    "limitIn": "Limit v zemi",
+    "label": "Limit pro oxid křemičitý v zemi {region}",
+    "caption": "Limit na pracovišti pro respirabilní krystalický oxid křemičitý v zemi {region}, průměr za 8 hodin (ověřeno {date})",
+    "both": "Křemen a cristobalit",
+    "quartz": "Křemen",
+    "cristobalite": "Cristobalit",
+    "actionLevel": "Akční hodnota",
+    "value": "{value} mg/m³",
+    "kind": {
+      "binding": "Závazný limit.",
+      "indicative": "Orientační limit: vodítko, ne zákonná horní hranice.",
+      "assessment": "Hodnoticí kritérium, ne závazný limit."
+    },
+    "setBy": "Tento limit stanoví <link>{law}</link>.",
+    "lowerThanEu": "Je nižší než závazný limit EU ve výši {value} mg/m³.",
+    "sameAsEu": "Je stejný jako závazný limit EU.",
+    "unknown": "Národní limit v zemi {region} se nám nepodařilo ověřit. Závazný limit EU ve výši {value} mg/m³ platí v každém členském státě.",
+    "noData": "Limit v zemi {region} jsme zatím neověřili.",
+    "agency": "Národní úřad pro bezpečnost práce: <link>{name}</link>.",
+    "agencySilica": "Jeho <link>stránka o oxidu křemičitém</link>.",
+    "choosePrompt": "Vyberte svou zemi a zobrazí se její limit."
+  },
+  "food": {
+    "rulesIn": "Pravidla v zemi",
+    "label": "Limity pro keramické předměty v zemi {region}",
+    "caption": "Kolik smí vypálený kus uvolnit při zákonem předepsané zkoušce v zemi {region} (ověřeno {date})",
+    "article": "Druh předmětu",
+    "lead": "Olovo",
+    "cadmium": "Kadmium",
+    "category": {
+      "flat": "Předměty, které nelze plnit, nebo s hloubkou nejvýše 25 mm",
+      "fillable": "Ostatní předměty, které lze plnit",
+      "cooking": "Kuchyňské nádobí; obaly a skladovací nádoby o objemu větším než 3 L",
+      "rimBand": "Okraj nádoby na pití: pás široký 2 cm, uvnitř i vně",
+      "rimArticle": "Okraj nádoby na pití: pás široký 20 mm podél horního okraje na vnější straně, na kus",
+      "flatware": "Ploché nádobí, hloubka nejvýše 25 mm",
+      "smallHollow": "Malé duté nádobí pod 1,1 L, kromě šálků a hrnků",
+      "cups": "Šálky a hrnky",
+      "largeHollow": "Velké duté nádobí od 1,1 L, kromě džbánů",
+      "pitchers": "Džbány",
+      "auSmall": "Šálky, hrnky, džbány, misky, čajové konvice a jiné stolní nádobí pod 1100 mL",
+      "auLarge": "Totéž, od 1100 mL",
+      "auPlates": "Talíře, podšálky a podobné stolní nádobí",
+      "auCooking": "Kuchyňské nádobí"
+    },
+    "judged": {
+      "average": "průměr ze 6 kusů",
+      "each": "každý ze 6 kusů"
+    },
+    "euRules": "Platí zde pravidla EU.",
+    "law": "Tyto limity stanoví <link>{law}</link>.",
+    "inForce": "Platí od {date}.",
+    "unknown": "Pravidla v zemi {region} jsme zatím neověřili.",
+    "choosePrompt": "Vyberte svou zemi a zobrazí se její pravidla."
+  },
+  "equivalents": {
+    "buyingIn": "Nákup v zemi",
+    "label": "{library, select, US {Náhrady prodávané v USA} UK {Náhrady prodávané ve Spojeném království} EU {Náhrady prodávané v EU} other {Náhrady prodávané v Austrálii a na Novém Zélandu}}",
+    "caption": "{library, select, US {Suroviny, které se v USA neprodávají, a ke každé nejbližší surovina, která se tam prodává} UK {Suroviny, které se ve Spojeném království neprodávají, a ke každé nejbližší surovina, která se tam prodává} EU {Suroviny, které se v EU neprodávají, a ke každé nejbližší surovina, která se tam prodává} other {Suroviny, které se v Austrálii a na Novém Zélandu neprodávají, a ke každé nejbližší surovina, která se tam prodává}}",
+    "material": "V receptu",
+    "soldIn": "Prodává se v",
+    "closest": "{library, select, US {Nejbližší surovina prodávaná v USA} UK {Nejbližší surovina prodávaná ve Spojeném království} EU {Nejbližší surovina prodávaná v EU} other {Nejbližší surovina prodávaná v Austrálii a na Novém Zélandu}}",
+    "apart": "liší se o {grams} g na 100 g",
+    "noneClose": "Nic s rozdílem do 15 g na 100 g: porovnejte podle chemického složení.",
+    "loading": "Načítá se knihovna…",
+    "failed": "Knihovnu se nepodařilo načíst. Zkuste to později znovu.",
+    "choosePrompt": "Vyberte svou zemi a zobrazí se, co se tam prodává."
+  }
+}

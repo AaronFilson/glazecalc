@@ -142,7 +142,7 @@ A Pet Poison Helpline diz que «O chumbo é tóxico para todas as espécies, mas
 
 - Mantenha os animais fora do atelier, com a porta fechada.
 - Os cães roem sacos e bebem dos baldes. Guarde os sacos num armário fechado e ponha uma tampa em cada balde.
-- Os gatos andam pelo pó e lambem-no das patas e do pelo. Limpe o chão a húmido e mantenha os gatos fora, para que não fique nada para lamberem quando se limpam.
+- Os gatos andam pelo pó e lambem-no das patas e do pelo. Limpe o chão a húmido e mantenha os gatos fora do atelier, para que não fique nada para lamberem quando se limpam.
 - As aves e os pequenos mamíferos (coelhos, porquinhos-da-índia, hamsters) partilham o ar da casa. Mantenha-os numa divisão afastada, com a porta fechada, enquanto manuseia matérias-primas secas e enquanto o forno estiver a cozer.
 - Os aquários acumulam o pó que assenta. Mantenha-os fora do atelier, e tapados.
 - Mantenha as tigelas da comida e da água dos animais longe do atelier e do forno, e use tigelas comerciais ou testadas, não experiências do atelier.
@@ -165,7 +165,7 @@ As fontes não concordam quanto à distância de segurança. A Rio Grande diz pe
 
 A Rio Grande recomenda um **circuito dedicado** (um circuito que não alimenta mais nada) com uma tomada devidamente ligada à terra. Sugerimos não usar extensões. Entre cozeduras, desligue o disjuntor ou o interruptor seccionador do forno, ou tire a ficha da tomada, para que uma criança não o consiga ligar.
 
-### Fique até ao fim da cozedura
+### Esteja presente no fim da cozedura
 
 Um **kiln sitter** (interruptor de cone) é o interruptor mecânico de muitos fornos manuais: um pequeno cone dobra-se no fim da cozedura e faz disparar o interruptor, que desliga o forno. O seu manual diz que «NÃO se destina a funcionar como dispositivo de corte de segurança à prova de falhas». A Rio Grande diz para nunca deixar sem vigilância um forno em cozedura, «sobretudo perto da hora prevista para desligar». Por isso, coza apenas quando houver um adulto em casa e acordado no fim da cozedura, confirme que o forno se desligou e tenha um extintor ABC na divisão do forno. Para saber como funcionam os kiln sitters, os controladores e as curvas de cozedura, veja [Cozer num forno simples](/guides/firing).
 

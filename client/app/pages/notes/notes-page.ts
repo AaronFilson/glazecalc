@@ -53,12 +53,12 @@ import { Removal, RemoveButton } from '../../shared/remove-button';
     <br />
 
     <section class="tech-info">
-      <h3>{{ t('notebook.notes.mineHeading') }}</h3>
+      <h2 class="h3">{{ t('notebook.notes.mineHeading') }}</h2>
       <ul class="my-notes">
         @for (note of notes(); track note._id) {
           <li>
             <b>{{ note.title }}</b>
-            <p>{{ note.content }}</p>
+            <p class="keep-lines">{{ note.content }}</p>
             <gc-remove-button
               [name]="removal.nameOf(note)"
               [busy]="removal.isPending(note)"

@@ -1,0 +1,50 @@
+{
+  "common": {
+    "formulaHelp": "Vzorec zadejte obyčejnými číslicemi, například {typed}: počty se zobrazí jako dolní indexy, {shown}. Chcete-li spojit části vzorce, jako ve vzorci {joined}, zkopírujte tuto tečku:",
+    "relatedTo": "Souvisí s:",
+    "notes": "Poznámky:",
+    "loi": "Ztráta žíháním – ZŽ (v procentech):",
+    "molecularWeight": "Molární hmotnost vzorce před výpalem (použije se, jen když je pole ZŽ prázdné):",
+    "formulaHeading": "Zadejte vzorec (po výpalu):",
+    "oxideSelection": "Výběr oxidu",
+    "noOxide": "žádný",
+    "addOxide": "Přidat oxid do seznamu",
+    "formulaIn": "Zápis vzorce:",
+    "percent": "Procenta",
+    "molecular": "Molekulový / Segerův vzorec",
+    "amount": "Množství:",
+    "removeOxide": "Odebrat ze vzorce",
+    "save": "Uložit",
+    "elements": "Prvky",
+    "removeNote": "Uložené recepty mají vlastní kopii, takže se nezmění.",
+    "saveFailed": "Chyba: požadavek na server se nezdařil."
+  },
+  "material": {
+    "title": "Suroviny",
+    "lead": "Vaše vlastní suroviny, zadané chemickým vzorcem nebo oxidovým rozborem.",
+    "newHeading": "Údaje o nové surovině",
+    "name": "Název suroviny:",
+    "rawFormula": "Vzorec před výpalem:",
+    "weightsNote": "Ekvivalentní hmotnost a hmotnost po výpalu se při uložení vypočítají ze vzorce a ztráty žíháním (ZŽ).",
+    "mineHeading": "Moje suroviny:",
+    "rawFormulaColumn": "Vzorec před výpalem",
+    "standardHeading": "Standardní suroviny:",
+    "fetchFailed": "Při načítání údajů o surovinách došlo k chybě.",
+    "standardFetchFailed": "Při načítání údajů o standardních surovinách došlo k chybě.",
+    "saved": "Hotovo. Surovina byla přidána do databáze."
+  },
+  "additive": {
+    "title": "Přísady a barviva",
+    "lead": "Barviva a kaliva, která se odvažují navíc k základnímu receptu, například oxid kobaltu nebo cínu. Recept je může ze Segerova vzorce (UMF) vynechat, nebo je do něj započítat.",
+    "newHeading": "Údaje o nové přísadě",
+    "name": "Název přísady:",
+    "formulaAsSold": "Vzorec, jak se prodává:",
+    "noChemistry": "Nemá oxidový rozbor, například komerční barvítko: vynechat ze Segerova vzorce",
+    "firedNote": "Zadejte, co dává glazuře po výpalu: černý oxid kobaltu, {asSold}, je {fired} se ztrátou žíháním {loi} %. Recept ji pak může započítat do Segerova vzorce.",
+    "mineHeading": "Moje přísady a barviva:",
+    "standardHeading": "Standardní přísady:",
+    "fetchFailed": "Při načítání údajů o přísadách došlo k chybě.",
+    "standardFetchFailed": "Při načítání údajů o standardních přísadách došlo k chybě.",
+    "saved": "Hotovo. Přísada byla přidána do databáze."
+  }
+}

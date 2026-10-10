@@ -31,7 +31,8 @@ export const mochaHooks = {
   }
 };
 
-const base = (): string => 'http://127.0.0.1:' + (server.address() as AddressInfo).port;
+/** Where the app under test listens: http://127.0.0.1:<port>. */
+export const base = (): string => 'http://127.0.0.1:' + (server.address() as AddressInfo).port;
 
 export const expect = chai.expect;
 

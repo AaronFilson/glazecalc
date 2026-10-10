@@ -19,7 +19,7 @@ export function useCodedMessages(service: TranslocoService | null): void {
 
 /** The translation of a coded message, or null where the page's language has none. */
 export function codedMessage(
-  scope: 'server' | 'chemistry' | 'safety' | 'records',
+  scope: 'server' | 'chemistry' | 'safety' | 'regions' | 'records',
   code: string,
   params: Record<string, string | number> = {}
 ): string | null {

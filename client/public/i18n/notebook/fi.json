@@ -1,0 +1,88 @@
+{
+  "home": {
+    "title": "Pajan muistikirja",
+    "signedInAs": "Kirjautuneena: {email}.",
+    "trying": "Glazecalcin kokeilu nimellä {name}. Aloita reseptistä.",
+    "welcomeBack": "Jatka työtä siitä, mihin se jäi.",
+    "sections": {
+      "recipe": {
+        "title": "Reseptit",
+        "text": "Kokoa lasite raaka-aineista ja määristä, katso sen Segerin kaava (UMF) ja tallenna se."
+      },
+      "material": {
+        "title": "Raaka-aineet",
+        "text": "Lisää omia raaka-aineita kemiallisesta kaavasta tai toimittajan analyysistä."
+      },
+      "additive": {
+        "title": "Lisäaineet ja väriaineet",
+        "text": "Pidä tallessa väriaineet ja opalisoivat aineet, jotka lisätään pohjalasitteeseen."
+      },
+      "firing": {
+        "title": "Polttopäiväkirjat",
+        "text": "Kirjaa jokaisen polton ajat, lämpötilat ja keilat."
+      },
+      "notes": {
+        "title": "Muistiinpanot",
+        "text": "Pidä tallessa koetulokset ja kaikki muu, mikä kannattaa muistaa."
+      },
+      "advice": {
+        "title": "Lasiteneuvot",
+        "text": "Vinkkejä sekoittamiseen, lasittamiseen ja polttamiseen sekä omat neuvot."
+      },
+      "guides": {
+        "title": "Oppaat",
+        "text": "Siitä, mikä lasite on, aina sen polttamiseen asti, ja miten kaikki pysyvät turvassa matkan varrella."
+      }
+    },
+    "newHere": "Onko Segerin kaava uusi asia? <advice>Neuvosivulla</advice> selitetään perusteet, ja <about>Tietoja-sivulla</about> kerrotaan, miten Glazecalc toimii."
+  },
+  "firing": {
+    "title": "Polttopäiväkirjat",
+    "lead": "Kirjaa jokainen poltto: ajat, lämpötilat, keilat ja uunia koskevat huomiot.",
+    "titleLabel": "Polton nimi:",
+    "kiln": "Uuni:",
+    "date": "Polton päivämäärä:",
+    "notes": "Muistiinpanot poltosta:",
+    "fieldSelect": "Valitse ja lisää kenttiä polttopäiväkirjaan:",
+    "addField": "Lisää kenttä",
+    "included": "Lisätyt kentät:",
+    "fieldName": "Kentän nimi: {name}",
+    "moveLeft": "Siirrä kenttää vasemmalle",
+    "moveRight": "Siirrä kenttää oikealle",
+    "removeField": "Poista kenttä",
+    "addRow": "Lisää rivi polttotaulukkoon",
+    "recordHeading": "Kirjaa poltto",
+    "rowActions": "Rivin toiminnot",
+    "cell": "{field}, rivi {row}",
+    "removeRow": "Poista rivi",
+    "save": "Tallenna",
+    "storedHeading": "Omat tallennetut poltot:",
+    "stored": "Nimi: {title}, uuni: {kiln}, päivämäärä: {date}",
+    "storedNotes": "Muistiinpanot: {notes}",
+    "titleMissing": "Anna poltolle nimi.",
+    "fieldsMissing": "Lisää vähintään yksi kirjattava kenttä, esimerkiksi {example}.",
+    "chooseField": "Valitse lisättävä kenttä ja valitse sitten Lisää kenttä.",
+    "fetchFailed": "Polttopäiväkirjojen tietojen hakemisessa tapahtui virhe.",
+    "saved": "Polton kirjaus lisättiin palvelimelle.",
+    "saveFailed": "Virhe: pyyntö palvelimelle ei onnistunut."
+  },
+  "notes": {
+    "title": "Muistiinpanot",
+    "lead": "Kaikki muu, mikä omista lasitteista kannattaa muistaa.",
+    "intro": "Tämä on muistiinpanosivu. Täällä voi kirjoittaa muistiinpanoja ja tallentaa ne.",
+    "titleLabel": "Otsikko:",
+    "content": "Muistiinpano:",
+    "save": "Tallenna",
+    "mineHeading": "Omat tallennetut muistiinpanot:",
+    "titleMissing": "Anna muistiinpanolle otsikko.",
+    "contentMissing": "Kirjoita muistiinpano.",
+    "untitled": "Nimetön muistiinpano",
+    "fetchFailed": "Muistiinpanojen tietojen hakemisessa tapahtui virhe.",
+    "saved": "Muistiinpano lisättiin palvelimelle.",
+    "saveFailed": "Virhe: pyyntö palvelimelle ei onnistunut."
+  },
+  "trash": {
+    "title": "Roskakori",
+    "comingSoon": "Roskakori tulee pian Glazecalcin seuraavaan versioon. Siihen asti käytä poistamista harkiten: kun tieto on poistettu, se on menetetty."
+  }
+}

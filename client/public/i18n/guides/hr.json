@@ -1,0 +1,154 @@
+{
+  "version": {
+    "cones": "Ovaj vodič prikazan je za pečenje na stošce, kako je postavljeno u postavkama.",
+    "temperature": "Ovaj vodič prikazan je za pečenje po temperaturi, kako je postavljeno u postavkama.",
+    "showTemperature": "Prikaži za pečenje po temperaturi",
+    "showCones": "Prikaži za pečenje na stošce"
+  },
+  "notTranslated": "Ovaj vodič još nije preveden, pa je prikazan na engleskom.",
+  "sectionInEnglish": "Ovaj se odjeljak promijenio otkako je preveden, pa je prikazan na engleskom dok se njegov prijevod ne ažurira.",
+  "list": {
+    "title": "Vodiči",
+    "lead": "Vodiči jednostavnim jezikom za one koji tek počinju s keramikom: od toga što je glazura do njezina pečenja, uz brigu da svi pritom ostanu sigurni.",
+    "note": "Ovi vodiči okupljaju ono što objavljuju proizvođači, agencije za sigurnost i osobe s mnogo iskustva u keramici, a izvori su navedeni na kraju svakoga od njih. Oni su polazna točka, a ne zamjena za sigurnosno-tehničke listove vaših sirovina, upute za uporabu vaše peći ili lokalne propise.",
+    "glazingBasics": {
+      "title": "Glaziranje od samih osnova",
+      "text": "Što je glazura, kako se tali i što znači svaka riječ koju ćete sresti u receptu ili na vreći."
+    },
+    "makingAGlaze": {
+      "title": "Kako napraviti glazuru",
+      "text": "Kupnja, čuvanje, vaganje, miješanje i prosijavanje glazure, zatim njezino isprobavanje i vođenje zapisa."
+    },
+    "safeMixing": {
+      "title": "Sigurno miješanje i ventilacija",
+      "text": "Prašina, zaštitne maske, čišćenje, sirovine koje traže najviše opreza i odzračivanje peći."
+    },
+    "homeSafety": {
+      "title": "Ne otrujte svoju obitelj",
+      "text": "Keramika kod kuće uz djecu i kućne ljubimce: čuvanje, prašina, peć i što učiniti ako se nešto proguta."
+    },
+    "firing": {
+      "title": "Pečenje u jednostavnoj peći",
+      "text": "Stošci, Kiln-Sitter i ručne sklopke, s programima za biskvitno i glazurno pečenje."
+    }
+  },
+  "contents": "Na ovoj stranici",
+  "poison": {
+    "numbersFor": "Brojevi za",
+    "choose": "Odaberite svoju zemlju",
+    "label": "Koga nazvati: {region}",
+    "caption": "Koga nazvati: {region} (brojevi provjereni {date})",
+    "for": "Za što",
+    "call": "Nazovite",
+    "notes": "Radno vrijeme i napomene",
+    "emergency": "Hitan slučaj: gubitak svijesti, prestanak disanja, napadaj grčeva",
+    "poisonAdvice": "{who, select, children {Savjeti pri otrovanju: {name} (samo za djecu)} other {Savjeti pri otrovanju: {name}}}",
+    "or": "ili {number}",
+    "online": "Na internetu: <link>{name}</link>.",
+    "poisonAdviceNone": "Savjeti pri otrovanju",
+    "noLine": "Za ovu zemlju nismo mogli potvrditi javnu telefonsku liniju za otrovanja. Nazovite svog liječnika ili, ako je hitno, broj za hitne slučajeve.",
+    "medicalAdvice": "Liječnički savjet: {name}",
+    "animals": "Životinje: {name}",
+    "animalsNone": "Životinje",
+    "vet": "Nazovite svog veterinara.",
+    "checkedOn": "Provjereno na:",
+    "choosePrompt": "Odaberite svoju zemlju da biste vidjeli koga ondje nazvati.",
+    "ministry": "Stranica ministarstva zdravstva: <link>{name}</link>."
+  },
+  "density": {
+    "sg": "rel. gustoća {value}",
+    "baume": "{value} °Bé ({sg})",
+    "pint": "{value} oz po britanskoj pinti ({sg})"
+  },
+  "shops": {
+    "shopsIn": "Trgovine u",
+    "label": "Trgovine: {region}",
+    "caption": "Neke trgovine koje prodaju sirovine za glazure: {region} (provjereno {date})",
+    "nearbyCaption": "Trgovine u drugim zemljama koje navode da dostavljaju u ovu zemlju: {region} (provjereno {date})",
+    "shop": "Trgovina",
+    "sells": "U ponudi",
+    "packs": "Viđena pakiranja",
+    "seen": "Viđene sirovine, pod nazivima trgovine",
+    "what": {
+      "materials": "sirovine za glazure",
+      "frits": "frite",
+      "oxides": "oksidi",
+      "stains": "keramički pigmenti",
+      "clays": "glina",
+      "glazes": "gotove glazure",
+      "kilns": "peći"
+    },
+    "none": "U ovoj zemlji ({region}) nismo pronašli nijednu trgovinu koja prodaje sirovine za glazure.",
+    "unknown": "Trgovine u ovoj zemlji ({region}) još nismo tražili.",
+    "choosePrompt": "Odaberite svoju zemlju da biste vidjeli trgovine u njoj."
+  },
+  "silica": {
+    "limitIn": "Granična vrijednost u",
+    "label": "Granična vrijednost za silicijev dioksid: {region}",
+    "caption": "Granična vrijednost izloženosti na radnom mjestu za respirabilnu prašinu kristalnog silicijeva dioksida, prosjek za 8 sati: {region} (provjereno {date})",
+    "both": "Kvarc i kristobalit",
+    "quartz": "Kvarc",
+    "cristobalite": "Kristobalit",
+    "actionLevel": "Akcijska razina",
+    "value": "{value} mg/m³",
+    "kind": {
+      "binding": "Obvezujuća granična vrijednost.",
+      "indicative": "Indikativna granična vrijednost: orijentacijska vrijednost, a ne zakonska gornja granica.",
+      "assessment": "Mjerilo za procjenu, a ne obvezujuća granična vrijednost."
+    },
+    "setBy": "Utvrđeno propisom: <link>{law}</link>.",
+    "lowerThanEu": "Niža od obvezujuće granične vrijednosti EU-a od {value} mg/m³.",
+    "sameAsEu": "Jednaka obvezujućoj graničnoj vrijednosti EU-a.",
+    "unknown": "Nismo mogli potvrditi nacionalnu graničnu vrijednost u ovoj zemlji ({region}). Obvezujuća granična vrijednost EU-a od {value} mg/m³ primjenjuje se u svakoj državi članici.",
+    "noData": "Graničnu vrijednost u ovoj zemlji ({region}) još nismo potvrdili.",
+    "agency": "Nacionalno tijelo za zaštitu na radu: <link>{name}</link>.",
+    "agencySilica": "Njegova <link>stranica o silicijevu dioksidu</link>.",
+    "choosePrompt": "Odaberite svoju zemlju da biste vidjeli njezinu graničnu vrijednost."
+  },
+  "food": {
+    "rulesIn": "Propisi u",
+    "label": "Granične vrijednosti za keramičke proizvode: {region}",
+    "caption": "Koliko pečeni predmet smije otpustiti u propisanom ispitivanju: {region} (provjereno {date})",
+    "article": "Vrsta proizvoda",
+    "lead": "Olovo",
+    "cadmium": "Kadmij",
+    "category": {
+      "flat": "Proizvodi koji se ne mogu napuniti ili čija dubina ne premašuje 25 mm",
+      "fillable": "Drugi proizvodi koji se mogu napuniti",
+      "cooking": "Posuđe za kuhanje bilo koje veličine; ambalažno posuđe i posuđe za čuvanje hrane zapremnine veće od 3 L",
+      "rimBand": "Rub posude za piće: pojas širine 2 cm, iznutra i izvana",
+      "rimArticle": "Rub posude za piće: pojas od 20 mm s vanjske strane gornjeg ruba, po komadu",
+      "flatware": "Plitko posuđe, dubine najviše 25 mm",
+      "smallHollow": "Malo duboko posuđe, manje od 1,1 L, osim šalica i krigli",
+      "cups": "Šalice i krigle",
+      "largeHollow": "Veliko duboko posuđe, 1,1 L ili više, osim vrčeva",
+      "pitchers": "Vrčevi",
+      "auSmall": "Šalice, krigle, vrčevi, zdjele, čajnici i drugo stolno posuđe zapremnine manje od 1100 mL",
+      "auLarge": "Isto, zapremnine 1100 mL ili više",
+      "auPlates": "Tanjuri, tanjurići i slično stolno posuđe",
+      "auCooking": "Posuđe za kuhanje"
+    },
+    "judged": {
+      "average": "prosjek 6 komada",
+      "each": "svaki od 6 komada"
+    },
+    "euRules": "Ovdje se primjenjuju propisi EU-a.",
+    "law": "Utvrđeno propisom: <link>{law}</link>.",
+    "inForce": "Na snazi od {date}.",
+    "unknown": "Propise u ovoj zemlji ({region}) još nismo potvrdili.",
+    "choosePrompt": "Odaberite svoju zemlju da biste vidjeli njezine propise."
+  },
+  "equivalents": {
+    "buyingIn": "Kupnja u",
+    "label": "{library, select, US {Zamjenske sirovine koje se prodaju u SAD-u} UK {Zamjenske sirovine koje se prodaju u Ujedinjenom Kraljevstvu} EU {Zamjenske sirovine koje se prodaju u EU-u} other {Zamjenske sirovine koje se prodaju u Australiji i na Novom Zelandu}}",
+    "caption": "{library, select, US {Sirovine koje se ne prodaju u SAD-u, svaka uz najsličniju koja se ondje prodaje} UK {Sirovine koje se ne prodaju u Ujedinjenom Kraljevstvu, svaka uz najsličniju koja se ondje prodaje} EU {Sirovine koje se ne prodaju u EU-u, svaka uz najsličniju koja se ondje prodaje} other {Sirovine koje se ne prodaju u Australiji i na Novom Zelandu, svaka uz najsličniju koja se ondje prodaje}}",
+    "material": "U receptu",
+    "soldIn": "Prodaje se u",
+    "closest": "{library, select, US {Najsličnija sirovina koja se prodaje u SAD-u} UK {Najsličnija sirovina koja se prodaje u Ujedinjenom Kraljevstvu} EU {Najsličnija sirovina koja se prodaje u EU-u} other {Najsličnija sirovina koja se prodaje u Australiji i na Novom Zelandu}}",
+    "apart": "razlikuje se za {grams} g na 100 g",
+    "noneClose": "Ništa unutar 15 g na 100 g: usporedite po kemijskom sastavu.",
+    "loading": "Učitavanje biblioteke…",
+    "failed": "Biblioteku nije moguće učitati. Pokušajte ponovno kasnije.",
+    "choosePrompt": "Odaberite svoju zemlju da biste vidjeli što se ondje prodaje."
+  }
+}

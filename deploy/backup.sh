@@ -13,7 +13,11 @@ region=$(curl -fsS -H "X-aws-ec2-metadata-token: $token" http://169.254.169.254/
 bucket=$(aws ssm get-parameter --region "$region" --name /glazecalc/backup-bucket --query Parameter.Value --output text)
 
 key="mongodump/glazecalc-$(date -u +%Y-%m-%dT%H%M%SZ).archive.gz"
-# pipefail makes a failed dump fail the whole job, not just the upload.
-docker compose -f compose.prod.yaml exec -T mongo mongodump --db glazecalc --archive --gzip --quiet \
-  | aws s3 cp - "s3://$bucket/$key" --region "$region" --only-show-errors
-echo "Backup written to s3://$bucket/$key"
+# The dump goes to a local file first and is uploaded only once mongodump has
+# finished: streamed straight to S3, a dump that failed part way would still
+# be stored, cut short, under a normal name.
+dump=$(mktemp /var/tmp/glazecalc-dump.XXXXXX)
+trap 'rm -f "$dump"' EXIT
+docker compose -f compose.prod.yaml exec -T mongo mongodump --db glazecalc --archive --gzip --quiet > "$dump"
+aws s3 cp "$dump" "s3://$bucket/$key" --region "$region" --only-show-errors
+echo "Backup written to s3://$bucket/$key ($(stat -c %s "$dump") bytes)"

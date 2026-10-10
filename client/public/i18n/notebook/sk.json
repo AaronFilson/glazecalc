@@ -1,0 +1,88 @@
+{
+  "home": {
+    "title": "Váš dielenský zápisník",
+    "signedInAs": "Prihlásený účet: {email}.",
+    "trying": "Skúšate aplikáciu Glazecalc ako {name}. Začnite receptom.",
+    "welcomeBack": "Pokračujte tam, kde ste prestali.",
+    "sections": {
+      "recipe": {
+        "title": "Recepty",
+        "text": "Zostavte glazúru zo surovín a ich množstiev, pozrite si jej Segerov vzorec (UMF) a uložte ju."
+      },
+      "material": {
+        "title": "Suroviny",
+        "text": "Pridajte vlastné suroviny podľa chemického vzorca alebo analýzy od dodávateľa."
+      },
+      "additive": {
+        "title": "Prísady a farbivá",
+        "text": "Ukladajte si farbivá a kalivá, ktoré pridávate navyše k základnej glazúre."
+      },
+      "firing": {
+        "title": "Záznamy výpalov",
+        "text": "Zaznamenávajte časy, teploty a kužele pri každom výpale."
+      },
+      "notes": {
+        "title": "Poznámky",
+        "text": "Uchovávajte výsledky skúšok a všetko ostatné, čo stojí za zapamätanie."
+      },
+      "advice": {
+        "title": "Rady ku glazúram",
+        "text": "Tipy na miešanie, glazovanie a výpal a vaše vlastné rady."
+      },
+      "guides": {
+        "title": "Návody",
+        "text": "Od toho, čo je glazúra, až po jej výpal, a ako pritom udržať všetkých v bezpečí."
+      }
+    },
+    "newHere": "Segerov vzorec<en>unity formula</en> je pre vás nový? Základy vysvetľuje <advice>stránka s radami</advice> a to, ako Glazecalc funguje, opisuje <about>stránka o aplikácii</about>."
+  },
+  "firing": {
+    "title": "Záznamy výpalov",
+    "lead": "Zaznamenajte každý výpal: časy, teploty, kužele a poznámky k peci.",
+    "titleLabel": "Názov výpalu:",
+    "kiln": "Pec:",
+    "date": "Dátum výpalu:",
+    "notes": "Poznámky k výpalu:",
+    "fieldSelect": "Vyberte a pridajte polia do záznamu výpalu:",
+    "addField": "Pridať pole",
+    "included": "Polia, ktoré ste pridali:",
+    "fieldName": "Názov poľa: {name}",
+    "moveLeft": "Posunúť pole doľava",
+    "moveRight": "Posunúť pole doprava",
+    "removeField": "Odstrániť pole",
+    "addRow": "Pridať riadok do tabuľky výpalu",
+    "recordHeading": "Zaznamenať výpal",
+    "rowActions": "Akcie s riadkom",
+    "cell": "{field}, riadok {row}",
+    "removeRow": "Odstrániť riadok",
+    "save": "Uložiť",
+    "storedHeading": "Moje uložené výpaly:",
+    "stored": "Názov: {title}, pec: {kiln}, dátum: {date}",
+    "storedNotes": "Poznámky: {notes}",
+    "titleMissing": "Zadajte názov výpalu.",
+    "fieldsMissing": "Pridajte aspoň jedno pole na zaznamenanie, napríklad {example}.",
+    "chooseField": "Vyberte pole, ktoré chcete pridať, a potom kliknite na tlačidlo Pridať pole.",
+    "fetchFailed": "Pri načítaní záznamov výpalov sa vyskytla chyba.",
+    "saved": "Záznam výpalu sa úspešne uložil na server.",
+    "saveFailed": "Chyba: požiadavka na server zlyhala."
+  },
+  "notes": {
+    "title": "Poznámky",
+    "lead": "Všetko ostatné o vašich glazúrach, čo stojí za zapamätanie.",
+    "intro": "Toto je stránka s poznámkami. Môžete si tu písať poznámky a ukladať ich.",
+    "titleLabel": "Názov:",
+    "content": "Poznámka:",
+    "save": "Uložiť",
+    "mineHeading": "Moje uložené poznámky:",
+    "titleMissing": "Zadajte názov poznámky.",
+    "contentMissing": "Napíšte text poznámky.",
+    "untitled": "Poznámka bez názvu",
+    "fetchFailed": "Pri načítaní poznámok sa vyskytla chyba.",
+    "saved": "Poznámka sa úspešne uložila na server.",
+    "saveFailed": "Chyba: požiadavka na server zlyhala."
+  },
+  "trash": {
+    "title": "Kôš",
+    "comingSoon": "Kôš pribudne čoskoro, v ďalšej verzii aplikácie Glazecalc. Dovtedy mažte a odstraňujte opatrne: keď údaje raz zmiznú, sú stratené."
+  }
+}

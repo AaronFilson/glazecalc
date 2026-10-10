@@ -1,0 +1,88 @@
+{
+  "home": {
+    "title": "Caietul dumneavoastră de atelier",
+    "signedInAs": "V-ați conectat cu {email}.",
+    "trying": "Încercați Glazecalc sub numele {name}. Începeți cu o rețetă.",
+    "welcomeBack": "Continuați de unde ați rămas.",
+    "sections": {
+      "recipe": {
+        "title": "Rețete",
+        "text": "Compuneți o glazură din materii prime și cantități, vedeți formula Seger (UMF) a acesteia și salvați-o."
+      },
+      "material": {
+        "title": "Materii prime",
+        "text": "Adăugați materii prime proprii, după o formulă chimică sau după analiza unui furnizor."
+      },
+      "additive": {
+        "title": "Aditivi și coloranți",
+        "text": "Păstrați coloranții și opacifianții pe care îi adăugați peste o glazură de bază."
+      },
+      "firing": {
+        "title": "Jurnale de ardere",
+        "text": "Înregistrați orele, temperaturile și conurile fiecărei arderi."
+      },
+      "notes": {
+        "title": "Notițe",
+        "text": "Păstrați rezultatele testelor și orice altceva care merită reținut."
+      },
+      "advice": {
+        "title": "Sfaturi despre glazuri",
+        "text": "Sfaturi despre preparare, glazurare și ardere, plus propriile dumneavoastră sfaturi."
+      },
+      "guides": {
+        "title": "Ghiduri",
+        "text": "De la ce este o glazură până la arderea ei, cu toată lumea în siguranță pe parcurs."
+      }
+    },
+    "newHere": "Formula Seger<en>unity formula</en> vă este nouă? <advice>Pagina de sfaturi</advice> explică noțiunile de bază, iar <about>pagina despre aplicație</about> arată cum funcționează Glazecalc."
+  },
+  "firing": {
+    "title": "Jurnale de ardere",
+    "lead": "Înregistrați fiecare ardere: ore, temperaturi, conuri și note despre cuptor.",
+    "titleLabel": "Titlul arderii:",
+    "kiln": "Cuptor:",
+    "date": "Data arderii:",
+    "notes": "Note despre ardere:",
+    "fieldSelect": "Selectați câmpuri și adăugați-le în jurnalul de ardere:",
+    "addField": "Adăugați câmpul",
+    "included": "Câmpurile incluse:",
+    "fieldName": "Denumirea câmpului: {name}",
+    "moveLeft": "Mutați câmpul la stânga",
+    "moveRight": "Mutați câmpul la dreapta",
+    "removeField": "Eliminați câmpul",
+    "addRow": "Adăugați un rând în tabelul arderii",
+    "recordHeading": "Înregistrați arderea",
+    "rowActions": "Acțiuni pentru rând",
+    "cell": "{field}, rândul {row}",
+    "removeRow": "Eliminați rândul",
+    "save": "Salvați",
+    "storedHeading": "Arderile mele salvate:",
+    "stored": "Titlu: {title}, cuptor folosit: {kiln}, data: {date}",
+    "storedNotes": "Note: {notes}",
+    "titleMissing": "Dați un titlu arderii.",
+    "fieldsMissing": "Adăugați cel puțin un câmp de înregistrat, de exemplu {example}.",
+    "chooseField": "Alegeți un câmp de adăugat, apoi apăsați pe „Adăugați câmpul”.",
+    "fetchFailed": "A apărut o eroare la încărcarea jurnalelor de ardere.",
+    "saved": "Jurnalul de ardere s-a adăugat cu succes pe server.",
+    "saveFailed": "Eroare: cererea către server nu a reușit."
+  },
+  "notes": {
+    "title": "Notițe",
+    "lead": "Orice altceva care merită reținut despre glazurile dumneavoastră.",
+    "intro": "Aceasta este pagina de notițe. Aici puteți lua notițe și le puteți salva.",
+    "titleLabel": "Titlu:",
+    "content": "Notița:",
+    "save": "Salvați",
+    "mineHeading": "Notițele mele salvate:",
+    "titleMissing": "Dați un titlu notiței.",
+    "contentMissing": "Scrieți notița.",
+    "untitled": "Notiță fără titlu",
+    "fetchFailed": "A apărut o eroare la încărcarea notițelor.",
+    "saved": "Notița s-a adăugat cu succes pe server.",
+    "saveFailed": "Eroare: cererea către server nu a reușit."
+  },
+  "trash": {
+    "title": "Coșul de reciclare",
+    "comingSoon": "Coșul de reciclare va fi disponibil în versiunea următoare a aplicației Glazecalc. Până atunci, ștergeți și eliminați cu grijă: odată dispărute, informațiile se pierd."
+  }
+}

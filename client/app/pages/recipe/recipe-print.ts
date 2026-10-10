@@ -1,5 +1,6 @@
-import { fixed, formatPlain, upTo } from '../../shared/format';
+import { fixed, forTyping, formatPlain, upTo } from '../../shared/format';
 import { DatePipe } from '../../shared/format-pipes';
+import { NumberInput } from '../../shared/number-input';
 import { Component, OnDestroy, OnInit, computed, inject, input, output, signal } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { TranslocoDirective, translate } from '@jsverse/transloco';
@@ -10,7 +11,7 @@ import { Recipe } from '../../core/models';
 import { PreferencesService } from '../../core/preferences.service';
 import { firstOf } from '../../shared/options';
 import { GramPrecision, WeightUnit, formatWeight, fromGrams, toGrams, unitLabel } from '../../shared/weights';
-import { BatchWeights, amountOf, batchWeights, isAmount, totalOf } from './rebase';
+import { BatchWeights, amountOf, batchWeights, formatAmount, isAmount, totalOf } from './rebase';
 import { additiveAmount, evaluate } from './recipe-analysis';
 import { UnityFormula, unityColumns } from './unity-formula';
 
@@ -99,7 +100,7 @@ export function printLines(
   };
 }
 
-/** A batch size as typed, and the unit it was typed in. */
+/** A batch size as typed (a plain number, as a number box saves it), and the unit it was typed in. */
 interface BatchSize {
   text: string;
   unit: WeightUnit;
@@ -151,7 +152,7 @@ const UNITS: ReadonlyArray<{ value: WeightUnit; label: string }> = [
  */
 @Component({
   selector: 'gc-recipe-print',
-  imports: [DatePipe, TranslocoDirective, UnityFormula],
+  imports: [DatePipe, NumberInput, TranslocoDirective, UnityFormula],
   template: `<ng-container *transloco="let t">
     <section class="print-controls no-print" aria-labelledby="print-heading">
       <h1 id="print-heading" tabindex="-1">{{ t('recipe.print.heading') }}</h1>
@@ -193,8 +194,8 @@ const UNITS: ReadonlyArray<{ value: WeightUnit; label: string }> = [
               autocomplete="off"
               [attr.aria-describedby]="batchProblem() ? 'print-batch-help print-batch-problem' : 'print-batch-help'"
               [attr.aria-invalid]="batchProblem() || null"
-              [value]="batchText()"
-              (input)="setBatch($any($event.target).value)"
+              [gcNumber]="batchText()"
+              (gcNumberChange)="setBatch($event)"
             />
             <span class="input-group-text">{{ unitLabel(unit()) }}</span>
           </div>
@@ -692,17 +693,17 @@ export class RecipePrint implements OnInit, OnDestroy {
     return notes === 'None.' ? '' : notes;
   });
 
-  /** The batch size in the account's unit: as typed, or converted when the unit has changed since. */
+  /** The batch size in the account's unit, a plain number: as typed, or converted when the unit has changed since. */
   protected readonly batchText = computed(() => {
     const { text, unit } = this.batch();
     const now = this.unit();
     if (unit === now) return text;
     const grams = toGrams(text, unit);
-    return grams ? upTo(fromGrams(grams, now), now === 'lb' ? 2 : 0) : formatPlain(text);
+    return grams ? formatAmount(fromGrams(grams, now), now === 'lb' ? 2 : 0) : text;
   });
   private readonly batchGrams = computed(() => toGrams(this.batchText(), this.unit()));
   /** A batch size to give as an example, in the unit: as the field reads it. */
-  protected readonly example = computed(() => (this.unit() === 'lb' ? '2.5' : '5000'));
+  protected readonly example = computed(() => forTyping(this.unit() === 'lb' ? '2.5' : '5000'));
   protected readonly batchProblem = computed(() => this.batchText().trim() !== '' && !this.batchGrams());
 
   private readonly precision = this.preferences.gramPrecision;

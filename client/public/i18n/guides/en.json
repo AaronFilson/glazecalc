@@ -52,11 +52,103 @@
     "animalsNone": "Animals",
     "vet": "Call your vet.",
     "checkedOn": "Checked on:",
-    "choosePrompt": "Choose your country to see who to call there."
+    "choosePrompt": "Choose your country to see who to call there.",
+    "ministry": "The health ministry's page: <link>{name}</link>."
   },
   "density": {
     "sg": "SG {value}",
     "baume": "{value} °Bé ({sg})",
     "pint": "{value} oz per imperial pint ({sg})"
+  },
+  "shops": {
+    "shopsIn": "Shops in",
+    "label": "Shops in {region}",
+    "caption": "Some shops selling raw glaze materials in {region} (checked {date})",
+    "nearbyCaption": "Shops elsewhere that say they deliver to {region} (checked {date})",
+    "shop": "Shop",
+    "sells": "Sells",
+    "packs": "Packs seen",
+    "seen": "Materials seen, by the shop's names",
+    "what": {
+      "materials": "raw glaze materials",
+      "frits": "frits",
+      "oxides": "oxides",
+      "stains": "stains",
+      "clays": "clay",
+      "glazes": "ready-made glazes",
+      "kilns": "kilns"
+    },
+    "none": "We found no shop selling raw glaze materials in {region}.",
+    "unknown": "We have not yet looked for shops in {region}.",
+    "choosePrompt": "Choose your country to see shops there."
+  },
+  "silica": {
+    "limitIn": "Limit in",
+    "label": "The silica limit in {region}",
+    "caption": "The workplace limit for respirable crystalline silica in {region}, an 8-hour average (checked {date})",
+    "both": "Quartz and cristobalite",
+    "quartz": "Quartz",
+    "cristobalite": "Cristobalite",
+    "actionLevel": "Action level",
+    "value": "{value} mg/m³",
+    "kind": {
+      "binding": "A binding limit.",
+      "indicative": "An indicative limit: a guide value, not a legal ceiling.",
+      "assessment": "An assessment criterion, not a binding limit."
+    },
+    "setBy": "Set by <link>{law}</link>.",
+    "lowerThanEu": "Lower than the EU's binding limit of {value} mg/m³.",
+    "sameAsEu": "The same as the EU's binding limit.",
+    "unknown": "We could not confirm the national limit in {region}. The EU's binding limit of {value} mg/m³ applies in every member state.",
+    "noData": "We have not yet confirmed the limit in {region}.",
+    "agency": "The national body for safety at work: <link>{name}</link>.",
+    "agencySilica": "Its <link>page on silica</link>.",
+    "choosePrompt": "Choose your country to see its limit."
+  },
+  "food": {
+    "rulesIn": "Rules in",
+    "label": "Limits for ceramic ware in {region}",
+    "caption": "What a fired piece may release in the legal test, in {region} (checked {date})",
+    "article": "Kind of piece",
+    "lead": "Lead",
+    "cadmium": "Cadmium",
+    "category": {
+      "flat": "Pieces that cannot be filled, or no deeper than 25 mm",
+      "fillable": "Other pieces that can be filled",
+      "cooking": "Cooking ware of any size, and packaging and storage vessels over 3 L",
+      "rimBand": "The rim of a piece for drinking from: a 2 cm band, inside and out",
+      "rimArticle": "The rim of a piece for drinking from: a 20 mm band outside the top edge, per piece",
+      "flatware": "Flatware, no deeper than 25 mm",
+      "smallHollow": "Small hollowware, under 1.1 L, other than cups and mugs",
+      "cups": "Cups and mugs",
+      "largeHollow": "Large hollowware, 1.1 L or more, other than pitchers",
+      "pitchers": "Pitchers",
+      "auSmall": "Cups, mugs, jugs, bowls, teapots and other tableware under 1100 mL",
+      "auLarge": "The same, 1100 mL or more",
+      "auPlates": "Plates, saucers and similar tableware",
+      "auCooking": "Cooking ware"
+    },
+    "judged": {
+      "average": "average of 6 pieces",
+      "each": "any one of 6"
+    },
+    "euRules": "The EU's rules apply here.",
+    "law": "Set by <link>{law}</link>.",
+    "inForce": "In force from {date}.",
+    "unknown": "We have not yet confirmed the rules in {region}.",
+    "choosePrompt": "Choose your country to see its rules."
+  },
+  "equivalents": {
+    "buyingIn": "Buying in",
+    "label": "{library, select, US {Equivalents sold in the US} UK {Equivalents sold in the UK} EU {Equivalents sold in the EU} other {Equivalents sold in Australia and New Zealand}}",
+    "caption": "{library, select, US {Materials not sold in the US, each with the closest sold there} UK {Materials not sold in the UK, each with the closest sold there} EU {Materials not sold in the EU, each with the closest sold there} other {Materials not sold in Australia and New Zealand, each with the closest sold there}}",
+    "material": "In a recipe",
+    "soldIn": "Sold in",
+    "closest": "{library, select, US {Closest sold in the US} UK {Closest sold in the UK} EU {Closest sold in the EU} other {Closest sold in Australia and New Zealand}}",
+    "apart": "differs by {grams} g per 100 g",
+    "noneClose": "Nothing within 15 g per 100 g: compare by chemistry.",
+    "loading": "Loading the library…",
+    "failed": "The library could not be loaded. Try again later.",
+    "choosePrompt": "Choose your country to see what is sold there."
   }
 }

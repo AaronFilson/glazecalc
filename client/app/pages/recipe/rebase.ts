@@ -1,4 +1,5 @@
 import type { Additive, AdditiveUnit } from '../../core/models';
+import { plainNumber } from '../../shared/format';
 
 /**
  * Changing the scale of a recipe without changing its proportions, so the unity
@@ -24,18 +25,15 @@ export interface Rebased {
 /** What a colorant's amount is in; saved recipes from before units read as percent. */
 export const unitOf = (additive: Pick<Additive, 'unit'>): AdditiveUnit => additive.unit ?? 'percent';
 
-/** True for a blank amount or a number of 0 or more; false for "12,5", "1o" or "-3". */
+/** True for a blank amount or a number of 0 or more, as saved; false for "12,5", "1o", "-3", "1e3" or "0x10". */
 export function isAmount(value: string | number | undefined | null): boolean {
-  const text = String(value ?? '').trim();
-  if (text === '') return true;
-  const n = Number(text);
-  return Number.isFinite(n) && n >= 0;
+  return String(value ?? '').trim() === '' || (plainNumber(value) ?? -1) >= 0;
 }
 
 /** An amount as a number; blank or not a positive number counts as 0. */
 export function amountOf(value: string | number | undefined | null): number {
-  const n = Number(value);
-  return Number.isFinite(n) && n > 0 ? n : 0;
+  const n = plainNumber(value);
+  return n !== null && n > 0 ? n : 0;
 }
 
 /** The sum of the amounts. */

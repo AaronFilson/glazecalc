@@ -50,6 +50,7 @@
   "record-updated": "{label, select, additive {Additivo aggiornato} advice {Consiglio aggiornato} firing {Registro di cottura aggiornato} material {Materiale aggiornato} note {Nota aggiornata} recipe {Ricetta aggiornata} trash {Elemento del cestino aggiornato} other {Elemento aggiornato}}",
   "record-invalid": "{label, select, additive {Additivo non valido} advice {Consiglio non valido} firing {Registro di cottura non valido} material {Materiale non valido} note {Nota non valida} recipe {Ricetta non valida} trash {Elemento del cestino non valido} other {Elemento non valido}}",
   "record-deleted": "{label, select, additive {Additivo eliminato} advice {Consiglio eliminato} firing {Registro di cottura eliminato} material {Materiale eliminato} note {Nota eliminata} recipe {Ricetta eliminata} trash {Elemento del cestino eliminato} other {Elemento eliminato}}",
+  "account-limit": "Un account può conservare fino a {limit} {label, select, additive {additivi} advice {consigli} firing {registri di cottura} material {materiali} note {note} recipe {ricette} trash {elementi nel cestino} other {elementi}}. Per salvarne di più, rimuoverne prima una parte.",
   "not-found": "Non trovato",
   "other-site": "Le richieste da altri siti non sono accettate.",
   "invalid-input": "Alcune delle informazioni inviate non sono valide.",

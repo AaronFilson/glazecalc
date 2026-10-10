@@ -1,0 +1,237 @@
+{
+  "auth": {
+    "signInHeading": "Přihlášení",
+    "keepHeading": "Uchovejte si svou práci",
+    "signUpHeading": "Vytvořte si účet",
+    "signInLead": "Vítejte zpět ve svém zápisníku glazur.",
+    "keepLead": "Uchovejte si vše, co vzniklo pod jménem {name}: přidejte svůj e-mail a heslo. Zůstane to zdarma.",
+    "signUpLead": "Zdarma. Vaše recepty, suroviny a poznámky zůstanou soukromé, jen ve vašem účtu.",
+    "trialNote": "Už máte účet? Po přihlášení se do něj přenese vše, co vzniklo pod jménem {name}. Jste tu poprvé? <signup>Vytvořte si účet</signup> a uchovejte si práci raději v něm.",
+    "email": "E-mail",
+    "password": "Heslo",
+    "passwordHint": "Alespoň 8 znaků.",
+    "confirmation": "Potvrzení hesla",
+    "passwordMissing": "Zadejte heslo.",
+    "createAccount": "Vytvořit účet",
+    "signIn": "Přihlásit se",
+    "haveAccount": "Už máte účet? <signin>Přihlaste se</signin>",
+    "forgot": "Zapomenuté heslo? Obnovte si ho",
+    "newHere": "Jste tu poprvé? <signup>Vytvořte si účet zdarma</signup>",
+    "signUpFailed": "Chyba: účet se nepodařilo vytvořit.",
+    "signInFailed": "Chyba: přihlášení se nezdařilo."
+  },
+  "forgot": {
+    "heading": "Obnovení hesla",
+    "checkInbox": "Podívejte se do doručené pošty i do složky nevyžádané pošty. Pokud nic nepřijde, zkontrolujte adresu a požádejte znovu.",
+    "intro": "Zadejte e-mail svého účtu a pošleme vám odkaz, přes který si zvolíte nové heslo.",
+    "email": "E-mail:",
+    "send": "Odeslat odkaz pro obnovení",
+    "back": "Zpět na přihlášení",
+    "failed": "Chyba: e-mail pro obnovení hesla se nepodařilo odeslat. Zkuste to prosím znovu."
+  },
+  "reset": {
+    "heading": "Zvolte nové heslo",
+    "signIn": "Přihlásit se",
+    "incomplete": "Tato stránka potřebuje odkaz z e-mailu pro obnovení hesla a tento odkaz je neúplný.",
+    "askAgain": "Požádat o nový odkaz",
+    "password": "Nové heslo:",
+    "confirmation": "Potvrzení nového hesla:",
+    "save": "Uložit nové heslo",
+    "hint": "Alespoň 8 znaků. Všechna zařízení přihlášená k účtu se odhlásí.",
+    "failed": "Chyba: heslo se nepodařilo změnit. Zkuste to prosím znovu."
+  },
+  "account": {
+    "trialTitle": "Váš zkušební přístup",
+    "trialLead": "Zkoušíte aplikaci Glazecalc pod jménem {name}.",
+    "keepHeading": "Uchovejte si svou práci",
+    "keepText": "Tento zkušební přístup a vše v něm se odstraní dne: {date}. Vytvořte si účet zdarma a uchovejte si je: vaše recepty, suroviny a poznámky zůstanou přesně tak, jak jsou, a {name} zůstane vaším zobrazovaným jménem.",
+    "createAccount": "Vytvořit účet",
+    "title": "Váš účet",
+    "signedInAs": "Přihlášeno jako {email}.",
+    "changeHeading": "Změna hesla",
+    "current": "Současné heslo",
+    "currentMissing": "Zadejte současné heslo.",
+    "password": "Nové heslo",
+    "passwordHint": "Alespoň 8 znaků. Ostatní zařízení přihlášená k tomuto účtu se odhlásí.",
+    "confirmation": "Potvrzení nového hesla",
+    "change": "Změnit heslo",
+    "changeFailed": "Chyba: heslo se nepodařilo změnit. Zkuste to prosím znovu.",
+    "deleteHeading": "Odstranění účtu",
+    "deleteText": "Tím se odstraní váš účet a vše, co je v něm uložené: recepty, suroviny, přísady, poznámky, záznamy výpalů a rady. Tuto akci nelze vrátit zpět.",
+    "deletePassword": "Vaše heslo pro potvrzení",
+    "deletePasswordMissing": "Pro potvrzení zadejte heslo.",
+    "delete": "Odstranit můj účet",
+    "deleteFailed": "Chyba: účet se nepodařilo odstranit. Zkuste to prosím znovu."
+  },
+  "settings": {
+    "heading": "Nastavení",
+    "intro": "Nastavení se ukládá s vaším účtem, takže platí na každém zařízení.",
+    "saveFailed": "Nastavení se nepodařilo uložit. Zkuste to prosím znovu.",
+    "language": {
+      "legend": "Jazyk",
+      "help": "Jazyk aplikace, návodů a vašich e-mailů. Po změně se tato stránka otevře ve zvoleném jazyce.",
+      "saved": "Uloženo: {language}."
+    },
+    "region": {
+      "legend": "Kde pracujete",
+      "none": {
+        "label": "Nevybráno",
+        "saved": "Uloženo: region nevybrán; výchozí hodnoty se řídí vaším prohlížečem."
+      },
+      "saved": "Uloženo: {region}.",
+      "help": "Suroviny, které se tam prodávají, a výchozí hodnoty pro čísla, data, teploty a žároměrky níže. Dokud region nevyberete, řídí se jazykem vašeho prohlížeče."
+    },
+    "format": {
+      "legend": "Čísla a data",
+      "auto": {
+        "label": "Podle mého jazyka a regionu",
+        "saved": "Uloženo: čísla a data tak, jak je zapisuje váš jazyk a region."
+      },
+      "saved": "Uloženo: čísla a data jako v jazyce {language}.",
+      "help": "Jak se zapisují čísla a data: 12,345.6 nebo 12.345,6, a také pořadí dne a měsíce."
+    },
+    "decimalMark": {
+      "legend": "Zadávání množství",
+      "either": {
+        "label": "Desetinná čárka nebo tečka",
+        "example": "12,5 nebo 12.5",
+        "saved": "Uloženo: množství lze zadávat s čárkou i s tečkou."
+      },
+      "comma": {
+        "label": "Desetinná čárka",
+        "saved": "Uloženo: množství se zadávají s desetinnou čárkou."
+      },
+      "point": {
+        "label": "Desetinná tečka",
+        "saved": "Uloženo: množství se zadávají s desetinnou tečkou."
+      },
+      "help": "U možnosti Desetinná čárka nebo tečka se množství jako 1.250 čte tak, jak se zapisují vaše čísla výše."
+    },
+    "temperature": {
+      "legend": "Teploty",
+      "celsius": {
+        "label": "Stupně Celsia",
+        "saved": "Uloženo: teploty v °C."
+      },
+      "fahrenheit": {
+        "label": "Stupně Fahrenheita",
+        "saved": "Uloženo: teploty v °F."
+      },
+      "help": "Dokud nevyberete, řídí se toto nastavení vaším regionem: °F ve Spojených státech, °C jinde."
+    },
+    "cones": {
+      "legend": "Výpal",
+      "orton": {
+        "label": "Na Ortonovy žároměrky",
+        "example": "žároměrka 04, žároměrka 6",
+        "saved": "Uloženo: výpal na Ortonovy žároměrky."
+      },
+      "temperature": {
+        "label": "Podle teploty, jako v programu regulátoru pece",
+        "saved": "Uloženo: výpal podle teploty."
+      },
+      "help": "Dokud nevyberete, řídí se toto nastavení vaším regionem: Ortonovy žároměrky v USA, ve Spojeném království, v Irsku, v Austrálii a na Novém Zélandu, teplota ve zbytku Evropy."
+    },
+    "density": {
+      "legend": "Hustota glazury",
+      "sg": {
+        "label": "Měrná hmotnost",
+        "saved": "Uloženo: hustota glazury jako měrná hmotnost.",
+        "example": "1,45"
+      },
+      "baume": {
+        "label": "Stupně Baumé, z hustoměru",
+        "saved": "Uloženo: hustota glazury ve stupních Baumé."
+      },
+      "pint": {
+        "label": "Hmotnost pinty, unce v britské pintě",
+        "saved": "Uloženo: hustota glazury jako hmotnost pinty."
+      },
+      "help": "Jak návody udávají hustotu glazury. Dokud nevyberete, řídí se toto nastavení vaším regionem: stupně Baumé v Itálii, měrná hmotnost jinde."
+    },
+    "theme": {
+      "legend": "Světlý nebo tmavý vzhled",
+      "system": {
+        "label": "Podle nastavení tohoto zařízení",
+        "saved": "Uloženo: světlý nebo tmavý vzhled podle nastavení každého zařízení."
+      },
+      "light": {
+        "label": "Světlý",
+        "saved": "Uloženo: vždy světlý."
+      },
+      "dark": {
+        "label": "Tmavý",
+        "saved": "Uloženo: vždy tmavý."
+      },
+      "help": "Vytištěné recepty jsou vždy černé na bílém."
+    },
+    "palette": {
+      "legend": "Barvy",
+      "saved": "Uloženo: paleta {palette} pro tlačítka a odkazy.",
+      "help": "Barvy tlačítek, odkazů a karet, pojmenované podle glazur. Každá paleta je dobře čitelná ve světlém i tmavém vzhledu."
+    },
+    "weightUnit": {
+      "legend": "Navážky",
+      "grams": {
+        "label": "Gramy",
+        "saved": "Uloženo: navážky jsou v gramech."
+      },
+      "pounds": {
+        "label": "Libry a unce",
+        "saved": "Uloženo: navážky jsou v librách a uncích."
+      },
+      "help": "Pro vytištěné navážky."
+    },
+    "gramPrecision": {
+      "legend": "Gramy ve vytištěných navážkách",
+      "single": {
+        "label": "Na desetiny gramu",
+        "saved": "Uloženo: gramy na desetiny."
+      },
+      "full": {
+        "label": "Plná přesnost",
+        "saved": "Uloženo: gramy v plné přesnosti, na 5 desetinných míst."
+      },
+      "help": "Při zobrazení na desetiny se množství pod 10 g přesto ukazují na setiny (2,35 g), kvůli barvivům v malých zkušebních dávkách."
+    },
+    "lead": {
+      "legend": "Olovo",
+      "off": {
+        "label": "Vypnuto: nikdy nepřidávat olovo do receptu ani ho nenavrhovat",
+        "saved": "Uloženo: olovo se nikdy nepřidává do receptu ani nenavrhuje."
+      },
+      "on": {
+        "label": "Zapnuto: suroviny s olovem lze přidávat a navrhovat",
+        "saved": "Uloženo: suroviny s olovem lze přidávat a navrhovat."
+      },
+      "help": "Olovo je jedovaté při vdechnutí nebo spolknutí a hromadí se v těle. Olovnatá glazura ho může uvolňovat do jídla a pití; žádný výpočet nedokáže určit, zda to vypálený kus dělá. Při volbě Vypnuto se recepty, které už olovo obsahují, dál otevírají tak, jak byly.",
+      "warning": "Olovo používejte jen ve formě frity, nikdy v nefritované podobě jako suřík, olovnatou bělobu, žlutý oxid olovnatý ani klejt. Míchejte ho za mokra, nikdy ho nestříkejte, noste respirátor a uklízejte namokro. Výrobky s olovnatou glazurou nedávejte do styku s jídlem a pitím, pokud vypálený kus neprošel laboratorní zkouškou uvolňování kovů.",
+      "turnOn": "Zapnout olovo",
+      "keepOff": "Nechat vypnuté"
+    },
+    "englishTerms": {
+      "legend": "Anglické termíny",
+      "off": {
+        "label": "Vypnuto",
+        "saved": "Uloženo: bez anglických termínů."
+      },
+      "on": {
+        "label": "Zobrazovat anglický termín za klíčovými pojmy",
+        "saved": "Uloženo: za klíčovými pojmy se zobrazuje anglický termín."
+      },
+      "help": "Pro čtení anglických zdrojů, například Digitalfire, souběžně s tímto: u klíčových pojmů se v závorce zobrazí jejich anglický termín."
+    },
+    "notice": {
+      "legend": "Upozornění na překlad",
+      "shown": {
+        "label": "Zobrazeno",
+        "saved": "Uloženo: upozornění se zobrazuje."
+      },
+      "hidden": {
+        "label": "Skryto",
+        "saved": "Uloženo: upozornění je skryté. Jeden jeho řádek zůstává v návodech o bezpečnosti."
+      },
+      "help": "Poznámka nahoře na každé stránce, že ji přeložila umělá inteligence, s možností navrhnout opravu."
+    }
+  }
+}

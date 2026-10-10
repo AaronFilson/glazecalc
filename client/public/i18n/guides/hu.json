@@ -1,0 +1,154 @@
+{
+  "version": {
+    "cones": "Az útmutató a gúlák szerinti égetéshez jelenik meg, ahogy a Beállítások oldalon megadta.",
+    "temperature": "Az útmutató a hőmérséklet szerinti égetéshez jelenik meg, ahogy a Beállítások oldalon megadta.",
+    "showTemperature": "Megjelenítés hőmérséklet szerinti égetéshez",
+    "showCones": "Megjelenítés gúlák szerinti égetéshez"
+  },
+  "notTranslated": "Ez az útmutató még nincs lefordítva, ezért angolul jelenik meg.",
+  "sectionInEnglish": "Ez a szakasz a fordítás óta megváltozott, ezért angolul jelenik meg, amíg a fordítását nem frissítjük.",
+  "list": {
+    "title": "Útmutatók",
+    "lead": "Közérthető útmutatók kezdő fazekasoknak: attól, hogy mi a máz, egészen az égetéséig, és hogy közben mindenki biztonságban maradjon.",
+    "note": "Ezek az útmutatók azt gyűjtik össze, amit a gyártók, a biztonsági hatóságok és a tapasztalt fazekasok közzétesznek; a források mindegyik végén megtalálhatók. Kiindulópontnak szántuk őket, nem helyettesítik a nyersanyagai biztonsági adatlapjait, a kemencéje kezelési útmutatóját vagy a helyi előírásokat.",
+    "glazingBasics": {
+      "title": "Mázazás az alapoktól",
+      "text": "Mi a máz, hogyan olvad meg, és minden szó magyarázata, amellyel egy recepten vagy egy zsákon találkozhat."
+    },
+    "makingAGlaze": {
+      "title": "Mázkészítés",
+      "text": "A máz beszerzése, tárolása, bemérése, keverése és szitálása, majd kipróbálása és a feljegyzések vezetése."
+    },
+    "safeMixing": {
+      "title": "Biztonságos keverés és szellőzés",
+      "text": "Por, légzésvédők, takarítás, a legtöbb óvatosságot kívánó nyersanyagok és a kemence szellőztetése."
+    },
+    "homeSafety": {
+      "title": "Ne mérgezze meg a családját",
+      "text": "Fazekasság otthon, gyerekek és háziállatok mellett: tárolás, por, a kemence, és mi a teendő, ha valaki lenyel valamit."
+    },
+    "firing": {
+      "title": "Égetés egyszerű kemencében",
+      "text": "Gúlák, gúlás lekapcsolók (Kiln-Sitter) és kézi kapcsolók, égetési programokkal a zsengéléshez és a mázas égetéshez."
+    }
+  },
+  "contents": "Ezen az oldalon",
+  "poison": {
+    "numbersFor": "Telefonszámok itt:",
+    "choose": "Válassza ki az országát",
+    "label": "Kit hívjon – {region}",
+    "caption": "Kit hívjon – {region} (a számok ellenőrzése: {date})",
+    "for": "Mire",
+    "call": "Hívószám",
+    "notes": "Elérhetőség és megjegyzések",
+    "emergency": "Vészhelyzet: eszméletlen, nem lélegzik, görcsroham",
+    "poisonAdvice": "{who, select, children {Mérgezési tanácsadás: {name} (csak gyermekeknek)} other {Mérgezési tanácsadás: {name}}}",
+    "or": "vagy {number}",
+    "online": "Online: <link>{name}</link>.",
+    "poisonAdviceNone": "Mérgezési tanácsadás",
+    "noLine": "Ebben az országban nem tudtunk megerősíteni nyilvános toxikológiai tájékoztató vonalat. Hívja az orvosát, sürgős esetben pedig a segélyhívó számot.",
+    "medicalAdvice": "Orvosi tanácsadás: {name}",
+    "animals": "Állatok: {name}",
+    "animalsNone": "Állatok",
+    "vet": "Hívja az állatorvosát.",
+    "checkedOn": "Ellenőrizve itt:",
+    "choosePrompt": "Válassza ki az országát, hogy lássa, kit hívjon ott.",
+    "ministry": "Az egészségügyi minisztérium oldala: <link>{name}</link>."
+  },
+  "density": {
+    "sg": "fajsúly {value}",
+    "baume": "{value} °Bé ({sg})",
+    "pint": "{value} oz / angol pint ({sg})"
+  },
+  "shops": {
+    "shopsIn": "Boltok itt:",
+    "label": "Boltok – {region}",
+    "caption": "Néhány máznyersanyagot árusító bolt – {region} (ellenőrizve: {date})",
+    "nearbyCaption": "Máshol működő boltok, amelyek saját közlésük szerint ebbe az országba szállítanak: {region} (ellenőrizve: {date})",
+    "shop": "Bolt",
+    "sells": "Kínálat",
+    "packs": "Látott kiszerelések",
+    "seen": "Látott nyersanyagok, a bolt saját elnevezésével",
+    "what": {
+      "materials": "máznyersanyagok",
+      "frits": "frittek",
+      "oxides": "oxidok",
+      "stains": "színtestek",
+      "clays": "agyag",
+      "glazes": "kész mázak",
+      "kilns": "kemencék"
+    },
+    "none": "{region}: nem találtunk máznyersanyagot árusító boltot.",
+    "unknown": "{region}: ebben az országban még nem kerestünk boltokat.",
+    "choosePrompt": "Válassza ki az országát, hogy lássa az ottani boltokat."
+  },
+  "silica": {
+    "limitIn": "Határérték itt:",
+    "label": "A kristályos szilícium-dioxid határértéke – {region}",
+    "caption": "A respirábilis kristályos szilícium-dioxid munkahelyi határértéke – {region}, 8 órás átlag (ellenőrizve: {date})",
+    "both": "Kvarc és krisztobalit",
+    "quartz": "Kvarc",
+    "cristobalite": "Krisztobalit",
+    "actionLevel": "Beavatkozási szint",
+    "value": "{value} mg/m³",
+    "kind": {
+      "binding": "Kötelező határérték.",
+      "indicative": "Indikatív határérték: irányérték, nem jogszabályi felső korlát.",
+      "assessment": "Értékelési mérce, nem kötelező határérték."
+    },
+    "setBy": "Megállapítja: <link>{law}</link>.",
+    "lowerThanEu": "Alacsonyabb az EU kötelező határértékénél ({value} mg/m³).",
+    "sameAsEu": "Megegyezik az EU kötelező határértékével.",
+    "unknown": "{region}: a nemzeti határértéket nem tudtuk megerősíteni. Az EU kötelező határértéke ({value} mg/m³) minden tagállamban érvényes.",
+    "noData": "{region}: a határértéket még nem erősítettük meg.",
+    "agency": "A munkavédelemért felelős országos szerv: <link>{name}</link>.",
+    "agencySilica": "A szerv <link>oldala a szilícium-dioxidról</link>.",
+    "choosePrompt": "Válassza ki az országát, hogy lássa az ottani határértéket."
+  },
+  "food": {
+    "rulesIn": "Szabályok itt:",
+    "label": "A kerámiatárgyakra vonatkozó határértékek – {region}",
+    "caption": "Amennyi egy kiégetett darabból a jogszabály szerinti vizsgálatban kioldódhat – {region} (ellenőrizve: {date})",
+    "article": "A tárgy fajtája",
+    "lead": "Ólom",
+    "cadmium": "Kadmium",
+    "category": {
+      "flat": "Nem megtölthető tárgyak, illetve legfeljebb 25 mm mélyek",
+      "fillable": "Egyéb megtölthető tárgyak",
+      "cooking": "Bármilyen méretű főzőedények, valamint 3 L feletti csomagoló- és tárolóedények",
+      "rimBand": "Ivóedény pereme: 2 cm széles sáv kívül és belül",
+      "rimArticle": "Ivóedény pereme: 20 mm széles sáv kívül, a felső szél alatt, darabonként",
+      "flatware": "Laposáru, legfeljebb 25 mm mély",
+      "smallHollow": "Kis öblösáru, 1,1 L alatt, a csészék és bögrék kivételével",
+      "cups": "Csészék és bögrék",
+      "largeHollow": "Nagy öblösáru, legalább 1,1 L, a kancsók kivételével",
+      "pitchers": "Kancsók",
+      "auSmall": "Csészék, bögrék, kancsók, tálak, teáskannák és más asztali edények, 1100 mL alatt",
+      "auLarge": "Ugyanezek, legalább 1100 mL",
+      "auPlates": "Tányérok, csészealjak és hasonló asztali edények",
+      "auCooking": "Főzőedények"
+    },
+    "judged": {
+      "average": "6 darab átlaga",
+      "each": "a 6 darab bármelyike"
+    },
+    "euRules": "Itt az EU szabályai érvényesek.",
+    "law": "Megállapítja: <link>{law}</link>.",
+    "inForce": "Hatálybalépés: {date}.",
+    "unknown": "{region}: a szabályokat még nem erősítettük meg.",
+    "choosePrompt": "Válassza ki az országát, hogy lássa az ottani szabályokat."
+  },
+  "equivalents": {
+    "buyingIn": "Vásárlás itt:",
+    "label": "{library, select, US {Az USA-ban kapható megfelelő nyersanyagok} UK {Az Egyesült Királyságban kapható megfelelő nyersanyagok} EU {Az EU-ban kapható megfelelő nyersanyagok} other {Ausztráliában és Új-Zélandon kapható megfelelő nyersanyagok}}",
+    "caption": "{library, select, US {Az USA-ban nem kapható nyersanyagok és az ott kapható legközelebbi megfelelőjük} UK {Az Egyesült Királyságban nem kapható nyersanyagok és az ott kapható legközelebbi megfelelőjük} EU {Az EU-ban nem kapható nyersanyagok és az ott kapható legközelebbi megfelelőjük} other {Ausztráliában és Új-Zélandon nem kapható nyersanyagok és az ott kapható legközelebbi megfelelőjük}}",
+    "material": "A receptben",
+    "soldIn": "Kapható",
+    "closest": "{library, select, US {Legközelebbi az USA-ban kaphatók közül} UK {Legközelebbi az Egyesült Királyságban kaphatók közül} EU {Legközelebbi az EU-ban kaphatók közül} other {Legközelebbi az Ausztráliában és Új-Zélandon kaphatók közül}}",
+    "apart": "eltérés: {grams} g 100 g-onként",
+    "noneClose": "Nincs olyan, amely 100 g-onként legfeljebb 15 g-mal térne el: hasonlítsa össze a kémiai összetételt.",
+    "loading": "A könyvtár betöltése…",
+    "failed": "A könyvtárat nem sikerült betölteni. Próbálja újra később.",
+    "choosePrompt": "Válassza ki az országát, hogy lássa, mi kapható ott."
+  }
+}

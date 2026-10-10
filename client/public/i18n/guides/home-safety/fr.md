@@ -165,7 +165,7 @@ Les sources divergent sur la distance de sécurité. Rio Grande indique au moins
 
 Rio Grande recommande un **circuit électrique dédié** (qui n’alimente rien d’autre) avec une prise correctement reliée à la terre. Nous suggérons de ne pas utiliser de rallonge. Entre deux cuissons, coupez le disjoncteur ou l’interrupteur-sectionneur du four, ou débranchez-le, pour qu’un enfant ne puisse pas le mettre en marche.
 
-### Restez jusqu’à la fin de la cuisson
+### Soyez là à la fin de la cuisson
 
 Un **Kiln-Sitter** (coupe-circuit à cône) est l’interrupteur mécanique de nombreux fours à commande manuelle : un petit cône se courbe à la fin de la cuisson et déclenche la coupure. Son manuel précise qu’il « n’est PAS conçu pour servir de dispositif de coupure de sécurité ». Rio Grande dit de ne jamais laisser un four en cuisson sans surveillance, « surtout à l’approche de l’heure d’arrêt prévue ». Ne lancez donc une cuisson que si un adulte sera à la maison et éveillé à la fin de la cuisson, vérifiez que le four s’est bien arrêté, et gardez un extincteur ABC dans la pièce du four. Pour le fonctionnement des Kiln-Sitter, des programmateurs et des courbes de cuisson, voir [Cuire dans un four simple](/guides/firing).
 

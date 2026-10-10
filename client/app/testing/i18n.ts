@@ -19,6 +19,7 @@ import notebook from '../../public/i18n/notebook/en.json';
 import recipe from '../../public/i18n/recipe/en.json';
 import guides from '../../public/i18n/guides/en.json';
 import safety from '../../public/i18n/safety/en.json';
+import regions from '../../public/i18n/regions/en.json';
 import records from '../../public/i18n/records/en.json';
 
 /** The English files the app loads (client/public/i18n), by the path Transloco asks for. */
@@ -31,6 +32,7 @@ export const ENGLISH: Record<string, Translation> = {
   'recipe/en': recipe,
   'guides/en': guides,
   'safety/en': safety,
+  'regions/en': regions,
   'records/en': records
 };
 

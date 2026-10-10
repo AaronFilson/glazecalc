@@ -92,8 +92,11 @@ describe('rebasing a recipe', () => {
   });
 
   it('tells a number from something that only looks like one', () => {
-    expect(['', ' ', '0', '12.5', ' 7 '].every(isAmount)).toBe(true);
-    expect(['12,5', '1o', '-3', 'abc'].some(isAmount)).toBe(false);
+    expect(['', ' ', '0', '12.5', ' 7 ', '.5', '0.0000001'].every(isAmount)).toBe(true);
+    // Number() reads these, but the number parser does not, so they are not amounts and count as 0.
+    const notAmounts = ['12,5', '1o', '-3', 'abc', '1e3', '0x10', '12.', 'Infinity'];
+    expect(notAmounts.some(isAmount)).toBe(false);
+    expect(totalOf(notAmounts)).toBe(0);
   });
 });
 

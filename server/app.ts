@@ -14,7 +14,7 @@ import records from './routes/records.ts';
 import userRoutes from './routes/user_routes.ts';
 import { say } from './lib/messages.ts';
 import { appUrl } from './lib/mailer.ts';
-import { pageHtml, sitemap, type PageText } from './lib/pages.ts';
+import { isPage, looksLikeFile, pageHtml, sitemap, withoutSlash, type PageText } from './lib/pages.ts';
 import languages from '../lib/regions/languages.js';
 
 const app = express();
@@ -58,12 +58,16 @@ app.use('/api', api);
 const HASHED = /^(main|polyfills|styles|chunk)-[A-Za-z0-9_-]{8,}\.(js|css)$/;
 const CLIENT = path.join(import.meta.dirname, '..', 'dist', 'glazecalc', 'browser');
 
+/** The request's query string, with its ?, or ''. */
+const queryOf = (req: Request): string => (req.url.includes('?') ? req.url.slice(req.url.indexOf('?')) : '');
+
 // English pages are at the plain paths (/guides), so /en/guides goes there.
+// Always to a path on this site: /en//other.example and /en/\other.example
+// go to /other.example, never to the other site (//other.example).
 app.use((req, res, next) => {
   const english = /^\/en(\/.*)?$/.exec(req.path);
   if (!english || (req.method !== 'GET' && req.method !== 'HEAD')) return next();
-  const query = req.url.includes('?') ? req.url.slice(req.url.indexOf('?')) : '';
-  return res.redirect(301, (english[1] || '/') + query);
+  return res.redirect(301, '/' + (english[1] ?? '').replace(/^[/\\]+/, '') + queryOf(req));
 });
 
 app.get('/sitemap.xml', (req, res) => {
@@ -81,9 +85,9 @@ app.use(
   })
 );
 
-// A language's title and description for search results and link previews,
-// from its messages (client/public/i18n/<language>.json: titles.landing and
-// meta.description), read once.
+// A language's title, description and preview image's text for search
+// results and link previews, from its messages (client/public/i18n/<language>.json:
+// titles.landing, meta.description and meta.imageAlt), read once.
 const pageTexts = new Map<string, Promise<PageText>>();
 const pageText = (code: string): Promise<PageText> => {
   if (code === 'en' || languages.languageFor(code)?.pseudo) return Promise.resolve({});
@@ -91,8 +95,15 @@ const pageText = (code: string): Promise<PageText> => {
   if (!text) {
     text = readFile(path.join(CLIENT, 'i18n', code + '.json'), 'utf8').then(
       (json) => {
-        const messages = JSON.parse(json) as { titles?: { landing?: string }; meta?: { description?: string } };
-        return { title: messages.titles?.landing, description: messages.meta?.description };
+        const messages = JSON.parse(json) as {
+          titles?: { landing?: string };
+          meta?: { description?: string; imageAlt?: string };
+        };
+        return {
+          title: messages.titles?.landing,
+          description: messages.meta?.description,
+          imageAlt: messages.meta?.imageAlt
+        };
       },
       () => ({})
     );
@@ -103,10 +114,14 @@ const pageText = (code: string): Promise<PageText> => {
 
 // The app's own pages (/recipe, /de/recipe, /reset, ...) are routes in the
 // client, so they get index.html, written for the page's language and address
-// (lib/pages.ts), and the Angular router shows them. Paths that look like files
-// (a dot in the last part) stay 404s, as do unknown /api paths above.
+// (lib/pages.ts), and the Angular router shows them. Any other address gets
+// it too, as a 404, and the app shows its not-found page; /guides/ goes to
+// /guides. Paths that look like files (a dot in the last part) stay plain
+// 404s, as do unknown /api paths above.
 app.use(async (req, res, next) => {
-  if ((req.method !== 'GET' && req.method !== 'HEAD') || /\.[^/]*$/.test(req.path)) return next();
+  if ((req.method !== 'GET' && req.method !== 'HEAD') || looksLikeFile(req.path)) return next();
+  const bare = withoutSlash(req.path);
+  if (bare) return res.redirect(301, bare + queryOf(req));
   let html: string;
   try {
     html = await readFile(path.join(CLIENT, 'index.html'), 'utf8');
@@ -115,7 +130,10 @@ app.use(async (req, res, next) => {
   }
   const text = await pageText(languages.languageOfPath(req.path));
   res.set('Cache-Control', 'no-cache');
-  return res.type('html').send(pageHtml(html, req.path, appUrl(), text));
+  return res
+    .status(isPage(req.path) ? 200 : 404)
+    .type('html')
+    .send(pageHtml(html, req.path, appUrl(), text));
 });
 
 interface HttpError extends Error {

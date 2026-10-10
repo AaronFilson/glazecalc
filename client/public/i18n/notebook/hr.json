@@ -1,0 +1,88 @@
+{
+  "home": {
+    "title": "Vaša radionička bilježnica",
+    "signedInAs": "Prijavljeni ste kao {email}.",
+    "trying": "Aplikaciju Glazecalc isprobavate kao {name}. Počnite s receptom.",
+    "welcomeBack": "Nastavite ondje gdje ste stali.",
+    "sections": {
+      "recipe": {
+        "title": "Recepti",
+        "text": "Sastavite glazuru od sirovina i količina, pogledajte njezinu Segerovu formulu (UMF) i spremite je."
+      },
+      "material": {
+        "title": "Sirovine",
+        "text": "Dodajte vlastite sirovine, prema kemijskoj formuli ili analizi dobavljača."
+      },
+      "additive": {
+        "title": "Dodaci i bojila",
+        "text": "Čuvajte bojila i zamućivače koje dodajete povrh osnovne glazure."
+      },
+      "firing": {
+        "title": "Zapisnici pečenja",
+        "text": "Bilježite vremena, temperature i stošce za svako pečenje."
+      },
+      "notes": {
+        "title": "Bilješke",
+        "text": "Čuvajte rezultate proba i sve ostalo što vrijedi zapamtiti."
+      },
+      "advice": {
+        "title": "Savjeti za glazure",
+        "text": "Savjeti za miješanje, glaziranje i pečenje te vaši vlastiti savjeti."
+      },
+      "guides": {
+        "title": "Vodiči",
+        "text": "Od toga što je glazura do njezina pečenja, uz brigu da svi pritom ostanu sigurni."
+      }
+    },
+    "newHere": "Prvi put se susrećete sa Segerovom formulom<en>unity formula</en>? <advice>Stranica sa savjetima</advice> objašnjava osnove, a <about>stranica o aplikaciji</about> opisuje kako radi Glazecalc."
+  },
+  "firing": {
+    "title": "Zapisnici pečenja",
+    "lead": "Zabilježite svako pečenje: vremena, temperature, stošce i napomene o peći.",
+    "titleLabel": "Naziv pečenja:",
+    "kiln": "Peć:",
+    "date": "Datum pečenja:",
+    "notes": "Napomene o pečenju:",
+    "fieldSelect": "Odaberite i dodajte polja u zapisnik pečenja:",
+    "addField": "Dodaj polje",
+    "included": "Polja koja ste uključili:",
+    "fieldName": "Naziv polja: {name}",
+    "moveLeft": "Pomakni polje ulijevo",
+    "moveRight": "Pomakni polje udesno",
+    "removeField": "Ukloni polje",
+    "addRow": "Dodaj redak u tablicu pečenja",
+    "recordHeading": "Zabilježi pečenje",
+    "rowActions": "Radnje s retkom",
+    "cell": "{field}, redak {row}",
+    "removeRow": "Ukloni redak",
+    "save": "Spremi",
+    "storedHeading": "Moja spremljena pečenja:",
+    "stored": "Naziv: {title}, peć: {kiln}, datum: {date}",
+    "storedNotes": "Napomene: {notes}",
+    "titleMissing": "Unesite naziv pečenja.",
+    "fieldsMissing": "Dodajte barem jedno polje za bilježenje, na primjer {example}.",
+    "chooseField": "Odaberite polje koje želite dodati, a zatim kliknite gumb Dodaj polje.",
+    "fetchFailed": "Došlo je do pogreške pri dohvaćanju podataka o zapisnicima pečenja.",
+    "saved": "Zapisnik pečenja uspješno je dodan na poslužitelj.",
+    "saveFailed": "Pogreška: zahtjev poslužitelju nije uspio."
+  },
+  "notes": {
+    "title": "Bilješke",
+    "lead": "Sve ostalo što vrijedi zapamtiti o vašim glazurama.",
+    "intro": "Ovo je stranica s bilješkama. Ovdje možete pisati bilješke i spremati ih.",
+    "titleLabel": "Naslov:",
+    "content": "Vaša bilješka:",
+    "save": "Spremi",
+    "mineHeading": "Moje spremljene bilješke:",
+    "titleMissing": "Unesite naslov bilješke.",
+    "contentMissing": "Napišite bilješku.",
+    "untitled": "Bilješka bez naslova",
+    "fetchFailed": "Došlo je do pogreške pri dohvaćanju podataka o bilješkama.",
+    "saved": "Bilješka je uspješno dodana na poslužitelj.",
+    "saveFailed": "Pogreška: zahtjev poslužitelju nije uspio."
+  },
+  "trash": {
+    "title": "Koš za smeće",
+    "comingSoon": "Koš za smeće stiže uskoro, u sljedećoj verziji aplikacije Glazecalc. Do tada pažljivo brišite i uklanjajte: kad nešto nestane, podaci su izgubljeni."
+  }
+}

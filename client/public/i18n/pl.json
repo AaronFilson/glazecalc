@@ -52,6 +52,9 @@
     "keepTrying": "Kontynuuj okres próbny",
     "discardFailed": "Nie udało się zakończyć okresu próbnego. Proszę spróbować ponownie."
   },
+  "signedOut": {
+    "recipeLost": "Nastąpiło wylogowanie przed zapisaniem zmian w „{title}”, więc zostały one utracone."
+  },
   "footer": {
     "site": "Witryna",
     "about": "O aplikacji",
@@ -70,7 +73,8 @@
     "notANumberPoint": "Należy wpisać liczbę, np. {example}, z kropką jako separatorem dziesiętnym."
   },
   "meta": {
-    "description": "Receptura szkliwa: wzór Segera (UMF), stosunek krzemionki do tlenku glinu, topniki. Bezpłatna i open source, na receptury, surowce i dzienniki wypałów."
+    "description": "Receptura szkliwa: wzór Segera (UMF), stosunek krzemionki do tlenku glinu, topniki. Bezpłatna i open source, na receptury, surowce i dzienniki wypałów.",
+    "imageAlt": "Glazecalc: rozumieć szkliwa, a nie tylko je mieszać."
   },
   "notices": {
     "dismiss": "Zamknij",
@@ -222,7 +226,8 @@
     "noChemistry": "Bez składu chemicznego: pominięty we wzorze Segera",
     "countedAs": "Liczony jako {name}",
     "nothingMatches": "Brak pasujących pozycji. Warto spróbować innej nazwy, rodzaju lub regionu.",
-    "loading": "Wczytywanie…"
+    "loading": "Wczytywanie…",
+    "notFetched": "Nie udało się pobrać listy. <retry>Spróbuj ponownie</retry>"
   },
   "chemistryForm": {
     "name": "{noun, select, additive {Należy podać nazwę dodatku.} other {Należy podać nazwę surowca.}}",

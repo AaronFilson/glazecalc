@@ -16,7 +16,7 @@ export class ShelfService {
   private readonly http = inject(HttpClient);
   private readonly apiBase = inject(API_BASE);
   private readonly auth = inject(AuthService);
-  /** The keys, once fetched for this sign-in; null before. */
+  /** The keys, once fetched for this sign-in; null before, and after a fetch that failed. */
   readonly keys = signal<string[] | null>(null);
   /** Why the last fetch or save did not work, or ''. */
   readonly problem = signal('');
@@ -35,9 +35,8 @@ export class ShelfService {
         if (this.auth.sessionVersion() === session) this.keys.set(shelf);
         this.problem.set('');
       } catch (err) {
-        // Asked again next time.
+        // Asked again next time. Until then there is no list to change: saving one would replace the potter's.
         this.fetched = null;
-        this.keys.set([]);
         this.problem.set(errorMessage(err, translate('shelf.fetchFailed')));
       }
     })();

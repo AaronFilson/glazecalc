@@ -29,7 +29,20 @@ export interface RegionSafety {
   advice?: SafetyLine[];
 }
 
+/** A country's health ministry, for where no public poison line could be confirmed. */
+export interface Ministry {
+  /** In its own language. */
+  name: string;
+  url: string;
+  status: 'verified' | 'unverified';
+  /** YYYY-MM-DD */
+  checked: string;
+}
+
 export const SAFETY: Readonly<Record<string, RegionSafety>>;
+export const MINISTRIES: Readonly<Record<string, Ministry>>;
+/** A region's health ministry, where it may be shown (verified); null otherwise. */
+export function ministryFor(code: string): Ministry | null;
 export const CHECKED: string;
 /** A region's verified entries, the only ones shown; null for a region with no entry. */
 export function shownFor(code: string): Required<RegionSafety> | null;

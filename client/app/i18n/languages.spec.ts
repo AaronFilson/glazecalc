@@ -1,9 +1,10 @@
+import { Location } from '@angular/common';
 import { Component, input } from '@angular/core';
 import { TestBed } from '@angular/core/testing';
 import { Router, provideRouter } from '@angular/router';
 import { App } from '../app';
 import { firstValueFrom } from 'rxjs';
-import { httpMock, testProviders } from '../testing/test-providers';
+import { API, httpMock, settle, testProviders } from '../testing/test-providers';
 import { FileLoader } from './loader';
 import { OFFERED_LANGUAGES, OPEN_PAGE, PAGE_LANGUAGE } from './language';
 import { chosenLanguage, ownLanguagePage } from './own-language';
@@ -52,6 +53,7 @@ describe('the translation notice', () => {
       ]
     });
   });
+  afterEach(() => history.replaceState(null, '', '/'));
 
   const create = async (language: string) => {
     TestBed.overrideProvider(PAGE_LANGUAGE, { useValue: language });
@@ -81,6 +83,21 @@ describe('the translation notice', () => {
     expect(sessionStorage.getItem(READ_ENGLISH)).toBe('1');
   });
 
+  it('links the English of the page as it is, with its query and section', async () => {
+    const { fixture, element } = await create('en-XA');
+    // The address the browser shows once the router has opened it.
+    history.replaceState(null, '', '/en-XA/other?compare=draft,abc#cones');
+    await TestBed.inject(Router).navigateByUrl('/other?compare=draft,abc#cones');
+    await fixture.whenStable();
+    const english = element.querySelectorAll('aside a')[1]!;
+    expect(english.getAttribute('href')).toBe('/other?compare=draft,abc#cones');
+    // A guide's contents name a section without the router (guide-contents.ts).
+    history.replaceState(null, '', '/en-XA/other?compare=draft,abc#glazes');
+    TestBed.inject(Location).replaceState('/other?compare=draft,abc#glazes');
+    await fixture.whenStable();
+    expect(english.getAttribute('href')).toBe('/other?compare=draft,abc#glazes');
+  });
+
   it('can be closed, and on a safety guide a line of it stays', async () => {
     const { fixture, element } = await create('en-XA');
     (element.querySelector('aside button') as HTMLButtonElement).click();
@@ -100,6 +117,7 @@ describe('the translation notice', () => {
 describe('the footer’s languages', () => {
   beforeEach(() => {
     localStorage.clear();
+    sessionStorage.clear();
     TestBed.configureTestingModule({ providers: [...testProviders()] });
   });
 
@@ -126,6 +144,23 @@ describe('the footer’s languages', () => {
     links[1]!.addEventListener('click', (event) => event.preventDefault());
     links[1]!.click();
     expect(localStorage.getItem('language')).toBe('en-XA');
+  });
+
+  it('for an account, open the page once the account has the language, so the new page keeps it', async () => {
+    localStorage.setItem('session', 'account');
+    const opened: string[] = [];
+    const links = [...(await footer(['en', 'de'], opened))!.querySelectorAll('a')];
+    const click = new MouseEvent('click', { bubbles: true, cancelable: true });
+    links[1]!.dispatchEvent(click);
+    expect(click.defaultPrevented).toBe(true);
+    const save = httpMock().expectOne({ method: 'PUT', url: API + '/preferences' });
+    expect(save.request.body).toEqual({ language: 'de' });
+    // Not before: an English page opens in the account's language (own-language.ts), but not this early.
+    await settle();
+    expect(opened).toEqual([]);
+    save.flush({});
+    await settle();
+    expect(opened).toEqual(['/de/']);
   });
 });
 

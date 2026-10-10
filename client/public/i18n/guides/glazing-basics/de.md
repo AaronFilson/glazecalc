@@ -244,23 +244,17 @@ Bei der **Abgabe von Metallen**{{en: leaching}} löst sich Metall aus einer gebr
 
 ### Bleifrei ist nicht dasselbe wie lebensmittelgeeignet
 
-Die Vorschriften in den USA, der EU, dem Vereinigten Königreich, Australien und Neuseeland begrenzen, wie viel Blei und Cadmium ein gebranntes Stück abgibt, nicht, was die Glasur enthält. „Bleifrei“ beseitigt eine Gefahr; es ist keine Aussage über die Lebensmitteleignung{{en: food safety}}. Auch andere Oxide werden abgegeben: Glazy warnt, dass bariumreiche Glasuren „Metalle abgeben können und meist nicht lebensmittelgeeignet sind“, Digitalfire schreibt, Kupfer „kann dazu führen, dass eine Glasur Metalle abgibt; testen Sie sie“, und Glazy empfiehlt Bleiglasuren für Gebrauchsgeschirr nicht mehr.
+Die Vorschriften in den USA, der EU, dem Vereinigten Königreich und Australien begrenzen, wie viel Blei und Cadmium ein gebranntes Stück abgibt, nicht, was die Glasur enthält. „Bleifrei“ beseitigt eine Gefahr; es ist keine Aussage über die Lebensmitteleignung{{en: food safety}}. Auch andere Oxide werden abgegeben: Glazy warnt, dass bariumreiche Glasuren „Metalle abgeben können und meist nicht lebensmittelgeeignet sind“, Digitalfire schreibt, Kupfer „kann dazu führen, dass eine Glasur Metalle abgibt; testen Sie sie“, und Glazy empfiehlt Bleiglasuren für Gebrauchsgeschirr nicht mehr.
 
 Eine **Innenglasur**{{en: liner glaze}} ist eine stabile, meist transparente oder weiße Glasur für Flächen, die mit Lebensmitteln in Berührung kommen. Unserer Ansicht nach ist eine Glasur ohne Färbemittel, Barium, Blei oder Lithium, die vollständig ausschmilzt, keine Haarrisse bekommt und sich wenig abnutzt, die risikoärmere Wahl. Geringeres Risiko ist kein Beweis.
 
 **Grenzformeln**{{en: limit formulas}} (Digitalfire spricht lieber von **Zielformeln**{{en: target formulas}}) geben typische Bereiche der Segerformel für stabile Glasuren bei einem Kegel an: Die Zielwerte von Digitalfire für Kegel 6 setzen Tonerde auf 0,285–0,64 und Kieselsäure auf 2,4–4,7. Sie lenken Sie zu einer soliden Chemie, beweisen aber nichts; Digitalfire meidet das Wort „limit“ (Grenze), weil es nahelegt, Glasuren innerhalb der Bereiche „seien irgendwie sicher“. Die Werkzeuge von Glazecalc zum Ändern eines Rezepts melden, wenn das neue Rezept eine empfohlene Grenze überschreitet, etwa viel Bor bei Kegel 6, und was die Glasur dann wahrscheinlich tut.
 
-Table: Grenzwerte der US-amerikanischen FDA für die Bleiabgabe von Keramik (CPG Sec. 545.450), in Mikrogramm je Milliliter Prüflösung
-Label: FDA-Grenzwerte für Blei
+Die gesetzlichen Grenzwerte sind von Land zu Land verschieden. Die Tabelle zeigt die Werte dort, wo Sie leben, in den Einheiten des jeweiligen Gesetzes; wählen Sie zum Vergleich ein anderes Land.
 
-| Gegenstand                       | Blei (µg/mL) | Bewertet nach            |
-| -------------------------------- | -----------: | ------------------------ |
-| Flachware (höchstens 25 mm tief) |          3,0 | Mittelwert aus 6 Stücken |
-| Kleine Hohlware (unter 1,1 L)    |          2,0 | Jedes von 6 einzeln      |
-| Große Hohlware (ab 1,1 L)        |          1,0 | Jedes von 6 einzeln      |
-| Tassen, Becher und Krüge         |          0,5 | Jedes von 6 einzeln      |
+::food-limits
 
-In den USA muss Ware, die nicht für Lebensmittel gedacht ist, einen dauerhaften, eingebrannten Hinweis „Not for Food Use“ (nicht für Lebensmittel) tragen oder ein Loch durch die Fläche haben, die mit Lebensmitteln in Berührung käme. Die EU legt Grenzwerte für Blei und Cadmium in der Richtlinie 84/500/EWG fest, die England in sein eigenes Recht übernommen hat. Die Niederlande und Luxemburg haben ihre Bleigrenzwerte ab dem 29. Mai 2026 etwa um den Faktor 130–150 gesenkt, und Belgien folgt. Australien und Neuseeland wenden AS 4371 an, deren Werte nur gegen Bezahlung zugänglich sind.
+In den USA muss Ware, die nicht für Lebensmittel gedacht ist, einen dauerhaften, eingebrannten Hinweis „Not for Food Use“ (nicht für Lebensmittel) tragen oder ein Loch durch die Fläche haben, die mit Lebensmitteln in Berührung käme. Die EU legt Grenzwerte für Blei und Cadmium in der Richtlinie 84/500/EWG fest, und das Vereinigte Königreich behält dieselben Werte in seinem eigenen Recht bei. Ab dem 29. Mai 2026 erlauben die Niederlande, Belgien und Luxemburg etwa 130- bis 150-mal weniger Blei und etwa 15-mal weniger Cadmium. Australien legt Grenzwerte für eingeführte Ware fest; für Ware, die in Australien oder Neuseeland hergestellt wird, haben wir keinen amtlichen Grenzwert gefunden.
 
 ### Prüfen
 

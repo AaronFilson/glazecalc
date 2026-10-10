@@ -12,6 +12,8 @@ import {
   signal
 } from '@angular/core';
 import { translate } from '@jsverse/transloco';
+import { errorMessage } from '../core/error-message';
+import { plainNumber } from './format';
 
 /** What is wrong with a field's value, or null when it is fine. */
 export type Check = () => string | null;
@@ -102,7 +104,8 @@ export class FieldChecks {
 
   /**
    * Marks the field a failed request was about, if the server named one this
-   * form has (`fields` maps the server's names to the form's). True if it did.
+   * form has (`fields` maps the server's names to the form's), with the
+   * server's message in the reader's language. True if it did.
    */
   reportServer(err: unknown, fields: Record<string, string> = {}): boolean {
     if (!(err instanceof HttpErrorResponse)) return false;
@@ -110,7 +113,7 @@ export class FieldChecks {
     if (typeof msg !== 'string' || typeof field !== 'string') return false;
     const ours = fields[field] ?? field;
     if (!this.elements.has(ours)) return false;
-    this.report(ours, msg);
+    this.report(ours, errorMessage(err, msg));
     return true;
   }
 
@@ -283,14 +286,15 @@ export const samePassword =
   };
 
 /**
- * A number, if anything is entered: from `min` (0 by default), and below
- * `below` if given. Blank is fine; use `required` too for a field that is not.
+ * A number, if anything is entered: a plain one, as a number box saves what it
+ * reads (shared/number-input.ts), from `min` (0 by default), and below `below`
+ * if given. Blank is fine; use `required` too for a field that is not.
  */
 export const numberCheck =
   (value: Value, message: string, { min = 0, below }: { min?: number; below?: number } = {}): Check =>
   () => {
     const entered = text(value);
     if (!entered) return null;
-    const n = Number(entered);
-    return Number.isFinite(n) && n >= min && (below === undefined || n < below) ? null : message;
+    const n = plainNumber(entered);
+    return n !== null && n >= min && (below === undefined || n < below) ? null : message;
   };

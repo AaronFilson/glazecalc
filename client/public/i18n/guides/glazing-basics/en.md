@@ -244,23 +244,17 @@ Label: Common glaze defects
 
 ### Lead-free is not the same as food-safe
 
-The rules in the US, EU, UK, Australia and New Zealand limit the lead and cadmium a fired piece releases, not what the glaze contains. "Lead-free" removes one hazard; it is not a food-safety rating. Other oxides leach too: Glazy warns that high-barium glazes "can leach and are generally not food-safe", Digitalfire says copper "can make a glaze leachable; test it", and Glazy no longer advises lead glazes for functional ware.
+The rules in the US, the EU, the UK and Australia limit the lead and cadmium a fired piece releases, not what the glaze contains. "Lead-free" removes one hazard; it is not a food-safety rating. Other oxides leach too: Glazy warns that high-barium glazes "can leach and are generally not food-safe", Digitalfire says copper "can make a glaze leachable; test it", and Glazy no longer advises lead glazes for functional ware.
 
 A **liner glaze** is a stable, usually clear or white glaze for surfaces that touch food. In our view, one with no colorant, barium, lead or lithium, that melts fully, does not craze and wears well, is the lower-risk choice. Lower risk is not proof.
 
 **Limit formulas** (Digitalfire prefers **target formulas**) give typical unity-formula ranges for stable glazes at a cone: Digitalfire's cone 6 targets put alumina at 0.285–0.64 and silica at 2.4–4.7. They guide you toward sound chemistry but prove nothing; Digitalfire avoids the word "limit" because it suggests glazes inside the ranges "are somehow safe". Glazecalc's tools for changing a recipe say when the new one goes past a recommended limit, such as a lot of boron at cone 6, and what the glaze will likely do.
 
-Table: US FDA limits for lead released by pottery (CPG Sec. 545.450), in micrograms per milliliter of test solution
-Label: FDA lead limits
+The legal limits differ by country. The table shows those where you live, in the law's own units; choose another country to compare.
 
-| Item                             | Lead (µg/mL) | Judged on           |
-| -------------------------------- | -----------: | ------------------- |
-| Flatware (no deeper than 25 mm)  |          3.0 | Average of 6 pieces |
-| Small hollowware (under 1.1 L)   |          2.0 | Any one of 6        |
-| Large hollowware (1.1 L or more) |          1.0 | Any one of 6        |
-| Cups, mugs and pitchers          |          0.5 | Any one of 6        |
+::food-limits
 
-In the US, ware not meant for food must carry a permanent, fired-on "Not for Food Use" notice or have a hole through the food surface. The EU sets lead and cadmium limits in Directive 84/500/EEC, which England keeps in its own law. The Netherlands and Luxembourg cut their lead limits roughly 130–150 times from 29 May 2026, with Belgium following. Australia and New Zealand use AS 4371, whose figures are behind a paywall.
+In the US, ware not meant for food must carry a permanent, fired-on "Not for Food Use" notice or have a hole through the food surface. The EU sets lead and cadmium limits in Directive 84/500/EEC, and the UK keeps the same figures in its own law. From 29 May 2026 the Netherlands, Belgium and Luxembourg allow about 130 to 150 times less lead, and about 15 times less cadmium. Australia sets limits for imported ware; we found no official limit for ware made in Australia or New Zealand.
 
 ### Testing
 

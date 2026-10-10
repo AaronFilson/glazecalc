@@ -2,6 +2,7 @@ import { TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { testProviders, text } from '../testing/test-providers';
 import { localDate, optional } from './dates';
+import { formatLocale } from './format';
 import { Notices, NoticesList } from './notices';
 import { OXIDE_GROUPS } from '../../../lib/chemistry';
 import { ADDITIVE_OXIDES, FIRED_OXIDES, FIRING_FIELDS, fieldsText, firingFieldLabel, firstOf } from './options';
@@ -138,6 +139,16 @@ describe('options', () => {
     expect(fieldsText({ percentmole: 'percent', fields })).toBe('SiO₂ 68.5%, Al₂O₃ 17%');
     expect(fieldsText({ percentmole: 'molecular', fields })).toBe('SiO₂ : 68.5; Al₂O₃ : 17');
     expect(fieldsText({ fields })).toBe('SiO₂ : 68.5; Al₂O₃ : 17');
+    // Numbers the reader's way, whether saved as text or as numbers.
+    formatLocale.set('de-DE');
+    try {
+      expect(fieldsText({ percentmole: 'percent', fields: [...fields, { name: 'CaO', amount: 0.25 }] })).toBe(
+        'SiO₂ 68,5%, Al₂O₃ 17%, CaO 0,25%'
+      );
+      expect(fieldsText({ fields })).toBe('SiO₂ : 68,5; Al₂O₃ : 17');
+    } finally {
+      formatLocale.set('en');
+    }
   });
 
   it('keeps all sixty firing log fields', () => {

@@ -23,10 +23,14 @@ Label: Limiti di esposizione alla silice
 | Stati Uniti    | 0,05 mg/m³ (50 µg/m³) | Limite dell’OSHA. I datori di lavoro devono iniziare a intervenire a 25 µg/m³, il «livello d’azione». |
 | Regno Unito    |             0,1 mg/m³ | Inoltre l’esposizione deve essere mantenuta «al livello più basso ragionevolmente praticabile».       |
 | Unione europea |             0,1 mg/m³ | Limite vincolante (direttiva 2017/2398). Alcuni Stati membri ne fissano di più bassi.                 |
-| Australia      |            0,05 mg/m³ | Da luglio 2020. Nel giugno 2026 i ministri hanno respinto una riduzione a 0,025.                      |
-| Nuova Zelanda  |           0,025 mg/m³ | Da novembre 2023.                                                                                     |
+| Australia      |            0,05 mg/m³ | Da luglio 2020. Nel giugno 2026 la maggior parte dei ministri non ha sostenuto una riduzione a 0,025. |
+| Nuova Zelanda  |           0,025 mg/m³ | Dal 2023. Gli standard di WorkSafe sono linee guida, non limiti di legge.                             |
 
 Alcune pagine indicano 0,025 mg/m³ per l’Australia, ma il limite ufficiale è ancora 0,05. In ogni caso il consiglio è lo stesso: tenere la polvere al livello più basso possibile.
+
+Diversi Stati membri dell’UE fissano limiti più bassi di quello dell’UE. Il limite in vigore nel proprio paese, la norma che lo fissa e l’ente nazionale per la sicurezza sul lavoro:
+
+::silica-limit
 
 > [!NOTE]
 > Questi sono limiti per i luoghi di lavoro. Vincolano i datori di lavoro, quindi nessuno controlla chi fa ceramica in casa per conto proprio, anche se i laboratori condivisi e le scuole con personale dipendente di solito vi rientrano (verificare le norme locali). In casa la polvere è la stessa, e i limiti danno l’idea della portata del pericolo: da 25 a 100 milionesimi di grammo in ogni metro cubo d’aria, come media su una giornata.
@@ -39,7 +43,7 @@ La protezione viene soprattutto dalle abitudini, non dall’attrezzatura. I cons
 
 ### Evitare i materiali in polvere quando possibile
 
-- **Comprare smalto{{en: glaze}} già pronto** quando va bene per il proprio lavoro. Il primo suggerimento dell’HSE è «acquistare smalti pronti all’uso, quando possibile», oppure in forma granulare o di sospensione{{en: slurry}}.
+- **Comprare smalto{{en: glaze}} liquido già pronto** quando va bene per il proprio lavoro. Il primo suggerimento dell’HSE è «acquistare smalti pronti all’uso, quando possibile», oppure in forma granulare o di sospensione{{en: slurry}}.
 - **Scegliere ricette più sicure.** L’HSE suggerisce «smalti che contengono meno silice cristallina{{en: crystalline silica}}». Digitalfire suggerisce una **fritta**{{en: frit}} (vetro prodotto industrialmente e macinato in polvere, che si scioglie molto meno delle materie prime) al posto del carbonato di bario non frittato, e un **pigmento**{{en: stain}} (un colore ceramico prodotto industrialmente) al posto di grandi quantità di manganese, cobalto o nichel per i neri.
 
 ### Quando si usano materiali in polvere
@@ -82,7 +86,7 @@ La classe superiore filtra una quota maggiore di particelle fini. Le fonti non c
 
 Una maschera che perde lascia entrare la polvere dai bordi, qualunque sia la sua classe. L’HSE avverte che la barba, anche di pochi giorni, «rende impossibile ottenere una buona tenuta».
 
-- **Radersi lo stesso giorno.** Le indicazioni non concordano su quanto debba essere recente la rasatura per un viso «ben rasato»: entro 8 ore (un produttore britannico, che cita l’HSE) o preferibilmente entro 12 (la norma australiana e neozelandese sulla prova di tenuta). Radersi il giorno in cui si lavora soddisfa entrambe.
+- **Radersi poco prima di lavorare.** Le indicazioni non concordano su quanto debba essere recente la rasatura per un viso «ben rasato»: entro 8 ore (un produttore britannico, che cita l’HSE) o preferibilmente entro 12 (la norma australiana e neozelandese sulla prova di tenuta). Radersi poco prima di lavorare soddisfa entrambe.
 - **Se si porta la barba,** un **elettrorespiratore a filtro** non aderente (PAPR: un cappuccio o un casco con un ventilatore che fornisce aria filtrata) non richiede la tenuta sul viso.
 - **Scegliere la taglia giusta.** Una cattiva aderenza è una delle cause principali delle perdite. Nei luoghi di lavoro si usa la **prova di tenuta**, una verifica che una determinata maschera faccia tenuta su un determinato viso. In casa suggeriamo di seguire le istruzioni del produttore per controllare la tenuta ogni volta che la si indossa.
 
@@ -243,7 +247,7 @@ Queste sono le fonti primarie che vale di più la pena leggere. La maggior parte
 
 - **Stati Uniti:** la [norma sulla silice](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.1053) dell’OSHA (29 CFR 1910.1053) e i suoi [consigli per chi sceglie di indossare una maschera filtrante](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.134AppD); l’[allerta sulla silicosi](https://www.cdc.gov/niosh/docs/92-107) del NIOSH.
 - **Regno Unito:** le schede COSHH essentials dell’HSE per la ceramica (COSHH è il regolamento Control of Substances Hazardous to Health, sul controllo delle sostanze pericolose per la salute), in particolare la [CR1 sulla preparazione di smalti e colori](https://www.hse.gov.uk/PUBNS/guidance/cr1.pdf) e la [CR5 sulla loro spruzzatura](https://www.hse.gov.uk/PUBNS/guidance/cr5.pdf), e le [nozioni di base sulla prova di tenuta](https://www.hse.gov.uk/respiratory-protective-equipment/fit-testing-basics.htm) dell’HSE.
-- **Unione europea:** la direttiva (UE) 2017/2398 fissa il limite vincolante per la silice; la [tabella dei limiti di esposizione](https://nepsi.eu/wp-content/uploads/2022/10/oel_full_table_september_2020_europe.pdf) del NEPSI riporta quello di ciascun paese. L’ECHA, l’Agenzia europea per le sostanze chimiche, pubblica classificazioni come quelle dei borati.
+- **Unione europea:** la direttiva (UE) 2017/2398 fissa il limite vincolante per la silice; il limite fissato da ciascuno Stato membro e il suo ente nazionale per la sicurezza sul lavoro sono indicati più sopra, nella sezione Limiti di esposizione. L’ECHA, l’Agenzia europea per le sostanze chimiche, pubblica classificazioni come quelle dei borati.
 - **Australia:** le [pagine su silice cristallina e silicosi](https://www.safeworkaustralia.gov.au/safety-topic/hazards/crystalline-silica-and-silicosis/research-lower-workplace-exposure-standard-respirable-crystalline-silica-0) di Safe Work Australia.
 - **Nuova Zelanda:** WorkSafe New Zealand fissa gli standard di esposizione sul lavoro; la [storia dello standard sulla silice](https://mbie.govt.nz/building-and-energy/building/building-and-construction-consultations/work-with-engineered-stone-and-materials-containing-crystalline-silica/annex-iii) del MBIE ne riporta le date.
 - **Forni:** la [guida alla stanza del forno](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Designing-A-Kiln-Room-1.pdf) di Skutt, la [scheda di Orton e CCSA sui fumi del forno](https://assets.noviams.com/novi-file-uploads/ccsa/Product_Safety/Fumes.pdf) e soprattutto il manuale del proprio forno.
@@ -257,7 +261,6 @@ Queste sono le fonti primarie che vale di più la pena leggere. La maggior parte
 - [HSE: COSHH essentials CR1, Glaze and colour preparation](https://www.hse.gov.uk/PUBNS/guidance/cr1.pdf)
 - [HSE: COSHH essentials CR5, Spraying glazes and colours](https://www.hse.gov.uk/PUBNS/guidance/cr5.pdf)
 - [HSE: Fit testing basics](https://www.hse.gov.uk/respiratory-protective-equipment/fit-testing-basics.htm)
-- [NEPSI: Occupational exposure limits for respirable crystalline silica in Europe](https://nepsi.eu/wp-content/uploads/2022/10/oel_full_table_september_2020_europe.pdf)
 - [Safe Work Australia: Research on a lower workplace exposure standard for respirable crystalline silica](https://www.safeworkaustralia.gov.au/safety-topic/hazards/crystalline-silica-and-silicosis/research-lower-workplace-exposure-standard-respirable-crystalline-silica-0)
 - [Enviliance: Report 16612, Australia's June 2026 decision on the silica exposure standard](https://enviliance.com/regions/oceania/au/report_16612)
 - [MBIE (Nuova Zelanda): Work with engineered stone and materials containing crystalline silica, Annex III](https://mbie.govt.nz/building-and-energy/building/building-and-construction-consultations/work-with-engineered-stone-and-materials-containing-crystalline-silica/annex-iii)

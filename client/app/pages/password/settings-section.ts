@@ -102,7 +102,9 @@ function settingsIn(pageLanguage: string, offered: readonly string[]): Setting[]
     name: 'density',
     id: 'density',
     choices: [
-      choice('sg', marker('account.settings.density.sg.label'), marker('account.settings.density.sg.saved'), 'SG 1.45'),
+      choice('sg', marker('account.settings.density.sg.label'), marker('account.settings.density.sg.saved'), () =>
+        translate('account.settings.density.sg.example')
+      ),
       choice(
         'baume',
         marker('account.settings.density.baume.label'),
@@ -385,7 +387,8 @@ function settingsIn(pageLanguage: string, offered: readonly string[]): Setting[]
     .settings-confirm {
       border-inline-start: 3px solid var(--gc-danger-text);
       margin-top: 0.5rem;
-      padding: 0.25rem 0 0.25rem 0.75rem;
+      padding-block: 0.25rem;
+      padding-inline: 0.75rem 0;
       p {
         margin-bottom: 0.5rem;
       }

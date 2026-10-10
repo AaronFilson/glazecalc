@@ -69,12 +69,14 @@ function asChoice<K extends keyof Preferences>(name: K, value: unknown): Prefere
 }
 
 // This browser's copy is kept under each preference's name (the region as preferredRegion,
-// since the library's own region filter came first).
+// since the library's own region filter came first). A choice made with no one signed in is
+// kept as well under "visitor." and its name, to come back when the next session ends.
 const copyKey = (name: keyof Preferences): string => (name === 'region' ? 'preferredRegion' : name);
+const visitorKey = (name: keyof Preferences): string => 'visitor.' + name;
 
-function readCopy<K extends keyof Preferences>(name: K): Preferences[K] {
+function readCopy<K extends keyof Preferences>(name: K, key = copyKey(name)): Preferences[K] {
   try {
-    return asChoice(name, localStorage.getItem(copyKey(name)));
+    return asChoice(name, localStorage.getItem(key));
   } catch {
     return CHOICES[name][0];
   }
@@ -149,6 +151,17 @@ export class PreferencesService {
     notice: this.notice
   };
 
+  constructor() {
+    // Signed out, or the session ended: the account's choices leave this browser, and the visitor's own come back.
+    const forget = () => {
+      this.fetched = null;
+      for (const name of NAMES) this.keep(name, readCopy(name, visitorKey(name)));
+    };
+    this.auth.onSessionEnd(forget);
+    // A trial that ran out while the site was closed ended before this could hear of it.
+    if (this.auth.trialEnded()) forget();
+  }
+
   /** Fetches the account's choices, once per sign-in. If that fails, the copy on this browser stays. */
   load(): Promise<void> {
     const session = this.auth.sessionVersion();
@@ -188,13 +201,14 @@ export class PreferencesService {
 
   /** Keeps a choice on this browser only, for a visitor with no account to save it to. */
   remember<K extends keyof Preferences>(name: K, value: Preferences[K]): void {
-    this.keep(name, value);
+    this.keep(name, value, visitorKey(name));
   }
 
-  private keep<K extends keyof Preferences>(name: K, value: Preferences[K]): void {
+  private keep<K extends keyof Preferences>(name: K, value: Preferences[K], visitor?: string): void {
     this.values[name].set(value);
     try {
       localStorage.setItem(copyKey(name), value);
+      if (visitor) localStorage.setItem(visitor, value);
     } catch {
       // Without storage, the account's choices are fetched again on each visit.
     }

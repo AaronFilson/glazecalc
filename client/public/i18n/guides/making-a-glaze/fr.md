@@ -26,18 +26,9 @@ Préparer un émail{{en: glaze}}, c’est peser d’après une recette des **mat
 
 ### Où acheter
 
-Les céramistes achètent chez des fournisseurs pour la céramique, qui vendent de la terre, des matières pour émaux{{en: glaze materials}} et des outils. Le tableau en cite quelques-uns, confirmés lors des recherches pour ce guide. Les stocks changent : vérifiez avant de commander. Pour les autres pays, le site de référence en céramique Digitalfire tient un annuaire des magasins de fournisseurs.
+Les céramistes achètent chez des fournisseurs pour la céramique, qui vendent de la terre, des matières pour émaux{{en: glaze materials}} et des outils. Le tableau en présente quelques-uns pour votre pays, chacun vérifié sur le site du magasin lui-même, et vous pouvez choisir un autre pays pour voir ses magasins. Les stocks changent : vérifiez avant de commander. Les grands producteurs comme Sibelco et Imerys vendent à l’industrie ; les céramistes achètent leurs matières dans des magasins comme ceux-ci. Pour les autres pays, le site de référence en céramique Digitalfire tient un annuaire des magasins de fournisseurs.
 
-Table: Quelques fournisseurs de matières pour émaux, par région
-Label: Fournisseurs par région
-
-| Région           | Fournisseurs                                                                                                                                                                    | Conditionnements relevés |
-| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
-| États-Unis       | Laguna Clay ; Clay Art Center ; The Ceramic Shop ; New Mexico Clay ; Seattle Pottery Supply                                                                                     | 50 lb (22,7 kg)          |
-| Royaume-Uni      | Potterycrafts ; Bath Potters ; Potclays ; Valentine Clays                                                                                                                       | 1, 5 et 25 kg            |
-| UE               | Mondré & Manz (Allemagne) ; Goerg & Schneider (Allemagne, surtout des argiles) ; Ceradel (France)                                                                               | Demander au fournisseur  |
-| Australie        | Walker Ceramics (sous l’enseigne Ozclay, avec Feeneys et Cesco) ; Northcote Pottery Supplies, via Bunnings ; Oxerra pour les frittes{{en: frits}} et les pigments{{en: stains}} | 10 à 25 kg               |
-| Nouvelle-Zélande | CCG ; Decopot                                                                                                                                                                   | 2,5 ; 5 et 25 kg         |
+::shops
 
 ### Quelle quantité acheter
 
@@ -76,6 +67,10 @@ Les marques apparaissent et disparaissent au fil des fermetures de mines. Le Cus
 Le **Gerstley Borate**, un minéral de bore naturel présent dans beaucoup de recettes anciennes, est rare depuis la fermeture de sa mine en 2000, même si New Mexico Clay a signalé en novembre 2025 que Laguna fournissait du « Gerstley Borate Original ». Les sources ne s’accordent pas sur le **Gillespie Borate** comme produit de remplacement. Son fabricant le vend comme remplaçant poids pour poids. Berkeley Potters Studio affirme qu’il « n’est pas un substitut direct », et Digitalfire a constaté qu’il changeait la couleur d’un émail. Le plus sûr est de comparer les deux par leurs oxydes, puis de faire un essai.
 
 Les noms varient aussi selon les régions. En Amérique du Nord, **flint** (silex), quartz et silica désignent la même silice broyée, et Digitalfire précise que vous ne trouverez probablement pas de vraie poudre de silex chez les fournisseurs. Au Royaume-Uni, le flint est un produit à part : celui de Valentine est de la silice calcinée (chauffée). Les deux sont de la silice presque pure, ils devraient donc être proches à notre avis, mais vérifiez l’analyse. Pour le kaolin, Glazy indique que les substitutions une pour une, comme de l’EPK à la place d’un china clay, « fonctionnent souvent très bien, surtout quand les quantités sont \<10 % ».
+
+Beaucoup de recettes citent des matières vendues dans un pays et pas dans un autre. Le tableau ci-dessous prend chaque matière de la bibliothèque de Glazecalc qui n’est pas vendue là où vous achetez, et trouve la plus proche de la même catégorie qui y est vendue, d’après leurs analyses. Le chiffre indique l’écart entre les deux : les grammes dont diffèrent leurs oxydes après cuisson, pour 100 g de matière, additionnés sur l’ensemble des oxydes. Jusqu’à environ 15 g d’écart, l’une peut en général remplacer l’autre lors d’un premier essai. Les noms portent les propres codes des fabricants et des magasins : vous pouvez donc les demander par leur nom.
+
+::local-equivalents
 
 > [!NOTE]
 > Glazecalc compare les matières par ce qu’elles apportent à l’émail cuit, pas par leur nom. Une [recette](/recipe) contenant une matière qui n’est plus fabriquée indique ce qu’on utilise aujourd’hui. **Proposer des quantités et comparer** recalcule les quantités pour un substitut, et **Adapter à mes matières** refait la recette avec les matières de votre stock. Les deux ne font correspondre que les oxydes après cuisson : essayez donc d’abord une petite préparation.

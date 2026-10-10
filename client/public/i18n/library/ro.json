@@ -1,0 +1,50 @@
+{
+  "common": {
+    "formulaHelp": "Scrieți formula cu cifre obișnuite, de exemplu {typed}: cifrele vor apărea ca indici, {shown}. Pentru a uni părțile unei formule, ca în {joined}, copiați acest punct:",
+    "relatedTo": "În legătură cu:",
+    "notes": "Note:",
+    "loi": "Pierderea la calcinare – PC (în procente):",
+    "molecularWeight": "Masa moleculară a formulei înainte de ardere (folosită numai dacă câmpul PC este gol):",
+    "formulaHeading": "Introduceți formula (după ardere):",
+    "oxideSelection": "Alegerea oxidului",
+    "noOxide": "niciunul",
+    "addOxide": "Adăugați oxidul în listă",
+    "formulaIn": "Formula este dată în:",
+    "percent": "Procente",
+    "molecular": "Molar / Seger",
+    "amount": "Cantitate:",
+    "removeOxide": "Eliminați din lista formulei",
+    "save": "Salvați",
+    "elements": "Elemente",
+    "removeNote": "Rețetele salvate își păstrează propria copie, deci nu se vor schimba.",
+    "saveFailed": "Eroare: cererea către server nu a reușit."
+  },
+  "material": {
+    "title": "Materii prime",
+    "lead": "Materiile prime proprii, introduse ca formulă chimică sau ca analiză a oxizilor.",
+    "newHeading": "Introduceți datele noii materii prime",
+    "name": "Denumirea materiei prime:",
+    "rawFormula": "Formula înainte de ardere:",
+    "weightsNote": "Masa echivalentă și masa după ardere se calculează din formulă și din PC când salvați.",
+    "mineHeading": "Materii prime proprii:",
+    "rawFormulaColumn": "Formula înainte de ardere",
+    "standardHeading": "Materiile prime standard:",
+    "fetchFailed": "A apărut o eroare la încărcarea materiilor prime.",
+    "standardFetchFailed": "A apărut o eroare la încărcarea materiilor prime standard.",
+    "saved": "Materia primă s-a adăugat cu succes în baza de date."
+  },
+  "additive": {
+    "title": "Aditivi și coloranți",
+    "lead": "Coloranți și opacifianți dozați peste rețeta de bază, de exemplu oxidul de cobalt sau oxidul de staniu. O rețetă îi poate lăsa în afara formulei Seger (UMF) sau îi poate include în ea.",
+    "newHeading": "Introduceți datele noului aditiv",
+    "name": "Denumirea aditivului:",
+    "formulaAsSold": "Formula, așa cum se vinde:",
+    "noChemistry": "Nu are o analiză a oxizilor, de exemplu un pigment ceramic comercial: lăsați-l în afara formulei Seger",
+    "firedNote": "Introduceți ce aduce în glazură după ardere: oxidul negru de cobalt, {asSold}, devine {fired}, cu o PC de {loi} %. Astfel, o rețetă îl poate include în formula Seger.",
+    "mineHeading": "Aditivi și coloranți proprii:",
+    "standardHeading": "Aditivii standard:",
+    "fetchFailed": "A apărut o eroare la încărcarea aditivilor.",
+    "standardFetchFailed": "A apărut o eroare la încărcarea aditivilor standard.",
+    "saved": "Aditivul s-a adăugat cu succes în baza de date."
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "home": {
+    "title": "Uw atelierlogboek",
+    "signedInAs": "Ingelogd als {email}.",
+    "trying": "U probeert Glazecalc als {name}. Begin met een recept.",
+    "welcomeBack": "Ga verder waar u was gebleven.",
+    "sections": {
+      "recipe": {
+        "title": "Recepten",
+        "text": "Stel een glazuur samen uit grondstoffen en hoeveelheden, bekijk de Segerformule en sla het op."
+      },
+      "material": {
+        "title": "Grondstoffen",
+        "text": "Voeg uw eigen grondstoffen toe, op basis van een chemische formule of de analyse van een leverancier."
+      },
+      "additive": {
+        "title": "Toevoegingen en kleurstoffen",
+        "text": "Bewaar de kleurstoffen en opaakmakers die u bovenop een basisglazuur toevoegt."
+      },
+      "firing": {
+        "title": "Stookverslagen",
+        "text": "Leg per stook de tijden, temperaturen en kegels vast."
+      },
+      "notes": {
+        "title": "Notities",
+        "text": "Bewaar testresultaten en alles wat verder het onthouden waard is."
+      },
+      "advice": {
+        "title": "Glazuuradvies",
+        "text": "Tips voor het aanmaken, glazuren en stoken, en uw eigen adviezen."
+      },
+      "guides": {
+        "title": "Gidsen",
+        "text": "Van wat een glazuur is tot het stoken ervan, en hoe iedereen onderweg veilig blijft."
+      }
+    },
+    "newHere": "Is de Segerformule nieuw voor u? De <advice>adviespagina</advice> legt de basis uit, en de <about>pagina Over</about> vertelt hoe Glazecalc werkt."
+  },
+  "firing": {
+    "title": "Stookverslagen",
+    "lead": "Leg elke stook vast: tijden, temperaturen, kegels en opmerkingen over de oven.",
+    "titleLabel": "Naam van de stook:",
+    "kiln": "Oven:",
+    "date": "Datum van de stook:",
+    "notes": "Opmerkingen over de stook:",
+    "fieldSelect": "Kies velden en voeg ze toe aan het stookverslag:",
+    "addField": "Veld toevoegen",
+    "included": "De velden die u hebt opgenomen:",
+    "fieldName": "Veldnaam: {name}",
+    "moveLeft": "Veld naar links verplaatsen",
+    "moveRight": "Veld naar rechts verplaatsen",
+    "removeField": "Veld verwijderen",
+    "addRow": "Rij aan de stooktabel toevoegen",
+    "recordHeading": "Stook vastleggen",
+    "rowActions": "Acties voor de rij",
+    "cell": "{field}, rij {row}",
+    "removeRow": "Rij verwijderen",
+    "save": "Opslaan",
+    "storedHeading": "Mijn opgeslagen stoken:",
+    "stored": "Naam: {title}, oven: {kiln}, datum: {date}",
+    "storedNotes": "Opmerkingen: {notes}",
+    "titleMissing": "Geef de stook een naam.",
+    "fieldsMissing": "Voeg ten minste één veld toe om vast te leggen, zoals {example}.",
+    "chooseField": "Kies een veld om toe te voegen en klik dan op Veld toevoegen.",
+    "fetchFailed": "Er is een fout opgetreden bij het ophalen van de stookverslagen.",
+    "saved": "Gelukt: het stookverslag is op de server opgeslagen.",
+    "saveFailed": "Fout: het verzoek aan de server is mislukt."
+  },
+  "notes": {
+    "title": "Notities",
+    "lead": "Al het andere over uw glazuren dat het onthouden waard is.",
+    "intro": "Dit is de pagina Notities. Hier kunt u notities maken en opslaan.",
+    "titleLabel": "Titel:",
+    "content": "Uw notitie:",
+    "save": "Opslaan",
+    "mineHeading": "Mijn opgeslagen notities:",
+    "titleMissing": "Geef de notitie een titel.",
+    "contentMissing": "Schrijf de notitie.",
+    "untitled": "Notitie zonder titel",
+    "fetchFailed": "Er is een fout opgetreden bij het ophalen van de notities.",
+    "saved": "Gelukt: de notitie is op de server opgeslagen.",
+    "saveFailed": "Fout: het verzoek aan de server is mislukt."
+  },
+  "trash": {
+    "title": "Prullenbak",
+    "comingSoon": "De prullenbak komt binnenkort, in de volgende versie van Glazecalc. Ga tot die tijd voorzichtig om met verwijderen: wat eenmaal verwijderd is, is verloren."
+  }
+}

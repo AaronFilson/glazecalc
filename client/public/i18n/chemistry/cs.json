@@ -1,0 +1,23 @@
+{
+  "unknown-compound": "Neznámá sloučenina {compound} ve vzorci",
+  "unknown-oxide": "Neznámý oxid {oxide} v surovině {material}",
+  "invalid-oxide-amount": "Neplatné množství oxidu {oxide} v surovině {material}",
+  "loi-range": "Ztráta žíháním (ZŽ) suroviny {material} musí být nejméně 0 a menší než 100",
+  "no-oxides": "Surovina {material} nemá žádné oxidy",
+  "no-name": "Surovina musí mít název",
+  "no-analysis": "Surovina {material} potřebuje vzorec nebo rozbor",
+  "recipe-shape": "Recept musí být pole '{ material, amount }' nebo mapa množství",
+  "invalid-amount": "Neplatné množství suroviny {material}",
+  "missing-material": "V řádku receptu chybí surovina",
+  "unknown-material": "Neznámá surovina {material}",
+  "no-flux": "Recept neobsahuje žádné oxidy taviv, takže Segerův vzorec (UMF) není definován",
+  "no-target": "Cílové složení nemá žádné oxidy, ke kterým by se dalo přiblížit",
+  "no-materials": "Nejsou žádné suroviny, se kterými by se dalo počítat",
+  "no-temperature": "K nastavení boru je potřeba teplota výpalu",
+  "no-flux-to-rebuild": "Glazura nemá žádná taviva, která by šlo sestavit znovu",
+  "unknown-element": "Neznámý prvek {element} ve vzorci {formula}",
+  "bad-formula": "Vzorec {formula} se nepodařilo zpracovat",
+  "analysis-total": "Rozbor suroviny {material} dává dohromady {total} % včetně ztráty žíháním; očekává se přibližně 100 %.",
+  "stored-equivalent": "Uložená ekvivalentní hmotnost suroviny {material} neodpovídá jejímu vzorci a ztrátě žíháním; místo ní se použily vzorec a ztráta žíháním.",
+  "trace-flux": "Recept obsahuje jen stopy oxidů taviv, takže Segerův vzorec (UMF) nemá vypovídací hodnotu."
+}

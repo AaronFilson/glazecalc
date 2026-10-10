@@ -1,0 +1,237 @@
+{
+  "auth": {
+    "signInHeading": "Bejelentkezés",
+    "keepHeading": "Munkája megőrzése",
+    "signUpHeading": "Fiók létrehozása",
+    "signInLead": "Üdvözöljük újra a mázakhoz vezetett műhelyfüzetében.",
+    "keepLead": "Őrizzen meg mindent, amit {name} néven készített: adja meg az e-mail-címét és egy jelszót. Továbbra is ingyenes marad.",
+    "signUpLead": "Ingyenes. Receptjeit, nyersanyagait és jegyzeteit privát módon, a fiókjában tároljuk.",
+    "trialNote": "Már van fiókja? Bejelentkezéskor mindaz, amit {name} néven készített, átkerül a fiókjába. Új felhasználó? <signup>Hozzon létre fiókot</signup>, hogy inkább abban őrizze meg.",
+    "email": "E-mail-cím",
+    "password": "Jelszó",
+    "passwordHint": "Legalább 8 karakter.",
+    "confirmation": "Jelszó megerősítése",
+    "passwordMissing": "Adja meg a jelszavát.",
+    "createAccount": "Fiók létrehozása",
+    "signIn": "Bejelentkezés",
+    "haveAccount": "Már van fiókja? <signin>Bejelentkezés</signin>",
+    "forgot": "Elfelejtette a jelszavát? Állítsa vissza",
+    "newHere": "Új felhasználó? <signup>Ingyenes fiók létrehozása</signup>",
+    "signUpFailed": "Hiba: nem sikerült létrehozni a fiókot.",
+    "signInFailed": "Hiba: nem sikerült bejelentkezni."
+  },
+  "forgot": {
+    "heading": "Jelszó visszaállítása",
+    "checkInbox": "Nézze meg a beérkezett üzeneteit és a levélszemét mappát. Ha nem érkezik semmi, ellenőrizze a címet, és kérje újra.",
+    "intro": "Adja meg a fiókjához tartozó e-mail-címet, és küldünk egy linket, amellyel új jelszót választhat.",
+    "email": "E-mail-cím:",
+    "send": "Visszaállító link küldése",
+    "back": "Vissza a bejelentkezéshez",
+    "failed": "Hiba: nem sikerült elküldeni a visszaállító e-mailt. Kérjük, próbálja újra."
+  },
+  "reset": {
+    "heading": "Új jelszó választása",
+    "signIn": "Bejelentkezés",
+    "incomplete": "Ehhez az oldalhoz a jelszó-visszaállító e-mailben kapott link kell, ez a link pedig hiányos.",
+    "askAgain": "Új link kérése",
+    "password": "Új jelszó:",
+    "confirmation": "Új jelszó megerősítése:",
+    "save": "Új jelszó mentése",
+    "hint": "Legalább 8 karakter. A fiókba bejelentkezett összes eszközt kijelentkeztetjük.",
+    "failed": "Hiba: nem sikerült megváltoztatni a jelszót. Kérjük, próbálja újra."
+  },
+  "account": {
+    "trialTitle": "Próbahasználat",
+    "trialLead": "Ön most {name} néven próbálja ki a Glazecalc alkalmazást.",
+    "keepHeading": "Munkája megőrzése",
+    "keepText": "Ez a próbahasználat és minden, ami benne van, ezen a napon törlődik: {date}. Hozzon létre ingyenes fiókot, hogy megőrizze őket: receptjei, nyersanyagai és jegyzetei pontosan úgy maradnak, ahogy vannak, megjelenített neve pedig továbbra is {name} marad.",
+    "createAccount": "Fiók létrehozása",
+    "title": "Fiókja",
+    "signedInAs": "Bejelentkezve: {email}.",
+    "changeHeading": "Jelszó módosítása",
+    "current": "Jelenlegi jelszó",
+    "currentMissing": "Adja meg a jelenlegi jelszavát.",
+    "password": "Új jelszó",
+    "passwordHint": "Legalább 8 karakter. A fiókba bejelentkezett többi eszközt kijelentkeztetjük.",
+    "confirmation": "Új jelszó megerősítése",
+    "change": "Jelszó módosítása",
+    "changeFailed": "Hiba: nem sikerült megváltoztatni a jelszót. Kérjük, próbálja újra.",
+    "deleteHeading": "Fiók törlése",
+    "deleteText": "Ez eltávolítja a fiókját és mindent, amit elmentett: recepteket, nyersanyagokat, adalékokat, jegyzeteket, égetési naplókat és tanácsokat. Ez nem vonható vissza.",
+    "deletePassword": "Jelszava a megerősítéshez",
+    "deletePasswordMissing": "A megerősítéshez adja meg a jelszavát.",
+    "delete": "Fiókom törlése",
+    "deleteFailed": "Hiba: nem sikerült törölni a fiókot. Kérjük, próbálja újra."
+  },
+  "settings": {
+    "heading": "Beállítások",
+    "intro": "A fiókjával együtt mentjük őket, így minden eszközön érvényesek.",
+    "saveFailed": "A beállítást nem sikerült menteni. Kérjük, próbálja újra.",
+    "language": {
+      "legend": "Nyelv",
+      "help": "Az alkalmazás, az útmutatók és az e-mailjei nyelve. Ha megváltoztatja, ez az oldal az új nyelven nyílik meg.",
+      "saved": "Mentve: {language}."
+    },
+    "region": {
+      "legend": "Ahol dolgozik",
+      "none": {
+        "label": "Nincs kiválasztva",
+        "saved": "Mentve: nincs kiválasztott régió; az alapértelmezések a böngészőjét követik."
+      },
+      "saved": "Mentve: {region}.",
+      "help": "Az ott kapható nyersanyagok, valamint az alábbi számok, dátumok, hőmérsékletek és gúlák alapértelmezései. Amíg nem választ, ezek a böngészője nyelvét követik."
+    },
+    "format": {
+      "legend": "Számok és dátumok",
+      "auto": {
+        "label": "A nyelvem és a régióm szerint",
+        "saved": "Mentve: a számok és dátumok úgy, ahogy az Ön nyelvén és régiójában írják őket."
+      },
+      "saved": "Mentve: a számok és dátumok ebben a formában: {language}.",
+      "help": "A számok és dátumok írásmódja: 12,345.6 vagy 12.345,6, valamint a nap és a hónap sorrendje."
+    },
+    "decimalMark": {
+      "legend": "Mennyiségek beírása",
+      "either": {
+        "label": "Vessző vagy pont a tizedesjel",
+        "example": "12,5 vagy 12.5",
+        "saved": "Mentve: a mennyiségek vesszővel vagy ponttal is beírhatók."
+      },
+      "comma": {
+        "label": "Vessző a tizedesjel",
+        "saved": "Mentve: a mennyiségek tizedesjele a vessző."
+      },
+      "point": {
+        "label": "Pont a tizedesjel",
+        "saved": "Mentve: a mennyiségek tizedesjele a pont."
+      },
+      "help": "A Vessző vagy pont a tizedesjel beállításnál az olyan mennyiséget, mint az 1.250, a program úgy értelmezi, ahogy a számok írásmódját fent megadta."
+    },
+    "temperature": {
+      "legend": "Hőmérséklet",
+      "celsius": {
+        "label": "Celsius",
+        "saved": "Mentve: hőmérséklet °C-ban."
+      },
+      "fahrenheit": {
+        "label": "Fahrenheit",
+        "saved": "Mentve: hőmérséklet °F-ban."
+      },
+      "help": "Amíg nem választ, ez a régióját követi: az Egyesült Államokban °F, máshol °C."
+    },
+    "cones": {
+      "legend": "Égetés",
+      "orton": {
+        "label": "Orton-gúlák szerint",
+        "example": "04-es gúla, 6-os gúla",
+        "saved": "Mentve: égetés Orton-gúlák szerint."
+      },
+      "temperature": {
+        "label": "Hőmérséklet szerint, mint egy kemencevezérlő programjában",
+        "saved": "Mentve: égetés hőmérséklet szerint."
+      },
+      "help": "Amíg nem választ, ez a régióját követi: az USA-ban, az Egyesült Királyságban, Írországban, Ausztráliában és Új-Zélandon Orton-gúlák, Európa többi részén hőmérséklet."
+    },
+    "density": {
+      "legend": "Mázsűrűség",
+      "sg": {
+        "label": "Fajsúly",
+        "saved": "Mentve: mázsűrűség fajsúlyként.",
+        "example": "1,45"
+      },
+      "baume": {
+        "label": "Baumé-fok, areométerrel",
+        "saved": "Mentve: mázsűrűség Baumé-fokban."
+      },
+      "pint": {
+        "label": "Pint-súly, uncia per angol pint",
+        "saved": "Mentve: mázsűrűség pint-súlyként."
+      },
+      "help": "Ebben a formában adják meg az útmutatók a máziszap sűrűségét. Amíg nem választ, ez a régióját követi: Olaszországban Baumé-fok, máshol fajsúly."
+    },
+    "theme": {
+      "legend": "Világos vagy sötét",
+      "system": {
+        "label": "Az eszköz beállítása szerint",
+        "saved": "Mentve: világos vagy sötét, az egyes eszközök beállítása szerint."
+      },
+      "light": {
+        "label": "Világos",
+        "saved": "Mentve: mindig világos."
+      },
+      "dark": {
+        "label": "Sötét",
+        "saved": "Mentve: mindig sötét."
+      },
+      "help": "A nyomtatott receptek mindig fehér alapon feketék."
+    },
+    "palette": {
+      "legend": "Színek",
+      "saved": "Mentve: {palette} színű gombok és linkek.",
+      "help": "A gombok, linkek és lapok színei, mázakról elnevezve. Mindegyik jól olvasható világos és sötét módban is."
+    },
+    "weightUnit": {
+      "legend": "Bemérési tömegek",
+      "grams": {
+        "label": "Gramm",
+        "saved": "Mentve: a bemérési tömegek grammban."
+      },
+      "pounds": {
+        "label": "Font és uncia",
+        "saved": "Mentve: a bemérési tömegek fontban és unciában."
+      },
+      "help": "A nyomtatott bemérési listákhoz."
+    },
+    "gramPrecision": {
+      "legend": "Gramm a nyomtatott bemérési listán",
+      "single": {
+        "label": "Tized grammra",
+        "saved": "Mentve: a grammok tized grammra kerekítve jelennek meg."
+      },
+      "full": {
+        "label": "Teljes pontosság",
+        "saved": "Mentve: a grammok teljes pontossággal, 5 tizedesjegyig jelennek meg."
+      },
+      "help": "A Tized grammra beállításnál a 10 g alatti mennyiségek továbbra is századgrammra jelennek meg (2,35 g), a kis próbaadagokba kerülő színezőanyagok miatt."
+    },
+    "lead": {
+      "legend": "Ólom",
+      "off": {
+        "label": "Ki: ólom soha nem kerül receptbe, és a program nem is javasolja",
+        "saved": "Mentve: ólom soha nem kerül receptbe, és a program nem is javasolja."
+      },
+      "on": {
+        "label": "Be: ólomtartalmú nyersanyagok hozzáadhatók és javasolhatók",
+        "saved": "Mentve: ólomtartalmú nyersanyagok hozzáadhatók és javasolhatók."
+      },
+      "help": "Az ólom belélegezve vagy lenyelve mérgező, és felhalmozódik a szervezetben, az ólmos máz pedig ólmot adhat le az ételbe és az italba; semmilyen számítás nem tudja megmondani, hogy egy kiégetett darab ezt teszi-e. Kikapcsolva a már ólmot tartalmazó receptek továbbra is úgy nyílnak meg, ahogy voltak.",
+      "warning": "Ólmot csak frittként használjon, soha ne nyersen, azaz míniumként, ólomfehérként, sárga ólom-oxidként vagy ólomglétként. Nedvesen keverje, soha ne szórja, viseljen légzésvédő maszkot, és nedvesen takarítson. Az ólmos mázas árut tartsa távol az ételtől és az italtól, hacsak a kiégetett darab nem felelt meg egy laboratóriumi kioldódási vizsgálaton.",
+      "turnOn": "Ólom bekapcsolása",
+      "keepOff": "Maradjon kikapcsolva"
+    },
+    "englishTerms": {
+      "legend": "Angol szakkifejezések",
+      "off": {
+        "label": "Ki",
+        "saved": "Mentve: angol kifejezések nélkül."
+      },
+      "on": {
+        "label": "Az angol kifejezés megjelenítése a fontos szakszavak után",
+        "saved": "Mentve: az angol kifejezés megjelenik a fontos szakszavak után."
+      },
+      "help": "Angol nyelvű források (például a Digitalfire) párhuzamos olvasásához: a fontos szakszavak után zárójelben megjelenik az angol megfelelőjük."
+    },
+    "notice": {
+      "legend": "Fordítási megjegyzés",
+      "shown": {
+        "label": "Megjelenítve",
+        "saved": "Mentve: a megjegyzés megjelenik."
+      },
+      "hidden": {
+        "label": "Elrejtve",
+        "saved": "Mentve: a megjegyzés el van rejtve. Egy sora a biztonsági útmutatókban megmarad."
+      },
+      "help": "Az oldalak tetején megjelenő megjegyzés arról, hogy az oldalt mesterséges intelligencia fordította, a javítási javaslat lehetőségével."
+    }
+  }
+}

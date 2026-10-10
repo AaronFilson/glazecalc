@@ -86,7 +86,7 @@ import { standardText } from '../../shared/library-info';
           @for (adv of myAdvice(); track adv._id) {
             <li>
               <h3>{{ adv.title }}</h3>
-              <p>{{ adv.content }}</p>
+              <p class="keep-lines">{{ adv.content }}</p>
               <div class="small muted">{{ t('site.advice.tags', { list: tagsText(adv) }) }}</div>
               <gc-remove-button
                 [name]="removal.nameOf(adv)"

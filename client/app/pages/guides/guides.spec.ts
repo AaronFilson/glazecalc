@@ -1,3 +1,4 @@
+import { APP_BASE_HREF, Location, PlatformLocation } from '@angular/common';
 import { TestBed } from '@angular/core/testing';
 import { ActivatedRoute, ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 import { firstValueFrom, isObservable } from 'rxjs';
@@ -21,13 +22,16 @@ const PAGES: Array<[string, string]> = [
   ['Firing a basic kiln', firing]
 ];
 
+/** The address the guides are opened at. */
+const HERE = '/guides/this-guide';
+
 describe('guides', () => {
   beforeEach(() => {
     localStorage.clear();
     TestBed.configureTestingModule({ providers: testProviders() });
   });
 
-  /** A guide's page, as its route opens it with its Markdown. */
+  /** A guide's page, as its route opens it with its Markdown, at HERE. */
   const render = async (text: string, language: string | null = null, extra: unknown[] = []) => {
     TestBed.overrideProvider(ActivatedRoute, {
       useValue: { snapshot: { data: { text: { text, language } satisfies GuideText } } }
@@ -35,6 +39,7 @@ describe('guides', () => {
     for (const provider of extra as Array<{ provide: unknown; useValue: unknown }>) {
       TestBed.overrideProvider(provider.provide, { useValue: provider.useValue });
     }
+    TestBed.inject(Location).replaceState(HERE);
     const fixture = TestBed.createComponent(GuidePage);
     await fixture.whenStable();
     return { fixture, page: fixture.nativeElement as HTMLElement };
@@ -55,7 +60,7 @@ describe('guides', () => {
       expect([...page.querySelectorAll('h1')].map((h) => h.textContent?.trim())).toEqual([title]);
       const sections = [...page.querySelectorAll('.guide h2')];
       const links = [...page.querySelectorAll<HTMLAnchorElement>('.guide-contents a')];
-      expect(links.map((a) => a.getAttribute('href'))).toEqual(sections.map((h) => '#' + h.id));
+      expect(links.map((a) => a.getAttribute('href'))).toEqual(sections.map((h) => HERE + '#' + h.id));
       expect(links.map((a) => a.textContent?.trim())).toEqual(sections.map((h) => h.textContent?.trim()));
       expect(sections.at(-1)?.id).toBe('sources');
       expect(page.querySelectorAll('.guide-sources a[href^="https://"]').length).toBeGreaterThanOrEqual(8);
@@ -76,11 +81,40 @@ describe('guides', () => {
         for (const row of table.querySelectorAll('tbody tr')) expect(row.firstElementChild?.tagName).toBe('TH');
       }
 
-      // A contents link takes the focus to its section.
+      // A contents link takes the focus to its section, and the address names it.
       links[1]!.click();
       expect(document.activeElement).toBe(sections[1]);
+      expect(TestBed.inject(Location).path(true)).toBe(HERE + '#' + sections[1]!.id);
     });
   }
+
+  it('links each section at the guide’s own address, in its language, to copy, share or open in a new tab', async () => {
+    const text = '---\ntitle: T\nlead: L\n---\n\n## Eins {#one}\n\nSiehe [zwei](#two).\n\n## Zwei {#two}\n\nText.\n';
+    const { page } = await render(text, null, [
+      { provide: APP_BASE_HREF, useValue: '/de/' },
+      { provide: PAGE_LANGUAGE, useValue: 'de' }
+    ]);
+    const [, contents] = [...page.querySelectorAll<HTMLAnchorElement>('.guide-contents a')];
+    const inText = page.querySelector<HTMLAnchorElement>('.guide p a')!;
+    expect([contents!.getAttribute('href'), inText.getAttribute('href')]).toEqual([
+      '/de/guides/this-guide#two',
+      '/de/guides/this-guide#two'
+    ]);
+    // Opening it in a new tab is left to the browser.
+    let leftToTheBrowser = false;
+    inText.addEventListener('click', (event) => {
+      leftToTheBrowser = !event.defaultPrevented;
+      event.preventDefault();
+    });
+    inText.dispatchEvent(new MouseEvent('click', { bubbles: true, cancelable: true, ctrlKey: true }));
+    expect(leftToTheBrowser).toBe(true);
+    // Followed here, it moves the focus, and the address names the section.
+    inText.click();
+    expect(document.activeElement).toBe(page.querySelector('#two'));
+    expect(TestBed.inject(PlatformLocation).pathname + TestBed.inject(PlatformLocation).hash).toBe(
+      '/de/guides/this-guide#two'
+    );
+  });
 
   it('marks the parts of a translation still in English, with a note over each section', async () => {
     const translation = [
@@ -113,6 +147,9 @@ describe('guides', () => {
     const note = sitter!.querySelector('.guide-note')!;
     expect(note.getAttribute('lang')).toBe('de');
     expect(note.textContent).toContain('shown in English until its translation is brought up to date');
+    // Its entry in the contents is marked English too.
+    const entries = [...page.querySelectorAll('.guide-contents li')];
+    expect(entries.map((li) => li.getAttribute('lang'))).toEqual([null, 'en']);
   });
 
   it('writes temperatures in the reader’s scale first, numbers as their language writes them', async () => {
@@ -142,13 +179,19 @@ describe('guides', () => {
     expect(page.querySelector('.guide-version button')?.textContent?.trim()).toBe('Show it for firing by temperature');
     // The contents follow the version shown.
     expect([...page.querySelectorAll('.guide-contents a')].map((a) => a.getAttribute('href'))).toContain(
-      '#kiln-sitter'
+      HERE + '#kiln-sitter'
     );
   });
 
   it('says when a guide is not translated yet, and marks its text as English', async () => {
     const { page } = await render(safeMixing, 'en');
     expect(page.querySelector('.guide')?.getAttribute('lang')).toBe('en');
+    // Its title, lead and contents too; the note and the contents' heading are in the page's language.
+    expect(page.querySelector('gc-page-header')?.getAttribute('lang')).toBe('en');
+    const entries = [...page.querySelectorAll('.guide-contents li')];
+    expect(entries.length).toBeGreaterThan(3);
+    expect(entries.every((li) => li.getAttribute('lang') === 'en')).toBe(true);
+    expect(page.querySelector('.guide-contents')?.getAttribute('lang')).toBeNull();
     expect(page.textContent).toContain('This guide is not translated yet, so it is shown in English.');
     // A guide written one way only offers no other.
     expect(page.querySelector('.guide-version')).toBeNull();
@@ -259,6 +302,16 @@ Glaze
 : Glass on a pot.
 
 ::poison-lines
+
+::shops
+
+::silica-limit
+
+::food-limits
+
+::local-equivalents
+
+::not-a-block
 `;
 
   it('reads the front matter, sections and blocks', () => {
@@ -283,7 +336,16 @@ Glaze
       celsius: { from: 1222, to: null, unit: '°C' }
     });
     const glossary = blocks(guide.sections[1]!.blocks, 'glossary');
-    expect(glossary.map((block) => block.kind)).toEqual(['definitions', 'poison-lines']);
+    // Each region block on a line of its own; any other ::line is text.
+    expect(glossary.map((block) => block.kind)).toEqual([
+      'definitions',
+      'poison-lines',
+      'shops',
+      'silica-limit',
+      'food-limits',
+      'local-equivalents',
+      'paragraph'
+    ]);
     expect((glossary[0] as Extract<(typeof glossary)[number], { kind: 'definitions' }>).items).toHaveLength(2);
   });
 

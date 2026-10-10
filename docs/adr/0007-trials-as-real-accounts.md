@@ -37,7 +37,8 @@ true.
 - **Make email optional for trials:** the unique index would need to become sparse, a migration
   on live data, and every place that assumes an email would need checking.
 - **A MongoDB TTL index to expire trials:** it would delete the user and leave the records behind,
-  so the sweep deletes records first, then the user.
+  so the sweep deletes both. It deletes the user first, in the same step that checks it is still
+  an expired trial, so a trial claimed a moment before is never deleted.
 
 ## Consequences
 

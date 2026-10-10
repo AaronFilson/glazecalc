@@ -136,7 +136,8 @@
       "legend": "Densidade do vidrado",
       "sg": {
         "label": "Densidade relativa",
-        "saved": "Guardado: densidade do vidrado como densidade relativa."
+        "saved": "Guardado: densidade do vidrado como densidade relativa.",
+        "example": "SG 1,45"
       },
       "baume": {
         "label": "Graus Baumé, com um densímetro",

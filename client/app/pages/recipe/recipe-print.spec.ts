@@ -3,6 +3,7 @@ import { Title } from '@angular/platform-browser';
 import { TranslocoService } from '@jsverse/transloco';
 import { calculateUMF } from '../../../../lib/chemistry';
 import { Additive, Material, Recipe } from '../../core/models';
+import { formatLocale } from '../../shared/format';
 import { GRAMS_PER_POUND } from '../../shared/weights';
 import { provideEnglish } from '../../testing/i18n';
 import { API, answer, httpMock, settle, testProviders, text } from '../../testing/test-providers';
@@ -250,6 +251,33 @@ describe('RecipePrint', () => {
     // Said to screen readers, and part of the field's description.
     expect(input.getAttribute('aria-describedby')).toBe('print-batch-help print-batch-problem');
     expect(root.querySelector('#print-batch-problem')?.getAttribute('role')).toBe('alert');
+  });
+
+  it("takes the batch size the reader's way, and converts it plainly when the unit changes", async () => {
+    formatLocale.set('de-DE');
+    try {
+      const { fixture, root } = await create(RECIPE, 'lb');
+      const input = root.querySelector('#print-batch-size') as HTMLInputElement;
+      // The default of 1000 g, in pounds, as a German page writes it.
+      expect(input.value).toBe('2,2');
+      expect(text(fixture, '.print-problem')).toBe('');
+      expect(text(fixture, '#print-batch-help')).toContain('2,5');
+      await typeBatch(fixture, root, '2,5');
+      expect(JSON.parse(localStorage.getItem('printBatch')!)).toEqual({ text: '2.5', unit: 'lb' });
+      expect(rows(root, '.print-table tbody tr')[0][3]).toBe('8 oz');
+
+      // 5.000 is five thousand on a German page, not five.
+      await choose(fixture, root, 'print-unit-g');
+      httpMock()
+        .expectOne((r) => r.method === 'PUT' && r.url === API + '/preferences')
+        .flush({});
+      await settle(fixture);
+      expect(input.value).toBe('1134');
+      await typeBatch(fixture, root, '5.000');
+      expect(text(fixture, '.print-batch-summary')).toMatch(/^Batch: 5000 g of base materials/);
+    } finally {
+      formatLocale.set('en');
+    }
   });
 
   it("changes the account's weight unit, and puts it back if that cannot be saved", async () => {

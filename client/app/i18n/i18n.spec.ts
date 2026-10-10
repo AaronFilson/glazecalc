@@ -108,6 +108,13 @@ describe('translations', () => {
       expect(new Intl.PluralRules('ar').resolvedOptions().pluralCategories).toHaveLength(6);
     });
 
+    it('shows an apostrophe written twice as one, in plain text too', () => {
+      // As npm run i18n:sources writes the data's words for translators (safety/de.json).
+      expect(write('de', "Provence-Alpes-Côte d''Azur, Corse", {})).toBe("Provence-Alpes-Côte d'Azur, Corse");
+      expect(write('en', "Don't poison your family", {})).toBe("Don't poison your family");
+      expect(write('en', "'{'braces'}' and d''Azur for {name}", { name: 'Ana' })).toBe("{braces} and d'Azur for Ana");
+    });
+
     it('stops on a message missing its values while developing, rather than show it broken', () => {
       expect(() => write('en', 'Saved {name}.', {})).toThrow(/The message test could not be written/);
     });

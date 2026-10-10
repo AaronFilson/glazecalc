@@ -1,0 +1,23 @@
+{
+  "unknown-compound": "Nepoznat spoj {compound} u formuli.",
+  "unknown-oxide": "Nepoznat oksid {oxide} u sirovini {material}.",
+  "invalid-oxide-amount": "Nevaljana količina oksida {oxide} u sirovini {material}.",
+  "loi-range": "LOI sirovine {material} mora biti najmanje 0 i manji od 100.",
+  "no-oxides": "Sirovina {material} nema oksida.",
+  "no-name": "Sirovina mora imati naziv.",
+  "no-analysis": "Za sirovinu {material} potrebna je formula ili analiza.",
+  "recipe-shape": "Recept mora biti niz oblika '{ material, amount }' ili mapa količina.",
+  "invalid-amount": "Nevaljana količina sirovine {material}.",
+  "missing-material": "U retku recepta nedostaje sirovina.",
+  "unknown-material": "Nepoznata sirovina {material}.",
+  "no-flux": "Recept ne sadrži okside topitelja, pa Segerova formula (UMF) nije definirana.",
+  "no-target": "Ciljni sastav nema oksida kojima bi se trebalo približiti.",
+  "no-materials": "Nema sirovina za izračun.",
+  "no-temperature": "Za određivanje udjela bora potrebna je temperatura pečenja.",
+  "no-flux-to-rebuild": "U glazuri nema topitelja koje bi trebalo iznova sastaviti.",
+  "unknown-element": "Nepoznat element {element} u formuli {formula}.",
+  "bad-formula": "Formulu {formula} nije moguće raščlaniti.",
+  "analysis-total": "Analiza sirovine {material} ukupno iznosi {total} %, uključujući LOI; očekuje se oko 100 %.",
+  "stored-equivalent": "Spremljena ekvivalentna masa sirovine {material} ne odgovara njezinoj formuli i vrijednosti LOI; umjesto nje korištene su formula i vrijednost LOI.",
+  "trace-flux": "Recept sadrži samo tragove oksida topitelja, pa Segerova formula (UMF) nema smisla."
+}

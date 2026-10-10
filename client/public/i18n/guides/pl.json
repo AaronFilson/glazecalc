@@ -52,11 +52,103 @@
     "animalsNone": "Zwierzęta",
     "vet": "Należy zadzwonić do weterynarza.",
     "checkedOn": "Sprawdzono na stronach:",
-    "choosePrompt": "Wystarczy wybrać kraj, aby zobaczyć, gdzie tam dzwonić."
+    "choosePrompt": "Wystarczy wybrać kraj, aby zobaczyć, gdzie tam dzwonić.",
+    "ministry": "Strona ministerstwa zdrowia: <link>{name}</link>."
   },
   "density": {
     "sg": "SG {value}",
     "baume": "{value} °Bé ({sg})",
     "pint": "{value} oz na pintę imperialną ({sg})"
+  },
+  "shops": {
+    "shopsIn": "Sklepy w kraju",
+    "label": "Sklepy: {region}",
+    "caption": "Wybrane sklepy z surowcami do szkliw: {region} (sprawdzono {date})",
+    "nearbyCaption": "Sklepy w innych krajach, które podają, że wysyłają do kraju: {region} (sprawdzono {date})",
+    "shop": "Sklep",
+    "sells": "W ofercie",
+    "packs": "Zauważone opakowania",
+    "seen": "Zauważone surowce, pod nazwami sklepu",
+    "what": {
+      "materials": "surowce do szkliw",
+      "frits": "fryty",
+      "oxides": "tlenki",
+      "stains": "pigmenty",
+      "clays": "gliny",
+      "glazes": "gotowe szkliwa",
+      "kilns": "piece"
+    },
+    "none": "Nie znaleźliśmy sklepu z surowcami do szkliw w kraju: {region}.",
+    "unknown": "Nie szukaliśmy jeszcze sklepów w kraju: {region}.",
+    "choosePrompt": "Wystarczy wybrać kraj, aby zobaczyć tamtejsze sklepy."
+  },
+  "silica": {
+    "limitIn": "Limit w kraju",
+    "label": "Limit dla krzemionki: {region}",
+    "caption": "Limit dla respirabilnej krzemionki krystalicznej w miejscu pracy: {region} (średnia z 8 godzin, sprawdzono {date})",
+    "both": "Kwarc i krystobalit",
+    "quartz": "Kwarc",
+    "cristobalite": "Krystobalit",
+    "actionLevel": "Próg podjęcia działań",
+    "value": "{value} mg/m³",
+    "kind": {
+      "binding": "Limit wiążący.",
+      "indicative": "Limit indykatywny: wartość orientacyjna, a nie pułap wyznaczony prawem.",
+      "assessment": "Kryterium oceny, a nie limit wiążący."
+    },
+    "setBy": "Wartość ustala <link>{law}</link>.",
+    "lowerThanEu": "To mniej niż wiążący limit UE wynoszący {value} mg/m³.",
+    "sameAsEu": "To tyle samo co wiążący limit UE.",
+    "unknown": "Nie udało nam się potwierdzić limitu ustalonego w kraju: {region}. Wiążący limit UE wynoszący {value} mg/m³ obowiązuje w każdym państwie członkowskim.",
+    "noData": "Nie potwierdziliśmy jeszcze limitu obowiązującego w kraju: {region}.",
+    "agency": "Krajowa instytucja ds. bezpieczeństwa i higieny pracy: <link>{name}</link>.",
+    "agencySilica": "Jej <link>strona o krzemionce</link>.",
+    "choosePrompt": "Wystarczy wybrać kraj, aby zobaczyć obowiązujący w nim limit."
+  },
+  "food": {
+    "rulesIn": "Przepisy w kraju",
+    "label": "Limity dla wyrobów ceramicznych: {region}",
+    "caption": "Ile wypalony wyrób może uwolnić w badaniu przewidzianym w przepisach: {region} (sprawdzono {date})",
+    "article": "Rodzaj wyrobu",
+    "lead": "Ołów",
+    "cadmium": "Kadm",
+    "category": {
+      "flat": "Wyroby, których nie można napełniać, lub o głębokości nieprzekraczającej 25 mm",
+      "fillable": "Pozostałe wyroby, które mogą być napełniane",
+      "cooking": "Naczynia do gotowania dowolnej wielkości oraz opakowania i naczynia do przechowywania o objętości powyżej 3 L",
+      "rimBand": "Brzeg naczynia do picia: pas o szerokości 2 cm od wewnątrz i od zewnątrz",
+      "rimArticle": "Brzeg naczynia do picia: pas 20 mm po zewnętrznej stronie górnej krawędzi, na jeden wyrób",
+      "flatware": "Naczynia płaskie, o głębokości do 25 mm",
+      "smallHollow": "Małe naczynia głębokie, poniżej 1,1 L, inne niż filiżanki i kubki",
+      "cups": "Filiżanki i kubki",
+      "largeHollow": "Duże naczynia głębokie, 1,1 L lub więcej, inne niż dzbanki",
+      "pitchers": "Dzbanki",
+      "auSmall": "Filiżanki, kubki, dzbanki, miski, imbryki i inne naczynia stołowe poniżej 1100 mL",
+      "auLarge": "Te same naczynia, 1100 mL lub więcej",
+      "auPlates": "Talerze, spodki i podobne naczynia stołowe",
+      "auCooking": "Naczynia do gotowania"
+    },
+    "judged": {
+      "average": "średnia z 6 sztuk",
+      "each": "każda z 6 sztuk"
+    },
+    "euRules": "Obowiązują tu przepisy UE.",
+    "law": "Limity ustala <link>{law}</link>.",
+    "inForce": "Obowiązują od {date}.",
+    "unknown": "Nie potwierdziliśmy jeszcze przepisów obowiązujących w kraju: {region}.",
+    "choosePrompt": "Wystarczy wybrać kraj, aby zobaczyć obowiązujące w nim przepisy."
+  },
+  "equivalents": {
+    "buyingIn": "Zakupy w kraju",
+    "label": "{library, select, US {Odpowiedniki sprzedawane w USA} UK {Odpowiedniki sprzedawane w Wielkiej Brytanii} EU {Odpowiedniki sprzedawane w UE} other {Odpowiedniki sprzedawane w Australii i Nowej Zelandii}}",
+    "caption": "{library, select, US {Surowce niesprzedawane w USA, każdy z najbliższym odpowiednikiem sprzedawanym na miejscu} UK {Surowce niesprzedawane w Wielkiej Brytanii, każdy z najbliższym odpowiednikiem sprzedawanym na miejscu} EU {Surowce niesprzedawane w UE, każdy z najbliższym odpowiednikiem sprzedawanym na miejscu} other {Surowce niesprzedawane w Australii i Nowej Zelandii, każdy z najbliższym odpowiednikiem sprzedawanym na miejscu}}",
+    "material": "W recepturze",
+    "soldIn": "W sprzedaży w",
+    "closest": "{library, select, US {Najbliższe odpowiedniki sprzedawane w USA} UK {Najbliższe odpowiedniki sprzedawane w Wielkiej Brytanii} EU {Najbliższe odpowiedniki sprzedawane w UE} other {Najbliższe odpowiedniki sprzedawane w Australii i Nowej Zelandii}}",
+    "apart": "różni się o {grams} g na 100 g",
+    "noneClose": "Nic w granicach 15 g na 100 g: należy porównać składy chemiczne.",
+    "loading": "Wczytywanie biblioteki…",
+    "failed": "Nie udało się wczytać biblioteki. Proszę spróbować ponownie później.",
+    "choosePrompt": "Wystarczy wybrać kraj, aby zobaczyć, co się tam sprzedaje."
   }
 }

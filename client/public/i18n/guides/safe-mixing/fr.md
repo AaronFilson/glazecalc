@@ -23,10 +23,14 @@ Label: Valeurs limites d’exposition à la silice
 | États-Unis       | 0,05 mg/m³ (50 µg/m³) | Valeur limite de l’OSHA. Les employeurs doivent commencer à agir dès 25 µg/m³, le « seuil d’action ».     |
 | Royaume-Uni      |             0,1 mg/m³ | L’exposition doit aussi rester « aussi faible que raisonnablement possible ».                             |
 | Union européenne |             0,1 mg/m³ | Valeur limite contraignante (directive 2017/2398). Certains États membres fixent des valeurs plus basses. |
-| Australie        |            0,05 mg/m³ | Depuis juillet 2020. En juin 2026, les ministres ont refusé de l’abaisser à 0,025.                        |
-| Nouvelle-Zélande |           0,025 mg/m³ | Depuis novembre 2023.                                                                                     |
+| Australie        |            0,05 mg/m³ | Depuis juillet 2020. En juin 2026, la plupart des ministres n’ont pas soutenu un abaissement à 0,025.     |
+| Nouvelle-Zélande |           0,025 mg/m³ | Depuis 2023. Les normes de WorkSafe sont des recommandations, pas des limites légales.                    |
 
 Certaines pages indiquent 0,025 mg/m³ pour l’Australie, mais la valeur limite officielle reste 0,05. Dans tous les cas, le conseil est le même : réduisez la poussière autant que vous le pouvez.
+
+Plusieurs États membres de l’UE fixent des valeurs limites plus basses que celle de l’UE. La valeur limite du pays où vous vivez, le texte qui la fixe et l’organisme national chargé de la sécurité au travail :
+
+::silica-limit
 
 > [!NOTE]
 > Ce sont des valeurs limites pour le travail. Elles s’imposent aux employeurs : personne ne contrôle donc un céramiste qui travaille seul chez lui, mais les ateliers collectifs et les écoles qui emploient du personnel y sont en général soumis (vérifiez la réglementation locale). La poussière est la même à la maison, et ces valeurs montrent l’ampleur du danger : 25 à 100 millionièmes de gramme dans chaque mètre cube d’air, en moyenne sur une journée.
@@ -39,7 +43,7 @@ L’essentiel de la protection vient des habitudes, pas de l’équipement. Les 
 
 ### Évitez la poudre quand vous le pouvez
 
-- **Achetez de l’émail{{en: glaze}} prêt à l’emploi** quand il convient à votre travail. La première suggestion du HSE est « Achetez l’émail prêt à l’emploi, quand c’est possible », ou sous forme de granulés ou de bain d’émail{{en: slurry}}.
+- **Achetez de l’émail{{en: glaze}} liquide prêt à l’emploi** quand il convient à votre travail. La première suggestion du HSE est « Achetez l’émail prêt à l’emploi, quand c’est possible », ou sous forme de granulés ou de bain d’émail{{en: slurry}}.
 - **Choisissez des recettes plus sûres.** Le HSE suggère des « émaux qui contiennent moins de silice cristalline ». Digitalfire suggère une **fritte**{{en: frit}} (du verre fabriqué en usine puis broyé en poudre, qui se dissout bien moins que les matières crues) à la place du carbonate de baryum cru, et un **pigment**{{en: stain}} (une couleur céramique fabriquée industriellement) à la place de fortes quantités de manganèse, de cobalt ou de nickel pour les noirs.
 
 ### Quand vous utilisez de la poudre
@@ -82,7 +86,7 @@ La classe supérieure filtre une plus grande part des particules fines. Les sour
 
 Un masque qui fuit laisse entrer la poussière par ses bords, quelle que soit sa classe. Le HSE avertit que la barbe, même de quelques jours, « rend impossible une bonne étanchéité ».
 
-- **Rasez-vous le jour même.** Les recommandations diffèrent sur le temps écoulé depuis le rasage pour être encore « rasé de près » : moins de 8 heures (un fabricant britannique, qui cite le HSE) ou, de préférence, moins de 12 heures (la norme australienne et néo-zélandaise sur l’essai d’ajustement). Se raser le jour où l’on travaille répond aux deux.
+- **Rasez-vous peu avant de travailler.** Les recommandations diffèrent sur le temps écoulé depuis le rasage pour être encore « rasé de près » : moins de 8 heures (un fabricant britannique, qui cite le HSE) ou, de préférence, moins de 12 heures (la norme australienne et néo-zélandaise sur l’essai d’ajustement). Se raser peu avant de travailler répond aux deux.
 - **Si vous gardez la barbe,** un **appareil filtrant à ventilation assistée** non ajusté (PAPR : une cagoule ou un casque avec un ventilateur qui fournit de l’air filtré) n’a pas besoin d’être étanche au visage.
 - **Choisissez la bonne taille.** Un mauvais ajustement est une cause majeure de fuites. Sur les lieux de travail, on pratique un **essai d’ajustement**, qui vérifie qu’un masque donné est étanche sur un visage donné. À la maison, nous vous suggérons de suivre les instructions du fabricant pour vérifier l’étanchéité chaque fois que vous le mettez.
 
@@ -243,7 +247,7 @@ Voici les sources primaires qui méritent le plus d’être lues. La plupart son
 
 - **États-Unis :** la [norme sur la silice](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.1053) de l’OSHA (29 CFR 1910.1053) et ses [conseils aux personnes qui choisissent de porter un masque de protection respiratoire](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.134AppD) ; l’[alerte du NIOSH sur la silicose](https://www.cdc.gov/niosh/docs/92-107).
 - **Royaume-Uni :** les fiches COSHH essentials du HSE pour la céramique (COSHH, Control of Substances Hazardous to Health, est la réglementation sur le contrôle des substances dangereuses pour la santé), en particulier la [CR1 sur la préparation des émaux et des couleurs](https://www.hse.gov.uk/PUBNS/guidance/cr1.pdf) et la [CR5 sur leur pulvérisation](https://www.hse.gov.uk/PUBNS/guidance/cr5.pdf), ainsi que les [bases de l’essai d’ajustement](https://www.hse.gov.uk/respiratory-protective-equipment/fit-testing-basics.htm) du HSE.
-- **Union européenne :** la directive (UE) 2017/2398 fixe la valeur limite contraignante pour la silice{{en: silica}} ; le [tableau des valeurs limites d’exposition](https://nepsi.eu/wp-content/uploads/2022/10/oel_full_table_september_2020_europe.pdf) du NEPSI donne celles de chaque pays. L’ECHA, l’Agence européenne des produits chimiques, publie des classifications comme celles des borates.
+- **Union européenne :** la directive (UE) 2017/2398 fixe la valeur limite contraignante pour la silice{{en: silica}} ; la valeur limite propre à chaque État membre et son organisme national chargé de la sécurité au travail figurent plus haut, dans la section Valeurs limites d’exposition. L’ECHA, l’Agence européenne des produits chimiques, publie des classifications comme celles des borates.
 - **Australie :** les [pages de Safe Work Australia sur la silice cristalline et la silicose](https://www.safeworkaustralia.gov.au/safety-topic/hazards/crystalline-silica-and-silicosis/research-lower-workplace-exposure-standard-respirable-crystalline-silica-0).
 - **Nouvelle-Zélande :** WorkSafe New Zealand fixe les valeurs limites d’exposition professionnelle ; l’[historique de la valeur limite pour la silice](https://mbie.govt.nz/building-and-energy/building/building-and-construction-consultations/work-with-engineered-stone-and-materials-containing-crystalline-silica/annex-iii) publié par le MBIE en donne les dates.
 - **Fours :** le [guide de Skutt sur la pièce du four](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Designing-A-Kiln-Room-1.pdf), la [fiche d’Orton et de la CCSA sur les fumées des fours](https://assets.noviams.com/novi-file-uploads/ccsa/Product_Safety/Fumes.pdf), et surtout le manuel de votre propre four.
@@ -257,7 +261,6 @@ Voici les sources primaires qui méritent le plus d’être lues. La plupart son
 - [HSE : COSHH essentials CR1, Glaze and colour preparation](https://www.hse.gov.uk/PUBNS/guidance/cr1.pdf)
 - [HSE : COSHH essentials CR5, Spraying glazes and colours](https://www.hse.gov.uk/PUBNS/guidance/cr5.pdf)
 - [HSE : Fit testing basics](https://www.hse.gov.uk/respiratory-protective-equipment/fit-testing-basics.htm)
-- [NEPSI : Occupational exposure limits for respirable crystalline silica in Europe](https://nepsi.eu/wp-content/uploads/2022/10/oel_full_table_september_2020_europe.pdf)
 - [Safe Work Australia : Research on a lower workplace exposure standard for respirable crystalline silica](https://www.safeworkaustralia.gov.au/safety-topic/hazards/crystalline-silica-and-silicosis/research-lower-workplace-exposure-standard-respirable-crystalline-silica-0)
 - [Enviliance : rapport 16612, la décision de l’Australie de juin 2026 sur la valeur limite pour la silice](https://enviliance.com/regions/oceania/au/report_16612)
 - [MBIE (Nouvelle-Zélande) : Work with engineered stone and materials containing crystalline silica, Annex III](https://mbie.govt.nz/building-and-energy/building/building-and-construction-consultations/work-with-engineered-stone-and-materials-containing-crystalline-silica/annex-iii)

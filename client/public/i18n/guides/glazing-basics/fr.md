@@ -244,23 +244,17 @@ Le **relargage**{{en: leaching}}, c’est la dissolution de métaux d’un émai
 
 ### Sans plomb ne veut pas dire apte au contact alimentaire
 
-Aux États-Unis, dans l’UE, au Royaume-Uni, en Australie et en Nouvelle-Zélande, la réglementation limite le plomb et le cadmium qu’une pièce cuite libère, et non ce que contient l’émail. « Sans plomb » écarte un danger ; ce n’est pas une indication d’aptitude au contact alimentaire{{en: food safe}}. D’autres oxydes relarguent aussi : Glazy avertit que les émaux riches en baryum « peuvent relarguer et ne sont en général pas aptes au contact alimentaire », Digitalfire dit que le cuivre « peut rendre un émail susceptible de relarguer ; testez-le », et Glazy ne conseille plus les émaux au plomb pour les pièces utilitaires.
+Aux États-Unis, dans l’UE, au Royaume-Uni et en Australie, la réglementation limite le plomb et le cadmium qu’une pièce cuite libère, et non ce que contient l’émail. « Sans plomb » écarte un danger ; ce n’est pas une indication d’aptitude au contact alimentaire{{en: food safe}}. D’autres oxydes relarguent aussi : Glazy avertit que les émaux riches en baryum « peuvent relarguer et ne sont en général pas aptes au contact alimentaire », Digitalfire dit que le cuivre « peut rendre un émail susceptible de relarguer ; testez-le », et Glazy ne conseille plus les émaux au plomb pour les pièces utilitaires.
 
 Un **émail intérieur**{{en: liner glaze}} est un émail stable, en général transparent ou blanc, pour les surfaces en contact avec les aliments. À notre avis, un émail sans colorant{{en: colorant}}, sans baryum, sans plomb et sans lithium, qui fond complètement, ne tressaille{{en: craze}} pas et résiste bien à l’usure, est un choix moins risqué. Un risque moindre n’est pas une preuve.
 
 Les **formules limites**{{en: limit formulas}} (Digitalfire préfère parler de **formules cibles**{{en: target formulas}}) donnent des plages typiques de formule de Seger (UMF){{en: unity molecular formula}} pour des émaux stables à un cône{{en: cone}} donné : pour le cône 6, les cibles de Digitalfire placent l’alumine entre 0,285 et 0,64 et la silice{{en: silica}} entre 2,4 et 4,7. Elles orientent vers une chimie saine mais ne prouvent rien ; Digitalfire évite le mot « limite », parce qu’il laisse entendre que les émaux situés dans ces plages « seraient en quelque sorte sans danger ». Les outils de Glazecalc qui modifient une recette signalent quand la nouvelle recette dépasse une limite recommandée, par exemple beaucoup de bore au cône 6, et ce que l’émail fera probablement.
 
-Table: Limites de la FDA américaine pour le plomb libéré par les poteries (CPG Sec. 545.450), en microgrammes par millilitre de solution d’essai
-Label: Limites de plomb de la FDA
+Les limites légales varient d’un pays à l’autre. Le tableau montre celles du pays où vous vivez, dans les unités qu’emploie la loi ; choisissez un autre pays pour comparer.
 
-| Objet                                          | Plomb (µg/mL) | Évalué sur          |
-| ---------------------------------------------- | ------------: | ------------------- |
-| Objets plats (pas plus de 25 mm de profondeur) |           3,0 | Moyenne de 6 pièces |
-| Petits objets creux (moins de 1,1 L)           |           2,0 | Chacune des 6       |
-| Grands objets creux (1,1 L ou plus)            |           1,0 | Chacune des 6       |
-| Tasses, mugs et pichets                        |           0,5 | Chacune des 6       |
+::food-limits
 
-Aux États-Unis, les pièces non destinées aux aliments doivent porter une mention permanente, cuite, « Not for Food Use » (impropre à l’usage alimentaire), ou être percées d’un trou à travers la surface en contact avec les aliments. L’UE fixe des limites pour le plomb et le cadmium dans la directive 84/500/CEE, que l’Angleterre conserve dans sa propre législation. Les Pays-Bas et le Luxembourg ont divisé leurs limites pour le plomb par environ 130 à 150 à partir du 29 mai 2026, et la Belgique suit le mouvement. L’Australie et la Nouvelle-Zélande appliquent la norme AS 4371, dont les valeurs ne sont accessibles que contre paiement.
+Aux États-Unis, les pièces non destinées aux aliments doivent porter une mention permanente, cuite, « Not for Food Use » (impropre à l’usage alimentaire), ou être percées d’un trou à travers la surface en contact avec les aliments. L’UE fixe des limites pour le plomb et le cadmium dans la directive 84/500/CEE, et le Royaume-Uni conserve les mêmes valeurs dans sa propre législation. À partir du 29 mai 2026, les Pays-Bas, la Belgique et le Luxembourg autorisent environ 130 à 150 fois moins de plomb, et environ 15 fois moins de cadmium. L’Australie fixe des limites pour les pièces importées ; nous n’avons trouvé aucune limite officielle pour les pièces fabriquées en Australie ou en Nouvelle-Zélande.
 
 ### Les tests
 

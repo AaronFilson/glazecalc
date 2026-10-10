@@ -142,7 +142,7 @@ La Pet Poison Helpline afferma che «Il piombo è tossico per tutte le specie, m
 
 - Tenere gli animali domestici fuori dal laboratorio, con la porta chiusa.
 - I cani rosicchiano i sacchi e bevono dai secchi. Tenere i sacchi in un armadietto chiuso e mettere un coperchio su ogni secchio.
-- I gatti camminano nella polvere e poi se la leccano via da zampe e pelo. Pulire il pavimento a umido e tenere fuori i gatti, così non resta nulla da togliersi leccandosi.
+- I gatti camminano nella polvere e poi se la leccano via da zampe e pelo. Pulire il pavimento a umido e tenere i gatti fuori dal laboratorio, così non resta nulla da togliersi leccandosi.
 - Uccelli e piccoli mammiferi (conigli, porcellini d’India, criceti) respirano la stessa aria della casa. Tenerli in una stanza lontana, con la porta chiusa, mentre si maneggiano materiali secchi e mentre il forno è in cottura.
 - Negli acquari si deposita la polvere. Tenere gli acquari fuori dal laboratorio e coperti.
 - Tenere le ciotole del cibo e dell’acqua degli animali lontane dal laboratorio e dal forno e usare ciotole del commercio o testate, non esperimenti del laboratorio.
@@ -165,7 +165,7 @@ Le fonti non concordano sulla distanza di sicurezza. Rio Grande indica almeno 12
 
 Rio Grande raccomanda una **linea elettrica dedicata** (che non alimenta nient’altro) con una presa correttamente collegata a terra. Suggeriamo di non usare prolunghe. Tra una cottura e l’altra, spegnere l’interruttore automatico o il sezionatore del forno, oppure staccare la spina, così che un bambino non possa accenderlo.
 
-### Restare fino alla fine della cottura
+### Essere presenti alla fine della cottura
 
 Il **kiln sitter** è l’interruttore meccanico di molti forni manuali: un piccolo cono{{en: cone}} si piega alla fine della cottura e fa scattare lo spegnimento. Il suo manuale dice che «NON è concepito per funzionare come dispositivo di spegnimento di sicurezza». Rio Grande dice di non lasciare mai incustodito un forno in cottura, «soprattutto vicino all’ora prevista di spegnimento». Quindi cuocere solo quando un adulto sarà in casa e sveglio alla fine della cottura, controllare che il forno si sia spento e tenere un estintore ABC nel locale del forno. Per il funzionamento di kiln sitter, centraline e curve di cottura, vedere [Cuocere in un forno semplice](/guides/firing).
 

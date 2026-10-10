@@ -23,10 +23,14 @@ Label: Silica exposure limits
 | United States  | 0.05 mg/m³ (50 µg/m³) | OSHA's limit. Employers must start taking action at 25 µg/m³, the "action level". |
 | United Kingdom |             0.1 mg/m³ | Exposure must also be kept "as low as reasonably practicable".                    |
 | European Union |             0.1 mg/m³ | Binding limit (Directive 2017/2398). Some member states set lower ones.           |
-| Australia      |            0.05 mg/m³ | Since July 2020. Ministers declined a cut to 0.025 in June 2026.                  |
-| New Zealand    |           0.025 mg/m³ | Since November 2023.                                                              |
+| Australia      |            0.05 mg/m³ | Since July 2020. In June 2026, most ministers did not support a cut to 0.025.     |
+| New Zealand    |           0.025 mg/m³ | Since 2023. WorkSafe's standards are guidance, not legal limits.                  |
 
 Some pages quote 0.025 mg/m³ for Australia, but the official limit is still 0.05. Either way, the advice is the same: keep dust as low as you can.
+
+Several EU member states set lower limits than the EU's. The limit where you live, the law that sets it and the national body for safety at work:
+
+::silica-limit
 
 > [!NOTE]
 > These are workplace limits. They bind employers, so no one inspects a potter working alone at home, though community studios and schools with staff are usually covered (check your local rules). The dust is the same at home, and the limits show the scale of the hazard: 25 to 100 millionths of a gram in each cubic meter of air, averaged over a day.
@@ -82,7 +86,7 @@ The higher class filters a larger share of fine particles. Sources disagree on w
 
 A mask that leaks lets dust in around its edges, whatever its class. HSE warns that stubble and beards "make it impossible to get a good seal".
 
-- **Shave the same day.** Guidance differs on how recent "clean-shaven" must be: within 8 hours (a UK maker, citing HSE) or preferably within 12 (the Australian and New Zealand fit-test standard). Shaving on the day you work meets both.
+- **Shave shortly before you work.** Guidance differs on how recent "clean-shaven" must be: within 8 hours (a UK maker, citing HSE) or preferably within 12 (the Australian and New Zealand fit-test standard). Shaving shortly before you work meets both.
 - **If you keep a beard,** a loose-fitting **powered respirator** (PAPR: a hood or helmet with a fan that supplies filtered air) needs no face seal.
 - **Get the size right.** Poor fit is a major cause of leaks. Workplaces use a **fit test**, a check that a particular mask seals on a particular face. At home, we suggest following the maker's instructions for checking the seal each time you put it on.
 
@@ -243,7 +247,7 @@ These are the primary sources most worth reading. Most are written for workplace
 
 - **United States:** OSHA's [silica standard](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.1053) (29 CFR 1910.1053) and its [advice for people who choose to wear a respirator](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.134AppD); NIOSH's [silicosis alert](https://www.cdc.gov/niosh/docs/92-107).
 - **United Kingdom:** HSE's COSHH essentials sheets for ceramics (COSHH is the Control of Substances Hazardous to Health regulations), especially [CR1 on preparing glazes and colors](https://www.hse.gov.uk/PUBNS/guidance/cr1.pdf) and [CR5 on spraying them](https://www.hse.gov.uk/PUBNS/guidance/cr5.pdf), and HSE's [fit testing basics](https://www.hse.gov.uk/respiratory-protective-equipment/fit-testing-basics.htm).
-- **European Union:** Directive (EU) 2017/2398 sets the binding silica limit; NEPSI's [table of exposure limits](https://nepsi.eu/wp-content/uploads/2022/10/oel_full_table_september_2020_europe.pdf) gives each country's. ECHA, the European Chemicals Agency, publishes classifications such as those for borates.
+- **European Union:** Directive (EU) 2017/2398 sets the binding silica limit; each member state's own limit, and its national body for safety at work, are under Exposure limits, above. ECHA, the European Chemicals Agency, publishes classifications such as those for borates.
 - **Australia:** Safe Work Australia's [crystalline silica and silicosis pages](https://www.safeworkaustralia.gov.au/safety-topic/hazards/crystalline-silica-and-silicosis/research-lower-workplace-exposure-standard-respirable-crystalline-silica-0).
 - **New Zealand:** WorkSafe New Zealand sets the workplace exposure standards; MBIE's [history of the silica standard](https://mbie.govt.nz/building-and-energy/building/building-and-construction-consultations/work-with-engineered-stone-and-materials-containing-crystalline-silica/annex-iii) gives the dates.
 - **Kilns:** Skutt's [kiln room guide](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Designing-A-Kiln-Room-1.pdf), the [Orton and CCSA sheet on kiln fumes](https://assets.noviams.com/novi-file-uploads/ccsa/Product_Safety/Fumes.pdf), and above all your own kiln's manual.
@@ -257,7 +261,6 @@ These are the primary sources most worth reading. Most are written for workplace
 - [HSE: COSHH essentials CR1, Glaze and colour preparation](https://www.hse.gov.uk/PUBNS/guidance/cr1.pdf)
 - [HSE: COSHH essentials CR5, Spraying glazes and colours](https://www.hse.gov.uk/PUBNS/guidance/cr5.pdf)
 - [HSE: Fit testing basics](https://www.hse.gov.uk/respiratory-protective-equipment/fit-testing-basics.htm)
-- [NEPSI: Occupational exposure limits for respirable crystalline silica in Europe](https://nepsi.eu/wp-content/uploads/2022/10/oel_full_table_september_2020_europe.pdf)
 - [Safe Work Australia: Research on a lower workplace exposure standard for respirable crystalline silica](https://www.safeworkaustralia.gov.au/safety-topic/hazards/crystalline-silica-and-silicosis/research-lower-workplace-exposure-standard-respirable-crystalline-silica-0)
 - [Enviliance: Report 16612, Australia's June 2026 decision on the silica exposure standard](https://enviliance.com/regions/oceania/au/report_16612)
 - [MBIE (New Zealand): Work with engineered stone and materials containing crystalline silica, Annex III](https://mbie.govt.nz/building-and-energy/building/building-and-construction-consultations/work-with-engineered-stone-and-materials-containing-crystalline-silica/annex-iii)

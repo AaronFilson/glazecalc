@@ -26,18 +26,9 @@ Eine Glasur{{en: glaze}} ansetzen heißt: pulverförmige **Rohstoffe** (gemahlen
 
 ### Bezugsquellen
 
-Wer töpfert, kauft bei Händlern für Keramikbedarf, die Ton, Glasurrohstoffe und Werkzeug verkaufen. Die Tabelle nennt einige, die bei den Recherchen für diese Anleitung bestätigt wurden. Das Angebot ändert sich; prüfen Sie es also, bevor Sie bestellen. Für andere Regionen führt die Keramik-Referenzseite Digitalfire ein Verzeichnis von Händlern.
+Wer töpfert, kauft bei Händlern für Keramikbedarf, die Ton, Glasurrohstoffe und Werkzeug verkaufen. Die Tabelle zeigt einige für Ihr Land, jeweils auf der eigenen Website des Händlers geprüft, und Sie können ein anderes Land wählen, um dessen Händler zu sehen. Das Angebot ändert sich; prüfen Sie es also, bevor Sie bestellen. Große Hersteller wie Sibelco und Imerys verkaufen an die Industrie; Töpferinnen und Töpfer kaufen deren Rohstoffe über Händler wie diese. Für andere Regionen führt die Keramik-Referenzseite Digitalfire ein Verzeichnis von Händlern.
 
-Table: Einige Händler für Glasurrohstoffe, nach Region
-Label: Händler nach Region
-
-| Region         | Händler                                                                                                                                       | Gefundene Packungsgrößen |
-| -------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
-| USA            | Laguna Clay; Clay Art Center; The Ceramic Shop; New Mexico Clay; Seattle Pottery Supply                                                       | 50 lb (22,7 kg)          |
-| Großbritannien | Potterycrafts; Bath Potters; Potclays; Valentine Clays                                                                                        | 1, 5 und 25 kg           |
-| EU             | Mondré & Manz (Deutschland); Goerg & Schneider (Deutschland, vor allem Tone); Ceradel (Frankreich)                                            | Beim Händler erfragen    |
-| Australien     | Walker Ceramics (unter dem Namen Ozclay, mit Feeneys und Cesco); Northcote Pottery Supplies, über Bunnings; Oxerra für Fritten und Farbkörper | 10 bis 25 kg             |
-| Neuseeland     | CCG; Decopot                                                                                                                                  | 2,5, 5 und 25 kg         |
+::shops
 
 ### Wie viel Sie kaufen sollten
 
@@ -76,6 +67,10 @@ Markennamen kommen und gehen, wenn Gruben schließen. Custer Feldspar, über 75 
 **Gerstley Borate**, ein natürliches Bormineral aus vielen älteren Rezepten, ist knapp, seit seine Grube im Jahr 2000 geschlossen wurde; allerdings meldete New Mexico Clay im November 2025, dass Laguna „Gerstley Borate Original“ liefere. Über **Gillespie Borate** als Ersatz sind sich die Quellen nicht einig. Sein Hersteller verkauft es als Ersatz Pfund für Pfund. Berkeley Potters Studio sagt, es sei „kein direkter Ersatz“, und Digitalfire stellte fest, dass es die Farbe einer Glasur veränderte. Am sichersten ist es, die beiden nach ihren Oxiden zu vergleichen und dann zu testen.
 
 Auch regionale Namen unterscheiden sich. In Nordamerika bedeuten **flint**, quartz und silica dasselbe, nämlich gemahlenen Quarz, und laut Digitalfire werden Sie bei Händlern wahrscheinlich kein echtes Flintpulver finden. In Großbritannien ist Flint ein eigenes Produkt: Der Flint von Valentine ist kalziniertes (erhitztes) Siliciumdioxid. Beide sind fast reines Siliciumdioxid; wir erwarten daher, dass sie sich sehr ähneln, aber prüfen Sie die Analyse. Für Kaolin sagt Glazy, dass ein Austausch eins zu eins, etwa EPK statt eines China Clay, „oft problemlos funktioniert, besonders bei Mengen unter 10 %“.
+
+Viele Rezepte nennen Rohstoffe, die in einem Land verkauft werden und in einem anderen nicht. Die Tabelle unten nimmt jeden Rohstoff aus der Bibliothek von Glazecalc, der dort, wo Sie einkaufen, nicht verkauft wird, und sucht anhand der Analysen den ähnlichsten Rohstoff derselben Art, der dort verkauft wird. Die Zahl gibt an, wie weit die beiden auseinanderliegen: um wie viel Gramm sich ihre Oxide nach dem Brand unterscheiden, je 100 g Rohstoff, zusammengezählt über alle Oxide. Bis etwa 15 g kann der eine den anderen für einen ersten Test meist ersetzen. Die Namen enthalten die eigenen Kürzel und Nummern der Hersteller und Händler, sodass Sie mit dem Namen danach fragen können.
+
+::local-equivalents
 
 > [!NOTE]
 > Glazecalc vergleicht Rohstoffe danach, was sie zur gebrannten Glasur beitragen, nicht nach dem Namen. Ein [Rezept](/recipe) mit einem Rohstoff, der nicht mehr hergestellt wird, nennt, was heute verwendet wird. **Mengen vorschlagen und vergleichen** berechnet die Mengen für einen Ersatz neu, und **Aus meinem Vorrat nachbauen** baut das Rezept aus den Rohstoffen nach, die Sie vorrätig haben. Beide bilden nur die Oxide nach dem Brand nach; testen Sie also zuerst einen kleinen Ansatz.

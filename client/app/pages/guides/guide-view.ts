@@ -9,9 +9,13 @@ import { PAGE_LANGUAGE } from '../../i18n/language';
 import { pseudoText } from '../../i18n/pseudo';
 import { fixed, upTo } from '../../shared/format';
 import { PageHeader } from '../../shared/page-header';
-import { GuideContents } from './guide-contents';
+import { GuideContents, SectionLinks } from './guide-contents';
 import { Block, Guide, Inline, Reading, blocks } from './guide-document';
+import { FoodLimits } from './food-limits';
+import { LocalEquivalents } from './local-equivalents';
 import { PoisonLines } from './poison-lines';
+import { ShopList } from './shop-list';
+import { SilicaLimit } from './silica-limit';
 
 /**
  * A guide as the page draws it, from its Markdown (guide-document.ts): its
@@ -23,7 +27,17 @@ import { PoisonLines } from './poison-lines';
  */
 @Component({
   selector: 'gc-guide-view',
-  imports: [GuideContents, NgTemplateOutlet, PageHeader, PoisonLines, RouterLink],
+  imports: [
+    FoodLimits,
+    GuideContents,
+    LocalEquivalents,
+    NgTemplateOutlet,
+    PageHeader,
+    PoisonLines,
+    RouterLink,
+    ShopList,
+    SilicaLimit
+  ],
   templateUrl: './guide-view.html'
 })
 export class GuideView {
@@ -48,8 +62,14 @@ export class GuideView {
   );
   protected readonly intro = computed(() => blocks(this.guide().intro));
   protected readonly contents = computed(() =>
-    this.guide().sections.map(({ id, label }) => ({ id, label: this.show(label) }))
+    this.guide().sections.map(({ id, label, language }) => ({
+      id,
+      label: this.show(label),
+      language: language ?? this.textLanguage()
+    }))
   );
+  /** Links to a section of this page, as the contents' are. */
+  protected readonly sectionLinks = new SectionLinks();
 
   /** Text as the page shows it: as written, or accented in a pseudo-locale. */
   protected show(text: string): string {
@@ -119,15 +139,6 @@ export class GuideView {
 
   protected fragment(href: string): string | undefined {
     return href.split('#')[1];
-  }
-
-  /** A link to a section of this page moves the focus there, as the contents do. */
-  protected goTo(event: Event, href: string): void {
-    const target = document.getElementById(href.slice(1));
-    if (!target) return;
-    event.preventDefault();
-    target.scrollIntoView?.({ block: 'start' });
-    target.focus({ preventScroll: true });
   }
 
   /** The template's own lists, typed. */

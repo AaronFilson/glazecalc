@@ -1,0 +1,88 @@
+{
+  "home": {
+    "title": "Notesbog til værkstedet",
+    "signedInAs": "Logget ind som {email}.",
+    "trying": "Du prøver Glazecalc som {name}. Begynd med en opskrift.",
+    "welcomeBack": "Fortsæt, hvor du slap.",
+    "sections": {
+      "recipe": {
+        "title": "Opskrifter",
+        "text": "Byg en glasur op af råvarer og mængder, se dens Seger-formel (UMF), og gem den."
+      },
+      "material": {
+        "title": "Råvarer",
+        "text": "Tilføj egne råvarer ud fra en kemisk formel eller en leverandørs analyse."
+      },
+      "additive": {
+        "title": "Tilsætninger og farvestoffer",
+        "text": "Hold styr på de farvestoffer og opakgørende midler, der tilsættes ud over en grundglasur."
+      },
+      "firing": {
+        "title": "Brændingsjournaler",
+        "text": "Notér tider, temperaturer og kegler for hver brænding."
+      },
+      "notes": {
+        "title": "Noter",
+        "text": "Gem testresultater og alt andet, der er værd at huske."
+      },
+      "advice": {
+        "title": "Glasurråd",
+        "text": "Tips om blanding, glasering og brænding samt egne råd."
+      },
+      "guides": {
+        "title": "Vejledninger",
+        "text": "Fra hvad en glasur er, til hvordan den brændes, og hvordan alle holdes i sikkerhed undervejs."
+      }
+    },
+    "newHere": "Første gang med Seger-formler? <advice>Siden med glasurråd</advice> forklarer det grundlæggende, og <about>siden Om Glazecalc</about> fortæller, hvordan Glazecalc fungerer."
+  },
+  "firing": {
+    "title": "Brændingsjournaler",
+    "lead": "Registrér hver brænding: tider, temperaturer, kegler og noter om ovnen.",
+    "titleLabel": "Brændingens titel:",
+    "kiln": "Ovn:",
+    "date": "Dato for brændingen:",
+    "notes": "Noter om brændingen:",
+    "fieldSelect": "Vælg felter, og tilføj dem til brændingsjournalen:",
+    "addField": "Tilføj feltet",
+    "included": "De felter, der er medtaget:",
+    "fieldName": "Feltnavn: {name}",
+    "moveLeft": "Flyt feltet til venstre",
+    "moveRight": "Flyt feltet til højre",
+    "removeField": "Fjern feltet",
+    "addRow": "Tilføj en række til brændingstabellen",
+    "recordHeading": "Registrér brændingen",
+    "rowActions": "Handlinger for rækken",
+    "cell": "{field}, række {row}",
+    "removeRow": "Fjern rækken",
+    "save": "Gem",
+    "storedHeading": "Mine gemte brændinger:",
+    "stored": "Titel: {title}, ovn: {kiln}, dato: {date}",
+    "storedNotes": "Noter: {notes}",
+    "titleMissing": "Giv brændingen en titel.",
+    "fieldsMissing": "Tilføj mindst ét felt at registrere, fx {example}.",
+    "chooseField": "Vælg et felt, der skal tilføjes, og vælg derefter »Tilføj feltet«.",
+    "fetchFailed": "Der opstod en fejl under hentning af oplysningerne om brændingsjournalerne.",
+    "saved": "Brændingsjournalen blev tilføjet på serveren.",
+    "saveFailed": "Fejl: Anmodningen til serveren mislykkedes."
+  },
+  "notes": {
+    "title": "Noter",
+    "lead": "Alt andet, der er værd at huske om glasurerne.",
+    "intro": "Dette er siden med noter. Her kan der skrives og gemmes noter.",
+    "titleLabel": "Titel:",
+    "content": "Note:",
+    "save": "Gem",
+    "mineHeading": "Mine gemte noter:",
+    "titleMissing": "Giv noten en titel.",
+    "contentMissing": "Skriv noten.",
+    "untitled": "Note uden titel",
+    "fetchFailed": "Der opstod en fejl under hentning af oplysningerne om noterne.",
+    "saved": "Noten blev tilføjet på serveren.",
+    "saveFailed": "Fejl: Anmodningen til serveren mislykkedes."
+  },
+  "trash": {
+    "title": "Papirkurv",
+    "comingSoon": "Papirkurven kommer snart, i den næste version af Glazecalc. Brug indtil da slet/fjern med omtanke: Når noget er væk, er oplysningerne tabt."
+  }
+}

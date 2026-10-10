@@ -1,6 +1,8 @@
 // What a trial ("guest") account may do. Guests can use every page, but keep a
 // limited number of records, and cannot use anything that needs a password or an
-// email: they create an account (POST /api/guest/claim) for that.
+// email: they create an account (POST /api/guest/claim) for that. An account
+// keeps many more records, but not without end, so that no one account can fill
+// the server's disk.
 import express, { type NextFunction, type Request, type Response } from 'express';
 import type { Model, Types } from 'mongoose';
 import User from '../models/user.ts';
@@ -11,6 +13,7 @@ import { say } from './messages.ts';
 export type RecordModel = Model<any>;
 
 const maxRecords = (): number => Number(process.env.GUEST_MAX_RECORDS) || 25;
+const maxAccountRecords = (): number => Number(process.env.ACCOUNT_MAX_RECORDS) || 2000;
 
 // Anyone can start a trial, so a trial may send less at once than an account's
 // 100 KB (the largest real recipe is about 3 KB). jwt_auth.ts runs this for
@@ -35,12 +38,23 @@ const countField = (Model: RecordModel): string => 'trialCounts.' + Model.modelN
  * kind. Taking a place and checking the limit happen in one database update, so
  * requests sent at the same moment cannot all slip under it. A create that does
  * not succeed gives its place back.
+ *
+ * An account keeps at most ACCOUNT_MAX_RECORDS (2000) of each kind. Its
+ * records are counted, not places taken, so creates sent at the same moment
+ * can go a few over: fine for a limit that keeps the disk from filling.
  */
 export const quota =
   (Model: RecordModel, label: string) =>
   async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     const user = req.user;
-    if (!user?.guest) return next();
+    if (!user) return next();
+    if (!user.guest) {
+      if ((await Model.countDocuments({ ownedBy: user.id })) >= maxAccountRecords()) {
+        res.status(403).json(say('account-limit', { limit: maxAccountRecords(), label }));
+        return;
+      }
+      return next();
+    }
     const field = countField(Model);
     const taken = await User.updateOne(
       { _id: user._id, guest: true, $or: [{ [field]: { $exists: false } }, { [field]: { $lt: maxRecords() } }] },

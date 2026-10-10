@@ -1,5 +1,6 @@
 import { TestBed } from '@angular/core/testing';
-import { formatLocale, typedDecimalMark } from '../shared/format';
+import { PAGE_LANGUAGE } from '../i18n/language';
+import { formatLocale, listLocale, listOf, typedDecimalMark } from '../shared/format';
 import { chosenRegion } from '../shared/library-info';
 import { testProviders } from '../testing/test-providers';
 import { LocaleService, browserRegion } from './locale.service';
@@ -12,7 +13,17 @@ describe('LocaleService', () => {
   });
   afterEach(() => {
     formatLocale.set('en');
+    listLocale.set('en');
     typedDecimalMark.set('either');
+  });
+
+  it('joins lists in the page’s language, whatever the format of numbers', () => {
+    TestBed.overrideProvider(PAGE_LANGUAGE, { useValue: 'de' });
+    TestBed.inject(PreferencesService).format.set('en-US');
+    TestBed.inject(LocaleService);
+    TestBed.tick();
+    expect(formatLocale()).toBe('en-US');
+    expect(listOf(['USA', 'Vereinigtes Königreich', 'EU'])).toBe('USA, Vereinigtes Königreich und EU');
   });
 
   it("takes a region from the browser's language, for defaults only", () => {

@@ -31,6 +31,7 @@
     "scale": "Ajustar",
     "swapLike": "<b>{from}</b> ({status}): {to} pode substituí-la grama a grama.",
     "swapNotLike": "<b>{from}</b> ({status}): hoje usa-se {to}, mas não a pode substituir sem alterar as quantidades: calcule de novo a sua quantidade.",
+    "swapColorant": "<b>{from}</b> ({status}): hoje usa-se {to}, em «Corantes e aditivos». Adicione {to} aí em vez desta linha e calcule de novo a quantidade.",
     "stillLead": "{name} ainda contém chumbo.",
     "tryModern": "Experimentar matérias-primas atuais e comparar",
     "suggestAmounts": "Sugerir quantidades e comparar",
@@ -62,6 +63,8 @@
     "addRecipeToShelf": "Adicionar as matérias-primas desta receita",
     "shelfTriesIntro": "As suas matérias-primas disponíveis. Assinale «Usar obrigatoriamente» para manter uma na adaptação.",
     "gettingShelf": "A carregar as suas matérias-primas disponíveis…",
+    "shelfTryAgain": "Tentar novamente",
+    "shelfLeadHidden": "{count, plural, one {# matéria-prima com chumbo não é usada: o chumbo está desligado em <settings>Definições</settings>.} many {# de matérias-primas com chumbo não são usadas: o chumbo está desligado em <settings>Definições</settings>.} other {# matérias-primas com chumbo não são usadas: o chumbo está desligado em <settings>Definições</settings>.}}",
     "matchAndCompare": "Adaptar e comparar",
     "swapped": "Trocado por matérias-primas atuais, numa nova receita ainda não guardada.",
     "undoSwap": "Anular a troca",
@@ -169,7 +172,7 @@
   "analysis": {
     "oldCopy": "Uma versão antiga do Glazecalc guardou {name} sem a perda ao fogo (PF), por isso fica de fora. Volte a adicionar {name} à receita para que entre no cálculo.",
     "noAnalysis": "{name} não tem uma análise de óxidos que a fórmula de Seger possa usar, por isso fica de fora.",
-    "parts": "{amount} {amount, plural, =1 {parte} one {partes} many {partes} other {partes}}"
+    "parts": "{amount} {count, plural, =1 {parte} one {partes} many {partes} other {partes}}"
   },
   "library": {
     "which": "{noun, select, additives {Que aditivos} other {Que matérias-primas}}",
@@ -359,7 +362,7 @@
     "boronMidFireTends": "Vidrados assim tendem a escorrer, a ficar leitosos ou com estrias, e podem fendilhar ou resistir pior ao desgaste.",
     "boronMidFireFix": "Use apenas o boro necessário para fundir; o caulino e a sílica estabilizam-no.",
     "boronShort": "Tem menos boro ({boron}) do que os vidrados costumam precisar nesta cozedura (cerca de {needed}).",
-    "boronShortEffects": "Pode não fundir por completo e sair pouco fluido, seco ou com picado. Teste-o; se ficar subcozido, uma cozedura mais alta ou um pouco mais de frita base ajuda.",
+    "boronShortEffects": "Pode não fundir por completo e sair pouco fluido, seco ou com picado. Teste-o; se ficar subcozido, uma cozedura mais quente ou um pouco mais de frita base ajuda.",
     "aluminaLow": "Há muito pouca alumina ({alumina}).",
     "aluminaLowProbably": "Provavelmente será um vidrado brilhante que escorre, pode formar cristais ou turvar ao arrefecer, e é mais macio e menos durável.",
     "aluminaLowTends": "Tende a ser um vidrado brilhante que escorre, pode formar cristais ou turvar ao arrefecer, e é mais macio e menos durável.",
@@ -387,7 +390,7 @@
     "whitingProbably": "Com {percent}%, provavelmente vai ter picado ou bolhas e sair seco, mate ou com aspeto de giz.",
     "whitingTends": "Com {percent}%, tende a ter picado ou bolhas e a sair seco, mate ou com aspeto de giz.",
     "whitingFix": "O cálcio de uma frita ou da wollastonite evita as duas coisas. (5% é a orientação desta aplicação; nenhuma fonte publicada indica um limite.)",
-    "fluorine": "A fluorite e a criolite libertam flúor durante a cozedura. Ventile bem o forno, ou obtenha o cálcio ou o sódio de uma frita ou da wollastonite.",
+    "fluorine": "{name} liberta flúor durante a cozedura. Ventile bem o forno, ou use em seu lugar uma matéria-prima sem flúor.",
     "clayLowWas": "Tem apenas {clay}% de argila crua; a receita antiga tinha {was}%.",
     "clayLow": "Tem apenas {clay}% de argila crua.",
     "clayNoneWas": "Não tem argila crua; a receita antiga tinha {was}%.",

@@ -31,6 +31,7 @@
     "scale": "Scale",
     "swapLike": "<b>{from}</b> ({status}): {to} can take its place, gram for gram.",
     "swapNotLike": "<b>{from}</b> ({status}): {to} is what is used now, but it is not like for like: work its amount out again.",
+    "swapColorant": "<b>{from}</b> ({status}): {to} is what is used now, under Colorants and additives. Add it there instead, and work its amount out again.",
     "stillLead": "{name} still contains lead.",
     "tryModern": "Try modern materials and compare",
     "suggestAmounts": "Suggest amounts and compare",
@@ -62,6 +63,8 @@
     "addRecipeToShelf": "Add the materials in this recipe",
     "shelfTriesIntro": "Your materials on hand. Tick Must use to keep one in the match.",
     "gettingShelf": "Getting your materials on hand...",
+    "shelfTryAgain": "Try again",
+    "shelfLeadHidden": "{count, plural, one {# with lead is not used: lead is off in <settings>Settings</settings>.} other {# with lead are not used: lead is off in <settings>Settings</settings>.}}",
     "matchAndCompare": "Match and compare",
     "swapped": "Swapped for modern materials, as a new recipe not saved yet.",
     "undoSwap": "Undo the swap",
@@ -169,7 +172,7 @@
   "analysis": {
     "oldCopy": "{name} was saved by an older version of Glazecalc, without its LOI, so it is left out. Add it to the recipe again to count it.",
     "noAnalysis": "{name} has no oxide analysis the unity formula can use, so it is left out.",
-    "parts": "{amount} {amount, plural, =1 {part} other {parts}}"
+    "parts": "{amount} {count, plural, =1 {part} other {parts}}"
   },
   "library": {
     "which": "{noun, select, additives {Which additives} other {Which materials}}",
@@ -387,7 +390,7 @@
     "whitingProbably": "At {percent}% it will probably pinhole or blister and come out dry, matte or chalky.",
     "whitingTends": "At {percent}% it tends to pinhole or blister and come out dry, matte or chalky.",
     "whitingFix": "Calcium from a frit or from wollastonite avoids both. (5% is this app's guideline; no published limit gives one.)",
-    "fluorine": "Fluorspar and cryolite release fluorine as they fire. Vent the kiln well, or take the calcium or soda from a frit or wollastonite.",
+    "fluorine": "{name} releases fluorine as it fires. Vent the kiln well, or use a material without fluorine in its place.",
     "clayLowWas": "This has only {clay}% raw clay; the old recipe had {was}%.",
     "clayLow": "This has only {clay}% raw clay.",
     "clayNoneWas": "This has no raw clay; the old recipe had {was}%.",

@@ -1,0 +1,111 @@
+{
+  "landing": {
+    "eyebrow": "Glasyrkalkylator och anteckningsbok för verkstaden",
+    "heading": "Gratis glasyrkemi för keramiker.",
+    "lead": "Förstå glasyrerna, inte bara blanda dem. Skriv in ett recept och se direkt dess Segerformel (UMF), förhållandet kiseldioxid–aluminiumoxid och balansen mellan flussmedlen. Samla recept, råvaror, färgmedel, anteckningar och brännloggar i en enda privat anteckningsbok.",
+    "trialEnded": "Provperioden är slut. Starta en ny eller skapa ett gratis konto för att behålla arbetet.",
+    "tryIt": "Prova nu",
+    "createAccount": "Skapa ett gratis konto",
+    "trialFailed": "Det gick inte att starta en provperiod just nu. Försök igen.",
+    "heroNote": "Ingen registrering behövs för att prova · Gratis och med öppen källkod · Recepten förblir privata",
+    "heroAlt": "En rad brända kägelsatser: de vita käglorna i varje sats har böjt sig i värmen i ugnen.",
+    "heroCaption": "Kägelsatser efter en bränning: varje kägla böjer sig när ugnen har nått tillräckligt med värmearbete.",
+    "exampleHeading": "Se hur det fungerar: en klassisk bas för celadon",
+    "exampleCaption": "Bernard Leachs ”4321”, ofta bränd till Ortonkägla 10, i viktdelar.",
+    "material": "Råvara",
+    "parts": "Delar",
+    "unityHeading": "Receptets Segerformel",
+    "exampleNote": "Flussmedlen summeras till 1, så vilka två glasyrer som helst kan jämföras rättvist. Uträknat direkt i webbläsaren med samma kod som kalkylatorn använder.",
+    "featuresHeading": "Vad Glazecalc gör",
+    "features": {
+      "unity": {
+        "title": "Segerformeln direkt",
+        "text": "Se flussmedel, aluminiumoxid och kiseldioxid i Segerformeln, på samma sätt som glasyrkemister jämför recept, direkt när ett recept skrivs in."
+      },
+      "substitute": {
+        "title": "Rätta till och byt ut",
+        "text": "Har en råvara slutat tillverkas? Jämför formler för att hitta en ersättare som smälter på samma sätt."
+      },
+      "notebook": {
+        "title": "Verkstadens anteckningsbok",
+        "text": "Samla recept, egna råvaror, färgmedel, anteckningar och brännloggar på ett ställe."
+      },
+      "learn": {
+        "title": "Lär dig efter hand",
+        "text": "Lättbegripliga guider, från vad en glasyr är till hur den bränns säkert, finns direkt bredvid siffrorna."
+      }
+    },
+    "umfHeading": "Vad är en Segerformel?",
+    "umfRecipe": "Ett glasyrrecept anger hur mycket av varje råvara som ska vägas upp. Segerformeln, på engelska unity molecular formula (UMF), anger vad råvarorna blir i ugnen: hur många molekyler av varje oxid det finns, omräknat så att flussmedlen summeras till ett.",
+    "umfGroups": "Flussmedlen får glasyren att smälta, aluminiumoxiden gör smältan trögare och kiseldioxiden bildar glaset. En jämförelse av de tre grupperna förklarar varför en glasyr blir blank och en annan matt, eller varför en rinner medan en annan stannar kvar, och den visar hur en råvara som inte längre säljs kan ersättas.",
+    "readAdvice": "Läs fler glasyrråd",
+    "closingHeading": "Redo när det passar.",
+    "closingText": "Prova kalkylatorn nu och skapa sedan ett konto för att behålla det som har gjorts."
+  },
+  "about": {
+    "title": "Om Glazecalc",
+    "lead": "En kalkylator för glasyrkemi och en anteckningsbok, gratis och med öppen källkod, för krukmakare, keramiker och studenter.",
+    "whatHeading": "Vad Glazecalc gör",
+    "what": "Glazecalc räknar om ett glasyrrecept, alltså råvarorna och hur mycket av varje som vägs upp, till dess Segerformel (UMF): de oxider som glasyren består av efter bränning, omräknade så att flussmedlen summeras till ett. Det gör recept jämförbara, hjälper till att förklara hur en glasyr beter sig och underlättar när en råvara måste ersättas.",
+    "alongside": "Utöver kalkylatorn sparar Glazecalc recept, egna råvaror, färgmedel och andra tillsatser, anteckningar och brännloggar. Där finns också en sida med praktiska <advice>glasyrråd</advice> och <guides>guider</guides> för nya keramiker, från vad en glasyr är till hur den bränns säkert.",
+    "numbersHeading": "Så räknas siffrorna ut",
+    "numbers": "Varje råvara beskrivs med sin kemiska formel eller med en oxidanalys, plus sin glödförlust (LOI): den del som brinner bort i ugnen, till exempel koldioxiden i krita eller vattnet i kaolin. Glazecalc räknar om varje mängd till mol av varje oxid med vedertagna molmassor, summerar dem för hela receptet och delar med det totala antalet mol flussmedel. Färgmedel och andra tillsatser visas med receptet men räknas inte med i Segerformeln, som brukligt är.",
+    "guide": "Resultaten är en vägledning, ingen garanti. Verkliga råvaror varierar från leverantör till leverantör och från parti till parti, och bränningen betyder lika mycket som kemin, så testa varje glasyr. Glasyrer för ytor som kommer i kontakt med mat bör testas för utlösning av metaller.",
+    "builtHeading": "Så är Glazecalc byggd",
+    "built": "Glazecalc påbörjades 2017 och byggdes om 2026. Det är en enda liten webbapplikation, och <source>källkoden finns på GitHub</source> under MIT-licensen.",
+    "stackBrowser": "Angular 22 i webbläsaren (fristående komponenter och signaler), med glasyrkemin i ett litet delat bibliotek.",
+    "stackServer": "Ett TypeScript-API på Node.js 24 och Express 5, med MongoDB 9, kontrollerat av mer än 350 automatiska tester.",
+    "stackHosting": "Körs i Docker på Amazon Web Services, bakom nginx med HTTPS från Let's Encrypt.",
+    "stackDeploy": "Driftsätts med GitHub Actions: containeravbildningar byggs och testas vid varje ändring, och driftsättningen loggar in på AWS utan lagrade nycklar.",
+    "whoHeading": "Vem som har gjort Glazecalc",
+    "who": "Glazecalc görs av Aaron Filson. Hittat ett problem eller fått en idé? <issues>Öppna ett ärende på GitHub</issues>.",
+    "studio": "Aaron Filsons handgjorda keramik finns hos <studio>Updraft Pottery Studio</studio> i Tacoma, Washington. Titta gärna på arbetena och beställ en pjäs om någon faller i smaken."
+  },
+  "privacy": {
+    "title": "Integritet",
+    "lead": "Senast uppdaterad i oktober 2026.",
+    "shortHeading": "I korthet",
+    "short": "Glazecalc sparar det som behövs för att driva kontot och inget mer. Det finns inga annonser, inga analysverktyg, inga spårningscookies och inga skript från tredje part. Uppgifterna säljs aldrig och delas aldrig.",
+    "storedHeading": "Vad som sparas",
+    "storedAccount": "<b>Kontot:</b> e-postadressen och lösenordet, som bara lagras som ett envägshashvärde (bcrypt), aldrig som själva lösenordet.",
+    "storedTrial": "<b>En provperiod (Prova nu):</b> ingen e-postadress och inget lösenord, bara ett genererat namn som ”speckled quiet kilns”. En provperiod och allt som har sparats i den raderas automatiskt 14 dagar efter starten, om inte ett konto skapas för att behålla dem.",
+    "storedSaved": "<b>Det som sparas:</b> recept, råvaror, tillsatser, anteckningar, brännloggar och råd. Andra användare kan inte se dem.",
+    "storedResets": "<b>Begäranden om att återställa lösenordet:</b> ett fingeravtryck av varje återställningslänk (inte själva länken), som raderas automatiskt när länken går ut 30 minuter senare.",
+    "storedBrowser": "<b>I webbläsaren:</b> en cookie, <code>glazecalc_session</code>, som håller kvar inloggningen. Den innehåller inloggningstoken, skript på sidan kan inte läsa den, den skickas bara till appens egen server och den gäller i 7 dagar (14 för en provperiod). Lokal lagring innehåller en notering om inloggningen och, under en provperiod, provperiodens namn och slutdatum. Utloggning tar bort dem.",
+    "emailHeading": "E-post",
+    "email": "Glazecalc skickar e-post bara när en återställning av lösenordet begärs och när lösenordet ändras. E-posten skickas via Amazon Simple Email Service. Det finns inget nyhetsbrev och ingen marknadsföring via e-post.",
+    "hostingHeading": "Loggar, säkerhetskopior och drift",
+    "logs": "Webbservern registrerar varje förfrågan, med IP-adressen, i en logg som sparas i 14 dagar för att driva och skydda webbplatsen.",
+    "backups": "Krypterade säkerhetskopior av databasen sparas i 30 dagar och kopior av serverns disk i 7 dagar, så att webbplatsen kan återställas efter ett haveri.",
+    "hosting": "Allt drivs hos Amazon Web Services i USA (Oregon).",
+    "deletingHeading": "Radera uppgifterna",
+    "deleting": "Kontot kan raderas från <account>kontosidan</account>. Det tar direkt bort kontot och allt som har sparats; knappen Radera provperioden gör samma sak för en provperiod. Det som finns i säkerhetskopiorna försvinner när de gallras ut, inom 30 dagar.",
+    "questionsHeading": "Frågor",
+    "questions": "Ställ frågor genom att <issues>öppna ett ärende på GitHub</issues>. Om den här policyn ändras, ändras också datumet överst på sidan."
+  },
+  "notFound": {
+    "heading": "Sidan hittades inte",
+    "text": "Det finns ingen sida på den här adressen. Den kan ha flyttats, eller så kan länken vara felskriven.",
+    "start": "Gå till startsidan"
+  },
+  "advice": {
+    "title": "Glasyrråd",
+    "lead": "Praktiska tips om blandning, glasering och bränning, plus egna råd.",
+    "signUp": "<signup>Skapa ett gratis konto</signup> eller <signin>logga in</signin> för att spara egna råd.",
+    "generalHeading": "Allmänna råd",
+    "tags": "Taggar: {list}",
+    "addHeading": "Lägg till egna råd",
+    "titleLabel": "Titel:",
+    "tagsLabel": "Taggar:",
+    "contentLabel": "Rådets text:",
+    "save": "Spara",
+    "mineHeading": "Egna råd",
+    "nothingSaved": "Inget sparat än.",
+    "titleMissing": "Ge rådet en titel.",
+    "contentMissing": "Skriv rådet.",
+    "fetchFailed": "Ett fel uppstod när råden hämtades.",
+    "standardFetchFailed": "Ett fel uppstod när råden från servern hämtades.",
+    "saved": "Rådet har lagts till.",
+    "saveFailed": "Ett fel uppstod när rådet skickades."
+  }
+}

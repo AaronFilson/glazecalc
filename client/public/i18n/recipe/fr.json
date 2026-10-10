@@ -31,6 +31,7 @@
     "scale": "Mettre à l’échelle",
     "swapLike": "<b>{from}</b> ({status}) : {to} peut s’y substituer, gramme pour gramme.",
     "swapNotLike": "<b>{from}</b> ({status}) : on utilise aujourd’hui {to}, mais pas à l’identique : recalculez sa quantité.",
+    "swapColorant": "<b>{from}</b> ({status}) : on utilise aujourd’hui {to}, sous « Colorants et additifs ». Ajoutez {to} dans cette partie à sa place, et recalculez sa quantité.",
     "stillLead": "{name} contient encore du plomb.",
     "tryModern": "Essayer des matières actuelles et comparer",
     "suggestAmounts": "Proposer des quantités et comparer",
@@ -62,6 +63,8 @@
     "addRecipeToShelf": "Ajouter les matières de cette recette",
     "shelfTriesIntro": "Vos matières disponibles. Cochez Obligatoire pour en imposer une dans l’adaptation.",
     "gettingShelf": "Chargement de vos matières disponibles…",
+    "shelfTryAgain": "Réessayer",
+    "shelfLeadHidden": "{count, plural, one {# matière contenant du plomb n’est pas utilisée : le plomb est désactivé sous <settings>Paramètres</settings>.} many {# de matières contenant du plomb ne sont pas utilisées : le plomb est désactivé sous <settings>Paramètres</settings>.} other {# matières contenant du plomb ne sont pas utilisées : le plomb est désactivé sous <settings>Paramètres</settings>.}}",
     "matchAndCompare": "Adapter et comparer",
     "swapped": "Remplacé par des matières actuelles, dans une nouvelle recette pas encore enregistrée.",
     "undoSwap": "Annuler le remplacement",
@@ -169,7 +172,7 @@
   "analysis": {
     "oldCopy": "La matière {name} a été enregistrée par une ancienne version de Glazecalc, sans sa PAF : elle est donc exclue. Ajoutez-la de nouveau à la recette pour la compter.",
     "noAnalysis": "La matière {name} n’a pas d’analyse en oxydes utilisable par la formule de Seger : elle est donc exclue.",
-    "parts": "{amount} {amount, plural, =1 {part} one {part} many {parts} other {parts}}"
+    "parts": "{amount} {count, plural, =1 {part} one {part} many {parts} other {parts}}"
   },
   "library": {
     "which": "{noun, select, additives {Quels additifs} other {Quelles matières}}",
@@ -387,7 +390,7 @@
     "whitingProbably": "À {percent} %, l’émail aura probablement des trous d’épingle ou des cloques, et sortira sec, mat ou crayeux.",
     "whitingTends": "À {percent} %, l’émail a tendance à avoir des trous d’épingle ou des cloques, et à sortir sec, mat ou crayeux.",
     "whitingFix": "Le calcium apporté par une fritte ou par la wollastonite évite les deux. (5 % est la règle propre à cette application ; il n’existe pas de limite publiée.)",
-    "fluorine": "Le spath fluor et la cryolithe libèrent du fluor à la cuisson. Évacuez bien les fumées du four, ou apportez le calcium ou la soude par une fritte ou par la wollastonite.",
+    "fluorine": "{name} libère du fluor à la cuisson. Évacuez bien les fumées du four, ou utilisez à sa place une matière sans fluor.",
     "clayLowWas": "Cette recette ne contient que {clay} % d’argile crue ; l’ancienne en contenait {was} %.",
     "clayLow": "Cette recette ne contient que {clay} % d’argile crue.",
     "clayNoneWas": "Cette recette ne contient pas d’argile crue ; l’ancienne en contenait {was} %.",

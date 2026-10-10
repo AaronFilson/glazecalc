@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
 import { provideTranslocoScope } from '@jsverse/transloco';
 import { marker } from '@jsverse/transloco-keys-manager/marker';
+import { askBeforeLeaving } from './core/leave.guard';
 import { signedInGuard, visitorsOnlyGuard } from './core/signed-in.guard';
 import { scopeTranslations } from './i18n/provide-i18n';
 import { guideText } from './pages/guides/guide-text';
@@ -37,7 +38,7 @@ export const routes: Routes = [
   {
     path: 'guides/glazing-basics',
     title: marker('titles.glazingBasics'),
-    providers: [provideTranslocoScope('guides')],
+    providers: [provideTranslocoScope('guides', 'regions')],
     data: { guide: 'glazing-basics' },
     resolve: { messages: scopeTranslations, text: guideText },
     loadComponent: () => import('./pages/guides/guide-page').then((m) => m.GuidePage)
@@ -45,7 +46,7 @@ export const routes: Routes = [
   {
     path: 'guides/making-a-glaze',
     title: marker('titles.makingAGlaze'),
-    providers: [provideTranslocoScope('guides')],
+    providers: [provideTranslocoScope('guides', 'regions')],
     data: { guide: 'making-a-glaze' },
     resolve: { messages: scopeTranslations, text: guideText },
     loadComponent: () => import('./pages/guides/guide-page').then((m) => m.GuidePage)
@@ -53,7 +54,7 @@ export const routes: Routes = [
   {
     path: 'guides/safe-mixing',
     title: marker('titles.safeMixing'),
-    providers: [provideTranslocoScope('guides')],
+    providers: [provideTranslocoScope('guides', 'regions')],
     data: { guide: 'safe-mixing', safety: true },
     resolve: { messages: scopeTranslations, text: guideText },
     loadComponent: () => import('./pages/guides/guide-page').then((m) => m.GuidePage)
@@ -132,6 +133,8 @@ export const routes: Routes = [
     path: 'recipe',
     title: marker('titles.recipe'),
     canActivate: [signedInGuard],
+    // Changes not saved are asked about first.
+    canDeactivate: [askBeforeLeaving],
     providers: [provideTranslocoScope('recipe', 'records')],
     resolve: { messages: scopeTranslations },
     loadComponent: () => import('./pages/recipe/recipe-page').then((m) => m.RecipePage)

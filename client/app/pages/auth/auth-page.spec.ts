@@ -33,6 +33,26 @@ describe('AuthPage', () => {
     expect(navigate).toHaveBeenCalledWith('/home');
   });
 
+  it('says when the session ended before a recipe was saved, until the next sign-in', async () => {
+    const { fixture, page } = await create('signin');
+    const auth = TestBed.inject(AuthService);
+    auth.lostRecipe.set('My celadon');
+    await fixture.whenStable();
+    expect(text(fixture, 'p.errors-section')).toBe(
+      'You were signed out before your changes to "My celadon" were saved, so they were lost.'
+    );
+    page['email'].set('a@b.com');
+    page['password'].set('password123');
+    const submitting = page['submit']();
+    httpMock()
+      .expectOne(API + '/signin')
+      .flush({ email: 'a@b.com' });
+    await submitting;
+    await fixture.whenStable();
+    expect(auth.lostRecipe()).toBeNull();
+    expect(fixture.nativeElement.querySelector('p.errors-section')).toBeNull();
+  });
+
   it('shows why sign in failed and stays put', async () => {
     const { fixture, page, navigate } = await create('signin');
     page['email'].set('a@b.com');

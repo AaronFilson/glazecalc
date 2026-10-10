@@ -57,8 +57,13 @@ export function provideI18n(language = languageOfPath(location.pathname)): Array
         language === 'en' ? [] : ['server', 'chemistry'].map((scope) => transloco.load(`${scope}/${language}`));
       return firstValueFrom(forkJoin([transloco.load(language), ...coded])).then(() => {
         useCodedMessages(transloco);
-        // The description search results show, as the server writes it too (server/lib/pages.ts).
-        document.querySelector('meta[name="description"]')?.setAttribute('content', translate('meta.description'));
+        // The description search results show, and a link preview's text, as the server writes them too
+        // (server/lib/pages.ts).
+        const description = translate('meta.description');
+        for (const selector of ['meta[name="description"]', 'meta[property="og:description"]']) {
+          document.querySelector(selector)?.setAttribute('content', description);
+        }
+        document.querySelector('meta[property="og:image:alt"]')?.setAttribute('content', translate('meta.imageAlt'));
       });
     })
   ];
@@ -69,7 +74,7 @@ export function provideI18n(language = languageOfPath(location.pathname)): Array
  * records, who to call): an English page shows the data as it is, so these
  * load only for other languages.
  */
-const TRANSLATIONS_OF_DATA = ['records', 'safety'];
+const TRANSLATIONS_OF_DATA = ['records', 'safety', 'regions'];
 
 const scopeName = (scope: TranslocoScope): string => (typeof scope === 'string' ? scope : (scope?.scope ?? ''));
 

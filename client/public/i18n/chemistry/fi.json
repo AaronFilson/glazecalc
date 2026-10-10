@@ -1,0 +1,23 @@
+{
+  "unknown-compound": "Tuntematon yhdiste {compound} kaavassa",
+  "unknown-oxide": "Tuntematon oksidi {oxide} raaka-aineessa {material}",
+  "invalid-oxide-amount": "Virheellinen määrä oksidille {oxide} raaka-aineessa {material}",
+  "loi-range": "Raaka-aineen {material} polttohäviön on oltava vähintään 0 ja alle 100",
+  "no-oxides": "Raaka-aineessa {material} ei ole oksideja",
+  "no-name": "Raaka-aineella on oltava nimi",
+  "no-analysis": "Raaka-aineelle {material} tarvitaan kaava tai analyysi",
+  "recipe-shape": "Reseptin on oltava taulukko, jonka alkiot ovat muotoa '{ material, amount }', tai määrien hakemisto",
+  "invalid-amount": "Virheellinen määrä raaka-aineelle {material}",
+  "missing-material": "Reseptiriviltä puuttuu raaka-aine",
+  "unknown-material": "Tuntematon raaka-aine {material}",
+  "no-flux": "Reseptissä ei ole sulattajaoksideja, joten Segerin kaavaa (UMF) ei voi määrittää",
+  "no-target": "Tavoitekaavassa ei ole oksideja, joihin pyrkiä",
+  "no-materials": "Laskettavia raaka-aineita ei ole",
+  "no-temperature": "Boorin määrän asettamiseen tarvitaan polttolämpötila",
+  "no-flux-to-rebuild": "Lasitteessa ei ole sulattajaa, jota voisi rakentaa uudelleen",
+  "unknown-element": "Tuntematon alkuaine {element} kaavassa {formula}",
+  "bad-formula": "Kaavaa {formula} ei voitu tulkita",
+  "analysis-total": "Raaka-aineen {material} analyysin summa on {total} % polttohäviö mukaan lukien; odotettiin noin 100 %.",
+  "stored-equivalent": "Raaka-aineen {material} tallennettu ekvivalenttipaino ei vastaa sen kaavaa ja polttohäviötä; sen sijaan käytettiin kaavaa ja polttohäviötä.",
+  "trace-flux": "Reseptissä on sulattajaoksideja vain hivenen, joten Segerin kaava (UMF) ei ole mielekäs."
+}

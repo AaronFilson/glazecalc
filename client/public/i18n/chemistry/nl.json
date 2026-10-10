@@ -1,0 +1,23 @@
+{
+  "unknown-compound": "Onbekende verbinding {compound} in de formule.",
+  "unknown-oxide": "Onbekend oxide {oxide} in de grondstof {material}.",
+  "invalid-oxide-amount": "Ongeldige hoeveelheid voor {oxide} in de grondstof {material}.",
+  "loi-range": "Het gloeiverlies van {material} moet ten minste 0 en kleiner dan 100 zijn.",
+  "no-oxides": "De grondstof {material} bevat geen oxiden.",
+  "no-name": "De grondstof moet een naam hebben.",
+  "no-analysis": "De grondstof {material} heeft een formule of een analyse nodig.",
+  "recipe-shape": "Het recept moet een array van '{ material, amount }' of een toewijzing van hoeveelheden zijn.",
+  "invalid-amount": "Ongeldige hoeveelheid voor de grondstof {material}.",
+  "missing-material": "In een receptregel ontbreekt de grondstof.",
+  "unknown-material": "Onbekende grondstof {material}.",
+  "no-flux": "Het recept bevat geen smeltmiddeloxiden, dus de Segerformule (UMF) is niet te bepalen.",
+  "no-target": "Het doel bevat geen oxiden om naar te streven.",
+  "no-materials": "Er zijn geen grondstoffen om mee te rekenen.",
+  "no-temperature": "De stooktemperatuur is nodig om het booraandeel te bepalen.",
+  "no-flux-to-rebuild": "Het glazuur heeft geen smeltmiddel om opnieuw op te bouwen.",
+  "unknown-element": "Onbekend element {element} in {formula}.",
+  "bad-formula": "De formule {formula} kon niet worden gelezen.",
+  "analysis-total": "De analyse van {material} komt samen op {total}% inclusief gloeiverlies; verwacht werd ongeveer 100%.",
+  "stored-equivalent": "Het opgeslagen equivalentgewicht van {material} past niet bij de formule en het gloeiverlies; in plaats daarvan zijn de formule en het gloeiverlies gebruikt.",
+  "trace-flux": "Het recept bevat alleen sporen van smeltmiddeloxiden, dus de Segerformule (UMF) is niet zinvol."
+}

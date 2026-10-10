@@ -1,0 +1,111 @@
+{
+  "landing": {
+    "eyebrow": "Mázkalkulátor és műhelyfüzet",
+    "heading": "Ingyenes mázkémia fazekasoknak.",
+    "lead": "Értse meg a mázait, ne csak keverje őket. Írjon be egy receptet, és azonnal látja a Seger-képletét (UMF), a szilícium-dioxid és a timföld arányát, valamint az olvasztóanyagok arányát. Receptjeit, nyersanyagait, színezőanyagait, jegyzeteit és égetési naplóit együtt tarthatja, egyetlen privát műhelyfüzetben.",
+    "trialEnded": "A próbahasználata véget ért. Kezdjen újat, vagy hozzon létre ingyenes fiókot, hogy megőrizze a munkáját.",
+    "tryIt": "Kipróbálás most",
+    "createAccount": "Ingyenes fiók létrehozása",
+    "trialFailed": "Most nem sikerült elindítani a próbahasználatot. Kérjük, próbálja újra.",
+    "heroNote": "A kipróbáláshoz nem kell regisztrálni · Ingyenes és nyílt forráskódú · Receptjei privátak maradnak",
+    "heroAlt": "Kiégetett gúlasorok egymás mellett: mindegyik sorban a fehér hőfokjelző gúlák meghajoltak a kemence hőjében.",
+    "heroCaption": "Gúlasorok égetés után: mindegyik gúla akkor hajlik meg, amikor a kemencében elég hőmennyiséget vett fel.",
+    "exampleHeading": "Így működik: egy klasszikus szeladon alapmáz",
+    "exampleCaption": "Bernard Leach „4321” nevű receptje, amelyet gyakran 10-es gúlára égetnek, tömegrészekben.",
+    "material": "Nyersanyag",
+    "parts": "Rész",
+    "unityHeading": "A Seger-képlete",
+    "exampleNote": "Az olvasztóanyagok összege 1, így bármely két máz egyenlő alapon összehasonlítható. A számítás itt, az Ön böngészőjében fut, ugyanazzal a kóddal, amelyet a kalkulátor is használ.",
+    "featuresHeading": "A Glazecalc funkciói",
+    "features": {
+      "unity": {
+        "title": "Azonnali Seger-képlet",
+        "text": "Amint beír egy receptet, látja az olvasztóanyagokat, a timföldet és a szilícium-dioxidot a Seger-képletben, úgy, ahogyan a mázkémikusok a recepteket összehasonlítják."
+      },
+      "substitute": {
+        "title": "Javítás és helyettesítés",
+        "text": "Megszűnt egy nyersanyag? Hasonlítsa össze a képleteket, és keressen helyette olyat, amely ugyanúgy olvad."
+      },
+      "notebook": {
+        "title": "Az Ön műhelyfüzete",
+        "text": "Tartsa együtt, egy helyen a receptjeit, saját nyersanyagait, színezőanyagait, jegyzeteit és égetési naplóit."
+      },
+      "learn": {
+        "title": "Tanuljon menet közben",
+        "text": "A számok mellett közérthető útmutatók is vannak, attól kezdve, mi a máz, egészen a biztonságos égetéséig."
+      }
+    },
+    "umfHeading": "Mi a Seger-képlet?",
+    "umfRecipe": "A mázrecept azt mondja meg, mennyit kell lemérni az egyes nyersanyagokból. A Seger-képlet, más néven Seger-formula (angolul UMF), azt mutatja meg, mivé válnak ezek a nyersanyagok a kemencében: hány molekula van az egyes oxidokból, úgy átszámítva, hogy az olvasztóanyagok összege egy legyen.",
+    "umfGroups": "Az olvasztóanyagok megolvasztják a mázat, a timföld sűrűbbé teszi az olvadékot, a szilícium-dioxid pedig üveget képez. E három csoport összehasonlítása megmagyarázza, miért fényes az egyik máz és matt a másik, vagy miért folyik le az egyik, míg a másik a helyén marad, és megmutatja, hogyan pótolható egy már nem kapható nyersanyag.",
+    "readAdvice": "További tanácsok mázakhoz",
+    "closingHeading": "Kezdheti, amikor csak akarja.",
+    "closingText": "Próbálja ki most a kalkulátort, aztán hozzon létre fiókot, hogy megőrizze, amit készített."
+  },
+  "about": {
+    "title": "A Glazecalc alkalmazásról",
+    "lead": "Ingyenes, nyílt forráskódú mázkémiai kalkulátor és műhelyfüzet fazekasoknak, keramikusoknak és diákoknak.",
+    "whatHeading": "Mire való",
+    "what": "A Glazecalc a mázreceptből – a nyersanyagokból és abból, hogy mennyit mér le mindegyikből – kiszámítja a Seger-képletet (UMF): azokat az oxidokat, amelyekből a máz égetés után áll, úgy átszámítva, hogy az olvasztóanyagok összege egy legyen. Ez összehasonlíthatóvá teszi a recepteket, segít megérteni, hogyan viselkedik egy máz, és segít akkor is, ha egy nyersanyagot pótolni kell.",
+    "alongside": "A kalkulátor mellett tárolja a receptjeit, saját nyersanyagait, színezőanyagait és más adalékait, jegyzeteit és égetési naplóit; van benne egy oldalnyi gyakorlati <advice>tanács mázakhoz</advice>, valamint <guides>útmutatók</guides> kezdő fazekasoknak, attól kezdve, mi a máz, egészen a biztonságos égetéséig.",
+    "numbersHeading": "Hogyan számol a Glazecalc",
+    "numbers": "Minden nyersanyagot a kémiai képlete vagy az oxidos összetétele ír le, valamint az izzítási vesztesége (LOI): az a rész, amely a kemencében eltávozik, például a szén-dioxid a mészkőlisztből vagy a víz a kaolinból. A Glazecalc minden mennyiséget az egyes oxidok móljaira számít át szabványos moláris tömegekkel, ezeket összeadja a teljes receptre, majd elosztja az olvasztóanyagok összes móljával. A színezőanyagok és más adalékok a recepttel együtt szerepelnek, de – ahogy szokás – kimaradnak a Seger-képletből.",
+    "guide": "Az eredmények iránymutatások, nem garanciák. A valódi nyersanyagok szállítónként és gyártási tételenként eltérnek, és az égetés ugyanannyit számít, mint a kémia, ezért minden mázat próbáljon ki. Az élelmiszerrel érintkező felületekre szánt mázakat ajánlott kioldódásra vizsgálni.",
+    "builtHeading": "Hogyan készült",
+    "built": "A Glazecalc 2017-ben indult, és 2026-ban újraírták. Egyetlen kis webalkalmazás, a <source>forráskódja a GitHubon érhető el</source>, MIT-licenccel.",
+    "stackBrowser": "A böngészőben Angular 22 (önálló komponensek és signalok), a mázkémia egy kis közös kódkönyvtárban.",
+    "stackServer": "TypeScript API (Node.js 24, Express 5) MongoDB 9 adatbázissal, több mint 350 automatizált teszttel ellenőrizve.",
+    "stackHosting": "Dockerben fut az Amazon Web Services rendszerén, nginx mögött, HTTPS-sel (Let's Encrypt).",
+    "stackDeploy": "A telepítést a GitHub Actions végzi: minden változtatásnál elkészülnek és tesztelésen mennek át a konténerképek, a telepítés pedig tárolt kulcsok nélkül jelentkezik be az AWS-be.",
+    "whoHeading": "Ki készítette",
+    "who": "A Glazecalc alkalmazást Aaron Filson készíti. Hibát talált, vagy van egy ötlete? <issues>Tegyen bejelentést a GitHubon</issues>.",
+    "studio": "Aaron Filson kézműves kerámiái a Washington állambeli Tacomában, az <studio>Updraft Pottery Studio</studio> műhelyben találhatók. Nézze meg a munkákat, és rendeljen egy darabot, ha valamelyik megtetszik."
+  },
+  "privacy": {
+    "title": "Adatvédelem",
+    "lead": "Utoljára frissítve: 2026. október.",
+    "shortHeading": "Röviden",
+    "short": "A Glazecalc csak azt tárolja, ami a fiókja működtetéséhez szükséges, semmi többet. Nincsenek hirdetések, analitika, nyomkövető sütik és harmadik féltől származó szkriptek. Adatait soha nem adjuk el, és nem osztjuk meg.",
+    "storedHeading": "Tárolt adatok",
+    "storedAccount": "<b>Fiókja:</b> az e-mail-címe és a jelszava, amelyet csak egyirányú hasítóértékként (bcrypt hash) tárolunk, magát a jelszót soha.",
+    "storedTrial": "<b>Próbahasználat (Kipróbálás most gomb):</b> nincs e-mail-cím és jelszó, csak egy generált név, például „speckled quiet kilns”. A próbahasználatot és mindent, ami benne mentve van, az indulása után 14 nappal automatikusan töröljük, hacsak nem hoz létre fiókot, hogy megőrizze őket.",
+    "storedSaved": "<b>Amit elment:</b> receptjei, nyersanyagai, adalékai, jegyzetei, égetési naplói és tanácsai. Más felhasználók nem láthatják őket.",
+    "storedResets": "<b>Jelszó-visszaállítási kérések:</b> minden visszaállító link ujjlenyomata (nem maga a link), amelyet 30 perc múlva, a lejáratakor automatikusan törlünk.",
+    "storedBrowser": "<b>A böngészőjében:</b> egyetlen süti, a <code>glazecalc_session</code>, amely bejelentkezve tartja. Ez tartalmazza a bejelentkezési tokenjét, az oldalon futó szkriptek nem tudják olvasni, csak a Glazecalc saját szerverére jut el, és 7 napig érvényes (próbahasználatnál 14 napig). A helyi tárolóban (local storage) egy jelzés van arról, hogy be van jelentkezve, próbahasználat alatt pedig annak neve és lejárati dátuma. Kijelentkezéskor ezek törlődnek.",
+    "emailHeading": "E-mail",
+    "email": "A Glazecalc csak akkor küld e-mailt, ha Ön jelszó-visszaállítást kér, és amikor a jelszava megváltozik. Az e-maileket az Amazon Simple Email Service továbbítja. Nincs hírlevél és nincsenek marketinglevelek.",
+    "hostingHeading": "Naplók, biztonsági mentések és tárhely",
+    "logs": "A webszerver minden kérést naplóz, az Ön IP-címével együtt; a naplót 14 napig őrizzük meg a webhely működtetéséhez és védelméhez.",
+    "backups": "Az adatbázis titkosított biztonsági mentéseit 30 napig, a szerver lemezének másolatait 7 napig őrizzük meg, hogy a webhely egy meghibásodás után helyreállítható legyen.",
+    "hosting": "Minden az Amazon Web Services szerverein fut, az Egyesült Államokban (Oregon).",
+    "deletingHeading": "Adatai törlése",
+    "deleting": "Fiókját a <account>fiókoldalán</account> törölheti. Ez azonnal eltávolítja a fiókját és mindent, amit elmentett; a Próbahasználat elvetése gomb ugyanezt teszi egy próbahasználattal. A biztonsági mentésekben lévő másolatok a mentések lejártával, 30 napon belül eltűnnek.",
+    "questionsHeading": "Kérdések",
+    "questions": "Kérdéseit úgy teheti fel, hogy <issues>bejelentést tesz a GitHubon</issues>. Ha ez a szabályzat megváltozik, az oldal tetején lévő dátum is megváltozik."
+  },
+  "notFound": {
+    "heading": "Az oldal nem található",
+    "text": "Ezen a címen nincs oldal. Lehet, hogy áthelyezték, vagy elírás van a linkben.",
+    "start": "Ugrás a kezdőlapra"
+  },
+  "advice": {
+    "title": "Tanácsok mázakhoz",
+    "lead": "Gyakorlati tanácsok a keveréshez, a mázazáshoz és az égetéshez, valamint saját tanácsai.",
+    "signUp": "<signup>Hozzon létre ingyenes fiókot</signup>, vagy <signin>jelentkezzen be</signin>, ha saját tanácsokat szeretne megőrizni.",
+    "generalHeading": "Általános tanácsok",
+    "tags": "Címkék: {list}",
+    "addHeading": "Saját tanács hozzáadása",
+    "titleLabel": "Cím:",
+    "tagsLabel": "Címkék:",
+    "contentLabel": "A tanács szövege:",
+    "save": "Mentés",
+    "mineHeading": "Saját tanácsok",
+    "nothingSaved": "Még nincs semmi mentve.",
+    "titleMissing": "Adjon címet a tanácsnak.",
+    "contentMissing": "Írja meg a tanácsot.",
+    "fetchFailed": "Hiba történt a tanácsok betöltésekor.",
+    "standardFetchFailed": "Hiba történt a szerveren tárolt tanácsok betöltésekor.",
+    "saved": "Sikeresen hozzáadva a tanácsokhoz.",
+    "saveFailed": "Hiba történt a tanács elküldésekor."
+  }
+}

@@ -1,6 +1,7 @@
 # Glazecalc and MongoDB 9 in containers.
 #
-#   APP_SECRET=... docker compose up -d --build   (or put APP_SECRET in .env)
+#   APP_SECRET=... docker compose up -d --build   (or put APP_SECRET in .env,
+#                                                  with the email settings and APP_URL)
 #   docker compose run --rm app node scripts/seed-standard.js   (standard materials, once)
 #   docker compose logs -f app
 #   docker compose down             (data stays in the mongo-data volume)
@@ -20,6 +21,12 @@ services:
       MONGODB_URI: mongodb://mongo:27017/glazecalc
       # Required in production; Compose stops with this message if it is unset.
       APP_SECRET: ${APP_SECRET:?Set APP_SECRET in the environment or in .env}
+      # Email, as .env.example describes: off until MAIL_TRANSPORT is set.
+      MAIL_TRANSPORT: ${MAIL_TRANSPORT:-}
+      SMTP_URL: ${SMTP_URL:-}
+      MAIL_FROM: ${MAIL_FROM:-}
+      # The address links in emails point to: where people open the app.
+      APP_URL: ${APP_URL:-http://localhost:${APP_PORT:-3000}}
     ports:
       - '127.0.0.1:${APP_PORT:-3000}:3000'
     depends_on:

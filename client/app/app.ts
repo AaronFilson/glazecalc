@@ -1,9 +1,18 @@
-import { Component, OnInit, effect, inject, signal } from '@angular/core';
+import {
+  Component,
+  ElementRef,
+  Injector,
+  OnInit,
+  afterNextRender,
+  effect,
+  inject,
+  signal,
+  viewChild
+} from '@angular/core';
 import { TranslocoDirective, translate } from '@jsverse/transloco';
 import { marker } from '@jsverse/transloco-keys-manager/marker';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
-import { NavigationEnd, Router, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
-import { filter } from 'rxjs';
+import { NavigationEnd, NavigationStart, Router, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { AuthService } from './core/auth.service';
 import { LocaleService } from './core/locale.service';
 import { formatDate } from './shared/format';
@@ -158,7 +167,7 @@ const APP_PAGES = [
                 [attr.lang]="code"
                 translate="no"
                 [attr.aria-current]="code === pageLanguage ? 'true' : null"
-                (click)="chooseLanguage(code)"
+                (click)="chooseLanguage($event, code)"
                 >{{ languageName(code) }}</a
               >
             }
@@ -174,6 +183,8 @@ export class App implements OnInit {
   // Numbers and dates follow Settings from the first page on.
   private readonly locale = inject(LocaleService);
   private readonly router = inject(Router);
+  private readonly injector = inject(Injector);
+  private readonly main = viewChild.required<ElementRef<HTMLElement>>('main');
 
   protected readonly pages = APP_PAGES;
   private readonly preferences = inject(PreferencesService);
@@ -188,24 +199,50 @@ export class App implements OnInit {
   protected readonly confirmingDiscard = signal(false);
   protected readonly discarding = signal(false);
   protected readonly discardError = signal('');
+  /** A language chosen in the footer is being saved; its page opens once it is. */
+  private choosing = false;
 
   constructor() {
     // Once the account's language is known (from another device, say), an English page opens in it.
     effect(() => {
       const own = ownLanguagePage(this.preferences.language());
-      if (own && this.pageLanguage === 'en') this.openPage(own);
+      if (own && this.pageLanguage === 'en' && !this.choosing) this.openPage(own);
     });
     // After each navigation the phone menu closes, and once the first page is
-    // in place the footer can appear below it.
-    this.router.events
-      .pipe(
-        filter((e) => e instanceof NavigationEnd),
-        takeUntilDestroyed()
-      )
-      .subscribe(() => {
-        this.menuOpen.set(false);
-        this.ready.set(true);
-      });
+    // in place the footer can appear below it. A move to another page shows it
+    // from its start (only the query or the section changing is not a move).
+    let trigger: NavigationStart['navigationTrigger'];
+    let shown: string | null = null;
+    this.router.events.pipe(takeUntilDestroyed()).subscribe((event) => {
+      if (event instanceof NavigationStart) trigger = event.navigationTrigger;
+      if (!(event instanceof NavigationEnd)) return;
+      this.menuOpen.set(false);
+      this.ready.set(true);
+      const path = event.urlAfterRedirects.split(/[?#]/)[0]!;
+      if (shown !== null && path !== shown) this.showNewPage(trigger === 'popstate');
+      shown = path;
+    });
+  }
+
+  /**
+   * A new page opens at its top, or at the section its address names, with the
+   * focus on its heading (or that section's), so a keyboard or screen reader
+   * user starts there. Back and forward leave the scroll position to the browser.
+   */
+  private showNewPage(backOrForward: boolean): void {
+    afterNextRender(
+      () => {
+        const main = this.main().nativeElement;
+        const fragment = this.router.parseUrl(this.router.url).fragment;
+        const section = fragment ? document.getElementById(fragment) : null;
+        // The router scrolls to a section itself. At once, as a page loads, not smoothly.
+        if (!section && !backOrForward) window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+        const heading = section ?? [...main.querySelectorAll('h1')].find((h1) => !h1.closest('[hidden]')) ?? main;
+        if (!heading.hasAttribute('tabindex')) heading.tabIndex = -1;
+        heading.focus({ preventScroll: true });
+      },
+      { injector: this.injector }
+    );
   }
 
   /** This page in another language. */
@@ -213,10 +250,21 @@ export class App implements OnInit {
     return pathIn(code, location.pathname, location.search + location.hash);
   }
 
-  /** A language chosen from the footer is remembered, so English pages open in it from now on. */
-  protected chooseLanguage(code: string): void {
-    if (this.auth.hasSession()) void this.preferences.set('language', code).catch(() => undefined);
-    else this.preferences.remember('language', code);
+  /**
+   * A language chosen from the footer is remembered, so English pages open in it from now on.
+   * An account's page opens once the account has it, as in Settings: the new page reads the
+   * account's language, and an older one would take it back.
+   */
+  protected async chooseLanguage(event: MouseEvent, code: string): Promise<void> {
+    if (!this.auth.hasSession()) return this.preferences.remember('language', code);
+    // A new tab or window is the browser's to open.
+    const here = event.button === 0 && !event.ctrlKey && !event.metaKey && !event.shiftKey && !event.altKey;
+    if (here) {
+      event.preventDefault();
+      this.choosing = true;
+    }
+    await this.preferences.set('language', code).catch(() => undefined);
+    if (here) this.openPage(this.pageIn(code));
   }
 
   ngOnInit(): void {
@@ -232,9 +280,11 @@ export class App implements OnInit {
     main.focus();
   }
 
-  protected logout(): void {
-    void this.auth.signOut();
-    void this.router.navigateByUrl('/signin');
+  /** Signs out once the page has been left: the recipe page asks first about changes not saved. */
+  protected async logout(): Promise<void> {
+    // 'reload': from the sign-in page itself too, which would otherwise count as not going anywhere.
+    if (!(await this.router.navigateByUrl('/signin', { onSameUrlNavigation: 'reload' }))) return;
+    await this.auth.signOut();
   }
 
   protected async discard(): Promise<void> {

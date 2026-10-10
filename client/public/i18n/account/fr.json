@@ -136,7 +136,8 @@
       "legend": "Densité de l’émail",
       "sg": {
         "label": "Densité relative",
-        "saved": "Enregistré : densité de l’émail exprimée en densité relative."
+        "saved": "Enregistré : densité de l’émail exprimée en densité relative.",
+        "example": "SG 1,45"
       },
       "baume": {
         "label": "Degrés Baumé, lus au densimètre",

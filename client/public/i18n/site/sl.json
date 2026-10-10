@@ -1,0 +1,111 @@
+{
+  "landing": {
+    "eyebrow": "Kalkulator glazur in delavniška beležnica",
+    "heading": "Brezplačna kemija glazur za lončarje.",
+    "lead": "Glazure ne le mešajte, temveč jih tudi razumite. Vnesite recept in takoj vidite njegovo Segerjevo formulo (UMF), razmerje kremenica : glinica in razmerje med talili. Recepte, surovine, barvila, zapiske in dnevnike žganja hranite skupaj v eni zasebni beležnici.",
+    "trialEnded": "Vaš preizkus se je končal. Začnite novega ali ustvarite brezplačen račun, da ohranite svoje delo.",
+    "tryIt": "Preizkusi zdaj",
+    "createAccount": "Ustvari brezplačen račun",
+    "trialFailed": "Preizkusa trenutno ni bilo mogoče začeti. Poskusite znova.",
+    "heroNote": "Za preizkus registracija ni potrebna · Brezplačno in odprtokodno · Vaši recepti ostanejo zasebni",
+    "heroAlt": "Vrsta nizov stožcev po žganju: beli pirometrični stožci v vsakem nizu so se v vročini peči upognili.",
+    "heroCaption": "Nizi stožcev po žganju: vsak stožec se upogne, ko peč opravi dovolj toplotnega dela.",
+    "exampleHeading": "Poglejte, kako deluje: klasična osnova za celadon",
+    "exampleCaption": "Glazura »4321« Bernarda Leacha, pogosto žgana do stožca 10, v masnih delih.",
+    "material": "Surovina",
+    "parts": "Deli",
+    "unityHeading": "Njena Segerjeva formula",
+    "exampleNote": "Talila skupaj dajo 1, zato je mogoče pošteno primerjati kateri koli dve glazuri. Izračunano kar tukaj v vašem brskalniku, z isto kodo, kot jo uporablja kalkulator.",
+    "featuresHeading": "Kaj zmore Glazecalc",
+    "features": {
+      "unity": {
+        "title": "Segerjeva formula takoj",
+        "text": "Takoj ko vnesete recept, vidite talila, glinico in kremenico v Segerjevi formuli, tako kot recepte primerjajo kemiki, ki se ukvarjajo z glazurami."
+      },
+      "substitute": {
+        "title": "Popravki in nadomestki",
+        "text": "Surovine ne izdelujejo več? Primerjajte formule in poiščite nadomestek, ki se tali enako."
+      },
+      "notebook": {
+        "title": "Vaša delavniška beležnica",
+        "text": "Recepte, lastne surovine, barvila, zapiske in dnevnike žganja hranite skupaj na enem mestu."
+      },
+      "learn": {
+        "title": "Učite se sproti",
+        "text": "Ob številkah so na voljo preprosto napisani vodniki, od tega, kaj je glazura, do varnega žganja."
+      }
+    },
+    "umfHeading": "Kaj je Segerjeva formula?",
+    "umfRecipe": "Recept glazure pove, koliko katere surovine je treba natehtati. Segerjeva formula (angl. unity molecular formula, UMF) pove, v kaj se te surovine spremenijo v peči: koliko molekul posameznega oksida nastane, preračunano tako, da talila skupaj dajo ena.",
+    "umfGroups": "Talila povzročijo, da se glazura stali, glinica naredi talino bolj viskozno, kremenica pa tvori steklo. Primerjava teh treh skupin pojasni, zakaj je ena glazura sijajna in druga mat ali zakaj ena steče, druga pa ostane na mestu, in pokaže, kako nadomestiti surovino, ki se ne prodaja več.",
+    "readAdvice": "Več nasvetov za glazure",
+    "closingHeading": "Na voljo, kadar ste pripravljeni.",
+    "closingText": "Preizkusite kalkulator zdaj, nato pa ustvarite račun, da ohranite, kar ste naredili."
+  },
+  "about": {
+    "title": "O aplikaciji Glazecalc",
+    "lead": "Brezplačen odprtokoden kalkulator kemije glazur in beležnica za lončarje, keramike in študente.",
+    "whatHeading": "Kaj počne",
+    "what": "Glazecalc recept glazure, torej surovine in koliko katere natehtate, pretvori v Segerjevo formulo: okside, iz katerih je glazura po žganju, preračunane tako, da talila skupaj dajo ena. Tako je recepte mogoče primerjati, laže je razumeti, kako se glazura obnaša, pomaga pa tudi, ko je treba surovino nadomestiti.",
+    "alongside": "Poleg kalkulatorja hrani vaše recepte, lastne surovine, barvila in druge dodatke, zapiske in dnevnike žganja, stran s praktičnimi <advice>nasveti za glazure</advice> in <guides>vodnike</guides> za začetnike, od tega, kaj je glazura, do varnega žganja.",
+    "numbersHeading": "Kako so izračunane številke",
+    "numbers": "Vsaka surovina je opisana s kemijsko formulo ali z oksidno analizo in z izgubo pri žarenju: delom, ki se v peči izgubi, na primer ogljikovim dioksidom v kredi ali vodo v kaolinu. Glazecalc vsako količino s standardnimi molskimi masami pretvori v mole posameznih oksidov, jih sešteje za ves recept in deli s skupnim številom molov talil. Barvila in drugi dodatki so navedeni z receptom, a niso upoštevani v Segerjevi formuli, kot je običajno.",
+    "guide": "Rezultati so vodilo, ne jamstvo. Prave surovine se razlikujejo od dobavitelja do dobavitelja in od šarže do šarže, žganje pa je enako pomembno kot kemija, zato preizkusite vsako glazuro. Glazure za površine, ki pridejo v stik s hrano, bi morali preskusiti glede sproščanja kovin.",
+    "builtHeading": "Kako je narejena",
+    "built": "Glazecalc je nastal leta 2017, leta 2026 pa je bil na novo zgrajen. To je ena majhna spletna aplikacija, njena <source>izvorna koda je na GitHubu</source> pod licenco MIT.",
+    "stackBrowser": "Angular 22 v brskalniku (samostojne komponente in signali), kemija glazur pa je v majhni skupni knjižnici.",
+    "stackServer": "API v TypeScriptu na Node.js 24 in Express 5, z MongoDB 9, ki ga preverja več kot 350 avtomatiziranih testov.",
+    "stackHosting": "Teče v Dockerju na Amazon Web Services, za strežnikom nginx, s HTTPS prek Let's Encrypt.",
+    "stackDeploy": "Namešča se z GitHub Actions: slike se zgradijo in preizkusijo ob vsaki spremembi, namestitve pa se v AWS prijavijo brez shranjenih ključev.",
+    "whoHeading": "Kdo jo je izdelal",
+    "who": "Avtor aplikacije Glazecalc je Aaron Filson. Ste našli težavo ali imate zamisel? <issues>Odprite zadevo na GitHubu</issues>.",
+    "studio": "Ročno izdelano keramiko Aarona Filsona najdete v studiu <studio>Updraft Pottery Studio</studio> v Tacomi v zvezni državi Washington. Oglejte si izdelke in naročite kos, če vas kateri nagovori."
+  },
+  "privacy": {
+    "title": "Zasebnost",
+    "lead": "Zadnja posodobitev: oktober 2026.",
+    "shortHeading": "Na kratko",
+    "short": "Glazecalc hrani le tisto, kar potrebuje za delovanje vašega računa, in nič več. Ni oglasov, analitike, piškotkov za sledenje in skriptov tretjih oseb. Vaši podatki se nikoli ne prodajajo in ne delijo z drugimi.",
+    "storedHeading": "Kaj se shranjuje",
+    "storedAccount": "<b>Vaš račun:</b> e-poštni naslov in geslo, ki je shranjeno samo kot enosmerna zgoščena vrednost (bcrypt), nikoli kot samo geslo.",
+    "storedTrial": "<b>Preizkus (»Preizkusi zdaj«):</b> brez e-poštnega naslova ali gesla, le samodejno ustvarjeno ime, na primer »speckled quiet kilns«. Preizkus se skupaj z vsem, kar je v njem shranjeno, samodejno izbriše 14 dni po začetku, razen če ustvarite račun in ga ohranite.",
+    "storedSaved": "<b>Kar shranite:</b> recepti, surovine, dodatki, zapiski, dnevniki žganja in nasveti. Drugi uporabniki jih ne vidijo.",
+    "storedResets": "<b>Zahteve za ponastavitev gesla:</b> prstni odtis vsake povezave za ponastavitev (ne sama povezava), ki se samodejno izbriše, ko povezava po 30 minutah poteče.",
+    "storedBrowser": "<b>V vašem brskalniku:</b> en piškotek, <code>glazecalc_session</code>, ki skrbi, da ostanete prijavljeni. Vsebuje vaš žeton za prijavo, skripti na strani ga ne morejo prebrati, pošilja se samo na lastni strežnik aplikacije Glazecalc in velja 7 dni (14 za preizkus). V lokalni shrambi je zapis, da ste prijavljeni, med preizkusom pa tudi njegovo ime in datum izteka. Ob odjavi se izbrišejo.",
+    "emailHeading": "E-pošta",
+    "email": "Glazecalc pošilja e-pošto samo, ko zahtevate ponastavitev gesla in ko se geslo spremeni. Pošilja se prek storitve Amazon Simple Email Service. Ni glasila ali oglasnih e-poštnih sporočil.",
+    "hostingHeading": "Dnevniki strežnika, varnostne kopije in gostovanje",
+    "logs": "Spletni strežnik vsako zahtevo, vključno z vašim naslovom IP, zapiše v dnevnik, ki se hrani 14 dni, za delovanje in varnost spletnega mesta.",
+    "backups": "Šifrirane varnostne kopije zbirke podatkov se hranijo 30 dni, kopije strežnikovega diska pa 7 dni, da je spletno mesto mogoče obnoviti po okvari.",
+    "hosting": "Vse gostuje pri Amazon Web Services v ZDA (Oregon).",
+    "deletingHeading": "Brisanje podatkov",
+    "deleting": "Račun lahko izbrišete na <account>strani računa</account>. S tem se takoj odstranita račun in vse, kar ste shranili; »Zavrzi preizkus« naredi enako za preizkus. Podatki v varnostnih kopijah izginejo, ko te kopije zastarajo, v 30 dneh.",
+    "questionsHeading": "Vprašanja",
+    "questions": "Vprašanja lahko zastavite tako, da <issues>odprete zadevo na GitHubu</issues>. Če se ta pravilnik spremeni, se spremeni tudi datum na vrhu te strani."
+  },
+  "notFound": {
+    "heading": "Strani ni mogoče najti",
+    "text": "Na tem naslovu ni strani. Morda je bila premaknjena ali pa je povezava napačno vpisana.",
+    "start": "Pojdi na začetno stran"
+  },
+  "advice": {
+    "title": "Nasveti za glazure",
+    "lead": "Praktični nasveti za mešanje, glaziranje in žganje ter vaši lastni nasveti.",
+    "signUp": "<signup>Ustvarite brezplačen račun</signup> ali se <signin>prijavite</signin>, da boste lahko shranjevali lastne nasvete.",
+    "generalHeading": "Splošni nasveti",
+    "tags": "Oznake: {list}",
+    "addHeading": "Dodajte lasten nasvet",
+    "titleLabel": "Naslov:",
+    "tagsLabel": "Oznake:",
+    "contentLabel": "Besedilo nasveta:",
+    "save": "Shrani",
+    "mineHeading": "Moji nasveti",
+    "nothingSaved": "Še nič shranjenega.",
+    "titleMissing": "Vnesite naslov nasveta.",
+    "contentMissing": "Napišite nasvet.",
+    "fetchFailed": "Pri pridobivanju nasvetov je prišlo do napake.",
+    "standardFetchFailed": "Pri pridobivanju nasvetov s strežnika je prišlo do napake.",
+    "saved": "Nasvet je uspešno dodan.",
+    "saveFailed": "Pri pošiljanju nasveta je prišlo do napake."
+  }
+}

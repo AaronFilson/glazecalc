@@ -1,0 +1,23 @@
+{
+  "unknown-compound": "Compus necunoscut {compound} în formulă",
+  "unknown-oxide": "Oxid necunoscut {oxide} în materia primă {material}",
+  "invalid-oxide-amount": "Cantitate nevalidă pentru {oxide} în materia primă {material}",
+  "loi-range": "Pierderea la calcinare (PC) a materiei prime {material} trebuie să fie de cel puțin 0 și sub 100",
+  "no-oxides": "Materia primă {material} nu are oxizi",
+  "no-name": "Materia primă trebuie să aibă o denumire",
+  "no-analysis": "Materia primă {material} are nevoie de o formulă sau de o analiză chimică",
+  "recipe-shape": "Rețeta trebuie să fie o listă de '{ material, amount }' sau o corespondență a cantităților",
+  "invalid-amount": "Cantitate nevalidă pentru materia primă {material}",
+  "missing-material": "Unui rând din rețetă îi lipsește materia primă",
+  "unknown-material": "Materie primă necunoscută: {material}",
+  "no-flux": "Rețeta nu conține oxizi fondanți, deci formula Seger (UMF) nu este definită",
+  "no-target": "Formula-țintă nu are oxizi de atins",
+  "no-materials": "Nu există materii prime pentru care să se calculeze cantitățile",
+  "no-temperature": "Este nevoie de temperatura de ardere pentru a stabili cantitatea de bor",
+  "no-flux-to-rebuild": "Glazura nu are fondanți de refăcut",
+  "unknown-element": "Element necunoscut {element} în {formula}",
+  "bad-formula": "Formula {formula} nu a putut fi interpretată",
+  "analysis-total": "Analiza materiei prime {material} însumează {total} %, inclusiv PC; ar trebui să fie aproximativ 100 %.",
+  "stored-equivalent": "Masa echivalentă salvată pentru {material} nu corespunde formulei și pierderii la calcinare (PC); s-au folosit în schimb formula și PC.",
+  "trace-flux": "Rețeta conține doar urme de oxizi fondanți, deci formula Seger (UMF) nu este relevantă."
+}

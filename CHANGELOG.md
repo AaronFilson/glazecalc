@@ -20,6 +20,18 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   and animal poison lines for each of the 31 regions, each checked on an official page (dated, with
   its source), and only those that could be checked. It says where a country has no public poison
   line.
+- **The guides follow where you work**, for each of the 31 regions, each fact checked on the law's,
+  the agency's or the shop's own page and dated (and any country can be chosen to compare):
+  - **Shops** that sell raw glaze materials to potters (up to four per country, or shops elsewhere that
+    deliver there), with what they sell, the packs seen and some materials by the shop's own names.
+  - **The materials sold where you buy** closest to those a recipe names from elsewhere, by the
+    library's analyses: Custer feldspar, say, against the potash feldspars sold in the EU.
+  - **The workplace limit for silica dust** in your country, the law that sets it, and the national
+    body for safety at work.
+  - **The limits on lead and cadmium** a glazed piece may release, as your country's law states them,
+    including the far lower Benelux limits since May 2026.
+  - **Who to call** now covers Malta and Portugal, and links the health ministry where no public poison
+    line could be confirmed (Lithuania shows 112 alone, as its ministry's site could not be read).
 - **In German, French, Spanish, Italian, Polish and Portuguese.** Every page, the five guides,
   the standard materials' notes and hazards, the server's messages and the password emails, in the
   formal register, with each language's potters' terms (a glossary per language, built from
@@ -27,6 +39,10 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   translated back into English and compared with the original. Every translated page says it was
   translated by AI and links to a form to suggest a better wording; [CONTRIBUTING.md](CONTRIBUTING.md)
   says how to help.
+- **In Bulgarian, Croatian, Czech, Danish, Dutch, Finnish, Greek, Hungarian, Romanian, Slovak,
+  Slovenian and Swedish**, the second wave, made the same way, then
+  checked for consistency across each language's files: the same word for the guides, never the word
+  for a kiln's own manual, and the same guide titles in every link and list.
 - **Ready for other languages** ([ADR 13](docs/adr/0013-translations.md),
   [how to write text](docs/translating.md)). Every piece of text the app shows now comes from a
   messages file, in ICU MessageFormat through Transloco, so a language is added by translating
@@ -214,8 +230,15 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Changed
 
-- CI, image builds and deploys run on Ubuntu 26.04, named rather than `ubuntu-latest`, so a new
-  Ubuntu (and its fonts) comes by choice.
+- **Plainer English where translators misread it**, in the guides, and every language with it:
+  cooking ware of any size is in the food-contact category (not only over 3 L); small children and pets
+  cannot understand a warning sign, so keep them behind a locked door (not only those who cannot);
+  be there when the firing ends, rather than for all of it; keep cats out of the studio (read as
+  "outdoors"); and a test tile on a kiln-washed shelf.
+- **Shave shortly before you work**, the safe-mixing guide now says: shaving that morning does not meet
+  the 8- or 12-hour guidance for an evening's work, as the guide had claimed. In every language.
+- CI runs on Ubuntu 24.04 (26.04's kernel stops MongoDB 8 and later), image builds and deploys on
+  26.04, each named rather than `ubuntu-latest`, so a new Ubuntu (and its fonts) comes by choice.
 
 - **The recipe page, rebuilt for entering recipes quickly:**
   - The unity formula updates as you type, beside the recipe on a computer and in a line under it
@@ -281,6 +304,31 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Fixed
 
+- **The example beside "Specific gravity"** in Settings (SG 1.45) is a message, so each language
+  writes it its own way (spez. Gewicht 1,45), not in English.
+- **From a full review of the project** (eight reviewers by area, each finding checked and given
+  a test):
+  - **Your work:** the recipe page asks before you leave it with unsaved changes (a link, a
+    reload, the language switch, signing out), and says what was lost when a session ends. The
+    materials on hand list is no longer emptied after a failed fetch.
+  - **Numbers your way:** a print batch, a material's analysis and colorant amounts are typed and
+    shown the reader's way (5.000 g in German no longer prints a 5 g batch); "1e3" and "0x10" are
+    no longer counted as amounts.
+  - **Security:** no open redirect through `/en//`; a path with `$` or many dots can no longer
+    rewrite the page or stall the server; a reset link stops working when the email changes; the
+    reset limit is per hour as documented; accounts have a cap of 2000 records of each kind.
+  - **Pages:** an unknown address answers 404, a trailing slash redirects, and link previews are
+    in the page's language. A new page opens at its top with the focus on its heading, and a
+    guide's section links can be copied and shared.
+  - **Suggestions:** "would bring it a little closer" lists only materials that do, and shared
+    caps (whiting and dolomite at low fire) are met exactly.
+  - **Library:** common colorants (cobalt, copper, chrome, iron oxide and more) are listed in
+    every region, not only the US and UK; Ireland's library follows the UK's; old materials swap
+    to one sold in your region; your own material wins over a standard one of the same name.
+  - **Deploys:** a failed deploy rolls back to the image that was running; a nightly backup is
+    uploaded only once complete; self-hosted email settings reach the container.
+  - **Text:** "by 1999" no longer shows inside translated sentences, apostrophes show once, and
+    server field checks are translated.
 - **Library data, checked against data sheets and safety sheets:**
   - Every material and additive now has a hazard line from its safety data sheet (47 had none),
     and 18 more sources carry their date.

@@ -47,8 +47,16 @@ describe('ShelfService', () => {
       .expectOne(API + '/shelf')
       .flush({}, { status: 500, statusText: 'Server Error' });
     await loading;
-    expect(shelf.keys()).toEqual([]);
+    // No list rather than an empty one, which a change would save over the potter's own.
+    expect(shelf.keys()).toBeNull();
     expect(shelf.problem()).toBe('Your materials on hand could not be fetched. Please try again.');
+    // Asked again, it is fetched again.
+    const again = shelf.load();
+    httpMock()
+      .expectOne(API + '/shelf')
+      .flush({ shelf: ['x'] });
+    await again;
+    expect([shelf.keys(), shelf.problem()]).toEqual([['x'], '']);
     const saving = shelf.save(['x']);
     httpMock()
       .expectOne(API + '/shelf')

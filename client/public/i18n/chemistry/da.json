@@ -1,0 +1,23 @@
+{
+  "unknown-compound": "Ukendt forbindelse {compound} i formlen",
+  "unknown-oxide": "Ukendt oxid {oxide} i råvaren {material}",
+  "invalid-oxide-amount": "Ugyldig mængde for {oxide} i råvaren {material}",
+  "loi-range": "Glødetabet for {material} skal være mindst 0 og under 100",
+  "no-oxides": "Råvaren {material} har ingen oxider",
+  "no-name": "Råvaren skal have et navn",
+  "no-analysis": "Råvaren {material} skal have en formel eller en analyse",
+  "recipe-shape": "Opskriften skal være en liste med '{ material, amount }' eller en oversigt over mængder",
+  "invalid-amount": "Ugyldig mængde for råvaren {material}",
+  "missing-material": "En linje i opskriften mangler en råvare",
+  "unknown-material": "Ukendt råvare {material}",
+  "no-flux": "Opskriften indeholder ingen flusmiddeloxider, så Seger-formlen (UMF) er ikke defineret",
+  "no-target": "Målet har ingen oxider at sigte efter",
+  "no-materials": "Der er ingen råvarer at beregne",
+  "no-temperature": "Brændingstemperaturen skal angives for at fastsætte borindholdet",
+  "no-flux-to-rebuild": "Glasuren har intet flusmiddel at genopbygge",
+  "unknown-element": "Ukendt grundstof {element} i {formula}",
+  "bad-formula": "Formlen {formula} kunne ikke fortolkes",
+  "analysis-total": "Analysen af {material} giver i alt {total} % inklusive glødetab; der forventes omkring 100 %.",
+  "stored-equivalent": "Den gemte ækvivalentvægt for {material} passer ikke med formlen og glødetabet; formlen og glødetabet blev brugt i stedet.",
+  "trace-flux": "Opskriften indeholder kun spor af flusmiddeloxider, så Seger-formlen (UMF) giver ikke mening."
+}

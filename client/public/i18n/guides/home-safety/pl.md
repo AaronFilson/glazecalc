@@ -142,7 +142,7 @@ Pet Poison Helpline podaje: „Ołów jest toksyczny dla wszystkich gatunków, a
 
 - Nie wpuszczać zwierząt do pracowni i trzymać jej drzwi zamknięte.
 - Psy gryzą worki i piją z wiader. Worki trzymać w zamkniętej szafce, a każde wiadro przykrywać pokrywą.
-- Koty chodzą po pyle i zlizują go z łap i sierści. Podłogę sprzątać na mokro, a kotów nie wpuszczać, żeby nie miały czego zlizywać.
+- Koty chodzą po pyle i zlizują go z łap i sierści. Podłogę sprzątać na mokro, a kotów nie wpuszczać do pracowni, żeby nie miały czego zlizywać.
 - Ptaki i małe ssaki (króliki, świnki morskie, chomiki) oddychają tym samym powietrzem co domownicy. Podczas pracy z suchymi surowcami i podczas wypału trzymać je w odległym pokoju przy zamkniętych drzwiach.
 - W akwariach zbiera się opadający pył. Nie stawiać ich w pracowni i trzymać je przykryte.
 - Miski z jedzeniem i wodą dla zwierząt trzymać z dala od pracowni i pieca; używać misek kupionych w sklepie lub przebadanych, a nie eksperymentów z pracowni.
@@ -155,7 +155,7 @@ Jeśli zwierzę mogło zjeść lub wypić cokolwiek z pracowni albo ma objawy po
 
 Brytyjska ocena ryzyka dla szkół podaje, że obudowa pieca „może osiągnąć 160 °C i być może więcej” (około 320 °F), a szkolny poradnik o piecach podaje, że metalowe obręcze nagrzewają się do 460 °F (około 240 °C). Skutt, producent pieców, zaleca pomieszczenie na piec, które można zamknąć na klucz przed dziećmi i zwierzętami. Tam, gdzie pomieszczenia nie da się zamknąć na klucz, szkolny poradnik proponuje barierę, na przykład osłonę ochronną pieca.
 
-Podczas wypału i stygnięcia pieca proponujemy trzymać małe dzieci i zwierzęta, które nie zrozumieją znaku ostrzegawczego, za zamkniętymi na klucz drzwiami lub za barierą, a dla wszystkich pozostałych wywiesić znak ostrzegawczy.
+Małe dzieci i zwierzęta nie zrozumieją znaku ostrzegawczego. Podczas wypału i stygnięcia pieca proponujemy trzymać je za zamkniętymi na klucz drzwiami lub za barierą, a dla wszystkich pozostałych wywiesić znak ostrzegawczy.
 
 ### Wolna przestrzeń wokół pieca
 

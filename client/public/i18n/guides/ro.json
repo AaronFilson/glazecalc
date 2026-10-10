@@ -1,0 +1,154 @@
+{
+  "version": {
+    "cones": "Acest ghid este afișat pentru arderea la conuri, așa cum este stabilit în setări.",
+    "temperature": "Acest ghid este afișat pentru arderea după temperatură, așa cum este stabilit în setări.",
+    "showTemperature": "Afișați pentru arderea după temperatură",
+    "showCones": "Afișați pentru arderea la conuri"
+  },
+  "notTranslated": "Acest ghid nu este încă tradus, așa că este afișat în engleză.",
+  "sectionInEnglish": "Această secțiune s-a modificat de când a fost tradusă, așa că este afișată în engleză până la actualizarea traducerii.",
+  "list": {
+    "title": "Ghiduri",
+    "lead": "Ghiduri pe înțelesul ceramiștilor începători: de la ce este o glazură până la arderea ei, cu toată lumea în siguranță pe parcurs.",
+    "note": "Aceste ghiduri adună ce publică producătorii, agențiile de siguranță și ceramiștii cu experiență, cu sursele la sfârșitul fiecăruia. Sunt un punct de plecare, nu înlocuiesc fișele cu date de securitate ale materiilor prime, manualul cuptorului sau reglementările locale.",
+    "glazingBasics": {
+      "title": "Bazele glazurării",
+      "text": "Ce este o glazură, cum se topește și explicația fiecărui cuvânt pe care îl veți întâlni într-o rețetă sau pe un sac."
+    },
+    "makingAGlaze": {
+      "title": "Cum se prepară o glazură",
+      "text": "Cumpărarea, depozitarea, cântărirea, amestecarea și cernerea unei glazuri, apoi testarea ei și ținerea evidenței."
+    },
+    "safeMixing": {
+      "title": "Prepararea în siguranță și ventilația",
+      "text": "Praful, măștile de protecție respiratorie, curățenia, materiile prime care cer cea mai mare grijă și aerisirea cuptorului."
+    },
+    "homeSafety": {
+      "title": "Nu vă otrăviți familia",
+      "text": "Ceramica acasă, cu copii și animale de companie: depozitarea, praful, cuptorul și ce faceți dacă cineva înghite ceva."
+    },
+    "firing": {
+      "title": "Arderea într-un cuptor simplu",
+      "text": "Conurile, dispozitivele Kiln-Sitter și comutatoarele manuale, cu programe de ardere pentru biscuit și pentru glazură."
+    }
+  },
+  "contents": "Pe această pagină",
+  "poison": {
+    "numbersFor": "Numere pentru",
+    "choose": "Alegeți țara",
+    "label": "Pe cine sunați în {region}",
+    "caption": "Pe cine sunați în {region} (numere verificate la {date})",
+    "for": "Pentru",
+    "call": "Sunați la",
+    "notes": "Program și observații",
+    "emergency": "O urgență: inconștiență, lipsa respirației, o criză convulsivă",
+    "poisonAdvice": "{who, select, children {Informare toxicologică: {name} (doar pentru copii)} other {Informare toxicologică: {name}}}",
+    "or": "sau {number}",
+    "online": "Online: <link>{name}</link>.",
+    "poisonAdviceNone": "Informare toxicologică",
+    "noLine": "Nu am putut confirma existența unei linii publice pentru intoxicații aici. Sunați medicul dumneavoastră sau, dacă este urgent, numărul de urgență.",
+    "medicalAdvice": "Consiliere medicală: {name}",
+    "animals": "Animale: {name}",
+    "animalsNone": "Animale",
+    "vet": "Sunați medicul veterinar.",
+    "checkedOn": "Data verificării:",
+    "choosePrompt": "Alegeți țara pentru a vedea pe cine puteți suna acolo.",
+    "ministry": "Pagina ministerului sănătății: <link>{name}</link>."
+  },
+  "density": {
+    "sg": "greutate specifică {value}",
+    "baume": "{value} °Bé ({sg})",
+    "pint": "{value} oz la o pintă imperială ({sg})"
+  },
+  "shops": {
+    "shopsIn": "Magazine în",
+    "label": "Magazine în {region}",
+    "caption": "Câteva magazine care vând materii prime pentru glazuri în {region} (verificate la {date})",
+    "nearbyCaption": "Magazine din alte țări care declară că livrează în {region} (verificate la {date})",
+    "shop": "Magazin",
+    "sells": "Vinde",
+    "packs": "Ambalaje găsite",
+    "seen": "Materii prime găsite, cu denumirile din magazin",
+    "what": {
+      "materials": "materii prime pentru glazuri",
+      "frits": "frite",
+      "oxides": "oxizi",
+      "stains": "pigmenți ceramici",
+      "clays": "argilă",
+      "glazes": "glazuri gata preparate",
+      "kilns": "cuptoare"
+    },
+    "none": "Nu am găsit niciun magazin care să vândă materii prime pentru glazuri în {region}.",
+    "unknown": "Nu am căutat încă magazine în {region}.",
+    "choosePrompt": "Alegeți țara pentru a vedea magazinele de acolo."
+  },
+  "silica": {
+    "limitIn": "Valoarea-limită în",
+    "label": "Valoarea-limită pentru silice în {region}",
+    "caption": "Valoarea-limită de expunere profesională pentru pulberea respirabilă de silice cristalină în {region}, ca medie pe 8 ore (verificată la {date})",
+    "both": "Cuarț și cristobalit",
+    "quartz": "Cuarț",
+    "cristobalite": "Cristobalit",
+    "actionLevel": "Nivel de acțiune",
+    "value": "{value} mg/m³",
+    "kind": {
+      "binding": "O valoare-limită obligatorie.",
+      "indicative": "O valoare-limită indicativă: o valoare orientativă, nu un plafon legal.",
+      "assessment": "Un criteriu de evaluare, nu o valoare-limită obligatorie."
+    },
+    "setBy": "Stabilită prin <link>{law}</link>.",
+    "lowerThanEu": "Mai mică decât valoarea-limită obligatorie a UE, de {value} mg/m³.",
+    "sameAsEu": "Aceeași cu valoarea-limită obligatorie a UE.",
+    "unknown": "Nu am putut confirma valoarea-limită națională în {region}. Valoarea-limită obligatorie a UE, de {value} mg/m³, se aplică în fiecare stat membru.",
+    "noData": "Nu am confirmat încă valoarea-limită în {region}.",
+    "agency": "Organismul național pentru securitate și sănătate în muncă: <link>{name}</link>.",
+    "agencySilica": "<link>Pagina sa despre silice</link>.",
+    "choosePrompt": "Alegeți țara pentru a vedea valoarea-limită de acolo."
+  },
+  "food": {
+    "rulesIn": "Reglementări în",
+    "label": "Limite pentru obiectele din ceramică în {region}",
+    "caption": "Ce poate ceda o piesă arsă la testul prevăzut de lege, în {region} (verificat la {date})",
+    "article": "Tipul obiectului",
+    "lead": "Plumb",
+    "cadmium": "Cadmiu",
+    "category": {
+      "flat": "Obiecte care nu pot fi umplute sau cu adâncimea interioară de cel mult 25 mm",
+      "fillable": "Alte obiecte care pot fi umplute",
+      "cooking": "Vase de gătit de orice dimensiune; recipiente pentru ambalare și depozitare cu o capacitate mai mare de 3 L",
+      "rimBand": "Buza unui recipient din care se bea: o bandă de 2 cm, la interior și la exterior",
+      "rimArticle": "Buza unui recipient din care se bea: o bandă de 20 mm pe exterior, sub marginea superioară, pe obiect",
+      "flatware": "Obiecte plate, cu adâncimea de cel mult 25 mm",
+      "smallHollow": "Obiecte mici care pot fi umplute, sub 1,1 L, în afară de cești și căni",
+      "cups": "Cești și căni",
+      "largeHollow": "Obiecte mari care pot fi umplute, de 1,1 L sau mai mult, în afară de carafe",
+      "pitchers": "Carafe",
+      "auSmall": "Cești, căni, carafe, boluri, ceainice și alte obiecte de veselă sub 1100 mL",
+      "auLarge": "Aceleași, de 1100 mL sau mai mult",
+      "auPlates": "Farfurii, farfurioare și obiecte de veselă similare",
+      "auCooking": "Vase de gătit"
+    },
+    "judged": {
+      "average": "media a 6 obiecte",
+      "each": "fiecare dintre cele 6"
+    },
+    "euRules": "Aici se aplică reglementările UE.",
+    "law": "Stabilite prin <link>{law}</link>.",
+    "inForce": "În vigoare de la {date}.",
+    "unknown": "Nu am confirmat încă reglementările din {region}.",
+    "choosePrompt": "Alegeți țara pentru a vedea reglementările de acolo."
+  },
+  "equivalents": {
+    "buyingIn": "Cumpărături în",
+    "label": "{library, select, US {Echivalente vândute în SUA} UK {Echivalente vândute în Regatul Unit} EU {Echivalente vândute în UE} other {Echivalente vândute în Australia și Noua Zeelandă}}",
+    "caption": "{library, select, US {Materii prime care nu se vând în SUA, fiecare cu cea mai apropiată care se vinde acolo} UK {Materii prime care nu se vând în Regatul Unit, fiecare cu cea mai apropiată care se vinde acolo} EU {Materii prime care nu se vând în UE, fiecare cu cea mai apropiată care se vinde acolo} other {Materii prime care nu se vând în Australia și Noua Zeelandă, fiecare cu cea mai apropiată care se vinde acolo}}",
+    "material": "În rețetă",
+    "soldIn": "Se vinde în",
+    "closest": "{library, select, US {Cea mai apropiată vândută în SUA} UK {Cea mai apropiată vândută în Regatul Unit} EU {Cea mai apropiată vândută în UE} other {Cea mai apropiată vândută în Australia și Noua Zeelandă}}",
+    "apart": "diferă cu {grams} g la 100 g",
+    "noneClose": "Nicio materie primă cu o diferență de cel mult 15 g la 100 g: comparați după analiza chimică.",
+    "loading": "Se încarcă biblioteca…",
+    "failed": "Biblioteca nu a putut fi încărcată. Încercați din nou mai târziu.",
+    "choosePrompt": "Alegeți țara pentru a vedea ce se vinde acolo."
+  }
+}

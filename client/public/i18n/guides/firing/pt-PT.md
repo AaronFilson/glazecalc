@@ -14,7 +14,7 @@ Os cones medem o **trabalho térmico**{{en: heatwork}}, o efeito combinado da te
 
 ### Números dos cones
 
-Os números dos cones vão de 022, o de temperatura mais baixa, até 42. Um zero à esquerda marca a série de temperaturas mais baixas e lê-se «zero»: o cone 06 («zero seis») é mais baixo do que o cone 04, e o cone 01 precisa de menos calor do que o cone 1. A Orton avisa que é importante não confundir as duas séries. A diferença é grande: o cone 06 dobra a uma temperatura mais de {{400 °F; 220 °C}} abaixo da do cone 6.
+Os números dos cones vão de 022, o de temperatura mais baixa, até 42. Um zero à esquerda marca a série de temperaturas mais baixas e lê-se «zero»: o cone 06 («zero seis») é mais frio do que o cone 04, e o cone 01 precisa de menos calor do que o cone 1. A Orton avisa que é importante não confundir as duas séries. A diferença é grande: o cone 06 dobra a uma temperatura mais de {{400 °F; 220 °C}} abaixo da do cone 6.
 
 Table: Intervalos de cozedura comuns, para cones autossuportados a {{108 °F/h; 60 °C/h}}
 Label: Intervalos de cozedura
@@ -40,7 +40,7 @@ Label: Patamares e trabalho térmico
 | 40–60 minutos       | Uma temperatura máxima {{36 °F; 20 °C}} mais alta                        |
 | Cerca de 2 horas    | Uma temperatura máxima {{54 °F; 30 °C}} mais alta                        |
 | 1–2 horas           | «pode ser suficiente para deformar o cone de número imediatamente acima» |
-| 4–6 horas           | O suficiente para dobrar um cone dois números acima                      |
+| 4–6 horas           | O suficiente para dobrar um cone dois números mais quente                |
 
 Por isso, um patamar nunca sai de graça: se acrescentar um, conte com que os cones dobrem mais e baixe a temperatura máxima em conformidade.
 
@@ -124,7 +124,7 @@ Uma temperatura, por si só, não diz quanto as peças cozeram. Os vidrados{{en:
 
 Quando, em vez disso, uma receita indica um cone, procure-o na tabela acima, na coluna da velocidade a que o seu forno sobe no fim da cozedura. Um patamar também acrescenta trabalho térmico: veja «O patamar acrescenta trabalho térmico», acima.
 
-A sonda lê o ar junto à parede, não as peças. Se as cozeduras ficarem acima ou abaixo do que deviam, o manual do seu controlador explica a sua **correção** (offset), que acerta a leitura.
+A sonda lê o ar junto à parede, não as peças. Se as cozeduras ficarem mais quentes ou mais frias do que deviam, o manual do seu controlador explica a sua **correção** (offset), que acerta a leitura.
 
 :::
 
@@ -139,11 +139,11 @@ Um **conjunto de cones**{{en: cone pack}} é formado por três cones testemunho 
 Table: O conjunto de três cones
 Label: Conjunto de três cones
 
-| Cone        | Que número               | Chacota{{en: bisque}} ao cone 04 | Vidrado{{en: glaze}} para cone 6 | Quando dobra                      |
-| ----------- | ------------------------ | -------------------------------- | -------------------------------- | --------------------------------- |
-| Guia        | Um número abaixo do alvo | 05                               | 5                                | As peças estão perto da maturação |
-| De cozedura | O alvo                   | 04                               | 6                                | A cozedura chegou ao ponto certo  |
-| De proteção | Um número acima          | 03                               | 7                                | A cozedura foi longe demais       |
+| Cone        | Que número                        | Chacota{{en: bisque}} ao cone 04 | Vidrado{{en: glaze}} para cone 6 | Quando dobra                      |
+| ----------- | --------------------------------- | -------------------------------- | -------------------------------- | --------------------------------- |
+| Guia        | Um número mais frio do que o alvo | 05                               | 5                                | As peças estão perto da maturação |
+| De cozedura | O alvo                            | 04                               | 6                                | A cozedura chegou ao ponto certo  |
+| De proteção | Um número mais quente             | 03                               | 7                                | A cozedura foi longe demais       |
 
 ### Cones autossuportados ou placa de cones
 
@@ -176,10 +176,10 @@ Os cones pequenos e as barras «dão um tratamento térmico equivalente». A Ort
 
 ### Que cone vai no kiln sitter
 
-As fontes não concordam. A Dawson, fabricante do kiln sitter, diz para usar o mesmo número que o cone de cozedura na placa, e para subir um número só se o cone da placa ficar por dobrar. A L&L diz para usar um número acima dos cones da placa, porque o kiln sitter fica junto à parede e às resistências, recebe mais calor e tende a desligar cedo. A Orton define o princípio: «O cone da placa é o juiz final do processo de cozedura, não o cone ou a barra do Kiln-Sitter.»
+As fontes não concordam. A Dawson, fabricante do kiln sitter, diz para usar o mesmo número que o cone de cozedura na placa, e para passar a um número mais quente só se o cone da placa ficar por dobrar. A L&L diz para usar um número mais quente do que os cones da placa, porque o kiln sitter fica junto à parede e às resistências, recebe mais calor e tende a desligar cedo. A Orton define o princípio: «O cone da placa é o juiz final do processo de cozedura, não o cone ou a barra do Kiln-Sitter.»
 
 > [!NOTE]
-> O nosso ponto de partida: ponha no kiln sitter um cone pequeno do mesmo número que o cone alvo, com um conjunto de cones{{en: cone pack}} na placa. Se o cone de cozedura da placa estiver pouco dobrado quando o forno desligar, use um número acima no kiln sitter da próxima vez, ou ponha a parte mais grossa do cone por baixo da haste. Se estiver demasiado dobrado, faça o contrário.
+> O nosso ponto de partida: ponha no kiln sitter um cone pequeno do mesmo número que o cone alvo, com um conjunto de cones{{en: cone pack}} na placa. Se o cone de cozedura da placa estiver pouco dobrado quando o forno desligar, use um número mais quente no kiln sitter da próxima vez, ou ponha a parte mais grossa do cone por baixo da haste. Se estiver demasiado dobrado, faça o contrário.
 
 ### Montagem e verificações antes de cada cozedura
 
@@ -216,7 +216,7 @@ Label: Problemas do kiln sitter
 
 | O que vê                                                               | Causa provável                                                                                            | O que fazer                                                                   |
 | ---------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
-| O kiln sitter disparou, o cone de cozedura da placa está pouco dobrado | O kiln sitter aqueceu mais do que a placa (fica junto à parede)                                           | Um cone acima no kiln sitter, ou a parte mais grossa por baixo da haste       |
+| O kiln sitter disparou, o cone de cozedura da placa está pouco dobrado | O kiln sitter aqueceu mais do que a placa (fica junto à parede)                                           | Um cone mais quente no kiln sitter, ou a parte mais grossa por baixo da haste |
 | O cone do kiln sitter dobrou muito além dos 90°                        | O forno subiu depressa demais perto do fim                                                                | Baixe as posições dos reguladores, para que a subida seja mais lenta (Dawson) |
 | O cone do kiln sitter não dobrou, ou fundiu numa bola                  | O próprio kiln sitter: má afinação, uma haste torta ou corroída, ou algo preso no tubo ou encostado a ele | Verifique e afine o kiln sitter segundo o seu manual antes de voltar a cozer  |
 | Cedo ou tarde todas as vezes                                           | Desafinado, ou uma haste gasta                                                                            | Verifique com o calibre de ajuste; desloque a placa de disparo                |
@@ -268,11 +268,11 @@ Label: Ler um conjunto de cones
 Table: O que mudar da próxima vez
 Label: Ajustar a cozedura seguinte
 
-| O que os cones disseram                    | Kiln sitter                                                                                                                                    | Controlador                                                                                                                                                         |
-| ------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Subcozido                                  | Um cone acima no kiln sitter, ou a parte mais grossa por baixo da haste                                                                        | Use a correção do cone para cozer um pouco mais alto, ou acrescente um patamar{{en: hold}} curto (cerca de 20 minutos valem {{18 °F; 10 °C}} de temperatura máxima) |
-| Sobrecozido                                | Um cone abaixo, ou a parte mais fina por baixo da haste; se o cone do kiln sitter dobrou muito além dos 90°, baixe as posições dos reguladores | Use a correção do cone para cozer um pouco mais baixo, ou encurte ou retire o patamar                                                                               |
-| Em cima e em baixo diferem mais de um cone | Mude a combinação dos reguladores (veja «Fornos manuais em pormenor»)                                                                          | Carregue com menos peças a zona mais fria; siga o seu manual                                                                                                        |
+| O que os cones disseram                    | Kiln sitter                                                                                                                                       | Controlador                                                                                                                                                           |
+| ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Subcozido                                  | Um cone mais quente no kiln sitter, ou a parte mais grossa por baixo da haste                                                                     | Use a correção do cone para cozer um pouco mais quente, ou acrescente um patamar{{en: hold}} curto (cerca de 20 minutos valem {{18 °F; 10 °C}} de temperatura máxima) |
+| Sobrecozido                                | Um cone mais frio, ou a parte mais fina por baixo da haste; se o cone do kiln sitter dobrou muito além dos 90°, baixe as posições dos reguladores | Use a correção do cone para cozer um pouco mais frio, ou encurte ou retire o patamar                                                                                  |
+| Em cima e em baixo diferem mais de um cone | Mude a combinação dos reguladores (veja «Fornos manuais em pormenor»)                                                                             | Carregue com menos peças a zona mais fria; siga o seu manual                                                                                                          |
 
 Uma **correção do cone** (offset) é uma regulação do controlador que sobe ou desce a temperatura que ele usa para um cone, de modo a corresponder ao que os seus cones testemunho{{en: witness cones}} mostram. Guarde todos os conjuntos cozidos e anote como dobrou cada um (veja «Depois da cozedura», abaixo).
 
@@ -422,7 +422,7 @@ Os controladores da Skutt também oferecem um pré-aquecimento e uma opção de 
 
 ### Num forno manual
 
-Um forno manual não consegue seguir estas curvas com exatidão, mas o plano é o mesmo: suave ao início, constante a meio e um final vigiado. A curva de vidrado de baixa temperatura da Bracker's está em «Fornos manuais em pormenor», abaixo; para cones mais altos, acrescenta «uma média de 15–30 minutos por número de cone». Com um pirómetro, prática e um registo, pode imitar aproximadamente uma descida e patamar ou um arrefecimento lento baixando os reguladores à mão, como sugere a Digitalfire.
+Um forno manual não consegue seguir estas curvas com exatidão, mas o plano é o mesmo: suave ao início, constante a meio e um final vigiado. A curva de vidrado de baixa temperatura da Bracker's está em «Fornos manuais em pormenor», abaixo; para cones mais quentes, acrescenta «uma média de 15–30 minutos por número de cone». Com um pirómetro, prática e um registo, pode imitar aproximadamente uma descida e patamar ou um arrefecimento lento baixando os reguladores à mão, como sugere a Digitalfire.
 
 ## Fornos manuais em pormenor {#manual-kilns}
 
@@ -437,14 +437,14 @@ O procedimento sugerido pela L&L para um forno com três reguladores, kiln sitte
 Table: O procedimento de cozedura manual da L&L
 Label: Procedimento L e L
 
-| Fase                                            | O que fazer                                                                                                                                                                                                                                                                                   |
-| ----------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Preparação                                      | Cone do kiln sitter um número acima dos cones da placa (conselho da L&L; veja «O kiln sitter»). Deixe a tampa entreaberta «cerca de 4 ou 5 polegadas» (10–13 cm) e tire todos os tampões dos óculos. Regule o temporizador muito alto da primeira vez e anote quanto tempo demora a cozedura. |
-| Baixo                                           | Todos os reguladores em Baixo (1): 3 horas se o barro estiver seco, 8 a 20 horas ou mais se parecer húmido                                                                                                                                                                                    |
-| Médio                                           | Feche a tampa. Os dois reguladores de cima em 5, o de baixo em 6.                                                                                                                                                                                                                             |
-| Primeiro rubro                                  | Assim que vir qualquer brilho, tape os dois óculos de baixo. Deixe o de cima aberto durante toda a cozedura.                                                                                                                                                                                  |
-| Rubro bem visível, cerca de {{1400 °F; 760 °C}} | Os dois reguladores de baixo em Alto, o de cima em 9                                                                                                                                                                                                                                          |
-| Fim                                             | Vigie os cones e afine os reguladores de cima e de baixo. Quando os cones dobrarem, desligue todos os reguladores e desligue o disjuntor. Deixe o forno arrefecer por completo antes de o abrir.                                                                                              |
+| Fase                                            | O que fazer                                                                                                                                                                                                                                                                                               |
+| ----------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Preparação                                      | Cone do kiln sitter um número mais quente do que os cones da placa (conselho da L&L; veja «O kiln sitter»). Deixe a tampa entreaberta «cerca de 4 ou 5 polegadas» (10–13 cm) e tire todos os tampões dos óculos. Regule o temporizador muito alto da primeira vez e anote quanto tempo demora a cozedura. |
+| Baixo                                           | Todos os reguladores em Baixo (1): 3 horas se o barro estiver seco, 8 a 20 horas ou mais se parecer húmido                                                                                                                                                                                                |
+| Médio                                           | Feche a tampa. Os dois reguladores de cima em 5, o de baixo em 6.                                                                                                                                                                                                                                         |
+| Primeiro rubro                                  | Assim que vir qualquer brilho, tape os dois óculos de baixo. Deixe o de cima aberto durante toda a cozedura.                                                                                                                                                                                              |
+| Rubro bem visível, cerca de {{1400 °F; 760 °C}} | Os dois reguladores de baixo em Alto, o de cima em 9                                                                                                                                                                                                                                                      |
+| Fim                                             | Vigie os cones e afine os reguladores de cima e de baixo. Quando os cones dobrarem, desligue todos os reguladores e desligue o disjuntor. Deixe o forno arrefecer por completo antes de o abrir.                                                                                                          |
 
 ### As curvas da Bracker's
 
@@ -460,7 +460,7 @@ Label: Curvas manuais da Bracker's
 | Temporizador    | De manhã, regule-o de novo para 30–60 minutos a mais do que o tempo de cozedura previsto                  | 30–60 minutos a mais do que o tempo de cozedura previsto                 |
 | Baixo           | Todos os reguladores em Baixo, 3–4 horas; sem tampões, tampa entreaberta                                  | Todos os reguladores em Baixo, 3–4 horas; sem tampões, tampa entreaberta |
 | Médio           | Tampões postos, tampa fechada; todos os reguladores em Médio, 3–4 horas                                   | Tampões postos, tampa fechada; todos os reguladores em Médio, 3–4 horas  |
-| Alto            | Cerca de 2–3 horas, até o kiln sitter desligar o forno                                                    | Cerca de 3 horas; mais 15–30 minutos por cada cone acima                 |
+| Alto            | Cerca de 2–3 horas, até o kiln sitter desligar o forno                                                    | Cerca de 3 horas; mais 15–30 minutos por cada cone mais quente           |
 
 A Bracker's não diz a que cone da placa corresponde o cone do kiln sitter na chacota, por isso verifique com o seu próprio conjunto de cones{{en: cone pack}}. Com um exaustor por baixo do forno (downdraft), os passos são os mesmos, mas o exaustor funciona durante a cozedura e o arrefecimento, e a tampa fica fechada. A Bracker's sugere também escalonar: subir os reguladores um de cada vez, com cerca de 30 minutos de intervalo.
 
@@ -498,7 +498,7 @@ Label: Ponto de partida para forno manual
 | Alto                                          | Até o kiln sitter disparar; ao rubro escuro, tape todos os óculos menos o de cima                                                                                                          | Até o kiln sitter disparar                       |
 | Total previsto                                | 8–12 horas                                                                                                                                                                                 | 8–12 horas                                       |
 
-Se o kiln sitter disparar antes de os cones da placa dobrarem, use um cone acima no kiln sitter da próxima vez, como aconselha a L&L.
+Se o kiln sitter disparar antes de os cones da placa dobrarem, use um cone mais quente no kiln sitter da próxima vez, como aconselha a L&L.
 
 ### Usar um pirómetro
 

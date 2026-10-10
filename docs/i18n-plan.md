@@ -1,8 +1,8 @@
 # Plan: Glazecalc in the 24 official EU languages
 
-Status: decided in outline, 2026-10-08; revised the same day after the owner's decisions. The research behind it is in
-`reports/Internationalizing glazecalc for EU languages.md`, with notes in `research_notes/` under the same name. Once
-the library trial is done, the approach is recorded as ADR 13.
+Status: decided in outline, 2026-10-08; revised the same day after the owner's decisions. The research behind it, a
+report ("Internationalizing glazecalc for EU languages") with its notes, is kept outside the repository. Once the
+library trial is done, the approach is recorded as ADR 13.
 
 ## The goal
 
@@ -112,7 +112,7 @@ Everything is stored with the account (like the theme and lead today), with a co
 is right. Visitors keep theirs in the browser only.
 
 The library's region filter (`chosenRegion()`) follows the region setting. EU countries keep the EU material set and
-add local trade names as aliases.
+add local trade names as aliases; Ireland, whose shops sell the UK's materials, has the UK's.
 
 ## Phase 1: groundwork, in English (about 2–3 weeks)
 
@@ -255,6 +255,26 @@ Portuguese, offered in Settings and to search engines. As planned, with these de
 - **Plural rules** follow the page's own language: European Portuguese counts 0 as plural, unlike Brazil's.
 - **A browser test** opens every page in each language at a phone's width and fails if anything is wider.
 
+**Wave 2 done, 2026-10-09, on branch `i18n-wave2`:** Czech, Danish, Greek and Slovak, then Swedish, Hungarian, Finnish
+and Romanian, then Dutch, Slovenian, Croatian and Bulgarian, each batch tested in the browser on Windows and Linux before
+its commit. As in wave 1, with these additions:
+
+- **A consistency pass per language** once its six reviews are done, because reviewers of different parts sometimes
+  fixed the same thing two ways: one word for "guide" that is never the word for a kiln's own manual, the same five
+  guide titles in every link, title and list, and the glossary brought up to date with what the reviews decided.
+- **Lessons carried forward.** Reviews and back-translations found the same slips in several languages: "should"
+  made "must", "must be tested" made "must pass a test", "some" made "a little", "leach test" narrowed to lead
+  and cadmium, and a cone "one number hotter" made "higher" (wrong below cone 1, where 05 is cooler than 04; also
+  fixed in German, Spanish and Portuguese). Each became a rule in the prompts of the languages that followed.
+- **Plainer English** where several languages misread it the same way: cooking ware of any size is in the
+  food-contact category, not only over 3 L; small children and pets cannot understand a warning sign (it was read as
+  "only those who cannot"); be there when the firing ends, not for all of it; and keep cats out of the studio
+  (read as "outdoors"). The live languages were brought
+  into line, and the change was marked as keeping the meaning (`--keep`), so no translation went back to English.
+- **One correction to the English:** the safe-mixing guide said shaving on the day you work meets the 8- and 12-hour
+  guidance for a respirator's seal, which a morning shave and an evening session do not. It now says shave shortly
+  before you work, and every language says so.
+
 ### What Claude produces, per language
 
 - **A glossary of 150–250 terms**, built from the research notes and the suppliers' catalogues in that language, never
@@ -317,17 +337,52 @@ which you opt into by asking for a workflow.
 
 ## Phase 4: region content
 
-For each region, before its language goes live:
+**Done, 2026-10-09, on branch `i18n-phase4`,** for all 31 regions and not only those whose language is live, since
+a potter anywhere can read English with their own region. Each fact was read on the law's, the agency's or the
+shop's own page, and carries that page and the day it was checked (`lib/regions`); a test fails a year later. The
+research notes are kept outside the repository.
+
+- **Who to call** (`safety.js`): Malta's line is shown with the centre's own hours (08:00 to 20:00; a chart's
+  "24 hours" holds for doctors only), and Portugal's number, read on the health ministry's portal. Bulgaria's,
+  Lithuania's and Cyprus's could still not be read on an official page. Bulgaria and Cyprus show 112 and a link to
+  the health ministry, as planned; every EU country's ministry is recorded for that. Lithuania shows 112 alone, as its
+  ministry's site answered only a bot check and could not be read.
+- **Silica** (`workplace.js`): each country's limit, the law that sets it and what kind it is (binding, indicative,
+  Germany's assessment criterion), and its national body for safety at work, against the EU's binding 0.1 mg/m³.
+  NEPSI's tables were out of date in places: Belgium is 0.05 since September 2025, Luxembourg 0.1 (not 0.15),
+  Portugal 0.05 (not 0.025), Slovenia 0.05 and Estonia 0.1 (not 0.1 and 0.05); Malta, Cyprus, Croatia and Latvia
+  have limits in law. Finland's binding limit is 0.1, with a lower 0.05 that employers must take into account.
+  Romania's and Bulgaria's law sites would not load, so the page says their limit is not confirmed and gives the EU's.
+- **Food contact** (`food.js`): the directive's limits, and each country's own law where it has one: the Benelux
+  limits since 29 May 2026 (Belgium's decree, read in the Moniteur, has the same figures), Denmark's limit on the rim
+  of a cup, Czechia's, the UK's 2012 regulations (the 2006 ones were revoked), the FDA's lead and cadmium guides, and
+  Australia's limits on imported ware. Denmark's stricter draft was not adopted. No official limit was found for
+  New Zealand, and the guide no longer says there is one.
+- **Shops** (`suppliers.js`): up to four per country (Hungary and Slovenia have one each), each sells raw glaze
+  materials to potters, read on its own site, with what it sells, the packs seen and some materials by the shop's
+  own names and codes. Where none was found (Luxembourg, Malta, Slovakia, Croatia, Cyprus, Latvia, Lithuania),
+  shops elsewhere whose own delivery page names the country. Estonia and Ireland, empty before, now have shops; Carl
+  Jäger no longer sells to private buyers outside Germany, and Mondo Ceramica sells only to businesses.
+- **Material notes:** rather than notes written by hand, the buying guide lists every material in the library that
+  is not sold where the potter buys, with the closest of its kind that is, by the library's own analyses: the grams
+  of fired oxides per 100 g by which the two differ (`shared/alike.ts`, the measure Compare uses to swap one for one).
+  The names carry the makers' and shops' codes.
+- **In the guides:** the blocks `::shops`, `::local-equivalents`, `::silica-limit` and `::food-limits`, beside
+  `::poison-lines`; each starts at the reader's region and can show another country's. The new text was translated
+  into the six languages, reviewed, and its safety text back-translated blind.
+
+As planned:
 
 - **Claude checks on official pages what the research could not:**
   - Malta's poison-line hours and Portugal's numbers;
   - Bulgaria, Lithuania and Cyprus;
   - Belgium's food-contact figures and the 2024 national silica table.
 
-  Anything still unverifiable shows 112 and a link to the national health ministry, never a guessed number.
+  Anything still unverifiable shows 112 and a link to the national health ministry, never a guessed number (112
+  alone where the ministry's page could not be read either: Lithuania).
 
-- **Suppliers:** two to four for each country where they exist. None were found for Croatia, Lithuania, Latvia,
-  Estonia, Luxembourg, Malta or Cyprus, so those say so.
+- **Suppliers:** up to four for each country where they exist. Where none were found in the country (Croatia,
+  Cyprus, Latvia, Lithuania, Luxembourg, Malta and Slovakia), the guide names shops elsewhere that deliver there.
 - **Material notes:** say which US materials are not sold there, and name local equivalents by the shop's own codes.
 - **Food safety:** the section follows the region's rules. The Benelux limits are about 130 times lower than the EU's
   since 2026.

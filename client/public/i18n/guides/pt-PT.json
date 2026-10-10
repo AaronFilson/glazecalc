@@ -52,11 +52,103 @@
     "animalsNone": "Animais",
     "vet": "Ligue para o seu veterinário.",
     "checkedOn": "Verificado em:",
-    "choosePrompt": "Escolha o seu país para ver a quem ligar."
+    "choosePrompt": "Escolha o seu país para ver a quem ligar.",
+    "ministry": "A página do Ministério da Saúde: <link>{name}</link>."
   },
   "density": {
     "sg": "SG {value}",
     "baume": "{value} °Bé ({sg})",
     "pint": "{value} oz por pinta imperial ({sg})"
+  },
+  "shops": {
+    "shopsIn": "Lojas em",
+    "label": "Lojas: {region}",
+    "caption": "{region}: algumas lojas que vendem matérias-primas para vidrados (verificadas em {date})",
+    "nearbyCaption": "{region}: lojas noutros países que dizem fazer entregas nesse país (verificadas em {date})",
+    "shop": "Loja",
+    "sells": "Vende",
+    "packs": "Embalagens encontradas",
+    "seen": "Matérias-primas encontradas, com os nomes da loja",
+    "what": {
+      "materials": "matérias-primas para vidrados",
+      "frits": "fritas",
+      "oxides": "óxidos",
+      "stains": "pigmentos cerâmicos",
+      "clays": "argila",
+      "glazes": "vidrados prontos",
+      "kilns": "fornos"
+    },
+    "none": "{region}: não encontrámos nenhuma loja que venda matérias-primas para vidrados.",
+    "unknown": "{region}: ainda não procurámos lojas.",
+    "choosePrompt": "Escolha o seu país para ver as lojas desse país."
+  },
+  "silica": {
+    "limitIn": "Valor-limite em",
+    "label": "Valor-limite para a sílica: {region}",
+    "caption": "{region}: valor-limite de exposição profissional à sílica cristalina respirável, média de 8 horas (verificado em {date})",
+    "both": "Quartzo e cristobalite",
+    "quartz": "Quartzo",
+    "cristobalite": "Cristobalite",
+    "actionLevel": "Nível de ação",
+    "value": "{value} mg/m³",
+    "kind": {
+      "binding": "Um valor-limite vinculativo.",
+      "indicative": "Um valor-limite indicativo: um valor de referência, não um teto legal.",
+      "assessment": "Um critério de avaliação, não um valor-limite vinculativo."
+    },
+    "setBy": "Fixado por <link>{law}</link>.",
+    "lowerThanEu": "Inferior ao valor-limite vinculativo da UE, de {value} mg/m³.",
+    "sameAsEu": "Igual ao valor-limite vinculativo da UE.",
+    "unknown": "{region}: não conseguimos confirmar o valor-limite nacional. O valor-limite vinculativo da UE, de {value} mg/m³, aplica-se em todos os Estados-Membros.",
+    "noData": "{region}: ainda não confirmámos o valor-limite.",
+    "agency": "O organismo nacional de segurança no trabalho: <link>{name}</link>.",
+    "agencySilica": "A sua <link>página sobre a sílica</link>.",
+    "choosePrompt": "Escolha o seu país para ver o respetivo valor-limite."
+  },
+  "food": {
+    "rulesIn": "Regras em",
+    "label": "Limites para a loiça cerâmica: {region}",
+    "caption": "{region}: o que uma peça cozida pode libertar no ensaio legal (verificado em {date})",
+    "article": "Tipo de peça",
+    "lead": "Chumbo",
+    "cadmium": "Cádmio",
+    "category": {
+      "flat": "Peças que não podem ser enchidas, ou com profundidade igual ou inferior a 25 mm",
+      "fillable": "Outras peças que podem ser enchidas",
+      "cooking": "Utensílios para cozinhar; embalagens e recipientes de armazenagem com capacidade superior a 3 L",
+      "rimBand": "O bordo de um recipiente para beber: uma faixa de 2 cm, por dentro e por fora",
+      "rimArticle": "O bordo de um recipiente para beber: uma faixa de 20 mm por fora, a partir da borda superior, por peça",
+      "flatware": "Peças planas, até 25 mm de profundidade",
+      "smallHollow": "Peças ocas pequenas, com menos de 1,1 L, exceto chávenas e canecas",
+      "cups": "Chávenas e canecas",
+      "largeHollow": "Peças ocas grandes, com 1,1 L ou mais, exceto jarros",
+      "pitchers": "Jarros",
+      "auSmall": "Chávenas, canecas, jarros, taças, bules e outra loiça de mesa com menos de 1100 mL",
+      "auLarge": "As mesmas peças, com 1100 mL ou mais",
+      "auPlates": "Pratos, pires e loiça de mesa semelhante",
+      "auCooking": "Utensílios para cozinhar"
+    },
+    "judged": {
+      "average": "média de 6 peças",
+      "each": "qualquer uma das 6"
+    },
+    "euRules": "Aplicam-se aqui as regras da UE.",
+    "law": "Limites fixados por <link>{law}</link>.",
+    "inForce": "Em vigor a partir de {date}.",
+    "unknown": "{region}: ainda não confirmámos as regras.",
+    "choosePrompt": "Escolha o seu país para ver as respetivas regras."
+  },
+  "equivalents": {
+    "buyingIn": "Onde compra",
+    "label": "{library, select, US {Equivalentes à venda nos EUA} UK {Equivalentes à venda no Reino Unido} EU {Equivalentes à venda na UE} other {Equivalentes à venda na Austrália e na Nova Zelândia}}",
+    "caption": "{library, select, US {Matérias-primas que não estão à venda nos EUA, cada uma com a mais próxima que lá se vende} UK {Matérias-primas que não estão à venda no Reino Unido, cada uma com a mais próxima que lá se vende} EU {Matérias-primas que não estão à venda na UE, cada uma com a mais próxima que lá se vende} other {Matérias-primas que não estão à venda na Austrália e na Nova Zelândia, cada uma com a mais próxima que lá se vende}}",
+    "material": "Numa receita",
+    "soldIn": "À venda em",
+    "closest": "{library, select, US {Mais próxima à venda nos EUA} UK {Mais próxima à venda no Reino Unido} EU {Mais próxima à venda na UE} other {Mais próxima à venda na Austrália e na Nova Zelândia}}",
+    "apart": "difere em {grams} g por 100 g",
+    "noneClose": "Nenhuma com diferença até 15 g por 100 g: compare pela química.",
+    "loading": "A carregar a biblioteca…",
+    "failed": "Não foi possível carregar a biblioteca. Tente novamente mais tarde.",
+    "choosePrompt": "Escolha o seu país para ver o que lá se vende."
   }
 }

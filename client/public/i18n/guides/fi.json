@@ -1,0 +1,154 @@
+{
+  "version": {
+    "cones": "Tässä oppaassa poltto esitetään keiloina, kuten asetuksissa on valittu.",
+    "temperature": "Tässä oppaassa poltto esitetään lämpötiloina, kuten asetuksissa on valittu.",
+    "showTemperature": "Näytä lämpötiloina",
+    "showCones": "Näytä keiloina"
+  },
+  "notTranslated": "Tätä opasta ei ole vielä käännetty, joten se näytetään englanniksi.",
+  "sectionInEnglish": "Tämä osio on muuttunut käännöksen jälkeen, joten se näytetään englanniksi, kunnes käännös on päivitetty.",
+  "list": {
+    "title": "Oppaat",
+    "lead": "Selkeäkielisiä oppaita aloitteleville keraamikoille: siitä, mikä lasite on, aina sen polttamiseen asti, ja miten kaikki pysyvät turvassa matkan varrella.",
+    "note": "Nämä oppaat kokoavat yhteen sen, mitä valmistajat, turvallisuusviranomaiset ja kokeneet keraamikot julkaisevat, ja kunkin oppaan lopussa ovat sen lähteet. Oppaat ovat lähtökohta, eivätkä ne korvaa käytettyjen raaka-aineiden käyttöturvallisuustiedotteita, oman uunin käyttöohjetta tai paikallisia määräyksiä.",
+    "glazingBasics": {
+      "title": "Lasittamisen perusteet",
+      "text": "Mikä lasite on, miten se sulaa, ja selitykset kaikille sanoille, joihin reseptissä tai raaka-ainepussissa törmää."
+    },
+    "makingAGlaze": {
+      "title": "Lasitteen valmistaminen",
+      "text": "Ostaminen, säilyttäminen, punnitseminen, sekoittaminen ja seulominen, sitten lasitteen testaaminen ja muistiinpanojen pitäminen."
+    },
+    "safeMixing": {
+      "title": "Turvallinen sekoittaminen ja ilmanvaihto",
+      "text": "Pöly, hengityksensuojaimet, siivous, eniten varovaisuutta vaativat raaka-aineet ja uunin tuulettaminen."
+    },
+    "homeSafety": {
+      "title": "Älä myrkytä perhettäsi",
+      "text": "Keramiikka kotona lasten ja lemmikkien kanssa: säilytys, pöly, uuni ja mitä tehdä, jos jotain on nielty."
+    },
+    "firing": {
+      "title": "Polttaminen yksinkertaisessa keramiikkauunissa",
+      "text": "Keilat, Kiln-Sitter-keilakatkaisimet ja käsisäätöiset kytkimet sekä polttokäyrät raakapolttoon ja lasituspolttoon."
+    }
+  },
+  "contents": "Tällä sivulla",
+  "poison": {
+    "numbersFor": "Numerot maassa:",
+    "choose": "Valitse maa",
+    "label": "Minne soittaa maassa {region}",
+    "caption": "Minne soittaa maassa {region} (numerot tarkistettu {date})",
+    "for": "Tilanne",
+    "call": "Numero",
+    "notes": "Palveluajat ja lisätiedot",
+    "emergency": "Hätätilanne: tajuton, ei hengitä, kouristuskohtaus",
+    "poisonAdvice": "{who, select, children {Myrkytysneuvonta: {name} (vain lapsille)} other {Myrkytysneuvonta: {name}}}",
+    "or": "tai {number}",
+    "online": "Verkossa: <link>{name}</link>.",
+    "poisonAdviceNone": "Myrkytysneuvonta",
+    "noLine": "Julkista myrkytysneuvonnan puhelinpalvelua ei voitu vahvistaa tässä maassa. Soita omalle lääkärille tai kiireellisessä tilanteessa hätänumeroon.",
+    "medicalAdvice": "Terveysneuvonta: {name}",
+    "animals": "Eläimet: {name}",
+    "animalsNone": "Eläimet",
+    "vet": "Soita eläinlääkärille.",
+    "checkedOn": "Tarkistettu sivuilta:",
+    "choosePrompt": "Valitse maa, niin sivulla näkyy, minne siellä soitetaan.",
+    "ministry": "Terveysministeriön sivu: <link>{name}</link>."
+  },
+  "density": {
+    "sg": "ominaispaino {value}",
+    "baume": "{value} °Bé ({sg})",
+    "pint": "{value} oz brittiläisessä pintissä ({sg})"
+  },
+  "shops": {
+    "shopsIn": "Kauppoja näissä maissa:",
+    "label": "Kaupat maassa {region}",
+    "caption": "Joitakin lasiteraaka-aineita myyviä kauppoja maassa {region} (tarkistettu {date})",
+    "nearbyCaption": "Muualla toimivia kauppoja, jotka ilmoittavat toimittavansa maahan {region} (tarkistettu {date})",
+    "shop": "Kauppa",
+    "sells": "Valikoima",
+    "packs": "Nähdyt pakkauskoot",
+    "seen": "Nähdyt raaka-aineet kaupan omilla nimillä",
+    "what": {
+      "materials": "lasiteraaka-aineet",
+      "frits": "fritit",
+      "oxides": "oksidit",
+      "stains": "väripigmentit",
+      "clays": "savet",
+      "glazes": "valmislasitteet",
+      "kilns": "keramiikkauunit"
+    },
+    "none": "Maasta {region} ei löytynyt yhtään lasiteraaka-aineita myyvää kauppaa.",
+    "unknown": "Kauppoja ei ole vielä etsitty maasta {region}.",
+    "choosePrompt": "Valitse maa, niin sivulla näkyvät sen kaupat."
+  },
+  "silica": {
+    "limitIn": "Raja-arvo maassa:",
+    "label": "Piidioksidipölyn raja-arvo maassa {region}",
+    "caption": "Hengitettävän kiteisen piidioksidipölyn raja-arvo työpaikoilla maassa {region}, 8 tunnin keskiarvo (tarkistettu {date})",
+    "both": "Kvartsi ja kristobaliitti",
+    "quartz": "Kvartsi",
+    "cristobalite": "Kristobaliitti",
+    "actionLevel": "Toimenpideraja",
+    "value": "{value} mg/m³",
+    "kind": {
+      "binding": "Sitova raja-arvo.",
+      "indicative": "Ohjeellinen raja-arvo: suuntaa antava arvo, ei laissa säädetty yläraja.",
+      "assessment": "Arviointiperuste, ei sitova raja-arvo."
+    },
+    "setBy": "Säädös: <link>{law}</link>.",
+    "lowerThanEu": "Alempi kuin EU:n sitova raja-arvo {value} mg/m³.",
+    "sameAsEu": "Sama kuin EU:n sitova raja-arvo.",
+    "unknown": "Maan {region} kansallista raja-arvoa ei voitu vahvistaa. EU:n sitova raja-arvo {value} mg/m³ on voimassa kaikissa jäsenvaltioissa.",
+    "noData": "Maan {region} raja-arvoa ei ole vielä vahvistettu.",
+    "agency": "Kansallinen työturvallisuudesta vastaava taho: <link>{name}</link>.",
+    "agencySilica": "Sen <link>sivu piidioksidista</link>.",
+    "choosePrompt": "Valitse maa, niin sivulla näkyy sen raja-arvo."
+  },
+  "food": {
+    "rulesIn": "Säännöt maassa:",
+    "label": "Keraamisten esineiden raja-arvot maassa {region}",
+    "caption": "Mitä poltetusta esineestä saa siirtyä lakisääteisessä testissä maassa {region} (tarkistettu {date})",
+    "article": "Esineen laji",
+    "lead": "Lyijy",
+    "cadmium": "Kadmium",
+    "category": {
+      "flat": "Esineet, joita ei voi täyttää nesteellä tai joiden sisäsyvyys on enintään 25 mm",
+      "fillable": "Muut nesteellä täytettävät esineet",
+      "cooking": "Kaikenkokoiset keittoastiat sekä pakkaus- ja säilytysastiat, joiden tilavuus on yli 3 L",
+      "rimBand": "Juoma-astian reuna: 2 cm:n vyöhyke sisä- ja ulkopuolelta",
+      "rimArticle": "Juoma-astian reuna: 20 mm:n vyöhyke yläreunan ulkopuolella, esinettä kohden",
+      "flatware": "Matalat astiat, syvyys enintään 25 mm",
+      "smallHollow": "Pienet syvät astiat, alle 1,1 L, muut kuin kupit ja mukit",
+      "cups": "Kupit ja mukit",
+      "largeHollow": "Suuret syvät astiat, vähintään 1,1 L, muut kuin kannut",
+      "pitchers": "Kannut",
+      "auSmall": "Kupit, mukit, kaadinkannut, kulhot, teekannut ja muut astiat, alle 1100 mL",
+      "auLarge": "Samat, vähintään 1100 mL",
+      "auPlates": "Lautaset, aluslautaset ja vastaavat astiat",
+      "auCooking": "Keittoastiat"
+    },
+    "judged": {
+      "average": "6 esineen keskiarvo",
+      "each": "jokainen 6 esineestä erikseen"
+    },
+    "euRules": "Maassa noudatetaan EU:n sääntöjä.",
+    "law": "Säädös: <link>{law}</link>.",
+    "inForce": "Voimassa {date} alkaen.",
+    "unknown": "Maan {region} sääntöjä ei ole vielä vahvistettu.",
+    "choosePrompt": "Valitse maa, niin sivulla näkyvät sen säännöt."
+  },
+  "equivalents": {
+    "buyingIn": "Ostomaat:",
+    "label": "{library, select, US {Yhdysvalloissa myytävät vastineet} UK {Isossa-Britanniassa myytävät vastineet} EU {EU:ssa myytävät vastineet} other {Australiassa ja Uudessa-Seelannissa myytävät vastineet}}",
+    "caption": "{library, select, US {Raaka-aineet, joita ei myydä Yhdysvalloissa, ja kunkin lähin siellä myytävä vastine} UK {Raaka-aineet, joita ei myydä Isossa-Britanniassa, ja kunkin lähin siellä myytävä vastine} EU {Raaka-aineet, joita ei myydä EU:ssa, ja kunkin lähin siellä myytävä vastine} other {Raaka-aineet, joita ei myydä Australiassa ja Uudessa-Seelannissa, ja kunkin lähin siellä myytävä vastine}}",
+    "material": "Reseptissä",
+    "soldIn": "Myynnissä",
+    "closest": "{library, select, US {Lähin Yhdysvalloissa myytävä} UK {Lähin Isossa-Britanniassa myytävä} EU {Lähin EU:ssa myytävä} other {Lähin Australiassa ja Uudessa-Seelannissa myytävä}}",
+    "apart": "eroaa {grams} g/100 g",
+    "noneClose": "Ei vastinetta, joka eroaisi enintään 15 g/100 g: vertaa kemiallista koostumusta.",
+    "loading": "Ladataan kirjastoa…",
+    "failed": "Kirjastoa ei voitu ladata. Yritä myöhemmin uudelleen.",
+    "choosePrompt": "Valitse maa, niin sivulla näkyy, mitä siellä myydään."
+  }
+}

@@ -82,6 +82,7 @@ export const MESSAGES = {
   'record-updated': `Successfully updated {label, select, ${ONE}}`,
   'record-invalid': `Invalid {label, select, ${ONE}}`,
   'record-deleted': `Successfully deleted {label, select, ${ONE}}`,
+  'account-limit': `An account can keep up to {limit} {label, select, ${MANY}}. Please remove some to save more.`,
 
   // Requests in general.
   'not-found': 'Not found',

@@ -1,4 +1,4 @@
-import { Component, computed, input, model } from '@angular/core';
+import { Component, computed, input, model, output } from '@angular/core';
 import { TranslocoDirective } from '@jsverse/transloco';
 import { Material } from '../../core/models';
 import { TryMaterial } from './pool';
@@ -55,7 +55,9 @@ let nextId = 0;
         [standard]="standard()"
         [inRecipe]="marked()"
         [hideLead]="hideLead()"
+        [standardFailed]="standardFailed()"
         (pick)="add($event)"
+        (retry)="retry.emit()"
       />
     </div>
   </ng-container>`
@@ -64,6 +66,9 @@ export class TryMaterials {
   readonly mine = input.required<Material[]>();
   readonly standard = input.required<Material[]>();
   readonly hideLead = input(false);
+  /** The standard list could not be fetched (see RecipeLibrary). */
+  readonly standardFailed = input(false);
+  readonly retry = output<void>();
   /** Keys of the recipe's own materials, marked rather than offered. */
   readonly inRecipe = input<ReadonlySet<string>>(new Set());
   /** What to say above the list, in the page's language; blank for the usual. */

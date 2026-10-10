@@ -472,6 +472,37 @@ Gender: (o) masculine, (a) feminine. **show English** marks the terms whose Engl
 | Trash                                                                                  | Lixo                                                                                        | Not built yet.                                                                                                                                                                                                                                                           |
 | Remove (Yes, remove), Delete my account                                                | Remover (Sim, remover), Eliminar a minha conta                                              | "This can't be undone." → "Esta ação não pode ser anulada." _eliminar_ and _anular_, never _excluir_ or _desfazer_.                                                                                                                                                      |
 
+### 2.9 Where the potter works
+
+Terms of the region parts of the guides (shops, the silica limit, food-contact rules, materials sold nearby), as
+the reviewed translation uses them. Names of shops, laws and agencies stay as they are written there.
+
+| English                                                               | Português                                                                       | Where                                         |
+| --------------------------------------------------------------------- | ------------------------------------------------------------------------------- | --------------------------------------------- |
+| Shops in (the label before a list of countries)                       | Lojas em                                                                        | guides: shops.shopsIn                         |
+| raw glaze materials (what a shop sells)                               | matérias-primas para vidrados                                                   | guides: shops.what.materials                  |
+| ready-made glazes                                                     | vidrados prontos                                                                | guides: shops.what.glazes                     |
+| Packs seen                                                            | Embalagens encontradas                                                          | guides: shops.packs                           |
+| A binding limit.                                                      | Um valor-limite vinculativo.                                                    | guides: silica.kind.binding                   |
+| An indicative limit: a guide value, not a legal ceiling.              | Um valor-limite indicativo: um valor de referência, não um teto legal.          | guides: silica.kind.indicative                |
+| An assessment criterion, not a binding limit. (Germany)               | Um critério de avaliação, não um valor-limite vinculativo.                      | guides: silica.kind.assessment                |
+| action level (US)                                                     | Nível de ação                                                                   | guides: silica.actionLevel                    |
+| quartz and cristobalite                                               | Quartzo e cristobalite                                                          | guides: silica.both                           |
+| The national body for safety at work: <link>{name}</link>.            | O organismo nacional de segurança no trabalho: <link>{name}</link>.             | guides: silica.agency                         |
+| Kind of piece (food-contact rules)                                    | Tipo de peça                                                                    | guides: food.article                          |
+| pieces that cannot be filled, or no deeper than 25 mm                 | Peças que não podem ser enchidas, ou com profundidade igual ou inferior a 25 mm | guides: food.category.flat                    |
+| other pieces that can be filled                                       | Outras peças que podem ser enchidas                                             | guides: food.category.fillable                |
+| cooking ware                                                          | Utensílios para cozinhar                                                        | guides: food.category.auCooking               |
+| The rim of a piece for drinking from: a 2 cm band, inside and out     | O bordo de um recipiente para beber: uma faixa de 2 cm, por dentro e por fora   | guides: food.category.rimBand                 |
+| Flatware, no deeper than 25 mm (US)                                   | Peças planas, até 25 mm de profundidade                                         | guides: food.category.flatware                |
+| Small hollowware, under 1.1 L, other than cups and mugs (US)          | Peças ocas pequenas, com menos de 1,1 L, exceto chávenas e canecas              | guides: food.category.smallHollow             |
+| Large hollowware, 1.1 L or more, other than pitchers (US)             | Peças ocas grandes, com 1,1 L ou mais, exceto jarros                            | guides: food.category.largeHollow             |
+| average of 6 pieces / any one of 6                                    | média de 6 peças / qualquer uma das 6                                           | guides: food.judged.average, food.judged.each |
+| Buying in (the label before a list of countries)                      | Onde compra                                                                     | guides: equivalents.buyingIn                  |
+| differs by {grams} g per 100 g                                        | difere em {grams} g por 100 g                                                   | guides: equivalents.apart                     |
+| Directive 84/500/EEC (its official name)                              | Diretiva 84/500/CEE (alterada pela Diretiva 2005/31/CE)                         | regions: the directive                        |
+| Latvia's law gives this limit for the inhalable fraction of the dust. | A lei da Letónia indica este valor-limite para a fração inalável da poeira.     | regions: Latvia                               |
+
 ## 3. Never translated
 
 - **Formulas and symbols:** SiO₂, Al₂O₃, B₂O₃, K₂O, Na₂O, Li₂O, CaO, MgO, BaO, SrO, ZnO, PbO, Fe₂O₃, FeO, Fe₃O₄, TiO₂,

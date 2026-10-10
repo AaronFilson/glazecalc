@@ -1,0 +1,50 @@
+{
+  "common": {
+    "formulaHelp": "Upišite formulu običnim brojkama, na primjer {typed}: brojevi se prikazuju kao indeksi, {shown}. Za spajanje dijelova formule, kao u {joined}, kopirajte ovu točku:",
+    "relatedTo": "Povezano s:",
+    "notes": "Napomene:",
+    "loi": "Gubitak žarenjem – LOI (postotak):",
+    "molecularWeight": "Molekulska masa sirove formule (koristi se samo ako je polje LOI prazno):",
+    "formulaHeading": "Unesite formulu (nakon pečenja):",
+    "oxideSelection": "Odabir oksida",
+    "noOxide": "nijedan",
+    "addOxide": "Dodaj oksid na popis",
+    "formulaIn": "Formula je zadana kao:",
+    "percent": "Postotak",
+    "molecular": "Molarno / Segerova formula",
+    "amount": "Količina:",
+    "removeOxide": "Ukloni s popisa formule",
+    "save": "Spremi",
+    "elements": "Elementi",
+    "removeNote": "Spremljeni recepti čuvaju vlastitu kopiju, pa se neće promijeniti.",
+    "saveFailed": "Pogreška: zahtjev poslužitelju nije uspio."
+  },
+  "material": {
+    "title": "Sirovine",
+    "lead": "Vaše vlastite sirovine, unesene kao kemijska formula ili oksidna analiza.",
+    "newHeading": "Unesite podatke o novoj sirovini",
+    "name": "Naziv sirovine:",
+    "rawFormula": "Sirova formula:",
+    "weightsNote": "Ekvivalentna masa i masa nakon pečenja izračunavaju se pri spremanju, iz formule i gubitka žarenjem (LOI).",
+    "mineHeading": "Moje sirovine:",
+    "rawFormulaColumn": "Sirova formula",
+    "standardHeading": "Standardne sirovine:",
+    "fetchFailed": "Došlo je do pogreške pri dohvaćanju podataka o sirovinama.",
+    "standardFetchFailed": "Došlo je do pogreške pri dohvaćanju podataka o standardnim sirovinama.",
+    "saved": "Uspješno. Sirovina je dodana u bazu podataka."
+  },
+  "additive": {
+    "title": "Dodaci i bojila",
+    "lead": "Bojila i zamućivači koji se odmjeravaju povrh osnovnog recepta, poput kobaltnog ili kositrova oksida. Recept ih može izostaviti iz Segerove formule (UMF) ili ih uračunati u nju.",
+    "newHeading": "Unesite podatke o novom dodatku",
+    "name": "Naziv dodatka:",
+    "formulaAsSold": "Formula, kako se prodaje:",
+    "noChemistry": "Nema oksidne analize, kao na primjer komercijalni keramički pigment: izostavi ga iz Segerove formule",
+    "firedNote": "Unesite ono što daje glazuri nakon pečenja: crni kobaltni oksid, {asSold}, pečenjem postaje {fired}, uz gubitak žarenjem od {loi} %. Recept ga tada može uračunati u Segerovu formulu.",
+    "mineHeading": "Moji dodaci i bojila:",
+    "standardHeading": "Standardni dodaci:",
+    "fetchFailed": "Došlo je do pogreške pri dohvaćanju podataka o dodacima.",
+    "standardFetchFailed": "Došlo je do pogreške pri dohvaćanju podataka o standardnim dodacima.",
+    "saved": "Uspješno. Dodatak je dodan u bazu podataka."
+  }
+}

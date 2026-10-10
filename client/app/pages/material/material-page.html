@@ -3,7 +3,7 @@
   <gc-notices [notices]="notices" />
 
   <section class="inputbox">
-    <h3>{{ t('library.material.newHeading') }}</h3>
+    <h2 class="h3">{{ t('library.material.newHeading') }}</h2>
     <p>
       {{ t('library.common.formulaHelp', { typed: 'CaCO3', shown: 'CaCO₃', joined: 'Al₂O₃•2SiO₂•2H₂O' }) }}
       <span class="large">•</span>
@@ -39,15 +39,24 @@
       <div class="row">
         <div class="col-xl-4 col-md-4 col-8">
           <label for="LOI">{{ t('library.common.loi') }} </label>
-          <input id="LOI" type="text" name="loi" [(ngModel)]="form.loi" [gcField]="form.checks" gcFieldName="loi" />
+          <input
+            id="LOI"
+            type="text"
+            inputmode="decimal"
+            [gcNumber]="form.loi()"
+            (gcNumberChange)="form.loi.set($event)"
+            [gcField]="form.checks"
+            gcFieldName="loi"
+          />
         </div>
         <div class="col-xl-4 col-md-4 col-8">
           <label for="manualmolecularweight">{{ t('library.common.molecularWeight') }} </label>
           <input
             id="manualmolecularweight"
             type="text"
-            name="molecularweight"
-            [(ngModel)]="form.molecularweight"
+            inputmode="decimal"
+            [gcNumber]="form.molecularweight()"
+            (gcNumberChange)="form.molecularweight.set($event)"
             [gcField]="form.checks"
             gcFieldName="molecularweight"
           />
@@ -55,7 +64,7 @@
       </div>
       <p>{{ t('library.material.weightsNote') }}</p>
 
-      <h4>{{ t('library.common.formulaHeading') }}</h4>
+      <h3 class="h4">{{ t('library.common.formulaHeading') }}</h3>
       <div class="row">
         <div class="col-lg-6">
           <label for="firedoxide">{{ t('library.common.oxideSelection') }}</label>
@@ -114,11 +123,12 @@
                   <input
                     [id]="'oxide-amount-' + $index"
                     type="text"
-                    [name]="'amount' + $index"
+                    inputmode="decimal"
                     class="oxide-amount"
                     [gcField]="form.checks"
                     [gcFieldName]="'amount-' + $index"
-                    [(ngModel)]="line.amount"
+                    [gcNumber]="line.amount"
+                    (gcNumberChange)="form.setAmount($index, $event)"
                   />
                 </p>
                 <button type="button" class="btn btn-light border" (click)="form.removeOxide($index)">
@@ -142,7 +152,7 @@
 
   @if (myMaterials().length) {
     <section class="tech-info" aria-labelledby="my-materials-heading">
-      <h4 id="my-materials-heading">{{ t('library.material.mineHeading') }}</h4>
+      <h2 class="h4" id="my-materials-heading">{{ t('library.material.mineHeading') }}</h2>
       <table class="table table-bordered">
         <thead>
           <tr>
@@ -169,9 +179,9 @@
                   />
                 </div>
               </td>
-              <td>{{ mat.equivalent }}</td>
-              <td>{{ mat.formulaweight }}</td>
-              <td>{{ firstOf(mat.notes) }}</td>
+              <td>{{ mat.equivalent | gcPlain }}</td>
+              <td>{{ mat.formulaweight | gcPlain }}</td>
+              <td class="keep-lines">{{ firstOf(mat.notes) }}</td>
               <td translate="no">{{ fieldsText(mat) }}</td>
               <td translate="no">{{ formatFormula(mat.rawformula) }}</td>
             </tr>
@@ -183,7 +193,12 @@
   }
 
   <section class="tech-info" aria-labelledby="standard-materials-heading">
-    <h4 id="standard-materials-heading">{{ t('library.material.standardHeading') }}</h4>
-    <gc-standard-list [records]="standardMaterials()" noun="materials" />
+    <h2 class="h4" id="standard-materials-heading">{{ t('library.material.standardHeading') }}</h2>
+    <gc-standard-list
+      [records]="standardMaterials()"
+      noun="materials"
+      [failed]="standardFailed()"
+      (retry)="loadStandard()"
+    />
   </section>
 </ng-container>

@@ -66,6 +66,7 @@ export class AuthService {
 
   private readonly session = signal<SessionKind | null>(readStoredSession());
   private checked: Promise<void> | null = null;
+  private readonly onEnd: Array<() => void> = [];
 
   /** Whether this browser has a session (an account's or a trial's), as far as the app knows. */
   readonly hasSession = computed(() => this.session() !== null);
@@ -78,6 +79,8 @@ export class AuthService {
   readonly trial = signal<Trial | null>(readStoredTrial());
   /** Set when a trial runs out, so the start page can say so. */
   readonly trialEnded = signal(false);
+  /** The title of a recipe whose changes were not saved when the session ended, so the next page can say so. */
+  readonly lostRecipe = signal<string | null>(null);
   /** What to call the user: their email, or their trial's name. */
   readonly displayName = computed(() => this.email() ?? this.trial()?.name ?? null);
 
@@ -197,6 +200,11 @@ export class AuthService {
     }
   }
 
+  /** Calls `then` each time the session on this browser ends: signed out, run out, discarded or deleted. */
+  onSessionEnd(then: () => void): void {
+    this.onEnd.push(then);
+  }
+
   /**
    * The server no longer accepts this browser's session (it expired, the
    * password changed elsewhere, or the trial ran out): forget it, and for a
@@ -222,10 +230,14 @@ export class AuthService {
     this.setSession(null);
     this.email.set(null);
     this.setTrial(null);
+    for (const then of this.onEnd) then();
   }
 
   private setSession(kind: SessionKind | null): void {
-    if (kind) this.trialEnded.set(false);
+    if (kind) {
+      this.trialEnded.set(false);
+      this.lostRecipe.set(null);
+    }
     this.session.set(kind);
     this.sessionVersion.update((v) => v + 1);
     store(SESSION_KEY, kind);

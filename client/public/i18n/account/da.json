@@ -1,0 +1,237 @@
+{
+  "auth": {
+    "signInHeading": "Log ind",
+    "keepHeading": "Behold arbejdet",
+    "signUpHeading": "Opret en konto",
+    "signInLead": "Velkommen tilbage til glasurnotesbogen.",
+    "keepLead": "Behold alt, hvad du har lavet som {name}: Tilføj e-mail og en adgangskode. Det forbliver gratis.",
+    "signUpLead": "Gratis. Opskrifter, råvarer og noter forbliver private på kontoen.",
+    "trialNote": "Har du allerede en konto? Når du logger ind, flyttes det, du har lavet som {name}, over i den. Ny her? <signup>Opret en konto</signup> for at beholde det i stedet.",
+    "email": "E-mail",
+    "password": "Adgangskode",
+    "passwordHint": "Mindst 8 tegn.",
+    "confirmation": "Bekræft adgangskode",
+    "passwordMissing": "Angiv adgangskoden.",
+    "createAccount": "Opret konto",
+    "signIn": "Log ind",
+    "haveAccount": "Har du allerede en konto? <signin>Log ind</signin>",
+    "forgot": "Glemt adgangskoden? Nulstil den",
+    "newHere": "Ny her? <signup>Opret en gratis konto</signup>",
+    "signUpFailed": "Fejl: Kontoen kunne ikke oprettes.",
+    "signInFailed": "Fejl: Login mislykkedes."
+  },
+  "forgot": {
+    "heading": "Nulstil adgangskoden",
+    "checkInbox": "Tjek indbakken og spammappen. Hvis der ikke kommer noget, så kontrollér adressen, og bed om det igen.",
+    "intro": "Angiv e-mailadressen til kontoen, så sender vi et link, hvor du kan vælge en ny adgangskode.",
+    "email": "E-mail:",
+    "send": "Send link til nulstilling",
+    "back": "Tilbage til login",
+    "failed": "Fejl: Mailen til nulstilling kunne ikke sendes. Prøv igen."
+  },
+  "reset": {
+    "heading": "Vælg en ny adgangskode",
+    "signIn": "Log ind",
+    "incomplete": "Denne side kræver linket fra en mail om nulstilling af adgangskode, og dette link er ufuldstændigt.",
+    "askAgain": "Bed om et nyt link",
+    "password": "Ny adgangskode:",
+    "confirmation": "Bekræft ny adgangskode:",
+    "save": "Gem ny adgangskode",
+    "hint": "Mindst 8 tegn. Alle enheder, der er logget ind på kontoen, bliver logget ud.",
+    "failed": "Fejl: Adgangskoden kunne ikke ændres. Prøv igen."
+  },
+  "account": {
+    "trialTitle": "Prøveperioden",
+    "trialLead": "Du prøver Glazecalc som {name}.",
+    "keepHeading": "Behold arbejdet",
+    "keepText": "Prøveperioden og alt i den fjernes {date}. Opret en gratis konto for at beholde dem: Opskrifter, råvarer og noter forbliver præcis, som de er, og {name} forbliver dit viste navn.",
+    "createAccount": "Opret en konto",
+    "title": "Kontoen",
+    "signedInAs": "Logget ind som {email}.",
+    "changeHeading": "Skift adgangskoden",
+    "current": "Nuværende adgangskode",
+    "currentMissing": "Angiv den nuværende adgangskode.",
+    "password": "Ny adgangskode",
+    "passwordHint": "Mindst 8 tegn. Andre enheder, der er logget ind på kontoen, bliver logget ud.",
+    "confirmation": "Bekræft ny adgangskode",
+    "change": "Skift adgangskode",
+    "changeFailed": "Fejl: Adgangskoden kunne ikke ændres. Prøv igen.",
+    "deleteHeading": "Slet kontoen",
+    "deleteText": "Dette fjerner kontoen og alt, hvad der er gemt: opskrifter, råvarer, tilsætninger, noter, brændingsjournaler og råd. Det kan ikke fortrydes.",
+    "deletePassword": "Adgangskode til bekræftelse",
+    "deletePasswordMissing": "Angiv adgangskoden for at bekræfte.",
+    "delete": "Slet min konto",
+    "deleteFailed": "Fejl: Kontoen kunne ikke slettes. Prøv igen."
+  },
+  "settings": {
+    "heading": "Indstillinger",
+    "intro": "Gemmes med kontoen, så de gælder på alle enheder.",
+    "saveFailed": "Indstillingen kunne ikke gemmes. Prøv igen.",
+    "language": {
+      "legend": "Sprog",
+      "help": "Sproget i appen, i vejledningerne og i e-mails til dig. Når det ændres, åbnes denne side på det valgte sprog.",
+      "saved": "Gemt: {language}."
+    },
+    "region": {
+      "legend": "Hvor værkstedet ligger",
+      "none": {
+        "label": "Ikke valgt",
+        "saved": "Gemt: ingen region valgt; standardvalgene følger browseren."
+      },
+      "saved": "Gemt: {region}.",
+      "help": "De råvarer, der sælges der, og standardvalgene for tal, datoer, temperaturer og kegler nedenfor. Indtil en region er valgt, følger de browserens sprog."
+    },
+    "format": {
+      "legend": "Tal og datoer",
+      "auto": {
+        "label": "Som mit sprog og min region",
+        "saved": "Gemt: tal og datoer skrives som på dit sprog og i din region."
+      },
+      "saved": "Gemt: tal og datoer som på {language}.",
+      "help": "Hvordan tal og datoer skrives: 12,345.6 eller 12.345,6 og rækkefølgen af dag og måned."
+    },
+    "decimalMark": {
+      "legend": "Indtastning af mængder",
+      "either": {
+        "label": "Komma eller punktum som decimaltegn",
+        "example": "12,5 eller 12.5",
+        "saved": "Gemt: mængder kan indtastes med komma eller punktum."
+      },
+      "comma": {
+        "label": "Komma som decimaltegn",
+        "saved": "Gemt: mængder indtastes med komma som decimaltegn."
+      },
+      "point": {
+        "label": "Punktum som decimaltegn",
+        "saved": "Gemt: mængder indtastes med punktum som decimaltegn."
+      },
+      "help": "Med »Komma eller punktum som decimaltegn« læses en mængde som 1.250 på samme måde, som tallene skrives ifølge indstillingen ovenfor."
+    },
+    "temperature": {
+      "legend": "Temperaturer",
+      "celsius": {
+        "label": "Celsius",
+        "saved": "Gemt: temperaturer i °C."
+      },
+      "fahrenheit": {
+        "label": "Fahrenheit",
+        "saved": "Gemt: temperaturer i °F."
+      },
+      "help": "Indtil der er truffet et valg, følger indstillingen regionen: °F i USA, °C alle andre steder."
+    },
+    "cones": {
+      "legend": "Brænding",
+      "orton": {
+        "label": "Efter Ortonkegler",
+        "example": "kegle 04, kegle 6",
+        "saved": "Gemt: brænding efter Ortonkegler."
+      },
+      "temperature": {
+        "label": "Efter temperatur, som i en ovnstyrings program",
+        "saved": "Gemt: brænding efter temperatur."
+      },
+      "help": "Indtil der er truffet et valg, følger indstillingen regionen: Ortonkegler i USA, Storbritannien, Irland, Australien og New Zealand, temperatur i resten af Europa."
+    },
+    "density": {
+      "legend": "Glasurens tykkelse",
+      "sg": {
+        "label": "Massefylde",
+        "saved": "Gemt: glasurens tykkelse angives som massefylde.",
+        "example": "1,45"
+      },
+      "baume": {
+        "label": "Grader Baumé (flydetal), målt med flydevægt",
+        "saved": "Gemt: glasurens tykkelse angives i grader Baumé."
+      },
+      "pint": {
+        "label": "Pintvægt: unser i en britisk pint",
+        "saved": "Gemt: glasurens tykkelse angives som pintvægt."
+      },
+      "help": "Hvordan vejledningerne angiver glasurens tykkelse. Indtil der er truffet et valg, følger indstillingen regionen: grader Baumé i Italien, massefylde alle andre steder."
+    },
+    "theme": {
+      "legend": "Lys eller mørk",
+      "system": {
+        "label": "Som enheden er indstillet",
+        "saved": "Gemt: lys eller mørk, som hver enhed er indstillet."
+      },
+      "light": {
+        "label": "Lys",
+        "saved": "Gemt: altid lys."
+      },
+      "dark": {
+        "label": "Mørk",
+        "saved": "Gemt: altid mørk."
+      },
+      "help": "Udskrevne opskrifter er altid sort på hvidt."
+    },
+    "palette": {
+      "legend": "Farver",
+      "saved": "Gemt: knapper og links i {palette}.",
+      "help": "Til knapper, links og faner, opkaldt efter glasurer. Hver af dem er let at læse i både lys og mørk visning."
+    },
+    "weightUnit": {
+      "legend": "Vægtenhed for portioner",
+      "grams": {
+        "label": "Gram",
+        "saved": "Gemt: portionsvægte i gram."
+      },
+      "pounds": {
+        "label": "Pund og unser",
+        "saved": "Gemt: portionsvægte i pund og unser."
+      },
+      "help": "Til udskrevne portioner."
+    },
+    "gramPrecision": {
+      "legend": "Gram på udskrevne portioner",
+      "single": {
+        "label": "Med én decimal",
+        "saved": "Gemt: gram vises med én decimal."
+      },
+      "full": {
+        "label": "Fuld præcision",
+        "saved": "Gemt: gram vises fuldt ud, med 5 decimaler."
+      },
+      "help": "Med én decimal vises mængder under 10 g stadig med hundrededele (2,35 g), af hensyn til farvestoffer i små prøveportioner."
+    },
+    "lead": {
+      "legend": "Bly",
+      "off": {
+        "label": "Fra: bly tilføjes aldrig til en opskrift og foreslås aldrig",
+        "saved": "Gemt: bly tilføjes aldrig til en opskrift og foreslås aldrig."
+      },
+      "on": {
+        "label": "Til: råvarer med bly kan tilføjes og foreslås",
+        "saved": "Gemt: råvarer med bly kan tilføjes og foreslås."
+      },
+      "help": "Bly er giftigt at indånde eller sluge og ophobes i kroppen, og en blyglasur kan afgive det til mad og drikke; ingen beregning kan afgøre, om et brændt emne gør det. Med »Fra« åbnes opskrifter, der allerede indeholder bly, stadig, som de var.",
+      "warning": "Brug kun bly som fritte, aldrig ufrittet som mønje, blyhvidt, gult blyoxid eller blyglød. Bland det vådt, sprøjt det aldrig, bær åndedrætsværn, og brug vådrengøring. Hold blyglaseret gods væk fra mad og drikke, medmindre det brændte emne har bestået en migrationstest i et laboratorium.",
+      "turnOn": "Slå bly til",
+      "keepOff": "Lad det være fra"
+    },
+    "englishTerms": {
+      "legend": "Engelske fagudtryk",
+      "off": {
+        "label": "Fra",
+        "saved": "Gemt: ingen engelske fagudtryk."
+      },
+      "on": {
+        "label": "Vis det engelske udtryk efter vigtige fagudtryk",
+        "saved": "Gemt: det engelske udtryk vises efter vigtige fagudtryk."
+      },
+      "help": "Til at læse engelske kilder, fx Digitalfire, ved siden af denne: Vigtige fagudtryk får det engelske udtryk i parentes."
+    },
+    "notice": {
+      "legend": "Note om oversættelsen",
+      "shown": {
+        "label": "Vist",
+        "saved": "Gemt: noten vises."
+      },
+      "hidden": {
+        "label": "Skjult",
+        "saved": "Gemt: noten er skjult. En linje af den bliver stående i sikkerhedsvejledningerne."
+      },
+      "help": "Noten øverst på hver side om, at siden er oversat af AI, med mulighed for at foreslå en rettelse."
+    }
+  }
+}

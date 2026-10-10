@@ -52,6 +52,9 @@
     "keepTrying": "Weiter testen",
     "discardFailed": "Der Testzugang konnte nicht verworfen werden. Bitte versuchen Sie es erneut."
   },
+  "signedOut": {
+    "recipeLost": "Sie wurden abgemeldet, bevor Ihre Änderungen an „{title}“ gespeichert waren. Diese Änderungen sind verloren gegangen."
+  },
   "footer": {
     "site": "Website",
     "about": "Über Glazecalc",
@@ -70,7 +73,8 @@
     "notANumberPoint": "Geben Sie eine Zahl ein, zum Beispiel {example}, mit Punkt als Dezimalzeichen."
   },
   "meta": {
-    "description": "Glasurrezept eingeben: Segerformel (UMF), Kieselsäure-Tonerde-Verhältnis und Flussmittel. Gratis und Open Source, für Rezepte, Rohstoffe und Brennprotokolle."
+    "description": "Glasurrezept eingeben: Segerformel (UMF), Kieselsäure-Tonerde-Verhältnis und Flussmittel. Gratis und Open Source, für Rezepte, Rohstoffe und Brennprotokolle.",
+    "imageAlt": "Glazecalc: Verstehen Sie Ihre Glasuren, statt sie nur anzurühren."
   },
   "notices": {
     "dismiss": "Schließen",
@@ -222,7 +226,8 @@
     "noChemistry": "Keine Analyse: nicht in der Segerformel",
     "countedAs": "Gezählt als {name}",
     "nothingMatches": "Keine Treffer. Versuchen Sie einen anderen Namen, eine andere Art oder Region.",
-    "loading": "Wird geladen …"
+    "loading": "Wird geladen …",
+    "notFetched": "Die Liste konnte nicht geladen werden. <retry>Erneut versuchen</retry>"
   },
   "chemistryForm": {
     "name": "{noun, select, additive {Geben Sie dem Zusatz einen Namen.} other {Geben Sie dem Rohstoff einen Namen.}}",

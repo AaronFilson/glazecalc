@@ -184,7 +184,7 @@ describe('trial accounts', () => {
     expect(mail.to(placeholder)).to.eql([]);
   });
 
-  it('caps the records a trial keeps, but not an account', async () => {
+  it("caps the records a trial keeps, apart from an account's", async () => {
     const trial = await startTrial();
     const user = await realUser();
     await withEnv('GUEST_MAX_RECORDS', '2', async () => {
@@ -196,6 +196,34 @@ describe('trial accounts', () => {
       // Other kinds have their own count.
       expect(await addRecipe(trial.token)).to.have.status(200);
       for (let i = 0; i < 3; i++) expect(await addNote(user.generateToken())).to.have.status(200);
+    });
+  });
+
+  it('caps the records an account keeps too, each kind on its own, but not by the trial cap', async () => {
+    const { user, token } = await makeUser();
+    const trial = await startTrial();
+    await withEnv('ACCOUNT_MAX_RECORDS', '2', async () => {
+      const first = await addNote(token);
+      expect(first).to.have.status(200);
+      expect(await addNote(token)).to.have.status(200);
+      const third = await addNote(token);
+      expect(third).to.have.status(403);
+      expect(third.body).to.eql({
+        code: 'account-limit',
+        msg: 'An account can keep up to 2 notes. Please remove some to save more.',
+        params: { limit: 2, label: 'note' }
+      });
+      expect(await Note.countDocuments({ ownedBy: String(user._id) })).to.eql(2);
+      // Other kinds have their own count.
+      expect(await addRecipe(token)).to.have.status(200);
+      // A removed record makes room.
+      const removed = await api()
+        .delete('/notes/delete/' + (first.body as { _id: string })._id)
+        .set('Authorization', 'Bearer ' + token);
+      expect(removed).to.have.status(200);
+      expect(await addNote(token)).to.have.status(200);
+      // A trial keeps its own cap.
+      for (let i = 0; i < 3; i++) expect(await addNote(trial.token)).to.have.status(200);
     });
   });
 
@@ -386,6 +414,29 @@ describe('trial accounts', () => {
     expect(await User.findById(activeId)).to.not.eql(null);
     expect(await User.findById(user._id)).to.not.eql(null);
     expect(await sweeper.sweepExpiredGuests()).to.eql(0);
+  });
+
+  it('never removes a trial claimed after the sweep listed it', async () => {
+    const trial = await startTrial();
+    expect(await addRecipe(trial.token)).to.have.status(200);
+    const id = await idOf(trial.token);
+    const claim = await api()
+      .post('/guest/claim')
+      .set('Authorization', 'Bearer ' + trial.token)
+      .send({ email: 'swept' + Date.now() + '@tester.com', password: 'long-enough-1' });
+    expect(claim).to.have.status(200);
+    // As if the sweep had listed it as an expired trial the moment before the claim.
+    const find = User.find;
+    User.find = (() => ({
+      select: () => ({ limit: () => ({ lean: () => Promise.resolve([{ _id: id }]) }) })
+    })) as unknown as typeof User.find;
+    try {
+      expect(await sweeper.sweepExpiredGuests(new Date(Date.now() + 30 * DAY))).to.eql(0);
+    } finally {
+      User.find = find;
+    }
+    expect(await User.findById(id)).to.not.eql(null);
+    expect(await Recipe.countDocuments({ ownedBy: id })).to.eql(1);
   });
 
   it('sweeps when the server starts, then every hour, without keeping the process alive', async () => {

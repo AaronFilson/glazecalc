@@ -121,6 +121,28 @@ describe('trying modern materials', () => {
     expect(modernMaterials(recipe, find, 'US').swaps[0].to).toBe('G-200 EU Feldspar');
     expect(modernMaterials(recipe, find, 'UK').swaps[0].to).toBe('Potash feldspar (UK)');
   });
+
+  it('keeps an old colorant whose substitute is an additive, and says where it went', () => {
+    const bichromate: LibraryMaterial = {
+      _id: 'b',
+      name: 'Potassium Bichromate',
+      percentmole: 'molecular',
+      loi: 16.32,
+      fields: [],
+      category: 'colorant',
+      status: 'historical',
+      substitutes: ['Chromium Oxide']
+    };
+    const chrome = { name: 'Chromium Oxide', category: 'colorant', status: 'current' as const };
+    const lines: RecipeMaterial[] = [{ ...bichromate, amount: '2' }];
+    // Among the materials there is no chromium; among the additives there is.
+    const findMaterial = (name: string) => (name === bichromate.name ? bichromate : undefined);
+    const findAdditive = (name: string) => (name === chrome.name ? chrome : undefined);
+    const { materials, swaps, colorants } = modernMaterials(lines, findMaterial, '', { findAdditive });
+    expect(materials.map((m) => m.name)).toEqual(['Potassium Bichromate']);
+    expect(swaps).toEqual([]);
+    expect(colorants).toEqual([{ from: 'Potassium Bichromate', status: 'Historical', to: 'Chromium Oxide' }]);
+  });
 });
 
 describe('like for like', () => {

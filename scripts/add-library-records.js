@@ -12,8 +12,10 @@
 //     loi, otherComponents: { F: 1.5 }, rawformula, notes, hazards }
 // The analysis is fired oxides by weight; with the LOI and other components it
 // must come to 100% within 2%. The chemistry is worked out as the materials
-// page does. A record whose name, or one of its other names, is already in the
-// library is left out; other names already taken are dropped; cross-references
+// page does. discontinuedSince is a year, such as 2023: the app puts it into a
+// sentence in each language, so "by 2016" and the like go in the notes. A
+// record whose name, or one of its other names, is already in the library is
+// left out; other names already taken are dropped; cross-references
 // (replaces, substitutes) that name no record are dropped, with a note.
 const fs = require('node:fs');
 const path = require('node:path');
@@ -87,6 +89,8 @@ function toRecord(entry, problems) {
   if (!CATEGORIES.includes(entry.category)) problems.push(`unknown category ${entry.category}`);
   for (const region of entry.region ?? []) if (!REGIONS.includes(region)) problems.push(`unknown region ${region}`);
   if (entry.status && !STATUSES.includes(entry.status)) problems.push(`unknown status ${entry.status}`);
+  if (entry.discontinuedSince && !/^\d{4}$/.test(String(entry.discontinuedSince)))
+    problems.push(`discontinuedSince "${entry.discontinuedSince}" is not a year: say the rest in the notes`);
   if (!entry.source?.name || !SOURCE_KINDS.includes(entry.source.type)) problems.push('no source, or an unknown kind');
   if (problems.length) return null;
 

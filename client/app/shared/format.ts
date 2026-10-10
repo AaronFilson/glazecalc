@@ -155,7 +155,17 @@ export function toPlain(typed: string, mark: DecimalMark = typedDecimalMark(), l
   const number = parseNumber(typed, mark, locale);
   if (number === null) return typed;
   const plain = String(number);
-  return plain.includes('e') ? String(Number(number.toFixed(10))) : plain;
+  // Digits, never "1e-7": a tiny number is kept to 10 places.
+  return plain.includes('e') && Math.abs(number) < 1 ? number.toFixed(10).replace(/\.?0+$/, '') : plain;
+}
+
+/**
+ * A number saved plainly ("12.5", "-3"), as toPlain writes one; null for
+ * anything else, such as "12,5", "1e3" or "0x10" (which Number() would read).
+ */
+export function plainNumber(text: string | number | null | undefined): number | null {
+  const plain = String(text ?? '').trim();
+  return /^-?\d*\.?\d+$/.test(plain) ? Number(plain) : null;
 }
 
 /** What to say when typed text is not a number: with the decimal mark Settings allow. */
@@ -166,9 +176,16 @@ export function notANumber(mark: DecimalMark = typedDecimalMark()): string {
   return translate('numbers.notANumber', { example });
 }
 
-/** A list in prose, as the reader's language joins one: "potash, soda and alumina"; with 'unit', "A, B, C". */
+/**
+ * The locale lists are joined in: the page's language, as the reader's region
+ * writes it ("A, B and C" in the UK), whatever format of numbers is chosen, so
+ * a German sentence joins its list with "und".
+ */
+export const listLocale = signal('en');
+
+/** A list in prose, as the page's language joins one: "potash, soda and alumina"; with 'unit', "A, B, C". */
 export function listOf(items: readonly string[], type: 'conjunction' | 'unit' = 'conjunction'): string {
-  return new Intl.ListFormat(formatLocale(), { style: type === 'unit' ? 'short' : 'long', type }).format(items);
+  return new Intl.ListFormat(listLocale(), { style: type === 'unit' ? 'short' : 'long', type }).format(items);
 }
 
 /** A saved plain number ("12.50") written for the reader, keeping its decimals ("12,50"); other text as it is. */

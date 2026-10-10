@@ -1,8 +1,11 @@
 # Local Docker on WSL Debian
 
-Plan for running Docker Engine in a WSL Debian distro on Windows 10, set up the
-same way as the EC2 Debian production server. Started 2026-10-04 on the
-`building10-4` branch.
+Notes from setting up Docker Engine in a WSL Debian distro on the author's
+Windows 10 machine, the same way as the EC2 Debian production server. Started
+2026-10-04 on the `building10-4` branch, and kept as a record: the paths, user
+name and helper scripts in `D:\WSL` are that machine's and are not in the
+repository. Step 3 gives the commands the setup script ran, to use on your own
+machine. `npm run test:e2e:linux` needs only Docker Engine working inside WSL.
 
 ## Status
 
@@ -44,26 +47,36 @@ same way as the EC2 Debian production server. Started 2026-10-04 on the
    wsl --install Debian --location D:\WSL\Debian --no-launch
    ```
 
-3. Run the setup script as root, then restart the distro:
+3. Set up Docker as root (`wsl -d Debian -u root`), with your Linux user name
+   for `<you>`, then restart the distro (`wsl --terminate Debian`). The setup
+   script (`D:\WSL\setup-docker.sh`, not in the repository) did this:
+   - creates the user with sudo and makes it the default:
+     `useradd -m -s /bin/bash -G sudo <you>`, and in `/etc/wsl.conf`:
 
-   ```powershell
-   wsl -d Debian -u root -- bash /mnt/d/WSL/setup-docker.sh bellows
-   wsl --terminate Debian
-   ```
+     ```ini
+     [boot]
+     systemd=true
 
-   The script:
-   - creates a `bellows` user with sudo and makes it the default user;
-   - turns on systemd in `/etc/wsl.conf`, so Docker runs as a service;
+     [user]
+     default=<you>
+     ```
+
+     systemd lets Docker run as a service;
+
    - removes unofficial Docker packages, then installs `docker-ce`,
      `docker-ce-cli`, `containerd.io`, `docker-buildx-plugin` and
-     `docker-compose-plugin` from Docker's apt repository;
-   - caps container logs at 3 files of 10 MB in `/etc/docker/daemon.json`;
-   - adds `bellows` to the `docker` group (note: that group is root-equivalent).
+     `docker-compose-plugin` from Docker's apt repository, as
+     [Install Docker Engine on Debian](https://docs.docker.com/engine/install/debian/)
+     describes;
+   - caps container logs at 3 files of 10 MB in `/etc/docker/daemon.json`:
+     `{ "log-driver": "json-file", "log-opts": { "max-size": "10m", "max-file": "3" } }`;
+   - adds the user to the `docker` group: `usermod -aG docker <you>` (note: that
+     group is root-equivalent).
 
 4. Set the Linux password yourself:
 
    ```powershell
-   wsl -d Debian -u root passwd bellows
+   wsl -d Debian -u root passwd <you>
    ```
 
 5. Verify:
@@ -88,12 +101,12 @@ same way as the EC2 Debian production server. Started 2026-10-04 on the
 file=...`, `compact vdisk`). Try `--set-sparse true` again after future WSL
    updates.
 
-7. Project Docker files (next piece of work):
+7. Project Docker files (done; the files themselves are current):
    - multi-stage `Dockerfile` on `node:24-slim` (Debian-based, which bcrypt's
      prebuilt binaries need): build the Angular client, then a small runtime
      image running the single `server/main.ts`;
    - runs as the image's non-root `node` user with `NODE_ENV=production`;
-   - `HEALTHCHECK` on `/api/verify`;
+   - `HEALTHCHECK` on `/api/health` (planned on `/api/verify` at first);
    - `.dockerignore` excluding `node_modules`, `db`, `dist` and `.env`;
    - `compose.yaml` with the app plus `mongo:9.0` and a named volume;
      `APP_SECRET` supplied at run time, never baked into the image;
@@ -139,7 +152,9 @@ The same Docker packages and repository as the setup script, plus:
 - `restart: unless-stopped`, so containers come back after reboots and Docker
   upgrades;
 - keep the existing apt-installed MongoDB at first and connect the app container
-  to it; moving the database into a container is a separate, later step.
+  to it; moving the database into a container is a separate, later step. (Not
+  what was done: production runs MongoDB in a `mongo:9.0` container from the
+  start, [ADR 1](adr/0001-one-ec2-instance.md).)
 
 Sources: [Install Docker Engine on Debian](https://docs.docker.com/engine/install/debian/),
 [Docker Desktop for Windows requirements](https://docs.docker.com/desktop/setup/install/windows-install/).

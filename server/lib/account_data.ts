@@ -31,15 +31,32 @@ export const mergeTrial = async (trialId: Id, accountId: Id): Promise<number> =>
   return results.reduce((count, result) => count + result.modifiedCount, 0);
 };
 
+const deleteRecords = (id: string): Promise<unknown> =>
+  Promise.all([
+    ...OWNED_MODELS.map((Model) => Model.deleteMany({ ownedBy: id })),
+    PasswordReset.deleteMany({ userId: id })
+  ]);
+
 /** Resolves with whether there was an account to delete. */
 export const deleteAccount = async (userId: Id): Promise<boolean> => {
   const id = String(userId);
   // The records go first, so if one delete fails the account is still there and
   // a retry finishes the job; nothing is left without an owner.
-  await Promise.all([
-    ...OWNED_MODELS.map((Model) => Model.deleteMany({ ownedBy: id })),
-    PasswordReset.deleteMany({ userId: id })
-  ]);
+  await deleteRecords(id);
   const result = await User.deleteOne({ _id: id });
   return result.deletedCount === 1;
+};
+
+/**
+ * Deletes a trial that ran out by `now`, with its records; resolves with
+ * whether it did. Here the trial goes first, in the same step that checks it
+ * is still a trial, so one claimed a moment ago (an account now, with its
+ * records) is never deleted. If removing the records then fails, they are left
+ * with no owner, where no one sees them: better than losing an account.
+ */
+export const deleteExpiredTrial = async (userId: Id, now: Date): Promise<boolean> => {
+  const result = await User.deleteOne({ _id: userId, guest: true, expiresAt: { $lte: now } });
+  if (result.deletedCount !== 1) return false;
+  await deleteRecords(String(userId));
+  return true;
 };

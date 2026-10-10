@@ -54,12 +54,15 @@ describe('adding records to the standard library', () => {
       kaolin,
       { ...kaolin, name: 'Bad Frit', aliases: [], category: 'frit', analysis: { SiO2: 50, Unobtainium: 10 }, loi: 0 },
       // Another name that is a record's own name: that record again.
-      { ...kaolin, name: 'Second Grolleg', aliases: ['Grolleg China Clay'] }
+      { ...kaolin, name: 'Second Grolleg', aliases: ['Grolleg China Clay'] },
+      // The year goes into a sentence in each language, so it is only a year.
+      { ...kaolin, name: 'Old Kaolin', aliases: [], status: 'discontinued', discontinuedSince: 'by 2016' }
     ]);
     expect(output).to.contain('add   records.json: Test Kaolin EU (material, clay, 5 oxides)');
     expect(output).to.contain('other names already taken, left off: Grolleg');
     expect(output).to.contain('FAIL  records.json: Bad Frit: unknown oxide Unobtainium; analysis and LOI come to 60%');
     expect(output).to.contain('skip  records.json: Second Grolleg (already in the library as Grolleg China Clay)');
+    expect(output).to.contain('FAIL  records.json: Old Kaolin: discontinuedSince "by 2016" is not a year');
     expect(output).to.contain('substitutes "Nowhere Clay" is not in the library, left off');
     expect(output).to.contain('Nothing written.');
     expect(lines('data/materials.ndjson').length).to.equal(before);
