@@ -59,7 +59,7 @@
     "intl-messageformat": "12.1.2",
     "jsonwebtoken": "9.0.3",
     "mongoose": "9.10.4",
-    "nodemailer": "10.0.15"
+    "nodemailer": "10.0.16"
   },
   "devDependencies": {
     "@angular/build": "22.2.1",
