@@ -53,12 +53,12 @@ materials, colorants, firing logs and notes together in one private notebook.
   sell glaze materials, the closest materials sold there to those a recipe names, the workplace
   limit for silica dust and the food-contact limits for glazed ware (for 30: no official limit
   was found for New Zealand), each checked on an official or the shop's own page.
-- **In twenty-two languages:** English, German, French, Spanish, Italian, Polish, Portuguese, Bulgarian,
-  Croatian, Czech, Danish, Dutch, Estonian, Finnish, Greek, Hungarian, Latvian, Lithuanian, Romanian, Slovak, Slovenian and Swedish, each at its own addresses (`/de/recipe`). Translated by AI with a glossary per language from
-  suppliers' catalogues, reviewed, and the safety text checked by translating it back; every
-  translated page says so and links to a form to suggest a better wording. Every piece of text is
-  a message (Transloco with ICU plurals), and the guides are Markdown per language
-  ([how translations are made](docs/translations/README.md)).
+- **Translated into an official language of every country of the EU:** Bulgarian, Croatian, Czech, Danish, Dutch, English, Estonian, Finnish, French, German, Greek, Hungarian, Irish, Italian, Latvian, Lithuanian, Maltese, Polish, Portuguese, Romanian, Slovak, Slovenian, Spanish, and Swedish, each at its own addresses (`/de/recipe`).
+    
+    Translated by AI with a glossary per language from suppliers' catalogues, reviewed, and the safety text checked by translating it back; every translated page says so and links to a form to suggest a better wording.
+    
+    Every piece of text is a message (Transloco with ICU plurals), and the guides are Markdown per language ([how translations are made](docs/translations/README.md)).
+
 - **Your own colors:** light, dark or as the device is set, and six palettes named for glazes,
   each readable in both.
 - **A standard library of 167 materials and 37 colorants and additives,** from manufacturers'
