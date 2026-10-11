@@ -50,7 +50,7 @@ In each path, `<code>` is your language's code. Paths are under C:\Users\bellows
   in your language. Safety text.
 - **The two emails**, in `server/lib/account_mail.ts` (read the `en` entries there, but do not edit that file):
   write your translation as JSON to
-  `C:\Users\bellows\AppData\Local\Temp\claude\C--Users-bellows-gh-glazecalc\c9e2de23-6bd0-4c08-9910-8c09a9678344\scratchpad\emails\<code>.json`,
+  `{SCRATCH}emails\<code>.json`,
   shaped `{ "reset": { "subject": "…", "text": "…" }, "changed": { "subject": "…", "text": "…" } }`, with the
   values written as placeholders: `{account}`, `{link}`, `{minutes}`, `{app}` in the reset email, and `{account}`,
   `{forgot}`, `{app}` in the other. Keep the line breaks (`\n`) where the English has them, and the signature as it

@@ -1,0 +1,23 @@
+{
+  "unknown-compound": "Kompost mhux magħruf {compound} fil-formula",
+  "unknown-oxide": "Ossidu mhux magħruf {oxide} fil-materjal {material}",
+  "invalid-oxide-amount": "Ammont mhux validu għal {oxide} fil-materjal {material}",
+  "loi-range": "Il-valur LOI tal-materjal {material} irid ikun mill-inqas 0 u inqas minn 100",
+  "no-oxides": "Il-materjal {material} m’għandu l-ebda ossidu",
+  "no-name": "Il-materjal irid ikollu isem",
+  "no-analysis": "Il-materjal {material} jeħtieġ formula jew analiżi",
+  "recipe-shape": "Ir-riċetta trid tkun firxa ta’ '{ material, amount }' jew mappa ta’ ammonti",
+  "invalid-amount": "Ammont mhux validu għall-materjal {material}",
+  "missing-material": "Ringiela tar-riċetta m’għandhiex materjal",
+  "unknown-material": "Materjal mhux magħruf {material}",
+  "no-flux": "Ir-riċetta ma fiha l-ebda ossidu flussanti, għalhekk il-formula ta’ Seger (UMF) mhix definita",
+  "no-target": "Il-formula li trid tilħaq m’għandha l-ebda ossidu",
+  "no-materials": "M’hemm l-ebda materjal biex jiġi kkalkulat",
+  "no-temperature": "Hemm bżonn it-temperatura tal-ħami biex jiġi stabbilit il-boron",
+  "no-flux-to-rebuild": "Il-glejż m’għandu l-ebda fluss biex jinbena mill-ġdid",
+  "unknown-element": "Element mhux magħruf {element} fil-formula {formula}",
+  "bad-formula": "Il-formula {formula} ma setgħetx tinqara",
+  "analysis-total": "L-analiżi tal-materjal {material} tammonta għal {total}% inkluż il-valur LOI; kien mistenni madwar 100%.",
+  "stored-equivalent": "Il-piż ekwivalenti ssejvjat tal-materjal {material} ma jaqbilx mal-formula u mal-valur LOI tiegħu; minflok intużaw il-formula u l-valur LOI.",
+  "trace-flux": "Ir-riċetta fiha biss traċċi ta’ ossidi flussanti, għalhekk il-formula ta’ Seger (UMF) m’għandhiex sens."
+}

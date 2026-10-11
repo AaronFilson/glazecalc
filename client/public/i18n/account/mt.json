@@ -1,0 +1,238 @@
+{
+  "auth": {
+    "signInHeading": "Idħol",
+    "keepHeading": "Żomm ix-xogħol tiegħek",
+    "signUpHeading": "Oħloq il-kont tiegħek",
+    "signInLead": "Merħba lura fil-pitazz tal-glejż tiegħek.",
+    "keepLead": "Żomm kulma għamilt bħala {name}: żid l-indirizz elettroniku tiegħek u password. Jibqa’ b’xejn.",
+    "signUpLead": "B’xejn. Ir-riċetti, il-materjali u n-noti tiegħek jinżammu privati fil-kont tiegħek.",
+    "trialNote": "Diġà għandek kont? Jekk tidħol, dak li għamilt bħala {name} jgħaddi fih. L-ewwel darba hawn? <signup>Oħloq kont</signup> biex iżżommu minflok.",
+    "email": "Indirizz elettroniku",
+    "password": "Password",
+    "passwordHint": "Mill-inqas 8 karattri.",
+    "confirmation": "Ikkonferma l-password",
+    "passwordMissing": "Daħħal il-password tiegħek.",
+    "createAccount": "Oħloq kont",
+    "signIn": "Idħol",
+    "haveAccount": "Diġà għandek kont? <signin>Idħol</signin>",
+    "forgot": "Insejt il-password? Irrisettjaha",
+    "newHere": "L-ewwel darba hawn? <signup>Oħloq kont b’xejn</signup>",
+    "signUpFailed": "Żball: ma rnexxilniex noħolqu l-kont.",
+    "signInFailed": "Żball: id-dħul ma rnexxiex."
+  },
+  "forgot": {
+    "heading": "Irrisettja l-password",
+    "checkInbox": "Iċċekkja l-posta riċevuta u l-fowlder tal-posta mhux mixtieqa. Jekk ma jasal xejn, iċċekkja l-indirizz u erġa’ itlob.",
+    "intro": "Daħħal l-indirizz elettroniku tal-kont tiegħek, u nibagħtulek link biex tagħżel password ġdida.",
+    "email": "Indirizz elettroniku:",
+    "send": "Ibgħat il-link biex tirrisettja",
+    "back": "Lura għad-dħul",
+    "failed": "Żball: ma rnexxilniex nibagħtu l-messaġġ elettroniku biex tirrisettja l-password. Erġa’ pprova."
+  },
+  "reset": {
+    "heading": "Agħżel password ġdida",
+    "signIn": "Idħol",
+    "incomplete": "Din il-paġna għandha bżonn il-link minn messaġġ elettroniku biex tirrisettja l-password, u dan il-link mhux komplut.",
+    "askAgain": "Itlob link ġdid",
+    "password": "Password ġdida:",
+    "confirmation": "Ikkonferma l-password il-ġdida:",
+    "save": "Issejvja l-password il-ġdida",
+    "hint": "Mill-inqas 8 karattri. Kull apparat dieħel fil-kont se joħroġ minnu.",
+    "failed": "Żball: ma rnexxilniex nibdlu l-password. Erġa’ pprova."
+  },
+  "account": {
+    "trialTitle": "Il-prova tiegħek",
+    "trialLead": "Qed tipprova Glazecalc bħala {name}.",
+    "keepHeading": "Żomm ix-xogħol tiegħek",
+    "keepText": "Din il-prova u kulma fiha jitneħħew f’din id-data: {date}. Oħloq kont b’xejn biex iżżommhom: ir-riċetti, il-materjali u n-noti tiegħek jibqgħu eżatt kif inhuma, u {name} jibqa’ l-isem muri tiegħek.",
+    "createAccount": "Oħloq kont",
+    "title": "Il-kont tiegħek",
+    "signedInAs": "Dħalt bħala {email}.",
+    "changeHeading": "Ibdel il-password",
+    "current": "Password attwali",
+    "currentMissing": "Daħħal il-password attwali tiegħek.",
+    "password": "Password ġdida",
+    "passwordHint": "Mill-inqas 8 karattri. Apparati oħra dieħla f’dan il-kont se joħorġu minnu.",
+    "confirmation": "Ikkonferma l-password il-ġdida",
+    "change": "Ibdel il-password",
+    "changeFailed": "Żball: ma rnexxilniex nibdlu l-password. Erġa’ pprova.",
+    "deleteHeading": "Ħassar il-kont tiegħek",
+    "deleteText": "Dan ineħħi l-kont tiegħek u kulma ssejvjajt: riċetti, materjali, addittivi, noti, reġistri tal-ħami u pariri. Ma tistax terġa’ lura minn dan.",
+    "deletePassword": "Il-password tiegħek, biex tikkonferma",
+    "deletePasswordMissing": "Daħħal il-password tiegħek biex tikkonferma.",
+    "delete": "Ħassar il-kont tiegħi",
+    "deleteFailed": "Żball: ma rnexxilniex inħassru l-kont. Erġa’ pprova."
+  },
+  "settings": {
+    "heading": "Settings",
+    "intro": "Jiġu ssejvjati mal-kont tiegħek, għalhekk jgħoddu fuq kull apparat.",
+    "saveFailed": "Ma rnexxilniex nissejvjaw is-setting. Erġa’ pprova.",
+    "language": {
+      "legend": "Lingwa",
+      "help": "Il-lingwa tal-app, tal-gwidi u tal-messaġġi elettroniċi tiegħek. Jekk tibdilha, din il-paġna tinfetaħ f’dik il-lingwa.",
+      "saved": "Issejvjat: {language}."
+    },
+    "region": {
+      "legend": "Fejn taħdem",
+      "none": {
+        "label": "Mhux magħżul",
+        "saved": "Issejvjat: l-ebda reġjun magħżul; il-valuri default isegwu l-brawżer tiegħek."
+      },
+      "saved": "Issejvjat: {region}.",
+      "help": "Il-materjali li jinbiegħu hemm, u l-valuri default għan-numri, id-dati, it-temperaturi u l-koni hawn taħt. Sakemm tagħżel, dawn isegwu l-lingwa tal-brawżer tiegħek."
+    },
+    "format": {
+      "legend": "Numri u dati",
+      "auto": {
+        "label": "Skont il-lingwa u r-reġjun tiegħi",
+        "saved": "Issejvjat: numri u dati kif jiktbuhom il-lingwa u r-reġjun tiegħek."
+      },
+      "saved": "Issejvjat: numri u dati kif jinkitbu fl-ilsien {language}.",
+      "help": "Kif jinkitbu n-numri u d-dati: 12,345.6 jew 12.345,6, u l-ordni tal-jum u tax-xahar."
+    },
+    "decimalMark": {
+      "legend": "Il-kitba tal-ammonti",
+      "either": {
+        "label": "Virgola jew punt għad-deċimali",
+        "example": "12,5 jew 12.5",
+        "saved": "Issejvjat: l-ammonti jistgħu jinkitbu b’virgola jew b’punt."
+      },
+      "comma": {
+        "label": "Virgola għad-deċimali",
+        "saved": "Issejvjat: l-ammonti jinkitbu b’virgola għad-deċimali."
+      },
+      "point": {
+        "label": "Punt għad-deċimali",
+        "saved": "Issejvjat: l-ammonti jinkitbu b’punt għad-deċimali."
+      },
+      "help": "Bl-għażla ta’ virgola jew punt, ammont bħal 1,250 jinqara kif jinkitbu n-numri tiegħek hawn fuq."
+    },
+    "temperature": {
+      "legend": "Temperaturi",
+      "celsius": {
+        "label": "Celsius",
+        "saved": "Issejvjat: it-temperaturi f’°C."
+      },
+      "fahrenheit": {
+        "label": "Fahrenheit",
+        "saved": "Issejvjat: it-temperaturi f’°F."
+      },
+      "help": "Sakemm tagħżel, dan isegwi r-reġjun tiegħek: °F fl-Istati Uniti, °C f’postijiet oħra."
+    },
+    "cones": {
+      "legend": "Ħami",
+      "orton": {
+        "label": "Bil-koni Orton",
+        "example": "kon 04, kon 6",
+        "saved": "Issejvjat: ħami bil-koni Orton."
+      },
+      "temperature": {
+        "label": "Bit-temperatura, bħal programm ta’ kontrollur tal-forn",
+        "saved": "Issejvjat: ħami bit-temperatura."
+      },
+      "help": "Sakemm tagħżel, dan isegwi r-reġjun tiegħek: koni Orton fl-Istati Uniti, fir-Renju Unit, fl-Irlanda, fl-Awstralja u fi New Zealand, it-temperatura fil-bqija tal-Ewropa."
+    },
+    "density": {
+      "legend": "Densità tal-glejż",
+      "sg": {
+        "label": "Gravità speċifika",
+        "saved": "Issejvjat: id-densità tal-glejż bħala gravità speċifika.",
+        "example": "SG 1.45"
+      },
+      "baume": {
+        "label": "Gradi Baumé, b’idrometru",
+        "saved": "Issejvjat: id-densità tal-glejż bi gradi Baumé."
+      },
+      "pint": {
+        "label": "Piż tal-pinta, l-uqija f’pinta imperjali",
+        "saved": "Issejvjat: id-densità tal-glejż bħala piż tal-pinta."
+      },
+      "help": "Kif il-gwidi jagħtu kemm hu oħxon il-glejż. Sakemm tagħżel, dan isegwi r-reġjun tiegħek: gradi Baumé fl-Italja, gravità speċifika f’postijiet oħra."
+    },
+    "theme": {
+      "legend": "Ċar jew skur",
+      "system": {
+        "label": "Kif inhu ssettjat dan l-apparat",
+        "saved": "Issejvjat: ċar jew skur skont kif inhu ssettjat kull apparat."
+      },
+      "light": {
+        "label": "Ċar",
+        "saved": "Issejvjat: dejjem ċar."
+      },
+      "dark": {
+        "label": "Skur",
+        "saved": "Issejvjat: dejjem skur."
+      },
+      "help": "Ir-riċetti jiġu stampati dejjem bl-iswed fuq l-abjad."
+    },
+    "palette": {
+      "legend": "Kuluri",
+      "saved": "Issejvjat: buttuni u links fil-paletta {palette}.",
+      "help": "Għall-buttuni, il-links u t-tabs, b’ismijiet ta’ glejżijiet. Kull paletta tinqara faċilment kemm f’modalità ċara kif ukoll f’modalità skura."
+    },
+    "weightUnit": {
+      "legend": "Piżijiet tat-taħlita",
+      "grams": {
+        "label": "Grammi",
+        "saved": "Issejvjat: il-piżijiet tat-taħlita huma bil-grammi."
+      },
+      "pounds": {
+        "label": "Libri u uqija",
+        "saved": "Issejvjat: il-piżijiet tat-taħlita huma bil-libri u l-uqija."
+      },
+      "help": "Għat-taħlitiet stampati."
+    },
+    "gramPrecision": {
+      "legend": "Grammi fuq it-taħlitiet stampati",
+      "single": {
+        "label": "Sa wieħed minn għaxra ta’ gramma",
+        "saved": "Issejvjat: il-grammi jidhru sa wieħed minn għaxra."
+      },
+      "full": {
+        "label": "Preċiżjoni sħiħa",
+        "saved": "Issejvjat: il-grammi jidhru sħaħ, sa 5 postijiet deċimali."
+      },
+      "help": "Bl-għażla sa wieħed minn għaxra, l-ammonti taħt 10 g xorta jidhru sa wieħed minn mija (2.35 g), għall-kuluranti f’taħlitiet żgħar tal-prova."
+    },
+    "lead": {
+      "legend": "Ċomb",
+      "off": {
+        "label": "Mitfi: iċ-ċomb qatt ma jiżdied ma’ riċetta u qatt ma jiġi ssuġġerit",
+        "saved": "Issejvjat: iċ-ċomb qatt ma jiżdied ma’ riċetta u qatt ma jiġi ssuġġerit."
+      },
+      "on": {
+        "label": "Mixgħul: materjali biċ-ċomb jistgħu jiżdiedu u jiġu ssuġġeriti",
+        "saved": "Issejvjat: materjali biċ-ċomb jistgħu jiżdiedu u jiġu ssuġġeriti."
+      },
+      "help": "Iċ-ċomb huwa velenuż jekk jinġibed man-nifs jew jinbela’, u jinġabar fil-ġisem. Glejż taċ-ċomb jista’ jirrilaxxah fl-ikel u fix-xorb; l-ebda kalkolu ma jista’ jgħid jekk biċċa moħmija tagħmilx hekk. Meta jkun mitfi, ir-riċetti li diġà fihom iċ-ċomb xorta jinfetħu kif kienu.",
+      "warning": "Uża ċ-ċomb biss f’fritta, qatt bħala ċomb aħmar, abjad jew isfar mhux f’fritta jew bħala litarġirju. Ħalltu fl-ilma, qatt ma tisprejjah, ilbes respiratur u naddaf bl-ilma. Żomm l-oġġetti b’glejż taċ-ċomb ’il bogħod mill-ikel u mix-xorb, ħlief jekk il-biċċa moħmija tkun għaddiet minn test tal-laboratorju tar-rilaxx tal-metalli.",
+      "turnOn": "Ixgħel iċ-ċomb",
+      "keepOff": "Żommu mitfi"
+    },
+    "englishTerms": {
+      "legend": "Termini bl-Ingliż",
+      "off": {
+        "label": "Mitfi",
+        "saved": "Issejvjat: l-ebda terminu bl-Ingliż."
+      },
+      "on": {
+        "label": "Uri l-Ingliż wara t-termini ewlenin",
+        "saved": "Issejvjat: l-Ingliż jidher wara t-termini ewlenin."
+      },
+      "help": "Biex taqra sorsi bl-Ingliż, bħal Digitalfire, flimkien ma’ dan is-sit: it-termini ewlenin jieħdu l-Ingliż tagħhom bejn parentesi."
+    },
+    "notice": {
+      "legend": "Avviż dwar it-traduzzjoni",
+      "shown": {
+        "label": "Jidher",
+        "saved": "Issejvjat: l-avviż jidher."
+      },
+      "hidden": {
+        "label": "Moħbi",
+        "saved": "Issejvjat: l-avviż huwa moħbi. Tibqa’ linja minnu fil-gwidi tas-sigurtà.",
+        "savedPlain": "Issejvjat: l-avviż huwa moħbi. Tibqa’ linja minnu fil-quċċata ta’ kull paġna."
+      },
+      "help": "In-nota fil-quċċata ta’ kull paġna li tgħid li ġiet tradotta bl-IA, b’mod kif tissuġġerixxi korrezzjoni."
+    }
+  }
+}

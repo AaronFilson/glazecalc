@@ -1,8 +1,9 @@
-// Takes finished wave-2 languages live (docs/i18n-plan.md):
-//   node wave2-go-live.mjs sk el cs da          does it
-//   node wave2-go-live.mjs --dry sk el cs da    says what it would do
+// Takes finished languages live (docs/i18n-plan.md). Name only the new ones; the
+// languages already live are read from lib/regions/languages.js.
+//   GLAZECALC_SCRATCH=... node go-live.mjs ga          does it
+//   GLAZECALC_SCRATCH=... node go-live.mjs --dry ga    says what it would do
 // 1. live: true in lib/regions/languages.js;
-// 2. their password emails (scratchpad/emails/<code>.json) added to
+// 2. their password emails (<scratch>/emails/<code>.json) added to
 //    server/lib/account_mail.ts after the others, which are left as they are;
 // 3. the density setting's example (account.settings.density.sg.example) from
 //    the language's own guides.density.sg, where the file lacks it;
@@ -14,11 +15,11 @@ import { tmpdir } from 'node:os';
 import path from 'node:path';
 import { createRequire } from 'node:module';
 
-const ROOT = 'C:/Users/bellows/gh/glazecalc/';
+const wave = createRequire(import.meta.url)('./wave.js');
+const ROOT = wave.ROOT.replace(/\\/g, '/') + '/';
 const I18N = ROOT + 'client/public/i18n/';
 const FINGERPRINTS = ROOT + 'client/i18n-fingerprints/';
-const EMAILS =
-  'C:/Users/bellows/AppData/Local/Temp/claude/C--Users-bellows-gh-glazecalc/c9e2de23-6bd0-4c08-9910-8c09a9678344/scratchpad/emails/';
+const EMAILS = wave.SCRATCH + 'emails/';
 const dry = process.argv.includes('--dry');
 const codes = process.argv.slice(2).filter((a) => a !== '--dry');
 if (!codes.length) throw new Error('which languages?');
@@ -110,14 +111,11 @@ for (const entry of readdirSync(I18N, { recursive: true, withFileTypes: true }))
 }
 cpSync(FINGERPRINTS, copyPrints, { recursive: true });
 const { updateTranslations } = await import('file:///' + ROOT + 'scripts/i18n-fingerprints.mjs');
-// English made plainer during wave 2 without changing its meaning: their translations stay.
-const KEEP = [
-  'guides:food.category.cooking',
-  'guides/home-safety:the-kiln',
-  'guides/making-a-glaze:testing',
-  'guides/safe-mixing:respirators',
-  'guides/home-safety:pets'
-];
+// English changed during the wave whose translations were brought into line (or
+// whose meaning stayed the same), as 'scope:key' or 'guides/<guide>:<section>':
+// those translations keep their place instead of going back to English. Empty at
+// the start of each wave; waves 2 and 3 listed theirs here (see their logs).
+const KEEP = [];
 const result = updateTranslations({ dir: copyI18n, fingerprints: copyPrints, write: true, keep: KEEP });
 const changes = Array.isArray(result) ? result : (result?.changes ?? []);
 const kinds = {};

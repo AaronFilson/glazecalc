@@ -112,6 +112,25 @@ describe('the translation notice', () => {
     await fixture.whenStable();
     expect(element.querySelector('aside')).toBeNull();
   });
+
+  it('says plainly where AI translates the language less well, and a line of it stays on every page', async () => {
+    const { fixture, element } = await create('ga');
+    expect(element.querySelector('aside p')?.textContent).toContain(
+      'which handles this language less well than most languages. The English page may read better.'
+    );
+    (element.querySelector('aside button') as HTMLButtonElement).click();
+    await fixture.whenStable();
+    expect(localStorage.getItem('notice')).toBe('hidden');
+    for (const page of ['/other', '/safety']) {
+      await TestBed.inject(Router).navigateByUrl(page);
+      await fixture.whenStable();
+      expect(element.querySelector('aside p')?.textContent).toMatch(
+        /^\s*Translated by AI; the English may read better\./
+      );
+      expect(element.querySelectorAll('aside a').length).toBe(2);
+      expect(element.querySelector('aside button')).toBeNull();
+    }
+  });
 });
 
 describe('the footer’s languages', () => {

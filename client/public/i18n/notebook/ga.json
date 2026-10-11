@@ -1,0 +1,88 @@
+{
+  "home": {
+    "title": "Do leabhar nótaí stiúideo",
+    "signedInAs": "Sínithe isteach mar {email}.",
+    "trying": "Tá tú ag baint triail as Glazecalc mar {name}. Tosaigh le hoideas.",
+    "welcomeBack": "Lean ar aghaidh ón áit ar stop tú.",
+    "sections": {
+      "recipe": {
+        "title": "Oidis",
+        "text": "Tóg glónra as ábhair agus méideanna, féach a fhoirmle Seger, agus sábháil é."
+      },
+      "material": {
+        "title": "Ábhair",
+        "text": "Cuir do chuid amhábhar féin leis, ó fhoirmle cheimiceach nó ó anailís soláthraí."
+      },
+      "additive": {
+        "title": "Breiseáin agus ábhair datha",
+        "text": "Coinnigh na hábhair datha agus na teimhneoirí a chuireann tú anuas ar bhunghlónra."
+      },
+      "firing": {
+        "title": "Taifid bhácála",
+        "text": "Taifead amanna, teochtaí agus cóin do gach bácáil."
+      },
+      "notes": {
+        "title": "Nótaí",
+        "text": "Coinnigh torthaí tástála agus aon rud eile ar fiú cuimhneamh air."
+      },
+      "advice": {
+        "title": "Comhairle faoi ghlónraí",
+        "text": "Leideanna faoi mheascadh, faoi ghlónrú agus faoi bhácáil, agus do chomhairle féin."
+      },
+      "guides": {
+        "title": "Treoirleabhair",
+        "text": "Ó cad is glónra ann go dtí é a bhácáil, agus gach duine a choinneáil slán ar an mbealach."
+      }
+    },
+    "newHere": "An bhfuil foirmlí Seger nua duit? Míníonn <advice>leathanach na comhairle</advice> na bunrudaí, agus insíonn an <about>leathanach faoin aip</about> conas a oibríonn Glazecalc."
+  },
+  "firing": {
+    "title": "Taifid bhácála",
+    "lead": "Taifead gach bácáil: amanna, teochtaí, cóin agus nótaí faoin áith.",
+    "titleLabel": "Teideal na bácála:",
+    "kiln": "Áith:",
+    "date": "Dáta na bácála:",
+    "notes": "Nótaí faoin mbácáil:",
+    "fieldSelect": "Roghnaigh réimsí agus cuir leis an taifead bácála iad:",
+    "addField": "Cuir an réimse leis",
+    "included": "Na réimsí atá curtha isteach agat:",
+    "fieldName": "Ainm an réimse: {name}",
+    "moveLeft": "Bog an réimse ar chlé",
+    "moveRight": "Bog an réimse ar dheis",
+    "removeField": "Bain an réimse",
+    "addRow": "Cuir ró le tábla na bácála",
+    "recordHeading": "An bhácáil a thaifeadadh",
+    "rowActions": "Gníomhartha an ró",
+    "cell": "{field}, ró {row}",
+    "removeRow": "Bain an ró",
+    "save": "Sábháil",
+    "storedHeading": "Mo bhácálacha sábháilte:",
+    "stored": "Teideal: {title}, Áith a úsáideadh: {kiln}, Dáta: {date}",
+    "storedNotes": "Nótaí: {notes}",
+    "titleMissing": "Tabhair teideal don bhácáil.",
+    "fieldsMissing": "Cuir réimse amháin ar a laghad leis le taifeadadh, mar shampla {example}.",
+    "chooseField": "Roghnaigh réimse le cur leis, agus ansin brúigh ‘Cuir an réimse leis’.",
+    "fetchFailed": "Tharla earráid agus eolas na dtaifead bácála á fháil.",
+    "saved": "D’éirigh leis. Cuireadh an taifead bácála leis an bhfreastalaí.",
+    "saveFailed": "Earráid: theip ar an iarratas chuig an bhfreastalaí."
+  },
+  "notes": {
+    "title": "Nótaí",
+    "lead": "Aon rud eile ar fiú cuimhneamh air faoi do ghlónraí.",
+    "intro": "Seo leathanach na nótaí. Is féidir leat nótaí a bhreacadh agus a shábháil anseo.",
+    "titleLabel": "Teideal:",
+    "content": "Do nóta:",
+    "save": "Sábháil",
+    "mineHeading": "Mo nótaí sábháilte:",
+    "titleMissing": "Tabhair teideal don nóta.",
+    "contentMissing": "Scríobh an nóta.",
+    "untitled": "Nóta gan teideal",
+    "fetchFailed": "Tharla earráid agus eolas na nótaí á fháil.",
+    "saved": "D’éirigh leis. Cuireadh an nóta leis an bhfreastalaí.",
+    "saveFailed": "Earráid: theip ar an iarratas chuig an bhfreastalaí."
+  },
+  "trash": {
+    "title": "Bruscar",
+    "comingSoon": "Tá an bruscar le teacht go luath sa chéad leagan eile den aip Glazecalc. Go dtí sin, bí cúramach le scriosadh agus le baint: nuair a bhíonn rud imithe, tá an t-eolas caillte."
+  }
+}

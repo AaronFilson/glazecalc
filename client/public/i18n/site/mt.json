@@ -1,0 +1,111 @@
+{
+  "landing": {
+    "eyebrow": "Kalkulatur tal-glejż u pitazz tal-istudjo",
+    "heading": "Kimika tal-glejż b’xejn għall-fuħħarin.",
+    "lead": "Ifhem il-glejżijiet tiegħek, mhux biss tħallathom. Daħħal riċetta u ara mill-ewwel il-formula ta’ Seger (UMF) tagħha, il-proporzjon bejn is-silika u l-alumina u l-bilanċ tal-flussi. Żomm ir-riċetti, il-materjali, il-kuluranti, in-noti u r-reġistri tal-ħami tiegħek flimkien f’pitazz privat wieħed.",
+    "trialEnded": "Il-prova tiegħek intemmet. Ibda prova ġdida, jew oħloq kont b’xejn biex iżżomm ix-xogħol tiegħek.",
+    "tryIt": "Ipprova issa",
+    "createAccount": "Oħloq kont b’xejn",
+    "trialFailed": "Ma rnexxilniex nibdew prova bħalissa. Erġa’ pprova.",
+    "heroNote": "Biex tipprovah m’għandekx bżonn tirreġistra · B’xejn u b’sors miftuħ · Ir-riċetti tiegħek jibqgħu privati",
+    "heroAlt": "Ringiela ta’ settijiet ta’ koni moħmija: il-koni pirometriċi bojod f’kull sett tgħawġu bis-sħana tal-forn.",
+    "heroCaption": "Settijiet ta’ koni wara ħamja: kull kon jitgħawweġ hekk kif il-forn ikun għamel biżżejjed xogħol tas-sħana.",
+    "exampleHeading": "Ara kif jaħdem: glejż bażi klassiku għas-seladon",
+    "exampleCaption": "Ir-riċetta “4321” ta’ Bernard Leach, li spiss tinħema sal-kon 10, f’partijiet skont il-piż.",
+    "material": "Materjal",
+    "parts": "Partijiet",
+    "unityHeading": "Il-formula ta’ Seger tiegħu",
+    "exampleNote": "Il-flussi flimkien jagħmlu 1, għalhekk tista’ tqabbel kwalunkwe żewġ glejżijiet b’mod ġust. Ikkalkulata hawnhekk fil-brawżer tiegħek bl-istess kodiċi li juża l-kalkulatur.",
+    "featuresHeading": "X’jagħmel Glazecalc",
+    "features": {
+      "unity": {
+        "title": "Il-formula ta’ Seger mill-ewwel",
+        "text": "Ara l-flussi, l-alumina u s-silika fil-formula ta’ Seger, kif iqabblu r-riċetti l-esperti tal-kimika tal-glejż, hekk kif iddaħħal riċetta."
+      },
+      "substitute": {
+        "title": "Sewwi u ibdel",
+        "text": "Materjal ma jsirx aktar? Qabbel il-formuli biex issib sostitut li jdub bl-istess mod."
+      },
+      "notebook": {
+        "title": "Il-pitazz tal-istudjo",
+        "text": "Żomm ir-riċetti, il-materjali tiegħek, il-kuluranti, in-noti u r-reġistri tal-ħami flimkien f’post wieħed."
+      },
+      "learn": {
+        "title": "Itgħallem hekk kif taħdem",
+        "text": "Gwidi bi kliem sempliċi, minn x’inhu l-glejż sa kif taħmih b’mod sikur, jinsabu ħdejn in-numri."
+      }
+    },
+    "umfHeading": "X’inhi l-formula ta’ Seger (UMF)?",
+    "umfRecipe": "Riċetta tal-glejż tgħid kemm tiżen minn kull materjal. Il-formula ta’ Seger, bl-Ingliż “unity molecular formula” (UMF), tgħid x’isiru dawk il-materjali fil-forn: kemm hemm molekuli minn kull ossidu, ikkalkulati b’mod li l-flussi flimkien jagħmlu wieħed.",
+    "umfGroups": "Il-flussi jdewbu l-glejż, l-alumina tebbes il-glejż imdewweb, u s-silika tifforma l-ħġieġ. It-tqabbil ta’ dawn it-tliet gruppi jispjega għaliex glejż wieħed ileqq u ieħor matt, jew għaliex wieħed jinżel waqt li ieħor jibqa’ f’postu, u juri kif tibdel materjal li ma għadux jinbiegħ.",
+    "readAdvice": "Aqra aktar pariri dwar il-glejż",
+    "closingHeading": "Glazecalc lest meta trid int.",
+    "closingText": "Ipprova l-kalkulatur issa, imbagħad oħloq kont biex iżżomm dak li għamilt."
+  },
+  "about": {
+    "title": "Dwar Glazecalc",
+    "lead": "Kalkulatur tal-kimika tal-glejż u pitazz, b’xejn u b’sors miftuħ, għall-fuħħarin, iċ-ċeramisti u l-istudenti.",
+    "whatHeading": "X’jagħmel",
+    "what": "Glazecalc jibdel riċetta tal-glejż, jiġifieri l-materjali u kemm tiżen minn kull wieħed, fil-formula ta’ Seger (UMF) tagħha: l-ossidi li minnhom ikun magħmul il-glejż wara l-ħami, ikkalkulati b’mod li l-flussi flimkien jagħmlu wieħed. Dan jagħmel ir-riċetti faċli biex jitqabblu, jgħin jispjega kif iġib ruħu glejż, u jgħin meta materjal ikollu jinbidel.",
+    "alongside": "Flimkien mal-kalkulatur iżomm ir-riċetti tiegħek, il-materjali tiegħek, il-kuluranti u addittivi oħra, in-noti u r-reġistri tal-ħami, paġna prattika ta’ <advice>pariri dwar il-glejż</advice>, u <guides>gwidi</guides> għall-fuħħarin ġodda, minn x’inhu l-glejż sa kif taħmih b’mod sikur.",
+    "numbersHeading": "Kif jiġu kkalkulati n-numri",
+    "numbers": "Kull materjal huwa deskritt bil-formula kimika tiegħu jew b’analiżi tal-ossidi, flimkien mat-telf mit-tqabbid bin-nar (LOI) tiegħu: il-parti li tinħaraq fil-forn, bħad-diossidu tal-karbonju fil-karbonat tal-kalċju jew l-ilma fil-kawlina. Glazecalc jibdel kull ammont f’mol ta’ kull ossidu bil-mases molari standard, jgħoddhom għar-riċetta kollha, u jaqsam bit-total tal-mol tal-flussi. Il-kuluranti u l-addittivi l-oħra jitniżżlu mar-riċetta, imma jitħallew barra mill-formula ta’ Seger, kif inhu s-soltu.",
+    "guide": "Ir-riżultati huma indikazzjoni, mhux garanzija. Il-materjali veri jvarjaw minn fornitur għal ieħor u minn lott għal ieħor, u l-ħami jgħodd daqs il-kimika, għalhekk ittestja kull glejż. Il-glejżijiet għall-uċuħ li jmissu l-ikel għandhom jiġu ttestjati għar-rilaxx tal-metalli.",
+    "builtHeading": "Kif inbena",
+    "built": "Glazecalc beda fl-2017 u reġa’ nbena fl-2026. Huwa applikazzjoni web żgħira waħda, u <source>il-kodiċi sors tiegħu jinsab fuq GitHub</source> taħt il-Liċenzja MIT.",
+    "stackBrowser": "Angular 22 fil-brawżer (komponenti standalone u signals), bil-kimika tal-glejż f’librerija żgħira komuni.",
+    "stackServer": "API f’TypeScript fuq Node.js 24 u Express 5, b’MongoDB 9, ivverifikat b’aktar minn 350 test awtomatiku.",
+    "stackHosting": "Jaħdem f’Docker fuq Amazon Web Services, wara nginx b’HTTPS minn Let's Encrypt.",
+    "stackDeploy": "Jiġi implimentat minn GitHub Actions: l-images jinbnew u jiġu ttestjati ma’ kull bidla, u l-implimentazzjonijiet jidħlu f’AWS mingħajr ċwievet maħżuna.",
+    "whoHeading": "Min għamlu",
+    "who": "Glazecalc huwa magħmul minn Aaron Filson. Sibt problema jew għandek idea? <issues>Iftaħ issue fuq GitHub</issues>.",
+    "studio": "Iċ-ċeramika li jagħmel bl-idejn Aaron Filson tinsab f’<studio>Updraft Pottery Studio</studio> f’Tacoma, Washington. Agħti ħarsa lejn ix-xogħol, u ordna biċċa jekk xi waħda tolqtok."
+  },
+  "privacy": {
+    "title": "Privatezza",
+    "lead": "L-aħħar aġġornament: Ottubru 2026.",
+    "shortHeading": "Fil-qosor",
+    "short": "Glazecalc iżomm dak li għandu bżonn biex iħaddem il-kont tiegħek u xejn aktar. M’hemm l-ebda reklam, l-ebda analitika, l-ebda cookie tat-traċċar u l-ebda skript ta’ partijiet terzi. Id-data tiegħek qatt ma tinbiegħ jew tinqasam ma’ ħaddieħor.",
+    "storedHeading": "X’jinżamm",
+    "storedAccount": "<b>Il-kont tiegħek:</b> l-indirizz elettroniku u l-password tiegħek, li tinżamm biss bħala hash f’direzzjoni waħda (bcrypt), qatt bħala l-password innifisha.",
+    "storedTrial": "<b>Prova (il-buttuna Ipprova issa):</b> l-ebda indirizz elettroniku jew password, biss isem iġġenerat bħal “speckled quiet kilns”. Il-prova u kulma jiġi ssejvjat fiha jitħassru awtomatikament 14-il jum wara li tibda, sakemm ma toħloqx kont biex iżżommhom.",
+    "storedSaved": "<b>Dak li tissejvja:</b> ir-riċetti, il-materjali, l-addittivi, in-noti, ir-reġistri tal-ħami u l-pariri tiegħek. Utenti oħra ma jistgħux jarawhom.",
+    "storedResets": "<b>Talbiet biex tirrisettja l-password:</b> impronta diġitali ta’ kull link għar-risettjar (mhux il-link innifsu), li titħassar awtomatikament meta jiskadi l-link, 30 minuta wara.",
+    "storedBrowser": "<b>Fil-brawżer tiegħek:</b> cookie wieħed, <code>glazecalc_session</code>, li bih tibqa’ fil-kont. Fih it-token tad-dħul tiegħek, l-iskripts fil-paġna ma jistgħux jaqrawh, imur biss għas-server ta’ Glazecalc stess, u jdum 7 ijiem (14-il jum għal prova). Il-ħażna lokali tal-brawżer fiha nota li dħalt fil-kont u, waqt prova, l-isem tagħha u d-data meta tispiċċa. Meta toħroġ mill-kont, dawn jitneħħew.",
+    "emailHeading": "Posta elettronika",
+    "email": "Glazecalc jibgħat messaġġi elettroniċi biss meta titlob biex tirrisettja l-password tiegħek u meta l-password tiegħek tinbidel. Jintbagħtu permezz ta’ Amazon Simple Email Service. M’hemm l-ebda newsletter u l-ebda messaġġ ta’ marketing.",
+    "hostingHeading": "Reġistrazzjonijiet, kopji backup u ospitar",
+    "logs": "Is-server tal-Web jirreġistra kull talba, inkluż l-indirizz IP tiegħek, f’reġistrazzjoni li tinżamm għal 14-il jum biex is-sit jitħaddem u jinżamm sigur.",
+    "backups": "Kopji backup iċċifrati tad-database jinżammu għal 30 jum, u kopji tad-diska tas-server għal 7 ijiem, biex is-sit ikun jista’ jiġi rrestawrat wara ħsara.",
+    "hosting": "Kollox huwa ospitat minn Amazon Web Services fl-Istati Uniti (Oregon).",
+    "deletingHeading": "It-tħassir tad-data tiegħek",
+    "deleting": "Tista’ tħassar il-kont tiegħek minn fuq <account>il-paġna tal-kont</account>. Dan ineħħi minnufih il-kont tiegħek u kulma ssejvjajt; il-buttuna Warrab il-prova tagħmel l-istess għal prova. Il-kopji fil-backups jisparixxu hekk kif il-backups jiskadu, fi żmien 30 jum.",
+    "questionsHeading": "Mistoqsijiet",
+    "questions": "Staqsi billi <issues>tiftaħ issue fuq GitHub</issues>. Jekk din il-politika tinbidel, tinbidel ukoll id-data fil-quċċata ta’ din il-paġna."
+  },
+  "notFound": {
+    "heading": "Il-paġna ma nstabitx",
+    "text": "M’hemmx paġna f’dan l-indirizz. Forsi ġiet imċaqalqa, jew forsi l-link inkiteb ħażin.",
+    "start": "Mur fil-paġna tal-bidu"
+  },
+  "advice": {
+    "title": "Pariri dwar il-glejż",
+    "lead": "Suġġerimenti prattiċi dwar it-taħlit, it-tqegħid tal-glejż u l-ħami, flimkien ma’ xi pariri tiegħek stess.",
+    "signUp": "<signup>Oħloq kont b’xejn</signup> jew <signin>idħol</signin> biex iżżomm il-pariri tiegħek stess.",
+    "generalHeading": "Pariri ġenerali",
+    "tags": "Tikketti: {list}",
+    "addHeading": "Żid il-pariri tiegħek",
+    "titleLabel": "Titlu:",
+    "tagsLabel": "Tikketti:",
+    "contentLabel": "Kontenut tal-parir:",
+    "save": "Issejvja",
+    "mineHeading": "Il-pariri tiegħi",
+    "nothingSaved": "Għad m’hemm xejn issejvjat.",
+    "titleMissing": "Agħti titlu lill-parir.",
+    "contentMissing": "Ikteb il-parir.",
+    "fetchFailed": "Kien hemm żball meta ppruvajna nġibu l-informazzjoni dwar il-pariri.",
+    "standardFetchFailed": "Kien hemm żball meta ppruvajna nġibu mis-server l-informazzjoni dwar il-pariri.",
+    "saved": "Il-parir ġie miżjud b’suċċess.",
+    "saveFailed": "Kien hemm żball meta ntbagħtet l-informazzjoni dwar il-parir."
+  }
+}

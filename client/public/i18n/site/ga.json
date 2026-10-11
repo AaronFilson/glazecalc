@@ -1,0 +1,111 @@
+{
+  "landing": {
+    "eyebrow": "Áireamhán glónra agus leabhar nótaí stiúideo",
+    "heading": "Ceimic glónra saor in aisce do photadóirí.",
+    "lead": "Tuig do ghlónraí, in ionad iad a mheascadh amháin. Cuir isteach oideas agus feic láithreach a fhoirmle Seger (UMF), a chóimheas silice le halúmana agus cothromaíocht a fhloscanna. Coinnigh d’oidis, d’ábhair, d’ábhair datha, do nótaí agus do thaifid bhácála le chéile in aon leabhar nótaí príobháideach.",
+    "trialEnded": "Tá deireadh le do thriail. Tosaigh ceann nua, nó cruthaigh cuntas saor in aisce chun do chuid oibre a choinneáil.",
+    "tryIt": "Bain triail as anois",
+    "createAccount": "Cruthaigh cuntas saor in aisce",
+    "trialFailed": "Níorbh fhéidir triail a thosú díreach anois. Bain triail eile as.",
+    "heroNote": "Ní gá clárú chun triail a bhaint as · Saor in aisce agus foinse oscailte · Fanann d’oidis príobháideach",
+    "heroAlt": "Sraith pacaí cón tar éis bácála: tá na cóin phiriméadracha bhána i ngach paca lúbtha anonn i dteas na háithe.",
+    "heroCaption": "Pacaí cón tar éis bácála: lúbann gach cón nuair atá dóthain oibre teasa déanta ag an áith.",
+    "exampleHeading": "É a fheiceáil ag obair: bunghlónra ceileadóin clasaiceach",
+    "exampleCaption": "“4321” le Bernard Leach, a bhácáiltear go minic go cón 10, i gcodanna de réir meáchain.",
+    "material": "Ábhar",
+    "parts": "Codanna",
+    "unityHeading": "A fhoirmle Seger",
+    "exampleNote": "Is ionann iomlán na bhfloscanna agus 1, mar sin is féidir aon dá ghlónra a chur i gcomparáid go cothrom. Oibrithe amach anseo i do bhrabhsálaí ag an gcód céanna a úsáideann an t-áireamhán.",
+    "featuresHeading": "Cad a dhéanann Glazecalc",
+    "features": {
+      "unity": {
+        "title": "Foirmle Seger láithreach",
+        "text": "Feic na floscanna, an alúmana agus an tsilice san fhoirmle Seger, mar a chuireann ceimiceoirí glónra oidis i gcomparáid, a luaithe a chuireann tú oideas isteach."
+      },
+      "substitute": {
+        "title": "Ceartú agus ionadú",
+        "text": "An bhfuil ábhar scortha? Cuir foirmlí i gcomparáid chun ionadach a aimsiú a leánn ar an mbealach céanna."
+      },
+      "notebook": {
+        "title": "Do leabhar nótaí stiúideo",
+        "text": "Coinnigh oidis, do chuid ábhar féin, ábhair datha, nótaí agus taifid bhácála le chéile in aon áit amháin."
+      },
+      "learn": {
+        "title": "Foghlaim agus tú ag obair",
+        "text": "Tá treoirleabhair i dteanga shimplí, ó cad is glónra ann go dtí é a bhácáil go sábháilte, in aice leis na huimhreacha."
+      }
+    },
+    "umfHeading": "Cad is foirmle Seger ann?",
+    "umfRecipe": "Insíonn oideas glónra cé mhéad de gach ábhar atá le meá. Insíonn an fhoirmle Seger, ar a dtugtar “unity molecular formula” (UMF) i mBéarla, cad a dhéantar de na hábhair sin san áith: cé mhéad móilín de gach ocsaíd atá ann, scálaithe ionas gurb ionann iomlán na bhfloscanna agus a haon.",
+    "umfGroups": "Cuireann na floscanna an glónra ag leá, déanann an alúmana an leátán níos righne, agus déanann an tsilice an ghloine. Míníonn comparáid idir an trí ghrúpa sin cén fáth a bhfuil glónra amháin lonrach agus glónra eile neamhlonrach, nó cén fáth a ritheann ceann amháin agus a bhfanann ceann eile san áit a bhfuil sé, agus taispeánann sí conas ábhar eile a chur in áit ábhair nach ndíoltar a thuilleadh.",
+    "readAdvice": "Léigh tuilleadh comhairle faoi ghlónraí",
+    "closingHeading": "Réidh nuair atá tusa réidh.",
+    "closingText": "Bain triail as an áireamhán anois, ansin cruthaigh cuntas chun a ndearna tú a choinneáil."
+  },
+  "about": {
+    "title": "Faoin aip Glazecalc",
+    "lead": "Áireamhán ceimice glónra agus leabhar nótaí, saor in aisce agus foinse oscailte, do photadóirí, do cheirmeoirí agus do mhic léinn.",
+    "whatHeading": "Cad a dhéanann an aip",
+    "what": "Athraíonn Glazecalc oideas glónra, is é sin na hábhair agus cé mhéad de gach ceann a mheánn tú, ina fhoirmle Seger: na hocsaídí a bhíonn sa ghlónra tar éis a bhácála, scálaithe ionas gurb ionann iomlán na bhfloscanna agus a haon. Dá bharr sin is féidir oidis a chur i gcomparáid, is fusa a mhíniú conas a iompraíonn glónra é féin, agus is cabhair é nuair is gá ábhar eile a chur in áit ábhair.",
+    "alongside": "Taobh leis an áireamhán, coinníonn sé d’oidis, do chuid ábhar féin, ábhair datha agus breiseáin eile, nótaí agus taifid bhácála, leathanach de <advice>chomhairle phraiticiúil faoi ghlónraí</advice>, agus <guides>treoirleabhair</guides> do photadóirí nua, ó cad is glónra ann go dtí é a bhácáil go sábháilte.",
+    "numbersHeading": "Conas a oibrítear amach na huimhreacha",
+    "numbers": "Déantar cur síos ar gach ábhar lena fhoirmle cheimiceach nó le hanailís ocsaíde, mar aon lena chailliúint ar adhaint: an chuid a dhóitear san áith, mar shampla an dé-ocsaíd charbóin sa bhánlí nó an t-uisce sa chaoilín. Athraíonn Glazecalc gach méid ina mhólanna de gach ocsaíd le maiseanna mólaracha caighdeánacha, suimíonn sé iad ar fud an oidis, agus roinneann sé an toradh ar líon iomlán mól na bhfloscanna. Liostaítear ábhair datha agus breiseáin eile leis an oideas, ach fágtar as an bhfoirmle Seger iad, mar is gnách.",
+    "guide": "Is treoir iad na torthaí, ní ráthaíocht. Bíonn éagsúlacht sna fíor-ábhair ó sholáthraí go soláthraí agus ó bhaisc go baisc, agus tá an bhácáil chomh tábhachtach leis an gceimic, mar sin déan tástáil ar gach glónra. Ba cheart glónraí do dhromchlaí a mbíonn bia orthu a thástáil le haghaidh láistithe.",
+    "builtHeading": "Conas a tógadh é",
+    "built": "Thosaigh Glazecalc in 2017 agus atógadh é in 2026. Is feidhmchlár gréasáin beag amháin é, agus tá a <source>chód foinseach ar GitHub</source> faoin gCeadúnas MIT.",
+    "stackBrowser": "Angular 22 sa bhrabhsálaí (standalone components agus signals), agus ceimic an ghlónra i leabharlann bheag chomhroinnte.",
+    "stackServer": "API TypeScript ar Node.js 24 agus Express 5, le MongoDB 9, seiceáilte ag níos mó ná 350 tástáil uathoibrithe.",
+    "stackHosting": "Ritheann sé in Docker ar Amazon Web Services, taobh thiar de nginx, le HTTPS ó Let’s Encrypt.",
+    "stackDeploy": "Imscartha ag GitHub Actions: tógtar agus tástáiltear na híomhánna le gach athrú, agus síníonn gach imscaradh isteach in AWS gan eochracha stóráilte.",
+    "whoHeading": "Cé a rinne é",
+    "who": "Is é Aaron Filson a dhéanann Glazecalc. Ar aimsigh tú fadhb, nó an bhfuil smaoineamh agat? <issues>Oscail saincheist ar GitHub</issues>.",
+    "studio": "Tá potaireacht lámhdhéanta Aaron Filson ag <studio>Updraft Pottery Studio</studio> i dTacoma, Washington. Féach ar an obair, agus ordaigh píosa má théann ceann i bhfeidhm ort."
+  },
+  "privacy": {
+    "title": "Príobháideachas",
+    "lead": "Nuashonraithe go deireanach: Deireadh Fómhair 2026.",
+    "shortHeading": "Go hachomair",
+    "short": "Coinníonn Glazecalc a bhfuil ag teastáil chun do chuntas a reáchtáil, agus faic níos mó. Níl aon fhógraí, aon anailísíocht, aon fhianáin rianaithe ná aon scripteanna tríú páirtí ann. Ní dhíoltar ná ní roinntear do shonraí riamh.",
+    "storedHeading": "Cad a stóráiltear",
+    "storedAccount": "<b>Do chuntas:</b> do sheoladh ríomhphoist agus do phasfhocal, nach stóráiltear ach mar haiseáil aontreo (bcrypt), ní mar an pasfhocal féin riamh.",
+    "storedTrial": "<b>Triail (‘Bain triail as anois’):</b> gan ríomhphost ná pasfhocal, ach ainm a ghintear, mar shampla “speckled quiet kilns”. Scriostar triail agus gach a shábháiltear inti go huathoibríoch 14 lá tar éis di tosú, mura gcruthaíonn tú cuntas chun iad a choinneáil.",
+    "storedSaved": "<b>A shábhálann tú:</b> d’oidis, d’ábhair, do bhreiseáin, do nótaí, do thaifid bhácála agus do chomhairle. Ní féidir le húsáideoirí eile iad a fheiceáil.",
+    "storedResets": "<b>Iarratais ar athshocrú pasfhocail:</b> méarlorg de gach nasc athshocraithe (ní an nasc féin), a scriostar go huathoibríoch nuair a théann sé in éag 30 nóiméad ina dhiaidh sin.",
+    "storedBrowser": "<b>I do bhrabhsálaí:</b> fianán amháin, <code>glazecalc_session</code>, a choinníonn sínithe isteach thú. Coinníonn sé do chomhartha sínithe isteach, ní féidir le scripteanna ar an leathanach é a léamh, ní théann sé ach chuig freastalaí Glazecalc féin, agus maireann sé 7 lá (14 do thriail). Coinníonn an stóras logánta nóta go bhfuil tú sínithe isteach agus, le linn trialach, a hainm agus a dáta deiridh. Baineann síniú amach iad.",
+    "emailHeading": "Ríomhphost",
+    "email": "Ní sheolann Glazecalc ríomhphost ach nuair a iarrann tú do phasfhocal a athshocrú agus nuair a athraítear do phasfhocal. Seoltar é trí Amazon Simple Email Service. Níl aon nuachtlitir ná ríomhphost margaíochta ann.",
+    "hostingHeading": "Logaí, cúltacaí agus óstáil",
+    "logs": "Taifeadann an freastalaí gréasáin gach iarratas, do sheoladh IP san áireamh, i loga a choinnítear ar feadh 14 lá chun an suíomh a reáchtáil agus a chosaint.",
+    "backups": "Coinnítear cúltacaí criptithe den bhunachar sonraí ar feadh 30 lá, agus cóipeanna de dhiosca an fhreastalaí ar feadh 7 lá, ionas gur féidir an suíomh a athbhunú tar éis teipe.",
+    "hosting": "Tá gach rud á óstáil ag Amazon Web Services i Stáit Aontaithe Mheiriceá (Oregon).",
+    "deletingHeading": "Do shonraí a scriosadh",
+    "deleting": "Is féidir leat do chuntas a scriosadh ar <account>leathanach do chuntais</account>. Baineann sé sin do chuntas agus gach a shábháil tú láithreach; déanann ‘Scrios an triail’ an rud céanna do thriail. Imíonn na cóipeanna sna cúltacaí de réir mar a théann na cúltacaí in éag, laistigh de 30 lá.",
+    "questionsHeading": "Ceisteanna",
+    "questions": "Cuir ceist trí <issues>shaincheist a oscailt ar GitHub</issues>. Má athraíonn an polasaí seo, athraíonn an dáta ag barr an leathanaigh seo freisin."
+  },
+  "notFound": {
+    "heading": "Níor aimsíodh an leathanach",
+    "text": "Níl aon leathanach ag an seoladh seo. B’fhéidir gur bogadh é, nó go bhfuil botún cló sa nasc.",
+    "start": "Téigh go dtí an leathanach tosaigh"
+  },
+  "advice": {
+    "title": "Comhairle faoi ghlónraí",
+    "lead": "Leideanna praiticiúla faoi mheascadh, faoi ghlónrú agus faoi bhácáil, mar aon le haon chomhairle de do chuid féin.",
+    "signUp": "<signup>Cruthaigh cuntas saor in aisce</signup> nó <signin>sínigh isteach</signin> chun do chomhairle féin a choinneáil.",
+    "generalHeading": "Comhairle ghinearálta",
+    "tags": "Clibeanna: {list}",
+    "addHeading": "Do chomhairle féin a chur leis",
+    "titleLabel": "Teideal:",
+    "tagsLabel": "Clibeanna:",
+    "contentLabel": "Téacs na comhairle:",
+    "save": "Sábháil",
+    "mineHeading": "Mo chomhairle",
+    "nothingSaved": "Níl aon rud sábháilte fós.",
+    "titleMissing": "Tabhair teideal don chomhairle.",
+    "contentMissing": "Scríobh an chomhairle.",
+    "fetchFailed": "Tharla earráid agus an chomhairle á fáil.",
+    "standardFetchFailed": "Tharla earráid agus comhairle an fhreastalaí á fáil.",
+    "saved": "Cuireadh an chomhairle leis na taifid.",
+    "saveFailed": "Tharla earráid agus an chomhairle á seoladh."
+  }
+}

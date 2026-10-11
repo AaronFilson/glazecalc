@@ -229,7 +229,8 @@
       },
       "hidden": {
         "label": "Hidden",
-        "saved": "Saved: the notice is hidden. A line of it stays in the safety guides."
+        "saved": "Saved: the notice is hidden. A line of it stays in the safety guides.",
+        "savedPlain": "Saved: the notice is hidden. A line of it stays at the top of each page."
       },
       "help": "The note at the top of each page saying it was translated by AI, with a way to suggest a correction."
     }

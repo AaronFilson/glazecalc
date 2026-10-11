@@ -1,0 +1,154 @@
+{
+  "version": {
+    "cones": "Din il-gwida qed tidher għall-ħami bil-koni, kif magħżul fis-settings.",
+    "temperature": "Din il-gwida qed tidher għall-ħami bit-temperatura, kif magħżul fis-settings.",
+    "showTemperature": "Uriha għall-ħami bit-temperatura",
+    "showCones": "Uriha għall-ħami bil-koni"
+  },
+  "notTranslated": "Din il-gwida għadha mhix tradotta, għalhekk qed tidher bl-Ingliż.",
+  "sectionInEnglish": "Din it-taqsima nbidlet minn meta ġiet tradotta, għalhekk qed tidher bl-Ingliż sakemm it-traduzzjoni tagħha tiġi aġġornata.",
+  "list": {
+    "title": "Gwidi",
+    "lead": "Gwidi f’lingwaġġ sempliċi għal min għadu jibda fiċ-ċeramika: minn x’inhu glejż sal-ħami tiegħu, u kif iżżomm lil kulħadd sikur matul it-triq.",
+    "note": "Dawn il-gwidi jiġbru dak li jippubblikaw il-manifatturi, l-aġenziji tas-sigurtà u fuħħarin b’esperjenza, bis-sorsi fl-aħħar ta’ kull waħda. Huma punt tat-tluq, mhux sostitut għall-iskedi ta’ data ta’ sigurtà tal-materjali tiegħek, għall-manwal tal-forn tiegħek jew għar-regoli lokali.",
+    "glazingBasics": {
+      "title": "Il-glejż mill-bidu nett",
+      "text": "X’inhu glejż, kif idub, u spjegazzjoni ta’ kull kelma li se tiltaqa’ magħha f’riċetta jew fuq xkora."
+    },
+    "makingAGlaze": {
+      "title": "Kif tagħmel glejż",
+      "text": "Kif tixtri, taħżen, tiżen, tħallat u tgħarbel glejż, imbagħad kif tittestjah u kif iżżomm ir-reġistri."
+    },
+    "safeMixing": {
+      "title": "Taħlit sikur u ventilazzjoni",
+      "text": "It-trab, ir-respiraturi, it-tindif, il-materjali li jeħtieġu l-akbar attenzjoni, u l-ventilazzjoni tal-forn."
+    },
+    "homeSafety": {
+      "title": "Tavvelenax lill-familja tiegħek",
+      "text": "Iċ-ċeramika d-dar mat-tfal u l-annimali domestiċi: il-ħażna, it-trab, il-forn, u x’tagħmel jekk tinbela’ xi ħaġa."
+    },
+    "firing": {
+      "title": "Il-ħami f’forn sempliċi",
+      "text": "Il-koni, is-sitters u s-swiċċijiet li tħaddem bl-idejn, bi programmi għall-ħamjiet tal-bisque u tal-glejż."
+    }
+  },
+  "contents": "F’din il-paġna",
+  "poison": {
+    "numbersFor": "Numri:",
+    "choose": "Agħżel il-pajjiż tiegħek",
+    "label": "Lil min iċċempel: {region}",
+    "caption": "Lil min iċċempel: {region} (numri ċċekkjati: {date})",
+    "for": "Għal xiex",
+    "call": "Ċempel",
+    "notes": "Ħinijiet u noti",
+    "emergency": "Emerġenza: telf mis-sensi, waqfien tan-nifs, aċċessjoni",
+    "poisonAdvice": "{who, select, children {Pariri dwar l-avvelenament: {name} (għat-tfal biss)} other {Pariri dwar l-avvelenament: {name}}}",
+    "or": "jew {number}",
+    "online": "Fuq l-internet: <link>{name}</link>.",
+    "poisonAdviceNone": "Pariri dwar l-avvelenament",
+    "noLine": "Ma stajniex nikkonfermaw linja pubblika tal-veleni hawn. Ċempel lit-tabib tiegħek, jew lin-numru tal-emerġenza jekk il-każ huwa urġenti.",
+    "medicalAdvice": "Pariri mediċi: {name}",
+    "animals": "Annimali: {name}",
+    "animalsNone": "Annimali",
+    "vet": "Ċempel lill-veterinarju tiegħek.",
+    "checkedOn": "Iċċekkjat:",
+    "choosePrompt": "Agħżel il-pajjiż tiegħek biex tara lil min iċċempel hemmhekk.",
+    "ministry": "Il-paġna tal-ministeru tas-saħħa: <link>{name}</link>."
+  },
+  "density": {
+    "sg": "gravità speċifika {value}",
+    "baume": "{value} °Bé ({sg})",
+    "pint": "{value} oz kull pinta imperjali ({sg})"
+  },
+  "shops": {
+    "shopsIn": "Ħwienet:",
+    "label": "Ħwienet: {region}",
+    "caption": "Xi ħwienet li jbigħu materji primi għall-glejż: {region} (iċċekkjat: {date})",
+    "nearbyCaption": "Ħwienet f’pajjiżi oħra li jgħidu li jwasslu f’dan il-pajjiż: {region} (iċċekkjat: {date})",
+    "shop": "Ħanut",
+    "sells": "Ibigħ",
+    "packs": "Daqsijiet tal-pakketti li rajna",
+    "seen": "Materjali li rajna, bl-ismijiet tal-ħanut",
+    "what": {
+      "materials": "materji primi għall-glejż",
+      "frits": "fritti",
+      "oxides": "ossidi",
+      "stains": "pigmenti",
+      "clays": "tafal",
+      "glazes": "glejżijiet lesti",
+      "kilns": "fran"
+    },
+    "none": "Ma sibna l-ebda ħanut li jbigħ materji primi għall-glejż ({region}).",
+    "unknown": "Għadna ma fittixniex ħwienet f’dan il-pajjiż ({region}).",
+    "choosePrompt": "Agħżel il-pajjiż tiegħek biex tara l-ħwienet hemmhekk."
+  },
+  "silica": {
+    "limitIn": "Limitu:",
+    "label": "Il-limitu tas-silika: {region}",
+    "caption": "Il-limitu fuq il-post tax-xogħol għas-silika kristallina respirabbli, medja ta’ 8 sigħat: {region} (iċċekkjat: {date})",
+    "both": "Kwarz u kristobalit",
+    "quartz": "Kwarz",
+    "cristobalite": "Kristobalit",
+    "actionLevel": "Livell ta’ azzjoni",
+    "value": "{value} mg/m³",
+    "kind": {
+      "binding": "Limitu vinkolanti.",
+      "indicative": "Limitu indikattiv: valur ta’ gwida, mhux limitu legali.",
+      "assessment": "Kriterju ta’ valutazzjoni, mhux limitu vinkolanti."
+    },
+    "setBy": "Stabbilit minn <link>{law}</link>.",
+    "lowerThanEu": "Aktar baxx mil-limitu vinkolanti tal-UE ta’ {value} mg/m³.",
+    "sameAsEu": "L-istess bħal-limitu vinkolanti tal-UE.",
+    "unknown": "Ma stajniex nikkonfermaw il-limitu nazzjonali ({region}). Il-limitu vinkolanti tal-UE ta’ {value} mg/m³ japplika f’kull Stat Membru.",
+    "noData": "Għadna ma kkonfermajniex il-limitu ({region}).",
+    "agency": "L-awtorità nazzjonali għas-saħħa u s-sigurtà fuq il-post tax-xogħol: <link>{name}</link>.",
+    "agencySilica": "<link>Il-paġna tagħha dwar is-silika</link>.",
+    "choosePrompt": "Agħżel il-pajjiż tiegħek biex tara l-limitu tiegħu."
+  },
+  "food": {
+    "rulesIn": "Regoli:",
+    "label": "Limiti għall-oġġetti taċ-ċeramika ({region})",
+    "caption": "Kemm tista’ tirrilaxxa biċċa moħmija fit-test legali: {region} (iċċekkjat: {date})",
+    "article": "Tip ta’ oġġett",
+    "lead": "Ċomb",
+    "cadmium": "Kadmju",
+    "category": {
+      "flat": "Oġġetti li ma jistgħux jimtlew, jew li l-fond ta’ ġewwa tagħhom ma jaqbiżx il-25 mm",
+      "fillable": "Oġġetti oħra li jistgħu jimtlew",
+      "cooking": "Oġġetti tat-tisjir ta’ kull daqs; reċipjenti tal-imballaġġ u tal-ħażna ta’ iktar minn 3 L",
+      "rimBand": "It-tarf ta’ oġġett li tixrob minnu: strixxa ta’ 2 cm, minn ġewwa u minn barra",
+      "rimArticle": "It-tarf ta’ oġġett li tixrob minnu: strixxa ta’ 20 mm minn barra, taħt ix-xifer ta’ fuq, għal kull oġġett",
+      "flatware": "Oġġetti ċatti, mhux iktar fondi minn 25 mm",
+      "smallHollow": "Oġġetti fondi żgħar, inqas minn 1.1 L, minbarra tazzi u mugs",
+      "cups": "Tazzi u mugs",
+      "largeHollow": "Oġġetti fondi kbar, 1.1 L jew aktar, minbarra qliel",
+      "pitchers": "Qliel",
+      "auSmall": "Tazzi, mugs, qliel, skutelli, brieki tat-te u oġġetti oħra tal-mejda ta’ inqas minn 1100 mL",
+      "auLarge": "L-istess, ta’ 1100 mL jew aktar",
+      "auPlates": "Platti, plattini u oġġetti simili tal-mejda",
+      "auCooking": "Oġġetti tat-tisjir"
+    },
+    "judged": {
+      "average": "medja ta’ 6 biċċiet",
+      "each": "kull waħda mis-6"
+    },
+    "euRules": "Hawn japplikaw ir-regoli tal-UE.",
+    "law": "Stabbiliti minn <link>{law}</link>.",
+    "inForce": "Data tad-dħul fis-seħħ: {date}.",
+    "unknown": "Għadna ma kkonfermajniex ir-regoli ({region}).",
+    "choosePrompt": "Agħżel il-pajjiż tiegħek biex tara r-regoli tiegħu."
+  },
+  "equivalents": {
+    "buyingIn": "Fejn tixtri:",
+    "label": "{library, select, US {Ekwivalenti li jinbiegħu fl-Istati Uniti} UK {Ekwivalenti li jinbiegħu fir-Renju Unit} EU {Ekwivalenti li jinbiegħu fl-UE} other {Ekwivalenti li jinbiegħu fl-Awstralja u New Zealand}}",
+    "caption": "{library, select, US {Materjali li ma jinbigħux fl-Istati Uniti, kull wieħed bl-eqreb materjal li jinbiegħ hemmhekk} UK {Materjali li ma jinbigħux fir-Renju Unit, kull wieħed bl-eqreb materjal li jinbiegħ hemmhekk} EU {Materjali li ma jinbigħux fl-UE, kull wieħed bl-eqreb materjal li jinbiegħ hemmhekk} other {Materjali li ma jinbigħux fl-Awstralja u New Zealand, kull wieħed bl-eqreb materjal li jinbiegħ hemmhekk}}",
+    "material": "F’riċetta",
+    "soldIn": "Fejn jinbiegħ",
+    "closest": "{library, select, US {L-eqreb li jinbiegħ fl-Istati Uniti} UK {L-eqreb li jinbiegħ fir-Renju Unit} EU {L-eqreb li jinbiegħ fl-UE} other {L-eqreb li jinbiegħ fl-Awstralja u New Zealand}}",
+    "apart": "differenza ta’ {grams} g kull 100 g",
+    "noneClose": "Xejn b’differenza ta’ mhux aktar minn 15 g kull 100 g: qabbel il-kimika.",
+    "loading": "Il-librerija qed titgħabba…",
+    "failed": "Il-librerija ma setgħetx titgħabba. Erġa’ pprova aktar tard.",
+    "choosePrompt": "Agħżel il-pajjiż tiegħek biex tara x’jinbiegħ hemmhekk."
+  }
+}

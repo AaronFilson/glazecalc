@@ -2,7 +2,7 @@ import { Component, Injector, OnInit, afterNextRender, inject, signal } from '@a
 import { TranslocoDirective, translate } from '@jsverse/transloco';
 import { marker } from '@jsverse/transloco-keys-manager/marker';
 import { FORMAT_LOCALES, REGIONS } from '../../../../lib/regions';
-import { baseLanguage, textLanguage } from '../../../../lib/regions/languages';
+import { baseLanguage, languageFor, textLanguage } from '../../../../lib/regions/languages';
 import { errorMessage } from '../../core/error-message';
 import { LocaleService } from '../../core/locale.service';
 import { Preferences, PreferencesService } from '../../core/preferences.service';
@@ -137,7 +137,14 @@ function settingsIn(pageLanguage: string, offered: readonly string[]): Setting[]
       id: 'notice',
       choices: [
         choice('shown', marker('account.settings.notice.shown.label'), marker('account.settings.notice.shown.saved')),
-        choice('hidden', marker('account.settings.notice.hidden.label'), marker('account.settings.notice.hidden.saved'))
+        choice(
+          'hidden',
+          marker('account.settings.notice.hidden.label'),
+          // Where a line of it stays: on every page in the languages AI translates less well.
+          languageFor(pageLanguage)?.plainNotice
+            ? marker('account.settings.notice.hidden.savedPlain')
+            : marker('account.settings.notice.hidden.saved')
+        )
       ]
     })
   ];

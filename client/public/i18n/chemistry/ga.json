@@ -1,0 +1,23 @@
+{
+  "unknown-compound": "Comhdhúil anaithnid {compound} san fhoirmle",
+  "unknown-oxide": "Ocsaíd anaithnid {oxide} san ábhar {material}",
+  "invalid-oxide-amount": "Méid neamhbhailí don ocsaíd {oxide} san ábhar {material}",
+  "loi-range": "Ní mór LOI an ábhair {material} a bheith 0 ar a laghad agus níos lú ná 100",
+  "no-oxides": "Níl aon ocsaídí san ábhar {material}",
+  "no-name": "Ní mór ainm a bheith ar an ábhar",
+  "no-analysis": "Tá foirmle nó anailís ag teastáil ón ábhar {material}",
+  "recipe-shape": "Ní mór don oideas a bheith ina eagar de '{ material, amount }' nó ina mhapa méideanna",
+  "invalid-amount": "Méid neamhbhailí don ábhar {material}",
+  "missing-material": "Tá ábhar in easnamh i líne den oideas",
+  "unknown-material": "Ábhar anaithnid {material}",
+  "no-flux": "Níl aon ocsaídí floscacha san oideas, mar sin níl an fhoirmle Seger (UMF) sainithe",
+  "no-target": "Níl aon ocsaídí sa sprioc le díriú orthu",
+  "no-materials": "Níl aon ábhair ann le hoibriú amach",
+  "no-temperature": "Tá teocht na bácála ag teastáil chun an bórón a shocrú",
+  "no-flux-to-rebuild": "Níl aon fhlosc sa ghlónra le hatógáil",
+  "unknown-element": "Dúil anaithnid {element} san fhoirmle {formula}",
+  "bad-formula": "Níorbh fhéidir an fhoirmle {formula} a pharsáil",
+  "analysis-total": "Is ionann iomlán anailís an ábhair {material} agus {total}%, LOI san áireamh; bhíothas ag súil le thart ar 100%.",
+  "stored-equivalent": "Ní réitíonn an meáchan coibhéiseach stóráilte don ábhar {material} lena fhoirmle agus lena LOI; baineadh úsáid as an bhfoirmle agus as an LOI ina ionad.",
+  "trace-flux": "Níl ach rianta d’ocsaídí floscacha san oideas, mar sin níl brí leis an bhfoirmle Seger (UMF)."
+}
