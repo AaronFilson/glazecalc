@@ -55,7 +55,7 @@
     "@formatjs/icu-messageformat-parser": "3.5.20",
     "bcrypt": "6.0.0",
     "express": "5.2.1",
-    "express-rate-limit": "8.7.0",
+    "express-rate-limit": "8.7.1",
     "intl-messageformat": "12.1.2",
     "jsonwebtoken": "9.0.3",
     "mongoose": "9.10.4",
