@@ -77,7 +77,7 @@
     "@fontsource-variable/noto-serif": "5.3.0",
     "@jsverse/transloco": "8.4.0",
     "@jsverse/transloco-keys-manager": "8.1.1",
-    "@playwright/test": "1.63.0",
+    "@playwright/test": "1.64.0",
     "@types/bcrypt": "6.0.0",
     "@types/chai": "5.2.3",
     "@types/express": "5.0.6",
