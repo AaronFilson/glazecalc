@@ -50,6 +50,16 @@ export const currentUser = async (req: Request): Promise<UserDocument | null> =>
   return user;
 };
 
+/**
+ * Whether the request's sign-in was kept past the browser session, for a route
+ * that renews the cookie. Tokens made without a choice (scripts, older ones) were kept.
+ */
+export const keepsSignIn = (req: Request): boolean => {
+  const token = tokenOf(req);
+  const claims = token ? jwt.decode(token) : null;
+  return !(claims && typeof claims === 'object' && claims.ss === true);
+};
+
 /** The signed-in user, in a route behind jwtAuth. */
 export const userOf = (req: Request): UserDocument => {
   if (!req.user) throw new Error('jwtAuth must run before this route');

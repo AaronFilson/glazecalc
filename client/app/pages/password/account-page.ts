@@ -6,7 +6,7 @@ import { TranslocoDirective, translate } from '@jsverse/transloco';
 import { AuthService } from '../../core/auth.service';
 import { errorMessage } from '../../core/error-message';
 import { ExportSection } from './export-section';
-import { FieldCheck, FieldChecks, filled, newPassword, samePassword } from '../../shared/field-checks';
+import { FieldCheck, FieldChecks, emailAddress, filled, newPassword, samePassword } from '../../shared/field-checks';
 import { Notices, NoticesList } from '../../shared/notices';
 import { PageHeader } from '../../shared/page-header';
 import { SettingsSection } from './settings-section';
@@ -50,6 +50,15 @@ import { SettingsSection } from './settings-section';
         [lead]="auth.email() ? t('account.account.signedInAs', { email: auth.email() }) : ''"
       />
       <gc-notices [notices]="notices" />
+      @if (auth.unverified()) {
+        <section class="auth-text unverified-email">
+          <h2>{{ t('account.account.unverifiedHeading') }}</h2>
+          <p>{{ t('account.account.unverifiedText', { email: auth.email() }) }}</p>
+          <button type="button" class="btn btn-light border" (click)="resend()" [attr.aria-disabled]="busy() || null">
+            {{ t('account.account.resend') }}
+          </button>
+        </section>
+      }
       <gc-settings />
       <gc-export />
 
@@ -104,6 +113,57 @@ import { SettingsSection } from './settings-section';
             {{ t('account.account.change') }}
           </button>
         </form>
+      </section>
+
+      <section class="auth-text">
+        <h2>{{ t('account.account.emailHeading') }}</h2>
+        <p>{{ t('account.account.emailText') }}</p>
+        <form (ngSubmit)="changeEmail()" class="account-form">
+          <div class="mb-3">
+            <label for="new-email" class="form-label">{{ t('account.account.newEmail') }}</label>
+            <input
+              id="new-email"
+              type="email"
+              name="newEmail"
+              class="form-control"
+              required
+              autocomplete="email"
+              [(ngModel)]="newEmail"
+              [gcField]="emailChecks"
+              gcFieldName="newEmail"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="email-password" class="form-label">{{ t('account.account.emailPassword') }}</label>
+            <input
+              id="email-password"
+              type="password"
+              name="emailPassword"
+              class="form-control"
+              required
+              autocomplete="current-password"
+              [(ngModel)]="emailPassword"
+              [gcField]="emailChecks"
+              gcFieldName="emailPassword"
+            />
+          </div>
+          <button type="submit" class="btn btn-primary" [attr.aria-disabled]="busy() || null">
+            {{ t('account.account.emailSend') }}
+          </button>
+        </form>
+      </section>
+
+      <section class="auth-text">
+        <h2>{{ t('account.account.signOutHeading') }}</h2>
+        <p>{{ t('account.account.signOutText') }}</p>
+        <button
+          type="button"
+          class="btn btn-outline-secondary"
+          (click)="signOutEverywhere()"
+          [attr.aria-disabled]="busy() || null"
+        >
+          {{ t('account.account.signOutButton') }}
+        </button>
       </section>
 
       <section class="auth-text">
@@ -183,6 +243,56 @@ export class AccountPage {
       // The server calls the password it checks "password".
       if (this.deleteChecks.reportServer(err, { password: 'deletePassword' })) return;
       this.notices.error(errorMessage(err, translate('account.account.deleteFailed')));
+    } finally {
+      this.busy.set(false);
+    }
+  }
+
+  // Changing the email, confirming it, and signing out everywhere.
+  protected readonly newEmail = signal('');
+  protected readonly emailPassword = signal('');
+  protected readonly emailChecks = new FieldChecks(() => ({
+    newEmail: emailAddress(this.newEmail),
+    emailPassword: filled(this.emailPassword, translate('account.account.currentMissing'))
+  }));
+
+  protected async changeEmail(): Promise<void> {
+    if (this.busy() || !this.emailChecks.validate()) return;
+    this.busy.set(true);
+    try {
+      this.notices.success(await this.auth.changeEmail(this.newEmail(), this.emailPassword()));
+      this.newEmail.set('');
+      this.emailPassword.set('');
+    } catch (err) {
+      this.emailPassword.set('');
+      // The server calls the fields "email" and "password".
+      if (this.emailChecks.reportServer(err, { email: 'newEmail', password: 'emailPassword' })) return;
+      this.notices.error(errorMessage(err, translate('account.account.emailFailed')));
+    } finally {
+      this.busy.set(false);
+    }
+  }
+
+  protected async resend(): Promise<void> {
+    if (this.busy()) return;
+    this.busy.set(true);
+    try {
+      this.notices.success(await this.auth.resendVerification());
+    } catch (err) {
+      this.notices.error(errorMessage(err, translate('account.account.resendFailed')));
+    } finally {
+      this.busy.set(false);
+    }
+  }
+
+  protected async signOutEverywhere(): Promise<void> {
+    if (this.busy()) return;
+    this.busy.set(true);
+    try {
+      await this.auth.signOutEverywhere();
+      await this.router.navigateByUrl('/signin');
+    } catch (err) {
+      this.notices.error(errorMessage(err, translate('account.account.signOutFailed')));
     } finally {
       this.busy.set(false);
     }

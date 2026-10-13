@@ -45,6 +45,18 @@ export const MESSAGES = {
     'If an account uses that email, we have sent it a link to reset the password. The link works for ' +
     p.minutes +
     ' minutes.',
+  'signed-out-everywhere': 'You have been signed out on every device.',
+  'email-unavailable': 'Email is not available yet, so we cannot send the link.',
+  'email-change-sent': (p: Params) =>
+    'We have sent a link to the new address. Your email changes when you open it. The link works for ' +
+    p.hours +
+    ' hours.',
+  'email-changed': 'Your email has been changed. Please sign in again with the new address.',
+  'email-verified': 'Your email is confirmed.',
+  'email-link-bad': 'This link is not valid or has expired. Please ask for a new one.',
+  'verification-sent': (p: Params) =>
+    'We have sent a new link to your email. The link works for ' + p.hours + ' hours.',
+  'already-verified': 'Your email is already confirmed.',
   'reset-link-bad': 'This reset link is not valid or has expired. Please ask for a new one.',
 
   // Trials.
@@ -95,6 +107,7 @@ export const MESSAGES = {
   'too-many-sign-ups': 'Too many new accounts from this address. Please try again later.',
   'too-many-trials': 'Too many trials from this address. Please try again later, or create a free account.',
   'too-many-resets': 'Too many password reset requests. ' + WAIT,
+  'too-many-email-links': 'Too many emails requested. ' + WAIT,
   'too-many-attempts': 'Too many attempts. ' + WAIT
 } satisfies Record<string, Text>;
 

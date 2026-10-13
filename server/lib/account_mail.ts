@@ -517,3 +517,82 @@ export const sendDeleted = (to: string, language?: string): Promise<void> => {
     text: fill(email.text, { account: to, days: BACKUP_DAYS, app: mailer.appUrl() })
   });
 };
+
+// The emails about confirming an address. English only for now: a language
+// without a translation gets English, as with the others.
+
+/** Sent to a new account's address: {account}, {link}, {hours} and {app}. */
+export const VERIFY: Record<string, Email> = {
+  en: {
+    subject: 'Confirm your email for Glazecalc',
+    text:
+      'Someone (hopefully you) made a Glazecalc account with the address {account}.\n\n' +
+      'To confirm that this address is yours, open this link within {hours} hours:\n\n' +
+      '{link}\n\n' +
+      'The link works once. If you did not make an account, ignore this email; nothing else will be sent to you unless you ask for it.\n' +
+      '\n-- \nGlazecalc, {app}\n'
+  }
+};
+
+/** Sent to the new address of an email change: {account}, {link}, {hours} and {app}. */
+export const CONFIRM_CHANGE: Record<string, Email> = {
+  en: {
+    subject: 'Confirm your new email for Glazecalc',
+    text:
+      'Someone (hopefully you) asked to use {account} as the email for their Glazecalc account.\n\n' +
+      'To make the change, open this link within {hours} hours:\n\n' +
+      '{link}\n\n' +
+      'The link works once, and every device that was signed in will be signed out. If you did not ask for this, ignore this email; nothing will change.\n' +
+      '\n-- \nGlazecalc, {app}\n'
+  }
+};
+
+/** Sent to the old address when a change is asked for: {account}, {forgot} and {app}. */
+export const CHANGE_NOTICE: Record<string, Email> = {
+  en: {
+    subject: 'A new email was requested for your Glazecalc account',
+    text:
+      'A change of email was just asked for on the Glazecalc account {account}. A link was sent to the new address, and the change happens only when that link is opened.\n\n' +
+      'If this was you, there is nothing else to do. If not, someone may know your password: reset it right away at {forgot}\n' +
+      '\n-- \nGlazecalc, {app}\n'
+  }
+};
+
+/** Whole hours a link works for, as the emails say. */
+export const sendVerify = (to: string, token: string, hours: number, language?: string): Promise<void> => {
+  const email = inLanguage(VERIFY, language);
+  return mailer.send({
+    to,
+    subject: email.subject,
+    // After the #, like a reset link's token, so it stays in the browser.
+    text: fill(email.text, {
+      account: to,
+      link: pageIn(language, '/confirm-email#token=' + token),
+      hours,
+      app: mailer.appUrl()
+    })
+  });
+};
+
+export const sendConfirmChange = (to: string, token: string, hours: number, language?: string): Promise<void> => {
+  const email = inLanguage(CONFIRM_CHANGE, language);
+  return mailer.send({
+    to,
+    subject: email.subject,
+    text: fill(email.text, {
+      account: to,
+      link: pageIn(language, '/confirm-email#token=' + token),
+      hours,
+      app: mailer.appUrl()
+    })
+  });
+};
+
+export const sendChangeNotice = (to: string, language?: string): Promise<void> => {
+  const email = inLanguage(CHANGE_NOTICE, language);
+  return mailer.send({
+    to,
+    subject: email.subject,
+    text: fill(email.text, { account: to, forgot: pageIn(language, '/forgot'), app: mailer.appUrl() })
+  });
+};
