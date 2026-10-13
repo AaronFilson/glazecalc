@@ -30,7 +30,13 @@ const languagesFile = ROOT + 'lib/regions/languages.js';
 let languages = readFileSync(languagesFile, 'utf8');
 for (const code of codes) {
   const line = new RegExp(`^(  language\\('${code}', '[^']+', '[^']+')\\),$`, 'm');
+  // A language with options of its own (Irish, Maltese: { plainNotice: true }) gets live first among them.
+  const withOptions = new RegExp(
+    `^(  language\\('${code}', '[^']+', '[^']+', \\{ )(?!live: true)([^}\\n]*\\}\\)),$`,
+    'm'
+  );
   if (line.test(languages)) languages = languages.replace(line, '$1, { live: true }),');
+  else if (withOptions.test(languages)) languages = languages.replace(withOptions, '$1live: true, $2,');
   else if (!new RegExp(`^  language\\('${code}', [^\\n]*live: true`, 'm').test(languages))
     throw new Error(code + ': not in languages.js');
 }
@@ -74,6 +80,9 @@ for (const code of codes) {
   const sg = account.settings?.density?.sg;
   if (!sg) throw new Error(code + ': no settings.density.sg');
   const number = new Intl.NumberFormat(code, { minimumFractionDigits: 2 }).format(1.45);
+  // The English's example copied in by a translator ("SG 1.45") is filled like a missing one.
+  const english = JSON.parse(readFileSync(I18N + 'account/en.json', 'utf8')).settings.density.sg.example;
+  if (sg.example === english) delete sg.example;
   if (sg.example) {
     const repeats = sg.example.toLowerCase().startsWith(sg.label.trim().toLowerCase() + ' ');
     if (!repeats) continue;

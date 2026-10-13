@@ -33,12 +33,14 @@ Per language, in order:
    progress. If the English changed during the wave and every translation was brought into line, name the changed
    sections in its `KEEP` list first. Then, in a worktree at the commit (so files of languages in progress are not
    read): `npm run check:i18n`, lint, `npm test`, `npm run test:client`, `npm run test:e2e`, `npm run
-test:e2e:linux`; update the README's language count and the changelog.
+test:e2e:linux`; update the README's language count and the changelog. Put the worktree on the same drive as the
+   repository and link its `node_modules` with a junction (`mklink /J`): across drives the client build cannot
+   resolve the fonts' files. Remove the junction (`rmdir`) before the worktree.
 
 A lesson found mid-wave goes into every prompt not yet started (`node lesson.js "<lesson>" <files…>`) and then into
 the templates. A correction to the English goes into every language at once (`wave3-firing-fix.md`,
-`safe-mixing-pass.md`), and a slip found in a new language is checked in the live ones (`wave3-live-notfully.md`).
-`wave2-log.md` and `wave3-log.md` are the working logs: what each step found. The examples keep the scratch paths of
+`safe-mixing-pass.md`), and a slip found in a new language is checked in the live ones (`wave3-live-notfully.md`, `wave4-live-barium.md`).
+`wave2-log.md`, `wave3-log.md` and `wave4-log.md` are the working logs: what each step found. The examples keep the scratch paths of
 the sessions that wrote them.
 
 **How waves 2 and 3 ran agents:** one per prompt (a fresh agent told to read the prompt file and do what it says),
@@ -46,7 +48,7 @@ the sessions that wrote them.
 parts first, interleaving the next language's translations with the last one's reviews. A log in the scratch folder
 (as `wave3-log.md`) keeps the queue and what each agent reported.
 
-## Wave 4: Irish and Maltese
+## Wave 4: Irish and Maltese (done)
 
 The owner chose to translate both (2026-10-10; docs/i18n-plan.md, "The plan, reviewed critically", point 2). Over 90%
 of Irish and Maltese respondents read English, and machine translation is weakest for them, so:
@@ -61,6 +63,14 @@ of Irish and Maltese respondents read English, and machine translation is weakes
   (one, two, few, many, other) and initial mutations after the article and numbers; Maltese has its own five
   (one, two, few, many, other) and the article's assimilation (il-, ix-, iż-…), which a `{name}` placeholder cannot take.
 - **Who reads it:** Ireland's region lists English first (`lib/regions/index.js`), Malta's Maltese first.
+- **Numbers:** both write 1.5 with a point, as English does; the numbers check takes each language's decimal mark from
+  CLDR (`numbersIn` in scripts/i18n-check.mjs).
+
+What wave 4 taught, now in the templates: check that every negation and hedge survived (a safety guide lost a "never",
+another a "may"), and that a comparison of two materials cannot read the other way round; name the UK's HSE as the
+UK's where a country has its own (Ireland's HSE is its health service). The consistency prompts
+(`wave4-consistency-ga.md`, `wave4-consistency-mt.md`) list what the reviews found. A usage limit stopped the wave
+once: a stopped agent can be resumed with a message, and goes on from its transcript.
 
 ## After the EU
 

@@ -55,7 +55,7 @@ Label: Ábhair intuaslagtha
 
 ### Ábhair datha agus luaidhe
 
-Is iad **ábhair datha**{{en: colorants}} na hocsaídí miotail agus na líocha{{en: stains}} a thugann a dhath do ghlónra: copar, cóbalt, cróm, mangainéis, nicil, líocha caidmiam-seiléiniam agus eile. Luann leathanach sábháilteachta ceirmeachta ó ollscoil luaidhe, caidmiam, cóbalt agus cróimiam i measc na gcomhábhar glónra atá thar a bheith guaiseach. Níor aimsíomar aon fhigiúirí dáileoige iontaofa d’aon ábhar datha, mar sin cuir glao, is cuma cén méid. Bíonn na hábhair chéanna i mbuicéad glónra measctha agus a bhí sna málaí as ar tháinig sé, ach iad fliuch.
+Is iad **ábhair datha**{{en: colorants}} na hocsaídí miotail agus na líocha{{en: stains}} a thugann a dhath do ghlónra: copar, cóbalt, cróm, mangainéis, nicil, líocha caidmiam-seiléiniam agus eile. Luann leathanach sábháilteachta ceirmeachta ó ollscoil luaidhe, caidmiam, cóbalt agus cróimiam i measc na gcomhábhar glónra atá guaiseach go háirithe. Níor aimsíomar aon fhigiúirí dáileoige iontaofa d’aon ábhar datha, mar sin cuir glao, is cuma cén méid. Bíonn na hábhair chéanna i mbuicéad glónra measctha agus a bhí sna málaí as ar tháinig sé, ach iad fliuch.
 
 Tá príomhchontúirt na luaidhe difriúil: ní spúnóg amháin, ach méideanna beaga deannaigh a shlogtar thar sheachtainí nó thar mhíonna, gan aon chomharthaí rabhaidh (féach ‘Luaidhe agus leanaí’, thíos).
 
@@ -167,7 +167,7 @@ Molann Rio Grande **ciorcad tiomnaithe** (ciorcad nach dtugann cumhacht d’aon 
 
 ### A bheith i láthair nuair a chríochnaíonn an bhácáil
 
-Is é **Kiln-Sitter**{{en: kiln sitter}} an lasc mheicniúil atá ar go leor áitheanna láimhe: lúbann cón{{en: cone}} beag ag deireadh na bácála agus cuireann sé an lasc as. Deir a lámhleabhar “NÍL sé ceaptha feidhmiú mar ghléas múchta slánchinnte.” Deir Rio Grande gan áith atá ag bácáil a fhágáil gan aire riamh, “go háirithe in aice leis an am múchta a bhfuiltear ag súil leis”. Mar sin, ná bácáil ach nuair a bheidh duine fásta sa bhaile agus ina dhúiseacht do dheireadh na bácála, seiceáil gur mhúch an áith, agus coinnigh múchtóir dóiteáin ABC i seomra na háithe. Chun a fháil amach conas a oibríonn Kiln-Sitter, rialaitheoirí agus cláir bhácála, féach an treoirleabhar [Bácáil in áith shimplí](/guides/firing).
+Is é **Kiln-Sitter** an lasc mheicniúil atá ar go leor áitheanna láimhe: lúbann cón{{en: cone}} beag ag deireadh na bácála agus cuireann sé an lasc as. Deir a lámhleabhar “NÍL sé ceaptha feidhmiú mar ghléas múchta slánchinnte.” Deir Rio Grande gan áith atá ag bácáil a fhágáil gan aire riamh, “go háirithe in aice leis an am múchta a bhfuiltear ag súil leis”. Mar sin, ná bácáil ach nuair a bheidh duine fásta sa bhaile agus ina dhúiseacht do dheireadh na bácála, seiceáil gur mhúch an áith, agus coinnigh múchtóir dóiteáin ABC i seomra na háithe. Chun a fháil amach conas a oibríonn Kiln-Sitter, rialaitheoirí agus cláir bhácála, féach an treoirleabhar [Bácáil in áith shimplí](/guides/firing).
 
 ### Múch agus aonocsaíd charbóin
 

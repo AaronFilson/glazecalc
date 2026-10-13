@@ -232,6 +232,26 @@ export const RESET: Record<string, Email> = {
       'Link töötab ühe korra. Kui te seda ei palunud, jätke see e-kiri tähelepanuta; teie parool jääb samaks.\n' +
       '\n' +
       '-- \nGlazecalc, {app}\n'
+  },
+  ga: {
+    subject: 'Athshocraigh do phasfhocal Glazecalc',
+    text:
+      'D’iarr duine éigin (tusa, tá súil againn) an pasfhocal a athshocrú don chuntas Glazecalc {account}.\n\n' +
+      'Chun pasfhocal nua a roghnú, oscail an nasc seo laistigh de {minutes} nóiméad:\n\n' +
+      '{link}\n\n' +
+      'Ní oibríonn an nasc ach uair amháin. Mura tusa a d’iarr é seo, déan neamhaird den ríomhphost seo; fanfaidh do phasfhocal mar an gcéanna.\n' +
+      '\n' +
+      '-- \nGlazecalc, {app}\n'
+  },
+  mt: {
+    subject: 'Irrisettja l-password tiegħek ta’ Glazecalc',
+    text:
+      'Xi ħadd (nittamaw li kont int) talab li tiġi rrisettjata l-password tal-kont {account} ta’ Glazecalc.\n\n' +
+      'Biex tagħżel password ġdida, iftaħ dan il-link fi żmien {minutes} min:\n\n' +
+      '{link}\n\n' +
+      'Il-link jaħdem darba biss. Jekk ma talabtx dan, injora dan il-messaġġ; il-password tiegħek tibqa’ l-istess.\n' +
+      '\n' +
+      '-- \nGlazecalc, {app}\n'
   }
 };
 
@@ -409,6 +429,22 @@ export const CHANGED: Record<string, Email> = {
     text:
       'Glazecalci konto {account} parool muudeti just praegu ja kõik seadmed, kus konto oli sisse logitud, on välja logitud.\n\n' +
       'Kui see olite teie, ei pea te midagi muud tegema. Kui mitte, lähtestage parool kohe siin: {forgot}\n' +
+      '\n' +
+      '-- \nGlazecalc, {app}\n'
+  },
+  ga: {
+    subject: 'Athraíodh do phasfhocal Glazecalc',
+    text:
+      'Athraíodh an pasfhocal don chuntas Glazecalc {account} anois díreach, agus síníodh amach gach gléas a bhí sínithe isteach.\n\n' +
+      'Más tusa a rinne é, níl aon rud eile le déanamh. Mura tusa, athshocraigh do phasfhocal láithreach anseo: {forgot}\n' +
+      '\n' +
+      '-- \nGlazecalc, {app}\n'
+  },
+  mt: {
+    subject: 'Il-password tiegħek ta’ Glazecalc inbidlet',
+    text:
+      'Il-password tal-kont {account} ta’ Glazecalc għadha kif inbidlet, u kull apparat li kien dieħel fil-kont ħareġ minnu.\n\n' +
+      'Jekk kont int, m’hemmx għalfejn tagħmel xejn aktar. Jekk le, irrisettja l-password tiegħek minnufih hawn: {forgot}\n' +
       '\n' +
       '-- \nGlazecalc, {app}\n'
   }
