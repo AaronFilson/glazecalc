@@ -63,6 +63,14 @@
     "delete": "Delete my account",
     "deleteFailed": "Error: could not delete the account. Please try again."
   },
+  "export": {
+    "heading": "Download my data",
+    "text": "Save a copy of everything your account holds as one file: your details, settings, materials on hand, recipes, materials, additives, notes, firing logs, advice and trash. It does not include your password. Keep the file somewhere private, because it holds all you saved.",
+    "json": "Download everything (JSON)",
+    "csvText": "Or save a spreadsheet of just your recipes or just your own materials, to open in Excel, Numbers or Sheets.",
+    "recipes": "Recipes (CSV)",
+    "materials": "Materials (CSV)"
+  },
   "settings": {
     "heading": "Settings",
     "intro": "Saved with your account, so they hold on every device.",

@@ -25,7 +25,16 @@ export interface DeletedAccount {
 }
 
 // Collections whose records belong to a user (ownedBy) and go when the account does.
-const OWNED_MODELS: RecordModel[] = [Additive, Advice, Firing, Material, Note, Recipe, Trash];
+export const OWNED_KINDS: Record<string, RecordModel> = {
+  additives: Additive,
+  advice: Advice,
+  firing: Firing,
+  materials: Material,
+  notes: Note,
+  recipes: Recipe,
+  trash: Trash
+};
+const OWNED_MODELS: RecordModel[] = Object.values(OWNED_KINDS);
 // Accounts removed at a time when the log is re-applied.
 const BATCH = 500;
 
