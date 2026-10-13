@@ -22,7 +22,7 @@ import { AdvicePage } from './advice/advice-page';
 import { HomePage } from './home/home-page';
 import { LandingPage } from './landing/landing-page';
 import { NotFoundPage } from './not-found/not-found-page';
-import { PrivacyPage } from './privacy/privacy-page';
+import { PRIVACY_ADDRESS, PrivacyPage, STORED } from './privacy/privacy-page';
 import { NotesPage } from './notes/notes-page';
 import { TrashPage } from './trash/trash-page';
 
@@ -55,6 +55,26 @@ describe('static pages', () => {
       const { fixture } = await create(page);
       expect(fixture.nativeElement.querySelectorAll('h1').length).toBe(1);
     }
+  });
+
+  it('gives the private contact, and lists the cookie and every storage key with what it is for and how long it stays', async () => {
+    const { fixture } = await create(PrivacyPage);
+    const mail = [...fixture.nativeElement.querySelectorAll('a')].filter(
+      (a: HTMLAnchorElement) => a.getAttribute('href') === 'mailto:' + PRIVACY_ADDRESS
+    );
+    expect(mail.length).toBeGreaterThan(0);
+    const rows = [...fixture.nativeElement.querySelectorAll('#storage tbody tr')] as HTMLElement[];
+    expect(rows.length).toBe(STORED.length);
+    const names = rows.flatMap((row) => [...row.querySelectorAll('th code')].map((code) => code.textContent));
+    expect(names).toEqual(expect.arrayContaining(['glazecalc_session', 'session', 'trial', 'preferredRegion']));
+    expect(names).toEqual(expect.arrayContaining(['visitor.language', 'region', 'printBatch', 'reloadedFor']));
+    expect(names.length).toBe(27);
+    for (const row of rows) {
+      const cells = [...row.querySelectorAll('td')].map((td) => td.textContent?.trim() ?? '');
+      expect(cells.length).toBe(2);
+      expect(cells.every((cell) => cell.length > 0 && !cell.startsWith('site.'))).toBe(true);
+    }
+    expect(text(fixture, '#storage')).toContain('there is no cookie banner');
   });
 });
 

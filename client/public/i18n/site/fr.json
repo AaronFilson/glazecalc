@@ -64,24 +64,7 @@
   "privacy": {
     "title": "Confidentialité",
     "lead": "Dernière mise à jour : octobre 2026.",
-    "shortHeading": "En bref",
-    "short": "Glazecalc conserve ce dont il a besoin pour faire fonctionner votre compte, et rien de plus. Il n’y a ni publicité, ni outil de mesure d’audience, ni cookie de suivi, ni script tiers. Vos données ne sont jamais vendues ni partagées.",
-    "storedHeading": "Ce qui est stocké",
-    "storedAccount": "<b>Votre compte :</b> votre adresse e-mail et votre mot de passe, qui n’est stocké que sous forme de hachage à sens unique (bcrypt), jamais tel quel.",
-    "storedTrial": "<b>Une période d’essai (Essayer maintenant) :</b> ni e-mail ni mot de passe, seulement un nom généré, comme « speckled quiet kilns ». Une période d’essai et tout ce qui y est enregistré sont supprimés automatiquement 14 jours après son début, sauf si vous créez un compte pour les conserver.",
-    "storedSaved": "<b>Ce que vous enregistrez :</b> vos recettes, matières, additifs, notes, relevés de cuisson et conseils. Les autres utilisateurs ne peuvent pas les voir.",
-    "storedResets": "<b>Demandes de réinitialisation du mot de passe :</b> une empreinte de chaque lien de réinitialisation (pas le lien lui-même), supprimée automatiquement quand elle expire, 30 minutes plus tard.",
-    "storedBrowser": "<b>Dans votre navigateur :</b> un cookie, <code>glazecalc_session</code>, qui maintient votre session ouverte. Il contient votre jeton de connexion, les scripts de la page ne peuvent pas le lire, il n’est envoyé qu’au serveur de Glazecalc lui-même, et il dure 7 jours (14 pour une période d’essai). Le stockage local conserve une note indiquant que votre session est ouverte et, pendant une période d’essai, son nom et sa date de fin. La déconnexion les supprime.",
-    "emailHeading": "E-mail",
-    "email": "Glazecalc n’envoie d’e-mail que lorsque vous demandez à réinitialiser votre mot de passe et lorsque votre mot de passe change. Les e-mails sont envoyés par Amazon Simple Email Service. Il n’y a ni lettre d’information ni e-mail publicitaire.",
-    "hostingHeading": "Journaux, sauvegardes et hébergement",
-    "logs": "Le serveur web enregistre chaque requête, y compris votre adresse IP, dans un journal conservé 14 jours pour faire fonctionner et sécuriser le site.",
-    "backups": "Des sauvegardes chiffrées de la base de données sont conservées 30 jours, et des copies du disque du serveur 7 jours, pour pouvoir restaurer le site après une panne.",
-    "hosting": "Tout est hébergé par Amazon Web Services aux États-Unis (Oregon).",
-    "deletingHeading": "Supprimer vos données",
-    "deleting": "Vous pouvez supprimer votre compte depuis votre <account>page de compte</account>. Cela supprime immédiatement votre compte et tout ce que vous avez enregistré ; le bouton Abandonner l’essai fait de même pour une période d’essai. Les copies présentes dans les sauvegardes disparaissent à mesure que ces sauvegardes expirent, sous 30 jours.",
-    "questionsHeading": "Questions",
-    "questions": "Posez-les en <issues>ouvrant un ticket sur GitHub</issues>. Si cette politique change, la date en haut de cette page change aussi."
+    "shortHeading": "En bref"
   },
   "notFound": {
     "heading": "Page introuvable",

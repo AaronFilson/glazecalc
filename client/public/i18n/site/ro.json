@@ -64,24 +64,7 @@
   "privacy": {
     "title": "Confidențialitate",
     "lead": "Ultima actualizare: octombrie 2026.",
-    "shortHeading": "Pe scurt",
-    "short": "Glazecalc păstrează ce îi trebuie pentru a vă gestiona contul și nimic mai mult. Nu există reclame, instrumente de analiză, cookie-uri de urmărire sau scripturi de la terți. Datele dumneavoastră nu sunt niciodată vândute sau partajate.",
-    "storedHeading": "Ce se stochează",
-    "storedAccount": "<b>Contul dumneavoastră:</b> adresa de e-mail și parola, care este stocată numai ca hash unidirecțional (bcrypt), niciodată ca parola propriu-zisă.",
-    "storedTrial": "<b>O perioadă de probă („Încercați acum”):</b> fără e-mail sau parolă, doar un nume generat, de exemplu „speckled quiet kilns”. O perioadă de probă și tot ce s-a salvat în ea se șterg automat la 14 zile de la început, dacă nu creați un cont pentru a le păstra.",
-    "storedSaved": "<b>Ce salvați:</b> rețetele, materiile prime, aditivii, notițele, jurnalele de ardere și sfaturile. Ceilalți utilizatori nu le pot vedea.",
-    "storedResets": "<b>Cererile de resetare a parolei:</b> o amprentă a fiecărui link de resetare (nu linkul propriu-zis), ștearsă automat când linkul expiră, 30 de minute mai târziu.",
-    "storedBrowser": "<b>În browser:</b> un singur cookie, <code>glazecalc_session</code>, care vă păstrează sesiunea deschisă. Conține tokenul de conectare, scripturile din pagină nu îl pot citi, este trimis numai către serverul aplicației Glazecalc și durează 7 zile (14 pentru o perioadă de probă). Spațiul de stocare local al browserului păstrează o notă că v-ați conectat și, în timpul unei perioade de probă, numele și data de încheiere ale acesteia. Deconectarea le șterge.",
-    "emailHeading": "E-mail",
-    "email": "Glazecalc trimite e-mailuri numai când cereți resetarea parolei și când parola se schimbă. Ele sunt trimise prin Amazon Simple Email Service. Nu există newsletter sau e-mailuri de marketing.",
-    "hostingHeading": "Jurnalele serverului, copiile de rezervă și găzduirea",
-    "logs": "Serverul web înregistrează fiecare cerere, inclusiv adresa dumneavoastră IP, într-un jurnal păstrat 14 zile, pentru funcționarea și securitatea site-ului.",
-    "backups": "Copiile de rezervă criptate ale bazei de date se păstrează 30 de zile, iar copiile discului serverului 7 zile, pentru ca site-ul să poată fi restabilit după o defecțiune.",
-    "hosting": "Totul este găzduit de Amazon Web Services în Statele Unite (Oregon).",
-    "deletingHeading": "Ștergerea datelor",
-    "deleting": "Vă puteți șterge contul de pe <account>pagina contului</account>. Astfel se șterg imediat contul și tot ce ați salvat; „Renunțați la perioada de probă” face același lucru pentru o perioadă de probă. Datele din copiile de rezervă dispar pe măsură ce acestea expiră, în cel mult 30 de zile.",
-    "questionsHeading": "Întrebări",
-    "questions": "Puneți întrebări <issues>deschizând un tichet pe GitHub</issues>. Dacă această politică se schimbă, se schimbă și data din partea de sus a acestei pagini."
+    "shortHeading": "Pe scurt"
   },
   "notFound": {
     "heading": "Pagina nu a fost găsită",

@@ -5,8 +5,9 @@ How the owner answers someone who asks to see, correct, move or delete their dat
 
 ## Where requests arrive
 
-Mostly as a GitHub issue on the project, the contact point the privacy notice names. A request is valid however it
-is worded and wherever it is sent. Issues are public:
+Mostly by email to `privacy@glazecalcapp.com`, the contact the privacy notice names (it reaches the owner's inbox;
+[deploy/aws/README.md](../deploy/aws/README.md) section 15), or as a GitHub issue on the project, which the notice
+also mentions. A request is valid however it is worded and wherever it is sent. Issues are public:
 
 - Never ask for account details in an issue. Point the person to the account page, where export, correction, the
   email change and deletion are all self-service.

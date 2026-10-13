@@ -65,23 +65,108 @@
     "title": "Privacy",
     "lead": "Last updated October 2026.",
     "shortHeading": "In short",
-    "short": "Glazecalc keeps what it needs to run your account and nothing more. There are no ads, no analytics, no tracking cookies and no third-party scripts. Your data is never sold or shared.",
-    "storedHeading": "What is stored",
-    "storedAccount": "<b>Your account:</b> your email address and your password, which is stored only as a one-way hash (bcrypt), never as the password itself.",
-    "storedTrial": "<b>A trial (\"Try it now\"):</b> no email or password, only a generated name such as \"speckled quiet kilns\". A trial and everything saved in it are deleted automatically 14 days after it starts, unless you create an account to keep them.",
-    "storedSaved": "<b>What you save:</b> your recipes, materials, additives, notes, firing logs and advice. Other users cannot see them.",
-    "storedResets": "<b>Password reset requests:</b> a fingerprint of each reset link (not the link itself), deleted automatically when it expires 30 minutes later.",
-    "storedBrowser": "<b>In your browser:</b> one cookie, <code>glazecalc_session</code>, that keeps you signed in. It holds your sign-in token, scripts on the page cannot read it, it goes only to Glazecalc's own server, and it lasts 7 days (14 for a trial). Local storage holds a note that you are signed in and, during a trial, its name and end date. Signing out removes them.",
-    "emailHeading": "Email",
-    "email": "Glazecalc sends email only when you ask to reset your password and when your password changes. It is sent through Amazon Simple Email Service. There is no newsletter or marketing email.",
-    "hostingHeading": "Logs, backups and hosting",
-    "logs": "The web server records each request, including your IP address, in a log kept for 14 days to run and secure the site.",
-    "backups": "Encrypted backups of the database are kept for 30 days, and copies of the server's disk for 7 days, so the site can be restored after a failure.",
-    "hosting": "Everything is hosted by Amazon Web Services in the United States (Oregon).",
-    "deletingHeading": "Deleting your data",
-    "deleting": "You can delete your account from your <account>account page</account>. That removes your account and everything you saved right away; \"Discard trial\" does the same for a trial. Copies in backups disappear as the backups age out, within 30 days.",
-    "questionsHeading": "Questions",
-    "questions": "Ask by <issues>opening an issue on GitHub</issues>. If this policy changes, the date at the top of this page changes too."
+    "short": "Glazecalc keeps what it needs to run your account, and nothing more. There are no ads, no analytics and no tracking. Your data is never sold, and the only company that handles it is Amazon Web Services, which hosts the site and sends its email.",
+    "whoHeading": "Who is responsible",
+    "who": "Glazecalc is a free, open-source, non-profit project, run by its owner, Aaron Filson, in the United States. He decides what happens to your data, so in data protection law he is its \"controller\".",
+    "contact": "To ask about your data, or to use any of your rights, write to <mail>privacy@glazecalcapp.com</mail>. You can also <issues>open an issue on GitHub</issues>, but issues are public: never put your email address or anything personal in one. Most things about your data you can do yourself on your <account>account page</account>.",
+    "storedHeading": "What is kept, and why",
+    "storedAccount": "<b>Your account:</b> your email address, and your password, stored only as a one-way hash (bcrypt), never as the password itself. Your settings (such as language, region and units) and the list of materials you have on hand are kept with it. An account needs an email address, to sign in and to reset a forgotten password. A new address is confirmed by a link sent to it.",
+    "storedSaved": "<b>What you save:</b> your recipes, materials, additives, notes, firing logs and advice, as you wrote them. Only you can see them: nothing is shared between users.",
+    "storedTrial": "<b>A trial (\"Try it now\"):</b> no email or password, only a made-up name such as \"speckled quiet kilns\". If you sign in to an account on the same browser during a trial, what you made in the trial moves into the account.",
+    "storedResets": "<b>Password reset requests:</b> which account asked, when, and a fingerprint of the link (not the link itself).",
+    "storedLogs": "<b>Logs:</b> the web server records each request: your IP address, the time, the page asked for and the name of your browser. The app records errors with the page they happened on, never your email address.",
+    "storedDeletions": "<b>Deleted accounts:</b> the account's id number and when it was deleted, and nothing else, so that a restored backup cannot bring the account back.",
+    "storedMail": "<b>Email problems:</b> if mail to your address bounces or is reported as spam, Amazon's email service puts the address on a list not to mail again, and sends the owner a notice that includes the address.",
+    "storedInbound": "<b>Mail you send to Glazecalc:</b> mail to privacy@glazecalcapp.com and Glazecalc's other addresses is checked by Amazon for spam and viruses, kept in a private store, and forwarded to the owner's own inbox (Gmail).",
+    "basisHeading": "The legal basis",
+    "basisContract": "<b>Running your account</b>, keeping what you save, and the emails about your account are the service you asked for: the legal basis is the contract between you and Glazecalc (GDPR Article 6(1)(b)).",
+    "basisInterests": "<b>Keeping the site safe and working</b>: the logs, the limits on how often anyone can try to sign in, the backups, the record of deleted accounts and the list of addresses not to mail. These rest on Glazecalc's legitimate interest in security, preventing abuse and not losing your work (Article 6(1)(f)). They are kept briefly and used for nothing else. You can object to them by writing to the address above.",
+    "basisNone": "Nothing about you is decided automatically, there is no profiling, and nothing is used for advertising.",
+    "whereHeading": "Where it is kept, and who handles it",
+    "hosting": "Glazecalc runs on Amazon Web Services (AWS): the server (EC2), the backups (S3) and the email (Simple Email Service), all in the United States, in Oregon (us-west-2). AWS handles the data only on Glazecalc's behalf, under its <dpa>data processing terms</dpa>. No one else receives it.",
+    "transfer": "If you live in the EU, the UK or Switzerland, your data goes to the United States. Amazon says it is certified under the <dpf>EU–US Data Privacy Framework</dpf> and its UK and Swiss extensions, and AWS's terms include the EU's Standard Contractual Clauses, which would still apply if the Framework, now challenged in court, were struck down. The owner and AWS are both in the US, and US law can require them to hand over data.",
+    "noThirdParties": "Your browser loads nothing from other websites: no fonts, scripts, images or analytics from elsewhere, and the site's security settings block them. Links to GitHub and other sites are followed only when you click them.",
+    "keptHeading": "How long it is kept",
+    "keptAccount": "<b>Your account and what you save:</b> until you delete them. Accounts are not removed for being unused.",
+    "keptTrial": "<b>A trial:</b> 14 days from its start, then it is deleted with everything in it, unless you create an account to keep it.",
+    "keptResets": "<b>Password reset requests:</b> about an hour. The link itself works for 30 minutes.",
+    "keptBackups": "<b>Backups:</b> encrypted copies of the database are kept 30 days, and copies of the server's disk 7 days. So a deleted account is gone from every backup within 30 days.",
+    "keptDeletions": "<b>The record of a deleted account:</b> 37 days, just longer than any backup.",
+    "keptLogs": "<b>Logs:</b> the web server's, 14 days. The app's and the database's own logs are limited by size (50 MB each), which on a quiet site reaches back several days. The copies of the server's disk keep logs for up to 7 days more.",
+    "keptMail": "<b>The list of addresses not to mail:</b> until the owner removes an address, which he does each month for addresses that no longer belong to an account. The owner deletes bounce notices within 30 days.",
+    "keptInbound": "<b>Mail you send to Glazecalc:</b> 30 days in Amazon's store, and in the owner's inbox as long as it takes to answer you. For a request about your data, a short note (when it came, what was asked and what was done) is kept for three years.",
+    "rightsHeading": "Your rights",
+    "rightsIntro": "You can see, correct, take and delete your data. Most of it you can do yourself on your <account>account page</account>:",
+    "rightsExport": "<b>See it and take it with you:</b> Download my data saves everything in one file (JSON), and your recipes and materials as spreadsheets (CSV).",
+    "rightsCorrect": "<b>Correct it:</b> change your settings and your records at any time. To change your email address, confirm it with the link sent to the new address.",
+    "rightsDelete": "<b>Delete it:</b> Delete my account removes your account and everything you saved at once, and \"Discard trial\" does the same for a trial. Copies in backups are gone within 30 days.",
+    "rightsSignOut": "<b>Sign out everywhere:</b> ends your account's sessions on every device.",
+    "rightsAsk": "For anything else, such as asking for your data to be held back from use while a mistake is put right, or objecting to how it is used, write to <mail>privacy@glazecalcapp.com</mail>. It is free, and you will have an answer within a month. You will only be asked to show the account is yours, by signing in or by opening a link sent to its address, never for an ID.",
+    "rightsComplain": "If you are not satisfied, you can complain to a data protection authority: in the EU, <edpb>the authority in your country</edpb>, and in the UK, the <ico>Information Commissioner's Office</ico>.",
+    "storageHeading": "Cookies and browser storage",
+    "storageIntro": "Glazecalc sets one cookie and keeps a few small values in your browser. Each is there for something you asked for: staying signed in, or remembering a choice you made. None tracks you and none is shared, so the law does not require asking first, and there is no cookie banner.",
+    "storageLabel": "Cookies and browser storage",
+    "storageName": "Name",
+    "storagePurpose": "What it is for",
+    "storageLasts": "How long it stays",
+    "storageCookie": "Cookie",
+    "storageLocal": "Local storage",
+    "storageSession": "Session storage",
+    "storageNote": "You can clear any of these in your browser's settings at any time. Deleting your account removes the sign-in note and every setting kept here.",
+    "keys": {
+      "cookie": {
+        "purpose": "Keeps you signed in. It holds your sign-in token. Scripts on the page cannot read it, and your browser sends it only to Glazecalc's own server, over HTTPS, and never with a request that starts on another site.",
+        "lasts": "Set when you sign in, create an account or start a trial. Until you close your browser, or 7 days if you tick \"Keep me signed in\"; 14 days for a trial. Signing out removes it."
+      },
+      "session": {
+        "purpose": "Notes that you are signed in, to an account or a trial, so the app knows to ask the server. It holds no token or password.",
+        "lasts": "Until you sign out or the session ends."
+      },
+      "trial": {
+        "purpose": "During a trial, its name and end date, to show them.",
+        "lasts": "Until the trial ends, or is kept or discarded."
+      },
+      "settings": {
+        "purpose": "A setting you changed on this browser, so the next page shows it straight away, before the server answers. <code>theme</code> and <code>palette</code> color the page before it appears, and <code>language</code> opens pages in your language.",
+        "lasts": "Until you change it. Signing out puts back what you chose while signed out, if anything, and removes the rest."
+      },
+      "visitor": {
+        "purpose": "The language you chose, or that you closed the translation notice, while signed out, so it comes back when you sign out.",
+        "lasts": "Until you clear your browser's storage or delete an account on this browser."
+      },
+      "region": {
+        "purpose": "The region filter on a library list.",
+        "lasts": "Until you set the filter back to all regions."
+      },
+      "includeAdditives": {
+        "purpose": "Whether new recipes count their additives in the unity formula, as you chose last.",
+        "lasts": "Until you clear your browser's storage."
+      },
+      "recipeHelp": {
+        "purpose": "That you hid the help on the recipe page.",
+        "lasts": "Until you show the help again."
+      },
+      "print": {
+        "purpose": "Your last choices for printing a recipe: the whole recipe or a batch, and the batch size.",
+        "lasts": "Until you clear your browser's storage."
+      },
+      "token": {
+        "purpose": "A sign-in token from an old version of Glazecalc. It is never written now.",
+        "lasts": "Removed when a page opens."
+      },
+      "readEnglish": {
+        "purpose": "That you chose to read a translated page in English, so the app stops moving you to your language.",
+        "lasts": "Until you close the tab."
+      },
+      "reloadedFor": {
+        "purpose": "After a new version of the site is released, which page was reloaded and when, so a page reloads at most once a minute.",
+        "lasts": "Until you close the tab."
+      }
+    },
+    "childrenHeading": "Children",
+    "children": "Glazecalc is a tool for potters and is not directed at children.",
+    "changesHeading": "Changes",
+    "changes": "If this notice changes, the date at the top of the page changes too."
   },
   "notFound": {
     "heading": "Page not found",

@@ -64,24 +64,7 @@
   "privacy": {
     "title": "Zasebnost",
     "lead": "Zadnja posodobitev: oktober 2026.",
-    "shortHeading": "Na kratko",
-    "short": "Glazecalc hrani le tisto, kar potrebuje za delovanje vašega računa, in nič več. Ni oglasov, analitike, piškotkov za sledenje in skriptov tretjih oseb. Vaši podatki se nikoli ne prodajajo in ne delijo z drugimi.",
-    "storedHeading": "Kaj se shranjuje",
-    "storedAccount": "<b>Vaš račun:</b> e-poštni naslov in geslo, ki je shranjeno samo kot enosmerna zgoščena vrednost (bcrypt), nikoli kot samo geslo.",
-    "storedTrial": "<b>Preizkus (»Preizkusi zdaj«):</b> brez e-poštnega naslova ali gesla, le samodejno ustvarjeno ime, na primer »speckled quiet kilns«. Preizkus se skupaj z vsem, kar je v njem shranjeno, samodejno izbriše 14 dni po začetku, razen če ustvarite račun in ga ohranite.",
-    "storedSaved": "<b>Kar shranite:</b> recepti, surovine, dodatki, zapiski, dnevniki žganja in nasveti. Drugi uporabniki jih ne vidijo.",
-    "storedResets": "<b>Zahteve za ponastavitev gesla:</b> prstni odtis vsake povezave za ponastavitev (ne sama povezava), ki se samodejno izbriše, ko povezava po 30 minutah poteče.",
-    "storedBrowser": "<b>V vašem brskalniku:</b> en piškotek, <code>glazecalc_session</code>, ki skrbi, da ostanete prijavljeni. Vsebuje vaš žeton za prijavo, skripti na strani ga ne morejo prebrati, pošilja se samo na lastni strežnik aplikacije Glazecalc in velja 7 dni (14 za preizkus). V lokalni shrambi je zapis, da ste prijavljeni, med preizkusom pa tudi njegovo ime in datum izteka. Ob odjavi se izbrišejo.",
-    "emailHeading": "E-pošta",
-    "email": "Glazecalc pošilja e-pošto samo, ko zahtevate ponastavitev gesla in ko se geslo spremeni. Pošilja se prek storitve Amazon Simple Email Service. Ni glasila ali oglasnih e-poštnih sporočil.",
-    "hostingHeading": "Dnevniki strežnika, varnostne kopije in gostovanje",
-    "logs": "Spletni strežnik vsako zahtevo, vključno z vašim naslovom IP, zapiše v dnevnik, ki se hrani 14 dni, za delovanje in varnost spletnega mesta.",
-    "backups": "Šifrirane varnostne kopije zbirke podatkov se hranijo 30 dni, kopije strežnikovega diska pa 7 dni, da je spletno mesto mogoče obnoviti po okvari.",
-    "hosting": "Vse gostuje pri Amazon Web Services v ZDA (Oregon).",
-    "deletingHeading": "Brisanje podatkov",
-    "deleting": "Račun lahko izbrišete na <account>strani računa</account>. S tem se takoj odstranita račun in vse, kar ste shranili; »Zavrzi preizkus« naredi enako za preizkus. Podatki v varnostnih kopijah izginejo, ko te kopije zastarajo, v 30 dneh.",
-    "questionsHeading": "Vprašanja",
-    "questions": "Vprašanja lahko zastavite tako, da <issues>odprete zadevo na GitHubu</issues>. Če se ta pravilnik spremeni, se spremeni tudi datum na vrhu te strani."
+    "shortHeading": "Na kratko"
   },
   "notFound": {
     "heading": "Strani ni mogoče najti",

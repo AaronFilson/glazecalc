@@ -64,24 +64,7 @@
   "privacy": {
     "title": "Adatvédelem",
     "lead": "Utoljára frissítve: 2026. október.",
-    "shortHeading": "Röviden",
-    "short": "A Glazecalc csak azt tárolja, ami a fiókja működtetéséhez szükséges, semmi többet. Nincsenek hirdetések, analitika, nyomkövető sütik és harmadik féltől származó szkriptek. Adatait soha nem adjuk el, és nem osztjuk meg.",
-    "storedHeading": "Tárolt adatok",
-    "storedAccount": "<b>Fiókja:</b> az e-mail-címe és a jelszava, amelyet csak egyirányú hasítóértékként (bcrypt hash) tárolunk, magát a jelszót soha.",
-    "storedTrial": "<b>Próbahasználat (Kipróbálás most gomb):</b> nincs e-mail-cím és jelszó, csak egy generált név, például „speckled quiet kilns”. A próbahasználatot és mindent, ami benne mentve van, az indulása után 14 nappal automatikusan töröljük, hacsak nem hoz létre fiókot, hogy megőrizze őket.",
-    "storedSaved": "<b>Amit elment:</b> receptjei, nyersanyagai, adalékai, jegyzetei, égetési naplói és tanácsai. Más felhasználók nem láthatják őket.",
-    "storedResets": "<b>Jelszó-visszaállítási kérések:</b> minden visszaállító link ujjlenyomata (nem maga a link), amelyet 30 perc múlva, a lejáratakor automatikusan törlünk.",
-    "storedBrowser": "<b>A böngészőjében:</b> egyetlen süti, a <code>glazecalc_session</code>, amely bejelentkezve tartja. Ez tartalmazza a bejelentkezési tokenjét, az oldalon futó szkriptek nem tudják olvasni, csak a Glazecalc saját szerverére jut el, és 7 napig érvényes (próbahasználatnál 14 napig). A helyi tárolóban (local storage) egy jelzés van arról, hogy be van jelentkezve, próbahasználat alatt pedig annak neve és lejárati dátuma. Kijelentkezéskor ezek törlődnek.",
-    "emailHeading": "E-mail",
-    "email": "A Glazecalc csak akkor küld e-mailt, ha Ön jelszó-visszaállítást kér, és amikor a jelszava megváltozik. Az e-maileket az Amazon Simple Email Service továbbítja. Nincs hírlevél és nincsenek marketinglevelek.",
-    "hostingHeading": "Naplók, biztonsági mentések és tárhely",
-    "logs": "A webszerver minden kérést naplóz, az Ön IP-címével együtt; a naplót 14 napig őrizzük meg a webhely működtetéséhez és védelméhez.",
-    "backups": "Az adatbázis titkosított biztonsági mentéseit 30 napig, a szerver lemezének másolatait 7 napig őrizzük meg, hogy a webhely egy meghibásodás után helyreállítható legyen.",
-    "hosting": "Minden az Amazon Web Services szerverein fut, az Egyesült Államokban (Oregon).",
-    "deletingHeading": "Adatai törlése",
-    "deleting": "Fiókját a <account>fiókoldalán</account> törölheti. Ez azonnal eltávolítja a fiókját és mindent, amit elmentett; a Próbahasználat elvetése gomb ugyanezt teszi egy próbahasználattal. A biztonsági mentésekben lévő másolatok a mentések lejártával, 30 napon belül eltűnnek.",
-    "questionsHeading": "Kérdések",
-    "questions": "Kérdéseit úgy teheti fel, hogy <issues>bejelentést tesz a GitHubon</issues>. Ha ez a szabályzat megváltozik, az oldal tetején lévő dátum is megváltozik."
+    "shortHeading": "Röviden"
   },
   "notFound": {
     "heading": "Az oldal nem található",

@@ -86,6 +86,22 @@ test.describe('home and navigation', () => {
     await visitor.close();
   });
 
+  test('the sign up form links to the privacy notice, which lists the cookie and the browser storage', async ({
+    browser
+  }) => {
+    const visitor = await browser.newPage();
+    await visitor.goto('/signup');
+    await expect(visitor.locator('.privacy-note')).toContainText('Amazon Web Services in the US');
+    await visitor.locator('.privacy-note a').click();
+    await expect(visitor).toHaveURL(/\/privacy$/);
+    await expect(visitor.locator('h1')).toHaveText('Privacy');
+    await expect(visitor.locator('a[href="mailto:privacy@glazecalcapp.com"]').first()).toBeVisible();
+    const storage = visitor.locator('#storage');
+    await expect(storage.locator('tbody tr')).toHaveCount(12);
+    await expect(storage.locator('tbody tr').first()).toContainText('glazecalc_session');
+    await visitor.close();
+  });
+
   test('the trash page explains that trash is not available yet', async ({ page }) => {
     await page.goto('/trash');
     await expect(page.locator('h1')).toHaveText('Trash');

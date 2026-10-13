@@ -64,24 +64,7 @@
   "privacy": {
     "title": "Príobháideachas",
     "lead": "Nuashonraithe go deireanach: Deireadh Fómhair 2026.",
-    "shortHeading": "Go hachomair",
-    "short": "Coinníonn Glazecalc a bhfuil ag teastáil chun do chuntas a reáchtáil, agus faic níos mó. Níl aon fhógraí, aon anailísíocht, aon fhianáin rianaithe ná aon scripteanna tríú páirtí ann. Ní dhíoltar ná ní roinntear do shonraí riamh.",
-    "storedHeading": "Cad a stóráiltear",
-    "storedAccount": "<b>Do chuntas:</b> do sheoladh ríomhphoist agus do phasfhocal, nach stóráiltear ach mar haiseáil aontreo (bcrypt), ní mar an pasfhocal féin riamh.",
-    "storedTrial": "<b>Triail (‘Bain triail as anois’):</b> gan ríomhphost ná pasfhocal, ach ainm a ghintear, mar shampla “speckled quiet kilns”. Scriostar triail agus gach a shábháiltear inti go huathoibríoch 14 lá tar éis di tosú, mura gcruthaíonn tú cuntas chun iad a choinneáil.",
-    "storedSaved": "<b>A shábhálann tú:</b> d’oidis, d’ábhair, do bhreiseáin, do nótaí, do thaifid bhácála agus do chomhairle. Ní féidir le húsáideoirí eile iad a fheiceáil.",
-    "storedResets": "<b>Iarratais ar athshocrú pasfhocail:</b> méarlorg de gach nasc athshocraithe (ní an nasc féin), a scriostar go huathoibríoch nuair a théann sé in éag 30 nóiméad ina dhiaidh sin.",
-    "storedBrowser": "<b>I do bhrabhsálaí:</b> fianán amháin, <code>glazecalc_session</code>, a choinníonn sínithe isteach thú. Coinníonn sé do chomhartha sínithe isteach, ní féidir le scripteanna ar an leathanach é a léamh, ní théann sé ach chuig freastalaí Glazecalc féin, agus maireann sé 7 lá (14 do thriail). Coinníonn an stóras logánta nóta go bhfuil tú sínithe isteach agus, le linn trialach, a hainm agus a dáta deiridh. Baineann síniú amach iad.",
-    "emailHeading": "Ríomhphost",
-    "email": "Ní sheolann Glazecalc ríomhphost ach nuair a iarrann tú do phasfhocal a athshocrú agus nuair a athraítear do phasfhocal. Seoltar é trí Amazon Simple Email Service. Níl aon nuachtlitir ná ríomhphost margaíochta ann.",
-    "hostingHeading": "Logaí, cúltacaí agus óstáil",
-    "logs": "Taifeadann an freastalaí gréasáin gach iarratas, do sheoladh IP san áireamh, i loga a choinnítear ar feadh 14 lá chun an suíomh a reáchtáil agus a chosaint.",
-    "backups": "Coinnítear cúltacaí criptithe den bhunachar sonraí ar feadh 30 lá, agus cóipeanna de dhiosca an fhreastalaí ar feadh 7 lá, ionas gur féidir an suíomh a athbhunú tar éis teipe.",
-    "hosting": "Tá gach rud á óstáil ag Amazon Web Services i Stáit Aontaithe Mheiriceá (Oregon).",
-    "deletingHeading": "Do shonraí a scriosadh",
-    "deleting": "Is féidir leat do chuntas a scriosadh ar <account>leathanach do chuntais</account>. Baineann sé sin do chuntas agus gach a shábháil tú láithreach; déanann ‘Scrios an triail’ an rud céanna do thriail. Imíonn na cóipeanna sna cúltacaí de réir mar a théann na cúltacaí in éag, laistigh de 30 lá.",
-    "questionsHeading": "Ceisteanna",
-    "questions": "Cuir ceist trí <issues>shaincheist a oscailt ar GitHub</issues>. Má athraíonn an polasaí seo, athraíonn an dáta ag barr an leathanaigh seo freisin."
+    "shortHeading": "Go hachomair"
   },
   "notFound": {
     "heading": "Níor aimsíodh an leathanach",

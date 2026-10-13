@@ -64,24 +64,7 @@
   "privacy": {
     "title": "Prywatność",
     "lead": "Ostatnia aktualizacja: październik 2026 r.",
-    "shortHeading": "W skrócie",
-    "short": "Glazecalc przechowuje tylko to, co jest potrzebne do obsługi konta, i nic więcej. Nie ma reklam, analityki, śledzących plików cookie ani skryptów firm trzecich. Dane nigdy nie są sprzedawane ani udostępniane.",
-    "storedHeading": "Co jest przechowywane",
-    "storedAccount": "<b>Konto:</b> adres e-mail i hasło, które jest przechowywane wyłącznie jako jednokierunkowy skrót (bcrypt), nigdy jako samo hasło.",
-    "storedTrial": "<b>Okres próbny (przycisk Wypróbuj teraz):</b> bez adresu e-mail i hasła, tylko wygenerowana nazwa, np. „speckled quiet kilns”. Okres próbny i wszystko, co w nim zapisano, są usuwane automatycznie 14 dni po jego rozpoczęciu, chyba że zostanie założone konto, aby je zachować.",
-    "storedSaved": "<b>Zapisywane treści:</b> receptury, surowce, dodatki, notatki, dzienniki wypałów i porady. Inni użytkownicy ich nie widzą.",
-    "storedResets": "<b>Prośby o zresetowanie hasła:</b> odcisk cyfrowy każdego linku do resetowania hasła (nie sam link), usuwany automatycznie, gdy link wygasa 30 minut później.",
-    "storedBrowser": "<b>W przeglądarce:</b> jeden plik cookie, <code>glazecalc_session</code>, który podtrzymuje zalogowanie. Zawiera token logowania, skrypty na stronie nie mogą go odczytać, trafia wyłącznie na własny serwer aplikacji Glazecalc i jest ważny 7 dni (14 w okresie próbnym). Pamięć lokalna przechowuje informację o zalogowaniu oraz, w okresie próbnym, jego nazwę i datę zakończenia. Wylogowanie je usuwa.",
-    "emailHeading": "E-mail",
-    "email": "Glazecalc wysyła wiadomości e-mail tylko na prośbę o zresetowanie hasła i po zmianie hasła. Są one wysyłane przez Amazon Simple Email Service. Nie ma newslettera ani e-maili marketingowych.",
-    "hostingHeading": "Logi, kopie zapasowe i hosting",
-    "logs": "Serwer WWW zapisuje każde żądanie, w tym adres IP, w logu przechowywanym przez 14 dni w celu obsługi i zabezpieczenia witryny.",
-    "backups": "Zaszyfrowane kopie zapasowe bazy danych są przechowywane przez 30 dni, a kopie dysku serwera przez 7 dni, aby po awarii można było przywrócić witrynę.",
-    "hosting": "Wszystko jest hostowane przez Amazon Web Services w Stanach Zjednoczonych (Oregon).",
-    "deletingHeading": "Usuwanie danych",
-    "deleting": "Konto można usunąć na <account>stronie konta</account>. Spowoduje to natychmiastowe usunięcie konta i wszystkiego, co zostało w nim zapisane; przycisk Zakończ okres próbny robi to samo z okresem próbnym. Dane w kopiach zapasowych znikają w miarę wygasania tych kopii, w ciągu 30 dni.",
-    "questionsHeading": "Pytania",
-    "questions": "Pytania można zadawać, <issues>otwierając zgłoszenie w serwisie GitHub</issues>. Jeśli te zasady się zmienią, zmieni się też data na górze tej strony."
+    "shortHeading": "W skrócie"
   },
   "notFound": {
     "heading": "Nie znaleziono strony",

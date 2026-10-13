@@ -64,24 +64,7 @@
   "privacy": {
     "title": "Privatnost",
     "lead": "Posljednje ažuriranje: listopad 2026.",
-    "shortHeading": "Ukratko",
-    "short": "Glazecalc čuva samo ono što mu je potrebno za vođenje vašeg računa, i ništa više. Nema oglasa, analitike, kolačića za praćenje ni skripti trećih strana. Vaši se podaci nikad ne prodaju niti dijele.",
-    "storedHeading": "Što se pohranjuje",
-    "storedAccount": "<b>Vaš račun:</b> vaša adresa e-pošte i lozinka, koja se pohranjuje samo kao jednosmjerni sažetak (bcrypt), nikad kao sama lozinka.",
-    "storedTrial": "<b>Probno korištenje (gumb Isprobajte odmah):</b> bez e-pošte i lozinke, samo automatski stvoreno ime, na primjer „speckled quiet kilns”. Probno korištenje i sve što je u njemu spremljeno automatski se brišu 14 dana nakon početka, osim ako stvorite račun da biste ih zadržali.",
-    "storedSaved": "<b>Ono što spremite:</b> vaši recepti, sirovine, dodaci, bilješke, zapisnici pečenja i savjeti. Drugi ih korisnici ne mogu vidjeti.",
-    "storedResets": "<b>Zahtjevi za ponovno postavljanje lozinke:</b> otisak svake poveznice za ponovno postavljanje (ne sama poveznica), koji se automatski briše kad istekne, 30 minuta kasnije.",
-    "storedBrowser": "<b>U vašem pregledniku:</b> jedan kolačić, <code>glazecalc_session</code>, zahvaljujući kojem ostajete prijavljeni. Sadrži vaš token za prijavu, skripte na stranici ne mogu ga pročitati, šalje se samo vlastitom poslužitelju aplikacije Glazecalc i traje 7 dana (14 za probno korištenje). U lokalnoj pohrani nalazi se zabilješka da ste prijavljeni te, tijekom probnog korištenja, njegovo ime i datum završetka. Odjavom se oni uklanjaju.",
-    "emailHeading": "E-pošta",
-    "email": "Glazecalc šalje e-poštu samo kad zatražite ponovno postavljanje lozinke i kad se vaša lozinka promijeni. Šalje se preko servisa Amazon Simple Email Service. Nema biltena ni marketinške e-pošte.",
-    "hostingHeading": "Zapisi, sigurnosne kopije i hosting",
-    "logs": "Web-poslužitelj bilježi svaki zahtjev, uključujući vašu IP adresu, u zapis koji se čuva 14 dana radi rada i zaštite web-mjesta.",
-    "backups": "Šifrirane sigurnosne kopije baze podataka čuvaju se 30 dana, a kopije diska poslužitelja 7 dana, kako bi se web-mjesto moglo obnoviti nakon kvara.",
-    "hosting": "Sve je smješteno na poslužiteljima tvrtke Amazon Web Services u Sjedinjenim Američkim Državama (Oregon).",
-    "deletingHeading": "Brisanje vaših podataka",
-    "deleting": "Svoj račun možete izbrisati na <account>stranici računa</account>. Time se odmah uklanjaju vaš račun i sve što ste spremili; gumb Odbaci probno korištenje čini isto za probno korištenje. Podaci u sigurnosnim kopijama nestaju kako te kopije istječu, u roku od 30 dana.",
-    "questionsHeading": "Pitanja",
-    "questions": "Pitajte tako da <issues>otvorite prijavu na GitHubu</issues>. Ako se ova pravila promijene, promijenit će se i datum na vrhu ove stranice."
+    "shortHeading": "Ukratko"
   },
   "notFound": {
     "heading": "Stranica nije pronađena",

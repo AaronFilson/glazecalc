@@ -64,24 +64,7 @@
   "privacy": {
     "title": "Privatumas",
     "lead": "Paskutinį kartą atnaujinta 2026 m. spalio mėn.",
-    "shortHeading": "Trumpai",
-    "short": "Glazecalc saugo tik tai, ko reikia jūsų paskyrai veikti, ir nieko daugiau. Nėra reklamų, analitikos, sekimo slapukų ir trečiųjų šalių scenarijų. Jūsų duomenys niekada neparduodami ir niekam neperduodami.",
-    "storedHeading": "Kas saugoma",
-    "storedAccount": "<b>Jūsų paskyra:</b> el. pašto adresas ir slaptažodis, kuris saugomas tik kaip vienkryptė maišos reikšmė (bcrypt), niekada ne pats slaptažodis.",
-    "storedTrial": "<b>Bandomasis laikotarpis (mygtukas Išbandyti dabar):</b> jokio el. pašto adreso ar slaptažodžio, tik sugeneruotas vardas, pvz., „speckled quiet kilns“. Bandomasis laikotarpis ir viskas, kas per jį įrašyta, automatiškai panaikinami praėjus 14 dienų nuo jo pradžios, nebent sukuriate paskyrą, kad juos pasiliktumėte.",
-    "storedSaved": "<b>Tai, ką įrašote:</b> jūsų receptai, žaliavos, priedai, užrašai, degimo žurnalai ir patarimai. Kiti naudotojai jų nemato.",
-    "storedResets": "<b>Slaptažodžio atkūrimo užklausos:</b> kiekvienos atkūrimo nuorodos kontrolinis kodas (ne pati nuoroda), kuris automatiškai panaikinamas, kai po 30 minučių nuorodos galiojimas baigiasi.",
-    "storedBrowser": "<b>Jūsų naršyklėje:</b> vienas slapukas, <code>glazecalc_session</code>, kuris palaiko jūsų prisijungimą. Jame saugomas jūsų prisijungimo žetonas, puslapio scenarijai negali jo perskaityti, jis siunčiamas tik į pačios programos Glazecalc serverį ir galioja 7 dienas (bandomuoju laikotarpiu – 14). Vietinėje saugykloje laikoma žymė, kad prisijungėte, o bandomuoju laikotarpiu – ir jo vardas bei pabaigos data. Atsijungus visa tai pašalinama.",
-    "emailHeading": "El. paštas",
-    "email": "Glazecalc siunčia el. laiškus tik tada, kai paprašote atkurti slaptažodį ir kai jūsų slaptažodis pakeičiamas. Laiškai siunčiami per paslaugą Amazon Simple Email Service. Jokių naujienlaiškių ar rinkodaros laiškų nėra.",
-    "hostingHeading": "Žurnalai, atsarginės kopijos ir talpinimas",
-    "logs": "Žiniatinklio serveris kiekvieną užklausą, įskaitant jūsų IP adresą, įrašo į žurnalą, kuris saugomas 14 dienų, kad svetainė veiktų ir būtų apsaugota.",
-    "backups": "Šifruotos duomenų bazės atsarginės kopijos saugomos 30 dienų, o serverio disko kopijos – 7 dienas, kad po gedimo svetainę būtų galima atkurti.",
-    "hosting": "Viską talpina Amazon Web Services JAV (Oregono valstijoje).",
-    "deletingHeading": "Duomenų panaikinimas",
-    "deleting": "Paskyrą galite panaikinti <account>paskyros puslapyje</account>. Taip iš karto pašalinama jūsų paskyra ir viskas, ką įrašėte; bandomajam laikotarpiui tą patį daro mygtukas Atsisakyti bandomojo laikotarpio. Atsarginėse kopijose likę duomenys išnyksta, kai senos atsarginės kopijos pašalinamos, per 30 dienų.",
-    "questionsHeading": "Klausimai",
-    "questions": "Klausimą galima užduoti <issues>sukūrus pranešimą svetainėje GitHub</issues>. Jei ši politika pasikeis, pasikeis ir data šio puslapio viršuje."
+    "shortHeading": "Trumpai"
   },
   "notFound": {
     "heading": "Puslapis nerastas",

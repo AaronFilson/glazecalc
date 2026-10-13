@@ -84,6 +84,12 @@ describe('AuthPage', () => {
     expect(navigate).toHaveBeenCalledWith('/home');
   });
 
+  it('says in a line on the sign up form what is kept and where, with a link to the privacy notice', async () => {
+    const { fixture } = await create('signup');
+    expect(text(fixture, '.privacy-note')).toContain('stored with Amazon Web Services in the US');
+    expect(fixture.nativeElement.querySelector('.privacy-note a').getAttribute('href')).toBe('/privacy');
+  });
+
   it('will not submit a sign up whose passwords differ, and marks the field', async () => {
     const { fixture, page } = await create('signup');
     page['email'].set('a@b.com');
@@ -161,5 +167,6 @@ describe('AuthPage hidden fields', () => {
     await settle(fixture);
     expect(fixture.nativeElement.querySelector('#confirmation')).toBeNull();
     expect(text(fixture, 'button[type=submit]')).toBe('Sign in');
+    expect(fixture.nativeElement.querySelector('.privacy-note')).toBeNull();
   });
 });
