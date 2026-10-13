@@ -90,8 +90,8 @@ tinn.”). Glazecalc does the same:
 
 ### Buttons, menus, headings, labels and tabs
 
-- Buttons and menu commands: the imperative singular, as above: “Sábháil mar chóip”, “Cuir an ocsaíd leis an liosta”, “Scrios an
-  triail”.
+- Buttons and menu commands: the imperative singular, as above: “Sábháil mar chóip”, “Cuir an ocsaíd leis an
+  liosta”, “Scrios an triail”.
 - Options in which the reader speaks to the app keep the first person: "Match with what I have" → “Meaitseáil leis a
   bhfuil agam”.
 - Headings, tab names, menu names and page titles: a **noun phrase** or a **verbal-noun phrase**: “Oidis”, “Socruithe”,
@@ -399,10 +399,10 @@ under (S.I. No. 49 of 2017; HSA): the Irish Statute Book gives these in English 
 ## 2. Glossary
 
 Nouns carry their gender and declension (m1, f2 …) and, where it helps, the genitive or plural. "show English" marks the
-terms whose English a reader can ask to see after them (`<en>…</en>`, `{{en: …}}`). In the guides, `{{en: …}}` follows the
-first use of each such term in every `##` section, in all five guides alike: in running text, list items and table
-cells, not in headings, captions, quotations, link texts or table header rows. Kiln-Sitter takes none (it is already
-the English), and the Gluais in the basics guide gives the English in brackets after each term instead.
+terms whose English a reader can ask to see after them (`<en>…</en>`, `{{en: …}}`). In the guides, `{{en: …}}`
+follows the first use of each such term in every `##` section, in all five guides alike: in running text, list items
+and table cells, not in headings, captions, quotations, link texts or table header rows. Kiln-Sitter takes none (it is
+already the English), and the Gluais in the basics guide gives the English in brackets after each term instead.
 
 ### 2.1 Glaze and its chemistry
 

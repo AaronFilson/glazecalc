@@ -167,7 +167,7 @@ Molann Rio Grande **ciorcad tiomnaithe** (ciorcad nach dtugann cumhacht d’aon 
 
 ### A bheith i láthair nuair a chríochnaíonn an bhácáil
 
-Is é **Kiln-Sitter**{{en: kiln sitter}} an lasc mheicniúil atá ar go leor áitheanna láimhe: lúbann cón{{en: cone}} beag ag deireadh na bácála agus cuireann sé an lasc as. Deir a lámhleabhar “NÍL sé ceaptha feidhmiú mar ghléas múchta slánchinnte.” Deir Rio Grande gan áith atá ag bácáil a fhágáil gan aire riamh, “go háirithe in aice leis an am múchta a bhfuiltear ag súil leis”. Mar sin, ná bácáil ach nuair a bheidh duine fásta sa bhaile agus ina dhúiseacht do dheireadh na bácála, seiceáil gur mhúch an áith, agus coinnigh múchtóir dóiteáin ABC i seomra na háithe. Chun a fháil amach conas a oibríonn Kiln-Sitter, rialaitheoirí agus cláir bhácála, féach an treoirleabhar [Bácáil in áith shimplí](/guides/firing).
+Is é **Kiln-Sitter** an lasc mheicniúil atá ar go leor áitheanna láimhe: lúbann cón{{en: cone}} beag ag deireadh na bácála agus cuireann sé an lasc as. Deir a lámhleabhar “NÍL sé ceaptha feidhmiú mar ghléas múchta slánchinnte.” Deir Rio Grande gan áith atá ag bácáil a fhágáil gan aire riamh, “go háirithe in aice leis an am múchta a bhfuiltear ag súil leis”. Mar sin, ná bácáil ach nuair a bheidh duine fásta sa bhaile agus ina dhúiseacht do dheireadh na bácála, seiceáil gur mhúch an áith, agus coinnigh múchtóir dóiteáin ABC i seomra na háithe. Chun a fháil amach conas a oibríonn Kiln-Sitter, rialaitheoirí agus cláir bhácála, féach an treoirleabhar [Bácáil in áith shimplí](/guides/firing).
 
 ### Múch agus aonocsaíd charbóin
 
