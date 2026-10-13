@@ -40,7 +40,7 @@ describe('requests with values of the wrong type', () => {
   });
 
   it('answers 400 for account settings of the wrong type', async () => {
-    for (const body of [{ displayname: { a: 1 } }, { settings: { $gt: 1 } }]) {
+    for (const body of [{ displayname: { a: 1 } }, { displayname: { $gt: '' } }]) {
       const res = await api()
         .put('/usersettings/' + user._id)
         .set('Authorization', 'Bearer ' + token)

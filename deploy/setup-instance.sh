@@ -57,10 +57,10 @@ apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin do
 
 # App files from the repository; deploy.sh refreshes compose.prod.yaml on each deploy.
 mkdir -p /opt/glazecalc
-for f in deploy.sh backup.sh enable-https.sh compose.prod.yaml; do
+for f in deploy.sh backup.sh restore.sh enable-https.sh compose.prod.yaml; do
   curl -fsSL "$raw/$f" -o "/opt/glazecalc/$f"
 done
-chmod 750 /opt/glazecalc/deploy.sh /opt/glazecalc/backup.sh /opt/glazecalc/enable-https.sh
+chmod 750 /opt/glazecalc/deploy.sh /opt/glazecalc/backup.sh /opt/glazecalc/restore.sh /opt/glazecalc/enable-https.sh
 for unit in glazecalc.service glazecalc-backup.service glazecalc-backup.timer mongodb-thp.service; do
   curl -fsSL "$raw/systemd/$unit" -o "/etc/systemd/system/$unit"
 done

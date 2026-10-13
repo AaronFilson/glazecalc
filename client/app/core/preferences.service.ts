@@ -158,6 +158,8 @@ export class PreferencesService {
       for (const name of NAMES) this.keep(name, readCopy(name, visitorKey(name)));
     };
     this.auth.onSessionEnd(forget);
+    // Deleted: none of the choices stay on this browser.
+    this.auth.onAccountDeleted(() => this.clearStored());
     // A trial that ran out while the site was closed ended before this could hear of it.
     if (this.auth.trialEnded()) forget();
   }
@@ -202,6 +204,21 @@ export class PreferencesService {
   /** Keeps a choice on this browser only, for a visitor with no account to save it to. */
   remember<K extends keyof Preferences>(name: K, value: Preferences[K]): void {
     this.keep(name, value, visitorKey(name));
+  }
+
+  /**
+   * Removes every choice this browser keeps, the account's copy and a visitor's
+   * own. The page goes on showing them until it is reloaded.
+   */
+  private clearStored(): void {
+    try {
+      for (const name of NAMES) {
+        localStorage.removeItem(copyKey(name));
+        localStorage.removeItem(visitorKey(name));
+      }
+    } catch {
+      // Without storage there is nothing to remove.
+    }
   }
 
   private keep<K extends keyof Preferences>(name: K, value: Preferences[K], visitor?: string): void {

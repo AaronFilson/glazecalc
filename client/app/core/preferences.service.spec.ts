@@ -1,5 +1,5 @@
 import { TestBed } from '@angular/core/testing';
-import { API, httpMock, testProviders } from '../testing/test-providers';
+import { API, httpMock, settle, testProviders } from '../testing/test-providers';
 import { AuthService } from './auth.service';
 import { PreferencesService } from './preferences.service';
 
@@ -111,6 +111,30 @@ describe('PreferencesService', () => {
     localStorage.setItem('lead', 'on');
     expect(TestBed.inject(PreferencesService).lead()).toBe('off');
     expect(localStorage.getItem('lead')).toBe('off');
+  });
+
+  it('leaves no choices on this browser once the account is deleted', async () => {
+    localStorage.setItem('session', 'account');
+    localStorage.setItem('visitor.theme', 'dark');
+    const preferences = TestBed.inject(PreferencesService);
+    const loading = preferences.load();
+    httpMock()
+      .expectOne(API + '/preferences')
+      .flush({ weightUnit: 'lb', region: 'DE', language: 'de' });
+    await loading;
+    expect([localStorage.getItem('weightUnit'), localStorage.getItem('preferredRegion')]).toEqual(['lb', 'DE']);
+
+    const deleting = TestBed.inject(AuthService).deleteAccount('password123');
+    httpMock()
+      .expectOne(API + '/verify')
+      .flush({ msg: 'User verified', id: 'u1', email: 'a@b.com' });
+    await settle();
+    httpMock()
+      .expectOne(API + '/deleteuser/u1')
+      .flush({ msg: 'User deleted' });
+    await deleting;
+    const kept = Object.keys(localStorage).filter((key) => key !== 'session' && key !== 'trial');
+    expect(kept).toEqual([]);
   });
 
   it('saves a choice to the account, and puts the old one back if that fails', async () => {

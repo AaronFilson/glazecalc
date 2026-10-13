@@ -9,7 +9,7 @@
 # If the new version fails to pull or to become healthy, the previous one is
 # started again and nothing is recorded, so a reboot never starts a failed deploy.
 # Each deploy also loads the standard data that ships with the image, and the
-# scripts here (deploy.sh, backup.sh, enable-https.sh) are updated from the
+# scripts here (deploy.sh, backup.sh, restore.sh, enable-https.sh) are updated from the
 # image's commit, so a change to them takes effect with the deploy that ships it.
 set -euo pipefail
 
@@ -65,12 +65,13 @@ fi
 # This commit's scripts. If deploy.sh itself changed, run the new one instead,
 # once: it sees GLAZECALC_DEPLOY_REF and skips this step.
 if [ "${GLAZECALC_DEPLOY_REF:-}" != "$ref" ]; then
-  for f in deploy.sh backup.sh enable-https.sh; do
+  for f in deploy.sh backup.sh restore.sh enable-https.sh; do
     curl -fsSL "$raw/$ref/deploy/$f" -o "$f.new"
     bash -n "$f.new"
     chmod 750 "$f.new"
   done
   mv backup.sh.new backup.sh
+  mv restore.sh.new restore.sh
   mv enable-https.sh.new enable-https.sh
   if ! cmp -s deploy.sh.new deploy.sh; then
     mv deploy.sh.new deploy.sh

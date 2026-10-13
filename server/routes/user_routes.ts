@@ -7,14 +7,17 @@
 //   PUT    /api/preferences       any of them (models/user.ts PREFERENCES lists what each may be)
 //   GET    /api/shelf             the materials the account (or trial) has on hand: { shelf: [key] }
 //   PUT    /api/shelf             { shelf: [key] } in place of the list
-//   PUT    /api/usersettings/:id  { displayname, email, settings, password }
+//   PUT    /api/usersettings/:id  { displayname, email, password }
 //   DELETE /api/deleteuser/:id    { password } removes the account and everything in it
 import express, { type NextFunction, type Request, type Response } from 'express';
 import mongoose from 'mongoose';
 import { deleteAccount } from '../lib/account_data.ts';
+import * as accountMail from '../lib/account_mail.ts';
 import * as email from '../lib/email.ts';
 import { notGuest } from '../lib/guest_limits.ts';
 import jwtAuth, { tokenOf, userOf } from '../lib/jwt_auth.ts';
+import * as log from '../lib/log.ts';
+import * as mailer from '../lib/mailer.ts';
 import { isDuplicateKey } from '../lib/mongo_errors.ts';
 import * as password from '../lib/password.ts';
 import * as limits from '../lib/rate_limit.ts';
@@ -111,7 +114,7 @@ const selfOrAdmin = (req: Request, res: Response, next: NextFunction) => {
 
 // Fields a user may set on their own account. Role and password are not
 // changeable here.
-const SETTABLE_FIELDS = ['displayname', 'email', 'settings'];
+const SETTABLE_FIELDS = ['displayname', 'email'];
 
 // Changing your own email or deleting your own account needs your current
 // password (body.password), so a stolen sign-in token alone cannot take the
@@ -169,7 +172,14 @@ userRouter.delete('/deleteuser/:id', jwtAuth, selfOrAdmin, limits.passwordCheck,
   if (!(await ownPasswordConfirmed(req)))
     return res.status(400).json(say('current-password-needed', undefined, { field: 'password' }));
   const id = req.params.id as string;
-  if (!(await deleteAccount(id))) return res.status(404).json(say('no-user'));
+  const deleted = await deleteAccount(id);
+  if (!deleted) return res.status(404).json(say('no-user'));
   if (id === String(userOf(req)._id)) session.end(res);
+  // A confirmation, saying how long backups keep it. A trial has no address.
+  if (!deleted.guest && mailer.available()) {
+    accountMail
+      .sendDeleted(deleted.email, deleted.preferences?.language)
+      .catch((err: unknown) => log.error('Could not send the account deleted email', { err }));
+  }
   return res.status(200).json(say('user-deleted'));
 });
