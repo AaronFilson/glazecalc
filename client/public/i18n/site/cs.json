@@ -64,24 +64,7 @@
   "privacy": {
     "title": "Ochrana soukromí",
     "lead": "Naposledy aktualizováno v říjnu 2026.",
-    "shortHeading": "Stručně",
-    "short": "Glazecalc uchovává to, co potřebuje k provozu vašeho účtu, a nic víc. Nejsou tu žádné reklamy, žádná analytika, žádné sledovací soubory cookie ani skripty třetích stran. Vaše data se nikdy neprodávají ani nesdílejí.",
-    "storedHeading": "Co se ukládá",
-    "storedAccount": "<b>Váš účet:</b> vaše e-mailová adresa a heslo, které se ukládá jen jako jednosměrný hash (bcrypt), nikdy jako samotné heslo.",
-    "storedTrial": "<b>Zkušební přístup (tlačítko Vyzkoušet hned):</b> žádný e-mail ani heslo, jen vygenerované jméno, například „speckled quiet kilns“. Zkušební přístup a vše, co je v něm uložené, se automaticky odstraní 14 dní po jeho začátku, pokud si je neuchováte vytvořením účtu.",
-    "storedSaved": "<b>Co uložíte:</b> vaše recepty, suroviny, přísady, poznámky, záznamy výpalů a rady. Ostatní uživatelé je nevidí.",
-    "storedResets": "<b>Žádosti o obnovení hesla:</b> otisk každého odkazu pro obnovení (ne samotný odkaz), který se automaticky smaže, když po 30 minutách vyprší.",
-    "storedBrowser": "<b>Ve vašem prohlížeči:</b> jeden soubor cookie, <code>glazecalc_session</code>, který udržuje vaše přihlášení. Obsahuje váš přihlašovací token, skripty na stránce ho nemohou číst, posílá se jen na vlastní server aplikace Glazecalc a platí 7 dní (u zkušebního přístupu 14). V místním úložišti prohlížeče je záznam o vašem přihlášení a během zkušebního přístupu také jeho jméno a datum konce. Odhlášením se tyto údaje odstraní.",
-    "emailHeading": "E-mail",
-    "email": "Glazecalc posílá e-maily jen tehdy, když požádáte o obnovení hesla a když se vaše heslo změní. Odesílají se přes službu Amazon Simple Email Service. Žádný zpravodaj ani marketingové e-maily se neposílají.",
-    "hostingHeading": "Protokoly, zálohy a hosting",
-    "logs": "Webový server zapisuje každý požadavek včetně vaší IP adresy do protokolu, který se uchovává 14 dní kvůli provozu a zabezpečení webu.",
-    "backups": "Šifrované zálohy databáze se uchovávají 30 dní a kopie disku serveru 7 dní, aby bylo možné web po výpadku obnovit.",
-    "hosting": "Vše hostuje společnost Amazon Web Services ve Spojených státech (Oregon).",
-    "deletingHeading": "Odstranění vašich dat",
-    "deleting": "Účet můžete odstranit na <account>stránce účtu</account>. Tím se okamžitě odstraní váš účet i vše, co je v něm uložené; tlačítko Zahodit zkušební přístup udělá totéž se zkušebním přístupem. Kopie v zálohách zmizí, až zálohy vyprší, tedy do 30 dní.",
-    "questionsHeading": "Dotazy",
-    "questions": "Ptejte se <issues>založením hlášení na webu GitHub</issues>. Pokud se tyto zásady změní, změní se i datum v horní části této stránky."
+    "shortHeading": "Stručně"
   },
   "notFound": {
     "heading": "Stránka nenalezena",

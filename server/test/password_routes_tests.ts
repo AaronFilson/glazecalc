@@ -156,10 +156,12 @@ describe('password reset and change', () => {
       const token = await resetToken(address);
       const moved = newAddress();
       const change = await api()
-        .put('/usersettings/' + user._id)
+        .post('/email/change')
         .set('Authorization', 'Bearer ' + user.generateToken())
         .send({ email: moved, password: 'old-password' });
       expect(change).to.have.status(200);
+      const link = mail.linkTokenIn((await mail.waitFor(moved, 1))[0]!);
+      expect(await api().post('/email/confirm').send({ token: link })).to.have.status(200);
       expect(await reset(token, 'taken-over-password')).to.have.status(400);
       expect(await signIn(moved, 'old-password')).to.have.status(200);
     });

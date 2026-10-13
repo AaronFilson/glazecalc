@@ -1,8 +1,8 @@
-import { Injectable, computed, effect, inject, signal } from '@angular/core';
+import { DestroyRef, Injectable, computed, effect, inject, signal } from '@angular/core';
 import { REGION_CODES, formatLocaleFor, regionFor } from '../../../lib/regions';
 import { PAGE_LANGUAGE } from '../i18n/language';
 import { formatLocale, listLocale, typedDecimalMark } from '../shared/format';
-import { saveRegion } from '../shared/library-info';
+import { followRegion, readRegion } from '../shared/library-info';
 import { ConeSystem, Density, PreferencesService, TemperatureScale } from './preferences.service';
 
 /** The region the browser's own language names (en-US is the US), for defaults until a region is chosen. */
@@ -55,10 +55,18 @@ export class LocaleService {
     effect(() => formatLocale.set(this.locale()));
     effect(() => listLocale.set(this.listLocale()));
     effect(() => typedDecimalMark.set(this.preferences.decimalMark()));
-    // The library lists what is sold where the potter works, once a region is chosen.
+    // Back to the defaults when the app (or a test's injector) is torn down, so
+    // the next one does not start in this one's locale.
+    inject(DestroyRef).onDestroy(() => {
+      formatLocale.set('en');
+      listLocale.set('en');
+      typedDecimalMark.set('either');
+    });
+    // The library lists what is sold where the potter works, once a region is chosen. This follows
+    // the setting for the visit; only a choice made in the library itself is kept on the browser.
     effect(() => {
       const library = regionFor(this.preferences.region())?.library;
-      if (library) saveRegion(library);
+      followRegion(library ?? readRegion());
     });
   }
 }

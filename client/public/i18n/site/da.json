@@ -64,24 +64,7 @@
   "privacy": {
     "title": "Privatlivspolitik",
     "lead": "Senest opdateret oktober 2026.",
-    "shortHeading": "Kort fortalt",
-    "short": "Glazecalc gemmer det, der skal til for at drive kontoen, og intet andet. Der er ingen reklamer, ingen webanalyse, ingen sporingscookies og ingen scripts fra tredjeparter. Dine data bliver aldrig solgt eller delt.",
-    "storedHeading": "Hvad der gemmes",
-    "storedAccount": "<b>Kontoen:</b> e-mailadressen og adgangskoden, som kun gemmes som en envejs-hash (bcrypt), aldrig som selve adgangskoden.",
-    "storedTrial": "<b>En prøveperiode (»Prøv nu«):</b> ingen e-mail eller adgangskode, kun et genereret navn som »speckled quiet kilns«. En prøveperiode og alt, der er gemt i den, slettes automatisk 14 dage efter start, medmindre der oprettes en konto for at beholde dem.",
-    "storedSaved": "<b>Det, du gemmer:</b> opskrifter, råvarer, tilsætninger, noter, brændingsjournaler og råd. Andre brugere kan ikke se dem.",
-    "storedResets": "<b>Anmodninger om nulstilling af adgangskoden:</b> et fingeraftryk af hvert nulstillingslink (ikke selve linket), som slettes automatisk, når det udløber 30 minutter senere.",
-    "storedBrowser": "<b>I browseren:</b> én cookie, <code>glazecalc_session</code>, der holder dig logget ind. Den indeholder dit login-token, scripts på siden kan ikke læse den, den sendes kun til Glazecalcs egen server, og den varer 7 dage (14 for en prøveperiode). I browserens lokale lagring (local storage) gemmes en note om, at du er logget ind, og under en prøveperiode dens navn og slutdato. Når du logger ud, fjernes de.",
-    "emailHeading": "E-mail",
-    "email": "Glazecalc sender kun e-mail, når du beder om at nulstille adgangskoden, og når adgangskoden ændres. Den sendes via Amazon Simple Email Service. Der er intet nyhedsbrev og ingen markedsføringsmails.",
-    "hostingHeading": "Logfiler, sikkerhedskopier og hosting",
-    "logs": "Webserveren registrerer hver forespørgsel, herunder din IP-adresse, i en log, der gemmes i 14 dage for at drive og sikre webstedet.",
-    "backups": "Krypterede sikkerhedskopier af databasen gemmes i 30 dage og kopier af serverens disk i 7 dage, så webstedet kan genoprettes efter et nedbrud.",
-    "hosting": "Alt hostes af Amazon Web Services i USA (Oregon).",
-    "deletingHeading": "Sletning af dine data",
-    "deleting": "Kontoen kan slettes fra <account>kontosiden</account>. Det fjerner med det samme kontoen og alt, hvad der er gemt; »Kassér prøveperioden« gør det samme for en prøveperiode. Kopier i sikkerhedskopierne forsvinder, efterhånden som sikkerhedskopierne udløber, inden for 30 dage.",
-    "questionsHeading": "Spørgsmål",
-    "questions": "Spørg ved at <issues>oprette et issue på GitHub</issues>. Hvis denne politik ændres, ændres datoen øverst på siden også."
+    "shortHeading": "Kort fortalt"
   },
   "notFound": {
     "heading": "Siden blev ikke fundet",

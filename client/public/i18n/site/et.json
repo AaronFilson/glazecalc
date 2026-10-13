@@ -64,24 +64,7 @@
   "privacy": {
     "title": "Privaatsus",
     "lead": "Viimati uuendatud oktoobris 2026.",
-    "shortHeading": "Lühidalt",
-    "short": "Glazecalc hoiab alles ainult selle, mida on vaja teie konto toimimiseks, ja mitte midagi enamat. Reklaame, analüütikat, jälgimisküpsiseid ega kolmandate osapoolte skripte ei ole. Teie andmeid ei müüda ega jagata kunagi.",
-    "storedHeading": "Mida salvestatakse",
-    "storedAccount": "<b>Teie konto:</b> teie e-posti aadress ja parool, mis salvestatakse ainult ühesuunalise räsina (bcrypt), mitte kunagi parooli enda kujul.",
-    "storedTrial": "<b>Proovikasutus (nupp Proovi kohe):</b> e-posti aadressi ega parooli pole, ainult loodud nimi, näiteks „speckled quiet kilns“. Proovikasutus ja kõik sellesse salvestatu kustutatakse automaatselt 14 päeva pärast selle algust, kui te ei loo nende säilitamiseks kontot.",
-    "storedSaved": "<b>Mida salvestate:</b> teie retseptid, toorained, lisaained, märkmed, põletuspäevikud ja nõuanded. Teised kasutajad neid ei näe.",
-    "storedResets": "<b>Parooli lähtestustaotlused:</b> iga lähtestuslingi sõrmejälg (mitte link ise), mis kustutatakse automaatselt, kui see 30 minuti pärast aegub.",
-    "storedBrowser": "<b>Teie brauseris:</b> üks küpsis, <code>glazecalc_session</code>, mis hoiab teid sisselogituna. See sisaldab teie sisselogimisluba, lehe skriptid ei saa seda lugeda, see saadetakse ainult Glazecalci enda serverisse ja kehtib 7 päeva (proovikasutuse puhul 14). Brauseri kohalikus salvestusruumis on märge, et olete sisse logitud, ning proovikasutuse ajal selle nimi ja lõppkuupäev. Väljalogimine eemaldab need.",
-    "emailHeading": "E-post",
-    "email": "Glazecalc saadab e-kirju ainult siis, kui palute parooli lähtestada, ja siis, kui teie parool muutub. Kirjad saadetakse teenuse Amazon Simple Email Service kaudu. Uudiskirja ega turunduskirju ei ole.",
-    "hostingHeading": "Logid, varukoopiad ja majutus",
-    "logs": "Veebiserver salvestab iga päringu koos teie IP-aadressiga logisse, mida hoitakse 14 päeva saidi käitamiseks ja turvamiseks.",
-    "backups": "Andmebaasi krüpteeritud varukoopiaid hoitakse 30 päeva ja serveri ketta koopiaid 7 päeva, et saiti saaks pärast riket taastada.",
-    "hosting": "Kõik on majutatud teenuses Amazon Web Services Ameerika Ühendriikides (Oregonis).",
-    "deletingHeading": "Andmete kustutamine",
-    "deleting": "Konto saab kustutada oma <account>kontolehel</account>. See eemaldab kohe teie konto ja kõik, mille olete salvestanud; proovikasutuse puhul teeb sama nupp Loobu proovikasutusest. Varukoopiates olevad koopiad kaovad varukoopiate aegudes 30 päeva jooksul.",
-    "questionsHeading": "Küsimused",
-    "questions": "Küsige, <issues>luues GitHubis probleemiteate</issues>. Kui need privaatsuspõhimõtted muutuvad, muutub ka selle lehe ülaosas olev kuupäev."
+    "shortHeading": "Lühidalt"
   },
   "notFound": {
     "heading": "Lehte ei leitud",

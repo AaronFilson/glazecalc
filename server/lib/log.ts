@@ -14,6 +14,16 @@ const plain = (value: unknown): unknown =>
     ? { name: value.name, message: value.message, code: (value as { code?: unknown }).code, stack: value.stack }
     : value;
 
+/**
+ * Only an error's code (EAUTH, ECONNECTION, ...), for failures whose message
+ * or stack could carry someone's details: an SMTP error repeats the address it
+ * refused. 'unknown' when it has none.
+ */
+export const codeOf = (err: unknown): string => {
+  const code = (err as { code?: unknown } | null)?.code;
+  return typeof code === 'string' && /^[A-Za-z0-9_.-]{1,40}$/.test(code) ? code : 'unknown';
+};
+
 const threshold = (): number => LEVELS[process.env.LOG_LEVEL as Level] ?? LEVELS.info;
 
 const write = (level: Exclude<Level, 'silent'>, msg: string, fields: Fields = {}): void => {

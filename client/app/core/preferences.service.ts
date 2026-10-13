@@ -68,11 +68,30 @@ function asChoice<K extends keyof Preferences>(name: K, value: unknown): Prefere
   return choices.includes(value as Preferences[K]) ? (value as Preferences[K]) : choices[0];
 }
 
-// This browser's copy is kept under each preference's name (the region as preferredRegion,
-// since the library's own region filter came first). A choice made with no one signed in is
-// kept as well under "visitor." and its name, to come back when the next session ends.
+// A choice is kept on this browser only when it is made here: under the preference's name
+// (the region as preferredRegion, since the library's own region filter came first), which the
+// next page load reads before the server answers. A choice made with no one signed in is kept
+// as well under "visitor." and its name, to come back when the session ends. The account's
+// choices fetched at sign-in are held in memory and write nothing.
 const copyKey = (name: keyof Preferences): string => (name === 'region' ? 'preferredRegion' : name);
 const visitorKey = (name: keyof Preferences): string => 'visitor.' + name;
+
+function readRaw(key: string): string | null {
+  try {
+    return localStorage.getItem(key);
+  } catch {
+    return null;
+  }
+}
+
+function writeRaw(key: string, value: string | null): void {
+  try {
+    if (value === null) localStorage.removeItem(key);
+    else localStorage.setItem(key, value);
+  } catch {
+    // Without storage, the account's choices are fetched again on each visit.
+  }
+}
 
 function readCopy<K extends keyof Preferences>(name: K, key = copyKey(name)): Preferences[K] {
   try {
@@ -85,8 +104,8 @@ function readCopy<K extends keyof Preferences>(name: K, key = copyKey(name)): Pr
 /**
  * The account's choices about how the app shows things, such as weights in
  * grams or in pounds and ounces. They are kept with the account, so they follow
- * it to every device; this browser keeps a copy so a page shows the choice at
- * once, before the server answers.
+ * it to every device. They are held in memory; a choice made on this browser is
+ * also kept in it, so the next page shows it at once, before the server answers.
  */
 @Injectable({ providedIn: 'root' })
 export class PreferencesService {
@@ -155,9 +174,15 @@ export class PreferencesService {
     // Signed out, or the session ended: the account's choices leave this browser, and the visitor's own come back.
     const forget = () => {
       this.fetched = null;
-      for (const name of NAMES) this.keep(name, readCopy(name, visitorKey(name)));
+      for (const name of NAMES) {
+        const own = readRaw(visitorKey(name));
+        this.apply(name, asChoice(name, own));
+        writeRaw(copyKey(name), own);
+      }
     };
     this.auth.onSessionEnd(forget);
+    // Deleted: none of the choices stay on this browser.
+    this.auth.onAccountDeleted(() => this.clearStored());
     // A trial that ran out while the site was closed ended before this could hear of it.
     if (this.auth.trialEnded()) forget();
   }
@@ -174,7 +199,12 @@ export class PreferencesService {
       (res) => {
         if (this.auth.sessionVersion() !== session) return;
         for (const name of NAMES) {
-          if (this.saves[name] === savesBefore[name]) this.keep(name, asChoice(name, res[name]));
+          if (this.saves[name] !== savesBefore[name]) continue;
+          const value = asChoice(name, res[name]);
+          this.apply(name, value);
+          // A copy this browser already holds follows the account, so the next first paint matches.
+          const key = copyKey(name);
+          if (readRaw(key) !== null && readRaw(key) !== value) writeRaw(key, value);
         }
       },
       () => {
@@ -189,28 +219,44 @@ export class PreferencesService {
   /** Saves a choice to the account. If that fails, the choice before comes back and the error is thrown. */
   async set<K extends keyof Preferences>(name: K, value: Preferences[K]): Promise<void> {
     const before = this.values[name]();
+    const copyBefore = readRaw(copyKey(name));
     const save = ++this.saves[name];
-    this.keep(name, value);
+    this.apply(name, value);
+    writeRaw(copyKey(name), value);
     try {
       await firstValueFrom(this.http.put(this.apiBase + '/preferences', { [name]: value }));
     } catch (err) {
-      if (save === this.saves[name]) this.keep(name, before);
+      if (save === this.saves[name]) {
+        this.apply(name, before);
+        writeRaw(copyKey(name), copyBefore);
+      }
       throw err;
     }
   }
 
   /** Keeps a choice on this browser only, for a visitor with no account to save it to. */
   remember<K extends keyof Preferences>(name: K, value: Preferences[K]): void {
-    this.keep(name, value, visitorKey(name));
+    this.apply(name, value);
+    writeRaw(copyKey(name), value);
+    writeRaw(visitorKey(name), value);
   }
 
-  private keep<K extends keyof Preferences>(name: K, value: Preferences[K], visitor?: string): void {
-    this.values[name].set(value);
+  /**
+   * Removes every choice this browser keeps, the account's copy and a visitor's
+   * own. The page goes on showing them until it is reloaded.
+   */
+  private clearStored(): void {
     try {
-      localStorage.setItem(copyKey(name), value);
-      if (visitor) localStorage.setItem(visitor, value);
+      for (const name of NAMES) {
+        localStorage.removeItem(copyKey(name));
+        localStorage.removeItem(visitorKey(name));
+      }
     } catch {
-      // Without storage, the account's choices are fetched again on each visit.
+      // Without storage there is nothing to remove.
     }
+  }
+
+  private apply<K extends keyof Preferences>(name: K, value: Preferences[K]): void {
+    this.values[name].set(value);
   }
 }

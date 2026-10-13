@@ -9,7 +9,7 @@
 # If the new version fails to pull or to become healthy, the previous one is
 # started again and nothing is recorded, so a reboot never starts a failed deploy.
 # Each deploy also loads the standard data that ships with the image, and the
-# scripts here (deploy.sh, backup.sh, enable-https.sh) are updated from the
+# scripts here (deploy.sh, backup.sh, restore.sh, enable-https.sh) are updated from the
 # image's commit, so a change to them takes effect with the deploy that ships it.
 set -euo pipefail
 
@@ -65,12 +65,13 @@ fi
 # This commit's scripts. If deploy.sh itself changed, run the new one instead,
 # once: it sees GLAZECALC_DEPLOY_REF and skips this step.
 if [ "${GLAZECALC_DEPLOY_REF:-}" != "$ref" ]; then
-  for f in deploy.sh backup.sh enable-https.sh; do
+  for f in deploy.sh backup.sh restore.sh enable-https.sh; do
     curl -fsSL "$raw/$ref/deploy/$f" -o "$f.new"
     bash -n "$f.new"
     chmod 750 "$f.new"
   done
   mv backup.sh.new backup.sh
+  mv restore.sh.new restore.sh
   mv enable-https.sh.new enable-https.sh
   if ! cmp -s deploy.sh.new deploy.sh; then
     mv deploy.sh.new deploy.sh
@@ -95,6 +96,25 @@ secret=$(aws ssm get-parameter --region "$region" --name /glazecalc/app-secret -
   --query Parameter.Value --output text)
 printf 'APP_SECRET=%s\n' "$secret" > app.env.new
 unset secret
+# The password of the app's MongoDB user. The app gets it in its connection
+# string, and MongoDB (mongo.env) uses it to create the user in a new database.
+# Letters and digits only (openssl rand -hex 32), so the string needs no escaping.
+if ! mongo_password=$(aws ssm get-parameter --region "$region" --name /glazecalc/mongo-password --with-decryption \
+    --query Parameter.Value --output text 2>ssm-error.txt); then
+  cat ssm-error.txt >&2
+  echo "Could not read /glazecalc/mongo-password (deploy/README.md, MongoDB sign-in); the running version is unchanged." >&2
+  rm -f ssm-error.txt app.env.new mongo.env.new compose.prod.yaml.new
+  exit 1
+fi
+rm -f ssm-error.txt
+if [[ ! "$mongo_password" =~ ^[A-Za-z0-9]{20,}$ ]]; then
+  echo "/glazecalc/mongo-password must be 20 or more letters and digits (openssl rand -hex 32); the running version is unchanged." >&2
+  rm -f app.env.new mongo.env.new compose.prod.yaml.new
+  exit 1
+fi
+printf 'MONGODB_URI=mongodb://glazecalc:%s@mongo:27017/glazecalc?authSource=glazecalc\n' "$mongo_password" >> app.env.new
+printf 'MONGO_APP_PASSWORD=%s\n' "$mongo_password" > mongo.env.new
+unset mongo_password
 # Email (Amazon SES over SMTP) is on once /glazecalc/smtp-url exists (see
 # deploy/aws/create-mailer.sh); until then reset by email says it is unavailable.
 # Any other error reading it (throttling, the network) stops the deploy here,
@@ -108,12 +128,13 @@ elif grep -q ParameterNotFound ssm-error.txt; then
 else
   cat ssm-error.txt >&2
   echo "Could not read /glazecalc/smtp-url; the running version is unchanged." >&2
-  rm -f ssm-error.txt app.env.new compose.prod.yaml.new
+  rm -f ssm-error.txt app.env.new mongo.env.new compose.prod.yaml.new
   exit 1
 fi
 rm -f ssm-error.txt
 unset smtp
 mv app.env.new app.env
+mv mongo.env.new mongo.env
 umask 022
 
 # Compose's progress lines go to stderr, where the SSM log shows them as if

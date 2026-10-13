@@ -49,10 +49,14 @@ export type Preferences = { -readonly [K in keyof typeof PREFERENCES]: (typeof P
 
 export interface UserFields {
   email: string;
+  /**
+   * A trial's generated name ("speckled quiet kilns"), kept when the trial
+   * becomes an account. The app sets no other and shows an account by its
+   * email; PUT /api/usersettings still takes one, for API callers.
+   */
   displayname?: string;
   password: string;
   role?: string;
-  settings: string[];
   /** Choices that shape how the app shows things; any account or trial may set them. */
   preferences?: Partial<Preferences>;
   /**
@@ -65,6 +69,12 @@ export interface UserFields {
    * (on other devices, or a stolen one) stop working.
    */
   tokenVersion: number;
+  /**
+   * Set on accounts made since email verification began, until the link sent to
+   * the address is opened (server/routes/email_routes.ts). Accounts without it,
+   * the older ones included, count as verified.
+   */
+  emailUnverified?: boolean;
   /** A trial account (server/routes/guest_routes.ts), removed after expiresAt. */
   guest?: boolean;
   expiresAt?: Date;
@@ -76,7 +86,7 @@ interface UserMethods {
   /** Sets the password, hashed. Synchronous, for tests and scripts; routes use lib/password.ts. */
   hashPassword(password: string): string;
   comparePassword(password: string): boolean;
-  generateToken(expiresIn?: TokenLifetime): string;
+  generateToken(expiresIn?: TokenLifetime, keep?: boolean): string;
 }
 
 type UserModel = mongoose.Model<UserFields, object, UserMethods>;
@@ -87,7 +97,8 @@ const userSchema = new mongoose.Schema<UserFields, UserModel, UserMethods>({
   displayname: String,
   password: { type: String, required: true },
   role: String,
-  settings: [String],
+  // The old app's `settings` list, never used, is no longer read or written.
+  // Documents that still have it load as before; the field is simply ignored.
   preferences: {
     weightUnit: { type: String, enum: PREFERENCES.weightUnit },
     gramPrecision: { type: String, enum: PREFERENCES.gramPrecision },
@@ -106,6 +117,7 @@ const userSchema = new mongoose.Schema<UserFields, UserModel, UserMethods>({
   },
   shelf: { type: [String], default: undefined },
   tokenVersion: { type: Number, default: 0 },
+  emailUnverified: Boolean,
   guest: Boolean,
   expiresAt: Date,
   trialCounts: { type: Map, of: Number }
@@ -120,8 +132,13 @@ userSchema.method('comparePassword', function (this: UserDocument, password: str
   return bcrypt.compareSync(password, this.password);
 });
 
-userSchema.method('generateToken', function (this: UserDocument, expiresIn: TokenLifetime = '7d') {
-  return jwt.sign({ id: String(this._id), tv: this.tokenVersion || 0 }, appSecret, { algorithm: 'HS256', expiresIn });
+// { id, tv, ss }: the user, their token version, and ss when the sign-in is for
+// this browser session only (server/lib/session.ts), so a renewed cookie keeps its kind.
+userSchema.method('generateToken', function (this: UserDocument, expiresIn: TokenLifetime = '7d', keep = true) {
+  return jwt.sign({ id: String(this._id), tv: this.tokenVersion || 0, ...(keep ? {} : { ss: true }) }, appSecret, {
+    algorithm: 'HS256',
+    expiresIn
+  });
 });
 
 // One account per email, ignoring case.

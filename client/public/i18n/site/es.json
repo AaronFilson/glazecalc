@@ -64,24 +64,7 @@
   "privacy": {
     "title": "Privacidad",
     "lead": "Última actualización: octubre de 2026.",
-    "shortHeading": "En resumen",
-    "short": "Glazecalc guarda lo que necesita para que funcione su cuenta, y nada más. No hay anuncios, ni analítica, ni cookies de seguimiento, ni scripts de terceros. Sus datos nunca se venden ni se comparten.",
-    "storedHeading": "Qué se guarda",
-    "storedAccount": "<b>Su cuenta:</b> su dirección de correo electrónico y su contraseña, que se guarda solo como un hash unidireccional (bcrypt), nunca la contraseña en sí.",
-    "storedTrial": "<b>Un periodo de prueba («Probar ahora»):</b> sin correo electrónico ni contraseña, solo un nombre generado, como «speckled quiet kilns». El periodo de prueba y todo lo guardado en él se eliminan automáticamente 14 días después de empezar, salvo que cree una cuenta para conservarlos.",
-    "storedSaved": "<b>Lo que usted guarda:</b> sus recetas, materiales, aditivos, notas, registros de cocción y consejos. Otras personas que usan Glazecalc no pueden verlos.",
-    "storedResets": "<b>Solicitudes para restablecer la contraseña:</b> una huella de cada enlace de restablecimiento (no el enlace en sí), que se elimina automáticamente cuando caduca, 30 minutos después.",
-    "storedBrowser": "<b>En su navegador:</b> una cookie, <code>glazecalc_session</code>, que mantiene su sesión iniciada. Contiene su token de inicio de sesión, los scripts de la página no pueden leerla, solo se envía al servidor de Glazecalc y dura 7 días (14 en un periodo de prueba). El almacenamiento local guarda una nota de que ha iniciado sesión y, durante un periodo de prueba, el nombre de la prueba y la fecha en que termina. Al cerrar sesión se eliminan.",
-    "emailHeading": "Correo electrónico",
-    "email": "Glazecalc solo envía correos electrónicos cuando usted pide restablecer su contraseña y cuando su contraseña cambia. Se envían a través de Amazon Simple Email Service. No hay boletín ni correos publicitarios.",
-    "hostingHeading": "Registros, copias de seguridad y alojamiento",
-    "logs": "El servidor web registra cada solicitud, incluida su dirección IP, en un registro que se conserva 14 días para hacer funcionar el sitio y protegerlo.",
-    "backups": "Las copias de seguridad cifradas de la base de datos se conservan 30 días, y las copias del disco del servidor, 7 días, para poder restaurar el sitio tras un fallo.",
-    "hosting": "Todo está alojado en Amazon Web Services, en Estados Unidos (Oregón).",
-    "deletingHeading": "Eliminar sus datos",
-    "deleting": "Puede eliminar su cuenta desde la <account>página de su cuenta</account>. Así se eliminan de inmediato su cuenta y todo lo que haya guardado; «Descartar la prueba» hace lo mismo con un periodo de prueba. Las copias que haya en las copias de seguridad desaparecen a medida que estas caducan, en un plazo de 30 días.",
-    "questionsHeading": "Preguntas",
-    "questions": "Pregunte <issues>abriendo una incidencia en GitHub</issues>. Si esta política cambia, también cambia la fecha que figura al principio de esta página."
+    "shortHeading": "En resumen"
   },
   "notFound": {
     "heading": "Página no encontrada",

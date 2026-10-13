@@ -36,6 +36,12 @@ export function readRegion(): string {
 /** The region chosen last, for any page to follow as it changes (saveRegion sets it). */
 export const chosenRegion = signal(readRegion());
 
+/** Follows the region chosen in Settings for this visit, without writing it to the browser. */
+export function followRegion(region: string): void {
+  chosenRegion.set(region);
+}
+
+/** The user's choice of region in a library list: the only write of the region key. */
 export function saveRegion(region: string): void {
   chosenRegion.set(region);
   try {

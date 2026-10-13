@@ -41,6 +41,23 @@ describe('AuthService', () => {
     expect(auth.email()).toBe('a@b.com');
   });
 
+  it('asks to keep the sign-in only when the box is ticked, and in a header, never in the address', async () => {
+    setup();
+    for (const keep of [false, true]) {
+      const done = auth.signIn('a@b.com', 'password123', keep);
+      const req = httpMock().expectOne(API + '/signin');
+      expect(req.request.headers.get('X-Keep-Signed-In')).toBe(keep ? '1' : null);
+      expect(req.request.urlWithParams).toBe(API + '/signin');
+      req.flush({ msg: 'Success in signin', email: 'a@b.com', kept: 0 });
+      await done;
+    }
+    const signUp = auth.signUp('c@d.com', 'password123', true);
+    const req = httpMock().expectOne(API + '/signup');
+    expect(req.request.headers.get('X-Keep-Signed-In')).toBe('1');
+    req.flush({ email: 'c@d.com' });
+    await signUp;
+  });
+
   it('does not note a session when sign in fails', async () => {
     setup();
     const done = auth.signIn('a@b.com', 'wrong');

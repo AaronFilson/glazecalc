@@ -20,6 +20,14 @@
   "password-reset": "Your password has been changed. Please sign in with your new password.",
   "reset-unavailable": "Password reset by email is not available yet.",
   "reset-sent": "If an account uses that email, we have sent it a link to reset the password. The link works for {minutes} minutes.",
+  "signed-out-everywhere": "You have been signed out on every device.",
+  "email-unavailable": "Email is not available yet, so we cannot send the link.",
+  "email-change-sent": "We have sent a link to the new address. Your email changes when you open it. The link works for {hours} hours.",
+  "email-changed": "Your email has been changed. Please sign in again with the new address.",
+  "email-verified": "Your email is confirmed.",
+  "email-link-bad": "This link is not valid or has expired. Please ask for a new one.",
+  "verification-sent": "We have sent a new link to your email. The link works for {hours} hours.",
+  "already-verified": "Your email is already confirmed.",
   "reset-link-bad": "This reset link is not valid or has expired. Please ask for a new one.",
   "trials-full": "Too many people are trying Glazecalc right now. Please create a free account instead.",
   "trial-failed": "Could not start a trial just now. Please try again.",
@@ -61,5 +69,6 @@
   "too-many-sign-ups": "Too many new accounts from this address. Please try again later.",
   "too-many-trials": "Too many trials from this address. Please try again later, or create a free account.",
   "too-many-resets": "Too many password reset requests. Please wait a few minutes and try again.",
+  "too-many-email-links": "Too many emails requested. Please wait a few minutes and try again.",
   "too-many-attempts": "Too many attempts. Please wait a few minutes and try again."
 }

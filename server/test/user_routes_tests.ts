@@ -215,15 +215,16 @@ describe('user API', () => {
   });
 
   describe('your own account', () => {
-    it('changes your email when you give your password', async () => {
-      const address = uniqueEmail('changed');
+    it('does not change your email here, even with your password', async () => {
       const res = await api()
         .put('/usersettings/' + user._id)
         .set('Authorization', 'Bearer ' + token)
-        .send({ email: address, password: 'password123' });
+        .send({ email: uniqueEmail('changed'), password: 'password123', displayname: 'Same' });
+      // The other setting goes through; the email waits for its link (email_routes_tests.ts).
       expect(res).to.have.status(200);
-      expect(res.body.msg).to.eql('User updated');
-      expect((await User.findById(user._id))!.email).to.eql(address);
+      const stored = (await User.findById(user._id))!;
+      expect(stored.email).to.eql(user.email);
+      expect(stored.displayname).to.eql('Same');
     });
 
     it('deletes your account when you give your password', async () => {
@@ -251,7 +252,7 @@ describe('user API', () => {
     it('does not take an email already in use, whatever its case', async () => {
       const other = await makeUser();
       const res = await api()
-        .put('/usersettings/' + user._id)
+        .post('/email/change')
         .set('Authorization', 'Bearer ' + token)
         .send({ email: other.email.toUpperCase(), password: 'password123' });
       expect(res).to.have.status(400);

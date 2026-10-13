@@ -7,7 +7,17 @@ import tseslint from 'typescript-eslint';
 
 export default tseslint.config(
   {
-    ignores: ['dist/', 'coverage/', 'playwright-report/', 'test-results/', 'test-results-linux/', '.angular/', 'db/']
+    ignores: [
+      'dist/',
+      'coverage/',
+      'playwright-report/',
+      'test-results/',
+      'test-results-linux/',
+      '.angular/',
+      'db/',
+      '.claude/',
+      'scratch/'
+    ]
   },
 
   // Node: API server, chemistry library, build scripts and browser tests.
@@ -32,6 +42,11 @@ export default tseslint.config(
       sourceType: 'module',
       globals: { ...globals.node }
     }
+  },
+  // The mail forwarder's tests (npm run test:forwarder).
+  {
+    files: ['deploy/aws/mail-forwarder/test/**/*.mjs'],
+    languageOptions: { globals: { ...globals.mocha } }
   },
   // The API server: TypeScript run by Node as it is (server/tsconfig.json).
   {

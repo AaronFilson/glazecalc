@@ -6,3 +6,8 @@ test-results-linux/
 .angular/
 db/
 package-lock.json
+# Local working folders, not part of the project.
+.claude/
+scratch/
+reports/
+research_notes/

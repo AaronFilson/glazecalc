@@ -22,6 +22,8 @@ export const signUp = limiter(60, 10, 'too-many-sign-ups');
 export const guest = limiter(60, 10, 'too-many-trials');
 export const forgotPassword = limiter(15, 5, 'too-many-resets');
 export const resetPassword = limiter(15, 10, 'too-many-attempts');
+export const emailLinks = limiter(15, 5, 'too-many-email-links');
+export const confirmEmail = limiter(15, 10, 'too-many-attempts');
 export const changePassword = limiter(15, 10, 'too-many-attempts');
 
 /**

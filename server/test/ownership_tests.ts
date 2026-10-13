@@ -200,11 +200,11 @@ describe('record ownership and input checks', () => {
       expect((await User.findById(bob.user._id))!.displayname).to.eql('Bobby');
     });
 
-    it('rejects a non-text email in settings', async () => {
+    it('rejects a non-text email in an email change', async () => {
       const res = await api()
-        .put('/usersettings/' + bob.user._id)
+        .post('/email/change')
         .set('Authorization', 'Bearer ' + bob.token)
-        .send({ email: { $gt: '' } });
+        .send({ email: { $gt: '' }, password: bob.password });
       expect(res).to.have.status(400);
       expect(res.body.msg).to.eql('Please enter an email');
       expect((await User.findById(bob.user._id))!.email).to.eql(bob.email);
@@ -224,13 +224,13 @@ describe('record ownership and input checks', () => {
     });
 
     it('reads an id in capitals as the same account', async () => {
-      // An admin's own email still needs the admin's password, so a stolen token cannot take the account.
+      // The email is not changed here at all, so a stolen token cannot take the account.
       const own = await api()
         .put('/usersettings/' + String(admin.user._id).toUpperCase())
         .set('Authorization', 'Bearer ' + admin.token)
         .send({ email: uniqueEmail('taken') });
       expect(own).to.have.status(400);
-      expect(own.body.code).to.eql('current-password-needed');
+      expect(own.body.code).to.eql('nothing-to-update');
       expect((await User.findById(admin.user._id))!.email).to.eql(admin.email);
       // And another account goes with all its records.
       await Firing.create([firing(bob.user, 'bob 1')]);

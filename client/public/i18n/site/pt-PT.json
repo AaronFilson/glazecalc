@@ -64,24 +64,7 @@
   "privacy": {
     "title": "Privacidade",
     "lead": "Última atualização: outubro de 2026.",
-    "shortHeading": "Em resumo",
-    "short": "O Glazecalc guarda o que precisa para gerir a sua conta e nada mais. Não há anúncios, nem ferramentas de análise, nem cookies de rastreio, nem scripts de terceiros. Os seus dados nunca são vendidos nem partilhados.",
-    "storedHeading": "O que é guardado",
-    "storedAccount": "<b>A sua conta:</b> o seu endereço de e-mail e a sua palavra-passe, que é guardada apenas como um hash unidirecional (bcrypt), nunca como a própria palavra-passe.",
-    "storedTrial": "<b>Um período de experiência («Experimentar agora»):</b> sem e-mail nem palavra-passe, apenas um nome gerado, como «speckled quiet kilns». Um período de experiência e tudo o que nele for guardado são eliminados automaticamente 14 dias depois do início, a não ser que crie uma conta para os manter.",
-    "storedSaved": "<b>O que guarda:</b> as suas receitas, matérias-primas, aditivos, notas, registos de cozedura e conselhos. Os outros utilizadores não os podem ver.",
-    "storedResets": "<b>Pedidos de reposição da palavra-passe:</b> uma impressão digital de cada ligação de reposição (não a própria ligação), eliminada automaticamente quando expira, 30 minutos depois.",
-    "storedBrowser": "<b>No seu navegador:</b> um cookie, <code>glazecalc_session</code>, que mantém a sua sessão iniciada. Contém o seu token de sessão, os scripts da página não o podem ler, só é enviado para o servidor do próprio Glazecalc e dura 7 dias (14 num período de experiência). O armazenamento local guarda uma nota de que tem a sessão iniciada e, durante um período de experiência, o nome e a data de fim deste. Terminar a sessão remove-os.",
-    "emailHeading": "E-mail",
-    "email": "O Glazecalc só envia e-mails quando pede para repor a sua palavra-passe e quando a sua palavra-passe muda. São enviados através do Amazon Simple Email Service. Não há newsletter nem e-mails de marketing.",
-    "hostingHeading": "Registos, cópias de segurança e alojamento",
-    "logs": "O servidor web regista cada pedido, incluindo o seu endereço IP, num ficheiro de registo guardado durante 14 dias para gerir e proteger o site.",
-    "backups": "As cópias de segurança encriptadas da base de dados são guardadas durante 30 dias, e as cópias do disco do servidor durante 7 dias, para que o site possa ser reposto após uma falha.",
-    "hosting": "Tudo está alojado na Amazon Web Services, nos Estados Unidos (Oregon).",
-    "deletingHeading": "Eliminar os seus dados",
-    "deleting": "Pode eliminar a sua conta na <account>página da sua conta</account>. Isso remove de imediato a sua conta e tudo o que guardou; «Descartar a experiência» faz o mesmo num período de experiência. Os dados nas cópias de segurança desaparecem à medida que estas expiram, no prazo de 30 dias.",
-    "questionsHeading": "Perguntas",
-    "questions": "Para perguntar, <issues>abra uma issue no GitHub</issues>. Se esta política mudar, a data no topo desta página também muda."
+    "shortHeading": "Em resumo"
   },
   "notFound": {
     "heading": "Página não encontrada",

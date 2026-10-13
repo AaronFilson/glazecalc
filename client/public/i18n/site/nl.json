@@ -64,24 +64,7 @@
   "privacy": {
     "title": "Privacy",
     "lead": "Laatst bijgewerkt in oktober 2026.",
-    "shortHeading": "In het kort",
-    "short": "Glazecalc bewaart wat nodig is om uw account te laten werken, en niets meer. Er zijn geen advertenties, geen analysetools, geen trackingcookies en geen scripts van derden. Uw gegevens worden nooit verkocht of gedeeld.",
-    "storedHeading": "Wat er wordt opgeslagen",
-    "storedAccount": "<b>Uw account:</b> uw e-mailadres en uw wachtwoord, dat alleen als eenrichtingshash (bcrypt) wordt opgeslagen, nooit als het wachtwoord zelf.",
-    "storedTrial": "<b>Een proefperiode (de knop Nu proberen):</b> geen e-mailadres of wachtwoord, alleen een gegenereerde naam zoals “speckled quiet kilns”. Een proefperiode en alles wat erin is opgeslagen, worden 14 dagen na de start automatisch verwijderd, tenzij u een account aanmaakt om ze te bewaren.",
-    "storedSaved": "<b>Wat u opslaat:</b> uw recepten, grondstoffen, toevoegingen, notities, stookverslagen en adviezen. Andere gebruikers kunnen ze niet zien.",
-    "storedResets": "<b>Verzoeken om een wachtwoord opnieuw in te stellen:</b> een vingerafdruk van elke resetlink (niet de link zelf), die automatisch wordt verwijderd wanneer de link 30 minuten later verloopt.",
-    "storedBrowser": "<b>In uw browser:</b> één cookie, <code>glazecalc_session</code>, die u ingelogd houdt. Hij bevat uw inlogtoken, scripts op de pagina kunnen hem niet lezen, hij gaat alleen naar de eigen server van Glazecalc, en hij blijft 7 dagen geldig (14 voor een proefperiode). De lokale opslag bevat een notitie dat u bent ingelogd en, tijdens een proefperiode, de naam en de einddatum ervan. Uitloggen verwijdert ze.",
-    "emailHeading": "E-mail",
-    "email": "Glazecalc stuurt alleen e-mail wanneer u vraagt om uw wachtwoord opnieuw in te stellen en wanneer uw wachtwoord verandert. Die e-mail wordt verstuurd via Amazon Simple Email Service. Er is geen nieuwsbrief en geen marketingmail.",
-    "hostingHeading": "Logbestanden, back-ups en hosting",
-    "logs": "De webserver legt elk verzoek vast, met uw IP-adres, in een logbestand dat 14 dagen wordt bewaard om de site te laten werken en te beveiligen.",
-    "backups": "Versleutelde back-ups van de database worden 30 dagen bewaard, en kopieën van de schijf van de server 7 dagen, zodat de site na een storing kan worden hersteld.",
-    "hosting": "Alles wordt gehost door Amazon Web Services in de Verenigde Staten (Oregon).",
-    "deletingHeading": "Uw gegevens verwijderen",
-    "deleting": "U kunt uw account verwijderen op uw <account>accountpagina</account>. Daarmee worden uw account en alles wat u hebt opgeslagen meteen verwijderd; de knop Proefperiode wissen doet hetzelfde voor een proefperiode. Kopieën in back-ups verdwijnen naarmate de back-ups verlopen, binnen 30 dagen.",
-    "questionsHeading": "Vragen",
-    "questions": "Stel uw vraag door <issues>een issue te openen op GitHub</issues>. Als dit beleid verandert, verandert ook de datum bovenaan deze pagina."
+    "shortHeading": "In het kort"
   },
   "notFound": {
     "heading": "Pagina niet gevonden",

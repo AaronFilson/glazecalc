@@ -120,6 +120,14 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/password/reset-page').then((m) => m.ResetPage)
   },
 
+  {
+    path: 'confirm-email',
+    title: marker('titles.confirmEmail'),
+    providers: [provideTranslocoScope('account')],
+    resolve: { messages: scopeTranslations },
+    loadComponent: () => import('./pages/password/confirm-email-page').then((m) => m.ConfirmEmailPage)
+  },
+
   // The app itself, once signed in.
   {
     path: 'home',

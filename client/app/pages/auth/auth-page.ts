@@ -81,12 +81,19 @@ import { Notices, NoticesList } from '../../shared/notices';
               />
             </div>
           }
+          <div class="form-check mb-3">
+            <input id="keep" type="checkbox" name="keep" class="form-check-input" [(ngModel)]="keep" />
+            <label for="keep" class="form-check-label">{{ t('account.auth.keepSignedIn') }}</label>
+          </div>
           <button type="submit" class="btn btn-primary w-100" [attr.aria-disabled]="busy() || null">
             {{ signup() ? t('account.auth.createAccount') : t('account.auth.signIn') }}
           </button>
         </form>
 
         @if (signup()) {
+          <p class="form-text privacy-note">
+            <gc-rich [text]="t('account.auth.privacy')" [links]="{ privacy: '/privacy' }" />
+          </p>
           <p class="auth-links">
             <gc-rich [text]="t('account.auth.haveAccount')" [links]="{ signin: '/signin' }" />
           </p>
@@ -147,12 +154,15 @@ export class AuthPage {
     return trial ? translate('account.auth.keepLead', { name: trial.name }) : translate('account.auth.signUpLead');
   });
 
+  /** "Keep me signed in on this device", unticked unless chosen: otherwise the sign-in ends with the browser session. */
+  protected readonly keep = signal(false);
+
   protected async submit(): Promise<void> {
     if (this.busy() || !this.checks.validate()) return;
     this.busy.set(true);
     try {
-      if (this.signup()) await this.auth.signUp(this.email(), this.password());
-      else await this.auth.signIn(this.email(), this.password());
+      if (this.signup()) await this.auth.signUp(this.email(), this.password(), this.keep());
+      else await this.auth.signIn(this.email(), this.password(), this.keep());
       await this.router.navigateByUrl('/home');
     } catch (err) {
       // A problem with one field shows on it; others, such as a wrong password at sign-in, above the form.

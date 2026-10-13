@@ -33,6 +33,20 @@ describe('AuthPage', () => {
     expect(navigate).toHaveBeenCalledWith('/home');
   });
 
+  it('has the keep-me-signed-in box unticked, and sends its choice', async () => {
+    const { fixture, page } = await create('signin');
+    const box = fixture.nativeElement.querySelector('#keep') as HTMLInputElement;
+    expect(box.checked).toBe(false);
+    page['email'].set('a@b.com');
+    page['password'].set('password123');
+    page['keep'].set(true);
+    const submitting = page['submit']();
+    const req = httpMock().expectOne(API + '/signin');
+    expect(req.request.headers.get('X-Keep-Signed-In')).toBe('1');
+    req.flush({ email: 'a@b.com' });
+    await submitting;
+  });
+
   it('says when the session ended before a recipe was saved, until the next sign-in', async () => {
     const { fixture, page } = await create('signin');
     const auth = TestBed.inject(AuthService);
@@ -82,6 +96,12 @@ describe('AuthPage', () => {
       .flush({ email: 'a@b.com' });
     await submitting;
     expect(navigate).toHaveBeenCalledWith('/home');
+  });
+
+  it('says in a line on the sign up form what is kept and where, with a link to the privacy notice', async () => {
+    const { fixture } = await create('signup');
+    expect(text(fixture, '.privacy-note')).toContain('stored with Amazon Web Services in the US');
+    expect(fixture.nativeElement.querySelector('.privacy-note a').getAttribute('href')).toBe('/privacy');
   });
 
   it('will not submit a sign up whose passwords differ, and marks the field', async () => {
@@ -161,5 +181,6 @@ describe('AuthPage hidden fields', () => {
     await settle(fixture);
     expect(fixture.nativeElement.querySelector('#confirmation')).toBeNull();
     expect(text(fixture, 'button[type=submit]')).toBe('Sign in');
+    expect(fixture.nativeElement.querySelector('.privacy-note')).toBeNull();
   });
 });

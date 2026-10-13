@@ -1,0 +1,108 @@
+# Record of processing
+
+Glazecalc's record of processing activities (GDPR and UK GDPR Article 30(1)), with the lawful-basis note. Item 12 of
+[eu-data-plan.md](eu-data-plan.md). It says what the [privacy notice](https://glazecalcapp.com/privacy) says, with the
+files behind each line; change both together. Last reviewed **13 October 2026**.
+
+## Controller
+
+| Item                     | Entry                                                                                                                                   |
+| ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Controller               | Aaron Filson, the owner of Glazecalc, a free, open-source, non-profit project run from the United States                                |
+| Contact                  | `privacy@glazecalcapp.com` (forwarded to the owner, [deploy/aws/README.md](../deploy/aws/README.md) section 15); GitHub issues (public) |
+| EU and UK representative | None appointed (owner's decision of 13 October 2026, [eu-data-plan.md](eu-data-plan.md))                                                |
+| Data protection officer  | Not required (no large-scale monitoring, no special categories)                                                                         |
+| Requests from people     | [data-requests.md](data-requests.md)                                                                                                    |
+| Breaches                 | [breach-plan.md](breach-plan.md)                                                                                                        |
+
+## Processing activities
+
+People concerned throughout: people with an account, people trying the app without one (trials), visitors to the site,
+and people who write to a Glazecalc address. No special categories of data are processed on purpose; free-text fields
+(notes, titles) hold whatever a potter types.
+
+| Activity                         | Purpose                                                                                 | Data                                                                                                                                                                                       | Lawful basis                          | Recipients                                        | Kept                                                                                                               | Set in                                                                                                                            |
+| -------------------------------- | --------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------- | ------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------- |
+| Accounts                         | Sign-in, and keeping the account                                                        | Email address, bcrypt hash of the password, 14 preferences, the shelf, token version, whether the address is still unconfirmed; for an account made from a trial, the trial's display name | Contract, Art. 6(1)(b)                | AWS (hosting)                                     | Until the user deletes the account; no deletion for inactivity                                                     | `server/models/user.ts`, `server/lib/account_data.ts`                                                                             |
+| Saved work                       | Storing what the user saves                                                             | Recipes, materials, additives, notes, firing logs, advice, trash                                                                                                                           | Contract                              | AWS                                               | Until the user deletes it or the account                                                                           | `server/models/*.ts`, `server/lib/record_routes.ts`                                                                               |
+| Trials                           | Trying the app without an account                                                       | Generated name, placeholder address, records made in it                                                                                                                                    | Contract (pre-contract steps)         | AWS                                               | 14 days from the start; swept hourly                                                                               | `server/routes/guest_routes.ts`, `server/lib/guest_sweeper.ts`                                                                    |
+| Account email                    | Address confirmation, password reset, notices of password, address and deletion changes | Email address, the account's language; reset and confirmation records: user id, time, the address a confirmation link went to, a hash of the link token                                    | Contract                              | AWS (SES), the user's mail provider               | Reset records about 1 hour (link valid 30 min); confirmation links 24 hours (TTL); nothing about sent mail is kept | `server/routes/password_routes.ts`, `server/routes/email_routes.ts`, `server/models/email_token.ts`, `server/lib/account_mail.ts` |
+| Session cookie and storage       | Keeping the user signed in; remembering choices made on that browser                    | `glazecalc_session` cookie (JWT: user id, token version); localStorage and sessionStorage keys listed in the notice                                                                        | Contract; ePrivacy strictly-necessary | None (on the user's device)                       | Cookie: browser session, 7 days with "Keep me signed in", 14 days for a trial; storage: see the notice table       | `server/lib/session.ts`, `client/app/pages/privacy/privacy-page.ts` (`STORED`)                                                    |
+| Web server logs                  | Security, abuse prevention, fixing faults                                               | IP address, time, request line, status, Referer, user agent (no sign-in names)                                                                                                             | Legitimate interests, Art. 6(1)(f)    | AWS                                               | 14 days                                                                                                            | `deploy/nginx/*.conf`, `deploy/logrotate/nginx`                                                                                   |
+| App and database logs            | Fixing faults                                                                           | Errors with the request path (may hold a record or user id), mail error codes; no email addresses, no query filters                                                                        | Legitimate interests                  | AWS                                               | By size: 5 × 10 MB per container; system journal 14 days                                                           | `deploy/compose.prod.yaml`, `deploy/journald/`, `server/lib/log.ts`                                                               |
+| Rate limits                      | Abuse prevention (sign-in, sign-up, reset, trial)                                       | IP address or user id, with a count                                                                                                                                                        | Legitimate interests                  | None                                              | In memory, 15–60 minutes, lost on restart                                                                          | `server/lib/rate_limit.ts`                                                                                                        |
+| Backups                          | Recovery after a failure                                                                | The whole database (dumps); the whole server disk, logs included (snapshots)                                                                                                               | Legitimate interests (and Art. 32)    | AWS (S3, EBS)                                     | Dumps 30 days; snapshots 7 (daily)                                                                                 | `deploy/backup.sh`, `deploy/aws/README.md` section 3, `deploy/aws/dlm-policy.json`                                                |
+| Deletion log                     | Re-applying deletions after a restore                                                   | User id and time of deletion only                                                                                                                                                          | Legitimate interests (and Art. 17)    | AWS                                               | 37 days (TTL)                                                                                                      | `server/models/deletion.ts`, `deploy/restore.sh`                                                                                  |
+| SES suppression list and notices | Not mailing addresses that bounce or complain; keeping SES sending                      | Email address, reason, time                                                                                                                                                                | Legitimate interests                  | AWS (SES, SNS), the owner's mailbox               | Until the owner removes it (monthly, for addresses with no account); notices deleted within 30 days                | `deploy/aws/README.md` section 14                                                                                                 |
+| Mail to Glazecalc addresses      | Answering people, including data-protection requests                                    | Sender's address and name, the message, attachments                                                                                                                                        | Legitimate interests; Art. 12 duties  | AWS (SES, S3, Lambda), Google (the owner's Gmail) | S3 30 days; inbox as long as needed to answer; request log 3 years                                                 | `deploy/aws/README.md` section 15, [data-requests.md](data-requests.md)                                                           |
+
+Not processed: analytics, advertising, profiling, automated decisions, third-party scripts, fonts or embeds (the
+Content-Security-Policy in `server/app.ts` blocks them), IP geolocation, dates of birth.
+
+## Recipients and transfers
+
+- **Amazon Web Services, Inc.**, processor, in the United States, Oregon (us-west-2): EC2 and EBS (the server),
+  S3 (dumps, inbound mail), SES (mail out and in), SNS (bounce notices), Lambda and CloudWatch Logs (the mail
+  forwarder; its log holds message ids only).
+- **Terms:** the AWS Data Processing Addendum, incorporated by the
+  [AWS Service Terms](https://aws.amazon.com/service-terms/) §1.14 (Service Terms **last updated 1 October 2026**,
+  checked 13 October 2026): §1.14.1 the DPA, §1.14.2 the Supplementary Addendum, §1.14.3 the 2021 Standard
+  Contractual Clauses (controller-to-processor and processor-to-processor), §1.14.4 the UK GDPR Addendum and the Swiss
+  Addendum. Nothing to sign; they apply to any AWS account processing Customer Data. Save a PDF of the Service Terms
+  outside the repo at each review.
+- **Transfer safeguard:** Amazon.com, Inc.'s certification under the EU–US Data Privacy Framework, with the UK
+  Extension and the Swiss–US DPF (adequacy decision
+  [(EU) 2023/1795](https://eur-lex.europa.eu/eli/dec_impl/2023/1795/oj)); check and date the entry at
+  [dataprivacyframework.gov](https://www.dataprivacyframework.gov/list) at each review. Fallback: the SCCs above. The
+  DPF is in force but challenged (appeal C-703/25 P; the EDPB's letter of 31 July 2026). People who sign up directly
+  with Glazecalc are not themselves a Chapter V transfer (EDPB Guidelines 05/2021, Example 1); the hand-over to AWS is.
+- **Google (Gmail)** holds mail forwarded to the owner, and replies sent from it.
+- Not recipients: GitHub (only what a person posts in an issue themselves), Let's Encrypt (no user data), the uptime
+  check (sees `/api/health` only).
+
+## Security measures (Art. 32)
+
+- Passwords hashed with bcrypt (cost 10); reset and confirmation tokens stored only as SHA-256 hashes, single use,
+  30-minute links.
+- HTTPS everywhere with HSTS; the session cookie is HttpOnly, Secure, SameSite=Strict, path `/api`; the same-origin
+  check on every change.
+- Rate limits on sign-in, sign-up, password reset and trials; equal-time sign-in failures.
+- Content-Security-Policy limiting loads to the site itself; `Cache-Control: no-store` on API replies.
+- MongoDB with its own user and password, reachable only on the Docker network; no published port.
+- Encrypted EBS volume and snapshots, S3 default encryption, public access blocked; the setup never turns on versioning for the backup bucket (check the live bucket, plan item 7).
+- Least-privilege IAM: the deploy role runs only `deploy.sh`; the mail user may only send from its addresses; no stored
+  keys in GitHub (OIDC).
+- Logs kept short and without email addresses; the deletion log re-applied on every start and restore.
+- Admin access is the owner's Session Manager shell; nothing records what an admin does (plan item 24).
+
+## Lawful basis note
+
+- **Contract (Art. 6(1)(b))** covers the account, the saved work, the session cookie, the emails about the account and
+  the trial. Each is what the person asked for; without an email address there is no account (sign-in and password
+  reset need it). When the account is deleted, the contract ends and the data goes, at once from the live database
+  and within 30 days from backups. Nothing is kept on another basis afterwards, except the id-only deletion log.
+- **Legitimate interests (Art. 6(1)(f))** cover the logs, rate limits, backups, the deletion log, the SES suppression
+  list and answering mail. Balancing:
+  - _Interest:_ keeping the service secure and available, stopping abuse (password guessing, sign-up floods), not
+    losing people's work, proving and re-applying deletions, and keeping the right to send mail (SES suspends senders
+    whose bounces and complaints run high). Recital 49 names network and information security as a legitimate
+    interest.
+  - _Necessity:_ each holds the least that does the job: no email in any log, ids only in the deletion log, rate-limit
+    counts only in memory, and short fixed periods (14 days, 30, 37).
+  - _The person's side:_ the data is ordinary (IP addresses, an email address on a do-not-mail list), it is expected
+    for any website, it is never used for anything else, nobody but AWS sees it, and the notice states each item and
+    period. A person can object by writing to `privacy@glazecalcapp.com`; security logs are usually kept anyway on
+    compelling grounds (Art. 21(1)), and the answer is recorded.
+  - _Outcome:_ the interests are not overridden.
+- **Consent** is used for nothing. Every cookie and storage key is strictly necessary for a service the user asked for
+  (ePrivacy Art. 5(3)), so there is no banner. Analytics, embeds or remote fonts would change that.
+- **Children:** the site is not directed at children and has no minimum age; Art. 8 applies only to consent. If the
+  owner learns that a child under 13 has an account, it is deleted (COPPA).
+- **No DPIA:** none of the WP248 criteria clearly applies (no special categories, no monitoring or profiling, no
+  large-scale tracking, no vulnerable groups targeted, no new technology).
+
+## Review
+
+Review this record and the notice when the processing changes, and at least once a year: recheck the AWS Service Terms
+date, the DPF entry, the DPF appeal, the Digital Omnibus (cookies and breaches) and the Art. 30 small-organisation
+relief (plan item 28).

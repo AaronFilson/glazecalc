@@ -45,6 +45,8 @@ describe('LocaleService', () => {
       'en-US'
     ]);
     expect(chosenRegion()).toBe('US');
+    // Followed for the visit, not written to the browser.
+    expect(localStorage.length).toBe(0);
     preferences.region.set('DE');
     TestBed.tick();
     expect([locale.locale(), locale.temperature(), locale.cones(), formatLocale()]).toEqual([

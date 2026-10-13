@@ -57,13 +57,20 @@ apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin do
 
 # App files from the repository; deploy.sh refreshes compose.prod.yaml on each deploy.
 mkdir -p /opt/glazecalc
-for f in deploy.sh backup.sh enable-https.sh compose.prod.yaml; do
+for f in deploy.sh backup.sh restore.sh enable-https.sh compose.prod.yaml; do
   curl -fsSL "$raw/$f" -o "/opt/glazecalc/$f"
 done
-chmod 750 /opt/glazecalc/deploy.sh /opt/glazecalc/backup.sh /opt/glazecalc/enable-https.sh
+chmod 750 /opt/glazecalc/deploy.sh /opt/glazecalc/backup.sh /opt/glazecalc/restore.sh /opt/glazecalc/enable-https.sh
 for unit in glazecalc.service glazecalc-backup.service glazecalc-backup.timer mongodb-thp.service; do
   curl -fsSL "$raw/systemd/$unit" -o "/etc/systemd/system/$unit"
 done
+
+# Log retention: nginx's logs and the system journal are kept 14 days.
+curl -fsSL "$raw/logrotate/nginx" -o /etc/logrotate.d/nginx
+chmod 644 /etc/logrotate.d/nginx
+mkdir -p /etc/systemd/journald.conf.d
+curl -fsSL "$raw/journald/glazecalc.conf" -o /etc/systemd/journald.conf.d/glazecalc.conf
+systemctl restart systemd-journald
 
 # nginx starts on plain HTTP; enable-https.sh adds HTTPS after the DNS switch.
 # Once a certificate exists the HTTPS site stays in place: browsers that have
