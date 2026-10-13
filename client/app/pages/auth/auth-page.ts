@@ -91,6 +91,9 @@ import { Notices, NoticesList } from '../../shared/notices';
         </form>
 
         @if (signup()) {
+          <p class="form-text privacy-note">
+            <gc-rich [text]="t('account.auth.privacy')" [links]="{ privacy: '/privacy' }" />
+          </p>
           <p class="auth-links">
             <gc-rich [text]="t('account.auth.haveAccount')" [links]="{ signin: '/signin' }" />
           </p>

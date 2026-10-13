@@ -64,24 +64,7 @@
   "privacy": {
     "title": "Integritet",
     "lead": "Senast uppdaterad i oktober 2026.",
-    "shortHeading": "I korthet",
-    "short": "Glazecalc sparar det som behövs för att driva kontot och inget mer. Det finns inga annonser, inga analysverktyg, inga spårningscookies och inga skript från tredje part. Uppgifterna säljs aldrig och delas aldrig.",
-    "storedHeading": "Vad som sparas",
-    "storedAccount": "<b>Kontot:</b> e-postadressen och lösenordet, som bara lagras som ett envägshashvärde (bcrypt), aldrig som själva lösenordet.",
-    "storedTrial": "<b>En provperiod (Prova nu):</b> ingen e-postadress och inget lösenord, bara ett genererat namn som ”speckled quiet kilns”. En provperiod och allt som har sparats i den raderas automatiskt 14 dagar efter starten, om inte ett konto skapas för att behålla dem.",
-    "storedSaved": "<b>Det som sparas:</b> recept, råvaror, tillsatser, anteckningar, brännloggar och råd. Andra användare kan inte se dem.",
-    "storedResets": "<b>Begäranden om att återställa lösenordet:</b> ett fingeravtryck av varje återställningslänk (inte själva länken), som raderas automatiskt när länken går ut 30 minuter senare.",
-    "storedBrowser": "<b>I webbläsaren:</b> en cookie, <code>glazecalc_session</code>, som håller kvar inloggningen. Den innehåller inloggningstoken, skript på sidan kan inte läsa den, den skickas bara till appens egen server och den gäller i 7 dagar (14 för en provperiod). Lokal lagring innehåller en notering om inloggningen och, under en provperiod, provperiodens namn och slutdatum. Utloggning tar bort dem.",
-    "emailHeading": "E-post",
-    "email": "Glazecalc skickar e-post bara när en återställning av lösenordet begärs och när lösenordet ändras. E-posten skickas via Amazon Simple Email Service. Det finns inget nyhetsbrev och ingen marknadsföring via e-post.",
-    "hostingHeading": "Loggar, säkerhetskopior och drift",
-    "logs": "Webbservern registrerar varje förfrågan, med IP-adressen, i en logg som sparas i 14 dagar för att driva och skydda webbplatsen.",
-    "backups": "Krypterade säkerhetskopior av databasen sparas i 30 dagar och kopior av serverns disk i 7 dagar, så att webbplatsen kan återställas efter ett haveri.",
-    "hosting": "Allt drivs hos Amazon Web Services i USA (Oregon).",
-    "deletingHeading": "Radera uppgifterna",
-    "deleting": "Kontot kan raderas från <account>kontosidan</account>. Det tar direkt bort kontot och allt som har sparats; knappen Radera provperioden gör samma sak för en provperiod. Det som finns i säkerhetskopiorna försvinner när de gallras ut, inom 30 dagar.",
-    "questionsHeading": "Frågor",
-    "questions": "Ställ frågor genom att <issues>öppna ett ärende på GitHub</issues>. Om den här policyn ändras, ändras också datumet överst på sidan."
+    "shortHeading": "I korthet"
   },
   "notFound": {
     "heading": "Sidan hittades inte",

@@ -64,24 +64,7 @@
   "privacy": {
     "title": "Tietosuoja",
     "lead": "Päivitetty viimeksi lokakuussa 2026.",
-    "shortHeading": "Lyhyesti",
-    "short": "Glazecalc säilyttää vain sen, mitä tilin ylläpito vaatii, eikä mitään muuta. Ei mainoksia, ei analytiikkaa, ei seurantaevästeitä eikä kolmansien osapuolten skriptejä. Tietoja ei koskaan myydä eikä jaeta.",
-    "storedHeading": "Mitä tallennetaan",
-    "storedAccount": "<b>Tili:</b> sähköpostiosoite ja salasana, joka tallennetaan vain yksisuuntaisena tiivisteenä (bcrypt), ei koskaan itse salasanana.",
-    "storedTrial": "<b>Kokeilu (Kokeile nyt):</b> ei sähköpostiosoitetta eikä salasanaa, vain luotu nimi, kuten ”speckled quiet kilns”. Kokeilu ja kaikki siihen tallennettu poistetaan automaattisesti 14 päivän kuluttua sen alkamisesta, ellei niitä säilytetä luomalla tili.",
-    "storedSaved": "<b>Tallennettu sisältö:</b> reseptit, raaka-aineet, lisäaineet, muistiinpanot, polttopäiväkirjat ja neuvot. Muut käyttäjät eivät näe niitä.",
-    "storedResets": "<b>Salasanan palautuspyynnöt:</b> kunkin palautuslinkin sormenjälki (ei itse linkki), joka poistetaan automaattisesti, kun linkki vanhenee 30 minuutin kuluttua.",
-    "storedBrowser": "<b>Selaimessa:</b> yksi eväste, <code>glazecalc_session</code>, joka pitää käyttäjän kirjautuneena. Siinä on kirjautumistunniste, sivun skriptit eivät voi lukea sitä, se lähetetään vain Glazecalcin omalle palvelimelle, ja se on voimassa 7 päivää (kokeilussa 14). Paikallisessa tallennustilassa on merkintä kirjautumisesta ja kokeilun aikana kokeilun nimi ja päättymispäivä. Uloskirjautuminen poistaa ne.",
-    "emailHeading": "Sähköposti",
-    "email": "Glazecalc lähettää sähköpostia vain, kun salasanan palauttamista pyydetään ja kun salasana vaihtuu. Viestit lähetetään Amazon Simple Email Service -palvelun kautta. Uutiskirjettä tai markkinointiviestejä ei ole.",
-    "hostingHeading": "Lokit, varmuuskopiot ja palvelin",
-    "logs": "Verkkopalvelin kirjaa jokaisen pyynnön IP-osoitteineen lokiin, jota säilytetään 14 päivää sivuston ylläpitoa ja suojaamista varten.",
-    "backups": "Tietokannan salattuja varmuuskopioita säilytetään 30 päivää ja palvelimen levyn kopioita 7 päivää, jotta sivusto voidaan palauttaa vian jälkeen.",
-    "hosting": "Kaikkea ylläpitää Amazon Web Services Yhdysvalloissa (Oregon).",
-    "deletingHeading": "Tietojen poistaminen",
-    "deleting": "Tilin voi poistaa <account>tilisivulla</account>. Se poistaa heti tilin ja kaiken tallennetun; Hylkää kokeilu -painike tekee saman kokeilulle. Varmuuskopioissa olevat kopiot häviävät, kun varmuuskopiot vanhenevat, 30 päivän kuluessa.",
-    "questionsHeading": "Kysymykset",
-    "questions": "Kysy <issues>tekemällä ilmoitus GitHubissa</issues>. Jos tämä käytäntö muuttuu, myös sivun yläreunan päivämäärä muuttuu."
+    "shortHeading": "Lyhyesti"
   },
   "notFound": {
     "heading": "Sivua ei löydy",

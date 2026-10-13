@@ -64,24 +64,7 @@
   "privacy": {
     "title": "Privacy",
     "lead": "Ultimo aggiornamento: ottobre 2026.",
-    "shortHeading": "In breve",
-    "short": "Glazecalc conserva ciò che serve a far funzionare il Suo account, e niente di più. Non ci sono pubblicità, strumenti di analisi, cookie di tracciamento né script di terze parti. I Suoi dati non vengono mai venduti né condivisi.",
-    "storedHeading": "Cosa viene conservato",
-    "storedAccount": "<b>Il Suo account:</b> l’indirizzo email e la password, conservata solo come hash unidirezionale (bcrypt), mai così com’è.",
-    "storedTrial": "<b>Una prova («Prova ora»):</b> nessuna email né password, solo un nome generato come «speckled quiet kilns». La prova e tutto ciò che vi è salvato vengono eliminati automaticamente 14 giorni dopo l’inizio, a meno che non si crei un account per conservarli.",
-    "storedSaved": "<b>Ciò che salva:</b> ricette, materiali, additivi, note, registri di cottura e consigli. Gli altri utenti non possono vederli.",
-    "storedResets": "<b>Richieste di reimpostazione della password:</b> un’impronta di ogni link di reimpostazione (non il link stesso), eliminata automaticamente alla scadenza, 30 minuti dopo.",
-    "storedBrowser": "<b>Nel Suo browser:</b> un solo cookie, <code>glazecalc_session</code>, che mantiene l’accesso. Contiene il token di accesso, gli script della pagina non possono leggerlo, viene inviato solo al server di Glazecalc e dura 7 giorni (14 per una prova). La memoria locale (local storage) conserva un’indicazione che l’accesso è attivo e, durante una prova, il nome e la data di fine della prova. Uscendo dall’account vengono rimossi.",
-    "emailHeading": "Email",
-    "email": "Glazecalc invia email solo quando si chiede di reimpostare la password e quando la password cambia. Le email passano da Amazon Simple Email Service. Non ci sono newsletter né email promozionali.",
-    "hostingHeading": "Log, backup e hosting",
-    "logs": "Il server web registra ogni richiesta, compreso il Suo indirizzo IP, in un log conservato per 14 giorni, per far funzionare il sito e proteggerlo.",
-    "backups": "I backup cifrati del database sono conservati per 30 giorni e le copie del disco del server per 7 giorni, così il sito può essere ripristinato dopo un guasto.",
-    "hosting": "Tutto è ospitato da Amazon Web Services negli Stati Uniti (Oregon).",
-    "deletingHeading": "Eliminare i propri dati",
-    "deleting": "Può eliminare il Suo account dalla <account>pagina dell’account</account>. Questo rimuove subito l’account e tutto ciò che ha salvato; «Elimina la prova» fa lo stesso per una prova. Le copie nei backup scompaiono man mano che i backup scadono, entro 30 giorni.",
-    "questionsHeading": "Domande",
-    "questions": "Per domande, <issues>aprire una segnalazione su GitHub</issues>. Se questa informativa cambia, cambia anche la data in cima a questa pagina."
+    "shortHeading": "In breve"
   },
   "notFound": {
     "heading": "Pagina non trovata",

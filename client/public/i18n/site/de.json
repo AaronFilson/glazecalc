@@ -64,24 +64,7 @@
   "privacy": {
     "title": "Datenschutz",
     "lead": "Stand: Oktober 2026.",
-    "shortHeading": "Kurz gesagt",
-    "short": "Glazecalc speichert, was für den Betrieb Ihres Kontos nötig ist, und nichts weiter. Es gibt keine Werbung, keine Webanalyse, keine Tracking-Cookies und keine Skripte von Dritten. Ihre Daten werden nie verkauft oder weitergegeben.",
-    "storedHeading": "Was gespeichert wird",
-    "storedAccount": "<b>Ihr Konto:</b> Ihre E-Mail-Adresse und Ihr Passwort, das nur als Einweg-Hash (bcrypt) gespeichert wird, nie als das Passwort selbst.",
-    "storedTrial": "<b>Ein Testzugang („Jetzt ausprobieren“):</b> keine E-Mail-Adresse und kein Passwort, nur ein erzeugter Name wie „speckled quiet kilns“. Ein Testzugang und alles darin Gespeicherte werden 14 Tage nach dem Start automatisch gelöscht, es sei denn, Sie erstellen ein Konto, um sie zu behalten.",
-    "storedSaved": "<b>Was Sie speichern:</b> Ihre Rezepte, Rohstoffe, Zusätze, Notizen, Brennprotokolle und Tipps. Wer sonst Glazecalc nutzt, kann sie nicht sehen.",
-    "storedResets": "<b>Anfragen zum Zurücksetzen des Passworts:</b> ein Fingerabdruck jedes Links zum Zurücksetzen (nicht der Link selbst), der automatisch gelöscht wird, wenn der Link 30 Minuten später abläuft.",
-    "storedBrowser": "<b>In Ihrem Browser:</b> ein Cookie, <code>glazecalc_session</code>, das Sie angemeldet hält. Es enthält Ihr Anmelde-Token, Skripte auf der Seite können es nicht lesen, es wird nur an den eigenen Server von Glazecalc gesendet, und es gilt 7 Tage (14 bei einem Testzugang). Im lokalen Speicher (Local Storage) steht ein Vermerk, dass Sie angemeldet sind, und während eines Testzugangs dessen Name und Enddatum. Beim Abmelden wird beides entfernt.",
-    "emailHeading": "E-Mail",
-    "email": "Glazecalc sendet nur dann E-Mails, wenn Sie das Zurücksetzen Ihres Passworts anfordern und wenn sich Ihr Passwort ändert. Sie werden über Amazon Simple Email Service versendet. Es gibt keinen Newsletter und keine Werbe-E-Mails.",
-    "hostingHeading": "Server-Logs, Backups und Hosting",
-    "logs": "Der Webserver protokolliert jede Anfrage, einschließlich Ihrer IP-Adresse, in einem Log, das 14 Tage aufbewahrt wird, um die Website zu betreiben und abzusichern.",
-    "backups": "Verschlüsselte Backups der Datenbank werden 30 Tage aufbewahrt und Kopien der Serverfestplatte 7 Tage, damit die Website nach einem Ausfall wiederhergestellt werden kann.",
-    "hosting": "Alles wird von Amazon Web Services in den Vereinigten Staaten (Oregon) gehostet.",
-    "deletingHeading": "Ihre Daten löschen",
-    "deleting": "Sie können Ihr Konto auf Ihrer <account>Kontoseite</account> löschen. Damit werden Ihr Konto und alles, was Sie gespeichert haben, sofort entfernt; „Testzugang verwerfen“ tut dasselbe für einen Testzugang. Kopien in Backups verschwinden, wenn die Backups ablaufen, innerhalb von 30 Tagen.",
-    "questionsHeading": "Fragen",
-    "questions": "Stellen Sie Ihre Frage, indem Sie <issues>ein Issue auf GitHub eröffnen</issues>. Wenn sich diese Datenschutzhinweise ändern, ändert sich auch das Datum oben auf dieser Seite."
+    "shortHeading": "Kurz gesagt"
   },
   "notFound": {
     "heading": "Seite nicht gefunden",

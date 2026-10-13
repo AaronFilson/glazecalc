@@ -16,6 +16,7 @@
     "createAccount": "Create account",
     "signIn": "Sign in",
     "haveAccount": "Already have an account? <signin>Sign in</signin>",
+    "privacy": "Your email and what you save are used only to run your account, and are stored with Amazon Web Services in the US. <privacy>How Glazecalc handles your data</privacy>",
     "forgot": "Forgot your password? Reset it",
     "newHere": "New here? <signup>Create a free account</signup>",
     "signUpFailed": "Error: could not create the account.",

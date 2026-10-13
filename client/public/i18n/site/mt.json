@@ -64,24 +64,7 @@
   "privacy": {
     "title": "Privatezza",
     "lead": "L-aħħar aġġornament: Ottubru 2026.",
-    "shortHeading": "Fil-qosor",
-    "short": "Glazecalc iżomm dak li għandu bżonn biex iħaddem il-kont tiegħek u xejn aktar. M’hemm l-ebda reklam, l-ebda analitika, l-ebda cookie tat-traċċar u l-ebda skript ta’ partijiet terzi. Id-data tiegħek qatt ma tinbiegħ jew tinqasam ma’ ħaddieħor.",
-    "storedHeading": "X’jinżamm",
-    "storedAccount": "<b>Il-kont tiegħek:</b> l-indirizz elettroniku u l-password tiegħek, li tinżamm biss bħala hash f’direzzjoni waħda (bcrypt), qatt bħala l-password innifisha.",
-    "storedTrial": "<b>Prova (il-buttuna Ipprova issa):</b> l-ebda indirizz elettroniku jew password, biss isem iġġenerat bħal “speckled quiet kilns”. Il-prova u kulma jiġi ssejvjat fiha jitħassru awtomatikament 14-il jum wara li tibda, sakemm ma toħloqx kont biex iżżommhom.",
-    "storedSaved": "<b>Dak li tissejvja:</b> ir-riċetti, il-materjali, l-addittivi, in-noti, ir-reġistri tal-ħami u l-pariri tiegħek. Utenti oħra ma jistgħux jarawhom.",
-    "storedResets": "<b>Talbiet biex tirrisettja l-password:</b> impronta diġitali ta’ kull link għar-risettjar (mhux il-link innifsu), li titħassar awtomatikament meta jiskadi l-link, 30 minuta wara.",
-    "storedBrowser": "<b>Fil-brawżer tiegħek:</b> cookie wieħed, <code>glazecalc_session</code>, li bih tibqa’ fil-kont. Fih it-token tad-dħul tiegħek, l-iskripts fil-paġna ma jistgħux jaqrawh, imur biss għas-server ta’ Glazecalc stess, u jdum 7 ijiem (14-il jum għal prova). Il-ħażna lokali tal-brawżer fiha nota li dħalt fil-kont u, waqt prova, l-isem tagħha u d-data meta tispiċċa. Meta toħroġ mill-kont, dawn jitneħħew.",
-    "emailHeading": "Posta elettronika",
-    "email": "Glazecalc jibgħat messaġġi elettroniċi biss meta titlob biex tirrisettja l-password tiegħek u meta l-password tiegħek tinbidel. Jintbagħtu permezz ta’ Amazon Simple Email Service. M’hemm l-ebda newsletter u l-ebda messaġġ ta’ marketing.",
-    "hostingHeading": "Reġistrazzjonijiet, kopji backup u ospitar",
-    "logs": "Is-server tal-Web jirreġistra kull talba, inkluż l-indirizz IP tiegħek, f’reġistrazzjoni li tinżamm għal 14-il jum biex is-sit jitħaddem u jinżamm sigur.",
-    "backups": "Kopji backup iċċifrati tad-database jinżammu għal 30 jum, u kopji tad-diska tas-server għal 7 ijiem, biex is-sit ikun jista’ jiġi rrestawrat wara ħsara.",
-    "hosting": "Kollox huwa ospitat minn Amazon Web Services fl-Istati Uniti (Oregon).",
-    "deletingHeading": "It-tħassir tad-data tiegħek",
-    "deleting": "Tista’ tħassar il-kont tiegħek minn fuq <account>il-paġna tal-kont</account>. Dan ineħħi minnufih il-kont tiegħek u kulma ssejvjajt; il-buttuna Warrab il-prova tagħmel l-istess għal prova. Il-kopji fil-backups jisparixxu hekk kif il-backups jiskadu, fi żmien 30 jum.",
-    "questionsHeading": "Mistoqsijiet",
-    "questions": "Staqsi billi <issues>tiftaħ issue fuq GitHub</issues>. Jekk din il-politika tinbidel, tinbidel ukoll id-data fil-quċċata ta’ din il-paġna."
+    "shortHeading": "Fil-qosor"
   },
   "notFound": {
     "heading": "Il-paġna ma nstabitx",
