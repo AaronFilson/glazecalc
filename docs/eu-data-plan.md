@@ -77,6 +77,13 @@ Plan drawn from the report "No cookie banner, a real delete button, and an hones
 
 ## Decisions for the owner
 
+**Decided (13 October 2026):**
+- Stay in us-west-2. Item 20 is dropped, and the notice says plainly where the data is.
+- No EU or UK representatives. Item 16 is dropped, and the private contact address is answered promptly instead.
+- No deletion of inactive accounts, because what counts as inactive can't be told reliably. Item 17 is dropped, and the notice says accounts are kept until the user deletes them.
+
+Items 4–6, 8–11, 13, 15, 18, 19 and 21 are built first. They go out in the next release.
+
 1. **Move to eu-west-1 or not.** Not legally required. It costs about +$0.75 a month and 2–3 days of work. US users' API calls get about 0.1 s slower.
    _Recommendation:_ move, after the export is built, if an EU storage statement matters to European potters. Word it as everyone's data in Ireland, run by a US operator on a US company's cloud. If US latency matters more, stay in Oregon and disclose it plainly (option d). Do not offer a per-user choice unless users ask.
 2. **EU and UK representatives.** Required on the EDPB's and ICO's reading. About €420 a year (EU) plus about €378 (UK) from Prighter, or about €1,000 a year elsewhere. The enforcement risk of skipping them is very low.
