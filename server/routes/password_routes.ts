@@ -29,8 +29,10 @@ const RESETS_PER_HOUR = 3;
 const HOUR = 60 * 60 * 1000;
 
 const hashToken = (token: string): string => crypto.createHash('sha256').update(token).digest('hex');
-// Mail goes out after the reply, so it never delays or fails a request.
-const logMailError = (what: string) => (err: unknown) => log.error('Could not send the ' + what + ' email', { err });
+// Mail goes out after the reply, so it never delays or fails a request. Only
+// the error's code is logged: an SMTP error's message names the address.
+const logMailError = (what: string) => (err: unknown) =>
+  log.error('Could not send the ' + what + ' email', { code: log.codeOf(err) });
 
 const passwordRouter = express.Router();
 export default passwordRouter;

@@ -62,6 +62,14 @@ if ! nginx -t; then
   exit 1
 fi
 rm -rf "$backup"
+# The nginx log rotation (14 days) from the same place. A failed download or an
+# invalid file leaves the one in use.
+if curl -fsSL "${raw%/nginx}/logrotate/nginx" -o "$new/logrotate-nginx" \
+  && logrotate --debug "$new/logrotate-nginx" >/dev/null 2>&1; then
+  install -m 644 "$new/logrotate-nginx" /etc/logrotate.d/nginx
+else
+  echo 'Could not update the nginx log rotation; the current one is unchanged.' >&2
+fi
 systemctl reload nginx
 
 curl -fsS https://glazecalcapp.com/api/health

@@ -1,6 +1,7 @@
 // The Express app: the JSON API under /api, and the built Angular client
 // (npm run build) for everything else, on one origin, so no CORS. main.ts
 // connects to MongoDB and serves it; the tests use it directly.
+import crypto from 'node:crypto';
 import { readFile } from 'node:fs/promises';
 import path from 'node:path';
 import express, { type NextFunction, type Request, type Response } from 'express';
@@ -26,7 +27,34 @@ app.disable('x-powered-by');
 // gives the rate limits the real address without letting clients choose it.
 app.set('trust proxy', 1);
 
+// What a page may load or send. Scripts are left to the build's own <meta>
+// policy (angular.json, autoCsp); a page must pass both. There is no
+// default-src, which would also limit scripts to files and block the inline
+// script the meta policy allows by its hash. data: images are the check marks
+// and arrows Bootstrap's stylesheet inlines as SVG. Angular adds each
+// component's styles as <style> elements, which a page's own nonce allows.
+export const contentSecurityPolicy = (nonce?: string): string =>
+  [
+    "connect-src 'self'",
+    "img-src 'self' data:",
+    "font-src 'self'",
+    nonce ? `style-src 'self' 'nonce-${nonce}'` : "style-src 'self'",
+    "frame-src 'self'",
+    "form-action 'self'",
+    "frame-ancestors 'none'"
+  ].join('; ');
+app.use((req, res, next) => {
+  res.set('Content-Security-Policy', contentSecurityPolicy());
+  next();
+});
+
 const api = express.Router();
+// Replies hold one person's records, so no browser or proxy keeps them. A
+// route that sets its own Cache-Control replaces this.
+api.use((req, res, next) => {
+  res.set('Cache-Control', 'no-store');
+  next();
+});
 // Changes must come from the app's own pages (cross-site request forgery).
 api.use(sameOrigin);
 
@@ -129,11 +157,13 @@ app.use(async (req, res, next) => {
     return next();
   }
   const text = await pageText(languages.languageOfPath(req.path));
-  res.set('Cache-Control', 'no-cache');
+  // A new nonce for each reply, given to Angular (ngCspNonce) for its styles.
+  const nonce = crypto.randomBytes(16).toString('base64');
+  res.set('Cache-Control', 'no-cache').set('Content-Security-Policy', contentSecurityPolicy(nonce));
   return res
     .status(isPage(req.path) ? 200 : 404)
     .type('html')
-    .send(pageHtml(html, req.path, appUrl(), text));
+    .send(pageHtml(html, req.path, appUrl(), text).replace('<gc-root>', `<gc-root ngCspNonce="${nonce}">`));
 });
 
 interface HttpError extends Error {

@@ -47,6 +47,14 @@ describe('the server log', () => {
     expect(error.err.stack).to.include('timed out');
   });
 
+  it('reduces an error to its code when its message could name someone', () => {
+    const refused = Object.assign(new Error('Recipient not allowed: potter@example.com'), { code: 'EENVELOPE' });
+    expect(log.codeOf(refused)).to.eql('EENVELOPE');
+    expect(log.codeOf(new Error('no code, potter@example.com'))).to.eql('unknown');
+    expect(log.codeOf({ code: 'has spaces and potter@example.com' })).to.eql('unknown');
+    expect(log.codeOf(null)).to.eql('unknown');
+  });
+
   it('writes plain text elsewhere', () => {
     process.env.NODE_ENV = 'development';
     log.warn('APP_SECRET is not set');

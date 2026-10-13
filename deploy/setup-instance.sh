@@ -65,6 +65,13 @@ for unit in glazecalc.service glazecalc-backup.service glazecalc-backup.timer mo
   curl -fsSL "$raw/systemd/$unit" -o "/etc/systemd/system/$unit"
 done
 
+# Log retention: nginx's logs and the system journal are kept 14 days.
+curl -fsSL "$raw/logrotate/nginx" -o /etc/logrotate.d/nginx
+chmod 644 /etc/logrotate.d/nginx
+mkdir -p /etc/systemd/journald.conf.d
+curl -fsSL "$raw/journald/glazecalc.conf" -o /etc/systemd/journald.conf.d/glazecalc.conf
+systemctl restart systemd-journald
+
 # nginx starts on plain HTTP; enable-https.sh adds HTTPS after the DNS switch.
 # Once a certificate exists the HTTPS site stays in place: browsers that have
 # seen the HSTS header refuse plain HTTP for a year.
