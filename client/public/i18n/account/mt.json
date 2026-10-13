@@ -137,7 +137,7 @@
       "sg": {
         "label": "Gravità speċifika",
         "saved": "Issejvjat: id-densità tal-glejż bħala gravità speċifika.",
-        "example": "SG 1.45"
+        "example": "1.45"
       },
       "baume": {
         "label": "Gradi Baumé, b’idrometru",

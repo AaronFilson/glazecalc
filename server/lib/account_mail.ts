@@ -242,6 +242,16 @@ export const RESET: Record<string, Email> = {
       'Ní oibríonn an nasc ach uair amháin. Mura tusa a d’iarr é seo, déan neamhaird den ríomhphost seo; fanfaidh do phasfhocal mar an gcéanna.\n' +
       '\n' +
       '-- \nGlazecalc, {app}\n'
+  },
+  mt: {
+    subject: 'Irrisettja l-password tiegħek ta’ Glazecalc',
+    text:
+      'Xi ħadd (nittamaw li kont int) talab li tiġi rrisettjata l-password tal-kont {account} ta’ Glazecalc.\n\n' +
+      'Biex tagħżel password ġdida, iftaħ dan il-link fi żmien {minutes} min:\n\n' +
+      '{link}\n\n' +
+      'Il-link jaħdem darba biss. Jekk ma talabtx dan, injora dan il-messaġġ; il-password tiegħek tibqa’ l-istess.\n' +
+      '\n' +
+      '-- \nGlazecalc, {app}\n'
   }
 };
 
@@ -427,6 +437,14 @@ export const CHANGED: Record<string, Email> = {
     text:
       'Athraíodh an pasfhocal don chuntas Glazecalc {account} anois díreach, agus síníodh amach gach gléas a bhí sínithe isteach.\n\n' +
       'Más tusa a rinne é, níl aon rud eile le déanamh. Mura tusa, athshocraigh do phasfhocal láithreach anseo: {forgot}\n' +
+      '\n' +
+      '-- \nGlazecalc, {app}\n'
+  },
+  mt: {
+    subject: 'Il-password tiegħek ta’ Glazecalc inbidlet',
+    text:
+      'Il-password tal-kont {account} ta’ Glazecalc għadha kif inbidlet, u kull apparat li kien dieħel fil-kont ħareġ minnu.\n\n' +
+      'Jekk kont int, m’hemmx għalfejn tagħmel xejn aktar. Jekk le, irrisettja l-password tiegħek minnufih hawn: {forgot}\n' +
       '\n' +
       '-- \nGlazecalc, {app}\n'
   }
