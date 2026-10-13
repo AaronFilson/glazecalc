@@ -49,10 +49,14 @@ export type Preferences = { -readonly [K in keyof typeof PREFERENCES]: (typeof P
 
 export interface UserFields {
   email: string;
+  /**
+   * A trial's generated name ("speckled quiet kilns"), kept when the trial
+   * becomes an account. The app sets no other and shows an account by its
+   * email; PUT /api/usersettings still takes one, for API callers.
+   */
   displayname?: string;
   password: string;
   role?: string;
-  settings: string[];
   /** Choices that shape how the app shows things; any account or trial may set them. */
   preferences?: Partial<Preferences>;
   /**
@@ -87,7 +91,8 @@ const userSchema = new mongoose.Schema<UserFields, UserModel, UserMethods>({
   displayname: String,
   password: { type: String, required: true },
   role: String,
-  settings: [String],
+  // The old app's `settings` list, never used, is no longer read or written.
+  // Documents that still have it load as before; the field is simply ignored.
   preferences: {
     weightUnit: { type: String, enum: PREFERENCES.weightUnit },
     gramPrecision: { type: String, enum: PREFERENCES.gramPrecision },

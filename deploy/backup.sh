@@ -2,11 +2,9 @@
 # Nightly MongoDB dump to S3 (run by glazecalc-backup.timer, as root).
 # The bucket's lifecycle rule expires old dumps; EBS snapshots are the second copy.
 #
-# Restore a dump:
-#   aws s3 cp s3://<bucket>/mongodump/<file>.archive.gz - \
-#     | docker compose -f compose.prod.yaml exec -T mongo sh -c 'mongorestore --archive --gzip --drop \
-#         --username glazecalc --password "$MONGO_APP_PASSWORD" --authenticationDatabase glazecalc'
-# Both run as the app's MongoDB user; its password is in the mongo container's environment.
+# Restore a dump with restore.sh, never with mongorestore alone: it also
+# deletes again the accounts deleted since the dump was made.
+# mongodump runs as the app's MongoDB user; its password is in the mongo container's environment.
 set -euo pipefail
 
 cd /opt/glazecalc
@@ -19,8 +17,15 @@ key="mongodump/glazecalc-$(date -u +%Y-%m-%dT%H%M%SZ).archive.gz"
 # finished: streamed straight to S3, a dump that failed part way would still
 # be stored, cut short, under a normal name.
 dump=$(mktemp /var/tmp/glazecalc-dump.XXXXXX)
-trap 'rm -f "$dump"' EXIT
-docker compose -f compose.prod.yaml exec -T mongo sh -c 'mongodump --db glazecalc --archive --gzip --quiet \
-  --username glazecalc --password "$MONGO_APP_PASSWORD" --authenticationDatabase glazecalc' > "$dump"
+log=$(mktemp /var/tmp/glazecalc-deletions.XXXXXX)
+trap 'rm -f "$dump" "$log"' EXIT
+# The deletion log stays out of the dump, so restoring one, even with --drop,
+# leaves the live log as it is; restore.sh then deletes again every account in
+# it. The log goes up beside the dump, for when the live database is lost too.
+docker compose -f compose.prod.yaml exec -T mongo sh -c 'mongodump --db glazecalc --excludeCollection deletions \
+  --archive --gzip --quiet --username glazecalc --password "$MONGO_APP_PASSWORD" --authenticationDatabase glazecalc' > "$dump"
+docker compose -f compose.prod.yaml exec -T mongo sh -c 'mongodump --db glazecalc --collection deletions \
+  --archive --gzip --quiet --username glazecalc --password "$MONGO_APP_PASSWORD" --authenticationDatabase glazecalc' > "$log"
 aws s3 cp "$dump" "s3://$bucket/$key" --region "$region" --only-show-errors
-echo "Backup written to s3://$bucket/$key ($(stat -c %s "$dump") bytes)"
+aws s3 cp "$log" "s3://$bucket/${key%.archive.gz}.deletions.archive.gz" --region "$region" --only-show-errors
+echo "Backup written to s3://$bucket/$key ($(stat -c %s "$dump") bytes), with its deletion log"

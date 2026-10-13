@@ -78,7 +78,9 @@ aws s3api put-bucket-lifecycle-configuration --bucket "$BUCKET" --lifecycle-conf
   '{"Rules":[{"ID":"expire-dumps","Status":"Enabled","Filter":{"Prefix":"mongodump/"},"Expiration":{"Days":30}}]}'
 ```
 
-(New buckets already encrypt objects with SSE-S3 by default.)
+(New buckets already encrypt objects with SSE-S3 by default.) Each dump has a copy of the deletion log
+beside it (`<dump>.deletions.archive.gz`), which the same rule expires; see "Restoring a backup"
+in [deploy/README.md](../README.md).
 
 ## 4. Admin: instance role
 
@@ -316,6 +318,23 @@ done
 # Alarms: AWS/SES Reputation.BounceRate > 0.04 and Reputation.ComplaintRate > 0.0008, Maximum over
 # 15 minutes, missing data not breaching, alarm and OK actions to glazecalc-alerts.
 ```
+
+Deleted accounts and the suppression list (Admin, once a month): an address that bounced or
+complained stays on the account-level suppression list until it is removed, after its account is
+deleted too. The app cannot remove it: it sends over SMTP and has no SES API access, and the
+deletion log keeps no addresses. So list the suppressed addresses, check each against the
+accounts, and remove those no account uses:
+
+```bash
+aws sesv2 list-suppressed-destinations --query 'SuppressedDestinationSummaries[].EmailAddress' --output text
+# On the instance, for each address: 0 means no account uses it.
+sudo docker compose -f /opt/glazecalc/compose.prod.yaml exec -T mongo mongosh glazecalc --quiet \
+  --eval 'db.users.countDocuments({ email: "<address>" }, { collation: { locale: "en", strength: 2 } })'
+aws sesv2 delete-suppressed-destination --email-address <address>
+```
+
+(The alternative, letting the app remove it, would need API credentials with
+`ses:DeleteSuppressedDestination` and the AWS SDK in the app; not chosen.)
 
 Testing from the sandbox: verify a recipient address (`aws sesv2 create-email-identity
 --email-identity <address>`, then click the link AWS emails), send to it from

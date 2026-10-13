@@ -67,6 +67,7 @@ export class AuthService {
   private readonly session = signal<SessionKind | null>(readStoredSession());
   private checked: Promise<void> | null = null;
   private readonly onEnd: Array<() => void> = [];
+  private readonly onDeleted: Array<() => void> = [];
 
   /** Whether this browser has a session (an account's or a trial's), as far as the app knows. */
   readonly hasSession = computed(() => this.session() !== null);
@@ -179,7 +180,7 @@ export class AuthService {
     const me = await firstValueFrom(this.http.get<VerifyResponse>(this.apiBase + '/verify'));
     if (!me.id) throw new Error('Not signed in');
     await firstValueFrom(this.http.delete(this.apiBase + '/deleteuser/' + me.id, { body: { password } }));
-    this.forget();
+    this.deleted();
   }
 
   /** Discards the trial and everything made in it; the server signs the browser out. */
@@ -187,7 +188,7 @@ export class AuthService {
     const me = await firstValueFrom(this.http.get<VerifyResponse>(this.apiBase + '/verify'));
     if (!me.id || !me.guest) throw new Error('Not a trial');
     await firstValueFrom(this.http.delete(this.apiBase + '/deleteuser/' + me.id));
-    this.forget();
+    this.deleted();
   }
 
   /** Signs out here at once, and asks the server to clear the cookie. */
@@ -205,6 +206,11 @@ export class AuthService {
     this.onEnd.push(then);
   }
 
+  /** Calls `then` when the account or trial on this browser is deleted, after the session has ended. */
+  onAccountDeleted(then: () => void): void {
+    this.onDeleted.push(then);
+  }
+
   /**
    * The server no longer accepts this browser's session (it expired, the
    * password changed elsewhere, or the trial ran out): forget it, and for a
@@ -218,6 +224,11 @@ export class AuthService {
   private endTrial(): void {
     this.forget();
     this.trialEnded.set(true);
+  }
+
+  private deleted(): void {
+    this.forget();
+    for (const then of this.onDeleted) then();
   }
 
   private signedInAs(email: string): void {

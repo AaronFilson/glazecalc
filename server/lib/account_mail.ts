@@ -450,6 +450,28 @@ export const CHANGED: Record<string, Email> = {
   }
 };
 
+/**
+ * The email after an account is deleted: {account}, {days} and {app}. English
+ * only until the next translation wave; other languages get it in English.
+ */
+export const DELETED: Record<string, Email> = {
+  en: {
+    subject: 'Your Glazecalc account was deleted',
+    text:
+      'The Glazecalc account {account} has been deleted, with everything saved in it: recipes, materials, firings, notes and settings. It cannot be undone.\n\n' +
+      'Copies in the site backups are deleted as the backups expire, within {days} days.\n\n' +
+      'You can make a new account at any time.\n' +
+      '\n-- \nGlazecalc, {app}\n'
+  }
+};
+
+/**
+ * How long a deleted account lives on in backups, in days: the nightly dumps
+ * expire after 30 days (deploy/aws/README.md, section 3), the EBS snapshots
+ * after 7 (deploy/aws/dlm-policy.json).
+ */
+export const BACKUP_DAYS = 30;
+
 /** The email in the language, or in English. */
 const inLanguage = (emails: Record<string, Email>, language?: string): Email =>
   (language && emails[language]) || emails['en']!;
@@ -484,5 +506,14 @@ export const sendChanged = (to: string, language?: string): Promise<void> => {
     to,
     subject: email.subject,
     text: fill(email.text, { account: to, forgot: pageIn(language, '/forgot'), app: mailer.appUrl() })
+  });
+};
+
+export const sendDeleted = (to: string, language?: string): Promise<void> => {
+  const email = inLanguage(DELETED, language);
+  return mailer.send({
+    to,
+    subject: email.subject,
+    text: fill(email.text, { account: to, days: BACKUP_DAYS, app: mailer.appUrl() })
   });
 };

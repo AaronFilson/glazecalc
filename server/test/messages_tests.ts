@@ -72,9 +72,9 @@ describe('account emails', () => {
   });
 
   it('should give every translation the values and signature of the English', async () => {
-    const { RESET, CHANGED } = await import('../lib/account_mail.ts');
+    const { RESET, CHANGED, DELETED } = await import('../lib/account_mail.ts');
     const values = (text: string) => [...text.matchAll(/\{(\w+)\}/g)].map((match) => match[1]).sort();
-    for (const emails of [RESET, CHANGED]) {
+    for (const emails of [RESET, CHANGED, DELETED]) {
       for (const [language, email] of Object.entries(emails)) {
         expect(values(email.text), language).to.eql(values(emails['en']!.text));
         expect(email.text, language).to.match(/\n-- \nGlazecalc, \{app\}\n$/);
@@ -86,8 +86,10 @@ describe('account emails', () => {
   it('should have translations made from the English as it is', async () => {
     // Changed the English of an email? Have it translated again in every
     // language (docs/translations/README.md), then put its new fingerprint here.
-    const { RESET, CHANGED } = await import('../lib/account_mail.ts');
+    const { RESET, CHANGED, DELETED } = await import('../lib/account_mail.ts');
     const { fingerprint } = await import('../../scripts/i18n-fingerprints.mjs');
     expect(fingerprint(JSON.stringify([RESET['en'], CHANGED['en']]))).to.equal('xj1yoc');
+    // English only so far: the next translation wave adds the others.
+    expect(fingerprint(JSON.stringify(DELETED['en']))).to.equal('13s4itm');
   });
 });

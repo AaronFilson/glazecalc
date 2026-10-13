@@ -20,7 +20,7 @@ beside it with the same name but the code:
 | `client/public/i18n/regions/en.json`      | Notes in the region data (silica limits, food-contact rules, shops), as plain text     |
 | `client/public/i18n/records/en.json`      | The standard materials' notes and hazards, and the advice page, shown as plain text    |
 | `client/public/i18n/guides/<guide>/en.md` | The five guides, whole documents in Markdown                                           |
-| `server/lib/account_mail.ts`              | The two emails about a password, in code                                               |
+| `server/lib/account_mail.ts`              | The emails about a password, and the one after an account is deleted, in code          |
 
 A translation file has the same keys as the English, nothing more. A message left out shows in English, so a file
 can be translated in parts.

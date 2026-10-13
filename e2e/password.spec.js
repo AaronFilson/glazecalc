@@ -122,3 +122,41 @@ test('changes the password from the account page', async ({ browser, page, reque
   await expect(other).toHaveURL(/\/home$/);
   await other.close();
 });
+
+// The keys under which this browser keeps a copy of the account's choices (client/app/core/preferences.service.ts).
+const PREFERENCE_COPIES = [
+  'weightUnit',
+  'gramPrecision',
+  'theme',
+  'palette',
+  'lead',
+  'preferredRegion',
+  'format',
+  'decimalMark',
+  'temperature',
+  'cones',
+  'language',
+  'density',
+  'englishTerms',
+  'notice'
+];
+
+test('deletes the account from the account page, leaving no choices on this browser', async ({ page, request }) => {
+  const { email } = await createAccount(request);
+  await signIn(page, email, 'old-password');
+  await expect(page).toHaveURL(/\/home$/);
+  await page.goto('/account');
+  await page.getByRole('radio', { name: /^Pounds and ounces/ }).check();
+  await expect(page.locator('.settings-status')).toHaveText('Saved: batch weights are in pounds and ounces.');
+  expect(await page.evaluate(() => globalThis.localStorage.getItem('weightUnit'))).toBe('lb');
+
+  await page.locator('#delete-password').fill('old-password');
+  await page.getByRole('button', { name: 'Delete my account' }).click();
+  await expect(page).toHaveURL(/\/$/);
+  const kept = await page.evaluate(() => Object.keys(globalThis.localStorage));
+  expect(kept.filter((key) => PREFERENCE_COPIES.includes(key) || key.startsWith('visitor.'))).toEqual([]);
+
+  const confirmation = await nextEmail(email);
+  expect(confirmation.subject).toBe('Your Glazecalc account was deleted');
+  expect(confirmation.text).toContain('within 30 days');
+});
