@@ -12,7 +12,7 @@ describe('PreferencesService', () => {
 
   const serverError = { status: 500, statusText: 'Server Error' };
 
-  it("fetches the account's choices once per sign-in, and keeps a copy on this browser", async () => {
+  it("fetches the account's choices once per sign-in, and holds them in memory only", async () => {
     const preferences = TestBed.inject(PreferencesService);
     expect(preferences.weightUnit()).toBe('g');
     const loading = preferences.load();
@@ -22,7 +22,8 @@ describe('PreferencesService', () => {
       .flush({ weightUnit: 'lb', gramPrecision: 'full' });
     await loading;
     expect([preferences.weightUnit(), preferences.gramPrecision()]).toEqual(['lb', 'full']);
-    expect([localStorage.getItem('weightUnit'), localStorage.getItem('gramPrecision')]).toEqual(['lb', 'full']);
+    // Nothing was chosen here, so nothing is written to the browser.
+    expect(localStorage.length).toBe(0);
     await preferences.load();
     httpMock().expectNone(API + '/preferences');
 
@@ -81,7 +82,9 @@ describe('PreferencesService', () => {
       .expectOne(API + '/preferences')
       .flush({ lead: 'on', language: 'fr', weightUnit: 'lb' });
     await loading;
-    expect([preferences.lead(), preferences.language(), localStorage.getItem('lead')]).toEqual(['on', 'fr', 'on']);
+    expect([preferences.lead(), preferences.language(), localStorage.getItem('lead')]).toEqual(['on', 'fr', null]);
+    // The copy the visitor had follows the account while it is signed in; the visitor's own is kept apart.
+    expect([localStorage.getItem('language'), localStorage.getItem('visitor.language')]).toEqual(['fr', 'de']);
 
     const out = auth.signOut();
     httpMock()
@@ -89,7 +92,7 @@ describe('PreferencesService', () => {
       .flush({});
     await out;
     expect([preferences.lead(), preferences.language(), preferences.weightUnit()]).toEqual(['off', 'de', 'g']);
-    expect([localStorage.getItem('lead'), localStorage.getItem('language')]).toEqual(['off', 'de']);
+    expect([localStorage.getItem('lead'), localStorage.getItem('language')]).toEqual([null, 'de']);
 
     // The next person's trial starts from that, and keeps it if its own choices cannot be fetched.
     const starting = auth.startTrial();
@@ -110,7 +113,7 @@ describe('PreferencesService', () => {
     localStorage.setItem('trial', JSON.stringify({ name: 'rusty humble jugs', expiresAt: '2020-01-01T00:00:00Z' }));
     localStorage.setItem('lead', 'on');
     expect(TestBed.inject(PreferencesService).lead()).toBe('off');
-    expect(localStorage.getItem('lead')).toBe('off');
+    expect(localStorage.getItem('lead')).toBeNull();
   });
 
   it('saves a choice to the account, and puts the old one back if that fails', async () => {
@@ -130,5 +133,55 @@ describe('PreferencesService', () => {
     await expect(failing).rejects.toBeTruthy();
     expect(preferences.weightUnit()).toBe('lb');
     expect(localStorage.getItem('weightUnit')).toBe('lb');
+  });
+
+  it('writes a key only for the choice made, and clears it when the account signs out', async () => {
+    localStorage.setItem('session', 'account');
+    const preferences = TestBed.inject(PreferencesService);
+    const loading = preferences.load();
+    httpMock()
+      .expectOne(API + '/preferences')
+      .flush({ theme: 'dark', palette: 'cobalt' });
+    await loading;
+    const saving = preferences.set('palette', 'shino');
+    httpMock()
+      .expectOne((req) => req.method === 'PUT')
+      .flush({});
+    await saving;
+    expect(Object.keys(localStorage).sort()).toEqual(['palette', 'session']);
+
+    const out = TestBed.inject(AuthService).signOut();
+    httpMock()
+      .expectOne(API + '/signout')
+      .flush({});
+    await out;
+    expect(Object.keys(localStorage)).toEqual([]);
+    expect([preferences.theme(), preferences.palette()]).toEqual(['system', 'tenmoku']);
+  });
+
+  it('leaves no key behind when a first choice fails to save', async () => {
+    const preferences = TestBed.inject(PreferencesService);
+    const failing = preferences.set('theme', 'dark');
+    httpMock()
+      .expectOne(API + '/preferences')
+      .flush(null, serverError);
+    await expect(failing).rejects.toBeTruthy();
+    expect(localStorage.length).toBe(0);
+  });
+
+  it('keeps a copy already on this browser in step with the account', async () => {
+    localStorage.setItem('theme', 'dark');
+    const preferences = TestBed.inject(PreferencesService);
+    const loading = preferences.load();
+    httpMock()
+      .expectOne(API + '/preferences')
+      .flush({ theme: 'light' });
+    await loading;
+    expect(localStorage.getItem('theme')).toBe('light');
+  });
+
+  it('remembers a visitor choice under its own name and under visitor.', () => {
+    TestBed.inject(PreferencesService).remember('notice', 'hidden');
+    expect(Object.keys(localStorage).sort()).toEqual(['notice', 'visitor.notice']);
   });
 });
