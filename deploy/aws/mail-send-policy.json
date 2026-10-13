@@ -1,0 +1,23 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "SendOnlyAsTheSixAddressesThroughSmtp",
+      "Effect": "Allow",
+      "Action": "ses:SendRawEmail",
+      "Resource": "arn:aws:ses:us-west-2:724654236968:identity/*",
+      "Condition": {
+        "StringEquals": {
+          "ses:FromAddress": [
+            "privacy@glazecalcapp.com",
+            "security@glazecalcapp.com",
+            "postmaster@glazecalcapp.com",
+            "abuse@glazecalcapp.com",
+            "hello@glazecalcapp.com",
+            "contact@glazecalcapp.com"
+          ]
+        }
+      }
+    }
+  ]
+}

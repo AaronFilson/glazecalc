@@ -1,0 +1,18 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "SesMayStoreMailFromThisRuleOnly",
+      "Effect": "Allow",
+      "Principal": { "Service": "ses.amazonaws.com" },
+      "Action": "s3:PutObject",
+      "Resource": "arn:aws:s3:::glazecalc-mail-724654236968/inbound/*",
+      "Condition": {
+        "StringEquals": {
+          "aws:SourceAccount": "724654236968",
+          "aws:SourceArn": "arn:aws:ses:us-west-2:724654236968:receipt-rule-set/glazecalc-inbound:receipt-rule/forward-to-owner"
+        }
+      }
+    }
+  ]
+}

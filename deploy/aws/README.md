@@ -366,3 +366,131 @@ deletes the older ones.
 
 While SES is in the sandbox, reset emails reach verified addresses only; after production access
 they reach everyone.
+
+## 15. Email in: privacy@, security@, postmaster@, abuse@, hello@ and contact@
+
+Mail to these six addresses at glazecalcapp.com reaches the owner's own inbox, and the owner can
+reply as them from Gmail. It is not a full mail server: Amazon SES receives the mail and scans it
+for spam and viruses, stores each message in a private S3 bucket (deleted after 30 days), and a
+small Lambda function ([mail-forwarder](mail-forwarder/)) sends it on. The forwarded message comes from
+`"<sender's name> via Glazecalc" <forwarder@glazecalcapp.com>` (SES only sends as our own domain),
+with Reply-To set to the original sender (or to the Reply-To the sender set), so a plain reply goes to
+them. Mail the scan marks as spam or as carrying a virus is dropped. `no-reply@glazecalcapp.com`, the
+app's sender, stays undeliverable, and there is no catch-all: any other address is refused.
+
+The owner's inbox address is kept only in the Lambda function's environment (the script takes it from
+`OWNER_INBOX` when you run it). It is in no file in this repository.
+
+Files: [create-inbound.sh](create-inbound.sh) (the script), [mail-forwarder/](mail-forwarder/) (the
+function and its tests, `npm run test:forwarder`), the policies
+[mail-bucket-policy.json](mail-bucket-policy.json), [mail-forwarder-trust.json](mail-forwarder-trust.json),
+[mail-forwarder-policy.json](mail-forwarder-policy.json) and [mail-send-policy.json](mail-send-policy.json),
+the rule [mail-receipt-rule.json](mail-receipt-rule.json), and
+[mail-inbound-setup-policy.json](mail-inbound-setup-policy.json) (what the person running the script needs).
+
+### What it costs
+
+Check the [SES pricing page](https://aws.amazon.com/ses/pricing/) first; these are the usual figures.
+Receiving costs about $0.10 per 1,000 messages plus $0.09 per 1,000 chunks of 256 KB (a message is at
+least one chunk; most are one). Forwarding is ordinary SES sending, about $0.10 per 1,000 messages.
+The Lambda function is inside the free tier at this volume (each message runs well under a second). S3
+holds a few kilobytes per message for 30 days: cents. A hundred messages a month costs well under a
+dollar. Spam and probes sent to the six addresses count too, so read the SES part of the bill once in
+the first month.
+
+### Run it
+
+In this order. The script shows each command and asks before every change.
+
+1. **Permissions.** The person who runs the script needs
+   [mail-inbound-setup-policy.json](mail-inbound-setup-policy.json): it creates an IAM role and user, which
+   `copper-bell` must not be able to do (an account administrator already has this and can skip the step).
+   Review it, then attach it to that user or group:
+   ```bash
+   aws iam create-policy --policy-name glazecalc-mail-inbound \
+     --policy-document file://deploy/aws/mail-inbound-setup-policy.json
+   aws iam attach-user-policy --user-name <admin user> \
+     --policy-arn arn:aws:iam::724654236968:policy/glazecalc-mail-inbound
+   ```
+2. **Read** the script and the policy files. Nothing in them is secret.
+3. **Run the script** in CloudShell (us-west-2), from a clone of this repository:
+   ```bash
+   OWNER_INBOX=<your inbox address> bash deploy/aws/create-inbound.sh
+   ```
+   It does these, asking before each: the bucket (public access blocked, 30-day expiry), its policy (SES
+   may store mail only for this account and this receipt rule), the forwarder's role and function, SES's
+   permission to call it, the receipt rule set and rule (six recipients, scanning on, S3 then Lambda), the
+   IAM user `glazecalc-mail-send`, the activation of the rule set, and last, behind its own confirmation
+   (type `mx`), the DNS record `glazecalcapp.com MX 10 inbound-smtp.us-west-2.amazonaws.com`. Running it
+   again skips what exists and updates the rest. SES allows one active receipt rule set per region; the
+   script says if another one is already active, and activating replaces it.
+4. **Test** (below), then the Gmail steps.
+5. **Publish the security contact** (last section).
+
+### Test
+
+Send a message from some other mail account (not the inbox it forwards to) to each of the six addresses.
+
+- Each should arrive within a minute, from `<your name> via Glazecalc`, with the text intact and any
+  attachment (try a small PDF).
+- Press Reply: the To address should be the account you sent from, not `forwarder@`.
+- In one message's source: `dkim=pass` and `dmarc=pass` for glazecalcapp.com, and no `DKIM-Signature` of the
+  original sender.
+- Send to `nobody@glazecalcapp.com` and to `no-reply@glazecalcapp.com`: both should bounce.
+- `nslookup -type=MX glazecalcapp.com` shows the new record.
+- Nothing arrives? Read the function's log: `aws logs tail /aws/lambda/glazecalc-mail-forwarder --since 15m`,
+  and list the stored messages: `aws s3 ls s3://glazecalc-mail-724654236968/inbound/`. A message the scan
+  marked as spam is stored, but the log says "Dropped"; look at the object if you suspect a false positive.
+  A message too large for SES to send on fails and stays in the bucket for 30 days.
+
+### Send mail as these addresses (Gmail)
+
+So that replies come from `privacy@glazecalcapp.com` and not from the inbox address.
+
+1. Create SMTP credentials for the IAM user `glazecalc-mail-send`, which may send only as the six addresses:
+   ```bash
+   bash deploy/aws/create-inbound.sh smtp-key
+   ```
+   It makes an access key, shows the SMTP username and password once, and deletes older keys. (Use this and
+   not the SES console's wizard, which makes a new user with broader rights.)
+2. In Gmail: Settings, **Accounts and Import**, **Send mail as**, **Add another email address**. Give a name
+   (for example "Glazecalc privacy") and one of the six addresses.
+3. SMTP server `email-smtp.us-west-2.amazonaws.com`, port **587**, the username and password from step 1,
+   **Secured connection using TLS**.
+4. Gmail sends a confirmation code to that address. It arrives through the forwarder, in the same inbox:
+   enter the code (or open its link). Repeat for each of the six.
+5. In a reply, choose the From address in the message window. Gmail's setting "Reply from the same address
+   the message was sent to" does this automatically.
+
+The policy allows `ses:SendRawEmail` only with `ses:FromAddress` in the six, so a leaked key cannot send as
+`no-reply@` or anyone else. It can still send as the six, to anyone.
+
+### Rotating the SMTP key
+
+Run `bash deploy/aws/create-inbound.sh smtp-key` again (once a year, or at once if the key may have leaked).
+It creates the new key, shows the new password, then deletes the old keys, so the old password stops
+working: update the password in each of the six Gmail entries (Settings, Accounts and Import, edit info).
+
+### Changing the inbox or the function
+
+Run the script again (with the new `OWNER_INBOX` if the inbox changes): it updates the function's code and
+environment. SES is out of the sandbox, so the new inbox needs no verification.
+
+### Undo it all
+
+```bash
+bash deploy/aws/create-inbound.sh undo
+```
+
+It asks before each of these, in this order: delete the MX record (mail to the six addresses then bounces),
+deactivate and delete the rule and rule set, delete the function and its log group, delete the role, delete
+the user's keys, policy and the user, empty and delete the bucket. It leaves the SES identity, DKIM and the
+other DNS records alone. Also remove the six addresses from Gmail's "Send mail as", and detach the
+`glazecalc-mail-inbound` policy if you attached it.
+
+### security.txt and SECURITY.md
+
+[client/public/.well-known/security.txt](../../client/public/.well-known/security.txt) (RFC 9116) and
+[SECURITY.md](../../SECURITY.md) name `security@glazecalcapp.com` as the place to report problems. **Publish
+both only after the forwarder works**: merge and deploy this branch after the test above passes, or reports
+will bounce. The `Expires` line in security.txt is one year ahead (2027-10-01); bump it at least once a year.

@@ -65,6 +65,16 @@ describe('client routes', function () {
     expect(api.body).to.eql({ code: 'not-found', msg: 'Not found' });
   });
 
+  it('serves security.txt from .well-known as plain text', async () => {
+    const res = await site().get('/.well-known/security.txt');
+    expect(res).to.have.status(200);
+    expect(res.type).to.eql('text/plain');
+    expect(res.text).to.include('Contact: mailto:security@glazecalcapp.com');
+    expect(res.text).to.match(/^Expires: /m);
+    const missing = await site().get('/.well-known/nothing-here');
+    expect(missing).to.have.status(404);
+  });
+
   it('does not answer other methods with the page', async () => {
     const res = await site().post('/recipe').send({});
     expect(res).to.have.status(404);

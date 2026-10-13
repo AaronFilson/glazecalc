@@ -33,6 +33,11 @@ export default tseslint.config(
       globals: { ...globals.node }
     }
   },
+  // The mail forwarder's tests (npm run test:forwarder).
+  {
+    files: ['deploy/aws/mail-forwarder/test/**/*.mjs'],
+    languageOptions: { globals: { ...globals.mocha } }
+  },
   // The API server: TypeScript run by Node as it is (server/tsconfig.json).
   {
     files: ['server/**/*.ts'],

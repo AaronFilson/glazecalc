@@ -17,6 +17,7 @@
     "format": "prettier --write",
     "format:check": "prettier --check .",
     "test": "mocha",
+    "test:forwarder": "mocha --no-config deploy/aws/mail-forwarder/test/*_tests.mjs",
     "test:client": "ng test --watch=false",
     "test:e2e": "playwright test",
     "test:e2e:linux": "node scripts/test-e2e-linux.mjs",
