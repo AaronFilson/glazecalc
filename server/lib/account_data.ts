@@ -15,7 +15,16 @@ import type { RecordModel } from './guest_limits.ts';
 type Id = string | Types.ObjectId;
 
 // Collections whose records belong to a user (ownedBy) and go when the account does.
-const OWNED_MODELS: RecordModel[] = [Additive, Advice, Firing, Material, Note, Recipe, Trash];
+export const OWNED_KINDS: Record<string, RecordModel> = {
+  additives: Additive,
+  advice: Advice,
+  firing: Firing,
+  materials: Material,
+  notes: Note,
+  recipes: Recipe,
+  trash: Trash
+};
+const OWNED_MODELS: RecordModel[] = Object.values(OWNED_KINDS);
 
 /**
  * Moves a trial's records into an account and removes the trial; resolves with

@@ -8,6 +8,7 @@ import mongoose from 'mongoose';
 import * as log from './lib/log.ts';
 import sameOrigin from './lib/same_origin.ts';
 import authRoutes from './routes/auth_routes.ts';
+import exportRoutes from './routes/export_routes.ts';
 import guestRoutes from './routes/guest_routes.ts';
 import passwordRoutes from './routes/password_routes.ts';
 import records from './routes/records.ts';
@@ -44,6 +45,7 @@ api.get('/health', (req, res) => {
 
 // /additives, /advice, /firing, /materials, /notes, /recipe and /trash
 for (const [name, router] of Object.entries(records)) api.use('/' + name, router);
+api.use('/export', exportRoutes);
 api.use('/guest', guestRoutes);
 api.use('/password', passwordRoutes);
 // /signup, /signin, /signout, /verify, /usersettings/:id and /deleteuser/:id

@@ -5,6 +5,7 @@ import { Router, RouterLink } from '@angular/router';
 import { TranslocoDirective, translate } from '@jsverse/transloco';
 import { AuthService } from '../../core/auth.service';
 import { errorMessage } from '../../core/error-message';
+import { ExportSection } from './export-section';
 import { FieldCheck, FieldChecks, filled, newPassword, samePassword } from '../../shared/field-checks';
 import { Notices, NoticesList } from '../../shared/notices';
 import { PageHeader } from '../../shared/page-header';
@@ -19,6 +20,7 @@ import { SettingsSection } from './settings-section';
   selector: 'gc-account-page',
   imports: [
     DatePipe,
+    ExportSection,
     FieldCheck,
     FormsModule,
     NoticesList,
@@ -41,6 +43,7 @@ import { SettingsSection } from './settings-section';
         <a routerLink="/signup" class="btn btn-primary">{{ t('account.account.createAccount') }}</a>
       </section>
       <gc-settings />
+      <gc-export />
     } @else {
       <gc-page-header
         [title]="t('account.account.title')"
@@ -48,6 +51,7 @@ import { SettingsSection } from './settings-section';
       />
       <gc-notices [notices]="notices" />
       <gc-settings />
+      <gc-export />
 
       <section class="auth-text">
         <h2>{{ t('account.account.changeHeading') }}</h2>
