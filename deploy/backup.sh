@@ -4,7 +4,9 @@
 #
 # Restore a dump:
 #   aws s3 cp s3://<bucket>/mongodump/<file>.archive.gz - \
-#     | docker compose -f compose.prod.yaml exec -T mongo mongorestore --archive --gzip --drop
+#     | docker compose -f compose.prod.yaml exec -T mongo sh -c 'mongorestore --archive --gzip --drop \
+#         --username glazecalc --password "$MONGO_APP_PASSWORD" --authenticationDatabase glazecalc'
+# Both run as the app's MongoDB user; its password is in the mongo container's environment.
 set -euo pipefail
 
 cd /opt/glazecalc
@@ -18,6 +20,7 @@ key="mongodump/glazecalc-$(date -u +%Y-%m-%dT%H%M%SZ).archive.gz"
 # be stored, cut short, under a normal name.
 dump=$(mktemp /var/tmp/glazecalc-dump.XXXXXX)
 trap 'rm -f "$dump"' EXIT
-docker compose -f compose.prod.yaml exec -T mongo mongodump --db glazecalc --archive --gzip --quiet > "$dump"
+docker compose -f compose.prod.yaml exec -T mongo sh -c 'mongodump --db glazecalc --archive --gzip --quiet \
+  --username glazecalc --password "$MONGO_APP_PASSWORD" --authenticationDatabase glazecalc' > "$dump"
 aws s3 cp "$dump" "s3://$bucket/$key" --region "$region" --only-show-errors
 echo "Backup written to s3://$bucket/$key ($(stat -c %s "$dump") bytes)"

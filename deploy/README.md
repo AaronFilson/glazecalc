@@ -33,11 +33,14 @@ session cookie is `Secure`. After DNS points at the instance,
 | `nginx/glazecalc-http.conf`                              | `/etc/nginx/sites-available/glazecalc` | first-boot site: plain HTTP to the app, plus Let's Encrypt's check path                                                                                                                                                                                                                                                                      |
 | `nginx/glazecalc.conf`                                   | `/etc/nginx/sites-available/glazecalc` | after `enable-https.sh`: HTTPS, http→https and www→bare-domain redirects, HSTS                                                                                                                                                                                                                                                               |
 | `nginx/glazecalc-proxy.conf`, `nginx/glazecalc-tls.conf` | `/etc/nginx/snippets/`                 | proxy settings and headers; TLS settings (Mozilla intermediate)                                                                                                                                                                                                                                                                              |
+| `logrotate/nginx`                                        | `/etc/logrotate.d/nginx`               | nginx's logs kept 14 days                                                                                                                                                                                                                                                                                                                    |
+| `journald/glazecalc.conf`                                | `/etc/systemd/journald.conf.d/`        | the system journal kept 14 days                                                                                                                                                                                                                                                                                                              |
 | `systemd/*`                                              | `/etc/systemd/system/`                 | the units listed above                                                                                                                                                                                                                                                                                                                       |
 | `aws/*.json`                                             | IAM, SSM, DLM                          | instance role, GitHub deploy role and its one command document, CLI user policy, snapshot policy                                                                                                                                                                                                                                             |
 
 Settings come from SSM Parameter Store, never from the repository or user data:
-`/glazecalc/app-secret` (SecureString), `/glazecalc/backup-bucket`, `/glazecalc/smtp-url` (SecureString,
+`/glazecalc/app-secret` (SecureString), `/glazecalc/mongo-password` (SecureString, the app's
+MongoDB user), `/glazecalc/backup-bucket`, `/glazecalc/smtp-url` (SecureString,
 the SES SMTP credentials that turn email on; see aws/README.md section 14), and optionally
 `/glazecalc/acme-email` (Let's Encrypt account contact).
 
@@ -47,7 +50,7 @@ Day to day:
 - **Roll back:** run Deploy with the previous `sha-<commit>` tag (each deploy prints it). A
   deploy whose image fails to pull or to become healthy rolls itself back and fails the run.
 - **Shell:** `aws ssm start-session --target <instance-id>` (no SSH, port 22 is closed).
-- **Logs:** `sudo docker compose -f /opt/glazecalc/compose.prod.yaml logs -f app`,
+- **Logs:** see "How long logs are kept" below. `sudo docker compose -f /opt/glazecalc/compose.prod.yaml logs -f app`,
   `/var/log/nginx/access.log` and `error.log`, `journalctl -u glazecalc-backup`.
 - **Certificate:** `sudo certbot certificates` (expiry), `systemctl list-timers certbot`
   (next renewal check), `sudo certbot renew --dry-run` (test a renewal).
@@ -55,3 +58,104 @@ Day to day:
   `sudo /opt/glazecalc/enable-https.sh` on the instance (it checks the files with `nginx -t`
   and puts the old ones back if they fail).
 - **Restore a dump:** see the comment at the top of `backup.sh`.
+
+## How long logs are kept
+
+| Log                                                     | Kept                                              | Set in                             |
+| ------------------------------------------------------- | ------------------------------------------------- | ---------------------------------- |
+| nginx `access.log` and `error.log`                      | 14 days (rotated daily)                           | `logrotate/nginx`                  |
+| Container logs (app and MongoDB), `docker compose logs` | by size only: 5 files of 10 MB for each container | `x-logging` in `compose.prod.yaml` |
+| The system journal                                      | 14 days                                           | `journald/glazecalc.conf`          |
+
+Docker has no time limit for container logs. On a quiet day 50 MB reaches back many days;
+under load it is hours. The app writes error codes and request paths, never email addresses
+(a mail failure logs only the error's code), and MongoDB is started with `--slowms 2147483647`
+so it never writes a slow query with its filter. The logrotate file and the journal setting
+reach an existing instance when `enable-https.sh` is run again (logrotate) or by hand (journal, see below).
+
+## MongoDB sign-in
+
+MongoDB runs with `--auth` on the Compose network, with one user, `glazecalc`, who can read
+and write the `glazecalc` database and nothing else. Its password is the SSM parameter
+`/glazecalc/mongo-password`; `deploy.sh` puts it in `/opt/glazecalc/app.env` (the app's connection
+string) and `/opt/glazecalc/mongo.env` (read by the MongoDB container), both readable by root only. MongoDB's
+port is not published, so only the app container can reach it. A new instance gets the user
+by itself, when MongoDB first starts on an empty data directory (`configs` in `compose.prod.yaml`).
+Local development and the tests use the root `compose.yaml` and a local MongoDB, both without sign-in.
+To use sign-in there, put the user in `MONGODB_URI` (see `.env.example`).
+
+`backup.sh` signs in as the same user (`mongodump` and `mongorestore` need only its read and write rights).
+If you ever lock yourself out, stop the stack, start `mongod` once by hand without `--auth` on the
+volume, and fix the user from there.
+
+### Moving the live server to sign-in (once)
+
+MongoDB's data volume already exists, so the image will not create the user: it is made by hand
+while MongoDB still has no sign-in, **before** the release is deployed. The order matters. Create
+the password, then the user, check it, then deploy. Deploying first would start MongoDB with
+`--auth` and no user; `deploy.sh` would see the app unhealthy and roll itself back, harmlessly,
+but the user must exist for the deploy to work. No data is touched at any point.
+
+1. **Backup** (Session Manager, as root) and check it reached S3:
+
+   ```bash
+   /opt/glazecalc/backup.sh
+   ```
+
+2. **Make the password** (from a machine with the operator profile):
+
+   ```bash
+   aws ssm put-parameter --region us-west-2 --name /glazecalc/mongo-password --type SecureString \
+     --value "$(openssl rand -hex 32)"
+   ```
+
+3. **Create the user** on the running database (Session Manager, as root):
+
+   ```bash
+   cd /opt/glazecalc
+   pw=$(aws ssm get-parameter --region us-west-2 --name /glazecalc/mongo-password --with-decryption \
+     --query Parameter.Value --output text)
+   docker compose -f compose.prod.yaml exec -T -e MONGO_APP_PASSWORD="$pw" mongo mongosh --quiet --eval "
+     db.getSiblingDB('glazecalc').createUser({
+       user: 'glazecalc',
+       pwd: process.env.MONGO_APP_PASSWORD,
+       roles: [{ role: 'readWrite', db: 'glazecalc' }]
+     })"
+   ```
+
+4. **Check that the user can sign in** and sees the data (the old stack keeps running):
+
+   ```bash
+   docker compose -f compose.prod.yaml exec -T -e PW="$pw" mongo sh -c \
+     'mongosh --quiet "mongodb://glazecalc:$PW@localhost/glazecalc?authSource=glazecalc" \
+       --eval "printjson(db.getCollectionNames())"'
+   unset pw
+   ```
+
+5. **Deploy the release** (Actions → Deploy). `deploy.sh` reads the password, writes `app.env` and
+   `mongo.env`, and recreates MongoDB with `--auth` and the app with the new connection string:
+   under a minute of downtime.
+
+6. **Check** (Session Manager, as root):
+
+   ```bash
+   curl -fsS http://127.0.0.1:3000/api/health
+   cd /opt/glazecalc
+   # Refused (Unauthorized) without a password:
+   docker compose -f compose.prod.yaml exec -T mongo mongosh --quiet glazecalc --eval 'db.getCollectionNames()'
+   # The nightly backup, by hand, and its result in S3:
+   ./backup.sh
+   ```
+
+7. **The log settings** on the existing instance. The nginx rotation arrives with `sudo /opt/glazecalc/enable-https.sh`;
+   the journal setting by hand:
+
+   ```bash
+   mkdir -p /etc/systemd/journald.conf.d
+   curl -fsSL https://raw.githubusercontent.com/AaronFilson/glazecalc/master/deploy/journald/glazecalc.conf \
+     -o /etc/systemd/journald.conf.d/glazecalc.conf
+   systemctl restart systemd-journald
+   ```
+
+To go back, deploy the previous `sha-<commit>` tag: its Compose file starts MongoDB without
+`--auth` and the app without a password, and the user stays unused in the database.

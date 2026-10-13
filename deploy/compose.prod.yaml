@@ -6,7 +6,12 @@
 # nginx on the host terminates HTTPS and proxies to 127.0.0.1:3000.
 name: glazecalc
 
-# Docker's "local" log driver rotates by itself (json-file does not by default).
+# Container logs: Docker's "local" log driver rotates by itself (json-file does
+# not by default). The limit is by size, not time: 5 files of 10 MB for each of
+# the two containers (50 MB each at most), so on a quiet day they reach back
+# many days and under load only hours. Nothing in them should name a person:
+# the app logs error codes, never email addresses, and MongoDB is told not to
+# log queries (--slowms below).
 x-logging: &logging
   driver: local
   options:
@@ -17,12 +22,12 @@ services:
   app:
     image: ghcr.io/aaronfilson/glazecalc:${GLAZECALC_TAG:-latest}
     restart: unless-stopped
-    # APP_SECRET, written by deploy.sh from SSM Parameter Store (root-only file).
+    # APP_SECRET, MONGODB_URI (with the app's MongoDB user and password) and the
+    # email settings, written by deploy.sh from SSM Parameter Store (root-only file).
     env_file: /opt/glazecalc/app.env
     environment:
       NODE_ENV: production
       PORT: 3000
-      MONGODB_URI: mongodb://mongo:27017/glazecalc
     ports:
       - '127.0.0.1:3000:3000'
     depends_on:
@@ -35,7 +40,17 @@ services:
     restart: unless-stopped
     # MongoDB production notes: an explicit cache size inside a container (this
     # leaves room for Node and nginx on a 1 GB t4g.micro) and a high open-files limit.
-    command: ['mongod', '--wiredTigerCacheSizeGB', '0.25']
+    # --auth: only the app's user may use the database. --slowms: operations slower
+    # than this are written to the log with their filter (the values searched for,
+    # such as an email address); the largest value means never.
+    command: ['mongod', '--wiredTigerCacheSizeGB', '0.25', '--auth', '--slowms', '2147483647']
+    # MONGO_APP_PASSWORD, written by deploy.sh from SSM Parameter Store (root-only
+    # file). The image uses it once, to create the user in a new database; an
+    # existing database gets its user by hand (deploy/README.md, MongoDB sign-in).
+    env_file: /opt/glazecalc/mongo.env
+    configs:
+      - source: create-app-user
+        target: /docker-entrypoint-initdb.d/create-app-user.js
     ulimits:
       nofile:
         soft: 64000
@@ -50,6 +65,17 @@ services:
       retries: 10
       start_period: 20s
     logging: *logging
+
+# Runs once, when MongoDB starts on an empty data directory (before --auth applies):
+# the app's user, who can read and write its own database and nothing else.
+configs:
+  create-app-user:
+    content: |
+      db.getSiblingDB('glazecalc').createUser({
+        user: 'glazecalc',
+        pwd: process.env.MONGO_APP_PASSWORD,
+        roles: [{ role: 'readWrite', db: 'glazecalc' }]
+      });
 
 volumes:
   mongo-data:

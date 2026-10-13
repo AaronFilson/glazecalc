@@ -22,6 +22,28 @@ describe('client routes', function () {
     }
   });
 
+  it('limits what a page may load, with a new style nonce for each reply', async () => {
+    const first = await site().get('/recipe');
+    const second = await site().get('/recipe');
+    const policy = String(first.headers['content-security-policy']);
+    for (const directive of ["connect-src 'self'", "img-src 'self' data:", "font-src 'self'", "form-action 'self'"]) {
+      expect(policy).to.include(directive);
+    }
+    // Scripts are left to the build's <meta> policy; a default-src here would block its inline script.
+    expect(policy).not.to.match(/default-src|script-src/);
+    const nonce = /'nonce-([^']+)'/.exec(policy)?.[1];
+    expect(nonce).to.be.a('string');
+    expect(first.text).to.include(`<gc-root ngCspNonce="${nonce}">`);
+    expect(String(second.headers['content-security-policy'])).not.to.include(nonce!);
+  });
+
+  it('sends the policy without a nonce for files and the API', async () => {
+    for (const address of ['/favicon.svg', '/api/health']) {
+      const res = await site().get(address);
+      expect(String(res.headers['content-security-policy']), address).to.match(/style-src 'self'(;|$)/);
+    }
+  });
+
   it('sends the app, with a 404 and no address of its own, for any other address', async () => {
     // The app shows its not-found page; search engines see that nothing is there.
     for (const page of ['/no-such-page', '/xx/recipe', '/pt/guides', '/de/no-such-page', '/.../']) {
