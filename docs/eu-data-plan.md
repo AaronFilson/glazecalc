@@ -78,9 +78,14 @@ Plan drawn from the report "No cookie banner, a real delete button, and an hones
 ## Decisions for the owner
 
 **Decided (13 October 2026):**
+
 - Stay in us-west-2. Item 20 is dropped, and the notice says plainly where the data is.
 - No EU or UK representatives. Item 16 is dropped, and the private contact address is answered promptly instead.
 - No deletion of inactive accounts, because what counts as inactive can't be told reliably. Item 17 is dropped, and the notice says accounts are kept until the user deletes them.
+
+- No minimum age. The app is a science tool with no chat and no content shared between users. The basis for processing is running the account, not consent, so GDPR Art. 8 doesn't apply. The site isn't directed at children, so COPPA asks nothing unless the owner learns that a child under 13 has an account, in which case the account is deleted. The notice says the site isn't directed at children. Item 2 keeps the privacy link and summary, with no age line.
+- The contact point is the project's GitHub. No separate address is set up (item 3 is dropped). The notice warns that issues are public and points to the account page for anything personal: export, correction and deletion are self-service. See [data-requests.md](data-requests.md).
+- The old copies (the 2017 snapshots and the 2026-10-05 dumps) hold no EU or UK users, so item 7 is out of scope here.
 
 Items 4–6, 8–11, 13, 15, 18, 19 and 21 are built first. They go out in the next release.
 

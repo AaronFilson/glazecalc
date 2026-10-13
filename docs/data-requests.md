@@ -5,9 +5,14 @@ How the owner answers someone who asks to see, correct, move or delete their dat
 
 ## Where requests arrive
 
-At the contact address published in the privacy notice, or in any other way the person chooses: a request is valid
-however it is worded and wherever it is sent. A GitHub issue is public, so answer it by moving the conversation to
-email, and never ask for account details there.
+Mostly as a GitHub issue on the project, the contact point the privacy notice names. A request is valid however it
+is worded and wherever it is sent. Issues are public:
+
+- Never ask for account details in an issue. Point the person to the account page, where export, correction, the
+  email change and deletion are all self-service.
+- If a request has personal details in it, edit or hide them, and say why.
+- If the account page can't do what's asked, send a message to the account's own address (see below) and continue
+  there.
 
 ## Time limits
 
@@ -22,9 +27,9 @@ email, and never ask for account details there.
 
 Check only that the person controls the account. **Never ask for an identity document.**
 
-- A request sent from the account's own address: reply to that address.
-- From any other address: ask the person to sign in and use the account page, or send a confirmation link to the
-  account's address, and act once it is answered.
+- First choice: ask the person to sign in and use the account page.
+- If they can't sign in, use the password reset, which proves control of the address. Otherwise send a message to the
+  account's address and act once it is answered.
 - Someone asking about an account they say isn't theirs (for example, their address was registered by a stranger):
   send the confirmation link to that address; whoever can read it controls it.
 
