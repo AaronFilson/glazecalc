@@ -1,0 +1,28 @@
+{
+  "Name": "forward-to-owner",
+  "Enabled": true,
+  "TlsPolicy": "Optional",
+  "ScanEnabled": true,
+  "Recipients": [
+    "privacy@glazecalcapp.com",
+    "security@glazecalcapp.com",
+    "postmaster@glazecalcapp.com",
+    "abuse@glazecalcapp.com",
+    "hello@glazecalcapp.com",
+    "contact@glazecalcapp.com"
+  ],
+  "Actions": [
+    {
+      "S3Action": {
+        "BucketName": "glazecalc-mail-724654236968",
+        "ObjectKeyPrefix": "inbound/"
+      }
+    },
+    {
+      "LambdaAction": {
+        "FunctionArn": "arn:aws:lambda:us-west-2:724654236968:function:glazecalc-mail-forwarder",
+        "InvocationType": "Event"
+      }
+    }
+  ]
+}

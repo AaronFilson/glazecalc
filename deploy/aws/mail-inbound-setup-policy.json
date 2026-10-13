@@ -1,0 +1,131 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "Bucket",
+      "Effect": "Allow",
+      "Action": [
+        "s3:CreateBucket",
+        "s3:ListBucket",
+        "s3:GetBucketLocation",
+        "s3:*BucketPublicAccessBlock",
+        "s3:*LifecycleConfiguration",
+        "s3:GetBucketPolicy",
+        "s3:PutBucketPolicy",
+        "s3:DeleteBucketPolicy",
+        "s3:DeleteBucket",
+        "s3:PutBucketTagging"
+      ],
+      "Resource": "arn:aws:s3:::glazecalc-mail-724654236968"
+    },
+    {
+      "Sid": "EmptyTheBucketOnUndo",
+      "Effect": "Allow",
+      "Action": ["s3:GetObject", "s3:DeleteObject"],
+      "Resource": "arn:aws:s3:::glazecalc-mail-724654236968/*"
+    },
+    {
+      "Sid": "ForwarderRole",
+      "Effect": "Allow",
+      "Action": [
+        "iam:CreateRole",
+        "iam:GetRole",
+        "iam:TagRole",
+        "iam:UpdateAssumeRolePolicy",
+        "iam:PutRolePolicy",
+        "iam:GetRolePolicy",
+        "iam:DeleteRolePolicy",
+        "iam:DeleteRole"
+      ],
+      "Resource": "arn:aws:iam::724654236968:role/glazecalc-mail-forwarder"
+    },
+    {
+      "Sid": "PassForwarderRoleToLambda",
+      "Effect": "Allow",
+      "Action": "iam:PassRole",
+      "Resource": "arn:aws:iam::724654236968:role/glazecalc-mail-forwarder",
+      "Condition": {
+        "StringEquals": {
+          "iam:PassedToService": "lambda.amazonaws.com"
+        }
+      }
+    },
+    {
+      "Sid": "SmtpSendingUser",
+      "Effect": "Allow",
+      "Action": [
+        "iam:CreateUser",
+        "iam:GetUser",
+        "iam:TagUser",
+        "iam:PutUserPolicy",
+        "iam:GetUserPolicy",
+        "iam:DeleteUserPolicy",
+        "iam:CreateAccessKey",
+        "iam:ListAccessKeys",
+        "iam:DeleteAccessKey",
+        "iam:DeleteUser"
+      ],
+      "Resource": "arn:aws:iam::724654236968:user/glazecalc-mail-send"
+    },
+    {
+      "Sid": "ForwarderFunction",
+      "Effect": "Allow",
+      "Action": [
+        "lambda:CreateFunction",
+        "lambda:GetFunction",
+        "lambda:GetFunctionConfiguration",
+        "lambda:UpdateFunctionCode",
+        "lambda:UpdateFunctionConfiguration",
+        "lambda:AddPermission",
+        "lambda:RemovePermission",
+        "lambda:GetPolicy",
+        "lambda:TagResource",
+        "lambda:DeleteFunction"
+      ],
+      "Resource": "arn:aws:lambda:us-west-2:724654236968:function:glazecalc-mail-forwarder"
+    },
+    {
+      "Sid": "ForwarderLogs",
+      "Effect": "Allow",
+      "Action": ["logs:DeleteLogGroup", "logs:DescribeLogGroups", "logs:FilterLogEvents"],
+      "Resource": "arn:aws:logs:us-west-2:724654236968:log-group:/aws/lambda/glazecalc-mail-forwarder:*"
+    },
+    {
+      "Sid": "ReceiptRules",
+      "Effect": "Allow",
+      "Action": [
+        "ses:CreateReceiptRuleSet",
+        "ses:DescribeReceiptRuleSet",
+        "ses:CreateReceiptRule",
+        "ses:UpdateReceiptRule",
+        "ses:DeleteReceiptRule",
+        "ses:DeleteReceiptRuleSet"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "ActivateReceiptRuleSet",
+      "Effect": "Allow",
+      "Action": ["ses:SetActiveReceiptRuleSet", "ses:DescribeActiveReceiptRuleSet", "ses:ListReceiptRuleSets"],
+      "Resource": "*"
+    },
+    {
+      "Sid": "ReadSendingDomain",
+      "Effect": "Allow",
+      "Action": "ses:GetEmailIdentity",
+      "Resource": "arn:aws:ses:us-west-2:724654236968:identity/glazecalcapp.com"
+    },
+    {
+      "Sid": "WhoAmI",
+      "Effect": "Allow",
+      "Action": "sts:GetCallerIdentity",
+      "Resource": "*"
+    },
+    {
+      "Sid": "ApexMxRecord",
+      "Effect": "Allow",
+      "Action": ["route53:ListResourceRecordSets", "route53:ChangeResourceRecordSets", "route53:GetChange"],
+      "Resource": ["arn:aws:route53:::hostedzone/Z383KEIS9CPHD5", "arn:aws:route53:::change/*"]
+    }
+  ]
+}

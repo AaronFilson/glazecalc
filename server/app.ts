@@ -85,6 +85,10 @@ app.use(
   })
 );
 
+// security.txt (RFC 9116). express.static skips paths with a dot-name in them
+// by default, so this folder gets its own, with dotfiles allowed.
+app.use('/.well-known', express.static(path.join(CLIENT, '.well-known'), { dotfiles: 'allow', index: false }));
+
 // A language's title, description and preview image's text for search
 // results and link previews, from its messages (client/public/i18n/<language>.json:
 // titles.landing, meta.description and meta.imageAlt), read once.
