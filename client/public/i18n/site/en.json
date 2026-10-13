@@ -98,7 +98,7 @@
     "rightsHeading": "Your rights",
     "rightsIntro": "You can see, correct, take and delete your data. Most of it you can do yourself on your <account>account page</account>:",
     "rightsExport": "<b>See it and take it with you:</b> Download my data saves everything in one file (JSON), and your recipes and materials as spreadsheets (CSV).",
-    "rightsCorrect": "<b>Correct it:</b> change your settings and your records at any time. To change your email address, open the link sent to the new address; the old address is told of the change, and every device is signed out.",
+    "rightsCorrect": "<b>Correct it:</b> change your settings and your records at any time. To change your email address, open the link sent to the new address; the old address, if it was confirmed, is told of the change, and every device is signed out.",
     "rightsDelete": "<b>Delete it:</b> Delete my account removes your account and everything you saved at once, and \"Discard trial\" does the same for a trial. Copies in backups are gone within 30 days.",
     "rightsSignOut": "<b>Sign out everywhere:</b> ends your account's sessions on every device.",
     "rightsAsk": "For anything else, such as asking for your data to be held back from use while a mistake is put right, or objecting to how it is used, write to <mail>privacy@glazecalcapp.com</mail>. It is free, and you will have an answer within a month. You will only be asked to show the account is yours, by signing in or by opening a link sent to its address, never for an ID.",
