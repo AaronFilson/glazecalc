@@ -55,7 +55,7 @@ Label: Ábhair intuaslagtha
 
 ### Ábhair datha agus luaidhe
 
-Is iad **ábhair datha**{{en: colorants}} na hocsaídí miotail agus na líocha{{en: stains}} a thugann a dhath do ghlónra: copar, cóbalt, cróm, mangainéis, nicil, líocha caidmiam-seiléiniam agus eile. Luann leathanach sábháilteachta ceirmeachta ó ollscoil luaidhe, caidmiam, cóbalt agus cróimiam i measc na gcomhábhar glónra atá thar a bheith guaiseach. Níor aimsíomar aon fhigiúirí dáileoige iontaofa d’aon ábhar datha, mar sin cuir glao, is cuma cén méid. Bíonn na hábhair chéanna i mbuicéad glónra measctha agus a bhí sna málaí as ar tháinig sé, ach iad fliuch.
+Is iad **ábhair datha**{{en: colorants}} na hocsaídí miotail agus na líocha{{en: stains}} a thugann a dhath do ghlónra: copar, cóbalt, cróm, mangainéis, nicil, líocha caidmiam-seiléiniam agus eile. Luann leathanach sábháilteachta ceirmeachta ó ollscoil luaidhe, caidmiam, cóbalt agus cróimiam i measc na gcomhábhar glónra atá guaiseach go háirithe. Níor aimsíomar aon fhigiúirí dáileoige iontaofa d’aon ábhar datha, mar sin cuir glao, is cuma cén méid. Bíonn na hábhair chéanna i mbuicéad glónra measctha agus a bhí sna málaí as ar tháinig sé, ach iad fliuch.
 
 Tá príomhchontúirt na luaidhe difriúil: ní spúnóg amháin, ach méideanna beaga deannaigh a shlogtar thar sheachtainí nó thar mhíonna, gan aon chomharthaí rabhaidh (féach ‘Luaidhe agus leanaí’, thíos).
 
