@@ -27,6 +27,8 @@ interface VerifyResponse {
   name?: string;
   guest?: boolean;
   expiresAt?: string;
+  /** The account's email is not confirmed yet. */
+  unverified?: boolean;
 }
 
 interface TrialResponse {
@@ -75,6 +77,8 @@ export class AuthService {
   /** The signed-in user's email, once verified with the server. */
   readonly email = signal<string | null>(null);
   readonly signedIn = computed(() => this.email() !== null);
+  /** Whether the signed-in account's email still waits to be confirmed by its emailed link. */
+  readonly unverified = signal(false);
   /** The trial in use, if this is one. */
   readonly trial = signal<Trial | null>(readStoredTrial());
   /** Set when a trial runs out, so the start page can say so. */
@@ -100,16 +104,22 @@ export class AuthService {
     this.setTrial({ name: res.name, expiresAt: new Date(res.expiresAt) });
   }
 
-  /** Creates an account. During a trial, the trial becomes the account and keeps its work. */
-  async signUp(email: string, password: string): Promise<void> {
+  /**
+   * Creates an account. During a trial, the trial becomes the account and keeps its work.
+   * `keep`: stay signed in for 7 days rather than until the browser closes.
+   */
+  async signUp(email: string, password: string, keep = false): Promise<void> {
     const path = this.trial() ? '/guest/claim' : '/signup';
-    const res = await firstValueFrom(this.http.post<EmailResponse>(this.apiBase + path, { email, password }));
+    const res = await firstValueFrom(
+      this.http.post<EmailResponse>(this.apiBase + path, { email, password }, { headers: keepHeader(keep) })
+    );
     this.signedInAs(res.email);
+    this.unverified.set(true);
   }
 
   /** Signs in; a trial on this browser moves into the account. Resolves with how many records it brought. */
-  async signIn(email: string, password: string): Promise<number> {
-    const headers = new HttpHeaders({ Authorization: 'Basic ' + base64Utf8(email + ':' + password) });
+  async signIn(email: string, password: string, keep = false): Promise<number> {
+    const headers = keepHeader(keep).set('Authorization', 'Basic ' + base64Utf8(email + ':' + password));
     const res = await firstValueFrom(this.http.get<SignInResponse>(this.apiBase + '/signin', { headers }));
     this.signedInAs(res.email);
     return res.kept ?? 0;
@@ -132,6 +142,7 @@ export class AuthService {
       // No id: the browser has no session cookie any more (it expired, or was cleared).
       if (!res.id) return this.sessionEnded();
       this.email.set(res.email ?? null);
+      this.unverified.set(res.unverified === true);
       this.setTrial(
         res.guest && res.name && res.expiresAt ? { name: res.name, expiresAt: new Date(res.expiresAt) } : null
       );
@@ -172,6 +183,38 @@ export class AuthService {
     );
     this.email.set(res.email);
     return said(res);
+  }
+
+  /** Emails a link to a new address; the email changes when the link is opened. Resolves with the server's message. */
+  async changeEmail(email: string, password: string): Promise<string> {
+    const res = await firstValueFrom(
+      this.http.post<MessageResponse>(this.apiBase + '/email/change', { email, password })
+    );
+    return said(res);
+  }
+
+  /** Emails the account's address the link that confirms it again. Resolves with the server's message. */
+  async resendVerification(): Promise<string> {
+    const res = await firstValueFrom(this.http.post<MessageResponse>(this.apiBase + '/email/resend', {}));
+    return said(res);
+  }
+
+  /**
+   * Opens the link from a confirmation email (its token). A changed email signs
+   * out every device, so this browser's session ends too.
+   */
+  async confirmEmail(token: string): Promise<{ message: string; changed: boolean }> {
+    const res = await firstValueFrom(this.http.post<MessageResponse>(this.apiBase + '/email/confirm', { token }));
+    const changed = res.code === 'email-changed';
+    if (changed && this.hasSession()) this.forget();
+    else if (this.hasSession()) await this.refresh();
+    return { message: said(res), changed };
+  }
+
+  /** Signs out on every device, this one included. */
+  async signOutEverywhere(): Promise<void> {
+    await firstValueFrom(this.http.post<MessageResponse>(this.apiBase + '/signout-everywhere', {}));
+    this.forget();
   }
 
   /** Deletes the account and everything saved in it (the password confirms it); the server signs the browser out. */
@@ -229,6 +272,7 @@ export class AuthService {
   private forget(): void {
     this.setSession(null);
     this.email.set(null);
+    this.unverified.set(false);
     this.setTrial(null);
     for (const then of this.onEnd) then();
   }
@@ -248,6 +292,14 @@ export class AuthService {
     if (trial) this.trialEnded.set(false);
     store(TRIAL_KEY, trial && JSON.stringify(trial));
   }
+}
+
+/**
+ * "Keep me signed in on this device" as a header, not in the address, so it
+ * stays out of the logs (server/lib/session.ts).
+ */
+function keepHeader(keep: boolean): HttpHeaders {
+  return keep ? new HttpHeaders({ 'X-Keep-Signed-In': '1' }) : new HttpHeaders();
 }
 
 /** Base64 of the UTF-8 bytes; btoa alone fails outside Latin-1. */

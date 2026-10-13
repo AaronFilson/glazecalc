@@ -19,9 +19,8 @@ describe('sign-up and sign-in API', () => {
     expect(res).to.have.status(200);
     expect(res.body).to.eql({ email: address });
     const cookie = ([] as string[]).concat(res.headers['set-cookie']).join();
-    expect(cookie).to.match(
-      /glazecalc_session=[^;]+; Max-Age=604800; Path=\/api; Expires=[^;]+; HttpOnly; SameSite=Strict/
-    );
+    // A session cookie, ended with the browser session (session_cookie_tests.ts has the kept kind).
+    expect(cookie).to.match(/glazecalc_session=[^;]+; Path=\/api; HttpOnly; SameSite=Strict/);
 
     const me = await verify(sessionToken(res));
     expect(me).to.have.status(200);

@@ -12,7 +12,7 @@ import express from 'express';
 import * as accountMail from '../lib/account_mail.ts';
 import * as email from '../lib/email.ts';
 import { notGuest } from '../lib/guest_limits.ts';
-import jwtAuth, { userOf } from '../lib/jwt_auth.ts';
+import jwtAuth, { keepsSignIn, userOf } from '../lib/jwt_auth.ts';
 import * as log from '../lib/log.ts';
 import * as mailer from '../lib/mailer.ts';
 import * as password from '../lib/password.ts';
@@ -85,6 +85,8 @@ passwordRouter.post('/reset', limits.resetPassword, express.json(), async (req, 
   );
   const user = reset && (await User.findById(reset.userId));
   if (!user) return res.status(400).json(say('reset-link-bad'));
+  // The link went to the account's address, so opening it also proves the address is theirs.
+  user.emailUnverified = undefined;
   await setPassword(user, body.password as string);
   return res.status(200).json(say('password-reset'));
 });
@@ -109,7 +111,7 @@ passwordRouter.put(
     }
     await setPassword(user, body.password as string);
     // A new session keeps this browser signed in; every other one is signed out.
-    session.start(res, user);
+    session.start(res, user, 7, keepsSignIn(req));
     return res.status(200).json(say('password-changed', undefined, { email: user.email }));
   }
 );
@@ -121,5 +123,8 @@ async function setPassword(user: UserDocument, newPassword: string): Promise<voi
   user.tokenVersion = (user.tokenVersion || 0) + 1;
   await user.save();
   await cancelLinks(user._id);
-  accountMail.sendChanged(user.email, user.preferences?.language).catch(logMailError('password changed'));
+  // Not to an address nobody has confirmed: it may be a stranger's.
+  if (!user.emailUnverified) {
+    accountMail.sendChanged(user.email, user.preferences?.language).catch(logMailError('password changed'));
+  }
 }

@@ -18,6 +18,7 @@
 import crypto from 'node:crypto';
 import express from 'express';
 import * as email from '../lib/email.ts';
+import * as emailLinks from '../lib/email_links.ts';
 import { names } from '../lib/guest_names.ts';
 import jwtAuth, { userOf } from '../lib/jwt_auth.ts';
 import { isDuplicateKey } from '../lib/mongo_errors.ts';
@@ -92,7 +93,7 @@ guestRouter.post('/claim', limits.signUp, jwtAuth, express.json(), async (req, r
     const user = await User.findOneAndUpdate(
       { _id: trial._id, guest: true },
       {
-        $set: { email: address, password: hash },
+        $set: { email: address, password: hash, emailUnverified: true },
         $unset: { guest: 1, expiresAt: 1, trialCounts: 1 },
         $inc: { tokenVersion: 1 }
       },
@@ -100,8 +101,10 @@ guestRouter.post('/claim', limits.signUp, jwtAuth, express.json(), async (req, r
     );
     // Claimed or discarded by another request in the meantime.
     if (!user) return res.status(403).json(say('not-a-trial'));
-    session.start(res, user);
-    return res.status(200).json({ email: user.email });
+    session.start(res, user, 7, session.wantsKept(req));
+    res.status(200).json({ email: user.email });
+    emailLinks.sendVerification(user);
+    return undefined;
   } catch (err) {
     // The unique index catches a sign-up for the same email racing this one.
     if (isDuplicateKey(err)) return res.status(400).json(say('account-exists', undefined, { field: 'email' }));

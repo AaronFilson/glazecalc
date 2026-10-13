@@ -16,7 +16,7 @@ describe('changing the email or deleting the account needs the current password'
   it('refuses an email change without the right password, and keeps the sign-in', async () => {
     for (const body of [{ email: 'new@tester.com' }, { email: 'new@tester.com', password: 'wrong' }]) {
       const res = await api()
-        .put('/usersettings/' + user._id)
+        .post('/email/change')
         .set('Authorization', 'Bearer ' + token)
         .send(body);
       expect(res).to.have.status(400);
@@ -81,7 +81,7 @@ describe('guessing the current password', () => {
     }
     for (let i = 0; i < 4; i++) {
       const res = await api()
-        .put('/usersettings/' + user._id)
+        .post('/email/change')
         .set('Authorization', 'Bearer ' + token)
         .send({ email: 'taken-over-' + i + '@tester.com', password: 'guess-' + i });
       statuses.push(res.status);

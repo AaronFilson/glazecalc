@@ -1,6 +1,6 @@
 const { test, expect } = require('@playwright/test');
 const { API, expectFieldProblem, uniqueEmail } = require('./helpers');
-const { nextEmail, resetLink, sentTo } = require('./mail');
+const { confirmLink, nextEmail, resetLink, sentTo } = require('./mail');
 
 const header = (page) => page.locator('.account-email');
 
@@ -8,6 +8,10 @@ const createAccount = async (request, password = 'old-password') => {
   const email = uniqueEmail('pw');
   const res = await request.post(API + '/signup', { data: { email, password } });
   expect(res.ok()).toBe(true);
+  // The address is confirmed, as most accounts are, so the account's other mail is sent.
+  const link = confirmLink(await nextEmail(email));
+  const token = new URLSearchParams(new URL(link).hash.slice(1)).get('token');
+  expect((await request.post(API + '/email/confirm', { data: { token } })).ok()).toBe(true);
   return { email };
 };
 
@@ -28,7 +32,7 @@ test('resets a forgotten password from the emailed link', async ({ page, request
   await page.getByRole('button', { name: 'Send reset link' }).click();
   await expect(page.locator('.sent-text')).toContainText('If an account uses that email');
 
-  const message = await nextEmail(email);
+  const message = await nextEmail(email, 1);
   expect(message.subject).toBe('Reset your Glazecalc password');
   const link = resetLink(message);
   expect(link.startsWith('http://localhost:' + process.env.E2E_PORT + '/reset#token=')).toBe(true);
@@ -43,7 +47,11 @@ test('resets a forgotten password from the emailed link', async ({ page, request
   await expect(page.locator('.done-text')).toContainText('Your password has been changed.');
   await expect
     .poll(() => sentTo(email).map((m) => m.subject))
-    .toEqual(['Reset your Glazecalc password', 'Your Glazecalc password was changed']);
+    .toEqual([
+      'Confirm your email for Glazecalc',
+      'Reset your Glazecalc password',
+      'Your Glazecalc password was changed'
+    ]);
 
   // The link worked once. (Opened fresh, as clicking it in an email would.)
   await page.goto('about:blank');
@@ -78,7 +86,7 @@ test('a reset signs out the other devices', async ({ browser, request }) => {
 
   // The password is reset from somewhere else.
   await request.post(API + '/password/forgot', { data: { email } });
-  const token = new URLSearchParams(new URL(resetLink(await nextEmail(email))).hash.slice(1)).get('token');
+  const token = new URLSearchParams(new URL(resetLink(await nextEmail(email, 1))).hash.slice(1)).get('token');
   expect((await request.post(API + '/password/reset', { data: { token, password: 'brand-new-password' } })).ok()).toBe(
     true
   );
@@ -115,7 +123,7 @@ test('changes the password from the account page', async ({ browser, page, reque
   await page.reload();
   await expect(header(page)).toHaveText(email);
   expect((await request.get(API + '/verify')).status()).toBe(401);
-  expect((await nextEmail(email)).subject).toBe('Your Glazecalc password was changed');
+  expect((await nextEmail(email, 1)).subject).toBe('Your Glazecalc password was changed');
 
   const other = await browser.newPage();
   await signIn(other, email, 'changed-password');

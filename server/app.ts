@@ -9,6 +9,7 @@ import * as log from './lib/log.ts';
 import sameOrigin from './lib/same_origin.ts';
 import authRoutes from './routes/auth_routes.ts';
 import guestRoutes from './routes/guest_routes.ts';
+import emailRoutes from './routes/email_routes.ts';
 import passwordRoutes from './routes/password_routes.ts';
 import records from './routes/records.ts';
 import userRoutes from './routes/user_routes.ts';
@@ -46,6 +47,7 @@ api.get('/health', (req, res) => {
 for (const [name, router] of Object.entries(records)) api.use('/' + name, router);
 api.use('/guest', guestRoutes);
 api.use('/password', passwordRoutes);
+api.use('/email', emailRoutes);
 // /signup, /signin, /signout, /verify, /usersettings/:id and /deleteuser/:id
 api.use('/', authRoutes);
 api.use('/', userRoutes);

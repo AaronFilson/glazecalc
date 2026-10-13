@@ -7,19 +7,16 @@
 //   PUT    /api/preferences       any of them (models/user.ts PREFERENCES lists what each may be)
 //   GET    /api/shelf             the materials the account (or trial) has on hand: { shelf: [key] }
 //   PUT    /api/shelf             { shelf: [key] } in place of the list
-//   PUT    /api/usersettings/:id  { displayname, email, settings, password }
+//   PUT    /api/usersettings/:id  { displayname, settings }; the email changes by a link (routes/email_routes.ts)
 //   DELETE /api/deleteuser/:id    { password } removes the account and everything in it
 import express, { type NextFunction, type Request, type Response } from 'express';
 import mongoose from 'mongoose';
 import { deleteAccount } from '../lib/account_data.ts';
-import * as email from '../lib/email.ts';
 import { notGuest } from '../lib/guest_limits.ts';
 import jwtAuth, { tokenOf, userOf } from '../lib/jwt_auth.ts';
-import { isDuplicateKey } from '../lib/mongo_errors.ts';
 import * as password from '../lib/password.ts';
 import * as limits from '../lib/rate_limit.ts';
 import * as session from '../lib/session.ts';
-import { cancelLinks } from '../models/password_reset.ts';
 import User, { PREFERENCES, type Preferences } from '../models/user.ts';
 import { say } from '../lib/messages.ts';
 
@@ -39,7 +36,11 @@ userRouter.get('/verify', tokenFilter, jwtAuth, (req, res) => {
   const identity = { ...say('verified'), id: user.id as string, name: user.displayname };
   res
     .status(200)
-    .json(user.guest ? { ...identity, guest: true, expiresAt: user.expiresAt } : { ...identity, email: user.email });
+    .json(
+      user.guest
+        ? { ...identity, guest: true, expiresAt: user.expiresAt }
+        : { ...identity, email: user.email, ...(user.emailUnverified && { unverified: true }) }
+    );
 });
 
 // Choices about how the app shows things. Unlike the account's details below,
@@ -110,12 +111,12 @@ const selfOrAdmin = (req: Request, res: Response, next: NextFunction) => {
 };
 
 // Fields a user may set on their own account. Role and password are not
-// changeable here.
-const SETTABLE_FIELDS = ['displayname', 'email', 'settings'];
+// changeable here, and neither is the email: an address changes only when the
+// link sent to the new one is opened (routes/email_routes.ts), for admins too.
+const SETTABLE_FIELDS = ['displayname', 'settings'];
 
-// Changing your own email or deleting your own account needs your current
-// password (body.password), so a stolen sign-in token alone cannot take the
-// account over or remove it. Admins acting on another account are exempt.
+// Deleting your own account needs your current password (body.password), so a
+// stolen sign-in token alone cannot remove it. Admins acting on another account are exempt.
 const ownPasswordConfirmed = async (req: Request): Promise<boolean> => {
   const signedIn = userOf(req);
   if (req.params.id !== String(signedIn._id)) return true;
@@ -141,27 +142,9 @@ userRouter.put(
     );
     if (!Object.keys(changes).length) return res.status(400).json(say('nothing-to-update'));
 
-    if (changes.email !== undefined) {
-      changes.email = email.normalize(changes.email);
-      if (!email.isValid(changes.email))
-        return res.status(400).json(say('email-required', undefined, { field: 'email' }));
-      if (!(await ownPasswordConfirmed(req)))
-        return res.status(400).json(say('current-password-needed', undefined, { field: 'password' }));
-      const other = await User.exists({ email: changes.email, _id: { $ne: req.params.id } }).collation(email.collation);
-      if (other) return res.status(400).json(say('email-in-use', undefined, { field: 'email' }));
-    }
-
-    try {
-      const result = await User.updateOne({ _id: req.params.id }, { $set: changes });
-      if (!result.matchedCount) return res.status(404).json(say('no-user'));
-      // A reset link sent to the old address must not work for the account now.
-      if (changes.email !== undefined) await cancelLinks(req.params.id as string);
-      return res.status(200).json(say('user-updated'));
-    } catch (err) {
-      // The unique index catches two accounts racing for the same email.
-      if (isDuplicateKey(err)) return res.status(400).json(say('email-in-use', undefined, { field: 'email' }));
-      throw err;
-    }
+    const result = await User.updateOne({ _id: req.params.id }, { $set: changes });
+    if (!result.matchedCount) return res.status(404).json(say('no-user'));
+    return res.status(200).json(say('user-updated'));
   }
 );
 

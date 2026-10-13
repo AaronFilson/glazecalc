@@ -23,4 +23,7 @@ const nextEmail = async (address, before = 0) => {
 /** The reset link in a reset email. */
 const resetLink = (message) => /(https?:\/\/\S+\/reset#token=[A-Za-z0-9_-]+)/.exec(message.text)[1];
 
-module.exports = { nextEmail, resetLink, sentTo };
+/** The link in a confirmation email (a new account's, or an email change's). */
+const confirmLink = (message) => /(https?:\/\/\S+\/confirm-email#token=[A-Za-z0-9_-]+)/.exec(message.text)[1];
+
+module.exports = { confirmLink, nextEmail, resetLink, sentTo };
