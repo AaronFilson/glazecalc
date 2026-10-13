@@ -119,6 +119,9 @@ describe('PreferencesService', () => {
   it('leaves no choices on this browser once the account is deleted', async () => {
     localStorage.setItem('session', 'account');
     localStorage.setItem('visitor.theme', 'dark');
+    // Copies chosen on this browser earlier, which the account's values update.
+    localStorage.setItem('weightUnit', 'g');
+    localStorage.setItem('preferredRegion', 'FR');
     const preferences = TestBed.inject(PreferencesService);
     const loading = preferences.load();
     httpMock()
