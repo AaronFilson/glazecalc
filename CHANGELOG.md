@@ -46,6 +46,10 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 - **In Estonian, Latvian and Lithuanian**, the third wave, made the same way. The reviews' lessons went into the prompts as
   the wave ran: "may not melt fully" is not "may not melt at all", a rule a translation of the recipe
   checks had broken.
+- **In Irish**, the fourth wave, made the same way. AI translates it less well than most languages,
+  so its notice says so plainly, points to the English, and a line of it stays at the top of every
+  page once closed. The numbers check now takes each language's decimal mark from CLDR, as Irish
+  writes 1.5 as English does.
 - **The firing guide's cone end point** is a 90° bend, the 5 o'clock position, as Orton's chart says (it
   said 6 o'clock, a cone touching the shelf), and its worked heating rate divides the temperature climbed. In every
   language.
