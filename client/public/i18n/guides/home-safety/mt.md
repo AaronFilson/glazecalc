@@ -215,7 +215,7 @@ Ix-**xegħir**{{en: crazing}} huwa xibka ta’ xquq fini fil-wiċċ tal-glejż, 
 - Taħżinx ikel jew xorb aċiduż (frott taċ-ċitru, tadam, ħall, meraq tal-frott, inbid) f’oġġetti igglejżjati bi kwalunkwe glejż li ma bgħattx għall-ittestjar.
 - Tużax biċċiet bix-xegħir għall-ikel.
 - Il-madum tal-prova{{en: test tiles}} u l-esperimenti jibqgħu fl-istudjo, qatt fil-kċina, fil-kaxxa tal-ġugarelli jew fl-iskutella tal-annimal.
-- Agħmel attenzjoni wkoll b’ċeramika oħra. L-FDA tirrakkomanda l-kawtela ma’ biċċiet magħmula bl-idejn jew li jidhru mhux irfinuti, antikitajiet, biċċiet imkissra jew milbusa, affarijiet mis-swieq tal-oġġetti użati u dekorazzjoni oranġjo, ħamra jew safra qawwija.
+- Agħmel attenzjoni wkoll b’ċeramika oħra. L-FDA tirrakkomanda l-kawtela ma’ biċċiet magħmula bl-idejn jew li jidhru mhux irfinuti, antikitajiet, biċċiet bil-ħsara jew milbusa, affarijiet mis-swieq tal-oġġetti użati u dekorazzjoni oranġjo, ħamra jew safra qawwija.
 - Jekk tifel uża ċeramika li issa għandek dubji dwarha, l-FDA tgħid li tkellem lil tabib dwar test taċ-ċomb fid-demm.
 
 Għal aktar dwar kif jdubu l-glejżijiet, għaliex xi wħud jirrilaxxaw il-metalli u x’ifissru l-limiti, ara l-gwida [Il-glejż mill-bidu nett](/guides/glazing-basics).
