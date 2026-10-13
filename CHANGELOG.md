@@ -320,6 +320,9 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Fixed
 
+- **Sign-in email addresses are no longer written to the web server's log.** Signing in sends the
+  address as the HTTP Basic user name, which nginx's default log format recorded beside the IP
+  address; its own format now leaves the user name out.
 - **The example beside "Specific gravity"** in Settings (SG 1.45) is a message, so each language
   writes it its own way (spez. Gewicht 1,45), not in English.
 - **From a full review of the project** (eight reviewers by area, each finding checked and given
