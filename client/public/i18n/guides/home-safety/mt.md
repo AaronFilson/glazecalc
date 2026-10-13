@@ -67,7 +67,7 @@ L-ebda korp uffiċjali ma jistabbilixxi regoli għall-ħażna tal-materjali tal-
 
 Dawn huma regoli ġenerali għall-prevenzjoni tal-avvelenament, applikati għall-glejż. L-ebda standard taċ-ċeramika ma jistabbilixxihom, iżda aħna nissuġġerixxu kollha kemm huma:
 
-- Żomm il-materjali niexfa msakkra: f’armarju, jew f’kamra, garaxx jew barrakka li jissakkru. Xkaffa għolja tgħin, iżda t-tfal jitilgħu. Jekk għall-bidu tista’ tissakkar ftit affarijiet biss, ibda bil-materjali solubbli u bil-kuluranti{{en: colorants}}.
+- Żomm il-materjali nexfin imsakkrin: f’armarju, jew f’kamra, garaxx jew barrakka li jissakkru. Xkaffa għolja tgħin, iżda t-tfal jitilgħu. Jekk għall-bidu tista’ tissakkar ftit affarijiet biss, ibda bil-materjali solubbli u bil-kuluranti{{en: colorants}}.
 - Żomm il-materjali fix-xkejjer jew fil-kontenituri oriġinali tagħhom. Jekk tittrasferixxi wieħed f’kontenitur ieħor, waħħal fuqu tikketta bl-isem eżatt kif miktub fuq ix-xkora.
 - Qatt ma tuża reċipjenti tal-ikel jew tax-xorb (kontenituri tal-jogurt, vażetti, fliexken) għall-materjali tal-glejż, anke jekk ikollhom tikketta. Tifel jaf x’ikun hemm f’kontenitur tal-jogurt.
 - Żomm l-għodda tal-istudjo (mgħaref ta’ kull tip, frosti, għarabel, mwiezen) fl-istudjo. Qatt ma tuża l-għodda tal-kċina għall-glejż, jew l-għodda tal-glejż għall-ikel.
@@ -102,7 +102,7 @@ Id-dipartiment tas-saħħa ta’ Pennsylvania jispjega l-problema b’mod ċar: 
 
 ### It-tqala u t-treddigħ
 
-Nissuġġerixxu aktar attenzjoni jekk fid-dar hemm xi ħadd tqila jew li qed tredda’. Żommha barra mill-istudjo waqt li taħdem bil-materjali niexfa, u jekk użajt iċ-ċomb, staqsi lit-tabib jew lill-qabla tagħha jekk ikunx għaqli li dawk li jgħixu fid-dar jagħmlu test taċ-ċomb fid-demm.
+Nissuġġerixxu aktar attenzjoni jekk fid-dar hemm xi ħadd tqila jew li qed tredda’. Żommha barra mill-istudjo waqt li taħdem bil-materjali nexfin, u jekk użajt iċ-ċomb, staqsi lit-tabib jew lill-qabla tagħha jekk ikunx għaqli li dawk li jgħixu fid-dar jagħmlu test taċ-ċomb fid-demm.
 
 Dwar kif tikkontrolla t-trab waqt ix-xogħol (respiraturi, metodi bl-ilma u ventilazzjoni), ara l-gwida [Taħlit sikur u ventilazzjoni](/guides/safe-mixing).
 
@@ -143,7 +143,7 @@ Is-servizz Pet Poison Helpline jgħid li “Iċ-ċomb huwa tossiku għall-ispeċ
 - Żomm l-annimali domestiċi barra mill-istudjo, bil-bieb magħluq.
 - Il-klieb jomogħdu x-xkejjer u jixorbu mill-bramel. Żomm ix-xkejjer f’armarju magħluq u għatu fuq kull barmil.
 - Il-qtates jimxu fit-trab u jilagħquh minn riġlejhom u minn xagħarhom. Naddaf l-art bl-ilma u żomm il-qtates barra mill-istudjo, biex ma jkollhom xejn x’jilagħqu minn fuqhom.
-- L-għasafar u l-mammiferi żgħar (fniek, guinea pigs, hamsters) jieħdu n-nifs mill-istess arja tad-dar. Żommhom f’kamra ’l bogħod, bil-bieb magħluq, waqt li taħdem bil-materjali niexfa u waqt il-ħamja.
+- L-għasafar u l-mammiferi żgħar (fniek, guinea pigs, hamsters) jieħdu n-nifs mill-istess arja tad-dar. Żommhom f’kamra ’l bogħod, bil-bieb magħluq, waqt li taħdem bil-materjali nexfin u waqt il-ħamja.
 - L-akkwarji jiġbru t-trab li jinżel fihom. Żommhom barra mill-istudjo, u mgħottijin.
 - Żomm l-iskutelli tal-ikel u tal-ilma tal-annimali ’l bogħod mill-istudjo u mill-forn, u uża skutelli kummerċjali jew ittestjati, mhux esperimenti tal-istudjo.
 
@@ -163,7 +163,7 @@ Is-sorsi ma jaqblux dwar id-distanza ta’ sigurtà. Rio Grande jgħid mill-inqa
 
 ### L-elettriku
 
-Rio Grande jirrakkomanda **ċirkwit apposta** (wieħed li ma jħaddem xejn aktar) b’sokit b’konnessjoni mal-art kif suppost. Nissuġġerixxu li ma tużax kejbil tal-estensjoni. Bejn ħamja u oħra, itfi l-breaker tal-forn jew is-swiċċ tal-iżolament, jew aqla’ l-plagg, biex tifel ma jkunx jista’ jixegħlu.
+Rio Grande jirrakkomanda **ċirkwit apposta** (wieħed li ma jħaddem xejn aktar) b’sokit b’konnessjoni mal-art kif suppost. Nissuġġerixxu li ma tużax kejbil tal-estensjoni. Bejn ħamja u oħra, itfi l-interruttur taċ-ċirkwit tal-forn jew is-swiċċ tal-iżolament, jew aqla’ l-plagg, biex tifel ma jkunx jista’ jixegħlu.
 
 ### Kun hemm meta tispiċċa l-ħamja
 

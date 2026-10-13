@@ -80,7 +80,7 @@ It-tabella tagħti {{2232 °F; 1222 °C}} għal kon 6 li joqgħod waħdu, imma b
 
 ## It-tabella tal-koni {#cone-chart}
 
-Dawn iċ-ċifri huma mit-tabella tal-koni ta’ Orton (©2001) għal koni{{en: cones}} li joqogħdu weħidhom. Agħżel il-kolonna li taqbel ma’ kemm tela’ malajr il-forn tiegħek matul l-aħħar {{180 °F; 100 °C}}. Ir-regola prattika ta’ Orton hija l-kolonna ta’ {{270 °F/h; 150 °C/h}} għal ħamja mgħaġġla, il-kolonna ta’ {{108 °F/h; 60 °C/h}} għal waħda medja u l-kolonna ta’ {{27 °F/h; 15 °C/h}} għal waħda bil-mod. Biex tikkalkula r-rata, aqsam il-gradi li tela’ l-forn bis-sigħat li ħa: forn li jitla’ {{900 °F; 500 °C}} f’3 sigħat qed jisħon b’rata ta’ madwar {{300 °F/h; 167 °C/h}}.
+Dawn iċ-ċifri huma mit-tabella tal-koni{{en: cone}} ta’ Orton (©2001) għal koni li joqogħdu weħidhom. Agħżel il-kolonna li taqbel ma’ kemm tela’ malajr il-forn tiegħek matul l-aħħar {{180 °F; 100 °C}}. Ir-regola prattika ta’ Orton hija l-kolonna ta’ {{270 °F/h; 150 °C/h}} għal ħamja mgħaġġla, il-kolonna ta’ {{108 °F/h; 60 °C/h}} għal waħda medja u l-kolonna ta’ {{27 °F/h; 15 °C/h}} għal waħda bil-mod. Biex tikkalkula r-rata, aqsam il-gradi li tela’ l-forn bis-sigħat li ħa: forn li jitla’ {{900 °F; 500 °C}} f’3 sigħat qed jisħon b’rata ta’ madwar {{300 °F/h; 167 °C/h}}.
 
 Table: Koni Orton li joqogħdu weħidhom: it-temperatura li fiha jitgħawweġ kull wieħed, skont ir-rata tat-tisħin matul l-aħħar {{180 °F; 100 °C}}
 Label: It-tabella tal-koni ta’ Orton
@@ -274,7 +274,7 @@ Label: L-aġġustament tal-ħamja li jmiss
 | Moħmi żżejjed                                             | Kon numru wieħed aktar kiesaħ, jew il-parti l-irqaq taħt il-virga; jekk il-kon tas-sitter niżel ħafna aktar minn 90°, naqqas il-pożizzjonijiet tas-swiċċijiet | Uża l-aġġustament tal-kon biex taħmi ftit aktar kiesaħ, jew qassar jew neħħi ż-żamma                                                                              |
 | Il-parti ta’ fuq u dik ta’ isfel ivarjaw b’aktar minn kon | Ibdel kif tħaddem is-swiċċijiet (ara t-taqsima Fran mingħajr kontrollur, fid-dettall)                                                                         | Imla l-parti l-aktar kiesħa b’inqas oġġetti; segwi l-manwal tiegħek                                                                                               |
 
-L-**aġġustament tal-kon** huwa issettjar tal-kontrollur li jgħolli jew ibaxxi t-temperatura li juża għal kon, biex taqbel ma’ dak li juru l-koni xhieda{{en: witness cones}} tiegħek. Żomm kull sett moħmi u niżżel kif tgħawweġ kull wieħed (ara t-taqsima Wara l-ħami, aktar ’l isfel).
+L-**aġġustament tal-kon** huwa ssettjar tal-kontrollur li jgħolli jew ibaxxi t-temperatura li juża għal kon, biex taqbel ma’ dak li juru l-koni xhieda{{en: witness cones}} tiegħek. Żomm kull sett moħmi u niżżel kif tgħawweġ kull wieħed (ara t-taqsima Wara l-ħami, aktar ’l isfel).
 
 :::
 
@@ -346,7 +346,7 @@ Label: Digitalfire BQ1000
 | 2    | {{306 °F/h; 170 °C/h}} |  {{1733 °F; 945 °C}} | Xejn                                      |
 | 3    |  {{108 °F/h; 60 °C/h}} | {{1832 °F; 1000 °C}} | 15-il minuta                              |
 
-BQ1000 jieħu madwar 7 sigħat u 44 minuta. L-awtur tiegħu jsib li sa {{500 °F/h; 278 °C/h}} huwa tajjeb għal oġġetti rqaq u niexfa, u jnaqqas ir-rata fl-aħħar pass biex it-temperatura ssir uniformi f’dak kollu li hemm fil-forn.
+BQ1000 jieħu madwar 7 sigħat u 44 minuta. L-awtur tiegħu jsib li sa {{500 °F/h; 278 °C/h}} huwa tajjeb għal oġġetti rqaq u nexfin, u jnaqqas ir-rata fl-aħħar pass biex it-temperatura ssir uniformi f’dak kollu li hemm fil-forn.
 
 ### Il-koni tal-kontrollur u t-tabella ta’ Orton
 
@@ -453,14 +453,14 @@ Bracker’s Good Earth Clays, fornitur tat-tafal fl-Istati Uniti, jippubblika da
 Table: Il-programmi ta’ Bracker’s għal fran mingħajr kontrollur
 Label: Il-programmi ta’ Bracker’s bl-idejn
 
-| Stadju           | Bisque                                                                                                           | Glejż għal ħami baxx                                                                 |
-| ---------------- | ---------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
-| Sitter           | Kon żgħir 03                                                                                                     | Il-kon żgħir tal-glejż{{en: glaze}}                                                  |
-| Tnixxif fil-forn | Il-lejl kollu: is-swiċċ ta’ isfel biss fuq Low, it-tappijiet barra, l-għatu miftuħ ftit, it-timer fuq il-massimu | Xejn                                                                                 |
-| Timer            | Filgħodu, erġa’ ssettjah għal 30–60 minuta aktar mill-ħin mistenni tal-ħamja                                     | 30–60 minuta aktar mill-ħin mistenni tal-ħamja                                       |
-| Low              | Is-swiċċijiet kollha fuq Low, 3–4 sigħat; it-tappijiet barra, l-għatu miftuħ ftit                                | Is-swiċċijiet kollha fuq Low, 3–4 sigħat; it-tappijiet barra, l-għatu miftuħ ftit    |
-| Medium           | It-tappijiet f’posthom, l-għatu magħluq; is-swiċċijiet kollha fuq Medium, 3–4 sigħat                             | It-tappijiet f’posthom, l-għatu magħluq; is-swiċċijiet kollha fuq Medium, 3–4 sigħat |
-| High             | Madwar 2–3 sigħat, sakemm is-sitter jitfi l-forn                                                                 | Madwar 3 sigħat; 15–30 minuta aktar għal kull numru tal-kon aktar sħun               |
+| Stadju                          | Bisque                                                                                                           | Glejż għal ħami baxx                                                                 |
+| ------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
+| Sitter                          | Kon żgħir 03                                                                                                     | Il-kon żgħir tal-glejż{{en: glaze}}                                                  |
+| Tnixxif fil-forn{{en: preheat}} | Il-lejl kollu: is-swiċċ ta’ isfel biss fuq Low, it-tappijiet barra, l-għatu miftuħ ftit, it-timer fuq il-massimu | Xejn                                                                                 |
+| Timer                           | Filgħodu, erġa’ ssettjah għal 30–60 minuta aktar mill-ħin mistenni tal-ħamja                                     | 30–60 minuta aktar mill-ħin mistenni tal-ħamja                                       |
+| Low                             | Is-swiċċijiet kollha fuq Low, 3–4 sigħat; it-tappijiet barra, l-għatu miftuħ ftit                                | Is-swiċċijiet kollha fuq Low, 3–4 sigħat; it-tappijiet barra, l-għatu miftuħ ftit    |
+| Medium                          | It-tappijiet f’posthom, l-għatu magħluq; is-swiċċijiet kollha fuq Medium, 3–4 sigħat                             | It-tappijiet f’posthom, l-għatu magħluq; is-swiċċijiet kollha fuq Medium, 3–4 sigħat |
+| High                            | Madwar 2–3 sigħat, sakemm is-sitter jitfi l-forn                                                                 | Madwar 3 sigħat; 15–30 minuta aktar għal kull numru tal-kon aktar sħun               |
 
 Bracker’s ma jgħidx ma’ liema kon tax-xkaffa jaqbel il-kon tas-sitter tiegħu għall-bisque, għalhekk iċċekkja b’sett ta’ koni{{en: cone pack}} tiegħek. B’estrattur minn taħt il-forn, il-passi huma l-istess, imma l-estrattur jaħdem matul il-ħamja u t-tkessiħ, u l-għatu jibqa’ magħluq. Bracker’s jissuġġerixxi wkoll li tgħolli s-swiċċijiet b’mod gradwali: wieħed wieħed, b’madwar 30 minuta bejn wieħed u l-ieħor.
 
@@ -492,7 +492,7 @@ Label: Punt tat-tluq għal forn mingħajr kontrollur
 
 | Stadju                                  | Bisque                                                                                                                                                                                              | Glejż                                                    |
 | --------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- |
-| Tnixxif fil-forn                        | Is-swiċċ ta’ isfel fuq Low il-lejl kollu jekk l-oġġetti jistgħu jkunu umdi, jew is-swiċċijiet kollha fuq Low għal 2–3 sigħat jekk ikunu niexfa għal kollox; l-għatu miftuħ ftit, it-tappijiet barra | Xejn                                                     |
+| Tnixxif fil-forn                        | Is-swiċċ ta’ isfel fuq Low il-lejl kollu jekk l-oġġetti jistgħu jkunu umdi, jew is-swiċċijiet kollha fuq Low għal 2–3 sigħat jekk ikunu nexfin għal kollox; l-għatu miftuħ ftit, it-tappijiet barra | Xejn                                                     |
 | Low                                     | 2–3 sigħat                                                                                                                                                                                          | Madwar 2 sigħat; l-għatu miftuħ ftit, it-tappijiet barra |
 | Medium (madwar 5–6 fuq swiċċ tal-qawwa) | 2–3 sigħat; agħlaq l-għatu ladarba l-mera tibqa’ ċara                                                                                                                                               | 2–3 sigħat, l-għatu magħluq                              |
 | High                                    | Sakemm is-sitter jiskatta; meta l-forn ikun aħmar skur, poġġi t-tappijiet fit-toqob tal-ħarsa kollha ħlief dik ta’ fuq                                                                              | Sakemm is-sitter jiskatta                                |
@@ -514,7 +514,7 @@ Għall-ventilazzjoni tal-kamra, u għall-allarmi tal-monossidu tal-karbonju, ara
 
 ### Waqt li l-forn qed jaħmi
 
-- Ħares minn toqba tal-ħarsa biss b’nuċċali tal-iwweldjar kontra l-IR, bi grad ta’ dlam 3; in-nuċċali tax-xemx mhumiex biżżejjed. Skutt jagħti parir li ddawwar it-tappijiet f’posthom biex ma jaqgħux.
+- Biex tħares minn toqba tal-ħarsa, uża biss nuċċali tal-iwweldjar kontra l-IR, bi grad ta’ dlam 3; in-nuċċali tax-xemx mhumiex biżżejjed. Skutt jagħti parir li ddawwar it-tappijiet f’posthom biex ma jaqgħux.
 - Tħallix il-forn mingħajr sorveljanza wara l-ħin mistenni tal-ħamja; sitter mhuwiex apparat li jitfi l-forn b’mod żgur f’każ ta’ ħsara.
 - Qatt ma taħmi fuq jew qrib xi ħaġa li taqbad, bħal art tal-injam jew tapit.
 - Żomm id-distanzi ta’ sigurtà li hemm fil-manwal tiegħek. Iċ-ċifri ppubblikati jvarjaw minn 12-il pulzier (30 cm) sa 3 piedi (91 cm); fejn il-manwal ma jgħid xejn, 18-il pulzier (46 cm) mill-ħitan u 3 piedi (91 cm) minn kull ħaġa li taqbad huma l-għażla l-aktar sikura.
@@ -569,7 +569,7 @@ L-elementi tat-tisħin jintlibsu: jinbena saff ta’ ossidu, jgħaddi inqas kurr
 
 ## Ċrieki u vireg {#rings}
 
-L-industrija Brittanika użat ukoll żewġ indikaturi oħra tax-xogħol tas-sħana{{en: heatwork}}. Iċ-**ċrieki ta’ Bullers** huma diski ċatti li jiċkienu skont ix-xogħol tas-sħana u jitkejlu bi strument tal-kejl wara l-ħami. Il-**vireg ta’ Holdcroft**, mill-1898, jinżlu fin-nofs fuq żewġ appoġġi, l-idea wara l-virga tas-sitter. Ma sibna l-ebda tabella li tikkonverti l-waħda jew l-oħra f’numri tal-koni Orton, għalhekk din il-gwida tuża l-koni Orton; nippjanaw li nittrattaw iċ-ċrieki u l-vireg f’verżjoni ta’ wara.
+L-industrija Brittanika użat ukoll żewġ indikaturi oħra tax-xogħol tas-sħana{{en: heatwork}}. Iċ-**ċrieki ta’ Bullers** huma diski ċatti li jiċkienu skont ix-xogħol tas-sħana u jitkejlu bi strument tal-kejl wara l-ħami. Il-**vireg ta’ Holdcroft**, mill-1898, jinżlu fin-nofs fuq żewġ appoġġi, l-idea wara l-virga tas-sitter. Ma sibna l-ebda tabella li tikkonverti l-waħda jew l-oħra f’numri tal-koni{{en: cone}} Orton, għalhekk din il-gwida tuża l-koni Orton; nippjanaw li nittrattaw iċ-ċrieki u l-vireg f’verżjoni ta’ wara.
 
 ## Sorsi {#sources}
 
