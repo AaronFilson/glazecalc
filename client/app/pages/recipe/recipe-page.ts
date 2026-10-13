@@ -34,7 +34,7 @@ import { NumberInput } from '../../shared/number-input';
 import { Check, FieldCheck, FieldChecks, required } from '../../shared/field-checks';
 import { localDate } from '../../shared/dates';
 import { Notices, NoticesList } from '../../shared/notices';
-import { chosenRegion, findNamed, hasLead } from '../../shared/library-info';
+import { chosenRegion, findNamed, folded, hasLead } from '../../shared/library-info';
 import { firstOf } from '../../shared/options';
 import { PageHeader } from '../../shared/page-header';
 import { Removal, RemoveButton } from '../../shared/remove-button';
@@ -1402,7 +1402,7 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
 
   /** A material or additive by its name or one of its aliases, for one that borrows another's chemistry. */
   private findByName(name: string): MaterialInput | undefined {
-    const wanted = name.trim().toLowerCase();
+    const wanted = folded(name.trim());
     const records = [
       ...this.standardAdditives(),
       ...this.myAdditives(),
@@ -1410,8 +1410,7 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
       ...this.myMaterials()
     ];
     return records.find(
-      (record) =>
-        record.name.toLowerCase() === wanted || (record.aliases ?? []).some((alias) => alias.toLowerCase() === wanted)
+      (record) => folded(record.name) === wanted || (record.aliases ?? []).some((alias) => folded(alias) === wanted)
     );
   }
 

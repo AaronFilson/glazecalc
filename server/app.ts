@@ -61,13 +61,17 @@ const CLIENT = path.join(import.meta.dirname, '..', 'dist', 'glazecalc', 'browse
 /** The request's query string, with its ?, or ''. */
 const queryOf = (req: Request): string => (req.url.includes('?') ? req.url.slice(req.url.indexOf('?')) : '');
 
-// English pages are at the plain paths (/guides), so /en/guides goes there.
-// Always to a path on this site: /en//other.example and /en/\other.example
-// go to /other.example, never to the other site (//other.example).
+// English pages are at the plain paths (/guides), so /en/guides (and
+// /EN/guides) goes there. Always to a path on this site: /en//other.example
+// and /en/\other.example go to /other.example, never to the other site
+// (//other.example). Another language's code written in other letters goes
+// to the code as written: /zh-hans/recipe to /zh-Hans/recipe.
 app.use((req, res, next) => {
-  const english = /^\/en(\/.*)?$/.exec(req.path);
-  if (!english || (req.method !== 'GET' && req.method !== 'HEAD')) return next();
-  return res.redirect(301, '/' + (english[1] ?? '').replace(/^[/\\]+/, '') + queryOf(req));
+  if (req.method !== 'GET' && req.method !== 'HEAD') return next();
+  const english = /^\/en(\/.*)?$/i.exec(req.path);
+  if (english) return res.redirect(301, '/' + (english[1] ?? '').replace(/^[/\\]+/, '') + queryOf(req));
+  const written = languages.canonicalLanguagePath(req.path);
+  return written ? res.redirect(301, written + queryOf(req)) : next();
 });
 
 app.get('/sitemap.xml', (req, res) => {
@@ -128,8 +132,10 @@ app.use(async (req, res, next) => {
   } catch {
     return next();
   }
-  const text = await pageText(languages.languageOfPath(req.path));
-  res.set('Cache-Control', 'no-cache');
+  const code = languages.languageOfPath(req.path);
+  const text = await pageText(code);
+  // For search engines that read no hreflang (Baidu) and for Bing.
+  res.set({ 'Cache-Control': 'no-cache', 'Content-Language': code });
   return res
     .status(isPage(req.path) ? 200 : 404)
     .type('html')

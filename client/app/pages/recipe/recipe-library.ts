@@ -1,10 +1,11 @@
-import { Component, computed, input, output, signal } from '@angular/core';
+import { Component, computed, inject, input, output, signal } from '@angular/core';
 import { TranslocoDirective } from '@jsverse/transloco';
 import { LibraryInfo } from '../../core/models';
+import { PAGE_LANGUAGE } from '../../i18n/language';
 import { RichText } from '../../i18n/rich-text';
 import {
   REGIONS,
-  byName,
+  byNameIn,
   hasLead,
   inRegion,
   matchesWords,
@@ -145,6 +146,7 @@ let nextId = 0;
   </ng-container>`
 })
 export class RecipeLibrary<T extends LibraryItem = LibraryItem> {
+  private readonly byName = byNameIn(inject(PAGE_LANGUAGE));
   /** In the page's language. */
   readonly heading = input.required<string>();
   /** What the lists hold, for their labels and the page to add your own on. */
@@ -182,7 +184,7 @@ export class RecipeLibrary<T extends LibraryItem = LibraryItem> {
   protected readonly shown = computed(() => {
     const standard = this.tab() === 'standard';
     const list = standard ? this.standardShown().filter((item) => inRegion(item, this.region())) : this.mineShown();
-    return list.filter((item) => matchesWords(item, this.filter())).sort(byName);
+    return list.filter((item) => matchesWords(item, this.filter())).sort(this.byName);
   });
   /** How many in this tab are left out for their lead. */
   protected readonly leadHidden = computed(() => {

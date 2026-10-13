@@ -51,6 +51,16 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   the top of every page once closed. The numbers check now takes each language's decimal mark from
   CLDR, as both write 1.5 as English does. The back-translations found a cell both had misread ("a
   barium frit or strontium"); checked in every live language, the Portuguese now reads plainly too.
+- **Groundwork for East and Southeast Asia**, before any of its languages:
+  - **Numbers and dates** can be written as in Japan, Korea, mainland China and Taiwan (Simplified and
+    Traditional Chinese each keep their script in any region), Hong Kong, Singapore, Malaysia,
+    Thailand, Vietnam, Indonesia, Turkey and the Philippines.
+  - **Amounts** typed in full-width digits (１２．５), or with the ideographic full stop (12。5), read
+    as 12.5, and a box waits for a Japanese, Chinese or Korean input method to finish before saving.
+  - **Lists of materials** sort as the page's language sorts, and their filters find full-width
+    letters (ＦＲＩＴ finds Frit).
+  - **A language's address in other capitals** (`/DE/guides`) goes to its own (`/de/guides`), and each
+    page sends its language in a `Content-Language` header and its `og:locale` for link previews.
 - **The firing guide's cone end point** is a 90° bend, the 5 o'clock position, as Orton's chart says (it
   said 6 o'clock, a cone touching the shelf), and its worked heating rate divides the temperature climbed. In every
   language.

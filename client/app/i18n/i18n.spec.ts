@@ -14,6 +14,7 @@ import {
   translate
 } from '@jsverse/transloco';
 import { of } from 'rxjs';
+import { languageOfTag } from '../../../lib/regions/languages';
 import { formatLocale } from '../shared/format';
 import { IcuTranspiler } from './icu-transpiler';
 import { baseHrefFor, languageOfPath, pathIn } from './language';
@@ -196,6 +197,20 @@ describe('translations', () => {
       expect(languageOfPath('/xx/recipe')).toBe('en');
       expect(baseHrefFor('de')).toBe('/de/');
       expect(baseHrefFor('en')).toBe('/');
+    });
+
+    it("finds the language offered that a browser's tag asks for, Chinese by its script", () => {
+      const offered = ['en', 'de', 'pt-PT', 'zh-Hans', 'zh-Hant', 'en-XA'];
+      for (const tag of ['zh-TW', 'zh-HK', 'zh-MO', 'zh-Hant', 'zh-Hant-CN']) {
+        expect(languageOfTag(tag, offered), tag).toBe('zh-Hant');
+      }
+      for (const tag of ['zh-CN', 'zh-SG', 'zh', 'zh-Hans-TW']) {
+        expect(languageOfTag(tag, offered), tag).toBe('zh-Hans');
+      }
+      expect(['de-AT', 'pt-BR', 'en-GB'].map((tag) => languageOfTag(tag, offered))).toEqual(['de', 'pt-PT', 'en']);
+      // Nothing that fits, and no pseudo-locale, ever.
+      expect(['ja-JP', 'not a tag', ''].map((tag) => languageOfTag(tag, offered))).toEqual([null, null, null]);
+      expect(languageOfTag('en-US', ['en-XA'])).toBeNull();
     });
 
     it('opens the same page in another language', () => {

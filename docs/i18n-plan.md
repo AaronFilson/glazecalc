@@ -440,8 +440,8 @@ The EU plan is built so that later regions add languages and data, not a new app
 
 - **Scale.** 60–80 languages in the end, which is why the library is a runtime one: one build, one file per language.
 - **Language tags with scripts.** Chinese needs `zh-Hans` and `zh-Hant`, and Punjabi `pa-Guru` (India) and `pa-Arab`
-  (Pakistan). URLs and settings use BCP 47 tags as they are. hreflang is mapped to the codes Google accepts (for
-  example `zh-CN` and `zh-TW`), which needs checking against Google's current rules first.
+  (Pakistan). URLs, settings and hreflang use BCP 47 tags as they are: Google documents script subtags such as
+  `zh-Hans` and `zh-Hant` (its page updated 2026-09-21), so no mapping to `zh-CN` or `zh-TW` is needed.
 - **Right-to-left.** Arabic (North Africa) and Urdu (Pakistan, India). `dir="rtl"` is set with `lang`, the layout
   mirrors through the logical properties added in Phase 1, and icons with a direction (arrows) flip.
 - **Digits and calendars:** the two settings added above.

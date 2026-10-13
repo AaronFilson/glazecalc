@@ -3,7 +3,9 @@
 // depends on the page's language and address, so it is written in here
 // (docs/adr/0013-translations.md): <html lang dir>, the canonical address,
 // the same page in each language offered (hreflang), the title, description
-// and preview text in the language, and noindex for a language not offered yet.
+// and preview text in the language with its og:locale, and noindex for a
+// language not offered yet. hreflang is the code in the address, script and
+// all (zh-Hans), which Google reads.
 import languages from '../../lib/regions/languages.js';
 import type { Language } from '../../lib/regions/languages.js';
 
@@ -79,6 +81,20 @@ const put = (html: string, around: RegExp, text: string): string =>
 /** The address of a page in a language: https://glazecalcapp.com/de/guides. */
 const addressIn = (site: string, code: string, page: string): string => site + languages.languagePrefix(code) + page;
 
+/**
+ * A language's og:locale, as Open Graph writes it, language_TERRITORY: the
+ * region it is most read in, which for Chinese also says the script (zh_CN
+ * for zh-Hans, zh_TW for zh-Hant); en_US for a pseudo-locale.
+ */
+export function ogLocale(code: string): string {
+  try {
+    const { language, region } = new Intl.Locale(languages.textLanguage(code)).maximize();
+    return region ? language + '_' + region : language;
+  } catch {
+    return 'en_US';
+  }
+}
+
 /** The page's title, description and preview image's text in its language, where its messages have them. */
 export interface PageText {
   title?: string;
@@ -119,6 +135,7 @@ export function pageHtml(
     .replace(/<html lang="[^"]*"[^>]*>/, `<html lang="${code}" dir="${language.dir}">`)
     .replace('</head>', () => head.map((line) => '    ' + line + '\n').join('') + '  </head>');
   out = put(out, /(<meta\s+property="og:url"\s+content=")[^"]*(")/, here);
+  out = put(out, /(<meta\s+property="og:locale"\s+content=")[^"]*(")/, ogLocale(code));
   if (text.title) {
     out = put(out, /(<title>)[^<]*(<\/title>)/, text.title);
     out = put(out, /(<meta\s+property="og:title"\s+content=")[^"]*(")/, text.title);

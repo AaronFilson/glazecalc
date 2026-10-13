@@ -46,6 +46,19 @@ describe('NumberInput', () => {
     expect(fixture.componentInstance.amount()).toBe('12,5,3');
   });
 
+  it('waits for an input method to finish composing before saving', async () => {
+    const { fixture, input } = await create();
+    input.focus();
+    input.value = '１２．';
+    input.dispatchEvent(new InputEvent('input', { isComposing: true }));
+    await fixture.whenStable();
+    expect(fixture.componentInstance.amount()).toBe('12.5');
+    input.value = '１２．７５';
+    input.dispatchEvent(new CompositionEvent('compositionend', { data: '１２．７５' }));
+    await fixture.whenStable();
+    expect(fixture.componentInstance.amount()).toBe('12.75');
+  });
+
   it('follows the decimal mark chosen, and a change made elsewhere', async () => {
     typedDecimalMark.set('point');
     formatLocale.set('de-DE');

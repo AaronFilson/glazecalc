@@ -1,7 +1,7 @@
 import { signal } from '@angular/core';
 import { translate } from '@jsverse/transloco';
 import { marker } from '@jsverse/transloco-keys-manager/marker';
-import { textKey } from '../../../lib/regions/languages';
+import { textKey, textLanguage } from '../../../lib/regions/languages';
 import { LibraryInfo } from '../core/models';
 import { codedMessage } from '../i18n/coded';
 
@@ -87,23 +87,29 @@ export function findNamed<T extends { name: string; aliases?: string[] }>(
   records: readonly T[],
   name: string
 ): T | undefined {
-  const wanted = name.trim().toLowerCase();
+  const wanted = folded(name.trim());
   return (
-    records.find((record) => record.name.toLowerCase() === wanted) ??
-    records.find((record) => (record.aliases ?? []).some((alias) => alias.toLowerCase() === wanted))
+    records.find((record) => folded(record.name) === wanted) ??
+    records.find((record) => (record.aliases ?? []).some((alias) => folded(alias) === wanted))
   );
 }
 
-/** Whether every word typed is in the record's name or one of its aliases. */
+/** Text as a search compares it: NFKC, so full-width letters (ＦＲＩＴ) are plain ones, and in lower case. */
+export const folded = (text: string): string => text.normalize('NFKC').toLowerCase();
+
+/** Whether every word typed is in the record's name or one of its aliases, whatever its case or width. */
 export function matchesWords(record: { name: string; aliases?: string[] }, filter: string): boolean {
-  const words = filter.trim().toLowerCase().split(/\s+/).filter(Boolean);
+  const words = folded(filter).trim().split(/\s+/).filter(Boolean);
   if (!words.length) return true;
-  const text = [record.name, ...(record.aliases ?? [])].join(' ').toLowerCase();
+  const text = folded([record.name, ...(record.aliases ?? [])].join(' '));
   return words.every((word) => text.includes(word));
 }
 
-export const byName = (a: { name: string }, b: { name: string }): number =>
-  a.name.localeCompare(b.name, undefined, { sensitivity: 'base' });
+/** Records in order of their names, as the page's language sorts words, whatever their case. */
+export const byNameIn = (language: string): ((a: { name: string }, b: { name: string }) => number) => {
+  const collator = new Intl.Collator(textLanguage(language), { sensitivity: 'base' });
+  return (a, b) => collator.compare(a.name, b.name);
+};
 
 const CATEGORY_KEYS: Record<string, string> = {
   feldspar: marker('categories.feldspar'),
