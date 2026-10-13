@@ -24,6 +24,7 @@
 // 7. Each translation is in step with the English it was made from
 //    (scripts/i18n-fingerprints.mjs); and what is still in English is
 //    counted, language by language.
+// 8. Korean is written in Hangul: hanja only where its glossary gives them.
 import { readFileSync, readdirSync, existsSync } from 'node:fs';
 import path from 'node:path';
 import { pathToFileURL } from 'node:url';
@@ -484,6 +485,40 @@ export function checkFingerprints(options) {
   };
 }
 
+/**
+ * Problems with Korean's script: Korean is written in Hangul, so hanja (the
+ * Chinese characters, 長石 for 장석, feldspar) in a Korean message or guide
+ * are a slip, unless its glossary (docs/translations/ko.md) gives them, as a
+ * term's hanja may be given after it. Each run of hanja must be in the
+ * glossary as it is written.
+ */
+export function checkHanja({ dir = I18N, glossary = path.join(ROOT, 'docs', 'translations', 'ko.md') } = {}) {
+  const HANJA = /\p{Script=Han}+/gu;
+  const glossaried = existsSync(glossary) ? readFileSync(glossary, 'utf8') : '';
+  const problems = [];
+  const check = (label, text) => {
+    const hanja = [...new Set(text.match(HANJA) ?? [])].filter((run) => !glossaried.includes(run));
+    if (hanja.length) {
+      problems.push(
+        `${label}: Korean is written in Hangul, not hanja such as ${hanja.join(' ')} (or give them in its glossary)`
+      );
+    }
+  };
+  for (const [scope, languages] of Object.entries(messageFiles(dir))) {
+    if (!languages.ko) continue;
+    const messages = flatten(readJson(languages.ko));
+    for (const [key, message] of Object.entries(messages)) check(`${scope || 'app'} ko ${key}`, message);
+  }
+  const guides = path.join(dir, 'guides');
+  if (existsSync(guides)) {
+    for (const guide of readdirSync(guides, { withFileTypes: true }).filter((entry) => entry.isDirectory())) {
+      const file = path.join(guides, guide.name, 'ko.md');
+      if (existsSync(file)) check(`guides/${guide.name}/ko.md`, readFileSync(file, 'utf8'));
+    }
+  }
+  return problems;
+}
+
 /** Whether a problem is with one language's translation, rather than the English or another language. */
 const aboutLanguage = (problem, language) =>
   problem.includes(` ${language} `) || problem.includes(`/${language}.md`) || problem.includes(`/${language}.json`);
@@ -494,12 +529,13 @@ if (import.meta.url === pathToFileURL(process.argv[1] ?? '').href) {
   const only = process.argv.includes('--language') ? process.argv[process.argv.indexOf('--language') + 1] : null;
   const fingerprints = checkFingerprints();
   const problems = only
-    ? [...checkTranslations(), ...checkGuides()].filter((problem) => aboutLanguage(problem, only))
+    ? [...checkTranslations(), ...checkGuides(), ...checkHanja()].filter((problem) => aboutLanguage(problem, only))
     : [
         ...compareKeys(await keysInUse()),
         ...checkTranslations(),
         ...(await checkSources()),
         ...checkGuides(),
+        ...checkHanja(),
         ...fingerprints.problems
       ];
   for (const [language, left] of Object.entries(fingerprints.inEnglish)) {

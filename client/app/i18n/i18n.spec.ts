@@ -253,5 +253,29 @@ describe('translations', () => {
       expect(pseudoMessage('Save {name}', 'ar-XB')).toBe('‮Save ‬{name}');
       expect(pseudoTranslation({ a: { b: 'Hi' } }, 'ar-XB')).toEqual({ a: { b: '‮Hi‬' } });
     });
+
+    it('writes every message in Japanese characters, shorter and with no spaces, by Japanese plural rules', () => {
+      const save = pseudoMessage('Save recipe', 'ja-XC');
+      expect(save).toMatch(/^「[\u3040-\u30ff\u4e00-\u9fff]{5}」$/);
+      expect(pseudoMessage('Save recipe', 'ja-XC')).toBe(save);
+      expect(pseudoMessage('Saved. Fire it, then look.', 'ja-XC')).toMatch(
+        /^「[^\sA-Za-z.,]+。[^\sA-Za-z.,]+、[^\sA-Za-z]+。」$/
+      );
+      const plural = pseudoMessage('{count, plural, one {# material} other {# materials}} in <b>{name}</b>', 'ja-XC');
+      expect(plural).toMatch(/^「\{count,plural,one\{#[^\s{}]+\} other\{#[^\s{}]+\}\}[^\s<]+<b>\{name\}<\/b>」$/);
+      const transpiler = new IcuTranspiler();
+      transpiler.onLangChanged('ja-XC');
+      // Japanese has one plural form, so even 1 takes "other".
+      const one = transpiler.transpile({
+        value: plural,
+        params: { count: 1, name: 'Custer' },
+        translation: {},
+        key: 'x'
+      });
+      const materials = /other\{#([^}]+)\}/.exec(plural)![1]!;
+      // The tag's markers are not letters.
+      expect(one).toMatch(/^「1[^\sA-Za-z]+b[^\sA-Za-z]*Custer[^\sA-Za-z]*b[^\sA-Za-z]*」$/);
+      expect(one).toContain('1' + materials);
+    });
   });
 });

@@ -202,6 +202,12 @@ describe('guides', () => {
     expect(page.querySelector('h1')?.textContent?.trim()).toBe('Šåƒé ɱîẋîñĝ åñð ṽéñţîļåţîöñ');
   });
 
+  it('shows a guide in the Japanese pseudo-locale in Japanese characters, with no spaces', async () => {
+    const { page } = await render(safeMixing, null, [{ provide: PAGE_LANGUAGE, useValue: 'ja-XC' }]);
+    // Safe mixing and ventilation: 2 + 3 + 2 + 6 characters.
+    expect(page.querySelector('h1')?.textContent?.trim()).toMatch(/^[\u3040-\u30ff\u4e00-\u9fff]{13}$/);
+  });
+
   it('keeps the links of a guide in the app, on the page and to other sites', async () => {
     const { page } = await render(firing);
     const hrefs = [...page.querySelectorAll('.guide a')].map((a) => a.getAttribute('href'));
