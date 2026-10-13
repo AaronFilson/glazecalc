@@ -87,7 +87,8 @@ describe('signedInGuard and visitorsOnlyGuard', () => {
       'signin',
       'signup',
       'forgot',
-      'reset'
+      'reset',
+      'confirm-email'
     ]);
   });
 });

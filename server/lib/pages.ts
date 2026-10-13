@@ -32,6 +32,7 @@ export const APP_PAGES = [
   '/signin',
   '/forgot',
   '/reset',
+  '/confirm-email',
   '/home',
   '/recipe',
   '/material',

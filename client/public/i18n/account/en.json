@@ -11,6 +11,7 @@
     "password": "Password",
     "passwordHint": "At least 8 characters.",
     "confirmation": "Confirm password",
+    "keepSignedIn": "Keep me signed in on this device",
     "passwordMissing": "Enter your password.",
     "createAccount": "Create account",
     "signIn": "Sign in",
@@ -62,7 +63,21 @@
     "deletePassword": "Your password, to confirm",
     "deletePasswordMissing": "Enter your password to confirm.",
     "delete": "Delete my account",
-    "deleteFailed": "Error: could not delete the account. Please try again."
+    "deleteFailed": "Error: could not delete the account. Please try again.",
+    "unverifiedHeading": "Confirm your email",
+    "unverifiedText": "We sent a link to {email} when you made this account. Open it to confirm that the address is yours. Until then we send mail to it only when you ask, such as a password reset.",
+    "resend": "Send the link again",
+    "resendFailed": "Error: could not send the link. Please try again.",
+    "emailHeading": "Change your email",
+    "emailText": "We send a link to the new address, and your email changes when you open it. We also tell your current address. Every device signed in to this account will be signed out.",
+    "newEmail": "New email",
+    "emailPassword": "Your password, to confirm",
+    "emailSend": "Send the link",
+    "emailFailed": "Error: could not send the link. Please try again.",
+    "signOutHeading": "Sign out everywhere",
+    "signOutText": "Signs you out on every device, this one included. Use it if you lost a device or think someone else has your sign-in.",
+    "signOutButton": "Sign out everywhere",
+    "signOutFailed": "Error: could not sign out. Please try again."
   },
   "export": {
     "heading": "Download my data",
@@ -243,5 +258,14 @@
       },
       "help": "The note at the top of each page saying it was translated by AI, with a way to suggest a correction."
     }
+  },
+  "confirmEmail": {
+    "heading": "Confirm your email",
+    "intro": "Press the button to confirm this address.",
+    "confirm": "Confirm",
+    "incomplete": "This page needs the link from a confirmation email, and this one is incomplete.",
+    "account": "Your account",
+    "signIn": "Sign in",
+    "failed": "Error: could not confirm the address. Please try again."
   }
 }

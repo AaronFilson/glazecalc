@@ -4,7 +4,7 @@ import { expect } from './support/app.ts';
 // What the server tells people: a code the app can translate, and English text.
 describe('messages', () => {
   it('should give every code English text, with its values filled in', () => {
-    const params = { minutes: 30, limit: 25, label: 'recipe', palettes: 'tenmoku, ash', most: 500 };
+    const params = { minutes: 30, hours: 24, limit: 25, label: 'recipe', palettes: 'tenmoku, ash', most: 500 };
     for (const code of Object.keys(MESSAGES) as MessageCode[]) {
       const text = textOf(code, params);
       expect(text, code).to.be.a('string').and.not.equal('');

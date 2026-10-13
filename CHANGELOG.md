@@ -238,6 +238,22 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 - `npm run test:e2e:linux` runs the browser tests on Linux in Docker, in the Ubuntu that CI
   uses (through WSL on Windows), on the working tree as it is; `npm run test:all:linux` runs
   every suite that way. Linux's wider fonts break layouts that pass on Windows.
+- **Your data, in your hands** ([plan](docs/eu-data-plan.md)). On the account page:
+  - **Download my data:** everything in your account as one JSON file, or your recipes and your own
+    materials as spreadsheet-ready CSV files. Trials can download too.
+  - **Change your email:** a link goes to the new address, and the change happens only when it is
+    opened; the old address is told. Every device is signed out afterwards.
+  - **Sign out everywhere,** in one step, on every device.
+  - **Confirm your email:** a new account gets a link to confirm its address, so no one can tie
+    someone else's address to an account.
+- **Keep me signed in on this device**, an unticked box when you sign in or sign up. Without it you
+  are signed out when the browser closes; with it, after 7 days, as before. Trials keep their 14 days.
+- **Deleting your account sends a confirmation,** saying backup copies are gone within 30 days. If a
+  backup is ever restored, accounts deleted since it was made are deleted again before the site goes
+  back online.
+- **Real addresses for people to write to:** privacy@, security@, abuse@, postmaster@, hello@ and
+  contact@glazecalcapp.com reach the owner (the setup is in `deploy/aws/`). `security.txt` and
+  `SECURITY.md` say where to report a security problem.
 
 ### Changed
 
@@ -317,6 +333,18 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
     classifications: praseodymium oxide is an irritant, not "very toxic"; cobalt and nickel
     compounds are carcinogens by inhalation.
 - `npm run seed` removes standard records that are no longer in the data files.
+- **Your settings are stored in your browser only when you change them there,** not copied at every
+  sign-in. Signing out takes the account's copies off the device, and deleting the account removes
+  them all.
+- **Stricter security headers:** pages load nothing from other sites, and signed-in answers from the
+  server are never cached.
+- **Logs are kept for a limited time:** the web server's for 14 days, the system's for 14 days, the
+  containers' by size. A failed email logs only its error code, and the database no longer logs
+  queries.
+- **The database requires a password,** even on the server's own network.
+- The unused `settings` field is gone from accounts.
+- Dependency updates: Angular 22.2, Playwright 1.64, Mongoose 9.11, nodemailer 10 and others; the
+  Node types stay with Node 24, the version the app runs on.
 
 ### Fixed
 

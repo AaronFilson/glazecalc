@@ -33,6 +33,20 @@ describe('AuthPage', () => {
     expect(navigate).toHaveBeenCalledWith('/home');
   });
 
+  it('has the keep-me-signed-in box unticked, and sends its choice', async () => {
+    const { fixture, page } = await create('signin');
+    const box = fixture.nativeElement.querySelector('#keep') as HTMLInputElement;
+    expect(box.checked).toBe(false);
+    page['email'].set('a@b.com');
+    page['password'].set('password123');
+    page['keep'].set(true);
+    const submitting = page['submit']();
+    const req = httpMock().expectOne(API + '/signin');
+    expect(req.request.headers.get('X-Keep-Signed-In')).toBe('1');
+    req.flush({ email: 'a@b.com' });
+    await submitting;
+  });
+
   it('says when the session ended before a recipe was saved, until the next sign-in', async () => {
     const { fixture, page } = await create('signin');
     const auth = TestBed.inject(AuthService);

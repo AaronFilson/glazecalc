@@ -144,7 +144,14 @@ describe('AccountPage', () => {
   it('has the settings before the password forms', async () => {
     const { fixture } = await create();
     const headings = [...fixture.nativeElement.querySelectorAll('h2')].map((h: Element) => h.textContent?.trim());
-    expect(headings).toEqual(['Settings', 'Download my data', 'Change your password', 'Delete your account']);
+    expect(headings).toEqual([
+      'Settings',
+      'Download my data',
+      'Change your password',
+      'Change your email',
+      'Sign out everywhere',
+      'Delete your account'
+    ]);
     expect((fixture.nativeElement.querySelector('#weight-unit-g') as HTMLInputElement).checked).toBe(true);
   });
 

@@ -39,5 +39,11 @@ export const tokenIn = (message: SentMail): string | null => {
   return match ? match[1]! : null;
 };
 
+/** The token from a confirmation email's link (a new account's, or an email change's). */
+export const linkTokenIn = (message: SentMail): string | null => {
+  const match = /\/confirm-email#token=([A-Za-z0-9_-]+)/.exec(message.text);
+  return match ? match[1]! : null;
+};
+
 /** Lets any mail a request started finish, for tests that expect none. */
 export const settle = (): Promise<void> => new Promise((resolve) => setTimeout(resolve, 300));
