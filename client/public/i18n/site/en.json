@@ -70,10 +70,10 @@
     "who": "Glazecalc is a free, open-source, non-profit project, run by its owner, Aaron Filson, in the United States. He decides what happens to your data, so in data protection law he is its \"controller\".",
     "contact": "To ask about your data, or to use any of your rights, write to <mail>privacy@glazecalcapp.com</mail>. You can also <issues>open an issue on GitHub</issues>, but issues are public: never put your email address or anything personal in one. Most things about your data you can do yourself on your <account>account page</account>.",
     "storedHeading": "What is kept, and why",
-    "storedAccount": "<b>Your account:</b> your email address, and your password, stored only as a one-way hash (bcrypt), never as the password itself. Your settings (such as language, region and units) and the list of materials you have on hand are kept with it. An account needs an email address, to sign in and to reset a forgotten password. A new address is confirmed by a link sent to it.",
+    "storedAccount": "<b>Your account:</b> your email address, and your password, stored only as a one-way hash (bcrypt), never as the password itself. Your settings (such as language, region and units) and the list of materials you have on hand are kept with it. An account needs an email address, to sign in and to reset a forgotten password. When you create an account, a link is sent to the address to confirm that it is yours; until then, mail goes to it only when you ask, such as for a password reset.",
     "storedSaved": "<b>What you save:</b> your recipes, materials, additives, notes, firing logs and advice, as you wrote them. Only you can see them: nothing is shared between users.",
     "storedTrial": "<b>A trial (\"Try it now\"):</b> no email or password, only a made-up name such as \"speckled quiet kilns\". If you sign in to an account on the same browser during a trial, what you made in the trial moves into the account.",
-    "storedResets": "<b>Password reset requests:</b> which account asked, when, and a fingerprint of the link (not the link itself).",
+    "storedResets": "<b>Password reset and email links:</b> which account asked, when, the address a link to confirm an address was sent to, and a fingerprint of each link (not the link itself).",
     "storedLogs": "<b>Logs:</b> the web server records each request: your IP address, the time, the page asked for and the name of your browser. The app records errors with the page they happened on, never your email address.",
     "storedDeletions": "<b>Deleted accounts:</b> the account's id number and when it was deleted, and nothing else, so that a restored backup cannot bring the account back.",
     "storedMail": "<b>Email problems:</b> if mail to your address bounces or is reported as spam, Amazon's email service puts the address on a list not to mail again, and sends the owner a notice that includes the address.",
@@ -89,7 +89,7 @@
     "keptHeading": "How long it is kept",
     "keptAccount": "<b>Your account and what you save:</b> until you delete them. Accounts are not removed for being unused.",
     "keptTrial": "<b>A trial:</b> 14 days from its start, then it is deleted with everything in it, unless you create an account to keep it.",
-    "keptResets": "<b>Password reset requests:</b> about an hour. The link itself works for 30 minutes.",
+    "keptResets": "<b>Password reset and email links:</b> a reset link works for 30 minutes and its record is deleted after about an hour; a link to confirm an address works, and is kept, for 24 hours.",
     "keptBackups": "<b>Backups:</b> encrypted copies of the database are kept 30 days, and copies of the server's disk 7 days. So a deleted account is gone from every backup within 30 days.",
     "keptDeletions": "<b>The record of a deleted account:</b> 37 days, just longer than any backup.",
     "keptLogs": "<b>Logs:</b> the web server's, 14 days. The app's and the database's own logs are limited by size (50 MB each), which on a quiet site reaches back several days. The copies of the server's disk keep logs for up to 7 days more.",
@@ -98,7 +98,7 @@
     "rightsHeading": "Your rights",
     "rightsIntro": "You can see, correct, take and delete your data. Most of it you can do yourself on your <account>account page</account>:",
     "rightsExport": "<b>See it and take it with you:</b> Download my data saves everything in one file (JSON), and your recipes and materials as spreadsheets (CSV).",
-    "rightsCorrect": "<b>Correct it:</b> change your settings and your records at any time. To change your email address, confirm it with the link sent to the new address.",
+    "rightsCorrect": "<b>Correct it:</b> change your settings and your records at any time. To change your email address, open the link sent to the new address; the old address is told of the change, and every device is signed out.",
     "rightsDelete": "<b>Delete it:</b> Delete my account removes your account and everything you saved at once, and \"Discard trial\" does the same for a trial. Copies in backups are gone within 30 days.",
     "rightsSignOut": "<b>Sign out everywhere:</b> ends your account's sessions on every device.",
     "rightsAsk": "For anything else, such as asking for your data to be held back from use while a mistake is put right, or objecting to how it is used, write to <mail>privacy@glazecalcapp.com</mail>. It is free, and you will have an answer within a month. You will only be asked to show the account is yours, by signing in or by opening a link sent to its address, never for an ID.",
@@ -116,7 +116,7 @@
     "keys": {
       "cookie": {
         "purpose": "Keeps you signed in. It holds your sign-in token. Scripts on the page cannot read it, and your browser sends it only to Glazecalc's own server, over HTTPS, and never with a request that starts on another site.",
-        "lasts": "Set when you sign in, create an account or start a trial. Until you close your browser, or 7 days if you tick \"Keep me signed in\"; 14 days for a trial. Signing out removes it."
+        "lasts": "Set when you sign in, create an account or start a trial. Until you close your browser, or for 7 days if you tick \"Keep me signed in on this device\"; 14 days for a trial. Signing out removes it."
       },
       "session": {
         "purpose": "Notes that you are signed in, to an account or a trial, so the app knows to ask the server. It holds no token or password.",

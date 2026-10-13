@@ -164,7 +164,8 @@ test('deletes the account from the account page, leaving no choices on this brow
   const kept = await page.evaluate(() => Object.keys(globalThis.localStorage));
   expect(kept.filter((key) => PREFERENCE_COPIES.includes(key) || key.startsWith('visitor.'))).toEqual([]);
 
-  const confirmation = await nextEmail(email);
+  // The first email confirmed the address (createAccount).
+  const confirmation = await nextEmail(email, 1);
   expect(confirmation.subject).toBe('Your Glazecalc account was deleted');
   expect(confirmation.text).toContain('within 30 days');
 });
