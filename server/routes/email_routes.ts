@@ -30,7 +30,8 @@ import { say } from '../lib/messages.ts';
 const emailRouter = express.Router();
 export default emailRouter;
 
-const logMailError = (what: string) => (err: unknown) => log.error('Could not send the ' + what + ' email', { err });
+const logMailError = (what: string) => (err: unknown) =>
+  log.error('Could not send the ' + what + ' email', { code: log.codeOf(err) });
 const inUse = () => say('email-in-use', undefined, { field: 'email' });
 
 emailRouter.post(

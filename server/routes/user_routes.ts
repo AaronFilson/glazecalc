@@ -158,11 +158,12 @@ userRouter.delete('/deleteuser/:id', jwtAuth, selfOrAdmin, limits.passwordCheck,
   const deleted = await deleteAccount(id);
   if (!deleted) return res.status(404).json(say('no-user'));
   if (id === String(userOf(req)._id)) session.end(res);
-  // A confirmation, saying how long backups keep it. A trial has no address.
-  if (!deleted.guest && mailer.available()) {
+  // A confirmation, saying how long backups keep it. A trial has no address, and an
+  // unconfirmed one may be a stranger's, so it gets no mail it did not ask for.
+  if (!deleted.guest && !deleted.emailUnverified && mailer.available()) {
     accountMail
       .sendDeleted(deleted.email, deleted.preferences?.language)
-      .catch((err: unknown) => log.error('Could not send the account deleted email', { err }));
+      .catch((err: unknown) => log.error('Could not send the account deleted email', { code: log.codeOf(err) }));
   }
   return res.status(200).json(say('user-deleted'));
 });

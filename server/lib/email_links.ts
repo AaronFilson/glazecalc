@@ -38,5 +38,5 @@ export async function makeLink(user: UserDocument, kind: 'verify' | 'change', ad
 export const sendVerification = (user: UserDocument): void => {
   makeLink(user, 'verify', user.email)
     .then((token) => accountMail.sendVerify(user.email, token, LINK_HOURS, user.preferences?.language))
-    .catch((err: unknown) => log.error('Could not send the email confirmation', { err }));
+    .catch((err: unknown) => log.error('Could not send the email confirmation', { code: log.codeOf(err) }));
 };

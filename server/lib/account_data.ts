@@ -9,6 +9,7 @@ import Deletion from '../models/deletion.ts';
 import Firing from '../models/firing.ts';
 import Material from '../models/material.ts';
 import Note from '../models/note.ts';
+import EmailToken from '../models/email_token.ts';
 import PasswordReset from '../models/password_reset.ts';
 import Recipe from '../models/recipe.ts';
 import Trash from '../models/trash.ts';
@@ -21,6 +22,7 @@ type Id = string | Types.ObjectId;
 export interface DeletedAccount {
   email: string;
   guest?: boolean;
+  emailUnverified?: boolean;
   preferences?: { language?: string };
 }
 
@@ -56,7 +58,8 @@ export const mergeTrial = async (trialId: Id, accountId: Id): Promise<number> =>
 const deleteRecords = async (ids: string[]): Promise<number> => {
   const results = await Promise.all([
     ...OWNED_MODELS.map((Model) => Model.deleteMany({ ownedBy: { $in: ids } })),
-    PasswordReset.deleteMany({ userId: { $in: ids } })
+    PasswordReset.deleteMany({ userId: { $in: ids } }),
+    EmailToken.deleteMany({ userId: { $in: ids } })
   ]);
   return results.reduce((count, result) => count + result.deletedCount, 0);
 };
@@ -76,7 +79,9 @@ const removeAccounts = async (ids: string[]): Promise<{ accounts: number; record
 /** Resolves with the account it deleted, or null if there was none. */
 export const deleteAccount = async (userId: Id): Promise<DeletedAccount | null> => {
   const id = String(userId);
-  const user = await User.findById(id).select({ email: 1, guest: 1, 'preferences.language': 1 }).lean();
+  const user = await User.findById(id)
+    .select({ email: 1, guest: 1, emailUnverified: 1, 'preferences.language': 1 })
+    .lean();
   if (!user) return null;
   // Logged before anything goes: an account logged but not yet deleted is
   // deleted when the log is re-applied, but one deleted and not logged would
