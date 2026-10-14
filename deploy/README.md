@@ -37,6 +37,8 @@ session cookie is `Secure`. After DNS points at the instance,
 | `logrotate/nginx`                                        | `/etc/logrotate.d/nginx`               | nginx's logs kept 14 days                                                                                                                                                                                                                                                                                                                    |
 | `journald/glazecalc.conf`                                | `/etc/systemd/journald.conf.d/`        | the system journal kept 14 days                                                                                                                                                                                                                                                                                                              |
 | `systemd/*`                                              | `/etc/systemd/system/`                 | the units listed above                                                                                                                                                                                                                                                                                                                       |
+| `compose.staging.yaml`, `staging.sh`                     | `/opt/glazecalc/` (by hand)            | the staging copy: see "Staging" below                                                                                                                                                                                                                                                                                                        |
+| `nginx/glazecalc-staging.conf`                           | `/etc/nginx/sites-available/`          | staging.glazecalcapp.com to 127.0.0.1:3001, after `enable-https.sh --with-staging`                                                                                                                                                                                                                                                           |
 | `aws/*.json`                                             | IAM, SSM, DLM                          | instance role, GitHub deploy role and its one command document, CLI user policy, snapshot policy                                                                                                                                                                                                                                             |
 
 Settings come from SSM Parameter Store, never from the repository or user data:
@@ -60,6 +62,7 @@ Day to day:
   `sudo /opt/glazecalc/enable-https.sh` on the instance (it checks the files with `nginx -t`
   and puts the old ones back if they fail).
 - **Restore a dump:** `sudo /opt/glazecalc/restore.sh mongodump/glazecalc-<time>.archive.gz`; see below.
+- **Staging:** a branch on https://staging.glazecalcapp.com, deployed by hand; see "Staging" below.
 
 ## Restoring a backup
 
@@ -289,3 +292,263 @@ but the user must exist for the deploy to work. No data is touched at any point.
 
 To go back, deploy the previous `sha-<commit>` tag: its Compose file starts MongoDB without
 `--auth` and the app without a password, and the user stays unused in the database.
+
+## Staging
+
+A second copy of the app on the same instance, at **https://staging.glazecalcapp.com**, for testing
+a branch in real browsers (a phone's authenticator app, real passkeys, real email) before it is
+merged ([docs/mfa-plan.md](../docs/mfa-plan.md), "Phase 2"). It is deployed by hand: no CI, and
+production's deploys are unchanged.
+
+```
+PC: scripts/build-staging.sh <branch> ─► ghcr.io/aaronfilson/glazecalc:staging-<sha>  (or S3, --to-s3)
+Session Manager: /opt/glazecalc/staging.sh staging-<sha>
+  nginx :443 staging.glazecalcapp.com ─► 127.0.0.1:3001 app (project glazecalc-staging, 300 MB)
+                                             └─► production's mongo container, database glazecalc_staging,
+                                                 user glazecalc_staging (that database only)
+```
+
+What keeps it apart from production:
+
+- **Its own host name.** Passkeys belong to `staging.glazecalcapp.com` and never appear on
+  production; sessions are host-only cookies; authenticator apps show "Glazecalc (staging)"; every
+  page has a "Staging" banner and every mail subject starts with "[Staging]".
+- **Its own Compose project** (`glazecalc-staging`, only the app), so nothing it does can stop or
+  replace a production container. `staging.sh` names that project in every command and checks
+  `compose.staging.yaml` before using it.
+- **Its own database and user.** `glazecalc_staging` can read and write the database
+  `glazecalc_staging` and nothing else. MongoDB's port stays unpublished: the staging app joins
+  production's Compose network to reach it.
+- **Its own secrets** in `/glazecalc/staging/*` (`staging.sh` refuses any that is production's).
+- **Mail only to the owner:** `MAIL_ALLOWLIST` from `/glazecalc/staging/mail-allowlist`; staging
+  does not start without it. It shares production's SES settings.
+- **No indexing:** `X-Robots-Tag: noindex, nofollow` (from nginx and the app), a robots.txt that
+  disallows everything, no sitemap.
+- **Never backed up**, never copied from production. Its data is for testing and can be emptied at
+  any time.
+
+### One-time setup
+
+Each step is a command for the owner to review and run; none has been run. Steps 1 and 3 to 6 are
+in a Session Manager shell on the instance as root (`sudo -i`); steps 2 and 7 on the PC with the
+operator profile (copper-bell). The instance role already reads `/glazecalc/*`
+(`aws/instance-policy.json`) and the operator policy already writes those parameters and changes
+`*.glazecalcapp.com` records, so no IAM change is needed (except for the optional S3 route, step 8).
+
+1. **Swap.** A second Node process needs about 150 to 250 MB; `staging.sh` refuses to start without
+   swap. `setup-instance.sh` made a 2 GB `/swapfile` at first boot, so this should already show it:
+
+   ```bash
+   swapon --show
+   free -m
+   ```
+
+   Only if `swapon --show` prints nothing (1 GB, as the plan asks; kept across reboots):
+
+   ```bash
+   fallocate -l 1G /swapfile && chmod 600 /swapfile && mkswap /swapfile && swapon /swapfile
+   grep -q '^/swapfile ' /etc/fstab || echo '/swapfile none swap sw 0 0' >> /etc/fstab
+   ```
+
+2. **DNS:** an A record for `staging.glazecalcapp.com`, the same address as the site (Route 53 zone
+   for glazecalcapp.com). `CREATE` fails rather than overwrite an existing record.
+
+   ```bash
+   ZONE=$(aws route53 list-hosted-zones-by-name --dns-name glazecalcapp.com \
+     --query 'HostedZones[0].Id' --output text)
+   IP=$(aws route53 list-resource-record-sets --hosted-zone-id "$ZONE" \
+     --query "ResourceRecordSets[?Name=='glazecalcapp.com.' && Type=='A'].ResourceRecords[0].Value" --output text)
+   echo "$ZONE $IP"   # expect /hostedzone/Z383KEIS9CPHD5 44.229.21.212
+   cat > staging-dns.json <<EOF
+   {
+     "Comment": "Staging copy of glazecalc on the production instance (deploy/README.md, Staging)",
+     "Changes": [
+       {
+         "Action": "CREATE",
+         "ResourceRecordSet": {
+           "Name": "staging.glazecalcapp.com",
+           "Type": "A",
+           "TTL": 300,
+           "ResourceRecords": [{ "Value": "$IP" }]
+         }
+       }
+     ]
+   }
+   EOF
+   aws route53 change-resource-record-sets --hosted-zone-id "$ZONE" --change-batch file://staging-dns.json
+   ```
+
+   **The parameters** (same machine). New secrets, never production's. Unlike production's key,
+   the staging key may be replaced at any time: staging's data is disposable. The allowlist is the
+   addresses (or `@domain`s) staging may mail, separated by commas.
+
+   ```bash
+   aws ssm put-parameter --region us-west-2 --name /glazecalc/staging/app-secret --type SecureString \
+     --value "$(openssl rand -base64 48)"
+   aws ssm put-parameter --region us-west-2 --name /glazecalc/staging/mfa-key --type SecureString \
+     --value "$(openssl rand -base64 32)"
+   aws ssm put-parameter --region us-west-2 --name /glazecalc/staging/mongo-password --type SecureString \
+     --value "$(openssl rand -hex 32)"
+   aws ssm put-parameter --region us-west-2 --name /glazecalc/staging/mail-allowlist --type SecureString \
+     --value 'you@example.com,you@example.org'
+   ```
+
+3. **The files.** `staging.sh` and `compose.staging.yaml` are not installed by `deploy.sh` or
+   `setup-instance.sh`; take them from a pushed branch or commit (`mfa` until it is merged, then
+   `master`). Run this again whenever they change.
+
+   ```bash
+   ref=mfa
+   cd /opt/glazecalc
+   for f in staging.sh compose.staging.yaml; do
+     curl -fsSL "https://raw.githubusercontent.com/AaronFilson/glazecalc/$ref/deploy/$f" -o "$f.new"
+   done
+   bash -n staging.sh.new && mv staging.sh.new staging.sh && mv compose.staging.yaml.new compose.staging.yaml
+   chmod 750 staging.sh
+   ```
+
+4. **The database user.** Production's MongoDB has no administrator, only the app's user, so the
+   new user is made with MongoDB started once without sign-in, cut off from every network.
+   **Production is down for about a minute**: do it at a quiet time. Data is not changed.
+
+   ```bash
+   cd /opt/glazecalc
+   ./backup.sh                                      # a fresh dump first; check it reached S3
+   pw=$(aws ssm get-parameter --region us-west-2 --name /glazecalc/staging/mongo-password --with-decryption \
+     --query Parameter.Value --output text)
+   mongo_image=$(docker inspect -f '{{.Image}}' "$(docker compose -f compose.prod.yaml ps -q mongo)")
+   docker compose -f compose.prod.yaml stop app mongo        # production is down from here
+   docker run -d --name glazecalc-mongo-admin --network none \
+     -v glazecalc_mongo-data:/data/db -v glazecalc_mongo-config:/data/configdb \
+     "$mongo_image" mongod --wiredTigerCacheSizeGB 0.25 --slowms 2147483647
+   until docker exec glazecalc-mongo-admin mongosh --quiet --eval "db.adminCommand('ping').ok" >/dev/null 2>&1; do sleep 2; done
+   PW=$pw docker exec -e PW glazecalc-mongo-admin mongosh --quiet --eval "
+     db.getSiblingDB('glazecalc_staging').createUser({
+       user: 'glazecalc_staging',
+       pwd: process.env.PW,
+       roles: [{ role: 'readWrite', db: 'glazecalc_staging' }]
+     })"
+   docker stop glazecalc-mongo-admin && docker rm glazecalc-mongo-admin
+   docker compose -f compose.prod.yaml start mongo app      # production is back
+   curl -fsS http://127.0.0.1:3000/api/health
+   ```
+
+   Check that the user signs in and has that one role (`[ { role: 'readWrite', db: 'glazecalc_staging' } ]`):
+
+   ```bash
+   PW=$pw docker exec -e PW "$(docker compose -f compose.prod.yaml ps -q mongo)" mongosh --quiet \
+     mongodb://localhost/glazecalc_staging --eval "
+     db.auth('glazecalc_staging', process.env.PW);
+     printjson(db.runCommand({ connectionStatus: 1 }).authInfo.authenticatedUserRoles)"
+   unset pw
+   ```
+
+   If `createUser` fails, run the `docker stop`, `docker rm` and `start` lines anyway: production
+   comes back as it was.
+
+5. **Certificate and nginx.** `enable-https.sh --with-staging` adds the name to the certificate
+   (certbot `--expand`, checked against DNS first) and turns on `nginx/glazecalc-staging.conf`.
+   Until the branch is merged, the instance's `enable-https.sh` (master's) does not know the flag,
+   so run the branch's copy; production's nginx files still come from master.
+
+   ```bash
+   curl -fsSL https://raw.githubusercontent.com/AaronFilson/glazecalc/mfa/deploy/enable-https.sh \
+     -o /var/tmp/enable-https.sh
+   GLAZECALC_STAGING_REF=mfa bash /var/tmp/enable-https.sh --with-staging --dry-run
+   GLAZECALC_STAGING_REF=mfa bash /var/tmp/enable-https.sh --with-staging
+   rm /var/tmp/enable-https.sh
+   ```
+
+   After the merge it is `/opt/glazecalc/enable-https.sh --with-staging`. Later runs without the
+   flag keep the staging name. While staging is stopped the site answers 503 "stopped".
+
+6. **Check:** `curl -sI https://staging.glazecalcapp.com/` answers 503 with `x-robots-tag`, and
+   `sudo certbot certificates` lists the three names.
+
+7. **GHCR on the PC**, once per token: make a classic personal access token with only the
+   `write:packages` scope and a short expiry (GitHub → Settings → Developer settings), then in Git Bash:
+
+   ```bash
+   docker login ghcr.io -u AaronFilson     # paste the token as the password
+   ```
+
+   The glazecalc package is public, so staging images can be pulled by anyone, as production's
+   can. Delete old `staging-*` versions now and then (GitHub → Packages → glazecalc).
+
+8. **Optional, instead of GHCR: images through S3** (no registry token on the PC). The admin lets
+   the instance read `staging-images/` in the backup bucket, and the operator adds a rule that
+   deletes those uploads after 7 days. `put-bucket-lifecycle-configuration` replaces every rule,
+   so check the current ones first (`aws s3api get-bucket-lifecycle-configuration --bucket glazecalc-backups-724654236968`):
+   the command below keeps `expire-dumps` as section 3 of aws/README.md made it.
+
+   ```bash
+   # Admin (CloudShell):
+   aws iam put-role-policy --role-name glazecalc-instance --policy-name glazecalc-staging-images \
+     --policy-document file://deploy/aws/staging-images-policy.json
+   # Operator:
+   aws s3api put-bucket-lifecycle-configuration --bucket glazecalc-backups-724654236968 --lifecycle-configuration \
+     '{"Rules":[{"ID":"expire-dumps","Status":"Enabled","Filter":{"Prefix":"mongodump/"},"Expiration":{"Days":30}},{"ID":"expire-staging-images","Status":"Enabled","Filter":{"Prefix":"staging-images/"},"Expiration":{"Days":7}}]}'
+   ```
+
+### A test round
+
+1. **Build and publish** on the PC, from the repository in Git Bash with Docker Desktop running.
+   Any branch or commit; uncommitted changes are never included. It prints the next command.
+
+   ```bash
+   scripts/build-staging.sh mfa                    # or: --to-s3 glazecalc-backups-724654236968
+   ```
+
+2. **Deploy** in Session Manager (`sudo -i`), with the tag it printed:
+
+   ```bash
+   /opt/glazecalc/staging.sh staging-<sha>
+   ```
+
+   It reads the parameters, pulls the image (checking that its label names the same commit),
+   writes the root-only `staging.env`, starts the app and waits for `/api/health` on 3001, then
+   loads the standard materials. If the new version does not become healthy, the previous staging
+   version is started again (or staging is stopped if there was none) and it says so. A master
+   build from CI works too: `staging.sh sha-<sha>`.
+
+3. **Test** on the phone and the PC at https://staging.glazecalcapp.com.
+
+4. **Repeat** from 1 with the next commit.
+
+5. **Stop** when the round is over, to give production its memory back:
+
+   ```bash
+   /opt/glazecalc/staging.sh stop
+   ```
+
+Also:
+
+- `staging.sh status`: the running tag, its health, memory and swap, each container's memory.
+- `staging.sh reset-db`: empties the staging database (every account and record) after you type
+  its name, then reloads the standard data. It signs in as `glazecalc_staging`, which cannot touch
+  production's database.
+- Logs: `docker logs -f glazecalc-staging-app-1`; nginx writes `/var/log/nginx/staging-access.log`.
+- After testing, remove the staging passkeys from the phone's password manager and the
+  "Glazecalc (staging)" entries from the authenticator app.
+
+Things to know:
+
+- **Memory.** Staging is limited to 300 MB, and `staging.sh` loads the standard data in a second,
+  short-lived container. If production slows while staging runs, stop staging; if it is often
+  tight, move to a t4g.small (aws/README.md, "Defaults").
+- **One MongoDB.** Staging's queries share production's `mongod` and its 0.25 GB cache. A heavy
+  staging test slows production a little; nothing more.
+- **Production's commands are unaffected,** with one exception: while staging runs,
+  `docker compose -f compose.prod.yaml down` cannot remove production's network (staging is on it).
+  Nothing here runs `down` (`glazecalc.service`, `deploy.sh` and `restore.sh` use `stop` and `up`);
+  if you need it, run `staging.sh stop` first. A production deploy's `docker image prune` removes a
+  stopped staging image; `staging.sh` pulls it again.
+- **The certificate now covers the staging name,** so certbot's renewals check it too: keep its DNS
+  record while the name is on the certificate.
+
+**Retiring staging:** `staging.sh stop`; `rm /etc/nginx/sites-enabled/glazecalc-staging && systemctl reload nginx`;
+shrink the certificate to production's names with
+`certbot certonly --webroot --webroot-path /var/www/certbot --non-interactive --cert-name glazecalcapp.com --domain glazecalcapp.com --domain www.glazecalcapp.com --deploy-hook 'systemctl reload nginx'`;
+then delete the DNS record (`"Action": "DELETE"` with the same record), the four
+`/glazecalc/staging/*` parameters, `/opt/glazecalc/{staging.sh,compose.staging.yaml,staging.env,staging.tag}`,
+and the database (`dropDatabase` needs MongoDB without sign-in, as in step 4; an empty one can stay).

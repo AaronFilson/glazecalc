@@ -73,6 +73,9 @@ aws ssm put-parameter --name /glazecalc/backup-bucket --type String --value "$BU
 aws ssm put-parameter --name /glazecalc/acme-email --type String --value 'you@example.com'
 ```
 
+The staging copy's own parameters, `/glazecalc/staging/*`, are in [deploy/README.md](../README.md),
+"Staging"; the instance role and the operator policy already cover them.
+
 ## 3. Backup bucket (private, encrypted, dumps kept 30 days)
 
 ```bash
