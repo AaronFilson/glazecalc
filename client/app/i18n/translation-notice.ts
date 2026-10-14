@@ -1,4 +1,4 @@
-import { Location } from '@angular/common';
+import { DOCUMENT, Location } from '@angular/common';
 import { Component, DestroyRef, computed, inject, signal } from '@angular/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { ActivatedRouteSnapshot, NavigationEnd, Router } from '@angular/router';
@@ -15,9 +15,9 @@ const ISSUES = 'https://github.com/AaronFilson/glazecalc/issues/new';
 export const READ_ENGLISH = 'readEnglish';
 
 /** Whether this tab's reader asked for the English. */
-export function readsEnglish(storage: Pick<Storage, 'getItem'> = sessionStorage): boolean {
+export function readsEnglish(storage: Pick<Storage, 'getItem'> | undefined = globalThis.sessionStorage): boolean {
   try {
-    return storage.getItem(READ_ENGLISH) === '1';
+    return storage?.getItem(READ_ENGLISH) === '1';
   } catch {
     return false;
   }
@@ -87,9 +87,11 @@ export class TranslationNotice {
   private readonly safety = signal(false);
   /** A line of the notice stays here once it is closed. */
   private readonly stays = computed(() => this.plain || this.safety());
-  private readonly path = signal(location.pathname);
+  // The document's address: the browser's own, or the page being rendered.
+  private readonly address = inject(DOCUMENT).location;
+  private readonly path = signal(this.address.pathname);
   /** The query and section in the address: ?compare=draft,abc, #cones. */
-  private readonly rest = signal(location.search + location.hash);
+  private readonly rest = signal(this.address.search + this.address.hash);
   protected readonly brief = computed(() => this.stays() && this.preferences.notice() === 'hidden');
   protected readonly shown = computed(
     () => this.translated && (this.stays() || this.preferences.notice() !== 'hidden')
@@ -104,8 +106,8 @@ export class TranslationNotice {
       .subscribe(() => this.safety.set(!!innermost(this.router.routerState.snapshot.root).data['safety']));
     // The address, whenever it changes: another page, its query, or the section a guide's contents went to.
     const stop = inject(Location).onUrlChange(() => {
-      this.path.set(location.pathname);
-      this.rest.set(location.search + location.hash);
+      this.path.set(this.address.pathname);
+      this.rest.set(this.address.search + this.address.hash);
     });
     inject(DestroyRef).onDestroy(stop);
   }

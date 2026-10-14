@@ -9,6 +9,7 @@ import {
   signal,
   viewChild
 } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
 import { TranslocoDirective, translate } from '@jsverse/transloco';
 import { marker } from '@jsverse/transloco-keys-manager/marker';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
@@ -183,6 +184,7 @@ export class App implements OnInit {
   // Numbers and dates follow Settings from the first page on.
   private readonly locale = inject(LocaleService);
   private readonly router = inject(Router);
+  private readonly document = inject(DOCUMENT);
   private readonly injector = inject(Injector);
   private readonly main = viewChild.required<ElementRef<HTMLElement>>('main');
 
@@ -234,7 +236,7 @@ export class App implements OnInit {
       () => {
         const main = this.main().nativeElement;
         const fragment = this.router.parseUrl(this.router.url).fragment;
-        const section = fragment ? document.getElementById(fragment) : null;
+        const section = fragment ? this.document.getElementById(fragment) : null;
         // The router scrolls to a section itself. At once, as a page loads, not smoothly.
         if (!section && !backOrForward) window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
         const heading = section ?? [...main.querySelectorAll('h1')].find((h1) => !h1.closest('[hidden]')) ?? main;
@@ -247,7 +249,8 @@ export class App implements OnInit {
 
   /** This page in another language. */
   protected pageIn(code: string): string {
-    return pathIn(code, location.pathname, location.search + location.hash);
+    const { pathname, search, hash } = this.document.location;
+    return pathIn(code, pathname, search + hash);
   }
 
   /**

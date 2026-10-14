@@ -1,3 +1,4 @@
+import { DOCUMENT } from '@angular/common';
 import { Directive, ElementRef, effect, inject, input, output } from '@angular/core';
 import { forTyping, formatLocale, toPlain, typedDecimalMark } from './format';
 
@@ -19,6 +20,7 @@ export class NumberInput {
   readonly gcNumber = input<string | number | null | undefined>('');
   readonly gcNumberChange = output<string>();
   private readonly element: HTMLInputElement = inject(ElementRef).nativeElement;
+  private readonly document = inject(DOCUMENT);
 
   constructor() {
     effect(() => {
@@ -26,7 +28,7 @@ export class NumberInput {
       const mark = typedDecimalMark();
       const locale = formatLocale();
       // What is being typed is the reader's until they leave the box.
-      if (document.activeElement === this.element && toPlain(this.element.value, mark, locale) === plain) return;
+      if (this.document.activeElement === this.element && toPlain(this.element.value, mark, locale) === plain) return;
       this.element.value = forTyping(plain, mark, locale);
     });
   }

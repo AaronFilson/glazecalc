@@ -11,7 +11,7 @@ import { readsEnglish } from './translation-notice';
  */
 export function ownLanguagePage(
   chosen: string | null,
-  where: Pick<Location, 'pathname' | 'search' | 'hash'> = location,
+  where: Pick<Location, 'pathname' | 'search' | 'hash'> = globalThis.location,
   english = readsEnglish()
 ): string | null {
   if (!chosen || chosen === 'en' || !LIVE_LANGUAGES.includes(chosen) || english) return null;

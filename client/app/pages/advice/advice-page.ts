@@ -1,4 +1,5 @@
-import { Component, OnInit, computed, inject, signal } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
+import { Component, OnInit, PLATFORM_ID, computed, inject, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { TranslocoDirective, translate } from '@jsverse/transloco';
 import { ApiResourceFactory } from '../../core/api-resource.service';
@@ -132,6 +133,7 @@ import { standardText } from '../../shared/library-info';
 export class AdvicePage implements OnInit {
   private readonly advice = inject(ApiResourceFactory).for<Advice>('advice');
   private readonly auth = inject(AuthService);
+  private readonly browser = isPlatformBrowser(inject(PLATFORM_ID));
 
   protected readonly signedIn = computed(() => this.auth.hasSession());
 
@@ -150,8 +152,10 @@ export class AdvicePage implements OnInit {
   protected readonly removal = new Removal(this.advice, this.myAdvice, this.notices, (adv) => adv.title);
 
   ngOnInit(): void {
+    // The list comes from the API, which a render has no way to reach; the browser fetches it after hydration.
+    if (!this.browser) return;
     // The general advice is public; a visitor who is not signed in has none of their own.
-    if (this.signedIn()) {
+    if (this.auth.hasSession()) {
       this.advice.getAll().then(
         (list) => this.myAdvice.set(list),
         () => this.notices.error(translate('site.advice.fetchFailed'))
