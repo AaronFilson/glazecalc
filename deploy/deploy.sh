@@ -88,7 +88,9 @@ region=$(curl -fsS -H "X-aws-ec2-metadata-token: $token" http://169.254.169.254/
 # The Compose file from the same commit as the image, so the two always match.
 curl -fsSL "$raw/$ref/deploy/compose.prod.yaml" -o compose.prod.yaml.new
 
-# APP_SECRET lives in SSM Parameter Store, never in the repository or user data.
+# APP_SECRET lives in SSM Parameter Store, never in the repository or user data,
+# as do the MongoDB password and the two-step sign-in key below. SITE_URL is no
+# secret: compose.prod.yaml sets it.
 # app.env is written whole and then moved into place, so a failed read leaves
 # the old one.
 umask 077
@@ -115,6 +117,26 @@ fi
 printf 'MONGODB_URI=mongodb://glazecalc:%s@mongo:27017/glazecalc?authSource=glazecalc\n' "$mongo_password" >> app.env.new
 printf 'MONGO_APP_PASSWORD=%s\n' "$mongo_password" > mongo.env.new
 unset mongo_password
+# The key that encrypts authenticator-app secrets and hashes recovery codes
+# (server/lib/mfa_key.ts): 32 random bytes, base64. The app does not start in
+# production without it, so stop here with the running version unchanged
+# (deploy/README.md, "Two-step sign-in key"). Never replace it once in use: a
+# new key undoes every authenticator app and recovery code made with the old.
+if ! mfa_key=$(aws ssm get-parameter --region "$region" --name /glazecalc/mfa-key --with-decryption \
+    --query Parameter.Value --output text 2>ssm-error.txt); then
+  cat ssm-error.txt >&2
+  echo "Could not read /glazecalc/mfa-key (deploy/README.md, Two-step sign-in key); the running version is unchanged." >&2
+  rm -f ssm-error.txt app.env.new mongo.env.new compose.prod.yaml.new
+  exit 1
+fi
+rm -f ssm-error.txt
+if [[ ! "$mfa_key" =~ ^[A-Za-z0-9+/]{43}=$ ]]; then
+  echo "/glazecalc/mfa-key must be 32 bytes in base64 (openssl rand -base64 32); the running version is unchanged." >&2
+  rm -f app.env.new mongo.env.new compose.prod.yaml.new
+  exit 1
+fi
+printf 'MFA_KEY=%s\n' "$mfa_key" >> app.env.new
+unset mfa_key
 # Email (Amazon SES over SMTP) is on once /glazecalc/smtp-url exists (see
 # deploy/aws/create-mailer.sh); until then reset by email says it is unavailable.
 # Any other error reading it (throttling, the network) stops the deploy here,

@@ -1,7 +1,7 @@
 # Glazecalc and MongoDB 9 in containers.
 #
-#   APP_SECRET=... docker compose up -d --build   (or put APP_SECRET in .env,
-#                                                  with the email settings and APP_URL)
+#   APP_SECRET=... MFA_KEY=... docker compose up -d --build   (or put both in .env,
+#                                                  with the email settings and SITE_URL)
 #   docker compose run --rm app node scripts/seed-standard.js   (standard materials, once)
 #   docker compose logs -f app
 #   docker compose down             (data stays in the mongo-data volume)
@@ -25,8 +25,17 @@ services:
       MAIL_TRANSPORT: ${MAIL_TRANSPORT:-}
       SMTP_URL: ${SMTP_URL:-}
       MAIL_FROM: ${MAIL_FROM:-}
-      # The address links in emails point to: where people open the app.
-      APP_URL: ${APP_URL:-http://localhost:${APP_PORT:-3000}}
+      # Where people open the app (server/lib/site.ts): links in emails and the
+      # host passkeys belong to. APP_URL is its older name and still works.
+      SITE_URL: ${SITE_URL:-${APP_URL:-http://localhost:${APP_PORT:-3000}}}
+      # Required in production, as APP_SECRET is: the key for two-step sign-in's
+      # secrets (openssl rand -base64 32). Keep it: a new key undoes every
+      # authenticator app set up with the old one.
+      MFA_KEY: ${MFA_KEY:?Set MFA_KEY in the environment or in .env (openssl rand -base64 32)}
+      # A copy that is not production (.env.example): empty, they do nothing.
+      SITE_LABEL: ${SITE_LABEL:-}
+      NOINDEX: ${NOINDEX:-}
+      MAIL_ALLOWLIST: ${MAIL_ALLOWLIST:-}
     ports:
       - '127.0.0.1:${APP_PORT:-3000}:3000'
     depends_on:
