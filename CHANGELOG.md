@@ -6,6 +6,20 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Added
 
+- **Two-step sign-in**, optional, on the account page ([ADR 0014](docs/adr/0014-two-step-sign-in.md),
+  [plan](docs/mfa-plan.md)). An authenticator app (a QR code or a key to type), passkeys (named,
+  renamed and removed, up to ten) and ten recovery codes, shown once. Signing in then takes the
+  password and a second step; a passkey alone signs in too, from its button or the email field's
+  suggestions. Every change asks for the password and, once two-step sign-in is on, a second step,
+  and signs out other devices. It needs a confirmed email, and trials don't have it. Emails tell
+  the account when a step is added or removed, when a recovery code is used, when new codes are
+  made and when two-step sign-in turns off. Someone who has lost every step and code can ask the
+  owner to turn it off after seven days ([data requests](docs/data-requests.md)); signing in or
+  confirming a change with any step cancels such a request. Authenticator keys are encrypted with
+  a key of their own (`MFA_KEY`), and recovery codes are kept only as keyed hashes.
+- **Ready for a staging copy:** `SITE_URL`, `SITE_LABEL`, `NOINDEX` and `MAIL_ALLOWLIST` set,
+  from the environment alone, the address passkeys belong to, a "Staging" label, no indexing and
+  mail to the owner only.
 - **Pages that search engines and link previews can read.** The public pages (home, guides,
   advice, about, privacy, sign-up) are drawn to plain HTML when the app is built, in every
   language, so the text is there before any script runs; the app then takes the page over in

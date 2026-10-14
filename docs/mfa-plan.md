@@ -6,6 +6,27 @@ This plan adds optional two-step sign-in (MFA) for accounts: passkeys (WebAuthn)
 
 **How it works, in short.** Sign-in still starts with the password (`GET /api/signin`, Basic). When the account has a factor on, the server answers 200 with `code: 'second-step'`, the factors the account has and a short-lived signed `pending` token, and sets no session. The page keeps the token in memory (decision 2: no cookie). Then `POST /api/signin/second-step` takes the token and one of three things: a TOTP code, a passkey assertion or a recovery code. Only that step calls `session.start`, merges a trial on this browser, and honours "Keep me signed in". A "Sign in with a passkey" button (and passkey autofill) signs in with a passkey alone, which counts as both steps (decision 1, item 17).
 
+## Status (14 October 2026)
+
+**Phase 1 is built** on branch `mfa`: the contract commit, streams A (factors on the server), B (the sign-in flow and `clear_mfa.ts`), C (the client) and D (mail, operations, docs), merged in that order, then the integration follow-ups:
+
+- A 401 from `/signin/*` (a wrong second step, an unknown passkey) is the sign-in page's to show, like `/signin`'s own: it no longer ends a trial on the browser or sends it to the start page (`client/app/core/session-expired.interceptor.ts`).
+- Removing the last factor, by a route or by `clear_mfa.ts --clear`, sends one `mfa-off` email instead of a removal notice per factor; `--notify` sends `accountMail.sendMfaClearNotice`.
+- A change on the account page confirmed with a factor cancels a pending `mfa.clearRequestedAt`, as a sign-in with one does (`docs/data-requests.md` says `--notify` must then be run again).
+- The account section shows `mfa-not-on` (and `totp-none`, `totp-exists`, `passkey-not-found`) by its code when it was out of date, and loads itself again.
+- CI's Docker job sets the public compose test `MFA_KEY` itself. The OAuth ADR is 0015 in `docs/integrations-plan.md`; the next free ADR number is 0019.
+- `e2e/mfa.spec.js` and the two-step test in `e2e/accessibility.spec.js` run: an authenticator app set up on the account page, sign-in with a code and with a recovery code; a passkey added, passkey-first sign-in by autofill and by the button, renamed, removed down to the `mfa-off` email; no section for a trial; a confirmed email first; a wrong code during a trial leaves the trial; five wrong codes go back to the password; axe on the section and the second step, light and dark.
+
+**Before production** (not done; nothing in AWS has changed):
+
+- Create the SSM SecureString `/glazecalc/mfa-key` (32 random bytes, base64) and keep an offline copy, before merging to master: `deploy.sh` stops without it.
+- The about 70 new English messages and the four English-only emails go to the next translation wave (item 19, decision 9); until then other languages show them in English.
+- Phase 2: real-browser rounds on staging (below) with a phone authenticator app, a platform passkey (Windows Hello or iCloud Keychain) and real email.
+
+**Phase 2, staging, still to do** (all of "Phase 2: staging on the same instance" below): `deploy/compose.staging.yaml`, `deploy/staging.sh`, `scripts/build-staging.sh`, the "Staging" section of `deploy/README.md`, and the owner's AWS steps (the DNS record, the three `/glazecalc/staging/*` SSM parameters, certbot for the extra name, the `glazecalc_staging` database user, a swap file). Phase 1 already reads every setting staging needs from the environment (`SITE_URL`, `SITE_LABEL`, `MFA_KEY`, `NOINDEX`, `MAIL_ALLOWLIST`).
+
+**Later:** item 18 (MFA required for the admin role) and item 19 (the emails translated).
+
 ## Two phases (owner, 14 October 2026)
 
 **Phase 1** builds two-step sign-in as below. **Phase 2** adds a **staging copy of the site on the same EC2 instance**, deployed by hand, without CI/CD, so MFA can go through several rounds of real-browser testing (real passkeys, real authenticator apps, real email) before production. CI/CD stays as it is for production.
