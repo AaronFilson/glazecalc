@@ -33,7 +33,9 @@
   // Lora, served with the app (angular.json), so every device and test lays out the same; Noto Serif for what
   // Lora lacks: Greek, and the subscripts of formulas (SiO₂). The subscripts are named first: Lora's math file
   // claims their range without having them, so the browser would fetch it (30 kB) before finding Noto's.
-  --gc-font: 'Noto Serif Sub', 'Lora Variable', 'Noto Serif Fill', Georgia, serif;
+  // Until Lora has arrived, the device's Georgia or Noto Serif sized to Lora's width (the fallbacks below).
+  --gc-font:
+    'Noto Serif Sub', 'Lora Variable', 'Noto Serif Fill', 'Lora Fallback', 'Lora Fallback Noto', Georgia, serif;
 }
 
 // Noto Serif's Greek and math faces only (its Latin is Lora's to set), from @fontsource-variable/noto-serif.
@@ -65,6 +67,27 @@
   src: url('../node_modules/@fontsource-variable/noto-serif/files/noto-serif-math-wght-normal.woff2')
     format('woff2-variations');
   unicode-range: U+2070-2071, U+2074-208E, U+2090-209C;
+}
+
+// What the text is set in until Lora's file arrives: a serif of the device's, scaled so that a line holds the
+// same words as in Lora and the page does not move when Lora replaces it. Georgia's text is 5.4% narrower than
+// Lora's and Noto Serif's (Android) 1.9% wider; the heights are Lora's (1006 and 274 per 1000), divided by
+// the same factor, as size-adjust scales them too.
+@font-face {
+  font-family: 'Lora Fallback';
+  src: local('Georgia');
+  size-adjust: 105.4%;
+  ascent-override: 95.4%;
+  descent-override: 26%;
+  line-gap-override: 0%;
+}
+@font-face {
+  font-family: 'Lora Fallback Noto';
+  src: local('Noto Serif'), local('NotoSerif-Regular');
+  size-adjust: 98.1%;
+  ascent-override: 102.5%;
+  descent-override: 27.9%;
+  line-gap-override: 0%;
 }
 
 @mixin dark-tokens {
