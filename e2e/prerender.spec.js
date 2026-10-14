@@ -172,6 +172,35 @@ test.describe('prerendered pages', () => {
       );
     });
 
+    test('a Japanese and a Turkish guide are in their language, with their og:locale and the others', async ({
+      page
+    }) => {
+      const japanese = await page.goto('/ja/guides/firing');
+      expect(japanese.headers()['content-language']).toBe('ja');
+      await expect(page.locator('html')).toHaveAttribute('lang', 'ja');
+      await expect(page.locator('h1')).toHaveText('基本の窯焚き');
+      // Written for Japan: the SK cone version, with a button for each other one.
+      await expect(page.locator('.guide-version')).toContainText('SK コーン');
+      await expect(page.locator('.guide-version button')).toHaveCount(2);
+      expect(await meta(page, 'property="og:locale"')).toBe('ja_JP');
+      const alternates = await page
+        .locator('head meta[property="og:locale:alternate"]')
+        .evaluateAll((tags) => tags.map((tag) => tag.getAttribute('content')));
+      expect(alternates).toEqual(expect.arrayContaining(['en_US', 'de_DE', 'tr_TR']));
+      expect(alternates).not.toContain('ja_JP');
+      // Japanese is set in the device's own font: the page preloads Lora's Latin and the subscripts at most.
+      const preloads = await page
+        .locator('head link[rel="preload"][as="font"]')
+        .evaluateAll((links) => links.map((link) => link.getAttribute('href')));
+      for (const href of preloads) expect(href).toMatch(/^media\/(lora-latin|noto-serif-math)-wght-normal-/);
+
+      const turkish = await page.goto('/tr/guides/firing');
+      expect(turkish.headers()['content-language']).toBe('tr');
+      await expect(page.locator('html')).toHaveAttribute('lang', 'tr');
+      await expect(page.locator('h1')).toHaveText('Basit bir fırında pişirim');
+      expect(await meta(page, 'property="og:locale"')).toBe('tr_TR');
+    });
+
     test('the structured data is in the page, before any script', async ({ page }) => {
       await page.goto('/guides/firing');
       expect(await jsonLd(page)).toHaveLength(1);
@@ -203,7 +232,7 @@ test.describe('prerendered pages', () => {
     await expect(page.locator('.guide p a[data-test-mark]')).toHaveCount(1);
   });
 
-  for (const language of ['', '/de', '/el', '/ga']) {
+  for (const language of ['', '/de', '/el', '/ga', '/ja', '/tr']) {
     test(`no hydration mismatch on any public page in ${language || '/en'}`, async ({ page }) => {
       const problems = [];
       page.on('console', (message) => {
@@ -216,6 +245,22 @@ test.describe('prerendered pages', () => {
       expect(problems).toEqual([]);
     });
   }
+
+  test.describe('read from Japan', () => {
+    test.use({ locale: 'ja-JP' });
+
+    test('a Japanese guide keeps its SK version once the app is up, and its buttons switch it', async ({ page }) => {
+      await page.goto('/ja/guides/firing');
+      await appStarted(page);
+      const version = page.locator('.guide-version');
+      await expect(version).toContainText('SK コーン');
+      await version.getByRole('button', { name: 'オルトンコーンで焼成する場合を表示' }).click();
+      await expect(version).toContainText('コーンで焼成する場合の内容');
+      await expect(version.getByRole('button', { name: 'SK コーン（JIS R 8101）で焼成する場合を表示' })).toBeVisible();
+      await version.getByRole('button', { name: '温度で焼成する場合を表示' }).click();
+      await expect(version).toContainText('温度で焼成する場合の内容');
+    });
+  });
 
   test('a guide asks for no messages or text before the app is ready', async ({ page }) => {
     const early = [];

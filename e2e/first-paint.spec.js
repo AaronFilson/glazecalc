@@ -12,6 +12,19 @@ test('a saved language opens an English page in it', async ({ page }) => {
   await expect(page.locator('h1')).toHaveText('Anleitungen');
 });
 
+test('a saved Japanese or Turkish opens an English page in it', async ({ page }) => {
+  for (const [code, heading] of [
+    ['ja', 'ガイド'],
+    ['tr', 'Rehberler']
+  ]) {
+    await page.addInitScript((saved) => globalThis.localStorage.setItem('language', saved), code);
+    await page.goto('/guides');
+    await expect(page).toHaveURL(new RegExp(`/${code}/guides$`));
+    await expect(page.locator('html')).toHaveAttribute('lang', code);
+    await expect(page.locator('h1')).toHaveText(heading);
+  }
+});
+
 test('a signed-in reader sent from / to /home never sees the landing page', async ({ page }) => {
   await signUpAndSignIn(page);
   // Every frame until the page changes: is any of the landing page's text on screen?
