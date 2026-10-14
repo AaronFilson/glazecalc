@@ -20,6 +20,12 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 - **Ready for a staging copy:** `SITE_URL`, `SITE_LABEL`, `NOINDEX` and `MAIL_ALLOWLIST` set,
   from the environment alone, the address passkeys belong to, a "Staging" label, no indexing and
   mail to the owner only.
+- **A staging copy on the production instance**, deployed by hand for testing a branch in real
+  browsers: `scripts/build-staging.sh` builds any commit on the owner's PC for arm64 and pushes it
+  (or uploads it to S3); `deploy/staging.sh` runs it at staging.glazecalcapp.com on port 3001 in
+  its own Compose project, with its own MongoDB database and user, secrets and mail allowlist, and
+  can stop it, empty its database and report on it; `enable-https.sh --with-staging` adds the name
+  to the certificate and nginx. The owner's one-time steps are in deploy/README.md, "Staging".
 - **Pages that search engines and link previews can read.** The public pages (home, guides,
   advice, about, privacy, sign-up) are drawn to plain HTML when the app is built, in every
   language, so the text is there before any script runs; the app then takes the page over in
@@ -278,6 +284,9 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Changed
 
+- **The Docker image's dependency and client build stages run on the build machine's own platform**
+  (`--platform=$BUILDPLATFORM`), so a cross build for arm64 needs no emulation for the Angular
+  build. CI builds each platform natively, so its images are the same as before.
 - **Lora, served with the app**, for every heading and paragraph, with Noto Serif for what Lora lacks
   (Greek, and the subscripts of formulas such as SiO₂). A page now lays out the same on every device
   instead of in each one's own font, and the browser tests measure what people see.
