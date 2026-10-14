@@ -2,9 +2,11 @@ import mongoose from 'mongoose';
 import { api, expect, makeUser, sessionToken } from './support/app.ts';
 import * as mail from './support/mail.ts';
 import { deleteExpiredTrial, reapplyDeletions } from '../lib/account_data.ts';
+import AuthChallenge from '../models/auth_challenge.ts';
 import Deletion, { KEEP_DAYS } from '../models/deletion.ts';
 import Note from '../models/note.ts';
 import PasswordReset from '../models/password_reset.ts';
+import PendingSignIn from '../models/pending_sign_in.ts';
 import Recipe from '../models/recipe.ts';
 import Trash from '../models/trash.ts';
 import User from '../models/user.ts';
@@ -144,6 +146,49 @@ describe('deletion log', () => {
     // Re-applying again changes nothing, and adds nothing to the log.
     expect(await reapplyDeletions()).to.eql({ accounts: 0, records: 0 });
     expect(await logOf(owner.user._id)).to.have.length(1);
+  });
+
+  it('removes two-step sign-in in progress with the account, in every way it is deleted', async () => {
+    const soon = () => new Date(Date.now() + DAY);
+    const inProgress = (userId: mongoose.Types.ObjectId) =>
+      Promise.all([
+        AuthChallenge.create({ userId, kind: 'passkey-confirm', challenge: 'c-' + String(userId), expiresAt: soon() }),
+        AuthChallenge.create({ userId, kind: 'totp-add', secret: 'v1.a.b.c', expiresAt: soon() }),
+        PendingSignIn.create({ tokenId: 't-' + String(userId), userId, tokenVersion: 0, expiresAt: soon() })
+      ]);
+    const countOf = async (userId: mongoose.Types.ObjectId) =>
+      (await AuthChallenge.countDocuments({ userId })) + (await PendingSignIn.countDocuments({ userId }));
+
+    // Deleted by its owner, then brought back by a backup and deleted again.
+    const owner = await makeUser();
+    const other = await makeUser();
+    await inProgress(owner.user._id);
+    await inProgress(other.user._id);
+    const backup = await Promise.all(
+      [AuthChallenge, PendingSignIn].map((Model) => Model.collection.find({ userId: owner.user._id }).toArray())
+    );
+    const res = await api()
+      .delete('/deleteuser/' + owner.user._id)
+      .set('Authorization', 'Bearer ' + owner.token)
+      .send({ password: owner.password });
+    expect(res).to.have.status(200);
+    expect(await countOf(owner.user._id)).to.eql(0);
+    await AuthChallenge.collection.insertMany(backup[0]!);
+    await PendingSignIn.collection.insertMany(backup[1]!);
+    await reapplyDeletions();
+    expect(await countOf(owner.user._id)).to.eql(0);
+    expect(await countOf(other.user._id)).to.eql(3);
+
+    // A trial swept once it runs out.
+    const expired = await User.create({
+      email: 'swept-mfa-' + Date.now() + '@guest.invalid',
+      password: 'x',
+      guest: true,
+      expiresAt: new Date(Date.now() - DAY)
+    });
+    await inProgress(expired._id);
+    expect(await deleteExpiredTrial(expired._id, new Date())).to.eql(true);
+    expect(await countOf(expired._id)).to.eql(0);
   });
 
   it('sends a confirmation that says how long backups keep the account', async () => {
