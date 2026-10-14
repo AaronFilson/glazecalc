@@ -1,3 +1,6 @@
+import jwt from 'jsonwebtoken';
+import * as secondStep from '../lib/second_step.ts';
+import User from '../models/user.ts';
 import { api, expect, makeUser, sessionToken, uniqueEmail } from './support/app.ts';
 
 const DAY = 24 * 60 * 60;
@@ -80,6 +83,7 @@ describe('how long a sign-in lasts', () => {
         .send({ current: 'old-password', password: 'new-password' });
       expect(res).to.have.status(200);
       const cookie = cookieOf(res);
+      expect(cookie).to.not.match(/;\s*Domain=/i);
       if (keep) expect(maxAge(cookie)).to.eql(7 * DAY);
       else expect(cookie).to.not.match(/Max-Age|Expires/i);
     }
@@ -100,5 +104,79 @@ describe('how long a sign-in lasts', () => {
       .get('/verify')
       .set('Authorization', 'Bearer ' + token);
     expect(cookieOf(verified)).to.eql('');
+  });
+});
+
+// Two-step sign-in (docs/mfa-plan.md, item 9): the choice made with the
+// password carries through the second step, whatever the second request
+// says. The factor check is stream A's; it is stood in for here.
+describe('how long a two-step sign-in lasts', () => {
+  const real = { ...secondStep.checks };
+  beforeEach(() => {
+    Object.assign(secondStep.checks, {
+      checkFactor: async (_user: unknown, proof: { code?: string }) =>
+        proof.code === '123456' ? { ok: true, kind: 'totp' } : { ok: false, code: 'code-wrong' }
+    });
+  });
+  afterEach(() => {
+    Object.assign(secondStep.checks, real);
+  });
+
+  const mfaUser = async () => {
+    const made = await makeUser();
+    await User.updateOne(
+      { _id: made.user._id },
+      { $set: { mfa: { totp: { secret: 'v1.x', lastStep: 0, addedAt: new Date() }, passkeys: [], recoveryCodes: [] } } }
+    );
+    return made;
+  };
+
+  it('keeps the sign-in when the password step asked, and only then', async () => {
+    for (const keep of [false, true]) {
+      const { email, password } = await mfaUser();
+      const step = await api()
+        .get('/signin')
+        .set('authorization', basic(email, password))
+        .set(keep ? KEEP : {});
+      expect(step.body.code).to.eql('second-step');
+      expect(cookieOf(step)).to.eql('');
+      const res = await api()
+        .post('/signin/second-step')
+        // The header says nothing here: the password step's choice decides.
+        .set(keep ? {} : KEEP)
+        .send({ pending: step.body.pending, code: '123456' });
+      expect(res).to.have.status(200);
+      const cookie = cookieOf(res);
+      expect(cookie).to.not.match(/;\s*Domain=/i);
+      if (keep) expect(maxAge(cookie)).to.eql(7 * DAY);
+      else expect(cookie).to.not.match(/Max-Age|Expires/i);
+      // The kind of sign-in is in the token too, for routes that renew the cookie.
+      const claims = jwt.decode(sessionToken(res)!) as jwt.JwtPayload;
+      expect(claims.ss).to.eql(keep ? undefined : true);
+    }
+  });
+});
+
+// Staging and production share no sessions: every cookie is host-only.
+describe('session cookies stay on their own host', () => {
+  it('never names a Domain in Set-Cookie', async () => {
+    const { email, password, token } = await makeUser();
+    const replies = [
+      await api().get('/signin').set('authorization', basic(email, password)),
+      await api()
+        .post('/signup')
+        .send({ email: uniqueEmail('host'), password: 'password123' }),
+      await api().post('/guest').send({}),
+      await api().post('/signout'),
+      await api()
+        .put('/password')
+        .set('Authorization', 'Bearer ' + token)
+        .send({ current: password, password: 'another-password' })
+    ];
+    for (const res of replies) {
+      const set = ([] as string[]).concat((res.headers['set-cookie'] as string[] | string | undefined) ?? []);
+      expect(set.length, res.request.url).to.be.above(0);
+      for (const cookie of set) expect(cookie, res.request.url).to.not.match(/;\s*Domain=/i);
+    }
   });
 });
