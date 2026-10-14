@@ -44,9 +44,7 @@ describe('ServerFilesBackend', () => {
 
   it('reads the address the render has made absolute', async () => {
     const target = backend();
-    const reply = (await firstValueFrom(
-      target.handle(get('http://localhost/i18n/de.json'))
-    )) as HttpResponse<unknown>;
+    const reply = (await firstValueFrom(target.handle(get('http://localhost/i18n/de.json')))) as HttpResponse<unknown>;
     expect(reply.body).toEqual({ hello: 'Hallo' });
     expect(fetched).not.toHaveBeenCalled();
   });

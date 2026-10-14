@@ -54,7 +54,7 @@ describe('client routes', function () {
       const nonce = /'nonce-([^']+)'/.exec(String(first.headers['content-security-policy']))?.[1];
       expect(nonce).to.be.a('string');
       expect(first.text).not.to.include('__GC_NONCE__');
-      expect(first.text.match(new RegExp(`nonce="${nonce}"`, 'gi'))?.length).to.be.greaterThan(1);
+      expect(first.text.split(`nonce="${nonce}"`).length - 1).to.be.greaterThan(1);
       expect(second.text).not.to.include(`nonce="${nonce}"`);
       expect(first.headers['cache-control']).to.equal('no-cache');
     });
