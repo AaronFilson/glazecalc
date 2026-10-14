@@ -113,7 +113,7 @@
     "setBy": "Fastsat i <link>{law}</link>.",
     "lowerThanEu": "Lavere end EU’s bindende grænseværdi på {value} mg/m³.",
     "sameAsEu": "Den samme som EU’s bindende grænseværdi.",
-    "recommendedBy": "{by} ({abbr}) anbefaler denne værdi i <link>{title}</link>. Den er ikke fastsat ved lov.",
+    "recommendedBy": "{abbr} ({by}) anbefaler denne værdi i <link>{title}</link>. Den er ikke fastsat ved lov.",
     "respirators": "Støvmasker sælges her efter klasse: {everyday} til glasurstøv eller {higher} for mere beskyttelse (<link>de officielle klasser</link>).",
     "unknown": "Vi kunne ikke bekræfte den nationale grænseværdi i {region}. EU’s bindende grænseværdi på {value} mg/m³ gælder i alle medlemsstater.",
     "noData": "Vi har endnu ikke bekræftet grænseværdien i {region}.",

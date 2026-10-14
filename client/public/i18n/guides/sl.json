@@ -113,7 +113,7 @@
     "setBy": "Določa jo <link>{law}</link>.",
     "lowerThanEu": "Nižja od zavezujoče mejne vrednosti EU, ki znaša {value} mg/m³.",
     "sameAsEu": "Enaka zavezujoči mejni vrednosti EU.",
-    "recommendedBy": "To vrednost priporoča {by} ({abbr}) v dokumentu <link>{title}</link>. Ni zakonsko predpisana.",
+    "recommendedBy": "To vrednost priporoča {abbr} ({by}) v dokumentu <link>{title}</link>. Ni zakonsko predpisana.",
     "respirators": "Zaščitne dihalne maske proti prahu se tu prodajajo po razredih: {everyday} za prah glazur ali {higher} za večjo zaščito (<link>uradni razredi</link>).",
     "unknown": "Nacionalne mejne vrednosti v državi {region} nismo mogli potrditi. Zavezujoča mejna vrednost EU, {value} mg/m³, velja v vsaki državi članici.",
     "noData": "Mejne vrednosti v državi {region} še nismo potrdili.",

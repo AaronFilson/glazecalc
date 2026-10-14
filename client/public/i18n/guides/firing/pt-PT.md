@@ -280,33 +280,33 @@ Uma **correção do cone** (offset) é uma regulação do controlador que sobe o
 
 :::sk
 
-## Firing to SK cones {#sk-cones lang=en}
+## Cozer com cones SK {#sk-cones}
 
-SK cones are the pyrometric cones made to Japan's standard, JIS R 8101, and sold in Japan by dealers such as Yuko Trading (有恒商事). Like any cone, an SK cone measures heatwork, not temperature alone: it softens and bends over when the ware has had enough heat, and you read how far it bent. Witness cones, reading how far a cone has bent, and holds work for it as for any cone. This section names each cone's system, and never turns an SK number into another system's number: the numbers of different cone series are not interchangeable.
+Os cones SK são os cones pirométricos fabricados segundo a norma japonesa JIS R 8101 e vendidos no Japão por revendedores como a Yuko Trading (有恒商事). Como qualquer cone, um cone SK mede o trabalho térmico{{en: heatwork}}, e não apenas a temperatura: amolece e dobra quando as peças receberam calor suficiente, e depois lê-se quanto dobrou. Os cones testemunho{{en: witness cones}}, a leitura de quanto um cone dobrou e os patamares{{en: holds}} funcionam com ele como com qualquer cone. Esta secção indica o sistema de cada cone e nunca converte um número SK no número de outro sistema: os números das diferentes séries de cones não são intercambiáveis.
 
 > [!NOTE]
-> Always write "SK" before the number. Many older Japanese recipes say only "SK 8" or "SK 9" without saying whose cone. Kyoto cones and SK cones to JIS carry the same numbers but bend at different temperatures (see Kyoto cones, below).
+> Escreva sempre «SK» antes do número. Muitas receitas japonesas antigas dizem apenas «SK 8» ou «SK 9», sem dizer de que cone se trata. Os cones de Quioto e os cones SK segundo a JIS têm os mesmos números, mas dobram a temperaturas diferentes (ver «Cones de Quioto», mais abaixo).
 
-### The large cones
+### Os cones grandes
 
-The standard has two sizes. Large cones (大型コーン) are "mainly used for measuring the degree of firing" (焼度測定), which is what a potter wants. Small cones (SK 26 to SK 42, at the top of the range) are "mainly used for refractoriness tests" and are not covered here. The table below gives the large cones from SK 022 to SK 20.
+A norma tem dois tamanhos. Os cones grandes (大型コーン) são «usados principalmente para medir o grau de cozedura» (焼度測定), que é o que interessa a um ceramista. Os cones pequenos (do SK 26 ao SK 42, no topo da gama) são «usados principalmente para ensaios de refratariedade» e não são tratados aqui. A tabela abaixo dá os cones grandes do SK 022 ao SK 20.
 
-The numbers run from SK 022, the coolest, up to SK 20 here. Between SK 015 and SK 6 the printed numbers carry an "a" (SK 015a, SK 6a); write it as printed.
+Aqui, os números vão do SK 022, o mais frio, até ao SK 20. Entre o SK 015 e o SK 6, os números impressos têm um «a» (SK 015a, SK 6a); escreva-o tal como vem impresso.
 
-### Setting large cones
+### Colocar os cones grandes
 
-Set each large cone in a plaque or a pat of clay, leaning toward its bending face. As with any cone, keep the height and the lean the same from firing to firing, because a difference in either changes how far it bends. Set the three cones of the pack (below) together, deep in the kiln near the middle of the load, where they get the heat the ware gets, yet where you can see them through a peephole; before you close the kiln, check that you can see all three.
+Coloque cada cone grande numa placa de cones ou num pedaço de barro, inclinado para o lado da sua face de dobra. Como com qualquer cone, mantenha a altura e a inclinação iguais de cozedura para cozedura, porque uma diferença em qualquer delas muda o quanto o cone dobra. Coloque juntos os três cones do conjunto{{en: cone pack}} (ver abaixo), bem dentro do forno, perto do centro da carga, onde recebem o calor que as peças recebem, mas onde os consiga ver por um óculo; antes de fechar o forno, verifique se consegue ver os três.
 
-### Guide, firing and guard cones
+### Cone guia, cone de cozedura e cone de proteção
 
-Cones are sold and set as three: a guide cone, a firing cone at the target, and a guard cone. Take the firing cone as the SK number your recipe or clay names, the guide cone as the next cooler cone (one row up in the table) and the guard cone as the next hotter one. When the guide cone starts to bend, the end is near; when the guard cone bends, the firing has gone too far.
+Os cones vendem-se e colocam-se em grupos de três: um cone guia, um cone de cozedura no alvo e um cone de proteção. Tome como cone de cozedura o número SK que a sua receita ou o seu barro indica, como cone guia o cone imediatamente mais frio (uma linha acima na tabela) e como cone de proteção o imediatamente mais quente. Quando o cone guia começa a dobrar, o fim está perto; quando o cone de proteção dobra, a cozedura foi longe demais.
 
-### The SK chart
+### A tabela SK
 
-Table: SK large cones (JIS R 8101): the nominal (JIS) temperature of each
-Label: SK chart
+Table: Cones SK grandes (JIS R 8101): a temperatura nominal (JIS) de cada um
+Label: Tabela SK
 
-| Cone    | Nominal (JIS) temperature |
+| Cone    | Temperatura nominal (JIS) |
 | ------- | ------------------------: |
 | SK 022  |       {{1112 °F; 600 °C}} |
 | SK 021  |       {{1202 °F; 650 °C}} |
@@ -351,21 +351,21 @@ Label: SK chart
 | SK 19   |      {{2768 °F; 1520 °C}} |
 | SK 20   |      {{2786 °F; 1530 °C}} |
 
-Every figure is nominal (JIS): the temperature the standard gives for the cone, as printed in Yuko Trading's table. The table does not print a heating rate. The standard gives reference temperatures. At a potter's rate of about 100 °C/h, Kyoto's municipal institute measured its own Kyoto cones bending 40–70 °C cooler than the JIS figure for the same number; we found no such measurements for SK cones to JIS. Set a witness cone and compare.
+Todos os valores são nominais (JIS): a temperatura que a norma dá para o cone, tal como impressa na tabela da Yuko Trading. A tabela não indica uma velocidade de aquecimento. A norma dá temperaturas de referência. A uma velocidade habitual para um ceramista, de cerca de 100 °C/h, o instituto municipal de Quioto mediu os seus próprios cones de Quioto a dobrar 40–70 °C abaixo do valor JIS para o mesmo número; não encontrámos medições deste tipo para os cones SK segundo a JIS. Coloque um cone testemunho e compare.
 
-### Kyoto cones
+### Cones de Quioto
 
-Kyoto cones (京都ゼーゲル), made by Kyoto's municipal institute, are no longer made: news reports say the institute ended production at the close of fiscal 2009. They carry the same numbers as SK cones to JIS but bend cooler: a Kyoto cone mostly bends at about the temperature of the SK cone to JIS two numbers lower. A recipe from Kyoto that says "SK 8" may mean a Kyoto cone. The institute has published advice for potters moving from Kyoto cones to Orton cones, and substitutes Orton cone 10 for its own Kyoto SK 12; that is the institute's choice from its own measurements at 100 °C/h, and applies to no other cone.
+Os cones de Quioto (京都ゼーゲル), feitos pelo instituto municipal de Quioto, já não são fabricados: segundo notícias da imprensa, o instituto terminou a produção no fim do ano fiscal de 2009. Têm os mesmos números que os cones SK segundo a JIS, mas dobram mais frios: um cone de Quioto dobra, na maioria dos casos, a cerca da temperatura do cone SK segundo a JIS dois números abaixo. Uma receita de Quioto que diga «SK 8» pode referir-se a um cone de Quioto. O instituto publicou conselhos para os ceramistas que passam dos cones de Quioto para os cones Orton, e substitui o seu próprio SK 12 de Quioto pelo cone Orton 10; é uma escolha do instituto, feita a partir das suas próprias medições a 100 °C/h, e não se aplica a nenhum outro cone.
 
-### Orton cones sold in Japan
+### Cones Orton vendidos no Japão
 
-Orton self-supporting cones are sold in Japan under the name 立つゼーゲル ("standing Seger"), because they need no plaque or stand. They are Orton cones, with Orton's numbers and Orton's chart (above): fire to one only by its Orton number, and keep SK and Orton cones in separate packs, never in the same one.
+Os cones autossuportados Orton vendem-se no Japão com o nome 立つゼーゲル («Seger de pé»), porque não precisam de placa nem de suporte. São cones Orton, com os números e a tabela da Orton (acima): coza com eles apenas pelo número Orton, e mantenha os cones SK e os cones Orton em conjuntos separados, nunca no mesmo.
 
-### Sources for SK cones
+### Fontes sobre os cones SK
 
-- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (the SK table, checked 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
-- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (in force, reconfirmed 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
-- [Kyoto Municipal Institute of Industrial Technology and Culture: points to note when moving from Kyoto cones to Orton cones](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
+- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (a tabela SK, consultada em 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
+- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (em vigor, reconfirmada em 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [Kyoto Municipal Institute of Industrial Technology and Culture: pontos a ter em conta ao passar dos cones de Quioto para os cones Orton](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
 
 :::
 

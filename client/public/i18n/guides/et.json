@@ -113,7 +113,7 @@
     "setBy": "Kehtestatud: <link>{law}</link>.",
     "lowerThanEu": "Madalam kui EL-i siduv piirnorm {value} mg/m³.",
     "sameAsEu": "Sama mis EL-i siduv piirnorm.",
-    "recommendedBy": "Seda väärtust soovitab {by} ({abbr}) dokumendis <link>{title}</link>. See ei ole seadus.",
+    "recommendedBy": "Seda väärtust soovitab {abbr} ({by}) dokumendis <link>{title}</link>. See ei ole seadus.",
     "respirators": "Tolmumaske müüakse siin klasside kaupa: glasuuritolmu jaoks {everyday} või suurema kaitse jaoks {higher} (<link>ametlikud klassid</link>).",
     "unknown": "Riiklikku piirnormi ei õnnestunud kinnitada (riik: {region}). EL-i siduv piirnorm {value} mg/m³ kehtib igas liikmesriigis.",
     "noData": "Piirnormi ei ole veel kinnitatud (riik: {region}).",

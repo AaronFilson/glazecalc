@@ -113,7 +113,7 @@
     "setBy": "Festgelegt in: <link>{law}</link>.",
     "lowerThanEu": "Niedriger als der verbindliche Grenzwert der EU von {value} mg/m³.",
     "sameAsEu": "Derselbe Wert wie der verbindliche Grenzwert der EU.",
-    "recommendedBy": "{by} ({abbr}) empfiehlt diesen Wert in der Veröffentlichung <link>{title}</link>. Er ist nicht gesetzlich verbindlich.",
+    "recommendedBy": "{abbr} ({by}) empfiehlt diesen Wert in der Veröffentlichung <link>{title}</link>. Er ist nicht gesetzlich verbindlich.",
     "respirators": "Staubschutzmasken werden hier nach Klassen verkauft: {everyday} für Glasurstaub oder {higher} für mehr Schutz (<link>die amtlichen Klassen</link>).",
     "unknown": "{region}: Den nationalen Grenzwert konnten wir nicht bestätigen. Der verbindliche Grenzwert der EU von {value} mg/m³ gilt in jedem Mitgliedstaat.",
     "noData": "{region}: Den dortigen Grenzwert haben wir noch nicht bestätigt.",

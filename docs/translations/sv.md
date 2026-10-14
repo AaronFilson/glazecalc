@@ -126,7 +126,8 @@ number and gender: "1 sparat recept, 2 sparade recept", "1 ny råvara, 3 nya rå
 "Ortonkägla 07, 976-987 °C", LM "Orton smältkägla" with numbers from 017 to 10 and the warning "Det finns käglor med
 nummer 06, 07, 08 och 6, 7, 8 se till att välja rätt." Potters write "kägla 6-7", "kägla 08 skröj" (KF 1659137, KF
 1560466), but also call any cone "segerkägla" (KF 1443725 "segerkäglorna") or "kon" (KF 1394270 "koner eller käglor").
-True Seger cones (SK) are a different series whose numbers do not match Orton's. So:
+True (German) Seger cones are a different series whose numbers do not match Orton's. "SK" in the app means only the
+Japanese cones to JIS R 8101 (section 2.11), never German Seger cones. So:
 
 - "cone 6" → "kägla 6"; "cone 06" → "kägla 06" (read "noll sex": kägla 06 is far cooler than kägla 6).
 - "Orton cone" → "Ortonkägla" (en; Ortonkäglan, Ortonkäglor); at the first mention on a page, and wherever systems are
@@ -134,7 +135,7 @@ True Seger cones (SK) are a different series whose numbers do not match Orton's.
 - "cone 04 bisque" → "skröjbränning till kägla 04"; "fire to cone 6" → "bränna till kägla 6"; "at cone 10" → "vid
   kägla 10"; "a cone 6 glaze" → "en glasyr för kägla 6"; "cone 5–6" → "kägla 5–6".
 - **Never** write "Segerkägla 6", "SK 6" or "kon 6" for an Orton number. "Segerkägla" appears only where the English
-  says "Seger cones", and then means the SK series.
+  says "Seger cones", and then means the German Seger series, never the Japanese SK cones.
 
 **The unity formula.** "Segerformel" (en; Segerformeln), with "(UMF)" after it the first time on a page: "Segerformeln
 (UMF)", then "Segerformeln". Swedish potters call it so (KF 1530013: "Seger formel säger vi väl?", and "gränsformler"
@@ -620,8 +621,9 @@ From terms.md, unchanged:
   Albany slip, Bayferrox, Mason stains, AMACO.
 - **Sources, agencies and suppliers:** Glazy, Digitalfire, Ceramic Arts Network, Ceramics Monthly, HSE, OSHA, NIOSH,
   IARC, ECHA, FDA, CDC, EPA, NHS, COSHH, NEPSI, Safe Work Australia, WorkSafe New Zealand; Laguna, Potclays,
-  Potterycrafts, Valentine Clays, Sibelco, Imerys, Walker Ceramics and the other suppliers named; the poison services
-  in `safety/en.json`.
+  Potterycrafts, Valentine Clays, Sibelco, Imerys, Walker Ceramics and the other suppliers named; the poison services' native
+  official names in `safety/en.json` (an English descriptive name, such as "Japan Poison Information Center, Osaka",
+  is translated, and the native name kept exactly in brackets after it).
 - **Placeholders and tags:** `{name}`, `{count}` and the rest, and `<b>`, `<settings>` and other tags.
 
 Added for Swedish:

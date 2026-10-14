@@ -105,7 +105,7 @@ after a colon unless a full quotation follows (MS).
   fails on the extra 100 %); never turn "cone 6" into a temperature.
 - Ordinals: 1er, 2e (not 2ème). "×10⁻⁶/°C" and "x 10^-7/K" stay as written.
 
-**Cones.** The app's cones are Orton's American cones; Europeans also know Seger cones (SK), whose numbers look the same
+**Cones.** The app's cones are Orton's American cones; Europeans also know Seger cones, whose numbers look the same
 but bend at other temperatures (44–52 °C apart at 05 and 04). Never equate them.
 
 - "cone 6" → « cône 6 »; "cone 06" → « cône 06 » (read « zéro six »; the zero always stays); plural « cônes 5–6 ».
@@ -115,7 +115,7 @@ but bend at other temperatures (44–52 °C apart at 05 and 04). Never equate th
   « cône Orton montre fusible autoportante ». Generic: « cône pyrométrique ». The old French word « montre fusible »
   ([fr.wikipedia](https://fr.wikipedia.org/wiki/Montre_fusible): « un cône pyroscopique ou une montre fusible ») may be
   given once as an explanation in the guides, never as the term.
-- Seger cones: « cônes de Seger (SK) ». Write "Orton" wherever the English does.
+- Seger cones: « cônes de Seger », never « SK »: in Glazecalc « SK » means only the Japanese cones to JIS R 8101. Write "Orton" wherever the English does.
 - French forums write « Δ6 »; Glazecalc does not.
 
 **The unity formula.** « formule de Seger (UMF) » the first time on a page (in the guides, in each section where it

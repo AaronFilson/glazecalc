@@ -786,7 +786,8 @@ shops, laws and agencies stay as they are written there. {region} never takes a 
 From research_notes/search-terms-2026-10-14.md: searchers type “Seger formülü (hesaplama)”, “seramik sır reçeteleri”, “sır
 reçetesi hazırlama” and “seramik sırları”. Bare “sır” means a secret (and an exam ranking), so the landing title (“Glazecalc:
 ücretsiz seramik sır hesaplama aracı”) and every `meta.*` description that says sır also says “seramik”. The unity formula
-is “Seger formülü (UMF)”, never “Seger” alone.
+is “Seger formülü (UMF)”, never “Seger” alone. Each description stays at 160 characters or fewer: shorten the wording,
+never drop a search term or “seramik”.
 
 ## 3. Never translated
 
@@ -819,7 +820,9 @@ From terms.md, unchanged:
 - **Sources, agencies and suppliers:** Glazy, Digitalfire, Ceramic Arts Network, Ceramics Monthly, HSE, OSHA, NIOSH,
   IARC, ECHA, FDA, CDC, EPA, NHS, COSHH, NEPSI, Safe Work Australia, WorkSafe New Zealand; Laguna, Potclays,
   Potterycrafts, Valentine Clays, Sibelco, Imerys, Walker Ceramics and the other suppliers named; the poison services
-  in `safety/en.json`.
+  in `safety/en.json`. A poison line whose English is a description with the official name in brackets is translated
+  in its descriptive part, the bracketed name kept exactly: “Japonya Zehir Bilgi Merkezi, Osaka (大阪中毒110番)”.
+  Türkiye’s own line is “Ulusal Zehir Danışma Merkezi (UZEM)”, its official name, not repeated in brackets.
 - **Placeholders and tags:** `{name}`, `{count}` and the rest, and `<b>`, `<settings>` and other tags. No suffix on a
   placeholder.
 

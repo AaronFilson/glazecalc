@@ -113,7 +113,7 @@
     "setBy": "Túto hodnotu stanovuje <link>{law}</link>.",
     "lowerThanEu": "Táto hodnota je nižšia ako záväzná limitná hodnota EÚ {value} mg/m³.",
     "sameAsEu": "Táto hodnota je rovnaká ako záväzná limitná hodnota EÚ.",
-    "recommendedBy": "Túto hodnotu odporúča {by} ({abbr}) v dokumente <link>{title}</link>. Nie je to zákon.",
+    "recommendedBy": "Túto hodnotu odporúča {abbr} ({by}) v dokumente <link>{title}</link>. Nie je to zákon.",
     "respirators": "Respirátory proti prachu sa tu predávajú podľa tried: {everyday} na prach z glazúr alebo {higher} pre vyššiu ochranu (<link>oficiálne triedy</link>).",
     "unknown": "Národnú limitnú hodnotu v krajine {region} sa nám nepodarilo overiť. Záväzná limitná hodnota EÚ {value} mg/m³ platí v každom členskom štáte.",
     "noData": "Limitnú hodnotu v krajine {region} sme zatiaľ neoverili.",

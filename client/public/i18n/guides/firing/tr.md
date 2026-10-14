@@ -280,92 +280,92 @@ Label: Bir sonraki pişirimin ayarlanması
 
 :::sk
 
-## Firing to SK cones {#sk-cones lang=en}
+## SK piramitleriyle pişirim {#sk-cones}
 
-SK cones are the pyrometric cones made to Japan's standard, JIS R 8101, and sold in Japan by dealers such as Yuko Trading (有恒商事). Like any cone, an SK cone measures heatwork, not temperature alone: it softens and bends over when the ware has had enough heat, and you read how far it bent. Witness cones, reading how far a cone has bent, and holds work for it as for any cone. This section names each cone's system, and never turns an SK number into another system's number: the numbers of different cone series are not interchangeable.
+SK piramitleri, Japonya’nın standardı JIS R 8101’e göre üretilen ve Japonya’da Yuko Trading (有恒商事) gibi bayilerin sattığı pirometrik piramitlerdir. Her piramit gibi SK piramidi de yalnızca sıcaklığı değil, ısı işini{{en: heatwork}} ölçer: ürün yeterince ısı aldığında yumuşayıp eğilir ve siz ne kadar eğildiğini okursunuz. Gözlem piramitleri{{en: witness cones}}, bir piramidin ne kadar eğildiğini okumak ve bekletmeler, her piramitte olduğu gibi onun için de işe yarar. Bu bölüm her piramidin sistemini adıyla belirtir ve bir SK numarasını asla başka bir sistemin numarasına çevirmez: farklı piramit serilerinin numaraları birbirinin yerine kullanılamaz.
 
 > [!NOTE]
-> Always write "SK" before the number. Many older Japanese recipes say only "SK 8" or "SK 9" without saying whose cone. Kyoto cones and SK cones to JIS carry the same numbers but bend at different temperatures (see Kyoto cones, below).
+> Numaranın önüne her zaman “SK” yazın. Birçok eski Japon reçetesi yalnızca “SK 8” ya da “SK 9” der, kimin piramidi olduğunu söylemez. Kyoto piramitleri ve JIS’e uygun SK piramitleri aynı numaraları taşır ama farklı sıcaklıklarda eğilir (aşağıda Kyoto piramitleri bölümüne bakın).
 
-### The large cones
+### Büyük piramitler
 
-The standard has two sizes. Large cones (大型コーン) are "mainly used for measuring the degree of firing" (焼度測定), which is what a potter wants. Small cones (SK 26 to SK 42, at the top of the range) are "mainly used for refractoriness tests" and are not covered here. The table below gives the large cones from SK 022 to SK 20.
+Standartta iki boy vardır. Büyük piramitler (大型コーン) “esas olarak pişme derecesini ölçmek için kullanılır” (焼度測定); seramikçinin istediği de budur. Küçük piramitler (aralığın üst ucunda, SK 26’dan SK 42’ye kadar) “esas olarak refrakterlik testleri için kullanılır” ve burada ele alınmaz. Aşağıdaki tablo SK 022’den SK 20’ye kadar büyük piramitleri verir.
 
-The numbers run from SK 022, the coolest, up to SK 20 here. Between SK 015 and SK 6 the printed numbers carry an "a" (SK 015a, SK 6a); write it as printed.
+Numaralar burada en soğuğu olan SK 022’den SK 20’ye kadar gider. SK 015 ile SK 6 arasındaki basılı numaralar bir “a” taşır (SK 015a, SK 6a); bunu basıldığı gibi yazın.
 
-### Setting large cones
+### Büyük piramitlerin yerleştirilmesi
 
-Set each large cone in a plaque or a pat of clay, leaning toward its bending face. As with any cone, keep the height and the lean the same from firing to firing, because a difference in either changes how far it bends. Set the three cones of the pack (below) together, deep in the kiln near the middle of the load, where they get the heat the ware gets, yet where you can see them through a peephole; before you close the kiln, check that you can see all three.
+Her büyük piramidi bir altlığa ya da bir parça çamura, eğilme yüzüne doğru eğik olarak yerleştirin. Her piramitte olduğu gibi yüksekliği ve eğimi pişirimden pişirime aynı tutun, çünkü ikisinden birindeki fark piramidin ne kadar eğileceğini değiştirir. Grubun (aşağıda) üç piramidini birlikte, fırının derinliklerine, yükün ortasına yakın bir yere yerleştirin: orada ürünün aldığı ısıyı alırlar, yine de onları bir gözetleme deliğinden görebilirsiniz; fırını kapatmadan önce üçünü de görebildiğinizi kontrol edin.
 
-### Guide, firing and guard cones
+### Kılavuz, hedef ve koruma piramitleri
 
-Cones are sold and set as three: a guide cone, a firing cone at the target, and a guard cone. Take the firing cone as the SK number your recipe or clay names, the guide cone as the next cooler cone (one row up in the table) and the guard cone as the next hotter one. When the guide cone starts to bend, the end is near; when the guard cone bends, the firing has gone too far.
+Piramitler üçlü olarak satılır ve yerleştirilir: bir kılavuz piramit, hedefi gösteren bir hedef piramit ve bir koruma piramidi. Hedef piramit olarak reçetenizin ya da çamurunuzun belirttiği SK numarasını alın; kılavuz piramit olarak bir sonraki daha soğuk piramidi (tabloda bir satır yukarıdakini), koruma piramidi olarak da bir sonraki daha sıcak piramidi alın. Kılavuz piramit eğilmeye başladığında son yaklaşmıştır; koruma piramidi eğildiğinde pişirim fazla ileri gitmiştir.
 
-### The SK chart
+### SK tablosu
 
-Table: SK large cones (JIS R 8101): the nominal (JIS) temperature of each
-Label: SK chart
+Table: SK büyük piramitleri (JIS R 8101): her birinin nominal (JIS) sıcaklığı
+Label: SK tablosu
 
-| Cone    | Nominal (JIS) temperature |
-| ------- | ------------------------: |
-| SK 022  |       {{1112 °F; 600 °C}} |
-| SK 021  |       {{1202 °F; 650 °C}} |
-| SK 020  |       {{1238 °F; 670 °C}} |
-| SK 019  |       {{1274 °F; 690 °C}} |
-| SK 018  |       {{1310 °F; 710 °C}} |
-| SK 017  |       {{1346 °F; 730 °C}} |
-| SK 016  |       {{1382 °F; 750 °C}} |
-| SK 015a |       {{1454 °F; 790 °C}} |
-| SK 014a |       {{1499 °F; 815 °C}} |
-| SK 013a |       {{1535 °F; 835 °C}} |
-| SK 012a |       {{1571 °F; 855 °C}} |
-| SK 011a |       {{1616 °F; 880 °C}} |
-| SK 010a |       {{1652 °F; 900 °C}} |
-| SK 09a  |       {{1688 °F; 920 °C}} |
-| SK 08a  |       {{1724 °F; 940 °C}} |
-| SK 07a  |       {{1760 °F; 960 °C}} |
-| SK 06a  |       {{1796 °F; 980 °C}} |
-| SK 05a  |      {{1832 °F; 1000 °C}} |
-| SK 04a  |      {{1868 °F; 1020 °C}} |
-| SK 03a  |      {{1904 °F; 1040 °C}} |
-| SK 02a  |      {{1940 °F; 1060 °C}} |
-| SK 01a  |      {{1976 °F; 1080 °C}} |
-| SK 1a   |      {{2012 °F; 1100 °C}} |
-| SK 2a   |      {{2048 °F; 1120 °C}} |
-| SK 3a   |      {{2084 °F; 1140 °C}} |
-| SK 4a   |      {{2120 °F; 1160 °C}} |
-| SK 5a   |      {{2156 °F; 1180 °C}} |
-| SK 6a   |      {{2192 °F; 1200 °C}} |
-| SK 7    |      {{2246 °F; 1230 °C}} |
-| SK 8    |      {{2282 °F; 1250 °C}} |
-| SK 9    |      {{2336 °F; 1280 °C}} |
-| SK 10   |      {{2372 °F; 1300 °C}} |
-| SK 11   |      {{2408 °F; 1320 °C}} |
-| SK 12   |      {{2462 °F; 1350 °C}} |
-| SK 13   |      {{2516 °F; 1380 °C}} |
-| SK 14   |      {{2570 °F; 1410 °C}} |
-| SK 15   |      {{2615 °F; 1435 °C}} |
-| SK 16   |      {{2660 °F; 1460 °C}} |
-| SK 17   |      {{2696 °F; 1480 °C}} |
-| SK 18   |      {{2732 °F; 1500 °C}} |
-| SK 19   |      {{2768 °F; 1520 °C}} |
-| SK 20   |      {{2786 °F; 1530 °C}} |
+| Piramit | Nominal (JIS) sıcaklık |
+| ------- | ---------------------: |
+| SK 022  |    {{1112 °F; 600 °C}} |
+| SK 021  |    {{1202 °F; 650 °C}} |
+| SK 020  |    {{1238 °F; 670 °C}} |
+| SK 019  |    {{1274 °F; 690 °C}} |
+| SK 018  |    {{1310 °F; 710 °C}} |
+| SK 017  |    {{1346 °F; 730 °C}} |
+| SK 016  |    {{1382 °F; 750 °C}} |
+| SK 015a |    {{1454 °F; 790 °C}} |
+| SK 014a |    {{1499 °F; 815 °C}} |
+| SK 013a |    {{1535 °F; 835 °C}} |
+| SK 012a |    {{1571 °F; 855 °C}} |
+| SK 011a |    {{1616 °F; 880 °C}} |
+| SK 010a |    {{1652 °F; 900 °C}} |
+| SK 09a  |    {{1688 °F; 920 °C}} |
+| SK 08a  |    {{1724 °F; 940 °C}} |
+| SK 07a  |    {{1760 °F; 960 °C}} |
+| SK 06a  |    {{1796 °F; 980 °C}} |
+| SK 05a  |   {{1832 °F; 1000 °C}} |
+| SK 04a  |   {{1868 °F; 1020 °C}} |
+| SK 03a  |   {{1904 °F; 1040 °C}} |
+| SK 02a  |   {{1940 °F; 1060 °C}} |
+| SK 01a  |   {{1976 °F; 1080 °C}} |
+| SK 1a   |   {{2012 °F; 1100 °C}} |
+| SK 2a   |   {{2048 °F; 1120 °C}} |
+| SK 3a   |   {{2084 °F; 1140 °C}} |
+| SK 4a   |   {{2120 °F; 1160 °C}} |
+| SK 5a   |   {{2156 °F; 1180 °C}} |
+| SK 6a   |   {{2192 °F; 1200 °C}} |
+| SK 7    |   {{2246 °F; 1230 °C}} |
+| SK 8    |   {{2282 °F; 1250 °C}} |
+| SK 9    |   {{2336 °F; 1280 °C}} |
+| SK 10   |   {{2372 °F; 1300 °C}} |
+| SK 11   |   {{2408 °F; 1320 °C}} |
+| SK 12   |   {{2462 °F; 1350 °C}} |
+| SK 13   |   {{2516 °F; 1380 °C}} |
+| SK 14   |   {{2570 °F; 1410 °C}} |
+| SK 15   |   {{2615 °F; 1435 °C}} |
+| SK 16   |   {{2660 °F; 1460 °C}} |
+| SK 17   |   {{2696 °F; 1480 °C}} |
+| SK 18   |   {{2732 °F; 1500 °C}} |
+| SK 19   |   {{2768 °F; 1520 °C}} |
+| SK 20   |   {{2786 °F; 1530 °C}} |
 
-Every figure is nominal (JIS): the temperature the standard gives for the cone, as printed in Yuko Trading's table. The table does not print a heating rate. The standard gives reference temperatures. At a potter's rate of about 100 °C/h, Kyoto's municipal institute measured its own Kyoto cones bending 40–70 °C cooler than the JIS figure for the same number; we found no such measurements for SK cones to JIS. Set a witness cone and compare.
+Her değer nominaldir (JIS): standardın piramit için verdiği, Yuko Trading’in tablosunda basıldığı biçimiyle sıcaklık. Tabloda bir ısıtma hızı yazmaz. Standart referans sıcaklıklar verir. Seramikçilerin kullandığı yaklaşık 100 °C/h hızda Kyoto’nun belediye enstitüsü, kendi Kyoto piramitlerinin aynı numaranın JIS değerinden 40–70 °C daha düşük sıcaklıkta eğildiğini ölçmüştür; JIS’e uygun SK piramitleri için böyle ölçümler bulamadık. Bir gözlem piramidi koyun ve karşılaştırın.
 
-### Kyoto cones
+### Kyoto piramitleri
 
-Kyoto cones (京都ゼーゲル), made by Kyoto's municipal institute, are no longer made: news reports say the institute ended production at the close of fiscal 2009. They carry the same numbers as SK cones to JIS but bend cooler: a Kyoto cone mostly bends at about the temperature of the SK cone to JIS two numbers lower. A recipe from Kyoto that says "SK 8" may mean a Kyoto cone. The institute has published advice for potters moving from Kyoto cones to Orton cones, and substitutes Orton cone 10 for its own Kyoto SK 12; that is the institute's choice from its own measurements at 100 °C/h, and applies to no other cone.
+Kyoto’nun belediye enstitüsünün ürettiği Kyoto piramitleri (京都ゼーゲル) artık üretilmiyor: haberlere göre enstitü üretimi 2009 mali yılının sonunda durdurdu. JIS’e uygun SK piramitleriyle aynı numaraları taşırlar ama daha soğuk eğilirler: bir Kyoto piramidi çoğunlukla, iki numara aşağıdaki JIS’e uygun SK piramidinin sıcaklığı civarında eğilir. Kyoto’dan gelen ve “SK 8” diyen bir reçete bir Kyoto piramidini kastediyor olabilir. Enstitü, Kyoto piramitlerinden Orton piramitlerine geçen seramikçiler için tavsiyeler yayımlamıştır ve kendi Kyoto SK 12’sinin yerine 10 numaralı Orton piramidini kullanır; bu, enstitünün 100 °C/h hızda yaptığı kendi ölçümlerine dayanan kendi tercihidir ve başka hiçbir piramide uygulanmaz.
 
-### Orton cones sold in Japan
+### Japonya’da satılan Orton piramitleri
 
-Orton self-supporting cones are sold in Japan under the name 立つゼーゲル ("standing Seger"), because they need no plaque or stand. They are Orton cones, with Orton's numbers and Orton's chart (above): fire to one only by its Orton number, and keep SK and Orton cones in separate packs, never in the same one.
+Orton’un kendiliğinden ayaklı piramitleri, altlık ya da sehpa gerektirmedikleri için Japonya’da 立つゼーゲル (“ayakta duran Seger”) adıyla satılır. Bunlar Orton piramitleridir; Orton’un numaralarını taşır ve Orton’un tablosuna (yukarıda) göre eğilirler: böyle bir piramitle yalnızca Orton numarasına göre pişirin ve SK ile Orton piramitlerini asla aynı grupta değil, ayrı gruplarda tutun.
 
-### Sources for SK cones
+### SK piramitleri için kaynaklar
 
-- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (the SK table, checked 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
-- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (in force, reconfirmed 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
-- [Kyoto Municipal Institute of Industrial Technology and Culture: points to note when moving from Kyoto cones to Orton cones](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
+- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (SK tablosu, 14 Ekim 2026’da kontrol edildi)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
+- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (yürürlükte, 20 Ekim 2023’te yeniden onaylandı)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [Kyoto Municipal Institute of Industrial Technology and Culture: Kyoto piramitlerinden Orton piramitlerine geçerken dikkat edilecek noktalar](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
 
 :::
 

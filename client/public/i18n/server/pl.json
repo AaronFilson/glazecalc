@@ -21,11 +21,11 @@
   "reset-unavailable": "Resetowanie hasła przez e-mail nie jest jeszcze dostępne.",
   "signed-out-everywhere": "Wylogowano ze wszystkich urządzeń.",
   "email-unavailable": "Poczta e-mail nie jest jeszcze dostępna, więc nie możemy wysłać linku.",
-  "email-change-sent": "Wysłaliśmy link na nowy adres. Adres e-mail zmieni się po jego otwarciu. Link działa przez {hours} godz.",
+  "email-change-sent": "Wysłaliśmy link na nowy adres. Adres e-mail zmieni się po jego otwarciu. Link działa przez {hours, plural, one {# godzinę} few {# godziny} many {# godzin} other {# godziny}}.",
   "email-changed": "Adres e-mail został zmieniony. Proszę zalogować się ponownie przy użyciu nowego adresu.",
   "email-verified": "Adres e-mail został potwierdzony.",
   "email-link-bad": "Ten link jest nieprawidłowy lub wygasł. Należy poprosić o nowy.",
-  "verification-sent": "Wysłaliśmy nowy link na adres e-mail. Link działa przez {hours} godz.",
+  "verification-sent": "Wysłaliśmy nowy link na adres e-mail. Link działa przez {hours, plural, one {# godzinę} few {# godziny} many {# godzin} other {# godziny}}.",
   "already-verified": "Adres e-mail jest już potwierdzony.",
   "reset-link-bad": "Ten link do resetowania hasła jest nieprawidłowy lub wygasł. Należy poprosić o nowy.",
   "trials-full": "Zbyt wiele osób wypróbowuje teraz aplikację Glazecalc. Proszę zamiast tego założyć bezpłatne konto.",
@@ -69,5 +69,6 @@
   "too-many-trials": "Zbyt wiele okresów próbnych z tego adresu. Proszę spróbować ponownie później lub założyć bezpłatne konto.",
   "too-many-resets": "Zbyt wiele próśb o zresetowanie hasła. Proszę odczekać kilka minut i spróbować ponownie.",
   "too-many-email-links": "Zbyt wiele próśb o wysłanie wiadomości e-mail. Proszę odczekać kilka minut i spróbować ponownie.",
-  "too-many-attempts": "Zbyt wiele prób. Proszę odczekać kilka minut i spróbować ponownie."
+  "too-many-attempts": "Zbyt wiele prób. Proszę odczekać kilka minut i spróbować ponownie.",
+  "reset-sent": "Jeśli jakieś konto używa tego adresu e-mail, wysłano na niego link do zresetowania hasła. Link działa przez {minutes, plural, one {# minutę} few {# minuty} many {# minut} other {# minuty}}."
 }

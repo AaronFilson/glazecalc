@@ -113,7 +113,7 @@
     "setBy": "Stabilită prin <link>{law}</link>.",
     "lowerThanEu": "Mai mică decât valoarea-limită obligatorie a UE, de {value} mg/m³.",
     "sameAsEu": "Aceeași cu valoarea-limită obligatorie a UE.",
-    "recommendedBy": "{by} ({abbr}) recomandă această valoare în <link>{title}</link>. Nu are putere de lege.",
+    "recommendedBy": "{abbr} ({by}) recomandă această valoare în <link>{title}</link>. Nu are putere de lege.",
     "respirators": "Aici, măștile de protecție împotriva prafului se vând pe clase: {everyday} pentru praful de glazură sau {higher} pentru o protecție mai mare (<link>clasele oficiale</link>).",
     "unknown": "Nu am putut confirma valoarea-limită națională în {region}. Valoarea-limită obligatorie a UE, de {value} mg/m³, se aplică în fiecare stat membru.",
     "noData": "Nu am confirmat încă valoarea-limită în {region}.",

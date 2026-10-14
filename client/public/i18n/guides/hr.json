@@ -113,7 +113,7 @@
     "setBy": "Utvrđeno propisom: <link>{law}</link>.",
     "lowerThanEu": "Niža od obvezujuće granične vrijednosti EU-a od {value} mg/m³.",
     "sameAsEu": "Jednaka obvezujućoj graničnoj vrijednosti EU-a.",
-    "recommendedBy": "{by} ({abbr}) preporučuje ovu vrijednost u dokumentu <link>{title}</link>. To nije zakon.",
+    "recommendedBy": "{abbr} ({by}) preporučuje ovu vrijednost u dokumentu <link>{title}</link>. To nije zakon.",
     "respirators": "Zaštitne maske protiv prašine ovdje se prodaju po klasama: {everyday} za prašinu glazure ili {higher} za veću zaštitu (<link>službene klase</link>).",
     "unknown": "Nismo mogli potvrditi nacionalnu graničnu vrijednost u ovoj zemlji ({region}). Obvezujuća granična vrijednost EU-a od {value} mg/m³ primjenjuje se u svakoj državi članici.",
     "noData": "Graničnu vrijednost u ovoj zemlji ({region}) još nismo potvrdili.",

@@ -113,7 +113,7 @@
     "setBy": "Wartość ustala <link>{law}</link>.",
     "lowerThanEu": "To mniej niż wiążący limit UE wynoszący {value} mg/m³.",
     "sameAsEu": "To tyle samo co wiążący limit UE.",
-    "recommendedBy": "{by} ({abbr}) zaleca tę wartość w dokumencie <link>{title}</link>. Nie ma ona mocy prawnej.",
+    "recommendedBy": "{abbr} ({by}) zaleca tę wartość w dokumencie <link>{title}</link>. Nie ma ona mocy prawnej.",
     "respirators": "Półmaski przeciwpyłowe są tu sprzedawane według klas: {everyday} do pyłu szkliw lub {higher} dla lepszej ochrony (<link>oficjalne klasy</link>).",
     "unknown": "Nie udało nam się potwierdzić limitu ustalonego w kraju: {region}. Wiążący limit UE wynoszący {value} mg/m³ obowiązuje w każdym państwie członkowskim.",
     "noData": "Nie potwierdziliśmy jeszcze limitu obowiązującego w kraju: {region}.",

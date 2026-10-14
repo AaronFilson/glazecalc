@@ -113,7 +113,7 @@
     "setBy": "Megállapítja: <link>{law}</link>.",
     "lowerThanEu": "Alacsonyabb az EU kötelező határértékénél ({value} mg/m³).",
     "sameAsEu": "Megegyezik az EU kötelező határértékével.",
-    "recommendedBy": "A(z) {by} ({abbr}) ezt az értéket ajánlja a(z) <link>{title}</link> című kiadványában. Nem jogszabály.",
+    "recommendedBy": "A(z) {abbr} ({by}) ezt az értéket ajánlja a(z) <link>{title}</link> című kiadványában. Nem jogszabály.",
     "respirators": "Itt a porvédő maszkokat osztály szerint árusítják: {everyday} a mázporhoz, vagy {higher} nagyobb védelemhez (<link>a hivatalos osztályok</link>).",
     "unknown": "{region}: a nemzeti határértéket nem tudtuk megerősíteni. Az EU kötelező határértéke ({value} mg/m³) minden tagállamban érvényes.",
     "noData": "{region}: a határértéket még nem erősítettük meg.",

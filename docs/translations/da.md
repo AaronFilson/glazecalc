@@ -611,8 +611,9 @@ From terms.md, unchanged:
   Borate, EPK and Ferro 3134 keep their names.
 - **Sources, agencies and suppliers:** Glazy, Digitalfire, Ceramic Arts Network, Ceramics Monthly, HSE, OSHA, NIOSH,
   IARC, ECHA, FDA, CDC, EPA, NHS, COSHH, NEPSI, Safe Work Australia, WorkSafe New Zealand; Laguna, Potclays,
-  Potterycrafts, Valentine Clays, Sibelco, Imerys, Walker Ceramics and the other suppliers named; the poison services
-  in `safety/en.json`.
+  Potterycrafts, Valentine Clays, Sibelco, Imerys, Walker Ceramics and the other suppliers named; the poison services' native
+  official names in `safety/en.json` (an English descriptive name, such as "Japan Poison Information Center, Osaka",
+  is translated, and the native name kept exactly in brackets after it).
 - **Placeholders and tags:** `{name}`, `{count}` and the rest, and `<b>`, `<settings>` and other tags.
 
 Added for Danish:

@@ -100,7 +100,7 @@
     "keptDeletions": "<b>Registreringen af en slettet konto:</b> 37 dage, lige længere end nogen sikkerhedskopi.",
     "keptLogs": "<b>Logfiler:</b> webserverens i 14 dage. Appens og databasens egne logfiler er begrænset efter størrelse (50 MB hver), hvilket på et stille websted rækker flere dage tilbage. Kopierne af serverens disk bevarer logfiler i op til 7 dage mere.",
     "keptMail": "<b>Listen over adresser, der ikke må sendes mail til:</b> indtil ejeren fjerner en adresse, hvilket han gør hver måned for adresser, der ikke længere hører til en konto. Ejeren sletter meddelelser om returmail inden for 30 dage.",
-    "keptInbound": "<b>Mail, du sender til Glazecalc:</b> 30 dage i Amazons lager og i ejerens indbakke, så længe det tager at svare dig. Ved en anmodning om dine data opbevares en kort note (hvornår den kom, hvad der blev bedt om, og hvad der blev gjort) i tre år.",
+    "keptInbound": "<b>Mail, du sender til Glazecalc:</b> 30 dage i Amazons lager, og i ejerens indbakke så længe det tager at svare dig. Ved en anmodning om dine data opbevares en kort note (hvornår den kom, hvad der blev bedt om, og hvad der blev gjort) i tre år.",
     "rightsHeading": "Dine rettigheder",
     "rightsIntro": "Du kan se, rette, tage dine data med og slette dem. Det meste kan du selv gøre på <account>kontosiden</account>:",
     "rightsExport": "<b>Se dem, og tag dem med:</b> »Download mine data« gemmer alt i én fil (JSON) og opskrifterne og råvarerne som regneark (CSV).",

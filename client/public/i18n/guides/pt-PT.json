@@ -113,7 +113,7 @@
     "setBy": "Fixado por <link>{law}</link>.",
     "lowerThanEu": "Inferior ao valor-limite vinculativo da UE, de {value} mg/m³.",
     "sameAsEu": "Igual ao valor-limite vinculativo da UE.",
-    "recommendedBy": "{by} ({abbr}) recomenda este valor em <link>{title}</link>. Não é lei.",
+    "recommendedBy": "{abbr} ({by}) recomenda este valor no seu <link>{title}</link>. Não é lei.",
     "respirators": "Aqui, as máscaras contra poeiras vendem-se por classe: {everyday} para a poeira de vidrados, ou {higher} para mais proteção (<link>as classes oficiais</link>).",
     "unknown": "{region}: não conseguimos confirmar o valor-limite nacional. O valor-limite vinculativo da UE, de {value} mg/m³, aplica-se em todos os Estados-Membros.",
     "noData": "{region}: ainda não confirmámos o valor-limite.",

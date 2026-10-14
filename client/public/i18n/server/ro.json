@@ -19,6 +19,7 @@
   "password-changed": "Parola a fost schimbată.",
   "password-reset": "Parola a fost schimbată. Conectați-vă cu noua parolă.",
   "reset-unavailable": "Resetarea parolei prin e-mail nu este încă disponibilă.",
+  "reset-sent": "Dacă un cont folosește această adresă de e-mail, i-am trimis un link pentru resetarea parolei. Linkul este valabil {minutes, plural, one {# minut} few {# minute} other {# de minute}}.",
   "signed-out-everywhere": "V-ați deconectat de pe toate dispozitivele.",
   "email-unavailable": "E-mailul nu este încă disponibil, așa că nu putem trimite linkul.",
   "email-change-sent": "Am trimis un link la noua adresă. Adresa de e-mail se schimbă când îl deschideți. Linkul este valabil {hours, plural, one {# oră} few {# ore} other {# de ore}}.",

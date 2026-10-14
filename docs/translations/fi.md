@@ -162,7 +162,9 @@ Orton's, and Hortling gives stoneware firing in Seger numbers (”Sk.8-10”). A
 - **SK cones** (the app's third firing choice) are the Japanese cones to JIS R 8101: ”SK-keila” (pl. ”SK-keilat”),
   numbers always with ”SK” before them and the printed ”a” kept (”SK 6a”, ”SK 8”); "To SK cones" → ”SK-keiloina”.
   Never converted to an Orton number and never called ”Seger-keila”. Kyoto cones → ”Kioton keilat”; plaque →
-  ”keilapidike”, pat of clay → ”savipeti” (as in the firing guide).
+  ”keilapidike”, pat of clay → ”savipeti” (as in the firing guide). A cone series (Orton, SK) is a ”keilajärjestelmä”, because
+  ”keilasarja” is the cone pack. The SK guide cone is the next cooler cone (”yhtä numeroa viileämpi”), the guard cone the
+  next hotter.
 - Not ”kartio”: that is the geometric and the traffic cone.
 
 ### The unity formula

@@ -276,7 +276,8 @@ Seger cones, and no Estonian Seger table was found. So:
 - **Never** write „Segeri koonus 6“ or „SK 6“ for an Orton number, although MTB equates the English terms. „Segeri
   koonused“ only where the English says "Seger cones", and then they mean the German Seger cones only.
 - **SK cones** are the Japanese (JIS) cones: always „SK“ („SK-koonused“, „koonus SK 6“), never converted to Orton and
-  never called „Segeri koonused“. Seger means only the German cones, SK only the JIS cones.
+  never called „Segeri koonused“. Seger means only the German cones, SK only the JIS cones. Kyoto cones → „Kyoto koonused“;
+  the SK guide cone is the next cooler cone („ühe numbri võrra jahedam“), the guard cone the next hotter.
 - Not „keegel“ (Eller's old word; today a bowling pin).
 
 ### The unity formula
@@ -441,7 +442,8 @@ probleemiteade“. A product name ending in a silent letter is not declined: „
 "control concentration" (管理濃度, Japan's silica yardstick) → „kontrollkontsentratsioon“, "yardstick" → „mõõdupuu“,
 "free silica" → „vaba ränidioksiid“; "tridymite" → „tridümiit“; "Türkiye" → „Türgi“ (the CLDR name). Poison-line names
 translate the descriptive part and keep the native name in brackets as given: „Jaapani mürgistusteabekeskus, Osaka
-(大阪中毒110番)“, „Riiklik mürgistusteabekeskus (Ulusal Zehir Danışma Merkezi, UZEM)“.
+(大阪中毒110番)“, „Riiklik mürgistusteabekeskus (Ulusal Zehir Danışma Merkezi, UZEM)“. "liability" (privacy.choiceNoWarranty) → „kahju hüvitamise kohustus“, beside „vastutus“ for
+"responsibility".
 
 ## 2. Glossary
 

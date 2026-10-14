@@ -95,8 +95,9 @@ _faiança_ and the like are lower case. Trade names keep their form (Orton, Sege
 - Number words: keep the English's digits as digits ("2 coats" → "2 demãos"), and the English's words as words.
 - Ordinals: "1.º", "2.ª" if ever needed. Times: "14h30" or "14:30".
 
-**Cones.** The app's cones are Orton's (American); Seger cones (German, SK) and Staffordshire cones are different
-series with different numbers, and are never converted or confused.
+**Cones.** The app's cones are Orton's (American); Seger cones (German) and Staffordshire cones are different
+series with different numbers, and are never converted or confused. "SK" means only the Japanese cones to JIS R 8101
+(below), never German Seger cones.
 
 - "cone 6" → "cone 6"; "cone 06" → "cone 06" (said "cone zero seis"; the zero is never dropped); "cone 5–6" → "cones
   5–6"; "fire to cone 6" → "cozer ao cone 6"; "a cone 6 glaze" → "um vidrado para cone 6"; "mid fire, cone 5–6" →
@@ -546,17 +547,19 @@ cerâmicos". Descriptions stay at about 160 characters and add nothing the Engli
 
 ## 5. Terms added in the catch-up (2026-10-14)
 
-| English                          | European Portuguese                      | Notes                                                                                    |
-| -------------------------------- | ---------------------------------------- | ---------------------------------------------------------------------------------------- |
-| SK cones (JIS R 8101)            | cones SK                                 | Always "SK" before the number; never converted to Orton, never "Seger".                  |
-| Kyoto cones                      | cones de Quioto                          | 京都ゼーゲル; a different series from SK to JIS.                                         |
-| control concentration (管理濃度) | concentração de controlo                 | Japan's yardstick for a work area's air, not a personal exposure limit.                  |
-| link (in an email)               | ligação                                  | As in the password-reset messages.                                                       |
-| Sign out everywhere              | Terminar sessão em todos os dispositivos | "Keep me signed in on this device" → "Manter a sessão iniciada neste dispositivo".       |
-| Download my data                 | Transferir os meus dados                 |                                                                                          |
-| controller (GDPR)                | responsável pelo tratamento              | The RGPD's Portuguese term; "Article 6(1)(b)" → "artigo 6.º, n.º 1, alínea b), do RGPD". |
-| Standard Contractual Clauses     | cláusulas contratuais-tipo               | EU-US Data Privacy Framework → Quadro de Privacidade de Dados UE–EUA.                    |
-| logs (server)                    | registos (logs)                          | Kept apart from firing logs by the "(logs)".                                             |
-| trial                            | período de experiência                   | In the privacy page, where _experiência_ alone could mislead.                            |
-| prefecture (Japan)               | prefeitura                               |                                                                                          |
-| sake warmer                      | aquecedor de saqué                       | pt-PT _saqué_.                                                                           |
+| English                                      | European Portuguese                       | Notes                                                                                          |
+| -------------------------------------------- | ----------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| SK cones (JIS R 8101)                        | cones SK                                  | Always "SK" before the number; never converted to Orton, never "Seger".                        |
+| Kyoto cones                                  | cones de Quioto                           | 京都ゼーゲル; a different series from SK to JIS.                                               |
+| control concentration (管理濃度)             | concentração de controlo                  | Japan's yardstick for a work area's air, not a personal exposure limit.                        |
+| link (in an email)                           | ligação                                   | As in the password-reset messages.                                                             |
+| Sign out everywhere                          | Terminar sessão em todos os dispositivos  | "Keep me signed in on this device" → "Manter a sessão iniciada neste dispositivo".             |
+| Download my data                             | Transferir os meus dados                  |                                                                                                |
+| controller (GDPR)                            | responsável pelo tratamento               | The RGPD's Portuguese term; "Article 6(1)(b)" → "artigo 6.º, n.º 1, alínea b), do RGPD".       |
+| Standard Contractual Clauses                 | cláusulas contratuais-tipo                | EU-US Data Privacy Framework → Quadro de Privacidade de Dados UE–EUA.                          |
+| logs (server)                                | registos (logs)                           | Kept apart from firing logs by the "(logs)".                                                   |
+| trial                                        | período de experiência                    | In the privacy page, where _experiência_ alone could mislead.                                  |
+| prefecture (Japan)                           | prefeitura                                |                                                                                                |
+| sake warmer                                  | aquecedor de saqué                        | pt-PT _saqué_.                                                                                 |
+| Japan Poison Information Center              | Centro de Informação Antivenenos do Japão | The native name stays in brackets: "…, Osaca (大阪中毒110番)", "…, Tsukuba (つくば中毒110番)". |
+| National Poison Information Centre (Türkiye) | Centro Nacional de Informação Antivenenos | "(Ulusal Zehir Danışma Merkezi, UZEM)" stays as written.                                       |

@@ -21,11 +21,11 @@
   "reset-unavailable": "Obnovení hesla e-mailem zatím není k dispozici.",
   "signed-out-everywhere": "Odhlášení proběhlo na všech zařízeních.",
   "email-unavailable": "E-mail zatím není k dispozici, proto odkaz nemůžeme odeslat.",
-  "email-change-sent": "Na novou adresu jsme poslali odkaz. Váš e-mail se změní, až ho otevřete. Odkaz platí {hours} h.",
+  "email-change-sent": "Na novou adresu jsme poslali odkaz. Váš e-mail se změní, až ho otevřete. Odkaz platí {hours, plural, one {# hodinu} few {# hodiny} many {# hodiny} other {# hodin}}.",
   "email-changed": "Váš e-mail byl změněn. Přihlaste se prosím znovu s novou adresou.",
   "email-verified": "Váš e-mail je potvrzený.",
   "email-link-bad": "Tento odkaz není platný nebo vypršel. Požádejte prosím o nový.",
-  "verification-sent": "Na váš e-mail jsme poslali nový odkaz. Odkaz platí {hours} h.",
+  "verification-sent": "Na váš e-mail jsme poslali nový odkaz. Odkaz platí {hours, plural, one {# hodinu} few {# hodiny} many {# hodiny} other {# hodin}}.",
   "already-verified": "Váš e-mail už je potvrzený.",
   "reset-link-bad": "Tento odkaz pro obnovení hesla není platný nebo vypršel. Požádejte prosím o nový.",
   "trials-full": "Aplikaci Glazecalc právě zkouší příliš mnoho lidí. Vytvořte si prosím místo toho bezplatný účet.",
@@ -69,5 +69,6 @@
   "too-many-trials": "Příliš mnoho zkušebních přístupů z této adresy. Zkuste to prosím znovu později, nebo si vytvořte bezplatný účet.",
   "too-many-resets": "Příliš mnoho žádostí o obnovení hesla. Počkejte prosím několik minut a zkuste to znovu.",
   "too-many-email-links": "Bylo vyžádáno příliš mnoho e-mailů. Počkejte prosím několik minut a zkuste to znovu.",
-  "too-many-attempts": "Příliš mnoho pokusů. Počkejte prosím několik minut a zkuste to znovu."
+  "too-many-attempts": "Příliš mnoho pokusů. Počkejte prosím několik minut a zkuste to znovu.",
+  "reset-sent": "Pokud tento e-mail používá některý účet, poslali jsme na něj odkaz pro obnovení hesla. Odkaz platí po dobu {minutes, plural, one {# minutu} few {# minuty} many {# minuty} other {# minut}}."
 }

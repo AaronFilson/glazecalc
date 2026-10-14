@@ -65,7 +65,7 @@ or button is capitalised. Product and system names keep their own form (Orton, S
 - A number in the English stays a number, never a word.
 
 **Cones.** The app's cones are **Orton cones** (American). In Germany Orton cones are what shops sell, but often under
-the old name „Segerkegel“ (Botz: Orton is „die gängige Marke für Segerkegel“), while true Seger cones (SK) are a
+the old name „Segerkegel“ (Botz: Orton is „die gängige Marke für Segerkegel“), while true Seger cones are a
 different series whose numbers do not match Orton's (44–52 °C apart at 05 and 04). So:
 
 - "cone 6" → „Kegel 6“; "cone 06" → „Kegel 06“ (the zero stays: Kegel 06 is far cooler than Kegel 6).
@@ -74,7 +74,8 @@ different series whose numbers do not match Orton's (44–52 °C apart at 05 and
 - "cone 04 bisque" → „Schrühbrand auf Kegel 04“; "fire to cone 6" → „auf Kegel 6 brennen“; "a cone 6 glaze" → „eine
   Glasur für Kegel 6“; "cone 5–6" → „Kegel 5–6“.
 - **Never** write „Segerkegel 6“, „SK 6“ or „SK 6a“ for an Orton number. „Segerkegel“ appears only where the English
-  says "Seger cones", and then means the SK series.
+  says "Seger cones", and then means the true Seger series. Never call Seger cones „SK“ or „die SK-Reihe“: in
+  Glazecalc „SK“ means only the Japanese cones to JIS R 8101 (2.10).
 
 **The unity formula.** „Segerformel“ (die), with „(UMF)“ after it the first time on a page: „Segerformel (UMF)“, as
 the German glaze calculator OGC writes it. After that „Segerformel“. The app's short forms "unity formula", "Unity
@@ -259,8 +260,9 @@ as „Segerkegel“ or „Ortonkegel“ but carry **Orton numbers**: Keramik-Kra
 CJ „Ortonkegel 6“ ([CJ shop](https://shop.carl-jaeger.de/gesamtes-sortiment/ofenzubehoer/ortonkegel/)); [German
 Wikipedia](https://de.wikipedia.org/wiki/Segerkegel): „Orton Pyrometric Cones werden inzwischen von den meisten Anbietern
 als ‚Segerkegel‘ verkauft.“ True Seger
-cones (SK, „Segerkegel 2a“) are still sold in Austria and are a different scale (CJ's
-[Vergleichsliste](http://www.carl-jaeger.de/PDF/Seger_Ortonkegel.pdf): SK 06a 990 °C, Orton 06 1011 °C). The app writes
+cones („Segerkegel 2a“) are still sold in Austria and are a different scale (CJ's
+[Vergleichsliste](http://www.carl-jaeger.de/PDF/Seger_Ortonkegel.pdf): Seger 06a 990 °C, Orton 06 1011 °C). German
+lists may abbreviate Seger cones „SK“; the app never does, because „SK“ in Glazecalc means only the Japanese JIS cones. The app writes
 „Ortonkegel“ or „Kegel“, never „Segerkegel“, for its cones.
 
 | English                                                                     | Deutsch                                                                                                                                                    | Notes                                                                                                                                                                                                                                                                                                  |
@@ -302,7 +304,7 @@ cones (SK, „Segerkegel 2a“) are still sold in Austria and are a different sc
 | kiln wash                                                                   | das Trennmittel (für Ofenplatten)                                                                                                                          | CJ, Botz („eine Kaolinmischung“), toepferspass; Kittec „Plattenschutzmittel“. Not washing.                                                                                                                                                                                                             |
 | stilt                                                                       | der Dreifuß (pl. Dreifüße)                                                                                                                                 | CJ „Dreifüße (Tripod)“, Botz „Dreifüsschen“; metal ones CJ „Mini-Dreierstütze“.                                                                                                                                                                                                                        |
 | cookie                                                                      | die Tropfscheibe (aus geschrühtem Ton)                                                                                                                     | No German term found. Not „Keks“. CJ's „Unterlegplatten“ are cone plaques, not this.                                                                                                                                                                                                                   |
-| Seger cones, Staffordshire cones, Bullers rings, Holdcroft bars             | Segerkegel (SK); Staffordshire-Kegel; Bullers-Ringe; Holdcroft-Stäbe                                                                                       | Names unchanged, "rings" and "bars" translated. Wikipedia writes „Buller-Ringe“; keep the maker's „Bullers“.                                                                                                                                                                                           |
+| Seger cones, Staffordshire cones, Bullers rings, Holdcroft bars             | Segerkegel; Staffordshire-Kegel; Bullers-Ringe; Holdcroft-Stäbe                                                                                            | Names unchanged, "rings" and "bars" translated. Wikipedia writes „Buller-Ringe“; keep the maker's „Bullers“.                                                                                                                                                                                           |
 | Damper, Primary Air, Secondary Air, Burner, Pilots, Blower                  | Rauchschieber; Primärluft; Sekundärluft; Brenner; Zündflammen; Gebläse                                                                                     | Short column labels; "Passive Damper" → „Nebenluftschieber“. Only „Brenner“ is sourced (Rohde); the rest is standard combustion wording. "Pilots" are flames, not people.                                                                                                                              |
 | Ox Probe                                                                    | Sauerstoffsonde                                                                                                                                            | Also „Lambdasonde“. No potter source found.                                                                                                                                                                                                                                                            |
 | Draw Tile                                                                   | Ziehprobe                                                                                                                                                  | A test piece pulled from the kiln. No source found.                                                                                                                                                                                                                                                    |

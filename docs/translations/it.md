@@ -101,7 +101,7 @@ Seger, Gerstley Borate, Kiln-Sitter, Glazecalc). Days, months and language names
   category ends «- cono 6»).
 - "Orton cone" → «cono Orton», plural «coni Orton» (Orton never inflected; MC sells «Coni Orton»). "pyrometric cone"
   → «cono pirometrico». _Piroscopio_ is an old synonym (Cerama): do not use it in the app.
-- **Seger cones are a different series**: «coni Seger» (German _Segerkegel_, numbered SK 6a and so on). Their numbers
+- **Seger cones are a different series**: «coni Seger» (German _Segerkegel_; never call them «SK», which in Glazecalc means only the Japanese JIS cones). Their numbers
   are not Orton's and do not convert. Italian shops and glossaries use «coni Seger» loosely for any pyrometric cone
   (Cerama lists «Coni Seger» as a synonym of «Cono Orton»): never write «cono Seger» for one of the app's cones.
 - Italian potters mostly fire by temperature (the app's default for Italy is «In temperatura»), so the guides often

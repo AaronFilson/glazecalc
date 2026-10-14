@@ -113,7 +113,7 @@
     "setBy": "Fastställt i <link>{law}</link>.",
     "lowerThanEu": "Lägre än EU:s bindande gränsvärde på {value} mg/m³.",
     "sameAsEu": "Samma som EU:s bindande gränsvärde.",
-    "recommendedBy": "{by} ({abbr}) rekommenderar detta värde i <link>{title}</link>. Det är inte lag.",
+    "recommendedBy": "{abbr} ({by}) rekommenderar detta värde i <link>{title}</link>. Det är inte lag.",
     "respirators": "Andningsskydd mot damm säljs här efter klass: {everyday} för glasyrdamm, eller {higher} för mer skydd (<link>de officiella klasserna</link>).",
     "unknown": "Vi kunde inte bekräfta det nationella gränsvärdet i {region}. EU:s bindande gränsvärde på {value} mg/m³ gäller i alla medlemsstater.",
     "noData": "Vi har ännu inte bekräftat gränsvärdet i {region}.",

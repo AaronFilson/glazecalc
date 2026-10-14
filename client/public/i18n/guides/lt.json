@@ -113,7 +113,7 @@
     "setBy": "Nustatyta: <link>{law}</link>.",
     "lowerThanEu": "Mažesnė už privalomą ES ribinę vertę – {value} mg/m³.",
     "sameAsEu": "Tokia pati kaip privaloma ES ribinė vertė.",
-    "recommendedBy": "{by} ({abbr}) šią vertę rekomenduoja savo dokumente <link>{title}</link>. Teisės aktuose ji nenustatyta.",
+    "recommendedBy": "{abbr} ({by}) šią vertę rekomenduoja savo dokumente <link>{title}</link>. Teisės aktuose ji nenustatyta.",
     "respirators": "Respiratoriai nuo dulkių čia parduodami pagal klases: {everyday} – nuo glazūros dulkių, arba {higher} – geresnei apsaugai (<link>oficialios klasės</link>).",
     "unknown": "Nepavyko patvirtinti nacionalinės ribinės vertės ({region}). Privaloma ES ribinė vertė – {value} mg/m³ – taikoma visose valstybėse narėse.",
     "noData": "Ribinės vertės dar nepatvirtinome ({region}).",

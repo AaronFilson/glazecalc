@@ -74,17 +74,17 @@
     "notANumberPoint": "Ondalık için nokta kullanarak {example} gibi bir sayı girin."
   },
   "meta": {
-    "description": "Sır reçetenizi girin, Seger formülünü (UMF), silis/alümina oranını, ergitici dengesini görün. Reçete, hammadde ve pişirim kayıtları için ücretsiz, açık kaynak.",
-    "guides": "Yeni seramikçiler için sade rehberler: seramik sırı nedir, güvenle nasıl hazırlanıp karıştırılır, ailenizi nasıl korursunuz ve basit bir fırında nasıl pişirim yaparsınız.",
-    "glazingBasics": "Seramik sırı neyden yapılır, fırında nasıl cama dönüşür; piramit, frit, Seger formülü (UMF) ve sır kusurları ne demektir. Yeni başlayan seramikçiler için rehber.",
-    "makingAGlaze": "Seramik sırı nasıl alınır, saklanır, tartılır ve karıştırılır; yoğunluğu nasıl ayarlanır, kendi çamurunuzda nasıl denenir ve yeniden yapmak için nasıl kayıt tutulur.",
-    "safeMixing": "Seramik sır tozunu ciğerlerinizden, fırın dumanını evinizden uzak tutun: güvenli alışkanlıklar, solunum koruyucu maske, temizlik, havalandırma, riskli hammaddeler.",
-    "homeSafety": "Çocuk ya da evcil hayvan bir seramik sırı hammaddesini yutarsa ne yapmalı; hammaddeler, toz, fırın ve el yapımı ürünler ailenin çevresinde nasıl güvende tutulur.",
-    "firing": "Elektrikli seramik fırınında pişirim: piramitleri seçin, yerleştirin ve okuyun; bisküvi ve sırlı pişirim için yayımlanmış programları izleyin. Piramit tablosuyla.",
+    "description": "Seramik sır reçetesi girin; Seger formülünü (UMF), silis/alümina oranını, ergitici dengesini görün. Reçete, hammadde, pişirim kaydı için ücretsiz, açık kaynak.",
+    "guides": "Yeni seramikçiler için sade rehberler: seramik sırı nedir, güvenle nasıl hazırlanıp karıştırılır, aileniz nasıl korunur, basit bir fırında nasıl pişirilir.",
+    "glazingBasics": "Seramik sırı neyden yapılır, fırında nasıl cama dönüşür; piramit, frit, Seger formülü (UMF) ve sır kusurları ne demektir. Yeni seramikçiler için bir rehber.",
+    "makingAGlaze": "Seramik sırı nasıl alınır, saklanır, tartılır, karıştırılır; yoğunluğu nasıl ayarlanır, kendi çamurunuzda nasıl denenir, tekrar yapmak için nasıl kayıt tutulur.",
+    "safeMixing": "Seramik sır tozu ciğerlerinize, fırın dumanı evinize girmesin: güvenli alışkanlıklar, solunum koruyucu maske, temizlik, havalandırma, riskli hammaddeler.",
+    "homeSafety": "Çocuk veya evcil hayvan bir seramik sırı hammaddesini yutarsa ne yapmalı; hammaddeler, toz, fırın ve el yapımı ürünler aile çevresinde nasıl güvende tutulur.",
+    "firing": "Elektrikli seramik fırınında pişirim: piramitleri seçin, yerleştirin, okuyun; bisküvi ve sırlı pişirim için yayımlanmış programları izleyin. Piramit tablosuyla.",
     "advice": "Seramik sırı karıştırma, sırlama ve pişirim üzerine Glazecalc’tan pratik ipuçları ve kendi tavsiyeleriniz. Seramikçiler ve seramik sanatçıları için ücretsiz.",
     "about": "Glazecalc, ücretsiz ve açık kaynaklı bir seramik sır kimyası hesaplayıcısı ve defteridir. Seger formülünü (UMF) nasıl hesapladığını ve nasıl yapıldığını görün.",
     "privacy": "Glazecalc verilerinizi nasıl işler: reklam yok, analiz yok, izleme yok ve hiçbir şey satılmaz. Neler saklanır, neden ve haklarınızı nasıl kullanırsınız.",
-    "signup": "Seramik sır reçetelerinizi, hammaddelerinizi, notlarınızı ve pişirim kayıtlarınızı saklamak için ücretsiz bir Glazecalc hesabı açın. Reklam yok, verileriniz asla satılmaz.",
+    "signup": "Seramik sır reçetelerinizi, hammaddelerinizi, notlarınızı ve pişirim kayıtlarınızı ücretsiz Glazecalc hesabında saklayın. Reklam yok; verileriniz asla satılmaz.",
     "imageAlt": "Glazecalc: sırlarınızı yalnızca karıştırmayın, anlayın."
   },
   "notices": {

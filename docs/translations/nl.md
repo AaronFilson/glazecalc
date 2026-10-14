@@ -132,8 +132,9 @@ _het {name}_ or _de {name}_ alone.
 **Cones.** The app's cones are **Orton cones** (American). Dutch and Flemish shops sell Orton cones under that name,
 in English (Silex “Orton cones large/small”, Colp “ORTON CONES GROOT 06 (995°-1011°C)”); Creavisie sells “Maxicones”
 and “Minicones” numbered the same way (“SM-6 (±1241°C)”). Older Dutch books and many potters say _Segerkegels_:
-GT's cone table gives true Seger numbers (SK 04a, 1020 °C), and DFB writes “cones (Seger kegels)” for Orton cones.
-True Seger cones (SK) are a different series whose numbers do not match Orton's (44–52 °C apart at 05 and 04). So:
+GT's cone table gives true Seger numbers (04a, 1020 °C), and DFB writes “cones (Seger kegels)” for Orton cones.
+True (German) Seger cones are a different series whose numbers do not match Orton's (44–52 °C apart at 05 and 04).
+"SK" in the app means only the Japanese cones to JIS R 8101 (section 2.10), never German Seger cones. So:
 
 - "cone 6" → _kegel 6_; "cone 06" → _kegel 06_ (read _nul zes_; the zero always stays: kegel 06 is far cooler than
   kegel 6). A klei.nl post writes “cone no. 4 1020 graden” for cone 04: the lost zero is a real trap.
@@ -143,7 +144,7 @@ True Seger cones (SK) are a different series whose numbers do not match Orton's 
 - "cone 04 bisque" → _biscuitstook tot kegel 04_; "fire to cone 6" → _stoken tot kegel 6_; "a cone 6 glaze" →
   _een glazuur voor kegel 6_; "cone 5–6" → _kegel 5–6_; plural _kegels 5–6_.
 - **Never** write _Segerkegel 6_ or _SK 6_ for an Orton number. _Segerkegel_ appears only where the English says
-  "Seger cones", and then means the SK series.
+  "Seger cones", and then means the German Seger series, never the Japanese SK cones.
 - "one cone hotter", "one cone cooler" → _één kegel heter_, _één kegel koeler_; "one number hotter" → _één nummer
   heter_; "for each cone hotter" → _voor elke kegel heter_. Never _hoger_/_lager_ or _omhoog_/_omlaag_ for cones: in the
   zero series a higher number is cooler (kegel 05 is koeler dan kegel 04), so only _heter_ and _koeler_ say which way.
@@ -352,7 +353,7 @@ trade name.
 Dutch and Flemish studio potters fire by °C on a controller (DFB's schedules, KCL's _stookprogramma's_, Nab's Dutch
 manuals), and suppliers name glazes by temperature and body (Colp “AARDEWERK”, “STEENGOED”). Cones are sold as
 **Orton cones**, in English (Silex, Colp), or as Creavisie's “Maxicones” with Orton numbers; older Dutch books call
-cones _Segerkegels_ (GT's table gives SK numbers). The app writes _Ortonkegel_ or _kegel_, never _Segerkegel_, for its
+cones _Segerkegels_ (GT's table gives German Seger numbers). The app writes _Ortonkegel_ or _kegel_, never _Segerkegel_, for its
 cones.
 
 | English                                                                     | Nederlands                                                                                            | Notes                                                                                                                                                                                                                                                                                             |
@@ -395,7 +396,7 @@ cones.
 | kiln wash                                                                   | de ovenplaatbescherming                                                                               | Colp “KERAMIEK/OVENPLAAT BESCHERMING”; KK “Ovenplaat beschermer”; Crea “Ovenplaat pasta”; Silex “Kiln Wash”, “Batt Wash”; Nab “scheidingsmiddel”. Not washing.                                                                                                                                    |
 | stilt                                                                       | de triangel (mv. triangels)                                                                           | Colp “KERAMISCHE TRIANGELS”, “METALEN TRIANGELS”; Crea “Triangels keramisch”; Silex “Triangel stilt”; GT: “triangeltjes ... keramische of metalen driepootjes met spitse punten”.                                                                                                                 |
 | cookie                                                                      | het opvangplaatje (van biscuit)                                                                       | No Dutch term found. Not _koekje_.                                                                                                                                                                                                                                                                |
-| Seger cones, Staffordshire cones, Bullers rings, Holdcroft bars             | Segerkegels (SK); Staffordshire-kegels; Bullers-ringen; Holdcroft-staafjes                            | Names unchanged; "rings" and "bars" translated. Colp's “CONTROLE RING LTH/STH” are temperature rings of another make.                                                                                                                                                                             |
+| Seger cones, Staffordshire cones, Bullers rings, Holdcroft bars             | Segerkegels; Staffordshire-kegels; Bullers-ringen; Holdcroft-staafjes                                 | Names unchanged; "rings" and "bars" translated. Colp's “CONTROLE RING LTH/STH” are temperature rings of another make.                                                                                                                                                                             |
 | Damper, Primary Air, Secondary Air, Burner, Pilots, Blower                  | Schuif; Primaire lucht; Secundaire lucht; Brander; Waakvlammen; Ventilator                            | Short column labels. Only _brander_ is sourced (Crea “Propaanbrander”); the rest is standard combustion wording. "Pilots" are flames, not people.                                                                                                                                                 |
 | Ox Probe                                                                    | Zuurstofsonde                                                                                         | Also _lambdasonde_. No potter source found.                                                                                                                                                                                                                                                       |
 | Draw Tile                                                                   | Trekproef                                                                                             | A test piece pulled from the kiln. No source found.                                                                                                                                                                                                                                               |
@@ -607,8 +608,10 @@ Added with the EU release text, the SK cones and the Japanese and Turkish region
 - **control concentration** (Japan, 管理濃度) → _de beheersconcentratie_. **Check**: no Dutch source found; it is a
   yardstick for a work area's air, not a limit for one person.
 - Japanese food-contact categories: "not for cooking" → _niet om in te koken_; "at most" → _ten hoogste_.
-- **Türkiye** → _Turkije_ (the Dutch government's name). Official names of poison lines and services stay as the
-  English gives them; descriptive names are translated (_Medische advieslijn voor kinderen (子ども医療電話相談)_).
+- **Türkiye** → _Turkije_ (the Dutch government's name). Poison lines and services: the English
+  descriptive part is translated and the native official name kept exactly in brackets (_Japans
+  vergiftigingeninformatiecentrum, Osaka (大阪中毒110番)_; _Nationaal vergiftigingeninformatiecentrum (Ulusal Zehir
+  Danışma Merkezi, UZEM)_; _Medische advieslijn voor kinderen (子ども医療電話相談)_).
 - Accounts: "Keep me signed in on this device" → _Ingelogd blijven op dit apparaat_; "Sign out everywhere" → _Overal
   uitloggen_; "Download my data" → _Mijn gegevens downloaden_; "Confirm your email" → _Uw e-mailadres bevestigen_.
 - Privacy (AVG/GDPR terms): "controller" → _de verwerkingsverantwoordelijke_; "legal basis" → _de rechtsgrond_;
@@ -651,8 +654,9 @@ From terms.md, unchanged:
   Albany slip, Bayferrox, Mason stains, AMACO.
 - **Sources, agencies and suppliers:** Glazy, Digitalfire, Ceramic Arts Network, Ceramics Monthly, HSE, OSHA, NIOSH,
   IARC, ECHA, FDA, CDC, EPA, NHS, COSHH, NEPSI, Safe Work Australia, WorkSafe New Zealand; Laguna, Potclays,
-  Potterycrafts, Valentine Clays, Sibelco, Imerys, Walker Ceramics and the other suppliers named; the poison services
-  in `safety/en.json`.
+  Potterycrafts, Valentine Clays, Sibelco, Imerys, Walker Ceramics and the other suppliers named; the poison services' native
+  official names in `safety/en.json` (an English descriptive name, such as "Japan Poison Information Center, Osaka",
+  is translated, and the native name kept exactly in brackets after it).
 - **Placeholders and tags:** `{name}`, `{count}` and the rest, and `<b>`, `<settings>` and other tags.
 
 For Dutch, the directive's official form is **84/500/EEG** (section 1). Added for Dutch:

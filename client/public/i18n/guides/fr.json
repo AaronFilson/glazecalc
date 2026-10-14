@@ -113,7 +113,7 @@
     "setBy": "Valeur fixée par <link>{law}</link>.",
     "lowerThanEu": "Inférieure à la valeur limite contraignante de l’UE, qui est de {value} mg/m³.",
     "sameAsEu": "Identique à la valeur limite contraignante de l’UE.",
-    "recommendedBy": "L’organisme {by} ({abbr}) recommande cette valeur dans <link>{title}</link>. Elle n’a pas force de loi.",
+    "recommendedBy": "{abbr} ({by}) recommande cette valeur dans <link>{title}</link>. Elle n’a pas force de loi.",
     "respirators": "Ici, les masques antipoussière sont vendus par classe : {everyday} pour la poussière d’émail, ou {higher} pour une meilleure protection (<link>les classes officielles</link>).",
     "unknown": "Nous n’avons pas pu confirmer la valeur limite nationale de ce pays ({region}). La valeur limite contraignante de l’UE, {value} mg/m³, s’applique dans chaque État membre.",
     "noData": "Nous n’avons pas encore confirmé la valeur limite de ce pays ({region}).",

@@ -280,92 +280,92 @@ Is éard is **ceartú cóin** ann ná socrú rialaitheora a ardaíonn nó a ísl
 
 :::sk
 
-## Firing to SK cones {#sk-cones lang=en}
+## Bácáil go cóin SK {#sk-cones}
 
-SK cones are the pyrometric cones made to Japan's standard, JIS R 8101, and sold in Japan by dealers such as Yuko Trading (有恒商事). Like any cone, an SK cone measures heatwork, not temperature alone: it softens and bends over when the ware has had enough heat, and you read how far it bent. Witness cones, reading how far a cone has bent, and holds work for it as for any cone. This section names each cone's system, and never turns an SK number into another system's number: the numbers of different cone series are not interchangeable.
+Is éard is cóin SK ann ná na cóin phiriméadracha a dhéantar de réir chaighdeán na Seapáine, JIS R 8101, agus a dhíolann déileálaithe sa tSeapáin, mar shampla Yuko Trading (有恒商事). Cosúil le haon chón{{en: cone}}, tomhaiseann cón SK obair teasa{{en: heatwork}}, ní teocht amháin: bogann sé agus lúbann sé anonn nuair a bhíonn a ndóthain teasa faighte ag na píosaí, agus léann tú cé chomh fada a lúb sé. Oibríonn cóin fhianaise{{en: witness cone}}, léamh cé chomh fada a lúb cón, agus coinneáil{{en: hold}} dó mar a oibríonn siad d’aon chón. Ainmníonn an chuid seo córas gach cóin, agus ní iompaíonn sí uimhir SK ina huimhir de chóras eile riamh: ní féidir uimhreacha sraitheanna éagsúla cón a mhalartú.
 
 > [!NOTE]
-> Always write "SK" before the number. Many older Japanese recipes say only "SK 8" or "SK 9" without saying whose cone. Kyoto cones and SK cones to JIS carry the same numbers but bend at different temperatures (see Kyoto cones, below).
+> Scríobh “SK” roimh an uimhir i gcónaí. Ní deir go leor seanoideas Seapánach ach “SK 8” nó “SK 9”, gan a rá cé leis an cón. Tá na huimhreacha céanna ar chóin Kyoto agus ar chóin SK de réir JIS, ach lúbann siad ag teochtaí difriúla (féach Cóin Kyoto, thíos).
 
-### The large cones
+### Na cóin mhóra
 
-The standard has two sizes. Large cones (大型コーン) are "mainly used for measuring the degree of firing" (焼度測定), which is what a potter wants. Small cones (SK 26 to SK 42, at the top of the range) are "mainly used for refractoriness tests" and are not covered here. The table below gives the large cones from SK 022 to SK 20.
+Tá dhá mhéid sa chaighdeán. Úsáidtear cóin mhóra (大型コーン) “go príomha chun méid na bácála a thomhas” (焼度測定), agus sin a theastaíonn ó photadóir. Úsáidtear cóin bheaga (SK 26 go SK 42, ag barr an raoin) “go príomha le haghaidh tástálacha teasfhulangachta”, agus ní phléitear anseo iad. Tugann an tábla thíos na cóin mhóra ó SK 022 go SK 20.
 
-The numbers run from SK 022, the coolest, up to SK 20 here. Between SK 015 and SK 6 the printed numbers carry an "a" (SK 015a, SK 6a); write it as printed.
+Anseo téann na huimhreacha ó SK 022, an ceann is fuaire, go SK 20. Idir SK 015 agus SK 6 tá “a” ar na huimhreacha clóite (SK 015a, SK 6a); scríobh iad mar atá siad clóite.
 
-### Setting large cones
+### Cóin mhóra a shuíomh
 
-Set each large cone in a plaque or a pat of clay, leaning toward its bending face. As with any cone, keep the height and the lean the same from firing to firing, because a difference in either changes how far it bends. Set the three cones of the pack (below) together, deep in the kiln near the middle of the load, where they get the heat the ware gets, yet where you can see them through a peephole; before you close the kiln, check that you can see all three.
+Cuir gach cón mór i bplaic nó i gcnap cré, claonta i dtreo a thaoibh lúbtha. Mar is amhlaidh le haon chón, coinnigh an airde agus an claonadh mar an gcéanna ó bhácáil go bácáil, mar athraíonn difríocht i gceachtar acu cé chomh fada a lúbann sé. Cuir trí chón an phaca{{en: cone pack}} (thíos) le chéile, i bhfad isteach san áith gar do lár an lochta, áit a bhfaigheann siad an teas a fhaigheann na píosaí, ach áit ar féidir leat iad a fheiceáil trí pholl faire; sula ndúnann tú an áith, seiceáil gur féidir leat na trí cinn a fheiceáil.
 
-### Guide, firing and guard cones
+### Cón treorach, cón bácála agus cón cosanta
 
-Cones are sold and set as three: a guide cone, a firing cone at the target, and a guard cone. Take the firing cone as the SK number your recipe or clay names, the guide cone as the next cooler cone (one row up in the table) and the guard cone as the next hotter one. When the guide cone starts to bend, the end is near; when the guard cone bends, the firing has gone too far.
+Díoltar agus cuirtear cóin ina dtrí cinn: cón treorach, cón bácála ag an sprioc, agus cón cosanta. Glac mar chón bácála an uimhir SK a ainmníonn d’oideas nó do chré, mar chón treorach an chéad chón eile atá níos fuaire (an ró díreach os a chionn sa tábla), agus mar chón cosanta an chéad cheann eile atá níos teo. Nuair a thosaíonn an cón treorach ag lúbadh, tá an deireadh gar; nuair a lúbann an cón cosanta, tá an bhácáil imithe rófhada.
 
-### The SK chart
+### Cairt SK
 
-Table: SK large cones (JIS R 8101): the nominal (JIS) temperature of each
-Label: SK chart
+Table: Cóin mhóra SK (JIS R 8101): teocht ainmniúil (JIS) gach cóin
+Label: Cairt SK
 
-| Cone    | Nominal (JIS) temperature |
-| ------- | ------------------------: |
-| SK 022  |       {{1112 °F; 600 °C}} |
-| SK 021  |       {{1202 °F; 650 °C}} |
-| SK 020  |       {{1238 °F; 670 °C}} |
-| SK 019  |       {{1274 °F; 690 °C}} |
-| SK 018  |       {{1310 °F; 710 °C}} |
-| SK 017  |       {{1346 °F; 730 °C}} |
-| SK 016  |       {{1382 °F; 750 °C}} |
-| SK 015a |       {{1454 °F; 790 °C}} |
-| SK 014a |       {{1499 °F; 815 °C}} |
-| SK 013a |       {{1535 °F; 835 °C}} |
-| SK 012a |       {{1571 °F; 855 °C}} |
-| SK 011a |       {{1616 °F; 880 °C}} |
-| SK 010a |       {{1652 °F; 900 °C}} |
-| SK 09a  |       {{1688 °F; 920 °C}} |
-| SK 08a  |       {{1724 °F; 940 °C}} |
-| SK 07a  |       {{1760 °F; 960 °C}} |
-| SK 06a  |       {{1796 °F; 980 °C}} |
-| SK 05a  |      {{1832 °F; 1000 °C}} |
-| SK 04a  |      {{1868 °F; 1020 °C}} |
-| SK 03a  |      {{1904 °F; 1040 °C}} |
-| SK 02a  |      {{1940 °F; 1060 °C}} |
-| SK 01a  |      {{1976 °F; 1080 °C}} |
-| SK 1a   |      {{2012 °F; 1100 °C}} |
-| SK 2a   |      {{2048 °F; 1120 °C}} |
-| SK 3a   |      {{2084 °F; 1140 °C}} |
-| SK 4a   |      {{2120 °F; 1160 °C}} |
-| SK 5a   |      {{2156 °F; 1180 °C}} |
-| SK 6a   |      {{2192 °F; 1200 °C}} |
-| SK 7    |      {{2246 °F; 1230 °C}} |
-| SK 8    |      {{2282 °F; 1250 °C}} |
-| SK 9    |      {{2336 °F; 1280 °C}} |
-| SK 10   |      {{2372 °F; 1300 °C}} |
-| SK 11   |      {{2408 °F; 1320 °C}} |
-| SK 12   |      {{2462 °F; 1350 °C}} |
-| SK 13   |      {{2516 °F; 1380 °C}} |
-| SK 14   |      {{2570 °F; 1410 °C}} |
-| SK 15   |      {{2615 °F; 1435 °C}} |
-| SK 16   |      {{2660 °F; 1460 °C}} |
-| SK 17   |      {{2696 °F; 1480 °C}} |
-| SK 18   |      {{2732 °F; 1500 °C}} |
-| SK 19   |      {{2768 °F; 1520 °C}} |
-| SK 20   |      {{2786 °F; 1530 °C}} |
+| Cón     | Teocht ainmniúil (JIS) |
+| ------- | ---------------------: |
+| SK 022  |    {{1112 °F; 600 °C}} |
+| SK 021  |    {{1202 °F; 650 °C}} |
+| SK 020  |    {{1238 °F; 670 °C}} |
+| SK 019  |    {{1274 °F; 690 °C}} |
+| SK 018  |    {{1310 °F; 710 °C}} |
+| SK 017  |    {{1346 °F; 730 °C}} |
+| SK 016  |    {{1382 °F; 750 °C}} |
+| SK 015a |    {{1454 °F; 790 °C}} |
+| SK 014a |    {{1499 °F; 815 °C}} |
+| SK 013a |    {{1535 °F; 835 °C}} |
+| SK 012a |    {{1571 °F; 855 °C}} |
+| SK 011a |    {{1616 °F; 880 °C}} |
+| SK 010a |    {{1652 °F; 900 °C}} |
+| SK 09a  |    {{1688 °F; 920 °C}} |
+| SK 08a  |    {{1724 °F; 940 °C}} |
+| SK 07a  |    {{1760 °F; 960 °C}} |
+| SK 06a  |    {{1796 °F; 980 °C}} |
+| SK 05a  |   {{1832 °F; 1000 °C}} |
+| SK 04a  |   {{1868 °F; 1020 °C}} |
+| SK 03a  |   {{1904 °F; 1040 °C}} |
+| SK 02a  |   {{1940 °F; 1060 °C}} |
+| SK 01a  |   {{1976 °F; 1080 °C}} |
+| SK 1a   |   {{2012 °F; 1100 °C}} |
+| SK 2a   |   {{2048 °F; 1120 °C}} |
+| SK 3a   |   {{2084 °F; 1140 °C}} |
+| SK 4a   |   {{2120 °F; 1160 °C}} |
+| SK 5a   |   {{2156 °F; 1180 °C}} |
+| SK 6a   |   {{2192 °F; 1200 °C}} |
+| SK 7    |   {{2246 °F; 1230 °C}} |
+| SK 8    |   {{2282 °F; 1250 °C}} |
+| SK 9    |   {{2336 °F; 1280 °C}} |
+| SK 10   |   {{2372 °F; 1300 °C}} |
+| SK 11   |   {{2408 °F; 1320 °C}} |
+| SK 12   |   {{2462 °F; 1350 °C}} |
+| SK 13   |   {{2516 °F; 1380 °C}} |
+| SK 14   |   {{2570 °F; 1410 °C}} |
+| SK 15   |   {{2615 °F; 1435 °C}} |
+| SK 16   |   {{2660 °F; 1460 °C}} |
+| SK 17   |   {{2696 °F; 1480 °C}} |
+| SK 18   |   {{2732 °F; 1500 °C}} |
+| SK 19   |   {{2768 °F; 1520 °C}} |
+| SK 20   |   {{2786 °F; 1530 °C}} |
 
-Every figure is nominal (JIS): the temperature the standard gives for the cone, as printed in Yuko Trading's table. The table does not print a heating rate. The standard gives reference temperatures. At a potter's rate of about 100 °C/h, Kyoto's municipal institute measured its own Kyoto cones bending 40–70 °C cooler than the JIS figure for the same number; we found no such measurements for SK cones to JIS. Set a witness cone and compare.
+Is ainmniúil (JIS) gach figiúr: an teocht a thugann an caighdeán don chón, mar atá clóite i dtábla Yuko Trading. Ní thugann an tábla ráta téimh. Tugann an caighdeán teochtaí tagartha. Ag ráta téimh potadóra de thart ar 100 °C/h, thomhais institiúid bhardasach Kyoto a cóin Kyoto féin ag lúbadh 40–70 °C níos fuaire ná figiúr JIS na huimhreach céanna; níor aimsíomar a leithéid de thomhais do chóin SK de réir JIS. Cuir cón fianaise isteach agus déan comparáid.
 
-### Kyoto cones
+### Cóin Kyoto
 
-Kyoto cones (京都ゼーゲル), made by Kyoto's municipal institute, are no longer made: news reports say the institute ended production at the close of fiscal 2009. They carry the same numbers as SK cones to JIS but bend cooler: a Kyoto cone mostly bends at about the temperature of the SK cone to JIS two numbers lower. A recipe from Kyoto that says "SK 8" may mean a Kyoto cone. The institute has published advice for potters moving from Kyoto cones to Orton cones, and substitutes Orton cone 10 for its own Kyoto SK 12; that is the institute's choice from its own measurements at 100 °C/h, and applies to no other cone.
+Rinne institiúid bhardasach Kyoto cóin Kyoto (京都ゼーゲル), ach ní dhéantar a thuilleadh iad: deir tuairiscí nuachta gur stop an institiúid á ndéanamh ag deireadh bhliain fhioscach 2009. Tá na huimhreacha céanna orthu agus atá ar chóin SK de réir JIS, ach lúbann siad níos fuaire: den chuid is mó, lúbann cón Kyoto ag thart ar theocht an chóin SK de réir JIS atá dhá uimhir níos fuaire. D’fhéadfadh cón Kyoto a bheith i gceist le hoideas ó Kyoto a deir “SK 8”. D’fhoilsigh an institiúid comhairle do photadóirí atá ag aistriú ó chóin Kyoto go cóin Orton, agus cuireann sí cón Orton 10 in áit a cóin Kyoto SK 12 féin; is é sin rogha na hinstitiúide óna tomhais féin ag 100 °C/h, agus ní bhaineann sé le haon chón eile.
 
-### Orton cones sold in Japan
+### Cóin Orton a dhíoltar sa tSeapáin
 
-Orton self-supporting cones are sold in Japan under the name 立つゼーゲル ("standing Seger"), because they need no plaque or stand. They are Orton cones, with Orton's numbers and Orton's chart (above): fire to one only by its Orton number, and keep SK and Orton cones in separate packs, never in the same one.
+Díoltar cóin fhéintacaithe Orton sa tSeapáin faoin ainm 立つゼーゲル (“Seger ina sheasamh”), mar nach bhfuil plaic ná seastán ag teastáil uathu. Is cóin Orton iad, le huimhreacha Orton agus cairt Orton (thuas): bácáil go ceann acu de réir a uimhreach Orton amháin, agus coinnigh cóin SK agus cóin Orton i bpacaí ar leith, agus ná cuir riamh sa phaca céanna iad.
 
-### Sources for SK cones
+### Foinsí do chóin SK
 
-- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (the SK table, checked 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
-- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (in force, reconfirmed 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
-- [Kyoto Municipal Institute of Industrial Technology and Culture: points to note when moving from Kyoto cones to Orton cones](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
+- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (an tábla SK, seiceáilte 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
+- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (i bhfeidhm, athdhearbhaithe 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [Institiúid Bhardasach Teicneolaíochta Tionscail agus Cultúir Kyoto: pointí le tabhairt faoi deara agus tú ag aistriú ó chóin Kyoto go cóin Orton](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
 
 :::
 

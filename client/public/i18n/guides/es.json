@@ -113,7 +113,7 @@
     "setBy": "Norma que lo fija: <link>{law}</link>.",
     "lowerThanEu": "Más bajo que el límite vinculante de la UE, de {value} mg/m³.",
     "sameAsEu": "Igual al límite vinculante de la UE.",
-    "recommendedBy": "{by} ({abbr}) recomienda este valor en <link>{title}</link>. No es una norma legal.",
+    "recommendedBy": "{abbr} ({by}) recomienda este valor en su <link>{title}</link>. No es ley.",
     "respirators": "Aquí las mascarillas contra el polvo se venden por clases: {everyday} para el polvo de esmalte, o {higher} para más protección (<link>las clases oficiales</link>).",
     "unknown": "No hemos podido confirmar el límite nacional en {region}. El límite vinculante de la UE, de {value} mg/m³, se aplica en todos los Estados miembros.",
     "noData": "Aún no hemos confirmado el límite en {region}.",

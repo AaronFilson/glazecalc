@@ -280,33 +280,33 @@ En **kägeloffset** är en inställning i automatiken som flyttar dess temperatu
 
 :::sk
 
-## Firing to SK cones {#sk-cones lang=en}
+## Bränning efter SK-käglor {#sk-cones}
 
-SK cones are the pyrometric cones made to Japan's standard, JIS R 8101, and sold in Japan by dealers such as Yuko Trading (有恒商事). Like any cone, an SK cone measures heatwork, not temperature alone: it softens and bends over when the ware has had enough heat, and you read how far it bent. Witness cones, reading how far a cone has bent, and holds work for it as for any cone. This section names each cone's system, and never turns an SK number into another system's number: the numbers of different cone series are not interchangeable.
+SK-käglor är de pyrometriska käglor{{en: pyrometric cone}} som tillverkas enligt Japans standard, JIS R 8101, och säljs i Japan av återförsäljare som Yuko Trading (有恒商事). Som alla käglor mäter en SK-kägla värmearbete{{en: heatwork}}, inte bara temperatur: den mjuknar och böjer sig när godset har fått tillräckligt med värme, och man läser av hur långt den har böjt sig. Kontrollkäglor{{en: witness cone}}, avläsningen av hur långt en kägla har böjt sig och hålltider fungerar för den som för alla käglor. Det här avsnittet anger varje käglas system och gör aldrig om ett SK-nummer till ett nummer i ett annat system: numren i olika kägelserier är inte utbytbara.
 
 > [!NOTE]
-> Always write "SK" before the number. Many older Japanese recipes say only "SK 8" or "SK 9" without saying whose cone. Kyoto cones and SK cones to JIS carry the same numbers but bend at different temperatures (see Kyoto cones, below).
+> Skriv alltid ”SK” före numret. Många äldre japanska recept säger bara ”SK 8” eller ”SK 9” utan att säga vems kägla det gäller. Kyotokäglor och SK-käglor enligt JIS har samma nummer men böjer sig vid olika temperaturer (se Kyotokäglor nedan).
 
-### The large cones
+### De stora käglorna
 
-The standard has two sizes. Large cones (大型コーン) are "mainly used for measuring the degree of firing" (焼度測定), which is what a potter wants. Small cones (SK 26 to SK 42, at the top of the range) are "mainly used for refractoriness tests" and are not covered here. The table below gives the large cones from SK 022 to SK 20.
+Standarden har två storlekar. Stora käglor (大型コーン) används ”främst för att mäta bränningsgraden” (焼度測定), och det är vad en keramiker vill ha. Små käglor (SK 26 till SK 42, högst upp i serien) används ”främst för provning av eldfasthet” och tas inte upp här. Tabellen nedan visar de stora käglorna från SK 022 till SK 20.
 
-The numbers run from SK 022, the coolest, up to SK 20 here. Between SK 015 and SK 6 the printed numbers carry an "a" (SK 015a, SK 6a); write it as printed.
+Numren går här från SK 022, den kallaste, upp till SK 20. Mellan SK 015 och SK 6 har de tryckta numren ett ”a” (SK 015a, SK 6a); skriv det så som det är tryckt.
 
-### Setting large cones
+### Att sätta stora käglor
 
-Set each large cone in a plaque or a pat of clay, leaning toward its bending face. As with any cone, keep the height and the lean the same from firing to firing, because a difference in either changes how far it bends. Set the three cones of the pack (below) together, deep in the kiln near the middle of the load, where they get the heat the ware gets, yet where you can see them through a peephole; before you close the kiln, check that you can see all three.
+Sätt varje stor kägla i en kägelhållare eller en klump lera, lutad mot sin böjsida. Som med alla käglor: håll höjden och lutningen likadana från bränning till bränning, eftersom en skillnad i någon av dem ändrar hur långt käglan böjer sig. Ställ de tre käglorna i kägelsatsen{{en: cone pack}} (nedan) tillsammans, djupt inne i ugnen nära mitten av ugnsfyllningen, där de får samma värme som godset men ändå syns genom ett titthål; kontrollera innan ugnen stängs att alla tre syns.
 
-### Guide, firing and guard cones
+### Förvarningskägla, målkägla och vaktkägla
 
-Cones are sold and set as three: a guide cone, a firing cone at the target, and a guard cone. Take the firing cone as the SK number your recipe or clay names, the guide cone as the next cooler cone (one row up in the table) and the guard cone as the next hotter one. When the guide cone starts to bend, the end is near; when the guard cone bends, the firing has gone too far.
+Käglor säljs och sätts tre och tre: en förvarningskägla, en målkägla vid målet och en vaktkägla. Ta som målkägla det SK-nummer som receptet eller leran anger, som förvarningskägla den närmast kallare käglan (en rad upp i tabellen) och som vaktkägla den närmast varmare. När förvarningskäglan börjar böja sig är slutet nära; när vaktkäglan böjer sig har bränningen gått för långt.
 
-### The SK chart
+### SK-tabellen
 
-Table: SK large cones (JIS R 8101): the nominal (JIS) temperature of each
-Label: SK chart
+Table: Stora SK-käglor (JIS R 8101): varje käglas nominella temperatur (JIS)
+Label: SK-tabell
 
-| Cone    | Nominal (JIS) temperature |
+| Kägla   | Nominell temperatur (JIS) |
 | ------- | ------------------------: |
 | SK 022  |       {{1112 °F; 600 °C}} |
 | SK 021  |       {{1202 °F; 650 °C}} |
@@ -351,21 +351,21 @@ Label: SK chart
 | SK 19   |      {{2768 °F; 1520 °C}} |
 | SK 20   |      {{2786 °F; 1530 °C}} |
 
-Every figure is nominal (JIS): the temperature the standard gives for the cone, as printed in Yuko Trading's table. The table does not print a heating rate. The standard gives reference temperatures. At a potter's rate of about 100 °C/h, Kyoto's municipal institute measured its own Kyoto cones bending 40–70 °C cooler than the JIS figure for the same number; we found no such measurements for SK cones to JIS. Set a witness cone and compare.
+Alla värden är nominella (JIS): den temperatur som standarden anger för käglan, så som den är tryckt i Yuko Tradings tabell. Tabellen anger ingen uppvärmningshastighet. Standarden ger referenstemperaturer. Vid en hastighet som keramiker brukar använda, omkring 100 °C/h, mätte Kyotos kommunala institut att dess egna Kyotokäglor böjde sig vid en temperatur 40–70 °C lägre än JIS-värdet för samma nummer; vi har inte hittat några sådana mätningar för SK-käglor enligt JIS. Sätt en kontrollkägla och jämför.
 
-### Kyoto cones
+### Kyotokäglor
 
-Kyoto cones (京都ゼーゲル), made by Kyoto's municipal institute, are no longer made: news reports say the institute ended production at the close of fiscal 2009. They carry the same numbers as SK cones to JIS but bend cooler: a Kyoto cone mostly bends at about the temperature of the SK cone to JIS two numbers lower. A recipe from Kyoto that says "SK 8" may mean a Kyoto cone. The institute has published advice for potters moving from Kyoto cones to Orton cones, and substitutes Orton cone 10 for its own Kyoto SK 12; that is the institute's choice from its own measurements at 100 °C/h, and applies to no other cone.
+Kyotokäglor (京都ゼーゲル), som Kyotos kommunala institut gjorde, tillverkas inte längre: enligt nyhetsrapporter slutade institutet tillverka dem vid slutet av räkenskapsåret 2009. De har samma nummer som SK-käglor enligt JIS men böjer sig kallare: en Kyotokägla böjer sig oftast vid ungefär samma temperatur som den SK-kägla enligt JIS som ligger två nummer lägre. Ett recept från Kyoto som säger ”SK 8” kan avse en Kyotokägla. Institutet har publicerat råd till keramiker som går över från Kyotokäglor till Ortonkäglor, och ersätter sin egen Kyotokägla SK 12 med Ortonkägla 10; det är institutets val utifrån dess egna mätningar vid 100 °C/h och gäller ingen annan kägla.
 
-### Orton cones sold in Japan
+### Ortonkäglor som säljs i Japan
 
-Orton self-supporting cones are sold in Japan under the name 立つゼーゲル ("standing Seger"), because they need no plaque or stand. They are Orton cones, with Orton's numbers and Orton's chart (above): fire to one only by its Orton number, and keep SK and Orton cones in separate packs, never in the same one.
+Självstående Ortonkäglor säljs i Japan under namnet 立つゼーゲル (”stående Seger”), eftersom de inte behöver någon kägelhållare eller fot. De är Ortonkäglor, med Ortons nummer och Ortons tabell (ovan): bränn till en sådan kägla bara efter dess Ortonnummer, och håll SK-käglor och Ortonkäglor i separata kägelsatser, aldrig i samma.
 
-### Sources for SK cones
+### Källor om SK-käglor
 
-- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (the SK table, checked 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
-- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (in force, reconfirmed 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
-- [Kyoto Municipal Institute of Industrial Technology and Culture: points to note when moving from Kyoto cones to Orton cones](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
+- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (SK-tabellen, kontrollerad 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
+- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (gällande, bekräftad på nytt 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [Kyoto Municipal Institute of Industrial Technology and Culture: att tänka på vid övergången från Kyotokäglor till Ortonkäglor](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
 
 :::
 

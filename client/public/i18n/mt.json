@@ -74,17 +74,17 @@
     "notANumberPoint": "Daħħal numru, bħal {example}, b’punt għad-deċimali."
   },
   "meta": {
-    "description": "Daħħal riċetta tal-glejż (pottery) u ara l-formula ta’ Seger (UMF), silika : alumina u bilanċ tal-flussi. B’xejn, b’sors miftuħ: riċetti, materjali u reġistri tal-ħami.",
+    "description": "Riċetta tal-glejż (pottery): ara l-formula ta’ Seger (UMF), silika : alumina u bilanċ tal-flussi. B’xejn, b’sors miftuħ: riċetti, materjali u reġistri tal-ħami.",
     "guides": "Gwidi b’lingwa sempliċi għal fuħħarin ġodda: x’inhu l-glejż, kif tagħmlu u tħalltu b’mod sikur, kif tħares il-familja tiegħek u kif taħmi f’forn sempliċi.",
-    "glazingBasics": "Minn xiex isir il-glejż, kif il-forn jibdlu fi ħġieġ, u xi jfissru l-koni, il-fritti, il-formula ta’ Seger (UMF) u d-difetti tal-glejż. Gwida għal fuħħarin ġodda.",
+    "glazingBasics": "Minn xiex isir il-glejż, kif il-forn jibdlu fi ħġieġ, u xi jfissru l-koni, il-fritti, il-formula ta’ Seger (UMF) u d-difetti. Gwida għal fuħħarin ġodda.",
     "makingAGlaze": "Kif tixtri, taħżen, tiżen u tħallat glejż, iġġib il-ħxuna tiegħu tajba, tittestjah fuq it-tafal tiegħek u żżomm reġistri biex terġa’ tagħmlu.",
-    "safeMixing": "Kif iżżomm it-trab tal-glejż ’il bogħod mill-pulmun u d-dħaħen tal-forn barra mid-dar: drawwiet sikuri, respiraturi, tindif, ventilazzjoni, materjali ta’ riskju.",
-    "homeSafety": "X’għandek tagħmel jekk tifel jew annimal domestiku jibla’ materjal tal-glejż, u kif iżżomm il-materjali, it-trab, il-forn u l-oġġetti tiegħek sikuri għall-familja.",
+    "safeMixing": "Kif iżżomm it-trab tal-glejż ’il bogħod mill-pulmun u d-dħaħen tal-forn barra mid-dar: drawwiet sikuri, respiraturi, tindif, ventilazzjoni, materjali riskjużi.",
+    "homeSafety": "X’għandek tagħmel jekk tifel jew annimal domestiku jibla’ materjal tal-glejż, u kif iżżomm il-materjali, it-trab, il-forn u l-oġġetti sikuri għall-familja.",
     "firing": "Kif taħmi f’forn elettriku: agħżel, qiegħed u aqra l-koni, u segwi programmi ppubblikati għall-ħamjiet tal-bisque u tal-glejż, b’tabella tal-koni.",
-    "advice": "Suġġerimenti prattiċi dwar it-taħlit, it-tqegħid tal-glejż u l-ħami, minn Glazecalc, flimkien mal-pariri tiegħek. B’xejn għall-fuħħarin u għal min jaħdem iċ-ċeramika.",
+    "advice": "Suġġerimenti prattiċi dwar it-taħlit, it-tqegħid tal-glejż u l-ħami, minn Glazecalc, u l-pariri tiegħek. B’xejn għall-fuħħarin u għal min jaħdem iċ-ċeramika.",
     "about": "Glazecalc huwa kalkulatur tal-kimika tal-glejż u pitazz, b’xejn u b’sors miftuħ. Ara kif jikkalkula l-formula ta’ Seger (UMF) u kif inhu mibni.",
-    "privacy": "Kif Glazecalc jittratta d-data tiegħek: l-ebda reklam, l-ebda analitika, l-ebda traċċar, u xejn ma jinbiegħ. X’jinżamm, għaliex, u kif tuża d-drittijiet tiegħek.",
-    "signup": "Oħloq kont b’xejn fuq Glazecalc biex iżżomm ir-riċetti tal-glejż, il-materjali, in-noti u r-reġistri tal-ħami tiegħek. Bla reklam, u d-data tiegħek qatt ma tinbiegħ.",
+    "privacy": "Kif Glazecalc jittratta d-data tiegħek: l-ebda reklam, analitika jew traċċar, u xejn ma jinbiegħ. X’jinżamm, għaliex, u kif tuża d-drittijiet tiegħek.",
+    "signup": "Oħloq kont Glazecalc b’xejn biex iżżomm ir-riċetti tal-glejż, il-materjali, in-noti u r-reġistri tal-ħami tiegħek. Bla reklam; id-data tiegħek qatt ma tinbiegħ.",
     "imageAlt": "Glazecalc: ifhem il-glejżijiet tiegħek, mhux biss tħallathom."
   },
   "notices": {

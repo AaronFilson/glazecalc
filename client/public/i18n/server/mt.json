@@ -19,6 +19,7 @@
   "password-changed": "Il-password inbidlet.",
   "password-reset": "Il-password inbidlet. Idħol bil-password il-ġdida tiegħek.",
   "reset-unavailable": "Ir-risettjar tal-password bil-posta elettronika għadu mhux disponibbli.",
+  "reset-sent": "Jekk xi kont juża dak l-indirizz elettroniku, bgħatna link lil dak l-indirizz biex tirrisettja l-password. Il-link jaħdem għal {minutes, plural, one {# minuta} two {# minuti} few {# minuti} many {#-il minuta} other {# minuta}}.",
   "signed-out-everywhere": "Ħriġt minn kull apparat.",
   "email-unavailable": "Il-posta elettronika għadha mhix disponibbli, għalhekk ma nistgħux nibagħtu l-link.",
   "email-change-sent": "Bgħatna link lill-indirizz il-ġdid. L-indirizz elettroniku tiegħek jinbidel meta tiftħu. Il-link jaħdem għal {hours, plural, one {# siegħa} two {# sigħat} few {# sigħat} many {#-il siegħa} other {# siegħa}}.",

@@ -280,92 +280,92 @@ Label: Poprawki następnego wypału
 
 :::sk
 
-## Firing to SK cones {#sk-cones lang=en}
+## Wypał według stożków SK {#sk-cones}
 
-SK cones are the pyrometric cones made to Japan's standard, JIS R 8101, and sold in Japan by dealers such as Yuko Trading (有恒商事). Like any cone, an SK cone measures heatwork, not temperature alone: it softens and bends over when the ware has had enough heat, and you read how far it bent. Witness cones, reading how far a cone has bent, and holds work for it as for any cone. This section names each cone's system, and never turns an SK number into another system's number: the numbers of different cone series are not interchangeable.
+Stożki SK to stożki pirometryczne{{en: pyrometric cone}} wykonane według japońskiej normy JIS R 8101, sprzedawane w Japonii przez dystrybutorów takich jak Yuko Trading (有恒商事). Jak każdy stożek, stożek SK mierzy pracę cieplną{{en: heatwork}}, a nie samą temperaturę: mięknie i zgina się, gdy wyroby otrzymały dość ciepła, a odczytuje się, jak bardzo się zgiął. Stożki kontrolne{{en: witness cone}}, odczytywanie, jak bardzo stożek się zgiął, i przetrzymania{{en: hold}} działają przy nim tak samo jak przy każdym stożku. Ta sekcja przy każdym stożku podaje jego system i nigdy nie zamienia numeru SK na numer innego systemu: numery różnych serii stożków nie są zamienne.
 
 > [!NOTE]
-> Always write "SK" before the number. Many older Japanese recipes say only "SK 8" or "SK 9" without saying whose cone. Kyoto cones and SK cones to JIS carry the same numbers but bend at different temperatures (see Kyoto cones, below).
+> Zawsze należy pisać „SK” przed numerem. Wiele starszych japońskich receptur podaje tylko „SK 8” lub „SK 9”, nie mówiąc, czyj to stożek. Stożki z Kioto i stożki SK według JIS mają te same numery, ale zginają się w różnych temperaturach (zob. Stożki z Kioto, niżej).
 
-### The large cones
+### Duże stożki
 
-The standard has two sizes. Large cones (大型コーン) are "mainly used for measuring the degree of firing" (焼度測定), which is what a potter wants. Small cones (SK 26 to SK 42, at the top of the range) are "mainly used for refractoriness tests" and are not covered here. The table below gives the large cones from SK 022 to SK 20.
+Norma przewiduje dwa rozmiary. Duże stożki (大型コーン) są „używane głównie do pomiaru stopnia wypalenia” (焼度測定), a tego właśnie potrzebuje ceramik. Małe stożki (od SK 26 do SK 42, na górze zakresu) są „używane głównie w badaniach ogniotrwałości” i nie są tu omawiane. Poniższa tabela podaje duże stożki od SK 022 do SK 20.
 
-The numbers run from SK 022, the coolest, up to SK 20 here. Between SK 015 and SK 6 the printed numbers carry an "a" (SK 015a, SK 6a); write it as printed.
+Numery biegną od SK 022, najchłodniejszego, do SK 20 w tej tabeli. Między SK 015 a SK 6 drukowane numery mają literę „a” (SK 015a, SK 6a); należy je pisać tak, jak są wydrukowane.
 
-### Setting large cones
+### Ustawianie dużych stożków
 
-Set each large cone in a plaque or a pat of clay, leaning toward its bending face. As with any cone, keep the height and the lean the same from firing to firing, because a difference in either changes how far it bends. Set the three cones of the pack (below) together, deep in the kiln near the middle of the load, where they get the heat the ware gets, yet where you can see them through a peephole; before you close the kiln, check that you can see all three.
+Każdy duży stożek należy osadzić w podstawce lub w placku z gliny, pochylony w stronę ściany zginania. Jak przy każdym stożku, wysokość i pochylenie należy zachować takie same w każdym wypale, bo różnica w jednym lub drugim zmienia to, jak bardzo stożek się zegnie. Trzy stożki zestawu{{en: cone pack}} (niżej) należy ustawić razem, głęboko w piecu, blisko środka wsadu, gdzie otrzymują to samo ciepło co wyroby, a jednak tam, gdzie widać je przez wziernik; przed zamknięciem pieca należy sprawdzić, czy widać wszystkie trzy.
 
-### Guide, firing and guard cones
+### Stożek ostrzegawczy, docelowy i zabezpieczający
 
-Cones are sold and set as three: a guide cone, a firing cone at the target, and a guard cone. Take the firing cone as the SK number your recipe or clay names, the guide cone as the next cooler cone (one row up in the table) and the guard cone as the next hotter one. When the guide cone starts to bend, the end is near; when the guard cone bends, the firing has gone too far.
+Stożki sprzedaje się i ustawia po trzy: stożek ostrzegawczy, stożek docelowy i stożek zabezpieczający. Jako stożek docelowy należy wziąć numer SK, który podaje receptura lub glina, jako stożek ostrzegawczy następny chłodniejszy stożek (jeden wiersz wyżej w tabeli), a jako stożek zabezpieczający następny gorętszy. Gdy stożek ostrzegawczy zaczyna się zginać, koniec jest blisko; gdy zegnie się stożek zabezpieczający, wypał poszedł za daleko.
 
-### The SK chart
+### Tabela stożków SK
 
-Table: SK large cones (JIS R 8101): the nominal (JIS) temperature of each
-Label: SK chart
+Table: Duże stożki SK (JIS R 8101): nominalna temperatura (JIS) każdego z nich
+Label: Tabela stożków SK
 
-| Cone    | Nominal (JIS) temperature |
-| ------- | ------------------------: |
-| SK 022  |       {{1112 °F; 600 °C}} |
-| SK 021  |       {{1202 °F; 650 °C}} |
-| SK 020  |       {{1238 °F; 670 °C}} |
-| SK 019  |       {{1274 °F; 690 °C}} |
-| SK 018  |       {{1310 °F; 710 °C}} |
-| SK 017  |       {{1346 °F; 730 °C}} |
-| SK 016  |       {{1382 °F; 750 °C}} |
-| SK 015a |       {{1454 °F; 790 °C}} |
-| SK 014a |       {{1499 °F; 815 °C}} |
-| SK 013a |       {{1535 °F; 835 °C}} |
-| SK 012a |       {{1571 °F; 855 °C}} |
-| SK 011a |       {{1616 °F; 880 °C}} |
-| SK 010a |       {{1652 °F; 900 °C}} |
-| SK 09a  |       {{1688 °F; 920 °C}} |
-| SK 08a  |       {{1724 °F; 940 °C}} |
-| SK 07a  |       {{1760 °F; 960 °C}} |
-| SK 06a  |       {{1796 °F; 980 °C}} |
-| SK 05a  |      {{1832 °F; 1000 °C}} |
-| SK 04a  |      {{1868 °F; 1020 °C}} |
-| SK 03a  |      {{1904 °F; 1040 °C}} |
-| SK 02a  |      {{1940 °F; 1060 °C}} |
-| SK 01a  |      {{1976 °F; 1080 °C}} |
-| SK 1a   |      {{2012 °F; 1100 °C}} |
-| SK 2a   |      {{2048 °F; 1120 °C}} |
-| SK 3a   |      {{2084 °F; 1140 °C}} |
-| SK 4a   |      {{2120 °F; 1160 °C}} |
-| SK 5a   |      {{2156 °F; 1180 °C}} |
-| SK 6a   |      {{2192 °F; 1200 °C}} |
-| SK 7    |      {{2246 °F; 1230 °C}} |
-| SK 8    |      {{2282 °F; 1250 °C}} |
-| SK 9    |      {{2336 °F; 1280 °C}} |
-| SK 10   |      {{2372 °F; 1300 °C}} |
-| SK 11   |      {{2408 °F; 1320 °C}} |
-| SK 12   |      {{2462 °F; 1350 °C}} |
-| SK 13   |      {{2516 °F; 1380 °C}} |
-| SK 14   |      {{2570 °F; 1410 °C}} |
-| SK 15   |      {{2615 °F; 1435 °C}} |
-| SK 16   |      {{2660 °F; 1460 °C}} |
-| SK 17   |      {{2696 °F; 1480 °C}} |
-| SK 18   |      {{2732 °F; 1500 °C}} |
-| SK 19   |      {{2768 °F; 1520 °C}} |
-| SK 20   |      {{2786 °F; 1530 °C}} |
+| Stożek  | Temperatura nominalna (JIS) |
+| ------- | --------------------------: |
+| SK 022  |         {{1112 °F; 600 °C}} |
+| SK 021  |         {{1202 °F; 650 °C}} |
+| SK 020  |         {{1238 °F; 670 °C}} |
+| SK 019  |         {{1274 °F; 690 °C}} |
+| SK 018  |         {{1310 °F; 710 °C}} |
+| SK 017  |         {{1346 °F; 730 °C}} |
+| SK 016  |         {{1382 °F; 750 °C}} |
+| SK 015a |         {{1454 °F; 790 °C}} |
+| SK 014a |         {{1499 °F; 815 °C}} |
+| SK 013a |         {{1535 °F; 835 °C}} |
+| SK 012a |         {{1571 °F; 855 °C}} |
+| SK 011a |         {{1616 °F; 880 °C}} |
+| SK 010a |         {{1652 °F; 900 °C}} |
+| SK 09a  |         {{1688 °F; 920 °C}} |
+| SK 08a  |         {{1724 °F; 940 °C}} |
+| SK 07a  |         {{1760 °F; 960 °C}} |
+| SK 06a  |         {{1796 °F; 980 °C}} |
+| SK 05a  |        {{1832 °F; 1000 °C}} |
+| SK 04a  |        {{1868 °F; 1020 °C}} |
+| SK 03a  |        {{1904 °F; 1040 °C}} |
+| SK 02a  |        {{1940 °F; 1060 °C}} |
+| SK 01a  |        {{1976 °F; 1080 °C}} |
+| SK 1a   |        {{2012 °F; 1100 °C}} |
+| SK 2a   |        {{2048 °F; 1120 °C}} |
+| SK 3a   |        {{2084 °F; 1140 °C}} |
+| SK 4a   |        {{2120 °F; 1160 °C}} |
+| SK 5a   |        {{2156 °F; 1180 °C}} |
+| SK 6a   |        {{2192 °F; 1200 °C}} |
+| SK 7    |        {{2246 °F; 1230 °C}} |
+| SK 8    |        {{2282 °F; 1250 °C}} |
+| SK 9    |        {{2336 °F; 1280 °C}} |
+| SK 10   |        {{2372 °F; 1300 °C}} |
+| SK 11   |        {{2408 °F; 1320 °C}} |
+| SK 12   |        {{2462 °F; 1350 °C}} |
+| SK 13   |        {{2516 °F; 1380 °C}} |
+| SK 14   |        {{2570 °F; 1410 °C}} |
+| SK 15   |        {{2615 °F; 1435 °C}} |
+| SK 16   |        {{2660 °F; 1460 °C}} |
+| SK 17   |        {{2696 °F; 1480 °C}} |
+| SK 18   |        {{2732 °F; 1500 °C}} |
+| SK 19   |        {{2768 °F; 1520 °C}} |
+| SK 20   |        {{2786 °F; 1530 °C}} |
 
-Every figure is nominal (JIS): the temperature the standard gives for the cone, as printed in Yuko Trading's table. The table does not print a heating rate. The standard gives reference temperatures. At a potter's rate of about 100 °C/h, Kyoto's municipal institute measured its own Kyoto cones bending 40–70 °C cooler than the JIS figure for the same number; we found no such measurements for SK cones to JIS. Set a witness cone and compare.
+Każda wartość jest nominalna (JIS): to temperatura, którą norma podaje dla stożka, wydrukowana w tabeli Yuko Trading. Tabela nie podaje szybkości grzania. Norma podaje temperatury odniesienia. Przy typowej dla ceramików szybkości około 100 °C/h miejski instytut w Kioto zmierzył, że jego własne stożki z Kioto zginają się w temperaturze o 40–70 °C niższej niż wartość JIS dla tego samego numeru; dla stożków SK według JIS nie znaleźliśmy takich pomiarów. Należy ustawić stożek kontrolny i porównać.
 
-### Kyoto cones
+### Stożki z Kioto
 
-Kyoto cones (京都ゼーゲル), made by Kyoto's municipal institute, are no longer made: news reports say the institute ended production at the close of fiscal 2009. They carry the same numbers as SK cones to JIS but bend cooler: a Kyoto cone mostly bends at about the temperature of the SK cone to JIS two numbers lower. A recipe from Kyoto that says "SK 8" may mean a Kyoto cone. The institute has published advice for potters moving from Kyoto cones to Orton cones, and substitutes Orton cone 10 for its own Kyoto SK 12; that is the institute's choice from its own measurements at 100 °C/h, and applies to no other cone.
+Stożki z Kioto (京都ゼーゲル), wytwarzane przez miejski instytut w Kioto, nie są już produkowane: według doniesień prasowych instytut zakończył produkcję z końcem roku budżetowego 2009. Mają te same numery co stożki SK według JIS, ale zginają się w niższej temperaturze: stożek z Kioto przeważnie zgina się mniej więcej w temperaturze stożka SK według JIS o dwa numery niższego. Receptura z Kioto, która podaje „SK 8”, może mieć na myśli stożek z Kioto. Instytut opublikował wskazówki dla ceramików przechodzących ze stożków z Kioto na stożki Ortona i swój stożek z Kioto SK 12 zastępuje stożkiem Ortona 10; to wybór instytutu, oparty na jego własnych pomiarach przy 100 °C/h, i nie dotyczy żadnego innego stożka.
 
-### Orton cones sold in Japan
+### Stożki Ortona sprzedawane w Japonii
 
-Orton self-supporting cones are sold in Japan under the name 立つゼーゲル ("standing Seger"), because they need no plaque or stand. They are Orton cones, with Orton's numbers and Orton's chart (above): fire to one only by its Orton number, and keep SK and Orton cones in separate packs, never in the same one.
+Samonośne stożki Ortona są sprzedawane w Japonii pod nazwą 立つゼーゲル („stojący Seger”), bo nie potrzebują podstawki ani stojaka. To stożki Ortona, z numerami Ortona i tabelą Ortona (wyżej): do takiego stożka należy wypalać tylko według jego numeru Ortona, a stożki SK i stożki Ortona trzymać w osobnych zestawach, nigdy w jednym.
 
-### Sources for SK cones
+### Źródła dotyczące stożków SK
 
-- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (the SK table, checked 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
-- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (in force, reconfirmed 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
-- [Kyoto Municipal Institute of Industrial Technology and Culture: points to note when moving from Kyoto cones to Orton cones](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
+- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (tabela stożków SK, sprawdzono 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
+- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (obowiązuje, ponownie zatwierdzona 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [Kyoto Municipal Institute of Industrial Technology and Culture: na co zwrócić uwagę, przechodząc ze stożków z Kioto na stożki Ortona](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
 
 :::
 

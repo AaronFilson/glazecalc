@@ -113,7 +113,7 @@
     "setBy": "Leagtha síos sa dlí seo: <link>{law}</link>.",
     "lowerThanEu": "Níos ísle ná teorainnluach ceangailteach an Aontais Eorpaigh, {value} mg/m³.",
     "sameAsEu": "Is ionann é agus teorainnluach ceangailteach an Aontais Eorpaigh.",
-    "recommendedBy": "Molann an comhlacht {by} ({abbr}) an luach seo sa doiciméad <link>{title}</link>. Ní dlí é.",
+    "recommendedBy": "Molann {abbr} ({by}) an luach seo sa doiciméad <link>{title}</link>. Ní dlí é.",
     "respirators": "Díoltar maisc deannaigh anseo de réir aicme: {everyday} do dheannach glónra, nó {higher} le haghaidh níos mó cosanta (<link>na haicmí oifigiúla</link>).",
     "unknown": "Níorbh fhéidir linn an teorainn náisiúnta a dheimhniú sa tír seo: {region}. Tá feidhm ag teorainnluach ceangailteach an Aontais Eorpaigh, {value} mg/m³, i ngach ballstát.",
     "noData": "Níor dheimhníomar an teorainn fós sa tír seo: {region}.",

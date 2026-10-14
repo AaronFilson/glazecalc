@@ -113,7 +113,7 @@
     "setBy": "Stabbilit minn <link>{law}</link>.",
     "lowerThanEu": "Aktar baxx mil-limitu vinkolanti tal-UE ta’ {value} mg/m³.",
     "sameAsEu": "L-istess bħal-limitu vinkolanti tal-UE.",
-    "recommendedBy": "Dan il-valur huwa rakkomandat minn {by} ({abbr}) f’<link>{title}</link>. Mhuwiex liġi.",
+    "recommendedBy": "Dan il-valur huwa rakkomandat minn {abbr} ({by}) f’<link>{title}</link>. Mhuwiex liġi.",
     "respirators": "Hawn il-maskri kontra t-trab jinbiegħu skont il-klassi: {everyday} għat-trab tal-glejż, jew {higher} għal aktar protezzjoni (<link>il-klassijiet uffiċjali</link>).",
     "unknown": "Ma stajniex nikkonfermaw il-limitu nazzjonali ({region}). Il-limitu vinkolanti tal-UE ta’ {value} mg/m³ japplika f’kull Stat Membru.",
     "noData": "Għadna ma kkonfermajniex il-limitu ({region}).",
@@ -156,7 +156,7 @@
     "euRules": "Hawn japplikaw ir-regoli tal-UE.",
     "law": "Stabbiliti minn <link>{law}</link>.",
     "inForce": "Data tad-dħul fis-seħħ: {date}.",
-    "atMost": "Oġġett jgħaddi jekk ma jirrilaxxax aktar mil-limitu: il-liġi tgħid “l-aktar”.",
+    "atMost": "Oġġett jgħaddi jekk ma jirrilaxxax aktar mil-limitu: il-liġi tgħid “mhux aktar minn”.",
     "unknown": "Għadna ma kkonfermajniex ir-regoli ({region}).",
     "choosePrompt": "Agħżel il-pajjiż tiegħek biex tara r-regoli tiegħu."
   },

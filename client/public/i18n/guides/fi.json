@@ -113,7 +113,7 @@
     "setBy": "Säädös: <link>{law}</link>.",
     "lowerThanEu": "Alempi kuin EU:n sitova raja-arvo {value} mg/m³.",
     "sameAsEu": "Sama kuin EU:n sitova raja-arvo.",
-    "recommendedBy": "{by} ({abbr}) suosittelee tätä arvoa julkaisussaan <link>{title}</link>. Arvo ei ole laissa säädetty.",
+    "recommendedBy": "{abbr} ({by}) suosittelee tätä arvoa julkaisussaan <link>{title}</link>. Arvo ei ole laissa säädetty.",
     "respirators": "Pölysuojaimia myydään täällä luokittain: lasitepölyyn {everyday} tai paremman suojan saamiseksi {higher} (<link>viralliset luokat</link>).",
     "unknown": "Maan {region} kansallista raja-arvoa ei voitu vahvistaa. EU:n sitova raja-arvo {value} mg/m³ on voimassa kaikissa jäsenvaltioissa.",
     "noData": "Maan {region} raja-arvoa ei ole vielä vahvistettu.",

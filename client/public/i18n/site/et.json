@@ -91,7 +91,7 @@
     "choiceNoAccount": "Juhendite lugemiseks ei ole kontot vaja ja kalkulaatorit saate proovida nupuga Proovi kohe, ilma e-posti aadressi ja paroolita. Proovikasutust hoitakse samades serverites 14 päeva.",
     "choiceOwnCopy": "Igaüks võib käitada oma Glazecalci koopiat oma arvutis või serveris: kood on <source>GitHubis</source> tasuta saadaval.",
     "choiceDecision": "See, kas luua siin konto, teades, et seda hoitakse Ameerika Ühendriikides, on teie enda otsus.",
-    "choiceNoWarranty": "Glazecalc on esitatud sellisena, nagu see on, ilma garantiita. Selle haldajad ei võta mingit vastutust ega kohustusi teie otsuse eest konto luua ega selle eest, kus selle andmeid hoitakse.",
+    "choiceNoWarranty": "Glazecalc on esitatud sellisena, nagu see on, ilma garantiita. Selle haldajad ei võta mingit vastutust ega kahju hüvitamise kohustust teie otsuse eest konto luua ega selle eest, kus selle andmeid hoitakse.",
     "keptHeading": "Kui kaua andmeid hoitakse",
     "keptAccount": "<b>Teie konto ja salvestatu:</b> kuni te need kustutate. Kontosid ei eemaldata kasutamatuse tõttu.",
     "keptTrial": "<b>Proovikasutus:</b> 14 päeva selle algusest, seejärel kustutatakse see koos kõigega, mis selles on, kui te just ei loo selle säilitamiseks kontot.",
