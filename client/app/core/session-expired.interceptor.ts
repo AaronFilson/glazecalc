@@ -6,9 +6,12 @@ import { API_BASE } from './api-base';
 import { AuthService } from './auth.service';
 
 // 401s these answer are handled where they are called: /signin's means a wrong
-// password, and /verify's is handled by AuthService.refresh (it also runs on
-// pages that need no sign-in, such as the password reset page).
-const HANDLED_ELSEWHERE = ['/signin', '/verify'];
+// password, and those of the routes under it (/signin/second-step, /signin/passkey)
+// a wrong code or passkey, which must not end a trial on this browser; /verify's
+// is handled by AuthService.refresh (it also runs on pages that need no sign-in,
+// such as the password reset page).
+const handledElsewhere = (path: string): boolean =>
+  path === '/signin' || path.startsWith('/signin/') || path === '/verify';
 
 /**
  * When the API stops accepting this browser's session (it expired, or the
@@ -31,7 +34,7 @@ export const sessionExpiredInterceptor: HttpInterceptorFn = (req, next) => {
       if (
         err instanceof HttpErrorResponse &&
         err.status === 401 &&
-        !HANDLED_ELSEWHERE.includes(path) &&
+        !handledElsewhere(path) &&
         auth.sessionVersion() === version
       ) {
         const wasTrial = auth.trial() !== null;
