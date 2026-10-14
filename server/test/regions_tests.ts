@@ -291,12 +291,13 @@ describe('Japan', () => {
   });
 });
 
-// Adding Japan, and the fields it needed, left every earlier region's data as it was.
-describe('regions before Japan', () => {
+// Adding a region, and the fields it needed, leaves every earlier region's data as it was:
+// the regions before Japan, then Japan too, before Turkey.
+describe('regions before Turkey', () => {
   it('keep their data exactly', () => {
     const codes = [
       'US', 'GB', 'AU', 'NZ', 'AT', 'BE', 'BG', 'HR', 'CY', 'CZ', 'DK', 'EE', 'FI', 'FR', 'DE', 'GR',
-      'HU', 'IE', 'IT', 'LV', 'LT', 'LU', 'MT', 'NL', 'PL', 'PT', 'RO', 'SK', 'SI', 'ES', 'SE'
+      'HU', 'IE', 'IT', 'LV', 'LT', 'LU', 'MT', 'NL', 'PL', 'PT', 'RO', 'SK', 'SI', 'ES', 'SE', 'JP'
     ]; // prettier-ignore
     const data: unknown[] = codes.map((code) => [
       code,
@@ -309,6 +310,6 @@ describe('regions before Japan', () => {
     ]);
     data.push(['EU', food.FOOD['EU'], workplace.EU_SILICA]);
     const hash = crypto.createHash('sha256').update(JSON.stringify(data)).digest('hex');
-    expect(hash).to.equal('c7ac856ef009087bc7c118f7fc89613351f48533aa43644c2b5f0224cd631c13');
+    expect(hash).to.equal('b67632a22a57f9bd73f72e3af3ddf3abebdaacfb69f1a3fe20d0b071a9019340');
   });
 });

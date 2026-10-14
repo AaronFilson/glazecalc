@@ -9,11 +9,12 @@ import { SilicaLimit } from './silica-limit';
 
 // Adding a region, or a field a new region needs, must not change what any
 // region already shown says. These are the four region blocks' HTML for every
-// region there was before Japan, kept in __snapshots__: a change to any of them
-// fails here and is either a mistake or a deliberate update (vitest -u).
-const BEFORE_JAPAN = [
+// region there was before Turkey (Japan added once Japan was done), kept in
+// __snapshots__: a change to any of them fails here and is either a mistake or
+// a deliberate update (vitest -u).
+const BEFORE_TURKEY = [
   'US', 'GB', 'AU', 'NZ', 'AT', 'BE', 'BG', 'HR', 'CY', 'CZ', 'DK', 'EE', 'FI', 'FR', 'DE', 'GR',
-  'HU', 'IE', 'IT', 'LV', 'LT', 'LU', 'MT', 'NL', 'PL', 'PT', 'RO', 'SK', 'SI', 'ES', 'SE'
+  'HU', 'IE', 'IT', 'LV', 'LT', 'LU', 'MT', 'NL', 'PL', 'PT', 'RO', 'SK', 'SI', 'ES', 'SE', 'JP'
 ]; // prettier-ignore
 
 const BLOCKS: Array<[string, Type<unknown>]> = [
@@ -37,7 +38,7 @@ const html = async (component: Type<unknown>, region: string): Promise<string> =
     .replace(/<gc-region-select>[\s\S]*?<\/gc-region-select>/g, '');
 };
 
-describe('region blocks before Japan', () => {
+describe('region blocks before Turkey', () => {
   beforeEach(() => {
     localStorage.clear();
     TestBed.configureTestingModule({ providers: testProviders() });
@@ -46,7 +47,7 @@ describe('region blocks before Japan', () => {
   for (const [name, component] of BLOCKS) {
     it(`says exactly what it said before for every earlier region: ${name}`, async () => {
       const all: Record<string, string> = {};
-      for (const region of BEFORE_JAPAN) all[region] = await html(component, region);
+      for (const region of BEFORE_TURKEY) all[region] = await html(component, region);
       expect(all).toMatchSnapshot();
     });
   }
