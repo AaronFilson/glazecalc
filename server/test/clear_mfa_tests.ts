@@ -1,6 +1,7 @@
 // The owner's script for someone who has lost every factor (server/clear_mfa.ts,
 // docs/mfa-plan.md item 15): a notice first, then, 7 days later, the factors go.
 import { clear, main, notify, WAIT_DAYS } from '../clear_mfa.ts';
+import { MFA_CLEAR_NOTICE, MFA_OFF, MFA_REMOVED, mailDate } from '../lib/account_mail.ts';
 import AuthChallenge from '../models/auth_challenge.ts';
 import PendingSignIn from '../models/pending_sign_in.ts';
 import User from '../models/user.ts';
@@ -53,8 +54,8 @@ describe('turning off two-step sign-in for a lost account (clear_mfa.ts)', () =>
     expect((await User.findById(user._id))!.mfa!.clearRequestedAt).to.eql(now);
 
     const [sent] = await mail.waitFor(email, 1);
-    expect(sent!.subject).to.match(/Two-step sign-in will be turned off/);
-    expect(sent!.text).to.include(outcome.clearAfter!.toUTCString());
+    expect(sent!.subject).to.eql(MFA_CLEAR_NOTICE['en']!.subject);
+    expect(sent!.text).to.include(mailDate(outcome.clearAfter!));
     expect(sent!.text).to.include('privacy@glazecalcapp.com');
   });
 
@@ -123,6 +124,13 @@ describe('turning off two-step sign-in for a lost account (clear_mfa.ts)', () =>
     expect(res.body.code).to.eql('signed-in');
     // And there is nothing left to clear.
     expect((await clear(email)).ok).to.eql(false);
+
+    // The notice, then one email saying two-step sign-in is off: none per factor.
+    const sent = (await mail.waitFor(email, 2)).map((one) => one.subject);
+    await mail.settle();
+    expect(mail.to(email).map((one) => one.subject)).to.eql(sent);
+    expect(sent).to.eql([MFA_CLEAR_NOTICE['en']!.subject, MFA_OFF['en']!.subject]);
+    expect(sent).to.not.include(MFA_REMOVED['en']!.subject);
   });
 
   it('runs from the command line only with a flag and one address', async () => {

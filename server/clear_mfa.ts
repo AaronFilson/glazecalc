@@ -8,13 +8,12 @@
 //   node server/clear_mfa.ts --clear <email>    turns it off, once those 7 days have passed
 //
 // --clear removes the factors and recovery codes, raises tokenVersion (every
-// device is signed out) and sends the removal notice. A password reset never
-// does this. The output never shows the address or anything secret.
+// device is signed out) and sends one notice that two-step sign-in is off. A
+// password reset never does this. The output never shows the address or
+// anything secret.
 import mongoose from 'mongoose';
 import * as accountMail from './lib/account_mail.ts';
-import type { MfaMethod } from './lib/account_mail.ts';
 import * as email from './lib/email.ts';
-import * as mailer from './lib/mailer.ts';
 import AuthChallenge from './models/auth_challenge.ts';
 import PendingSignIn from './models/pending_sign_in.ts';
 import User, { mfaOn } from './models/user.ts';
@@ -25,24 +24,6 @@ const DAY = 24 * 60 * 60 * 1000;
 
 export type Outcome =
   { ok: true; message: string; clearAfter?: Date } | { ok: false; message: string; clearAfter?: Date };
-
-const CONTACT = 'privacy@glazecalcapp.com';
-
-/** The notice: English only, like the other owner-run steps. */
-const noticeText = (account: string, when: Date): { subject: string; text: string } => ({
-  subject: 'Two-step sign-in will be turned off on your Glazecalc account',
-  text: [
-    'Hello,',
-    '',
-    `We were asked to turn off two-step sign-in on the Glazecalc account ${account}, because every second step for it (authenticator app, passkeys and recovery codes) was lost.`,
-    '',
-    `It will be turned off on ${when.toUTCString()} unless you write to ${CONTACT} before then.`,
-    '',
-    `If you did not ask for this, please write to ${CONTACT} now. Your password may be known to someone else: change it at ${mailer.appUrl()}/forgot.`,
-    '',
-    'Glazecalc'
-  ].join('\n')
-});
 
 const findAccount = (address: string) =>
   User.findOne({ email: email.normalize(address), guest: { $ne: true } }).collation(email.collation);
@@ -59,14 +40,15 @@ export const notify = async (address: string, now: Date = new Date()): Promise<O
   if (user.emailUnverified) return { ok: false, message: 'The account’s email is not confirmed: refused.' };
   const clearAfter = new Date(now.getTime() + WAIT_DAYS * DAY);
   await User.updateOne({ _id: user._id }, { $set: { 'mfa.clearRequestedAt': now } });
-  await mailer.send({ to: user.email, ...noticeText(user.email, clearAfter) });
+  // English unless the account chose a language the notice is written in (account_mail.ts).
+  await accountMail.sendMfaClearNotice(user.email, clearAfter, user.preferences?.language ?? undefined);
   return { ok: true, message: `Notice sent. --clear works from ${clearAfter.toISOString()}.`, clearAfter };
 };
 
 /**
  * --clear: refused until WAIT_DAYS after --notify. Removes the factors and
  * recovery codes, raises tokenVersion, ends any pending sign-in or challenge,
- * and sends a removal notice for each factor removed.
+ * and sends one notice that two-step sign-in is off.
  */
 export const clear = async (address: string, now: Date = new Date()): Promise<Outcome> => {
   const user = await findAccount(address);
@@ -78,10 +60,6 @@ export const clear = async (address: string, now: Date = new Date()): Promise<Ou
   if (now < clearAfter) {
     return { ok: false, message: `Too soon: --clear works from ${clearAfter.toISOString()}.`, clearAfter };
   }
-  const removed: MfaMethod[] = [
-    ...(user.mfa?.totp ? [{ kind: 'totp' } as const] : []),
-    ...(user.mfa?.passkeys ?? []).map((passkey) => ({ kind: 'passkey' as const, name: passkey.name }))
-  ];
   // Only if the request is still the one checked above: a newer --notify starts the wait again.
   const result = await User.updateOne(
     { _id: user._id, 'mfa.clearRequestedAt': requested },
@@ -89,7 +67,7 @@ export const clear = async (address: string, now: Date = new Date()): Promise<Ou
   );
   if (result.modifiedCount !== 1) return { ok: false, message: 'The account changed meanwhile; nothing done.' };
   await Promise.all([PendingSignIn.deleteMany({ userId: user._id }), AuthChallenge.deleteMany({ userId: user._id })]);
-  for (const method of removed) accountMail.noticeMfa(user, { kind: 'removed', method });
+  accountMail.noticeMfa(user, { kind: 'mfa-off' });
   return { ok: true, message: 'Two-step sign-in is off, and every device is signed out.' };
 };
 
