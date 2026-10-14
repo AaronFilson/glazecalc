@@ -56,6 +56,19 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   SK 022 to SK 20 chart with each figure marked nominal (JIS), its source and the date checked. SK and
   Orton numbers are never turned into each other. The new guide section is in English until it is
   translated.
+- **Japan as a region** (in English for now). It fires by SK cones and reads glaze density in
+  degrees Baumé until you choose otherwise, and lists the US materials until Japan's own are added.
+  The guides give, each from an official page with its date:
+  - **Who to call:** 119, and the Japan Poison Information Center's two public lines (Osaka and
+    Tsukuba, 24 hours, free), which take only acute poisoning that has happened, not long-term
+    exposure; and #8000 for medical advice about a child.
+  - **Silica:** the control concentration (管理濃度) as the law gives it, 3.0 / (1.19Q + 1) mg/m³ for
+    a work area's air by its free silica content Q, 0.025 mg/m³ for dust that is all free silica,
+    the Japan Society for Occupational Health's recommended 0.03 mg/m³ beside it, and the dust mask
+    classes sold there (DS2 or RS2; DS3 or RS3).
+  - **Lead and cadmium** in the law's own units: µg/cm² for flat ware, three sizes and cooking ware
+    in µg/mL, each a most.
+  - **Three shops** selling raw glaze materials, by their own names.
 - **Groundwork for East and Southeast Asia**, before any of its languages:
   - **Numbers and dates** can be written as in Japan, Korea, mainland China and Taiwan (Simplified and
     Traditional Chinese each keep their script in any region), Hong Kong, Singapore, Malaysia,

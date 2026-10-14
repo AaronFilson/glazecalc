@@ -2,7 +2,18 @@
 
 Status: drafted 2026-10-13 from the Asia research report and its three notes, for the owner's review. It follows docs/i18n-plan.md ("After the EU") and reuses its machinery. Nothing here changes the EU approach.
 
-Progress, 2026-10-14 (branch asia-japan): **Phase A is merged** (the three groundwork branches: locales, checks, fonts). **Phase B items 1–4 and the data half of item 6 are done**: the third cone system, the guides' three-way version choice, the SK chart as data (lib/cones) and the English SK section of the firing guide. Item 6 is done too: the SK chart was checked row by row against Yuko Trading's PDF, and all 42 rows match. Item 5 (translating the new section) remains. Phase C (the JP region) is next.
+Progress, 2026-10-14 (branch asia-japan): **Phase A is merged** (the three groundwork branches: locales, checks, fonts). **Phase B items 1–4 and the data half of item 6 are done**: the third cone system, the guides' three-way version choice, the SK chart as data (lib/cones) and the English SK section of the firing guide. Item 6 is done too: the SK chart was checked row by row against Yuko Trading's PDF, and all 42 rows match. Item 5 (translating the new section) remains.
+
+**Phase C for Japan is done** (2026-10-14, English only): the JP region (SK cones, Baumé, the US library) with its poison lines, silica, food-contact rules, dust mask classes and three shops, each with its source, check date and status. The model gained a `control` silica kind with the law's formula and a recommended value beside it (JSOH), respirator classes, food limits in µg/cm² and Japan's own categories (`jpFlat`, `jpSmall`, `jpLarge`, `jpStorage`, `jpCooking`), and `atMost` for 以下. A snapshot test and a data hash prove the earlier regions show exactly what they did. Japanese materials (item 6) and the ja translation (Phase D) remain. Korea, Taiwan, Singapore and Malaysia are next.
+
+Japan, could not verify (not shipped as fact):
+
+- each-item or average judging of ceramic ware (not stated in the 2025 text);
+- the exact in-force date of the 2025 revision (2026-06-01, seen only in Osaka's copy), so no in-force date is shown; the limits are unchanged since 2008;
+- 丸二陶料's town (the notes give 蒲郡市, which may be another shop's) and an https address for its site (it is linked over http); pack sizes at 陶芸百貨店 and ヤマニ;
+- JSOH's 2026 list (members only) and a 濃度基準値 for crystalline silica (a FY2026 candidate);
+- #7119 (not nationwide), so it is not listed; who answers #8000 and its cost;
+- how large cones are set (depth and angle), as above.
 
 Corrections from the Japan research (docs from research_notes/Asia/japan-verification-2026-10-14.md):
 
@@ -115,7 +126,7 @@ Each country goes through the same steps, and none goes live with an unverified 
    - **VN:** 113/114/115, Bạch Mai's hours and public status, QCVN 02:2019 and QCVN 12-4:2015;
    - **ID:** HALOBPOM's poison role, BPOM 11/2026's ≥1100 mL sign, promulgation date and the 0.5 mg/L lead figure;
    - **PH:** the DOLE silica table, NPMCC hours;
-   - **JP:** the 作業環境評価基準 text and JSOH's current list.
+   - **JP:** _done 2026-10-14_ (the 作業環境評価基準 text read; JSOH's 2025–2026 list read; its 2026 list is members only).
 
    Plus suppliers everywhere. Record each status as the brief does (verified, secondary, extract, unverified).
 
