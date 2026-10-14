@@ -1,6 +1,6 @@
 // The signed-in account.
 //
-//   GET    /api/verify            who the session belongs to
+//   GET    /api/verify            who the session belongs to (mfa: true when two-step sign-in is on)
 //   GET    /api/preferences       the account's (or trial's) choices: { weightUnit, gramPrecision, theme, palette, lead,
 //                                  region, format, decimalMark, temperature, cones, language,
 //                                  density, englishTerms, notice }
@@ -20,7 +20,7 @@ import * as mailer from '../lib/mailer.ts';
 import * as password from '../lib/password.ts';
 import * as limits from '../lib/rate_limit.ts';
 import * as session from '../lib/session.ts';
-import User, { PREFERENCES, type Preferences } from '../models/user.ts';
+import User, { mfaOn, PREFERENCES, type Preferences } from '../models/user.ts';
 import { say } from '../lib/messages.ts';
 
 const userRouter = express.Router();
@@ -33,17 +33,19 @@ const tokenFilter = (req: Request, res: Response, next: NextFunction) => {
   return next();
 };
 
-userRouter.get('/verify', tokenFilter, jwtAuth, (req, res) => {
+userRouter.get('/verify', tokenFilter, jwtAuth, async (req, res) => {
   const user = userOf(req);
   // A trial's placeholder email stays on the server; the app shows its name.
   const identity = { ...say('verified'), id: user.id as string, name: user.displayname };
-  res
-    .status(200)
-    .json(
-      user.guest
-        ? { ...identity, guest: true, expiresAt: user.expiresAt }
-        : { ...identity, email: user.email, ...(user.emailUnverified && { unverified: true }) }
-    );
+  if (user.guest) return res.status(200).json({ ...identity, guest: true, expiresAt: user.expiresAt });
+  // jwtAuth leaves the factors out, so whether two-step sign-in is on is read here.
+  const factors = await User.findById(user._id, { mfa: 1 });
+  return res.status(200).json({
+    ...identity,
+    email: user.email,
+    ...(user.emailUnverified && { unverified: true }),
+    ...(factors && mfaOn(factors) && { mfa: true })
+  });
 });
 
 // Choices about how the app shows things. Unlike the account's details below,

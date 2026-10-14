@@ -29,12 +29,16 @@ export const currentUser = async (req: Request): Promise<UserDocument | null> =>
     return null;
   }
   // { id, tv }: the user, and their token version when the token was made.
+  // Sign-in tokens have no audience or type; the pending second step's token
+  // (server/lib/second_step.ts) has both, and no id, so it is never a sign-in.
   if (typeof claims === 'string' || typeof claims.id !== 'string') return null;
+  if (claims.aud !== undefined || claims.typ !== undefined) return null;
   const version = typeof claims.tv === 'number' ? claims.tv : 0;
   let user: UserDocument | null;
   try {
-    // The password hash is not needed past this point.
-    user = await User.findById(claims.id, { password: 0 });
+    // The password hash and the two-step sign-in factors are not needed past
+    // this point; routes that need the factors load them themselves.
+    user = await User.findById(claims.id, { password: 0, mfa: 0 });
   } catch (err) {
     // An id that is not an ObjectId is a bad token. Anything else (the database
     // is down or restarting) is a server error, so clients keep their sign-in.
