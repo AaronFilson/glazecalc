@@ -230,7 +230,9 @@ describe('cookies stay host-only', () => {
     ];
     let cookies = 0;
     for (const res of replies) {
-      for (const cookie of ([] as string[]).concat((res.headers['set-cookie'] as unknown as string[] | undefined) ?? [])) {
+      for (const cookie of ([] as string[]).concat(
+        (res.headers['set-cookie'] as unknown as string[] | undefined) ?? []
+      )) {
         cookies++;
         expect(cookie).to.not.match(/;\s*Domain=/i);
       }
