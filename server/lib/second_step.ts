@@ -124,7 +124,7 @@ export const countTry = async (pending: PendingSignIn): Promise<boolean> => {
   const counted = await PendingSignInModel.findOneAndUpdate(
     { _id: pending._id, usedAt: null, expiresAt: { $gt: new Date() }, attempts: { $lt: SECOND_STEP_TRIES } },
     { $inc: { attempts: 1 } },
-    { new: true }
+    { returnDocument: 'after' }
   );
   if (!counted) return false;
   pending.attempts = counted.attempts;
