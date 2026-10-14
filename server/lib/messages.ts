@@ -87,6 +87,7 @@ export const MESSAGES = {
     'An account can have up to ' + p.most + ' passkeys. Please remove one before adding another.',
   'recovery-codes-made': 'New recovery codes are ready. The old ones no longer work.',
   'mfa-off': 'Two-step sign-in is off, and your recovery codes no longer work.',
+  'mfa-not-on': 'Two-step sign-in is not on, so there are no recovery codes to make. Set up a second step first.',
 
   // Trials.
   'trials-full': 'Too many people are trying Glazecalc right now. Please create a free account instead.',

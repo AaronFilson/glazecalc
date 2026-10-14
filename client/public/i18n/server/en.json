@@ -52,6 +52,7 @@
   "passkey-limit": "An account can have up to {most} passkeys. Please remove one before adding another.",
   "recovery-codes-made": "New recovery codes are ready. The old ones no longer work.",
   "mfa-off": "Two-step sign-in is off, and your recovery codes no longer work.",
+  "mfa-not-on": "Two-step sign-in is not on, so there are no recovery codes to make. Set up a second step first.",
   "trials-full": "Too many people are trying Glazecalc right now. Please create a free account instead.",
   "trial-failed": "Could not start a trial just now. Please try again.",
   "not-a-trial": "This account is not a trial.",

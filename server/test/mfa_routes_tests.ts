@@ -749,7 +749,19 @@ describe('two-step sign-in on the account page (/api/mfa)', () => {
       const alice = await account();
       const res = await call(alice, 'post', '/recovery-codes', { password: alice.password });
       expect(res).to.have.status(400);
-      expect(res.body.code).to.eql('mfa-off');
+      expect(res.body.code).to.eql('mfa-not-on');
+      expect(res.body.msg).to.match(/not on/);
+      // Asked again after two-step sign-in was on and then turned off: the same answer.
+      const { secret } = await enrolTotp(alice);
+      const off = await call(alice, 'delete', '/totp', {
+        password: alice.password,
+        code: await codeNow(alice, secret)
+      });
+      expect(off.body.code).to.eql('mfa-off');
+      follow(alice, off);
+      const again = await call(alice, 'post', '/recovery-codes', { password: alice.password });
+      expect(again).to.have.status(400);
+      expect(again.body.code).to.eql('mfa-not-on');
     });
 
     it('are shown only in the reply that makes them', async () => {

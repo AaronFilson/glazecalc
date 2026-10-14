@@ -440,7 +440,7 @@ mfaRouter.delete('/passkeys/:id', ...proving, async (req, res) => {
 mfaRouter.post('/recovery-codes', ...proving, async (req, res) => {
   const state = await stateOf(userOf(req)._id);
   // Recovery codes go with two-step sign-in: none without it.
-  if (!state || !mfaOn(state)) return res.status(400).json(say('mfa-off'));
+  if (!state || !mfaOn(state)) return res.status(400).json(say('mfa-not-on'));
   const check = await factors.confirmIdentity(req, req.body);
   if (!check.ok) return refuse(res, check);
   const made = recoveryCodes.make();
@@ -452,7 +452,7 @@ mfaRouter.post('/recovery-codes', ...proving, async (req, res) => {
     },
     after
   );
-  if (!user) return res.status(400).json(say('mfa-off'));
+  if (!user) return res.status(400).json(say('mfa-not-on'));
   renew(req, res, user);
   res.status(200).json(say('recovery-codes-made', undefined, { recoveryCodes: made.codes }));
   accountMail.noticeMfa(user, { kind: 'recovery-new' });
