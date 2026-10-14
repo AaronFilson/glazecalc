@@ -21,13 +21,25 @@ export interface SilicaLimit {
   /** The level at which an employer must start acting (the US). */
   actionLevel?: number;
   /**
-   * Where the value depends on the dust's free silica content Q (in %): E = numerator / (factor × Q + 1)
-   * mg/m³ (Japan). quartz is then the value at Q = 100.
+   * Where the value depends on the dust's free silica content Q (in %): E = numerator / (factor × Q + offset)
+   * mg/m³ (Japan: 3.0 / (1.19Q + 1); Türkiye: 10 / (Q + 2)). quartz, and cristobalite where given, are
+   * then the values at Q = 100.
    */
-  formula?: { numerator: number; factor: number };
+  formula?: Formula;
   /** A recommended value from a scientific body beside the law's, not binding (Japan's JSOH). */
   recommended?: Recommended;
   note?: string;
+}
+
+/** A limit as a formula of the dust's silica content Q (in %): E = numerator / (factor × Q + offset) mg/m³. */
+export interface Formula {
+  numerator: number;
+  /** 1 writes Q alone. */
+  factor: number;
+  /** 1 where not given. */
+  offset?: number;
+  /** The decimals the law writes the numerator with: 1 where not given (Japan's 3.0). */
+  places?: number;
 }
 
 /** A value a scientific body recommends, in mg/m³. */
@@ -43,7 +55,7 @@ export interface Recommended {
   checked: string;
 }
 
-/** The particle respirator classes sold in a region, where its data names them (Japan). */
+/** The particle respirator classes sold in a region, where its data names them (Japan, Türkiye). */
 export interface Respirators {
   /** The classes for everyday glaze dust, as written on the mask: any one of them. */
   everyday: string[];

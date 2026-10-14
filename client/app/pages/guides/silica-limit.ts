@@ -2,7 +2,7 @@ import { Component, computed } from '@angular/core';
 import { TranslocoDirective } from '@jsverse/transloco';
 import { marker } from '@jsverse/transloco-keys-manager/marker';
 import { textKey } from '../../../../lib/regions/languages';
-import { EU_SILICA, SilicaLimit as Limit, workplaceFor } from '../../../../lib/regions/workplace';
+import { EU_SILICA, Formula, SilicaLimit as Limit, workplaceFor } from '../../../../lib/regions/workplace';
 import { codedMessage } from '../../i18n/coded';
 import { RichText } from '../../i18n/rich-text';
 import { fixed, listOf, upTo } from '../../shared/format';
@@ -48,12 +48,13 @@ const KIND: Record<Limit['kind'], string> = {
             <tbody>
               @if (silica.formula; as formula) {
                 <tr>
-                  <th scope="row">{{ t('guides.silica.formula') }}</th>
+                  <th scope="row">{{ t(formulaRow(silica)) }}</th>
                   <td class="num">
                     {{
-                      t('guides.silica.formulaValue', {
-                        numerator: fixedNumber(formula.numerator, 1),
-                        factor: number(formula.factor)
+                      t(formulaKey(formula), {
+                        numerator: fixedNumber(formula.numerator, formula.places ?? 1),
+                        factor: number(formula.factor),
+                        offset: number(formula.offset ?? 1)
                       })
                     }}
                   </td>
@@ -65,7 +66,7 @@ const KIND: Record<Limit['kind'], string> = {
               </tr>
               @if (silica.cristobalite; as cristobalite) {
                 <tr>
-                  <th scope="row">{{ t('guides.silica.cristobalite') }}</th>
+                  <th scope="row">{{ t(cristobaliteRow(silica)) }}</th>
                   <td class="num">{{ t('guides.silica.value', { value: number(cristobalite) }) }}</td>
                 </tr>
               }
@@ -197,10 +198,33 @@ export class SilicaLimit {
 
   protected readonly listOf = listOf;
 
-  /** What the first value is for: all free silica (Japan's formula), quartz alone, or both. */
+  /**
+   * What the first value is for: all free silica (Japan's formula), all quartz (a formula with
+   * its own value for cristobalite, as Türkiye's), quartz alone, or both.
+   */
   protected firstRow(silica: Limit): string {
-    if (silica.formula) return marker('guides.silica.allFree');
+    if (silica.formula)
+      return silica.cristobalite ? marker('guides.silica.quartzAll') : marker('guides.silica.allFree');
     return silica.cristobalite ? marker('guides.silica.quartz') : marker('guides.silica.both');
+  }
+
+  /** What the formula is: Japan's control concentration, or a limit for quartz (Türkiye's). */
+  protected formulaRow(silica: Limit): string {
+    return silica.kind === 'control' ? marker('guides.silica.formula') : marker('guides.silica.formulaLimit');
+  }
+
+  /** Cristobalite's value: at Q = 100 where the limit is a formula, otherwise its limit. */
+  protected cristobaliteRow(silica: Limit): string {
+    return silica.formula ? marker('guides.silica.cristobaliteAll') : marker('guides.silica.cristobalite');
+  }
+
+  /**
+   * The formula as the law writes it: Q alone where its factor is 1 (Türkiye's 10 / (Q + 2)),
+   * and Japan's 3.0 / (1.19Q + 1) in its own words.
+   */
+  protected formulaKey(formula: Formula): string {
+    if (formula.factor === 1) return marker('guides.silica.formulaQ');
+    return (formula.offset ?? 1) === 1 ? marker('guides.silica.formulaValue') : marker('guides.silica.formulaFull');
   }
 
   protected words(text: string): string {
