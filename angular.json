@@ -45,8 +45,9 @@
             "production": {
               "budgets": [
                 {
+                  // 650 kB before hydration (docs/seo-plan.md), which adds about 32 kB.
                   "type": "initial",
-                  "maximumWarning": "650kB",
+                  "maximumWarning": "700kB",
                   "maximumError": "1MB"
                 },
                 {
@@ -67,6 +68,23 @@
                   "inlineCritical": false
                 },
                 "fonts": true
+              }
+            },
+            "prerender": {
+              "outputPath": "dist/prerender",
+              "server": "client/main.server.ts",
+              "prerender": false,
+              "ssr": {
+                "entry": "client/server-entry.ts"
+              },
+              "outputHashing": "none",
+              "optimization": {
+                "scripts": true,
+                "styles": {
+                  "minify": true,
+                  "inlineCritical": false
+                },
+                "fonts": false
               }
             },
             "development": {

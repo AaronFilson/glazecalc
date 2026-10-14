@@ -5,10 +5,10 @@
   "private": true,
   "scripts": {
     "ng": "ng",
-    "build": "ng build",
+    "build": "ng build && node scripts/prerender.mjs",
     "watch": "ng build --watch --configuration development",
     "dev": "node scripts/run.mjs dev",
-    "prestart": "ng build",
+    "prestart": "npm run build",
     "start": "node --env-file-if-exists=.env server/main.ts",
     "lint": "eslint .",
     "typecheck": "tsc -p server",

@@ -27,9 +27,9 @@ module.exports = defineConfig({
   },
   projects: [{ name: 'chromium', use: { ...devices['Desktop Chrome'] } }],
   webServer: {
-    command: 'npx ng build && node server/main.ts',
+    command: 'npm run build && node server/main.ts',
     url: 'http://localhost:' + port + '/api/health',
-    timeout: 180000,
+    timeout: 300000,
     reuseExistingServer: false,
     env: {
       PORT: port,

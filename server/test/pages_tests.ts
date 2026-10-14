@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import http from 'node:http';
 import path from 'node:path';
-import { APP_PAGES, looksLikeFile, pageHtml, sitemap } from '../lib/pages.ts';
+import { APP_PAGES, looksLikeFile, pageHtml, prerenderedKey, sitemap, withNonce } from '../lib/pages.ts';
 import { base, expect, site } from './support/app.ts';
 
 // What search engines and link previews read before the app's script runs:
@@ -98,6 +98,47 @@ describe('pages in each language', () => {
     expect(html).to.include('<meta property="og:image:alt" content="Glazecalc: Verstehen Sie Ihre Glasuren" />');
     expect(html).not.to.include('See any glaze');
     expect(html).not.to.include('understand your glazes');
+  });
+
+  it("keeps a prerendered page's own title and description, and still writes its address and languages", () => {
+    const html = pageHtml(
+      HTML,
+      '/de/guides/firing',
+      SITE,
+      { title: 'Titel der Startseite', description: 'Beschreibung der Startseite', imageAlt: 'Bildtext' },
+      ['en', 'de'],
+      true
+    );
+    expect(html).to.include('<title>Glazecalc: a free glaze chemistry calculator for potters</title>');
+    expect(html).to.include('content="Enter a glaze recipe and see its unity molecular formula."');
+    expect(html).not.to.include('Startseite');
+    expect(html).to.include('<html lang="de" dir="ltr">');
+    expect(html).to.include('<link rel="canonical" href="https://glazecalcapp.com/de/guides/firing" />');
+    expect(html).to.include('<meta property="og:url" content="https://glazecalcapp.com/de/guides/firing" />');
+    expect(html).to.include('hreflang="en" href="https://glazecalcapp.com/guides/firing"');
+    expect(pageHtml(HTML, '/ar/', SITE, {}, ['en'], true)).to.include('<meta name="robots" content="noindex" />');
+  });
+
+  it('names the prerendered file of a public page in a language offered, and no other', () => {
+    expect(prerenderedKey('/')).to.equal('en/index.html');
+    expect(prerenderedKey('/de/')).to.equal('de/index.html');
+    expect(prerenderedKey('/guides/firing')).to.equal('en/guides/firing.html');
+    expect(prerenderedKey('/el/guides/firing')).to.equal('el/guides/firing.html');
+    expect(prerenderedKey('/de/advice')).to.equal('de/advice.html');
+    // Pages once signed in, unknown pages, and languages not offered.
+    for (const address of ['/signin', '/recipe', '/de/recipe', '/home', '/no-such-page', '/xx/guides', '/de/nope']) {
+      expect(prerenderedKey(address), address).to.equal(null);
+    }
+    expect(prerenderedKey('/de/guides', ['en'])).to.equal(null);
+    expect(prerenderedKey('/guides', ['en'])).to.equal('en/guides.html');
+  });
+
+  it("replaces every nonce placeholder with the reply's, and leaves none", () => {
+    const html =
+      '<gc-root ngcspnonce="__GC_NONCE__"><style nonce="__GC_NONCE__">a{}</style><style nonce="__GC_NONCE__">';
+    const out = withNonce(html, 'ab+/=$&');
+    expect(out.match(/nonce="ab\+\/=\$&"/g)).to.have.length(3);
+    expect(out).not.to.include('__GC_NONCE__');
   });
 
   it('writes a $ in an address or a text as it is', () => {

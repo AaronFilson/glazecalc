@@ -7,6 +7,7 @@ import {
   provideBrowserGlobalErrorListeners
 } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
+import { provideClientHydration, withHttpTransferCacheOptions } from '@angular/platform-browser';
 import { provideRouter, withInMemoryScrolling, withNavigationErrorHandler } from '@angular/router';
 import { routes } from './app.routes';
 import { sessionExpiredInterceptor } from './core/session-expired.interceptor';
@@ -32,6 +33,12 @@ export const appConfig: ApplicationConfig = {
       withNavigationErrorHandler((error) => reloadIfCodeIsMissing(error))
     ),
     provideHttpClient(withFetch(), withInterceptors([sessionExpiredInterceptor])),
+    // The prerendered pages are adopted, not drawn again. Only the translation and guide files go in the
+    // page for the browser to reuse, so it makes no request for them before it hydrates. No event
+    // replay: it needs an inline script, which the build cannot hash into the page's policy.
+    provideClientHydration(
+      withHttpTransferCacheOptions({ includeHeaders: [], filter: (req) => req.url.startsWith('/i18n/') })
+    ),
     // The page's language from its URL (/de/recipe), and its messages.
     ...provideI18n(),
     // The colors chosen in Settings, light, dark or as the device is set.

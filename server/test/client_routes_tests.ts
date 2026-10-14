@@ -37,6 +37,45 @@ describe('client routes', function () {
     expect(String(second.headers['content-security-policy'])).not.to.include(nonce!);
   });
 
+  // Needs the build's prerender too (npm run build).
+  describe('prerendered pages', function () {
+    before(function () {
+      if (!fs.existsSync(path.join(path.dirname(INDEX), '..', 'prerendered', 'de', 'index.html'))) this.skip();
+    });
+
+    it("sends a guide in its language as it was rendered, with each reply's own nonce everywhere", async () => {
+      const first = await site().get('/de/guides/firing');
+      const second = await site().get('/de/guides/firing');
+      expect(first, 'status').to.have.status(200);
+      expect(first.text).to.include('<html lang="de" dir="ltr">');
+      expect(first.text).to.include('<link rel="canonical" href="');
+      expect(first.text).to.include('hreflang="en"');
+      expect(first.text).to.include('<h1');
+      const nonce = /'nonce-([^']+)'/.exec(String(first.headers['content-security-policy']))?.[1];
+      expect(nonce).to.be.a('string');
+      expect(first.text).not.to.include('__GC_NONCE__');
+      expect(first.text.match(new RegExp(`nonce="${nonce}"`, 'gi'))?.length).to.be.greaterThan(1);
+      expect(second.text).not.to.include(`nonce="${nonce}"`);
+      expect(first.headers['cache-control']).to.equal('no-cache');
+    });
+
+    it('keeps the page its own title, apart from the home page', async () => {
+      const guide = await site().get('/de/guides/firing');
+      const home = await site().get('/de/');
+      const title = (html: string) => /<title>([^<]*)<\/title>/.exec(html)?.[1];
+      expect(title(guide.text)).to.be.a('string');
+      expect(title(guide.text)).not.to.equal(title(home.text));
+    });
+
+    it('sends index.html for the pages that are not prerendered', async () => {
+      for (const address of ['/signin', '/de/recipe', '/pt/guides']) {
+        const res = await site().get(address);
+        expect(res.text, address).to.include('<gc-root ngCspNonce="');
+        expect(res.text, address).not.to.include('ng-version');
+      }
+    });
+  });
+
   it('sends the policy without a nonce for files and the API', async () => {
     for (const address of ['/favicon.svg', '/api/health']) {
       const res = await site().get(address);
