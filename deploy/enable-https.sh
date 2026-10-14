@@ -70,10 +70,10 @@ if [ -n "$email" ]; then contact=(--email "$email"); else contact=(--register-un
 
 certbot certonly --webroot --webroot-path /var/www/certbot \
   --non-interactive --agree-tos "${contact[@]}" \
-  --cert-name glazecalcapp.com "${domains[@]/#/--domain=}" \
-  --keep-until-expiring --deploy-hook 'systemctl reload nginx' "$@"
+  --cert-name glazecalcapp.com "${domains[@]/#/--domain=}" "${expand[@]}" \
+  --keep-until-expiring --deploy-hook 'systemctl reload nginx' "${certbot_args[@]}"
 
-if [[ " $* " == *' --dry-run '* ]]; then
+if [[ " ${certbot_args[*]} " == *' --dry-run '* ]]; then
   echo 'Dry run passed; nothing was changed.'
   exit 0
 fi
