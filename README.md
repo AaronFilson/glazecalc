@@ -190,7 +190,8 @@ The Angular CLI, TypeScript, ESLint and the test runners are installed into the 
 
     npm run dev      Angular dev server on port 3000 with live reload; it forwards /api to the
                      API server on port 4000, which restarts when server code changes
-    npm run build    production build of the client into dist/glazecalc/browser
+    npm run build    production build of the client into dist/glazecalc/browser, then renders the
+                     public pages in every language to dist/glazecalc/prerendered (docs/seo-plan.md)
     npm start        builds, then runs one server on port 3000 (PORT) with the app and its API
     npm run seed     loads the standard materials, additives and advice into MONGODB_URI
     npm run lint     checks the code with ESLint

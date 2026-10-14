@@ -6,6 +6,13 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Added
 
+- **Pages that search engines and link previews can read.** The public pages (home, guides,
+  advice, about, privacy, sign-up) are drawn to plain HTML when the app is built, in every
+  language, so the text is there before any script runs; the app then takes the page over in
+  place. Each page has its own title and description (a language without its own description
+  yet uses its site description), the home page and the guides carry structured data, and link
+  previews name the page's language and the others offered ([ADR 16](docs/adr/0016-prerendered-public-pages.md),
+  [plan](docs/seo-plan.md)).
 - **Where you work, and numbers your way** (the groundwork for other languages,
   [plan](docs/i18n-plan.md)). Settings gain:
   - **Where you work:** the EU countries, the US, UK, Australia and New Zealand. It sets the

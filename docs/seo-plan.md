@@ -2,6 +2,31 @@
 
 This plan makes the public pages easy for search engines to find and read in all 24 live languages. It was planned on 13 October 2026 against branch `mfa-plan`, after a check of the live site. Effort: S = under a day, M = one to three days, L = a week or more. Translation into 23 languages is not counted. Paths are from the repo root.
 
+## Status: built (14 October 2026, branch `seo-prerender`)
+
+Items 1 to 8, 10, 11 and 13 (tests) are built; 9 (search terms), 12 (the owner's tasks) and the Later items are not. [ADR 16](adr/0016-prerendered-public-pages.md) records the decision. (The number is 16: the MFA plan reserves 14 and the OAuth plan 15.)
+
+**Where it differs from the plan:**
+
+- **A separate build configuration for the render** (`prerender` in `angular.json`, to `dist/prerender`), because `autoCsp` forbids a server bundle in the browser build. `npm run build` is now `ng build && node scripts/prerender.mjs`.
+- **Worker threads** (four at a time), because Transloco's `translate()` keeps the last service made in a variable of its module, so two renders in one thread read each other's language.
+- **File reading as an `HttpBackend`** (`server-files.interceptor.ts`) rather than an interceptor, so the transfer cache sees the answers as ordinary HTTP responses and puts them in the page.
+- **Initial bundle budget 700 kB** (warning), up from 650 kB.
+- **A ready marker:** the app sets `data-app-ready` on `<html>` after its first draw, and the browser tests wait for it. It is later than `gc-root[ng-version]`, which is set before hydration finishes.
+- The prerendered files live in `dist/glazecalc/prerendered`, outside `browser/`.
+
+**Page weight (item 13, size).** The largest page is the Greek glazing-basics guide at 560 kB. About 70% of a guide's `ng-state` is Angular's hydration data (`__nghData__`: 150 kB for the English glazing-basics guide, 216 kB for the Greek one), one entry per nested template: `guide-view.html` renders every block, list item and inline run through `ngTemplateOutlet`. The rest is the transfer cache, one copy of each response (the guide's Markdown, 43 to 58 kB; for a language other than English also the English translation files, about 30 kB, which Transloco loads as the fallback). Nothing is cached twice and no unused scope is cached, so there was no clean cut. A smaller number needs a flatter guide template (fewer nested template outlets), a change to the guide view itself. English glazing-basics: 354 kB raw, 50 kB gzipped. Greek: 495 K characters (560 kB in bytes), 81 kB gzipped.
+
+**Timing (Lighthouse 13, mobile, simulated slow 4G, median of three, through a gzip proxy standing in for nginx; master e489b21 against this branch):**
+
+| Page              | FCP master / branch | LCP master / branch | TBT master / branch | CLS master / branch |
+| ----------------- | ------------------- | ------------------- | ------------------- | ------------------- |
+| /                 | 1.66 s / 2.70 s     | 3.92 s / 3.56 s     | 181 / 184 ms        | 0 / 0.02            |
+| /de/guides        | 1.75 s / 2.57 s     | 2.60 s / 3.17 s     | 117 / 128 ms        | 0.01 / 0.16         |
+| /de/guides/firing | 1.82 s / 2.72 s     | 3.99 s / 3.18 s     | 528 / 1311 ms       | 0.01 / 0.15         |
+
+The expected fall in FCP did not happen in Lighthouse's model: the page is 65 kB gzipped where master's shell is 5 kB, and the web fonts the text now needs start with the HTML. LCP falls on the pages with a large element (home, firing). Still open: total blocking time on the firing guide is 2.5 times master's (hydrating the nested templates), and the guides' contents list moves by 0.15 CLS when the web fonts load. Candidates: preload the page language's font, a fallback font with matching metrics, a flatter guide template. Unthrottled on localhost the two builds are within 100 ms. These numbers are Lighthouse's model, not a phone.
+
 **What is already right (checked on glazecalcapp.com):**
 
 - Each language has its own address (`/de/guides`).
