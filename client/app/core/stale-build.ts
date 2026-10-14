@@ -13,9 +13,10 @@ const ONE_MINUTE = 60_000;
  */
 export function reloadIfCodeIsMissing(
   error: NavigationError,
-  location: Pick<Location, 'assign'> = window.location,
-  storage: Pick<Storage, 'getItem' | 'setItem'> = sessionStorage,
-  language = languageOfPath(window.location.pathname)
+  // Through globalThis, so a render (which has no window) gets past the check below without a fault.
+  location: Pick<Location, 'assign'> = globalThis.location,
+  storage: Pick<Storage, 'getItem' | 'setItem'> = globalThis.sessionStorage,
+  language = languageOfPath(globalThis.location?.pathname ?? '/')
 ): void {
   if (!isMissingCode(error.error)) return;
   try {

@@ -9,7 +9,7 @@ import { SilicaLimit } from './silica-limit';
 // The parts of the guides drawn from region data (lib/regions): each starts at
 // the reader's region and can show another country's.
 const create = async (component: Type<unknown>, region: string) => {
-  TestBed.inject(PreferencesService).region.set(region);
+  TestBed.inject(PreferencesService).remember('region', region);
   const fixture = TestBed.createComponent(component);
   await fixture.whenStable();
   const element = fixture.nativeElement as HTMLElement;

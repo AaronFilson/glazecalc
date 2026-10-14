@@ -1,10 +1,11 @@
 <ng-container *transloco="let t">
+  <gc-structured-data [data]="structured" />
   <section class="hero">
     <div class="hero-text">
       <p class="eyebrow">{{ t('site.landing.eyebrow') }}</p>
       <h1>{{ t('site.landing.heading') }}</h1>
       <p class="hero-lead">{{ t('site.landing.lead') }}</p>
-      @if (auth.trialEnded()) {
+      @if (auth.shownTrialEnded()) {
         <p class="server-msg" role="status">{{ t('site.landing.trialEnded') }}</p>
       }
       @if (auth.lostRecipe(); as title) {

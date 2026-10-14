@@ -15,11 +15,13 @@ WORKDIR /app
 COPY package.json package-lock.json ./
 RUN --mount=type=cache,target=/root/.npm npm ci --no-audit --no-fund
 
-# Production build of the client into dist/glazecalc/browser.
+# Production build of the client into dist/glazecalc/browser, and the public
+# pages rendered ahead of time into dist/glazecalc/prerendered (scripts/prerender.mjs).
 FROM deps AS build
 COPY angular.json tsconfig.json tsconfig.app.json ./
 COPY client ./client
 COPY lib ./lib
+COPY scripts/prerender.mjs ./scripts/
 RUN npm run build
 
 # Only the packages the server needs at run time.
@@ -39,6 +41,7 @@ COPY server ./server
 COPY lib ./lib
 COPY scripts/seed-standard.js ./scripts/
 COPY --from=build /app/dist/glazecalc/browser ./dist/glazecalc/browser
+COPY --from=build /app/dist/glazecalc/prerendered ./dist/glazecalc/prerendered
 
 # The official Node images include an unprivileged "node" user.
 USER node

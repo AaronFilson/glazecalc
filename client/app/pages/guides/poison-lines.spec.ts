@@ -10,7 +10,7 @@ describe('PoisonLines', () => {
   });
 
   const create = async (region: string) => {
-    TestBed.inject(PreferencesService).region.set(region);
+    TestBed.inject(PreferencesService).remember('region', region);
     const fixture = TestBed.createComponent(PoisonLines);
     await fixture.whenStable();
     const element = fixture.nativeElement as HTMLElement;
