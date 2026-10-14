@@ -75,6 +75,17 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   - **Lead and cadmium** in the law's own units: µg/cm² for flat ware, three sizes and cooking ware
     in µg/mL, each a most.
   - **Three shops** selling raw glaze materials, by their own names.
+- **Türkiye as a region** (in English for now). It fires by temperature and reads glaze density as
+  specific gravity until you choose otherwise (Orton cones and Baumé are a setting away), and lists
+  the EU's materials. The guides give, each from an official page with its date:
+  - **Who to call:** 112 for every emergency service, and the National Poison Information Centre
+    (UZEM) on 114, 24 hours, every day.
+  - **Silica:** the binding limit as the dust regulation gives it, 10 / (Q + 2) mg/m³ by the dust's
+    silica content Q: 0.098 mg/m³ for dust that is all quartz, half that for cristobalite and
+    tridymite. Türkiye has not adopted the EU's limit. FFP2 or FFP3 dust masks.
+  - **Lead and cadmium:** the Tebliğ's limits, the EU directive's figures, with its rule for three
+    samples.
+  - **Three shops** selling raw glaze materials, by their own names.
 - **Groundwork for East and Southeast Asia**, before any of its languages:
   - **Numbers and dates** can be written as in Japan, Korea, mainland China and Taiwan (Simplified and
     Traditional Chinese each keep their script in any region), Hong Kong, Singapore, Malaysia,
