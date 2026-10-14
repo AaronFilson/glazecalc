@@ -179,7 +179,8 @@ test.describe('prerendered pages', () => {
   });
 
   test('the app adopts the prerendered paragraph where it is, and draws nothing again', async ({ page }) => {
-    // Hold the main script back, mark a paragraph of the HTML as sent, then let the script load.
+    // Hold the main script back, mark a paragraph of the HTML as sent and a link in the guide's text (drawn by
+    // guide-inline.ts, not by a template), then let the script load.
     let release;
     const held = new Promise((resolve) => (release = resolve));
     await page.route(/\/main-[^/]*\.js$/, async (route) => {
@@ -191,10 +192,15 @@ test.describe('prerendered pages', () => {
       .locator('main p')
       .first()
       .evaluate((el) => el.setAttribute('data-test-mark', '1'));
+    await page
+      .locator('.guide p a')
+      .first()
+      .evaluate((el) => el.setAttribute('data-test-mark', '1'));
     release();
     await appStarted(page);
-    // A fresh render would have replaced the marked element.
+    // A fresh render would have replaced the marked elements.
     await expect(page.locator('main p[data-test-mark]')).toHaveCount(1);
+    await expect(page.locator('.guide p a[data-test-mark]')).toHaveCount(1);
   });
 
   for (const language of ['', '/de', '/el', '/ga']) {
