@@ -3,7 +3,10 @@
     "cones": "Ovaj vodič prikazan je za pečenje na stošce, kako je postavljeno u postavkama.",
     "temperature": "Ovaj vodič prikazan je za pečenje po temperaturi, kako je postavljeno u postavkama.",
     "showTemperature": "Prikaži za pečenje po temperaturi",
-    "showCones": "Prikaži za pečenje na stošce"
+    "showCones": "Prikaži za pečenje na stošce",
+    "sk": "Ovaj vodič prikazan je za pečenje na stošce SK (JIS R 8101), kako je postavljeno u postavkama.",
+    "showSk": "Prikaži za pečenje na stošce SK (JIS R 8101)",
+    "showOrton": "Prikaži za pečenje na Ortonove stošce"
   },
   "notTranslated": "Ovaj vodič još nije preveden, pa je prikazan na engleskom.",
   "sectionInEnglish": "Ovaj se odjeljak promijenio otkako je preveden, pa je prikazan na engleskom dok se njegov prijevod ne ažurira.",
@@ -86,19 +89,32 @@
     "limitIn": "Granična vrijednost u",
     "label": "Granična vrijednost za silicijev dioksid: {region}",
     "caption": "Granična vrijednost izloženosti na radnom mjestu za respirabilnu prašinu kristalnog silicijeva dioksida, prosjek za 8 sati: {region} (provjereno {date})",
+    "captionControl": "Mjerilo za respirabilnu prašinu kristalnog silicijeva dioksida u zraku radnog prostora: {region} (provjereno {date})",
     "both": "Kvarc i kristobalit",
     "quartz": "Kvarc",
     "cristobalite": "Kristobalit",
     "actionLevel": "Akcijska razina",
+    "formula": "Kontrolna koncentracija, gdje je Q udio slobodnog silicijeva dioksida u prašini, u %",
+    "formulaValue": "{numerator} / ({factor}Q + 1) mg/m³",
+    "formulaLimit": "Granična vrijednost za respirabilni kvarc, gdje je Q udio silicijeva dioksida (SiO₂) u prašini, u %",
+    "formulaQ": "{numerator} / (Q + {offset}) mg/m³",
+    "formulaFull": "{numerator} / ({factor}Q + {offset}) mg/m³",
+    "quartzAll": "Kvarc, za prašinu koja se sastoji samo od kvarca",
+    "cristobaliteAll": "Kristobalit, za prašinu koja se sastoji samo od kristobalita",
+    "allFree": "Kontrolna koncentracija za prašinu koja se sastoji samo od slobodnog silicijeva dioksida",
+    "recommended": "Preporučuje {abbr}",
     "value": "{value} mg/m³",
     "kind": {
       "binding": "Obvezujuća granična vrijednost.",
       "indicative": "Indikativna granična vrijednost: orijentacijska vrijednost, a ne zakonska gornja granica.",
-      "assessment": "Mjerilo za procjenu, a ne obvezujuća granična vrijednost."
+      "assessment": "Mjerilo za procjenu, a ne obvezujuća granična vrijednost.",
+      "control": "Kontrolna koncentracija (管理濃度): mjerilo za procjenu zraka u radnom prostoru na temelju mjerenja na tom mjestu, a ne granična vrijednost za ono što udiše pojedina osoba."
     },
     "setBy": "Utvrđeno propisom: <link>{law}</link>.",
     "lowerThanEu": "Niža od obvezujuće granične vrijednosti EU-a od {value} mg/m³.",
     "sameAsEu": "Jednaka obvezujućoj graničnoj vrijednosti EU-a.",
+    "recommendedBy": "{by} ({abbr}) preporučuje ovu vrijednost u dokumentu <link>{title}</link>. To nije zakon.",
+    "respirators": "Zaštitne maske protiv prašine ovdje se prodaju po klasama: {everyday} za prašinu glazure ili {higher} za veću zaštitu (<link>službene klase</link>).",
     "unknown": "Nismo mogli potvrditi nacionalnu graničnu vrijednost u ovoj zemlji ({region}). Obvezujuća granična vrijednost EU-a od {value} mg/m³ primjenjuje se u svakoj državi članici.",
     "noData": "Graničnu vrijednost u ovoj zemlji ({region}) još nismo potvrdili.",
     "agency": "Nacionalno tijelo za zaštitu na radu: <link>{name}</link>.",
@@ -126,7 +142,12 @@
       "auSmall": "Šalice, krigle, vrčevi, zdjele, čajnici i drugo stolno posuđe zapremnine manje od 1100 mL",
       "auLarge": "Isto, zapremnine 1100 mL ili više",
       "auPlates": "Tanjuri, tanjurići i slično stolno posuđe",
-      "auCooking": "Posuđe za kuhanje"
+      "auCooking": "Posuđe za kuhanje",
+      "jpFlat": "Proizvodi koji se ne mogu napuniti ili čija je dubina manja od 2,5 cm",
+      "jpSmall": "Drugi proizvodi zapremnine manje od 1,1 L, koji nisu za kuhanje",
+      "jpLarge": "Drugi proizvodi zapremnine od 1,1 L do manje od 3 L, koji nisu za kuhanje",
+      "jpStorage": "Drugi proizvodi zapremnine 3 L ili veće, koji nisu za kuhanje",
+      "jpCooking": "Posuđe za kuhanje, dubine 2,5 cm ili veće"
     },
     "judged": {
       "average": "prosjek 6 komada",
@@ -135,6 +156,7 @@
     "euRules": "Ovdje se primjenjuju propisi EU-a.",
     "law": "Utvrđeno propisom: <link>{law}</link>.",
     "inForce": "Na snazi od {date}.",
+    "atMost": "Proizvod zadovoljava ako ne otpušta više od granične vrijednosti: propis kaže „najviše”.",
     "unknown": "Propise u ovoj zemlji ({region}) još nismo potvrdili.",
     "choosePrompt": "Odaberite svoju zemlju da biste vidjeli njezine propise."
   },

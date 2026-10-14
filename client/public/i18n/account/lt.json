@@ -11,10 +11,13 @@
     "password": "Slaptažodis",
     "passwordHint": "Bent 8 simboliai.",
     "confirmation": "Slaptažodžio patvirtinimas",
+    "keepSignedIn": "Likti prisijungus šiame įrenginyje",
     "passwordMissing": "Įveskite slaptažodį.",
     "createAccount": "Sukurti paskyrą",
     "signIn": "Prisijungti",
     "haveAccount": "Jau turite paskyrą? <signin>Prisijunkite</signin>",
+    "privacy": "Jūsų el. pašto adresas ir tai, ką įrašote, naudojami tik jūsų paskyrai veikti ir saugomi Amazon Web Services JAV. <privacy>Kaip Glazecalc tvarko jūsų duomenis</privacy>",
+    "dataNotice": "Glazecalc yra nemokamas atvirojo kodo projektas, o paskyros saugomos serveriuose JAV. Vadovus skaityti ir skaičiuoklę išbandyti galite be paskyros arba galite paleisti savo kopiją. Ar kurti paskyrą čia – jūsų pačių sprendimas, ir projektas už jį neprisiima jokios atsakomybės. <where>Kur saugoma jūsų paskyra, ir jūsų pasirinkimas</where>",
     "forgot": "Pamiršote slaptažodį? Atkurkite jį",
     "newHere": "Čia pirmą kartą? <signup>Sukurkite nemokamą paskyrą</signup>",
     "signUpFailed": "Klaida: paskyros sukurti nepavyko.",
@@ -61,7 +64,29 @@
     "deletePassword": "Patvirtinkite slaptažodžiu",
     "deletePasswordMissing": "Įveskite slaptažodį, kad patvirtintumėte.",
     "delete": "Panaikinti paskyrą",
-    "deleteFailed": "Klaida: paskyros panaikinti nepavyko. Bandykite dar kartą."
+    "deleteFailed": "Klaida: paskyros panaikinti nepavyko. Bandykite dar kartą.",
+    "unverifiedHeading": "El. pašto adreso patvirtinimas",
+    "unverifiedText": "Kai kūrėte šią paskyrą, adresu {email} išsiuntėme nuorodą. Atidarykite ją, kad patvirtintumėte, jog adresas jūsų. Iki tol juo siunčiame laiškus tik tada, kai paprašote, pvz., atkurti slaptažodį.",
+    "resend": "Siųsti nuorodą dar kartą",
+    "resendFailed": "Klaida: nuorodos išsiųsti nepavyko. Bandykite dar kartą.",
+    "emailHeading": "El. pašto adreso keitimas",
+    "emailText": "Nuorodą išsiunčiame naujuoju adresu, o el. pašto adresas pasikeičia, kai ją atidarote. Apie tai pranešame ir dabartiniu adresu. Visi prie šios paskyros prisijungę įrenginiai bus atjungti.",
+    "newEmail": "Naujas el. pašto adresas",
+    "emailPassword": "Slaptažodis patvirtinimui",
+    "emailSend": "Siųsti nuorodą",
+    "emailFailed": "Klaida: nuorodos išsiųsti nepavyko. Bandykite dar kartą.",
+    "signOutHeading": "Atsijungimas visuose įrenginiuose",
+    "signOutText": "Atjungia jus visuose įrenginiuose, įskaitant šį. Naudokite, jei pametėte įrenginį arba manote, kad kažkas kitas turi jūsų prisijungimo duomenis.",
+    "signOutButton": "Atsijungti visuose įrenginiuose",
+    "signOutFailed": "Klaida: atsijungti nepavyko. Bandykite dar kartą."
+  },
+  "export": {
+    "heading": "Mano duomenų atsisiuntimas",
+    "text": "Įrašykite viso to, kas yra jūsų paskyroje, kopiją į vieną failą: paskyros duomenis, nustatymus, turimas žaliavas, receptus, žaliavas, priedus, užrašus, degimo žurnalus, patarimus ir šiukšlinę. Slaptažodis į jį neįtraukiamas. Laikykite failą privačioje vietoje, nes jame yra viskas, ką įrašėte.",
+    "json": "Atsisiųsti viską (JSON)",
+    "csvText": "Arba įrašykite tik receptų ar tik savo žaliavų lentelę, kurią galima atidaryti programa Excel, Numbers ar Sheets.",
+    "recipes": "Receptai (CSV)",
+    "materials": "Žaliavos (CSV)"
   },
   "settings": {
     "heading": "Nustatymai",
@@ -126,10 +151,16 @@
         "example": "piroskopas 04, piroskopas 6",
         "saved": "Įrašyta: degimas pagal Ortono piroskopus."
       },
+      "sk": {
+        "label": "Pagal SK piroskopus (JIS R 8101)",
+        "example": "SK 4a, SK 8",
+        "saved": "Įrašyta: degimas pagal SK piroskopus."
+      },
       "temperature": {
         "label": "Pagal temperatūrą, kaip krosnies valdiklio programoje",
         "saved": "Įrašyta: degimas pagal temperatūrą."
-      }
+      },
+      "help": "Kol nepasirinksite, tai nustatoma pagal regioną: JAV, Jungtinėje Karalystėje, Airijoje, Australijoje ir Naujojoje Zelandijoje – Ortono piroskopai, Japonijoje – SK piroskopai, likusioje Europoje – temperatūra."
     },
     "density": {
       "legend": "Glazūros tankis",
@@ -145,7 +176,8 @@
       "pint": {
         "label": "Pintos masė, uncijos imperinėje pintoje",
         "saved": "Įrašyta: glazūros tankis nurodomas pintos mase."
-      }
+      },
+      "help": "Kaip vadovuose nurodomas glazūros tirštumas. Kol nepasirinksite, tai nustatoma pagal regioną: Italijoje ir Japonijoje – Baumé laipsniai, kitur – santykinis tankis."
     },
     "theme": {
       "legend": "Šviesus ar tamsus",
@@ -227,9 +259,19 @@
       },
       "hidden": {
         "label": "Paslėptas",
-        "saved": "Įrašyta: pranešimas paslėptas. Saugos vadovuose lieka viena jo eilutė."
+        "saved": "Įrašyta: pranešimas paslėptas. Saugos vadovuose lieka viena jo eilutė.",
+        "savedPlain": "Įrašyta: pranešimas paslėptas. Viena jo eilutė lieka kiekvieno puslapio viršuje."
       },
       "help": "Pastaba kiekvieno puslapio viršuje, kad jį išvertė dirbtinis intelektas, su galimybe pasiūlyti pataisymą."
     }
+  },
+  "confirmEmail": {
+    "heading": "El. pašto adreso patvirtinimas",
+    "intro": "Paspauskite mygtuką, kad patvirtintumėte šį adresą.",
+    "confirm": "Patvirtinti",
+    "incomplete": "Šiam puslapiui reikia nuorodos iš patvirtinimo laiško, o ši nuoroda nepilna.",
+    "account": "Jūsų paskyra",
+    "signIn": "Prisijungti",
+    "failed": "Klaida: adreso patvirtinti nepavyko. Bandykite dar kartą."
   }
 }

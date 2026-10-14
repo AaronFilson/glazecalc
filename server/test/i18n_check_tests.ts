@@ -120,6 +120,11 @@ describe('message checks', () => {
       expect(numbersIn('saat 08.00 ile saat 20.00 arası', 'tr')).to.eql(numbersIn('08:00 to 20:00', 'en'));
       expect(numbersIn('8 bis 20 Uhr', 'de')).to.eql(numbersIn('8:00 to 20:00', 'en'));
       expect(numbersIn('de 8 h 00 à 20 h 00', 'fr')).to.eql(['20', '8']);
+      // Lithuanian writes degrees per hour as °C/val., as its style sheet asks: English's °C/h.
+      expect(numbersIn('Kaitinkite 60 °C/val. greičiu iki 1222 °C.', 'lt')).to.eql(
+        numbersIn('Heat at 60 °C/h to 1222 °C.', 'en')
+      );
+      expect(numbersIn('{{108 °F/val.; 60 °C/val.}}', 'lt')).to.eql(['108 °F/h', '60 °C/h']);
     });
 
     it('reads a month as its number where the language writes it so, as Japanese 2026年10月 does', () => {

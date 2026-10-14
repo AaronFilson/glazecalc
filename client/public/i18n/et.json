@@ -14,6 +14,7 @@
     "signup": "Konto loomine – Glazecalc",
     "forgot": "Parooli lähtestamine – Glazecalc",
     "reset": "Uue parooli valimine – Glazecalc",
+    "confirmEmail": "E-posti aadressi kinnitamine – Glazecalc",
     "home": "Töökoja märkmik – Glazecalc",
     "recipe": "Retseptid – Glazecalc",
     "material": "Toorained – Glazecalc",
@@ -74,6 +75,16 @@
   },
   "meta": {
     "description": "Sisestage retsept ja näete Segeri valemit (UMF), SiO₂ : Al₂O₃ suhet ja sulandajate tasakaalu. Tasuta, avatud lähtekood: retseptid, toorained, põletuspäevikud.",
+    "guides": "Lihtsas keeles juhendid algajatele keraamikutele: mis on keraamika glasuur, kuidas seda valmistada ja ohutult segada, kaitsta oma peret ja põletada lihtsas ahjus.",
+    "glazingBasics": "Millest keraamika glasuur koosneb, kuidas ahi muudab selle klaasiks ja mida tähendavad koonused, fritid, Segeri valem (UMF) ja glasuurivead. Juhend algajatele keraamikutele.",
+    "makingAGlaze": "Kuidas keraamika glasuuri osta, hoida, kaaluda ja segada, saada õige paksus, katsetada seda oma savil ja pidada märkmeid, et saaksite selle uuesti valmistada.",
+    "safeMixing": "Kuidas hoida glasuuritolm oma kopsudest ja ahjuaurud oma kodust eemal: ohutud harjumused, respiraatorid, koristamine, ventilatsioon ja riskantsed toorained.",
+    "homeSafety": "Mida teha, kui laps või lemmikloom neelab glasuuri tooraine alla, ja kuidas hoida toorained, tolm, ahi ja käsitsi valmistatud nõud pere läheduses ohutuna.",
+    "firing": "Kuidas põletada elektriahjus: koonuste valimine, paigutamine ja lugemine ning avaldatud eel- ja glasuuripõletuse programmide järgimine. Koos koonuste tabeliga.",
+    "advice": "Praktilised nõuanded keraamika glasuuride segamise, glasuurimise ja põletamise kohta Glazecalcilt, lisaks teie enda nõuanded. Tasuta keraamikutele.",
+    "about": "Glazecalc on tasuta avatud lähtekoodiga glasuurikeemia kalkulaator ja märkmik. Vaadake, kuidas see arvutab Segeri valemi (UMF) ja kuidas see on üles ehitatud.",
+    "privacy": "Kuidas Glazecalc teie andmeid käsitleb: reklaame, analüütikat ega jälgimist pole ja midagi ei müüda. Mida säilitatakse, miks ja kuidas oma õigusi kasutada.",
+    "signup": "Looge tasuta Glazecalci konto, et säilitada oma glasuuri retseptid, toorained, märkmed ja põletuspäevikud. Reklaamideta ja teie andmeid ei müüda kunagi.",
     "imageAlt": "Glazecalc: mõistke oma glasuure, ärge ainult segage neid."
   },
   "notices": {
@@ -255,6 +266,8 @@
     "label": "Teave tõlke kohta",
     "text": "Selle lehe on inglise keelest tõlkinud tehisintellekt. Glazecalc on avatud lähtekoodiga: kui midagi kõlab valesti, soovitage GitHubis parandust.",
     "brief": "Inglise keelest tõlkinud tehisintellekt.",
+    "plain": "Selle lehe on inglise keelest tõlkinud tehisintellekt, mis tuleb selle keelega toime halvemini kui enamiku keeltega. Ingliskeelne leht võib olla paremini loetav. Glazecalc on avatud lähtekoodiga: kui midagi kõlab valesti, soovitage GitHubis parandust.",
+    "plainBrief": "Tõlkinud tehisintellekt; ingliskeelne originaal võib olla paremini loetav.",
     "suggest": "Soovita parandust",
     "english": "Loe ingliskeelset originaali",
     "close": "Sulge"

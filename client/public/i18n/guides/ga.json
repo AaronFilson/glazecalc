@@ -3,7 +3,10 @@
     "cones": "Taispeántar an treoirleabhar seo do bhácáil go cóin, mar a roghnaíodh sna socruithe.",
     "temperature": "Taispeántar an treoirleabhar seo do bhácáil de réir teochta, mar a roghnaíodh sna socruithe.",
     "showTemperature": "Taispeáin é do bhácáil de réir teochta",
-    "showCones": "Taispeáin é do bhácáil go cóin"
+    "showCones": "Taispeáin é do bhácáil go cóin",
+    "sk": "Taispeántar an treoirleabhar seo do bhácáil go cóin SK (JIS R 8101), mar a roghnaíodh sna socruithe.",
+    "showSk": "Taispeáin é do bhácáil go cóin SK (JIS R 8101)",
+    "showOrton": "Taispeáin é do bhácáil go cóin Orton"
   },
   "notTranslated": "Níl an treoirleabhar seo aistrithe fós, mar sin taispeántar i mBéarla é.",
   "sectionInEnglish": "Athraíodh an chuid seo ó aistríodh í, mar sin taispeántar i mBéarla í go dtí go dtabharfar a haistriúchán cothrom le dáta.",
@@ -86,19 +89,32 @@
     "limitIn": "Teorainn sa tír:",
     "label": "Teorainn na silice: {region}",
     "caption": "An teorainnluach nochta ceirde do shilice chriostalta inanálaithe: {region}, meán thar 8 n-uaire an chloig (seiceáilte {date})",
+    "captionControl": "An tslat tomhais do shilice chriostalta inanálaithe in aer limistéir oibre: {region} (seiceáilte {date})",
     "both": "Grianchloch agus críostabailít",
     "quartz": "Grianchloch",
     "cristobalite": "Críostabailít",
     "actionLevel": "Leibhéal gníomhaíochta",
+    "formula": "Tiúchan rialaithe, áit arb é Q an tsaorshilice sa deannach, i %",
+    "formulaValue": "{numerator} / ({factor}Q + 1) mg/m³",
+    "formulaLimit": "Teorainn do ghrianchloch inanálaithe, áit arb é Q an tsilice (SiO₂) sa deannach, i %",
+    "formulaQ": "{numerator} / (Q + {offset}) mg/m³",
+    "formulaFull": "{numerator} / ({factor}Q + {offset}) mg/m³",
+    "quartzAll": "Grianchloch, do dheannach atá ina ghrianchloch ar fad",
+    "cristobaliteAll": "Críostabailít, do dheannach atá ina chríostabailít ar fad",
+    "allFree": "Tiúchan rialaithe do dheannach atá ina shaorshilice ar fad",
+    "recommended": "Molta ag {abbr}",
     "value": "{value} mg/m³",
     "kind": {
       "binding": "Teorainnluach ceangailteach.",
       "indicative": "Teorainnluach táscach: luach treorach, ní uasteorainn dhlíthiúil.",
-      "assessment": "Critéar measúnaithe, ní teorainnluach ceangailteach."
+      "assessment": "Critéar measúnaithe, ní teorainnluach ceangailteach.",
+      "control": "Tiúchan rialaithe (管理濃度): an tslat tomhais chun aer limistéir oibre a mheas ó thomhais a dhéantar ann, ní teorainn leis an méid a análaíonn duine amháin."
     },
     "setBy": "Leagtha síos sa dlí seo: <link>{law}</link>.",
     "lowerThanEu": "Níos ísle ná teorainnluach ceangailteach an Aontais Eorpaigh, {value} mg/m³.",
     "sameAsEu": "Is ionann é agus teorainnluach ceangailteach an Aontais Eorpaigh.",
+    "recommendedBy": "Molann an comhlacht {by} ({abbr}) an luach seo sa doiciméad <link>{title}</link>. Ní dlí é.",
+    "respirators": "Díoltar maisc deannaigh anseo de réir aicme: {everyday} do dheannach glónra, nó {higher} le haghaidh níos mó cosanta (<link>na haicmí oifigiúla</link>).",
     "unknown": "Níorbh fhéidir linn an teorainn náisiúnta a dheimhniú sa tír seo: {region}. Tá feidhm ag teorainnluach ceangailteach an Aontais Eorpaigh, {value} mg/m³, i ngach ballstát.",
     "noData": "Níor dheimhníomar an teorainn fós sa tír seo: {region}.",
     "agency": "An comhlacht náisiúnta atá freagrach as sábháilteacht ag an obair: <link>{name}</link>.",
@@ -126,7 +142,12 @@
       "auSmall": "Cupáin, mugaí, crúiscíní, babhlaí, taephotaí agus earraí boird eile faoi 1100 mL",
       "auLarge": "Mar an gcéanna, 1100 mL nó níos mó",
       "auPlates": "Plátaí, sásair agus earraí boird cosúla",
-      "auCooking": "Gréithe cócaireachta"
+      "auCooking": "Gréithe cócaireachta",
+      "jpFlat": "Píosaí nach féidir a líonadh, nó atá níos lú ná 2.5 cm ar doimhneacht",
+      "jpSmall": "Píosaí eile faoi 1.1 L, nach le haghaidh cócaireachta",
+      "jpLarge": "Píosaí eile ó 1.1 L go dtí faoi 3 L, nach le haghaidh cócaireachta",
+      "jpStorage": "Píosaí eile de 3 L nó níos mó, nach le haghaidh cócaireachta",
+      "jpCooking": "Gréithe cócaireachta, 2.5 cm ar doimhneacht nó níos mó"
     },
     "judged": {
       "average": "meán 6 phíosa",
@@ -135,6 +156,7 @@
     "euRules": "Tá feidhm ag rialacha an Aontais Eorpaigh anseo.",
     "law": "Leagtha síos sa dlí seo: <link>{law}</link>.",
     "inForce": "I bhfeidhm ó {date}.",
+    "atMost": "Éiríonn le píosa sa tástáil mura scaoileann sé níos mó ná an teorainn: deir an dlí “ar a mhéad”.",
     "unknown": "Níor dheimhníomar na rialacha fós sa tír seo: {region}.",
     "choosePrompt": "Roghnaigh do thír chun a rialacha a fheiceáil."
   },

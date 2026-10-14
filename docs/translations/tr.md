@@ -781,6 +781,13 @@ shops, laws and agencies stay as they are written there. {region} never takes a 
 | National Poison Information Centre (Ulusal Zehir Danışma Merkezi, UZEM)       | Ulusal Zehir Danışma Merkezi (UZEM)                                                                     | safety: Türkiye’s poison line, 114                                                   |
 | One number for ambulance, fire, police, gendarmerie and coast guard.          | Ambulans, itfaiye, polis, jandarma ve sahil güvenlik için tek numara.                                   | safety: 112                                                                          |
 
+### Search terms
+
+From research_notes/search-terms-2026-10-14.md: searchers type “Seger formülü (hesaplama)”, “seramik sır reçeteleri”, “sır
+reçetesi hazırlama” and “seramik sırları”. Bare “sır” means a secret (and an exam ranking), so the landing title (“Glazecalc:
+ücretsiz seramik sır hesaplama aracı”) and every `meta.*` description that says sır also says “seramik”. The unity formula
+is “Seger formülü (UMF)”, never “Seger” alone.
+
 ## 3. Never translated
 
 From terms.md, unchanged:

@@ -3,7 +3,10 @@
     "cones": "Šis vadovas rodomas degimui pagal piroskopus, kaip pasirinkta nustatymuose.",
     "temperature": "Šis vadovas rodomas degimui pagal temperatūrą, kaip pasirinkta nustatymuose.",
     "showTemperature": "Rodyti degimui pagal temperatūrą",
-    "showCones": "Rodyti degimui pagal piroskopus"
+    "showCones": "Rodyti degimui pagal piroskopus",
+    "sk": "Šis vadovas rodomas degimui pagal SK piroskopus (JIS R 8101), kaip pasirinkta nustatymuose.",
+    "showSk": "Rodyti degimui pagal SK piroskopus (JIS R 8101)",
+    "showOrton": "Rodyti degimui pagal Ortono piroskopus"
   },
   "notTranslated": "Šis vadovas dar neišverstas, todėl rodomas anglų kalba.",
   "sectionInEnglish": "Šis skyrius pasikeitė po to, kai buvo išverstas, todėl rodomas anglų kalba, kol jo vertimas bus atnaujintas.",
@@ -86,19 +89,32 @@
     "limitIn": "Ribinė vertė šioje šalyje:",
     "label": "Silicio dioksido ribinė vertė: {region}",
     "caption": "Įkvepiamojo kristalinio silicio dioksido dulkių (alveolinė frakcija) ribinė vertė darbo vietoje, 8 valandų vidurkis: {region} (patikrinta {date})",
+    "captionControl": "Įkvepiamojo kristalinio silicio dioksido dulkių vertinimo matas darbo zonos ore: {region} (patikrinta {date})",
     "both": "Kvarcas ir kristobalitas",
     "quartz": "Kvarcas",
     "cristobalite": "Kristobalitas",
     "actionLevel": "Veiksmų lygis",
+    "formula": "Kontrolinė koncentracija, kai Q – laisvojo silicio dioksido kiekis dulkėse, %",
+    "formulaValue": "{numerator} / ({factor}Q + 1) mg/m³",
+    "formulaLimit": "Įkvepiamojo kvarco ribinė vertė, kai Q – silicio dioksido (SiO₂) kiekis dulkėse, %",
+    "formulaQ": "{numerator} / (Q + {offset}) mg/m³",
+    "formulaFull": "{numerator} / ({factor}Q + {offset}) mg/m³",
+    "quartzAll": "Kvarcas, kai visos dulkės yra kvarcas",
+    "cristobaliteAll": "Kristobalitas, kai visos dulkės yra kristobalitas",
+    "allFree": "Kontrolinė koncentracija, kai visos dulkės yra laisvasis silicio dioksidas",
+    "recommended": "Rekomenduoja {abbr}",
     "value": "{value} mg/m³",
     "kind": {
       "binding": "Privaloma ribinė vertė.",
       "indicative": "Orientacinė ribinė vertė: rekomenduojama, bet teisės aktais neprivaloma viršutinė riba.",
-      "assessment": "Vertinimo kriterijus, o ne privaloma ribinė vertė."
+      "assessment": "Vertinimo kriterijus, o ne privaloma ribinė vertė.",
+      "control": "Kontrolinė koncentracija (管理濃度): matas, pagal kurį darbo zonos oras vertinamas remiantis ten atliktais matavimais, o ne riba, kiek įkvepia vienas asmuo."
     },
     "setBy": "Nustatyta: <link>{law}</link>.",
     "lowerThanEu": "Mažesnė už privalomą ES ribinę vertę – {value} mg/m³.",
     "sameAsEu": "Tokia pati kaip privaloma ES ribinė vertė.",
+    "recommendedBy": "{by} ({abbr}) šią vertę rekomenduoja savo dokumente <link>{title}</link>. Teisės aktuose ji nenustatyta.",
+    "respirators": "Respiratoriai nuo dulkių čia parduodami pagal klases: {everyday} – nuo glazūros dulkių, arba {higher} – geresnei apsaugai (<link>oficialios klasės</link>).",
     "unknown": "Nepavyko patvirtinti nacionalinės ribinės vertės ({region}). Privaloma ES ribinė vertė – {value} mg/m³ – taikoma visose valstybėse narėse.",
     "noData": "Ribinės vertės dar nepatvirtinome ({region}).",
     "agency": "Nacionalinė darbuotojų saugos ir sveikatos institucija: <link>{name}</link>.",
@@ -126,7 +142,12 @@
       "auSmall": "Puodeliai, ąsočiai, dubenys, arbatinukai ir kiti stalo indai, mažesni nei 1100 mL",
       "auLarge": "Tie patys, 1100 mL ar didesni",
       "auPlates": "Lėkštės, lėkštelės ir panašūs stalo indai",
-      "auCooking": "Indai maistui gaminti"
+      "auCooking": "Indai maistui gaminti",
+      "jpFlat": "Gaminiai, kurių negalima pripildyti, arba kurių gylis mažesnis nei 2,5 cm",
+      "jpSmall": "Kiti gaminiai, mažesni nei 1,1 L, neskirti maistui gaminti",
+      "jpLarge": "Kiti gaminiai nuo 1,1 L iki mažiau nei 3 L, neskirti maistui gaminti",
+      "jpStorage": "Kiti gaminiai, 3 L ar didesni, neskirti maistui gaminti",
+      "jpCooking": "Indai maistui gaminti, 2,5 cm gylio ar gilesni"
     },
     "judged": {
       "average": "6 gaminių vidurkis",
@@ -135,6 +156,7 @@
     "euRules": "Čia taikomos ES taisyklės.",
     "law": "Nustatyta: <link>{law}</link>.",
     "inForce": "Galioja nuo {date}.",
+    "atMost": "Gaminys tinkamas, jei išskiria ne daugiau, nei leidžia ribinė vertė: teisės akte parašyta „ne daugiau kaip“.",
     "unknown": "Taisyklių dar nepatvirtinome ({region}).",
     "choosePrompt": "Pasirinkite šalį, kad pamatytumėte jos taisykles."
   },

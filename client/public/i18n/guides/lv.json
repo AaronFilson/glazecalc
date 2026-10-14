@@ -3,7 +3,10 @@
     "cones": "Šis ceļvedis ir parādīts apdedzināšanai pēc konusiem, kā norādīts iestatījumos.",
     "temperature": "Šis ceļvedis ir parādīts apdedzināšanai pēc temperatūras, kā norādīts iestatījumos.",
     "showTemperature": "Rādīt apdedzināšanai pēc temperatūras",
-    "showCones": "Rādīt apdedzināšanai pēc konusiem"
+    "showCones": "Rādīt apdedzināšanai pēc konusiem",
+    "sk": "Šis ceļvedis ir parādīts apdedzināšanai pēc SK konusiem (JIS R 8101), kā norādīts iestatījumos.",
+    "showSk": "Rādīt apdedzināšanai pēc SK konusiem (JIS R 8101)",
+    "showOrton": "Rādīt apdedzināšanai pēc Ortona konusiem"
   },
   "notTranslated": "Šis ceļvedis vēl nav iztulkots, tāpēc tas ir parādīts angļu valodā.",
   "sectionInEnglish": "Šī sadaļa ir mainīta kopš tās tulkošanas, tāpēc līdz tulkojuma atjaunināšanai tā ir parādīta angļu valodā.",
@@ -86,19 +89,32 @@
     "limitIn": "Robežvērtība:",
     "label": "Silīcija dioksīda robežvērtība: {region}",
     "caption": "Ieelpojamā kristāliskā silīcija dioksīda robežvērtība darba vietā valstī {region}, 8 stundu vidējā vērtība (pārbaudīts: {date})",
+    "captionControl": "Mēraukla ieelpojamajam kristāliskajam silīcija dioksīdam darba zonas gaisā valstī {region} (pārbaudīts: {date})",
     "both": "Kvarcs un kristobalīts",
     "quartz": "Kvarcs",
     "cristobalite": "Kristobalīts",
     "actionLevel": "Rīcības līmenis",
+    "formula": "Kontroles koncentrācija, kur Q ir brīvā kvarca saturs putekļos, %",
+    "formulaValue": "{numerator} / ({factor}Q + 1) mg/m³",
+    "formulaLimit": "Ieelpojamā kvarca robežvērtība, kur Q ir silīcija dioksīda (SiO₂) saturs putekļos, %",
+    "formulaQ": "{numerator} / (Q + {offset}) mg/m³",
+    "formulaFull": "{numerator} / ({factor}Q + {offset}) mg/m³",
+    "quartzAll": "Kvarcs, ja putekļi sastāv tikai no kvarca",
+    "cristobaliteAll": "Kristobalīts, ja putekļi sastāv tikai no kristobalīta",
+    "allFree": "Kontroles koncentrācija, ja putekļi sastāv tikai no brīvā kvarca",
+    "recommended": "Ieteikums: {abbr}",
     "value": "{value} mg/m³",
     "kind": {
       "binding": "Saistoša robežvērtība.",
       "indicative": "Indikatīva robežvērtība: orientējoša vērtība, nevis likumā noteikta augšējā robeža.",
-      "assessment": "Novērtēšanas kritērijs, nevis saistoša robežvērtība."
+      "assessment": "Novērtēšanas kritērijs, nevis saistoša robežvērtība.",
+      "control": "Kontroles koncentrācija (管理濃度): mēraukla darba zonas gaisa novērtēšanai pēc tur veiktiem mērījumiem, nevis robežvērtība tam, ko ieelpo viens cilvēks."
     },
     "setBy": "Nosaka: <link>{law}</link>.",
     "lowerThanEu": "Zemāka par ES saistošo robežvērtību {value} mg/m³.",
     "sameAsEu": "Tāda pati kā ES saistošā robežvērtība.",
+    "recommendedBy": "{by} ({abbr}) iesaka šo vērtību dokumentā <link>{title}</link>. Tā nav noteikta likumā.",
+    "respirators": "Putekļu maskas šeit pārdod pēc klasēm: {everyday} glazūras putekļiem vai {higher} labākai aizsardzībai (<link>oficiālās klases</link>).",
     "unknown": "Nevarējām pārliecināties, kāda robežvērtība noteikta valstī {region}. ES saistošā robežvērtība {value} mg/m³ ir spēkā visās dalībvalstīs.",
     "noData": "Robežvērtību valstī {region} vēl neesam noskaidrojuši.",
     "agency": "Valsts iestāde, kas atbild par darba drošību: <link>{name}</link>.",
@@ -126,7 +142,12 @@
       "auSmall": "Tases, krūzes, krūkas, bļodas, tējkannas un citi galda trauki, mazāk par 1100 mL",
       "auLarge": "Tādi paši trauki, 1100 mL vai vairāk",
       "auPlates": "Šķīvji, apakštasītes un līdzīgi galda trauki",
-      "auCooking": "Ēdiena gatavošanas piederumi"
+      "auCooking": "Ēdiena gatavošanas piederumi",
+      "jpFlat": "Nepildāmi izstrādājumi vai izstrādājumi, kuru dziļums ir mazāks par 2,5 cm",
+      "jpSmall": "Citi izstrādājumi ar ietilpību mazāku par 1,1 L, kas nav paredzēti ēdiena gatavošanai",
+      "jpLarge": "Citi izstrādājumi ar ietilpību no 1,1 L līdz mazāk nekā 3 L, kas nav paredzēti ēdiena gatavošanai",
+      "jpStorage": "Citi izstrādājumi ar ietilpību 3 L vai vairāk, kas nav paredzēti ēdiena gatavošanai",
+      "jpCooking": "Ēdiena gatavošanas piederumi, kuru dziļums ir 2,5 cm vai vairāk"
     },
     "judged": {
       "average": "6 izstrādājumu vidējais",
@@ -135,6 +156,7 @@
     "euRules": "Šeit ir spēkā ES noteikumi.",
     "law": "Nosaka: <link>{law}</link>.",
     "inForce": "Spēkā stāšanās datums: {date}.",
+    "atMost": "Izstrādājums atbilst prasībām, ja tas izdala ne vairāk par robežvērtību: likumā teikts “ne vairāk kā”.",
     "unknown": "Noteikumus valstī {region} vēl neesam noskaidrojuši.",
     "choosePrompt": "Izvēlieties valsti, lai redzētu tās noteikumus."
   },

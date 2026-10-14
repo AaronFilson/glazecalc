@@ -147,7 +147,7 @@ describe('Japan', () => {
     expect(paragraphs[0]).toContain('Set by 作業環境評価基準（昭和63年労働省告示第79号）別表.');
     expect(paragraphs[0]).not.toContain('EU');
     expect(paragraphs[1]).toBe(
-      'The Japan Society for Occupational Health (JSOH) recommends this value in its Recommendation of Occupational Exposure Limits (2025–2026). It is not law.'
+      'JSOH (Japan Society for Occupational Health) recommends this value in its Recommendation of Occupational Exposure Limits (2025–2026). It is not law.'
     );
     expect(paragraphs[2]).toContain(
       'Dust masks here are sold by class: DS2 or RS2 for glaze dust, or DS3 or RS3 for more protection'

@@ -11,10 +11,13 @@
     "password": "Pasfhocal",
     "passwordHint": "8 gcarachtar ar a laghad.",
     "confirmation": "Deimhnigh an pasfhocal",
+    "keepSignedIn": "Coinnigh sínithe isteach mé ar an ngléas seo",
     "passwordMissing": "Cuir isteach do phasfhocal.",
     "createAccount": "Cruthaigh cuntas",
     "signIn": "Sínigh isteach",
     "haveAccount": "An bhfuil cuntas agat cheana? <signin>Sínigh isteach</signin>",
+    "privacy": "Ní úsáidtear do ríomhphost agus a shábhálann tú ach chun do chuntas a reáchtáil, agus stóráiltear iad ag Amazon Web Services i Stáit Aontaithe Mheiriceá. <privacy>Conas a láimhseálann Glazecalc do shonraí</privacy>",
+    "dataNotice": "Is tionscadal saor in aisce, foinse oscailte é Glazecalc, agus coinnítear cuntais ar fhreastalaithe i Stáit Aontaithe Mheiriceá. Is féidir leat na treoirleabhair a léamh agus an t-áireamhán a thriail gan chuntas, nó do chóip féin a rith. Is fútsa féin atá sé a chinneadh an gcruthóidh tú cuntas anseo, agus ní ghlacann an tionscadal aon fhreagracht as sin. <where>Cá gcoinnítear do chuntas, agus do rogha</where>",
     "forgot": "Ar dhearmad tú do phasfhocal? Athshocraigh é",
     "newHere": "An bhfuil tú nua anseo? <signup>Cruthaigh cuntas saor in aisce</signup>",
     "signUpFailed": "Earráid: níorbh fhéidir an cuntas a chruthú.",
@@ -61,7 +64,29 @@
     "deletePassword": "Do phasfhocal, le deimhniú",
     "deletePasswordMissing": "Cuir isteach do phasfhocal le deimhniú.",
     "delete": "Scrios mo chuntas",
-    "deleteFailed": "Earráid: níorbh fhéidir an cuntas a scriosadh. Bain triail eile as."
+    "deleteFailed": "Earráid: níorbh fhéidir an cuntas a scriosadh. Bain triail eile as.",
+    "unverifiedHeading": "Do ríomhphost a dheimhniú",
+    "unverifiedText": "Sheolamar nasc chuig {email} nuair a chruthaigh tú an cuntas seo. Oscail é chun a dheimhniú gur leatsa an seoladh. Go dtí sin, ní sheolaimid ríomhphost chuige ach nuair a iarrann tú é, mar shampla athshocrú pasfhocail.",
+    "resend": "Seol an nasc arís",
+    "resendFailed": "Earráid: níorbh fhéidir an nasc a sheoladh. Bain triail eile as.",
+    "emailHeading": "Do ríomhphost a athrú",
+    "emailText": "Seolaimid nasc chuig an seoladh nua, agus athraíonn do ríomhphost nuair a osclaíonn tú é. Cuirimid an t-athrú in iúl don seoladh atá agat faoi láthair freisin. Síneofar amach gach gléas atá sínithe isteach sa chuntas seo.",
+    "newEmail": "Ríomhphost nua",
+    "emailPassword": "Do phasfhocal, le deimhniú",
+    "emailSend": "Seol an nasc",
+    "emailFailed": "Earráid: níorbh fhéidir an nasc a sheoladh. Bain triail eile as.",
+    "signOutHeading": "Síniú amach i ngach áit",
+    "signOutText": "Síníonn sé seo amach thú ar gach gléas, an ceann seo san áireamh. Úsáid é má chaill tú gléas nó má cheapann tú go bhfuil do shonraí síniú isteach ag duine eile.",
+    "signOutButton": "Sínigh amach i ngach áit",
+    "signOutFailed": "Earráid: níorbh fhéidir síniú amach. Bain triail eile as."
+  },
+  "export": {
+    "heading": "Mo shonraí a íoslódáil",
+    "text": "Sábháil cóip de gach a bhfuil i do chuntas mar chomhad amháin: do mhionsonraí, do shocruithe, do stoc, d’oidis, d’ábhair, do bhreiseáin, do nótaí, do thaifid bhácála, do chomhairle agus do bhruscar. Níl do phasfhocal ann. Coinnigh an comhad in áit phríobháideach, mar go bhfuil gach a shábháil tú ann.",
+    "json": "Íoslódáil gach rud (JSON)",
+    "csvText": "Nó sábháil scarbhileog de d’oidis amháin nó de do chuid ábhar féin amháin, le hoscailt in Excel, Numbers nó Sheets.",
+    "recipes": "Oidis (CSV)",
+    "materials": "Ábhair (CSV)"
   },
   "settings": {
     "heading": "Socruithe",
@@ -126,10 +151,16 @@
         "example": "cón 04, cón 6",
         "saved": "Sábháilte: bácáil go cóin Orton."
       },
+      "sk": {
+        "label": "Go cóin SK (JIS R 8101)",
+        "example": "SK 4a, SK 8",
+        "saved": "Sábháilte: bácáil go cóin SK."
+      },
       "temperature": {
         "label": "De réir teochta, mar a bheadh i gclár rialaitheora áithe",
         "saved": "Sábháilte: bácáil de réir teochta."
-      }
+      },
+      "help": "Go dtí go roghnaíonn tú, leanann sé seo do réigiún: cóin Orton i Stáit Aontaithe Mheiriceá, sa Ríocht Aontaithe, in Éirinn, san Astráil agus sa Nua-Shéalainn, cóin SK sa tSeapáin, agus teocht sa chuid eile den Eoraip."
     },
     "density": {
       "legend": "Dlús glónra",
@@ -145,7 +176,8 @@
       "pint": {
         "label": "Meáchan pionta, na hunsaí i bpionta impiriúil",
         "saved": "Sábháilte: dlús glónra mar mheáchan pionta."
-      }
+      },
+      "help": "An chaoi a dtugann na treoirleabhair tiús glónra. Go dtí go roghnaíonn tú, leanann sé seo do réigiún: céimeanna Baumé san Iodáil agus sa tSeapáin, sainmheáchan in áiteanna eile."
     },
     "theme": {
       "legend": "Geal nó dorcha",
@@ -232,5 +264,14 @@
       },
       "help": "An nóta ag barr gach leathanaigh a deir gur intleacht shaorga a d’aistrigh é, le bealach chun ceartúchán a mholadh."
     }
+  },
+  "confirmEmail": {
+    "heading": "Do ríomhphost a dheimhniú",
+    "intro": "Brúigh an cnaipe chun an seoladh seo a dheimhniú.",
+    "confirm": "Deimhnigh",
+    "incomplete": "Tá an nasc ó ríomhphost deimhnithe ag teastáil ón leathanach seo, agus níl an ceann seo iomlán.",
+    "account": "Do chuntas",
+    "signIn": "Sínigh isteach",
+    "failed": "Earráid: níorbh fhéidir an seoladh a dheimhniú. Bain triail eile as."
   }
 }

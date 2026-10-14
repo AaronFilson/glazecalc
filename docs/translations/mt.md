@@ -257,8 +257,11 @@ koni: “koni vulkaniċi”, mt.wikipedia), also the ice-cream and the traffic c
   read as a gap of one cone between them.
 - "Orton cone" → “kon Orton”; at the first mention on a page, and wherever systems are compared: “kon Orton 6”, then
   “kon 6”.
-- Seger cones (“koni ta’ Seger”, SK) are a different scale. **Never** write “kon ta’ Seger 6” or “SK 6” for an Orton
-  number; “koni ta’ Seger” only where the English says "Seger cones".
+- Seger cones (“koni ta’ Seger”, the German cones) are a different scale. **Never** write “kon ta’ Seger 6” for an
+  Orton number; “koni ta’ Seger” only where the English says "Seger cones".
+- **SK cones** are only the Japanese cones made to JIS R 8101: “koni SK”, “kon SK”, the number always after “SK” as
+  printed (“SK 8”, “SK 6a”). Never call them Seger cones, never turn an SK number into an Orton number or the reverse.
+  "Firing to SK cones" → “Il-ħami bil-koni SK”; "Kyoto cones" → “koni ta’ Kyoto”. SK is never Seger, Seger never SK.
 
 ### The unity formula
 
@@ -880,6 +883,28 @@ The reviews of the translation accepted these; use them again for the same thing
 | Naples yellow, muddy (colours), bare patches                     | l-isfar ta’ Napli; ħammeġ (“jista’ jħammeġ”); rqajja’ mikxufin (f pl.)                                    | recipe                                      |
 | Tick, Filter, Expand, Hide                                       | Immarka; Iffiltra; Espandi; Aħbi                                                                          | recipe                                      |
 | kept in English                                                  | wadding, naked raku, masking tape, squirrel-cage (fan), "Not for Food Use" (with the Maltese in brackets) | records, safe-mixing, glazing-basics        |
+
+### 2.11 Privacy, account email and search
+
+Settled in the October 2026 catch-up (EU release text, SK cones, search descriptions). The privacy words follow the
+GDPR's Maltese text where it has one; none has a ceramic source.
+
+| English                                                                       | Maltese                                                                                                | Notes                                                                                                                                                                               |
+| ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| data (personal data), controller, legal basis                                 | data (f): “id-data tiegħek”; kontrollur (m); bażi legali (f)                                           | GDPR Maltese. “data” is also "date": on a page that speaks of data, write a date another way (“meta tispiċċa”, “id-data tal-aħħar aġġornament”).                                    |
+| legitimate interest, profiling, data protection authority                     | interess leġittimu; tfassil ta’ profili; awtorità tal-protezzjoni tad-data                             | GDPR Maltese. "Article 6(1)(b)" → “Artikolu 6(1)(b) tal-GDPR”.                                                                                                                      |
+| Standard Contractual Clauses, EU–US Data Privacy Framework                    | Klawżoli Kuntrattwali Standard; Qafas tal-Privatezza tad-Data bejn l-UE u l-Istati Uniti               |                                                                                                                                                                                     |
+| cookie, local storage, session storage, browser storage                       | cookie (f; pl. cookies); ħażna lokali; ħażna tas-sessjoni; il-ħażna tal-brawżer                        | "cookie banner" → “banner tal-cookies”; "logs" stay “logs”, "backups" “backups”.                                                                                                    |
+| Keep me signed in on this device, Sign out everywhere                         | Żommni dieħel f’dan l-apparat; Oħroġ minn kull apparat                                                 |                                                                                                                                                                                     |
+| Confirm your email, Change your email, Download my data                       | Ikkonferma l-indirizz elettroniku tiegħek; Ibdel l-indirizz elettroniku tiegħek; Niżżel id-data tiegħi | "the link works for {hours} hours" takes a plural message with “siegħa / sigħat” (as {minutes}, 2.8).                                                                               |
+| no responsibility or liability; maintainers                                   | l-ebda responsabbiltà jew obbligu legali; il-persuni li jieħdu ħsiebu                                  | Keep it as strong as the English, no stronger.                                                                                                                                      |
+| control concentration (Japan, 管理濃度)                                       | konċentrazzjoni ta’ kontroll; "yardstick" → “livell ta’ referenza”                                     | Not a limit on what one person breathes.                                                                                                                                            |
+| Japan Poison Information Center; National Poison Information Centre (Türkiye) | Ċentru ta’ Informazzjoni dwar il-Veleni tal-Ġappun; Ċentru Nazzjonali ta’ Informazzjoni dwar il-Veleni | The native name stays in brackets as the English gives it (大阪中毒110番, Ulusal Zehir Danışma Merkezi, UZEM). "fire" (the service) → “il-pompieri”. Türkiye → “it-Turkija” (CLDR). |
+
+**Search terms.** Maltese potters search in English (search research, 14 October 2026), so the Maltese pages carry the
+app's own terms: “glejż” and “riċetti tal-glejż”, “il-formula ta’ Seger (UMF)” where the English says unity formula,
+“kalkulatur tal-glejż”. The landing title is “Glazecalc: kalkulatur tal-glejż b’xejn għall-fuħħarin”. `meta.description`
+may carry a single English “(pottery)” after the glaze word; no other English in the descriptions.
 
 ## 3. Never translated
 

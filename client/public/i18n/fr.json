@@ -1,6 +1,6 @@
 {
   "titles": {
-    "landing": "Glazecalc : calculateur gratuit de chimie des émaux pour céramistes",
+    "landing": "Glazecalc : calculateur d’émaux gratuit pour céramistes",
     "advice": "Conseils sur les émaux - Glazecalc",
     "guides": "Guides - Glazecalc",
     "glazingBasics": "Les principes de base de l’émaillage - Glazecalc",
@@ -14,6 +14,7 @@
     "signup": "Créer un compte - Glazecalc",
     "forgot": "Réinitialiser votre mot de passe - Glazecalc",
     "reset": "Choisir un nouveau mot de passe - Glazecalc",
+    "confirmEmail": "Confirmer votre adresse e-mail - Glazecalc",
     "home": "Votre carnet d’atelier - Glazecalc",
     "recipe": "Recettes - Glazecalc",
     "material": "Matières - Glazecalc",
@@ -74,6 +75,16 @@
   },
   "meta": {
     "description": "Saisissez une recette d’émail : formule de Seger (UMF), rapport silice/alumine, fondants. Gratuit et open source, pour recettes, matières et cuissons.",
+    "guides": "Guides simples pour céramistes débutants : ce qu’est un émail céramique, comment le préparer et le mélanger en sécurité, protéger votre famille et cuire au four.",
+    "glazingBasics": "De quoi est fait un émail céramique, comment le four le change en verre, et ce que sont cônes, frittes, formule de Seger (UMF) et défauts des émaux. Pour débutants.",
+    "makingAGlaze": "Comment acheter, stocker, peser et mélanger un émail, lui donner la bonne consistance, l’essayer sur votre terre et noter la recette d’émail pour la refaire.",
+    "safeMixing": "Garder la poussière d’émail hors de vos poumons et les fumées du four hors de chez vous : bonnes habitudes, masques, nettoyage, ventilation, matières à risque.",
+    "homeSafety": "Que faire si un enfant ou un animal avale une matière pour émail, et comment rendre matières, poussière, four et pièces faites main sûrs pour votre famille.",
+    "firing": "Cuire dans un four électrique : choisir, placer et lire les cônes, suivre des courbes publiées pour la cuisson de biscuit et d’émail, avec un tableau des cônes.",
+    "advice": "Conseils pratiques de Glazecalc pour préparer les émaux, émailler et cuire, avec vos propres conseils. Gratuit pour les potiers et les céramistes.",
+    "about": "Glazecalc, calculateur de chimie des émaux et carnet, est gratuit et open source. Voyez comment il calcule la formule de Seger (UMF) et comment il est fait.",
+    "privacy": "Comment Glazecalc traite vos données : ni publicité, ni mesure d’audience, ni pistage, et rien n’est vendu. Ce qui est conservé, pourquoi, et vos droits.",
+    "signup": "Créez un compte Glazecalc gratuit pour conserver vos recettes d’émaux, matières, notes et relevés de cuisson. Sans publicité, et vos données ne sont jamais vendues.",
     "imageAlt": "Glazecalc : comprenez vos émaux au lieu de seulement les préparer."
   },
   "notices": {
@@ -255,6 +266,8 @@
     "label": "À propos de cette traduction",
     "text": "Cette page a été traduite de l’anglais par une IA. Glazecalc est open source : si un passage vous semble incorrect, proposez une correction sur GitHub.",
     "brief": "Traduit de l’anglais par une IA.",
+    "plain": "Cette page a été traduite de l’anglais par une IA, qui maîtrise cette langue moins bien que la plupart des autres. La page anglaise peut être plus claire. Glazecalc est open source : si un passage vous semble incorrect, proposez une correction sur GitHub.",
+    "plainBrief": "Traduit par une IA ; la version anglaise peut être plus claire.",
     "suggest": "Proposer une correction",
     "english": "Lire la version anglaise",
     "close": "Fermer"

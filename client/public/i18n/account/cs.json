@@ -11,10 +11,13 @@
     "password": "Heslo",
     "passwordHint": "Alespoň 8 znaků.",
     "confirmation": "Potvrzení hesla",
+    "keepSignedIn": "Neodhlašovat mě na tomto zařízení",
     "passwordMissing": "Zadejte heslo.",
     "createAccount": "Vytvořit účet",
     "signIn": "Přihlásit se",
     "haveAccount": "Už máte účet? <signin>Přihlaste se</signin>",
+    "privacy": "Váš e-mail a to, co uložíte, se používají jen k provozu vašeho účtu a jsou uloženy u společnosti Amazon Web Services v USA. <privacy>Jak Glazecalc nakládá s vašimi daty</privacy>",
+    "dataNotice": "Glazecalc je bezplatný open-source projekt a účty jsou uloženy na serverech ve Spojených státech. Návody si můžete přečíst a kalkulačku vyzkoušet i bez účtu, nebo si můžete provozovat vlastní kopii. Zda si zde vytvoříte účet, je vaše vlastní rozhodnutí, a projekt za ně nepřebírá žádnou odpovědnost. <where>Kde je uložen váš účet a vaše volba</where>",
     "forgot": "Zapomenuté heslo? Obnovte si ho",
     "newHere": "Jste tu poprvé? <signup>Vytvořte si účet zdarma</signup>",
     "signUpFailed": "Chyba: účet se nepodařilo vytvořit.",
@@ -61,7 +64,29 @@
     "deletePassword": "Vaše heslo pro potvrzení",
     "deletePasswordMissing": "Pro potvrzení zadejte heslo.",
     "delete": "Odstranit můj účet",
-    "deleteFailed": "Chyba: účet se nepodařilo odstranit. Zkuste to prosím znovu."
+    "deleteFailed": "Chyba: účet se nepodařilo odstranit. Zkuste to prosím znovu.",
+    "unverifiedHeading": "Potvrďte svůj e-mail",
+    "unverifiedText": "Při vytvoření tohoto účtu jsme na adresu {email} poslali odkaz. Otevřete ho a potvrďte tak, že adresa patří vám. Do té doby na ni posíláme poštu jen na vaši žádost, například při obnovení hesla.",
+    "resend": "Poslat odkaz znovu",
+    "resendFailed": "Chyba: odkaz se nepodařilo odeslat. Zkuste to prosím znovu.",
+    "emailHeading": "Změna e-mailu",
+    "emailText": "Na novou adresu pošleme odkaz a váš e-mail se změní, až ho otevřete. Informujeme také vaši současnou adresu. Všechna zařízení přihlášená k tomuto účtu se odhlásí.",
+    "newEmail": "Nový e-mail",
+    "emailPassword": "Vaše heslo pro potvrzení",
+    "emailSend": "Odeslat odkaz",
+    "emailFailed": "Chyba: odkaz se nepodařilo odeslat. Zkuste to prosím znovu.",
+    "signOutHeading": "Odhlášení na všech zařízeních",
+    "signOutText": "Odhlásí vás na všech zařízeních, včetně tohoto. Použijte to, pokud se vám ztratilo zařízení nebo si myslíte, že vaše přihlašovací údaje má někdo jiný.",
+    "signOutButton": "Odhlásit se všude",
+    "signOutFailed": "Chyba: odhlášení se nezdařilo. Zkuste to prosím znovu."
+  },
+  "export": {
+    "heading": "Stáhnout moje data",
+    "text": "Uložte si kopii všeho, co váš účet obsahuje, jako jeden soubor: vaše údaje, nastavení, zásobu surovin, recepty, suroviny, přísady, poznámky, záznamy výpalů, rady a koš. Heslo v něm není. Soubor uchovávejte na soukromém místě, protože obsahuje vše, co máte uložené.",
+    "json": "Stáhnout vše (JSON)",
+    "csvText": "Nebo si uložte tabulku jen s vašimi recepty nebo jen s vašimi vlastními surovinami a otevřete ji v Excelu, Numbers nebo Sheets.",
+    "recipes": "Recepty (CSV)",
+    "materials": "Suroviny (CSV)"
   },
   "settings": {
     "heading": "Nastavení",
@@ -126,10 +151,16 @@
         "example": "žároměrka 04, žároměrka 6",
         "saved": "Uloženo: výpal na Ortonovy žároměrky."
       },
+      "sk": {
+        "label": "Na žároměrky SK (JIS R 8101)",
+        "example": "SK 4a, SK 8",
+        "saved": "Uloženo: výpal na žároměrky SK."
+      },
       "temperature": {
         "label": "Podle teploty, jako v programu regulátoru pece",
         "saved": "Uloženo: výpal podle teploty."
-      }
+      },
+      "help": "Dokud nezvolíte, řídí se to vaším regionem: Ortonovy žároměrky v USA, Spojeném království, Irsku, Austrálii a na Novém Zélandu, žároměrky SK v Japonsku, teplota ve zbytku Evropy."
     },
     "density": {
       "legend": "Hustota glazury",
@@ -145,7 +176,8 @@
       "pint": {
         "label": "Hmotnost pinty, unce v britské pintě",
         "saved": "Uloženo: hustota glazury jako hmotnost pinty."
-      }
+      },
+      "help": "Jak návody udávají hustotu glazury. Dokud nezvolíte, řídí se to vaším regionem: stupně Baumé v Itálii a Japonsku, měrná hmotnost jinde."
     },
     "theme": {
       "legend": "Světlý nebo tmavý vzhled",
@@ -227,9 +259,19 @@
       },
       "hidden": {
         "label": "Skryto",
-        "saved": "Uloženo: upozornění je skryté. Jeden jeho řádek zůstává v návodech o bezpečnosti."
+        "saved": "Uloženo: upozornění je skryté. Jeden jeho řádek zůstává v návodech o bezpečnosti.",
+        "savedPlain": "Uloženo: upozornění je skryté. Jeden jeho řádek zůstává nahoře na každé stránce."
       },
       "help": "Poznámka nahoře na každé stránce, že ji přeložila umělá inteligence, s možností navrhnout opravu."
     }
+  },
+  "confirmEmail": {
+    "heading": "Potvrďte svůj e-mail",
+    "intro": "Stisknutím tlačítka tuto adresu potvrdíte.",
+    "confirm": "Potvrdit",
+    "incomplete": "Tato stránka potřebuje odkaz z potvrzovacího e-mailu a tento odkaz je neúplný.",
+    "account": "Váš účet",
+    "signIn": "Přihlásit se",
+    "failed": "Chyba: adresu se nepodařilo potvrdit. Zkuste to prosím znovu."
   }
 }

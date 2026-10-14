@@ -535,3 +535,28 @@ the reviewed translation uses them. Names of shops, laws and agencies stay as th
   in `safety/en.json` (for Portugal: Centro de Informação Antivenenos, CIAV, INEM, as published); Portuguese bodies
   keep their names and abbreviations (ACT, DGS, CTCV).
 - **Placeholders and tags:** `{name}`, `{count}` and the rest, and `<b>`, `<settings>` and other tags.
+
+## 4. Search terms
+
+What Portuguese potters type into a search engine (research notes, 2026-10-14), for the page titles and the `meta.*`
+descriptions: **vidrados cerâmicos** / **vidrados para cerâmica** (the bare _vidrados_ also finds a television series,
+so pair it with the ceramics word), **receitas de vidrados**, **fórmula de Seger (UMF)** where the English says unity
+formula. Never the Brazilian _esmalte cerâmico_. The landing title is "Glazecalc: calculadora gratuita de vidrados
+cerâmicos". Descriptions stay at about 160 characters and add nothing the English lacks.
+
+## 5. Terms added in the catch-up (2026-10-14)
+
+| English                          | European Portuguese                      | Notes                                                                                    |
+| -------------------------------- | ---------------------------------------- | ---------------------------------------------------------------------------------------- |
+| SK cones (JIS R 8101)            | cones SK                                 | Always "SK" before the number; never converted to Orton, never "Seger".                  |
+| Kyoto cones                      | cones de Quioto                          | 京都ゼーゲル; a different series from SK to JIS.                                         |
+| control concentration (管理濃度) | concentração de controlo                 | Japan's yardstick for a work area's air, not a personal exposure limit.                  |
+| link (in an email)               | ligação                                  | As in the password-reset messages.                                                       |
+| Sign out everywhere              | Terminar sessão em todos os dispositivos | "Keep me signed in on this device" → "Manter a sessão iniciada neste dispositivo".       |
+| Download my data                 | Transferir os meus dados                 |                                                                                          |
+| controller (GDPR)                | responsável pelo tratamento              | The RGPD's Portuguese term; "Article 6(1)(b)" → "artigo 6.º, n.º 1, alínea b), do RGPD". |
+| Standard Contractual Clauses     | cláusulas contratuais-tipo               | EU-US Data Privacy Framework → Quadro de Privacidade de Dados UE–EUA.                    |
+| logs (server)                    | registos (logs)                          | Kept apart from firing logs by the "(logs)".                                             |
+| trial                            | período de experiência                   | In the privacy page, where _experiência_ alone could mislead.                            |
+| prefecture (Japan)               | prefeitura                               |                                                                                          |
+| sake warmer                      | aquecedor de saqué                       | pt-PT _saqué_.                                                                           |

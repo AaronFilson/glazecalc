@@ -3,7 +3,10 @@
     "cones": "Guiden visas för bränning efter käglor, enligt valet under Inställningar.",
     "temperature": "Guiden visas för bränning efter temperatur, enligt valet under Inställningar.",
     "showTemperature": "Visa för bränning efter temperatur",
-    "showCones": "Visa för bränning efter käglor"
+    "showCones": "Visa för bränning efter käglor",
+    "sk": "Guiden visas för bränning efter SK-käglor (JIS R 8101), enligt valet under Inställningar.",
+    "showSk": "Visa för bränning efter SK-käglor (JIS R 8101)",
+    "showOrton": "Visa för bränning efter Ortonkäglor"
   },
   "notTranslated": "Guiden är inte översatt ännu och visas därför på engelska.",
   "sectionInEnglish": "Avsnittet har ändrats sedan det översattes och visas därför på engelska tills översättningen har uppdaterats.",
@@ -86,19 +89,32 @@
     "limitIn": "Gränsvärde i",
     "label": "Gränsvärdet för kvartsdamm i {region}",
     "caption": "Det hygieniska gränsvärdet för respirabel kristallin kiseldioxid i {region}, ett medelvärde över 8 timmar (kontrollerat den {date})",
+    "captionControl": "Måttstocken för respirabel kristallin kiseldioxid i luften på ett arbetsområde i {region} (kontrollerat den {date})",
     "both": "Kvarts och kristobalit",
     "quartz": "Kvarts",
     "cristobalite": "Kristobalit",
     "actionLevel": "Insatsnivå",
+    "formula": "Kontrollkoncentration, där Q är den fria kiseldioxiden i dammet, i %",
+    "formulaValue": "{numerator} / ({factor}Q + 1) mg/m³",
+    "formulaLimit": "Gränsvärde för respirabel kvarts, där Q är kiseldioxiden (SiO₂) i dammet, i %",
+    "formulaQ": "{numerator} / (Q + {offset}) mg/m³",
+    "formulaFull": "{numerator} / ({factor}Q + {offset}) mg/m³",
+    "quartzAll": "Kvarts, för damm som helt består av kvarts",
+    "cristobaliteAll": "Kristobalit, för damm som helt består av kristobalit",
+    "allFree": "Kontrollkoncentration för damm som helt består av fri kiseldioxid",
+    "recommended": "Rekommenderat av {abbr}",
     "value": "{value} mg/m³",
     "kind": {
       "binding": "Ett bindande gränsvärde.",
       "indicative": "Ett vägledande gränsvärde: ett riktvärde, inte ett lagstadgat tak.",
-      "assessment": "Ett bedömningsvärde, inte ett bindande gränsvärde."
+      "assessment": "Ett bedömningsvärde, inte ett bindande gränsvärde.",
+      "control": "En kontrollkoncentration (管理濃度): måttstocken för att bedöma luften på ett arbetsområde utifrån mätningar där, inte ett gränsvärde för vad en enskild person andas in."
     },
     "setBy": "Fastställt i <link>{law}</link>.",
     "lowerThanEu": "Lägre än EU:s bindande gränsvärde på {value} mg/m³.",
     "sameAsEu": "Samma som EU:s bindande gränsvärde.",
+    "recommendedBy": "{by} ({abbr}) rekommenderar detta värde i <link>{title}</link>. Det är inte lag.",
+    "respirators": "Andningsskydd mot damm säljs här efter klass: {everyday} för glasyrdamm, eller {higher} för mer skydd (<link>de officiella klasserna</link>).",
     "unknown": "Vi kunde inte bekräfta det nationella gränsvärdet i {region}. EU:s bindande gränsvärde på {value} mg/m³ gäller i alla medlemsstater.",
     "noData": "Vi har ännu inte bekräftat gränsvärdet i {region}.",
     "agency": "Den nationella myndigheten för arbetsmiljö: <link>{name}</link>.",
@@ -126,7 +142,12 @@
       "auSmall": "Koppar, muggar, kannor, skålar, tekannor och annat servisgods under 1100 mL",
       "auLarge": "Samma sak, 1100 mL eller mer",
       "auPlates": "Tallrikar, tefat och liknande servisgods",
-      "auCooking": "Kokkärl"
+      "auCooking": "Kokkärl",
+      "jpFlat": "Föremål som inte kan fyllas, eller som är mindre än 2,5 cm djupa",
+      "jpSmall": "Andra föremål under 1,1 L, inte för matlagning",
+      "jpLarge": "Andra föremål från 1,1 L till under 3 L, inte för matlagning",
+      "jpStorage": "Andra föremål på 3 L eller mer, inte för matlagning",
+      "jpCooking": "Kokkärl, 2,5 cm djupa eller mer"
     },
     "judged": {
       "average": "medelvärde av 6 föremål",
@@ -135,6 +156,7 @@
     "euRules": "EU:s regler gäller här.",
     "law": "Fastställda i <link>{law}</link>.",
     "inForce": "Gäller från den {date}.",
+    "atMost": "Ett föremål godkänns om det inte löser ut mer än gränsvärdet: lagen säger ”högst”.",
     "unknown": "Vi har ännu inte bekräftat reglerna i {region}.",
     "choosePrompt": "Välj land för att se reglerna där."
   },

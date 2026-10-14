@@ -3,7 +3,10 @@
     "cones": "Ce guide est affiché pour une cuisson aux cônes, comme réglé dans vos paramètres.",
     "temperature": "Ce guide est affiché pour une cuisson par température, comme réglé dans vos paramètres.",
     "showTemperature": "Afficher pour une cuisson par température",
-    "showCones": "Afficher pour une cuisson aux cônes"
+    "showCones": "Afficher pour une cuisson aux cônes",
+    "sk": "Ce guide est affiché pour une cuisson aux cônes SK (JIS R 8101), comme réglé dans vos paramètres.",
+    "showSk": "Afficher pour une cuisson aux cônes SK (JIS R 8101)",
+    "showOrton": "Afficher pour une cuisson aux cônes Orton"
   },
   "notTranslated": "Ce guide n’est pas encore traduit : il est donc affiché en anglais.",
   "sectionInEnglish": "Cette section a changé depuis sa traduction : elle est donc affichée en anglais jusqu’à la mise à jour de sa traduction.",
@@ -86,19 +89,32 @@
     "limitIn": "Valeur limite pour",
     "label": "Valeur limite pour la silice : {region}",
     "caption": "Valeur limite d’exposition professionnelle à la silice cristalline alvéolaire, moyenne sur 8 heures : {region} (vérifiée le {date})",
+    "captionControl": "Valeur de référence pour la silice cristalline alvéolaire dans l’air d’une zone de travail : {region} (vérifiée le {date})",
     "both": "Quartz et cristobalite",
     "quartz": "Quartz",
     "cristobalite": "Cristobalite",
     "actionLevel": "Seuil d’action",
+    "formula": "Concentration de contrôle, où Q est la teneur en silice libre des poussières, en %",
+    "formulaValue": "{numerator} / ({factor}Q + 1) mg/m³",
+    "formulaLimit": "Valeur limite pour le quartz alvéolaire, où Q est la teneur en silice (SiO₂) des poussières, en %",
+    "formulaQ": "{numerator} / (Q + {offset}) mg/m³",
+    "formulaFull": "{numerator} / ({factor}Q + {offset}) mg/m³",
+    "quartzAll": "Quartz, pour des poussières entièrement composées de quartz",
+    "cristobaliteAll": "Cristobalite, pour des poussières entièrement composées de cristobalite",
+    "allFree": "Concentration de contrôle pour des poussières entièrement composées de silice libre",
+    "recommended": "Valeur recommandée par {abbr}",
     "value": "{value} mg/m³",
     "kind": {
       "binding": "Une valeur limite contraignante.",
       "indicative": "Une valeur limite indicative : une valeur guide, pas un plafond légal.",
-      "assessment": "Un critère d’évaluation, pas une valeur limite contraignante."
+      "assessment": "Un critère d’évaluation, pas une valeur limite contraignante.",
+      "control": "Une concentration de contrôle (管理濃度) : la référence pour juger l’air d’une zone de travail à partir des mesures qui y sont faites, pas une limite de ce qu’une personne respire."
     },
     "setBy": "Valeur fixée par <link>{law}</link>.",
     "lowerThanEu": "Inférieure à la valeur limite contraignante de l’UE, qui est de {value} mg/m³.",
     "sameAsEu": "Identique à la valeur limite contraignante de l’UE.",
+    "recommendedBy": "L’organisme {by} ({abbr}) recommande cette valeur dans <link>{title}</link>. Elle n’a pas force de loi.",
+    "respirators": "Ici, les masques antipoussière sont vendus par classe : {everyday} pour la poussière d’émail, ou {higher} pour une meilleure protection (<link>les classes officielles</link>).",
     "unknown": "Nous n’avons pas pu confirmer la valeur limite nationale de ce pays ({region}). La valeur limite contraignante de l’UE, {value} mg/m³, s’applique dans chaque État membre.",
     "noData": "Nous n’avons pas encore confirmé la valeur limite de ce pays ({region}).",
     "agency": "L’organisme national chargé de la sécurité au travail : <link>{name}</link>.",
@@ -126,7 +142,12 @@
       "auSmall": "Tasses, mugs, pichets, bols, théières et autre vaisselle de moins de 1100 mL",
       "auLarge": "Les mêmes, 1100 mL ou plus",
       "auPlates": "Assiettes, soucoupes et vaisselle semblable",
-      "auCooking": "Ustensiles de cuisson"
+      "auCooking": "Ustensiles de cuisson",
+      "jpFlat": "Objets non remplissables, ou de profondeur inférieure à 2,5 cm",
+      "jpSmall": "Autres objets de moins de 1,1 L, non destinés à la cuisson",
+      "jpLarge": "Autres objets de 1,1 L à moins de 3 L, non destinés à la cuisson",
+      "jpStorage": "Autres objets de 3 L ou plus, non destinés à la cuisson",
+      "jpCooking": "Ustensiles de cuisson, de 2,5 cm de profondeur ou plus"
     },
     "judged": {
       "average": "moyenne de 6 pièces",
@@ -135,6 +156,7 @@
     "euRules": "Les règles de l’UE s’appliquent ici.",
     "law": "Limites fixées par <link>{law}</link>.",
     "inForce": "En vigueur à partir du {date}.",
+    "atMost": "Un objet est conforme s’il ne libère pas plus que la limite : la loi dit « au plus ».",
     "unknown": "Nous n’avons pas encore confirmé les règles de ce pays ({region}).",
     "choosePrompt": "Choisissez votre pays pour voir ses règles."
   },

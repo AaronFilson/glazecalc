@@ -64,7 +64,115 @@
   "privacy": {
     "title": "Príobháideachas",
     "lead": "Nuashonraithe go deireanach: Deireadh Fómhair 2026.",
-    "shortHeading": "Go hachomair"
+    "shortHeading": "Go hachomair",
+    "short": "Coinníonn Glazecalc a bhfuil ag teastáil chun do chuntas a reáchtáil, agus faic níos mó. Níl aon fhógraí, aon anailísíocht ná aon rianú ann. Ní dhíoltar do shonraí riamh, agus is é Amazon Web Services, a óstálann an suíomh agus a sheolann a ríomhphost, an t-aon chomhlacht a láimhseálann iad.",
+    "whoHeading": "Cé atá freagrach",
+    "who": "Is tionscadal saor in aisce, foinse oscailte, neamhbhrabúis é Glazecalc, a reáchtálann a úinéir, Aaron Filson, i Stáit Aontaithe Mheiriceá. Is eisean a chinneann cad a tharlaíonn do do shonraí, agus mar sin is eisean a “rialaitheoir” faoi dhlí na cosanta sonraí.",
+    "contact": "Chun ceist a chur faoi do shonraí, nó chun aon cheann de do chearta a úsáid, scríobh chuig <mail>privacy@glazecalcapp.com</mail>. Is féidir leat freisin <issues>saincheist a oscailt ar GitHub</issues>, ach is poiblí iad saincheisteanna: ná cuir do sheoladh ríomhphoist ná aon rud pearsanta i gceann riamh. Is féidir leat formhór na rudaí a bhaineann le do shonraí a dhéanamh tú féin ar <account>leathanach do chuntais</account>.",
+    "storedHeading": "Cad a choinnítear, agus cén fáth",
+    "storedAccount": "<b>Do chuntas:</b> do sheoladh ríomhphoist, agus do phasfhocal, nach stóráiltear ach mar haiseáil aontreo (bcrypt), ní mar an pasfhocal féin riamh. Coinnítear do shocruithe (mar shampla teanga, réigiún agus aonaid) agus liosta na n-ábhar atá agat leis. Tá seoladh ríomhphoist ag teastáil ó chuntas, chun síniú isteach agus chun pasfhocal dearmadta a athshocrú. Nuair a chruthaíonn tú cuntas, seoltar nasc chuig an seoladh chun a dheimhniú gur leatsa é; go dtí sin, ní théann ríomhphost chuige ach nuair a iarrann tú é, mar shampla le haghaidh athshocrú pasfhocail.",
+    "storedSaved": "<b>A shábhálann tú:</b> d’oidis, d’ábhair, do bhreiseáin, do nótaí, do thaifid bhácála agus do chomhairle, mar a scríobh tú iad. Ní féidir le duine ar bith ach tusa iad a fheiceáil: ní roinntear aon rud idir úsáideoirí.",
+    "storedTrial": "<b>Triail (‘Bain triail as anois’):</b> gan ríomhphost ná pasfhocal, ach ainm cumtha, mar shampla “speckled quiet kilns”. Má shíníonn tú isteach i gcuntas ar an mbrabhsálaí céanna le linn trialach, bogann a ndearna tú sa triail isteach sa chuntas.",
+    "storedResets": "<b>Naisc athshocraithe pasfhocail agus naisc ríomhphoist:</b> cén cuntas a d’iarr, cathain, an seoladh ar seoladh nasc chuige chun seoladh a dheimhniú, agus méarlorg de gach nasc (ní an nasc féin).",
+    "storedLogs": "<b>Logaí:</b> taifeadann an freastalaí gréasáin gach iarratas: do sheoladh IP, an t-am, an leathanach a iarradh agus ainm do bhrabhsálaí. Taifeadann an aip earráidí leis an leathanach ar tharla siad air, ach ní do sheoladh ríomhphoist riamh.",
+    "storedDeletions": "<b>Cuntais scriosta:</b> uimhir aitheantais an chuntais agus cathain a scriosadh é, agus faic eile, ionas nach féidir le cúltaca athbhunaithe an cuntas a thabhairt ar ais.",
+    "storedMail": "<b>Fadhbanna ríomhphoist:</b> má phreabann ríomhphost chuig do sheoladh, nó má thuairiscítear é mar thurscar, cuireann seirbhís ríomhphoist Amazon an seoladh ar liosta nach seoltar chuige arís, agus seolann sí fógra chuig an úinéir ina bhfuil an seoladh.",
+    "storedInbound": "<b>Ríomhphost a sheolann tú chuig Glazecalc:</b> seiceálann Amazon ríomhphost chuig privacy@glazecalcapp.com agus chuig seoltaí eile Glazecalc le haghaidh turscair agus víreas, coinnítear é i stór príobháideach, agus cuirtear ar aghaidh é chuig bosca isteach an úinéara féin (Gmail).",
+    "basisHeading": "An bunús dlíthiúil",
+    "basisContract": "<b>Do chuntas a reáchtáil</b>, a shábhálann tú a choinneáil, agus na ríomhphoist faoi do chuntas: is iad sin an tseirbhís a d’iarr tú, agus is é an bunús dlíthiúil an conradh idir tú féin agus Glazecalc (Airteagal 6(1)(b) den RGCS).",
+    "basisInterests": "<b>An suíomh a choinneáil sábháilte agus ag obair</b>: na logaí, na teorainneacha ar cé chomh minic is féidir le duine ar bith iarracht a dhéanamh síniú isteach, na cúltacaí, an taifead ar chuntais scriosta agus an liosta seoltaí nach seoltar chucu. Tá siad seo bunaithe ar leas dlisteanach Glazecalc sa tslándáil, i mí-úsáid a chosc agus i do chuid oibre a chosaint ar chailleadh (Airteagal 6(1)(f)). Coinnítear iad ar feadh tamaill ghearr, agus ní úsáidtear iad le haghaidh aon rud eile. Is féidir leat agóid a dhéanamh ina gcoinne trí scríobh chuig an seoladh thuas.",
+    "basisNone": "Ní chinntear aon rud fút go huathoibríoch, níl aon phróifíliú ann, agus ní úsáidtear aon rud le haghaidh fógraíochta.",
+    "whereHeading": "Cá gcoinnítear é, agus cé a láimhseálann é",
+    "hosting": "Ritheann Glazecalc ar Amazon Web Services (AWS): an freastalaí (EC2), na cúltacaí (S3) agus an ríomhphost (Simple Email Service), iad uile i Stáit Aontaithe Mheiriceá, in Oregon (us-west-2). Ní láimhseálann AWS na sonraí ach thar ceann Glazecalc, faoina <dpa>théarmaí próiseála sonraí</dpa>. Ní fhaigheann aon duine eile iad.",
+    "transfer": "Má chónaíonn tú san Aontas Eorpach, sa Ríocht Aontaithe nó san Eilvéis, téann do shonraí go Stáit Aontaithe Mheiriceá. Deir Amazon go bhfuil an comhlacht deimhnithe faoin <dpf>EU–US Data Privacy Framework</dpf> agus faoina shíntí don Ríocht Aontaithe agus don Eilvéis, agus tá Clásail Chonarthacha Chaighdeánacha an Aontais Eorpaigh i dtéarmaí AWS; bheadh feidhm acu sin fós dá gcuirfí an Creat, atá faoi dhúshlán sa chúirt anois, ar ceal. Tá an t-úinéir agus AWS araon i Stáit Aontaithe Mheiriceá, agus is féidir le dlí Mheiriceá a cheangal orthu sonraí a thabhairt ar láimh.",
+    "noThirdParties": "Ní luchtaíonn do bhrabhsálaí aon rud ó shuíomhanna gréasáin eile: gan clónna, scripteanna, íomhánna ná anailísíocht ó áit eile, agus cuireann socruithe slándála an tsuímh bac orthu. Ní leantar naisc chuig GitHub agus chuig suíomhanna eile ach nuair a chliceálann tú orthu.",
+    "choiceHeading": "Cá gcoinnítear do chuntas, agus do rogha",
+    "choiceProject": "Is tionscadal saor in aisce, foinse oscailte é Glazecalc. Coinnítear cuntais, agus gach a bhfuil iontu, ar fhreastalaithe i Stáit Aontaithe Mheiriceá, cibé áit a bhfuil cónaí ort, mar a thuairiscítear thuas.",
+    "choiceNoAccount": "Níl cuntas ag teastáil uait chun na treoirleabhair a léamh, agus is féidir leat an t-áireamhán a thriail le ‘Bain triail as anois’, gan seoladh ríomhphoist ná pasfhocal. Coinnítear triail ar na freastalaithe céanna ar feadh 14 lá.",
+    "choiceOwnCopy": "Is féidir le duine ar bith a chóip féin den aip Glazecalc a rith, ar a ríomhaire nó ar a fhreastalaí féin: tá an cód saor in aisce ar <source>GitHub</source>.",
+    "choiceDecision": "Is fútsa féin atá sé a chinneadh an gcruthóidh tú cuntas anseo, agus a fhios agat go gcoinnítear é i Stáit Aontaithe Mheiriceá.",
+    "choiceNoWarranty": "Cuirtear Glazecalc ar fáil mar atá, gan bharántas. Ní ghlacann a chothaitheoirí aon fhreagracht ná aon dliteanas as do chinneadh cuntas a chruthú, ná as an áit a gcoinnítear a shonraí.",
+    "keptHeading": "Cé chomh fada is a choinnítear é",
+    "keptAccount": "<b>Do chuntas agus a shábhálann tú:</b> go dtí go scriosann tú iad. Ní bhaintear cuntais toisc nach n-úsáidtear iad.",
+    "keptTrial": "<b>Triail:</b> 14 lá óna tús, agus ansin scriostar í agus gach a bhfuil inti, mura gcruthaíonn tú cuntas chun í a choinneáil.",
+    "keptResets": "<b>Naisc athshocraithe pasfhocail agus naisc ríomhphoist:</b> oibríonn nasc athshocraithe ar feadh 30 nóiméad agus scriostar a thaifead tar éis thart ar uair an chloig; oibríonn nasc chun seoladh a dheimhniú, agus coinnítear é, ar feadh 24 uair an chloig.",
+    "keptBackups": "<b>Cúltacaí:</b> coinnítear cóipeanna criptithe den bhunachar sonraí ar feadh 30 lá, agus cóipeanna de dhiosca an fhreastalaí ar feadh 7 lá. Mar sin, bíonn cuntas scriosta imithe as gach cúltaca laistigh de 30 lá.",
+    "keptDeletions": "<b>An taifead ar chuntas scriosta:</b> 37 lá, beagán níos faide ná aon chúltaca.",
+    "keptLogs": "<b>Logaí:</b> logaí an fhreastalaí gréasáin, 14 lá. Tá logaí na haipe agus logaí an bhunachair sonraí féin teoranta de réir méide (50 MB an ceann), rud a théann siar roinnt laethanta ar shuíomh ciúin. Coinníonn na cóipeanna de dhiosca an fhreastalaí logaí ar feadh suas le 7 lá eile.",
+    "keptMail": "<b>An liosta seoltaí nach seoltar chucu:</b> go dtí go mbaineann an t-úinéir seoladh de, rud a dhéanann sé gach mí i gcás seoltaí nach mbaineann le cuntas a thuilleadh. Scriosann an t-úinéir fógraí preabtha laistigh de 30 lá.",
+    "keptInbound": "<b>Ríomhphost a sheolann tú chuig Glazecalc:</b> 30 lá i stór Amazon, agus i mbosca isteach an úinéara chomh fada is a thógann sé freagra a thabhairt ort. I gcás iarratais faoi do shonraí, coinnítear nóta gearr (cathain a tháinig sé, cad a iarradh agus cad a rinneadh) ar feadh trí bliana.",
+    "rightsHeading": "Do chearta",
+    "rightsIntro": "Is féidir leat do shonraí a fheiceáil, a cheartú, a thabhairt leat agus a scriosadh. Is féidir leat a bhformhór a dhéanamh tú féin ar <account>leathanach do chuntais</account>:",
+    "rightsExport": "<b>Iad a fheiceáil agus a thabhairt leat:</b> sábhálann ‘Mo shonraí a íoslódáil’ gach rud i gcomhad amháin (JSON), agus d’oidis agus d’ábhair mar scarbhileoga (CSV).",
+    "rightsCorrect": "<b>Iad a cheartú:</b> athraigh do shocruithe agus do thaifid am ar bith. Chun do sheoladh ríomhphoist a athrú, oscail an nasc a sheoltar chuig an seoladh nua; cuirtear an t-athrú in iúl don seanseoladh, má bhí sé deimhnithe, agus síntear amach gach gléas.",
+    "rightsDelete": "<b>Iad a scriosadh:</b> baineann ‘Scrios mo chuntas’ do chuntas agus gach a shábháil tú láithreach, agus déanann ‘Scrios an triail’ an rud céanna do thriail. Bíonn na cóipeanna sna cúltacaí imithe laistigh de 30 lá.",
+    "rightsSignOut": "<b>Síniú amach i ngach áit:</b> cuireann sé deireadh le seisiúin do chuntais ar gach gléas.",
+    "rightsAsk": "Maidir le haon rud eile, mar shampla iarraidh nach n-úsáidfí do shonraí fad a bhíonn botún á cheartú, nó agóid a dhéanamh i gcoinne an chaoi a n-úsáidtear iad, scríobh chuig <mail>privacy@glazecalcapp.com</mail>. Tá sé saor in aisce, agus gheobhaidh tú freagra laistigh de mhí. Ní iarrfar ort ach a thaispeáint gur leatsa an cuntas, trí shíniú isteach nó trí nasc a sheoltar chuig a sheoladh a oscailt, agus ní iarrfar cárta aitheantais ort riamh.",
+    "rightsComplain": "Mura bhfuil tú sásta, is féidir leat gearán a dhéanamh le húdarás cosanta sonraí: san Aontas Eorpach, <edpb>an t-údarás i do thír féin</edpb>, agus sa Ríocht Aontaithe, an <ico>Information Commissioner’s Office</ico>.",
+    "storageHeading": "Fianáin agus stóras brabhsálaí",
+    "storageIntro": "Socraíonn Glazecalc fianán amháin agus coinníonn sé roinnt luachanna beaga i do bhrabhsálaí. Tá gach ceann acu ann le haghaidh rud a d’iarr tú: fanacht sínithe isteach, nó rogha a rinne tú a mheabhrú. Ní rianaíonn aon cheann acu thú agus ní roinntear aon cheann acu, mar sin ní cheanglaíonn an dlí cead a iarraidh ar dtús, agus níl aon bhratach fianán ann.",
+    "storageLabel": "Fianáin agus stóras brabhsálaí",
+    "storageName": "Ainm",
+    "storagePurpose": "Cad chuige é",
+    "storageLasts": "Cé chomh fada a fhanann sé",
+    "storageCookie": "Fianán",
+    "storageLocal": "Stóras logánta",
+    "storageSession": "Stóras seisiúin",
+    "storageNote": "Is féidir leat aon cheann díobh seo a ghlanadh i socruithe do bhrabhsálaí am ar bith. Nuair a scriosann tú do chuntas, baintear an nóta sínithe isteach agus gach socrú a choinnítear anseo.",
+    "keys": {
+      "cookie": {
+        "purpose": "Coinníonn sé sínithe isteach thú. Tá do chomhartha sínithe isteach ann. Ní féidir le scripteanna ar an leathanach é a léamh, agus ní sheolann do bhrabhsálaí é ach chuig freastalaí Glazecalc féin, thar HTTPS, agus ní sheolann sé riamh é le hiarratas a thosaíonn ar shuíomh eile.",
+        "lasts": "Socraítear é nuair a shíníonn tú isteach, nuair a chruthaíonn tú cuntas nó nuair a thosaíonn tú triail. Go dtí go ndúnann tú do bhrabhsálaí, nó ar feadh 7 lá má chuireann tú tic le ‘Coinnigh sínithe isteach mé ar an ngléas seo’; 14 lá do thriail. Baineann síniú amach é."
+      },
+      "session": {
+        "purpose": "Nótálann sé go bhfuil tú sínithe isteach, i gcuntas nó i dtriail, ionas go mbíonn a fhios ag an aip ceist a chur ar an bhfreastalaí. Níl aon chomhartha ná pasfhocal ann.",
+        "lasts": "Go dtí go síníonn tú amach nó go gcríochnaíonn an seisiún."
+      },
+      "trial": {
+        "purpose": "Le linn trialach, a hainm agus a dáta deiridh, chun iad a thaispeáint.",
+        "lasts": "Go dtí go gcríochnaíonn an triail, nó go gcoinnítear nó go scriostar í."
+      },
+      "settings": {
+        "purpose": "Socrú a d’athraigh tú ar an mbrabhsálaí seo, ionas go dtaispeánann an chéad leathanach eile é láithreach, sula bhfreagraíonn an freastalaí. Dathaíonn <code>theme</code> agus <code>palette</code> an leathanach sula dtaispeántar é, agus osclaíonn <code>language</code> leathanaigh i do theanga.",
+        "lasts": "Go dtí go n-athraíonn tú é. Nuair a shíníonn tú amach, cuirtear ar ais a roghnaigh tú agus tú sínithe amach, más ann dó, agus baintear an chuid eile."
+      },
+      "visitor": {
+        "purpose": "An teanga a roghnaigh tú, nó gur dhún tú fógra an aistriúcháin, agus tú sínithe amach, ionas go dtagann sé ar ais nuair a shíníonn tú amach.",
+        "lasts": "Go dtí go nglanann tú stóras do bhrabhsálaí nó go scriosann tú cuntas ar an mbrabhsálaí seo."
+      },
+      "region": {
+        "purpose": "An scagaire réigiúin ar liosta leabharlainne.",
+        "lasts": "Go dtí go gcuireann tú an scagaire ar ais go gach réigiún."
+      },
+      "includeAdditives": {
+        "purpose": "Cé acu a áiríonn oidis nua a mbreiseáin san fhoirmle Seger nó nach n-áiríonn, mar a roghnaigh tú an uair dheireanach.",
+        "lasts": "Go dtí go nglanann tú stóras do bhrabhsálaí."
+      },
+      "recipeHelp": {
+        "purpose": "Gur fholaigh tú an chabhair ar leathanach an oidis.",
+        "lasts": "Go dtí go dtaispeánann tú an chabhair arís."
+      },
+      "print": {
+        "purpose": "Na roghanna deireanacha a rinne tú chun oideas a phriontáil: an t-oideas iomlán nó baisc, agus méid na baisce.",
+        "lasts": "Go dtí go nglanann tú stóras do bhrabhsálaí."
+      },
+      "token": {
+        "purpose": "Comhartha sínithe isteach ó sheanleagan den aip Glazecalc. Ní scríobhtar anois é riamh.",
+        "lasts": "Baintear é nuair a osclaítear leathanach."
+      },
+      "readEnglish": {
+        "purpose": "Gur roghnaigh tú leathanach aistrithe a léamh i mBéarla, ionas go stopann an aip de bheith do do sheoladh chuig do theanga.",
+        "lasts": "Go dtí go ndúnann tú an cluaisín."
+      },
+      "reloadedFor": {
+        "purpose": "Tar éis leagan nua den suíomh a eisiúint, cén leathanach a athlódáladh agus cathain, ionas nach n-athlódálann leathanach ach uair amháin sa nóiméad ar a mhéad.",
+        "lasts": "Go dtí go ndúnann tú an cluaisín."
+      }
+    },
+    "childrenHeading": "Leanaí",
+    "children": "Uirlis do photadóirí is ea Glazecalc, agus níl sé dírithe ar leanaí.",
+    "changesHeading": "Athruithe",
+    "changes": "Má athraíonn an fógra seo, athraíonn an dáta ag barr an leathanaigh freisin."
   },
   "notFound": {
     "heading": "Níor aimsíodh an leathanach",

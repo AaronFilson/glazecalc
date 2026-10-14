@@ -501,6 +501,26 @@ the reviewed translation uses them. Names of shops, laws and agencies stay as th
 | Directive 84/500/EEC (its official name)                              | Richtlinie 84/500/EWG (geändert durch die Richtlinie 2005/31/EG)                    | regions: the directive                        |
 | Latvia's law gives this limit for the inhalable fraction of the dust. | Das lettische Recht nennt diesen Grenzwert für die einatembare Fraktion des Staubs. | regions: Latvia                               |
 
+### 2.10 SK cones, Japan, and the privacy page
+
+| English                                     | Deutsch                                       | Notes                                                                                                                                                    |
+| ------------------------------------------- | --------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| SK cones (JIS R 8101)                       | SK-Kegel; „SK 8“                              | Always „SK“ before the number, never „Segerkegel“ (Seger only where the English says Seger) and never an Orton number. "To SK cones" → „Nach SK-Kegeln“. |
+| Kyoto cones                                 | Kyoto-Kegel                                   | Japanese name in brackets as the English gives it.                                                                                                       |
+| control concentration (管理濃度)            | die Kontrollkonzentration                     | Japan's yardstick for a work area's air. No German source found; keep apart from Germany's „Beurteilungsmaßstab“.                                        |
+| dust mask (Japan, DS/RS classes)            | die Staubschutzmaske                          | For the Japanese classes; elsewhere „Atemschutzmaske“ (2.7).                                                                                             |
+| controller (GDPR)                           | der Verantwortliche                           | The DSGVO's term. "GDPR Article 6(1)(b)" → „Art. 6 Abs. 1 lit. b DSGVO“.                                                                                 |
+| EU–US Data Privacy Framework                | der EU-US-Datenschutzrahmen                   | The Commission's German name.                                                                                                                            |
+| maintainers                                 | die Maintainer                                | Open-source usage; not „Verantwortliche“ (the GDPR term above).                                                                                          |
+| logs (server)                               | die Logdateien                                | Not „Protokolle“, which the app uses for firing logs.                                                                                                    |
+| Sign out everywhere; Download my data       | Überall abmelden; Meine Daten herunterladen   |                                                                                                                                                          |
+| Where your account is kept, and your choice | Wo Ihr Konto gespeichert wird – und Ihre Wahl | The same words in the sign-up notice's link and the privacy page's heading.                                                                              |
+
+**Search terms** (page titles and descriptions, from research_notes/search-terms-2026-10-14.md): „Glasurrechner“,
+„Segerformel (UMF)“, „Glasurrezepte“, „Glasurchemie“. The bare „Glasur“ also means icing in German searches, so a
+description pairs it with the ceramics word: „Keramikglasur“, „Glasur für Keramik“. Landing title: „Glazecalc:
+kostenloser Glasurrechner für die Töpferei“.
+
 ## 3. Never translated
 
 From terms.md, unchanged:

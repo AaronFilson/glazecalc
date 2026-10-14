@@ -172,6 +172,15 @@ const DOTTED_TIME = {
   tr: /(?<=\bsaat )(\d{1,2})\.(\d{2})(?!\d)/giu
 };
 
+/**
+ * A unit a language writes in its own words, as its style sheet asks:
+ * Lithuanian writes degrees per hour as °C/val. (valanda, an hour), which is
+ * English's °C/h.
+ */
+const UNIT_WORDS = {
+  lt: [[/°([CF])\/val\.?(?![\p{L}\d])/gu, '°$1/h']]
+};
+
 /** Whether a language writes 1.5 with a point, as English does, rather than a comma. */
 const decimalPoint = (language) =>
   new Intl.NumberFormat(language).formatToParts(1.5).find((part) => part.type === 'decimal')?.value === '.';
@@ -202,6 +211,9 @@ export function numbersIn(text, language) {
       const [hour, minutes] = groups.slice(1, 5).filter(Boolean);
       return minutes === '00' ? String(Number(hour)) : `${hour}:${minutes}`;
     });
+  }
+  for (const [words, unit] of UNIT_WORDS[new Intl.Locale(language).language] ?? []) {
+    text = text.replace(words, unit);
   }
   if (percentFirst(language)) {
     // A range takes the sign once, before it, as English takes it once after: %10\u201360 is 10\u201360%.

@@ -566,6 +566,26 @@ The Czech food-contact categories follow 84/500 CS: „Předměty, které nelze 
 vnitřní hloubka … nepřesahuje 25 mm“, „Všechny ostatní předměty, které lze plnit“, „Kuchyňské nádobí, obaly a
 skladovací nádoby o objemu větším než tři litry“.
 
+### 2.10 Accounts, privacy, SK cones and Japan
+
+| English                                                                 | Czech                                                                    | Notes                                                                                                                                                                                                   |
+| ----------------------------------------------------------------------- | ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| SK cones (JIS R 8101)                                                   | žároměrky SK (JIS R 8101); žároměrka SK 8                                | Always „SK“ before the number, never converted to Orton and never called „Segerovy“ (only where the English says Seger). Kyoto cones → „kjótské žároměrky“. Settings "To SK cones" → „Na žároměrky SK“. |
+| controller (data protection)                                            | správce (m)                                                              | The GDPR's Czech word. Keep it apart from the project's "maintainers": „ti, kdo projekt udržují“, never „správci“.                                                                                      |
+| responsibility or liability                                             | odpovědnost ani ručení                                                   | "accepts no responsibility or liability" → „nepřebírá žádnou odpovědnost ani ručení“.                                                                                                                   |
+| logs (server logs)                                                      | protokoly (m pl)                                                         | Not the firing logs („záznamy výpalů“).                                                                                                                                                                 |
+| cookie, local storage, session storage                                  | soubor cookie; místní úložiště; úložiště relace                          | "cookie banner" → „lišta o cookies“.                                                                                                                                                                    |
+| Download my data, Sign out everywhere, Keep me signed in on this device | Stáhnout moje data; Odhlásit se všude; Neodhlašovat mě na tomto zařízení | „Neodhlašovat mě“ avoids the gendered „přihlášen/přihlášena“.                                                                                                                                           |
+| link works for {hours} hours                                            | odkaz platí {hours} h                                                    | The abbreviation avoids a case ending after the placeholder.                                                                                                                                            |
+| control concentration (管理濃度, Japan)                                 | kontrolní koncentrace (f)                                                | No Czech source; the Japanese term is kept in brackets as the English gives it.                                                                                                                         |
+| Japan Poison Information Center, Osaka / Tsukuba                        | Japonské toxikologické informační středisko, Ósaka / Cukuba              | Native names in brackets unchanged (大阪中毒110番, つくば中毒110番); Turkey's „Národní toxikologické informační středisko (Ulusal Zehir Danışma Merkezi, UZEM)“.                                        |
+| Türkiye                                                                 | Turecko                                                                  | The Czech name of the country.                                                                                                                                                                          |
+
+**Search terms** (titles.landing and the meta descriptions). Czech searchers pair the glaze word with a ceramics word,
+because the bare „glazura“ is also cake icing: „glazura na keramiku“, „recepty glazur“, and for the unity formula
+„Segerův vzorec“, with „(UMF)“ only in brackets after it. The landing title is „Glazecalc: bezplatná kalkulačka glazur
+pro keramiky“.
+
 ## 3. Never translated
 
 From terms.md, unchanged:

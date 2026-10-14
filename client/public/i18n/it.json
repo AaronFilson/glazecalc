@@ -1,6 +1,6 @@
 {
   "titles": {
-    "landing": "Glazecalc: calcolatore gratuito di chimica degli smalti per ceramisti",
+    "landing": "Glazecalc: calcolo smalti ceramici gratuito per ceramisti",
     "advice": "Consigli sugli smalti - Glazecalc",
     "guides": "Guide - Glazecalc",
     "glazingBasics": "Lo smalto dai principi di base - Glazecalc",
@@ -14,6 +14,7 @@
     "signup": "Creare un account - Glazecalc",
     "forgot": "Reimpostare la password - Glazecalc",
     "reset": "Scegliere una nuova password - Glazecalc",
+    "confirmEmail": "Confermare l’email - Glazecalc",
     "home": "Il quaderno di laboratorio - Glazecalc",
     "recipe": "Ricette - Glazecalc",
     "material": "Materiali - Glazecalc",
@@ -74,6 +75,16 @@
   },
   "meta": {
     "description": "Inserire una ricetta di smalto: formula di Seger (UMF), rapporto silice/allumina, fondenti. Gratuito e open source, per ricette, materiali e cotture.",
+    "guides": "Guide in parole semplici per chi inizia: cos’è uno smalto ceramico, come prepararlo e miscelarlo in sicurezza, proteggere la famiglia e cuocere in un forno semplice.",
+    "glazingBasics": "Di cosa è fatto uno smalto ceramico, come il forno lo trasforma in vetro, cosa sono coni, fritte, formula di Seger (UMF) e difetti degli smalti. Per principianti.",
+    "makingAGlaze": "Come acquistare, conservare, pesare e miscelare uno smalto ceramico, regolarne la densità, provarlo sulla propria argilla e annotare tutto per poterlo rifare.",
+    "safeMixing": "Tenere la polvere degli smalti lontana dai polmoni e i fumi del forno fuori casa: buone abitudini, maschere filtranti, pulizia, ventilazione e materiali a rischio.",
+    "homeSafety": "Cosa fare se un bambino o un animale ingerisce un materiale per smalti, e come rendere sicuri per la famiglia materiali, polvere, forno e ceramiche fatte a mano.",
+    "firing": "Come cuocere in un forno elettrico: scegliere, posizionare e leggere i coni, e seguire curve di cottura pubblicate per biscotto e smalto, con la tabella dei coni.",
+    "advice": "Consigli pratici per miscelare, smaltare e cuocere, da Glazecalc, più i propri consigli. Gratuito per chi fa ceramica.",
+    "about": "Glazecalc è un calcolatore di chimica degli smalti ceramici e un quaderno di laboratorio, gratuito e open source. Come calcola la formula di Seger (UMF) e com’è fatto.",
+    "privacy": "Come Glazecalc tratta i dati: niente pubblicità, statistiche o tracciamento, e niente viene venduto. Cosa si conserva, perché, e come esercitare i propri diritti.",
+    "signup": "Creare un account Glazecalc gratuito per conservare ricette di smalti, materiali, note e registri di cottura. Niente pubblicità, e i dati non vengono mai venduti.",
     "imageAlt": "Glazecalc: capire i propri smalti, non solo prepararli."
   },
   "notices": {
@@ -255,6 +266,8 @@
     "label": "Informazioni sulla traduzione",
     "text": "Questa pagina è stata tradotta dall’inglese con l’IA. Glazecalc è open source: se qualcosa non suona bene, si prega di suggerire una correzione su GitHub.",
     "brief": "Tradotta dall’inglese con l’IA.",
+    "plain": "Questa pagina è stata tradotta dall’inglese con l’IA, che gestisce questa lingua meno bene della maggior parte delle lingue. La pagina inglese potrebbe essere più chiara. Glazecalc è open source: se qualcosa non suona bene, si prega di suggerire una correzione su GitHub.",
+    "plainBrief": "Tradotta con l’IA; l’originale inglese potrebbe essere più chiaro.",
     "suggest": "Suggerisci una correzione",
     "english": "Leggi l’originale inglese",
     "close": "Chiudi"

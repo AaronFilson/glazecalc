@@ -3,7 +3,10 @@
     "cones": "See juhend on kuvatud koonuste järgi põletamiseks, nagu on määratud sätetes.",
     "temperature": "See juhend on kuvatud temperatuuri järgi põletamiseks, nagu on määratud sätetes.",
     "showTemperature": "Näita temperatuuri järgi põletamiseks",
-    "showCones": "Näita koonuste järgi põletamiseks"
+    "showCones": "Näita koonuste järgi põletamiseks",
+    "sk": "See juhend on kuvatud SK-koonuste (JIS R 8101) järgi põletamiseks, nagu on määratud sätetes.",
+    "showSk": "Näita SK-koonuste (JIS R 8101) järgi põletamiseks",
+    "showOrton": "Näita Ortoni koonuste järgi põletamiseks"
   },
   "notTranslated": "Seda juhendit ei ole veel tõlgitud, seega on see kuvatud inglise keeles.",
   "sectionInEnglish": "See jaotis on pärast tõlkimist muutunud, seega on see kuvatud inglise keeles, kuni selle tõlge on ajakohastatud.",
@@ -86,19 +89,32 @@
     "limitIn": "Piirnorm riigis:",
     "label": "Ränidioksiidi piirnorm (riik: {region})",
     "caption": "Respireeritava kristallilise ränidioksiidi töökeskkonna piirnorm, 8 tunni keskmine (riik: {region}; kontrollitud: {date})",
+    "captionControl": "Respireeritava kristallilise ränidioksiidi mõõdupuu tööala õhus (riik: {region}; kontrollitud: {date})",
     "both": "Kvarts ja kristobaliit",
     "quartz": "Kvarts",
     "cristobalite": "Kristobaliit",
     "actionLevel": "Rakendusväärtus",
+    "formula": "Kontrollkontsentratsioon, kus Q on vaba ränidioksiidi sisaldus tolmus, %",
+    "formulaValue": "{numerator} / ({factor}Q + 1) mg/m³",
+    "formulaLimit": "Respireeritava kvartsi piirnorm, kus Q on ränidioksiidi (SiO₂) sisaldus tolmus, %",
+    "formulaQ": "{numerator} / (Q + {offset}) mg/m³",
+    "formulaFull": "{numerator} / ({factor}Q + {offset}) mg/m³",
+    "quartzAll": "Kvarts, kui tolm on täielikult kvarts",
+    "cristobaliteAll": "Kristobaliit, kui tolm on täielikult kristobaliit",
+    "allFree": "Kontrollkontsentratsioon, kui tolm on täielikult vaba ränidioksiid",
+    "recommended": "Soovitab {abbr}",
     "value": "{value} mg/m³",
     "kind": {
       "binding": "Siduv piirnorm.",
       "indicative": "Soovituslik piirnorm: suunisväärtus, mitte seadusega kehtestatud ülempiir.",
-      "assessment": "Hindamiskriteerium, mitte siduv piirnorm."
+      "assessment": "Hindamiskriteerium, mitte siduv piirnorm.",
+      "control": "Kontrollkontsentratsioon (管理濃度): mõõdupuu, millega hinnatakse tööala õhku seal tehtud mõõtmiste põhjal, mitte piirnorm sellele, mida üks inimene sisse hingab."
     },
     "setBy": "Kehtestatud: <link>{law}</link>.",
     "lowerThanEu": "Madalam kui EL-i siduv piirnorm {value} mg/m³.",
     "sameAsEu": "Sama mis EL-i siduv piirnorm.",
+    "recommendedBy": "Seda väärtust soovitab {by} ({abbr}) dokumendis <link>{title}</link>. See ei ole seadus.",
+    "respirators": "Tolmumaske müüakse siin klasside kaupa: glasuuritolmu jaoks {everyday} või suurema kaitse jaoks {higher} (<link>ametlikud klassid</link>).",
     "unknown": "Riiklikku piirnormi ei õnnestunud kinnitada (riik: {region}). EL-i siduv piirnorm {value} mg/m³ kehtib igas liikmesriigis.",
     "noData": "Piirnormi ei ole veel kinnitatud (riik: {region}).",
     "agency": "Riiklik tööohutusasutus: <link>{name}</link>.",
@@ -126,7 +142,12 @@
       "auSmall": "Tassid, kruusid, kannud, kausid, teekannud ja muud lauanõud alla 1100 mL",
       "auLarge": "Samad, 1100 mL või rohkem",
       "auPlates": "Taldrikud, alustassid ja sarnased lauanõud",
-      "auCooking": "Toiduvalmistamisnõud"
+      "auCooking": "Toiduvalmistamisnõud",
+      "jpFlat": "Esemed, mida ei saa täita, või esemed, mille sügavus on alla 2,5 cm",
+      "jpSmall": "Muud esemed alla 1,1 L, mis ei ole mõeldud toiduvalmistamiseks",
+      "jpLarge": "Muud esemed 1,1 L kuni alla 3 L, mis ei ole mõeldud toiduvalmistamiseks",
+      "jpStorage": "Muud esemed 3 L või rohkem, mis ei ole mõeldud toiduvalmistamiseks",
+      "jpCooking": "Toiduvalmistamisnõud sügavusega 2,5 cm või rohkem"
     },
     "judged": {
       "average": "6 eseme keskmine",
@@ -135,6 +156,7 @@
     "euRules": "Siin kehtivad EL-i reeglid.",
     "law": "Kehtestatud: <link>{law}</link>.",
     "inForce": "Jõustumise kuupäev: {date}.",
+    "atMost": "Ese läbib katse, kui sellest ei eraldu rohkem kui piirnorm: seaduses on „kõige rohkem“.",
     "unknown": "Reegleid ei ole veel kinnitatud (riik: {region}).",
     "choosePrompt": "Valige oma riik, et näha selle reegleid."
   },

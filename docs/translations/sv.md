@@ -570,6 +570,29 @@ text of the same EU rules.
 | Directive 84/500/EEC (its official name)                              | Direktiv 84/500/EEG (ändrat genom direktiv 2005/31/EG)                         | regions: the directive                        |
 | Latvia's law gives this limit for the inhalable fraction of the dust. | Lettlands lag anger detta gränsvärde för den inhalerbara fraktionen av dammet. | regions: Latvia                               |
 
+### 2.10 Search terms
+
+From the search-term research of 2026-10-14 (Google suggest, Sweden): the bare "glasyr" also means cake icing, so page
+titles and descriptions pair it with the ceramics word: "keramikglasyr", "glasyr keramik". Searchers also use
+"glasyrrecept", "Segerformeln" (with "(UMF)" after it, never UMF alone), "stengodsglasyr" and "glasyrberäkning". The
+landing title is "Glazecalc: gratis glasyrberäkning för keramiker". Use these only where they say what the English
+says; never add a claim for the sake of a search term.
+
+### 2.11 SK cones, Japan and accounts
+
+| English                                      | Swedish                                                                   | Notes                                                                                                            |
+| -------------------------------------------- | ------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| SK cones (JIS R 8101), SK 8                  | SK-käglor (JIS R 8101); SK 8                                              | Always "SK" before the number; never "Segerkägla" or an Orton number. Setting "To SK cones" → "Efter SK-käglor". |
+| Kyoto cones                                  | Kyotokäglor                                                               |                                                                                                                  |
+| control concentration (管理濃度)             | kontrollkoncentration (en)                                                | Japan's yardstick for the air of a work area; not a hygieniskt gränsvärde.                                       |
+| Japan Poison Information Center, Osaka       | Japans giftinformationscentral, Osaka (大阪中毒110番)                     | Native name in brackets as given.                                                                                |
+| National Poison Information Centre (Türkiye) | Nationella giftinformationscentralen (Ulusal Zehir Danışma Merkezi, UZEM) | Türkiye → "Turkiet" in running text.                                                                             |
+| controller (data protection)                 | personuppgiftsansvarig                                                    | GDPR's Swedish term.                                                                                             |
+| cookie, local storage, session storage       | kaka (en); lokal lagring; sessionslagring                                 | "cookie banner" → "kakbanner".                                                                                   |
+| Download my data                             | Ladda ner kontots uppgifter                                               | As "Delete my account" → "Radera kontot".                                                                        |
+| Sign out everywhere                          | Logga ut överallt                                                         |                                                                                                                  |
+| Keep me signed in on this device             | Håll mig inloggad på den här enheten                                      | First person, as the check box speaks for the user.                                                              |
+
 ## 3. Never translated
 
 From terms.md, unchanged:

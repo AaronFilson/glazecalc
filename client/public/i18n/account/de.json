@@ -11,10 +11,13 @@
     "password": "Passwort",
     "passwordHint": "Mindestens 8 Zeichen.",
     "confirmation": "Passwort bestätigen",
+    "keepSignedIn": "Auf diesem Gerät angemeldet bleiben",
     "passwordMissing": "Geben Sie Ihr Passwort ein.",
     "createAccount": "Konto erstellen",
     "signIn": "Anmelden",
     "haveAccount": "Sie haben schon ein Konto? <signin>Anmelden</signin>",
+    "privacy": "Ihre E-Mail-Adresse und was Sie speichern, werden nur für den Betrieb Ihres Kontos verwendet und bei Amazon Web Services in den USA gespeichert. <privacy>Wie Glazecalc mit Ihren Daten umgeht</privacy>",
+    "dataNotice": "Glazecalc ist ein kostenloses Open-Source-Projekt, und Konten werden auf Servern in den Vereinigten Staaten gespeichert. Sie können die Anleitungen lesen und den Rechner ohne Konto ausprobieren oder Ihre eigene Kopie betreiben. Ob Sie hier ein Konto erstellen, ist Ihre eigene Entscheidung, und das Projekt übernimmt dafür keine Verantwortung. <where>Wo Ihr Konto gespeichert wird – und Ihre Wahl</where>",
     "forgot": "Passwort vergessen? Jetzt zurücksetzen",
     "newHere": "Neu hier? <signup>Kostenloses Konto erstellen</signup>",
     "signUpFailed": "Fehler: Das Konto konnte nicht erstellt werden.",
@@ -61,7 +64,29 @@
     "deletePassword": "Ihr Passwort, zur Bestätigung",
     "deletePasswordMissing": "Geben Sie zur Bestätigung Ihr Passwort ein.",
     "delete": "Mein Konto löschen",
-    "deleteFailed": "Fehler: Das Konto konnte nicht gelöscht werden. Bitte versuchen Sie es erneut."
+    "deleteFailed": "Fehler: Das Konto konnte nicht gelöscht werden. Bitte versuchen Sie es erneut.",
+    "unverifiedHeading": "E-Mail-Adresse bestätigen",
+    "unverifiedText": "Als Sie dieses Konto erstellt haben, haben wir einen Link an {email} gesendet. Öffnen Sie ihn, um zu bestätigen, dass die Adresse Ihnen gehört. Bis dahin senden wir nur dann E-Mails an diese Adresse, wenn Sie darum bitten, etwa zum Zurücksetzen des Passworts.",
+    "resend": "Link erneut senden",
+    "resendFailed": "Fehler: Der Link konnte nicht gesendet werden. Bitte versuchen Sie es erneut.",
+    "emailHeading": "E-Mail-Adresse ändern",
+    "emailText": "Wir senden einen Link an die neue Adresse, und Ihre E-Mail-Adresse ändert sich, wenn Sie ihn öffnen. Wir benachrichtigen auch Ihre aktuelle Adresse. Alle Geräte, die mit diesem Konto angemeldet sind, werden abgemeldet.",
+    "newEmail": "Neue E-Mail-Adresse",
+    "emailPassword": "Ihr Passwort, zur Bestätigung",
+    "emailSend": "Link senden",
+    "emailFailed": "Fehler: Der Link konnte nicht gesendet werden. Bitte versuchen Sie es erneut.",
+    "signOutHeading": "Überall abmelden",
+    "signOutText": "Meldet Sie auf allen Geräten ab, auch auf diesem. Nutzen Sie es, wenn Sie ein Gerät verloren haben oder vermuten, dass jemand anderes Ihre Anmeldedaten hat.",
+    "signOutButton": "Überall abmelden",
+    "signOutFailed": "Fehler: Die Abmeldung ist fehlgeschlagen. Bitte versuchen Sie es erneut."
+  },
+  "export": {
+    "heading": "Meine Daten herunterladen",
+    "text": "Speichern Sie eine Kopie von allem, was Ihr Konto enthält, als eine Datei: Ihre Angaben, Einstellungen, Ihren Vorrat, Rezepte, Rohstoffe, Zusätze, Notizen, Brennprotokolle, Tipps und den Papierkorb. Ihr Passwort ist nicht enthalten. Bewahren Sie die Datei an einem privaten Ort auf, denn sie enthält alles, was Sie gespeichert haben.",
+    "json": "Alles herunterladen (JSON)",
+    "csvText": "Oder speichern Sie eine Tabelle nur mit Ihren Rezepten oder nur mit Ihren eigenen Rohstoffen, zum Öffnen in Excel, Numbers oder Sheets.",
+    "recipes": "Rezepte (CSV)",
+    "materials": "Rohstoffe (CSV)"
   },
   "settings": {
     "heading": "Einstellungen",
@@ -126,10 +151,16 @@
         "example": "Kegel 04, Kegel 6",
         "saved": "Gespeichert: Brennen nach Ortonkegeln."
       },
+      "sk": {
+        "label": "Nach SK-Kegeln (JIS R 8101)",
+        "example": "SK 4a, SK 8",
+        "saved": "Gespeichert: Brennen nach SK-Kegeln."
+      },
       "temperature": {
         "label": "Nach Temperatur, wie im Programm einer Ofensteuerung",
         "saved": "Gespeichert: Brennen nach Temperatur."
-      }
+      },
+      "help": "Solange Sie nichts wählen, richtet sich dies nach Ihrer Region: Ortonkegel in den USA, im Vereinigten Königreich, in Irland, Australien und Neuseeland, SK-Kegel in Japan, Temperatur im übrigen Europa."
     },
     "density": {
       "legend": "Glasurdichte",
@@ -145,7 +176,8 @@
       "pint": {
         "label": "Pint-Gewicht, Unzen je britischem Pint",
         "saved": "Gespeichert: Glasurdichte als Pint-Gewicht."
-      }
+      },
+      "help": "Wie die Anleitungen die Dicke einer Glasur angeben. Solange Sie nichts wählen, richtet sich dies nach Ihrer Region: Grad Baumé in Italien und Japan, spezifisches Gewicht anderswo."
     },
     "theme": {
       "legend": "Hell oder dunkel",
@@ -227,9 +259,19 @@
       },
       "hidden": {
         "label": "Ausgeblendet",
-        "saved": "Gespeichert: Der Hinweis wird ausgeblendet. Eine Zeile davon bleibt in den Anleitungen zur Sicherheit."
+        "saved": "Gespeichert: Der Hinweis wird ausgeblendet. Eine Zeile davon bleibt in den Anleitungen zur Sicherheit.",
+        "savedPlain": "Gespeichert: Der Hinweis wird ausgeblendet. Eine Zeile davon bleibt oben auf jeder Seite."
       },
       "help": "Der Hinweis oben auf jeder Seite, dass sie mit KI übersetzt wurde, mit einer Möglichkeit, eine Korrektur vorzuschlagen."
     }
+  },
+  "confirmEmail": {
+    "heading": "E-Mail-Adresse bestätigen",
+    "intro": "Drücken Sie die Schaltfläche, um diese Adresse zu bestätigen.",
+    "confirm": "Bestätigen",
+    "incomplete": "Diese Seite braucht den Link aus einer Bestätigungs-E-Mail, und dieser Link ist unvollständig.",
+    "account": "Ihr Konto",
+    "signIn": "Anmelden",
+    "failed": "Fehler: Die Adresse konnte nicht bestätigt werden. Bitte versuchen Sie es erneut."
   }
 }

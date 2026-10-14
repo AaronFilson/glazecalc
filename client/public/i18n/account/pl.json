@@ -11,10 +11,13 @@
     "password": "Hasło",
     "passwordHint": "Co najmniej 8 znaków.",
     "confirmation": "Potwierdzenie hasła",
+    "keepSignedIn": "Nie wylogowuj mnie na tym urządzeniu",
     "passwordMissing": "Należy wpisać hasło.",
     "createAccount": "Załóż konto",
     "signIn": "Zaloguj się",
     "haveAccount": "Konto już założone? <signin>Zaloguj się</signin>",
+    "privacy": "Adres e-mail i to, co zostanie zapisane, służą wyłącznie do prowadzenia konta i są przechowywane w Amazon Web Services w USA. <privacy>Jak Glazecalc postępuje z danymi</privacy>",
+    "dataNotice": "Glazecalc to bezpłatny projekt open source, a konta są przechowywane na serwerach w Stanach Zjednoczonych. Poradniki można czytać, a kalkulator wypróbować bez konta; można też uruchomić własną kopię. O tym, czy założyć tu konto, każdy decyduje sam, a projekt nie przyjmuje za tę decyzję żadnej odpowiedzialności. <where>Gdzie przechowywane jest konto i własna decyzja</where>",
     "forgot": "Zapomniane hasło? Zresetuj je",
     "newHere": "Pierwszy raz tutaj? <signup>Załóż bezpłatne konto</signup>",
     "signUpFailed": "Błąd: nie udało się utworzyć konta.",
@@ -61,7 +64,29 @@
     "deletePassword": "Hasło, aby potwierdzić",
     "deletePasswordMissing": "Należy wpisać hasło, aby potwierdzić.",
     "delete": "Usuń moje konto",
-    "deleteFailed": "Błąd: nie udało się usunąć konta. Proszę spróbować ponownie."
+    "deleteFailed": "Błąd: nie udało się usunąć konta. Proszę spróbować ponownie.",
+    "unverifiedHeading": "Potwierdzenie adresu e-mail",
+    "unverifiedText": "Przy zakładaniu tego konta wysłaliśmy link na adres {email}. Należy go otworzyć, aby potwierdzić, że to własny adres. Do tego czasu wysyłamy na niego wiadomości tylko na prośbę, np. przy resetowaniu hasła.",
+    "resend": "Wyślij link ponownie",
+    "resendFailed": "Błąd: nie udało się wysłać linku. Proszę spróbować ponownie.",
+    "emailHeading": "Zmiana adresu e-mail",
+    "emailText": "Wysyłamy link na nowy adres, a adres e-mail zmienia się po jego otwarciu. Powiadamiamy też obecny adres. Wszystkie urządzenia zalogowane na to konto zostaną wylogowane.",
+    "newEmail": "Nowy adres e-mail",
+    "emailPassword": "Hasło, aby potwierdzić",
+    "emailSend": "Wyślij link",
+    "emailFailed": "Błąd: nie udało się wysłać linku. Proszę spróbować ponownie.",
+    "signOutHeading": "Wylogowanie ze wszystkich urządzeń",
+    "signOutText": "Wylogowuje ze wszystkich urządzeń, również z tego. Przydaje się po utracie urządzenia lub w razie podejrzenia, że ktoś inny zna dane logowania.",
+    "signOutButton": "Wyloguj ze wszystkich urządzeń",
+    "signOutFailed": "Błąd: nie udało się wylogować. Proszę spróbować ponownie."
+  },
+  "export": {
+    "heading": "Pobieranie moich danych",
+    "text": "Kopię wszystkiego, co zawiera konto, można zapisać jako jeden plik: dane konta, ustawienia, posiadane surowce, receptury, surowce, dodatki, notatki, dzienniki wypałów, porady i kosz. Plik nie zawiera hasła. Należy go przechowywać w prywatnym miejscu, ponieważ zawiera wszystko, co zostało zapisane.",
+    "json": "Pobierz wszystko (JSON)",
+    "csvText": "Można też zapisać arkusz kalkulacyjny z samymi recepturami albo tylko z własnymi surowcami, do otwarcia w programie Excel, Numbers lub Arkusze Google.",
+    "recipes": "Receptury (CSV)",
+    "materials": "Surowce (CSV)"
   },
   "settings": {
     "heading": "Ustawienia",
@@ -126,10 +151,16 @@
         "example": "stożek 04, stożek 6",
         "saved": "Zapisano: wypał według stożków Ortona."
       },
+      "sk": {
+        "label": "Według stożków SK (JIS R 8101)",
+        "example": "SK 4a, SK 8",
+        "saved": "Zapisano: wypał według stożków SK."
+      },
       "temperature": {
         "label": "Według temperatury, jak w programie sterownika pieca",
         "saved": "Zapisano: wypał według temperatury."
-      }
+      },
+      "help": "Do czasu wyboru zależy od regionu: stożki Ortona w Stanach Zjednoczonych, Wielkiej Brytanii, Irlandii, Australii i Nowej Zelandii, stożki SK w Japonii, temperatura w pozostałych krajach Europy."
     },
     "density": {
       "legend": "Gęstość szkliwa",
@@ -145,7 +176,8 @@
       "pint": {
         "label": "Masa pinty: uncje w pincie imperialnej",
         "saved": "Zapisano: gęstość szkliwa jako masa pinty."
-      }
+      },
+      "help": "Jak poradniki podają gęstość szkliwa. Do czasu wyboru zależy od regionu: stopnie Baumé we Włoszech i w Japonii, gęstość względna w pozostałych krajach."
     },
     "theme": {
       "legend": "Jasny lub ciemny",
@@ -227,9 +259,19 @@
       },
       "hidden": {
         "label": "Ukryta",
-        "saved": "Zapisano: informacja jest ukryta. Jeden jej wiersz pozostaje w poradnikach o bezpieczeństwie."
+        "saved": "Zapisano: informacja jest ukryta. Jeden jej wiersz pozostaje w poradnikach o bezpieczeństwie.",
+        "savedPlain": "Zapisano: informacja jest ukryta. Jeden jej wiersz pozostaje na górze każdej strony."
       },
       "help": "Informacja na górze każdej strony, że została przetłumaczona przez AI, z możliwością zaproponowania poprawki."
     }
+  },
+  "confirmEmail": {
+    "heading": "Potwierdzenie adresu e-mail",
+    "intro": "Aby potwierdzić ten adres, należy nacisnąć przycisk.",
+    "confirm": "Potwierdź",
+    "incomplete": "Ta strona wymaga linku z wiadomości z potwierdzeniem, a ten link jest niekompletny.",
+    "account": "Konto",
+    "signIn": "Zaloguj się",
+    "failed": "Błąd: nie udało się potwierdzić adresu. Proszę spróbować ponownie."
   }
 }

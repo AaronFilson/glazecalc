@@ -11,10 +11,13 @@
     "password": "Parool",
     "passwordHint": "Vähemalt 8 märki.",
     "confirmation": "Parooli kinnitus",
+    "keepSignedIn": "Jäta mind selles seadmes sisselogituks",
     "passwordMissing": "Sisestage oma parool.",
     "createAccount": "Loo konto",
     "signIn": "Logi sisse",
     "haveAccount": "Teil on juba konto? <signin>Logi sisse</signin>",
+    "privacy": "Teie e-posti aadressi ja salvestatut kasutatakse ainult teie konto toimimiseks ning neid hoitakse teenuses Amazon Web Services USA-s. <privacy>Kuidas Glazecalc teie andmeid käsitleb</privacy>",
+    "dataNotice": "Glazecalc on tasuta avatud lähtekoodiga projekt ja kontosid hoitakse Ameerika Ühendriikides asuvates serverites. Juhendeid saate lugeda ja kalkulaatorit proovida ilma kontota või käitada oma koopiat. See, kas siin konto luua, on teie enda otsus ja projekt ei võta selle eest mingit vastutust. <where>Kus teie kontot hoitakse ja teie valik</where>",
     "forgot": "Unustasite parooli? Lähtestage see",
     "newHere": "Olete siin uus? <signup>Loo tasuta konto</signup>",
     "signUpFailed": "Viga: kontot ei saanud luua.",
@@ -61,7 +64,29 @@
     "deletePassword": "Teie parool kinnitamiseks",
     "deletePasswordMissing": "Kinnitamiseks sisestage oma parool.",
     "delete": "Kustuta minu konto",
-    "deleteFailed": "Viga: kontot ei saanud kustutada. Proovige uuesti."
+    "deleteFailed": "Viga: kontot ei saanud kustutada. Proovige uuesti.",
+    "unverifiedHeading": "E-posti aadressi kinnitamine",
+    "unverifiedText": "Konto loomisel saadeti aadressile {email} link. Avage see, et kinnitada, et aadress on teie oma. Seni saadetakse sellele kirju ainult siis, kui te seda palute, näiteks parooli lähtestamiseks.",
+    "resend": "Saada link uuesti",
+    "resendFailed": "Viga: linki ei saanud saata. Proovige uuesti.",
+    "emailHeading": "E-posti aadressi muutmine",
+    "emailText": "Uuele aadressile saadetakse link ja teie e-posti aadress muutub, kui selle avate. Sellest teatatakse ka teie praegusele aadressile. Kõik sellesse kontosse sisse logitud seadmed logitakse välja.",
+    "newEmail": "Uus e-post",
+    "emailPassword": "Teie parool kinnitamiseks",
+    "emailSend": "Saada link",
+    "emailFailed": "Viga: linki ei saanud saata. Proovige uuesti.",
+    "signOutHeading": "Väljalogimine kõikjal",
+    "signOutText": "Logib teid välja kõigis seadmetes, ka selles. Kasutage seda, kui kaotasite seadme või arvate, et kellelgi teisel on teie sisselogimisandmed.",
+    "signOutButton": "Logi välja kõikjal",
+    "signOutFailed": "Viga: väljalogimine ebaõnnestus. Proovige uuesti."
+  },
+  "export": {
+    "heading": "Minu andmete allalaadimine",
+    "text": "Salvestage ühe failina koopia kõigest, mis teie kontol on: teie kontoandmed, sätted, toorainete varu, retseptid, toorained, lisaained, märkmed, põletuspäevikud, nõuanded ja prügikast. Teie parooli see ei sisalda. Hoidke faili privaatses kohas, sest selles on kõik, mille olete salvestanud.",
+    "json": "Laadi kõik alla (JSON)",
+    "csvText": "Või salvestage tabelina ainult oma retseptid või ainult oma toorained, et avada need Excelis, Numbersis või Sheetsis.",
+    "recipes": "Retseptid (CSV)",
+    "materials": "Toorained (CSV)"
   },
   "settings": {
     "heading": "Sätted",
@@ -126,10 +151,16 @@
         "example": "koonus 04, koonus 6",
         "saved": "Salvestatud: põletus Ortoni koonuste järgi."
       },
+      "sk": {
+        "label": "SK-koonuste järgi (JIS R 8101)",
+        "example": "SK 4a, SK 8",
+        "saved": "Salvestatud: põletus SK-koonuste järgi."
+      },
       "temperature": {
         "label": "Temperatuuri järgi, nagu ahju kontrolleri programmis",
         "saved": "Salvestatud: põletus temperatuuri järgi."
-      }
+      },
+      "help": "Kuni te pole valinud, järgib see teie piirkonda: Ameerika Ühendriikides, Ühendkuningriigis, Iirimaal, Austraalias ja Uus-Meremaal Ortoni koonused, Jaapanis SK-koonused, mujal Euroopas temperatuur."
     },
     "density": {
       "legend": "Glasuuri tihedus",
@@ -145,7 +176,8 @@
       "pint": {
         "label": "Pindi kaal, untsides Briti pindi kohta",
         "saved": "Salvestatud: glasuuri tihedus pindi kaaluna."
-      }
+      },
+      "help": "Kuidas juhendid glasuuri paksust väljendavad. Kuni te pole valinud, järgib see teie piirkonda: Itaalias ja Jaapanis Baumé kraadid, mujal suhteline tihedus."
     },
     "theme": {
       "legend": "Hele või tume",
@@ -227,9 +259,19 @@
       },
       "hidden": {
         "label": "Peidetud",
-        "saved": "Salvestatud: teade on peidetud. Üks rida sellest jääb ohutust käsitlevatesse juhenditesse."
+        "saved": "Salvestatud: teade on peidetud. Üks rida sellest jääb ohutust käsitlevatesse juhenditesse.",
+        "savedPlain": "Salvestatud: teade on peidetud. Üks rida sellest jääb iga lehe ülaossa."
       },
       "help": "Iga lehe ülaosas olev märkus, et lehe on tõlkinud tehisintellekt, koos võimalusega soovitada parandust."
     }
+  },
+  "confirmEmail": {
+    "heading": "E-posti aadressi kinnitamine",
+    "intro": "Selle aadressi kinnitamiseks vajutage nuppu.",
+    "confirm": "Kinnita",
+    "incomplete": "Selle lehe jaoks on vaja kinnituskirjas olevat linki, kuid see link on puudulik.",
+    "account": "Teie konto",
+    "signIn": "Logi sisse",
+    "failed": "Viga: aadressi ei saanud kinnitada. Proovige uuesti."
   }
 }

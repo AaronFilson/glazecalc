@@ -3,7 +3,10 @@
     "cones": "Questa guida è mostrata per la cottura a coni, come indicato in Impostazioni.",
     "temperature": "Questa guida è mostrata per la cottura in temperatura, come indicato in Impostazioni.",
     "showTemperature": "Mostra per la cottura in temperatura",
-    "showCones": "Mostra per la cottura a coni"
+    "showCones": "Mostra per la cottura a coni",
+    "sk": "Questa guida è mostrata per la cottura a coni SK (JIS R 8101), come indicato in Impostazioni.",
+    "showSk": "Mostra per la cottura a coni SK (JIS R 8101)",
+    "showOrton": "Mostra per la cottura a coni Orton"
   },
   "notTranslated": "Questa guida non è ancora tradotta, quindi è mostrata in inglese.",
   "sectionInEnglish": "Questa sezione è cambiata dopo la traduzione, quindi è mostrata in inglese finché la traduzione non sarà aggiornata.",
@@ -86,19 +89,32 @@
     "limitIn": "Limite per",
     "label": "Limite per la silice: {region}",
     "caption": "Limite sul lavoro per la silice cristallina respirabile, come media su 8 ore: {region} (dati verificati in data {date})",
+    "captionControl": "Il riferimento per la silice cristallina respirabile nell’aria di un’area di lavoro: {region} (dati verificati in data {date})",
     "both": "Quarzo e cristobalite",
     "quartz": "Quarzo",
     "cristobalite": "Cristobalite",
     "actionLevel": "Livello d’azione",
+    "formula": "Concentrazione di controllo, dove Q è la silice libera nella polvere, in %",
+    "formulaValue": "{numerator} / ({factor}Q + 1) mg/m³",
+    "formulaLimit": "Limite per il quarzo respirabile, dove Q è la silice (SiO₂) nella polvere, in %",
+    "formulaQ": "{numerator} / (Q + {offset}) mg/m³",
+    "formulaFull": "{numerator} / ({factor}Q + {offset}) mg/m³",
+    "quartzAll": "Quarzo, per una polvere composta solo di quarzo",
+    "cristobaliteAll": "Cristobalite, per una polvere composta solo di cristobalite",
+    "allFree": "Concentrazione di controllo per una polvere composta solo di silice libera",
+    "recommended": "Raccomandato da {abbr}",
     "value": "{value} mg/m³",
     "kind": {
       "binding": "Limite vincolante.",
       "indicative": "Limite indicativo: un valore di riferimento, non un massimo di legge.",
-      "assessment": "Criterio di valutazione, non un limite vincolante."
+      "assessment": "Criterio di valutazione, non un limite vincolante.",
+      "control": "Una concentrazione di controllo (管理濃度): il riferimento per valutare l’aria di un’area di lavoro in base alle misurazioni fatte lì, non un limite a ciò che respira una singola persona."
     },
     "setBy": "Fissato da: <link>{law}</link>.",
     "lowerThanEu": "Inferiore al limite vincolante dell’UE di {value} mg/m³.",
     "sameAsEu": "Uguale al limite vincolante dell’UE.",
+    "recommendedBy": "Questo valore è raccomandato da {by} ({abbr}) nel documento <link>{title}</link>. Non è un obbligo di legge.",
+    "respirators": "Qui le maschere filtranti antipolvere si vendono per classe: {everyday} per la polvere di smalto, o {higher} per una protezione maggiore (<link>le classi ufficiali</link>).",
     "unknown": "Non abbiamo potuto confermare il limite nazionale in questo paese ({region}). Il limite vincolante dell’UE di {value} mg/m³ vale in ogni Stato membro.",
     "noData": "Non abbiamo ancora confermato il limite in questo paese ({region}).",
     "agency": "L’ente nazionale per la sicurezza sul lavoro: <link>{name}</link>.",
@@ -126,7 +142,12 @@
       "auSmall": "Tazze, mug, brocche, ciotole, teiere e altre stoviglie sotto i 1100 mL",
       "auLarge": "Gli stessi oggetti, 1100 mL o più",
       "auPlates": "Piatti, piattini e stoviglie simili",
-      "auCooking": "Recipienti da cottura"
+      "auCooking": "Recipienti da cottura",
+      "jpFlat": "Oggetti non riempibili, o con profondità inferiore a 2,5 cm",
+      "jpSmall": "Altri oggetti di capacità inferiore a 1,1 L, non da cottura",
+      "jpLarge": "Altri oggetti da 1,1 L a meno di 3 L, non da cottura",
+      "jpStorage": "Altri oggetti di 3 L o più, non da cottura",
+      "jpCooking": "Recipienti da cottura, con profondità di 2,5 cm o più"
     },
     "judged": {
       "average": "media di 6 pezzi",
@@ -135,6 +156,7 @@
     "euRules": "Qui valgono le norme dell’UE.",
     "law": "Limiti fissati da: <link>{law}</link>.",
     "inForce": "In vigore dal {date}.",
+    "atMost": "Un oggetto supera la prova se non cede più del limite: la legge dice «al massimo».",
     "unknown": "Non abbiamo ancora confermato le norme in questo paese ({region}).",
     "choosePrompt": "Scegliere il paese per vederne le norme."
   },

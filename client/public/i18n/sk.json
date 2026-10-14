@@ -1,6 +1,6 @@
 {
   "titles": {
-    "landing": "Glazecalc: bezplatná kalkulačka chémie glazúr pre keramikárov",
+    "landing": "Glazecalc: bezplatná kalkulačka glazúr na keramiku",
     "advice": "Rady ku glazúram – Glazecalc",
     "guides": "Návody – Glazecalc",
     "glazingBasics": "Glazovanie od základov – Glazecalc",
@@ -14,6 +14,7 @@
     "signup": "Vytvorenie účtu – Glazecalc",
     "forgot": "Obnovenie hesla – Glazecalc",
     "reset": "Nové heslo – Glazecalc",
+    "confirmEmail": "Potvrdenie e-mailu – Glazecalc",
     "home": "Váš dielenský zápisník – Glazecalc",
     "recipe": "Recepty – Glazecalc",
     "material": "Suroviny – Glazecalc",
@@ -74,6 +75,16 @@
   },
   "meta": {
     "description": "Zadajte recept na glazúru a uvidíte Segerov vzorec (UMF), pomer SiO₂ : Al₂O₃ a pomer tavív. Zadarmo, s otvoreným kódom, na recepty, suroviny a záznamy výpalov.",
+    "guides": "Zrozumiteľné návody pre začínajúcich keramikárov: čo je glazúra na keramiku, ako ju pripraviť a bezpečne namiešať, chrániť rodinu a vypáliť jednoduchú pec.",
+    "glazingBasics": "Z čoho je glazúra na keramiku, ako ju pec premení na sklo a čo sú kužele, frity, Segerov vzorec (UMF) a chyby glazúr. Návod pre začínajúcich keramikárov.",
+    "makingAGlaze": "Ako kúpiť, skladovať, navážiť a namiešať glazúru, nastaviť jej hustotu, vyskúšať ju na vlastnej hline a viesť si záznamy, aby ste ju vedeli pripraviť znova.",
+    "safeMixing": "Ako udržať prach z glazúr mimo pľúc a splodiny z pece mimo domova: bezpečné návyky, respirátory, upratovanie, vetranie a rizikové suroviny.",
+    "homeSafety": "Čo robiť, ak dieťa alebo zviera prehltne surovinu na glazúru, a ako pri surovinách, prachu, peci a ručne robenej keramike chrániť rodinu.",
+    "firing": "Ako vypaľovať v elektrickej peci: vybrať, umiestniť a čítať kužele a dodržať zverejnené krivky prežahu a ostrého výpalu, s tabuľkou kužeľov.",
+    "advice": "Praktické rady k miešaniu, glazovaniu a výpalu od Glazecalc a k tomu vaše vlastné rady. Zadarmo pre hrnčiarov a keramikárov.",
+    "about": "Glazecalc je bezplatná kalkulačka chémie glazúr a zápisník s otvoreným zdrojovým kódom. Pozrite sa, ako počíta Segerov vzorec (UMF) a ako je vytvorený.",
+    "privacy": "Ako Glazecalc zaobchádza s vašimi údajmi: žiadne reklamy, analytika ani sledovanie a nič sa nepredáva. Čo sa uchováva, prečo a ako uplatniť svoje práva.",
+    "signup": "Vytvorte si bezplatný účet Glazecalc a uchovávajte si recepty na glazúry, suroviny, poznámky a záznamy výpalov. Bez reklám a vaše údaje sa nikdy nepredávajú.",
     "imageAlt": "Glazecalc: glazúry nielen namiešajte, ale aj pochopte."
   },
   "notices": {
@@ -255,6 +266,8 @@
     "label": "O tomto preklade",
     "text": "Túto stránku z angličtiny preložila umelá inteligencia. Glazecalc má otvorený zdrojový kód: ak vám niečo neznie správne, navrhnite, prosím, opravu na GitHube.",
     "brief": "Z angličtiny preložila umelá inteligencia.",
+    "plain": "Túto stránku z angličtiny preložila umelá inteligencia, ktorá tento jazyk zvláda horšie ako väčšinu jazykov. Anglická stránka sa môže čítať lepšie. Glazecalc má otvorený zdrojový kód: ak vám niečo neznie správne, navrhnite, prosím, opravu na GitHube.",
+    "plainBrief": "Preložila umelá inteligencia; anglický originál sa môže čítať lepšie.",
     "suggest": "Navrhnúť opravu",
     "english": "Prečítať anglický originál",
     "close": "Zavrieť"

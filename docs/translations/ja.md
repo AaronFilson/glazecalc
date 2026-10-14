@@ -724,6 +724,13 @@ best choice with no Japanese source.
 The law's word for a piece is 試料 (a test piece) and 器具又は容器包装; the guides use the plainer 器 and もの. "per 100 g"
 keeps the symbol (「100 g あたり」), so the check finds the same figure and unit.
 
+### Search terms
+
+From research_notes/search-terms-2026-10-14.md (Japanese search suggestions, Toki City, Saga): searchers type 「ゼーゲル式 計算」, 「釉薬 調合 計算」,
+「釉薬 調合 レシピ」, 「陶芸 釉薬」 and 「釉薬計算ソフト」. The landing title is 「Glazecalc: 釉薬調合・ゼーゲル式の無料計算ツール」; the `meta.*`
+descriptions pair 陶芸 with 釉薬 where the English allows, and say 「ゼーゲル式（UMF）」 where the English says unity formula.
+Always ゼーゲル式, never ゼーゲル alone (it completes to ゼーゲルコーン, the cones). 調合 for recipe, as above.
+
 ## 3. Never translated
 
 From terms.md, unchanged:

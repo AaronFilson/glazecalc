@@ -41,21 +41,17 @@ export const MESSAGES = {
   'password-changed': 'Your password has been changed.',
   'password-reset': 'Your password has been changed. Please sign in with your new password.',
   'reset-unavailable': 'Password reset by email is not available yet.',
-  'reset-sent': (p: Params) =>
-    'If an account uses that email, we have sent it a link to reset the password. The link works for ' +
-    p.minutes +
-    ' minutes.',
+  'reset-sent':
+    'If an account uses that email, we have sent it a link to reset the password. The link works for {minutes, plural, one {# minute} other {# minutes}}.',
   'signed-out-everywhere': 'You have been signed out on every device.',
   'email-unavailable': 'Email is not available yet, so we cannot send the link.',
-  'email-change-sent': (p: Params) =>
-    'We have sent a link to the new address. Your email changes when you open it. The link works for ' +
-    p.hours +
-    ' hours.',
+  'email-change-sent':
+    'We have sent a link to the new address. Your email changes when you open it. The link works for {hours, plural, one {# hour} other {# hours}}.',
   'email-changed': 'Your email has been changed. Please sign in again with the new address.',
   'email-verified': 'Your email is confirmed.',
   'email-link-bad': 'This link is not valid or has expired. Please ask for a new one.',
-  'verification-sent': (p: Params) =>
-    'We have sent a new link to your email. The link works for ' + p.hours + ' hours.',
+  'verification-sent':
+    'We have sent a new link to your email. The link works for {hours, plural, one {# hour} other {# hours}}.',
   'already-verified': 'Your email is already confirmed.',
   'reset-link-bad': 'This reset link is not valid or has expired. Please ask for a new one.',
 

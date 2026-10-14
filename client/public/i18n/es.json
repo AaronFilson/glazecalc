@@ -1,6 +1,6 @@
 {
   "titles": {
-    "landing": "Glazecalc: calculadora gratuita de química de esmaltes para ceramistas",
+    "landing": "Glazecalc: calculadora gratuita de esmaltes cerámicos",
     "advice": "Consejos sobre esmaltes - Glazecalc",
     "guides": "Guías - Glazecalc",
     "glazingBasics": "El esmaltado desde sus fundamentos - Glazecalc",
@@ -14,6 +14,7 @@
     "signup": "Crear una cuenta - Glazecalc",
     "forgot": "Restablecer la contraseña - Glazecalc",
     "reset": "Elegir una contraseña nueva - Glazecalc",
+    "confirmEmail": "Confirmar su correo electrónico - Glazecalc",
     "home": "Su cuaderno de taller - Glazecalc",
     "recipe": "Recetas - Glazecalc",
     "material": "Materiales - Glazecalc",
@@ -73,8 +74,18 @@
     "notANumberPoint": "Introduzca un número, como {example}, con punto para los decimales."
   },
   "meta": {
-    "description": "Introduzca una receta de esmalte y vea su fórmula Seger (UMF), la relación sílice/alúmina y los fundentes. Gratuito y de código abierto, con sus recetas.",
-    "imageAlt": "Glazecalc: entienda sus esmaltes, no se limite a mezclarlos."
+    "description": "Introduzca una receta de esmalte cerámico y vea su fórmula Seger (UMF), la relación sílice/alúmina y los fundentes. Gratuito y de código abierto.",
+    "guides": "Guías sencillas para principiantes: qué es un esmalte cerámico, cómo prepararlo y mezclarlo con seguridad, proteger a su familia y cocer en un horno sencillo.",
+    "glazingBasics": "De qué se compone un esmalte cerámico, cómo lo vuelve vidrio el horno y qué son los conos, las fritas, la fórmula Seger (UMF) y los defectos del esmalte.",
+    "makingAGlaze": "Cómo comprar, guardar, pesar y mezclar un esmalte cerámico, darle la densidad justa, probarlo en su propia pasta y anotarlo todo para poder repetirlo.",
+    "safeMixing": "Cómo mantener el polvo de esmalte fuera de sus pulmones y los humos del horno fuera de casa: hábitos seguros, mascarillas, limpieza, ventilación y materiales de riesgo.",
+    "homeSafety": "Qué hacer si un niño o una mascota traga un material de esmalte, y cómo tener los materiales, el polvo, el horno y las piezas caseras seguros para su familia.",
+    "firing": "Cómo cocer en un horno eléctrico: elegir, colocar y leer los conos, y seguir curvas publicadas para bizcocho y esmalte, con una tabla de conos.",
+    "advice": "Consejos prácticos para preparar, aplicar y cocer esmaltes cerámicos, de Glazecalc, y los consejos que usted añada. Gratuito para alfareros y ceramistas.",
+    "about": "Glazecalc: calculadora y cuaderno de química de esmaltes cerámicos, gratuitos y de código abierto. Vea cómo calcula la fórmula Seger (UMF) y cómo está hecho.",
+    "privacy": "Cómo trata Glazecalc sus datos: sin anuncios, sin analítica y sin seguimiento, y nada se vende. Qué se conserva, por qué y cómo ejercer sus derechos.",
+    "signup": "Cree una cuenta gratuita de Glazecalc y guarde sus recetas de esmaltes cerámicos, materiales, notas y registros de cocción. Sin anuncios; sus datos nunca se venden.",
+    "imageAlt": "Glazecalc: entienda sus esmaltes cerámicos, no se limite a mezclarlos."
   },
   "notices": {
     "dismiss": "Cerrar",
@@ -255,6 +266,8 @@
     "label": "Acerca de esta traducción",
     "text": "Esta página se ha traducido del inglés mediante IA. Glazecalc es de código abierto: si algo no le suena bien, sugiera una corrección en GitHub.",
     "brief": "Traducido del inglés mediante IA.",
+    "plain": "Esta página se ha traducido del inglés mediante IA, que maneja este idioma peor que la mayoría. La página en inglés puede leerse mejor. Glazecalc es de código abierto: si algo no le suena bien, sugiera una corrección en GitHub.",
+    "plainBrief": "Traducido mediante IA; el inglés puede leerse mejor.",
     "suggest": "Sugerir una corrección",
     "english": "Leer el original en inglés",
     "close": "Cerrar"

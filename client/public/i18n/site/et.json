@@ -64,7 +64,115 @@
   "privacy": {
     "title": "Privaatsus",
     "lead": "Viimati uuendatud oktoobris 2026.",
-    "shortHeading": "Lühidalt"
+    "shortHeading": "Lühidalt",
+    "short": "Glazecalc säilitab ainult seda, mida on vaja teie konto toimimiseks, ja mitte midagi rohkemat. Reklaame, analüütikat ega jälgimist ei ole. Teie andmeid ei müüda kunagi ja ainus ettevõte, kes neid käsitleb, on Amazon Web Services, mis majutab saiti ja saadab selle e-kirju.",
+    "whoHeading": "Kes vastutab",
+    "who": "Glazecalc on tasuta avatud lähtekoodiga mittetulunduslik projekt, mida juhib selle omanik Aaron Filson Ameerika Ühendriikides. Tema otsustab, mis teie andmetega juhtub, seega on ta andmekaitseõiguse järgi nende „vastutav töötleja“.",
+    "contact": "Oma andmete kohta küsimiseks või mis tahes oma õiguse kasutamiseks kirjutage aadressil <mail>privacy@glazecalcapp.com</mail>. Võite ka <issues>avada GitHubis probleemiteate</issues>, kuid probleemiteated on avalikud: ärge kunagi kirjutage sinna oma e-posti aadressi ega midagi isiklikku. Enamikku oma andmetega seotud toiminguid saate ise teha oma <account>konto lehel</account>.",
+    "storedHeading": "Mida säilitatakse ja miks",
+    "storedAccount": "<b>Teie konto:</b> teie e-posti aadress ja parool, mida hoitakse ainult ühesuunalise räsina (bcrypt), mitte kunagi parooli enda kujul. Koos sellega hoitakse teie sätteid (näiteks keel, piirkond ja ühikud) ning teie toorainete varu loendit. Konto jaoks on vaja e-posti aadressi, et sisse logida ja unustatud parool lähtestada. Konto loomisel saadetakse aadressile link, et kinnitada, et see on teie oma; seni saadetakse sellele kirju ainult siis, kui te seda palute, näiteks parooli lähtestamiseks.",
+    "storedSaved": "<b>See, mida salvestate:</b> teie retseptid, toorained, lisaained, märkmed, põletuspäevikud ja nõuanded nii, nagu need kirjutasite. Neid näete ainult teie: kasutajate vahel ei jagata midagi.",
+    "storedTrial": "<b>Proovikasutus (nupp Proovi kohe):</b> ei e-posti aadressi ega parooli, ainult väljamõeldud nimi, näiteks „speckled quiet kilns“. Kui logite proovikasutuse ajal samas brauseris kontosse sisse, viiakse proovikasutuses tehtu kontosse üle.",
+    "storedResets": "<b>Parooli lähtestamise ja e-posti lingid:</b> milline konto lingi küsis, millal, aadress, kuhu saadeti aadressi kinnitamise link, ja iga lingi sõrmejälg (mitte link ise).",
+    "storedLogs": "<b>Logid:</b> veebiserver salvestab iga päringu: teie IP-aadressi, kellaaja, küsitud lehe ja teie brauseri nime. Rakendus salvestab vead koos lehega, kus need tekkisid, mitte kunagi teie e-posti aadressi.",
+    "storedDeletions": "<b>Kustutatud kontod:</b> konto ID-number ja kustutamise aeg ning mitte midagi muud, et taastatud varukoopia ei saaks kontot tagasi tuua.",
+    "storedMail": "<b>E-posti probleemid:</b> kui teie aadressile saadetud kiri tagastatakse või see märgitakse rämpspostiks, lisab Amazoni e-posti teenus aadressi loendisse, kuhu enam kirju ei saadeta, ja saadab omanikule teate, milles on see aadress.",
+    "storedInbound": "<b>Kirjad, mille saadate Glazecalcile:</b> kirju aadressile privacy@glazecalcapp.com ja Glazecalci teistele aadressidele kontrollib Amazon rämpsposti ja viiruste suhtes, neid hoitakse privaatses hoidlas ja edastatakse omaniku enda postkasti (Gmail).",
+    "basisHeading": "Õiguslik alus",
+    "basisContract": "<b>Teie konto toimimine</b>, salvestatu säilitamine ja teie kontot puudutavad e-kirjad on teenus, mida te palusite: õiguslik alus on leping teie ja Glazecalci vahel (isikuandmete kaitse üldmääruse artikli 6 lõike 1 punkt b).",
+    "basisInterests": "<b>Saidi turvalisuse ja toimimise tagamine</b>: logid, piirangud selle kohta, kui sageli saab sisselogimist proovida, varukoopiad, kustutatud kontode register ja loend aadressidest, kuhu kirju ei saadeta. Need põhinevad Glazecalci õigustatud huvil tagada turvalisus, vältida kuritarvitamist ja mitte kaotada teie tööd (artikli 6 lõike 1 punkt f). Neid säilitatakse lühikest aega ja ei kasutata millekski muuks. Võite esitada nende kohta vastuväite, kirjutades ülaltoodud aadressil.",
+    "basisNone": "Teie kohta ei tehta automaatseid otsuseid, profiilianalüüsi ei tehta ja midagi ei kasutata reklaamiks.",
+    "whereHeading": "Kus andmeid hoitakse ja kes neid käsitleb",
+    "hosting": "Glazecalc töötab platvormil Amazon Web Services (AWS): server (EC2), varukoopiad (S3) ja e-post (Simple Email Service), kõik Ameerika Ühendriikides, Oregonis (us-west-2). AWS käsitleb andmeid ainult Glazecalci nimel, oma <dpa>andmetöötlustingimuste</dpa> alusel. Keegi teine neid ei saa.",
+    "transfer": "Kui elate EL-is, Ühendkuningriigis või Šveitsis, liiguvad teie andmed Ameerika Ühendriikidesse. Amazoni sõnul on ta sertifitseeritud <dpf>EL-i ja USA andmekaitseraamistiku</dpf> ning selle Ühendkuningriigi ja Šveitsi laienduste alusel ning AWS-i tingimused sisaldavad EL-i lepingu tüüptingimusi, mis kehtiksid ka siis, kui praegu kohtus vaidlustatud raamistik tühistataks. Omanik ja AWS asuvad mõlemad USA-s ning USA õigus võib nõuda neilt andmete üleandmist.",
+    "noThirdParties": "Teie brauser ei laadi midagi teistelt veebisaitidelt: ei fonte, skripte, pilte ega analüütikat mujalt, ja saidi turvasätted blokeerivad need. GitHubi ja teiste saitide linke avatakse ainult siis, kui neil klõpsate.",
+    "choiceHeading": "Kus teie kontot hoitakse ja teie valik",
+    "choiceProject": "Glazecalc on tasuta avatud lähtekoodiga projekt. Kontosid ja kõike, mis neis on, hoitakse Ameerika Ühendriikides asuvates serverites, olenemata sellest, kus te elate, nagu eespool kirjeldatud.",
+    "choiceNoAccount": "Juhendite lugemiseks ei ole kontot vaja ja kalkulaatorit saate proovida nupuga Proovi kohe, ilma e-posti aadressi ja paroolita. Proovikasutust hoitakse samades serverites 14 päeva.",
+    "choiceOwnCopy": "Igaüks võib käitada oma Glazecalci koopiat oma arvutis või serveris: kood on <source>GitHubis</source> tasuta saadaval.",
+    "choiceDecision": "See, kas luua siin konto, teades, et seda hoitakse Ameerika Ühendriikides, on teie enda otsus.",
+    "choiceNoWarranty": "Glazecalc on esitatud sellisena, nagu see on, ilma garantiita. Selle haldajad ei võta mingit vastutust ega kohustusi teie otsuse eest konto luua ega selle eest, kus selle andmeid hoitakse.",
+    "keptHeading": "Kui kaua andmeid hoitakse",
+    "keptAccount": "<b>Teie konto ja salvestatu:</b> kuni te need kustutate. Kontosid ei eemaldata kasutamatuse tõttu.",
+    "keptTrial": "<b>Proovikasutus:</b> 14 päeva selle algusest, seejärel kustutatakse see koos kõigega, mis selles on, kui te just ei loo selle säilitamiseks kontot.",
+    "keptResets": "<b>Parooli lähtestamise ja e-posti lingid:</b> lähtestuslink kehtib 30 minutit ja selle kirje kustutatakse umbes tunni pärast; aadressi kinnitamise link kehtib ja seda säilitatakse 24 tundi.",
+    "keptBackups": "<b>Varukoopiad:</b> andmebaasi krüpteeritud koopiaid hoitakse 30 päeva ja serveri ketta koopiaid 7 päeva. Seega kaob kustutatud konto kõigist varukoopiatest 30 päeva jooksul.",
+    "keptDeletions": "<b>Kustutatud konto kirje:</b> 37 päeva, veidi kauem kui ükski varukoopia.",
+    "keptLogs": "<b>Logid:</b> veebiserveri logid 14 päeva. Rakenduse ja andmebaasi enda logisid piirab maht (kumbki 50 MB), mis vaikse saidi puhul ulatub mitme päeva taha. Serveri ketta koopiad säilitavad logisid veel kuni 7 päeva.",
+    "keptMail": "<b>Loend aadressidest, kuhu kirju ei saadeta:</b> kuni omanik aadressi eemaldab; seda teeb ta iga kuu aadressidega, mis ei kuulu enam ühelegi kontole. Tagastusteated kustutab omanik 30 päeva jooksul.",
+    "keptInbound": "<b>Kirjad, mille saadate Glazecalcile:</b> 30 päeva Amazoni hoidlas ja omaniku postkastis nii kaua, kui teile vastamiseks kulub. Teie andmeid puudutava taotluse kohta säilitatakse lühike märge (millal see saabus, mida küsiti ja mida tehti) kolm aastat.",
+    "rightsHeading": "Teie õigused",
+    "rightsIntro": "Saate oma andmeid vaadata, parandada, kaasa võtta ja kustutada. Enamikku sellest saate teha ise oma <account>konto lehel</account>:",
+    "rightsExport": "<b>Vaatamine ja kaasavõtmine:</b> jaotis Minu andmete allalaadimine salvestab kõik ühte faili (JSON) ning teie retseptid ja toorained tabelitena (CSV).",
+    "rightsCorrect": "<b>Parandamine:</b> muutke oma sätteid ja kirjeid igal ajal. E-posti aadressi muutmiseks avage uuele aadressile saadetud link; vanale aadressile, kui see oli kinnitatud, teatatakse muudatusest ja kõik seadmed logitakse välja.",
+    "rightsDelete": "<b>Kustutamine:</b> nupp Kustuta minu konto eemaldab kohe teie konto ja kõik, mille olete salvestanud, ning nupp Loobu proovikasutusest teeb sama proovikasutusega. Varukoopiates olevad koopiad kaovad 30 päeva jooksul.",
+    "rightsSignOut": "<b>Väljalogimine kõikjal:</b> lõpetab teie konto seansid kõigis seadmetes.",
+    "rightsAsk": "Kõige muu jaoks, näiteks kui soovite, et teie andmete kasutamine peatataks vea parandamise ajaks, või kui esitate vastuväite nende kasutamisele, kirjutage aadressil <mail>privacy@glazecalcapp.com</mail>. See on tasuta ja vastuse saate kuu jooksul. Teil palutakse ainult tõendada, et konto on teie oma, sisse logides või selle aadressile saadetud linki avades, mitte kunagi isikut tõendava dokumendiga.",
+    "rightsComplain": "Kui te ei ole rahul, võite esitada kaebuse andmekaitse järelevalveasutusele: EL-is <edpb>oma riigi asutusele</edpb> ja Ühendkuningriigis asutusele <ico>Information Commissioner’s Office</ico>.",
+    "storageHeading": "Küpsised ja brauseri salvestusruum",
+    "storageIntro": "Glazecalc seab ühe küpsise ja hoiab teie brauseris mõnda väikest väärtust. Igaüks neist on olemas millegi jaoks, mida te palusite: sisselogituks jäämiseks või tehtud valiku meeldejätmiseks. Ükski neist ei jälgi teid ega ole jagatud, seega ei nõua seadus eelnevat küsimist ja küpsiste teavitusriba ei ole.",
+    "storageLabel": "Küpsised ja brauseri salvestusruum",
+    "storageName": "Nimi",
+    "storagePurpose": "Mille jaoks",
+    "storageLasts": "Kui kaua püsib",
+    "storageCookie": "Küpsis",
+    "storageLocal": "Kohalik salvestusruum",
+    "storageSession": "Seansi salvestusruum",
+    "storageNote": "Neid kõiki saate igal ajal oma brauseri sätetes kustutada. Konto kustutamisel eemaldatakse sisselogimise märge ja kõik siin hoitud sätted.",
+    "keys": {
+      "cookie": {
+        "purpose": "Hoiab teid sisselogituna. Sisaldab teie sisselogimisluba. Lehe skriptid ei saa seda lugeda ning brauser saadab selle ainult Glazecalci enda serverile, HTTPS-i kaudu, ja mitte kunagi päringuga, mis algab teiselt saidilt.",
+        "lasts": "Seatakse sisselogimisel, konto loomisel või proovikasutuse alustamisel. Kehtib brauseri sulgemiseni või 7 päeva, kui märgite valiku Jäta mind selles seadmes sisselogituks; proovikasutuse puhul 14 päeva. Väljalogimine eemaldab selle."
+      },
+      "session": {
+        "purpose": "Märgib, et olete sisse logitud kontosse või proovikasutusse, et rakendus teaks serverilt küsida. Ei sisalda sisselogimisluba ega parooli.",
+        "lasts": "Kuni väljalogimiseni või seansi lõpuni."
+      },
+      "trial": {
+        "purpose": "Proovikasutuse ajal selle nimi ja lõppkuupäev, et neid kuvada.",
+        "lasts": "Kuni proovikasutus lõpeb või see säilitatakse või sellest loobutakse."
+      },
+      "settings": {
+        "purpose": "Selles brauseris muudetud säte, et järgmine leht näitaks seda kohe, enne kui server vastab. <code>theme</code> ja <code>palette</code> värvivad lehe enne selle ilmumist ning <code>language</code> avab lehed teie keeles.",
+        "lasts": "Kuni te seda muudate. Väljalogimisel taastatakse see, mille valisite väljalogituna, kui midagi valisite, ja ülejäänu eemaldatakse."
+      },
+      "visitor": {
+        "purpose": "Väljalogituna valitud keel või see, et sulgesite tõlketeate, et see taastuks väljalogimisel.",
+        "lasts": "Kuni tühjendate brauseri salvestusruumi või kustutate selles brauseris konto."
+      },
+      "region": {
+        "purpose": "Teegi loendi piirkonnafilter.",
+        "lasts": "Kuni seate filtri tagasi kõigile piirkondadele."
+      },
+      "includeAdditives": {
+        "purpose": "Kas uutes retseptides arvestatakse lisaained Segeri valemisse, nagu viimati valisite.",
+        "lasts": "Kuni tühjendate brauseri salvestusruumi."
+      },
+      "recipeHelp": {
+        "purpose": "See, et peitsite retseptilehel abiteksti.",
+        "lasts": "Kuni kuvate abiteksti uuesti."
+      },
+      "print": {
+        "purpose": "Teie viimased valikud retsepti printimisel: kogu retsept või segu ning segu kogus.",
+        "lasts": "Kuni tühjendate brauseri salvestusruumi."
+      },
+      "token": {
+        "purpose": "Glazecalci vana versiooni sisselogimisluba. Seda enam ei kirjutata.",
+        "lasts": "Eemaldatakse lehe avamisel."
+      },
+      "readEnglish": {
+        "purpose": "See, et valisite tõlgitud lehte lugeda inglise keeles, et rakendus ei suunaks teid enam teie keelde.",
+        "lasts": "Kuni sulgete vahekaardi."
+      },
+      "reloadedFor": {
+        "purpose": "Pärast saidi uue versiooni avaldamist: milline leht laaditi uuesti ja millal, et leht laaditaks uuesti kõige rohkem kord minutis.",
+        "lasts": "Kuni sulgete vahekaardi."
+      }
+    },
+    "childrenHeading": "Lapsed",
+    "children": "Glazecalc on tööriist keraamikutele ega ole suunatud lastele.",
+    "changesHeading": "Muudatused",
+    "changes": "Kui see teade muutub, muutub ka kuupäev lehe ülaosas."
   },
   "notFound": {
     "heading": "Lehte ei leitud",

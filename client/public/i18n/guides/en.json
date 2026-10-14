@@ -113,7 +113,7 @@
     "setBy": "Set by <link>{law}</link>.",
     "lowerThanEu": "Lower than the EU's binding limit of {value} mg/m³.",
     "sameAsEu": "The same as the EU's binding limit.",
-    "recommendedBy": "The {by} ({abbr}) recommends this value in its <link>{title}</link>. It is not law.",
+    "recommendedBy": "{abbr} ({by}) recommends this value in its <link>{title}</link>. It is not law.",
     "respirators": "Dust masks here are sold by class: {everyday} for glaze dust, or {higher} for more protection (<link>the official classes</link>).",
     "unknown": "We could not confirm the national limit in {region}. The EU's binding limit of {value} mg/m³ applies in every member state.",
     "noData": "We have not yet confirmed the limit in {region}.",

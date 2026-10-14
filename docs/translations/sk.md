@@ -143,8 +143,11 @@ may know:
   „Teplota v peciach sa kontroluje buď žiaromerkami alebo pyrometrami“);
 - the cones Prodeco sells as _žiaromerky_, a Czech series numbered by temperature: „Číslo žiaromerky“ 100 is
   1000 °C, 66 is 660 °C (PROD), neither Orton nor Seger;
-- Seger cones (_Segerove žiaromerky_, SK numbers such as 6a), whose numbers mean other temperatures than Orton's
-  (SK 06a about 990 °C, Orton 06 about 1013 °C at 150 °C/h).
+- Seger cones (_Segerove žiaromerky_, numbers such as 6a), whose numbers mean other temperatures than Orton's
+  (Seger 06a about 990 °C, Orton 06 about 1013 °C at 150 °C/h).
+
+The app also fires to **SK cones**, the Japanese cones to JIS R 8101: _kužele SK_ (_kužeľ SK 8_, _podľa kužeľov SK_).
+„SK“ now means only these; write it only where the English writes SK, and never call German Seger cones „SK“.
 
 So the app names its cones **_kužeľ_** (m; pl. _kužele_, gen. pl. _kužeľov_), never _žiaromerka_ with a number:
 
@@ -206,6 +209,19 @@ lower-case _smernica_ in running text), its official title „Smernica Rady z 15
 predpisov členských štátov vzťahujúcich sa na keramické predmety, ktoré prichádzajú do styku s potravinami
 (84/500/EHS)“, amended by _smernica Komisie 2005/31/ES_. The carcinogens directive is _smernica (EÚ) 2017/2398_; the
 CLP Regulation _nariadenie (ES) č. 1272/2008_. Never _EEC_, _EWG_ or _CEE_ in Slovak text.
+
+**Search terms.** Slovak searchers pair the glaze word with the ceramics word (bare _glazúra_ also means icing), and
+often type Czech spellings. The landing title is „Glazecalc: bezplatná kalkulačka glazúr na keramiku“; the page
+descriptions use _glazúra na keramiku_, _recept na glazúru_ (_recepty na glazúry_) and, where the English says unity
+formula, _Segerov vzorec (UMF)_. No Slovak searches for the Seger name were found (research note 2026-10-14).
+
+**New terms (2026-10 catch-up).** "control concentration" (Japan's 管理濃度) → _kontrolná koncentrácia_; "yardstick" →
+_meradlo_; "nominal (JIS) temperature" → _menovitá teplota (JIS)_; Kyoto cones → _kjótske kužele_; "Keep me signed in
+on this device" → _Zapamätať prihlásenie na tomto zariadení_; "Sign out everywhere" → _Odhlásiť sa všade_ (heading
+_Odhlásenie na všetkých zariadeniach_); "Download my data" → _Stiahnutie mojich údajov_; GDPR "controller" →
+_prevádzkovateľ_, "legitimate interest" → _oprávnený záujem_, "data protection authority" → _dozorný orgán pre ochranu
+údajov_, "Standard Contractual Clauses" → _štandardné zmluvné doložky_; logs → _logy_; a poison line's descriptive name
+is translated, the native name kept in brackets: _Japonské toxikologické informačné centrum, Osaka (大阪中毒110番)_.
 
 **Pitfalls in this field.**
 
@@ -412,7 +428,7 @@ KCSK „nízký výpal 1020-1080°C“, sic) and none sells Orton cones. See the
 | kiln wash                                                                   | ochranný náter (na dosky)                                                                                                | PECE „Ochranný náter BOTZ 9010“; PROD „Kaolín - náter na dosky do pece“; MPC „náter na plát“. Not washing.                                                                                                                                                                                                                                                                     |
 | stilt                                                                       | trojnožka (f; pl. trojnožky)                                                                                             | NB: „na trojnožkách alebo trojhranných lištách“. PECE also sells „prekladové krížiky“.                                                                                                                                                                                                                                                                                         |
 | cookie                                                                      | podložka z prežahnutej hliny                                                                                             | No term found. Not _keks_ or _sušienka_.                                                                                                                                                                                                                                                                                                                                       |
-| Seger cones, Staffordshire cones, Bullers rings, Holdcroft bars             | Segerove žiaromerky; staffordshirské kužele; Bullersove krúžky; Holdcroftove tyčinky                                     | Names unchanged, "rings" and "bars" translated. Write „Segerove žiaromerky“ in full; „SK“ only where the English writes SK (see Cones: „SK“ is also Slovakia).                                                                                                                                                                                                                 |
+| Seger cones, Staffordshire cones, Bullers rings, Holdcroft bars             | Segerove žiaromerky; staffordshirské kužele; Bullersove krúžky; Holdcroftove tyčinky                                     | Names unchanged, "rings" and "bars" translated. Write „Segerove žiaromerky“ in full; „SK“ only where the English writes SK, which now means the Japanese JIS cones (see Cones).                                                                                                                                                                                                |
 | Damper, Primary Air, Secondary Air, Burner, Pilots, Blower                  | Komínová klapka; Primárny vzduch; Sekundárny vzduch; Horák; Zapaľovacie plamienky; Ventilátor                            | Short column labels; standard combustion words, no potter source. "Passive Damper" → „Prídavná klapka“. "Pilots" are flames, not people.                                                                                                                                                                                                                                       |
 | Ox Probe                                                                    | Kyslíková sonda                                                                                                          | Also „lambda sonda“. No potter source.                                                                                                                                                                                                                                                                                                                                         |
 | Draw Tile                                                                   | Vyťahovaná vzorka                                                                                                        | A test piece pulled out during firing. No source.                                                                                                                                                                                                                                                                                                                              |

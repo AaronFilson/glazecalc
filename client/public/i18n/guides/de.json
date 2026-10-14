@@ -3,7 +3,10 @@
     "cones": "Diese Anleitung wird für das Brennen nach Kegeln angezeigt, wie in den Einstellungen festgelegt.",
     "temperature": "Diese Anleitung wird für das Brennen nach Temperatur angezeigt, wie in den Einstellungen festgelegt.",
     "showTemperature": "Für das Brennen nach Temperatur anzeigen",
-    "showCones": "Für das Brennen nach Kegeln anzeigen"
+    "showCones": "Für das Brennen nach Kegeln anzeigen",
+    "sk": "Diese Anleitung wird für das Brennen nach SK-Kegeln (JIS R 8101) angezeigt, wie in den Einstellungen festgelegt.",
+    "showSk": "Für das Brennen nach SK-Kegeln (JIS R 8101) anzeigen",
+    "showOrton": "Für das Brennen nach Ortonkegeln anzeigen"
   },
   "notTranslated": "Diese Anleitung ist noch nicht übersetzt und wird daher auf Englisch angezeigt.",
   "sectionInEnglish": "Dieser Abschnitt wurde seit der Übersetzung geändert und wird daher auf Englisch angezeigt, bis seine Übersetzung auf dem neuesten Stand ist.",
@@ -86,19 +89,32 @@
     "limitIn": "Grenzwert in",
     "label": "Grenzwert für Quarzstaub: {region}",
     "caption": "Arbeitsplatzgrenzwert für alveolengängigen Quarzstaub: {region}, als Mittelwert über 8 Stunden (geprüft am {date})",
+    "captionControl": "Der Maßstab für alveolengängigen Quarzstaub in der Luft eines Arbeitsbereichs in {region} (geprüft am {date})",
     "both": "Quarz und Cristobalit",
     "quartz": "Quarz",
     "cristobalite": "Cristobalit",
     "actionLevel": "Auslösewert",
+    "formula": "Kontrollkonzentration, wobei Q der Gehalt an freiem Quarz im Staub in % ist",
+    "formulaValue": "{numerator} / ({factor}Q + 1) mg/m³",
+    "formulaLimit": "Grenzwert für alveolengängigen Quarz, wobei Q der Gehalt an Kieselsäure (SiO₂) im Staub in % ist",
+    "formulaQ": "{numerator} / (Q + {offset}) mg/m³",
+    "formulaFull": "{numerator} / ({factor}Q + {offset}) mg/m³",
+    "quartzAll": "Quarz, für Staub, der ganz aus Quarz besteht",
+    "cristobaliteAll": "Cristobalit, für Staub, der ganz aus Cristobalit besteht",
+    "allFree": "Kontrollkonzentration für Staub, der ganz aus freiem Quarz besteht",
+    "recommended": "Empfohlen von {abbr}",
     "value": "{value} mg/m³",
     "kind": {
       "binding": "Ein verbindlicher Grenzwert.",
       "indicative": "Ein Richtgrenzwert: ein Orientierungswert, keine gesetzliche Obergrenze.",
-      "assessment": "Ein Beurteilungsmaßstab, kein verbindlicher Grenzwert."
+      "assessment": "Ein Beurteilungsmaßstab, kein verbindlicher Grenzwert.",
+      "control": "Eine Kontrollkonzentration (管理濃度): der Maßstab, nach dem die Luft eines Arbeitsbereichs anhand von Messungen dort beurteilt wird, kein Grenzwert für das, was eine einzelne Person einatmet."
     },
     "setBy": "Festgelegt in: <link>{law}</link>.",
     "lowerThanEu": "Niedriger als der verbindliche Grenzwert der EU von {value} mg/m³.",
     "sameAsEu": "Derselbe Wert wie der verbindliche Grenzwert der EU.",
+    "recommendedBy": "{by} ({abbr}) empfiehlt diesen Wert in der Veröffentlichung <link>{title}</link>. Er ist nicht gesetzlich verbindlich.",
+    "respirators": "Staubschutzmasken werden hier nach Klassen verkauft: {everyday} für Glasurstaub oder {higher} für mehr Schutz (<link>die amtlichen Klassen</link>).",
     "unknown": "{region}: Den nationalen Grenzwert konnten wir nicht bestätigen. Der verbindliche Grenzwert der EU von {value} mg/m³ gilt in jedem Mitgliedstaat.",
     "noData": "{region}: Den dortigen Grenzwert haben wir noch nicht bestätigt.",
     "agency": "Die nationale Stelle für Arbeitsschutz: <link>{name}</link>.",
@@ -126,7 +142,12 @@
       "auSmall": "Tassen, Becher, Krüge, Schalen, Teekannen und anderes Tafelgeschirr unter 1100 mL",
       "auLarge": "Wie oben, ab 1100 mL",
       "auPlates": "Teller, Untertassen und ähnliches Tafelgeschirr",
-      "auCooking": "Kochgeschirr"
+      "auCooking": "Kochgeschirr",
+      "jpFlat": "Nicht füllbare Gegenstände oder Gegenstände mit weniger als 2,5 cm Fülltiefe",
+      "jpSmall": "Andere Gegenstände unter 1,1 L, nicht zum Kochen",
+      "jpLarge": "Andere Gegenstände von 1,1 L bis unter 3 L, nicht zum Kochen",
+      "jpStorage": "Andere Gegenstände mit 3 L oder mehr, nicht zum Kochen",
+      "jpCooking": "Kochgeschirr mit 2,5 cm Fülltiefe oder mehr"
     },
     "judged": {
       "average": "Mittelwert aus 6 Stücken",
@@ -135,6 +156,7 @@
     "euRules": "Hier gelten die Vorschriften der EU.",
     "law": "Festgelegt in: <link>{law}</link>.",
     "inForce": "In Kraft ab dem {date}.",
+    "atMost": "Ein Gegenstand besteht die Prüfung, wenn er nicht mehr als den Grenzwert abgibt: Das Gesetz sagt „höchstens“.",
     "unknown": "{region}: Die dortigen Vorschriften haben wir noch nicht bestätigt.",
     "choosePrompt": "Wählen Sie Ihr Land, um die dortigen Vorschriften zu sehen."
   },

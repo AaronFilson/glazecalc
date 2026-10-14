@@ -3,7 +3,10 @@
     "cones": "Tässä oppaassa poltto esitetään keiloina, kuten asetuksissa on valittu.",
     "temperature": "Tässä oppaassa poltto esitetään lämpötiloina, kuten asetuksissa on valittu.",
     "showTemperature": "Näytä lämpötiloina",
-    "showCones": "Näytä keiloina"
+    "showCones": "Näytä keiloina",
+    "sk": "Tässä oppaassa poltto esitetään SK-keiloina (JIS R 8101), kuten asetuksissa on valittu.",
+    "showSk": "Näytä SK-keiloina (JIS R 8101)",
+    "showOrton": "Näytä Orton-keiloina"
   },
   "notTranslated": "Tätä opasta ei ole vielä käännetty, joten se näytetään englanniksi.",
   "sectionInEnglish": "Tämä osio on muuttunut käännöksen jälkeen, joten se näytetään englanniksi, kunnes käännös on päivitetty.",
@@ -86,19 +89,32 @@
     "limitIn": "Raja-arvo maassa:",
     "label": "Piidioksidipölyn raja-arvo maassa {region}",
     "caption": "Hengitettävän kiteisen piidioksidipölyn raja-arvo työpaikoilla maassa {region}, 8 tunnin keskiarvo (tarkistettu {date})",
+    "captionControl": "Mittapuu hengitettävälle kiteiselle piidioksidipölylle työtilan ilmassa maassa {region} (tarkistettu {date})",
     "both": "Kvartsi ja kristobaliitti",
     "quartz": "Kvartsi",
     "cristobalite": "Kristobaliitti",
     "actionLevel": "Toimenpideraja",
+    "formula": "Hallintapitoisuus, kun Q on vapaan piidioksidin osuus pölyssä, %",
+    "formulaValue": "{numerator} / ({factor}Q + 1) mg/m³",
+    "formulaLimit": "Hengitettävän kvartsin raja-arvo, kun Q on piidioksidin (SiO₂) osuus pölyssä, %",
+    "formulaQ": "{numerator} / (Q + {offset}) mg/m³",
+    "formulaFull": "{numerator} / ({factor}Q + {offset}) mg/m³",
+    "quartzAll": "Kvartsi, kun pöly on kokonaan kvartsia",
+    "cristobaliteAll": "Kristobaliitti, kun pöly on kokonaan kristobaliittia",
+    "allFree": "Hallintapitoisuus, kun pöly on kokonaan vapaata piidioksidia",
+    "recommended": "Suositus ({abbr})",
     "value": "{value} mg/m³",
     "kind": {
       "binding": "Sitova raja-arvo.",
       "indicative": "Ohjeellinen raja-arvo: suuntaa antava arvo, ei laissa säädetty yläraja.",
-      "assessment": "Arviointiperuste, ei sitova raja-arvo."
+      "assessment": "Arviointiperuste, ei sitova raja-arvo.",
+      "control": "Hallintapitoisuus (管理濃度): mittapuu, jolla työtilan ilmaa arvioidaan siellä tehtyjen mittausten perusteella, ei raja-arvo sille, mitä yksi henkilö hengittää."
     },
     "setBy": "Säädös: <link>{law}</link>.",
     "lowerThanEu": "Alempi kuin EU:n sitova raja-arvo {value} mg/m³.",
     "sameAsEu": "Sama kuin EU:n sitova raja-arvo.",
+    "recommendedBy": "{by} ({abbr}) suosittelee tätä arvoa julkaisussaan <link>{title}</link>. Arvo ei ole laissa säädetty.",
+    "respirators": "Pölysuojaimia myydään täällä luokittain: lasitepölyyn {everyday} tai paremman suojan saamiseksi {higher} (<link>viralliset luokat</link>).",
     "unknown": "Maan {region} kansallista raja-arvoa ei voitu vahvistaa. EU:n sitova raja-arvo {value} mg/m³ on voimassa kaikissa jäsenvaltioissa.",
     "noData": "Maan {region} raja-arvoa ei ole vielä vahvistettu.",
     "agency": "Kansallinen työturvallisuudesta vastaava taho: <link>{name}</link>.",
@@ -126,7 +142,12 @@
       "auSmall": "Kupit, mukit, kaadinkannut, kulhot, teekannut ja muut astiat, alle 1100 mL",
       "auLarge": "Samat, vähintään 1100 mL",
       "auPlates": "Lautaset, aluslautaset ja vastaavat astiat",
-      "auCooking": "Keittoastiat"
+      "auCooking": "Keittoastiat",
+      "jpFlat": "Esineet, joita ei voi täyttää nesteellä tai joiden syvyys on alle 2,5 cm",
+      "jpSmall": "Muut esineet, alle 1,1 L, joita ei ole tarkoitettu keittämiseen",
+      "jpLarge": "Muut esineet, vähintään 1,1 L ja alle 3 L, joita ei ole tarkoitettu keittämiseen",
+      "jpStorage": "Muut esineet, vähintään 3 L, joita ei ole tarkoitettu keittämiseen",
+      "jpCooking": "Keittoastiat, syvyys vähintään 2,5 cm"
     },
     "judged": {
       "average": "6 esineen keskiarvo",
@@ -135,6 +156,7 @@
     "euRules": "Maassa noudatetaan EU:n sääntöjä.",
     "law": "Säädös: <link>{law}</link>.",
     "inForce": "Voimassa {date} alkaen.",
+    "atMost": "Esine läpäisee testin, jos siitä siirtyy enintään raja-arvon verran: laissa sanotaan ”enintään”.",
     "unknown": "Maan {region} sääntöjä ei ole vielä vahvistettu.",
     "choosePrompt": "Valitse maa, niin sivulla näkyvät sen säännöt."
   },

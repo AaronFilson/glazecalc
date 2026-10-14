@@ -11,10 +11,13 @@
     "password": "Password",
     "passwordHint": "Almeno 8 caratteri.",
     "confirmation": "Conferma password",
+    "keepSignedIn": "Mantieni l’accesso su questo dispositivo",
     "passwordMissing": "Inserire la password.",
     "createAccount": "Crea l’account",
     "signIn": "Accedi",
     "haveAccount": "Ha già un account? <signin>Accedi</signin>",
+    "privacy": "La Sua email e ciò che salva servono solo a far funzionare il Suo account, e sono conservati presso Amazon Web Services negli Stati Uniti. <privacy>Come Glazecalc tratta i Suoi dati</privacy>",
+    "dataNotice": "Glazecalc è un progetto gratuito e open source, e gli account sono conservati su server negli Stati Uniti. Può leggere le guide e provare il calcolatore senza un account, oppure far funzionare una propria copia. La decisione di creare o no un account qui spetta a Lei, e il progetto non se ne assume alcuna responsabilità. <where>Dove è conservato il Suo account, e la Sua scelta</where>",
     "forgot": "Password dimenticata? Reimpostala",
     "newHere": "Prima volta qui? <signup>Crea un account gratuito</signup>",
     "signUpFailed": "Errore: impossibile creare l’account.",
@@ -61,7 +64,29 @@
     "deletePassword": "La Sua password, per conferma",
     "deletePasswordMissing": "Inserire la password per confermare.",
     "delete": "Elimina il mio account",
-    "deleteFailed": "Errore: impossibile eliminare l’account. Riprovare."
+    "deleteFailed": "Errore: impossibile eliminare l’account. Riprovare.",
+    "unverifiedHeading": "Confermare l’email",
+    "unverifiedText": "Quando ha creato questo account, abbiamo inviato un link a {email}. Aprirlo per confermare che l’indirizzo è Suo. Fino ad allora gli inviamo email solo su Sua richiesta, ad esempio per reimpostare la password.",
+    "resend": "Invia di nuovo il link",
+    "resendFailed": "Errore: impossibile inviare il link. Riprovare.",
+    "emailHeading": "Cambiare l’email",
+    "emailText": "Inviamo un link al nuovo indirizzo, e l’email cambia quando lo apre. Avvisiamo anche il Suo indirizzo attuale. Tutti i dispositivi connessi a questo account verranno disconnessi.",
+    "newEmail": "Nuova email",
+    "emailPassword": "La Sua password, per conferma",
+    "emailSend": "Invia il link",
+    "emailFailed": "Errore: impossibile inviare il link. Riprovare.",
+    "signOutHeading": "Uscire da tutti i dispositivi",
+    "signOutText": "Disconnette l’account da ogni dispositivo, compreso questo. Da usare se ha perso un dispositivo o pensa che qualcun altro abbia i Suoi dati di accesso.",
+    "signOutButton": "Esci da tutti i dispositivi",
+    "signOutFailed": "Errore: impossibile disconnettere l’account. Riprovare."
+  },
+  "export": {
+    "heading": "Scarica i miei dati",
+    "text": "Salvare in un unico file una copia di tutto ciò che contiene il Suo account: i dati dell’account, le impostazioni, i materiali disponibili, le ricette, i materiali, gli additivi, le note, i registri di cottura, i consigli e il cestino. La password non è inclusa. Conservare il file in un luogo riservato, perché contiene tutto ciò che ha salvato.",
+    "json": "Scarica tutto (JSON)",
+    "csvText": "Oppure salvare un foglio di calcolo con le sole ricette o i soli materiali Suoi, da aprire in Excel, Numbers o Fogli.",
+    "recipes": "Ricette (CSV)",
+    "materials": "Materiali (CSV)"
   },
   "settings": {
     "heading": "Impostazioni",
@@ -126,10 +151,16 @@
         "example": "cono 04, cono 6",
         "saved": "Salvato: cottura a coni Orton."
       },
+      "sk": {
+        "label": "A coni SK (JIS R 8101)",
+        "example": "SK 4a, SK 8",
+        "saved": "Salvato: cottura a coni SK."
+      },
       "temperature": {
         "label": "In temperatura, come nel programma di una centralina",
         "saved": "Salvato: cottura in temperatura."
-      }
+      },
+      "help": "Finché non si sceglie, segue il paese: coni Orton negli Stati Uniti, nel Regno Unito, in Irlanda, in Australia e in Nuova Zelanda, coni SK in Giappone, temperatura nel resto d’Europa."
     },
     "density": {
       "legend": "Densità dello smalto",
@@ -145,7 +176,8 @@
       "pint": {
         "label": "Peso a pinta: le once in una pinta imperiale",
         "saved": "Salvato: densità dello smalto come peso a pinta."
-      }
+      },
+      "help": "Come le guide indicano la densità di uno smalto. Finché non si sceglie, segue il paese: gradi Baumé in Italia e in Giappone, peso specifico altrove."
     },
     "theme": {
       "legend": "Chiaro o scuro",
@@ -227,9 +259,19 @@
       },
       "hidden": {
         "label": "Nascosto",
-        "saved": "Salvato: l’avviso è nascosto. Una sua riga resta nelle guide sulla sicurezza."
+        "saved": "Salvato: l’avviso è nascosto. Una sua riga resta nelle guide sulla sicurezza.",
+        "savedPlain": "Salvato: l’avviso è nascosto. Una sua riga resta in cima a ogni pagina."
       },
       "help": "La nota in cima a ogni pagina che avvisa che la pagina è stata tradotta con l’IA, con un modo per suggerire una correzione."
     }
+  },
+  "confirmEmail": {
+    "heading": "Confermare l’email",
+    "intro": "Premere il pulsante per confermare questo indirizzo.",
+    "confirm": "Conferma",
+    "incomplete": "Questa pagina richiede il link di un’email di conferma, e questo link è incompleto.",
+    "account": "Il Suo account",
+    "signIn": "Accedi",
+    "failed": "Errore: impossibile confermare l’indirizzo. Riprovare."
   }
 }

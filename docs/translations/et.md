@@ -274,7 +274,9 @@ Seger cones, and no Estonian Seger table was found. So:
 - "Orton cone" → „Ortoni koonus“; at the first mention on a page and wherever systems are compared: „Ortoni koonus 6“,
   then „koonus 6“.
 - **Never** write „Segeri koonus 6“ or „SK 6“ for an Orton number, although MTB equates the English terms. „Segeri
-  koonused“ only where the English says "Seger cones", and then they mean the SK series.
+  koonused“ only where the English says "Seger cones", and then they mean the German Seger cones only.
+- **SK cones** are the Japanese (JIS) cones: always „SK“ („SK-koonused“, „koonus SK 6“), never converted to Orton and
+  never called „Segeri koonused“. Seger means only the German cones, SK only the JIS cones.
 - Not „keegel“ (Eller's old word; today a bowling pin).
 
 ### The unity formula
@@ -412,6 +414,34 @@ kaadmiumi võimalikku eraldumist keraamilistest esemetest“).
   keraamikud“). The region label "UK" stays (2.8).
 - **Colloquial and Finnish-led forms** in shops are fine to recognise but not the app's words: „nro“, „automaatika“ for
   controller, „Reguleeraine“ (Emilie, a suspender), „pakkejalg“.
+
+### Search terms
+
+From the search-term research of 14 October 2026 (research_notes/search-terms-2026-10-14.md; confidence low): Estonian
+searchers write „glasuuri retsept“ (with „keraamika“), „Segeri valem“ and „keraamika glasuurid“. The bare „glasuur“ is
+also icing, so the page descriptions (`meta.*`) pair it with the ceramics word: „keraamika glasuur“, „glasuuri
+retseptid“, and „Segeri valem (UMF)“ where the English says unity formula. `titles.landing` stays „Glazecalc: tasuta
+glasuurikeemia kalkulaator keraamikutele“. Add no claim the English lacks.
+
+### Accounts and data protection
+
+As the Estonian text of the GDPR names them: "GDPR" → „isikuandmete kaitse üldmäärus“, "Article 6(1)(b)" → „artikli 6
+lõike 1 punkt b“, "controller" → „vastutav töötleja“, "legitimate interest" → „õigustatud huvi“, "profiling" →
+„profiilianalüüs“, "object" → „esitada vastuväide“, "data protection authority" → „andmekaitse järelevalveasutus“,
+"Standard Contractual Clauses" → „lepingu tüüptingimused“, "EU–US Data Privacy Framework" → „EL-i ja USA
+andmekaitseraamistik“. App words: "Keep me signed in on this device" → „Jäta mind selles seadmes sisselogituks“; "Sign
+out everywhere" → „Logi välja kõikjal“ (heading „Väljalogimine kõikjal“); "Download my data" → heading „Minu andmete
+allalaadimine“, button „Laadi kõik alla (JSON)“; "Confirm your email" (heading) → „E-posti aadressi kinnitamine“;
+"cookie" → „küpsis“; "local storage", "session storage" → „kohalik salvestusruum“, „seansi salvestusruum“; "hash" →
+„räsi“; "maintainers" → „haldajad“; "run your own copy" → „käitada oma koopiat“; "open an issue" → „avada
+probleemiteade“. A product name ending in a silent letter is not declined: „platvormil Amazon Web Services“.
+
+### Japan and Türkiye
+
+"control concentration" (管理濃度, Japan's silica yardstick) → „kontrollkontsentratsioon“, "yardstick" → „mõõdupuu“,
+"free silica" → „vaba ränidioksiid“; "tridymite" → „tridümiit“; "Türkiye" → „Türgi“ (the CLDR name). Poison-line names
+translate the descriptive part and keep the native name in brackets as given: „Jaapani mürgistusteabekeskus, Osaka
+(大阪中毒110番)“, „Riiklik mürgistusteabekeskus (Ulusal Zehir Danışma Merkezi, UZEM)“.
 
 ## 2. Glossary
 

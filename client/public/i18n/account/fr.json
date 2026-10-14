@@ -11,10 +11,13 @@
     "password": "Mot de passe",
     "passwordHint": "Au moins 8 caractères.",
     "confirmation": "Confirmation du mot de passe",
+    "keepSignedIn": "Garder la session ouverte sur cet appareil",
     "passwordMissing": "Saisissez votre mot de passe.",
     "createAccount": "Créer le compte",
     "signIn": "Se connecter",
     "haveAccount": "Vous avez déjà un compte ? <signin>Connectez-vous</signin>",
+    "privacy": "Votre adresse e-mail et ce que vous enregistrez servent uniquement à faire fonctionner votre compte, et sont stockés chez Amazon Web Services aux États-Unis. <privacy>Comment Glazecalc traite vos données</privacy>",
+    "dataNotice": "Glazecalc est un projet gratuit et open source, et les comptes sont conservés sur des serveurs aux États-Unis. Vous pouvez lire les guides et essayer le calculateur sans compte, ou faire fonctionner votre propre copie. Créer ou non un compte ici est une décision qui vous appartient, et le projet n’accepte aucune responsabilité à ce sujet. <where>Où votre compte est conservé, et votre choix</where>",
     "forgot": "Mot de passe oublié ? Réinitialisez-le",
     "newHere": "Première visite ? <signup>Créez un compte gratuit</signup>",
     "signUpFailed": "Erreur : impossible de créer le compte.",
@@ -61,7 +64,29 @@
     "deletePassword": "Votre mot de passe, pour confirmer",
     "deletePasswordMissing": "Saisissez votre mot de passe pour confirmer.",
     "delete": "Supprimer mon compte",
-    "deleteFailed": "Erreur : impossible de supprimer le compte. Veuillez réessayer."
+    "deleteFailed": "Erreur : impossible de supprimer le compte. Veuillez réessayer.",
+    "unverifiedHeading": "Confirmer votre adresse e-mail",
+    "unverifiedText": "Nous avons envoyé un lien à {email} lors de la création de ce compte. Ouvrez-le pour confirmer que cette adresse est bien la vôtre. D’ici là, nous n’y envoyons d’e-mails que si vous le demandez, par exemple pour réinitialiser le mot de passe.",
+    "resend": "Renvoyer le lien",
+    "resendFailed": "Erreur : impossible d’envoyer le lien. Veuillez réessayer.",
+    "emailHeading": "Changer votre adresse e-mail",
+    "emailText": "Nous envoyons un lien à la nouvelle adresse, et votre adresse e-mail change quand vous ouvrez ce lien. Nous prévenons aussi votre adresse actuelle. Tous les appareils connectés à ce compte seront déconnectés.",
+    "newEmail": "Nouvelle adresse e-mail",
+    "emailPassword": "Votre mot de passe, pour confirmer",
+    "emailSend": "Envoyer le lien",
+    "emailFailed": "Erreur : impossible d’envoyer le lien. Veuillez réessayer.",
+    "signOutHeading": "Se déconnecter partout",
+    "signOutText": "Ferme votre session sur tous les appareils, y compris celui-ci. À utiliser si vous avez perdu un appareil ou si vous pensez que quelqu’un d’autre connaît vos identifiants de connexion.",
+    "signOutButton": "Se déconnecter partout",
+    "signOutFailed": "Erreur : déconnexion impossible. Veuillez réessayer."
+  },
+  "export": {
+    "heading": "Télécharger mes données",
+    "text": "Enregistrez dans un seul fichier une copie de tout ce que contient votre compte : vos informations, paramètres, matières disponibles, recettes, matières, additifs, notes, relevés de cuisson, conseils et corbeille. Le fichier ne contient pas votre mot de passe. Gardez-le dans un endroit privé, car il contient tout ce que vous avez enregistré.",
+    "json": "Tout télécharger (JSON)",
+    "csvText": "Ou enregistrez un tableur avec seulement vos recettes, ou seulement vos propres matières, à ouvrir dans Excel, Numbers ou Sheets.",
+    "recipes": "Recettes (CSV)",
+    "materials": "Matières (CSV)"
   },
   "settings": {
     "heading": "Paramètres",
@@ -126,10 +151,16 @@
         "example": "cône 04, cône 6",
         "saved": "Enregistré : cuisson en cônes Orton."
       },
+      "sk": {
+        "label": "En cônes SK (JIS R 8101)",
+        "example": "SK 4a, SK 8",
+        "saved": "Enregistré : cuisson en cônes SK."
+      },
       "temperature": {
         "label": "Par température, comme sur le programmateur du four",
         "saved": "Enregistré : cuisson par température."
-      }
+      },
+      "help": "Tant que vous n’avez pas choisi, ce réglage suit votre région : cônes Orton aux États-Unis, au Royaume-Uni, en Irlande, en Australie et en Nouvelle-Zélande, cônes SK au Japon, température dans le reste de l’Europe."
     },
     "density": {
       "legend": "Densité de l’émail",
@@ -145,7 +176,8 @@
       "pint": {
         "label": "Poids de la pinte, en onces par pinte impériale",
         "saved": "Enregistré : densité de l’émail en poids de la pinte."
-      }
+      },
+      "help": "La façon dont les guides indiquent la consistance d’un émail. Tant que vous n’avez pas choisi, ce réglage suit votre région : degrés Baumé en Italie et au Japon, densité relative ailleurs."
     },
     "theme": {
       "legend": "Clair ou sombre",
@@ -227,9 +259,19 @@
       },
       "hidden": {
         "label": "Masqué",
-        "saved": "Enregistré : l’avis est masqué. Une ligne en reste dans les guides de sécurité."
+        "saved": "Enregistré : l’avis est masqué. Une ligne en reste dans les guides de sécurité.",
+        "savedPlain": "Enregistré : l’avis est masqué. Une ligne en reste en haut de chaque page."
       },
       "help": "La note en haut de chaque page indiquant qu’elle a été traduite par une IA, avec un moyen de proposer une correction."
     }
+  },
+  "confirmEmail": {
+    "heading": "Confirmer votre adresse e-mail",
+    "intro": "Cliquez sur le bouton pour confirmer cette adresse.",
+    "confirm": "Confirmer",
+    "incomplete": "Cette page a besoin du lien d’un e-mail de confirmation, et celui-ci est incomplet.",
+    "account": "Votre compte",
+    "signIn": "Se connecter",
+    "failed": "Erreur : impossible de confirmer l’adresse. Veuillez réessayer."
   }
 }

@@ -3,7 +3,10 @@
     "cones": "Ten poradnik jest pokazany w wersji dla wypału według stożków, zgodnie z ustawieniami konta.",
     "temperature": "Ten poradnik jest pokazany w wersji dla wypału według temperatury, zgodnie z ustawieniami konta.",
     "showTemperature": "Pokaż dla wypału według temperatury",
-    "showCones": "Pokaż dla wypału według stożków"
+    "showCones": "Pokaż dla wypału według stożków",
+    "sk": "Ten poradnik jest pokazany w wersji dla wypału według stożków SK (JIS R 8101), zgodnie z ustawieniami konta.",
+    "showSk": "Pokaż dla wypału według stożków SK (JIS R 8101)",
+    "showOrton": "Pokaż dla wypału według stożków Ortona"
   },
   "notTranslated": "Ten poradnik nie został jeszcze przetłumaczony, więc jest pokazany po angielsku.",
   "sectionInEnglish": "Ta sekcja zmieniła się od czasu tłumaczenia, więc jest pokazana po angielsku, dopóki jej tłumaczenie nie zostanie zaktualizowane.",
@@ -86,19 +89,32 @@
     "limitIn": "Limit w kraju",
     "label": "Limit dla krzemionki: {region}",
     "caption": "Limit dla respirabilnej krzemionki krystalicznej w miejscu pracy: {region} (średnia z 8 godzin, sprawdzono {date})",
+    "captionControl": "Miernik dla respirabilnej krzemionki krystalicznej w powietrzu miejsca pracy: {region} (sprawdzono {date})",
     "both": "Kwarc i krystobalit",
     "quartz": "Kwarc",
     "cristobalite": "Krystobalit",
     "actionLevel": "Próg podjęcia działań",
+    "formula": "Stężenie kontrolne, gdzie Q to zawartość wolnej krzemionki w pyle, w %",
+    "formulaValue": "{numerator} / ({factor}Q + 1) mg/m³",
+    "formulaLimit": "Limit dla respirabilnego kwarcu, gdzie Q to zawartość krzemionki (SiO₂) w pyle, w %",
+    "formulaQ": "{numerator} / (Q + {offset}) mg/m³",
+    "formulaFull": "{numerator} / ({factor}Q + {offset}) mg/m³",
+    "quartzAll": "Kwarc, dla pyłu składającego się wyłącznie z kwarcu",
+    "cristobaliteAll": "Krystobalit, dla pyłu składającego się wyłącznie z krystobalitu",
+    "allFree": "Stężenie kontrolne dla pyłu składającego się wyłącznie z wolnej krzemionki",
+    "recommended": "Wartość zalecana przez {abbr}",
     "value": "{value} mg/m³",
     "kind": {
       "binding": "Limit wiążący.",
       "indicative": "Limit indykatywny: wartość orientacyjna, a nie pułap wyznaczony prawem.",
-      "assessment": "Kryterium oceny, a nie limit wiążący."
+      "assessment": "Kryterium oceny, a nie limit wiążący.",
+      "control": "Stężenie kontrolne (管理濃度): miernik do oceny powietrza w miejscu pracy na podstawie wykonanych tam pomiarów, a nie limit tego, co wdycha pojedyncza osoba."
     },
     "setBy": "Wartość ustala <link>{law}</link>.",
     "lowerThanEu": "To mniej niż wiążący limit UE wynoszący {value} mg/m³.",
     "sameAsEu": "To tyle samo co wiążący limit UE.",
+    "recommendedBy": "{by} ({abbr}) zaleca tę wartość w dokumencie <link>{title}</link>. Nie ma ona mocy prawnej.",
+    "respirators": "Półmaski przeciwpyłowe są tu sprzedawane według klas: {everyday} do pyłu szkliw lub {higher} dla lepszej ochrony (<link>oficjalne klasy</link>).",
     "unknown": "Nie udało nam się potwierdzić limitu ustalonego w kraju: {region}. Wiążący limit UE wynoszący {value} mg/m³ obowiązuje w każdym państwie członkowskim.",
     "noData": "Nie potwierdziliśmy jeszcze limitu obowiązującego w kraju: {region}.",
     "agency": "Krajowa instytucja ds. bezpieczeństwa i higieny pracy: <link>{name}</link>.",
@@ -126,7 +142,12 @@
       "auSmall": "Filiżanki, kubki, dzbanki, miski, imbryki i inne naczynia stołowe poniżej 1100 mL",
       "auLarge": "Te same naczynia, 1100 mL lub więcej",
       "auPlates": "Talerze, spodki i podobne naczynia stołowe",
-      "auCooking": "Naczynia do gotowania"
+      "auCooking": "Naczynia do gotowania",
+      "jpFlat": "Wyroby, których nie można napełniać, lub o głębokości mniejszej niż 2,5 cm",
+      "jpSmall": "Pozostałe wyroby o pojemności poniżej 1,1 L, nie do gotowania",
+      "jpLarge": "Pozostałe wyroby o pojemności od 1,1 L do mniej niż 3 L, nie do gotowania",
+      "jpStorage": "Pozostałe wyroby o pojemności 3 L lub większej, nie do gotowania",
+      "jpCooking": "Naczynia do gotowania o głębokości 2,5 cm lub większej"
     },
     "judged": {
       "average": "średnia z 6 sztuk",
@@ -135,6 +156,7 @@
     "euRules": "Obowiązują tu przepisy UE.",
     "law": "Limity ustala <link>{law}</link>.",
     "inForce": "Obowiązują od {date}.",
+    "atMost": "Wyrób spełnia wymagania, jeśli uwalnia nie więcej, niż wynosi limit: przepisy mówią „co najwyżej”.",
     "unknown": "Nie potwierdziliśmy jeszcze przepisów obowiązujących w kraju: {region}.",
     "choosePrompt": "Wystarczy wybrać kraj, aby zobaczyć obowiązujące w nim przepisy."
   },

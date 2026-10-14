@@ -11,10 +11,13 @@
     "password": "Palavra-passe",
     "passwordHint": "Pelo menos 8 caracteres.",
     "confirmation": "Confirmar a palavra-passe",
+    "keepSignedIn": "Manter a sessão iniciada neste dispositivo",
     "passwordMissing": "Introduza a sua palavra-passe.",
     "createAccount": "Criar conta",
     "signIn": "Iniciar sessão",
     "haveAccount": "Já tem uma conta? <signin>Inicie sessão</signin>",
+    "privacy": "O seu e-mail e o que guarda são usados apenas para o funcionamento da sua conta, e ficam armazenados na Amazon Web Services, nos EUA. <privacy>Como o Glazecalc trata os seus dados</privacy>",
+    "dataNotice": "O Glazecalc é um projeto gratuito e de código aberto, e as contas são guardadas em servidores nos Estados Unidos. Pode ler os guias e experimentar a calculadora sem conta, ou executar a sua própria cópia. Criar ou não uma conta aqui é uma decisão sua, e o projeto não aceita qualquer responsabilidade por ela. <where>Onde a sua conta é guardada, e a sua escolha</where>",
     "forgot": "Esqueceu-se da palavra-passe? Reponha-a",
     "newHere": "Primeira vez aqui? <signup>Crie uma conta gratuita</signup>",
     "signUpFailed": "Erro: não foi possível criar a conta.",
@@ -61,7 +64,29 @@
     "deletePassword": "A sua palavra-passe, para confirmar",
     "deletePasswordMissing": "Introduza a sua palavra-passe para confirmar.",
     "delete": "Eliminar a minha conta",
-    "deleteFailed": "Erro: não foi possível eliminar a conta. Tente novamente."
+    "deleteFailed": "Erro: não foi possível eliminar a conta. Tente novamente.",
+    "unverifiedHeading": "Confirmar o seu e-mail",
+    "unverifiedText": "Enviámos uma ligação para {email} quando criou esta conta. Abra-a para confirmar que o endereço é seu. Até lá, só enviamos e-mails para esse endereço quando os pedir, como para repor a palavra-passe.",
+    "resend": "Enviar a ligação novamente",
+    "resendFailed": "Erro: não foi possível enviar a ligação. Tente novamente.",
+    "emailHeading": "Alterar o seu e-mail",
+    "emailText": "Enviamos uma ligação para o novo endereço, e o seu e-mail muda quando a abrir. Também avisamos o seu endereço atual. A sessão será terminada em todos os dispositivos com sessão iniciada nesta conta.",
+    "newEmail": "Novo e-mail",
+    "emailPassword": "A sua palavra-passe, para confirmar",
+    "emailSend": "Enviar a ligação",
+    "emailFailed": "Erro: não foi possível enviar a ligação. Tente novamente.",
+    "signOutHeading": "Terminar sessão em todos os dispositivos",
+    "signOutText": "Termina a sessão em todos os dispositivos, incluindo este. Use-o se perdeu um dispositivo ou se pensa que outra pessoa tem os seus dados de início de sessão.",
+    "signOutButton": "Terminar sessão em todos os dispositivos",
+    "signOutFailed": "Erro: não foi possível terminar a sessão. Tente novamente."
+  },
+  "export": {
+    "heading": "Transferir os meus dados",
+    "text": "Guarde uma cópia de tudo o que a sua conta contém num único ficheiro: os dados da conta, as definições, as matérias-primas disponíveis, as receitas, as matérias-primas, os aditivos, as notas, os registos de cozedura, os conselhos e o lixo. Não inclui a sua palavra-passe. Guarde o ficheiro num sítio privado, porque contém tudo o que guardou.",
+    "json": "Transferir tudo (JSON)",
+    "csvText": "Ou guarde uma folha de cálculo só com as suas receitas ou só com as suas próprias matérias-primas, para abrir no Excel, no Numbers ou no Sheets.",
+    "recipes": "Receitas (CSV)",
+    "materials": "Matérias-primas (CSV)"
   },
   "settings": {
     "heading": "Definições",
@@ -126,10 +151,16 @@
         "example": "cone 04, cone 6",
         "saved": "Guardado: cozedura por cones Orton."
       },
+      "sk": {
+        "label": "Por cones SK (JIS R 8101)",
+        "example": "SK 4a, SK 8",
+        "saved": "Guardado: cozedura por cones SK."
+      },
       "temperature": {
         "label": "Por temperatura, como no programa de um controlador",
         "saved": "Guardado: cozedura por temperatura."
-      }
+      },
+      "help": "Enquanto não escolher, isto segue a sua região: cones Orton nos EUA, no Reino Unido, na Irlanda, na Austrália e na Nova Zelândia, cones SK no Japão e temperatura no resto da Europa."
     },
     "density": {
       "legend": "Densidade do vidrado",
@@ -145,7 +176,8 @@
       "pint": {
         "label": "Peso por pinta: as onças numa pinta imperial",
         "saved": "Guardado: densidade do vidrado como peso por pinta."
-      }
+      },
+      "help": "Como os guias indicam a espessura de um vidrado. Enquanto não escolher, isto segue a sua região: graus Baumé em Itália e no Japão, densidade relativa nos restantes países."
     },
     "theme": {
       "legend": "Claro ou escuro",
@@ -227,9 +259,19 @@
       },
       "hidden": {
         "label": "Oculto",
-        "saved": "Guardado: o aviso fica oculto. Uma linha dele mantém-se nos guias de segurança."
+        "saved": "Guardado: o aviso fica oculto. Uma linha dele mantém-se nos guias de segurança.",
+        "savedPlain": "Guardado: o aviso fica oculto. Uma linha dele mantém-se no topo de cada página."
       },
       "help": "A nota no topo de cada página que diz que foi traduzida por IA, com uma forma de sugerir uma correção."
     }
+  },
+  "confirmEmail": {
+    "heading": "Confirmar o seu e-mail",
+    "intro": "Clique no botão para confirmar este endereço.",
+    "confirm": "Confirmar",
+    "incomplete": "Esta página precisa da ligação de um e-mail de confirmação, e esta está incompleta.",
+    "account": "A sua conta",
+    "signIn": "Iniciar sessão",
+    "failed": "Erro: não foi possível confirmar o endereço. Tente novamente."
   }
 }

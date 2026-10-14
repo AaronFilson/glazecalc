@@ -109,7 +109,8 @@ full sentence follows. Names keep their own form (Orton, Seger, Kiln-Sitter, Gla
 
 **Cones.** The app's cones are **Orton cones** (American). Danish shops sell Orton cones under that name, »Ortonkegle«
 (SN »Ortonkegle nr. 6 (1241 °C)«, CE »Ortonkegle, cone 010, 915 °C«); Danish Wikipedia still calls cones in general
-»segerkegler«, and true Seger cones (SK) are a different series whose numbers do not match Orton's. So:
+»segerkegler«, and true Seger cones are a different series whose numbers do not match Orton's. "SK" in the app now
+means the Japanese cones to JIS R 8101 (see below), never German Seger cones. So:
 
 - "cone 6" → »kegle 6«; "cone 06" → »kegle 06« (read »nul seks«; the zero stays: kegle 06 is far cooler than kegle 6).
   Not »cone 6« (as CE's product names) and not »nr. 6«.
@@ -119,6 +120,15 @@ full sentence follows. Names keep their own form (Orton, Seger, Kiln-Sitter, Gla
   til kegle 6«; "cone 5–6" → »kegle 5–6«.
 - **Never** »segerkegle 6« or »SK 6« for an Orton number. »Segerkegle« appears only where the English says "Seger
   cones".
+- **SK cones** (Japan, JIS R 8101): »SK-kegle« (en; SK-keglen, SK-kegler); the number always with »SK« before it and
+  any printed »a« kept (»SK 8«, »SK 6a«). Never turned into an Orton number, never called »segerkegle«. "To SK cones"
+  → »Efter SK-kegler«; "Kyoto cones" → »Kyoto-kegler«; "large cones", "small cones" → »store kegler«, »små kegler«;
+  "nominal (JIS) temperature" → »nominel temperatur (JIS)«; "control concentration" (管理濃度) → »kontrolkoncentration«.
+
+**Search terms** (research_notes/search-terms-2026-10-14.md). The bare »glasur« also means icing, so page descriptions
+pair it with the ceramics word: »keramisk glasur«, »glasur til keramik«; also »glasuropskrifter«, »glasurkemi« and
+»Seger-formel (UMF)« (never UMF alone). `titles.landing` stays »Glazecalc: gratis beregner til glasurkemi for
+keramikere«.
 
 **The unity formula.** »Seger-formel« (en; Seger-formlen, Seger-formler), as Danish Wikipedia writes it (»ved at
 benytte Seger-formler«), with »(UMF)« after it the first time on a page: »Seger-formel (UMF)«. After that
@@ -535,6 +545,7 @@ Danish text for signal words and hazard statements (CLP-DA).
 | Translation notice (About this translation, Suggest a correction, Read the English)    | Om denne oversættelse; Foreslå en rettelse; Læs den engelske tekst                                              |                                                                                                                                                                                                                                                                                                                                                        |
 | Trash                                                                                  | papirkurv (en)                                                                                                  | As in Danish Windows: »Papirkurv«.                                                                                                                                                                                                                                                                                                                     |
 | Remove (Yes, remove), Delete my account                                                | Fjern (Ja, fjern); Slet min konto                                                                               | "This can't be undone." → »Det kan ikke fortrydes.«                                                                                                                                                                                                                                                                                                    |
+| Keep me signed in, Sign out everywhere, Download my data, Confirm your email           | Forbliv logget ind på denne enhed; Log ud overalt; Download mine data; Bekræft e-mailadressen                   | Privacy page: controller »dataansvarlig«, data processing terms »vilkår for databehandling«, Standard Contractual Clauses »standardkontraktbestemmelser«, "GDPR Article 6(1)(b)" → »artikel 6, stk. 1, litra b«, analytics »webanalyse«, local/session storage »lokal lagring«/»sessionslagring«.                                                      |
 
 ### 2.9 Where the potter works
 

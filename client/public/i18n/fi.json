@@ -14,6 +14,7 @@
     "signup": "Tilin luominen – Glazecalc",
     "forgot": "Salasanan palauttaminen – Glazecalc",
     "reset": "Uusi salasana – Glazecalc",
+    "confirmEmail": "Sähköpostiosoitteen vahvistaminen – Glazecalc",
     "home": "Pajan muistikirja – Glazecalc",
     "recipe": "Reseptit – Glazecalc",
     "material": "Raaka-aineet – Glazecalc",
@@ -74,6 +75,16 @@
   },
   "meta": {
     "description": "Kirjoita lasiteresepti ja näe Segerin kaava (UMF), SiO₂:Al₂O₃-suhde ja sulattajien suhde. Ilmainen ja avoin koodi: reseptit, raaka-aineet ja polttopäiväkirjat.",
+    "guides": "Selkeät oppaat aloittelijoille: mikä keramiikan lasite on, miten se tehdään ja sekoitetaan turvallisesti, miten perhe suojataan ja miten uunia poltetaan.",
+    "glazingBasics": "Mistä keramiikan lasite koostuu, miten uuni muuttaa sen lasiksi ja mitä keilat, fritit, Segerin kaava (UMF) ja lasitevirheet ovat. Opas aloittelijoille.",
+    "makingAGlaze": "Lasitteen ostaminen, säilyttäminen, punnitseminen ja sekoittaminen, oikea paksuus, kokeilu omalla savella ja muistiinpanot, jotta lasitteen voi tehdä uudelleen.",
+    "safeMixing": "Miten lasitepöly pysyy poissa keuhkoista ja uunin savukaasut kodista: turvalliset tavat, hengityksensuojaimet, siivous, ilmanvaihto ja varovaisuutta vaativat aineet.",
+    "homeSafety": "Mitä tehdä, jos lapsi tai lemmikki nielee lasiteraaka-ainetta, ja miten raaka-aineet, pöly, uuni ja käsintehdyt esineet pidetään perheelle turvallisina.",
+    "firing": "Miten sähköuunilla poltetaan: keilojen valinta, asettaminen ja lukeminen sekä julkaistut polttokäyrät raakapolttoon ja lasituspolttoon. Mukana keilataulukko.",
+    "advice": "Käytännön vinkkejä lasitteen sekoittamiseen, lasittamiseen ja polttamiseen Glazecalcilta sekä omat neuvot. Ilmainen keraamikoille ja savenvalajille.",
+    "about": "Glazecalc on ilmainen, avoimen lähdekoodin lasitekemian laskin ja muistikirja. Katso, miten se laskee Segerin kaavan (UMF) ja miten se on rakennettu.",
+    "privacy": "Miten Glazecalc käsittelee tietoja: ei mainoksia, ei analytiikkaa eikä seurantaa, eikä mitään myydä. Mitä säilytetään, miksi ja miten oikeuksia käytetään.",
+    "signup": "Luo ilmainen Glazecalc-tili ja säilytä lasitereseptit, raaka-aineet, muistiinpanot ja polttopäiväkirjat. Ei mainoksia, eikä tietoja koskaan myydä.",
     "imageAlt": "Glazecalc: ymmärrä lasitteita, älä vain sekoita niitä."
   },
   "notices": {
@@ -255,6 +266,8 @@
     "label": "Tietoja käännöksestä",
     "text": "Tämä sivu on käännetty englannista tekoälyllä. Glazecalc on avointa lähdekoodia: jos jokin kuulostaa väärältä, ehdota korjausta GitHubissa.",
     "brief": "Käännetty englannista tekoälyllä.",
+    "plain": "Tämä sivu on käännetty englannista tekoälyllä, joka hallitsee tämän kielen heikommin kuin useimmat muut kielet. Englanninkielinen sivu voi olla luettavampi. Glazecalc on avointa lähdekoodia: jos jokin kuulostaa väärältä, ehdota korjausta GitHubissa.",
+    "plainBrief": "Käännetty tekoälyllä; englanninkielinen sivu voi olla luettavampi.",
     "suggest": "Ehdota korjausta",
     "english": "Lue englanninkielinen alkuteksti",
     "close": "Sulje"

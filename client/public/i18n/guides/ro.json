@@ -3,7 +3,10 @@
     "cones": "Acest ghid este afișat pentru arderea la conuri, așa cum este stabilit în setări.",
     "temperature": "Acest ghid este afișat pentru arderea după temperatură, așa cum este stabilit în setări.",
     "showTemperature": "Afișați pentru arderea după temperatură",
-    "showCones": "Afișați pentru arderea la conuri"
+    "showCones": "Afișați pentru arderea la conuri",
+    "sk": "Acest ghid este afișat pentru arderea la conuri SK (JIS R 8101), așa cum este stabilit în setări.",
+    "showSk": "Afișați pentru arderea la conuri SK (JIS R 8101)",
+    "showOrton": "Afișați pentru arderea la conuri Orton"
   },
   "notTranslated": "Acest ghid nu este încă tradus, așa că este afișat în engleză.",
   "sectionInEnglish": "Această secțiune s-a modificat de când a fost tradusă, așa că este afișată în engleză până la actualizarea traducerii.",
@@ -86,19 +89,32 @@
     "limitIn": "Valoarea-limită în",
     "label": "Valoarea-limită pentru silice în {region}",
     "caption": "Valoarea-limită de expunere profesională pentru pulberea respirabilă de silice cristalină în {region}, ca medie pe 8 ore (verificată la {date})",
+    "captionControl": "Reperul pentru pulberea respirabilă de silice cristalină din aerul unei zone de lucru în {region} (verificat la {date})",
     "both": "Cuarț și cristobalit",
     "quartz": "Cuarț",
     "cristobalite": "Cristobalit",
     "actionLevel": "Nivel de acțiune",
+    "formula": "Concentrația de control, unde Q este silicea liberă din pulbere, în %",
+    "formulaValue": "{numerator} / ({factor}Q + 1) mg/m³",
+    "formulaLimit": "Valoarea-limită pentru cuarțul respirabil, unde Q este silicea (SiO₂) din pulbere, în %",
+    "formulaQ": "{numerator} / (Q + {offset}) mg/m³",
+    "formulaFull": "{numerator} / ({factor}Q + {offset}) mg/m³",
+    "quartzAll": "Cuarț, pentru pulberea care este în întregime cuarț",
+    "cristobaliteAll": "Cristobalit, pentru pulberea care este în întregime cristobalit",
+    "allFree": "Concentrația de control pentru pulberea care este în întregime silice liberă",
+    "recommended": "Valoare recomandată de {abbr}",
     "value": "{value} mg/m³",
     "kind": {
       "binding": "O valoare-limită obligatorie.",
       "indicative": "O valoare-limită indicativă: o valoare orientativă, nu un plafon legal.",
-      "assessment": "Un criteriu de evaluare, nu o valoare-limită obligatorie."
+      "assessment": "Un criteriu de evaluare, nu o valoare-limită obligatorie.",
+      "control": "O concentrație de control (管理濃度): reperul după care se judecă aerul dintr-o zonă de lucru pe baza măsurătorilor făcute acolo, nu o limită pentru ce inspiră o persoană."
     },
     "setBy": "Stabilită prin <link>{law}</link>.",
     "lowerThanEu": "Mai mică decât valoarea-limită obligatorie a UE, de {value} mg/m³.",
     "sameAsEu": "Aceeași cu valoarea-limită obligatorie a UE.",
+    "recommendedBy": "{by} ({abbr}) recomandă această valoare în <link>{title}</link>. Nu are putere de lege.",
+    "respirators": "Aici, măștile de protecție împotriva prafului se vând pe clase: {everyday} pentru praful de glazură sau {higher} pentru o protecție mai mare (<link>clasele oficiale</link>).",
     "unknown": "Nu am putut confirma valoarea-limită națională în {region}. Valoarea-limită obligatorie a UE, de {value} mg/m³, se aplică în fiecare stat membru.",
     "noData": "Nu am confirmat încă valoarea-limită în {region}.",
     "agency": "Organismul național pentru securitate și sănătate în muncă: <link>{name}</link>.",
@@ -126,7 +142,12 @@
       "auSmall": "Cești, căni, carafe, boluri, ceainice și alte obiecte de veselă sub 1100 mL",
       "auLarge": "Aceleași, de 1100 mL sau mai mult",
       "auPlates": "Farfurii, farfurioare și obiecte de veselă similare",
-      "auCooking": "Vase de gătit"
+      "auCooking": "Vase de gătit",
+      "jpFlat": "Obiecte care nu pot fi umplute sau cu adâncimea interioară mai mică de 2,5 cm",
+      "jpSmall": "Alte obiecte sub 1,1 L, care nu sunt pentru gătit",
+      "jpLarge": "Alte obiecte de la 1,1 L până la mai puțin de 3 L, care nu sunt pentru gătit",
+      "jpStorage": "Alte obiecte de 3 L sau mai mult, care nu sunt pentru gătit",
+      "jpCooking": "Vase de gătit, cu adâncimea de 2,5 cm sau mai mult"
     },
     "judged": {
       "average": "media a 6 obiecte",
@@ -135,6 +156,7 @@
     "euRules": "Aici se aplică reglementările UE.",
     "law": "Stabilite prin <link>{law}</link>.",
     "inForce": "În vigoare de la {date}.",
+    "atMost": "Un obiect trece testul dacă nu cedează mai mult decât limita: legea spune „cel mult”.",
     "unknown": "Nu am confirmat încă reglementările din {region}.",
     "choosePrompt": "Alegeți țara pentru a vedea reglementările de acolo."
   },

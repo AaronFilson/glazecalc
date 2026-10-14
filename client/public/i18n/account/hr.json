@@ -11,10 +11,13 @@
     "password": "Lozinka",
     "passwordHint": "Najmanje 8 znakova.",
     "confirmation": "Potvrda lozinke",
+    "keepSignedIn": "Zadrži prijavu na ovom uređaju",
     "passwordMissing": "Unesite lozinku.",
     "createAccount": "Stvori račun",
     "signIn": "Prijavi se",
     "haveAccount": "Već imate račun? <signin>Prijavite se</signin>",
+    "privacy": "Vaša adresa e-pošte i ono što spremite koriste se samo za vođenje vašeg računa i pohranjeni su kod tvrtke Amazon Web Services u SAD-u. <privacy>Kako Glazecalc postupa s vašim podacima</privacy>",
+    "dataNotice": "Glazecalc je besplatan projekt otvorenog koda, a računi se čuvaju na poslužiteljima u Sjedinjenim Američkim Državama. Vodiče možete čitati i kalkulator isprobati bez računa ili pokrenuti vlastitu kopiju. Hoćete li ovdje stvoriti račun, vaša je vlastita odluka, a projekt za nju ne preuzima nikakvu odgovornost. <where>Gdje se čuva vaš račun i vaš izbor</where>",
     "forgot": "Zaboravili ste lozinku? Postavite novu",
     "newHere": "Prvi put ste ovdje? <signup>Stvorite besplatan račun</signup>",
     "signUpFailed": "Pogreška: račun nije moguće stvoriti.",
@@ -61,7 +64,29 @@
     "deletePassword": "Vaša lozinka, za potvrdu",
     "deletePasswordMissing": "Unesite lozinku za potvrdu.",
     "delete": "Izbriši moj račun",
-    "deleteFailed": "Pogreška: račun nije moguće izbrisati. Pokušajte ponovno."
+    "deleteFailed": "Pogreška: račun nije moguće izbrisati. Pokušajte ponovno.",
+    "unverifiedHeading": "Potvrdite adresu e-pošte",
+    "unverifiedText": "Kad ste stvorili ovaj račun, poslali smo poveznicu na adresu {email}. Otvorite je da biste potvrdili da je adresa vaša. Do tada na nju šaljemo poštu samo kad to zatražite, primjerice za ponovno postavljanje lozinke.",
+    "resend": "Pošalji poveznicu ponovno",
+    "resendFailed": "Pogreška: poveznicu nije moguće poslati. Pokušajte ponovno.",
+    "emailHeading": "Promjena adrese e-pošte",
+    "emailText": "Poveznicu šaljemo na novu adresu, a vaša se adresa e-pošte mijenja kad je otvorite. O tome obavještavamo i vašu trenutačnu adresu. Svi uređaji prijavljeni u ovaj račun bit će odjavljeni.",
+    "newEmail": "Nova adresa e-pošte",
+    "emailPassword": "Vaša lozinka, za potvrdu",
+    "emailSend": "Pošalji poveznicu",
+    "emailFailed": "Pogreška: poveznicu nije moguće poslati. Pokušajte ponovno.",
+    "signOutHeading": "Odjava sa svih uređaja",
+    "signOutText": "Odjavljuje vas na svim uređajima, uključujući ovaj. Koristite je ako ste izgubili uređaj ili mislite da netko drugi ima vaše podatke za prijavu.",
+    "signOutButton": "Odjavi se sa svih uređaja",
+    "signOutFailed": "Pogreška: odjava nije uspjela. Pokušajte ponovno."
+  },
+  "export": {
+    "heading": "Preuzimanje mojih podataka",
+    "text": "Spremite kopiju svega što vaš račun sadrži u jednu datoteku: podatke o računu, postavke, zalihu, recepte, sirovine, dodatke, bilješke, zapisnike pečenja, savjete i koš za smeće. Datoteka ne sadrži vašu lozinku. Čuvajte je na privatnom mjestu jer sadrži sve što ste spremili.",
+    "json": "Preuzmi sve (JSON)",
+    "csvText": "Ili spremite tablicu samo s receptima ili samo s vlastitim sirovinama, da biste je otvorili u programu Excel, Numbers ili Sheets.",
+    "recipes": "Recepti (CSV)",
+    "materials": "Sirovine (CSV)"
   },
   "settings": {
     "heading": "Postavke",
@@ -126,10 +151,16 @@
         "example": "stožac 04, stožac 6",
         "saved": "Spremljeno: pečenje na Ortonove stošce."
       },
+      "sk": {
+        "label": "Na stošce SK (JIS R 8101)",
+        "example": "SK 4a, SK 8",
+        "saved": "Spremljeno: pečenje na stošce SK."
+      },
       "temperature": {
         "label": "Po temperaturi, kao u programu regulatora peći",
         "saved": "Spremljeno: pečenje po temperaturi."
-      }
+      },
+      "help": "Dok ne odaberete, ovo prati vašu regiju: Ortonovi stošci u SAD-u, Ujedinjenom Kraljevstvu, Irskoj, Australiji i na Novom Zelandu, stošci SK u Japanu, temperatura u ostatku Europe."
     },
     "density": {
       "legend": "Gustoća glazure",
@@ -145,7 +176,8 @@
       "pint": {
         "label": "Masa pinte, unce u britanskoj pinti",
         "saved": "Spremljeno: gustoća glazure kao masa pinte."
-      }
+      },
+      "help": "Kako vodiči iskazuju gustoću glazure. Dok ne odaberete, ovo prati vašu regiju: stupnjevi Baumé u Italiji i Japanu, relativna gustoća drugdje."
     },
     "theme": {
       "legend": "Svijetlo ili tamno",
@@ -227,9 +259,19 @@
       },
       "hidden": {
         "label": "Skrivena",
-        "saved": "Spremljeno: obavijest je skrivena. Jedan njezin redak ostaje u vodičima o sigurnosti."
+        "saved": "Spremljeno: obavijest je skrivena. Jedan njezin redak ostaje u vodičima o sigurnosti.",
+        "savedPlain": "Spremljeno: obavijest je skrivena. Jedan njezin redak ostaje na vrhu svake stranice."
       },
       "help": "Napomena na vrhu svake stranice da ju je prevela umjetna inteligencija, s mogućnošću da predložite ispravak."
     }
+  },
+  "confirmEmail": {
+    "heading": "Potvrdite adresu e-pošte",
+    "intro": "Pritisnite gumb da biste potvrdili ovu adresu.",
+    "confirm": "Potvrdi",
+    "incomplete": "Za ovu stranicu potrebna je poveznica iz e-poruke za potvrdu, a ova je nepotpuna.",
+    "account": "Vaš račun",
+    "signIn": "Prijavi se",
+    "failed": "Pogreška: adresu nije moguće potvrditi. Pokušajte ponovno."
   }
 }

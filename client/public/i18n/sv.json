@@ -1,6 +1,6 @@
 {
   "titles": {
-    "landing": "Glazecalc: en gratis kalkylator för glasyrkemi, för keramiker",
+    "landing": "Glazecalc: gratis glasyrberäkning för keramiker",
     "advice": "Glasyrråd - Glazecalc",
     "guides": "Guider - Glazecalc",
     "glazingBasics": "Glasering från grunden - Glazecalc",
@@ -14,6 +14,7 @@
     "signup": "Skapa ett konto - Glazecalc",
     "forgot": "Återställ lösenordet - Glazecalc",
     "reset": "Välj ett nytt lösenord - Glazecalc",
+    "confirmEmail": "Bekräfta e-postadressen - Glazecalc",
     "home": "Verkstadens anteckningsbok - Glazecalc",
     "recipe": "Recept - Glazecalc",
     "material": "Råvaror - Glazecalc",
@@ -74,6 +75,16 @@
   },
   "meta": {
     "description": "Ange ett glasyrrecept och se Segerformeln (UMF), förhållandet SiO₂ : Al₂O₃ och flussmedelsbalansen. Gratis, öppen källkod, för recept, råvaror och brännloggar.",
+    "guides": "Lättlästa guider för nya keramiker: vad en keramikglasyr är, hur den görs och blandas säkert, hur familjen skyddas och hur en enkel keramikugn bränns.",
+    "glazingBasics": "Vad en keramikglasyr består av, hur ugnen gör den till glas och vad käglor, frittor, Segerformeln (UMF) och glasyrfel betyder. En guide för nya keramiker.",
+    "makingAGlaze": "Köpa, förvara, väga och blanda en glasyr, få rätt tjocklek, prova den på den egna leran och anteckna glasyrreceptet så att den går att göra igen.",
+    "safeMixing": "Håll glasyrdamm borta från lungorna och ugnsgaser borta från hemmet: säkra vanor, andningsskydd, städning, ventilation och riskabla råvaror.",
+    "homeSafety": "Vad som ska göras om ett barn eller ett husdjur sväljer en glasyrråvara, och hur råvaror, damm, ugnen och handgjort gods hålls säkra runt familjen.",
+    "firing": "Bränna en elugn: välja, placera och läsa av käglor och följa publicerade brännprogram för skröjbränning och glasyrbränning, med en kägeltabell.",
+    "advice": "Praktiska tips om att blanda, glasera och bränna, från Glazecalc, plus egna råd. Gratis för keramiker och krukmakare.",
+    "about": "Glazecalc är en gratis kalkylator och anteckningsbok för glasyrkemi, med öppen källkod. Se hur den räknar fram Segerformeln (UMF) och hur den är byggd.",
+    "privacy": "Så hanterar Glazecalc dina uppgifter: inga annonser, ingen analys och ingen spårning, och inget säljs. Vad som sparas, varför och hur du använder dina rättigheter.",
+    "signup": "Skapa ett gratis konto på Glazecalc och spara glasyrrecept, råvaror, anteckningar och brännloggar. Inga annonser, och uppgifterna säljs aldrig.",
     "imageAlt": "Glazecalc: förstå glasyrerna, inte bara blanda dem."
   },
   "notices": {

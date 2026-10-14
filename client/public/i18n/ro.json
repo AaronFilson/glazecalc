@@ -1,6 +1,6 @@
 {
   "titles": {
-    "landing": "Glazecalc: calculator gratuit de chimie a glazurilor pentru ceramiști",
+    "landing": "Glazecalc: calculator gratuit pentru glazuri ceramice",
     "advice": "Sfaturi despre glazuri – Glazecalc",
     "guides": "Ghiduri – Glazecalc",
     "glazingBasics": "Bazele glazurării – Glazecalc",
@@ -14,6 +14,7 @@
     "signup": "Creați un cont – Glazecalc",
     "forgot": "Resetați parola – Glazecalc",
     "reset": "Alegeți o parolă nouă – Glazecalc",
+    "confirmEmail": "Confirmați adresa de e-mail – Glazecalc",
     "home": "Caietul de atelier – Glazecalc",
     "recipe": "Rețete – Glazecalc",
     "material": "Materii prime – Glazecalc",
@@ -74,6 +75,16 @@
   },
   "meta": {
     "description": "Introduceți o rețetă și vedeți formula Seger (UMF), raportul silice–alumină și al fondanților. Gratuit, open source: rețete, materii prime, jurnale de ardere.",
+    "guides": "Ghiduri simple pentru ceramiștii începători: ce este o glazură ceramică, cum o preparați în siguranță, cum vă protejați familia și cum ardeți într-un cuptor simplu.",
+    "glazingBasics": "Din ce este făcută o glazură ceramică, cum devine sticlă în cuptor și ce înseamnă conurile, fritele, formula Seger (UMF) și defectele glazurii. Ghid pentru începători.",
+    "makingAGlaze": "Cum cumpărați, păstrați, cântăriți și amestecați o glazură ceramică, îi potriviți densitatea, o testați pe argila proprie și notați totul ca s-o puteți reface.",
+    "safeMixing": "Cum feriți plămânii de praful de glazură și casa de gazele cuptorului: obiceiuri sigure, măști de protecție respiratorie, curățare, ventilație, materii prime riscante.",
+    "homeSafety": "Ce faceți dacă un copil sau un animal înghite o materie primă pentru glazuri și cum feriți familia de riscurile materiilor prime, prafului, cuptorului și pieselor făcute de mână.",
+    "firing": "Cum ardeți într-un cuptor electric: alegerea, așezarea și citirea conurilor, programe publicate pentru arderea biscuit și arderea de glazură, cu tabelul conurilor.",
+    "advice": "Sfaturi practice despre prepararea glazurilor ceramice, glazurare și ardere, de la Glazecalc, plus propriile sfaturi. Gratuit, pentru olari și ceramiști.",
+    "about": "Glazecalc: calculator gratuit și open source de chimie a glazurilor ceramice, cu caiet de atelier. Aflați cum calculează formula Seger (UMF) și cum este construit.",
+    "privacy": "Cum tratează Glazecalc datele: fără reclame, fără instrumente de analiză, fără urmărire și nimic nu se vinde. Ce se păstrează, de ce și cum vă exercitați drepturile.",
+    "signup": "Creați un cont Glazecalc gratuit pentru rețetele de glazură ceramică, materiile prime, notițele și jurnalele de ardere. Fără reclame; datele nu se vând niciodată.",
     "imageAlt": "Glazecalc: înțelegeți glazurile, nu doar amestecați-le."
   },
   "notices": {
@@ -255,6 +266,8 @@
     "label": "Despre această traducere",
     "text": "Această pagină a fost tradusă din engleză de inteligența artificială. Glazecalc este open source: dacă ceva nu sună bine, vă rugăm să sugerați o corectură pe GitHub.",
     "brief": "Pagină tradusă din engleză de inteligența artificială.",
+    "plain": "Această pagină a fost tradusă din engleză de inteligența artificială, care se descurcă mai slab cu această limbă decât cu majoritatea limbilor. Pagina în engleză se poate citi mai bine. Glazecalc este open source: dacă ceva nu sună bine, vă rugăm să sugerați o corectură pe GitHub.",
+    "plainBrief": "Tradusă de inteligența artificială; originalul în engleză se poate citi mai bine.",
     "suggest": "Sugerați o corectură",
     "english": "Citiți originalul în engleză",
     "close": "Închideți"

@@ -3,7 +3,10 @@
     "cones": "Deze gids wordt weergegeven voor stoken op kegels, zoals ingesteld in Instellingen.",
     "temperature": "Deze gids wordt weergegeven voor stoken op temperatuur, zoals ingesteld in Instellingen.",
     "showTemperature": "Weergeven voor stoken op temperatuur",
-    "showCones": "Weergeven voor stoken op kegels"
+    "showCones": "Weergeven voor stoken op kegels",
+    "sk": "Deze gids wordt weergegeven voor stoken op SK-kegels (JIS R 8101), zoals ingesteld in Instellingen.",
+    "showSk": "Weergeven voor stoken op SK-kegels (JIS R 8101)",
+    "showOrton": "Weergeven voor stoken op Ortonkegels"
   },
   "notTranslated": "Deze gids is nog niet vertaald en wordt daarom in het Engels weergegeven.",
   "sectionInEnglish": "Dit gedeelte is gewijzigd sinds het werd vertaald en wordt daarom in het Engels weergegeven tot de vertaling is bijgewerkt.",
@@ -86,19 +89,32 @@
     "limitIn": "Grenswaarde in",
     "label": "De grenswaarde voor silica: {region}",
     "caption": "De grenswaarde op de werkplek voor respirabel kristallijn silica, als gemiddelde over 8 uur: {region} (gecontroleerd op {date})",
+    "captionControl": "De maatstaf voor respirabel kristallijn silica in de lucht van een werkruimte: {region} (gecontroleerd op {date})",
     "both": "Kwarts en cristobaliet",
     "quartz": "Kwarts",
     "cristobalite": "Cristobaliet",
     "actionLevel": "Actieniveau",
+    "formula": "Beheersconcentratie, waarbij Q het gehalte aan vrij silica in het stof is, in %",
+    "formulaValue": "{numerator} / ({factor}Q + 1) mg/m³",
+    "formulaLimit": "Grenswaarde voor respirabel kwarts, waarbij Q het gehalte aan silica (SiO₂) in het stof is, in %",
+    "formulaQ": "{numerator} / (Q + {offset}) mg/m³",
+    "formulaFull": "{numerator} / ({factor}Q + {offset}) mg/m³",
+    "quartzAll": "Kwarts, voor stof dat volledig uit kwarts bestaat",
+    "cristobaliteAll": "Cristobaliet, voor stof dat volledig uit cristobaliet bestaat",
+    "allFree": "Beheersconcentratie voor stof dat volledig uit vrij silica bestaat",
+    "recommended": "Aanbevolen door {abbr}",
     "value": "{value} mg/m³",
     "kind": {
       "binding": "Een bindende grenswaarde.",
       "indicative": "Een indicatieve grenswaarde: een richtwaarde, geen wettelijk maximum.",
-      "assessment": "Een beoordelingsmaatstaf, geen bindende grenswaarde."
+      "assessment": "Een beoordelingsmaatstaf, geen bindende grenswaarde.",
+      "control": "Een beheersconcentratie (管理濃度): de maatstaf om de lucht van een werkruimte te beoordelen aan de hand van metingen daar, geen grens voor wat één persoon inademt."
     },
     "setBy": "Vastgelegd in <link>{law}</link>.",
     "lowerThanEu": "Lager dan de bindende EU-grenswaarde van {value} mg/m³.",
     "sameAsEu": "Gelijk aan de bindende EU-grenswaarde.",
+    "recommendedBy": "{by} ({abbr}) beveelt deze waarde aan in <link>{title}</link>. Het is geen wet.",
+    "respirators": "Stofmaskers worden hier per klasse verkocht: {everyday} voor glazuurstof, of {higher} voor meer bescherming (<link>de officiële klassen</link>).",
     "unknown": "{region}: we konden de nationale grenswaarde niet bevestigen. De bindende EU-grenswaarde van {value} mg/m³ geldt in elke lidstaat.",
     "noData": "{region}: we hebben de grenswaarde daar nog niet bevestigd.",
     "agency": "De nationale instantie voor veiligheid op het werk: <link>{name}</link>.",
@@ -126,7 +142,12 @@
       "auSmall": "Kopjes, mokken, kannen, kommen, theepotten en ander serviesgoed van minder dan 1100 mL",
       "auLarge": "Hetzelfde, 1100 mL of meer",
       "auPlates": "Borden, schoteltjes en vergelijkbaar serviesgoed",
-      "auCooking": "Kookgerei"
+      "auCooking": "Kookgerei",
+      "jpFlat": "Niet-vulbare voorwerpen, of minder dan 2,5 cm diep",
+      "jpSmall": "Overige voorwerpen van minder dan 1,1 L, niet om in te koken",
+      "jpLarge": "Overige voorwerpen van 1,1 L tot minder dan 3 L, niet om in te koken",
+      "jpStorage": "Overige voorwerpen van 3 L of meer, niet om in te koken",
+      "jpCooking": "Kookgerei, 2,5 cm diep of meer"
     },
     "judged": {
       "average": "gemiddelde van 6 stuks",
@@ -135,6 +156,7 @@
     "euRules": "Hier gelden de regels van de EU.",
     "law": "Vastgelegd in <link>{law}</link>.",
     "inForce": "Van kracht vanaf {date}.",
+    "atMost": "Een voorwerp voldoet als het niet meer afgeeft dan de grenswaarde: de wet zegt “ten hoogste”.",
     "unknown": "{region}: we hebben de regels daar nog niet bevestigd.",
     "choosePrompt": "Kies uw land om de regels daar te zien."
   },

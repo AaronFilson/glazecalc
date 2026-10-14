@@ -64,7 +64,115 @@
   "privacy": {
     "title": "Confidențialitate",
     "lead": "Ultima actualizare: octombrie 2026.",
-    "shortHeading": "Pe scurt"
+    "shortHeading": "Pe scurt",
+    "short": "Glazecalc păstrează ce îi trebuie pentru funcționarea contului și nimic mai mult. Nu există reclame, instrumente de analiză sau urmărire. Datele dumneavoastră nu se vând niciodată, iar singura companie care le prelucrează este Amazon Web Services, care găzduiește site-ul și trimite e-mailurile acestuia.",
+    "whoHeading": "Cine este responsabil",
+    "who": "Glazecalc este un proiect gratuit, open source și non-profit, administrat de proprietarul său, Aaron Filson, în Statele Unite. El decide ce se întâmplă cu datele dumneavoastră, așa că, în legislația privind protecția datelor, este „operatorul” acestora.",
+    "contact": "Pentru întrebări despre datele dumneavoastră sau pentru a vă exercita oricare dintre drepturi, scrieți la <mail>privacy@glazecalcapp.com</mail>. Puteți și să <issues>deschideți un tichet pe GitHub</issues>, dar tichetele sunt publice: nu scrieți niciodată în ele adresa de e-mail sau ceva personal. Cele mai multe lucruri legate de date le puteți face direct pe <account>pagina contului</account>.",
+    "storedHeading": "Ce se păstrează și de ce",
+    "storedAccount": "<b>Contul:</b> adresa de e-mail și parola, stocată numai ca hash unidirecțional (bcrypt), niciodată ca parola propriu-zisă. Setările (cum ar fi limba, regiunea și unitățile) și lista materiilor prime pe care le aveți în stoc sunt păstrate împreună cu contul. Un cont are nevoie de o adresă de e-mail, pentru conectare și pentru resetarea unei parole uitate. Când creați un cont, la adresă se trimite un link pentru a confirma că vă aparține; până atunci, la ea se trimit e-mailuri doar când cereți, de exemplu pentru resetarea parolei.",
+    "storedSaved": "<b>Ce salvați:</b> rețetele, materiile prime, aditivii, notițele, jurnalele de ardere și sfaturile, așa cum le-ați scris. Numai dumneavoastră le puteți vedea: nimic nu este partajat între utilizatori.",
+    "storedTrial": "<b>O perioadă de probă („Încercați acum”):</b> fără adresă de e-mail sau parolă, doar un nume inventat, cum ar fi „speckled quiet kilns”. Dacă, în timpul unei perioade de probă, vă conectați la un cont în același browser, ce ați creat în perioada de probă trece în cont.",
+    "storedResets": "<b>Linkurile pentru resetarea parolei și pentru adresa de e-mail:</b> ce cont a cerut, când, adresa la care a fost trimis un link de confirmare a adresei și o amprentă a fiecărui link (nu linkul propriu-zis).",
+    "storedLogs": "<b>Jurnalele de sistem:</b> serverul web înregistrează fiecare cerere: adresa IP, ora, pagina cerută și numele browserului. Aplicația înregistrează erorile împreună cu pagina pe care au apărut, niciodată adresa de e-mail.",
+    "storedDeletions": "<b>Conturile șterse:</b> numărul de identificare al contului și data ștergerii, nimic altceva, astfel încât o copie de rezervă restaurată să nu poată readuce contul.",
+    "storedMail": "<b>Problemele cu e-mailul:</b> dacă e-mailurile trimise la adresa dumneavoastră nu pot fi livrate sau sunt raportate ca spam, serviciul de e-mail al Amazon trece adresa pe o listă de adrese la care nu se mai trimite nimic și îi trimite proprietarului o notificare care include adresa.",
+    "storedInbound": "<b>E-mailurile pe care le trimiteți către Glazecalc:</b> e-mailurile trimise la privacy@glazecalcapp.com și la celelalte adrese ale aplicației Glazecalc sunt verificate de Amazon pentru spam și viruși, păstrate într-un spațiu de stocare privat și redirecționate către căsuța de e-mail personală a proprietarului (Gmail).",
+    "basisHeading": "Temeiul juridic",
+    "basisContract": "<b>Funcționarea contului</b>, păstrarea a ceea ce salvați și e-mailurile despre cont sunt serviciul pe care l-ați cerut: temeiul juridic este contractul dintre dumneavoastră și Glazecalc (RGPD, articolul 6 alineatul (1) litera (b)).",
+    "basisInterests": "<b>Siguranța și buna funcționare a site-ului</b>: jurnalele de sistem, limitele privind cât de des poate cineva încerca să se conecteze, copiile de rezervă, evidența conturilor șterse și lista adreselor la care nu se trimit e-mailuri. Acestea se bazează pe interesul legitim al aplicației Glazecalc privind securitatea, prevenirea abuzurilor și evitarea pierderii muncii dumneavoastră (articolul 6 alineatul (1) litera (f)). Sunt păstrate pentru scurt timp și nu sunt folosite în niciun alt scop. Vă puteți opune scriind la adresa de mai sus.",
+    "basisNone": "Nimic din ce vă privește nu se decide automat, nu se creează profiluri și nimic nu este folosit pentru publicitate.",
+    "whereHeading": "Unde sunt păstrate și cine le prelucrează",
+    "hosting": "Glazecalc rulează pe Amazon Web Services (AWS): serverul (EC2), copiile de rezervă (S3) și e-mailul (Simple Email Service), toate în Statele Unite, în Oregon (us-west-2). AWS prelucrează datele numai în numele aplicației Glazecalc, conform <dpa>condițiilor sale privind prelucrarea datelor</dpa>. Nimeni altcineva nu le primește.",
+    "transfer": "Dacă locuiți în UE, în Regatul Unit sau în Elveția, datele dumneavoastră ajung în Statele Unite. Amazon declară că este certificat conform <dpf>Cadrului UE–SUA privind confidențialitatea datelor</dpf> și extensiilor acestuia pentru Regatul Unit și Elveția, iar condițiile AWS includ clauzele contractuale standard ale UE, care s-ar aplica în continuare dacă acest cadru, contestat în prezent în instanță, ar fi anulat. Proprietarul și AWS se află amândoi în SUA, iar legislația americană le poate cere să predea datele.",
+    "noThirdParties": "Browserul nu încarcă nimic de pe alte site-uri: nici fonturi, nici scripturi, nici imagini, nici instrumente de analiză din altă parte, iar setările de securitate ale site-ului le blochează. Linkurile către GitHub și către alte site-uri se deschid numai când dați clic pe ele.",
+    "choiceHeading": "Unde este păstrat contul: alegerea vă aparține",
+    "choiceProject": "Glazecalc este un proiect gratuit și open source. Conturile și tot ce conțin sunt păstrate pe servere din Statele Unite, oriunde ați locui, așa cum este descris mai sus.",
+    "choiceNoAccount": "Nu aveți nevoie de un cont pentru a citi ghidurile și puteți încerca calculatorul cu „Încercați acum”, fără adresă de e-mail sau parolă. O perioadă de probă este păstrată pe aceleași servere timp de 14 zile.",
+    "choiceOwnCopy": "Oricine poate rula propria copie a aplicației Glazecalc, pe propriul calculator sau server: codul este disponibil gratuit pe <source>GitHub</source>.",
+    "choiceDecision": "Este decizia dumneavoastră dacă vă creați un cont aici, știind că acesta este păstrat în Statele Unite.",
+    "choiceNoWarranty": "Glazecalc este oferit „ca atare”, fără garanție. Cei care întrețin proiectul nu își asumă nicio responsabilitate sau răspundere pentru decizia dumneavoastră de a crea un cont sau pentru locul în care sunt păstrate datele acestuia.",
+    "keptHeading": "Cât timp se păstrează",
+    "keptAccount": "<b>Contul și ce salvați:</b> până când le ștergeți. Conturile nu sunt eliminate pentru că nu sunt folosite.",
+    "keptTrial": "<b>O perioadă de probă:</b> 14 zile de la început, apoi este ștearsă cu tot ce conține, cu excepția cazului în care vă creați un cont pentru a o păstra.",
+    "keptResets": "<b>Linkurile pentru resetarea parolei și pentru adresa de e-mail:</b> un link de resetare este valabil 30 de minute, iar evidența lui este ștearsă după aproximativ o oră; un link de confirmare a unei adrese este valabil, și este păstrat, 24 de ore.",
+    "keptBackups": "<b>Copiile de rezervă:</b> copiile criptate ale bazei de date sunt păstrate 30 de zile, iar copiile discului serverului, 7 zile. Astfel, un cont șters dispare din toate copiile de rezervă în termen de 30 de zile.",
+    "keptDeletions": "<b>Evidența unui cont șters:</b> 37 de zile, puțin mai mult decât orice copie de rezervă.",
+    "keptLogs": "<b>Jurnalele de sistem:</b> cele ale serverului web, 14 zile. Jurnalele proprii ale aplicației și ale bazei de date sunt limitate ca dimensiune (50 MB fiecare), ceea ce, pe un site cu trafic redus, acoperă câteva zile în urmă. Copiile discului serverului păstrează jurnalele până la încă 7 zile.",
+    "keptMail": "<b>Lista adreselor la care nu se trimit e-mailuri:</b> până când proprietarul elimină o adresă, lucru pe care îl face în fiecare lună pentru adresele care nu mai aparțin unui cont. Proprietarul șterge notificările de nelivrare în termen de 30 de zile.",
+    "keptInbound": "<b>E-mailurile pe care le trimiteți către Glazecalc:</b> 30 de zile în spațiul de stocare al Amazon și, în căsuța de e-mail a proprietarului, cât este nevoie pentru a vă răspunde. Pentru o cerere privind datele dumneavoastră, se păstrează timp de trei ani o scurtă notă (când a venit, ce s-a cerut și ce s-a făcut).",
+    "rightsHeading": "Drepturile dumneavoastră",
+    "rightsIntro": "Puteți să vedeți, să corectați, să luați cu dumneavoastră și să ștergeți datele. Cele mai multe dintre acestea le puteți face direct pe <account>pagina contului</account>:",
+    "rightsExport": "<b>Să le vedeți și să le luați cu dumneavoastră:</b> „Descărcați datele mele” salvează totul într-un singur fișier (JSON), iar rețetele și materiile prime, ca tabele (CSV).",
+    "rightsCorrect": "<b>Să le corectați:</b> schimbați oricând setările și înregistrările. Pentru a schimba adresa de e-mail, deschideți linkul trimis la noua adresă; vechea adresă, dacă a fost confirmată, este anunțată despre schimbare, iar toate dispozitivele sunt deconectate.",
+    "rightsDelete": "<b>Să le ștergeți:</b> „Ștergeți contul meu” elimină imediat contul și tot ce ați salvat, iar „Renunțați la perioada de probă” face același lucru pentru o perioadă de probă. Ce rămâne în copiile de rezervă dispare în termen de 30 de zile.",
+    "rightsSignOut": "<b>Deconectare de pe toate dispozitivele:</b> încheie sesiunile contului pe toate dispozitivele.",
+    "rightsAsk": "Pentru orice altceva, cum ar fi să cereți ca datele să nu fie folosite cât timp se corectează o greșeală sau să vă opuneți modului în care sunt folosite, scrieți la <mail>privacy@glazecalcapp.com</mail>. Este gratuit și veți primi un răspuns în termen de o lună. Vi se va cere doar să arătați că acel cont vă aparține, conectându-vă sau deschizând un link trimis la adresa contului, niciodată un act de identitate.",
+    "rightsComplain": "Dacă răspunsul nu vă mulțumește, puteți depune o plângere la o autoritate pentru protecția datelor: în UE, la <edpb>autoritatea din țara dumneavoastră</edpb>, iar în Regatul Unit, la <ico>Information Commissioner’s Office</ico>.",
+    "storageHeading": "Cookie-uri și stocarea în browser",
+    "storageIntro": "Glazecalc setează un singur cookie și păstrează câteva valori mici în browser. Fiecare există pentru ceva ce ați cerut: menținerea conectării sau memorarea unei alegeri pe care ați făcut-o. Niciunul nu vă urmărește și niciunul nu este partajat, așa că legea nu cere să vi se solicite mai întâi acordul și nu există un banner pentru cookie-uri.",
+    "storageLabel": "Cookie-uri și stocarea în browser",
+    "storageName": "Denumire",
+    "storagePurpose": "La ce folosește",
+    "storageLasts": "Cât timp rămâne",
+    "storageCookie": "Cookie",
+    "storageLocal": "Stocare locală",
+    "storageSession": "Stocare de sesiune",
+    "storageNote": "Le puteți șterge oricând din setările browserului. Ștergerea contului elimină nota privind conectarea și toate setările păstrate aici.",
+    "keys": {
+      "cookie": {
+        "purpose": "Menține conectarea. Conține tokenul de conectare. Scripturile din pagină nu îl pot citi, iar browserul îl trimite numai la serverul propriu al aplicației Glazecalc, prin HTTPS, și niciodată cu o cerere care pornește de pe alt site.",
+        "lasts": "Se setează când vă conectați, creați un cont sau începeți o perioadă de probă. Rămâne până când închideți browserul sau 7 zile dacă bifați „Păstrați conectarea pe acest dispozitiv”; 14 zile pentru o perioadă de probă. Deconectarea îl elimină."
+      },
+      "session": {
+        "purpose": "Notează că v-ați conectat, la un cont sau la o perioadă de probă, ca aplicația să știe să întrebe serverul. Nu conține niciun token și nicio parolă.",
+        "lasts": "Până când vă deconectați sau se încheie sesiunea."
+      },
+      "trial": {
+        "purpose": "În timpul unei perioade de probă, numele și data de încheiere a acesteia, pentru a le afișa.",
+        "lasts": "Până la încheierea perioadei de probă sau până când o păstrați ori renunțați la ea."
+      },
+      "settings": {
+        "purpose": "O setare pe care ați schimbat-o în acest browser, ca pagina următoare să o afișeze imediat, înainte ca serverul să răspundă. <code>theme</code> și <code>palette</code> colorează pagina înainte să apară, iar <code>language</code> deschide paginile în limba dumneavoastră.",
+        "lasts": "Până când o schimbați. Deconectarea readuce ce ați ales în afara contului, dacă ați ales ceva, și elimină restul."
+      },
+      "visitor": {
+        "purpose": "Limba pe care ați ales-o sau faptul că ați închis nota despre traducere, în afara contului, ca acestea să revină când vă deconectați.",
+        "lasts": "Până când ștergeți datele stocate de browser sau ștergeți un cont în acest browser."
+      },
+      "region": {
+        "purpose": "Filtrul de regiune dintr-o listă a bibliotecii.",
+        "lasts": "Până când readuceți filtrul la toate regiunile."
+      },
+      "includeAdditives": {
+        "purpose": "Dacă rețetele noi includ aditivii în formula Seger, așa cum ați ales ultima dată.",
+        "lasts": "Până când ștergeți datele stocate de browser."
+      },
+      "recipeHelp": {
+        "purpose": "Faptul că ați ascuns ajutorul de pe pagina rețetei.",
+        "lasts": "Până când afișați din nou ajutorul."
+      },
+      "print": {
+        "purpose": "Ultimele alegeri pentru imprimarea unei rețete: rețeta întreagă sau lista de cântărire, și cantitatea de preparat.",
+        "lasts": "Până când ștergeți datele stocate de browser."
+      },
+      "token": {
+        "purpose": "Un token de conectare dintr-o versiune veche a aplicației Glazecalc. Acum nu mai este scris niciodată.",
+        "lasts": "Se elimină când se deschide o pagină."
+      },
+      "readEnglish": {
+        "purpose": "Faptul că ați ales să citiți în engleză o pagină tradusă, ca aplicația să nu vă mai trimită la limba dumneavoastră.",
+        "lasts": "Până când închideți fila."
+      },
+      "reloadedFor": {
+        "purpose": "După lansarea unei versiuni noi a site-ului, ce pagină a fost reîncărcată și când, astfel încât o pagină să se reîncarce cel mult o dată pe minut.",
+        "lasts": "Până când închideți fila."
+      }
+    },
+    "childrenHeading": "Copii",
+    "children": "Glazecalc este un instrument pentru ceramiști și nu se adresează copiilor.",
+    "changesHeading": "Modificări",
+    "changes": "Dacă această informare se modifică, se modifică și data din partea de sus a paginii."
   },
   "notFound": {
     "heading": "Pagina nu a fost găsită",

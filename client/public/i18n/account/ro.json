@@ -11,10 +11,13 @@
     "password": "Parolă",
     "passwordHint": "Cel puțin 8 caractere.",
     "confirmation": "Confirmați parola",
+    "keepSignedIn": "Păstrați conectarea pe acest dispozitiv",
     "passwordMissing": "Introduceți parola.",
     "createAccount": "Creați contul",
     "signIn": "Conectați-vă",
     "haveAccount": "Aveți deja un cont? <signin>Conectați-vă</signin>",
+    "privacy": "Adresa de e-mail și ce salvați sunt folosite numai pentru funcționarea contului și sunt stocate la Amazon Web Services, în SUA. <privacy>Cum tratează Glazecalc datele dumneavoastră</privacy>",
+    "dataNotice": "Glazecalc este un proiect gratuit și open source, iar conturile sunt păstrate pe servere din Statele Unite. Puteți citi ghidurile și încerca calculatorul fără cont sau puteți rula propria copie. Este decizia dumneavoastră dacă vă creați un cont aici, iar proiectul nu își asumă nicio responsabilitate pentru aceasta. <where>Unde este păstrat contul: alegerea vă aparține</where>",
     "forgot": "Ați uitat parola? Resetați-o",
     "newHere": "Prima dată aici? <signup>Creați un cont gratuit</signup>",
     "signUpFailed": "Eroare: contul nu a putut fi creat.",
@@ -61,7 +64,29 @@
     "deletePassword": "Parola, pentru confirmare",
     "deletePasswordMissing": "Introduceți parola pentru confirmare.",
     "delete": "Ștergeți contul meu",
-    "deleteFailed": "Eroare: contul nu a putut fi șters. Încercați din nou."
+    "deleteFailed": "Eroare: contul nu a putut fi șters. Încercați din nou.",
+    "unverifiedHeading": "Confirmați adresa de e-mail",
+    "unverifiedText": "Când ați creat acest cont, am trimis un link la {email}. Deschideți-l pentru a confirma că adresa vă aparține. Până atunci, îi trimitem e-mailuri doar când cereți, de exemplu pentru resetarea parolei.",
+    "resend": "Trimiteți din nou linkul",
+    "resendFailed": "Eroare: linkul nu a putut fi trimis. Încercați din nou.",
+    "emailHeading": "Schimbați adresa de e-mail",
+    "emailText": "Trimitem un link la noua adresă, iar adresa de e-mail se schimbă când îl deschideți. Trimitem un anunț și la adresa actuală. Toate dispozitivele conectate la acest cont vor fi deconectate.",
+    "newEmail": "Adresa de e-mail nouă",
+    "emailPassword": "Parola, pentru confirmare",
+    "emailSend": "Trimiteți linkul",
+    "emailFailed": "Eroare: linkul nu a putut fi trimis. Încercați din nou.",
+    "signOutHeading": "Deconectare de pe toate dispozitivele",
+    "signOutText": "Vă deconectează de pe toate dispozitivele, inclusiv de pe acesta. Folosiți această opțiune dacă ați pierdut un dispozitiv sau credeți că altcineva are datele dumneavoastră de conectare.",
+    "signOutButton": "Deconectați-vă de pe toate dispozitivele",
+    "signOutFailed": "Eroare: deconectarea nu a reușit. Încercați din nou."
+  },
+  "export": {
+    "heading": "Descărcați datele mele",
+    "text": "Salvați într-un singur fișier o copie a tot ce conține contul: detaliile contului, setările, stocul, rețetele, materiile prime, aditivii, notițele, jurnalele de ardere, sfaturile și coșul de reciclare. Fișierul nu include parola. Păstrați-l într-un loc privat, pentru că acesta conține tot ce ați salvat.",
+    "json": "Descărcați tot (JSON)",
+    "csvText": "Sau salvați un tabel doar cu rețetele sau doar cu materiile prime proprii, pe care îl puteți deschide în Excel, Numbers sau Sheets.",
+    "recipes": "Rețete (CSV)",
+    "materials": "Materii prime (CSV)"
   },
   "settings": {
     "heading": "Setări",
@@ -126,10 +151,16 @@
         "example": "conul 04, conul 6",
         "saved": "S-a salvat: arderea la conuri Orton."
       },
+      "sk": {
+        "label": "La conuri SK (JIS R 8101)",
+        "example": "SK 4a, SK 8",
+        "saved": "S-a salvat: arderea la conuri SK."
+      },
       "temperature": {
         "label": "După temperatură, ca în programul unui controler de cuptor",
         "saved": "S-a salvat: arderea după temperatură."
-      }
+      },
+      "help": "Până când alegeți, aceasta urmează regiunea: conuri Orton în Statele Unite, Regatul Unit, Irlanda, Australia și Noua Zeelandă, conuri SK în Japonia, temperatura în restul Europei."
     },
     "density": {
       "legend": "Densitatea glazurii",
@@ -145,7 +176,8 @@
       "pint": {
         "label": "Greutatea pintei, în uncii la o pintă imperială",
         "saved": "S-a salvat: densitatea glazurii ca greutate a pintei."
-      }
+      },
+      "help": "Cum dau ghidurile densitatea unei glazuri. Până când alegeți, aceasta urmează regiunea: grade Baumé în Italia și Japonia, greutate specifică în rest."
     },
     "theme": {
       "legend": "Luminos sau întunecat",
@@ -227,9 +259,19 @@
       },
       "hidden": {
         "label": "Ascunsă",
-        "saved": "S-a salvat: nota este ascunsă. Un rând din ea rămâne în ghidurile despre siguranță."
+        "saved": "S-a salvat: nota este ascunsă. Un rând din ea rămâne în ghidurile despre siguranță.",
+        "savedPlain": "S-a salvat: nota este ascunsă. Un rând din ea rămâne în partea de sus a fiecărei pagini."
       },
       "help": "Nota din partea de sus a fiecărei pagini care spune că pagina a fost tradusă de inteligența artificială, cu o modalitate de a sugera o corectură."
     }
+  },
+  "confirmEmail": {
+    "heading": "Confirmați adresa de e-mail",
+    "intro": "Apăsați butonul pentru a confirma această adresă.",
+    "confirm": "Confirmați",
+    "incomplete": "Această pagină are nevoie de linkul dintr-un e-mail de confirmare, iar acesta este incomplet.",
+    "account": "Contul dumneavoastră",
+    "signIn": "Conectați-vă",
+    "failed": "Eroare: adresa nu a putut fi confirmată. Încercați din nou."
   }
 }

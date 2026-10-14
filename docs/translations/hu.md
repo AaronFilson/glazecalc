@@ -626,6 +626,31 @@ so the country name needs no case ending („Boltok – {region}”).
 "Pieces that can be filled" follows the Hungarian text of 84/500 („megtölthető tárgyak”), "cooking ware" its
 „főzőedények”; "inhalable fraction" is ITM's „belélegezhető frakció”.
 
+### 2.10 Search terms and the newer text
+
+**Search terms** (titles.landing and the meta descriptions; research_notes/search-terms-2026-10-14.md). The title stays
+„Glazecalc: ingyenes mázkémiai kalkulátor fazekasoknak”. Hungarian searchers pair the glaze word with a ceramics word
+(„kerámia máz”), because a bare search for glaze also finds cake icing („glazúr”); they search „mázrecept”,
+„Seger-képlet” and „a máz összetétele”. Use these in descriptions where the English meaning allows: „kerámia máz” for
+"a glaze", „mázrecept” for "glaze recipe", „Seger-képlet (UMF)” where the English says unity formula, „a máz
+összetétele” for "what a glaze is made of". Never add a claim the English lacks.
+
+| English                                    | Magyar                                         | Notes                                                                                                |
+| ------------------------------------------ | ---------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| SK cones (JIS R 8101)                      | SK-gúlák (JIS R 8101); „SK 8” as printed       | Always „SK”, never „Seger-gúla” (only where the English says Seger) and never an Orton number.       |
+| control concentration (Japan, 管理濃度)    | ellenőrzési koncentráció                       | No Hungarian source; a yardstick for a work area's air, not a limit on what one person breathes.     |
+| dust mask (Japan's DS/RS classes)          | porvédő maszk                                  |                                                                                                      |
+| Keep me signed in on this device           | Maradjak bejelentkezve ezen az eszközön        | First person, as consent wording.                                                                    |
+| Confirm your email; Change your email      | E-mail-cím megerősítése; E-mail-cím módosítása |                                                                                                      |
+| Sign out everywhere                        | Kijelentkezés mindenhol                        |                                                                                                      |
+| Download my data                           | Adataim letöltése                              |                                                                                                      |
+| controller (data protection)               | adatkezelő                                     | GDPR (HU). legal basis → jogalap; legitimate interest → jogos érdek; profiling → profilalkotás.      |
+| Standard Contractual Clauses               | általános adatvédelmi kikötések                | GDPR Article 46(2)(c) in Hungarian.                                                                  |
+| EU–US Data Privacy Framework               | EU–USA adatvédelmi keretrendszer               |                                                                                                      |
+| cookie; local storage; session storage     | süti; helyi tárhely; munkamenet-tárhely        | "cookie banner" → „sütifigyelmeztetés”.                                                              |
+| poison information centre (Japan, Türkiye) | Toxikológiai Tájékoztató Központ               | The native name stays in brackets: „Japán Toxikológiai Tájékoztató Központ, Oszaka (大阪中毒110番)”. |
+| Türkiye; Osaka; Tsukuba                    | Törökország; Oszaka; Cukuba                    | Hungarian spellings.                                                                                 |
+
 ## 3. Never translated
 
 From terms.md, unchanged:

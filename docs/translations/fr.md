@@ -507,6 +507,28 @@ the reviewed translation uses them. Names of shops, laws and agencies stay as th
 | Directive 84/500/EEC (its official name)                              | Directive 84/500/CEE (modifiée par la directive 2005/31/CE)                                | regions: the directive                        |
 | Latvia's law gives this limit for the inhalable fraction of the dust. | La loi lettone donne cette valeur limite pour la fraction inhalable des poussières.        | regions: Latvia                               |
 
+### 2.10 Search terms and new words
+
+**Search terms** (research_notes/search-terms-2026-10-14.md): French searches use « recette d’émail » / « recettes d’émaux »,
+« formule de Seger », « émaux céramiques » (and « glaçures céramiques ») and « calcul des émaux ». The page title is
+« Glazecalc : calculateur d’émaux gratuit pour céramistes ». In the `meta.*` descriptions, give the glaze word with the
+ceramics word where it fits (« émail céramique ») and write the unity formula as « formule de Seger (UMF) ». Never add a
+claim the English lacks.
+
+**Words added with the EU release and SK cones (2026-10):**
+
+- SK cones: « cônes SK », never « cônes de Seger » unless the English says Seger. "the next cooler / hotter cone" →
+  « le numéro immédiatement moins chaud / plus chaud ».
+- Privacy: controller « responsable du traitement »; legal basis « base légale »; logs « journaux »; backups
+  « sauvegardes »; bounce « e-mail rejeté », bounce notice « avis de rejet »; GitHub issue « ticket »; maintainers
+  « mainteneurs »; "accepts no responsibility" « n’accepte aucune responsabilité »; Standard Contractual Clauses
+  « clauses contractuelles types »; EU–US Data Privacy Framework « cadre de protection des données UE–États-Unis ».
+- "Keep me signed in on this device" « Garder la session ouverte sur cet appareil »; "Sign out everywhere" « Se
+  déconnecter partout »; "Download my data" « Télécharger mes données »; sign-in token « jeton de connexion ».
+- Japan: control concentration (管理濃度) « concentration de contrôle »; dust mask « masque antipoussière »; "not for
+  cooking" « non destinés à la cuisson »; "passes" (a food-contact test) « est conforme ». Türkiye: « la Turquie ».
+- Glaze "thickness" in the density help: « consistance », as the making-a-glaze guide says.
+
 ## 3. Never translated
 
 As in [terms.md](terms.md#never-translated):

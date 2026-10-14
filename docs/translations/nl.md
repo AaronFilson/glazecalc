@@ -598,6 +598,32 @@ The category wording follows the Dutch text of Directive 84/500/EEG as Warenwet 
 IATE 3644917 and 2204562. _inhaleerbare fractie_ is the inhalable fraction in both countries; do not write
 _inadembare_ (respirable in Belgian law).
 
+### 2.10 Accounts, privacy, SK cones and Japan
+
+Added with the EU release text, the SK cones and the Japanese and Turkish region data (October 2026).
+
+- **SK cones** → _SK-kegels_ (“Volgens SK-kegels (JIS R 8101)”); always _SK_ before the number (_SK 8_, _SK 6a_), never
+  _Segerkegel_ unless the English says Seger, and never converted to an Orton number. Kyoto cones → _Kyoto-kegels_.
+- **control concentration** (Japan, 管理濃度) → _de beheersconcentratie_. **Check**: no Dutch source found; it is a
+  yardstick for a work area's air, not a limit for one person.
+- Japanese food-contact categories: "not for cooking" → _niet om in te koken_; "at most" → _ten hoogste_.
+- **Türkiye** → _Turkije_ (the Dutch government's name). Official names of poison lines and services stay as the
+  English gives them; descriptive names are translated (_Medische advieslijn voor kinderen (子ども医療電話相談)_).
+- Accounts: "Keep me signed in on this device" → _Ingelogd blijven op dit apparaat_; "Sign out everywhere" → _Overal
+  uitloggen_; "Download my data" → _Mijn gegevens downloaden_; "Confirm your email" → _Uw e-mailadres bevestigen_.
+- Privacy (AVG/GDPR terms): "controller" → _de verwerkingsverantwoordelijke_; "legal basis" → _de rechtsgrond_;
+  "legitimate interest" → _het gerechtvaardigd belang_; "GDPR Article 6(1)(b)" → _AVG, artikel 6, lid 1, onder b_;
+  "Standard Contractual Clauses" → _de standaardcontractbepalingen_; "EU–US Data Privacy Framework" →
+  _het EU-VS-kader voor gegevensbescherming_; "data protection authority" → _de toezichthouder voor gegevensbescherming_;
+  "analytics" → _analysetools_; "logs" → _logbestanden_; "backups" → _back-ups_; "provided as is" → _aangeboden zoals
+  het is_; "open-source project" → _open source project_, as the app writes _open source_ elsewhere.
+
+**Search terms** (research_notes/search-terms-2026-10-14.md): the bare _glazuur_ also means icing and tooth enamel, so
+page titles and descriptions pair it with a ceramics word where it fits (_glazuur voor keramiek_, _glazuurrecepten_,
+_keramiek_). Dutch searchers write _Segerformule_; keep _(UMF)_ in brackets after it. Also searched:
+_glazuurberekening_, _glazuurcalculatie_, _glazuren steengoed_. The landing title is
+“Glazecalc: gratis glazuurcalculator voor pottenbakkers”.
+
 ## 3. Never translated
 
 From terms.md, unchanged:

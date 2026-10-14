@@ -113,7 +113,6 @@
     "setBy": "Belirleyen: <link>{law}</link>.",
     "lowerThanEu": "AB’nin {value} mg/m³ olan bağlayıcı sınır değerinden düşüktür.",
     "sameAsEu": "AB’nin bağlayıcı sınır değeriyle aynıdır.",
-    "recommendedBy": "{by} ({abbr}) bu değeri <link>{title}</link> adlı yayınında önerir. Bu bir yasa değildir.",
     "respirators": "Toz maskeleri burada sınıflara göre satılır: sır tozu için {everyday}, daha yüksek koruma için {higher} (<link>resmî sınıflar</link>).",
     "unknown": "{region} ülkesindeki ulusal sınır değeri doğrulayamadık. AB’nin {value} mg/m³ olan bağlayıcı sınır değeri her üye devlette geçerlidir.",
     "noData": "{region} ülkesindeki sınır değeri henüz doğrulamadık.",
