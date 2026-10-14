@@ -63,6 +63,10 @@ for it on the website ([ADR 0014](adr/0014-two-step-sign-in.md)); the owner runs
    date in the request log.
 4. **If anyone writes to privacy@ to stop it** (from that address), do not go on. Ask what happened; if the request was not
    theirs, tell them to change their password, and the account stays as it is.
+   **Using any factor also cancels the request:** if the account signs in with a second step or a passkey, or confirms
+   a change on its account page with a factor, the server removes `mfa.clearRequestedAt` (the log says only
+   `MFA_CLEAR_CANCELLED`). Whoever did that still has a factor. `--clear` then refuses ("Run --notify first"); if the
+   person still wants it turned off, ask why, and run `--notify` again, which starts a new seven days.
 5. **Day 7 or later:** run `clear_mfa.ts --clear <address>`. It refuses before seven days have passed. It removes
    every factor and recovery code, signs out every device and emails the address that two-step sign-in is off. Tell
    the person to sign in with the password and set up two-step sign-in again, and to keep the new recovery codes.

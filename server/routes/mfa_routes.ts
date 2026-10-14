@@ -43,6 +43,7 @@ import * as mfaKey from '../lib/mfa_key.ts';
 import * as qr from '../lib/qr.ts';
 import * as limits from '../lib/rate_limit.ts';
 import * as recoveryCodes from '../lib/recovery_codes.ts';
+import * as secondStep from '../lib/second_step.ts';
 import * as session from '../lib/session.ts';
 import * as totp from '../lib/totp.ts';
 import * as webauthn from '../lib/webauthn.ts';
@@ -67,6 +68,17 @@ const NO_FACTOR: Filter = { 'mfa.totp': { $exists: false }, 'mfa.passkeys.0': { 
 
 /** Every route that checks a password (decision 6). */
 const proving = [limits.changePassword, jwtAuth, notGuest, limits.passwordCheck, express.json()];
+
+/**
+ * factors.confirmIdentity, and when it took a factor, the owner evidently still
+ * has one: a pending request to turn two-step sign-in off (server/clear_mfa.ts)
+ * is cancelled, as a sign-in with a factor cancels it.
+ */
+const confirm = async (req: Request): Promise<factors.IdentityCheck> => {
+  const check = await factors.confirmIdentity(req, req.body);
+  if (check.ok && check.used) await secondStep.cancelClearRequest(check.user._id);
+  return check;
+};
 
 const refuse = (res: Response, check: Extract<factors.IdentityCheck, { ok: false }>) =>
   res.status(check.status).json(say(check.code, undefined, check.field ? { field: check.field } : {}));
@@ -216,7 +228,7 @@ mfaRouter.post('/totp/start', ...proving, async (req, res) => {
   if (!state) return res.status(404).json(say('no-user'));
   if (state.emailUnverified) return res.status(400).json(say('mfa-needs-confirmed-email'));
   if (state.mfa?.totp) return res.status(400).json(say('totp-exists'));
-  const check = await factors.confirmIdentity(req, req.body);
+  const check = await confirm(req);
   if (!check.ok) return refuse(res, check);
   const { user } = check;
 
@@ -309,7 +321,7 @@ mfaRouter.post(
 
 mfaRouter.delete('/totp', ...proving, async (req, res) => {
   if (!(await stateOf(userOf(req)._id))?.mfa?.totp) return res.status(400).json(say('totp-none'));
-  const check = await factors.confirmIdentity(req, req.body);
+  const check = await confirm(req);
   if (!check.ok) return refuse(res, check);
   const removed = await removeFactor(
     check.user._id,
@@ -321,7 +333,11 @@ mfaRouter.delete('/totp', ...proving, async (req, res) => {
   if (!removed) return res.status(400).json(say('totp-none'));
   renew(req, res, removed.user);
   res.status(200).json(say(removed.off ? 'mfa-off' : 'totp-removed'));
-  accountMail.noticeMfa(removed.user, { kind: 'removed', method: { kind: 'totp' } });
+  // The last factor gone: one 'two-step sign-in is off' email instead of a removal notice.
+  accountMail.noticeMfa(
+    removed.user,
+    removed.off ? { kind: 'mfa-off' } : { kind: 'removed', method: { kind: 'totp' } }
+  );
   return undefined;
 });
 
@@ -332,7 +348,7 @@ mfaRouter.post('/passkeys/options', ...proving, async (req, res) => {
   if (!state) return res.status(404).json(say('no-user'));
   if (state.emailUnverified) return res.status(400).json(say('mfa-needs-confirmed-email'));
   if ((state.mfa?.passkeys?.length ?? 0) >= PASSKEY_LIMIT) return res.status(400).json(tooMany());
-  const check = await factors.confirmIdentity(req, req.body);
+  const check = await confirm(req);
   if (!check.ok) return refuse(res, check);
   const { user } = check;
 
@@ -419,7 +435,7 @@ mfaRouter.delete('/passkeys/:id', ...proving, async (req, res) => {
   if (!(state?.mfa?.passkeys ?? []).some((entry) => String(entry._id) === id)) {
     return res.status(404).json(say('passkey-not-found'));
   }
-  const check = await factors.confirmIdentity(req, req.body);
+  const check = await confirm(req);
   if (!check.ok) return refuse(res, check);
   const passkey = (check.user.mfa?.passkeys ?? []).find((entry) => String(entry._id) === id);
   if (!passkey) return res.status(404).json(say('passkey-not-found'));
@@ -434,7 +450,10 @@ mfaRouter.delete('/passkeys/:id', ...proving, async (req, res) => {
   if (!removed) return res.status(404).json(say('passkey-not-found'));
   renew(req, res, removed.user);
   res.status(200).json(say(removed.off ? 'mfa-off' : 'passkey-removed'));
-  accountMail.noticeMfa(removed.user, { kind: 'removed', method: { kind: 'passkey', name: passkey.name } });
+  accountMail.noticeMfa(
+    removed.user,
+    removed.off ? { kind: 'mfa-off' } : { kind: 'removed', method: { kind: 'passkey', name: passkey.name } }
+  );
   return undefined;
 });
 
@@ -443,7 +462,7 @@ mfaRouter.post('/recovery-codes', ...proving, async (req, res) => {
   const state = await stateOf(userOf(req)._id);
   // Recovery codes go with two-step sign-in: none without it.
   if (!state || !mfaOn(state)) return res.status(400).json(say('mfa-not-on'));
-  const check = await factors.confirmIdentity(req, req.body);
+  const check = await confirm(req);
   if (!check.ok) return refuse(res, check);
   const made = recoveryCodes.make();
   const user = await User.findOneAndUpdate(

@@ -1,6 +1,7 @@
 import mongoose from 'mongoose';
 import type { PublicKeyCredentialCreationOptionsJSON } from '@simplewebauthn/server';
 import { PASSKEY_LIMIT } from '../../lib/mfa.js';
+import { MFA_ADDED, MFA_OFF, MFA_REMOVED } from '../lib/account_mail.ts';
 import * as factors from '../lib/factors.ts';
 import * as mfaKey from '../lib/mfa_key.ts';
 import * as limits from '../lib/rate_limit.ts';
@@ -11,6 +12,7 @@ import * as webauthn from '../lib/webauthn.ts';
 import AuthChallenge from '../models/auth_challenge.ts';
 import User from '../models/user.ts';
 import { api, expect, makeUser, sessionToken } from './support/app.ts';
+import * as mail from './support/mail.ts';
 import { SoftAuthenticator, type Twist } from './support/soft_authenticator.ts';
 
 type Method = 'get' | 'post' | 'patch' | 'delete';
@@ -51,6 +53,13 @@ const verify = (token: string) =>
 const soft = (): SoftAuthenticator => new SoftAuthenticator({ rpId: site.rpId(), origin: site.origin() });
 
 const fresh = (id: mongoose.Types.ObjectId) => User.findById(id).lean();
+
+/** The subjects of the emails sent to an account so far, once those a request started have gone. */
+const subjects = async (account: Pick<Account, 'email'>): Promise<string[]> => {
+  await mail.settle();
+  return mail.to(account.email).map((sent) => sent.subject);
+};
+const count = (list: string[], subject: string) => list.filter((one) => one === subject).length;
 
 /**
  * A code the account will take now. A code is taken once per 30-second step,
@@ -326,6 +335,11 @@ describe('two-step sign-in on the account page (/api/mfa)', () => {
       // The codes went with it.
       expect(await recoveryCodes.use(alice.user._id, codes![0]!)).to.eql(null);
       expect((await call(alice, 'delete', '/totp', { password: alice.password })).body.code).to.eql('totp-none');
+      // One email says two-step sign-in is off, rather than a removal notice.
+      const sent = await subjects(alice);
+      expect(count(sent, MFA_ADDED['en']!.subject)).to.eql(1);
+      expect(count(sent, MFA_OFF['en']!.subject)).to.eql(1);
+      expect(count(sent, MFA_REMOVED['en']!.subject)).to.eql(0);
     });
   });
 
@@ -388,6 +402,22 @@ describe('two-step sign-in on the account page (/api/mfa)', () => {
       expect(await verify(before)).to.have.status(401);
       expect(await recoveryCodes.use(alice.user._id, codes[0]!)).to.eql(null);
       expect(await recoveryCodes.use(alice.user._id, res.body.recoveryCodes[0])).to.eql(9);
+    });
+
+    it('cancels a pending request to turn two-step sign-in off when a factor confirms a change', async () => {
+      const requested = { 'mfa.clearRequestedAt': new Date() };
+      await User.updateOne({ _id: alice.user._id }, { $set: requested });
+      // A wrong factor leaves it.
+      const wrong = await call(alice, 'post', '/recovery-codes', { password: alice.password, code: '000000' });
+      expect(wrong.body.code).to.eql('code-wrong');
+      expect((await fresh(alice.user._id))!.mfa!.clearRequestedAt).to.be.instanceOf(Date);
+
+      const res = await call(alice, 'post', '/passkeys/options', {
+        password: alice.password,
+        code: await codeNow(alice, secret)
+      });
+      expect(res).to.have.status(200);
+      expect((await fresh(alice.user._id))!.mfa!.clearRequestedAt).to.eql(undefined);
     });
 
     it('takes a recovery code, once', async () => {
@@ -676,6 +706,13 @@ describe('two-step sign-in on the account page (/api/mfa)', () => {
       follow(alice, res);
       expect((await call(alice, 'get', '')).body).to.include({ on: false, codesLeft: 0 });
       expect((await fresh(alice.user._id))!.mfa!.recoveryCodes).to.eql([]);
+      // A removal notice for the first, and for the last one that two-step sign-in is off.
+      const sent = await subjects(alice);
+      expect(count(sent, MFA_REMOVED['en']!.subject)).to.eql(1);
+      expect(count(sent, MFA_OFF['en']!.subject)).to.eql(1);
+      expect(mail.to(alice.email).find((one) => one.subject === MFA_REMOVED['en']!.subject)!.text).to.include(
+        'the passkey "Laptop"'
+      );
     });
 
     it("does not remove another account's passkey", async () => {

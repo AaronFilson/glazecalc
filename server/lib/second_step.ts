@@ -146,7 +146,8 @@ export const finish = async (pending: PendingSignIn): Promise<boolean> => {
 };
 
 /**
- * A sign-in that passed a factor (the second step, or a passkey on its own)
+ * A sign-in that passed a factor (the second step, or a passkey on its own), or
+ * a change on the account page confirmed with one (server/routes/mfa_routes.ts),
  * shows the owner still has a working factor, so it cancels a pending request
  * to turn two-step sign-in off (server/clear_mfa.ts, docs/mfa-plan.md item 15):
  * a later --clear is refused until --notify is run again. This also defeats a
@@ -158,7 +159,7 @@ export const cancelClearRequest = async (userId: Types.ObjectId): Promise<void> 
     { $unset: { 'mfa.clearRequestedAt': 1 } }
   );
   if (result.modifiedCount === 1) {
-    log.info('A sign-in with a second step cancelled a request to turn two-step sign-in off', {
+    log.info('A sign-in or confirmation with a factor cancelled a request to turn two-step sign-in off', {
       code: 'MFA_CLEAR_CANCELLED'
     });
   }
