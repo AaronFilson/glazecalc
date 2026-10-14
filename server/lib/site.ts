@@ -37,6 +37,12 @@ export const siteUrl = (): string => {
 /** '' in production; 'staging' (or whatever SITE_LABEL says) elsewhere. */
 export const siteLabel = (): string => (process.env.SITE_LABEL ?? '').trim();
 
+/** The label as mail subjects and the page banner show it: "Staging"; '' in production. */
+export const labelShown = (): string => {
+  const label = siteLabel();
+  return label.charAt(0).toUpperCase() + label.slice(1);
+};
+
 /** Whether search engines must leave this copy alone (NOINDEX=1). */
 export const noindex = (): boolean => ['1', 'true', 'on', 'yes'].includes((process.env.NOINDEX ?? '').toLowerCase());
 
@@ -67,24 +73,38 @@ export const rpName = siteName;
 /** The issuer in an otpauth:// URI, so authenticator apps keep staging and production apart. */
 export const totpIssuer = siteName;
 
-// Hooks for stream D (docs/mfa-plan.md, "Build order"). Wired in already
-// (server/app.ts, server/lib/mailer.ts); they do nothing until D fills them in.
+// What a copy that is not production does differently: wired into
+// server/app.ts and server/lib/mailer.ts. With none of the settings, each
+// does nothing.
 
 /**
- * Whether mail may go to this address. Stream D: false when mailAllowlist() is
- * set and neither the address nor its @domain is on it; mailer.send then drops
- * the message and logs only an error code.
+ * Whether mail may go to this address: always, unless MAIL_ALLOWLIST is set;
+ * then only when the address, or its @domain, is on the list. mailer.send
+ * drops the message otherwise.
  */
 export const mailAllowed = (to: string): boolean => {
-  void to;
-  return true;
+  const list = mailAllowlist();
+  if (!list) return true;
+  const address = to.trim().toLowerCase();
+  const at = address.lastIndexOf('@');
+  if (at < 1) return false;
+  return list.includes(address) || list.includes(address.slice(at));
 };
 
-/** Stream D: when noindex(), adds X-Robots-Tag: noindex, nofollow to every response. */
-export const noindexHeaders: RequestHandler = (req, res, next) => next();
+/** When noindex(), X-Robots-Tag: noindex, nofollow on every response, pages, files and the API alike. */
+export const noindexHeaders: RequestHandler = (req, res, next) => {
+  if (noindex()) res.set('X-Robots-Tag', 'noindex, nofollow');
+  next();
+};
 
-/** Stream D: when noindex(), answers /robots.txt with "User-agent: *" and "Disallow: /"; otherwise next(). */
-export const robotsTxt: RequestHandler = (req, res, next) => next();
+/** When noindex(), a robots.txt that turns every crawler away; otherwise the site's own (client/public/robots.txt). */
+export const robotsTxt: RequestHandler = (req, res, next) => {
+  if (!noindex()) return next();
+  return res.type('text/plain').set('Cache-Control', 'no-cache').send('User-agent: *\nDisallow: /\n');
+};
 
-/** Stream D: when noindex(), /sitemap.xml is 404; otherwise next(). */
-export const sitemapAllowed: RequestHandler = (req, res, next) => next();
+/** When noindex(), no sitemap: /sitemap.xml is a plain 404. */
+export const sitemapAllowed: RequestHandler = (req, res, next) => {
+  if (!noindex()) return next();
+  return res.status(404).type('text/plain').send('Not found');
+};

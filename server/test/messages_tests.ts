@@ -92,4 +92,114 @@ describe('account emails', () => {
     // English only so far: the next translation wave adds the others.
     expect(fingerprint(JSON.stringify(DELETED['en']))).to.equal('13s4itm');
   });
+
+  it('should give the two-step sign-in notices their values and signature', async () => {
+    const { MFA_ADDED, MFA_REMOVED, RECOVERY_USED, RECOVERY_NEW } = await import('../lib/account_mail.ts');
+    const values = (text: string) => [...new Set([...text.matchAll(/\{(\w+)\}/g)].map((match) => match[1]))].sort();
+    expect(values(MFA_ADDED['en']!.text)).to.eql(['account', 'app', 'forgot', 'method']);
+    expect(values(MFA_REMOVED['en']!.text)).to.eql(['account', 'app', 'forgot', 'method']);
+    expect(values(RECOVERY_USED['en']!.text)).to.eql(['account', 'app', 'forgot', 'left', 'page']);
+    expect(values(RECOVERY_NEW['en']!.text)).to.eql(['account', 'app', 'forgot']);
+    for (const emails of [MFA_ADDED, MFA_REMOVED, RECOVERY_USED, RECOVERY_NEW]) {
+      expect(emails['en']!.text).to.match(/\n-- \nGlazecalc, \{app\}\n$/);
+      expect(emails['en']!.subject).to.include('Glazecalc');
+    }
+  });
+
+  it('should have the two-step sign-in notices translated from the English as it is', async () => {
+    // English only so far (docs/mfa-plan.md, item 19): the next wave adds the others.
+    const { MFA_ADDED, MFA_REMOVED, RECOVERY_USED, RECOVERY_NEW, METHODS } = await import('../lib/account_mail.ts');
+    const { fingerprint } = await import('../../scripts/i18n-fingerprints.mjs');
+    expect(
+      fingerprint(
+        JSON.stringify([MFA_ADDED['en'], MFA_REMOVED['en'], RECOVERY_USED['en'], RECOVERY_NEW['en'], METHODS['en']])
+      )
+    ).to.equal('g444iu');
+  });
+});
+
+describe('two-step sign-in notices', () => {
+  const account = (label: string, extra: Record<string, unknown> = {}) => ({
+    email: label + '-' + Date.now() + '-' + Math.random().toString(36).slice(2) + '@test.com',
+    ...extra
+  });
+
+  it('should send each of the four notices', async () => {
+    const accountMail = await import('../lib/account_mail.ts');
+    const mail = await import('./support/mail.ts');
+    const user = account('notices');
+    accountMail.noticeMfa(user, { kind: 'added', method: { kind: 'totp' } });
+    await mail.waitFor(user.email, 1);
+    accountMail.noticeMfa(user, { kind: 'removed', method: { kind: 'passkey', name: 'Work laptop' } });
+    await mail.waitFor(user.email, 2);
+    accountMail.noticeMfa(user, { kind: 'recovery-used', left: 7 });
+    await mail.waitFor(user.email, 3);
+    accountMail.noticeMfa(user, { kind: 'recovery-new' });
+    const [added, removed, used, made] = await mail.waitFor(user.email, 4);
+    expect(added!.subject).to.equal('A sign-in step was added to your Glazecalc account');
+    expect(added!.text).to.include('as a second step for signing in: an authenticator app.');
+    expect(added!.text).to.include(user.email);
+    expect(added!.text).to.include('https://glazecalc.test/forgot');
+    expect(removed!.subject).to.equal('A sign-in step was removed from your Glazecalc account');
+    expect(removed!.text).to.include('the passkey "Work laptop".');
+    expect(used!.subject).to.equal('A recovery code was used on your Glazecalc account');
+    expect(used!.text).to.include('Unused codes left: 7.');
+    expect(used!.text).to.include('https://glazecalc.test/account');
+    expect(made!.subject).to.equal('New recovery codes for your Glazecalc account');
+    expect(made!.text).to.include('The old codes no longer work.');
+    for (const message of [added, removed, used, made]) expect(message!.text).to.not.include('{');
+  });
+
+  it("should link the account's pages in its language, in English text for now", async () => {
+    const accountMail = await import('../lib/account_mail.ts');
+    const mail = await import('./support/mail.ts');
+    const user = account('notice-de', { preferences: { language: 'de' } });
+    accountMail.noticeMfa(user, { kind: 'recovery-used', left: 1 });
+    const [used] = await mail.waitFor(user.email, 1);
+    expect(used!.subject).to.equal('A recovery code was used on your Glazecalc account');
+    expect(used!.text).to.include('https://glazecalc.test/de/account');
+  });
+
+  it("should keep a passkey's name to one plain line", async () => {
+    const { methodIn } = await import('../lib/account_mail.ts');
+    expect(methodIn({ kind: 'passkey', name: 'Phone\r\nBcc: x@y.z' })).to.equal('the passkey "Phone Bcc: x@y.z"');
+    expect(methodIn({ kind: 'passkey', name: '$& $1' })).to.equal('the passkey "$& $1"');
+    expect(methodIn({ kind: 'totp' }, 'xx')).to.equal('an authenticator app');
+  });
+
+  it('should send nothing to an unconfirmed address or a trial', async () => {
+    const accountMail = await import('../lib/account_mail.ts');
+    const mail = await import('./support/mail.ts');
+    const unconfirmed = account('notice-unconfirmed', { emailUnverified: true });
+    const trial = account('notice-trial', { guest: true });
+    const placeholder = { email: 'notice-' + Date.now() + '@guest.invalid' };
+    for (const user of [unconfirmed, trial, placeholder]) accountMail.noticeMfa(user, { kind: 'recovery-new' });
+    await mail.settle();
+    expect(mail.to(unconfirmed.email)).to.eql([]);
+    expect(mail.to(trial.email)).to.eql([]);
+    expect(mail.to(placeholder.email)).to.eql([]);
+  });
+
+  it('should never throw, even when the email cannot be sent', async () => {
+    const accountMail = await import('../lib/account_mail.ts');
+    const mail = await import('./support/mail.ts');
+    const transport = process.env.MAIL_TRANSPORT;
+    const dir = process.env.MAIL_DIR;
+    try {
+      // File transport with no folder: sending rejects.
+      delete process.env.MAIL_DIR;
+      expect(() => accountMail.noticeMfa(account('notice-fails'), { kind: 'recovery-new' })).to.not.throw();
+      // Email off altogether.
+      process.env.MAIL_TRANSPORT = 'none';
+      expect(() => accountMail.noticeMfa(account('notice-off'), { kind: 'recovery-new' })).to.not.throw();
+      // Not even for a broken user.
+      expect(() =>
+        accountMail.noticeMfa(null as unknown as { email: string }, { kind: 'recovery-new' })
+      ).to.not.throw();
+      await mail.settle();
+    } finally {
+      process.env.MAIL_TRANSPORT = transport;
+      process.env.MAIL_DIR = dir;
+    }
+  });
 });
