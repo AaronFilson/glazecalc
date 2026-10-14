@@ -507,8 +507,8 @@ operator profile (copper-bell). The instance role already reads `/glazecalc/*`
 
    It reads the parameters, pulls the image (checking that its label names the same commit),
    writes the root-only `staging.env`, starts the app and waits for `/api/health` on 3001, then
-   loads the standard materials. If the new version does not become healthy, the previous staging
-   version is started again (or staging is stopped if there was none) and it says so. A master
+   loads the standard materials. If the new version does not become healthy, the staging version
+   that was running is started again (or staging is left stopped) and it says so. A master
    build from CI works too: `staging.sh sha-<sha>`.
 
 3. **Test** on the phone and the PC at https://staging.glazecalcapp.com.

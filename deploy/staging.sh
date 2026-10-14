@@ -11,8 +11,8 @@
 #   /opt/glazecalc/staging.sh stop            stops staging between test rounds (frees its memory)
 #   /opt/glazecalc/staging.sh reset-db        empties the staging database, after a typed confirmation
 #
-# <sha> is the full 40-character commit. A failed start puts the previous
-# staging version back (or stops staging if there was none) and says so.
+# <sha> is the full 40-character commit. A failed start puts back the staging
+# version that was running (or leaves staging stopped) and says so.
 #
 # Production is never touched, on any path:
 #   - every Compose command goes through staging(), which names the project
@@ -181,6 +181,8 @@ else
   usage
 fi
 previous=$(running_tag)
+# Put back after a failure only if it was running: one stopped between rounds stays stopped.
+was_running=$(use_tag=$previous staging ps -q --status running app)
 
 # A second Node process on a 1 GB instance: only with swap to absorb peaks, so
 # staging can never push production's MongoDB out of memory.
@@ -269,7 +271,7 @@ restore_previous() {
   echo "Staging $tag failed." >&2
   use_tag=$tag staging ps -a --format '{{.Service}}: {{.Status}}' >&2 || true
   use_tag=$tag staging logs --no-color --tail 30 app >&2 || true
-  if [ -n "$previous" ] && [ "$previous" != "$tag" ]; then
+  if [ -n "$was_running" ] && [ -n "$previous" ] && [ "$previous" != "$tag" ]; then
     echo "Starting the previous staging version again: $previous" >&2
     if use_tag=$previous staging up -d --wait --wait-timeout 180; then
       exit 1
