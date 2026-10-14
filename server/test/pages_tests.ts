@@ -82,6 +82,17 @@ describe('pages in each language', () => {
     expect(sitemap(SITE)).to.include('/ja/');
   });
 
+  it('knows Turkish, before its translation is done, without offering it or giving it the plainer notice', () => {
+    const turkish = languages.languageFor('tr');
+    expect(turkish).to.include({ name: 'Türkçe', english: 'Turkish', dir: 'ltr', live: false });
+    expect(turkish).not.to.have.property('plainNotice');
+    expect(languages.LIVE_LANGUAGES).not.to.include('tr');
+    const html = pageHtml(HTML, '/tr/recipe', SITE);
+    expect(html).to.include('<html lang="tr" dir="ltr">');
+    expect(html).to.include('<meta name="robots" content="noindex" />');
+    expect(sitemap(SITE)).not.to.include('/tr/');
+  });
+
   it("puts the language's title and description in, written safely", () => {
     const html = pageHtml(
       HTML,
