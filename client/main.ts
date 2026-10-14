@@ -36,7 +36,11 @@ function afterFirstPaint(then: () => void): void {
 // index.html's script sends a reader who chose a language to the page in it, before anything is drawn.
 // There is nothing to start for a page that is being left.
 if (!document.documentElement.hasAttribute('data-leaving')) {
-  // The transfer state the prerender writes at the end of a page marks it as prerendered.
-  if (document.getElementById('ng-state')) afterFirstPaint(start);
-  else start();
+  // The transfer state the prerender writes at the end of a page marks it as prerendered. A page with a form
+  // (sign-up, a guide's choice of country) is adopted at once, so that what is typed in it goes to the app.
+  if (document.getElementById('ng-state') && !document.querySelector('gc-root :is(input, select, textarea)')) {
+    afterFirstPaint(start);
+  } else {
+    start();
+  }
 }
