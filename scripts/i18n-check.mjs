@@ -203,7 +203,14 @@ export function numbersIn(text, language) {
       return minutes === '00' ? hour : `${hour}:${minutes}`;
     });
   }
-  if (percentFirst(language)) text = text.replace(/(?<![\p{L}\p{N}])%[ \u00a0\u202f]?(\d[\d.,]*\d|\d)/gu, '$1 %');
+  if (percentFirst(language)) {
+    // A range takes the sign once, before it, as English takes it once after: %10\u201360 is 10\u201360%.
+    text = text.replace(
+      /(?<![\p{L}\p{N}])%[ \u00a0\u202f]?(\d[\d.,]*\d|\d)([\u2013-])(\d[\d.,]*\d|\d)(?![\d%])/gu,
+      '$1$2$3 %'
+    );
+    text = text.replace(/(?<![\p{L}\p{N}])%[ \u00a0\u202f]?(\d[\d.,]*\d|\d)/gu, '$1 %');
+  }
   text = text.replace(/\b(\d{1,2})(?::(\d{2}))?\s?([ap])\.?m\b\.?/gi, (_, hour, minutes, half) => {
     const h = (Number(hour) % 12) + (half.toLowerCase() === 'p' ? 12 : 0);
     return minutes ? `${h}:${minutes}` : String(h);

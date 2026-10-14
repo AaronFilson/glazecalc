@@ -110,6 +110,8 @@ describe('message checks', () => {
         expect(numbersIn(sentence, language), language).to.eql(figures);
         expect(compareMessage(language, 'k', english, sentence), language).to.eql([]);
       }
+      // A Turkish range takes the percent sign once, before it, as English takes it once after.
+      expect(numbersIn('%10–60 ve %0,5-2', 'tr')).to.eql(numbersIn('10–60% and 0.5-2%', 'en'));
       // A unit followed by a Latin letter is still part of a word: 5 grams, not 5 g.
       expect(numbersIn('5 gram', 'id')).to.eql(['5']);
       // A time with minutes keeps them, as 8:30pm does.
