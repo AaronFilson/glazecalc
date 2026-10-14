@@ -51,12 +51,18 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   the top of every page once closed. The numbers check now takes each language's decimal mark from
   CLDR, as both write 1.5 as English does. The back-translations found a cell both had misread ("a
   barium frit or strontium"); checked in every live language, the Portuguese now reads plainly too.
+- **In Japanese** (日本語), the first language outside the EU, at its own addresses (`/ja/recipe`),
+  made the same way: a style sheet and glossary from suppliers' catalogues (ゼーゲル式, SK cones named
+  as SK), the 24-hour clock, reviewed, made consistent and the safety text checked by translating it
+  back, which found eight slips in meaning, fixed. That makes 25 languages. The SK firing guide
+  section, Japan's poison lines, silica limit and food-contact rules, and the password emails are
+  in Japanese too.
 - **SK cones (JIS R 8101)** as a third way to fire, in Settings beside Orton cones and temperature,
   and in the firing guide: setting large cones, guide, firing and guard cones, Kyoto cones, and the
   SK 022 to SK 20 chart with each figure marked nominal (JIS), its source and the date checked. SK and
   Orton numbers are never turned into each other. The new guide section is in English until it is
   translated.
-- **Japan as a region** (in English for now). It fires by SK cones and reads glaze density in
+- **Japan as a region** (in Japanese or English). It fires by SK cones and reads glaze density in
   degrees Baumé until you choose otherwise, and lists the US materials until Japan's own are added.
   The guides give, each from an official page with its date:
   - **Who to call:** 119, and the Japan Poison Information Center's two public lines (Osaka and
