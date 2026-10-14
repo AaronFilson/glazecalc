@@ -21,6 +21,7 @@ import type { HydratedDocument, Types } from 'mongoose';
 import { SECOND_STEP_MINUTES, SECOND_STEP_TRIES } from '../../lib/mfa.js';
 import appSecret from './app_secret.ts';
 import * as factors from './factors.ts';
+import * as log from './log.ts';
 import type { MessageCode } from './messages.ts';
 import * as webauthn from './webauthn.ts';
 import PendingSignInModel, { type PendingSignInFields } from '../models/pending_sign_in.ts';
@@ -142,4 +143,23 @@ export const finish = async (pending: PendingSignIn): Promise<boolean> => {
     { $set: { usedAt: now } }
   );
   return result.modifiedCount === 1;
+};
+
+/**
+ * A sign-in that passed a factor (the second step, or a passkey on its own)
+ * shows the owner still has a working factor, so it cancels a pending request
+ * to turn two-step sign-in off (server/clear_mfa.ts, docs/mfa-plan.md item 15):
+ * a later --clear is refused until --notify is run again. This also defeats a
+ * clear request someone else made. One atomic $unset; the log line names no one.
+ */
+export const cancelClearRequest = async (userId: Types.ObjectId): Promise<void> => {
+  const result = await User.updateOne(
+    { _id: userId, 'mfa.clearRequestedAt': { $exists: true } },
+    { $unset: { 'mfa.clearRequestedAt': 1 } }
+  );
+  if (result.modifiedCount === 1) {
+    log.info('A sign-in with a second step cancelled a request to turn two-step sign-in off', {
+      code: 'MFA_CLEAR_CANCELLED'
+    });
+  }
 };

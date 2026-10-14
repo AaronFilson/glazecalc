@@ -161,6 +161,7 @@ authRouter.post(
     }
     // Single use: of two right answers racing, only one signs in.
     if (!(await secondStep.finish(pending))) return res.status(401).json(say('second-step-expired'));
+    await secondStep.cancelClearRequest(user._id);
     return signedIn(res, user, pending.trialId, pending.keep);
   }
 );
@@ -198,6 +199,7 @@ authRouter.post('/signin/passkey', limits.signIn, express.json(), async (req, re
   if (!(await secondStep.checks.verifyAuthentication(user, assertion, challenge, true))) {
     return res.status(401).json(say('passkey-failed'));
   }
+  await secondStep.cancelClearRequest(user._id);
   const trial = await currentUser(req);
   return signedIn(res, user, trial?.guest ? trial._id : undefined, session.wantsKept(req));
 });

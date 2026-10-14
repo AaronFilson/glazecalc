@@ -4,6 +4,7 @@
 // (stream B), with no stand-ins. auth_routes_tests.ts tests the flow itself
 // through second_step.checks; this file tests the two together.
 import type { PasskeyRequestOptionsResponse, SecondStepResponse } from '../../lib/mfa.js';
+import { clear, notify, WAIT_DAYS } from '../clear_mfa.ts';
 import * as site from '../lib/site.ts';
 import * as totp from '../lib/totp.ts';
 import User from '../models/user.ts';
@@ -11,6 +12,7 @@ import { api, expect, makeUser, sessionToken } from './support/app.ts';
 import { SoftAuthenticator } from './support/soft_authenticator.ts';
 
 type Res = Awaited<ReturnType<ReturnType<typeof api>['get']>>;
+const DAY = 24 * 60 * 60 * 1000;
 
 interface Account {
   user: Awaited<ReturnType<typeof makeUser>>['user'];
@@ -250,6 +252,60 @@ describe('two-step sign-in end to end (real factors)', () => {
         expect(res, JSON.stringify(twist)).to.have.status(401);
         expect(res.body.code).to.eql('passkey-failed');
       }
+    });
+  });
+
+  describe('a pending request to turn two-step sign-in off', () => {
+    const requested = async (who: Account) => {
+      const when = new Date(Date.now() - (WAIT_DAYS + 1) * DAY);
+      expect((await notify(who.email, when)).ok).to.eql(true);
+      return when;
+    };
+    const clearRequestedAt = async (who: Account) => (await User.findById(who.user._id).lean())!.mfa?.clearRequestedAt;
+
+    it('is cancelled by a second step, so a later --clear is refused', async () => {
+      const alice = await account();
+      const { secret } = await enrolTotp(alice);
+      await requested(alice);
+      const { pending } = await passwordStep(alice);
+      // A wrong code cancels nothing.
+      expect(await secondStep(pending, { code: '000000' })).to.have.status(401);
+      expect(await clearRequestedAt(alice)).to.be.instanceOf(Date);
+
+      expect(await secondStep(pending, { code: await codeNow(alice, secret) })).to.have.status(200);
+      expect(await clearRequestedAt(alice)).to.eql(undefined);
+      const outcome = await clear(alice.email);
+      expect(outcome.ok).to.eql(false);
+      expect(outcome.message).to.match(/--notify first/);
+      expect((await User.findById(alice.user._id).lean())!.mfa!.totp).to.not.eql(undefined);
+    });
+
+    it('is cancelled by a passkey-first sign-in', async () => {
+      const alice = await account();
+      const { authenticator } = await addPasskey(alice);
+      await requested(alice);
+      expect(await passkeySignIn(authenticator.assert((await passkeyOptions()).challenge))).to.have.status(200);
+      expect(await clearRequestedAt(alice)).to.eql(undefined);
+      expect((await clear(alice.email)).ok).to.eql(false);
+    });
+
+    it('does not outlive two-step sign-in being turned off and on again', async () => {
+      const alice = await account();
+      const first = await enrolTotp(alice);
+      await requested(alice);
+      const removed = await api()
+        .delete('/mfa/totp')
+        .set('Authorization', 'Bearer ' + alice.token)
+        .send({ password: alice.password, code: await codeNow(alice, first.secret) });
+      expect(removed.body.code).to.eql('mfa-off');
+      follow(alice, removed);
+      expect(await clearRequestedAt(alice)).to.eql(undefined);
+      // As an account left from before turning it off cleared the request would have it.
+      await User.updateOne({ _id: alice.user._id }, { $set: { 'mfa.clearRequestedAt': new Date(0) } });
+      await enrolTotp(alice);
+      expect(await clearRequestedAt(alice)).to.eql(undefined);
+      // Turned on again, with no notice since: --clear must not run at once.
+      expect((await clear(alice.email)).ok).to.eql(false);
     });
   });
 });

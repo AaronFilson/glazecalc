@@ -204,6 +204,7 @@ Everything that differs between production and staging comes from the environmen
       - `node server/clear_mfa.ts --notify <email>` emails the address: "two-step sign-in will be turned off on <date + 7 days> unless you reply".
       - `--clear <email>` (refused before 7 days, using a `clearRequestedAt` field) removes the factors and codes, raises `tokenVersion` and sends `MFA_REMOVED`.
       - The owner runs it only for a request from the account's confirmed address, after the requester has done a password reset. This is the rule already in `docs/data-requests.md`: verify by a link, never by ID.
+      - **A sign-in with a factor cancels the request** (coordinator, 14 October 2026): a successful second step, or a successful passkey-first sign-in, removes a pending `mfa.clearRequestedAt` with one atomic `$unset`, and logs only `MFA_CLEAR_CANCELLED` (no address). The real owner still has a working factor, and it defeats a clear request made by someone else. A later `--clear` is then refused until `--notify` is run again. Turning two-step sign-in off, or on again, also removes it, so an old request never applies to a later setup.
     - **No admin route over HTTP,** so a stolen admin session can't remove anyone's factors. `selfOrAdmin` and `SETTABLE_FIELDS` stay as they are, and `mfa` is never settable.
 
     Effort S. Files: new `server/clear_mfa.ts` (stream B; `mfa.clearRequestedAt` is in the model since step 0), `docs/data-requests.md`, `deploy/README.md` (stream D).

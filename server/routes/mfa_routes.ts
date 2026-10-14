@@ -98,6 +98,8 @@ async function addFactor(
       {
         ...update,
         $set: { ...update.$set, 'mfa.recoveryCodes': made.stored, 'mfa.recoveryMadeAt': new Date() },
+        // A request to turn it off (server/clear_mfa.ts) from before it was off ends here.
+        $unset: { 'mfa.clearRequestedAt': 1 },
         $inc: { tokenVersion: 1 }
       },
       after
@@ -138,7 +140,7 @@ async function removeFactor(
       {
         ...update,
         $set: { ...update.$set, 'mfa.recoveryCodes': [] },
-        $unset: { ...update.$unset, 'mfa.recoveryMadeAt': 1 },
+        $unset: { ...update.$unset, 'mfa.recoveryMadeAt': 1, 'mfa.clearRequestedAt': 1 },
         $inc: { tokenVersion: 1 }
       },
       after
