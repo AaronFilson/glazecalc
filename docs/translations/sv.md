@@ -126,7 +126,8 @@ number and gender: "1 sparat recept, 2 sparade recept", "1 ny råvara, 3 nya rå
 "Ortonkägla 07, 976-987 °C", LM "Orton smältkägla" with numbers from 017 to 10 and the warning "Det finns käglor med
 nummer 06, 07, 08 och 6, 7, 8 se till att välja rätt." Potters write "kägla 6-7", "kägla 08 skröj" (KF 1659137, KF
 1560466), but also call any cone "segerkägla" (KF 1443725 "segerkäglorna") or "kon" (KF 1394270 "koner eller käglor").
-True Seger cones (SK) are a different series whose numbers do not match Orton's. So:
+True (German) Seger cones are a different series whose numbers do not match Orton's. "SK" in the app means only the
+Japanese cones to JIS R 8101 (section 2.11), never German Seger cones. So:
 
 - "cone 6" → "kägla 6"; "cone 06" → "kägla 06" (read "noll sex": kägla 06 is far cooler than kägla 6).
 - "Orton cone" → "Ortonkägla" (en; Ortonkäglan, Ortonkäglor); at the first mention on a page, and wherever systems are
@@ -134,7 +135,7 @@ True Seger cones (SK) are a different series whose numbers do not match Orton's.
 - "cone 04 bisque" → "skröjbränning till kägla 04"; "fire to cone 6" → "bränna till kägla 6"; "at cone 10" → "vid
   kägla 10"; "a cone 6 glaze" → "en glasyr för kägla 6"; "cone 5–6" → "kägla 5–6".
 - **Never** write "Segerkägla 6", "SK 6" or "kon 6" for an Orton number. "Segerkägla" appears only where the English
-  says "Seger cones", and then means the SK series.
+  says "Seger cones", and then means the German Seger series, never the Japanese SK cones.
 
 **The unity formula.** "Segerformel" (en; Segerformeln), with "(UMF)" after it the first time on a page: "Segerformeln
 (UMF)", then "Segerformeln". Swedish potters call it so (KF 1530013: "Seger formel säger vi väl?", and "gränsformler"
@@ -570,6 +571,29 @@ text of the same EU rules.
 | Directive 84/500/EEC (its official name)                              | Direktiv 84/500/EEG (ändrat genom direktiv 2005/31/EG)                         | regions: the directive                        |
 | Latvia's law gives this limit for the inhalable fraction of the dust. | Lettlands lag anger detta gränsvärde för den inhalerbara fraktionen av dammet. | regions: Latvia                               |
 
+### 2.10 Search terms
+
+From the search-term research of 2026-10-14 (Google suggest, Sweden): the bare "glasyr" also means cake icing, so page
+titles and descriptions pair it with the ceramics word: "keramikglasyr", "glasyr keramik". Searchers also use
+"glasyrrecept", "Segerformeln" (with "(UMF)" after it, never UMF alone), "stengodsglasyr" and "glasyrberäkning". The
+landing title is "Glazecalc: gratis glasyrberäkning för keramiker". Use these only where they say what the English
+says; never add a claim for the sake of a search term.
+
+### 2.11 SK cones, Japan and accounts
+
+| English                                      | Swedish                                                                   | Notes                                                                                                            |
+| -------------------------------------------- | ------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| SK cones (JIS R 8101), SK 8                  | SK-käglor (JIS R 8101); SK 8                                              | Always "SK" before the number; never "Segerkägla" or an Orton number. Setting "To SK cones" → "Efter SK-käglor". |
+| Kyoto cones                                  | Kyotokäglor                                                               |                                                                                                                  |
+| control concentration (管理濃度)             | kontrollkoncentration (en)                                                | Japan's yardstick for the air of a work area; not a hygieniskt gränsvärde.                                       |
+| Japan Poison Information Center, Osaka       | Japans giftinformationscentral, Osaka (大阪中毒110番)                     | Native name in brackets as given.                                                                                |
+| National Poison Information Centre (Türkiye) | Nationella giftinformationscentralen (Ulusal Zehir Danışma Merkezi, UZEM) | Türkiye → "Turkiet" in running text.                                                                             |
+| controller (data protection)                 | personuppgiftsansvarig                                                    | GDPR's Swedish term.                                                                                             |
+| cookie, local storage, session storage       | kaka (en); lokal lagring; sessionslagring                                 | "cookie banner" → "kakbanner".                                                                                   |
+| Download my data                             | Ladda ner kontots uppgifter                                               | As "Delete my account" → "Radera kontot".                                                                        |
+| Sign out everywhere                          | Logga ut överallt                                                         |                                                                                                                  |
+| Keep me signed in on this device             | Håll mig inloggad på den här enheten                                      | First person, as the check box speaks for the user.                                                              |
+
 ## 3. Never translated
 
 From terms.md, unchanged:
@@ -597,8 +621,9 @@ From terms.md, unchanged:
   Albany slip, Bayferrox, Mason stains, AMACO.
 - **Sources, agencies and suppliers:** Glazy, Digitalfire, Ceramic Arts Network, Ceramics Monthly, HSE, OSHA, NIOSH,
   IARC, ECHA, FDA, CDC, EPA, NHS, COSHH, NEPSI, Safe Work Australia, WorkSafe New Zealand; Laguna, Potclays,
-  Potterycrafts, Valentine Clays, Sibelco, Imerys, Walker Ceramics and the other suppliers named; the poison services
-  in `safety/en.json`.
+  Potterycrafts, Valentine Clays, Sibelco, Imerys, Walker Ceramics and the other suppliers named; the poison services' native
+  official names in `safety/en.json` (an English descriptive name, such as "Japan Poison Information Center, Osaka",
+  is translated, and the native name kept exactly in brackets after it).
 - **Placeholders and tags:** `{name}`, `{count}` and the rest, and `<b>`, `<settings>` and other tags.
 
 Added for Swedish:

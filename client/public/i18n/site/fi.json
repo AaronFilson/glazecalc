@@ -64,7 +64,115 @@
   "privacy": {
     "title": "Tietosuoja",
     "lead": "Päivitetty viimeksi lokakuussa 2026.",
-    "shortHeading": "Lyhyesti"
+    "shortHeading": "Lyhyesti",
+    "short": "Glazecalc säilyttää sen, mitä tilin ylläpitoon tarvitaan, eikä mitään muuta. Mainoksia, analytiikkaa tai seurantaa ei ole. Tietoja ei koskaan myydä, ja ainoa niitä käsittelevä yritys on Amazon Web Services, joka ylläpitää sivustoa ja lähettää sen sähköpostit.",
+    "whoHeading": "Kuka vastaa tiedoista",
+    "who": "Glazecalc on ilmainen, avoimen lähdekoodin ja voittoa tavoittelematon projekti, jota ylläpitää sen omistaja Aaron Filson Yhdysvalloissa. Hän päättää, mitä tiedoille tapahtuu, joten tietosuojalainsäädännössä hän on niiden ”rekisterinpitäjä”.",
+    "contact": "Omia tietoja koskevat kysymykset ja pyynnöt minkä tahansa oikeuden käyttämisestä voi lähettää osoitteeseen <mail>privacy@glazecalcapp.com</mail>. Asiasta voi myös <issues>tehdä ilmoituksen GitHubissa</issues>, mutta ilmoitukset ovat julkisia: älä koskaan kirjoita niihin sähköpostiosoitetta tai mitään henkilökohtaista. Useimmat omiin tietoihin liittyvät asiat voi hoitaa itse <account>tilisivulla</account>.",
+    "storedHeading": "Mitä säilytetään ja miksi",
+    "storedAccount": "<b>Tili:</b> sähköpostiosoite ja salasana, joka tallennetaan vain yksisuuntaisena tiivisteenä (bcrypt), ei koskaan sellaisenaan. Asetukset (kuten kieli, alue ja yksiköt) ja luettelo varastossa olevista raaka-aineista säilytetään tilin yhteydessä. Tili tarvitsee sähköpostiosoitteen kirjautumista ja unohtuneen salasanan palauttamista varten. Kun tili luodaan, osoitteeseen lähetetään linkki, jolla vahvistetaan, että osoite on oma; siihen asti osoitteeseen lähetetään viestejä vain pyynnöstä, esimerkiksi salasanan palauttamiseksi.",
+    "storedSaved": "<b>Tallennettu sisältö:</b> reseptit, raaka-aineet, lisäaineet, muistiinpanot, polttopäiväkirjat ja neuvot sellaisina kuin ne on kirjoitettu. Ne näkyvät vain tilin omistajalle: mitään ei jaeta käyttäjien kesken.",
+    "storedTrial": "<b>Kokeilu (Kokeile nyt):</b> ei sähköpostiosoitetta eikä salasanaa, vain keksitty nimi, kuten ”speckled quiet kilns”. Jos samassa selaimessa kirjaudutaan kokeilun aikana tilille, kokeilussa tehty siirtyy tilille.",
+    "storedResets": "<b>Salasanan palautus- ja sähköpostilinkit:</b> mikä tili pyysi linkkiä ja milloin, osoite, johon osoitteen vahvistuslinkki lähetettiin, sekä kunkin linkin tunnistetiiviste (ei itse linkkiä).",
+    "storedLogs": "<b>Lokit:</b> verkkopalvelin kirjaa jokaisen pyynnön: IP-osoitteen, ajan, pyydetyn sivun ja selaimen nimen. Sovellus kirjaa virheet ja sivun, jolla ne tapahtuivat, mutta ei koskaan sähköpostiosoitetta.",
+    "storedDeletions": "<b>Poistetut tilit:</b> tilin tunnusnumero ja poistoaika eikä mitään muuta, jotta palautettu varmuuskopio ei voi tuoda tiliä takaisin.",
+    "storedMail": "<b>Sähköpostiongelmat:</b> jos osoitteeseen lähetetty viesti palautuu tai se ilmoitetaan roskapostiksi, Amazonin sähköpostipalvelu lisää osoitteen luetteloon osoitteista, joihin ei enää lähetetä postia, ja lähettää omistajalle ilmoituksen, jossa osoite mainitaan.",
+    "storedInbound": "<b>Glazecalcille lähetetty posti:</b> Amazon tarkistaa osoitteeseen privacy@glazecalcapp.com ja Glazecalcin muihin osoitteisiin lähetetyt viestit roskapostin ja virusten varalta, säilyttää ne yksityisessä tallennustilassa ja välittää ne omistajan omaan postilaatikkoon (Gmail).",
+    "basisHeading": "Oikeusperuste",
+    "basisContract": "<b>Tilin ylläpito</b>, tallennetun sisällön säilyttäminen ja tiliä koskevat sähköpostit ovat palvelu, jota käyttäjä on pyytänyt: oikeusperuste on käyttäjän ja Glazecalcin välinen sopimus (yleisen tietosuoja-asetuksen 6 artiklan 1 kohdan b alakohta).",
+    "basisInterests": "<b>Sivuston turvallisuus ja toimivuus</b>: lokit, rajoitukset sille, kuinka usein kukaan voi yrittää kirjautua, varmuuskopiot, poistettujen tilien tiedot ja luettelo osoitteista, joihin ei lähetetä postia. Ne perustuvat Glazecalcin oikeutettuun etuun turvallisuuden, väärinkäytösten estämisen ja sen osalta, ettei käyttäjien työ katoa (6 artiklan 1 kohdan f alakohta). Niitä säilytetään lyhyen aikaa eikä käytetä mihinkään muuhun. Niiden käyttöä voi vastustaa kirjoittamalla yllä olevaan osoitteeseen.",
+    "basisNone": "Käyttäjää koskevia päätöksiä ei tehdä automaattisesti, profilointia ei ole, eikä mitään käytetä mainontaan.",
+    "whereHeading": "Missä tiedot säilytetään ja kuka niitä käsittelee",
+    "hosting": "Glazecalc toimii Amazon Web Services -palvelussa (AWS): palvelin (EC2), varmuuskopiot (S3) ja sähköposti (Simple Email Service), kaikki Yhdysvalloissa, Oregonissa (us-west-2). AWS käsittelee tietoja vain Glazecalcin puolesta <dpa>tietojenkäsittelyehtojensa</dpa> mukaisesti. Kukaan muu ei saa niitä.",
+    "transfer": "EU:ssa, Isossa-Britanniassa tai Sveitsissä asuvien tiedot siirtyvät Yhdysvaltoihin. Amazonin mukaan se on sertifioitu <dpf>EU:n ja Yhdysvaltojen välisen tietosuojakehyksen</dpf> sekä sen Isoa-Britanniaa ja Sveitsiä koskevien laajennusten mukaisesti, ja AWS:n ehtoihin sisältyvät EU:n vakiosopimuslausekkeet, joita sovellettaisiin edelleen, jos kehys, jonka pätevyys on nyt riitautettu tuomioistuimessa, kumottaisiin. Omistaja ja AWS ovat molemmat Yhdysvalloissa, ja Yhdysvaltojen laki voi velvoittaa ne luovuttamaan tietoja.",
+    "noThirdParties": "Selain ei lataa mitään muilta verkkosivustoilta: ei fontteja, skriptejä, kuvia eikä analytiikkaa muualta, ja sivuston suojausasetukset estävät ne. Linkkejä GitHubiin ja muille sivustoille seurataan vain, kun niitä napsautetaan.",
+    "choiceHeading": "Tilin säilytyspaikka ja oma valinta",
+    "choiceProject": "Glazecalc on ilmainen avoimen lähdekoodin projekti. Tilit ja kaikki niiden sisältö säilytetään palvelimilla Yhdysvalloissa asuinpaikasta riippumatta, kuten edellä kuvataan.",
+    "choiceNoAccount": "Oppaiden lukemiseen ei tarvita tiliä, ja laskinta voi kokeilla Kokeile nyt -toiminnolla ilman sähköpostiosoitetta tai salasanaa. Kokeilu säilytetään samoilla palvelimilla 14 päivää.",
+    "choiceOwnCopy": "Kuka tahansa voi ajaa omaa Glazecalc-kopiotaan omalla tietokoneellaan tai palvelimellaan: koodi on ilmaiseksi saatavilla <source>GitHubissa</source>.",
+    "choiceDecision": "Tilin luominen tänne tietäen, että se säilytetään Yhdysvalloissa, on jokaisen oma päätös.",
+    "choiceNoWarranty": "Glazecalc tarjotaan sellaisenaan, ilman takuuta. Sen ylläpitäjät eivät ota vastuuta eivätkä korvausvastuuta päätöksestä luoda tili eivätkä siitä, missä tilin tietoja säilytetään.",
+    "keptHeading": "Kuinka kauan tietoja säilytetään",
+    "keptAccount": "<b>Tili ja tallennettu sisältö:</b> kunnes käyttäjä poistaa ne. Tilejä ei poisteta käyttämättömyyden vuoksi.",
+    "keptTrial": "<b>Kokeilu:</b> 14 päivää alkamisesta, minkä jälkeen se poistetaan kaikkine sisältöineen, ellei sen säilyttämiseksi luoda tiliä.",
+    "keptResets": "<b>Salasanan palautus- ja sähköpostilinkit:</b> palautuslinkki on voimassa 30 minuuttia, ja sen tiedot poistetaan noin tunnin kuluttua; osoitteen vahvistuslinkki on voimassa ja sen tiedot säilytetään 24 tuntia.",
+    "keptBackups": "<b>Varmuuskopiot:</b> tietokannan salattuja kopioita säilytetään 30 päivää ja palvelimen levyn kopioita 7 päivää. Poistettu tili häviää siis kaikista varmuuskopioista 30 päivän kuluessa.",
+    "keptDeletions": "<b>Poistetun tilin tiedot:</b> 37 päivää, hieman pidempään kuin mikään varmuuskopio.",
+    "keptLogs": "<b>Lokit:</b> verkkopalvelimen lokit 14 päivää. Sovelluksen ja tietokannan omien lokien kokoa on rajoitettu (kumpikin 50 MB), mikä hiljaisella sivustolla kattaa useita päiviä taaksepäin. Palvelimen levyn kopioissa lokit säilyvät vielä enintään 7 päivää pidempään.",
+    "keptMail": "<b>Luettelo osoitteista, joihin ei lähetetä postia:</b> kunnes omistaja poistaa osoitteen; hän poistaa kuukausittain osoitteet, jotka eivät enää kuulu millekään tilille. Omistaja poistaa ilmoitukset palautuneista viesteistä 30 päivän kuluessa.",
+    "keptInbound": "<b>Glazecalcille lähetetty posti:</b> 30 päivää Amazonin tallennustilassa ja omistajan postilaatikossa niin kauan kuin vastaaminen vie. Omia tietoja koskevasta pyynnöstä säilytetään lyhyt merkintä (milloin pyyntö saapui, mitä pyydettiin ja mitä tehtiin) kolmen vuoden ajan.",
+    "rightsHeading": "Käyttäjän oikeudet",
+    "rightsIntro": "Omia tietoja voi tarkastella, korjata, siirtää ja poistaa. Suurimman osan voi tehdä itse <account>tilisivulla</account>:",
+    "rightsExport": "<b>Tietojen tarkastelu ja siirtäminen:</b> Omien tietojen lataaminen tallentaa kaiken yhteen tiedostoon (JSON) sekä reseptit ja raaka-aineet taulukoiksi (CSV).",
+    "rightsCorrect": "<b>Tietojen korjaaminen:</b> asetuksia ja tietueita voi muuttaa milloin tahansa. Sähköpostiosoite vaihdetaan avaamalla uuteen osoitteeseen lähetetty linkki; vanhaan osoitteeseen ilmoitetaan muutoksesta, jos se oli vahvistettu, ja kaikki laitteet kirjataan ulos.",
+    "rightsDelete": "<b>Tietojen poistaminen:</b> Poista tili -toiminto poistaa tilin ja kaiken tallennetun heti, ja Hylkää kokeilu -toiminto tekee saman kokeilulle. Varmuuskopioissa olevat kopiot häviävät 30 päivän kuluessa.",
+    "rightsSignOut": "<b>Uloskirjautuminen kaikilta laitteilta:</b> päättää tilin istunnot kaikilla laitteilla.",
+    "rightsAsk": "Muissa asioissa, esimerkiksi kun pyydetään, ettei tietoja käytetä sinä aikana, kun virhettä korjataan, tai kun vastustetaan tietojen käyttötapaa, kirjoita osoitteeseen <mail>privacy@glazecalcapp.com</mail>. Se on maksutonta, ja vastaus annetaan kuukauden kuluessa. Ainoastaan tilin omistajuus pyydetään osoittamaan, kirjautumalla sisään tai avaamalla tilin osoitteeseen lähetetty linkki; henkilöllisyystodistusta ei koskaan pyydetä.",
+    "rightsComplain": "Jos vastaus ei tyydytä, valituksen voi tehdä tietosuojaviranomaiselle: EU:ssa <edpb>oman maan viranomaiselle</edpb> ja Isossa-Britanniassa viranomaiselle <ico>Information Commissioner’s Office</ico>.",
+    "storageHeading": "Evästeet ja selaimen tallennustila",
+    "storageIntro": "Glazecalc asettaa yhden evästeen ja säilyttää selaimessa muutamia pieniä arvoja. Jokainen niistä on olemassa jotakin pyydettyä varten: kirjautuneena pysymistä tai tehdyn valinnan muistamista. Mikään niistä ei seuraa käyttäjää eikä mitään niistä jaeta, joten laki ei edellytä luvan kysymistä etukäteen, eikä evästebanneria ole.",
+    "storageLabel": "Evästeet ja selaimen tallennustila",
+    "storageName": "Nimi",
+    "storagePurpose": "Käyttötarkoitus",
+    "storageLasts": "Säilymisaika",
+    "storageCookie": "Eväste",
+    "storageLocal": "Paikallinen tallennustila",
+    "storageSession": "Istuntotallennustila",
+    "storageNote": "Minkä tahansa näistä voi tyhjentää selaimen asetuksista milloin tahansa. Tilin poistaminen poistaa kirjautumismerkinnän ja kaikki tänne tallennetut asetukset.",
+    "keys": {
+      "cookie": {
+        "purpose": "Pitää käyttäjän kirjautuneena. Siinä on kirjautumistunniste. Sivun skriptit eivät voi lukea sitä, ja selain lähettää sen vain Glazecalcin omalle palvelimelle HTTPS-yhteydellä eikä koskaan sellaisen pyynnön mukana, joka alkaa toiselta sivustolta.",
+        "lasts": "Asetetaan kirjautumisen, tilin luomisen tai kokeilun aloittamisen yhteydessä. Kunnes selain suljetaan, tai 7 päivää, jos Pysy kirjautuneena tällä laitteella -valinta on merkitty; kokeilussa 14 päivää. Uloskirjautuminen poistaa sen."
+      },
+      "session": {
+        "purpose": "Merkitsee, että käyttäjä on kirjautunut tilille tai kokeiluun, jotta sovellus osaa kysyä palvelimelta. Siinä ei ole tunnistetta eikä salasanaa.",
+        "lasts": "Kunnes käyttäjä kirjautuu ulos tai istunto päättyy."
+      },
+      "trial": {
+        "purpose": "Kokeilun aikana sen nimi ja päättymispäivä niiden näyttämistä varten.",
+        "lasts": "Kunnes kokeilu päättyy, säilytetään tai hylätään."
+      },
+      "settings": {
+        "purpose": "Tässä selaimessa muutettu asetus, jotta seuraava sivu näyttää sen heti, ennen kuin palvelin vastaa. <code>theme</code> ja <code>palette</code> värittävät sivun ennen kuin se tulee näkyviin, ja <code>language</code> avaa sivut valitulla kielellä.",
+        "lasts": "Kunnes sitä muutetaan. Uloskirjautuminen palauttaa uloskirjautuneena tehdyt valinnat, jos niitä on, ja poistaa loput."
+      },
+      "visitor": {
+        "purpose": "Uloskirjautuneena valittu kieli tai tieto siitä, että käännösilmoitus suljettiin, jotta ne palaavat uloskirjautumisen jälkeen.",
+        "lasts": "Kunnes selaimen tallennustila tyhjennetään tai tässä selaimessa poistetaan tili."
+      },
+      "region": {
+        "purpose": "Kirjastoluettelon aluesuodatin.",
+        "lasts": "Kunnes suodatin palautetaan kaikkiin alueisiin."
+      },
+      "includeAdditives": {
+        "purpose": "Lasketaanko uusien reseptien lisäaineet mukaan Segerin kaavaan, kuten viimeksi valittiin.",
+        "lasts": "Kunnes selaimen tallennustila tyhjennetään."
+      },
+      "recipeHelp": {
+        "purpose": "Tieto siitä, että reseptisivun ohje on piilotettu.",
+        "lasts": "Kunnes ohje näytetään uudelleen."
+      },
+      "print": {
+        "purpose": "Viimeisimmät valinnat reseptin tulostukseen: koko resepti vai erä, ja eräkoko.",
+        "lasts": "Kunnes selaimen tallennustila tyhjennetään."
+      },
+      "token": {
+        "purpose": "Glazecalcin vanhan version kirjautumistunniste. Sitä ei enää koskaan tallenneta.",
+        "lasts": "Poistetaan, kun sivu avataan."
+      },
+      "readEnglish": {
+        "purpose": "Tieto siitä, että käännetty sivu valittiin luettavaksi englanniksi, jotta sovellus lakkaa siirtämästä omalle kielelle.",
+        "lasts": "Kunnes välilehti suljetaan."
+      },
+      "reloadedFor": {
+        "purpose": "Sivuston uuden version julkaisun jälkeen tieto siitä, mikä sivu ladattiin uudelleen ja milloin, jotta sivu latautuu uudelleen enintään kerran minuutissa.",
+        "lasts": "Kunnes välilehti suljetaan."
+      }
+    },
+    "childrenHeading": "Lapset",
+    "children": "Glazecalc on keraamikoiden työkalu, eikä sitä ole suunnattu lapsille.",
+    "changesHeading": "Muutokset",
+    "changes": "Jos tämä seloste muuttuu, myös sivun yläreunan päivämäärä muuttuu."
   },
   "notFound": {
     "heading": "Sivua ei löydy",

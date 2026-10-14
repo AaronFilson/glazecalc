@@ -164,6 +164,28 @@ describe('PreferencesService', () => {
     expect(localStorage.getItem('weightUnit')).toBe('lb');
   });
 
+  it('takes SK cones (JIS R 8101) as a third way to fire, from the account and to it', async () => {
+    const preferences = TestBed.inject(PreferencesService);
+    const loading = preferences.load();
+    httpMock()
+      .expectOne(API + '/preferences')
+      .flush({ cones: 'sk' });
+    await loading;
+    expect(preferences.cones()).toBe('sk');
+    const saving = preferences.set('cones', 'temperature');
+    const req = httpMock().expectOne(API + '/preferences');
+    expect(req.request.body).toEqual({ cones: 'temperature' });
+    req.flush({ cones: 'temperature' });
+    await saving;
+    const back = preferences.set('cones', 'sk');
+    const again = httpMock().expectOne(API + '/preferences');
+    expect(again.request.body).toEqual({ cones: 'sk' });
+    again.flush({ cones: 'sk' });
+    await back;
+    expect(preferences.cones()).toBe('sk');
+    expect(localStorage.getItem('cones')).toBe('sk');
+  });
+
   it('writes a key only for the choice made, and clears it when the account signs out', async () => {
     localStorage.setItem('session', 'account');
     const preferences = TestBed.inject(PreferencesService);

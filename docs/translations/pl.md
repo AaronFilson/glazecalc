@@ -522,6 +522,24 @@ the reviewed translation uses them. Names of shops, laws and agencies stay as th
 | Directive 84/500/EEC (its official name)                              | dyrektywa 84/500/EWG (zmieniona dyrektywą 2005/31/WE)                          | regions: the directive                        |
 | Latvia's law gives this limit for the inhalable fraction of the dust. | Prawo łotewskie podaje ten limit dla frakcji wdychalnej pyłu.                  | regions: Latvia                               |
 
+### 2.10 Search terms and the newer text
+
+- **Search terms** (titles and meta descriptions, research of 2026-10-14): Polish searchers pair the glaze word with
+  the ceramics word, since bare _szkliwo_ also means tooth enamel: _szkliwa ceramiczne_, _szkliwo do ceramiki_. The
+  Seger term is searched (_wzór Segera_); write _wzór Segera (UMF)_ where the English says unity formula. Searchers
+  write _przepis na szkliwo_, but the app keeps _receptura_ (see 2.8). Landing title: _Glazecalc: bezpłatny
+  kalkulator szkliw ceramicznych_.
+- **SK cones** (Japan, JIS R 8101): _stożki SK_, always with "SK" before the number (_SK 8_, _SK 6a_); never _stożki
+  Segera_, never turned into an Orton number. Kyoto cones: _stożki z Kioto_. Setting: _Według stożków SK (JIS R 8101)_.
+- **control concentration** (Japan, 管理濃度): _stężenie kontrolne_; "yardstick": _miernik_; "work area": _miejsce pracy_.
+- **Privacy page:** controller _administrator_; legitimate interest _prawnie uzasadniony interes_; GDPR Article
+  6(1)(b) _art. 6 ust. 1 lit. b RODO_; Standard Contractual Clauses _standardowe klauzule umowne_; EU–US Data Privacy
+  Framework _Ramy ochrony danych UE–USA_; logs _logi_ (not _dzienniki_, which are firing logs); local / session storage
+  _pamięć lokalna_ / _pamięć sesji_; "Keep me signed in on this device" _Nie wylogowuj mnie na tym urządzeniu_; "Sign out
+  everywhere" _Wyloguj ze wszystkich urządzeń_; "Download my data" _Pobieranie moich danych_; "your own decision"
+  _każdy decyduje sam_.
+- **Türkiye** is _Turcja_; protective equipment (Regulation (EU) 2016/425) _środki ochrony indywidualnej_.
+
 ## 3. Never translated
 
 - **Formulas and symbols:** SiO₂, Al₂O₃, B₂O₃, K₂O, Na₂O, Li₂O, CaO, MgO, BaO, SrO, ZnO, PbO, Fe₂O₃, FeO, Fe₃O₄, TiO₂,

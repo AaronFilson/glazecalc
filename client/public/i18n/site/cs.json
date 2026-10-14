@@ -64,7 +64,115 @@
   "privacy": {
     "title": "Ochrana soukromí",
     "lead": "Naposledy aktualizováno v říjnu 2026.",
-    "shortHeading": "Stručně"
+    "shortHeading": "Stručně",
+    "short": "Glazecalc uchovává to, co potřebuje k provozu vašeho účtu, a nic víc. Nejsou tu žádné reklamy, analytika ani sledování. Vaše data se nikdy neprodávají a jedinou firmou, která s nimi pracuje, je Amazon Web Services, která hostuje web a odesílá jeho e-maily.",
+    "whoHeading": "Kdo za data odpovídá",
+    "who": "Glazecalc je bezplatný neziskový open-source projekt, který provozuje jeho vlastník Aaron Filson ve Spojených státech. Rozhoduje o tom, co se s vašimi daty děje, a proto je podle práva na ochranu osobních údajů jejich „správcem“.",
+    "contact": "Chcete-li se zeptat na svá data nebo uplatnit kterékoli ze svých práv, napište na <mail>privacy@glazecalcapp.com</mail>. Můžete také <issues>založit hlášení (issue) na webu GitHub</issues>, ale hlášení jsou veřejná: nikdy do nich nepište svou e-mailovou adresu ani nic osobního. Většinu věcí týkajících se vašich dat zvládnete sami na <account>stránce účtu</account>.",
+    "storedHeading": "Co se uchovává a proč",
+    "storedAccount": "<b>Váš účet:</b> vaše e-mailová adresa a vaše heslo, uložené jen jako jednosměrný hash (bcrypt), nikdy jako heslo samotné. Spolu s ním se uchovává vaše nastavení (například jazyk, region a jednotky) a seznam surovin, které máte v zásobě. Účet potřebuje e-mailovou adresu k přihlášení a k obnovení zapomenutého hesla. Při vytvoření účtu se na adresu pošle odkaz k potvrzení, že patří vám; do té doby na ni chodí pošta jen na vaši žádost, například při obnovení hesla.",
+    "storedSaved": "<b>Co uložíte:</b> vaše recepty, suroviny, přísady, poznámky, záznamy výpalů a rady, tak jak je máte zapsané. Vidíte je jen vy: mezi uživateli se nic nesdílí.",
+    "storedTrial": "<b>Zkušební přístup (Vyzkoušet hned):</b> žádný e-mail ani heslo, jen vymyšlené jméno, například „speckled quiet kilns“. Pokud se během zkušebního přístupu přihlásíte k účtu ve stejném prohlížeči, přesune se to, co ve zkušebním přístupu vzniklo, do účtu.",
+    "storedResets": "<b>Odkazy pro obnovení hesla a e-mailové odkazy:</b> který účet o ně požádal, kdy, adresa, na kterou byl poslán odkaz k potvrzení adresy, a otisk každého odkazu (ne odkaz samotný).",
+    "storedLogs": "<b>Protokoly:</b> webový server zaznamenává každý požadavek: vaši IP adresu, čas, požadovanou stránku a název vašeho prohlížeče. Aplikace zaznamenává chyby se stránkou, na které nastaly, nikdy s vaší e-mailovou adresou.",
+    "storedDeletions": "<b>Odstraněné účty:</b> identifikační číslo účtu a kdy byl odstraněn, nic dalšího, aby obnovená záloha nemohla účet vrátit.",
+    "storedMail": "<b>Problémy s e-maily:</b> pokud se pošta na vaši adresu vrátí jako nedoručitelná nebo je nahlášena jako spam, e-mailová služba Amazonu zařadí adresu na seznam adres, na které se už nemá psát, a pošle vlastníkovi oznámení, které adresu obsahuje.",
+    "storedInbound": "<b>Pošta, kterou posíláte projektu Glazecalc:</b> poštu na privacy@glazecalcapp.com a na další adresy projektu Glazecalc kontroluje Amazon na spam a viry, ukládá se v soukromém úložišti a přeposílá se do vlastní schránky vlastníka (Gmail).",
+    "basisHeading": "Právní základ",
+    "basisContract": "<b>Provoz vašeho účtu</b>, uchovávání toho, co uložíte, a e-maily o vašem účtu jsou služba, o kterou žádáte: právním základem je smlouva mezi vámi a projektem Glazecalc (čl. 6 odst. 1 písm. b) GDPR).",
+    "basisInterests": "<b>Bezpečný a funkční provoz webu</b>: protokoly, omezení toho, jak často se kdokoli může pokusit přihlásit, zálohy, záznam o odstraněných účtech a seznam adres, na které se nemá psát. Opírají se o oprávněný zájem projektu Glazecalc na bezpečnosti, předcházení zneužití a na tom, aby se vaše práce neztratila (čl. 6 odst. 1 písm. f)). Uchovávají se krátce a k ničemu jinému se nepoužívají. Můžete proti nim vznést námitku, napíšete-li na adresu uvedenou výše.",
+    "basisNone": "O vás se nic nerozhoduje automaticky, neprobíhá žádné profilování a nic se nepoužívá k reklamě.",
+    "whereHeading": "Kde jsou data uložena a kdo s nimi pracuje",
+    "hosting": "Glazecalc běží na Amazon Web Services (AWS): server (EC2), zálohy (S3) a e-mail (Simple Email Service), vše ve Spojených státech, v Oregonu (us-west-2). AWS s daty pracuje jen jménem projektu Glazecalc, podle svých <dpa>podmínek zpracování údajů</dpa>. Nikdo jiný je nedostává.",
+    "transfer": "Pokud žijete v EU, ve Spojeném království nebo ve Švýcarsku, vaše data se předávají do Spojených států. Amazon uvádí, že je certifikován podle <dpf>rámce EU–USA pro ochranu osobních údajů</dpf> a jeho rozšíření pro Spojené království a Švýcarsko, a podmínky AWS zahrnují standardní smluvní doložky EU, které by platily i v případě, že by rámec, nyní napadený u soudu, byl zrušen. Vlastník i AWS jsou v USA a americké právo po nich může požadovat vydání dat.",
+    "noThirdParties": "Váš prohlížeč nenačítá nic z jiných webů: žádná písma, skripty, obrázky ani analytiku odjinud, a bezpečnostní nastavení webu je blokuje. Odkazy na GitHub a jiné weby se otevřou, jen když na ně kliknete.",
+    "choiceHeading": "Kde je uložen váš účet a vaše volba",
+    "choiceProject": "Glazecalc je bezplatný open-source projekt. Účty a vše, co obsahují, jsou uloženy na serverech ve Spojených státech, ať žijete kdekoli, jak je popsáno výše.",
+    "choiceNoAccount": "Ke čtení návodů účet nepotřebujete a kalkulačku můžete vyzkoušet tlačítkem Vyzkoušet hned, bez e-mailové adresy a hesla. Zkušební přístup se uchovává na stejných serverech 14 dní.",
+    "choiceOwnCopy": "Kdokoli si může provozovat vlastní kopii aplikace Glazecalc na vlastním počítači nebo serveru: kód je volně k dispozici na webu <source>GitHub</source>.",
+    "choiceDecision": "Zda si zde vytvoříte účet, s vědomím, že je uložen ve Spojených státech, je vaše vlastní rozhodnutí.",
+    "choiceNoWarranty": "Glazecalc se poskytuje tak, jak je, bez záruky. Ti, kdo projekt udržují, nepřebírají žádnou odpovědnost ani ručení za vaše rozhodnutí vytvořit si účet ani za to, kde jsou jeho data uložena.",
+    "keptHeading": "Jak dlouho se data uchovávají",
+    "keptAccount": "<b>Váš účet a to, co uložíte:</b> dokud je neodstraníte. Účty se neodstraňují kvůli tomu, že se nepoužívají.",
+    "keptTrial": "<b>Zkušební přístup:</b> 14 dní od jeho začátku, pak se odstraní se vším, co obsahuje, pokud si nevytvoříte účet, abyste si ho uchovali.",
+    "keptResets": "<b>Odkazy pro obnovení hesla a e-mailové odkazy:</b> odkaz pro obnovení hesla platí 30 minut a jeho záznam se odstraní asi po hodině; odkaz k potvrzení adresy platí a uchovává se 24 hodin.",
+    "keptBackups": "<b>Zálohy:</b> šifrované kopie databáze se uchovávají 30 dní a kopie disku serveru 7 dní. Odstraněný účet tak do 30 dní zmizí ze všech záloh.",
+    "keptDeletions": "<b>Záznam o odstraněném účtu:</b> 37 dní, o něco déle než kterákoli záloha.",
+    "keptLogs": "<b>Protokoly:</b> protokoly webového serveru 14 dní. Vlastní protokoly aplikace a databáze jsou omezené velikostí (každý 50 MB), což na málo navštěvovaném webu sahá několik dní zpět. Kopie disku serveru uchovávají protokoly až o 7 dní déle.",
+    "keptMail": "<b>Seznam adres, na které se nemá psát:</b> dokud vlastník adresu neodstraní; to dělá každý měsíc u adres, které už nepatří žádnému účtu. Oznámení o nedoručení vlastník odstraňuje do 30 dní.",
+    "keptInbound": "<b>Pošta, kterou posíláte projektu Glazecalc:</b> 30 dní v úložišti Amazonu a ve schránce vlastníka tak dlouho, jak je potřeba k odpovědi. U žádosti týkající se vašich dat se krátký záznam (kdy přišla, co se žádalo a co se udělalo) uchovává tři roky.",
+    "rightsHeading": "Vaše práva",
+    "rightsIntro": "Svá data můžete zobrazit, opravit, vzít si je s sebou a odstranit. Většinu toho zvládnete sami na <account>stránce účtu</account>:",
+    "rightsExport": "<b>Zobrazit je a vzít si je s sebou:</b> funkce Stáhnout moje data uloží vše do jednoho souboru (JSON) a vaše recepty a suroviny jako tabulky (CSV).",
+    "rightsCorrect": "<b>Opravit je:</b> nastavení a záznamy můžete kdykoli změnit. Chcete-li změnit e-mailovou adresu, otevřete odkaz poslaný na novou adresu; původní adresa, pokud byla potvrzena, dostane o změně zprávu a všechna zařízení se odhlásí.",
+    "rightsDelete": "<b>Odstranit je:</b> tlačítko Odstranit můj účet okamžitě odstraní váš účet a vše, co máte uložené, a tlačítko Zahodit zkušební přístup udělá totéž se zkušebním přístupem. Kopie v zálohách zmizí do 30 dní.",
+    "rightsSignOut": "<b>Odhlásit se všude:</b> ukončí relace vašeho účtu na všech zařízeních.",
+    "rightsAsk": "Ve všech ostatních věcech, například když chcete, aby se vaše data do opravy chyby nepoužívala, nebo když chcete vznést námitku proti způsobu jejich použití, napište na <mail>privacy@glazecalcapp.com</mail>. Je to zdarma a odpověď dostanete do jednoho měsíce. Požádáme vás jen o doklad, že účet je váš: přihlášení nebo otevření odkazu poslaného na jeho adresu, nikdy o průkaz totožnosti.",
+    "rightsComplain": "Pokud nejste spokojeni, můžete podat stížnost u úřadu pro ochranu osobních údajů: v EU u <edpb>úřadu ve vaší zemi</edpb> a ve Spojeném království u <ico>Information Commissioner’s Office</ico>.",
+    "storageHeading": "Soubory cookie a úložiště prohlížeče",
+    "storageIntro": "Glazecalc nastavuje jeden soubor cookie a uchovává v prohlížeči několik malých hodnot. Každá slouží k něčemu, o co sami žádáte: k udržení přihlášení nebo k zapamatování vaší volby. Žádná vás nesleduje a žádná se nesdílí, takže zákon nevyžaduje předchozí souhlas a není tu žádná lišta o cookies.",
+    "storageLabel": "Soubory cookie a úložiště prohlížeče",
+    "storageName": "Název",
+    "storagePurpose": "K čemu slouží",
+    "storageLasts": "Jak dlouho vydrží",
+    "storageCookie": "Soubor cookie",
+    "storageLocal": "Místní úložiště",
+    "storageSession": "Úložiště relace",
+    "storageNote": "Kterékoli z nich můžete kdykoli vymazat v nastavení prohlížeče. Odstraněním účtu se odstraní poznámka o přihlášení i všechna nastavení zde uložená.",
+    "keys": {
+      "cookie": {
+        "purpose": "Udržuje vás přihlášené. Obsahuje váš přihlašovací token. Skripty na stránce ho nemohou číst a prohlížeč ho posílá jen na vlastní server projektu Glazecalc, přes HTTPS, a nikdy s požadavkem, který začíná na jiném webu.",
+        "lasts": "Nastaví se při přihlášení, vytvoření účtu nebo zahájení zkušebního přístupu. Platí do zavření prohlížeče, nebo 7 dní, pokud zaškrtnete volbu Neodhlašovat mě na tomto zařízení; u zkušebního přístupu 14 dní. Odhlášením se odstraní."
+      },
+      "session": {
+        "purpose": "Zaznamenává, že jste přihlášeni k účtu nebo ke zkušebnímu přístupu, aby aplikace věděla, že se má zeptat serveru. Neobsahuje žádný token ani heslo.",
+        "lasts": "Do odhlášení nebo do konce relace."
+      },
+      "trial": {
+        "purpose": "Během zkušebního přístupu jeho jméno a datum konce, aby se daly zobrazit.",
+        "lasts": "Do konce zkušebního přístupu, nebo dokud si ho neuchováte nebo ho nezahodíte."
+      },
+      "settings": {
+        "purpose": "Nastavení změněné v tomto prohlížeči, aby ho další stránka ukázala hned, ještě než odpoví server. <code>theme</code> a <code>palette</code> obarví stránku dřív, než se zobrazí, a <code>language</code> otevírá stránky ve vašem jazyce.",
+        "lasts": "Dokud ho nezměníte. Odhlášení vrátí volby provedené v odhlášeném stavu, pokud nějaké jsou, a zbytek odstraní."
+      },
+      "visitor": {
+        "purpose": "Jazyk zvolený v odhlášeném stavu, nebo to, že jste v něm zavřeli upozornění na překlad, aby se to po odhlášení vrátilo.",
+        "lasts": "Dokud nevymažete úložiště prohlížeče nebo v tomto prohlížeči neodstraníte účet."
+      },
+      "region": {
+        "purpose": "Filtr regionu u seznamu v knihovně.",
+        "lasts": "Dokud filtr nevrátíte na všechny regiony."
+      },
+      "includeAdditives": {
+        "purpose": "Zda nové recepty započítávají přísady do Segerova vzorce (UMF), jak jste naposledy zvolili.",
+        "lasts": "Dokud nevymažete úložiště prohlížeče."
+      },
+      "recipeHelp": {
+        "purpose": "Že jste skryli nápovědu na stránce receptu.",
+        "lasts": "Dokud nápovědu znovu nezobrazíte."
+      },
+      "print": {
+        "purpose": "Vaše poslední volby pro tisk receptu: celý recept nebo dávka a velikost dávky.",
+        "lasts": "Dokud nevymažete úložiště prohlížeče."
+      },
+      "token": {
+        "purpose": "Přihlašovací token ze staré verze aplikace Glazecalc. Dnes se už nikdy nezapisuje.",
+        "lasts": "Odstraní se při otevření stránky."
+      },
+      "readEnglish": {
+        "purpose": "Vaše volba číst přeloženou stránku v angličtině, aby vás aplikace přestala přesměrovávat do vašeho jazyka.",
+        "lasts": "Do zavření karty."
+      },
+      "reloadedFor": {
+        "purpose": "Po vydání nové verze webu: která stránka se znovu načetla a kdy, aby se stránka znovu načítala nejvýše jednou za minutu.",
+        "lasts": "Do zavření karty."
+      }
+    },
+    "childrenHeading": "Děti",
+    "children": "Glazecalc je nástroj pro keramiky a není určen dětem.",
+    "changesHeading": "Změny",
+    "changes": "Pokud se tyto informace změní, změní se i datum v horní části stránky."
   },
   "notFound": {
     "heading": "Stránka nenalezena",

@@ -3,7 +3,10 @@
     "cones": "Vejledningen vises for brænding efter kegler, som angivet under Indstillinger.",
     "temperature": "Vejledningen vises for brænding efter temperatur, som angivet under Indstillinger.",
     "showTemperature": "Vis det for brænding efter temperatur",
-    "showCones": "Vis det for brænding efter kegler"
+    "showCones": "Vis det for brænding efter kegler",
+    "sk": "Vejledningen vises for brænding efter SK-kegler (JIS R 8101), som angivet under Indstillinger.",
+    "showSk": "Vis det for brænding efter SK-kegler (JIS R 8101)",
+    "showOrton": "Vis det for brænding efter Ortonkegler"
   },
   "notTranslated": "Vejledningen er endnu ikke oversat og vises derfor på engelsk.",
   "sectionInEnglish": "Dette afsnit er ændret, siden det blev oversat, og vises derfor på engelsk, indtil oversættelsen er opdateret.",
@@ -86,19 +89,32 @@
     "limitIn": "Grænseværdi i",
     "label": "Grænseværdien for silica i {region}",
     "caption": "Grænseværdien på arbejdspladsen for respirabelt krystallinsk silica i {region}, som gennemsnit over 8 timer (kontrolleret den {date})",
+    "captionControl": "Rettesnoren for respirabelt krystallinsk silica i luften i et arbejdsområde i {region} (kontrolleret den {date})",
     "both": "Kvarts og cristobalit",
     "quartz": "Kvarts",
     "cristobalite": "Cristobalit",
     "actionLevel": "Aktionsværdi",
+    "formula": "Kontrolkoncentration, hvor Q er den frie silica i støvet, i %",
+    "formulaValue": "{numerator} / ({factor}Q + 1) mg/m³",
+    "formulaLimit": "Grænseværdi for respirabel kvarts, hvor Q er silica (SiO₂) i støvet, i %",
+    "formulaQ": "{numerator} / (Q + {offset}) mg/m³",
+    "formulaFull": "{numerator} / ({factor}Q + {offset}) mg/m³",
+    "quartzAll": "Kvarts, for støv, der udelukkende er kvarts",
+    "cristobaliteAll": "Cristobalit, for støv, der udelukkende er cristobalit",
+    "allFree": "Kontrolkoncentration for støv, der udelukkende er fri silica",
+    "recommended": "Anbefalet af {abbr}",
     "value": "{value} mg/m³",
     "kind": {
       "binding": "En bindende grænseværdi.",
       "indicative": "En vejledende grænseværdi: en rettesnor, ikke et lovfastsat loft.",
-      "assessment": "Et vurderingskriterium, ikke en bindende grænseværdi."
+      "assessment": "Et vurderingskriterium, ikke en bindende grænseværdi.",
+      "control": "En kontrolkoncentration (管理濃度): rettesnoren for at bedømme luften i et arbejdsområde ud fra målinger dér, ikke en grænse for, hvad én person indånder."
     },
     "setBy": "Fastsat i <link>{law}</link>.",
     "lowerThanEu": "Lavere end EU’s bindende grænseværdi på {value} mg/m³.",
     "sameAsEu": "Den samme som EU’s bindende grænseværdi.",
+    "recommendedBy": "{abbr} ({by}) anbefaler denne værdi i <link>{title}</link>. Den er ikke fastsat ved lov.",
+    "respirators": "Støvmasker sælges her efter klasse: {everyday} til glasurstøv eller {higher} for mere beskyttelse (<link>de officielle klasser</link>).",
     "unknown": "Vi kunne ikke bekræfte den nationale grænseværdi i {region}. EU’s bindende grænseværdi på {value} mg/m³ gælder i alle medlemsstater.",
     "noData": "Vi har endnu ikke bekræftet grænseværdien i {region}.",
     "agency": "Den nationale myndighed for arbejdsmiljø: <link>{name}</link>.",
@@ -126,7 +142,12 @@
       "auSmall": "Kopper, krus, kander, skåle, tekander og andet service under 1100 mL",
       "auLarge": "Det samme, 1100 mL eller mere",
       "auPlates": "Tallerkener, underkopper og lignende service",
-      "auCooking": "Koge- og stegeredskaber"
+      "auCooking": "Koge- og stegeredskaber",
+      "jpFlat": "Genstande, der ikke kan fyldes, eller som er mindre end 2,5 cm dybe",
+      "jpSmall": "Andre genstande under 1,1 L, ikke til madlavning",
+      "jpLarge": "Andre genstande fra 1,1 L til under 3 L, ikke til madlavning",
+      "jpStorage": "Andre genstande på 3 L eller mere, ikke til madlavning",
+      "jpCooking": "Koge- og stegeredskaber, 2,5 cm dybe eller mere"
     },
     "judged": {
       "average": "gennemsnit af 6 genstande",
@@ -135,6 +156,7 @@
     "euRules": "Her gælder EU’s regler.",
     "law": "Fastsat i <link>{law}</link>.",
     "inForce": "Gælder fra den {date}.",
+    "atMost": "En genstand består, hvis den ikke afgiver mere end grænseværdien: Loven siger »højst«.",
     "unknown": "Vi har endnu ikke bekræftet reglerne i {region}.",
     "choosePrompt": "Vælg land for at se reglerne der."
   },

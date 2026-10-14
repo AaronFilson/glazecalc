@@ -1,6 +1,6 @@
 {
   "titles": {
-    "landing": "Glazecalc: brezplačen kalkulator kemije glazur za lončarje",
+    "landing": "Glazecalc: brezplačen kalkulator glazur za keramiko",
     "advice": "Nasveti za glazure – Glazecalc",
     "guides": "Vodniki – Glazecalc",
     "glazingBasics": "Glaziranje od osnov – Glazecalc",
@@ -14,6 +14,7 @@
     "signup": "Ustvarjanje računa – Glazecalc",
     "forgot": "Ponastavitev gesla – Glazecalc",
     "reset": "Izbira novega gesla – Glazecalc",
+    "confirmEmail": "Potrditev e-poštnega naslova – Glazecalc",
     "home": "Vaša delavniška beležnica – Glazecalc",
     "recipe": "Recepti – Glazecalc",
     "material": "Surovine – Glazecalc",
@@ -74,6 +75,16 @@
   },
   "meta": {
     "description": "Vnesite recept glazure: Segerjeva formula (UMF), razmerje kremenica : glinica in razmerje talil. Brezplačno in odprtokodno: recepti, surovine, dnevniki žganja.",
+    "guides": "Preprosti vodniki za lončarje začetnike: kaj je glazura za keramiko, kako jo pripraviti in varno zmešati, zaščititi družino in žgati v preprosti peči.",
+    "glazingBasics": "Iz česa je glazura za keramiko, kako jo peč spremeni v steklo ter kaj pomenijo stožci, frite, Segerjeva formula (UMF) in napake glazure. Vodnik za začetnike.",
+    "makingAGlaze": "Kako kupiti, hraniti, tehtati in zmešati glazuro, doseči pravo gostoto, jo preizkusiti na svoji glini in voditi zapiske, da jo lahko pripravite znova.",
+    "safeMixing": "Kako prah glazur zadržati zunaj pljuč in pline iz peči zunaj doma: varne navade, zaščitne dihalne maske, čiščenje, prezračevanje in tvegane surovine.",
+    "homeSafety": "Kaj storiti, če otrok ali žival pogoltne surovino za glazure, in kako poskrbeti, da so surovine, prah, peč in ročno izdelana keramika varni za družino.",
+    "firing": "Kako žgati v električni peči: izbira, postavitev in odčitavanje stožcev ter objavljeni programi za biskvitno in glazurno žganje, s preglednico stožcev.",
+    "advice": "Praktični nasveti za mešanje, glaziranje in žganje iz aplikacije Glazecalc ter vaši lastni nasveti. Brezplačno za lončarje in keramike.",
+    "about": "Glazecalc je brezplačen odprtokoden kalkulator kemije glazur za keramiko in beležnica. Oglejte si, kako izračuna Segerjevo formulo (UMF) in kako je narejen.",
+    "privacy": "Kako Glazecalc ravna z vašimi podatki: brez oglasov, analitike in sledenja, nič se ne prodaja. Kaj se hrani, zakaj in kako uveljavljate svoje pravice.",
+    "signup": "Ustvarite brezplačen račun Glazecalc za recepte za glazure, surovine, zapiske in dnevnike žganja. Brez oglasov, vaši podatki se nikoli ne prodajajo.",
     "imageAlt": "Glazecalc: glazure ne le mešajte, temveč jih tudi razumite."
   },
   "notices": {
@@ -255,6 +266,8 @@
     "label": "O tem prevodu",
     "text": "To stran je iz angleščine prevedla umetna inteligenca. Glazecalc je odprtokoden: če se kaj ne bere prav, prosimo, predlagajte popravek na GitHubu.",
     "brief": "Iz angleščine prevedla umetna inteligenca.",
+    "plain": "To stran je iz angleščine prevedla umetna inteligenca, ki ta jezik obvlada slabše kot večino jezikov. Angleška stran se morda bere bolje. Glazecalc je odprtokoden: če se kaj ne bere prav, prosimo, predlagajte popravek na GitHubu.",
+    "plainBrief": "Prevedla umetna inteligenca; angleški izvirnik se morda bere bolje.",
     "suggest": "Predlagaj popravek",
     "english": "Preberi angleški izvirnik",
     "close": "Zapri"

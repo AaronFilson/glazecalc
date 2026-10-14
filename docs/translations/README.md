@@ -75,7 +75,7 @@ describes them all). Translate the words, and keep everything else:
   reader's scale and number style. Translate the words around them.
 - **`{{en: term}}`** after a key term gives its English to readers who ask for English terms:
   `die Fritte{{en: frit}}`. Add one at the first use of each glossary term marked "show English" in each section.
-- **`:::orton`, `:::temperature`, `:::`, `::poison-lines`, `::shops`, `::local-equivalents`, `::silica-limit` and
+- **`:::orton`, `:::sk`, `:::temperature`, `:::`, `::poison-lines`, `::shops`, `::local-equivalents`, `::silica-limit` and
   `::food-limits`** lines stay as they are, where they are.
 - **Tables** keep their rows and columns, and `Table:` and `Label:` lines keep their names (translate what follows).
   `---:` alignment stays.

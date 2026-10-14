@@ -8,7 +8,7 @@ export interface Region {
   languages: string[];
   eu: boolean;
   temperature: 'C' | 'F';
-  cones: 'orton' | 'temperature';
+  cones: 'orton' | 'temperature' | 'sk';
   /** How glaze density is read: specific gravity, or degrees Baumé. */
   density: 'sg' | 'baume';
   /** The standard library's region filter. */

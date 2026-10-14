@@ -3,7 +3,9 @@
 // depends on the page's language and address, so it is written in here
 // (docs/adr/0013-translations.md): <html lang dir>, the canonical address,
 // the same page in each language offered (hreflang), the title, description
-// and preview text in the language, and noindex for a language not offered yet.
+// and preview text in the language with its og:locale, and noindex for a
+// language not offered yet. hreflang is the code in the address, script and
+// all (zh-Hans), which Google reads.
 import languages from '../../lib/regions/languages.js';
 import type { Language } from '../../lib/regions/languages.js';
 import { PUBLIC_PAGES, prerenderedFile } from '../../lib/pages.js';
@@ -85,12 +87,12 @@ const addressIn = (site: string, code: string, page: string): string => site + l
 
 /**
  * A language's og:locale, as Open Graph writes it, language_TERRITORY: the
- * region it is most read in (de_DE, pt_PT, el_GR). en_US for a code the
- * runtime does not know.
+ * region it is most read in, which for Chinese also says the script (zh_CN
+ * for zh-Hans, zh_TW for zh-Hant); en_US for a pseudo-locale.
  */
 export function ogLocale(code: string): string {
   try {
-    const { language, region } = new Intl.Locale(code).maximize();
+    const { language, region } = new Intl.Locale(languages.textLanguage(code)).maximize();
     return region ? language + '_' + region : language;
   } catch {
     return 'en_US';

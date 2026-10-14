@@ -278,6 +278,97 @@ Label: Prilagodba sljedećeg pečenja
 
 :::
 
+:::sk
+
+## Pečenje na stošce SK {#sk-cones}
+
+Stošci SK pirometrijski su stošci izrađeni prema japanskoj normi JIS R 8101, a u Japanu ih prodaju trgovci kao što je Yuko Trading (有恒商事). Kao i svaki stožac, stožac SK mjeri toplinski učinak{{en: heatwork}}, a ne samo temperaturu: omekša i savije se kad predmeti prime dovoljno topline, a vi očitate koliko se savio. Kontrolni stošci{{en: witness cone}}, očitavanje koliko se stožac savio i zadržavanje{{en: hold}} vrijede za njega kao i za svaki stožac. Ovaj odjeljak za svaki stožac navodi njegov sustav i nikad ne pretvara broj SK u broj drugog sustava: brojevi različitih nizova stožaca nisu međusobno zamjenjivi.
+
+> [!NOTE]
+> Uvijek pišite „SK” ispred broja. Mnogi stariji japanski recepti kažu samo „SK 8” ili „SK 9”, bez navođenja čiji je stožac. Kyotski stošci i stošci SK prema JIS-u nose iste brojeve, ali se savijaju pri različitim temperaturama (pogledajte odjeljak Kyotski stošci, niže).
+
+### Veliki stošci
+
+Norma ima dvije veličine. Veliki stošci (大型コーン) „uglavnom se koriste za mjerenje stupnja pečenja” (焼度測定), a to je ono što keramičaru treba. Mali stošci (od SK 26 do SK 42, na vrhu raspona) „uglavnom se koriste za ispitivanje vatrostalnosti” i ovdje nisu obuhvaćeni. Tablica niže daje velike stošce od SK 022 do SK 20.
+
+Brojevi ovdje idu od SK 022, najhladnijeg, do SK 20. Između SK 015 i SK 6 otisnuti brojevi nose „a” (SK 015a, SK 6a); pišite ga kako je otisnut.
+
+### Postavljanje velikih stožaca
+
+Svaki veliki stožac postavite u držač za stošce ili u grudicu gline, nagnut prema svojoj strani savijanja. Kao i kod svakog stošca, visinu i nagib držite jednakima od pečenja do pečenja, jer razlika u bilo čemu od toga mijenja koliko se savije. Tri stošca iz skupa (niže) postavite zajedno, duboko u peć blizu sredine punjenja, gdje primaju toplinu koju primaju predmeti, a ipak ondje gdje ih možete vidjeti kroz kontrolni otvor; prije nego što zatvorite peć, provjerite vidite li sva tri.
+
+### Vodeći, ciljni i zaštitni stožac
+
+Stošci se prodaju i postavljaju po tri: vodeći stožac, ciljni stožac na željenom stupnju i zaštitni stožac. Za ciljni stožac uzmite broj SK koji navodi vaš recept ili glina, za vodeći sljedeći hladniji stožac (jedan red više u tablici), a za zaštitni sljedeći topliji. Kad se vodeći stožac počne savijati, kraj je blizu; kad se savije zaštitni stožac, pečenje je otišlo predaleko.
+
+### Tablica stožaca SK
+
+Table: Veliki stošci SK (JIS R 8101): nazivna temperatura (JIS) svakog od njih
+Label: Tablica stožaca SK
+
+| Stožac  | Nazivna temperatura (JIS) |
+| ------- | ------------------------: |
+| SK 022  |       {{1112 °F; 600 °C}} |
+| SK 021  |       {{1202 °F; 650 °C}} |
+| SK 020  |       {{1238 °F; 670 °C}} |
+| SK 019  |       {{1274 °F; 690 °C}} |
+| SK 018  |       {{1310 °F; 710 °C}} |
+| SK 017  |       {{1346 °F; 730 °C}} |
+| SK 016  |       {{1382 °F; 750 °C}} |
+| SK 015a |       {{1454 °F; 790 °C}} |
+| SK 014a |       {{1499 °F; 815 °C}} |
+| SK 013a |       {{1535 °F; 835 °C}} |
+| SK 012a |       {{1571 °F; 855 °C}} |
+| SK 011a |       {{1616 °F; 880 °C}} |
+| SK 010a |       {{1652 °F; 900 °C}} |
+| SK 09a  |       {{1688 °F; 920 °C}} |
+| SK 08a  |       {{1724 °F; 940 °C}} |
+| SK 07a  |       {{1760 °F; 960 °C}} |
+| SK 06a  |       {{1796 °F; 980 °C}} |
+| SK 05a  |      {{1832 °F; 1000 °C}} |
+| SK 04a  |      {{1868 °F; 1020 °C}} |
+| SK 03a  |      {{1904 °F; 1040 °C}} |
+| SK 02a  |      {{1940 °F; 1060 °C}} |
+| SK 01a  |      {{1976 °F; 1080 °C}} |
+| SK 1a   |      {{2012 °F; 1100 °C}} |
+| SK 2a   |      {{2048 °F; 1120 °C}} |
+| SK 3a   |      {{2084 °F; 1140 °C}} |
+| SK 4a   |      {{2120 °F; 1160 °C}} |
+| SK 5a   |      {{2156 °F; 1180 °C}} |
+| SK 6a   |      {{2192 °F; 1200 °C}} |
+| SK 7    |      {{2246 °F; 1230 °C}} |
+| SK 8    |      {{2282 °F; 1250 °C}} |
+| SK 9    |      {{2336 °F; 1280 °C}} |
+| SK 10   |      {{2372 °F; 1300 °C}} |
+| SK 11   |      {{2408 °F; 1320 °C}} |
+| SK 12   |      {{2462 °F; 1350 °C}} |
+| SK 13   |      {{2516 °F; 1380 °C}} |
+| SK 14   |      {{2570 °F; 1410 °C}} |
+| SK 15   |      {{2615 °F; 1435 °C}} |
+| SK 16   |      {{2660 °F; 1460 °C}} |
+| SK 17   |      {{2696 °F; 1480 °C}} |
+| SK 18   |      {{2732 °F; 1500 °C}} |
+| SK 19   |      {{2768 °F; 1520 °C}} |
+| SK 20   |      {{2786 °F; 1530 °C}} |
+
+Svaka je vrijednost nazivna (JIS): temperatura koju norma daje za stožac, kako je otisnuta u tablici tvrtke Yuko Trading. Tablica ne navodi brzinu zagrijavanja. Norma daje referentne temperature. Pri brzini uobičajenoj u keramičkoj radionici, oko 100 °C/h, kyotski gradski institut izmjerio je da se njegovi vlastiti kyotski stošci savijaju 40–70 °C hladnije od vrijednosti JIS za isti broj; takva mjerenja za stošce SK prema JIS-u nismo pronašli. Postavite kontrolni stožac i usporedite.
+
+### Kyotski stošci
+
+Kyotski stošci (京都ゼーゲル), koje je izrađivao kyotski gradski institut, više se ne izrađuju: prema novinskim izvješćima institut je proizvodnju obustavio krajem poslovne godine 2009. Nose iste brojeve kao stošci SK prema JIS-u, ali se savijaju hladnije: kyotski se stožac uglavnom savije pri otprilike temperaturi stošca SK prema JIS-u koji je dva broja hladniji. Recept iz Kyota koji kaže „SK 8” možda misli na kyotski stožac. Institut je objavio savjete za keramičare koji s kyotskih stožaca prelaze na Ortonove stošce, a umjesto svojeg kyotskog SK 12 uzima Ortonov stožac 10; to je izbor instituta na temelju vlastitih mjerenja pri 100 °C/h i ne vrijedi ni za jedan drugi stožac.
+
+### Ortonovi stošci koji se prodaju u Japanu
+
+Ortonovi samostojeći stošci prodaju se u Japanu pod imenom 立つゼーゲル („stojeći Seger”), jer im ne treba ni držač ni postolje. To su Ortonovi stošci, s Ortonovim brojevima i Ortonovom tablicom (gore): na takav stožac pecite samo prema njegovu Ortonovu broju, a stošce SK i Ortonove stošce držite u odvojenim skupovima, nikad u istom.
+
+### Izvori za stošce SK
+
+- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (tablica stožaca SK, provjereno 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
+- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (na snazi, ponovno potvrđena 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [Kyoto Municipal Institute of Industrial Technology and Culture: na što paziti pri prelasku s kyotskih stožaca na Ortonove stošce](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
+
+:::
+
 ## Biskvitno pečenje {#bisque}
 
 **Biskvitno pečenje** (engl. _bisque_, u Ujedinjenom Kraljevstvu _biscuit_) prvo je pečenje, na nižoj temperaturi, koje suhu glinu pretvara u tvrde, porozne predmete spremne za glaziranje. Obično se peče na stožac{{en: cone}} 06 – 04, {{1828–1945 °F; 998–1063 °C}} prema Ortonovoj tablici; britanski lončari često peku na oko {{1000 °C; 1832 °F}}, blizu stošca 06. Biskvit bi trebao ostati porozan, „općenito više od 15 %” (Digitalfire), kako bi iz glazure{{en: glaze}} upio vodu. Prenisko pečen biskvit na sebe primi predebeo sloj glazure, koji onda puca i **povlači se**{{en: crawls}} (skuplja se u otočiće i ostavlja golu glinu). Nedovoljno pečen biskvit također se „nastavlja skupljati tijekom glazurnog pečenja{{en: glaze firing}}”, što kvari usklađenost glazure i keramičke mase{{en: glaze fit}}. Slaganje peći ovdje nije zahtjevno: predmeti se smiju dodirivati, poklopci se mogu peći na svojim posudama, a zdjele se slažu rub na rub, a ne jedna u drugu.

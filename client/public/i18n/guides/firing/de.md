@@ -278,6 +278,97 @@ Ein **Kegel-Offset** ist eine Einstellung der Steuerung, die ihre Temperatur fü
 
 :::
 
+:::sk
+
+## Brennen nach SK-Kegeln {#sk-cones}
+
+SK-Kegel sind die pyrometrischen Kegel nach der japanischen Norm JIS R 8101; in Japan verkaufen sie Händler wie Yuko Trading (有恒商事). Wie jeder Kegel{{en: cone}} misst ein SK-Kegel die Wärmearbeit{{en: heatwork}}, nicht die Temperatur allein: Er wird weich und biegt sich um, wenn die Ware genug Hitze bekommen hat, und Sie lesen ab, wie weit er sich gebogen hat. Messkegel{{en: witness cone}}, das Ablesen, wie weit sich ein Kegel gebogen hat, und Haltezeiten{{en: hold}} funktionieren bei ihm wie bei jedem Kegel. Dieser Abschnitt nennt bei jedem Kegel sein System und macht aus einer SK-Nummer nie die Nummer eines anderen Systems: Die Nummern verschiedener Kegelreihen sind nicht austauschbar.
+
+> [!NOTE]
+> Schreiben Sie immer „SK“ vor die Nummer. Viele ältere japanische Rezepte sagen nur „SK 8“ oder „SK 9“, ohne zu sagen, wessen Kegel gemeint ist. Kyoto-Kegel und SK-Kegel nach JIS tragen dieselben Nummern, biegen sich aber bei verschiedenen Temperaturen (siehe Kyoto-Kegel, unten).
+
+### Die großen Kegel
+
+Die Norm kennt zwei Größen. Große Kegel (大型コーン) dienen „hauptsächlich zur Messung des Brenngrads“ (焼度測定), und genau das braucht man in der Töpferei. Kleine Kegel (SK 26 bis SK 42, am oberen Ende der Reihe) dienen „hauptsächlich zur Prüfung der Feuerfestigkeit“ und werden hier nicht behandelt. Die Tabelle unten nennt die großen Kegel von SK 022 bis SK 20.
+
+Die Nummern reichen hier von SK 022, dem kühlsten, bis SK 20. Zwischen SK 015 und SK 6 tragen die gedruckten Nummern ein „a“ (SK 015a, SK 6a); schreiben Sie es so, wie es gedruckt ist.
+
+### Große Kegel aufstellen
+
+Stecken Sie jeden großen Kegel in eine Unterlegplatte oder einen Tonklumpen, zu seiner Biegeseite hin geneigt. Halten Sie wie bei jedem Kegel Höhe und Neigung von Brand zu Brand gleich, denn ein Unterschied in einem von beiden ändert, wie weit er sich biegt. Stellen Sie die drei Kegel des Kegelsatzes{{en: cone pack}} (unten) zusammen auf, tief im Ofen nahe der Mitte des Besatzes, wo sie die Hitze bekommen, die die Ware bekommt, und wo Sie sie dennoch durch ein Schauloch sehen können; prüfen Sie, bevor Sie den Ofen schließen, dass Sie alle drei sehen.
+
+### Führungs-, Haupt- und Wachkegel
+
+Kegel werden zu dritt verkauft und aufgestellt: ein Führungskegel, ein Hauptkegel beim Ziel und ein Wachkegel. Nehmen Sie als Hauptkegel die SK-Nummer, die Ihr Rezept oder Ihr Ton nennt, als Führungskegel den nächstkühleren Kegel (eine Zeile höher in der Tabelle) und als Wachkegel den nächstheißeren. Wenn sich der Führungskegel zu biegen beginnt, ist das Ende nahe; wenn sich der Wachkegel biegt, ist der Brand zu weit gegangen.
+
+### Die SK-Tabelle
+
+Table: Große SK-Kegel (JIS R 8101): die Nenntemperatur (JIS) jedes Kegels
+Label: SK-Tabelle
+
+| Kegel   | Nenntemperatur (JIS) |
+| ------- | -------------------: |
+| SK 022  |  {{1112 °F; 600 °C}} |
+| SK 021  |  {{1202 °F; 650 °C}} |
+| SK 020  |  {{1238 °F; 670 °C}} |
+| SK 019  |  {{1274 °F; 690 °C}} |
+| SK 018  |  {{1310 °F; 710 °C}} |
+| SK 017  |  {{1346 °F; 730 °C}} |
+| SK 016  |  {{1382 °F; 750 °C}} |
+| SK 015a |  {{1454 °F; 790 °C}} |
+| SK 014a |  {{1499 °F; 815 °C}} |
+| SK 013a |  {{1535 °F; 835 °C}} |
+| SK 012a |  {{1571 °F; 855 °C}} |
+| SK 011a |  {{1616 °F; 880 °C}} |
+| SK 010a |  {{1652 °F; 900 °C}} |
+| SK 09a  |  {{1688 °F; 920 °C}} |
+| SK 08a  |  {{1724 °F; 940 °C}} |
+| SK 07a  |  {{1760 °F; 960 °C}} |
+| SK 06a  |  {{1796 °F; 980 °C}} |
+| SK 05a  | {{1832 °F; 1000 °C}} |
+| SK 04a  | {{1868 °F; 1020 °C}} |
+| SK 03a  | {{1904 °F; 1040 °C}} |
+| SK 02a  | {{1940 °F; 1060 °C}} |
+| SK 01a  | {{1976 °F; 1080 °C}} |
+| SK 1a   | {{2012 °F; 1100 °C}} |
+| SK 2a   | {{2048 °F; 1120 °C}} |
+| SK 3a   | {{2084 °F; 1140 °C}} |
+| SK 4a   | {{2120 °F; 1160 °C}} |
+| SK 5a   | {{2156 °F; 1180 °C}} |
+| SK 6a   | {{2192 °F; 1200 °C}} |
+| SK 7    | {{2246 °F; 1230 °C}} |
+| SK 8    | {{2282 °F; 1250 °C}} |
+| SK 9    | {{2336 °F; 1280 °C}} |
+| SK 10   | {{2372 °F; 1300 °C}} |
+| SK 11   | {{2408 °F; 1320 °C}} |
+| SK 12   | {{2462 °F; 1350 °C}} |
+| SK 13   | {{2516 °F; 1380 °C}} |
+| SK 14   | {{2570 °F; 1410 °C}} |
+| SK 15   | {{2615 °F; 1435 °C}} |
+| SK 16   | {{2660 °F; 1460 °C}} |
+| SK 17   | {{2696 °F; 1480 °C}} |
+| SK 18   | {{2732 °F; 1500 °C}} |
+| SK 19   | {{2768 °F; 1520 °C}} |
+| SK 20   | {{2786 °F; 1530 °C}} |
+
+Jeder Wert ist ein Nennwert (JIS): die Temperatur, die die Norm für den Kegel angibt, wie sie in der Tabelle von Yuko Trading gedruckt ist. Die Tabelle nennt keine Heizrate. Die Norm gibt Bezugstemperaturen an. Bei einer in der Töpferei üblichen Heizrate von etwa 100 °C/h hat Kyotos städtisches Institut gemessen, dass sich seine eigenen Kyoto-Kegel 40–70 °C kühler biegen als der JIS-Wert für dieselbe Nummer; für SK-Kegel nach JIS haben wir keine solchen Messungen gefunden. Stellen Sie einen Messkegel auf und vergleichen Sie.
+
+### Kyoto-Kegel
+
+Kyoto-Kegel (京都ゼーゲル), hergestellt von Kyotos städtischem Institut, werden nicht mehr hergestellt: Laut Presseberichten hat das Institut die Herstellung zum Ende des Geschäftsjahres 2009 eingestellt. Sie tragen dieselben Nummern wie SK-Kegel nach JIS, biegen sich aber kühler: Ein Kyoto-Kegel biegt sich meist bei etwa der Temperatur des SK-Kegels nach JIS, dessen Nummer zwei niedriger ist. Ein Rezept aus Kyoto, das „SK 8“ sagt, kann einen Kyoto-Kegel meinen. Das Institut hat Hinweise für Töpferinnen und Töpfer veröffentlicht, die von Kyoto-Kegeln zu Ortonkegeln wechseln, und ersetzt seinen eigenen Kyoto-Kegel SK 12 durch Ortonkegel 10; das ist die Wahl des Instituts aufgrund seiner eigenen Messungen bei 100 °C/h und gilt für keinen anderen Kegel.
+
+### In Japan verkaufte Ortonkegel
+
+Selbststehende Ortonkegel werden in Japan unter dem Namen 立つゼーゲル („stehender Seger“) verkauft, weil sie weder Unterlegplatte noch Halter brauchen. Es sind Ortonkegel, mit Ortons Nummern und Ortons Tabelle (oben): Brennen Sie auf einen solchen Kegel nur nach seiner Orton-Nummer, und halten Sie SK- und Ortonkegel in getrennten Kegelsätzen, nie im selben.
+
+### Quellen zu SK-Kegeln
+
+- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (die SK-Tabelle, geprüft am 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
+- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (in Kraft, bestätigt am 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [Kyoto Municipal Institute of Industrial Technology and Culture: Hinweise zum Wechsel von Kyoto-Kegeln zu Ortonkegeln](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
+
+:::
+
 ## Schrühbrand {#bisque}
 
 Der **Schrühbrand**{{en: bisque}} (britisches Englisch: biscuit) ist der erste, niedrigere Brand, der trockenen Ton in harte, poröse Ware verwandelt, die bereit zum Glasieren ist. Er wird meist auf Kegel{{en: cone}} 06–04 gebrannt, {{1828–1945 °F; 998–1063 °C}} nach Ortons Tabelle; in Großbritannien wird oft auf etwa {{1000 °C; 1832 °F}} gebrannt, nahe Kegel 06. Der geschrühte Scherben soll porös bleiben, „im Allgemeinen mehr als 15%“ (Digitalfire), damit er der Glasur{{en: glaze}} das Wasser entzieht. Ein zu niedrig geschrühter Scherben nimmt die Glasur zu dick an; sie reißt dann und **rollt ab**{{en: crawls}} (zieht sich zu Inseln zusammen und lässt nackten Ton frei). Zu schwach geschrühte Ware „schrumpft auch beim Glasurbrand{{en: glaze firing}} weiter“, was den Glasursitz{{en: glaze fit}} verdirbt. Beim Einräumen ist der Schrühbrand nachsichtig: Stücke dürfen sich berühren, Deckel können auf ihren Gefäßen gebrannt werden, und Schalen stehen Rand auf Rand statt ineinander.

@@ -44,3 +44,5 @@ export function checkFingerprints(options?: { dir?: string; fingerprints?: strin
 export function checkGuides(dir?: string): string[];
 /** Problems with the English written from code. */
 export function checkSources(dir?: string): Promise<string[]>;
+/** Problems with Korean's script: hanja in its messages or guides that its glossary does not give. */
+export function checkHanja(options?: { dir?: string; glossary?: string }): string[];

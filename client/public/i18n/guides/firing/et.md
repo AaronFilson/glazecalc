@@ -278,6 +278,97 @@ Label: Järgmise põletuse korrigeerimine
 
 :::
 
+:::sk
+
+## Põletamine SK-koonuste järgi {#sk-cones}
+
+SK-koonused on Jaapani standardi JIS R 8101 järgi valmistatud püromeetrilised koonused, mida Jaapanis müüvad sellised edasimüüjad nagu Yuko Trading (有恒商事). Nagu iga koonus, mõõdab ka SK-koonus kuumustööd{{en: heatwork}}, mitte ainult temperatuuri: see pehmeneb ja paindub, kui esemed on saanud piisavalt kuumust, ja teie loete, kui kaugele see paindus. Kontrollkoonused{{en: witness cone}}, koonuse painde lugemine ja hoid toimivad sellega samamoodi nagu iga teise koonusega. See jaotis nimetab iga koonuse juures selle süsteemi ega teisenda kunagi SK-numbrit mõne teise süsteemi numbriks: eri koonuseseeriate numbrid ei ole omavahel asendatavad.
+
+> [!NOTE]
+> Kirjutage numbri ette alati „SK“. Paljudes vanemates Jaapani retseptides on ainult „SK 8“ või „SK 9“, ütlemata, kelle koonust mõeldakse. Kyoto koonustel ja JIS-i järgi valmistatud SK-koonustel on samad numbrid, kuid need painduvad eri temperatuuril (vt allpool „Kyoto koonused“).
+
+### Suured koonused
+
+Standardis on kaks suurust. Suuri koonuseid (大型コーン) „kasutatakse peamiselt põletusastme mõõtmiseks“ (焼度測定) ja just seda keraamik vajabki. Väikesi koonuseid (SK 26 kuni SK 42, vahemiku ülaotsas) „kasutatakse peamiselt tulekindluse katseteks“ ja neid siin ei käsitleta. Allolevas tabelis on suured koonused SK 022 kuni SK 20.
+
+Numbrid algavad siin kõige jahedamast koonusest SK 022 ja lõpevad koonusega SK 20. Koonuste SK 015 ja SK 6 vahel on trükitud numbrite järel „a“ (SK 015a, SK 6a); kirjutage see nii, nagu on trükitud.
+
+### Suurte koonuste paigaldamine
+
+Pange iga suur koonus koonusealusesse või savitükki, kaldu oma paindekülje poole. Nagu iga koonuse puhul, hoidke kõrgus ja kalle põletusest põletusse samad, sest erinevus kummaski muudab seda, kui kaugele koonus paindub. Pange komplekti{{en: cone pack}} kolm koonust (vt allpool) koos sügavale ahju, ahjutäie keskosa lähedale, kus need saavad sama kuumust, mida saavad esemed, kuid kus neid on siiski vaateavast näha; enne ahju sulgemist kontrollige, et näete kõiki kolme.
+
+### Hoiatus-, siht- ja valvekoonus
+
+Koonuseid müüakse ja pannakse kolmekaupa: hoiatuskoonus, sihtkoonus sihttemperatuuri jaoks ja valvekoonus. Võtke sihtkoonuseks SK-number, mille teie retsept või savi nimetab, hoiatuskoonuseks ühe numbri võrra jahedam koonus (tabelis üks rida ülevalpool) ja valvekoonuseks ühe numbri võrra kuumem koonus. Kui hoiatuskoonus hakkab painduma, on lõpp lähedal; kui valvekoonus paindub, on põletus läinud liiga kaugele.
+
+### SK-tabel
+
+Table: Suured SK-koonused (JIS R 8101): iga koonuse nominaalne (JIS) temperatuur
+Label: SK-tabel
+
+| Koonus  | Nominaalne (JIS) temperatuur |
+| ------- | ---------------------------: |
+| SK 022  |          {{1112 °F; 600 °C}} |
+| SK 021  |          {{1202 °F; 650 °C}} |
+| SK 020  |          {{1238 °F; 670 °C}} |
+| SK 019  |          {{1274 °F; 690 °C}} |
+| SK 018  |          {{1310 °F; 710 °C}} |
+| SK 017  |          {{1346 °F; 730 °C}} |
+| SK 016  |          {{1382 °F; 750 °C}} |
+| SK 015a |          {{1454 °F; 790 °C}} |
+| SK 014a |          {{1499 °F; 815 °C}} |
+| SK 013a |          {{1535 °F; 835 °C}} |
+| SK 012a |          {{1571 °F; 855 °C}} |
+| SK 011a |          {{1616 °F; 880 °C}} |
+| SK 010a |          {{1652 °F; 900 °C}} |
+| SK 09a  |          {{1688 °F; 920 °C}} |
+| SK 08a  |          {{1724 °F; 940 °C}} |
+| SK 07a  |          {{1760 °F; 960 °C}} |
+| SK 06a  |          {{1796 °F; 980 °C}} |
+| SK 05a  |         {{1832 °F; 1000 °C}} |
+| SK 04a  |         {{1868 °F; 1020 °C}} |
+| SK 03a  |         {{1904 °F; 1040 °C}} |
+| SK 02a  |         {{1940 °F; 1060 °C}} |
+| SK 01a  |         {{1976 °F; 1080 °C}} |
+| SK 1a   |         {{2012 °F; 1100 °C}} |
+| SK 2a   |         {{2048 °F; 1120 °C}} |
+| SK 3a   |         {{2084 °F; 1140 °C}} |
+| SK 4a   |         {{2120 °F; 1160 °C}} |
+| SK 5a   |         {{2156 °F; 1180 °C}} |
+| SK 6a   |         {{2192 °F; 1200 °C}} |
+| SK 7    |         {{2246 °F; 1230 °C}} |
+| SK 8    |         {{2282 °F; 1250 °C}} |
+| SK 9    |         {{2336 °F; 1280 °C}} |
+| SK 10   |         {{2372 °F; 1300 °C}} |
+| SK 11   |         {{2408 °F; 1320 °C}} |
+| SK 12   |         {{2462 °F; 1350 °C}} |
+| SK 13   |         {{2516 °F; 1380 °C}} |
+| SK 14   |         {{2570 °F; 1410 °C}} |
+| SK 15   |         {{2615 °F; 1435 °C}} |
+| SK 16   |         {{2660 °F; 1460 °C}} |
+| SK 17   |         {{2696 °F; 1480 °C}} |
+| SK 18   |         {{2732 °F; 1500 °C}} |
+| SK 19   |         {{2768 °F; 1520 °C}} |
+| SK 20   |         {{2786 °F; 1530 °C}} |
+
+Iga arv on nominaalne (JIS): temperatuur, mille standard koonusele annab, nagu see on trükitud Yuko Tradingu tabelis. Tabelis ei ole kuumutuskiirust. Standard annab võrdlustemperatuurid. Keraamikule tavapärase, umbes 100 °C/h kuumutuskiiruse juures mõõtis Kyoto linna instituut, et tema enda Kyoto koonused painduvad 40–70 °C jahedamal kui sama numbri JIS-i temperatuur; JIS-i järgi valmistatud SK-koonuste kohta me selliseid mõõtmisi ei leidnud. Pange kontrollkoonus ja võrrelge.
+
+### Kyoto koonused
+
+Kyoto koonuseid (京都ゼーゲル), mida valmistas Kyoto linna instituut, enam ei toodeta: uudiste järgi lõpetas instituut tootmise 2009. majandusaasta lõpus. Neil on samad numbrid kui JIS-i järgi valmistatud SK-koonustel, kuid need painduvad jahedamal: Kyoto koonus paindub enamasti umbes sama temperatuuri juures kui JIS-i järgi valmistatud SK-koonus, mille number on kahe võrra väiksem. Kyoto retsept, milles on „SK 8“, võib tähendada Kyoto koonust. Instituut on avaldanud nõuandeid keraamikutele, kes lähevad Kyoto koonustelt üle Ortoni koonustele, ja asendab oma Kyoto koonuse SK 12 Ortoni koonusega 10; see on instituudi enda valik, mis põhineb tema enda mõõtmistel kiirusel 100 °C/h, ega kehti ühegi teise koonuse kohta.
+
+### Jaapanis müüdavad Ortoni koonused
+
+Ortoni isetoetuvaid koonuseid müüakse Jaapanis nime all 立つゼーゲル („seisev Seger“), sest need ei vaja koonusealust ega hoidikut. Need on Ortoni koonused, Ortoni numbrite ja Ortoni tabeliga (vt eespool): põletage sellise koonuseni ainult selle Ortoni numbri järgi ning hoidke SK- ja Ortoni koonuseid eri komplektides, mitte kunagi samas.
+
+### SK-koonuste allikad
+
+- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (SK-tabel, kontrollitud 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
+- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (kehtiv, uuesti kinnitatud 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [Kyoto Municipal Institute of Industrial Technology and Culture: mida arvestada üleminekul Kyoto koonustelt Ortoni koonustele](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
+
+:::
+
 ## Eelpõletus {#bisque}
 
 **Eelpõletus**{{en: bisque}} (Ühendkuningriigis biscuit) on esimene, madalam põletus, mis muudab kuiva savi kõvaks, poorseks ja glasuurimiseks valmis esemeks. Tavaliselt põletatakse seda koonusteni 06–04, Ortoni tabeli järgi {{1828–1945 °F; 998–1063 °C}}; Briti keraamikud põletavad sageli umbes temperatuurini {{1000 °C; 1832 °F}}, koonuse 06 lähedale. Eelpõletatud ese peaks jääma poorseks, „üldiselt üle 15%“ (Digitalfire), et see imaks glasuurist vett. Liiga madalal temperatuuril eelpõletatud esemele jääb glasuur liiga paksult, mis seejärel praguneb ja **tõmbub kokku**{{en: crawls}} (koondub saarekesteks ja jätab savi paljaks). Alapõletatud ese ka „kahaneb glasuuripõletuse ajal edasi“, mis rikub **glasuuri sobivuse savimassiga**{{en: glaze fit}}. Pakkimine on andestav: esemed võivad üksteist puudutada, kaaned võib põletada oma nõude peal ja kausid pannakse serv serva vastu, mitte üksteise sisse.

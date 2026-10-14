@@ -4,7 +4,7 @@ import { regionFor } from '../../../../lib/regions';
 import { ApiResourceFactory } from '../../core/api-resource.service';
 import { LibraryInfo, Material } from '../../core/models';
 import { LIKE_FOR_LIKE_GRAMS, gramsApart } from '../../shared/alike';
-import { CATEGORY_LABELS, byName, inRegion, statusText } from '../../shared/library-info';
+import { CATEGORY_LABELS, byNameIn, inRegion, statusText } from '../../shared/library-info';
 import { listOf, upTo } from '../../shared/format';
 import { RegionChoice, RegionSelect } from './region-select';
 
@@ -102,6 +102,7 @@ const SHOWN = 2;
 })
 export class LocalEquivalents {
   protected readonly choice = new RegionChoice();
+  private readonly byName = byNameIn(this.choice.language);
   protected readonly region = this.choice.region;
   protected readonly regionName = this.choice.name;
   /** The library's region for where the reader buys: US, UK, EU or AU. */
@@ -130,7 +131,7 @@ export class LocalEquivalents {
       label: CATEGORY_LABELS[kind] ?? kind,
       rows: records
         .filter((record) => record.category === kind && !inRegion(record, library))
-        .sort(byName)
+        .sort(this.byName)
         .map((record) => ({
           record,
           status: statusText(record),

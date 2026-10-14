@@ -3,8 +3,13 @@
 The prompts and scripts used to write glossaries, translate, review, back-translate and take languages live (waves
 1–3, docs/i18n-plan.md, Phase 3), ready for the next wave. The scripts take the session's scratch folder from
 `GLAZECALC_SCRATCH` (an absolute path) and write every prompt and agent work file there; the branch named in the
-prompts is the current one (or `GLAZECALC_BRANCH`). A language must be in `LANGUAGES` in [wave.js](wave.js) (its
-name, who reads it, its region, where its glossary research starts); Irish and Maltese are there.
+prompts is the current one (or `GLAZECALC_BRANCH`), and the repo they name is the checkout the scripts run in
+(`{REPO}`): run them in the worktree the agents will work in, never in the main checkout for a worktree's wave, and
+read the first line of one prompt before starting. A language must be in `LANGUAGES` in [wave.js](wave.js) (its
+name, who reads it, its region, where its glossary research starts); Irish, Maltese, Japanese and Turkish are there.
+A language outside the EU also gives its own research lines (`kilns`, `law`, `terms`, in place of the EU's), and any
+language may give `notes`: rules added to its glossary, translate, review or back-translation prompts only
+(`{NOTES}` in the templates; empty for the others, whose prompts are unchanged).
 
 ```bash
 export PATH="/c/nvm4w/nodejs:$PATH"
@@ -77,3 +82,27 @@ once: a stopped agent can be resumed with a message, and goes on from its transc
 docs/i18n-plan.md, "After the EU: Asia, the Indian subcontinent and Africa": right-to-left (Arabic, Urdu), Japanese
 SK cones, the regions before the languages. Add those languages to `LANGUAGES` in wave.js; the scripts are otherwise
 the same.
+
+## Asia, Phase D: Japanese (in preparation)
+
+docs/asia-plan.md, Phase D. Japanese is first (`ja`, `live: false` in lib/regions/languages.js, the standard notice);
+Simplified and Traditional Chinese and Korean follow with their own entries. Japanese's entry in wave.js carries what
+the European templates did not say: research from Japanese law (e-Gov), MHLW and CAA texts, JIS and the 学術用語集
+instead of EUR-Lex and IATE, and notes on SK cones (always "SK", never ゼーゲル as a label, never converted to Orton),
+half-width digits, the 24-hour clock, the Western calendar, `other`-only plurals with the counter inside, です/ます, 。
+and 、, and the law's own words (以下, never 未満, for "at most"; 管理濃度; 加熱調理用器具). The style sheet is
+docs/translations/ja.md. The numbers check reads a month written as its number (2026年10月) as the English's month
+name (scripts/i18n-check.mjs), and its other Asian rules came with Phase A.
+
+## Asia, Phase E: Turkish (in preparation)
+
+docs/asia-plan.md, Phase E, point 5, and "Lessons from Japan, applied to Türkiye". Turkish (`tr`, `live: false`, the
+standard notice) is prepared first of wave 2; its go-live waits on the owner's KVKK decision (decision 10). Its entry in
+wave.js reads Turkish law on mevzuat.gov.tr, the MEB MEGEP modules, TS standards and TDK instead of EUR-Lex and IATE,
+and its notes say: Orton cones named as Orton, beside the shops' "Seger piramidi" at most; SK cones as SK; Seger only
+where the English says Seger, and "Seger formülü" never a cone; specific gravity as özgül ağırlık with the English's
+figure, never litre weight (g/L), and bome for Baumé; 1,5, %5 and a range %10–60 (the numbers check reads it since this
+phase), times as saat 20.00 (the check reads 20:00 as two numbers); İ/i and I/ı in capitals; an apostrophe before a
+suffix on a name or figure and none on a placeholder; `one` and `other` with the noun singular; siz forms; en fazla,
+never "-den az" or "altında", for "at most"; and no mutlaka, kesinlikle or her zaman the English lacks. The style sheet
+is docs/translations/tr.md. Generate its prompts in the worktree its agents work in (`{REPO}`).

@@ -14,6 +14,7 @@ import {
   translate
 } from '@jsverse/transloco';
 import { of } from 'rxjs';
+import { languageOfTag } from '../../../lib/regions/languages';
 import { formatLocale } from '../shared/format';
 import { IcuTranspiler } from './icu-transpiler';
 import { baseHrefFor, languageOfPath, pathIn } from './language';
@@ -198,6 +199,20 @@ describe('translations', () => {
       expect(baseHrefFor('en')).toBe('/');
     });
 
+    it("finds the language offered that a browser's tag asks for, Chinese by its script", () => {
+      const offered = ['en', 'de', 'pt-PT', 'zh-Hans', 'zh-Hant', 'en-XA'];
+      for (const tag of ['zh-TW', 'zh-HK', 'zh-MO', 'zh-Hant', 'zh-Hant-CN']) {
+        expect(languageOfTag(tag, offered), tag).toBe('zh-Hant');
+      }
+      for (const tag of ['zh-CN', 'zh-SG', 'zh', 'zh-Hans-TW']) {
+        expect(languageOfTag(tag, offered), tag).toBe('zh-Hans');
+      }
+      expect(['de-AT', 'pt-BR', 'en-GB'].map((tag) => languageOfTag(tag, offered))).toEqual(['de', 'pt-PT', 'en']);
+      // Nothing that fits, and no pseudo-locale, ever.
+      expect(['ja-JP', 'not a tag', ''].map((tag) => languageOfTag(tag, offered))).toEqual([null, null, null]);
+      expect(languageOfTag('en-US', ['en-XA'])).toBeNull();
+    });
+
     it('opens the same page in another language', () => {
       expect(pathIn('fr', '/de/recipe', '?id=1')).toBe('/fr/recipe?id=1');
       expect(pathIn('en', '/de/guides/firing')).toBe('/guides/firing');
@@ -252,6 +267,30 @@ describe('translations', () => {
     it('sets text right to left for a mirrored page', () => {
       expect(pseudoMessage('Save {name}', 'ar-XB')).toBe('‮Save ‬{name}');
       expect(pseudoTranslation({ a: { b: 'Hi' } }, 'ar-XB')).toEqual({ a: { b: '‮Hi‬' } });
+    });
+
+    it('writes every message in Japanese characters, shorter and with no spaces, by Japanese plural rules', () => {
+      const save = pseudoMessage('Save recipe', 'ja-XC');
+      expect(save).toMatch(/^「[\u3040-\u30ff\u4e00-\u9fff]{5}」$/);
+      expect(pseudoMessage('Save recipe', 'ja-XC')).toBe(save);
+      expect(pseudoMessage('Saved. Fire it, then look.', 'ja-XC')).toMatch(
+        /^「[^\sA-Za-z.,]+。[^\sA-Za-z.,]+、[^\sA-Za-z]+。」$/
+      );
+      const plural = pseudoMessage('{count, plural, one {# material} other {# materials}} in <b>{name}</b>', 'ja-XC');
+      expect(plural).toMatch(/^「\{count,plural,one\{#[^\s{}]+\} other\{#[^\s{}]+\}\}[^\s<]+<b>\{name\}<\/b>」$/);
+      const transpiler = new IcuTranspiler();
+      transpiler.onLangChanged('ja-XC');
+      // Japanese has one plural form, so even 1 takes "other".
+      const one = transpiler.transpile({
+        value: plural,
+        params: { count: 1, name: 'Custer' },
+        translation: {},
+        key: 'x'
+      });
+      const materials = /other\{#([^}]+)\}/.exec(plural)![1]!;
+      // The tag's markers are not letters.
+      expect(one).toMatch(/^「1[^\sA-Za-z]+b[^\sA-Za-z]*Custer[^\sA-Za-z]*b[^\sA-Za-z]*」$/);
+      expect(one).toContain('1' + materials);
     });
   });
 });

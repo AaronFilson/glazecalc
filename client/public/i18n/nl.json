@@ -1,6 +1,6 @@
 {
   "titles": {
-    "landing": "Glazecalc: gratis calculator voor glazuurchemie, voor pottenbakkers",
+    "landing": "Glazecalc: gratis glazuurcalculator voor pottenbakkers",
     "advice": "Glazuuradvies - Glazecalc",
     "guides": "Gidsen - Glazecalc",
     "glazingBasics": "Glazuren vanaf de basis - Glazecalc",
@@ -14,6 +14,7 @@
     "signup": "Account aanmaken - Glazecalc",
     "forgot": "Wachtwoord opnieuw instellen - Glazecalc",
     "reset": "Nieuw wachtwoord kiezen - Glazecalc",
+    "confirmEmail": "Uw e-mailadres bevestigen - Glazecalc",
     "home": "Uw atelierlogboek - Glazecalc",
     "recipe": "Recepten - Glazecalc",
     "material": "Grondstoffen - Glazecalc",
@@ -74,6 +75,16 @@
   },
   "meta": {
     "description": "Voer een glazuurrecept in en zie de Segerformule (UMF), SiO₂ : Al₂O₃ en smeltmiddelverhouding. Gratis en open source: recepten, grondstoffen en stookverslagen.",
+    "guides": "Gidsen in gewone taal voor beginnende pottenbakkers: wat een glazuur is, hoe u het veilig aanmaakt en mengt, uw gezin beschermt en een eenvoudige oven stookt.",
+    "glazingBasics": "Waaruit een glazuur bestaat, hoe de oven het tot glas smelt, en wat kegels, fritten, de Segerformule (UMF) en glazuurfouten zijn. Voor beginnende pottenbakkers.",
+    "makingAGlaze": "Hoe u glazuur koopt, bewaart, afweegt en aanmaakt, de dikte goed krijgt, het op uw eigen klei test en alles noteert, zodat u het opnieuw kunt maken.",
+    "safeMixing": "Hoe u glazuurstof uit uw longen en ovendampen uit uw huis houdt: veilige gewoonten, stofmaskers, schoonmaken, ventilatie en riskante grondstoffen.",
+    "homeSafety": "Wat u doet als een kind of huisdier een glazuurgrondstof inslikt, en hoe u grondstoffen, stof, de oven en zelfgemaakt werk veilig houdt voor uw gezin.",
+    "firing": "Hoe u een elektrische oven stookt: kegels kiezen, plaatsen en aflezen, en gepubliceerde stookschema’s volgen voor biscuit- en glazuurstook, met een kegeltabel.",
+    "advice": "Praktische tips voor het mengen, glazuren en stoken van keramiek, van Glazecalc, plus uw eigen adviezen. Gratis voor pottenbakkers en keramisten.",
+    "about": "Glazecalc is een gratis, open source calculator en logboek voor glazuurchemie. Zie hoe het de Segerformule (UMF) berekent en hoe het is gebouwd.",
+    "privacy": "Hoe Glazecalc met uw gegevens omgaat: geen advertenties, analyse of tracking, en niets wordt verkocht. Wat wordt bewaard, waarom, en hoe u uw rechten uitoefent.",
+    "signup": "Bewaar uw glazuurrecepten, grondstoffen, notities en stookverslagen in een gratis Glazecalc-account. Geen advertenties, en uw gegevens worden nooit verkocht.",
     "imageAlt": "Glazecalc: begrijp uw glazuren, in plaats van ze alleen te mengen."
   },
   "notices": {
@@ -255,6 +266,8 @@
     "label": "Over deze vertaling",
     "text": "Deze pagina is met AI uit het Engels vertaald. Glazecalc is open source: als iets niet goed leest, stel dan op GitHub een correctie voor.",
     "brief": "Met AI uit het Engels vertaald.",
+    "plain": "Deze pagina is met AI uit het Engels vertaald, en AI gaat minder goed met deze taal om dan met de meeste talen. De Engelse pagina leest misschien beter. Glazecalc is open source: als iets niet goed leest, stel dan op GitHub een correctie voor.",
+    "plainBrief": "Met AI vertaald; het Engels leest misschien beter.",
     "suggest": "Correctie voorstellen",
     "english": "De Engelse tekst lezen",
     "close": "Sluiten"

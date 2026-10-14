@@ -1,6 +1,6 @@
 {
   "titles": {
-    "landing": "Glazecalc: áireamhán ceimice glónra saor in aisce do photadóirí",
+    "landing": "Glazecalc: áireamhán glónra saor in aisce do photadóirí",
     "advice": "Comhairle faoi ghlónraí - Glazecalc",
     "guides": "Treoirleabhair - Glazecalc",
     "glazingBasics": "Glónrú ó bhunphrionsabail - Glazecalc",
@@ -14,6 +14,7 @@
     "signup": "Cuntas a chruthú - Glazecalc",
     "forgot": "Do phasfhocal a athshocrú - Glazecalc",
     "reset": "Pasfhocal nua a roghnú - Glazecalc",
+    "confirmEmail": "Do ríomhphost a dheimhniú - Glazecalc",
     "home": "Do leabhar nótaí stiúideo - Glazecalc",
     "recipe": "Oidis - Glazecalc",
     "material": "Ábhair - Glazecalc",
@@ -74,6 +75,16 @@
   },
   "meta": {
     "description": "Feic foirmle Seger (UMF) oidis ghlónra, cóimheas silice le halúmana, cothromaíocht floscanna. Saor in aisce, foinse oscailte: oidis, ábhair, taifid bhácála.",
+    "guides": "Treoirleabhair shimplí do photadóirí nua: cad is glónra ann, conas é a dhéanamh agus a mheascadh go sábháilte, do theaghlach a chosaint, agus bácáil in áith.",
+    "glazingBasics": "Cad as a ndéantar glónra, conas a iompaíonn an áith ina ghloine é, agus cóin, friotanna, foirmle Seger (UMF) agus lochtanna glónra. Do photadóirí nua.",
+    "makingAGlaze": "Conas glónra a cheannach, a stóráil, a mheá agus a mheascadh, a thiús a cheartú, é a thástáil ar do chré féin agus taifid a choinneáil chun é a dhéanamh arís.",
+    "safeMixing": "Deannach glónra a choinneáil as do scamhóga agus múch na háithe as do theach: nósanna sábháilte, maisc análaitheora, glanadh, aeráil agus ábhair chontúirteacha.",
+    "homeSafety": "Cad atá le déanamh má shlogann leanbh nó peata ábhar glónra, agus ábhair, deannach, an áith agus earraí lámhdhéanta a choinneáil sábháilte do do theaghlach.",
+    "firing": "Bácáil in áith leictreach: cóin a roghnú, a shuíomh agus a léamh, agus cláir bhácála foilsithe don bhrioscbhácáil agus don bhácáil glónra, le tábla cón.",
+    "advice": "Leideanna praiticiúla faoi mheascadh, ghlónrú agus bhácáil, ón aip Glazecalc, agus do chomhairle féin. Saor in aisce do photadóirí agus do cheirmeoirí.",
+    "about": "Áireamhán ceimice glónra agus leabhar nótaí saor in aisce, foinse oscailte, is ea Glazecalc. Féach mar a ríomhann sé foirmle Seger (UMF) agus conas a tógadh é.",
+    "privacy": "Conas a láimhseálann Glazecalc do shonraí: gan fógraí, gan anailísíocht, gan rianú, ní dhíoltar faic. Cad a choinnítear, cén fáth agus conas do chearta a úsáid.",
+    "signup": "Cruthaigh cuntas Glazecalc saor in aisce chun d’oidis ghlónra, d’ábhair, do nótaí agus do thaifid bhácála a shábháil. Gan fógraí; ní dhíoltar do shonraí riamh.",
     "imageAlt": "Glazecalc: tuig do ghlónraí, in ionad iad a mheascadh amháin."
   },
   "notices": {

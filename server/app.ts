@@ -112,13 +112,17 @@ const missing = new Set<string>();
 /** The request's query string, with its ?, or ''. */
 const queryOf = (req: Request): string => (req.url.includes('?') ? req.url.slice(req.url.indexOf('?')) : '');
 
-// English pages are at the plain paths (/guides), so /en/guides goes there.
-// Always to a path on this site: /en//other.example and /en/\other.example
-// go to /other.example, never to the other site (//other.example).
+// English pages are at the plain paths (/guides), so /en/guides (and
+// /EN/guides) goes there. Always to a path on this site: /en//other.example
+// and /en/\other.example go to /other.example, never to the other site
+// (//other.example). Another language's code written in other letters goes
+// to the code as written: /zh-hans/recipe to /zh-Hans/recipe.
 app.use((req, res, next) => {
-  const english = /^\/en(\/.*)?$/.exec(req.path);
-  if (!english || (req.method !== 'GET' && req.method !== 'HEAD')) return next();
-  return res.redirect(301, '/' + (english[1] ?? '').replace(/^[/\\]+/, '') + queryOf(req));
+  if (req.method !== 'GET' && req.method !== 'HEAD') return next();
+  const english = /^\/en(\/.*)?$/i.exec(req.path);
+  if (english) return res.redirect(301, '/' + (english[1] ?? '').replace(/^[/\\]+/, '') + queryOf(req));
+  const written = languages.canonicalLanguagePath(req.path);
+  return written ? res.redirect(301, written + queryOf(req)) : next();
 });
 
 // A copy that is not to be indexed (NOINDEX) serves no sitemap, and its
@@ -203,13 +207,15 @@ app.use(async (req, res, next) => {
       return next();
     }
   }
-  const text = await pageText(languages.languageOfPath(req.path));
+  const code = languages.languageOfPath(req.path);
+  const text = await pageText(code);
   // A new nonce for each reply, given to Angular (ngCspNonce) for its styles.
   const nonce = crypto.randomBytes(16).toString('base64');
+  // Content-Language is for search engines that read no hreflang (Baidu) and for Bing.
   res
     .set('Cache-Control', 'no-cache')
     .set('Content-Security-Policy', contentSecurityPolicy(nonce))
-    .set('Content-Language', languages.languageOfPath(req.path));
+    .set('Content-Language', code);
   return res
     .status(isPage(req.path) ? 200 : 404)
     .type('html')

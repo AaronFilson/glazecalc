@@ -82,6 +82,8 @@ for (const colorScheme of ['light', 'dark']) {
     });
 
     test('the app pages, signed in', async ({ page, request }) => {
+      // Eight pages each checked whole, then a question and the phone menu: more than 30 seconds on a busy machine.
+      test.setTimeout(90000);
       await signUpAndSignIn(page);
       for (const path of APP_PAGES) {
         await page.goto(path);

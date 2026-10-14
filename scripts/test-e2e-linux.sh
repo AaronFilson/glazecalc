@@ -15,12 +15,13 @@ CACHE=$HOME/.cache/glazecalc-e2e-linux
 WORK=$CACHE/app
 
 # Playwright's own image for the version in package.json, with Node, built once
-# for each version (test-e2e-linux.Dockerfile). CI runs the tests in it too.
-# The file is read whole before it is searched: grep stopping early would cut
-# tar off mid-write, and pipefail would end the script.
+# for each version and each change to test-e2e-linux.Dockerfile. CI runs the
+# tests in it too. The file is read whole before it is searched: grep stopping
+# early would cut tar off mid-write, and pipefail would end the script.
 PACKAGE=$(tar -xOf "$TAR" package.json)
 PLAYWRIGHT=$(grep -o '"@playwright/test": *"[^"]*"' <<<"$PACKAGE" | grep -o '[0-9][0-9.]*')
-IMAGE=glazecalc-e2e:playwright$PLAYWRIGHT
+DOCKERFILE=$(sha256sum "$HERE/test-e2e-linux.Dockerfile" | cut -c1-12)
+IMAGE=glazecalc-e2e:playwright$PLAYWRIGHT-$DOCKERFILE
 if ! docker image inspect "$IMAGE" >/dev/null 2>&1; then
   echo "Building $IMAGE, once for this Playwright..."
   docker build -q -t "$IMAGE" --build-arg PLAYWRIGHT="$PLAYWRIGHT" - \

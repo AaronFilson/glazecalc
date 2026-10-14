@@ -31,7 +31,9 @@ describe('LocaleService', () => {
   it("takes a region from the browser's language, for defaults only", () => {
     expect(browserRegion(['de-AT', 'en'])).toBe('AT');
     expect(browserRegion(['en', 'fr-FR'])).toBe('FR');
-    expect(browserRegion(['en', 'ja-JP'])).toBe('');
+    expect(browserRegion(['en', 'ja-JP'])).toBe('JP');
+    expect(browserRegion(['en', 'ko-KR'])).toBe('');
+    expect(browserRegion(['tr-TR', 'en'])).toBe('TR');
     expect(browserRegion(['not a tag'])).toBe('');
   });
 
@@ -72,6 +74,52 @@ describe('LocaleService', () => {
       'orton',
       'point'
     ]);
+    // SK cones (JIS R 8101) are a third choice, and hold like the others.
+    preferences.remember('cones', 'sk');
+    TestBed.tick();
+    expect(locale.cones()).toBe('sk');
+    expect(preferences.cones()).toBe('sk');
+  });
+
+  it('fires by SK cones and reads density in Baumé in Japan, until chosen, and lists the US library', () => {
+    const preferences = TestBed.inject(PreferencesService);
+    const locale = TestBed.inject(LocaleService);
+    preferences.remember('region', 'JP');
+    TestBed.tick();
+    expect([locale.locale(), locale.temperature(), locale.cones(), locale.density()]).toEqual([
+      'en-JP',
+      'C',
+      'sk',
+      'baume'
+    ]);
+    expect(chosenRegion()).toBe('US');
+    // Orton cones and temperature are a setting away.
+    preferences.remember('cones', 'orton');
+    TestBed.tick();
+    expect(locale.cones()).toBe('orton');
+    preferences.remember('cones', 'temperature');
+    preferences.remember('density', 'sg');
+    TestBed.tick();
+    expect([locale.cones(), locale.density()]).toEqual(['temperature', 'sg']);
+  });
+
+  it('fires by temperature and reads specific gravity in Türkiye, until chosen, and lists the EU library', () => {
+    const preferences = TestBed.inject(PreferencesService);
+    const locale = TestBed.inject(LocaleService);
+    preferences.remember('region', 'TR');
+    TestBed.tick();
+    expect([locale.locale(), locale.temperature(), locale.cones(), locale.density()]).toEqual([
+      'en-TR',
+      'C',
+      'temperature',
+      'sg'
+    ]);
+    expect(chosenRegion()).toBe('EU');
+    // Orton cones and Baumé are a setting away.
+    preferences.remember('cones', 'orton');
+    preferences.remember('density', 'baume');
+    TestBed.tick();
+    expect([locale.cones(), locale.density()]).toEqual(['orton', 'baume']);
   });
 });
 
