@@ -82,15 +82,15 @@ describe('pages in each language', () => {
     expect(sitemap(SITE)).to.include('/ja/');
   });
 
-  it('knows Turkish, before its translation is done, without offering it or giving it the plainer notice', () => {
+  it('offers Turkish, with the standard notice rather than the plainer one', () => {
     const turkish = languages.languageFor('tr');
-    expect(turkish).to.include({ name: 'Türkçe', english: 'Turkish', dir: 'ltr', live: false });
+    expect(turkish).to.include({ name: 'Türkçe', english: 'Turkish', dir: 'ltr', live: true });
     expect(turkish).not.to.have.property('plainNotice');
-    expect(languages.LIVE_LANGUAGES).not.to.include('tr');
+    expect(languages.LIVE_LANGUAGES).to.include('tr');
     const html = pageHtml(HTML, '/tr/recipe', SITE);
     expect(html).to.include('<html lang="tr" dir="ltr">');
-    expect(html).to.include('<meta name="robots" content="noindex" />');
-    expect(sitemap(SITE)).not.to.include('/tr/');
+    expect(html).not.to.include('<meta name="robots" content="noindex" />');
+    expect(sitemap(SITE)).to.include('/tr/');
   });
 
   it("puts the language's title and description in, written safely", () => {

@@ -167,7 +167,7 @@
       "sg": {
         "label": "Özgül ağırlık",
         "saved": "Kaydedildi: sır yoğunluğu özgül ağırlık olarak.",
-        "example": "SG 1.45"
+        "example": "1,45"
       },
       "baume": {
         "label": "Bome derecesi, boumetreyle",
