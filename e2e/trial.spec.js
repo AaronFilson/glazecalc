@@ -50,7 +50,7 @@ test('a visitor tries the calculator, keeps the trial across a reload, and keeps
   await page.getByRole('button', { name: 'Sign out' }).click();
   await page.locator('#email').fill(email);
   await page.locator('#password').fill('password123');
-  await page.getByRole('button', { name: 'Sign in' }).click();
+  await page.getByRole('button', { name: 'Sign in', exact: true }).click();
   await expect(page).toHaveURL(/\/home$/);
   await expect(page.locator('.account-email')).toHaveText(email);
 });
@@ -106,7 +106,7 @@ test('signing in to an existing account brings the trial along', async ({ page, 
   await expect(page.locator('.trial-note')).toContainText('Signing in brings what you made as ' + name + ' into it.');
   await page.locator('#email').fill(email);
   await page.locator('#password').fill('password123');
-  await page.getByRole('button', { name: 'Sign in' }).click();
+  await page.getByRole('button', { name: 'Sign in', exact: true }).click();
 
   await expect(page).toHaveURL(/\/home$/);
   await expect(trialBar(page)).toHaveCount(0);

@@ -19,7 +19,7 @@ const signIn = async (page, email, password) => {
   await page.goto('/signin');
   await page.locator('#email').fill(email);
   await page.locator('#password').fill(password);
-  await page.getByRole('button', { name: 'Sign in' }).click();
+  await page.getByRole('button', { name: 'Sign in', exact: true }).click();
 };
 
 test('resets a forgotten password from the emailed link', async ({ page, request }) => {
