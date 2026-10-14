@@ -8,6 +8,11 @@ declare global {
       user?: UserDocument;
       /** HTTP Basic credentials, set by lib/basic_http.ts for sign-in. */
       basicHTTP?: { email: string; password: string };
+      /**
+       * The account a pending sign-in belongs to, set by the second step once it has
+       * loaded the pending record (server/lib/second_step.ts), for limits.secondStepAccount.
+       */
+      mfaUserId?: string;
     }
   }
 }

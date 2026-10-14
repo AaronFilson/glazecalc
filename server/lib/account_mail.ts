@@ -596,3 +596,45 @@ export const sendChangeNotice = (to: string, language?: string): Promise<void> =
     text: fill(email.text, { account: to, forgot: pageIn(language, '/forgot'), app: mailer.appUrl() })
   });
 };
+
+// Notices about two-step sign-in (docs/mfa-plan.md, item 10). STREAM D
+// implements these: the emails MFA_ADDED and MFA_REMOVED ({account}, {method},
+// {forgot}, {app}), RECOVERY_USED ({left}) and RECOVERY_NEW, English only for
+// now, through inLanguage and fill as above. {method} is a whole phrase from a
+// small per-language table: "an authenticator app", "the passkey "{name}"".
+
+/** The factor a notice is about. */
+export type MfaMethod = { kind: 'totp' } | { kind: 'passkey'; name: string };
+
+const notYet = (): never => {
+  throw new Error('not implemented: account_mail.ts MFA notices (stream D, docs/mfa-plan.md item 10)');
+};
+
+export const sendMfaAdded = (to: string, method: MfaMethod, language?: string): Promise<void> => notYet();
+
+export const sendMfaRemoved = (to: string, method: MfaMethod, language?: string): Promise<void> => notYet();
+
+export const sendRecoveryUsed = (to: string, left: number, language?: string): Promise<void> => notYet();
+
+export const sendRecoveryNew = (to: string, language?: string): Promise<void> => notYet();
+
+/** One notice, as the routes send it. */
+export type MfaNotice =
+  | { kind: 'added'; method: MfaMethod }
+  | { kind: 'removed'; method: MfaMethod }
+  | { kind: 'recovery-used'; left: number }
+  | { kind: 'recovery-new' };
+
+/**
+ * What the routes call (streams A and B), after the reply: sends the notice in
+ * the account's language, only when the address is confirmed
+ * (!user.emailUnverified) and never to a trial. Never throws or rejects: a
+ * failure is logged by its error code only, as logMailError does.
+ */
+export const noticeMfa = (
+  user: { email: string; emailUnverified?: boolean; guest?: boolean; preferences?: { language?: string } },
+  notice: MfaNotice
+): void => {
+  void user;
+  void notice;
+};

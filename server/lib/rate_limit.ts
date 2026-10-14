@@ -33,3 +33,22 @@ export const changePassword = limiter(15, 10, 'too-many-attempts');
  * the password from many addresses. One count for all three routes.
  */
 export const passwordCheck = limiter(15, 10, 'too-many-attempts', (req) => 'user:' + String(req.user?._id));
+
+// Two-step sign-in (docs/mfa-plan.md, item 9). There is no hard lockout, which
+// a stranger could use to lock someone out: with 10 codes per 15 minutes per
+// account, and 3 codes valid at a time, a guess at a 6-digit code succeeds
+// about 0.3% of the time in a day.
+
+/** Second steps per address: POST /api/signin/second-step and the TOTP confirm step. */
+export const secondStep = limiter(15, 20, 'too-many-codes');
+
+/**
+ * Second steps per account, from any address: after the pending sign-in is
+ * loaded (req.mfaUserId), or behind jwtAuth (req.user).
+ */
+export const secondStepAccount = limiter(
+  15,
+  10,
+  'too-many-codes',
+  (req) => 'mfa:' + String(req.mfaUserId ?? req.user?._id)
+);

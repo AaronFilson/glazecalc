@@ -11,12 +11,13 @@ import sameOrigin from './lib/same_origin.ts';
 import authRoutes from './routes/auth_routes.ts';
 import exportRoutes from './routes/export_routes.ts';
 import guestRoutes from './routes/guest_routes.ts';
+import mfaRoutes from './routes/mfa_routes.ts';
 import emailRoutes from './routes/email_routes.ts';
 import passwordRoutes from './routes/password_routes.ts';
 import records from './routes/records.ts';
 import userRoutes from './routes/user_routes.ts';
 import { say } from './lib/messages.ts';
-import { appUrl } from './lib/mailer.ts';
+import * as site from './lib/site.ts';
 import {
   isPage,
   looksLikeFile,
@@ -59,6 +60,8 @@ app.use((req, res, next) => {
   res.set('Content-Security-Policy', contentSecurityPolicy());
   next();
 });
+// X-Robots-Tag on every response of a copy that is not to be indexed (NOINDEX).
+app.use(site.noindexHeaders);
 
 const api = express.Router();
 // Replies hold one person's records, so no browser or proxy keeps them. A
@@ -88,6 +91,8 @@ api.use('/export', exportRoutes);
 api.use('/guest', guestRoutes);
 api.use('/password', passwordRoutes);
 api.use('/email', emailRoutes);
+// Two-step sign-in: the account's factors (docs/mfa-plan.md).
+api.use('/mfa', mfaRoutes);
 // /signup, /signin, /signout, /verify, /usersettings/:id and /deleteuser/:id
 api.use('/', authRoutes);
 api.use('/', userRoutes);
@@ -116,9 +121,13 @@ app.use((req, res, next) => {
   return res.redirect(301, '/' + (english[1] ?? '').replace(/^[/\\]+/, '') + queryOf(req));
 });
 
-app.get('/sitemap.xml', (req, res) => {
-  res.type('application/xml').set('Cache-Control', 'public, max-age=3600').send(sitemap(appUrl()));
+// A copy that is not to be indexed (NOINDEX) serves no sitemap, and its
+// robots.txt turns every crawler away (server/lib/site.ts).
+app.get('/sitemap.xml', site.sitemapAllowed, (req, res) => {
+  res.type('application/xml').set('Cache-Control', 'public, max-age=3600').send(sitemap(site.siteUrl()));
 });
+
+app.get('/robots.txt', site.robotsTxt);
 
 app.use(
   express.static(CLIENT, {
@@ -205,7 +214,7 @@ app.use(async (req, res, next) => {
     .status(isPage(req.path) ? 200 : 404)
     .type('html')
     .send(
-      withNonce(pageHtml(html, req.path, appUrl(), text, undefined, rendered), nonce).replace(
+      withNonce(pageHtml(html, req.path, site.siteUrl(), text, undefined, rendered), nonce).replace(
         '<gc-root>',
         `<gc-root ngCspNonce="${nonce}">`
       )

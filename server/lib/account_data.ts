@@ -5,12 +5,14 @@
 import type { Types } from 'mongoose';
 import Additive from '../models/additive.ts';
 import Advice from '../models/advice.ts';
+import AuthChallenge from '../models/auth_challenge.ts';
 import Deletion from '../models/deletion.ts';
 import Firing from '../models/firing.ts';
 import Material from '../models/material.ts';
 import Note from '../models/note.ts';
 import EmailToken from '../models/email_token.ts';
 import PasswordReset from '../models/password_reset.ts';
+import PendingSignIn from '../models/pending_sign_in.ts';
 import Recipe from '../models/recipe.ts';
 import Trash from '../models/trash.ts';
 import User from '../models/user.ts';
@@ -59,7 +61,10 @@ const deleteRecords = async (ids: string[]): Promise<number> => {
   const results = await Promise.all([
     ...OWNED_MODELS.map((Model) => Model.deleteMany({ ownedBy: { $in: ids } })),
     PasswordReset.deleteMany({ userId: { $in: ids } }),
-    EmailToken.deleteMany({ userId: { $in: ids } })
+    EmailToken.deleteMany({ userId: { $in: ids } }),
+    // Two-step sign-in in progress; the factors themselves are in the User document.
+    AuthChallenge.deleteMany({ userId: { $in: ids } }),
+    PendingSignIn.deleteMany({ userId: { $in: ids } })
   ]);
   return results.reduce((count, result) => count + result.deletedCount, 0);
 };

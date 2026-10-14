@@ -28,6 +28,9 @@ services:
     environment:
       NODE_ENV: production
       PORT: 3000
+      # Where the site lives (server/lib/site.ts): mail links, the sitemap, and
+      # the host passkeys belong to. Required in production.
+      SITE_URL: https://glazecalcapp.com
     ports:
       - '127.0.0.1:3000:3000'
     depends_on:
