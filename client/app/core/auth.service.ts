@@ -1,6 +1,24 @@
 import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http';
 import { Injectable, computed, inject, signal } from '@angular/core';
 import { firstValueFrom } from 'rxjs';
+import type {
+  AuthenticationResponseJSON,
+  FactorProof,
+  IdentityProof,
+  MfaSummary,
+  PasskeyAddRequest,
+  PasskeyCreationOptionsResponse,
+  PasskeyRequestOptionsResponse,
+  PasskeySignInRequest,
+  PublicKeyCredentialCreationOptionsJSON,
+  PublicKeyCredentialRequestOptionsJSON,
+  RecoveryCodesResponse,
+  RegistrationResponseJSON,
+  SecondStepRequest,
+  SecondStepResponse,
+  SignedInResponse,
+  TotpStartResponse
+} from '../../../lib/mfa';
 import { codedMessage } from '../i18n/coded';
 import { API_BASE } from './api-base';
 import { FIRST_RENDER } from './first-render';
@@ -16,9 +34,18 @@ interface EmailResponse {
   email: string;
 }
 
-interface SignInResponse extends EmailResponse {
-  /** How many records a trial on this browser brought into the account. */
-  kept: number;
+/**
+ * What the password step of a sign-in came to: signed in (`kept`: how many
+ * records a trial on this browser brought into the account), or a second step
+ * still to take (lib/mfa.d.ts). The second step's `pending` token is for the
+ * page to hold in memory only; nothing here writes it anywhere.
+ */
+export type SignInResult = { done: true; kept: number } | { done: false; secondStep: SecondStepResponse };
+
+/** A change to two-step sign-in: the server's message, and new recovery codes when it made some (shown once). */
+export interface MfaChange {
+  message: string;
+  recoveryCodes?: string[];
 }
 
 interface VerifyResponse {
@@ -132,12 +159,109 @@ export class AuthService {
     this.unverified.set(true);
   }
 
-  /** Signs in; a trial on this browser moves into the account. Resolves with how many records it brought. */
-  async signIn(email: string, password: string, keep = false): Promise<number> {
+  /**
+   * Signs in with the password; a trial on this browser moves into the
+   * account. An account with two-step sign-in is not signed in yet: the
+   * result carries the second step, to finish with finishSignIn.
+   */
+  async signIn(email: string, password: string, keep = false): Promise<SignInResult> {
     const headers = keepHeader(keep).set('Authorization', 'Basic ' + base64Utf8(email + ':' + password));
-    const res = await firstValueFrom(this.http.get<SignInResponse>(this.apiBase + '/signin', { headers }));
-    this.signedInAs(res.email);
-    return res.kept ?? 0;
+    const res = await firstValueFrom(
+      this.http.get<SignedInResponse | SecondStepResponse>(this.apiBase + '/signin', { headers })
+    );
+    if (isSecondStep(res)) return { done: false, secondStep: res };
+    return { done: true, kept: this.finished(res) };
+  }
+
+  /**
+   * The second step of a sign-in: the pending token from signIn and one
+   * factor. "Keep me signed in" was chosen with the password, so it is not
+   * sent again. Resolves with how many records a trial brought.
+   */
+  async finishSignIn(pending: string, proof: FactorProof): Promise<number> {
+    const body: SecondStepRequest = { pending, ...proof };
+    const res = await firstValueFrom(this.http.post<SignedInResponse>(this.apiBase + '/signin/second-step', body));
+    return this.finished(res);
+  }
+
+  /** A challenge for signing in with a passkey alone (passkey-first), for the button or the email field's autofill. */
+  async passkeySignInOptions(): Promise<PublicKeyCredentialRequestOptionsJSON> {
+    const res = await firstValueFrom(
+      this.http.post<PasskeyRequestOptionsResponse>(this.apiBase + '/signin/passkey/options', {})
+    );
+    return res.options;
+  }
+
+  /** Signs in with a passkey alone, which counts as both steps. Resolves with how many records a trial brought. */
+  async signInWithPasskey(response: AuthenticationResponseJSON, keep = false): Promise<number> {
+    const body: PasskeySignInRequest = { response };
+    const res = await firstValueFrom(
+      this.http.post<SignedInResponse>(this.apiBase + '/signin/passkey', body, { headers: keepHeader(keep) })
+    );
+    return this.finished(res);
+  }
+
+  // Two-step sign-in on the account page (server/routes/mfa_routes.ts). Every
+  // change takes an IdentityProof: the password, and once it is on, a factor.
+
+  /** Whether two-step sign-in is on, and with what. */
+  mfaSummary(): Promise<MfaSummary> {
+    return firstValueFrom(this.http.get<MfaSummary>(this.apiBase + '/mfa'));
+  }
+
+  /** A challenge for confirming a change with a passkey. */
+  async mfaConfirmOptions(): Promise<PublicKeyCredentialRequestOptionsJSON> {
+    const res = await firstValueFrom(
+      this.http.post<PasskeyRequestOptionsResponse>(this.apiBase + '/mfa/confirm/options', {})
+    );
+    return res.options;
+  }
+
+  /** Starts adding an authenticator app: its key, as text and as a QR code. */
+  startTotp(proof: IdentityProof): Promise<TotpStartResponse> {
+    return firstValueFrom(this.http.post<TotpStartResponse>(this.apiBase + '/mfa/totp/start', proof));
+  }
+
+  /** Finishes adding an authenticator app with a code it shows. */
+  async confirmTotp(code: string): Promise<MfaChange> {
+    return change(await firstValueFrom(this.http.post<RecoveryCodesResponse>(this.apiBase + '/mfa/totp', { code })));
+  }
+
+  async removeTotp(proof: IdentityProof): Promise<MfaChange> {
+    return change(
+      await firstValueFrom(this.http.delete<RecoveryCodesResponse>(this.apiBase + '/mfa/totp', { body: proof }))
+    );
+  }
+
+  /** Starts adding a passkey: the options for the browser to make one with. */
+  async passkeyCreationOptions(proof: IdentityProof): Promise<PublicKeyCredentialCreationOptionsJSON> {
+    const res = await firstValueFrom(
+      this.http.post<PasskeyCreationOptionsResponse>(this.apiBase + '/mfa/passkeys/options', proof)
+    );
+    return res.options;
+  }
+
+  async addPasskey(response: RegistrationResponseJSON, name: string): Promise<MfaChange> {
+    const body: PasskeyAddRequest = { response, name };
+    return change(await firstValueFrom(this.http.post<RecoveryCodesResponse>(this.apiBase + '/mfa/passkeys', body)));
+  }
+
+  /** Renames a passkey; a name changes nothing about signing in, so no password. */
+  async renamePasskey(id: string, name: string): Promise<MfaChange> {
+    const url = this.apiBase + '/mfa/passkeys/' + encodeURIComponent(id);
+    return change(await firstValueFrom(this.http.patch<RecoveryCodesResponse>(url, { name })));
+  }
+
+  async removePasskey(id: string, proof: IdentityProof): Promise<MfaChange> {
+    const url = this.apiBase + '/mfa/passkeys/' + encodeURIComponent(id);
+    return change(await firstValueFrom(this.http.delete<RecoveryCodesResponse>(url, { body: proof })));
+  }
+
+  /** New recovery codes in place of the old ones. */
+  async newRecoveryCodes(proof: IdentityProof): Promise<MfaChange> {
+    return change(
+      await firstValueFrom(this.http.post<RecoveryCodesResponse>(this.apiBase + '/mfa/recovery-codes', proof))
+    );
   }
 
   /**
@@ -288,6 +412,12 @@ export class AuthService {
     for (const then of this.onDeleted) then();
   }
 
+  /** A finished sign-in: notes the session, and says how many records a trial brought. */
+  private finished(res: { email: string; kept?: number }): number {
+    this.signedInAs(res.email);
+    return res.kept ?? 0;
+  }
+
   private signedInAs(email: string): void {
     this.setSession('account');
     this.email.set(email);
@@ -317,6 +447,14 @@ export class AuthService {
     if (trial) this.trialEnded.set(false);
     store(TRIAL_KEY, trial && JSON.stringify(trial));
   }
+}
+
+function isSecondStep(res: SignedInResponse | SecondStepResponse): res is SecondStepResponse {
+  return res.code === 'second-step' && typeof (res as Partial<SecondStepResponse>).pending === 'string';
+}
+
+function change(res: RecoveryCodesResponse): MfaChange {
+  return { message: said(res), ...(res.recoveryCodes ? { recoveryCodes: res.recoveryCodes } : {}) };
 }
 
 /**

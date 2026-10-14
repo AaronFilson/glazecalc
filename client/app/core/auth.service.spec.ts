@@ -39,7 +39,7 @@ describe('AuthService', () => {
     const req = httpMock().expectOne(API + '/signin');
     expect(req.request.headers.get('Authorization')).toBe('Basic ' + btoa('a@b.com:pass:word'));
     req.flush({ msg: 'Success in signin', email: 'a@b.com', kept: 3 });
-    expect(await done).toBe(3);
+    expect(await done).toEqual({ done: true, kept: 3 });
     expect(auth.email()).toBe('a@b.com');
   });
 
@@ -58,6 +58,81 @@ describe('AuthService', () => {
     expect(req.request.headers.get('X-Keep-Signed-In')).toBe('1');
     req.flush({ email: 'c@d.com' });
     await signUp;
+  });
+
+  it('signs in no further than the password when the account has two-step sign-in, and keeps no token', async () => {
+    setup();
+    const done = auth.signIn('a@b.com', 'password123', true);
+    const secondStep = {
+      code: 'second-step',
+      msg: 'This account uses two-step sign-in.',
+      methods: { totp: true, passkey: false, recovery: true },
+      pending: 'pending-token',
+      expiresAt: '2026-10-14T12:05:00Z'
+    };
+    httpMock()
+      .expectOne(API + '/signin')
+      .flush(secondStep);
+    expect(await done).toEqual({ done: false, secondStep });
+    expect(auth.hasSession()).toBe(false);
+    expect(auth.email()).toBeNull();
+    // The pending token lives in the page's memory only.
+    const stored = [localStorage, sessionStorage].flatMap((storage) =>
+      Object.keys(storage).map((key) => storage.getItem(key))
+    );
+    expect(stored.some((value) => value?.includes('pending-token'))).toBe(false);
+
+    // The second step sends the token and one factor; the keep-me-signed-in choice is already on the server.
+    const finishing = auth.finishSignIn('pending-token', { code: '123456' });
+    const req = httpMock().expectOne(API + '/signin/second-step');
+    expect(req.request.method).toBe('POST');
+    expect(req.request.body).toEqual({ pending: 'pending-token', code: '123456' });
+    expect(req.request.headers.has('X-Keep-Signed-In')).toBe(false);
+    req.flush({ code: 'signed-in', msg: 'Signed in.', email: 'a@b.com', kept: 1 });
+    expect(await finishing).toBe(1);
+    expect(auth.email()).toBe('a@b.com');
+    expect(localStorage.getItem('session')).toBe('account');
+  });
+
+  it('signs in with a passkey alone, asking to keep the sign-in in a header', async () => {
+    setup();
+    const asking = auth.passkeySignInOptions();
+    const options = httpMock().expectOne(API + '/signin/passkey/options');
+    expect(options.request.method).toBe('POST');
+    options.flush({ options: { challenge: 'abc' } });
+    expect(await asking).toEqual({ challenge: 'abc' });
+
+    const response = { id: 'cred' } as never;
+    const done = auth.signInWithPasskey(response, true);
+    const req = httpMock().expectOne(API + '/signin/passkey');
+    expect(req.request.body).toEqual({ response });
+    expect(req.request.headers.get('X-Keep-Signed-In')).toBe('1');
+    req.flush({ code: 'signed-in', msg: 'Signed in.', email: 'a@b.com', kept: 0 });
+    expect(await done).toBe(0);
+    expect(auth.email()).toBe('a@b.com');
+  });
+
+  it('sends each change to two-step sign-in with its proof, and passes on new recovery codes', async () => {
+    setup();
+    const removing = auth.removePasskey('pk/1', { password: 'pw', code: '123456' });
+    const remove = httpMock().expectOne(API + '/mfa/passkeys/pk%2F1');
+    expect(remove.request.method).toBe('DELETE');
+    expect(remove.request.body).toEqual({ password: 'pw', code: '123456' });
+    remove.flush({ code: 'passkey-removed', msg: 'The passkey was removed.' });
+    expect(await removing).toEqual({ message: 'The passkey was removed.' });
+
+    const making = auth.newRecoveryCodes({ password: 'pw', recoveryCode: 'abcde-12345' });
+    const make = httpMock().expectOne(API + '/mfa/recovery-codes');
+    expect(make.request.method).toBe('POST');
+    make.flush({ code: 'recovery-codes-made', msg: 'New recovery codes are ready.', recoveryCodes: ['a', 'b'] });
+    expect(await making).toEqual({ message: 'New recovery codes are ready.', recoveryCodes: ['a', 'b'] });
+
+    const renaming = auth.renamePasskey('pk1', 'Laptop');
+    const rename = httpMock().expectOne(API + '/mfa/passkeys/pk1');
+    expect(rename.request.method).toBe('PATCH');
+    expect(rename.request.body).toEqual({ name: 'Laptop' });
+    rename.flush({ code: 'passkey-renamed', msg: 'The passkey was renamed.' });
+    await renaming;
   });
 
   it('does not note a session when sign in fails', async () => {

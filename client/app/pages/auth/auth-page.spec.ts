@@ -4,6 +4,29 @@ import { of } from 'rxjs';
 import { AuthService } from '../../core/auth.service';
 import { API, fieldProblem, httpMock, settle, testProviders, text } from '../../testing/test-providers';
 import { AuthPage } from './auth-page';
+import { PASSKEYS, Passkeys } from './passkeys';
+
+type FakePasskeys = { [K in keyof Passkeys]: ReturnType<typeof vi.fn> };
+
+const PASSKEY_RESPONSE = { id: 'cred', rawId: 'cred', type: 'public-key' } as never;
+
+function fakePasskeys(autofill = false): FakePasskeys {
+  return {
+    supported: vi.fn(() => true),
+    autofillSupported: vi.fn(async () => autofill),
+    authenticate: vi.fn(async () => PASSKEY_RESPONSE),
+    register: vi.fn(),
+    cancel: vi.fn()
+  };
+}
+
+const SECOND_STEP = {
+  code: 'second-step',
+  msg: 'This account uses two-step sign-in.',
+  methods: { totp: true, passkey: false, recovery: true },
+  pending: 'pending-token',
+  expiresAt: '2999-01-01T00:00:00Z'
+};
 
 describe('AuthPage', () => {
   const create = async (mode: 'signin' | 'signup') => {
@@ -182,5 +205,149 @@ describe('AuthPage hidden fields', () => {
     expect(fixture.nativeElement.querySelector('#confirmation')).toBeNull();
     expect(text(fixture, 'button[type=submit]')).toBe('Sign in');
     expect(fixture.nativeElement.querySelector('.privacy-note')).toBeNull();
+  });
+});
+
+describe('AuthPage two-step sign-in', () => {
+  const create = async (mode: 'signin' | 'signup', passkeys?: FakePasskeys) => {
+    localStorage.clear();
+    TestBed.configureTestingModule({
+      providers: [
+        ...testProviders(),
+        { provide: ActivatedRoute, useValue: { data: of({ mode }) } },
+        ...(passkeys ? [{ provide: PASSKEYS, useValue: passkeys }] : [])
+      ]
+    });
+    const fixture = TestBed.createComponent(AuthPage);
+    await settle(fixture);
+    const page = fixture.componentInstance as unknown as Record<string, any>;
+    const navigate = vi.spyOn(TestBed.inject(Router), 'navigateByUrl').mockResolvedValue(true);
+    return { fixture, page, navigate };
+  };
+  const button = (fixture: { nativeElement: HTMLElement }, label: string) =>
+    [...fixture.nativeElement.querySelectorAll('button')].find((one) => one.textContent?.trim() === label) as
+      HTMLButtonElement | undefined;
+  const signInWithPassword = async (fixture: { whenStable(): Promise<unknown> }, page: Record<string, any>) => {
+    page['email'].set('a@b.com');
+    page['password'].set('password123');
+    const submitting = page['submit']();
+    httpMock()
+      .expectOne(API + '/signin')
+      .flush(SECOND_STEP);
+    await submitting;
+    await settle(fixture as never);
+  };
+
+  afterEach(() => httpMock().verify());
+
+  it('asks for the second step after the password, holding the token in memory only', async () => {
+    const { fixture, page, navigate } = await create('signin');
+    await signInWithPassword(fixture, page);
+    expect(navigate).not.toHaveBeenCalled();
+    expect(text(fixture, 'h1')).toBe('Two-step sign-in');
+    expect(text(fixture, '.muted')).toBe('Your password is right. One more step to sign in as a@b.com.');
+    expect(fixture.nativeElement.querySelector('#password')).toBeNull();
+    expect(page['password']()).toBe('');
+    expect(document.activeElement?.id).toBe('second-code');
+    const stored = [localStorage, sessionStorage].flatMap((storage) =>
+      Object.keys(storage).map((key) => storage.getItem(key))
+    );
+    expect(stored.some((value) => value?.includes('pending-token'))).toBe(false);
+
+    const code = fixture.nativeElement.querySelector('#second-code') as HTMLInputElement;
+    code.value = '123456';
+    code.dispatchEvent(new Event('input'));
+    await fixture.whenStable();
+    button(fixture, 'Finish signing in')!.click();
+    await settle(fixture);
+    httpMock()
+      .expectOne(API + '/signin/second-step')
+      .flush({ code: 'signed-in', msg: 'Signed in.', email: 'a@b.com', kept: 0 });
+    await settle(fixture);
+    expect(navigate).toHaveBeenCalledWith('/home');
+  });
+
+  it('goes back to the password with the email filled in, saying why, when the second step runs out', async () => {
+    const { fixture, page } = await create('signin');
+    await signInWithPassword(fixture, page);
+    page['startOver']('Signing in took too long. Please enter your password again.');
+    await settle(fixture);
+    expect(text(fixture, 'h1')).toBe('Sign in');
+    expect((fixture.nativeElement.querySelector('#email') as HTMLInputElement).value).toBe('a@b.com');
+    expect(text(fixture, '.errors-section')).toContain('Signing in took too long.');
+    expect(document.activeElement?.id).toBe('password');
+  });
+
+  it('offers no passkey sign-in where the browser has no passkeys', async () => {
+    const { fixture } = await create('signin');
+    expect(button(fixture, 'Sign in with a passkey')).toBeUndefined();
+  });
+
+  it('signs in with a passkey alone, keeping the sign-in if ticked', async () => {
+    const passkeys = fakePasskeys();
+    const { fixture, page, navigate } = await create('signin', passkeys);
+    page['keep'].set(true);
+    button(fixture, 'Sign in with a passkey')!.click();
+    await settle(fixture);
+    httpMock()
+      .expectOne(API + '/signin/passkey/options')
+      .flush({ options: { challenge: 'abc' } });
+    await settle(fixture);
+    expect(passkeys.authenticate).toHaveBeenCalledWith({ challenge: 'abc' });
+    const req = httpMock().expectOne(API + '/signin/passkey');
+    expect(req.request.body).toEqual({ response: PASSKEY_RESPONSE });
+    expect(req.request.headers.get('X-Keep-Signed-In')).toBe('1');
+    req.flush({ code: 'signed-in', msg: 'Signed in.', email: 'a@b.com', kept: 0 });
+    await settle(fixture);
+    expect(navigate).toHaveBeenCalledWith('/home');
+  });
+
+  it('says why a passkey did not sign in, such as one that belongs to no account', async () => {
+    const { fixture, navigate } = await create('signin', fakePasskeys());
+    button(fixture, 'Sign in with a passkey')!.click();
+    await settle(fixture);
+    httpMock()
+      .expectOne(API + '/signin/passkey/options')
+      .flush({ options: { challenge: 'abc' } });
+    await settle(fixture);
+    httpMock()
+      .expectOne(API + '/signin/passkey')
+      .flush(
+        { code: 'passkey-unknown', msg: 'This passkey does not belong to any Glazecalc account.' },
+        { status: 401, statusText: 'Unauthorized' }
+      );
+    await settle(fixture);
+    expect(text(fixture, '.errors-section')).toContain('This passkey does not belong to any Glazecalc account.');
+    expect(navigate).not.toHaveBeenCalled();
+  });
+
+  it('offers saved passkeys in the email field where the browser can, and stops on leaving', async () => {
+    const passkeys = fakePasskeys(true);
+    let pick: (value: unknown) => void = () => {};
+    passkeys.authenticate.mockImplementationOnce(() => new Promise((resolve) => (pick = resolve)));
+    const { fixture, navigate } = await create('signin', passkeys);
+    expect(fixture.nativeElement.querySelector('#email').getAttribute('autocomplete')).toBe('username webauthn');
+    httpMock()
+      .expectOne(API + '/signin/passkey/options')
+      .flush({ options: { challenge: 'auto' } });
+    await settle(fixture);
+    expect(passkeys.authenticate).toHaveBeenCalledWith({ challenge: 'auto' }, true);
+    pick(PASSKEY_RESPONSE);
+    await settle(fixture);
+    httpMock()
+      .expectOne(API + '/signin/passkey')
+      .flush({ code: 'signed-in', msg: 'Signed in.', email: 'a@b.com', kept: 0 });
+    await settle(fixture);
+    expect(navigate).toHaveBeenCalledWith('/home');
+    fixture.destroy();
+    expect(passkeys.cancel).toHaveBeenCalled();
+  });
+
+  it('keeps the sign-up form as it was: no passkey sign-in, a plain username field', async () => {
+    const passkeys = fakePasskeys(true);
+    const { fixture } = await create('signup', passkeys);
+    expect(button(fixture, 'Sign in with a passkey')).toBeUndefined();
+    expect(fixture.nativeElement.querySelector('#email').getAttribute('autocomplete')).toBe('username');
+    expect(passkeys.autofillSupported).not.toHaveBeenCalled();
   });
 });

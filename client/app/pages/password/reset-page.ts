@@ -25,6 +25,7 @@ import { Notices, NoticesList } from '../../shared/notices';
       <h1>{{ t('account.reset.heading') }}</h1>
       @if (done(); as message) {
         <p class="done-text" role="status">{{ message }}</p>
+        <p class="second-step-note">{{ t('account.reset.secondStep') }}</p>
         <p>
           <a routerLink="/signin" class="btn btn-success">{{ t('account.reset.signIn') }}</a>
         </p>
