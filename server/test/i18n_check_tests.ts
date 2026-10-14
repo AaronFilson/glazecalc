@@ -116,6 +116,10 @@ describe('message checks', () => {
       expect(numbersIn('5 gram', 'id')).to.eql(['5']);
       // A time with minutes keeps them, as 8:30pm does.
       expect(numbersIn('pukul 20.30 WIB', 'id')).to.eql(numbersIn('8:30pm', 'en'));
+      // A time on the hour is its hour, however written: 08:00 to 20:00 is saat 08.00–20.00 and 8 Uhr bis 20 Uhr.
+      expect(numbersIn('saat 08.00 ile saat 20.00 arası', 'tr')).to.eql(numbersIn('08:00 to 20:00', 'en'));
+      expect(numbersIn('8 bis 20 Uhr', 'de')).to.eql(numbersIn('8:00 to 20:00', 'en'));
+      expect(numbersIn('de 8 h 00 à 20 h 00', 'fr')).to.eql(['20', '8']);
     });
 
     it('reads a month as its number where the language writes it so, as Japanese 2026年10月 does', () => {
