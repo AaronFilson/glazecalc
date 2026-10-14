@@ -40,7 +40,6 @@ describe('SecondStep', () => {
     const startOver = vi.fn();
     fixture.componentInstance.signedIn.subscribe(signedIn);
     fixture.componentInstance.startOver.subscribe(startOver);
-    document.body.appendChild(fixture.nativeElement);
     await settle(fixture);
     return { fixture, signedIn, startOver };
   };
@@ -67,7 +66,6 @@ describe('SecondStep', () => {
     expect(field.getAttribute('inputmode')).toBe('numeric');
     expect(document.activeElement).toBe(field);
     expect(text(fixture)).toContain('If you leave or reload this page, you will need to enter your password again.');
-    fixture.nativeElement.remove();
   });
 
   it('finishes signing in with the code, sending the pending token and no keep-signed-in header', async () => {
@@ -83,7 +81,6 @@ describe('SecondStep', () => {
     await settle(fixture);
     expect(signedIn).toHaveBeenCalledWith(2);
     expect(TestBed.inject(AuthService).email()).toBe('a@b.com');
-    fixture.nativeElement.remove();
   });
 
   it('says what a code needs before sending one', async () => {
@@ -93,7 +90,6 @@ describe('SecondStep', () => {
     await settle(fixture);
     httpMock().expectNone(API + '/signin/second-step');
     expect(fieldProblem(fixture, 'second-code')).toBe('Enter the 6-digit code from your authenticator app.');
-    fixture.nativeElement.remove();
   });
 
   it('marks a wrong code on its field, and lets the person try again', async () => {
@@ -110,7 +106,6 @@ describe('SecondStep', () => {
     await settle(fixture);
     expect(fieldProblem(fixture, 'second-code')).toBe('That code is not correct.');
     expect(startOver).not.toHaveBeenCalled();
-    fixture.nativeElement.remove();
   });
 
   for (const code of ['second-step-expired', 'second-step-tries']) {
@@ -124,7 +119,6 @@ describe('SecondStep', () => {
         .flush({ code, msg: 'Please enter your password again.' }, { status: 401, statusText: 'Unauthorized' });
       await settle(fixture);
       expect(startOver).toHaveBeenCalledWith('Please enter your password again.');
-      fixture.nativeElement.remove();
     });
   }
 
@@ -143,7 +137,6 @@ describe('SecondStep', () => {
     req.flush({ code: 'signed-in', msg: 'Signed in.', email: 'a@b.com', kept: 0 });
     await settle(fixture);
     expect(signedIn).toHaveBeenCalledWith(0);
-    fixture.nativeElement.remove();
   });
 
   it('signs in with a passkey when the account has one, with the challenge from the password step', async () => {
@@ -159,7 +152,6 @@ describe('SecondStep', () => {
     req.flush({ code: 'signed-in', msg: 'Signed in.', email: 'a@b.com', kept: 0 });
     await settle(fixture);
     expect(signedIn).toHaveBeenCalled();
-    fixture.nativeElement.remove();
   });
 
   it('says so when the passkey prompt is closed, and sends nothing', async () => {
@@ -169,7 +161,6 @@ describe('SecondStep', () => {
     await settle(fixture);
     httpMock().expectNone(API + '/signin/second-step');
     expect(text(fixture, '[role="alert"]')).toBe('The passkey was not used. Please try again when you are ready.');
-    fixture.nativeElement.remove();
   });
 
   it('offers no passkey button where the browser has none, and says so', async () => {
@@ -178,13 +169,11 @@ describe('SecondStep', () => {
     expect(text(fixture, '.no-passkeys')).toContain('This browser cannot use passkeys.');
     // Recovery codes are still there.
     expect(fixture.nativeElement.querySelector('#second-recovery')).not.toBeNull();
-    fixture.nativeElement.remove();
   });
 
   it('starts over when asked', async () => {
     const { fixture, startOver } = await create();
     button(fixture, 'Start over').click();
     expect(startOver).toHaveBeenCalledWith(null);
-    fixture.nativeElement.remove();
   });
 });

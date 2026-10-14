@@ -219,7 +219,6 @@ describe('AuthPage two-step sign-in', () => {
       ]
     });
     const fixture = TestBed.createComponent(AuthPage);
-    document.body.appendChild(fixture.nativeElement);
     await settle(fixture);
     const page = fixture.componentInstance as unknown as Record<string, any>;
     const navigate = vi.spyOn(TestBed.inject(Router), 'navigateByUrl').mockResolvedValue(true);
@@ -239,10 +238,7 @@ describe('AuthPage two-step sign-in', () => {
     await settle(fixture as never);
   };
 
-  afterEach(() => {
-    httpMock().verify();
-    document.querySelectorAll('gc-auth-page').forEach((el) => el.remove());
-  });
+  afterEach(() => httpMock().verify());
 
   it('asks for the second step after the password, holding the token in memory only', async () => {
     const { fixture, page, navigate } = await create('signin');

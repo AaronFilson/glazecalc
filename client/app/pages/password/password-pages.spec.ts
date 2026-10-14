@@ -89,6 +89,8 @@ describe('ResetPage', () => {
     await submitting;
     await fixture.whenStable();
     expect(text(fixture, '.done-text')).toContain('Your password has been changed.');
+    // A reset does not turn two-step sign-in off.
+    expect(text(fixture, '.second-step-note')).toContain('If your account uses two-step sign-in');
     expect(fixture.nativeElement.querySelector('a[href="/signin"], a[href="#/signin"]')).not.toBeNull();
   });
 
@@ -136,6 +138,7 @@ describe('AccountPage', () => {
     const fixture = TestBed.createComponent(AccountPage);
     await fixture.whenStable();
     answer('/preferences', { weightUnit: 'g' });
+    answer('/mfa', { on: false, emailConfirmed: true, totp: null, passkeys: [], codesLeft: 0 });
     await settle(fixture);
     return { fixture, page: fixture.componentInstance as unknown as Page };
   };
@@ -148,6 +151,7 @@ describe('AccountPage', () => {
       'Settings',
       'Download my data',
       'Change your password',
+      'Two-step sign-in',
       'Change your email',
       'Sign out everywhere',
       'Delete your account'

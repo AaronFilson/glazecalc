@@ -10,10 +10,11 @@ import { FieldCheck, FieldChecks, emailAddress, filled, newPassword, samePasswor
 import { Notices, NoticesList } from '../../shared/notices';
 import { PageHeader } from '../../shared/page-header';
 import { SettingsSection } from './settings-section';
+import { SignInSection } from './sign-in-section';
 
 /**
- * The signed-in user's account: settings, changing the password, or deleting
- * the account. A trial has settings too, but no password, so it is offered an
+ * The signed-in user's account: settings, changing the password, two-step
+ * sign-in, or deleting the account. A trial has settings too, but no password, so it is offered an
  * account instead.
  */
 @Component({
@@ -27,6 +28,7 @@ import { SettingsSection } from './settings-section';
     PageHeader,
     RouterLink,
     SettingsSection,
+    SignInSection,
     TranslocoDirective
   ],
   template: `<ng-container *transloco="let t">
@@ -114,6 +116,8 @@ import { SettingsSection } from './settings-section';
           </button>
         </form>
       </section>
+
+      <gc-sign-in-section />
 
       <section class="auth-text">
         <h2>{{ t('account.account.emailHeading') }}</h2>
