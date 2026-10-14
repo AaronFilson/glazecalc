@@ -168,17 +168,15 @@ app.use(async (req, res, next) => {
   } catch {
     return next();
   }
-<<<<<<< HEAD
-  const text = await pageText(languages.languageOfPath(req.path));
-  // A new nonce for each reply, given to Angular (ngCspNonce) for its styles.
-  const nonce = crypto.randomBytes(16).toString('base64');
-  res.set('Cache-Control', 'no-cache').set('Content-Security-Policy', contentSecurityPolicy(nonce));
-=======
   const code = languages.languageOfPath(req.path);
   const text = await pageText(code);
-  // For search engines that read no hreflang (Baidu) and for Bing.
-  res.set({ 'Cache-Control': 'no-cache', 'Content-Language': code });
->>>>>>> asia-groundwork-locales
+  // A new nonce for each reply, given to Angular (ngCspNonce) for its styles.
+  const nonce = crypto.randomBytes(16).toString('base64');
+  // Content-Language is for search engines that read no hreflang (Baidu) and for Bing.
+  res
+    .set('Cache-Control', 'no-cache')
+    .set('Content-Security-Policy', contentSecurityPolicy(nonce))
+    .set('Content-Language', code);
   return res
     .status(isPage(req.path) ? 200 : 404)
     .type('html')
