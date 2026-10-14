@@ -230,7 +230,16 @@ export class App implements OnInit {
         ),
         takeUntilDestroyed()
       )
-      .subscribe(() => afterNextRender(() => firstRender.set(false), { injector: this.injector }));
+      .subscribe(() =>
+        afterNextRender(
+          () => {
+            firstRender.set(false);
+            // Tells the browser tests the prerendered page has been adopted and the app is running.
+            this.document.documentElement.setAttribute('data-app-ready', '');
+          },
+          { injector: this.injector }
+        )
+      );
     // index.html marks the page for a stored session so the landing page does not flash; once there is none
     // (the server did not confirm it, or the reader signed out), the page is drawn as for anyone.
     const root = this.document.documentElement;

@@ -23,13 +23,9 @@ const PUBLIC_PAGES = [
 const meta = (page, selector) => page.locator('head meta[' + selector + ']').getAttribute('content');
 const jsonLd = async (page) =>
   (await page.locator('head script[type="application/ld+json"]').allTextContents()).map((text) => JSON.parse(text));
-// Angular puts its version on the root once the app has started.
-const appStarted = (page) => page.waitForFunction(() => !!globalThis.document.querySelector('gc-root[ng-version]'));
-
-// The prerender is the build's (docs/seo-plan.md items 2 and 7) and the first-render rules
-// are item 5's; until both are merged these wait.
-const NEEDS_PRERENDER = 'needs the build to prerender the public pages (docs/seo-plan.md items 2, 7)';
-const NEEDS_FIRST_RENDER = 'needs the first-render rules (docs/seo-plan.md item 5)';
+// The app sets data-app-ready on <html> once it has adopted the page and drawn once (client/app/app.ts).
+const appStarted = (page) =>
+  page.waitForFunction(() => globalThis.document.documentElement.hasAttribute('data-app-ready'));
 
 test.describe('the head of each public page', () => {
   test('a guide has its own title, description and preview text', async ({ page }) => {
@@ -159,7 +155,6 @@ test.describe('prerendered pages', () => {
     test.use({ javaScriptEnabled: false });
 
     test('a German guide shows its heading, text, title and description', async ({ page }) => {
-      test.fixme(true, NEEDS_PRERENDER);
       await page.goto('/de/guides/firing');
       await expect(page.locator('h1')).toBeVisible();
       await expect(page.locator('main')).toContainText('Kegel');
@@ -169,21 +164,21 @@ test.describe('prerendered pages', () => {
     });
 
     test('the home page shows the landing text, and links are real links', async ({ page }) => {
-      test.fixme(true, NEEDS_PRERENDER);
       await page.goto('/');
       await expect(page.locator('h1')).toBeVisible();
-      await expect(page.getByRole('link', { name: 'Create an account' })).toHaveAttribute('href', '/signup');
+      await expect(page.getByRole('link', { name: 'Create a free account' }).first()).toHaveAttribute(
+        'href',
+        '/signup'
+      );
     });
 
     test('the structured data is in the page, before any script', async ({ page }) => {
-      test.fixme(true, NEEDS_PRERENDER);
       await page.goto('/guides/firing');
       expect(await jsonLd(page)).toHaveLength(1);
     });
   });
 
   test('the app adopts the prerendered paragraph where it is, and draws nothing again', async ({ page }) => {
-    test.fixme(true, NEEDS_PRERENDER);
     // Hold the main script back, mark a paragraph of the HTML as sent, then let the script load.
     let release;
     const held = new Promise((resolve) => (release = resolve));
@@ -204,7 +199,6 @@ test.describe('prerendered pages', () => {
 
   for (const language of ['', '/de', '/el', '/ga']) {
     test(`no hydration mismatch on any public page in ${language || '/en'}`, async ({ page }) => {
-      test.fixme(true, NEEDS_FIRST_RENDER);
       const problems = [];
       page.on('console', (message) => {
         if (/NG050[0-7]/.test(message.text())) problems.push(message.text());
@@ -218,7 +212,6 @@ test.describe('prerendered pages', () => {
   }
 
   test('a guide asks for no messages or text before the app is ready', async ({ page }) => {
-    test.fixme(true, 'needs the transfer cache that answers them from the page (docs/seo-plan.md item 4)');
     const early = [];
     let ready = false;
     page.on('request', (request) => {
@@ -231,18 +224,20 @@ test.describe('prerendered pages', () => {
   });
 
   test('a stored session on the home page goes to the notebook without the landing text showing', async ({ page }) => {
-    test.fixme(true, NEEDS_FIRST_RENDER);
     await signUpAndSignIn(page);
-    const seen = [];
-    await page.exposeFunction('sawLanding', () => seen.push('landing'));
+    // Every frame until the page changes (what the eye sees; a script can run before the styles do).
     await page.addInitScript(() => {
-      new globalThis.MutationObserver(() => {
+      globalThis.landingFrames = 0;
+      const look = () => {
         const hero = globalThis.document.querySelector('.hero');
-        if (hero && hero.checkVisibility()) globalThis.sawLanding();
-      }).observe(globalThis.document, { childList: true, subtree: true });
+        if (hero && hero.checkVisibility({ visibilityProperty: true })) globalThis.landingFrames++;
+        if (!globalThis.location.pathname.endsWith('/home')) globalThis.requestAnimationFrame(look);
+      };
+      globalThis.requestAnimationFrame(look);
     });
+
     await page.goto('/');
     await expect(page).toHaveURL(/\/home$/);
-    expect(seen).toEqual([]);
+    expect(await page.evaluate(() => globalThis.landingFrames)).toBe(0);
   });
 });
