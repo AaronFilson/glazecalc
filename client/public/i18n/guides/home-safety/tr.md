@@ -67,7 +67,7 @@ Hiçbir resmî kurum sır hammaddelerinin evde saklanması için kural koymaz, a
 
 Bunlar, sırra uyarlanmış genel zehirlenmeyi önleme kurallarıdır. Hiçbir seramik standardı bunları koymaz, ama hepsini öneririz:
 
-- Kuru hammaddeleri kilit altında tutun: bir dolapta ya da kilitlenen bir oda, garaj veya kulübede. Yüksek bir raf işe yarar ama çocuklar tırmanır. Başta yalnızca birkaç şeyi kilitleyebiliyorsanız çözünür hammaddeler ve renklendiricilerle başlayın.
+- Kuru hammaddeleri kilit altında tutun: bir dolapta ya da kilitlenen bir oda, garaj veya kulübede. Yüksek bir raf yardımcı olur ama çocuklar tırmanır. Başta yalnızca birkaç şeyi kilitleyebiliyorsanız çözünür hammaddeler ve renklendiricilerle başlayın.
 - Hammaddeleri kendi orijinal torbalarında veya kaplarında tutun. Birini başka bir kaba aktarırsanız, üzerine adını torbada yazdığı gibi yazın.
 - Sır hammaddeleri için asla yiyecek veya içecek kapları (yoğurt kapları, kavanozlar, şişeler) kullanmayın, etiketli olsa bile. Bir çocuk yoğurt kabında ne olduğunu bilir.
 - Atölye aletlerini (kepçeler, kaşıklar, çırpıcılar, elekler, teraziler) atölyede tutun. Sır için asla mutfak aletlerini, yemek için de asla sır aletlerini kullanmayın.
@@ -79,7 +79,7 @@ Hammaddelerin satın alınması ve saklanması hakkında daha ayrıntılı bilgi
 
 ### Sır atığı ve durulama suyu
 
-Sırrı ya da sır aletlerini duruladığınız suyu asla lavaboya veya bahçeye dökmeyin. Birleşik Krallık’taki Crafts Council, elleri, fırçaları, elekleri ve aletleri yıkamak için ayrı bir kova su önerir. Suyu bir gece çökmeye bırakın, üstteki berrak suyu dökün, sonra dibe çöken sırrı kurutup çöpe atın (çöp depolama alanına gider), asla gidere dökmeyin.
+Sırrı da, sır aletlerini duruladığınız suyu da asla lavaboya veya bahçeye dökmeyin. Birleşik Krallık’taki Crafts Council, elleri, fırçaları, elekleri ve aletleri yıkamak için ayrı bir kova su önerir. Suyu bir gece çökmeye bırakın, üstteki berrak suyu dökün, sonra dibe çöken sırrı kurutup çöpe atın (çöp depolama alanına gider), asla gidere dökmeyin.
 
 O kovaya bir kapak öneririz: dipteki çamur sırdaki metallerin aynısını taşır ve evcil hayvanlar durgun su içer. Atma kuralları yerden yere değişir; bu yüzden her ürünün güvenlik bilgi formuna bakın ve emin değilseniz belediyenize veya su idarenize sorun.
 

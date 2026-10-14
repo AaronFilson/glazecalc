@@ -216,7 +216,7 @@ Boraks, borik asit, soda ve potasyum karbonat suda çözünür; bu yüzden bunla
 
 ### Deri
 
-- Islak veya kuru sırla{{en: glaze}} çalışırken **eldiven takın**; Utah eldivenlerin “takılması gerektiğini” söylüyor. HSE püskürtme için nitrili belirtiyor. Eldiven malzemelerini karşılaştıran bir kaynak yok; bu yüzden bütün sır işleri için nitril öneriyoruz.
+- Islak veya kuru sırla{{en: glaze}} çalışırken **eldiven takın**; Utah’a göre eldivenler “takılmalıdır”. HSE püskürtme için nitrili belirtiyor. Eldiven malzemelerini karşılaştıran bir kaynak yok; bu yüzden bütün sır işleri için nitril öneriyoruz.
 - **Bariyer kremler eldiven değildir.** HSE: “‘Bariyer kremler’ ‘sıvı eldiven’ değildir”.
 - Silika tozu da ıslak çalışma da **kontakt dermatite** (kızarık, ağrılı, çatlamış deri) yol açar ve çatlamış deri hammaddelerin içeri girmesine izin verir. Ilık su ve yumuşak sabunla yıkanın ve iş sonrası bir krem kullanın.
 - **Kesikleri örtün.** Örneğin baryum bileşiklerinin sağlam deriden geçmediği düşünülür, ama zedelenmiş deriden geçebilirler.
