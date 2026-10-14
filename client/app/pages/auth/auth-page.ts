@@ -6,6 +6,7 @@ import { TranslocoDirective, translate } from '@jsverse/transloco';
 import { map } from 'rxjs';
 import { AuthService } from '../../core/auth.service';
 import { errorMessage } from '../../core/error-message';
+import { LocaleService } from '../../core/locale.service';
 import { RichText } from '../../i18n/rich-text';
 import { FieldCheck, FieldChecks, emailAddress, filled, newPassword, samePassword } from '../../shared/field-checks';
 import { Notices, NoticesList } from '../../shared/notices';
@@ -85,6 +86,11 @@ import { Notices, NoticesList } from '../../shared/notices';
             <input id="keep" type="checkbox" name="keep" class="form-check-input" [(ngModel)]="keep" />
             <label for="keep" class="form-check-label">{{ t('account.auth.keepSignedIn') }}</label>
           </div>
+          @if (signup() && outsideUs()) {
+            <p class="form-text data-notice">
+              <gc-rich [text]="t('account.auth.dataNotice')" [links]="{ where: '/privacy#your-choice' }" />
+            </p>
+          }
           <button type="submit" class="btn btn-primary w-100" [attr.aria-disabled]="busy() || null">
             {{ signup() ? t('account.auth.createAccount') : t('account.auth.signIn') }}
           </button>
@@ -129,6 +135,12 @@ export class AuthPage {
   protected readonly signup = toSignal(inject(ActivatedRoute).data.pipe(map((data) => data['mode'] === 'signup')), {
     initialValue: false
   });
+  /**
+   * Whether to say, before an account is made, that accounts are kept in the US and the choice is the
+   * reader's (docs/asia-plan.md, decision 10): for every region but the US, and when none is known.
+   */
+  private readonly locale = inject(LocaleService);
+  protected readonly outsideUs = computed(() => this.locale.region() !== 'US');
   protected readonly notices = new Notices();
   protected readonly email = signal('');
   protected readonly password = signal('');

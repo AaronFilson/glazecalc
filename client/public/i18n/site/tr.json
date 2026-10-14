@@ -1,0 +1,202 @@
+{
+  "landing": {
+    "eyebrow": "Sır hesaplayıcısı ve atölye defteri",
+    "heading": "Seramikçiler için ücretsiz sır kimyası.",
+    "lead": "Sırlarınızı yalnızca karıştırmayın, anlayın. Bir reçete girin; Seger formülünü (UMF), silis/alümina oranını ve ergiticilerin dengesini hemen görün. Reçetelerinizi, hammaddelerinizi, renklendiricilerinizi, notlarınızı ve pişirim kayıtlarınızı size özel tek bir defterde bir arada tutun.",
+    "trialEnded": "Denemeniz sona erdi. Yeni bir deneme başlatın ya da çalışmalarınızı saklamak için ücretsiz bir hesap oluşturun.",
+    "tryIt": "Şimdi deneyin",
+    "createAccount": "Ücretsiz hesap oluştur",
+    "trialFailed": "Deneme şu anda başlatılamadı. Lütfen yeniden deneyin.",
+    "heroNote": "Denemek için kayıt gerekmez · Ücretsiz ve açık kaynak · Reçeteleriniz size özel kalır",
+    "heroAlt": "Bir sıra pişmiş piramit grubu: her gruptaki beyaz pirometrik piramitler fırının ısısıyla eğilmiş.",
+    "heroCaption": "Pişirimden sonra piramit grupları: fırın yeterli ısı işini yaptığında her piramit eğilir.",
+    "exampleHeading": "Nasıl çalıştığını görün: klasik bir seladon temel sırrı",
+    "exampleCaption": "Bernard Leach’in “4321” sırrı, ağırlıkça kısım olarak; çoğunlukla 10 numaralı piramide kadar pişirilir.",
+    "material": "Hammadde",
+    "parts": "Kısım",
+    "unityHeading": "Bu sırrın Seger formülü",
+    "exampleNote": "Ergiticilerin toplamı 1’dir, böylece herhangi iki sır adil biçimde karşılaştırılabilir. Hesaplayıcının kullandığı kodla, burada, tarayıcınızda hesaplandı.",
+    "featuresHeading": "Glazecalc neler yapar",
+    "features": {
+      "unity": {
+        "title": "Anında Seger formülü",
+        "text": "Bir reçete girer girmez ergiticileri, alüminayı ve silisi Seger formülünde, sır kimyacılarının reçeteleri karşılaştırdığı biçimde görün."
+      },
+      "substitute": {
+        "title": "Düzeltme ve ikame",
+        "text": "Bir hammaddenin üretimi mi durduruldu? Aynı şekilde eriyen bir yedek bulmak için formülleri karşılaştırın."
+      },
+      "notebook": {
+        "title": "Atölye defteriniz",
+        "text": "Reçeteleri, kendi hammaddelerinizi, renklendiricileri, notları ve pişirim kayıtlarını tek bir yerde bir arada tutun."
+      },
+      "learn": {
+        "title": "Yaparken öğrenme",
+        "text": "Sırrın ne olduğundan güvenle pişirilmesine kadar, sade bir dille yazılmış rehberler sayıların hemen yanında."
+      }
+    },
+    "umfHeading": "Seger formülü nedir?",
+    "umfRecipe": "Bir sır reçetesi, her hammaddeden ne kadar tartılacağını söyler. Seger formülü (UMF) ise bu hammaddelerin fırında neye dönüştüğünü söyler: her oksitten kaç molekül olduğunu, ergiticilerin toplamı bir olacak biçimde ölçeklenmiş olarak.",
+    "umfGroups": "Ergiticiler sırrı eritir, alümina ergiyiği katılaştırır, silis ise camı oluşturur. Bu üç grubu karşılaştırmak, bir sırrın neden parlak, ötekinin neden mat olduğunu ya da biri akarken ötekinin neden yerinde kaldığını açıklar ve artık satılmayan bir hammaddenin nasıl değiştirileceğini gösterir.",
+    "readAdvice": "Daha fazla sır tavsiyesi okuyun",
+    "closingHeading": "Hazır olduğunuzda buradayız.",
+    "closingText": "Hesaplayıcıyı şimdi deneyin, sonra yaptıklarınızı saklamak için bir hesap oluşturun."
+  },
+  "about": {
+    "title": "Glazecalc hakkında",
+    "lead": "Seramikçiler, seramik sanatçıları ve öğrenciler için ücretsiz, açık kaynaklı bir sır kimyası hesaplayıcısı ve defteri.",
+    "whatHeading": "Ne yapar",
+    "what": "Glazecalc bir sır reçetesini, yani hammaddeleri ve her birinden ne kadar tarttığınızı, Seger formülüne (UMF) çevirir: sırrın pişince oluştuğu oksitler, ergiticilerin toplamı bir olacak biçimde ölçeklenmiş olarak. Bu, reçeteleri karşılaştırılabilir kılar, bir sırrın nasıl davrandığını açıklamaya yardım eder ve bir hammaddenin değiştirilmesi gerektiğinde işe yarar.",
+    "alongside": "Hesaplayıcının yanı sıra reçetelerinizi, kendi hammaddelerinizi, renklendiricileri ve diğer katkıları, notlarınızı ve pişirim kayıtlarınızı saklar; ayrıca pratik <advice>sır tavsiyeleri</advice> içeren bir sayfa ve sırrın ne olduğundan güvenle pişirilmesine kadar yeni başlayan seramikçiler için <guides>rehberler</guides> sunar.",
+    "numbersHeading": "Sayılar nasıl hesaplanır",
+    "numbers": "Her hammadde, kimyasal formülüyle ya da oksit analiziyle ve kızdırma kaybıyla tanımlanır: kızdırma kaybı, fırında yanıp giden kısımdır; örneğin kalsitteki karbondioksit ya da kaolendeki su. Glazecalc her miktarı standart molar kütlelerle her oksidin molüne çevirir, reçete boyunca toplar ve ergiticilerin toplam molüne böler. Renklendiriciler ve diğer katkılar reçeteyle birlikte listelenir ama alışıldığı gibi Seger formülüne katılmaz.",
+    "guide": "Sonuçlar bir yol göstericidir, garanti değildir. Gerçek hammaddeler tedarikçiden tedarikçiye ve partiden partiye değişir, pişirim de kimya kadar önemlidir; bu yüzden her sırrı test edin. Yiyeceğe değen yüzeyler için sırlara salım testi yapılması önerilir.",
+    "builtHeading": "Nasıl yapıldı",
+    "built": "Glazecalc 2017’de başladı ve 2026’da yeniden yapıldı. Tek ve küçük bir web uygulamasıdır; <source>kaynak kodu GitHub’da</source>, MIT Lisansı altında yayımlanır.",
+    "stackBrowser": "Tarayıcıda Angular 22 (bağımsız bileşenler ve sinyaller); sır kimyası küçük, ortak bir kod kütüphanesindedir.",
+    "stackServer": "Node.js 24 ve Express 5 üzerinde, MongoDB 9 kullanan bir TypeScript API’si; 350’den fazla otomatik testle denetlenir.",
+    "stackHosting": "Amazon Web Services üzerinde Docker’da çalışır; önünde Let's Encrypt’in sağladığı HTTPS ile nginx vardır.",
+    "stackDeploy": "GitHub Actions ile yayına alınır: her değişiklikte imajlar oluşturulur ve test edilir; yayına alma işlemi, saklanmış anahtarlar olmadan AWS’de oturum açar.",
+    "whoHeading": "Kim yaptı",
+    "who": "Glazecalc’ı Aaron Filson yapıyor. Bir sorun mu buldunuz ya da bir fikriniz mi var? <issues>GitHub’da bir konu açın</issues>.",
+    "studio": "Aaron Filson’ın el yapımı seramikleri, Washington eyaletinin Tacoma kentindeki <studio>Updraft Pottery Studio</studio> atölyesindedir. İşlere bir göz atın; size hitap eden bir parça olursa sipariş verin."
+  },
+  "privacy": {
+    "title": "Gizlilik",
+    "lead": "Son güncelleme: Ekim 2026.",
+    "shortHeading": "Kısaca",
+    "short": "Glazecalc yalnızca hesabınızı çalıştırmak için gerekeni saklar, fazlasını değil. Reklam, analiz ve izleme yoktur. Verileriniz asla satılmaz; onları işleyen tek şirket, siteyi barındıran ve e-postalarını gönderen Amazon Web Services’tir.",
+    "whoHeading": "Sorumlu kim",
+    "who": "Glazecalc, sahibi Aaron Filson tarafından Amerika Birleşik Devletleri’nde yürütülen ücretsiz, açık kaynaklı, kâr amacı gütmeyen bir projedir. Verilerinize ne olacağına o karar verir; bu nedenle veri koruma hukukunda verilerinizin “veri sorumlusu” odur.",
+    "contact": "Verilerinizle ilgili soru sormak ya da haklarınızdan birini kullanmak için <mail>privacy@glazecalcapp.com</mail> adresine yazın. <issues>GitHub’da bir konu da açabilirsiniz</issues>, ancak konular herkese açıktır: e-posta adresinizi ya da kişisel herhangi bir bilgiyi asla bunlara yazmayın. Verilerinizle ilgili çoğu şeyi <account>hesap sayfanızda</account> kendiniz yapabilirsiniz.",
+    "storedHeading": "Neler saklanır ve neden",
+    "storedAccount": "<b>Hesabınız:</b> e-posta adresiniz ve parolanız; parola yalnızca tek yönlü bir özet (bcrypt) olarak saklanır, asla parolanın kendisi olarak değil. Ayarlarınız (dil, bölge ve birimler gibi) ve elinizdeki hammaddelerin listesi de hesapla birlikte saklanır. Bir hesap için e-posta adresi gerekir: oturum açmak ve unutulan parolayı sıfırlamak için. Hesap oluşturduğunuzda, adresin size ait olduğunu doğrulamak için bu adrese bir bağlantı gönderilir; o zamana kadar adrese yalnızca siz istediğinizde, örneğin parola sıfırlama için, e-posta gönderilir.",
+    "storedSaved": "<b>Kaydettikleriniz:</b> reçeteleriniz, hammaddeleriniz, katkılarınız, notlarınız, pişirim kayıtlarınız ve tavsiyeleriniz, yazdığınız gibi. Onları yalnızca siz görebilirsiniz: kullanıcılar arasında hiçbir şey paylaşılmaz.",
+    "storedTrial": "<b>Deneme (“Şimdi deneyin”):</b> e-posta ya da parola yoktur, yalnızca “speckled quiet kilns” gibi uydurma bir ad vardır. Deneme sırasında aynı tarayıcıda bir hesaba oturum açarsanız, denemede yaptıklarınız hesaba taşınır.",
+    "storedResets": "<b>Parola sıfırlama ve e-posta bağlantıları:</b> hangi hesabın istediği, ne zaman istediği, adres doğrulama bağlantısının gönderildiği adres ve her bağlantının bir parmak izi (bağlantının kendisi değil).",
+    "storedLogs": "<b>Günlükler:</b> web sunucusu her isteği kaydeder: IP adresinizi, zamanı, istenen sayfayı ve tarayıcınızın adını. Uygulama hataları oluştukları sayfayla birlikte kaydeder, e-posta adresinizi asla kaydetmez.",
+    "storedDeletions": "<b>Silinen hesaplar:</b> hesabın kimlik numarası ve ne zaman silindiği, başka hiçbir şey; böylece geri yüklenen bir yedek hesabı geri getiremez.",
+    "storedMail": "<b>E-posta sorunları:</b> adresinize giden e-posta geri dönerse ya da istenmeyen e-posta olarak bildirilirse, Amazon’un e-posta hizmeti adresi bir daha e-posta gönderilmeyecek adresler listesine ekler ve sahibine adresi içeren bir bildirim gönderir.",
+    "storedInbound": "<b>Glazecalc’a gönderdiğiniz e-postalar:</b> privacy@glazecalcapp.com adresine ve Glazecalc’ın diğer adreslerine gelen e-postalar Amazon tarafından istenmeyen e-postaya ve virüslere karşı denetlenir, özel bir depoda saklanır ve sahibinin kendi gelen kutusuna (Gmail) iletilir.",
+    "basisHeading": "Hukuki dayanak",
+    "basisContract": "<b>Hesabınızın çalıştırılması</b>, kaydettiklerinizin saklanması ve hesabınızla ilgili e-postalar, istediğiniz hizmettir: hukuki dayanak, sizinle Glazecalc arasındaki sözleşmedir (GDPR Madde 6(1)(b)).",
+    "basisInterests": "<b>Sitenin güvenli ve çalışır tutulması</b>: günlükler, herkesin ne sıklıkta oturum açmayı deneyebileceğine konan sınırlar, yedekler, silinen hesapların kaydı ve e-posta gönderilmeyecek adresler listesi. Bunlar Glazecalc’ın güvenlik, kötüye kullanımın önlenmesi ve çalışmalarınızın kaybolmaması konusundaki meşru menfaatine dayanır (Madde 6(1)(f)). Kısa süre saklanır ve başka hiçbir şey için kullanılmaz. Yukarıdaki adrese yazarak bunlara itiraz edebilirsiniz.",
+    "basisNone": "Hakkınızda hiçbir şey otomatik olarak kararlaştırılmaz, profil çıkarma yoktur ve hiçbir şey reklam için kullanılmaz.",
+    "whereHeading": "Nerede saklanır ve kim işler",
+    "hosting": "Glazecalc, Amazon Web Services (AWS) üzerinde çalışır: sunucu (EC2), yedekler (S3) ve e-posta (Simple Email Service), hepsi Amerika Birleşik Devletleri’nde, Oregon’da (us-west-2). AWS verileri yalnızca Glazecalc adına, <dpa>veri işleme koşulları</dpa> çerçevesinde işler. Başka hiç kimse verileri almaz.",
+    "transfer": "AB’de, Birleşik Krallık’ta ya da İsviçre’de yaşıyorsanız verileriniz Amerika Birleşik Devletleri’ne gider. Amazon, <dpf>AB–ABD Veri Gizliliği Çerçevesi</dpf> ile bunun Birleşik Krallık ve İsviçre uzantıları kapsamında sertifikalı olduğunu söylüyor. AWS’nin koşulları ayrıca AB’nin Standart Sözleşme Maddelerini içerir; şu anda mahkemede itiraz edilen Çerçeve iptal edilse bile bu maddeler uygulanmaya devam eder. Sahip de AWS de ABD’dedir ve ABD hukuku onları veri teslim etmeye zorlayabilir.",
+    "noThirdParties": "Tarayıcınız başka web sitelerinden hiçbir şey yüklemez: başka yerlerden yazı tipi, betik, görsel ya da analiz aracı gelmez ve sitenin güvenlik ayarları bunları engeller. GitHub’a ve diğer sitelere verilen bağlantılar yalnızca siz tıkladığınızda açılır.",
+    "choiceHeading": "Hesabınızın saklandığı yer ve sizin seçiminiz",
+    "choiceProject": "Glazecalc ücretsiz, açık kaynaklı bir projedir. Hesaplar ve içerdikleri her şey, nerede yaşarsanız yaşayın, yukarıda anlatıldığı gibi Amerika Birleşik Devletleri’ndeki sunucularda saklanır.",
+    "choiceNoAccount": "Rehberleri okumak için hesaba ihtiyacınız yoktur; hesaplayıcıyı da e-posta adresi ya da parola olmadan “Şimdi deneyin” ile deneyebilirsiniz. Bir deneme aynı sunucularda 14 gün saklanır.",
+    "choiceOwnCopy": "Herkes Glazecalc’ın kendi kopyasını kendi bilgisayarında ya da sunucusunda çalıştırabilir: kodu <source>GitHub</source>’da ücretsizdir.",
+    "choiceDecision": "Hesabın Amerika Birleşik Devletleri’nde saklanacağını bilerek burada hesap oluşturup oluşturmamak sizin kendi kararınızdır.",
+    "choiceNoWarranty": "Glazecalc olduğu gibi, garanti olmaksızın sunulur. Projeyi sürdürenler, hesap oluşturma kararınız ya da hesabın verilerinin nerede saklandığı için hiçbir sorumluluk ya da yükümlülük kabul etmez.",
+    "keptHeading": "Ne kadar süre saklanır",
+    "keptAccount": "<b>Hesabınız ve kaydettikleriniz:</b> siz silene kadar. Hesaplar kullanılmadıkları için kaldırılmaz.",
+    "keptTrial": "<b>Deneme:</b> başlangıcından itibaren 14 gün; ardından, saklamak için bir hesap oluşturmadığınız sürece içindeki her şeyle birlikte silinir.",
+    "keptResets": "<b>Parola sıfırlama ve e-posta bağlantıları:</b> sıfırlama bağlantısı 30 dakika geçerlidir ve kaydı yaklaşık bir saat sonra silinir; adres doğrulama bağlantısı 24 saat geçerlidir ve o süre boyunca saklanır.",
+    "keptBackups": "<b>Yedekler:</b> veritabanının şifreli kopyaları 30 gün, sunucu diskinin kopyaları 7 gün saklanır. Böylece silinen bir hesap 30 gün içinde tüm yedeklerden de silinmiş olur.",
+    "keptDeletions": "<b>Silinen bir hesabın kaydı:</b> 37 gün, yani herhangi bir yedekten biraz daha uzun.",
+    "keptLogs": "<b>Günlükler:</b> web sunucusununkiler 14 gün. Uygulamanın ve veritabanının kendi günlükleri boyutla sınırlıdır (her biri 50 MB); bu, sakin bir sitede birkaç gün geriye gider. Sunucu diskinin kopyaları günlükleri 7 güne kadar daha saklar.",
+    "keptMail": "<b>E-posta gönderilmeyecek adresler listesi:</b> sahibi adresi kaldırana kadar; sahibi her ay artık bir hesaba ait olmayan adresleri kaldırır. Sahibi geri dönen e-posta bildirimlerini 30 gün içinde siler.",
+    "keptInbound": "<b>Glazecalc’a gönderdiğiniz e-postalar:</b> Amazon’un deposunda 30 gün, sahibinin gelen kutusunda ise size yanıt vermek için gerektiği kadar. Verilerinizle ilgili bir talep için kısa bir not (ne zaman geldiği, ne istendiği ve ne yapıldığı) üç yıl saklanır.",
+    "rightsHeading": "Haklarınız",
+    "rightsIntro": "Verilerinizi görebilir, düzeltebilir, alabilir ve silebilirsiniz. Bunların çoğunu <account>hesap sayfanızda</account> kendiniz yapabilirsiniz:",
+    "rightsExport": "<b>Görün ve yanınızda götürün:</b> Verilerimi indir düğmesi her şeyi tek bir dosyaya (JSON), reçetelerinizi ve hammaddelerinizi ise elektronik tablolara (CSV) kaydeder.",
+    "rightsCorrect": "<b>Düzeltin:</b> ayarlarınızı ve kayıtlarınızı istediğiniz zaman değiştirin. E-posta adresinizi değiştirmek için yeni adrese gönderilen bağlantıyı açın; eski adres doğrulanmışsa değişiklik ona bildirilir ve tüm cihazlarda oturum kapatılır.",
+    "rightsDelete": "<b>Silin:</b> Hesabımı sil düğmesi hesabınızı ve kaydettiğiniz her şeyi hemen kaldırır; Denemeyi sil düğmesi de bir deneme için aynısını yapar. Yedeklerdeki kopyalar 30 gün içinde silinir.",
+    "rightsSignOut": "<b>Her yerde oturumu kapatın:</b> hesabınızın tüm cihazlardaki oturumlarını sonlandırır.",
+    "rightsAsk": "Başka herhangi bir şey için, örneğin bir hata düzeltilirken verilerinizin kullanılmamasını istemek ya da nasıl kullanıldığına itiraz etmek için <mail>privacy@glazecalcapp.com</mail> adresine yazın. Bu ücretsizdir ve bir ay içinde yanıt alırsınız. Sizden yalnızca hesabın size ait olduğunu göstermeniz istenir; bunu oturum açarak ya da hesabın adresine gönderilen bir bağlantıyı açarak yaparsınız, asla kimlik belgesiyle değil.",
+    "rightsComplain": "Memnun kalmazsanız bir veri koruma otoritesine şikâyette bulunabilirsiniz: AB’de <edpb>ülkenizdeki otoriteye</edpb>, Birleşik Krallık’ta ise <ico>Information Commissioner’s Office</ico> kurumuna.",
+    "storageHeading": "Çerezler ve tarayıcı depolama alanı",
+    "storageIntro": "Glazecalc tek bir çerez ayarlar ve tarayıcınızda birkaç küçük değer saklar. Her biri sizin istediğiniz bir şey için oradadır: oturumunuzun açık kalması ya da yaptığınız bir seçimin hatırlanması. Hiçbiri sizi izlemez ve hiçbiri paylaşılmaz; bu yüzden yasa önceden izin istenmesini gerektirmez ve çerez bildirimi yoktur.",
+    "storageLabel": "Çerezler ve tarayıcı depolama alanı",
+    "storageName": "Ad",
+    "storagePurpose": "Ne için",
+    "storageLasts": "Ne kadar kalır",
+    "storageCookie": "Çerez",
+    "storageLocal": "Yerel depolama",
+    "storageSession": "Oturum depolaması",
+    "storageNote": "Bunlardan herhangi birini tarayıcınızın ayarlarından istediğiniz zaman temizleyebilirsiniz. Hesabınızı silmek, oturum notunu ve burada saklanan tüm ayarları kaldırır.",
+    "keys": {
+      "cookie": {
+        "purpose": "Oturumunuzu açık tutar. Oturum açma belirtecinizi taşır. Sayfadaki betikler onu okuyamaz; tarayıcınız onu yalnızca Glazecalc’ın kendi sunucusuna, HTTPS üzerinden gönderir ve başka bir sitede başlayan bir istekle asla göndermez.",
+        "lasts": "Oturum açtığınızda, hesap oluşturduğunuzda ya da deneme başlattığınızda ayarlanır. Tarayıcınızı kapatana kadar ya da “Bu cihazda oturumumu açık tut” kutusunu işaretlerseniz 7 gün; deneme için 14 gün. Oturumu kapattığınızda kaldırılır."
+      },
+      "session": {
+        "purpose": "Bir hesaba ya da denemeye oturum açtığınızı not eder; böylece uygulama sunucuya sorması gerektiğini bilir. Belirteç ya da parola içermez.",
+        "lasts": "Oturumu kapatana ya da oturum sona erene kadar."
+      },
+      "trial": {
+        "purpose": "Deneme sırasında, denemenin adı ve bitiş tarihi; bunları göstermek için.",
+        "lasts": "Deneme sona erene, saklanana ya da silinene kadar."
+      },
+      "settings": {
+        "purpose": "Bu tarayıcıda değiştirdiğiniz bir ayar; böylece bir sonraki sayfa onu sunucu yanıt vermeden hemen gösterir. <code>theme</code> ve <code>palette</code> sayfayı görünmeden önce renklendirir, <code>language</code> ise sayfaları sizin dilinizde açar.",
+        "lasts": "Siz değiştirene kadar. Oturumu kapattığınızda, oturum kapalıyken bir şey seçtiyseniz o geri gelir, gerisi kaldırılır."
+      },
+      "visitor": {
+        "purpose": "Oturum kapalıyken seçtiğiniz dil ya da çeviri notunu kapattığınız; böylece oturumu kapattığınızda geri gelir.",
+        "lasts": "Tarayıcınızın depolama alanını temizleyene ya da bu tarayıcıda bir hesabı silene kadar."
+      },
+      "region": {
+        "purpose": "Bir kütüphane listesindeki bölge filtresi.",
+        "lasts": "Filtreyi yeniden tüm bölgelere ayarlayana kadar."
+      },
+      "includeAdditives": {
+        "purpose": "Yeni reçetelerin katkılarını Seger formülüne katıp katmayacağı, en son seçtiğiniz gibi.",
+        "lasts": "Tarayıcınızın depolama alanını temizleyene kadar."
+      },
+      "recipeHelp": {
+        "purpose": "Reçete sayfasındaki yardımı gizlediğiniz.",
+        "lasts": "Yardımı yeniden gösterene kadar."
+      },
+      "print": {
+        "purpose": "Bir reçeteyi yazdırırken yaptığınız son seçimler: reçetenin tamamı ya da bir tartım ve tartım miktarı.",
+        "lasts": "Tarayıcınızın depolama alanını temizleyene kadar."
+      },
+      "token": {
+        "purpose": "Glazecalc’ın eski bir sürümünden kalma bir oturum açma belirteci. Artık hiç yazılmaz.",
+        "lasts": "Bir sayfa açıldığında kaldırılır."
+      },
+      "readEnglish": {
+        "purpose": "Çevrilmiş bir sayfayı İngilizce okumayı seçtiğiniz; böylece uygulama sizi kendi dilinize yönlendirmeyi bırakır.",
+        "lasts": "Sekmeyi kapatana kadar."
+      },
+      "reloadedFor": {
+        "purpose": "Sitenin yeni bir sürümü yayımlandıktan sonra hangi sayfanın ne zaman yeniden yüklendiği; böylece bir sayfa dakikada en fazla bir kez yeniden yüklenir.",
+        "lasts": "Sekmeyi kapatana kadar."
+      }
+    },
+    "childrenHeading": "Çocuklar",
+    "children": "Glazecalc seramikçiler için bir araçtır ve çocuklara yönelik değildir.",
+    "changesHeading": "Değişiklikler",
+    "changes": "Bu bildirim değişirse sayfanın üstündeki tarih de değişir."
+  },
+  "notFound": {
+    "heading": "Sayfa bulunamadı",
+    "text": "Bu adreste bir sayfa yok. Taşınmış ya da bağlantı yanlış yazılmış olabilir.",
+    "start": "Ana sayfaya git"
+  },
+  "advice": {
+    "title": "Sır tavsiyeleri",
+    "lead": "Karıştırma, sırlama ve pişirim üzerine pratik ipuçları ve kendi tavsiyeleriniz.",
+    "signUp": "Kendi tavsiyelerinizi saklamak için <signup>ücretsiz bir hesap oluşturun</signup> ya da <signin>oturum açın</signin>.",
+    "generalHeading": "Genel tavsiyeler",
+    "tags": "Etiketler: {list}",
+    "addHeading": "Kendi tavsiyenizi ekleyin",
+    "titleLabel": "Başlık:",
+    "tagsLabel": "Etiketler:",
+    "contentLabel": "Tavsiyenin içeriği:",
+    "save": "Kaydet",
+    "mineHeading": "Tavsiyelerim",
+    "nothingSaved": "Henüz kaydedilmiş bir şey yok.",
+    "titleMissing": "Tavsiyeye bir başlık verin.",
+    "contentMissing": "Tavsiyeyi yazın.",
+    "fetchFailed": "Tavsiye bilgileri alınırken bir hata oluştu.",
+    "standardFetchFailed": "Sunucudaki tavsiye bilgileri alınırken bir hata oluştu.",
+    "saved": "Tavsiye kayıtlarına başarıyla eklendi.",
+    "saveFailed": "Tavsiye bilgileri gönderilirken bir hata oluştu."
+  }
+}

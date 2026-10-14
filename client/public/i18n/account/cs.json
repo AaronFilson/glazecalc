@@ -129,8 +129,7 @@
       "temperature": {
         "label": "Podle teploty, jako v programu regulátoru pece",
         "saved": "Uloženo: výpal podle teploty."
-      },
-      "help": "Dokud nevyberete, řídí se toto nastavení vaším regionem: Ortonovy žároměrky v USA, ve Spojeném království, v Irsku, v Austrálii a na Novém Zélandu, teplota ve zbytku Evropy."
+      }
     },
     "density": {
       "legend": "Hustota glazury",
@@ -146,8 +145,7 @@
       "pint": {
         "label": "Hmotnost pinty, unce v britské pintě",
         "saved": "Uloženo: hustota glazury jako hmotnost pinty."
-      },
-      "help": "Jak návody udávají hustotu glazury. Dokud nevyberete, řídí se toto nastavení vaším regionem: stupně Baumé v Itálii, měrná hmotnost jinde."
+      }
     },
     "theme": {
       "legend": "Světlý nebo tmavý vzhled",

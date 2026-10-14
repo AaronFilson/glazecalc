@@ -129,8 +129,7 @@
       "temperature": {
         "label": "Pagal temperatūrą, kaip krosnies valdiklio programoje",
         "saved": "Įrašyta: degimas pagal temperatūrą."
-      },
-      "help": "Kol nepasirinksite, tai nustatoma pagal regioną: JAV, Jungtinėje Karalystėje, Airijoje, Australijoje ir Naujojoje Zelandijoje – Ortono piroskopai, likusioje Europoje – temperatūra."
+      }
     },
     "density": {
       "legend": "Glazūros tankis",
@@ -146,8 +145,7 @@
       "pint": {
         "label": "Pintos masė, uncijos imperinėje pintoje",
         "saved": "Įrašyta: glazūros tankis nurodomas pintos mase."
-      },
-      "help": "Kaip vadovuose nurodomas glazūros tirštumas. Kol nepasirinksite, tai nustatoma pagal regioną: Italijoje – Baumé laipsniai, kitur – santykinis tankis."
+      }
     },
     "theme": {
       "legend": "Šviesus ar tamsus",

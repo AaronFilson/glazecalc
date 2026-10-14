@@ -90,6 +90,55 @@
   line-gap-override: 0%;
 }
 
+// Japanese, Chinese, Korean and Thai: Lora for their Latin, then a serif of the
+// device's for the rest, named so a browser need not fall back to a thin one
+// (SimSun, PMingLiU) for the page's lang. Noto Serif CJK and Thai where they are
+// installed (Linux, and the browser tests), then each system's own. Not served:
+// a CJK font is megabytes (the report on East and Southeast Asia, "Fonts").
+// :lang(zh-Hans) is also zh-Hans-CN, and :lang(ja) the pseudo-locale ja-XC.
+$gc-script-fonts: (
+  'ja': "'Noto Serif JP', 'Noto Serif CJK JP', 'Yu Mincho', YuMincho, 'Hiragino Mincho ProN'",
+  'zh-Hans': "'Noto Serif SC', 'Noto Serif CJK SC', 'Songti SC', STSong",
+  'zh-Hant': "'Noto Serif TC', 'Noto Serif CJK TC', 'Songti TC'",
+  'ko': "'Noto Serif KR', 'Noto Serif CJK KR', AppleMyungjo",
+  'th': "'Noto Serif Thai', 'Leelawadee UI', Thonburi, Laksaman"
+);
+$gc-script-langs: ();
+@each $lang, $fonts in $gc-script-fonts {
+  :root:lang(#{$lang}) {
+    --gc-font: 'Lora Variable', 'Noto Serif Fill', #{$fonts}, Georgia, serif;
+  }
+  $gc-script-langs: list.append($gc-script-langs, ':lang(#{$lang})', $separator: comma);
+}
+// No slanted or thickened letters a font does not have: no CJK or Thai font has
+// italics, so emphasis is bolder instead.
+:root:is(#{$gc-script-langs}) {
+  font-synthesis: none;
+}
+:is(#{$gc-script-langs}) em {
+  font-style: normal;
+  font-weight: bolder;
+}
+// Japanese keeps small kana and its long vowel mark off the start of a line,
+// and keeps a heading's phrases whole where the browser can find them (Chrome),
+// unless a phrase is wider than a phone.
+:root:lang(ja) {
+  line-break: strict;
+}
+:lang(ja):is(h1, h2, h3, h4) {
+  word-break: auto-phrase;
+  overflow-wrap: anywhere;
+}
+// Korean breaks lines between words, at its spaces, as English does.
+:root:lang(ko) {
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+// Thai's vowels and tone marks stack above and below the letters.
+:lang(th):is(h1, h2, h3, h4) {
+  line-height: 1.4;
+}
+
 @mixin dark-tokens {
   --gc-bg: #1e1a17;
   --gc-surface: #27221e;

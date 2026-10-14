@@ -129,8 +129,7 @@
       "temperature": {
         "label": "Podľa teploty, ako v programe regulátora pece",
         "saved": "Uložené: výpal podľa teploty."
-      },
-      "help": "Kým nič nezvolíte, riadi sa to vaším regiónom: Ortonove kužele v USA, Spojenom kráľovstve, Írsku, Austrálii a na Novom Zélande, teplota vo zvyšku Európy."
+      }
     },
     "density": {
       "legend": "Hustota glazúry",
@@ -146,8 +145,7 @@
       "pint": {
         "label": "Hmotnosť pinty, unce v britskej pinte",
         "saved": "Uložené: hustota glazúry ako hmotnosť pinty."
-      },
-      "help": "Ako návody uvádzajú hustotu glazúry. Kým nič nezvolíte, riadi sa to vaším regiónom: stupne Baumé v Taliansku, inde relatívna hustota."
+      }
     },
     "theme": {
       "legend": "Svetlá alebo tmavá",

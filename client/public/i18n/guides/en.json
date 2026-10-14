@@ -3,7 +3,10 @@
     "cones": "This guide is shown for firing to cones, as set in Settings.",
     "temperature": "This guide is shown for firing by temperature, as set in Settings.",
     "showTemperature": "Show it for firing by temperature",
-    "showCones": "Show it for firing to cones"
+    "showCones": "Show it for firing to cones",
+    "sk": "This guide is shown for firing to SK cones (JIS R 8101), as set in Settings.",
+    "showSk": "Show it for firing to SK cones (JIS R 8101)",
+    "showOrton": "Show it for firing to Orton cones"
   },
   "notTranslated": "This guide is not translated yet, so it is shown in English.",
   "sectionInEnglish": "This section has changed since it was translated, so it is shown in English until its translation is brought up to date.",
@@ -86,19 +89,32 @@
     "limitIn": "Limit in",
     "label": "The silica limit in {region}",
     "caption": "The workplace limit for respirable crystalline silica in {region}, an 8-hour average (checked {date})",
+    "captionControl": "The yardstick for respirable crystalline silica in the air of a work area in {region} (checked {date})",
     "both": "Quartz and cristobalite",
     "quartz": "Quartz",
     "cristobalite": "Cristobalite",
     "actionLevel": "Action level",
+    "formula": "Control concentration, where Q is the free silica in the dust, in %",
+    "formulaValue": "{numerator} / ({factor}Q + 1) mg/m³",
+    "formulaLimit": "Limit for respirable quartz, where Q is the silica (SiO₂) in the dust, in %",
+    "formulaQ": "{numerator} / (Q + {offset}) mg/m³",
+    "formulaFull": "{numerator} / ({factor}Q + {offset}) mg/m³",
+    "quartzAll": "Quartz, for dust that is all quartz",
+    "cristobaliteAll": "Cristobalite, for dust that is all cristobalite",
+    "allFree": "Control concentration for dust that is all free silica",
+    "recommended": "Recommended by {abbr}",
     "value": "{value} mg/m³",
     "kind": {
       "binding": "A binding limit.",
       "indicative": "An indicative limit: a guide value, not a legal ceiling.",
-      "assessment": "An assessment criterion, not a binding limit."
+      "assessment": "An assessment criterion, not a binding limit.",
+      "control": "A control concentration (管理濃度): the yardstick for judging the air of a work area from measurements there, not a limit on what one person breathes."
     },
     "setBy": "Set by <link>{law}</link>.",
     "lowerThanEu": "Lower than the EU's binding limit of {value} mg/m³.",
     "sameAsEu": "The same as the EU's binding limit.",
+    "recommendedBy": "The {by} ({abbr}) recommends this value in its <link>{title}</link>. It is not law.",
+    "respirators": "Dust masks here are sold by class: {everyday} for glaze dust, or {higher} for more protection (<link>the official classes</link>).",
     "unknown": "We could not confirm the national limit in {region}. The EU's binding limit of {value} mg/m³ applies in every member state.",
     "noData": "We have not yet confirmed the limit in {region}.",
     "agency": "The national body for safety at work: <link>{name}</link>.",
@@ -126,7 +142,12 @@
       "auSmall": "Cups, mugs, jugs, bowls, teapots and other tableware under 1100 mL",
       "auLarge": "The same, 1100 mL or more",
       "auPlates": "Plates, saucers and similar tableware",
-      "auCooking": "Cooking ware"
+      "auCooking": "Cooking ware",
+      "jpFlat": "Pieces that cannot be filled, or less than 2.5 cm deep",
+      "jpSmall": "Other pieces under 1.1 L, not for cooking",
+      "jpLarge": "Other pieces from 1.1 L to under 3 L, not for cooking",
+      "jpStorage": "Other pieces of 3 L or more, not for cooking",
+      "jpCooking": "Cooking ware, 2.5 cm deep or more"
     },
     "judged": {
       "average": "average of 6 pieces",
@@ -135,6 +156,7 @@
     "euRules": "The EU's rules apply here.",
     "law": "Set by <link>{law}</link>.",
     "inForce": "In force from {date}.",
+    "atMost": "A piece passes if it releases no more than the limit: the law says “at most”.",
     "unknown": "We have not yet confirmed the rules in {region}.",
     "choosePrompt": "Choose your country to see its rules."
   },

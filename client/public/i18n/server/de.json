@@ -36,7 +36,6 @@
   "format-choices": "Wählen Sie eines der Zahlen- und Datumsformate aus der Liste.",
   "decimalMark-choices": "Mengen können mit beiden Dezimalzeichen (either) eingegeben werden oder nur mit Komma (comma) oder nur mit Punkt (point).",
   "temperature-choices": "Temperaturen können in °C (C) oder °F (F) angegeben werden oder sich nach der Region richten.",
-  "cones-choices": "Gebrannt werden kann nach Ortonkegeln (orton) oder allein nach Temperatur (temperature), oder es richtet sich nach der Region.",
   "language-choices": "Wählen Sie eine der Sprachen aus der Liste.",
   "density-choices": "Wählen Sie spezifisches Gewicht, Baumé oder Pint-Gewicht, oder überlassen Sie es Ihrer Region.",
   "englishTerms-choices": "Wählen Sie „Ein“ oder „Aus“.",

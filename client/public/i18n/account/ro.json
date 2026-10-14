@@ -129,8 +129,7 @@
       "temperature": {
         "label": "După temperatură, ca în programul unui controler de cuptor",
         "saved": "S-a salvat: arderea după temperatură."
-      },
-      "help": "Până când alegeți, aceasta urmează regiunea: conuri Orton în SUA, Regatul Unit, Irlanda, Australia și Noua Zeelandă, temperatură în restul Europei."
+      }
     },
     "density": {
       "legend": "Densitatea glazurii",
@@ -146,8 +145,7 @@
       "pint": {
         "label": "Greutatea pintei, în uncii la o pintă imperială",
         "saved": "S-a salvat: densitatea glazurii ca greutate a pintei."
-      },
-      "help": "Cum indică ghidurile densitatea unei glazuri. Până când alegeți, aceasta urmează regiunea: grade Baumé în Italia, greutate specifică în rest."
+      }
     },
     "theme": {
       "legend": "Luminos sau întunecat",

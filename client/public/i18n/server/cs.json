@@ -36,7 +36,6 @@
   "format-choices": "Vyberte jeden z formátů čísel a dat v seznamu.",
   "decimalMark-choices": "Množství lze zadávat s kterýmkoli desetinným oddělovačem (either), nebo jen s čárkou (comma), nebo jen s tečkou (point).",
   "temperature-choices": "Teploty mohou být v °C (C), nebo v °F (F), nebo se mohou řídit regionem.",
-  "cones-choices": "Výpal může být na Ortonovy žároměrky (orton), nebo jen podle teploty (temperature), nebo se může řídit regionem.",
   "language-choices": "Vyberte jeden z jazyků v seznamu.",
   "density-choices": "Vyberte měrnou hmotnost, stupně Baumé nebo hmotnost pinty, nebo volbu ponechte na vašem regionu.",
   "englishTerms-choices": "Vyberte zapnuto, nebo vypnuto.",

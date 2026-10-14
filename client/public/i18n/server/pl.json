@@ -36,7 +36,6 @@
   "format-choices": "Należy wybrać jeden z formatów liczb i dat z listy.",
   "decimalMark-choices": "Ilości można wpisywać z dowolnym separatorem dziesiętnym (either) albo tylko z przecinkiem (comma) lub tylko z kropką (point).",
   "temperature-choices": "Temperatury mogą być w °C (C) lub w °F (F) albo zgodne z regionem.",
-  "cones-choices": "Wypał może być według stożków Ortona (orton) lub tylko według temperatury (temperature) albo zgodny z regionem.",
   "language-choices": "Należy wybrać jeden z języków z listy.",
   "density-choices": "Należy wybrać gęstość względną, stopnie Baumé lub masę pinty albo pozostawić wybór zgodny z regionem.",
   "englishTerms-choices": "Należy wybrać włączone (on) lub wyłączone (off).",

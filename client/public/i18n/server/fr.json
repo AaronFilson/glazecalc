@@ -36,7 +36,6 @@
   "format-choices": "Choisissez l’un des formats de nombres et de dates de la liste.",
   "decimalMark-choices": "Les quantités peuvent être saisies avec l’un ou l’autre séparateur décimal (either), ou seulement avec une virgule (comma) ou un point (point).",
   "temperature-choices": "Les températures peuvent être en °C (C) ou en °F (F), ou suivre la région.",
-  "cones-choices": "La cuisson peut se faire aux cônes Orton (orton) ou par la température seule (temperature), ou suivre la région.",
   "language-choices": "Choisissez l’une des langues de la liste.",
   "density-choices": "Choisissez la densité relative, les degrés Baumé ou le poids de la pinte, ou laissez votre région décider.",
   "englishTerms-choices": "Choisissez activé (on) ou désactivé (off).",

@@ -252,6 +252,26 @@ export const RESET: Record<string, Email> = {
       'Il-link jaħdem darba biss. Jekk ma talabtx dan, injora dan il-messaġġ; il-password tiegħek tibqa’ l-istess.\n' +
       '\n' +
       '-- \nGlazecalc, {app}\n'
+  },
+  ja: {
+    subject: 'Glazecalc のパスワードの再設定',
+    text:
+      'Glazecalc のアカウント {account} のパスワードを再設定するよう依頼がありました（ご本人によるものであることを願っています）。\n\n' +
+      '新しいパスワードを設定するには、{minutes}分以内に次のリンクを開いてください:\n\n' +
+      '{link}\n\n' +
+      'このリンクは一度だけ使えます。心当たりがない場合は、このメールを無視してください。パスワードは変わりません。\n' +
+      '\n' +
+      '-- \nGlazecalc, {app}\n'
+  },
+  tr: {
+    subject: 'Glazecalc parolanızı sıfırlayın',
+    text:
+      'Birisi (umarız sizsinizdir) Glazecalc hesabı {account} için parolanın sıfırlanmasını istedi.\n\n' +
+      'Yeni bir parola seçmek için {minutes} dakika içinde bu bağlantıyı açın:\n\n' +
+      '{link}\n\n' +
+      'Bağlantı bir kez kullanılabilir. Bunu siz istemediyseniz bu e-postayı dikkate almayın; parolanız aynı kalır.\n' +
+      '\n' +
+      '-- \nGlazecalc, {app}\n'
   }
 };
 
@@ -445,6 +465,22 @@ export const CHANGED: Record<string, Email> = {
     text:
       'Il-password tal-kont {account} ta’ Glazecalc għadha kif inbidlet, u kull apparat li kien dieħel fil-kont ħareġ minnu.\n\n' +
       'Jekk kont int, m’hemmx għalfejn tagħmel xejn aktar. Jekk le, irrisettja l-password tiegħek minnufih hawn: {forgot}\n' +
+      '\n' +
+      '-- \nGlazecalc, {app}\n'
+  },
+  ja: {
+    subject: 'Glazecalc のパスワードが変更されました',
+    text:
+      'Glazecalc のアカウント {account} のパスワードが先ほど変更され、ログインしていたすべての端末がログアウトされました。\n\n' +
+      'ご本人による変更であれば、ほかに必要な操作はありません。そうでない場合は、すぐに次のページでパスワードを再設定してください: {forgot}\n' +
+      '\n' +
+      '-- \nGlazecalc, {app}\n'
+  },
+  tr: {
+    subject: 'Glazecalc parolanız değiştirildi',
+    text:
+      'Glazecalc hesabı {account} için parola az önce değiştirildi ve oturum açık olan tüm cihazlarda oturum kapatıldı.\n\n' +
+      'Bunu siz yaptıysanız başka bir şey yapmanız gerekmez. Siz yapmadıysanız parolanızı hemen şu adresten sıfırlayın: {forgot}\n' +
       '\n' +
       '-- \nGlazecalc, {app}\n'
   }

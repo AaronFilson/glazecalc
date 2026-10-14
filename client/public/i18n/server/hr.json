@@ -36,7 +36,6 @@
   "format-choices": "Odaberite jedan od zapisa brojeva i datuma s popisa.",
   "decimalMark-choices": "Količine se mogu upisivati s bilo kojim decimalnim znakom (either), samo s decimalnim zarezom (comma) ili samo s decimalnom točkom (point).",
   "temperature-choices": "Temperature mogu biti u °C (C) ili °F (F) ili se ravnati prema regiji.",
-  "cones-choices": "Pečenje može biti na Ortonove stošce (orton) ili samo po temperaturi (temperature) ili se ravnati prema regiji.",
   "language-choices": "Odaberite jedan od jezika s popisa.",
   "density-choices": "Odaberite relativnu gustoću, stupnjeve Baumé ili masu pinte ili to prepustite svojoj regiji.",
   "englishTerms-choices": "Odaberite uključeno ili isključeno.",

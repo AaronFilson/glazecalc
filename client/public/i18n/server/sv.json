@@ -36,7 +36,6 @@
   "format-choices": "Välj ett av tal- och datumformaten i listan.",
   "decimalMark-choices": "Mängder kan skrivas med valfritt decimaltecken (either), eller bara med komma (comma) eller punkt (point).",
   "temperature-choices": "Temperaturer kan anges i °C (C) eller °F (F), eller följa regionen.",
-  "cones-choices": "Bränning kan ske efter Ortonkäglor (orton) eller enbart efter temperatur (temperature), eller följa regionen.",
   "language-choices": "Välj ett av språken i listan.",
   "density-choices": "Välj specifik vikt, baumégrader eller pintvikt, eller låt regionen avgöra.",
   "englishTerms-choices": "Välj på eller av.",

@@ -129,8 +129,7 @@
       "temperature": {
         "label": "Nach Temperatur, wie im Programm einer Ofensteuerung",
         "saved": "Gespeichert: Brennen nach Temperatur."
-      },
-      "help": "Bis Sie wählen, richtet sich dies nach Ihrer Region: Ortonkegel in den USA, im Vereinigten Königreich, in Irland, Australien und Neuseeland, Temperatur im übrigen Europa."
+      }
     },
     "density": {
       "legend": "Glasurdichte",
@@ -146,8 +145,7 @@
       "pint": {
         "label": "Pint-Gewicht, Unzen je britischem Pint",
         "saved": "Gespeichert: Glasurdichte als Pint-Gewicht."
-      },
-      "help": "Wie die Anleitungen angeben, wie dick eine Glasur angerührt ist. Bis Sie wählen, richtet sich dies nach Ihrer Region: Grad Baumé in Italien, sonst spezifisches Gewicht."
+      }
     },
     "theme": {
       "legend": "Hell oder dunkel",

@@ -129,8 +129,7 @@
       "temperature": {
         "label": "Pēc temperatūras, kā krāsns kontroliera programmā",
         "saved": "Saglabāts: apdedzināšana pēc temperatūras."
-      },
-      "help": "Kamēr neizvēlaties, tas atbilst jūsu reģionam: ASV, Apvienotajā Karalistē, Īrijā, Austrālijā un Jaunzēlandē – Ortona konusi, pārējā Eiropā – temperatūra."
+      }
     },
     "density": {
       "legend": "Glazūras blīvums",
@@ -146,8 +145,7 @@
       "pint": {
         "label": "Pintes svars, unces britu pintē",
         "saved": "Saglabāts: glazūras blīvums kā pintes svars."
-      },
-      "help": "Kā ceļvežos norāda glazūras biezumu. Kamēr neizvēlaties, tas atbilst jūsu reģionam: Itālijā – Bomē grādi, citur – relatīvais blīvums."
+      }
     },
     "theme": {
       "legend": "Gaišs vai tumšs",

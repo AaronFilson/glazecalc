@@ -1,6 +1,6 @@
 // One glossary and style-sheet prompt per language, from glossary-prompt.md.
 //   GLAZECALC_SCRATCH=... node make-glossary-prompts.js ga mt   → <scratch>/glossary/<code>.md
-const { LANGUAGES, codes, fill, write } = require('./wave');
+const { LANGUAGES, codes, fill, write, sources, notes } = require('./wave');
 
 for (const code of codes()) {
   const l = LANGUAGES[code];
@@ -12,7 +12,9 @@ for (const code of codes()) {
       COUNTRY: l.country,
       REGION: l.region,
       SHOPS: l.shops,
-      TERMBANK: l.termbank
+      TERMBANK: l.termbank,
+      ...sources(code),
+      NOTES: notes(code, 'glossary')
     })
   );
   console.log(file);

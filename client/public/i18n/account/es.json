@@ -129,8 +129,7 @@
       "temperature": {
         "label": "Por temperatura, como el programa de un programador de horno",
         "saved": "Guardado: cocción por temperatura."
-      },
-      "help": "Mientras no elija, depende de su región: conos Orton en EE. UU., Reino Unido, Irlanda, Australia y Nueva Zelanda; temperatura en el resto de Europa."
+      }
     },
     "density": {
       "legend": "Densidad del esmalte",
@@ -146,8 +145,7 @@
       "pint": {
         "label": "Peso por pinta: las onzas en una pinta imperial",
         "saved": "Guardado: densidad del esmalte como peso por pinta."
-      },
-      "help": "Cómo indican las guías lo espeso que está un esmalte. Mientras no elija, depende de su región: grados Baumé en Italia y densidad relativa en el resto."
+      }
     },
     "theme": {
       "legend": "Claro u oscuro",

@@ -1,7 +1,7 @@
 // Six review prompts per language, from translation-review-prompt.md. Before launching
 // them, add what each part's translator flagged with review-notes.js.
 //   GLAZECALC_SCRATCH=... node make-review-prompts.js ga mt   → <scratch>/review/<code>-<group>.md
-const { LANGUAGES, codes, fill, write, chunks } = require('./wave');
+const { LANGUAGES, codes, fill, write, chunks, notes } = require('./wave');
 
 const GROUPS = {
   'app-parts': '"app" and "parts"',
@@ -23,7 +23,8 @@ for (const code of codes()) {
         CODE: code,
         COUNTRY: country,
         SECTIONS: sections,
-        CHUNKS
+        CHUNKS,
+        NOTES: notes(code, 'review')
       })
     );
     count++;

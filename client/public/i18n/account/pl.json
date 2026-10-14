@@ -129,8 +129,7 @@
       "temperature": {
         "label": "Według temperatury, jak w programie sterownika pieca",
         "saved": "Zapisano: wypał według temperatury."
-      },
-      "help": "Do czasu wyboru zależy od regionu: stożki Ortona w USA, Wielkiej Brytanii, Irlandii, Australii i Nowej Zelandii, temperatura w pozostałej części Europy."
+      }
     },
     "density": {
       "legend": "Gęstość szkliwa",
@@ -146,8 +145,7 @@
       "pint": {
         "label": "Masa pinty: uncje w pincie imperialnej",
         "saved": "Zapisano: gęstość szkliwa jako masa pinty."
-      },
-      "help": "Jak poradniki podają gęstość zawiesiny szkliwa. Do czasu wyboru zależy od regionu: stopnie Baumé we Włoszech, gęstość względna w pozostałych krajach."
+      }
     },
     "theme": {
       "legend": "Jasny lub ciemny",

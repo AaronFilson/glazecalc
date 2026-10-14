@@ -36,7 +36,6 @@
   "format-choices": "Alegeți unul dintre formatele de numere și date din listă.",
   "decimalMark-choices": "Cantitățile pot fi introduse cu oricare separator zecimal (either), numai cu virgulă (comma) sau numai cu punct (point).",
   "temperature-choices": "Temperaturile pot fi în °C (C) sau în °F (F) ori pot urma regiunea.",
-  "cones-choices": "Arderea poate fi la conuri Orton (orton) sau numai după temperatură (temperature) ori poate urma regiunea.",
   "language-choices": "Alegeți una dintre limbile din listă.",
   "density-choices": "Alegeți greutatea specifică, gradele Baumé sau greutatea pintei ori lăsați această alegere regiunii.",
   "englishTerms-choices": "Alegeți activat sau dezactivat.",

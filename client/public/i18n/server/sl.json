@@ -36,7 +36,6 @@
   "format-choices": "Izberite eno od oblik zapisa števil in datumov na seznamu.",
   "decimalMark-choices": "Količine lahko vnašate s katerim koli decimalnim ločilom (either) ali samo z vejico (comma) ali samo s piko (point).",
   "temperature-choices": "Temperature so lahko v °C (C) ali °F (F) ali pa sledijo regiji.",
-  "cones-choices": "Žganje je lahko po Ortonovih stožcih (orton) ali samo po temperaturi (temperature) ali pa sledi regiji.",
   "language-choices": "Izberite enega od jezikov na seznamu.",
   "density-choices": "Izberite relativno gostoto, stopinje Baumé ali maso pinte ali pa to prepustite regiji.",
   "englishTerms-choices": "Izberite vklopljeno ali izklopljeno.",
