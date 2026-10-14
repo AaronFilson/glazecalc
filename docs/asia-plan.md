@@ -8,6 +8,8 @@ Progress, 2026-10-14 (branch asia-japan): **Phase A is merged** (the three groun
 
 **Phase C for Japan is done** (2026-10-14, English only): the JP region (SK cones, Baumé, the US library) with its poison lines, silica, food-contact rules, dust mask classes and three shops, each with its source, check date and status. The model gained a `control` silica kind with the law's formula and a recommended value beside it (JSOH), respirator classes, food limits in µg/cm² and Japan's own categories (`jpFlat`, `jpSmall`, `jpLarge`, `jpStorage`, `jpCooking`), and `atMost` for 以下. A snapshot test and a data hash prove the earlier regions show exactly what they did. Japanese materials (item 6) and the ja translation (Phase D) remain. Korea, Taiwan, Singapore and Malaysia are next.
 
+**Phase C for Türkiye is done** (2026-10-14, branch asia-turkey, English only): the TR region (temperature, specific gravity, the EU library) with 112, UZEM 114, the dust regulation's silica formula, FFP mask classes, the Tebliğ's food-contact limits and three shops; see "Türkiye's region data" under Phase C. The silica formula became general (E = numerator / (factor × Q + offset), with the law's decimals) without changing Japan's data or output; the data hash and the snapshot test now cover Japan as well as the 31 earlier regions. The Turkish translation is Phase E, and its go-live waits on the owner's KVKK decision (decision 10).
+
 Japan, could not verify (not shipped as fact):
 
 - each-item or average judging of ceramic ware (not stated in the 2025 text);
@@ -27,7 +29,7 @@ Corrections from the Japan research (docs from research_notes/Asia/japan-verific
 
 ## The goal
 
-A potter in Japan, Korea, China, Taiwan, Hong Kong or Southeast Asia picks their region and gets their poison line, emergency number, silica limit, food-contact rules and, where they exist, shops, in English at first. Japan's potters can fire by SK (JIS R 8101) cones. Then Japanese, Chinese (Simplified and Traditional) and Korean readers get Glazecalc in their language, followed by Thai, Vietnamese, Indonesian and perhaps Turkish.
+A potter in Japan, Korea, China, Taiwan, Hong Kong or Southeast Asia picks their region and gets their poison line, emergency number, silica limit, food-contact rules and, where they exist, shops, in English at first. Japan's potters can fire by SK (JIS R 8101) cones. Then Japanese, Chinese (Simplified and Traditional) and Korean readers get Glazecalc in their language, followed by Thai, Vietnamese, Indonesian and Turkish. Türkiye's region data is in place too (added on the owner's request, 2026-10-14).
 
 ## The owner's decisions so far
 
@@ -129,6 +131,7 @@ Each country goes through the same steps, and none goes live with an unverified 
    - **ID:** HALOBPOM's poison role, BPOM 11/2026's ≥1100 mL sign, promulgation date and the 0.5 mg/L lead figure;
    - **PH:** the DOLE silica table, NPMCC hours;
    - **JP:** _done 2026-10-14_ (the 作業環境評価基準 text read; JSOH's 2025–2026 list read; its 2026 list is members only).
+   - **TR:** _done 2026-10-14_ (see "Türkiye's region data" below); still open: UZEM's cost and scope, TS EN 149 on TSE's site, the date of the announced dust-regulation revision.
 
    Plus suppliers everywhere. Record each status as the brief does (verified, secondary, extract, unverified).
 
@@ -154,7 +157,27 @@ Each country goes through the same steps, and none goes live with an unverified 
    - 天草陶石, 福島長石, 釜戸長石 and 三雲長石 as "typical, verify", with a substitution warning for the feldspathic rocks;
    - editable ash entries with a range note.
 
-Order of batches (see decisions): JP, KR, TW, SG, MY first; then CN, HK, ID, TH; then VN and PH.
+Order of batches (see decisions): JP, KR, TW, SG, MY first; then CN, HK, ID, TH; then VN and PH. Türkiye was added out of turn, on the owner's request (2026-10-14), after Japan.
+
+### Türkiye's region data (done 2026-10-14)
+
+From research_notes/Asia/turkey-verification-2026-10-14.md (primary sources opened where it says so). Every value carries its source, the check date 2026-10-14 and a status.
+
+| Fact         | Value                                                                                                                                                                                                                                                     | Source                                                                                                                                                                                                                | Status                            |
+| ------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------- |
+| Region       | `TR`, Türkiye, languages `['tr']`, °C, cones `temperature`, density `sg`, library `EU`                                                                                                                                                                    | MEB MEGEP "Sırlama ve Pişirim" (2007): firing by the controller's temperature, density as litre weight (g/L) and bome; shops quote °C                                                                                 | a judgement from verified sources |
+| Emergency    | 112, one number for ambulance, fire, police, gendarmerie and coast guard                                                                                                                                                                                  | https://www.112.gov.tr/hakkimizda                                                                                                                                                                                     | verified                          |
+| Poison line  | UZEM (Ulusal Zehir Danışma Merkezi), 114, 24 hours, every day; nothing said on cost or scope                                                                                                                                                              | https://divrigisadikozgurdh.saglik.gov.tr/TR-389626/alo-114.html (7/24); the ministry's UZEM page leads to tel:114                                                                                                    | verified                          |
+| Ministry     | Sağlık Bakanlığı                                                                                                                                                                                                                                          | https://www.saglik.gov.tr/                                                                                                                                                                                            | verified                          |
+| Silica       | binding 8-hour TWA, E = 10 / (Q + 2) mg/m³ respirable quartz (0.098 at Q = 100), cristobalite and tridymite half (0.049); a note that Türkiye has not adopted (EU) 2017/2398                                                                              | Tozla Mücadele Yönetmeliği (RG 05.11.2013/28812), Madde 9 and Ek-1, https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=18989&MevzuatTur=7&MevzuatTertip=5; the carcinogens regulation (MevzuatNo 18695) has no silica entry | verified                          |
+| Agency       | Çalışma ve Sosyal Güvenlik Bakanlığı, İş Sağlığı ve Güvenliği Genel Müdürlüğü (ÇSGB İSGGM)                                                                                                                                                                | https://csgb.gov.tr/                                                                                                                                                                                                  | verified                          |
+| Masks        | FFP2 for everyday glaze dust, FFP3 for more                                                                                                                                                                                                               | Kişisel Koruyucu Donanım Yönetmeliği (RG 01.05.2019/30761), following (EU) 2016/425, https://www.resmigazete.gov.tr/eskiler/2019/05/20190501-5.htm; the FFP classes (TS EN 149+A1) only in a secondary extract        | secondary                         |
+| Food contact | Türk Gıda Kodeksi Gıda ile Temas Eden Seramik Malzemeler Tebliği (2012/30): the EU directive's figures (0.8/0.07 mg/dm², 4.0/0.3 mg/L, 1.5/0.1 mg/L), and a note on its rule (at least three samples, average within the limit, none more than 50 % over) | https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=16076&MevzuatTur=9&MevzuatTertip=5                                                                                                                                       | verified                          |
+| Shops        | Pega Seramik (Tuzla, İstanbul; 250 g, 500 g, 1 kg), Tecnodieci Shopping (Bozüyük, Bilecik; no pack sizes shown), Seramiksir (100 g, 500 g, 1 kg; no town shown). Duygu Seramik left out.                                                                  | each shop's own raw materials page                                                                                                                                                                                    | verified                          |
+
+Türkiye, could not verify (not shipped as fact): UZEM's cost (no "ücretsiz" on an official page), the unit that runs it (only the ministry is named) and any limit on who may call; TS EN 149+A1 on TSE's site; the date of the dust-regulation revision the ministry announced on 2025-08-07 (check again); any 2026 EU-level change to 84/500 that Türkiye might follow; Turkish producers' analyses (Esan, Kaltun, Polat, Şişecam, Eti Maden), so no Turkish materials yet; Seramiksir's town and Tecnodieci's pack sizes; forum practice on cones; whether the VERBIS exemption formally excludes foreign controllers; KVKK's transfer guide on direct collection; the current indexed fines; the TDK term dictionary.
+
+Model changes for Türkiye: the silica `formula` gained optional `offset` (1 where not given) and `places` (the numerator's decimals, 1 where not given), so Japan's entry is unchanged; a binding limit may be a formula, labelled as a limit for respirable quartz, with its values at Q = 100 for all quartz and all cristobalite. The tridymite rule and "not adopted (EU) 2017/2398" are in the silica note, and the three-sample rule is the food note, since the model has no field for either.
 
 Tests:
 
@@ -184,16 +207,41 @@ Run as docs/translations/process/README.md describes, at most six agents at a ti
 
 Prerequisites: Phase A, and Phase B for Japanese. The owner's decision on the Chinese representative question must come before zh-Hans goes live.
 
-## Phase E: language wave 2, th, vi, id (and tr)
+## Phase E: language wave 2, th, vi, id and tr
 
 1. **The Calendar setting** from docs/i18n-plan.md "Settings": "as the region" or Gregorian. It goes on the account, `preferences.service.ts` and Settings, and appends `-u-ca-gregory` to the format locale. Firing logs show which calendar is in use. A test checks that a Thai firing log date is Gregorian when chosen.
 2. **Thai:** heading line height, and `<wbr>` or U+200B only where a technical word breaks badly. Check this in the Linux screenshot run.
-3. **Data-law checks before go-live:** Thailand's representative, Vietnam's transfer assessment, Indonesia's PDP Law, and Turkey's KVKK/VERBIS, none of them researched yet.
-4. **Waves and go-live** as in Phase D, Indonesian first (the best-scored), Thai last.
+3. **Data-law checks before go-live:** Thailand's representative, Vietnam's transfer assessment and Indonesia's PDP Law, not researched yet. Türkiye's KVKK was researched on 2026-10-14 (below); it is decision 10.
+4. **Waves and go-live** as in Phase D, Indonesian first (the best-scored), Thai last, Turkish once decision 10 is made.
+5. **Turkish (tr).** Add `tr` to `wave.js` and to `lib/regions/languages.js` (`Türkçe`, `live: false`) with the standard notice. The region data is already in place in English (Phase C), so the translation brings its notes with it. Glossary sources: the MEB MEGEP modules (sır, astar, bisküvi, sırlı pişirim, litre ağırlığı, boumetre, daldırma, püskürtme), Arcasoy & Başkırkan's _Seramik Teknolojisi_, the shops' catalogues for sold names, and the regulations for legal terms (kurşun ve kadmiyum migrasyonu, solunabilir toz, kristal yapıda SiO2). The style sheet must say:
+   - **sır** (glaze), **frit** (frit), **litre ağırlığı** (litre weight, g/L) for density as potters read it, **bome** for degrees Baumé;
+   - **"Seger piramidi" is what Turkish shops call Orton cones** (Tecnodieci sells "Seger Piramidi (Orton)"). The glossary must not use it loosely for German Seger cones or for SK cones: Orton cones are named as Orton (the shops' "Seger piramidi" may stand beside it), SK cones are "SK (JIS R 8101)", and the Seger formula ("Seger formülü", the unity molecular formula) is a different thing;
+   - Turkish casing (İ/i, I/ı) in any upper-cased text and in search (check `library-info.ts`'s case folding with `tr`);
+   - the prefix percent (%5), which the numbers gate reads since Phase A.
+
+### KVKK (Türkiye's data protection law), researched 2026-10-14
+
+A judgement from the research notes, not legal advice. On a strict reading, offering accounts in Turkish to people in Türkiye means:
+
+- **VERBIS registration:** Law 6698 Art. 16 requires controllers to register in the Veri Sorumluları Sicili before processing; a controller not established in Türkiye registers **through a representative** (a Turkish company or citizen; Sicil regulation, MevzuatNo 24276, Art. 5(1)(b)). The size exemption (under 50 employees and under 100 m TL) does not obviously cover foreign controllers; the Board's deadline decisions list foreign controllers separately, and law firms say there is no exemption.
+- **Transfers abroad** (Art. 9 as amended by Law 7499, 2024): adequacy, then safeguards, where a **standard contract must be notified to the Authority within five working days** (fines 50,000 to 1,000,000 TL), then occasional derogations. Collecting directly into the US is arguably not a transfer; sharing with AWS or SES might be.
+- Also: a Turkish privacy notice (aydınlatma metni, Art. 10), security (Art. 12), answers to requests within 30 days (Art. 13), breach notice in about 72 hours.
+
+This blocks the Turkish language's go-live (decision 10), not the TR region data, which collects nothing new.
+
+### Lessons from Japan, applied to Türkiye
+
+1. **Prompts point at the worktree.** Prompts generated with the main checkout's path sent agents to the wrong files; generate the Turkish prompts in the worktree they run in, and check the paths in one before starting.
+2. **Numbers written as words in the English stay words** in Turkish, so the numbers check matches; digits stay digits.
+3. **Month names stay next to their years** ("14 Ekim 2026"), not turned into a numeric date the check cannot match.
+4. **Official names with digits are names**, like 中毒110番: keep them whole (Alo 114, 112 Acil Çağrı Merkezi) and do not treat them as generic terms; a generic term ("the poison line") is translated as words.
+5. **Source titles keep their dates** (RG 05.11.2013/28812, Tebliğ No: 2012/30) exactly as written.
+6. **Keep the blind back-translation of the safety text.** In Japanese it caught 8 meaning slips that the reviews missed: softened warnings, scope widened or narrowed, and an added "must always".
+7. **No added emphasis.** Agents added 必ず where the English had none; Turkish agents must not add "mutlaka", "kesinlikle" or "her zaman" where the English has no such word.
 
 ## Decisions for the owner
 
-1. **Turkey in or out of wave 2.** _Recommend in, last of wave 2,_ once KVKK is checked and Turkey's region data is researched. It is technically cheap (only the prefix percent, fixed in Phase A) and has 77.5 m people online.
+1. **Turkey in or out of wave 2.** _Decided 2026-10-14: in._ The region data is done (Phase C); the Turkish translation follows in wave 2, and its go-live waits on decision 10. It is technically cheap (only the prefix percent, fixed in Phase A) and has 77.5 m people online.
 2. **Local representatives in China and Thailand (and Vietnam's assessment).** _Recommend: do not hold back the regions,_ which collect nothing new. Offer the languages without representatives, with a privacy page in each language, minimal data and no marketing aimed at China (no Baidu ads, no WeChat account). Revisit if those countries' account numbers grow, or if advice is taken. The fallback, if the owner prefers caution, is to leave accounts for those regions out of scope while the calculator stays open. This is a judgement, not legal advice.
 3. **Kyoto vs JIS SK.** _Recommend JIS only,_ named "SK (JIS R 8101)", with a note on Kyoto cones and no Kyoto table. Kyoto cones are no longer made, and only partial measured data exist.
 4. **The first region batch.** _Recommend JP, KR, TW, SG and MY,_ whose data is mostly verified. CN, HK, ID and TH follow after their verification pass, then VN and PH, which have the most gaps.
@@ -202,6 +250,7 @@ Prerequisites: Phase A, and Phase B for Japanese. The owner's decision on the Ch
 7. **Clock times and `。`.** _Recommend_ the 24-hour rule in every Asian style sheet rather than teaching the gate 午後/下午/오후. _Recommend_ accepting `。` between digits as a decimal point.
 8. **Fonts.** _Recommend system font stacks first,_ checked in Windows screenshots. Self-host Noto Serif slices only if SimSun and MingLiU read badly, or if CI screenshots diverge.
 9. **Which stay English.** _Recommend_ Singapore, Malaysia and the Philippines in English with region data. Malay and Filipino only on request. West and Central Asia wait for the right-to-left and Russian waves.
+10. **KVKK for Turkish (blocks the tr go-live, not the TR region data).** On a strict reading, an overseas controller must register in VERBIS through a Turkish representative, and a standard contract for transfers abroad must be notified to the Authority within five working days. The choices: take advice; offer Turkish without targeting accounts at Türkiye; or accept the risk as for Thailand and China (decision 2). _No recommendation yet:_ this is a judgement, not legal advice.
 
 ## What stays the same
 
