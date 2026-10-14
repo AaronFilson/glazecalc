@@ -22,6 +22,19 @@ describe('client routes', function () {
     }
   });
 
+  it('says the language of each page in Content-Language', async () => {
+    for (const [page, code] of [
+      ['/', 'en'],
+      ['/guides', 'en'],
+      ['/de/guides', 'de'],
+      ['/de/recipe', 'de'],
+      ['/el/', 'el']
+    ]) {
+      const res = await site().get(page!);
+      expect(res.headers['content-language'], page).to.equal(code);
+    }
+  });
+
   it('limits what a page may load, with a new style nonce for each reply', async () => {
     const first = await site().get('/recipe');
     const second = await site().get('/recipe');

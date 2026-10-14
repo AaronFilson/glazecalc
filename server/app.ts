@@ -197,7 +197,10 @@ app.use(async (req, res, next) => {
   const text = await pageText(languages.languageOfPath(req.path));
   // A new nonce for each reply, given to Angular (ngCspNonce) for its styles.
   const nonce = crypto.randomBytes(16).toString('base64');
-  res.set('Cache-Control', 'no-cache').set('Content-Security-Policy', contentSecurityPolicy(nonce));
+  res
+    .set('Cache-Control', 'no-cache')
+    .set('Content-Security-Policy', contentSecurityPolicy(nonce))
+    .set('Content-Language', languages.languageOfPath(req.path));
   return res
     .status(isPage(req.path) ? 200 : 404)
     .type('html')
