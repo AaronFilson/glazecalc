@@ -1,4 +1,4 @@
-import { NgTemplateOutlet } from '@angular/common';
+import { DOCUMENT, NgTemplateOutlet } from '@angular/common';
 import { Component, computed, inject, input } from '@angular/core';
 import { translate } from '@jsverse/transloco';
 import { RouterLink } from '@angular/router';
@@ -9,6 +9,7 @@ import { PAGE_LANGUAGE } from '../../i18n/language';
 import { pseudoText } from '../../i18n/pseudo';
 import { fixed, upTo } from '../../shared/format';
 import { PageHeader } from '../../shared/page-header';
+import { StructuredData, article, pageAddress } from '../../shared/structured-data';
 import { GuideContents, SectionLinks } from './guide-contents';
 import { Block, Guide, Inline, Reading, blocks } from './guide-document';
 import { FoodLimits } from './food-limits';
@@ -36,7 +37,8 @@ import { SilicaLimit } from './silica-limit';
     PoisonLines,
     RouterLink,
     ShopList,
-    SilicaLimit
+    SilicaLimit,
+    StructuredData
   ],
   templateUrl: './guide-view.html'
 })
@@ -53,6 +55,18 @@ export class GuideView {
   );
   private readonly language = inject(PAGE_LANGUAGE);
   protected readonly pageLanguage = this.language;
+  private readonly pathname = inject(DOCUMENT).location.pathname;
+  /** What search engines read about the guide (shared/structured-data.ts). */
+  protected readonly structured = computed(() => {
+    const { title, lead, modified } = this.guide();
+    return article(
+      title,
+      lead,
+      this.textLanguage() ?? this.language,
+      pageAddress(this.language, this.pathname),
+      modified
+    );
+  });
   /** Over a section of a translation still in English, in the page's language. */
   protected readonly sectionInEnglish = translate('guides.sectionInEnglish');
   private readonly pseudo = !!languageFor(this.language)?.pseudo;

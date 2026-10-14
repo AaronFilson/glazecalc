@@ -1,4 +1,5 @@
 import { PlainPipe } from '../../shared/format-pipes';
+import { DOCUMENT } from '@angular/common';
 import { Component, inject, signal } from '@angular/core';
 import { TranslocoDirective, translate } from '@jsverse/transloco';
 import { marker } from '@jsverse/transloco-keys-manager/marker';
@@ -7,6 +8,8 @@ import { calculateUMF } from '../../../../lib/chemistry';
 import { AuthService } from '../../core/auth.service';
 import { errorMessage } from '../../core/error-message';
 import { RecipeAnalysis } from '../../core/models';
+import { PAGE_LANGUAGE } from '../../i18n/language';
+import { StructuredData, pageAddress, webApplication } from '../../shared/structured-data';
 import { UnityFormula } from '../recipe/unity-formula';
 
 /** Bernard Leach's "4321" celadon base, in parts by weight. */
@@ -28,13 +31,22 @@ const FEATURES = [
 /** The public start page: what Glazecalc does, shown with a real calculation. */
 @Component({
   selector: 'gc-landing-page',
-  imports: [PlainPipe, RouterLink, TranslocoDirective, UnityFormula],
+  imports: [PlainPipe, RouterLink, StructuredData, TranslocoDirective, UnityFormula],
   templateUrl: './landing-page.html',
   styleUrl: './landing-page.scss'
 })
 export class LandingPage {
   protected readonly auth = inject(AuthService);
   private readonly router = inject(Router);
+  /** What search engines read about the app (shared/structured-data.ts). */
+  protected readonly structured = (() => {
+    const language = inject(PAGE_LANGUAGE);
+    return webApplication(
+      translate('meta.description'),
+      language,
+      pageAddress(language, inject(DOCUMENT).location.pathname)
+    );
+  })();
 
   protected readonly starting = signal(false);
   protected readonly startError = signal('');

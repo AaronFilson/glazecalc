@@ -6,7 +6,8 @@ import { signedInGuard, visitorsOnlyGuard } from './core/signed-in.guard';
 import { scopeTranslations } from './i18n/provide-i18n';
 import { guideText } from './pages/guides/guide-text';
 
-// Each title is the key of its message (i18n/titles.ts). Each route names the
+// Each title is the key of its message (i18n/titles.ts), and a public page's
+// data.description the key of its description. Each route names the
 // part of the app whose messages it needs (client/public/i18n/<scope>/), which
 // load before it opens.
 
@@ -24,6 +25,7 @@ export const routes: Routes = [
   {
     path: 'advice',
     title: marker('titles.advice'),
+    data: { description: marker('meta.advice') },
     providers: [provideTranslocoScope('site', 'records')],
     resolve: { messages: scopeTranslations },
     loadComponent: () => import('./pages/advice/advice-page').then((m) => m.AdvicePage)
@@ -31,6 +33,7 @@ export const routes: Routes = [
   {
     path: 'guides',
     title: marker('titles.guides'),
+    data: { description: marker('meta.guides') },
     providers: [provideTranslocoScope('guides')],
     resolve: { messages: scopeTranslations },
     loadComponent: () => import('./pages/guides/guides-page').then((m) => m.GuidesPage)
@@ -39,7 +42,7 @@ export const routes: Routes = [
     path: 'guides/glazing-basics',
     title: marker('titles.glazingBasics'),
     providers: [provideTranslocoScope('guides', 'regions')],
-    data: { guide: 'glazing-basics' },
+    data: { description: marker('meta.glazingBasics'), guide: 'glazing-basics' },
     resolve: { messages: scopeTranslations, text: guideText },
     loadComponent: () => import('./pages/guides/guide-page').then((m) => m.GuidePage)
   },
@@ -47,7 +50,7 @@ export const routes: Routes = [
     path: 'guides/making-a-glaze',
     title: marker('titles.makingAGlaze'),
     providers: [provideTranslocoScope('guides', 'regions')],
-    data: { guide: 'making-a-glaze' },
+    data: { description: marker('meta.makingAGlaze'), guide: 'making-a-glaze' },
     resolve: { messages: scopeTranslations, text: guideText },
     loadComponent: () => import('./pages/guides/guide-page').then((m) => m.GuidePage)
   },
@@ -55,7 +58,7 @@ export const routes: Routes = [
     path: 'guides/safe-mixing',
     title: marker('titles.safeMixing'),
     providers: [provideTranslocoScope('guides', 'regions')],
-    data: { guide: 'safe-mixing', safety: true },
+    data: { description: marker('meta.safeMixing'), guide: 'safe-mixing', safety: true },
     resolve: { messages: scopeTranslations, text: guideText },
     loadComponent: () => import('./pages/guides/guide-page').then((m) => m.GuidePage)
   },
@@ -63,7 +66,7 @@ export const routes: Routes = [
     path: 'guides/home-safety',
     title: marker('titles.homeSafety'),
     providers: [provideTranslocoScope('guides', 'safety')],
-    data: { guide: 'home-safety', safety: true },
+    data: { description: marker('meta.homeSafety'), guide: 'home-safety', safety: true },
     resolve: { messages: scopeTranslations, text: guideText },
     loadComponent: () => import('./pages/guides/guide-page').then((m) => m.GuidePage)
   },
@@ -71,13 +74,14 @@ export const routes: Routes = [
     path: 'guides/firing',
     title: marker('titles.firing'),
     providers: [provideTranslocoScope('guides')],
-    data: { guide: 'firing' },
+    data: { description: marker('meta.firing'), guide: 'firing' },
     resolve: { messages: scopeTranslations, text: guideText },
     loadComponent: () => import('./pages/guides/guide-page').then((m) => m.GuidePage)
   },
   {
     path: 'about',
     title: marker('titles.about'),
+    data: { description: marker('meta.about') },
     providers: [provideTranslocoScope('site')],
     resolve: { messages: scopeTranslations },
     loadComponent: () => import('./pages/about/about-page').then((m) => m.AboutPage)
@@ -85,6 +89,7 @@ export const routes: Routes = [
   {
     path: 'privacy',
     title: marker('titles.privacy'),
+    data: { description: marker('meta.privacy') },
     providers: [provideTranslocoScope('site')],
     resolve: { messages: scopeTranslations },
     loadComponent: () => import('./pages/privacy/privacy-page').then((m) => m.PrivacyPage)
@@ -100,7 +105,7 @@ export const routes: Routes = [
   {
     path: 'signup',
     title: marker('titles.signup'),
-    data: { mode: 'signup' },
+    data: { description: marker('meta.signup'), mode: 'signup' },
     providers: [provideTranslocoScope('account')],
     resolve: { messages: scopeTranslations },
     loadComponent: () => import('./pages/auth/auth-page').then((m) => m.AuthPage)

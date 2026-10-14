@@ -2,6 +2,7 @@
   Inline parts are each wrapped in an element or ng-container with nothing around their text:
   Angular drops the whitespace between these tags, so a sentence reads exactly as its Markdown.
 -->
+<gc-structured-data [data]="structured()" />
 <gc-page-header
   [title]="show(guide().title)"
   [lead]="show(guide().lead)"

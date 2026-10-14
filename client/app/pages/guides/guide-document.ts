@@ -51,6 +51,8 @@ export interface GuideSection {
 export interface Guide {
   title: string;
   lead: string;
+  /** The date it was last changed (modified: 2026-10-01 in the front matter), where it says. */
+  modified: string | null;
   /** 'en' where the title, lead and intro of a translation are still in English. */
   language: string | null;
   /** Anything before the first section. */
@@ -111,6 +113,7 @@ export function readGuide(text: string): Guide {
   const guide: Guide = {
     title: meta['title'] ?? '',
     lead: meta['lead'] ?? '',
+    modified: meta['modified'] || null,
     language: meta['lang'] || null,
     intro: [],
     sections: []

@@ -82,6 +82,20 @@ const put = (html: string, around: RegExp, text: string): string =>
 /** The address of a page in a language: https://glazecalcapp.com/de/guides. */
 const addressIn = (site: string, code: string, page: string): string => site + languages.languagePrefix(code) + page;
 
+/**
+ * A language's og:locale, as Open Graph writes it, language_TERRITORY: the
+ * region it is most read in (de_DE, pt_PT, el_GR). en_US for a code the
+ * runtime does not know.
+ */
+export function ogLocale(code: string): string {
+  try {
+    const { language, region } = new Intl.Locale(code).maximize();
+    return region ? language + '_' + region : language;
+  } catch {
+    return 'en_US';
+  }
+}
+
 /** The page's title, description and preview image's text in its language, where its messages have them. */
 export interface PageText {
   title?: string;
@@ -118,6 +132,13 @@ export function pageHtml(
         head.push(`<link rel="alternate" hreflang="${other}" href="${attribute(addressIn(site, other, page))}" />`);
       }
       head.push(`<link rel="alternate" hreflang="x-default" href="${attribute(addressIn(site, 'en', page))}" />`);
+    }
+  }
+  // Link previews read these; og:locale:alternate lists the other languages offered.
+  if (isPage(pathname) && live.includes(code)) {
+    head.push(`<meta property="og:locale" content="${ogLocale(code)}" />`);
+    for (const other of live.filter((l) => l !== code)) {
+      head.push(`<meta property="og:locale:alternate" content="${ogLocale(other)}" />`);
     }
   }
   let out = html
