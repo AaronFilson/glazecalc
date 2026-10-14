@@ -34,7 +34,7 @@ import { NumberInput } from '../../shared/number-input';
 import { Check, FieldCheck, FieldChecks, required } from '../../shared/field-checks';
 import { localDate } from '../../shared/dates';
 import { Notices, NoticesList } from '../../shared/notices';
-import { chosenRegion, findNamed, hasLead } from '../../shared/library-info';
+import { chosenRegion, findNamed, folded, hasLead } from '../../shared/library-info';
 import { firstOf } from '../../shared/options';
 import { PageHeader } from '../../shared/page-header';
 import { Removal, RemoveButton } from '../../shared/remove-button';
@@ -410,7 +410,10 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
   protected readonly cones = CONES;
   protected readonly listOf = listOf;
   private readonly locale = inject(LocaleService);
-  /** Firing to Orton cones, or by temperature alone (Settings). */
+  /**
+   * Firing to Orton cones (Settings). A recipe's cone is an Orton number, and none is turned into an SK number,
+   * so a potter who fires to SK cones sees the temperature.
+   */
   protected readonly byCones = computed(() => this.locale.cones() === 'orton');
   /** A firing as the potter names it: "04 (1060 °C)" to cones, or "1060 °C" by temperature. */
   protected firingLabel(firing: { cone: string; celsius: number }): string {
@@ -1402,7 +1405,7 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
 
   /** A material or additive by its name or one of its aliases, for one that borrows another's chemistry. */
   private findByName(name: string): MaterialInput | undefined {
-    const wanted = name.trim().toLowerCase();
+    const wanted = folded(name.trim());
     const records = [
       ...this.standardAdditives(),
       ...this.myAdditives(),
@@ -1410,8 +1413,7 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
       ...this.myMaterials()
     ];
     return records.find(
-      (record) =>
-        record.name.toLowerCase() === wanted || (record.aliases ?? []).some((alias) => alias.toLowerCase() === wanted)
+      (record) => folded(record.name) === wanted || (record.aliases ?? []).some((alias) => folded(alias) === wanted)
     );
   }
 

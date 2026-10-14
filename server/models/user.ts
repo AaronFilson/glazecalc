@@ -23,7 +23,7 @@ export type TokenLifetime = `${number}d`;
  *                  ('auto'), or as a named locale (de-DE)
  *   decimalMark    typing amounts with either mark, or only a comma or a point
  *   temperature    °C or °F, or '' to follow the region
- *   cones          firing to Orton cones or by temperature alone, or '' to follow the region
+ *   cones          firing to Orton cones, to SK cones (JIS R 8101) or by temperature alone, or '' to follow the region
  *   language       the language of the app and of emails (BCP 47): one of those offered (lib/regions/languages.js)
  *   density        glaze density as specific gravity, degrees Baumé or imperial pint weight, or '' to follow the region
  *   englishTerms   'on' puts the English after key terms in a translated page, for reading English sources
@@ -39,7 +39,7 @@ export const PREFERENCES = {
   format: ['auto', ...regions.FORMAT_LOCALES],
   decimalMark: ['either', 'comma', 'point'],
   temperature: ['', 'C', 'F'],
-  cones: ['', 'orton', 'temperature'],
+  cones: ['', 'orton', 'temperature', 'sk'],
   language: languages.LIVE_LANGUAGES as readonly string[],
   density: ['', 'sg', 'baume', 'pint'],
   englishTerms: ['off', 'on'],

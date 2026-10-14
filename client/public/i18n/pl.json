@@ -1,6 +1,6 @@
 {
   "titles": {
-    "landing": "Glazecalc: bezpłatny kalkulator chemii szkliw dla ceramików",
+    "landing": "Glazecalc: bezpłatny kalkulator szkliw ceramicznych",
     "advice": "Porady o szkliwach - Glazecalc",
     "guides": "Poradniki - Glazecalc",
     "glazingBasics": "Szkliwienie od podstaw - Glazecalc",
@@ -14,6 +14,7 @@
     "signup": "Zakładanie konta - Glazecalc",
     "forgot": "Resetowanie hasła - Glazecalc",
     "reset": "Ustawianie nowego hasła - Glazecalc",
+    "confirmEmail": "Potwierdzenie adresu e-mail - Glazecalc",
     "home": "Notatnik pracowni - Glazecalc",
     "recipe": "Receptury - Glazecalc",
     "material": "Surowce - Glazecalc",
@@ -74,6 +75,16 @@
   },
   "meta": {
     "description": "Receptura szkliwa: wzór Segera (UMF), stosunek krzemionki do tlenku glinu, topniki. Bezpłatna i open source, na receptury, surowce i dzienniki wypałów.",
+    "guides": "Proste poradniki dla początkujących ceramików: czym jest szkliwo ceramiczne, jak je bezpiecznie zrobić i rozrobić, chronić rodzinę i wypalać w prostym piecu.",
+    "glazingBasics": "Z czego składa się szkliwo ceramiczne, jak piec zmienia je w szkło i co oznaczają stożki, fryty, wzór Segera (UMF) i wady szkliwa. Poradnik dla początkujących.",
+    "makingAGlaze": "Jak kupować, przechowywać, odważać i rozrabiać szkliwo, dobrać jego gęstość, sprawdzić je na własnej glinie i prowadzić zapiski, by móc je odtworzyć.",
+    "safeMixing": "Jak chronić płuca przed pyłem szkliw, a dom przed gazami i oparami z wypału: bezpieczne nawyki, półmaski, sprzątanie, wentylacja i ryzykowne surowce.",
+    "homeSafety": "Co robić, gdy dziecko lub zwierzę połknie surowiec do szkliw, i jak sprawić, by surowce, pył, piec i ręcznie robione wyroby były bezpieczne dla rodziny.",
+    "firing": "Jak wypalać w piecu elektrycznym: dobierać, ustawiać i odczytywać stożki oraz stosować opublikowane programy wypału biskwitowego i szkliwa. Z tabelą stożków.",
+    "advice": "Praktyczne porady o rozrabianiu szkliw ceramicznych, szkliwieniu i wypale od Glazecalc oraz własne porady. Bezpłatnie dla garncarzy i ceramików.",
+    "about": "Glazecalc to bezpłatny kalkulator chemii szkliw ceramicznych i notatnik open source. Jak oblicza wzór Segera (UMF) i jak jest zbudowany.",
+    "privacy": "Jak Glazecalc postępuje z danymi: bez reklam, analityki i śledzenia, nic nie jest sprzedawane. Co jest przechowywane, dlaczego i jak skorzystać z praw.",
+    "signup": "Bezpłatne konto Glazecalc, by zachować receptury szkliw ceramicznych, surowce, notatki i dzienniki wypałów. Bez reklam, a dane nigdy nie są sprzedawane.",
     "imageAlt": "Glazecalc: rozumieć szkliwa, a nie tylko je mieszać."
   },
   "notices": {
@@ -255,6 +266,8 @@
     "label": "O tym tłumaczeniu",
     "text": "Ta strona została przetłumaczona z angielskiego przez AI. Glazecalc to projekt open source: jeśli coś brzmi nie tak, prosimy zaproponować poprawkę w serwisie GitHub.",
     "brief": "Przetłumaczone z angielskiego przez AI.",
+    "plain": "Ta strona została przetłumaczona z angielskiego przez AI, która radzi sobie z tym językiem gorzej niż z większością języków. Strona angielska może być czytelniejsza. Glazecalc to projekt open source: jeśli coś brzmi nie tak, prosimy zaproponować poprawkę w serwisie GitHub.",
+    "plainBrief": "Przetłumaczone przez AI; wersja angielska może być czytelniejsza.",
     "suggest": "Zaproponuj poprawkę",
     "english": "Przeczytaj po angielsku",
     "close": "Zamknij"

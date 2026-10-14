@@ -218,8 +218,13 @@ _пироскоп_), with Orton numbers and temperatures on the label: KER „Pi
   biskvitinis degimas“ (2.3).
 - "Orton cone" → „Ortono piroskopas“; at the first mention on a page, and wherever systems are compared: „Ortono
   piroskopas 6“, then „piroskopas 6“.
-- Seger cones („Segerio piroskopai“, SK) are a different scale. **Never** write „Segerio piroskopas 6“ or „SK 6“ for an
-  Orton number; „Segerio piroskopai“ only where the English says "Seger cones".
+- German Seger cones („Segerio piroskopai“) are a different scale. **Never** write „Segerio piroskopas 6“ or „SK 6“ for
+  an Orton number; „Segerio piroskopai“ only where the English says "Seger cones", and never labelled „SK“.
+- **SK cones** are the Japanese cones to JIS R 8101 (the app's third firing setting): „SK piroskopai“, „pagal SK
+  piroskopus (JIS R 8101)“, and a number always with „SK“ before it, as printed: „SK 8“, „SK 6a“, „SK 015a“. Never turned
+  into an Orton number, never called „Segerio“ (only where the English says Seger: 立つゼーゲル, "standing Seger" →
+  „stovintis Segeris“). Kyoto cones → „Kioto piroskopai“; "nominal (JIS) temperature" → „nominalioji (JIS)
+  temperatūra“; large and small cones → „dideli“ and „maži piroskopai“. Hotter and cooler as for Orton.
 
 ### The unity formula
 
@@ -739,6 +744,30 @@ kurių tūris didesnis kaip 3 litrai“ (the directive's „kepti“ is the Engl
 indai, didesni kaip 3 L“). "binding" and "indicative" follow IATE („privaloma“, „orientacinė profesinio poveikio
 ribinė vertė“); „įkvepiamoji frakcija“ is HN 23's word for the inhalable fraction. "per 100 g" keeps the symbol
 („g/100 g“), never „100 gramų“, so the check finds the same figure and unit.
+
+**EU release and privacy words** (from the GDPR's Lithuanian text where it has the term; the rest no source): GDPR →
+„BDAR“ („BDAR 6 straipsnio 1 dalies b punktas“); controller → „duomenų valdytojas“; legitimate interest → „teisėtas
+interesas“; object → „nesutikti“; data protection authority → „duomenų apsaugos priežiūros institucija“; EU–US Data
+Privacy Framework → „ES ir JAV duomenų privatumo sistema“; Standard Contractual Clauses → „standartinės sutarčių
+sąlygos“; data processing terms → „duomenų tvarkymo sąlygos“; cookie → „slapukas“; local / session storage → „vietinė
+saugykla“ / „seanso saugykla“; fingerprint (of a link) → „kontrolinis kodas“; bounce → „laiškas grįžta neįteiktas“;
+Keep me signed in on this device → „Likti prisijungus šiame įrenginyje“; Sign out everywhere → „Atsijungti visuose
+įrenginiuose“ (heading „Atsijungimas visuose įrenginiuose“); Download my data → heading „Mano duomenų atsisiuntimas“;
+Confirm your email / Change your email → „El. pašto adreso patvirtinimas“ / „El. pašto adreso keitimas“; "Where your
+account is kept, and your choice" → „Kur saugoma jūsų paskyra, ir jūsų pasirinkimas“; "accept no responsibility or
+liability" → „neprisiima jokios atsakomybės, taip pat ir teisinės“.
+
+**Japan and Türkiye**: control concentration (管理濃度) → „kontrolinė koncentracija“ (no source); yardstick → „(vertinimo)
+matas“; Japan Poison Information Center, Osaka → „Japonijos apsinuodijimų informacijos centras, Osaka (大阪中毒110番)“;
+National Poison Information Centre (Türkiye) → „Nacionalinis apsinuodijimų informacijos centras (Ulusal Zehir Danışma
+Merkezi, UZEM)“; Children's medical advice line → „Vaikų medicininių konsultacijų linija“; Türkiye → „Turkija“ (as
+`Intl.DisplayNames('lt')` gives it); prefecture → „prefektūra“.
+
+**Search terms** (research_notes/search-terms-2026-10-14.md, low confidence): searchers pair „glazūra“ with the ceramics
+word, since the bare word is cake icing: „keramikos glazūra(-os)“, „glazūra keramikai“, „glazūros receptas“; the unity
+formula as „Segerio formulė (UMF)“ (nothing was searched for it in Lithuanian). The landing title is „Glazecalc: nemokama
+keramikos glazūrų skaičiuoklė“; the page descriptions (`meta`) say „keramikos glazūra“ once where the English names a
+glaze.
 
 ## 3. Never translated
 

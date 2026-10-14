@@ -9,10 +9,17 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 - **Pages that search engines and link previews can read.** The public pages (home, guides,
   advice, about, privacy, sign-up) are drawn to plain HTML when the app is built, in every
   language, so the text is there before any script runs; the app then takes the page over in
-  place. Each page has its own title and description (a language without its own description
-  yet uses its site description), the home page and the guides carry structured data, and link
+  place. Each page has its own title and description in every language, the home page and the guides carry structured data, and link
   previews name the page's language and the others offered ([ADR 16](docs/adr/0016-prerendered-public-pages.md),
   [plan](docs/seo-plan.md)).
+- **In Turkish.** Türkiye is a region (112, UZEM, silica limit, food-contact limits, shops), and
+  Glazecalc is fully translated into Turkish, the password emails included.
+- **Where your account is kept, and your choice.** The sign-up page tells everyone outside the US
+  (and anyone whose region is not known) that Glazecalc is a free, open-source project, that
+  accounts are kept on servers in the United States, that the guides and a trial need no account,
+  that anyone can run their own copy, and that whether to make an account here is their own
+  decision, for which the project accepts no responsibility. A new section of the privacy page says
+  the same at more length, for everyone. In every language.
 - **Where you work, and numbers your way** (the groundwork for other languages,
   [plan](docs/i18n-plan.md)). Settings gain:
   - **Where you work:** the EU countries, the US, UK, Australia and New Zealand. It sets the
@@ -58,6 +65,60 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   the top of every page once closed. The numbers check now takes each language's decimal mark from
   CLDR, as both write 1.5 as English does. The back-translations found a cell both had misread ("a
   barium frit or strontium"); checked in every live language, the Portuguese now reads plainly too.
+- **In Japanese** (日本語), the first language outside the EU, at its own addresses (`/ja/recipe`),
+  made the same way: a style sheet and glossary from suppliers' catalogues (ゼーゲル式, SK cones named
+  as SK), the 24-hour clock, reviewed, made consistent and the safety text checked by translating it
+  back, which found eight slips in meaning, fixed. That makes 25 languages. The SK firing guide
+  section, Japan's poison lines, silica limit and food-contact rules, and the password emails are
+  in Japanese too.
+- **Every language caught up.** All 25 translations now have everything added since they were
+  made: the text on where accounts are kept (sign-up and privacy pages), each page's own title and
+  search description (written from research into what potters search for in each language, each
+  under 160 characters), and the text for Japan and Türkiye (the SK firing section, their poison
+  lines, silica limits and food-contact rules). Reviewed the same way as the waves: the safety text
+  and the SK section translated back into English blind and compared, plurals checked, poison lines
+  named as their own countries name them, and the Seger formula never confused with SK cones. The
+  English was made plainer where translators misread it (the SK guide cone, Kyoto cones, plurals,
+  the JSOH line). Every language has 0 messages and 0 guide sections still in English.
+- **SK cones (JIS R 8101)** as a third way to fire, in Settings beside Orton cones and temperature,
+  and in the firing guide: setting large cones, guide, firing and guard cones, Kyoto cones, and the
+  SK 022 to SK 20 chart with each figure marked nominal (JIS), its source and the date checked. SK and
+  Orton numbers are never turned into each other. The new guide section is translated into every
+  language.
+- **Japan as a region** (in Japanese or English). It fires by SK cones and reads glaze density in
+  degrees Baumé until you choose otherwise, and lists the US materials until Japan's own are added.
+  The guides give, each from an official page with its date:
+  - **Who to call:** 119, and the Japan Poison Information Center's two public lines (Osaka and
+    Tsukuba, 24 hours, free), which take only acute poisoning that has happened, not long-term
+    exposure; and #8000 for medical advice about a child.
+  - **Silica:** the control concentration (管理濃度) as the law gives it, 3.0 / (1.19Q + 1) mg/m³ for
+    a work area's air by its free silica content Q, 0.025 mg/m³ for dust that is all free silica,
+    the Japan Society for Occupational Health's recommended 0.03 mg/m³ beside it, and the dust mask
+    classes sold there (DS2 or RS2; DS3 or RS3).
+  - **Lead and cadmium** in the law's own units: µg/cm² for flat ware, three sizes and cooking ware
+    in µg/mL, each a most.
+  - **Three shops** selling raw glaze materials, by their own names.
+- **Türkiye as a region** (in English for now). It fires by temperature and reads glaze density as
+  specific gravity until you choose otherwise (Orton cones and Baumé are a setting away), and lists
+  the EU's materials. The guides give, each from an official page with its date:
+  - **Who to call:** 112 for every emergency service, and the National Poison Information Centre
+    (UZEM) on 114, 24 hours, every day.
+  - **Silica:** the binding limit as the dust regulation gives it, 10 / (Q + 2) mg/m³ by the dust's
+    silica content Q: 0.098 mg/m³ for dust that is all quartz, half that for cristobalite and
+    tridymite. Türkiye has not adopted the EU's limit. FFP2 or FFP3 dust masks.
+  - **Lead and cadmium:** the Tebliğ's limits, the EU directive's figures, with its rule for three
+    samples.
+  - **Three shops** selling raw glaze materials, by their own names.
+- **Groundwork for East and Southeast Asia**, before any of its languages:
+  - **Numbers and dates** can be written as in Japan, Korea, mainland China and Taiwan (Simplified and
+    Traditional Chinese each keep their script in any region), Hong Kong, Singapore, Malaysia,
+    Thailand, Vietnam, Indonesia, Turkey and the Philippines.
+  - **Amounts** typed in full-width digits (１２．５), or with the ideographic full stop (12。5), read
+    as 12.5, and a box waits for a Japanese, Chinese or Korean input method to finish before saving.
+  - **Lists of materials** sort as the page's language sorts, and their filters find full-width
+    letters (ＦＲＩＴ finds Frit).
+  - **A language's address in other capitals** (`/DE/guides`) goes to its own (`/de/guides`), and each
+    page sends its language in a `Content-Language` header and its `og:locale` for link previews.
 - **The firing guide's cone end point** is a 90° bend, the 5 o'clock position, as Orton's chart says (it
   said 6 o'clock, a cone touching the shelf), and its worked heating rate divides the temperature climbed. In every
   language.
@@ -81,6 +142,13 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
     English's placeholders, tags and the plural forms their language needs; each page tested in a
     pseudo-locale shows no text left unmarked; and a mirrored right-to-left page was tried in
     Arabic.
+  - **Ready for Japanese, Chinese, Korean and Thai** (none offered yet): each page in them names
+    the device's own serif for its script, so a browser need not fall back to a thin one; emphasis
+    is bold, not a slanted copy of the letters; and lines break as the language breaks them. A
+    Japanese pseudo-locale (`/ja-XC/`) tests every page in characters with no spaces, at a phone's
+    width, and Linux tests install the CJK and Thai fonts to draw it. CI checks that Korean
+    translations are in Hangul, and that the app loads nothing from Google, a CDN or a captcha, so
+    it stays reachable from China.
 
 - **Compare two recipes side by side**
   ([#6](https://github.com/AaronFilson/glazecalc/issues/6)). **Compare**, beside Save or on a

@@ -25,7 +25,7 @@ Label: Plages de cuisson
 | Moyenne température | 5–6   | {{2167–2232 °F; 1186–1222 °C}} | Grès{{en: stoneware}} et porcelaine cuits au four électrique  |
 | Haute température   | 9–10  | {{2300–2345 °F; 1260–1285 °C}} | Surtout du grès et de la porcelaine cuits au gaz              |
 
-Au Royaume-Uni, en Europe, en Australie et en Nouvelle-Zélande, les fournisseurs donnent souvent une température en °C plutôt qu’un cône : cherchez le cône le plus proche dans le tableau ci-dessous et vérifiez-le avec un cône témoin{{en: witness cone}}. Il ne faut pas supposer que les cônes de Seger (SK) et les cônes Staffordshire, les anciennes séries européennes, aient les mêmes numéros que ceux d’Orton : ce guide utilise donc les cônes Orton.
+Au Royaume-Uni, en Europe, en Australie et en Nouvelle-Zélande, les fournisseurs donnent souvent une température en °C plutôt qu’un cône : cherchez le cône le plus proche dans le tableau ci-dessous et vérifiez-le avec un cône témoin{{en: witness cone}}. Il ne faut pas supposer que les cônes de Seger et les cônes Staffordshire, les anciennes séries européennes, aient les mêmes numéros que ceux d’Orton : ce guide utilise donc les cônes Orton.
 
 ### Un palier ajoute du travail thermique
 
@@ -275,6 +275,97 @@ Label: Corriger la cuisson suivante
 | Le haut et le bas diffèrent de plus d’un cône | Changer la combinaison des commutateurs (voir Les fours à commande manuelle en détail)                                                                            | Charger plus légèrement la zone la moins chaude ; suivre votre manuel                                                                                                  |
 
 Un **décalage de cône** est un réglage du programmateur qui monte ou baisse sa température pour un cône, afin qu’elle corresponde à ce que montrent vos cônes témoins{{en: witness cones}}. Gardez chaque jeu cuit et notez comment chaque cône s’est courbé (voir Après la cuisson, plus bas).
+
+:::
+
+:::sk
+
+## Cuire aux cônes SK {#sk-cones}
+
+Les cônes SK sont les cônes pyrométriques fabriqués selon la norme japonaise JIS R 8101, et vendus au Japon par des revendeurs comme Yuko Trading (有恒商事). Comme tout cône{{en: cone}}, un cône SK mesure le travail thermique{{en: heatwork}}, pas la température seule : il ramollit et se courbe quand les pièces ont reçu assez de chaleur, et vous lisez jusqu’où il s’est courbé. Les cônes témoins{{en: witness cone}}, la lecture de la courbure d’un cône et les paliers{{en: hold}} valent pour lui comme pour tout cône. Cette section nomme le système de chaque cône, et ne convertit jamais un numéro SK en numéro d’un autre système : les numéros des différentes séries de cônes ne sont pas interchangeables.
+
+> [!NOTE]
+> Écrivez toujours « SK » devant le numéro. Beaucoup d’anciennes recettes japonaises disent seulement « SK 8 » ou « SK 9 », sans préciser de quel cône il s’agit. Les cônes de Kyoto et les cônes SK selon la JIS portent les mêmes numéros, mais se courbent à des températures différentes (voir Cônes de Kyoto, plus bas).
+
+### Les grands cônes
+
+La norme prévoit deux tailles. Les grands cônes (大型コーン) servent « principalement à mesurer le degré de cuisson » (焼度測定), ce que cherche un céramiste. Les petits cônes (SK 26 à SK 42, en haut de la gamme) servent « principalement aux essais de réfractarité » et ne sont pas traités ici. Le tableau ci-dessous donne les grands cônes de SK 022 à SK 20.
+
+Les numéros vont ici de SK 022, le moins chaud, jusqu’à SK 20. Entre SK 015 et SK 6, les numéros imprimés portent un « a » (SK 015a, SK 6a) ; écrivez-le tel qu’il est imprimé.
+
+### Placer les grands cônes
+
+Plantez chaque grand cône dans un support ou une motte d’argile, incliné du côté de sa face de courbure. Comme pour tout cône, gardez la même hauteur et la même inclinaison d’une cuisson à l’autre, car une différence de l’une ou de l’autre change la courbure. Placez les trois cônes du jeu de cônes{{en: cone pack}} (ci-dessous) ensemble, bien à l’intérieur du four, près du centre de la charge, là où ils reçoivent la chaleur que reçoivent les pièces, mais où vous pouvez quand même les voir par un regard ; avant de fermer le four, vérifiez que vous voyez bien les trois.
+
+### Cône guide, cône cible et cône de garde
+
+Les cônes se vendent et se placent par trois : un cône guide, un cône cible au numéro visé et un cône de garde. Prenez comme cône cible le numéro SK que donne votre recette ou votre terre, comme cône guide le cône immédiatement moins chaud (une ligne plus haut dans le tableau) et comme cône de garde le cône immédiatement plus chaud. Quand le cône guide commence à se courber, la fin approche ; quand le cône de garde se courbe, la cuisson est allée trop loin.
+
+### Le tableau des cônes SK
+
+Table: Grands cônes SK (JIS R 8101) : la température nominale (JIS) de chacun
+Label: Tableau des cônes SK
+
+| Cône    | Température nominale (JIS) |
+| ------- | -------------------------: |
+| SK 022  |        {{1112 °F; 600 °C}} |
+| SK 021  |        {{1202 °F; 650 °C}} |
+| SK 020  |        {{1238 °F; 670 °C}} |
+| SK 019  |        {{1274 °F; 690 °C}} |
+| SK 018  |        {{1310 °F; 710 °C}} |
+| SK 017  |        {{1346 °F; 730 °C}} |
+| SK 016  |        {{1382 °F; 750 °C}} |
+| SK 015a |        {{1454 °F; 790 °C}} |
+| SK 014a |        {{1499 °F; 815 °C}} |
+| SK 013a |        {{1535 °F; 835 °C}} |
+| SK 012a |        {{1571 °F; 855 °C}} |
+| SK 011a |        {{1616 °F; 880 °C}} |
+| SK 010a |        {{1652 °F; 900 °C}} |
+| SK 09a  |        {{1688 °F; 920 °C}} |
+| SK 08a  |        {{1724 °F; 940 °C}} |
+| SK 07a  |        {{1760 °F; 960 °C}} |
+| SK 06a  |        {{1796 °F; 980 °C}} |
+| SK 05a  |       {{1832 °F; 1000 °C}} |
+| SK 04a  |       {{1868 °F; 1020 °C}} |
+| SK 03a  |       {{1904 °F; 1040 °C}} |
+| SK 02a  |       {{1940 °F; 1060 °C}} |
+| SK 01a  |       {{1976 °F; 1080 °C}} |
+| SK 1a   |       {{2012 °F; 1100 °C}} |
+| SK 2a   |       {{2048 °F; 1120 °C}} |
+| SK 3a   |       {{2084 °F; 1140 °C}} |
+| SK 4a   |       {{2120 °F; 1160 °C}} |
+| SK 5a   |       {{2156 °F; 1180 °C}} |
+| SK 6a   |       {{2192 °F; 1200 °C}} |
+| SK 7    |       {{2246 °F; 1230 °C}} |
+| SK 8    |       {{2282 °F; 1250 °C}} |
+| SK 9    |       {{2336 °F; 1280 °C}} |
+| SK 10   |       {{2372 °F; 1300 °C}} |
+| SK 11   |       {{2408 °F; 1320 °C}} |
+| SK 12   |       {{2462 °F; 1350 °C}} |
+| SK 13   |       {{2516 °F; 1380 °C}} |
+| SK 14   |       {{2570 °F; 1410 °C}} |
+| SK 15   |       {{2615 °F; 1435 °C}} |
+| SK 16   |       {{2660 °F; 1460 °C}} |
+| SK 17   |       {{2696 °F; 1480 °C}} |
+| SK 18   |       {{2732 °F; 1500 °C}} |
+| SK 19   |       {{2768 °F; 1520 °C}} |
+| SK 20   |       {{2786 °F; 1530 °C}} |
+
+Chaque valeur est nominale (JIS) : c’est la température que la norme donne pour le cône, telle qu’elle est imprimée dans le tableau de Yuko Trading. Ce tableau n’indique pas de vitesse de montée. La norme donne des températures de référence. À une vitesse de montée courante chez les céramistes, environ 100 °C/h, l’institut municipal de Kyoto a mesuré que ses propres cônes de Kyoto se courbaient 40–70 °C plus bas que la valeur JIS du même numéro ; nous n’avons trouvé aucune mesure de ce genre pour les cônes SK selon la JIS. Placez un cône témoin et comparez.
+
+### Cônes de Kyoto
+
+Les cônes de Kyoto (京都ゼーゲル), fabriqués par l’institut municipal de Kyoto, ne sont plus fabriqués : selon la presse, l’institut a arrêté la production à la fin de l’exercice 2009. Ils portent les mêmes numéros que les cônes SK selon la JIS, mais se courbent plus bas : un cône de Kyoto se courbe le plus souvent à peu près à la température du cône SK selon la JIS dont le numéro est inférieur de deux. Une recette de Kyoto qui indique « SK 8 » peut désigner un cône de Kyoto. L’institut a publié des conseils pour les céramistes qui passent des cônes de Kyoto aux cônes Orton, et remplace son propre cône de Kyoto SK 12 par le cône 10 d’Orton ; c’est le choix de l’institut, d’après ses propres mesures à 100 °C/h, et il ne vaut pour aucun autre cône.
+
+### Cônes Orton vendus au Japon
+
+Les cônes Orton autoportants sont vendus au Japon sous le nom 立つゼーゲル (« Seger debout »), parce qu’ils n’ont besoin ni de support ni de socle. Ce sont des cônes Orton, avec les numéros et le tableau d’Orton (plus haut) : cuisez à un tel cône uniquement d’après son numéro Orton, et gardez les cônes SK et les cônes Orton dans des jeux séparés, jamais dans le même.
+
+### Sources sur les cônes SK
+
+- [Yuko Trading (有恒商事株式会社) : 標準溶倒温度表 (le tableau SK, vérifié le 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
+- [JSA : JIS R 8101:1999, 耐火度試験用標準コーン (en vigueur, reconfirmée le 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [Kyoto Municipal Institute of Industrial Technology and Culture : points à vérifier pour passer des cônes de Kyoto aux cônes Orton](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
 
 :::
 

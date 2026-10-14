@@ -1,16 +1,20 @@
 const { test, expect } = require('@playwright/test');
 const { signUpAndSignIn } = require('./helpers');
 
-// Every page in the pseudo-locale (docs/translating.md): each message is
-// accented there, so interface text that is not accented was never marked
-// for translation. Names, numbers, units and formulas are not messages.
+// Every page in the pseudo-locales (docs/translating.md): each message is
+// accented in en-XA, and in Japanese characters in ja-XC, so interface text
+// that is neither was never marked for translation. Names, numbers, units and
+// formulas are not messages.
 
-const ACCENTED = /[åƀçðéƒĝĥîĵķļɱñöþǫŕšţûṽŵẋýžÅƁÇÐÉƑĜĤÎĴĶĻṀÑÖÞǪŔŠŢÛṼŴẊÝŽ]/;
+const PSEUDO = {
+  'en-XA': /[åƀçðéƒĝĥîĵķļɱñöþǫŕšţûṽŵẋýžÅƁÇÐÉƑĜĤÎĴĶĻṀÑÖÞǪŔŠŢÛṼŴẊÝŽ]/,
+  'ja-XC': /[\u3040-\u30ff\u4e00-\u9fff]/
+};
 
-/** Interface text on the page that is not accented: headings, labels, buttons, column heads, the menu. */
-const unmarked = (page) =>
-  page.evaluate((accented) => {
-    const pattern = new RegExp(accented);
+/** Interface text on the page that is not in the pseudo-locale: headings, labels, buttons, column heads, the menu. */
+const unmarked = (page, marked) =>
+  page.evaluate((source) => {
+    const pattern = new RegExp(source);
     const NOT_MESSAGES = [/^Glazecalc$/, /^[\d\s.,:;%°CFKgxlbozmL()–/+×·-]*$/, /^[A-Z][a-z]?\d*(?:[A-Z][a-z]?\d*)*$/];
     const selector = 'h1, h2, h3, h4, label, legend, button, th[scope="col"], caption, summary, nav a, .lead-text';
     return [...globalThis.document.querySelectorAll(selector)]
@@ -19,7 +23,7 @@ const unmarked = (page) =>
       .map((element) => element.innerText.replace(/\s+/g, ' ').trim())
       .filter((text) => text && /[A-Za-z]{2}/.test(text) && !pattern.test(text))
       .filter((text) => !NOT_MESSAGES.some((not) => not.test(text)));
-  }, ACCENTED.source);
+  }, marked.source);
 
 const VISITOR_PAGES = [
   '/',
@@ -35,19 +39,23 @@ const VISITOR_PAGES = [
 ];
 const ACCOUNT_PAGES = ['/home', '/recipe', '/material', '/additive', '/firing', '/notes', '/trash', '/account'];
 
-test('every visitor page marks its text for translation', async ({ page }) => {
-  for (const path of VISITOR_PAGES) {
-    await page.goto('/en-XA' + path);
-    await expect(page.locator('h1')).toHaveText(ACCENTED);
-    expect(await unmarked(page), path).toEqual([]);
-  }
-});
+for (const [code, marked] of Object.entries(PSEUDO)) {
+  const where = code === 'en-XA' ? '' : ` (${code})`;
 
-test('every page of the notebook marks its text for translation', async ({ page }) => {
-  await signUpAndSignIn(page);
-  for (const path of ACCOUNT_PAGES) {
-    await page.goto('/en-XA' + path);
-    await expect(page.locator('h1')).toHaveText(ACCENTED);
-    expect(await unmarked(page), path).toEqual([]);
-  }
-});
+  test('every visitor page marks its text for translation' + where, async ({ page }) => {
+    for (const path of VISITOR_PAGES) {
+      await page.goto('/' + code + path);
+      await expect(page.locator('h1')).toHaveText(marked);
+      expect(await unmarked(page, marked), path).toEqual([]);
+    }
+  });
+
+  test('every page of the notebook marks its text for translation' + where, async ({ page }) => {
+    await signUpAndSignIn(page);
+    for (const path of ACCOUNT_PAGES) {
+      await page.goto('/' + code + path);
+      await expect(page.locator('h1')).toHaveText(marked);
+      expect(await unmarked(page, marked), path).toEqual([]);
+    }
+  });
+}

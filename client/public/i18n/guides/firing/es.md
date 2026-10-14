@@ -278,6 +278,97 @@ La **corrección de cono** (offset) es un ajuste del programador que sube o baja
 
 :::
 
+:::sk
+
+## Cocción por conos SK {#sk-cones}
+
+Los conos SK son los conos pirométricos fabricados según la norma japonesa, JIS R 8101, y vendidos en Japón por distribuidores como Yuko Trading (有恒商事). Como cualquier cono{{en: cone}}, un cono SK mide el trabajo térmico{{en: heatwork}}, no solo la temperatura: se reblandece y se dobla cuando las piezas han recibido suficiente calor, y después se lee cuánto se ha doblado. Los conos testigo{{en: witness cones}}, la lectura de cuánto se ha doblado un cono y los mantenimientos{{en: holds}} funcionan con él como con cualquier cono. Esta sección indica el sistema de cada cono, y nunca convierte un número SK en el número de otro sistema: los números de las distintas series de conos no son intercambiables.
+
+> [!NOTE]
+> Escriba siempre «SK» delante del número. Muchas recetas japonesas antiguas dicen solo «SK 8» o «SK 9», sin decir de quién es el cono. Los conos de Kioto y los conos SK según la JIS llevan los mismos números, pero se doblan a temperaturas distintas (vea «Los conos de Kioto», más abajo).
+
+### Los conos grandes
+
+La norma tiene dos tamaños. Los conos grandes (大型コーン) se usan «principalmente para medir el grado de cocción» (焼度測定), que es lo que interesa a quien hace cerámica. Los conos pequeños (del SK 26 al SK 42, en lo más alto de la serie) se usan «principalmente para ensayos de refractariedad» y no se tratan aquí. La tabla de más abajo da los conos grandes del SK 022 al SK 20.
+
+Aquí los números van del SK 022, el más frío, al SK 20. Entre el SK 015 y el SK 6, los números impresos llevan una «a» (SK 015a, SK 6a); escríbala tal como está impresa.
+
+### Cómo colocar los conos grandes
+
+Coloque cada cono grande en un soporte para conos o en una pella de arcilla, inclinado hacia su cara de doblado. Como con cualquier cono, mantenga la altura y la inclinación iguales de una cocción a otra, porque una diferencia en cualquiera de las dos cambia cuánto se dobla. Coloque juntos los tres conos del trío{{en: cone pack}} (más abajo), bien dentro del horno, cerca del centro de la carga, donde reciben el calor que reciben las piezas, pero donde pueda verlos por una mirilla; antes de cerrar el horno, compruebe que ve los tres.
+
+### Conos de aviso, de cocción y de control
+
+Los conos se venden y se colocan de tres en tres: un cono de aviso, un cono de cocción en el objetivo y un cono de control. Tome como cono de cocción el número SK que indique su receta o su pasta, como cono de aviso el cono inmediatamente más frío (una fila más arriba en la tabla) y como cono de control el inmediatamente más caliente. Cuando el cono de aviso empieza a doblarse, el final está cerca; cuando se dobla el cono de control, la cocción se ha pasado.
+
+### La tabla SK
+
+Table: Conos SK grandes (JIS R 8101): la temperatura nominal (JIS) de cada uno
+Label: Tabla SK
+
+| Cono    | Temperatura nominal (JIS) |
+| ------- | ------------------------: |
+| SK 022  |       {{1112 °F; 600 °C}} |
+| SK 021  |       {{1202 °F; 650 °C}} |
+| SK 020  |       {{1238 °F; 670 °C}} |
+| SK 019  |       {{1274 °F; 690 °C}} |
+| SK 018  |       {{1310 °F; 710 °C}} |
+| SK 017  |       {{1346 °F; 730 °C}} |
+| SK 016  |       {{1382 °F; 750 °C}} |
+| SK 015a |       {{1454 °F; 790 °C}} |
+| SK 014a |       {{1499 °F; 815 °C}} |
+| SK 013a |       {{1535 °F; 835 °C}} |
+| SK 012a |       {{1571 °F; 855 °C}} |
+| SK 011a |       {{1616 °F; 880 °C}} |
+| SK 010a |       {{1652 °F; 900 °C}} |
+| SK 09a  |       {{1688 °F; 920 °C}} |
+| SK 08a  |       {{1724 °F; 940 °C}} |
+| SK 07a  |       {{1760 °F; 960 °C}} |
+| SK 06a  |       {{1796 °F; 980 °C}} |
+| SK 05a  |      {{1832 °F; 1000 °C}} |
+| SK 04a  |      {{1868 °F; 1020 °C}} |
+| SK 03a  |      {{1904 °F; 1040 °C}} |
+| SK 02a  |      {{1940 °F; 1060 °C}} |
+| SK 01a  |      {{1976 °F; 1080 °C}} |
+| SK 1a   |      {{2012 °F; 1100 °C}} |
+| SK 2a   |      {{2048 °F; 1120 °C}} |
+| SK 3a   |      {{2084 °F; 1140 °C}} |
+| SK 4a   |      {{2120 °F; 1160 °C}} |
+| SK 5a   |      {{2156 °F; 1180 °C}} |
+| SK 6a   |      {{2192 °F; 1200 °C}} |
+| SK 7    |      {{2246 °F; 1230 °C}} |
+| SK 8    |      {{2282 °F; 1250 °C}} |
+| SK 9    |      {{2336 °F; 1280 °C}} |
+| SK 10   |      {{2372 °F; 1300 °C}} |
+| SK 11   |      {{2408 °F; 1320 °C}} |
+| SK 12   |      {{2462 °F; 1350 °C}} |
+| SK 13   |      {{2516 °F; 1380 °C}} |
+| SK 14   |      {{2570 °F; 1410 °C}} |
+| SK 15   |      {{2615 °F; 1435 °C}} |
+| SK 16   |      {{2660 °F; 1460 °C}} |
+| SK 17   |      {{2696 °F; 1480 °C}} |
+| SK 18   |      {{2732 °F; 1500 °C}} |
+| SK 19   |      {{2768 °F; 1520 °C}} |
+| SK 20   |      {{2786 °F; 1530 °C}} |
+
+Todas las cifras son nominales (JIS): la temperatura que da la norma para cada cono, tal como figura en la tabla de Yuko Trading. La tabla no indica ninguna velocidad de subida. La norma da temperaturas de referencia. A una velocidad habitual en cerámica, de unos 100 °C/h, el instituto municipal de Kioto midió que sus propios conos de Kioto se doblaban a 40–70 °C menos que la cifra JIS del mismo número; no hemos encontrado mediciones así para los conos SK según la JIS. Coloque un cono testigo y compare.
+
+### Los conos de Kioto
+
+Los conos de Kioto (京都ゼーゲル), fabricados por el instituto municipal de Kioto, ya no se fabrican: según la prensa, el instituto dejó de producirlos al cierre del ejercicio fiscal de 2009. Llevan los mismos números que los conos SK según la JIS, pero se doblan a menos temperatura: un cono de Kioto se dobla, en la mayoría de los casos, a más o menos la temperatura del cono SK según la JIS de dos números menos. Una receta de Kioto que diga «SK 8» puede referirse a un cono de Kioto. El instituto ha publicado consejos para los ceramistas que pasan de los conos de Kioto a los conos Orton, y sustituye su propio SK 12 de Kioto por el cono Orton 10; es una elección del instituto a partir de sus propias mediciones a 100 °C/h, y no se aplica a ningún otro cono.
+
+### Conos Orton vendidos en Japón
+
+Los conos Orton con pie se venden en Japón con el nombre 立つゼーゲル («Seger de pie»), porque no necesitan soporte para conos ni base. Son conos Orton, con los números de Orton y la tabla de Orton (más arriba): cueza con ellos solo por su número Orton, y mantenga los conos SK y los conos Orton en tríos separados, nunca en el mismo.
+
+### Fuentes de los conos SK
+
+- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (la tabla SK, consultada el 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
+- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (en vigor, confirmada de nuevo el 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [Kyoto Municipal Institute of Industrial Technology and Culture: puntos que tener en cuenta al pasar de los conos de Kioto a los conos Orton](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
+
+:::
+
 ## Cocción de bizcocho {#bisque}
 
 La cocción de **bizcocho**{{en: bisque}} (biscuit en el Reino Unido) es la primera cocción, a menos temperatura, que convierte la arcilla seca en piezas duras y porosas, listas para esmaltar. Suele hacerse a cono 06–04, {{1828–1945 °F; 998–1063 °C}} según la tabla de Orton; en el Reino Unido, los ceramistas suelen cocer a unos {{1000 °C; 1832 °F}}, cerca del cono 06. El bizcocho debe quedar poroso, «por lo general, más del 15 %» (Digitalfire), para que absorba el agua del esmalte{{en: glaze}}. Un bizcocho demasiado blando toma el esmalte demasiado grueso, que luego se agrieta y **se recoge**{{en: crawls}} (se retira formando islas y deja la arcilla al descubierto). Además, el bizcocho poco cocido «sigue encogiendo durante la cocción de esmalte{{en: glaze firing}}», lo que estropea el acoplamiento esmalte-pasta{{en: glaze fit}}. Al cargar hay margen: las piezas pueden tocarse, las tapas pueden cocerse puestas en sus piezas y los cuencos se colocan boca con boca en lugar de uno dentro de otro.

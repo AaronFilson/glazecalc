@@ -25,7 +25,7 @@ Label: Rozsahy výpalu
 | Středněteplotní výpal | 5–6       | {{2167–2232 °F; 1186–1222 °C}} | Kamenina{{en: stoneware}} a porcelán z elektrické pece      |
 | Vysokoteplotní výpal  | 9–10      | {{2300–2345 °F; 1260–1285 °C}} | Většinou kamenina a porcelán z plynové pece                 |
 
-Dodavatelé ve Spojeném království, v Evropě, Austrálii a na Novém Zélandu často uvádějí místo žároměrky teplotu v °C: najděte nejbližší žároměrku v tabulce níže a ověřte ji kontrolní žároměrkou{{en: witness cone}}. U Segerových žároměrek (SK) a žároměrek Staffordshire, starších evropských řad, byste neměli předpokládat, že mají stejná čísla jako Ortonovy žároměrky, a proto tento návod používá Ortonovy žároměrky.
+Dodavatelé ve Spojeném království, v Evropě, Austrálii a na Novém Zélandu často uvádějí místo žároměrky teplotu v °C: najděte nejbližší žároměrku v tabulce níže a ověřte ji kontrolní žároměrkou{{en: witness cone}}. U Segerových žároměrek a žároměrek Staffordshire, starších evropských řad, byste neměli předpokládat, že mají stejná čísla jako Ortonovy žároměrky, a proto tento návod používá Ortonovy žároměrky.
 
 ### Výdrž přidává tepelnou expozici
 
@@ -275,6 +275,97 @@ Label: Úprava dalšího výpalu
 | Horní a spodní část se liší o víc než jedno číslo žároměrky | Změňte nastavení přepínačů (viz Podrobně o ručně ovládaných pecích)                                                                          | Chladnější část pece zakládejte řidčeji; řiďte se návodem k obsluze                                                                                   |
 
 **Offset pro žároměrku** je nastavení regulátoru, které posune jeho teplotu pro danou žároměrku nahoru nebo dolů, aby odpovídala tomu, co ukazují vaše kontrolní žároměrky{{en: witness cones}}. Každou vypálenou sadu si schovejte a zapište si, jak se která sada ohnula (viz Po výpalu níže).
+
+:::
+
+:::sk
+
+## Výpal na žároměrky SK {#sk-cones}
+
+Žároměrky SK jsou pyrometrické žároměrky vyrobené podle japonské normy JIS R 8101, které v Japonsku prodávají obchodníci, jako je Yuko Trading (有恒商事). Jako každá žároměrka měří i žároměrka SK tepelnou expozici{{en: heatwork}}, ne jen teplotu: změkne a ohne se, když výrobky dostaly dost tepla, a vy odečítáte, jak daleko se ohnula. Kontrolní žároměrky{{en: witness cone}}, odečítání toho, jak daleko se žároměrka ohnula, a výdrže{{en: hold}} u ní fungují stejně jako u každé žároměrky. Tato část u každé žároměrky uvádí její systém a nikdy nepřevádí číslo SK na číslo jiného systému: čísla různých řad žároměrek nejsou zaměnitelná.
+
+> [!NOTE]
+> Před číslo vždy pište „SK“. Mnoho starších japonských receptů uvádí jen „SK 8“ nebo „SK 9“ a neříká, čí je to žároměrka. Kjótské žároměrky a žároměrky SK podle JIS mají stejná čísla, ale ohýbají se při různých teplotách (viz Kjótské žároměrky níže).
+
+### Velké žároměrky
+
+Norma zná dvě velikosti. Velké žároměrky (大型コーン) se „používají hlavně k měření stupně výpalu“ (焼度測定), a to je to, co keramik potřebuje. Malé žároměrky (SK 26 až SK 42, na horním konci řady) se „používají hlavně ke zkouškám žárovzdornosti“ a tady se jimi nezabýváme. Tabulka níže uvádí velké žároměrky od SK 022 do SK 20.
+
+Čísla tu jdou od SK 022, nejchladnější, až do SK 20. Mezi SK 015 a SK 6 mají vytištěná čísla písmeno „a“ (SK 015a, SK 6a); pište je tak, jak jsou vytištěná.
+
+### Stavění velkých žároměrek
+
+Každou velkou žároměrku zasaďte do držáku nebo do placky z hlíny, se sklonem ke své ohybové straně. Jako u každé žároměrky držte výšku i sklon od výpalu k výpalu stejné, protože rozdíl v kterémkoli z nich mění, jak daleko se ohne. Tři žároměrky sady{{en: cone pack}} (viz níže) postavte vedle sebe hluboko do pece blízko středu vsázky, kde dostávají stejné teplo jako výrobky, a přitom tam, kde je uvidíte průzorem; než pec zavřete, ověřte, že vidíte všechny tři.
+
+### Signální, cílová a pojistná žároměrka
+
+Žároměrky se prodávají a stavějí po třech: signální žároměrka, cílová žároměrka a pojistná žároměrka. Jako cílovou vezměte číslo SK, které uvádí váš recept nebo hlína, jako signální nejbližší chladnější žároměrku (o řádek výš v tabulce) a jako pojistnou nejbližší teplejší. Když se signální žároměrka začne ohýbat, konec se blíží; když se ohne pojistná žároměrka, výpal zašel příliš daleko.
+
+### Tabulka žároměrek SK
+
+Table: Velké žároměrky SK (JIS R 8101): jmenovitá teplota (JIS) každé z nich
+Label: Tabulka žároměrek SK
+
+| Žároměrka | Jmenovitá teplota (JIS) |
+| --------- | ----------------------: |
+| SK 022    |     {{1112 °F; 600 °C}} |
+| SK 021    |     {{1202 °F; 650 °C}} |
+| SK 020    |     {{1238 °F; 670 °C}} |
+| SK 019    |     {{1274 °F; 690 °C}} |
+| SK 018    |     {{1310 °F; 710 °C}} |
+| SK 017    |     {{1346 °F; 730 °C}} |
+| SK 016    |     {{1382 °F; 750 °C}} |
+| SK 015a   |     {{1454 °F; 790 °C}} |
+| SK 014a   |     {{1499 °F; 815 °C}} |
+| SK 013a   |     {{1535 °F; 835 °C}} |
+| SK 012a   |     {{1571 °F; 855 °C}} |
+| SK 011a   |     {{1616 °F; 880 °C}} |
+| SK 010a   |     {{1652 °F; 900 °C}} |
+| SK 09a    |     {{1688 °F; 920 °C}} |
+| SK 08a    |     {{1724 °F; 940 °C}} |
+| SK 07a    |     {{1760 °F; 960 °C}} |
+| SK 06a    |     {{1796 °F; 980 °C}} |
+| SK 05a    |    {{1832 °F; 1000 °C}} |
+| SK 04a    |    {{1868 °F; 1020 °C}} |
+| SK 03a    |    {{1904 °F; 1040 °C}} |
+| SK 02a    |    {{1940 °F; 1060 °C}} |
+| SK 01a    |    {{1976 °F; 1080 °C}} |
+| SK 1a     |    {{2012 °F; 1100 °C}} |
+| SK 2a     |    {{2048 °F; 1120 °C}} |
+| SK 3a     |    {{2084 °F; 1140 °C}} |
+| SK 4a     |    {{2120 °F; 1160 °C}} |
+| SK 5a     |    {{2156 °F; 1180 °C}} |
+| SK 6a     |    {{2192 °F; 1200 °C}} |
+| SK 7      |    {{2246 °F; 1230 °C}} |
+| SK 8      |    {{2282 °F; 1250 °C}} |
+| SK 9      |    {{2336 °F; 1280 °C}} |
+| SK 10     |    {{2372 °F; 1300 °C}} |
+| SK 11     |    {{2408 °F; 1320 °C}} |
+| SK 12     |    {{2462 °F; 1350 °C}} |
+| SK 13     |    {{2516 °F; 1380 °C}} |
+| SK 14     |    {{2570 °F; 1410 °C}} |
+| SK 15     |    {{2615 °F; 1435 °C}} |
+| SK 16     |    {{2660 °F; 1460 °C}} |
+| SK 17     |    {{2696 °F; 1480 °C}} |
+| SK 18     |    {{2732 °F; 1500 °C}} |
+| SK 19     |    {{2768 °F; 1520 °C}} |
+| SK 20     |    {{2786 °F; 1530 °C}} |
+
+Každý údaj je jmenovitý (JIS): teplota, kterou pro žároměrku udává norma, jak je vytištěna v tabulce firmy Yuko Trading. Tabulka neuvádí rychlost ohřevu. Norma udává referenční teploty. Při rychlosti obvyklé u keramiků, asi 100 °C/h, naměřil kjótský městský institut, že se jeho vlastní kjótské žároměrky ohýbají o 40–70 °C níž, než je údaj JIS pro stejné číslo; pro žároměrky SK podle JIS jsme taková měření nenašli. Postavte kontrolní žároměrku a porovnejte.
+
+### Kjótské žároměrky
+
+Kjótské žároměrky (京都ゼーゲル), které vyráběl kjótský městský institut, se už nevyrábějí: podle zpráv v tisku institut ukončil výrobu na konci fiskálního roku 2009. Mají stejná čísla jako žároměrky SK podle JIS, ale ohýbají se při nižší teplotě: kjótská žároměrka se většinou ohne přibližně při teplotě žároměrky SK podle JIS o dvě čísla nižší. Recept z Kjóta, který uvádí „SK 8“, může myslet kjótskou žároměrku. Institut zveřejnil rady pro keramiky, kteří přecházejí z kjótských žároměrek na Ortonovy, a místo své kjótské SK 12 používá Ortonovu žároměrku 10; to je volba institutu podle jeho vlastních měření při 100 °C/h a neplatí pro žádnou jinou žároměrku.
+
+### Ortonovy žároměrky prodávané v Japonsku
+
+Samostojné Ortonovy žároměrky se v Japonsku prodávají pod názvem 立つゼーゲル („stojící Seger“), protože nepotřebují držák ani stojánek. Jsou to Ortonovy žároměrky s Ortonovými čísly a Ortonovou tabulkou (viz výše): vypalujte na ně jen podle jejich Ortonova čísla a žároměrky SK a Ortonovy žároměrky mějte v oddělených sadách, nikdy v jedné.
+
+### Zdroje k žároměrkám SK
+
+- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (tabulka SK, ověřeno 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
+- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (platná, znovu potvrzena 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [Kyoto Municipal Institute of Industrial Technology and Culture: na co dát pozor při přechodu z kjótských žároměrek na Ortonovy](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
 
 :::
 

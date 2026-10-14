@@ -64,7 +64,115 @@
   "privacy": {
     "title": "Zasebnost",
     "lead": "Zadnja posodobitev: oktober 2026.",
-    "shortHeading": "Na kratko"
+    "shortHeading": "Na kratko",
+    "short": "Glazecalc hrani to, kar potrebuje za delovanje vašega računa, in nič več. Ni oglasov, analitike ali sledenja. Vaši podatki se nikoli ne prodajajo, edino podjetje, ki z njimi ravna, pa je Amazon Web Services, ki gosti spletno mesto in pošilja njegovo e-pošto.",
+    "whoHeading": "Kdo je odgovoren",
+    "who": "Glazecalc je brezplačen, odprtokoden in neprofiten projekt, ki ga vodi njegov lastnik Aaron Filson v Združenih državah Amerike. On odloča o tem, kaj se zgodi z vašimi podatki, zato je po zakonodaji o varstvu podatkov njihov »upravljavec«.",
+    "contact": "Če želite vprašati o svojih podatkih ali uveljavljati katero koli od svojih pravic, pišite na <mail>privacy@glazecalcapp.com</mail>. Lahko tudi <issues>odprete zadevo (issue) na GitHubu</issues>, vendar so zadeve javne: vanje nikoli ne pišite svojega e-poštnega naslova ali česar koli osebnega. Večino tega, kar zadeva vaše podatke, lahko naredite sami na <account>strani računa</account>.",
+    "storedHeading": "Kaj se hrani in zakaj",
+    "storedAccount": "<b>Vaš račun:</b> vaš e-poštni naslov in geslo, ki je shranjeno samo kot enosmerni zgoščeni zapis (bcrypt), nikoli kot geslo samo. Z njim se hranijo vaše nastavitve (na primer jezik, regija in enote) in seznam surovin, ki jih imate na zalogi. Račun potrebuje e-poštni naslov za prijavo in za ponastavitev pozabljenega gesla. Ko ustvarite račun, se na naslov pošlje povezava, s katero potrdite, da je vaš; do takrat se nanj pošilja pošta samo, kadar to zahtevate, na primer za ponastavitev gesla.",
+    "storedSaved": "<b>Kar shranite:</b> vaši recepti, surovine, dodatki, zapiski, dnevniki žganja in nasveti, tako kot ste jih zapisali. Vidite jih samo vi: med uporabniki se nič ne deli.",
+    "storedTrial": "<b>Preizkus (»Preizkusi zdaj«):</b> brez e-poštnega naslova ali gesla, samo izmišljeno ime, na primer »speckled quiet kilns«. Če se med preizkusom v istem brskalniku prijavite v račun, se to, kar ste ustvarili v preizkusu, prenese v račun.",
+    "storedResets": "<b>Povezave za ponastavitev gesla in e-poštne povezave:</b> kateri račun je zahteval povezavo, kdaj, naslov, na katerega je bila poslana povezava za potrditev naslova, in prstni odtis vsake povezave (ne povezava sama).",
+    "storedLogs": "<b>Dnevniki:</b> spletni strežnik zapiše vsako zahtevo: vaš naslov IP, čas, zahtevano stran in ime vašega brskalnika. Aplikacija zapisuje napake skupaj s stranjo, na kateri so nastale, nikoli pa vašega e-poštnega naslova.",
+    "storedDeletions": "<b>Izbrisani računi:</b> identifikacijska številka računa in čas izbrisa, nič drugega, da obnovljena varnostna kopija računa ne more vrniti.",
+    "storedMail": "<b>Težave z e-pošto:</b> če se pošta na vaš naslov vrne ali je prijavljena kot neželena, Amazonova e-poštna storitev naslov uvrsti na seznam naslovov, na katere se ne pošilja več, lastniku pa pošlje obvestilo, ki vsebuje naslov.",
+    "storedInbound": "<b>Pošta, ki jo pošljete aplikaciji Glazecalc:</b> pošto na privacy@glazecalcapp.com in druge naslove Glazecalc Amazon pregleda glede neželene pošte in virusov, jo hrani v zasebni shrambi in posreduje v lastnikov osebni poštni predal (Gmail).",
+    "basisHeading": "Pravna podlaga",
+    "basisContract": "<b>Delovanje vašega računa</b>, hramba tega, kar shranite, in e-poštna sporočila o vašem računu so storitev, ki ste jo zahtevali: pravna podlaga je pogodba med vami in aplikacijo Glazecalc (člen 6(1)(b) GDPR).",
+    "basisInterests": "<b>Varnost in delovanje spletnega mesta</b>: dnevniki, omejitve, kako pogosto lahko kdor koli poskusi prijavo, varnostne kopije, zapis izbrisanih računov in seznam naslovov, na katere se ne pošilja pošta. Ti temeljijo na zakonitem interesu aplikacije Glazecalc za varnost, preprečevanje zlorab in to, da se vaše delo ne izgubi (člen 6(1)(f)). Hranijo se kratek čas in se ne uporabljajo za nič drugega. Nanje lahko ugovarjate s pismom na zgornji naslov.",
+    "basisNone": "O vas se nič ne odloča samodejno, ni oblikovanja profilov in nič se ne uporablja za oglaševanje.",
+    "whereHeading": "Kje se hrani in kdo z njim ravna",
+    "hosting": "Glazecalc deluje na Amazon Web Services (AWS): strežnik (EC2), varnostne kopije (S3) in e-pošta (Simple Email Service), vse v Združenih državah Amerike, v Oregonu (us-west-2). AWS s podatki ravna samo v imenu aplikacije Glazecalc, v skladu s svojimi <dpa>pogoji obdelave podatkov</dpa>. Nihče drug jih ne prejme.",
+    "transfer": "Če živite v EU, Združenem kraljestvu ali Švici, se vaši podatki prenesejo v Združene države Amerike. Amazon navaja, da ima potrdilo v okviru <dpf>okvira EU-ZDA za zasebnost podatkov</dpf> in njegovih razširitev za Združeno kraljestvo in Švico, pogoji AWS pa vključujejo standardne pogodbene klavzule EU, ki bi še naprej veljale, če bi bil okvir, ki je zdaj izpodbijan na sodišču, razveljavljen. Lastnik in AWS sta oba v ZDA in ameriško pravo jima lahko naloži, da podatke izročita.",
+    "noThirdParties": "Vaš brskalnik ne nalaga ničesar z drugih spletnih mest: nobenih pisav, skriptov, slik ali analitike od drugod, varnostne nastavitve spletnega mesta pa jih blokirajo. Povezave na GitHub in druga spletna mesta se odprejo samo, če jih kliknete.",
+    "choiceHeading": "Kje je shranjen vaš račun in vaša izbira",
+    "choiceProject": "Glazecalc je brezplačen odprtokoden projekt. Računi in vse, kar vsebujejo, so shranjeni na strežnikih v Združenih državah Amerike, ne glede na to, kje živite, kot je opisano zgoraj.",
+    "choiceNoAccount": "Za branje vodnikov ne potrebujete računa, kalkulator pa lahko preizkusite z možnostjo »Preizkusi zdaj«, brez e-poštnega naslova ali gesla. Preizkus se 14 dni hrani na istih strežnikih.",
+    "choiceOwnCopy": "Vsakdo lahko zažene lastno kopijo aplikacije Glazecalc na svojem računalniku ali strežniku: koda je prosto dostopna na <source>GitHubu</source>.",
+    "choiceDecision": "Ali boste tu ustvarili račun, ob vedenju, da se hrani v Združenih državah Amerike, je vaša odločitev.",
+    "choiceNoWarranty": "Glazecalc je na voljo tak, kakršen je, brez jamstva. Njegovi vzdrževalci ne prevzemajo nobene odgovornosti, tudi ne odškodninske, za vašo odločitev, da ustvarite račun, ali za to, kje so shranjeni njegovi podatki.",
+    "keptHeading": "Kako dolgo se hrani",
+    "keptAccount": "<b>Vaš račun in to, kar shranite:</b> dokler jih ne izbrišete. Računi se ne odstranijo zato, ker niso v uporabi.",
+    "keptTrial": "<b>Preizkus:</b> 14 dni od začetka, nato se izbriše z vsem, kar vsebuje, razen če ustvarite račun, da ga ohranite.",
+    "keptResets": "<b>Povezave za ponastavitev gesla in e-poštne povezave:</b> povezava za ponastavitev velja 30 minut, njen zapis pa se izbriše po približno eni uri; povezava za potrditev naslova velja in se hrani 24 ur.",
+    "keptBackups": "<b>Varnostne kopije:</b> šifrirane kopije podatkovne zbirke se hranijo 30 dni, kopije strežnikovega diska pa 7 dni. Izbrisan račun tako v 30 dneh izgine iz vseh varnostnih kopij.",
+    "keptDeletions": "<b>Zapis izbrisanega računa:</b> 37 dni, malo dlje od katere koli varnostne kopije.",
+    "keptLogs": "<b>Dnevniki:</b> dnevniki spletnega strežnika 14 dni. Lastni dnevniki aplikacije in podatkovne zbirke so omejeni z velikostjo (vsak 50 MB), kar na spletnem mestu z malo prometa seže nekaj dni nazaj. Kopije strežnikovega diska hranijo dnevnike še do 7 dni dlje.",
+    "keptMail": "<b>Seznam naslovov, na katere se ne pošilja pošta:</b> dokler lastnik naslova ne odstrani, kar vsak mesec stori za naslove, ki ne pripadajo več nobenemu računu. Lastnik obvestila o vrnjeni pošti izbriše v 30 dneh.",
+    "keptInbound": "<b>Pošta, ki jo pošljete aplikaciji Glazecalc:</b> 30 dni v Amazonovi shrambi, v lastnikovem poštnem predalu pa toliko časa, kolikor je potrebno, da vam odgovori. Pri zahtevi glede vaših podatkov se kratek zapis (kdaj je prispela, kaj je bilo zahtevano in kaj je bilo storjeno) hrani tri leta.",
+    "rightsHeading": "Vaše pravice",
+    "rightsIntro": "Svoje podatke lahko vidite, popravite, prenesete in izbrišete. Večino tega lahko naredite sami na <account>strani računa</account>:",
+    "rightsExport": "<b>Vpogled in prenos:</b> »Prenos mojih podatkov« shrani vse v eno datoteko (JSON), vaše recepte in surovine pa kot preglednice (CSV).",
+    "rightsCorrect": "<b>Popravek:</b> nastavitve in zapise lahko kadar koli spremenite. Če želite spremeniti e-poštni naslov, odprite povezavo, poslano na novi naslov; stari naslov, če je bil potrjen, prejme obvestilo o spremembi, vse naprave pa so odjavljene.",
+    "rightsDelete": "<b>Izbris:</b> »Izbriši moj račun« takoj odstrani vaš račun in vse, kar ste shranili, »Zavrzi preizkus« pa enako stori za preizkus. Kopije v varnostnih kopijah izginejo v 30 dneh.",
+    "rightsSignOut": "<b>Odjava na vseh napravah:</b> konča seje vašega računa na vseh napravah.",
+    "rightsAsk": "Za vse drugo, na primer če želite, da se vaši podatki ne uporabljajo, dokler se napaka ne popravi, ali če ugovarjate načinu njihove uporabe, pišite na <mail>privacy@glazecalcapp.com</mail>. To je brezplačno in odgovor boste prejeli v enem mesecu. Prosili vas bomo samo, da dokažete, da je račun vaš, s prijavo ali z odprtjem povezave, poslane na njegov naslov, nikoli pa za osebni dokument.",
+    "rightsComplain": "Če niste zadovoljni, se lahko pritožite pri nadzornem organu za varstvo podatkov: v EU pri <edpb>organu v vaši državi</edpb>, v Združenem kraljestvu pa pri <ico>Information Commissioner's Office</ico>.",
+    "storageHeading": "Piškotki in shramba brskalnika",
+    "storageIntro": "Glazecalc nastavi en piškotek in v vašem brskalniku hrani nekaj majhnih vrednosti. Vsaka je tam zaradi nečesa, kar ste zahtevali: da ostanete prijavljeni ali da se zapomni izbira, ki ste jo naredili. Nobena vam ne sledi in nobena se ne deli, zato zakon ne zahteva predhodnega soglasja in pasice o piškotkih ni.",
+    "storageLabel": "Piškotki in shramba brskalnika",
+    "storageName": "Ime",
+    "storagePurpose": "Čemu služi",
+    "storageLasts": "Kako dolgo ostane",
+    "storageCookie": "Piškotek",
+    "storageLocal": "Lokalna shramba",
+    "storageSession": "Shramba seje",
+    "storageNote": "Vse to lahko kadar koli počistite v nastavitvah brskalnika. Izbris računa odstrani zapis o prijavi in vse nastavitve, ki se hranijo tukaj.",
+    "keys": {
+      "cookie": {
+        "purpose": "Ohranja vašo prijavo. Vsebuje vaš žeton za prijavo. Skripti na strani ga ne morejo prebrati, brskalnik pa ga pošlje samo strežniku aplikacije Glazecalc, prek HTTPS, in nikoli z zahtevo, ki se začne na drugem spletnem mestu.",
+        "lasts": "Nastavi se, ko se prijavite, ustvarite račun ali začnete preizkus. Dokler ne zaprete brskalnika ali 7 dni, če označite »Ohrani prijavo v tej napravi«; pri preizkusu 14 dni. Odjava ga odstrani."
+      },
+      "session": {
+        "purpose": "Zapiše, da ste prijavljeni, v račun ali v preizkus, da aplikacija ve, da mora vprašati strežnik. Ne vsebuje žetona ali gesla.",
+        "lasts": "Dokler se ne odjavite ali se seja ne konča."
+      },
+      "trial": {
+        "purpose": "Med preizkusom njegovo ime in datum izteka, da ju lahko prikaže.",
+        "lasts": "Dokler se preizkus ne izteče ali ga ne ohranite ali zavržete."
+      },
+      "settings": {
+        "purpose": "Nastavitev, ki ste jo spremenili v tem brskalniku, da jo naslednja stran prikaže takoj, še preden odgovori strežnik. <code>theme</code> in <code>palette</code> obarvata stran, preden se prikaže, <code>language</code> pa odpira strani v vašem jeziku.",
+        "lasts": "Dokler je ne spremenite. Odjava povrne, kar ste morda izbrali, ko niste bili prijavljeni, ostalo pa odstrani."
+      },
+      "visitor": {
+        "purpose": "Jezik, ki ste ga izbrali, ali to, da ste zaprli obvestilo o prevodu, ko niste bili prijavljeni, da se to povrne, ko se odjavite.",
+        "lasts": "Dokler ne počistite shrambe brskalnika ali v tem brskalniku ne izbrišete računa."
+      },
+      "region": {
+        "purpose": "Filter regije na seznamu v knjižnici.",
+        "lasts": "Dokler filtra ne nastavite nazaj na vse regije."
+      },
+      "includeAdditives": {
+        "purpose": "Ali novi recepti upoštevajo dodatke v Segerjevi formuli, kot ste nazadnje izbrali.",
+        "lasts": "Dokler ne počistite shrambe brskalnika."
+      },
+      "recipeHelp": {
+        "purpose": "Da ste skrili pomoč na strani recepta.",
+        "lasts": "Dokler pomoči znova ne prikažete."
+      },
+      "print": {
+        "purpose": "Vaše zadnje izbire za tiskanje recepta: celoten recept ali seznam za tehtanje in velikost mešanice.",
+        "lasts": "Dokler ne počistite shrambe brskalnika."
+      },
+      "token": {
+        "purpose": "Žeton za prijavo iz stare različice aplikacije Glazecalc. Zdaj se nikoli ne zapiše.",
+        "lasts": "Odstrani se, ko se odpre stran."
+      },
+      "readEnglish": {
+        "purpose": "Da ste prevedeno stran izbrali za branje v angleščini, da vas aplikacija ne preusmerja več v vaš jezik.",
+        "lasts": "Dokler ne zaprete zavihka."
+      },
+      "reloadedFor": {
+        "purpose": "Po izidu nove različice spletnega mesta to, katera stran se je znova naložila in kdaj, da se stran znova naloži največ enkrat na minuto.",
+        "lasts": "Dokler ne zaprete zavihka."
+      }
+    },
+    "childrenHeading": "Otroci",
+    "children": "Glazecalc je orodje za lončarje in ni namenjen otrokom.",
+    "changesHeading": "Spremembe",
+    "changes": "Če se to obvestilo spremeni, se spremeni tudi datum na vrhu strani."
   },
   "notFound": {
     "heading": "Strani ni mogoče najti",

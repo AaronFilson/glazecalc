@@ -1,4 +1,4 @@
-You are writing the style sheet and glossary for translating Glazecalc, a free, open source glaze chemistry web app for potters (repo C:\Users\bellows\gh\glazecalc, branch {BRANCH}), into {LANGUAGE} ({CODE}), for potters in {COUNTRY}. Translators (Claude agents) will follow your page for every message and guide, so a potter meets one {LANGUAGE} word for one thing everywhere. Nobody else checks it before they start, so where you are unsure, say so in the Notes.
+You are writing the style sheet and glossary for translating Glazecalc, a free, open source glaze chemistry web app for potters (repo {REPO}, branch {BRANCH}; every path below is under it), into {LANGUAGE} ({CODE}), for potters in {COUNTRY}. Translators (Claude agents) will follow your page for every message and guide, so a potter meets one {LANGUAGE} word for one thing everywhere. Nobody else checks it before they start, so where you are unsure, say so in the Notes.
 
 Ground rules:
 
@@ -18,10 +18,10 @@ Research (the point of this page): the terms come from sources in {LANGUAGE}, ne
 
 - shops that sell glaze materials, kilns and cones to potters in {COUNTRY}, in {LANGUAGE}: their category names and product names (what is printed on the bag). {SHOPS}
 - {LANGUAGE} ceramics textbooks, art-school and university course material, potters' guilds and studio pages, {LANGUAGE} Wikipedia's ceramics articles;
-- kiln makers' manuals in {LANGUAGE} (Nabertherm publishes many languages; also Rohde, Uhlig);
-- the {LANGUAGE} texts of EU law on EUR-Lex: Regulation (EC) No 1272/2008 (CLP: hazard words, H-statements, "safety data sheet"), Directive 84/500/EEC (ceramic articles in contact with food: its name and its categories of articles, which the food-contact text must follow), Directive 2004/37/EC (carcinogens; respirable crystalline silica), and the national law on chemical agents at work and its silica limit;
+- {KILNS}
+- {LAW}
 - the national bodies: the labour inspectorate or occupational health institute (dust, respirators), the poison centre;
-- IATE (iate.europa.eu) and the national term bank of {LANGUAGE} ({TERMBANK}), and the Microsoft {LANGUAGE} style guide for software conventions (register, buttons, punctuation, quotation marks).
+- {TERMS}
 
 Cite each source once in "Main sources" with its link and the day you read it (today), and by short name in the Notes. Where sources disagree, give the choice and why. Where you found nothing in {LANGUAGE}, say "No source" and give your best term: those rows are for a native potter to check. Note any source you could not reach. If web search runs out, keep going from what you have and say which rows rest on less.
 
@@ -40,7 +40,7 @@ What the glossaries of the languages before yours got wrong, or had to settle la
 - Placeholders ({name}, {region}, {library}) and trade names cannot take case endings. Say how to build a sentence around them (a generic noun in the needed case beside them), with examples. {region} is a country's name in the page's language, from the browser's own country names.
 - Quotation marks, dashes, the space rules, and capitalisation of titles and headings.
 - Pitfalls: false friends and words with two senses in {LANGUAGE} pottery (glaze vs enamel vs varnish, frit vs flux, kiln vs oven, earthenware vs faience, whiting vs lime, the material vs the oxide, a respirator vs a ventilator), each with the choice.
-- "## 3. Never translated": formulas, cone numbers, trade names and codes, units.
+- "## 3. Never translated": formulas, cone numbers, trade names and codes, units.{NOTES}
 
 Write the page in English, with the {LANGUAGE} terms, as the finished pages are. Every row of terms.md must have a row; check this with a short Node script that compares the English column of your tables with the terms.md rows, and fix any gap. Then run `npx prettier --write docs/translations/{CODE}.md`.
 

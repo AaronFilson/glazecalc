@@ -1,0 +1,88 @@
+{
+  "home": {
+    "title": "Atölye defteriniz",
+    "signedInAs": "Oturum açan hesap: {email}.",
+    "trying": "Glazecalc uygulamasını {name} adıyla deniyorsunuz. Bir reçeteyle başlayın.",
+    "welcomeBack": "Kaldığınız yerden devam edin.",
+    "sections": {
+      "recipe": {
+        "title": "Reçeteler",
+        "text": "Hammaddelerden ve miktarlardan bir sır oluşturun, Seger formülünü görün ve kaydedin."
+      },
+      "material": {
+        "title": "Hammaddeler",
+        "text": "Kimyasal bir formülden veya tedarikçinin analizinden kendi hammaddelerinizi ekleyin."
+      },
+      "additive": {
+        "title": "Katkılar ve renklendiriciler",
+        "text": "Temel sırrın üzerine eklediğiniz renklendiricileri ve opaklaştırıcıları saklayın."
+      },
+      "firing": {
+        "title": "Pişirim kayıtları",
+        "text": "Her pişirim için saatleri, sıcaklıkları ve piramitleri kaydedin."
+      },
+      "notes": {
+        "title": "Notlar",
+        "text": "Test sonuçlarını ve hatırlamaya değer başka her şeyi saklayın."
+      },
+      "advice": {
+        "title": "Sır tavsiyeleri",
+        "text": "Karıştırma, sırlama ve pişirim üzerine ipuçları ve kendi tavsiyeleriniz."
+      },
+      "guides": {
+        "title": "Rehberler",
+        "text": "Sırrın ne olduğundan pişirilmesine kadar, yol boyunca herkesi güvende tutarak."
+      }
+    },
+    "newHere": "Seger formülleri size yeni mi? <advice>Tavsiyeler sayfası</advice> temel bilgileri açıklar, <about>hakkında sayfası</about> da Glazecalc uygulamasının nasıl çalıştığını anlatır."
+  },
+  "firing": {
+    "title": "Pişirim kayıtları",
+    "lead": "Her pişirimi kaydedin: saatler, sıcaklıklar, piramitler ve fırın notları.",
+    "titleLabel": "Pişirimin adı:",
+    "kiln": "Fırın:",
+    "date": "Pişirim tarihi:",
+    "notes": "Pişirim notları:",
+    "fieldSelect": "Pişirim kaydına eklenecek alanları seçin:",
+    "addField": "Alanı ekle",
+    "included": "Eklediğiniz alanlar:",
+    "fieldName": "Alan adı: {name}",
+    "moveLeft": "Alanı sola taşı",
+    "moveRight": "Alanı sağa taşı",
+    "removeField": "Alanı kaldır",
+    "addRow": "Pişirim tablosuna satır ekle",
+    "recordHeading": "Pişirimi kaydet",
+    "rowActions": "Satır işlemleri",
+    "cell": "{field}, satır {row}",
+    "removeRow": "Satırı kaldır",
+    "save": "Kaydet",
+    "storedHeading": "Kayıtlı pişirimlerim:",
+    "stored": "Ad: {title}, Fırın: {kiln}, Tarih: {date}",
+    "storedNotes": "Notlar: {notes}",
+    "titleMissing": "Pişirime bir ad verin.",
+    "fieldsMissing": "Kaydedilecek en az bir alan ekleyin, örneğin {example}.",
+    "chooseField": "Eklenecek bir alan seçin, sonra Alanı ekle düğmesine basın.",
+    "fetchFailed": "Pişirim kayıtlarının bilgileri alınırken bir hata oluştu.",
+    "saved": "Pişirim kaydı sunucuya başarıyla eklendi.",
+    "saveFailed": "Hata: sunucuya gönderilen istek başarısız oldu."
+  },
+  "notes": {
+    "title": "Notlar",
+    "lead": "Sırlarınızla ilgili hatırlamaya değer başka her şey.",
+    "intro": "Burası notlar sayfası. Burada not alıp kaydedebilirsiniz.",
+    "titleLabel": "Başlık:",
+    "content": "Notunuz:",
+    "save": "Kaydet",
+    "mineHeading": "Kayıtlı notlarım:",
+    "titleMissing": "Nota bir başlık verin.",
+    "contentMissing": "Notu yazın.",
+    "untitled": "Başlıksız not",
+    "fetchFailed": "Not bilgileri alınırken bir hata oluştu.",
+    "saved": "Not sunucuya başarıyla eklendi.",
+    "saveFailed": "Hata: sunucuya gönderilen istek başarısız oldu."
+  },
+  "trash": {
+    "title": "Çöp kutusu",
+    "comingSoon": "Çöp kutusu özelliği Glazecalc uygulamasının bir sonraki sürümünde gelecek. O zamana kadar silme / kaldırma işlemlerini dikkatle kullanın: silinen bilgi kaybolur."
+  }
+}

@@ -4,9 +4,12 @@ const { signUpAndSignIn } = require('./helpers');
 
 // Every page in every language offered (docs/i18n-plan.md, the layout gate):
 // in the language, with the translation notice, and laid out at a phone's
-// width without scrolling sideways, however long the language's words.
+// width without scrolling sideways, however long the language's words. The
+// Japanese pseudo-locale too: Japanese's fonts, and lines with no spaces to
+// break at (client/app/i18n/pseudo.ts).
 
 const TRANSLATED = LIVE_LANGUAGES.filter((code) => code !== 'en');
+const PSEUDO = ['ja-XC'];
 
 const VISITOR_PAGES = [
   '/',
@@ -54,14 +57,14 @@ test.describe('pages in each language offered', () => {
   test.skip(!TRANSLATED.length, 'Only English is offered.');
   test.use({ viewport: { width: 360, height: 740 } });
 
-  for (const code of TRANSLATED) {
+  for (const code of [...TRANSLATED, ...PSEUDO]) {
     const name = LANGUAGES.find((language) => language.code === code).english;
 
     test(`${name}: every visitor page, at a phone's width`, async ({ page }) => {
       test.setTimeout(120_000);
       for (const path of VISITOR_PAGES) await visit(page, code, path);
       // The notice says the page was translated by AI.
-      await expect(page.locator('gc-translation-notice aside')).toBeVisible();
+      if (!PSEUDO.includes(code)) await expect(page.locator('gc-translation-notice aside')).toBeVisible();
     });
 
     test(`${name}: every page of the notebook, at a phone's width`, async ({ page }) => {

@@ -278,6 +278,97 @@ Label: Úprava ďalšieho výpalu
 
 :::
 
+:::sk
+
+## Výpal podľa kužeľov SK {#sk-cones}
+
+Kužele SK sú pyrometrické kužele vyrobené podľa japonskej normy JIS R 8101, ktoré v Japonsku predávajú obchodníci, ako je Yuko Trading (有恒商事). Ako každý kužeľ, aj kužeľ SK meria tepelnú prácu{{en: heatwork}}, nie len teplotu: zmäkne a ohne sa, keď výrobky dostali dosť tepla, a vy odčítate, ako ďaleko sa ohol. Kontrolné kužele{{en: witness cone}}, odčítanie toho, ako ďaleko sa kužeľ ohol, a výdrže{{en: hold}} pri ňom fungujú rovnako ako pri každom kuželi. Táto časť pri každom kuželi uvádza jeho systém a nikdy neprevádza číslo SK na číslo iného systému: čísla rôznych radov kužeľov nie sú zameniteľné.
+
+> [!NOTE]
+> Pred číslo vždy píšte „SK“. Mnohé staršie japonské recepty uvádzajú len „SK 8“ alebo „SK 9“ a nehovoria, čí kužeľ to je. Kjótske kužele a kužele SK podľa JIS majú rovnaké čísla, ale ohýbajú sa pri rôznych teplotách (pozri Kjótske kužele nižšie).
+
+### Veľké kužele
+
+Norma pozná dve veľkosti. Veľké kužele (大型コーン) sa „používajú hlavne na meranie stupňa výpalu“ (焼度測定), a to je to, čo keramikár potrebuje. Malé kužele (SK 26 až SK 42, na hornom konci radu) sa „používajú hlavne na skúšky žiaruvzdornosti“ a tu sa nimi nezaoberáme. Tabuľka nižšie uvádza veľké kužele od SK 022 po SK 20.
+
+Čísla tu idú od SK 022, najchladnejšieho, po SK 20. Medzi SK 015 a SK 6 majú vytlačené čísla písmeno „a“ (SK 015a, SK 6a); píšte ich tak, ako sú vytlačené.
+
+### Osadenie veľkých kužeľov
+
+Každý veľký kužeľ zasaďte do držiaka alebo do hrudky hliny, so sklonom k svojej ohybovej strane. Ako pri každom kuželi, výšku aj sklon dodržiavajte od výpalu k výpalu rovnaké, pretože rozdiel v ktoromkoľvek z nich mení, ako ďaleko sa kužeľ ohne. Tri kužele sady{{en: cone pack}} (pozri nižšie) postavte spolu hlboko v peci blízko stredu vsádzky, kde dostávajú rovnaké teplo ako výrobky, no tam, kde ich uvidíte cez kontrolný otvor; pred zatvorením pece overte, či vidíte všetky tri.
+
+### Vodiaci, cieľový a poistný kužeľ
+
+Kužele sa predávajú a stavajú po troch: vodiaci kužeľ, cieľový kužeľ a poistný kužeľ. Ako cieľový vezmite číslo SK, ktoré uvádza váš recept alebo hlina, ako vodiaci najbližší chladnejší kužeľ (o riadok vyššie v tabuľke) a ako poistný najbližší teplejší. Keď sa vodiaci kužeľ začne ohýbať, koniec je blízko; keď sa ohne poistný kužeľ, výpal zašiel príliš ďaleko.
+
+### Tabuľka kužeľov SK
+
+Table: Veľké kužele SK (JIS R 8101): menovitá teplota (JIS) každého z nich
+Label: Tabuľka kužeľov SK
+
+| Kužeľ   | Menovitá teplota (JIS) |
+| ------- | ---------------------: |
+| SK 022  |    {{1112 °F; 600 °C}} |
+| SK 021  |    {{1202 °F; 650 °C}} |
+| SK 020  |    {{1238 °F; 670 °C}} |
+| SK 019  |    {{1274 °F; 690 °C}} |
+| SK 018  |    {{1310 °F; 710 °C}} |
+| SK 017  |    {{1346 °F; 730 °C}} |
+| SK 016  |    {{1382 °F; 750 °C}} |
+| SK 015a |    {{1454 °F; 790 °C}} |
+| SK 014a |    {{1499 °F; 815 °C}} |
+| SK 013a |    {{1535 °F; 835 °C}} |
+| SK 012a |    {{1571 °F; 855 °C}} |
+| SK 011a |    {{1616 °F; 880 °C}} |
+| SK 010a |    {{1652 °F; 900 °C}} |
+| SK 09a  |    {{1688 °F; 920 °C}} |
+| SK 08a  |    {{1724 °F; 940 °C}} |
+| SK 07a  |    {{1760 °F; 960 °C}} |
+| SK 06a  |    {{1796 °F; 980 °C}} |
+| SK 05a  |   {{1832 °F; 1000 °C}} |
+| SK 04a  |   {{1868 °F; 1020 °C}} |
+| SK 03a  |   {{1904 °F; 1040 °C}} |
+| SK 02a  |   {{1940 °F; 1060 °C}} |
+| SK 01a  |   {{1976 °F; 1080 °C}} |
+| SK 1a   |   {{2012 °F; 1100 °C}} |
+| SK 2a   |   {{2048 °F; 1120 °C}} |
+| SK 3a   |   {{2084 °F; 1140 °C}} |
+| SK 4a   |   {{2120 °F; 1160 °C}} |
+| SK 5a   |   {{2156 °F; 1180 °C}} |
+| SK 6a   |   {{2192 °F; 1200 °C}} |
+| SK 7    |   {{2246 °F; 1230 °C}} |
+| SK 8    |   {{2282 °F; 1250 °C}} |
+| SK 9    |   {{2336 °F; 1280 °C}} |
+| SK 10   |   {{2372 °F; 1300 °C}} |
+| SK 11   |   {{2408 °F; 1320 °C}} |
+| SK 12   |   {{2462 °F; 1350 °C}} |
+| SK 13   |   {{2516 °F; 1380 °C}} |
+| SK 14   |   {{2570 °F; 1410 °C}} |
+| SK 15   |   {{2615 °F; 1435 °C}} |
+| SK 16   |   {{2660 °F; 1460 °C}} |
+| SK 17   |   {{2696 °F; 1480 °C}} |
+| SK 18   |   {{2732 °F; 1500 °C}} |
+| SK 19   |   {{2768 °F; 1520 °C}} |
+| SK 20   |   {{2786 °F; 1530 °C}} |
+
+Každý údaj je menovitý (JIS): teplota, ktorú pre kužeľ udáva norma, ako je vytlačená v tabuľke firmy Yuko Trading. Tabuľka neuvádza rýchlosť ohrevu. Norma udáva referenčné teploty. Pri rýchlosti bežnej u keramikárov, asi 100 °C/h, kjótsky mestský inštitút nameral, že sa jeho vlastné kjótske kužele ohýbajú o 40–70 °C nižšie, ako je údaj JIS pre rovnaké číslo; pre kužele SK podľa JIS sme také merania nenašli. Postavte kontrolný kužeľ a porovnajte.
+
+### Kjótske kužele
+
+Kjótske kužele (京都ゼーゲル), ktoré vyrábal kjótsky mestský inštitút, sa už nevyrábajú: podľa správ v tlači inštitút ukončil výrobu na konci fiškálneho roka 2009. Majú rovnaké čísla ako kužele SK podľa JIS, ale ohýbajú sa pri nižšej teplote: kjótsky kužeľ sa väčšinou ohne približne pri teplote kužeľa SK podľa JIS o dve čísla nižšieho. Recept z Kjóta, ktorý uvádza „SK 8“, môže myslieť kjótsky kužeľ. Inštitút zverejnil rady pre keramikárov, ktorí prechádzajú z kjótskych kužeľov na Ortonove, a namiesto svojho kjótskeho SK 12 používa Ortonov kužeľ 10; je to voľba inštitútu podľa jeho vlastných meraní pri 100 °C/h a neplatí pre žiadny iný kužeľ.
+
+### Ortonove kužele predávané v Japonsku
+
+Samostojné Ortonove kužele sa v Japonsku predávajú pod názvom 立つゼーゲル („stojaci Seger“), pretože nepotrebujú držiak ani stojan. Sú to Ortonove kužele s Ortonovými číslami a Ortonovou tabuľkou (pozri vyššie): vypaľujte na ne len podľa ich Ortonovho čísla a kužele SK a Ortonove kužele majte v oddelených sadách, nikdy nie v jednej.
+
+### Zdroje ku kužeľom SK
+
+- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (tabuľka SK, overené 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
+- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (platná, znovu potvrdená 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [Kyoto Municipal Institute of Industrial Technology and Culture: na čo si dať pozor pri prechode z kjótskych kužeľov na Ortonove](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
+
+:::
+
 ## Prežah {#bisque}
 
 **Prežah**{{en: bisque}} (v britskej angličtine biscuit) je prvý výpal na nižšiu teplotu, ktorý z vysušenej hliny urobí tvrdé, pórovité výrobky pripravené na glazovanie. Zvyčajne sa vypaľuje na kužeľ{{en: cone}} 06 – 04, teda {{1828–1945 °F; 998–1063 °C}} podľa Ortonovej tabuľky; britskí keramikári často vypaľujú na približne {{1000 °C; 1832 °F}}, blízko kužeľa 06. Prežahnutý črep má zostať pórovitý, „spravidla viac ako 15%“ (Digitalfire), aby z glazúry{{en: glaze}} nasával vodu. Príliš mäkký prežah naberie príliš hrubú vrstvu glazúry, ktorá potom popraská a **stiahne sa**{{en: crawls}} (zbehne sa do ostrovčekov a nechá holú hlinu). Nedopálený prežah navyše „sa počas ostrého výpalu{{en: glaze firing}} ďalej zmršťuje“, čo pokazí zladenie glazúry s črepom{{en: glaze fit}}. Nakladanie je zhovievavé: kusy sa môžu dotýkať, pokrievky sa môžu vypaľovať na svojich nádobách a misky sa kladú okrajom na okraj, nie jedna do druhej.

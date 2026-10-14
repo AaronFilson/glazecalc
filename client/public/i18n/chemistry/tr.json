@@ -1,0 +1,23 @@
+{
+  "unknown-compound": "Formülde bilinmeyen bileşik: {compound}",
+  "unknown-oxide": "{material} adlı hammaddede bilinmeyen oksit: {oxide}",
+  "invalid-oxide-amount": "{material} adlı hammaddede {oxide} için geçersiz miktar",
+  "loi-range": "{material} adlı hammaddenin kızdırma kaybı en az 0 ve 100’den az olmalıdır",
+  "no-oxides": "{material} adlı hammaddede hiç oksit yok",
+  "no-name": "Hammaddenin bir adı olmalıdır",
+  "no-analysis": "{material} adlı hammadde için bir formül veya analiz gerekir",
+  "recipe-shape": "Reçete, '{ material, amount }' öğelerinden oluşan bir dizi veya miktarlardan oluşan bir eşleme olmalıdır",
+  "invalid-amount": "{material} adlı hammadde için geçersiz miktar",
+  "missing-material": "Reçete satırında hammadde eksik",
+  "unknown-material": "Bilinmeyen hammadde: {material}",
+  "no-flux": "Reçetede hiç ergitici oksit yok, bu yüzden Seger formülü (UMF) tanımsız",
+  "no-target": "Hedefte ulaşılacak hiç oksit yok",
+  "no-materials": "Hesaplanacak hammadde yok",
+  "no-temperature": "Bor miktarını belirlemek için pişirim sıcaklığı gerekir",
+  "no-flux-to-rebuild": "Sırda yeniden kurulacak ergitici yok",
+  "unknown-element": "{formula} formülünde bilinmeyen element: {element}",
+  "bad-formula": "Formül çözümlenemedi: {formula}",
+  "analysis-total": "{material} adlı hammaddenin analizi, kızdırma kaybı dahil toplam %{total}; yaklaşık %100 bekleniyordu.",
+  "stored-equivalent": "{material} adlı hammaddenin kayıtlı eşdeğer ağırlığı, formülü ve kızdırma kaybıyla uyuşmuyor; bunun yerine formül ve kızdırma kaybı kullanıldı.",
+  "trace-flux": "Reçetede ergitici oksitlerden yalnızca eser miktarda var, bu yüzden Seger formülü (UMF) anlamlı değil."
+}

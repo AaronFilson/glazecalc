@@ -3,7 +3,10 @@
     "cones": "Tento návod je zobrazen pro výpal na žároměrky, jak máte v nastavení.",
     "temperature": "Tento návod je zobrazen pro výpal podle teploty, jak máte v nastavení.",
     "showTemperature": "Zobrazit pro výpal podle teploty",
-    "showCones": "Zobrazit pro výpal na žároměrky"
+    "showCones": "Zobrazit pro výpal na žároměrky",
+    "sk": "Tento návod je zobrazen pro výpal na žároměrky SK (JIS R 8101), jak máte v nastavení.",
+    "showSk": "Zobrazit pro výpal na žároměrky SK (JIS R 8101)",
+    "showOrton": "Zobrazit pro výpal na Ortonovy žároměrky"
   },
   "notTranslated": "Tento návod zatím není přeložený, proto se zobrazuje v angličtině.",
   "sectionInEnglish": "Tato část se od překladu změnila, proto se zobrazuje v angličtině, dokud nebude její překlad aktualizován.",
@@ -86,19 +89,32 @@
     "limitIn": "Limit v zemi",
     "label": "Limit pro oxid křemičitý v zemi {region}",
     "caption": "Limit na pracovišti pro respirabilní krystalický oxid křemičitý v zemi {region}, průměr za 8 hodin (ověřeno {date})",
+    "captionControl": "Měřítko pro respirabilní krystalický oxid křemičitý v ovzduší pracoviště v zemi {region} (ověřeno {date})",
     "both": "Křemen a cristobalit",
     "quartz": "Křemen",
     "cristobalite": "Cristobalit",
     "actionLevel": "Akční hodnota",
+    "formula": "Kontrolní koncentrace, kde Q je obsah volného oxidu křemičitého v prachu v %",
+    "formulaValue": "{numerator} / ({factor}Q + 1) mg/m³",
+    "formulaLimit": "Limit pro respirabilní křemen, kde Q je obsah oxidu křemičitého (SiO₂) v prachu v %",
+    "formulaQ": "{numerator} / (Q + {offset}) mg/m³",
+    "formulaFull": "{numerator} / ({factor}Q + {offset}) mg/m³",
+    "quartzAll": "Křemen, pro prach, který je celý z křemene",
+    "cristobaliteAll": "Cristobalit, pro prach, který je celý z cristobalitu",
+    "allFree": "Kontrolní koncentrace pro prach, který je celý z volného oxidu křemičitého",
+    "recommended": "Doporučuje {abbr}",
     "value": "{value} mg/m³",
     "kind": {
       "binding": "Závazný limit.",
       "indicative": "Orientační limit: vodítko, ne zákonná horní hranice.",
-      "assessment": "Hodnoticí kritérium, ne závazný limit."
+      "assessment": "Hodnoticí kritérium, ne závazný limit.",
+      "control": "Kontrolní koncentrace (管理濃度): měřítko pro posouzení ovzduší pracoviště podle měření na místě, ne limit pro to, co vdechuje jedna osoba."
     },
     "setBy": "Tento limit stanoví <link>{law}</link>.",
     "lowerThanEu": "Je nižší než závazný limit EU ve výši {value} mg/m³.",
     "sameAsEu": "Je stejný jako závazný limit EU.",
+    "recommendedBy": "{abbr} ({by}) tuto hodnotu doporučuje v dokumentu <link>{title}</link>. Není to zákon.",
+    "respirators": "Protiprachové respirátory se zde prodávají podle tříd: {everyday} na prach z glazur, nebo {higher} pro vyšší ochranu (<link>oficiální třídy</link>).",
     "unknown": "Národní limit v zemi {region} se nám nepodařilo ověřit. Závazný limit EU ve výši {value} mg/m³ platí v každém členském státě.",
     "noData": "Limit v zemi {region} jsme zatím neověřili.",
     "agency": "Národní úřad pro bezpečnost práce: <link>{name}</link>.",
@@ -126,7 +142,12 @@
       "auSmall": "Šálky, hrnky, džbány, misky, čajové konvice a jiné stolní nádobí pod 1100 mL",
       "auLarge": "Totéž, od 1100 mL",
       "auPlates": "Talíře, podšálky a podobné stolní nádobí",
-      "auCooking": "Kuchyňské nádobí"
+      "auCooking": "Kuchyňské nádobí",
+      "jpFlat": "Předměty, které nelze plnit, nebo s hloubkou menší než 2,5 cm",
+      "jpSmall": "Ostatní předměty pod 1,1 L, ne k vaření",
+      "jpLarge": "Ostatní předměty od 1,1 L do méně než 3 L, ne k vaření",
+      "jpStorage": "Ostatní předměty od 3 L výše, ne k vaření",
+      "jpCooking": "Kuchyňské nádobí s hloubkou 2,5 cm nebo více"
     },
     "judged": {
       "average": "průměr ze 6 kusů",
@@ -135,6 +156,7 @@
     "euRules": "Platí zde pravidla EU.",
     "law": "Tyto limity stanoví <link>{law}</link>.",
     "inForce": "Platí od {date}.",
+    "atMost": "Kus vyhoví, pokud neuvolní víc, než je limit: zákon říká „nejvýše“.",
     "unknown": "Pravidla v zemi {region} jsme zatím neověřili.",
     "choosePrompt": "Vyberte svou zemi a zobrazí se její pravidla."
   },

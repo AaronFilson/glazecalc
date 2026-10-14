@@ -3,7 +3,10 @@
     "cones": "Este guia é mostrado para cozedura por cones, conforme definido em «Definições».",
     "temperature": "Este guia é mostrado para cozedura por temperatura, conforme definido em «Definições».",
     "showTemperature": "Mostrar para cozedura por temperatura",
-    "showCones": "Mostrar para cozedura por cones"
+    "showCones": "Mostrar para cozedura por cones",
+    "sk": "Este guia é mostrado para cozedura por cones SK (JIS R 8101), conforme definido em «Definições».",
+    "showSk": "Mostrar para cozedura por cones SK (JIS R 8101)",
+    "showOrton": "Mostrar para cozedura por cones Orton"
   },
   "notTranslated": "Este guia ainda não está traduzido, por isso é mostrado em inglês.",
   "sectionInEnglish": "Esta secção mudou desde que foi traduzida, por isso é mostrada em inglês até a tradução ser atualizada.",
@@ -86,19 +89,32 @@
     "limitIn": "Valor-limite em",
     "label": "Valor-limite para a sílica: {region}",
     "caption": "{region}: valor-limite de exposição profissional à sílica cristalina respirável, média de 8 horas (verificado em {date})",
+    "captionControl": "{region}: o critério de referência para a sílica cristalina respirável no ar de uma zona de trabalho (verificado em {date})",
     "both": "Quartzo e cristobalite",
     "quartz": "Quartzo",
     "cristobalite": "Cristobalite",
     "actionLevel": "Nível de ação",
+    "formula": "Concentração de controlo, em que Q é a sílica livre na poeira, em %",
+    "formulaValue": "{numerator} / ({factor}Q + 1) mg/m³",
+    "formulaLimit": "Valor-limite para o quartzo respirável, em que Q é a sílica (SiO₂) na poeira, em %",
+    "formulaQ": "{numerator} / (Q + {offset}) mg/m³",
+    "formulaFull": "{numerator} / ({factor}Q + {offset}) mg/m³",
+    "quartzAll": "Quartzo, para poeira que é só quartzo",
+    "cristobaliteAll": "Cristobalite, para poeira que é só cristobalite",
+    "allFree": "Concentração de controlo para poeira que é só sílica livre",
+    "recommended": "Recomendado por {abbr}",
     "value": "{value} mg/m³",
     "kind": {
       "binding": "Um valor-limite vinculativo.",
       "indicative": "Um valor-limite indicativo: um valor de referência, não um teto legal.",
-      "assessment": "Um critério de avaliação, não um valor-limite vinculativo."
+      "assessment": "Um critério de avaliação, não um valor-limite vinculativo.",
+      "control": "Uma concentração de controlo (管理濃度): o critério de referência para avaliar o ar de uma zona de trabalho a partir de medições aí feitas, não um valor-limite para o que uma pessoa respira."
     },
     "setBy": "Fixado por <link>{law}</link>.",
     "lowerThanEu": "Inferior ao valor-limite vinculativo da UE, de {value} mg/m³.",
     "sameAsEu": "Igual ao valor-limite vinculativo da UE.",
+    "recommendedBy": "{abbr} ({by}) recomenda este valor no seu <link>{title}</link>. Não é lei.",
+    "respirators": "Aqui, as máscaras contra poeiras vendem-se por classe: {everyday} para a poeira de vidrados, ou {higher} para mais proteção (<link>as classes oficiais</link>).",
     "unknown": "{region}: não conseguimos confirmar o valor-limite nacional. O valor-limite vinculativo da UE, de {value} mg/m³, aplica-se em todos os Estados-Membros.",
     "noData": "{region}: ainda não confirmámos o valor-limite.",
     "agency": "O organismo nacional de segurança no trabalho: <link>{name}</link>.",
@@ -126,7 +142,12 @@
       "auSmall": "Chávenas, canecas, jarros, taças, bules e outra loiça de mesa com menos de 1100 mL",
       "auLarge": "As mesmas peças, com 1100 mL ou mais",
       "auPlates": "Pratos, pires e loiça de mesa semelhante",
-      "auCooking": "Utensílios para cozinhar"
+      "auCooking": "Utensílios para cozinhar",
+      "jpFlat": "Peças que não podem ser enchidas, ou com menos de 2,5 cm de profundidade",
+      "jpSmall": "Outras peças com menos de 1,1 L, não destinadas a cozinhar",
+      "jpLarge": "Outras peças de 1,1 L a menos de 3 L, não destinadas a cozinhar",
+      "jpStorage": "Outras peças de 3 L ou mais, não destinadas a cozinhar",
+      "jpCooking": "Utensílios para cozinhar, com 2,5 cm de profundidade ou mais"
     },
     "judged": {
       "average": "média de 6 peças",
@@ -135,6 +156,7 @@
     "euRules": "Aplicam-se aqui as regras da UE.",
     "law": "Limites fixados por <link>{law}</link>.",
     "inForce": "Em vigor a partir de {date}.",
+    "atMost": "Uma peça é aprovada se não libertar mais do que o limite: a lei diz «no máximo».",
     "unknown": "{region}: ainda não confirmámos as regras.",
     "choosePrompt": "Escolha o seu país para ver as respetivas regras."
   },

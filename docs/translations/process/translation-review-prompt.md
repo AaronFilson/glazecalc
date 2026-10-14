@@ -1,4 +1,4 @@
-You are the independent second pass on the {LANGUAGE} ({CODE}) translation of part of Glazecalc, a free, open source glaze chemistry web app for potters (repo C:\Users\bellows\gh\glazecalc, branch {BRANCH}). Another translator made it from the English; you did not. Readers are potters, many of them beginners, in {COUNTRY}.
+You are the independent second pass on the {LANGUAGE} ({CODE}) translation of part of Glazecalc, a free, open source glaze chemistry web app for potters (repo {REPO}, branch {BRANCH}; every path below is under it). Another translator made it from the English; you did not. Readers are potters, many of them beginners, in {COUNTRY}.
 
 Ground rules:
 
@@ -38,7 +38,7 @@ Read the English and the translation side by side, every segment (a message, a p
    - "not fully" is not "not at all": "may not melt fully" must not become "may not melt at all". Check where the negation falls in every "not fully", "not completely", "not always".
    - Every negation survives: a wave-4 safety guide lost the "never" in "never use compressed air", so a prohibition read as an instruction. Check each never, not, no, don't and without in your English, and each comparison of two things (the less toxic of two materials must not read as the other).
    - "HSE" in the guides is the UK's Health and Safety Executive. Where a country has its own HSE (Ireland's Health Service Executive), name it as the UK's at its first mention in each section.
-   - The glossary was built from suppliers' catalogues, not by potters, and lists its uncertain choices. Where a glossary term reads wrong to you in context, keep the translation consistent with the glossary unless it is plainly wrong, and say so in your report; do not edit the glossary.
+   - The glossary was built from suppliers' catalogues, not by potters, and lists its uncertain choices. Where a glossary term reads wrong to you in context, keep the translation consistent with the glossary unless it is plainly wrong, and say so in your report; do not edit the glossary.{NOTES}
 10. **Mechanics.** Placeholders, tags, plural forms, `{{…}}` values, ids and marks as the README says.
 
 Across files: the app names the guides (`titles` in client/public/i18n/<code>.json, `list` in guides/<code>.json) and links to the library's buttons by name; make those match the translated guides' front-matter titles (client/public/i18n/guides/<guide>/<code>.md) and the translated buttons, where they are among your files.

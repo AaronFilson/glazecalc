@@ -49,7 +49,7 @@ export class LocaleService {
   readonly temperature = computed<TemperatureScale>(
     () => this.preferences.temperature() || this.regionInfo()?.temperature || 'C'
   );
-  /** Orton cones or temperature alone: the one chosen, or the region's. */
+  /** Orton cones, SK cones or temperature alone: the one chosen, or the region's. */
   readonly cones = computed<ConeSystem>(() => this.preferences.cones() || this.regionInfo()?.cones || 'orton');
   /** Glaze density as specific gravity, Baumé or pint weight: the one chosen, or the region's. */
   readonly density = computed<Density>(() => this.preferences.density() || this.regionInfo()?.density || 'sg');

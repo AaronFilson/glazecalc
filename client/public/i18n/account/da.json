@@ -11,10 +11,13 @@
     "password": "Adgangskode",
     "passwordHint": "Mindst 8 tegn.",
     "confirmation": "Bekræft adgangskode",
+    "keepSignedIn": "Forbliv logget ind på denne enhed",
     "passwordMissing": "Angiv adgangskoden.",
     "createAccount": "Opret konto",
     "signIn": "Log ind",
     "haveAccount": "Har du allerede en konto? <signin>Log ind</signin>",
+    "privacy": "E-mailadressen og det, du gemmer, bruges kun til at drive kontoen og opbevares hos Amazon Web Services i USA. <privacy>Sådan håndterer Glazecalc dine data</privacy>",
+    "dataNotice": "Glazecalc er et gratis open source-projekt, og konti opbevares på servere i USA. Du kan læse vejledningerne og prøve beregneren uden en konto eller køre din egen kopi. Det er din egen beslutning, om du vil oprette en konto her, og projektet påtager sig intet ansvar for den. <where>Hvor kontoen opbevares, og dit valg</where>",
     "forgot": "Glemt adgangskoden? Nulstil den",
     "newHere": "Ny her? <signup>Opret en gratis konto</signup>",
     "signUpFailed": "Fejl: Kontoen kunne ikke oprettes.",
@@ -61,7 +64,29 @@
     "deletePassword": "Adgangskode til bekræftelse",
     "deletePasswordMissing": "Angiv adgangskoden for at bekræfte.",
     "delete": "Slet min konto",
-    "deleteFailed": "Fejl: Kontoen kunne ikke slettes. Prøv igen."
+    "deleteFailed": "Fejl: Kontoen kunne ikke slettes. Prøv igen.",
+    "unverifiedHeading": "Bekræft e-mailadressen",
+    "unverifiedText": "Vi sendte et link til {email}, da kontoen blev oprettet. Åbn det for at bekræfte, at adressen er din. Indtil da sender vi kun mail til den, når du beder om det, fx ved nulstilling af adgangskoden.",
+    "resend": "Send linket igen",
+    "resendFailed": "Fejl: Linket kunne ikke sendes. Prøv igen.",
+    "emailHeading": "Skift e-mailadressen",
+    "emailText": "Vi sender et link til den nye adresse, og e-mailadressen ændres, når du åbner det. Vi giver også den nuværende adresse besked. Alle enheder, der er logget ind på kontoen, bliver logget ud.",
+    "newEmail": "Ny e-mailadresse",
+    "emailPassword": "Adgangskode til bekræftelse",
+    "emailSend": "Send linket",
+    "emailFailed": "Fejl: Linket kunne ikke sendes. Prøv igen.",
+    "signOutHeading": "Log ud overalt",
+    "signOutText": "Logger dig ud på alle enheder, også denne. Brug det, hvis du har mistet en enhed eller tror, at en anden har dine loginoplysninger.",
+    "signOutButton": "Log ud overalt",
+    "signOutFailed": "Fejl: Udlogningen mislykkedes. Prøv igen."
+  },
+  "export": {
+    "heading": "Download mine data",
+    "text": "Gem en kopi af alt, hvad kontoen indeholder, som én fil: oplysningerne om dig, indstillinger, råvarer på lager, opskrifter, råvarer, tilsætninger, noter, brændingsjournaler, råd og papirkurven. Adgangskoden er ikke med. Opbevar filen et privat sted, for den indeholder alt, hvad du har gemt.",
+    "json": "Download alt (JSON)",
+    "csvText": "Eller gem et regneark med kun opskrifterne eller kun dine egne råvarer, som kan åbnes i Excel, Numbers eller Sheets.",
+    "recipes": "Opskrifter (CSV)",
+    "materials": "Råvarer (CSV)"
   },
   "settings": {
     "heading": "Indstillinger",
@@ -126,11 +151,16 @@
         "example": "kegle 04, kegle 6",
         "saved": "Gemt: brænding efter Ortonkegler."
       },
+      "sk": {
+        "label": "Efter SK-kegler (JIS R 8101)",
+        "example": "SK 4a, SK 8",
+        "saved": "Gemt: brænding efter SK-kegler."
+      },
       "temperature": {
         "label": "Efter temperatur, som i en ovnstyrings program",
         "saved": "Gemt: brænding efter temperatur."
       },
-      "help": "Indtil der er truffet et valg, følger indstillingen regionen: Ortonkegler i USA, Storbritannien, Irland, Australien og New Zealand, temperatur i resten af Europa."
+      "help": "Indtil der er truffet et valg, følger indstillingen regionen: Ortonkegler i USA, Storbritannien, Irland, Australien og New Zealand, SK-kegler i Japan og temperatur i resten af Europa."
     },
     "density": {
       "legend": "Glasurens tykkelse",
@@ -147,7 +177,7 @@
         "label": "Pintvægt: unser i en britisk pint",
         "saved": "Gemt: glasurens tykkelse angives som pintvægt."
       },
-      "help": "Hvordan vejledningerne angiver glasurens tykkelse. Indtil der er truffet et valg, følger indstillingen regionen: grader Baumé i Italien, massefylde alle andre steder."
+      "help": "Hvordan vejledningerne angiver glasurens tykkelse. Indtil der er truffet et valg, følger indstillingen regionen: grader Baumé i Italien og Japan, massefylde alle andre steder."
     },
     "theme": {
       "legend": "Lys eller mørk",
@@ -229,9 +259,19 @@
       },
       "hidden": {
         "label": "Skjult",
-        "saved": "Gemt: noten er skjult. En linje af den bliver stående i sikkerhedsvejledningerne."
+        "saved": "Gemt: noten er skjult. En linje af den bliver stående i sikkerhedsvejledningerne.",
+        "savedPlain": "Gemt: noten er skjult. En linje af den bliver stående øverst på hver side."
       },
       "help": "Noten øverst på hver side om, at siden er oversat af AI, med mulighed for at foreslå en rettelse."
     }
+  },
+  "confirmEmail": {
+    "heading": "Bekræft e-mailadressen",
+    "intro": "Tryk på knappen for at bekræfte adressen.",
+    "confirm": "Bekræft",
+    "incomplete": "Denne side kræver linket fra en bekræftelsesmail, og dette link er ufuldstændigt.",
+    "account": "Kontoen",
+    "signIn": "Log ind",
+    "failed": "Fejl: Adressen kunne ikke bekræftes. Prøv igen."
   }
 }

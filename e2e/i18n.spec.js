@@ -87,6 +87,36 @@ test('a guide links its sections at its own address, in its language, and a new 
   expect(await page.evaluate(() => globalThis.scrollY)).toBe(0);
 });
 
+/** The fonts the browser drew an element's text with, by name. */
+const fontsOf = async (page, selector) => {
+  const cdp = await page.context().newCDPSession(page);
+  await cdp.send('DOM.enable');
+  await cdp.send('CSS.enable');
+  const { root } = await cdp.send('DOM.getDocument');
+  const { nodeId } = await cdp.send('DOM.querySelector', { nodeId: root.nodeId, selector });
+  const { fonts } = await cdp.send('CSS.getPlatformFontsForNode', { nodeId });
+  return fonts.map((font) => font.familyName);
+};
+
+test('a Japanese page draws its text in a Japanese font, and an English one in Lora', async ({ page }) => {
+  await page.goto('/ja-XC/guides/firing');
+  await expect(page.locator('html')).toHaveAttribute('lang', 'ja-XC');
+  await expect(page.locator('h1')).toHaveText(/^[\u3040-\u30ff\u4e00-\u9fff]+$/);
+  await page.evaluate(() => globalThis.document.fonts.ready);
+  // Noto Serif CJK on Linux (scripts/test-e2e-linux.Dockerfile), and so in CI. Elsewhere the
+  // system's: Yu Mincho, or Yu Gothic where Windows has not added Japanese's serif fonts.
+  const japanese = process.platform === 'linux' ? /^Noto Serif CJK JP$/ : /Mincho|Gothic|Meiryo|Noto Serif/;
+  expect(await fontsOf(page, 'h1')).toEqual([expect.stringMatching(japanese)]);
+  // No slanted CJK, which no Japanese font draws: emphasis is bolder instead.
+  await expect(page.locator('html')).toHaveCSS('font-synthesis', 'none');
+  await expect(page.locator('html')).toHaveCSS('line-break', 'strict');
+
+  await page.goto('/guides/firing');
+  await page.evaluate(() => globalThis.document.fonts.ready);
+  expect(await fontsOf(page, 'h1')).toEqual([expect.stringMatching(/^Lora/)]);
+  await expect(page.locator('html')).toHaveCSS('line-break', 'auto');
+});
+
 test('the pseudo-locale accents every message, which shows any left unmarked', async ({ page }) => {
   await page.goto('/en-XA/about');
   await expect(page.locator('html')).toHaveAttribute('lang', 'en-XA');

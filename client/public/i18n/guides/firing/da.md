@@ -278,6 +278,97 @@ Et **kegleoffset** er en indstilling i styringen, der flytter dens temperatur fo
 
 :::
 
+:::sk
+
+## Brænding efter SK-kegler {#sk-cones}
+
+SK-kegler er de pyrometriske kegler{{en: pyrometric cone}}, der fremstilles efter Japans standard, JIS R 8101, og sælges i Japan af forhandlere som Yuko Trading (有恒商事). Som enhver kegle måler en SK-kegle varmepåvirkning{{en: heatwork}}, ikke temperatur alene: Den bliver blød og bøjer over, når emnerne har fået varme nok, og man aflæser, hvor langt den har bøjet. Kontrolkegler{{en: witness cone}}, aflæsning af, hvor langt en kegle har bøjet, og holdetider virker for den som for enhver kegle. Dette afsnit angiver hver kegles system og omregner aldrig et SK-nummer til et nummer i et andet system: Numrene i forskellige keglerækker kan ikke bruges i hinandens sted.
+
+> [!NOTE]
+> Skriv altid »SK« foran nummeret. Mange ældre japanske opskrifter siger kun »SK 8« eller »SK 9« uden at sige, hvis kegle det er. Kyoto-kegler og SK-kegler efter JIS har de samme numre, men bøjer ved forskellige temperaturer (se Kyoto-kegler nedenfor).
+
+### De store kegler
+
+Standarden har to størrelser. Store kegler (大型コーン) bruges »hovedsageligt til at måle brændingsgraden« (焼度測定), og det er det, en keramiker har brug for. Små kegler (SK 26 til SK 42, øverst i rækken) bruges »hovedsageligt til prøvning af ildfasthed« og er ikke med her. Tabellen nedenfor viser de store kegler fra SK 022 til SK 20.
+
+Numrene går her fra SK 022, den koldeste, op til SK 20. Mellem SK 015 og SK 6 har de trykte numre et »a« (SK 015a, SK 6a); skriv det, som det er trykt.
+
+### Sådan sættes store kegler
+
+Sæt hver stor kegle i en keglestander eller en klump ler, så den hælder mod sin bøjeside. Hold, som med enhver kegle, højden og hældningen ens fra brænding til brænding, fordi en forskel i den ene eller den anden ændrer, hvor langt den bøjer. Sæt de tre kegler i keglesættet{{en: cone pack}} (nedenfor) sammen, dybt inde i ovnen nær midten af ovnfyldet, hvor de får den varme, emnerne får, men hvor de stadig kan ses gennem et kighul; kontrollér, før ovnen lukkes, at alle tre kan ses.
+
+### Advarselskegle, målkegle og sikkerhedskegle
+
+Kegler sælges og sættes tre ad gangen: en advarselskegle, en målkegle ved målet og en sikkerhedskegle. Tag som målkegle det SK-nummer, som opskriften eller leret angiver, som advarselskegle den nærmeste køligere kegle (en række op i tabellen) og som sikkerhedskegle den nærmeste varmere. Når advarselskeglen begynder at bøje, er slutningen nær; når sikkerhedskeglen bøjer, er brændingen gået for langt.
+
+### SK-tabellen
+
+Table: Store SK-kegler (JIS R 8101): hver kegles nominelle temperatur (JIS)
+Label: SK-tabel
+
+| Kegle   | Nominel temperatur (JIS) |
+| ------- | -----------------------: |
+| SK 022  |      {{1112 °F; 600 °C}} |
+| SK 021  |      {{1202 °F; 650 °C}} |
+| SK 020  |      {{1238 °F; 670 °C}} |
+| SK 019  |      {{1274 °F; 690 °C}} |
+| SK 018  |      {{1310 °F; 710 °C}} |
+| SK 017  |      {{1346 °F; 730 °C}} |
+| SK 016  |      {{1382 °F; 750 °C}} |
+| SK 015a |      {{1454 °F; 790 °C}} |
+| SK 014a |      {{1499 °F; 815 °C}} |
+| SK 013a |      {{1535 °F; 835 °C}} |
+| SK 012a |      {{1571 °F; 855 °C}} |
+| SK 011a |      {{1616 °F; 880 °C}} |
+| SK 010a |      {{1652 °F; 900 °C}} |
+| SK 09a  |      {{1688 °F; 920 °C}} |
+| SK 08a  |      {{1724 °F; 940 °C}} |
+| SK 07a  |      {{1760 °F; 960 °C}} |
+| SK 06a  |      {{1796 °F; 980 °C}} |
+| SK 05a  |     {{1832 °F; 1000 °C}} |
+| SK 04a  |     {{1868 °F; 1020 °C}} |
+| SK 03a  |     {{1904 °F; 1040 °C}} |
+| SK 02a  |     {{1940 °F; 1060 °C}} |
+| SK 01a  |     {{1976 °F; 1080 °C}} |
+| SK 1a   |     {{2012 °F; 1100 °C}} |
+| SK 2a   |     {{2048 °F; 1120 °C}} |
+| SK 3a   |     {{2084 °F; 1140 °C}} |
+| SK 4a   |     {{2120 °F; 1160 °C}} |
+| SK 5a   |     {{2156 °F; 1180 °C}} |
+| SK 6a   |     {{2192 °F; 1200 °C}} |
+| SK 7    |     {{2246 °F; 1230 °C}} |
+| SK 8    |     {{2282 °F; 1250 °C}} |
+| SK 9    |     {{2336 °F; 1280 °C}} |
+| SK 10   |     {{2372 °F; 1300 °C}} |
+| SK 11   |     {{2408 °F; 1320 °C}} |
+| SK 12   |     {{2462 °F; 1350 °C}} |
+| SK 13   |     {{2516 °F; 1380 °C}} |
+| SK 14   |     {{2570 °F; 1410 °C}} |
+| SK 15   |     {{2615 °F; 1435 °C}} |
+| SK 16   |     {{2660 °F; 1460 °C}} |
+| SK 17   |     {{2696 °F; 1480 °C}} |
+| SK 18   |     {{2732 °F; 1500 °C}} |
+| SK 19   |     {{2768 °F; 1520 °C}} |
+| SK 20   |     {{2786 °F; 1530 °C}} |
+
+Alle tal er nominelle (JIS): den temperatur, standarden angiver for keglen, som den er trykt i Yuko Tradings tabel. Tabellen angiver ingen opvarmningshastighed. Standarden giver referencetemperaturer. Ved en hastighed, som keramikere bruger, omkring 100 °C/h, målte Kyotos kommunale institut, at dets egne Kyoto-kegler bøjede ved en temperatur 40–70 °C lavere end JIS-tallet for samme nummer; vi har ikke fundet sådanne målinger for SK-kegler efter JIS. Sæt en kontrolkegle, og sammenlign.
+
+### Kyoto-kegler
+
+Kyoto-kegler (京都ゼーゲル), lavet af Kyotos kommunale institut, fremstilles ikke længere: Ifølge nyhedsartikler stoppede instituttet produktionen ved udgangen af regnskabsåret 2009. De har de samme numre som SK-kegler efter JIS, men bøjer køligere: En Kyoto-kegle bøjer for det meste ved omtrent samme temperatur som den SK-kegle efter JIS, der ligger to numre lavere. En opskrift fra Kyoto, der siger »SK 8«, kan mene en Kyoto-kegle. Instituttet har udgivet råd til keramikere, der skifter fra Kyoto-kegler til Ortonkegler, og erstatter sin egen Kyoto-kegle SK 12 med Ortonkegle 10; det er instituttets valg ud fra dets egne målinger ved 100 °C/h og gælder ingen anden kegle.
+
+### Ortonkegler, der sælges i Japan
+
+Selvstående Ortonkegler sælges i Japan under navnet 立つゼーゲル (»stående Seger«), fordi de hverken skal bruge keglestander eller fod. De er Ortonkegler, med Ortons numre og Ortons tabel (ovenfor): Brænd kun til en sådan kegle efter dens Ortonnummer, og hold SK-kegler og Ortonkegler i hver sit keglesæt, aldrig i det samme.
+
+### Kilder om SK-kegler
+
+- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (SK-tabellen, tjekket 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
+- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (gældende, bekræftet igen 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [Kyoto Municipal Institute of Industrial Technology and Culture: hvad man skal være opmærksom på ved skiftet fra Kyoto-kegler til Ortonkegler](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
+
+:::
+
 ## Forglødning {#bisque}
 
 **Forglødningen**{{en: bisque}} (i Storbritannien kaldet biscuit) er den første, lavere brænding, der gør tørt ler til hårdt, porøst gods, klar til glasering. Den brændes som regel til kegle{{en: cone}} 06–04, {{1828–1945 °F; 998–1063 °C}} efter Ortons tabel; britiske keramikere brænder ofte til omkring {{1000 °C; 1832 °F}}, nær kegle 06. Det forglødede gods bør forblive porøst, »generelt mere end 15%« (Digitalfire), så det suger vand ud af glasuren{{en: glaze}}. Ved for lav forglødning lægger glasuren sig for tykt, så den revner og **kravler**{{en: crawls}} (trækker sig sammen i øer og efterlader bart ler). Underbrændt forglødet gods »fortsætter også med at svinde under glasurbrændingen«, hvilket ødelægger glasurtilpasningen{{en: glaze fit}}. Påfyldningen er tilgivende: Emner må gerne røre hinanden, låg kan brændes siddende på deres emner, og skåle stilles kant mod kant i stedet for inden i hinanden.

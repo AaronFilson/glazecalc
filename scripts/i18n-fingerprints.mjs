@@ -73,11 +73,11 @@ function nest(flat) {
 }
 
 const SECTION = /^## .*\{#([\w-]+)( lang=en)?\}\s*$/;
-const CONE_SYSTEM = /^:::(orton|temperature)$/;
+const CONE_SYSTEM = /^:::(orton|sk|temperature)$/;
 
 /**
  * A guide's Markdown in segments: the part before the first section (id ''),
- * then each section from its heading, or from the :::orton or :::temperature
+ * then each section from its heading, or from the :::orton, :::sk or :::temperature
  * line just before it when the whole section is for one way of firing. Each
  * keeps its text exactly, so joining them gives the file back.
  */

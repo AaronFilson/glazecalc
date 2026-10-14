@@ -11,10 +11,13 @@
     "password": "Salasana",
     "passwordHint": "Vähintään 8 merkkiä.",
     "confirmation": "Vahvista salasana",
+    "keepSignedIn": "Pysy kirjautuneena tällä laitteella",
     "passwordMissing": "Anna salasana.",
     "createAccount": "Luo tili",
     "signIn": "Kirjaudu sisään",
     "haveAccount": "Onko tili jo olemassa? <signin>Kirjaudu sisään</signin>",
+    "privacy": "Sähköpostiosoitetta ja tallennettuja tietoja käytetään vain tilin ylläpitoon, ja ne säilytetään Amazon Web Services -palvelussa Yhdysvalloissa. <privacy>Miten Glazecalc käsittelee tietoja</privacy>",
+    "dataNotice": "Glazecalc on ilmainen avoimen lähdekoodin projekti, ja tilit säilytetään palvelimilla Yhdysvalloissa. Oppaita voi lukea ja laskinta kokeilla ilman tiliä, tai sovelluksesta voi ajaa omaa kopiota. Tilin luominen tänne on jokaisen oma päätös, eikä projekti ota siitä vastuuta. <where>Tilin säilytyspaikka ja oma valinta</where>",
     "forgot": "Unohtuiko salasana? Palauta se",
     "newHere": "Uusi käyttäjä? <signup>Luo ilmainen tili</signup>",
     "signUpFailed": "Virhe: tilin luominen ei onnistunut.",
@@ -61,7 +64,29 @@
     "deletePassword": "Salasana vahvistukseksi",
     "deletePasswordMissing": "Anna salasana vahvistukseksi.",
     "delete": "Poista tili",
-    "deleteFailed": "Virhe: tilin poistaminen ei onnistunut. Yritä uudelleen."
+    "deleteFailed": "Virhe: tilin poistaminen ei onnistunut. Yritä uudelleen.",
+    "unverifiedHeading": "Sähköpostiosoitteen vahvistaminen",
+    "unverifiedText": "Lähetimme linkin osoitteeseen {email}, kun tämä tili luotiin. Linkin avaaminen vahvistaa, että osoite on oma. Siihen asti lähetämme osoitteeseen viestejä vain pyynnöstä, esimerkiksi salasanan palauttamiseksi.",
+    "resend": "Lähetä linkki uudelleen",
+    "resendFailed": "Virhe: linkin lähettäminen ei onnistunut. Yritä uudelleen.",
+    "emailHeading": "Sähköpostiosoitteen vaihtaminen",
+    "emailText": "Lähetämme linkin uuteen osoitteeseen, ja sähköpostiosoite vaihtuu, kun linkki avataan. Ilmoitamme asiasta myös nykyiseen osoitteeseen. Kaikki tilille kirjautuneet laitteet kirjataan ulos.",
+    "newEmail": "Uusi sähköpostiosoite",
+    "emailPassword": "Salasana vahvistukseksi",
+    "emailSend": "Lähetä linkki",
+    "emailFailed": "Virhe: linkin lähettäminen ei onnistunut. Yritä uudelleen.",
+    "signOutHeading": "Uloskirjautuminen kaikilta laitteilta",
+    "signOutText": "Kirjaa ulos kaikilla laitteilla, myös tällä. Käytä tätä, jos laite on kadonnut tai on syytä epäillä, että kirjautumistiedot ovat jonkun muun käsissä.",
+    "signOutButton": "Kirjaudu ulos kaikkialta",
+    "signOutFailed": "Virhe: uloskirjautuminen ei onnistunut. Yritä uudelleen."
+  },
+  "export": {
+    "heading": "Omien tietojen lataaminen",
+    "text": "Tallenna kopio kaikesta tilillä olevasta yhdeksi tiedostoksi: käyttäjätiedot, asetukset, varasto, reseptit, raaka-aineet, lisäaineet, muistiinpanot, polttopäiväkirjat, neuvot ja roskakori. Salasana ei sisälly siihen. Säilytä tiedosto yksityisessä paikassa, koska siinä on kaikki tallennettu.",
+    "json": "Lataa kaikki (JSON)",
+    "csvText": "Tai tallenna pelkät reseptit tai pelkät omat raaka-aineet taulukkona, jonka voi avata Excelissä, Numbersissa tai Sheetsissä.",
+    "recipes": "Reseptit (CSV)",
+    "materials": "Raaka-aineet (CSV)"
   },
   "settings": {
     "heading": "Asetukset",
@@ -126,11 +151,16 @@
         "example": "keila 04, keila 6",
         "saved": "Tallennettu: poltto Orton-keiloina."
       },
+      "sk": {
+        "label": "SK-keiloina (JIS R 8101)",
+        "example": "SK 4a, SK 8",
+        "saved": "Tallennettu: poltto SK-keiloina."
+      },
       "temperature": {
         "label": "Lämpötiloina, kuten uunin automatiikan ohjelmassa",
         "saved": "Tallennettu: poltto lämpötiloina."
       },
-      "help": "Kunnes valinta tehdään, tämä määräytyy alueen mukaan: Orton-keilat Yhdysvalloissa, Isossa-Britanniassa, Irlannissa, Australiassa ja Uudessa-Seelannissa, lämpötilat muualla Euroopassa."
+      "help": "Kunnes valinta tehdään, tämä määräytyy alueen mukaan: Yhdysvalloissa, Isossa-Britanniassa, Irlannissa, Australiassa ja Uudessa-Seelannissa Orton-keilat, Japanissa SK-keilat ja muualla Euroopassa lämpötilat."
     },
     "density": {
       "legend": "Lasitteen tiheys",
@@ -147,7 +177,7 @@
         "label": "Pinttipaino, unssia brittiläisessä pintissä",
         "saved": "Tallennettu: lasitteen tiheys pinttipainona."
       },
-      "help": "Miten oppaat ilmoittavat lasitteen sakeuden. Kunnes valinta tehdään, tämä määräytyy alueen mukaan: Italiassa Baumé-asteet, muualla ominaispaino."
+      "help": "Miten oppaat ilmaisevat lasitteen paksuuden. Kunnes valinta tehdään, tämä määräytyy alueen mukaan: Italiassa ja Japanissa Baumé-asteina, muualla ominaispainona."
     },
     "theme": {
       "legend": "Vaalea tai tumma",
@@ -229,9 +259,19 @@
       },
       "hidden": {
         "label": "Piilotettu",
-        "saved": "Tallennettu: ilmoitus on piilotettu. Turvallisuusoppaissa siitä näkyy edelleen yksi rivi."
+        "saved": "Tallennettu: ilmoitus on piilotettu. Turvallisuusoppaissa siitä näkyy edelleen yksi rivi.",
+        "savedPlain": "Tallennettu: ilmoitus on piilotettu. Jokaisen sivun yläreunassa näkyy siitä edelleen yksi rivi."
       },
       "help": "Jokaisen sivun yläreunan huomautus siitä, että sivu on käännetty tekoälyllä, ja mahdollisuus ehdottaa korjausta."
     }
+  },
+  "confirmEmail": {
+    "heading": "Sähköpostiosoitteen vahvistaminen",
+    "intro": "Vahvista tämä osoite painikkeella.",
+    "confirm": "Vahvista",
+    "incomplete": "Tämä sivu tarvitsee vahvistusviestin linkin, ja tämä linkki on puutteellinen.",
+    "account": "Oma tili",
+    "signIn": "Kirjaudu sisään",
+    "failed": "Virhe: osoitteen vahvistaminen ei onnistunut. Yritä uudelleen."
   }
 }

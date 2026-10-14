@@ -278,6 +278,97 @@ Label: Seuraavan polton säätäminen
 
 :::
 
+:::sk
+
+## Poltto SK-keiloihin {#sk-cones}
+
+SK-keilat ovat Japanin standardin JIS R 8101 mukaan valmistettuja pyrometrisiä keiloja, ja Japanissa niitä myyvät esimerkiksi Yuko Tradingin (有恒商事) kaltaiset jälleenmyyjät. Kuten mikä tahansa keila, SK-keila mittaa lämpötyötä{{en: heatwork}}, ei pelkkää lämpötilaa: se pehmenee ja taipuu, kun esineet ovat saaneet tarpeeksi lämpöä, ja siitä katsotaan, kuinka pitkälle se taipui. Tarkkailukeilat{{en: witness cone}}, keilan taipuman lukeminen ja haudutus toimivat sen kanssa samoin kuin minkä tahansa keilan kanssa. Tässä osiossa jokaisen keilan järjestelmä mainitaan nimeltä, eikä SK-numeroa koskaan muuteta toisen järjestelmän numeroksi: eri keilajärjestelmien numerot eivät ole keskenään vaihdettavissa.
+
+> [!NOTE]
+> Kirjoita numeron eteen aina ”SK”. Monissa vanhemmissa japanilaisissa resepteissä lukee vain ”SK 8” tai ”SK 9” kertomatta, kenen keilasta on kyse. Kioton keiloissa ja JIS-standardin mukaisissa SK-keiloissa on samat numerot, mutta ne taipuvat eri lämpötiloissa (katso alempaa Kioton keilat).
+
+### Isot keilat
+
+Standardissa on kaksi kokoa. Isoja keiloja (大型コーン) käytetään ”pääasiassa polttoasteen mittaamiseen” (焼度測定), ja juuri sitä keraamikko tarvitsee. Pieniä keiloja (SK 26–SK 42, asteikon yläpäässä) käytetään ”pääasiassa tulenkestävyyskokeisiin”, eikä niitä käsitellä tässä. Alla olevassa taulukossa ovat isot keilat väliltä SK 022–SK 20.
+
+Numerot alkavat tässä viileimmästä keilasta SK 022 ja päättyvät keilaan SK 20. Välillä SK 015–SK 6 painetuissa numeroissa on ”a” (SK 015a, SK 6a); kirjoita se niin kuin se on painettu.
+
+### Isojen keilojen asettaminen
+
+Aseta jokainen iso keila keilapidikkeeseen tai savipetiin kallelleen kohti taipumispuoltaan. Kuten minkä tahansa keilan kohdalla, pidä korkeus ja kallistus samoina poltosta toiseen, koska ero kummassa tahansa muuttaa sitä, kuinka pitkälle keila taipuu. Aseta keilasarjan{{en: cone pack}} kolme keilaa (katso alempaa) yhdessä syvälle uuniin, lähelle uunillisen keskikohtaa, jossa ne saavat saman lämmön kuin esineet, mutta kuitenkin tirkistysaukosta näkyviin; varmista ennen uunin sulkemista, että näet kaikki kolme.
+
+### Ennakko-, tavoite- ja varmistuskeila
+
+Keiloja myydään ja asetetaan kolmen sarjoina: ennakkokeila, tavoitekeila tavoitelämpötilaan ja varmistuskeila. Valitse tavoitekeilaksi se SK-numero, jonka resepti tai savi ilmoittaa, ennakkokeilaksi yhtä numeroa viileämpi keila (taulukossa yhtä riviä ylempänä) ja varmistuskeilaksi yhtä numeroa kuumempi. Kun ennakkokeila alkaa taipua, loppu on lähellä; kun varmistuskeila taipuu, poltto on mennyt liian pitkälle.
+
+### SK-taulukko
+
+Table: Isot SK-keilat (JIS R 8101): kunkin keilan nimellinen (JIS) lämpötila
+Label: SK-taulukko
+
+| Keila   | Nimellinen (JIS) lämpötila |
+| ------- | -------------------------: |
+| SK 022  |        {{1112 °F; 600 °C}} |
+| SK 021  |        {{1202 °F; 650 °C}} |
+| SK 020  |        {{1238 °F; 670 °C}} |
+| SK 019  |        {{1274 °F; 690 °C}} |
+| SK 018  |        {{1310 °F; 710 °C}} |
+| SK 017  |        {{1346 °F; 730 °C}} |
+| SK 016  |        {{1382 °F; 750 °C}} |
+| SK 015a |        {{1454 °F; 790 °C}} |
+| SK 014a |        {{1499 °F; 815 °C}} |
+| SK 013a |        {{1535 °F; 835 °C}} |
+| SK 012a |        {{1571 °F; 855 °C}} |
+| SK 011a |        {{1616 °F; 880 °C}} |
+| SK 010a |        {{1652 °F; 900 °C}} |
+| SK 09a  |        {{1688 °F; 920 °C}} |
+| SK 08a  |        {{1724 °F; 940 °C}} |
+| SK 07a  |        {{1760 °F; 960 °C}} |
+| SK 06a  |        {{1796 °F; 980 °C}} |
+| SK 05a  |       {{1832 °F; 1000 °C}} |
+| SK 04a  |       {{1868 °F; 1020 °C}} |
+| SK 03a  |       {{1904 °F; 1040 °C}} |
+| SK 02a  |       {{1940 °F; 1060 °C}} |
+| SK 01a  |       {{1976 °F; 1080 °C}} |
+| SK 1a   |       {{2012 °F; 1100 °C}} |
+| SK 2a   |       {{2048 °F; 1120 °C}} |
+| SK 3a   |       {{2084 °F; 1140 °C}} |
+| SK 4a   |       {{2120 °F; 1160 °C}} |
+| SK 5a   |       {{2156 °F; 1180 °C}} |
+| SK 6a   |       {{2192 °F; 1200 °C}} |
+| SK 7    |       {{2246 °F; 1230 °C}} |
+| SK 8    |       {{2282 °F; 1250 °C}} |
+| SK 9    |       {{2336 °F; 1280 °C}} |
+| SK 10   |       {{2372 °F; 1300 °C}} |
+| SK 11   |       {{2408 °F; 1320 °C}} |
+| SK 12   |       {{2462 °F; 1350 °C}} |
+| SK 13   |       {{2516 °F; 1380 °C}} |
+| SK 14   |       {{2570 °F; 1410 °C}} |
+| SK 15   |       {{2615 °F; 1435 °C}} |
+| SK 16   |       {{2660 °F; 1460 °C}} |
+| SK 17   |       {{2696 °F; 1480 °C}} |
+| SK 18   |       {{2732 °F; 1500 °C}} |
+| SK 19   |       {{2768 °F; 1520 °C}} |
+| SK 20   |       {{2786 °F; 1530 °C}} |
+
+Jokainen luku on nimellinen (JIS): lämpötila, jonka standardi antaa keilalle, sellaisena kuin se on painettu Yuko Tradingin taulukkoon. Taulukossa ei ole nousunopeutta. Standardi antaa vertailulämpötiloja. Keraamikon tavallisella, noin 100 °C/h nousunopeudella Kioton kaupungin tutkimuslaitos mittasi omien Kioton keilojensa taipuvan 40–70 °C alemmassa lämpötilassa kuin saman numeron JIS-lämpötila; JIS-standardin mukaisista SK-keiloista emme löytäneet vastaavia mittauksia. Aseta tarkkailukeila ja vertaa.
+
+### Kioton keilat
+
+Kioton keiloja (京都ゼーゲル), joita Kioton kaupungin tutkimuslaitos valmisti, ei enää valmisteta: uutisten mukaan laitos lopetti valmistuksen tilikauden 2009 päättyessä. Niissä on samat numerot kuin JIS-standardin mukaisissa SK-keiloissa, mutta ne taipuvat alemmassa lämpötilassa: Kioton keila taipuu useimmiten suunnilleen sen JIS-standardin mukaisen SK-keilan lämpötilassa, jonka numero on kahta numeroa alempi. Kiotolainen resepti, jossa lukee ”SK 8”, voi tarkoittaa Kioton keilaa. Laitos on julkaissut ohjeita keraamikoille, jotka siirtyvät Kioton keiloista Orton-keiloihin, ja korvaa oman Kioton SK 12 -keilansa Orton-keilalla 10; se on laitoksen oma valinta sen omien 100 °C/h:n mittausten perusteella, eikä se koske mitään muuta keilaa.
+
+### Japanissa myytävät Orton-keilat
+
+Ortonin itsestään seisovia keiloja myydään Japanissa nimellä 立つゼーゲル (”seisova Seger”), koska ne eivät tarvitse keilapidikettä tai telinettä. Ne ovat Orton-keiloja, joilla on Ortonin numerot ja Ortonin taulukko (yllä): polta sellaiseen keilaan vain sen Orton-numeron mukaan, ja pidä SK- ja Orton-keilat eri keilasarjoissa, ei koskaan samassa.
+
+### SK-keilojen lähteet
+
+- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (SK-taulukko, tarkistettu 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
+- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (voimassa, vahvistettu uudelleen 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [Kyoto Municipal Institute of Industrial Technology and Culture: huomioitavaa siirryttäessä Kioton keiloista Orton-keiloihin](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
+
+:::
+
 ## Raakapoltto {#bisque}
 
 **Raakapoltto**{{en: bisque}} (Isossa-Britanniassa biscuit) on ensimmäinen, matalampi poltto, joka muuttaa kuivan saven kovaksi, huokoiseksi ja lasitusvalmiiksi esineeksi. Se poltetaan yleensä keiloihin{{en: cones}} 06–04, Ortonin taulukossa {{1828–1945 °F; 998–1063 °C}}; brittiläiset keraamikot polttavat usein noin lämpötilaan {{1000 °C; 1832 °F}}, lähelle keilaa 06. Raakapoltetun esineen pitäisi jäädä huokoiseksi, ”yleensä yli 15%” (Digitalfire), jotta se imee vettä lasitteesta{{en: glaze}}. Liian matalassa lämpötilassa raakapoltettuun esineeseen tarttuu liian paksu lasitekerros, joka sitten halkeilee ja **kuroutuu**{{en: crawls}} (vetäytyy saarekkeiksi ja jättää paljasta savea näkyviin). Alipoltettu esine myös ”jatkaa kutistumistaan lasituspolton aikana”, mikä pilaa lasitteen ja massan yhteensopivuuden{{en: glaze fit}}. Ladonta on anteeksiantavaa: esineet saavat koskettaa toisiaan, kannet voi polttaa paikoillaan astioiden päällä ja kulhot asetetaan suut vastakkain eikä sisäkkäin.

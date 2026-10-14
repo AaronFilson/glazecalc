@@ -1,6 +1,6 @@
 {
   "titles": {
-    "landing": "Glazecalc: besplatni kalkulator kemije glazura za lončarstvo",
+    "landing": "Glazecalc: besplatni kalkulator glazura za keramiku",
     "advice": "Savjeti za glazure – Glazecalc",
     "guides": "Vodiči – Glazecalc",
     "glazingBasics": "Glaziranje od samih osnova – Glazecalc",
@@ -14,6 +14,7 @@
     "signup": "Stvaranje računa – Glazecalc",
     "forgot": "Ponovno postavljanje lozinke – Glazecalc",
     "reset": "Odabir nove lozinke – Glazecalc",
+    "confirmEmail": "Potvrda adrese e-pošte – Glazecalc",
     "home": "Vaša radionička bilježnica – Glazecalc",
     "recipe": "Recepti – Glazecalc",
     "material": "Sirovine – Glazecalc",
@@ -73,7 +74,17 @@
     "notANumberPoint": "Unesite broj s decimalnom točkom, na primjer {example}."
   },
   "meta": {
-    "description": "Unesite recept glazure i vidite Segerovu formulu (UMF), omjer SiO₂ : Al₂O₃ i omjer topitelja. Besplatno, otvorenog koda: recepti, sirovine, zapisnici pečenja.",
+    "description": "Unesite recept glazure za keramiku: Segerova formula (UMF), SiO₂ : Al₂O₃ i omjer topitelja. Besplatno, otvorenog koda: recepti, sirovine, zapisnici pečenja.",
+    "guides": "Vodiči jednostavnim jezikom za početnike u keramici: što je glazura, kako je napraviti i sigurno miješati, kako zaštititi obitelj i peći u jednostavnoj peći.",
+    "glazingBasics": "Od čega se sastoji glazura za keramiku, kako je peć pretvara u staklo i što znače stošci, frite, Segerova formula (UMF) i greške u glazuri. Vodič za početnike.",
+    "makingAGlaze": "Kako kupiti, čuvati, vagati i miješati glazuru za keramiku, pogoditi njezinu gustoću, isprobati je na svojoj glini i bilježiti sve da biste je mogli ponoviti.",
+    "safeMixing": "Kako spriječiti da prašina glazure dospije u vaša pluća, a plinovi iz peći u vaš dom: sigurne navike, zaštitne maske, čišćenje, ventilacija i rizične sirovine.",
+    "homeSafety": "Što učiniti ako dijete ili kućni ljubimac proguta sirovinu za glazuru i kako sirovine, prašinu, peć i ručno izrađene predmete učiniti sigurnima za obitelj.",
+    "firing": "Kako peći u električnoj peći: kako odabrati, postaviti i očitati stošce i slijediti objavljene programe biskvitnog i glazurnog pečenja, s tablicom stožaca.",
+    "advice": "Praktični savjeti aplikacije Glazecalc o miješanju glazura, glaziranju i pečenju, uz vaše vlastite savjete. Besplatno za lončare i sve koji se bave keramikom.",
+    "about": "Glazecalc je besplatan kalkulator kemije glazura za keramiku i bilježnica, otvorenog koda. Pogledajte kako izračunava Segerovu formulu (UMF) i kako je izrađen.",
+    "privacy": "Kako Glazecalc postupa s vašim podacima: bez oglasa, analitike i praćenja, a ništa se ne prodaje. Što se čuva, zašto i kako ostvariti svoja prava.",
+    "signup": "Stvorite besplatan račun u aplikaciji Glazecalc za svoje recepte za glazure, sirovine, bilješke i zapisnike pečenja. Bez oglasa, a podaci se nikad ne prodaju.",
     "imageAlt": "Glazecalc: glazure ne samo miješajte nego ih i razumijte."
   },
   "notices": {
@@ -255,6 +266,8 @@
     "label": "O ovom prijevodu",
     "text": "Ovu je stranicu s engleskog prevela umjetna inteligencija. Glazecalc je otvorenog koda: ako vam nešto ne zvuči ispravno, predložite ispravak na GitHubu.",
     "brief": "S engleskog prevela umjetna inteligencija.",
+    "plain": "Ovu je stranicu s engleskog prevela umjetna inteligencija, koja ovaj jezik svladava slabije od većine jezika. Stranica na engleskom možda se čita bolje. Glazecalc je otvorenog koda: ako vam nešto ne zvuči ispravno, predložite ispravak na GitHubu.",
+    "plainBrief": "S engleskog prevela umjetna inteligencija; izvornik na engleskom možda se čita bolje.",
     "suggest": "Predloži ispravak",
     "english": "Pročitaj izvornik na engleskom",
     "close": "Zatvori"

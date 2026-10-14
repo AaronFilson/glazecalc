@@ -64,7 +64,115 @@
   "privacy": {
     "title": "Confidentialité",
     "lead": "Dernière mise à jour : octobre 2026.",
-    "shortHeading": "En bref"
+    "shortHeading": "En bref",
+    "short": "Glazecalc conserve ce dont il a besoin pour faire fonctionner votre compte, et rien de plus. Il n’y a ni publicité, ni mesure d’audience, ni pistage. Vos données ne sont jamais vendues, et la seule entreprise qui les traite est Amazon Web Services, qui héberge le site et envoie ses e-mails.",
+    "whoHeading": "Qui est responsable",
+    "who": "Glazecalc est un projet gratuit, open source et à but non lucratif, mené par son propriétaire, Aaron Filson, aux États-Unis. C’est lui qui décide de ce qu’il advient de vos données : au sens du droit de la protection des données, il en est donc le « responsable du traitement ».",
+    "contact": "Pour toute question sur vos données, ou pour exercer l’un de vos droits, écrivez à <mail>privacy@glazecalcapp.com</mail>. Vous pouvez aussi <issues>ouvrir un ticket sur GitHub</issues>, mais les tickets sont publics : n’y mettez jamais votre adresse e-mail ni quoi que ce soit de personnel. Vous pouvez faire vous-même la plupart des démarches concernant vos données sur la <account>page de votre compte</account>.",
+    "storedHeading": "Ce qui est conservé, et pourquoi",
+    "storedAccount": "<b>Votre compte :</b> votre adresse e-mail, et votre mot de passe, conservé uniquement sous forme de hachage à sens unique (bcrypt), jamais tel quel. Vos paramètres (comme la langue, la région et les unités) et la liste des matières dont vous disposez sont conservés avec lui. Un compte a besoin d’une adresse e-mail, pour se connecter et pour réinitialiser un mot de passe oublié. Quand vous créez un compte, un lien est envoyé à l’adresse pour confirmer qu’elle est bien la vôtre ; d’ici là, des e-mails n’y sont envoyés que si vous le demandez, par exemple pour réinitialiser le mot de passe.",
+    "storedSaved": "<b>Ce que vous enregistrez :</b> vos recettes, matières, additifs, notes, relevés de cuisson et conseils, tels que vous les avez écrits. Ils ne sont visibles que par vous : rien n’est partagé entre les utilisateurs.",
+    "storedTrial": "<b>Une période d’essai (Essayer maintenant) :</b> ni adresse e-mail ni mot de passe, seulement un nom inventé comme « speckled quiet kilns ». Si vous vous connectez à un compte dans le même navigateur pendant une période d’essai, ce que vous avez créé pendant l’essai passe dans ce compte.",
+    "storedResets": "<b>Liens de réinitialisation du mot de passe et liens envoyés par e-mail :</b> le compte qui a fait la demande, quand, l’adresse à laquelle a été envoyé un lien de confirmation d’adresse, et une empreinte de chaque lien (pas le lien lui-même).",
+    "storedLogs": "<b>Journaux :</b> le serveur web enregistre chaque requête : votre adresse IP, l’heure, la page demandée et le nom de votre navigateur. L’application enregistre les erreurs avec la page où elles se sont produites, jamais votre adresse e-mail.",
+    "storedDeletions": "<b>Comptes supprimés :</b> le numéro d’identifiant du compte et la date de sa suppression, et rien d’autre, afin qu’une sauvegarde restaurée ne puisse pas faire revenir le compte.",
+    "storedMail": "<b>Problèmes d’e-mail :</b> si un e-mail envoyé à votre adresse est rejeté ou signalé comme spam, le service d’e-mail d’Amazon inscrit l’adresse sur une liste d’adresses à ne plus contacter, et envoie au propriétaire un avis qui contient l’adresse.",
+    "storedInbound": "<b>Les e-mails que vous envoyez à Glazecalc :</b> les e-mails adressés à privacy@glazecalcapp.com et aux autres adresses de Glazecalc sont analysés par Amazon pour détecter le spam et les virus, conservés dans un espace de stockage privé, et transférés vers la boîte de réception personnelle du propriétaire (Gmail).",
+    "basisHeading": "La base légale",
+    "basisContract": "<b>Faire fonctionner votre compte</b>, conserver ce que vous enregistrez et vous envoyer les e-mails concernant votre compte constituent le service que vous avez demandé : la base légale est le contrat entre vous et Glazecalc (article 6(1)(b) du RGPD).",
+    "basisInterests": "<b>Assurer la sécurité et le bon fonctionnement du site</b> : les journaux, les limites sur la fréquence des tentatives de connexion, les sauvegardes, le registre des comptes supprimés et la liste des adresses à ne plus contacter. Ils reposent sur l’intérêt légitime de Glazecalc à assurer la sécurité, à prévenir les abus et à ne pas perdre votre travail (article 6(1)(f)). Ils sont conservés peu de temps et ne servent à rien d’autre. Vous pouvez vous y opposer en écrivant à l’adresse ci-dessus.",
+    "basisNone": "Aucune décision vous concernant n’est prise de manière automatisée, il n’y a pas de profilage, et rien n’est utilisé à des fins publicitaires.",
+    "whereHeading": "Où vos données sont conservées, et qui les traite",
+    "hosting": "Glazecalc fonctionne sur Amazon Web Services (AWS) : le serveur (EC2), les sauvegardes (S3) et l’e-mail (Simple Email Service), le tout aux États-Unis, dans l’Oregon (us-west-2). AWS ne traite les données que pour le compte de Glazecalc, selon ses <dpa>conditions de traitement des données</dpa>. Personne d’autre ne les reçoit.",
+    "transfer": "Si vous vivez dans l’UE, au Royaume-Uni ou en Suisse, vos données sont transférées aux États-Unis. Selon Amazon, l’entreprise est certifiée au titre du <dpf>cadre de protection des données UE–États-Unis</dpf> et de ses extensions britannique et suisse, et les conditions d’AWS incluent les clauses contractuelles types de l’UE, qui s’appliqueraient encore si ce cadre, aujourd’hui contesté en justice, était invalidé. Le propriétaire et AWS se trouvent tous deux aux États-Unis, et le droit américain peut les obliger à remettre des données.",
+    "noThirdParties": "Votre navigateur ne charge rien depuis d’autres sites web : ni polices, ni scripts, ni images, ni outils de mesure d’audience venant d’ailleurs, et les paramètres de sécurité du site les bloquent. Les liens vers GitHub et d’autres sites ne sont suivis que si vous cliquez dessus.",
+    "choiceHeading": "Où votre compte est conservé, et votre choix",
+    "choiceProject": "Glazecalc est un projet gratuit et open source. Les comptes, et tout ce qu’ils contiennent, sont conservés sur des serveurs aux États-Unis, où que vous viviez, comme décrit plus haut.",
+    "choiceNoAccount": "Vous n’avez pas besoin de compte pour lire les guides, et vous pouvez essayer le calculateur avec Essayer maintenant, sans adresse e-mail ni mot de passe. Une période d’essai est conservée sur les mêmes serveurs pendant 14 jours.",
+    "choiceOwnCopy": "Chacun peut faire fonctionner sa propre copie de Glazecalc, sur son propre ordinateur ou serveur : le code est disponible gratuitement sur <source>GitHub</source>.",
+    "choiceDecision": "Créer ou non un compte ici, en sachant qu’il est conservé aux États-Unis, est une décision qui vous appartient.",
+    "choiceNoWarranty": "Glazecalc est fourni tel quel, sans garantie. Ses mainteneurs n’acceptent aucune responsabilité, y compris juridique, pour votre décision de créer un compte, ni pour le lieu où ses données sont conservées.",
+    "keptHeading": "Durée de conservation",
+    "keptAccount": "<b>Votre compte et ce que vous enregistrez :</b> jusqu’à ce que vous les supprimiez. Les comptes ne sont pas supprimés pour inactivité.",
+    "keptTrial": "<b>Une période d’essai :</b> 14 jours à partir de son début ; elle est ensuite supprimée avec tout son contenu, sauf si vous créez un compte pour la conserver.",
+    "keptResets": "<b>Liens de réinitialisation du mot de passe et liens envoyés par e-mail :</b> un lien de réinitialisation est valable 30 minutes et son enregistrement est supprimé après environ une heure ; un lien de confirmation d’adresse est valable, et conservé, 24 heures.",
+    "keptBackups": "<b>Sauvegardes :</b> les copies chiffrées de la base de données sont conservées 30 jours, et les copies du disque du serveur 7 jours. Un compte supprimé disparaît donc de toutes les sauvegardes dans un délai de 30 jours.",
+    "keptDeletions": "<b>L’enregistrement d’un compte supprimé :</b> 37 jours, soit un peu plus longtemps que toute sauvegarde.",
+    "keptLogs": "<b>Journaux :</b> ceux du serveur web, 14 jours. Les journaux propres à l’application et à la base de données sont limités en taille (50 Mo chacun), ce qui, sur un site peu fréquenté, remonte à plusieurs jours. Les copies du disque du serveur conservent les journaux jusqu’à 7 jours de plus.",
+    "keptMail": "<b>La liste des adresses à ne plus contacter :</b> jusqu’à ce que le propriétaire en retire une adresse, ce qu’il fait chaque mois pour les adresses qui n’appartiennent plus à aucun compte. Le propriétaire supprime les avis de rejet dans un délai de 30 jours.",
+    "keptInbound": "<b>Les e-mails que vous envoyez à Glazecalc :</b> 30 jours dans l’espace de stockage d’Amazon, et dans la boîte de réception du propriétaire le temps de vous répondre. Pour une demande concernant vos données, une courte note (date de réception, objet de la demande et suite donnée) est conservée trois ans.",
+    "rightsHeading": "Vos droits",
+    "rightsIntro": "Vous pouvez consulter, rectifier, récupérer et supprimer vos données. Vous pouvez faire l’essentiel vous-même sur la <account>page de votre compte</account> :",
+    "rightsExport": "<b>Les consulter et les emporter :</b> Télécharger mes données enregistre tout dans un seul fichier (JSON), et vos recettes et matières sous forme de tableurs (CSV).",
+    "rightsCorrect": "<b>Les rectifier :</b> modifiez vos paramètres et vos enregistrements à tout moment. Pour changer d’adresse e-mail, ouvrez le lien envoyé à la nouvelle adresse ; l’ancienne adresse, si elle avait été confirmée, est prévenue du changement, et tous les appareils sont déconnectés.",
+    "rightsDelete": "<b>Les supprimer :</b> Supprimer mon compte supprime immédiatement votre compte et tout ce que vous avez enregistré, et Abandonner l’essai fait de même pour une période d’essai. Les copies dans les sauvegardes disparaissent dans un délai de 30 jours.",
+    "rightsSignOut": "<b>Se déconnecter partout :</b> met fin aux sessions de votre compte sur tous les appareils.",
+    "rightsAsk": "Pour toute autre demande, par exemple pour que l’utilisation de vos données soit suspendue le temps de corriger une erreur, ou pour vous opposer à la façon dont elles sont utilisées, écrivez à <mail>privacy@glazecalcapp.com</mail>. C’est gratuit, et vous aurez une réponse dans un délai d’un mois. On vous demandera seulement de montrer que le compte est bien le vôtre, en vous connectant ou en ouvrant un lien envoyé à son adresse, jamais une pièce d’identité.",
+    "rightsComplain": "Si vous n’êtes pas satisfait, vous pouvez déposer une plainte auprès d’une autorité de protection des données : dans l’UE, <edpb>l’autorité de votre pays</edpb>, et au Royaume-Uni, l’<ico>Information Commissioner’s Office</ico>.",
+    "storageHeading": "Cookies et stockage du navigateur",
+    "storageIntro": "Glazecalc dépose un cookie et conserve quelques petites valeurs dans votre navigateur. Chacun sert à quelque chose que vous avez demandé : garder votre session ouverte, ou retenir un choix que vous avez fait. Aucun ne vous piste et aucun n’est partagé : la loi n’exige donc pas de demander votre accord au préalable, et il n’y a pas de bandeau de cookies.",
+    "storageLabel": "Cookies et stockage du navigateur",
+    "storageName": "Nom",
+    "storagePurpose": "À quoi il sert",
+    "storageLasts": "Durée de conservation",
+    "storageCookie": "Cookie",
+    "storageLocal": "Stockage local",
+    "storageSession": "Stockage de session",
+    "storageNote": "Vous pouvez effacer chacun de ces éléments à tout moment dans les paramètres de votre navigateur. La suppression de votre compte efface la note de connexion et chaque paramètre conservé ici.",
+    "keys": {
+      "cookie": {
+        "purpose": "Garde votre session ouverte. Il contient votre jeton de connexion. Les scripts de la page ne peuvent pas le lire, et votre navigateur ne l’envoie qu’au serveur de Glazecalc, en HTTPS, et jamais avec une requête qui part d’un autre site.",
+        "lasts": "Créé quand vous vous connectez, créez un compte ou démarrez une période d’essai. Jusqu’à la fermeture de votre navigateur, ou 7 jours si vous cochez Garder la session ouverte sur cet appareil ; 14 jours pour une période d’essai. La déconnexion le supprime."
+      },
+      "session": {
+        "purpose": "Indique qu’une session est ouverte, sur un compte ou une période d’essai, pour que l’application sache qu’elle doit interroger le serveur. Ne contient ni jeton ni mot de passe.",
+        "lasts": "Jusqu’à la déconnexion ou la fin de la session."
+      },
+      "trial": {
+        "purpose": "Pendant une période d’essai, son nom et sa date de fin, pour les afficher.",
+        "lasts": "Jusqu’à la fin de la période d’essai, ou jusqu’à ce qu’elle soit conservée ou abandonnée."
+      },
+      "settings": {
+        "purpose": "Un paramètre que vous avez modifié dans ce navigateur, pour que la page suivante l’affiche tout de suite, avant la réponse du serveur. <code>theme</code> et <code>palette</code> colorent la page avant qu’elle n’apparaisse, et <code>language</code> ouvre les pages dans votre langue.",
+        "lasts": "Jusqu’à ce que vous le modifiiez. La déconnexion rétablit ce que vous aviez choisi hors connexion, le cas échéant, et supprime le reste."
+      },
+      "visitor": {
+        "purpose": "La langue que vous avez choisie, ou le fait que vous avez fermé l’avis de traduction, hors connexion, pour les retrouver après la déconnexion.",
+        "lasts": "Jusqu’à ce que vous effaciez le stockage de votre navigateur ou supprimiez un compte dans ce navigateur."
+      },
+      "region": {
+        "purpose": "Le filtre de région d’une liste de la bibliothèque.",
+        "lasts": "Jusqu’à ce que vous remettiez le filtre sur toutes les régions."
+      },
+      "includeAdditives": {
+        "purpose": "Si les nouvelles recettes comptent leurs additifs dans la formule de Seger, selon votre dernier choix.",
+        "lasts": "Jusqu’à ce que vous effaciez le stockage de votre navigateur."
+      },
+      "recipeHelp": {
+        "purpose": "Le fait que vous avez masqué l’aide de la page des recettes.",
+        "lasts": "Jusqu’à ce que vous réaffichiez l’aide."
+      },
+      "print": {
+        "purpose": "Vos derniers choix pour imprimer une recette : la recette entière ou une préparation, et la taille de la préparation.",
+        "lasts": "Jusqu’à ce que vous effaciez le stockage de votre navigateur."
+      },
+      "token": {
+        "purpose": "Un jeton de connexion d’une ancienne version de Glazecalc. Il n’est plus jamais écrit.",
+        "lasts": "Supprimé à l’ouverture d’une page."
+      },
+      "readEnglish": {
+        "purpose": "Le fait que vous avez choisi de lire une page traduite en anglais, pour que l’application cesse de vous renvoyer vers votre langue.",
+        "lasts": "Jusqu’à la fermeture de l’onglet."
+      },
+      "reloadedFor": {
+        "purpose": "Après la mise en ligne d’une nouvelle version du site, la page rechargée et l’heure du rechargement, pour qu’une page ne se recharge pas plus d’une fois par minute.",
+        "lasts": "Jusqu’à la fermeture de l’onglet."
+      }
+    },
+    "childrenHeading": "Enfants",
+    "children": "Glazecalc est un outil pour les céramistes et ne s’adresse pas aux enfants.",
+    "changesHeading": "Modifications",
+    "changes": "Si cette notice change, la date en haut de la page change aussi."
   },
   "notFound": {
     "heading": "Page introuvable",

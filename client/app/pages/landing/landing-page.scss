@@ -25,6 +25,11 @@
   letter-spacing: 0.08em;
   font-size: 0.85rem;
   margin-bottom: 0.5rem;
+
+  // Japanese, Chinese and Korean have no capitals, and spaced-out characters read as separate words.
+  &:is(:lang(ja), :lang(zh), :lang(ko)) {
+    letter-spacing: normal;
+  }
 }
 
 .hero h1 {

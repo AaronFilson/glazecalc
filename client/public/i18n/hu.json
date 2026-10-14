@@ -14,6 +14,7 @@
     "signup": "Fiók létrehozása - Glazecalc",
     "forgot": "Jelszó visszaállítása - Glazecalc",
     "reset": "Új jelszó választása - Glazecalc",
+    "confirmEmail": "E-mail-cím megerősítése - Glazecalc",
     "home": "Az Ön műhelyfüzete - Glazecalc",
     "recipe": "Receptek - Glazecalc",
     "material": "Nyersanyagok - Glazecalc",
@@ -74,6 +75,16 @@
   },
   "meta": {
     "description": "Írja be a mázreceptet: látja a Seger-képletét (UMF), SiO₂ : Al₂O₃ és olvasztóanyag-arányát. Ingyenes, nyílt forráskódú; receptek, nyersanyagok, égetési naplók.",
+    "guides": "Közérthető útmutatók kezdő fazekasoknak: mi a kerámia máz, hogyan készítse és keverje biztonságosan, hogyan védje családját és égessen egyszerű kemencében.",
+    "glazingBasics": "A máz összetétele, hogyan lesz belőle üveg a kemencében, és mit jelentenek a gúlák, a frittek, a Seger-képlet (UMF) és a mázhibák. Útmutató kezdő fazekasoknak.",
+    "makingAGlaze": "Kerámia máz vásárlása, tárolása, bemérése és keverése, a sűrűség beállítása, próba a saját agyagon és feljegyzések, hogy újra elkészíthesse.",
+    "safeMixing": "Hogyan tartsa távol a mázport a tüdejétől és a kemence füstjét otthonától: biztonságos szokások, légzésvédők, takarítás, szellőzés, kockázatos nyersanyagok.",
+    "homeSafety": "Teendők, ha gyermek vagy háziállat máznyersanyagot nyel le; a nyersanyagok, a por, a kemence és a kézműves edények biztonságos kezelése a család körül.",
+    "firing": "Elektromos kemence égetése: a gúlák kiválasztása, elhelyezése és leolvasása, közzétett égetési programok zsengéléshez és mázas égetéshez, gúlatáblázattal.",
+    "advice": "A Glazecalc gyakorlati tanácsai a keveréshez, a mázazáshoz és az égetéshez, mellettük saját tanácsaival. Ingyenes fazekasoknak és keramikusoknak.",
+    "about": "A Glazecalc ingyenes, nyílt forráskódú mázkémiai kalkulátor és műhelyfüzet. Nézze meg, hogyan számítja ki a Seger-képletet (UMF), és hogyan épül fel.",
+    "privacy": "Hogyan kezeli a Glazecalc az adatait: nincs reklám, nincs analitika, nincs követés, és semmit nem ad el. Mit őriz meg, miért, és hogyan élhet a jogaival.",
+    "signup": "Hozzon létre ingyenes Glazecalc-fiókot, hogy megőrizze mázreceptjeit, nyersanyagait, jegyzeteit és égetési naplóit. Nincs reklám, és adatait soha nem adjuk el.",
     "imageAlt": "Glazecalc: értse meg a mázait, ne csak keverje őket."
   },
   "notices": {
@@ -255,6 +266,8 @@
     "label": "A fordításról",
     "text": "Ezt az oldalt mesterséges intelligencia fordította angolból. A Glazecalc nyílt forráskódú: ha valami nem jól hangzik, kérjük, javasoljon javítást a GitHubon.",
     "brief": "Mesterséges intelligencia fordította angolból.",
+    "plain": "Ezt az oldalt mesterséges intelligencia fordította angolból, amely ezt a nyelvet a legtöbb nyelvnél kevésbé jól kezeli. Az angol oldal talán jobban olvasható. A Glazecalc nyílt forráskódú: ha valami nem jól hangzik, kérjük, javasoljon javítást a GitHubon.",
+    "plainBrief": "Mesterséges intelligencia fordította; az angol talán jobban olvasható.",
     "suggest": "Javítási javaslat",
     "english": "Az angol eredeti",
     "close": "Bezárás"

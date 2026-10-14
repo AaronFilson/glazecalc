@@ -118,6 +118,10 @@ describe('user API', () => {
         temperature: 'F',
         cones: 'orton'
       });
+      // SK cones (JIS R 8101) are a third way to fire.
+      expect((await put(token, { cones: 'sk' })).body.cones).to.equal('sk');
+      expect((await User.findById(user._id))?.preferences?.cones).to.equal('sk');
+      expect((await put(token, { cones: 'temperature' })).body.cones).to.equal('temperature');
       // Back to following the region.
       const back = await put(token, { region: '', format: 'auto', temperature: '', cones: '' });
       expect(back.body).to.include({ region: '', format: 'auto', temperature: '', cones: '' });

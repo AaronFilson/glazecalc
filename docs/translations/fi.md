@@ -157,7 +157,14 @@ Orton's, and Hortling gives stoneware firing in Seger numbers (”Sk.8-10”). A
 - "Orton cone" → ”Orton-keila” (Varnia's spelling); at the first mention on a page, and wherever systems are compared:
   ”Orton-keila 6”, then ”keila 6”.
 - **Never** write ”Seger-keila 6”, ”Sk 6” or ”SK 6a” for an Orton number. ”Seger-keila” appears only where the English
-  says "Seger cones", and then means the SK series.
+  says "Seger cones", and then means the German Seger series (Varnia's ”Seger-keilat”, Hortling's ”Sk.8-10”): never
+  label those ”SK”.
+- **SK cones** (the app's third firing choice) are the Japanese cones to JIS R 8101: ”SK-keila” (pl. ”SK-keilat”),
+  numbers always with ”SK” before them and the printed ”a” kept (”SK 6a”, ”SK 8”); "To SK cones" → ”SK-keiloina”.
+  Never converted to an Orton number and never called ”Seger-keila”. Kyoto cones → ”Kioton keilat”; plaque →
+  ”keilapidike”, pat of clay → ”savipeti” (as in the firing guide). A cone series (Orton, SK) is a ”keilajärjestelmä”, because
+  ”keilasarja” is the cone pack. The SK guide cone is the next cooler cone (”yhtä numeroa viileämpi”), the guard cone the
+  next hotter.
 - Not ”kartio”: that is the geometric and the traffic cone.
 
 ### The unity formula
@@ -167,6 +174,14 @@ Orton's, and Hortling gives stoneware firing in Seger numbers (”Sk.8-10”). A
 ”Segerin kaava” (gen. Segerin kaavan, iness. Segerin kaavassa). The app's short forms "unity formula", "Unity formula"
 and "Unity:" are all ”Segerin kaava” / ”Segerin kaava:”. Do not alternate with ”empiirinen kaava” in the app: one name
 for one thing.
+
+### Search terms
+
+Finnish searchers (research notes, 14 October 2026) use ”Segerin kaava” (also ”empiirinen kaava”, which stays out of
+the app's text), ”lasiteresepti” and ”keramiikan lasitteet”. The bare ”lasitus” is balcony and window glazing, so page
+descriptions pair the glaze word with a ceramics word (”keramiikan lasite”) where the English meaning allows, and write
+”Segerin kaava (UMF)” where the English says unity formula. The landing title stays ”Glazecalc: ilmainen lasitekemian
+laskin keraamikoille”.
 
 ### Gender-neutral wording
 
@@ -621,6 +636,14 @@ before them end in a colon.
 The EU text's word for a piece is ”tarvike” (”Keittämiseen tarkoitetut tarvikkeet”, ”sisäsyvyys … enintään 25 mm”);
 the guides use the plainer ”esine” and ”astia” for the same thing. "per 100 g" keeps the symbol (”g/100 g”), never
 ”100 grammaa kohden”, so the check finds the same figure and unit.
+
+Added in the October 2026 catch-up (Japan, Türkiye, the privacy page): control concentration (Japan, 管理濃度) →
+”hallintapitoisuus” (no Finnish source found: a coinage, for a Finnish potter to check); yardstick → ”mittapuu”;
+Türkiye → ”Turkki”; Japan Poison Information Center → ”Japanin myrkytystietokeskus”, National Poison Information
+Centre (Türkiye) → ”Kansallinen myrkytystietokeskus”, the native names in brackets as the English gives them; data
+controller (GDPR) → ”rekisterinpitäjä”; legal basis → ”oikeusperuste”; Standard Contractual Clauses →
+”vakiosopimuslausekkeet”; sign out everywhere → ”Kirjaudu ulos kaikkialta”; Keep me signed in → ”Pysy kirjautuneena
+tällä laitteella”; Download my data → ”Omien tietojen lataaminen”.
 
 ## 3. Never translated
 

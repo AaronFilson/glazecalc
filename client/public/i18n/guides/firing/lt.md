@@ -278,6 +278,97 @@ Label: Kito degimo pataisymai
 
 :::
 
+:::sk
+
+## Degimas pagal SK piroskopus {#sk-cones}
+
+SK piroskopai – tai pirometriniai kūgiai, pagaminti pagal Japonijos standartą JIS R 8101; Japonijoje juos parduoda tokie prekiautojai kaip Yuko Trading (有恒商事). Kaip ir bet kuris piroskopas{{en: cone}}, SK piroskopas matuoja šilumos poveikį{{en: heatwork}}, o ne vien temperatūrą: jis suminkštėja ir sulinksta, kai dirbiniai gauna pakankamai šilumos, o jūs įvertinate, kiek jis sulinko. Kontroliniai piroskopai{{en: witness cone}}, sulinkimo vertinimas ir išlaikymai{{en: hold}} jam tinka taip pat kaip bet kuriam piroskopui. Šiame skyriuje prie kiekvieno piroskopo nurodoma jo sistema, ir SK numeris niekada nepaverčiamas kitos sistemos numeriu: skirtingų piroskopų serijų numeriai nėra tarpusavyje keičiami.
+
+> [!NOTE]
+> Prieš numerį visada rašykite „SK“. Daugelyje senesnių japoniškų receptų parašyta tik „SK 8“ arba „SK 9“, nenurodant, kieno tai piroskopas. Kioto piroskopai ir SK piroskopai pagal JIS turi tuos pačius numerius, bet sulinksta skirtingoje temperatūroje (žr. „Kioto piroskopai“ toliau).
+
+### Dideli piroskopai
+
+Standarte yra du dydžiai. Dideli piroskopai (大型コーン) „daugiausia naudojami išdegimo laipsniui matuoti“ (焼度測定), o to ir reikia keramikui. Mažieji piroskopai (nuo SK 26 iki SK 42, intervalo viršuje) „daugiausia naudojami ugniai atsparumo bandymams“, ir čia jie neaptariami. Toliau pateiktoje lentelėje nurodyti dideli piroskopai nuo SK 022 iki SK 20.
+
+Čia numeriai eina nuo SK 022, vėsiausio, iki SK 20. Nuo SK 015 iki SK 6 išspausdinti numeriai turi raidę „a“ (SK 015a, SK 6a); rašykite juos taip, kaip išspausdinta.
+
+### Didelių piroskopų statymas
+
+Kiekvieną didelį piroskopą įstatykite į stovelį arba molio paplotėlį, pakreiptą į jo linkimo pusę. Kaip ir bet kurio piroskopo, aukštį ir pasvirimą kiekvieną kartą degdami išlaikykite vienodus, nes bet kurio iš jų skirtumas pakeičia, kiek piroskopas sulinksta. Tris rinkinio{{en: cone pack}} piroskopus (apie juos – toliau) statykite kartu, giliai krosnyje, arčiau įkrovos vidurio, kur jie gauna tiek pat šilumos kaip dirbiniai, tačiau kur juos matote pro stebėjimo angą; prieš uždarydami krosnį patikrinkite, ar matote visus tris.
+
+### Orientacinis, degimo ir apsauginis piroskopai
+
+Piroskopai parduodami ir statomi po tris: orientacinis piroskopas, degimo piroskopas, atitinkantis tikslą, ir apsauginis piroskopas. Degimo piroskopu imkite tą SK numerį, kurį nurodo jūsų receptas ar molis, orientaciniu – artimiausią vėsesnį piroskopą (viena eilute aukščiau lentelėje), o apsauginiu – artimiausią karštesnį. Kai orientacinis piroskopas pradeda linkti, pabaiga arti; kai sulinksta apsauginis piroskopas, degimas nuėjo per toli.
+
+### SK piroskopų lentelė
+
+Table: Dideli SK piroskopai (JIS R 8101): kiekvieno nominalioji (JIS) temperatūra
+Label: SK piroskopų lentelė
+
+| Piroskopas | Nominalioji (JIS) temperatūra |
+| ---------- | ----------------------------: |
+| SK 022     |           {{1112 °F; 600 °C}} |
+| SK 021     |           {{1202 °F; 650 °C}} |
+| SK 020     |           {{1238 °F; 670 °C}} |
+| SK 019     |           {{1274 °F; 690 °C}} |
+| SK 018     |           {{1310 °F; 710 °C}} |
+| SK 017     |           {{1346 °F; 730 °C}} |
+| SK 016     |           {{1382 °F; 750 °C}} |
+| SK 015a    |           {{1454 °F; 790 °C}} |
+| SK 014a    |           {{1499 °F; 815 °C}} |
+| SK 013a    |           {{1535 °F; 835 °C}} |
+| SK 012a    |           {{1571 °F; 855 °C}} |
+| SK 011a    |           {{1616 °F; 880 °C}} |
+| SK 010a    |           {{1652 °F; 900 °C}} |
+| SK 09a     |           {{1688 °F; 920 °C}} |
+| SK 08a     |           {{1724 °F; 940 °C}} |
+| SK 07a     |           {{1760 °F; 960 °C}} |
+| SK 06a     |           {{1796 °F; 980 °C}} |
+| SK 05a     |          {{1832 °F; 1000 °C}} |
+| SK 04a     |          {{1868 °F; 1020 °C}} |
+| SK 03a     |          {{1904 °F; 1040 °C}} |
+| SK 02a     |          {{1940 °F; 1060 °C}} |
+| SK 01a     |          {{1976 °F; 1080 °C}} |
+| SK 1a      |          {{2012 °F; 1100 °C}} |
+| SK 2a      |          {{2048 °F; 1120 °C}} |
+| SK 3a      |          {{2084 °F; 1140 °C}} |
+| SK 4a      |          {{2120 °F; 1160 °C}} |
+| SK 5a      |          {{2156 °F; 1180 °C}} |
+| SK 6a      |          {{2192 °F; 1200 °C}} |
+| SK 7       |          {{2246 °F; 1230 °C}} |
+| SK 8       |          {{2282 °F; 1250 °C}} |
+| SK 9       |          {{2336 °F; 1280 °C}} |
+| SK 10      |          {{2372 °F; 1300 °C}} |
+| SK 11      |          {{2408 °F; 1320 °C}} |
+| SK 12      |          {{2462 °F; 1350 °C}} |
+| SK 13      |          {{2516 °F; 1380 °C}} |
+| SK 14      |          {{2570 °F; 1410 °C}} |
+| SK 15      |          {{2615 °F; 1435 °C}} |
+| SK 16      |          {{2660 °F; 1460 °C}} |
+| SK 17      |          {{2696 °F; 1480 °C}} |
+| SK 18      |          {{2732 °F; 1500 °C}} |
+| SK 19      |          {{2768 °F; 1520 °C}} |
+| SK 20      |          {{2786 °F; 1530 °C}} |
+
+Visi skaičiai yra nominalieji (JIS): temperatūra, kurią standartas nurodo piroskopui, kaip išspausdinta Yuko Trading lentelėje. Lentelėje kaitinimo sparta nenurodyta. Standartas pateikia atskaitos temperatūras. Esant keramikams įprastai maždaug 100 °C/val. spartai, Kioto miesto institutas išmatavo, kad jo paties Kioto piroskopai sulinksta 40–70 °C žemesnėje temperatūroje, nei JIS nurodo tam pačiam numeriui; tokių SK piroskopų pagal JIS matavimų neradome. Pastatykite kontrolinį piroskopą ir palyginkite.
+
+### Kioto piroskopai
+
+Kioto piroskopai (京都ゼーゲル), kuriuos gamino Kioto miesto institutas, nebegaminami: žiniasklaidos pranešimais, institutas jų gamybą nutraukė 2009 finansinių metų pabaigoje. Jie turi tuos pačius numerius kaip SK piroskopai pagal JIS, bet sulinksta žemesnėje temperatūroje: Kioto piroskopas dažniausiai sulinksta maždaug tokioje temperatūroje kaip dviem numeriais vėsesnis SK piroskopas pagal JIS. Kioto receptas, kuriame parašyta „SK 8“, gali turėti omenyje Kioto piroskopą. Institutas yra paskelbęs patarimų keramikams, pereinantiems nuo Kioto piroskopų prie Ortono piroskopų, ir vietoj savo Kioto SK 12 naudoja Ortono piroskopą 10; tai paties instituto pasirinkimas pagal jo matavimus esant 100 °C/val. spartai, ir jis netaikomas jokiam kitam piroskopui.
+
+### Japonijoje parduodami Ortono piroskopai
+
+Ortono savaime stovintys piroskopai Japonijoje parduodami pavadinimu 立つゼーゲル („stovintis Segeris“), nes jiems nereikia nei stovelio, nei laikiklio. Tai Ortono piroskopai, su Ortono numeriais ir Ortono lentele (aukščiau): degdami iki tokio piroskopo vadovaukitės tik jo Ortono numeriu, o SK ir Ortono piroskopus statykite atskiruose rinkiniuose, niekada ne tame pačiame.
+
+### SK piroskopų šaltiniai
+
+- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (SK piroskopų lentelė, patikrinta 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
+- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (galioja, pakartotinai patvirtintas 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [Kioto miesto pramonės technologijų ir kultūros institutas: į ką atkreipti dėmesį pereinant nuo Kioto piroskopų prie Ortono piroskopų](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
+
+:::
+
 ## Biskvitinis degimas {#bisque}
 
 **Biskvitinis degimas**{{en: bisque}} (JK – biscuit) – tai pirmasis, žemesnės temperatūros degimas, kuris sausą molį paverčia kietais, akytais, glazūruoti paruoštais dirbiniais. Paprastai degama iki piroskopų{{en: cone}} 06–04, t. y. {{1828–1945 °F; 998–1063 °C}} pagal Ortono lentelę; Jungtinės Karalystės keramikai dažnai dega iki maždaug {{1000 °C; 1832 °F}}, o tai artima piroskopui 06. Biskvitas turėtų likti akytas, „paprastai daugiau nei 15%“ (Digitalfire), kad sugertų vandenį iš glazūros{{en: glaze}}. Po per žemo biskvitinio degimo dirbinys sugeria per storą glazūros sluoksnį, kuris paskui sutrūkinėja ir **susitraukia**{{en: crawling}} (susitraukia į salas, palikdamas neglazūruoto molio plotus). Nepakankamai išdegtas biskvitas, be to, „glazūros degimo metu toliau traukiasi“, o tai gadina glazūros ir šukės suderinamumą{{en: glaze fit}}. Krauti galima nesibaiminant: dirbiniai gali liestis, dangteliai gali būti degami uždėti ant savo indų, o dubenys dedami kraštas prie krašto, o ne sudėti vienas į kitą.

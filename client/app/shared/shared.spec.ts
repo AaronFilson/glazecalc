@@ -9,7 +9,7 @@ import { ADDITIVE_OXIDES, FIRED_OXIDES, FIRING_FIELDS, fieldsText, firingFieldLa
 import { TranslocoService } from '@jsverse/transloco';
 import { textKey } from '../../../lib/regions/languages';
 import { useCodedMessages } from '../i18n/coded';
-import { standardText } from './library-info';
+import { byNameIn, findNamed, matchesWords, standardText } from './library-info';
 import { PageHeader } from './page-header';
 
 describe('Notices', () => {
@@ -185,5 +185,34 @@ describe('standard records’ words', () => {
       'Toxic. Almost insoluble in water.'
     );
     expect(standardText({ ownedBy: 'Standard' }, undefined)).toBe('');
+  });
+});
+
+describe('finding and sorting records by name', () => {
+  const frit = { name: 'Frit 3134', aliases: ['Ferro 3134'] };
+
+  it('matches typed words whatever their case or width', () => {
+    for (const typed of ['frit', 'ＦＲＩＴ', 'ｆｅｒｒｏ ３１３４', 'FRIT 3134']) {
+      expect(matchesWords(frit, typed), typed).toBe(true);
+    }
+    expect(matchesWords(frit, 'feldspar')).toBe(false);
+    expect(findNamed([frit], ' ＦＥＲＲＯ　３１３４ ')).toBe(frit);
+  });
+
+  it("sorts names as the page's language does, whatever their case", () => {
+    const names = (language: string, list: string[]) =>
+      list
+        .map((name) => ({ name }))
+        .sort(byNameIn(language))
+        .map((record) => record.name);
+    expect(names('en', ['zinc', 'Talc', 'ball clay'])).toEqual(['ball clay', 'Talc', 'zinc']);
+    // Swedish sorts ö after z; German as an o.
+    expect(names('sv', ['Öland', 'Zink', 'Oxid'])).toEqual(['Oxid', 'Zink', 'Öland']);
+    expect(names('de', ['Zink', 'Oxid', 'Öland'])).toEqual(['Öland', 'Oxid', 'Zink']);
+    // Simplified Chinese by pinyin, Traditional by strokes.
+    expect(names('zh-Hans', ['石英', '铝'])).toEqual(['铝', '石英']);
+    expect(names('zh-Hant', ['鋁', '石英'])).toEqual(['石英', '鋁']);
+    // A pseudo-locale sorts as English.
+    expect(names('en-XA', ['b', 'A'])).toEqual(['A', 'b']);
   });
 });

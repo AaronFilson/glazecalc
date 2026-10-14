@@ -64,7 +64,115 @@
   "privacy": {
     "title": "Privacy",
     "lead": "Laatst bijgewerkt in oktober 2026.",
-    "shortHeading": "In het kort"
+    "shortHeading": "In het kort",
+    "short": "Glazecalc bewaart wat nodig is om uw account te laten werken, en niets meer. Er zijn geen advertenties, geen analysetools en geen tracking. Uw gegevens worden nooit verkocht, en het enige bedrijf dat ermee omgaat, is Amazon Web Services, dat de site host en de e-mail verstuurt.",
+    "whoHeading": "Wie verantwoordelijk is",
+    "who": "Glazecalc is een gratis, open source project zonder winstoogmerk, gerund door de eigenaar, Aaron Filson, in de Verenigde Staten. Hij beslist wat er met uw gegevens gebeurt, dus in de wetgeving over gegevensbescherming is hij de “verwerkingsverantwoordelijke”.",
+    "contact": "Om iets over uw gegevens te vragen of een van uw rechten uit te oefenen, schrijft u naar <mail>privacy@glazecalcapp.com</mail>. U kunt ook <issues>een issue openen op GitHub</issues>, maar issues zijn openbaar: zet er nooit uw e-mailadres of iets persoonlijks in. Het meeste wat met uw gegevens te maken heeft, kunt u zelf doen op uw <account>accountpagina</account>.",
+    "storedHeading": "Wat wordt bewaard, en waarom",
+    "storedAccount": "<b>Uw account:</b> uw e-mailadres, en uw wachtwoord, alleen opgeslagen als eenrichtingshash (bcrypt), nooit als het wachtwoord zelf. Uw instellingen (zoals taal, regio en eenheden) en de lijst met grondstoffen die u in voorraad hebt, worden erbij bewaard. Een account heeft een e-mailadres nodig, om in te loggen en om een vergeten wachtwoord opnieuw in te stellen. Als u een account aanmaakt, wordt er een link naar het adres gestuurd om te bevestigen dat het van u is; tot dan gaat er alleen e-mail naartoe als u erom vraagt, zoals om uw wachtwoord opnieuw in te stellen.",
+    "storedSaved": "<b>Wat u opslaat:</b> uw recepten, grondstoffen, toevoegingen, notities, stookverslagen en adviezen, zoals u ze hebt geschreven. Alleen u kunt ze zien: er wordt niets tussen gebruikers gedeeld.",
+    "storedTrial": "<b>Een proefperiode (Nu proberen):</b> geen e-mailadres of wachtwoord, alleen een verzonnen naam zoals “speckled quiet kilns”. Als u tijdens een proefperiode in dezelfde browser inlogt bij een account, gaat wat u in de proefperiode hebt gemaakt over naar dat account.",
+    "storedResets": "<b>Links om een wachtwoord opnieuw in te stellen en e-maillinks:</b> welk account erom vroeg, wanneer, het adres waarnaar een link om een adres te bevestigen is gestuurd, en een vingerafdruk van elke link (niet de link zelf).",
+    "storedLogs": "<b>Logbestanden:</b> de webserver registreert elk verzoek: uw IP-adres, het tijdstip, de opgevraagde pagina en de naam van uw browser. De app registreert fouten met de pagina waarop ze optraden, nooit uw e-mailadres.",
+    "storedDeletions": "<b>Verwijderde accounts:</b> het id-nummer van het account en wanneer het is verwijderd, en verder niets, zodat een teruggezette back-up het account niet kan terugbrengen.",
+    "storedMail": "<b>Problemen met e-mail:</b> als e-mail naar uw adres onbestelbaar terugkomt of als spam wordt gemeld, zet de e-maildienst van Amazon het adres op een lijst van adressen die geen e-mail meer krijgen, en stuurt de eigenaar een melding waarin het adres staat.",
+    "storedInbound": "<b>E-mail die u naar Glazecalc stuurt:</b> e-mail naar privacy@glazecalcapp.com en de andere adressen van Glazecalc wordt door Amazon gecontroleerd op spam en virussen, in een privéopslag bewaard en doorgestuurd naar de eigen inbox van de eigenaar (Gmail).",
+    "basisHeading": "De rechtsgrond",
+    "basisContract": "<b>Het laten werken van uw account</b>, het bewaren van wat u opslaat en de e-mails over uw account zijn de dienst waar u om hebt gevraagd: de rechtsgrond is de overeenkomst tussen u en Glazecalc (AVG, artikel 6, lid 1, onder b).",
+    "basisInterests": "<b>De site veilig en werkend houden</b>: de logbestanden, de grenzen aan hoe vaak iemand kan proberen in te loggen, de back-ups, de registratie van verwijderde accounts en de lijst van adressen die geen e-mail meer krijgen. Deze berusten op het gerechtvaardigd belang van Glazecalc bij beveiliging, het voorkomen van misbruik en het niet kwijtraken van uw werk (artikel 6, lid 1, onder f). Ze worden kort bewaard en voor niets anders gebruikt. U kunt er bezwaar tegen maken door naar het adres hierboven te schrijven.",
+    "basisNone": "Er wordt niets over u automatisch beslist, er is geen profilering en niets wordt voor reclame gebruikt.",
+    "whereHeading": "Waar het wordt bewaard, en wie ermee omgaat",
+    "hosting": "Glazecalc draait op Amazon Web Services (AWS): de server (EC2), de back-ups (S3) en de e-mail (Simple Email Service), allemaal in de Verenigde Staten, in Oregon (us-west-2). AWS verwerkt de gegevens alleen namens Glazecalc, onder zijn <dpa>voorwaarden voor gegevensverwerking</dpa>. Niemand anders ontvangt ze.",
+    "transfer": "Als u in de EU, het Verenigd Koninkrijk of Zwitserland woont, gaan uw gegevens naar de Verenigde Staten. Amazon zegt dat het is gecertificeerd onder het <dpf>EU-VS-kader voor gegevensbescherming</dpf> en de uitbreidingen daarvan voor het Verenigd Koninkrijk en Zwitserland, en de voorwaarden van AWS bevatten de standaardcontractbepalingen van de EU, die nog steeds zouden gelden als het kader, dat nu bij de rechter wordt aangevochten, ongeldig werd verklaard. De eigenaar en AWS zitten allebei in de VS, en de Amerikaanse wet kan hen verplichten gegevens af te geven.",
+    "noThirdParties": "Uw browser laadt niets van andere websites: geen lettertypen, scripts, afbeeldingen of analysetools van elders, en de beveiligingsinstellingen van de site blokkeren ze. Links naar GitHub en andere sites worden alleen gevolgd als u erop klikt.",
+    "choiceHeading": "Waar uw account wordt bewaard, en uw keuze",
+    "choiceProject": "Glazecalc is een gratis, open source project. Accounts, en alles wat erin staat, worden bewaard op servers in de Verenigde Staten, waar u ook woont, zoals hierboven beschreven.",
+    "choiceNoAccount": "U hebt geen account nodig om de gidsen te lezen, en u kunt de calculator proberen met Nu proberen, zonder e-mailadres of wachtwoord. Een proefperiode wordt 14 dagen op dezelfde servers bewaard.",
+    "choiceOwnCopy": "Iedereen kan een eigen kopie van Glazecalc draaien, op een eigen computer of server: de code staat gratis op <source>GitHub</source>.",
+    "choiceDecision": "Of u hier een account aanmaakt, in de wetenschap dat het in de Verenigde Staten wordt bewaard, is uw eigen beslissing.",
+    "choiceNoWarranty": "Glazecalc wordt aangeboden zoals het is, zonder garantie. De beheerders aanvaarden geen verantwoordelijkheid of aansprakelijkheid voor uw beslissing om een account aan te maken, of voor waar de gegevens ervan worden bewaard.",
+    "keptHeading": "Hoe lang het wordt bewaard",
+    "keptAccount": "<b>Uw account en wat u opslaat:</b> tot u ze verwijdert. Accounts worden niet verwijderd omdat ze niet worden gebruikt.",
+    "keptTrial": "<b>Een proefperiode:</b> 14 dagen vanaf de start; daarna wordt ze met alles erin verwijderd, tenzij u een account aanmaakt om ze te bewaren.",
+    "keptResets": "<b>Links om een wachtwoord opnieuw in te stellen en e-maillinks:</b> een link om het wachtwoord opnieuw in te stellen werkt 30 minuten, en de registratie ervan wordt na ongeveer een uur verwijderd; een link om een adres te bevestigen werkt, en wordt bewaard, 24 uur.",
+    "keptBackups": "<b>Back-ups:</b> versleutelde kopieën van de database worden 30 dagen bewaard, en kopieën van de schijf van de server 7 dagen. Een verwijderd account is dus binnen 30 dagen uit elke back-up verdwenen.",
+    "keptDeletions": "<b>De registratie van een verwijderd account:</b> 37 dagen, net langer dan elke back-up.",
+    "keptLogs": "<b>Logbestanden:</b> die van de webserver 14 dagen. De eigen logbestanden van de app en de database zijn begrensd in grootte (elk 50 MB), wat op een rustige site enkele dagen teruggaat. De kopieën van de schijf van de server bewaren logbestanden tot 7 dagen langer.",
+    "keptMail": "<b>De lijst van adressen die geen e-mail meer krijgen:</b> tot de eigenaar een adres verwijdert, wat hij elke maand doet voor adressen die niet meer bij een account horen. De eigenaar verwijdert meldingen van onbestelbare e-mail binnen 30 dagen.",
+    "keptInbound": "<b>E-mail die u naar Glazecalc stuurt:</b> 30 dagen in de opslag van Amazon, en in de inbox van de eigenaar zo lang als nodig is om u te antwoorden. Bij een verzoek over uw gegevens wordt een korte notitie (wanneer het binnenkwam, wat er werd gevraagd en wat er is gedaan) drie jaar bewaard.",
+    "rightsHeading": "Uw rechten",
+    "rightsIntro": "U kunt uw gegevens inzien, corrigeren, meenemen en verwijderen. Het meeste daarvan kunt u zelf doen op uw <account>accountpagina</account>:",
+    "rightsExport": "<b>Inzien en meenemen:</b> Mijn gegevens downloaden slaat alles op in één bestand (JSON), en uw recepten en grondstoffen als spreadsheets (CSV).",
+    "rightsCorrect": "<b>Corrigeren:</b> wijzig uw instellingen en uw gegevens op elk moment. Om uw e-mailadres te wijzigen, opent u de link die naar het nieuwe adres is gestuurd; het oude adres krijgt, als het bevestigd was, bericht van de wijziging, en elk apparaat wordt uitgelogd.",
+    "rightsDelete": "<b>Verwijderen:</b> Mijn account verwijderen verwijdert uw account en alles wat u hebt opgeslagen in één keer, en Proefperiode wissen doet hetzelfde voor een proefperiode. Kopieën in back-ups zijn binnen 30 dagen verdwenen.",
+    "rightsSignOut": "<b>Overal uitloggen:</b> beëindigt de sessies van uw account op elk apparaat.",
+    "rightsAsk": "Voor al het andere, zoals vragen om uw gegevens niet te gebruiken zolang een fout wordt rechtgezet, of bezwaar maken tegen hoe ze worden gebruikt, schrijft u naar <mail>privacy@glazecalcapp.com</mail>. Dat is gratis, en u krijgt binnen een maand antwoord. U wordt alleen gevraagd aan te tonen dat het account van u is, door in te loggen of door een link te openen die naar het adres ervan is gestuurd, nooit om een identiteitsbewijs.",
+    "rightsComplain": "Als u niet tevreden bent, kunt u een klacht indienen bij een toezichthouder voor gegevensbescherming: in de EU bij <edpb>de toezichthouder in uw land</edpb>, en in het Verenigd Koninkrijk bij het <ico>Information Commissioner’s Office</ico>.",
+    "storageHeading": "Cookies en browseropslag",
+    "storageIntro": "Glazecalc plaatst één cookie en bewaart een paar kleine waarden in uw browser. Elk ervan is er voor iets waar u om hebt gevraagd: ingelogd blijven, of een keuze onthouden die u hebt gemaakt. Geen ervan volgt u en geen ervan wordt gedeeld, dus de wet vereist niet dat eerst toestemming wordt gevraagd, en er is geen cookiebanner.",
+    "storageLabel": "Cookies en browseropslag",
+    "storageName": "Naam",
+    "storagePurpose": "Waarvoor",
+    "storageLasts": "Hoe lang het blijft",
+    "storageCookie": "Cookie",
+    "storageLocal": "Lokale opslag",
+    "storageSession": "Sessieopslag",
+    "storageNote": "U kunt elk hiervan op elk moment wissen in de instellingen van uw browser. Als u uw account verwijdert, worden de inlognotitie en elke instelling die hier wordt bewaard, verwijderd.",
+    "keys": {
+      "cookie": {
+        "purpose": "Houdt u ingelogd. De cookie bevat uw inlogtoken. Scripts op de pagina kunnen hem niet lezen, en uw browser stuurt hem alleen naar de eigen server van Glazecalc, via HTTPS, en nooit met een verzoek dat op een andere site begint.",
+        "lasts": "Geplaatst als u inlogt, een account aanmaakt of een proefperiode start. Tot u uw browser sluit, of 7 dagen als u Ingelogd blijven op dit apparaat aanvinkt; 14 dagen voor een proefperiode. Uitloggen verwijdert hem."
+      },
+      "session": {
+        "purpose": "Noteert dat u bent ingelogd, bij een account of in een proefperiode, zodat de app weet dat hij de server moet raadplegen. Bevat geen token of wachtwoord.",
+        "lasts": "Tot u uitlogt of de sessie eindigt."
+      },
+      "trial": {
+        "purpose": "Tijdens een proefperiode de naam en de einddatum ervan, om die te tonen.",
+        "lasts": "Tot de proefperiode afloopt, of wordt bewaard of gewist."
+      },
+      "settings": {
+        "purpose": "Een instelling die u in deze browser hebt gewijzigd, zodat de volgende pagina die meteen toont, voordat de server antwoordt. <code>theme</code> en <code>palette</code> kleuren de pagina voordat die verschijnt, en <code>language</code> opent pagina’s in uw taal.",
+        "lasts": "Tot u de instelling wijzigt. Bij uitloggen komt terug wat u eventueel had gekozen terwijl u was uitgelogd, en de rest wordt verwijderd."
+      },
+      "visitor": {
+        "purpose": "De taal die u hebt gekozen, of dat u de vertalingsmelding hebt gesloten, terwijl u was uitgelogd, zodat dat terugkomt als u uitlogt.",
+        "lasts": "Tot u de opslag van uw browser wist of een account in deze browser verwijdert."
+      },
+      "region": {
+        "purpose": "Het regiofilter van een lijst in de bibliotheek.",
+        "lasts": "Tot u het filter terugzet op alle regio’s."
+      },
+      "includeAdditives": {
+        "purpose": "Of nieuwe recepten hun toevoegingen meetellen in de Segerformule, zoals u het laatst hebt gekozen.",
+        "lasts": "Tot u de opslag van uw browser wist."
+      },
+      "recipeHelp": {
+        "purpose": "Dat u de hulp op de receptpagina hebt verborgen.",
+        "lasts": "Tot u de hulp weer toont."
+      },
+      "print": {
+        "purpose": "Uw laatste keuzes voor het afdrukken van een recept: het hele recept of een afweeglijst, en de hoeveelheid.",
+        "lasts": "Tot u de opslag van uw browser wist."
+      },
+      "token": {
+        "purpose": "Een inlogtoken van een oude versie van Glazecalc. Het wordt nu nooit meer geschreven.",
+        "lasts": "Verwijderd zodra een pagina opent."
+      },
+      "readEnglish": {
+        "purpose": "Dat u ervoor hebt gekozen een vertaalde pagina in het Engels te lezen, zodat de app u niet meer naar uw taal stuurt.",
+        "lasts": "Tot u het tabblad sluit."
+      },
+      "reloadedFor": {
+        "purpose": "Na het uitbrengen van een nieuwe versie van de site: welke pagina opnieuw is geladen en wanneer, zodat een pagina ten hoogste één keer per minuut opnieuw laadt.",
+        "lasts": "Tot u het tabblad sluit."
+      }
+    },
+    "childrenHeading": "Kinderen",
+    "children": "Glazecalc is een hulpmiddel voor pottenbakkers en is niet op kinderen gericht.",
+    "changesHeading": "Wijzigingen",
+    "changes": "Als deze verklaring verandert, verandert ook de datum bovenaan de pagina."
   },
   "notFound": {
     "heading": "Pagina niet gevonden",

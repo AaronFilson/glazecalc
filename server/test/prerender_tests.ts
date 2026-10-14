@@ -110,6 +110,12 @@ describe('font preloads', () => {
     expect(files(page('<p>Kegel</p><footer><a lang="bg">Български</a><a lang="cs">Čeština</a></footer>'))).to.eql([
       'media/lora-latin-3.woff2'
     ]);
+    // Japanese is set in the device's own font (client/styles.scss): only its Latin, spaces and signs need a file.
+    expect(files(page('<h1>基本の窯焚き</h1><p>ゼーゲル式</p>'))).to.eql(['media/lora-latin-3.woff2']);
+    expect(files(page('<h1>Glazecalc の釉薬</h1><p>SiO₂ と Al₂O₃</p>'))).to.eql([
+      'media/lora-latin-3.woff2',
+      'media/noto-math-5.woff2'
+    ]);
     // A sign far down the page loads when it is drawn.
     expect(files(page(`<p>${'Kegel '.repeat(400)} SiO₂</p>`))).to.eql(['media/lora-latin-3.woff2']);
   });

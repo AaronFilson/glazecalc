@@ -558,31 +558,55 @@ Terms of the region parts of the guides (shops, the silica limit, food-contact r
 food-contact categories follow the official Bulgarian text of Directive 84/500/EEC. Names of shops, laws and agencies
 stay as they are written there.
 
-| English                                                               | Български                                                                                  | Where                                         |
-| --------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ | --------------------------------------------- |
-| Shops in (the label before a list of countries)                       | Магазини в                                                                                 | guides: shops.shopsIn                         |
-| raw glaze materials (what a shop sells)                               | суровини за глазури                                                                        | guides: shops.what.materials                  |
-| ready-made glazes                                                     | готови глазури                                                                             | guides: shops.what.glazes                     |
-| Packs seen                                                            | Видени разфасовки                                                                          | guides: shops.packs                           |
-| A binding limit.                                                      | Задължителна гранична стойност.                                                            | guides: silica.kind.binding                   |
-| An indicative limit: a guide value, not a legal ceiling.              | Индикативна гранична стойност: ориентир, а не законов таван.                               | guides: silica.kind.indicative                |
-| An assessment criterion, not a binding limit. (Germany)               | Критерий за оценка, а не задължителна гранична стойност.                                   | guides: silica.kind.assessment                |
-| action level (US)                                                     | ниво на действие                                                                           | guides: silica.actionLevel                    |
-| quartz and cristobalite                                               | кварц и кристобалит                                                                        | guides: silica.both                           |
-| The national body for safety at work: <link>{name}</link>.            | Националният орган по безопасност и здраве при работа: <link>{name}</link>.                | guides: silica.agency                         |
-| Kind of piece (food-contact rules)                                    | Вид на предмета                                                                            | guides: food.article                          |
-| pieces that cannot be filled, or no deeper than 25 mm                 | Предмети, които не могат да се пълнят, или с вътрешна дълбочина до 25 mm                   | guides: food.category.flat                    |
-| other pieces that can be filled                                       | Всички останали предмети, които могат да се пълнят                                         | guides: food.category.fillable                |
-| cooking ware                                                          | Съдове за готвене                                                                          | guides: food.category.auCooking               |
-| The rim of a piece for drinking from: a 2 cm band, inside and out     | Ръбът на съд за пиене: ивица от 2 cm отвътре и отвън                                       | guides: food.category.rimBand                 |
-| Flatware, no deeper than 25 mm (US)                                   | Плоски съдове с дълбочина до 25 mm                                                         | guides: food.category.flatware                |
-| Small hollowware, under 1.1 L, other than cups and mugs (US)          | Малки дълбоки съдове под 1,1 L, без чаши и канчета                                         | guides: food.category.smallHollow             |
-| Large hollowware, 1.1 L or more, other than pitchers (US)             | Големи дълбоки съдове от 1,1 L нагоре, без каните                                          | guides: food.category.largeHollow             |
-| average of 6 pieces / any one of 6                                    | средна стойност от 6 броя / всеки от 6-те                                                  | guides: food.judged.average, food.judged.each |
-| Buying in (the label before a list of countries)                      | Покупки в                                                                                  | guides: equivalents.buyingIn                  |
-| differs by {grams} g per 100 g                                        | разлика от {grams} g на 100 g                                                              | guides: equivalents.apart                     |
-| Directive 84/500/EEC (its official name)                              | Директива 84/500/ЕИО на Съвета (изменена с Директива 2005/31/ЕО на Комисията)              | regions: the directive                        |
-| Latvia's law gives this limit for the inhalable fraction of the dust. | Латвийското законодателство дава тази гранична стойност за инхалабилната фракция на праха. | regions: Latvia                               |
+| English                                                               | Български                                                                                                                     | Where                                         |
+| --------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------- |
+| Shops in (the label before a list of countries)                       | Магазини в                                                                                                                    | guides: shops.shopsIn                         |
+| raw glaze materials (what a shop sells)                               | суровини за глазури                                                                                                           | guides: shops.what.materials                  |
+| ready-made glazes                                                     | готови глазури                                                                                                                | guides: shops.what.glazes                     |
+| Packs seen                                                            | Видени разфасовки                                                                                                             | guides: shops.packs                           |
+| A binding limit.                                                      | Задължителна гранична стойност.                                                                                               | guides: silica.kind.binding                   |
+| An indicative limit: a guide value, not a legal ceiling.              | Индикативна гранична стойност: ориентир, а не законов таван.                                                                  | guides: silica.kind.indicative                |
+| An assessment criterion, not a binding limit. (Germany)               | Критерий за оценка, а не задължителна гранична стойност.                                                                      | guides: silica.kind.assessment                |
+| action level (US)                                                     | ниво на действие                                                                                                              | guides: silica.actionLevel                    |
+| quartz and cristobalite                                               | кварц и кристобалит                                                                                                           | guides: silica.both                           |
+| The national body for safety at work: <link>{name}</link>.            | Националният орган по безопасност и здраве при работа: <link>{name}</link>.                                                   | guides: silica.agency                         |
+| Kind of piece (food-contact rules)                                    | Вид на предмета                                                                                                               | guides: food.article                          |
+| pieces that cannot be filled, or no deeper than 25 mm                 | Предмети, които не могат да се пълнят, или с вътрешна дълбочина до 25 mm                                                      | guides: food.category.flat                    |
+| other pieces that can be filled                                       | Всички останали предмети, които могат да се пълнят                                                                            | guides: food.category.fillable                |
+| cooking ware                                                          | Съдове за готвене                                                                                                             | guides: food.category.auCooking               |
+| The rim of a piece for drinking from: a 2 cm band, inside and out     | Ръбът на съд за пиене: ивица от 2 cm отвътре и отвън                                                                          | guides: food.category.rimBand                 |
+| Flatware, no deeper than 25 mm (US)                                   | Плоски съдове с дълбочина до 25 mm                                                                                            | guides: food.category.flatware                |
+| Small hollowware, under 1.1 L, other than cups and mugs (US)          | Малки дълбоки съдове под 1,1 L, без чаши и канчета                                                                            | guides: food.category.smallHollow             |
+| Large hollowware, 1.1 L or more, other than pitchers (US)             | Големи дълбоки съдове от 1,1 L нагоре, без каните                                                                             | guides: food.category.largeHollow             |
+| average of 6 pieces / any one of 6                                    | средна стойност от 6 броя / всеки от 6-те                                                                                     | guides: food.judged.average, food.judged.each |
+| Buying in (the label before a list of countries)                      | Покупки в                                                                                                                     | guides: equivalents.buyingIn                  |
+| differs by {grams} g per 100 g                                        | разлика от {grams} g на 100 g                                                                                                 | guides: equivalents.apart                     |
+| Directive 84/500/EEC (its official name)                              | Директива 84/500/ЕИО на Съвета (изменена с Директива 2005/31/ЕО на Комисията)                                                 | regions: the directive                        |
+| Latvia's law gives this limit for the inhalable fraction of the dust. | Латвийското законодателство дава тази гранична стойност за инхалабилната фракция на праха.                                    | regions: Latvia                               |
+| control concentration (Japan, 管理濃度)                               | контролна концентрация                                                                                                        | guides: silica.formula, silica.kind.control   |
+| the yardstick (for judging the air of a work area)                    | мярката (по която се оценява въздухът на работното място)                                                                     | guides: silica.captionControl                 |
+| Japan Poison Information Center, National Poison Information Centre   | Японски токсикологичен информационен център; Национален токсикологичен информационен център, with the native name in brackets | safety                                        |
+
+### 2.10 SK cones, accounts and privacy
+
+- **SK cones** (JIS R 8101): „конуси SK“, „конус SK 8“, „по конуси SK“; always "SK" before the number, never converted to an
+  Orton number and never called „на Зегер“ unless the English says Seger. Guide, firing and guard cones as for Orton
+  (водещ, основен, предпазен); the guide cone is the next cooler number, the guard cone the next hotter. Kyoto cones →
+  „конуси от Киото“; large cones → „големи конуси“; plaque → „държач“.
+- **Accounts:** "Confirm your email" (heading) → „Потвърждаване на имейла“; "Keep me signed in on this device" → „Запомни
+  входа ми на това устройство“; "Sign out everywhere" → „Изход от всички устройства“ (button „Излез от всички
+  устройства“); "Download my data" → „Изтегляне на данните ми“.
+- **Privacy:** data "controller" (GDPR) → „администратор“; GDPR → „ОРЗД“, "Article 6(1)(b)" → „член 6, параграф 1, буква „б““ ((f) →
+  „е“); logs → „регистрационни файлове“; cookie → „бисквитка“; local storage → „локално хранилище“; session
+  storage → „хранилище за сесията“; backup → „резервно копие“; analytics → „анализ на посещенията“; "responsibility or
+  liability" → „никаква отговорност, включително правна“. The owner's name: „Аарон Филсън (Aaron Filson)“.
+
+### Search terms
+
+From the search-term research of 2026-10-14: a bare „глазура“ is also cake icing, so page titles and descriptions
+carry a ceramics word: „керамични глазури“, „глазура за керамика“, „глазури за керамика“; also „рецепти за глазури“.
+"Unity formula" is searched by the Seger name: „формула на Зегер (UMF)“. The landing title is „Glazecalc: безплатен
+калкулатор за керамични глазури“.
 
 ## 3. Never translated
 

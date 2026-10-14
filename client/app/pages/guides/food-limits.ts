@@ -23,7 +23,12 @@ const CATEGORY: Record<string, string> = {
   auSmall: marker('guides.food.category.auSmall'),
   auLarge: marker('guides.food.category.auLarge'),
   auPlates: marker('guides.food.category.auPlates'),
-  auCooking: marker('guides.food.category.auCooking')
+  auCooking: marker('guides.food.category.auCooking'),
+  jpFlat: marker('guides.food.category.jpFlat'),
+  jpSmall: marker('guides.food.category.jpSmall'),
+  jpLarge: marker('guides.food.category.jpLarge'),
+  jpStorage: marker('guides.food.category.jpStorage'),
+  jpCooking: marker('guides.food.category.jpCooking')
 };
 /** How a sample is judged. */
 const JUDGED: Record<NonNullable<FoodLimit['judged']>, string> = {
@@ -92,6 +97,9 @@ const JUDGED: Record<NonNullable<FoodLimit['judged']>, string> = {
         />
         @if (found.rules.inForce; as day) {
           {{ t('guides.food.inForce', { date: date(day) }) }}
+        }
+        @if (found.rules.atMost) {
+          {{ t('guides.food.atMost') }}
         }
         @if (found.rules.note; as note) {
           {{ words(note) }}

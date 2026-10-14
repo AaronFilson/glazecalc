@@ -1,7 +1,8 @@
 import fs from 'node:fs';
 import http from 'node:http';
 import path from 'node:path';
-import { APP_PAGES, looksLikeFile, pageHtml, prerenderedKey, sitemap, withNonce } from '../lib/pages.ts';
+import { APP_PAGES, looksLikeFile, ogLocale, pageHtml, prerenderedKey, sitemap, withNonce } from '../lib/pages.ts';
+import languages from '../../lib/regions/languages.js';
 import { base, expect, site } from './support/app.ts';
 
 // What search engines and link previews read before the app's script runs:
@@ -67,6 +68,28 @@ describe('pages in each language', () => {
     expect(html).to.include('<html lang="ar" dir="rtl">');
     expect(html).to.include('<meta name="robots" content="noindex" />');
     expect(html).not.to.include('hreflang');
+  });
+
+  it('offers Japanese now it is live, indexed and in the sitemap', () => {
+    const japanese = languages.languageFor('ja');
+    expect(japanese).to.include({ name: '日本語', english: 'Japanese', dir: 'ltr', live: true });
+    expect(japanese).not.to.have.property('plainNotice');
+    expect(languages.LIVE_LANGUAGES).to.include('ja');
+    const html = pageHtml(HTML, '/ja/recipe', SITE);
+    expect(html).to.include('<html lang="ja" dir="ltr">');
+    expect(html).not.to.include('<meta name="robots" content="noindex" />');
+    expect(sitemap(SITE)).to.include('/ja/');
+  });
+
+  it('offers Turkish, with the standard notice rather than the plainer one', () => {
+    const turkish = languages.languageFor('tr');
+    expect(turkish).to.include({ name: 'Türkçe', english: 'Turkish', dir: 'ltr', live: true });
+    expect(turkish).not.to.have.property('plainNotice');
+    expect(languages.LIVE_LANGUAGES).to.include('tr');
+    const html = pageHtml(HTML, '/tr/recipe', SITE);
+    expect(html).to.include('<html lang="tr" dir="ltr">');
+    expect(html).not.to.include('<meta name="robots" content="noindex" />');
+    expect(sitemap(SITE)).to.include('/tr/');
   });
 
   it("puts the language's title and description in, written safely", () => {
@@ -139,6 +162,26 @@ describe('pages in each language', () => {
     const out = withNonce(html, 'ab+/=$&');
     expect(out.match(/nonce="ab\+\/=\$&"/g)).to.have.length(3);
     expect(out).not.to.include('__GC_NONCE__');
+  });
+
+  it("gives link previews the page's og:locale, Chinese by its script", () => {
+    expect(pageHtml(HTML, '/de/guides', SITE, {}, ['en', 'de'])).to.include(
+      '<meta property="og:locale" content="de_DE" />'
+    );
+    expect(pageHtml(HTML, '/guides', SITE)).to.include('<meta property="og:locale" content="en_US" />');
+    expect(
+      ['en', 'de', 'pt-PT', 'ga', 'mt', 'ar', 'en-XA', 'zh-Hans', 'zh-Hant', 'ja', 'ko'].map((code) => ogLocale(code))
+    ).to.eql(['en_US', 'de_DE', 'pt_PT', 'ga_IE', 'mt_MT', 'ar_EG', 'en_US', 'zh_CN', 'zh_TW', 'ja_JP', 'ko_KR']);
+  });
+
+  it("writes a language's part of an address as its code is written, and nothing else", () => {
+    expect(languages.canonicalLanguagePath('/DE/guides')).to.equal('/de/guides');
+    expect(languages.canonicalLanguagePath('/pt-pt')).to.equal('/pt-PT');
+    expect(languages.canonicalLanguagePath('/PT-pt/guides/firing')).to.equal('/pt-PT/guides/firing');
+    expect(languages.canonicalLanguagePath('/EN-xa/recipe')).to.equal('/en-XA/recipe');
+    for (const address of ['/de/guides', '/pt-PT/', '/guides', '/', '/EN/guides', '/deutsch', '/xx/recipe']) {
+      expect(languages.canonicalLanguagePath(address), address).to.equal(null);
+    }
   });
 
   it('writes a $ in an address or a text as it is', () => {
@@ -251,6 +294,25 @@ describe('pages in each language', () => {
     }
   });
 
+  it("sends a language's code written in other letters to the code as written, on this site", async () => {
+    for (const [from, to] of [
+      ['/DE/guides', '/de/guides'],
+      ['/pt-pt/guides/firing?x=1', '/pt-PT/guides/firing?x=1'],
+      ['/Pt-Pt', '/pt-PT'],
+      ['/EN/guides', '/guides'],
+      ['/En', '/'],
+      ['/DE//evil.example', '/de//evil.example'],
+      ['/EN//evil.example', '/evil.example']
+    ]) {
+      const res = await redirectOf(from!);
+      expect(res.status, from).to.equal(301);
+      expect(res.location, from).to.equal(to);
+    }
+    for (const from of ['/de/guides', '/pt-PT/guides', '/deutsch', '/enamel', '/xx/guides']) {
+      expect((await redirectOf(from)).status, from).not.to.equal(301);
+    }
+  });
+
   it('sends an address with a slash at the end to the page without it', async () => {
     for (const [from, to] of [
       ['/guides/', '/guides'],
@@ -277,10 +339,15 @@ describe('pages in each language', () => {
     expect(english.text).to.include('<html lang="en" dir="ltr">');
     const german = await site().get('/de/guides');
     const { meta } = JSON.parse(fs.readFileSync(path.join(client, 'i18n', 'de.json'), 'utf8')) as {
-      meta: { description: string; imageAlt: string };
+      meta: { guides: string; imageAlt: string };
     };
-    expect(german.text).to.include(`<meta property="og:description" content="${meta.description}"`);
+    // The guides page's own description, not the site's.
+    expect(german.text).to.include(`<meta property="og:description" content="${meta.guides}"`);
     expect(german.text).to.include(`<meta property="og:image:alt" content="${meta.imageAlt}"`);
+    expect(german.text).to.include('<meta property="og:locale" content="de_DE"');
+    // For search engines that read no hreflang.
+    expect(german.headers['content-language']).to.equal('de');
+    expect(english.headers['content-language']).to.equal('en');
     const arabic = await site().get('/ar/guides');
     expect(arabic).to.have.status(200);
     expect(arabic.text).to.include('<html lang="ar" dir="rtl">');

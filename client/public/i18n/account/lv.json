@@ -11,10 +11,13 @@
     "password": "Parole",
     "passwordHint": "Vismaz 8 rakstzīmes.",
     "confirmation": "Paroles apstiprinājums",
+    "keepSignedIn": "Saglabāt pierakstīšanos šajā ierīcē",
     "passwordMissing": "Ievadiet paroli.",
     "createAccount": "Izveidot kontu",
     "signIn": "Pierakstīties",
     "haveAccount": "Vai jums jau ir konts? <signin>Pierakstīties</signin>",
+    "privacy": "Jūsu e-pasta adresi un visu, ko saglabājat, izmanto tikai jūsu konta uzturēšanai, un tie tiek glabāti pakalpojumā Amazon Web Services ASV. <privacy>Kā lietotne Glazecalc apstrādā jūsu datus</privacy>",
+    "dataNotice": "Glazecalc ir bezmaksas projekts ar atvērtu pirmkodu, un konti tiek glabāti serveros Amerikas Savienotajās Valstīs. Ceļvežus varat lasīt un kalkulatoru izmēģināt bez konta, vai arī varat darbināt savu lietotnes kopiju. Vai izveidot kontu šeit, ir jūsu pašu lēmums, un projekts par to neuzņemas nekādu atbildību. <where>Konta glabāšanas vieta un jūsu izvēle</where>",
     "forgot": "Vai aizmirsāt paroli? Atiestatīt to",
     "newHere": "Vai esat šeit pirmo reizi? <signup>Izveidot bezmaksas kontu</signup>",
     "signUpFailed": "Kļūda: neizdevās izveidot kontu.",
@@ -61,7 +64,29 @@
     "deletePassword": "Jūsu parole apstiprināšanai",
     "deletePasswordMissing": "Lai apstiprinātu, ievadiet paroli.",
     "delete": "Dzēst manu kontu",
-    "deleteFailed": "Kļūda: neizdevās dzēst kontu. Mēģiniet vēlreiz."
+    "deleteFailed": "Kļūda: neizdevās dzēst kontu. Mēģiniet vēlreiz.",
+    "unverifiedHeading": "E-pasta adreses apstiprināšana",
+    "unverifiedText": "Kad izveidojāt šo kontu, mēs nosūtījām saiti uz adresi {email}. Atveriet to, lai apstiprinātu, ka adrese ir jūsu. Līdz tam uz to sūtām e-pasta vēstules tikai tad, kad to lūdzat, piemēram, paroles atiestatīšanai.",
+    "resend": "Sūtīt saiti vēlreiz",
+    "resendFailed": "Kļūda: neizdevās nosūtīt saiti. Mēģiniet vēlreiz.",
+    "emailHeading": "E-pasta adreses maiņa",
+    "emailText": "Uz jauno adresi nosūtām saiti, un jūsu e-pasta adrese mainās, kad to atverat. Mēs par to paziņojam arī uz pašreizējo adresi. Šis konts tiks izrakstīts visās ierīcēs, kurās tas ir pierakstīts.",
+    "newEmail": "Jaunā e-pasta adrese",
+    "emailPassword": "Jūsu parole apstiprināšanai",
+    "emailSend": "Sūtīt saiti",
+    "emailFailed": "Kļūda: neizdevās nosūtīt saiti. Mēģiniet vēlreiz.",
+    "signOutHeading": "Izrakstīšanās visās ierīcēs",
+    "signOutText": "Izraksta jūsu kontu visās ierīcēs, arī šajā. Izmantojiet to, ja ierīce ir pazaudēta vai jums šķiet, ka kāds cits zina jūsu pierakstīšanās datus.",
+    "signOutButton": "Izrakstīties visās ierīcēs",
+    "signOutFailed": "Kļūda: neizdevās izrakstīties. Mēģiniet vēlreiz."
+  },
+  "export": {
+    "heading": "Manu datu lejupielāde",
+    "text": "Saglabājiet visa jūsu kontā esošā kopiju vienā failā: jūsu konta informāciju, iestatījumus, krājumus, receptes, izejvielas, piedevas, piezīmes, apdedzināšanas žurnālus, padomus un atkritni. Parole tajā nav iekļauta. Glabājiet failu privātā vietā, jo tajā ir viss, ko saglabājāt.",
+    "json": "Lejupielādēt visu (JSON)",
+    "csvText": "Vai arī saglabājiet izklājlapu tikai ar savām receptēm vai tikai ar savām izejvielām, ko atvērt programmā Excel, Numbers vai Sheets.",
+    "recipes": "Receptes (CSV)",
+    "materials": "Izejvielas (CSV)"
   },
   "settings": {
     "heading": "Iestatījumi",
@@ -126,11 +151,16 @@
         "example": "konuss 04, konuss 6",
         "saved": "Saglabāts: apdedzināšana pēc Ortona konusiem."
       },
+      "sk": {
+        "label": "Pēc SK konusiem (JIS R 8101)",
+        "example": "SK 4a, SK 8",
+        "saved": "Saglabāts: apdedzināšana pēc SK konusiem."
+      },
       "temperature": {
         "label": "Pēc temperatūras, kā krāsns kontroliera programmā",
         "saved": "Saglabāts: apdedzināšana pēc temperatūras."
       },
-      "help": "Kamēr neizvēlaties, tas atbilst jūsu reģionam: ASV, Apvienotajā Karalistē, Īrijā, Austrālijā un Jaunzēlandē – Ortona konusi, pārējā Eiropā – temperatūra."
+      "help": "Kamēr neizvēlaties, tas atbilst jūsu reģionam: ASV, Apvienotajā Karalistē, Īrijā, Austrālijā un Jaunzēlandē – Ortona konusi, Japānā – SK konusi, pārējā Eiropā – temperatūra."
     },
     "density": {
       "legend": "Glazūras blīvums",
@@ -147,7 +177,7 @@
         "label": "Pintes svars, unces britu pintē",
         "saved": "Saglabāts: glazūras blīvums kā pintes svars."
       },
-      "help": "Kā ceļvežos norāda glazūras biezumu. Kamēr neizvēlaties, tas atbilst jūsu reģionam: Itālijā – Bomē grādi, citur – relatīvais blīvums."
+      "help": "Kā ceļvežos norāda glazūras biezumu. Kamēr neizvēlaties, tas atbilst jūsu reģionam: Itālijā un Japānā – Bomē grādi, citur – relatīvais blīvums."
     },
     "theme": {
       "legend": "Gaišs vai tumšs",
@@ -229,9 +259,19 @@
       },
       "hidden": {
         "label": "Paslēpts",
-        "saved": "Saglabāts: paziņojums ir paslēpts. Drošības ceļvežos paliek viena tā rindiņa."
+        "saved": "Saglabāts: paziņojums ir paslēpts. Drošības ceļvežos paliek viena tā rindiņa.",
+        "savedPlain": "Saglabāts: paziņojums ir paslēpts. Katras lapas augšdaļā paliek viena tā rindiņa."
       },
       "help": "Piezīme katras lapas augšdaļā par to, ka lapu tulkojis mākslīgais intelekts, ar iespēju ieteikt labojumu."
     }
+  },
+  "confirmEmail": {
+    "heading": "E-pasta adreses apstiprināšana",
+    "intro": "Nospiediet pogu, lai apstiprinātu šo adresi.",
+    "confirm": "Apstiprināt",
+    "incomplete": "Šai lapai vajadzīga saite no apstiprinājuma e-pasta vēstules, un šī saite ir nepilnīga.",
+    "account": "Jūsu konts",
+    "signIn": "Pierakstīties",
+    "failed": "Kļūda: neizdevās apstiprināt adresi. Mēģiniet vēlreiz."
   }
 }

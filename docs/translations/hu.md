@@ -131,9 +131,10 @@ the number, never on the number: „{count} nyersanyagot”, „{count} receptb�
 „néhány”, „kevés” („sok nyersanyag”).
 
 **Cones.** The app's cones are **Orton cones** (American). Hungarian shops sell them as „Orton gúla” or „hőfokjelző
-gúlák (Orton)” (BP, IK), and also sell Seger cones („Seger gúla”, BP), a different series (SK) whose numbers do not
-match Orton's (Seger SK 06a about 990 °C, Orton 06 about 1013 °C at 150 °C/h). The pyrometric cone is a **gúla**
-(pyramid) in Hungarian (WP: „SK (Seger-Kegel, magyarul Seger-gúla)”; MKIK: „a 26-os Seger-gúla (1580 °C)”), never
+gúlák (Orton)” (BP, IK), and also sell German Seger cones („Seger gúla”, BP), a different series whose numbers do not
+match Orton's (Seger 06a about 990 °C, Orton 06 about 1013 °C at 150 °C/h). German Seger cones are never called „SK”
+in the app: SK means only Japan's cones to JIS R 8101 (section 2.10). The pyrometric cone is a **gúla**
+(pyramid) in Hungarian (WP: „Seger-Kegel, magyarul Seger-gúla”; MKIK: „a 26-os Seger-gúla (1580 °C)”), never
 „kúp” (which also means a suppository) and never „hőmérő”. So:
 
 - "cone 6" → „6-os gúla”; "cone 06" → „06-os gúla” (read „nulla hat”; the zero stays: the 06-os gúla is far cooler
@@ -149,7 +150,7 @@ match Orton's (Seger SK 06a about 990 °C, Orton 06 about 1013 °C at 150 °C/h)
 - With a placeholder the ending cannot follow the number, so name the cone with a colon or in brackets: "for cone
   {cone}" → „(gúla: {cone})”, „Orton-gúla: {cone}”.
 - **Never** write „6-os Seger-gúla”, „SK 6” or „SK 6a” for an Orton number. „Seger-gúla” appears only where the English
-  says "Seger cones", and then means the SK series.
+  says "Seger cones", and then means the German Seger series: never label those „SK”.
 
 **The unity formula.** „Seger-képlet”, with „(UMF)” after it the first time on a page: „Seger-képlet (UMF)”, then
 „Seger-képlet”. MKIK writes „általános Seger-képlete: 1 mól RO, R₂O …” throughout its glaze chapter; WP says
@@ -416,7 +417,7 @@ gúla” side by side, IK „Hőfokjelző gúlák (Orton)” with Orton numbers.
 | kiln wash                                                                   | lapkence (-ét)                                                            | BP sells „Lapkence”; IK: „Javasolt a lapokat engóbozni, úgynevezett lapkencével bevonni”. NAB „elválasztó anyag”. Not washing.                                                                                                                                                                                                                                                                                                                                               |
 | stilt                                                                       | háromláb (-at, -ak); háromlábú tartó                                      | BP „Égetési segédeszköz – háromláb /25mm”; NAB „háromlábú tartókon”.                                                                                                                                                                                                                                                                                                                                                                                                         |
 | cookie                                                                      | zsengélt alátét (csepegésfogó)                                            | No Hungarian term found. Not „keksz”.                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| Seger cones, Staffordshire cones, Bullers rings, Holdcroft bars             | Seger-gúlák (SK); Staffordshire-gúlák; Bullers-gyűrűk; Holdcroft-rudak    | Names unchanged, "rings" and "bars" translated. MKIK writes „Buller- vagy Riedhammer-gyűrűket, PTCR-gyűrűket”; keep the maker's „Bullers”.                                                                                                                                                                                                                                                                                                                                   |
+| Seger cones, Staffordshire cones, Bullers rings, Holdcroft bars             | Seger-gúlák; Staffordshire-gúlák; Bullers-gyűrűk; Holdcroft-rudak         | Names unchanged, "rings" and "bars" translated. MKIK writes „Buller- vagy Riedhammer-gyűrűket, PTCR-gyűrűket”; keep the maker's „Bullers”.                                                                                                                                                                                                                                                                                                                                   |
 | Damper, Primary Air, Secondary Air, Burner, Pilots, Blower                  | Tolólap; Primer levegő; Szekunder levegő; Égő; Őrlángok; Ventilátor       | Short column labels. IK-gáz: „tolólap (súber)”, „gázégők”. „őrláng” is the pilot flame of Hungarian gas appliances. "Passive Damper" → „Passzív tolólap”. Primary/secondary air: no potter source. "Pilots" are flames, not people.                                                                                                                                                                                                                                          |
 | Ox Probe                                                                    | Oxigénszonda                                                              | Also „lambdaszonda”. No potter source found.                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | Draw Tile                                                                   | Húzópróba                                                                 | A test piece pulled from the kiln. No source found.                                                                                                                                                                                                                                                                                                                                                                                                                          |
@@ -625,6 +626,31 @@ so the country name needs no case ending („Boltok – {region}”).
 
 "Pieces that can be filled" follows the Hungarian text of 84/500 („megtölthető tárgyak”), "cooking ware" its
 „főzőedények”; "inhalable fraction" is ITM's „belélegezhető frakció”.
+
+### 2.10 Search terms and the newer text
+
+**Search terms** (titles.landing and the meta descriptions; research_notes/search-terms-2026-10-14.md). The title stays
+„Glazecalc: ingyenes mázkémiai kalkulátor fazekasoknak”. Hungarian searchers pair the glaze word with a ceramics word
+(„kerámia máz”), because a bare search for glaze also finds cake icing („glazúr”); they search „mázrecept”,
+„Seger-képlet” and „a máz összetétele”. Use these in descriptions where the English meaning allows: „kerámia máz” for
+"a glaze", „mázrecept” for "glaze recipe", „Seger-képlet (UMF)” where the English says unity formula, „a máz
+összetétele” for "what a glaze is made of". Never add a claim the English lacks.
+
+| English                                    | Magyar                                         | Notes                                                                                                |
+| ------------------------------------------ | ---------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| SK cones (JIS R 8101)                      | SK-gúlák (JIS R 8101); „SK 8” as printed       | Always „SK”, never „Seger-gúla” (only where the English says Seger) and never an Orton number.       |
+| control concentration (Japan, 管理濃度)    | ellenőrzési koncentráció                       | No Hungarian source; a yardstick for a work area's air, not a limit on what one person breathes.     |
+| dust mask (Japan's DS/RS classes)          | porvédő maszk                                  |                                                                                                      |
+| Keep me signed in on this device           | Maradjak bejelentkezve ezen az eszközön        | First person, as consent wording.                                                                    |
+| Confirm your email; Change your email      | E-mail-cím megerősítése; E-mail-cím módosítása |                                                                                                      |
+| Sign out everywhere                        | Kijelentkezés mindenhol                        |                                                                                                      |
+| Download my data                           | Adataim letöltése                              |                                                                                                      |
+| controller (data protection)               | adatkezelő                                     | GDPR (HU). legal basis → jogalap; legitimate interest → jogos érdek; profiling → profilalkotás.      |
+| Standard Contractual Clauses               | általános adatvédelmi kikötések                | GDPR Article 46(2)(c) in Hungarian.                                                                  |
+| EU–US Data Privacy Framework               | EU–USA adatvédelmi keretrendszer               |                                                                                                      |
+| cookie; local storage; session storage     | süti; helyi tárhely; munkamenet-tárhely        | "cookie banner" → „sütifigyelmeztetés”.                                                              |
+| poison information centre (Japan, Türkiye) | Toxikológiai Tájékoztató Központ               | The native name stays in brackets: „Japán Toxikológiai Tájékoztató Központ, Oszaka (大阪中毒110番)”. |
+| Türkiye; Osaka; Tsukuba                    | Törökország; Oszaka; Cukuba                    | Hungarian spellings.                                                                                 |
 
 ## 3. Never translated
 

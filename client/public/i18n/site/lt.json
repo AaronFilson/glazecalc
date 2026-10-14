@@ -64,7 +64,115 @@
   "privacy": {
     "title": "Privatumas",
     "lead": "Paskutinį kartą atnaujinta 2026 m. spalio mėn.",
-    "shortHeading": "Trumpai"
+    "shortHeading": "Trumpai",
+    "short": "Glazecalc saugo tai, ko reikia jūsų paskyrai veikti, ir nieko daugiau. Nėra reklamų, analitikos ir sekimo. Jūsų duomenys niekada neparduodami, o vienintelė juos tvarkanti bendrovė yra Amazon Web Services, kuri talpina svetainę ir siunčia jos el. laiškus.",
+    "whoHeading": "Kas atsakingas",
+    "who": "Glazecalc yra nemokamas, atvirojo kodo, ne pelno projektas, kurį JAV vykdo jo savininkas Aaron Filson. Jis sprendžia, kas daroma su jūsų duomenimis, todėl pagal duomenų apsaugos teisę jis yra jų „duomenų valdytojas“.",
+    "contact": "Norėdami paklausti apie savo duomenis arba pasinaudoti bet kuria savo teise, rašykite adresu <mail>privacy@glazecalcapp.com</mail>. Taip pat galite <issues>sukurti pranešimą svetainėje GitHub</issues>, tačiau pranešimai yra vieši: niekada nerašykite juose savo el. pašto adreso ar nieko asmeniško. Daugumą dalykų, susijusių su savo duomenimis, galite atlikti patys <account>paskyros puslapyje</account>.",
+    "storedHeading": "Kas saugoma ir kodėl",
+    "storedAccount": "<b>Jūsų paskyra:</b> el. pašto adresas ir slaptažodis, kuris saugomas tik kaip vienkryptė maišos reikšmė (bcrypt), niekada ne pats slaptažodis. Kartu saugomi jūsų nustatymai (pvz., kalba, regionas ir matavimo vienetai) ir jūsų turimų žaliavų sąrašas. Paskyrai reikia el. pašto adreso – prisijungti ir atkurti pamirštą slaptažodį. Sukūrus paskyrą, tuo adresu išsiunčiama nuoroda, kuria patvirtinama, kad adresas jūsų; iki tol juo siunčiami laiškai tik tada, kai paprašote, pvz., atkurti slaptažodį.",
+    "storedSaved": "<b>Tai, ką įrašote:</b> jūsų receptai, žaliavos, priedai, užrašai, degimo žurnalai ir patarimai, tokie, kokius juos parašėte. Juos matote tik jūs: tarp naudotojų niekas nebendrinama.",
+    "storedTrial": "<b>Bandomasis laikotarpis (mygtukas Išbandyti dabar):</b> jokio el. pašto adreso ar slaptažodžio, tik sugalvotas vardas, pvz., „speckled quiet kilns“. Jei bandomuoju laikotarpiu toje pačioje naršyklėje prisijungiate prie paskyros, tai, ką sukūrėte bandomuoju laikotarpiu, perkeliama į paskyrą.",
+    "storedResets": "<b>Slaptažodžio atkūrimo ir el. pašto nuorodos:</b> kuri paskyra paprašė ir kada, adresas, kuriuo išsiųsta adreso patvirtinimo nuoroda, ir kiekvienos nuorodos kontrolinis kodas (ne pati nuoroda).",
+    "storedLogs": "<b>Žurnalai:</b> žiniatinklio serveris įrašo kiekvieną užklausą: jūsų IP adresą, laiką, užklaustą puslapį ir naršyklės pavadinimą. Programa įrašo klaidas kartu su puslapiu, kuriame jos įvyko, bet niekada jūsų el. pašto adreso.",
+    "storedDeletions": "<b>Panaikintos paskyros:</b> paskyros identifikacinis numeris ir jos panaikinimo laikas, ir nieko daugiau, kad atkūrus atsarginę kopiją paskyra nebūtų sugrąžinta.",
+    "storedMail": "<b>El. pašto problemos:</b> jei jūsų adresu išsiųstas laiškas grįžta neįteiktas arba pažymimas kaip šlamštas, Amazon el. pašto paslauga įtraukia adresą į sąrašą adresų, kuriais laiškų nebesiųsti, ir išsiunčia savininkui pranešimą, kuriame nurodytas tas adresas.",
+    "storedInbound": "<b>Laiškai, kuriuos siunčiate Glazecalc:</b> laiškus adresu privacy@glazecalcapp.com ir kitais Glazecalc adresais Amazon patikrina, ar juose nėra šlamšto ir virusų, laiko privačioje saugykloje ir persiunčia į paties savininko pašto dėžutę (Gmail).",
+    "basisHeading": "Teisinis pagrindas",
+    "basisContract": "<b>Jūsų paskyros veikimas</b>, to, ką įrašote, saugojimas ir el. laiškai apie jūsų paskyrą – tai paslauga, kurios paprašėte: teisinis pagrindas yra jūsų ir Glazecalc sutartis (BDAR 6 straipsnio 1 dalies b punktas).",
+    "basisInterests": "<b>Svetainės saugumas ir veikimas</b>: žurnalai, prisijungimo bandymų dažnio apribojimai, atsarginės kopijos, panaikintų paskyrų įrašai ir sąrašas adresų, kuriais laiškų nebesiųsti. Jie grindžiami teisėtu Glazecalc interesu užtikrinti saugumą, užkirsti kelią piktnaudžiavimui ir neprarasti jūsų darbo (6 straipsnio 1 dalies f punktas). Jie saugomi trumpai ir niekam kitam nenaudojami. Galite nesutikti su jais, parašę aukščiau nurodytu adresu.",
+    "basisNone": "Jokie sprendimai dėl jūsų nepriimami automatiškai, profiliavimas netaikomas, ir niekas nenaudojama reklamai.",
+    "whereHeading": "Kur saugoma ir kas tvarko",
+    "hosting": "Glazecalc veikia Amazon Web Services (AWS) infrastruktūroje: serveris (EC2), atsarginės kopijos (S3) ir el. paštas (Simple Email Service) – visi JAV, Oregono valstijoje (us-west-2). AWS tvarko duomenis tik Glazecalc vardu, pagal savo <dpa>duomenų tvarkymo sąlygas</dpa>. Niekas kitas jų negauna.",
+    "transfer": "Jei gyvenate ES, Jungtinėje Karalystėje ar Šveicarijoje, jūsų duomenys perduodami į JAV. Bendrovė Amazon nurodo, kad yra sertifikuota pagal <dpf>ES ir JAV duomenų privatumo sistemą</dpf> ir jos Jungtinės Karalystės bei Šveicarijos išplėtimus, o AWS sąlygose yra ES standartinės sutarčių sąlygos, kurios vis tiek būtų taikomos, jei sistema, dabar ginčijama teisme, būtų panaikinta. Savininkas ir AWS yra JAV, o JAV teisė gali įpareigoti juos perduoti duomenis.",
+    "noThirdParties": "Jūsų naršyklė nieko neįkelia iš kitų svetainių: jokių šriftų, scenarijų, vaizdų ar analitikos iš kitur, o svetainės saugos nustatymai juos blokuoja. Nuorodos į GitHub ir kitas svetaines atidaromos tik jas spustelėjus.",
+    "choiceHeading": "Kur saugoma jūsų paskyra, ir jūsų pasirinkimas",
+    "choiceProject": "Glazecalc yra nemokamas atvirojo kodo projektas. Paskyros ir viskas, kas jose yra, saugomos serveriuose JAV, kad ir kur gyventumėte, kaip aprašyta aukščiau.",
+    "choiceNoAccount": "Vadovams skaityti paskyros nereikia, o skaičiuoklę galite išbandyti mygtuku Išbandyti dabar, be el. pašto adreso ir slaptažodžio. Bandomasis laikotarpis tuose pačiuose serveriuose saugomas 14 dienų.",
+    "choiceOwnCopy": "Kiekvienas gali paleisti savo Glazecalc kopiją savo kompiuteryje ar serveryje: kodas nemokamai prieinamas svetainėje <source>GitHub</source>.",
+    "choiceDecision": "Ar kurti paskyrą čia, žinant, kad ji saugoma JAV, – jūsų pačių sprendimas.",
+    "choiceNoWarranty": "Programa Glazecalc teikiama tokia, kokia yra, be garantijų. Jos prižiūrėtojai neprisiima jokios atsakomybės, taip pat ir teisinės, už jūsų sprendimą sukurti paskyrą ar už tai, kur saugomi jos duomenys.",
+    "keptHeading": "Kiek laiko saugoma",
+    "keptAccount": "<b>Jūsų paskyra ir tai, ką įrašote:</b> kol juos panaikinsite. Paskyros nešalinamos dėl to, kad nenaudojamos.",
+    "keptTrial": "<b>Bandomasis laikotarpis:</b> 14 dienų nuo jo pradžios, paskui jis panaikinamas su viskuo, kas jame yra, nebent sukuriate paskyrą, kad jį pasiliktumėte.",
+    "keptResets": "<b>Slaptažodžio atkūrimo ir el. pašto nuorodos:</b> atkūrimo nuoroda galioja 30 minučių, o jos įrašas panaikinamas maždaug po valandos; adreso patvirtinimo nuoroda galioja ir yra saugoma 24 valandas.",
+    "keptBackups": "<b>Atsarginės kopijos:</b> šifruotos duomenų bazės kopijos saugomos 30 dienų, o serverio disko kopijos – 7 dienas. Taigi panaikinta paskyra per 30 dienų išnyksta iš visų atsarginių kopijų.",
+    "keptDeletions": "<b>Panaikintos paskyros įrašas:</b> 37 dienos, šiek tiek ilgiau nei bet kuri atsarginė kopija.",
+    "keptLogs": "<b>Žurnalai:</b> žiniatinklio serverio – 14 dienų. Pačios programos ir duomenų bazės žurnalus riboja jų dydis (po 50 MB), o tai mažai lankomoje svetainėje apima kelias dienas atgal. Serverio disko kopijose žurnalai išlieka dar iki 7 dienų.",
+    "keptMail": "<b>Adresų, kuriais laiškų nebesiųsti, sąrašas:</b> kol savininkas adresą pašalina; tai jis daro kas mėnesį su adresais, kurie nebepriklauso jokiai paskyrai. Pranešimus apie neįteiktus laiškus savininkas panaikina per 30 dienų.",
+    "keptInbound": "<b>Laiškai, kuriuos siunčiate Glazecalc:</b> 30 dienų Amazon saugykloje, o savininko pašto dėžutėje – tiek, kiek reikia jums atsakyti. Jei prašymas susijęs su jūsų duomenimis, trumpas įrašas (kada jis gautas, ko prašyta ir kas padaryta) saugomas trejus metus.",
+    "rightsHeading": "Jūsų teisės",
+    "rightsIntro": "Galite peržiūrėti, ištaisyti, pasiimti ir panaikinti savo duomenis. Daugumą to galite atlikti patys <account>paskyros puslapyje</account>:",
+    "rightsExport": "<b>Peržiūrėti ir pasiimti:</b> skiltyje Mano duomenų atsisiuntimas viskas įrašoma į vieną failą (JSON), o jūsų receptai ir žaliavos – į lenteles (CSV).",
+    "rightsCorrect": "<b>Ištaisyti:</b> nustatymus ir įrašus galite keisti bet kada. Norėdami pakeisti el. pašto adresą, atidarykite nuorodą, išsiųstą naujuoju adresu; senuoju adresu, jei jis buvo patvirtintas, pranešama apie pakeitimą, o visi įrenginiai atjungiami.",
+    "rightsDelete": "<b>Panaikinti:</b> mygtukas Panaikinti paskyrą iš karto pašalina jūsų paskyrą ir viską, ką įrašėte, o mygtukas Atsisakyti bandomojo laikotarpio tą patį daro su bandomuoju laikotarpiu. Atsarginėse kopijose esančios kopijos išnyksta per 30 dienų.",
+    "rightsSignOut": "<b>Atsijungimas visuose įrenginiuose:</b> nutraukiami jūsų paskyros seansai visuose įrenginiuose.",
+    "rightsAsk": "Dėl visų kitų dalykų, pvz., norėdami, kad jūsų duomenys nebūtų naudojami, kol taisoma klaida, arba nesutikdami su tuo, kaip jie naudojami, rašykite adresu <mail>privacy@glazecalcapp.com</mail>. Tai nemokama, o atsakymą gausite per mėnesį. Jūsų bus paprašyta tik įrodyti, kad paskyra jūsų – prisijungiant arba atidarant nuorodą, išsiųstą jos adresu, – ir niekada asmens dokumento.",
+    "rightsComplain": "Jei esate nepatenkinti, galite pateikti skundą duomenų apsaugos priežiūros institucijai: ES – <edpb>savo šalies institucijai</edpb>, o Jungtinėje Karalystėje – <ico>Informacijos komisaro tarnybai (Information Commissioner’s Office)</ico>.",
+    "storageHeading": "Slapukai ir naršyklės saugykla",
+    "storageIntro": "Glazecalc nustato vieną slapuką ir laiko kelias nedideles reikšmes jūsų naršyklėje. Kiekviena jų skirta tam, ko paprašėte: kad liktumėte prisijungę arba kad būtų įsimintas jūsų pasirinkimas. Nė viena jūsų neseka ir nė viena nebendrinama, todėl teisė nereikalauja iš anksto klausti sutikimo, ir slapukų reklamjuostės nėra.",
+    "storageLabel": "Slapukai ir naršyklės saugykla",
+    "storageName": "Pavadinimas",
+    "storagePurpose": "Kam skirta",
+    "storageLasts": "Kiek laiko išlieka",
+    "storageCookie": "Slapukas",
+    "storageLocal": "Vietinė saugykla",
+    "storageSession": "Seanso saugykla",
+    "storageNote": "Bet kurį iš jų galite bet kada išvalyti naršyklės nustatymuose. Panaikinus paskyrą, pašalinama prisijungimo žymė ir visi čia laikomi nustatymai.",
+    "keys": {
+      "cookie": {
+        "purpose": "Palaiko jūsų prisijungimą. Jame saugomas jūsų prisijungimo žetonas. Puslapio scenarijai negali jo perskaityti, o naršyklė jį siunčia tik į paties Glazecalc serverį, per HTTPS, ir niekada su užklausa, kuri prasideda kitoje svetainėje.",
+        "lasts": "Nustatomas, kai prisijungiate, sukuriate paskyrą arba pradedate bandomąjį laikotarpį. Galioja, kol uždarote naršyklę, arba 7 dienas, jei pažymite langelį Likti prisijungus šiame įrenginyje; bandomuoju laikotarpiu – 14 dienų. Atsijungus jis pašalinamas."
+      },
+      "session": {
+        "purpose": "Žymė, kad esate prisijungę prie paskyros ar bandomojo laikotarpio, kad programa žinotų, jog reikia kreiptis į serverį. Joje nėra nei žetono, nei slaptažodžio.",
+        "lasts": "Kol atsijungiate arba baigiasi seansas."
+      },
+      "trial": {
+        "purpose": "Bandomuoju laikotarpiu – jo vardas ir pabaigos data, kad juos būtų galima parodyti.",
+        "lasts": "Kol bandomasis laikotarpis baigsis, bus pasiliktas arba jo bus atsisakyta."
+      },
+      "settings": {
+        "purpose": "Nustatymas, kurį pakeitėte šioje naršyklėje, kad kitas puslapis jį parodytų iš karto, dar prieš atsakant serveriui. <code>theme</code> ir <code>palette</code> nuspalvina puslapį prieš jam pasirodant, o <code>language</code> atidaro puslapius jūsų kalba.",
+        "lasts": "Kol jį pakeisite. Atsijungus grąžinama tai, ką buvote pasirinkę neprisijungę, jei ką nors pasirinkote, o visa kita pašalinama."
+      },
+      "visitor": {
+        "purpose": "Kalba, kurią pasirinkote, arba tai, kad uždarėte pranešimą apie vertimą, kol buvote neprisijungę, kad tai grįžtų jums atsijungus.",
+        "lasts": "Kol išvalysite naršyklės saugyklą arba panaikinsite paskyrą šioje naršyklėje."
+      },
+      "region": {
+        "purpose": "Regiono filtras bibliotekos sąraše.",
+        "lasts": "Kol filtrą vėl nustatysite į visus regionus."
+      },
+      "includeAdditives": {
+        "purpose": "Ar naujuose receptuose priedai įskaičiuojami į Segerio formulę, kaip pasirinkote paskutinį kartą.",
+        "lasts": "Kol išvalysite naršyklės saugyklą."
+      },
+      "recipeHelp": {
+        "purpose": "Tai, kad paslėpėte pagalbą recepto puslapyje.",
+        "lasts": "Kol vėl parodysite pagalbą."
+      },
+      "print": {
+        "purpose": "Paskutiniai jūsų pasirinkimai spausdinant receptą: visas receptas ar užmaišas ir užmaišo dydis.",
+        "lasts": "Kol išvalysite naršyklės saugyklą."
+      },
+      "token": {
+        "purpose": "Prisijungimo žetonas iš senos Glazecalc versijos. Dabar jis niekada neįrašomas.",
+        "lasts": "Pašalinamas atsidarius puslapiui."
+      },
+      "readEnglish": {
+        "purpose": "Tai, kad nusprendėte išverstą puslapį skaityti anglų kalba, kad programa nebeperkeltų jūsų į jūsų kalbą.",
+        "lasts": "Kol uždarysite skirtuką."
+      },
+      "reloadedFor": {
+        "purpose": "Išleidus naują svetainės versiją – kuris puslapis ir kada buvo įkeltas iš naujo, kad puslapis būtų įkeliamas iš naujo ne dažniau kaip kartą per minutę.",
+        "lasts": "Kol uždarysite skirtuką."
+      }
+    },
+    "childrenHeading": "Vaikai",
+    "children": "Glazecalc yra įrankis keramikams ir nėra skirtas vaikams.",
+    "changesHeading": "Pakeitimai",
+    "changes": "Jei šis privatumo pranešimas pasikeis, pasikeis ir data puslapio viršuje."
   },
   "notFound": {
     "heading": "Puslapis nerastas",
