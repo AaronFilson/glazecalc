@@ -71,15 +71,15 @@ describe('pages in each language', () => {
     expect(html).not.to.include('hreflang');
   });
 
-  it('knows Japanese, before its translation is done, without offering it or giving it the plainer notice', () => {
+  it('offers Japanese now it is live, indexed and in the sitemap', () => {
     const japanese = languages.languageFor('ja');
-    expect(japanese).to.include({ name: '日本語', english: 'Japanese', dir: 'ltr', live: false });
+    expect(japanese).to.include({ name: '日本語', english: 'Japanese', dir: 'ltr', live: true });
     expect(japanese).not.to.have.property('plainNotice');
-    expect(languages.LIVE_LANGUAGES).not.to.include('ja');
+    expect(languages.LIVE_LANGUAGES).to.include('ja');
     const html = pageHtml(HTML, '/ja/recipe', SITE);
     expect(html).to.include('<html lang="ja" dir="ltr">');
-    expect(html).to.include('<meta name="robots" content="noindex" />');
-    expect(sitemap(SITE)).not.to.include('/ja/');
+    expect(html).not.to.include('<meta name="robots" content="noindex" />');
+    expect(sitemap(SITE)).to.include('/ja/');
   });
 
   it("puts the language's title and description in, written safely", () => {
