@@ -129,8 +129,7 @@
       "temperature": {
         "label": "Po temperaturi, kao u programu regulatora peći",
         "saved": "Spremljeno: pečenje po temperaturi."
-      },
-      "help": "Dok ne odaberete, ova postavka slijedi vašu regiju: Ortonovi stošci u SAD-u, Ujedinjenom Kraljevstvu, Irskoj, Australiji i na Novom Zelandu, temperatura u ostatku Europe."
+      }
     },
     "density": {
       "legend": "Gustoća glazure",
@@ -146,8 +145,7 @@
       "pint": {
         "label": "Masa pinte, unce u britanskoj pinti",
         "saved": "Spremljeno: gustoća glazure kao masa pinte."
-      },
-      "help": "Kako vodiči navode gustoću glazure. Dok ne odaberete, ova postavka slijedi vašu regiju: stupnjevi Baumé u Italiji, relativna gustoća drugdje."
+      }
     },
     "theme": {
       "legend": "Svijetlo ili tamno",

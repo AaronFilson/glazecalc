@@ -129,8 +129,7 @@
       "temperature": {
         "label": "Volgens temperatuur, zoals in het programma van een ovenregelaar",
         "saved": "Opgeslagen: stoken volgens temperatuur."
-      },
-      "help": "Zolang u niets kiest, volgt dit uw regio: Ortonkegels in de Verenigde Staten, het Verenigd Koninkrijk, Ierland, Australië en Nieuw-Zeeland, temperatuur in de rest van Europa."
+      }
     },
     "density": {
       "legend": "Dichtheid van het glazuur",
@@ -146,8 +145,7 @@
       "pint": {
         "label": "Pintgewicht, ounces per Engelse pint",
         "saved": "Opgeslagen: dichtheid van het glazuur als pintgewicht."
-      },
-      "help": "Hoe de gidsen de dikte van een glazuur aangeven. Zolang u niets kiest, volgt dit uw regio: graden Baumé in Italië, soortelijk gewicht elders."
+      }
     },
     "theme": {
       "legend": "Licht of donker",

@@ -129,8 +129,7 @@
       "temperature": {
         "label": "Po temperaturi, kot v programu krmilnika peči",
         "saved": "Shranjeno: žganje po temperaturi."
-      },
-      "help": "Dokler ne izberete, ta nastavitev sledi vaši regiji: Ortonovi stožci v ZDA, Združenem kraljestvu, na Irskem, v Avstraliji in na Novi Zelandiji, temperatura v preostali Evropi."
+      }
     },
     "density": {
       "legend": "Gostota glazure",
@@ -146,8 +145,7 @@
       "pint": {
         "label": "Masa pinte: unče v britanski pinti",
         "saved": "Shranjeno: gostota glazure kot masa pinte."
-      },
-      "help": "Kako vodniki navajajo, kako gosta je glazura. Dokler ne izberete, ta nastavitev sledi vaši regiji: stopinje Baumé v Italiji, drugod relativna gostota."
+      }
     },
     "theme": {
       "legend": "Svetlo ali temno",

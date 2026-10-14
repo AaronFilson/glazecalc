@@ -129,8 +129,7 @@
       "temperature": {
         "label": "Bit-temperatura, bħal programm ta’ kontrollur tal-forn",
         "saved": "Issejvjat: ħami bit-temperatura."
-      },
-      "help": "Sakemm tagħżel, dan isegwi r-reġjun tiegħek: koni Orton fl-Istati Uniti, fir-Renju Unit, fl-Irlanda, fl-Awstralja u fi New Zealand, it-temperatura fil-bqija tal-Ewropa."
+      }
     },
     "density": {
       "legend": "Densità tal-glejż",
@@ -146,8 +145,7 @@
       "pint": {
         "label": "Piż tal-pinta, l-uqija f’pinta imperjali",
         "saved": "Issejvjat: id-densità tal-glejż bħala piż tal-pinta."
-      },
-      "help": "Kif il-gwidi jagħtu kemm hu oħxon il-glejż. Sakemm tagħżel, dan isegwi r-reġjun tiegħek: gradi Baumé fl-Italja, gravità speċifika f’postijiet oħra."
+      }
     },
     "theme": {
       "legend": "Ċar jew skur",

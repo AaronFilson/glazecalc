@@ -129,8 +129,7 @@
       "temperature": {
         "label": "Efter temperatur, som i automatikens program",
         "saved": "Sparat: bränning efter temperatur."
-      },
-      "help": "Tills ett val görs följer detta regionen: Ortonkäglor i USA, Storbritannien, Irland, Australien och Nya Zeeland, temperatur i övriga Europa."
+      }
     },
     "density": {
       "legend": "Glasyrens densitet",
@@ -146,8 +145,7 @@
       "pint": {
         "label": "Pintvikt, uns per brittisk pint",
         "saved": "Sparat: glasyrens densitet som pintvikt."
-      },
-      "help": "Hur guiderna anger hur tjock en glasyr är. Tills ett val görs följer detta regionen: baumégrader i Italien, specifik vikt på andra håll."
+      }
     },
     "theme": {
       "legend": "Ljust eller mörkt",

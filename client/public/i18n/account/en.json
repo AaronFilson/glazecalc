@@ -159,7 +159,7 @@
         "label": "By temperature, as a kiln controller's program",
         "saved": "Saved: firing by temperature."
       },
-      "help": "Until you choose, this follows your region: Orton cones in the US, UK, Ireland, Australia and New Zealand, temperature in the rest of Europe."
+      "help": "Until you choose, this follows your region: Orton cones in the US, UK, Ireland, Australia and New Zealand, SK cones in Japan, temperature in the rest of Europe."
     },
     "density": {
       "legend": "Glaze density",
@@ -176,7 +176,7 @@
         "label": "Pint weight, the ounces in an imperial pint",
         "saved": "Saved: glaze density as pint weight."
       },
-      "help": "How the guides give the thickness of a glaze. Until you choose, this follows your region: degrees Baumé in Italy, specific gravity elsewhere."
+      "help": "How the guides give the thickness of a glaze. Until you choose, this follows your region: degrees Baumé in Italy and Japan, specific gravity elsewhere."
     },
     "theme": {
       "legend": "Light or dark",

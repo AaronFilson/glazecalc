@@ -129,8 +129,7 @@
       "temperature": {
         "label": "De réir teochta, mar a bheadh i gclár rialaitheora áithe",
         "saved": "Sábháilte: bácáil de réir teochta."
-      },
-      "help": "Go dtí go roghnaíonn tú, leanann sé seo do réigiún: cóin Orton i SAM, sa Ríocht Aontaithe, in Éirinn, san Astráil agus sa Nua-Shéalainn, teocht sa chuid eile den Eoraip."
+      }
     },
     "density": {
       "legend": "Dlús glónra",
@@ -146,8 +145,7 @@
       "pint": {
         "label": "Meáchan pionta, na hunsaí i bpionta impiriúil",
         "saved": "Sábháilte: dlús glónra mar mheáchan pionta."
-      },
-      "help": "Conas a thugann na treoirleabhair tiús glónra. Go dtí go roghnaíonn tú, leanann sé seo do réigiún: céimeanna Baumé san Iodáil, sainmheáchan in áiteanna eile."
+      }
     },
     "theme": {
       "legend": "Geal nó dorcha",

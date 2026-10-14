@@ -129,8 +129,7 @@
       "temperature": {
         "label": "Par température, comme sur le programmateur du four",
         "saved": "Enregistré : cuisson par température."
-      },
-      "help": "Tant que vous n’avez pas choisi, ce paramètre suit votre région : cônes Orton aux États-Unis, au Royaume-Uni, en Irlande, en Australie et en Nouvelle-Zélande, température dans le reste de l’Europe."
+      }
     },
     "density": {
       "legend": "Densité de l’émail",
@@ -146,8 +145,7 @@
       "pint": {
         "label": "Poids de la pinte, en onces par pinte impériale",
         "saved": "Enregistré : densité de l’émail en poids de la pinte."
-      },
-      "help": "La façon dont les guides indiquent l’épaisseur du bain d’émail. Tant que vous n’avez pas choisi, ce paramètre suit votre région : degrés Baumé en Italie, densité relative ailleurs."
+      }
     },
     "theme": {
       "legend": "Clair ou sombre",

@@ -129,8 +129,7 @@
       "temperature": {
         "label": "Efter temperatur, som i en ovnstyrings program",
         "saved": "Gemt: brænding efter temperatur."
-      },
-      "help": "Indtil der er truffet et valg, følger indstillingen regionen: Ortonkegler i USA, Storbritannien, Irland, Australien og New Zealand, temperatur i resten af Europa."
+      }
     },
     "density": {
       "legend": "Glasurens tykkelse",
@@ -146,8 +145,7 @@
       "pint": {
         "label": "Pintvægt: unser i en britisk pint",
         "saved": "Gemt: glasurens tykkelse angives som pintvægt."
-      },
-      "help": "Hvordan vejledningerne angiver glasurens tykkelse. Indtil der er truffet et valg, følger indstillingen regionen: grader Baumé i Italien, massefylde alle andre steder."
+      }
     },
     "theme": {
       "legend": "Lys eller mørk",

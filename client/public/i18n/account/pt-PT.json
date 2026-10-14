@@ -129,8 +129,7 @@
       "temperature": {
         "label": "Por temperatura, como no programa de um controlador",
         "saved": "Guardado: cozedura por temperatura."
-      },
-      "help": "Até escolher, segue a sua região: cones Orton nos EUA, no Reino Unido, na Irlanda, na Austrália e na Nova Zelândia, temperatura no resto da Europa."
+      }
     },
     "density": {
       "legend": "Densidade do vidrado",
@@ -146,8 +145,7 @@
       "pint": {
         "label": "Peso por pinta: as onças numa pinta imperial",
         "saved": "Guardado: densidade do vidrado como peso por pinta."
-      },
-      "help": "Como os guias indicam a consistência de um vidrado. Até escolher, segue a sua região: graus Baumé em Itália, densidade relativa nos outros países."
+      }
     },
     "theme": {
       "legend": "Claro ou escuro",

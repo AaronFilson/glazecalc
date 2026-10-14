@@ -129,8 +129,7 @@
       "temperature": {
         "label": "Lämpötiloina, kuten uunin automatiikan ohjelmassa",
         "saved": "Tallennettu: poltto lämpötiloina."
-      },
-      "help": "Kunnes valinta tehdään, tämä määräytyy alueen mukaan: Orton-keilat Yhdysvalloissa, Isossa-Britanniassa, Irlannissa, Australiassa ja Uudessa-Seelannissa, lämpötilat muualla Euroopassa."
+      }
     },
     "density": {
       "legend": "Lasitteen tiheys",
@@ -146,8 +145,7 @@
       "pint": {
         "label": "Pinttipaino, unssia brittiläisessä pintissä",
         "saved": "Tallennettu: lasitteen tiheys pinttipainona."
-      },
-      "help": "Miten oppaat ilmoittavat lasitteen sakeuden. Kunnes valinta tehdään, tämä määräytyy alueen mukaan: Italiassa Baumé-asteet, muualla ominaispaino."
+      }
     },
     "theme": {
       "legend": "Vaalea tai tumma",

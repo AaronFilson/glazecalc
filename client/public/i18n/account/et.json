@@ -129,8 +129,7 @@
       "temperature": {
         "label": "Temperatuuri järgi, nagu ahju kontrolleri programmis",
         "saved": "Salvestatud: põletus temperatuuri järgi."
-      },
-      "help": "Kuni te pole valinud, järgib see teie piirkonda: Ameerika Ühendriikides, Ühendkuningriigis, Iirimaal, Austraalias ja Uus-Meremaal Ortoni koonused, ülejäänud Euroopas temperatuur."
+      }
     },
     "density": {
       "legend": "Glasuuri tihedus",
@@ -146,8 +145,7 @@
       "pint": {
         "label": "Pindi kaal, untsides Briti pindi kohta",
         "saved": "Salvestatud: glasuuri tihedus pindi kaaluna."
-      },
-      "help": "Kuidas juhendid glasuurilahuse paksust esitavad. Kuni te pole valinud, järgib see teie piirkonda: Itaalias Baumé kraadid, mujal suhteline tihedus."
+      }
     },
     "theme": {
       "legend": "Hele või tume",

@@ -129,8 +129,7 @@
       "temperature": {
         "label": "Hőmérséklet szerint, mint egy kemencevezérlő programjában",
         "saved": "Mentve: égetés hőmérséklet szerint."
-      },
-      "help": "Amíg nem választ, ez a régióját követi: az USA-ban, az Egyesült Királyságban, Írországban, Ausztráliában és Új-Zélandon Orton-gúlák, Európa többi részén hőmérséklet."
+      }
     },
     "density": {
       "legend": "Mázsűrűség",
@@ -146,8 +145,7 @@
       "pint": {
         "label": "Pint-súly, uncia per angol pint",
         "saved": "Mentve: mázsűrűség pint-súlyként."
-      },
-      "help": "Ebben a formában adják meg az útmutatók a máziszap sűrűségét. Amíg nem választ, ez a régióját követi: Olaszországban Baumé-fok, máshol fajsúly."
+      }
     },
     "theme": {
       "legend": "Világos vagy sötét",

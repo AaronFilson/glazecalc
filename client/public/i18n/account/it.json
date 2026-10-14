@@ -129,8 +129,7 @@
       "temperature": {
         "label": "In temperatura, come nel programma di una centralina",
         "saved": "Salvato: cottura in temperatura."
-      },
-      "help": "Finché non si sceglie, segue il paese: coni Orton negli Stati Uniti, nel Regno Unito, in Irlanda, in Australia e in Nuova Zelanda, temperatura nel resto d’Europa."
+      }
     },
     "density": {
       "legend": "Densità dello smalto",
@@ -146,8 +145,7 @@
       "pint": {
         "label": "Peso a pinta: le once in una pinta imperiale",
         "saved": "Salvato: densità dello smalto come peso a pinta."
-      },
-      "help": "Come le guide indicano la densità di uno smalto. Finché non si sceglie, segue il paese: gradi Baumé in Italia, peso specifico altrove."
+      }
     },
     "theme": {
       "legend": "Chiaro o scuro",
