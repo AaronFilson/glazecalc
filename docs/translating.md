@@ -130,3 +130,5 @@ A quotation keeps its temperatures as the source wrote them, not as `{{…}}`.
   test, and stops the page while developing.
 - `/en-XA/` shows any page with every message accented and lengthened: text left unmarked stays
   plain, and a layout that cannot take longer words shows it. `/ar-XB/` shows it right to left.
+  `/ja-XC/` shows it in Japanese characters with no spaces, in Japanese's fonts: a line that
+  cannot break without a space, or a font a page lacks, shows it.

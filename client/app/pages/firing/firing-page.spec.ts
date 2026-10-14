@@ -10,10 +10,15 @@ import {
   testProviders,
   text
 } from '../../testing/test-providers';
+import { formatLocale } from '../../shared/format';
 import { FiringPage } from './firing-page';
 
 describe('FiringPage', () => {
-  beforeEach(() => TestBed.configureTestingModule({ providers: testProviders() }));
+  beforeEach(() => {
+    // Dates in English, whatever locale a test in another file left behind.
+    formatLocale.set('en');
+    TestBed.configureTestingModule({ providers: testProviders() });
+  });
   afterEach(() => httpMock().verify());
 
   const create = async (stored: Firing[] = []) => {

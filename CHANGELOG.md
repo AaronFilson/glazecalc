@@ -84,6 +84,13 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
     English's placeholders, tags and the plural forms their language needs; each page tested in a
     pseudo-locale shows no text left unmarked; and a mirrored right-to-left page was tried in
     Arabic.
+  - **Ready for Japanese, Chinese, Korean and Thai** (none offered yet): each page in them names
+    the device's own serif for its script, so a browser need not fall back to a thin one; emphasis
+    is bold, not a slanted copy of the letters; and lines break as the language breaks them. A
+    Japanese pseudo-locale (`/ja-XC/`) tests every page in characters with no spaces, at a phone's
+    width, and Linux tests install the CJK and Thai fonts to draw it. CI checks that Korean
+    translations are in Hangul, and that the app loads nothing from Google, a CDN or a captcha, so
+    it stays reachable from China.
 
 - **Compare two recipes side by side**
   ([#6](https://github.com/AaronFilson/glazecalc/issues/6)). **Compare**, beside Save or on a
