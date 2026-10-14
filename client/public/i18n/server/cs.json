@@ -19,6 +19,7 @@
   "password-changed": "Vaše heslo bylo změněno.",
   "password-reset": "Vaše heslo bylo změněno. Přihlaste se prosím novým heslem.",
   "reset-unavailable": "Obnovení hesla e-mailem zatím není k dispozici.",
+  "reset-sent": "Pokud tento e-mail používá některý účet, poslali jsme na něj odkaz pro obnovení hesla. Odkaz platí po dobu {minutes, plural, one {# minutu} few {# minuty} many {# minuty} other {# minut}}.",
   "signed-out-everywhere": "Odhlášení proběhlo na všech zařízeních.",
   "email-unavailable": "E-mail zatím není k dispozici, proto odkaz nemůžeme odeslat.",
   "email-change-sent": "Na novou adresu jsme poslali odkaz. Váš e-mail se změní, až ho otevřete. Odkaz platí {hours, plural, one {# hodinu} few {# hodiny} many {# hodiny} other {# hodin}}.",
@@ -69,6 +70,5 @@
   "too-many-trials": "Příliš mnoho zkušebních přístupů z této adresy. Zkuste to prosím znovu později, nebo si vytvořte bezplatný účet.",
   "too-many-resets": "Příliš mnoho žádostí o obnovení hesla. Počkejte prosím několik minut a zkuste to znovu.",
   "too-many-email-links": "Bylo vyžádáno příliš mnoho e-mailů. Počkejte prosím několik minut a zkuste to znovu.",
-  "too-many-attempts": "Příliš mnoho pokusů. Počkejte prosím několik minut a zkuste to znovu.",
-  "reset-sent": "Pokud tento e-mail používá některý účet, poslali jsme na něj odkaz pro obnovení hesla. Odkaz platí po dobu {minutes, plural, one {# minutu} few {# minuty} many {# minuty} other {# minut}}."
+  "too-many-attempts": "Příliš mnoho pokusů. Počkejte prosím několik minut a zkuste to znovu."
 }

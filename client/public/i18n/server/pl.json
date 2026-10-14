@@ -19,6 +19,7 @@
   "password-changed": "Hasło zostało zmienione.",
   "password-reset": "Hasło zostało zmienione. Proszę zalogować się nowym hasłem.",
   "reset-unavailable": "Resetowanie hasła przez e-mail nie jest jeszcze dostępne.",
+  "reset-sent": "Jeśli jakieś konto używa tego adresu e-mail, wysłano na niego link do zresetowania hasła. Link działa przez {minutes, plural, one {# minutę} few {# minuty} many {# minut} other {# minuty}}.",
   "signed-out-everywhere": "Wylogowano ze wszystkich urządzeń.",
   "email-unavailable": "Poczta e-mail nie jest jeszcze dostępna, więc nie możemy wysłać linku.",
   "email-change-sent": "Wysłaliśmy link na nowy adres. Adres e-mail zmieni się po jego otwarciu. Link działa przez {hours, plural, one {# godzinę} few {# godziny} many {# godzin} other {# godziny}}.",
@@ -69,6 +70,5 @@
   "too-many-trials": "Zbyt wiele okresów próbnych z tego adresu. Proszę spróbować ponownie później lub założyć bezpłatne konto.",
   "too-many-resets": "Zbyt wiele próśb o zresetowanie hasła. Proszę odczekać kilka minut i spróbować ponownie.",
   "too-many-email-links": "Zbyt wiele próśb o wysłanie wiadomości e-mail. Proszę odczekać kilka minut i spróbować ponownie.",
-  "too-many-attempts": "Zbyt wiele prób. Proszę odczekać kilka minut i spróbować ponownie.",
-  "reset-sent": "Jeśli jakieś konto używa tego adresu e-mail, wysłano na niego link do zresetowania hasła. Link działa przez {minutes, plural, one {# minutę} few {# minuty} many {# minut} other {# minuty}}."
+  "too-many-attempts": "Zbyt wiele prób. Proszę odczekać kilka minut i spróbować ponownie."
 }
