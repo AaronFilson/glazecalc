@@ -76,6 +76,18 @@ describe('static pages', () => {
     }
     expect(text(fixture, '#storage')).toContain('there is no cookie banner');
   });
+
+  it('says, for everyone, where accounts are kept, that anyone can run their own copy, and whose choice it is', async () => {
+    const { fixture } = await create(PrivacyPage);
+    const choice = text(fixture, '#your-choice');
+    expect(choice).toContain('Where your account is kept, and your choice');
+    expect(choice).toContain('kept on servers in the United States');
+    expect(choice).toContain('is your own decision');
+    expect(choice).toContain('provided as is, without warranty');
+    expect(fixture.nativeElement.querySelector('#your-choice a').getAttribute('href')).toBe(
+      'https://github.com/AaronFilson/glazecalc'
+    );
+  });
 });
 
 describe('LandingPage', () => {

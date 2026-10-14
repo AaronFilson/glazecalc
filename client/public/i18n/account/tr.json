@@ -17,6 +17,7 @@
     "signIn": "Oturum aç",
     "haveAccount": "Zaten bir hesabınız var mı? <signin>Oturum açın</signin>",
     "privacy": "E-posta adresiniz ve kaydettikleriniz yalnızca hesabınızı çalıştırmak için kullanılır ve ABD’de Amazon Web Services’te saklanır. <privacy>Glazecalc verilerinizi nasıl işler</privacy>",
+    "dataNotice": "Glazecalc ücretsiz, açık kaynaklı bir projedir ve hesaplar Amerika Birleşik Devletleri’ndeki sunucularda saklanır. Rehberleri okuyabilir ve hesaplayıcıyı hesap olmadan deneyebilir ya da kendi kopyanızı çalıştırabilirsiniz. Burada hesap oluşturup oluşturmamak sizin kendi kararınızdır ve proje bunun için hiçbir sorumluluk kabul etmez. <where>Hesabınızın saklandığı yer ve sizin seçiminiz</where>",
     "forgot": "Parolanızı mı unuttunuz? Sıfırlayın",
     "newHere": "Yeni misiniz? <signup>Ücretsiz hesap oluşturun</signup>",
     "signUpFailed": "Hata: hesap oluşturulamadı.",
