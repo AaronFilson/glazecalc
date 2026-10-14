@@ -58,9 +58,10 @@ for it on the website ([ADR 0014](adr/0014-two-step-sign-in.md)); the owner runs
 2. **Ask them to reset their password first** (the reset proves they read that mailbox today). The reset alone does
    not sign them in.
 3. **Day 0:** run `clear_mfa.ts --notify <address>`. It records the request on the account (`mfa.clearRequestedAt`)
-   and emails the address that two-step sign-in will be turned off on a date seven days later unless they reply.
-   Note the date in the request log.
-4. **If anyone replies to stop it** (from that address), do not go on. Ask what happened; if the request was not
+   and emails the address that two-step sign-in will be turned off on a date seven days later unless they write to
+   `privacy@glazecalcapp.com` (the notice names that address for replies, and links the password reset). Note the
+   date in the request log.
+4. **If anyone writes to privacy@ to stop it** (from that address), do not go on. Ask what happened; if the request was not
    theirs, tell them to change their password, and the account stays as it is.
 5. **Day 7 or later:** run `clear_mfa.ts --clear <address>`. It refuses before seven days have passed. It removes
    every factor and recovery code, signs out every device and emails the address that two-step sign-in is off. Tell

@@ -94,13 +94,16 @@ describe('account emails', () => {
   });
 
   it('should give the two-step sign-in notices their values and signature', async () => {
-    const { MFA_ADDED, MFA_REMOVED, RECOVERY_USED, RECOVERY_NEW } = await import('../lib/account_mail.ts');
+    const { MFA_ADDED, MFA_REMOVED, RECOVERY_USED, RECOVERY_NEW, MFA_OFF, MFA_CLEAR_NOTICE } =
+      await import('../lib/account_mail.ts');
     const values = (text: string) => [...new Set([...text.matchAll(/\{(\w+)\}/g)].map((match) => match[1]))].sort();
     expect(values(MFA_ADDED['en']!.text)).to.eql(['account', 'app', 'forgot', 'method']);
     expect(values(MFA_REMOVED['en']!.text)).to.eql(['account', 'app', 'forgot', 'method']);
     expect(values(RECOVERY_USED['en']!.text)).to.eql(['account', 'app', 'forgot', 'left', 'page']);
     expect(values(RECOVERY_NEW['en']!.text)).to.eql(['account', 'app', 'forgot']);
-    for (const emails of [MFA_ADDED, MFA_REMOVED, RECOVERY_USED, RECOVERY_NEW]) {
+    expect(values(MFA_OFF['en']!.text)).to.eql(['account', 'app', 'forgot']);
+    expect(values(MFA_CLEAR_NOTICE['en']!.text)).to.eql(['account', 'app', 'date', 'forgot']);
+    for (const emails of [MFA_ADDED, MFA_REMOVED, RECOVERY_USED, RECOVERY_NEW, MFA_OFF, MFA_CLEAR_NOTICE]) {
       expect(emails['en']!.text).to.match(/\n-- \nGlazecalc, \{app\}\n$/);
       expect(emails['en']!.subject).to.include('Glazecalc');
     }
@@ -108,13 +111,11 @@ describe('account emails', () => {
 
   it('should have the two-step sign-in notices translated from the English as it is', async () => {
     // English only so far (docs/mfa-plan.md, item 19): the next wave adds the others.
-    const { MFA_ADDED, MFA_REMOVED, RECOVERY_USED, RECOVERY_NEW, METHODS } = await import('../lib/account_mail.ts');
+    const m = await import('../lib/account_mail.ts');
     const { fingerprint } = await import('../../scripts/i18n-fingerprints.mjs');
-    expect(
-      fingerprint(
-        JSON.stringify([MFA_ADDED['en'], MFA_REMOVED['en'], RECOVERY_USED['en'], RECOVERY_NEW['en'], METHODS['en']])
-      )
-    ).to.equal('g444iu');
+    const english = [m.MFA_ADDED, m.MFA_REMOVED, m.RECOVERY_USED, m.RECOVERY_NEW, m.METHODS].map((e) => e['en']);
+    expect(fingerprint(JSON.stringify(english))).to.equal('g444iu');
+    expect(fingerprint(JSON.stringify([m.MFA_OFF['en'], m.MFA_CLEAR_NOTICE['en']]))).to.equal('18fasis');
   });
 });
 
@@ -165,6 +166,52 @@ describe('two-step sign-in notices', () => {
     expect(methodIn({ kind: 'passkey', name: 'Phone\r\nBcc: x@y.z' })).to.equal('the passkey "Phone Bcc: x@y.z"');
     expect(methodIn({ kind: 'passkey', name: '$& $1' })).to.equal('the passkey "$& $1"');
     expect(methodIn({ kind: 'totp' }, 'xx')).to.equal('an authenticator app');
+  });
+
+  it('should send one notice when two-step sign-in is turned off altogether', async () => {
+    const accountMail = await import('../lib/account_mail.ts');
+    const mail = await import('./support/mail.ts');
+    const user = account('notice-off');
+    accountMail.noticeMfa(user, { kind: 'mfa-off' });
+    const [off] = await mail.waitFor(user.email, 1);
+    expect(off!.subject).to.equal('Two-step sign-in was turned off on your Glazecalc account');
+    expect(off!.text).to.include('Signing in now needs only the password.');
+    expect(off!.text).to.include('https://glazecalc.test/forgot');
+  });
+
+  it("should send the 7-day notice with the date, privacy@ and the reset link, the copy's label in its subject", async () => {
+    const accountMail = await import('../lib/account_mail.ts');
+    const mail = await import('./support/mail.ts');
+    const user = account('clear-notice');
+    const label = process.env.SITE_LABEL;
+    process.env.SITE_LABEL = 'staging';
+    try {
+      await accountMail.sendMfaClearNotice(user.email, new Date('2026-10-21T23:30:00Z'), 'de');
+    } finally {
+      if (label === undefined) delete process.env.SITE_LABEL;
+      else process.env.SITE_LABEL = label;
+    }
+    const [notice] = await mail.waitFor(user.email, 1);
+    expect(notice!.subject).to.equal('[Staging] Two-step sign-in on your Glazecalc account will be turned off');
+    expect(notice!.text).to.include(
+      'will be turned off on 21 October 2026 unless you write to privacy@glazecalcapp.com'
+    );
+    expect(notice!.text).to.include('https://glazecalc.test/de/forgot');
+    expect(notice!.text).to.include(user.email);
+    expect(notice!.text).to.not.include('{');
+  });
+
+  it('should reject from sendMfaClearNotice when the mail cannot go, so the script can say so', async () => {
+    const accountMail = await import('../lib/account_mail.ts');
+    const dir = process.env.MAIL_DIR;
+    delete process.env.MAIL_DIR;
+    try {
+      let failed = false;
+      await accountMail.sendMfaClearNotice(account('clear-fails').email, new Date()).catch(() => (failed = true));
+      expect(failed).to.equal(true);
+    } finally {
+      process.env.MAIL_DIR = dir;
+    }
   });
 
   it('should send nothing to an unconfirmed address or a trial', async () => {

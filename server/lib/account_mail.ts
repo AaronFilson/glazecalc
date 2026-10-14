@@ -653,6 +653,41 @@ export const RECOVERY_NEW: Record<string, Email> = {
   }
 };
 
+/**
+ * Sent when two-step sign-in is turned off altogether (the last factor
+ * removed, or the owner's clear_mfa.ts --clear): one email instead of one per
+ * factor. {account}, {forgot} and {app}.
+ */
+export const MFA_OFF: Record<string, Email> = {
+  en: {
+    subject: 'Two-step sign-in was turned off on your Glazecalc account',
+    text:
+      'Two-step sign-in was just turned off on the Glazecalc account {account}: every authenticator app, passkey and recovery code was removed, and every device that was signed in has been signed out. Signing in now needs only the password.\n\n' +
+      'You can turn two-step sign-in on again on your account page. If you did not ask for this, reset your password right away at {forgot}\n' +
+      '\n-- \nGlazecalc, {app}\n'
+  }
+};
+
+/**
+ * The owner's 7-day notice before turning two-step sign-in off for someone who
+ * lost every factor (server/clear_mfa.ts --notify): {account}, {date}, {forgot}
+ * and {app}. Replies go to privacy@glazecalcapp.com.
+ */
+export const MFA_CLEAR_NOTICE: Record<string, Email> = {
+  en: {
+    subject: 'Two-step sign-in on your Glazecalc account will be turned off',
+    text:
+      'Someone asked for two-step sign-in to be turned off on the Glazecalc account {account}, because every authenticator app, passkey and recovery code for it was lost.\n\n' +
+      'Two-step sign-in will be turned off on {date} unless you write to privacy@glazecalcapp.com before then. After that, the account can be signed in to with its password alone.\n\n' +
+      'If this was you, there is nothing else to do. If not, write to privacy@glazecalcapp.com now, and reset your password right away at {forgot}\n' +
+      '\n-- \nGlazecalc, {app}\n'
+  }
+};
+
+/** A date as the English emails write it: 21 October 2026 (UTC). */
+export const mailDate = (date: Date): string =>
+  date.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
+
 /** How each email names a factor, as a whole phrase: {name} is a passkey's name. */
 export const METHODS: Record<string, { totp: string; passkey: string }> = {
   en: { totp: 'an authenticator app', passkey: 'the passkey "{name}"' }
@@ -713,10 +748,43 @@ export const sendRecoveryNew = (to: string, language?: string): Promise<void> =>
   });
 };
 
-/** One notice, as the routes send it. */
+export const sendMfaOff = (to: string, language?: string): Promise<void> => {
+  const email = inLanguage(MFA_OFF, language);
+  return mailer.send({
+    to,
+    subject: email.subject,
+    text: fill(email.text, { account: to, forgot: pageIn(language, '/forgot'), app: mailer.appUrl() })
+  });
+};
+
+/**
+ * The 7-day notice (server/clear_mfa.ts --notify): two-step sign-in goes off
+ * on `offDate` unless the person writes to privacy@. Unlike noticeMfa it
+ * rejects on failure, so the script can say the mail did not go.
+ */
+export const sendMfaClearNotice = (to: string, offDate: Date, language?: string): Promise<void> => {
+  const email = inLanguage(MFA_CLEAR_NOTICE, language);
+  return mailer.send({
+    to,
+    subject: email.subject,
+    text: fill(email.text, {
+      account: to,
+      date: mailDate(offDate),
+      forgot: pageIn(language, '/forgot'),
+      app: mailer.appUrl()
+    })
+  });
+};
+
+/**
+ * One notice, as the routes send it. 'mfa-off' is for when two-step sign-in
+ * ends altogether (the last factor removed, or clear_mfa.ts --clear): send it
+ * instead of 'removed', so the person gets one email.
+ */
 export type MfaNotice =
   | { kind: 'added'; method: MfaMethod }
   | { kind: 'removed'; method: MfaMethod }
+  | { kind: 'mfa-off' }
   | { kind: 'recovery-used'; left: number }
   | { kind: 'recovery-new' };
 
@@ -726,6 +794,8 @@ const sendNotice = (to: string, notice: MfaNotice, language?: string): Promise<v
       return sendMfaAdded(to, notice.method, language);
     case 'removed':
       return sendMfaRemoved(to, notice.method, language);
+    case 'mfa-off':
+      return sendMfaOff(to, language);
     case 'recovery-used':
       return sendRecoveryUsed(to, notice.left, language);
     case 'recovery-new':
