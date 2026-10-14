@@ -1,12 +1,13 @@
-import { Component, computed, input, output, signal } from '@angular/core';
+import { Component, computed, inject, input, output, signal } from '@angular/core';
 import { TranslocoDirective } from '@jsverse/transloco';
+import { PAGE_LANGUAGE } from '../i18n/language';
 import { RichText } from '../i18n/rich-text';
 import { formatFormula } from '../../../lib/chemistry';
 import { Additive, Material } from '../core/models';
 import {
   CATEGORY_LABELS,
   REGIONS,
-  byName,
+  byNameIn,
   inRegion,
   matchesWords,
   readRegion,
@@ -171,6 +172,7 @@ let nextId = 0;
   </ng-container>`
 })
 export class StandardList {
+  private readonly byName = byNameIn(inject(PAGE_LANGUAGE));
   readonly records = input.required<Array<Material | Additive>>();
   /** What the list holds: 'materials' or 'additives'. */
   readonly noun = input.required<string>();
@@ -206,7 +208,7 @@ export class StandardList {
           (!this.category() || record.category === this.category()) &&
           inRegion(record, this.region())
       )
-      .sort(byName)
+      .sort(this.byName)
   );
 
   protected setRegion(region: string): void {

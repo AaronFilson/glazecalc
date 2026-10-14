@@ -12,7 +12,7 @@ import { forTyping, formatLocale, toPlain, typedDecimalMark } from './format';
  */
 @Directive({
   selector: 'input[gcNumber]',
-  host: { '(input)': 'typed()', '(blur)': 'echo()' }
+  host: { '(input)': 'typed($event)', '(compositionend)': 'typed()', '(blur)': 'echo()' }
 })
 export class NumberInput {
   /** The saved value: a plain number as text, or text that is not one. */
@@ -31,7 +31,9 @@ export class NumberInput {
     });
   }
 
-  protected typed(): void {
+  protected typed(event?: Event): void {
+    // Not while an input method (Japanese, Chinese, Korean) is still composing: once it is done.
+    if ((event as InputEvent | undefined)?.isComposing) return;
     this.gcNumberChange.emit(toPlain(this.element.value));
   }
 

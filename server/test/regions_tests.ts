@@ -34,6 +34,33 @@ describe('regions', () => {
     expect(regions.formatLocaleFor('en', 'DE', 'en-GB')).to.equal('en-GB');
   });
 
+  it("keeps the language's script in its format, and drops its own region for the reader's", () => {
+    // Traditional Chinese read in Ireland is written as Traditional, not as zh-IE (Simplified).
+    expect(regions.formatLocaleFor('zh-Hant', 'IE', 'auto')).to.equal('zh-Hant-IE');
+    expect(regions.formatLocaleFor('zh-Hans', 'NL', 'auto')).to.equal('zh-Hans-NL');
+    expect(regions.formatLocaleFor('zh-Hant', '', 'auto')).to.equal('zh-Hant');
+    expect(regions.formatLocaleFor('zh-Hant-TW', 'DE', 'auto')).to.equal('zh-Hant-DE');
+    // Portuguese stays European; a pseudo-locale is English.
+    expect(regions.formatLocaleFor('pt-PT', 'FR', 'auto')).to.equal('pt-FR');
+    expect(regions.formatLocaleFor('pt-PT', '', 'auto')).to.equal('pt-PT');
+    expect(regions.formatLocaleFor('en-XA', 'DE', 'auto')).to.equal('en-DE');
+    expect(regions.formatLocaleFor('ar-XB', '', 'auto')).to.equal('en');
+    expect(regions.formatLocaleFor('', '', 'auto')).to.equal('en');
+    // Traditional and Simplified write the same date differently.
+    const date = new Date(2026, 9, 12);
+    const written = (locale: string) => new Intl.DateTimeFormat(locale, { dateStyle: 'full' }).format(date);
+    expect(written(regions.formatLocaleFor('zh-Hant', 'IE', 'auto'))).not.to.equal(written('zh-IE'));
+  });
+
+  it('offers only formats the runtime knows, each once', () => {
+    expect(new Set(regions.FORMAT_LOCALES).size).to.equal(regions.FORMAT_LOCALES.length);
+    for (const locale of regions.FORMAT_LOCALES) {
+      expect(Intl.getCanonicalLocales(locale)[0], locale).to.equal(locale);
+      expect(Intl.NumberFormat.supportedLocalesOf(locale), locale).to.eql([locale]);
+    }
+    expect(regions.FORMAT_LOCALES).to.include.members(['zh-Hans-CN', 'zh-Hant-TW', 'ja-JP', 'th-TH']);
+  });
+
   it('should have an emergency number for every region, and 112 in every EU country', () => {
     for (const region of regions.REGIONS) {
       const shown = safety.shownFor(region.code);

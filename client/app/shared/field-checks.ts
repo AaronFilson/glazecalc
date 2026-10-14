@@ -181,7 +181,8 @@ let unnamed = 0;
     '[attr.aria-invalid]': 'problem() ? "true" : null',
     '[attr.aria-describedby]': 'describedBy()',
     '(blur)': 'left()',
-    '(input)': 'changed()',
+    '(input)': 'changed($event)',
+    '(compositionend)': 'changed()',
     '(change)': 'changed()'
   }
 })
@@ -236,7 +237,9 @@ export class FieldCheck {
     if (this.element.value.trim() !== '' || this.problem()) this.gcField().check(this.gcFieldName());
   }
 
-  protected changed(): void {
+  protected changed(event?: Event): void {
+    // Not while an input method is still composing, as ngModel waits too.
+    if ((event as InputEvent | undefined)?.isComposing) return;
     // After ngModel has the new value, which it takes from the same event.
     queueMicrotask(() => this.gcField().recheckMarked());
   }

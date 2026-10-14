@@ -78,7 +78,8 @@ const GROUP_SPACES = /[\s   '’]/g;
  * 12.5 with either mark. Digit groups are allowed ("1 234,5", "1.234,5",
  * "1,234.5") when they are groups of three; a lone separator before exactly
  * three digits ("1,250") is read as the locale reads it. Any script's digits
- * count (١٢٫٥ is 12.5). Anything else, such as "1e3", "0x10" or "12,5,3",
+ * count (١٢٫٥ is 12.5), as do full-width ones (１２．５), and an ideographic
+ * full stop between digits is a point (12。5). Anything else, such as "1e3", "0x10" or "12,5,3",
  * is not a number: null.
  */
 export function parseNumber(
@@ -86,8 +87,10 @@ export function parseNumber(
   mark: DecimalMark = typedDecimalMark(),
   locale = formatLocale()
 ): number | null {
-  let value = Array.from(text.trim(), asciiDigit)
+  // NFKC first, so full-width marks (１２．５, －３) read as their plain ones.
+  let value = Array.from(text.normalize('NFKC').trim(), asciiDigit)
     .join('')
+    .replace(/(?<=\d)。(?=\d)/g, '.') // a Japanese or Chinese full stop, typed for a point
     .replace(/٫/g, '.') // Arabic decimal mark
     .replace(/٬/g, ',') // Arabic thousands mark
     .replace(/^[−–]/, '-');
