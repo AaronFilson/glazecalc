@@ -761,7 +761,9 @@ describe('two-step sign-in on the account page (/api/mfa)', () => {
   });
 
   describe('limits', () => {
-    beforeEach(() => {
+    beforeEach(async () => {
+      // Other files' sign-in tests also count against this address.
+      await limits.secondStep.resetKey('127.0.0.1');
       process.env.RATE_LIMITS = 'on';
     });
     afterEach(() => {
