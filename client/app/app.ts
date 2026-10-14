@@ -231,6 +231,12 @@ export class App implements OnInit {
         takeUntilDestroyed()
       )
       .subscribe(() => afterNextRender(() => firstRender.set(false), { injector: this.injector }));
+    // index.html marks the page for a stored session so the landing page does not flash; once there is none
+    // (the server did not confirm it, or the reader signed out), the page is drawn as for anyone.
+    const root = this.document.documentElement;
+    effect(() => {
+      if (!this.auth.hasSession()) root.removeAttribute('data-session');
+    });
     // Once the account's language is known (from another device, say), an English page opens in it.
     effect(() => {
       const own = ownLanguagePage(this.preferences.language());

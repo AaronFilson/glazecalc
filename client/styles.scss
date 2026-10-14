@@ -1481,3 +1481,16 @@ bdi {
     overflow-wrap: anywhere;
   }
 }
+
+/*************** Before the app starts **************/
+
+// A signed-in reader (index.html sets data-session from this browser's copy) is about to be sent from the
+// landing page to their home, so its content is not drawn. The app takes the attribute off if the session is over.
+html[data-session] gc-landing-page {
+  visibility: hidden;
+}
+
+// A reader whose language page is loading (index.html): nothing of the English page shows.
+html[data-leaving] body {
+  visibility: hidden;
+}
