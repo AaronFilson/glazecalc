@@ -5,17 +5,18 @@ import * as mailer from '../lib/mailer.ts';
 import { pageHtml } from '../lib/pages.ts';
 import * as site from '../lib/site.ts';
 import * as mail from './support/mail.ts';
-import { api, expect, site as request, uniqueEmail } from './support/app.ts';
+import { api, expect, makeUser, site as request, uniqueEmail } from './support/app.ts';
 
 // A copy of the site that is not production (staging) differs only by its
 // environment (docs/mfa-plan.md, "Two phases"). Each test sets what it needs
 // and puts the environment back.
-const SETTINGS = ['SITE_LABEL', 'NOINDEX', 'MAIL_ALLOWLIST'] as const;
+const SETTINGS = ['SITE_URL', 'SITE_LABEL', 'NOINDEX', 'MAIL_ALLOWLIST'] as const;
 const saved: Record<string, string | undefined> = {};
 beforeEach(() => SETTINGS.forEach((name) => (saved[name] = process.env[name])));
 afterEach(() =>
   SETTINGS.forEach((name) => (saved[name] === undefined ? delete process.env[name] : (process.env[name] = saved[name])))
 );
+// SITE_URL unset leaves the tests' APP_URL, https://glazecalc.test.
 const unset = () => SETTINGS.forEach((name) => delete process.env[name]);
 
 describe('the site settings', () => {
@@ -238,5 +239,50 @@ describe('cookies stay host-only', () => {
       }
     }
     expect(cookies).to.be.greaterThan(0);
+  });
+});
+
+// deploy/compose.staging.yaml sets these together on one app, as below; the
+// rest of this file checks each alone.
+describe('a staging copy (deploy/compose.staging.yaml)', () => {
+  const staging = () => {
+    process.env.SITE_URL = 'https://staging.glazecalcapp.com';
+    process.env.SITE_LABEL = 'staging';
+    process.env.NOINDEX = '1';
+  };
+
+  it('names its own host for passkeys and authenticator apps', () => {
+    staging();
+    expect(site.siteUrl()).to.equal('https://staging.glazecalcapp.com');
+    expect(site.rpId()).to.equal('staging.glazecalcapp.com');
+    expect(site.origin()).to.equal('https://staging.glazecalcapp.com');
+    expect(site.rpName()).to.equal('Glazecalc (staging)');
+    expect(site.totpIssuer()).to.equal('Glazecalc (staging)');
+  });
+
+  it('keeps search engines out and shows its banner, in one app', async () => {
+    staging();
+    for (const res of [await request().get('/guides'), await api().get('/health')]) {
+      expect(res.headers['x-robots-tag']).to.equal('noindex, nofollow');
+    }
+    expect((await request().get('/robots.txt')).text).to.equal('User-agent: *\nDisallow: /\n');
+    expect(await request().get('/sitemap.xml')).to.have.status(404);
+    const page = await request().get('/guides');
+    if (page.status === 200) expect(page.text).to.include('<aside class="gc-site-label" aria-label="Staging">');
+  });
+
+  it('mails only the allowlist, with staging links and a labelled subject', async () => {
+    staging();
+    const { email } = await makeUser({ email: uniqueEmail('staging-owner') });
+    const { email: other } = await makeUser({ email: uniqueEmail('staging-other') });
+    process.env.MAIL_ALLOWLIST = email;
+    expect(await api().post('/password/forgot').send({ email })).to.have.status(200);
+    expect(await api().post('/password/forgot').send({ email: other })).to.have.status(200);
+    const [sent] = await mail.waitFor(email, 1);
+    expect(sent!.subject).to.match(/^\[Staging\] /);
+    expect(sent!.text).to.match(/https:\/\/staging\.glazecalcapp\.com\/reset#token=[A-Za-z0-9_-]{43}\n/);
+    expect(sent!.text).to.not.include('https://glazecalcapp.com/');
+    await mail.settle();
+    expect(mail.to(other)).to.eql([]);
   });
 });
