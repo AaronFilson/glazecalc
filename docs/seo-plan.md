@@ -116,6 +116,8 @@ This is what Angular's own SSR package does. It is not a crazy idea; it is the u
 
 ## Decisions for the owner
 
+**Decided on 13 October 2026: all five as recommended.**
+
 1. **Our own prerender script, or the Angular CLI's `outputMode: "static"`?** Recommend **our script** (item 2). The CLI's prerender expects one base href per build, and our 24 languages are prefixes chosen at runtime. The script is about 100 lines and uses the same `renderApplication` the CLI calls.
 2. **Which units the prerendered guides show.** Recommend **the page language's default region** (`/de/` in Germany's units and cones, `/fr/` in France's). For English, recommend **°C and Orton cones with °F beside them**: the guides already show both. A reader whose settings differ sees the numbers change once, right after the page loads. The alternative is to hide those numbers until hydration, which shows a gap instead.
 3. **Event replay?** Recommend **not now.** It puts an inline script in each page, which autoCsp cannot hash at build because the prerender adds it later. The public pages are mostly text and links, and links work before hydration (they are real `<a href>`s; a click before hydration loads the next page whole). Revisit if item 13 finds hydration takes over a second on a slow phone.
