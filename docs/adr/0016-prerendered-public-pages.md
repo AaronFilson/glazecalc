@@ -35,6 +35,14 @@ nonce and the headers for its language). In the browser the app hydrates the pag
 - **Output is outside `browser/`,** so `express.static` never sends a prerendered file without
   the server's head and nonce. `server/lib/pages.ts` keeps a prerendered page's own title and
   description and adds the canonical address, hreflang, `og:locale` and `og:locale:alternate`.
+- **A guide's text is drawn by directives, not templates.** `gcInline` and `gcRow`
+  (`client/app/pages/guides/guide-inline.ts`) draw a block's words, links and temperatures and a
+  table's cells as plain nodes, and adopt a prerendered element as it is. Nested template
+  outlets made a view for every run of words, which hydration then walked one by one.
+- **The page is painted before the app adopts it.** On a prerendered page without a form,
+  `main.ts` waits for the first contentful paint (at most 500 ms), then starts the app in two
+  tasks (services, then hydration). Each page's head preloads the font files its opening is set
+  in, and until Lora arrives the text is set in Georgia or Noto Serif scaled to Lora's width.
 - **The build fails** if a page logs an error, is the not-found page, has little text, or has a
   script the browser build's policy does not know.
 - **The initial bundle budget is 700 kB** (warning), up from 650 kB, since hydration adds about
@@ -43,12 +51,16 @@ nonce and the headers for its language). In the browser the app hydrates the pag
 
 ## Consequences
 
-- Every build renders 264 pages (about 15 s) and the pages weigh 40 to 560 kB (guides in Greek
-  are the largest), up to about 80 kB gzipped. Most of a guide's weight is Angular's hydration data
-  for its many nested templates, not the text.
+- Every build renders 264 pages (about 15 s) and the pages weigh 40 to 340 kB, up to about
+  75 kB gzipped (a Greek guide). Before the guide's text was drawn by directives the largest was
+  560 kB, most of it Angular's hydration data for its many nested templates.
 - The server stays free of per-request rendering.
 - Every build must pass the browser tests of `e2e/prerender.spec.js`: the pages without
   JavaScript, adopted in place, no fetch before the app is ready.
-- Page speed on a slow phone is a trade: the first paint of the page's text comes with the HTML,
-  but the page is larger and its hydration costs script time (see the timing notes in
-  [docs/seo-plan.md](../seo-plan.md)).
+- In Lighthouse's slow-phone model the public pages now paint sooner than the single-page app
+  did (first contentful paint 1.53 to 1.76 s against 1.67 to 1.82 s), their largest paint comes
+  sooner, nothing moves (CLS 0), and the blocking time is no more than before (the firing
+  guide: 575 against 576 ms, both varying by ±200 ms between runs). See the timing notes in
+  [docs/seo-plan.md](../seo-plan.md).
+- A reader who types into a prerendered form before the app has adopted it loses what was
+  typed (there is no event replay); a page with a form therefore starts the app at once.
