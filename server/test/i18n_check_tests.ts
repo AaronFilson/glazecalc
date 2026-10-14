@@ -284,6 +284,12 @@ describe('message checks', () => {
       'k: Romanian takes ș and ț (comma below), not ş and ţ (cedilla)'
     ]);
     expect(compareMessage('ro', 'k', 'Saved.', 'Salvați.')).to.eql([]);
+    // A Turkish name the English gives with the cedilla stays as it is; the Romanian around it may not.
+    const uzem = 'National Poison Information Centre (Ulusal Zehir Danışma Merkezi, UZEM)';
+    expect(
+      compareMessage('ro', 'k', uzem, 'Centrul Național de Informare Toxicologică (Ulusal Zehir Danışma Merkezi, UZEM)')
+    ).to.eql([]);
+    expect(compareMessage('ro', 'k', uzem, 'Centrul Naţional (Ulusal Zehir Danışma Merkezi, UZEM)')).to.have.length(1);
   });
 
   describe('keeping translations in step with their English', () => {

@@ -341,7 +341,11 @@ export function compareMessage(language, key, english, translated, { rich = true
     if (unknown.length)
       problems.push(`${key}: ${language} has no plural form ${unknown.join(', ')} for {${plural.arg}}`);
   }
-  if (language === 'ro' && /[şţŞŢ]/.test(translated)) {
+  // A word the English itself writes with the cedilla is a name in another language (Turkish
+  // Ulusal Zehir Danışma Merkezi) and stays as it is.
+  const cedillaWords = (text) => text.match(/[\p{L}]*[şţŞŢ][\p{L}]*/gu) ?? [];
+  const borrowed = new Set(cedillaWords(english));
+  if (language === 'ro' && cedillaWords(translated).some((word) => !borrowed.has(word))) {
     problems.push(`${key}: Romanian takes ș and ț (comma below), not ş and ţ (cedilla)`);
   }
   return [...problems, ...scriptProblems(key, language, translated)];
