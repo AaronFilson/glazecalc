@@ -1,0 +1,59 @@
+# Staging: a second copy of the app on the production instance, for testing a
+# branch in real browsers before it reaches production (docs/mfa-plan.md,
+# "Phase 2"). deploy/staging.sh runs it, by hand; nothing in CI touches it.
+#
+#   GLAZECALC_STAGING_TAG=staging-<sha> docker compose -f compose.staging.yaml up -d   (staging.sh does this)
+#
+# Its own Compose project (glazecalc-staging), so nothing here can stop,
+# replace or remove a production container, and production's deploy.sh
+# (--remove-orphans) never sees it. Only the app: it uses production's MongoDB
+# server, but its own database (glazecalc_staging) and its own user, who can
+# read and write that database and nothing else. nginx on the host serves
+# https://staging.glazecalcapp.com from 127.0.0.1:3001 (nginx/glazecalc-staging.conf).
+name: glazecalc-staging
+
+services:
+  app:
+    # The image tag is required: there is no "latest" staging build.
+    image: ghcr.io/aaronfilson/glazecalc:${GLAZECALC_STAGING_TAG:?Set GLAZECALC_STAGING_TAG (staging.sh does)}
+    restart: unless-stopped
+    # Room for one more Node process on a 1 GB instance; the swap file absorbs
+    # peaks. Above this the container is stopped and restarted, never
+    # production's app or MongoDB.
+    mem_limit: 300m
+    # APP_SECRET, MONGODB_URI (user and database glazecalc_staging), MFA_KEY,
+    # MAIL_ALLOWLIST and the email settings, written by staging.sh from
+    # /glazecalc/staging/* in SSM Parameter Store (root-only file). Never
+    # production's app.env.
+    env_file: /opt/glazecalc/staging.env
+    environment:
+      NODE_ENV: production
+      PORT: 3000
+      # server/lib/site.ts: passkeys belong to this host and never appear on
+      # production; authenticator apps say "Glazecalc (staging)"; every page has
+      # a "Staging" banner and every mail subject says so; no search engine
+      # indexes it.
+      SITE_URL: https://staging.glazecalcapp.com
+      SITE_LABEL: staging
+      NOINDEX: '1'
+    ports:
+      - '127.0.0.1:3001:3000'
+    # Production's Compose network, where its MongoDB answers as "mongo".
+    # MongoDB's port stays unpublished on the host. Nothing on that network
+    # looks up "app" (production's app is reached by nginx on 127.0.0.1:3000),
+    # so this app's name there does not matter.
+    networks:
+      - production
+    logging:
+      driver: local
+      options:
+        max-size: 10m
+        max-file: '3'
+
+networks:
+  # Made by production's stack (compose.prod.yaml, project glazecalc). External:
+  # staging never creates or removes it. While staging runs, production's
+  # `docker compose down` cannot remove it either; staging.sh stop first.
+  production:
+    name: glazecalc_default
+    external: true
