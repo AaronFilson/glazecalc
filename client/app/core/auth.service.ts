@@ -98,6 +98,8 @@ export class AuthService {
   readonly shownSession = computed(() => !this.firstRender() && this.hasSession());
   /** The trial to draw a bar for. */
   readonly shownTrial = computed(() => (this.firstRender() ? null : this.trial()));
+  /** Whether to say the trial ran out; one that ended while the site was closed is found at construction. */
+  readonly shownTrialEnded = computed(() => !this.firstRender() && this.trialEnded());
   /** The name to draw in the menu. */
   readonly shownName = computed(() => (this.firstRender() ? null : this.displayName()));
 
