@@ -1,7 +1,7 @@
 # Glazecalc and MongoDB 9 in containers.
 #
-#   APP_SECRET=... MFA_KEY=... docker compose up -d --build   (or put both in .env,
-#                                                  with the email settings and SITE_URL)
+#   APP_SECRET=... docker compose up -d --build   (or put APP_SECRET in .env,
+#                                                  with MFA_KEY, the email settings and SITE_URL)
 #   docker compose run --rm app node scripts/seed-standard.js   (standard materials, once)
 #   docker compose logs -f app
 #   docker compose down             (data stays in the mongo-data volume)
@@ -28,10 +28,13 @@ services:
       # Where people open the app (server/lib/site.ts): links in emails and the
       # host passkeys belong to. APP_URL is its older name and still works.
       SITE_URL: ${SITE_URL:-${APP_URL:-http://localhost:${APP_PORT:-3000}}}
-      # Required in production, as APP_SECRET is: the key for two-step sign-in's
-      # secrets (openssl rand -base64 32). Keep it: a new key undoes every
-      # authenticator app set up with the old one.
-      MFA_KEY: ${MFA_KEY:?Set MFA_KEY in the environment or in .env (openssl rand -base64 32)}
+      # The key for two-step sign-in's secrets (server/lib/mfa_key.ts). The app
+      # runs as production here, which needs one, so this file has a fixed
+      # TEST key, public and not secret: the base64 of
+      # "glazecalc-compose-test-key-32byt". Fine for trying the app locally and
+      # for CI; anything real sets its own (openssl rand -base64 32), and the
+      # live site reads it from SSM (/glazecalc/mfa-key, deploy/deploy.sh).
+      MFA_KEY: ${MFA_KEY:-Z2xhemVjYWxjLWNvbXBvc2UtdGVzdC1rZXktMzJieXQ=}
       # A copy that is not production (.env.example): empty, they do nothing.
       SITE_LABEL: ${SITE_LABEL:-}
       NOINDEX: ${NOINDEX:-}
