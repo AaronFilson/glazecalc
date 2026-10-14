@@ -9,7 +9,9 @@
 // 2. Each translation has only keys the English has, the same placeholders
 //    and tags in each message, and the plural forms its language needs
 //    (CLDR's, through Intl.PluralRules).
-// 3. Romanian is written with the comma below (ș ț), not the cedilla (ş ţ).
+// 3. Romanian is written with the comma below (ș ț), not the cedilla (ş ţ);
+//    Simplified Chinese has no Traditional characters, Traditional Chinese
+//    no Simplified ones, and Japanese no simplified hanzi (SCRIPT_PAIRS).
 // 4. The English of the server's and the chemistry's messages, which live in
 //    code and are shown by their codes, is current (npm run i18n:sources).
 // 5. Each translated guide keeps what the page draws from the English's
@@ -119,9 +121,55 @@ const UNITS = [
   'µm',
   'kWh'
 ];
-const UNIT_AFTER = new RegExp(`^[ \\u00a0\\u202f]?(${UNITS.join('|')})(?![\\p{L}])`, 'u');
+/**
+ * A word goes on after a unit if a Latin, Greek or Cyrillic letter follows it
+ * (5 grams is not 5 g). Japanese, Chinese, Korean and Thai run a unit into
+ * the next word, 10 gの or 1240 °Cで, and it is a unit all the same.
+ */
+const WORD_GOES_ON = String.raw`\p{Script=Latin}\p{Script=Greek}\p{Script=Cyrillic}`;
+const UNIT_AFTER = new RegExp(`^[ \\u00a0\\u202f]?(${UNITS.join('|')})(?![${WORD_GOES_ON}])`, 'u');
 /** A temperature written without its degree sign, 1742 F, or with it apart, 40° F: °F all the same. */
-const DEGREES_AFTER = /^°?[ \u00a0\u202f]?°?([CF])(?![\p{L}\d])/u;
+const DEGREES_AFTER = new RegExp(`^°?[ \\u00a0\\u202f]?°?([CF])(?![${WORD_GOES_ON}\\d])`, 'u');
+
+/**
+ * A text with the forms a Japanese, Chinese or Korean keyboard types made
+ * plain (NFKC): full-width digits, letters and signs, ℃ and ℉, and squared
+ * units such as ㎏, so １２２２℃ is 1222 °C and ５％ is 5 %. Only these: NFKC
+ * would make Europe's subscripts (Al₂O₃), fractions and no-break spaces
+ * plain too. The full-width comma stays, as punctuation between CJK words
+ * rather than a thousands separator.
+ */
+const plainForms = (text) =>
+  text.replace(/[\u2103\u2109\u3380-\u33ff\uff01-\uff0b\uff0d-\uff5e]+/gu, (run) => run.normalize('NFKC'));
+
+/** Whether a language writes the percent sign before its number, as Turkish does: %5. */
+const percentFirst = (language) =>
+  new Intl.NumberFormat(language, { style: 'percent' }).formatToParts(0.05)[0].type === 'percentSign';
+
+/**
+ * A clock time written with a 12-hour marker: 午後8時 (Japanese), 晚上8点 and
+ * 下午8時 (Chinese), 오후 8시 (Korean), 8 giờ tối (Vietnamese), pukul 8 malam
+ * (Indonesian). The style sheets ask for the 24-hour clock (20時, 20点, 20시),
+ * so these are not read as numbers but kept whole, and so reported.
+ */
+const TWELVE_HOUR = new RegExp(
+  [
+    String.raw`(?:午前|午後|上午|下午|早上|晚上|凌晨|傍晚|中午|오전|오후)[ \u00a0]?\d{1,2}[ \u00a0]?(?:時|时|点|點|시)`,
+    String.raw`\d{1,2}[ \u00a0]?giờ[ \u00a0](?:sáng|trưa|chiều|tối|đêm)`,
+    String.raw`pukul[ \u00a0]\d{1,2}(?:[.:]\d{2})?[ \u00a0](?:pagi|siang|sore|malam)`
+  ].join('|'),
+  'giu'
+);
+/**
+ * Thai, Indonesian and Turkish write 8 pm 20.00: the hour before น. (Thai)
+ * or a time zone (WIB, WITA, WIT), or after pukul or jam (Indonesian) or saat
+ * (Turkish). Read as 20, or 20:30, as English's 8pm and 8:30pm are.
+ */
+const DOTTED_TIME = {
+  th: /(?<![\d.,])(\d{1,2})\.(\d{2})(?=[ \u00a0]?น\.)/gu,
+  id: /(?<=\b(?:pukul|jam)[ \u00a0])(\d{1,2})\.(\d{2})(?!\d)|(?<![\d.,])(\d{1,2})\.(\d{2})(?=[ \u00a0](?:WIB|WITA|WIT)\b)/giu,
+  tr: /(?<=\bsaat )(\d{1,2})\.(\d{2})(?!\d)/giu
+};
 
 /** Whether a language writes 1.5 with a point, as English does, rather than a comma. */
 const decimalPoint = (language) =>
@@ -135,9 +183,26 @@ const decimalPoint = (language) =>
  * point in any language: a product's code, Keramikos 10.05, stays as it is.
  * Times are read on the 24-hour clock, as most languages write them: 8pm is 20.
  * Irish and Maltese write numbers as English does (CLDR's, through Intl).
+ * Full-width forms are read as their plain ones (１０ｇ is 10 g, ℃ is °C),
+ * Turkish %5 is 5 %, and a 12-hour time such as 午後8時 is kept whole, so it
+ * shows as not in the English. Numbers written in words (十, 二十) are not
+ * read, so they show as missing.
  */
 export function numbersIn(text, language) {
   const english = decimalPoint(language);
+  const found = new Set();
+  text = plainForms(text).replace(TWELVE_HOUR, (time) => {
+    found.add(time);
+    return ' ';
+  });
+  const dotted = DOTTED_TIME[new Intl.Locale(language).language];
+  if (dotted) {
+    text = text.replace(dotted, (...groups) => {
+      const [hour, minutes] = groups.slice(1, 5).filter(Boolean);
+      return minutes === '00' ? hour : `${hour}:${minutes}`;
+    });
+  }
+  if (percentFirst(language)) text = text.replace(/(?<![\p{L}\p{N}])%[ \u00a0\u202f]?(\d[\d.,]*\d|\d)/gu, '$1 %');
   text = text.replace(/\b(\d{1,2})(?::(\d{2}))?\s?([ap])\.?m\b\.?/gi, (_, hour, minutes, half) => {
     const h = (Number(hour) % 12) + (half.toLowerCase() === 'p' ? 12 : 0);
     return minutes ? `${h}:${minutes}` : String(h);
@@ -147,7 +212,6 @@ export function numbersIn(text, language) {
   const pattern = english
     ? /\d+(?:,\d{3}(?!\d))*(?:\.\d+)?/g
     : /\d+(?:[.\u00a0\u202f]\d{3}(?!\d))*(?:,\d+|\.\d{1,2}(?!\d))?/g;
-  const found = new Set();
   for (const match of text.matchAll(pattern)) {
     let number = match[0];
     number = english
@@ -255,7 +319,64 @@ export function compareMessage(language, key, english, translated, { rich = true
   if (language === 'ro' && /[şţŞŢ]/.test(translated)) {
     problems.push(`${key}: Romanian takes ș and ț (comma below), not ş and ţ (cedilla)`);
   }
-  return problems;
+  return [...problems, ...scriptProblems(key, language, translated)];
+}
+
+/**
+ * Characters Simplified and Traditional Chinese write differently, as
+ * [Simplified, Traditional]: a short list of the app's own words, not a full
+ * table, so that a file slipping into the other script is caught. Silicon is
+ * 硅 on the mainland and 矽 in Taiwan, a ceramics word above all. Japanese
+ * writes none of the Simplified forms but those in JAPANESE_TOO.
+ */
+const SCRIPT_PAIRS = [
+  ['硅', '矽'], // silicon
+  ['钾', '鉀'], // potassium
+  ['钠', '鈉'], // sodium
+  ['钙', '鈣'], // calcium
+  ['镁', '鎂'], // magnesium
+  ['锌', '鋅'], // zinc
+  ['铝', '鋁'], // aluminium
+  ['铁', '鐵'], // iron
+  ['烧', '燒'], // to fire
+  ['窑', '窯'], // kiln
+  ['温', '溫'], // temperature
+  ['软', '軟'], // soft
+  ['设', '設'], // settings
+  ['计', '計'], // calculate
+  ['数', '數'], // number
+  ['页', '頁'], // page
+  ['选', '選'], // choose
+  ['删', '刪'], // delete
+  ['编', '編'], // edit
+  ['显', '顯'], // show
+  ['录', '錄'], // record, log in
+  ['码', '碼'], // code, password
+  ['语', '語'], // language
+  ['户', '戶'], // account
+  ['帮', '幫'], // help
+  ['这', '這'], // this
+  ['们', '們'], // plural of people
+  ['个', '個'], // counter
+  ['为', '為'], // for
+  ['说', '說'], // to say
+  ['时', '時'], // time
+  ['发', '發'] // to send
+];
+/** Simplified forms Japanese writes too (温度, 数, 硅素). */
+const JAPANESE_TOO = '温数硅';
+
+/** Problems with a text's script: Chinese in the other script's characters, Japanese in simplified hanzi. */
+function scriptProblems(label, language, text) {
+  const wrong = { 'zh-Hans': 1, 'zh-Hant': 0, ja: 0 }[language];
+  if (wrong === undefined) return [];
+  const pairs = SCRIPT_PAIRS.filter(([simplified]) => language !== 'ja' || !JAPANESE_TOO.includes(simplified));
+  const found = pairs.filter((pair) => text.includes(pair[wrong]));
+  if (!found.length) return [];
+  const given = found.map((pair) => pair[wrong]).join(' ');
+  if (language === 'ja') return [`${label}: Japanese is not written with simplified hanzi such as ${given}`];
+  const right = found.map((pair) => pair[1 - wrong]).join(' ');
+  return [`${label}: ${wrong ? 'Simplified' : 'Traditional'} Chinese takes ${right}, not ${given}`];
 }
 
 /** The messages files: { '': { en: path, de: path }, recipe: { en: path } }. */
@@ -426,7 +547,11 @@ export function compareSegment(label, language, english, translated) {
       .replace(/\{\{[^}]*\}\}/g, ' ')
       .replace(/\{#[\w-]+(?: lang=en)?\}/g, ' ')
       .replace(/^lang: en$/m, '');
-  return [...problems, ...compareFigures(label, language, prose(english), prose(translated))];
+  return [
+    ...problems,
+    ...compareFigures(label, language, prose(english), prose(translated)),
+    ...scriptProblems(label, language, translated)
+  ];
 }
 
 /** Problems with the translated guides, each against its English. */

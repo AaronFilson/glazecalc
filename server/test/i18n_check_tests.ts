@@ -82,6 +82,89 @@ describe('message checks', () => {
     expect(numbersIn('1.250', 'de')).to.eql(['1250']);
   });
 
+  describe('in the languages of East and Southeast Asia, and Turkish', () => {
+    const english = 'Fire to 1222 °C, add 10 g of frit, keep the stain at 5% or less, and open the kiln after 8pm.';
+    const figures = ['10 g', '1222 °C', '20', '5 %'];
+    const sentences: [string, string][] = [
+      ['ja', '1222 °Cで焼成し、フリットを10 g加え、顔料は5%以下にして、20時以降に窯を開けます。'],
+      // As a Japanese keyboard types it: full-width digits, ℃, ｇ and ％.
+      ['ja', '１２２２℃で焼成し、フリットを１０ｇ加え、顔料は５％以下にして、２０時以降に窯を開けます。'],
+      ['zh-Hans', '烧成到1222 °C，加入10 g熔块，色剂保持在5%以下，20点以后开窑。'],
+      ['zh-Hant', '燒成至1222 °C，加入10 g熔塊，色劑保持在5%以下，20點以後開窯。'],
+      ['ko', '1222 °C로 소성하고, 프릿 10 g을 넣고, 안료는 5% 이하로 하고, 20시 이후에 가마를 여세요.'],
+      ['th', 'เผาที่ 1222 °C เติมฟริต 10 g ให้สีไม่เกิน 5% และเปิดเตาหลัง 20.00 น.'],
+      [
+        'id',
+        'Bakar hingga 1222 °C, tambahkan 10 g frit, jaga pewarna 5% atau kurang, dan buka tungku setelah pukul 20.00.'
+      ],
+      ['vi', 'Nung đến 1222 °C, thêm 10 g frit, giữ chất màu ở mức 5% trở xuống, và mở lò sau 20 giờ.'],
+      [
+        'tr',
+        '1222 °C’ye kadar pişirin, 10 g frit ekleyin, boyayı %5’in altında tutun ve fırını saat 20.00’den sonra açın.'
+      ]
+    ];
+
+    it('reads their numbers and units, written into the next word, full-width or with the percent sign first', () => {
+      expect(numbersIn(english, 'en')).to.eql(figures);
+      for (const [language, sentence] of sentences) {
+        expect(numbersIn(sentence, language), language).to.eql(figures);
+        expect(compareMessage(language, 'k', english, sentence), language).to.eql([]);
+      }
+      // A unit followed by a Latin letter is still part of a word: 5 grams, not 5 g.
+      expect(numbersIn('5 gram', 'id')).to.eql(['5']);
+      // A time with minutes keeps them, as 8:30pm does.
+      expect(numbersIn('pukul 20.30 WIB', 'id')).to.eql(numbersIn('8:30pm', 'en'));
+    });
+
+    it('reports a time on the 12-hour clock, and a number written in words, rather than misreading them', () => {
+      expect(compareMessage('ja', 'k', english, sentences[0]![1].replace('20時', '午後8時'))).to.eql([
+        'k: its numbers differ from the English; missing 20; not in the English 午後8時'
+      ]);
+      expect(numbersIn('晚上8点开窑', 'zh-Hans')).to.eql(['晚上8点']);
+      expect(numbersIn('下午8時開窯', 'zh-Hant')).to.eql(['下午8時']);
+      expect(numbersIn('오후 8시에 여세요', 'ko')).to.eql(['오후 8시']);
+      expect(numbersIn('mở lò sau 8 giờ tối', 'vi')).to.eql(['8 giờ tối']);
+      expect(numbersIn('buka setelah pukul 8 malam', 'id')).to.eql(['pukul 8 malam']);
+      expect(compareMessage('zh-Hans', 'k', 'Add 10 g.', '加入十克。')).to.eql([
+        'k: its numbers differ from the English; missing 10 g'
+      ]);
+    });
+
+    it('finds Simplified characters in Traditional Chinese, the reverse, and simplified hanzi in Japanese', () => {
+      expect(compareMessage('zh-Hans', 'k', 'Silicon settings', '硅设置')).to.eql([]);
+      expect(compareMessage('zh-Hant', 'k', 'Silicon settings', '矽設定')).to.eql([]);
+      expect(compareMessage('zh-Hans', 'k', 'Silicon settings', '矽設置')).to.eql([
+        'k: Simplified Chinese takes 硅 设, not 矽 設'
+      ]);
+      expect(compareMessage('zh-Hant', 'k', 'Potassium and aluminium', '钾和铝')).to.eql([
+        'k: Traditional Chinese takes 鉀 鋁, not 钾 铝'
+      ]);
+      // Japanese writes 温度 and 数 as Simplified Chinese does, but not 设 or 铁.
+      expect(compareMessage('ja', 'k', 'Temperature', '温度と数')).to.eql([]);
+      expect(compareMessage('ja', 'k', 'Iron settings', '铁の设定')).to.eql([
+        'k: Japanese is not written with simplified hanzi such as 铁 设'
+      ]);
+      // The same in a guide's sections.
+      expect(compareSegment('glaze', 'zh-Hans', 'Silicon.', '矽。')).to.eql([
+        'glaze: Simplified Chinese takes 硅, not 矽'
+      ]);
+    });
+
+    it('takes only the plural form other where the language has no other', () => {
+      const english = '{count, plural, one {# material} other {# materials}}';
+      for (const language of ['ja', 'zh-Hans', 'zh-Hant', 'ko', 'th', 'vi', 'id']) {
+        expect(compareMessage(language, 'k', english, '{count, plural, other {#}}'), language).to.eql([]);
+        expect(compareMessage(language, 'k', english, '{count, plural, one {#} other {#}}'), language).to.eql([
+          `k: ${language} has no plural form one for {count}`
+        ]);
+      }
+      // Turkish has one and other, as English does.
+      expect(compareMessage('tr', 'k', english, '{count, plural, other {# malzeme}}')).to.eql([
+        'k: tr needs the plural forms one for {count}'
+      ]);
+    });
+  });
+
   it('finds a changed number, unit or link in a translated message', () => {
     const english = 'Fire to cone 6 ({temp}), 2232 °F, as <link>Orton</link> says: https://www.ortonceramic.com/';
     const right = 'Auf Kegel 6 brennen ({temp}), 2232 °F, wie <link>Orton</link> sagt: https://www.ortonceramic.com/';
