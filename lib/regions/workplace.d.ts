@@ -6,8 +6,11 @@ export interface SilicaLimit {
   quartz: number;
   /** Where cristobalite's limit differs from quartz's. */
   cristobalite?: number;
-  /** binding: a legal limit; indicative: a guide value; assessment: Germany's Beurteilungsmaßstab. */
-  kind: 'binding' | 'indicative' | 'assessment';
+  /**
+   * binding: a legal limit; indicative: a guide value; assessment: Germany's Beurteilungsmaßstab;
+   * control: Japan's 管理濃度, a yardstick for the air of a work area, not a limit on one person's exposure.
+   */
+  kind: 'binding' | 'indicative' | 'assessment' | 'control';
   /** The instrument that sets it, as it is named there. */
   law: string;
   /** Where it was read. */
@@ -17,6 +20,38 @@ export interface SilicaLimit {
   checked: string;
   /** The level at which an employer must start acting (the US). */
   actionLevel?: number;
+  /**
+   * Where the value depends on the dust's free silica content Q (in %): E = numerator / (factor × Q + 1)
+   * mg/m³ (Japan). quartz is then the value at Q = 100.
+   */
+  formula?: { numerator: number; factor: number };
+  /** A recommended value from a scientific body beside the law's, not binding (Japan's JSOH). */
+  recommended?: Recommended;
+  note?: string;
+}
+
+/** A value a scientific body recommends, in mg/m³. */
+export interface Recommended {
+  value: number;
+  /** The body, as it names itself in English. */
+  by: string;
+  abbr: string;
+  /** The list it is in, as it is named. */
+  title: string;
+  source: string;
+  status: Status;
+  checked: string;
+}
+
+/** The particle respirator classes sold in a region, where its data names them (Japan). */
+export interface Respirators {
+  /** The classes for everyday glaze dust, as written on the mask: any one of them. */
+  everyday: string[];
+  /** The higher classes. */
+  higher: string[];
+  source: string;
+  status: Status;
+  checked: string;
   note?: string;
 }
 
@@ -35,12 +70,15 @@ export interface Agency {
 export interface Workplace {
   silica?: SilicaLimit;
   agency?: Agency;
+  respirators?: Respirators;
 }
 
 export const WORKPLACE: Readonly<Record<string, Workplace>>;
 /** The EU's binding limit (Directive (EU) 2017/2398), which member states may undercut. */
 export const EU_SILICA: SilicaLimit;
 /** A region's facts that may be shown (verified, or from a named secondary source); null for a region with none. */
-export function workplaceFor(code: string): { silica: SilicaLimit | null; agency: Agency | null; eu: boolean } | null;
+export function workplaceFor(
+  code: string
+): { silica: SilicaLimit | null; agency: Agency | null; respirators: Respirators | null; eu: boolean } | null;
 /** Every piece of text shown, once, for translators. */
 export function texts(): string[];

@@ -128,3 +128,61 @@ describe('FoodLimits', () => {
     expect(rows()[2]).toEqual(['Cups and mugs (any one of 6)', '0.5 µg/mL', '0.5 µg/mL']);
   });
 });
+
+// Japan (docs/asia-plan.md, Phase C): the law's own units and words, in English for now.
+describe('Japan', () => {
+  it('gives the control concentration as a formula, the value for all free silica, JSOH and the mask classes', async () => {
+    const { element, text, rows } = await create(SilicaLimit, 'JP');
+    expect(text('caption')).toBe(
+      'The yardstick for respirable crystalline silica in the air of a work area in Japan (checked October 13, 2026)'
+    );
+    expect(rows()).toEqual([
+      ['Control concentration, where Q is the free silica in the dust, in %', '3.0 / (1.19Q + 1) mg/m³'],
+      ['Control concentration for dust that is all free silica', '0.025 mg/m³'],
+      ['Recommended by JSOH', '0.03 mg/m³']
+    ]);
+    const paragraphs = [...element.querySelectorAll('p')].map((p) => (p.textContent ?? '').replace(/\s+/g, ' ').trim());
+    expect(paragraphs[0]).toContain('A control concentration (管理濃度)');
+    expect(paragraphs[0]).toContain('not a limit on what one person breathes');
+    expect(paragraphs[0]).toContain('Set by 作業環境評価基準（昭和63年労働省告示第79号）別表.');
+    expect(paragraphs[0]).not.toContain('EU');
+    expect(paragraphs[1]).toBe(
+      'The Japan Society for Occupational Health (JSOH) recommends this value in its Recommendation of Occupational Exposure Limits (2025–2026). It is not law.'
+    );
+    expect(paragraphs[2]).toContain(
+      'Dust masks here are sold by class: DS2 or RS2 for glaze dust, or DS3 or RS3 for more protection'
+    );
+    expect(paragraphs[2]).toContain('国家検定');
+    const links = [...element.querySelectorAll('a')].map((a) => a.getAttribute('href'));
+    expect(links).toContain('https://www.jaish.gr.jp/horei/hor1-18/hor1-18-2-1-2.html');
+    expect(links).toContain('https://www.sanei.or.jp/english/files/topics/oels/oel_en_2025.pdf');
+    expect(links).toContain('https://www.mhlw.go.jp/content/11201000/000587014.pdf');
+    expect(links).toContain('https://anzeninfo.mhlw.go.jp/anzen/gmsds/14808-60-7.html');
+  });
+
+  it("gives the ceramic limits in the law's units, at most, with what cooking ware means", async () => {
+    const { text, rows } = await create(FoodLimits, 'JP');
+    expect(rows()).toEqual([
+      ['Pieces that cannot be filled, or less than 2.5 cm deep', '8 µg/cm²', '0.7 µg/cm²'],
+      ['Other pieces under 1.1 L, not for cooking', '2 µg/mL', '0.5 µg/mL'],
+      ['Other pieces from 1.1 L to under 3 L, not for cooking', '1 µg/mL', '0.25 µg/mL'],
+      ['Other pieces of 3 L or more, not for cooking', '0.5 µg/mL', '0.25 µg/mL'],
+      ['Cooking ware, 2.5 cm deep or more', '0.5 µg/mL', '0.05 µg/mL']
+    ]);
+    const paragraph = text('p');
+    expect(paragraph).toContain('Set by 食品、添加物等の規格基準（昭和34年厚生省告示第370号）第3 D.');
+    expect(paragraph).toContain('A piece passes if it releases no more than the limit');
+    expect(paragraph).toContain('sake warmers (tokkuri) and chawanmushi cups');
+    expect(paragraph).not.toContain("The EU's rules apply here.");
+  });
+
+  it('lists shops by their own names, and none with a town not read on its pages', async () => {
+    const { rows } = await create(ShopList, 'JP');
+    expect(rows().map((row) => row[0])).toEqual([
+      '陶芸百貨店' + '埼玉県上尾市',
+      '丸二陶料',
+      'ヤマニファーストセラミック' + '島根県松江市'
+    ]);
+    expect(rows()[1]![2]).toBe('1 kg, 25 kg, and 30 kg');
+  });
+});

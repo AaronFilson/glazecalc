@@ -186,8 +186,8 @@ export function notANumber(mark: DecimalMark = typedDecimalMark()): string {
  */
 export const listLocale = signal('en');
 
-/** A list in prose, as the page's language joins one: "potash, soda and alumina"; with 'unit', "A, B, C". */
-export function listOf(items: readonly string[], type: 'conjunction' | 'unit' = 'conjunction'): string {
+/** A list in prose, as the page's language joins one: "potash, soda and alumina"; "DS2 or RS2"; with 'unit', "A, B, C". */
+export function listOf(items: readonly string[], type: 'conjunction' | 'disjunction' | 'unit' = 'conjunction'): string {
   return new Intl.ListFormat(listLocale(), { style: type === 'unit' ? 'short' : 'long', type }).format(items);
 }
 

@@ -1,3 +1,4 @@
+import crypto from 'node:crypto';
 import fs from 'node:fs';
 import regions from '../../lib/regions/index.js';
 import food from '../../lib/regions/food.js';
@@ -93,7 +94,8 @@ describe('regions', () => {
     for (const region of regions.REGIONS) {
       for (const line of all(region.code).filter((l) => l.number)) {
         const written = line.number.replace(/\D/g, '');
-        const dialled = line.tel.replace(/\D/g, '');
+        // A short number with # (Japan's #8000) is written %23 in its link.
+        const dialled = decodeURIComponent(line.tel).replace(/\D/g, '');
         const label = `${region.code} ${line.name}: ${line.number} / ${line.tel}`;
         if (line.tel.startsWith('+')) {
           // A national number drops its leading 0 after the country code; a US one keeps all but the 1.
@@ -114,6 +116,7 @@ describe('region facts', () => {
   const guides = JSON.parse(
     fs.readFileSync(new URL('../../client/public/i18n/guides/en.json', import.meta.url), 'utf8')
   );
+  const HTTP_ONLY = ['丸二陶料'];
   const checkedLately = (fact: { checked: string; source?: string; url?: string }, label: string) => {
     expect(fact.source ?? fact.url, label).to.match(/^https:\/\//);
     expect(Date.parse(fact.checked), label + ': check this again').to.be.above(yearAgo);
@@ -137,7 +140,7 @@ describe('region facts', () => {
   });
 
   it("should give every member state food-contact rules, its own or the EU's, in the law's units", () => {
-    const units = ['mg/dm²', 'mg/L', 'µg/dm²', 'µg/L', 'µg/mL', 'mg'];
+    const units = ['mg/dm²', 'mg/L', 'µg/dm²', 'µg/L', 'µg/mL', 'µg/cm²', 'mg'];
     for (const region of regions.REGIONS) {
       const found = food.foodRulesFor(region.code);
       if (region.eu) expect(found, region.name).not.to.equal(null);
@@ -165,7 +168,10 @@ describe('region facts', () => {
       expect(entry, region.name).not.to.equal(null);
       expect(entry!.shops.length + entry!.nearby.length, region.name).to.be.above(0);
       for (const shop of entry!.shops) {
-        checkedLately(shop, shop.name);
+        // A shop whose site has no https address is linked as it is, and only that one.
+        if (HTTP_ONLY.includes(shop.name)) expect(shop.url, shop.name).to.match(/^http:\/\//);
+        else checkedLately(shop, shop.name);
+        expect(Date.parse(shop.checked), shop.name + ': check this again').to.be.above(yearAgo);
         for (const code of shop.sells) expect(guides.shops.what, shop.name).to.have.property(code);
         const sizes = shop.packs?.sizes ?? [];
         expect(
@@ -180,5 +186,129 @@ describe('region facts', () => {
     }
     // A note on a shop is translated, as its English.
     expect(suppliers.texts()).to.include('No feldspar seen.');
+  });
+});
+
+// Japan (docs/asia-plan.md, Phase C), from research_notes/Asia/japan-verification-2026-10-14.md.
+describe('Japan', () => {
+  const yearAgo = Date.now() - 366 * 24 * 60 * 60 * 1000;
+
+  it('fires by SK cones, reads density in Baumé, and lists the US library until its own materials exist', () => {
+    expect(regions.regionFor('JP')).to.eql({
+      code: 'JP',
+      name: 'Japan',
+      languages: ['ja'],
+      eu: false,
+      temperature: 'C',
+      cones: 'sk',
+      density: 'baume',
+      library: 'US'
+    });
+    expect(regions.formatLocaleFor('en', 'JP', 'auto')).to.equal('en-JP');
+  });
+
+  it("gives 119, the poison centre's two public lines (acute cases only) and #8000 for children", () => {
+    const shown = safety.shownFor('JP')!;
+    expect(shown.emergency.map((line) => line.number)).to.eql(['119']);
+    expect(shown.poison.map((line) => [line.number, line.tel])).to.eql([
+      ['072-727-2499', '+81727272499'],
+      ['029-852-9999', '+81298529999']
+    ]);
+    for (const line of shown.poison) {
+      expect(line.source).to.equal('https://www.j-poison-ic.jp/110serviece/service-guide-genelal/');
+      expect(line.hours).to.equal('24 hours, every day, free');
+      expect(line.note).to.match(/^Only for acute poisoning/);
+      expect(line.who).to.equal('public');
+    }
+    expect(shown.advice).to.have.length(1);
+    expect(shown.advice[0]).to.include({ number: '#8000', tel: '%238000', who: 'children' });
+    // The professionals' lines are not shown.
+    const numbers = JSON.stringify(safety.SAFETY['JP']);
+    for (const professional of ['072-726-9923', '029-851-9999']) expect(numbers).not.to.contain(professional);
+    expect(safety.ministryFor('JP')).to.include({ name: '厚生労働省', url: 'https://www.mhlw.go.jp/' });
+  });
+
+  it("gives the control concentration as the law's formula, 0.025 for all free silica, beside JSOH's 0.03", () => {
+    const facts = workplace.workplaceFor('JP')!;
+    const silica = facts.silica!;
+    expect(silica).to.include({ kind: 'control', quartz: 0.025, status: 'verified' });
+    expect(silica.cristobalite).to.equal(undefined);
+    expect(silica.formula).to.eql({ numerator: 3.0, factor: 1.19 });
+    // E = 3.0 / (1.19Q + 1) at Q = 100 is the value shown for all free silica.
+    expect(silica.formula!.numerator / (silica.formula!.factor * 100 + 1)).to.be.closeTo(silica.quartz, 1e-12);
+    expect(silica.law).to.contain('昭和63年労働省告示第79号');
+    expect(silica.recommended).to.include({ value: 0.03, abbr: 'JSOH', status: 'verified' });
+    expect(Date.parse(silica.recommended!.checked)).to.be.above(yearAgo);
+    expect(facts.respirators).to.include({ status: 'verified' });
+    expect(facts.respirators!.everyday).to.eql(['DS2', 'RS2']);
+    expect(facts.respirators!.higher).to.eql(['DS3', 'RS3']);
+    expect(Date.parse(facts.respirators!.checked)).to.be.above(yearAgo);
+    // A recommended value that could not be confirmed is left out, not the limit with it.
+    const recommended = workplace.WORKPLACE['JP']!.silica!.recommended as { status: string };
+    recommended.status = 'unverified';
+    try {
+      expect(workplace.workplaceFor('JP')!.silica).to.include({ quartz: 0.025 });
+      expect(workplace.workplaceFor('JP')!.silica!.recommended).to.equal(undefined);
+    } finally {
+      recommended.status = 'verified';
+    }
+  });
+
+  it('gives the ceramic limits as the law states them: µg/cm² for flat ware, three sizes and cooking ware in µg/mL, each at most', () => {
+    const { rules, own } = food.foodRulesFor('JP')!;
+    expect(own).to.equal(true);
+    expect(rules.atMost).to.equal(true);
+    expect(rules.limits).to.eql([
+      { category: 'jpFlat', lead: 8, cadmium: 0.7, unit: 'µg/cm²' },
+      { category: 'jpSmall', lead: 2, cadmium: 0.5, unit: 'µg/mL' },
+      { category: 'jpLarge', lead: 1, cadmium: 0.25, unit: 'µg/mL' },
+      { category: 'jpStorage', lead: 0.5, cadmium: 0.25, unit: 'µg/mL' },
+      { category: 'jpCooking', lead: 0.5, cadmium: 0.05, unit: 'µg/mL' }
+    ]);
+    // The law does not say whether pieces are judged each or on average.
+    for (const limit of rules.limits) expect(limit.judged).to.equal(undefined);
+    // No other region says "at most".
+    for (const code of Object.keys(food.FOOD).filter((code) => code !== 'JP')) {
+      expect(food.FOOD[code]!.atMost, code).to.equal(undefined);
+    }
+  });
+
+  it("names three shops checked on their own sites, and no shop's town that was not read there", () => {
+    const { shops } = suppliers.shopsFor('JP')!;
+    expect(shops.map((shop) => shop.name)).to.eql(['陶芸百貨店', '丸二陶料', 'ヤマニファーストセラミック']);
+    expect(shops[1]!.place).to.equal(undefined);
+    expect(shops[1]!.packs).to.eql({ unit: 'kilogram', sizes: [1, 25, 30] });
+  });
+
+  it('never names cones in its safety data, so never as Seger and never with an Orton number', () => {
+    const text = JSON.stringify([
+      safety.SAFETY['JP'],
+      workplace.WORKPLACE['JP'],
+      food.FOOD['JP'],
+      suppliers.SUPPLIERS['JP']
+    ]);
+    expect(text).not.to.match(/seger|orton|cone/i);
+  });
+});
+
+// Adding Japan, and the fields it needed, left every earlier region's data as it was.
+describe('regions before Japan', () => {
+  it('keep their data exactly', () => {
+    const codes = [
+      'US', 'GB', 'AU', 'NZ', 'AT', 'BE', 'BG', 'HR', 'CY', 'CZ', 'DK', 'EE', 'FI', 'FR', 'DE', 'GR',
+      'HU', 'IE', 'IT', 'LV', 'LT', 'LU', 'MT', 'NL', 'PL', 'PT', 'RO', 'SK', 'SI', 'ES', 'SE'
+    ]; // prettier-ignore
+    const data: unknown[] = codes.map((code) => [
+      code,
+      regions.regionFor(code),
+      safety.SAFETY[code],
+      safety.MINISTRIES[code] ?? null,
+      workplace.WORKPLACE[code] ?? null,
+      food.FOOD[code] ?? null,
+      suppliers.SUPPLIERS[code] ?? null
+    ]);
+    data.push(['EU', food.FOOD['EU'], workplace.EU_SILICA]);
+    const hash = crypto.createHash('sha256').update(JSON.stringify(data)).digest('hex');
+    expect(hash).to.equal('c7ac856ef009087bc7c118f7fc89613351f48533aa43644c2b5f0224cd631c13');
   });
 });

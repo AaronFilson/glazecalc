@@ -29,7 +29,8 @@ describe('LocaleService', () => {
   it("takes a region from the browser's language, for defaults only", () => {
     expect(browserRegion(['de-AT', 'en'])).toBe('AT');
     expect(browserRegion(['en', 'fr-FR'])).toBe('FR');
-    expect(browserRegion(['en', 'ja-JP'])).toBe('');
+    expect(browserRegion(['en', 'ja-JP'])).toBe('JP');
+    expect(browserRegion(['en', 'ko-KR'])).toBe('');
     expect(browserRegion(['not a tag'])).toBe('');
   });
 
@@ -74,5 +75,27 @@ describe('LocaleService', () => {
     TestBed.tick();
     expect(locale.cones()).toBe('sk');
     expect(preferences.cones()).toBe('sk');
+  });
+
+  it('fires by SK cones and reads density in Baumé in Japan, until chosen, and lists the US library', () => {
+    const preferences = TestBed.inject(PreferencesService);
+    const locale = TestBed.inject(LocaleService);
+    preferences.region.set('JP');
+    TestBed.tick();
+    expect([locale.locale(), locale.temperature(), locale.cones(), locale.density()]).toEqual([
+      'en-JP',
+      'C',
+      'sk',
+      'baume'
+    ]);
+    expect(chosenRegion()).toBe('US');
+    // Orton cones and temperature are a setting away.
+    preferences.cones.set('orton');
+    TestBed.tick();
+    expect(locale.cones()).toBe('orton');
+    preferences.cones.set('temperature');
+    preferences.density.set('sg');
+    TestBed.tick();
+    expect([locale.cones(), locale.density()]).toEqual(['temperature', 'sg']);
   });
 });

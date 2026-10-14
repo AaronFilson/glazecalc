@@ -5,14 +5,15 @@ import { textKey } from '../../../../lib/regions/languages';
 import { EU_SILICA, SilicaLimit as Limit, workplaceFor } from '../../../../lib/regions/workplace';
 import { codedMessage } from '../../i18n/coded';
 import { RichText } from '../../i18n/rich-text';
-import { upTo } from '../../shared/format';
+import { fixed, listOf, upTo } from '../../shared/format';
 import { RegionChoice, RegionSelect, SourceLinks, earliest } from './region-select';
 
 /** What kind of limit it is, by the data's code. */
 const KIND: Record<Limit['kind'], string> = {
   binding: marker('guides.silica.kind.binding'),
   indicative: marker('guides.silica.kind.indicative'),
-  assessment: marker('guides.silica.kind.assessment')
+  assessment: marker('guides.silica.kind.assessment'),
+  control: marker('guides.silica.kind.control')
 };
 
 /**
@@ -38,12 +39,28 @@ const KIND: Record<Limit['kind'], string> = {
           <table class="guide-table">
             <caption>
               {{
-                t('guides.silica.caption', { region: regionName(), date: checked() })
+                t(silica.kind === 'control' ? 'guides.silica.captionControl' : 'guides.silica.caption', {
+                  region: regionName(),
+                  date: checked()
+                })
               }}
             </caption>
             <tbody>
+              @if (silica.formula; as formula) {
+                <tr>
+                  <th scope="row">{{ t('guides.silica.formula') }}</th>
+                  <td class="num">
+                    {{
+                      t('guides.silica.formulaValue', {
+                        numerator: fixedNumber(formula.numerator, 1),
+                        factor: number(formula.factor)
+                      })
+                    }}
+                  </td>
+                </tr>
+              }
               <tr>
-                <th scope="row">{{ t(silica.cristobalite ? 'guides.silica.quartz' : 'guides.silica.both') }}</th>
+                <th scope="row">{{ t(firstRow(silica)) }}</th>
                 <td class="num">{{ t('guides.silica.value', { value: number(silica.quartz) }) }}</td>
               </tr>
               @if (silica.cristobalite; as cristobalite) {
@@ -56,6 +73,12 @@ const KIND: Record<Limit['kind'], string> = {
                 <tr>
                   <th scope="row">{{ t('guides.silica.actionLevel') }}</th>
                   <td class="num">{{ t('guides.silica.value', { value: number(level) }) }}</td>
+                </tr>
+              }
+              @if (silica.recommended; as recommended) {
+                <tr>
+                  <th scope="row">{{ t('guides.silica.recommended', { abbr: recommended.abbr }) }}</th>
+                  <td class="num">{{ t('guides.silica.value', { value: number(recommended.value) }) }}</td>
                 </tr>
               }
             </tbody>
@@ -71,8 +94,38 @@ const KIND: Record<Limit['kind'], string> = {
             {{ words(silica.note) }}
           }
         </p>
+        @if (silica.recommended; as recommended) {
+          <p>
+            <gc-rich
+              [text]="
+                t('guides.silica.recommendedBy', {
+                  by: recommended.by,
+                  abbr: recommended.abbr,
+                  title: recommended.title
+                })
+              "
+              [links]="{ link: recommended.source }"
+            />
+          </p>
+        }
       } @else {
         <p>{{ t('guides.silica.unknown', { region: regionName(), value: number(eu.quartz) }) }}</p>
+      }
+      @if (facts.respirators; as respirators) {
+        <p>
+          <gc-rich
+            [text]="
+              t('guides.silica.respirators', {
+                everyday: listOf(respirators.everyday, 'disjunction'),
+                higher: listOf(respirators.higher, 'disjunction')
+              })
+            "
+            [links]="{ link: respirators.source }"
+          />
+          @if (respirators.note) {
+            {{ words(respirators.note) }}
+          }
+        </p>
       }
       @if (facts.agency; as agency) {
         <p>
@@ -102,11 +155,23 @@ export class SilicaLimit {
 
   protected readonly checked = computed(() => {
     const facts = this.facts();
-    return earliest([facts?.silica?.checked, facts?.agency?.checked].filter((day): day is string => !!day));
+    return earliest(
+      [
+        facts?.silica?.checked,
+        facts?.silica?.recommended?.checked,
+        facts?.respirators?.checked,
+        facts?.agency?.checked
+      ].filter((day): day is string => !!day)
+    );
   });
   protected readonly sources = computed(() => {
     const facts = this.facts();
-    return [facts?.silica?.source, facts?.agency?.url].filter((url): url is string => !!url);
+    return [
+      facts?.silica?.source,
+      facts?.silica?.recommended?.source,
+      facts?.respirators?.source,
+      facts?.agency?.url
+    ].filter((url): url is string => !!url);
   });
   protected readonly agencyName = computed(() => {
     const agency = this.facts()?.agency;
@@ -123,6 +188,19 @@ export class SilicaLimit {
 
   protected number(value: number): string {
     return upTo(value, 3);
+  }
+
+  /** A number with the decimals the law writes it with: 3.0. */
+  protected fixedNumber(value: number, places: number): string {
+    return fixed(value, places);
+  }
+
+  protected readonly listOf = listOf;
+
+  /** What the first value is for: all free silica (Japan's formula), quartz alone, or both. */
+  protected firstRow(silica: Limit): string {
+    if (silica.formula) return marker('guides.silica.allFree');
+    return silica.cristobalite ? marker('guides.silica.quartz') : marker('guides.silica.both');
   }
 
   protected words(text: string): string {
