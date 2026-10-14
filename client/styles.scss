@@ -90,7 +90,9 @@
   line-gap-override: 0%;
 }
 
-// Japanese, Chinese, Korean and Thai: Lora for their Latin, then a serif of the
+// Japanese, Chinese, Korean and Thai: Lora for their Latin (after Noto's subscripts,
+// as in --gc-font above, so Lora's math file is not fetched for them, and the
+// prerender's font preloads hold for these pages too), then a serif of the
 // device's for the rest, named so a browser need not fall back to a thin one
 // (SimSun, PMingLiU) for the page's lang. Noto Serif CJK and Thai where they are
 // installed (Linux, and the browser tests), then each system's own. Not served:
@@ -106,7 +108,7 @@ $gc-script-fonts: (
 $gc-script-langs: ();
 @each $lang, $fonts in $gc-script-fonts {
   :root:lang(#{$lang}) {
-    --gc-font: 'Lora Variable', 'Noto Serif Fill', #{$fonts}, Georgia, serif;
+    --gc-font: 'Noto Serif Sub', 'Lora Variable', 'Noto Serif Fill', #{$fonts}, Georgia, serif;
   }
   $gc-script-langs: list.append($gc-script-langs, ':lang(#{$lang})', $separator: comma);
 }
