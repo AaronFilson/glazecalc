@@ -20,7 +20,36 @@
     "forgot": "Forgot your password? Reset it",
     "newHere": "New here? <signup>Create a free account</signup>",
     "signUpFailed": "Error: could not create the account.",
-    "signInFailed": "Error: could not sign in."
+    "signInFailed": "Error: could not sign in.",
+    "or": "or",
+    "passkeySignIn": "Sign in with a passkey",
+    "passkeyHint": "A passkey uses your fingerprint, face or screen lock instead of a password. Add one on your account page."
+  },
+  "secondStep": {
+    "heading": "Two-step sign-in",
+    "signingInAs": "Your password is right. One more step to sign in as {email}.",
+    "leadCode": "Open your authenticator app and enter the code it shows for Glazecalc.",
+    "leadPasskey": "Use your passkey to finish signing in.",
+    "leadRecovery": "Enter one of the recovery codes you saved when you turned on two-step sign-in. Each code works once.",
+    "code": "Code from your authenticator app",
+    "codeHint": "{digits} digits. A new code shows every 30 seconds.",
+    "codeFormat": "Enter the {digits}-digit code from your authenticator app.",
+    "recoveryCode": "Recovery code",
+    "recoveryHint": "It looks like abcde-12345.",
+    "recoveryMissing": "Enter one of your recovery codes.",
+    "finish": "Finish signing in",
+    "usePasskey": "Use a passkey",
+    "noPasskeysHere": "This browser cannot use passkeys. Use another way below, or sign in on a device that can.",
+    "useRecovery": "Use a recovery code instead",
+    "useApp": "Use your authenticator app instead",
+    "startOver": "Start over",
+    "reloadNote": "This step waits {minutes} minutes. If you leave or reload this page, you will need to enter your password again.",
+    "expired": "Signing in took too long. Please enter your password again."
+  },
+  "passkey": {
+    "cancelled": "The passkey was not used. Please try again when you are ready.",
+    "registered": "This passkey is already on your account.",
+    "browserFailed": "This browser could not use the passkey. Please try again, or use another way."
   },
   "forgot": {
     "heading": "Reset your password",
