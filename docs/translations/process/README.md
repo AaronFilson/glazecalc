@@ -3,7 +3,9 @@
 The prompts and scripts used to write glossaries, translate, review, back-translate and take languages live (waves
 1–3, docs/i18n-plan.md, Phase 3), ready for the next wave. The scripts take the session's scratch folder from
 `GLAZECALC_SCRATCH` (an absolute path) and write every prompt and agent work file there; the branch named in the
-prompts is the current one (or `GLAZECALC_BRANCH`). A language must be in `LANGUAGES` in [wave.js](wave.js) (its
+prompts is the current one (or `GLAZECALC_BRANCH`), and the repo they name is the checkout the scripts run in
+(`{REPO}`): run them in the worktree the agents will work in, never in the main checkout for a worktree's wave, and
+read the first line of one prompt before starting. A language must be in `LANGUAGES` in [wave.js](wave.js) (its
 name, who reads it, its region, where its glossary research starts); Irish, Maltese and Japanese are there.
 A language outside the EU also gives its own research lines (`kilns`, `law`, `terms`, in place of the EU's), and any
 language may give `notes`: rules added to its glossary, translate, review or back-translation prompts only

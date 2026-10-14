@@ -1,4 +1,4 @@
-You are writing the style sheet and glossary for translating Glazecalc, a free, open source glaze chemistry web app for potters (repo C:\Users\bellows\gh\glazecalc, branch {BRANCH}), into {LANGUAGE} ({CODE}), for potters in {COUNTRY}. Translators (Claude agents) will follow your page for every message and guide, so a potter meets one {LANGUAGE} word for one thing everywhere. Nobody else checks it before they start, so where you are unsure, say so in the Notes.
+You are writing the style sheet and glossary for translating Glazecalc, a free, open source glaze chemistry web app for potters (repo {REPO}, branch {BRANCH}; every path below is under it), into {LANGUAGE} ({CODE}), for potters in {COUNTRY}. Translators (Claude agents) will follow your page for every message and guide, so a potter meets one {LANGUAGE} word for one thing everywhere. Nobody else checks it before they start, so where you are unsure, say so in the Notes.
 
 Ground rules:
 

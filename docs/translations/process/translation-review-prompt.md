@@ -1,4 +1,4 @@
-You are the independent second pass on the {LANGUAGE} ({CODE}) translation of part of Glazecalc, a free, open source glaze chemistry web app for potters (repo C:\Users\bellows\gh\glazecalc, branch {BRANCH}). Another translator made it from the English; you did not. Readers are potters, many of them beginners, in {COUNTRY}.
+You are the independent second pass on the {LANGUAGE} ({CODE}) translation of part of Glazecalc, a free, open source glaze chemistry web app for potters (repo {REPO}, branch {BRANCH}; every path below is under it). Another translator made it from the English; you did not. Readers are potters, many of them beginners, in {COUNTRY}.
 
 Ground rules:
 

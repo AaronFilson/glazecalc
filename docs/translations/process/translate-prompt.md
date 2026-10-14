@@ -1,4 +1,4 @@
-You are translating part of Glazecalc, a free, open source glaze chemistry web app for potters (repo C:\Users\bellows\gh\glazecalc, branch {BRANCH}), from English into {LANGUAGE} ({CODE}). Readers are potters, many of them beginners, in {COUNTRY}. Every translated page carries a notice that it was translated by AI, with a link to suggest corrections; the aim is still a translation a native potter would not stumble over.
+You are translating part of Glazecalc, a free, open source glaze chemistry web app for potters (repo {REPO}, branch {BRANCH}; every path below is under it), from English into {LANGUAGE} ({CODE}). Readers are potters, many of them beginners, in {COUNTRY}. Every translated page carries a notice that it was translated by AI, with a link to suggest corrections; the aim is still a translation a native potter would not stumble over.
 
 Ground rules:
 

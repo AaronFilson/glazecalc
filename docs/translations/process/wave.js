@@ -1,5 +1,6 @@
 // What the prompt makers share: the repo, the scratch folder, the branch, the
-// languages of the waves to come, and filling a template's {PLACEHOLDERS}.
+// languages of the waves to come, and filling a template's {PLACEHOLDERS}
+// ({REPO}, {BRANCH} and {SCRATCH} in every one).
 //
 // Set GLAZECALC_SCRATCH to the session's scratch folder (absolute) before
 // running any maker; the prompts and the agents' work files go there.
@@ -9,6 +10,10 @@ const path = require('path');
 const { execFileSync } = require('child_process');
 
 const ROOT = path.resolve(__dirname, '../../..');
+// The checkout the prompts name as the repo: this one, a worktree's own folder
+// when run in a worktree, never the main checkout (docs/asia-plan.md, "Lessons
+// from Japan, applied to Türkiye", 1). Written as Windows writes it.
+const REPO = ROOT.replace(/\//g, '\\');
 const HERE = __dirname;
 
 const scratchDir = process.env.GLAZECALC_SCRATCH;
@@ -145,7 +150,7 @@ const codes = (argv = process.argv.slice(2)) => {
 /** A template from this folder with its {PLACEHOLDERS} filled; fails if one is left. */
 const fill = (name, values) => {
   let text = fs.readFileSync(path.join(HERE, name), 'utf8');
-  const all = { BRANCH, SCRATCH: SCRATCH_WIN, ...values };
+  const all = { REPO, BRANCH, SCRATCH: SCRATCH_WIN, ...values };
   // Twice: a value may name another ({LANGUAGE} in a language's notes).
   for (let pass = 0; pass < 2; pass++) {
     for (const [key, value] of Object.entries(all)) text = text.split(`{${key}}`).join(value);
@@ -169,4 +174,18 @@ const chunks = () => {
   return SCRATCH_WIN + 'chunks.md';
 };
 
-module.exports = { ROOT, HERE, SCRATCH, SCRATCH_WIN, BRANCH, LANGUAGES, codes, fill, write, chunks, sources, notes };
+module.exports = {
+  ROOT,
+  REPO,
+  HERE,
+  SCRATCH,
+  SCRATCH_WIN,
+  BRANCH,
+  LANGUAGES,
+  codes,
+  fill,
+  write,
+  chunks,
+  sources,
+  notes
+};
