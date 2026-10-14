@@ -295,7 +295,7 @@ The numbers run from SK 022, the coolest, up to SK 20 here. Between SK 015 and S
 
 ### Setting large cones
 
-Set each large cone upright in a plaque or a pat of clay, sunk about 10 mm and leaning at 80° from the flat, toward its bending face. As with any cone, keep the height and the lean the same from firing to firing, because a difference in either changes how far it bends. The pack and the places to put it are described above for Orton cones, and the same advice holds.
+Set each large cone in a plaque or a pat of clay, leaning toward its bending face. As with any cone, keep the height and the lean the same from firing to firing, because a difference in either changes how far it bends. The pack and the places to put it are described above for Orton cones, and the same advice holds.
 
 ### Guide, firing and guard cones
 

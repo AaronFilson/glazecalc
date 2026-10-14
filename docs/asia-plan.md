@@ -2,13 +2,14 @@
 
 Status: drafted 2026-10-13 from the Asia research report and its three notes, for the owner's review. It follows docs/i18n-plan.md ("After the EU") and reuses its machinery. Nothing here changes the EU approach.
 
-Progress, 2026-10-14 (branch asia-japan): **Phase A is merged** (the three groundwork branches: locales, checks, fonts). **Phase B items 1–4 and the data half of item 6 are done**: the third cone system, the guides' three-way version choice, the SK chart as data (lib/cones) and the English SK section of the firing guide. Item 5 (translating the new section) and the human check of Yuko Trading's table against the data file (item 6) remain. Phase C (the JP region) is next.
+Progress, 2026-10-14 (branch asia-japan): **Phase A is merged** (the three groundwork branches: locales, checks, fonts). **Phase B items 1–4 and the data half of item 6 are done**: the third cone system, the guides' three-way version choice, the SK chart as data (lib/cones) and the English SK section of the firing guide. Item 6 is done too: the SK chart was checked row by row against Yuko Trading's PDF, and all 42 rows match. Item 5 (translating the new section) remains. Phase C (the JP region) is next.
 
 Corrections from the Japan research (docs from research_notes/Asia/japan-verification-2026-10-14.md):
 
 - The cone seller is **有恒商事 (Yuko Trading)**, not ユーコー商事. Its table PDF prints no heating rate, and does not mention JIS itself; the standard's status is from the JSA listing.
 - **釉果 and 釉灰 are Chinese (Jingdezhen) materials, not Japanese**, so they are not Japanese material entries (Phase C item 6).
 - The SK large-cone table has **42 rows** (SK 022 to SK 20), not 39 as the brief said.
+- **How large cones are set** ("sunk about 10 mm, leaned at 80°") is in no source we read, neither the seller's PDF nor the notes, so the firing guide no longer gives the two numbers. Could not verify: check in JIS R 8101 or a maker's instructions before adding them back.
 - The owner's choices for Japan: Japanese only for now; JIS SK cones only (no Kyoto table); SK as Japan's default cones, Orton and temperature one tap away; Baumé as the density default; the 24-hour clock; system fonts first.
 
 ## The goal
@@ -84,7 +85,7 @@ Tests:
 2. **Guides.** _Done 2026-10-14._ `forConeSystem` in `client/app/pages/guides/guide-document.ts` learns `:::sk` blocks. The two-way toggle in `guide-page.ts` and `byCones` in `recipe-page.ts:414` handle three systems.
 3. **The SK chart as data,** _done 2026-10-14: lib/cones/index.js, frozen in server/test/cones_tests.ts, and the table in the firing guide is checked against it,_ SK 022–20, large cones, from Yuko Trading's table, with the source, the JSA listing (reconfirmed 2023-10-20) and the check date. Every figure is labelled "nominal (JIS)". It carries the note: "The standard gives reference temperatures; at a potter's rate of about 100 °C/h, cones have been measured bending 40–70 °C cooler (Kyoto's institute, Kyoto cones). Set a witness cone and compare."
 4. **English firing guide** (`client/public/i18n/guides/firing/en.md`), an `:::sk` section, _done 2026-10-14 (`#sk-cones`):_
-   - how large cones are set (sunk about 10 mm, leaned at 80°) and read;
+   - how large cones are set (in a plaque, leaning toward the bending face) and read;
    - guide, firing and guard cones;
    - the Kyoto note: Kyoto cones are no longer made and run about two numbers cooler, so Kyoto's institute substitutes Orton 10 for its SK 12;
    - Orton self-supporting cones are sold in Japan as 立つゼーゲル.
@@ -92,7 +93,7 @@ Tests:
    No conversion anywhere.
 
 5. **Translate the new section** into the 24 live languages with the wave scripts, as Phase 4's new text was.
-6. **Before it goes live:** a person opens Yuko Trading's PDF table in a browser and checks every figure against the data file. Optionally, ask Yuko Trading who makes the cones now.
+6. _Done 2026-10-14: all 42 rows match the PDF._ **Before it goes live:** a person opens Yuko Trading's PDF table in a browser and checks every figure against the data file. Optionally, ask Yuko Trading who makes the cones now.
 
 Tests:
 
