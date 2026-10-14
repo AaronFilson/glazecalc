@@ -36,6 +36,9 @@ module.exports = defineConfig({
       MONGODB_URI: mongoUri,
       APP_SECRET: 'e2e-test-secret',
       APP_URL: 'http://localhost:' + port,
+      // A fixed key for two-step sign-in's secrets (server/lib/mfa_key.ts), test
+      // use only: the base64 of "glazecalc-e2e-test-mfa-key-32byt".
+      MFA_KEY: 'Z2xhemVjYWxjLWUyZS10ZXN0LW1mYS1rZXktMzJieXQ=',
       MAIL_TRANSPORT: 'file',
       MAIL_DIR: mailDir,
       // The tests sign up many accounts from one address.

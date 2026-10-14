@@ -41,7 +41,8 @@ session cookie is `Secure`. After DNS points at the instance,
 
 Settings come from SSM Parameter Store, never from the repository or user data:
 `/glazecalc/app-secret` (SecureString), `/glazecalc/mongo-password` (SecureString, the app's
-MongoDB user), `/glazecalc/backup-bucket`, `/glazecalc/smtp-url` (SecureString,
+MongoDB user), `/glazecalc/mfa-key` (SecureString, two-step sign-in's key; see "Two-step sign-in key"
+below), `/glazecalc/backup-bucket`, `/glazecalc/smtp-url` (SecureString,
 the SES SMTP credentials that turn email on; see aws/README.md section 14), and optionally
 `/glazecalc/acme-email` (Let's Encrypt account contact).
 
@@ -116,6 +117,61 @@ of deletions), comes back with the backup and has to be deleted by hand if someo
 copies outside these backups (the old 2017 snapshots and 2026-10-05 dumps, anything on a
 local PC) are not covered; and an entry older than 37 days is gone, so never restore a backup
 older than that.
+
+**Two-step sign-in after a restore.** The factors live in each account's record, so a restore
+brings back each account's two-step sign-in as it was on the backup's night: a factor removed
+since then works again, a recovery code used since then works again, and one added since then is
+gone. Nothing records these changes (docs/mfa-plan.md, decision 8). Email the affected people only
+if someone asks; anyone can put things right on the account page.
+
+## Two-step sign-in key
+
+`MFA_KEY` encrypts each account's authenticator-app secret (AES-256-GCM) and hashes its recovery
+codes (HMAC-SHA256), so the nightly dumps in S3 never hold a working secret or code. It is 32
+random bytes in base64, kept in the SSM SecureString `/glazecalc/mfa-key`. `deploy.sh` copies it
+into `/opt/glazecalc/app.env` and **stops, with the running version unchanged, if it is missing or
+malformed**, as it does for `/glazecalc/mongo-password`. The app refuses to start in production
+without it.
+
+**Create it once, before deploying the release with two-step sign-in** (from a machine with the
+operator profile; one line):
+
+```bash
+aws ssm put-parameter --region us-west-2 --name /glazecalc/mfa-key --type SecureString --value "$(openssl rand -base64 32)"
+```
+
+The instance role already reads `/glazecalc/*` (`aws/instance-policy.json`), so nothing else
+changes. Then:
+
+- **Keep an offline copy** (in the owner's password manager), read with
+  `aws ssm get-parameter --region us-west-2 --name /glazecalc/mfa-key --with-decryption --query Parameter.Value --output text`.
+  The key is never in a dump, so a backup without it cannot restore authenticator apps or
+  recovery codes.
+- **Never replace it** once anyone uses two-step sign-in: with another key, every authenticator
+  app and every recovery code stops working (`put-parameter` refuses to overwrite without
+  `--overwrite`, which is the point). Passkeys do not depend on it. If it is lost, people with a
+  passkey sign in with it and set up their app again; people with only an app or codes need the
+  steps in "Someone lost every factor" below.
+- **Each copy of the site has its own key.** A staging copy (phase 2 of docs/mfa-plan.md) uses
+  `/glazecalc/staging/mfa-key`, so it can never decrypt production's secrets.
+
+## Someone lost every factor
+
+Someone who has lost their authenticator app, every passkey and every recovery code cannot sign
+in, and a password reset does not turn two-step sign-in off. There is no admin route for this
+over HTTP. The owner turns it off by hand, only for a request from the account's confirmed
+address, after the requester has reset their password, with seven days' notice to that address
+(the steps are in [docs/data-requests.md](../docs/data-requests.md), "Turning off two-step
+sign-in"). In a Session Manager shell, as root:
+
+```bash
+cd /opt/glazecalc
+# Day 0: email the account that two-step sign-in will be turned off in 7 days unless they reply.
+docker compose -f compose.prod.yaml run --rm --no-deps app node server/clear_mfa.ts --notify someone@example.com
+# Day 7 or later (refused before then): remove the factors and codes, sign out every device,
+# and email that it was done.
+docker compose -f compose.prod.yaml run --rm --no-deps app node server/clear_mfa.ts --clear someone@example.com
+```
 
 ## How long logs are kept
 

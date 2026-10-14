@@ -22,14 +22,16 @@ services:
   app:
     image: ghcr.io/aaronfilson/glazecalc:${GLAZECALC_TAG:-latest}
     restart: unless-stopped
-    # APP_SECRET, MONGODB_URI (with the app's MongoDB user and password) and the
-    # email settings, written by deploy.sh from SSM Parameter Store (root-only file).
+    # APP_SECRET, MONGODB_URI (with the app's MongoDB user and password),
+    # MFA_KEY (two-step sign-in's key) and the email settings, written by
+    # deploy.sh from SSM Parameter Store (root-only file).
     env_file: /opt/glazecalc/app.env
     environment:
       NODE_ENV: production
       PORT: 3000
       # Where the site lives (server/lib/site.ts): mail links, the sitemap, and
-      # the host passkeys belong to. Required in production.
+      # the host passkeys belong to. Required in production. Production has no
+      # SITE_LABEL, NOINDEX or MAIL_ALLOWLIST: those are for a staging copy.
       SITE_URL: https://glazecalcapp.com
     ports:
       - '127.0.0.1:3000:3000'

@@ -4,6 +4,8 @@
 // gets English. The English is fingerprinted in the tests: change it, and the
 // tests say to have the translations made again.
 import * as mailer from './mailer.ts';
+import { isGuestAddress } from './email.ts';
+import * as log from './log.ts';
 import languages from '../../lib/regions/languages.js';
 
 export interface Email {
@@ -597,44 +599,232 @@ export const sendChangeNotice = (to: string, language?: string): Promise<void> =
   });
 };
 
-// Notices about two-step sign-in (docs/mfa-plan.md, item 10). STREAM D
-// implements these: the emails MFA_ADDED and MFA_REMOVED ({account}, {method},
-// {forgot}, {app}), RECOVERY_USED ({left}) and RECOVERY_NEW, English only for
-// now, through inLanguage and fill as above. {method} is a whole phrase from a
-// small per-language table: "an authenticator app", "the passkey "{name}"".
+// Notices about two-step sign-in (docs/mfa-plan.md, item 10), English only for
+// now: the next translation wave adds the others. Each goes to the account's
+// address after the change, so someone who did not make it hears of it.
 
 /** The factor a notice is about. */
 export type MfaMethod = { kind: 'totp' } | { kind: 'passkey'; name: string };
 
-const notYet = (): never => {
-  throw new Error('not implemented: account_mail.ts MFA notices (stream D, docs/mfa-plan.md item 10)');
+/** Sent when a second step is added: {account}, {method}, {forgot} and {app}. */
+export const MFA_ADDED: Record<string, Email> = {
+  en: {
+    subject: 'A sign-in step was added to your Glazecalc account',
+    text:
+      'This was just added to the Glazecalc account {account} as a second step for signing in: {method}.\n\n' +
+      'If this was you, there is nothing else to do. Keep your recovery codes somewhere safe. ' +
+      'If not, someone may know your password: reset it right away at {forgot}\n' +
+      '\n-- \nGlazecalc, {app}\n'
+  }
 };
 
-export const sendMfaAdded = (to: string, method: MfaMethod, language?: string): Promise<void> => notYet();
+/** Sent when a second step is removed: {account}, {method}, {forgot} and {app}. */
+export const MFA_REMOVED: Record<string, Email> = {
+  en: {
+    subject: 'A sign-in step was removed from your Glazecalc account',
+    text:
+      'This was just removed from the Glazecalc account {account} as a second step for signing in: {method}. ' +
+      'If it was the last one, signing in now needs only the password.\n\n' +
+      'If this was you, there is nothing else to do. If not, reset your password right away at {forgot}\n' +
+      '\n-- \nGlazecalc, {app}\n'
+  }
+};
 
-export const sendMfaRemoved = (to: string, method: MfaMethod, language?: string): Promise<void> => notYet();
+/** Sent when a recovery code is used: {account}, {left}, {page}, {forgot} and {app}. */
+export const RECOVERY_USED: Record<string, Email> = {
+  en: {
+    subject: 'A recovery code was used on your Glazecalc account',
+    text:
+      'One of the recovery codes for the Glazecalc account {account} was just used, so it will not work again. ' +
+      'Unused codes left: {left}. You can make new codes on your account page: {page}\n\n' +
+      'If this was not you, someone may have your password and your codes: reset your password right away at {forgot}\n' +
+      '\n-- \nGlazecalc, {app}\n'
+  }
+};
 
-export const sendRecoveryUsed = (to: string, left: number, language?: string): Promise<void> => notYet();
+/** Sent when new recovery codes are made: {account}, {forgot} and {app}. */
+export const RECOVERY_NEW: Record<string, Email> = {
+  en: {
+    subject: 'New recovery codes for your Glazecalc account',
+    text:
+      'New recovery codes were just made for the Glazecalc account {account}. The old codes no longer work.\n\n' +
+      'If this was you, keep the new codes somewhere safe. If not, reset your password right away at {forgot}\n' +
+      '\n-- \nGlazecalc, {app}\n'
+  }
+};
 
-export const sendRecoveryNew = (to: string, language?: string): Promise<void> => notYet();
+/**
+ * Sent when two-step sign-in is turned off altogether (the last factor
+ * removed, or the owner's clear_mfa.ts --clear): one email instead of one per
+ * factor. {account}, {forgot} and {app}.
+ */
+export const MFA_OFF: Record<string, Email> = {
+  en: {
+    subject: 'Two-step sign-in was turned off on your Glazecalc account',
+    text:
+      'Two-step sign-in was just turned off on the Glazecalc account {account}: every authenticator app, passkey and recovery code was removed, and every device that was signed in has been signed out. Signing in now needs only the password.\n\n' +
+      'You can turn two-step sign-in on again on your account page. If you did not ask for this, reset your password right away at {forgot}\n' +
+      '\n-- \nGlazecalc, {app}\n'
+  }
+};
 
-/** One notice, as the routes send it. */
+/**
+ * The owner's 7-day notice before turning two-step sign-in off for someone who
+ * lost every factor (server/clear_mfa.ts --notify): {account}, {date}, {forgot}
+ * and {app}. Replies go to privacy@glazecalcapp.com.
+ */
+export const MFA_CLEAR_NOTICE: Record<string, Email> = {
+  en: {
+    subject: 'Two-step sign-in on your Glazecalc account will be turned off',
+    text:
+      'Someone asked for two-step sign-in to be turned off on the Glazecalc account {account}, because every authenticator app, passkey and recovery code for it was lost.\n\n' +
+      'Two-step sign-in will be turned off on {date} unless you write to privacy@glazecalcapp.com before then. After that, the account can be signed in to with its password alone.\n\n' +
+      'If this was you, there is nothing else to do. If not, write to privacy@glazecalcapp.com now, and reset your password right away at {forgot}\n' +
+      '\n-- \nGlazecalc, {app}\n'
+  }
+};
+
+/** A date as the English emails write it: 21 October 2026 (UTC). */
+export const mailDate = (date: Date): string =>
+  date.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
+
+/** How each email names a factor, as a whole phrase: {name} is a passkey's name. */
+export const METHODS: Record<string, { totp: string; passkey: string }> = {
+  en: { totp: 'an authenticator app', passkey: 'the passkey "{name}"' }
+};
+
+/** The phrase for a factor in the language, or in English. A passkey's name is kept to one plain line. */
+export const methodIn = (method: MfaMethod, language?: string): string => {
+  const phrases = (language && METHODS[language]) || METHODS['en']!;
+  if (method.kind === 'totp') return phrases.totp;
+  const name = method.name
+    .replace(/[\p{Cc}\p{Cf}\p{Zl}\p{Zp}]+/gu, ' ')
+    .trim()
+    .slice(0, 60);
+  return phrases.passkey.replace('{name}', () => name);
+};
+
+const sendMfaChange = (emails: Record<string, Email>, to: string, method: MfaMethod, language?: string) => {
+  const email = inLanguage(emails, language);
+  return mailer.send({
+    to,
+    subject: email.subject,
+    text: fill(email.text, {
+      account: to,
+      method: methodIn(method, language),
+      forgot: pageIn(language, '/forgot'),
+      app: mailer.appUrl()
+    })
+  });
+};
+
+export const sendMfaAdded = (to: string, method: MfaMethod, language?: string): Promise<void> =>
+  sendMfaChange(MFA_ADDED, to, method, language);
+
+export const sendMfaRemoved = (to: string, method: MfaMethod, language?: string): Promise<void> =>
+  sendMfaChange(MFA_REMOVED, to, method, language);
+
+export const sendRecoveryUsed = (to: string, left: number, language?: string): Promise<void> => {
+  const email = inLanguage(RECOVERY_USED, language);
+  return mailer.send({
+    to,
+    subject: email.subject,
+    text: fill(email.text, {
+      account: to,
+      left,
+      page: pageIn(language, '/account'),
+      forgot: pageIn(language, '/forgot'),
+      app: mailer.appUrl()
+    })
+  });
+};
+
+export const sendRecoveryNew = (to: string, language?: string): Promise<void> => {
+  const email = inLanguage(RECOVERY_NEW, language);
+  return mailer.send({
+    to,
+    subject: email.subject,
+    text: fill(email.text, { account: to, forgot: pageIn(language, '/forgot'), app: mailer.appUrl() })
+  });
+};
+
+export const sendMfaOff = (to: string, language?: string): Promise<void> => {
+  const email = inLanguage(MFA_OFF, language);
+  return mailer.send({
+    to,
+    subject: email.subject,
+    text: fill(email.text, { account: to, forgot: pageIn(language, '/forgot'), app: mailer.appUrl() })
+  });
+};
+
+/**
+ * The 7-day notice (server/clear_mfa.ts --notify): two-step sign-in goes off
+ * on `offDate` unless the person writes to privacy@. Unlike noticeMfa it
+ * rejects on failure, so the script can say the mail did not go.
+ */
+export const sendMfaClearNotice = (to: string, offDate: Date, language?: string): Promise<void> => {
+  const email = inLanguage(MFA_CLEAR_NOTICE, language);
+  return mailer.send({
+    to,
+    subject: email.subject,
+    text: fill(email.text, {
+      account: to,
+      date: mailDate(offDate),
+      forgot: pageIn(language, '/forgot'),
+      app: mailer.appUrl()
+    })
+  });
+};
+
+/**
+ * One notice, as the routes send it. 'mfa-off' is for when two-step sign-in
+ * ends altogether (the last factor removed, or clear_mfa.ts --clear): send it
+ * instead of 'removed', so the person gets one email.
+ */
 export type MfaNotice =
   | { kind: 'added'; method: MfaMethod }
   | { kind: 'removed'; method: MfaMethod }
+  | { kind: 'mfa-off' }
   | { kind: 'recovery-used'; left: number }
   | { kind: 'recovery-new' };
+
+const sendNotice = (to: string, notice: MfaNotice, language?: string): Promise<void> => {
+  switch (notice.kind) {
+    case 'added':
+      return sendMfaAdded(to, notice.method, language);
+    case 'removed':
+      return sendMfaRemoved(to, notice.method, language);
+    case 'mfa-off':
+      return sendMfaOff(to, language);
+    case 'recovery-used':
+      return sendRecoveryUsed(to, notice.left, language);
+    case 'recovery-new':
+      return sendRecoveryNew(to, language);
+  }
+};
 
 /**
  * What the routes call (streams A and B), after the reply: sends the notice in
  * the account's language, only when the address is confirmed
- * (!user.emailUnverified) and never to a trial. Never throws or rejects: a
- * failure is logged by its error code only, as logMailError does.
+ * (!user.emailUnverified) and never to a trial, nor when email is off. Never
+ * throws or rejects: a failure is logged by its error code only, as
+ * logMailError does, since an SMTP error can repeat the address.
  */
 export const noticeMfa = (
-  user: { email: string; emailUnverified?: boolean; guest?: boolean; preferences?: { language?: string } },
+  user: {
+    email: string;
+    emailUnverified?: boolean | null;
+    guest?: boolean | null;
+    preferences?: { language?: string | null } | null;
+  },
   notice: MfaNotice
 ): void => {
-  void user;
-  void notice;
+  const failed = (err: unknown) =>
+    log.error('Could not send the two-step sign-in notice email', { code: log.codeOf(err) });
+  try {
+    if (!user?.email || user.emailUnverified || user.guest || isGuestAddress(user.email) || !mailer.available()) return;
+    sendNotice(user.email, notice, user.preferences?.language ?? undefined).catch(failed);
+  } catch (err) {
+    failed(err);
+  }
 };

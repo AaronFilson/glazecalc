@@ -218,6 +218,7 @@ export class PrivacyPage {
   protected readonly storedOnDevice = STORED;
   protected readonly stored = marker([
     'site.privacy.storedAccount',
+    'site.privacy.storedSignIn',
     'site.privacy.storedSaved',
     'site.privacy.storedTrial',
     'site.privacy.storedResets',
@@ -230,6 +231,7 @@ export class PrivacyPage {
     'site.privacy.keptAccount',
     'site.privacy.keptTrial',
     'site.privacy.keptResets',
+    'site.privacy.keptSignIn',
     'site.privacy.keptBackups',
     'site.privacy.keptDeletions',
     'site.privacy.keptLogs',

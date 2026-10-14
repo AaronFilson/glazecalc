@@ -4,7 +4,15 @@
 // how a screen reader words things still need a person.
 const { test, expect } = require('@playwright/test');
 const { default: AxeBuilder } = require('@axe-core/playwright');
-const { API, addColorant, addStandardMaterial, signUpAndSignIn } = require('./helpers');
+const {
+  API,
+  addColorant,
+  addStandardMaterial,
+  basicAuth,
+  confirmedAccount,
+  signUpAndSignIn,
+  totp
+} = require('./helpers');
 
 const WCAG = ['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa'];
 // Landmarks and headings, which axe tags as best practice rather than WCAG: one main
@@ -150,5 +158,34 @@ for (const colorScheme of ['light', 'dark']) {
         await expectNoProblems(page, colorScheme + ' trial ' + path);
       }
     });
+  });
+}
+
+// Two-step sign-in (docs/mfa-plan.md): the account page's section with an
+// authenticator app on, and the second step at sign-in. Waits for streams A-C;
+// the coordinator turns it on (labels as in e2e/mfa.spec.js, "the pages").
+for (const colorScheme of ['light', 'dark']) {
+  test.fixme(colorScheme + ' mode: two-step sign-in', async ({ page }) => {
+    await page.emulateMedia({ colorScheme });
+    const { email, password } = await confirmedAccount(page.request);
+    await page.request.get(API + '/signin', { headers: { authorization: basicAuth(email, password) } });
+    await page.addInitScript(() => globalThis.localStorage.setItem('session', 'account'));
+    // Not set up yet.
+    await page.goto('/account');
+    await expect(page.getByRole('region', { name: 'Two-step sign-in' })).toBeVisible();
+    await expectNoProblems(page, colorScheme + ' /account two-step sign-in off');
+    // On, with an authenticator app.
+    const { secret } = await (await page.request.post(API + '/mfa/totp/start', { data: { password } })).json();
+    expect((await page.request.post(API + '/mfa/totp', { data: { code: totp(secret) } })).ok()).toBe(true);
+    await page.goto('/account');
+    await expectNoProblems(page, colorScheme + ' /account two-step sign-in on');
+    // The second step at sign-in.
+    await page.request.post(API + '/signout');
+    await page.goto('/signin');
+    await page.locator('#email').fill(email);
+    await page.locator('#password').fill(password);
+    await page.getByRole('button', { name: 'Sign in' }).click();
+    await expect(page.getByLabel(/code/i)).toBeVisible();
+    await expectNoProblems(page, colorScheme + ' /signin second step');
   });
 }

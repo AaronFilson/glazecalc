@@ -55,7 +55,8 @@ aws ec2 modify-instance-metadata-defaults --http-tokens required --http-put-resp
 
 ## 2. Settings in Parameter Store
 
-The app secret never appears in the repository, user data or logs.
+The app secret, the MongoDB password and the two-step sign-in key never appear in the
+repository, user data or logs.
 
 ```bash
 aws ssm put-parameter --name /glazecalc/app-secret --type SecureString \
@@ -63,6 +64,10 @@ aws ssm put-parameter --name /glazecalc/app-secret --type SecureString \
 # The password of the app's MongoDB user (letters and digits only; deploy.sh checks).
 aws ssm put-parameter --name /glazecalc/mongo-password --type SecureString \
   --value "$(openssl rand -hex 32)"
+# Two-step sign-in's key: 32 bytes, base64 (deploy.sh checks, and stops without it).
+# Never overwrite it once in use; keep an offline copy (deploy/README.md, "Two-step sign-in key").
+aws ssm put-parameter --name /glazecalc/mfa-key --type SecureString \
+  --value "$(openssl rand -base64 32)"
 aws ssm put-parameter --name /glazecalc/backup-bucket --type String --value "$BUCKET"
 # Optional: a contact address for the Let's Encrypt account (no expiry reminders since 2025).
 aws ssm put-parameter --name /glazecalc/acme-email --type String --value 'you@example.com'

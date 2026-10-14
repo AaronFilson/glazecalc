@@ -7,6 +7,7 @@
 import languages from '../../lib/regions/languages.js';
 import type { Language } from '../../lib/regions/languages.js';
 import { PUBLIC_PAGES, prerenderedFile } from '../../lib/pages.js';
+import { labelShown } from './site.ts';
 
 export { PUBLIC_PAGES };
 
@@ -104,11 +105,23 @@ export interface PageText {
 }
 
 /**
+ * The thin banner a copy that is not production (SITE_LABEL) shows on every
+ * page, outside the app (<gc-root>), so hydration never sees it. Its style
+ * carries the reply's nonce (withNonce). Nothing at all in production.
+ */
+const labelStyle = (): string =>
+  '<style nonce="__GC_NONCE__">.gc-site-label{margin:0;padding:2px 8px;background:#ffd400;color:#000;' +
+  'font:600 0.8125rem/1.4 system-ui,sans-serif;text-align:center}@media print{.gc-site-label{display:none}}</style>';
+const labelBanner = (label: string): string =>
+  `<aside class="gc-site-label" aria-label="${attribute(label)}">${attribute(label)}: a test copy of Glazecalc</aside>`;
+
+/**
  * index.html for a page: its language and direction, its canonical address,
  * its other languages, and its title, description and preview text where
  * translated. An address that is no page gets neither a canonical address
  * nor other languages. A prerendered page has its own title and description,
- * which `text` does not replace.
+ * which `text` does not replace. `label` (SITE_LABEL, "Staging") adds a thin
+ * banner; empty, as in production, the page is exactly as before.
  */
 export function pageHtml(
   html: string,
@@ -116,7 +129,8 @@ export function pageHtml(
   site: string,
   text: PageText = {},
   live: readonly string[] = languages.LIVE_LANGUAGES,
-  prerendered = false
+  prerendered = false,
+  label: string = labelShown()
 ): string {
   const code = languages.languageOfPath(pathname);
   const language = languages.languageFor(code) as Language;
@@ -141,6 +155,7 @@ export function pageHtml(
       head.push(`<meta property="og:locale:alternate" content="${ogLocale(other)}" />`);
     }
   }
+  if (label) head.push(labelStyle());
   let out = html
     .replace(/<html lang="[^"]*"[^>]*>/, `<html lang="${code}" dir="${language.dir}">`)
     .replace('</head>', () => head.map((line) => '    ' + line + '\n').join('') + '  </head>');
@@ -154,6 +169,7 @@ export function pageHtml(
     out = put(out, /(<meta\s+property="og:description"\s+content=")[^"]*(")/, text.description);
   }
   if (text.imageAlt) out = put(out, /(<meta\s+property="og:image:alt"\s+content=")[^"]*(")/, text.imageAlt);
+  if (label) out = out.replace(/<body[^>]*>/, (body) => body + '\n    ' + labelBanner(label));
   return out;
 }
 

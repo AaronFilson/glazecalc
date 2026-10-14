@@ -18,4 +18,5 @@ Each one is written once; a later change gets a new record that replaces the old
 | [0011](0011-replacing-lead.md)                    | Replacing lead: rebuild the flux, with lead off unless chosen      | 2026-10-07 |
 | [0012](0012-choosing-materials.md)                | Choosing materials: the fewest that come near, said in words       | 2026-10-08 |
 | [0013](0013-translations.md)                      | Translations: Transloco with ICU messages, the language in the URL | 2026-10-08 |
+| [0014](0014-two-step-sign-in.md)                  | Two-step sign-in: passkeys, app codes, recovery codes              | 2026-10-14 |
 | [0016](0016-prerendered-public-pages.md)          | Public pages are prerendered at build and hydrated in place        | 2026-10-13 |
