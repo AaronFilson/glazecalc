@@ -218,7 +218,7 @@ export function numbersIn(text, language) {
   // A clock time's hour needs no leading zero: 08:30 is 8:30, or 8 h 30.
   text = text.replace(/(?<![\d.,])0(\d)(?=(?::|\.|[ \u00a0\u202f]?h[ \u00a0\u202f]?)\d{2}(?!\d))/g, '$1');
   // A time on the hour is its hour, however written: 8:00 and 8 h 00 are 8, as 8am and Turkish saat 8.00 are.
-  text = text.replace(/(?<![\d.,:])(\d{1,2})(?::|[ 00a0202f]?h[ 00a0202f]?)00(?![\d:])/g, '$1');
+  text = text.replace(/(?<![\d.,:])(\d{1,2})(?::|[ \u00a0\u202f]?h[ \u00a0\u202f]?)00(?![\d:])/g, '$1');
   const pattern = english
     ? /\d+(?:,\d{3}(?!\d))*(?:\.\d+)?/g
     : /\d+(?:[.\u00a0\u202f]\d{3}(?!\d))*(?:,\d+|\.\d{1,2}(?!\d))?/g;
