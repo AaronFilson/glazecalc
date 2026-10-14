@@ -220,6 +220,24 @@ describe('SignInSection', () => {
     expect(fieldProblem(fixture, 'confirm-code')).toBe('Enter the 6-digit code from your authenticator app.');
   });
 
+  it('says so when two-step sign-in was turned off elsewhere, and shows the section as it is now', async () => {
+    const fixture = await create(ON);
+    await press(fixture, 'Make new recovery codes');
+    await type(fixture, 'confirm-password', 'my-password');
+    await type(fixture, 'confirm-code', '123456');
+    await press(fixture, 'Make new recovery codes');
+    const message = 'Two-step sign-in is not on, so there are no recovery codes to make. Set up a second step first.';
+    httpMock()
+      .expectOne(API + '/mfa/recovery-codes')
+      .flush({ code: 'mfa-not-on', msg: message }, { status: 400, statusText: 'Bad Request' });
+    await settle(fixture);
+    await reload(fixture, OFF);
+    expect(text(fixture, 'gc-notices')).toContain(message);
+    expect(fixture.nativeElement.querySelector('.change-panel')).toBeNull();
+    expect(text(fixture, '.mfa-status')).toContain('Two-step sign-in is off.');
+    expect(document.activeElement?.id).toBe('mfa-heading');
+  });
+
   it('marks a wrong code on the code field', async () => {
     const fixture = await create(ON);
     await press(fixture, 'Remove the authenticator app');

@@ -27,6 +27,12 @@ type Change =
   | { kind: 'remove-passkey'; passkey: PasskeySummary }
   | { kind: 'new-codes' };
 
+/**
+ * Server answers that mean the section was out of date: two-step sign-in was
+ * turned off, or a factor added or removed, on another device.
+ */
+const OUT_OF_DATE = ['mfa-not-on', 'totp-none', 'totp-exists', 'passkey-not-found'];
+
 /** An authenticator app's key in groups of four, as people read and type it. */
 export const groupedKey = (secret: string): string => secret.match(/.{1,4}/g)?.join(' ') ?? secret;
 
@@ -470,8 +476,27 @@ export class SignInSection {
     );
   }
 
-  /** Makes the change once IdentityConfirm has the proof; what it throws, IdentityConfirm shows. */
+  /**
+   * Makes the change once IdentityConfirm has the proof; what it throws,
+   * IdentityConfirm shows. When the section was out of date (two-step sign-in
+   * turned off, or a factor changed, on another device), the server's message
+   * is shown above the section instead, which loads again.
+   */
   protected readonly runChange = async (proof: IdentityProof, name: string): Promise<void> => {
+    try {
+      await this.makeChange(proof, name);
+    } catch (err) {
+      const code = serverCode(err);
+      if (!code || !OUT_OF_DATE.includes(code)) throw err;
+      this.notices.error(errorMessage(err, translate('account.mfa.failed')));
+      this.change.set(null);
+      this.opener = null;
+      this.afterRender(() => this.heading()?.nativeElement.focus());
+      await this.load();
+    }
+  };
+
+  private async makeChange(proof: IdentityProof, name: string): Promise<void> {
     const change = this.change();
     if (!change) return;
     switch (change.kind) {
@@ -495,7 +520,7 @@ export class SignInSection {
       case 'new-codes':
         return this.changed(await this.auth.newRecoveryCodes(proof));
     }
-  };
+  }
 
   /** A change made: says so, shows new recovery codes if there are some, and loads the section again. */
   private async changed(result: MfaChange): Promise<void> {
