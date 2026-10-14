@@ -506,7 +506,9 @@ export function guideMarks(markdown) {
     // A section still in English is marked {#id lang=en} (scripts/i18n-fingerprints.mjs).
     ids: all(/\{#[\w-]+(?: lang=en)?\}/g).map((id) => id.replace(' lang=en', '')),
     values: all(/\{\{(?!\s*en:)[^}]+\}\}/g),
-    marks: all(/^(?::::(?:orton|temperature)?|::(?:poison-lines|shops|silica-limit|food-limits|local-equivalents))$/gm)
+    marks: all(
+      /^(?::::(?:orton|sk|temperature)?|::(?:poison-lines|shops|silica-limit|food-limits|local-equivalents))$/gm
+    )
   };
 }
 

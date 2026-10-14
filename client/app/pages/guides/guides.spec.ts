@@ -4,7 +4,7 @@ import { ActivatedRoute, ActivatedRouteSnapshot, RouterStateSnapshot } from '@an
 import { firstValueFrom, isObservable } from 'rxjs';
 import { PAGE_LANGUAGE } from '../../i18n/language';
 import { httpMock, testProviders } from '../../testing/test-providers';
-import { blocks, forConeSystem, readGuide } from './guide-document';
+import { blocks, coneSystemsIn, forConeSystem, readGuide } from './guide-document';
 import { GuidePage } from './guide-page';
 import { GuideText, guideText } from './guide-text';
 import { GUIDES, GuidesPage } from './guides-page';
@@ -176,11 +176,35 @@ describe('guides', () => {
     await fixture.whenStable();
     expect(ids()).toEqual(expect.arrayContaining(['cone-pack', 'kiln-sitter', 'reading-cones']));
     expect(ids()).not.toContain('by-temperature');
-    expect(page.querySelector('.guide-version button')?.textContent?.trim()).toBe('Show it for firing by temperature');
+    // The firing guide has parts for three ways of firing, so the other two are offered.
+    const offered = () => [...page.querySelectorAll('.guide-version button')].map((b) => b.textContent?.trim());
+    expect(offered()).toEqual(['Show it for firing to SK cones (JIS R 8101)', 'Show it for firing by temperature']);
+    expect(page.querySelector('.guide-version')?.textContent).toContain('This guide is shown for firing to cones');
     // The contents follow the version shown.
     expect([...page.querySelectorAll('.guide-contents a')].map((a) => a.getAttribute('href'))).toContain(
       HERE + '#kiln-sitter'
     );
+    (page.querySelectorAll('.guide-version button')[0] as HTMLButtonElement).click();
+    await fixture.whenStable();
+    expect(ids()).toContain('sk-cones');
+    expect(ids()).not.toContain('kiln-sitter');
+    expect(ids()).not.toContain('by-temperature');
+    expect(page.querySelector('.guide-version')?.textContent).toContain('firing to SK cones (JIS R 8101)');
+    expect(offered()).toEqual(['Show it for firing to Orton cones', 'Show it for firing by temperature']);
+  });
+
+  it('opens the firing guide at its SK cones for those who set SK cones', async () => {
+    localStorage.setItem('cones', 'sk');
+    const { page } = await render(firing);
+    const ids = [...page.querySelectorAll('.guide h2')].map((h) => h.id);
+    expect(ids).toContain('sk-cones');
+    expect(ids).not.toContain('cone-pack');
+    // The SK chart carries the cone, the temperature and what it is.
+    const chart = [...page.querySelectorAll('table')].find((t) =>
+      t.querySelector('caption')?.textContent?.includes('SK large cones')
+    )!;
+    expect(chart.querySelectorAll('tbody tr').length).toBe(42);
+    expect(chart.textContent).toContain('nominal (JIS)');
   });
 
   it('says when a guide is not translated yet, and marks its text as English', async () => {
@@ -293,6 +317,12 @@ Only with cones.
 
 :::
 
+:::sk
+
+Only with SK cones.
+
+:::
+
 :::temperature
 
 Only by temperature.
@@ -360,5 +390,24 @@ Glaze
     expect(forConeSystem(sample, 'orton')).not.toContain('Only by temperature.');
     expect(forConeSystem(sample, 'temperature')).toContain('Only by temperature.');
     expect(forConeSystem(sample, 'temperature')).not.toContain(':::');
+  });
+
+  it('keeps only the SK parts for those who fire to SK cones, and none of the others', () => {
+    const sk = forConeSystem(sample, 'sk');
+    expect(sk).toContain('Only with SK cones.');
+    expect(sk).not.toContain('Only with cones.');
+    expect(sk).not.toContain('Only by temperature.');
+    expect(sk).not.toContain(':::');
+    expect(forConeSystem(sample, 'orton')).not.toContain('Only with SK cones.');
+    expect(forConeSystem(sample, 'temperature')).not.toContain('Only with SK cones.');
+    expect(coneSystemsIn(sample)).toEqual(['orton', 'sk', 'temperature']);
+  });
+
+  it('gives those who fire to SK cones the temperature parts of a guide with none for SK, never Orton numbers', () => {
+    const noSk = sample.replace(/^:::sk\n[\s\S]*?^:::\n/m, '');
+    expect(coneSystemsIn(noSk)).toEqual(['orton', 'temperature']);
+    const shown = forConeSystem(noSk, 'sk');
+    expect(shown).toContain('Only by temperature.');
+    expect(shown).not.toContain('Only with cones.');
   });
 });

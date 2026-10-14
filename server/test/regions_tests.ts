@@ -20,7 +20,7 @@ describe('regions', () => {
       expect(region.code, region.name).to.match(/^[A-Z]{2}$/);
       expect(region.languages.length, region.name).to.be.above(0);
       expect(['C', 'F']).to.include(region.temperature);
-      expect(['orton', 'temperature']).to.include(region.cones);
+      expect(['orton', 'temperature', 'sk']).to.include(region.cones);
       expect(['US', 'UK', 'EU', 'AU']).to.include(region.library);
       // Each language-region pair is a locale the runtime knows how to format.
       for (const language of region.languages) {

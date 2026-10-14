@@ -36,7 +36,6 @@
   "format-choices": "Roghnaigh ceann de na formáidí uimhreacha agus dátaí sa liosta.",
   "decimalMark-choices": "Is féidir méideanna a chlóscríobh le ceachtar den dá mharc deachúlach (either), nó le camóg amháin (comma) nó le pointe amháin (point).",
   "temperature-choices": "Is féidir teochtaí a bheith in °C (C) nó in °F (F), nó an réigiún a leanúint.",
-  "cones-choices": "Is féidir bácáil go cóin Orton (orton) nó de réir teochta amháin (temperature), nó an réigiún a leanúint.",
   "language-choices": "Roghnaigh ceann de na teangacha sa liosta.",
   "density-choices": "Roghnaigh sainmheáchan, Baumé nó meáchan pionta, nó fág faoi do réigiún é.",
   "englishTerms-choices": "Roghnaigh ar siúl nó as.",

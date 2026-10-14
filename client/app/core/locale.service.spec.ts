@@ -69,5 +69,10 @@ describe('LocaleService', () => {
       'orton',
       'point'
     ]);
+    // SK cones (JIS R 8101) are a third choice, and hold like the others.
+    preferences.cones.set('sk');
+    TestBed.tick();
+    expect(locale.cones()).toBe('sk');
+    expect(preferences.cones()).toBe('sk');
   });
 });

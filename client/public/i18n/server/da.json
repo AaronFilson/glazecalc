@@ -36,7 +36,6 @@
   "format-choices": "Vælg et af tal- og datoformaterne på listen.",
   "decimalMark-choices": "Mængder kan indtastes med begge decimaltegn (either) eller kun med komma (comma) eller punktum (point).",
   "temperature-choices": "Temperaturer kan angives i °C (C) eller °F (F) eller følge regionen.",
-  "cones-choices": "Brænding kan være efter Ortonkegler (orton) eller kun efter temperatur (temperature) eller følge regionen.",
   "language-choices": "Vælg et af sprogene på listen.",
   "density-choices": "Vælg massefylde, Baumé eller pintvægt, eller lad regionen bestemme.",
   "englishTerms-choices": "Vælg til eller fra.",

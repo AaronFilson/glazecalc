@@ -36,7 +36,6 @@
   "format-choices": "Agħżel wieħed mill-formati tan-numri u tad-dati fil-lista.",
   "decimalMark-choices": "L-ammonti jistgħu jinkitbu b’kull wieħed miż-żewġ sinjali deċimali (either), jew bil-virgola biss (comma) jew bil-punt biss (point).",
   "temperature-choices": "It-temperaturi jistgħu jkunu f’°C (C) jew f’°F (F), jew isegwu r-reġjun.",
-  "cones-choices": "Il-ħami jista’ jkun bil-koni Orton (orton) jew bit-temperatura biss (temperature), jew isegwi r-reġjun.",
   "language-choices": "Agħżel waħda mil-lingwi fil-lista.",
   "density-choices": "Agħżel il-gravità speċifika, il-gradi Baumé jew il-piż tal-pinta, jew ħalli r-reġjun tiegħek jiddeċiedi.",
   "englishTerms-choices": "Agħżel mixgħul jew mitfi.",

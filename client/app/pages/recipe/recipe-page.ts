@@ -410,7 +410,10 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
   protected readonly cones = CONES;
   protected readonly listOf = listOf;
   private readonly locale = inject(LocaleService);
-  /** Firing to Orton cones, or by temperature alone (Settings). */
+  /**
+   * Firing to Orton cones (Settings). A recipe's cone is an Orton number, and none is turned into an SK number,
+   * so a potter who fires to SK cones sees the temperature.
+   */
   protected readonly byCones = computed(() => this.locale.cones() === 'orton');
   /** A firing as the potter names it: "04 (1060 °C)" to cones, or "1060 °C" by temperature. */
   protected firingLabel(firing: { cone: string; celsius: number }): string {

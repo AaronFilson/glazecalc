@@ -36,7 +36,6 @@
   "format-choices": "Válasszon egy szám- és dátumformátumot a listából.",
   "decimalMark-choices": "A mennyiségek beírhatók bármelyik tizedesjellel (either), vagy csak vesszővel (comma), illetve csak ponttal (point).",
   "temperature-choices": "A hőmérséklet lehet °C-ban (C) vagy °F-ban (F), vagy követheti a régiót.",
-  "cones-choices": "Az égetés történhet Orton-gúlák szerint (orton) vagy csak hőmérséklet szerint (temperature), vagy követheti a régiót.",
   "language-choices": "Válasszon egy nyelvet a listából.",
   "density-choices": "Válassza a fajsúlyt, a Baumé-fokot vagy a pint-súlyt, vagy bízza a régiójára.",
   "englishTerms-choices": "Válassza a bekapcsolt vagy a kikapcsolt állapotot.",

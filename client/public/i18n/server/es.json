@@ -36,7 +36,6 @@
   "format-choices": "Elija uno de los formatos de número y fecha de la lista.",
   "decimalMark-choices": "Las cantidades pueden escribirse con cualquiera de los dos separadores decimales (either), o solo con coma (comma) o solo con punto (point).",
   "temperature-choices": "Las temperaturas pueden estar en °C (C) o en °F (F), o seguir la región.",
-  "cones-choices": "La cocción puede ser por conos Orton (orton) o solo por temperatura (temperature), o seguir la región.",
   "language-choices": "Elija uno de los idiomas de la lista.",
   "density-choices": "Elija densidad relativa, grados Baumé o peso por pinta, o deje que lo decida su región.",
   "englishTerms-choices": "Elija activado (on) o desactivado (off).",

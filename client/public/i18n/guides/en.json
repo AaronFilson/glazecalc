@@ -3,7 +3,10 @@
     "cones": "This guide is shown for firing to cones, as set in Settings.",
     "temperature": "This guide is shown for firing by temperature, as set in Settings.",
     "showTemperature": "Show it for firing by temperature",
-    "showCones": "Show it for firing to cones"
+    "showCones": "Show it for firing to cones",
+    "sk": "This guide is shown for firing to SK cones (JIS R 8101), as set in Settings.",
+    "showSk": "Show it for firing to SK cones (JIS R 8101)",
+    "showOrton": "Show it for firing to Orton cones"
   },
   "notTranslated": "This guide is not translated yet, so it is shown in English.",
   "sectionInEnglish": "This section has changed since it was translated, so it is shown in English until its translation is brought up to date.",

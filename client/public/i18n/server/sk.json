@@ -36,7 +36,6 @@
   "format-choices": "Vyberte jeden z formátov čísel a dátumov v zozname.",
   "decimalMark-choices": "Množstvá sa dajú zadávať s ľubovoľným desatinným oddeľovačom (either), alebo len s čiarkou (comma), alebo len s bodkou (point).",
   "temperature-choices": "Teploty môžu byť v °C (C) alebo °F (F), alebo sa môžu riadiť regiónom.",
-  "cones-choices": "Výpal môže byť podľa Ortonových kužeľov (orton) alebo len podľa teploty (temperature), alebo sa môže riadiť regiónom.",
   "language-choices": "Vyberte jeden z jazykov v zozname.",
   "density-choices": "Vyberte relatívnu hustotu, stupne Baumé alebo hmotnosť pinty, alebo nechajte výber na regióne.",
   "englishTerms-choices": "Vyberte zapnuté (on) alebo vypnuté (off).",

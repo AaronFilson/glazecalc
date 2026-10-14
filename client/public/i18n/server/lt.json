@@ -36,7 +36,6 @@
   "format-choices": "Pasirinkite vieną iš sąraše esančių skaičių ir datų formatų.",
   "decimalMark-choices": "Kiekius galima įvesti su bet kuriuo dešimtainiu skirtuku (either), tik su kableliu (comma) arba tik su tašku (point).",
   "temperature-choices": "Temperatūra gali būti nurodoma °C (C) arba °F (F), arba pagal regioną.",
-  "cones-choices": "Degimas gali būti pagal Ortono piroskopus (orton) arba tik pagal temperatūrą (temperature), arba pagal regioną.",
   "language-choices": "Pasirinkite vieną iš sąraše esančių kalbų.",
   "density-choices": "Pasirinkite santykinį tankį, Baumé laipsnius arba pintos masę, arba palikite pagal savo regioną.",
   "englishTerms-choices": "Pasirinkite, ar įjungti, ar išjungti.",

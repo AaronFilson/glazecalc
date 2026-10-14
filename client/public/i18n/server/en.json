@@ -44,7 +44,7 @@
   "format-choices": "Choose one of the number and date formats in the list.",
   "decimalMark-choices": "Amounts can be typed with either decimal mark (either), or only a comma (comma) or a point (point).",
   "temperature-choices": "Temperatures can be in °C (C) or °F (F), or follow the region.",
-  "cones-choices": "Firing can be to Orton cones (orton) or by temperature alone (temperature), or follow the region.",
+  "cones-choices": "Firing can be to Orton cones (orton), to SK cones (sk) or by temperature alone (temperature), or follow the region.",
   "language-choices": "Choose one of the languages in the list.",
   "density-choices": "Choose specific gravity, Baumé or pint weight, or leave it to your region.",
   "englishTerms-choices": "Choose on or off.",

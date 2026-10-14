@@ -36,7 +36,6 @@
   "format-choices": "Scegliere uno dei formati di numeri e date dell’elenco.",
   "decimalMark-choices": "Le quantità si possono inserire con l’uno o l’altro separatore decimale (either), oppure solo con la virgola (comma) o solo con il punto (point).",
   "temperature-choices": "Le temperature possono essere in °C (C) o in °F (F), oppure seguire il paese.",
-  "cones-choices": "La cottura può essere a coni Orton (orton) o solo in temperatura (temperature), oppure seguire il paese.",
   "language-choices": "Scegliere una delle lingue dell’elenco.",
   "density-choices": "Scegliere peso specifico, gradi Baumé o peso a pinta, oppure lasciare che segua il paese.",
   "englishTerms-choices": "Scegliere attivato o disattivato.",

@@ -38,8 +38,8 @@ export type LeadChoice = 'off' | 'on';
 /** Which decimal mark typed amounts may use. */
 export type DecimalMark = 'either' | 'comma' | 'point';
 export type TemperatureScale = 'C' | 'F';
-/** Firing to Orton cones, or by temperature alone. */
-export type ConeSystem = 'orton' | 'temperature';
+/** Firing to Orton cones, to SK cones (JIS R 8101, Japan), or by temperature alone. */
+export type ConeSystem = 'orton' | 'temperature' | 'sk';
 /** Glaze density as specific gravity, degrees Baumé, or the ounces in an imperial pint. */
 export type Density = 'sg' | 'baume' | 'pint';
 
@@ -54,7 +54,7 @@ const CHOICES: { [K in keyof Preferences]: ReadonlyArray<Preferences[K]> } = {
   format: ['auto', ...FORMAT_LOCALES],
   decimalMark: ['either', 'comma', 'point'],
   temperature: ['', 'C', 'F'],
-  cones: ['', 'orton', 'temperature'],
+  cones: ['', 'orton', 'temperature', 'sk'],
   language: LIVE_LANGUAGES,
   density: ['', 'sg', 'baume', 'pint'],
   englishTerms: ['off', 'on'],

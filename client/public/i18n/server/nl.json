@@ -36,7 +36,6 @@
   "format-choices": "Kies een van de getal- en datumnotaties in de lijst.",
   "decimalMark-choices": "Hoeveelheden kunnen worden ingevoerd met beide decimaaltekens (either), of alleen met een komma (comma) of een punt (point).",
   "temperature-choices": "Temperaturen kunnen in °C (C) of °F (F) worden weergegeven, of de regio volgen.",
-  "cones-choices": "Stoken kan op Ortonkegels (orton) of alleen op temperatuur (temperature), of de regio volgen.",
   "language-choices": "Kies een van de talen in de lijst.",
   "density-choices": "Kies soortelijk gewicht, Baumé of pintgewicht, of laat het aan uw regio over.",
   "englishTerms-choices": "Kies aan of uit.",
