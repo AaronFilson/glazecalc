@@ -116,6 +116,22 @@ describe('message checks', () => {
       expect(numbersIn('pukul 20.30 WIB', 'id')).to.eql(numbersIn('8:30pm', 'en'));
     });
 
+    it('reads a month as its number where the language writes it so, as Japanese 2026年10月 does', () => {
+      expect(compareMessage('ja', 'k', 'In stock in October 2026.', '2026年10月に在庫あり。')).to.eql([]);
+      expect(
+        compareMessage('ja', 'k', 'From 1 December 2026, or Sept. 2021.', '2026年12月1日から、2021年9月。')
+      ).to.eql([]);
+      expect(compareMessage('ko', 'k', 'Checked Apr 2013.', '2013년 4월에 확인.')).to.eql([]);
+      expect(compareMessage('zh-Hant', 'k', 'Checked 29 May 2026.', '2026年5月29日確認。')).to.eql([]);
+      // The wrong month is a wrong figure.
+      expect(compareMessage('ja', 'k', 'In stock in October 2026.', '2026年11月に在庫あり。')).to.eql([
+        'k: its numbers differ from the English; missing 10; not in the English 11'
+      ]);
+      // A name that is not beside a day or year is not a month; languages that name months read none.
+      expect(compareMessage('ja', 'k', 'May contain 2 g.', '2 g含まれることがあります。')).to.eql([]);
+      expect(compareMessage('de', 'k', 'In October 2026.', 'Im Oktober 2026.')).to.eql([]);
+    });
+
     it('reports a time on the 12-hour clock, and a number written in words, rather than misreading them', () => {
       expect(compareMessage('ja', 'k', english, sentences[0]![1].replace('20時', '午後8時'))).to.eql([
         'k: its numbers differ from the English; missing 20; not in the English 午後8時'

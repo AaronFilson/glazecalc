@@ -247,6 +247,21 @@ export function linksIn(text) {
  */
 const CODE = /(?<![\d.,])\d+(?:\.\d+){2,}(?![\d.,]*\d)|(?<![\d.,])\d{3,}\.\d{3,}(?![\d.,]*\d)/g;
 
+const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+/** An English month's name, in full or short (Apr, Sept.). */
+const MONTH_NAME = String.raw`\b(?:January|February|March|April|May|June|July|August|September|October|November|December|(?:Jan|Feb|Mar|Apr|Jun|Jul|Aug|Sept?|Oct|Nov|Dec)\.?)(?!\p{L})`;
+/** A month's name beside a day or a year: October 2026, 29 May 2026, Apr 2013. */
+const MONTH = new RegExp(String.raw`(?<=\d[ \u00a0])${MONTH_NAME}|${MONTH_NAME}(?=[ \u00a0]\d)`, 'gu');
+/**
+ * Whether a language writes a month as its number: Japanese and Chinese
+ * 2026年10月, Korean 2026년 10월, Vietnamese tháng 10. For them, the
+ * English's October 2026 is read as 10 2026, so the month is a figure on
+ * both sides and must agree.
+ */
+const monthsAsNumbers = (language) => ['ja', 'zh', 'ko', 'vi'].includes(new Intl.Locale(language).language);
+const monthNumbers = (text) =>
+  text.replace(MONTH, (name) => ' ' + (MONTHS.findIndex((month) => name.startsWith(month)) + 1) + ' ');
+
 /** Problems with the figures and links of a text against its English's. */
 function compareFigures(label, language, english, translated) {
   const problems = [];
@@ -258,7 +273,7 @@ function compareFigures(label, language, english, translated) {
     for (const code of codes) out = out.split(code).join(' ');
     return out;
   };
-  const ours = numbersIn(strip(english), 'en');
+  const ours = numbersIn(monthsAsNumbers(language) ? monthNumbers(strip(english)) : strip(english), 'en');
   const theirs = numbersIn(strip(translated), language);
   if (ours.join('|') !== theirs.join('|')) {
     const missing = ours.filter((n) => !theirs.includes(n));
