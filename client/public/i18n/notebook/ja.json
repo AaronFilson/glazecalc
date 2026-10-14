@@ -1,0 +1,88 @@
+{
+  "home": {
+    "title": "工房ノート",
+    "signedInAs": "{email} でログインしています。",
+    "trying": "{name} として Glazecalc をお試し中です。まずは調合から始めてみてください。",
+    "welcomeBack": "前回の続きから始められます。",
+    "sections": {
+      "recipe": {
+        "title": "調合",
+        "text": "原料と量から釉薬を組み立て、ゼーゲル式を確認して保存します。"
+      },
+      "material": {
+        "title": "原料",
+        "text": "化学式や販売元の分析値から、ご自身の原料を追加します。"
+      },
+      "additive": {
+        "title": "添加物と着色剤",
+        "text": "基礎釉に外割で加える着色剤と乳濁剤を保存しておきます。"
+      },
+      "firing": {
+        "title": "焼成記録",
+        "text": "焼成ごとに、時間、温度、コーンを記録します。"
+      },
+      "notes": {
+        "title": "メモ",
+        "text": "テスト結果など、覚えておきたいことを残しておきます。"
+      },
+      "advice": {
+        "title": "釉薬のアドバイス",
+        "text": "調合、施釉、焼成のコツと、ご自身のアドバイスです。"
+      },
+      "guides": {
+        "title": "ガイド",
+        "text": "釉薬とは何かから焼成まで。その途中で皆の安全を守る方法も紹介します。"
+      }
+    },
+    "newHere": "ゼーゲル式は初めてですか? 基本は<advice>アドバイスのページ</advice>で、Glazecalc の仕組みは<about>Glazecalc についてのページ</about>で説明しています。"
+  },
+  "firing": {
+    "title": "焼成記録",
+    "lead": "時間、温度、コーン、窯についてのメモなど、焼成ごとに記録します。",
+    "titleLabel": "焼成の名前:",
+    "kiln": "窯:",
+    "date": "焼成日:",
+    "notes": "焼成についてのメモ:",
+    "fieldSelect": "焼成記録に追加する項目を選択:",
+    "addField": "項目を追加",
+    "included": "追加した項目:",
+    "fieldName": "項目名: {name}",
+    "moveLeft": "項目を左へ移動",
+    "moveRight": "項目を右へ移動",
+    "removeField": "項目を削除",
+    "addRow": "焼成の表に行を追加",
+    "recordHeading": "焼成を記録",
+    "rowActions": "行の操作",
+    "cell": "{field}、{row}行目",
+    "removeRow": "行を削除",
+    "save": "保存",
+    "storedHeading": "保存した焼成記録:",
+    "stored": "名前: {title}、使用した窯: {kiln}、日付: {date}",
+    "storedNotes": "メモ: {notes}",
+    "titleMissing": "焼成の名前を入力してください。",
+    "fieldsMissing": "{example} など、記録する項目を一つ以上追加してください。",
+    "chooseField": "追加する項目を選んでから、[項目を追加] を押してください。",
+    "fetchFailed": "焼成記録の情報を取得する際にエラーが発生しました。",
+    "saved": "焼成記録をサーバーに追加しました。",
+    "saveFailed": "エラー: サーバーへのリクエストに失敗しました。"
+  },
+  "notes": {
+    "title": "メモ",
+    "lead": "釉薬について、ほかに覚えておきたいこと。",
+    "intro": "メモのページです。ここでメモを書いて保存できます。",
+    "titleLabel": "タイトル:",
+    "content": "メモの内容:",
+    "save": "保存",
+    "mineHeading": "保存したメモ:",
+    "titleMissing": "メモのタイトルを入力してください。",
+    "contentMissing": "メモを書いてください。",
+    "untitled": "無題のメモ",
+    "fetchFailed": "メモの情報を取得する際にエラーが発生しました。",
+    "saved": "メモをサーバーに追加しました。",
+    "saveFailed": "エラー: サーバーへのリクエストに失敗しました。"
+  },
+  "trash": {
+    "title": "ごみ箱",
+    "comingSoon": "ごみ箱の機能は、Glazecalc の次のバージョンで追加される予定です。それまでは、削除は慎重に行ってください。一度削除した情報は失われます。"
+  }
+}
