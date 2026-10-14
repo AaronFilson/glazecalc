@@ -281,8 +281,14 @@ export class AuthPage {
   protected startOver(message: string | null): void {
     this.secondStep.set(null);
     if (message) this.notices.error(message);
-    afterNextRender(() => this.passwordField()?.nativeElement.focus(), { injector: this.injector });
-    if (this.passkeysShown()) void this.startAutofill();
+    // Once the form is back: the autofill request needs the email field on the page.
+    afterNextRender(
+      () => {
+        this.passwordField()?.nativeElement.focus();
+        if (this.passkeysShown()) void this.startAutofill();
+      },
+      { injector: this.injector }
+    );
   }
 
   /** "Sign in with a passkey": a passkey alone, which counts as both steps. */
