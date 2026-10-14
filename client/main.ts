@@ -1,9 +1,21 @@
+import { provideAppInitializer } from '@angular/core';
 import { bootstrapApplication } from '@angular/platform-browser';
 import { appConfig } from './app/app.config';
 import { App } from './app/app';
 
 const start = (): void => {
   bootstrapApplication(App, appConfig).catch((err) => console.error(err));
+};
+
+/**
+ * Starts the app in two tasks on a prerendered page: its services first, then adopting the page. Between them
+ * the browser can answer a tap or draw a frame; together they were one long task on a slow phone.
+ */
+const startInTwo = (): void => {
+  const yieldToBrowser = () => new Promise<void>((resolve) => setTimeout(resolve));
+  bootstrapApplication(App, { providers: [...appConfig.providers, provideAppInitializer(yieldToBrowser)] }).catch(
+    (err) => console.error(err)
+  );
 };
 
 /**
@@ -39,7 +51,7 @@ if (!document.documentElement.hasAttribute('data-leaving')) {
   // The transfer state the prerender writes at the end of a page marks it as prerendered. A page with a form
   // (sign-up, a guide's choice of country) is adopted at once, so that what is typed in it goes to the app.
   if (document.getElementById('ng-state') && !document.querySelector('gc-root :is(input, select, textarea)')) {
-    afterFirstPaint(start);
+    afterFirstPaint(startInTwo);
   } else {
     start();
   }
