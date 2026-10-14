@@ -175,7 +175,7 @@ describe('session cookies stay on their own host', () => {
     ];
     for (const res of replies) {
       const set = ([] as string[]).concat((res.headers['set-cookie'] as string[] | string | undefined) ?? []);
-      expect(set, res.request.url).to.not.be.empty;
+      expect(set.length, res.request.url).to.be.above(0);
       for (const cookie of set) expect(cookie, res.request.url).to.not.match(/;\s*Domain=/i);
     }
   });
