@@ -1,6 +1,6 @@
 // One translation prompt per language and part (the parts of chunks.md), from translate-prompt.md.
 //   GLAZECALC_SCRATCH=... node make-translate-prompts.js ga mt   → <scratch>/translate/<code>-<part>.md
-const { LANGUAGES, codes, fill, write, chunks } = require('./wave');
+const { LANGUAGES, codes, fill, write, chunks, notes } = require('./wave');
 
 const PARTS = [
   'app',
@@ -21,7 +21,13 @@ for (const code of codes()) {
     const files = `The part **${part}** of ${CHUNKS}: read that part (the heading "## ${part}"); it names your files, where each English file is, and what is in it. In each path, \`<code>\` is \`${code}\`.`;
     write(
       `translate/${code}-${part}.md`,
-      fill('translate-prompt.md', { LANGUAGE: language, CODE: code, COUNTRY: country, FILES: files })
+      fill('translate-prompt.md', {
+        LANGUAGE: language,
+        CODE: code,
+        COUNTRY: country,
+        FILES: files,
+        NOTES: notes(code, 'translate')
+      })
     );
     count++;
   }

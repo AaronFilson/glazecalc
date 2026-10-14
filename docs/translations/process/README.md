@@ -4,7 +4,10 @@ The prompts and scripts used to write glossaries, translate, review, back-transl
 1–3, docs/i18n-plan.md, Phase 3), ready for the next wave. The scripts take the session's scratch folder from
 `GLAZECALC_SCRATCH` (an absolute path) and write every prompt and agent work file there; the branch named in the
 prompts is the current one (or `GLAZECALC_BRANCH`). A language must be in `LANGUAGES` in [wave.js](wave.js) (its
-name, who reads it, its region, where its glossary research starts); Irish and Maltese are there.
+name, who reads it, its region, where its glossary research starts); Irish, Maltese and Japanese are there.
+A language outside the EU also gives its own research lines (`kilns`, `law`, `terms`, in place of the EU's), and any
+language may give `notes`: rules added to its glossary, translate, review or back-translation prompts only
+(`{NOTES}` in the templates; empty for the others, whose prompts are unchanged).
 
 ```bash
 export PATH="/c/nvm4w/nodejs:$PATH"
@@ -77,3 +80,14 @@ once: a stopped agent can be resumed with a message, and goes on from its transc
 docs/i18n-plan.md, "After the EU: Asia, the Indian subcontinent and Africa": right-to-left (Arabic, Urdu), Japanese
 SK cones, the regions before the languages. Add those languages to `LANGUAGES` in wave.js; the scripts are otherwise
 the same.
+
+## Asia, Phase D: Japanese (in preparation)
+
+docs/asia-plan.md, Phase D. Japanese is first (`ja`, `live: false` in lib/regions/languages.js, the standard notice);
+Simplified and Traditional Chinese and Korean follow with their own entries. Japanese's entry in wave.js carries what
+the European templates did not say: research from Japanese law (e-Gov), MHLW and CAA texts, JIS and the 学術用語集
+instead of EUR-Lex and IATE, and notes on SK cones (always "SK", never ゼーゲル as a label, never converted to Orton),
+half-width digits, the 24-hour clock, the Western calendar, `other`-only plurals with the counter inside, です/ます, 。
+and 、, and the law's own words (以下, never 未満, for "at most"; 管理濃度; 加熱調理用器具). The style sheet is
+docs/translations/ja.md. The numbers check reads a month written as its number (2026年10月) as the English's month
+name (scripts/i18n-check.mjs), and its other Asian rules came with Phase A.

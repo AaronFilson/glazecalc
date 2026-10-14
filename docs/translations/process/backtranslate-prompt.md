@@ -9,7 +9,7 @@ Ground rules:
 - Write your scratch files only in {SCRATCH}backtranslation\ (create it if needed), named {CODE}-{PART}-….
 
 What to check:
-{WHAT}
+{WHAT}{NOTES}
 
 Steps:
 
