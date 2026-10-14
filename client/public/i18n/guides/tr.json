@@ -1,0 +1,176 @@
+{
+  "version": {
+    "cones": "Bu rehber, ayarlarda seçildiği gibi piramitle pişirim için gösteriliyor.",
+    "temperature": "Bu rehber, ayarlarda seçildiği gibi sıcaklığa göre pişirim için gösteriliyor.",
+    "showTemperature": "Sıcaklığa göre pişirim için göster",
+    "showCones": "Piramitle pişirim için göster",
+    "sk": "Bu rehber, ayarlarda seçildiği gibi SK piramitleriyle (JIS R 8101) pişirim için gösteriliyor.",
+    "showSk": "SK piramitleriyle (JIS R 8101) pişirim için göster",
+    "showOrton": "Orton piramitleriyle pişirim için göster"
+  },
+  "notTranslated": "Bu rehber henüz çevrilmedi, bu yüzden İngilizce gösteriliyor.",
+  "sectionInEnglish": "Bu bölüm çevrildikten sonra değişti, bu yüzden çevirisi güncellenene kadar İngilizce gösteriliyor.",
+  "list": {
+    "title": "Rehberler",
+    "lead": "Yeni başlayan seramikçiler için sade bir dille yazılmış rehberler: sırrın ne olduğundan pişirilmesine kadar, yol boyunca herkesi güvende tutarak.",
+    "note": "Bu rehberler üreticilerin, güvenlik kurumlarının ve deneyimli seramikçilerin yayımladıklarını bir araya getirir; kaynaklar her birinin sonundadır. Bunlar bir başlangıç noktasıdır; hammaddelerinizin güvenlik bilgi formlarının, fırınınızın kullanım kılavuzunun veya yerel kuralların yerini tutmaz.",
+    "glazingBasics": {
+      "title": "Sırlamanın temel ilkeleri",
+      "text": "Sırrın ne olduğu, nasıl eridiği ve bir reçetede ya da torbada karşılaşacağınız her sözcük, açıklamalarıyla."
+    },
+    "makingAGlaze": {
+      "title": "Sır nasıl hazırlanır",
+      "text": "Sırrın satın alınması, saklanması, tartılması, karıştırılması ve elenmesi; ardından test edilmesi ve kayıt tutulması."
+    },
+    "safeMixing": {
+      "title": "Güvenli karıştırma ve havalandırma",
+      "text": "Toz, solunum koruyucu maskeler, temizlik, en çok özen isteyen hammaddeler ve fırının havalandırılması."
+    },
+    "homeSafety": {
+      "title": "Ailenizi zehirlemeyin",
+      "text": "Çocuklar ve evcil hayvanlarla evde seramik: saklama, toz, fırın ve bir şey yutulursa ne yapılacağı."
+    },
+    "firing": {
+      "title": "Basit bir fırında pişirim",
+      "text": "Piramitler, kiln sitter düzenekleri ve elle kumanda anahtarları; bisküvi ve sırlı pişirim programlarıyla birlikte."
+    }
+  },
+  "contents": "Bu sayfada",
+  "poison": {
+    "numbersFor": "Numaraların gösterileceği ülke:",
+    "choose": "Ülkenizi seçin",
+    "label": "{region} ülkesinde kim aranmalı",
+    "caption": "{region} ülkesinde kim aranmalı (numaraların kontrol tarihi: {date})",
+    "for": "Ne için",
+    "call": "Aranacak numara",
+    "notes": "Saatler ve notlar",
+    "emergency": "Acil durum: bilinci kapalı, nefes almıyor, nöbet geçiriyor",
+    "poisonAdvice": "{who, select, children {Zehir danışma hattı: {name} (yalnızca çocuklar için)} other {Zehir danışma hattı: {name}}}",
+    "or": "veya {number}",
+    "online": "Çevrimiçi: <link>{name}</link>.",
+    "poisonAdviceNone": "Zehir danışma hattı",
+    "noLine": "Burada herkese açık bir zehir danışma hattı olduğunu doğrulayamadık. Doktorunuzu veya acilse acil çağrı numarasını arayın.",
+    "medicalAdvice": "Tıbbi danışma hattı: {name}",
+    "animals": "Hayvanlar: {name}",
+    "animalsNone": "Hayvanlar",
+    "vet": "Veterinerinizi arayın.",
+    "checkedOn": "Kontrol tarihi:",
+    "choosePrompt": "Orada kimin aranacağını görmek için ülkenizi seçin.",
+    "ministry": "Sağlık bakanlığının sayfası: <link>{name}</link>."
+  },
+  "density": {
+    "sg": "özgül ağırlık {value}",
+    "baume": "{value} °Bé ({sg})",
+    "pint": "İngiliz pinti başına {value} oz ({sg})"
+  },
+  "shops": {
+    "shopsIn": "Mağazaların bulunduğu ülkeler:",
+    "label": "{region} ülkesindeki mağazalar",
+    "caption": "{region} ülkesinde sır hammaddesi satan bazı mağazalar (kontrol tarihi: {date})",
+    "nearbyCaption": "Başka ülkelerde olup {region} ülkesine teslimat yaptığını söyleyen mağazalar (kontrol tarihi: {date})",
+    "shop": "Mağaza",
+    "sells": "Sattıkları",
+    "packs": "Görülen ambalajlar",
+    "seen": "Görülen hammaddeler, mağazanın verdiği adlarla",
+    "what": {
+      "materials": "sır hammaddeleri",
+      "frits": "fritler",
+      "oxides": "oksitler",
+      "stains": "boyalar",
+      "clays": "çamur",
+      "glazes": "hazır sırlar",
+      "kilns": "fırınlar"
+    },
+    "none": "{region} ülkesinde sır hammaddesi satan bir mağaza bulamadık.",
+    "unknown": "{region} ülkesindeki mağazalara henüz bakmadık.",
+    "choosePrompt": "Oradaki mağazaları görmek için ülkenizi seçin."
+  },
+  "silica": {
+    "limitIn": "Sınır değerin gösterileceği ülke:",
+    "label": "{region} ülkesinde silika sınır değeri",
+    "caption": "{region} ülkesinde solunabilir kristal silika için işyeri sınır değeri, 8 saatlik ortalama (ZAOD); kontrol tarihi: {date}",
+    "captionControl": "{region} ülkesinde bir çalışma alanının havasındaki solunabilir kristal silika için ölçüt (kontrol tarihi: {date})",
+    "both": "Kuvars ve kristobalit",
+    "quartz": "Kuvars",
+    "cristobalite": "Kristobalit",
+    "actionLevel": "Eylem düzeyi",
+    "formula": "Kontrol konsantrasyonu; Q, tozdaki serbest silis yüzdesidir",
+    "formulaValue": "{numerator} / ({factor}Q + 1) mg/m³",
+    "formulaLimit": "Solunabilir kuvars için sınır değer; Q, tozdaki silis (SiO₂) yüzdesidir",
+    "formulaQ": "{numerator} / (Q + {offset}) mg/m³",
+    "formulaFull": "{numerator} / ({factor}Q + {offset}) mg/m³",
+    "quartzAll": "Kuvars, tamamı kuvars olan toz için",
+    "cristobaliteAll": "Kristobalit, tamamı kristobalit olan toz için",
+    "allFree": "Tamamı serbest silis olan toz için kontrol konsantrasyonu",
+    "recommended": "{abbr} tarafından önerilir",
+    "value": "{value} mg/m³",
+    "kind": {
+      "binding": "Bağlayıcı bir sınır değer.",
+      "indicative": "Gösterge niteliğinde bir sınır değer: yol gösterici bir değerdir, yasal üst sınır değildir.",
+      "assessment": "Bir değerlendirme ölçütü; bağlayıcı bir sınır değer değildir.",
+      "control": "Bir kontrol konsantrasyonu (管理濃度): bir çalışma alanının havasını oradaki ölçümlere göre değerlendirmek için kullanılan ölçüttür; bir kişinin soluduğu hava için bir sınır değer değildir."
+    },
+    "setBy": "Belirleyen: <link>{law}</link>.",
+    "lowerThanEu": "AB’nin {value} mg/m³ olan bağlayıcı sınır değerinden düşüktür.",
+    "sameAsEu": "AB’nin bağlayıcı sınır değeriyle aynıdır.",
+    "recommendedBy": "{by} ({abbr}) bu değeri <link>{title}</link> adlı yayınında önerir. Bu bir yasa değildir.",
+    "respirators": "Toz maskeleri burada sınıflara göre satılır: sır tozu için {everyday}, daha yüksek koruma için {higher} (<link>resmî sınıflar</link>).",
+    "unknown": "{region} ülkesindeki ulusal sınır değeri doğrulayamadık. AB’nin {value} mg/m³ olan bağlayıcı sınır değeri her üye devlette geçerlidir.",
+    "noData": "{region} ülkesindeki sınır değeri henüz doğrulamadık.",
+    "agency": "İş güvenliğinden sorumlu ulusal kurum: <link>{name}</link>.",
+    "agencySilica": "Kurumun <link>silika sayfası</link>.",
+    "choosePrompt": "Sınır değeri görmek için ülkenizi seçin."
+  },
+  "food": {
+    "rulesIn": "Kuralların gösterileceği ülke:",
+    "label": "{region} ülkesinde seramik ürünler için sınır değerler",
+    "caption": "{region} ülkesinde, yasal testte pişmiş bir parçanın salabileceği miktar (kontrol tarihi: {date})",
+    "article": "Kabın türü",
+    "lead": "Kurşun",
+    "cadmium": "Kadmiyum",
+    "category": {
+      "flat": "Doldurulamayan veya derinliği en fazla 25 mm olan kaplar",
+      "fillable": "Doldurulabilen diğer kaplar",
+      "cooking": "Her boyutta pişirme kapları; 3 L’yi aşan paketleme ve saklama kapları",
+      "rimBand": "İçmek için kullanılan bir kabın ağız kenarı: içte ve dışta 2 cm’lik bir şerit",
+      "rimArticle": "İçmek için kullanılan bir kabın ağız kenarı: üst kenarın dışında 20 mm’lik bir şerit, kap başına",
+      "flatware": "Düz kaplar, derinliği en fazla 25 mm",
+      "smallHollow": "Küçük çukur kaplar, 1,1 L’den az, fincanlar ve kupalar dışında",
+      "cups": "Fincanlar ve kupalar",
+      "largeHollow": "Büyük çukur kaplar, 1,1 L veya daha fazla, sürahiler dışında",
+      "pitchers": "Sürahiler",
+      "auSmall": "1100 mL’den az fincanlar, kupalar, sürahiler, kâseler, demlikler ve diğer sofra eşyaları",
+      "auLarge": "Aynıları, 1100 mL veya daha fazla",
+      "auPlates": "Tabaklar, fincan tabakları ve benzeri sofra eşyaları",
+      "auCooking": "Pişirme kapları",
+      "jpFlat": "Doldurulamayan veya derinliği 2,5 cm’den az olan kaplar",
+      "jpSmall": "Pişirme için olmayan diğer kaplar: 1,1 L’den az",
+      "jpLarge": "Pişirme için olmayan diğer kaplar: 1,1 L veya daha fazla, 3 L’den az",
+      "jpStorage": "Pişirme için olmayan diğer kaplar: 3 L veya daha fazla",
+      "jpCooking": "Pişirme kapları, derinliği 2,5 cm veya daha fazla"
+    },
+    "judged": {
+      "average": "6 parçanın ortalaması",
+      "each": "6 parçadan herhangi biri"
+    },
+    "euRules": "Burada AB kuralları uygulanır.",
+    "law": "Belirleyen: <link>{law}</link>.",
+    "inForce": "Yürürlük tarihi: {date}.",
+    "atMost": "Bir parça, sınır değerden fazlasını salmıyorsa testi geçer: yasa “en fazla” der.",
+    "unknown": "{region} ülkesindeki kuralları henüz doğrulamadık.",
+    "choosePrompt": "Kuralları görmek için ülkenizi seçin."
+  },
+  "equivalents": {
+    "buyingIn": "Satın alınan ülke:",
+    "label": "{library, select, US {ABD’de satılan muadiller} UK {Birleşik Krallık’ta satılan muadiller} EU {AB’de satılan muadiller} other {Avustralya ve Yeni Zelanda’da satılan muadiller}}",
+    "caption": "{library, select, US {ABD’de satılmayan hammaddeler ve her birinin orada satılan en yakın muadili} UK {Birleşik Krallık’ta satılmayan hammaddeler ve her birinin orada satılan en yakın muadili} EU {AB’de satılmayan hammaddeler ve her birinin orada satılan en yakın muadili} other {Avustralya ve Yeni Zelanda’da satılmayan hammaddeler ve her birinin orada satılan en yakın muadili}}",
+    "material": "Reçetede",
+    "soldIn": "Satıldığı yer",
+    "closest": "{library, select, US {ABD’de satılan en yakın muadil} UK {Birleşik Krallık’ta satılan en yakın muadil} EU {AB’de satılan en yakın muadil} other {Avustralya ve Yeni Zelanda’da satılan en yakın muadil}}",
+    "apart": "100 g’da {grams} g fark var",
+    "noneClose": "100 g’da en fazla 15 g fark olan bir hammadde yok: kimyasal bileşime göre karşılaştırın.",
+    "loading": "Kütüphane yükleniyor…",
+    "failed": "Kütüphane yüklenemedi. Daha sonra yeniden deneyin.",
+    "choosePrompt": "Orada neyin satıldığını görmek için ülkenizi seçin."
+  }
+}

@@ -1,0 +1,276 @@
+{
+  "auth": {
+    "signInHeading": "Oturum aç",
+    "keepHeading": "Çalışmalarınızı saklayın",
+    "signUpHeading": "Hesabınızı oluşturun",
+    "signInLead": "Sır defterinize yeniden hoş geldiniz.",
+    "keepLead": "{name} adıyla yaptığınız her şeyi saklayın: e-posta adresinizi ve bir parola ekleyin. Ücretsiz kalır.",
+    "signUpLead": "Ücretsiz. Reçeteleriniz, hammaddeleriniz ve notlarınız hesabınıza özel tutulur.",
+    "trialNote": "Zaten bir hesabınız var mı? Oturum açarsanız {name} adıyla yaptıklarınız hesabınıza taşınır. Yeni misiniz? Bunun yerine, saklamak için <signup>bir hesap oluşturun</signup>.",
+    "email": "E-posta",
+    "password": "Parola",
+    "passwordHint": "En az 8 karakter.",
+    "confirmation": "Parola (tekrar)",
+    "keepSignedIn": "Bu cihazda oturumumu açık tut",
+    "passwordMissing": "Parolanızı girin.",
+    "createAccount": "Hesap oluştur",
+    "signIn": "Oturum aç",
+    "haveAccount": "Zaten bir hesabınız var mı? <signin>Oturum açın</signin>",
+    "privacy": "E-posta adresiniz ve kaydettikleriniz yalnızca hesabınızı çalıştırmak için kullanılır ve ABD’de Amazon Web Services’te saklanır. <privacy>Glazecalc verilerinizi nasıl işler</privacy>",
+    "forgot": "Parolanızı mı unuttunuz? Sıfırlayın",
+    "newHere": "Yeni misiniz? <signup>Ücretsiz hesap oluşturun</signup>",
+    "signUpFailed": "Hata: hesap oluşturulamadı.",
+    "signInFailed": "Hata: oturum açılamadı."
+  },
+  "forgot": {
+    "heading": "Parolanızı sıfırlayın",
+    "checkInbox": "Gelen kutunuzu ve gereksiz klasörünüzü kontrol edin. Bir şey gelmezse adresi kontrol edip yeniden isteyin.",
+    "intro": "Hesabınızın e-posta adresini girin; yeni bir parola seçmeniz için size bir bağlantı gönderelim.",
+    "email": "E-posta:",
+    "send": "Sıfırlama bağlantısı gönder",
+    "back": "Oturum açmaya dön",
+    "failed": "Hata: sıfırlama e-postası gönderilemedi. Lütfen yeniden deneyin."
+  },
+  "reset": {
+    "heading": "Yeni bir parola seçin",
+    "signIn": "Oturum aç",
+    "incomplete": "Bu sayfa bir parola sıfırlama e-postasındaki bağlantıyla açılmalıdır; bu bağlantı eksik.",
+    "askAgain": "Yeni bağlantı iste",
+    "password": "Yeni parola:",
+    "confirmation": "Yeni parola (tekrar):",
+    "save": "Yeni parolayı kaydet",
+    "hint": "En az 8 karakter. Hesaba oturum açmış tüm cihazlarda oturum kapatılır.",
+    "failed": "Hata: parola değiştirilemedi. Lütfen yeniden deneyin."
+  },
+  "account": {
+    "trialTitle": "Denemeniz",
+    "trialLead": "Glazecalc’ı {name} adıyla deniyorsunuz.",
+    "keepHeading": "Çalışmalarınızı saklayın",
+    "keepText": "Bu deneme ve içindeki her şey {date} tarihinde kaldırılır. Saklamak için ücretsiz bir hesap oluşturun: reçeteleriniz, hammaddeleriniz ve notlarınız olduğu gibi kalır, görünen adınız da {name} olarak kalır.",
+    "createAccount": "Hesap oluştur",
+    "title": "Hesabınız",
+    "signedInAs": "{email} olarak oturum açtınız.",
+    "changeHeading": "Parolanızı değiştirin",
+    "current": "Geçerli parola",
+    "currentMissing": "Geçerli parolanızı girin.",
+    "password": "Yeni parola",
+    "passwordHint": "En az 8 karakter. Bu hesaba oturum açmış diğer cihazlarda oturum kapatılır.",
+    "confirmation": "Yeni parola (tekrar)",
+    "change": "Parolayı değiştir",
+    "changeFailed": "Hata: parola değiştirilemedi. Lütfen yeniden deneyin.",
+    "deleteHeading": "Hesabınızı silin",
+    "deleteText": "Bu işlem hesabınızı ve kaydettiğiniz her şeyi kaldırır: reçeteler, hammaddeler, katkılar, notlar, pişirim kayıtları ve tavsiyeler. Geri alınamaz.",
+    "deletePassword": "Onaylamak için parolanız",
+    "deletePasswordMissing": "Onaylamak için parolanızı girin.",
+    "delete": "Hesabımı sil",
+    "deleteFailed": "Hata: hesap silinemedi. Lütfen yeniden deneyin.",
+    "unverifiedHeading": "E-posta adresinizi doğrulayın",
+    "unverifiedText": "Bu hesabı oluşturduğunuzda {email} adresine bir bağlantı gönderdik. Adresin size ait olduğunu doğrulamak için bağlantıyı açın. O zamana kadar bu adrese yalnızca siz istediğinizde, örneğin parola sıfırlama için, e-posta göndeririz.",
+    "resend": "Bağlantıyı yeniden gönder",
+    "resendFailed": "Hata: bağlantı gönderilemedi. Lütfen yeniden deneyin.",
+    "emailHeading": "E-posta adresinizi değiştirin",
+    "emailText": "Yeni adrese bir bağlantı göndeririz; bağlantıyı açtığınızda e-posta adresiniz değişir. Geçerli adresinize de haber veririz. Bu hesaba oturum açmış tüm cihazlarda oturum kapatılır.",
+    "newEmail": "Yeni e-posta",
+    "emailPassword": "Onaylamak için parolanız",
+    "emailSend": "Bağlantıyı gönder",
+    "emailFailed": "Hata: bağlantı gönderilemedi. Lütfen yeniden deneyin.",
+    "signOutHeading": "Her yerde oturumu kapat",
+    "signOutText": "Bu cihaz da dahil olmak üzere tüm cihazlarda oturumunuzu kapatır. Bir cihazı kaybettiyseniz ya da oturum bilgilerinizin başka birinde olduğunu düşünüyorsanız kullanın.",
+    "signOutButton": "Her yerde oturumu kapat",
+    "signOutFailed": "Hata: oturum kapatılamadı. Lütfen yeniden deneyin."
+  },
+  "export": {
+    "heading": "Verilerimi indir",
+    "text": "Hesabınızdaki her şeyin bir kopyasını tek bir dosya olarak kaydedin: bilgileriniz, ayarlarınız, elinizdeki hammaddeler, reçeteler, hammaddeler, katkılar, notlar, pişirim kayıtları, tavsiyeler ve çöp kutusu. Parolanızı içermez. Kaydettiğiniz her şeyi içerdiği için dosyayı gizli bir yerde saklayın.",
+    "json": "Her şeyi indir (JSON)",
+    "csvText": "Ya da Excel, Numbers veya Sheets’te açmak için yalnızca reçetelerinizin ya da yalnızca kendi hammaddelerinizin elektronik tablosunu kaydedin.",
+    "recipes": "Reçeteler (CSV)",
+    "materials": "Hammaddeler (CSV)"
+  },
+  "settings": {
+    "heading": "Ayarlar",
+    "intro": "Hesabınızla birlikte kaydedilir, böylece her cihazda geçerli olur.",
+    "saveFailed": "Ayar kaydedilemedi. Lütfen yeniden deneyin.",
+    "language": {
+      "legend": "Dil",
+      "help": "Uygulamanın, rehberlerin ve e-postalarınızın dili. Değiştirdiğinizde bu sayfa o dilde açılır.",
+      "saved": "Kaydedildi: {language}."
+    },
+    "region": {
+      "legend": "Çalıştığınız yer",
+      "none": {
+        "label": "Seçilmedi",
+        "saved": "Kaydedildi: bölge seçilmedi; varsayılanlar tarayıcınıza göre belirlenir."
+      },
+      "saved": "Kaydedildi: {region}.",
+      "help": "Orada satılan hammaddeler ve aşağıdaki sayılar, tarihler, sıcaklıklar ve piramitler için varsayılanlar. Siz seçene kadar bunlar tarayıcınızın diline göre belirlenir."
+    },
+    "format": {
+      "legend": "Sayılar ve tarihler",
+      "auto": {
+        "label": "Dilime ve bölgeme göre",
+        "saved": "Kaydedildi: sayılar ve tarihler, dilinizin ve bölgenizin yazdığı gibi."
+      },
+      "saved": "Kaydedildi: sayılar ve tarihler {language} dilindeki gibi.",
+      "help": "Sayıların ve tarihlerin nasıl yazılacağı: 12,345.6 ya da 12.345,6 ve gün ile ayın sırası."
+    },
+    "decimalMark": {
+      "legend": "Miktarların yazılması",
+      "either": {
+        "label": "Ondalık için virgül veya nokta",
+        "example": "12,5 veya 12.5",
+        "saved": "Kaydedildi: miktarlar virgülle ya da noktayla yazılabilir."
+      },
+      "comma": {
+        "label": "Ondalık için virgül",
+        "saved": "Kaydedildi: miktarlarda ondalık için virgül kullanılır."
+      },
+      "point": {
+        "label": "Ondalık için nokta",
+        "saved": "Kaydedildi: miktarlarda ondalık için nokta kullanılır."
+      },
+      "help": "İkisinde de 1.250 gibi bir miktar, sayılarınızın yukarıda yazıldığı biçimde okunur."
+    },
+    "temperature": {
+      "legend": "Sıcaklıklar",
+      "celsius": {
+        "label": "Santigrat",
+        "saved": "Kaydedildi: sıcaklıklar °C cinsinden."
+      },
+      "fahrenheit": {
+        "label": "Fahrenheit",
+        "saved": "Kaydedildi: sıcaklıklar °F cinsinden."
+      },
+      "help": "Siz seçene kadar bu, bölgenize göre belirlenir: Amerika Birleşik Devletleri’nde °F, başka yerlerde °C."
+    },
+    "cones": {
+      "legend": "Pişirim",
+      "orton": {
+        "label": "Orton piramitlerine göre",
+        "example": "Piramit 04, Piramit 6",
+        "saved": "Kaydedildi: Orton piramitlerine göre pişirim."
+      },
+      "sk": {
+        "label": "SK piramitlerine göre (JIS R 8101)",
+        "example": "SK 4a, SK 8",
+        "saved": "Kaydedildi: SK piramitlerine göre pişirim."
+      },
+      "temperature": {
+        "label": "Sıcaklığa göre, kontrol ünitesinin programındaki gibi",
+        "saved": "Kaydedildi: sıcaklığa göre pişirim."
+      },
+      "help": "Siz seçene kadar bu, bölgenize göre belirlenir: ABD, Birleşik Krallık, İrlanda, Avustralya ve Yeni Zelanda’da Orton piramitleri, Japonya’da SK piramitleri, Avrupa’nın geri kalanında sıcaklık."
+    },
+    "density": {
+      "legend": "Sır yoğunluğu",
+      "sg": {
+        "label": "Özgül ağırlık",
+        "saved": "Kaydedildi: sır yoğunluğu özgül ağırlık olarak.",
+        "example": "SG 1.45"
+      },
+      "baume": {
+        "label": "Bome derecesi, boumetreyle",
+        "saved": "Kaydedildi: sır yoğunluğu bome derecesi olarak."
+      },
+      "pint": {
+        "label": "Pint ağırlığı: bir İngiliz pintindeki ons",
+        "saved": "Kaydedildi: sır yoğunluğu pint ağırlığı olarak."
+      },
+      "help": "Rehberlerin bir sırrın kıvamını nasıl verdiği. Siz seçene kadar bu, bölgenize göre belirlenir: İtalya ve Japonya’da bome derecesi, başka yerlerde özgül ağırlık."
+    },
+    "theme": {
+      "legend": "Açık veya koyu",
+      "system": {
+        "label": "Bu cihazın ayarına göre",
+        "saved": "Kaydedildi: açık veya koyu, her cihazın ayarına göre."
+      },
+      "light": {
+        "label": "Açık",
+        "saved": "Kaydedildi: her zaman açık."
+      },
+      "dark": {
+        "label": "Koyu",
+        "saved": "Kaydedildi: her zaman koyu."
+      },
+      "help": "Yazdırılan reçeteler her zaman beyaz üzerine siyahtır."
+    },
+    "palette": {
+      "legend": "Renkler",
+      "saved": "Kaydedildi: {palette} renginde düğmeler ve bağlantılar.",
+      "help": "Düğmeler, bağlantılar ve sekmeler için; adlarını sırlardan alır. Her biri açık ve koyu temada kolayca okunur."
+    },
+    "weightUnit": {
+      "legend": "Tartım birimleri",
+      "grams": {
+        "label": "Gram",
+        "saved": "Kaydedildi: tartım ağırlıkları gram cinsinden."
+      },
+      "pounds": {
+        "label": "Libre ve ons",
+        "saved": "Kaydedildi: tartım ağırlıkları libre ve ons cinsinden."
+      },
+      "help": "Yazdırılan tartımlar için."
+    },
+    "gramPrecision": {
+      "legend": "Yazdırılan tartımlarda gram",
+      "single": {
+        "label": "Gramın onda birine kadar",
+        "saved": "Kaydedildi: gramlar onda birine kadar gösterilir."
+      },
+      "full": {
+        "label": "Tam hassasiyet",
+        "saved": "Kaydedildi: gramlar tam olarak, 5 ondalık basamağa kadar gösterilir."
+      },
+      "help": "Onda bire kadar seçildiğinde, küçük deneme tartımlarındaki renklendiriciler için 10 g’ın altındaki miktarlar yine yüzde birlere kadar gösterilir (2,35 g)."
+    },
+    "lead": {
+      "legend": "Kurşun",
+      "off": {
+        "label": "Kapalı: reçetelere asla kurşun eklenmez ve önerilmez",
+        "saved": "Kaydedildi: reçetelere asla kurşun eklenmez ve önerilmez."
+      },
+      "on": {
+        "label": "Açık: kurşunlu hammaddeler eklenebilir ve önerilebilir",
+        "saved": "Kaydedildi: kurşunlu hammaddeler eklenebilir ve önerilebilir."
+      },
+      "help": "Kurşun solunduğunda ya da yutulduğunda zehirlidir ve vücutta birikir; kurşunlu bir sır onu yiyecek ve içeceklere salabilir ve pişmiş bir parçanın bunu yapıp yapmadığını hiçbir hesap söyleyemez. Kapalıyken, zaten kurşun içeren reçeteler yine eskisi gibi açılır.",
+      "warning": "Kurşunu yalnızca frit olarak kullanın; asla ham kırmızı, beyaz ya da sarı kurşun veya mürdesenk olarak kullanmayın. Islak karıştırın, asla püskürtmeyin, solunum koruyucu maske takın ve ıslak temizlik yapın. Pişmiş parça laboratuvar salım testinden geçmedikçe kurşunlu sırlı ürünleri yiyecek ve içeceklerden uzak tutun.",
+      "turnOn": "Kurşunu aç",
+      "keepOff": "Kapalı tut"
+    },
+    "englishTerms": {
+      "legend": "İngilizce terimler",
+      "off": {
+        "label": "Kapalı",
+        "saved": "Kaydedildi: İngilizce terim gösterilmez."
+      },
+      "on": {
+        "label": "Temel terimlerden sonra İngilizcesini göster",
+        "saved": "Kaydedildi: temel terimlerden sonra İngilizcesi gösterilir."
+      },
+      "help": "Digitalfire gibi İngilizce kaynakları bununla birlikte okumak için: temel terimlerin İngilizcesi parantez içinde verilir."
+    },
+    "notice": {
+      "legend": "Çeviri notu",
+      "shown": {
+        "label": "Görünür",
+        "saved": "Kaydedildi: not gösterilir."
+      },
+      "hidden": {
+        "label": "Gizli",
+        "saved": "Kaydedildi: not gizlenir. Notun bir satırı güvenlik rehberlerinde kalır.",
+        "savedPlain": "Kaydedildi: not gizlenir. Notun bir satırı her sayfanın üstünde kalır."
+      },
+      "help": "Her sayfanın üstünde, sayfanın yapay zekâ ile çevrildiğini söyleyen ve bir düzeltme önermenin yolunu gösteren not."
+    }
+  },
+  "confirmEmail": {
+    "heading": "E-posta adresinizi doğrulayın",
+    "intro": "Bu adresi doğrulamak için düğmeye basın.",
+    "confirm": "Doğrula",
+    "incomplete": "Bu sayfa bir doğrulama e-postasındaki bağlantıyla açılmalıdır; bu bağlantı eksik.",
+    "account": "Hesabınız",
+    "signIn": "Oturum aç",
+    "failed": "Hata: adres doğrulanamadı. Lütfen yeniden deneyin."
+  }
+}
