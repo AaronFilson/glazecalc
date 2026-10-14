@@ -103,7 +103,6 @@
     "keptInbound": "<b>Poczta wysyłana do projektu Glazecalc:</b> 30 dni w magazynie Amazon, a w skrzynce właściciela tak długo, jak trwa udzielenie odpowiedzi. W przypadku prośby dotyczącej danych krótka notatka (kiedy wpłynęła, o co poproszono i co zrobiono) jest przechowywana przez trzy lata.",
     "rightsHeading": "Prawa użytkownika",
     "rightsIntro": "Dane można przeglądać, poprawiać, przenosić i usuwać. Większość z tego można zrobić samodzielnie na <account>stronie konta</account>:",
-    "rightsExport": "<b>Wgląd i przeniesienie danych:</b> sekcja Pobieranie moich danych zapisuje wszystko w jednym pliku (JSON), a receptury i surowce jako arkusze kalkulacyjne (CSV).",
     "rightsCorrect": "<b>Poprawianie:</b> ustawienia i zapisy można zmieniać w dowolnym momencie. Aby zmienić adres e-mail, należy otworzyć link wysłany na nowy adres; stary adres, jeśli był potwierdzony, otrzymuje powiadomienie o zmianie, a wszystkie urządzenia zostają wylogowane.",
     "rightsDelete": "<b>Usuwanie:</b> przycisk Usuń moje konto od razu usuwa konto i wszystko, co zostało zapisane, a przycisk Zakończ okres próbny robi to samo z okresem próbnym. Kopie w kopiach zapasowych znikają w ciągu 30 dni.",
     "rightsSignOut": "<b>Wylogowanie ze wszystkich urządzeń:</b> kończy sesje konta na wszystkich urządzeniach.",

@@ -103,7 +103,6 @@
     "keptInbound": "<b>E-mailurile pe care le trimiteți către Glazecalc:</b> 30 de zile în spațiul de stocare al Amazon și, în căsuța de e-mail a proprietarului, cât este nevoie pentru a vă răspunde. Pentru o cerere privind datele dumneavoastră, se păstrează timp de trei ani o scurtă notă (când a venit, ce s-a cerut și ce s-a făcut).",
     "rightsHeading": "Drepturile dumneavoastră",
     "rightsIntro": "Puteți să vedeți, să corectați, să luați cu dumneavoastră și să ștergeți datele. Cele mai multe dintre acestea le puteți face direct pe <account>pagina contului</account>:",
-    "rightsExport": "<b>Să le vedeți și să le luați cu dumneavoastră:</b> „Descărcați datele mele” salvează totul într-un singur fișier (JSON), iar rețetele și materiile prime, ca tabele (CSV).",
     "rightsCorrect": "<b>Să le corectați:</b> schimbați oricând setările și înregistrările. Pentru a schimba adresa de e-mail, deschideți linkul trimis la noua adresă; vechea adresă, dacă a fost confirmată, este anunțată despre schimbare, iar toate dispozitivele sunt deconectate.",
     "rightsDelete": "<b>Să le ștergeți:</b> „Ștergeți contul meu” elimină imediat contul și tot ce ați salvat, iar „Renunțați la perioada de probă” face același lucru pentru o perioadă de probă. Ce rămâne în copiile de rezervă dispare în termen de 30 de zile.",
     "rightsSignOut": "<b>Deconectare de pe toate dispozitivele:</b> încheie sesiunile contului pe toate dispozitivele.",

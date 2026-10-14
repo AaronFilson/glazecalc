@@ -103,7 +103,6 @@
     "keptInbound": "<b>Kirjad, mille saadate Glazecalcile:</b> 30 päeva Amazoni hoidlas ja omaniku postkastis nii kaua, kui teile vastamiseks kulub. Teie andmeid puudutava taotluse kohta säilitatakse lühike märge (millal see saabus, mida küsiti ja mida tehti) kolm aastat.",
     "rightsHeading": "Teie õigused",
     "rightsIntro": "Saate oma andmeid vaadata, parandada, kaasa võtta ja kustutada. Enamikku sellest saate teha ise oma <account>konto lehel</account>:",
-    "rightsExport": "<b>Vaatamine ja kaasavõtmine:</b> jaotis Minu andmete allalaadimine salvestab kõik ühte faili (JSON) ning teie retseptid ja toorained tabelitena (CSV).",
     "rightsCorrect": "<b>Parandamine:</b> muutke oma sätteid ja kirjeid igal ajal. E-posti aadressi muutmiseks avage uuele aadressile saadetud link; vanale aadressile, kui see oli kinnitatud, teatatakse muudatusest ja kõik seadmed logitakse välja.",
     "rightsDelete": "<b>Kustutamine:</b> nupp Kustuta minu konto eemaldab kohe teie konto ja kõik, mille olete salvestanud, ning nupp Loobu proovikasutusest teeb sama proovikasutusega. Varukoopiates olevad koopiad kaovad 30 päeva jooksul.",
     "rightsSignOut": "<b>Väljalogimine kõikjal:</b> lõpetab teie konto seansid kõigis seadmetes.",

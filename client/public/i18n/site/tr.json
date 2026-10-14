@@ -103,7 +103,6 @@
     "keptInbound": "<b>Glazecalc’a gönderdiğiniz e-postalar:</b> Amazon’un deposunda 30 gün, sahibinin gelen kutusunda ise size yanıt vermek için gerektiği kadar. Verilerinizle ilgili bir talep için kısa bir not (ne zaman geldiği, ne istendiği ve ne yapıldığı) üç yıl saklanır.",
     "rightsHeading": "Haklarınız",
     "rightsIntro": "Verilerinizi görebilir, düzeltebilir, alabilir ve silebilirsiniz. Bunların çoğunu <account>hesap sayfanızda</account> kendiniz yapabilirsiniz:",
-    "rightsExport": "<b>Görün ve yanınızda götürün:</b> Verilerimi indir düğmesi her şeyi tek bir dosyaya (JSON), reçetelerinizi ve hammaddelerinizi ise elektronik tablolara (CSV) kaydeder.",
     "rightsCorrect": "<b>Düzeltin:</b> ayarlarınızı ve kayıtlarınızı istediğiniz zaman değiştirin. E-posta adresinizi değiştirmek için yeni adrese gönderilen bağlantıyı açın; eski adres doğrulanmışsa değişiklik ona bildirilir ve tüm cihazlarda oturum kapatılır.",
     "rightsDelete": "<b>Silin:</b> Hesabımı sil düğmesi hesabınızı ve kaydettiğiniz her şeyi hemen kaldırır; Denemeyi sil düğmesi de bir deneme için aynısını yapar. Yedeklerdeki kopyalar 30 gün içinde silinir.",
     "rightsSignOut": "<b>Her yerde oturumu kapatın:</b> hesabınızın tüm cihazlardaki oturumlarını sonlandırır.",

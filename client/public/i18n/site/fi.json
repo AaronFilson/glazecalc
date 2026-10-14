@@ -103,7 +103,6 @@
     "keptInbound": "<b>Glazecalcille lähetetty posti:</b> 30 päivää Amazonin tallennustilassa ja omistajan postilaatikossa niin kauan kuin vastaaminen vie. Omia tietoja koskevasta pyynnöstä säilytetään lyhyt merkintä (milloin pyyntö saapui, mitä pyydettiin ja mitä tehtiin) kolmen vuoden ajan.",
     "rightsHeading": "Käyttäjän oikeudet",
     "rightsIntro": "Omia tietoja voi tarkastella, korjata, siirtää ja poistaa. Suurimman osan voi tehdä itse <account>tilisivulla</account>:",
-    "rightsExport": "<b>Tietojen tarkastelu ja siirtäminen:</b> Omien tietojen lataaminen tallentaa kaiken yhteen tiedostoon (JSON) sekä reseptit ja raaka-aineet taulukoiksi (CSV).",
     "rightsCorrect": "<b>Tietojen korjaaminen:</b> asetuksia ja tietueita voi muuttaa milloin tahansa. Sähköpostiosoite vaihdetaan avaamalla uuteen osoitteeseen lähetetty linkki; vanhaan osoitteeseen ilmoitetaan muutoksesta, jos se oli vahvistettu, ja kaikki laitteet kirjataan ulos.",
     "rightsDelete": "<b>Tietojen poistaminen:</b> Poista tili -toiminto poistaa tilin ja kaiken tallennetun heti, ja Hylkää kokeilu -toiminto tekee saman kokeilulle. Varmuuskopioissa olevat kopiot häviävät 30 päivän kuluessa.",
     "rightsSignOut": "<b>Uloskirjautuminen kaikilta laitteilta:</b> päättää tilin istunnot kaikilla laitteilla.",

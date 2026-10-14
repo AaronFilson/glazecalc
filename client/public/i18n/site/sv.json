@@ -103,7 +103,6 @@
     "keptInbound": "<b>E-post som skickas till Glazecalc:</b> 30 dagar i Amazons lagring, och i ägarens inkorg så länge det tar att svara dig. För en begäran som rör dina uppgifter sparas en kort anteckning (när den kom, vad som begärdes och vad som gjordes) i tre år.",
     "rightsHeading": "Dina rättigheter",
     "rightsIntro": "Du kan se, rätta, ta med dig och radera dina uppgifter. Det mesta går att göra själv på <account>kontosidan</account>:",
-    "rightsExport": "<b>Se dem och ta med dem:</b> Ladda ner kontots uppgifter sparar allt i en fil (JSON), och recepten och råvarorna som kalkylblad (CSV).",
     "rightsCorrect": "<b>Rätta dem:</b> ändra inställningarna och det du har sparat när som helst. För att byta e-postadress öppnar du länken som skickas till den nya adressen; den gamla adressen får, om den var bekräftad, besked om ändringen, och alla enheter loggas ut.",
     "rightsDelete": "<b>Radera dem:</b> knappen Radera kontot tar bort kontot och allt du har sparat på en gång, och Radera provperioden gör detsamma för en provperiod. Kopior i säkerhetskopiorna är borta inom 30 dagar.",
     "rightsSignOut": "<b>Logga ut överallt:</b> avslutar kontots sessioner på alla enheter.",

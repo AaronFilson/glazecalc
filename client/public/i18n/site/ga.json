@@ -103,7 +103,6 @@
     "keptInbound": "<b>Ríomhphost a sheolann tú chuig Glazecalc:</b> 30 lá i stór Amazon, agus i mbosca isteach an úinéara chomh fada is a thógann sé freagra a thabhairt ort. I gcás iarratais faoi do shonraí, coinnítear nóta gearr (cathain a tháinig sé, cad a iarradh agus cad a rinneadh) ar feadh trí bliana.",
     "rightsHeading": "Do chearta",
     "rightsIntro": "Is féidir leat do shonraí a fheiceáil, a cheartú, a thabhairt leat agus a scriosadh. Is féidir leat a bhformhór a dhéanamh tú féin ar <account>leathanach do chuntais</account>:",
-    "rightsExport": "<b>Iad a fheiceáil agus a thabhairt leat:</b> sábhálann ‘Mo shonraí a íoslódáil’ gach rud i gcomhad amháin (JSON), agus d’oidis agus d’ábhair mar scarbhileoga (CSV).",
     "rightsCorrect": "<b>Iad a cheartú:</b> athraigh do shocruithe agus do thaifid am ar bith. Chun do sheoladh ríomhphoist a athrú, oscail an nasc a sheoltar chuig an seoladh nua; cuirtear an t-athrú in iúl don seanseoladh, má bhí sé deimhnithe, agus síntear amach gach gléas.",
     "rightsDelete": "<b>Iad a scriosadh:</b> baineann ‘Scrios mo chuntas’ do chuntas agus gach a shábháil tú láithreach, agus déanann ‘Scrios an triail’ an rud céanna do thriail. Bíonn na cóipeanna sna cúltacaí imithe laistigh de 30 lá.",
     "rightsSignOut": "<b>Síniú amach i ngach áit:</b> cuireann sé deireadh le seisiúin do chuntais ar gach gléas.",

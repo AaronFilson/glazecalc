@@ -103,7 +103,6 @@
     "keptInbound": "<b>Mail, du sender til Glazecalc:</b> 30 dage i Amazons lager, og i ejerens indbakke så længe det tager at svare dig. Ved en anmodning om dine data opbevares en kort note (hvornår den kom, hvad der blev bedt om, og hvad der blev gjort) i tre år.",
     "rightsHeading": "Dine rettigheder",
     "rightsIntro": "Du kan se, rette, tage dine data med og slette dem. Det meste kan du selv gøre på <account>kontosiden</account>:",
-    "rightsExport": "<b>Se dem, og tag dem med:</b> »Download mine data« gemmer alt i én fil (JSON) og opskrifterne og råvarerne som regneark (CSV).",
     "rightsCorrect": "<b>Ret dem:</b> Skift indstillinger og poster når som helst. E-mailadressen skiftes ved at åbne det link, der sendes til den nye adresse; den gamle adresse får, hvis den var bekræftet, besked om ændringen, og alle enheder logges ud.",
     "rightsDelete": "<b>Slet dem:</b> »Slet min konto« fjerner kontoen og alt, hvad du har gemt, med det samme, og »Kassér prøveperioden« gør det samme for en prøveperiode. Kopier i sikkerhedskopier er væk inden for 30 dage.",
     "rightsSignOut": "<b>Log ud overalt:</b> afslutter kontoens sessioner på alle enheder.",

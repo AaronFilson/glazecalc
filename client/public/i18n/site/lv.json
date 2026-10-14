@@ -103,7 +103,6 @@
     "keptInbound": "<b>E-pasta vēstules, ko sūtāt uz Glazecalc:</b> 30 dienas uzņēmuma Amazon krātuvē, bet īpašnieka pastkastītē tik ilgi, cik vajadzīgs, lai jums atbildētu. Par pieprasījumu saistībā ar jūsu datiem trīs gadus glabā īsu piezīmi (kad tas saņemts, kas tika lūgts un kas izdarīts).",
     "rightsHeading": "Jūsu tiesības",
     "rightsIntro": "Jūs varat savus datus apskatīt, labot, saņemt un dzēst. Lielāko daļu no tā varat izdarīt patstāvīgi savā <account>konta lapā</account>:",
-    "rightsExport": "<b>Apskatīt un paņemt līdzi:</b> sadaļā Manu datu lejupielāde visu var saglabāt vienā failā (JSON), bet receptes un izejvielas – izklājlapās (CSV).",
     "rightsCorrect": "<b>Labot:</b> iestatījumus un ierakstus varat mainīt jebkurā laikā. Lai mainītu e-pasta adresi, atveriet saiti, kas nosūtīta uz jauno adresi; vecajai adresei, ja tā bija apstiprināta, tiek paziņots par izmaiņām, un konts tiek izrakstīts visās ierīcēs.",
     "rightsDelete": "<b>Dzēst:</b> poga Dzēst manu kontu uzreiz dzēš jūsu kontu un visu saglabāto, un “Atmest izmēģinājumu” to pašu dara ar izmēģinājumu. Dati rezerves kopijās izzūd 30 dienu laikā.",
     "rightsSignOut": "<b>Izrakstīties visās ierīcēs:</b> beidz jūsu konta sesijas visās ierīcēs.",

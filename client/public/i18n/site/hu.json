@@ -103,7 +103,6 @@
     "keptInbound": "<b>A Glazecalc címeire küldött levelek:</b> 30 napig az Amazon tárhelyén, a tulajdonos postafiókjában pedig addig, amíg a válaszhoz szükséges. Az adataival kapcsolatos kérésről rövid feljegyzést (mikor érkezett, mit kértek és mi történt) három évig őrzünk meg.",
     "rightsHeading": "Az Ön jogai",
     "rightsIntro": "Megtekintheti, helyesbítheti, magával viheti és törölheti az adatait. A legtöbbet maga is megteheti a <account>fiókja oldalán</account>:",
-    "rightsExport": "<b>Megtekintés és magával vitel:</b> az Adataim letöltése rész mindent egyetlen fájlba (JSON) ment, receptjeit és nyersanyagait pedig táblázatként (CSV).",
     "rightsCorrect": "<b>Helyesbítés:</b> beállításait és bejegyzéseit bármikor módosíthatja. Az e-mail-címe módosításához nyissa meg az új címre küldött linket; a régi címet, ha meg volt erősítve, értesítjük a változásról, és minden eszközt kijelentkeztetünk.",
     "rightsDelete": "<b>Törlés:</b> a Fiókom törlése gomb azonnal eltávolítja a fiókját és mindent, amit elmentett, a Próbahasználat elvetése pedig ugyanezt teszi egy próbahasználattal. A biztonsági mentésekben lévő másolatok 30 napon belül eltűnnek.",
     "rightsSignOut": "<b>Kijelentkezés mindenhol:</b> minden eszközön lezárja a fiókja munkameneteit.",
