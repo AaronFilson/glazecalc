@@ -10,6 +10,8 @@ Progress, 2026-10-14 (branch asia-japan): **Phase A is merged** (the three groun
 
 **Phase C for Türkiye is done** (2026-10-14, branch asia-turkey, English only): the TR region (temperature, specific gravity, the EU library) with 112, UZEM 114, the dust regulation's silica formula, FFP mask classes, the Tebliğ's food-contact limits and three shops; see "Türkiye's region data" under Phase C. The silica formula became general (E = numerator / (factor × Q + offset), with the law's decimals) without changing Japan's data or output; the data hash and the snapshot test now cover Japan as well as the 31 earlier regions. The Turkish translation is Phase E, and its go-live waits on the owner's KVKK decision (decision 10).
 
+**Phase E for Turkish is translated, reviewed and made consistent** (2026-10-14, branch asia-turkey; `tr` is `live: false`): it stays off until the owner decides on Türkiye's data law, KVKK (decision 10). Thai, Vietnamese and Indonesian remain.
+
 Japan, could not verify (not shipped as fact):
 
 - each-item or average judging of ceramic ware (not stated in the 2025 text);

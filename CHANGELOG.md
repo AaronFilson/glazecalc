@@ -6,6 +6,9 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Added
 
+- **Turkish translated (not live: waits on the KVKK decision).** Türkiye is a region (112, UZEM,
+  silica limit, food-contact limits, shops), and Glazecalc is fully translated into Turkish, but
+  Turkish is not offered until the data-law decision is made.
 - **Where you work, and numbers your way** (the groundwork for other languages,
   [plan](docs/i18n-plan.md)). Settings gain:
   - **Where you work:** the EU countries, the US, UK, Australia and New Zealand. It sets the
