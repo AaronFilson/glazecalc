@@ -160,6 +160,22 @@ but the user must exist for the deploy to work. No data is touched at any point.
    /opt/glazecalc/backup.sh
    ```
 
+   If it asks for a password, a deploy of this release was already tried and stopped at the missing
+   parameter. `deploy.sh` updates the scripts before it reads the parameters, so `backup.sh` is
+   already the new one, which signs in as a user that does not exist yet. The nightly backup fails
+   the same way until step 5 is done. Press Ctrl+C and take this backup the old way, without
+   sign-in:
+
+   ```bash
+   cd /opt/glazecalc
+   bucket=$(aws ssm get-parameter --region us-west-2 --name /glazecalc/backup-bucket --query Parameter.Value --output text)
+   key="mongodump/glazecalc-$(date -u +%Y-%m-%dT%H%M%SZ)-before-auth.archive.gz"
+   docker compose -f compose.prod.yaml exec -T mongo mongodump --db glazecalc --archive --gzip --quiet > /var/tmp/before-auth.gz
+   aws s3 cp /var/tmp/before-auth.gz "s3://$bucket/$key" --region us-west-2 --only-show-errors && rm -f /var/tmp/before-auth.gz
+   ```
+
+   Run steps 3 and 4 in the same root shell (`sudo -i` first: a new shell does not keep `$pw`).
+
 2. **Make the password** (from a machine with the operator profile):
 
    ```bash
