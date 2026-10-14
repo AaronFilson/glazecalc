@@ -51,6 +51,11 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   the top of every page once closed. The numbers check now takes each language's decimal mark from
   CLDR, as both write 1.5 as English does. The back-translations found a cell both had misread ("a
   barium frit or strontium"); checked in every live language, the Portuguese now reads plainly too.
+- **SK cones (JIS R 8101)** as a third way to fire, in Settings beside Orton cones and temperature,
+  and in the firing guide: setting large cones, guide, firing and guard cones, Kyoto cones, and the
+  SK 022 to SK 20 chart with each figure marked nominal (JIS), its source and the date checked. SK and
+  Orton numbers are never turned into each other. The new guide section is in English until it is
+  translated.
 - **Groundwork for East and Southeast Asia**, before any of its languages:
   - **Numbers and dates** can be written as in Japan, Korea, mainland China and Taiwan (Simplified and
     Traditional Chinese each keep their script in any region), Hong Kong, Singapore, Malaysia,

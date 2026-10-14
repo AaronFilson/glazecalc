@@ -2,6 +2,15 @@
 
 Status: drafted 2026-10-13 from the Asia research report and its three notes, for the owner's review. It follows docs/i18n-plan.md ("After the EU") and reuses its machinery. Nothing here changes the EU approach.
 
+Progress, 2026-10-14 (branch asia-japan): **Phase A is merged** (the three groundwork branches: locales, checks, fonts). **Phase B items 1–4 and the data half of item 6 are done**: the third cone system, the guides' three-way version choice, the SK chart as data (lib/cones) and the English SK section of the firing guide. Item 5 (translating the new section) and the human check of Yuko Trading's table against the data file (item 6) remain. Phase C (the JP region) is next.
+
+Corrections from the Japan research (docs from research_notes/Asia/japan-verification-2026-10-14.md):
+
+- The cone seller is **有恒商事 (Yuko Trading)**, not ユーコー商事. Its table PDF prints no heating rate, and does not mention JIS itself; the standard's status is from the JSA listing.
+- **釉果 and 釉灰 are Chinese (Jingdezhen) materials, not Japanese**, so they are not Japanese material entries (Phase C item 6).
+- The SK large-cone table has **42 rows** (SK 022 to SK 20), not 39 as the brief said.
+- The owner's choices for Japan: Japanese only for now; JIS SK cones only (no Kyoto table); SK as Japan's default cones, Orton and temperature one tap away; Baumé as the density default; the 24-hour clock; system fonts first.
+
 ## The goal
 
 A potter in Japan, Korea, China, Taiwan, Hong Kong or Southeast Asia picks their region and gets their poison line, emergency number, silica limit, food-contact rules and, where they exist, shops, in English at first. Japan's potters can fire by SK (JIS R 8101) cones. Then Japanese, Chinese (Simplified and Traditional) and Korean readers get Glazecalc in their language, followed by Thai, Vietnamese, Indonesian and perhaps Turkish.
@@ -70,9 +79,11 @@ Tests:
 
    It is labelled "SK (JIS R 8101)", never "Seger".
 
-2. **Guides.** `forConeSystem` in `client/app/pages/guides/guide-document.ts` learns `:::sk` blocks. The two-way toggle in `guide-page.ts` and `byCones` in `recipe-page.ts:414` handle three systems.
-3. **The SK chart as data,** SK 022–20, large cones, from Yuko Trading's table, with the source, the JSA listing (reconfirmed 2023-10-20) and the check date. Every figure is labelled "nominal (JIS)". It carries the note: "The standard gives reference temperatures; at a potter's rate of about 100 °C/h, cones have been measured bending 40–70 °C cooler (Kyoto's institute, Kyoto cones). Set a witness cone and compare."
-4. **English firing guide** (`client/public/i18n/guides/firing/en.md`), an `:::sk` section:
+   _Done 2026-10-14._ A recipe's cone is an Orton number and is never turned into an SK number, so a potter who sets SK cones sees firing temperatures on the recipe page (`byCones` is true for Orton only).
+
+2. **Guides.** _Done 2026-10-14._ `forConeSystem` in `client/app/pages/guides/guide-document.ts` learns `:::sk` blocks. The two-way toggle in `guide-page.ts` and `byCones` in `recipe-page.ts:414` handle three systems.
+3. **The SK chart as data,** _done 2026-10-14: lib/cones/index.js, frozen in server/test/cones_tests.ts, and the table in the firing guide is checked against it,_ SK 022–20, large cones, from Yuko Trading's table, with the source, the JSA listing (reconfirmed 2023-10-20) and the check date. Every figure is labelled "nominal (JIS)". It carries the note: "The standard gives reference temperatures; at a potter's rate of about 100 °C/h, cones have been measured bending 40–70 °C cooler (Kyoto's institute, Kyoto cones). Set a witness cone and compare."
+4. **English firing guide** (`client/public/i18n/guides/firing/en.md`), an `:::sk` section, _done 2026-10-14 (`#sk-cones`):_
    - how large cones are set (sunk about 10 mm, leaned at 80°) and read;
    - guide, firing and guard cones;
    - the Kyoto note: Kyoto cones are no longer made and run about two numbers cooler, so Kyoto's institute substitutes Orton 10 for its SK 12;
@@ -125,7 +136,7 @@ Each country goes through the same steps, and none goes live with an unverified 
    - a scope note on Japan's poison centre (acute only).
 5. **Library mapping:** the US set for all Asian regions to start, with local names as aliases later. Add `JP` to `LIBRARY_REGIONS` in `client/app/pages/guides/local-equivalents.ts` only when Japanese materials exist.
 6. **Materials** (Japan first, separate from the safety data):
-   - 釉果 and 釉灰 from the 2010 paper;
+   - ~~釉果 and 釉灰 from the 2010 paper~~: these are Chinese (Jingdezhen) materials, not Japanese; leave them out of the Japanese set;
    - 天草陶石, 福島長石, 釜戸長石 and 三雲長石 as "typical, verify", with a substitution warning for the feldspathic rocks;
    - editable ash entries with a range note.
 

@@ -48,7 +48,7 @@ materials, colorants, firing logs and notes together in one private notebook.
   a batch list to tick off while weighing, with a running total for weighing into one bucket. One
   page on Letter or A4; weights in grams, or in pounds and ounces as set in your account.
 - **Your region and your numbers:** where you work sets numbers and dates as you write them
-  (12,5 or 12.5 typed either way), °C or °F, Orton cones or firing by temperature, the standard
+  (12,5 or 12.5 typed either way), °C or °F, Orton cones, SK cones (JIS R 8101) or firing by temperature, the standard
   materials sold there, and in the guides, for 31 countries: who to call in an emergency, shops that
   sell glaze materials, the closest materials sold there to those a recipe names, the workplace
   limit for silica dust and the food-contact limits for glazed ware (for 30: no official limit
