@@ -5,6 +5,7 @@
 // through second_step.checks; this file tests the two together.
 import type { PasskeyRequestOptionsResponse, SecondStepResponse } from '../../lib/mfa.js';
 import { clear, notify, WAIT_DAYS } from '../clear_mfa.ts';
+import * as limits from '../lib/rate_limit.ts';
 import * as site from '../lib/site.ts';
 import * as totp from '../lib/totp.ts';
 import User from '../models/user.ts';
@@ -251,6 +252,30 @@ describe('two-step sign-in end to end (real factors)', () => {
         const res = await passkeySignIn(authenticator.assert((await passkeyOptions()).challenge, twist));
         expect(res, JSON.stringify(twist)).to.have.status(401);
         expect(res.body.code).to.eql('passkey-failed');
+      }
+    });
+
+    it('asks for options with a limit of its own, not the sign-in limit', async () => {
+      // Pages ask on every load where passkey autofill works; that must not use up password sign-ins.
+      expect(limits.passkeyOptions).to.not.equal(limits.signIn);
+      const reset = () =>
+        Promise.all([limits.passkeyOptions.resetKey('127.0.0.1'), limits.signIn.resetKey('127.0.0.1')]);
+      await reset();
+      process.env.RATE_LIMITS = 'on';
+      try {
+        // More than signIn's 20 per 15 minutes.
+        for (let i = 0; i < 25; i++) expect(await api().post('/signin/passkey/options')).to.have.status(200);
+        const alice = await account();
+        const res = await api().get('/signin').set('Authorization', basic(alice.email, alice.password));
+        expect(res).to.have.status(200);
+        // It still has a limit: 100 per 15 minutes.
+        for (let i = 25; i < 100; i++) expect(await api().post('/signin/passkey/options')).to.have.status(200);
+        const limited = await api().post('/signin/passkey/options');
+        expect(limited).to.have.status(429);
+        expect(limited.body.code).to.eql('too-many-sign-ins');
+      } finally {
+        process.env.RATE_LIMITS = 'off';
+        await reset();
       }
     });
   });

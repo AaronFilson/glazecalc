@@ -18,6 +18,13 @@ const limiter = (minutes: number, limit: number, code: MessageCode, keyGenerator
   });
 
 export const signIn = limiter(15, 20, 'too-many-sign-ins');
+/**
+ * Passkey-first sign-in options (POST /api/signin/passkey/options): the page
+ * asks for them on every sign-in page load where passkey autofill works, and
+ * they start no session (the challenge expires unused), so they have a
+ * lighter limit of their own rather than counting against signIn.
+ */
+export const passkeyOptions = limiter(15, 100, 'too-many-sign-ins');
 export const signUp = limiter(60, 10, 'too-many-sign-ups');
 export const guest = limiter(60, 10, 'too-many-trials');
 export const forgotPassword = limiter(15, 5, 'too-many-resets');

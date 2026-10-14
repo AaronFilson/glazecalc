@@ -138,7 +138,7 @@ Everything that differs between production and staging comes from the environmen
    - **Passkey-first sign-in (decision 1, item 17):**
      - `POST /api/signin/passkey/options` → `{ options }`: `webauthn.authenticationOptions(null, 'required')`, no `allowCredentials`; the challenge is kept as an `AuthChallenge` of kind `passkey-signin`, 5 minutes.
      - `POST /api/signin/passkey { response }` (with `X-Keep-Signed-In` like the password): takes the `passkey-signin` challenge the response answers (once), finds the account with `webauthn.accountOf(response)` (credential id and user handle), checks it with `webauthn.verifyAuthentication(user, response, challenge, true)`, merges a trial on this browser and calls `session.start`. Same reply as a sign-in. Unknown passkey: 401 `passkey-unknown`; failed check: 401 `passkey-failed`. Passkey autofill (conditional mediation) uses the same two routes.
-     - Both routes use `limits.signIn`.
+     - `POST /api/signin/passkey` uses `limits.signIn`. The options route has a lighter limit of its own, `limits.passkeyOptions` (100 per 15 minutes per address): the page asks for options on every sign-in page load where autofill works, and they start no session (an unused challenge expires with its TTL).
    - **Limits:**
      - `limits.secondStep`: 20 per 15 minutes per address.
      - `limits.secondStepAccount`: 10 per 15 minutes per account, keyed `'mfa:' + req.mfaUserId` after the pending record is loaded.

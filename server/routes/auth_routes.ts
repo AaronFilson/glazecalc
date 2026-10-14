@@ -168,10 +168,13 @@ authRouter.post(
 
 // Passkey-first sign-in (decision 1, item 17): any discoverable passkey for
 // this site, with user verification, counts as both steps. Passkey autofill
-// uses the same two routes.
+// uses the same two routes. The options have a lighter limit of their own
+// (limits.passkeyOptions): the page asks for them on every sign-in page load
+// where autofill works, they start no session, and an unused challenge expires.
+// The sign-in itself counts against limits.signIn.
 const PASSKEY_SIGNIN_MINUTES = 5;
 
-authRouter.post('/signin/passkey/options', limits.signIn, async (req, res) => {
+authRouter.post('/signin/passkey/options', limits.passkeyOptions, async (req, res) => {
   const options = await secondStep.checks.authenticationOptions(null, 'required');
   await AuthChallenge.create({
     kind: 'passkey-signin',
