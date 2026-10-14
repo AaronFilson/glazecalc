@@ -13,6 +13,7 @@
 //    renders in one thread would read each other's language.
 // 3. Writes dist/glazecalc/prerendered/<language>/<page>.html, outside browser/
 //    so that express.static never sends a file without the server's head and nonce.
+//    Each page's head asks early for the font files its text is set in (fontPreloads).
 //
 // The build fails if a page logs an error, is the not-found page, has little text,
 // or has a script the browser build's policy does not know.
@@ -57,6 +58,61 @@ export const inlineScripts = (html) =>
     .filter(([, attributes]) => !/\bsrc=/.test(attributes) && !/\btype="application\/(ld\+)?json"/.test(attributes))
     .map(([, , body]) => body);
 
+/** The font families the text is set in (styles.scss, --gc-font), in the order a browser tries them. */
+export const TEXT_FONTS = ['Noto Serif Sub', 'Lora Variable', 'Noto Serif Fill'];
+
+/** A font file is preloaded when the opening of the page, its first this many characters, is set in it. */
+export const PRELOAD_OPENING = 2000;
+
+/** The upright faces of the text's fonts in a stylesheet: each file and the characters it has. */
+export function fontFaces(css) {
+  const faces = [];
+  for (const [, rule] of css.matchAll(/@font-face\s*\{([^}]*)\}/g)) {
+    const family = /font-family:\s*["']?([^;"']+)/.exec(rule)?.[1]?.trim();
+    const url = /src:\s*url\(["']?([^)"']+\.woff2)["']?\)/.exec(rule)?.[1];
+    if (!family || !url || !TEXT_FONTS.includes(family) || /font-style:\s*italic/.test(rule)) continue;
+    const range = /unicode-range:\s*([^;]+)/.exec(rule)?.[1] ?? 'U+0-10FFFF';
+    const ranges = range.split(',').map((part) => {
+      const [from, to] = part.trim().replace(/^U\+/i, '').split('-');
+      return [parseInt(from, 16), parseInt(to ?? from, 16)];
+    });
+    faces.push({ family, url: url.replace(/^\.\//, ''), ranges });
+  }
+  return faces;
+}
+
+/**
+ * The preload links for the font files a page's text needs, for its head: the browser would otherwise find
+ * them only once the stylesheet is in and the page laid out, and draw the text in a fallback font until they
+ * came. The footer's list of languages is set in the device's own font, so it is left out.
+ */
+export function fontPreloads(html, faces) {
+  const text = textOf(html.replace(/<footer\b[\s\S]*?<\/footer>/g, ' '));
+  // A file for signs further down is left to load when they are drawn: a guide's sections are laid out
+  // only as they come near the window.
+  const files = new Set();
+  for (const char of [...text].slice(0, PRELOAD_OPENING)) {
+    const code = char.codePointAt(0);
+    for (const family of TEXT_FONTS) {
+      const face = faces.find(
+        (face) => face.family === family && face.ranges.some(([from, to]) => code >= from && code <= to)
+      );
+      if (face) {
+        files.add(face.url);
+        break;
+      }
+    }
+  }
+  return [...files]
+    .sort()
+    .map((url) => `<link rel="preload" href="${url}" as="font" type="font/woff2" crossorigin="anonymous">`)
+    .join('');
+}
+
+/** A rendered page with its font preloads ahead of the stylesheet. */
+export const withFontPreloads = (html, faces) =>
+  html.replace(/<link rel="stylesheet"/, (link) => fontPreloads(html, faces) + link);
+
 /** The words on the page: the root's text without tags, scripts and styles. */
 export const textOf = (html) => {
   const root = /<gc-root\b[\s\S]*<\/gc-root>/.exec(html)?.[0] ?? '';
@@ -91,7 +147,7 @@ export function problemsWith(html, start, code, minText = MIN_TEXT) {
  * In a worker: renders its pages one after another, writes the good ones, and
  * reports each page's size or its problems.
  */
-async function renderAll({ jobs, start }) {
+async function renderAll({ jobs, start, faces }) {
   const { default: bootstrap, renderApplication, READ_I18N_FILE } = await import(pathToFileURL(BUNDLE).href);
   // The translations and guides, read from the built files the server also sends.
   const readFileUnder = async (file) => {
@@ -109,11 +165,12 @@ async function renderAll({ jobs, start }) {
   for (const { code, page, url } of jobs) {
     logged = [];
     try {
-      const html = await renderApplication(bootstrap, {
+      const rendered = await renderApplication(bootstrap, {
         document: start,
         url,
         platformProviders: [{ provide: READ_I18N_FILE, useValue: readFileUnder }]
       });
+      const html = withFontPreloads(rendered, faces);
       const problems = [...problemsWith(html, start, code), ...logged.map((line) => 'logged: ' + line)];
       if (problems.length) {
         results.push({ url, problems });
@@ -154,14 +211,18 @@ export async function prerender({ build = true, codes = languages.LIVE_LANGUAGES
   const started = Date.now();
   if (build) buildBundle();
   if (!existsSync(BUNDLE)) throw new Error(`${BUNDLE} is missing.`);
-  const start = startDocument(await readFile(path.join(BROWSER, 'index.html'), 'utf8'));
+  const indexHtml = await readFile(path.join(BROWSER, 'index.html'), 'utf8');
+  const start = startDocument(indexHtml);
+  const stylesheet = /<link rel="stylesheet" href="([^"]+)"/.exec(indexHtml)?.[1];
+  const faces = stylesheet ? fontFaces(await readFile(path.join(BROWSER, stylesheet), 'utf8')) : [];
+  if (!faces.length) throw new Error("The stylesheet's text fonts were not found.");
   await rm(PRERENDERED, { recursive: true, force: true });
 
   const jobs = codes.flatMap((code) => only.map((page) => ({ code, page, url: urlFor(code, page) })));
   // Dealt out in turn, so each worker has a mix of the long guides and the short pages.
   const count = Math.max(1, Math.min(WORKERS, os.availableParallelism(), jobs.length));
   const shares = Array.from({ length: count }, (_, n) => jobs.filter((_job, i) => i % count === n));
-  const results = (await Promise.all(shares.map((share) => inWorker({ jobs: share, start })))).flat();
+  const results = (await Promise.all(shares.map((share) => inWorker({ jobs: share, start, faces })))).flat();
 
   const failures = results
     .filter((result) => result.problems)

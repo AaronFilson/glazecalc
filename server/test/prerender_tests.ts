@@ -1,7 +1,16 @@
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
-import { inlineScripts, problemsWith, startDocument, textOf, urlFor } from '../../scripts/prerender.mjs';
+import {
+  fontFaces,
+  fontPreloads,
+  inlineScripts,
+  problemsWith,
+  startDocument,
+  textOf,
+  urlFor,
+  withFontPreloads
+} from '../../scripts/prerender.mjs';
 import { loadPrerendered } from '../lib/prerendered.ts';
 import { expect } from './support/app.ts';
 
@@ -62,6 +71,54 @@ describe('prerender checks', () => {
     const html = page('<p>One</p><style>.x{}</style><script>var two;</script><p>three</p>');
     expect(textOf(html)).to.equal('One three');
     expect(inlineScripts(html)).to.eql(['window.theme = 1;', 'var two;']);
+  });
+});
+
+describe('font preloads', () => {
+  // As the build writes the stylesheet: Lora's files by script, Noto Serif's for what Lora lacks.
+  const CSS = [
+    '@font-face{font-family:Lora Variable;font-style:normal;src:url("./media/lora-cyrillic-1.woff2") format("woff2");unicode-range:U+0400-045F}',
+    '@font-face{font-family:Lora Variable;font-style:normal;src:url("./media/lora-latin-ext-2.woff2") format("woff2");unicode-range:U+0100-02BA}',
+    '@font-face{font-family:Lora Variable;font-style:normal;src:url("./media/lora-latin-3.woff2") format("woff2");unicode-range:U+0000-00FF,U+2000-206F}',
+    '@font-face{font-family:Lora Variable;font-style:italic;src:url("./media/lora-latin-italic-4.woff2") format("woff2");unicode-range:U+0000-00FF}',
+    "@font-face{font-family:'Noto Serif Sub';font-style:normal;src:url('./media/noto-math-5.woff2') format('woff2');unicode-range:U+2070-2071,U+2074-208E}",
+    '@font-face{font-family:Bootstrap Icons;src:url("./media/icons-6.woff2")}'
+  ].join('');
+  const FACES = fontFaces(CSS);
+  const files = (html: string) => [...fontPreloads(html, FACES).matchAll(/href="([^"]+)"/g)].map((match) => match[1]);
+
+  it('reads the upright faces of the text fonts, with their files and ranges', () => {
+    expect(FACES.map((face) => face.url)).to.eql([
+      'media/lora-cyrillic-1.woff2',
+      'media/lora-latin-ext-2.woff2',
+      'media/lora-latin-3.woff2',
+      'media/noto-math-5.woff2'
+    ]);
+    expect(FACES[2]!.ranges).to.eql([
+      [0, 255],
+      [0x2000, 0x206f]
+    ]);
+  });
+
+  it('preloads the files the opening of the page is set in, and not the footer', () => {
+    expect(files(page('<h1>Brennen</h1><p>Kegel im Ofen</p>'))).to.eql(['media/lora-latin-3.woff2']);
+    expect(files(page('<h1>Пещ</h1><p>Конуси: SiO₂</p>'))).to.eql([
+      'media/lora-cyrillic-1.woff2',
+      'media/lora-latin-3.woff2',
+      'media/noto-math-5.woff2'
+    ]);
+    expect(files(page('<p>Kegel</p><footer><a lang="bg">Български</a><a lang="cs">Čeština</a></footer>'))).to.eql([
+      'media/lora-latin-3.woff2'
+    ]);
+    // A sign far down the page loads when it is drawn.
+    expect(files(page(`<p>${'Kegel '.repeat(400)} SiO₂</p>`))).to.eql(['media/lora-latin-3.woff2']);
+  });
+
+  it('puts the preloads ahead of the stylesheet, as fonts fetched without credentials', () => {
+    const html = page('<p>Kegel</p>').replace('</head>', '<link rel="stylesheet" href="styles.css"></head>');
+    expect(withFontPreloads(html, FACES)).to.include(
+      '<link rel="preload" href="media/lora-latin-3.woff2" as="font" type="font/woff2" crossorigin="anonymous"><link rel="stylesheet"'
+    );
   });
 });
 
