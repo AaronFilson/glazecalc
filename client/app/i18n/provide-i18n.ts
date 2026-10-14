@@ -1,10 +1,14 @@
-import { APP_BASE_HREF } from '@angular/common';
+import { APP_BASE_HREF, DOCUMENT } from '@angular/common';
 import { EnvironmentProviders, Provider, inject, isDevMode, provideAppInitializer } from '@angular/core';
+import { Meta } from '@angular/platform-browser';
 import { ResolveFn, TitleStrategy } from '@angular/router';
 import {
+  TRANSLOCO_CONFIG,
   TRANSLOCO_SCOPE,
+  TranslocoConfig,
   TranslocoScope,
   TranslocoService,
+  defaultConfig,
   provideTransloco,
   translate,
   provideTranslocoMissingHandler,
@@ -24,30 +28,40 @@ import { TranslatedTitles } from './titles';
  * The language is fixed for the life of the page: changing it opens the same
  * page under the other language's path, so the router's base is that path and
  * every link in the app stays as it is written (/recipe is /de/recipe in German).
+ * The language is read from the document's address, which is the browser's in
+ * the browser and the page being rendered at build time (scripts/prerender.mjs),
+ * unless it is given.
  */
-export function provideI18n(language = languageOfPath(location.pathname)): Array<Provider | EnvironmentProviders> {
+export function provideI18n(language?: string): Array<Provider | EnvironmentProviders> {
+  const pageLanguage = () => language ?? languageOfPath(inject(DOCUMENT).location.pathname);
   return [
-    provideTransloco({
-      config: {
+    provideTransloco({ config: {}, loader: FileLoader }),
+    // After provideTransloco, whose config this replaces: the language is only known once the app is injecting.
+    {
+      provide: TRANSLOCO_CONFIG,
+      useFactory: (): TranslocoConfig => ({
+        ...defaultConfig,
         availableLangs: [...LANGUAGE_CODES],
-        defaultLang: language,
+        defaultLang: inject(PAGE_LANGUAGE),
         // A message not yet translated shows the English.
         fallbackLang: 'en',
-        missingHandler: { useFallbackTranslation: true, logMissingKey: false },
+        missingHandler: { ...defaultConfig.missingHandler, useFallbackTranslation: true, logMissingKey: false },
         reRenderOnLangChange: false,
         prodMode: !isDevMode()
-      },
-      loader: FileLoader
-    }),
+      })
+    },
     // After provideTransloco, which provides its own defaults.
     provideTranslocoTranspiler(IcuTranspiler),
     provideTranslocoMissingHandler(MissingKey),
-    { provide: PAGE_LANGUAGE, useValue: language },
-    { provide: APP_BASE_HREF, useValue: baseHrefFor(language) },
+    { provide: PAGE_LANGUAGE, useFactory: pageLanguage },
+    { provide: APP_BASE_HREF, useFactory: () => baseHrefFor(inject(PAGE_LANGUAGE)) },
     { provide: TitleStrategy, useExisting: TranslatedTitles },
     // The app's own messages (the menu, the shared parts) before the first page is drawn.
     provideAppInitializer(() => {
       const transloco = inject(TranslocoService);
+      const language = inject(PAGE_LANGUAGE);
+      const document = inject(DOCUMENT);
+      const meta = inject(Meta);
       transloco.setActiveLang(language);
       const root = document.documentElement;
       root.lang = language;
@@ -60,10 +74,12 @@ export function provideI18n(language = languageOfPath(location.pathname)): Array
         // The description search results show, and a link preview's text, as the server writes them too
         // (server/lib/pages.ts).
         const description = translate('meta.description');
-        for (const selector of ['meta[name="description"]', 'meta[property="og:description"]']) {
-          document.querySelector(selector)?.setAttribute('content', description);
-        }
-        document.querySelector('meta[property="og:image:alt"]')?.setAttribute('content', translate('meta.imageAlt'));
+        const set = (selector: string, content: string) => {
+          if (meta.getTag(selector)) meta.updateTag({ content }, selector);
+        };
+        set('name="description"', description);
+        set('property="og:description"', description);
+        set('property="og:image:alt"', translate('meta.imageAlt'));
       });
     })
   ];

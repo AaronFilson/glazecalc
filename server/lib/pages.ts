@@ -6,21 +6,9 @@
 // and preview text in the language, and noindex for a language not offered yet.
 import languages from '../../lib/regions/languages.js';
 import type { Language } from '../../lib/regions/languages.js';
+import { PUBLIC_PAGES } from '../../lib/pages.js';
 
-/** The public pages, for the sitemap: the ones worth finding in a search. */
-export const PUBLIC_PAGES = [
-  '/',
-  '/guides',
-  '/guides/glazing-basics',
-  '/guides/making-a-glaze',
-  '/guides/safe-mixing',
-  '/guides/home-safety',
-  '/guides/firing',
-  '/advice',
-  '/about',
-  '/privacy',
-  '/signup'
-];
+export { PUBLIC_PAGES };
 
 /**
  * Every page of the app (client/app/app.routes.ts): the public ones, and those
