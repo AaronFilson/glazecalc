@@ -67,6 +67,20 @@ const addPasskey = async (who: Account) => {
   return { authenticator, codes: added.body.recoveryCodes as string[] };
 };
 
+/** Adds a passkey to an account that already has a factor, with a proof. */
+const addPasskeyWith = async (who: Account, proof: object) => {
+  const options = await mfa(who, 'post', '/passkeys/options', { password: who.password, ...proof });
+  expect(options, JSON.stringify(options.body)).to.have.status(200);
+  const authenticator = soft();
+  const added = await mfa(who, 'post', '/passkeys', {
+    response: authenticator.register(options.body.options),
+    name: 'Laptop'
+  });
+  expect(added, JSON.stringify(added.body)).to.have.status(200);
+  follow(who, added);
+  return { authenticator };
+};
+
 /**
  * A code the account will take now. Enrolling took this step's code, and a
  * code is taken once per 30-second step, so rather than wait, the test moves
@@ -331,6 +345,74 @@ describe('two-step sign-in end to end (real factors)', () => {
       expect(await clearRequestedAt(alice)).to.eql(undefined);
       // Turned on again, with no notice since: --clear must not run at once.
       expect((await clear(alice.email)).ok).to.eql(false);
+    });
+  });
+
+  // The account page (stream C) signs out on any 401 (session-expired.interceptor.ts),
+  // so a wrong answer on /api/mfa must be a 400, never a 401.
+  describe('what the account page relies on', () => {
+    it('answers a wrong password or a wrong, missing or empty factor with 400 on every change', async () => {
+      const alice = await account();
+      const { secret } = await enrolTotp(alice);
+      const { authenticator } = await addPasskeyWith(alice, { code: await codeNow(alice, secret) });
+      const confirmChallenge = async () => (await mfa(alice, 'post', '/confirm/options')).body.options.challenge;
+      const wrongCode = String((Number(totp.codeAt(secret, totp.stepAt())) + 1) % 1000000).padStart(6, '0');
+      const routes: Array<['post' | 'delete', string]> = [
+        ['post', '/recovery-codes'],
+        ['post', '/passkeys/options'],
+        ['delete', '/totp']
+      ];
+      for (const [method, path] of routes) {
+        const cases: Array<[object, string]> = [
+          [{}, 'current-password-needed'],
+          [{ password: 'wrong-password', code: wrongCode }, 'current-password-wrong'],
+          [{ password: alice.password }, 'factor-needed'],
+          [{ password: alice.password, code: '' }, 'code-needed'],
+          [{ password: alice.password, code: wrongCode }, 'code-wrong'],
+          [{ password: alice.password, recoveryCode: 'zzzzz-zzzzz' }, 'recovery-code-wrong'],
+          [
+            {
+              password: alice.password,
+              passkey: authenticator.assert(await confirmChallenge(), { badSignature: true })
+            },
+            'passkey-failed'
+          ]
+        ];
+        for (const [body, code] of cases) {
+          const res = await api()
+            [method]('/mfa' + path)
+            .set('Authorization', 'Bearer ' + alice.token)
+            .send(body);
+          expect(res, method + ' ' + path + ' ' + code).to.have.status(400);
+          expect(res.body.code, method + ' ' + path).to.eql(code);
+          expect(res.body.msg).to.be.a('string');
+        }
+      }
+      // The second half of a setup, too: a passkey answering a challenge never given.
+      const never = { challenge: 'never-given', user: { id: 'AAAA' } } as never;
+      const wrongSetup = await mfa(alice, 'post', '/passkeys', { response: soft().register(never), name: 'Phone' });
+      expect(wrongSetup.body.code).to.eql('mfa-start-again');
+      expect(wrongSetup).to.have.status(400);
+      expect((await verify(alice.token)).status).to.eql(200);
+    });
+
+    it('sums up the account with emailConfirmed, and success replies carry code, msg and the new codes', async () => {
+      const alice = await account();
+      expect((await mfa(alice, 'get', '')).body).to.include({ on: false, emailConfirmed: true });
+      const started = await mfa(alice, 'post', '/totp/start', { password: alice.password });
+      const secret = totp.fromBase32(started.body.secret);
+      const added = await mfa(alice, 'post', '/totp', { code: totp.codeAt(secret, totp.stepAt()) });
+      expect(added.body).to.include({ code: 'totp-added' });
+      expect(added.body.msg).to.be.a('string');
+      expect(added.body.recoveryCodes).to.have.length(10);
+      follow(alice, added);
+      const made = await mfa(alice, 'post', '/recovery-codes', {
+        password: alice.password,
+        code: await codeNow(alice, secret)
+      });
+      expect(made.body).to.include({ code: 'recovery-codes-made' });
+      expect(made.body.msg).to.be.a('string');
+      expect(made.body.recoveryCodes).to.have.length(10);
     });
   });
 });
