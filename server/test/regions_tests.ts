@@ -291,6 +291,106 @@ describe('Japan', () => {
   });
 });
 
+// Türkiye (docs/asia-plan.md), from research_notes/Asia/turkey-verification-2026-10-14.md.
+describe('Türkiye', () => {
+  const yearAgo = Date.now() - 366 * 24 * 60 * 60 * 1000;
+
+  it('fires by temperature, reads density as specific gravity, and lists the EU library', () => {
+    expect(regions.regionFor('TR')).to.eql({
+      code: 'TR',
+      name: 'Türkiye',
+      languages: ['tr'],
+      eu: false,
+      temperature: 'C',
+      cones: 'temperature',
+      density: 'sg',
+      library: 'EU'
+    });
+    expect(regions.formatLocaleFor('en', 'TR', 'auto')).to.equal('en-TR');
+  });
+
+  it('gives 112 for every emergency service and UZEM on 114, around the clock, with no claim on cost', () => {
+    const shown = safety.shownFor('TR')!;
+    expect(shown.emergency).to.have.length(1);
+    expect(shown.emergency[0]).to.include({ number: '112', tel: '112', source: 'https://www.112.gov.tr/hakkimizda' });
+    expect(shown.emergency[0]!.note).to.equal('One number for ambulance, fire, police, gendarmerie and coast guard.');
+    expect(shown.poison).to.have.length(1);
+    const uzem = shown.poison[0]!;
+    expect(uzem).to.include({ number: '114', tel: '114', who: 'public', hours: '24 hours, every day' });
+    expect(uzem.name).to.contain('UZEM');
+    // Neither the cost nor a limit on who may call was read on an official page.
+    expect(uzem.fee).to.equal(undefined);
+    expect(uzem.note).to.equal(undefined);
+    expect(JSON.stringify(safety.SAFETY['TR'])).not.to.match(/free|ücretsiz/i);
+    expect(shown.animals).to.eql([]);
+    expect(shown.advice).to.eql([]);
+    expect(safety.ministryFor('TR')).to.include({ name: 'Sağlık Bakanlığı', url: 'https://www.saglik.gov.tr/' });
+  });
+
+  it("gives the binding limit as the law's formula, 10 / (Q + 2), with half for cristobalite", () => {
+    const facts = workplace.workplaceFor('TR')!;
+    const silica = facts.silica!;
+    expect(silica).to.include({ kind: 'binding', status: 'verified', checked: '2026-10-14' });
+    expect(silica.law).to.contain('Tozla Mücadele Yönetmeliği');
+    expect(silica.source).to.equal('https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=18989&MevzuatTur=7&MevzuatTertip=5');
+    expect(silica.formula).to.eql({ numerator: 10, factor: 1, offset: 2, places: 0 });
+    // E = 10 / (Q + 2) at Q = 100 is the value shown for quartz, to three decimals; cristobalite's is half.
+    const { numerator, factor, offset } = silica.formula!;
+    const atHundred = numerator / (factor * 100 + offset!);
+    expect(atHundred).to.be.closeTo(0.098, 0.0005);
+    expect(silica.quartz).to.be.closeTo(atHundred, 0.0005);
+    expect(silica.cristobalite).to.be.closeTo(atHundred / 2, 0.0005);
+    expect(silica.recommended).to.equal(undefined);
+    expect(silica.note).to.contain('2017/2398');
+    expect(facts.eu).to.equal(false);
+    expect(facts.agency).to.include({ abbr: 'ÇSGB İSGGM', url: 'https://csgb.gov.tr/' });
+    expect(facts.agency!.silicaUrl).to.equal(undefined);
+    // The FFP classes were read only in a secondary source.
+    expect(facts.respirators).to.include({ status: 'secondary' });
+    expect(facts.respirators!.everyday).to.eql(['FFP2']);
+    expect(facts.respirators!.higher).to.eql(['FFP3']);
+    expect(Date.parse(facts.respirators!.checked)).to.be.above(yearAgo);
+  });
+
+  it("keeps Japan's formula as it was: offset 1 and one decimal where not given", () => {
+    const formula = workplace.WORKPLACE['JP']!.silica!.formula!;
+    expect(formula).to.eql({ numerator: 3.0, factor: 1.19 });
+  });
+
+  it("gives the Tebliğ's limits, the EU directive's figures, and its rule for three samples", () => {
+    const { rules, own, eu } = food.foodRulesFor('TR')!;
+    expect([own, eu]).to.eql([true, false]);
+    expect(rules.law).to.contain('2012/30');
+    expect(rules.limits).to.eql(food.FOOD['EU']!.limits);
+    expect(rules.atMost).to.equal(undefined);
+    expect(rules.note).to.match(/^At least three samples/);
+  });
+
+  it('names three shops checked on their own sites, and no town or pack size not read there', () => {
+    const { shops, nearby } = suppliers.shopsFor('TR')!;
+    expect(shops.map((shop) => shop.name)).to.eql(['Pega Seramik', 'Tecnodieci Shopping', 'Seramiksir']);
+    expect(shops.map((shop) => shop.name)).not.to.include('Duygu Seramik');
+    expect(shops[0]!.packs).to.eql({ unit: 'kilogram', sizes: [0.25, 0.5, 1] });
+    expect(shops[1]!.packs).to.equal(undefined);
+    expect(shops[2]!.place).to.equal(undefined);
+    expect(shops[2]!.packs).to.eql({ unit: 'kilogram', sizes: [0.1, 0.5, 1] });
+    for (const shop of shops) expect(shop.checked).to.equal('2026-10-14');
+    expect(nearby).to.eql([]);
+  });
+
+  // "Seger piramidi" is what Turkish shops call Orton cones: no data here may say Seger.
+  it('never names cones in its safety data, so never as Seger', () => {
+    expect(regions.regionFor('TR')!.name).not.to.match(/seger/i);
+    const text = JSON.stringify([
+      safety.SAFETY['TR'],
+      workplace.WORKPLACE['TR'],
+      food.FOOD['TR'],
+      suppliers.SUPPLIERS['TR']
+    ]);
+    expect(text).not.to.match(/seger|orton|cone/i);
+  });
+});
+
 // Adding a region, and the fields it needed, leaves every earlier region's data as it was:
 // the regions before Japan, then Japan too, before Turkey.
 describe('regions before Turkey', () => {
