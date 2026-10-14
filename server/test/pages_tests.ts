@@ -115,6 +115,23 @@ describe('pages in each language', () => {
     }
   });
 
+  it("names each page's og:locale and the other languages offered as alternates", () => {
+    const html = pageHtml(HTML, '/pt-PT/guides', SITE, {}, ['en', 'de', 'pt-PT', 'el']);
+    expect(html).to.include('<meta property="og:locale" content="pt_PT" />');
+    for (const other of ['en_US', 'de_DE', 'el_GR']) {
+      expect(html).to.include(`<meta property="og:locale:alternate" content="${other}" />`);
+    }
+    expect(html).to.not.include('og:locale:alternate" content="pt_PT"');
+    const alone = pageHtml(HTML, '/guides', SITE, {}, ['en']);
+    expect(alone).to.include('og:locale" content="en_US"');
+    expect(alone).to.not.include('og:locale:alternate');
+  });
+
+  it('gives a page not offered yet, and an address that is no page, no og:locale', () => {
+    expect(pageHtml(HTML, '/ar/guides', SITE, {}, ['en', 'de'])).to.not.include('og:locale');
+    expect(pageHtml(HTML, '/nowhere', SITE, {}, ['en', 'de'])).to.not.include('og:locale');
+  });
+
   it('gives an address that is no page of the app no canonical address and no other languages', () => {
     for (const address of ['/no-such-page', '/xx/recipe', '/DE/guides', '/pt/guides', '/de/no-such-page', '/guides/']) {
       const html = pageHtml(HTML, address, SITE, {}, ['en', 'de']);
