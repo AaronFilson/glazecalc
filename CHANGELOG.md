@@ -6,9 +6,14 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Added
 
-- **Turkish translated (not live: waits on the KVKK decision).** Türkiye is a region (112, UZEM,
-  silica limit, food-contact limits, shops), and Glazecalc is fully translated into Turkish, but
-  Turkish is not offered until the data-law decision is made.
+- **In Turkish.** Türkiye is a region (112, UZEM, silica limit, food-contact limits, shops), and
+  Glazecalc is fully translated into Turkish, the password emails included.
+- **Where your account is kept, and your choice.** The sign-up page tells everyone outside the US
+  (and anyone whose region is not known) that Glazecalc is a free, open-source project, that
+  accounts are kept on servers in the United States, that the guides and a trial need no account,
+  that anyone can run their own copy, and that whether to make an account here is their own
+  decision, for which the project accepts no responsibility. A new section of the privacy page says
+  the same at more length, for everyone. In English, Turkish and Japanese so far.
 - **Where you work, and numbers your way** (the groundwork for other languages,
   [plan](docs/i18n-plan.md)). Settings gain:
   - **Where you work:** the EU countries, the US, UK, Australia and New Zealand. It sets the
