@@ -3,6 +3,7 @@ import { Injectable, computed, inject, signal } from '@angular/core';
 import { firstValueFrom } from 'rxjs';
 import { codedMessage } from '../i18n/coded';
 import { API_BASE } from './api-base';
+import { FIRST_RENDER } from './first-render';
 
 const SESSION_KEY = 'session';
 const TRIAL_KEY = 'trial';
@@ -65,7 +66,9 @@ const said = (res: MessageResponse): string =>
 export class AuthService {
   private readonly http = inject(HttpClient);
   private readonly apiBase = inject(API_BASE);
+  private readonly firstRender = inject(FIRST_RENDER);
 
+  // The note is read at once, so guards and the API calls know; only what the page shows waits (shown*).
   private readonly session = signal<SessionKind | null>(readStoredSession());
   private checked: Promise<void> | null = null;
   private readonly onEnd: Array<() => void> = [];
@@ -88,6 +91,15 @@ export class AuthService {
   readonly lostRecipe = signal<string | null>(null);
   /** What to call the user: their email, or their trial's name. */
   readonly displayName = computed(() => this.email() ?? this.trial()?.name ?? null);
+
+  // What a page draws. The first render is the prerendered one, for a visitor with no session
+  // (core/first-render.ts); guards and requests use hasSession, trial and displayName as they are.
+  /** Whether to draw the page for a signed-in user. */
+  readonly shownSession = computed(() => !this.firstRender() && this.hasSession());
+  /** The trial to draw a bar for. */
+  readonly shownTrial = computed(() => (this.firstRender() ? null : this.trial()));
+  /** The name to draw in the menu. */
+  readonly shownName = computed(() => (this.firstRender() ? null : this.displayName()));
 
   constructor() {
     const trial = this.trial();

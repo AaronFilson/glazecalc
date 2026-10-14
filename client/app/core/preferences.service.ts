@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Injectable, WritableSignal, inject, signal } from '@angular/core';
+import { Injectable, Signal, WritableSignal, computed, inject, signal } from '@angular/core';
 import { firstValueFrom } from 'rxjs';
 import { FORMAT_LOCALES, REGION_CODES } from '../../../lib/regions';
 import { LIVE_LANGUAGES } from '../../../lib/regions/languages';
@@ -7,6 +7,7 @@ import { GramPrecision, WeightUnit } from '../shared/weights';
 import type { Palette, ThemeMode } from './theme';
 import { API_BASE } from './api-base';
 import { AuthService } from './auth.service';
+import { FIRST_RENDER } from './first-render';
 
 export interface Preferences {
   weightUnit: WeightUnit;
@@ -112,6 +113,7 @@ export class PreferencesService {
   private readonly http = inject(HttpClient);
   private readonly apiBase = inject(API_BASE);
   private readonly auth = inject(AuthService);
+  private readonly firstRender = inject(FIRST_RENDER);
   /** The sign-in the choices were fetched for, and the request. */
   private fetched: { session: number; request: Promise<void> } | null = null;
   /** Counts saves of each, so only the latest one's failure puts the old choice back. */
@@ -132,43 +134,48 @@ export class PreferencesService {
     notice: 0
   };
 
-  /** Batch weights in grams, or in pounds and ounces. */
-  readonly weightUnit = signal<WeightUnit>(readCopy('weightUnit'));
-  /** Grams to a tenth, or in full. */
-  readonly gramPrecision = signal<GramPrecision>(readCopy('gramPrecision'));
-  /** Light or dark, or as the device is set (core/theme.ts applies it). */
-  readonly theme = signal<ThemeMode>(readCopy('theme'));
-  /** The colors of buttons, links and tabs. */
-  readonly palette = signal<Palette>(readCopy('palette'));
-  /** Whether materials with lead may be added to recipes and suggested. */
-  readonly lead = signal<LeadChoice>(readCopy('lead'));
-  /** Where the potter works, or '' until chosen (core/locale.ts turns these into formats). */
-  readonly region = signal<string>(readCopy('region'));
-  readonly format = signal<string>(readCopy('format'));
-  readonly decimalMark = signal<DecimalMark>(readCopy('decimalMark'));
-  readonly temperature = signal<'' | TemperatureScale>(readCopy('temperature'));
-  readonly cones = signal<'' | ConeSystem>(readCopy('cones'));
-  readonly language = signal<string>(readCopy('language'));
-  readonly density = signal<'' | Density>(readCopy('density'));
-  readonly englishTerms = signal<'off' | 'on'>(readCopy('englishTerms'));
-  readonly notice = signal<'shown' | 'hidden'>(readCopy('notice'));
-
+  /**
+   * The choices as this browser holds them, read now and changed by apply().
+   * The signals below are what pages read: these, but the defaults during the
+   * first render (core/first-render.ts).
+   */
   private readonly values: { [K in keyof Preferences]: WritableSignal<Preferences[K]> } = {
-    weightUnit: this.weightUnit,
-    gramPrecision: this.gramPrecision,
-    theme: this.theme,
-    palette: this.palette,
-    lead: this.lead,
-    region: this.region,
-    format: this.format,
-    decimalMark: this.decimalMark,
-    temperature: this.temperature,
-    cones: this.cones,
-    language: this.language,
-    density: this.density,
-    englishTerms: this.englishTerms,
-    notice: this.notice
+    weightUnit: signal(readCopy('weightUnit')),
+    gramPrecision: signal(readCopy('gramPrecision')),
+    theme: signal(readCopy('theme')),
+    palette: signal(readCopy('palette')),
+    lead: signal(readCopy('lead')),
+    region: signal(readCopy('region')),
+    format: signal(readCopy('format')),
+    decimalMark: signal(readCopy('decimalMark')),
+    temperature: signal(readCopy('temperature')),
+    cones: signal(readCopy('cones')),
+    language: signal(readCopy('language')),
+    density: signal(readCopy('density')),
+    englishTerms: signal(readCopy('englishTerms')),
+    notice: signal(readCopy('notice'))
   };
+
+  /** Batch weights in grams, or in pounds and ounces. */
+  readonly weightUnit = this.shown('weightUnit');
+  /** Grams to a tenth, or in full. */
+  readonly gramPrecision = this.shown('gramPrecision');
+  /** Light or dark, or as the device is set (core/theme.ts applies it). */
+  readonly theme = this.values.theme.asReadonly();
+  /** The colors of buttons, links and tabs. */
+  readonly palette = this.values.palette.asReadonly();
+  /** Whether materials with lead may be added to recipes and suggested. */
+  readonly lead = this.shown('lead');
+  /** Where the potter works, or '' until chosen (core/locale.ts turns these into formats). */
+  readonly region = this.shown('region');
+  readonly format = this.shown('format');
+  readonly decimalMark = this.shown('decimalMark');
+  readonly temperature = this.shown('temperature');
+  readonly cones = this.shown('cones');
+  readonly language = this.shown('language');
+  readonly density = this.shown('density');
+  readonly englishTerms = this.shown('englishTerms');
+  readonly notice = this.shown('notice');
 
   constructor() {
     // Signed out, or the session ended: the account's choices leave this browser, and the visitor's own come back.
@@ -185,6 +192,16 @@ export class PreferencesService {
     this.auth.onAccountDeleted(() => this.clearStored());
     // A trial that ran out while the site was closed ended before this could hear of it.
     if (this.auth.trialEnded()) forget();
+  }
+
+  /**
+   * A choice as pages read it: the first choice listed (the default) while the
+   * first render stands in for the prerender, then the one this browser holds.
+   * The colors are the exception: the page sets them before it first paints
+   * (index.html), and no page draws them, so they are never held back.
+   */
+  private shown<K extends keyof Preferences>(name: K): Signal<Preferences[K]> {
+    return computed(() => (this.firstRender() ? CHOICES[name][0] : this.values[name]()));
   }
 
   /** Fetches the account's choices, once per sign-in. If that fails, the copy on this browser stays. */

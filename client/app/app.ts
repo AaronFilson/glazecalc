@@ -13,7 +13,18 @@ import { DOCUMENT } from '@angular/common';
 import { TranslocoDirective, translate } from '@jsverse/transloco';
 import { marker } from '@jsverse/transloco-keys-manager/marker';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
-import { NavigationEnd, NavigationStart, Router, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+import { first } from 'rxjs';
+import {
+  NavigationCancel,
+  NavigationCancellationCode,
+  NavigationEnd,
+  NavigationError,
+  NavigationStart,
+  Router,
+  RouterLink,
+  RouterLinkActive,
+  RouterOutlet
+} from '@angular/router';
 import { AuthService } from './core/auth.service';
 import { LocaleService } from './core/locale.service';
 import { formatDate } from './shared/format';
@@ -23,6 +34,7 @@ import { OFFERED_LANGUAGES, OPEN_PAGE, PAGE_LANGUAGE, languageName, pathIn } fro
 import { ownLanguagePage } from './i18n/own-language';
 import { TranslationNotice } from './i18n/translation-notice';
 import { PreferencesService } from './core/preferences.service';
+import { FIRST_RENDER } from './core/first-render';
 
 /** The pages in the main menu once signed in, in the order a potter uses them. */
 const APP_PAGES = [
@@ -43,12 +55,12 @@ const APP_PAGES = [
     <a class="skip-link" href="#main" (click)="skipToContent($event, main)">{{ t('nav.skip') }}</a>
     <header class="app-header">
       <nav class="app-nav" [attr.aria-label]="t('nav.main')">
-        <a class="brand" [routerLink]="auth.hasSession() ? '/home' : '/'">
+        <a class="brand" [routerLink]="auth.shownSession() ? '/home' : '/'">
           <img src="/images/logo.webp" alt="" width="30" height="30" />
           Glazecalc
         </a>
         <!-- On a phone the menu is folded away; returning visitors sign in without opening it. -->
-        @if (!auth.hasSession()) {
+        @if (!auth.shownSession()) {
           <a routerLink="/signin" class="nav-quick-signin">{{ t('nav.signIn') }}</a>
         }
         <button
@@ -61,7 +73,7 @@ const APP_PAGES = [
           {{ t('nav.menu') }}
         </button>
         <div id="main-menu" class="nav-menu" [class.open]="menuOpen()">
-          @if (auth.hasSession()) {
+          @if (auth.shownSession()) {
             <ul class="nav-links">
               @for (page of pages; track page.path) {
                 <li>
@@ -73,10 +85,10 @@ const APP_PAGES = [
             </ul>
             <div class="nav-account">
               <a routerLink="/account" class="account-email" translate="no" [title]="t('nav.accountTitle')">{{
-                auth.displayName() ?? t('nav.account')
+                auth.shownName() ?? t('nav.account')
               }}</a>
               <!-- A trial has no password to come back with; the trial bar offers its way out. -->
-              @if (!auth.trial()) {
+              @if (!auth.shownTrial()) {
                 <button type="button" class="btn btn-light btn-sm" (click)="logout()">{{ t('nav.signOut') }}</button>
               }
             </div>
@@ -99,7 +111,7 @@ const APP_PAGES = [
           }
         </div>
       </nav>
-      @if (auth.trial(); as trial) {
+      @if (auth.shownTrial(); as trial) {
         <section class="trial-bar" [attr.aria-label]="t('trial.label')">
           <div class="trial-bar-inner">
             @if (!confirmingDiscard()) {
@@ -205,6 +217,20 @@ export class App implements OnInit {
   private choosing = false;
 
   constructor() {
+    // The page is drawn as the prerender was until the first page is in place and drawn, and from then on
+    // follows this browser (core/first-render.ts). Not sooner: the first page may arrive after the menu.
+    const firstRender = inject(FIRST_RENDER);
+    this.router.events
+      .pipe(
+        first(
+          (event) =>
+            event instanceof NavigationEnd ||
+            event instanceof NavigationError ||
+            (event instanceof NavigationCancel && event.code !== NavigationCancellationCode.Redirect)
+        ),
+        takeUntilDestroyed()
+      )
+      .subscribe(() => afterNextRender(() => firstRender.set(false), { injector: this.injector }));
     // Once the account's language is known (from another device, say), an English page opens in it.
     effect(() => {
       const own = ownLanguagePage(this.preferences.language());

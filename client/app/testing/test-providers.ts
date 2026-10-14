@@ -1,21 +1,27 @@
 import { provideHttpClient, withInterceptors } from '@angular/common/http';
 import { HttpTestingController, provideHttpClientTesting } from '@angular/common/http/testing';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { signal } from '@angular/core';
 import { provideRouter } from '@angular/router';
 import { API_BASE } from '../core/api-base';
+import { FIRST_RENDER } from '../core/first-render';
 import { sessionExpiredInterceptor } from '../core/session-expired.interceptor';
 import { provideEnglish } from './i18n';
 
 export const API = 'http://api.test';
 
-/** HTTP (with the session interceptor) against a fake API, an empty router, and the English messages. */
+/**
+ * HTTP (with the session interceptor) against a fake API, an empty router, and the English messages. The
+ * first render is over: services read this browser's settings, as they do once an app is up.
+ */
 export function testProviders() {
   return [
     ...provideEnglish(),
     provideHttpClient(withInterceptors([sessionExpiredInterceptor])),
     provideHttpClientTesting(),
     provideRouter([]),
-    { provide: API_BASE, useValue: API }
+    { provide: API_BASE, useValue: API },
+    { provide: FIRST_RENDER, useFactory: () => signal(false) }
   ];
 }
 

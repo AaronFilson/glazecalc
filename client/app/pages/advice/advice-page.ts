@@ -135,7 +135,7 @@ export class AdvicePage implements OnInit {
   private readonly auth = inject(AuthService);
   private readonly browser = isPlatformBrowser(inject(PLATFORM_ID));
 
-  protected readonly signedIn = computed(() => this.auth.hasSession());
+  protected readonly signedIn = computed(() => this.auth.shownSession());
 
   protected readonly notices = new Notices();
   protected readonly saving = new Busy();

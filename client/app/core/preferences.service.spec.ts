@@ -1,6 +1,8 @@
+import { signal } from '@angular/core';
 import { TestBed } from '@angular/core/testing';
 import { API, httpMock, settle, testProviders } from '../testing/test-providers';
 import { AuthService } from './auth.service';
+import { FIRST_RENDER } from './first-render';
 import { PreferencesService } from './preferences.service';
 
 describe('PreferencesService', () => {
@@ -210,5 +212,38 @@ describe('PreferencesService', () => {
   it('remembers a visitor choice under its own name and under visitor.', () => {
     TestBed.inject(PreferencesService).remember('notice', 'hidden');
     expect(Object.keys(localStorage).sort()).toEqual(['notice', 'visitor.notice']);
+  });
+});
+
+describe('PreferencesService during the first render', () => {
+  beforeEach(() => {
+    localStorage.clear();
+    localStorage.setItem('weightUnit', 'lb');
+    localStorage.setItem('notice', 'hidden');
+    localStorage.setItem('theme', 'dark');
+    TestBed.configureTestingModule({ providers: testProviders() });
+  });
+
+  it('gives the defaults, not what this browser holds, then switches', () => {
+    const state = signal(true);
+    TestBed.overrideProvider(FIRST_RENDER, { useValue: state });
+    const preferences = TestBed.inject(PreferencesService);
+    expect([preferences.weightUnit(), preferences.notice()]).toEqual(['g', 'shown']);
+    state.set(false);
+    expect([preferences.weightUnit(), preferences.notice()]).toEqual(['lb', 'hidden']);
+  });
+
+  it('keeps the colors as held: the page sets them before it first paints', () => {
+    TestBed.overrideProvider(FIRST_RENDER, { useValue: signal(true) });
+    expect(TestBed.inject(PreferencesService).theme()).toBe('dark');
+  });
+
+  it('follows a choice made during the first render once it is over', () => {
+    const state = signal(true);
+    TestBed.overrideProvider(FIRST_RENDER, { useValue: state });
+    const preferences = TestBed.inject(PreferencesService);
+    preferences.remember('weightUnit', 'g');
+    state.set(false);
+    expect(preferences.weightUnit()).toBe('g');
   });
 });

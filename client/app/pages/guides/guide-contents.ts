@@ -1,4 +1,4 @@
-import { Location } from '@angular/common';
+import { DOCUMENT, Location } from '@angular/common';
 import { Component, inject, input } from '@angular/core';
 import { TranslocoDirective } from '@jsverse/transloco';
 
@@ -20,6 +20,7 @@ export interface GuideSection {
  */
 export class SectionLinks {
   private readonly location = inject(Location);
+  private readonly document = inject(DOCUMENT);
   /** The guide's address in the app, with any query: /guides/firing. */
   private readonly page = this.location.path();
 
@@ -28,7 +29,7 @@ export class SectionLinks {
   }
 
   go(event: MouseEvent, id: string): void {
-    const target = document.getElementById(id);
+    const target = this.document.getElementById(id);
     // A new tab or window is the browser's to open.
     if (!target || event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
     event.preventDefault();
