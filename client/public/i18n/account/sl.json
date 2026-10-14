@@ -11,10 +11,13 @@
     "password": "Geslo",
     "passwordHint": "Vsaj 8 znakov.",
     "confirmation": "Potrditev gesla",
+    "keepSignedIn": "Ohrani prijavo v tej napravi",
     "passwordMissing": "Vnesite geslo.",
     "createAccount": "Ustvari račun",
     "signIn": "Prijavi se",
     "haveAccount": "Že imate račun? <signin>Prijavite se</signin>",
+    "privacy": "Vaš e-poštni naslov in to, kar shranite, se uporabljajo samo za delovanje vašega računa in so shranjeni pri Amazon Web Services v ZDA. <privacy>Kako Glazecalc ravna z vašimi podatki</privacy>",
+    "dataNotice": "Glazecalc je brezplačen odprtokoden projekt, računi pa so shranjeni na strežnikih v Združenih državah Amerike. Vodnike lahko berete in kalkulator preizkusite brez računa ali pa zaženete lastno kopijo. Ali boste tu ustvarili račun, je vaša odločitev, projekt pa zanjo ne prevzema nobene odgovornosti. <where>Kje je shranjen vaš račun in vaša izbira</where>",
     "forgot": "Ste pozabili geslo? Ponastavite ga",
     "newHere": "Ste tu prvič? <signup>Ustvarite brezplačen račun</signup>",
     "signUpFailed": "Napaka: računa ni bilo mogoče ustvariti.",
@@ -61,7 +64,29 @@
     "deletePassword": "Geslo za potrditev",
     "deletePasswordMissing": "Za potrditev vnesite geslo.",
     "delete": "Izbriši moj račun",
-    "deleteFailed": "Napaka: računa ni bilo mogoče izbrisati. Poskusite znova."
+    "deleteFailed": "Napaka: računa ni bilo mogoče izbrisati. Poskusite znova.",
+    "unverifiedHeading": "Potrditev e-poštnega naslova",
+    "unverifiedText": "Ko ste ustvarili ta račun, smo na {email} poslali povezavo. Odprite jo, da potrdite, da je naslov vaš. Do takrat nanj pošiljamo pošto samo, kadar to zahtevate, na primer za ponastavitev gesla.",
+    "resend": "Pošlji povezavo znova",
+    "resendFailed": "Napaka: povezave ni bilo mogoče poslati. Poskusite znova.",
+    "emailHeading": "Sprememba e-poštnega naslova",
+    "emailText": "Na novi naslov pošljemo povezavo, vaš e-poštni naslov pa se spremeni, ko jo odprete. O tem obvestimo tudi vaš trenutni naslov. Vse naprave, prijavljene v ta račun, bodo odjavljene.",
+    "newEmail": "Nov e-poštni naslov",
+    "emailPassword": "Geslo za potrditev",
+    "emailSend": "Pošlji povezavo",
+    "emailFailed": "Napaka: povezave ni bilo mogoče poslati. Poskusite znova.",
+    "signOutHeading": "Odjava na vseh napravah",
+    "signOutText": "Odjavi vas na vseh napravah, tudi na tej. Uporabite to možnost, če ste izgubili napravo ali menite, da ima nekdo drug vaše podatke za prijavo.",
+    "signOutButton": "Odjavi se povsod",
+    "signOutFailed": "Napaka: odjava ni uspela. Poskusite znova."
+  },
+  "export": {
+    "heading": "Prenos mojih podatkov",
+    "text": "Shranite kopijo vsega, kar hrani vaš račun, v eno datoteko: podatke o računu, nastavitve, zalogo, recepte, surovine, dodatke, zapiske, dnevnike žganja, nasvete in koš. Gesla ne vsebuje. Datoteko hranite na zasebnem mestu, ker vsebuje vse, kar ste shranili.",
+    "json": "Prenesi vse (JSON)",
+    "csvText": "Lahko pa shranite preglednico samo z recepti ali samo z lastnimi surovinami, ki jo odprete v programu Excel, Numbers ali Sheets.",
+    "recipes": "Recepti (CSV)",
+    "materials": "Surovine (CSV)"
   },
   "settings": {
     "heading": "Nastavitve",
@@ -126,11 +151,16 @@
         "example": "stožec 04, stožec 6",
         "saved": "Shranjeno: žganje po Ortonovih stožcih."
       },
+      "sk": {
+        "label": "Po stožcih SK (JIS R 8101)",
+        "example": "SK 4a, SK 8",
+        "saved": "Shranjeno: žganje po stožcih SK."
+      },
       "temperature": {
         "label": "Po temperaturi, kot v programu krmilnika peči",
         "saved": "Shranjeno: žganje po temperaturi."
       },
-      "help": "Dokler ne izberete, ta nastavitev sledi vaši regiji: Ortonovi stožci v ZDA, Združenem kraljestvu, na Irskem, v Avstraliji in na Novi Zelandiji, temperatura v preostali Evropi."
+      "help": "Dokler ne izberete, to sledi vaši regiji: Ortonovi stožci v ZDA, Združenem kraljestvu, na Irskem, v Avstraliji in na Novi Zelandiji, stožci SK na Japonskem, temperatura v preostali Evropi."
     },
     "density": {
       "legend": "Gostota glazure",
@@ -147,7 +177,7 @@
         "label": "Masa pinte: unče v britanski pinti",
         "saved": "Shranjeno: gostota glazure kot masa pinte."
       },
-      "help": "Kako vodniki navajajo, kako gosta je glazura. Dokler ne izberete, ta nastavitev sledi vaši regiji: stopinje Baumé v Italiji, drugod relativna gostota."
+      "help": "Kako vodniki navajajo gostoto glazure. Dokler ne izberete, to sledi vaši regiji: stopinje Baumé v Italiji in na Japonskem, drugod relativna gostota."
     },
     "theme": {
       "legend": "Svetlo ali temno",
@@ -229,9 +259,19 @@
       },
       "hidden": {
         "label": "Skrito",
-        "saved": "Shranjeno: obvestilo je skrito. V vodnikih o varnosti ostane ena vrstica obvestila."
+        "saved": "Shranjeno: obvestilo je skrito. V vodnikih o varnosti ostane ena vrstica obvestila.",
+        "savedPlain": "Shranjeno: obvestilo je skrito. Na vrhu vsake strani ostane ena vrstica obvestila."
       },
       "help": "Opomba na vrhu vsake strani, da jo je prevedla umetna inteligenca, z možnostjo, da predlagate popravek."
     }
+  },
+  "confirmEmail": {
+    "heading": "Potrditev e-poštnega naslova",
+    "intro": "Pritisnite gumb, da potrdite ta naslov.",
+    "confirm": "Potrdi",
+    "incomplete": "Ta stran potrebuje povezavo iz e-poštnega sporočila za potrditev, ta povezava pa je nepopolna.",
+    "account": "Vaš račun",
+    "signIn": "Prijavi se",
+    "failed": "Napaka: naslova ni bilo mogoče potrditi. Poskusite znova."
   }
 }

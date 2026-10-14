@@ -14,6 +14,7 @@
     "signup": "Opret en konto - Glazecalc",
     "forgot": "Nulstil adgangskoden - Glazecalc",
     "reset": "Vælg en ny adgangskode - Glazecalc",
+    "confirmEmail": "Bekræft e-mailadressen - Glazecalc",
     "home": "Notesbog til værkstedet - Glazecalc",
     "recipe": "Opskrifter - Glazecalc",
     "material": "Råvarer - Glazecalc",
@@ -74,6 +75,16 @@
   },
   "meta": {
     "description": "Se en glasurs Seger-formel (UMF), forhold mellem silica og aluminiumoxid og flusmiddelfordeling. Gratis og open source, til opskrifter, råvarer og brændinger.",
+    "guides": "Letforståelige vejledninger for nye keramikere: hvad en keramisk glasur er, at lave og blande den sikkert, familiens sikkerhed og brænding i en enkel ovn.",
+    "glazingBasics": "Hvad en glasur til keramik består af, hvordan ovnen gør den til glas, og hvad kegler, fritter, Seger-formel (UMF) og glasurfejl er. Til nye keramikere.",
+    "makingAGlaze": "Sådan købes, opbevares, afvejes og blandes en glasur. Få tykkelsen rigtig, test den på dit eget ler, og før notater, så glasuren kan laves igen.",
+    "safeMixing": "Sådan holdes glasurstøv ude af lungerne og røggas fra ovnen ude af hjemmet: sikre vaner, åndedrætsværn, rengøring, ventilation og risikable råvarer.",
+    "homeSafety": "Hvad der skal gøres, hvis et barn eller et kæledyr sluger en råvare til glasur, og hvordan råvarer, støv, ovn og håndlavet keramik holdes sikre for familien.",
+    "firing": "Sådan brændes en elektrisk ovn: Vælg, sæt og aflæs kegler, og følg offentliggjorte brændekurver til forglødning og glasurbrænding. Med kegletabel.",
+    "advice": "Praktiske råd om blanding, glasering og brænding fra Glazecalc samt dine egne råd. Gratis for keramikere og pottemagere.",
+    "about": "Glazecalc er en gratis open source-beregner og notesbog til glasurkemi. Se, hvordan den beregner en Seger-formel (UMF), og hvordan den er bygget.",
+    "privacy": "Sådan håndterer Glazecalc dine data: ingen reklamer, webanalyse eller sporing, og intet sælges. Hvad der gemmes, hvorfor, og hvordan du bruger dine rettigheder.",
+    "signup": "Opret en gratis konto i Glazecalc, og gem dine glasuropskrifter, råvarer, noter og brændingsjournaler. Ingen reklamer, og dine data sælges aldrig.",
     "imageAlt": "Glazecalc: Bland ikke bare glasurerne – forstå dem."
   },
   "notices": {
@@ -255,6 +266,8 @@
     "label": "Om denne oversættelse",
     "text": "Denne side er oversat fra engelsk af AI. Glazecalc er open source: Hvis noget lyder forkert, så foreslå gerne en rettelse på GitHub.",
     "brief": "Oversat fra engelsk af AI.",
+    "plain": "Denne side er oversat fra engelsk af AI, som håndterer dette sprog mindre godt end de fleste sprog. Den engelske side kan være lettere at læse. Glazecalc er open source: Hvis noget lyder forkert, så foreslå gerne en rettelse på GitHub.",
+    "plainBrief": "Oversat af AI; den engelske tekst kan være lettere at læse.",
     "suggest": "Foreslå en rettelse",
     "english": "Læs den engelske tekst",
     "close": "Luk"

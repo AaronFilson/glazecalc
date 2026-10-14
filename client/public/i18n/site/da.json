@@ -64,7 +64,115 @@
   "privacy": {
     "title": "Privatlivspolitik",
     "lead": "Senest opdateret oktober 2026.",
-    "shortHeading": "Kort fortalt"
+    "shortHeading": "Kort fortalt",
+    "short": "Glazecalc gemmer det, der skal til for at drive kontoen, og intet andet. Der er ingen reklamer, ingen webanalyse og ingen sporing. Dine data sælges aldrig, og det eneste firma, der håndterer dem, er Amazon Web Services, som hoster webstedet og sender dets e-mails.",
+    "whoHeading": "Hvem der er ansvarlig",
+    "who": "Glazecalc er et gratis open source-projekt uden gevinst for øje, som drives af ejeren, Aaron Filson, i USA. Han bestemmer, hvad der sker med dine data, og er derfor efter databeskyttelsesreglerne den »dataansvarlige«.",
+    "contact": "Skriv til <mail>privacy@glazecalcapp.com</mail> for at spørge om dine data eller bruge en af dine rettigheder. Du kan også <issues>oprette et issue på GitHub</issues>, men issues er offentlige: Skriv aldrig din e-mailadresse eller noget personligt i et. Det meste vedrørende dine data kan du selv klare på <account>kontosiden</account>.",
+    "storedHeading": "Hvad der gemmes, og hvorfor",
+    "storedAccount": "<b>Kontoen:</b> e-mailadressen og adgangskoden, som kun gemmes som en envejs-hash (bcrypt), aldrig som selve adgangskoden. Indstillingerne (fx sprog, region og enheder) og listen over råvarer på lager gemmes sammen med den. En konto kræver en e-mailadresse til at logge ind og til at nulstille en glemt adgangskode. Når en konto oprettes, sendes et link til adressen for at bekræfte, at den er din; indtil da sendes der kun mail til den, når du beder om det, fx ved nulstilling af adgangskoden.",
+    "storedSaved": "<b>Det, du gemmer:</b> opskrifter, råvarer, tilsætninger, noter, brændingsjournaler og råd, som du skrev dem. Kun du kan se dem: Intet deles mellem brugere.",
+    "storedTrial": "<b>En prøveperiode (»Prøv nu«):</b> ingen e-mailadresse eller adgangskode, kun et opdigtet navn som »speckled quiet kilns«. Hvis du logger ind på en konto i samme browser under en prøveperiode, flyttes det, du har lavet i prøveperioden, over i kontoen.",
+    "storedResets": "<b>Links til nulstilling af adgangskode og e-mail:</b> hvilken konto der bad om det, hvornår, den adresse, et link til bekræftelse af en adresse blev sendt til, og et fingeraftryk af hvert link (ikke selve linket).",
+    "storedLogs": "<b>Logfiler:</b> Webserveren registrerer hver anmodning: din IP-adresse, tidspunktet, den side, der blev bedt om, og navnet på din browser. Appen registrerer fejl med den side, de opstod på, aldrig din e-mailadresse.",
+    "storedDeletions": "<b>Slettede konti:</b> kontoens id-nummer og tidspunktet for sletningen og intet andet, så en gendannet sikkerhedskopi ikke kan bringe kontoen tilbage.",
+    "storedMail": "<b>Problemer med e-mail:</b> Hvis mail til din adresse kommer retur eller anmeldes som spam, sætter Amazons e-mailtjeneste adressen på en liste over adresser, der ikke må sendes mail til igen, og sender ejeren en meddelelse, der indeholder adressen.",
+    "storedInbound": "<b>Mail, du sender til Glazecalc:</b> Mail til privacy@glazecalcapp.com og Glazecalcs andre adresser kontrolleres af Amazon for spam og virus, opbevares i et privat lager og videresendes til ejerens egen indbakke (Gmail).",
+    "basisHeading": "Retsgrundlaget",
+    "basisContract": "<b>Driften af kontoen</b>, opbevaringen af det, du gemmer, og e-mails om kontoen er den tjeneste, du har bedt om: Retsgrundlaget er aftalen mellem dig og Glazecalc (databeskyttelsesforordningen, GDPR, artikel 6, stk. 1, litra b).",
+    "basisInterests": "<b>At holde webstedet sikkert og i drift</b>: logfilerne, begrænsningerne af, hvor ofte nogen kan forsøge at logge ind, sikkerhedskopierne, registreringen af slettede konti og listen over adresser, der ikke må sendes mail til. De bygger på Glazecalcs legitime interesse i sikkerhed, i at forhindre misbrug og i ikke at miste dit arbejde (artikel 6, stk. 1, litra f). De opbevares kort tid og bruges ikke til andet. Du kan gøre indsigelse mod dem ved at skrive til adressen ovenfor.",
+    "basisNone": "Intet om dig afgøres automatisk, der foretages ingen profilering, og intet bruges til reklame.",
+    "whereHeading": "Hvor data opbevares, og hvem der håndterer dem",
+    "hosting": "Glazecalc kører på Amazon Web Services (AWS): serveren (EC2), sikkerhedskopierne (S3) og e-mailen (Simple Email Service), alt sammen i USA, i Oregon (us-west-2). AWS håndterer kun data på Glazecalcs vegne efter sine <dpa>vilkår for databehandling</dpa>. Ingen andre modtager dem.",
+    "transfer": "Hvis du bor i EU, Storbritannien eller Schweiz, overføres dine data til USA. Amazon oplyser, at selskabet er certificeret under <dpf>databeskyttelsesrammen mellem EU og USA (EU–US Data Privacy Framework)</dpf> og dens udvidelser for Storbritannien og Schweiz, og AWS’ vilkår omfatter EU’s standardkontraktbestemmelser, som stadig ville gælde, hvis rammen, som nu er anfægtet ved domstolene, blev underkendt. Ejeren og AWS er begge i USA, og amerikansk lovgivning kan pålægge dem at udlevere data.",
+    "noThirdParties": "Din browser henter intet fra andre websteder: ingen skrifttyper, scripts, billeder eller webanalyse andetsteds fra, og webstedets sikkerhedsindstillinger blokerer dem. Links til GitHub og andre websteder følges kun, når du klikker på dem.",
+    "choiceHeading": "Hvor kontoen opbevares, og dit valg",
+    "choiceProject": "Glazecalc er et gratis open source-projekt. Konti og alt, hvad de indeholder, opbevares på servere i USA, uanset hvor du bor, som beskrevet ovenfor.",
+    "choiceNoAccount": "Du behøver ikke en konto for at læse vejledningerne, og du kan prøve beregneren med »Prøv nu« uden e-mailadresse eller adgangskode. En prøveperiode opbevares på de samme servere i 14 dage.",
+    "choiceOwnCopy": "Alle kan køre deres egen kopi af Glazecalc på deres egen computer eller server: Koden er gratis på <source>GitHub</source>.",
+    "choiceDecision": "Det er din egen beslutning, om du vil oprette en konto her, vel vidende at den opbevares i USA.",
+    "choiceNoWarranty": "Glazecalc leveres, som det er, uden garanti. Projektets vedligeholdere påtager sig hverken ansvar eller erstatningsansvar for din beslutning om at oprette en konto eller for, hvor kontoens data opbevares.",
+    "keptHeading": "Hvor længe data opbevares",
+    "keptAccount": "<b>Kontoen og det, du gemmer:</b> indtil du sletter dem. Konti fjernes ikke, fordi de ikke bliver brugt.",
+    "keptTrial": "<b>En prøveperiode:</b> 14 dage fra starten, hvorefter den slettes med alt indhold, medmindre du opretter en konto for at beholde den.",
+    "keptResets": "<b>Links til nulstilling af adgangskode og e-mail:</b> Et link til nulstilling virker i 30 minutter, og registreringen af det slettes efter ca. en time; et link til bekræftelse af en adresse virker og opbevares i 24 timer.",
+    "keptBackups": "<b>Sikkerhedskopier:</b> Krypterede kopier af databasen opbevares i 30 dage og kopier af serverens disk i 7 dage. En slettet konto er altså væk fra alle sikkerhedskopier inden for 30 dage.",
+    "keptDeletions": "<b>Registreringen af en slettet konto:</b> 37 dage, lige længere end nogen sikkerhedskopi.",
+    "keptLogs": "<b>Logfiler:</b> webserverens i 14 dage. Appens og databasens egne logfiler er begrænset efter størrelse (50 MB hver), hvilket på et stille websted rækker flere dage tilbage. Kopierne af serverens disk bevarer logfiler i op til 7 dage mere.",
+    "keptMail": "<b>Listen over adresser, der ikke må sendes mail til:</b> indtil ejeren fjerner en adresse, hvilket han gør hver måned for adresser, der ikke længere hører til en konto. Ejeren sletter meddelelser om returmail inden for 30 dage.",
+    "keptInbound": "<b>Mail, du sender til Glazecalc:</b> 30 dage i Amazons lager, og i ejerens indbakke så længe det tager at svare dig. Ved en anmodning om dine data opbevares en kort note (hvornår den kom, hvad der blev bedt om, og hvad der blev gjort) i tre år.",
+    "rightsHeading": "Dine rettigheder",
+    "rightsIntro": "Du kan se, rette, tage dine data med og slette dem. Det meste kan du selv gøre på <account>kontosiden</account>:",
+    "rightsExport": "<b>Se dem, og tag dem med:</b> »Download mine data« gemmer alt i én fil (JSON) og opskrifterne og råvarerne som regneark (CSV).",
+    "rightsCorrect": "<b>Ret dem:</b> Skift indstillinger og poster når som helst. E-mailadressen skiftes ved at åbne det link, der sendes til den nye adresse; den gamle adresse får, hvis den var bekræftet, besked om ændringen, og alle enheder logges ud.",
+    "rightsDelete": "<b>Slet dem:</b> »Slet min konto« fjerner kontoen og alt, hvad du har gemt, med det samme, og »Kassér prøveperioden« gør det samme for en prøveperiode. Kopier i sikkerhedskopier er væk inden for 30 dage.",
+    "rightsSignOut": "<b>Log ud overalt:</b> afslutter kontoens sessioner på alle enheder.",
+    "rightsAsk": "Skriv til <mail>privacy@glazecalcapp.com</mail> om alt andet, fx hvis du vil have, at dine data ikke bruges, mens en fejl bliver rettet, eller vil gøre indsigelse mod, hvordan de bruges. Det er gratis, og du får svar inden for en måned. Du bliver kun bedt om at vise, at kontoen er din, ved at logge ind eller ved at åbne et link, der sendes til dens adresse, aldrig om legitimation.",
+    "rightsComplain": "Hvis du ikke er tilfreds, kan du klage til en databeskyttelsesmyndighed: i EU til <edpb>myndigheden i dit land</edpb> og i Storbritannien til <ico>Information Commissioner’s Office</ico>.",
+    "storageHeading": "Cookies og lagring i browseren",
+    "storageIntro": "Glazecalc sætter én cookie og gemmer nogle få små værdier i din browser. Hver af dem er der for noget, du har bedt om: at forblive logget ind eller at huske et valg, du har truffet. Ingen af dem sporer dig, og ingen deles, så loven kræver ikke, at der spørges først, og der er intet cookiebanner.",
+    "storageLabel": "Cookies og lagring i browseren",
+    "storageName": "Navn",
+    "storagePurpose": "Hvad den bruges til",
+    "storageLasts": "Hvor længe den bliver",
+    "storageCookie": "Cookie",
+    "storageLocal": "Lokal lagring",
+    "storageSession": "Sessionslagring",
+    "storageNote": "Du kan når som helst rydde dem i browserens indstillinger. Når kontoen slettes, fjernes markeringen af, at du er logget ind, og alle indstillinger, der er gemt her.",
+    "keys": {
+      "cookie": {
+        "purpose": "Holder dig logget ind. Den indeholder dit login-token. Scripts på siden kan ikke læse den, og browseren sender den kun til Glazecalcs egen server over HTTPS og aldrig med en anmodning, der starter på et andet websted.",
+        "lasts": "Sættes, når du logger ind, opretter en konto eller starter en prøveperiode. Indtil du lukker browseren, eller i 7 dage, hvis du sætter flueben ved »Forbliv logget ind på denne enhed«; 14 dage for en prøveperiode. Den fjernes, når du logger ud."
+      },
+      "session": {
+        "purpose": "Markerer, at du er logget ind på en konto eller en prøveperiode, så appen ved, at den skal spørge serveren. Den indeholder hverken token eller adgangskode.",
+        "lasts": "Indtil du logger ud, eller sessionen slutter."
+      },
+      "trial": {
+        "purpose": "Under en prøveperiode dens navn og slutdato, så de kan vises.",
+        "lasts": "Indtil prøveperioden slutter eller beholdes eller kasseres."
+      },
+      "settings": {
+        "purpose": "En indstilling, du har ændret i denne browser, så næste side viser den med det samme, før serveren svarer. <code>theme</code> og <code>palette</code> farver siden, før den vises, og <code>language</code> åbner sider på dit sprog.",
+        "lasts": "Indtil du ændrer den. Når du logger ud, sættes det tilbage, du eventuelt valgte, mens du var logget ud, og resten fjernes."
+      },
+      "visitor": {
+        "purpose": "Det sprog, du valgte, eller at du lukkede noten om oversættelsen, mens du var logget ud, så det kommer tilbage, når du logger ud.",
+        "lasts": "Indtil du rydder browserens lager eller sletter en konto i denne browser."
+      },
+      "region": {
+        "purpose": "Regionsfilteret på en liste i biblioteket.",
+        "lasts": "Indtil du sætter filteret tilbage til alle regioner."
+      },
+      "includeAdditives": {
+        "purpose": "Om nye opskrifter medregner tilsætningerne i Seger-formlen, som du sidst valgte.",
+        "lasts": "Indtil du rydder browserens lager."
+      },
+      "recipeHelp": {
+        "purpose": "At du har skjult hjælpen på opskriftssiden.",
+        "lasts": "Indtil du viser hjælpen igen."
+      },
+      "print": {
+        "purpose": "Dine seneste valg ved udskrivning af en opskrift: hele opskriften eller en portion og portionsstørrelsen.",
+        "lasts": "Indtil du rydder browserens lager."
+      },
+      "token": {
+        "purpose": "Et login-token fra en gammel version af Glazecalc. Det skrives aldrig nu.",
+        "lasts": "Fjernes, når en side åbnes."
+      },
+      "readEnglish": {
+        "purpose": "At du har valgt at læse en oversat side på engelsk, så appen holder op med at sende dig videre til dit sprog.",
+        "lasts": "Indtil du lukker fanen."
+      },
+      "reloadedFor": {
+        "purpose": "Når en ny version af webstedet er udgivet: hvilken side der blev genindlæst og hvornår, så en side højst genindlæses én gang i minuttet.",
+        "lasts": "Indtil du lukker fanen."
+      }
+    },
+    "childrenHeading": "Børn",
+    "children": "Glazecalc er et værktøj for keramikere og er ikke rettet mod børn.",
+    "changesHeading": "Ændringer",
+    "changes": "Hvis denne politik ændres, ændres datoen øverst på siden også."
   },
   "notFound": {
     "heading": "Siden blev ikke fundet",

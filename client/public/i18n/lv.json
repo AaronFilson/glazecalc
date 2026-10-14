@@ -1,6 +1,6 @@
 {
   "titles": {
-    "landing": "Glazecalc: bezmaksas glazūru ķīmijas kalkulators keramiķiem",
+    "landing": "Glazecalc: bezmaksas keramikas glazūru kalkulators",
     "advice": "Padomi par glazūrām – Glazecalc",
     "guides": "Ceļveži – Glazecalc",
     "glazingBasics": "Glazēšana no pašiem pamatiem – Glazecalc",
@@ -14,6 +14,7 @@
     "signup": "Konta izveide – Glazecalc",
     "forgot": "Paroles atiestatīšana – Glazecalc",
     "reset": "Jaunas paroles izvēle – Glazecalc",
+    "confirmEmail": "E-pasta adreses apstiprināšana – Glazecalc",
     "home": "Jūsu darbnīcas burtnīca – Glazecalc",
     "recipe": "Receptes – Glazecalc",
     "material": "Izejvielas – Glazecalc",
@@ -73,7 +74,17 @@
     "notANumberPoint": "Ievadiet skaitli, piemēram, {example}, decimāldaļu atdalot ar punktu."
   },
   "meta": {
-    "description": "Ievadiet glazūras recepti: tās Zēgera formula (UMF), SiO₂ : Al₂O₃ un kušņu attiecība. Bezmaksas atvērts kods receptēm, izejvielām un apdedzināšanas žurnāliem.",
+    "description": "Ievadiet keramikas glazūras recepti: Zēgera formula (UMF), SiO₂ : Al₂O₃, kušņu līdzsvars. Bezmaksas atvērts kods receptēm, izejvielām, apdedzināšanas žurnāliem.",
+    "guides": "Vienkārši ceļveži keramiķiem iesācējiem: kas ir keramikas glazūra, kā to droši sagatavot un sajaukt, kā pasargāt ģimeni un kā apdedzināt vienkāršā krāsnī.",
+    "glazingBasics": "No kā sastāv keramikas glazūra, kā krāsns to pārvērš stiklā un ko nozīmē konusi, frites, Zēgera formula (UMF) un glazūras defekti. Ceļvedis iesācējiem.",
+    "makingAGlaze": "Kā iegādāties, glabāt, nosvērt un sajaukt keramikas glazūru, panākt pareizu biezumu, pārbaudīt to uz sava māla un pierakstīt, lai to varētu pagatavot atkal.",
+    "safeMixing": "Kā pasargāt plaušas no glazūras putekļiem un māju no krāsns izplūdes gāzēm: droši paradumi, respiratori, uzkopšana, ventilācija un riskantas izejvielas.",
+    "homeSafety": "Ko darīt, ja bērns vai mājdzīvnieks norij glazūras izejvielu, un kā panākt, lai izejvielas, putekļi, krāsns un pašdarināti trauki ģimenei nekaitētu.",
+    "firing": "Kā apdedzināt elektriskajā krāsnī: konusu izvēle, novietošana un nolasīšana, publicētas biskvīta un glazūras apdedzināšanas programmas un konusu tabula.",
+    "advice": "Praktiski padomi par keramikas glazūru jaukšanu, glazēšanu un apdedzināšanu no lietotnes Glazecalc, kā arī jūsu pašu padomi. Bez maksas keramiķiem.",
+    "about": "Glazecalc ir bezmaksas keramikas glazūru ķīmijas kalkulators un burtnīca ar atvērtu pirmkodu. Uzziniet, kā tas aprēķina Zēgera formulu (UMF) un kā tas veidots.",
+    "privacy": "Kā lietotne Glazecalc apstrādā jūsu datus: bez reklāmām, analītikas un izsekošanas, un nekas netiek pārdots. Ko glabājam, kāpēc un kā izmantot savas tiesības.",
+    "signup": "Izveidojiet bezmaksas Glazecalc kontu keramikas glazūru receptēm, izejvielām, piezīmēm un apdedzināšanas žurnāliem. Bez reklāmām; jūsu datus nekad nepārdod.",
     "imageAlt": "Glazecalc: izprotiet savas glazūras, ne tikai sajauciet tās."
   },
   "notices": {
@@ -255,6 +266,8 @@
     "label": "Par šo tulkojumu",
     "text": "Šo lapu no angļu valodas ir tulkojis mākslīgais intelekts. Lietotnei Glazecalc ir atvērts pirmkods: ja kaut kas izklausās nepareizi, iesakiet labojumu vietnē GitHub.",
     "brief": "No angļu valodas tulkojis mākslīgais intelekts.",
+    "plain": "Šo lapu no angļu valodas ir tulkojis mākslīgais intelekts, kas šo valodu pārvalda sliktāk nekā vairumu valodu. Lapa angļu valodā var būt labāk lasāma. Lietotnei Glazecalc ir atvērts pirmkods: ja kaut kas izklausās nepareizi, iesakiet labojumu vietnē GitHub.",
+    "plainBrief": "Tulkojis mākslīgais intelekts; angļu valodā lapa var būt labāk lasāma.",
     "suggest": "Ieteikt labojumu",
     "english": "Lasīt angļu valodā",
     "close": "Aizvērt"

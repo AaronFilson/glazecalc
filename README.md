@@ -48,12 +48,12 @@ materials, colorants, firing logs and notes together in one private notebook.
   a batch list to tick off while weighing, with a running total for weighing into one bucket. One
   page on Letter or A4; weights in grams, or in pounds and ounces as set in your account.
 - **Your region and your numbers:** where you work sets numbers and dates as you write them
-  (12,5 or 12.5 typed either way), °C or °F, Orton cones or firing by temperature, the standard
+  (12,5 or 12.5 typed either way), °C or °F, Orton cones, SK cones (JIS R 8101) or firing by temperature, the standard
   materials sold there, and in the guides, for 31 countries: who to call in an emergency, shops that
   sell glaze materials, the closest materials sold there to those a recipe names, the workplace
   limit for silica dust and the food-contact limits for glazed ware (for 30: no official limit
   was found for New Zealand), each checked on an official or the shop's own page.
-- **Translated into an official language of every country of the EU:** Bulgarian, Croatian, Czech, Danish, Dutch, English, Estonian, Finnish, French, German, Greek, Hungarian, Irish, Italian, Latvian, Lithuanian, Maltese, Polish, Portuguese, Romanian, Slovak, Slovenian, Spanish, and Swedish, each at its own addresses (`/de/recipe`).
+- **Translated into 26 languages:** an official language of every country of the EU (Bulgarian, Croatian, Czech, Danish, Dutch, English, Estonian, Finnish, French, German, Greek, Hungarian, Irish, Italian, Latvian, Lithuanian, Maltese, Polish, Portuguese, Romanian, Slovak, Slovenian, Spanish, and Swedish), Japanese and Turkish, each at its own addresses (`/de/recipe`).
 
   Translated by AI with a glossary per language from suppliers' catalogues, reviewed, and the safety text checked by translating it back; every translated page says so and links to a form to suggest a better wording.
 
@@ -82,8 +82,8 @@ For anyone reading the code:
   `.ts` files directly with no build step ([ADR 8](docs/adr/0008-typescript-server-without-a-build.md)),
   and put back online. The
   [case study](docs/case-study.md) tells how.
-- **Tested at three levels, in CI on every pull request and push to master:** 286 server tests (98% of statements) run
-  against the app in-process; 392 Angular unit tests (92%); 135 Playwright browser tests,
+- **Tested at three levels, in CI on every pull request and push to master:** 398 server tests (98% of statements) run
+  against the app in-process; 477 Angular unit tests (92%); 194 Playwright browser tests,
   including [axe](https://github.com/dequelabs/axe-core) accessibility checks of every page in
   light and dark mode, every page in a pseudo-locale to find text not marked for translation, and
   every page in each language at a phone's width.
@@ -190,7 +190,8 @@ The Angular CLI, TypeScript, ESLint and the test runners are installed into the 
 
     npm run dev      Angular dev server on port 3000 with live reload; it forwards /api to the
                      API server on port 4000, which restarts when server code changes
-    npm run build    production build of the client into dist/glazecalc/browser
+    npm run build    production build of the client into dist/glazecalc/browser, then renders the
+                     public pages in every language to dist/glazecalc/prerendered (docs/seo-plan.md)
     npm start        builds, then runs one server on port 3000 (PORT) with the app and its API
     npm run seed     loads the standard materials, additives and advice into MONGODB_URI
     npm run lint     checks the code with ESLint

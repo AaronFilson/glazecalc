@@ -1,3 +1,4 @@
+import { DOCUMENT } from '@angular/common';
 import { Directive, ElementRef, effect, inject, input, output } from '@angular/core';
 import { forTyping, formatLocale, toPlain, typedDecimalMark } from './format';
 
@@ -12,13 +13,14 @@ import { forTyping, formatLocale, toPlain, typedDecimalMark } from './format';
  */
 @Directive({
   selector: 'input[gcNumber]',
-  host: { '(input)': 'typed()', '(blur)': 'echo()' }
+  host: { '(input)': 'typed($event)', '(compositionend)': 'typed()', '(blur)': 'echo()' }
 })
 export class NumberInput {
   /** The saved value: a plain number as text, or text that is not one. */
   readonly gcNumber = input<string | number | null | undefined>('');
   readonly gcNumberChange = output<string>();
   private readonly element: HTMLInputElement = inject(ElementRef).nativeElement;
+  private readonly document = inject(DOCUMENT);
 
   constructor() {
     effect(() => {
@@ -26,12 +28,14 @@ export class NumberInput {
       const mark = typedDecimalMark();
       const locale = formatLocale();
       // What is being typed is the reader's until they leave the box.
-      if (document.activeElement === this.element && toPlain(this.element.value, mark, locale) === plain) return;
+      if (this.document.activeElement === this.element && toPlain(this.element.value, mark, locale) === plain) return;
       this.element.value = forTyping(plain, mark, locale);
     });
   }
 
-  protected typed(): void {
+  protected typed(event?: Event): void {
+    // Not while an input method (Japanese, Chinese, Korean) is still composing: once it is done.
+    if ((event as InputEvent | undefined)?.isComposing) return;
     this.gcNumberChange.emit(toPlain(this.element.value));
   }
 

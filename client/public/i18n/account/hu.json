@@ -11,10 +11,13 @@
     "password": "Jelszó",
     "passwordHint": "Legalább 8 karakter.",
     "confirmation": "Jelszó megerősítése",
+    "keepSignedIn": "Maradjak bejelentkezve ezen az eszközön",
     "passwordMissing": "Adja meg a jelszavát.",
     "createAccount": "Fiók létrehozása",
     "signIn": "Bejelentkezés",
     "haveAccount": "Már van fiókja? <signin>Bejelentkezés</signin>",
+    "privacy": "E-mail-címét és azt, amit elment, csak a fiókja működtetésére használjuk, és az Egyesült Államokban, az Amazon Web Services rendszerében tároljuk. <privacy>Hogyan kezeli adatait a Glazecalc</privacy>",
+    "dataNotice": "A Glazecalc ingyenes, nyílt forráskódú projekt, és a fiókok az Egyesült Államokban lévő szervereken vannak. Az útmutatókat fiók nélkül is elolvashatja, a kalkulátort fiók nélkül is kipróbálhatja, vagy futtathatja a saját példányát. Hogy itt létrehoz-e fiókot, az az Ön saját döntése, és a projekt ezért semmilyen felelősséget nem vállal. <where>Hol tárolódik a fiókja, és az Ön döntése</where>",
     "forgot": "Elfelejtette a jelszavát? Állítsa vissza",
     "newHere": "Új felhasználó? <signup>Ingyenes fiók létrehozása</signup>",
     "signUpFailed": "Hiba: nem sikerült létrehozni a fiókot.",
@@ -61,7 +64,29 @@
     "deletePassword": "Jelszava a megerősítéshez",
     "deletePasswordMissing": "A megerősítéshez adja meg a jelszavát.",
     "delete": "Fiókom törlése",
-    "deleteFailed": "Hiba: nem sikerült törölni a fiókot. Kérjük, próbálja újra."
+    "deleteFailed": "Hiba: nem sikerült törölni a fiókot. Kérjük, próbálja újra.",
+    "unverifiedHeading": "E-mail-cím megerősítése",
+    "unverifiedText": "Amikor létrehozta ezt a fiókot, linket küldtünk erre a címre: {email}. Nyissa meg, hogy megerősítse, hogy a cím az Öné. Addig csak akkor küldünk rá levelet, ha kéri, például jelszó-visszaállításkor.",
+    "resend": "Link újraküldése",
+    "resendFailed": "Hiba: nem sikerült elküldeni a linket. Kérjük, próbálja újra.",
+    "emailHeading": "E-mail-cím módosítása",
+    "emailText": "Linket küldünk az új címre, és az e-mail-címe akkor változik meg, amikor megnyitja. A jelenlegi címét is értesítjük. A fiókba bejelentkezett összes eszközt kijelentkeztetjük.",
+    "newEmail": "Új e-mail-cím",
+    "emailPassword": "Jelszava a megerősítéshez",
+    "emailSend": "Link küldése",
+    "emailFailed": "Hiba: nem sikerült elküldeni a linket. Kérjük, próbálja újra.",
+    "signOutHeading": "Kijelentkezés mindenhol",
+    "signOutText": "Minden eszközön kijelentkezteti, ezen is. Akkor használja, ha elveszített egy eszközt, vagy úgy gondolja, hogy valaki más hozzájutott a bejelentkezési adataihoz.",
+    "signOutButton": "Kijelentkezés mindenhol",
+    "signOutFailed": "Hiba: nem sikerült kijelentkezni. Kérjük, próbálja újra."
+  },
+  "export": {
+    "heading": "Adataim letöltése",
+    "text": "Mentsen el egyetlen fájlba egy másolatot mindarról, amit a fiókja tartalmaz: fiókadatairól, beállításairól, készletéről, receptjeiről, nyersanyagairól, adalékairól, jegyzeteiről, égetési naplóiról, tanácsairól és a lomtárról. A jelszavát nem tartalmazza. A fájlt tartsa olyan helyen, ahol más nem fér hozzá, mert mindent tartalmaz, amit elmentett.",
+    "json": "Minden letöltése (JSON)",
+    "csvText": "Vagy mentsen táblázatot csak a receptjeiről vagy csak a saját nyersanyagairól, hogy az Excel, a Numbers vagy a Sheets programban nyissa meg.",
+    "recipes": "Receptek (CSV)",
+    "materials": "Nyersanyagok (CSV)"
   },
   "settings": {
     "heading": "Beállítások",
@@ -126,11 +151,16 @@
         "example": "04-es gúla, 6-os gúla",
         "saved": "Mentve: égetés Orton-gúlák szerint."
       },
+      "sk": {
+        "label": "SK-gúlák szerint (JIS R 8101)",
+        "example": "SK 4a, SK 8",
+        "saved": "Mentve: égetés SK-gúlák szerint."
+      },
       "temperature": {
         "label": "Hőmérséklet szerint, mint egy kemencevezérlő programjában",
         "saved": "Mentve: égetés hőmérséklet szerint."
       },
-      "help": "Amíg nem választ, ez a régióját követi: az USA-ban, az Egyesült Királyságban, Írországban, Ausztráliában és Új-Zélandon Orton-gúlák, Európa többi részén hőmérséklet."
+      "help": "Amíg nem választ, ez a régióját követi: Orton-gúlák az Egyesült Államokban, az Egyesült Királyságban, Írországban, Ausztráliában és Új-Zélandon, SK-gúlák Japánban, hőmérséklet Európa többi részén."
     },
     "density": {
       "legend": "Mázsűrűség",
@@ -147,7 +177,7 @@
         "label": "Pint-súly, uncia per angol pint",
         "saved": "Mentve: mázsűrűség pint-súlyként."
       },
-      "help": "Ebben a formában adják meg az útmutatók a máziszap sűrűségét. Amíg nem választ, ez a régióját követi: Olaszországban Baumé-fok, máshol fajsúly."
+      "help": "Az, hogy az útmutatók miben adják meg a máz sűrűségét. Amíg nem választ, ez a régióját követi: Baumé-fok Olaszországban és Japánban, máshol fajsúly."
     },
     "theme": {
       "legend": "Világos vagy sötét",
@@ -229,9 +259,19 @@
       },
       "hidden": {
         "label": "Elrejtve",
-        "saved": "Mentve: a megjegyzés el van rejtve. Egy sora a biztonsági útmutatókban megmarad."
+        "saved": "Mentve: a megjegyzés el van rejtve. Egy sora a biztonsági útmutatókban megmarad.",
+        "savedPlain": "Mentve: a megjegyzés el van rejtve. Egy sora minden oldal tetején megmarad."
       },
       "help": "Az oldalak tetején megjelenő megjegyzés arról, hogy az oldalt mesterséges intelligencia fordította, a javítási javaslat lehetőségével."
     }
+  },
+  "confirmEmail": {
+    "heading": "E-mail-cím megerősítése",
+    "intro": "A cím megerősítéséhez nyomja meg a gombot.",
+    "confirm": "Megerősítés",
+    "incomplete": "Ehhez az oldalhoz egy megerősítő e-mailben kapott link kell, ez a link pedig hiányos.",
+    "account": "Fiókja",
+    "signIn": "Bejelentkezés",
+    "failed": "Hiba: nem sikerült megerősíteni a címet. Kérjük, próbálja újra."
   }
 }

@@ -105,7 +105,7 @@ after a colon unless a full quotation follows (MS).
   fails on the extra 100 %); never turn "cone 6" into a temperature.
 - Ordinals: 1er, 2e (not 2ème). "×10⁻⁶/°C" and "x 10^-7/K" stay as written.
 
-**Cones.** The app's cones are Orton's American cones; Europeans also know Seger cones (SK), whose numbers look the same
+**Cones.** The app's cones are Orton's American cones; Europeans also know Seger cones, whose numbers look the same
 but bend at other temperatures (44–52 °C apart at 05 and 04). Never equate them.
 
 - "cone 6" → « cône 6 »; "cone 06" → « cône 06 » (read « zéro six »; the zero always stays); plural « cônes 5–6 ».
@@ -115,7 +115,7 @@ but bend at other temperatures (44–52 °C apart at 05 and 04). Never equate th
   « cône Orton montre fusible autoportante ». Generic: « cône pyrométrique ». The old French word « montre fusible »
   ([fr.wikipedia](https://fr.wikipedia.org/wiki/Montre_fusible): « un cône pyroscopique ou une montre fusible ») may be
   given once as an explanation in the guides, never as the term.
-- Seger cones: « cônes de Seger (SK) ». Write "Orton" wherever the English does.
+- Seger cones: « cônes de Seger », never « SK »: in Glazecalc « SK » means only the Japanese cones to JIS R 8101. Write "Orton" wherever the English does.
 - French forums write « Δ6 »; Glazecalc does not.
 
 **The unity formula.** « formule de Seger (UMF) » the first time on a page (in the guides, in each section where it
@@ -506,6 +506,28 @@ the reviewed translation uses them. Names of shops, laws and agencies stay as th
 | differs by {grams} g per 100 g                                        | écart de {grams} g pour 100 g                                                              | guides: equivalents.apart                     |
 | Directive 84/500/EEC (its official name)                              | Directive 84/500/CEE (modifiée par la directive 2005/31/CE)                                | regions: the directive                        |
 | Latvia's law gives this limit for the inhalable fraction of the dust. | La loi lettone donne cette valeur limite pour la fraction inhalable des poussières.        | regions: Latvia                               |
+
+### 2.10 Search terms and new words
+
+**Search terms** (research_notes/search-terms-2026-10-14.md): French searches use « recette d’émail » / « recettes d’émaux »,
+« formule de Seger », « émaux céramiques » (and « glaçures céramiques ») and « calcul des émaux ». The page title is
+« Glazecalc : calculateur d’émaux gratuit pour céramistes ». In the `meta.*` descriptions, give the glaze word with the
+ceramics word where it fits (« émail céramique ») and write the unity formula as « formule de Seger (UMF) ». Never add a
+claim the English lacks.
+
+**Words added with the EU release and SK cones (2026-10):**
+
+- SK cones: « cônes SK », never « cônes de Seger » unless the English says Seger. "the next cooler / hotter cone" →
+  « le numéro immédiatement moins chaud / plus chaud ».
+- Privacy: controller « responsable du traitement »; legal basis « base légale »; logs « journaux »; backups
+  « sauvegardes »; bounce « e-mail rejeté », bounce notice « avis de rejet »; GitHub issue « ticket »; maintainers
+  « mainteneurs »; "accepts no responsibility" « n’accepte aucune responsabilité »; Standard Contractual Clauses
+  « clauses contractuelles types »; EU–US Data Privacy Framework « cadre de protection des données UE–États-Unis ».
+- "Keep me signed in on this device" « Garder la session ouverte sur cet appareil »; "Sign out everywhere" « Se
+  déconnecter partout »; "Download my data" « Télécharger mes données »; sign-in token « jeton de connexion ».
+- Japan: control concentration (管理濃度) « concentration de contrôle »; dust mask « masque antipoussière »; "not for
+  cooking" « non destinés à la cuisson »; "passes" (a food-contact test) « est conforme ». Türkiye: « la Turquie ».
+- Glaze "thickness" in the density help: « consistance », as the making-a-glaze guide says.
 
 ## 3. Never translated
 

@@ -1,9 +1,58 @@
+import { provideAppInitializer } from '@angular/core';
 import { bootstrapApplication } from '@angular/platform-browser';
 import { appConfig } from './app/app.config';
 import { App } from './app/app';
-import { chosenLanguage, ownLanguagePage } from './app/i18n/own-language';
 
-// A reader who chose a language opens English pages in it, before anything is drawn.
-const own = ownLanguagePage(chosenLanguage());
-if (own) location.replace(own);
-else bootstrapApplication(App, appConfig).catch((err) => console.error(err));
+const start = (): void => {
+  bootstrapApplication(App, appConfig).catch((err) => console.error(err));
+};
+
+/**
+ * Starts the app in two tasks on a prerendered page: its services first, then adopting the page. Between them
+ * the browser can answer a tap or draw a frame; together they were one long task on a slow phone.
+ */
+const startInTwo = (): void => {
+  const yieldToBrowser = () => new Promise<void>((resolve) => setTimeout(resolve));
+  bootstrapApplication(App, { providers: [...appConfig.providers, provideAppInitializer(yieldToBrowser)] }).catch(
+    (err) => console.error(err)
+  );
+};
+
+/**
+ * Runs `then` once the page has been painted. A prerendered page (scripts/prerender.mjs) is readable as it
+ * arrives, and adopting it is the longest task of the start (a guide's hundreds of elements): painted first,
+ * the reader sees the page while the app adopts it, rather than after. A page that is not shown (a tab opened
+ * in the background) is not painted, so it starts at once, as it does if no paint is reported in time.
+ */
+function afterFirstPaint(then: () => void): void {
+  const painted = () => performance.getEntriesByName('first-contentful-paint').length > 0;
+  if (document.visibilityState !== 'visible' || typeof PerformanceObserver === 'undefined' || painted()) {
+    then();
+    return;
+  }
+  let started = false;
+  const go = (): void => {
+    if (started) return;
+    started = true;
+    observer.disconnect();
+    clearTimeout(timer);
+    then();
+  };
+  const observer = new PerformanceObserver(() => {
+    if (painted()) go();
+  });
+  observer.observe({ type: 'paint', buffered: true });
+  const timer = setTimeout(go, 500);
+}
+
+// index.html's script sends a reader who chose a language to the page in it, before anything is drawn.
+// There is nothing to start for a page that is being left.
+if (!document.documentElement.hasAttribute('data-leaving')) {
+  // The transfer state the prerender writes at the end of a page marks it as prerendered. A page with a form
+  // (sign-up, a guide's choice of country) is adopted at once, so that what is typed in it goes to the app.
+  if (document.getElementById('ng-state') && !document.querySelector('gc-root :is(input, select, textarea)')) {
+    afterFirstPaint(startInTwo);
+  } else {
+    start();
+  }
+}

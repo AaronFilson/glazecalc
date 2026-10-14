@@ -278,6 +278,97 @@ Is éard is **ceartú cóin** ann ná socrú rialaitheora a ardaíonn nó a ísl
 
 :::
 
+:::sk
+
+## Bácáil go cóin SK {#sk-cones}
+
+Is éard is cóin SK ann ná na cóin phiriméadracha a dhéantar de réir chaighdeán na Seapáine, JIS R 8101, agus a dhíolann déileálaithe sa tSeapáin, mar shampla Yuko Trading (有恒商事). Cosúil le haon chón{{en: cone}}, tomhaiseann cón SK obair teasa{{en: heatwork}}, ní teocht amháin: bogann sé agus lúbann sé anonn nuair a bhíonn a ndóthain teasa faighte ag na píosaí, agus léann tú cé chomh fada a lúb sé. Oibríonn cóin fhianaise{{en: witness cone}}, léamh cé chomh fada a lúb cón, agus coinneáil{{en: hold}} dó mar a oibríonn siad d’aon chón. Ainmníonn an chuid seo córas gach cóin, agus ní iompaíonn sí uimhir SK ina huimhir de chóras eile riamh: ní féidir uimhreacha sraitheanna éagsúla cón a mhalartú.
+
+> [!NOTE]
+> Scríobh “SK” roimh an uimhir i gcónaí. Ní deir go leor seanoideas Seapánach ach “SK 8” nó “SK 9”, gan a rá cé leis an cón. Tá na huimhreacha céanna ar chóin Kyoto agus ar chóin SK de réir JIS, ach lúbann siad ag teochtaí difriúla (féach Cóin Kyoto, thíos).
+
+### Na cóin mhóra
+
+Tá dhá mhéid sa chaighdeán. Úsáidtear cóin mhóra (大型コーン) “go príomha chun méid na bácála a thomhas” (焼度測定), agus sin a theastaíonn ó photadóir. Úsáidtear cóin bheaga (SK 26 go SK 42, ag barr an raoin) “go príomha le haghaidh tástálacha teasfhulangachta”, agus ní phléitear anseo iad. Tugann an tábla thíos na cóin mhóra ó SK 022 go SK 20.
+
+Anseo téann na huimhreacha ó SK 022, an ceann is fuaire, go SK 20. Idir SK 015 agus SK 6 tá “a” ar na huimhreacha clóite (SK 015a, SK 6a); scríobh iad mar atá siad clóite.
+
+### Cóin mhóra a shuíomh
+
+Cuir gach cón mór i bplaic nó i gcnap cré, claonta i dtreo a thaoibh lúbtha. Mar is amhlaidh le haon chón, coinnigh an airde agus an claonadh mar an gcéanna ó bhácáil go bácáil, mar athraíonn difríocht i gceachtar acu cé chomh fada a lúbann sé. Cuir trí chón an phaca{{en: cone pack}} (thíos) le chéile, i bhfad isteach san áith gar do lár an lochta, áit a bhfaigheann siad an teas a fhaigheann na píosaí, ach áit ar féidir leat iad a fheiceáil trí pholl faire; sula ndúnann tú an áith, seiceáil gur féidir leat na trí cinn a fheiceáil.
+
+### Cón treorach, cón bácála agus cón cosanta
+
+Díoltar agus cuirtear cóin ina dtrí cinn: cón treorach, cón bácála ag an sprioc, agus cón cosanta. Glac mar chón bácála an uimhir SK a ainmníonn d’oideas nó do chré, mar chón treorach an chéad chón eile atá níos fuaire (an ró díreach os a chionn sa tábla), agus mar chón cosanta an chéad cheann eile atá níos teo. Nuair a thosaíonn an cón treorach ag lúbadh, tá an deireadh gar; nuair a lúbann an cón cosanta, tá an bhácáil imithe rófhada.
+
+### Cairt SK
+
+Table: Cóin mhóra SK (JIS R 8101): teocht ainmniúil (JIS) gach cóin
+Label: Cairt SK
+
+| Cón     | Teocht ainmniúil (JIS) |
+| ------- | ---------------------: |
+| SK 022  |    {{1112 °F; 600 °C}} |
+| SK 021  |    {{1202 °F; 650 °C}} |
+| SK 020  |    {{1238 °F; 670 °C}} |
+| SK 019  |    {{1274 °F; 690 °C}} |
+| SK 018  |    {{1310 °F; 710 °C}} |
+| SK 017  |    {{1346 °F; 730 °C}} |
+| SK 016  |    {{1382 °F; 750 °C}} |
+| SK 015a |    {{1454 °F; 790 °C}} |
+| SK 014a |    {{1499 °F; 815 °C}} |
+| SK 013a |    {{1535 °F; 835 °C}} |
+| SK 012a |    {{1571 °F; 855 °C}} |
+| SK 011a |    {{1616 °F; 880 °C}} |
+| SK 010a |    {{1652 °F; 900 °C}} |
+| SK 09a  |    {{1688 °F; 920 °C}} |
+| SK 08a  |    {{1724 °F; 940 °C}} |
+| SK 07a  |    {{1760 °F; 960 °C}} |
+| SK 06a  |    {{1796 °F; 980 °C}} |
+| SK 05a  |   {{1832 °F; 1000 °C}} |
+| SK 04a  |   {{1868 °F; 1020 °C}} |
+| SK 03a  |   {{1904 °F; 1040 °C}} |
+| SK 02a  |   {{1940 °F; 1060 °C}} |
+| SK 01a  |   {{1976 °F; 1080 °C}} |
+| SK 1a   |   {{2012 °F; 1100 °C}} |
+| SK 2a   |   {{2048 °F; 1120 °C}} |
+| SK 3a   |   {{2084 °F; 1140 °C}} |
+| SK 4a   |   {{2120 °F; 1160 °C}} |
+| SK 5a   |   {{2156 °F; 1180 °C}} |
+| SK 6a   |   {{2192 °F; 1200 °C}} |
+| SK 7    |   {{2246 °F; 1230 °C}} |
+| SK 8    |   {{2282 °F; 1250 °C}} |
+| SK 9    |   {{2336 °F; 1280 °C}} |
+| SK 10   |   {{2372 °F; 1300 °C}} |
+| SK 11   |   {{2408 °F; 1320 °C}} |
+| SK 12   |   {{2462 °F; 1350 °C}} |
+| SK 13   |   {{2516 °F; 1380 °C}} |
+| SK 14   |   {{2570 °F; 1410 °C}} |
+| SK 15   |   {{2615 °F; 1435 °C}} |
+| SK 16   |   {{2660 °F; 1460 °C}} |
+| SK 17   |   {{2696 °F; 1480 °C}} |
+| SK 18   |   {{2732 °F; 1500 °C}} |
+| SK 19   |   {{2768 °F; 1520 °C}} |
+| SK 20   |   {{2786 °F; 1530 °C}} |
+
+Is ainmniúil (JIS) gach figiúr: an teocht a thugann an caighdeán don chón, mar atá clóite i dtábla Yuko Trading. Ní thugann an tábla ráta téimh. Tugann an caighdeán teochtaí tagartha. Ag ráta téimh potadóra de thart ar 100 °C/h, thomhais institiúid bhardasach Kyoto a cóin Kyoto féin ag lúbadh 40–70 °C níos fuaire ná figiúr JIS na huimhreach céanna; níor aimsíomar a leithéid de thomhais do chóin SK de réir JIS. Cuir cón fianaise isteach agus déan comparáid.
+
+### Cóin Kyoto
+
+Rinne institiúid bhardasach Kyoto cóin Kyoto (京都ゼーゲル), ach ní dhéantar a thuilleadh iad: deir tuairiscí nuachta gur stop an institiúid á ndéanamh ag deireadh bhliain fhioscach 2009. Tá na huimhreacha céanna orthu agus atá ar chóin SK de réir JIS, ach lúbann siad níos fuaire: den chuid is mó, lúbann cón Kyoto ag thart ar theocht an chóin SK de réir JIS atá dhá uimhir níos fuaire. D’fhéadfadh cón Kyoto a bheith i gceist le hoideas ó Kyoto a deir “SK 8”. D’fhoilsigh an institiúid comhairle do photadóirí atá ag aistriú ó chóin Kyoto go cóin Orton, agus cuireann sí cón Orton 10 in áit a cóin Kyoto SK 12 féin; is é sin rogha na hinstitiúide óna tomhais féin ag 100 °C/h, agus ní bhaineann sé le haon chón eile.
+
+### Cóin Orton a dhíoltar sa tSeapáin
+
+Díoltar cóin fhéintacaithe Orton sa tSeapáin faoin ainm 立つゼーゲル (“Seger ina sheasamh”), mar nach bhfuil plaic ná seastán ag teastáil uathu. Is cóin Orton iad, le huimhreacha Orton agus cairt Orton (thuas): bácáil go ceann acu de réir a uimhreach Orton amháin, agus coinnigh cóin SK agus cóin Orton i bpacaí ar leith, agus ná cuir riamh sa phaca céanna iad.
+
+### Foinsí do chóin SK
+
+- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (an tábla SK, seiceáilte 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
+- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (i bhfeidhm, athdhearbhaithe 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [Institiúid Bhardasach Teicneolaíochta Tionscail agus Cultúir Kyoto: pointí le tabhairt faoi deara agus tú ag aistriú ó chóin Kyoto go cóin Orton](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
+
+:::
+
 ## Brioscbhácáil {#bisque}
 
 Is í an **bhrioscbhácáil**{{en: bisque}} (biscuit i mBéarla na Ríochta Aontaithe) an chéad bhácáil, ag teocht níos ísle, a dhéanann gréithe crua póiriúla, réidh le glónrú, as cré thirim. Bácáiltear go cón{{en: cone}} 06–04 í de ghnáth, {{1828–1945 °F; 998–1063 °C}} ar thábla Orton; is minic a bhácálann potadóirí sa Ríocht Aontaithe go dtí thart ar {{1000 °C; 1832 °F}}, gar do chón 06. Ba cheart do na brioscghréithe fanacht póiriúil, “níos mó ná 15% go ginearálta” (Digitalfire), ionas go súnn siad an t-uisce as an nglónra{{en: glaze}}. Má bhíonn an bhrioscbhácáil róbhog, glacann na píosaí an glónra róthiubh, agus scoilteann sé ansin agus **snámhann** sé{{en: crawls}} (tarraingíonn sé siar ina oileáin, ag fágáil cré lom). Leanann brioscghréithe tearcbhácáilte freisin “ag crapadh le linn na bácála glónra”, rud a mhilleann oiriúint an ghlónra{{en: glaze fit}}. Ní gá a bheith ró-chúramach leis an lódáil: féadfaidh píosaí teagmháil a dhéanamh lena chéile, is féidir clúdaigh a bhácáil ar a bpotaí, agus cuirtear babhlaí béal le béal seachas ceann istigh i gceann eile.

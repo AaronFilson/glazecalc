@@ -146,7 +146,7 @@ message. The noun and the verb both follow the number:
 **Cones.** The app's cones are **Orton cones** (American). In Slovenia potters fire by °C on a controller: the shops
 label every glaze and clay with a °C range (MR »Temperatura žganja 1220 - 1280°c«; KT »Botz tekoče glazure 1220 -
 1280°C«), and no Slovenian shop listing cones was found. Nabertherm's AC590 controller has a cone assistant and calls
-the cone »pirometrični stožec (konus)«. Seger cones, »Segerjevi stožci« (SK), are a different series whose numbers do
+the cone »pirometrični stožec (konus)«. Seger cones, »Segerjevi stožci«, are a different series whose numbers do
 not match Orton's. So:
 
 - "cone 6" → »stožec 6«; "cone 06" → »stožec 06«, read »nič šest« (the zero stays: stožec 06 is far cooler than
@@ -160,7 +160,10 @@ not match Orton's. So:
   stožci«. **Never** »višji« or »nižji« for a cone: in the cooler series a bigger number is cooler (stožec 05 is cooler
   than stožec 04), so »višji stožec« says nothing certain. A temperature stays »višja« or »nižja«.
 - **Never** write »Segerjev stožec 6«, »SK 6« or »SK 6a« for an Orton number. »Segerjevi stožci« appears only where the
-  English says "Seger cones", and then means the SK series. Avoid »konus« outside a quotation from a manual.
+  English says "Seger cones". Avoid »konus« outside a quotation from a manual.
+- **SK cones** are the Japanese cones to JIS R 8101: »stožci SK« (»po stožcih SK«, »stožec SK 8«). Always »SK« before
+  the number, as printed (»SK 6a«); never converted to an Orton number and never called »Segerjev«. Kyoto cones →
+  »kjotski stožci«; "two numbers cooler" → »za dve številki hladnejši«.
 
 **The unity formula.** **»Segerjeva formula« (f)**, with »(UMF)« after it the first time on a page: »Segerjeva formula
 (UMF)«, then »Segerjeva formula«. The app's short forms "unity formula", "Unity formula" and "Unity:" are all
@@ -400,7 +403,7 @@ No Slovenian shop selling cones was found; NAB's AC590 has a cone assistant and 
 | kiln wash                                                                   | premaz za šamotne plošče (m); ločilni premaz                                                              | MR »Premaz za šamotne plošče 2999« (»preprečuje, da bi se glazura … prijela na ploščo«); NAB: »premažite z ločilnim sredstvom«. Not washing.                                                                                                           |
 | stilt                                                                       | trinožnik (m), pl. trinožniki                                                                             | NAB: »žgite samo na trinožnikih ali trirobih letvah«; MR sells metal ones as »Trikotni kovinski podstavek«.                                                                                                                                            |
 | cookie                                                                      | podložna ploščica (f) (iz biskvita)                                                                       | No Slovenian term found. Not »piškot«.                                                                                                                                                                                                                 |
-| Seger cones, Staffordshire cones, Bullers rings, Holdcroft bars             | Segerjevi stožci (SK); stožci Staffordshire; Bullersovi obročki; Holdcroftove paličice                    | Names unchanged; "rings" and "bars" translated.                                                                                                                                                                                                        |
+| Seger cones, Staffordshire cones, Bullers rings, Holdcroft bars             | Segerjevi stožci; stožci Staffordshire; Bullersovi obročki; Holdcroftove paličice                         | Names unchanged; "rings" and "bars" translated.                                                                                                                                                                                                        |
 | Damper, Primary Air, Secondary Air, Burner, Pilots, Blower                  | Dimna loputa; Primarni zrak; Sekundarni zrak; Gorilnik; Pilotni plameni; Puhalo                           | Short column labels. NAB has »loputa za dovod zraka« for its inlet flap. The rest is plain combustion wording, no potters' source. "Pilots" are flames, not people.                                                                                    |
 | Ox Probe                                                                    | Kisikova sonda                                                                                            | Also »lambda sonda«. No potters' source.                                                                                                                                                                                                               |
 | Draw Tile                                                                   | Izvlečni vzorec                                                                                           | A test piece pulled from the kiln. No source found.                                                                                                                                                                                                    |
@@ -660,3 +663,27 @@ Added for Slovenian:
   and its Center za zastrupitve, Uradni list RS, SIST; KOPB, VL.
 - **The English loanwords Slovenian shops use as they are:** ball clay, China clay, Cornish stone, raku, tenmoku,
   Kiln-Sitter, mesh, HEPA.
+
+## 4. Added in the 2026-10 catch-up
+
+**Search terms** (titles and page descriptions): Slovenian searches pair the glaze word with the ceramics word,
+»glazura za keramiko«, »glazure za keramiko« (also »za glino«), because bare »glazura« also means icing; »recepti za
+glazure«; »Segerjeva formula (UMF)« where the English says unity formula. Landing title: »Glazecalc: brezplačen
+kalkulator glazur za keramiko«.
+
+| English                                 | Slovenian                                                    | Notes                                                             |
+| --------------------------------------- | ------------------------------------------------------------ | ----------------------------------------------------------------- |
+| control concentration (管理濃度, Japan) | nadzorna koncentracija (f)                                   | No Slovenian source; not »mejna vrednost«, which it is not.       |
+| controller (GDPR)                       | upravljavec (m)                                              | The Slovenian GDPR text.                                          |
+| legitimate interest                     | zakoniti interes (m)                                         | The Slovenian GDPR text. "Article 6(1)(b)" → »člen 6(1)(b) GDPR«. |
+| Standard Contractual Clauses            | standardne pogodbene klavzule (f pl)                         |                                                                   |
+| EU–US Data Privacy Framework            | okvir EU-ZDA za zasebnost podatkov (m)                       |                                                                   |
+| data protection authority               | nadzorni organ za varstvo podatkov (m)                       |                                                                   |
+| cookie, local storage, session storage  | piškotek (m); lokalna shramba (f); shramba seje (f)          |                                                                   |
+| sign out everywhere                     | Odjavi se povsod (button); Odjava na vseh napravah (heading) |                                                                   |
+| Keep me signed in on this device        | Ohrani prijavo v tej napravi                                 | Gender-free, unlike »Ostani prijavljen«.                          |
+| Download my data                        | Prenos mojih podatkov                                        | Heading; in running text in »…«.                                  |
+| Confirm your email (heading)            | Potrditev e-poštnega naslova                                 |                                                                   |
+| Türkiye                                 | Turčija (f)                                                  | The Slovenian country name; Turkish official names stay as given. |
+| Japan Poison Information Center         | Japonski center za informacije o zastrupitvah                | Native name in brackets as given (大阪中毒110番).                 |
+| personal protective equipment           | osebna varovalna oprema (f)                                  | Regulation (EU) 2016/425 → »Uredba (EU) 2016/425«.                |

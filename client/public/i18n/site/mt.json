@@ -64,7 +64,115 @@
   "privacy": {
     "title": "Privatezza",
     "lead": "L-aħħar aġġornament: Ottubru 2026.",
-    "shortHeading": "Fil-qosor"
+    "shortHeading": "Fil-qosor",
+    "short": "Glazecalc iżomm dak li għandu bżonn biex jaħdem il-kont tiegħek, u xejn aktar. M’hemm l-ebda reklam, l-ebda analitika u l-ebda traċċar. Id-data tiegħek qatt ma tinbiegħ, u l-unika kumpanija li tittrattaha hija Amazon Web Services, li tospita s-sit u tibgħat il-messaġġi elettroniċi tiegħu.",
+    "whoHeading": "Min hu responsabbli",
+    "who": "Glazecalc huwa proġett b’xejn, b’sors miftuħ u mingħajr skop ta’ qligħ, immexxi mis-sid tiegħu, Aaron Filson, fl-Istati Uniti. Huwa jiddeċiedi x’jiġri mid-data tiegħek, għalhekk fil-liġi dwar il-protezzjoni tad-data huwa l-“kontrollur” tagħha.",
+    "contact": "Biex tistaqsi dwar id-data tiegħek, jew biex tuża xi wieħed mid-drittijiet tiegħek, ikteb lil <mail>privacy@glazecalcapp.com</mail>. Tista’ wkoll <issues>tiftaħ issue fuq GitHub</issues>, imma l-issues huma pubbliċi: qatt ma tpoġġi fihom l-indirizz elettroniku tiegħek jew xi ħaġa personali. Il-biċċa l-kbira tal-affarijiet dwar id-data tiegħek tista’ tagħmilhom int stess fil-<account>paġna tal-kont</account> tiegħek.",
+    "storedHeading": "X’jinżamm, u għaliex",
+    "storedAccount": "<b>Il-kont tiegħek:</b> l-indirizz elettroniku tiegħek, u l-password tiegħek, maħżuna biss bħala hash f’direzzjoni waħda (bcrypt), qatt bħala l-password innifisha. Is-settings tiegħek (bħal-lingwa, ir-reġjun u l-unitajiet) u l-lista tal-materjali li għandek jinżammu miegħu. Kont għandu bżonn indirizz elettroniku, biex tidħol u biex tirrisettja password minsija. Meta toħloq kont, jintbagħat link lill-indirizz biex tikkonferma li huwa tiegħek; sa dakinhar, jintbagħtu messaġġi lilu biss meta titlob int, bħal biex tirrisettja l-password.",
+    "storedSaved": "<b>Dak li tissejvja:</b> ir-riċetti, il-materjali, l-addittivi, in-noti, ir-reġistri tal-ħami u l-pariri tiegħek, kif ktibthom. Tista’ tarahom int biss: xejn ma jinqasam bejn l-utenti.",
+    "storedTrial": "<b>Prova (“Ipprova issa”):</b> l-ebda indirizz elettroniku jew password, isem ivvintat biss bħal “speckled quiet kilns”. Jekk tidħol f’kont fl-istess brawżer waqt prova, dak li għamilt fil-prova jgħaddi fil-kont.",
+    "storedResets": "<b>Links biex tirrisettja l-password u links bil-posta elettronika:</b> liema kont talab, meta, l-indirizz li ntbagħatlu link biex jiġi kkonfermat indirizz, u impronta diġitali ta’ kull link (mhux il-link innifsu).",
+    "storedLogs": "<b>Logs:</b> is-server tal-web jirreġistra kull talba: l-indirizz IP tiegħek, il-ħin, il-paġna mitluba u l-isem tal-brawżer tiegħek. L-app tirreġistra l-iżbalji bil-paġna fejn ġraw, qatt bl-indirizz elettroniku tiegħek.",
+    "storedDeletions": "<b>Kontijiet imħassra:</b> in-numru tal-identità tal-kont u meta tħassar, u xejn aktar, biex backup irrestawrat ma jkunx jista’ jġib il-kont lura.",
+    "storedMail": "<b>Problemi bil-posta elettronika:</b> jekk messaġġ lill-indirizz tiegħek jirritorna lura jew jiġi rrappurtat bħala spam, is-servizz tal-posta elettronika ta’ Amazon iqiegħed l-indirizz f’lista ta’ indirizzi li ma jintbagħtilhomx aktar messaġġi, u jibgħat lis-sid avviż li fih l-indirizz.",
+    "storedInbound": "<b>Messaġġi li tibgħat lil Glazecalc:</b> il-messaġġi lil privacy@glazecalcapp.com u lill-indirizzi l-oħra ta’ Glazecalc jiġu ċċekkjati minn Amazon għall-ispam u għall-viruses, jinżammu f’ħażna privata, u jintbagħtu lill-inbox tas-sid stess (Gmail).",
+    "basisHeading": "Il-bażi legali",
+    "basisContract": "<b>It-tħaddim tal-kont tiegħek</b>, iż-żamma ta’ dak li tissejvja, u l-messaġġi elettroniċi dwar il-kont tiegħek huma s-servizz li tlabt: il-bażi legali hija l-kuntratt bejnek u Glazecalc (Artikolu 6(1)(b) tal-GDPR).",
+    "basisInterests": "<b>Iż-żamma tas-sit sikur u jaħdem</b>: il-logs, il-limiti fuq kemm-il darba kulħadd jista’ jipprova jidħol, il-backups, ir-rekord tal-kontijiet imħassra u l-lista tal-indirizzi li ma jintbagħtilhomx messaġġi. Dawn huma bbażati fuq l-interess leġittimu ta’ Glazecalc fis-sigurtà, fil-prevenzjoni tal-abbuż u biex ix-xogħol tiegħek ma jintilifx (Artikolu 6(1)(f)). Jinżammu għal żmien qasir u ma jintużaw għal xejn ieħor. Tista’ toġġezzjona għalihom billi tikteb lill-indirizz ta’ hawn fuq.",
+    "basisNone": "Xejn dwarek ma jiġi deċiż awtomatikament, m’hemm l-ebda tfassil ta’ profili, u xejn ma jintuża għar-reklamar.",
+    "whereHeading": "Fejn tinżamm, u min jittrattaha",
+    "hosting": "Glazecalc jaħdem fuq Amazon Web Services (AWS): is-server (EC2), il-backups (S3) u l-posta elettronika (Simple Email Service), kollha fl-Istati Uniti, f’Oregon (us-west-2). AWS tittratta d-data biss f’isem Glazecalc, skont it-<dpa>termini tagħha għall-ipproċessar tad-data</dpa>. Ħadd iżjed ma jirċeviha.",
+    "transfer": "Jekk tgħix fl-UE, fir-Renju Unit jew fl-Iżvizzera, id-data tiegħek tmur fl-Istati Uniti. Amazon tgħid li hija ċċertifikata taħt il-<dpf>Qafas tal-Privatezza tad-Data bejn l-UE u l-Istati Uniti</dpf> u l-estensjonijiet tiegħu għar-Renju Unit u għall-Iżvizzera, u t-termini ta’ AWS jinkludu l-Klawżoli Kuntrattwali Standard tal-UE, li jibqgħu japplikaw kieku l-Qafas, li issa huwa kkontestat il-qorti, kellu jiġi annullat. Is-sid u AWS it-tnejn jinsabu fl-Istati Uniti, u l-liġi tal-Istati Uniti tista’ tobbligahom jgħaddu d-data.",
+    "noThirdParties": "Il-brawżer tiegħek ma jgħabbi xejn minn siti oħra: l-ebda font, script, stampa jew analitika minn postijiet oħra, u s-settings tas-sigurtà tas-sit jimblokkawhom. Il-links għal GitHub u għal siti oħra jinfetħu biss meta tikklikkja fuqhom.",
+    "choiceHeading": "Fejn jinżamm il-kont tiegħek, u l-għażla tiegħek",
+    "choiceProject": "Glazecalc huwa proġett b’xejn u b’sors miftuħ. Il-kontijiet, u kulma fihom, jinżammu fuq servers fl-Istati Uniti, tgħix fejn tgħix, kif spjegat hawn fuq.",
+    "choiceNoAccount": "M’għandekx bżonn kont biex taqra l-gwidi, u tista’ tipprova l-kalkulatur b’“Ipprova issa”, mingħajr indirizz elettroniku jew password. Prova tinżamm fuq l-istess servers għal 14-il jum.",
+    "choiceOwnCopy": "Kulħadd jista’ jħaddem kopja tiegħu stess ta’ Glazecalc, fuq il-kompjuter jew is-server tiegħu: il-kodiċi huwa b’xejn fuq <source>GitHub</source>.",
+    "choiceDecision": "Jekk toħloqx kont hawn, billi taf li jinżamm fl-Istati Uniti, hija deċiżjoni tiegħek.",
+    "choiceNoWarranty": "Glazecalc huwa pprovdut kif inhu, mingħajr garanzija. Il-persuni li jieħdu ħsiebu ma jaċċettaw l-ebda responsabbiltà jew obbligu legali għad-deċiżjoni tiegħek li toħloq kont, jew għall-post fejn tinżamm id-data tiegħu.",
+    "keptHeading": "Għal kemm żmien tinżamm",
+    "keptAccount": "<b>Il-kont tiegħek u dak li tissejvja:</b> sakemm tħassarhom. Il-kontijiet ma jitneħħewx għax ma jkunux qed jintużaw.",
+    "keptTrial": "<b>Prova:</b> 14-il jum mill-bidu tagħha, imbagħad titħassar b’kulma fiha, sakemm ma toħloqx kont biex iżżommha.",
+    "keptResets": "<b>Links biex tirrisettja l-password u links bil-posta elettronika:</b> link biex tirrisettja l-password jaħdem għal 30 minuta u r-rekord tiegħu jitħassar wara madwar siegħa; link biex tikkonferma indirizz jaħdem, u jinżamm, għal 24 siegħa.",
+    "keptBackups": "<b>Backups:</b> kopji kriptati tad-database jinżammu 30 jum, u kopji tad-diska tas-server 7 ijiem. Għalhekk kont imħassar ikun spiċċa minn kull backup fi żmien 30 jum.",
+    "keptDeletions": "<b>Ir-rekord ta’ kont imħassar:</b> 37 jum, ftit aktar minn kull backup.",
+    "keptLogs": "<b>Logs:</b> dawk tas-server tal-web, 14-il jum. Il-logs tal-app u tad-database huma limitati skont id-daqs (50 MB kull wieħed), li fuq sit kwiet ikopru diversi jiem lura. Il-kopji tad-diska tas-server iżommu l-logs sa 7 ijiem oħra.",
+    "keptMail": "<b>Il-lista tal-indirizzi li ma jintbagħtilhomx messaġġi:</b> sakemm is-sid ineħħi indirizz, li jagħmel kull xahar għall-indirizzi li ma għadhomx ta’ xi kont. Is-sid iħassar l-avviżi tal-messaġġi li rritornaw lura fi żmien 30 jum.",
+    "keptInbound": "<b>Messaġġi li tibgħat lil Glazecalc:</b> 30 jum fil-ħażna ta’ Amazon, u fl-inbox tas-sid sakemm jieħu biex iwieġbek. Għal talba dwar id-data tiegħek, tinżamm nota qasira (meta waslet, x’intalab u x’sar) għal tliet snin.",
+    "rightsHeading": "Id-drittijiet tiegħek",
+    "rightsIntro": "Tista’ tara, tikkoreġi, tieħu u tħassar id-data tiegħek. Il-biċċa l-kbira tista’ tagħmilha int stess fil-<account>paġna tal-kont</account> tiegħek:",
+    "rightsExport": "<b>Araha u ħudha miegħek:</b> Niżżel id-data tiegħi jissejvja kollox f’fajl wieħed (JSON), u r-riċetti u l-materjali tiegħek bħala spreadsheets (CSV).",
+    "rightsCorrect": "<b>Ikkoreġiha:</b> ibdel is-settings u r-rekords tiegħek meta trid. Biex tibdel l-indirizz elettroniku tiegħek, iftaħ il-link mibgħut lill-indirizz il-ġdid; l-indirizz il-qadim, jekk kien ikkonfermat, jiġi infurmat bil-bidla, u kull apparat joħroġ mill-kont.",
+    "rightsDelete": "<b>Ħassarha:</b> Ħassar il-kont tiegħi jneħħi l-kont tiegħek u kulma ssejvjajt minnufih, u “Warrab il-prova” jagħmel l-istess għal prova. Il-kopji fil-backups jispiċċaw fi żmien 30 jum.",
+    "rightsSignOut": "<b>Oħroġ minn kull apparat:</b> itemm is-sessjonijiet tal-kont tiegħek fuq kull apparat.",
+    "rightsAsk": "Għal kull ħaġa oħra, bħal biex titlob li d-data tiegħek ma tintużax sakemm jiġi kkoreġut żball, jew biex toġġezzjona għal kif tintuża, ikteb lil <mail>privacy@glazecalcapp.com</mail>. Huwa b’xejn, u jkollok tweġiba fi żmien xahar. Tintalab biss turi li l-kont huwa tiegħek, billi tidħol fih jew billi tiftaħ link mibgħut lill-indirizz tiegħu, qatt biex turi dokument tal-identità.",
+    "rightsComplain": "Jekk m’intix sodisfatt, tista’ tressaq ilment quddiem awtorità tal-protezzjoni tad-data: fl-UE, <edpb>l-awtorità tal-pajjiż tiegħek</edpb>, u fir-Renju Unit, l-<ico>Information Commissioner's Office</ico>.",
+    "storageHeading": "Cookies u l-ħażna tal-brawżer",
+    "storageIntro": "Glazecalc juża cookie waħda u jżomm ftit valuri żgħar fil-brawżer tiegħek. Kull wieħed minnhom hemm għal xi ħaġa li tlabt int: biex tibqa’ dieħel, jew biex tiftakar għażla li għamilt. L-ebda wieħed ma jsegwik u l-ebda wieħed ma jinqasam, għalhekk il-liġi ma titlobx li l-ewwel tistaqsi, u m’hemm l-ebda banner tal-cookies.",
+    "storageLabel": "Cookies u l-ħażna tal-brawżer",
+    "storageName": "Isem",
+    "storagePurpose": "Għal xiex inhu",
+    "storageLasts": "Kemm idum",
+    "storageCookie": "Cookie",
+    "storageLocal": "Ħażna lokali",
+    "storageSession": "Ħażna tas-sessjoni",
+    "storageNote": "Tista’ tħassar kwalunkwe wieħed minn dawn fis-settings tal-brawżer tiegħek meta trid. Jekk tħassar il-kont tiegħek, titneħħa n-nota tad-dħul u kull setting miżmum hawn.",
+    "keys": {
+      "cookie": {
+        "purpose": "Iżommok dieħel. Fiha t-token tad-dħul tiegħek. L-iscripts fuq il-paġna ma jistgħux jaqrawha, u l-brawżer tiegħek jibgħatha biss lis-server ta’ Glazecalc stess, permezz ta’ HTTPS, u qatt ma’ talba li tibda f’sit ieħor.",
+        "lasts": "Tiġi ssettjata meta tidħol, toħloq kont jew tibda prova. Sakemm tagħlaq il-brawżer tiegħek, jew għal 7 ijiem jekk timmarka “Żommni dieħel f’dan l-apparat”; 14-il jum għal prova. Meta toħroġ, titneħħa."
+      },
+      "session": {
+        "purpose": "Tinnota li dħalt, f’kont jew fi prova, biex l-app tkun taf li għandha tistaqsi lis-server. Ma fiha l-ebda token jew password.",
+        "lasts": "Sakemm toħroġ jew tispiċċa s-sessjoni."
+      },
+      "trial": {
+        "purpose": "Waqt prova, l-isem tagħha u meta tispiċċa, biex jintwerew.",
+        "lasts": "Sakemm tispiċċa l-prova, jew tinżamm jew titwarrab."
+      },
+      "settings": {
+        "purpose": "Setting li bdilt f’dan il-brawżer, biex il-paġna li jmiss turih minnufih, qabel ma jwieġeb is-server. <code>theme</code> u <code>palette</code> jagħtu l-kulur lill-paġna qabel ma tidher, u <code>language</code> jiftaħ il-paġni bil-lingwa tiegħek.",
+        "lasts": "Sakemm tibdlu. Meta toħroġ, terġa’ tidher l-għażla li kont għamilt meta ma kontx dieħel, jekk għamilt waħda, u l-bqija jitneħħa."
+      },
+      "visitor": {
+        "purpose": "Il-lingwa li għażilt, jew li għalaqt l-avviż tat-traduzzjoni, meta ma kontx dieħel, biex terġa’ tidher meta toħroġ.",
+        "lasts": "Sakemm tħassar il-ħażna tal-brawżer tiegħek jew tħassar kont f’dan il-brawżer."
+      },
+      "region": {
+        "purpose": "Il-filtru tar-reġjun fuq lista tal-librerija.",
+        "lasts": "Sakemm terġa’ tissettja l-filtru għar-reġjuni kollha."
+      },
+      "includeAdditives": {
+        "purpose": "Jekk ir-riċetti l-ġodda jgħoddux l-addittivi tagħhom fil-formula ta’ Seger, kif għażilt l-aħħar darba.",
+        "lasts": "Sakemm tħassar il-ħażna tal-brawżer tiegħek."
+      },
+      "recipeHelp": {
+        "purpose": "Li ħbejt l-għajnuna fil-paġna tar-riċetta.",
+        "lasts": "Sakemm terġa’ turi l-għajnuna."
+      },
+      "print": {
+        "purpose": "L-aħħar għażliet tiegħek għall-ipprintjar ta’ riċetta: ir-riċetta kollha jew taħlita, u d-daqs tat-taħlita.",
+        "lasts": "Sakemm tħassar il-ħażna tal-brawżer tiegħek."
+      },
+      "token": {
+        "purpose": "Token tad-dħul minn verżjoni qadima ta’ Glazecalc. Illum qatt ma jinkiteb.",
+        "lasts": "Jitneħħa meta tinfetaħ paġna."
+      },
+      "readEnglish": {
+        "purpose": "Li għażilt li taqra paġna tradotta bl-Ingliż, biex l-app tieqaf teħdok lejn il-lingwa tiegħek.",
+        "lasts": "Sakemm tagħlaq it-tab."
+      },
+      "reloadedFor": {
+        "purpose": "Wara li toħroġ verżjoni ġdida tas-sit, liema paġna reġgħet ingħabbiet u meta, biex paġna ma terġax tingħabba aktar minn darba fil-minuta.",
+        "lasts": "Sakemm tagħlaq it-tab."
+      }
+    },
+    "childrenHeading": "It-tfal",
+    "children": "Glazecalc huwa għodda għall-fuħħarin u mhuwiex immirat lejn it-tfal.",
+    "changesHeading": "Bidliet",
+    "changes": "Jekk dan l-avviż jinbidel, tinbidel ukoll id-data tal-aħħar aġġornament fil-quċċata tal-paġna."
   },
   "notFound": {
     "heading": "Il-paġna ma nstabitx",

@@ -5,10 +5,12 @@ import { formatFormula } from '../../../../lib/chemistry';
 import { ApiResourceFactory } from '../../core/api-resource.service';
 import { errorMessage } from '../../core/error-message';
 import { Material } from '../../core/models';
+import { PAGE_LANGUAGE } from '../../i18n/language';
 import { Busy } from '../../shared/busy';
 import { ChemistryForm } from '../../shared/chemistry-form';
 import { FieldCheck } from '../../shared/field-checks';
 import { PlainPipe } from '../../shared/format-pipes';
+import { byNameIn } from '../../shared/library-info';
 import { NumberInput } from '../../shared/number-input';
 import { Notices, NoticesList } from '../../shared/notices';
 import { FIRED_OXIDES, fieldsText, firstOf } from '../../shared/options';
@@ -33,6 +35,7 @@ import { StandardList } from '../../shared/standard-list';
 })
 export class MaterialPage implements OnInit {
   private readonly materials = inject(ApiResourceFactory).for<Material>('materials');
+  private readonly language = inject(PAGE_LANGUAGE);
 
   protected readonly oxides = FIRED_OXIDES;
   protected readonly firstOf = firstOf;
@@ -47,9 +50,7 @@ export class MaterialPage implements OnInit {
   protected readonly standardMaterials = signal<Material[]>([]);
   /** The standard list could not be fetched: the list says so, and offers to try again. */
   protected readonly standardFailed = signal(false);
-  protected readonly sortedMyMaterials = computed(() =>
-    [...this.myMaterials()].sort((a, b) => a.name.localeCompare(b.name))
-  );
+  protected readonly sortedMyMaterials = computed(() => [...this.myMaterials()].sort(byNameIn(this.language)));
   protected readonly removal = new Removal(this.materials, this.myMaterials, this.notices, (material) => material.name);
 
   ngOnInit(): void {

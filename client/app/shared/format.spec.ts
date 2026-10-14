@@ -47,6 +47,12 @@ describe('numbers, dates and temperatures as the reader writes them', () => {
     ]).toEqual([1250, 1.25, 1250]);
     // Arabic-Indic, Devanagari and Bengali digits, and the Arabic decimal mark.
     expect([read('١٢٫٥'), read('१२.५'), read('১২,৫')]).toEqual([12.5, 12.5, 12.5]);
+    // Full-width digits and marks, as a Japanese or Chinese keyboard types them,
+    // and the ideographic full stop between digits.
+    expect([read('１２．５'), read('１２，５'), read('12。5'), read('１，２３４．５'), read('－３')]).toEqual([
+      12.5, 12.5, 12.5, 1234.5, -3
+    ]);
+    expect([read('12。'), read('。5'), read('1。2。3')]).toEqual([null, null, null]);
     // Not numbers.
     for (const text of ['', 'abc', '1e3', '0x10', '12,5,3', '1.2.3,4,5', '12,', '1 23', '12.5.', 'Infinity', '--3']) {
       expect(read(text), text).toBeNull();

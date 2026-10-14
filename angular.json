@@ -45,8 +45,10 @@
             "production": {
               "budgets": [
                 {
+                  // 650 kB before hydration (docs/seo-plan.md), which adds about 32 kB, and
+                  // about 10 kB for the Asian font stacks and script rules.
                   "type": "initial",
-                  "maximumWarning": "650kB",
+                  "maximumWarning": "710kB",
                   "maximumError": "1MB"
                 },
                 {
@@ -67,6 +69,23 @@
                   "inlineCritical": false
                 },
                 "fonts": true
+              }
+            },
+            "prerender": {
+              "outputPath": "dist/prerender",
+              "server": "client/main.server.ts",
+              "prerender": false,
+              "ssr": {
+                "entry": "client/server-entry.ts"
+              },
+              "outputHashing": "none",
+              "optimization": {
+                "scripts": true,
+                "styles": {
+                  "minify": true,
+                  "inlineCritical": false
+                },
+                "fonts": false
               }
             },
             "development": {

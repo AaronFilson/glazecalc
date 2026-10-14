@@ -17,7 +17,17 @@ import records from './routes/records.ts';
 import userRoutes from './routes/user_routes.ts';
 import { say } from './lib/messages.ts';
 import { appUrl } from './lib/mailer.ts';
-import { isPage, looksLikeFile, pageHtml, sitemap, withoutSlash, type PageText } from './lib/pages.ts';
+import {
+  isPage,
+  looksLikeFile,
+  pageHtml,
+  prerenderedKey,
+  sitemap,
+  withNonce,
+  withoutSlash,
+  type PageText
+} from './lib/pages.ts';
+import { loadPrerendered } from './lib/prerendered.ts';
 import languages from '../lib/regions/languages.js';
 
 const app = express();
@@ -89,17 +99,25 @@ app.use('/api', api);
 // Angular's hashed output: main-ABC12345.js, chunk-B5MvkF-K.js, styles-74GVMONM.css.
 const HASHED = /^(main|polyfills|styles|chunk)-[A-Za-z0-9_-]{8,}\.(js|css)$/;
 const CLIENT = path.join(import.meta.dirname, '..', 'dist', 'glazecalc', 'browser');
+// The public pages as the build rendered them (npm run build), read when first asked for.
+const PRERENDERED = path.join(import.meta.dirname, '..', 'dist', 'glazecalc', 'prerendered');
+let prerendered: Promise<Map<string, string>> | undefined;
+const missing = new Set<string>();
 
 /** The request's query string, with its ?, or ''. */
 const queryOf = (req: Request): string => (req.url.includes('?') ? req.url.slice(req.url.indexOf('?')) : '');
 
-// English pages are at the plain paths (/guides), so /en/guides goes there.
-// Always to a path on this site: /en//other.example and /en/\other.example
-// go to /other.example, never to the other site (//other.example).
+// English pages are at the plain paths (/guides), so /en/guides (and
+// /EN/guides) goes there. Always to a path on this site: /en//other.example
+// and /en/\other.example go to /other.example, never to the other site
+// (//other.example). Another language's code written in other letters goes
+// to the code as written: /zh-hans/recipe to /zh-Hans/recipe.
 app.use((req, res, next) => {
-  const english = /^\/en(\/.*)?$/.exec(req.path);
-  if (!english || (req.method !== 'GET' && req.method !== 'HEAD')) return next();
-  return res.redirect(301, '/' + (english[1] ?? '').replace(/^[/\\]+/, '') + queryOf(req));
+  if (req.method !== 'GET' && req.method !== 'HEAD') return next();
+  const english = /^\/en(\/.*)?$/i.exec(req.path);
+  if (english) return res.redirect(301, '/' + (english[1] ?? '').replace(/^[/\\]+/, '') + queryOf(req));
+  const written = languages.canonicalLanguagePath(req.path);
+  return written ? res.redirect(301, written + queryOf(req)) : next();
 });
 
 app.get('/sitemap.xml', (req, res) => {
@@ -158,20 +176,46 @@ app.use(async (req, res, next) => {
   if ((req.method !== 'GET' && req.method !== 'HEAD') || looksLikeFile(req.path)) return next();
   const bare = withoutSlash(req.path);
   if (bare) return res.redirect(301, bare + queryOf(req));
-  let html: string;
-  try {
-    html = await readFile(path.join(CLIENT, 'index.html'), 'utf8');
-  } catch {
-    return next();
+  // A public page in a language offered is sent as it was rendered, if it was.
+  const key = prerenderedKey(req.path);
+  let html: string | undefined;
+  if (key) {
+    const pages = await (prerendered ??= loadPrerendered(PRERENDERED));
+    // Nothing yet (no build): look again next time rather than keep nothing.
+    if (!pages.size) prerendered = undefined;
+    html = pages.get(key);
   }
-  const text = await pageText(languages.languageOfPath(req.path));
+  const rendered = html !== undefined;
+  if (key && !rendered && !missing.has(key)) {
+    // Once for each page: the page still works from index.html, only slower to show.
+    missing.add(key);
+    log.warn('Prerendered page missing, sending index.html', { page: key });
+  }
+  if (html === undefined) {
+    try {
+      html = await readFile(path.join(CLIENT, 'index.html'), 'utf8');
+    } catch {
+      return next();
+    }
+  }
+  const code = languages.languageOfPath(req.path);
+  const text = await pageText(code);
   // A new nonce for each reply, given to Angular (ngCspNonce) for its styles.
   const nonce = crypto.randomBytes(16).toString('base64');
-  res.set('Cache-Control', 'no-cache').set('Content-Security-Policy', contentSecurityPolicy(nonce));
+  // Content-Language is for search engines that read no hreflang (Baidu) and for Bing.
+  res
+    .set('Cache-Control', 'no-cache')
+    .set('Content-Security-Policy', contentSecurityPolicy(nonce))
+    .set('Content-Language', code);
   return res
     .status(isPage(req.path) ? 200 : 404)
     .type('html')
-    .send(pageHtml(html, req.path, appUrl(), text).replace('<gc-root>', `<gc-root ngCspNonce="${nonce}">`));
+    .send(
+      withNonce(pageHtml(html, req.path, appUrl(), text, undefined, rendered), nonce).replace(
+        '<gc-root>',
+        `<gc-root ngCspNonce="${nonce}">`
+      )
+    );
 });
 
 interface HttpError extends Error {

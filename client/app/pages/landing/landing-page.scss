@@ -11,6 +11,13 @@
   }
 }
 
+// The panels below the opening are laid out once they are near the window. Their formulas (K₂O, SiO₂) are
+// set in Noto Serif's math file (65 kB), which would otherwise be fetched before the first paint.
+.hero ~ .panel {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 30rem;
+}
+
 .eyebrow {
   color: var(--gc-accent);
   font-weight: 700;
@@ -18,6 +25,11 @@
   letter-spacing: 0.08em;
   font-size: 0.85rem;
   margin-bottom: 0.5rem;
+
+  // Japanese, Chinese and Korean have no capitals, and spaced-out characters read as separate words.
+  &:is(:lang(ja), :lang(zh), :lang(ko)) {
+    letter-spacing: normal;
+  }
 }
 
 .hero h1 {

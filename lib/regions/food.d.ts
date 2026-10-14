@@ -6,7 +6,7 @@ export interface FoodLimit {
   category: string;
   lead: number;
   cadmium?: number;
-  /** As the law states it: mg/dm², mg/L, µg/dm², µg/L or µg/mL. */
+  /** As the law states it: mg/dm², mg/L, µg/dm², µg/L, µg/mL or µg/cm² (Japan's flat ware). */
   unit: string;
   /** How a sample is judged, where the law says: 'average' of six, or 'each' of six. */
   judged?: 'average' | 'each';
@@ -21,6 +21,8 @@ export interface FoodRules {
   /** YYYY-MM-DD */
   inForce?: string;
   limits: FoodLimit[];
+  /** Where the law says a piece passes at the limit itself (Japan's 以下: at most). */
+  atMost?: boolean;
   status: Status;
   checked: string;
   note?: string;

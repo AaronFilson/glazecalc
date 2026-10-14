@@ -1,0 +1,23 @@
+{
+  "unknown-compound": "化学式に不明な化合物 {compound} があります。",
+  "unknown-oxide": "原料 {material} に不明な酸化物 {oxide} があります。",
+  "invalid-oxide-amount": "原料 {material} の {oxide} の量が正しくありません。",
+  "loi-range": "{material} の Ig.loss は0以上100未満でなければなりません。",
+  "no-oxides": "原料 {material} には酸化物がありません。",
+  "no-name": "原料には名前が必要です。",
+  "no-analysis": "原料 {material} には化学式または分析値が必要です。",
+  "recipe-shape": "調合は '{ material, amount }' の配列か、量のマップでなければなりません。",
+  "invalid-amount": "原料 {material} の量が正しくありません。",
+  "missing-material": "調合の行に原料がありません。",
+  "unknown-material": "不明な原料 {material} です。",
+  "no-flux": "調合に媒溶剤の酸化物が含まれていないため、ゼーゲル式を求められません。",
+  "no-target": "目標の式に、目指す酸化物がありません。",
+  "no-materials": "計算する原料がありません。",
+  "no-temperature": "ホウ素の量を決めるには焼成温度が必要です。",
+  "no-flux-to-rebuild": "この釉薬には、作り直すための媒溶剤がありません。",
+  "unknown-element": "{formula} に不明な元素 {element} があります。",
+  "bad-formula": "化学式 {formula} を解析できませんでした。",
+  "analysis-total": "{material} の分析値の合計は、Ig.loss を含めて {total}% です。約100%になるはずです。",
+  "stored-equivalent": "保存されている {material} の当量が化学式と Ig.loss に一致しないため、代わりに化学式と Ig.loss を使いました。",
+  "trace-flux": "調合に含まれる媒溶剤の酸化物がごく微量のため、ゼーゲル式に意味がありません。"
+}

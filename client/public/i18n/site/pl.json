@@ -64,7 +64,115 @@
   "privacy": {
     "title": "Prywatność",
     "lead": "Ostatnia aktualizacja: październik 2026 r.",
-    "shortHeading": "W skrócie"
+    "shortHeading": "W skrócie",
+    "short": "Glazecalc przechowuje to, czego potrzebuje do prowadzenia konta, i nic więcej. Nie ma reklam, analityki ani śledzenia. Dane nigdy nie są sprzedawane, a jedyną firmą, która je przetwarza, jest Amazon Web Services, która utrzymuje stronę i wysyła z niej wiadomości e-mail.",
+    "whoHeading": "Kto jest odpowiedzialny",
+    "who": "Glazecalc to bezpłatny, niekomercyjny projekt open source, prowadzony przez jego właściciela, Aarona Filsona, w Stanach Zjednoczonych. To on decyduje o tym, co dzieje się z danymi, dlatego w rozumieniu przepisów o ochronie danych jest ich „administratorem”.",
+    "contact": "Aby zapytać o swoje dane lub skorzystać z któregokolwiek z przysługujących praw, należy napisać na adres <mail>privacy@glazecalcapp.com</mail>. Można też <issues>zgłosić sprawę w serwisie GitHub</issues>, ale zgłoszenia są publiczne: nigdy nie należy umieszczać w nich adresu e-mail ani niczego osobistego. Większość spraw dotyczących danych można załatwić samodzielnie na <account>stronie konta</account>.",
+    "storedHeading": "Co jest przechowywane i dlaczego",
+    "storedAccount": "<b>Konto:</b> adres e-mail oraz hasło, przechowywane wyłącznie jako jednokierunkowy skrót (bcrypt), nigdy jako samo hasło. Razem z nimi przechowywane są ustawienia (np. język, region i jednostki) oraz lista posiadanych surowców. Konto wymaga adresu e-mail, aby można było się logować i zresetować zapomniane hasło. Po założeniu konta na ten adres wysyłany jest link, który potwierdza, że to własny adres osoby zakładającej konto; do tego czasu wiadomości trafiają na niego tylko na prośbę, np. przy resetowaniu hasła.",
+    "storedSaved": "<b>Zapisane dane:</b> receptury, surowce, dodatki, notatki, dzienniki wypałów i porady, w takiej postaci, w jakiej zostały zapisane. Widzi je tylko właściciel konta: nic nie jest udostępniane między użytkownikami.",
+    "storedTrial": "<b>Okres próbny („Wypróbuj teraz”):</b> bez adresu e-mail i hasła, tylko wymyślona nazwa, np. „speckled quiet kilns”. Jeśli w trakcie okresu próbnego nastąpi zalogowanie na konto w tej samej przeglądarce, to, co powstało w okresie próbnym, zostanie przeniesione na konto.",
+    "storedResets": "<b>Linki do resetowania hasła i linki e-mail:</b> które konto poprosiło o link i kiedy, adres, na który wysłano link potwierdzający adres, oraz odcisk każdego linku (a nie sam link).",
+    "storedLogs": "<b>Logi:</b> serwer WWW zapisuje każde żądanie: adres IP, czas, żądaną stronę i nazwę przeglądarki. Aplikacja zapisuje błędy wraz ze stroną, na której wystąpiły, nigdy z adresem e-mail.",
+    "storedDeletions": "<b>Usunięte konta:</b> numer identyfikacyjny konta i data jego usunięcia, nic więcej, aby przywrócona kopia zapasowa nie mogła przywrócić konta.",
+    "storedMail": "<b>Problemy z pocztą:</b> jeśli wiadomość na dany adres wróci jako niedoręczona lub zostanie zgłoszona jako spam, usługa poczty e-mail firmy Amazon umieszcza adres na liście adresów, na które nie wysyła się już wiadomości, i wysyła właścicielowi powiadomienie zawierające ten adres.",
+    "storedInbound": "<b>Poczta wysyłana do projektu Glazecalc:</b> wiadomości na adres privacy@glazecalcapp.com i inne adresy projektu Glazecalc są sprawdzane przez Amazon pod kątem spamu i wirusów, przechowywane w prywatnym magazynie i przekazywane do własnej skrzynki odbiorczej właściciela (Gmail).",
+    "basisHeading": "Podstawa prawna",
+    "basisContract": "<b>Prowadzenie konta</b>, przechowywanie zapisanych danych i wiadomości e-mail dotyczące konta to usługa, o którą prosi użytkownik: podstawą prawną jest umowa między użytkownikiem a projektem Glazecalc (art. 6 ust. 1 lit. b RODO).",
+    "basisInterests": "<b>Dbanie o bezpieczeństwo i działanie strony</b>: logi, limity tego, jak często można próbować się zalogować, kopie zapasowe, rejestr usuniętych kont i lista adresów, na które nie wysyła się wiadomości. Opierają się one na prawnie uzasadnionym interesie projektu Glazecalc, jakim jest bezpieczeństwo, zapobieganie nadużyciom i niedopuszczenie do utraty pracy użytkowników (art. 6 ust. 1 lit. f). Są przechowywane krótko i nie służą niczemu innemu. Można wnieść wobec nich sprzeciw, pisząc na powyższy adres.",
+    "basisNone": "Żadne decyzje dotyczące użytkownika nie są podejmowane automatycznie, nie ma profilowania, a nic nie jest wykorzystywane do celów reklamowych.",
+    "whereHeading": "Gdzie dane są przechowywane i kto je przetwarza",
+    "hosting": "Glazecalc działa w Amazon Web Services (AWS): serwer (EC2), kopie zapasowe (S3) i poczta e-mail (Simple Email Service), wszystko w Stanach Zjednoczonych, w Oregonie (us-west-2). AWS przetwarza dane wyłącznie w imieniu projektu Glazecalc, zgodnie ze swoimi <dpa>warunkami przetwarzania danych</dpa>. Nikt inny ich nie otrzymuje.",
+    "transfer": "W przypadku osób mieszkających w UE, Wielkiej Brytanii lub Szwajcarii dane są przekazywane do Stanów Zjednoczonych. Amazon podaje, że ma certyfikację w ramach <dpf>Ram ochrony danych UE–USA</dpf> oraz ich rozszerzeń dla Wielkiej Brytanii i Szwajcarii, a warunki AWS obejmują standardowe klauzule umowne UE, które nadal miałyby zastosowanie, gdyby Ramy, obecnie kwestionowane przed sądem, zostały unieważnione. Właściciel i AWS znajdują się w USA, a prawo USA może zobowiązać ich do przekazania danych.",
+    "noThirdParties": "Przeglądarka nie wczytuje niczego z innych stron: żadnych czcionek, skryptów, obrazów ani analityki z zewnątrz, a ustawienia bezpieczeństwa strony je blokują. Linki do serwisu GitHub i innych stron otwierają się tylko po kliknięciu.",
+    "choiceHeading": "Gdzie przechowywane jest konto i własna decyzja",
+    "choiceProject": "Glazecalc to bezpłatny projekt open source. Konta i wszystko, co zawierają, są przechowywane na serwerach w Stanach Zjednoczonych, niezależnie od miejsca zamieszkania, jak opisano powyżej.",
+    "choiceNoAccount": "Do czytania poradników konto nie jest potrzebne, a kalkulator można wypróbować przyciskiem „Wypróbuj teraz”, bez adresu e-mail i hasła. Okres próbny jest przechowywany na tych samych serwerach przez 14 dni.",
+    "choiceOwnCopy": "Każdy może uruchomić własną kopię aplikacji Glazecalc, na własnym komputerze lub serwerze: kod jest bezpłatnie dostępny w serwisie <source>GitHub</source>.",
+    "choiceDecision": "O tym, czy założyć tu konto, wiedząc, że jest ono przechowywane w Stanach Zjednoczonych, każdy decyduje sam.",
+    "choiceNoWarranty": "Glazecalc jest udostępniany w stanie, w jakim jest, bez gwarancji. Jego opiekunowie nie przyjmują żadnej odpowiedzialności, w tym prawnej, za decyzję o założeniu konta ani za to, gdzie przechowywane są jego dane.",
+    "keptHeading": "Jak długo dane są przechowywane",
+    "keptAccount": "<b>Konto i zapisane dane:</b> do czasu ich usunięcia. Konta nie są usuwane z powodu nieużywania.",
+    "keptTrial": "<b>Okres próbny:</b> 14 dni od jego rozpoczęcia, potem zostaje usunięty wraz z całą zawartością, chyba że zostanie założone konto, aby go zachować.",
+    "keptResets": "<b>Linki do resetowania hasła i linki e-mail:</b> link do resetowania hasła działa przez 30 minut, a jego zapis jest usuwany po około godzinie; link potwierdzający adres działa i jest przechowywany przez 24 godziny.",
+    "keptBackups": "<b>Kopie zapasowe:</b> zaszyfrowane kopie bazy danych są przechowywane przez 30 dni, a kopie dysku serwera przez 7 dni. Usunięte konto znika więc ze wszystkich kopii zapasowych w ciągu 30 dni.",
+    "keptDeletions": "<b>Zapis o usuniętym koncie:</b> 37 dni, czyli nieco dłużej niż jakakolwiek kopia zapasowa.",
+    "keptLogs": "<b>Logi:</b> logi serwera WWW – 14 dni. Własne logi aplikacji i bazy danych są ograniczone rozmiarem (po 50 MB), co na mało odwiedzanej stronie obejmuje kilka ostatnich dni. Kopie dysku serwera przechowują logi jeszcze do 7 dni dłużej.",
+    "keptMail": "<b>Lista adresów, na które nie wysyła się wiadomości:</b> do czasu usunięcia adresu przez właściciela, co robi on co miesiąc w przypadku adresów, które nie należą już do żadnego konta. Właściciel usuwa powiadomienia o niedoręczeniu w ciągu 30 dni.",
+    "keptInbound": "<b>Poczta wysyłana do projektu Glazecalc:</b> 30 dni w magazynie Amazon, a w skrzynce właściciela tak długo, jak trwa udzielenie odpowiedzi. W przypadku prośby dotyczącej danych krótka notatka (kiedy wpłynęła, o co poproszono i co zrobiono) jest przechowywana przez trzy lata.",
+    "rightsHeading": "Prawa użytkownika",
+    "rightsIntro": "Dane można przeglądać, poprawiać, przenosić i usuwać. Większość z tego można zrobić samodzielnie na <account>stronie konta</account>:",
+    "rightsExport": "<b>Wgląd i przeniesienie danych:</b> sekcja Pobieranie moich danych zapisuje wszystko w jednym pliku (JSON), a receptury i surowce jako arkusze kalkulacyjne (CSV).",
+    "rightsCorrect": "<b>Poprawianie:</b> ustawienia i zapisy można zmieniać w dowolnym momencie. Aby zmienić adres e-mail, należy otworzyć link wysłany na nowy adres; stary adres, jeśli był potwierdzony, otrzymuje powiadomienie o zmianie, a wszystkie urządzenia zostają wylogowane.",
+    "rightsDelete": "<b>Usuwanie:</b> przycisk Usuń moje konto od razu usuwa konto i wszystko, co zostało zapisane, a przycisk Zakończ okres próbny robi to samo z okresem próbnym. Kopie w kopiach zapasowych znikają w ciągu 30 dni.",
+    "rightsSignOut": "<b>Wylogowanie ze wszystkich urządzeń:</b> kończy sesje konta na wszystkich urządzeniach.",
+    "rightsAsk": "W każdej innej sprawie, np. aby poprosić o wstrzymanie wykorzystywania danych do czasu poprawienia błędu lub aby wnieść sprzeciw wobec sposobu ich wykorzystywania, należy napisać na adres <mail>privacy@glazecalcapp.com</mail>. Jest to bezpłatne, a odpowiedź nadejdzie w ciągu miesiąca. Poprosimy jedynie o wykazanie, że konto należy do osoby piszącej, przez zalogowanie się lub otwarcie linku wysłanego na adres konta, nigdy o dokument tożsamości.",
+    "rightsComplain": "W razie niezadowolenia można złożyć skargę do organu ochrony danych: w UE do <edpb>organu we własnym kraju</edpb>, a w Wielkiej Brytanii do <ico>Information Commissioner’s Office</ico>.",
+    "storageHeading": "Pliki cookie i pamięć przeglądarki",
+    "storageIntro": "Glazecalc ustawia jeden plik cookie i przechowuje w przeglądarce kilka małych wartości. Każda z nich służy czemuś, o co poprosił użytkownik: pozostaniu zalogowanym lub zapamiętaniu dokonanego wyboru. Żadna nie służy do śledzenia i żadna nie jest udostępniana, więc prawo nie wymaga wcześniejszego pytania o zgodę i nie ma banera cookie.",
+    "storageLabel": "Pliki cookie i pamięć przeglądarki",
+    "storageName": "Nazwa",
+    "storagePurpose": "Do czego służy",
+    "storageLasts": "Jak długo jest przechowywany",
+    "storageCookie": "Plik cookie",
+    "storageLocal": "Pamięć lokalna",
+    "storageSession": "Pamięć sesji",
+    "storageNote": "Każdą z tych wartości można w dowolnym momencie usunąć w ustawieniach przeglądarki. Usunięcie konta usuwa informację o zalogowaniu i każde przechowywane tu ustawienie.",
+    "keys": {
+      "cookie": {
+        "purpose": "Utrzymuje zalogowanie. Zawiera token logowania. Skrypty na stronie nie mogą go odczytać, a przeglądarka wysyła go tylko do serwera projektu Glazecalc, przez HTTPS, i nigdy z żądaniem rozpoczętym na innej stronie.",
+        "lasts": "Ustawiany przy logowaniu, zakładaniu konta lub rozpoczęciu okresu próbnego. Do zamknięcia przeglądarki albo przez 7 dni po zaznaczeniu pola Nie wylogowuj mnie na tym urządzeniu; 14 dni w okresie próbnym. Wylogowanie go usuwa."
+      },
+      "session": {
+        "purpose": "Zapisuje, że nastąpiło zalogowanie na konto lub w okresie próbnym, aby aplikacja wiedziała, że ma zapytać serwer. Nie zawiera tokenu ani hasła.",
+        "lasts": "Do wylogowania lub zakończenia sesji."
+      },
+      "trial": {
+        "purpose": "W okresie próbnym jego nazwa i data zakończenia, aby je wyświetlać.",
+        "lasts": "Do końca okresu próbnego albo do jego zachowania lub zakończenia."
+      },
+      "settings": {
+        "purpose": "Ustawienie zmienione w tej przeglądarce, aby następna strona od razu je pokazała, zanim odpowie serwer. <code>theme</code> i <code>palette</code> nadają stronie kolory, zanim się pojawi, a <code>language</code> otwiera strony w wybranym języku.",
+        "lasts": "Do jego zmiany. Wylogowanie przywraca to, co zostało wybrane bez zalogowania, jeśli cokolwiek wybrano, a resztę usuwa."
+      },
+      "visitor": {
+        "purpose": "Język wybrany bez zalogowania albo to, że bez zalogowania zamknięto informację o tłumaczeniu, aby wróciło to po wylogowaniu.",
+        "lasts": "Do wyczyszczenia pamięci przeglądarki lub usunięcia konta w tej przeglądarce."
+      },
+      "region": {
+        "purpose": "Filtr regionu na liście w bibliotece.",
+        "lasts": "Do przywrócenia filtra na wszystkie regiony."
+      },
+      "includeAdditives": {
+        "purpose": "Czy nowe receptury uwzględniają dodatki we wzorze Segera, zgodnie z ostatnim wyborem.",
+        "lasts": "Do wyczyszczenia pamięci przeglądarki."
+      },
+      "recipeHelp": {
+        "purpose": "Informacja, że ukryto pomoc na stronie receptury.",
+        "lasts": "Do ponownego wyświetlenia pomocy."
+      },
+      "print": {
+        "purpose": "Ostatnie ustawienia drukowania receptury: cała receptura lub porcja oraz wielkość porcji.",
+        "lasts": "Do wyczyszczenia pamięci przeglądarki."
+      },
+      "token": {
+        "purpose": "Token logowania ze starej wersji aplikacji Glazecalc. Obecnie nigdy nie jest zapisywany.",
+        "lasts": "Usuwany przy otwarciu strony."
+      },
+      "readEnglish": {
+        "purpose": "Informacja, że wybrano czytanie przetłumaczonej strony po angielsku, aby aplikacja przestała przenosić do wersji w wybranym języku.",
+        "lasts": "Do zamknięcia karty."
+      },
+      "reloadedFor": {
+        "purpose": "Po wydaniu nowej wersji strony: która strona została przeładowana i kiedy, aby strona przeładowywała się najwyżej raz na minutę.",
+        "lasts": "Do zamknięcia karty."
+      }
+    },
+    "childrenHeading": "Dzieci",
+    "children": "Glazecalc to narzędzie dla ceramików i nie jest skierowane do dzieci.",
+    "changesHeading": "Zmiany",
+    "changes": "Jeśli ta informacja się zmieni, zmieni się też data na górze strony."
   },
   "notFound": {
     "heading": "Nie znaleziono strony",

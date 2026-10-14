@@ -25,6 +25,10 @@ export function baseLanguage(code: string): string;
 export function textLanguage(code: string): string;
 /** The language a page is in, from the first part of its path: /de/recipe is German, /recipe English. */
 export function languageOfPath(pathname: string): string;
+/** The address with its language's part as the code is written (/zh-hans/x to /zh-Hans/x), or null where it is already. */
+export function canonicalLanguagePath(pathname: string): string | null;
+/** The language offered that a browser's tag asks for (zh-TW: zh-Hant), or null. For the language links only. */
+export function languageOfTag(tag: string, offered?: readonly string[]): string | null;
 /** A page's path without its language's part: /de/recipe and /recipe are both /recipe. */
 export function pagePath(pathname: string): string;
 /** The key a piece of the app's data is translated under: a few of its words and a hash of all of it. */

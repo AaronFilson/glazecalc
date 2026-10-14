@@ -70,6 +70,8 @@ test('discarding a trial removes it and returns to the intro page', async ({ pag
 
 test('a trial that has run out leads back to the intro page, which says so', async ({ page }) => {
   await page.goto('/');
+  // Once the app has started on the page (it starts after the first paint), so that it reads the trial on /recipe.
+  await page.waitForFunction(() => globalThis.document.documentElement.hasAttribute('data-app-ready'));
   await page.evaluate(() => {
     localStorage.setItem('session', 'trial');
     localStorage.setItem('trial', JSON.stringify({ name: 'rusty humble jugs', expiresAt: '2020-01-01T00:00:00Z' }));

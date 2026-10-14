@@ -10,7 +10,7 @@ describe('PoisonLines', () => {
   });
 
   const create = async (region: string) => {
-    TestBed.inject(PreferencesService).region.set(region);
+    TestBed.inject(PreferencesService).remember('region', region);
     const fixture = TestBed.createComponent(PoisonLines);
     await fixture.whenStable();
     const element = fixture.nativeElement as HTMLElement;
@@ -50,5 +50,27 @@ describe('PoisonLines', () => {
     const ministry = element.querySelector('a[href="https://www.mh.government.bg/"]');
     expect(ministry?.textContent).toBe('Министерство на здравеопазването');
     expect(ministry?.closest('td')?.textContent).toContain("The health ministry's page:");
+  });
+
+  it("gives Japan's 119, the poison centre's two lines for acute cases only, and #8000 for children", async () => {
+    const { element, calls } = await create('JP');
+    expect(calls()).toEqual(['tel:119', 'tel:+81727272499', 'tel:+81298529999', 'tel:%238000']);
+    const text = (element.textContent ?? '').replace(/\s+/g, ' ');
+    expect(text).toContain('Poison advice: Japan Poison Information Center, Osaka (大阪中毒110番)');
+    expect(text).toContain('24 hours, every day, free. Only for acute poisoning that has actually happened');
+    expect(text).toContain('not for long-term exposure, such as dust at work.');
+    expect(text).toContain("Medical advice: Children's medical advice line (子ども医療電話相談)");
+    expect(element.querySelector('a[href="tel:%238000"]')?.textContent).toBe('#8000');
+    expect(text).toContain('Call your vet.');
+  });
+
+  it("gives Türkiye's 112 and UZEM on 114, around the clock, with no claim on cost", async () => {
+    const { element, calls } = await create('TR');
+    expect(calls()).toEqual(['tel:112', 'tel:114']);
+    const text = (element.textContent ?? '').replace(/\s+/g, ' ');
+    expect(text).toContain('One number for ambulance, fire, police, gendarmerie and coast guard.');
+    expect(text).toContain('Poison advice: National Poison Information Centre (Ulusal Zehir Danışma Merkezi, UZEM)');
+    expect(text).toContain('24 hours, every day');
+    expect(text).not.toContain('free');
   });
 });

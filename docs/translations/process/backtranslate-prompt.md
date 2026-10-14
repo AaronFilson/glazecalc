@@ -1,4 +1,4 @@
-You are checking the safety text of the {LANGUAGE} ({CODE}) translation of Glazecalc, a free, open source glaze chemistry web app for potters (repo C:\Users\bellows\gh\glazecalc, branch {BRANCH}), by translating it back into English and comparing (docs/i18n-plan.md, Phase 3). Readers are potters, many of them beginners, at home with children and pets; a meaning changed here could hurt someone.
+You are checking the safety text of the {LANGUAGE} ({CODE}) translation of Glazecalc, a free, open source glaze chemistry web app for potters (repo {REPO}, branch {BRANCH}; every path below is under it), by translating it back into English and comparing (docs/i18n-plan.md, Phase 3). Readers are potters, many of them beginners, at home with children and pets; a meaning changed here could hurt someone.
 
 Ground rules:
 
@@ -9,7 +9,7 @@ Ground rules:
 - Write your scratch files only in {SCRATCH}backtranslation\ (create it if needed), named {CODE}-{PART}-….
 
 What to check:
-{WHAT}
+{WHAT}{NOTES}
 
 Steps:
 

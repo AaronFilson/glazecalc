@@ -11,10 +11,13 @@
     "password": "Lösenord",
     "passwordHint": "Minst 8 tecken.",
     "confirmation": "Bekräfta lösenordet",
+    "keepSignedIn": "Håll mig inloggad på den här enheten",
     "passwordMissing": "Ange lösenordet.",
     "createAccount": "Skapa konto",
     "signIn": "Logga in",
     "haveAccount": "Redan registrerad? <signin>Logga in</signin>",
+    "privacy": "E-postadressen och det du sparar används bara för att driva kontot och lagras hos Amazon Web Services i USA. <privacy>Så hanterar Glazecalc dina uppgifter</privacy>",
+    "dataNotice": "Glazecalc är ett gratis projekt med öppen källkod, och konton sparas på servrar i USA. Guiderna går att läsa och kalkylatorn går att prova utan konto, och det går också att köra en egen kopia. Huruvida du skapar ett konto här är ditt eget beslut, och projektet tar inget ansvar för det. <where>Var kontot sparas, och ditt val</where>",
     "forgot": "Glömt lösenordet? Återställ det",
     "newHere": "Ny här? <signup>Skapa ett gratis konto</signup>",
     "signUpFailed": "Fel: det gick inte att skapa kontot.",
@@ -61,7 +64,29 @@
     "deletePassword": "Lösenordet, för att bekräfta",
     "deletePasswordMissing": "Ange lösenordet för att bekräfta.",
     "delete": "Radera kontot",
-    "deleteFailed": "Fel: det gick inte att radera kontot. Försök igen."
+    "deleteFailed": "Fel: det gick inte att radera kontot. Försök igen.",
+    "unverifiedHeading": "Bekräfta e-postadressen",
+    "unverifiedText": "Vi skickade en länk till {email} när kontot skapades. Öppna den för att bekräfta att adressen är din. Fram till dess skickar vi e-post till den bara när du ber om det, till exempel för att återställa lösenordet.",
+    "resend": "Skicka länken igen",
+    "resendFailed": "Fel: det gick inte att skicka länken. Försök igen.",
+    "emailHeading": "Ändra e-postadressen",
+    "emailText": "Vi skickar en länk till den nya adressen, och e-postadressen ändras när du öppnar den. Vi meddelar också den nuvarande adressen. Alla enheter som är inloggade på kontot loggas ut.",
+    "newEmail": "Ny e-postadress",
+    "emailPassword": "Lösenordet, för att bekräfta",
+    "emailSend": "Skicka länken",
+    "emailFailed": "Fel: det gick inte att skicka länken. Försök igen.",
+    "signOutHeading": "Logga ut överallt",
+    "signOutText": "Loggar ut på alla enheter, även den här. Använd det om du har tappat bort en enhet eller tror att någon annan har dina inloggningsuppgifter.",
+    "signOutButton": "Logga ut överallt",
+    "signOutFailed": "Fel: det gick inte att logga ut. Försök igen."
+  },
+  "export": {
+    "heading": "Ladda ner kontots uppgifter",
+    "text": "Spara en kopia av allt som kontot innehåller som en enda fil: kontouppgifter, inställningar, råvaror i förrådet, recept, råvaror, tillsatser, anteckningar, brännloggar, råd och papperskorgen. Lösenordet ingår inte. Förvara filen på ett privat ställe, eftersom den innehåller allt du har sparat.",
+    "json": "Ladda ner allt (JSON)",
+    "csvText": "Eller spara ett kalkylblad med bara recepten eller bara de egna råvarorna, för att öppna i Excel, Numbers eller Sheets.",
+    "recipes": "Recept (CSV)",
+    "materials": "Råvaror (CSV)"
   },
   "settings": {
     "heading": "Inställningar",
@@ -126,11 +151,16 @@
         "example": "kägla 04, kägla 6",
         "saved": "Sparat: bränning efter Ortonkäglor."
       },
+      "sk": {
+        "label": "Efter SK-käglor (JIS R 8101)",
+        "example": "SK 4a, SK 8",
+        "saved": "Sparat: bränning efter SK-käglor."
+      },
       "temperature": {
         "label": "Efter temperatur, som i automatikens program",
         "saved": "Sparat: bränning efter temperatur."
       },
-      "help": "Tills ett val görs följer detta regionen: Ortonkäglor i USA, Storbritannien, Irland, Australien och Nya Zeeland, temperatur i övriga Europa."
+      "help": "Tills ett val görs följer detta regionen: Ortonkäglor i USA, Storbritannien, Irland, Australien och Nya Zeeland, SK-käglor i Japan och temperatur i resten av Europa."
     },
     "density": {
       "legend": "Glasyrens densitet",
@@ -147,7 +177,7 @@
         "label": "Pintvikt, uns per brittisk pint",
         "saved": "Sparat: glasyrens densitet som pintvikt."
       },
-      "help": "Hur guiderna anger hur tjock en glasyr är. Tills ett val görs följer detta regionen: baumégrader i Italien, specifik vikt på andra håll."
+      "help": "Hur guiderna anger en glasyrs tjocklek. Tills ett val görs följer detta regionen: baumégrader i Italien och Japan, specifik vikt på andra håll."
     },
     "theme": {
       "legend": "Ljust eller mörkt",
@@ -233,5 +263,14 @@
       },
       "help": "Meddelandet överst på varje sida om att den har översatts med AI, med en möjlighet att föreslå en rättelse."
     }
+  },
+  "confirmEmail": {
+    "heading": "Bekräfta e-postadressen",
+    "intro": "Tryck på knappen för att bekräfta adressen.",
+    "confirm": "Bekräfta",
+    "incomplete": "Sidan behöver länken från ett e-postmeddelande med en bekräftelse, och den här länken är ofullständig.",
+    "account": "Kontot",
+    "signIn": "Logga in",
+    "failed": "Fel: det gick inte att bekräfta adressen. Försök igen."
   }
 }

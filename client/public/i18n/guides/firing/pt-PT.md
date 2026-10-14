@@ -278,6 +278,97 @@ Uma **correção do cone** (offset) é uma regulação do controlador que sobe o
 
 :::
 
+:::sk
+
+## Cozer com cones SK {#sk-cones}
+
+Os cones SK são os cones pirométricos fabricados segundo a norma japonesa JIS R 8101 e vendidos no Japão por revendedores como a Yuko Trading (有恒商事). Como qualquer cone, um cone SK mede o trabalho térmico{{en: heatwork}}, e não apenas a temperatura: amolece e dobra quando as peças receberam calor suficiente, e depois lê-se quanto dobrou. Os cones testemunho{{en: witness cones}}, a leitura de quanto um cone dobrou e os patamares{{en: holds}} funcionam com ele como com qualquer cone. Esta secção indica o sistema de cada cone e nunca converte um número SK no número de outro sistema: os números das diferentes séries de cones não são intercambiáveis.
+
+> [!NOTE]
+> Escreva sempre «SK» antes do número. Muitas receitas japonesas antigas dizem apenas «SK 8» ou «SK 9», sem dizer de que cone se trata. Os cones de Quioto e os cones SK segundo a JIS têm os mesmos números, mas dobram a temperaturas diferentes (ver «Cones de Quioto», mais abaixo).
+
+### Os cones grandes
+
+A norma tem dois tamanhos. Os cones grandes (大型コーン) são «usados principalmente para medir o grau de cozedura» (焼度測定), que é o que interessa a um ceramista. Os cones pequenos (do SK 26 ao SK 42, no topo da gama) são «usados principalmente para ensaios de refratariedade» e não são tratados aqui. A tabela abaixo dá os cones grandes do SK 022 ao SK 20.
+
+Aqui, os números vão do SK 022, o mais frio, até ao SK 20. Entre o SK 015 e o SK 6, os números impressos têm um «a» (SK 015a, SK 6a); escreva-o tal como vem impresso.
+
+### Colocar os cones grandes
+
+Coloque cada cone grande numa placa de cones ou num pedaço de barro, inclinado para o lado da sua face de dobra. Como com qualquer cone, mantenha a altura e a inclinação iguais de cozedura para cozedura, porque uma diferença em qualquer delas muda o quanto o cone dobra. Coloque juntos os três cones do conjunto{{en: cone pack}} (ver abaixo), bem dentro do forno, perto do centro da carga, onde recebem o calor que as peças recebem, mas onde os consiga ver por um óculo; antes de fechar o forno, verifique se consegue ver os três.
+
+### Cone guia, cone de cozedura e cone de proteção
+
+Os cones vendem-se e colocam-se em grupos de três: um cone guia, um cone de cozedura no alvo e um cone de proteção. Tome como cone de cozedura o número SK que a sua receita ou o seu barro indica, como cone guia o cone imediatamente mais frio (uma linha acima na tabela) e como cone de proteção o imediatamente mais quente. Quando o cone guia começa a dobrar, o fim está perto; quando o cone de proteção dobra, a cozedura foi longe demais.
+
+### A tabela SK
+
+Table: Cones SK grandes (JIS R 8101): a temperatura nominal (JIS) de cada um
+Label: Tabela SK
+
+| Cone    | Temperatura nominal (JIS) |
+| ------- | ------------------------: |
+| SK 022  |       {{1112 °F; 600 °C}} |
+| SK 021  |       {{1202 °F; 650 °C}} |
+| SK 020  |       {{1238 °F; 670 °C}} |
+| SK 019  |       {{1274 °F; 690 °C}} |
+| SK 018  |       {{1310 °F; 710 °C}} |
+| SK 017  |       {{1346 °F; 730 °C}} |
+| SK 016  |       {{1382 °F; 750 °C}} |
+| SK 015a |       {{1454 °F; 790 °C}} |
+| SK 014a |       {{1499 °F; 815 °C}} |
+| SK 013a |       {{1535 °F; 835 °C}} |
+| SK 012a |       {{1571 °F; 855 °C}} |
+| SK 011a |       {{1616 °F; 880 °C}} |
+| SK 010a |       {{1652 °F; 900 °C}} |
+| SK 09a  |       {{1688 °F; 920 °C}} |
+| SK 08a  |       {{1724 °F; 940 °C}} |
+| SK 07a  |       {{1760 °F; 960 °C}} |
+| SK 06a  |       {{1796 °F; 980 °C}} |
+| SK 05a  |      {{1832 °F; 1000 °C}} |
+| SK 04a  |      {{1868 °F; 1020 °C}} |
+| SK 03a  |      {{1904 °F; 1040 °C}} |
+| SK 02a  |      {{1940 °F; 1060 °C}} |
+| SK 01a  |      {{1976 °F; 1080 °C}} |
+| SK 1a   |      {{2012 °F; 1100 °C}} |
+| SK 2a   |      {{2048 °F; 1120 °C}} |
+| SK 3a   |      {{2084 °F; 1140 °C}} |
+| SK 4a   |      {{2120 °F; 1160 °C}} |
+| SK 5a   |      {{2156 °F; 1180 °C}} |
+| SK 6a   |      {{2192 °F; 1200 °C}} |
+| SK 7    |      {{2246 °F; 1230 °C}} |
+| SK 8    |      {{2282 °F; 1250 °C}} |
+| SK 9    |      {{2336 °F; 1280 °C}} |
+| SK 10   |      {{2372 °F; 1300 °C}} |
+| SK 11   |      {{2408 °F; 1320 °C}} |
+| SK 12   |      {{2462 °F; 1350 °C}} |
+| SK 13   |      {{2516 °F; 1380 °C}} |
+| SK 14   |      {{2570 °F; 1410 °C}} |
+| SK 15   |      {{2615 °F; 1435 °C}} |
+| SK 16   |      {{2660 °F; 1460 °C}} |
+| SK 17   |      {{2696 °F; 1480 °C}} |
+| SK 18   |      {{2732 °F; 1500 °C}} |
+| SK 19   |      {{2768 °F; 1520 °C}} |
+| SK 20   |      {{2786 °F; 1530 °C}} |
+
+Todos os valores são nominais (JIS): a temperatura que a norma dá para o cone, tal como impressa na tabela da Yuko Trading. A tabela não indica uma velocidade de aquecimento. A norma dá temperaturas de referência. A uma velocidade habitual para um ceramista, de cerca de 100 °C/h, o instituto municipal de Quioto mediu os seus próprios cones de Quioto a dobrar 40–70 °C abaixo do valor JIS para o mesmo número; não encontrámos medições deste tipo para os cones SK segundo a JIS. Coloque um cone testemunho e compare.
+
+### Cones de Quioto
+
+Os cones de Quioto (京都ゼーゲル), feitos pelo instituto municipal de Quioto, já não são fabricados: segundo notícias da imprensa, o instituto terminou a produção no fim do ano fiscal de 2009. Têm os mesmos números que os cones SK segundo a JIS, mas dobram mais frios: um cone de Quioto dobra, na maioria dos casos, a cerca da temperatura do cone SK segundo a JIS dois números abaixo. Uma receita de Quioto que diga «SK 8» pode referir-se a um cone de Quioto. O instituto publicou conselhos para os ceramistas que passam dos cones de Quioto para os cones Orton, e substitui o seu próprio SK 12 de Quioto pelo cone Orton 10; é uma escolha do instituto, feita a partir das suas próprias medições a 100 °C/h, e não se aplica a nenhum outro cone.
+
+### Cones Orton vendidos no Japão
+
+Os cones autossuportados Orton vendem-se no Japão com o nome 立つゼーゲル («Seger de pé»), porque não precisam de placa nem de suporte. São cones Orton, com os números e a tabela da Orton (acima): coza com eles apenas pelo número Orton, e mantenha os cones SK e os cones Orton em conjuntos separados, nunca no mesmo.
+
+### Fontes sobre os cones SK
+
+- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (a tabela SK, consultada em 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
+- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (em vigor, reconfirmada em 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [Kyoto Municipal Institute of Industrial Technology and Culture: pontos a ter em conta ao passar dos cones de Quioto para os cones Orton](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
+
+:::
+
 ## Cozedura de chacota {#bisque}
 
 A cozedura de **chacota**{{en: bisque}} (em inglês britânico, _biscuit_) é a primeira cozedura, a temperatura mais baixa, que transforma o barro seco em peças duras e porosas, prontas a vidrar. Costuma fazer-se aos cones 06–04, {{1828–1945 °F; 998–1063 °C}} na tabela da Orton; os ceramistas do Reino Unido cozem muitas vezes a cerca de {{1000 °C; 1832 °F}}, perto do cone 06. A chacota deve ficar porosa, «geralmente mais de 15%» (Digitalfire), para absorver a água do vidrado{{en: glaze}}. Uma chacota demasiado branda recebe uma camada de vidrado demasiado grossa, que depois fissura e **recolhe**{{en: crawls}} (junta-se em ilhas e deixa o barro à vista). A chacota subcozida também «continua a retrair-se durante a cozedura de vidrado{{en: glaze firing}}», o que prejudica o acordo pasta-vidrado{{en: glaze fit}}. A enforna é tolerante: as peças podem tocar-se, as tampas podem cozer em cima das suas peças, e as taças ficam boca com boca em vez de umas dentro das outras.

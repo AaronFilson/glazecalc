@@ -7,7 +7,7 @@ import { firstValueFrom } from 'rxjs';
 import { API, httpMock, settle, testProviders } from '../testing/test-providers';
 import { FileLoader } from './loader';
 import { OFFERED_LANGUAGES, OPEN_PAGE, PAGE_LANGUAGE } from './language';
-import { chosenLanguage, ownLanguagePage } from './own-language';
+import { ownLanguagePage } from './own-language';
 import { RichText } from './rich-text';
 import { READ_ENGLISH, TranslationNotice } from './translation-notice';
 
@@ -29,13 +29,6 @@ describe('a reader’s own language', () => {
     expect(ownLanguagePage('en', at('/recipe'))).toBeNull();
     expect(ownLanguagePage(null, at('/recipe'))).toBeNull();
     expect(ownLanguagePage('xx', at('/recipe'))).toBeNull();
-  });
-
-  it('reads the choice this browser keeps', () => {
-    localStorage.setItem('language', 'de');
-    expect(chosenLanguage()).toBe('de');
-    localStorage.removeItem('language');
-    expect(chosenLanguage()).toBeNull();
   });
 });
 

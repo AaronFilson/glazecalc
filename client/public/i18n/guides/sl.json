@@ -3,7 +3,10 @@
     "cones": "Ta vodnik je prikazan za žganje po stožcih, kot je nastavljeno v nastavitvah.",
     "temperature": "Ta vodnik je prikazan za žganje po temperaturi, kot je nastavljeno v nastavitvah.",
     "showTemperature": "Prikaži za žganje po temperaturi",
-    "showCones": "Prikaži za žganje po stožcih"
+    "showCones": "Prikaži za žganje po stožcih",
+    "sk": "Ta vodnik je prikazan za žganje po stožcih SK (JIS R 8101), kot je nastavljeno v nastavitvah.",
+    "showSk": "Prikaži za žganje po stožcih SK (JIS R 8101)",
+    "showOrton": "Prikaži za žganje po Ortonovih stožcih"
   },
   "notTranslated": "Ta vodnik še ni preveden, zato je prikazan v angleščini.",
   "sectionInEnglish": "Ta razdelek se je spremenil, odkar je bil preveden, zato je prikazan v angleščini, dokler njegov prevod ne bo posodobljen.",
@@ -86,19 +89,32 @@
     "limitIn": "Mejna vrednost v državi",
     "label": "Mejna vrednost za kremen v državi {region}",
     "caption": "Mejna vrednost na delovnem mestu za prah kristalnega kremena, ki se vdihuje (respirabilna frakcija), v državi {region}, 8-urno povprečje (preverjeno: {date})",
+    "captionControl": "Merilo za prah kristalnega kremena, ki se vdihuje (respirabilna frakcija), v zraku delovnega območja v državi {region} (preverjeno: {date})",
     "both": "Kremen in kristobalit",
     "quartz": "Kremen",
     "cristobalite": "Kristobalit",
     "actionLevel": "Opozorilna vrednost",
+    "formula": "Nadzorna koncentracija, kjer je Q delež prostega kremena v prahu, v %",
+    "formulaValue": "{numerator} / ({factor}Q + 1) mg/m³",
+    "formulaLimit": "Mejna vrednost za respirabilni kremen, kjer je Q delež kremenice (SiO₂) v prahu, v %",
+    "formulaQ": "{numerator} / (Q + {offset}) mg/m³",
+    "formulaFull": "{numerator} / ({factor}Q + {offset}) mg/m³",
+    "quartzAll": "Kremen, za prah, ki je ves iz kremena",
+    "cristobaliteAll": "Kristobalit, za prah, ki je ves iz kristobalita",
+    "allFree": "Nadzorna koncentracija za prah, ki je ves iz prostega kremena",
+    "recommended": "Priporoča {abbr}",
     "value": "{value} mg/m³",
     "kind": {
       "binding": "Zavezujoča mejna vrednost.",
       "indicative": "Indikativna mejna vrednost: priporočilo, ne zakonska zgornja meja.",
-      "assessment": "Merilo za ocenjevanje, ne zavezujoča mejna vrednost."
+      "assessment": "Merilo za ocenjevanje, ne zavezujoča mejna vrednost.",
+      "control": "Nadzorna koncentracija (管理濃度): merilo za presojo zraka v delovnem območju na podlagi meritev na tem mestu, ne mejna vrednost za to, kar vdihuje posameznik."
     },
     "setBy": "Določa jo <link>{law}</link>.",
     "lowerThanEu": "Nižja od zavezujoče mejne vrednosti EU, ki znaša {value} mg/m³.",
     "sameAsEu": "Enaka zavezujoči mejni vrednosti EU.",
+    "recommendedBy": "To vrednost priporoča {abbr} ({by}) v dokumentu <link>{title}</link>. Ni zakonsko predpisana.",
+    "respirators": "Zaščitne dihalne maske proti prahu se tu prodajajo po razredih: {everyday} za prah glazur ali {higher} za večjo zaščito (<link>uradni razredi</link>).",
     "unknown": "Nacionalne mejne vrednosti v državi {region} nismo mogli potrditi. Zavezujoča mejna vrednost EU, {value} mg/m³, velja v vsaki državi članici.",
     "noData": "Mejne vrednosti v državi {region} še nismo potrdili.",
     "agency": "Državni organ za varnost in zdravje pri delu: <link>{name}</link>.",
@@ -126,7 +142,12 @@
       "auSmall": "Skodelice, lončki, vrči, sklede, čajniki in druga namizna posoda pod 1100 mL",
       "auLarge": "Enako, 1100 mL ali več",
       "auPlates": "Krožniki, krožnički in podobna namizna posoda",
-      "auCooking": "Posoda za kuhanje"
+      "auCooking": "Posoda za kuhanje",
+      "jpFlat": "Izdelki, ki jih ni mogoče napolniti, ali globoki manj kot 2,5 cm",
+      "jpSmall": "Drugi izdelki pod 1,1 L, ne za kuhanje",
+      "jpLarge": "Drugi izdelki od 1,1 L do manj kot 3 L, ne za kuhanje",
+      "jpStorage": "Drugi izdelki s 3 L ali več, ne za kuhanje",
+      "jpCooking": "Posoda za kuhanje, globoka 2,5 cm ali več"
     },
     "judged": {
       "average": "povprečje 6 kosov",
@@ -135,6 +156,7 @@
     "euRules": "Tu veljajo pravila EU.",
     "law": "Določa jih <link>{law}</link>.",
     "inForce": "Začetek veljavnosti: {date}.",
+    "atMost": "Izdelek ustreza, če ne sprosti več od mejne vrednosti: zakon pravi »največ«.",
     "unknown": "Pravil v državi {region} še nismo potrdili.",
     "choosePrompt": "Izberite državo, da vidite njena pravila."
   },

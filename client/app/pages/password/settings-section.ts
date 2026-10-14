@@ -238,6 +238,9 @@ function settingsIn(pageLanguage: string, offered: readonly string[]): Setting[]
           marker('account.settings.cones.orton.saved'),
           () => translate('account.settings.cones.orton.example')
         ),
+        choice('sk', marker('account.settings.cones.sk.label'), marker('account.settings.cones.sk.saved'), () =>
+          translate('account.settings.cones.sk.example')
+        ),
         choice(
           'temperature',
           marker('account.settings.cones.temperature.label'),

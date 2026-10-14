@@ -134,3 +134,23 @@ test('on a phone, visitors can sign in without opening the menu', async ({ page 
   await page.locator('.app-header').getByRole('link', { name: 'Sign in', exact: true }).click();
   await expect(page).toHaveURL(/\/signin$/);
 });
+
+test('tells a reader outside the US, before signing up, where accounts are kept, and links to the full section', async ({
+  page
+}) => {
+  await page.addInitScript(() => localStorage.setItem('preferredRegion', 'TR'));
+  await page.goto('/signup');
+  const notice = page.locator('form .data-notice');
+  await expect(notice).toContainText('accounts are kept on servers in the United States');
+  await notice.getByRole('link', { name: 'Where your account is kept, and your choice' }).click();
+  await expect(page).toHaveURL(/\/privacy#your-choice$/);
+  await expect(page.locator('#your-choice h2')).toHaveText('Where your account is kept, and your choice');
+  await expect(page.locator('#your-choice')).toBeInViewport();
+});
+
+test('does not show that notice to a reader in the US', async ({ page }) => {
+  await page.addInitScript(() => localStorage.setItem('preferredRegion', 'US'));
+  await page.goto('/signup');
+  await expect(page.locator('#confirmation')).toBeVisible();
+  await expect(page.locator('.data-notice')).toHaveCount(0);
+});

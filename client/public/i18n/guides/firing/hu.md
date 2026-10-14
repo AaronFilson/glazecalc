@@ -278,6 +278,97 @@ A **gúlakorrekció** (cone offset) a vezérlő olyan beállítása, amely az ad
 
 :::
 
+:::sk
+
+## Égetés SK-gúlákra {#sk-cones}
+
+Az SK-gúlák a japán szabvány, a JIS R 8101 szerint gyártott hőfokjelző gúlák, amelyeket Japánban olyan kereskedők árusítanak, mint a Yuko Trading (有恒商事). Mint minden gúla, az SK-gúla is a felvett hőmennyiséget{{en: heatwork}} méri, nem csupán a hőmérsékletet: meglágyul és lehajlik, amikor az áru elég hőt kapott, és Ön azt olvassa le, mennyire hajlott meg. Az ellenőrző gúla{{en: witness cone}}, annak leolvasása, mennyire hajlott meg a gúla, és a hőntartás ugyanúgy működik vele, mint bármely más gúlával. Ez a szakasz minden gúlánál megnevezi a rendszerét, és soha nem alakít át egy SK-számot egy másik rendszer számává: a különböző gúlasorozatok számai nem cserélhetők fel egymással.
+
+> [!NOTE]
+> Mindig írja ki az „SK” jelölést a szám elé. Sok régebbi japán recept csak annyit ír, hogy „SK 8” vagy „SK 9”, és nem mondja meg, kinek a gúlájáról van szó. A kiotói gúlák és a JIS szerinti SK-gúlák ugyanazokat a számokat viselik, de eltérő hőmérsékleten hajlanak le (lásd alább: Kiotói gúlák).
+
+### A nagy gúlák
+
+A szabvány két méretet ismer. A nagy gúlákat (大型コーン) „főként az égetési fok mérésére használják” (焼度測定), és a fazekasnak éppen erre van szüksége. A kis gúlákat (SK 26-tól SK 42-ig, a tartomány felső végén) „főként tűzállósági vizsgálatokra használják”, és itt nem foglalkozunk velük. Az alábbi táblázat a nagy gúlákat adja meg SK 022-től SK 20-ig.
+
+A számok itt SK 022-től, a legalacsonyabb hőfokútól SK 20-ig tartanak. SK 015 és SK 6 között a nyomtatott számok után „a” betű áll (SK 015a, SK 6a); írja úgy, ahogy nyomtatva van.
+
+### A nagy gúlák elhelyezése
+
+Minden nagy gúlát gúlatartóba vagy agyaglepénybe állítson, a hajlási oldala felé döntve. Mint minden gúlánál, a magasságot és a dőlést égetésről égetésre tartsa azonosan, mert bármelyik eltérése megváltoztatja, mennyire hajlik meg a gúla. A gúlasor{{en: cone pack}} három gúláját (lásd alább) együtt állítsa fel, mélyen a kemencében, a rakat közepe táján, ahol ugyanazt a hőt kapják, amit az áru, mégis ott, ahol a kémlelőnyíláson át láthatók; mielőtt lezárja a kemencét, ellenőrizze, hogy mindhárom gúlát látja.
+
+### Előjelző gúla, célgúla és őrgúla
+
+A gúlákat hármasával árusítják és állítják fel: egy előjelző gúla, egy célgúla a célhőfokra, és egy őrgúla. Célgúlának azt az SK-számot vegye, amelyet a receptje vagy az agyaga megad, előjelző gúlának az eggyel alacsonyabb hőfokú gúlát (a táblázatban egy sorral feljebb), őrgúlának pedig az eggyel magasabb hőfokút. Ha az előjelző gúla hajlani kezd, közel a vég; ha az őrgúla meghajlik, az égetés túl messzire ment.
+
+### Az SK-táblázat
+
+Table: Nagy SK-gúlák (JIS R 8101): az egyes gúlák névleges (JIS) hőmérséklete
+Label: SK-táblázat
+
+| Gúla    | Névleges (JIS) hőmérséklet |
+| ------- | -------------------------: |
+| SK 022  |        {{1112 °F; 600 °C}} |
+| SK 021  |        {{1202 °F; 650 °C}} |
+| SK 020  |        {{1238 °F; 670 °C}} |
+| SK 019  |        {{1274 °F; 690 °C}} |
+| SK 018  |        {{1310 °F; 710 °C}} |
+| SK 017  |        {{1346 °F; 730 °C}} |
+| SK 016  |        {{1382 °F; 750 °C}} |
+| SK 015a |        {{1454 °F; 790 °C}} |
+| SK 014a |        {{1499 °F; 815 °C}} |
+| SK 013a |        {{1535 °F; 835 °C}} |
+| SK 012a |        {{1571 °F; 855 °C}} |
+| SK 011a |        {{1616 °F; 880 °C}} |
+| SK 010a |        {{1652 °F; 900 °C}} |
+| SK 09a  |        {{1688 °F; 920 °C}} |
+| SK 08a  |        {{1724 °F; 940 °C}} |
+| SK 07a  |        {{1760 °F; 960 °C}} |
+| SK 06a  |        {{1796 °F; 980 °C}} |
+| SK 05a  |       {{1832 °F; 1000 °C}} |
+| SK 04a  |       {{1868 °F; 1020 °C}} |
+| SK 03a  |       {{1904 °F; 1040 °C}} |
+| SK 02a  |       {{1940 °F; 1060 °C}} |
+| SK 01a  |       {{1976 °F; 1080 °C}} |
+| SK 1a   |       {{2012 °F; 1100 °C}} |
+| SK 2a   |       {{2048 °F; 1120 °C}} |
+| SK 3a   |       {{2084 °F; 1140 °C}} |
+| SK 4a   |       {{2120 °F; 1160 °C}} |
+| SK 5a   |       {{2156 °F; 1180 °C}} |
+| SK 6a   |       {{2192 °F; 1200 °C}} |
+| SK 7    |       {{2246 °F; 1230 °C}} |
+| SK 8    |       {{2282 °F; 1250 °C}} |
+| SK 9    |       {{2336 °F; 1280 °C}} |
+| SK 10   |       {{2372 °F; 1300 °C}} |
+| SK 11   |       {{2408 °F; 1320 °C}} |
+| SK 12   |       {{2462 °F; 1350 °C}} |
+| SK 13   |       {{2516 °F; 1380 °C}} |
+| SK 14   |       {{2570 °F; 1410 °C}} |
+| SK 15   |       {{2615 °F; 1435 °C}} |
+| SK 16   |       {{2660 °F; 1460 °C}} |
+| SK 17   |       {{2696 °F; 1480 °C}} |
+| SK 18   |       {{2732 °F; 1500 °C}} |
+| SK 19   |       {{2768 °F; 1520 °C}} |
+| SK 20   |       {{2786 °F; 1530 °C}} |
+
+Minden adat névleges (JIS): az a hőmérséklet, amelyet a szabvány az adott gúlára megad, ahogyan a Yuko Trading táblázata közli. A táblázat nem ad meg felfűtési sebességet. A szabvány viszonyítási hőmérsékleteket ad meg. Fazekasoknál szokásos, körülbelül 100 °C/h felfűtési sebesség mellett Kiotó városi intézete azt mérte, hogy a saját kiotói gúlái 40–70 °C-kal alacsonyabb hőmérsékleten hajlanak le, mint az azonos számhoz tartozó JIS-érték; a JIS szerinti SK-gúlákra nem találtunk ilyen méréseket. Állítson fel ellenőrző gúlát, és vesse össze.
+
+### Kiotói gúlák
+
+A kiotói gúlákat (京都ゼーゲル), amelyeket Kiotó városi intézete készített, már nem gyártják: hírek szerint az intézet a 2009-es pénzügyi év végén leállította a gyártásukat. Ugyanazokat a számokat viselik, mint a JIS szerinti SK-gúlák, de alacsonyabb hőmérsékleten hajlanak le: egy kiotói gúla többnyire nagyjából annak a JIS szerinti SK-gúlának a hőmérsékletén hajlik le, amelynek a száma kettővel alacsonyabb. Egy kiotói recept, amely „SK 8”-at ír, kiotói gúlát is jelenthet. Az intézet tanácsokat tett közzé azoknak a fazekasoknak, akik kiotói gúlákról Orton-gúlákra térnek át, és saját kiotói SK 12-es gúlája helyett a 10-es Orton-gúlát adja meg; ez az intézet saját választása, a saját, 100 °C/h mellett végzett mérései alapján, és semmilyen más gúlára nem vonatkozik.
+
+### Japánban árusított Orton-gúlák
+
+Az önálló Orton-gúlákat Japánban 立つゼーゲル („álló Seger”) néven árusítják, mert nem kell hozzájuk gúlatartó vagy állvány. Ezek Orton-gúlák, az Orton számaival és az Orton táblázatával (lásd fent): egy ilyen gúlára csak az Orton-száma szerint égessen, és az SK- és az Orton-gúlákat külön gúlasorba tegye, soha ne ugyanabba.
+
+### Az SK-gúlák forrásai
+
+- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (az SK-táblázat, ellenőrizve: 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
+- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (hatályos, megerősítve: 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [Kyoto Municipal Institute of Industrial Technology and Culture: tudnivalók a kiotói gúlákról Orton-gúlákra való áttéréshez](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
+
+:::
+
 ## Zsengélés {#bisque}
 
 A **zsengélés**{{en: bisque}} (brit angolul biscuit) az első, alacsonyabb hőfokú égetés, amely a száraz agyagból kemény, porózus, mázazásra kész árut csinál. Általában 06–04-es gúlára égetik, ez az Orton táblázatában {{1828–1945 °F; 998–1063 °C}}; a brit fazekasok gyakran {{1000 °C; 1832 °F}} körül égetnek, a 06-os gúla közelében. A zsengélt áru maradjon porózus, porozitása „általában több mint 15%” legyen (Digitalfire), hogy kiszívja a vizet a mázból{{en: glaze}}. A túl alacsony hőfokon zsengélt áru túl vastagon veszi fel a mázat, amely aztán megreped és **összehúzódik**{{en: crawls}} (szigetekbe húzódik vissza, csupaszon hagyva az agyagot). Az alulzsengélt áru ráadásul „a mázas égetés{{en: glaze firing}} alatt tovább zsugorodik”, ami rontja a máz illeszkedését{{en: glaze fit}}. A berakás nem kényes: a darabok összeérhetnek, a fedők a saját edényükön égethetők, a tálak pedig peremmel egymásnak fordítva kerülnek be, nem egymásba rakva.

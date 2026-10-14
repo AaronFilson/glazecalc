@@ -3,7 +3,10 @@
     "cones": "Esta guía se muestra para cocción por conos, según lo elegido en Ajustes.",
     "temperature": "Esta guía se muestra para cocción por temperatura, según lo elegido en Ajustes.",
     "showTemperature": "Mostrarla para cocción por temperatura",
-    "showCones": "Mostrarla para cocción por conos"
+    "showCones": "Mostrarla para cocción por conos",
+    "sk": "Esta guía se muestra para cocción por conos SK (JIS R 8101), según lo elegido en Ajustes.",
+    "showSk": "Mostrarla para cocción por conos SK (JIS R 8101)",
+    "showOrton": "Mostrarla para cocción por conos Orton"
   },
   "notTranslated": "Esta guía aún no está traducida, así que se muestra en inglés.",
   "sectionInEnglish": "Esta sección ha cambiado desde que se tradujo, así que se muestra en inglés hasta que se actualice su traducción.",
@@ -86,19 +89,32 @@
     "limitIn": "Límite en",
     "label": "El valor límite de la sílice en {region}",
     "caption": "El valor límite ambiental de sílice cristalina respirable en el trabajo, en {region}, como media de 8 horas (comprobado el {date})",
+    "captionControl": "La referencia para la sílice cristalina respirable en el aire de una zona de trabajo en {region} (comprobado el {date})",
     "both": "Cuarzo y cristobalita",
     "quartz": "Cuarzo",
     "cristobalite": "Cristobalita",
     "actionLevel": "Nivel de acción",
+    "formula": "Concentración de control, donde Q es la sílice libre del polvo, en %",
+    "formulaValue": "{numerator} / ({factor}Q + 1) mg/m³",
+    "formulaLimit": "Límite para el cuarzo respirable, donde Q es la sílice (SiO₂) del polvo, en %",
+    "formulaQ": "{numerator} / (Q + {offset}) mg/m³",
+    "formulaFull": "{numerator} / ({factor}Q + {offset}) mg/m³",
+    "quartzAll": "Cuarzo, para un polvo que es todo cuarzo",
+    "cristobaliteAll": "Cristobalita, para un polvo que es todo cristobalita",
+    "allFree": "Concentración de control para un polvo que es todo sílice libre",
+    "recommended": "Recomendado por {abbr}",
     "value": "{value} mg/m³",
     "kind": {
       "binding": "Un límite vinculante.",
       "indicative": "Un límite indicativo: un valor orientativo, no un máximo legal.",
-      "assessment": "Un criterio de evaluación, no un límite vinculante."
+      "assessment": "Un criterio de evaluación, no un límite vinculante.",
+      "control": "Una concentración de control (管理濃度): la referencia para juzgar el aire de una zona de trabajo a partir de mediciones hechas allí, no un límite de lo que respira una persona."
     },
     "setBy": "Norma que lo fija: <link>{law}</link>.",
     "lowerThanEu": "Más bajo que el límite vinculante de la UE, de {value} mg/m³.",
     "sameAsEu": "Igual al límite vinculante de la UE.",
+    "recommendedBy": "{abbr} ({by}) recomienda este valor en su <link>{title}</link>. No es ley.",
+    "respirators": "Aquí las mascarillas contra el polvo se venden por clases: {everyday} para el polvo de esmalte, o {higher} para más protección (<link>las clases oficiales</link>).",
     "unknown": "No hemos podido confirmar el límite nacional en {region}. El límite vinculante de la UE, de {value} mg/m³, se aplica en todos los Estados miembros.",
     "noData": "Aún no hemos confirmado el límite en {region}.",
     "agency": "El organismo nacional de seguridad en el trabajo: <link>{name}</link>.",
@@ -126,7 +142,12 @@
       "auSmall": "Tazas, tazones, jarras, cuencos, teteras y otras piezas de vajilla de menos de 1100 mL",
       "auLarge": "Las mismas, de 1100 mL o más",
       "auPlates": "Platos, platillos y vajilla similar",
-      "auCooking": "Recipientes para cocinar"
+      "auCooking": "Recipientes para cocinar",
+      "jpFlat": "Piezas que no se pueden llenar, o de menos de 2,5 cm de profundidad",
+      "jpSmall": "Las demás piezas de menos de 1,1 L, no destinadas a cocinar",
+      "jpLarge": "Las demás piezas de 1,1 L a menos de 3 L, no destinadas a cocinar",
+      "jpStorage": "Las demás piezas de 3 L o más, no destinadas a cocinar",
+      "jpCooking": "Recipientes para cocinar, de 2,5 cm de profundidad o más"
     },
     "judged": {
       "average": "media de 6 piezas",
@@ -135,6 +156,7 @@
     "euRules": "Aquí se aplican las normas de la UE.",
     "law": "Norma que los fija: <link>{law}</link>.",
     "inForce": "En vigor a partir del {date}.",
+    "atMost": "Una pieza cumple si no libera más que el límite: la ley dice «como máximo».",
     "unknown": "Aún no hemos confirmado las normas en {region}.",
     "choosePrompt": "Elija su país para ver las normas que se aplican allí."
   },

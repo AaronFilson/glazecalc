@@ -1,4 +1,5 @@
 import { Lexer, Marked, type Token, type Tokens, type TokenizerExtension } from 'marked';
+import type { ConeSystem } from '../../core/preferences.service';
 
 // A guide is a Markdown file per language (client/public/i18n/guides/<guide>/<language>.md),
 // read here into what the page shows (guide-view.ts): its title and lead, and its
@@ -29,7 +30,8 @@ import { Lexer, Marked, type Token, type Tokens, type TokenizerExtension } from 
 //                             specific gravity, degrees Baumé or pint weight
 //   {{en: frit}}              in a translation, the English for the term before
 //                             it, shown to readers who ask for English terms
-//   :::orton ... :::          shown only to those who fire to cones;
+//   :::orton ... :::          shown only to those who fire to Orton cones;
+//   :::sk ... :::             only to those who fire to SK cones (JIS R 8101);
 //   :::temperature ... :::    only to those who fire by temperature
 //   ::poison-lines            who to call, for the reader's region; likewise
 //   ::shops                   where to buy glaze materials,
@@ -51,6 +53,8 @@ export interface GuideSection {
 export interface Guide {
   title: string;
   lead: string;
+  /** The date it was last changed (modified: 2026-10-01 in the front matter), where it says. */
+  modified: string | null;
   /** 'en' where the title, lead and intro of a translation are still in English. */
   language: string | null;
   /** Anything before the first section. */
@@ -84,12 +88,23 @@ const definitions: TokenizerExtension = {
   }
 };
 
+const CONE_SYSTEMS: ConeSystem[] = ['orton', 'sk', 'temperature'];
+
 const markdown = new Marked({ gfm: true, extensions: [definitions] });
 
-/** The guide's text for the reader's cone system, the other's parts left out. */
-export function forConeSystem(text: string, cones: 'orton' | 'temperature'): string {
-  return text.replace(/^:::(orton|temperature)\n([\s\S]*?)^:::\n?/gm, (_, system: string, body: string) =>
-    system === cones ? body : ''
+/** The cone systems a guide has parts for (:::orton, :::sk, :::temperature), in that order. */
+export function coneSystemsIn(text: string): ConeSystem[] {
+  return CONE_SYSTEMS.filter((system) => new RegExp(`^:::${system}$`, 'm').test(text));
+}
+
+/**
+ * The guide's text for the reader's cone system, the others' parts left out. A guide with no part for SK
+ * cones gives those who fire to them the temperature parts, never another system's cone numbers.
+ */
+export function forConeSystem(text: string, cones: ConeSystem): string {
+  const shown = cones === 'sk' && !coneSystemsIn(text).includes('sk') ? 'temperature' : cones;
+  return text.replace(/^:::(orton|sk|temperature)\n([\s\S]*?)^:::\n?/gm, (_, system: string, body: string) =>
+    system === shown ? body : ''
   );
 }
 
@@ -111,6 +126,7 @@ export function readGuide(text: string): Guide {
   const guide: Guide = {
     title: meta['title'] ?? '',
     lead: meta['lead'] ?? '',
+    modified: meta['modified'] || null,
     language: meta['lang'] || null,
     intro: [],
     sections: []

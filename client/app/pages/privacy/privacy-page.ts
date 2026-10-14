@@ -11,6 +11,7 @@ const LINKS = {
   account: '/account',
   mail: 'mailto:' + PRIVACY_ADDRESS,
   issues: 'https://github.com/AaronFilson/glazecalc/issues',
+  source: 'https://github.com/AaronFilson/glazecalc',
   // AWS Service Terms §1.14: the data processing addendum, the SCCs and the UK and Swiss addenda.
   dpa: 'https://aws.amazon.com/service-terms/',
   // The EU–US adequacy decision, Commission Implementing Decision (EU) 2023/1795.
@@ -129,6 +130,16 @@ marker([
       <p><gc-rich [text]="t('site.privacy.hosting')" [links]="links" /></p>
       <p><gc-rich [text]="t('site.privacy.transfer')" [links]="links" /></p>
       <p>{{ t('site.privacy.noThirdParties') }}</p>
+    </section>
+
+    <!-- Linked from the sign-up page, for everyone outside the US (pages/auth/auth-page.ts). -->
+    <section class="panel" id="your-choice">
+      <h2>{{ t('site.privacy.choiceHeading') }}</h2>
+      <p>{{ t('site.privacy.choiceProject') }}</p>
+      <p>{{ t('site.privacy.choiceNoAccount') }}</p>
+      <p><gc-rich [text]="t('site.privacy.choiceOwnCopy')" [links]="links" /></p>
+      <p>{{ t('site.privacy.choiceDecision') }}</p>
+      <p>{{ t('site.privacy.choiceNoWarranty') }}</p>
     </section>
 
     <section class="panel">

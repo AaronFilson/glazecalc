@@ -160,11 +160,33 @@ stožac”). No Croatian Seger table was found.
   „u Kiln-Sitter stožac za jedan broj topliji”; "from cone 6 up" → „na stošcu 6 i toplijim stošcima”; "below cone 03" →
   „hladnije od stošca 03”. Never „viši” / „niži”, „gore” / „dolje” or „naviše” for cones: in the cooler series a higher
   number is cooler (stožac 05 hladniji je od stošca 04).
-- Seger cones („Segerovi stošci”, SK) are a different scale: SK 06a falls at about 990 °C, Orton 06 at about 1013 °C (at
+- Seger cones („Segerovi stošci”) are a different scale: SK 06a falls at about 990 °C, Orton 06 at about 1013 °C (at
   150 °C/h). **Never** write „Segerov stožac 6” or „SK 6” for an Orton number; „Segerovi stošci” only where the English
   says "Seger cones".
+- **SK cones** (Japan's JIS R 8101 cones) → „stošci SK”, „stožac SK 8”: always "SK" before the number, never
+  converted to an Orton number and never called „Segerovi”. Kyoto cones → „kyotski stošci”. "guide cone … the next number
+  below it in the table" is the next cooler cone: „sljedeći hladniji broj”.
 - Not „kupa” (the Serbian word for the geometric cone), not „čunj” (a traffic cone). „konus” (KI's word) is understood but
   not the app's: a choice for a Croatian potter to confirm.
+
+**Search terms** (research_notes/search-terms-2026-10-14.md). The bare „glazura” is searched as icing, and „glazura za
+pod” is floor screed: page titles and descriptions pair it with the ceramics word, „glazura za keramiku”, „glazure za
+keramiku”, „recepti za glazure”. The unity formula is searched, where at all, by Seger's name: „Segerova formula (UMF)”.
+The landing title is „Glazecalc: besplatni kalkulator glazura za keramiku”. No Croatian source was found for any of
+these; confidence is low.
+
+**Accounts and privacy.** "controller" (GDPR) → „voditelj obrade”; "legitimate interest" → „legitimni interes”;
+"Article 6(1)(b)" → „članak 6. stavak 1. točka (b) GDPR-a”; "Standard Contractual Clauses" → „standardne ugovorne
+klauzule”; "EU–US Data Privacy Framework" → „Okvir za privatnost podataka između EU-a i SAD-a”; "data protection
+authority" → „tijelo za zaštitu podataka”; "email" (the address) → „adresa e-pošte”, an email → „e-poruka”; "link" →
+„poveznica”; "Sign out everywhere" → „Odjava sa svih uređaja” (button „Odjavi se sa svih uređaja”); "Keep me signed in
+on this device" → „Zadrži prijavu na ovom uređaju”; "Download my data" → „Preuzimanje mojih podataka”; "logs" (server)
+→ „zapisi”, never „zapisnici” (firing logs); "cookie" → „kolačić”; "liability" → „pravna odgovornost”.
+
+**Japan and Türkiye.** "control concentration" (管理濃度) → „kontrolna koncentracija”; "dust mask" (Japan's DS/RS
+classes) → „zaštitna maska protiv prašine”; Türkiye → „Turska”; poison lines: the descriptive English translated
+(„Japanski centar za informacije o otrovima, Osaka”, „Nacionalni centar za informacije o otrovima”), the native name in
+brackets as given.
 
 **The unity formula.** „Segerova formula” (f), with „(UMF)” after it the first time on a page: „Segerova formula
 (UMF)”, then „Segerova formula”. The app's short forms "unity formula", "Unity formula" and "Unity:" are all „Segerova
@@ -423,7 +445,7 @@ see section 1.
 | kiln wash                                                                   | premaz za zaštitu ploča                                                                  | TAP's product (Carl Jäger): „Premaz za zaštitu ploča u peći za keramiku”; NAB: „sredstvo za razdvajanje”. Not washing.                                                                                                                                                                                                                                                                                                                                                                                                          |
 | stilt                                                                       | tronožac (m; pl. tronošci)                                                               | NAB: „Izraci s glaziranim dnom smiju se peći samo na tronošcima”. Metal ones: TAP „Metalni nosač”.                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | cookie                                                                      | podložna pločica (od biskvita)                                                           | No Croatian term found. Not „keks”.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| Seger cones, Staffordshire cones, Bullers rings, Holdcroft bars             | Segerovi stošci (SK); Staffordshire stošci; Bullersovi prstenovi; Holdcroftovi štapići   | Names unchanged, "rings" and "bars" translated; KI sells „PTCR prsten”.                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Seger cones, Staffordshire cones, Bullers rings, Holdcroft bars             | Segerovi stošci; Staffordshire stošci; Bullersovi prstenovi; Holdcroftovi štapići        | Names unchanged, "rings" and "bars" translated; KI sells „PTCR prsten”.                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | Damper, Primary Air, Secondary Air, Burner, Pilots, Blower                  | Zasun; Primarni zrak; Sekundarni zrak; Plamenik; Pilot-plamenici; Puhalo                 | Short column labels; „plamenik” is the standard word for a gas burner. No kiln source found for the rest. "Pilots" are flames, not people. Not the Serbian „vazduh”.                                                                                                                                                                                                                                                                                                                                                            |
 | Ox Probe                                                                    | Kisikova sonda                                                                           | Also „lambda-sonda”. No potter source found.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | Draw Tile                                                                   | Probni uzorak za vađenje                                                                 | A test piece pulled from the kiln. No source found.                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |

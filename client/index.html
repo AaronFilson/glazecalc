@@ -13,15 +13,22 @@
     <meta name="theme-color" content="#f7f3ec" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#1e1a17" media="(prefers-color-scheme: dark)" />
     <!--
-      The colors chosen in Settings, from this browser's copy, before the first paint (core/theme.ts keeps
-      them in step once the app has started). Inline, so it runs before anything is drawn; the build's CSP
-      allows it by its hash. The stylesheet is not split for "critical" inlining (angular.json), so the
-      dark and palette rules are there for the first paint too.
+      What this browser knows, acted on before anything is drawn. Inline, so it runs before the first paint; the
+      build's CSP allows it by its hash. The pages are prerendered, so the HTML that arrives is the same for
+      everyone; this is how a reader's own state shows before the app has started.
+      - The colors chosen in Settings, from this browser's copy (core/theme.ts keeps them in step once the app has
+        started). The stylesheet is not split for "critical" inlining (angular.json), so the dark and palette
+        rules are there for the first paint too.
+      - A reader who chose a language opens an English page in it (i18n/own-language.ts is the same rule for a
+        choice that arrives later). The lists are lib/regions/languages.js: the languages offered, and every
+        language whose pages start with its code. client/app/index-html.spec.ts keeps them in step.
+      - A signed-in reader gets data-session, which styles.scss uses to hide the landing page they are about to be
+        sent past, so it does not flash (the app takes the attribute off if the session turns out to be over).
     -->
     <script>
       (() => {
+        const root = document.documentElement;
         try {
-          const root = document.documentElement;
           const mode = localStorage.getItem('theme');
           const palette = localStorage.getItem('palette');
           if (mode === 'light' || mode === 'dark') root.setAttribute('data-theme', mode);
@@ -35,6 +42,29 @@
           }
         } catch {
           // Without storage the page follows the device.
+        }
+        try {
+          const session = localStorage.getItem('session');
+          if (session === 'account' || session === 'trial') root.setAttribute('data-session', session);
+        } catch {
+          // Without storage there is no session to hide the landing page for.
+        }
+        try {
+          const chosen = localStorage.getItem('language');
+          const offered = 'bg cs da de el es et fi fr ga hr hu it lt lv mt nl pl pt-PT ro sk sl sv ja tr'.split(' ');
+          const prefixes = offered.concat('ar en-XA ar-XB ja-XC'.split(' '));
+          const { pathname, search, hash } = location;
+          if (
+            offered.includes(chosen) &&
+            !prefixes.includes(pathname.split('/')[1]) &&
+            sessionStorage.getItem('readEnglish') !== '1'
+          ) {
+            // main.ts starts nothing for a page that is being left.
+            root.setAttribute('data-leaving', '');
+            location.replace('/' + chosen + pathname + search + hash);
+          }
+        } catch {
+          // Without storage no language was chosen.
         }
       })();
     </script>

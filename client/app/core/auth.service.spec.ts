@@ -1,6 +1,8 @@
+import { signal } from '@angular/core';
 import { TestBed } from '@angular/core/testing';
 import { API, httpMock, testProviders } from '../testing/test-providers';
 import { AuthService } from './auth.service';
+import { FIRST_RENDER } from './first-render';
 
 // The sign-in is an httpOnly cookie the server sets; the service keeps only a
 // note that there is a session ('session' in localStorage), never a token.
@@ -154,5 +156,37 @@ describe('AuthService', () => {
     // A failed request still leaves the browser signed out.
     await done;
     expect(auth.hasSession()).toBe(false);
+  });
+});
+
+// The prerendered page is drawn for a visitor (core/first-render.ts); the service still knows the
+// session at once, so guards and requests are not held up.
+describe('AuthService during the first render', () => {
+  beforeEach(() => {
+    localStorage.clear();
+    localStorage.setItem('session', 'trial');
+    localStorage.setItem('trial', JSON.stringify({ name: 'rusty humble jugs', expiresAt: '2999-01-01T00:00:00Z' }));
+    TestBed.configureTestingModule({ providers: testProviders() });
+  });
+
+  it('draws no session, no trial and no name, though it holds them', () => {
+    const state = signal(true);
+    TestBed.overrideProvider(FIRST_RENDER, { useValue: state });
+    const auth = TestBed.inject(AuthService);
+    expect(auth.hasSession()).toBe(true);
+    expect(auth.trial()?.name).toBe('rusty humble jugs');
+    expect([auth.shownSession(), auth.shownTrial(), auth.shownName()]).toEqual([false, null, null]);
+  });
+
+  it('draws them once the first render is over', () => {
+    const state = signal(true);
+    TestBed.overrideProvider(FIRST_RENDER, { useValue: state });
+    const auth = TestBed.inject(AuthService);
+    state.set(false);
+    expect([auth.shownSession(), auth.shownTrial()?.name, auth.shownName()]).toEqual([
+      true,
+      'rusty humble jugs',
+      'rusty humble jugs'
+    ]);
   });
 });

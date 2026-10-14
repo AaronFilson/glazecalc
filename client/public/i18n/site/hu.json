@@ -64,7 +64,115 @@
   "privacy": {
     "title": "Adatvédelem",
     "lead": "Utoljára frissítve: 2026. október.",
-    "shortHeading": "Röviden"
+    "shortHeading": "Röviden",
+    "short": "A Glazecalc csak azt őrzi meg, ami a fiókja működtetéséhez kell, semmi többet. Nincs reklám, nincs analitika és nincs követés. Adatait soha nem adjuk el, és egyetlen cég kezeli őket: az Amazon Web Services, amely a webhely tárhelyét adja és az e-mailjeit küldi.",
+    "whoHeading": "Ki a felelős",
+    "who": "A Glazecalc ingyenes, nyílt forráskódú, nonprofit projekt, amelyet a tulajdonosa, Aaron Filson működtet az Egyesült Államokban. Ő dönti el, mi történik az adataival, ezért az adatvédelmi jog szerint ő az „adatkezelő”.",
+    "contact": "Ha az adatairól szeretne kérdezni, vagy bármelyik jogával élni szeretne, írjon ide: <mail>privacy@glazecalcapp.com</mail>. <issues>Hibajegyet is nyithat a GitHubon</issues>, de a hibajegyek nyilvánosak: soha ne írja bele az e-mail-címét vagy bármilyen személyes adatát. Az adataival kapcsolatos teendők többségét maga is elvégezheti a <account>fiókja oldalán</account>.",
+    "storedHeading": "Mit őrzünk meg, és miért",
+    "storedAccount": "<b>A fiókja:</b> az e-mail-címe és a jelszava, amelyet csak egyirányú kivonatként (bcrypt hash) tárolunk, magát a jelszót soha. A beállításait (például a nyelvet, a régiót és a mértékegységeket) és a készlete listáját vele együtt őrizzük. A fiókhoz e-mail-cím kell, a bejelentkezéshez és az elfelejtett jelszó visszaállításához. Amikor fiókot hoz létre, linket küldünk a címre, hogy megerősítse, hogy az Öné; addig csak akkor megy rá levél, ha kéri, például jelszó-visszaállításkor.",
+    "storedSaved": "<b>Amit elment:</b> receptjei, nyersanyagai, adalékai, jegyzetei, égetési naplói és tanácsai, ahogy megírta őket. Csak Ön láthatja őket: a felhasználók között semmi sincs megosztva.",
+    "storedTrial": "<b>Próbahasználat (Kipróbálás most):</b> nincs e-mail-cím vagy jelszó, csak egy kitalált név, például „speckled quiet kilns”. Ha próbahasználat közben ugyanabban a böngészőben bejelentkezik egy fiókba, amit a próbahasználatban készített, átkerül a fiókba.",
+    "storedResets": "<b>Jelszó-visszaállítási és e-mail-linkek:</b> melyik fiók kérte, mikor, melyik címre küldtük a cím megerősítésére szolgáló linket, és minden link ujjlenyomata (nem maga a link).",
+    "storedLogs": "<b>Naplók:</b> a webszerver minden kérést rögzít: az IP-címét, az időpontot, a kért oldalt és a böngészője nevét. Az alkalmazás a hibákat azzal az oldallal együtt rögzíti, amelyen történtek, az e-mail-címét soha.",
+    "storedDeletions": "<b>Törölt fiókok:</b> a fiók azonosítószáma és a törlés időpontja, semmi más, hogy egy visszaállított biztonsági mentés ne hozhassa vissza a fiókot.",
+    "storedMail": "<b>Levelezési problémák:</b> ha a címére küldött levél visszapattan, vagy spamként jelentik, az Amazon e-mail-szolgáltatása felveszi a címet azoknak a címeknek a listájára, amelyekre nem küld több levelet, és a címet is tartalmazó értesítést küld a tulajdonosnak.",
+    "storedInbound": "<b>A Glazecalc címeire küldött levelek:</b> a privacy@glazecalcapp.com és a Glazecalc többi címére küldött leveleket az Amazon ellenőrzi spam és vírusok szempontjából, privát tárhelyen őrzi, és továbbítja a tulajdonos saját postafiókjába (Gmail).",
+    "basisHeading": "A jogalap",
+    "basisContract": "<b>A fiókja működtetése</b>, az elmentett adatai megőrzése és a fiókjával kapcsolatos e-mailek az Ön által kért szolgáltatás: a jogalap az Ön és a Glazecalc közötti szerződés (GDPR 6. cikk (1) bekezdés b) pont).",
+    "basisInterests": "<b>A webhely biztonságos és működőképes állapotban tartása</b>: a naplók, annak korlátai, hogy bárki milyen gyakran próbálhat bejelentkezni, a biztonsági mentések, a törölt fiókok nyilvántartása és azoknak a címeknek a listája, amelyekre nem küldünk levelet. Ezek a Glazecalc jogos érdekén alapulnak: a biztonságon, a visszaélések megelőzésén és azon, hogy ne vesszen el a munkája (6. cikk (1) bekezdés f) pont). Rövid ideig őrizzük őket, és semmi másra nem használjuk. A fenti címre írva tiltakozhat ellenük.",
+    "basisNone": "Önről semmit nem döntenek el automatizáltan, nincs profilalkotás, és semmit nem használunk fel reklámra.",
+    "whereHeading": "Hol tároljuk, és ki kezeli",
+    "hosting": "A Glazecalc az Amazon Web Services (AWS) rendszerén fut: a szerver (EC2), a biztonsági mentések (S3) és az e-mail (Simple Email Service) mind az Egyesült Államokban, Oregonban (us-west-2) vannak. Az AWS az adatokat csak a Glazecalc megbízásából kezeli, az <dpa>adatfeldolgozási feltételei</dpa> szerint. Senki más nem kapja meg őket.",
+    "transfer": "Ha az EU-ban, az Egyesült Királyságban vagy Svájcban él, adatai az Egyesült Államokba kerülnek. Az Amazon szerint tanúsítvánnyal rendelkezik az <dpf>EU–USA adatvédelmi keretrendszer</dpf>, valamint annak egyesült királysági és svájci kiterjesztése alapján, és az AWS feltételei tartalmazzák az EU általános adatvédelmi kikötéseit, amelyek akkor is érvényesek maradnának, ha a keretrendszert, amelyet most bíróság előtt támadnak, megsemmisítenék. A tulajdonos és az AWS is az Egyesült Államokban van, és az amerikai jog kötelezheti őket adatok kiadására.",
+    "noThirdParties": "A böngészője semmit nem tölt be más webhelyekről: sem betűtípust, sem szkriptet, sem képet, sem analitikát, és a webhely biztonsági beállításai ezeket letiltják. A GitHubra és más webhelyekre mutató linkek csak akkor nyílnak meg, ha rájuk kattint.",
+    "choiceHeading": "Hol tárolódik a fiókja, és az Ön döntése",
+    "choiceProject": "A Glazecalc ingyenes, nyílt forráskódú projekt. A fiókok és mindaz, amit tartalmaznak, az Egyesült Államokban lévő szervereken vannak, bárhol is él, ahogy fent leírtuk.",
+    "choiceNoAccount": "Az útmutatók olvasásához nem kell fiók, a kalkulátort pedig a Kipróbálás most funkcióval is kipróbálhatja, e-mail-cím és jelszó nélkül. A próbahasználatot ugyanezeken a szervereken 14 napig őrizzük.",
+    "choiceOwnCopy": "Bárki futtathatja a Glazecalc saját példányát a saját számítógépén vagy szerverén: a kód ingyenesen elérhető a <source>GitHubon</source>.",
+    "choiceDecision": "Hogy itt létrehoz-e fiókot, annak tudatában, hogy az Egyesült Államokban tárolják, az az Ön saját döntése.",
+    "choiceNoWarranty": "A Glazecalc „ahogy van” állapotban, szavatosság nélkül érhető el. Fenntartói semmilyen felelősséget vagy kártérítési felelősséget nem vállalnak azért, hogy Ön úgy dönt, fiókot hoz létre, sem azért, hogy a fiók adatait hol tárolják.",
+    "keptHeading": "Meddig őrizzük meg",
+    "keptAccount": "<b>A fiókja és amit elment:</b> amíg nem törli őket. A fiókokat nem töröljük azért, mert nem használják őket.",
+    "keptTrial": "<b>Próbahasználat:</b> a kezdetétől számított 14 napig, utána mindennel együtt törlődik, ami benne van, hacsak nem hoz létre fiókot, hogy megőrizze.",
+    "keptResets": "<b>Jelszó-visszaállítási és e-mail-linkek:</b> a visszaállító link 30 percig érvényes, és nyilvántartását körülbelül egy óra múlva töröljük; a cím megerősítésére szolgáló link 24 óráig érvényes, és ennyi ideig őrizzük.",
+    "keptBackups": "<b>Biztonsági mentések:</b> az adatbázis titkosított másolatait 30 napig, a szerver lemezének másolatait 7 napig őrizzük. Így a törölt fiók 30 napon belül minden biztonsági mentésből eltűnik.",
+    "keptDeletions": "<b>A törölt fiók nyilvántartása:</b> 37 nap, épp valamivel hosszabb, mint bármelyik biztonsági mentés megőrzése.",
+    "keptLogs": "<b>Naplók:</b> a webszerveréi 14 napig. Az alkalmazás és az adatbázis saját naplóit a méretük korlátozza (egyenként 50 MB), ami egy csendes webhelyen több napra visszanyúlik. A szerver lemezének másolatai a naplókat legfeljebb további 7 napig őrzik.",
+    "keptMail": "<b>Azoknak a címeknek a listája, amelyekre nem küldünk levelet:</b> amíg a tulajdonos el nem távolítja a címet; ezt minden hónapban megteszi azokkal a címekkel, amelyek már nem tartoznak fiókhoz. A visszapattanási értesítéseket a tulajdonos 30 napon belül törli.",
+    "keptInbound": "<b>A Glazecalc címeire küldött levelek:</b> 30 napig az Amazon tárhelyén, a tulajdonos postafiókjában pedig addig, amíg a válaszhoz szükséges. Az adataival kapcsolatos kérésről rövid feljegyzést (mikor érkezett, mit kértek és mi történt) három évig őrzünk meg.",
+    "rightsHeading": "Az Ön jogai",
+    "rightsIntro": "Megtekintheti, helyesbítheti, magával viheti és törölheti az adatait. A legtöbbet maga is megteheti a <account>fiókja oldalán</account>:",
+    "rightsExport": "<b>Megtekintés és magával vitel:</b> az Adataim letöltése rész mindent egyetlen fájlba (JSON) ment, receptjeit és nyersanyagait pedig táblázatként (CSV).",
+    "rightsCorrect": "<b>Helyesbítés:</b> beállításait és bejegyzéseit bármikor módosíthatja. Az e-mail-címe módosításához nyissa meg az új címre küldött linket; a régi címet, ha meg volt erősítve, értesítjük a változásról, és minden eszközt kijelentkeztetünk.",
+    "rightsDelete": "<b>Törlés:</b> a Fiókom törlése gomb azonnal eltávolítja a fiókját és mindent, amit elmentett, a Próbahasználat elvetése pedig ugyanezt teszi egy próbahasználattal. A biztonsági mentésekben lévő másolatok 30 napon belül eltűnnek.",
+    "rightsSignOut": "<b>Kijelentkezés mindenhol:</b> minden eszközön lezárja a fiókja munkameneteit.",
+    "rightsAsk": "Minden egyébhez, például ha azt kéri, hogy adatait egy hiba kijavításáig ne használjuk, vagy ha tiltakozik a felhasználásuk módja ellen, írjon ide: <mail>privacy@glazecalcapp.com</mail>. Ez ingyenes, és egy hónapon belül választ kap. Csak azt kell igazolnia, hogy a fiók az Öné, bejelentkezéssel vagy a fiók címére küldött link megnyitásával; személyazonosító igazolványt soha nem kérünk.",
+    "rightsComplain": "Ha nem elégedett, panaszt tehet egy adatvédelmi hatóságnál: az EU-ban <edpb>az országa hatóságánál</edpb>, az Egyesült Királyságban pedig az <ico>Information Commissioner’s Office</ico> nevű hivatalnál.",
+    "storageHeading": "Sütik és böngészőtárhely",
+    "storageIntro": "A Glazecalc egy sütit állít be, és néhány kis értéket tárol a böngészőjében. Mindegyik olyasmiért van ott, amit Ön kért: hogy bejelentkezve maradjon, vagy hogy megmaradjon egy választása. Egyik sem követi Önt, és egyiket sem osztjuk meg, ezért a jogszabály nem írja elő, hogy előbb engedélyt kérjünk, és nincs sütifigyelmeztetés.",
+    "storageLabel": "Sütik és böngészőtárhely",
+    "storageName": "Név",
+    "storagePurpose": "Mire szolgál",
+    "storageLasts": "Meddig marad meg",
+    "storageCookie": "Süti",
+    "storageLocal": "Helyi tárhely",
+    "storageSession": "Munkamenet-tárhely",
+    "storageNote": "Ezeket bármikor törölheti a böngészője beállításaiban. A fiókja törlése eltávolítja a bejelentkezési jelzést és minden itt tárolt beállítást.",
+    "keys": {
+      "cookie": {
+        "purpose": "Bejelentkezve tartja. A bejelentkezési tokenjét tartalmazza. Az oldalon futó szkriptek nem olvashatják, és a böngészője csak a Glazecalc saját szerverének küldi el, HTTPS-en keresztül, és soha nem olyan kéréssel, amely egy másik webhelyről indul.",
+        "lasts": "Bejelentkezéskor, fiók létrehozásakor vagy próbahasználat indításakor jön létre. A böngésző bezárásáig, vagy 7 napig, ha bejelöli a Maradjak bejelentkezve ezen az eszközön négyzetet; próbahasználatnál 14 napig. Kijelentkezéskor törlődik."
+      },
+      "session": {
+        "purpose": "Jelzi, hogy be van jelentkezve egy fiókba vagy próbahasználatba, így az alkalmazás tudja, hogy a szerverhez kell fordulnia. Nem tartalmaz tokent vagy jelszót.",
+        "lasts": "Amíg ki nem jelentkezik, vagy véget nem ér a munkamenet."
+      },
+      "trial": {
+        "purpose": "Próbahasználat alatt annak neve és lejárati dátuma, hogy megjeleníthesse őket.",
+        "lasts": "Amíg a próbahasználat véget nem ér, vagy meg nem őrzi, illetve el nem veti."
+      },
+      "settings": {
+        "purpose": "Egy beállítás, amelyet ebben a böngészőben módosított, hogy a következő oldal azonnal mutassa, még mielőtt a szerver válaszol. A <code>theme</code> és a <code>palette</code> már a megjelenése előtt kiszínezi az oldalt, a <code>language</code> pedig az Ön nyelvén nyitja meg az oldalakat.",
+        "lasts": "Amíg meg nem változtatja. Kijelentkezéskor visszaáll az, amit kijelentkezett állapotban választott, ha volt ilyen, a többi törlődik."
+      },
+      "visitor": {
+        "purpose": "A kijelentkezett állapotban választott nyelv, vagy az, hogy bezárta a fordítási megjegyzést, hogy kijelentkezéskor visszatérjen.",
+        "lasts": "Amíg nem törli a böngésző tárhelyét, vagy nem töröl egy fiókot ebben a böngészőben."
+      },
+      "region": {
+        "purpose": "Egy könyvtárlista régiószűrője.",
+        "lasts": "Amíg vissza nem állítja a szűrőt minden régióra."
+      },
+      "includeAdditives": {
+        "purpose": "Hogy az új receptek beszámítják-e adalékaikat a Seger-képletbe, ahogy legutóbb választotta.",
+        "lasts": "Amíg nem törli a böngésző tárhelyét."
+      },
+      "recipeHelp": {
+        "purpose": "Hogy elrejtette a súgót a recept oldalán.",
+        "lasts": "Amíg újra meg nem jeleníti a súgót."
+      },
+      "print": {
+        "purpose": "A recept nyomtatásánál legutóbb választott beállításai: a teljes recept vagy egy adag, és az adagméret.",
+        "lasts": "Amíg nem törli a böngésző tárhelyét."
+      },
+      "token": {
+        "purpose": "Bejelentkezési token a Glazecalc egy régi verziójából. Ma már soha nem jön létre.",
+        "lasts": "Egy oldal megnyitásakor törlődik."
+      },
+      "readEnglish": {
+        "purpose": "Hogy egy lefordított oldalt angolul választott olvasni, így az alkalmazás nem irányítja tovább az Ön nyelvére.",
+        "lasts": "Amíg be nem zárja a lapot."
+      },
+      "reloadedFor": {
+        "purpose": "A webhely új verziójának kiadása után az, hogy melyik oldal töltődött újra és mikor, hogy egy oldal legfeljebb percenként egyszer töltődjön újra.",
+        "lasts": "Amíg be nem zárja a lapot."
+      }
+    },
+    "childrenHeading": "Gyermekek",
+    "children": "A Glazecalc fazekasoknak szóló eszköz, és nem gyermekeknek készült.",
+    "changesHeading": "Változások",
+    "changes": "Ha ez a tájékoztató megváltozik, az oldal tetején lévő dátum is megváltozik."
   },
   "notFound": {
     "heading": "Az oldal nem található",

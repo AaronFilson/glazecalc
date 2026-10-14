@@ -1,6 +1,6 @@
 # The parts of Glazecalc to translate
 
-In each path, `<code>` is your language's code. Paths are under C:\Users\bellows\gh\glazecalc.
+In each path, `<code>` is your language's code. Paths are under {REPO}.
 
 ## app
 

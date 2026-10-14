@@ -31,8 +31,11 @@
   --gc-shadow: 0 1px 2px rgba(43, 36, 32, 0.06), 0 6px 18px rgba(43, 36, 32, 0.06);
   --gc-radius: 12px;
   // Lora, served with the app (angular.json), so every device and test lays out the same; Noto Serif for what
-  // Lora lacks: Greek, and the subscripts of formulas (SiO₂).
-  --gc-font: 'Lora Variable', 'Noto Serif Fill', Georgia, serif;
+  // Lora lacks: Greek, and the subscripts of formulas (SiO₂). The subscripts are named first: Lora's math file
+  // claims their range without having them, so the browser would fetch it (30 kB) before finding Noto's.
+  // Until Lora has arrived, the device's Georgia or Noto Serif sized to Lora's width (the fallbacks below).
+  --gc-font:
+    'Noto Serif Sub', 'Lora Variable', 'Noto Serif Fill', 'Lora Fallback', 'Lora Fallback Noto', Georgia, serif;
 }
 
 // Noto Serif's Greek and math faces only (its Latin is Lora's to set), from @fontsource-variable/noto-serif.
@@ -54,6 +57,88 @@
     format('woff2-variations');
   // The subscripts and superscripts, arrows and math signs.
   unicode-range: U+2070-2071, U+2074-208E, U+2090-209C, U+2190-21FF, U+2200-22FF;
+}
+// The same file, for the subscripts and superscripts only, ahead of Lora (--gc-font).
+@font-face {
+  font-family: 'Noto Serif Sub';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url('../node_modules/@fontsource-variable/noto-serif/files/noto-serif-math-wght-normal.woff2')
+    format('woff2-variations');
+  unicode-range: U+2070-2071, U+2074-208E, U+2090-209C;
+}
+
+// What the text is set in until Lora's file arrives: a serif of the device's, scaled so that a line holds the
+// same words as in Lora and the page does not move when Lora replaces it. Georgia's text is 5.4% narrower than
+// Lora's and Noto Serif's (Android) 1.9% wider; the heights are Lora's (1006 and 274 per 1000), divided by
+// the same factor, as size-adjust scales them too.
+@font-face {
+  font-family: 'Lora Fallback';
+  src: local('Georgia');
+  size-adjust: 105.4%;
+  ascent-override: 95.4%;
+  descent-override: 26%;
+  line-gap-override: 0%;
+}
+@font-face {
+  font-family: 'Lora Fallback Noto';
+  src: local('Noto Serif'), local('NotoSerif-Regular');
+  size-adjust: 98.1%;
+  ascent-override: 102.5%;
+  descent-override: 27.9%;
+  line-gap-override: 0%;
+}
+
+// Japanese, Chinese, Korean and Thai: Lora for their Latin (after Noto's subscripts,
+// as in --gc-font above, so Lora's math file is not fetched for them, and the
+// prerender's font preloads hold for these pages too), then a serif of the
+// device's for the rest, named so a browser need not fall back to a thin one
+// (SimSun, PMingLiU) for the page's lang. Noto Serif CJK and Thai where they are
+// installed (Linux, and the browser tests), then each system's own. Not served:
+// a CJK font is megabytes (the report on East and Southeast Asia, "Fonts").
+// :lang(zh-Hans) is also zh-Hans-CN, and :lang(ja) the pseudo-locale ja-XC.
+$gc-script-fonts: (
+  'ja': "'Noto Serif JP', 'Noto Serif CJK JP', 'Yu Mincho', YuMincho, 'Hiragino Mincho ProN'",
+  'zh-Hans': "'Noto Serif SC', 'Noto Serif CJK SC', 'Songti SC', STSong",
+  'zh-Hant': "'Noto Serif TC', 'Noto Serif CJK TC', 'Songti TC'",
+  'ko': "'Noto Serif KR', 'Noto Serif CJK KR', AppleMyungjo",
+  'th': "'Noto Serif Thai', 'Leelawadee UI', Thonburi, Laksaman"
+);
+$gc-script-langs: ();
+@each $lang, $fonts in $gc-script-fonts {
+  :root:lang(#{$lang}) {
+    --gc-font: 'Noto Serif Sub', 'Lora Variable', 'Noto Serif Fill', #{$fonts}, Georgia, serif;
+  }
+  $gc-script-langs: list.append($gc-script-langs, ':lang(#{$lang})', $separator: comma);
+}
+// No slanted or thickened letters a font does not have: no CJK or Thai font has
+// italics, so emphasis is bolder instead.
+:root:is(#{$gc-script-langs}) {
+  font-synthesis: none;
+}
+:is(#{$gc-script-langs}) em {
+  font-style: normal;
+  font-weight: bolder;
+}
+// Japanese keeps small kana and its long vowel mark off the start of a line,
+// and keeps a heading's phrases whole where the browser can find them (Chrome),
+// unless a phrase is wider than a phone.
+:root:lang(ja) {
+  line-break: strict;
+}
+:lang(ja):is(h1, h2, h3, h4) {
+  word-break: auto-phrase;
+  overflow-wrap: anywhere;
+}
+// Korean breaks lines between words, at its spaces, as English does.
+:root:lang(ko) {
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+// Thai's vowels and tone marks stack above and below the letters.
+:lang(th):is(h1, h2, h3, h4) {
+  line-height: 1.4;
 }
 
 @mixin dark-tokens {
@@ -459,6 +544,12 @@ img {
   p {
     margin: 0;
   }
+}
+
+// Each language's name in its own script, in the device's serif: in Lora they would fetch its Cyrillic,
+// Greek and Latin Extended files (some 100 kB) with every page, for one line at its foot.
+.footer-languages {
+  font-family: Georgia, 'Noto Serif', serif;
 }
 
 /*************** Page sections **************/
@@ -1480,4 +1571,17 @@ bdi {
     margin-bottom: 0.2rem;
     overflow-wrap: anywhere;
   }
+}
+
+/*************** Before the app starts **************/
+
+// A signed-in reader (index.html sets data-session from this browser's copy) is about to be sent from the
+// landing page to their home, so its content is not drawn. The app takes the attribute off if the session is over.
+html[data-session] gc-landing-page {
+  visibility: hidden;
+}
+
+// A reader whose language page is loading (index.html): nothing of the English page shows.
+html[data-leaving] body {
+  visibility: hidden;
 }

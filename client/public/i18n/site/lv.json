@@ -64,7 +64,115 @@
   "privacy": {
     "title": "Privātums",
     "lead": "Pēdējo reizi atjaunināts 2026. gada oktobrī.",
-    "shortHeading": "Īsumā"
+    "shortHeading": "Īsumā",
+    "short": "Glazecalc glabā to, kas vajadzīgs jūsu konta uzturēšanai, un neko vairāk. Nav reklāmu, analītikas un izsekošanas. Jūsu dati nekad netiek pārdoti, un vienīgais uzņēmums, kas tos apstrādā, ir Amazon Web Services, kas uztur vietni un sūta tās e-pasta vēstules.",
+    "whoHeading": "Atbildīgā persona",
+    "who": "Glazecalc ir bezmaksas bezpeļņas projekts ar atvērtu pirmkodu, ko Amerikas Savienotajās Valstīs vada tā īpašnieks Ārons Filsons (Aaron Filson). Viņš lemj par to, kas notiek ar jūsu datiem, tāpēc saskaņā ar datu aizsardzības tiesību aktiem viņš ir to “pārzinis”.",
+    "contact": "Lai uzdotu jautājumu par saviem datiem vai izmantotu kādu no savām tiesībām, rakstiet uz <mail>privacy@glazecalcapp.com</mail>. Varat arī <issues>izveidot pieteikumu vietnē GitHub</issues>, taču pieteikumi ir publiski: nekad nenorādiet tajos savu e-pasta adresi vai kaut ko personisku. Lielāko daļu darbību ar saviem datiem varat veikt patstāvīgi savā <account>konta lapā</account>.",
+    "storedHeading": "Ko glabājam un kāpēc",
+    "storedAccount": "<b>Jūsu konts:</b> jūsu e-pasta adrese un parole, kas tiek glabāta tikai kā vienvirziena jaucējvērtība (bcrypt), nekad kā pati parole. Kopā ar to glabājas jūsu iestatījumi (piemēram, valoda, reģions un mērvienības) un jūsu krājumu saraksts. Kontam ir vajadzīga e-pasta adrese, lai pierakstītos un atiestatītu aizmirstu paroli. Kad izveidojat kontu, uz adresi tiek nosūtīta saite, lai apstiprinātu, ka tā ir jūsu; līdz tam uz to sūta e-pasta vēstules tikai tad, kad to lūdzat, piemēram, paroles atiestatīšanai.",
+    "storedSaved": "<b>Tas, ko saglabājat:</b> jūsu receptes, izejvielas, piedevas, piezīmes, apdedzināšanas žurnāli un padomi, tādi, kādus tos uzrakstījāt. Tos varat redzēt tikai jūs: starp lietotājiem nekas netiek kopīgots.",
+    "storedTrial": "<b>Izmēģinājums (“Izmēģināt tūlīt”):</b> nav ne e-pasta adreses, ne paroles, tikai izdomāts vārds, piemēram, “speckled quiet kilns”. Ja izmēģinājuma laikā tajā pašā pārlūkprogrammā pierakstāties kontā, izmēģinājumā izveidotais tiek pārnests uz kontu.",
+    "storedResets": "<b>Paroles atiestatīšanas un e-pasta saites:</b> kurš konts to pieprasīja un kad, adrese, uz kuru nosūtīta adreses apstiprināšanas saite, un katras saites nospiedums (nevis pati saite).",
+    "storedLogs": "<b>Žurnālfaili:</b> tīmekļa serveris reģistrē katru pieprasījumu: jūsu IP adresi, laiku, pieprasīto lapu un jūsu pārlūkprogrammas nosaukumu. Lietotne reģistrē kļūdas kopā ar lapu, kurā tās radās, bet nekad ne jūsu e-pasta adresi.",
+    "storedDeletions": "<b>Dzēstie konti:</b> konta identifikācijas numurs un dzēšanas laiks, un nekas cits, lai no rezerves kopijas atjaunoti dati nevarētu atjaunot kontu.",
+    "storedMail": "<b>Problēmas ar e-pastu:</b> ja vēstuli uz jūsu adresi nevar piegādāt vai tā tiek atzīmēta kā mēstule, uzņēmuma Amazon e-pasta pakalpojums ievieto adresi sarakstā, uz kuru vairs nesūtīt vēstules, un nosūta īpašniekam paziņojumu, kurā ir šī adrese.",
+    "storedInbound": "<b>E-pasta vēstules, ko sūtāt uz Glazecalc:</b> vēstules uz privacy@glazecalcapp.com un citām lietotnes Glazecalc adresēm uzņēmums Amazon pārbauda, vai tās nav mēstules un vai tajās nav vīrusu, glabā privātā krātuvē un pārsūta uz īpašnieka paša pastkastīti (Gmail).",
+    "basisHeading": "Juridiskais pamats",
+    "basisContract": "<b>Jūsu konta uzturēšana</b>, jūsu saglabātā glabāšana un e-pasta vēstules par jūsu kontu ir pakalpojums, ko pieprasījāt: juridiskais pamats ir līgums starp jums un projektu Glazecalc (VDAR 6. panta 1. punkta b) apakšpunkts).",
+    "basisInterests": "<b>Vietnes drošība un darbība</b>: žurnālfaili, ierobežojumi tam, cik bieži jebkurš var mēģināt pierakstīties, rezerves kopijas, dzēsto kontu reģistrs un saraksts ar adresēm, uz kurām nesūtīt vēstules. To pamatā ir projekta Glazecalc leģitīmās intereses – drošība, ļaunprātīgas izmantošanas novēršana un jūsu darba nezaudēšana (6. panta 1. punkta f) apakšpunkts). Tos glabā īsu laiku un neizmanto nekam citam. Jūs varat iebilst pret tiem, rakstot uz iepriekš norādīto adresi.",
+    "basisNone": "Par jums nekas netiek lemts automātiski, nenotiek profilēšana, un nekas netiek izmantots reklāmai.",
+    "whereHeading": "Glabāšanas vieta un apstrādātāji",
+    "hosting": "Glazecalc darbojas platformā Amazon Web Services (AWS): serveris (EC2), rezerves kopijas (S3) un e-pasts (Simple Email Service), viss Amerikas Savienotajās Valstīs, Oregonas štatā (us-west-2). AWS apstrādā datus tikai projekta Glazecalc vārdā saskaņā ar saviem <dpa>datu apstrādes noteikumiem</dpa>. Neviens cits tos nesaņem.",
+    "transfer": "Ja dzīvojat ES, Apvienotajā Karalistē vai Šveicē, jūsu dati tiek nosūtīti uz Amerikas Savienotajām Valstīm. Uzņēmums Amazon norāda, ka ir sertificēts saskaņā ar <dpf>ES un ASV datu privātuma regulējumu</dpf> un tā paplašinājumiem Apvienotajai Karalistei un Šveicei, un AWS noteikumos ir iekļautas ES standarta līguma klauzulas, kas joprojām būtu piemērojamas, ja regulējums, kas pašlaik tiek apstrīdēts tiesā, tiktu atcelts. Gan īpašnieks, gan AWS atrodas ASV, un ASV tiesību akti var tiem likt nodot datus.",
+    "noThirdParties": "Jūsu pārlūkprogramma neko neielādē no citām vietnēm: ne fontus, ne skriptus, ne attēlus, ne analītiku, un vietnes drošības iestatījumi tos bloķē. Uz GitHub un citām vietnēm pāriet tikai tad, kad noklikšķināt uz saites.",
+    "choiceHeading": "Konta glabāšanas vieta un jūsu izvēle",
+    "choiceProject": "Glazecalc ir bezmaksas projekts ar atvērtu pirmkodu. Konti un viss, kas tajos ir, tiek glabāti serveros Amerikas Savienotajās Valstīs neatkarīgi no tā, kur dzīvojat, kā aprakstīts iepriekš.",
+    "choiceNoAccount": "Lai lasītu ceļvežus, konts nav vajadzīgs, un kalkulatoru varat izmēģināt ar pogu “Izmēģināt tūlīt” bez e-pasta adreses un paroles. Izmēģinājums tiek glabāts tajos pašos serveros 14 dienas.",
+    "choiceOwnCopy": "Ikviens var darbināt savu lietotnes Glazecalc kopiju savā datorā vai serverī: pirmkods ir brīvi pieejams vietnē <source>GitHub</source>.",
+    "choiceDecision": "Vai izveidot kontu šeit, zinot, ka tas tiek glabāts Amerikas Savienotajās Valstīs, ir jūsu pašu lēmums.",
+    "choiceNoWarranty": "Glazecalc tiek nodrošināts “tāds, kāds tas ir”, bez garantijas. Tā uzturētāji neuzņemas nekādu atbildību vai juridiskas saistības par jūsu lēmumu izveidot kontu vai par to, kur glabājas tā dati.",
+    "keptHeading": "Glabāšanas ilgums",
+    "keptAccount": "<b>Jūsu konts un tas, ko saglabājat:</b> līdz brīdim, kad tos dzēšat. Kontus nedzēš tāpēc, ka tie netiek izmantoti.",
+    "keptTrial": "<b>Izmēģinājums:</b> 14 dienas no tā sākuma, pēc tam to dzēš kopā ar visu tā saturu, ja vien neizveidojat kontu, lai to saglabātu.",
+    "keptResets": "<b>Paroles atiestatīšanas un e-pasta saites:</b> atiestatīšanas saite ir derīga 30 minūtes, un tās ieraksts tiek dzēsts pēc apmēram stundas; adreses apstiprināšanas saite ir derīga un tiek glabāta 24 stundas.",
+    "keptBackups": "<b>Rezerves kopijas:</b> šifrētas datubāzes kopijas glabā 30 dienas, servera diska kopijas – 7 dienas. Tādējādi dzēsts konts 30 dienu laikā izzūd no visām rezerves kopijām.",
+    "keptDeletions": "<b>Dzēsta konta ieraksts:</b> 37 dienas, nedaudz ilgāk nekā jebkura rezerves kopija.",
+    "keptLogs": "<b>Žurnālfaili:</b> tīmekļa servera žurnālfailus glabā 14 dienas. Lietotnes un datubāzes žurnālfailus ierobežo to izmērs (katram 50 MB), kas vietnē ar nelielu noslodzi aptver vairākas dienas. Servera diska kopijās žurnālfaili saglabājas vēl līdz 7 dienām.",
+    "keptMail": "<b>Saraksts ar adresēm, uz kurām nesūtīt vēstules:</b> līdz brīdim, kad īpašnieks adresi no tā izņem; to viņš katru mēnesi dara ar adresēm, kas vairs nepieder nevienam kontam. Paziņojumus par nepiegādātām vēstulēm īpašnieks dzēš 30 dienu laikā.",
+    "keptInbound": "<b>E-pasta vēstules, ko sūtāt uz Glazecalc:</b> 30 dienas uzņēmuma Amazon krātuvē, bet īpašnieka pastkastītē tik ilgi, cik vajadzīgs, lai jums atbildētu. Par pieprasījumu saistībā ar jūsu datiem trīs gadus glabā īsu piezīmi (kad tas saņemts, kas tika lūgts un kas izdarīts).",
+    "rightsHeading": "Jūsu tiesības",
+    "rightsIntro": "Jūs varat savus datus apskatīt, labot, saņemt un dzēst. Lielāko daļu no tā varat izdarīt patstāvīgi savā <account>konta lapā</account>:",
+    "rightsExport": "<b>Apskatīt un paņemt līdzi:</b> sadaļā Manu datu lejupielāde visu var saglabāt vienā failā (JSON), bet receptes un izejvielas – izklājlapās (CSV).",
+    "rightsCorrect": "<b>Labot:</b> iestatījumus un ierakstus varat mainīt jebkurā laikā. Lai mainītu e-pasta adresi, atveriet saiti, kas nosūtīta uz jauno adresi; vecajai adresei, ja tā bija apstiprināta, tiek paziņots par izmaiņām, un konts tiek izrakstīts visās ierīcēs.",
+    "rightsDelete": "<b>Dzēst:</b> poga Dzēst manu kontu uzreiz dzēš jūsu kontu un visu saglabāto, un “Atmest izmēģinājumu” to pašu dara ar izmēģinājumu. Dati rezerves kopijās izzūd 30 dienu laikā.",
+    "rightsSignOut": "<b>Izrakstīties visās ierīcēs:</b> beidz jūsu konta sesijas visās ierīcēs.",
+    "rightsAsk": "Visos citos jautājumos, piemēram, lai lūgtu nelietot jūsu datus, kamēr tiek labota kļūda, vai lai iebilstu pret to izmantošanu, rakstiet uz <mail>privacy@glazecalcapp.com</mail>. Tas ir bez maksas, un atbildi saņemsiet mēneša laikā. Jums lūgs tikai pierādīt, ka konts ir jūsu, pierakstoties vai atverot saiti, kas nosūtīta uz tā adresi, bet nekad – uzrādīt personu apliecinošu dokumentu.",
+    "rightsComplain": "Ja kaut kas jūs neapmierina, varat iesniegt sūdzību datu aizsardzības uzraudzības iestādē: ES – <edpb>savas valsts iestādē</edpb>, Apvienotajā Karalistē – <ico>Information Commissioner’s Office</ico>.",
+    "storageHeading": "Sīkdatnes un pārlūkprogrammas krātuve",
+    "storageIntro": "Glazecalc iestata vienu sīkdatni un glabā dažas nelielas vērtības jūsu pārlūkprogrammā. Katra no tām ir vajadzīga kaut kam, ko pieprasījāt: pierakstīšanās saglabāšanai vai jūsu izvēles atcerēšanai. Neviena no tām jūs neizseko un netiek kopīgota, tāpēc likums neprasa vispirms lūgt piekrišanu, un sīkdatņu paziņojuma nav.",
+    "storageLabel": "Sīkdatnes un pārlūkprogrammas krātuve",
+    "storageName": "Nosaukums",
+    "storagePurpose": "Mērķis",
+    "storageLasts": "Glabāšanas ilgums",
+    "storageCookie": "Sīkdatne",
+    "storageLocal": "Vietējā krātuve",
+    "storageSession": "Sesijas krātuve",
+    "storageNote": "Jebkuru no tām varat jebkurā laikā notīrīt pārlūkprogrammas iestatījumos. Dzēšot kontu, tiek noņemta pierakstīšanās piezīme un visi šeit glabātie iestatījumi.",
+    "keys": {
+      "cookie": {
+        "purpose": "Uztur jūsu pierakstīšanos. Tajā ir jūsu pierakstīšanās marķieris. Lapas skripti to nevar nolasīt, un pārlūkprogramma to sūta tikai uz lietotnes Glazecalc pašas serveri, izmantojot HTTPS, un nekad ar pieprasījumu, kas sākas citā vietnē.",
+        "lasts": "Tiek iestatīta, kad pierakstāties, izveidojat kontu vai sākat izmēģinājumu. Līdz pārlūkprogrammas aizvēršanai vai 7 dienas, ja atzīmējat “Saglabāt pierakstīšanos šajā ierīcē”; izmēģinājumam – 14 dienas. Izrakstoties tā tiek noņemta."
+      },
+      "session": {
+        "purpose": "Norāde, ka notikusi pierakstīšanās kontā vai izmēģinājumā, lai lietotne zinātu, ka jāvaicā serverim. Tajā nav ne marķiera, ne paroles.",
+        "lasts": "Līdz izrakstīšanās brīdim vai sesijas beigām."
+      },
+      "trial": {
+        "purpose": "Izmēģinājuma laikā – tā nosaukums un beigu datums, lai tos parādītu.",
+        "lasts": "Līdz izmēģinājums beidzas, tiek saglabāts vai atmests."
+      },
+      "settings": {
+        "purpose": "Iestatījums, ko mainījāt šajā pārlūkprogrammā, lai nākamā lapa to parādītu uzreiz, pirms serveris atbild. <code>theme</code> un <code>palette</code> iekrāso lapu, pirms tā parādās, un <code>language</code> atver lapas jūsu valodā.",
+        "lasts": "Līdz to maināt. Izrakstoties tiek atjaunots tas, ko izvēlējāties bez pierakstīšanās (ja ko izvēlējāties), un pārējais tiek noņemts."
+      },
+      "visitor": {
+        "purpose": "Valoda, ko izvēlējāties, vai tas, ka aizvērāt tulkojuma paziņojumu bez pierakstīšanās, lai tas atgrieztos, kad izrakstāties.",
+        "lasts": "Līdz notīrāt pārlūkprogrammas krātuvi vai dzēšat kontu šajā pārlūkprogrammā."
+      },
+      "region": {
+        "purpose": "Reģiona filtrs bibliotēkas sarakstā.",
+        "lasts": "Līdz atkal iestatāt filtru uz visiem reģioniem."
+      },
+      "includeAdditives": {
+        "purpose": "Vai jaunās receptēs piedevas tiek ieskaitītas Zēgera formulā, kā pēdējo reizi izvēlējāties.",
+        "lasts": "Līdz notīrāt pārlūkprogrammas krātuvi."
+      },
+      "recipeHelp": {
+        "purpose": "Tas, ka paslēpāt palīdzību receptes lapā.",
+        "lasts": "Līdz atkal parādāt palīdzību."
+      },
+      "print": {
+        "purpose": "Jūsu pēdējās receptes drukāšanas izvēles: visa recepte vai porcija, un porcijas lielums.",
+        "lasts": "Līdz notīrāt pārlūkprogrammas krātuvi."
+      },
+      "token": {
+        "purpose": "Pierakstīšanās marķieris no vecas lietotnes Glazecalc versijas. Tagad tas vairs netiek ierakstīts.",
+        "lasts": "Tiek noņemts, kad atveras lapa."
+      },
+      "readEnglish": {
+        "purpose": "Tas, ka izvēlējāties lasīt tulkotu lapu angļu valodā, lai lietotne vairs nepārslēgtu jūs uz jūsu valodu.",
+        "lasts": "Līdz aizverat cilni."
+      },
+      "reloadedFor": {
+        "purpose": "Pēc jaunas vietnes versijas izlaišanas – kura lapa tika pārlādēta un kad, lai lapa tiktu pārlādēta ne biežāk kā reizi minūtē.",
+        "lasts": "Līdz aizverat cilni."
+      }
+    },
+    "childrenHeading": "Bērni",
+    "children": "Glazecalc ir rīks keramiķiem un nav paredzēts bērniem.",
+    "changesHeading": "Izmaiņas",
+    "changes": "Ja šis paziņojums mainās, mainās arī datums lapas augšdaļā."
   },
   "notFound": {
     "heading": "Lapa nav atrasta",

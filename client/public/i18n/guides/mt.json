@@ -3,7 +3,10 @@
     "cones": "Din il-gwida qed tidher għall-ħami bil-koni, kif magħżul fis-settings.",
     "temperature": "Din il-gwida qed tidher għall-ħami bit-temperatura, kif magħżul fis-settings.",
     "showTemperature": "Uriha għall-ħami bit-temperatura",
-    "showCones": "Uriha għall-ħami bil-koni"
+    "showCones": "Uriha għall-ħami bil-koni",
+    "sk": "Din il-gwida qed tidher għall-ħami bil-koni SK (JIS R 8101), kif magħżul fis-settings.",
+    "showSk": "Uriha għall-ħami bil-koni SK (JIS R 8101)",
+    "showOrton": "Uriha għall-ħami bil-koni Orton"
   },
   "notTranslated": "Din il-gwida għadha mhix tradotta, għalhekk qed tidher bl-Ingliż.",
   "sectionInEnglish": "Din it-taqsima nbidlet minn meta ġiet tradotta, għalhekk qed tidher bl-Ingliż sakemm it-traduzzjoni tagħha tiġi aġġornata.",
@@ -86,19 +89,32 @@
     "limitIn": "Limitu:",
     "label": "Il-limitu tas-silika: {region}",
     "caption": "Il-limitu fuq il-post tax-xogħol għas-silika kristallina respirabbli, medja ta’ 8 sigħat: {region} (iċċekkjat: {date})",
+    "captionControl": "Il-livell ta’ referenza għas-silika kristallina respirabbli fl-arja ta’ żona tax-xogħol: {region} (iċċekkjat: {date})",
     "both": "Kwarz u kristobalit",
     "quartz": "Kwarz",
     "cristobalite": "Kristobalit",
     "actionLevel": "Livell ta’ azzjoni",
+    "formula": "Konċentrazzjoni ta’ kontroll, fejn Q hija s-silika ħielsa fit-trab, f’%",
+    "formulaValue": "{numerator} / ({factor}Q + 1) mg/m³",
+    "formulaLimit": "Limitu għall-kwarz respirabbli, fejn Q hija s-silika (SiO₂) fit-trab, f’%",
+    "formulaQ": "{numerator} / (Q + {offset}) mg/m³",
+    "formulaFull": "{numerator} / ({factor}Q + {offset}) mg/m³",
+    "quartzAll": "Kwarz, għal trab li huwa kollu kwarz",
+    "cristobaliteAll": "Kristobalit, għal trab li huwa kollu kristobalit",
+    "allFree": "Konċentrazzjoni ta’ kontroll għal trab li huwa kollu silika ħielsa",
+    "recommended": "Rakkomandat minn {abbr}",
     "value": "{value} mg/m³",
     "kind": {
       "binding": "Limitu vinkolanti.",
       "indicative": "Limitu indikattiv: valur ta’ gwida, mhux limitu legali.",
-      "assessment": "Kriterju ta’ valutazzjoni, mhux limitu vinkolanti."
+      "assessment": "Kriterju ta’ valutazzjoni, mhux limitu vinkolanti.",
+      "control": "Konċentrazzjoni ta’ kontroll (管理濃度): il-livell ta’ referenza biex tiġi ġġudikata l-arja ta’ żona tax-xogħol mill-kejl li jsir hemm, mhux limitu fuq dak li tiġbed man-nifs persuna waħda."
     },
     "setBy": "Stabbilit minn <link>{law}</link>.",
     "lowerThanEu": "Aktar baxx mil-limitu vinkolanti tal-UE ta’ {value} mg/m³.",
     "sameAsEu": "L-istess bħal-limitu vinkolanti tal-UE.",
+    "recommendedBy": "Dan il-valur huwa rakkomandat minn {abbr} ({by}) f’<link>{title}</link>. Mhuwiex liġi.",
+    "respirators": "Hawn il-maskri kontra t-trab jinbiegħu skont il-klassi: {everyday} għat-trab tal-glejż, jew {higher} għal aktar protezzjoni (<link>il-klassijiet uffiċjali</link>).",
     "unknown": "Ma stajniex nikkonfermaw il-limitu nazzjonali ({region}). Il-limitu vinkolanti tal-UE ta’ {value} mg/m³ japplika f’kull Stat Membru.",
     "noData": "Għadna ma kkonfermajniex il-limitu ({region}).",
     "agency": "L-awtorità nazzjonali għas-saħħa u s-sigurtà fuq il-post tax-xogħol: <link>{name}</link>.",
@@ -126,7 +142,12 @@
       "auSmall": "Tazzi, mugs, qliel, skutelli, brieki tat-te u oġġetti oħra tal-mejda ta’ inqas minn 1100 mL",
       "auLarge": "L-istess, ta’ 1100 mL jew aktar",
       "auPlates": "Platti, plattini u oġġetti simili tal-mejda",
-      "auCooking": "Oġġetti tat-tisjir"
+      "auCooking": "Oġġetti tat-tisjir",
+      "jpFlat": "Oġġetti li ma jistgħux jimtlew, jew b’fond ta’ inqas minn 2.5 cm",
+      "jpSmall": "Oġġetti oħra ta’ inqas minn 1.1 L, mhux għat-tisjir",
+      "jpLarge": "Oġġetti oħra minn 1.1 L sa inqas minn 3 L, mhux għat-tisjir",
+      "jpStorage": "Oġġetti oħra ta’ 3 L jew aktar, mhux għat-tisjir",
+      "jpCooking": "Oġġetti tat-tisjir, b’fond ta’ 2.5 cm jew aktar"
     },
     "judged": {
       "average": "medja ta’ 6 biċċiet",
@@ -135,6 +156,7 @@
     "euRules": "Hawn japplikaw ir-regoli tal-UE.",
     "law": "Stabbiliti minn <link>{law}</link>.",
     "inForce": "Data tad-dħul fis-seħħ: {date}.",
+    "atMost": "Oġġett jgħaddi jekk ma jirrilaxxax aktar mil-limitu: il-liġi tgħid “mhux aktar minn”.",
     "unknown": "Għadna ma kkonfermajniex ir-regoli ({region}).",
     "choosePrompt": "Agħżel il-pajjiż tiegħek biex tara r-regoli tiegħu."
   },

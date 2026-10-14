@@ -3,10 +3,11 @@ import { REGION_CODES, formatLocaleFor, regionFor } from '../../../lib/regions';
 import { PAGE_LANGUAGE } from '../i18n/language';
 import { formatLocale, listLocale, typedDecimalMark } from '../shared/format';
 import { followRegion, readRegion } from '../shared/library-info';
+import { FIRST_RENDER, prerenderRegion } from './first-render';
 import { ConeSystem, Density, PreferencesService, TemperatureScale } from './preferences.service';
 
 /** The region the browser's own language names (en-US is the US), for defaults until a region is chosen. */
-export function browserRegion(languages: readonly string[] = navigator.languages ?? [navigator.language]): string {
+export function browserRegion(languages: readonly string[] = globalThis.navigator?.languages ?? []): string {
   for (const tag of languages) {
     try {
       const region = new Intl.Locale(tag).region;
@@ -28,11 +29,17 @@ export function browserRegion(languages: readonly string[] = navigator.languages
 @Injectable({ providedIn: 'root' })
 export class LocaleService {
   private readonly preferences = inject(PreferencesService);
+  private readonly firstRender = inject(FIRST_RENDER);
 
   /** The language of the page, from its URL. */
   readonly language = signal(inject(PAGE_LANGUAGE));
-  /** The region chosen in Settings, or else the browser's, for defaults only. */
-  readonly region = computed(() => this.preferences.region() || browserRegion());
+  /**
+   * The region chosen in Settings, or else the browser's, for defaults only. The first render, which
+   * the prerendered page has to match, is in the page's language's own region (core/first-render.ts).
+   */
+  readonly region = computed(() =>
+    this.firstRender() ? prerenderRegion(this.language()) : this.preferences.region() || browserRegion()
+  );
   readonly regionInfo = computed(() => regionFor(this.region()));
   /** The locale numbers and dates are written in. */
   readonly locale = computed(() => formatLocaleFor(this.language(), this.region(), this.preferences.format()));
@@ -42,7 +49,7 @@ export class LocaleService {
   readonly temperature = computed<TemperatureScale>(
     () => this.preferences.temperature() || this.regionInfo()?.temperature || 'C'
   );
-  /** Orton cones or temperature alone: the one chosen, or the region's. */
+  /** Orton cones, SK cones or temperature alone: the one chosen, or the region's. */
   readonly cones = computed<ConeSystem>(() => this.preferences.cones() || this.regionInfo()?.cones || 'orton');
   /** Glaze density as specific gravity, Baumé or pint weight: the one chosen, or the region's. */
   readonly density = computed<Density>(() => this.preferences.density() || this.regionInfo()?.density || 'sg');
@@ -65,6 +72,7 @@ export class LocaleService {
     // The library lists what is sold where the potter works, once a region is chosen. This follows
     // the setting for the visit; only a choice made in the library itself is kept on the browser.
     effect(() => {
+      if (this.firstRender()) return;
       const library = regionFor(this.preferences.region())?.library;
       followRegion(library ?? readRegion());
     });

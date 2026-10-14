@@ -256,8 +256,12 @@ piriméadrach”), and NEID and EID give “cón” for every cone; no Irish sho
   amháin níos fuaire ná an sprioc”; "from cone 6 up" → “ó chón 6 agus cóin níos teo”; "below cone 03" → “níos fuaire ná
   cón 03”; "the next higher cone number" → “an chéad chón eile, uimhir amháin níos teo”. Never “níos airde”, “níos
   ísle”, “suas”, “síos” or “ar aghaidh” for cones.
-- Seger cones (“cóin Seger”, SK) are a different scale. **Never** write “cón Seger 6” or “SK 6” for an Orton number;
-  “cóin Seger” only where the English says "Seger cones".
+- Seger cones (“cóin Seger”) are the German cones, a different scale. **Never** write “cón Seger 6” or “SK 6” for an
+  Orton number; “cóin Seger” only where the English says "Seger cones".
+- **SK cones** are only the Japanese cones to JIS R 8101 (“cóin SK”, “cón SK 8”, “SK 4a”): always “SK” before the
+  number, never turned into an Orton number and never called “Seger”. "To SK cones (JIS R 8101)" → “Go cóin SK (JIS R
+  8101)”. Kyoto cones (京都ゼーゲル) → “cóin Kyoto”. In the firing guide's SK section, the guide cone is the next number
+  **cooler** than the firing cone and the guard cone the next hotter (“an chéad uimhir eile … atá níos fuaire/níos teo”).
 - Not “coirceog” (EID's other word, a beehive), not “cón tráchta” (a traffic cone).
 
 ### The unity formula
@@ -766,6 +770,25 @@ for signal words and hazard statements.
 | Filter (field), filter (v)                                                             | Scagaire (m4); scag (v)                                                                                   | téarma. Field "Filter" → “Scagaire”; "Filter my materials" → “Scag mo chuid ábhar”.                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | guideline                                                                              | treoirlíne (f4)                                                                                           | téarma (Environment; Administration; Education). "this app's own guideline" → “treoirlíne na haipe seo féin”. Not “treoirleabhar” (a guide).                                                                                                                                                                                                                                                                                                                                                                           |
 
+Account and privacy words (October 2026, the EU release; **No source** unless noted):
+
+| English                                                        | Irish                                                                | Notes                                                                                                |
+| -------------------------------------------------------------- | -------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| cookie (a browser's)                                           | fianán (m1); stóras logánta; stóras seisiúin                         | téarma (Computing). Not the kiln “diosca brioscbhácáilte” (2.4). "cookie banner" → “bratach fianán”. |
+| Confirm your email; Send the link again                        | Do ríomhphost a dheimhniú; Seol an nasc arís                         | Heading a verbal-noun phrase, button the imperative.                                                 |
+| Sign out everywhere                                            | Sínigh amach i ngach áit (button); Síniú amach i ngach áit (heading) |                                                                                                      |
+| Keep me signed in on this device                               | Coinnigh sínithe isteach mé ar an ngléas seo                         | The privacy page quotes it in ‘…’.                                                                   |
+| Download my data; spreadsheet                                  | Mo shonraí a íoslódáil; scarbhileog (f2)                             | téarma "download íoslódáil", "spreadsheet scarbhileog". The privacy page quotes the heading in ‘…’.  |
+| controller (data protection); legal basis; legitimate interest | rialaitheoir (m3); bunús dlíthiúil; leas dlisteanach                 | IATE. GDPR → “RGCS” (IATE), "Article 6(1)(b)" → “Airteagal 6(1)(b) den RGCS”.                        |
+| Standard Contractual Clauses; data protection authority        | Clásail Chonarthacha Chaighdeánacha; údarás cosanta sonraí           | IATE. The EU–US Data Privacy Framework keeps its English name in the link, then “an Creat”.          |
+| maintainers; without warranty; responsibility or liability     | cothaitheoirí; gan bharántas; freagracht ná dliteanas                | privacy.choiceNoWarranty, account.auth.dataNotice: as strong as the English, no stronger.            |
+| Where your account is kept, and your choice                    | Cá gcoinnítear do chuntas, agus do rogha                             | The same words in the sign-up notice's link and the privacy heading.                                 |
+
+**Search terms** (research_notes/search-terms-2026-10-14.md): Irish speakers search in English, so the page titles and
+descriptions use the glossary's words: “glónra” (and “oidis ghlónra”), and “foirmle Seger (UMF)” where the English says
+unity formula. The landing title is “Glazecalc: áireamhán glónra saor in aisce do photadóirí” (55 characters).
+Descriptions stay at about 160 characters and add nothing the English lacks.
+
 ### 2.9 Where the potter works
 
 Terms of the region parts of the guides (shops, the silica limit, food-contact rules, materials sold nearby). Names of
@@ -799,6 +822,22 @@ preposition (section 1). Directive 84/500/EEC has no Irish text, so its kinds of
 | differs by {grams} g per 100 g                                        | difríocht {grams} g sa 100 g                                                            | guides: equivalents.apart                               |
 | Directive 84/500/EEC (its official name)                              | Treoir 84/500/CEE ón gComhairle (arna leasú le Treoir 2005/31/CE ón gCoimisiún)         | regions: the directive                                  |
 | Latvia's law gives this limit for the inhalable fraction of the dust. | Tugann dlí na Laitvia an teorainn seo don chodán in-ionanálaithe den deannach.          | regions: Latvia                                         |
+
+Added with the SK cones and the Japan and Türkiye data (October 2026; **No source** unless noted, for a native reader to
+check):
+
+| English                                                                       | Irish                                                              | Where / notes                                                               |
+| ----------------------------------------------------------------------------- | ------------------------------------------------------------------ | --------------------------------------------------------------------------- |
+| control concentration (管理濃度)                                              | tiúchan rialaithe (f3)                                             | guides: silica.formula, silica.kind.control; téarma "concentration tiúchan" |
+| yardstick                                                                     | slat tomhais (f2)                                                  | guides: silica.captionControl                                               |
+| dust mask; class (of mask)                                                    | masc deannaigh (m4); aicme (f4)                                    | guides: silica.respirators; regions (Japan)                                 |
+| tridymite                                                                     | tridimít (f2)                                                      | regions (Türkiye); formed like “críostabailít”                              |
+| microwave (oven)                                                              | micreathonnán (m1)                                                 | regions (Japan cooking ware)                                                |
+| at most (a legal limit)                                                       | ar a mhéad                                                         | guides: food.atMost; "no more than 100 °C" → “ag 100 °C ar a mhéad”         |
+| prefecture (Japan)                                                            | maoracht (f3)                                                      | safety (children's advice line); IATE                                       |
+| Japan Poison Information Center; National Poison Information Centre (Türkiye) | Ionad Faisnéise Nimhe na Seapáine; Ionad Náisiúnta Faisnéise Nimhe | safety: the descriptive part translated, the native name kept in brackets   |
+| gendarmerie                                                                   | póilíní míleata (gendarmerie)                                      | safety (Türkiye 112)                                                        |
+| Türkiye                                                                       | an Tuirc (gen. na Tuirce)                                          | CLDR                                                                        |
 
 "binding" and "indicative" follow 2017/2398 (GA) and IATE (“teorainnluach táscach nochta ceirde”); "inhalable fraction"
 is IATE's “codán in-ionanálaithe”. "per 100 g" keeps the symbol (“sa 100 g”), never “in aghaidh 100 gram”, so the check

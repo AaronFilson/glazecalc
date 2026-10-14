@@ -278,6 +278,97 @@ En **kägeloffset** är en inställning i automatiken som flyttar dess temperatu
 
 :::
 
+:::sk
+
+## Bränning efter SK-käglor {#sk-cones}
+
+SK-käglor är de pyrometriska käglor{{en: pyrometric cone}} som tillverkas enligt Japans standard, JIS R 8101, och säljs i Japan av återförsäljare som Yuko Trading (有恒商事). Som alla käglor mäter en SK-kägla värmearbete{{en: heatwork}}, inte bara temperatur: den mjuknar och böjer sig när godset har fått tillräckligt med värme, och man läser av hur långt den har böjt sig. Kontrollkäglor{{en: witness cone}}, avläsningen av hur långt en kägla har böjt sig och hålltider fungerar för den som för alla käglor. Det här avsnittet anger varje käglas system och gör aldrig om ett SK-nummer till ett nummer i ett annat system: numren i olika kägelserier är inte utbytbara.
+
+> [!NOTE]
+> Skriv alltid ”SK” före numret. Många äldre japanska recept säger bara ”SK 8” eller ”SK 9” utan att säga vems kägla det gäller. Kyotokäglor och SK-käglor enligt JIS har samma nummer men böjer sig vid olika temperaturer (se Kyotokäglor nedan).
+
+### De stora käglorna
+
+Standarden har två storlekar. Stora käglor (大型コーン) används ”främst för att mäta bränningsgraden” (焼度測定), och det är vad en keramiker vill ha. Små käglor (SK 26 till SK 42, högst upp i serien) används ”främst för provning av eldfasthet” och tas inte upp här. Tabellen nedan visar de stora käglorna från SK 022 till SK 20.
+
+Numren går här från SK 022, den kallaste, upp till SK 20. Mellan SK 015 och SK 6 har de tryckta numren ett ”a” (SK 015a, SK 6a); skriv det så som det är tryckt.
+
+### Att sätta stora käglor
+
+Sätt varje stor kägla i en kägelhållare eller en klump lera, lutad mot sin böjsida. Som med alla käglor: håll höjden och lutningen likadana från bränning till bränning, eftersom en skillnad i någon av dem ändrar hur långt käglan böjer sig. Ställ de tre käglorna i kägelsatsen{{en: cone pack}} (nedan) tillsammans, djupt inne i ugnen nära mitten av ugnsfyllningen, där de får samma värme som godset men ändå syns genom ett titthål; kontrollera innan ugnen stängs att alla tre syns.
+
+### Förvarningskägla, målkägla och vaktkägla
+
+Käglor säljs och sätts tre och tre: en förvarningskägla, en målkägla vid målet och en vaktkägla. Ta som målkägla det SK-nummer som receptet eller leran anger, som förvarningskägla den närmast kallare käglan (en rad upp i tabellen) och som vaktkägla den närmast varmare. När förvarningskäglan börjar böja sig är slutet nära; när vaktkäglan böjer sig har bränningen gått för långt.
+
+### SK-tabellen
+
+Table: Stora SK-käglor (JIS R 8101): varje käglas nominella temperatur (JIS)
+Label: SK-tabell
+
+| Kägla   | Nominell temperatur (JIS) |
+| ------- | ------------------------: |
+| SK 022  |       {{1112 °F; 600 °C}} |
+| SK 021  |       {{1202 °F; 650 °C}} |
+| SK 020  |       {{1238 °F; 670 °C}} |
+| SK 019  |       {{1274 °F; 690 °C}} |
+| SK 018  |       {{1310 °F; 710 °C}} |
+| SK 017  |       {{1346 °F; 730 °C}} |
+| SK 016  |       {{1382 °F; 750 °C}} |
+| SK 015a |       {{1454 °F; 790 °C}} |
+| SK 014a |       {{1499 °F; 815 °C}} |
+| SK 013a |       {{1535 °F; 835 °C}} |
+| SK 012a |       {{1571 °F; 855 °C}} |
+| SK 011a |       {{1616 °F; 880 °C}} |
+| SK 010a |       {{1652 °F; 900 °C}} |
+| SK 09a  |       {{1688 °F; 920 °C}} |
+| SK 08a  |       {{1724 °F; 940 °C}} |
+| SK 07a  |       {{1760 °F; 960 °C}} |
+| SK 06a  |       {{1796 °F; 980 °C}} |
+| SK 05a  |      {{1832 °F; 1000 °C}} |
+| SK 04a  |      {{1868 °F; 1020 °C}} |
+| SK 03a  |      {{1904 °F; 1040 °C}} |
+| SK 02a  |      {{1940 °F; 1060 °C}} |
+| SK 01a  |      {{1976 °F; 1080 °C}} |
+| SK 1a   |      {{2012 °F; 1100 °C}} |
+| SK 2a   |      {{2048 °F; 1120 °C}} |
+| SK 3a   |      {{2084 °F; 1140 °C}} |
+| SK 4a   |      {{2120 °F; 1160 °C}} |
+| SK 5a   |      {{2156 °F; 1180 °C}} |
+| SK 6a   |      {{2192 °F; 1200 °C}} |
+| SK 7    |      {{2246 °F; 1230 °C}} |
+| SK 8    |      {{2282 °F; 1250 °C}} |
+| SK 9    |      {{2336 °F; 1280 °C}} |
+| SK 10   |      {{2372 °F; 1300 °C}} |
+| SK 11   |      {{2408 °F; 1320 °C}} |
+| SK 12   |      {{2462 °F; 1350 °C}} |
+| SK 13   |      {{2516 °F; 1380 °C}} |
+| SK 14   |      {{2570 °F; 1410 °C}} |
+| SK 15   |      {{2615 °F; 1435 °C}} |
+| SK 16   |      {{2660 °F; 1460 °C}} |
+| SK 17   |      {{2696 °F; 1480 °C}} |
+| SK 18   |      {{2732 °F; 1500 °C}} |
+| SK 19   |      {{2768 °F; 1520 °C}} |
+| SK 20   |      {{2786 °F; 1530 °C}} |
+
+Alla värden är nominella (JIS): den temperatur som standarden anger för käglan, så som den är tryckt i Yuko Tradings tabell. Tabellen anger ingen uppvärmningshastighet. Standarden ger referenstemperaturer. Vid en hastighet som keramiker brukar använda, omkring 100 °C/h, mätte Kyotos kommunala institut att dess egna Kyotokäglor böjde sig vid en temperatur 40–70 °C lägre än JIS-värdet för samma nummer; vi har inte hittat några sådana mätningar för SK-käglor enligt JIS. Sätt en kontrollkägla och jämför.
+
+### Kyotokäglor
+
+Kyotokäglor (京都ゼーゲル), som Kyotos kommunala institut gjorde, tillverkas inte längre: enligt nyhetsrapporter slutade institutet tillverka dem vid slutet av räkenskapsåret 2009. De har samma nummer som SK-käglor enligt JIS men böjer sig kallare: en Kyotokägla böjer sig oftast vid ungefär samma temperatur som den SK-kägla enligt JIS som ligger två nummer lägre. Ett recept från Kyoto som säger ”SK 8” kan avse en Kyotokägla. Institutet har publicerat råd till keramiker som går över från Kyotokäglor till Ortonkäglor, och ersätter sin egen Kyotokägla SK 12 med Ortonkägla 10; det är institutets val utifrån dess egna mätningar vid 100 °C/h och gäller ingen annan kägla.
+
+### Ortonkäglor som säljs i Japan
+
+Självstående Ortonkäglor säljs i Japan under namnet 立つゼーゲル (”stående Seger”), eftersom de inte behöver någon kägelhållare eller fot. De är Ortonkäglor, med Ortons nummer och Ortons tabell (ovan): bränn till en sådan kägla bara efter dess Ortonnummer, och håll SK-käglor och Ortonkäglor i separata kägelsatser, aldrig i samma.
+
+### Källor om SK-käglor
+
+- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (SK-tabellen, kontrollerad 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
+- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (gällande, bekräftad på nytt 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [Kyoto Municipal Institute of Industrial Technology and Culture: att tänka på vid övergången från Kyotokäglor till Ortonkäglor](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
+
+:::
+
 ## Skröjbränning {#bisque}
 
 **Skröjbränningen**{{en: bisque}} (i Storbritannien kallad biscuit) är den första, lägre bränningen, som gör torr lera till hårt, poröst gods som är klart att glasera. Den bränns oftast till kägla{{en: cone}} 06–04, {{1828–1945 °F; 998–1063 °C}} enligt Ortons tabell; brittiska keramiker bränner ofta till omkring {{1000 °C; 1832 °F}}, nära kägla 06. Skröjet bör förbli poröst, ”i allmänhet mer än 15 %” (Digitalfire), så att det suger upp vattnet ur glasyren{{en: glaze}}. Ett för lågt skröjat gods tar upp glasyren för tjockt, och den spricker sedan och **kryper**{{en: crawls}} (drar ihop sig till öar och lämnar bar lera). Underbränt skröj ”fortsätter också att krympa under glasyrbränningen{{en: glaze firing}}”, vilket förstör passningen mellan glasyr och skärv{{en: glaze fit}}. Att sätta ugnen är förlåtande: föremålen får röra vid varandra, lock kan brännas på sina krukor, och skålar ställs kant mot kant i stället för inuti varandra.

@@ -2,6 +2,8 @@ import { TestBed } from '@angular/core/testing';
 import { ActivatedRoute, Router } from '@angular/router';
 import { of } from 'rxjs';
 import { AuthService } from '../../core/auth.service';
+import { LocaleService } from '../../core/locale.service';
+import { PreferencesService } from '../../core/preferences.service';
 import { API, fieldProblem, httpMock, settle, testProviders, text } from '../../testing/test-providers';
 import { AuthPage } from './auth-page';
 
@@ -104,6 +106,29 @@ describe('AuthPage', () => {
     expect(fixture.nativeElement.querySelector('.privacy-note a').getAttribute('href')).toBe('/privacy');
   });
 
+  it('tells everyone outside the US, before the account is made, where accounts are kept and whose choice it is', async () => {
+    const { fixture } = await create('signup');
+    const preferences = TestBed.inject(PreferencesService);
+    preferences.remember('region', 'TR');
+    await fixture.whenStable();
+    expect(text(fixture, 'form .data-notice')).toContain('accounts are kept on servers in the United States');
+    expect(text(fixture, 'form .data-notice')).toContain('the project accepts no responsibility for it');
+    expect(fixture.nativeElement.querySelector('.data-notice a').getAttribute('href')).toBe('/privacy#your-choice');
+    preferences.remember('region', 'US');
+    await fixture.whenStable();
+    expect(fixture.nativeElement.querySelector('.data-notice')).toBeNull();
+  });
+
+  it('shows the notice when no region is chosen and the browser names none', async () => {
+    // The browser's region is read when the page first asks for one.
+    const languages = vi.spyOn(navigator, 'languages', 'get').mockReturnValue(['en']);
+    const { fixture } = await create('signup');
+    expect(TestBed.inject(PreferencesService).region()).toBe('');
+    expect(TestBed.inject(LocaleService).region()).toBe('');
+    expect(fixture.nativeElement.querySelector('.data-notice')).not.toBeNull();
+    languages.mockRestore();
+  });
+
   it('will not submit a sign up whose passwords differ, and marks the field', async () => {
     const { fixture, page } = await create('signup');
     page['email'].set('a@b.com');
@@ -182,5 +207,6 @@ describe('AuthPage hidden fields', () => {
     expect(fixture.nativeElement.querySelector('#confirmation')).toBeNull();
     expect(text(fixture, 'button[type=submit]')).toBe('Sign in');
     expect(fixture.nativeElement.querySelector('.privacy-note')).toBeNull();
+    expect(fixture.nativeElement.querySelector('.data-notice')).toBeNull();
   });
 });

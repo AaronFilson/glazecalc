@@ -75,6 +75,16 @@
   },
   "meta": {
     "description": "Enter a glaze recipe and see its unity formula (UMF), silica to alumina ratio and flux balance. Free and open source, for recipes, materials and firing logs.",
+    "guides": "Plain-language guides for new potters: what a glaze is, how to make and mix one safely, keep your family safe, and fire a basic kiln.",
+    "glazingBasics": "What a glaze is made of, how the kiln turns it to glass, and what cones, frits, unity formulas and glaze defects mean. A guide for new potters.",
+    "makingAGlaze": "How to buy, store, weigh and mix a glaze, get its thickness right, test it on your own clay and keep records so you can make it again.",
+    "safeMixing": "How to keep glaze dust out of your lungs and kiln fumes out of your home: safe habits, respirators, cleaning, ventilation and risky materials.",
+    "homeSafety": "What to do if a child or pet swallows a glaze material, and how to keep materials, dust, the kiln and handmade ware safe around your family.",
+    "firing": "How to fire an electric kiln: choose, place and read cones, and follow published schedules for bisque and glaze firings, with a cone chart.",
+    "advice": "Practical tips on mixing, glazing and firing, from Glazecalc, plus any advice of your own. Free for potters and ceramicists.",
+    "about": "Glazecalc is a free, open-source glaze chemistry calculator and notebook. See how it works out a unity formula and how it is built.",
+    "privacy": "How Glazecalc handles your data: no ads, no analytics and no tracking, and nothing is sold. What is kept, why, and how to use your rights.",
+    "signup": "Create a free Glazecalc account to keep your glaze recipes, materials, notes and firing logs. No ads, and your data is never sold.",
     "imageAlt": "Glazecalc: understand your glazes, not just mix them."
   },
   "notices": {

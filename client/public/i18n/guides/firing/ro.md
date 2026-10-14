@@ -278,6 +278,97 @@ Label: Ajustarea următoarei arderi
 
 :::
 
+:::sk
+
+## Arderea la conuri SK {#sk-cones}
+
+Conurile SK sunt conurile pirometrice fabricate după standardul japonez JIS R 8101 și vândute în Japonia de distribuitori precum Yuko Trading (有恒商事). Ca orice con, un con SK măsoară lucrul termic{{en: heatwork}}, nu doar temperatura: se înmoaie și se îndoaie când piesele au primit destulă căldură, iar apoi citiți cât de mult s-a îndoit. Conurile martor{{en: witness cones}}, citirea gradului de îndoire a unui con și menținerile{{en: holds}} funcționează la el ca la orice con. Această secțiune numește sistemul fiecărui con și nu transformă niciodată un număr SK în numărul altui sistem: numerele diferitelor serii de conuri nu sunt interschimbabile.
+
+> [!NOTE]
+> Scrieți întotdeauna „SK” înaintea numărului. Multe rețete japoneze mai vechi spun doar „SK 8” sau „SK 9”, fără să spună al cui este conul. Conurile Kyoto și conurile SK după JIS au aceleași numere, dar se îndoaie la temperaturi diferite (vedeți „Conurile Kyoto”, mai jos).
+
+### Conurile mari
+
+Standardul are două mărimi. Conurile mari (大型コーン) sunt „folosite în principal pentru măsurarea gradului de ardere” (焼度測定), adică ceea ce îi trebuie unui ceramist. Conurile mici (de la SK 26 la SK 42, la capătul de sus al gamei) sunt „folosite în principal pentru încercările de refractaritate” și nu sunt tratate aici. Tabelul de mai jos dă conurile mari de la SK 022 la SK 20.
+
+Aici numerele merg de la SK 022, cel mai rece, până la SK 20. Între SK 015 și SK 6, numerele tipărite au un „a” (SK 015a, SK 6a); scrieți-l așa cum este tipărit.
+
+### Așezarea conurilor mari
+
+Fixați fiecare con mare într-un suport de conuri sau într-o turtă de argilă, înclinat spre fața de îndoire. Ca la orice con, păstrați aceeași înălțime și aceeași înclinare de la o ardere la alta, pentru că o diferență la oricare dintre ele schimbă cât de mult se îndoaie conul. Așezați împreună cele trei conuri ale setului{{en: cone pack}} (vedeți mai jos), adânc în cuptor, aproape de centrul încărcăturii, unde primesc aceeași căldură ca piesele, dar unde le puteți vedea prin vizor; înainte să închideți cuptorul, verificați că le vedeți pe toate trei.
+
+### Conul de ghidaj, conul țintă și conul de control
+
+Conurile se vând și se așază câte trei: un con de ghidaj, un con țintă la temperatura dorită și un con de control. Luați drept con țintă numărul SK pe care îl indică rețeta sau argila, drept con de ghidaj conul imediat mai rece (un rând mai sus în tabel) și drept con de control conul imediat mai fierbinte. Când conul de ghidaj începe să se îndoaie, finalul este aproape; când se îndoaie conul de control, arderea a mers prea departe.
+
+### Tabelul SK
+
+Table: Conurile SK mari (JIS R 8101): temperatura nominală (JIS) a fiecăruia
+Label: Tabelul SK
+
+| Con     | Temperatura nominală (JIS) |
+| ------- | -------------------------: |
+| SK 022  |        {{1112 °F; 600 °C}} |
+| SK 021  |        {{1202 °F; 650 °C}} |
+| SK 020  |        {{1238 °F; 670 °C}} |
+| SK 019  |        {{1274 °F; 690 °C}} |
+| SK 018  |        {{1310 °F; 710 °C}} |
+| SK 017  |        {{1346 °F; 730 °C}} |
+| SK 016  |        {{1382 °F; 750 °C}} |
+| SK 015a |        {{1454 °F; 790 °C}} |
+| SK 014a |        {{1499 °F; 815 °C}} |
+| SK 013a |        {{1535 °F; 835 °C}} |
+| SK 012a |        {{1571 °F; 855 °C}} |
+| SK 011a |        {{1616 °F; 880 °C}} |
+| SK 010a |        {{1652 °F; 900 °C}} |
+| SK 09a  |        {{1688 °F; 920 °C}} |
+| SK 08a  |        {{1724 °F; 940 °C}} |
+| SK 07a  |        {{1760 °F; 960 °C}} |
+| SK 06a  |        {{1796 °F; 980 °C}} |
+| SK 05a  |       {{1832 °F; 1000 °C}} |
+| SK 04a  |       {{1868 °F; 1020 °C}} |
+| SK 03a  |       {{1904 °F; 1040 °C}} |
+| SK 02a  |       {{1940 °F; 1060 °C}} |
+| SK 01a  |       {{1976 °F; 1080 °C}} |
+| SK 1a   |       {{2012 °F; 1100 °C}} |
+| SK 2a   |       {{2048 °F; 1120 °C}} |
+| SK 3a   |       {{2084 °F; 1140 °C}} |
+| SK 4a   |       {{2120 °F; 1160 °C}} |
+| SK 5a   |       {{2156 °F; 1180 °C}} |
+| SK 6a   |       {{2192 °F; 1200 °C}} |
+| SK 7    |       {{2246 °F; 1230 °C}} |
+| SK 8    |       {{2282 °F; 1250 °C}} |
+| SK 9    |       {{2336 °F; 1280 °C}} |
+| SK 10   |       {{2372 °F; 1300 °C}} |
+| SK 11   |       {{2408 °F; 1320 °C}} |
+| SK 12   |       {{2462 °F; 1350 °C}} |
+| SK 13   |       {{2516 °F; 1380 °C}} |
+| SK 14   |       {{2570 °F; 1410 °C}} |
+| SK 15   |       {{2615 °F; 1435 °C}} |
+| SK 16   |       {{2660 °F; 1460 °C}} |
+| SK 17   |       {{2696 °F; 1480 °C}} |
+| SK 18   |       {{2732 °F; 1500 °C}} |
+| SK 19   |       {{2768 °F; 1520 °C}} |
+| SK 20   |       {{2786 °F; 1530 °C}} |
+
+Toate valorile sunt nominale (JIS): temperatura pe care standardul o dă pentru con, așa cum este tipărită în tabelul Yuko Trading. Tabelul nu indică o viteză de încălzire. Standardul dă temperaturi de referință. La o viteză obișnuită pentru un ceramist, de aproximativ 100 °C/h, institutul municipal din Kyoto a măsurat că propriile sale conuri Kyoto se îndoaie cu 40–70 °C mai jos decât valoarea JIS pentru același număr; pentru conurile SK după JIS nu am găsit astfel de măsurători. Așezați un con martor și comparați.
+
+### Conurile Kyoto
+
+Conurile Kyoto (京都ゼーゲル), fabricate de institutul municipal din Kyoto, nu se mai fabrică: potrivit presei, institutul a oprit producția la sfârșitul anului fiscal 2009. Au aceleași numere ca și conurile SK după JIS, dar se îndoaie la temperaturi mai joase: un con Kyoto se îndoaie, în cele mai multe cazuri, cam la temperatura conului SK după JIS cu două trepte mai rece. O rețetă din Kyoto care spune „SK 8” se poate referi la un con Kyoto. Institutul a publicat sfaturi pentru ceramiștii care trec de la conurile Kyoto la conurile Orton și folosește conul Orton 10 în locul propriului său con Kyoto SK 12; aceasta este alegerea institutului, făcută pe baza propriilor măsurători la 100 °C/h, și nu se aplică niciunui alt con.
+
+### Conurile Orton vândute în Japonia
+
+Conurile Orton autoportante se vând în Japonia sub numele 立つゼーゲル („Seger în picioare”), pentru că nu au nevoie de suport de conuri sau de stativ. Sunt conuri Orton, cu numerele Orton și tabelul Orton (mai sus): ardeți la un astfel de con numai după numărul lui Orton și păstrați conurile SK și conurile Orton în seturi separate, niciodată în același set.
+
+### Surse pentru conurile SK
+
+- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (tabelul SK, verificat la 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
+- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (în vigoare, reconfirmat la 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [Kyoto Municipal Institute of Industrial Technology and Culture: ce trebuie avut în vedere la trecerea de la conurile Kyoto la conurile Orton](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
+
+:::
+
 ## Arderea biscuit {#bisque}
 
 **Arderea biscuit**{{en: bisque}} (în Marea Britanie i se spune „biscuit”) este prima ardere, la temperatură mai joasă, care transformă argila uscată în piese tari și poroase, gata de glazurat. De obicei se face la conul{{en: cone}} 06–04, adică {{1828–1945 °F; 998–1063 °C}} în tabelul Orton; ceramiștii britanici ard adesea la aproximativ {{1000 °C; 1832 °F}}, aproape de conul 06. Biscuitul ar trebui să rămână poros, „în general peste 15 %” (Digitalfire), ca să absoarbă apa din glazură{{en: glaze}}. Un biscuit ars la temperatură prea joasă preia un strat de glazură prea gros, care apoi crapă și **se retrage**{{en: crawls}} (se strânge în insule și lasă argila neacoperită). De asemenea, biscuitul ars insuficient „continuă să se contracte în timpul arderii de glazură”, ceea ce strică compatibilitatea glazurii cu ciobul{{en: glaze fit}}. Încărcarea este îngăduitoare: piesele se pot atinge, capacele pot fi arse pe vasele lor, iar bolurile se așază buză pe buză, nu unele în altele.

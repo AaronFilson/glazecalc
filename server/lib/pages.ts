@@ -3,24 +3,14 @@
 // depends on the page's language and address, so it is written in here
 // (docs/adr/0013-translations.md): <html lang dir>, the canonical address,
 // the same page in each language offered (hreflang), the title, description
-// and preview text in the language, and noindex for a language not offered yet.
+// and preview text in the language with its og:locale, and noindex for a
+// language not offered yet. hreflang is the code in the address, script and
+// all (zh-Hans), which Google reads.
 import languages from '../../lib/regions/languages.js';
 import type { Language } from '../../lib/regions/languages.js';
+import { PUBLIC_PAGES, prerenderedFile } from '../../lib/pages.js';
 
-/** The public pages, for the sitemap: the ones worth finding in a search. */
-export const PUBLIC_PAGES = [
-  '/',
-  '/guides',
-  '/guides/glazing-basics',
-  '/guides/making-a-glaze',
-  '/guides/safe-mixing',
-  '/guides/home-safety',
-  '/guides/firing',
-  '/advice',
-  '/about',
-  '/privacy',
-  '/signup'
-];
+export { PUBLIC_PAGES };
 
 /**
  * Every page of the app (client/app/app.routes.ts): the public ones, and those
@@ -66,6 +56,20 @@ export function withoutSlash(pathname: string): string | null {
   return APP_PAGES.includes(bare) ? languages.languagePrefix(languages.languageOfPath(pathname)) + bare : null;
 }
 
+/**
+ * The file a page was prerendered to, from its address (de/guides/firing.html),
+ * or null for an address that has none: not a public page, or in a language not
+ * offered yet.
+ */
+export function prerenderedKey(pathname: string, live: readonly string[] = languages.LIVE_LANGUAGES): string | null {
+  const code = languages.languageOfPath(pathname);
+  const page = languages.pagePath(pathname);
+  return isPage(pathname) && PUBLIC_PAGES.includes(page) && live.includes(code) ? prerenderedFile(code, page) : null;
+}
+
+/** A prerendered page with the reply's nonce where the render had its placeholder (client/app/app.config.server.ts). */
+export const withNonce = (html: string, nonce: string): string => html.replaceAll('__GC_NONCE__', () => nonce);
+
 const attribute = (text: string): string =>
   text.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
@@ -80,6 +84,20 @@ const put = (html: string, around: RegExp, text: string): string =>
 /** The address of a page in a language: https://glazecalcapp.com/de/guides. */
 const addressIn = (site: string, code: string, page: string): string => site + languages.languagePrefix(code) + page;
 
+/**
+ * A language's og:locale, as Open Graph writes it, language_TERRITORY: the
+ * region it is most read in, which for Chinese also says the script (zh_CN
+ * for zh-Hans, zh_TW for zh-Hant); en_US for a pseudo-locale.
+ */
+export function ogLocale(code: string): string {
+  try {
+    const { language, region } = new Intl.Locale(languages.textLanguage(code)).maximize();
+    return region ? language + '_' + region : language;
+  } catch {
+    return 'en_US';
+  }
+}
+
 /** The page's title, description and preview image's text in its language, where its messages have them. */
 export interface PageText {
   title?: string;
@@ -91,14 +109,16 @@ export interface PageText {
  * index.html for a page: its language and direction, its canonical address,
  * its other languages, and its title, description and preview text where
  * translated. An address that is no page gets neither a canonical address
- * nor other languages.
+ * nor other languages. A prerendered page has its own title and description,
+ * which `text` does not replace.
  */
 export function pageHtml(
   html: string,
   pathname: string,
   site: string,
   text: PageText = {},
-  live: readonly string[] = languages.LIVE_LANGUAGES
+  live: readonly string[] = languages.LIVE_LANGUAGES,
+  prerendered = false
 ): string {
   const code = languages.languageOfPath(pathname);
   const language = languages.languageFor(code) as Language;
@@ -116,15 +136,22 @@ export function pageHtml(
       head.push(`<link rel="alternate" hreflang="x-default" href="${attribute(addressIn(site, 'en', page))}" />`);
     }
   }
+  // Link previews read these; og:locale:alternate lists the other languages offered.
+  if (isPage(pathname) && live.includes(code)) {
+    head.push(`<meta property="og:locale" content="${ogLocale(code)}" />`);
+    for (const other of live.filter((l) => l !== code)) {
+      head.push(`<meta property="og:locale:alternate" content="${ogLocale(other)}" />`);
+    }
+  }
   let out = html
     .replace(/<html lang="[^"]*"[^>]*>/, `<html lang="${code}" dir="${language.dir}">`)
     .replace('</head>', () => head.map((line) => '    ' + line + '\n').join('') + '  </head>');
   out = put(out, /(<meta\s+property="og:url"\s+content=")[^"]*(")/, here);
-  if (text.title) {
+  if (text.title && !prerendered) {
     out = put(out, /(<title>)[^<]*(<\/title>)/, text.title);
     out = put(out, /(<meta\s+property="og:title"\s+content=")[^"]*(")/, text.title);
   }
-  if (text.description) {
+  if (text.description && !prerendered) {
     out = put(out, /(<meta\s+name="description"\s+content=")[^"]*(")/, text.description);
     out = put(out, /(<meta\s+property="og:description"\s+content=")[^"]*(")/, text.description);
   }

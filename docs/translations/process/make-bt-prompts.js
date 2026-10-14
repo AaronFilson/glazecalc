@@ -3,7 +3,7 @@
 //   GLAZECALC_SCRATCH=... node make-bt-prompts.js ga   → <scratch>/bt/<code>-{safe-mixing,home-safety,warnings}.md
 const { execFileSync } = require('child_process');
 const path = require('path');
-const { LANGUAGES, SCRATCH_WIN, codes, fill, write } = require('./wave');
+const { LANGUAGES, SCRATCH_WIN, codes, fill, write, notes } = require('./wave');
 
 const [code] = codes();
 const guide = (name, title) =>
@@ -17,7 +17,13 @@ execFileSync(process.execPath, [path.join(__dirname, 'bt-extract.js'), code], { 
 for (const [part, what] of Object.entries(WHAT)) {
   write(
     `bt/${code}-${part}.md`,
-    fill('backtranslate-prompt.md', { LANGUAGE: LANGUAGES[code].language, CODE: code, PART: part, WHAT: what })
+    fill('backtranslate-prompt.md', {
+      LANGUAGE: LANGUAGES[code].language,
+      CODE: code,
+      PART: part,
+      WHAT: what,
+      NOTES: notes(code, 'backtranslate')
+    })
   );
 }
 console.log(['safe-mixing', 'home-safety', 'warnings'].map((part) => `bt/${code}-${part}.md`).join('  '));

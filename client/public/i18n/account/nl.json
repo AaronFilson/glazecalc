@@ -11,10 +11,13 @@
     "password": "Wachtwoord",
     "passwordHint": "Ten minste 8 tekens.",
     "confirmation": "Wachtwoord bevestigen",
+    "keepSignedIn": "Ingelogd blijven op dit apparaat",
     "passwordMissing": "Voer uw wachtwoord in.",
     "createAccount": "Account aanmaken",
     "signIn": "Inloggen",
     "haveAccount": "Hebt u al een account? <signin>Inloggen</signin>",
+    "privacy": "Uw e-mailadres en wat u opslaat, worden alleen gebruikt om uw account te laten werken, en worden opgeslagen bij Amazon Web Services in de VS. <privacy>Hoe Glazecalc met uw gegevens omgaat</privacy>",
+    "dataNotice": "Glazecalc is een gratis, open source project, en accounts worden bewaard op servers in de Verenigde Staten. U kunt de gidsen lezen en de calculator proberen zonder account, of uw eigen kopie draaien. Of u hier een account aanmaakt, is uw eigen beslissing, en het project aanvaardt daarvoor geen verantwoordelijkheid. <where>Waar uw account wordt bewaard, en uw keuze</where>",
     "forgot": "Wachtwoord vergeten? Opnieuw instellen",
     "newHere": "Nieuw hier? <signup>Gratis account aanmaken</signup>",
     "signUpFailed": "Fout: het account aanmaken is niet gelukt.",
@@ -61,7 +64,29 @@
     "deletePassword": "Uw wachtwoord, ter bevestiging",
     "deletePasswordMissing": "Voer ter bevestiging uw wachtwoord in.",
     "delete": "Mijn account verwijderen",
-    "deleteFailed": "Fout: het account kon niet worden verwijderd. Probeer het opnieuw."
+    "deleteFailed": "Fout: het account kon niet worden verwijderd. Probeer het opnieuw.",
+    "unverifiedHeading": "Uw e-mailadres bevestigen",
+    "unverifiedText": "We hebben een link naar {email} gestuurd toen u dit account aanmaakte. Open die om te bevestigen dat het adres van u is. Tot dan sturen we er alleen e-mail naartoe als u erom vraagt, zoals om uw wachtwoord opnieuw in te stellen.",
+    "resend": "Link opnieuw sturen",
+    "resendFailed": "Fout: de link kon niet worden verstuurd. Probeer het opnieuw.",
+    "emailHeading": "Uw e-mailadres wijzigen",
+    "emailText": "We sturen een link naar het nieuwe adres, en uw e-mailadres verandert als u die opent. We laten het ook weten aan uw huidige adres. Elk apparaat dat bij dit account is ingelogd, wordt uitgelogd.",
+    "newEmail": "Nieuw e-mailadres",
+    "emailPassword": "Uw wachtwoord, ter bevestiging",
+    "emailSend": "Link sturen",
+    "emailFailed": "Fout: de link kon niet worden verstuurd. Probeer het opnieuw.",
+    "signOutHeading": "Overal uitloggen",
+    "signOutText": "Hiermee logt u uit op elk apparaat, ook op dit apparaat. Gebruik het als u een apparaat kwijt bent of denkt dat iemand anders uw inloggegevens heeft.",
+    "signOutButton": "Overal uitloggen",
+    "signOutFailed": "Fout: uitloggen is niet gelukt. Probeer het opnieuw."
+  },
+  "export": {
+    "heading": "Mijn gegevens downloaden",
+    "text": "Sla een kopie van alles in uw account op als één bestand: uw accountgegevens, instellingen, voorraad, recepten, grondstoffen, toevoegingen, notities, stookverslagen, adviezen en prullenbak. Uw wachtwoord zit er niet in. Bewaar het bestand op een privéplek, want het bevat alles wat u hebt opgeslagen.",
+    "json": "Alles downloaden (JSON)",
+    "csvText": "Of sla een spreadsheet op van alleen uw recepten of alleen uw eigen grondstoffen, om te openen in Excel, Numbers of Sheets.",
+    "recipes": "Recepten (CSV)",
+    "materials": "Grondstoffen (CSV)"
   },
   "settings": {
     "heading": "Instellingen",
@@ -126,11 +151,16 @@
         "example": "kegel 04, kegel 6",
         "saved": "Opgeslagen: stoken volgens Ortonkegels."
       },
+      "sk": {
+        "label": "Volgens SK-kegels (JIS R 8101)",
+        "example": "SK 4a, SK 8",
+        "saved": "Opgeslagen: stoken volgens SK-kegels."
+      },
       "temperature": {
         "label": "Volgens temperatuur, zoals in het programma van een ovenregelaar",
         "saved": "Opgeslagen: stoken volgens temperatuur."
       },
-      "help": "Zolang u niets kiest, volgt dit uw regio: Ortonkegels in de Verenigde Staten, het Verenigd Koninkrijk, Ierland, Australië en Nieuw-Zeeland, temperatuur in de rest van Europa."
+      "help": "Zolang u niet kiest, volgt dit uw regio: Ortonkegels in de VS, het Verenigd Koninkrijk, Ierland, Australië en Nieuw-Zeeland, SK-kegels in Japan, temperatuur in de rest van Europa."
     },
     "density": {
       "legend": "Dichtheid van het glazuur",
@@ -147,7 +177,7 @@
         "label": "Pintgewicht, ounces per Engelse pint",
         "saved": "Opgeslagen: dichtheid van het glazuur als pintgewicht."
       },
-      "help": "Hoe de gidsen de dikte van een glazuur aangeven. Zolang u niets kiest, volgt dit uw regio: graden Baumé in Italië, soortelijk gewicht elders."
+      "help": "Hoe de gidsen de dikte van een glazuur aangeven. Zolang u niet kiest, volgt dit uw regio: graden Baumé in Italië en Japan, soortelijk gewicht elders."
     },
     "theme": {
       "legend": "Licht of donker",
@@ -229,9 +259,19 @@
       },
       "hidden": {
         "label": "Verborgen",
-        "saved": "Opgeslagen: de melding is verborgen. Eén regel ervan blijft staan in de veiligheidsgidsen."
+        "saved": "Opgeslagen: de melding is verborgen. Eén regel ervan blijft staan in de veiligheidsgidsen.",
+        "savedPlain": "Opgeslagen: de melding is verborgen. Eén regel ervan blijft bovenaan elke pagina staan."
       },
       "help": "De melding bovenaan elke pagina die zegt dat de pagina met AI is vertaald, met een manier om een correctie voor te stellen."
     }
+  },
+  "confirmEmail": {
+    "heading": "Uw e-mailadres bevestigen",
+    "intro": "Druk op de knop om dit adres te bevestigen.",
+    "confirm": "Bevestigen",
+    "incomplete": "Voor deze pagina is de link uit een bevestigingsmail nodig, en deze link is onvolledig.",
+    "account": "Uw account",
+    "signIn": "Inloggen",
+    "failed": "Fout: het adres kon niet worden bevestigd. Probeer het opnieuw."
   }
 }
