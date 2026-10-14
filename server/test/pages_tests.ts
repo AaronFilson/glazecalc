@@ -339,9 +339,10 @@ describe('pages in each language', () => {
     expect(english.text).to.include('<html lang="en" dir="ltr">');
     const german = await site().get('/de/guides');
     const { meta } = JSON.parse(fs.readFileSync(path.join(client, 'i18n', 'de.json'), 'utf8')) as {
-      meta: { description: string; imageAlt: string };
+      meta: { guides: string; imageAlt: string };
     };
-    expect(german.text).to.include(`<meta property="og:description" content="${meta.description}"`);
+    // The guides page's own description, not the site's.
+    expect(german.text).to.include(`<meta property="og:description" content="${meta.guides}"`);
     expect(german.text).to.include(`<meta property="og:image:alt" content="${meta.imageAlt}"`);
     expect(german.text).to.include('<meta property="og:locale" content="de_DE"');
     // For search engines that read no hreflang.

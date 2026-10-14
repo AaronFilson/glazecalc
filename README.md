@@ -82,8 +82,8 @@ For anyone reading the code:
   `.ts` files directly with no build step ([ADR 8](docs/adr/0008-typescript-server-without-a-build.md)),
   and put back online. The
   [case study](docs/case-study.md) tells how.
-- **Tested at three levels, in CI on every pull request and push to master:** 286 server tests (98% of statements) run
-  against the app in-process; 392 Angular unit tests (92%); 135 Playwright browser tests,
+- **Tested at three levels, in CI on every pull request and push to master:** 398 server tests (98% of statements) run
+  against the app in-process; 477 Angular unit tests (92%); 194 Playwright browser tests,
   including [axe](https://github.com/dequelabs/axe-core) accessibility checks of every page in
   light and dark mode, every page in a pseudo-locale to find text not marked for translation, and
   every page in each language at a phone's width.

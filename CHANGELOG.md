@@ -9,8 +9,7 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 - **Pages that search engines and link previews can read.** The public pages (home, guides,
   advice, about, privacy, sign-up) are drawn to plain HTML when the app is built, in every
   language, so the text is there before any script runs; the app then takes the page over in
-  place. Each page has its own title and description (a language without its own description
-  yet uses its site description), the home page and the guides carry structured data, and link
+  place. Each page has its own title and description in every language, the home page and the guides carry structured data, and link
   previews name the page's language and the others offered ([ADR 16](docs/adr/0016-prerendered-public-pages.md),
   [plan](docs/seo-plan.md)).
 - **In Turkish.** Türkiye is a region (112, UZEM, silica limit, food-contact limits, shops), and
@@ -20,7 +19,7 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   accounts are kept on servers in the United States, that the guides and a trial need no account,
   that anyone can run their own copy, and that whether to make an account here is their own
   decision, for which the project accepts no responsibility. A new section of the privacy page says
-  the same at more length, for everyone. In English, Turkish and Japanese so far.
+  the same at more length, for everyone. In every language.
 - **Where you work, and numbers your way** (the groundwork for other languages,
   [plan](docs/i18n-plan.md)). Settings gain:
   - **Where you work:** the EU countries, the US, UK, Australia and New Zealand. It sets the
@@ -72,11 +71,20 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   back, which found eight slips in meaning, fixed. That makes 25 languages. The SK firing guide
   section, Japan's poison lines, silica limit and food-contact rules, and the password emails are
   in Japanese too.
+- **Every language caught up.** All 25 translations now have everything added since they were
+  made: the text on where accounts are kept (sign-up and privacy pages), each page's own title and
+  search description (written from research into what potters search for in each language, each
+  under 160 characters), and the text for Japan and Türkiye (the SK firing section, their poison
+  lines, silica limits and food-contact rules). Reviewed the same way as the waves: the safety text
+  and the SK section translated back into English blind and compared, plurals checked, poison lines
+  named as their own countries name them, and the Seger formula never confused with SK cones. The
+  English was made plainer where translators misread it (the SK guide cone, Kyoto cones, plurals,
+  the JSOH line). Every language has 0 messages and 0 guide sections still in English.
 - **SK cones (JIS R 8101)** as a third way to fire, in Settings beside Orton cones and temperature,
   and in the firing guide: setting large cones, guide, firing and guard cones, Kyoto cones, and the
   SK 022 to SK 20 chart with each figure marked nominal (JIS), its source and the date checked. SK and
-  Orton numbers are never turned into each other. The new guide section is in English until it is
-  translated.
+  Orton numbers are never turned into each other. The new guide section is translated into every
+  language.
 - **Japan as a region** (in Japanese or English). It fires by SK cones and reads glaze density in
   degrees Baumé until you choose otherwise, and lists the US materials until Japan's own are added.
   The guides give, each from an official page with its date:

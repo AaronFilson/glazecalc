@@ -42,6 +42,8 @@ test.describe('the head of each public page', () => {
     for (const path of PUBLIC_PAGES) {
       await page.goto(path);
       await expect(page.locator('h1')).toBeVisible();
+      // Once the app is up: it sets the description again as it starts.
+      await appStarted(page);
       const description = await meta(page, 'name="description"');
       expect(description, path).not.toMatch(SITE_DESCRIPTION);
       expect(description.length, path).toBeGreaterThanOrEqual(120);
@@ -57,17 +59,23 @@ test.describe('the head of each public page', () => {
     expect(await meta(page, 'name="description"')).toMatch(SITE_DESCRIPTION);
   });
 
-  test("a language without the page's description yet shows its own site description, not English", async ({
+  // A language without a page's description shows its own site description, not English
+  // (client/app/i18n/titles.spec.ts); every language now has every page's.
+  test("a page in another language has its own description in that language, not English nor the site's", async ({
     page
   }) => {
     await page.goto('/de/');
     await expect(page.locator('h1')).toBeVisible();
+    await appStarted(page);
     const site = await meta(page, 'name="description"');
     await page.goto('/de/guides/firing');
     await expect(page.locator('h1')).toBeVisible();
-    expect(await meta(page, 'name="description"')).toBe(site);
-    expect(await meta(page, 'name="description"')).not.toBe(FIRING_DESCRIPTION);
-    expect(await meta(page, 'property="og:description"')).toBe(site);
+    await appStarted(page);
+    const description = await meta(page, 'name="description"');
+    expect(description).toMatch(/Elektroofen/);
+    expect(description).not.toBe(site);
+    expect(description).not.toBe(FIRING_DESCRIPTION);
+    expect(await meta(page, 'property="og:description"')).toBe(description);
   });
 
   test('going from one page to another in the app keeps the description right', async ({ page }) => {
