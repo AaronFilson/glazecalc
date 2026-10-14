@@ -31,6 +31,7 @@ describe('LocaleService', () => {
     expect(browserRegion(['en', 'fr-FR'])).toBe('FR');
     expect(browserRegion(['en', 'ja-JP'])).toBe('JP');
     expect(browserRegion(['en', 'ko-KR'])).toBe('');
+    expect(browserRegion(['tr-TR', 'en'])).toBe('TR');
     expect(browserRegion(['not a tag'])).toBe('');
   });
 
@@ -97,5 +98,24 @@ describe('LocaleService', () => {
     preferences.density.set('sg');
     TestBed.tick();
     expect([locale.cones(), locale.density()]).toEqual(['temperature', 'sg']);
+  });
+
+  it('fires by temperature and reads specific gravity in Türkiye, until chosen, and lists the EU library', () => {
+    const preferences = TestBed.inject(PreferencesService);
+    const locale = TestBed.inject(LocaleService);
+    preferences.region.set('TR');
+    TestBed.tick();
+    expect([locale.locale(), locale.temperature(), locale.cones(), locale.density()]).toEqual([
+      'en-TR',
+      'C',
+      'temperature',
+      'sg'
+    ]);
+    expect(chosenRegion()).toBe('EU');
+    // Orton cones and Baumé are a setting away.
+    preferences.cones.set('orton');
+    preferences.density.set('baume');
+    TestBed.tick();
+    expect([locale.cones(), locale.density()]).toEqual(['orton', 'baume']);
   });
 });

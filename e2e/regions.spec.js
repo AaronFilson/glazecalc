@@ -94,3 +94,36 @@ test.describe('a potter in Japan', () => {
     await accessible(page);
   });
 });
+
+test.describe('a potter in Türkiye', () => {
+  test.beforeEach(async ({ page }) => {
+    await page.addInitScript(() => globalThis.localStorage.setItem('preferredRegion', 'TR'));
+  });
+
+  test("is shown Türkiye's lines, its silica formula and its ceramic limits, at phone width too", async ({ page }) => {
+    await page.setViewportSize({ width: 375, height: 800 });
+    await page.goto('/guides/home-safety');
+    const lines = page.locator('gc-poison-lines');
+    await expect(lines.locator('a[href="tel:112"]')).toBeVisible();
+    await expect(lines.locator('a[href="tel:114"]')).toHaveText('114');
+    await expect(lines).toContainText('UZEM');
+    await accessible(page);
+
+    await page.goto('/guides/safe-mixing');
+    const silica = page.locator('gc-silica-limit');
+    await expect(silica.locator('tbody td')).toHaveText(['10 / (Q + 2) mg/m³', '0.098 mg/m³', '0.049 mg/m³']);
+    await expect(silica).toContainText('A binding limit.');
+    await expect(silica).toContainText('FFP2');
+    await accessible(page);
+
+    await page.goto('/guides/glazing-basics');
+    const food = page.locator('gc-food-limits');
+    await expect(food.locator('tbody tr')).toHaveCount(3);
+    await expect(food).toContainText('2012/30');
+    await expect(food).toContainText('At least three samples');
+    // Nothing on the page is wider than the phone.
+    const overflow = await page.evaluate(() => globalThis.document.documentElement.scrollWidth - globalThis.innerWidth);
+    expect(overflow).toBeLessThanOrEqual(0);
+    await accessible(page);
+  });
+});

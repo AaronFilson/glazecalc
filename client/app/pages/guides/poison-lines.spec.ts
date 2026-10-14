@@ -63,4 +63,14 @@ describe('PoisonLines', () => {
     expect(element.querySelector('a[href="tel:%238000"]')?.textContent).toBe('#8000');
     expect(text).toContain('Call your vet.');
   });
+
+  it("gives Türkiye's 112 and UZEM on 114, around the clock, with no claim on cost", async () => {
+    const { element, calls } = await create('TR');
+    expect(calls()).toEqual(['tel:112', 'tel:114']);
+    const text = (element.textContent ?? '').replace(/\s+/g, ' ');
+    expect(text).toContain('One number for ambulance, fire, police, gendarmerie and coast guard.');
+    expect(text).toContain('Poison advice: National Poison Information Centre (Ulusal Zehir Danışma Merkezi, UZEM)');
+    expect(text).toContain('24 hours, every day');
+    expect(text).not.toContain('free');
+  });
 });
