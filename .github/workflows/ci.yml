@@ -88,6 +88,12 @@ jobs:
     timeout-minutes: 15
     env:
       APP_SECRET: ci-only-secret
+      # The app runs as production, which needs a key for two-step sign-in's
+      # secrets (server/lib/mfa_key.ts). This is compose.yaml's fixed TEST key,
+      # public and not secret (the base64 of "glazecalc-compose-test-key-32byt"),
+      # set here so the job never depends on that default. The live site's key
+      # is in SSM (/glazecalc/mfa-key).
+      MFA_KEY: Z2xhemVjYWxjLWNvbXBvc2UtdGVzdC1rZXktMzJieXQ=
       # compose.yaml passes these to the app: emails go to its log, linking here.
       MAIL_TRANSPORT: log
       APP_URL: http://ci.example
