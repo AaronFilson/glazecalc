@@ -1,4 +1,5 @@
-import { effect, inject, signal, untracked } from '@angular/core';
+import { DOCUMENT, isPlatformBrowser } from '@angular/common';
+import { PLATFORM_ID, effect, inject, signal, untracked } from '@angular/core';
 import { translate } from '@jsverse/transloco';
 import { marker } from '@jsverse/transloco-keys-manager/marker';
 import { AuthService } from './auth.service';
@@ -64,6 +65,9 @@ const BAR_COLORS = { light: '#f7f3ec', dark: '#1e1a17' };
  * the account signs in on, once the server has confirmed the session.
  */
 export function watchTheme(): void {
+  // The render has no device to follow, and the page's colors are the browser's: index.html's script sets them.
+  if (!isPlatformBrowser(inject(PLATFORM_ID))) return;
+  const root = inject(DOCUMENT).documentElement;
   const preferences = inject(PreferencesService);
   const auth = inject(AuthService);
   const media = globalThis.matchMedia?.('(prefers-color-scheme: dark)');
@@ -72,7 +76,7 @@ export function watchTheme(): void {
 
   effect(() => {
     deviceDark();
-    applyTheme(preferences.theme(), preferences.palette(), document.documentElement, media);
+    applyTheme(preferences.theme(), preferences.palette(), root, media);
   });
 
   effect(() => {

@@ -343,8 +343,8 @@ describe('RecipePage', () => {
   });
 
   it('scales to a batch in pounds when weights are in pounds and ounces, and shows each as a scale reads it', async () => {
-    const weightUnit = TestBed.inject(PreferencesService).weightUnit;
-    weightUnit.set('lb');
+    const preferences = TestBed.inject(PreferencesService);
+    preferences.remember('weightUnit', 'lb');
     const { fixture, page } = await create();
     fill(page, [
       [WHITING, '3'],
@@ -397,9 +397,9 @@ describe('RecipePage', () => {
     expect(weights()).toEqual([]);
 
     // Typed in pounds, so in grams it starts from the gram default.
-    weightUnit.set('g');
+    preferences.remember('weightUnit', 'g');
     expect(page['batchText']()).toBe('500');
-    weightUnit.set('lb');
+    preferences.remember('weightUnit', 'lb');
     expect(page['batchText']()).toBe('2.5');
   });
 
@@ -1200,7 +1200,7 @@ describe('RecipePage', () => {
 
     it('says when a swap is not like for like, and when lead is still in it', async () => {
       // Lead is allowed in Settings.
-      TestBed.inject(PreferencesService).lead.set('on');
+      TestBed.inject(PreferencesService).remember('lead', 'on');
       const LITHARGE: Material = {
         ...material('Litharge', [['PbO', 1]], 0),
         status: 'historical',

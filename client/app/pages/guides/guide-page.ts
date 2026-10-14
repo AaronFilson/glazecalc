@@ -2,6 +2,7 @@ import { Component, computed, inject, signal } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { TranslocoDirective } from '@jsverse/transloco';
 import { LocaleService } from '../../core/locale.service';
+import { ConeSystem } from '../../core/preferences.service';
 import { forConeSystem, readGuide } from './guide-document';
 import { GuideText } from './guide-text';
 import { GuideView } from './guide-view';
@@ -33,12 +34,14 @@ import { GuideView } from './guide-view';
 export class GuidePage {
   private readonly locale = inject(LocaleService);
   protected readonly source: GuideText = inject(ActivatedRoute).snapshot.data['text'];
-  /** Cones or temperature: the reader's, until they ask for the other. */
-  protected readonly cones = signal(this.locale.cones());
+  /** The way the reader asked for here, instead of their own. */
+  private readonly asked = signal<ConeSystem | null>(null);
+  /** Cones or temperature: the reader's (which follows Settings once the page is up), until they ask for the other. */
+  protected readonly cones = computed(() => this.asked() ?? this.locale.cones());
   protected readonly twoWays = computed(() => /^:::(orton|temperature)$/m.test(this.source.text));
   protected readonly guide = computed(() => readGuide(forConeSystem(this.source.text, this.cones())));
 
   protected otherWay(): void {
-    this.cones.update((cones) => (cones === 'orton' ? 'temperature' : 'orton'));
+    this.asked.set(this.cones() === 'orton' ? 'temperature' : 'orton');
   }
 }
