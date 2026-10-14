@@ -1,4 +1,4 @@
-import { Component, computed, inject, signal } from '@angular/core';
+import { Component, DestroyRef, computed, effect, inject, signal, untracked } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { TranslocoDirective } from '@jsverse/transloco';
 import { LocaleService } from '../../core/locale.service';
@@ -22,9 +22,9 @@ import { GuideView } from './guide-view';
       }
       @if (twoWays()) {
         <p class="guide-note guide-version">
-          {{ cones() === 'orton' ? t('guides.version.cones') : t('guides.version.temperature') }}
+          {{ shown() === 'orton' ? t('guides.version.cones') : t('guides.version.temperature') }}
           <button type="button" class="btn btn-link link-inline" (click)="otherWay()">
-            {{ cones() === 'orton' ? t('guides.version.showTemperature') : t('guides.version.showCones') }}
+            {{ shown() === 'orton' ? t('guides.version.showTemperature') : t('guides.version.showCones') }}
           </button>
         </p>
       }
@@ -39,9 +39,27 @@ export class GuidePage {
   /** Cones or temperature: the reader's (which follows Settings once the page is up), until they ask for the other. */
   protected readonly cones = computed(() => this.asked() ?? this.locale.cones());
   protected readonly twoWays = computed(() => /^:::(orton|temperature)$/m.test(this.source.text));
-  protected readonly guide = computed(() => readGuide(forConeSystem(this.source.text, this.cones())));
+  /**
+   * The way the guide is drawn for. One found after the first render (the reader's Settings, once the page is
+   * up) is drawn in a task of its own: reading and drawing the other version of a long guide is the longest
+   * part of that switch, and a phone would otherwise be busy with all of it at once.
+   */
+  protected readonly shown = signal<ConeSystem>(untracked(() => this.cones()));
+  protected readonly guide = computed(() => readGuide(forConeSystem(this.source.text, this.shown())));
+
+  constructor() {
+    let pending: ReturnType<typeof setTimeout> | undefined;
+    effect(() => {
+      const cones = this.cones();
+      clearTimeout(pending);
+      if (cones !== untracked(() => this.shown())) pending = setTimeout(() => this.shown.set(cones));
+    });
+    inject(DestroyRef).onDestroy(() => clearTimeout(pending));
+  }
 
   protected otherWay(): void {
     this.asked.set(this.cones() === 'orton' ? 'temperature' : 'orton');
+    // Asked for here: drawn at once.
+    this.shown.set(this.cones());
   }
 }
