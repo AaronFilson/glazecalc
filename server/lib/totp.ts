@@ -77,11 +77,14 @@ export const codeAt = (secret: Buffer, step: number, digits: number = TOTP_DIGIT
 
 /**
  * The step a code is right for, within WINDOW steps of `ms`, or null. Takes
- * only exactly TOTP_DIGITS digits (spaces removed first). Does not check replay.
+ * only exactly TOTP_DIGITS digits, after NFKC (full-width digits from an input
+ * method become plain ones) and with spaces and dashes removed ("123 456",
+ * "123-456", and the minus sign and long-vowel mark ー a Japanese input method
+ * may give for "-"). Does not check replay.
  */
 export const matchingStep = (secret: Buffer, code: string, ms: number = Date.now()): number | null => {
-  if (typeof code !== 'string') return null;
-  const typed = code.replace(/\s/g, '');
+  if (typeof code !== 'string' || code.length > 40) return null;
+  const typed = code.normalize('NFKC').replace(/[\s\p{Pd}−ー]/gu, '');
   if (!new RegExp('^\\d{' + TOTP_DIGITS + '}$').test(typed)) return null;
   const given = Buffer.from(typed);
   const now = stepAt(ms);

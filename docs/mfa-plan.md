@@ -113,7 +113,7 @@ Everything that differs between production and staging comes from the environmen
 
    Effort S. Files: `server/models/user.ts`, `server/models/auth_challenge.ts`, `server/models/pending_sign_in.ts` (step 0); `server/lib/jwt_auth.ts`, `server/routes/user_routes.ts` (`/verify`) (stream B).
 
-6. **Recovery codes.** Make 10 codes of 10 Crockford base32 characters each (50 bits), shown as `xxxxx-xxxxx`.
+6. **Recovery codes.** Make 10 codes of 10 Crockford base32 characters each (50 bits), shown as `xxxxx-xxxxx`. A typed code is read after NFKC (full-width letters and digits from a Chinese or Japanese input method), with spaces and dashes left out.
    - Store `HMAC-SHA256(MFA_KEY, normalized code)`. The codes have high entropy, so bcrypt is not needed, and the key stops anyone guessing codes offline from a dump.
    - Codes are made automatically when the first factor is added, and shown once with Download (.txt), Copy and Print.
    - A code is used up atomically: `updateOne({ 'mfa.recoveryCodes': { $elemMatch: { hash, usedAt: null } } }, { $set: { 'mfa.recoveryCodes.$.usedAt': now } })`.
@@ -197,12 +197,12 @@ Everything that differs between production and staging comes from the environmen
 12. **Client: the second step at sign-in.**
     - `AuthService.signIn` resolves either `{ done, kept }` or `{ secondStep: SecondStepResponse }` (`lib/mfa.d.ts`). The `pending` token stays in memory (a field of the service or the component), never in `localStorage` or `sessionStorage`. The new `finishSignIn(pending, proof)` posts `SecondStepRequest` and does not send `X-Keep-Signed-In`: the choice is already on the pending record.
     - A new `SecondStep` component inside `auth-page.ts` shows:
-      - a code field (`autocomplete="one-time-code"`, `inputmode="numeric"`, labelled, no auto-submit);
-      - a "Use a passkey" button, which calls `startAuthentication` from `@simplewebauthn/browser`, loaded with `import()` so it lands in a lazy chunk outside the 650 kB initial budget;
+      - a code field (`autocomplete="one-time-code"`, `inputmode="numeric"`, labelled, no auto-submit); the code is taken after NFKC (full-width digits), with spaces and dashes left out ("123 456", "123-456"), here and in `server/lib/totp.ts`;
+      - a "Use a passkey" button, which calls `startAuthentication` from `@simplewebauthn/browser`, loaded with `import()` so it lands in a lazy chunk outside the 650 kB initial budget (a failed load is not kept: the next use tries again);
       - "Use a recovery code";
       - "Start over".
-    - If the 5 minutes run out (`second-step-expired`, `second-step-tries`, or `expiresAt` passed), say so and go back to the password form with the email still filled in. A reload goes back to the password form too.
-    - **Passkey-first (decision 1):** a "Sign in with a passkey" button on the sign-in form (`POST /api/signin/passkey/options`, `startAuthentication`, `POST /api/signin/passkey`, with the "Keep me signed in" header), and passkey autofill: the email field gets `autocomplete="username webauthn"` and, when `browserSupportsWebAuthnAutofill()`, the page starts `startAuthentication({ optionsJSON, useBrowserAutofill: true })` in the background and cancels it on leaving. `AuthService.signInWithPasskey(keep)` and `passkeySignInOptions()`.
+    - If the 5 minutes run out (`second-step-expired`, `second-step-tries`, or `expiresAt` passed), say so and go back to the password form with the email still filled in. A code or passkey still being sent when the time runs out is left to the server's answer. Leaving the step closes a passkey prompt still open. A reload goes back to the password form too.
+    - **Passkey-first (decision 1):** a "Sign in with a passkey" button on the sign-in form (`POST /api/signin/passkey/options`, `startAuthentication`, `POST /api/signin/passkey`, with the "Keep me signed in" header), and passkey autofill: the email field gets `autocomplete="username webauthn"` and, when `browserSupportsWebAuthnAutofill()`, the page starts `startAuthentication({ optionsJSON, useBrowserAutofill: true })` in the background and cancels it on leaving. It does not start while the password or the button's request is under way (the library would close that prompt), and starts again when they fail; while a passkey picked from it is sent, the form waits. `AuthService.signInWithPasskey(keep)` and `passkeySignInOptions()`.
 
     Effort M (with passkey-first, M+). Files: `client/app/core/auth.service.ts`, `client/app/pages/auth/auth-page.ts`, new `client/app/pages/auth/second-step.ts` + spec, `client/public/i18n/account/en.json`. The dependency is added in step 0.
 

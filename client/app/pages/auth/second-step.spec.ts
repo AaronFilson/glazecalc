@@ -83,6 +83,48 @@ describe('SecondStep', () => {
     expect(TestBed.inject(AuthService).email()).toBe('a@b.com');
   });
 
+  it('takes a code typed with a dash, or in full-width digits from an input method', async () => {
+    const { fixture } = await create();
+    for (const typed of ['123-456', '１２３　４５６', '１２３－４５６', '123ー456']) {
+      await type(fixture, 'second-code', typed);
+      button(fixture, 'Finish signing in').click();
+      await settle(fixture);
+      const req = httpMock().expectOne(API + '/signin/second-step');
+      expect(req.request.body, typed).toEqual({ pending: 'pending-token', code: '123456' });
+      req.flush(
+        { code: 'code-wrong', msg: 'That code is not correct.', field: 'code' },
+        { status: 400, statusText: 'Bad Request' }
+      );
+      await settle(fixture);
+    }
+  });
+
+  it('lets an answer under way decide when the time runs out, then starts over', async () => {
+    const timeouts = vi.spyOn(globalThis, 'setTimeout');
+    const { fixture, startOver } = await create();
+    const later = (ms: number) => {
+      const call = timeouts.mock.calls.filter(([, delay]) => delay === ms).at(-1);
+      return call![0] as () => void;
+    };
+    await type(fixture, 'second-code', '000000');
+    button(fixture, 'Finish signing in').click();
+    await settle(fixture);
+    const req = httpMock().expectOne(API + '/signin/second-step');
+    // Five minutes are up while the code is on its way: the server's answer decides.
+    later(5 * 60_000)();
+    expect(startOver).not.toHaveBeenCalled();
+    req.flush(
+      { code: 'code-wrong', msg: 'That code is not correct.', field: 'code' },
+      { status: 400, statusText: 'Bad Request' }
+    );
+    await settle(fixture);
+    expect(startOver).not.toHaveBeenCalled();
+    // Once it has answered, without signing in, the step ends.
+    later(1000)();
+    expect(startOver).toHaveBeenCalledWith('Signing in took too long. Please enter your password again.');
+    timeouts.mockRestore();
+  });
+
   it('says what a code needs before sending one', async () => {
     const { fixture } = await create();
     await type(fixture, 'second-code', '12');
@@ -154,13 +196,26 @@ describe('SecondStep', () => {
     expect(signedIn).toHaveBeenCalled();
   });
 
-  it('says so when the passkey prompt is closed, and sends nothing', async () => {
+  it('says the passkey was not used, without blaming the person, and sends nothing', async () => {
     const { fixture } = await create(step({ passkey: true }, true));
+    // Closed, timed out, or no passkey for this site on this device: browsers say NotAllowedError for each.
     passkeys.authenticate.mockRejectedValueOnce(Object.assign(new Error('closed'), { name: 'NotAllowedError' }));
     button(fixture, 'Use a passkey').click();
     await settle(fixture);
     httpMock().expectNone(API + '/signin/second-step');
-    expect(text(fixture, '[role="alert"]')).toBe('The passkey was not used. Please try again when you are ready.');
+    expect(text(fixture, '[role="alert"]')).toBe(
+      'The passkey was not used: the request was cancelled or timed out, or this device has no passkey for Glazecalc. Please try again, or use another way.'
+    );
+  });
+
+  it('closes a passkey prompt still open when the step goes away', async () => {
+    const { fixture } = await create(step({ passkey: true }, true));
+    passkeys.authenticate.mockImplementationOnce(() => new Promise(() => {}));
+    button(fixture, 'Use a passkey').click();
+    await settle(fixture);
+    expect(passkeys.cancel).not.toHaveBeenCalled();
+    fixture.destroy();
+    expect(passkeys.cancel).toHaveBeenCalled();
   });
 
   it('offers no passkey button where the browser has none, and says so', async () => {

@@ -1,5 +1,6 @@
 import {
   Component,
+  DestroyRef,
   ElementRef,
   Injector,
   OnInit,
@@ -184,7 +185,6 @@ export class IdentityConfirm implements OnInit {
   private readonly auth = inject(AuthService);
   private readonly passkeys = inject(PASSKEYS);
   private readonly injector = inject(Injector);
-
   /** Whether two-step sign-in is on: then a current second step is asked for too. */
   readonly mfaOn = input.required<boolean>();
   /** Whether the account has an authenticator app, and passkeys, to confirm with. */
@@ -230,6 +230,13 @@ export class IdentityConfirm implements OnInit {
   private readonly first = viewChild<ElementRef<HTMLElement>>('first');
   private readonly passwordField = viewChild<ElementRef<HTMLElement>>('passwordField');
   private readonly factor = viewChild<ElementRef<HTMLElement>>('factor');
+
+  constructor() {
+    // Closed while a passkey prompt is open (Cancel, or the section reloaded): the prompt goes too.
+    inject(DestroyRef).onDestroy(() => {
+      if (this.busy()) this.passkeys.cancel();
+    });
+  }
 
   ngOnInit(): void {
     this.mode.set(this.hasTotp() ? 'code' : this.canPasskey() ? 'passkey' : 'recovery');

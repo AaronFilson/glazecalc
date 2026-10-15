@@ -31,8 +31,13 @@ export function serverCode(err: unknown): string | null {
   return typeof code === 'string' ? code : null;
 }
 
-/** A code from an authenticator app: its digits, spaces left out (apps show "123 456"). */
-export const totpDigits = (value: string): string => value.replace(/\s+/g, '');
+/**
+ * A code from an authenticator app: its digits, spaces and dashes left out
+ * (apps show "123 456"; − and ー are what input methods may give for "-"), and
+ * full-width digits from an input method made plain (NFKC), as the server
+ * (server/lib/totp.ts) takes them.
+ */
+export const totpDigits = (value: string): string => value.normalize('NFKC').replace(/[\s\p{Pd}−ー]+/gu, '');
 
 /** The check for an authenticator app's code: the right number of digits. */
 export const totpCheck =
@@ -219,8 +224,18 @@ export class SecondStep implements OnInit {
     this.mode.set(methods.totp ? 'code' : this.canPasskey() ? 'passkey' : 'recovery');
     this.focusFirst();
     // The server's own clock decides; counting from now keeps a wrong clock here from ending it early.
-    const timer = setTimeout(() => this.startOver.emit(translate('account.secondStep.expired')), this.minutes * 60_000);
-    this.destroyRef.onDestroy(() => clearTimeout(timer));
+    // While a passkey or a code is under way, its answer decides instead: this waits for it.
+    let timer: ReturnType<typeof setTimeout>;
+    const expire = (): void => {
+      if (this.busy()) timer = setTimeout(expire, 1000);
+      else this.startOver.emit(translate('account.secondStep.expired'));
+    };
+    timer = setTimeout(expire, this.minutes * 60_000);
+    this.destroyRef.onDestroy(() => {
+      clearTimeout(timer);
+      // A passkey prompt still open would answer a step that is gone.
+      if (this.busy()) this.passkeys.cancel();
+    });
   }
 
   protected switchTo(mode: Mode): void {
