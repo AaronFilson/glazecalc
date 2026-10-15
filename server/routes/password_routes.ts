@@ -98,9 +98,10 @@ passwordRouter.post('/reset', limits.resetPassword, express.json(), async (req, 
 
 passwordRouter.put(
   '/',
-  limits.changePassword,
+  // After jwtAuth: requests from someone not signed in never count against an address many share.
   jwtAuth,
   notGuest,
+  limits.changePassword,
   limits.passwordCheck,
   express.json(),
   async (req, res) => {

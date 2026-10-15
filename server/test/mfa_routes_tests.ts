@@ -1037,52 +1037,104 @@ describe('two-step sign-in on the account page (/api/mfa)', () => {
   });
 
   describe('limits', () => {
+    const hits = async (limiter: { getKey: (key: string) => unknown }, key: string): Promise<number> =>
+      ((await limiter.getKey(key)) as { totalHits?: number } | undefined)?.totalHits ?? 0;
+
     beforeEach(async () => {
       // Other files' sign-in tests also count against this address.
       await limits.secondStep.resetKey('127.0.0.1');
+      await limits.changePassword.resetKey('127.0.0.1');
       process.env.RATE_LIMITS = 'on';
     });
-    afterEach(() => {
+    afterEach(async () => {
       process.env.RATE_LIMITS = 'off';
+      await limits.changePassword.resetKey('127.0.0.1');
     });
 
-    it('stops guessing the setup code after 10 tries in 15 minutes on one account', async () => {
+    it('stops guessing the setup code after 10 tries in 15 minutes on one account, apart from sign-in', async () => {
       const alice = await account();
-      process.env.RATE_LIMITS = 'off';
-      await call(alice, 'post', '/totp/start', { password: alice.password });
-      process.env.RATE_LIMITS = 'on';
       const statuses: number[] = [];
+      let setupId: string | undefined;
       try {
-        for (let i = 0; i < 11; i++)
-          statuses.push((await call(alice, 'post', '/totp', { code: '00000' + (i % 10) })).status);
+        for (let i = 0; i < 11; i++) {
+          // A new setup every few codes: each ends after 5 wrong ones, the account's count does not.
+          if (i % 4 === 0) {
+            process.env.RATE_LIMITS = 'off';
+            setupId = (await call(alice, 'post', '/totp/start', { password: alice.password })).body.setupId;
+            process.env.RATE_LIMITS = 'on';
+          }
+          statuses.push((await call(alice, 'post', '/totp', { setupId, code: '00000' + (i % 10) })).status);
+        }
+        // The account's sign-in second steps are untouched.
+        expect(await hits(limits.secondStepAccount, 'mfa:' + String(alice.user._id))).to.eql(0);
+        expect(await hits(limits.secondStep, '127.0.0.1')).to.eql(0);
       } finally {
-        await limits.secondStep.resetKey('127.0.0.1');
-        await limits.secondStepAccount.resetKey('mfa:' + String(alice.user._id));
+        await limits.mfaSetupAccount.resetKey('mfa-setup:' + String(alice.user._id));
       }
       expect(statuses.slice(0, 10).every((status) => status === 400)).to.eql(true);
       expect(statuses[10]).to.eql(429);
     });
 
+    it('does not count codes for a setup that does not exist', async () => {
+      const alice = await account();
+      try {
+        for (let i = 0; i < 12; i++) {
+          const res = await call(alice, 'post', '/totp', {
+            code: '1',
+            setupId: i % 2 ? 'x' : String(new mongoose.Types.ObjectId())
+          });
+          expect(res).to.have.status(400);
+          expect(res.body.code).to.eql('mfa-start-again');
+        }
+        expect(await hits(limits.mfaSetupAccount, 'mfa-setup:' + String(alice.user._id))).to.eql(0);
+      } finally {
+        await limits.mfaSetupAccount.resetKey('mfa-setup:' + String(alice.user._id));
+      }
+    });
+
+    it("counts passkey challenges per account, never against the address's sign-ins", async () => {
+      const alice = await account();
+      const key = 'mfa-challenge:' + String(alice.user._id);
+      try {
+        const statuses: number[] = [];
+        for (let i = 0; i < 31; i++) statuses.push((await call(alice, 'post', '/confirm/options')).status);
+        expect(statuses.slice(0, 30).every((status) => status === 400)).to.eql(true);
+        expect(statuses[30]).to.eql(429);
+        // Sign-in's second steps at this address are untouched, and so is another account.
+        expect(await hits(limits.secondStep, '127.0.0.1')).to.eql(0);
+        const bob = await account();
+        expect((await call(bob, 'post', '/confirm/options')).body.code).to.eql('passkey-not-found');
+        await limits.mfaChallenges.resetKey('mfa-challenge:' + String(bob.user._id));
+      } finally {
+        await limits.mfaChallenges.resetKey(key);
+      }
+    });
+
     it('counts per address only requests from someone signed in', async () => {
       // Junk from one person at a shared address (a VPN exit, a school's NAT)...
-      try {
-        for (const path of ['/confirm/options', '/totp', '/passkeys']) {
-          for (let i = 0; i < 10; i++) {
-            const res = await api()
-              .post('/mfa' + path)
-              .set('Authorization', 'Bearer not-a-token')
-              .send({});
-            expect(res, path).to.have.status(401);
-          }
+      for (const [method, path] of [
+        ['post', '/mfa/confirm/options'],
+        ['post', '/mfa/totp'],
+        ['post', '/mfa/passkeys'],
+        ['post', '/mfa/totp/start'],
+        ['post', '/mfa/recovery-codes'],
+        ['put', '/password'],
+        ['post', '/email/change']
+      ] as const) {
+        for (let i = 0; i < 11; i++) {
+          const res = await api()[method](path).set('Authorization', 'Bearer not-a-token').send({});
+          expect(res, path).to.have.status(401);
         }
-        // ...does not stop someone signed in there.
-        const alice = await account();
-        const res = await call(alice, 'post', '/confirm/options');
-        expect(res.body.code).to.eql('passkey-not-found');
-        expect(res).to.have.status(400);
-      } finally {
-        await limits.secondStep.resetKey('127.0.0.1');
       }
+      // ...does not stop someone signed in there.
+      const alice = await account();
+      const res = await call(alice, 'post', '/confirm/options');
+      expect(res.body.code).to.eql('passkey-not-found');
+      expect(res).to.have.status(400);
+      const start = await call(alice, 'post', '/totp/start', { password: alice.password });
+      expect(start, JSON.stringify(start.body)).to.have.status(200);
+      await limits.mfaChallenges.resetKey('mfa-challenge:' + String(alice.user._id));
+      await limits.passwordCheck.resetKey('user:' + String(alice.user._id));
     });
   });
 });

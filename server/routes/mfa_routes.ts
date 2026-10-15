@@ -28,12 +28,15 @@
 // account, the newest replaces the last (another tab's), and a change to the
 // account's tokenVersion in between ends it ('mfa-start-again').
 //
-// Limits: limits.changePassword per address and limits.passwordCheck per
-// account on every route that checks a password; limits.secondStep and
-// limits.secondStepAccount on POST /api/mfa/totp. The routes that only make or
-// answer a passkey challenge count against limits.secondStep. limits.secondStep
-// comes after jwtAuth, so only signed-in requests count against an address that
-// many people may share.
+// Limits, all after jwtAuth and notGuest, so requests from someone not signed
+// in never count against an address many people may share:
+// limits.changePassword per address and limits.passwordCheck per account on
+// every route that checks a password; limits.mfaSetupAccount per account on
+// POST /api/mfa/totp (wrong codes for a setup that exists); limits.mfaChallenges
+// per account on the routes that make or answer a passkey challenge. None of
+// them is sign-in's (limits.secondStep, limits.secondStepAccount), so nothing
+// done here, with a stolen session or from a shared address, uses up anyone's
+// sign-in.
 //
 // Each change is one atomic update whose filter says what it expects (no
 // authenticator app yet, fewer than ten passkeys, the factor still there), so
@@ -79,7 +82,7 @@ const HAS_FACTOR: Filter = { $or: [{ 'mfa.totp': { $exists: true } }, { 'mfa.pas
 const NO_FACTOR: Filter = { 'mfa.totp': { $exists: false }, 'mfa.passkeys.0': { $exists: false } };
 
 /** Every route that checks a password (decision 6). */
-const proving = [limits.changePassword, jwtAuth, notGuest, limits.passwordCheck, express.json()];
+const proving = [jwtAuth, notGuest, limits.changePassword, limits.passwordCheck, express.json()];
 
 /**
  * factors.confirmIdentity, and when it took a factor, the owner evidently still
@@ -219,7 +222,7 @@ mfaRouter.get('/', jwtAuth, notGuest, async (req, res) => {
 
 // A challenge for confirming a change with a passkey (decision 6): the
 // account's passkeys only, taken once by confirmIdentity.
-mfaRouter.post('/confirm/options', jwtAuth, notGuest, limits.secondStep, async (req, res) => {
+mfaRouter.post('/confirm/options', jwtAuth, notGuest, limits.mfaChallenges, async (req, res) => {
   const user = await User.findById(userOf(req)._id, { mfa: 1 });
   const passkeys = user?.mfa?.passkeys ?? [];
   if (!user || !passkeys.length) return res.status(400).json(say('passkey-not-found'));
@@ -264,16 +267,15 @@ mfaRouter.post('/totp/start', ...proving, async (req, res) => {
 // Part two: the first code from the app turns it on. No password again: the
 // identity was confirmed for part one, and the setup is tied to this account
 // and to its tokenVersion then. Only the newest setup counts: a code for one
-// another tab replaced answers 'mfa-start-again', not 'code-wrong'.
+// another tab replaced answers 'mfa-start-again', not 'code-wrong'. The setup
+// is found before limits.mfaSetupAccount, so only codes for a setup that
+// exists (which took the password) are counted.
 mfaRouter.post(
   '/totp',
   jwtAuth,
   notGuest,
-  limits.secondStep,
-  limits.secondStepAccount,
   express.json(),
-  async (req, res) => {
-    const userId = userOf(req)._id;
+  async (req, res, next) => {
     const { code, setupId } = (req.body ?? {}) as { code?: unknown; setupId?: unknown };
     if (typeof code !== 'string' || !code.trim()) {
       return res.status(400).json(say('code-needed', undefined, { field: 'code' }));
@@ -281,17 +283,30 @@ mfaRouter.post(
     if (typeof setupId !== 'string' || !mongoose.isValidObjectId(setupId)) {
       return res.status(400).json(say('mfa-start-again'));
     }
-    const now = new Date();
+    const userId = userOf(req)._id;
     const pending = await AuthChallenge.findOne({
       _id: setupId,
       userId,
       kind: 'totp-add',
       usedAt: null,
-      expiresAt: { $gt: now }
+      expiresAt: { $gt: new Date() }
     });
     if (!pending?.secret) return res.status(400).json(say('mfa-start-again'));
     const version = changeGrant.versionIs(pending.tokenVersion ?? 0);
     if (!(await User.exists({ _id: userId, ...version }))) return res.status(400).json(say('mfa-start-again'));
+    res.locals.totpSetup = pending;
+    return next();
+  },
+  limits.mfaSetupAccount,
+  async (req: Request, res: Response) => {
+    const userId = userOf(req)._id;
+    const code = ((req.body ?? {}) as { code: string }).code;
+    // Found, with its secret, before the limit.
+    const pending = res.locals.totpSetup as NonNullable<Awaited<ReturnType<typeof AuthChallenge.findOne>>> & {
+      secret: string;
+    };
+    const version = changeGrant.versionIs(pending.tokenVersion ?? 0);
+    const now = new Date();
 
     let step: number | null = null;
     try {
@@ -393,7 +408,7 @@ mfaRouter.post('/passkeys/grant', ...proving, async (req, res) => {
 // Part two: the options for the browser, excluding the passkeys the account
 // has, so one authenticator is not added twice. One challenge at a time per
 // account: an earlier one (another tab's, or a cancelled try) no longer counts.
-mfaRouter.post('/passkeys/options', jwtAuth, notGuest, limits.secondStep, express.json(), async (req, res) => {
+mfaRouter.post('/passkeys/options', jwtAuth, notGuest, limits.mfaChallenges, express.json(), async (req, res) => {
   const userId = userOf(req)._id;
   const refused = await cannotAddPasskey(userId);
   if (refused) return res.status(refused.status).json(refused.body);
@@ -427,7 +442,7 @@ mfaRouter.post('/passkeys/options', jwtAuth, notGuest, limits.secondStep, expres
 // Part three: the browser's new passkey, checked against the challenge from
 // part two. The grant is taken only when the passkey is saved; a failure
 // before that leaves it for another try.
-mfaRouter.post('/passkeys', jwtAuth, notGuest, limits.secondStep, express.json(), async (req, res) => {
+mfaRouter.post('/passkeys', jwtAuth, notGuest, limits.mfaChallenges, express.json(), async (req, res) => {
   const userId = userOf(req)._id;
   const body = (req.body ?? {}) as { grant?: unknown; response?: unknown; name?: unknown };
   const name = nameOf(body.name);

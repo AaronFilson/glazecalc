@@ -43,9 +43,10 @@ const inUse = () => say('email-in-use', undefined, { field: 'email' });
 
 emailRouter.post(
   '/change',
-  limits.emailLinks,
+  // After jwtAuth: requests from someone not signed in never count against an address many share.
   jwtAuth,
   notGuest,
+  limits.emailLinks,
   limits.passwordCheck,
   express.json(),
   async (req, res) => {
@@ -140,7 +141,7 @@ emailRouter.post('/confirm', limits.confirmEmail, express.json(), async (req, re
   return res.status(200).json(say('email-changed'));
 });
 
-emailRouter.post('/resend', limits.emailLinks, jwtAuth, notGuest, async (req, res) => {
+emailRouter.post('/resend', jwtAuth, notGuest, limits.emailLinks, async (req, res) => {
   if (!mailer.available()) return res.status(503).json(say('email-unavailable'));
   const user = userOf(req);
   if (!user.emailUnverified) return res.status(400).json(say('already-verified'));

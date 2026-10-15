@@ -101,11 +101,13 @@ export const passwordCheck = limiter(15, 10, 'too-many-attempts', {
 // password to start one.
 
 /**
- * Second steps per address, counted only for requests that carry a pending
- * sign-in that loads (POST /api/signin/second-step) or a signed-in session
- * (the /api/mfa routes that check a code or a passkey), so junk from someone
- * else at a shared address never counts against the people there. A finished
- * sign-in is not counted either (req.mfaUserId is set only at sign-in).
+ * Second steps per address, at sign-in only (POST /api/signin/second-step),
+ * counted only for requests that carry a pending sign-in that loads, so junk
+ * from someone else at a shared address never counts against the people
+ * there. A finished sign-in is not counted either. The account page's checks
+ * have limits of their own (mfaSetupAccount, mfaChallenges), per account, so
+ * a signed-in account cannot use up the second steps of everyone at its
+ * address.
  */
 export const secondStep = limiter(15, 20, 'too-many-codes', {
   skipSuccessfulRequests: true,
@@ -141,4 +143,27 @@ export const secondStepAccount = limiter(15, 10, 'second-step-account-limit', {
     if (req.mfaUserId !== undefined) void secondStepNotice.noticeUnfinished(req.mfaUserId);
     res.status(options.statusCode).send(options.message);
   }
+});
+
+/**
+ * Wrong first codes from a new authenticator app (POST /api/mfa/totp) per
+ * account: its own count, not secondStepAccount's, so a stolen session alone
+ * cannot fill the owner's sign-in budget (or set off the "someone entered your
+ * password" email). Only requests for a setup that exists are counted (the
+ * route checks the setupId first), and each setup also ends after 5 wrong codes.
+ */
+export const mfaSetupAccount = limiter(15, 10, 'too-many-codes', {
+  keyGenerator: (req) => 'mfa-setup:' + String(req.user?._id),
+  skipSuccessfulRequests: true
+});
+
+/**
+ * The account page's passkey challenges and their answers (POST
+ * /api/mfa/confirm/options, /api/mfa/passkeys/options, /api/mfa/passkeys),
+ * per account, every request: far more than a person adding or confirming
+ * with a passkey needs, and nothing to do with sign-in or with other people
+ * at the same address.
+ */
+export const mfaChallenges = limiter(15, 30, 'too-many-attempts', {
+  keyGenerator: (req) => 'mfa-challenge:' + String(req.user?._id)
 });
