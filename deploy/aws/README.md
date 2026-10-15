@@ -240,7 +240,7 @@ Pages load over plain HTTP, but signing in does not stay signed in: the session 
 IP=<elastic-ip>
 curl -s http://$IP/api/health                                         # expect: {"status":"ok"}
 token=$(curl -s -D - -o /dev/null -X POST http://$IP/api/guest |
-  sed -nE 's/^[Ss]et-[Cc]ookie: glazecalc_session=([^;]+).*/\1/p')
+  sed -nE 's/^[Ss]et-[Cc]ookie: __Host-glazecalc_session=([^;]+).*/\1/p')
 curl -s -H "Authorization: Bearer $token" http://$IP/api/verify        # expect: "guest":true
 curl -s http://$IP/api/materials/getStandard | grep -o '"ownedBy":"Standard"' | wc -l
 grep -c . data/materials.ndjson                                       # expect: the same number
