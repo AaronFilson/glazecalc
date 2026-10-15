@@ -1,4 +1,14 @@
-import { Component, ElementRef, Injector, afterNextRender, computed, inject, signal, viewChild } from '@angular/core';
+import {
+  Component,
+  ElementRef,
+  Injector,
+  afterNextRender,
+  computed,
+  inject,
+  output,
+  signal,
+  viewChild
+} from '@angular/core';
 import { NgTemplateOutlet } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { TranslocoDirective, translate } from '@jsverse/transloco';
@@ -375,6 +385,11 @@ export class SignInSection {
   protected readonly notices = new Notices();
 
   protected readonly summary = signal<MfaSummary | null>(null);
+  /**
+   * The summary each time it loads: the account page asks for a second step on
+   * its own changes (the email, the password, deleting) while it is on.
+   */
+  readonly loaded = output<MfaSummary>();
   protected readonly loadFailed = signal(false);
   protected readonly change = signal<Change | null>(null);
   protected readonly totpSetup = signal<TotpStartResponse | null>(null);
@@ -449,8 +464,10 @@ export class SignInSection {
 
   private async load(): Promise<void> {
     try {
-      this.summary.set(await this.auth.mfaSummary());
+      const summary = await this.auth.mfaSummary();
+      this.summary.set(summary);
       this.loadFailed.set(false);
+      this.loaded.emit(summary);
     } catch {
       this.loadFailed.set(true);
     }

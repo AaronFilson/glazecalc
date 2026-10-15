@@ -2,7 +2,9 @@
 //
 //   POST /api/password/forgot  { email }            emails a reset link
 //   POST /api/password/reset   { token, password }  sets a new password from the link
-//   PUT  /api/password         { current, password } (signed in) changes it
+//   PUT  /api/password         { current, password } (signed in) changes it; with
+//                              two-step sign-in on, a current factor too (code,
+//                              recoveryCode or passkey, as lib/mfa.d.ts FactorProof)
 //
 // A new password signs out every device (the user's tokenVersion goes up) and
 // sends a notice to the account's address. A 400 about one field names it:
@@ -17,9 +19,10 @@ import * as log from '../lib/log.ts';
 import * as mailer from '../lib/mailer.ts';
 import * as password from '../lib/password.ts';
 import * as limits from '../lib/rate_limit.ts';
+import { confirmChange } from '../lib/second_step.ts';
 import * as session from '../lib/session.ts';
 import PasswordReset, { cancelLinks } from '../models/password_reset.ts';
-import User, { type UserDocument } from '../models/user.ts';
+import User, { mfaOn, type UserDocument } from '../models/user.ts';
 import { say } from '../lib/messages.ts';
 
 const RESET_MINUTES = 30;
@@ -107,8 +110,15 @@ passwordRouter.put(
 
     const user = await User.findById(userOf(req)._id);
     if (!user) return res.status(404).json(say('no-user'));
-    // 400 rather than 401: the user is signed in, and a 401 would sign them out.
-    if (!(await password.matches(body.current, user.password))) {
+    if (mfaOn(user)) {
+      // The password and a current factor (decision 6). The password here is `current`.
+      const check = await confirmChange(req, { ...body, password: body.current });
+      if (!check.ok) {
+        const field = check.field === 'password' ? 'current' : check.field;
+        return res.status(check.status).json(say(check.code, undefined, field ? { field } : {}));
+      }
+      // 400 rather than 401: the user is signed in, and a 401 would sign them out.
+    } else if (!(await password.matches(body.current, user.password))) {
       return res.status(400).json(say('current-password-wrong', undefined, { field: 'current' }));
     }
     await setPassword(user, body.password as string);

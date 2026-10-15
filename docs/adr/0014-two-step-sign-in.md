@@ -43,11 +43,12 @@ service and keep the privacy notice's promise of one cookie.
 - **Changing how the account signs in needs the password and a current factor** (a code, a
   passkey or a recovery code); adding the first factor needs only the password. Every such
   change raises `tokenVersion`, as a password change does, so other sessions end, and is
-  followed by a notice email to the account's address.
+  followed by a notice email to the account's address. With two-step sign-in on, changing the
+  email or the password and deleting the account need the same.
 - **Losing everything.** A password reset never turns two-step sign-in off, and no HTTP route,
   not even an admin's, can. The owner runs `server/clear_mfa.ts` on the server, for a request
-  from the confirmed address after a password reset, with seven days' notice to that address
-  ([docs/data-requests.md](../data-requests.md)).
+  from the confirmed address after a password reset, with seven days' notice to that address,
+  and not within 30 days of an email change ([docs/data-requests.md](../data-requests.md)).
 - **Ready for a staging copy.** Everything that differs between copies of the site comes from
   the environment: `SITE_URL` (the passkeys' relying-party id is its host name and the expected
   origin the URL itself, so passkeys made on staging never appear for production), `SITE_LABEL`

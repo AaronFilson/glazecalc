@@ -315,19 +315,25 @@ export class AuthService {
     return said(res);
   }
 
-  /** Changes the password; this browser stays signed in (the server renews the cookie), others are signed out. */
-  async changePassword(current: string, password: string): Promise<string> {
+  /**
+   * Changes the password; this browser stays signed in (the server renews the cookie), others are signed out.
+   * With two-step sign-in on, `factor` is a current second step (decision 6).
+   */
+  async changePassword(current: string, password: string, factor?: FactorProof): Promise<string> {
     const res = await firstValueFrom(
-      this.http.put<MessageResponse & EmailResponse>(this.apiBase + '/password', { current, password })
+      this.http.put<MessageResponse & EmailResponse>(this.apiBase + '/password', { current, password, ...factor })
     );
     this.email.set(res.email);
     return said(res);
   }
 
-  /** Emails a link to a new address; the email changes when the link is opened. Resolves with the server's message. */
-  async changeEmail(email: string, password: string): Promise<string> {
+  /**
+   * Emails a link to a new address; the email changes when the link is opened. Resolves with the server's message.
+   * With two-step sign-in on, `factor` is a current second step (decision 6).
+   */
+  async changeEmail(email: string, password: string, factor?: FactorProof): Promise<string> {
     const res = await firstValueFrom(
-      this.http.post<MessageResponse>(this.apiBase + '/email/change', { email, password })
+      this.http.post<MessageResponse>(this.apiBase + '/email/change', { email, password, ...factor })
     );
     return said(res);
   }
@@ -356,11 +362,14 @@ export class AuthService {
     this.forget();
   }
 
-  /** Deletes the account and everything saved in it (the password confirms it); the server signs the browser out. */
-  async deleteAccount(password: string): Promise<void> {
+  /**
+   * Deletes the account and everything saved in it (the password confirms it, and with two-step sign-in on a
+   * current second step, `factor`); the server signs the browser out.
+   */
+  async deleteAccount(password: string, factor?: FactorProof): Promise<void> {
     const me = await firstValueFrom(this.http.get<VerifyResponse>(this.apiBase + '/verify'));
     if (!me.id) throw new Error('Not signed in');
-    await firstValueFrom(this.http.delete(this.apiBase + '/deleteuser/' + me.id, { body: { password } }));
+    await firstValueFrom(this.http.delete(this.apiBase + '/deleteuser/' + me.id, { body: { password, ...factor } }));
     this.deleted();
   }
 

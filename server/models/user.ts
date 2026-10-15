@@ -140,6 +140,12 @@ export interface UserFields {
    * the older ones included, count as verified.
    */
   emailUnverified?: boolean;
+  /**
+   * When the address last changed: when the link sent to the new one was
+   * opened (server/routes/email_routes.ts). server/clear_mfa.ts refuses for 30
+   * days after it. Absent until the first change.
+   */
+  emailChangedAt?: Date;
   /** A trial account (server/routes/guest_routes.ts), removed after expiresAt. */
   guest?: boolean;
   expiresAt?: Date;
@@ -221,6 +227,7 @@ const userSchema = new mongoose.Schema<UserFields, UserModel, UserMethods>({
   shelf: { type: [String], default: undefined },
   tokenVersion: { type: Number, default: 0 },
   emailUnverified: Boolean,
+  emailChangedAt: Date,
   guest: Boolean,
   expiresAt: Date,
   trialCounts: { type: Map, of: Number },

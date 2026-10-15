@@ -108,7 +108,8 @@
     "signOutHeading": "Sign out everywhere",
     "signOutText": "Signs you out on every device, this one included. Use it if you lost a device or think someone else has your sign-in.",
     "signOutButton": "Sign out everywhere",
-    "signOutFailed": "Error: could not sign out. Please try again."
+    "signOutFailed": "Error: could not sign out. Please try again.",
+    "confirmStep": "Two-step sign-in is on, so confirm it is you: your password and a second step."
   },
   "mfa": {
     "heading": "Two-step sign-in",

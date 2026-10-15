@@ -39,7 +39,9 @@ export const passkeyNameCheck =
  * sign-in is on, a current second step as well: a code from the authenticator
  * app, a passkey or a recovery code. It hands the proof (lib/mfa.d.ts
  * IdentityProof) to `run`, which makes the change, and shows what went wrong
- * on the field it was about. One is shown at a time, so its ids are fixed.
+ * on the field it was about. Its fields' ids start with `idPrefix`, so the
+ * account page's own changes (the email, the password, deleting) can show one
+ * while the two-step sign-in section shows another.
  */
 @Component({
   selector: 'gc-identity-confirm',
@@ -48,28 +50,28 @@ export const passkeyNameCheck =
     <form class="identity-confirm" (ngSubmit)="submit()">
       @if (askName()) {
         <div class="mb-3">
-          <label for="confirm-name" class="form-label">{{ t('account.mfa.name') }}</label>
+          <label [for]="idPrefix() + '-name'" class="form-label">{{ t('account.mfa.name') }}</label>
           <input
             #first
-            id="confirm-name"
+            [id]="idPrefix() + '-name'"
             type="text"
             name="name"
             class="form-control"
             autocomplete="off"
-            aria-describedby="confirm-name-hint"
+            [gcFieldHint]="idPrefix() + '-name-hint'"
             [attr.maxlength]="nameMax"
             [(ngModel)]="name"
             [gcField]="checks"
             gcFieldName="name"
           />
-          <div id="confirm-name-hint" class="form-text">{{ t('account.mfa.nameHint') }}</div>
+          <div [id]="idPrefix() + '-name-hint'" class="form-text">{{ t('account.mfa.nameHint') }}</div>
         </div>
       }
       <div class="mb-3">
-        <label for="confirm-password" class="form-label">{{ t('account.mfa.password') }}</label>
+        <label [for]="idPrefix() + '-password'" class="form-label">{{ t('account.mfa.password') }}</label>
         <input
           #passwordField
-          id="confirm-password"
+          [id]="idPrefix() + '-password'"
           type="password"
           name="password"
           class="form-control"
@@ -84,10 +86,10 @@ export const passkeyNameCheck =
           <legend class="form-label">{{ t('account.mfa.factorLegend') }}</legend>
           @switch (mode()) {
             @case ('code') {
-              <label for="confirm-code" class="form-label">{{ t('account.secondStep.code') }}</label>
+              <label [for]="idPrefix() + '-code'" class="form-label">{{ t('account.secondStep.code') }}</label>
               <input
                 #factor
-                id="confirm-code"
+                [id]="idPrefix() + '-code'"
                 type="text"
                 name="code"
                 class="form-control code-input"
@@ -100,22 +102,26 @@ export const passkeyNameCheck =
               />
             }
             @case ('recovery') {
-              <label for="confirm-recovery" class="form-label">{{ t('account.secondStep.recoveryCode') }}</label>
+              <label [for]="idPrefix() + '-recovery'" class="form-label">{{
+                t('account.secondStep.recoveryCode')
+              }}</label>
               <input
                 #factor
-                id="confirm-recovery"
+                [id]="idPrefix() + '-recovery'"
                 type="text"
                 name="recoveryCode"
                 class="form-control code-input"
                 autocomplete="off"
                 autocapitalize="off"
                 spellcheck="false"
-                aria-describedby="confirm-recovery-hint"
+                [gcFieldHint]="idPrefix() + '-recovery-hint'"
                 [(ngModel)]="recoveryCode"
                 [gcField]="checks"
                 gcFieldName="recoveryCode"
               />
-              <div id="confirm-recovery-hint" class="form-text">{{ t('account.secondStep.recoveryHint') }}</div>
+              <div [id]="idPrefix() + '-recovery-hint'" class="form-text">
+                {{ t('account.secondStep.recoveryHint') }}
+              </div>
             }
             @case ('passkey') {
               <p class="form-text mb-0">{{ t('account.mfa.passkeyNext') }}</p>
@@ -192,6 +198,8 @@ export class IdentityConfirm implements OnInit {
   readonly hasPasskeys = input(false);
   /** The submit button's words, such as "Remove the passkey". */
   readonly action = input.required<string>();
+  /** The start of the fields' ids, as in confirm-password and confirm-code. */
+  readonly idPrefix = input('confirm');
   /** Asks for a passkey's name too (adding one). */
   readonly askName = input(false);
   /** Makes the change. What it throws is shown here, on the field it was about where there is one. */

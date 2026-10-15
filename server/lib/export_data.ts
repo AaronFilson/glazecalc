@@ -50,6 +50,7 @@ export const exportAccount = async (userId: Id, now = new Date()): Promise<Row |
     shelf: 1,
     guest: 1,
     expiresAt: 1,
+    emailChangedAt: 1,
     mfa: 1
   }).lean();
   if (!user) return null;
@@ -63,6 +64,7 @@ export const exportAccount = async (userId: Id, now = new Date()): Promise<Row |
       id: String(user._id),
       // A trial's placeholder address means nothing to its owner.
       ...(user.guest ? { trial: true, expiresAt: user.expiresAt } : { email: user.email }),
+      ...(user.emailChangedAt && { emailChangedAt: user.emailChangedAt }),
       displayname: user.displayname,
       role: user.role
     },
