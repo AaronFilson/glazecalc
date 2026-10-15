@@ -53,6 +53,12 @@ Day to day:
 - **Deploy:** Actions → Deploy → Run workflow (blank tag = the current master commit).
 - **Roll back:** run Deploy with the previous `sha-<commit>` tag (each deploy prints it). A
   deploy whose image fails to pull or to become healthy rolls itself back and fails the run.
+  `deploy.sh` refuses an image from before two-step sign-in (one without the Dockerfile's
+  `com.glazecalcapp.two-step-sign-in` label): that code ignores the factors accounts have set
+  and would sign them in with the password alone. If going back that far is truly needed, run it
+  by hand in Session Manager, `sudo /opt/glazecalc/deploy.sh --allow-pre-mfa sha-<commit>` (the
+  Deploy workflow cannot pass the flag), knowing two-step sign-in is off until a newer image is
+  deployed; the factors stay stored and work again then.
 - **Shell:** `aws ssm start-session --target <instance-id>` (no SSH, port 22 is closed).
 - **Logs:** see "How long logs are kept" below. `sudo docker compose -f /opt/glazecalc/compose.prod.yaml logs -f app`,
   `/var/log/nginx/access.log` and `error.log`, `journalctl -u glazecalc-backup`.

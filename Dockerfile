@@ -37,6 +37,10 @@ COPY package.json package-lock.json ./
 RUN --mount=type=cache,target=/root/.npm npm ci --omit=dev --no-audit --no-fund
 
 FROM node:24-slim@sha256:d6aa754f16b3197301076f047b5def2f02ea1dbbc2ca920407d46d7ec7f87b20 AS runtime
+# This code honours two-step sign-in. deploy/deploy.sh refuses an image without
+# this label (older code would sign accounts in with the password alone) unless
+# told --allow-pre-mfa. Never remove it.
+LABEL com.glazecalcapp.two-step-sign-in="1"
 ENV NODE_ENV=production \
     PORT=3000
 WORKDIR /app
