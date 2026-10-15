@@ -22,7 +22,7 @@ const LINKS = {
 
 /** Kept on the visitor's device: one row per purpose, with every name the code uses for it. */
 export const STORED: ReadonlyArray<{ names: string[]; kind: string; key: string }> = [
-  // server/lib/session.ts: the first name on the site, the second in development (and before October 2026).
+  // server/lib/session.ts: the first name on the site, the second in development (on the site before October 2026; now only cleared there).
   {
     names: ['__Host-glazecalc_session', 'glazecalc_session'],
     kind: marker('site.privacy.storageCookie'),

@@ -66,9 +66,11 @@ Day to day:
 - **Rate limits** (sign-in, sign-up, resets, second steps; `server/lib/rate_limit.ts`) count per
   client address or per account in the app's memory, so every deploy or restart starts them again.
 - **Session cookie:** in production it is `__Host-glazecalc_session` (Secure, `Path=/`, no
-  `Domain`), so no subdomain can set one the site would read. The app still reads the older
-  `glazecalc_session` and replaces it at the next sign-in; that fallback can be removed from
-  `server/lib/session.ts` 14 days after the release that brought the new name. HSTS does not
+  `Domain`), so no subdomain can set one the site would read. The older `glazecalc_session` is
+  not read in production (one set for the whole domain by a subdomain or a hostile network would
+  sign a browser into someone else's account), so **everyone signs in once more after the
+  release that brought two-step sign-in**; replies that set or end a session clear the older
+  cookie, both host-only and for `Domain=<the SITE_URL host>`, on `Path=/api`. HSTS does not
   include subdomains (`nginx/glazecalc.conf`): adding `includeSubDomains` would also stop a
   network from serving a fake `http://` subdomain, but it binds every future subdomain to HTTPS
   for a year, so it is left as an option for the owner.

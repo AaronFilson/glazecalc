@@ -50,7 +50,7 @@ Everything that differs between production and staging comes from the environmen
 - **`MFA_KEY`** per environment: production `/glazecalc/mfa-key`, staging `/glazecalc/staging/mfa-key`. A staging key never decrypts production secrets.
 - **`NOINDEX=1`**: every response carries `X-Robots-Tag: noindex, nofollow`, robots.txt disallows everything, and no sitemap is served.
 - **`MAIL_ALLOWLIST`** (comma-separated addresses or `@domain`): when set, mail to any other address is dropped and logged by error code only. Staging sets it to the owner's addresses, so a staging database can never email a real user.
-- **Cookies stay host-only** (no `Domain=` attribute), so staging's and production's sessions never meet. A test checks the `Set-Cookie` headers. In production the session cookie has the `__Host-` prefix (`__Host-glazecalc_session`: Secure, `Path=/`, no `Domain`), so the browser refuses one set by staging or by a network faking a subdomain; the older `glazecalc_session` is still read and is replaced when the session is next set (`server/lib/session.ts`).
+- **Cookies stay host-only** (no `Domain=` attribute), so staging's and production's sessions never meet. A test checks the `Set-Cookie` headers. In production the session cookie has the `__Host-` prefix (`__Host-glazecalc_session`: Secure, `Path=/`, no `Domain`), so the browser refuses one set by staging or by a network faking a subdomain. The older `glazecalc_session` is not read in production (everyone signs in once after the release), and is cleared, host-only and for the site's domain, whenever the session is set or ended (`server/lib/session.ts`): that clearing is the only `Set-Cookie` that names a `Domain`.
 
 ### Phase 2: staging on the same instance
 
@@ -303,7 +303,7 @@ Everything that differs between production and staging comes from the environmen
   - Trial merge after the second step.
   - Per-account limiter, with `RATE_LIMITS` on in that one test; it counts wrong answers only, and the notice email goes once a day.
   - Per-address limits: junk pending tokens do not count against `limits.secondStep`; passkey-first sign-in has its own count.
-  - The session cookie is `__Host-glazecalc_session` in production, the older name is still read and is cleared when the session is set.
+  - The session cookie is `__Host-glazecalc_session` in production; the older name is never read there, and is cleared (host-only and for the site's domain) when the session is set or ended.
 - **Reset:** reset, then sign in: a factor is still needed.
 - **Mail (`support/mail.ts`):** the four notices; none to an unconfirmed address; fingerprints.
 - **Export and deletion:** the export has names and dates, and no `secret`, `publicKey`, `hash` or `credentialId` in the JSON text. Deleting an account, the deletion-log re-apply and expired-trial sweeps remove `AuthChallenge` and `PendingSignIn` records.
