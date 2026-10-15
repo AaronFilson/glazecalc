@@ -48,7 +48,7 @@
     "expired": "Signing in took too long. Please enter your password again."
   },
   "passkey": {
-    "cancelled": "The passkey was not used. Please try again when you are ready.",
+    "cancelled": "The passkey was not used: the request was cancelled or timed out, or this device has no passkey for Glazecalc. Please try again, or use another way.",
     "registered": "This passkey is already on your account.",
     "browserFailed": "This browser could not use the passkey. Please try again, or use another way."
   },

@@ -29,10 +29,23 @@ export interface Passkeys {
 }
 
 type Library = typeof import('@simplewebauthn/browser');
-let library: Promise<Library> | null = null;
 let loaded: Library | null = null;
 
-const load = (): Promise<Library> => (library ??= import('@simplewebauthn/browser').then((lib) => (loaded = lib)));
+/**
+ * Runs `load` once and keeps what it gives. A failed load (a dropped
+ * connection, a deploy that replaced the chunk) is not kept: the next call
+ * tries again.
+ */
+export function loadOnce<T>(load: () => Promise<T>): () => Promise<T> {
+  let pending: Promise<T> | null = null;
+  return () =>
+    (pending ??= load().catch((err: unknown) => {
+      pending = null;
+      throw err;
+    }));
+}
+
+const load = loadOnce(() => import('@simplewebauthn/browser').then((lib) => (loaded = lib)));
 
 const supported = (): boolean =>
   typeof window !== 'undefined' &&
@@ -61,8 +74,11 @@ export const PASSKEYS = new InjectionToken<Passkeys>('PASSKEYS', {
 });
 
 /**
- * Why the browser's part of using a passkey failed: the person closed the
- * prompt or let it time out, or another request took its place ('cancelled');
+ * Why the browser's part of using a passkey failed: the passkey was not used
+ * ('cancelled'). Browsers give the same NotAllowedError when the person closed
+ * the prompt, when it timed out, and when this device has no passkey for the
+ * site, so the message names all three; another request taking its place is
+ * the same to the person.
  * the passkey being added is already on the account ('registered'); or
  * something else. null for a failure that is not the browser's (the server's).
  */

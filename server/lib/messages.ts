@@ -60,7 +60,8 @@ export const MESSAGES = {
   'second-step-expired': 'Signing in took too long. Please enter your password again.',
   'second-step-tries': 'Too many wrong codes. Please enter your password again.',
   'code-needed': 'Please enter the 6-digit code from your authenticator app.',
-  'code-wrong': 'That code is not correct. Please check your authenticator app and try again.',
+  'code-wrong':
+    "That code is not correct. Please check your authenticator app and try again. If every code is wrong, the phone's clock may be off: set its date and time automatically.",
   'recovery-code-wrong': 'That recovery code is not correct, or it has already been used.',
   'passkey-failed': 'The passkey could not be checked. Please try again, or use another way to sign in.',
   'passkey-unknown': 'This passkey does not belong to any Glazecalc account. It may have been removed.',
