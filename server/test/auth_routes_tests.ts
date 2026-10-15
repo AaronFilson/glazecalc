@@ -170,7 +170,10 @@ describe('two-step sign-in', () => {
         if (body.code === GOOD_CODE) return { ok: true, kind: 'totp' };
         if (body.recoveryCode === 'abcde-fghjk') return { ok: true, kind: 'recovery', codesLeft: 9 };
         if (body.passkey) {
-          return options?.passkeyChallenge ? { ok: true, kind: 'passkey' } : { ok: false, code: 'passkey-failed' };
+          // A stand-in assertion with bad: true fails, as a spoilt signature would.
+          return options?.passkeyChallenge && !(body.passkey as { bad?: boolean }).bad
+            ? { ok: true, kind: 'passkey' }
+            : { ok: false, code: 'passkey-failed' };
         }
         if (body.code !== undefined) return { ok: false, code: 'code-wrong' };
         return { ok: false, code: 'factor-needed' };
@@ -360,14 +363,118 @@ describe('two-step sign-in', () => {
       expect(await finish(again.pending, { code: GOOD_CODE })).to.have.status(200);
     });
 
-    it('counts wrong tries sent at the same moment', async () => {
+    it('checks one try at a time: tries sent at the same moment are counted or turned away', async () => {
       const { email, password } = await mfaUser();
       const { pending } = await passwordStep(email, password);
+      const { jti } = jwt.decode(pending) as jwt.JwtPayload;
       const results = await Promise.all([1, 2, 3, 4, 5, 6, 7, 8].map(() => finish(pending, { code: '000000' })));
-      // Never more than 5 checks, however the requests interleave.
-      expect(factorCalls.length).to.be.at.most(5);
-      expect(results.map((res) => res.body.code)).to.include('second-step-tries');
+      // Never more than 5 checks, however the requests interleave, and each check counted.
+      expect(factorCalls.length).to.be.within(1, 5);
+      expect((await PendingSignIn.findOne({ tokenId: jti }))!.attempts).to.eql(factorCalls.length);
+      for (const res of results) {
+        expect(['code-wrong', 'second-step-busy', 'second-step-tries']).to.include(res.body.code);
+        expect(res.status).to.eql(res.body.code === 'second-step-busy' ? 409 : 401);
+        expect(sessionToken(res)).to.eql(null);
+      }
+      // The rest of the 5 tries, then the password again.
+      while (factorCalls.length < 5) await finish(pending, { code: '000000' });
       expect((await finish(pending, { code: GOOD_CODE })).body.code).to.eql('second-step-tries');
+    });
+
+    it('turns away a try while another is being checked, without counting or checking it', async () => {
+      const { email, password } = await mfaUser();
+      const { pending } = await passwordStep(email, password);
+      const { jti } = jwt.decode(pending) as jwt.JwtPayload;
+      let open = () => {};
+      const gate = new Promise<void>((resolve) => (open = resolve));
+      const check = secondStep.checks.checkFactor;
+      secondStep.checks.checkFactor = async (...args) => {
+        await gate;
+        return check(...args);
+      };
+      const first = finish(pending, { code: '000000' }).then((res) => res);
+      while (!(await PendingSignIn.findOne({ tokenId: jti, holdId: { $exists: true } }))) {
+        await new Promise((resolve) => setTimeout(resolve, 5));
+      }
+      const second = await finish(pending, { recoveryCode: 'abcde-fghjk' });
+      expect(second).to.have.status(409);
+      expect(second.body.code).to.eql('second-step-busy');
+      open();
+      expect((await first).body.code).to.eql('code-wrong');
+      // Only the first was counted and checked; the record is free again.
+      expect(factorCalls.map((call) => call.proof)).to.eql([{ code: '000000' }]);
+      const record = (await PendingSignIn.findOne({ tokenId: jti }).lean())!;
+      expect(record.attempts).to.eql(1);
+      expect(record.holdId).to.eql(undefined);
+      expect(await finish(pending, { recoveryCode: 'abcde-fghjk' })).to.have.status(200);
+    });
+
+    it('finishes a sign-in whose right factor was checked as it expired, so the factor is not wasted', async () => {
+      const { email, password } = await mfaUser();
+      const { pending } = await passwordStep(email, password);
+      const { jti } = jwt.decode(pending) as jwt.JwtPayload;
+      const check = secondStep.checks.checkFactor;
+      secondStep.checks.checkFactor = async (...args) => {
+        // The pending sign-in runs out while the code is checked (and used up).
+        await PendingSignIn.updateOne({ tokenId: jti }, { expiresAt: new Date(Date.now() - 1000) });
+        return check(...args);
+      };
+      const res = await finish(pending, { recoveryCode: 'abcde-fghjk' });
+      expect(res, JSON.stringify(res.body)).to.have.status(200);
+      expect(sessionToken(res)).to.be.a('string');
+      // MongoDB may delete an expired record at any moment: that does not undo a hold either.
+      secondStep.checks.checkFactor = async (...args) => {
+        await PendingSignIn.deleteOne({ tokenId: (jwt.decode(again.pending) as jwt.JwtPayload).jti });
+        return check(...args);
+      };
+      const again = await passwordStep(email, password);
+      expect(await finish(again.pending, { code: GOOD_CODE })).to.have.status(200);
+    });
+
+    it('lets the hold of a try that never came back run out', async () => {
+      const { email, password } = await mfaUser();
+      const { pending } = await passwordStep(email, password);
+      const { jti } = jwt.decode(pending) as jwt.JwtPayload;
+      await PendingSignIn.updateOne(
+        { tokenId: jti },
+        { holdId: 'lost', heldUntil: new Date(Date.now() + 10_000), $inc: { attempts: 1 } }
+      );
+      expect((await finish(pending, { code: GOOD_CODE })).body.code).to.eql('second-step-busy');
+      await PendingSignIn.updateOne({ tokenId: jti }, { heldUntil: new Date(Date.now() - 1) });
+      expect(await finish(pending, { code: GOOD_CODE })).to.have.status(200);
+    });
+
+    it('takes the passkey challenge with a passkey try, and offers a new one after a failed try', async () => {
+      const { email, password } = await mfaUser({ passkey: true });
+      const step = await passwordStep(email, password);
+      const offered = step.passkeyOptions!.challenge;
+      const { jti } = jwt.decode(step.pending) as jwt.JwtPayload;
+      // A code try leaves the challenge on the record.
+      const wrongCode = await finish(step.pending, { code: '000000' });
+      expect(wrongCode.body.passkeyOptions).to.eql(undefined);
+      expect((await PendingSignIn.findOne({ tokenId: jti }))!.challenge).to.eql(offered);
+
+      const failed = await finish(step.pending, { passkey: { id: 'cred', response: {}, bad: true } });
+      expect(failed).to.have.status(401);
+      expect(failed.body.code).to.eql('passkey-failed');
+      const next = failed.body.passkeyOptions.challenge;
+      expect(next).to.be.a('string').and.not.eql(offered);
+      expect(failed.body.passkeyOptions.userVerification).to.eql('preferred');
+      expect((await PendingSignIn.findOne({ tokenId: jti }))!.challenge).to.eql(next);
+
+      expect(await finish(step.pending, { passkey: { id: 'cred', response: {} } })).to.have.status(200);
+      expect(factorCalls.map((call) => call.passkeyChallenge)).to.eql([undefined, offered, next]);
+    });
+
+    it('checks a passkey try against no challenge once the last one was taken', async () => {
+      const { email, password } = await mfaUser({ passkey: true });
+      const step = await passwordStep(email, password);
+      const { jti } = jwt.decode(step.pending) as jwt.JwtPayload;
+      // As if the try that took the challenge never came back with a new one.
+      await PendingSignIn.updateOne({ tokenId: jti }, { $unset: { challenge: 1 } });
+      const res = await finish(step.pending, { passkey: { id: 'cred', response: {} } });
+      expect(res.body.code).to.eql('passkey-failed');
+      expect(factorCalls[0]!.passkeyChallenge).to.eql(undefined);
     });
 
     it('answers a missing factor with 400 and counts it', async () => {

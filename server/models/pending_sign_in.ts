@@ -21,6 +21,12 @@ export interface PendingSignInFields {
   challenge?: string;
   /** Wrong codes so far. */
   attempts: number;
+  /**
+   * The try being checked now (server/lib/second_step.ts reserve): its random
+   * id, and until when it holds the record. While it holds, no other try is checked.
+   */
+  holdId?: string;
+  heldUntil?: Date;
   expiresAt: Date;
   usedAt?: Date;
 }
@@ -34,6 +40,8 @@ const pendingSignInSchema = new mongoose.Schema<PendingSignInFields>(
     trialId: mongoose.Schema.Types.ObjectId,
     challenge: String,
     attempts: { type: Number, default: 0 },
+    holdId: String,
+    heldUntil: Date,
     expiresAt: { type: Date, required: true },
     usedAt: Date
   },
