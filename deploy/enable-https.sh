@@ -32,7 +32,8 @@ done
 staging=staging.glazecalcapp.com
 raw=https://raw.githubusercontent.com/AaronFilson/glazecalc/master/deploy/nginx
 staging_ref=${GLAZECALC_STAGING_REF:-master}
-if [[ ! "$staging_ref" =~ ^[A-Za-z0-9._/-]+$ ]]; then
+# It goes into a URL path: no "..", and no leading "/", "-" or ".".
+if [[ ! "$staging_ref" =~ ^[A-Za-z0-9_][A-Za-z0-9._/-]*$ ]] || [[ "$staging_ref" == *..* ]]; then
   echo "GLAZECALC_STAGING_REF '$staging_ref' is not a branch or commit." >&2
   exit 2
 fi
