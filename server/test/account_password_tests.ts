@@ -116,4 +116,18 @@ describe('guessing the current password', () => {
       .send({ displayname: 'Potter' });
     expect(ok).to.have.status(200);
   });
+
+  it('does not count changes that go through against the address', async () => {
+    const statuses: number[] = [];
+    for (let i = 0; i < 12; i++) {
+      // A new account each time, so the per-account count never fills either.
+      const { token, password } = await makeUser();
+      const res = await api()
+        .put('/password')
+        .set('Authorization', 'Bearer ' + token)
+        .send({ current: password, password: 'a-new-password-' + i });
+      statuses.push(res.status);
+    }
+    expect(statuses).to.eql(Array(12).fill(200));
+  });
 });

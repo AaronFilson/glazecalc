@@ -68,7 +68,12 @@ export const forgotPassword = limiter(15, 5, 'too-many-resets');
 export const resetPassword = limiter(15, 10, 'too-many-attempts');
 export const emailLinks = limiter(15, 5, 'too-many-email-links');
 export const confirmEmail = limiter(15, 10, 'too-many-attempts');
-export const changePassword = limiter(15, 10, 'too-many-attempts');
+/**
+ * Password changes and the account page's other changes, per address: refusals
+ * only, so one signed-in account making its own changes at a shared address
+ * (a VPN exit, a school) does not use the count up for everyone there.
+ */
+export const changePassword = limiter(15, 10, 'too-many-attempts', { skipSuccessfulRequests: true });
 
 /**
  * For routes that check the signed-in user's current password (changing the
