@@ -1,6 +1,6 @@
 // The owner's script for someone who has lost every factor (server/clear_mfa.ts,
 // docs/mfa-plan.md item 15): a notice first, then, 7 days later, the factors go.
-import { clear, main, notify, WAIT_DAYS } from '../clear_mfa.ts';
+import { clear, EMAIL_CHANGE_DAYS, main, notify, WAIT_DAYS } from '../clear_mfa.ts';
 import { MFA_CLEAR_NOTICE, MFA_OFF, MFA_REMOVED, mailDate } from '../lib/account_mail.ts';
 import AuthChallenge from '../models/auth_challenge.ts';
 import PendingSignIn from '../models/pending_sign_in.ts';
@@ -131,6 +131,33 @@ describe('turning off two-step sign-in for a lost account (clear_mfa.ts)', () =>
     expect(mail.to(email).map((one) => one.subject)).to.eql(sent);
     expect(sent).to.eql([MFA_CLEAR_NOTICE['en']!.subject, MFA_OFF['en']!.subject]);
     expect(sent).to.not.include(MFA_REMOVED['en']!.subject);
+  });
+
+  it('refuses both steps within 30 days of an email change, saying why, what to do and from when', async () => {
+    const { email, user } = await withMfa();
+    const changed = new Date('2026-10-01T00:00:00Z');
+    await User.updateOne({ _id: user._id }, { $set: { emailChangedAt: changed } });
+    const allowed = new Date(changed.getTime() + EMAIL_CHANGE_DAYS * DAY);
+
+    const refused = await notify(email, new Date(allowed.getTime() - 1000));
+    expect(refused.ok).to.eql(false);
+    expect(refused.message).to.include('email changed').and.include('docs/data-requests.md');
+    expect(refused.message).to.include(allowed.toISOString());
+    expect(refused.message).to.not.include(email);
+    expect((await User.findById(user._id))!.mfa!.clearRequestedAt).to.eql(undefined);
+    await mail.settle();
+    expect(mail.to(email)).to.eql([]);
+
+    // Notified before the change: --clear is refused too, even after the 7 days.
+    await User.updateOne({ _id: user._id }, { $set: { 'mfa.clearRequestedAt': new Date('2026-09-20T00:00:00Z') } });
+    const cleared = await clear(email, new Date('2026-10-20T00:00:00Z'));
+    expect(cleared.ok).to.eql(false);
+    expect(cleared.message).to.include('email changed');
+    expect((await User.findById(user._id))!.mfa!.totp).to.not.eql(undefined);
+
+    // From 30 days after the change, as before.
+    expect((await notify(email, allowed)).ok).to.eql(true);
+    expect((await clear(email, new Date(allowed.getTime() + WAIT_DAYS * DAY))).ok).to.eql(true);
   });
 
   it('runs from the command line only with a flag and one address', async () => {

@@ -17,6 +17,7 @@
 // ends it.
 import crypto from 'node:crypto';
 import jwt from 'jsonwebtoken';
+import type { Request } from 'express';
 import type { HydratedDocument, Types } from 'mongoose';
 import { SECOND_STEP_MINUTES, SECOND_STEP_TRIES } from '../../lib/mfa.js';
 import appSecret from './app_secret.ts';
@@ -147,8 +148,8 @@ export const finish = async (pending: PendingSignIn): Promise<boolean> => {
 
 /**
  * A sign-in that passed a factor (the second step, or a passkey on its own), or
- * a change on the account page confirmed with one (server/routes/mfa_routes.ts),
- * shows the owner still has a working factor, so it cancels a pending request
+ * a change on the account page confirmed with one (server/routes/mfa_routes.ts,
+ * confirmChange below), shows the owner still has a working factor, so it cancels a pending request
  * to turn two-step sign-in off (server/clear_mfa.ts, docs/mfa-plan.md item 15):
  * a later --clear is refused until --notify is run again. This also defeats a
  * clear request someone else made. One atomic $unset; the log line names no one.
@@ -163,4 +164,17 @@ export const cancelClearRequest = async (userId: Types.ObjectId): Promise<void> 
       code: 'MFA_CLEAR_CANCELLED'
     });
   }
+};
+
+/**
+ * factors.confirmIdentity for a change to the account itself (the email, the
+ * password, deleting it; decision 6), as the account page's changes to how
+ * it signs in confirm: when it took a factor, a pending request to turn
+ * two-step sign-in off is cancelled, as above. The routes call it only once
+ * MFA is on; without it their own password check is unchanged.
+ */
+export const confirmChange = async (req: Request, body: unknown): Promise<factors.IdentityCheck> => {
+  const check = await factors.confirmIdentity(req, body);
+  if (check.ok && check.used) await cancelClearRequest(check.user._id);
+  return check;
 };

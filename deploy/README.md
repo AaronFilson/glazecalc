@@ -165,7 +165,9 @@ in, and a password reset does not turn two-step sign-in off. There is no admin r
 over HTTP. The owner turns it off by hand, only for a request from the account's confirmed
 address, after the requester has reset their password, with seven days' notice to that address
 (the steps are in [docs/data-requests.md](../docs/data-requests.md), "Turning off two-step
-sign-in"). In a Session Manager shell, as root:
+sign-in"). Both steps refuse while the account's email changed less than 30 days ago, and say
+from when they work; verify the requester another way until then (the same section). In a
+Session Manager shell, as root:
 
 ```bash
 cd /opt/glazecalc
