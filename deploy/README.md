@@ -439,73 +439,37 @@ operator profile (copper-bell). The instance role already reads `/glazecalc/*`
      --value "$(openssl rand -hex 32)"
    ```
 
-3. **The files.** `staging.sh` and `compose.staging.yaml` are not installed by `deploy.sh` or
+3. **The files.** `staging.sh`, `mongo-users.sh` and `compose.staging.yaml` are not installed by `deploy.sh` or
    `setup-instance.sh`; take them from a pushed branch or commit (`mfa` until it is merged, then
    `master`). Run this again whenever they change.
 
    ```bash
    ref=mfa
    cd /opt/glazecalc
-   for f in staging.sh compose.staging.yaml; do
+   for f in staging.sh mongo-users.sh compose.staging.yaml; do
      curl -fsSL "https://raw.githubusercontent.com/AaronFilson/glazecalc/$ref/deploy/$f" -o "$f.new"
    done
-   bash -n staging.sh.new && mv staging.sh.new staging.sh && mv compose.staging.yaml.new compose.staging.yaml
-   chmod 750 staging.sh
+   bash -n staging.sh.new && bash -n mongo-users.sh.new && mv staging.sh.new staging.sh &&
+     mv mongo-users.sh.new mongo-users.sh && mv compose.staging.yaml.new compose.staging.yaml
+   chmod 750 staging.sh mongo-users.sh
    ```
 
 4. **The database users.** Production's MongoDB had no administrator, only the app's user, so
-   staging's user and the administrator (`glazecalc_admin`, MongoDB sign-in) are made with MongoDB
-   started once without sign-in, cut off from every network. **Production is down for about a
-   minute**: do it at a quiet time. Data is not changed. Later users need no downtime: the
+   `mongo-users.sh` (installed in step 3) adds staging's user and the administrator
+   (`glazecalc_admin`, MongoDB sign-in) with MongoDB started once without sign-in, cut off from
+   every network, on the volumes production's MongoDB container uses. **Production is down for
+   about a minute**: do it at a quiet time. Data is not changed. It checks everything first (the
+   container, its volumes, both passwords from SSM, production healthy), asks you to type `yes`,
+   runs `backup.sh`, and from the moment production stops, starts it again whatever happens. A
+   user already there is left as it is, so it can be run again. Later users need no downtime: the
    administrator makes them.
 
    ```bash
-   cd /opt/glazecalc
-   ./backup.sh                                      # a fresh dump first; check it reached S3
-   pw=$(aws ssm get-parameter --region us-west-2 --name /glazecalc/staging/mongo-password --with-decryption \
-     --query Parameter.Value --output text)
-   admin_pw=$(aws ssm get-parameter --region us-west-2 --name /glazecalc/mongo-admin-password --with-decryption \
-     --query Parameter.Value --output text)
-   [ -n "$pw" ] && [ -n "$admin_pw" ] && echo "both passwords read"   # stop here if this prints nothing
-   mongo_image=$(docker inspect -f '{{.Image}}' "$(docker compose -f compose.prod.yaml ps -q mongo)")
-   docker compose -f compose.prod.yaml stop app mongo        # production is down from here
-   docker run -d --name glazecalc-mongo-admin --network none \
-     -v glazecalc_mongo-data:/data/db -v glazecalc_mongo-config:/data/configdb \
-     "$mongo_image" mongod --wiredTigerCacheSizeGB 0.25 --slowms 2147483647
-   until docker exec glazecalc-mongo-admin mongosh --quiet --eval "db.adminCommand('ping').ok" >/dev/null 2>&1; do sleep 2; done
-   PW=$pw ADMIN_PW=$admin_pw docker exec -e PW -e ADMIN_PW glazecalc-mongo-admin mongosh --quiet --eval "
-     db.getSiblingDB('glazecalc_staging').createUser({
-       user: 'glazecalc_staging',
-       pwd: process.env.PW,
-       roles: [{ role: 'readWrite', db: 'glazecalc_staging' }]
-     });
-     db.getSiblingDB('admin').createUser({
-       user: 'glazecalc_admin',
-       pwd: process.env.ADMIN_PW,
-       roles: [{ role: 'userAdminAnyDatabase', db: 'admin' }]
-     })"
-   docker stop glazecalc-mongo-admin && docker rm glazecalc-mongo-admin
-   docker compose -f compose.prod.yaml start mongo app      # production is back
-   curl -fsS http://127.0.0.1:3000/api/health
+   /opt/glazecalc/mongo-users.sh
    ```
 
-   Check that each user signs in and has its one role (`[ { role: 'readWrite', db: 'glazecalc_staging' } ]`,
-   then `[ { role: 'userAdminAnyDatabase', db: 'admin' } ]`):
-
-   ```bash
-   PW=$pw docker exec -e PW "$(docker compose -f compose.prod.yaml ps -q mongo)" mongosh --quiet \
-     mongodb://localhost/glazecalc_staging --eval "
-     db.auth('glazecalc_staging', process.env.PW);
-     printjson(db.runCommand({ connectionStatus: 1 }).authInfo.authenticatedUserRoles)"
-   PW=$admin_pw docker exec -e PW "$(docker compose -f compose.prod.yaml ps -q mongo)" mongosh --quiet \
-     mongodb://localhost/admin --eval "
-     db.auth('glazecalc_admin', process.env.PW);
-     printjson(db.runCommand({ connectionStatus: 1 }).authInfo.authenticatedUserRoles)"
-   unset pw admin_pw
-   ```
-
-   If a `createUser` fails, run the `docker stop`, `docker rm` and `start` lines anyway: production
-   comes back as it was.
+   It ends with each user's roles: `[{"role":"readWrite","db":"glazecalc_staging"}]` and
+   `[{"role":"userAdminAnyDatabase","db":"admin"}]`.
 
    **The network staging uses to reach MongoDB, until the merge.** Staging joins `glazecalc_data`,
    which `compose.prod.yaml` makes once two-step sign-in is merged and deployed. Until then
