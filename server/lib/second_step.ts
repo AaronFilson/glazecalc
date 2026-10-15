@@ -19,6 +19,7 @@ import crypto from 'node:crypto';
 import jwt from 'jsonwebtoken';
 import type { HydratedDocument, Types } from 'mongoose';
 import { SECOND_STEP_MINUTES, SECOND_STEP_TRIES } from '../../lib/mfa.js';
+import * as accountMail from './account_mail.ts';
 import appSecret from './app_secret.ts';
 import * as factors from './factors.ts';
 import * as log from './log.ts';
@@ -162,5 +163,38 @@ export const cancelClearRequest = async (userId: Types.ObjectId): Promise<void> 
     log.info('A sign-in or confirmation with a factor cancelled a request to turn two-step sign-in off', {
       code: 'MFA_CLEAR_CANCELLED'
     });
+  }
+};
+
+/** At most one "second step not finished" email per account in this long. */
+export const UNFINISHED_NOTICE_HOURS = 24;
+
+/**
+ * Someone entered the account's password but did not get through the second
+ * step: a pending sign-in ran out of tries, or the account went over
+ * limits.secondStepAccount. Emails the owner to change the password, at most
+ * once in UNFINISHED_NOTICE_HOURS: the time is kept on the account
+ * (mfa.unfinishedNoticeAt) and claimed with one atomic update, so tries at the
+ * same moment send one email. Only to a confirmed address (noticeMfa). Never
+ * rejects; the email names no address or place the tries came from.
+ */
+export const noticeUnfinished = async (userId: Types.ObjectId | string): Promise<void> => {
+  try {
+    const now = new Date();
+    const since = new Date(now.getTime() - UNFINISHED_NOTICE_HOURS * 60 * 60 * 1000);
+    const user = await User.findOneAndUpdate(
+      {
+        _id: userId,
+        guest: { $ne: true },
+        emailUnverified: { $ne: true },
+        mfa: { $exists: true },
+        $or: [{ 'mfa.unfinishedNoticeAt': { $exists: false } }, { 'mfa.unfinishedNoticeAt': { $lte: since } }]
+      },
+      { $set: { 'mfa.unfinishedNoticeAt': now } },
+      { projection: { email: 1, emailUnverified: 1, guest: 1, preferences: 1 } }
+    );
+    if (user) accountMail.noticeMfa(user, { kind: 'second-step-unfinished' });
+  } catch (err) {
+    log.error('Could not note an unfinished second step', { code: log.codeOf(err) });
   }
 };

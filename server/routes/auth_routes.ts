@@ -22,7 +22,7 @@
 //
 // A 400 about one of the fields sent names it, so the app can mark that field:
 // { msg, field: 'email' }. The same goes for the password and account routes.
-import express, { type Request, type Response } from 'express';
+import express, { type NextFunction, type Request, type Response } from 'express';
 import type { Types } from 'mongoose';
 import { mergeTrial } from '../lib/account_data.ts';
 import * as emailLinks from '../lib/email_links.ts';
@@ -74,7 +74,10 @@ authRouter.post('/signup', limits.signUp, express.json(), async (req, res) => {
   }
 });
 
-authRouter.get('/signin', limits.signIn, basicHTTP, async (req, res) => {
+// Two limits per address (server/lib/rate_limit.ts): limits.signIn counts the
+// refused tries only, so people signing in behind one shared address do not
+// use up each other's; limits.signInAny, much looser, counts every try.
+authRouter.get('/signin', limits.signInAny, limits.signIn, basicHTTP, async (req, res) => {
   const credentials = req.basicHTTP!;
   const user = await User.findOne({ email: email.normalize(credentials.email) }).collation(email.collation);
   // Trials have no password of their own; their token is the only way in. Checking
@@ -130,19 +133,26 @@ const proofIn = (body: Record<string, unknown>): Record<string, unknown> => {
 };
 
 // The second step. The pending sign-in is loaded first, so the per-account
-// limit (req.mfaUserId) counts tries from every address.
+// limit (req.mfaUserId) counts tries from every address, and the per-address
+// limit counts only requests that carry a pending sign-in: one that does not
+// load counts against a looser limit of its own (limits.secondStepUnloaded),
+// so junk from one person at a shared address cannot stop the others there.
 authRouter.post(
   '/signin/second-step',
-  limits.secondStep,
   express.json(),
   async (req, res, next) => {
     const body = (req.body ?? {}) as Record<string, unknown>;
-    const loaded = await secondStep.load(body.pending);
+    res.locals.secondStep = await secondStep.load(body.pending);
+    next();
+  },
+  limits.secondStepUnloaded,
+  (req: Request, res: Response, next: NextFunction) => {
+    const loaded = res.locals.secondStep as Awaited<ReturnType<typeof secondStep.load>>;
     if (!loaded.ok) return res.status(401).json(say(loaded.code));
     req.mfaUserId = String(loaded.user._id);
-    res.locals.secondStep = loaded;
     return next();
   },
+  limits.secondStep,
   limits.secondStepAccount,
   async (req: Request, res: Response) => {
     const { pending, user } = res.locals.secondStep as { pending: secondStep.PendingSignIn; user: UserDocument };
@@ -153,8 +163,12 @@ authRouter.post(
       ...(pending.challenge && { passkeyChallenge: pending.challenge })
     });
     if (!check.ok) {
-      // The last try used up: the password again.
-      if (secondStep.triesUsed(pending)) return res.status(401).json(say('second-step-tries'));
+      // The last try used up: the password again, and the owner hears that
+      // someone has it (at most once a day).
+      if (secondStep.triesUsed(pending)) {
+        void secondStep.noticeUnfinished(user._id);
+        return res.status(401).json(say('second-step-tries'));
+      }
       return res
         .status(check.code === 'factor-needed' || check.code === 'code-needed' ? 400 : 401)
         .json(say(check.code));
@@ -171,7 +185,8 @@ authRouter.post(
 // uses the same two routes. The options have a lighter limit of their own
 // (limits.passkeyOptions): the page asks for them on every sign-in page load
 // where autofill works, they start no session, and an unused challenge expires.
-// The sign-in itself counts against limits.signIn.
+// The sign-in itself has its own limit too (limits.passkeySignIn, refusals
+// only), so password guessing from a shared address does not stop it.
 const PASSKEY_SIGNIN_MINUTES = 5;
 
 authRouter.post('/signin/passkey/options', limits.passkeyOptions, async (req, res) => {
@@ -184,7 +199,7 @@ authRouter.post('/signin/passkey/options', limits.passkeyOptions, async (req, re
   res.status(200).json({ options });
 });
 
-authRouter.post('/signin/passkey', limits.signIn, express.json(), async (req, res) => {
+authRouter.post('/signin/passkey', limits.passkeySignIn, express.json(), async (req, res) => {
   const response = ((req.body ?? {}) as { response?: unknown }).response;
   if (!response || typeof response !== 'object') return res.status(401).json(say('passkey-failed'));
   const assertion = response as AuthenticationResponseJSON;

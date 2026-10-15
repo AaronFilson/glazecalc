@@ -20,7 +20,7 @@ This plan adds optional two-step sign-in (MFA) for accounts: passkeys (WebAuthn)
 **Before production** (not done; nothing in AWS has changed):
 
 - Create the SSM SecureString `/glazecalc/mfa-key` (32 random bytes, base64) and keep an offline copy, before merging to master: `deploy.sh` stops without it.
-- The about 70 new English messages and the four English-only emails go to the next translation wave (item 19, decision 9); until then other languages show them in English.
+- The about 70 new English messages and the English-only emails go to the next translation wave (item 19, decision 9); until then other languages show them in English.
 - Phase 2: real-browser rounds on staging (below) with a phone authenticator app, a platform passkey (Windows Hello or iCloud Keychain) and real email.
 
 **Phase 2, staging: the scripts are built** on branch `mfa`; the owner's steps are not done (nothing in AWS or on the instance has changed). Built and checked on a production stand-in in Docker (`deploy/README.md`, "Staging", has every command):
@@ -49,7 +49,7 @@ Everything that differs between production and staging comes from the environmen
 - **`MFA_KEY`** per environment: production `/glazecalc/mfa-key`, staging `/glazecalc/staging/mfa-key`. A staging key never decrypts production secrets.
 - **`NOINDEX=1`**: every response carries `X-Robots-Tag: noindex, nofollow`, robots.txt disallows everything, and no sitemap is served.
 - **`MAIL_ALLOWLIST`** (comma-separated addresses or `@domain`): when set, mail to any other address is dropped and logged by error code only. Staging sets it to the owner's addresses, so a staging database can never email a real user.
-- **Cookies stay host-only** (no `Domain=` attribute), so staging's and production's sessions never meet. A test checks the `Set-Cookie` headers.
+- **Cookies stay host-only** (no `Domain=` attribute), so staging's and production's sessions never meet. A test checks the `Set-Cookie` headers. In production the session cookie has the `__Host-` prefix (`__Host-glazecalc_session`: Secure, `Path=/`, no `Domain`), so the browser refuses one set by staging or by a network faking a subdomain; the older `glazecalc_session` is still read and is replaced when the session is next set (`server/lib/session.ts`).
 
 ### Phase 2: staging on the same instance
 
@@ -168,12 +168,17 @@ Everything that differs between production and staging comes from the environmen
    - **Passkey-first sign-in (decision 1, item 17):**
      - `POST /api/signin/passkey/options` → `{ options }`: `webauthn.authenticationOptions(null, 'required')`, no `allowCredentials`; the challenge is kept as an `AuthChallenge` of kind `passkey-signin`, 5 minutes.
      - `POST /api/signin/passkey { response }` (with `X-Keep-Signed-In` like the password): takes the `passkey-signin` challenge the response answers (once), finds the account with `webauthn.accountOf(response)` (credential id and user handle), checks it with `webauthn.verifyAuthentication(user, response, challenge, true)`, merges a trial on this browser and calls `session.start`. Same reply as a sign-in. Unknown passkey: 401 `passkey-unknown`; failed check: 401 `passkey-failed`. Passkey autofill (conditional mediation) uses the same two routes.
-     - `POST /api/signin/passkey` uses `limits.signIn`. The options route has a lighter limit of its own, `limits.passkeyOptions` (100 per 15 minutes per address): the page asks for options on every sign-in page load where autofill works, and they start no session (an unused challenge expires with its TTL).
+     - `POST /api/signin/passkey` has its own limit, `limits.passkeySignIn` (20 refused tries per 15 minutes per address; successful sign-ins are not counted), so password guessing from a shared address (a VPN or Tor exit, iCloud Private Relay, a phone network's or a school's NAT) does not stop passkey sign-in there. The options route has a lighter limit of its own, `limits.passkeyOptions` (100 per 15 minutes per address): the page asks for options on every sign-in page load where autofill works, and they start no session (an unused challenge expires with its TTL).
    - **Limits:**
-     - `limits.secondStep`: 20 per 15 minutes per address.
-     - `limits.secondStepAccount`: 10 per 15 minutes per account, keyed `'mfa:' + req.mfaUserId` after the pending record is loaded.
+     - One address is often many people, who must not block each other, so the limits count what a guesser does.
+     - `limits.secondStep`: 20 per 15 minutes per address, counted only for requests whose pending sign-in loads (or, on `/api/mfa`, that pass `jwtAuth`); a finished sign-in is not counted.
+     - `limits.secondStepUnloaded`: 100 per 15 minutes per address, for second steps whose pending token does not load (made up, expired, used or out of tries), so junk is bounded but never fills `limits.secondStep` for the others at that address.
+     - `limits.secondStepAccount`: 10 wrong answers per 15 minutes per account, keyed `'mfa:' + req.mfaUserId` after the pending record is loaded. Right answers are not counted, so someone with the password cannot keep the owner out by spending the account's tries.
      - 5 tries per pending sign-in, after which the password must be entered again (which hits `limits.signIn`).
-     - No hard lockout, which a stranger could use to lock someone out. With 10 tries per 15 minutes and 3 codes valid at a time, a 6-digit guess succeeds about 0.3% of the time a day.
+     - No hard lockout, which a stranger could use to lock someone out. With 10 wrong answers per 15 minutes (960 a day) and 3 codes valid at a time, a day of guessing at 6-digit codes succeeds about 0.3% of the time.
+     - When a pending sign-in runs out of tries, or the account reaches `limits.secondStepAccount` at sign-in, the owner is emailed that someone entered the password but did not finish the second step (`SECOND_STEP_UNFINISHED`, item 10), at most once in 24 hours (`mfa.unfinishedNoticeAt`, claimed with one atomic update).
+     - `limits.signIn` (20 per 15 minutes per address) counts only refused passwords: a right one, whether it signs in or answers `second-step`, is not a guess, and people behind one address should not use up each other's tries. `limits.signInAny` (300 per 15 minutes, every try) still bounds the slow password checks one address can cause.
+     - The counts are in the app's memory: a deploy or restart starts them again.
 
    Effort M (with passkey-first, M+). Files: `server/routes/auth_routes.ts`, `server/lib/second_step.ts`, `server/test/auth_routes_tests.ts`, `server/test/session_cookie_tests.ts`. `session.ts` needs no change: there is no pending cookie.
 
@@ -181,6 +186,7 @@ Everything that differs between production and staging comes from the environmen
     - `MFA_ADDED` and `MFA_REMOVED`: `{account}`, `{method}`, `{forgot}`, `{app}`. `{method}` is a whole phrase from a small per-language table ("an authenticator app", "the passkey "{name}"").
     - `RECOVERY_USED`: `{left}`.
     - `RECOVERY_NEW`.
+    - `SECOND_STEP_UNFINISHED`: someone entered the password but did not finish the second step (item 9, limits); it advises changing the password. Like the others it names no address or place.
     - Sent only when `!user.emailUnverified`, never to a trial, after the reply. Failures log only the error code, as `logMailError` does.
     - The functions (stubs since step 0): `sendMfaAdded(to, method, language?)`, `sendMfaRemoved(to, method, language?)`, `sendRecoveryUsed(to, left, language?)`, `sendRecoveryNew(to, language?)`, with `method` an `MfaMethod` (`{ kind: 'totp' } | { kind: 'passkey', name }`). Streams A and B call only `noticeMfa(user, notice)`, which checks the address, sends and logs; it never throws. Until stream D lands, it does nothing.
     - On a staging copy (`SITE_LABEL`), subjects say so, and `MAIL_ALLOWLIST` drops mail to anyone else: `site.mailAllowed(to)`, already called by `mailer.send`.
@@ -290,7 +296,9 @@ Everything that differs between production and staging comes from the environmen
   - Passkey-first: options, then sign-in with a discoverable passkey from the soft authenticator; user verification required; an unknown credential (`passkey-unknown`); a challenge used twice; keep-me-signed-in; trial merge.
   - Cookies stay host-only: no `Domain=` in any `Set-Cookie` (`session_cookie_tests.ts`).
   - Trial merge after the second step.
-  - Per-account limiter, with `RATE_LIMITS` on in that one test.
+  - Per-account limiter, with `RATE_LIMITS` on in that one test; it counts wrong answers only, and the notice email goes once a day.
+  - Per-address limits: junk pending tokens do not count against `limits.secondStep`; passkey-first sign-in has its own count.
+  - The session cookie is `__Host-glazecalc_session` in production, the older name is still read and is cleared when the session is set.
 - **Reset:** reset, then sign in: a factor is still needed.
 - **Mail (`support/mail.ts`):** the four notices; none to an unconfirmed address; fingerprints.
 - **Export and deletion:** the export has names and dates, and no `secret`, `publicKey`, `hash` or `credentialId` in the JSON text. Deleting an account, the deletion-log re-apply and expired-trial sweeps remove `AuthChallenge` and `PendingSignIn` records.

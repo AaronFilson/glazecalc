@@ -104,6 +104,12 @@ export interface MfaFields {
    * that two-step sign-in will be turned off; --clear refuses before 7 days.
    */
   clearRequestedAt?: Date;
+  /**
+   * When the owner was last emailed that someone entered the password but did
+   * not finish the second step (server/lib/second_step.ts noticeUnfinished):
+   * at most one such email a day.
+   */
+  unfinishedNoticeAt?: Date;
 }
 
 export interface UserFields {
@@ -183,7 +189,8 @@ const mfaSchema = new mongoose.Schema<MfaFields>(
     passkeys: { type: [passkeySchema], default: [] },
     recoveryCodes: { type: [new mongoose.Schema({ hash: String, usedAt: Date }, { _id: false })], default: [] },
     recoveryMadeAt: Date,
-    clearRequestedAt: Date
+    clearRequestedAt: Date,
+    unfinishedNoticeAt: Date
   },
   { _id: false }
 );

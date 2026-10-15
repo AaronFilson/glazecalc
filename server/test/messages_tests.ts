@@ -117,6 +117,18 @@ describe('account emails', () => {
     expect(fingerprint(JSON.stringify(english))).to.equal('g444iu');
     expect(fingerprint(JSON.stringify([m.MFA_OFF['en'], m.MFA_CLEAR_NOTICE['en']]))).to.equal('18fasis');
   });
+
+  it('should give the unfinished second step notice its values and signature', async () => {
+    const { SECOND_STEP_UNFINISHED } = await import('../lib/account_mail.ts');
+    const { fingerprint } = await import('../../scripts/i18n-fingerprints.mjs');
+    const email = SECOND_STEP_UNFINISHED['en']!;
+    const values = [...new Set([...email.text.matchAll(/\{(\w+)\}/g)].map((match) => match[1]))].sort();
+    expect(values).to.eql(['account', 'app', 'forgot']);
+    expect(email.text).to.match(/\n-- \nGlazecalc, \{app\}\n$/);
+    expect(email.subject).to.include('Glazecalc');
+    // English only so far (docs/mfa-plan.md, item 19): the next wave adds the others.
+    expect(fingerprint(JSON.stringify(email))).to.equal('1adxix7');
+  });
 });
 
 describe('two-step sign-in notices', () => {
