@@ -643,9 +643,12 @@ describe('two-step sign-in', () => {
         }
         expect(statuses.slice(0, 10)).to.not.include(429);
         expect(statuses[10]).to.eql(429);
+        // A right code waits too (the limit is checked before the code is), and
+        // the reply says what ends it if this keeps happening.
         const limited = await finish(tokens[2]!.token, { code: GOOD_CODE });
         expect(limited).to.have.status(429);
-        expect(limited.body.code).to.eql('too-many-codes');
+        expect(limited.body.code).to.eql('second-step-account-limit');
+        expect(limited.body.msg).to.include('reset it by email');
       } finally {
         process.env.RATE_LIMITS = 'off';
         await resetAddress();

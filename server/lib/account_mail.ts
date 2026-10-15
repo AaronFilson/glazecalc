@@ -701,7 +701,8 @@ export const SECOND_STEP_UNFINISHED: Record<string, Email> = {
     subject: 'Someone entered your Glazecalc password but did not finish signing in',
     text:
       'Someone entered the right password for the Glazecalc account {account}, but did not finish the second step of signing in. Your second step kept them out.\n\n' +
-      'If this was you, there is nothing else to do. If not, someone knows your password: change it right away. You can reset it at {forgot}\n' +
+      'If this was you, there is nothing else to do. If not, someone knows your password: change it right away. You can reset it at {forgot}\n\n' +
+      'While they keep trying, signing in with a code from your authenticator app or a recovery code may be refused for up to 15 minutes at a time; signing in with a passkey still works. Resetting your password by email ends it: their unfinished sign-ins end, and they no longer have the password.\n' +
       '\n-- \nGlazecalc, {app}\n'
   }
 };

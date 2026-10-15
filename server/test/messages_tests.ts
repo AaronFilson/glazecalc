@@ -127,7 +127,7 @@ describe('account emails', () => {
     expect(email.text).to.match(/\n-- \nGlazecalc, \{app\}\n$/);
     expect(email.subject).to.include('Glazecalc');
     // English only so far (docs/mfa-plan.md, item 19): the next wave adds the others.
-    expect(fingerprint(JSON.stringify(email))).to.equal('1adxix7');
+    expect(fingerprint(JSON.stringify(email))).to.equal('153r2vu');
   });
 });
 
