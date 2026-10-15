@@ -63,6 +63,15 @@ Day to day:
   and puts the old ones back if they fail).
 - **Restore a dump:** `sudo /opt/glazecalc/restore.sh mongodump/glazecalc-<time>.archive.gz`; see below.
 - **Staging:** a branch on https://staging.glazecalcapp.com, deployed by hand; see "Staging" below.
+- **Rate limits** (sign-in, sign-up, resets, second steps; `server/lib/rate_limit.ts`) count per
+  client address or per account in the app's memory, so every deploy or restart starts them again.
+- **Session cookie:** in production it is `__Host-glazecalc_session` (Secure, `Path=/`, no
+  `Domain`), so no subdomain can set one the site would read. The app still reads the older
+  `glazecalc_session` and replaces it at the next sign-in; that fallback can be removed from
+  `server/lib/session.ts` 14 days after the release that brought the new name. HSTS does not
+  include subdomains (`nginx/glazecalc.conf`): adding `includeSubDomains` would also stop a
+  network from serving a fake `http://` subdomain, but it binds every future subdomain to HTTPS
+  for a year, so it is left as an option for the owner.
 
 ## Restoring a backup
 
@@ -155,6 +164,14 @@ changes. Then:
   `--overwrite`, which is the point). Passkeys do not depend on it. If it is lost, people with a
   passkey sign in with it and set up their app again; people with only an app or codes need the
   steps in "Someone lost every factor" below.
+- **It cannot be rotated.** The stored secrets and hashes carry no key id, so the app knows only
+  one key at a time: a new key needs code that reads both, which does not exist. Treat the key as
+  permanent.
+- **The instance clock must be right** for authenticator codes (30-second steps, one step either
+  side). It should keep time with the Amazon Time Sync Service (169.254.169.123). Check with
+  `chronyc tracking`: "Reference ID" names 169.254.169.123, the "System time" offset is well under
+  a second and "Leap status" is Normal. (If `chronyc` is missing, `timedatectl timesync-status`
+  shows systemd-timesyncd instead.) If codes are refused for everyone, look here first.
 - **Each copy of the site has its own key.** A staging copy (phase 2 of docs/mfa-plan.md) uses
   `/glazecalc/staging/mfa-key`, so it can never decrypt production's secrets.
 
