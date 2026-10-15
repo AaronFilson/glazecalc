@@ -65,6 +65,18 @@ export type FactorProof =
 export type SecondStepRequest = { pending: string } & FactorProof;
 
 /**
+ * A refused second step (401, or 400 for a missing factor; 409
+ * 'second-step-busy' while another try is being checked). A passkey try uses
+ * up the challenge it answered, so a failed one carries `passkeyOptions` for
+ * the next.
+ */
+export interface SecondStepFailure {
+  code: string;
+  msg: string;
+  passkeyOptions?: PublicKeyCredentialRequestOptionsJSON;
+}
+
+/**
  * A finished sign-in: GET /api/signin without MFA, POST /api/signin/second-step,
  * POST /api/signin/passkey. `kept`: records a trial on this browser brought in.
  */
@@ -118,15 +130,42 @@ export interface MfaSummary {
   recoveryMadeAt?: string;
 }
 
-/** POST /api/mfa/totp/start. `qr` is a data:image/svg+xml URL; `secret` is base32. */
+/**
+ * POST /api/mfa/totp/start. `qr` is a data:image/svg+xml URL; `secret` is
+ * base32. `setupId` names this setup: a newer one (another tab) replaces it.
+ */
 export interface TotpStartResponse {
   secret: string;
   uri: string;
   qr: string;
+  setupId: string;
 }
 
-/** POST /api/mfa/totp {code}, POST /api/mfa/passkeys {response, name}. */
+/** POST /api/mfa/totp: the first code from the app, for the setup it was started as. */
+export interface TotpConfirmRequest {
+  setupId: string;
+  code: string;
+}
+
+/**
+ * POST /api/mfa/passkeys/grant (an IdentityProof): the identity is confirmed,
+ * and `grant`, kept in memory only, lets this page ask for options and save
+ * the passkey, trying again if the browser's step fails, until `expiresAt`
+ * (5 minutes) or until the passkey is saved.
+ */
+export interface PasskeyGrantResponse {
+  grant: string;
+  expiresAt: string;
+}
+
+/** POST /api/mfa/passkeys/options. */
+export interface PasskeyOptionsRequest {
+  grant: string;
+}
+
+/** POST /api/mfa/passkeys. */
 export interface PasskeyAddRequest {
+  grant: string;
   response: RegistrationResponseJSON;
   name: string;
 }

@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 import type { PublicKeyCredentialCreationOptionsJSON } from '@simplewebauthn/server';
 import { PASSKEY_LIMIT } from '../../lib/mfa.js';
-import { MFA_ADDED, MFA_OFF, MFA_REMOVED } from '../lib/account_mail.ts';
+import { MFA_ADDED, MFA_OFF, MFA_REMOVED, RECOVERY_USED } from '../lib/account_mail.ts';
 import * as factors from '../lib/factors.ts';
 import * as mfaKey from '../lib/mfa_key.ts';
 import * as limits from '../lib/rate_limit.ts';
@@ -75,19 +75,37 @@ const enrolTotp = async (account: Account, proof: object = {}) => {
   const started = await call(account, 'post', '/totp/start', { password: account.password, ...proof });
   expect(started, JSON.stringify(started.body)).to.have.status(200);
   const secret = totp.fromBase32(started.body.secret);
-  const added = await call(account, 'post', '/totp', { code: totp.codeAt(secret, totp.stepAt()) });
+  const added = await call(account, 'post', '/totp', {
+    setupId: started.body.setupId,
+    code: totp.codeAt(secret, totp.stepAt())
+  });
   expect(added, JSON.stringify(added.body)).to.have.status(200);
   follow(account, added);
   return { secret, codes: added.body.recoveryCodes as string[] | undefined, res: added };
 };
 
+/** Confirms the identity for adding a passkey: the grant. */
+const passkeyGrant = async (account: Account, proof: object = {}): Promise<string> => {
+  const granted = await call(account, 'post', '/passkeys/grant', { password: account.password, ...proof });
+  expect(granted, JSON.stringify(granted.body)).to.have.status(200);
+  return granted.body.grant;
+};
+
+/** Confirms the identity for adding a passkey, and asks for the browser's options with the grant. */
+const passkeyStart = async (account: Account, proof: object = {}) => {
+  const grant = await passkeyGrant(account, proof);
+  const res = await call(account, 'post', '/passkeys/options', { grant });
+  expect(res, JSON.stringify(res.body)).to.have.status(200);
+  return { grant, options: res.body.options as PublicKeyCredentialCreationOptionsJSON, res };
+};
+
 /** Adds a passkey from a new soft authenticator. */
 const addPasskey = async (account: Account, proof: object = {}, name = 'Laptop') => {
-  const options = await call(account, 'post', '/passkeys/options', { password: account.password, ...proof });
-  expect(options, JSON.stringify(options.body)).to.have.status(200);
+  const options = await passkeyStart(account, proof);
   const authenticator = soft();
   const added = await call(account, 'post', '/passkeys', {
-    response: authenticator.register(options.body.options),
+    grant: options.grant,
+    response: authenticator.register(options.options),
     name
   });
   expect(added, JSON.stringify(added.body)).to.have.status(200);
@@ -109,6 +127,7 @@ describe('two-step sign-in on the account page (/api/mfa)', () => {
         ['get', ''],
         ['post', '/totp/start'],
         ['post', '/totp'],
+        ['post', '/passkeys/grant'],
         ['post', '/passkeys/options'],
         ['post', '/recovery-codes'],
         ['post', '/confirm/options']
@@ -125,6 +144,7 @@ describe('two-step sign-in on the account page (/api/mfa)', () => {
         ['post', '/totp/start'],
         ['post', '/totp'],
         ['delete', '/totp'],
+        ['post', '/passkeys/grant'],
         ['post', '/passkeys/options'],
         ['post', '/passkeys'],
         ['patch', '/passkeys/64f0c0ffee0000000000a11c'],
@@ -171,7 +191,7 @@ describe('two-step sign-in on the account page (/api/mfa)', () => {
       const alice = await account();
       const res = await call(alice, 'post', '/totp/start', { password: alice.password });
       expect(res).to.have.status(200);
-      expect(Object.keys(res.body).sort()).to.eql(['qr', 'secret', 'uri']);
+      expect(Object.keys(res.body).sort()).to.eql(['qr', 'secret', 'setupId', 'uri']);
       expect(res.body.secret).to.match(/^[A-Z2-7]{32}$/);
       expect(res.body.uri).to.eql(
         'otpauth://totp/Glazecalc:' +
@@ -240,7 +260,7 @@ describe('two-step sign-in on the account page (/api/mfa)', () => {
       const started = await call(alice, 'post', '/totp/start', { password: alice.password });
       const secret = totp.fromBase32(started.body.secret);
       const code = totp.codeAt(secret, totp.stepAt());
-      const added = await call(alice, 'post', '/totp', { code });
+      const added = await call(alice, 'post', '/totp', { setupId: started.body.setupId, code });
       follow(alice, added);
       const replay = await call(alice, 'post', '/recovery-codes', { password: alice.password, code });
       expect(replay).to.have.status(400);
@@ -251,18 +271,22 @@ describe('two-step sign-in on the account page (/api/mfa)', () => {
       const alice = await account();
       const started = await call(alice, 'post', '/totp/start', { password: alice.password });
       const secret = totp.fromBase32(started.body.secret);
-      let res = await call(alice, 'post', '/totp', {});
+      let res = await call(alice, 'post', '/totp', { setupId: started.body.setupId });
       expect(res.body.code).to.eql('code-needed');
       for (let i = 0; i < 4; i++) {
         res = await call(alice, 'post', '/totp', {
+          setupId: started.body.setupId,
           code: '000000' === totp.codeAt(secret, totp.stepAt()) ? '111111' : '000000'
         });
         expect(res).to.have.status(400);
         expect(res.body.code).to.eql('code-wrong');
       }
-      res = await call(alice, 'post', '/totp', { code: 'abcdef' });
+      res = await call(alice, 'post', '/totp', { setupId: started.body.setupId, code: 'abcdef' });
       expect(res.body.code).to.eql('mfa-start-again');
-      res = await call(alice, 'post', '/totp', { code: totp.codeAt(secret, totp.stepAt()) });
+      res = await call(alice, 'post', '/totp', {
+        setupId: started.body.setupId,
+        code: totp.codeAt(secret, totp.stepAt())
+      });
       expect(res).to.have.status(400);
       expect(res.body.code).to.eql('mfa-start-again');
       expect((await fresh(alice.user._id))!.mfa?.totp).to.eql(undefined);
@@ -273,19 +297,62 @@ describe('two-step sign-in on the account page (/api/mfa)', () => {
       const started = await call(alice, 'post', '/totp/start', { password: alice.password });
       await AuthChallenge.updateOne({ userId: alice.user._id }, { expiresAt: new Date(Date.now() - 1000) });
       const res = await call(alice, 'post', '/totp', {
+        setupId: started.body.setupId,
         code: totp.codeAt(totp.fromBase32(started.body.secret), totp.stepAt())
       });
       expect(res.body.code).to.eql('mfa-start-again');
     });
 
-    it('keeps only the newest setup', async () => {
+    it('keeps only the newest setup: a code for one another tab replaced says to start again', async () => {
       const alice = await account();
       const first = await call(alice, 'post', '/totp/start', { password: alice.password });
-      await call(alice, 'post', '/totp/start', { password: alice.password });
+      const second = await call(alice, 'post', '/totp/start', { password: alice.password });
+      expect(second.body.setupId).to.be.a('string').and.not.eql(first.body.setupId);
+      // The first tab's right code, for its own (replaced) setup.
       const res = await call(alice, 'post', '/totp', {
+        setupId: first.body.setupId,
         code: totp.codeAt(totp.fromBase32(first.body.secret), totp.stepAt())
       });
-      expect(res.body.code).to.not.eql('totp-added');
+      expect(res).to.have.status(400);
+      expect(res.body.code).to.eql('mfa-start-again');
+      // The first tab's code sent as the second tab's setup is simply wrong.
+      const crossed = await call(alice, 'post', '/totp', {
+        setupId: second.body.setupId,
+        code: totp.codeAt(totp.fromBase32(first.body.secret), totp.stepAt())
+      });
+      expect(crossed.body.code).to.eql('code-wrong');
+      const added = await call(alice, 'post', '/totp', {
+        setupId: second.body.setupId,
+        code: totp.codeAt(totp.fromBase32(second.body.secret), totp.stepAt())
+      });
+      expect(added.body.code).to.eql('totp-added');
+    });
+
+    it('needs the setup id', async () => {
+      const alice = await account();
+      const started = await call(alice, 'post', '/totp/start', { password: alice.password });
+      const code = totp.codeAt(totp.fromBase32(started.body.secret), totp.stepAt());
+      for (const setupId of [undefined, '', 'not-an-id', 42, new mongoose.Types.ObjectId().toHexString()]) {
+        const res = await call(alice, 'post', '/totp', { setupId, code });
+        expect(res, String(setupId)).to.have.status(400);
+        expect(res.body.code).to.eql('mfa-start-again');
+      }
+      expect((await fresh(alice.user._id))!.mfa?.totp).to.eql(undefined);
+    });
+
+    it('ends when the account changes how it signs in during the setup', async () => {
+      const alice = await account();
+      const started = await call(alice, 'post', '/totp/start', { password: alice.password });
+      // A sign-out everywhere, a reset or another factor raises tokenVersion.
+      await User.updateOne({ _id: alice.user._id }, { $inc: { tokenVersion: 1 } });
+      alice.token = (await User.findById(alice.user._id))!.generateToken('7d', true);
+      const res = await call(alice, 'post', '/totp', {
+        setupId: started.body.setupId,
+        code: totp.codeAt(totp.fromBase32(started.body.secret), totp.stepAt())
+      });
+      expect(res).to.have.status(400);
+      expect(res.body.code).to.eql('mfa-start-again');
+      expect((await fresh(alice.user._id))!.mfa?.totp).to.eql(undefined);
     });
 
     it("never takes another account's secret", async () => {
@@ -293,13 +360,15 @@ describe('two-step sign-in on the account page (/api/mfa)', () => {
       const bob = await account();
       const started = await call(alice, 'post', '/totp/start', { password: alice.password });
       const code = totp.codeAt(totp.fromBase32(started.body.secret), totp.stepAt());
-      // Bob has no setup of his own.
-      expect((await call(bob, 'post', '/totp', { code })).body.code).to.eql('mfa-start-again');
+      // Not Alice's setup, and Bob has none of his own.
+      expect((await call(bob, 'post', '/totp', { setupId: started.body.setupId, code })).body.code).to.eql(
+        'mfa-start-again'
+      );
       // Alice's encrypted secret copied into Bob's setup does not decrypt for him.
-      await call(bob, 'post', '/totp/start', { password: bob.password });
+      const bobs = await call(bob, 'post', '/totp/start', { password: bob.password });
       const alices = await AuthChallenge.findOne({ userId: alice.user._id, kind: 'totp-add' }).lean();
       await AuthChallenge.updateOne({ userId: bob.user._id, kind: 'totp-add' }, { secret: alices!.secret });
-      const res = await call(bob, 'post', '/totp', { code });
+      const res = await call(bob, 'post', '/totp', { setupId: bobs.body.setupId, code });
       expect(res).to.have.status(400);
       expect(res.body.code).to.eql('code-wrong');
       expect((await fresh(bob.user._id))!.mfa?.totp).to.eql(undefined);
@@ -357,7 +426,7 @@ describe('two-step sign-in on the account page (/api/mfa)', () => {
       const passkeyId = new mongoose.Types.ObjectId();
       for (const [method, path] of [
         ['delete', '/totp'],
-        ['post', '/passkeys/options'],
+        ['post', '/passkeys/grant'],
         ['post', '/recovery-codes']
       ] as Array<[Method, string]>) {
         const res = await call(alice, method, path, { password: alice.password });
@@ -412,7 +481,7 @@ describe('two-step sign-in on the account page (/api/mfa)', () => {
       expect(wrong.body.code).to.eql('code-wrong');
       expect((await fresh(alice.user._id))!.mfa!.clearRequestedAt).to.be.instanceOf(Date);
 
-      const res = await call(alice, 'post', '/passkeys/options', {
+      const res = await call(alice, 'post', '/passkeys/grant', {
         password: alice.password,
         code: await codeNow(alice, secret)
       });
@@ -421,10 +490,10 @@ describe('two-step sign-in on the account page (/api/mfa)', () => {
     });
 
     it('takes a recovery code, once', async () => {
-      const res = await call(alice, 'post', '/passkeys/options', { password: alice.password, recoveryCode: codes[3] });
+      const res = await call(alice, 'post', '/passkeys/grant', { password: alice.password, recoveryCode: codes[3] });
       expect(res).to.have.status(200);
       expect((await call(alice, 'get', '')).body.codesLeft).to.eql(9);
-      const again = await call(alice, 'post', '/passkeys/options', {
+      const again = await call(alice, 'post', '/passkeys/grant', {
         password: alice.password,
         recoveryCode: codes[3]
       });
@@ -477,9 +546,7 @@ describe('two-step sign-in on the account page (/api/mfa)', () => {
   describe('passkeys', () => {
     it('gives creation options for this site, with a handle that is not the account id', async () => {
       const alice = await account();
-      const res = await call(alice, 'post', '/passkeys/options', { password: alice.password });
-      expect(res).to.have.status(200);
-      const options = res.body.options as PublicKeyCredentialCreationOptionsJSON;
+      const { options, res } = await passkeyStart(alice);
       expect(options.rp).to.eql({ name: 'Glazecalc', id: 'glazecalc.test' });
       expect(options.user.name).to.eql(alice.email);
       const handle = (await fresh(alice.user._id))!.mfa!.handle!;
@@ -518,13 +585,14 @@ describe('two-step sign-in on the account page (/api/mfa)', () => {
       const alice = await account();
       const first = await addPasskey(alice);
       const proof = await passkeyProof(alice, first.authenticator);
-      const options = await call(alice, 'post', '/passkeys/options', { password: alice.password, ...proof });
-      expect(options.body.options.excludeCredentials).to.eql([
+      const options = await passkeyStart(alice, proof);
+      expect(options.options.excludeCredentials).to.eql([
         { id: first.authenticator.id, type: 'public-key', transports: ['internal'] }
       ]);
       const second = soft();
       const res = await call(alice, 'post', '/passkeys', {
-        response: second.register(options.body.options),
+        grant: options.grant,
+        response: second.register(options.options),
         name: 'Phone'
       });
       expect(res.body.code).to.eql('passkey-added');
@@ -539,8 +607,12 @@ describe('two-step sign-in on the account page (/api/mfa)', () => {
     it('needs a name of 1 to 60 characters', async () => {
       const alice = await account();
       for (const name of [undefined, '', '   ', 'x'.repeat(61), 'bell' + String.fromCharCode(7), 42]) {
-        const options = await call(alice, 'post', '/passkeys/options', { password: alice.password });
-        const res = await call(alice, 'post', '/passkeys', { response: soft().register(options.body.options), name });
+        const options = await passkeyStart(alice);
+        const res = await call(alice, 'post', '/passkeys', {
+          grant: options.grant,
+          response: soft().register(options.options),
+          name
+        });
         expect(res, String(name)).to.have.status(400);
         expect(res.body).to.include({ code: 'passkey-name', field: 'name' });
         expect(res.body.params).to.eql({ most: 60 });
@@ -549,31 +621,48 @@ describe('two-step sign-in on the account page (/api/mfa)', () => {
 
     it('takes each challenge once, and not after it expires', async () => {
       const alice = await account();
-      const options = await call(alice, 'post', '/passkeys/options', { password: alice.password });
-      const response = soft().register(options.body.options);
-      const added = await call(alice, 'post', '/passkeys', { response, name: 'A' });
+      const options = await passkeyStart(alice);
+      const response = soft().register(options.options);
+      const added = await call(alice, 'post', '/passkeys', { grant: options.grant, response, name: 'A' });
       expect(added.body.code).to.eql('passkey-added');
       follow(alice, added);
-      expect((await call(alice, 'post', '/passkeys', { response, name: 'A' })).body.code).to.eql('mfa-start-again');
+      expect((await call(alice, 'post', '/passkeys', { grant: options.grant, response, name: 'A' })).body.code).to.eql(
+        'mfa-start-again'
+      );
     });
 
     it('refuses an expired challenge', async () => {
       const alice = await account();
-      const options = await call(alice, 'post', '/passkeys/options', { password: alice.password });
+      const options = await passkeyStart(alice);
       await AuthChallenge.updateMany({ userId: alice.user._id }, { expiresAt: new Date(Date.now() - 1) });
       const res = await call(alice, 'post', '/passkeys', {
-        response: soft().register(options.body.options),
+        grant: options.grant,
+        response: soft().register(options.options),
         name: 'A'
       });
       expect(res.body.code).to.eql('mfa-start-again');
     });
 
-    it("refuses another account's challenge", async () => {
+    it("refuses another account's challenge, and another account's grant", async () => {
       const alice = await account();
       const bob = await account();
-      const options = await call(bob, 'post', '/passkeys/options', { password: bob.password });
+      const options = await passkeyStart(bob);
+      const mine = await passkeyStart(alice);
+      expect(
+        (
+          await call(alice, 'post', '/passkeys', {
+            grant: options.grant,
+            response: soft().register(mine.options),
+            name: 'A'
+          })
+        ).body.code
+      ).to.eql('mfa-start-again');
+      expect((await call(alice, 'post', '/passkeys/options', { grant: options.grant })).body.code).to.eql(
+        'mfa-start-again'
+      );
       const res = await call(alice, 'post', '/passkeys', {
-        response: soft().register(options.body.options),
+        grant: mine.grant,
+        response: soft().register(options.options),
         name: 'A'
       });
       expect(res.body.code).to.eql('mfa-start-again');
@@ -586,9 +675,10 @@ describe('two-step sign-in on the account page (/api/mfa)', () => {
         { rpId: 'evil.test' },
         { origin: 'http://glazecalc.test' }
       ]) {
-        const options = await call(alice, 'post', '/passkeys/options', { password: alice.password });
+        const options = await passkeyStart(alice);
         const res = await call(alice, 'post', '/passkeys', {
-          response: soft().register(options.body.options, twist),
+          grant: options.grant,
+          response: soft().register(options.options, twist),
           name: 'A'
         });
         expect(res.body.code, JSON.stringify(twist)).to.eql('passkey-failed');
@@ -608,13 +698,149 @@ describe('two-step sign-in on the account page (/api/mfa)', () => {
       const alice = await account();
       const bob = await account();
       const { authenticator } = await addPasskey(alice);
-      const options = await call(bob, 'post', '/passkeys/options', { password: bob.password });
+      const options = await passkeyStart(bob);
       const res = await call(bob, 'post', '/passkeys', {
-        response: authenticator.register(options.body.options),
+        grant: options.grant,
+        response: authenticator.register(options.options),
         name: 'A'
       });
       expect(res.body.code).to.eql('passkey-failed');
       expect((await fresh(bob.user._id))!.mfa?.passkeys ?? []).to.eql([]);
+      // The grant was given back: Bob can still add a passkey of his own with it.
+      const again = await call(bob, 'post', '/passkeys/options', { grant: options.grant });
+      const own = await call(bob, 'post', '/passkeys', {
+        grant: options.grant,
+        response: soft().register(again.body.options),
+        name: 'B'
+      });
+      expect(own.body.code).to.eql('passkey-added');
+    });
+
+    describe('confirmed once (the grant)', () => {
+      it('uses one recovery code however often the browser step is tried', async () => {
+        const alice = await account();
+        const { codes } = await enrolTotp(alice);
+        const grant = await passkeyGrant(alice, { recoveryCode: codes![0] });
+        expect(await subjects(alice)).to.include(RECOVERY_USED['en']!.subject);
+        // Cancelled in the browser: nothing sent. Then a try the server refuses.
+        await call(alice, 'post', '/passkeys/options', { grant });
+        const options = await call(alice, 'post', '/passkeys/options', { grant });
+        const spoilt = await call(alice, 'post', '/passkeys', {
+          grant,
+          response: soft().register(options.body.options, { origin: 'https://evil.test' }),
+          name: 'A'
+        });
+        expect(spoilt.body.code).to.eql('passkey-failed');
+        // Then it works, with no new confirmation.
+        const last = await call(alice, 'post', '/passkeys/options', { grant });
+        const added = await call(alice, 'post', '/passkeys', {
+          grant,
+          response: soft().register(last.body.options),
+          name: 'A'
+        });
+        expect(added.body.code).to.eql('passkey-added');
+        follow(alice, added);
+        expect((await call(alice, 'get', '')).body.codesLeft).to.eql(9);
+        // Taken with the passkey: it adds no other.
+        expect((await call(alice, 'post', '/passkeys/options', { grant })).body.code).to.eql('mfa-start-again');
+      });
+
+      it('gives a grant only for the password and a factor, and only to ask for options and save', async () => {
+        const alice = await account();
+        const { secret } = await enrolTotp(alice);
+        // Options with a proof but no grant, or with a made-up grant: refused, nothing used.
+        for (const body of [
+          { password: alice.password, code: await codeNow(alice, secret) },
+          { grant: 'x'.repeat(43) }
+        ]) {
+          const res = await call(alice, 'post', '/passkeys/options', body);
+          expect(res).to.have.status(400);
+          expect(res.body.code).to.eql('mfa-start-again');
+        }
+        const res = await call(alice, 'post', '/passkeys/grant', { password: alice.password });
+        expect(res.body.code).to.eql('factor-needed');
+        const granted = await call(alice, 'post', '/passkeys/grant', {
+          password: alice.password,
+          code: await codeNow(alice, secret)
+        });
+        expect(Object.keys(granted.body).sort()).to.eql(['expiresAt', 'grant']);
+        expect(new Date(granted.body.expiresAt).getTime() - Date.now()).to.be.within(4 * 60_000, 5 * 60_000 + 1000);
+        // Kept only as a hash.
+        const stored = await AuthChallenge.findOne({ userId: alice.user._id, kind: 'change-grant' }).lean();
+        expect(stored).to.include({ purpose: 'passkey-add', tokenVersion: 1 });
+        expect(JSON.stringify(stored)).to.not.include(granted.body.grant);
+        expect(sessionToken(granted)).to.eql(null);
+      });
+
+      it('runs out after 5 minutes', async () => {
+        const alice = await account();
+        const { grant, options } = await passkeyStart(alice);
+        await AuthChallenge.updateOne(
+          { userId: alice.user._id, kind: 'change-grant' },
+          { expiresAt: new Date(Date.now() - 1) }
+        );
+        const res = await call(alice, 'post', '/passkeys', { grant, response: soft().register(options), name: 'A' });
+        expect(res.body.code).to.eql('mfa-start-again');
+        expect((await call(alice, 'post', '/passkeys/options', { grant })).body.code).to.eql('mfa-start-again');
+        expect((await fresh(alice.user._id))!.mfa?.passkeys ?? []).to.eql([]);
+      });
+
+      it('ends when the account changes how it signs in in between', async () => {
+        const alice = await account();
+        const { grant, options } = await passkeyStart(alice);
+        // Another tab adds an authenticator app: tokenVersion goes up, and this browser's cookie is renewed.
+        await enrolTotp(alice);
+        const res = await call(alice, 'post', '/passkeys', { grant, response: soft().register(options), name: 'A' });
+        expect(res).to.have.status(400);
+        expect(res.body.code).to.eql('mfa-start-again');
+        expect((await call(alice, 'post', '/passkeys/options', { grant })).body.code).to.eql('mfa-start-again');
+        expect((await fresh(alice.user._id))!.mfa?.passkeys ?? []).to.eql([]);
+      });
+
+      it('keeps the newest grant only: another tab confirming again replaces it', async () => {
+        const alice = await account();
+        const first = await passkeyStart(alice);
+        const second = await passkeyStart(alice);
+        const stale = await call(alice, 'post', '/passkeys', {
+          grant: first.grant,
+          response: soft().register(second.options),
+          name: 'A'
+        });
+        expect(stale.body.code).to.eql('mfa-start-again');
+        const added = await call(alice, 'post', '/passkeys', {
+          grant: second.grant,
+          response: soft().register(second.options),
+          name: 'A'
+        });
+        expect(added.body.code).to.eql('passkey-added');
+      });
+
+      it('keeps one passkey challenge per account, so a second tab leaves no passkey half added', async () => {
+        const alice = await account();
+        const grant = await passkeyGrant(alice);
+        const tabOne = (await call(alice, 'post', '/passkeys/options', { grant })).body.options;
+        const tabTwo = (await call(alice, 'post', '/passkeys/options', { grant })).body.options;
+        expect(await AuthChallenge.countDocuments({ userId: alice.user._id, kind: 'passkey-add' })).to.eql(1);
+        const one = soft();
+        const late = await call(alice, 'post', '/passkeys', { grant, response: one.register(tabOne), name: 'One' });
+        expect(late.body.code).to.eql('mfa-start-again');
+        const two = await call(alice, 'post', '/passkeys', { grant, response: soft().register(tabTwo), name: 'Two' });
+        expect(two.body.code).to.eql('passkey-added');
+        const stored = (await fresh(alice.user._id))!.mfa!.passkeys;
+        expect(stored.map((passkey) => passkey.name)).to.eql(['Two']);
+        expect(stored.map((passkey) => passkey.credentialId)).to.not.include(one.id);
+      });
+
+      it('saves one passkey when the same answer is sent twice at once', async () => {
+        const alice = await account();
+        const { grant, options } = await passkeyStart(alice);
+        const response = soft().register(options);
+        const results = await Promise.all(
+          [1, 2, 3].map(() => call(alice, 'post', '/passkeys', { grant, response, name: 'A' }))
+        );
+        expect(results.filter((res) => res.body.code === 'passkey-added')).to.have.length(1);
+        expect((await fresh(alice.user._id))!.mfa!.passkeys).to.have.length(1);
+      });
     });
 
     it(`stops at ${PASSKEY_LIMIT}`, async () => {
@@ -630,7 +856,7 @@ describe('two-step sign-in on the account page (/api/mfa)', () => {
         addedAt: new Date()
       }));
       await User.updateOne({ _id: alice.user._id }, { $push: { 'mfa.passkeys': { $each: extra } } });
-      const res = await call(alice, 'post', '/passkeys/options', {
+      const res = await call(alice, 'post', '/passkeys/grant', {
         password: alice.password,
         ...(await passkeyProof(alice, authenticator))
       });
@@ -641,7 +867,7 @@ describe('two-step sign-in on the account page (/api/mfa)', () => {
 
     it('also stops at the limit when the options were asked for before', async () => {
       const alice = await account();
-      const options = await call(alice, 'post', '/passkeys/options', { password: alice.password });
+      const options = await passkeyStart(alice);
       const extra = Array.from({ length: PASSKEY_LIMIT }, (_, i) => ({
         _id: new mongoose.Types.ObjectId(),
         credentialId: 'late-' + i + '-' + String(alice.user._id),
@@ -652,7 +878,8 @@ describe('two-step sign-in on the account page (/api/mfa)', () => {
       }));
       await User.updateOne({ _id: alice.user._id }, { $push: { 'mfa.passkeys': { $each: extra } } });
       const res = await call(alice, 'post', '/passkeys', {
-        response: soft().register(options.body.options),
+        grant: options.grant,
+        response: soft().register(options.options),
         name: 'A'
       });
       expect(res.body.code).to.eql('passkey-limit');
@@ -914,11 +1141,15 @@ describe('passkeys on the server (webauthn.ts)', () => {
 
   it('takes an authenticator that does not count', async () => {
     const alice = await account();
-    const options = await call(alice, 'post', '/passkeys/options', { password: alice.password });
+    const options = await passkeyStart(alice);
     const still = new SoftAuthenticator({ rpId: site.rpId(), origin: site.origin() }, { counts: false });
     follow(
       alice,
-      await call(alice, 'post', '/passkeys', { response: still.register(options.body.options), name: 'Key' })
+      await call(alice, 'post', '/passkeys', {
+        grant: options.grant,
+        response: still.register(options.options),
+        name: 'Key'
+      })
     );
     const user = (await User.findById(alice.user._id))!;
     for (let i = 0; i < 2; i++) {
