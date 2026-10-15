@@ -11,6 +11,7 @@ import {
 } from '@angular/core';
 import { NgTemplateOutlet } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { DomSanitizer } from '@angular/platform-browser';
 import { TranslocoDirective, translate } from '@jsverse/transloco';
 import {
   PASSKEY_LIMIT,
@@ -83,12 +84,20 @@ export const groupedKey = (secret: string): string => secret.match(/.{1,4}/g)?.j
           <div class="recovery-codes-panel">
             <h3 id="codes-heading" tabindex="-1" #panelHeading>{{ t('account.mfa.codesHeading') }}</h3>
             <p>{{ t('account.mfa.codesText') }}</p>
-            <ol class="recovery-codes" aria-labelledby="codes-heading">
-              @for (code of list; track code) {
-                <li>{{ code }}</li>
-              }
-            </ol>
+            <!-- What "Print the codes" prints, and nothing else on the page (styles.scss, gc-printing-codes). -->
+            <div class="recovery-codes-print">
+              <p class="print-only">{{ t('account.mfa.fileTitle', { email: email() }) }}</p>
+              <ol class="recovery-codes" aria-labelledby="codes-heading">
+                @for (code of list; track code) {
+                  <li>{{ code }}</li>
+                }
+              </ol>
+              <p class="print-only">{{ t('account.mfa.printNote') }}</p>
+            </div>
             <div class="panel-buttons">
+              <button type="button" class="btn btn-light border" (click)="printCodes()">
+                {{ t('account.mfa.print') }}
+              </button>
               <button type="button" class="btn btn-light border" (click)="downloadCodes(list)">
                 {{ t('account.mfa.download') }}
               </button>
@@ -99,6 +108,7 @@ export const groupedKey = (secret: string): string => secret.match(/.{1,4}/g)?.j
                 {{ t('account.mfa.saved') }}
               </button>
             </div>
+            <p class="form-text clipboard-note">{{ t('account.mfa.clipboardNote') }}</p>
             <p role="status" class="form-text copied">{{ copied() }}</p>
           </div>
         } @else if (totpSetup(); as setup) {
@@ -111,10 +121,14 @@ export const groupedKey = (secret: string): string => secret.match(/.{1,4}/g)?.j
                 <img class="totp-qr" [src]="setup.qr" [alt]="t('account.mfa.qrAlt')" width="200" height="200" />
                 <span class="d-block" id="totp-key-label">{{ t('account.mfa.key') }}</span>
                 <code class="totp-key" aria-labelledby="totp-key-label">{{ grouped(setup.secret) }}</code>
+                @if (appLink(); as link) {
+                  <a class="btn btn-light border btn-sm open-app" [href]="link">{{ t('account.mfa.openInApp') }}</a>
+                }
                 <button type="button" class="btn btn-light border btn-sm copy-key" (click)="copy(setup.secret)">
                   {{ t('account.mfa.copyKey') }}
                 </button>
                 <span role="status" class="form-text copied">{{ copied() }}</span>
+                <span class="form-text d-block clipboard-note">{{ t('account.mfa.clipboardNote') }}</span>
               </li>
               <li>
                 <form (ngSubmit)="confirmTotp()">
@@ -362,6 +376,9 @@ export const groupedKey = (secret: string): string => secret.match(/.{1,4}/g)?.j
       margin: 0.25rem 0.5rem 0.5rem 0;
       color: inherit;
     }
+    .open-app {
+      margin: 0 0.5rem 0.5rem 0;
+    }
     .totp-qr {
       display: block;
       margin: 0.5rem 0;
@@ -440,6 +457,25 @@ export class SignInSection {
   /** New recovery codes, shown once until the person says they have saved them. */
   protected readonly codes = signal<string[] | null>(null);
   protected readonly copied = signal('');
+  protected readonly email = computed(() => this.auth.email() ?? '');
+
+  /**
+   * A link that hands the new key straight to an authenticator app on this
+   * device (the otpauth:// URI the QR code holds), so it never goes through
+   * the clipboard: iOS adds it to its own codes, Android opens Google
+   * Authenticator or another app that takes these links. Only where the
+   * pointer is a finger: on a computer, where no app usually takes them, the
+   * link would do nothing (Chrome) or open an error page (Firefox). The URI is
+   * our own server's, and only an otpauth://totp/ one is let through Angular's
+   * URL check, which would otherwise refuse the scheme.
+   */
+  protected readonly appLink = computed(() => {
+    const uri = this.totpSetup()?.uri;
+    if (!uri?.startsWith('otpauth://totp/') || !this.touch) return null;
+    return this.sanitizer.bypassSecurityTrustUrl(uri);
+  });
+  private readonly sanitizer = inject(DomSanitizer);
+  private readonly touch = typeof matchMedia === 'function' && matchMedia('(pointer: coarse)').matches;
   protected readonly busy = signal(false);
 
   protected readonly totpCode = signal('');
@@ -713,6 +749,22 @@ export class SignInSection {
     link.download = 'glazecalc-recovery-codes.txt';
     link.click();
     setTimeout(() => URL.revokeObjectURL(url), 1000);
+  }
+
+  /**
+   * Prints the recovery codes alone: a class on <body> that the print styles
+   * (styles.scss) use to hide the rest of the page, taken off once printing is
+   * done. Nothing goes to the clipboard or to a file.
+   */
+  protected printCodes(): void {
+    const body = document.body;
+    const done = () => {
+      body.classList.remove('gc-printing-codes');
+      window.removeEventListener('afterprint', done);
+    };
+    body.classList.add('gc-printing-codes');
+    window.addEventListener('afterprint', done);
+    window.print();
   }
 
   protected async copy(text: string): Promise<void> {

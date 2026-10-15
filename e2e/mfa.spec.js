@@ -369,6 +369,65 @@ test.describe('the pages', () => {
     await expect(section(page)).toContainText('9 recovery codes of 10 left.');
   });
 
+  // Run in the page (page.evaluate, addInitScript).
+  /* global window, document, getComputedStyle */
+  test('prints the recovery codes alone, black on white', async ({ page }) => {
+    const { email, password } = await confirmedAccount(page.request);
+    await signOut(page.request);
+    // Printing is the browser's: here it only records that it was asked.
+    await page.addInitScript(() => {
+      window.print = () => {
+        window.printedWith = document.body.className;
+      };
+    });
+    await passwordOnPage(page, email, password);
+    await expect(page).toHaveURL(/\/home$/);
+    await page.goto('/account');
+    await section(page).getByRole('button', { name: 'Set up an authenticator app' }).click();
+    await section(page).getByLabel('Your password').fill(password);
+    await section(page).getByRole('button', { name: 'Continue' }).click();
+    const app = authenticatorApp((await section(page).locator('.totp-key').innerText()).replace(/\s/g, ''));
+    await section(page)
+      .getByLabel('Enter the 6-digit code the app now shows for Glazecalc')
+      .fill(await app.next());
+    await section(page).getByRole('button', { name: 'Finish setting up' }).click();
+    const list = section(page).getByRole('list', { name: 'Your recovery codes' });
+    await expect(list.getByRole('listitem')).toHaveCount(10);
+    await expect(section(page).getByText('Paste it straight into your password manager')).toBeVisible();
+
+    await section(page).getByRole('button', { name: 'Print the codes' }).click();
+    expect(await page.evaluate(() => window.printedWith)).toContain('gc-printing-codes');
+    // As the page prints while the class is on: the codes, a title and a note;
+    // nothing else (by CSS: the named regions around them are hidden now).
+    await page.evaluate(() => document.body.classList.add('gc-printing-codes'));
+    await page.emulateMedia({ media: 'print' });
+    const printed = page.locator('.recovery-codes-print');
+    await expect(printed.locator('li').first()).toBeVisible();
+    await expect(printed.getByText('Glazecalc recovery codes for ' + email)).toBeVisible();
+    await expect(printed.getByText('Keep this page somewhere safe.')).toBeVisible();
+    for (const hidden of [
+      '.recovery-codes-panel h3',
+      '.recovery-codes-panel .panel-buttons',
+      '.clipboard-note',
+      'h1'
+    ]) {
+      await expect(page.locator(hidden).first()).toBeHidden();
+    }
+    expect(
+      await printed
+        .locator('li')
+        .first()
+        .evaluate((el) => getComputedStyle(el).color)
+    ).toBe('rgb(0, 0, 0)');
+    await page.screenshot({ path: test.info().outputPath('printed.png'), fullPage: true });
+    // Done printing: the page as it was.
+    await page.evaluate(() => window.dispatchEvent(new Event('afterprint')));
+    expect(await page.evaluate(() => document.body.classList.contains('gc-printing-codes'))).toBe(false);
+    await page.emulateMedia({ media: 'screen' });
+    await expect(printed.getByText('Glazecalc recovery codes for ' + email)).toBeHidden();
+    await expect(list.getByRole('listitem')).toHaveCount(10);
+  });
+
   test('adds a passkey on the account page, signs in with it alone, renames it and removes it', async ({ page }) => {
     test.setTimeout(60000);
     const { email, password } = await confirmedAccount(page.request);

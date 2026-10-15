@@ -111,6 +111,9 @@ describe('SignInSection', () => {
     expect(img.getAttribute('src')).toBe('data:image/svg+xml;base64,PHN2Zz4=');
     expect(img.getAttribute('alt')).toBe('QR code for adding Glazecalc to an authenticator app');
     expect(text(fixture, '.totp-key')).toBe('JBSW Y3DP EHPK 3PXP JBSW Y3DP');
+    expect(text(fixture, '.totp-setup .clipboard-note')).toContain('clipboard history');
+    // A computer's pointer: no link to an app, which would do nothing there.
+    expect(fixture.nativeElement.querySelector('a.open-app')).toBeNull();
     const code = fixture.nativeElement.querySelector('#totp-code') as HTMLInputElement;
     expect(code.getAttribute('autocomplete')).toBe('one-time-code');
     expect(code.getAttribute('inputmode')).toBe('numeric');
@@ -133,6 +136,70 @@ describe('SignInSection', () => {
     await press(fixture, 'I have saved them');
     expect(fixture.nativeElement.querySelector('ol.recovery-codes')).toBeNull();
     expect(text(fixture, '.mfa-status')).toContain('Two-step sign-in is on.');
+  });
+
+  /** From the section with two-step sign-in off to the authenticator app's QR code and key. */
+  const toSetup = async (fixture: ComponentFixture<unknown>) => {
+    await press(fixture, 'Set up an authenticator app');
+    await type(fixture, 'confirm-password', 'my-password');
+    await press(fixture, 'Continue');
+    httpMock()
+      .expectOne(API + '/mfa/totp/start')
+      .flush({
+        secret: 'JBSWY3DPEHPK3PXPJBSWY3DP',
+        uri: 'otpauth://totp/Glazecalc:a%40b.com?secret=JBSWY3DPEHPK3PXPJBSWY3DP&issuer=Glazecalc',
+        qr: 'data:image/svg+xml;base64,PHN2Zz4=',
+        setupId: 'setup-1'
+      });
+    await settle(fixture);
+  };
+
+  it('on a phone, offers to hand the key straight to an authenticator app, past the clipboard', async () => {
+    // jsdom has no matchMedia: a phone's, for this test.
+    vi.stubGlobal('matchMedia', (query: string) => ({ matches: query === '(pointer: coarse)', media: query }));
+    try {
+      const fixture = await create(OFF);
+      await toSetup(fixture);
+      const link = fixture.nativeElement.querySelector('a.open-app') as HTMLAnchorElement;
+      expect(link.textContent?.trim()).toBe('Add to an authenticator app on this device');
+      expect(link.getAttribute('href')).toBe(
+        'otpauth://totp/Glazecalc:a%40b.com?secret=JBSWY3DPEHPK3PXPJBSWY3DP&issuer=Glazecalc'
+      );
+      expect(button(fixture, 'Copy the key')).toBeDefined();
+    } finally {
+      vi.unstubAllGlobals();
+    }
+  });
+
+  it('prints the recovery codes alone, and says what copying them can leave behind', async () => {
+    const fixture = await create(OFF);
+    await toSetup(fixture);
+    await type(fixture, 'totp-code', '123456');
+    await press(fixture, 'Finish setting up');
+    httpMock()
+      .expectOne(API + '/mfa/totp')
+      .flush({ code: 'totp-added', msg: 'Your authenticator app is set up.', recoveryCodes: CODES });
+    await settle(fixture);
+    await reload(fixture, { ...ON, passkeys: [], codesLeft: 10 });
+
+    expect(text(fixture, '.recovery-codes-panel .clipboard-note')).toContain(
+      'Paste it straight into your password manager'
+    );
+    // The print-only lines: a title and a note, inside what is printed.
+    expect(text(fixture, '.recovery-codes-print')).toContain('Each code works once. Keep this page somewhere safe.');
+    let classWhilePrinting = false;
+    const print = vi.spyOn(window, 'print').mockImplementation(() => {
+      classWhilePrinting = document.body.classList.contains('gc-printing-codes');
+    });
+    try {
+      await press(fixture, 'Print the codes');
+      expect(print).toHaveBeenCalledTimes(1);
+      expect(classWhilePrinting).toBe(true);
+      window.dispatchEvent(new Event('afterprint'));
+      expect(document.body.classList.contains('gc-printing-codes')).toBe(false);
+    } finally {
+      print.mockRestore();
+    }
   });
 
   it('marks a wrong password on its field, and keeps the change open', async () => {
