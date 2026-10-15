@@ -102,7 +102,8 @@ describe('SignInSection', () => {
     start.flush({
       secret: 'JBSWY3DPEHPK3PXPJBSWY3DP',
       uri: 'otpauth://totp/Glazecalc:a@b.com',
-      qr: 'data:image/svg+xml;base64,PHN2Zz4='
+      qr: 'data:image/svg+xml;base64,PHN2Zz4=',
+      setupId: 'setup-1'
     });
     await settle(fixture);
 
@@ -118,7 +119,7 @@ describe('SignInSection', () => {
     await type(fixture, 'totp-code', '123456');
     await press(fixture, 'Finish setting up');
     const confirm = httpMock().expectOne(API + '/mfa/totp');
-    expect(confirm.request.body).toEqual({ code: '123456' });
+    expect(confirm.request.body).toEqual({ setupId: 'setup-1', code: '123456' });
     confirm.flush({ code: 'totp-added', msg: 'Your authenticator app is set up.', recoveryCodes: CODES });
     await settle(fixture);
     await reload(fixture, { ...ON, passkeys: [], codesLeft: 10 });
@@ -155,9 +156,9 @@ describe('SignInSection', () => {
     await press(fixture, 'Add a passkey');
     await type(fixture, 'confirm-name', 'Laptop');
     await type(fixture, 'confirm-password', 'my-password');
-    await press(fixture, 'Add a passkey');
+    await press(fixture, 'Continue');
     httpMock()
-      .expectOne(API + '/mfa/passkeys/options')
+      .expectOne(API + '/mfa/passkeys/grant')
       .flush(
         { code: 'mfa-needs-confirmed-email', msg: 'Please confirm your email before turning on two-step sign-in.' },
         { status: 400, statusText: 'Bad Request' }
@@ -169,24 +170,129 @@ describe('SignInSection', () => {
     expect(passkeys.register).not.toHaveBeenCalled();
   });
 
-  it('adds a passkey with a name: the password, then the browser makes it', async () => {
-    const fixture = await create(OFF);
+  /** Names the passkey and confirms with the password (two-step sign-in off): the grant arrives. */
+  const confirmForPasskey = async (fixture: ComponentFixture<unknown>, grant = 'grant-1') => {
     await press(fixture, 'Add a passkey');
     expect(document.activeElement?.id).toBe('confirm-name');
     await type(fixture, 'confirm-name', '  Laptop ');
     await type(fixture, 'confirm-password', 'my-password');
-    await press(fixture, 'Add a passkey');
+    await press(fixture, 'Continue');
+    const granted = httpMock().expectOne(API + '/mfa/passkeys/grant');
+    expect(granted.request.body).toEqual({ password: 'my-password' });
+    granted.flush({ grant, expiresAt: '2026-10-14T12:05:00Z' });
+    await settle(fixture);
+  };
+  /** Presses "Now add the passkey" and answers the options it asks for with the grant. */
+  const makePasskey = async (fixture: ComponentFixture<unknown>, grant = 'grant-1') => {
+    await press(fixture, 'Now add the passkey');
     const options = httpMock().expectOne(API + '/mfa/passkeys/options');
-    expect(options.request.body).toEqual({ password: 'my-password' });
+    expect(options.request.body).toEqual({ grant });
     options.flush({ options: { challenge: 'new' } });
     await settle(fixture);
+  };
+
+  it('adds a passkey with a name: the password, then a click of its own for the browser to make it', async () => {
+    const fixture = await create(OFF);
+    await confirmForPasskey(fixture);
+    // The browser's step waits for its own click; the focus is on that button.
+    expect(passkeys.register).not.toHaveBeenCalled();
+    expect(fixture.nativeElement.querySelector('.identity-confirm')).toBeNull();
+    expect(document.activeElement?.id).toBe('mfa-create-passkey');
+    expect(document.activeElement?.getAttribute('aria-describedby')).toBe('passkey-ready-text');
+    expect(text(fixture, '#passkey-ready-text')).toContain('Now make the passkey "Laptop"');
+    await makePasskey(fixture);
     expect(passkeys.register).toHaveBeenCalledWith({ challenge: 'new' });
     const add = httpMock().expectOne(API + '/mfa/passkeys');
-    expect(add.request.body).toEqual({ response: ATTESTATION, name: 'Laptop' });
+    expect(add.request.body).toEqual({ grant: 'grant-1', response: ATTESTATION, name: 'Laptop' });
     add.flush({ code: 'passkey-added', msg: 'The passkey was added.', recoveryCodes: CODES });
     await settle(fixture);
     await reload(fixture, { ...OFF, on: true, passkeys: [{ id: 'pk1', name: 'Laptop', addedAt: '2026-10-14' }] });
     expect(fixture.nativeElement.querySelectorAll('ol.recovery-codes li').length).toBe(2);
+    expect(fixture.nativeElement.querySelector('.passkey-ready')).toBeNull();
+  });
+
+  it('tries the browser step again without confirming again when it was cancelled or failed', async () => {
+    const fixture = await create(OFF);
+    await confirmForPasskey(fixture);
+    passkeys.register.mockRejectedValueOnce(Object.assign(new Error('closed'), { name: 'NotAllowedError' }));
+    await makePasskey(fixture);
+    expect(text(fixture, '.passkey-ready [role="alert"]')).toBe(
+      'The passkey was not used. Please try again when you are ready.'
+    );
+    httpMock().expectNone(API + '/mfa/passkeys');
+    // The server refuses the next one: said in the panel, which stays.
+    await makePasskey(fixture);
+    httpMock()
+      .expectOne(API + '/mfa/passkeys')
+      .flush(
+        { code: 'passkey-failed', msg: 'The passkey could not be checked.' },
+        { status: 400, statusText: 'Bad Request' }
+      );
+    await settle(fixture);
+    expect(text(fixture, '.passkey-ready [role="alert"]')).toBe('The passkey could not be checked.');
+    // The third works, with the same grant.
+    await makePasskey(fixture);
+    httpMock()
+      .expectOne(API + '/mfa/passkeys')
+      .flush({ code: 'passkey-added', msg: 'The passkey was added.', recoveryCodes: CODES });
+    await settle(fixture);
+    await reload(fixture, { ...OFF, on: true, passkeys: [{ id: 'pk1', name: 'Laptop', addedAt: '2026-10-14' }] });
+    httpMock().expectNone(API + '/mfa/passkeys/grant');
+    expect(passkeys.register).toHaveBeenCalledTimes(3);
+  });
+
+  it('asks to start again when the confirmation has run out', async () => {
+    const fixture = await create(OFF);
+    await confirmForPasskey(fixture);
+    await press(fixture, 'Now add the passkey');
+    httpMock()
+      .expectOne(API + '/mfa/passkeys/options')
+      .flush(
+        { code: 'mfa-start-again', msg: 'That took too long. Please start again.' },
+        { status: 400, statusText: 'Bad Request' }
+      );
+    await settle(fixture);
+    await reload(fixture, OFF);
+    expect(text(fixture, 'gc-notices')).toContain('That took too long. Please start again.');
+    expect(fixture.nativeElement.querySelector('.passkey-ready')).toBeNull();
+    expect(passkeys.register).not.toHaveBeenCalled();
+    expect(document.activeElement?.id).toBe('mfa-heading');
+  });
+
+  it('gives the focus back to "Add a passkey" when making it is cancelled', async () => {
+    const fixture = await create(OFF);
+    button(fixture, 'Add a passkey')!.focus();
+    await confirmForPasskey(fixture);
+    await press(fixture, 'Cancel');
+    expect(fixture.nativeElement.querySelector('.passkey-ready')).toBeNull();
+    expect(document.activeElement?.id).toBe('mfa-add-passkey');
+  });
+
+  it('with a passkey as the second step, asks for each passkey prompt with a click of its own', async () => {
+    const fixture = await create(ON);
+    await press(fixture, 'Add a passkey');
+    await press(fixture, 'Use a passkey instead');
+    await type(fixture, 'confirm-name', 'Phone');
+    await type(fixture, 'confirm-password', 'my-password');
+    await press(fixture, 'Continue');
+    httpMock()
+      .expectOne(API + '/mfa/confirm/options')
+      .flush({ options: { challenge: 'confirm' } });
+    await settle(fixture);
+    expect(passkeys.authenticate).toHaveBeenCalledTimes(1);
+    const granted = httpMock().expectOne(API + '/mfa/passkeys/grant');
+    expect(granted.request.body).toEqual({ password: 'my-password', passkey: ASSERTION });
+    granted.flush({ grant: 'grant-2', expiresAt: '2026-10-14T12:05:00Z' });
+    await settle(fixture);
+    // The first prompt used this click: the second waits for the next.
+    expect(passkeys.register).not.toHaveBeenCalled();
+    await makePasskey(fixture, 'grant-2');
+    expect(passkeys.register).toHaveBeenCalledTimes(1);
+    httpMock()
+      .expectOne(API + '/mfa/passkeys')
+      .flush({ code: 'passkey-added', msg: 'The passkey was added.' });
+    await settle(fixture);
+    await reload(fixture, ON);
   });
 
   it('asks for a second step as well as the password once it is on, and removes a passkey with them', async () => {

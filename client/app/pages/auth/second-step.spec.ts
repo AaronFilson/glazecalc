@@ -154,6 +154,28 @@ describe('SecondStep', () => {
     expect(signedIn).toHaveBeenCalled();
   });
 
+  it('answers the new challenge a failed passkey try brings, as each challenge works once', async () => {
+    const { fixture, signedIn } = await create(step({ totp: false, passkey: true }, true));
+    button(fixture, 'Use a passkey').click();
+    await settle(fixture);
+    httpMock()
+      .expectOne(API + '/signin/second-step')
+      .flush(
+        { code: 'passkey-failed', msg: 'The passkey could not be checked.', passkeyOptions: { challenge: 'next' } },
+        { status: 401, statusText: 'Unauthorized' }
+      );
+    await settle(fixture);
+    expect(text(fixture, '[role="alert"]')).toBe('The passkey could not be checked.');
+    button(fixture, 'Use a passkey').click();
+    await settle(fixture);
+    expect(passkeys.authenticate).toHaveBeenLastCalledWith({ challenge: 'next' });
+    httpMock()
+      .expectOne(API + '/signin/second-step')
+      .flush({ code: 'signed-in', msg: 'Signed in.', email: 'a@b.com', kept: 0 });
+    await settle(fixture);
+    expect(signedIn).toHaveBeenCalled();
+  });
+
   it('says so when the passkey prompt is closed, and sends nothing', async () => {
     const { fixture } = await create(step({ passkey: true }, true));
     passkeys.authenticate.mockRejectedValueOnce(Object.assign(new Error('closed'), { name: 'NotAllowedError' }));

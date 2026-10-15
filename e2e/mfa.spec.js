@@ -71,8 +71,9 @@ const signOut = async (request) => expect((await request.post(API + '/signout'))
 const enrolApp = async (request, password) => {
   const start = await request.post(API + '/mfa/totp/start', { data: { password } });
   expect(start.ok()).toBe(true);
-  const app = authenticatorApp((await start.json()).secret);
-  const added = await request.post(API + '/mfa/totp', { data: { code: await app.next() } });
+  const { secret, setupId } = await start.json();
+  const app = authenticatorApp(secret);
+  const added = await request.post(API + '/mfa/totp', { data: { setupId, code: await app.next() } });
   expect(added.ok()).toBe(true);
   return { app, recoveryCodes: (await added.json()).recoveryCodes };
 };
@@ -142,11 +143,11 @@ test.describe('two-step sign-in through the API', () => {
     // Set up: the password alone, as there is no factor yet.
     const start = await request.post(API + '/mfa/totp/start', { data: { password } });
     expect(start.ok()).toBe(true);
-    const { secret, uri, qr } = await start.json();
+    const { secret, uri, qr, setupId } = await start.json();
     expect(uri).toMatch(/^otpauth:\/\/totp\/Glazecalc:.+\?secret=[A-Z2-7]+.*&issuer=Glazecalc/);
     expect(qr).toMatch(/^data:image\/svg\+xml;base64,/);
     const app = authenticatorApp(secret);
-    const added = await request.post(API + '/mfa/totp', { data: { code: await app.next() } });
+    const added = await request.post(API + '/mfa/totp', { data: { setupId, code: await app.next() } });
     expect(added.ok()).toBe(true);
     const { recoveryCodes } = await added.json();
     expect(recoveryCodes).toHaveLength(10);
@@ -221,13 +222,17 @@ test.describe('two-step sign-in through the API', () => {
     await page.goto('/');
     const authenticator = await virtualAuthenticator(page);
 
-    // Add: the password alone, as there is no factor yet.
-    const options = await request.post(API + '/mfa/passkeys/options', { data: { password } });
+    // Add: the password alone, as there is no factor yet. It gives a grant
+    // that asks for the options and saves the passkey.
+    const granted = await request.post(API + '/mfa/passkeys/grant', { data: { password } });
+    expect(granted.ok()).toBe(true);
+    const { grant } = await granted.json();
+    const options = await request.post(API + '/mfa/passkeys/options', { data: { grant } });
     expect(options.ok()).toBe(true);
     const creation = (await options.json()).options;
     expect(creation.rp.id).toBe('localhost');
     const response = await createPasskey(page, creation);
-    const added = await request.post(API + '/mfa/passkeys', { data: { response, name: 'Test laptop' } });
+    const added = await request.post(API + '/mfa/passkeys', { data: { grant, response, name: 'Test laptop' } });
     expect(added.ok()).toBe(true);
     expect((await added.json()).recoveryCodes).toHaveLength(10);
     expect(await authenticator.credentials()).toHaveLength(1);
@@ -294,7 +299,7 @@ test.describe('two-step sign-in through the API', () => {
     const unconfirmed = await request.post(API + '/mfa/totp/start', { data: { password: 'password123' } });
     expect(unconfirmed.status()).toBe(400);
     expect((await unconfirmed.json()).code).toBe('mfa-needs-confirmed-email');
-    const passkey = await request.post(API + '/mfa/passkeys/options', { data: { password: 'password123' } });
+    const passkey = await request.post(API + '/mfa/passkeys/grant', { data: { password: 'password123' } });
     expect((await passkey.json()).code).toBe('mfa-needs-confirmed-email');
 
     await signOut(request);
@@ -377,7 +382,11 @@ test.describe('the pages', () => {
     await section(page).getByRole('button', { name: 'Add a passkey' }).click();
     await section(page).getByLabel('Name for the passkey').fill('Test laptop');
     await section(page).getByLabel('Your password').fill(password);
-    await section(page).getByRole('button', { name: 'Add a passkey' }).click();
+    await section(page).getByRole('button', { name: 'Continue' }).click();
+    // The browser makes the passkey with a click of its own.
+    const create = section(page).getByRole('button', { name: 'Now add the passkey' });
+    await expect(create).toBeFocused();
+    await create.click();
     // The first second step: recovery codes, once.
     await expect(section(page).getByRole('list', { name: 'Your recovery codes' }).getByRole('listitem')).toHaveCount(
       10
