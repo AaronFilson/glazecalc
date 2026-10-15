@@ -183,13 +183,27 @@ export const triesUsed = (pending: PendingSignIn): boolean => pending.attempts >
 /**
  * Lets go of a pending sign-in after a wrong try (the try stays counted).
  * `challenge`: a new passkey challenge for the next try, after a passkey try
- * took the old one.
+ * took the old one. `uncount`: the try is given back, for an authenticator
+ * code the account's lock refused unchecked or the wrong code that set the
+ * lock (server/routes/auth_routes.ts): from then on only a recovery code or a
+ * passkey can be checked, and neither can be guessed, so the sign-in keeps a
+ * try for one. Updates pending.attempts.
  */
-export const release = async (pending: PendingSignIn, hold: Hold, challenge?: string): Promise<void> => {
-  await PendingSignInModel.updateOne(
+export const release = async (
+  pending: PendingSignIn,
+  hold: Hold,
+  challenge?: string,
+  options: { uncount?: boolean } = {}
+): Promise<void> => {
+  const result = await PendingSignInModel.updateOne(
     { _id: pending._id, holdId: hold.id },
-    { $unset: { holdId: 1, heldUntil: 1 }, ...(challenge && { $set: { challenge } }) }
+    {
+      $unset: { holdId: 1, heldUntil: 1 },
+      ...(challenge && { $set: { challenge } }),
+      ...(options.uncount && { $inc: { attempts: -1 } })
+    }
   );
+  if (options.uncount && result.modifiedCount === 1) pending.attempts -= 1;
 };
 
 /**

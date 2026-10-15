@@ -404,6 +404,34 @@ describe('two-step sign-in end to end (real factors)', () => {
       expect(week).to.be.within(7 * DAY - 60 * 1000, 7 * DAY);
     });
 
+    it('takes a recovery code on the same sign-in as the last wrong code of a round, its fifth try', async () => {
+      const alice = await account();
+      const { secret, codes } = await enrolTotp(alice);
+      await wrongCodes(alice, secret, 5);
+      const pending = await pendingFor(alice);
+      const replies: Res[] = [];
+      for (let i = 0; i < 5; i++) replies.push(await secondStep(pending, { code: wrongCode(secret) }));
+      expect(replies.slice(0, 4).map((res) => res.status)).to.eql([401, 401, 401, 401]);
+      expect(replies[4]).to.have.status(429);
+      expect(replies[4]!.body).to.include({ code: 'second-step-account-limit' });
+      // Codes refused unchecked while it lasts do not use the sign-in's tries either.
+      for (let i = 0; i < 3; i++) {
+        expect(await secondStep(pending, { code: await codeNow(alice, secret) })).to.have.status(429);
+      }
+      const res = await secondStep(pending, { recoveryCode: codes[0] });
+      expect(res, JSON.stringify(res.body)).to.have.status(200);
+    });
+
+    it('still ends a sign-in after 5 tries that were checked, recovery codes included', async () => {
+      const alice = await account();
+      const { secret } = await enrolTotp(alice);
+      const pending = await pendingFor(alice);
+      for (let i = 0; i < 4; i++) expect(await secondStep(pending, { code: wrongCode(secret) })).to.have.status(401);
+      const fifth = await secondStep(pending, { recoveryCode: 'aaaaa-bbbbb' });
+      expect(fifth).to.have.status(401);
+      expect(fifth.body).to.include({ code: 'second-step-tries' });
+    });
+
     it('lets a passkey sign in while codes are refused', async () => {
       const alice = await account();
       const { secret } = await enrolTotp(alice);

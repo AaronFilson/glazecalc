@@ -173,12 +173,15 @@ authRouter.post(
     try {
       // A code from the authenticator app is counted against the account too,
       // before it is checked, and refused while a round's refusal lasts
-      // (server/lib/code_lock.ts). A recovery code or a passkey still works.
+      // (server/lib/code_lock.ts). A recovery code or a passkey still works,
+      // on this same pending sign-in: a refused code does not use one of its
+      // tries, nor does the wrong code that sets the refusal off, so it never
+      // ends with the message saying a recovery code works but no try left.
       let codeTry: codeLock.CodeTry | undefined;
       if (codeLock.isCodeTry(proof)) {
         const taken = await codeLock.take(user._id);
         if (!taken.ok) {
-          await secondStep.release(pending, hold);
+          await secondStep.release(pending, hold, undefined, { uncount: true });
           settled = true;
           if (taken.code === 'second-step-busy') return res.status(409).json(say(taken.code));
           return res.status(429).json(say(taken.code, taken.params));
@@ -191,7 +194,7 @@ authRouter.post(
       if (codeTry && check.ok) await codeLock.right(codeTry);
       if (!check.ok && codeTry?.locked) {
         // The last wrong code of a round: the owner hears that someone has the password.
-        await secondStep.release(pending, hold);
+        await secondStep.release(pending, hold, undefined, { uncount: true });
         settled = true;
         void secondStep.noticeUnfinished(user._id);
         return res.status(429).json(say('second-step-account-limit', codeTry.locked));
