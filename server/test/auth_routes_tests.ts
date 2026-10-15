@@ -2,6 +2,7 @@ import type { IncomingHttpHeaders } from 'node:http';
 import jwt from 'jsonwebtoken';
 import type { PasskeyRequestOptionsResponse, SecondStepResponse } from '../../lib/mfa.js';
 import appSecret from '../lib/app_secret.ts';
+import * as limits from '../lib/rate_limit.ts';
 import * as secondStep from '../lib/second_step.ts';
 import AuthChallenge from '../models/auth_challenge.ts';
 import PendingSignIn from '../models/pending_sign_in.ts';
@@ -13,6 +14,8 @@ const basic = (address: string, password: string) =>
   'Basic ' + Buffer.from(address + ':' + password).toString('base64');
 const signIn = (address: string, password: string) =>
   api().get('/signin').set('Authorization', basic(address, password));
+/** The address the tests' requests come from, as the rate limits key it. */
+const ADDRESS = '127.0.0.1';
 const verify = (token: string | null) =>
   api()
     .get('/verify')
@@ -237,6 +240,9 @@ describe('two-step sign-in', () => {
   };
   const cookies = (res: { headers: Record<string, unknown> }) =>
     ([] as unknown[]).concat(res.headers['set-cookie'] ?? []);
+  /** Empties this address's (and every test account's) second-step counts. */
+  const resetAddress = () =>
+    Promise.all([limits.secondStep.resetKey(ADDRESS), limits.secondStepUnloaded.resetKey(ADDRESS)]);
 
   describe('with two-step sign-in off', () => {
     it('signs in with the password alone, as before, and /verify does not say mfa', async () => {
@@ -519,6 +525,7 @@ describe('two-step sign-in', () => {
     });
 
     it('slows down tries at one account from any number of pending sign-ins', async () => {
+      await resetAddress();
       process.env.RATE_LIMITS = 'on';
       try {
         const { user } = await mfaUser();
@@ -534,7 +541,144 @@ describe('two-step sign-in', () => {
         expect(limited.body.code).to.eql('too-many-codes');
       } finally {
         process.env.RATE_LIMITS = 'off';
+        await resetAddress();
       }
+    });
+  });
+
+  // One address is often many people (a VPN or Tor exit, iCloud Private Relay,
+  // a phone network's or a school's NAT): what one of them does must not stop
+  // the others (server/lib/rate_limit.ts).
+  describe('limits at a shared address', () => {
+    /** A pending sign-in without the password step (no slow password check). */
+    const pendingFor = async (user: UserDocument) => (await secondStep.begin(user, { keep: false })).token;
+
+    beforeEach(async () => {
+      await resetAddress();
+      process.env.RATE_LIMITS = 'on';
+    });
+    afterEach(async () => {
+      process.env.RATE_LIMITS = 'off';
+      await resetAddress();
+    });
+
+    it('keeps junk pending tokens to a looser count of their own, which never stops a real second step', async () => {
+      const { user } = await mfaUser();
+      for (let i = 0; i < 100; i++) {
+        const res = await finish('junk-' + i, { code: '000000' });
+        expect(res, 'junk ' + i).to.have.status(401);
+        expect(res.body.code).to.eql('second-step-expired');
+      }
+      const limited = await finish('junk-100', { code: '000000' });
+      expect(limited).to.have.status(429);
+      expect(limited.body.code).to.eql('too-many-codes');
+      // Someone else at the address, with a real pending sign-in, is not stopped,
+      // and their wrong answers count from nothing.
+      for (let i = 0; i < 4; i++) expect(await finish(await pendingFor(user), { code: '000000' })).to.have.status(401);
+      expect(await finish(await pendingFor(user), { code: GOOD_CODE })).to.have.status(200);
+    });
+
+    it('counts wrong answers per address, but not finished sign-ins', async () => {
+      // More finished sign-ins than the 20 the address allows.
+      const { user } = await mfaUser();
+      for (let i = 0; i < 25; i++)
+        expect(await finish(await pendingFor(user), { code: GOOD_CODE })).to.have.status(200);
+      // Wrong answers at six accounts, so no account reaches its own limit of 10.
+      const users = await Promise.all([1, 2, 3, 4, 5, 6].map(async () => (await mfaUser()).user));
+      const statuses: number[] = [];
+      for (let i = 0; i < 21; i++) {
+        statuses.push((await finish(await pendingFor(users[i % 6]!), { code: '000000' })).status);
+      }
+      expect(statuses.slice(0, 20)).to.not.include(429);
+      expect(statuses[20]).to.eql(429);
+    });
+
+    it('counts only wrong answers per account, so the owner can still sign in', async () => {
+      const { user } = await mfaUser();
+      for (let i = 0; i < 12; i++)
+        expect(await finish(await pendingFor(user), { code: GOOD_CODE })).to.have.status(200);
+      const statuses: number[] = [];
+      for (let i = 0; i < 11; i++) statuses.push((await finish(await pendingFor(user), { code: '000000' })).status);
+      expect(statuses.slice(0, 10)).to.not.include(429);
+      expect(statuses[10]).to.eql(429);
+    });
+  });
+
+  // Someone who has the password but not the second step: the owner hears of
+  // it, at most once a day (server/lib/second_step.ts noticeUnfinished).
+  describe('the email when the password was right but the second step not finished', () => {
+    const SUBJECT = 'Someone entered your Glazecalc password but did not finish signing in';
+    const unfinished = (address: string) => mail.to(address).filter((m) => m.subject === SUBJECT);
+    const useUpTries = async (user: UserDocument) => {
+      const { token } = await secondStep.begin(user, { keep: false });
+      for (let i = 0; i < 5; i++) await finish(token, { code: '000000' });
+      expect((await finish(token, { code: GOOD_CODE })).body.code).to.eql('second-step-tries');
+    };
+
+    it('goes when a sign-in runs out of tries, once in 24 hours', async () => {
+      const { user, email } = await mfaUser();
+      await useUpTries(user);
+      const sent = await mail.waitFor(email, 1);
+      expect(sent.map((m) => m.subject)).to.eql([SUBJECT]);
+      expect(sent[0]!.text).to.include(email);
+      expect(sent[0]!.text).to.include('change it right away');
+      expect(sent[0]!.text).to.include('https://glazecalc.test/forgot');
+      // It names no address or place the tries came from.
+      expect(sent[0]!.text).to.not.match(/127\.0\.0\.1|::1|IP/);
+      const noted = (await User.findById(user._id).lean())!.mfa!.unfinishedNoticeAt!;
+      expect(Date.now() - noted.getTime()).to.be.below(60 * 1000);
+
+      await useUpTries(user);
+      await mail.settle();
+      expect(unfinished(email)).to.have.length(1);
+
+      // A day later, another.
+      await User.updateOne(
+        { _id: user._id },
+        { $set: { 'mfa.unfinishedNoticeAt': new Date(Date.now() - 25 * 60 * 60 * 1000) } }
+      );
+      await useUpTries(user);
+      expect((await mail.waitFor(email, 2)).filter((m) => m.subject === SUBJECT)).to.have.length(2);
+    });
+
+    it('sends one email for tries that run out at the same moment', async () => {
+      const { user, email } = await mfaUser();
+      await Promise.all([1, 2, 3].map(() => useUpTries(user)));
+      await mail.settle();
+      expect(unfinished(email)).to.have.length(1);
+    });
+
+    it('goes when the account reaches its limit of wrong answers', async () => {
+      await resetAddress();
+      process.env.RATE_LIMITS = 'on';
+      try {
+        const { user, email } = await mfaUser();
+        // Four wrong answers on each of three sign-ins: none runs out of tries.
+        const tokens = await Promise.all([1, 2, 3].map(() => secondStep.begin(user, { keep: false })));
+        for (let i = 0; i < 10; i++) await finish(tokens[Math.floor(i / 4)]!.token, { code: '000000' });
+        await mail.settle();
+        expect(unfinished(email)).to.have.length(0);
+        expect(await finish(tokens[2]!.token, { code: '000000' })).to.have.status(429);
+        expect((await mail.waitFor(email, 1)).map((m) => m.subject)).to.eql([SUBJECT]);
+      } finally {
+        process.env.RATE_LIMITS = 'off';
+        await resetAddress();
+      }
+    });
+
+    it('does not go to an address that is not confirmed, nor after a right answer', async () => {
+      const { user, email } = await mfaUser();
+      await User.updateOne({ _id: user._id }, { $set: { emailUnverified: true } });
+      await useUpTries(user);
+
+      const other = await mfaUser();
+      const { token } = await secondStep.begin(other.user, { keep: false });
+      for (let i = 0; i < 4; i++) await finish(token, { code: '000000' });
+      expect(await finish(token, { code: GOOD_CODE })).to.have.status(200);
+      await mail.settle();
+      expect(unfinished(email)).to.have.length(0);
+      expect(unfinished(other.email)).to.have.length(0);
+      expect((await User.findById(user._id).lean())!.mfa!.unfinishedNoticeAt).to.eql(undefined);
     });
   });
 
@@ -640,6 +784,54 @@ describe('two-step sign-in', () => {
         Cookie: 'glazecalc_session=' + trialToken
       });
       expect(res.body).to.include({ code: 'signed-in', kept: 1 });
+    });
+
+    describe('limits at a shared address', () => {
+      const signInLimits = [limits.signIn, limits.signInAny, limits.passkeySignIn, limits.passkeyOptions];
+      const reset = () => Promise.all(signInLimits.map((limit) => limit.resetKey(ADDRESS)));
+      beforeEach(async () => {
+        await reset();
+        process.env.RATE_LIMITS = 'on';
+      });
+      afterEach(async () => {
+        process.env.RATE_LIMITS = 'off';
+        await reset();
+      });
+
+      it('has a count of its own, so password guessing does not stop passkey sign-in', async () => {
+        const { email, credentialId } = await mfaUser({ passkey: true });
+        for (let i = 0; i < 20; i++) expect(await signIn(email, 'wrong-password')).to.have.status(401);
+        const guessing = await signIn(email, 'wrong-password');
+        expect(guessing).to.have.status(429);
+        expect(guessing.body.code).to.eql('too-many-sign-ins');
+        // More passkey sign-ins than the 20 refusals allowed: right ones do not count.
+        for (let i = 0; i < 22; i++) {
+          expect(
+            await passkeySignIn(assertion(credentialId, (await options()).challenge)),
+            'sign-in ' + i
+          ).to.have.status(200);
+        }
+        // Refused ones do.
+        for (let i = 0; i < 20; i++) {
+          expect(await passkeySignIn(assertion(credentialId, (await options()).challenge, 'bad'))).to.have.status(401);
+        }
+        const limited = await passkeySignIn(assertion(credentialId, (await options()).challenge));
+        expect(limited).to.have.status(429);
+        expect(limited.body.code).to.eql('too-many-sign-ins');
+      });
+
+      it('counts only refused passwords, whether the right one signs in or asks for the second step', async () => {
+        const plain = await makeUser();
+        const withMfa = await mfaUser();
+        for (let i = 0; i < 11; i++) {
+          expect((await signIn(plain.email, plain.password)).body.code).to.eql('signed-in');
+          expect((await signIn(withMfa.email, withMfa.password)).body.code).to.eql('second-step');
+        }
+        for (let i = 0; i < 20; i++) expect(await signIn(plain.email, 'wrong-password')).to.have.status(401);
+        expect(await signIn(plain.email, 'wrong-password')).to.have.status(429);
+        // Then even the right password waits, from this address.
+        expect(await signIn(plain.email, plain.password)).to.have.status(429);
+      });
     });
   });
 });

@@ -22,7 +22,9 @@
 // Limits: limits.changePassword per address and limits.passwordCheck per
 // account on every route that checks a password; limits.secondStep and
 // limits.secondStepAccount on POST /api/mfa/totp. The routes that only make or
-// answer a passkey challenge count against limits.secondStep.
+// answer a passkey challenge count against limits.secondStep. limits.secondStep
+// comes after jwtAuth, so only signed-in requests count against an address that
+// many people may share.
 //
 // Each change is one atomic update whose filter says what it expects (no
 // authenticator app yet, fewer than ten passkeys, the factor still there), so
@@ -207,7 +209,7 @@ mfaRouter.get('/', jwtAuth, notGuest, async (req, res) => {
 
 // A challenge for confirming a change with a passkey (decision 6): the
 // account's passkeys only, taken once by confirmIdentity.
-mfaRouter.post('/confirm/options', limits.secondStep, jwtAuth, notGuest, async (req, res) => {
+mfaRouter.post('/confirm/options', jwtAuth, notGuest, limits.secondStep, async (req, res) => {
   const user = await User.findById(userOf(req)._id, { mfa: 1 });
   const passkeys = user?.mfa?.passkeys ?? [];
   if (!user || !passkeys.length) return res.status(400).json(say('passkey-not-found'));
@@ -252,9 +254,9 @@ mfaRouter.post('/totp/start', ...proving, async (req, res) => {
 // identity was confirmed for part one, and the secret is tied to this account.
 mfaRouter.post(
   '/totp',
-  limits.secondStep,
   jwtAuth,
   notGuest,
+  limits.secondStep,
   limits.secondStepAccount,
   express.json(),
   async (req, res) => {
@@ -373,7 +375,7 @@ mfaRouter.post('/passkeys/options', ...proving, async (req, res) => {
 });
 
 // Part two: the browser's new passkey, checked against the challenge from part one.
-mfaRouter.post('/passkeys', limits.secondStep, jwtAuth, notGuest, express.json(), async (req, res) => {
+mfaRouter.post('/passkeys', jwtAuth, notGuest, limits.secondStep, express.json(), async (req, res) => {
   const userId = userOf(req)._id;
   const body = (req.body ?? {}) as { response?: unknown; name?: unknown };
   const name = nameOf(body.name);

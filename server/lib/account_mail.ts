@@ -690,6 +690,23 @@ export const RECOVERY_NEW: Record<string, Email> = {
 };
 
 /**
+ * Sent when someone entered the password but did not finish the second step:
+ * a sign-in ran out of tries, or the account's limit on wrong codes was
+ * reached (server/lib/second_step.ts noticeUnfinished), at most once a day.
+ * Like the other notices it says nothing of where the tries came from.
+ * {account}, {forgot} and {app}.
+ */
+export const SECOND_STEP_UNFINISHED: Record<string, Email> = {
+  en: {
+    subject: 'Someone entered your Glazecalc password but did not finish signing in',
+    text:
+      'Someone entered the right password for the Glazecalc account {account}, but did not finish the second step of signing in. Your second step kept them out.\n\n' +
+      'If this was you, there is nothing else to do. If not, someone knows your password: change it right away. You can reset it at {forgot}\n' +
+      '\n-- \nGlazecalc, {app}\n'
+  }
+};
+
+/**
  * Sent when two-step sign-in is turned off altogether (the last factor
  * removed, or the owner's clear_mfa.ts --clear): one email instead of one per
  * factor. {account}, {forgot} and {app}.
@@ -793,6 +810,15 @@ export const sendMfaOff = (to: string, language?: string): Promise<void> => {
   });
 };
 
+export const sendSecondStepUnfinished = (to: string, language?: string): Promise<void> => {
+  const email = inLanguage(SECOND_STEP_UNFINISHED, language);
+  return mailer.send({
+    to,
+    subject: email.subject,
+    text: fill(email.text, { account: to, forgot: pageIn(language, '/forgot'), app: mailer.appUrl() })
+  });
+};
+
 /**
  * The 7-day notice (server/clear_mfa.ts --notify): two-step sign-in goes off
  * on `offDate` unless the person writes to privacy@. Unlike noticeMfa it
@@ -822,7 +848,8 @@ export type MfaNotice =
   | { kind: 'removed'; method: MfaMethod }
   | { kind: 'mfa-off' }
   | { kind: 'recovery-used'; left: number }
-  | { kind: 'recovery-new' };
+  | { kind: 'recovery-new' }
+  | { kind: 'second-step-unfinished' };
 
 const sendNotice = (to: string, notice: MfaNotice, language?: string): Promise<void> => {
   switch (notice.kind) {
@@ -836,6 +863,8 @@ const sendNotice = (to: string, notice: MfaNotice, language?: string): Promise<v
       return sendRecoveryUsed(to, notice.left, language);
     case 'recovery-new':
       return sendRecoveryNew(to, language);
+    case 'second-step-unfinished':
+      return sendSecondStepUnfinished(to, language);
   }
 };
 

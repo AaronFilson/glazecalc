@@ -835,6 +835,28 @@ describe('two-step sign-in on the account page (/api/mfa)', () => {
       expect(statuses.slice(0, 10).every((status) => status === 400)).to.eql(true);
       expect(statuses[10]).to.eql(429);
     });
+
+    it('counts per address only requests from someone signed in', async () => {
+      // Junk from one person at a shared address (a VPN exit, a school's NAT)...
+      try {
+        for (const path of ['/confirm/options', '/totp', '/passkeys']) {
+          for (let i = 0; i < 10; i++) {
+            const res = await api()
+              .post('/mfa' + path)
+              .set('Authorization', 'Bearer not-a-token')
+              .send({});
+            expect(res, path).to.have.status(401);
+          }
+        }
+        // ...does not stop someone signed in there.
+        const alice = await account();
+        const res = await call(alice, 'post', '/confirm/options');
+        expect(res.body.code).to.eql('passkey-not-found');
+        expect(res).to.have.status(400);
+      } finally {
+        await limits.secondStep.resetKey('127.0.0.1');
+      }
+    });
   });
 });
 
