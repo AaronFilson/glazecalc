@@ -32,6 +32,7 @@ import { notGuest } from '../lib/guest_limits.ts';
 import basicHTTP from '../lib/basic_http.ts';
 import * as email from '../lib/email.ts';
 import jwtAuth, { currentUser, userOf } from '../lib/jwt_auth.ts';
+import * as log from '../lib/log.ts';
 import { isDuplicateKey } from '../lib/mongo_errors.ts';
 import * as password from '../lib/password.ts';
 import * as limits from '../lib/rate_limit.ts';
@@ -166,36 +167,52 @@ authRouter.post(
     const reserved = await secondStep.reserve(pending, { passkey: passkeyTry });
     if (!reserved.ok) return res.status(reserved.code === 'second-step-busy' ? 409 : 401).json(say(reserved.code));
     const { hold } = reserved;
-    let check: Awaited<ReturnType<typeof secondStep.checks.checkFactor>>;
+    // Whatever happens below, the hold is let go (or ended by finish): a
+    // thrown error must not leave the pending sign-in held for HOLD_SECONDS
+    // with its passkey challenge gone.
+    let settled = false;
     try {
-      check = await secondStep.checks.checkFactor(user, proof, {
+      const check = await secondStep.checks.checkFactor(user, proof, {
         ...(hold.challenge && { passkeyChallenge: hold.challenge })
       });
+      if (!check.ok) {
+        // The last try used up: the password again, and the owner hears that
+        // someone has it (at most once a day).
+        if (secondStep.triesUsed(pending)) {
+          await secondStep.release(pending, hold);
+          settled = true;
+          void secondStep.noticeUnfinished(user._id);
+          return res.status(401).json(say('second-step-tries'));
+        }
+        // A passkey try took the challenge: the next try answers a new one.
+        const passkeyOptions =
+          passkeyTry && user.mfa?.passkeys?.length
+            ? await secondStep.checks.authenticationOptions(user.mfa.passkeys, 'preferred')
+            : undefined;
+        await secondStep.release(pending, hold, passkeyOptions?.challenge);
+        settled = true;
+        return res
+          .status(check.code === 'factor-needed' || check.code === 'code-needed' ? 400 : 401)
+          .json(say(check.code, undefined, passkeyOptions ? { passkeyOptions } : {}));
+      }
+      const finished = await secondStep.finish(pending, hold);
+      settled = true;
+      if (!finished) return res.status(401).json(say('second-step-expired'));
+    } finally {
+      if (!settled) {
+        await secondStep.release(pending, hold).catch((err: unknown) => {
+          log.error('Could not let go of a pending sign-in', { code: log.codeOf(err) });
+        });
+      }
+    }
+    // The pending sign-in is used: a failure from here on needs the password again.
+    try {
+      await secondStep.cancelClearRequest(user._id);
+      return await signedIn(res, user, pending.trialId, pending.keep);
     } catch (err) {
-      await secondStep.release(pending, hold);
+      log.error('A second step was right, but the sign-in could not be finished', { code: log.codeOf(err) });
       throw err;
     }
-    if (!check.ok) {
-      // The last try used up: the password again, and the owner hears that
-      // someone has it (at most once a day).
-      if (secondStep.triesUsed(pending)) {
-        await secondStep.release(pending, hold);
-        void secondStep.noticeUnfinished(user._id);
-        return res.status(401).json(say('second-step-tries'));
-      }
-      // A passkey try took the challenge: the next try answers a new one.
-      const passkeyOptions =
-        passkeyTry && user.mfa?.passkeys?.length
-          ? await secondStep.checks.authenticationOptions(user.mfa.passkeys, 'preferred')
-          : undefined;
-      await secondStep.release(pending, hold, passkeyOptions?.challenge);
-      return res
-        .status(check.code === 'factor-needed' || check.code === 'code-needed' ? 400 : 401)
-        .json(say(check.code, undefined, passkeyOptions ? { passkeyOptions } : {}));
-    }
-    if (!(await secondStep.finish(pending, hold))) return res.status(401).json(say('second-step-expired'));
-    await secondStep.cancelClearRequest(user._id);
-    return signedIn(res, user, pending.trialId, pending.keep);
   }
 );
 
