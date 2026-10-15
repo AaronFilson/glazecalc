@@ -17,10 +17,18 @@ services:
     # The image tag is required: there is no "latest" staging build.
     image: ghcr.io/aaronfilson/glazecalc:${GLAZECALC_STAGING_TAG:?Set GLAZECALC_STAGING_TAG (staging.sh does)}
     restart: unless-stopped
-    # Room for one more Node process on a 1 GB instance; the swap file absorbs
-    # peaks. Above this the container is stopped and restarted, never
-    # production's app or MongoDB.
+    # Small enough to leave running between test rounds on a 1 GB instance.
+    # Node's heap is capped (NODE_OPTIONS below): about 30 MB is in use at rest,
+    # under 90 MB at the peak of a load of every page, 8 at a time (2026-10-15;
+    # it failed at 48 MB). The whole process is about 120 to 220 MB. While idle
+    # the kernel may move it to the swap file, which leaves the memory to
+    # production. Above mem_limit the container is stopped and restarted; were
+    # the instance out of memory, the kernel would stop this app before
+    # production's app or MongoDB (oom_score_adj). Half a processor at most, so
+    # it cannot spend the instance's CPU credits.
     mem_limit: 300m
+    oom_score_adj: 500
+    cpus: 0.5
     # APP_SECRET, MONGODB_URI (user and database glazecalc_staging), MFA_KEY,
     # MAIL_ALLOWLIST and the email settings, written by staging.sh from
     # /glazecalc/staging/* in SSM Parameter Store (root-only file). Never
@@ -29,6 +37,7 @@ services:
     environment:
       NODE_ENV: production
       PORT: 3000
+      NODE_OPTIONS: --max-old-space-size=96
       # server/lib/site.ts: passkeys belong to this host and never appear on
       # production; authenticator apps say "Glazecalc (staging)"; every page has
       # a "Staging" banner and every mail subject says so; no search engine

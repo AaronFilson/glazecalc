@@ -28,7 +28,7 @@ import {
   withoutSlash,
   type PageText
 } from './lib/pages.ts';
-import { loadPrerendered } from './lib/prerendered.ts';
+import { readPrerendered } from './lib/prerendered.ts';
 import languages from '../lib/regions/languages.js';
 
 const app = express();
@@ -104,9 +104,8 @@ app.use('/api', api);
 // Angular's hashed output: main-ABC12345.js, chunk-B5MvkF-K.js, styles-74GVMONM.css.
 const HASHED = /^(main|polyfills|styles|chunk)-[A-Za-z0-9_-]{8,}\.(js|css)$/;
 const CLIENT = path.join(import.meta.dirname, '..', 'dist', 'glazecalc', 'browser');
-// The public pages as the build rendered them (npm run build), read when first asked for.
+// The public pages as the build rendered them (npm run build), read for each reply.
 const PRERENDERED = path.join(import.meta.dirname, '..', 'dist', 'glazecalc', 'prerendered');
-let prerendered: Promise<Map<string, string>> | undefined;
 const missing = new Set<string>();
 
 /** The request's query string, with its ?, or ''. */
@@ -187,13 +186,7 @@ app.use(async (req, res, next) => {
   if (bare) return res.redirect(301, bare + queryOf(req));
   // A public page in a language offered is sent as it was rendered, if it was.
   const key = prerenderedKey(req.path);
-  let html: string | undefined;
-  if (key) {
-    const pages = await (prerendered ??= loadPrerendered(PRERENDERED));
-    // Nothing yet (no build): look again next time rather than keep nothing.
-    if (!pages.size) prerendered = undefined;
-    html = pages.get(key);
-  }
+  let html = key ? await readPrerendered(PRERENDERED, key) : undefined;
   const rendered = html !== undefined;
   if (key && !rendered && !missing.has(key)) {
     // Once for each page: the page still works from index.html, only slower to show.

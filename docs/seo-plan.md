@@ -95,7 +95,7 @@ This is what Angular's own SSR package does. It is not a crazy idea; it is the u
    - Effort S. Files: `client/index.html`, `client/main.ts`, `client/styles.scss`.
 
 7. **The server sends the prerendered page.**
-   - On start, `server/app.ts` reads `dist/glazecalc/prerendered/**` into memory (264 files, a few MB at most).
+   - `server/app.ts` reads the page's file from `dist/glazecalc/prerendered/**` for each reply. (It first kept them all in memory: about 100 MB of heap by 2026-10, not the few MB expected, so now the kernel's file cache keeps them.)
    - For a `GET` of a public page in a live language, it uses that file in place of `index.html`. Every other address (signed-in pages, `/signin`, unlaunched languages, 404s) keeps today's `index.html`.
    - `pageHtml()` still writes the canonical address, hreflang, `noindex` and `og:url`. It no longer overwrites the title and description when the file already has the page's own.
    - **CSP nonce:** the prerender renders with `CSP_NONCE` set to a fixed placeholder (`__GC_NONCE__`). The server replaces each occurrence with the reply's nonce, as it now replaces `<gc-root>`. Angular puts the nonce on its inline `<style>` tags too, so they pass `style-src 'nonce-…'`.

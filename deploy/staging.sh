@@ -8,7 +8,7 @@
 #   /opt/glazecalc/staging.sh s3://<bucket>/staging-images/staging-<sha>.tar.gz
 #                                             an image from build-staging.sh --to-s3
 #   /opt/glazecalc/staging.sh status          what runs, its health, the instance's memory
-#   /opt/glazecalc/staging.sh stop            stops staging between test rounds (frees its memory)
+#   /opt/glazecalc/staging.sh stop            stops staging (it can also stay running between rounds)
 #   /opt/glazecalc/staging.sh reset-db        empties the staging database, after a typed confirmation
 #
 # <sha> is the full 40-character commit. A failed start puts back the staging
@@ -305,4 +305,4 @@ docker image ls --format '{{.Repository}}:{{.Tag}}' "$image" \
 
 echo "Staged $tag (previous: ${previous:-none}): https://staging.glazecalcapp.com"
 echo "Health: $(healthy)"
-echo "Stop it after the round: $0 stop"
+echo "It can stay running between rounds; to stop it: $0 stop"

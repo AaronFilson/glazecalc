@@ -154,9 +154,10 @@ malformed**, as it does for `/glazecalc/mongo-password`. The app refuses to star
 without it.
 
 **Create it once, before deploying the release with two-step sign-in** (from a machine with the
-operator profile; one line):
+operator profile):
 
 ```bash
+export MSYS_NO_PATHCONV=1   # Git Bash only: else it turns /glazecalc/... into C:/Program Files/Git/glazecalc/...
 aws ssm put-parameter --region us-west-2 --name /glazecalc/mfa-key --type SecureString --value "$(openssl rand -base64 32)"
 ```
 
@@ -219,17 +220,23 @@ reach an existing instance when `enable-https.sh` is run again (logrotate) or by
 
 ## MongoDB sign-in
 
-MongoDB runs with `--auth` on the Compose network, with one user, `glazecalc`, who can read
+MongoDB runs with `--auth` on the Compose network. The app's user, `glazecalc`, can read
 and write the `glazecalc` database and nothing else. Its password is the SSM parameter
 `/glazecalc/mongo-password`; `deploy.sh` puts it in `/opt/glazecalc/app.env` (the app's connection
 string) and `/opt/glazecalc/mongo.env` (read by the MongoDB container), both readable by root only. MongoDB's
 port is not published, so only the app container can reach it. A new instance gets the user
 by itself, when MongoDB first starts on an empty data directory (`configs` in `compose.prod.yaml`).
+An administrator, `glazecalc_admin` (role `userAdminAnyDatabase`: it makes and changes users, so
+a new user needs no downtime), is for use by hand only. Its password is the SSM parameter
+`/glazecalc/mongo-admin-password`, in no file on the instance; it was added with staging's user
+(Staging, step 4). A user admin can grant itself any role, so treat it as MongoDB's root. To use it:
+`docker exec -it "$(docker compose -f compose.prod.yaml ps -q mongo)" mongosh -u glazecalc_admin --authenticationDatabase admin`
+(it asks for the password). A new instance's empty data directory gets only the app's user.
 Local development and the tests use the root `compose.yaml` and a local MongoDB, both without sign-in.
 To use sign-in there, put the user in `MONGODB_URI` (see `.env.example`).
 
 `backup.sh` signs in as the same user (`mongodump` and `mongorestore` need only its read and write rights).
-If you ever lock yourself out, stop the stack, start `mongod` once by hand without `--auth` on the
+If you ever lock yourself out (the administrator's password lost too), stop the stack, start `mongod` once by hand without `--auth` on the
 volume, and fix the user from there.
 
 ### Moving the live server to sign-in (once)
@@ -388,7 +395,8 @@ operator profile (copper-bell). The instance role already reads `/glazecalc/*`
    IP=$(aws route53 list-resource-record-sets --hosted-zone-id "$ZONE" \
      --query "ResourceRecordSets[?Name=='glazecalcapp.com.' && Type=='A'].ResourceRecords[0].Value" --output text)
    echo "$ZONE $IP"   # expect /hostedzone/Z383KEIS9CPHD5 44.229.21.212
-   cat > staging-dns.json <<EOF
+   # One command (&&): the record is sent only once the file is written, and the file removed after.
+   cat > staging-dns.json <<EOF &&
    {
      "Comment": "Staging copy of glazecalc on the production instance (deploy/README.md, Staging)",
      "Changes": [
@@ -404,7 +412,8 @@ operator profile (copper-bell). The instance role already reads `/glazecalc/*`
      ]
    }
    EOF
-   aws route53 change-resource-record-sets --hosted-zone-id "$ZONE" --change-batch file://staging-dns.json
+   aws route53 change-resource-record-sets --hosted-zone-id "$ZONE" --change-batch file://staging-dns.json &&
+     rm staging-dns.json
    ```
 
    **The parameters** (same machine). New secrets, never production's. Unlike production's key,
@@ -412,6 +421,7 @@ operator profile (copper-bell). The instance role already reads `/glazecalc/*`
    addresses (or `@domain`s) staging may mail, separated by commas.
 
    ```bash
+   export MSYS_NO_PATHCONV=1   # Git Bash only: else it turns /glazecalc/... into C:/Program Files/Git/glazecalc/...
    aws ssm put-parameter --region us-west-2 --name /glazecalc/staging/app-secret --type SecureString \
      --value "$(openssl rand -base64 48)"
    aws ssm put-parameter --region us-west-2 --name /glazecalc/staging/mfa-key --type SecureString \
@@ -420,6 +430,13 @@ operator profile (copper-bell). The instance role already reads `/glazecalc/*`
      --value "$(openssl rand -hex 32)"
    aws ssm put-parameter --region us-west-2 --name /glazecalc/staging/mail-allowlist --type SecureString \
      --value 'you@example.com,you@example.org'
+   ```
+
+   And production MongoDB's administrator (MongoDB sign-in), made with staging's user in step 4:
+
+   ```bash
+   aws ssm put-parameter --region us-west-2 --name /glazecalc/mongo-admin-password --type SecureString \
+     --value "$(openssl rand -hex 32)"
    ```
 
 3. **The files.** `staging.sh` and `compose.staging.yaml` are not installed by `deploy.sh` or
@@ -436,43 +453,58 @@ operator profile (copper-bell). The instance role already reads `/glazecalc/*`
    chmod 750 staging.sh
    ```
 
-4. **The database user.** Production's MongoDB has no administrator, only the app's user, so the
-   new user is made with MongoDB started once without sign-in, cut off from every network.
-   **Production is down for about a minute**: do it at a quiet time. Data is not changed.
+4. **The database users.** Production's MongoDB had no administrator, only the app's user, so
+   staging's user and the administrator (`glazecalc_admin`, MongoDB sign-in) are made with MongoDB
+   started once without sign-in, cut off from every network. **Production is down for about a
+   minute**: do it at a quiet time. Data is not changed. Later users need no downtime: the
+   administrator makes them.
 
    ```bash
    cd /opt/glazecalc
    ./backup.sh                                      # a fresh dump first; check it reached S3
    pw=$(aws ssm get-parameter --region us-west-2 --name /glazecalc/staging/mongo-password --with-decryption \
      --query Parameter.Value --output text)
+   admin_pw=$(aws ssm get-parameter --region us-west-2 --name /glazecalc/mongo-admin-password --with-decryption \
+     --query Parameter.Value --output text)
+   [ -n "$pw" ] && [ -n "$admin_pw" ] && echo "both passwords read"   # stop here if this prints nothing
    mongo_image=$(docker inspect -f '{{.Image}}' "$(docker compose -f compose.prod.yaml ps -q mongo)")
    docker compose -f compose.prod.yaml stop app mongo        # production is down from here
    docker run -d --name glazecalc-mongo-admin --network none \
      -v glazecalc_mongo-data:/data/db -v glazecalc_mongo-config:/data/configdb \
      "$mongo_image" mongod --wiredTigerCacheSizeGB 0.25 --slowms 2147483647
    until docker exec glazecalc-mongo-admin mongosh --quiet --eval "db.adminCommand('ping').ok" >/dev/null 2>&1; do sleep 2; done
-   PW=$pw docker exec -e PW glazecalc-mongo-admin mongosh --quiet --eval "
+   PW=$pw ADMIN_PW=$admin_pw docker exec -e PW -e ADMIN_PW glazecalc-mongo-admin mongosh --quiet --eval "
      db.getSiblingDB('glazecalc_staging').createUser({
        user: 'glazecalc_staging',
        pwd: process.env.PW,
        roles: [{ role: 'readWrite', db: 'glazecalc_staging' }]
+     });
+     db.getSiblingDB('admin').createUser({
+       user: 'glazecalc_admin',
+       pwd: process.env.ADMIN_PW,
+       roles: [{ role: 'userAdminAnyDatabase', db: 'admin' }]
      })"
    docker stop glazecalc-mongo-admin && docker rm glazecalc-mongo-admin
    docker compose -f compose.prod.yaml start mongo app      # production is back
    curl -fsS http://127.0.0.1:3000/api/health
    ```
 
-   Check that the user signs in and has that one role (`[ { role: 'readWrite', db: 'glazecalc_staging' } ]`):
+   Check that each user signs in and has its one role (`[ { role: 'readWrite', db: 'glazecalc_staging' } ]`,
+   then `[ { role: 'userAdminAnyDatabase', db: 'admin' } ]`):
 
    ```bash
    PW=$pw docker exec -e PW "$(docker compose -f compose.prod.yaml ps -q mongo)" mongosh --quiet \
      mongodb://localhost/glazecalc_staging --eval "
      db.auth('glazecalc_staging', process.env.PW);
      printjson(db.runCommand({ connectionStatus: 1 }).authInfo.authenticatedUserRoles)"
-   unset pw
+   PW=$admin_pw docker exec -e PW "$(docker compose -f compose.prod.yaml ps -q mongo)" mongosh --quiet \
+     mongodb://localhost/admin --eval "
+     db.auth('glazecalc_admin', process.env.PW);
+     printjson(db.runCommand({ connectionStatus: 1 }).authInfo.authenticatedUserRoles)"
+   unset pw admin_pw
    ```
 
-   If `createUser` fails, run the `docker stop`, `docker rm` and `start` lines anyway: production
+   If a `createUser` fails, run the `docker stop`, `docker rm` and `start` lines anyway: production
    comes back as it was.
 
    **The network staging uses to reach MongoDB, until the merge.** Staging joins `glazecalc_data`,
@@ -580,11 +612,9 @@ operator profile (copper-bell). The instance role already reads `/glazecalc/*`
 
 4. **Repeat** from 1 with the next commit.
 
-5. **Stop** when the round is over, to give production its memory back:
-
-   ```bash
-   /opt/glazecalc/staging.sh stop
-   ```
+5. **Leave it running** between rounds, or stop it (`staging.sh stop`), as you like. It is capped
+   small (below), and while nobody uses it the kernel moves its memory to swap, so production gets
+   the memory back either way. Check with `staging.sh status`.
 
 Also:
 
@@ -598,7 +628,9 @@ Also:
 
 Things to know:
 
-- **Memory.** Staging is limited to 300 MB, and `staging.sh` loads the standard data in a second,
+- **Memory.** Staging's Node heap is capped at 96 MB (`NODE_OPTIONS`; about 30 MB in use at
+  rest) and the container at 300 MB and half a processor; if the instance ever runs out, the
+  kernel stops staging first (`oom_score_adj`). `staging.sh` loads the standard data in a second,
   short-lived container. If production slows while staging runs, stop staging; if it is often
   tight, move to a t4g.small (aws/README.md, "Defaults").
 - **One MongoDB.** Staging's queries share production's `mongod` and its 0.25 GB cache. A heavy
