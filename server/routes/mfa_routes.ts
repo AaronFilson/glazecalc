@@ -472,7 +472,12 @@ mfaRouter.post('/passkeys', jwtAuth, notGuest, limits.mfaChallenges, express.jso
   try {
     added = await addFactor(
       userId,
-      { ['mfa.passkeys.' + (PASSKEY_LIMIT - 1)]: { $exists: false }, ...version },
+      // The unique index stops a passkey on two accounts, not twice in one account's list.
+      {
+        ['mfa.passkeys.' + (PASSKEY_LIMIT - 1)]: { $exists: false },
+        'mfa.passkeys.credentialId': { $ne: passkey.credentialId },
+        ...version
+      },
       { $push: { 'mfa.passkeys': { ...passkey, _id: new mongoose.Types.ObjectId(), name, addedAt: now } } }
     );
   } catch (err) {
@@ -482,9 +487,13 @@ mfaRouter.post('/passkeys', jwtAuth, notGuest, limits.mfaChallenges, express.jso
     throw err;
   }
   if (!added) {
-    // The account changed how it signs in meanwhile: confirm again. Otherwise it is full.
+    // The account changed how it signs in meanwhile: confirm again. Otherwise
+    // this passkey is already on it (another tab saved it first), or it is full.
     if (!(await User.exists({ _id: userId, ...version }))) return res.status(400).json(say('mfa-start-again'));
     await changeGrant.giveBack(grant);
+    if (await User.exists({ _id: userId, 'mfa.passkeys.credentialId': passkey.credentialId })) {
+      return res.status(400).json(say('passkey-failed'));
+    }
     return res.status(400).json(tooMany());
   }
 

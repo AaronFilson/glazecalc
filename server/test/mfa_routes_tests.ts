@@ -716,6 +716,23 @@ describe('two-step sign-in on the account page (/api/mfa)', () => {
       expect(own.body.code).to.eql('passkey-added');
     });
 
+    it('refuses a passkey that is already on this account (the unique index allows that)', async () => {
+      const alice = await account();
+      const { authenticator } = await addPasskey(alice);
+      const proof = await passkeyProof(alice, authenticator);
+      const { grant, options } = await passkeyStart(alice, proof);
+      // A browser leaves out the excluded passkeys; a page could still send one.
+      const res = await call(alice, 'post', '/passkeys', {
+        grant,
+        response: authenticator.register(options),
+        name: 'Again'
+      });
+      expect(res).to.have.status(400);
+      expect(res.body.code).to.eql('passkey-failed');
+      const stored = (await fresh(alice.user._id))!.mfa!.passkeys;
+      expect(stored.map((passkey) => passkey.name)).to.eql(['Laptop']);
+    });
+
     describe('confirmed once (the grant)', () => {
       it('uses one recovery code however often the browser step is tried', async () => {
         const alice = await account();
