@@ -8,7 +8,8 @@
 // A new account's address is confirmed with the link sent at sign-up. Until
 // then the account works as any other, but the app sends mail to the address
 // only on request: a password reset, or this link. The address of an account
-// changes only when the link sent to the new one is opened; that signs out
+// changes only when the link sent to the new one is opened, and only while the
+// account's tokenVersion is what it was when the link was asked for; that signs out
 // every device (the user's tokenVersion goes up) and ends open reset links,
 // and a notice goes to the old address when the change is asked for. The
 // account keeps when its address last changed (emailChangedAt), since
@@ -16,6 +17,7 @@
 // it: { msg, field: 'email' }.
 import express from 'express';
 import * as accountMail from '../lib/account_mail.ts';
+import { versionIs } from '../lib/change_grant.ts';
 import * as email from '../lib/email.ts';
 import * as emailLinks from '../lib/email_links.ts';
 import { notGuest } from '../lib/guest_limits.ts';
@@ -53,12 +55,17 @@ emailRouter.post(
     if (!email.isValid(address)) return res.status(400).json(say('email-required', undefined, { field: 'email' }));
     const user = await User.findById(userOf(req)._id);
     if (!user) return res.status(404).json(say('no-user'));
-    // With two-step sign-in on, the password and a current factor (decision 6),
-    // checked last, so a factor is never used on a change refused anyway.
+    // The password first, so a stolen session without it learns nothing, not
+    // even whether an address has an account. Then whether the address is free
+    // and the link limit, and only then, with two-step sign-in on, a current
+    // factor (decision 6), so a factor is never used on a change refused
+    // anyway. (confirmChange checks the password again, with the codes the
+    // other confirmations use.)
     const twoStep = mfaOn(user);
-    // 400 rather than 401: the user is signed in, and a 401 would sign them out.
-    if (!twoStep && !(await password.matches(body.password, user.password))) {
-      return res.status(400).json(say('current-password-needed', undefined, { field: 'password' }));
+    if (!(await password.matches(body.password, user.password))) {
+      const code = twoStep && body.password ? 'current-password-wrong' : 'current-password-needed';
+      // 400 rather than 401: the user is signed in, and a 401 would sign them out.
+      return res.status(400).json(say(code, undefined, { field: 'password' }));
     }
     // No more than sign-up says about an address: whether an account has it.
     // Checked again when the link is opened.
@@ -103,16 +110,26 @@ emailRouter.post('/confirm', limits.confirmEmail, express.json(), async (req, re
     return res.status(200).json(say('email-verified'));
   }
 
+  // The link holds the account's tokenVersion when it was asked for: a change
+  // since (a password change or reset, signing out everywhere, two-step sign-in
+  // turned on or a factor changed) ends it, so an older link cannot move the
+  // address past a step the account now asks for. Asking for the link raises nothing.
+  const version = link.tokenVersion;
+  if (typeof version !== 'number' || version !== (user.tokenVersion || 0)) {
+    return res.status(400).json(say('email-link-bad'));
+  }
   try {
-    // Signs out every device, and ends links sent to the old address.
-    await User.updateOne(
-      { _id: user._id },
+    // Signs out every device, and ends links sent to the old address. The
+    // filter says the tokenVersion again, for a change at the same moment.
+    const changed = await User.updateOne(
+      { _id: user._id, ...versionIs(version) },
       {
         $set: { email: link.email, ...(link.email !== user.email && { emailChangedAt: now }) },
         $unset: { emailUnverified: 1 },
         $inc: { tokenVersion: 1 }
       }
     );
+    if (!changed.matchedCount) return res.status(400).json(say('email-link-bad'));
   } catch (err) {
     // The unique index catches someone taking the address since the link was sent.
     if (isDuplicateKey(err)) return res.status(400).json(inUse());

@@ -224,6 +224,48 @@ describe('changing the email', () => {
     expect(await EmailToken.countDocuments({ userId: user._id })).to.eql(0);
   });
 
+  it('ends once the account signs out everywhere or changes its password', async () => {
+    const { user, token, email: old } = await makeUser();
+    const first = uniqueEmail('before-sign-out');
+    await change(token, first);
+    const firstLink = mail.linkTokenIn((await mail.waitFor(first, 1))[0]!);
+    expect(await api().post('/signout-everywhere').set(auth(token))).to.have.status(200);
+    const refused = await confirm(firstLink);
+    expect(refused).to.have.status(400);
+    expect(refused.body.code).to.eql('email-link-bad');
+
+    const fresh = (await User.findById(user._id))!.generateToken();
+    const second = uniqueEmail('before-password');
+    expect(await change(fresh, second)).to.have.status(200);
+    const secondLink = mail.linkTokenIn((await mail.waitFor(second, 1))[0]!);
+    const changed = await api()
+      .put('/password')
+      .set(auth(fresh))
+      .send({ current: 'password123', password: 'a-new-password' });
+    expect(changed).to.have.status(200);
+    expect(await confirm(secondLink)).to.have.status(400);
+    expect((await User.findById(user._id))!.email).to.eql(old);
+  });
+
+  it('refuses a change link that holds no tokenVersion (one sent before links held it)', async () => {
+    const { user, token, email: old } = await makeUser();
+    const address = uniqueEmail('old-link');
+    await change(token, address);
+    const link = mail.linkTokenIn((await mail.waitFor(address, 1))[0]!);
+    await EmailToken.updateMany({ userId: user._id }, { $unset: { tokenVersion: 1 } });
+    expect((await confirm(link)).body.code).to.eql('email-link-bad');
+    expect((await User.findById(user._id))!.email).to.eql(old);
+  });
+
+  it('does not raise the tokenVersion by asking, so the link still works', async () => {
+    const { user, token } = await makeUser();
+    const address = uniqueEmail('kept');
+    await change(token, address);
+    expect((await User.findById(user._id))!.tokenVersion).to.eql(0);
+    expect((await EmailToken.findOne({ userId: user._id, kind: 'change' }))!.tokenVersion).to.eql(0);
+    expect(await verify(token)).to.have.status(200);
+  });
+
   it('refuses an address taken before its link is opened', async () => {
     const { user, token } = await makeUser();
     const address = uniqueEmail('raced');
