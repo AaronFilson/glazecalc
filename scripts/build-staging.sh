@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 # Builds a staging image of any commit on the owner's PC, for deploy/staging.sh
 # on the instance (docs/mfa-plan.md, "Phase 2"; deploy/README.md, "Staging").
-# Git Bash with Docker Desktop on Windows, or any bash with Docker and buildx.
+# Git Bash with Docker Desktop on Windows, or Docker Engine in WSL (with arm64
+# emulation: deploy/README.md, Staging, step 7), or any bash with Docker and buildx.
 # Production images still come only from CI (.github/workflows/publish.yml).
 #
 #   scripts/build-staging.sh <git-ref>                  build and push ghcr.io/aaronfilson/glazecalc:staging-<sha>

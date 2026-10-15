@@ -475,6 +475,27 @@ operator profile (copper-bell). The instance role already reads `/glazecalc/*`
    If `createUser` fails, run the `docker stop`, `docker rm` and `start` lines anyway: production
    comes back as it was.
 
+   **The network staging uses to reach MongoDB, until the merge.** Staging joins `glazecalc_data`,
+   which `compose.prod.yaml` makes once two-step sign-in is merged and deployed. Until then
+   production runs master's Compose file, without it, so make it by hand, with the labels Compose
+   gives its own networks: the first production deploy with the merged file then takes it over as
+   is, with staging running (checked with stand-in containers on Docker 29 and Compose 5.6). No
+   downtime: MongoDB joins the network while it runs.
+
+   ```bash
+   docker network create --internal \
+     --label com.docker.compose.project=glazecalc --label com.docker.compose.network=data \
+     glazecalc_data
+   docker network connect --alias mongo glazecalc_data "$(docker compose -f compose.prod.yaml ps -q mongo)"
+   docker network inspect -f '{{.Internal}} {{range .Containers}}{{.Name}} {{end}}' glazecalc_data
+   # expect: true glazecalc-mongo-1
+   ```
+
+   A production deploy that makes a new MongoDB container (master's file names MongoDB's image by
+   digest, so only when that changes) leaves the new one off the network: staging then cannot reach
+   its database, and the `docker network connect` line above puts it back. After the merge,
+   production's deploys keep it on the network themselves.
+
 5. **Certificate and nginx.** `enable-https.sh --with-staging` adds the name to the certificate
    (certbot `--expand`, checked against DNS first) and turns on `nginx/glazecalc-staging.conf`.
    Until the branch is merged, the instance's `enable-https.sh` (master's) does not know the flag,
@@ -494,8 +515,17 @@ operator profile (copper-bell). The instance role already reads `/glazecalc/*`
 6. **Check:** `curl -sI https://staging.glazecalcapp.com/` answers 503 with `x-robots-tag`, and
    `sudo certbot certificates` lists the three names.
 
-7. **GHCR on the PC**, once per token: make a classic personal access token with only the
-   `write:packages` scope and a short expiry (GitHub → Settings → Developer settings), then in Git Bash:
+7. **Docker on the PC.** The image is built where Docker runs: Docker Engine in WSL (`wsl -d Debian`),
+   or Docker Desktop with Git Bash. The instance is arm64, so Docker needs arm64 emulation for the
+   image's small runtime stages; Docker Desktop has it, Docker Engine in WSL gets it with one
+   command, again after each WSL restart (`docker buildx inspect default` then lists `linux/arm64`):
+
+   ```bash
+   docker run --privileged --rm tonistiigi/binfmt --install arm64
+   ```
+
+   **GHCR**, once per token: make a classic personal access token with only the `write:packages`
+   scope and a short expiry (GitHub → Settings → Developer settings), then where Docker runs:
 
    ```bash
    docker login ghcr.io -u AaronFilson     # paste the token as the password
@@ -521,12 +551,18 @@ operator profile (copper-bell). The instance role already reads `/glazecalc/*`
 
 ### A test round
 
-1. **Build and publish** on the PC, from the repository in Git Bash with Docker Desktop running.
-   Any branch or commit; uncommitted changes are never included. It prints the next command.
+1. **Build and publish** on the PC, from the repository where Docker runs (step 7). Any branch or
+   commit that has been committed; uncommitted changes are never included. It prints the next
+   command. In WSL, from the repository's folder (`cd /mnt/c/Users/<you>/gh/glazecalc`):
 
    ```bash
    scripts/build-staging.sh mfa                    # or: --to-s3 glazecalc-backups-724654236968
    ```
+
+   `--to-s3` needs the AWS CLI where it runs (WSL has none until it is installed there). Until the
+   branch is merged, master's checkout has no `scripts/build-staging.sh`: run the branch's copy
+   (`git show mfa:scripts/build-staging.sh > /tmp/build-staging.sh && bash /tmp/build-staging.sh mfa`),
+   which builds the branch from a clean checkout of it whichever branch is checked out.
 
 2. **Deploy** in Session Manager (`sudo -i`), with the tag it printed:
 
