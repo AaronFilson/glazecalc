@@ -50,6 +50,11 @@ describe('recovery codes', () => {
     expect(recoveryCodes.normalize('ab-cd-e1-23-45')).to.eql('ABCDE12345');
     // Crockford: I and L are 1, O is 0.
     expect(recoveryCodes.normalize('iLoab-cdefg')).to.eql('110ABCDEFG');
+    // From a Chinese or Japanese input method: full-width letters, digits, dash and space.
+    expect(recoveryCodes.normalize('ａｂｃｄｅ－１２３４５')).to.eql('ABCDE12345');
+    expect(recoveryCodes.normalize('ＡＢＣＤＥ　１２３４５')).to.eql('ABCDE12345');
+    expect(recoveryCodes.normalize('abcdeー12345')).to.eql('ABCDE12345');
+    expect(recoveryCodes.normalize('abcde–12345')).to.eql('ABCDE12345');
   });
 
   it('refuses what cannot be a code', () => {

@@ -239,6 +239,10 @@ export class AuthPage {
   /** Whether to offer signing in with a passkey: on the sign-in form, in a browser that has them. */
   protected readonly passkeysShown = signal(false);
   private left = false;
+  /** Counts autofill requests: a newer one, or a passkey request that takes its place, leaves an older one stale. */
+  private autofillRun = 0;
+  /** Whether the latest autofill request is still starting or waiting for a passkey to be picked. */
+  private autofillWaiting = false;
 
   constructor() {
     // Only in the browser, after the first render: the page is the same as the server would draw it until then.
@@ -256,6 +260,7 @@ export class AuthPage {
   protected async submit(): Promise<void> {
     if (this.busy() || !this.checks.validate()) return;
     this.busy.set(true);
+    let failed = false;
     try {
       if (this.signup()) {
         await this.auth.signUp(this.email(), this.password(), this.keep());
@@ -271,6 +276,7 @@ export class AuthPage {
       }
       await this.router.navigateByUrl('/home');
     } catch (err) {
+      failed = true;
       // A problem with one field shows on it; others, such as a wrong password at sign-in, above the form.
       if (this.checks.reportServer(err)) return;
       this.notices.error(
@@ -281,6 +287,7 @@ export class AuthPage {
       );
     } finally {
       this.busy.set(false);
+      if (failed) this.resumeAutofill();
     }
   }
 
@@ -297,7 +304,7 @@ export class AuthPage {
     afterNextRender(
       () => {
         this.passwordField()?.nativeElement.focus();
-        if (this.passkeysShown()) void this.startAutofill();
+        this.resumeAutofill();
       },
       { injector: this.injector }
     );
@@ -307,15 +314,19 @@ export class AuthPage {
   protected async passkeySignIn(): Promise<void> {
     if (this.busy()) return;
     this.busy.set(true);
+    let failed = false;
     try {
       const options = await this.auth.passkeySignInOptions();
       // This takes the place of the autofill request, which the library stops.
+      this.autofillRun++;
+      this.autofillWaiting = false;
       await this.passkeySignedIn(await this.passkeys.authenticate(options));
     } catch (err) {
+      failed = true;
       this.notices.error(passkeyMessage(err, translate('account.auth.signInFailed')));
-      void this.startAutofill();
     } finally {
       this.busy.set(false);
+      if (failed) this.resumeAutofill();
     }
   }
 
@@ -324,24 +335,46 @@ export class AuthPage {
    * suggestions, where the browser can. It waits quietly in the background
    * until one is picked, and stops when the page is left or another passkey
    * request takes its place.
+   *
+   * It does not start while the password or "Sign in with a passkey" is under
+   * way: the library stops the request before it, so it would close that
+   * prompt. It starts again when they fail (resumeAutofill).
    */
   private async startAutofill(): Promise<void> {
+    const run = ++this.autofillRun;
+    const current = () => run === this.autofillRun && !this.left && !this.secondStep();
+    this.autofillWaiting = true;
     let response: AuthenticationResponseJSON;
     try {
-      if (!(await this.passkeys.autofillSupported()) || this.left || this.secondStep()) return;
+      if (!(await this.passkeys.autofillSupported()) || !current() || this.busy()) return;
       const options = await this.auth.passkeySignInOptions();
-      if (this.left || this.secondStep()) return;
+      if (!current() || this.busy()) return;
       response = await this.passkeys.authenticate(options, true);
     } catch {
       // Not offered (no options, an old browser), stopped, or turned down: the button is still there.
       return;
+    } finally {
+      if (run === this.autofillRun) this.autofillWaiting = false;
     }
+    // A passkey picked just as the password went off: the password goes on, and this waits for another try.
+    if (this.busy()) return;
+    // The password form waits while the passkey is sent.
+    this.busy.set(true);
+    let failed = false;
     try {
       await this.passkeySignedIn(response);
     } catch (err) {
+      failed = true;
       this.notices.error(passkeyMessage(err, translate('account.auth.signInFailed')));
-      void this.startAutofill();
+    } finally {
+      this.busy.set(false);
+      if (failed) this.resumeAutofill();
     }
+  }
+
+  /** Starts the autofill request again after something else stopped it, or kept it from starting. */
+  private resumeAutofill(): void {
+    if (this.passkeysShown() && !this.autofillWaiting && !this.left && !this.secondStep()) void this.startAutofill();
   }
 
   private async passkeySignedIn(response: AuthenticationResponseJSON): Promise<void> {

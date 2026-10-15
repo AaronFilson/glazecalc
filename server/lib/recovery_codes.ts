@@ -35,14 +35,17 @@ export const make = (): { codes: string[]; stored: RecoveryCode[] } => {
 };
 
 /**
- * A code as typed, made comparable: Crockford's rules (I and L read as 1, O as
- * 0, case ignored), spaces and dashes removed. Null when it cannot be a code.
+ * A code as typed, made comparable: NFKC first (full-width letters and digits
+ * from an input method become plain ones), then Crockford's rules (I and L
+ * read as 1, O as 0, case ignored), spaces and dashes (with − and ー, which
+ * input methods give for "-") removed. Null when it cannot be a code.
  */
 export const normalize = (typed: string): string | null => {
   if (typeof typed !== 'string' || typed.length > 40) return null;
   const code = typed
+    .normalize('NFKC')
     .toUpperCase()
-    .replace(/[\s\p{Pd}]/gu, '')
+    .replace(/[\s\p{Pd}−ー]/gu, '')
     .replace(/[IL]/g, '1')
     .replace(/O/g, '0');
   if (code.length !== LENGTH) return null;

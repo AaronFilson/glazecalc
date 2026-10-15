@@ -46,10 +46,22 @@ describe('TOTP (RFC 6238)', () => {
     const now = 59 * 1000;
     expect(totp.matchingStep(RFC_SECRET, '287 082', now)).to.eql(1);
     expect(totp.matchingStep(RFC_SECRET, ' 287082 ', now)).to.eql(1);
-    for (const bad of ['', '28708', '2870822', '94287082', 'abcdef', '28708a', '287-082', '٢٨٧٠٨٢']) {
+    for (const bad of ['', '28708', '2870822', '94287082', 'abcdef', '28708a', '287_082', '٢٨٧٠٨٢', '1'.repeat(41)]) {
       expect(totp.matchingStep(RFC_SECRET, bad, now), bad).to.eql(null);
     }
     expect(totp.matchingStep(RFC_SECRET, 287082 as unknown as string, now)).to.eql(null);
+  });
+
+  it('takes a code typed with a dash, or in full-width digits from a Chinese or Japanese input method', () => {
+    const now = 59 * 1000;
+    // Hyphen-minus, hyphen, en dash, full-width hyphen-minus, minus sign, the long-vowel mark.
+    for (const typed of ['287-082', '287‐082', '287–082', '287－082', '287−082', '287ー082']) {
+      expect(totp.matchingStep(RFC_SECRET, typed, now), typed).to.eql(1);
+    }
+    // Full-width digits, with a full-width (ideographic) space or none.
+    expect(totp.matchingStep(RFC_SECRET, '２８７０８２', now)).to.eql(1);
+    expect(totp.matchingStep(RFC_SECRET, '２８７　０８２', now)).to.eql(1);
+    expect(totp.matchingStep(RFC_SECRET, '２８７０８Ａ', now)).to.eql(null);
   });
 
   it('refuses a code made with another secret', () => {
