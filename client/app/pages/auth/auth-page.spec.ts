@@ -369,6 +369,88 @@ describe('AuthPage two-step sign-in', () => {
     expect(passkeys.cancel).toHaveBeenCalled();
   });
 
+  it('does not let the autofill request close the prompt of "Sign in with a passkey", and starts it again after', async () => {
+    const passkeys = fakePasskeys(true);
+    passkeys.authenticate
+      .mockRejectedValueOnce(Object.assign(new Error('closed'), { name: 'NotAllowedError' }))
+      .mockImplementationOnce(() => new Promise(() => {}));
+    const { fixture } = await create('signin', passkeys);
+    // The button is clicked while the autofill request still waits for its options (a slow connection).
+    button(fixture, 'Sign in with a passkey')!.click();
+    await settle(fixture);
+    const [autofill, modal] = httpMock().match(API + '/signin/passkey/options');
+    autofill!.flush({ options: { challenge: 'auto' } });
+    await settle(fixture);
+    expect(passkeys.authenticate).not.toHaveBeenCalled();
+    modal!.flush({ options: { challenge: 'abc' } });
+    await settle(fixture);
+    expect(passkeys.authenticate).toHaveBeenCalledTimes(1);
+    expect(passkeys.authenticate).toHaveBeenCalledWith({ challenge: 'abc' });
+    expect(text(fixture, '.errors-section')).toContain('The passkey was not used');
+    // The prompt was closed: the autofill request starts again.
+    httpMock()
+      .expectOne(API + '/signin/passkey/options')
+      .flush({ options: { challenge: 'auto2' } });
+    await settle(fixture);
+    expect(passkeys.authenticate).toHaveBeenLastCalledWith({ challenge: 'auto2' }, true);
+  });
+
+  it('holds the password form while a passkey picked from the suggestions is sent', async () => {
+    const passkeys = fakePasskeys(true);
+    passkeys.authenticate.mockResolvedValueOnce(PASSKEY_RESPONSE).mockImplementationOnce(() => new Promise(() => {}));
+    const { fixture, page, navigate } = await create('signin', passkeys);
+    httpMock()
+      .expectOne(API + '/signin/passkey/options')
+      .flush({ options: { challenge: 'auto' } });
+    await settle(fixture);
+    const sending = httpMock().expectOne(API + '/signin/passkey');
+    expect(page['busy']()).toBe(true);
+    page['email'].set('a@b.com');
+    page['password'].set('password123');
+    await page['submit']();
+    httpMock().expectNone(API + '/signin');
+    sending.flush(
+      { code: 'passkey-unknown', msg: 'This passkey does not belong to any Glazecalc account.' },
+      { status: 401, statusText: 'Unauthorized' }
+    );
+    await settle(fixture);
+    expect(page['busy']()).toBe(false);
+    expect(navigate).not.toHaveBeenCalled();
+    expect(text(fixture, '.errors-section')).toContain('This passkey does not belong to any Glazecalc account.');
+    // And the suggestions are offered again.
+    httpMock()
+      .expectOne(API + '/signin/passkey/options')
+      .flush({ options: { challenge: 'auto2' } });
+    await settle(fixture);
+    expect(passkeys.authenticate).toHaveBeenLastCalledWith({ challenge: 'auto2' }, true);
+  });
+
+  it('offers the suggestions again after a wrong password', async () => {
+    const passkeys = fakePasskeys(true);
+    passkeys.authenticate.mockImplementation(() => new Promise(() => {}));
+    const { fixture, page } = await create('signin', passkeys);
+    page['email'].set('a@b.com');
+    page['password'].set('wrong-password');
+    // The password goes off before the autofill request has its options: it waits.
+    const submitting = page['submit']();
+    httpMock()
+      .expectOne(API + '/signin/passkey/options')
+      .flush({ options: { challenge: 'auto' } });
+    await settle(fixture);
+    expect(passkeys.authenticate).not.toHaveBeenCalled();
+    httpMock()
+      .expectOne(API + '/signin')
+      .flush({ code: 'signin-failed', msg: 'Wrong email or password.' }, { status: 401, statusText: 'Unauthorized' });
+    await submitting;
+    await settle(fixture);
+    httpMock()
+      .expectOne(API + '/signin/passkey/options')
+      .flush({ options: { challenge: 'auto2' } });
+    await settle(fixture);
+    expect(passkeys.authenticate).toHaveBeenCalledTimes(1);
+    expect(passkeys.authenticate).toHaveBeenCalledWith({ challenge: 'auto2' }, true);
+  });
+
   it('keeps the sign-up form as it was: no passkey sign-in, a plain username field', async () => {
     const passkeys = fakePasskeys(true);
     const { fixture } = await create('signup', passkeys);
