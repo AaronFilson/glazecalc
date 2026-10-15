@@ -1,10 +1,13 @@
 import { DatePipe } from '../../shared/format-pipes';
-import { Component, inject, signal } from '@angular/core';
+import { Component, Injector, afterNextRender, computed, inject, signal } from '@angular/core';
+import { NgTemplateOutlet } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Router, RouterLink } from '@angular/router';
 import { TranslocoDirective, translate } from '@jsverse/transloco';
+import type { FactorProof, IdentityProof, MfaSummary } from '../../../../lib/mfa';
 import { AuthService } from '../../core/auth.service';
 import { errorMessage } from '../../core/error-message';
+import { IdentityConfirm } from '../auth/identity-confirm';
 import { ExportSection } from './export-section';
 import { FieldCheck, FieldChecks, emailAddress, filled, newPassword, samePassword } from '../../shared/field-checks';
 import { Notices, NoticesList } from '../../shared/notices';
@@ -12,10 +15,16 @@ import { PageHeader } from '../../shared/page-header';
 import { SettingsSection } from './settings-section';
 import { SignInSection } from './sign-in-section';
 
+/** A change on this page that, with two-step sign-in on, asks for a second step too (decision 6). */
+type Confirming = 'password' | 'email' | 'delete';
+
 /**
  * The signed-in user's account: settings, changing the password, two-step
  * sign-in, or deleting the account. A trial has settings too, but no password, so it is offered an
- * account instead.
+ * account instead. While two-step sign-in is on (the two-step section says so
+ * when it loads), changing the password or the email and deleting the account
+ * ask for the password and a second step in IdentityConfirm, in place of the
+ * password field, once the rest of the form is filled in.
  */
 @Component({
   selector: 'gc-account-page',
@@ -24,6 +33,8 @@ import { SignInSection } from './sign-in-section';
     ExportSection,
     FieldCheck,
     FormsModule,
+    IdentityConfirm,
+    NgTemplateOutlet,
     NoticesList,
     PageHeader,
     RouterLink,
@@ -67,20 +78,22 @@ import { SignInSection } from './sign-in-section';
       <section class="auth-text">
         <h2>{{ t('account.account.changeHeading') }}</h2>
         <form (ngSubmit)="submit()" class="account-form">
-          <div class="mb-3">
-            <label for="current" class="form-label">{{ t('account.account.current') }}</label>
-            <input
-              id="current"
-              type="password"
-              name="current"
-              class="form-control"
-              required
-              autocomplete="current-password"
-              [(ngModel)]="current"
-              [gcField]="changeChecks"
-              gcFieldName="current"
-            />
-          </div>
+          @if (!twoStep()) {
+            <div class="mb-3">
+              <label for="current" class="form-label">{{ t('account.account.current') }}</label>
+              <input
+                id="current"
+                type="password"
+                name="current"
+                class="form-control"
+                required
+                autocomplete="current-password"
+                [(ngModel)]="current"
+                [gcField]="changeChecks"
+                gcFieldName="current"
+              />
+            </div>
+          }
           <div class="mb-3">
             <label for="password" class="form-label">{{ t('account.account.password') }}</label>
             <input
@@ -111,13 +124,18 @@ import { SignInSection } from './sign-in-section';
               gcFieldName="confirmation"
             />
           </div>
-          <button type="submit" class="btn btn-primary" [attr.aria-disabled]="busy() || null">
-            {{ t('account.account.change') }}
-          </button>
+          @if (confirming() !== 'password') {
+            <button id="password-submit" type="submit" class="btn btn-primary" [attr.aria-disabled]="busy() || null">
+              {{ twoStep() ? t('account.mfa.continue') : t('account.account.change') }}
+            </button>
+          }
         </form>
+        @if (confirming() === 'password') {
+          <ng-container [ngTemplateOutlet]="confirmStep" />
+        }
       </section>
 
-      <gc-sign-in-section />
+      <gc-sign-in-section (loaded)="mfaLoaded($event)" />
 
       <section class="auth-text">
         <h2>{{ t('account.account.emailHeading') }}</h2>
@@ -137,24 +155,31 @@ import { SignInSection } from './sign-in-section';
               gcFieldName="newEmail"
             />
           </div>
-          <div class="mb-3">
-            <label for="email-password" class="form-label">{{ t('account.account.emailPassword') }}</label>
-            <input
-              id="email-password"
-              type="password"
-              name="emailPassword"
-              class="form-control"
-              required
-              autocomplete="current-password"
-              [(ngModel)]="emailPassword"
-              [gcField]="emailChecks"
-              gcFieldName="emailPassword"
-            />
-          </div>
-          <button type="submit" class="btn btn-primary" [attr.aria-disabled]="busy() || null">
-            {{ t('account.account.emailSend') }}
-          </button>
+          @if (!twoStep()) {
+            <div class="mb-3">
+              <label for="email-password" class="form-label">{{ t('account.account.emailPassword') }}</label>
+              <input
+                id="email-password"
+                type="password"
+                name="emailPassword"
+                class="form-control"
+                required
+                autocomplete="current-password"
+                [(ngModel)]="emailPassword"
+                [gcField]="emailChecks"
+                gcFieldName="emailPassword"
+              />
+            </div>
+          }
+          @if (confirming() !== 'email') {
+            <button id="email-submit" type="submit" class="btn btn-primary" [attr.aria-disabled]="busy() || null">
+              {{ twoStep() ? t('account.mfa.continue') : t('account.account.emailSend') }}
+            </button>
+          }
         </form>
+        @if (confirming() === 'email') {
+          <ng-container [ngTemplateOutlet]="confirmStep" />
+        }
       </section>
 
       <section class="auth-text">
@@ -174,26 +199,55 @@ import { SignInSection } from './sign-in-section';
         <h2>{{ t('account.account.deleteHeading') }}</h2>
         <p>{{ t('account.account.deleteText') }}</p>
         <form (ngSubmit)="deleteAccount()" class="account-form">
-          <div class="mb-3">
-            <label for="delete-password" class="form-label">{{ t('account.account.deletePassword') }}</label>
-            <input
-              id="delete-password"
-              type="password"
-              name="deletePassword"
-              class="form-control"
-              required
-              autocomplete="current-password"
-              [(ngModel)]="deletePassword"
-              [gcField]="deleteChecks"
-              gcFieldName="deletePassword"
-            />
-          </div>
-          <button type="submit" class="btn btn-outline-danger" [attr.aria-disabled]="busy() || null">
-            {{ t('account.account.delete') }}
-          </button>
+          @if (!twoStep()) {
+            <div class="mb-3">
+              <label for="delete-password" class="form-label">{{ t('account.account.deletePassword') }}</label>
+              <input
+                id="delete-password"
+                type="password"
+                name="deletePassword"
+                class="form-control"
+                required
+                autocomplete="current-password"
+                [(ngModel)]="deletePassword"
+                [gcField]="deleteChecks"
+                gcFieldName="deletePassword"
+              />
+            </div>
+          }
+          @if (confirming() !== 'delete') {
+            <button
+              id="delete-submit"
+              type="submit"
+              class="btn btn-outline-danger"
+              [attr.aria-disabled]="busy() || null"
+            >
+              {{ t('account.account.delete') }}
+            </button>
+          }
         </form>
+        @if (confirming() === 'delete') {
+          <ng-container [ngTemplateOutlet]="confirmStep" />
+        }
       </section>
     }
+
+    <ng-template #confirmStep>
+      @if (confirming(); as which) {
+        <div class="account-form confirm-step">
+          <p>{{ t('account.account.confirmStep') }}</p>
+          <gc-identity-confirm
+            [idPrefix]="which + '-confirm'"
+            [mfaOn]="true"
+            [hasTotp]="!!mfa()?.totp"
+            [hasPasskeys]="!!mfa()?.passkeys?.length"
+            [action]="confirmAction()"
+            [run]="runConfirmed"
+            (cancelled)="closeConfirm(true)"
+          />
+        </div>
+      }
+    </ng-template>
   </ng-container>`,
   styles: `
     .account-form {
@@ -204,24 +258,79 @@ import { SignInSection } from './sign-in-section';
 export class AccountPage {
   protected readonly auth = inject(AuthService);
   private readonly router = inject(Router);
+  private readonly injector = inject(Injector);
+
+  /** The two-step sign-in section's summary, once it has loaded. */
+  protected readonly mfa = signal<MfaSummary | null>(null);
+  protected readonly twoStep = computed(() => this.mfa()?.on ?? false);
+  /** The change waiting for its second step, if any. */
+  protected readonly confirming = signal<Confirming | null>(null);
+  protected readonly confirmAction = computed(() => {
+    switch (this.confirming()) {
+      case 'password':
+        return translate('account.account.change');
+      case 'email':
+        return translate('account.account.emailSend');
+      default:
+        return translate('account.account.delete');
+    }
+  });
+
+  protected mfaLoaded(summary: MfaSummary): void {
+    this.mfa.set(summary);
+    if (!summary.on) this.confirming.set(null);
+  }
+
+  /** Closes the second step; a cancelled one gives the focus back to the button that opened it. */
+  protected closeConfirm(cancelled = false): void {
+    const which = this.confirming();
+    this.confirming.set(null);
+    if (cancelled && which) {
+      afterNextRender(() => document.getElementById(which + '-submit')?.focus(), { injector: this.injector });
+    }
+  }
+
+  /**
+   * Makes the change waiting for its second step once IdentityConfirm has the
+   * proof. A problem with this page's own fields (the new password, the new
+   * address) closes the step and is shown on the field; anything else is
+   * thrown back for IdentityConfirm to show.
+   */
+  protected readonly runConfirmed = async (proof: IdentityProof): Promise<void> => {
+    const { password, ...factor } = proof;
+    switch (this.confirming()) {
+      case 'password':
+        return this.changePassword(password, factor as FactorProof);
+      case 'email':
+        return this.sendEmailLink(password, factor as FactorProof);
+      case 'delete':
+        await this.auth.deleteAccount(password, factor as FactorProof);
+        await this.router.navigateByUrl('/');
+        return;
+    }
+  };
 
   protected readonly notices = new Notices();
   protected readonly current = signal('');
   protected readonly password = signal('');
   protected readonly confirmation = signal('');
   protected readonly deletePassword = signal('');
+  // With two-step sign-in on, IdentityConfirm asks for the password instead.
   protected readonly changeChecks = new FieldChecks(() => ({
-    current: filled(this.current, translate('account.account.currentMissing')),
+    ...(!this.twoStep() && { current: filled(this.current, translate('account.account.currentMissing')) }),
     password: newPassword(this.password),
     confirmation: samePassword(this.confirmation, this.password)
   }));
   protected readonly deleteChecks = new FieldChecks(() => ({
-    deletePassword: filled(this.deletePassword, translate('account.account.deletePasswordMissing'))
+    ...(!this.twoStep() && {
+      deletePassword: filled(this.deletePassword, translate('account.account.deletePasswordMissing'))
+    })
   }));
   protected readonly busy = signal(false);
 
   protected async submit(): Promise<void> {
     if (this.busy() || !this.changeChecks.validate()) return;
+    if (this.twoStep()) return this.confirming.set('password');
     this.busy.set(true);
     try {
       this.notices.success(await this.auth.changePassword(this.current(), this.password()));
@@ -236,8 +345,25 @@ export class AccountPage {
     }
   }
 
+  /** The password change with a second step, from runConfirmed. */
+  private async changePassword(current: string, factor: FactorProof): Promise<void> {
+    if (!this.changeChecks.validate()) return this.closeConfirm();
+    try {
+      const message = await this.auth.changePassword(current, this.password(), factor);
+      this.closeConfirm();
+      this.notices.success(message);
+      this.password.set('');
+      this.confirmation.set('');
+    } catch (err) {
+      // The new password (field "password"); the current one, "current", is IdentityConfirm's.
+      if (!this.changeChecks.reportServer(err)) throw err;
+      this.closeConfirm();
+    }
+  }
+
   protected async deleteAccount(): Promise<void> {
     if (this.busy() || !this.deleteChecks.validate()) return;
+    if (this.twoStep()) return this.confirming.set('delete');
     this.busy.set(true);
     try {
       await this.auth.deleteAccount(this.deletePassword());
@@ -257,11 +383,12 @@ export class AccountPage {
   protected readonly emailPassword = signal('');
   protected readonly emailChecks = new FieldChecks(() => ({
     newEmail: emailAddress(this.newEmail),
-    emailPassword: filled(this.emailPassword, translate('account.account.currentMissing'))
+    ...(!this.twoStep() && { emailPassword: filled(this.emailPassword, translate('account.account.currentMissing')) })
   }));
 
   protected async changeEmail(): Promise<void> {
     if (this.busy() || !this.emailChecks.validate()) return;
+    if (this.twoStep()) return this.confirming.set('email');
     this.busy.set(true);
     try {
       this.notices.success(await this.auth.changeEmail(this.newEmail(), this.emailPassword()));
@@ -274,6 +401,21 @@ export class AccountPage {
       this.notices.error(errorMessage(err, translate('account.account.emailFailed')));
     } finally {
       this.busy.set(false);
+    }
+  }
+
+  /** The email change with a second step, from runConfirmed. */
+  private async sendEmailLink(password: string, factor: FactorProof): Promise<void> {
+    if (!this.emailChecks.validate()) return this.closeConfirm();
+    try {
+      const message = await this.auth.changeEmail(this.newEmail(), password, factor);
+      this.closeConfirm();
+      this.notices.success(message);
+      this.newEmail.set('');
+    } catch (err) {
+      // The new address (field "email"); the password is IdentityConfirm's.
+      if (!this.emailChecks.reportServer(err, { email: 'newEmail' })) throw err;
+      this.closeConfirm();
     }
   }
 

@@ -427,6 +427,32 @@ test.describe('the pages', () => {
     await authenticator.remove();
   });
 
+  test('changes the email with the password and a code once two-step sign-in is on', async ({ page }) => {
+    // Codes are taken once per 30-second step, so this may wait for the clock.
+    test.setTimeout(120000);
+    const { password } = await confirmedAccount(page.request);
+    const { app } = await enrolApp(page.request, password);
+    const moved = uniqueEmail('mfa-moved');
+    // The password alone is not enough now (decision 6).
+    const alone = await page.request.post(API + '/email/change', { data: { email: moved, password } });
+    expect(alone.status()).toBe(400);
+    expect((await alone.json()).code).toBe('factor-needed');
+
+    await page.addInitScript(() => globalThis.localStorage.setItem('session', 'account'));
+    await page.goto('/account');
+    await expect(section(page).locator('.mfa-status')).toContainText('Two-step sign-in is on.');
+    // The form asks for the new address only; the password comes with the second step.
+    await expect(page.locator('#email-password')).toHaveCount(0);
+    await page.locator('#new-email').fill(moved);
+    await page.locator('#email-submit').click();
+    await expect(page.locator('#email-confirm-password')).toBeFocused();
+    await page.locator('#email-confirm-password').fill(password);
+    await page.locator('#email-confirm-code').fill(await app.next());
+    await page.getByRole('button', { name: 'Send the link', exact: true }).click();
+    await expect(page.locator('.server-msg')).toContainText('We have sent a link to the new address');
+    expect((await nextEmail(moved)).subject).toBe('Confirm your new email for Glazecalc');
+  });
+
   test('is not offered during a trial, and asks for a confirmed email first', async ({ page }) => {
     await page.goto('/');
     await page.locator('.hero-actions').getByRole('button', { name: 'Try it now' }).click();

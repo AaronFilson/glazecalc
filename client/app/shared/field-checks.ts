@@ -191,6 +191,11 @@ export class FieldCheck {
   readonly gcField = input.required<FieldChecks>();
   /** This input's field in them. */
   readonly gcFieldName = input.required<string>();
+  /**
+   * The id of a description whose id is bound in the template, in place of a
+   * plain aria-describedby attribute (which this directive reads once).
+   */
+  readonly gcFieldHint = input<string | null>(null);
 
   private readonly element = inject<ElementRef<HTMLInputElement>>(ElementRef).nativeElement;
   private readonly renderer = inject(Renderer2);
@@ -199,7 +204,9 @@ export class FieldCheck {
 
   protected readonly problem = computed(() => this.gcField().problem(this.gcFieldName()));
   protected readonly describedBy = computed(
-    () => [this.description, this.problem() ? this.messageId() : null].filter(Boolean).join(' ') || null
+    () =>
+      [this.description ?? this.gcFieldHint(), this.problem() ? this.messageId() : null].filter(Boolean).join(' ') ||
+      null
   );
 
   constructor() {
