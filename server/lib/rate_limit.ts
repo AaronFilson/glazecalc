@@ -86,16 +86,28 @@ export const passwordCheck = limiter(15, 10, 'too-many-attempts', {
 // address, is 960 a day; with 3 codes valid at a time, a guess at a 6-digit
 // code is right 3 times in a million, so a day of guessing succeeds about
 // 0.3% of the time (960 × 3 / 1,000,000). Right answers are not counted: one
-// ends the sign-in, so they add no guesses, and someone who has the password
-// cannot keep the owner out by spending the account's tries. Every try also
-// needs a pending sign-in, and so the password.
+// ends the sign-in, so they add no guesses. Every try also needs a pending
+// sign-in, and so the password.
+//
+// What this costs the owner: a limit is checked before the answer is (it
+// cannot know which answers are right without checking them, and checking is
+// what must stay bounded), so once 10 wrong answers are in, the owner's right
+// code is refused too until the window ends. Someone who has the password can
+// so hold off code and recovery-code sign-in in 15-minute windows. Passkey
+// sign-in on its own (POST /api/signin/passkey) does not count here and still
+// works. The owner is emailed (noticeUnfinished), and the refusal says so too
+// (second-step-account-limit): resetting the password by email ends it, since
+// that ends every pending sign-in and the other person no longer has the
+// password to start one.
 
 /**
- * Second steps per address, counted only for requests that carry a pending
- * sign-in that loads (POST /api/signin/second-step) or a signed-in session
- * (the /api/mfa routes that check a code or a passkey), so junk from someone
- * else at a shared address never counts against the people there. A finished
- * sign-in is not counted either (req.mfaUserId is set only at sign-in).
+ * Second steps per address, at sign-in only (POST /api/signin/second-step),
+ * counted only for requests that carry a pending sign-in that loads, so junk
+ * from someone else at a shared address never counts against the people
+ * there. A finished sign-in is not counted either. The account page's checks
+ * have limits of their own (mfaSetupAccount, mfaChallenges), per account, so
+ * a signed-in account cannot use up the second steps of everyone at its
+ * address.
  */
 export const secondStep = limiter(15, 20, 'too-many-codes', {
   skipSuccessfulRequests: true,
@@ -117,10 +129,12 @@ export const secondStepUnloaded = limiter(15, 100, 'too-many-codes', {
 /**
  * Wrong second steps per account, from any address: after the pending sign-in
  * is loaded (req.mfaUserId), or behind jwtAuth (req.user). Only refusals
- * count. At sign-in, going over it tells the owner by email that someone has
- * the password (second_step.noticeUnfinished, at most once a day).
+ * count, but once there are 10 every try is refused, a right one too (see
+ * above). At sign-in, going over it tells the owner by email that someone has
+ * the password (second_step.noticeUnfinished, at most once a day), and the
+ * reply says that a reset by email ends it.
  */
-export const secondStepAccount = limiter(15, 10, 'too-many-codes', {
+export const secondStepAccount = limiter(15, 10, 'second-step-account-limit', {
   keyGenerator: (req) => 'mfa:' + String(req.mfaUserId ?? req.user?._id),
   skipSuccessfulRequests: true,
   // 409 second-step-busy is not a wrong answer: it was never checked.
@@ -129,4 +143,27 @@ export const secondStepAccount = limiter(15, 10, 'too-many-codes', {
     if (req.mfaUserId !== undefined) void secondStepNotice.noticeUnfinished(req.mfaUserId);
     res.status(options.statusCode).send(options.message);
   }
+});
+
+/**
+ * Wrong first codes from a new authenticator app (POST /api/mfa/totp) per
+ * account: its own count, not secondStepAccount's, so a stolen session alone
+ * cannot fill the owner's sign-in budget (or set off the "someone entered your
+ * password" email). Only requests for a setup that exists are counted (the
+ * route checks the setupId first), and each setup also ends after 5 wrong codes.
+ */
+export const mfaSetupAccount = limiter(15, 10, 'too-many-codes', {
+  keyGenerator: (req) => 'mfa-setup:' + String(req.user?._id),
+  skipSuccessfulRequests: true
+});
+
+/**
+ * The account page's passkey challenges and their answers (POST
+ * /api/mfa/confirm/options, /api/mfa/passkeys/options, /api/mfa/passkeys),
+ * per account, every request: far more than a person adding or confirming
+ * with a passkey needs, and nothing to do with sign-in or with other people
+ * at the same address.
+ */
+export const mfaChallenges = limiter(15, 30, 'too-many-attempts', {
+  keyGenerator: (req) => 'mfa-challenge:' + String(req.user?._id)
 });

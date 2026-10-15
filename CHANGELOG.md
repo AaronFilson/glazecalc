@@ -352,6 +352,11 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Changed
 
+- **The session cookie is `__Host-glazecalc_session` in production, and the older
+  `glazecalc_session` is no longer read there**, so a cookie set for the whole domain by a
+  subdomain or a network faking one cannot sign a browser into someone else's account. Everyone
+  signed in signs in once more after this release; the older cookie is cleared, as the site set
+  it and as set for the site's domain, whenever a session is set or ended.
 - **The Docker image's dependency and client build stages run on the build machine's own platform**
   (`--platform=$BUILDPLATFORM`), so a cross build for arm64 needs no emulation for the Angular
   build. CI builds each platform natively, so its images are the same as before.

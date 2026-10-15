@@ -1,3 +1,4 @@
+import * as limits from '../lib/rate_limit.ts';
 import User, { type UserDocument } from '../models/user.ts';
 import { api, expect, makeUser } from './support/app.ts';
 
@@ -62,7 +63,10 @@ describe('changing the email or deleting the account needs the current password'
 // Someone holding a stolen session could otherwise guess the password over and
 // over through these routes; the limit counts per account, from any address.
 describe('guessing the current password', () => {
-  beforeEach(() => {
+  beforeEach(async () => {
+    // Other files' tests may have used some of this address's email links and password changes.
+    await limits.emailLinks.resetKey('127.0.0.1');
+    await limits.changePassword.resetKey('127.0.0.1');
     process.env.RATE_LIMITS = 'on';
   });
   afterEach(() => {

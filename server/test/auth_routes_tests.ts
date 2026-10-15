@@ -450,6 +450,26 @@ describe('two-step sign-in', () => {
       expect(await finish(pending, { code: GOOD_CODE })).to.have.status(200);
     });
 
+    it('lets go of the pending sign-in when making the next passkey challenge fails', async () => {
+      const { email, password } = await mfaUser({ passkey: true });
+      const step = await passwordStep(email, password);
+      const { jti } = jwt.decode(step.pending) as jwt.JwtPayload;
+      const options = secondStep.checks.authenticationOptions;
+      secondStep.checks.authenticationOptions = async () => {
+        throw new Error('no challenge today');
+      };
+      const failed = await finish(step.pending, {
+        passkey: { bad: true, response: { clientDataJSON: step.passkeyOptions!.challenge } }
+      });
+      secondStep.checks.authenticationOptions = options;
+      expect(failed).to.have.status(500);
+      const record = (await PendingSignIn.findOne({ tokenId: jti }).lean())!;
+      expect(record.holdId).to.eql(undefined);
+      expect(record.attempts).to.eql(1);
+      // The next try is checked at once, not turned away as busy.
+      expect(await finish(step.pending, { code: GOOD_CODE })).to.have.status(200);
+    });
+
     it('takes the passkey challenge with a passkey try, and offers a new one after a failed try', async () => {
       const { email, password } = await mfaUser({ passkey: true });
       const step = await passwordStep(email, password);
@@ -643,9 +663,12 @@ describe('two-step sign-in', () => {
         }
         expect(statuses.slice(0, 10)).to.not.include(429);
         expect(statuses[10]).to.eql(429);
+        // A right code waits too (the limit is checked before the code is), and
+        // the reply says what ends it if this keeps happening.
         const limited = await finish(tokens[2]!.token, { code: GOOD_CODE });
         expect(limited).to.have.status(429);
-        expect(limited.body.code).to.eql('too-many-codes');
+        expect(limited.body.code).to.eql('second-step-account-limit');
+        expect(limited.body.msg).to.include('reset it by email');
       } finally {
         process.env.RATE_LIMITS = 'off';
         await resetAddress();

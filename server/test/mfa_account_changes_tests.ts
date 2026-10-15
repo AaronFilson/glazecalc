@@ -144,6 +144,42 @@ describe('changing the email or password, or deleting, with two-step sign-in on 
     expect(await lastStep(account)).to.eql(before);
   });
 
+  it('checks the password before saying whether an address is in use', async () => {
+    const { account } = await withTotp();
+    const other = await makeUser();
+    const wrong = await changeEmail(account, { email: other.email, password: 'not-the-password' });
+    expect(wrong).to.have.status(400);
+    expect(wrong.body.code).to.eql('current-password-wrong');
+    const none = await changeEmail(account, { email: other.email });
+    expect(none.body.code).to.eql('current-password-needed');
+  });
+
+  it('ends a change link asked for before two-step sign-in was turned on', async () => {
+    const made = await makeUser();
+    const address = uniqueEmail('before-mfa');
+    const asked = await api()
+      .post('/email/change')
+      .set({ Authorization: 'Bearer ' + made.token })
+      .send({ email: address, password: made.password });
+    expect(asked).to.have.status(200);
+    const link = mail.linkTokenIn((await mail.waitFor(address, 1))[0]!)!;
+    // Turning it on raises the tokenVersion.
+    const started = await api()
+      .post('/mfa/totp/start')
+      .set({ Authorization: 'Bearer ' + made.token })
+      .send({ password: made.password });
+    const secret = totp.fromBase32(started.body.secret);
+    const added = await api()
+      .post('/mfa/totp')
+      .set({ Authorization: 'Bearer ' + made.token })
+      .send({ setupId: started.body.setupId, code: totp.codeAt(secret, totp.stepAt()) });
+    expect(added).to.have.status(200);
+    const res = await api().post('/email/confirm').send({ token: link });
+    expect(res).to.have.status(400);
+    expect(res.body.code).to.eql('email-link-bad');
+    expect((await User.findById(made.user._id))!.email).to.eql(made.email);
+  });
+
   it('cancels a pending request to turn two-step sign-in off once a factor is used', async () => {
     const { account, secret } = await withTotp();
     await User.updateOne({ _id: account.user._id }, { $set: { 'mfa.clearRequestedAt': new Date() } });

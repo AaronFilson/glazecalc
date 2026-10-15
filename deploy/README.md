@@ -53,6 +53,12 @@ Day to day:
 - **Deploy:** Actions → Deploy → Run workflow (blank tag = the current master commit).
 - **Roll back:** run Deploy with the previous `sha-<commit>` tag (each deploy prints it). A
   deploy whose image fails to pull or to become healthy rolls itself back and fails the run.
+  `deploy.sh` refuses an image from before two-step sign-in (one without the Dockerfile's
+  `com.glazecalcapp.two-step-sign-in` label): that code ignores the factors accounts have set
+  and would sign them in with the password alone. If going back that far is truly needed, run it
+  by hand in Session Manager, `sudo /opt/glazecalc/deploy.sh --allow-pre-mfa sha-<commit>` (the
+  Deploy workflow cannot pass the flag), knowing two-step sign-in is off until a newer image is
+  deployed; the factors stay stored and work again then.
 - **Shell:** `aws ssm start-session --target <instance-id>` (no SSH, port 22 is closed).
 - **Logs:** see "How long logs are kept" below. `sudo docker compose -f /opt/glazecalc/compose.prod.yaml logs -f app`,
   `/var/log/nginx/access.log` and `error.log`, `journalctl -u glazecalc-backup`.
@@ -66,9 +72,11 @@ Day to day:
 - **Rate limits** (sign-in, sign-up, resets, second steps; `server/lib/rate_limit.ts`) count per
   client address or per account in the app's memory, so every deploy or restart starts them again.
 - **Session cookie:** in production it is `__Host-glazecalc_session` (Secure, `Path=/`, no
-  `Domain`), so no subdomain can set one the site would read. The app still reads the older
-  `glazecalc_session` and replaces it at the next sign-in; that fallback can be removed from
-  `server/lib/session.ts` 14 days after the release that brought the new name. HSTS does not
+  `Domain`), so no subdomain can set one the site would read. The older `glazecalc_session` is
+  not read in production (one set for the whole domain by a subdomain or a hostile network would
+  sign a browser into someone else's account), so **everyone signs in once more after the
+  release that brought two-step sign-in**; replies that set or end a session clear the older
+  cookie, both host-only and for `Domain=<the SITE_URL host>`, on `Path=/api`. HSTS does not
   include subdomains (`nginx/glazecalc.conf`): adding `includeSubDomains` would also stop a
   network from serving a fake `http://` subdomain, but it binds every future subdomain to HTTPS
   for a year, so it is left as an option for the owner.
@@ -560,8 +568,10 @@ Things to know:
 - **Production's commands are unaffected,** with one exception: while staging runs,
   `docker compose -f compose.prod.yaml down` cannot remove production's network (staging is on it).
   Nothing here runs `down` (`glazecalc.service`, `deploy.sh` and `restore.sh` use `stop` and `up`);
-  if you need it, run `staging.sh stop` first. A production deploy's `docker image prune` removes a
-  stopped staging image; `staging.sh` pulls it again.
+  if you need it, run `staging.sh stop` first. A production deploy's `docker image prune` leaves staging's
+  images alone (`scripts/build-staging.sh` labels them `com.glazecalcapp.staging`; one built before
+  that label was added is removed when unused, so build it again), and `staging.sh` removes its own
+  older ones.
 - **The certificate now covers the staging name,** so certbot's renewals check it too: keep its DNS
   record while the name is on the certificate.
 

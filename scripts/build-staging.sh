@@ -14,7 +14,8 @@
 # temporary git worktree. The image is for linux/arm64 (the t4g instance); the
 # Angular build runs natively and only the small runtime stages are emulated
 # (the Dockerfile's --platform=$BUILDPLATFORM). Like CI's images, it carries
-# the commit in its org.opencontainers.image.revision label, which staging.sh checks.
+# the commit in its org.opencontainers.image.revision label, which staging.sh checks,
+# and com.glazecalcapp.staging, which keeps deploy.sh's image prune off it.
 #
 # Pushing needs a GitHub sign-in to GHCR first, once per token:
 #   docker login ghcr.io -u AaronFilson     (password: a classic token with write:packages only)
@@ -75,6 +76,7 @@ src=$(native_path "$work/src")
 build=(buildx build --platform "$platform" --file "$src/Dockerfile" --tag "$image:$tag"
   --label "org.opencontainers.image.source=https://github.com/AaronFilson/glazecalc"
   --label "org.opencontainers.image.revision=$sha"
+  --label "com.glazecalcapp.staging=1"
   --provenance=false)
 echo "Building $image:$tag for $platform from ${sha:0:12} ($ref)"
 case "$mode" in

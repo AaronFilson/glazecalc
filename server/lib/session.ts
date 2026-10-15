@@ -11,10 +11,14 @@
 // someone else's (login CSRF). Development, on plain http://localhost, keeps
 // the older glazecalc_session on Path=/api.
 //
-// Moving over without signing anyone out: the older name is still read in
-// production, and every reply that sets the session sets the new name and
-// clears the old one. Browsers keep an older cookie 14 days at most (a trial),
-// so after that the old name can be dropped here.
+// Production never reads the older name: a cookie under it could have been
+// set for the whole domain (Domain=glazecalcapp.com) by a subdomain or a
+// network faking an http:// one, and would sign the browser into someone
+// else's account. So everyone signed in under the older name signed in once
+// more after the release that dropped it (deploy/README.md). Every reply that
+// sets or ends the session still clears the older cookie: the one the site set
+// itself (host-only, Path=/api), and one set for the site's domain (Domain=
+// the SITE_URL host, Path=/api), so a planted one is removed too.
 //
 // A sign-in lasts as long as the browser session unless the user ticked "Keep
 // me signed in on this device" (the X-Keep-Signed-In: 1 header, sent as a header
@@ -22,10 +26,11 @@
 // A trial's lasts its 14 days. The token itself is good for the days either way.
 import type { CookieOptions, Request, Response } from 'express';
 import type { UserDocument } from '../models/user.ts';
+import { rpId } from './site.ts';
 
 /** The cookie's name in production. */
 export const HOST_NAME = '__Host-glazecalc_session';
-/** Its name in development and tests, and before 2026-10 in production too. */
+/** Its name in development and tests, and before 2026-10 in production too (no longer read there). */
 export const OLD_NAME = 'glazecalc_session';
 const DAY = 24 * 60 * 60 * 1000;
 
@@ -43,9 +48,16 @@ const options = (): CookieOptions =>
 /** The older cookie as production set it, to clear it. */
 const oldOptions = (): CookieOptions => ({ httpOnly: true, sameSite: 'strict', secure: true, path: '/api' });
 
-/** In production, clears the older cookie that the new one replaces. */
+/**
+ * In production, clears the older cookie that the new one replaces: as the
+ * site set it (host-only), and as someone else could have set it for the
+ * site's domain. A browser removes a cookie only for a Set-Cookie with its own
+ * Domain and Path.
+ */
 const clearOld = (res: Response): void => {
-  if (production()) res.clearCookie(OLD_NAME, oldOptions());
+  if (!production()) return;
+  res.clearCookie(OLD_NAME, oldOptions());
+  res.clearCookie(OLD_NAME, { ...oldOptions(), domain: rpId() });
 };
 
 /**
@@ -76,6 +88,5 @@ const cookie = (req: Request, wanted: string): string | null => {
   return null;
 };
 
-/** The token in the request's session cookie, or null: in production the new name first, then the older one. */
-export const tokenIn = (req: Request): string | null =>
-  cookie(req, name()) ?? (production() ? cookie(req, OLD_NAME) : null);
+/** The token in the request's session cookie, or null: only under the name this place sets (name()). */
+export const tokenIn = (req: Request): string | null => cookie(req, name());

@@ -183,8 +183,10 @@ describe('session cookies stay on their own host', () => {
 
 // In production the cookie is __Host-glazecalc_session (Secure, Path=/, no
 // Domain), so no other host can set one the site would read. The older name is
-// still read, and replaced whenever the session is set, so a deploy signs no
-// one out. Development keeps the older name on Path=/api.
+// never read there (one planted for the whole domain would sign the browser
+// into someone else's account), and is cleared, as the site set it and as set
+// for the site's domain, whenever the session is set or ended. Development
+// keeps the older name on Path=/api.
 describe('the session cookie in production', () => {
   const NEW = '__Host-glazecalc_session';
   const OLD = 'glazecalc_session';
@@ -201,7 +203,12 @@ describe('the session cookie in production', () => {
   const setCookies = (res: { headers: Record<string, unknown> }): string[] =>
     ([] as string[]).concat((res.headers['set-cookie'] as string[] | string | undefined) ?? []);
   const named = (res: { headers: Record<string, unknown> }, name: string): string =>
-    setCookies(res).find((c) => c.startsWith(name + '=')) ?? '';
+    setCookies(res).find((c) => c.startsWith(name + '=') && !/;\s*Domain=/i.test(c)) ?? '';
+  /** The Set-Cookie that clears a cookie of this name set for the site's domain, or ''. */
+  const domainCleared = (res: { headers: Record<string, unknown> }, name: string): string =>
+    setCookies(res).find((c) => c.startsWith(name + '=') && /;\s*Domain=/i.test(c)) ?? '';
+  const DOMAIN_CLEARED =
+    /^glazecalc_session=; Domain=glazecalc\.test; Path=\/api; Expires=Thu, 01 Jan 1970 00:00:00 GMT; HttpOnly; Secure; SameSite=Strict$/;
   const valueOf = (cookie: string): string => /^[^=]+=([^;]*)/.exec(cookie)![1]!;
   const CLEARED = /=; Path=\/api; Expires=Thu, 01 Jan 1970 00:00:00 GMT; HttpOnly; Secure; SameSite=Strict$/;
   const verifyWith = (cookie: string) => api().get('/verify').set('Cookie', cookie);
@@ -216,27 +223,26 @@ describe('the session cookie in production', () => {
     );
     expect(cookie).to.not.match(/;\s*Domain=/i);
     expect(named(res, OLD)).to.match(CLEARED);
+    expect(domainCleared(res, OLD)).to.match(DOMAIN_CLEARED);
+    // Only the __Host- cookie names no Domain.
+    expect(cookie).to.not.match(/;\s*Domain=/i);
     expect((await verifyWith(NEW + '=' + valueOf(cookie))).body.email).to.eql(email);
   });
 
-  it('still reads the older cookie, so nobody is signed out by the deploy, and moves it at the next renewal', async () => {
-    const { user, email } = await makeUser({ password: 'old-password' });
+  it('never reads the older cookie: one planted for the whole domain signs nobody in', async () => {
+    const { user } = await makeUser({ password: 'old-password' });
     const old = user.generateToken('7d', true);
-    expect((await verifyWith(OLD + '=' + old)).body.email).to.eql(email);
-    expect((await verifyWith('theme=dark; ' + OLD + '=' + old)).body.email).to.eql(email);
-
-    // A reply that sets the session (here a new password) moves it to the new name.
-    const res = await api()
-      .put('/password')
-      .set('Cookie', OLD + '=' + old)
-      .send({ current: 'old-password', password: 'new-password' });
-    expect(res).to.have.status(200);
-    expect(named(res, NEW)).to.match(/; Path=\/; .*HttpOnly; Secure; SameSite=Strict$/);
-    expect(named(res, OLD)).to.match(CLEARED);
-    expect((await verifyWith(NEW + '=' + valueOf(named(res, NEW)))).body.email).to.eql(email);
+    expect((await verifyWith(OLD + '=' + old)).body.email).to.eql(undefined);
+    expect((await verifyWith('theme=dark; ' + OLD + '=' + old)).body.email).to.eql(undefined);
+    expect(
+      await api()
+        .put('/password')
+        .set('Cookie', OLD + '=' + old)
+        .send({ current: 'old-password', password: 'new-password' })
+    ).to.have.status(401);
   });
 
-  it('prefers the new cookie when a browser sends both', async () => {
+  it('uses the new cookie when a browser sends both', async () => {
     const a = await makeUser();
     const b = await makeUser();
     const both = await verifyWith(OLD + '=' + a.token + '; ' + NEW + '=' + b.token);
@@ -249,6 +255,7 @@ describe('the session cookie in production', () => {
       /^__Host-glazecalc_session=; Path=\/; Expires=Thu, 01 Jan 1970 00:00:00 GMT; HttpOnly; Secure; SameSite=Strict$/
     );
     expect(named(out, OLD)).to.match(CLEARED);
+    expect(domainCleared(out, OLD)).to.match(DOMAIN_CLEARED);
 
     const { token } = await makeUser();
     const everywhere = await api()
@@ -257,6 +264,7 @@ describe('the session cookie in production', () => {
     expect(everywhere).to.have.status(200);
     expect(named(everywhere, NEW)).to.match(/^__Host-glazecalc_session=; Path=\/;/);
     expect(named(everywhere, OLD)).to.match(CLEARED);
+    expect(domainCleared(everywhere, OLD)).to.match(DOMAIN_CLEARED);
     expect(await verifyWith(NEW + '=' + token)).to.have.status(401);
   });
 
