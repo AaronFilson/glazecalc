@@ -568,8 +568,10 @@ Things to know:
 - **Production's commands are unaffected,** with one exception: while staging runs,
   `docker compose -f compose.prod.yaml down` cannot remove production's network (staging is on it).
   Nothing here runs `down` (`glazecalc.service`, `deploy.sh` and `restore.sh` use `stop` and `up`);
-  if you need it, run `staging.sh stop` first. A production deploy's `docker image prune` removes a
-  stopped staging image; `staging.sh` pulls it again.
+  if you need it, run `staging.sh stop` first. A production deploy's `docker image prune` leaves staging's
+  images alone (`scripts/build-staging.sh` labels them `com.glazecalcapp.staging`; one built before
+  that label was added is removed when unused, so build it again), and `staging.sh` removes its own
+  older ones.
 - **The certificate now covers the staging name,** so certbot's renewals check it too: keep its DNS
   record while the name is on the certificate.
 

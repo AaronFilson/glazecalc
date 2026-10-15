@@ -220,6 +220,9 @@ if ! compose -f compose.prod.yaml run --rm --no-deps app node scripts/seed-stand
   exit 1
 fi
 
-# Rolling back pulls an older image again, so keep only the images in use.
-docker image prune -af >/dev/null
+# Rolling back pulls an older image again, so keep only the images in use, and
+# staging's: scripts/build-staging.sh labels them, and staging.sh keeps its
+# current and previous ones (which may have no container, or come from S3 and
+# cannot be pulled again) and removes the older ones itself.
+docker image prune -af --filter 'label!=com.glazecalcapp.staging' >/dev/null
 curl -fsS http://127.0.0.1:3000/api/health && echo
