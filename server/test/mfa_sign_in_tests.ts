@@ -6,6 +6,7 @@
 import type { PasskeyRequestOptionsResponse, SecondStepResponse } from '../../lib/mfa.js';
 import { clear, notify, WAIT_DAYS } from '../clear_mfa.ts';
 import * as limits from '../lib/rate_limit.ts';
+import * as pendingSignIn from '../lib/second_step.ts';
 import * as site from '../lib/site.ts';
 import * as totp from '../lib/totp.ts';
 import User from '../models/user.ts';
@@ -341,6 +342,140 @@ describe('two-step sign-in end to end (real factors)', () => {
         process.env.RATE_LIMITS = 'off';
         await reset();
       }
+    });
+  });
+
+  // server/lib/code_lock.ts: a round of 10 wrong codes, then codes are refused
+  // for an hour, a day, and a week each time after.
+  describe('wrong codes from an authenticator app, per account', () => {
+    /** A code no step near now takes. */
+    const wrongCode = (secret: Buffer): string => {
+      const near = [-1, 0, 1].map((delta) => totp.codeAt(secret, totp.stepAt() + delta));
+      for (let n = 0; ; n++) {
+        const code = String(n).padStart(6, '0');
+        if (!near.includes(code)) return code;
+      }
+    };
+    /** A pending sign-in without the slow password step. */
+    const pendingFor = async (who: Account) =>
+      (await pendingSignIn.begin((await User.findById(who.user._id))!, { keep: false })).token;
+    /** n wrong codes, 5 to a pending sign-in (its own limit); the replies. */
+    const wrongCodes = async (who: Account, secret: Buffer, n: number): Promise<Res[]> => {
+      const replies: Res[] = [];
+      let pending = '';
+      for (let i = 0; i < n; i++) {
+        if (i % 5 === 0) pending = await pendingFor(who);
+        replies.push(await secondStep(pending, { code: wrongCode(secret) }));
+      }
+      return replies;
+    };
+    const guesses = async (who: Account) => (await User.findById(who.user._id).lean())!.mfa!.codeGuesses;
+    const endRefusal = (who: Account) =>
+      User.updateOne({ _id: who.user._id }, { $set: { 'mfa.codeGuesses.lockedUntil': new Date(Date.now() - 1000) } });
+
+    it('refuses codes for an hour after 10 wrong ones, then a day, then a week each time', async () => {
+      const alice = await account();
+      const { secret, codes } = await enrolTotp(alice);
+      const first = await wrongCodes(alice, secret, 10);
+      // Each pending sign-in takes 5 tries (the fifth: 'second-step-tries'); the account's count goes on.
+      expect(first.slice(0, 9).map((res) => res.status)).to.eql(Array(9).fill(401));
+      expect(first[9]).to.have.status(429);
+      expect(first[9]!.body).to.include({ code: 'second-step-account-limit' });
+      expect(first[9]!.body.params).to.eql({ wait: 'hour' });
+      expect(first[9]!.body.msg).to.include('for up to an hour');
+
+      // The right code is refused too, without being checked; a recovery code is not.
+      const pending = await pendingFor(alice);
+      const right = await secondStep(pending, { code: await codeNow(alice, secret) });
+      expect(right).to.have.status(429);
+      expect(right.body.params).to.eql({ wait: 'hour' });
+      expect((await secondStep(pending, { recoveryCode: codes[0] })).status).to.eql(200);
+      const until = (await guesses(alice))!.lockedUntil!.getTime();
+      expect(until - Date.now()).to.be.within(59 * 60 * 1000, 60 * 60 * 1000);
+
+      for (const wait of ['day', 'week', 'week']) {
+        await endRefusal(alice);
+        const round = await wrongCodes(alice, secret, 10);
+        expect(round.slice(0, 9).every((res) => res.status === 401)).to.eql(true);
+        expect(round[9]!.body.params).to.eql({ wait });
+      }
+      expect((await guesses(alice))!.rounds).to.eql(4);
+      const week = (await guesses(alice))!.lockedUntil!.getTime() - Date.now();
+      expect(week).to.be.within(7 * DAY - 60 * 1000, 7 * DAY);
+    });
+
+    it('lets a passkey sign in while codes are refused', async () => {
+      const alice = await account();
+      const { secret } = await enrolTotp(alice);
+      const { authenticator } = await addPasskeyWith(alice, { code: await codeNow(alice, secret) });
+      await wrongCodes(alice, secret, 10);
+      const step = await passwordStep(alice);
+      const res = await secondStep(step.pending, { passkey: authenticator.assert(step.passkeyOptions!.challenge) });
+      expect(res, JSON.stringify(res.body)).to.have.status(200);
+    });
+
+    it('forgets the count at a right code, and a right last code of a round refuses nothing', async () => {
+      const alice = await account();
+      const { secret } = await enrolTotp(alice);
+      expect((await wrongCodes(alice, secret, 9)).every((res) => res.status === 401)).to.eql(true);
+      expect(await secondStep(await pendingFor(alice), { code: await codeNow(alice, secret) })).to.have.status(200);
+      expect((await guesses(alice))!.wrong).to.eql(0);
+
+      expect((await wrongCodes(alice, secret, 9)).every((res) => res.status === 401)).to.eql(true);
+      // The tenth: right.
+      expect(await secondStep(await pendingFor(alice), { code: await codeNow(alice, secret) })).to.have.status(200);
+      const after = (await guesses(alice))!;
+      expect(after.wrong).to.eql(0);
+      expect(after.rounds).to.eql(0);
+      expect(after.lockedUntil).to.eql(undefined);
+      expect(await secondStep(await pendingFor(alice), { code: wrongCode(secret) })).to.have.status(401);
+    });
+
+    it('starts again after a new password (a new tokenVersion)', async () => {
+      const alice = await account();
+      const { secret } = await enrolTotp(alice);
+      expect((await wrongCodes(alice, secret, 10))[9]).to.have.status(429);
+      // As a reset or a password change does.
+      await User.updateOne({ _id: alice.user._id }, { $inc: { tokenVersion: 1 } });
+      expect(await secondStep(await pendingFor(alice), { code: await codeNow(alice, secret) })).to.have.status(200);
+    });
+
+    it('starts again after 30 days without a wrong code', async () => {
+      const alice = await account();
+      const { secret } = await enrolTotp(alice);
+      expect((await wrongCodes(alice, secret, 10))[9]!.body.params).to.eql({ wait: 'hour' });
+      await User.updateOne(
+        { _id: alice.user._id },
+        {
+          $set: {
+            'mfa.codeGuesses.at': new Date(Date.now() - 31 * DAY),
+            'mfa.codeGuesses.lockedUntil': new Date(Date.now() - 30 * DAY)
+          }
+        }
+      );
+      expect((await wrongCodes(alice, secret, 10))[9]!.body.params).to.eql({ wait: 'hour' });
+    });
+
+    it("counts the account page's codes with sign-in's, and refuses them there too", async () => {
+      const alice = await account();
+      const { secret, codes } = await enrolTotp(alice);
+      for (let i = 0; i < 9; i++) {
+        const res = await mfa(alice, 'post', '/recovery-codes', { password: alice.password, code: wrongCode(secret) });
+        expect(res, 'try ' + i).to.have.status(400);
+      }
+      const last = await secondStep(await pendingFor(alice), { code: wrongCode(secret) });
+      expect(last).to.have.status(429);
+      const refused = await mfa(alice, 'post', '/recovery-codes', {
+        password: alice.password,
+        code: await codeNow(alice, secret)
+      });
+      expect(refused).to.have.status(429);
+      expect(refused.body).to.include({ code: 'second-step-account-limit', field: 'code' });
+      expect(refused.body.params).to.eql({ wait: 'hour' });
+      // Still signed in (a 401 would sign the page out), and a recovery code still confirms.
+      expect(await verify(alice.token)).to.have.status(200);
+      const made = await mfa(alice, 'post', '/recovery-codes', { password: alice.password, recoveryCode: codes[0] });
+      expect(made, JSON.stringify(made.body)).to.have.status(200);
     });
   });
 

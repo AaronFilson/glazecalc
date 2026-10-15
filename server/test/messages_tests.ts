@@ -4,7 +4,15 @@ import { expect } from './support/app.ts';
 // What the server tells people: a code the app can translate, and English text.
 describe('messages', () => {
   it('should give every code English text, with its values filled in', () => {
-    const params = { minutes: 30, hours: 24, limit: 25, label: 'recipe', palettes: 'tenmoku, ash', most: 500 };
+    const params = {
+      minutes: 30,
+      hours: 24,
+      limit: 25,
+      label: 'recipe',
+      palettes: 'tenmoku, ash',
+      most: 500,
+      wait: 'hour'
+    };
     for (const code of Object.keys(MESSAGES) as MessageCode[]) {
       const text = textOf(code, params);
       expect(text, code).to.be.a('string').and.not.equal('');
@@ -127,7 +135,7 @@ describe('account emails', () => {
     expect(email.text).to.match(/\n-- \nGlazecalc, \{app\}\n$/);
     expect(email.subject).to.include('Glazecalc');
     // English only so far (docs/mfa-plan.md, item 19): the next wave adds the others.
-    expect(fingerprint(JSON.stringify(email))).to.equal('153r2vu');
+    expect(fingerprint(JSON.stringify(email))).to.equal('1yot3mr');
   });
 });
 

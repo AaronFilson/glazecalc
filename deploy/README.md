@@ -344,8 +344,10 @@ What keeps it apart from production:
   replace a production container. `staging.sh` names that project in every command and checks
   `compose.staging.yaml` before using it.
 - **Its own database and user.** `glazecalc_staging` can read and write the database
-  `glazecalc_staging` and nothing else. MongoDB's port stays unpublished: the staging app joins
-  production's Compose network to reach it.
+  `glazecalc_staging` and nothing else. MongoDB's port stays unpublished: the staging app reaches
+  it on `glazecalc_data`, an internal network with only MongoDB on it. Production's app is not on
+  that network, so staging cannot reach it (nor send it a made-up client address to get round the
+  limits per address).
 - **Its own secrets** in `/glazecalc/staging/*` (`staging.sh` refuses any that is production's).
 - **Mail only to the owner:** `MAIL_ALLOWLIST` from `/glazecalc/staging/mail-allowlist`; staging
   does not start without it. It shares production's SES settings.
@@ -566,7 +568,7 @@ Things to know:
 - **One MongoDB.** Staging's queries share production's `mongod` and its 0.25 GB cache. A heavy
   staging test slows production a little; nothing more.
 - **Production's commands are unaffected,** with one exception: while staging runs,
-  `docker compose -f compose.prod.yaml down` cannot remove production's network (staging is on it).
+  `docker compose -f compose.prod.yaml down` cannot remove `glazecalc_data` (staging is on it).
   Nothing here runs `down` (`glazecalc.service`, `deploy.sh` and `restore.sh` use `stop` and `up`);
   if you need it, run `staging.sh stop` first. A production deploy's `docker image prune` leaves staging's
   images alone (`scripts/build-staging.sh` labels them `com.glazecalcapp.staging`; one built before

@@ -34,9 +34,11 @@
 // every route that checks a password; limits.mfaSetupAccount per account on
 // POST /api/mfa/totp (wrong codes for a setup that exists); limits.mfaChallenges
 // per account on the routes that make or answer a passkey challenge. None of
-// them is sign-in's (limits.secondStep, limits.secondStepAccount), so nothing
-// done here, with a stolen session or from a shared address, uses up anyone's
-// sign-in.
+// them is sign-in's (limits.secondStep), so nothing done here, with a stolen
+// session or from a shared address, uses up anyone's sign-in at an address.
+// A code confirming a change here does count with sign-in's in the account's
+// rounds of wrong codes (server/lib/code_lock.ts, through confirmIdentity):
+// a guess is a guess, and it needs the password as well as the session.
 //
 // Each change is one atomic update whose filter says what it expects (no
 // authenticator app yet, fewer than ten passkeys, the factor still there), so
@@ -96,7 +98,7 @@ const confirm = async (req: Request): Promise<factors.IdentityCheck> => {
 };
 
 const refuse = (res: Response, check: Extract<factors.IdentityCheck, { ok: false }>) =>
-  res.status(check.status).json(say(check.code, undefined, check.field ? { field: check.field } : {}));
+  res.status(check.status).json(say(check.code, check.params, check.field ? { field: check.field } : {}));
 
 // The account changed how it signs in: every other device is signed out (the
 // update raised tokenVersion), and this browser gets a new cookie of the same kind.

@@ -110,6 +110,24 @@ export interface MfaFields {
    * at most one such email a day.
    */
   unfinishedNoticeAt?: Date;
+  /** Wrong codes from the authenticator app (server/lib/code_lock.ts). */
+  codeGuesses?: CodeGuesses;
+}
+
+/** Wrong codes counted against an account (server/lib/code_lock.ts). */
+export interface CodeGuesses {
+  /** The account's tokenVersion they were counted under: a new one starts again. */
+  version: number;
+  /** Wrong codes in this round. */
+  wrong: number;
+  /** Rounds used up: how long the next refusal lasts. */
+  rounds: number;
+  /** The last wrong code. */
+  at?: Date;
+  /** Codes are refused until then. */
+  lockedUntil?: Date;
+  /** Goes up with every write, for compare-and-set. */
+  n?: number;
 }
 
 export interface UserFields {
@@ -196,7 +214,14 @@ const mfaSchema = new mongoose.Schema<MfaFields>(
     recoveryCodes: { type: [new mongoose.Schema({ hash: String, usedAt: Date }, { _id: false })], default: [] },
     recoveryMadeAt: Date,
     clearRequestedAt: Date,
-    unfinishedNoticeAt: Date
+    unfinishedNoticeAt: Date,
+    codeGuesses: {
+      type: new mongoose.Schema(
+        { version: Number, wrong: Number, rounds: Number, at: Date, lockedUntil: Date, n: Number },
+        { _id: false }
+      ),
+      default: undefined
+    }
   },
   { _id: false }
 );

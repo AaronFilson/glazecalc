@@ -75,7 +75,8 @@ describe('deletion log', () => {
     const owner = await makeOwner();
     const res = await api()
       .delete('/deleteuser/' + owner.user._id)
-      .set('Authorization', 'Bearer ' + admin.token);
+      .set('Authorization', 'Bearer ' + admin.token)
+      .send({ password: admin.password });
     expect(res).to.have.status(200);
     expect(await logOf(owner.user._id)).to.have.length(1);
     expect(await logOf(admin.user._id)).to.have.length(0);
@@ -86,7 +87,8 @@ describe('deletion log', () => {
     const missing = new mongoose.Types.ObjectId();
     const res = await api()
       .delete('/deleteuser/' + missing)
-      .set('Authorization', 'Bearer ' + admin.token);
+      .set('Authorization', 'Bearer ' + admin.token)
+      .send({ password: admin.password });
     expect(res).to.have.status(404);
     expect(await logOf(missing)).to.have.length(0);
   });

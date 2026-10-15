@@ -74,7 +74,7 @@ emailRouter.post(
     if (await emailLinks.tooMany(user)) return res.status(429).json(say('too-many-email-links'));
     if (twoStep) {
       const check = await confirmChange(req, body);
-      if (!check.ok) return res.status(check.status).json(say(check.code, undefined, fieldOf(check.field)));
+      if (!check.ok) return res.status(check.status).json(say(check.code, check.params, fieldOf(check.field)));
     }
 
     const token = await emailLinks.makeLink(user, 'change', address);

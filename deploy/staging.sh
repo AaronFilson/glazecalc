@@ -188,8 +188,8 @@ was_running=$(use_tag=$previous staging ps -q --status running app)
 # staging can never push production's MongoDB out of memory.
 swapon --noheadings --show | grep -q . \
   || fail "No swap is on. Add the swap file first (deploy/README.md, Staging, step 1); nothing was changed."
-docker network inspect glazecalc_default > /dev/null 2>&1 \
-  || fail "Production's network glazecalc_default does not exist: start production first."
+docker network inspect glazecalc_data > /dev/null 2>&1 \
+  || fail "Production's network glazecalc_data does not exist: deploy production with a compose.prod.yaml that has it first."
 [ -n "$(mongo_container)" ] || fail "Production's MongoDB is not running: start production first."
 
 region=$(region)

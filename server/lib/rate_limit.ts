@@ -1,7 +1,6 @@
 import type { Request, Response } from 'express';
 import { type Options, rateLimit } from 'express-rate-limit';
 import { type MessageCode, say } from './messages.ts';
-import * as secondStepNotice from './second_step.ts';
 
 // Limits per client address, unless they say otherwise. In production nginx
 // passes the address in X-Forwarded-For, which server/app.ts trusts for exactly
@@ -85,25 +84,8 @@ export const passwordCheck = limiter(15, 10, 'too-many-attempts', {
   keyGenerator: (req) => 'user:' + String(req.user?._id)
 });
 
-// Two-step sign-in (docs/mfa-plan.md, item 9). There is no hard lockout, which
-// a stranger could use to lock someone out. The real guard on guessing is
-// secondStepAccount: 10 wrong answers per 15 minutes per account, from any
-// address, is 960 a day; with 3 codes valid at a time, a guess at a 6-digit
-// code is right 3 times in a million, so a day of guessing succeeds about
-// 0.3% of the time (960 × 3 / 1,000,000). Right answers are not counted: one
-// ends the sign-in, so they add no guesses. Every try also needs a pending
-// sign-in, and so the password.
-//
-// What this costs the owner: a limit is checked before the answer is (it
-// cannot know which answers are right without checking them, and checking is
-// what must stay bounded), so once 10 wrong answers are in, the owner's right
-// code is refused too until the window ends. Someone who has the password can
-// so hold off code and recovery-code sign-in in 15-minute windows. Passkey
-// sign-in on its own (POST /api/signin/passkey) does not count here and still
-// works. The owner is emailed (noticeUnfinished), and the refusal says so too
-// (second-step-account-limit): resetting the password by email ends it, since
-// that ends every pending sign-in and the other person no longer has the
-// password to start one.
+// Two-step sign-in (docs/mfa-plan.md, item 9). The guard on guessing codes
+// is per account and kept on the account, not here: server/lib/code_lock.ts.
 
 /**
  * Second steps per address, at sign-in only (POST /api/signin/second-step),
@@ -132,30 +114,12 @@ export const secondStepUnloaded = limiter(15, 100, 'too-many-codes', {
 });
 
 /**
- * Wrong second steps per account, from any address: after the pending sign-in
- * is loaded (req.mfaUserId), or behind jwtAuth (req.user). Only refusals
- * count, but once there are 10 every try is refused, a right one too (see
- * above). At sign-in, going over it tells the owner by email that someone has
- * the password (second_step.noticeUnfinished, at most once a day), and the
- * reply says that a reset by email ends it.
- */
-export const secondStepAccount = limiter(15, 10, 'second-step-account-limit', {
-  keyGenerator: (req) => 'mfa:' + String(req.mfaUserId ?? req.user?._id),
-  skipSuccessfulRequests: true,
-  // 409 second-step-busy is not a wrong answer: it was never checked.
-  requestWasSuccessful: (_req, res) => res.statusCode < 400 || res.statusCode === 409,
-  handler: (req, res, _next, options) => {
-    if (req.mfaUserId !== undefined) void secondStepNotice.noticeUnfinished(req.mfaUserId);
-    res.status(options.statusCode).send(options.message);
-  }
-});
-
-/**
  * Wrong first codes from a new authenticator app (POST /api/mfa/totp) per
- * account: its own count, not secondStepAccount's, so a stolen session alone
- * cannot fill the owner's sign-in budget (or set off the "someone entered your
- * password" email). Only requests for a setup that exists are counted (the
- * route checks the setupId first), and each setup also ends after 5 wrong codes.
+ * account: not counted with sign-in's codes (server/lib/code_lock.ts), so a
+ * stolen session alone cannot use them up, or set off the "someone entered
+ * your password" email. Only requests for a setup that exists are counted
+ * (the route checks the setupId first), and each setup also ends after 5
+ * wrong codes.
  */
 export const mfaSetupAccount = limiter(15, 10, 'too-many-codes', {
   keyGenerator: (req) => 'mfa-setup:' + String(req.user?._id),

@@ -651,28 +651,24 @@ describe('two-step sign-in', () => {
       expect(await verify(trialToken)).to.have.status(401);
     });
 
-    it('slows down tries at one account from any number of pending sign-ins', async () => {
-      await resetAddress();
-      process.env.RATE_LIMITS = 'on';
-      try {
-        const { user } = await mfaUser();
-        const tokens = await Promise.all([1, 2, 3].map(() => secondStep.begin(user, { keep: false })));
-        const statuses: number[] = [];
-        for (let i = 0; i < 11; i++) {
-          statuses.push((await finish(tokens[Math.floor(i / 4)]!.token, { code: '000000' })).status);
-        }
-        expect(statuses.slice(0, 10)).to.not.include(429);
-        expect(statuses[10]).to.eql(429);
-        // A right code waits too (the limit is checked before the code is), and
-        // the reply says what ends it if this keeps happening.
-        const limited = await finish(tokens[2]!.token, { code: GOOD_CODE });
-        expect(limited).to.have.status(429);
-        expect(limited.body.code).to.eql('second-step-account-limit');
-        expect(limited.body.msg).to.include('reset it by email');
-      } finally {
-        process.env.RATE_LIMITS = 'off';
-        await resetAddress();
+    it('refuses codes at one account after a round of wrong ones, from any number of pending sign-ins', async () => {
+      // server/lib/code_lock.ts: kept on the account, so on whatever RATE_LIMITS says.
+      const { user } = await mfaUser();
+      const tokens = await Promise.all([1, 2, 3].map(() => secondStep.begin(user, { keep: false })));
+      const statuses: number[] = [];
+      for (let i = 0; i < 10; i++) {
+        statuses.push((await finish(tokens[Math.floor(i / 4)]!.token, { code: '000000' })).status);
       }
+      expect(statuses.slice(0, 9)).to.not.include(429);
+      expect(statuses[9]).to.eql(429);
+      // A right code is refused too (counted before it is checked), and the
+      // reply says what still works and what ends it.
+      const limited = await finish(tokens[2]!.token, { code: GOOD_CODE });
+      expect(limited).to.have.status(429);
+      expect(limited.body.code).to.eql('second-step-account-limit');
+      expect(limited.body.params).to.eql({ wait: 'hour' });
+      expect(limited.body.msg).to.include('A passkey or a recovery code still works');
+      expect(limited.body.msg).to.include('reset it by email');
     });
   });
 
@@ -723,14 +719,14 @@ describe('two-step sign-in', () => {
       expect(statuses[20]).to.eql(429);
     });
 
-    it('counts only wrong answers per account, so the owner can still sign in', async () => {
+    it('counts only wrong codes per account, so the owner can still sign in', async () => {
       const { user } = await mfaUser();
       for (let i = 0; i < 12; i++)
         expect(await finish(await pendingFor(user), { code: GOOD_CODE })).to.have.status(200);
       const statuses: number[] = [];
-      for (let i = 0; i < 11; i++) statuses.push((await finish(await pendingFor(user), { code: '000000' })).status);
-      expect(statuses.slice(0, 10)).to.not.include(429);
-      expect(statuses[10]).to.eql(429);
+      for (let i = 0; i < 10; i++) statuses.push((await finish(await pendingFor(user), { code: '000000' })).status);
+      expect(statuses.slice(0, 9)).to.not.include(429);
+      expect(statuses[9]).to.eql(429);
     });
   });
 
@@ -741,7 +737,8 @@ describe('two-step sign-in', () => {
     const unfinished = (address: string) => mail.to(address).filter((m) => m.subject === SUBJECT);
     const useUpTries = async (user: UserDocument) => {
       const { token } = await secondStep.begin(user, { keep: false });
-      for (let i = 0; i < 5; i++) await finish(token, { code: '000000' });
+      // Wrong recovery codes: not counted against the account's codes (server/lib/code_lock.ts).
+      for (let i = 0; i < 5; i++) await finish(token, { recoveryCode: 'wrong-' + i });
       expect((await finish(token, { code: GOOD_CODE })).body.code).to.eql('second-step-tries');
     };
 
@@ -778,22 +775,16 @@ describe('two-step sign-in', () => {
       expect(unfinished(email)).to.have.length(1);
     });
 
-    it('goes when the account reaches its limit of wrong answers', async () => {
-      await resetAddress();
-      process.env.RATE_LIMITS = 'on';
-      try {
-        const { user, email } = await mfaUser();
-        // Four wrong answers on each of three sign-ins: none runs out of tries.
-        const tokens = await Promise.all([1, 2, 3].map(() => secondStep.begin(user, { keep: false })));
-        for (let i = 0; i < 10; i++) await finish(tokens[Math.floor(i / 4)]!.token, { code: '000000' });
-        await mail.settle();
-        expect(unfinished(email)).to.have.length(0);
-        expect(await finish(tokens[2]!.token, { code: '000000' })).to.have.status(429);
-        expect((await mail.waitFor(email, 1)).map((m) => m.subject)).to.eql([SUBJECT]);
-      } finally {
-        process.env.RATE_LIMITS = 'off';
-        await resetAddress();
-      }
+    it('goes when a round of wrong codes refuses codes at the account', async () => {
+      const { user, email } = await mfaUser();
+      // Four wrong codes on each of three sign-ins: none runs out of tries.
+      const tokens = await Promise.all([1, 2, 3].map(() => secondStep.begin(user, { keep: false })));
+      for (let i = 0; i < 9; i++) await finish(tokens[Math.floor(i / 4)]!.token, { code: '000000' });
+      await mail.settle();
+      expect(unfinished(email)).to.have.length(0);
+      expect(await finish(tokens[2]!.token, { code: '000000' })).to.have.status(429);
+      expect((await mail.waitFor(email, 1)).map((m) => m.subject)).to.eql([SUBJECT]);
+      expect((await mail.waitFor(email, 1))[0]!.text).to.include('for an hour; after 10 more, for a day');
     });
 
     it('does not go to an address that is not confirmed, nor after a right answer', async () => {

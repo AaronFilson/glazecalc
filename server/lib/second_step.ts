@@ -232,8 +232,8 @@ export const UNFINISHED_NOTICE_HOURS = 24;
 
 /**
  * Someone entered the account's password but did not get through the second
- * step: a pending sign-in ran out of tries, or the account went over
- * limits.secondStepAccount. Emails the owner to change the password, at most
+ * step: a pending sign-in ran out of tries, or a round of wrong codes set off
+ * a refusal (server/lib/code_lock.ts). Emails the owner to change the password, at most
  * once in UNFINISHED_NOTICE_HOURS: the time is kept on the account
  * (mfa.unfinishedNoticeAt) and claimed with one atomic update, so tries at the
  * same moment send one email. Only to a confirmed address (noticeMfa). Never

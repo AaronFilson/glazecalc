@@ -4,6 +4,12 @@
 #   GLAZECALC_TAG=<tag> docker compose -f compose.prod.yaml up -d   (deploy.sh does this)
 #
 # nginx on the host terminates HTTPS and proxies to 127.0.0.1:3000.
+#
+# Two networks. The app and MongoDB share the project's own (default). MongoDB
+# is also on `data` (glazecalc_data), which the staging app joins to reach it
+# (compose.staging.yaml): production's app is not on it, so staging cannot
+# reach production's app, only MongoDB, where its user can use its own
+# database and nothing else. `data` is internal: nothing on it reaches out.
 name: glazecalc
 
 # Container logs: Docker's "local" log driver rotates by itself (json-file does
@@ -60,6 +66,9 @@ services:
       nofile:
         soft: 64000
         hard: 64000
+    networks:
+      - default
+      - data
     volumes:
       - mongo-data:/data/db
       - mongo-config:/data/configdb
@@ -81,6 +90,14 @@ configs:
         pwd: process.env.MONGO_APP_PASSWORD,
         roles: [{ role: 'readWrite', db: 'glazecalc' }]
       });
+
+networks:
+  default:
+  # MongoDB and the staging app only (see the top). While staging runs,
+  # production's `docker compose down` cannot remove it; staging.sh stop first.
+  data:
+    name: glazecalc_data
+    internal: true
 
 volumes:
   mongo-data:

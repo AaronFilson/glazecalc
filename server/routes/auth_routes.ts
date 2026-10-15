@@ -27,6 +27,7 @@
 import express, { type NextFunction, type Request, type Response } from 'express';
 import type { Types } from 'mongoose';
 import { mergeTrial } from '../lib/account_data.ts';
+import * as codeLock from '../lib/code_lock.ts';
 import * as emailLinks from '../lib/email_links.ts';
 import { notGuest } from '../lib/guest_limits.ts';
 import basicHTTP from '../lib/basic_http.ts';
@@ -135,8 +136,7 @@ const proofIn = (body: Record<string, unknown>): Record<string, unknown> => {
   return proof;
 };
 
-// The second step. The pending sign-in is loaded first, so the per-account
-// limit (req.mfaUserId) counts tries from every address, and the per-address
+// The second step. The pending sign-in is loaded first, so the per-address
 // limit counts only requests that carry a pending sign-in: one that does not
 // load counts against a looser limit of its own (limits.secondStepUnloaded),
 // so junk from one person at a shared address cannot stop the others there.
@@ -156,7 +156,6 @@ authRouter.post(
     return next();
   },
   limits.secondStep,
-  limits.secondStepAccount,
   async (req: Request, res: Response) => {
     const { pending, user } = res.locals.secondStep as { pending: secondStep.PendingSignIn; user: UserDocument };
     const proof = proofIn((req.body ?? {}) as Record<string, unknown>);
@@ -172,9 +171,31 @@ authRouter.post(
     // with its passkey challenge gone.
     let settled = false;
     try {
+      // A code from the authenticator app is counted against the account too,
+      // before it is checked, and refused while a round's refusal lasts
+      // (server/lib/code_lock.ts). A recovery code or a passkey still works.
+      let codeTry: codeLock.CodeTry | undefined;
+      if (codeLock.isCodeTry(proof)) {
+        const taken = await codeLock.take(user._id);
+        if (!taken.ok) {
+          await secondStep.release(pending, hold);
+          settled = true;
+          if (taken.code === 'second-step-busy') return res.status(409).json(say(taken.code));
+          return res.status(429).json(say(taken.code, taken.params));
+        }
+        codeTry = taken.codeTry;
+      }
       const check = await secondStep.checks.checkFactor(user, proof, {
         ...(hold.challenge && { passkeyChallenge: hold.challenge })
       });
+      if (codeTry && check.ok) await codeLock.right(codeTry);
+      if (!check.ok && codeTry?.locked) {
+        // The last wrong code of a round: the owner hears that someone has the password.
+        await secondStep.release(pending, hold);
+        settled = true;
+        void secondStep.noticeUnfinished(user._id);
+        return res.status(429).json(say('second-step-account-limit', codeTry.locked));
+      }
       if (!check.ok) {
         // The last try used up: the password again, and the owner hears that
         // someone has it (at most once a day).

@@ -1083,7 +1083,7 @@ describe('two-step sign-in on the account page (/api/mfa)', () => {
           statuses.push((await call(alice, 'post', '/totp', { setupId, code: '00000' + (i % 10) })).status);
         }
         // The account's sign-in second steps are untouched.
-        expect(await hits(limits.secondStepAccount, 'mfa:' + String(alice.user._id))).to.eql(0);
+        expect((await User.findById(alice.user._id).lean())?.mfa?.codeGuesses).to.eql(undefined);
         expect(await hits(limits.secondStep, '127.0.0.1')).to.eql(0);
       } finally {
         await limits.mfaSetupAccount.resetKey('mfa-setup:' + String(alice.user._id));

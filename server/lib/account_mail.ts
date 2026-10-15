@@ -691,8 +691,8 @@ export const RECOVERY_NEW: Record<string, Email> = {
 
 /**
  * Sent when someone entered the password but did not finish the second step:
- * a sign-in ran out of tries, or the account's limit on wrong codes was
- * reached (server/lib/second_step.ts noticeUnfinished), at most once a day.
+ * a sign-in ran out of tries, or a round of wrong codes was used up
+ * (server/lib/code_lock.ts; second_step.ts noticeUnfinished), at most once a day.
  * Like the other notices it says nothing of where the tries came from.
  * {account}, {forgot} and {app}.
  */
@@ -702,7 +702,7 @@ export const SECOND_STEP_UNFINISHED: Record<string, Email> = {
     text:
       'Someone entered the right password for the Glazecalc account {account}, but did not finish the second step of signing in. Your second step kept them out.\n\n' +
       'If this was you, there is nothing else to do. If not, someone knows your password: change it right away. You can reset it at {forgot}\n\n' +
-      'While they keep trying, signing in with a code from your authenticator app or a recovery code may be refused for up to 15 minutes at a time; signing in with a passkey still works. Resetting your password by email ends it: their unfinished sign-ins end, and they no longer have the password.\n' +
+      'After 10 wrong codes from an authenticator app, codes are refused for an hour; after 10 more, for a day; and then for a week each time. A passkey or a recovery code still works while codes are refused. Resetting your password by email ends it: their unfinished sign-ins end, they no longer have the password, and codes work again.\n' +
       '\n-- \nGlazecalc, {app}\n'
   }
 };

@@ -61,7 +61,7 @@ export const MESSAGES = {
   'second-step-tries': 'Too many wrong codes. Please enter your password again.',
   'second-step-busy': 'Your last try is still being checked. Please wait a moment and try again.',
   'second-step-account-limit':
-    'Too many wrong codes have been tried for this account. Please wait up to 15 minutes and try again, or sign in with a passkey. If this keeps happening, someone else may know your password: reset it by email from the sign-in page.',
+    'Too many wrong codes from an authenticator app have been entered for this account, so codes are refused for up to {wait, select, hour {an hour} day {a day} other {a week}}. A passkey or a recovery code still works. If you did not enter them, someone knows your password: reset it by email from the sign-in page, which also ends this.',
   'code-needed': 'Please enter the 6-digit code from your authenticator app.',
   'code-wrong':
     "That code is not correct. Please check your authenticator app and try again. If every code is wrong, the phone's clock may be off: set its date and time automatically.",

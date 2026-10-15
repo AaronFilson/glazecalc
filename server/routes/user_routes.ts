@@ -9,7 +9,8 @@
 //   PUT    /api/shelf             { shelf: [key] } in place of the list
 //   PUT    /api/usersettings/:id  { displayname }; the email changes by a link (routes/email_routes.ts)
 //   DELETE /api/deleteuser/:id    { password } removes the account and everything in it; with
-//                                  two-step sign-in on, a current factor too (lib/mfa.d.ts IdentityProof)
+//                                  two-step sign-in on, a current factor too (lib/mfa.d.ts IdentityProof).
+//                                  Always the signed-in person's: an admin deleting another account gives their own.
 import express, { type NextFunction, type Request, type Response } from 'express';
 import mongoose from 'mongoose';
 import { deleteAccount } from '../lib/account_data.ts';
@@ -122,20 +123,22 @@ const selfOrAdmin = (req: Request, res: Response, next: NextFunction) => {
 // link sent to the new one is opened (routes/email_routes.ts), for admins too.
 const SETTABLE_FIELDS = ['displayname'];
 
-// Deleting your own account needs your current password (body.password), and
-// with two-step sign-in on a current factor as well (decision 6), so a stolen
-// sign-in token alone cannot remove it. Admins acting on another account are
-// exempt. Resolves with the refusal, or null when it may go ahead.
-const ownIdentityRefused = async (req: Request): Promise<{ status: 400 | 401; body: object } | null> => {
+// Deleting an account needs the current password of whoever is signed in
+// (body.password), and with two-step sign-in on a current factor as well
+// (decision 6), so a stolen sign-in token alone cannot remove it. An admin
+// deleting another account confirms with their own password and factor: an
+// admin's stolen session must not be able to delete anyone's account either
+// (the owner's decision of 2026-10-14). Resolves with the refusal, or null
+// when it may go ahead.
+const identityRefused = async (req: Request): Promise<{ status: 400 | 401 | 409 | 429; body: object } | null> => {
   const signedIn = userOf(req);
-  if (req.params.id !== String(signedIn._id)) return null;
-  // A trial has no password; its token alone can discard it.
+  // A trial has no password; its token alone can discard it (selfOrAdmin: only itself).
   if (signedIn.guest) return null;
   const user = await User.findById(signedIn._id);
   if (user && mfaOn(user)) {
     const check = await confirmChange(req, req.body);
     if (check.ok) return null;
-    return { status: check.status, body: say(check.code, undefined, check.field ? { field: check.field } : {}) };
+    return { status: check.status, body: say(check.code, check.params, check.field ? { field: check.field } : {}) };
   }
   if (await password.matches(((req.body ?? {}) as { password?: unknown }).password, user?.password)) return null;
   // 400 rather than 401: the sign-in is fine, and a 401 would sign the user out.
@@ -164,7 +167,7 @@ userRouter.put(
 );
 
 userRouter.delete('/deleteuser/:id', jwtAuth, selfOrAdmin, limits.passwordCheck, express.json(), async (req, res) => {
-  const refused = await ownIdentityRefused(req);
+  const refused = await identityRefused(req);
   if (refused) return res.status(refused.status).json(refused.body);
   const id = req.params.id as string;
   const deleted = await deleteAccount(id);

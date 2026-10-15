@@ -38,12 +38,14 @@ services:
       NOINDEX: '1'
     ports:
       - '127.0.0.1:3001:3000'
-    # Production's Compose network, where its MongoDB answers as "mongo".
-    # MongoDB's port stays unpublished on the host. Nothing on that network
-    # looks up "app" (production's app is reached by nginx on 127.0.0.1:3000),
-    # so this app's name there does not matter.
+    # Its own network (default: the way out to the mail server, and the port
+    # nginx uses), and production's `data` network, where production's MongoDB
+    # answers as "mongo" and nothing else is: production's app is not on it, so
+    # this app cannot reach it, nor pass it a made-up client address.
+    # MongoDB's port stays unpublished on the host.
     networks:
-      - production
+      - default
+      - data
     logging:
       driver: local
       options:
@@ -51,9 +53,11 @@ services:
         max-file: '3'
 
 networks:
-  # Made by production's stack (compose.prod.yaml, project glazecalc). External:
-  # staging never creates or removes it. While staging runs, production's
-  # `docker compose down` cannot remove it either; staging.sh stop first.
-  production:
-    name: glazecalc_default
+  default:
+  # Made by production's stack (compose.prod.yaml, project glazecalc), internal
+  # and with only MongoDB on it. External: staging never creates or removes it.
+  # While staging runs, production's `docker compose down` cannot remove it
+  # either; staging.sh stop first.
+  data:
+    name: glazecalc_data
     external: true

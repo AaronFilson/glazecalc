@@ -116,7 +116,7 @@ passwordRouter.put(
       const check = await confirmChange(req, { ...body, password: body.current });
       if (!check.ok) {
         const field = check.field === 'password' ? 'current' : check.field;
-        return res.status(check.status).json(say(check.code, undefined, field ? { field } : {}));
+        return res.status(check.status).json(say(check.code, check.params, field ? { field } : {}));
       }
       // 400 rather than 401: the user is signed in, and a 401 would sign them out.
     } else if (!(await password.matches(body.current, user.password))) {

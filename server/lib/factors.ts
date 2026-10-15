@@ -5,6 +5,7 @@ import type { Request } from 'express';
 import type { AuthenticationResponseJSON } from '@simplewebauthn/server';
 import type { FactorKind } from '../../lib/mfa.js';
 import * as accountMail from './account_mail.ts';
+import * as codeLock from './code_lock.ts';
 import { userOf } from './jwt_auth.ts';
 import * as log from './log.ts';
 import * as mfaKey from './mfa_key.ts';
@@ -107,7 +108,13 @@ export const checkFactor = async (
 /** What confirmIdentity came to: the user (loaded with password and mfa) or a reply. */
 export type IdentityCheck =
   | { ok: true; user: UserDocument; used?: FactorKind }
-  | { ok: false; status: 400 | 401; code: MessageCode; field?: 'password' | 'code' };
+  | {
+      ok: false;
+      status: 400 | 401 | 409 | 429;
+      code: MessageCode;
+      field?: 'password' | 'code';
+      params?: Record<string, string | number>;
+    };
 
 /**
  * Takes the passkey-confirm challenge a passkey response answers, once: the
@@ -153,9 +160,24 @@ export const confirmIdentity = async (req: Request, body: unknown): Promise<Iden
   if (fields.length !== 1) return { ok: false, status: 400, code: 'factor-needed' };
   const passkeyChallenge =
     fields[0] === 'passkey' ? await takeConfirmChallenge(user, (body as Proof).passkey) : undefined;
+  // A code counts against the account as at sign-in, and is refused while a
+  // round's refusal lasts (server/lib/code_lock.ts).
+  let codeTry: codeLock.CodeTry | undefined;
+  if (codeLock.isCodeTry(body)) {
+    const taken = await codeLock.take(user._id);
+    if (!taken.ok) {
+      if (taken.code === 'second-step-busy') return { ok: false, status: 409, code: taken.code };
+      return { ok: false, status: 429, code: taken.code, params: taken.params, field: 'code' };
+    }
+    codeTry = taken.codeTry;
+  }
   const check = await checkFactor(user, body, { passkeyChallenge });
   if (!check.ok) {
+    if (codeTry?.locked) {
+      return { ok: false, status: 429, code: 'second-step-account-limit', params: codeTry.locked, field: 'code' };
+    }
     return { ok: false, status: 400, code: check.code, ...(fields[0] !== 'passkey' ? { field: 'code' as const } : {}) };
   }
+  if (codeTry) await codeLock.right(codeTry);
   return { ok: true, user, used: check.kind };
 };
