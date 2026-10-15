@@ -29,7 +29,7 @@ const withTotp = async () => {
   const added = await api()
     .post('/mfa/totp')
     .set(auth(account))
-    .send({ code: totp.codeAt(secret, totp.stepAt()) });
+    .send({ setupId: started.body.setupId, code: totp.codeAt(secret, totp.stepAt()) });
   expect(added, JSON.stringify(added.body)).to.have.status(200);
   account.token = sessionToken(added)!;
   return { account, secret, codes: added.body.recoveryCodes as string[] };

@@ -47,39 +47,42 @@ const enrolTotp = async (who: Account) => {
   const started = await mfa(who, 'post', '/totp/start', { password: who.password });
   expect(started, JSON.stringify(started.body)).to.have.status(200);
   const secret = totp.fromBase32(started.body.secret);
-  const added = await mfa(who, 'post', '/totp', { code: totp.codeAt(secret, totp.stepAt()) });
+  const added = await mfa(who, 'post', '/totp', {
+    setupId: started.body.setupId,
+    code: totp.codeAt(secret, totp.stepAt())
+  });
   expect(added, JSON.stringify(added.body)).to.have.status(200);
   follow(who, added);
   return { secret, codes: added.body.recoveryCodes as string[] };
 };
 
-/** Adds a passkey from a new soft authenticator (the first factor, so with the password alone). */
-const addPasskey = async (who: Account) => {
-  const options = await mfa(who, 'post', '/passkeys/options', { password: who.password });
+/** Confirms the identity for adding a passkey (the grant), and asks for the browser's options. */
+const passkeyStart = async (who: Account, proof: object = {}) => {
+  const granted = await mfa(who, 'post', '/passkeys/grant', { password: who.password, ...proof });
+  expect(granted, JSON.stringify(granted.body)).to.have.status(200);
+  const grant = granted.body.grant as string;
+  const options = await mfa(who, 'post', '/passkeys/options', { grant });
   expect(options, JSON.stringify(options.body)).to.have.status(200);
+  return { grant, options: options.body.options };
+};
+
+/**
+ * Adds a passkey from a new soft authenticator: with the password alone for
+ * the first factor, or with a proof.
+ */
+const addPasskeyWith = async (who: Account, proof: object = {}) => {
+  const { grant, options } = await passkeyStart(who, proof);
   const authenticator = soft();
   const added = await mfa(who, 'post', '/passkeys', {
-    response: authenticator.register(options.body.options),
+    grant,
+    response: authenticator.register(options),
     name: 'Laptop'
   });
   expect(added, JSON.stringify(added.body)).to.have.status(200);
   follow(who, added);
   return { authenticator, codes: added.body.recoveryCodes as string[] };
 };
-
-/** Adds a passkey to an account that already has a factor, with a proof. */
-const addPasskeyWith = async (who: Account, proof: object) => {
-  const options = await mfa(who, 'post', '/passkeys/options', { password: who.password, ...proof });
-  expect(options, JSON.stringify(options.body)).to.have.status(200);
-  const authenticator = soft();
-  const added = await mfa(who, 'post', '/passkeys', {
-    response: authenticator.register(options.body.options),
-    name: 'Laptop'
-  });
-  expect(added, JSON.stringify(added.body)).to.have.status(200);
-  follow(who, added);
-  return { authenticator };
-};
+const addPasskey = (who: Account) => addPasskeyWith(who);
 
 /**
  * A code the account will take now. Enrolling took this step's code, and a
@@ -191,24 +194,71 @@ describe('two-step sign-in end to end (real factors)', () => {
       expect(step.methods).to.eql({ totp: false, passkey: true, recovery: true });
       expect(step.passkeyOptions!.allowCredentials!.map((entry) => entry.id)).to.eql([authenticator.id]);
 
-      // Another challenge, a spoilt signature, another origin: refused.
+      // Another challenge, a spoilt signature, another origin: refused. Each
+      // try uses up the challenge it answered, and the reply offers a new one.
+      let challenge = step.passkeyOptions!.challenge;
       for (const twist of [
         { challenge: 'not-the-offered-challenge' },
         { badSignature: true },
         { origin: 'https://evil.example' }
       ]) {
-        const res = await secondStep(step.pending, {
-          passkey: authenticator.assert(step.passkeyOptions!.challenge, twist)
-        });
+        const res = await secondStep(step.pending, { passkey: authenticator.assert(challenge, twist) });
         expect(res, JSON.stringify(twist)).to.have.status(401);
         expect(res.body.code).to.eql('passkey-failed');
+        expect(res.body.passkeyOptions.allowCredentials.map((entry: { id: string }) => entry.id)).to.eql([
+          authenticator.id
+        ]);
+        expect(res.body.passkeyOptions.challenge).to.be.a('string').and.not.eql(challenge);
+        challenge = res.body.passkeyOptions.challenge;
       }
       // User verification is preferred, not required: the password was the first step.
       const res = await secondStep(step.pending, {
-        passkey: authenticator.assert(step.passkeyOptions!.challenge, { userVerified: false })
+        passkey: authenticator.assert(challenge, { userVerified: false })
       });
       expect(res, JSON.stringify(res.body)).to.have.status(200);
       expect((await verify(sessionToken(res))).body).to.include({ email: alice.email, mfa: true });
+    });
+
+    it('takes an assertion once: a challenge a passkey try answered never works again', async () => {
+      const alice = await account();
+      // A synced passkey's counter stays 0, so only the challenge stops a replay.
+      const authenticator = new SoftAuthenticator({ rpId: site.rpId(), origin: site.origin() }, { counts: false });
+      const { grant, options } = await passkeyStart(alice);
+      const added = await mfa(alice, 'post', '/passkeys', {
+        grant,
+        response: authenticator.register(options),
+        name: 'A'
+      });
+      expect(added, JSON.stringify(added.body)).to.have.status(200);
+      const step = await passwordStep(alice);
+      const offered = step.passkeyOptions!.challenge;
+      // A code try leaves the challenge alone.
+      expect((await secondStep(step.pending, { recoveryCode: 'zzzzz-zzzzz' })).body.passkeyOptions).to.eql(undefined);
+      const good = authenticator.assert(offered);
+      const spoilt = await secondStep(step.pending, { passkey: authenticator.assert(offered, { badSignature: true }) });
+      expect(spoilt.body.code).to.eql('passkey-failed');
+      // The good assertion for the challenge the failed try answered: refused.
+      const replay = await secondStep(step.pending, { passkey: good });
+      expect(replay).to.have.status(401);
+      expect(replay.body.code).to.eql('passkey-failed');
+      const fresh = replay.body.passkeyOptions.challenge;
+      expect(await secondStep(step.pending, { passkey: authenticator.assert(fresh) })).to.have.status(200);
+    });
+  });
+
+  describe('with right answers at the same moment', () => {
+    it('uses up only the recovery code of the try that signs in', async () => {
+      const alice = await account();
+      const { codes } = await enrolTotp(alice);
+      const { pending } = await passwordStep(alice);
+      const results = await Promise.all(codes.slice(0, 4).map((recoveryCode) => secondStep(pending, { recoveryCode })));
+      expect(results.filter((res) => res.status === 200)).to.have.length(1);
+      for (const res of results.filter((one) => one.status !== 200)) {
+        expect(['second-step-busy', 'second-step-expired']).to.include(res.body.code);
+      }
+      expect(
+        (await mfa({ token: sessionToken(results.find((res) => res.status === 200)!)! }, 'get', '')).body.codesLeft
+      ).to.eql(9);
     });
   });
 
@@ -359,7 +409,7 @@ describe('two-step sign-in end to end (real factors)', () => {
       const wrongCode = String((Number(totp.codeAt(secret, totp.stepAt())) + 1) % 1000000).padStart(6, '0');
       const routes: Array<['post' | 'delete', string]> = [
         ['post', '/recovery-codes'],
-        ['post', '/passkeys/options'],
+        ['post', '/passkeys/grant'],
         ['delete', '/totp']
       ];
       for (const [method, path] of routes) {
@@ -401,7 +451,10 @@ describe('two-step sign-in end to end (real factors)', () => {
       expect((await mfa(alice, 'get', '')).body).to.include({ on: false, emailConfirmed: true });
       const started = await mfa(alice, 'post', '/totp/start', { password: alice.password });
       const secret = totp.fromBase32(started.body.secret);
-      const added = await mfa(alice, 'post', '/totp', { code: totp.codeAt(secret, totp.stepAt()) });
+      const added = await mfa(alice, 'post', '/totp', {
+        setupId: started.body.setupId,
+        code: totp.codeAt(secret, totp.stepAt())
+      });
       expect(added.body).to.include({ code: 'totp-added' });
       expect(added.body.msg).to.be.a('string');
       expect(added.body.recoveryCodes).to.have.length(10);

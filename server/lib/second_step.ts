@@ -14,7 +14,9 @@
 // The PendingSignIn record (server/models/pending_sign_in.ts), found by the
 // jti, makes it single use and counts tries: after SECOND_STEP_TRIES the
 // password must be entered again. A changed tokenVersion (a reset in between)
-// ends it.
+// ends it. Each try holds the record while its factor is checked (reserve), so
+// a right factor is used up only for a sign-in that finishes, and a passkey's
+// challenge is taken by the try that answers it.
 import crypto from 'node:crypto';
 import jwt from 'jsonwebtoken';
 import type { Request } from 'express';
@@ -117,34 +119,92 @@ export const load = async (token: unknown): Promise<Loaded> => {
   return { ok: true, pending, user };
 };
 
+/** How long a try holds the pending sign-in while its factor is checked (far longer than a check takes). */
+export const HOLD_SECONDS = 30;
+
+/** A try's hold on a pending sign-in: its random id, and until when no other try can take the record. */
+export interface Hold {
+  id: string;
+  until: Date;
+  /** The passkey challenge the try answers, taken off the record (a passkey try only). */
+  challenge?: string;
+}
+
+export type Reserved = { ok: true; hold: Hold } | { ok: false; code: MessageCode };
+
 /**
- * Counts a try, atomically, before its factor is checked, so tries sent at the
- * same moment are all counted. Resolves false when SECOND_STEP_TRIES were
- * already used (or the record has ended), and then the factor is not checked.
- * Updates pending.attempts.
+ * Holds the pending sign-in for one try, before its factor is checked, so a
+ * right factor (a recovery code, a code's 30-second step) is never used up for
+ * a sign-in that then cannot finish. One atomic update counts the try, sets the
+ * hold and, for a passkey try, takes the challenge off the record, so an
+ * assertion answers its challenge once (a synced passkey's counter stays 0, so
+ * the counter cannot stop a replay). Tries sent at the same moment are all
+ * counted or refused: while one holds the record, the others get
+ * 'second-step-busy' and are neither counted nor checked. Otherwise
+ * 'second-step-tries' when SECOND_STEP_TRIES were already used, or
+ * 'second-step-expired'. Updates pending.attempts.
  */
-export const countTry = async (pending: PendingSignIn): Promise<boolean> => {
-  const counted = await PendingSignInModel.findOneAndUpdate(
-    { _id: pending._id, usedAt: null, expiresAt: { $gt: new Date() }, attempts: { $lt: SECOND_STEP_TRIES } },
-    { $inc: { attempts: 1 } },
-    { returnDocument: 'after' }
+export const reserve = async (pending: PendingSignIn, options: { passkey: boolean }): Promise<Reserved> => {
+  const now = new Date();
+  const hold: Hold = {
+    id: crypto.randomBytes(16).toString('base64url'),
+    until: new Date(now.getTime() + HOLD_SECONDS * 1000)
+  };
+  const before = await PendingSignInModel.findOneAndUpdate(
+    {
+      _id: pending._id,
+      usedAt: null,
+      expiresAt: { $gt: now },
+      attempts: { $lt: SECOND_STEP_TRIES },
+      $or: [{ heldUntil: null }, { heldUntil: { $lte: now } }]
+    },
+    {
+      $inc: { attempts: 1 },
+      $set: { holdId: hold.id, heldUntil: hold.until },
+      ...(options.passkey && { $unset: { challenge: 1 } })
+    },
+    // The record as it was, for the challenge this try answers.
+    { returnDocument: 'before' }
   );
-  if (!counted) return false;
-  pending.attempts = counted.attempts;
-  return true;
+  if (before) {
+    pending.attempts = before.attempts + 1;
+    if (options.passkey && before.challenge) hold.challenge = before.challenge;
+    return { ok: true, hold };
+  }
+  const current = await PendingSignInModel.findById(pending._id).lean();
+  if (!current || current.usedAt || !(current.expiresAt > now)) return expired;
+  if (current.attempts >= SECOND_STEP_TRIES) return { ok: false, code: 'second-step-tries' };
+  return { ok: false, code: 'second-step-busy' };
 };
 
 /** Whether a pending sign-in has no tries left. */
 export const triesUsed = (pending: PendingSignIn): boolean => pending.attempts >= SECOND_STEP_TRIES;
 
-/** Ends the pending sign-in, atomically; resolves false if it was already used (a race) or has expired. */
-export const finish = async (pending: PendingSignIn): Promise<boolean> => {
-  const now = new Date();
-  const result = await PendingSignInModel.updateOne(
-    { _id: pending._id, usedAt: null, expiresAt: { $gt: now } },
-    { $set: { usedAt: now } }
+/**
+ * Lets go of a pending sign-in after a wrong try (the try stays counted).
+ * `challenge`: a new passkey challenge for the next try, after a passkey try
+ * took the old one.
+ */
+export const release = async (pending: PendingSignIn, hold: Hold, challenge?: string): Promise<void> => {
+  await PendingSignInModel.updateOne(
+    { _id: pending._id, holdId: hold.id },
+    { $unset: { holdId: 1, heldUntil: 1 }, ...(challenge && { $set: { challenge } }) }
   );
-  return result.modifiedCount === 1;
+};
+
+/**
+ * Ends the pending sign-in after a right try. The hold made the record this
+ * try's alone, so it ends even if it expired during the check; false only when
+ * the hold itself ran out and another try took the record.
+ */
+export const finish = async (pending: PendingSignIn, hold: Hold): Promise<boolean> => {
+  const result = await PendingSignInModel.updateOne(
+    { _id: pending._id, holdId: hold.id },
+    { $set: { usedAt: new Date() }, $unset: { holdId: 1, heldUntil: 1 } }
+  );
+  if (result.modifiedCount === 1) return true;
+  // Gone: MongoDB deleted it on expiry. While the hold lasted no other try could have used it.
+  return Date.now() < hold.until.getTime() && !(await PendingSignInModel.exists({ _id: pending._id }));
 };
 
 /**

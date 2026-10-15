@@ -11,13 +11,22 @@
 //   GET    /api/mfa                     MfaSummary
 //   POST   /api/mfa/confirm/options     → { options }  a passkey challenge for an IdentityProof
 //   POST   /api/mfa/totp/start  IdentityProof         → TotpStartResponse (secret held 10 minutes)
-//   POST   /api/mfa/totp        { code }              → RecoveryCodesResponse ('totp-added')
+//   POST   /api/mfa/totp        { setupId, code }     → RecoveryCodesResponse ('totp-added')
 //   DELETE /api/mfa/totp        IdentityProof         ('totp-removed' or 'mfa-off')
-//   POST   /api/mfa/passkeys/options IdentityProof    → { options }
-//   POST   /api/mfa/passkeys    { response, name }    → RecoveryCodesResponse ('passkey-added')
+//   POST   /api/mfa/passkeys/grant IdentityProof      → PasskeyGrantResponse (5 minutes)
+//   POST   /api/mfa/passkeys/options { grant }        → { options }
+//   POST   /api/mfa/passkeys    { grant, response, name } → RecoveryCodesResponse ('passkey-added')
 //   PATCH  /api/mfa/passkeys/:id { name }             ('passkey-renamed'; no password)
 //   DELETE /api/mfa/passkeys/:id IdentityProof        ('passkey-removed' or 'mfa-off')
 //   POST   /api/mfa/recovery-codes IdentityProof      → RecoveryCodesResponse ('recovery-codes-made')
+//
+// The two changes that take two requests confirm the identity in the first and
+// keep it until the change is made, so a factor spent on the confirmation is
+// not wasted when the browser's step or the app's first code fails: an
+// authenticator app's setup (its id, 10 minutes), and adding a passkey (a
+// change grant, server/lib/change_grant.ts, 5 minutes). Each is for one
+// account, the newest replaces the last (another tab's), and a change to the
+// account's tokenVersion in between ends it ('mfa-start-again').
 //
 // Limits: limits.changePassword per address and limits.passwordCheck per
 // account on every route that checks a password; limits.secondStep and
@@ -35,8 +44,9 @@ import express, { type Request, type Response } from 'express';
 import mongoose from 'mongoose';
 import type { RegistrationResponseJSON } from '@simplewebauthn/server';
 import { PASSKEY_LIMIT, PASSKEY_NAME_MAX, SECOND_STEP_TRIES } from '../../lib/mfa.js';
-import type { MfaSummary, TotpStartResponse } from '../../lib/mfa.js';
+import type { MfaSummary, PasskeyGrantResponse, TotpStartResponse } from '../../lib/mfa.js';
 import * as accountMail from '../lib/account_mail.ts';
+import * as changeGrant from '../lib/change_grant.ts';
 import * as factors from '../lib/factors.ts';
 import { notGuest } from '../lib/guest_limits.ts';
 import jwtAuth, { keepsSignIn, userOf } from '../lib/jwt_auth.ts';
@@ -237,21 +247,24 @@ mfaRouter.post('/totp/start', ...proving, async (req, res) => {
   const secretBytes = totp.newSecret();
   const secret = totp.toBase32(secretBytes);
   secretBytes.fill(0);
-  // One setup at a time: an earlier secret no longer counts.
+  // One setup at a time: an earlier secret (another tab's) no longer counts.
   await AuthChallenge.deleteMany({ userId: user._id, kind: 'totp-add' });
-  await AuthChallenge.create({
+  const setup = await AuthChallenge.create({
     userId: user._id,
     kind: 'totp-add',
     secret: mfaKey.encrypt(secret, String(user._id)),
+    tokenVersion: user.tokenVersion || 0,
     expiresAt: new Date(Date.now() + TOTP_ADD_MINUTES * MINUTE)
   });
   const uri = totp.uri(secret, user.email);
-  const reply: TotpStartResponse = { secret, uri, qr: qr.svgDataUrl(uri) };
+  const reply: TotpStartResponse = { secret, uri, qr: qr.svgDataUrl(uri), setupId: String(setup._id) };
   return res.status(200).json(reply);
 });
 
 // Part two: the first code from the app turns it on. No password again: the
-// identity was confirmed for part one, and the secret is tied to this account.
+// identity was confirmed for part one, and the setup is tied to this account
+// and to its tokenVersion then. Only the newest setup counts: a code for one
+// another tab replaced answers 'mfa-start-again', not 'code-wrong'.
 mfaRouter.post(
   '/totp',
   jwtAuth,
@@ -261,18 +274,24 @@ mfaRouter.post(
   express.json(),
   async (req, res) => {
     const userId = userOf(req)._id;
-    const code = ((req.body ?? {}) as { code?: unknown }).code;
+    const { code, setupId } = (req.body ?? {}) as { code?: unknown; setupId?: unknown };
     if (typeof code !== 'string' || !code.trim()) {
       return res.status(400).json(say('code-needed', undefined, { field: 'code' }));
     }
+    if (typeof setupId !== 'string' || !mongoose.isValidObjectId(setupId)) {
+      return res.status(400).json(say('mfa-start-again'));
+    }
     const now = new Date();
     const pending = await AuthChallenge.findOne({
+      _id: setupId,
       userId,
       kind: 'totp-add',
       usedAt: null,
       expiresAt: { $gt: now }
-    }).sort({ createdAt: -1 });
+    });
     if (!pending?.secret) return res.status(400).json(say('mfa-start-again'));
+    const version = changeGrant.versionIs(pending.tokenVersion ?? 0);
+    if (!(await User.exists({ _id: userId, ...version }))) return res.status(400).json(say('mfa-start-again'));
 
     let step: number | null = null;
     try {
@@ -308,11 +327,14 @@ mfaRouter.post(
     if (current.emailUnverified) return res.status(400).json(say('mfa-needs-confirmed-email'));
     const added = await addFactor(
       userId,
-      { 'mfa.totp': { $exists: false } },
+      { 'mfa.totp': { $exists: false }, ...version },
       // The code just used counts as the last one taken, so it cannot sign in again.
       { $set: { 'mfa.totp': { secret: pending.secret, lastStep: step, addedAt: now, lastUsedAt: now } } }
     );
-    if (!added) return res.status(400).json(say('totp-exists'));
+    if (!added) {
+      const exists = await User.exists({ _id: userId, 'mfa.totp': { $exists: true } });
+      return res.status(400).json(say(exists ? 'totp-exists' : 'mfa-start-again'));
+    }
 
     renew(req, res, added.user);
     res.status(200).json(say('totp-added', undefined, added.codes ? { recoveryCodes: added.codes } : {}));
@@ -343,50 +365,82 @@ mfaRouter.delete('/totp', ...proving, async (req, res) => {
   return undefined;
 });
 
-// Adding a passkey, part one: the options for the browser, excluding the
-// passkeys the account has, so one authenticator is not added twice.
-mfaRouter.post('/passkeys/options', ...proving, async (req, res) => {
-  const state = await stateOf(userOf(req)._id);
-  if (!state) return res.status(404).json(say('no-user'));
-  if (state.emailUnverified) return res.status(400).json(say('mfa-needs-confirmed-email'));
-  if ((state.mfa?.passkeys?.length ?? 0) >= PASSKEY_LIMIT) return res.status(400).json(tooMany());
+/** Why a passkey cannot be added now (no account, an unconfirmed email, no room), or null when it can. */
+const cannotAddPasskey = async (userId: mongoose.Types.ObjectId) => {
+  const state = await stateOf(userId);
+  if (!state) return { status: 404, body: say('no-user') };
+  if (state.emailUnverified) return { status: 400, body: say('mfa-needs-confirmed-email') };
+  if ((state.mfa?.passkeys?.length ?? 0) >= PASSKEY_LIMIT) return { status: 400, body: tooMany() };
+  return null;
+};
+
+// Adding a passkey, part one: the identity, confirmed once. The grant it gives
+// lets the page ask for options and save the passkey as often as the browser's
+// step needs, for a few minutes, without confirming again (and without using
+// up another recovery code). The page asks for the passkey with a click of its
+// own: some browsers allow one WebAuthn prompt per click, and a passkey may
+// have just confirmed the identity.
+mfaRouter.post('/passkeys/grant', ...proving, async (req, res) => {
+  const refused = await cannotAddPasskey(userOf(req)._id);
+  if (refused) return res.status(refused.status).json(refused.body);
   const check = await confirm(req);
   if (!check.ok) return refuse(res, check);
-  const { user } = check;
+  const { grant, expiresAt } = await changeGrant.issue(check.user, 'passkey-add');
+  const reply: PasskeyGrantResponse = { grant, expiresAt: expiresAt.toISOString() };
+  return res.status(200).json(reply);
+});
+
+// Part two: the options for the browser, excluding the passkeys the account
+// has, so one authenticator is not added twice. One challenge at a time per
+// account: an earlier one (another tab's, or a cancelled try) no longer counts.
+mfaRouter.post('/passkeys/options', jwtAuth, notGuest, limits.secondStep, express.json(), async (req, res) => {
+  const userId = userOf(req)._id;
+  const refused = await cannotAddPasskey(userId);
+  if (refused) return res.status(refused.status).json(refused.body);
+  const grant = await changeGrant.find(userId, ((req.body ?? {}) as { grant?: unknown }).grant, 'passkey-add');
+  if (!grant) return res.status(400).json(say('mfa-start-again'));
+  const user = await User.findById(userId, { email: 1, mfa: 1 });
+  if (!user) return res.status(404).json(say('no-user'));
 
   // The WebAuthn user handle is made once and kept: never the ObjectId.
   let handle = user.mfa?.handle;
   if (!handle) {
     await User.updateOne(
-      { _id: user._id, 'mfa.handle': { $exists: false } },
+      { _id: userId, 'mfa.handle': { $exists: false } },
       { $set: { 'mfa.handle': webauthn.newHandle() } }
     );
-    handle = (await User.findById(user._id, { 'mfa.handle': 1 }).lean())?.mfa?.handle;
+    handle = (await User.findById(userId, { 'mfa.handle': 1 }).lean())?.mfa?.handle;
     if (!handle) return res.status(404).json(say('no-user'));
   }
   const options = await webauthn.registrationOptions(user, handle);
+  await AuthChallenge.deleteMany({ userId, kind: 'passkey-add' });
   await AuthChallenge.create({
-    userId: user._id,
+    userId,
     kind: 'passkey-add',
     challenge: options.challenge,
+    grantId: grant._id,
     expiresAt: new Date(Date.now() + CHALLENGE_MINUTES * MINUTE)
   });
   return res.status(200).json({ options });
 });
 
-// Part two: the browser's new passkey, checked against the challenge from part one.
+// Part three: the browser's new passkey, checked against the challenge from
+// part two. The grant is taken only when the passkey is saved; a failure
+// before that leaves it for another try.
 mfaRouter.post('/passkeys', jwtAuth, notGuest, limits.secondStep, express.json(), async (req, res) => {
   const userId = userOf(req)._id;
-  const body = (req.body ?? {}) as { response?: unknown; name?: unknown };
+  const body = (req.body ?? {}) as { grant?: unknown; response?: unknown; name?: unknown };
   const name = nameOf(body.name);
   if (!name) return res.status(400).json(badName());
   const response = body.response as RegistrationResponseJSON | undefined;
   const challenge = response && typeof response === 'object' ? webauthn.challengeOf(response) : null;
   if (!challenge) return res.status(400).json(say('passkey-failed'));
+  const grant = await changeGrant.find(userId, body.grant, 'passkey-add');
+  if (!grant) return res.status(400).json(say('mfa-start-again'));
 
   const now = new Date();
   const taken = await AuthChallenge.findOneAndUpdate(
-    { userId, kind: 'passkey-add', challenge, usedAt: null, expiresAt: { $gt: now } },
+    { userId, kind: 'passkey-add', challenge, grantId: grant._id, usedAt: null, expiresAt: { $gt: now } },
     { $set: { usedAt: now } }
   );
   if (!taken) return res.status(400).json(say('mfa-start-again'));
@@ -396,19 +450,28 @@ mfaRouter.post('/passkeys', jwtAuth, notGuest, limits.secondStep, express.json()
   const current = await User.findById(userId, { emailUnverified: 1, 'mfa.passkeys': 1 }).lean();
   if (!current) return res.status(404).json(say('no-user'));
   if (current.emailUnverified) return res.status(400).json(say('mfa-needs-confirmed-email'));
+  // Taken once, even by two requests at the same moment; given back if the passkey cannot be saved.
+  if (!(await changeGrant.take(grant))) return res.status(400).json(say('mfa-start-again'));
+  const version = changeGrant.versionIs(grant.tokenVersion ?? 0);
   let added: Awaited<ReturnType<typeof addFactor>>;
   try {
     added = await addFactor(
       userId,
-      { ['mfa.passkeys.' + (PASSKEY_LIMIT - 1)]: { $exists: false } },
+      { ['mfa.passkeys.' + (PASSKEY_LIMIT - 1)]: { $exists: false }, ...version },
       { $push: { 'mfa.passkeys': { ...passkey, _id: new mongoose.Types.ObjectId(), name, addedAt: now } } }
     );
   } catch (err) {
+    await changeGrant.giveBack(grant);
     // The passkey is already on an account (this one or another).
     if (isDuplicateKey(err)) return res.status(400).json(say('passkey-failed'));
     throw err;
   }
-  if (!added) return res.status(400).json(tooMany());
+  if (!added) {
+    // The account changed how it signs in meanwhile: confirm again. Otherwise it is full.
+    if (!(await User.exists({ _id: userId, ...version }))) return res.status(400).json(say('mfa-start-again'));
+    await changeGrant.giveBack(grant);
+    return res.status(400).json(tooMany());
+  }
 
   renew(req, res, added.user);
   res.status(200).json(say('passkey-added', undefined, added.codes ? { recoveryCodes: added.codes } : {}));

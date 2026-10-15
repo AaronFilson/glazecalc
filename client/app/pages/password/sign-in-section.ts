@@ -23,7 +23,7 @@ import type { IdentityProof, MfaSummary, PasskeySummary, TotpStartResponse } fro
 import { AuthService, MfaChange } from '../../core/auth.service';
 import { errorMessage } from '../../core/error-message';
 import { IdentityConfirm, passkeyNameCheck } from '../auth/identity-confirm';
-import { PASSKEYS } from '../auth/passkeys';
+import { PASSKEYS, passkeyMessage } from '../auth/passkeys';
 import { serverCode, totpCheck, totpDigits } from '../auth/second-step';
 import { DatePipe } from '../../shared/format-pipes';
 import { FieldCheck, FieldChecks } from '../../shared/field-checks';
@@ -42,6 +42,19 @@ type Change =
  * turned off, or a factor added or removed, on another device.
  */
 const OUT_OF_DATE = ['mfa-not-on', 'totp-none', 'totp-exists', 'passkey-not-found'];
+
+/**
+ * How long the identity, once confirmed, lasts for making the passkey
+ * (server/lib/change_grant.ts GRANT_MINUTES).
+ */
+const PASSKEY_GRANT_MINUTES = 5;
+
+/** A passkey being added: the identity is confirmed, and the browser's step is next. */
+interface PasskeyReady {
+  /** From POST /api/mfa/passkeys/grant; kept in memory only. */
+  grant: string;
+  name: string;
+}
 
 /** An authenticator app's key in groups of four, as people read and type it. */
 export const groupedKey = (secret: string): string => secret.match(/.{1,4}/g)?.join(' ') ?? secret;
@@ -244,7 +257,34 @@ export const groupedKey = (secret: string): string => secret.match(/.{1,4}/g)?.j
               }
             </ul>
           }
-          @if (change()?.kind === 'add-passkey') {
+          @if (passkeyReady(); as ready) {
+            <div class="change-panel passkey-ready">
+              <p id="passkey-ready-text">
+                {{ t('account.mfa.passkeyReadyText', { name: ready.name, minutes: grantMinutes }) }}
+              </p>
+              <div role="alert">
+                @if (passkeyError(); as message) {
+                  <p class="errors-section">{{ message }}</p>
+                }
+              </div>
+              <div class="panel-buttons">
+                <button
+                  #createButton
+                  id="mfa-create-passkey"
+                  type="button"
+                  class="btn btn-primary"
+                  aria-describedby="passkey-ready-text"
+                  [attr.aria-disabled]="busy() || null"
+                  (click)="createPasskey(ready)"
+                >
+                  {{ t('account.mfa.passkeyCreate') }}
+                </button>
+                <button type="button" class="btn btn-light border" (click)="closePasskeyReady()">
+                  {{ t('account.mfa.cancel') }}
+                </button>
+              </div>
+            </div>
+          } @else if (change()?.kind === 'add-passkey') {
             <ng-container [ngTemplateOutlet]="confirm" />
           } @else if (passkeysSupported && !needsEmail()) {
             @if (mfa.passkeys.length >= passkeyLimit) {
@@ -382,6 +422,7 @@ export class SignInSection {
   protected readonly codesLow = RECOVERY_CODES_LOW;
   protected readonly nameMax = PASSKEY_NAME_MAX;
   protected readonly digits = TOTP_DIGITS;
+  protected readonly grantMinutes = PASSKEY_GRANT_MINUTES;
   protected readonly notices = new Notices();
 
   protected readonly summary = signal<MfaSummary | null>(null);
@@ -393,6 +434,9 @@ export class SignInSection {
   protected readonly loadFailed = signal(false);
   protected readonly change = signal<Change | null>(null);
   protected readonly totpSetup = signal<TotpStartResponse | null>(null);
+  /** Adding a passkey, after "confirm it is you": the button that makes it, and what went wrong last. */
+  protected readonly passkeyReady = signal<PasskeyReady | null>(null);
+  protected readonly passkeyError = signal('');
   /** New recovery codes, shown once until the person says they have saved them. */
   protected readonly codes = signal<string[] | null>(null);
   protected readonly copied = signal('');
@@ -444,7 +488,7 @@ export class SignInSection {
       case 'remove-totp':
         return translate('account.mfa.removeApp');
       case 'add-passkey':
-        return translate('account.mfa.addPasskey');
+        return translate('account.mfa.continue');
       case 'remove-passkey':
         return translate('account.mfa.removePasskey');
       default:
@@ -455,6 +499,7 @@ export class SignInSection {
   private readonly heading = viewChild<ElementRef<HTMLElement>>('heading');
   private readonly panelHeading = viewChild<ElementRef<HTMLElement>>('panelHeading');
   private readonly renameField = viewChild<ElementRef<HTMLElement>>('renameField');
+  private readonly createButton = viewChild<ElementRef<HTMLElement>>('createButton');
   /** The id of the button that opened a change, for the focus to go back to if it is cancelled. */
   private opener: string | null = null;
 
@@ -480,6 +525,7 @@ export class SignInSection {
   protected open(change: Change, opener: string): void {
     this.opener = opener;
     this.renaming.set(null);
+    this.passkeyReady.set(null);
     this.change.set(change);
   }
 
@@ -528,9 +574,14 @@ export class SignInSection {
       case 'remove-totp':
         return this.changed(await this.auth.removeTotp(proof));
       case 'add-passkey': {
-        const options = await this.auth.passkeyCreationOptions(proof);
-        const response = await this.passkeys.register(options);
-        return this.changed(await this.auth.addPasskey(response, name));
+        // The browser's step comes with a click of its own: some browsers allow
+        // one passkey prompt per click, and a passkey may just have confirmed it is you.
+        const { grant } = await this.auth.passkeyGrant(proof);
+        this.change.set(null);
+        this.passkeyError.set('');
+        this.passkeyReady.set({ grant, name });
+        this.afterRender(() => this.createButton()?.nativeElement.focus());
+        return;
       }
       case 'remove-passkey':
         return this.changed(await this.auth.removePasskey(change.passkey.id, proof));
@@ -553,11 +604,50 @@ export class SignInSection {
     await this.load();
   }
 
+  /**
+   * Makes the passkey with the grant: the browser's step, then saving it. A
+   * cancelled or failed try can be tried again while the grant lasts, without
+   * confirming again. When it has run out, or the section is out of date, it
+   * says so above the section, which loads again.
+   */
+  protected async createPasskey(ready: PasskeyReady): Promise<void> {
+    if (this.busy()) return;
+    this.busy.set(true);
+    this.passkeyError.set('');
+    try {
+      const options = await this.auth.passkeyCreationOptions(ready.grant);
+      const response = await this.passkeys.register(options);
+      const result = await this.auth.addPasskey(ready.grant, response, ready.name);
+      this.passkeyReady.set(null);
+      await this.changed(result);
+    } catch (err) {
+      const code = serverCode(err);
+      if (code && (code === 'mfa-start-again' || code === 'passkey-limit' || OUT_OF_DATE.includes(code))) {
+        this.notices.error(errorMessage(err, translate('account.mfa.failed')));
+        this.passkeyReady.set(null);
+        this.opener = null;
+        this.afterRender(() => this.heading()?.nativeElement.focus());
+        await this.load();
+      } else {
+        this.passkeyError.set(passkeyMessage(err, translate('account.mfa.failed')));
+      }
+    } finally {
+      this.busy.set(false);
+    }
+  }
+
+  protected closePasskeyReady(): void {
+    this.passkeyReady.set(null);
+    this.passkeyError.set('');
+    this.close(true);
+  }
+
   protected async confirmTotp(): Promise<void> {
-    if (this.busy() || !this.totpChecks.validate()) return;
+    const setup = this.totpSetup();
+    if (this.busy() || !setup || !this.totpChecks.validate()) return;
     this.busy.set(true);
     try {
-      const result = await this.auth.confirmTotp(totpDigits(this.totpCode()));
+      const result = await this.auth.confirmTotp(setup.setupId, totpDigits(this.totpCode()));
       this.totpSetup.set(null);
       await this.changed(result);
     } catch (err) {

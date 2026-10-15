@@ -99,7 +99,8 @@ export const passwordCheck = limiter(15, 10, 'too-many-attempts', {
  */
 export const secondStep = limiter(15, 20, 'too-many-codes', {
   skipSuccessfulRequests: true,
-  requestWasSuccessful: (req, res) => res.statusCode < 400 && req.mfaUserId !== undefined
+  // 409 second-step-busy: turned away while another try is checked, never checked itself.
+  requestWasSuccessful: (req, res) => (res.statusCode < 400 && req.mfaUserId !== undefined) || res.statusCode === 409
 });
 
 /**
@@ -122,6 +123,8 @@ export const secondStepUnloaded = limiter(15, 100, 'too-many-codes', {
 export const secondStepAccount = limiter(15, 10, 'too-many-codes', {
   keyGenerator: (req) => 'mfa:' + String(req.mfaUserId ?? req.user?._id),
   skipSuccessfulRequests: true,
+  // 409 second-step-busy is not a wrong answer: it was never checked.
+  requestWasSuccessful: (_req, res) => res.statusCode < 400 || res.statusCode === 409,
   handler: (req, res, _next, options) => {
     if (req.mfaUserId !== undefined) void secondStepNotice.noticeUnfinished(req.mfaUserId);
     res.status(options.statusCode).send(options.message);

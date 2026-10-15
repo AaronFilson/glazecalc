@@ -6,7 +6,9 @@
 //                      or, with two-step sign-in on, no session and
 //                      { code: 'second-step', methods, pending, expiresAt, passkeyOptions? }
 //   POST /api/signin/second-step  { pending, code | recoveryCode | passkey }  { email, kept }
-//   POST /api/signin/passkey/options               { options }   (passkey-first)
+//                      (a passkey that failed: 401 with new passkeyOptions for
+//                      the next try; another try still being checked: 409)
+//   POST /api/signin/passkey/options              { options }   (passkey-first)
 //   POST /api/signin/passkey      { response }     { email, kept }
 //
 // Two-step sign-in (docs/mfa-plan.md, item 9, decisions 1 and 2): the password
@@ -156,25 +158,42 @@ authRouter.post(
   limits.secondStepAccount,
   async (req: Request, res: Response) => {
     const { pending, user } = res.locals.secondStep as { pending: secondStep.PendingSignIn; user: UserDocument };
-    // Each try is counted before it is checked, so tries sent at once are counted too.
-    if (!(await secondStep.countTry(pending))) return res.status(401).json(say('second-step-tries'));
     const proof = proofIn((req.body ?? {}) as Record<string, unknown>);
-    const check = await secondStep.checks.checkFactor(user, proof, {
-      ...(pending.challenge && { passkeyChallenge: pending.challenge })
-    });
+    const passkeyTry = proof.passkey !== undefined;
+    // Each try is counted, and holds the pending sign-in, before its factor is
+    // checked: a right code is used up only for a sign-in that finishes, and of
+    // two right answers racing, only one is checked and signs in.
+    const reserved = await secondStep.reserve(pending, { passkey: passkeyTry });
+    if (!reserved.ok) return res.status(reserved.code === 'second-step-busy' ? 409 : 401).json(say(reserved.code));
+    const { hold } = reserved;
+    let check: Awaited<ReturnType<typeof secondStep.checks.checkFactor>>;
+    try {
+      check = await secondStep.checks.checkFactor(user, proof, {
+        ...(hold.challenge && { passkeyChallenge: hold.challenge })
+      });
+    } catch (err) {
+      await secondStep.release(pending, hold);
+      throw err;
+    }
     if (!check.ok) {
       // The last try used up: the password again, and the owner hears that
       // someone has it (at most once a day).
       if (secondStep.triesUsed(pending)) {
+        await secondStep.release(pending, hold);
         void secondStep.noticeUnfinished(user._id);
         return res.status(401).json(say('second-step-tries'));
       }
+      // A passkey try took the challenge: the next try answers a new one.
+      const passkeyOptions =
+        passkeyTry && user.mfa?.passkeys?.length
+          ? await secondStep.checks.authenticationOptions(user.mfa.passkeys, 'preferred')
+          : undefined;
+      await secondStep.release(pending, hold, passkeyOptions?.challenge);
       return res
         .status(check.code === 'factor-needed' || check.code === 'code-needed' ? 400 : 401)
-        .json(say(check.code));
+        .json(say(check.code, undefined, passkeyOptions ? { passkeyOptions } : {}));
     }
-    // Single use: of two right answers racing, only one signs in.
-    if (!(await secondStep.finish(pending))) return res.status(401).json(say('second-step-expired'));
+    if (!(await secondStep.finish(pending, hold))) return res.status(401).json(say('second-step-expired'));
     await secondStep.cancelClearRequest(user._id);
     return signedIn(res, user, pending.trialId, pending.keep);
   }

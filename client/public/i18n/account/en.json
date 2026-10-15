@@ -157,6 +157,8 @@
     "password": "Your password",
     "factorLegend": "And your second step",
     "passkeyNext": "Your browser asks for your passkey when you continue.",
+    "passkeyReadyText": "Thank you. Now make the passkey \"{name}\": when you press the button, your browser asks for your fingerprint, face or screen lock, or for your phone. If it does not work, you can try again for {minutes} minutes without confirming again.",
+    "passkeyCreate": "Now add the passkey",
     "useApp": "Use your authenticator app instead",
     "usePasskey": "Use a passkey instead",
     "useRecovery": "Use a recovery code instead",

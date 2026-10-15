@@ -59,6 +59,7 @@ export const MESSAGES = {
   'second-step': 'This account uses two-step sign-in. Please finish signing in with your second step.',
   'second-step-expired': 'Signing in took too long. Please enter your password again.',
   'second-step-tries': 'Too many wrong codes. Please enter your password again.',
+  'second-step-busy': 'Your last try is still being checked. Please wait a moment and try again.',
   'code-needed': 'Please enter the 6-digit code from your authenticator app.',
   'code-wrong':
     "That code is not correct. Please check your authenticator app and try again. If every code is wrong, the phone's clock may be off: set its date and time automatically.",

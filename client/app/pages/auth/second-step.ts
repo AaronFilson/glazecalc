@@ -9,6 +9,7 @@ import {
   computed,
   inject,
   input,
+  linkedSignal,
   output,
   signal,
   viewChild
@@ -16,7 +17,7 @@ import {
 import { FormsModule } from '@angular/forms';
 import { TranslocoDirective, translate } from '@jsverse/transloco';
 import { SECOND_STEP_MINUTES, TOTP_DIGITS } from '../../../../lib/mfa';
-import type { FactorProof, SecondStepResponse } from '../../../../lib/mfa';
+import type { FactorProof, SecondStepFailure, SecondStepResponse } from '../../../../lib/mfa';
 import { AuthService } from '../../core/auth.service';
 import { errorMessage } from '../../core/error-message';
 import { Check, FieldCheck, FieldChecks, required } from '../../shared/field-checks';
@@ -195,8 +196,10 @@ export class SecondStep implements OnInit {
   protected readonly busy = signal(false);
   protected readonly error = signal('');
   protected readonly mode = signal<Mode>('code');
+  /** The passkey challenge to answer: a passkey try uses one up, and a failed one brings the next. */
+  private readonly passkeyOptions = linkedSignal(() => this.step().passkeyOptions);
   protected readonly canPasskey = computed(
-    () => this.step().methods.passkey && !!this.step().passkeyOptions && this.passkeys.supported()
+    () => this.step().methods.passkey && !!this.passkeyOptions() && this.passkeys.supported()
   );
   protected readonly checks = new FieldChecks((): Record<string, Check> =>
     this.mode() === 'code'
@@ -256,7 +259,7 @@ export class SecondStep implements OnInit {
   }
 
   protected async usePasskey(): Promise<void> {
-    const options = this.step().passkeyOptions;
+    const options = this.passkeyOptions();
     if (this.busy() || !options) return;
     this.busy.set(true);
     this.error.set('');
@@ -281,6 +284,9 @@ export class SecondStep implements OnInit {
     } catch (err) {
       const message = errorMessage(err, translate('account.auth.signInFailed'));
       const code = serverCode(err);
+      const next =
+        err instanceof HttpErrorResponse ? (err.error as SecondStepFailure | null)?.passkeyOptions : undefined;
+      if (next) this.passkeyOptions.set(next);
       if (code === 'second-step-expired' || code === 'second-step-tries') {
         this.startOver.emit(message);
       } else if ((code === 'code-wrong' || code === 'code-needed') && 'code' in proof) {

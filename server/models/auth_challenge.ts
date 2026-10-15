@@ -5,8 +5,15 @@ import mongoose from 'mongoose';
 //
 //   totp-add         an authenticator app being set up: its secret, encrypted
 //                    (server/lib/mfa_key.ts), until a first code confirms it
-//                    (10 minutes); `attempts` counts wrong codes
-//   passkey-add      the WebAuthn challenge for a passkey being registered
+//                    (10 minutes); `attempts` counts wrong codes. Its id is
+//                    the setup's id, and `tokenVersion` binds it to the
+//                    account as it was when the setup started
+//   change-grant     a change confirmed with the password and a factor, whose
+//                    second request is still to come (server/lib/change_grant.ts):
+//                    for `purpose`, found by `grantHash`, good while the
+//                    account's tokenVersion is still `tokenVersion` (5 minutes)
+//   passkey-add      the WebAuthn challenge for a passkey being registered,
+//                    under the change-grant `grantId`
 //   passkey-confirm  the challenge for a passkey that confirms a change to how
 //                    the account signs in (confirmIdentity, decision 6)
 //   passkey-signin   the challenge for passkey-first sign-in: no userId yet
@@ -16,8 +23,17 @@ import mongoose from 'mongoose';
 // and a passkey's record is found by its challenge, which the browser's
 // response carries. The pending second step at sign-in has its own collection
 // (pending_sign_in.ts).
-export const CHALLENGE_KINDS = ['totp-add', 'passkey-add', 'passkey-confirm', 'passkey-signin'] as const;
+export const CHALLENGE_KINDS = [
+  'totp-add',
+  'change-grant',
+  'passkey-add',
+  'passkey-confirm',
+  'passkey-signin'
+] as const;
 export type ChallengeKind = (typeof CHALLENGE_KINDS)[number];
+/** What a change-grant is for. */
+export const GRANT_PURPOSES = ['passkey-add'] as const;
+export type GrantPurpose = (typeof GRANT_PURPOSES)[number];
 
 export interface AuthChallengeFields {
   /** The account; absent for passkey-signin. */
@@ -29,6 +45,13 @@ export interface AuthChallengeFields {
   secret?: string;
   /** Wrong codes so far (totp-add). */
   attempts: number;
+  /** totp-add, change-grant: the account's tokenVersion when the identity was confirmed. */
+  tokenVersion?: number;
+  /** change-grant: what it is for, and the SHA-256 (hex) of the grant the page holds. */
+  purpose?: GrantPurpose;
+  grantHash?: string;
+  /** passkey-add: the change-grant it was made under. */
+  grantId?: mongoose.Types.ObjectId;
   expiresAt: Date;
   usedAt?: Date;
 }
@@ -40,6 +63,10 @@ const authChallengeSchema = new mongoose.Schema<AuthChallengeFields>(
     challenge: String,
     secret: String,
     attempts: { type: Number, default: 0 },
+    tokenVersion: Number,
+    purpose: { type: String, enum: GRANT_PURPOSES },
+    grantHash: String,
+    grantId: mongoose.Schema.Types.ObjectId,
     expiresAt: { type: Date, required: true },
     usedAt: Date
   },

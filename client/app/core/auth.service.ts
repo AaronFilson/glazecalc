@@ -8,6 +8,8 @@ import type {
   MfaSummary,
   PasskeyAddRequest,
   PasskeyCreationOptionsResponse,
+  PasskeyGrantResponse,
+  PasskeyOptionsRequest,
   PasskeyRequestOptionsResponse,
   PasskeySignInRequest,
   PublicKeyCredentialCreationOptionsJSON,
@@ -17,6 +19,7 @@ import type {
   SecondStepRequest,
   SecondStepResponse,
   SignedInResponse,
+  TotpConfirmRequest,
   TotpStartResponse
 } from '../../../lib/mfa';
 import { codedMessage } from '../i18n/coded';
@@ -222,9 +225,10 @@ export class AuthService {
     return firstValueFrom(this.http.post<TotpStartResponse>(this.apiBase + '/mfa/totp/start', proof));
   }
 
-  /** Finishes adding an authenticator app with a code it shows. */
-  async confirmTotp(code: string): Promise<MfaChange> {
-    return change(await firstValueFrom(this.http.post<RecoveryCodesResponse>(this.apiBase + '/mfa/totp', { code })));
+  /** Finishes adding an authenticator app with a code it shows, for the setup startTotp began. */
+  async confirmTotp(setupId: string, code: string): Promise<MfaChange> {
+    const body: TotpConfirmRequest = { setupId, code };
+    return change(await firstValueFrom(this.http.post<RecoveryCodesResponse>(this.apiBase + '/mfa/totp', body)));
   }
 
   async removeTotp(proof: IdentityProof): Promise<MfaChange> {
@@ -233,16 +237,26 @@ export class AuthService {
     );
   }
 
-  /** Starts adding a passkey: the options for the browser to make one with. */
-  async passkeyCreationOptions(proof: IdentityProof): Promise<PublicKeyCredentialCreationOptionsJSON> {
+  /**
+   * Starts adding a passkey: confirms it is the owner, once. The grant, kept
+   * only in memory, then asks for options and saves the passkey, as often as
+   * the browser's step needs, for a few minutes.
+   */
+  passkeyGrant(proof: IdentityProof): Promise<PasskeyGrantResponse> {
+    return firstValueFrom(this.http.post<PasskeyGrantResponse>(this.apiBase + '/mfa/passkeys/grant', proof));
+  }
+
+  /** The options for the browser to make a passkey with. */
+  async passkeyCreationOptions(grant: string): Promise<PublicKeyCredentialCreationOptionsJSON> {
+    const body: PasskeyOptionsRequest = { grant };
     const res = await firstValueFrom(
-      this.http.post<PasskeyCreationOptionsResponse>(this.apiBase + '/mfa/passkeys/options', proof)
+      this.http.post<PasskeyCreationOptionsResponse>(this.apiBase + '/mfa/passkeys/options', body)
     );
     return res.options;
   }
 
-  async addPasskey(response: RegistrationResponseJSON, name: string): Promise<MfaChange> {
-    const body: PasskeyAddRequest = { response, name };
+  async addPasskey(grant: string, response: RegistrationResponseJSON, name: string): Promise<MfaChange> {
+    const body: PasskeyAddRequest = { grant, response, name };
     return change(await firstValueFrom(this.http.post<RecoveryCodesResponse>(this.apiBase + '/mfa/passkeys', body)));
   }
 
