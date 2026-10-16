@@ -906,6 +906,22 @@ app's own terms: “glejż” and “riċetti tal-glejż”, “il-formula ta’
 “kalkulatur tal-glejż”. The landing title is “Glazecalc: kalkulatur tal-glejż b’xejn għall-fuħħarin”. `meta.description`
 may carry a single English “(pottery)” after the glaze word; no other English in the descriptions.
 
+### 2.12 Two-step sign-in
+
+Settled in the October 2026 MFA release. Phones and browsers have no Maltese interface for these, so readers meet them in
+English; Maltese software already keeps “password”, “app” and “link”.
+
+| English                                                 | Maltese                                          | Notes                                                                                                                                                                                                                                                                       |
+| ------------------------------------------------------- | ------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| two-step sign-in                                        | id-dħul f’żewġ passi (m)                         | Built on the app's “dħul”/“Idħol”, as Google's “verifika f’żewġ passi” is on its own word. On, off: “mixgħul”, “mitfi”; turn on, off: “ixgħel”, “itfi”; “It-tifi” as a heading.                                                                                             |
+| second step                                             | it-tieni pass (m)                                |                                                                                                                                                                                                                                                                             |
+| authenticator app                                       | app tal-awtentikazzjoni (f)                      | “din l-app”, “issettja app tal-awtentikazzjoni”.                                                                                                                                                                                                                            |
+| passkey                                                 | passkey (f; pl. passkeys)                        | Kept in English like “password”: it is the word on the reader's phone and browser. Not “ċavetta tad-dħul”, which no platform uses. Plurals as 2.8: “2 passkeys”, “11-il passkey”, “20 passkey”.                                                                             |
+| recovery code                                           | kodiċi ta’ rkupru (m; pl. kodiċijiet ta’ rkupru) | “#-il kodiċi ta’ rkupru” from 11 to 19.                                                                                                                                                                                                                                     |
+| setup key (the authenticator app's key, labelled "Key") | ċavetta tas-settjar (f)                          | Google Authenticator's “setup key”, as the other languages have it; not “ċavetta sigrieta”.                                                                                                                                                                                 |
+| password manager; QR code; clipboard                    | maniġer tal-passwords; kodiċi QR; clipboard      |                                                                                                                                                                                                                                                                             |
+| {hours}, {days} in emails                               | “fi żmien {hours} siegħa”, “fi żmien {days} jum” | Emails cannot use plural messages. The values are fixed (24 hours, `LINK_HOURS` in `server/lib/email_links.ts`; 30 days, `BACKUP_DAYS` in `server/lib/account_mail.ts`), and every number from 11 up takes the singular. If either is ever set to 2–10, reword these lines. |
+
 ## 3. Never translated
 
 From terms.md, unchanged:
