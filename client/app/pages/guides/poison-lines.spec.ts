@@ -1,7 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 import { PreferencesService } from '../../core/preferences.service';
 import { testProviders } from '../../testing/test-providers';
-import { PoisonLines } from './poison-lines';
+import { PoisonLines, joinNotes } from './poison-lines';
 
 describe('PoisonLines', () => {
   beforeEach(() => {
@@ -72,5 +72,13 @@ describe('PoisonLines', () => {
     expect(text).toContain('Poison advice: National Poison Information Centre (Ulusal Zehir Danışma Merkezi, UZEM)');
     expect(text).toContain('24 hours, every day');
     expect(text).not.toContain('free');
+  });
+
+  it('closes each note as its language does, never an English ". " after a 。', () => {
+    expect(joinNotes(['Weekdays 9–17', 'Free.', 'Animals too'])).toBe('Weekdays 9–17. Free. Animals too');
+    expect(joinNotes(['平日 9–17 時', '無料'])).toBe('平日 9–17 時。無料');
+    expect(joinNotes(['24 小時。', '免費'])).toBe('24 小時。免費');
+    expect(joinNotes(['평일 9–17시', '무료'])).toBe('평일 9–17시. 무료');
+    expect(joinNotes([])).toBe('');
   });
 });

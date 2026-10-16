@@ -1,0 +1,391 @@
+{
+  "auth": {
+    "signInHeading": "登录",
+    "keepHeading": "保留作品",
+    "signUpHeading": "创建账户",
+    "signInLead": "欢迎回到您的釉料笔记本。",
+    "keepLead": "保留您以 {name} 的身份制作的所有内容：添加电子邮箱和密码。仍然免费。",
+    "signUpLead": "免费。您的配方、原料和笔记保密，仅属于您的账户。",
+    "trialNote": "已有账户？登录后，您以 {name} 的身份制作的内容会并入该账户。初次使用？<signup>创建账户</signup>即可改为保留它。",
+    "email": "电子邮箱",
+    "password": "密码",
+    "passwordHint": "至少 8 个字符。",
+    "confirmation": "确认密码",
+    "keepSignedIn": "在此设备上保持登录",
+    "passwordMissing": "请输入密码。",
+    "createAccount": "创建账户",
+    "signIn": "登录",
+    "haveAccount": "已有账户？<signin>登录</signin>",
+    "privacy": "您的电子邮箱和您保存的内容仅用于运行您的账户，并存储在美国的 Amazon Web Services。<privacy>Glazecalc 如何处理您的数据</privacy>",
+    "dataNotice": "Glazecalc 是一个免费的开源项目，账户保存在美国的服务器上。您无需账户即可阅读指南和试用计算器，也可以运行自己的副本。是否在这里创建账户由您自己决定，项目对此不承担任何责任。<where>账户保存在哪里，以及您的选择</where>",
+    "forgot": "忘记密码？重置密码",
+    "newHere": "初次使用？<signup>创建免费账户</signup>",
+    "signUpFailed": "错误：无法创建账户。",
+    "signInFailed": "错误：无法登录。",
+    "or": "或",
+    "passkeySignIn": "使用通行密钥登录",
+    "passkeyHint": "通行密钥用您的指纹、面容或锁屏代替密码。请在账户页面添加。"
+  },
+  "secondStep": {
+    "heading": "两步验证",
+    "signingInAs": "密码正确。再完成一步，就能以 {email} 的身份登录。",
+    "leadCode": "打开身份验证器应用，输入它为 Glazecalc 显示的验证码。",
+    "leadPasskey": "请使用通行密钥完成登录。",
+    "leadRecovery": "请输入您开启两步验证时保存的某一个恢复码。每个恢复码只能使用一次。",
+    "code": "身份验证器应用中的验证码",
+    "codeHint": "{digits} 位数字。每 30 秒显示一个新验证码。",
+    "codeFormat": "请输入身份验证器应用中的 {digits} 位验证码。",
+    "recoveryCode": "恢复码",
+    "recoveryHint": "格式类似 abcde-12345。",
+    "recoveryMissing": "请输入您的某一个恢复码。",
+    "finish": "完成登录",
+    "usePasskey": "使用通行密钥",
+    "noPasskeysHere": "此浏览器无法使用通行密钥。请使用下方的其他方式，或在支持通行密钥的设备上登录。",
+    "useRecovery": "改用恢复码",
+    "useApp": "改用身份验证器应用",
+    "startOver": "重新开始",
+    "reloadNote": "此步骤会等待 {minutes} 分钟。如果离开或重新加载此页面，需要重新输入密码。",
+    "expired": "登录用时过长。请重新输入密码。"
+  },
+  "passkey": {
+    "cancelled": "未使用通行密钥：请求已取消或超时，或此设备上没有 Glazecalc 的通行密钥。请再试一次，或使用其他方式。",
+    "registered": "此通行密钥已在您的账户中。",
+    "browserFailed": "此浏览器无法使用该通行密钥。请再试一次，或使用其他方式。"
+  },
+  "forgot": {
+    "heading": "重置密码",
+    "checkInbox": "请查看收件箱和垃圾邮件文件夹。如果没有收到，请检查地址并再次申请。",
+    "intro": "请输入账户的电子邮箱，我们会发送一个链接，用于设置新密码。",
+    "email": "电子邮箱：",
+    "send": "发送重置链接",
+    "back": "返回登录",
+    "failed": "错误：无法发送重置邮件。请再试一次。"
+  },
+  "reset": {
+    "heading": "设置新密码",
+    "signIn": "登录",
+    "incomplete": "此页面需要密码重置邮件中的链接，而这个链接不完整。",
+    "askAgain": "重新申请链接",
+    "password": "新密码：",
+    "confirmation": "确认新密码：",
+    "save": "保存新密码",
+    "hint": "至少 8 个字符。登录此账户的所有设备都将退出登录。",
+    "failed": "错误：无法修改密码。请再试一次。",
+    "secondStep": "如果账户使用两步验证，登录时仍需要身份验证器应用、通行密钥或恢复码。"
+  },
+  "account": {
+    "trialTitle": "您的试用",
+    "trialLead": "您正以 {name} 的身份试用 Glazecalc。",
+    "keepHeading": "保留作品",
+    "keepText": "本次试用及其中的全部内容将于 {date} 移除。创建免费账户即可保留：配方、原料和笔记保持原样，{name} 仍是您的显示名称。",
+    "createAccount": "创建账户",
+    "title": "账户",
+    "signedInAs": "已登录为 {email}。",
+    "changeHeading": "修改密码",
+    "current": "当前密码",
+    "currentMissing": "请输入当前密码。",
+    "password": "新密码",
+    "passwordHint": "至少 8 个字符。登录此账户的其他设备将退出登录。",
+    "confirmation": "确认新密码",
+    "change": "修改密码",
+    "changeFailed": "错误：无法修改密码。请再试一次。",
+    "deleteHeading": "删除账户",
+    "deleteText": "这会移除账户以及您保存的全部内容：配方、原料、添加剂、笔记、烧窑记录和建议。此操作无法撤销。",
+    "deletePassword": "密码（用于确认）",
+    "deletePasswordMissing": "请输入密码以确认。",
+    "delete": "删除我的账户",
+    "deleteFailed": "错误：无法删除账户。请再试一次。",
+    "unverifiedHeading": "确认电子邮箱",
+    "unverifiedText": "您创建此账户时，我们向 {email} 发送了一个链接。请打开它，确认该地址属于您。在此之前，只有您提出请求时（例如重置密码），我们才会向该地址发邮件。",
+    "resend": "重新发送链接",
+    "resendFailed": "错误：无法发送链接。请再试一次。",
+    "emailHeading": "更改电子邮箱",
+    "emailText": "我们会向新地址发送一个链接，您打开链接后，电子邮箱才会更改。我们也会通知当前地址。登录此账户的所有设备都将退出登录。",
+    "newEmail": "新电子邮箱",
+    "emailPassword": "密码（用于确认）",
+    "emailSend": "发送链接",
+    "emailFailed": "错误：无法发送链接。请再试一次。",
+    "signOutHeading": "在所有设备上退出登录",
+    "signOutText": "在所有设备上退出登录，包括当前设备。如果丢失了设备，或认为他人拿到了您的登录信息，请使用此功能。",
+    "signOutButton": "在所有设备上退出登录",
+    "signOutFailed": "错误：无法退出登录。请再试一次。",
+    "confirmStep": "已开启两步验证，因此请确认是您本人：输入密码并完成第二步。"
+  },
+  "mfa": {
+    "heading": "两步验证",
+    "intro": "登录时，除密码外再要求完成第二步：身份验证器应用中的验证码，或通行密钥。这样，即使有人得知了您的密码，也仍然无法登录。",
+    "loadFailed": "无法加载两步验证。请重新加载页面。",
+    "on": "两步验证已开启。",
+    "onText": "登录时使用密码加第二步，或只用通行密钥。",
+    "off": "两步验证已关闭。",
+    "offText": "要开启，请设置身份验证器应用或添加通行密钥。",
+    "confirmEmailFirst": "请先确认上方的电子邮箱。我们用它通知您登录方式的变更，并在您丢失第二步时提供帮助。",
+    "appHeading": "身份验证器应用",
+    "appText": "手机上或密码管理器中的应用每 30 秒显示一个新验证码，登录时输入。",
+    "addApp": "设置身份验证器应用",
+    "removeApp": "移除身份验证器应用",
+    "added": "添加于 {date}。",
+    "lastUsed": "上次使用于 {date}。",
+    "notUsed": "尚未使用。",
+    "passkeysHeading": "通行密钥",
+    "passkeysText": "通行密钥用指纹、面容或锁屏让您登录，可在此设备或手机上使用。它可以作为第二步，也可以单独让您登录，无需密码。",
+    "noPasskeysHere": "此浏览器无法创建或使用通行密钥。请换一个浏览器或设备。",
+    "addPasskey": "添加通行密钥",
+    "removePasskey": "移除通行密钥",
+    "rename": "重命名",
+    "remove": "移除",
+    "renameLabel": "“{name}”的新名称",
+    "saveName": "保存名称",
+    "name": "通行密钥的名称",
+    "nameHint": "便于区分各个通行密钥，例如“笔记本电脑”或“手机”。",
+    "nameCheck": "请为通行密钥取一个 1 到 {most} 个字符的名称。",
+    "passkeyLimit": "您已有 {most} 个通行密钥，这是一个账户的数量上限。请先移除一个，再添加新的。",
+    "codesTitle": "恢复码",
+    "codesLeft": "共 {total} 个恢复码，{count, plural, other {还剩 # 个}}。如果无法使用应用或通行密钥，可以改用恢复码登录。每个恢复码只能使用一次。",
+    "codesLow": "请尽快生成新的恢复码。如果恢复码用完，而您又丢失了应用和通行密钥，就无法登录。",
+    "newCodes": "生成新的恢复码",
+    "offHeading": "关闭两步验证",
+    "offWhat": "只要有身份验证器应用或通行密钥，两步验证就保持开启。移除其中最后一个就会关闭它，此后：",
+    "offPassword": "登录只需要密码，因此任何得知密码的人都可以登录。",
+    "offCodes": "恢复码将失效。",
+    "offSignOut": "登录您账户的其他所有设备都会退出登录。当前设备保持登录。",
+    "offEmail": "我们会给您发邮件，告知它已关闭。",
+    "offPasskeys": "{count, plural, other {要关闭它，请移除上方“通行密钥”下的 # 个通行密钥。}}",
+    "offPasskeysToo": "{count, plural, other {您还有 # 个通行密钥：除应用外，也请在上方“通行密钥”下移除它们。}}",
+    "addAppText": "要设置身份验证器应用，请先确认是您本人。",
+    "removeAppText": "要移除身份验证器应用，请确认是您本人。",
+    "addPasskeyText": "为通行密钥命名，并确认是您本人。然后浏览器会要求您创建通行密钥。",
+    "removePasskeyText": "要移除通行密钥“{name}”，请确认是您本人。",
+    "newCodesText": "新的恢复码会取代旧的，旧的将失效。请确认是您本人。",
+    "lastFactor": "这是您仅剩的第二步验证方式，因此两步验证将关闭，恢复码也将失效。",
+    "continue": "继续",
+    "cancel": "取消",
+    "password": "密码",
+    "factorLegend": "以及第二步",
+    "passkeyNext": "继续时，浏览器会要求您提供通行密钥。",
+    "passkeyReadyText": "谢谢。现在创建通行密钥“{name}”：点击按钮后，浏览器会要求验证指纹、面容或锁屏，或使用手机。如果不成功，{minutes} 分钟内可以再试，无需重新确认。",
+    "passkeyCreate": "现在添加通行密钥",
+    "useApp": "改用身份验证器应用",
+    "usePasskey": "改用通行密钥",
+    "useRecovery": "改用恢复码",
+    "failed": "错误：无法完成更改。请再试一次。",
+    "setupHeading": "设置身份验证器应用",
+    "setupOpen": "打开身份验证器应用，选择添加账户。",
+    "setupScan": "用应用扫描此二维码，或输入密钥。",
+    "setupTap": "点击按钮，把 Glazecalc 添加到这部手机上的身份验证器应用或密码管理器。",
+    "showQr": "显示二维码，以便在另一台设备上设置",
+    "setupScanOther": "用另一台设备上的身份验证器应用扫描。",
+    "qrAlt": "用于把 Glazecalc 添加到身份验证器应用的二维码",
+    "key": "密钥",
+    "copyKey": "复制密钥",
+    "openInApp": "添加到此设备上的身份验证器应用",
+    "clipboardNote": "复制的文本可能留在剪贴板历史中，并同步到您的其他设备。请直接粘贴到密码管理器，然后清除剪贴板历史。",
+    "setupCode": "输入应用现在为 Glazecalc 显示的 {digits} 位验证码",
+    "setupFinish": "完成设置",
+    "codesHeading": "您的恢复码",
+    "codesText": "请把它们保存在安全的地方，例如密码管理器，或打印出来与重要文件放在一起。如果无法使用应用或通行密钥，可以改用恢复码登录。每个恢复码只能使用一次。它们只显示这一次。",
+    "print": "打印恢复码",
+    "printNote": "每个恢复码只能使用一次。请把本页保存在安全的地方。",
+    "download": "下载为文本文件",
+    "copy": "复制恢复码",
+    "copied": "已复制。",
+    "copyFailed": "无法复制。请选中文字后再复制。",
+    "saved": "我已保存",
+    "fileTitle": "{email} 的 Glazecalc 恢复码",
+    "fileNote": "每个恢复码只能使用一次。请把本文件保存在安全的地方。"
+  },
+  "export": {
+    "heading": "下载我的数据",
+    "text": "把账户中的所有内容保存为一个文件：您的详细信息、设置、手头的原料、配方、原料、添加剂、笔记、烧窑记录、建议和回收站。其中不包含密码。请把文件保存在私密的地方，因为它包含您保存的全部内容。",
+    "json": "下载全部内容 (JSON)",
+    "csvText": "或者只把配方，或只把自己的原料，保存为电子表格，用 Excel、Numbers 或 Sheets 打开。",
+    "recipes": "配方 (CSV)",
+    "materials": "原料 (CSV)"
+  },
+  "settings": {
+    "heading": "设置",
+    "intro": "随账户保存，因此在每台设备上都有效。",
+    "saveFailed": "无法保存该设置。请再试一次。",
+    "language": {
+      "legend": "语言",
+      "help": "应用、指南和电子邮件所用的语言。更改后，本页会以该语言重新打开。",
+      "saved": "已保存：{language}。"
+    },
+    "region": {
+      "legend": "所在地区",
+      "none": {
+        "label": "未选择",
+        "saved": "已保存：未选择地区；默认值遵循浏览器。"
+      },
+      "saved": "已保存：{region}。",
+      "help": "那里销售的原料，以及下方数字、日期、温度和测温锥的默认值。在您选择之前，它们遵循浏览器的语言。"
+    },
+    "format": {
+      "legend": "数字和日期",
+      "auto": {
+        "label": "按我的语言和地区",
+        "saved": "已保存：数字和日期按您的语言和地区的写法显示。"
+      },
+      "saved": "已保存：数字和日期按{language}的写法显示。",
+      "help": "数字和日期的写法：12,345.6 还是 12.345,6，以及日和月的顺序。"
+    },
+    "decimalMark": {
+      "legend": "输入数字",
+      "either": {
+        "label": "小数点用逗号或句点",
+        "example": "12,5 或 12.5",
+        "saved": "已保存：输入用量时，小数点可以用逗号或句点。"
+      },
+      "comma": {
+        "label": "小数点用逗号",
+        "saved": "已保存：输入用量时，小数点用逗号。"
+      },
+      "point": {
+        "label": "小数点用句点",
+        "saved": "已保存：输入用量时，小数点用句点。"
+      },
+      "help": "两者都可用时，像 1,250 这样的用量按上方设置的数字写法来读取。"
+    },
+    "temperature": {
+      "legend": "温度",
+      "celsius": {
+        "label": "摄氏度",
+        "saved": "已保存：温度以 °C 显示。"
+      },
+      "fahrenheit": {
+        "label": "华氏度",
+        "saved": "已保存：温度以 °F 显示。"
+      },
+      "help": "在您选择之前，遵循所在地区：美国用 °F，其他地方用 °C。"
+    },
+    "cones": {
+      "legend": "烧成",
+      "orton": {
+        "label": "按 Orton 测温锥",
+        "example": "04 号锥、6 号锥",
+        "saved": "已保存：按 Orton 测温锥烧成。"
+      },
+      "sk": {
+        "label": "按 SK 测温锥（JIS R 8101）",
+        "example": "SK 4a、SK 8",
+        "saved": "已保存：按 SK 测温锥烧成。"
+      },
+      "temperature": {
+        "label": "按温度（像温控仪的程序那样）",
+        "saved": "已保存：按温度烧成。"
+      },
+      "help": "在您选择之前，遵循所在地区：美国、英国、爱尔兰、澳大利亚和新西兰用 Orton 测温锥，日本用 SK 测温锥，欧洲其他地方按温度。"
+    },
+    "density": {
+      "legend": "釉浆浓度",
+      "sg": {
+        "label": "比重",
+        "saved": "已保存：釉浆浓度以比重表示。",
+        "example": "SG 1.45"
+      },
+      "baume": {
+        "label": "波美度（用比重计测量）",
+        "saved": "已保存：釉浆浓度以波美度表示。"
+      },
+      "pint": {
+        "label": "品脱重，即每英制品脱的盎司数",
+        "saved": "已保存：釉浆浓度以品脱重表示。"
+      },
+      "help": "指南中给出釉的稠度的方式。在您选择之前，遵循所在地区：意大利和日本用波美度，其他地方用比重。"
+    },
+    "theme": {
+      "legend": "浅色或深色",
+      "system": {
+        "label": "跟随此设备的设置",
+        "saved": "已保存：浅色或深色跟随各设备的设置。"
+      },
+      "light": {
+        "label": "浅色",
+        "saved": "已保存：始终使用浅色。"
+      },
+      "dark": {
+        "label": "深色",
+        "saved": "已保存：始终使用深色。"
+      },
+      "help": "打印出来的配方始终是白底黑字。"
+    },
+    "palette": {
+      "legend": "颜色",
+      "saved": "已保存：{palette}的按钮和链接。",
+      "help": "用于按钮、链接和标签页，以釉色命名。每种颜色在浅色和深色下都容易阅读。"
+    },
+    "weightUnit": {
+      "legend": "称料单位",
+      "grams": {
+        "label": "克",
+        "saved": "已保存：称料单位为克。"
+      },
+      "pounds": {
+        "label": "磅和盎司",
+        "saved": "已保存：称料单位为磅和盎司。"
+      },
+      "help": "用于打印的称料单。"
+    },
+    "gramPrecision": {
+      "legend": "打印时的克数",
+      "single": {
+        "label": "精确到十分之一克",
+        "saved": "已保存：克数精确到十分之一。"
+      },
+      "full": {
+        "label": "完整精度",
+        "saved": "已保存：克数完整显示，精确到小数点后 5 位。"
+      },
+      "help": "精确到十分之一时，不足 10 g 的用量仍显示百分位 (2.35 g)，用于小试验批中的着色剂。"
+    },
+    "lead": {
+      "legend": "铅",
+      "off": {
+        "label": "关：绝不向配方添加铅，也不建议使用铅",
+        "saved": "已保存：绝不向配方添加铅，也不建议使用铅。"
+      },
+      "on": {
+        "label": "开：可以添加和建议含铅原料",
+        "saved": "已保存：可以添加和建议含铅原料。"
+      },
+      "help": "铅吸入或吞下都有毒，会在体内蓄积，含铅的釉可能把铅释放到食物和饮料中；没有任何计算能判断烧成的器物是否会这样。关闭时，已含铅的配方仍按原样打开。",
+      "warning": "铅只能以熔块的形式使用，切勿使用未制成熔块的红铅、白铅、黄铅或密陀僧。要湿法调配，切勿喷涂，要佩戴防尘口罩，并用湿式方法清洁。不要让含铅釉的器物接触食物和饮料，除非烧成的器物已通过实验室溶出试验。",
+      "turnOn": "开启铅",
+      "keepOff": "保持关闭"
+    },
+    "englishTerms": {
+      "legend": "英文术语",
+      "off": {
+        "label": "关",
+        "saved": "已保存：不显示英文术语。"
+      },
+      "on": {
+        "label": "在关键术语后显示英文",
+        "saved": "已保存：关键术语后显示英文。"
+      },
+      "help": "便于对照阅读英文资料（例如 Digitalfire）：关键术语会在括号中显示英文。"
+    },
+    "notice": {
+      "legend": "翻译说明",
+      "shown": {
+        "label": "显示",
+        "saved": "已保存：显示说明。"
+      },
+      "hidden": {
+        "label": "隐藏",
+        "saved": "已保存：说明已隐藏。安全指南中仍保留一行。",
+        "savedPlain": "已保存：说明已隐藏。每页顶部仍保留一行。"
+      },
+      "help": "每页顶部的提示，说明本页由 AI 翻译，并提供提出修改建议的方式。"
+    }
+  },
+  "confirmEmail": {
+    "heading": "确认电子邮箱",
+    "intro": "点击按钮确认此地址。",
+    "confirm": "确认",
+    "incomplete": "此页面需要确认邮件中的链接，而这个链接不完整。",
+    "account": "账户",
+    "signIn": "登录",
+    "failed": "错误：无法确认该地址。请再试一次。"
+  }
+}

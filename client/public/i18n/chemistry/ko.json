@@ -1,0 +1,23 @@
+{
+  "unknown-compound": "화학식에 알 수 없는 화합물이 있습니다: {compound}",
+  "unknown-oxide": "{material} 원료에 알 수 없는 산화물이 있습니다: {oxide}",
+  "invalid-oxide-amount": "{material} 원료의 {oxide} 양이 올바르지 않습니다.",
+  "loi-range": "{material} 원료의 LOI는 0 이상 100 미만이어야 합니다.",
+  "no-oxides": "{material} 원료에 산화물이 없습니다.",
+  "no-name": "원료에는 이름이 있어야 합니다.",
+  "no-analysis": "{material} 원료에는 화학식이나 분석값이 필요합니다.",
+  "recipe-shape": "레시피는 '{ material, amount }'의 배열이거나 양의 맵이어야 합니다.",
+  "invalid-amount": "{material} 원료의 양이 올바르지 않습니다.",
+  "missing-material": "레시피 행에 원료가 없습니다.",
+  "unknown-material": "알 수 없는 원료입니다: {material}",
+  "no-flux": "레시피에 융제 산화물이 없어 제게르식(UMF)을 정할 수 없습니다.",
+  "no-target": "목표식에 목표로 삼을 산화물이 없습니다.",
+  "no-materials": "계산할 원료가 없습니다.",
+  "no-temperature": "붕소의 양을 정하려면 소성 온도가 필요합니다.",
+  "no-flux-to-rebuild": "유약에 다시 짤 융제가 없습니다.",
+  "unknown-element": "{formula}에 알 수 없는 원소가 있습니다: {element}",
+  "bad-formula": "화학식을 해석할 수 없습니다: {formula}",
+  "analysis-total": "{material} 원료의 분석값 합계는 LOI를 포함해 {total}%입니다. 약 100%가 되어야 합니다.",
+  "stored-equivalent": "저장된 {material} 원료의 당량이 화학식과 LOI에 맞지 않아, 화학식과 LOI로 계산했습니다.",
+  "trace-flux": "레시피에 융제 산화물이 미량만 있어 제게르식(UMF)이 의미가 없습니다."
+}
