@@ -489,8 +489,8 @@ export const CHANGED: Record<string, Email> = {
 };
 
 /**
- * The email after an account is deleted: {account}, {days} and {app}. English
- * only until the next translation wave; other languages get it in English.
+ * The email after an account is deleted: {account}, {days} and {app}, in each
+ * language offered.
  */
 export const DELETED: Record<string, Email> = {
   en: {
@@ -856,8 +856,8 @@ export const sendDeleted = (to: string, language?: string): Promise<void> => {
   });
 };
 
-// The emails about confirming an address. English only for now: a language
-// without a translation gets English, as with the others.
+// The emails about confirming an address, in each language offered: a language
+// without a translation would get English, as with the others.
 
 /** Sent to a new account's address: {account}, {link}, {hours} and {app}. */
 export const VERIFY: Record<string, Email> = {
@@ -1885,9 +1885,9 @@ export const sendChangeNotice = (to: string, language?: string): Promise<void> =
   });
 };
 
-// Notices about two-step sign-in (docs/mfa-plan.md, item 10), English only for
-// now: the next translation wave adds the others. Each goes to the account's
-// address after the change, so someone who did not make it hears of it.
+// Notices about two-step sign-in (docs/mfa-plan.md, item 10), in each language
+// offered. Each goes to the account's address after the change, so someone who
+// did not make it hears of it.
 
 /** The factor a notice is about. */
 export type MfaMethod = { kind: 'totp' } | { kind: 'passkey'; name: string };
