@@ -3,6 +3,7 @@ import { TestBed } from '@angular/core/testing';
 import { PreferencesService } from '../../core/preferences.service';
 import { testProviders } from '../../testing/test-providers';
 import { FoodLimits } from './food-limits';
+import { PoisonLines } from './poison-lines';
 import { ShopList } from './shop-list';
 import { SilicaLimit } from './silica-limit';
 
@@ -241,5 +242,53 @@ describe('Türkiye', () => {
       'Seramiksir'
     ]);
     expect(rows()[0]![2]).toBe('250 g, 500 g, and 1 kg');
+  });
+});
+
+// The texts of every paragraph, for checking what is said and what is not.
+const paragraphsOf = (element: HTMLElement) =>
+  [...element.querySelectorAll('p')].map((p) => (p.textContent ?? '').replace(/\s+/g, ' ').trim());
+
+describe('South Korea', () => {
+  it('gives 119, says no national poison line was found, and links the health ministry', async () => {
+    const { element } = await create(PoisonLines, 'KR');
+    const calls = [...element.querySelectorAll('a[href^="tel:"]')].map((a) => a.getAttribute('href'));
+    expect(calls).toEqual(['tel:119', 'tel:119']);
+    const text = (element.textContent ?? '').replace(/\s+/g, ' ');
+    expect(text).toContain('We could not confirm a public poison line here.');
+    expect(text).toContain('Medical advice: 119 emergency medical advice (응급의료상담)');
+    expect(text).toContain('We found no national public poison line in South Korea');
+    expect(element.querySelector('a[href="https://www.mohw.go.kr/"]')?.textContent).toBe('보건복지부');
+  });
+
+  it('gives the exposure standard as an indicative limit, and the 1급 and 특급 dust masks', async () => {
+    const { element, rows } = await create(SilicaLimit, 'KR');
+    expect(rows()).toEqual([['Quartz and cristobalite', '0.05 mg/m³']]);
+    const paragraphs = paragraphsOf(element);
+    expect(paragraphs[0]).toContain('An indicative limit');
+    expect(paragraphs[0]).toContain('제2020-48호');
+    expect(paragraphs[0]).toContain('exposure standard (노출기준)');
+    expect(paragraphs[0]).not.toContain('It applies from');
+    expect(paragraphs[1]).toContain('Dust masks here are sold by class: 1급 for glaze dust, or 특급 for more protection');
+    expect(paragraphs[1]).toContain('not certified dust masks for work');
+    expect(paragraphs[2]).toContain('고용노동부 (MoEL)');
+  });
+
+  it("gives the ceramic limits in the law's units, with no judging rule", async () => {
+    const { element, rows } = await create(FoodLimits, 'KR');
+    expect(rows()).toEqual([
+      ['Pieces that cannot be filled, or less than 2.5 cm deep', '8 µg/cm²', '0.7 µg/cm²'],
+      ['Other pieces that can be filled, under 1.1 L', '2 mg/L', '0.5 mg/L'],
+      ['Other pieces that can be filled, from 1.1 L to under 3 L', '1 mg/L', '0.25 mg/L'],
+      ['Other pieces that can be filled, 3 L or more', '0.5 mg/L', '0.25 mg/L'],
+      ['Cooking ware, for heating food', '0.5 mg/L', '0.05 mg/L']
+    ]);
+    expect(paragraphsOf(element)[0]).not.toContain('ppm');
+  });
+
+  it('lists two shops by their own names', async () => {
+    const { rows } = await create(ShopList, 'KR');
+    expect(rows().map((row) => row[0])).toEqual(['중앙도재', '클레이어']);
+    expect(rows()[0]![3]).toContain('Ask the shop whether an item is in stock before buying.');
   });
 });

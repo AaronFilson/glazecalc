@@ -435,3 +435,66 @@ describe('regions before Korea', () => {
     expect(hash).to.equal('019ecd75b9d1fbae7cd4090b7a2cd8f3bbacae6a5dff5b4c748b266557919f91');
   });
 });
+
+// South Korea (docs/asia-plan.md, Phase C), from research_notes/Asia/verification-KR-TW-SG-MY-2026-10-16.md.
+describe('South Korea', () => {
+  it('fires by temperature, reads density as specific gravity, and lists the US library', () => {
+    expect(regions.regionFor('KR')).to.eql({
+      code: 'KR',
+      name: 'South Korea',
+      languages: ['ko'],
+      eu: false,
+      temperature: 'C',
+      cones: 'temperature',
+      density: 'sg',
+      library: 'US'
+    });
+    expect(regions.formatLocaleFor('en', 'KR', 'auto')).to.equal('en-KR');
+  });
+
+  it('gives 119, no poison line (none national was found), and 119 for medical advice', () => {
+    const shown = safety.shownFor('KR')!;
+    expect(shown.emergency.map((line) => line.number)).to.eql(['119']);
+    expect(shown.poison).to.eql([]);
+    expect(shown.advice.map((line) => [line.number, line.tel])).to.eql([['119', '119']]);
+    expect(shown.advice[0]!.note).to.contain('no national public poison line');
+    // The Seoul centre is known only from a journal report, and 02-3407-4050 only from a directory.
+    expect(JSON.stringify(safety.SAFETY['KR'])).not.to.match(/1855|3407|Seoul Poison/);
+    expect(safety.ministryFor('KR')).to.include({ name: '보건복지부', url: 'https://www.mohw.go.kr/' });
+  });
+
+  it('gives the exposure standard as indicative, 1급 and 특급 masks, and KF94 only as a health mask', () => {
+    const facts = workplace.workplaceFor('KR')!;
+    expect(facts.silica).to.include({ quartz: 0.05, kind: 'indicative', status: 'verified', checked: '2026-10-13' });
+    expect(facts.silica!.cristobalite).to.equal(undefined);
+    expect(facts.silica!.law).to.contain('제2020-48호');
+    expect(facts.silica!.from).to.equal(undefined);
+    expect(facts.agency).to.include({ name: '고용노동부', abbr: 'MoEL' });
+    expect(facts.respirators).to.include({ status: 'verified' });
+    expect(facts.respirators!.everyday).to.eql(['1급']);
+    expect(facts.respirators!.higher).to.eql(['특급']);
+    expect(facts.respirators!.note).to.contain('not certified dust masks for work');
+  });
+
+  it("gives the MFDS ceramic limits in the law's units, Japan's values, with no judging rule not read", () => {
+    const { rules, own } = food.foodRulesFor('KR')!;
+    expect(own).to.equal(true);
+    expect(rules.limits.map((l) => [l.category, l.lead, l.cadmium, l.unit])).to.eql([
+      ['krFlat', 8, 0.7, 'µg/cm²'],
+      ['krSmall', 2, 0.5, 'mg/L'],
+      ['krMedium', 1, 0.25, 'mg/L'],
+      ['krStorage', 0.5, 0.25, 'mg/L'],
+      ['krCooking', 0.5, 0.05, 'mg/L']
+    ]);
+    for (const limit of rules.limits) expect(limit.judged).to.equal(undefined);
+    expect(rules.atMost).to.equal(undefined);
+  });
+
+  it('names two shops checked on their own sites, and not the feldspar producer', () => {
+    const { shops, nearby } = suppliers.shopsFor('KR')!;
+    expect(shops.map((shop) => shop.name)).to.eql(['중앙도재', '클레이어']);
+    for (const shop of shops) expect(shop.place).to.equal(undefined);
+    expect(JSON.stringify(suppliers.SUPPLIERS['KR'])).not.to.contain('세라믹미네랄');
+    expect(nearby).to.eql([]);
+  });
+});
