@@ -269,7 +269,9 @@ describe('South Korea', () => {
     expect(paragraphs[0]).toContain('제2020-48호');
     expect(paragraphs[0]).toContain('exposure standard (노출기준)');
     expect(paragraphs[0]).not.toContain('It applies from');
-    expect(paragraphs[1]).toContain('Dust masks here are sold by class: 1급 for glaze dust, or 특급 for more protection');
+    expect(paragraphs[1]).toContain(
+      'Dust masks here are sold by class: 1급 for glaze dust, or 특급 for more protection'
+    );
     expect(paragraphs[1]).toContain('not certified dust masks for work');
     expect(paragraphs[2]).toContain('고용노동부 (MoEL)');
   });
@@ -290,5 +292,35 @@ describe('South Korea', () => {
     const { rows } = await create(ShopList, 'KR');
     expect(rows().map((row) => row[0])).toEqual(['중앙도재', '클레이어']);
     expect(rows()[0]![3]).toContain('Ask the shop whether an item is in stock before buying.');
+  });
+});
+
+describe('Taiwan', () => {
+  it('gives 119 and the poison centre, linked to dial', async () => {
+    const { element } = await create(PoisonLines, 'TW');
+    const calls = [...element.querySelectorAll('a[href^="tel:"]')].map((a) => a.getAttribute('href'));
+    expect(calls).toEqual(['tel:119', 'tel:+886228717121']);
+    expect(element.textContent).toContain('24 hours, every day, free');
+  });
+
+  it('gives the 2027 limit with the day it applies from, and what applies until then', async () => {
+    const { element, rows } = await create(SilicaLimit, 'TW');
+    expect(rows()).toEqual([['Quartz and cristobalite', '0.1 mg/m³']]);
+    const paragraphs = paragraphsOf(element);
+    expect(paragraphs[0]).toContain('A binding limit.');
+    expect(paragraphs[0]).toContain('It applies from January 1, 2027.');
+    expect(paragraphs[0]).toContain('Until 31 December 2026 an earlier table applies');
+    expect(paragraphs[1]).toContain('Dust masks here are sold by class: D2 for glaze dust, or D3 for more protection');
+    expect(paragraphs[2]).toContain('勞動部職業安全衛生署');
+  });
+
+  it('gives the limits in ppm and µg/cm², and says what ppm means', async () => {
+    const { element, rows } = await create(FoodLimits, 'TW');
+    expect(rows()).toEqual([
+      ['Pieces that cannot be filled, or no more than 2.5 cm deep', '17 µg/cm²', '1.7 µg/cm²'],
+      ['Pieces more than 2.5 cm deep, up to 1.1 L', '5 ppm', '0.5 ppm'],
+      ['Pieces more than 2.5 cm deep, over 1.1 L', '2.5 ppm', '0.25 ppm']
+    ]);
+    expect(paragraphsOf(element)[0]).toContain('ppm here is milligrams per litre of the test solution (mg/L).');
   });
 });

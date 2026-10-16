@@ -116,7 +116,7 @@ describe('region facts', () => {
   const guides = JSON.parse(
     fs.readFileSync(new URL('../../client/public/i18n/guides/en.json', import.meta.url), 'utf8')
   );
-  const HTTP_ONLY = ['丸二陶料'];
+  const HTTP_ONLY = ['丸二陶料', '太麟化工原料有限公司'];
   const checkedLately = (fact: { checked: string; source?: string; url?: string }, label: string) => {
     expect(fact.source ?? fact.url, label).to.match(/^https:\/\//);
     expect(Date.parse(fact.checked), label + ': check this again').to.be.above(yearAgo);
@@ -496,5 +496,70 @@ describe('South Korea', () => {
     for (const shop of shops) expect(shop.place).to.equal(undefined);
     expect(JSON.stringify(suppliers.SUPPLIERS['KR'])).not.to.contain('세라믹미네랄');
     expect(nearby).to.eql([]);
+  });
+});
+
+// Taiwan (docs/asia-plan.md, Phase C), from research_notes/Asia/verification-KR-TW-SG-MY-2026-10-16.md.
+describe('Taiwan', () => {
+  it('fires by temperature, reads density as specific gravity, and lists the US library', () => {
+    expect(regions.regionFor('TW')).to.include({
+      code: 'TW',
+      name: 'Taiwan',
+      temperature: 'C',
+      cones: 'temperature',
+      density: 'sg',
+      library: 'US'
+    });
+    expect(regions.regionFor('TW')!.languages).to.eql(['zh-Hant']);
+    expect(regions.formatLocaleFor('en', 'TW', 'auto')).to.equal('en-TW');
+  });
+
+  it("gives 119 and the Taipei Veterans General Hospital's poison centre, around the clock and free", () => {
+    const shown = safety.shownFor('TW')!;
+    expect(shown.emergency.map((line) => line.number)).to.eql(['119']);
+    expect(shown.poison.map((line) => [line.number, line.tel])).to.eql([['02-2871-7121', '+886228717121']]);
+    expect(shown.poison[0]).to.include({ who: 'public', hours: '24 hours, every day, free' });
+    expect(shown.poison[0]!.also).to.equal(undefined);
+    expect(safety.ministryFor('TW')).to.include({ name: '衛生福利部' });
+  });
+
+  it('gives the 2027 limit with its start date, and not the earlier formula read only secondhand', () => {
+    const silica = workplace.workplaceFor('TW')!.silica!;
+    expect(silica).to.include({ quartz: 0.1, kind: 'binding', status: 'verified', from: '2027-01-01' });
+    expect(silica.formula).to.equal(undefined);
+    expect(silica.cristobalite).to.equal(undefined);
+    expect(silica.note).to.contain('Until 31 December 2026');
+    expect(silica.note).to.contain('not shown here');
+    expect(JSON.stringify(silica)).not.to.match(/SiO2 \+ 2|\(Q \+ 2\)/);
+    // Every start date is a day; a limit that starts later says what applies until then.
+    for (const [code, entry] of Object.entries(workplace.WORKPLACE)) {
+      if (!entry.silica?.from) continue;
+      expect(entry.silica.from, code).to.match(/^\d{4}-\d{2}-\d{2}$/);
+      if (Date.parse(entry.silica.from) > Date.now()) expect(entry.silica.note, code).to.match(/^Until /);
+    }
+  });
+
+  it('names the CNS 14755 classes as secondary, without percentages', () => {
+    const respirators = workplace.workplaceFor('TW')!.respirators!;
+    expect(respirators).to.include({ status: 'secondary' });
+    expect([respirators.everyday, respirators.higher]).to.eql([['D2'], ['D3']]);
+    expect(respirators.note).to.contain('CNS 14755');
+    expect(respirators.note).not.to.match(/%/);
+  });
+
+  it("gives the hygiene standard's limits in ppm and µg/cm², with no cooking ware", () => {
+    const { rules } = food.foodRulesFor('TW')!;
+    expect(rules.limits.map((l) => [l.category, l.lead, l.cadmium, l.unit])).to.eql([
+      ['twFlat', 17, 1.7, 'µg/cm²'],
+      ['twSmall', 5, 0.5, 'ppm'],
+      ['twLarge', 2.5, 0.25, 'ppm']
+    ]);
+    for (const limit of rules.limits) expect(limit.judged).to.equal(undefined);
+  });
+
+  it('names one shop, linked at the http address its site has, and not the one read only in an extract', () => {
+    const { shops } = suppliers.shopsFor('TW')!;
+    expect(shops.map((shop) => [shop.name, shop.url])).to.eql([['太麟化工原料有限公司', 'http://www.tai-lin.com.tw/']]);
+    expect(JSON.stringify(suppliers.SUPPLIERS['TW'])).not.to.contain('glazes.com.tw');
   });
 });
