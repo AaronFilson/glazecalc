@@ -413,3 +413,25 @@ describe('regions before Turkey', () => {
     expect(hash).to.equal('b67632a22a57f9bd73f72e3af3ddf3abebdaacfb69f1a3fe20d0b071a9019340');
   });
 });
+
+// The same, with Türkiye, before Korea, Taiwan, Singapore and Malaysia (docs/asia-plan.md, Phase C).
+describe('regions before Korea', () => {
+  it('keep their data exactly', () => {
+    const codes = [
+      'US', 'GB', 'AU', 'NZ', 'AT', 'BE', 'BG', 'HR', 'CY', 'CZ', 'DK', 'EE', 'FI', 'FR', 'DE', 'GR',
+      'HU', 'IE', 'IT', 'LV', 'LT', 'LU', 'MT', 'NL', 'PL', 'PT', 'RO', 'SK', 'SI', 'ES', 'SE', 'JP', 'TR'
+    ]; // prettier-ignore
+    const data: unknown[] = codes.map((code) => [
+      code,
+      regions.regionFor(code),
+      safety.SAFETY[code],
+      safety.MINISTRIES[code] ?? null,
+      workplace.WORKPLACE[code] ?? null,
+      food.FOOD[code] ?? null,
+      suppliers.SUPPLIERS[code] ?? null
+    ]);
+    data.push(['EU', food.FOOD['EU'], workplace.EU_SILICA]);
+    const hash = crypto.createHash('sha256').update(JSON.stringify(data)).digest('hex');
+    expect(hash).to.equal('019ecd75b9d1fbae7cd4090b7a2cd8f3bbacae6a5dff5b4c748b266557919f91');
+  });
+});
