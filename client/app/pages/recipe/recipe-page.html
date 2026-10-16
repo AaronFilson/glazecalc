@@ -58,7 +58,7 @@
             {{ t('recipe.page.mineHeading') }}
             <span class="saved-count">{{ t('recipe.page.mineCount', { count: myRecipes().length }) }}</span>
           </h2>
-          @if (myRecipes().length > filterFrom) {
+          @if (filterShown()) {
             <input
               type="search"
               class="form-control saved-filter"

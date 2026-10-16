@@ -1,12 +1,23 @@
-import { Component, ElementRef, Injector, afterNextRender, computed, inject, input, viewChild } from '@angular/core';
+import {
+  Component,
+  ElementRef,
+  Injector,
+  afterNextRender,
+  computed,
+  inject,
+  input,
+  linkedSignal,
+  signal,
+  viewChild
+} from '@angular/core';
 import { TranslocoDirective } from '@jsverse/transloco';
 import { PreferencesService } from '../../core/preferences.service';
 import { RichText } from '../../i18n/rich-text';
 
 /**
  * How to use the recipe page. Folded to one line, "How the recipe calculator
- * works", unless the account has no recipes yet; opened or hidden, it stays so,
- * kept with the account's settings so it holds on every device.
+ * works", unless the account has no recipes yet when the page opens; opened or
+ * hidden, it stays so, kept with the account's settings so it holds on every device.
  */
 @Component({
   selector: 'gc-recipe-help',
@@ -102,17 +113,30 @@ export class RecipeHelp {
   readonly empty = input<boolean | null>(null);
 
   private readonly preferences = inject(PreferencesService);
+  /**
+   * The first answer to empty(), kept while the page is open: the help that opened for an
+   * account with no recipes does not fold the moment the first one is saved.
+   */
+  private readonly emptyOnOpen = linkedSignal<boolean | null, boolean | null>({
+    source: this.empty,
+    computation: (now, before) => before?.value ?? now
+  });
+  /** What was chosen on this page, which holds while it is open even if saving it failed. */
+  private readonly chosen = signal<'shown' | 'hidden' | null>(null);
   protected readonly hidden = computed(() => {
-    const choice = this.preferences.recipeHelp();
-    return choice === 'auto' ? this.empty() !== true : choice === 'hidden';
+    const choice = this.chosen() ?? this.preferences.recipeHelp();
+    return choice === 'auto' ? this.emptyOnOpen() !== true : choice === 'hidden';
   });
   private readonly reopen = viewChild<ElementRef<HTMLElement>>('reopen');
   private readonly heading = viewChild<ElementRef<HTMLElement>>('heading');
   private readonly injector = inject(Injector);
 
   protected setHidden(hidden: boolean): void {
-    // Saved with the account; if that fails, it holds for this visit and the next save tries again.
-    this.preferences.set('recipeHelp', hidden ? 'hidden' : 'shown').catch(() => undefined);
+    const choice = hidden ? 'hidden' : 'shown';
+    this.chosen.set(choice);
+    // Saved with the account; if that fails, the choice still holds while this page is open,
+    // and the next time it is made, saving it is tried again.
+    this.preferences.set('recipeHelp', choice).catch(() => undefined);
     // The button pressed is replaced; the focus goes to what replaces it.
     afterNextRender(() => (hidden ? this.reopen() : this.heading())?.nativeElement.focus(), {
       injector: this.injector

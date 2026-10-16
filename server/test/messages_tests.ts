@@ -97,7 +97,7 @@ describe('account emails', () => {
     const { RESET, CHANGED, DELETED } = await import('../lib/account_mail.ts');
     const { fingerprint } = await import('../../scripts/i18n-fingerprints.mjs');
     expect(fingerprint(JSON.stringify([RESET['en'], CHANGED['en']]))).to.equal('xj1yoc');
-    // English only so far: the next translation wave adds the others.
+    // Translated in a later wave than the two above, so fingerprinted on its own.
     expect(fingerprint(JSON.stringify(DELETED['en']))).to.equal('13s4itm');
   });
 

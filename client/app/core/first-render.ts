@@ -22,13 +22,19 @@ const COUNTRY_OF = new Map([['el', 'GR']]);
  * The region the prerender writes a page in a language for (units, cones,
  * the guides' country blocks): Germany for German, France for French. None
  * for English, which shows °C and Orton cones with °F beside them, and for a
- * language no region lists.
+ * language no region lists. Regions list some languages with their script
+ * (zh-Hant, zh-Hans), so the language as given is looked for first, then
+ * the language alone (pt for pt-PT).
  */
 export function prerenderRegion(language: string): string {
   const base = baseLanguage(language);
   if (base === 'en') return '';
-  const mainly = REGIONS.filter((region) => region.languages[0] === base);
-  const pool = mainly.length ? mainly : REGIONS.filter((region) => region.languages.includes(base));
-  const named = COUNTRY_OF.get(base) ?? base.toUpperCase();
-  return (pool.find((region) => region.code === named) ?? pool[0])?.code ?? '';
+  for (const tag of new Set([language, base])) {
+    const mainly = REGIONS.filter((region) => region.languages[0] === tag);
+    const pool = mainly.length ? mainly : REGIONS.filter((region) => region.languages.includes(tag));
+    if (!pool.length) continue;
+    const named = COUNTRY_OF.get(base) ?? base.toUpperCase();
+    return (pool.find((region) => region.code === named) ?? pool[0]).code;
+  }
+  return '';
 }

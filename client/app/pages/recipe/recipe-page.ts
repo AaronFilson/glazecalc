@@ -8,6 +8,7 @@ import {
   computed,
   effect,
   inject,
+  linkedSignal,
   signal,
   untracked
 } from '@angular/core';
@@ -291,9 +292,10 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
   protected readonly expanded = signal<ReadonlySet<string>>(new Set());
   /** The saved recipes whose More (Print, Compare, Remove) is open. */
   protected readonly moreOpen = signal<ReadonlySet<string>>(new Set());
-  /** More saved recipes than this, and the list can be filtered by title. */
-  protected readonly filterFrom = SAVED_FILTER_FROM;
-  protected readonly recipeFilter = signal('');
+  /** Whether there are enough saved recipes to offer to filter them by title. */
+  protected readonly filterShown = computed(() => this.myRecipes().length > SAVED_FILTER_FROM);
+  /** What the list is filtered by: emptied when the filter box goes, so a list it no longer shows is not filtered. */
+  protected readonly recipeFilter = linkedSignal({ source: this.filterShown, computation: () => '' });
   protected readonly showAllRecipes = signal(false);
   /** The saved recipes as listed: the newest first, those whose titles match the filter, the first few until all are asked for. */
   private readonly listedRecipes = computed(() => {
@@ -1562,8 +1564,13 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
     this.moreOpen.update((set) => toggled(set, recipe._id ?? ''));
   }
 
-  /** Opens a saved recipe's More, so the focus can go back to its Print or Compare. */
+  /** Lists a saved recipe and opens its More, so the focus can go back to its Print or Compare. */
   private showMore(id: string): void {
+    // Opened from the address, it may be one of those the list leaves out until all are asked for.
+    if (!this.shownRecipes().some((recipe) => recipe._id === id)) {
+      this.recipeFilter.set('');
+      this.showAllRecipes.set(true);
+    }
     if (!this.moreOpen().has(id)) this.moreOpen.update((set) => toggled(set, id));
   }
 

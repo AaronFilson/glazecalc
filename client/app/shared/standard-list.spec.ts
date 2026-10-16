@@ -80,6 +80,14 @@ describe('StandardList', () => {
     expect(fixture.nativeElement.querySelector('.standard-all')).toBeNull();
   });
 
+  it('gives the formula in its sentence, set apart so a page translator leaves it as it is', async () => {
+    const { fixture } = await create([record('Whiting', { rawformula: 'CaCO3' })]);
+    const line = fixture.nativeElement.querySelector('.standard-formula') as HTMLElement;
+    expect(line.textContent?.replace(/\s+/g, ' ').trim()).toBe('Formula: CaCO₃');
+    const formula = line.querySelector('[translate="no"]') as HTMLElement;
+    expect(formula.textContent).toBe('CaCO₃');
+  });
+
   it('filters by name or other name, by kind, and by region', async () => {
     const { names, set } = await create();
     await set('Filter', 'grolleg');

@@ -74,11 +74,15 @@ describe('PoisonLines', () => {
     expect(text).not.toContain('free');
   });
 
-  it('closes each note as its language does, never an English ". " after a 。', () => {
-    expect(joinNotes(['Weekdays 9–17', 'Free.', 'Animals too'])).toBe('Weekdays 9–17. Free. Animals too');
-    expect(joinNotes(['平日 9–17 時', '無料'])).toBe('平日 9–17 時。無料');
-    expect(joinNotes(['24 小時。', '免費'])).toBe('24 小時。免費');
-    expect(joinNotes(['평일 9–17시', '무료'])).toBe('평일 9–17시. 무료');
-    expect(joinNotes([])).toBe('');
+  it("closes each note as the page's language does, never twice", () => {
+    expect(joinNotes(['Weekdays 9–17', 'Free.', 'Animals too'], 'en')).toBe('Weekdays 9–17. Free. Animals too');
+    expect(joinNotes(['平日 9–17 時', '無料'], 'ja')).toBe('平日 9–17 時。無料');
+    expect(joinNotes(['24 小時。', '免費'], 'zh-Hant')).toBe('24 小時。免費');
+    expect(joinNotes(['24 小时', '免费'], 'zh-Hans')).toBe('24 小时。免费');
+    // A note left in English on a Japanese page, or ending in a number: the page's language decides.
+    expect(joinNotes(['Weekdays 9–17', '無料'], 'ja')).toBe('Weekdays 9–17。無料');
+    expect(joinNotes(['毎日 24', 'Free'], 'en')).toBe('毎日 24. Free');
+    expect(joinNotes(['평일 9–17시', '무료'], 'ko')).toBe('평일 9–17시. 무료');
+    expect(joinNotes([], 'en')).toBe('');
   });
 });

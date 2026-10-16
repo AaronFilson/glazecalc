@@ -191,4 +191,30 @@ describe('RecipeHelp', () => {
     expect(document.activeElement?.id).toBe('recipe-help-heading');
     expect((await create(false)).fixture.nativeElement.querySelector('.recipe-help')).not.toBeNull();
   });
+
+  it('opened for an account with no recipes, it does not fold when the first one is saved', async () => {
+    const page = await create(null);
+    expect(page.fixture.nativeElement.querySelector('.recipe-help')).toBeNull();
+    page.fixture.componentRef.setInput('empty', true);
+    await page.fixture.whenStable();
+    expect(text(page.fixture, 'h2')).toBe('How to use the recipe calculator');
+    page.fixture.componentRef.setInput('empty', false);
+    await page.fixture.whenStable();
+    expect(text(page.fixture, 'h2')).toBe('How to use the recipe calculator');
+    // The next visit, with recipes, finds it folded.
+    expect((await create(false)).fixture.nativeElement.querySelector('.recipe-help')).toBeNull();
+  });
+
+  it('keeps the choice while the page is open when saving it fails, with the focus on what replaced the button', async () => {
+    const page = await create(true);
+    await page.click('Hide these instructions');
+    httpMock()
+      .expectOne((req) => req.method === 'PUT' && req.url === API + '/preferences')
+      .flush({}, { status: 503, statusText: 'Unavailable' });
+    await page.fixture.whenStable();
+    // Not kept with the account, but still hidden here.
+    expect(TestBed.inject(PreferencesService).recipeHelp()).toBe('auto');
+    expect(page.fixture.nativeElement.querySelector('.recipe-help')).toBeNull();
+    expect(document.activeElement?.textContent?.trim()).toBe('How the recipe calculator works');
+  });
 });
