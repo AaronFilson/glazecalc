@@ -151,10 +151,6 @@
         "purpose": "Om nye opskrifter medregner tilsætningerne i Seger-formlen, som du sidst valgte.",
         "lasts": "Indtil du rydder browserens lager."
       },
-      "recipeHelp": {
-        "purpose": "At du har skjult hjælpen på opskriftssiden.",
-        "lasts": "Indtil du viser hjælpen igen."
-      },
       "print": {
         "purpose": "Dine seneste valg ved udskrivning af en opskrift: hele opskriften eller en portion og portionsstørrelsen.",
         "lasts": "Indtil du rydder browserens lager."

@@ -4,10 +4,12 @@ import { NgTemplateOutlet } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Router, RouterLink } from '@angular/router';
 import { TranslocoDirective, translate } from '@jsverse/transloco';
+import { marker } from '@jsverse/transloco-keys-manager/marker';
 import type { FactorProof, IdentityProof, MfaSummary } from '../../../../lib/mfa';
 import { AuthService } from '../../core/auth.service';
 import { errorMessage } from '../../core/error-message';
 import { IdentityConfirm } from '../auth/identity-confirm';
+import { SectionLinks } from '../guides/guide-contents';
 import { ExportSection } from './export-section';
 import { FieldCheck, FieldChecks, emailAddress, filled, newPassword, samePassword } from '../../shared/field-checks';
 import { Notices, NoticesList } from '../../shared/notices';
@@ -62,6 +64,16 @@ type Confirming = 'password' | 'email' | 'delete';
         [title]="t('account.account.title')"
         [lead]="auth.email() ? t('account.account.signedInAs', { email: auth.email() }) : ''"
       />
+      <!-- The page is long: what is on it, so the security sections are a tap away. -->
+      <nav class="account-contents" [attr.aria-label]="t('account.account.contents')">
+        <ul>
+          @for (part of contents; track part.id) {
+            <li>
+              <a [href]="links.href(part.id)" (click)="links.go($event, part.id)">{{ t(part.label) }}</a>
+            </li>
+          }
+        </ul>
+      </nav>
       <gc-notices [notices]="notices" />
       @if (auth.unverified()) {
         <section class="auth-text unverified-email">
@@ -76,7 +88,7 @@ type Confirming = 'password' | 'email' | 'delete';
       <gc-export />
 
       <section class="auth-text">
-        <h2>{{ t('account.account.changeHeading') }}</h2>
+        <h2 id="password-heading" tabindex="-1">{{ t('account.account.changeHeading') }}</h2>
         <form (ngSubmit)="submit()" class="account-form">
           @if (!twoStep()) {
             <div class="mb-3">
@@ -125,7 +137,12 @@ type Confirming = 'password' | 'email' | 'delete';
             />
           </div>
           @if (confirming() !== 'password') {
-            <button id="password-submit" type="submit" class="btn btn-primary" [attr.aria-disabled]="busy() || null">
+            <button
+              id="password-submit"
+              type="submit"
+              class="btn btn-light border"
+              [attr.aria-disabled]="busy() || null"
+            >
               {{ twoStep() ? t('account.mfa.continue') : t('account.account.change') }}
             </button>
           }
@@ -138,7 +155,7 @@ type Confirming = 'password' | 'email' | 'delete';
       <gc-sign-in-section (loaded)="mfaLoaded($event)" />
 
       <section class="auth-text">
-        <h2>{{ t('account.account.emailHeading') }}</h2>
+        <h2 id="email-heading" tabindex="-1">{{ t('account.account.emailHeading') }}</h2>
         <p>{{ t('account.account.emailText') }}</p>
         <form (ngSubmit)="changeEmail()" class="account-form">
           <div class="mb-3">
@@ -172,7 +189,7 @@ type Confirming = 'password' | 'email' | 'delete';
             </div>
           }
           @if (confirming() !== 'email') {
-            <button id="email-submit" type="submit" class="btn btn-primary" [attr.aria-disabled]="busy() || null">
+            <button id="email-submit" type="submit" class="btn btn-light border" [attr.aria-disabled]="busy() || null">
               {{ twoStep() ? t('account.mfa.continue') : t('account.account.emailSend') }}
             </button>
           }
@@ -183,7 +200,7 @@ type Confirming = 'password' | 'email' | 'delete';
       </section>
 
       <section class="auth-text">
-        <h2>{{ t('account.account.signOutHeading') }}</h2>
+        <h2 id="sign-out-heading" tabindex="-1">{{ t('account.account.signOutHeading') }}</h2>
         <p>{{ t('account.account.signOutText') }}</p>
         <button
           type="button"
@@ -196,7 +213,7 @@ type Confirming = 'password' | 'email' | 'delete';
       </section>
 
       <section class="auth-text">
-        <h2>{{ t('account.account.deleteHeading') }}</h2>
+        <h2 id="delete-heading" tabindex="-1">{{ t('account.account.deleteHeading') }}</h2>
         <p>{{ t('account.account.deleteText') }}</p>
         <form (ngSubmit)="deleteAccount()" class="account-form">
           @if (!twoStep()) {
@@ -253,10 +270,40 @@ type Confirming = 'password' | 'email' | 'delete';
     .account-form {
       max-width: 26rem;
     }
+    .account-contents ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0 1.25rem;
+      list-style: none;
+      margin: -0.75rem 0 1.25rem;
+      padding: 0;
+    }
+    .account-contents a {
+      display: inline-block;
+      padding: 0.35rem 0;
+    }
+    /* A finger's height on a phone. */
+    @media (max-width: 767.98px) {
+      .account-contents a {
+        padding: 0.6rem 0;
+      }
+    }
   `
 })
 export class AccountPage {
   protected readonly auth = inject(AuthService);
+  /** The sections, for the contents at the top: each heading's id and its message. */
+  protected readonly contents = [
+    { id: 'settings-heading', label: marker('account.settings.heading') },
+    { id: 'export-heading', label: marker('account.export.heading') },
+    { id: 'password-heading', label: marker('account.account.changeHeading') },
+    { id: 'mfa-heading', label: marker('account.mfa.heading') },
+    { id: 'email-heading', label: marker('account.account.emailHeading') },
+    { id: 'sign-out-heading', label: marker('account.account.signOutHeading') },
+    { id: 'delete-heading', label: marker('account.account.deleteHeading') }
+  ];
+  /** Each goes to its section's heading, as a guide's contents do. */
+  protected readonly links = new SectionLinks();
   private readonly router = inject(Router);
   private readonly injector = inject(Injector);
 

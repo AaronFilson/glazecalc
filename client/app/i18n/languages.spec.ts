@@ -147,7 +147,12 @@ describe('the footer’s languages', () => {
   });
 
   it('link this page in each language, and remember the one chosen', async () => {
-    const links = [...(await footer(['en', 'en-XA']))!.querySelectorAll('a')];
+    const nav = (await footer(['en', 'en-XA']))!;
+    // Folded into one line, "Language: English", on every page.
+    const details = nav.closest('details') as HTMLDetailsElement;
+    expect(details.open).toBe(false);
+    expect(details.querySelector('summary')?.textContent?.replace(/\s+/g, ' ').trim()).toBe('Language: English');
+    const links = [...nav.querySelectorAll('a')];
     expect(links.map((a) => [a.textContent, a.getAttribute('href'), a.getAttribute('lang')])).toEqual([
       ['English', '/', 'en'],
       ['Ëñĝļîšĥ (pseudo)', '/en-XA/', 'en-XA']

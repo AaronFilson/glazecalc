@@ -7,7 +7,7 @@ import { errorMessage } from '../../core/error-message';
 import { Material } from '../../core/models';
 import { PAGE_LANGUAGE } from '../../i18n/language';
 import { Busy } from '../../shared/busy';
-import { ChemistryForm } from '../../shared/chemistry-form';
+import { CHEMISTRY_FORM_STYLES, ChemistryForm } from '../../shared/chemistry-form';
 import { FieldCheck } from '../../shared/field-checks';
 import { PlainPipe } from '../../shared/format-pipes';
 import { byNameIn } from '../../shared/library-info';
@@ -31,7 +31,8 @@ import { StandardList } from '../../shared/standard-list';
     StandardList,
     TranslocoDirective
   ],
-  templateUrl: './material-page.html'
+  templateUrl: './material-page.html',
+  styles: CHEMISTRY_FORM_STYLES
 })
 export class MaterialPage implements OnInit {
   private readonly materials = inject(ApiResourceFactory).for<Material>('materials');

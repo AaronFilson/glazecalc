@@ -151,10 +151,6 @@
         "purpose": "Se le nuove ricette conteggiano gli additivi nella formula di Seger (UMF), come scelto l’ultima volta.",
         "lasts": "Finché non cancella i dati del browser."
       },
-      "recipeHelp": {
-        "purpose": "Il fatto che ha nascosto l’aiuto nella pagina della ricetta.",
-        "lasts": "Finché non mostra di nuovo l’aiuto."
-      },
       "print": {
         "purpose": "Le ultime scelte per stampare una ricetta: la ricetta intera o una pesata, e il peso della pesata.",
         "lasts": "Finché non cancella i dati del browser."

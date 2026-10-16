@@ -133,7 +133,7 @@ for (const colorScheme of ['light', 'dark']) {
       await expect(page.locator('#recipe-name')).toHaveAttribute('aria-invalid', 'true');
       await expectNoProblems(page, colorScheme + ' /recipe with problems marked');
       // The question about unsaved changes, open.
-      await page.getByRole('button', { name: 'New recipe' }).click();
+      await page.getByRole('button', { name: 'Start a new recipe' }).click();
       await expect(page.getByRole('button', { name: 'Keep editing' })).toBeFocused();
       await expectNoProblems(page, colorScheme + ' /recipe unsaved question');
     });

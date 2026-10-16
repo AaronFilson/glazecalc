@@ -151,10 +151,6 @@
         "purpose": "Ar naujuose receptuose priedai įskaičiuojami į Segerio formulę, kaip pasirinkote paskutinį kartą.",
         "lasts": "Kol išvalysite naršyklės saugyklą."
       },
-      "recipeHelp": {
-        "purpose": "Tai, kad paslėpėte pagalbą recepto puslapyje.",
-        "lasts": "Kol vėl parodysite pagalbą."
-      },
       "print": {
         "purpose": "Paskutiniai jūsų pasirinkimai spausdinant receptą: visas receptas ar užmaišas ir užmaišo dydis.",
         "lasts": "Kol išvalysite naršyklės saugyklą."

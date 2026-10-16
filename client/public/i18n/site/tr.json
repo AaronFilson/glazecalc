@@ -151,10 +151,6 @@
         "purpose": "Yeni reçetelerin katkılarını Seger formülüne katıp katmayacağı, en son seçtiğiniz gibi.",
         "lasts": "Tarayıcınızın depolama alanını temizleyene kadar."
       },
-      "recipeHelp": {
-        "purpose": "Reçete sayfasındaki yardımı gizlediğiniz.",
-        "lasts": "Yardımı yeniden gösterene kadar."
-      },
       "print": {
         "purpose": "Bir reçeteyi yazdırırken yaptığınız son seçimler: reçetenin tamamı ya da bir tartım ve tartım miktarı.",
         "lasts": "Tarayıcınızın depolama alanını temizleyene kadar."

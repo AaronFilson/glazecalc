@@ -13,7 +13,7 @@ const saveMaterial = async (page, name) => {
   expect(res.ok()).toBeTruthy();
 };
 
-const mine = (page) => page.locator('section', { hasText: 'My materials:' });
+const mine = (page) => page.locator('section', { hasText: 'My materials' });
 const removeButton = (page, name) => page.getByRole('button', { name: 'Remove ' + name, exact: true });
 
 test.beforeEach(async ({ page }) => {
@@ -74,11 +74,12 @@ test('removes with the keyboard alone, and the focus moves on', async ({ page })
   await page.keyboard.press('Shift+Tab');
   await page.keyboard.press('Enter');
   await expect(page.locator('.server-msg')).toContainText('Removed "Whiting, bag 2".');
-  // The list goes with its last record, so the focus goes to the page's heading.
-  await expect(mine(page)).toHaveCount(0);
-  await expect(page.locator('h1')).toBeFocused();
+  // The table goes with its last record, so the focus goes to the list's heading, which says it is empty.
+  await expect(mine(page).locator('table')).toHaveCount(0);
+  await expect(page.locator('#my-materials-heading')).toBeFocused();
+  await expect(mine(page)).toContainText('None yet.');
 
   await page.reload();
   await expect(page.locator('h1')).toBeVisible();
-  await expect(mine(page)).toHaveCount(0);
+  await expect(mine(page)).toContainText('None yet.');
 });

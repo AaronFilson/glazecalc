@@ -6,7 +6,7 @@ import { ApiResourceFactory } from '../../core/api-resource.service';
 import { errorMessage } from '../../core/error-message';
 import { Additive } from '../../core/models';
 import { Busy } from '../../shared/busy';
-import { ChemistryForm } from '../../shared/chemistry-form';
+import { CHEMISTRY_FORM_STYLES, ChemistryForm } from '../../shared/chemistry-form';
 import { FieldCheck } from '../../shared/field-checks';
 import { fixed } from '../../shared/format';
 import { NumberInput } from '../../shared/number-input';
@@ -28,7 +28,8 @@ import { StandardList } from '../../shared/standard-list';
     StandardList,
     TranslocoDirective
   ],
-  templateUrl: './additive-page.html'
+  templateUrl: './additive-page.html',
+  styles: CHEMISTRY_FORM_STYLES
 })
 export class AdditivePage implements OnInit {
   private readonly additives = inject(ApiResourceFactory).for<Additive>('additives');

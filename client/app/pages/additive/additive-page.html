@@ -2,39 +2,80 @@
   <gc-page-header [title]="t('library.additive.title')" [lead]="t('library.additive.lead')" />
   <gc-notices [notices]="notices" />
 
-  <section class="inputbox">
-    <h2 class="h3">{{ t('library.additive.newHeading') }}</h2>
-    <p>
+  <!-- The potter's own first, then the form to add one, then the standard list to look things up in. -->
+  <section class="panel" aria-labelledby="my-additives-heading">
+    <h2 class="h4" id="my-additives-heading">{{ t('library.additive.mineHeading') }}</h2>
+    @if (myAdditives().length) {
+      <div class="mine-table-scroll" tabindex="0" role="region" aria-labelledby="my-additives-heading">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>{{ t('standard.name') }}</th>
+              <th>{{ t('standard.formula') }}</th>
+              <th>{{ t('standard.notes') }}</th>
+              <th>{{ t('library.common.elements') }}</th>
+            </tr>
+          </thead>
+          <tbody>
+            @for (add of myAdditives(); track add._id) {
+              <tr>
+                <td>
+                  {{ add.name }}
+                  <div>
+                    <gc-remove-button
+                      [name]="removal.nameOf(add)"
+                      [note]="t('library.common.removeNote')"
+                      [busy]="removal.isPending(add)"
+                      [problem]="removal.problemFor(add)"
+                      (confirmed)="removal.remove(add)"
+                    />
+                  </div>
+                </td>
+                <td translate="no">{{ formatFormula(add.rawformula) }}</td>
+                <td class="keep-lines">{{ firstOf(add.notes) }}</td>
+                <td translate="no">{{ fieldsText(add) }}</td>
+              </tr>
+            }
+          </tbody>
+        </table>
+      </div>
+    } @else {
+      <p class="muted mine-empty">{{ t('library.additive.none') }}</p>
+    }
+  </section>
+
+  <section class="panel chemistry-form" aria-labelledby="new-additive-heading">
+    <h2 class="h4" id="new-additive-heading">{{ t('library.additive.newHeading') }}</h2>
+    <p class="form-text">
       {{ t('library.common.formulaHelp', { typed: 'CoAl2O4', shown: 'CoAl₂O₄', joined: 'CuCO₃•Cu(OH)₂' }) }}
       <span class="large">•</span>
     </p>
-    <form class="form" (ngSubmit)="save()">
-      <div class="row">
-        <div class="col-xl-4 col-md-6 mb-3">
-          <label for="additive-name">{{ t('library.additive.name') }} </label>
+    <form (ngSubmit)="save()">
+      <div class="form-grid">
+        <div>
+          <label for="additive-name" class="form-label">{{ t('library.additive.name') }}</label>
           <input
             id="additive-name"
             type="text"
             name="name"
+            class="form-control"
             [(ngModel)]="form.name"
             [gcField]="form.checks"
             gcFieldName="name"
           />
         </div>
-        <div class="col-xl-4 col-md-6 mb-3">
-          <label for="formula">{{ t('library.additive.formulaAsSold') }} </label>
-          <input id="formula" type="text" name="rawformula" [(ngModel)]="form.rawformula" />
+        <div>
+          <label for="formula" class="form-label">{{ t('library.additive.formulaAsSold') }}</label>
+          <input id="formula" type="text" name="rawformula" class="form-control" [(ngModel)]="form.rawformula" />
         </div>
-        <div class="col-xl-4 col-md-6 mb-3">
-          <label for="related-to">{{ t('library.common.relatedTo') }} </label>
-          <input id="related-to" type="text" name="relatedTo" [(ngModel)]="form.relatedTo" />
+        <div>
+          <label for="related-to" class="form-label">{{ t('library.common.relatedTo') }}</label>
+          <input id="related-to" type="text" name="relatedTo" class="form-control" [(ngModel)]="form.relatedTo" />
         </div>
       </div>
-      <div class="row">
-        <div class="col-lg-10 mb-3">
-          <label for="notes" class="boxlabel">{{ t('library.common.notes') }} </label>
-          <textarea id="notes" name="notes" rows="3" class="form-control" [(ngModel)]="form.notes"></textarea>
-        </div>
+      <div class="mb-3">
+        <label for="notes" class="form-label">{{ t('library.common.notes') }}</label>
+        <textarea id="notes" name="notes" rows="3" class="form-control" [(ngModel)]="form.notes"></textarea>
       </div>
       <div class="form-check mb-3">
         <input
@@ -50,25 +91,27 @@
         </label>
       </div>
       @if (!form.noChemistry()) {
-        <div class="row">
-          <div class="col-xl-4 col-md-6 mb-3">
-            <label for="additive-loi">{{ t('library.common.loi') }} </label>
+        <div class="form-grid">
+          <div>
+            <label for="additive-loi" class="form-label">{{ t('library.common.loi') }}</label>
             <input
               id="additive-loi"
               type="text"
               inputmode="decimal"
+              class="form-control"
               [gcNumber]="form.loi()"
               (gcNumberChange)="form.loi.set($event)"
               [gcField]="form.checks"
               gcFieldName="loi"
             />
           </div>
-          <div class="col-xl-4 col-md-6 mb-3">
-            <label for="additive-molecularweight">{{ t('library.common.molecularWeight') }} </label>
+          <div>
+            <label for="additive-molecularweight" class="form-label">{{ t('library.common.molecularWeight') }}</label>
             <input
               id="additive-molecularweight"
               type="text"
               inputmode="decimal"
+              class="form-control"
               [gcNumber]="form.molecularweight()"
               (gcNumberChange)="form.molecularweight.set($event)"
               [gcField]="form.checks"
@@ -76,74 +119,80 @@
             />
           </div>
         </div>
-        <p>{{ t('library.additive.firedNote', { asSold: 'Co₃O₄', fired: 'CoO', loi: fixed(6.6, 1) }) }}</p>
+        <p class="form-text">
+          {{ t('library.additive.firedNote', { asSold: 'Co₃O₄', fired: 'CoO', loi: fixed(6.6, 1) }) }}
+        </p>
 
-        <h3 class="h4">{{ t('library.common.formulaHeading') }}</h3>
-        <div class="row">
-          <div class="col-lg-6 mb-3">
-            <label for="additive-oxide">{{ t('library.common.oxideSelection') }}</label>
-            <div>
-              <select
-                id="additive-oxide"
-                name="additive-oxide-select"
-                [(ngModel)]="form.selectedOxide"
-                [gcField]="form.checks"
-                gcFieldName="oxide"
-              >
-                <option value="">{{ t('library.common.noOxide') }}</option>
-                @for (oxide of oxides; track oxide.value) {
-                  <option [value]="oxide.value">{{ oxide.label }}</option>
-                }
-              </select>
-            </div>
-            <button type="button" class="btn btn-light border" (click)="form.addOxide()">
-              {{ t('library.common.addOxide') }}
-            </button>
+        <h3 class="h5">{{ t('library.common.formulaHeading') }}</h3>
+        <fieldset class="mb-3">
+          <legend class="form-label">{{ t('library.common.formulaIn') }}</legend>
+          <div class="form-check form-check-inline">
+            <input
+              id="additive-percent"
+              class="form-check-input"
+              type="radio"
+              name="percentmole"
+              value="percent"
+              [(ngModel)]="form.percentmole"
+            />
+            <label for="additive-percent" class="form-check-label">{{ t('library.common.percent') }}</label>
           </div>
-          <fieldset class="col-lg-6 mb-3">
-            <legend class="h5">{{ t('library.common.formulaIn') }}</legend>
-            <div class="form-check">
-              <input
-                id="additive-percent"
-                class="form-check-input"
-                type="radio"
-                name="percentmole"
-                value="percent"
-                [(ngModel)]="form.percentmole"
-              />
-              <label for="additive-percent" class="form-check-label">{{ t('library.common.percent') }}</label>
-            </div>
-            <div class="form-check">
-              <input
-                id="additive-mole"
-                class="form-check-input"
-                type="radio"
-                name="percentmole"
-                value="molecular"
-                [(ngModel)]="form.percentmole"
-              />
-              <label for="additive-mole" class="form-check-label">{{ t('library.common.molecular') }}</label>
-            </div>
-          </fieldset>
+          <div class="form-check form-check-inline">
+            <input
+              id="additive-mole"
+              class="form-check-input"
+              type="radio"
+              name="percentmole"
+              value="molecular"
+              [(ngModel)]="form.percentmole"
+            />
+            <label for="additive-mole" class="form-check-label">{{ t('library.common.molecular') }}</label>
+          </div>
+        </fieldset>
+        <div class="oxide-pick">
+          <div>
+            <label for="additive-oxide" class="form-label">{{ t('library.common.oxideSelection') }}</label>
+            <select
+              id="additive-oxide"
+              name="additive-oxide-select"
+              class="form-select"
+              [(ngModel)]="form.selectedOxide"
+              [gcField]="form.checks"
+              gcFieldName="oxide"
+            >
+              <option value="">{{ t('library.common.noOxide') }}</option>
+              @for (oxide of oxides; track oxide.value) {
+                <option [value]="oxide.value">{{ oxide.label }}</option>
+              }
+            </select>
+          </div>
+          <button type="button" class="btn btn-light border" (click)="form.addOxide()">
+            {{ t('library.common.addOxide') }}
+          </button>
         </div>
-        <ul>
+        <ul class="oxide-lines">
           @for (line of form.formula(); track $index) {
             <li>
-              <b translate="no">{{ formatFormula(line.name) }}</b>
-              <p>
-                <label [for]="'part-amount-' + $index">{{ t('library.common.amount') }} </label>
-                <input
-                  [id]="'part-amount-' + $index"
-                  type="text"
-                  inputmode="decimal"
-                  class="part-amount"
-                  [gcField]="form.checks"
-                  [gcFieldName]="'amount-' + $index"
-                  [gcNumber]="line.amount"
-                  (gcNumberChange)="form.setAmount($index, $event)"
-                />
-              </p>
-              <button type="button" class="btn btn-light border" (click)="form.removeOxide($index)">
+              <label [for]="'part-amount-' + $index">
+                <b translate="no">{{ formatFormula(line.name) }}</b>
+                <span class="visually-hidden">{{ t('library.common.amount') }}</span>
+              </label>
+              <input
+                [id]="'part-amount-' + $index"
+                type="text"
+                inputmode="decimal"
+                class="form-control part-amount"
+                [gcField]="form.checks"
+                [gcFieldName]="'amount-' + $index"
+                [gcNumber]="line.amount"
+                (gcNumberChange)="form.setAmount($index, $event)"
+              />
+              <button
+                type="button"
+                class="btn btn-light border btn-sm"
+                [attr.aria-label]="t('library.common.removeOxideName', { oxide: formatFormula(line.name) })"
+                (click)="form.removeOxide($index)"
+              >
                 {{ t('library.common.removeOxide') }}
               </button>
             </li>
@@ -153,47 +202,8 @@
       <button type="submit" class="btn btn-primary" [disabled]="saving.active()">{{ t('library.common.save') }}</button>
     </form>
   </section>
-  <br />
 
-  @if (myAdditives().length) {
-    <section class="tech-info" aria-labelledby="my-additives-heading">
-      <h2 class="h4" id="my-additives-heading">{{ t('library.additive.mineHeading') }}</h2>
-      <table class="table table-bordered">
-        <thead>
-          <tr>
-            <th>{{ t('standard.name') }}</th>
-            <th>{{ t('standard.formula') }}</th>
-            <th>{{ t('standard.notes') }}</th>
-            <th>{{ t('library.common.elements') }}</th>
-          </tr>
-        </thead>
-        <tbody>
-          @for (add of myAdditives(); track add._id) {
-            <tr>
-              <td>
-                {{ add.name }}
-                <div>
-                  <gc-remove-button
-                    [name]="removal.nameOf(add)"
-                    [note]="t('library.common.removeNote')"
-                    [busy]="removal.isPending(add)"
-                    [problem]="removal.problemFor(add)"
-                    (confirmed)="removal.remove(add)"
-                  />
-                </div>
-              </td>
-              <td translate="no">{{ formatFormula(add.rawformula) }}</td>
-              <td class="keep-lines">{{ firstOf(add.notes) }}</td>
-              <td translate="no">{{ fieldsText(add) }}</td>
-            </tr>
-          }
-        </tbody>
-      </table>
-    </section>
-    <br />
-  }
-
-  <section class="tech-info" aria-labelledby="standard-additives-heading">
+  <section class="panel" aria-labelledby="standard-additives-heading">
     <h2 class="h4" id="standard-additives-heading">{{ t('library.additive.standardHeading') }}</h2>
     <gc-standard-list
       [records]="standardAdditives()"

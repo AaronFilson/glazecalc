@@ -151,10 +151,6 @@
         "purpose": "Hogy az új receptek beszámítják-e adalékaikat a Seger-képletbe, ahogy legutóbb választotta.",
         "lasts": "Amíg nem törli a böngésző tárhelyét."
       },
-      "recipeHelp": {
-        "purpose": "Hogy elrejtette a súgót a recept oldalán.",
-        "lasts": "Amíg újra meg nem jeleníti a súgót."
-      },
       "print": {
         "purpose": "A recept nyomtatásánál legutóbb választott beállításai: a teljes recept vagy egy adag, és az adagméret.",
         "lasts": "Amíg nem törli a böngésző tárhelyét."

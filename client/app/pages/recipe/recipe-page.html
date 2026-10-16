@@ -47,13 +47,151 @@
   <!-- Hidden, not removed, while printing or comparing: what is being edited stays just as it was. -->
   <div [hidden]="printRecipe() || printWaiting() || comparing() || compareWaiting()">
     <gc-page-header [title]="t('recipe.page.title')" [lead]="t('recipe.page.lead')" />
-    <gc-recipe-help />
+    <gc-recipe-help [empty]="recipesLoaded() ? !myRecipes().length : null" />
     <gc-notices [notices]="notices" />
+
+    <!-- A potter's collection, first: each name opens it in the editor below; the rest is under More. -->
+    @if (myRecipes().length) {
+      <section id="saved-recipes" class="panel saved-recipes" aria-labelledby="saved-heading">
+        <div class="saved-recipes-top">
+          <h2 id="saved-heading" tabindex="-1">
+            {{ t('recipe.page.mineHeading') }}
+            <span class="saved-count">{{ t('recipe.page.mineCount', { count: myRecipes().length }) }}</span>
+          </h2>
+          @if (myRecipes().length > filterFrom) {
+            <input
+              type="search"
+              class="form-control saved-filter"
+              [attr.aria-label]="t('recipe.page.mineFilter')"
+              [placeholder]="t('recipe.page.mineFilter')"
+              [(ngModel)]="recipeFilter"
+            />
+          }
+        </div>
+        <ul class="saved-list">
+          @for (rec of shownRecipes(); track rec._id) {
+            <li class="saved-recipe" [class.is-open]="rec._id === savedId()">
+              <div class="saved-recipe-top">
+                <span class="saved-recipe-name">
+                  <button
+                    type="button"
+                    class="btn btn-link saved-recipe-open"
+                    [attr.aria-label]="t('recipe.page.openName', { title: rec.title })"
+                    (click)="open(rec)"
+                  >
+                    <bdi>{{ rec.title }}</bdi>
+                  </button>
+                  @if (rec.date) {
+                    <span class="saved-recipe-date">{{ rec.date | gcDate: 'medium' }}</span>
+                  }
+                  @if (rec._id === savedId()) {
+                    <span class="saved-open-mark">{{ t('recipe.page.openAbove') }}</span>
+                  }
+                </span>
+                <span class="saved-recipe-actions">
+                  <button
+                    type="button"
+                    class="btn btn-light border btn-sm"
+                    [attr.aria-expanded]="expanded().has(rec._id ?? '')"
+                    (click)="toggleExpanded(rec)"
+                  >
+                    {{ expanded().has(rec._id ?? '') ? t('recipe.page.hide') : t('recipe.page.expand') }}
+                  </button>
+                  <button
+                    [id]="'more-' + rec._id"
+                    type="button"
+                    class="btn btn-light border btn-sm"
+                    [attr.aria-expanded]="moreOpen().has(rec._id ?? '')"
+                    [attr.aria-controls]="'more-actions-' + rec._id"
+                    [attr.aria-label]="t('recipe.page.moreName', { title: rec.title })"
+                    (click)="toggleMore(rec)"
+                  >
+                    {{ t('recipe.page.more') }}
+                  </button>
+                </span>
+                @if (moreOpen().has(rec._id ?? '')) {
+                  <span class="saved-recipe-more" [id]="'more-actions-' + rec._id">
+                    <button
+                      [id]="'print-' + rec._id"
+                      type="button"
+                      class="btn btn-light border btn-sm"
+                      [attr.aria-label]="t('recipe.page.printName', { title: rec.title })"
+                      (click)="openPrint(rec._id ?? '')"
+                    >
+                      {{ t('recipe.page.print') }}
+                    </button>
+                    <button
+                      [id]="'compare-' + rec._id"
+                      type="button"
+                      class="btn btn-light border btn-sm"
+                      [attr.aria-label]="t('recipe.page.compareName', { title: rec.title })"
+                      (click)="compareSaved(rec)"
+                    >
+                      {{ t('recipe.page.compare') }}
+                    </button>
+                    <gc-remove-button
+                      danger
+                      [name]="rec.title"
+                      [note]="rec._id === savedId() ? t('recipe.page.removeOpenNote') : ''"
+                      [busy]="removal.isPending(rec)"
+                      [problem]="removal.problemFor(rec)"
+                      (confirmed)="remove(rec)"
+                    />
+                  </span>
+                }
+              </div>
+              @if (expanded().has(rec._id ?? '')) {
+                <div class="saved-recipe-details">
+                  <em>{{ t('recipe.page.savedMaterials') }}</em>
+                  <ol>
+                    @for (part of rec.materials; track $index) {
+                      <li>{{ part.name }} : {{ part.amount | gcPlain }}</li>
+                    }
+                  </ol>
+                  @if (rec.additives?.length) {
+                    <em>{{ t('recipe.page.savedAdditives') }}</em>
+                    <ol>
+                      @for (add of rec.additives; track $index) {
+                        <li>{{ add.name }} : {{ additiveAmount(add) }}</li>
+                      }
+                    </ol>
+                  }
+                  @if (savedAnalysis(rec); as analysis) {
+                    <em>{{
+                      rec.includeAdditives ? t('recipe.page.savedUnityCounted') : t('recipe.page.savedUnity')
+                    }}</em>
+                    <gc-unity-formula [analysis]="analysis" />
+                  }
+                  @if (rec.date) {
+                    <div>{{ t('recipe.page.savedDate', { date: (rec.date | gcDate) }) }}</div>
+                  }
+                  <div class="keep-lines">{{ t('recipe.page.savedNotes', { notes: savedNotes(rec) }) }}</div>
+                </div>
+              }
+            </li>
+          } @empty {
+            <li class="muted">{{ t('recipe.page.noneFound') }}</li>
+          }
+        </ul>
+        @if (hiddenRecipes()) {
+          <button type="button" class="btn btn-link p-0 saved-show-all" (click)="showAllRecipes.set(true)">
+            {{ t('recipe.page.showAll', { count: myRecipes().length }) }}
+          </button>
+        }
+      </section>
+    }
 
     <div class="recipe-layout">
       <section class="panel recipe-editor" aria-labelledby="editor-heading">
         <div class="editor-top">
-          <h2 id="editor-heading">{{ savedId() ? t('recipe.page.editorSaved') : t('recipe.page.editorNew') }}</h2>
+          <!-- The recipe's own title, as it is typed; "New recipe" until it has one. -->
+          @if (title().trim(); as named) {
+            <h2 id="editor-heading" translate="no">
+              <bdi>{{ named }}</bdi>
+            </h2>
+          } @else {
+            <h2 id="editor-heading">{{ t('recipe.page.editorNew') }}</h2>
+          }
           @if (hasContent()) {
             <button type="button" class="btn btn-light border btn-sm" (click)="startNew()">
               {{ t('recipe.page.startNew') }}
@@ -741,87 +879,6 @@
         }
       </section>
     </div>
-
-    <section class="panel saved-recipes" aria-labelledby="saved-heading">
-      <h2 id="saved-heading">{{ t('recipe.page.mineHeading') }}</h2>
-      @if (myRecipes().length) {
-        <ul>
-          @for (rec of myRecipes(); track rec._id) {
-            <li class="saved-recipe" [class.is-open]="rec._id === savedId()">
-              <div class="saved-recipe-top">
-                <b>{{ rec.title }}</b>
-                @if (rec._id === savedId()) {
-                  <span class="saved-open-mark">{{ t('recipe.page.openAbove') }}</span>
-                }
-                <span class="saved-recipe-actions">
-                  <button type="button" class="btn btn-light border btn-sm" (click)="open(rec)">
-                    {{ t('recipe.page.open') }}
-                  </button>
-                  <button
-                    [id]="'print-' + rec._id"
-                    type="button"
-                    class="btn btn-light border btn-sm"
-                    [attr.aria-label]="t('recipe.page.printName', { title: rec.title })"
-                    (click)="openPrint(rec._id ?? '')"
-                  >
-                    {{ t('recipe.page.print') }}
-                  </button>
-                  <button
-                    [id]="'compare-' + rec._id"
-                    type="button"
-                    class="btn btn-light border btn-sm"
-                    [attr.aria-label]="t('recipe.page.compareName', { title: rec.title })"
-                    (click)="compareSaved(rec)"
-                  >
-                    {{ t('recipe.page.compare') }}
-                  </button>
-                  <button type="button" class="btn btn-light border btn-sm" (click)="toggleExpanded(rec)">
-                    {{ expanded().has(rec._id ?? '') ? t('recipe.page.hide') : t('recipe.page.expand') }}
-                  </button>
-                </span>
-                <gc-remove-button
-                  [name]="rec.title"
-                  [note]="rec._id === savedId() ? t('recipe.page.removeOpenNote') : ''"
-                  [busy]="removal.isPending(rec)"
-                  [problem]="removal.problemFor(rec)"
-                  (confirmed)="remove(rec)"
-                />
-              </div>
-              @if (expanded().has(rec._id ?? '')) {
-                <div>
-                  <em>{{ t('recipe.page.savedMaterials') }}</em>
-                  <ol>
-                    @for (part of rec.materials; track $index) {
-                      <li>{{ part.name }} : {{ part.amount | gcPlain }}</li>
-                    }
-                  </ol>
-                  @if (rec.additives?.length) {
-                    <em>{{ t('recipe.page.savedAdditives') }}</em>
-                    <ol>
-                      @for (add of rec.additives; track $index) {
-                        <li>{{ add.name }} : {{ additiveAmount(add) }}</li>
-                      }
-                    </ol>
-                  }
-                  @if (savedAnalysis(rec); as analysis) {
-                    <em>{{
-                      rec.includeAdditives ? t('recipe.page.savedUnityCounted') : t('recipe.page.savedUnity')
-                    }}</em>
-                    <gc-unity-formula [analysis]="analysis" />
-                  }
-                  @if (rec.date) {
-                    <div>{{ t('recipe.page.savedDate', { date: (rec.date | gcDate) }) }}</div>
-                  }
-                  <div class="keep-lines">{{ t('recipe.page.savedNotes', { notes: savedNotes(rec) }) }}</div>
-                </div>
-              }
-            </li>
-          }
-        </ul>
-      } @else {
-        <p class="muted">{{ t('recipe.page.noneSaved') }}</p>
-      }
-    </section>
   </div>
   <!-- What an action did that the focus does not show, for screen readers; outside the part hidden while printing or comparing. -->
   <p class="visually-hidden" role="status">{{ announcement() }}</p>

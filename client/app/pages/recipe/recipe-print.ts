@@ -524,7 +524,6 @@ const UNITS: ReadonlyArray<{ value: WeightUnit; label: string }> = [
       width: 100%;
       border-collapse: collapse;
       margin: 1rem 0 0;
-      font-variant-numeric: tabular-nums;
     }
     .print-table caption {
       caption-side: top;
@@ -552,6 +551,10 @@ const UNITS: ReadonlyArray<{ value: WeightUnit; label: string }> = [
     }
     .print-table .num {
       text-align: end;
+    }
+    /* Only the numbers: Lora's tabular figures widen its spaces too, which would gap a heading's words. */
+    .print-table td.num {
+      font-variant-numeric: tabular-nums;
     }
     .print-table tfoot th,
     .print-table tfoot td {

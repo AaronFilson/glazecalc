@@ -159,6 +159,31 @@ describe('AccountPage', () => {
     expect((fixture.nativeElement.querySelector('#weight-unit-g') as HTMLInputElement).checked).toBe(true);
   });
 
+  it('lists its sections at the top, each a link that takes the focus to its heading', async () => {
+    const { fixture } = await create();
+    const nav = fixture.nativeElement.querySelector('nav.account-contents') as HTMLElement;
+    expect(nav.getAttribute('aria-label')).toBe('On this page');
+    const links = [...nav.querySelectorAll('a')] as HTMLAnchorElement[];
+    expect(links.map((a) => a.textContent?.trim())).toEqual([
+      'Settings',
+      'Download my data',
+      'Change your password',
+      'Two-step sign-in',
+      'Change your email',
+      'Sign out everywhere',
+      'Delete your account'
+    ]);
+    // Each heading is there to go to.
+    for (const link of links) {
+      const id = link.getAttribute('href')!.split('#')[1]!;
+      expect(fixture.nativeElement.querySelector('#' + id)?.tagName).toBe('H2');
+    }
+    links[3]!.dispatchEvent(new MouseEvent('click', { bubbles: true, cancelable: true, button: 0 }));
+    expect(document.activeElement?.id).toBe('mfa-heading');
+    // One filled button at most, for a step under way: none while nothing is.
+    expect(fixture.nativeElement.querySelectorAll('.btn-primary').length).toBe(0);
+  });
+
   it('changes the password and keeps this browser signed in', async () => {
     const { fixture, page } = await create();
     page['current'].set('old-password');

@@ -151,10 +151,6 @@
         "purpose": "Czy nowe receptury uwzględniają dodatki we wzorze Segera, zgodnie z ostatnim wyborem.",
         "lasts": "Do wyczyszczenia pamięci przeglądarki."
       },
-      "recipeHelp": {
-        "purpose": "Informacja, że ukryto pomoc na stronie receptury.",
-        "lasts": "Do ponownego wyświetlenia pomocy."
-      },
       "print": {
         "purpose": "Ostatnie ustawienia drukowania receptury: cała receptura lub porcja oraz wielkość porcji.",
         "lasts": "Do wyczyszczenia pamięci przeglądarki."

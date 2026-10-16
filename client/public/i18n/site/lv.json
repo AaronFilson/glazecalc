@@ -151,10 +151,6 @@
         "purpose": "Vai jaunās receptēs piedevas tiek ieskaitītas Zēgera formulā, kā pēdējo reizi izvēlējāties.",
         "lasts": "Līdz notīrāt pārlūkprogrammas krātuvi."
       },
-      "recipeHelp": {
-        "purpose": "Tas, ka paslēpāt palīdzību receptes lapā.",
-        "lasts": "Līdz atkal parādāt palīdzību."
-      },
       "print": {
         "purpose": "Jūsu pēdējās receptes drukāšanas izvēles: visa recepte vai porcija, un porcijas lielums.",
         "lasts": "Līdz notīrāt pārlūkprogrammas krātuvi."

@@ -151,10 +151,6 @@
         "purpose": "Zda nové recepty započítávají přísady do Segerova vzorce (UMF), jak jste naposledy zvolili.",
         "lasts": "Dokud nevymažete úložiště prohlížeče."
       },
-      "recipeHelp": {
-        "purpose": "Že jste skryli nápovědu na stránce receptu.",
-        "lasts": "Dokud nápovědu znovu nezobrazíte."
-      },
       "print": {
         "purpose": "Vaše poslední volby pro tisk receptu: celý recept nebo dávka a velikost dávky.",
         "lasts": "Dokud nevymažete úložiště prohlížeče."

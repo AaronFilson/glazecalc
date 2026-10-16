@@ -6,6 +6,7 @@ import {
   Injector,
   WritableSignal,
   afterNextRender,
+  booleanAttribute,
   inject,
   input,
   output,
@@ -133,7 +134,8 @@ let nextQuestionId = 0;
       <button
         #removeButton
         type="button"
-        class="btn btn-light border btn-sm remove-start"
+        class="btn btn-sm remove-start"
+        [class]="danger() ? 'btn-outline-danger' : 'btn-light border'"
         [attr.aria-label]="t('remove.removeName', { name: name() })"
         (click)="ask()"
       >
@@ -171,6 +173,8 @@ export class RemoveButton {
   readonly name = input.required<string>();
   /** Anything more to know before removing it, as a sentence. */
   readonly note = input('');
+  /** Drawn in the danger color, where it sits among other actions. */
+  readonly danger = input(false, { transform: booleanAttribute });
   /** The page is removing it now. */
   readonly busy = input(false);
   /** Why the last try failed, shown in the question. */

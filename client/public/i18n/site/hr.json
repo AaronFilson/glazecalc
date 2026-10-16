@@ -151,10 +151,6 @@
         "purpose": "Uračunavaju li novi recepti svoje dodatke u Segerovu formulu, kako ste posljednji put odabrali.",
         "lasts": "Dok ne izbrišete pohranu preglednika."
       },
-      "recipeHelp": {
-        "purpose": "To da ste sakrili pomoć na stranici recepta.",
-        "lasts": "Dok ponovno ne prikažete pomoć."
-      },
       "print": {
         "purpose": "Vaši posljednji izbori za ispis recepta: cijeli recept ili smjesa te veličina smjese.",
         "lasts": "Dok ne izbrišete pohranu preglednika."

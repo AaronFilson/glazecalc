@@ -151,10 +151,6 @@
         "purpose": "Whether new recipes count their additives in the unity formula, as you chose last.",
         "lasts": "Until you clear your browser's storage."
       },
-      "recipeHelp": {
-        "purpose": "That you hid the help on the recipe page.",
-        "lasts": "Until you show the help again."
-      },
       "print": {
         "purpose": "Your last choices for printing a recipe: the whole recipe or a batch, and the batch size.",
         "lasts": "Until you clear your browser's storage."

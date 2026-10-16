@@ -8,6 +8,65 @@ import { optional } from './dates';
 import { Check, FieldChecks, numberCheck, required } from './field-checks';
 import { Notices } from './notices';
 
+/**
+ * The look of the Materials and Additives pages (their templates): labels above
+ * fields in a grid of even widths, as on the recipe and account pages, the
+ * oxides of a formula one to a line, and the potter's own list scrolling
+ * sideways on a phone rather than the page.
+ */
+export const CHEMISTRY_FORM_STYLES = `
+  .form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+    gap: 0 1rem;
+    max-width: 48rem;
+  }
+  .form-grid > div,
+  .oxide-pick {
+    margin-bottom: 1rem;
+  }
+  .chemistry-form textarea {
+    max-width: 48rem;
+  }
+  .oxide-pick {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 0.5rem;
+  }
+  .oxide-pick select {
+    width: 16rem;
+  }
+  .oxide-lines {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem;
+    max-width: 30rem;
+  }
+  .oxide-lines li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.35rem 0;
+    border-bottom: 1px solid var(--gc-border);
+  }
+  .oxide-lines label {
+    min-width: 4rem;
+  }
+  .oxide-lines input {
+    width: 7rem;
+  }
+  .mine-table-scroll {
+    overflow-x: auto;
+  }
+  .mine-table-scroll table {
+    margin-bottom: 0;
+  }
+  .mine-empty {
+    margin: 0;
+  }
+`;
+
 export interface FormulaLine {
   name: string;
   amount: string;

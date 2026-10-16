@@ -75,7 +75,8 @@ describe('user API', () => {
       language: 'en',
       density: '',
       englishTerms: 'off',
-      notice: 'shown'
+      notice: 'shown',
+      recipeHelp: 'auto'
     };
 
     it('start in grams to a tenth, and change one at a time', async () => {
@@ -100,6 +101,16 @@ describe('user API', () => {
       expect((await put(token, { lead: 'on' })).body.lead).to.equal('on');
       const saved = (await User.findById(user._id))?.preferences;
       expect([saved?.weightUnit, saved?.gramPrecision]).to.eql(['lb', 'full']);
+    });
+
+    it("keep the recipe page's help open or hidden, as chosen, or opening for an empty account", async () => {
+      expect((await put(token, { recipeHelp: 'hidden' })).body.recipeHelp).to.equal('hidden');
+      expect((await put(token, { recipeHelp: 'shown' })).body.recipeHelp).to.equal('shown');
+      expect((await User.findById(user._id))?.preferences?.recipeHelp).to.equal('shown');
+      const refused = await put(token, { recipeHelp: 'open' });
+      expect(refused).to.have.status(400);
+      expect(refused.body.msg).to.equal('Choose auto, shown or hidden.');
+      expect((await put(token, { recipeHelp: 'auto' })).body.recipeHelp).to.equal('auto');
     });
 
     it('keep where the potter works and how numbers, temperatures and firing are shown', async () => {

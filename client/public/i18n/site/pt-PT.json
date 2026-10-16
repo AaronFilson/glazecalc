@@ -151,10 +151,6 @@
         "purpose": "Se as novas receitas incluem os aditivos na fórmula de Seger, como escolheu da última vez.",
         "lasts": "Até apagar o armazenamento do navegador."
       },
-      "recipeHelp": {
-        "purpose": "Que ocultou a ajuda na página da receita.",
-        "lasts": "Até voltar a mostrar a ajuda."
-      },
       "print": {
         "purpose": "As suas últimas escolhas para imprimir uma receita: a receita completa ou um lote, e o tamanho do lote.",
         "lasts": "Até apagar o armazenamento do navegador."

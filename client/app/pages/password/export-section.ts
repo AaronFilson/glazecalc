@@ -3,23 +3,26 @@ import { TranslocoDirective } from '@jsverse/transloco';
 
 /**
  * "Download my data" on the account page: links to the files the server builds
- * (server/routes/export_routes.ts). They are plain links, so the browser sends
+ * (server/routes/export_routes.ts), drawn as plain buttons: the page keeps its
+ * filled ones for the main action of a step under way. They are plain links, so the browser sends
  * its session cookie and saves the reply as a file. A trial has them too.
  */
 @Component({
   selector: 'gc-export',
   imports: [TranslocoDirective],
   template: `<ng-container *transloco="let t">
-    <section class="auth-text">
-      <h2>{{ t('account.export.heading') }}</h2>
+    <section class="auth-text" aria-labelledby="export-heading">
+      <h2 id="export-heading" tabindex="-1">{{ t('account.export.heading') }}</h2>
       <p>{{ t('account.export.text') }}</p>
       <p>
-        <a href="/api/export" download class="btn btn-primary">{{ t('account.export.json') }}</a>
+        <a href="/api/export" download class="btn btn-light border">{{ t('account.export.json') }}</a>
       </p>
       <p>{{ t('account.export.csvText') }}</p>
       <p class="export-csv">
-        <a href="/api/export/recipes.csv" download class="btn btn-primary">{{ t('account.export.recipes') }}</a>
-        <a href="/api/export/materials.csv" download class="btn btn-primary">{{ t('account.export.materials') }}</a>
+        <a href="/api/export/recipes.csv" download class="btn btn-light border">{{ t('account.export.recipes') }}</a>
+        <a href="/api/export/materials.csv" download class="btn btn-light border">{{
+          t('account.export.materials')
+        }}</a>
       </p>
     </section>
   </ng-container>`,

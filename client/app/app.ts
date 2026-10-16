@@ -4,12 +4,13 @@ import {
   Injector,
   OnInit,
   afterNextRender,
+  computed,
   effect,
   inject,
   signal,
   viewChild
 } from '@angular/core';
-import { DOCUMENT } from '@angular/common';
+import { DOCUMENT, NgTemplateOutlet } from '@angular/common';
 import { TranslocoDirective, translate } from '@jsverse/transloco';
 import { marker } from '@jsverse/transloco-keys-manager/marker';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
@@ -49,7 +50,15 @@ const APP_PAGES = [
 
 @Component({
   selector: 'gc-root',
-  imports: [RichText, RouterLink, RouterLinkActive, RouterOutlet, TranslationNotice, TranslocoDirective],
+  imports: [
+    NgTemplateOutlet,
+    RichText,
+    RouterLink,
+    RouterLinkActive,
+    RouterOutlet,
+    TranslationNotice,
+    TranslocoDirective
+  ],
   template: `<ng-container *transloco="let t">
     <!-- For keyboard and screen reader users: past the menu, straight to the page. Hidden until focused. -->
     <a class="skip-link" href="#main" (click)="skipToContent($event, main)">{{ t('nav.skip') }}</a>
@@ -61,7 +70,18 @@ const APP_PAGES = [
         </a>
         <!-- On a phone the menu is folded away; returning visitors sign in without opening it. -->
         @if (!auth.shownSession()) {
-          <a routerLink="/signin" class="nav-quick-signin">{{ t('nav.signIn') }}</a>
+          @if (!auth.secondStepPending()) {
+            <a routerLink="/signin" class="nav-quick-signin">{{ t('nav.signIn') }}</a>
+          }
+        } @else {
+          <!-- And a signed-in reader sees that they are, and has their account a tap away. -->
+          <a
+            routerLink="/account"
+            class="nav-quick-account"
+            [attr.aria-label]="auth.shownTrial() ? t('nav.trialAccount') : t('nav.account')"
+          >
+            <ng-container [ngTemplateOutlet]="initial" />
+          </a>
         }
         <button
           type="button"
@@ -84,9 +104,23 @@ const APP_PAGES = [
               }
             </ul>
             <div class="nav-account">
-              <a routerLink="/account" class="account-email" translate="no" [title]="t('nav.accountTitle')">{{
-                auth.shownName() ?? t('nav.account')
-              }}</a>
+              <!-- Says what it is, "Account" (or "Trial account"), with the email under it in small text:
+                   an email alone reads as who is signed in, not as the way to the settings. -->
+              <a
+                routerLink="/account"
+                class="account-link"
+                routerLinkActive="active"
+                ariaCurrentWhenActive="page"
+                [title]="t('nav.accountTitle')"
+              >
+                <ng-container [ngTemplateOutlet]="initial" />
+                <span class="account-text">
+                  <span class="account-label">{{ auth.shownTrial() ? t('nav.trialAccount') : t('nav.account') }}</span>
+                  @if (auth.shownTrial() ? null : auth.shownName(); as email) {
+                    <span class="account-email" translate="no">{{ email }}</span>
+                  }
+                </span>
+              </a>
               <!-- A trial has no password to come back with; the trial bar offers its way out. -->
               @if (!auth.shownTrial()) {
                 <button type="button" class="btn btn-light btn-sm" (click)="logout()">{{ t('nav.signOut') }}</button>
@@ -104,10 +138,13 @@ const APP_PAGES = [
                 <a routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page">{{ t('nav.about') }}</a>
               </li>
             </ul>
-            <div class="nav-account">
-              <a routerLink="/signin">{{ t('nav.signIn') }}</a>
-              <a routerLink="/signup" class="btn btn-primary btn-sm">{{ t('nav.createAccount') }}</a>
-            </div>
+            <!-- Not while a sign-in waits for its second step: they would start it again. -->
+            @if (!auth.secondStepPending()) {
+              <div class="nav-account">
+                <a routerLink="/signin">{{ t('nav.signIn') }}</a>
+                <a routerLink="/signup" class="btn btn-primary btn-sm">{{ t('nav.createAccount') }}</a>
+              </div>
+            }
           }
         </div>
       </nav>
@@ -155,6 +192,20 @@ const APP_PAGES = [
       }
     </header>
 
+    <!-- The account's round initial, or a person for a trial, which has no email. -->
+    <ng-template #initial>
+      <span class="account-initial" aria-hidden="true">
+        @if (initialLetter(); as letter) {
+          {{ letter }}
+        } @else {
+          <svg viewBox="0 0 16 16" width="16" height="16" focusable="false">
+            <circle cx="8" cy="5.5" r="3" fill="currentColor" />
+            <path d="M2.5 14.5a5.5 5.5 0 0 1 11 0z" fill="currentColor" />
+          </svg>
+        }
+      </span>
+    </ng-template>
+
     <main #main id="main" class="app-main" tabindex="-1">
       <gc-translation-notice />
       <router-outlet />
@@ -172,19 +223,26 @@ const APP_PAGES = [
           <a href="https://github.com/AaronFilson/glazecalc/issues">{{ t('footer.problem') }}</a>
           <a href="https://updraftpotterystudio.com/">{{ t('footer.pottery') }}</a>
         </nav>
+        <!-- One line, "Language: English", that opens the others: they are many, on every page. -->
         @if (languages.length > 1) {
-          <nav class="footer-languages" [attr.aria-label]="t('footer.languages')">
-            @for (code of languages; track code) {
-              <a
-                [href]="pageIn(code)"
-                [attr.lang]="code"
-                translate="no"
-                [attr.aria-current]="code === pageLanguage ? 'true' : null"
-                (click)="chooseLanguage($event, code)"
-                >{{ languageName(code) }}</a
-              >
-            }
-          </nav>
+          <details class="footer-language">
+            <summary>
+              {{ t('footer.language') }}
+              <span [attr.lang]="pageLanguage" translate="no">{{ languageName(pageLanguage) }}</span>
+            </summary>
+            <nav class="footer-languages" [attr.aria-label]="t('footer.languages')">
+              @for (code of languages; track code) {
+                <a
+                  [href]="pageIn(code)"
+                  [attr.lang]="code"
+                  translate="no"
+                  [attr.aria-current]="code === pageLanguage ? 'true' : null"
+                  (click)="chooseLanguage($event, code)"
+                  >{{ languageName(code) }}</a
+                >
+              }
+            </nav>
+          </details>
         }
         <p>{{ t('footer.copyright') }}</p>
       </footer>
@@ -201,6 +259,10 @@ export class App implements OnInit {
   private readonly main = viewChild.required<ElementRef<HTMLElement>>('main');
 
   protected readonly pages = APP_PAGES;
+  /** The first letter of the account's email, for its round initial; none for a trial. */
+  protected readonly initialLetter = computed(() =>
+    this.auth.shownTrial() ? null : (this.auth.shownName()?.charAt(0).toLocaleUpperCase() ?? null)
+  );
   private readonly preferences = inject(PreferencesService);
   private readonly openPage = inject(OPEN_PAGE);
   protected readonly pageLanguage = inject(PAGE_LANGUAGE);

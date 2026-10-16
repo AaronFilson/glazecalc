@@ -64,7 +64,7 @@ test('tries modern materials for an old recipe, compares the two, prints them, a
   await expect(page.locator('.recipe-status')).toHaveText('Not saved yet');
   await page.getByRole('button', { name: 'Save', exact: true }).click();
   await expect(page.locator('.saved-recipes')).toContainText('Old celadon with modern materials');
-  await expect(page.locator('.saved-recipe b', { hasText: /^Old celadon$/ })).toHaveCount(1);
+  await expect(page.locator('.saved-recipe-open', { hasText: /^Old celadon$/ })).toHaveCount(1);
 });
 
 test('compares saved recipes picked from the list, and colorants counted alike', async ({ page }) => {
@@ -79,6 +79,8 @@ test('compares saved recipes picked from the list, and colorants counted alike',
     await page.getByRole('button', { name: 'Save and add next recipe' }).click();
     await expect(page.locator('.saved-recipes')).toContainText(title);
   }
+  // Compare is under the recipe's More.
+  await page.getByRole('button', { name: 'More for Twenty' }).click();
   await page.getByRole('button', { name: 'Compare Twenty' }).click();
   await expect(page.locator('#compare-title')).toHaveText('Twenty and Thirty');
   await expect(compareRow(page, 'CaO').locator('td').nth(2)).toHaveText(/^\+\d/);

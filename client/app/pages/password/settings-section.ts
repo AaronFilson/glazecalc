@@ -328,7 +328,7 @@ function settingsIn(pageLanguage: string, offered: readonly string[]): Setting[]
   imports: [TranslocoDirective],
   template: `<ng-container *transloco="let t">
     <section class="auth-text settings" aria-labelledby="settings-heading">
-      <h2 id="settings-heading">{{ t('account.settings.heading') }}</h2>
+      <h2 id="settings-heading" tabindex="-1">{{ t('account.settings.heading') }}</h2>
       <p class="muted">{{ t('account.settings.intro') }}</p>
       @for (setting of settings; track setting.name) {
         @if (setting.kind === 'select') {

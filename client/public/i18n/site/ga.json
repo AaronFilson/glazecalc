@@ -151,10 +151,6 @@
         "purpose": "Cé acu a áiríonn oidis nua a mbreiseáin san fhoirmle Seger nó nach n-áiríonn, mar a roghnaigh tú an uair dheireanach.",
         "lasts": "Go dtí go nglanann tú stóras do bhrabhsálaí."
       },
-      "recipeHelp": {
-        "purpose": "Gur fholaigh tú an chabhair ar leathanach an oidis.",
-        "lasts": "Go dtí go dtaispeánann tú an chabhair arís."
-      },
       "print": {
         "purpose": "Na roghanna deireanacha a rinne tú chun oideas a phriontáil: an t-oideas iomlán nó baisc, agus méid na baisce.",
         "lasts": "Go dtí go nglanann tú stóras do bhrabhsálaí."
