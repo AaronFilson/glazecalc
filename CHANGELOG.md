@@ -377,6 +377,10 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
     sentence case, without colons), then the standard list: four columns (name, weights,
     analysis), each record's notes, formula, substitutes, source and hazards under "Details", and
     the first 25 until "Show all" or a filter.
+  - **Firing logs and Notes look like the rest of the app**: each field's label above it, in
+    sentence case and without colons; a saved firing is headed by its title ("Fired in Car kiln on
+    …"); and each says what to do while it is empty ("None yet", "Add a field above, then add
+    rows", and "Add a field first" beside the row button until there is one).
   - **The editor's heading is the recipe's title** ("New recipe" until it has one), and its button
     says "Start a new recipe".
 

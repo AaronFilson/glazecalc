@@ -300,7 +300,7 @@ test.describe('firing log', () => {
 
     await page.reload();
     const stored = page.locator('.stored-firing', { hasText: 'Cone 10 reduction' });
-    await expect(stored).toContainText('Using kiln: Car kiln');
+    await expect(stored).toContainText('Fired in Car kiln on Saturday, October 3, 2026.');
     await expect(stored).toContainText('Saturday, October 3, 2026');
     await expect(stored.locator('th')).toHaveText(['Cone', 'Time', 'Temperature F']);
     await expect(stored.locator('td')).toHaveText(['06', '9:30', '1830']);

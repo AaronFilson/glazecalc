@@ -17,7 +17,79 @@ import { FiringLog } from './firing-log';
 @Component({
   selector: 'gc-firing-page',
   imports: [DatePipe, FieldCheck, FormsModule, NoticesList, PageHeader, RemoveButton, TranslocoDirective],
-  templateUrl: './firing-page.html'
+  templateUrl: './firing-page.html',
+  // Labels above their fields, as on the recipe and account pages.
+  styles: `
+    .firing-fields {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+      gap: 0 1rem;
+      max-width: 52rem;
+    }
+    .firing-fields > div,
+    .firing-field {
+      margin-bottom: 1rem;
+    }
+    #firing-notes {
+      max-width: 52rem;
+    }
+    .field-pick {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      max-width: 30rem;
+    }
+    .field-pick select {
+      flex: 1 1 12rem;
+      width: auto;
+    }
+    .included-fields {
+      padding-inline-start: 1.25rem;
+      margin: 0;
+    }
+    .included-fields > li {
+      padding: 0.35rem 0;
+      border-bottom: 1px solid var(--gc-border);
+    }
+    .included-name {
+      display: inline-block;
+      min-width: 10rem;
+      margin-inline-end: 0.5rem;
+    }
+    .included-buttons {
+      display: inline-flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+    .firing-table-scroll {
+      overflow-x: auto;
+    }
+    .firing-cell {
+      min-width: 6rem;
+    }
+    .firing-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.5rem 1rem;
+      margin-bottom: 1rem;
+    }
+    .stored-firings {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .stored-firing + .stored-firing {
+      border-top: 1px solid var(--gc-border);
+      padding-top: 1rem;
+    }
+    .stored-firing h3 {
+      margin: 0 0 0.25rem;
+    }
+    .stored-firing p {
+      margin: 0 0 0.5rem;
+    }
+  `
 })
 export class FiringPage implements OnInit {
   private readonly firings = inject(ApiResourceFactory).for<Firing>('firing');
@@ -47,6 +119,8 @@ export class FiringPage implements OnInit {
   );
 
   protected readonly myFirings = signal<Firing[]>([]);
+  /** The saved firings have been asked for: until then, "None yet" would be premature. */
+  protected readonly loaded = signal(false);
   protected readonly removal = new Removal(this.firings, this.myFirings, this.notices, (firing) => firing.title);
 
   async ngOnInit(): Promise<void> {
@@ -54,6 +128,8 @@ export class FiringPage implements OnInit {
       this.myFirings.set(await this.firings.getAll());
     } catch {
       this.notices.error(translate('notebook.firing.fetchFailed'));
+    } finally {
+      this.loaded.set(true);
     }
   }
 

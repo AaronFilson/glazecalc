@@ -269,6 +269,16 @@ describe('AdvicePage', () => {
 });
 
 describe('NotesPage', () => {
+  it('says when there are no notes yet, once they have been asked for', async () => {
+    const { fixture } = await create(NotesPage);
+    expect(fixture.nativeElement.querySelector('.notes-empty')).toBeNull();
+    answer('/notes/getAll', []);
+    await settle(fixture);
+    expect(text(fixture, '.notes-empty')).toBe('None yet. Saved notes appear here.');
+    expect(text(fixture, 'label[for=title]')).toBe('Title');
+    expect(text(fixture, 'label[for=content]')).toBe('Note');
+  });
+
   it('saves notes as general notes', async () => {
     const { fixture, page } = await create(NotesPage);
     answer('/notes/getAll', [
