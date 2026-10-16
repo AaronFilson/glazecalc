@@ -28,7 +28,7 @@
   },
   "secondStep": {
     "heading": "两步验证",
-    "signingInAs": "密码正确。再完成一步，即可以 {email} 登录。",
+    "signingInAs": "密码正确。再完成一步，就能以 {email} 的身份登录。",
     "leadCode": "打开身份验证器应用，输入它为 Glazecalc 显示的验证码。",
     "leadPasskey": "请使用通行密钥完成登录。",
     "leadRecovery": "请输入您开启两步验证时保存的某一个恢复码。每个恢复码只能使用一次。",
@@ -157,7 +157,7 @@
     "addPasskeyText": "为通行密钥命名，并确认是您本人。然后浏览器会要求您创建通行密钥。",
     "removePasskeyText": "要移除通行密钥“{name}”，请确认是您本人。",
     "newCodesText": "新的恢复码会取代旧的，旧的将失效。请确认是您本人。",
-    "lastFactor": "这是您的最后一个第二步，因此两步验证将关闭，恢复码也将失效。",
+    "lastFactor": "这是您仅剩的第二步验证方式，因此两步验证将关闭，恢复码也将失效。",
     "continue": "继续",
     "cancel": "取消",
     "password": "密码",

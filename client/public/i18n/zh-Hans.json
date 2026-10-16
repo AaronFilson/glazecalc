@@ -242,7 +242,7 @@
   },
   "chemistryForm": {
     "name": "{noun, select, additive {请为添加剂命名。} other {请为原料命名。}}",
-    "loi": "请以百分数输入烧失量，范围从 0 到低于 100，例如 {example}。",
+    "loi": "请以百分数输入烧失量，数值不低于 0 且低于 100，例如 {example}。",
     "molecularWeight": "请以数字输入分子量，例如 {example}。",
     "addOxide": "请至少添加一种氧化物：先选择氧化物，再点击“将氧化物添加到列表”。",
     "chooseOxide": "请选择氧化物，再点击“将氧化物添加到列表”。",

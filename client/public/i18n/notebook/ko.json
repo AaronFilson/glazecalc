@@ -1,7 +1,7 @@
 {
   "home": {
     "title": "작업 노트",
-    "signedInAs": "로그인 계정: {email}",
+    "signedInAs": "로그인한 계정: {email}.",
     "trying": "{name} 이름으로 Glazecalc를 체험하고 있습니다. 레시피부터 시작해 보세요.",
     "welcomeBack": "지난번에 하던 작업을 이어서 하세요.",
     "sections": {
@@ -27,7 +27,7 @@
       },
       "advice": {
         "title": "유약 조언",
-        "text": "유약 섞기, 시유, 소성에 관한 팁과 직접 적은 조언입니다."
+        "text": "조합, 시유, 소성에 관한 팁과 직접 적은 조언입니다."
       },
       "guides": {
         "title": "가이드",
