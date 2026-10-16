@@ -136,8 +136,11 @@ test.describe('home and navigation', () => {
 test.describe('additives', () => {
   test('lists the standard additives', async ({ page }) => {
     await page.goto('/additive');
-    const standard = page.locator('section', { hasText: 'The standard additives:' });
-    const row = standard.locator('tr', { has: page.locator('td', { hasText: /^\s*Cobalt carbonate\s*$/ }) });
+    const standard = page.locator('section', { hasText: 'Standard additives' });
+    await standard.getByLabel('Filter').fill('Cobalt carbonate');
+    const row = standard.locator('tr', {
+      has: page.locator('td:first-child', { hasText: /^\s*Cobalt carbonate\s*Details/ })
+    });
     // From the supplier's data sheet: a weight-percent analysis.
     await expect(row).toContainText('CoO 58.49%');
   });
@@ -151,11 +154,11 @@ test.describe('additives', () => {
     await addPart(page, '#additive-oxide', 'CoO', 'Add the oxide to the list', 1, '.part-amount');
     await addPart(page, '#additive-oxide', 'Al2O3', 'Add the oxide to the list', 1, '.part-amount');
     await addPart(page, '#additive-oxide', 'ZnO', 'Add the oxide to the list', 0.1, '.part-amount');
-    await page.locator('li', { hasText: 'ZnO' }).getByRole('button', { name: 'Remove from formula list' }).click();
+    await page.getByRole('button', { name: 'Remove ZnO from the formula' }).click();
     await page.getByRole('button', { name: 'Save' }).click();
 
     await expect(messages(page)).toContainText('Additive added');
-    const mine = page.locator('section', { hasText: 'My additives and colorants:' });
+    const mine = page.locator('section', { hasText: 'My additives and colorants' });
     const row = mine.locator('tr', { hasText: 'Blue stain' });
     await expect(row).toContainText('Spinel');
     await expect(row).toContainText('CoO : 1; Al₂O₃ : 1');
@@ -168,7 +171,9 @@ test.describe('additives', () => {
     await expect(row).toContainText("Saved recipes keep their own copy, so they won't change.");
     await row.getByRole('button', { name: 'Yes, remove' }).click();
     await expect(messages(page)).toContainText('Removed "Blue stain".');
-    await expect(page.locator('section', { hasText: 'My additives and colorants:' })).toHaveCount(0);
+    // The list is empty again, and says so.
+    await expect(mine).toContainText('None yet.');
+    await expect(row).toHaveCount(0);
   });
 
   test('asks for an oxide before adding one', async ({ page }) => {

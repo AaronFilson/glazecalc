@@ -372,6 +372,11 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   - **The recipe page's help is one line**, "How the recipe calculator works", unless the account
     has no recipes yet; opened or hidden, it stays so on every device, kept with the account's
     settings. The privacy page lists it with the other settings.
+  - **Materials and Additives start with your own**, saying so when there are none yet, then
+    the form to add one, laid out like the recipe and account forms (labels above the fields, in
+    sentence case, without colons), then the standard list: four columns (name, weights,
+    analysis), each record's notes, formula, substitutes, source and hazards under "Details", and
+    the first 25 until "Show all" or a filter.
   - **The editor's heading is the recipe's title** ("New recipe" until it has one), and its button
     says "Start a new recipe".
 

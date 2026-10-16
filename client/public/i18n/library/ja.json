@@ -1,19 +1,9 @@
 {
   "common": {
     "formulaHelp": "化学式は {typed} のように普通の数字で入力してください。数は {shown} のように下付き文字で表示されます。{joined} のように化学式の各部分をつなぐには、この点をコピーしてください:",
-    "relatedTo": "関連:",
-    "notes": "メモ:",
-    "loi": "強熱減量 – Ig.loss（パーセント）:",
-    "molecularWeight": "焼成前の化学式の分子量（Ig.loss が空欄の場合のみ使用）:",
-    "formulaHeading": "化学式（焼成後）を入力:",
-    "oxideSelection": "酸化物の選択",
     "noOxide": "なし",
     "addOxide": "酸化物をリストに追加",
-    "formulaIn": "この化学式の表し方:",
     "percent": "パーセント",
-    "molecular": "モル / ゼーゲル式",
-    "amount": "量:",
-    "removeOxide": "化学式のリストから削除",
     "save": "保存",
     "elements": "元素",
     "removeNote": "保存した調合にはそれぞれのコピーが残るため、変わりません。",
@@ -22,13 +12,7 @@
   "material": {
     "title": "原料",
     "lead": "ご自身の原料を、化学式または酸化物の分析値で入力します。",
-    "newHeading": "新しい原料の情報を入力",
-    "name": "原料名:",
-    "rawFormula": "焼成前の化学式:",
     "weightsNote": "当量と焼成後の重量は、保存するときに化学式と Ig.loss から計算されます。",
-    "mineHeading": "マイ原料:",
-    "rawFormulaColumn": "焼成前の化学式",
-    "standardHeading": "標準原料:",
     "fetchFailed": "原料の情報を取得する際にエラーが発生しました。",
     "standardFetchFailed": "標準原料の情報を取得する際にエラーが発生しました。",
     "saved": "完了しました。原料をデータベースに追加しました。"
@@ -36,13 +20,8 @@
   "additive": {
     "title": "添加物と着色剤",
     "lead": "コバルトや酸化錫など、基礎釉の調合に外割で加える着色剤と乳濁剤です。調合では、これらをゼーゲル式から除くことも、含めることもできます。",
-    "newHeading": "新しい添加物の情報を入力",
-    "name": "添加物名:",
-    "formulaAsSold": "化学式（販売時）:",
     "noChemistry": "市販の顔料など、酸化物の分析値がないもの: ゼーゲル式から除く",
     "firedNote": "焼成後に釉薬に残るものを入力してください。たとえば黒色の酸化コバルト {asSold} は、焼成後は {fired} で、Ig.loss は {loi}% です。こうすると、調合でゼーゲル式に含めることができます。",
-    "mineHeading": "マイ添加物・着色剤:",
-    "standardHeading": "標準の添加物:",
     "fetchFailed": "添加物の情報を取得する際にエラーが発生しました。",
     "standardFetchFailed": "標準の添加物の情報を取得する際にエラーが発生しました。",
     "saved": "完了しました。添加物をデータベースに追加しました。"
