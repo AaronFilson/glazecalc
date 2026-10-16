@@ -6,10 +6,15 @@ export interface FoodLimit {
   category: string;
   lead: number;
   cadmium?: number;
-  /** As the law states it: mg/dm², mg/L, µg/dm², µg/L, µg/mL or µg/cm² (Japan's flat ware). */
+  /**
+   * As the law states it: mg/dm², mg/L, µg/dm², µg/L, µg/mL, µg/cm² (Japan's, Korea's and Taiwan's flat
+   * ware) or ppm (Taiwan's, mg/L of the test solution, said under the table).
+   */
   unit: string;
   /** How a sample is judged, where the law says: 'average' of six, or 'each' of six. */
   judged?: 'average' | 'each';
+  /** How many pieces are judged, where the law says other than six (Malaysia's four). */
+  pieces?: number;
 }
 
 /** The rules for ceramic ware in contact with food, where a region has its own or follows the EU's. */

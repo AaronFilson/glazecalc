@@ -140,7 +140,7 @@ describe('region facts', () => {
   });
 
   it("should give every member state food-contact rules, its own or the EU's, in the law's units", () => {
-    const units = ['mg/dm²', 'mg/L', 'µg/dm²', 'µg/L', 'µg/mL', 'µg/cm²', 'mg'];
+    const units = ['mg/dm²', 'mg/L', 'µg/dm²', 'µg/L', 'µg/mL', 'µg/cm²', 'mg', 'ppm'];
     for (const region of regions.REGIONS) {
       const found = food.foodRulesFor(region.code);
       if (region.eu) expect(found, region.name).not.to.equal(null);
