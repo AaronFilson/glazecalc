@@ -275,7 +275,7 @@ Mērķa vērtības dažādos avotos atšķiras. Digitalfire glazūrām iemērkš
 
 ### Glazūras uzklāšana
 
-Vispirms notīriet no biskvīta{{en: bisque}} putekļus un taukus. Digitalfire mazgāšanas vietā iesaka saspiestu gaisu, mīkstu otu vai tikko mitru sūkli.
+Vispirms notīriet no biskvīta{{en: bisque}} putekļus un taukus ar tikko mitru sūkli, nevis mazgājiet to, jo tad tas piesūcas ar ūdeni. Nenopūtiet putekļus ar saspiestu gaisu un netīriet tos ar sausu suku: tā silīcija dioksīda putekļi nonāk gaisā ([Droša jaukšana un ventilācija](/guides/safe-mixing#cleaning)).
 
 - **Iemērkšana**, kā raksta Robins Hopers (Robin Hopper), “parasti dod vienmērīga biezuma kārtu”. Kārtas biezumu nosaka iemērkšanas laiks: Digitalfire norāda, ka rūpnieciski ražotas glazūras iemērkšanai gatavo ar rel. blīvumu apmēram 1,4, ja iemērc uz 5 sekundēm, un 1,5, ja uz 1 sekundi.
 - Glazūrai **apliešanai** vajadzētu būt “nedaudz šķidrākai nekā iemērkšanai”; kur apliešanas pārklājas, kārta kļūst divreiz biezāka un var notecēt.

@@ -248,7 +248,7 @@ Manuāli vadāmā krāsnī skatlodziņš ir vienīgais signāls reāllaikā, tā
 
 ### Pēc apdedzināšanas
 
-Orton liekumu nolasa kā pulksteņa ciparnīcu. Nesaliecies konuss rāda uz augšu, pulksten 12 pozīcijā. Beigu punkts ir 90° liekums, kad smaile ir pamatnes līmenī, ko Orton sauc par pulksten 5 pozīciju: tas ir punkts, kurā mērītas tabulas temperatūras. Konuss, kas pieskaras plauktam, ir pulksten 6 pozīcijā; starp pulksten 4 pozīciju un brīdi, kad konuss pieskaras plauktam, atšķirība ir maza, “parasti 1 vai 2 grādi”.
+Orton liekumu nolasa kā pulksteņa ciparnīcu. Nesaliecies konuss rāda uz augšu, pulksten 12 pozīcijā; konuss, kas pieskaras plauktam, ir pulksten 6 pozīcijā. Beigu punkts ir 90° liekums, kad smaile ir pamatnes līmenī: tas ir punkts, kurā mērītas tabulas temperatūras, un Orton par pareizi apdedzinātu uzskata konusu jebkurā pozīcijā no pulksten 5 līdz pulksten 6. Starp pulksten 4 pozīciju un brīdi, kad konuss pieskaras plauktam, atšķirība ir maza, “parasti 1 vai 2 grādi”.
 
 Table: Konusu komplekta nolasīšana pēc apdedzināšanas (piemērs: konusi 5, 6 un 7 glazūrai līdz konusam 6)
 Label: Konusu komplekta nolasīšana

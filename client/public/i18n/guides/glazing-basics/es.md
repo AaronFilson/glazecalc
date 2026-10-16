@@ -275,7 +275,7 @@ Un **floculante**{{en: flocculant}} (sales de Epsom, vinagre o cloruro cálcico)
 
 ### Cómo aplicar el esmalte
 
-Limpie primero el polvo y la grasa del bizcocho{{en: bisque}}. Digitalfire prefiere el aire comprimido, un pincel suave o una esponja apenas húmeda antes que lavarlo.
+Limpie primero el polvo y la grasa del bizcocho{{en: bisque}} con una esponja apenas húmeda en lugar de lavarlo, porque así se empapa. No quite el polvo con aire comprimido ni lo cepille en seco: eso pone polvo de sílice en el aire ([Preparación segura y ventilación](/guides/safe-mixing#cleaning)).
 
 - La **inmersión** «generalmente da una capa de grosor uniforme» (Robin Hopper). El tiempo de inmersión fija el grosor: Digitalfire señala que los esmaltes comerciales para inmersión se preparan a unos 1,4 para una inmersión de 5 segundos y a 1,5 para una inmersión de 1 segundo.
 - El esmalte para **vertido** debe estar «un poco más diluido que cuando se usa para inmersión»; donde se solapan los vertidos, la capa se duplica y puede escurrir.

@@ -275,7 +275,7 @@ Et **flokkuleringsmiddel**{{en: flocculant}} (bittersalt, eddike eller calciumch
 
 ### Påføring af glasur
 
-Fjern først støv og fedt fra det forglødede gods. Digitalfire foretrækker trykluft, en blød pensel eller en svamp, der kun lige er fugtig, frem for at vaske det.
+Fjern først støv og fedt fra det forglødede gods med en svamp, der kun lige er fugtig, frem for at vaske det, for så suger det vand. Blæs ikke støvet af med trykluft, og børst det ikke tørt: det sender kvartsstøv ud i luften ([Sikker blanding og ventilation](/guides/safe-mixing#cleaning)).
 
 - **Dypning** »giver generelt et lag med jævn tykkelse« (Robin Hopper). Dyppetiden bestemmer tykkelsen: Digitalfire bemærker, at købte dyppeglasurer laves med en massefylde på omkring 1,4 til et dyp på 5 sekunder og 1,5 til et dyp på 1 sekund.
 - Glasur til **overhældning** bør være »lidt tyndere end til dypning«; hvor overhældninger overlapper, bliver laget dobbelt og kan løbe.

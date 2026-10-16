@@ -248,7 +248,7 @@ W piecu sterowanym ręcznie wziernik jest jedynym źródłem bieżącej informac
 
 ### Po wypale
 
-Orton odczytuje zgięcie jak tarczę zegara. Niezgięty stożek wskazuje w górę, na godzinę 12. Punkt końcowy to zgięcie o 90°, czubek na wysokości podstawy, które Orton nazywa pozycją na godzinie 5: w tym punkcie mierzy się temperatury z tabeli. Stożek dotykający płyty jest na godzinie 6; między godziną 4 a dotknięciem płyty różnica jest niewielka, „zwykle 1 lub 2 stopnie”.
+Orton odczytuje zgięcie jak tarczę zegara. Niezgięty stożek wskazuje w górę, na godzinę 12; stożek dotykający płyty jest na godzinie 6. Punkt końcowy to zgięcie o 90°, czubek na wysokości podstawy: w tym punkcie mierzy się temperatury z tabeli, a Orton uznaje za prawidłowo wypalony stożek w dowolnej pozycji od godziny 5 do godziny 6. Między godziną 4 a dotknięciem płyty różnica jest niewielka, „zwykle 1 lub 2 stopnie”.
 
 Table: Odczyt zestawu stożków po wypale (przykład: stożki 5, 6 i 7 dla szkliwa na stożek 6)
 Label: Odczyt zestawu stożków

@@ -248,7 +248,7 @@ U ručně ovládané pece (bez regulátoru) je průzor vaším jediným signále
 
 ### Po výpalu
 
-Orton odečítá ohnutí jako na ciferníku hodin. Neohnutá žároměrka míří nahoru, na 12 hodin. Konečný bod je ohnutí o 90°, se špičkou na úrovni základny, které Orton nazývá polohou na 5 hodinách: v tomto bodě se měří teploty v tabulce. Žároměrka, která se dotýká plátu, je na 6 hodinách; mezi polohou na 4 hodinách a dotykem plátu je rozdíl malý, „obvykle 1 nebo 2 stupně“.
+Orton odečítá ohnutí jako na ciferníku hodin. Neohnutá žároměrka míří nahoru, na 12 hodin; žároměrka, která se dotýká plátu, je na 6 hodinách. Konečný bod je ohnutí o 90°, se špičkou na úrovni základny: v tomto bodě se měří teploty v tabulce, a Orton považuje za správně vypálenou každou žároměrku v poloze od 5 do 6 hodin. Mezi polohou na 4 hodinách a dotykem plátu je rozdíl malý, „obvykle 1 nebo 2 stupně“.
 
 Table: Odečtení sady tří žároměrek po výpalu (příklad: žároměrky 5, 6 a 7 pro glazuru na žároměrku 6)
 Label: Odečtení sady žároměrek

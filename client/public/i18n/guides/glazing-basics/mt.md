@@ -275,7 +275,7 @@ Il-miri jvarjaw skont is-sors. Digitalfire jagħti 1.40–1.50 għall-glejżijie
 
 ### It-tqegħid tal-glejż
 
-L-ewwel naddaf it-trab u x-xaħam minn fuq il-bisque. Digitalfire jippreferi l-arja kkompressata, pinzell artab jew sponża bilkemm niedja milli taħsel.
+L-ewwel naddaf it-trab u x-xaħam minn fuq il-bisque b’sponża bilkemm niedja minflok ma taħslu, għax il-ħasil ixarrbu. Tneħħix it-trab b’arja kkompressata u tnaddfux bi xkupilja niexfa: hekk it-trab tas-silika jitla’ fl-arja ([Taħlit sikur u ventilazzjoni](/guides/safe-mixing#cleaning)).
 
 - L-**għadis** “ġeneralment jagħti kisja ta’ ħxuna uniformi” (Robin Hopper). Il-ħin tal-għadis jiddetermina l-ħxuna: Digitalfire jinnota li l-glejżijiet kummerċjali għall-għadis isiru b’madwar 1.4 għal għadsa ta’ 5 sekondi u 1.5 għal għadsa ta’ 1 sekonda.
 - Il-glejż għat-**tferrigħ** għandu jkun “kemmxejn irqaq milli meta jintuża għall-għadis”; fejn it-tferrigħ jirkeb, is-saff jirdoppja u jista’ jinżel.

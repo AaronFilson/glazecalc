@@ -275,7 +275,7 @@ Ett **flockningsmedel**{{en: flocculant}} (ett slags ställmedel: epsomsalt, ät
 
 ### Lägga på glasyr
 
-Gör först rent det skröjade godset från damm och fett. Digitalfire föredrar tryckluft, en mjuk borste eller en knappt fuktig svamp framför att tvätta det.
+Gör först rent det skröjade godset från damm och fett med en knappt fuktig svamp i stället för att tvätta det, vilket gör det genomblött. Blås inte bort dammet med tryckluft och borsta det inte torrt: det sprider kvartsdamm i luften ([Säker blandning och ventilation](/guides/safe-mixing#cleaning)).
 
 - **Doppning** ”ger i allmänhet ett lager med jämn tjocklek” (Robin Hopper). Dopptiden avgör tjockleken: Digitalfire påpekar att köpta doppglasyrer görs med ungefär 1,4 för en dopptid på 5 sekunder och 1,5 för en dopptid på 1 sekund.
 - Glasyr för **hällning** bör vara ”lite tunnare än när den används för doppning”; där hällningarna överlappar blir lagret dubbelt och kan rinna.

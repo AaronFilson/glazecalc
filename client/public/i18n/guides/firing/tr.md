@@ -248,7 +248,7 @@ Manuel bir fırında gözetleme deliği, pişirim anında elinizdeki tek gerçek
 
 ### Pişirimden sonra
 
-Orton eğilmeyi bir saat kadranı gibi okur. Eğilmemiş bir piramit yukarıyı, saat 12 konumunu gösterir. Bitiş noktası 90°’lik bir eğilmedir, ucu tabanla aynı seviyededir; Orton buna saat 5 konumu der ve tablodaki sıcaklıklar bu noktada ölçülür. Rafa değen bir piramit saat 6 konumundadır; saat 4 konumu ile rafa değme arasındaki fark küçüktür, “genellikle 1 ya da 2 derece”.
+Orton eğilmeyi bir saat kadranı gibi okur. Eğilmemiş bir piramit yukarıyı, saat 12 konumunu gösterir; rafa değen bir piramit saat 6 konumundadır. Bitiş noktası 90°’lik bir eğilmedir, ucu tabanla aynı seviyededir; tablodaki sıcaklıklar bu noktada ölçülür ve Orton, saat 5 ile saat 6 arasında herhangi bir konumdaki piramidi doğru pişmiş sayar. Saat 4 konumu ile rafa değme arasındaki fark küçüktür, “genellikle 1 ya da 2 derece”.
 
 Table: Pişirimden sonra bir piramit grubunun okunması (örnek: 6 numaralı piramit sırrı için 5, 6 ve 7 numaralı piramitler)
 Label: Piramit grubunun okunması

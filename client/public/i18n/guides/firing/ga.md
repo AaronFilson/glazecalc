@@ -248,7 +248,7 @@ Ar áith láimhe, is é an poll faire an t-aon chomhartha beo atá agat, agus si
 
 ### Tar éis na bácála
 
-Léann Orton an lúbadh mar aghaidh cloig. Díríonn cón nach bhfuil lúbtha suas, ag 12 a chlog. Is é an pointe deiridh lúbadh 90°, an barr ar comhleibhéal leis an mbonn, ar a dtugann Orton suíomh 5 a chlog: an pointe ag a dtomhaistear teochtaí an tábla. Tá cón atá ag teagmháil leis an tseilf ag 6 a chlog; idir 4 a chlog agus teagmháil leis an tseilf is beag an difríocht, “1 nó 2 chéim de ghnáth”.
+Léann Orton an lúbadh mar aghaidh cloig. Díríonn cón nach bhfuil lúbtha suas, ag 12 a chlog; tá cón atá ag teagmháil leis an tseilf ag 6 a chlog. Is é an pointe deiridh lúbadh 90°, an barr ar comhleibhéal leis an mbonn: an pointe ag a dtomhaistear teochtaí an tábla, agus measann Orton go bhfuil cón bácáilte i gceart má tá sé áit ar bith idir 5 a chlog agus 6 a chlog. Idir 4 a chlog agus teagmháil leis an tseilf is beag an difríocht, “1 nó 2 chéim de ghnáth”.
 
 Table: Paca cón a léamh tar éis na bácála (sampla: cóin 5, 6 agus 7 do ghlónra a bhácáiltear go cón 6)
 Label: Paca cón a léamh

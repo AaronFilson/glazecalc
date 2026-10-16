@@ -248,7 +248,7 @@ Kézi kapcsolású kemencénél a kémlelőnyílás az egyetlen valós idejű je
 
 ### Égetés után
 
-Az Orton a hajlást óralapként olvassa le. A meg nem hajlott gúla felfelé mutat, 12 órás állásban. A végpont a 90°-os hajlás, amikor a csúcs egy szintben van a talppal, és amelyet az Orton 5 órás állásnak nevez: a táblázat hőmérsékletei erre a pontra vonatkoznak. Az égetőlapot érintő gúla 6 órás állásban van; a 4 órás állás és az égetőlap érintése között kicsi a különbség, „általában 1 vagy 2 fok”.
+Az Orton a hajlást óralapként olvassa le. A meg nem hajlott gúla felfelé mutat, 12 órás állásban; az égetőlapot érintő gúla 6 órás állásban van. A végpont a 90°-os hajlás, amikor a csúcs egy szintben van a talppal: a táblázat hőmérsékletei erre a pontra vonatkoznak, és az Orton minden olyan gúlát megfelelően kiégetettnek tekint, amely 5 és 6 óra közötti állásban van. A 4 órás állás és az égetőlap érintése között kicsi a különbség, „általában 1 vagy 2 fok”.
 
 Table: A gúlasor leolvasása égetés után (példa: 5-ös, 6-os és 7-es gúla egy 6-os gúlás mázhoz{{en: glaze}})
 Label: A gúlasor leolvasása

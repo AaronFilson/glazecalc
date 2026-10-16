@@ -248,7 +248,7 @@ On a manual kiln, the peephole is your only real-time signal, which is why the p
 
 ### After the firing
 
-Orton reads the bend as a clock face. An unbent cone points up, at 12 o'clock. The end point is a 90° bend, the tip level with the base, which Orton calls the 5 o'clock position: the point the chart's temperatures are measured at. A cone touching the shelf is at 6 o'clock; between 4 o'clock and touching the shelf the difference is small, "usually 1 or 2 degrees".
+Orton reads the bend as a clock face. An unbent cone points up, at 12 o'clock; a cone touching the shelf is at 6 o'clock. The end point is a 90° bend, the tip level with the base: the point the chart's temperatures are measured at, and Orton counts a cone anywhere from 5 to 6 o'clock as properly fired. Between 4 o'clock and touching the shelf the difference is small, "usually 1 or 2 degrees".
 
 Table: Reading a cone pack after the firing (example: cones 5, 6 and 7 for a cone 6 glaze)
 Label: Reading a cone pack

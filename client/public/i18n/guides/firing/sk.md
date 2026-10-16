@@ -248,7 +248,7 @@ Pri peci bez regulátora (s ručným ovládaním) je kontrolný otvor jediným s
 
 ### Po výpale
 
-Orton číta ohnutie ako ciferník hodín. Neohnutý kužeľ smeruje nahor, na 12 hodín. Koncovým bodom je ohnutie o 90°, keď je špička na úrovni základne, čo Orton nazýva polohou na 5 hodín: v tomto bode sa merajú teploty v tabuľke. Kužeľ, ktorý sa dotýka dosky, je v polohe na 6 hodín; medzi polohou na 4 hodiny a dotykom s doskou je rozdiel malý, „zvyčajne 1 alebo 2 stupne“.
+Orton číta ohnutie ako ciferník hodín. Neohnutý kužeľ smeruje nahor, na 12 hodín; kužeľ, ktorý sa dotýka dosky, je v polohe na 6 hodín. Koncovým bodom je ohnutie o 90°, keď je špička na úrovni základne: v tomto bode sa merajú teploty v tabuľke, a Orton považuje za správne vypálený kužeľ kdekoľvek medzi polohou na 5 a na 6 hodín. Medzi polohou na 4 hodiny a dotykom s doskou je rozdiel malý, „zvyčajne 1 alebo 2 stupne“.
 
 Table: Čítanie sady kužeľov po výpale (príklad: kužele 5, 6 a 7 pre glazúru na kužeľ 6)
 Label: Čítanie sady kužeľov

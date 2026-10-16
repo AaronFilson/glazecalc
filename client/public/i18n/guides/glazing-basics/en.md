@@ -275,7 +275,7 @@ A **flocculant** (Epsom salts, vinegar or calcium chloride) gels a slurry slight
 
 ### Putting glaze on
 
-Clean dust and grease off the bisque first. Digitalfire prefers compressed air, a soft brush or a barely damp sponge to washing.
+Clean dust and grease off the bisque first with a barely damp sponge rather than washing it, which soaks it. Don't blow the dust off with compressed air or brush it dry: that puts silica dust in the air ([Safe mixing and ventilation](/guides/safe-mixing#cleaning)).
 
 - **Dipping** "generally gives a coating of even thickness" (Robin Hopper). The dip time sets the thickness: Digitalfire notes that commercial dipping glazes are made at about 1.4 for a 5-second dip and 1.5 for a 1-second dip.
 - **Pouring** glaze should be "a little thinner than when used for dipping"; where pours overlap, the coat doubles and may run.

@@ -248,7 +248,7 @@ Na peći s ručnim upravljanjem kontrolni otvor jedini vam je znak u stvarnom vr
 
 ### Nakon pečenja
 
-Orton savijanje očitava kao na brojčaniku sata. Nesavijeni stožac pokazuje prema gore, na 12 sati. Završna točka je savijanje za 90°, kad je vrh u razini podnožja, što Orton naziva položajem na 5 sati: to je točka pri kojoj su mjerene temperature u tablici. Stožac koji dodiruje ploču nalazi se na 6 sati; između položaja na 4 sata i dodira s pločom razlika je mala, „obično 1 ili 2 stupnja”.
+Orton savijanje očitava kao na brojčaniku sata. Nesavijeni stožac pokazuje prema gore, na 12 sati; stožac koji dodiruje ploču nalazi se na 6 sati. Završna točka je savijanje za 90°, kad je vrh u razini podnožja: to je točka pri kojoj su mjerene temperature u tablici, a Orton stožac bilo gdje između položaja na 5 i na 6 sati smatra ispravno pečenim. Između položaja na 4 sata i dodira s pločom razlika je mala, „obično 1 ili 2 stupnja”.
 
 Table: Očitavanje skupa stožaca nakon pečenja (primjer: stošci 5, 6 i 7 za glazuru za stožac 6)
 Label: Očitavanje skupa stožaca

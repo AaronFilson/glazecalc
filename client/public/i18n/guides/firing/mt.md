@@ -248,7 +248,7 @@ F’forn mingħajr kontrollur, it-toqba tal-ħarsa hija l-uniku sinjal li għand
 
 ### Wara l-ħami
 
-Orton jaqra t-tgħawwiġ bħal wiċċ ta’ arloġġ. Kon li ma tgħawweġx jipponta ’l fuq, lejn it-12. Il-punt tat-tmiem huwa tgħawwiġ ta’ 90°, bil-ponta fl-istess livell tal-bażi, li Orton isejjaħlu l-pożizzjoni tal-5: il-punt li fih jitkejlu t-temperaturi tat-tabella. Kon li jmiss max-xkaffa jkun fis-6; bejn l-4 u meta jmiss max-xkaffa d-differenza hija żgħira, “normalment 1 jew 2 gradi”.
+Orton jaqra t-tgħawwiġ bħal wiċċ ta’ arloġġ. Kon li ma tgħawweġx jipponta ’l fuq, lejn it-12; kon li jmiss max-xkaffa jkun fis-6. Il-punt tat-tmiem huwa tgħawwiġ ta’ 90°, bil-ponta fl-istess livell tal-bażi: il-punt li fih jitkejlu t-temperaturi tat-tabella, u Orton iqis kon kullimkien bejn il-5 u s-6 bħala moħmi sewwa. Bejn l-4 u meta jmiss max-xkaffa d-differenza hija żgħira, “normalment 1 jew 2 gradi”.
 
 Table: Il-qari ta’ sett ta’ koni wara l-ħami (eżempju: il-koni 5, 6 u 7 għal glejż għall-kon 6)
 Label: Il-qari ta’ sett ta’ koni

@@ -275,7 +275,7 @@ Ciljne vrijednosti razlikuju se od izvora do izvora. Digitalfire za glazure za u
 
 ### Nanošenje glazure
 
-Najprije s biskvita{{en: bisque}} uklonite prašinu i masnoću. Digitalfire umjesto pranja radije preporučuje komprimirani zrak, mekan kist ili jedva vlažnu spužvu.
+Najprije s biskvita{{en: bisque}} uklonite prašinu i masnoću jedva vlažnom spužvom umjesto pranja, kojim se biskvit natopi vodom. Ne otpuhujte prašinu komprimiranim zrakom i ne četkajte je na suho: tako prašina silicijeva dioksida dospijeva u zrak ([Sigurno miješanje i ventilacija](/guides/safe-mixing#cleaning)).
 
 - **Uranjanje** „općenito daje sloj ujednačene debljine” (Robin Hopper). Vrijeme uranjanja određuje debljinu: Digitalfire navodi da se komercijalne glazure za uranjanje rade s relativnom gustoćom od otprilike 1,4 za uranjanje od 5 sekundi i 1,5 za uranjanje od 1 sekunde.
 - Glazura za **polijevanje** trebala bi biti „malo rjeđa nego kad se koristi za uranjanje”; ondje gdje se polijevanja preklapaju, sloj je dvostruk i može poteći.
