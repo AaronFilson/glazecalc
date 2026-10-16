@@ -33,7 +33,8 @@ import { Notices, NoticesList } from '../../shared/notices';
 /** A change that asks the person to confirm it is them first (decision 6). */
 type Change =
   | { kind: 'add-totp' }
-  | { kind: 'remove-totp' }
+  // at: 'off' when opened from "Turning it off", where its confirmation then shows.
+  | { kind: 'remove-totp'; at?: 'off' }
   | { kind: 'add-passkey' }
   | { kind: 'remove-passkey'; passkey: PasskeySummary }
   | { kind: 'new-codes' };
@@ -115,21 +116,27 @@ export const groupedKey = (secret: string): string => secret.match(/.{1,4}/g)?.j
           <div class="totp-setup">
             <h3 tabindex="-1" #panelHeading>{{ t('account.mfa.setupHeading') }}</h3>
             <ol class="setup-steps">
-              <li>{{ t('account.mfa.setupOpen') }}</li>
-              <li>
-                {{ t('account.mfa.setupScan') }}
-                <img class="totp-qr" [src]="setup.qr" [alt]="t('account.mfa.qrAlt')" width="200" height="200" />
-                <span class="d-block" id="totp-key-label">{{ t('account.mfa.key') }}</span>
-                <code class="totp-key" aria-labelledby="totp-key-label">{{ grouped(setup.secret) }}</code>
-                @if (appLink(); as link) {
-                  <a class="btn btn-light border btn-sm open-app" [href]="link">{{ t('account.mfa.openInApp') }}</a>
-                }
-                <button type="button" class="btn btn-light border btn-sm copy-key" (click)="copy(setup.secret)">
-                  {{ t('account.mfa.copyKey') }}
-                </button>
-                <span role="status" class="form-text copied">{{ copied() }}</span>
-                <span class="form-text d-block clipboard-note">{{ t('account.mfa.clipboardNote') }}</span>
-              </li>
+              @if (appLink(); as link) {
+                <!-- A phone: the app is mostly added on the phone in hand, so its button comes first
+                     and large; the QR code, for another device, opens on a tap. -->
+                <li>
+                  {{ t('account.mfa.setupTap') }}
+                  <a class="btn btn-primary open-app" [href]="link">{{ t('account.mfa.openInApp') }}</a>
+                  <details class="other-device">
+                    <summary>{{ t('account.mfa.showQr') }}</summary>
+                    {{ t('account.mfa.setupScanOther') }}
+                    <img class="totp-qr" [src]="setup.qr" [alt]="t('account.mfa.qrAlt')" width="200" height="200" />
+                  </details>
+                  <ng-container [ngTemplateOutlet]="totpKey" [ngTemplateOutletContext]="{ $implicit: setup.secret }" />
+                </li>
+              } @else {
+                <li>{{ t('account.mfa.setupOpen') }}</li>
+                <li>
+                  {{ t('account.mfa.setupScan') }}
+                  <img class="totp-qr" [src]="setup.qr" [alt]="t('account.mfa.qrAlt')" width="200" height="200" />
+                  <ng-container [ngTemplateOutlet]="totpKey" [ngTemplateOutletContext]="{ $implicit: setup.secret }" />
+                </li>
+              }
               <li>
                 <form (ngSubmit)="confirmTotp()">
                   <label for="totp-code" class="form-label">{{ t('account.mfa.setupCode', { digits: digits }) }}</label>
@@ -172,9 +179,9 @@ export const groupedKey = (secret: string): string => secret.match(/.{1,4}/g)?.j
               {{ t('account.mfa.added', { date: (totp.addedAt | gcDate) }) }}
               {{ totp.lastUsedAt ? t('account.mfa.lastUsed', { date: (totp.lastUsedAt | gcDate) }) : '' }}
             </p>
-            @if (change()?.kind === 'remove-totp') {
+            @if (removingApp() === 'app') {
               <ng-container [ngTemplateOutlet]="confirm" />
-            } @else {
+            } @else if (removingApp() !== 'off') {
               <button
                 id="mfa-remove-app"
                 type="button"
@@ -335,11 +342,50 @@ export const groupedKey = (secret: string): string => secret.match(/.{1,4}/g)?.j
             }
 
             <h3>{{ t('account.mfa.offHeading') }}</h3>
-            <p>{{ t('account.mfa.offHow') }}</p>
+            <p>{{ t('account.mfa.offWhat') }}</p>
+            <ul class="off-effects">
+              <li>{{ t('account.mfa.offPassword') }}</li>
+              <li>{{ t('account.mfa.offCodes') }}</li>
+              <li>{{ t('account.mfa.offSignOut') }}</li>
+              <li>{{ t('account.mfa.offEmail') }}</li>
+            </ul>
+            @if (mfa.totp) {
+              @if (removingApp() === 'off') {
+                <ng-container [ngTemplateOutlet]="confirm" />
+              } @else {
+                <button
+                  id="mfa-off-remove-app"
+                  type="button"
+                  class="btn btn-outline-danger"
+                  (click)="open({ kind: 'remove-totp', at: 'off' }, 'mfa-off-remove-app')"
+                >
+                  {{ t('account.mfa.removeApp') }}
+                </button>
+              }
+            }
+            @if (mfa.passkeys.length) {
+              <p class="off-passkeys">
+                {{
+                  t(mfa.totp ? 'account.mfa.offPasskeysToo' : 'account.mfa.offPasskeys', {
+                    count: mfa.passkeys.length
+                  })
+                }}
+              </p>
+            }
           }
         }
       }
     </section>
+
+    <ng-template #totpKey let-secret>
+      <span class="d-block" id="totp-key-label">{{ t('account.mfa.key') }}</span>
+      <code class="totp-key" aria-labelledby="totp-key-label">{{ grouped(secret) }}</code>
+      <button type="button" class="btn btn-light border btn-sm copy-key" (click)="copy(secret)">
+        {{ t('account.mfa.copyKey') }}
+      </button>
+      <span role="status" class="form-text copied">{{ copied() }}</span>
+      <span class="form-text d-block clipboard-note">{{ t('account.mfa.clipboardNote') }}</span>
+    </ng-template>
 
     <ng-template #confirm>
       @if (change(); as current) {
@@ -376,8 +422,22 @@ export const groupedKey = (secret: string): string => secret.match(/.{1,4}/g)?.j
       margin: 0.25rem 0.5rem 0.5rem 0;
       color: inherit;
     }
+    /* Three times a small button's height: on a phone, the step's one big action. */
     .open-app {
-      margin: 0 0.5rem 0.5rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 6rem;
+      margin: 0.75rem 0;
+      font-size: 1.25rem;
+    }
+    .other-device {
+      margin-bottom: 0.75rem;
+    }
+    .other-device summary {
+      color: var(--bs-link-color);
+      text-decoration: underline;
+      cursor: pointer;
     }
     .totp-qr {
       display: block;
@@ -400,6 +460,12 @@ export const groupedKey = (secret: string): string => secret.match(/.{1,4}/g)?.j
       flex-wrap: wrap;
       gap: 0.5rem;
       margin-top: 0.5rem;
+    }
+    .sign-in-section > h3 {
+      margin-top: 2rem;
+    }
+    .off-passkeys {
+      margin-top: 1rem;
     }
     .passkey-list {
       list-style: none;
@@ -488,6 +554,11 @@ export class SignInSection {
   protected readonly needsEmail = computed(() => {
     const mfa = this.summary();
     return !!mfa && !mfa.on && !mfa.emailConfirmed;
+  });
+  /** Where the authenticator app's removal is being confirmed: under its own heading, or under "Turning it off". */
+  protected readonly removingApp = computed(() => {
+    const change = this.change();
+    return change?.kind === 'remove-totp' ? (change.at ?? 'app') : null;
   });
   protected readonly removing = computed(() => {
     const change = this.change();

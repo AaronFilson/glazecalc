@@ -114,6 +114,8 @@ describe('SignInSection', () => {
     expect(text(fixture, '.totp-setup .clipboard-note')).toContain('clipboard history');
     // A computer's pointer: no link to an app, which would do nothing there.
     expect(fixture.nativeElement.querySelector('a.open-app')).toBeNull();
+    // A computer: the QR code in view, to scan with the phone.
+    expect(fixture.nativeElement.querySelector('img.totp-qr')?.closest('details')).toBeNull();
     const code = fixture.nativeElement.querySelector('#totp-code') as HTMLInputElement;
     expect(code.getAttribute('autocomplete')).toBe('one-time-code');
     expect(code.getAttribute('inputmode')).toBe('numeric');
@@ -162,6 +164,11 @@ describe('SignInSection', () => {
       await toSetup(fixture);
       const link = fixture.nativeElement.querySelector('a.open-app') as HTMLAnchorElement;
       expect(link.textContent?.trim()).toBe('Add to an authenticator app on this device');
+      // The button first; the QR code, for another device, closed until tapped.
+      const qr = fixture.nativeElement.querySelector('img.totp-qr') as HTMLImageElement;
+      expect(qr.closest('details')?.open).toBe(false);
+      expect(text(fixture, '.other-device summary')).toBe('Show the QR code, to set it up on another device');
+      expect(link.compareDocumentPosition(qr) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
       expect(link.getAttribute('href')).toBe(
         'otpauth://totp/Glazecalc:a%40b.com?secret=JBSWY3DPEHPK3PXPJBSWY3DP&issuer=Glazecalc'
       );
@@ -457,6 +464,29 @@ describe('SignInSection', () => {
     remove.flush({ code: 'totp-removed', msg: 'The authenticator app was removed.' });
     await settle(fixture);
     await reload(fixture, { ...ON, totp: null });
+  });
+
+  it('says what turning it off does, and removes the app from there, confirming it there', async () => {
+    const fixture = await create(ON);
+    const off = () => text(fixture, '.off-effects');
+    expect(off()).toContain('Signing in needs only your password');
+    expect(off()).toContain('recovery codes stop working');
+    expect(text(fixture, '.off-passkeys')).toContain('You also have a passkey');
+    (fixture.nativeElement.querySelector('#mfa-off-remove-app') as HTMLButtonElement).click();
+    await settle(fixture);
+    // The confirmation is under "Turning it off", the only one open: the app's own button is gone meanwhile.
+    expect(fixture.nativeElement.querySelector('.off-effects ~ .change-panel #confirm-password')).not.toBeNull();
+    expect(fixture.nativeElement.querySelector('#mfa-remove-app')).toBeNull();
+    expect(fixture.nativeElement.querySelectorAll('.change-panel').length).toBe(1);
+    await press(fixture, 'Cancel');
+    expect(document.activeElement?.id).toBe('mfa-off-remove-app');
+    expect(fixture.nativeElement.querySelector('#mfa-remove-app')).not.toBeNull();
+  });
+
+  it('points to the passkeys when they are all that is left', async () => {
+    const fixture = await create({ ...ON, totp: null, passkeys: [ON.passkeys[0]!, { ...ON.passkeys[0]!, id: 'pk2' }] });
+    expect(fixture.nativeElement.querySelector('#mfa-off-remove-app')).toBeNull();
+    expect(text(fixture, '.off-passkeys')).toContain('To turn it off, remove your 2 passkeys under Passkeys, above.');
   });
 
   it('says when removing the last second step turns it off', async () => {

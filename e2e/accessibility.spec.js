@@ -191,7 +191,8 @@ for (const colorScheme of ['light', 'dark']) {
     // On, with a change open: the password and a second step.
     await expect(section.locator('.mfa-status')).toContainText('Two-step sign-in is on.');
     await expectNoProblems(page, colorScheme + ' /account two-step sign-in on');
-    await section.getByRole('button', { name: 'Remove the authenticator app' }).click();
+    // The app's own button; "Turning it off" has a second one.
+    await section.locator('#mfa-remove-app').click();
     await expect(section.getByRole('group', { name: 'And your second step' })).toBeVisible();
     await expectNoProblems(page, colorScheme + ' /account confirming a change');
     // The second step at sign-in, with a code, then with a recovery code.
