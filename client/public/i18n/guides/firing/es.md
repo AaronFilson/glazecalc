@@ -248,7 +248,7 @@ En un horno manual, la mirilla es su única señal en tiempo real; por eso el tr
 
 ### Después de la cocción
 
-Orton lee el doblado como la esfera de un reloj. Un cono sin doblar apunta hacia arriba, a las 12 en punto. El punto final es un doblado de 90°, con la punta a la altura de la base, lo que Orton llama la posición de las 5 en punto: el punto al que corresponden las temperaturas de la tabla. Un cono que toca la placa está a las 6 en punto; entre las 4 en punto y tocar la placa, la diferencia es pequeña, «normalmente 1 o 2 grados».
+Orton lee el doblado como la esfera de un reloj. Un cono sin doblar apunta hacia arriba, a las 12 en punto; un cono que toca la placa está a las 6 en punto. El punto final es un doblado de 90°, con la punta a la altura de la base: el punto al que corresponden las temperaturas de la tabla, y Orton considera correctamente cocido un cono en cualquier posición entre las 5 y las 6 en punto. Entre las 4 en punto y tocar la placa, la diferencia es pequeña, «normalmente 1 o 2 grados».
 
 Table: Cómo leer un trío de conos después de la cocción (ejemplo: conos 5, 6 y 7 para un esmalte de cono 6)
 Label: Cómo leer un trío de conos

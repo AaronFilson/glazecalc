@@ -275,7 +275,7 @@ Een **vlokmiddel**{{en: flocculant}}, bij leveranciers ook stelmiddel genoemd (b
 
 ### Glazuur aanbrengen
 
-Maak het biscuit eerst vrij van stof en vet. Digitalfire geeft de voorkeur aan perslucht, een zachte kwast of een nauwelijks vochtige spons boven afwassen.
+Maak het biscuit eerst vrij van stof en vet met een nauwelijks vochtige spons in plaats van het af te wassen, waardoor het zich volzuigt. Blaas het stof er niet af met perslucht en borstel het niet droog af: dat brengt kwartsstof in de lucht ([Veilig mengen en ventileren](/guides/safe-mixing#cleaning)).
 
 - **Dompelen** “geeft over het algemeen een laag van gelijkmatige dikte” (Robin Hopper). De dompeltijd bepaalt de dikte: Digitalfire merkt op dat kant-en-klare dompelglazuren worden aangemaakt op een soortelijk gewicht van ongeveer 1,4 voor 5 seconden dompelen en 1,5 voor 1 seconde dompelen.
 - Glazuur om te **overgieten** zou “iets dunner dan bij het dompelen” moeten zijn; waar overgoten lagen elkaar overlappen, wordt de laag dubbel en kan het glazuur gaan lopen.

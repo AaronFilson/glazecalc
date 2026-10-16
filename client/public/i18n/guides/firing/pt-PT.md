@@ -248,7 +248,7 @@ Num forno manual, o óculo é o seu único sinal em tempo real; é por isso que 
 
 ### Depois da cozedura
 
-A Orton lê a dobragem como o mostrador de um relógio. Um cone por dobrar aponta para cima, para as 12 horas. O ponto final é uma dobragem de 90°, com a ponta ao nível da base, a que a Orton chama a posição das 5 horas: o ponto em que se medem as temperaturas da tabela. Um cone que toca na placa está nas 6 horas; entre as 4 horas e o momento em que toca na placa, a diferença é pequena, «normalmente 1 ou 2 graus».
+A Orton lê a dobragem como o mostrador de um relógio. Um cone por dobrar aponta para cima, para as 12 horas; um cone que toca na placa está nas 6 horas. O ponto final é uma dobragem de 90°, com a ponta ao nível da base: o ponto em que se medem as temperaturas da tabela, e a Orton considera corretamente cozido um cone em qualquer posição entre as 5 e as 6 horas. Entre as 4 horas e o momento em que toca na placa, a diferença é pequena, «normalmente 1 ou 2 graus».
 
 Table: Ler um conjunto de cones depois da cozedura (exemplo: cones 5, 6 e 7 num vidrado para cone 6)
 Label: Ler um conjunto de cones

@@ -275,7 +275,7 @@ Um **floculante**{{en: flocculant}} (sal de Epsom, vinagre ou cloreto de cálcio
 
 ### Aplicar o vidrado
 
-Primeiro, limpe o pó e a gordura da chacota{{en: bisque}}. O Digitalfire prefere ar comprimido, um pincel macio ou uma esponja muito pouco húmida, em vez de a lavar.
+Primeiro, limpe o pó e a gordura da chacota{{en: bisque}} com uma esponja muito pouco húmida, em vez de a lavar, o que a encharca. Não sopre o pó com ar comprimido nem o escove a seco: isso põe poeira de sílica no ar ([Mistura segura e ventilação](/guides/safe-mixing#cleaning)).
 
 - A **imersão** «dá geralmente uma camada de espessura uniforme» (Robin Hopper). O tempo de imersão define a espessura: o Digitalfire nota que os vidrados comerciais para imersão são preparados a cerca de 1,4 para uma imersão de 5 segundos e a 1,5 para uma imersão de 1 segundo.
 - O vidrado para **derrame** deve ser «um pouco mais ralo do que quando é usado para imersão»; onde os derrames se sobrepõem, a camada duplica e pode escorrer.

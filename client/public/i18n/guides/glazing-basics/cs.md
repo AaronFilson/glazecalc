@@ -275,7 +275,7 @@ Cílové hodnoty se podle zdroje liší. Digitalfire uvádí pro glazury na nam�
 
 ### Nanášení glazury
 
-Nejprve z přežahu{{en: bisque}} odstraňte prach a mastnotu. Digitalfire dává před omýváním přednost stlačenému vzduchu, měkkému štětci nebo jen lehce navlhčené houbičce.
+Nejprve z přežahu{{en: bisque}} odstraňte prach a mastnotu jen lehce navlhčenou houbičkou, místo abyste ho omývali, čímž by nasákl vodou. Prach z něj neofukujte stlačeným vzduchem ani ho neoprašujte nasucho: prach oxidu křemičitého se tak dostane do vzduchu ([Bezpečné míchání a větrání](/guides/safe-mixing#cleaning)).
 
 - **Namáčení** „obvykle dává vrstvu stejnoměrné tloušťky“ (Robin Hopper). Tloušťku určuje doba namáčení: Digitalfire uvádí, že komerční glazury na namáčení se připravují zhruba na 1,4 pro namáčení na 5 sekund a na 1,5 pro namáčení na 1 sekundu.
 - Glazura na **polévání** by měla být „o něco řidší, než když se používá k namáčení“; kde se polévání překrývá, vrstva se zdvojí a může stékat.

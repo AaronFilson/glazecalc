@@ -275,7 +275,7 @@ A **flokkuláló szer**{{en: flocculant}} (keserűsó, ecet vagy kalcium-klorid)
 
 ### A máz felhordása
 
-Előbb tisztítsa le a port és a zsírt a zsengélt áruról. A Digitalfire a lemosás helyett inkább sűrített levegőt, puha ecsetet vagy alig nedves szivacsot javasol.
+Előbb tisztítsa le a port és a zsírt a zsengélt áruról alig nedves szivaccsal, és ne mossa le, mert attól átázik. Ne fújja le a port sűrített levegővel, és ne kefélje szárazon: így szilícium-dioxid por kerül a levegőbe ([Biztonságos keverés és szellőzés](/guides/safe-mixing#cleaning)).
 
 - A **mártás** „általában egyenletes vastagságú bevonatot ad” (Robin Hopper). A vastagságot a mártási idő határozza meg: a Digitalfire megjegyzi, hogy a kereskedelmi mártómázakat nagyjából 1,4-es fajsúlyúra készítik 5 másodperces mártáshoz, és 1,5-esre 1 másodperceshez.
 - A **leöntéshez** használt máz legyen „kicsit hígabb, mint amikor mártáshoz használják”; ahol a leöntések átfedik egymást, a réteg megduplázódik, és lefolyhat.

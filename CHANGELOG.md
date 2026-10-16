@@ -467,6 +467,11 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Fixed
 
+- **Two guide corrections, in every language:** the glazing guide no longer suggests blowing or
+  dry-brushing dust off bisque, which puts silica dust in the air; it says to wipe it with a barely
+  damp sponge, as the safety guide does. The firing guide's cone clock now reads as Orton's chart
+  and FAQ do: the end point is the tip level with the base, a cone touching the shelf is at 6
+  o'clock, and Orton counts anywhere from 5 to 6 o'clock as properly fired.
 - **Sign-in email addresses are no longer written to the web server's log.** Signing in sends the
   address as the HTTP Basic user name, which nginx's default log format recorded beside the IP
   address; its own format now leaves the user name out.

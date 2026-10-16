@@ -275,7 +275,7 @@ Wartości docelowe różnią się w zależności od źródła. Digitalfire podaj
 
 ### Nakładanie szkliwa
 
-Najpierw należy oczyścić biskwit{{en: bisque}} z kurzu i tłuszczu. Digitalfire zamiast mycia woli sprężone powietrze, miękki pędzel lub ledwie wilgotną gąbkę.
+Najpierw należy oczyścić biskwit{{en: bisque}} z kurzu i tłuszczu ledwie wilgotną gąbką zamiast go myć, bo wtedy nasiąka wodą. Nie należy zdmuchiwać kurzu sprężonym powietrzem ani czyścić go suchą szczotką: w ten sposób pył krzemionki trafia do powietrza ([Bezpieczne rozrabianie szkliw i wentylacja](/guides/safe-mixing#cleaning)).
 
 - **Zanurzanie** „na ogół daje warstwę o równej grubości” (Robin Hopper). Grubość zależy od czasu zanurzenia: Digitalfire zauważa, że handlowe szkliwa do zanurzania przygotowuje się na gęstość około 1,4 przy zanurzeniu na 5 sekund i 1,5 przy zanurzeniu na 1 sekundę.
 - Szkliwo do **polewania** powinno być „nieco rzadsze niż do zanurzania”; tam, gdzie polewania się nakładają, warstwa się podwaja i może spływać.

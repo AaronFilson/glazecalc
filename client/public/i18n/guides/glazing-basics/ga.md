@@ -275,7 +275,7 @@ Glóthaíonn **flocasach**{{en: flocculant}} (salann Epsom, fínéagar nó clói
 
 ### An glónra a chur air
 
-Glan deannach agus gréisc de na brioscghréithe{{en: bisque}} ar dtús. Is fearr le Digitalfire aer comhbhrúite, scuab bhog nó spúinse atá ar éigean tais ná iad a ní.
+Glan deannach agus gréisc de na brioscghréithe{{en: bisque}} ar dtús le spúinse atá ar éigean tais seachas iad a ní, rud a fhágann ar maos iad. Ná séid an deannach díobh le haer comhbhrúite agus ná scuab tirim é: cuireann sé sin deannach silice san aer ([Meascadh sábháilte agus aeráil](/guides/safe-mixing#cleaning)).
 
 - Le **tumadh**, “faightear brat ar comhthiús de ghnáth” (Robin Hopper). Is é an t-am tumtha a shocraíonn an tiús: tugann Digitalfire faoi deara go ndéantar glónraí tumtha tráchtála ag thart ar 1.4 do thumadh 5 shoicind agus ag 1.5 do thumadh 1 soicind.
 - Le **doirteadh**, ba cheart go mbeadh an glónra “beagán níos tanaí ná nuair a úsáidtear é le haghaidh tumtha”; san áit a dtéann dhá dhoirteadh thar a chéile, bíonn an brat dúbailte agus seans go rithfidh sé.

@@ -248,7 +248,7 @@ Bij een handbediende oven is het kijkgat uw enige directe signaal tijdens de sto
 
 ### Na de stook
 
-Orton leest het ombuigen af als een wijzerplaat. Een kegel die niet is omgebogen, wijst omhoog, naar 12 uur. Het eindpunt is een buiging van 90°, de punt even hoog als de voet, wat Orton de stand van 5 uur noemt: het punt waarop de temperaturen in de tabel zijn gemeten. Een kegel die de plaat raakt, staat op 6 uur; tussen 4 uur en het moment dat de kegel de plaat raakt, is het verschil klein, “meestal 1 of 2 graden”.
+Orton leest het ombuigen af als een wijzerplaat. Een kegel die niet is omgebogen, wijst omhoog, naar 12 uur; een kegel die de plaat raakt, staat op 6 uur. Het eindpunt is een buiging van 90°, de punt even hoog als de voet: het punt waarop de temperaturen in de tabel zijn gemeten, en Orton beschouwt een kegel die ergens tussen 5 en 6 uur staat als goed gestookt. Tussen 4 uur en het moment dat de kegel de plaat raakt, is het verschil klein, “meestal 1 of 2 graden”.
 
 Table: Een kegeldrietal aflezen na de stook (voorbeeld: kegels 5, 6 en 7 voor een glazuur voor kegel 6)
 Label: Een kegeldrietal aflezen

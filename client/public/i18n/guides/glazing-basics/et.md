@@ -275,7 +275,7 @@ Sihtväärtused on allikati erinevad. Digitalfire annab kastmisglasuuridele 1,40
 
 ### Glasuuri pealekandmine
 
-Kõigepealt puhastage eelpõletatud ese{{en: bisque}} tolmust ja rasvast. Digitalfire eelistab pesemisele suruõhku, pehmet pintslit või vaevu niisket käsna.
+Kõigepealt puhastage eelpõletatud ese{{en: bisque}} tolmust ja rasvast vaevu niiske käsnaga, mitte ärge peske seda, sest siis imab see end vett täis. Ärge puhuge tolmu suruõhuga maha ega harjake seda kuivalt: nii satub ränidioksiiditolm õhku ([Ohutu segamine ja ventilatsioon](/guides/safe-mixing#cleaning)).
 
 - **Sissekastmine** „annab üldiselt ühtlase paksusega kihi“ (Robin Hopper). Kastmisaeg määrab kihi paksuse: Digitalfire märgib, et kaubanduslike kastmisglasuuride suhteline tihedus on 5-sekundilise kastmise jaoks umbes 1,4 ja 1-sekundilise kastmise jaoks 1,5.
 - **Ülevalamiseks** peaks glasuur olema „veidi vedelam kui kastmiseks“; kus ülevalatud kihid kattuvad, on kiht topeltpaks ja võib voolata.

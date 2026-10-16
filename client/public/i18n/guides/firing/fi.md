@@ -248,7 +248,7 @@ Käsisäätöisessä uunissa tirkistysaukko on ainoa reaaliaikainen merkki, mink
 
 ### Polton jälkeen
 
-Orton lukee taipumaa kuin kellotaulua. Taipumaton keila osoittaa suoraan ylös, kello 12:een. Loppupiste on 90°:n taipuma, jossa kärki on pohjan tasolla ja jota Orton kutsuu kello 5:n asennoksi: tässä pisteessä taulukon lämpötilat on mitattu. Levyyn koskettava keila on kello 6:ssa; kello 4:n asennon ja levyyn koskettamisen välillä ero on pieni, ”yleensä 1 tai 2 astetta”.
+Orton lukee taipumaa kuin kellotaulua. Taipumaton keila osoittaa suoraan ylös, kello 12:een; levyyn koskettava keila on kello 6:ssa. Loppupiste on 90°:n taipuma, jossa kärki on pohjan tasolla: tässä pisteessä taulukon lämpötilat on mitattu, ja Orton pitää oikein poltettuna keilaa, joka on missä tahansa kello 5:n ja kello 6:n välillä. Kello 4:n asennon ja levyyn koskettamisen välillä ero on pieni, ”yleensä 1 tai 2 astetta”.
 
 Table: Keilasarjan lukeminen polton jälkeen (esimerkki: keilat 5, 6 ja 7 keilan 6 lasitteelle)
 Label: Keilasarjan lukeminen

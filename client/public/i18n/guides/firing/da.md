@@ -248,7 +248,7 @@ På en manuelt styret ovn er kighullet den eneste måde at følge brændingen p�
 
 ### Efter brændingen
 
-Orton aflæser bøjningen som en urskive. En ubøjet kegle peger opad, på klokken 12. Slutpunktet er en bøjning på 90°, med spidsen i niveau med grundfladen, eller det Orton kalder klokken 5-stillingen: det punkt, tabellens temperaturer er målt ved. En kegle, der rører ovnpladen, står på klokken 6; fra klokken 4 til keglen rører ovnpladen er forskellen lille, »som regel 1 eller 2 grader«.
+Orton aflæser bøjningen som en urskive. En ubøjet kegle peger opad, på klokken 12; en kegle, der rører ovnpladen, står på klokken 6. Slutpunktet er en bøjning på 90°, med spidsen i niveau med grundfladen: det punkt, tabellens temperaturer er målt ved, og Orton regner en kegle hvor som helst fra klokken 5 til klokken 6 for korrekt brændt. Fra klokken 4 til keglen rører ovnpladen er forskellen lille, »som regel 1 eller 2 grader«.
 
 Table: Aflæsning af et keglesæt efter brændingen (eksempel: kegle 5, 6 og 7 til en glasur til kegle 6)
 Label: Aflæsning af et keglesæt

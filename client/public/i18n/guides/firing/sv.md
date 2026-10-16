@@ -248,7 +248,7 @@ På en ugn utan automatik är titthålet den enda signalen i realtid, och därf�
 
 ### Efter bränningen
 
-Orton läser böjningen som en urtavla. En oböjd kägla pekar uppåt, mot klockan 12. Slutpunkten är en böjning på 90°, med spetsen i höjd med foten, vilket Orton kallar läget klockan 5: den punkt där tabellens temperaturer är mätta. En kägla som nuddar ugnsplattan är vid klockan 6; mellan klockan 4 och att spetsen nuddar ugnsplattan är skillnaden liten, ”vanligtvis 1 eller 2 grader”.
+Orton läser böjningen som en urtavla. En oböjd kägla pekar uppåt, mot klockan 12; en kägla som nuddar ugnsplattan är vid klockan 6. Slutpunkten är en böjning på 90°, med spetsen i höjd med foten: den punkt där tabellens temperaturer är mätta, och Orton räknar en kägla var som helst mellan klockan 5 och klockan 6 som rätt bränd. Mellan klockan 4 och att spetsen nuddar ugnsplattan är skillnaden liten, ”vanligtvis 1 eller 2 grader”.
 
 Table: Läsa av en kägelsats efter bränningen (exempel: käglorna 5, 6 och 7 för en glasyr för kägla 6)
 Label: Läsa av en kägelsats
