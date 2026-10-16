@@ -794,6 +794,28 @@ describe('RecipePage', () => {
     expect(text(fixture, '#more-actions-r9')).toBe('Print Compare Remove');
   });
 
+  it('stops filtering the saved recipes when the filter box goes', async () => {
+    const recipes: Recipe[] = Array.from({ length: 6 }, (_, i) => ({
+      _id: 'r' + i,
+      title: (i === 3 ? 'Celadon ' : 'Matte ') + i,
+      materials: [{ ...WHITING, amount: '10' }]
+    }));
+    const { fixture, page } = await create(recipes);
+    const names = () =>
+      [...fixture.nativeElement.querySelectorAll('.saved-recipe-open')].map((b: Element) => b.textContent?.trim());
+    const filter = fixture.nativeElement.querySelector('.saved-filter') as HTMLInputElement;
+    filter.value = 'cel';
+    filter.dispatchEvent(new Event('input'));
+    await fixture.whenStable();
+    expect(names()).toEqual(['Celadon 3']);
+
+    // Five left: no filter box, and every one listed.
+    page['myRecipes'].set(recipes.slice(1));
+    await fixture.whenStable();
+    expect(fixture.nativeElement.querySelector('.saved-filter')).toBeNull();
+    expect(names()).toEqual(['Matte 5', 'Matte 4', 'Celadon 3', 'Matte 2', 'Matte 1']);
+  });
+
   it('has no saved list until there is a recipe, and calls the editor "New recipe" until it has a title', async () => {
     const { fixture, page } = await create();
     expect(fixture.nativeElement.querySelector('#saved-recipes')).toBeNull();
@@ -1052,6 +1074,25 @@ describe('RecipePage', () => {
       await settle(fixture);
       expect(router.url).toBe('/');
       expect(document.activeElement?.id).toBe('print-r1');
+    });
+
+    it('back from printing a saved recipe the list leaves out, lists them all so the focus can go to its Print', async () => {
+      const recipes: Recipe[] = Array.from({ length: 10 }, (_, i) => ({ ...SAVED, _id: 'r' + i, title: 'Matte ' + i }));
+      const router = TestBed.inject(Router);
+      await router.navigateByUrl('/?print=r0');
+      const fixture = TestBed.createComponent(RecipePage);
+      await fixture.whenStable();
+      answer('/materials/getStandard', [WHITING, SILICA]);
+      answer('/materials/getAll', []);
+      answer('/additives/getAll', []);
+      answer('/additives/getStandard', []);
+      answer('/recipe/getAll', recipes);
+      await opened(fixture);
+      expect(text(fixture, '.print-sheet h2')).toBe('Matte 0');
+      click(fixture, 'Back to the recipe');
+      await settle(fixture);
+      expect(fixture.nativeElement.querySelectorAll('.saved-recipe-open').length).toBe(10);
+      expect(document.activeElement?.id).toBe('print-r0');
     });
 
     it('opens from the address once the saved recipes are in, and drops a print of what is not there', async () => {
