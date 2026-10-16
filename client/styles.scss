@@ -1455,6 +1455,22 @@ code {
   }
 }
 
+// Printing the recovery codes (pages/password/sign-in-section.ts, printCodes):
+// while <body> has gc-printing-codes, the codes with their title and note alone,
+// from the top of the first page.
+.print-only {
+  display: none;
+}
+@media print {
+  // Everything but the printed block, what holds it, and what is in it.
+  body.gc-printing-codes :not(:has(.recovery-codes-print), .recovery-codes-print, .recovery-codes-print *) {
+    display: none !important;
+  }
+  body.gc-printing-codes .print-only {
+    display: block;
+  }
+}
+
 // Guides (pages/guides): contents, then sections as panels, with tables, callouts, a glossary and sources.
 // Formulas and names keep their own direction inside right-to-left text, and
 // browser translation leaves formulas alone (translate="no" on them).

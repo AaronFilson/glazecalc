@@ -1,6 +1,6 @@
 # Integrations feature list: sign-in, MCP server, tokens
 
-Effort is in working days for one person who knows the codebase. Figures come from the research notes, adjusted for shared work _(inferred)_. Paths are relative to the repo root. Each phase ships on its own. Run `npm run test:e2e:linux` before calling any phase done.
+Effort is in working days for one person who knows the codebase. Figures come from the research notes, adjusted for shared work _(inferred)_. Paths are relative to the repo root. ADR numbers: 0014 is two-step sign-in and 0016 the prerendered pages (`docs/adr/README.md`), so this plan's are 0015 (sign-in), 0017 (publishing) and 0018 (the assistant's privacy notice). Each phase ships on its own. Run `npm run test:e2e:linux` before calling any phase done.
 
 ## Phase 0: Foundations (8–11 days)
 
@@ -24,7 +24,7 @@ Effort is in working days for one person who knows the codebase. Figures come fr
 15. **Return path and language.** Check the return path with `isPage()` and 303 to it. Errors land on `<lang>/signin`. S. `server/lib/pages.ts`.
 16. **Ops.** SSM secrets per provider (absent means off), `PUBLIC_URL`, an `invalid_client` warning, and the instance policy. S. `deploy/deploy.sh`, `deploy/aws/instance-policy.json`, `deploy/README.md`, `aws/README.md`.
 17. **Tests.** Mocha against `oauth2-mock-server`; Playwright on Chromium, Firefox and WebKit, including the Strict cookie after the redirect; Windows and Linux runs. M (1–2 d). New `server/test/oauth_routes_tests.ts`, e2e specs.
-18. **Docs.** ADR 0014 for sign-in, the privacy notice (providers as separate controllers, the cookies), and the CHANGELOG. S. `docs/adr/`, `client/app/pages/privacy`, `client/public/i18n/site/*.json`.
+18. **Docs.** ADR 0015 for sign-in (0014 is two-step sign-in, `docs/mfa-plan.md`), the privacy notice (providers as separate controllers, the cookies), and the CHANGELOG. S. `docs/adr/`, `client/app/pages/privacy`, `client/public/i18n/site/*.json`.
 
 ## Phase 2: Public MCP tools, no account (4–6 days after item 6)
 
@@ -34,7 +34,7 @@ Effort is in working days for one person who knows the codebase. Figures come fr
 22. **Server-side translator** over `client/public/i18n/<lang>.json` using `intl-messageformat`. S. `server/mcp/i18n.ts`.
 23. **Limits and caps.** Per IP 60 a minute and 2,000 a day; fitting tools 10 a minute; at most 40 recipe lines. S. `server/lib/rate_limit.ts`.
 24. **Tests:** a `tools/list` snapshot, known values, the conformance suite (2026-07-28 and 2025-11-25) and an Inspector CLI smoke test in Ubuntu CI. M (1–2 d). `server/test/mcp_tests.ts`, CI workflow.
-25. **Publishing:** a "Use Glazecalc from your AI assistant" page (24 languages), `server.json`, the registry name `com.glazecalcapp/glazecalc`, and ADR 0015. S (1 d). `/.well-known/mcp-registry-auth`, docs page.
+25. **Publishing:** a "Use Glazecalc from your AI assistant" page (24 languages), `server.json`, the registry name `com.glazecalcapp/glazecalc`, and ADR 0017. S (1 d). `/.well-known/mcp-registry-auth`, docs page.
 
 ## Phase 3: Read-only personal tokens (7–10 days)
 
@@ -54,7 +54,7 @@ Effort is in working days for one person who knows the codebase. Figures come fr
 36. **Settings → Connected apps.** Lists PATs and OAuth grants together, shows recent activity, offers Disconnect and Disconnect all. M (1–2 d). `GET/DELETE /api/connections`, client page.
 37. **Write scopes and tools:** `create_recipe` (the server computes the analysis), `update_recipe` (keeps a version), `add_notebook_entry`, my materials, shelf add and remove. M (2–3 d). `server/mcp/tools/account/*.ts`.
 38. **ChatGPT mixed auth:** `securitySchemes` plus `_meta["mcp/www_authenticate"]`; 403 step-up. S. `server/mcp/auth.ts`.
-39. **Privacy notice "Connecting an AI assistant"** (24 languages, with back-translation) and ADR 0016. S + translation pipeline time.
+39. **Privacy notice "Connecting an AI assistant"** (24 languages, with back-translation) and ADR 0018. S + translation pipeline time.
 40. **Tests:** the OAuth flow, CIMD fixture, DCR, scopes, ownership, revocation, Playwright for consent and Connected apps, and real-client checks (Claude, Claude Code, ChatGPT, VS Code, Cursor, Gemini CLI). M (2–3 d).
 
 ## Phase 5: Optional (8–13 days)

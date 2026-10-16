@@ -44,6 +44,43 @@ Check only that the person controls the account. **Never ask for an identity doc
 | Delete their data (Art. 17)         | **Delete account** on the account page, or an admin deletion after the check. Either way the deletion is logged and re-applied if a backup is restored, and backups expire within the period the notice states. Tell the person that.                                           |
 | Restrict or object (Art. 18, 21)    | Rare for this app; the only processing is running the account. Answer case by case, and record the decision.                                                                                                                                                                    |
 
+## Turning off two-step sign-in
+
+Someone who has lost every second step (their authenticator app, every passkey and every recovery code) cannot sign
+in, and a password reset does not turn two-step sign-in off. This is the only way back, and it takes **seven days**,
+so that someone who has only the password and the mailbox for a moment cannot use it quietly. There is no admin route
+for it on the website ([ADR 0014](adr/0014-two-step-sign-in.md)); the owner runs a script on the server
+([deploy/README.md](../deploy/README.md), "Someone lost every factor").
+
+1. **The request must come from the account's confirmed address.** A request from any other address, an issue or a
+   message with an ID document is answered with these steps and nothing else. Never act on a phone call or a
+   document.
+2. **Not within 30 days of an email change.** The script refuses, at both steps, while the account's address changed
+   less than 30 days ago (`emailChangedAt`, set when the link to a new address is opened): someone who took over the
+   account may have changed it, so the new address does not show who the owner is. It prints the date it works
+   again. Until then, do not go on from the address alone: verify the requester another way (for example, they
+   describe what is saved in the account), or ask them to write again after that date. Never change the date in the
+   database to get round it.
+3. **Ask them to reset their password first** (the reset proves they read that mailbox today). The reset alone does
+   not sign them in.
+4. **Day 0:** run `clear_mfa.ts --notify <address>`. It records the request on the account (`mfa.clearRequestedAt`)
+   and emails the address that two-step sign-in will be turned off on a date seven days later unless they write to
+   `privacy@glazecalcapp.com` (the notice names that address for replies, and links the password reset). Note the
+   date in the request log.
+5. **If anyone writes to privacy@ to stop it** (from that address), do not go on. Ask what happened; if the request was not
+   theirs, tell them to change their password, and the account stays as it is.
+   **Using any factor also cancels the request:** if the account signs in with a second step or a passkey, or confirms
+   a change on its account page with a factor, the server removes `mfa.clearRequestedAt` (the log says only
+   `MFA_CLEAR_CANCELLED`). Whoever did that still has a factor. `--clear` then refuses ("Run --notify first"); if the
+   person still wants it turned off, ask why, and run `--notify` again, which starts a new seven days.
+6. **Day 7 or later:** run `clear_mfa.ts --clear <address>`. It refuses before seven days have passed. It removes
+   every factor and recovery code, signs out every device and emails the address that two-step sign-in is off. Tell
+   the person to sign in with the password and set up two-step sign-in again, and to keep the new recovery codes.
+7. **Log it** as below: the date asked, the reset, the notice date, the date cleared.
+
+If the person instead asks to delete the account, they can't sign in to do it themselves: delete it after the same
+check (steps 1 to 3), without waiting the seven days.
+
 ## The request log
 
 Keep a short log outside the repository and the app, for example a private spreadsheet. Record for each request:

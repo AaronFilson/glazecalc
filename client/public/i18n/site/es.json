@@ -103,7 +103,6 @@
     "keptInbound": "<b>El correo que envía a Glazecalc:</b> 30 días en el almacén de Amazon, y en el buzón del propietario el tiempo necesario para responderle. Para una solicitud sobre sus datos, se conserva durante tres años una nota breve (cuándo llegó, qué se pidió y qué se hizo).",
     "rightsHeading": "Sus derechos",
     "rightsIntro": "Puede ver, corregir, llevarse y eliminar sus datos. Casi todo puede hacerlo usted en la <account>página de su cuenta</account>:",
-    "rightsExport": "<b>Verlos y llevárselos:</b> Descargar mis datos guarda todo en un archivo (JSON), y sus recetas y materiales como hojas de cálculo (CSV).",
     "rightsCorrect": "<b>Corregirlos:</b> cambie sus ajustes y sus registros en cualquier momento. Para cambiar su dirección de correo electrónico, abra el enlace enviado a la dirección nueva; a la dirección antigua, si estaba confirmada, se le avisa del cambio, y se cierra la sesión en todos los dispositivos.",
     "rightsDelete": "<b>Eliminarlos:</b> Eliminar mi cuenta elimina en el acto su cuenta y todo lo que haya guardado, y «Descartar la prueba» hace lo mismo con un periodo de prueba. Las copias que haya en las copias de seguridad desaparecen en un plazo de 30 días.",
     "rightsSignOut": "<b>Cerrar sesión en todas partes:</b> termina las sesiones de su cuenta en todos los dispositivos.",

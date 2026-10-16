@@ -4,7 +4,7 @@
 // how a screen reader words things still need a person.
 const { test, expect } = require('@playwright/test');
 const { default: AxeBuilder } = require('@axe-core/playwright');
-const { API, addColorant, addStandardMaterial, signUpAndSignIn } = require('./helpers');
+const { API, addColorant, addStandardMaterial, confirmedAccount, signUpAndSignIn, totp } = require('./helpers');
 
 const WCAG = ['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa'];
 // Landmarks and headings, which axe tags as best practice rather than WCAG: one main
@@ -152,5 +152,59 @@ for (const colorScheme of ['light', 'dark']) {
         await expectNoProblems(page, colorScheme + ' trial ' + path);
       }
     });
+  });
+}
+
+// Two-step sign-in (docs/mfa-plan.md): the account page's section off and on,
+// with a change open, and the second step at sign-in, in each of its ways.
+for (const colorScheme of ['light', 'dark']) {
+  test(colorScheme + ' mode: two-step sign-in', async ({ page }) => {
+    test.setTimeout(90000);
+    await page.emulateMedia({ colorScheme });
+    const { email, password } = await confirmedAccount(page.request);
+    const signInOnPage = async () => {
+      await page.goto('/signin');
+      await page.locator('#email').fill(email);
+      await page.locator('#password').fill(password);
+      await page.getByRole('button', { name: 'Sign in', exact: true }).click();
+    };
+    expect((await page.request.post(API + '/signout')).ok()).toBe(true);
+    await signInOnPage();
+    await expect(page).toHaveURL(/\/home$/);
+    const section = page.getByRole('region', { name: 'Two-step sign-in' });
+    // Not set up yet, then setting up an app: the QR code and its key.
+    await page.goto('/account');
+    await expect(section.locator('.mfa-status')).toBeVisible();
+    await expectNoProblems(page, colorScheme + ' /account two-step sign-in off');
+    await section.getByRole('button', { name: 'Set up an authenticator app' }).click();
+    await section.getByLabel('Your password').fill(password);
+    await section.getByRole('button', { name: 'Continue' }).click();
+    await expect(section.locator('img.totp-qr')).toBeVisible();
+    await expectNoProblems(page, colorScheme + ' /account setting up an app');
+    const secret = (await section.locator('.totp-key').innerText()).replace(/\s/g, '');
+    await section.getByLabel(/^Enter the 6-digit code/).fill(totp(secret));
+    await section.getByRole('button', { name: 'Finish setting up' }).click();
+    // The recovery codes, shown once.
+    await expect(section.locator('ol.recovery-codes li')).toHaveCount(10);
+    await expectNoProblems(page, colorScheme + ' /account recovery codes');
+    await section.getByRole('button', { name: 'I have saved them' }).click();
+    // On, with a change open: the password and a second step.
+    await expect(section.locator('.mfa-status')).toContainText('Two-step sign-in is on.');
+    await expectNoProblems(page, colorScheme + ' /account two-step sign-in on');
+    // The app's own button; "Turning it off" has a second one.
+    await section.locator('#mfa-remove-app').click();
+    await expect(section.getByRole('group', { name: 'And your second step' })).toBeVisible();
+    await expectNoProblems(page, colorScheme + ' /account confirming a change');
+    // The second step at sign-in, with a code, then with a recovery code.
+    await page.getByRole('button', { name: 'Sign out', exact: true }).click();
+    await signInOnPage();
+    await expect(page.getByLabel('Code from your authenticator app')).toBeVisible();
+    await expectNoProblems(page, colorScheme + ' /signin second step');
+    await page.getByRole('button', { name: 'Finish signing in' }).click();
+    await expect(page.getByLabel('Code from your authenticator app')).toHaveAttribute('aria-invalid', 'true');
+    await expectNoProblems(page, colorScheme + ' /signin second step with a problem marked');
+    await page.getByRole('button', { name: 'Use a recovery code instead' }).click();
+    await expect(page.getByLabel('Recovery code')).toBeVisible();
+    await expectNoProblems(page, colorScheme + ' /signin second step, recovery code');
   });
 }

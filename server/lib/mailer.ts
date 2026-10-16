@@ -10,6 +10,8 @@ import fs from 'node:fs';
 import path from 'node:path';
 import nodemailer, { type Transporter } from 'nodemailer';
 import { isGuestAddress } from './email.ts';
+import * as log from './log.ts';
+import * as site from './site.ts';
 
 export interface Message {
   to: string;
@@ -27,20 +29,28 @@ const transport = (): string | null =>
 
 export const available = (): boolean => ['smtp', 'file', 'log'].includes(transport() ?? '');
 
-/** Where links in emails point: the site's address, never the request's Host header. */
-export const appUrl = (): string =>
-  (
-    process.env.APP_URL ||
-    (process.env.NODE_ENV === 'production' ? 'https://glazecalcapp.com' : 'http://localhost:3000')
-  ).replace(/\/+$/, '');
+/** Where links in emails point: the site's address (SITE_URL, server/lib/site.ts), never the request's Host header. */
+export const appUrl = (): string => site.siteUrl();
+
+/** A copy that is not production (SITE_LABEL) says so in every subject: "[Staging] Reset your Glazecalc password". */
+export const labelled = (subject: string): string => {
+  const label = site.labelShown();
+  return label ? '[' + label + '] ' + subject : subject;
+};
 
 /** Sends a plain-text email. Resolves once the message has been handed over. */
 export const send = async ({ to, subject, text }: Message): Promise<void> => {
   // Trials' placeholder addresses can never receive mail; a bounce would only
   // hurt the site's standing with its mail service.
   if (isGuestAddress(to)) throw new Error('Not sending email to a trial account');
+  // A staging copy mails only its owner (MAIL_ALLOWLIST), so its database can
+  // never email a real person. The log names no address, only why.
+  if (!site.mailAllowed(to)) {
+    log.error('Email dropped', { code: 'not-on-mail-allowlist' });
+    return;
+  }
   const from = process.env.MAIL_FROM || 'Glazecalc <no-reply@glazecalcapp.com>';
-  const message = { from, to, subject, text };
+  const message = { from, to, subject: labelled(subject), text };
   switch (transport()) {
     case 'smtp':
       if (!smtp || smtpUrl !== process.env.SMTP_URL) {

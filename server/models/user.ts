@@ -4,6 +4,8 @@ import mongoose from 'mongoose';
 import regions from '../../lib/regions/index.js';
 import languages from '../../lib/regions/languages.js';
 import appSecret from '../lib/app_secret.ts';
+import { PASSKEY_NAME_MAX } from '../../lib/mfa.js';
+import type { SecondStepMethods } from '../../lib/mfa.js';
 
 /** How long a sign-in token lasts, in days: '7d'. */
 export type TokenLifetime = `${number}d`;
@@ -47,6 +49,87 @@ export const PREFERENCES = {
 } as const;
 export type Preferences = { -readonly [K in keyof typeof PREFERENCES]: (typeof PREFERENCES)[K][number] };
 
+/**
+ * A passkey (WebAuthn credential) the account signs in with
+ * (server/lib/webauthn.ts). The entry's _id is the id the app and the routes
+ * use; the credential id, public key and counter never leave the server.
+ */
+export interface Passkey {
+  _id: mongoose.Types.ObjectId;
+  /** base64url, as the browser sends it; unique across all accounts. */
+  credentialId: string;
+  /** COSE public key. */
+  publicKey: Buffer;
+  /** The authenticator's signature counter: a lower one than stored is refused. */
+  counter: number;
+  transports: string[];
+  /** 'singleDevice' or 'multiDevice' (synced). */
+  deviceType: string;
+  backedUp: boolean;
+  /** Chosen by the user, at most PASSKEY_NAME_MAX (lib/mfa.js) characters. */
+  name: string;
+  addedAt: Date;
+  lastUsedAt?: Date;
+}
+
+/** A recovery code: only HMAC-SHA256(MFA_KEY, normalized code) is kept (server/lib/recovery_codes.ts). */
+export interface RecoveryCode {
+  hash: string;
+  usedAt?: Date;
+}
+
+/**
+ * Two-step sign-in (docs/mfa-plan.md, item 5). Absent until the first factor
+ * is added. "On" means an authenticator app or at least one passkey (mfaOn);
+ * removing the last factor removes the recovery codes too.
+ */
+export interface MfaFields {
+  /** The WebAuthn user handle: 16 random bytes, base64url; never the ObjectId. */
+  handle?: string;
+  /** The authenticator app. */
+  totp?: {
+    /** The base32 secret, encrypted: v1.<iv>.<tag>.<ciphertext> (server/lib/mfa_key.ts). */
+    secret: string;
+    /** The last 30-second step a code was accepted for: a code is never taken twice. */
+    lastStep: number;
+    addedAt: Date;
+    lastUsedAt?: Date;
+  };
+  /** At most PASSKEY_LIMIT (lib/mfa.js). */
+  passkeys: Passkey[];
+  recoveryCodes: RecoveryCode[];
+  recoveryMadeAt?: Date;
+  /**
+   * When the owner's script (server/clear_mfa.ts --notify) told the address
+   * that two-step sign-in will be turned off; --clear refuses before 7 days.
+   */
+  clearRequestedAt?: Date;
+  /**
+   * When the owner was last emailed that someone entered the password but did
+   * not finish the second step (server/lib/second_step.ts noticeUnfinished):
+   * at most one such email a day.
+   */
+  unfinishedNoticeAt?: Date;
+  /** Wrong codes from the authenticator app (server/lib/code_lock.ts). */
+  codeGuesses?: CodeGuesses;
+}
+
+/** Wrong codes counted against an account (server/lib/code_lock.ts). */
+export interface CodeGuesses {
+  /** The account's tokenVersion they were counted under: a new one starts again. */
+  version: number;
+  /** Wrong codes in this round. */
+  wrong: number;
+  /** Rounds used up: how long the next refusal lasts. */
+  rounds: number;
+  /** The last wrong code. */
+  at?: Date;
+  /** Codes are refused until then. */
+  lockedUntil?: Date;
+  /** Goes up with every write, for compare-and-set. */
+  n?: number;
+}
+
 export interface UserFields {
   email: string;
   /**
@@ -75,11 +158,19 @@ export interface UserFields {
    * the older ones included, count as verified.
    */
   emailUnverified?: boolean;
+  /**
+   * When the address last changed: when the link sent to the new one was
+   * opened (server/routes/email_routes.ts). server/clear_mfa.ts refuses for 30
+   * days after it. Absent until the first change.
+   */
+  emailChangedAt?: Date;
   /** A trial account (server/routes/guest_routes.ts), removed after expiresAt. */
   guest?: boolean;
   expiresAt?: Date;
   /** A trial's count of each kind of record (server/lib/guest_limits.ts). */
   trialCounts?: Map<string, number>;
+  /** Two-step sign-in; never settable through /api/usersettings, never sent whole. */
+  mfa?: MfaFields;
 }
 
 interface UserMethods {
@@ -91,6 +182,49 @@ interface UserMethods {
 
 type UserModel = mongoose.Model<UserFields, object, UserMethods>;
 export type UserDocument = mongoose.HydratedDocument<UserFields, UserMethods>;
+
+const passkeySchema = new mongoose.Schema<Passkey>({
+  credentialId: { type: String, required: true },
+  publicKey: { type: Buffer, required: true },
+  counter: { type: Number, default: 0 },
+  transports: { type: [String], default: [] },
+  deviceType: String,
+  backedUp: Boolean,
+  name: { type: String, required: true, maxlength: PASSKEY_NAME_MAX },
+  addedAt: { type: Date, required: true },
+  lastUsedAt: Date
+});
+
+const mfaSchema = new mongoose.Schema<MfaFields>(
+  {
+    handle: String,
+    totp: {
+      type: new mongoose.Schema(
+        {
+          secret: { type: String, required: true },
+          lastStep: { type: Number, default: 0 },
+          addedAt: Date,
+          lastUsedAt: Date
+        },
+        { _id: false }
+      ),
+      default: undefined
+    },
+    passkeys: { type: [passkeySchema], default: [] },
+    recoveryCodes: { type: [new mongoose.Schema({ hash: String, usedAt: Date }, { _id: false })], default: [] },
+    recoveryMadeAt: Date,
+    clearRequestedAt: Date,
+    unfinishedNoticeAt: Date,
+    codeGuesses: {
+      type: new mongoose.Schema(
+        { version: Number, wrong: Number, rounds: Number, at: Date, lockedUntil: Date, n: Number },
+        { _id: false }
+      ),
+      default: undefined
+    }
+  },
+  { _id: false }
+);
 
 const userSchema = new mongoose.Schema<UserFields, UserModel, UserMethods>({
   email: { type: String, required: true, trim: true, lowercase: true },
@@ -118,9 +252,11 @@ const userSchema = new mongoose.Schema<UserFields, UserModel, UserMethods>({
   shelf: { type: [String], default: undefined },
   tokenVersion: { type: Number, default: 0 },
   emailUnverified: Boolean,
+  emailChangedAt: Date,
   guest: Boolean,
   expiresAt: Date,
-  trialCounts: { type: Map, of: Number }
+  trialCounts: { type: Map, of: Number },
+  mfa: { type: mfaSchema, default: undefined }
 });
 
 userSchema.method('hashPassword', function (this: UserDocument, password: string) {
@@ -145,5 +281,20 @@ userSchema.method('generateToken', function (this: UserDocument, expiresIn: Toke
 userSchema.index({ email: 1 }, { unique: true, collation: { locale: 'en', strength: 2 } });
 // Finds expired trials, and counts the active ones.
 userSchema.index({ expiresAt: 1 }, { partialFilterExpression: { guest: true } });
+// One account per passkey, and passkey-first sign-in finds the account by it.
+userSchema.index(
+  { 'mfa.passkeys.credentialId': 1 },
+  { unique: true, partialFilterExpression: { 'mfa.passkeys.credentialId': { $exists: true } } }
+);
+
+/** Whether the account has two-step sign-in on: an authenticator app or a passkey. */
+export const mfaOn = (user: Pick<UserFields, 'mfa'>): boolean => Boolean(user.mfa?.totp || user.mfa?.passkeys?.length);
+
+/** The second steps the account can take at sign-in (lib/mfa.d.ts). */
+export const factorMethods = (user: Pick<UserFields, 'mfa'>): SecondStepMethods => ({
+  totp: Boolean(user.mfa?.totp),
+  passkey: Boolean(user.mfa?.passkeys?.length),
+  recovery: mfaOn(user) && (user.mfa?.recoveryCodes ?? []).some((code) => !code.usedAt)
+});
 
 export default mongoose.model<UserFields, UserModel>('User', userSchema);

@@ -214,13 +214,25 @@ describe('record ownership and input checks', () => {
       await Firing.create([firing(bob.user, 'bob 1'), firing(bob.user, 'bob 2'), firing(alice.user, 'alice 1')]);
       const res = await api()
         .delete('/deleteuser/' + bob.user._id)
-        .set('Authorization', 'Bearer ' + admin.token);
+        .set('Authorization', 'Bearer ' + admin.token)
+        .send({ password: admin.password });
       expect(res).to.have.status(200);
       expect(res.body.msg).to.eql('User deleted');
       expect(await User.findById(bob.user._id)).to.eql(null);
       expect(await Firing.countDocuments({ ownedBy: String(bob.user._id) })).to.eql(0);
       // Only that account's records.
       expect(await Firing.countDocuments({ ownedBy: String(alice.user._id) })).to.eql(1);
+    });
+
+    it("refuses an admin deleting another account without the admin's own password", async () => {
+      for (const body of [{}, { password: 'wrong' }]) {
+        const res = await api()
+          .delete('/deleteuser/' + bob.user._id)
+          .set('Authorization', 'Bearer ' + admin.token)
+          .send(body);
+        expect(res, JSON.stringify(body)).to.have.status(400);
+      }
+      expect(await User.findById(bob.user._id)).to.not.eql(null);
     });
 
     it('reads an id in capitals as the same account', async () => {
@@ -236,7 +248,8 @@ describe('record ownership and input checks', () => {
       await Firing.create([firing(bob.user, 'bob 1')]);
       const removed = await api()
         .delete('/deleteuser/' + String(bob.user._id).toUpperCase())
-        .set('Authorization', 'Bearer ' + admin.token);
+        .set('Authorization', 'Bearer ' + admin.token)
+        .send({ password: admin.password });
       expect(removed).to.have.status(200);
       expect(await User.findById(bob.user._id)).to.eql(null);
       expect(await Firing.countDocuments({ ownedBy: String(bob.user._id) })).to.eql(0);

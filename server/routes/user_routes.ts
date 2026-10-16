@@ -1,6 +1,6 @@
 // The signed-in account.
 //
-//   GET    /api/verify            who the session belongs to
+//   GET    /api/verify            who the session belongs to (mfa: true when two-step sign-in is on)
 //   GET    /api/preferences       the account's (or trial's) choices: { weightUnit, gramPrecision, theme, palette, lead,
 //                                  region, format, decimalMark, temperature, cones, language,
 //                                  density, englishTerms, notice }
@@ -8,7 +8,9 @@
 //   GET    /api/shelf             the materials the account (or trial) has on hand: { shelf: [key] }
 //   PUT    /api/shelf             { shelf: [key] } in place of the list
 //   PUT    /api/usersettings/:id  { displayname }; the email changes by a link (routes/email_routes.ts)
-//   DELETE /api/deleteuser/:id    { password } removes the account and everything in it
+//   DELETE /api/deleteuser/:id    { password } removes the account and everything in it; with
+//                                  two-step sign-in on, a current factor too (lib/mfa.d.ts IdentityProof).
+//                                  Always the signed-in person's: an admin deleting another account gives their own.
 import express, { type NextFunction, type Request, type Response } from 'express';
 import mongoose from 'mongoose';
 import { deleteAccount } from '../lib/account_data.ts';
@@ -19,8 +21,9 @@ import * as log from '../lib/log.ts';
 import * as mailer from '../lib/mailer.ts';
 import * as password from '../lib/password.ts';
 import * as limits from '../lib/rate_limit.ts';
+import { confirmChange } from '../lib/second_step.ts';
 import * as session from '../lib/session.ts';
-import User, { PREFERENCES, type Preferences } from '../models/user.ts';
+import User, { mfaOn, PREFERENCES, type Preferences } from '../models/user.ts';
 import { say } from '../lib/messages.ts';
 
 const userRouter = express.Router();
@@ -33,17 +36,19 @@ const tokenFilter = (req: Request, res: Response, next: NextFunction) => {
   return next();
 };
 
-userRouter.get('/verify', tokenFilter, jwtAuth, (req, res) => {
+userRouter.get('/verify', tokenFilter, jwtAuth, async (req, res) => {
   const user = userOf(req);
   // A trial's placeholder email stays on the server; the app shows its name.
   const identity = { ...say('verified'), id: user.id as string, name: user.displayname };
-  res
-    .status(200)
-    .json(
-      user.guest
-        ? { ...identity, guest: true, expiresAt: user.expiresAt }
-        : { ...identity, email: user.email, ...(user.emailUnverified && { unverified: true }) }
-    );
+  if (user.guest) return res.status(200).json({ ...identity, guest: true, expiresAt: user.expiresAt });
+  // jwtAuth leaves the factors out, so whether two-step sign-in is on is read here.
+  const factors = await User.findById(user._id, { mfa: 1 });
+  return res.status(200).json({
+    ...identity,
+    email: user.email,
+    ...(user.emailUnverified && { unverified: true }),
+    ...(factors && mfaOn(factors) && { mfa: true })
+  });
 });
 
 // Choices about how the app shows things. Unlike the account's details below,
@@ -118,17 +123,27 @@ const selfOrAdmin = (req: Request, res: Response, next: NextFunction) => {
 // link sent to the new one is opened (routes/email_routes.ts), for admins too.
 const SETTABLE_FIELDS = ['displayname'];
 
-// Deleting your own account needs your current password (body.password), so a
-// stolen sign-in token alone cannot remove it. Admins acting on another account are exempt.
-const ownPasswordConfirmed = async (req: Request): Promise<boolean> => {
+// Deleting an account needs the current password of whoever is signed in
+// (body.password), and with two-step sign-in on a current factor as well
+// (decision 6), so a stolen sign-in token alone cannot remove it. An admin
+// deleting another account confirms with their own password and factor: an
+// admin's stolen session must not be able to delete anyone's account either
+// (the owner's decision of 2026-10-14). Resolves with the refusal, or null
+// when it may go ahead.
+const identityRefused = async (req: Request): Promise<{ status: 400 | 401 | 409 | 429; body: object } | null> => {
   const signedIn = userOf(req);
-  if (req.params.id !== String(signedIn._id)) return true;
-  // A trial has no password; its token alone can discard it.
-  if (signedIn.guest) return true;
+  // A trial has no password; its token alone can discard it (selfOrAdmin: only itself).
+  if (signedIn.guest) return null;
   const user = await User.findById(signedIn._id);
-  return password.matches(((req.body ?? {}) as { password?: unknown }).password, user?.password);
+  if (user && mfaOn(user)) {
+    const check = await confirmChange(req, req.body);
+    if (check.ok) return null;
+    return { status: check.status, body: say(check.code, check.params, check.field ? { field: check.field } : {}) };
+  }
+  if (await password.matches(((req.body ?? {}) as { password?: unknown }).password, user?.password)) return null;
+  // 400 rather than 401: the sign-in is fine, and a 401 would sign the user out.
+  return { status: 400, body: say('current-password-needed', undefined, { field: 'password' }) };
 };
-// 400 rather than 401: the sign-in is fine, and a 401 would sign the user out.
 
 // Trials change nothing here; they create an account (POST /api/guest/claim).
 userRouter.put(
@@ -152,8 +167,8 @@ userRouter.put(
 );
 
 userRouter.delete('/deleteuser/:id', jwtAuth, selfOrAdmin, limits.passwordCheck, express.json(), async (req, res) => {
-  if (!(await ownPasswordConfirmed(req)))
-    return res.status(400).json(say('current-password-needed', undefined, { field: 'password' }));
+  const refused = await identityRefused(req);
+  if (refused) return res.status(refused.status).json(refused.body);
   const id = req.params.id as string;
   const deleted = await deleteAccount(id);
   if (!deleted) return res.status(404).json(say('no-user'));

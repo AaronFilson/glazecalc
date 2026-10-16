@@ -1,3 +1,4 @@
+import * as limits from '../lib/rate_limit.ts';
 import User, { type UserDocument } from '../models/user.ts';
 import { api, expect, makeUser } from './support/app.ts';
 
@@ -62,7 +63,10 @@ describe('changing the email or deleting the account needs the current password'
 // Someone holding a stolen session could otherwise guess the password over and
 // over through these routes; the limit counts per account, from any address.
 describe('guessing the current password', () => {
-  beforeEach(() => {
+  beforeEach(async () => {
+    // Other files' tests may have used some of this address's email links and password changes.
+    await limits.emailLinks.resetKey('127.0.0.1');
+    await limits.changePassword.resetKey('127.0.0.1');
     process.env.RATE_LIMITS = 'on';
   });
   afterEach(() => {
@@ -111,5 +115,19 @@ describe('guessing the current password', () => {
       .set('Authorization', 'Bearer ' + other.token)
       .send({ displayname: 'Potter' });
     expect(ok).to.have.status(200);
+  });
+
+  it('does not count changes that go through against the address', async () => {
+    const statuses: number[] = [];
+    for (let i = 0; i < 12; i++) {
+      // A new account each time, so the per-account count never fills either.
+      const { token, password } = await makeUser();
+      const res = await api()
+        .put('/password')
+        .set('Authorization', 'Bearer ' + token)
+        .send({ current: password, password: 'a-new-password-' + i });
+      statuses.push(res.status);
+    }
+    expect(statuses).to.eql(Array(12).fill(200));
   });
 });

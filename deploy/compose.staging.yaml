@@ -1,0 +1,72 @@
+# Staging: a second copy of the app on the production instance, for testing a
+# branch in real browsers before it reaches production (docs/mfa-plan.md,
+# "Phase 2"). deploy/staging.sh runs it, by hand; nothing in CI touches it.
+#
+#   GLAZECALC_STAGING_TAG=staging-<sha> docker compose -f compose.staging.yaml up -d   (staging.sh does this)
+#
+# Its own Compose project (glazecalc-staging), so nothing here can stop,
+# replace or remove a production container, and production's deploy.sh
+# (--remove-orphans) never sees it. Only the app: it uses production's MongoDB
+# server, but its own database (glazecalc_staging) and its own user, who can
+# read and write that database and nothing else. nginx on the host serves
+# https://staging.glazecalcapp.com from 127.0.0.1:3001 (nginx/glazecalc-staging.conf).
+name: glazecalc-staging
+
+services:
+  app:
+    # The image tag is required: there is no "latest" staging build.
+    image: ghcr.io/aaronfilson/glazecalc:${GLAZECALC_STAGING_TAG:?Set GLAZECALC_STAGING_TAG (staging.sh does)}
+    restart: unless-stopped
+    # Small enough to leave running between test rounds on a 1 GB instance.
+    # Node's heap is capped (NODE_OPTIONS below): about 30 MB is in use at rest,
+    # under 90 MB at the peak of a load of every page, 8 at a time (2026-10-15;
+    # it failed at 48 MB). The whole process is about 120 to 220 MB. While idle
+    # the kernel may move it to the swap file, which leaves the memory to
+    # production. Above mem_limit the container is stopped and restarted; were
+    # the instance out of memory, the kernel would stop this app before
+    # production's app or MongoDB (oom_score_adj). Half a processor at most, so
+    # it cannot spend the instance's CPU credits.
+    mem_limit: 300m
+    oom_score_adj: 500
+    cpus: 0.5
+    # APP_SECRET, MONGODB_URI (user and database glazecalc_staging), MFA_KEY,
+    # MAIL_ALLOWLIST and the email settings, written by staging.sh from
+    # /glazecalc/staging/* in SSM Parameter Store (root-only file). Never
+    # production's app.env.
+    env_file: /opt/glazecalc/staging.env
+    environment:
+      NODE_ENV: production
+      PORT: 3000
+      NODE_OPTIONS: --max-old-space-size=96
+      # server/lib/site.ts: passkeys belong to this host and never appear on
+      # production; authenticator apps say "Glazecalc (staging)"; every page has
+      # a "Staging" banner and every mail subject says so; no search engine
+      # indexes it.
+      SITE_URL: https://staging.glazecalcapp.com
+      SITE_LABEL: staging
+      NOINDEX: '1'
+    ports:
+      - '127.0.0.1:3001:3000'
+    # Its own network (default: the way out to the mail server, and the port
+    # nginx uses), and production's `data` network, where production's MongoDB
+    # answers as "mongo" and nothing else is: production's app is not on it, so
+    # this app cannot reach it, nor pass it a made-up client address.
+    # MongoDB's port stays unpublished on the host.
+    networks:
+      - default
+      - data
+    logging:
+      driver: local
+      options:
+        max-size: 10m
+        max-file: '3'
+
+networks:
+  default:
+  # Made by production's stack (compose.prod.yaml, project glazecalc), internal
+  # and with only MongoDB on it. External: staging never creates or removes it.
+  # While staging runs, production's `docker compose down` cannot remove it
+  # either; staging.sh stop first.
+  data:
+    name: glazecalc_data
+    external: true

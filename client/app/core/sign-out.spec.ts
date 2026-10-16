@@ -65,6 +65,44 @@ describe('rejected sign-ins', () => {
     expect(navigate).not.toHaveBeenCalled();
   });
 
+  it('leaves a wrong second step or passkey to the sign-in page, and a trial on this browser goes on', async () => {
+    localStorage.clear();
+    localStorage.setItem('session', 'trial');
+    const expiresAt = new Date(Date.now() + 86_400_000).toISOString();
+    localStorage.setItem('trial', JSON.stringify({ name: 'Trial', expiresAt }));
+    TestBed.configureTestingModule({ providers: testProviders() });
+    auth = TestBed.inject(AuthService);
+    navigate = vi.spyOn(TestBed.inject(Router), 'navigateByUrl').mockResolvedValue(true);
+    expect(auth.trial()).not.toBeNull();
+
+    const finishing = auth.finishSignIn('pending-token', { code: '000000' }).catch((err) => err);
+    httpMock()
+      .expectOne(API + '/signin/second-step')
+      .flush({ code: 'code-wrong', msg: 'That code is not right.' }, unauthorized);
+    expect((await finishing).status).toBe(401);
+
+    const passkey = auth.signInWithPasskey({} as never).catch((err) => err);
+    httpMock()
+      .expectOne(API + '/signin/passkey')
+      .flush({ code: 'passkey-unknown', msg: 'unknown' }, unauthorized);
+    expect((await passkey).status).toBe(401);
+
+    expect(auth.hasSession()).toBe(true);
+    expect(auth.trial()).not.toBeNull();
+    expect(localStorage.getItem('session')).toBe('trial');
+    expect(navigate).not.toHaveBeenCalled();
+  });
+
+  it('still ends the session for a 401 from a route that only starts with /signin', async () => {
+    setup(true);
+    const result = get('/signinx');
+    httpMock()
+      .expectOne(API + '/signinx')
+      .flush({}, unauthorized);
+    await result;
+    expect(auth.hasSession()).toBe(false);
+  });
+
   it('does not leave public pages when the stored token is old', async () => {
     setup(true);
     const refreshing = auth.refresh();

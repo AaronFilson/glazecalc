@@ -3,7 +3,8 @@
 // links can never end up in a file, and every query is limited to the user.
 import type { Types } from 'mongoose';
 import { OWNED_KINDS } from './account_data.ts';
-import User from '../models/user.ts';
+import { left as recoveryCodesLeft } from './recovery_codes.ts';
+import User, { mfaOn, type UserFields } from '../models/user.ts';
 
 type Id = string | Types.ObjectId;
 type Row = Record<string, unknown>;
@@ -20,6 +21,25 @@ export const recordsOf = async (kind: string, userId: Id): Promise<Row[]> => {
   return found.map(({ ownedBy: _owner, __v: _version, ...record }: Row) => record);
 };
 
+/**
+ * How the account signs in, in names and dates only: never the authenticator
+ * secret, a passkey's public key or credential id, the user handle or a
+ * recovery code's hash.
+ */
+const signInOf = (user: Pick<UserFields, 'mfa'>): Row => {
+  const mfa = user.mfa;
+  const on = mfaOn(user);
+  return {
+    authenticatorApp: mfa?.totp ? { addedAt: mfa.totp.addedAt, lastUsedAt: mfa.totp.lastUsedAt } : null,
+    passkeys: (mfa?.passkeys ?? []).map((passkey) => ({
+      name: passkey.name,
+      addedAt: passkey.addedAt,
+      lastUsedAt: passkey.lastUsedAt
+    })),
+    recoveryCodes: { madeAt: on ? mfa?.recoveryMadeAt : undefined, left: on ? recoveryCodesLeft(user) : 0 }
+  };
+};
+
 /** The whole export: the account, its preferences and shelf, and every kind of record. */
 export const exportAccount = async (userId: Id, now = new Date()): Promise<Row | null> => {
   const user = await User.findById(userId, {
@@ -29,7 +49,9 @@ export const exportAccount = async (userId: Id, now = new Date()): Promise<Row |
     preferences: 1,
     shelf: 1,
     guest: 1,
-    expiresAt: 1
+    expiresAt: 1,
+    emailChangedAt: 1,
+    mfa: 1
   }).lean();
   if (!user) return null;
   const kinds = Object.keys(OWNED_KINDS);
@@ -42,11 +64,13 @@ export const exportAccount = async (userId: Id, now = new Date()): Promise<Row |
       id: String(user._id),
       // A trial's placeholder address means nothing to its owner.
       ...(user.guest ? { trial: true, expiresAt: user.expiresAt } : { email: user.email }),
+      ...(user.emailChangedAt && { emailChangedAt: user.emailChangedAt }),
       displayname: user.displayname,
       role: user.role
     },
     preferences: user.preferences ?? {},
     shelf: user.shelf ?? [],
+    signIn: signInOf(user),
     records: Object.fromEntries(kinds.map((kind, i) => [kind, lists[i]]))
   };
 };

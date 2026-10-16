@@ -3,6 +3,19 @@
 //
 //   POST /api/signup   { email, password }            { email }
 //   GET  /api/signin   Authorization: Basic email:pw  { email, kept }
+//                      or, with two-step sign-in on, no session and
+//                      { code: 'second-step', methods, pending, expiresAt, passkeyOptions? }
+//   POST /api/signin/second-step  { pending, code | recoveryCode | passkey }  { email, kept }
+//                      (a passkey that failed: 401 with new passkeyOptions for
+//                      the next try; another try still being checked: 409)
+//   POST /api/signin/passkey/options              { options }   (passkey-first)
+//   POST /api/signin/passkey      { response }     { email, kept }
+//
+// Two-step sign-in (docs/mfa-plan.md, item 9, decisions 1 and 2): the password
+// step answers with a short-lived signed `pending` token the page keeps in
+// memory (server/lib/second_step.ts), and only the second step starts the
+// session, merges a trial and honours "Keep me signed in". A passkey with user
+// verification, on its own, counts as both steps.
 //
 // Sign-up and sign-in last until the browser closes, unless the request has the
 // header X-Keep-Signed-In: 1 (server/lib/session.ts).
@@ -11,19 +24,25 @@
 //
 // A 400 about one of the fields sent names it, so the app can mark that field:
 // { msg, field: 'email' }. The same goes for the password and account routes.
-import express from 'express';
+import express, { type NextFunction, type Request, type Response } from 'express';
+import type { Types } from 'mongoose';
 import { mergeTrial } from '../lib/account_data.ts';
+import * as codeLock from '../lib/code_lock.ts';
 import * as emailLinks from '../lib/email_links.ts';
 import { notGuest } from '../lib/guest_limits.ts';
 import basicHTTP from '../lib/basic_http.ts';
 import * as email from '../lib/email.ts';
 import jwtAuth, { currentUser, userOf } from '../lib/jwt_auth.ts';
+import * as log from '../lib/log.ts';
 import { isDuplicateKey } from '../lib/mongo_errors.ts';
 import * as password from '../lib/password.ts';
 import * as limits from '../lib/rate_limit.ts';
+import * as secondStep from '../lib/second_step.ts';
 import * as session from '../lib/session.ts';
-import User from '../models/user.ts';
+import AuthChallenge from '../models/auth_challenge.ts';
+import User, { factorMethods, mfaOn, type UserDocument } from '../models/user.ts';
 import { say } from '../lib/messages.ts';
+import type { AuthenticationResponseJSON } from '../../lib/mfa.js';
 
 const authRouter = express.Router();
 export default authRouter;
@@ -59,7 +78,10 @@ authRouter.post('/signup', limits.signUp, express.json(), async (req, res) => {
   }
 });
 
-authRouter.get('/signin', limits.signIn, basicHTTP, async (req, res) => {
+// Two limits per address (server/lib/rate_limit.ts): limits.signIn counts the
+// refused tries only, so people signing in behind one shared address do not
+// use up each other's; limits.signInAny, much looser, counts every try.
+authRouter.get('/signin', limits.signInAny, limits.signIn, basicHTTP, async (req, res) => {
   const credentials = req.basicHTTP!;
   const user = await User.findOne({ email: email.normalize(credentials.email) }).collation(email.collation);
   // Trials have no password of their own; their token is the only way in. Checking
@@ -70,11 +92,194 @@ authRouter.get('/signin', limits.signIn, basicHTTP, async (req, res) => {
       : await password.matchesNothing(credentials.password);
   if (!ok || !user) return res.status(401).json(say('sign-in-failed'));
 
-  // A trial on this browser comes along: what was made in it moves into the account.
   const trial = await currentUser(req);
-  const kept = trial?.guest ? await mergeTrial(trial._id, user._id) : 0;
-  session.start(res, user, 7, session.wantsKept(req));
+  const keep = session.wantsKept(req);
+  if (mfaOn(user)) {
+    // No session yet: the second step finishes the sign-in, with what is noted here.
+    const methods = factorMethods(user);
+    const passkeyOptions = methods.passkey
+      ? await secondStep.checks.authenticationOptions(user.mfa!.passkeys, 'preferred')
+      : undefined;
+    const { token, expiresAt } = await secondStep.begin(user, {
+      keep,
+      ...(trial?.guest && { trialId: trial._id }),
+      ...(passkeyOptions && { passkeyChallenge: passkeyOptions.challenge })
+    });
+    return res.status(200).json(
+      say('second-step', undefined, {
+        methods,
+        pending: token,
+        expiresAt: expiresAt.toISOString(),
+        ...(passkeyOptions && { passkeyOptions })
+      })
+    );
+  }
+  return signedIn(res, user, trial?.guest ? trial._id : undefined, keep);
+});
+
+/**
+ * Finishes a sign-in: a trial on this browser comes along (what was made in it
+ * moves into the account), and the session starts.
+ */
+const signedIn = async (res: Response, user: UserDocument, trialId: Types.ObjectId | undefined, keep: boolean) => {
+  // Only while it is still a trial: it may have been claimed or swept since.
+  const trial = trialId ? await User.exists({ _id: trialId, guest: true }) : null;
+  const kept = trial ? await mergeTrial(trial._id, user._id) : 0;
+  session.start(res, user, 7, keep);
   return res.status(200).json(say('signed-in', undefined, { email: user.email, kept }));
+};
+
+/** The one factor a second step sends, without the pending token. */
+const proofIn = (body: Record<string, unknown>): Record<string, unknown> => {
+  const proof: Record<string, unknown> = {};
+  for (const key of ['code', 'recoveryCode', 'passkey']) if (body[key] !== undefined) proof[key] = body[key];
+  return proof;
+};
+
+// The second step. The pending sign-in is loaded first, so the per-address
+// limit counts only requests that carry a pending sign-in: one that does not
+// load counts against a looser limit of its own (limits.secondStepUnloaded),
+// so junk from one person at a shared address cannot stop the others there.
+authRouter.post(
+  '/signin/second-step',
+  express.json(),
+  async (req, res, next) => {
+    const body = (req.body ?? {}) as Record<string, unknown>;
+    res.locals.secondStep = await secondStep.load(body.pending);
+    next();
+  },
+  limits.secondStepUnloaded,
+  (req: Request, res: Response, next: NextFunction) => {
+    const loaded = res.locals.secondStep as Awaited<ReturnType<typeof secondStep.load>>;
+    if (!loaded.ok) return res.status(401).json(say(loaded.code));
+    req.mfaUserId = String(loaded.user._id);
+    return next();
+  },
+  limits.secondStep,
+  async (req: Request, res: Response) => {
+    const { pending, user } = res.locals.secondStep as { pending: secondStep.PendingSignIn; user: UserDocument };
+    const proof = proofIn((req.body ?? {}) as Record<string, unknown>);
+    const passkeyTry = proof.passkey !== undefined;
+    // Each try is counted, and holds the pending sign-in, before its factor is
+    // checked: a right code is used up only for a sign-in that finishes, and of
+    // two right answers racing, only one is checked and signs in.
+    const reserved = await secondStep.reserve(pending, { passkey: passkeyTry });
+    if (!reserved.ok) return res.status(reserved.code === 'second-step-busy' ? 409 : 401).json(say(reserved.code));
+    const { hold } = reserved;
+    // Whatever happens below, the hold is let go (or ended by finish): a
+    // thrown error must not leave the pending sign-in held for HOLD_SECONDS
+    // with its passkey challenge gone.
+    let settled = false;
+    try {
+      // A code from the authenticator app is counted against the account too,
+      // before it is checked, and refused while a round's refusal lasts
+      // (server/lib/code_lock.ts). A recovery code or a passkey still works,
+      // on this same pending sign-in: a refused code does not use one of its
+      // tries, nor does the wrong code that sets the refusal off, so it never
+      // ends with the message saying a recovery code works but no try left.
+      let codeTry: codeLock.CodeTry | undefined;
+      if (codeLock.isCodeTry(proof)) {
+        const taken = await codeLock.take(user._id);
+        if (!taken.ok) {
+          await secondStep.release(pending, hold, undefined, { uncount: true });
+          settled = true;
+          if (taken.code === 'second-step-busy') return res.status(409).json(say(taken.code));
+          return res.status(429).json(say(taken.code, taken.params));
+        }
+        codeTry = taken.codeTry;
+      }
+      const check = await secondStep.checks.checkFactor(user, proof, {
+        ...(hold.challenge && { passkeyChallenge: hold.challenge })
+      });
+      if (codeTry && check.ok) await codeLock.right(codeTry);
+      if (!check.ok && codeTry?.locked) {
+        // The last wrong code of a round: the owner hears that someone has the password.
+        await secondStep.release(pending, hold, undefined, { uncount: true });
+        settled = true;
+        void secondStep.noticeUnfinished(user._id);
+        return res.status(429).json(say('second-step-account-limit', codeTry.locked));
+      }
+      if (!check.ok) {
+        // The last try used up: the password again, and the owner hears that
+        // someone has it (at most once a day).
+        if (secondStep.triesUsed(pending)) {
+          await secondStep.release(pending, hold);
+          settled = true;
+          void secondStep.noticeUnfinished(user._id);
+          return res.status(401).json(say('second-step-tries'));
+        }
+        // A passkey try took the challenge: the next try answers a new one.
+        const passkeyOptions =
+          passkeyTry && user.mfa?.passkeys?.length
+            ? await secondStep.checks.authenticationOptions(user.mfa.passkeys, 'preferred')
+            : undefined;
+        await secondStep.release(pending, hold, passkeyOptions?.challenge);
+        settled = true;
+        return res
+          .status(check.code === 'factor-needed' || check.code === 'code-needed' ? 400 : 401)
+          .json(say(check.code, undefined, passkeyOptions ? { passkeyOptions } : {}));
+      }
+      const finished = await secondStep.finish(pending, hold);
+      settled = true;
+      if (!finished) return res.status(401).json(say('second-step-expired'));
+    } finally {
+      if (!settled) {
+        await secondStep.release(pending, hold).catch((err: unknown) => {
+          log.error('Could not let go of a pending sign-in', { code: log.codeOf(err) });
+        });
+      }
+    }
+    // The pending sign-in is used: a failure from here on needs the password again.
+    try {
+      await secondStep.cancelClearRequest(user._id);
+      return await signedIn(res, user, pending.trialId, pending.keep);
+    } catch (err) {
+      log.error('A second step was right, but the sign-in could not be finished', { code: log.codeOf(err) });
+      throw err;
+    }
+  }
+);
+
+// Passkey-first sign-in (decision 1, item 17): any discoverable passkey for
+// this site, with user verification, counts as both steps. Passkey autofill
+// uses the same two routes. The options have a lighter limit of their own
+// (limits.passkeyOptions): the page asks for them on every sign-in page load
+// where autofill works, they start no session, and an unused challenge expires.
+// The sign-in itself has its own limit too (limits.passkeySignIn, refusals
+// only), so password guessing from a shared address does not stop it.
+const PASSKEY_SIGNIN_MINUTES = 5;
+
+authRouter.post('/signin/passkey/options', limits.passkeyOptions, async (req, res) => {
+  const options = await secondStep.checks.authenticationOptions(null, 'required');
+  await AuthChallenge.create({
+    kind: 'passkey-signin',
+    challenge: options.challenge,
+    expiresAt: new Date(Date.now() + PASSKEY_SIGNIN_MINUTES * 60 * 1000)
+  });
+  res.status(200).json({ options });
+});
+
+authRouter.post('/signin/passkey', limits.passkeySignIn, express.json(), async (req, res) => {
+  const response = ((req.body ?? {}) as { response?: unknown }).response;
+  if (!response || typeof response !== 'object') return res.status(401).json(say('passkey-failed'));
+  const assertion = response as AuthenticationResponseJSON;
+  const challenge = secondStep.checks.challengeOf(assertion);
+  if (!challenge) return res.status(401).json(say('passkey-failed'));
+  // The challenge is taken once, whatever comes of the check.
+  const now = new Date();
+  const taken = await AuthChallenge.findOneAndUpdate(
+    { challenge, kind: 'passkey-signin', usedAt: null, expiresAt: { $gt: now } },
+    { $set: { usedAt: now } }
+  );
+  if (!taken) return res.status(401).json(say('passkey-failed'));
+  const user = await secondStep.checks.accountOf(assertion);
+  if (!user || user.guest) return res.status(401).json(say('passkey-unknown'));
+  if (!(await secondStep.checks.verifyAuthentication(user, assertion, challenge, true))) {
+    return res.status(401).json(say('passkey-failed'));
+  }
+  await secondStep.cancelClearRequest(user._id);
+  const trial = await currentUser(req);
+  return signedIn(res, user, trial?.guest ? trial._id : undefined, session.wantsKept(req));
 });
 
 authRouter.post('/signout', (req, res) => {

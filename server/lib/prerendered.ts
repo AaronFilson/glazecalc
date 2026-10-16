@@ -1,22 +1,23 @@
-// The pages the build rendered ahead of time (scripts/prerender.mjs), kept in
-// memory: a few MB for 264 pages. They are in their own folder, outside the
-// client's, so express.static never sends one without its head and nonce.
-import { readdir, readFile } from 'node:fs/promises';
+// The pages the build rendered ahead of time (scripts/prerender.mjs), read from
+// disk for each reply, as index.html is. Kept in memory they would take about
+// 100 MB of Node's heap (49 MB of files, 286 pages, most of it the state each
+// page hands the browser; text outside Latin-1 takes two bytes a letter in
+// JavaScript), on a 1 GB instance; read when asked for, the kernel keeps the
+// ones in use in its file cache and gives that memory back when it is needed.
+// They are in their own folder, outside the client's, so express.static never
+// sends one without its head and nonce.
+import { readFile } from 'node:fs/promises';
 import path from 'node:path';
 
-/** The files under a folder as text, by their path from it with slashes: de/guides/firing.html. Empty where there is no folder. */
-export async function loadPrerendered(folder: string): Promise<Map<string, string>> {
-  const pages = new Map<string, string>();
-  let names: string[];
+/**
+ * One page as text, by its path from the folder with slashes (de/guides/firing.html, from
+ * prerenderedKey, never a path from the request), or undefined where there is none.
+ */
+export async function readPrerendered(folder: string, key: string): Promise<string | undefined> {
   try {
-    names = await readdir(folder, { recursive: true });
-  } catch {
-    return pages;
+    return await readFile(path.join(folder, ...key.split('/')), 'utf8');
+  } catch (err) {
+    if ((err as NodeJS.ErrnoException).code === 'ENOENT') return undefined;
+    throw err;
   }
-  await Promise.all(
-    names
-      .filter((name) => name.endsWith('.html'))
-      .map(async (name) => pages.set(name.split(path.sep).join('/'), await readFile(path.join(folder, name), 'utf8')))
-  );
-  return pages;
 }

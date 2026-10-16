@@ -6,6 +6,26 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Added
 
+- **Two-step sign-in**, optional, on the account page ([ADR 0014](docs/adr/0014-two-step-sign-in.md),
+  [plan](docs/mfa-plan.md)). An authenticator app (a QR code or a key to type), passkeys (named,
+  renamed and removed, up to ten) and ten recovery codes, shown once. Signing in then takes the
+  password and a second step; a passkey alone signs in too, from its button or the email field's
+  suggestions. Every change asks for the password and, once two-step sign-in is on, a second step,
+  and signs out other devices. It needs a confirmed email, and trials don't have it. Emails tell
+  the account when a step is added or removed, when a recovery code is used, when new codes are
+  made and when two-step sign-in turns off. Someone who has lost every step and code can ask the
+  owner to turn it off after seven days ([data requests](docs/data-requests.md)); signing in or
+  confirming a change with any step cancels such a request. Authenticator keys are encrypted with
+  a key of their own (`MFA_KEY`), and recovery codes are kept only as keyed hashes.
+- **Ready for a staging copy:** `SITE_URL`, `SITE_LABEL`, `NOINDEX` and `MAIL_ALLOWLIST` set,
+  from the environment alone, the address passkeys belong to, a "Staging" label, no indexing and
+  mail to the owner only.
+- **A staging copy on the production instance**, deployed by hand for testing a branch in real
+  browsers: `scripts/build-staging.sh` builds any commit on the owner's PC for arm64 and pushes it
+  (or uploads it to S3); `deploy/staging.sh` runs it at staging.glazecalcapp.com on port 3001 in
+  its own Compose project, with its own MongoDB database and user, secrets and mail allowlist, and
+  can stop it, empty its database and report on it; `enable-https.sh --with-staging` adds the name
+  to the certificate and nginx. The owner's one-time steps are in deploy/README.md, "Staging".
 - **Pages that search engines and link previews can read.** The public pages (home, guides,
   advice, about, privacy, sign-up) are drawn to plain HTML when the app is built, in every
   language, so the text is there before any script runs; the app then takes the page over in
@@ -332,6 +352,14 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Changed
 
+- **The session cookie is `__Host-glazecalc_session` in production, and the older
+  `glazecalc_session` is no longer read there**, so a cookie set for the whole domain by a
+  subdomain or a network faking one cannot sign a browser into someone else's account. Everyone
+  signed in signs in once more after this release; the older cookie is cleared, as the site set
+  it and as set for the site's domain, whenever a session is set or ended.
+- **The Docker image's dependency and client build stages run on the build machine's own platform**
+  (`--platform=$BUILDPLATFORM`), so a cross build for arm64 needs no emulation for the Angular
+  build. CI builds each platform natively, so its images are the same as before.
 - **Lora, served with the app**, for every heading and paragraph, with Noto Serif for what Lora lacks
   (Greek, and the subscripts of formulas such as SiO₂). A page now lays out the same on every device
   instead of in each one's own font, and the browser tests measure what people see.

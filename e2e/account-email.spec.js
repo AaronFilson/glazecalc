@@ -10,7 +10,7 @@ const signInOnPage = async (page, email, password, keep = false) => {
   await page.locator('#email').fill(email);
   await page.locator('#password').fill(password);
   if (keep) await page.getByLabel('Keep me signed in on this device').check();
-  await page.getByRole('button', { name: 'Sign in' }).click();
+  await page.getByRole('button', { name: 'Sign in', exact: true }).click();
   await expect(page).toHaveURL(/\/home$/);
 };
 

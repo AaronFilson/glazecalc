@@ -103,7 +103,6 @@
     "keptInbound": "<b>Laiškai, kuriuos siunčiate Glazecalc:</b> 30 dienų Amazon saugykloje, o savininko pašto dėžutėje – tiek, kiek reikia jums atsakyti. Jei prašymas susijęs su jūsų duomenimis, trumpas įrašas (kada jis gautas, ko prašyta ir kas padaryta) saugomas trejus metus.",
     "rightsHeading": "Jūsų teisės",
     "rightsIntro": "Galite peržiūrėti, ištaisyti, pasiimti ir panaikinti savo duomenis. Daugumą to galite atlikti patys <account>paskyros puslapyje</account>:",
-    "rightsExport": "<b>Peržiūrėti ir pasiimti:</b> skiltyje Mano duomenų atsisiuntimas viskas įrašoma į vieną failą (JSON), o jūsų receptai ir žaliavos – į lenteles (CSV).",
     "rightsCorrect": "<b>Ištaisyti:</b> nustatymus ir įrašus galite keisti bet kada. Norėdami pakeisti el. pašto adresą, atidarykite nuorodą, išsiųstą naujuoju adresu; senuoju adresu, jei jis buvo patvirtintas, pranešama apie pakeitimą, o visi įrenginiai atjungiami.",
     "rightsDelete": "<b>Panaikinti:</b> mygtukas Panaikinti paskyrą iš karto pašalina jūsų paskyrą ir viską, ką įrašėte, o mygtukas Atsisakyti bandomojo laikotarpio tą patį daro su bandomuoju laikotarpiu. Atsarginėse kopijose esančios kopijos išnyksta per 30 dienų.",
     "rightsSignOut": "<b>Atsijungimas visuose įrenginiuose:</b> nutraukiami jūsų paskyros seansai visuose įrenginiuose.",

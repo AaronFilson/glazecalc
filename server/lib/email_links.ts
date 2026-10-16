@@ -29,6 +29,8 @@ export async function makeLink(user: UserDocument, kind: 'verify' | 'change', ad
     kind,
     email: address,
     tokenHash: hashToken(token),
+    // A change of address works only while the account's tokenVersion stays this.
+    ...(kind === 'change' && { tokenVersion: user.tokenVersion || 0 }),
     expiresAt: new Date(Date.now() + LINK_HOURS * HOUR)
   });
   return token;

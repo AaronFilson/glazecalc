@@ -88,6 +88,12 @@ jobs:
     timeout-minutes: 15
     env:
       APP_SECRET: ci-only-secret
+      # The app runs as production, which needs a key for two-step sign-in's
+      # secrets (server/lib/mfa_key.ts). This is compose.yaml's fixed TEST key,
+      # public and not secret (the base64 of "glazecalc-compose-test-key-32byt"),
+      # set here so the job never depends on that default. The live site's key
+      # is in SSM (/glazecalc/mfa-key).
+      MFA_KEY: Z2xhemVjYWxjLWNvbXBvc2UtdGVzdC1rZXktMzJieXQ=
       # compose.yaml passes these to the app: emails go to its log, linking here.
       MAIL_TRANSPORT: log
       APP_URL: http://ci.example
@@ -106,11 +112,12 @@ jobs:
           curl -fsS http://127.0.0.1:3000/ | grep -q '<title>Glazecalc'
           # The app's own pages come from the client too: /reset is where reset emails link.
           curl -fsS http://127.0.0.1:3000/reset | grep -q '<title>Glazecalc'
-          # Sign up, then use the session it sets. The cookie is Secure in production
-          # and this check runs over plain HTTP, so its token goes in a Bearer header.
+          # Sign up, then use the session it sets: __Host-glazecalc_session in production
+          # (the reply also clears the older glazecalc_session, empty). The cookie is
+          # Secure and this check runs over plain HTTP, so its token goes in a Bearer header.
           curl -fsS -D signup-headers.txt -o /dev/null -X POST -H 'Content-Type: application/json' \
             -d '{"email":"ci-check@test.com","password":"password123"}' http://127.0.0.1:3000/api/signup
-          token=$(sed -nE 's/^[Ss]et-[Cc]ookie: glazecalc_session=([^;]+).*/\1/p' signup-headers.txt)
+          token=$(sed -nE 's/^[Ss]et-[Cc]ookie: __Host-glazecalc_session=([^;]+).*/\1/p' signup-headers.txt)
           curl -fsS -H "Authorization: Bearer $token" http://127.0.0.1:3000/api/verify |
             jq -e '.email == "ci-check@test.com"'
           count=$(curl -fsS http://127.0.0.1:3000/api/materials/getStandard | jq length)

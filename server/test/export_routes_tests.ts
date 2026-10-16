@@ -1,3 +1,5 @@
+import * as mfaKey from '../lib/mfa_key.ts';
+import * as recoveryCodes from '../lib/recovery_codes.ts';
 import Material from '../models/material.ts';
 import Note from '../models/note.ts';
 import PasswordReset from '../models/password_reset.ts';
@@ -109,6 +111,58 @@ describe('export API', () => {
     const { body } = await get('/export', bob.token);
     expect(body.preferences).to.eql({});
     expect(body.shelf).to.eql([]);
+    expect(body.signIn).to.eql({ authenticatorApp: null, passkeys: [], recoveryCodes: { left: 0 } });
+  });
+
+  it('says how the account signs in, in names and dates, never a secret, key, id or hash', async () => {
+    const added = new Date('2026-10-01T10:00:00Z');
+    const used = new Date('2026-10-02T11:00:00Z');
+    const made = recoveryCodes.make();
+    made.stored[0]!.usedAt = used;
+    const secret = mfaKey.encrypt('JBSWY3DPEHPK3PXPJBSWY3DPEHPK3PXP', String(alice.user._id));
+    await User.updateOne(
+      { _id: alice.user._id },
+      {
+        $set: {
+          mfa: {
+            handle: 'aGFuZGxlLW9mLWFsaWNlLTE',
+            totp: { secret, lastStep: 123, addedAt: added, lastUsedAt: used },
+            passkeys: [
+              {
+                credentialId: 'Y3JlZGVudGlhbC1pZC1vZi1hbGljZQ',
+                publicKey: Buffer.from('public-key-of-alice'),
+                counter: 7,
+                transports: ['internal'],
+                deviceType: 'multiDevice',
+                backedUp: true,
+                name: 'Studio laptop',
+                addedAt: added
+              }
+            ],
+            recoveryCodes: made.stored,
+            recoveryMadeAt: added
+          }
+        }
+      }
+    );
+    const res = await get('/export', alice.token);
+    expect(res.body.signIn).to.eql({
+      authenticatorApp: { addedAt: added.toISOString(), lastUsedAt: used.toISOString() },
+      passkeys: [{ name: 'Studio laptop', addedAt: added.toISOString() }],
+      recoveryCodes: { madeAt: added.toISOString(), left: 9 }
+    });
+    const raw = text(res);
+    for (const hidden of [
+      secret,
+      'JBSWY3DP',
+      'aGFuZGxlLW9mLWFsaWNlLTE',
+      'Y3JlZGVudGlhbC1pZC1vZi1hbGljZQ',
+      Buffer.from('public-key-of-alice').toString('base64'),
+      made.stored[1]!.hash
+    ]) {
+      expect(raw).to.not.include(hidden);
+    }
+    expect(raw).to.not.match(/"(secret|publicKey|credentialId|handle|hash|lastStep|counter)"/);
   });
 
   it('writes recipes as CSV, a row for each ingredient', async () => {

@@ -14,3 +14,7 @@ process.env.MAIL_DIR = path.join(os.tmpdir(), 'glazecalc-test-mail-' + process.p
 process.env.APP_URL = 'https://glazecalc.test';
 // The tests cause errors on purpose; LOG_LEVEL=debug shows the server's log.
 process.env.LOG_LEVEL = process.env.TEST_LOG_LEVEL || 'silent';
+// A fixed key for two-step sign-in's secrets (server/lib/mfa_key.ts), so the
+// tests never depend on the development key or its warning. Test use only:
+// it is the base64 of "glazecalc-unit-test-mfa-key-32by".
+process.env.MFA_KEY = process.env.TEST_MFA_KEY || 'Z2xhemVjYWxjLXVuaXQtdGVzdC1tZmEta2V5LTMyYnk=';

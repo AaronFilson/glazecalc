@@ -12,6 +12,10 @@ const emailTokenSchema = new mongoose.Schema(
     kind: { type: String, enum: ['verify', 'change'], required: true },
     email: { type: String, required: true },
     tokenHash: { type: String, required: true, unique: true },
+    // 'change': the account's tokenVersion when the link was asked for. The
+    // link stops working once it changes (a password change, signing out
+    // everywhere, a change to two-step sign-in).
+    tokenVersion: Number,
     expiresAt: { type: Date, required: true },
     usedAt: Date
   },

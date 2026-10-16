@@ -103,7 +103,6 @@
     "keptInbound": "<b>Pošta, ki jo pošljete aplikaciji Glazecalc:</b> 30 dni v Amazonovi shrambi, v lastnikovem poštnem predalu pa toliko časa, kolikor je potrebno, da vam odgovori. Pri zahtevi glede vaših podatkov se kratek zapis (kdaj je prispela, kaj je bilo zahtevano in kaj je bilo storjeno) hrani tri leta.",
     "rightsHeading": "Vaše pravice",
     "rightsIntro": "Svoje podatke lahko vidite, popravite, prenesete in izbrišete. Večino tega lahko naredite sami na <account>strani računa</account>:",
-    "rightsExport": "<b>Vpogled in prenos:</b> »Prenos mojih podatkov« shrani vse v eno datoteko (JSON), vaše recepte in surovine pa kot preglednice (CSV).",
     "rightsCorrect": "<b>Popravek:</b> nastavitve in zapise lahko kadar koli spremenite. Če želite spremeniti e-poštni naslov, odprite povezavo, poslano na novi naslov; stari naslov, če je bil potrjen, prejme obvestilo o spremembi, vse naprave pa so odjavljene.",
     "rightsDelete": "<b>Izbris:</b> »Izbriši moj račun« takoj odstrani vaš račun in vse, kar ste shranili, »Zavrzi preizkus« pa enako stori za preizkus. Kopije v varnostnih kopijah izginejo v 30 dneh.",
     "rightsSignOut": "<b>Odjava na vseh napravah:</b> konča seje vašega računa na vseh napravah.",

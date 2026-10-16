@@ -103,7 +103,6 @@
     "keptInbound": "<b>Pošta, ktorú posielate na adresy Glazecalc:</b> 30 dní v úložisku Amazonu a vo vlastníkovej schránke tak dlho, ako trvá vám odpovedať. Pri žiadosti týkajúcej sa vašich údajov sa krátka poznámka (kedy prišla, o čo sa žiadalo a čo sa urobilo) uchováva tri roky.",
     "rightsHeading": "Vaše práva",
     "rightsIntro": "Svoje údaje môžete vidieť, opraviť, vziať si ich a odstrániť. Väčšinu z toho môžete urobiť sami na <account>stránke účtu</account>:",
-    "rightsExport": "<b>Vidieť ich a vziať si ich so sebou:</b> funkcia Stiahnutie mojich údajov uloží všetko do jedného súboru (JSON) a vaše recepty a suroviny ako tabuľky (CSV).",
     "rightsCorrect": "<b>Opraviť ich:</b> nastavenia a záznamy môžete kedykoľvek zmeniť. Ak chcete zmeniť e-mailovú adresu, otvorte odkaz poslaný na novú adresu; stará adresa, ak bola potvrdená, dostane o zmene oznámenie a všetky zariadenia sa odhlásia.",
     "rightsDelete": "<b>Odstrániť ich:</b> tlačidlo Zrušiť môj účet naraz odstráni váš účet a všetko, čo ste uložili, a tlačidlo Zahodiť skúšobný prístup urobí to isté so skúšobným prístupom. Kópie v zálohách zmiznú do 30 dní.",
     "rightsSignOut": "<b>Odhlásiť sa všade:</b> ukončí relácie vášho účtu na každom zariadení.",

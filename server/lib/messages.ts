@@ -55,6 +55,40 @@ export const MESSAGES = {
   'already-verified': 'Your email is already confirmed.',
   'reset-link-bad': 'This reset link is not valid or has expired. Please ask for a new one.',
 
+  // Two-step sign-in (docs/mfa-plan.md): signing in.
+  'second-step': 'This account uses two-step sign-in. Please finish signing in with your second step.',
+  'second-step-expired': 'Signing in took too long. Please enter your password again.',
+  'second-step-tries': 'Too many wrong codes. Please enter your password again.',
+  'second-step-busy': 'Your last try is still being checked. Please wait a moment and try again.',
+  'second-step-account-limit':
+    'Too many wrong codes from an authenticator app have been entered for this account, so codes are refused for up to {wait, select, hour {an hour} day {a day} other {a week}}. A passkey or a recovery code still works. If you did not enter them, someone knows your password: reset it by email from the sign-in page, which also ends this.',
+  'code-needed': 'Please enter the 6-digit code from your authenticator app.',
+  'code-wrong':
+    "That code is not correct. Please check your authenticator app and try again. If every code is wrong, the phone's clock may be off: set its date and time automatically.",
+  'recovery-code-wrong': 'That recovery code is not correct, or it has already been used.',
+  'passkey-failed': 'The passkey could not be checked. Please try again, or use another way to sign in.',
+  'passkey-unknown': 'This passkey does not belong to any Glazecalc account. It may have been removed.',
+
+  // Two-step sign-in: setting it up on the account page.
+  'mfa-needs-confirmed-email': 'Please confirm your email before turning on two-step sign-in.',
+  'factor-needed':
+    'Please also confirm it is you with a code from your authenticator app, a passkey or a recovery code.',
+  'mfa-start-again': 'That took too long. Please start again.',
+  'totp-exists': 'An authenticator app is already set up. Remove it first to set up another.',
+  'totp-none': 'No authenticator app is set up.',
+  'totp-added': 'Your authenticator app is set up.',
+  'totp-removed': 'The authenticator app was removed.',
+  'passkey-added': 'The passkey was added.',
+  'passkey-renamed': 'The passkey was renamed.',
+  'passkey-removed': 'The passkey was removed.',
+  'passkey-not-found': 'No passkey with that id.',
+  'passkey-name': (p: Params) => 'Please give the passkey a name of 1 to ' + p.most + ' characters.',
+  'passkey-limit': (p: Params) =>
+    'An account can have up to ' + p.most + ' passkeys. Please remove one before adding another.',
+  'recovery-codes-made': 'New recovery codes are ready. The old ones no longer work.',
+  'mfa-off': 'Two-step sign-in is off, and your recovery codes no longer work.',
+  'mfa-not-on': 'Two-step sign-in is not on, so there are no recovery codes to make. Set up a second step first.',
+
   // Trials.
   'trials-full': 'Too many people are trying Glazecalc right now. Please create a free account instead.',
   'trial-failed': 'Could not start a trial just now. Please try again.',
@@ -105,7 +139,8 @@ export const MESSAGES = {
   'too-many-trials': 'Too many trials from this address. Please try again later, or create a free account.',
   'too-many-resets': 'Too many password reset requests. ' + WAIT,
   'too-many-email-links': 'Too many emails requested. ' + WAIT,
-  'too-many-attempts': 'Too many attempts. ' + WAIT
+  'too-many-attempts': 'Too many attempts. ' + WAIT,
+  'too-many-codes': 'Too many codes tried. ' + WAIT
 } satisfies Record<string, Text>;
 
 export type MessageCode = keyof typeof MESSAGES;

@@ -22,7 +22,12 @@ const LINKS = {
 
 /** Kept on the visitor's device: one row per purpose, with every name the code uses for it. */
 export const STORED: ReadonlyArray<{ names: string[]; kind: string; key: string }> = [
-  { names: ['glazecalc_session'], kind: marker('site.privacy.storageCookie'), key: 'cookie' }, // server/lib/session.ts
+  // server/lib/session.ts: the first name on the site, the second in development (on the site before October 2026; now only cleared there).
+  {
+    names: ['__Host-glazecalc_session', 'glazecalc_session'],
+    kind: marker('site.privacy.storageCookie'),
+    key: 'cookie'
+  },
   // client/app/core/auth.service.ts
   { names: ['session'], kind: marker('site.privacy.storageLocal'), key: 'session' },
   { names: ['trial'], kind: marker('site.privacy.storageLocal'), key: 'trial' },
@@ -229,6 +234,8 @@ export class PrivacyPage {
   protected readonly storedOnDevice = STORED;
   protected readonly stored = marker([
     'site.privacy.storedAccount',
+    'site.privacy.storedEmailChange',
+    'site.privacy.storedSignIn',
     'site.privacy.storedSaved',
     'site.privacy.storedTrial',
     'site.privacy.storedResets',
@@ -241,6 +248,7 @@ export class PrivacyPage {
     'site.privacy.keptAccount',
     'site.privacy.keptTrial',
     'site.privacy.keptResets',
+    'site.privacy.keptSignIn',
     'site.privacy.keptBackups',
     'site.privacy.keptDeletions',
     'site.privacy.keptLogs',

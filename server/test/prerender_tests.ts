@@ -11,7 +11,7 @@ import {
   urlFor,
   withFontPreloads
 } from '../../scripts/prerender.mjs';
-import { loadPrerendered } from '../lib/prerendered.ts';
+import { readPrerendered } from '../lib/prerendered.ts';
 import { expect } from './support/app.ts';
 
 // The build's prerender (scripts/prerender.mjs) fails on a page that is not
@@ -129,22 +129,26 @@ describe('font preloads', () => {
 });
 
 describe('prerendered files', () => {
-  it('are read by their path from the folder, with slashes, and ignore other files', async () => {
+  it('are read by their path from the folder, with slashes, each time', async () => {
     const folder = fs.mkdtempSync(path.join(os.tmpdir(), 'prerendered-'));
     try {
       fs.mkdirSync(path.join(folder, 'de', 'guides'), { recursive: true });
       fs.writeFileSync(path.join(folder, 'de', 'index.html'), 'home');
-      fs.writeFileSync(path.join(folder, 'de', 'guides', 'firing.html'), 'firing');
-      fs.writeFileSync(path.join(folder, 'de', 'notes.txt'), 'no');
-      const pages = await loadPrerendered(folder);
-      expect([...pages.keys()].sort()).to.eql(['de/guides/firing.html', 'de/index.html']);
-      expect(pages.get('de/guides/firing.html')).to.equal('firing');
+      fs.writeFileSync(path.join(folder, 'de', 'guides', 'firing.html'), 'Brennen – ελληνικά');
+      expect(await readPrerendered(folder, 'de/index.html')).to.equal('home');
+      expect(await readPrerendered(folder, 'de/guides/firing.html')).to.equal('Brennen – ελληνικά');
+      expect(await readPrerendered(folder, 'de/guides/glazes.html')).to.equal(undefined);
+      // A new build's file is sent from the next reply on: nothing is kept.
+      fs.writeFileSync(path.join(folder, 'de', 'index.html'), 'home, rebuilt');
+      expect(await readPrerendered(folder, 'de/index.html')).to.equal('home, rebuilt');
     } finally {
       fs.rmSync(folder, { recursive: true, force: true });
     }
   });
 
   it('are none where the folder is missing', async () => {
-    expect((await loadPrerendered(path.join(os.tmpdir(), 'no-such-prerendered-folder'))).size).to.equal(0);
+    expect(await readPrerendered(path.join(os.tmpdir(), 'no-such-prerendered-folder'), 'de/index.html')).to.equal(
+      undefined
+    );
   });
 });

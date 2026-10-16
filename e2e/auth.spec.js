@@ -20,7 +20,7 @@ test('signs up, logs out, and signs back in', async ({ page }) => {
 
   await page.locator('#email').fill(email);
   await page.locator('#password').fill('password123');
-  await page.getByRole('button', { name: 'Sign in' }).click();
+  await page.getByRole('button', { name: 'Sign in', exact: true }).click();
   await expect(page).toHaveURL(/\/home$/);
   await expect(header(page)).toHaveText(email);
 });
@@ -48,7 +48,7 @@ test('shows an error for a wrong password', async ({ page, request }) => {
   await page.goto('/signin');
   await page.locator('#email').fill(email);
   await page.locator('#password').fill('not-the-password');
-  await page.getByRole('button', { name: 'Sign in' }).click();
+  await page.getByRole('button', { name: 'Sign in', exact: true }).click();
   await expect(page.locator('.errors-section')).toContainText('Email or password is incorrect.');
   await expect(page).toHaveURL(/\/signin$/);
 });

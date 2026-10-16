@@ -9,10 +9,44 @@
 #
 #   ./enable-https.sh --dry-run   test against Let's Encrypt's staging server
 #                                 without saving a certificate or changing nginx
+#   ./enable-https.sh --with-staging
+#                                 also staging.glazecalcapp.com (docs/mfa-plan.md,
+#                                 "Phase 2"): adds the name to the certificate
+#                                 (certbot --expand) and turns on its nginx site,
+#                                 nginx/glazecalc-staging.conf. Its DNS record
+#                                 must exist first (deploy/README.md, Staging).
+#
+# Without --with-staging the certificate keeps the names it has: production's
+# two, and the staging name only if it was added before (a run without the flag
+# never removes it; deploy/README.md, Staging, says how to retire it). The
+# nginx files come from master; GLAZECALC_STAGING_REF (a branch or commit) takes
+# the staging site's file from there instead, to set staging up from a branch
+# before it is merged. Production's files always come from master.
 set -euo pipefail
 
-domains=(glazecalcapp.com www.glazecalcapp.com)
+with_staging=false
+certbot_args=()
+for arg in "$@"; do
+  if [ "$arg" = --with-staging ]; then with_staging=true; else certbot_args+=("$arg"); fi
+done
+staging=staging.glazecalcapp.com
 raw=https://raw.githubusercontent.com/AaronFilson/glazecalc/master/deploy/nginx
+staging_ref=${GLAZECALC_STAGING_REF:-master}
+# It goes into a URL path: no "..", and no leading "/", "-" or ".".
+if [[ ! "$staging_ref" =~ ^[A-Za-z0-9_][A-Za-z0-9._/-]*$ ]] || [[ "$staging_ref" == *..* ]]; then
+  echo "GLAZECALC_STAGING_REF '$staging_ref' is not a branch or commit." >&2
+  exit 2
+fi
+
+domains=(glazecalcapp.com www.glazecalcapp.com)
+cert=/etc/letsencrypt/live/glazecalcapp.com/cert.pem
+has_staging=false
+if [ -f "$cert" ] && openssl x509 -in "$cert" -noout -ext subjectAltName 2>/dev/null | grep -q "DNS:$staging"; then
+  has_staging=true
+fi
+if [ "$with_staging" = true ] || [ "$has_staging" = true ]; then domains+=("$staging"); fi
+expand=()
+if [ "$with_staging" = true ] && [ "$has_staging" = false ]; then expand=(--expand); fi
 
 token=$(curl -fsS -X PUT http://169.254.169.254/latest/api/token -H 'X-aws-ec2-metadata-token-ttl-seconds: 300')
 imds() { curl -fsS -H "X-aws-ec2-metadata-token: $token" "http://169.254.169.254/latest/meta-data/$1"; }
@@ -37,10 +71,10 @@ if [ -n "$email" ]; then contact=(--email "$email"); else contact=(--register-un
 
 certbot certonly --webroot --webroot-path /var/www/certbot \
   --non-interactive --agree-tos "${contact[@]}" \
-  --cert-name glazecalcapp.com "${domains[@]/#/--domain=}" \
-  --keep-until-expiring --deploy-hook 'systemctl reload nginx' "$@"
+  --cert-name glazecalcapp.com "${domains[@]/#/--domain=}" "${expand[@]}" \
+  --keep-until-expiring --deploy-hook 'systemctl reload nginx' "${certbot_args[@]}"
 
-if [[ " $* " == *' --dry-run '* ]]; then
+if [[ " ${certbot_args[*]} " == *' --dry-run '* ]]; then
   echo 'Dry run passed; nothing was changed.'
   exit 0
 fi
@@ -51,13 +85,35 @@ trap 'rm -rf "$new"' EXIT
 for f in glazecalc-proxy.conf glazecalc-tls.conf glazecalc.conf; do
   curl -fsSL "$raw/$f" -o "$new/$f"
 done
+# The staging site, once the certificate has its name (after --with-staging).
+staging_site=false
+if [ "$with_staging" = true ] || [ "$has_staging" = true ]; then
+  curl -fsSL "${raw%/master/deploy/nginx}/$staging_ref/deploy/nginx/glazecalc-staging.conf" \
+    -o "$new/glazecalc-staging.conf"
+  staging_site=true
+fi
 backup=$(mktemp -d)
 cp -a /etc/nginx/snippets/glazecalc-proxy.conf /etc/nginx/sites-available/glazecalc "$backup/"
+if [ -f /etc/nginx/sites-available/glazecalc-staging ]; then
+  cp -a /etc/nginx/sites-available/glazecalc-staging "$backup/"
+fi
+staging_was_on=false
+if [ -e /etc/nginx/sites-enabled/glazecalc-staging ]; then staging_was_on=true; fi
 install -m 644 "$new/glazecalc-proxy.conf" "$new/glazecalc-tls.conf" /etc/nginx/snippets/
 install -m 644 "$new/glazecalc.conf" /etc/nginx/sites-available/glazecalc
+if [ "$staging_site" = true ]; then
+  install -m 644 "$new/glazecalc-staging.conf" /etc/nginx/sites-available/glazecalc-staging
+  ln -sf /etc/nginx/sites-available/glazecalc-staging /etc/nginx/sites-enabled/glazecalc-staging
+fi
 if ! nginx -t; then
   cp -a "$backup/glazecalc-proxy.conf" /etc/nginx/snippets/
   cp -a "$backup/glazecalc" /etc/nginx/sites-available/
+  if [ -f "$backup/glazecalc-staging" ]; then
+    cp -a "$backup/glazecalc-staging" /etc/nginx/sites-available/
+  else
+    rm -f /etc/nginx/sites-available/glazecalc-staging
+  fi
+  if [ "$staging_was_on" = false ]; then rm -f /etc/nginx/sites-enabled/glazecalc-staging; fi
   echo 'nginx rejected the new configuration; the previous one is back in place.' >&2
   exit 1
 fi
@@ -74,4 +130,8 @@ systemctl reload nginx
 
 curl -fsS https://glazecalcapp.com/api/health
 echo
+if [ "$staging_site" = true ]; then
+  # Informational: 200 while staging runs, 503 while it is stopped (staging.sh).
+  echo "Staging site on: https://$staging/api/health answers $(curl -s -o /dev/null -w '%{http_code}' "https://$staging/api/health" || true)"
+fi
 echo 'HTTPS is on.'
