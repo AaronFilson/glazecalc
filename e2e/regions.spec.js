@@ -127,3 +127,63 @@ test.describe('a potter in Türkiye', () => {
     await accessible(page);
   });
 });
+
+test.describe('a potter in Taiwan', () => {
+  test.beforeEach(async ({ page }) => {
+    await page.addInitScript(() => globalThis.localStorage.setItem('preferredRegion', 'TW'));
+  });
+
+  test("is shown Taiwan's poison centre, the 2027 silica limit with its date, and limits in ppm, at phone width", async ({
+    page
+  }) => {
+    await page.setViewportSize({ width: 375, height: 800 });
+    await page.goto('/guides/home-safety');
+    const lines = page.locator('gc-poison-lines');
+    await expect(lines.locator('a[href="tel:119"]')).toBeVisible();
+    await expect(lines.locator('a[href="tel:+886228717121"]')).toHaveText('02-2871-7121');
+    await accessible(page);
+
+    await page.goto('/guides/safe-mixing');
+    const silica = page.locator('gc-silica-limit');
+    await expect(silica.locator('tbody td')).toHaveText(['0.1 mg/m³']);
+    await expect(silica).toContainText('It applies from January 1, 2027.');
+    await expect(silica).toContainText('Until 31 December 2026 an earlier table applies');
+    await accessible(page);
+
+    await page.goto('/guides/glazing-basics');
+    const food = page.locator('gc-food-limits');
+    await expect(food.locator('tbody tr')).toHaveCount(3);
+    await expect(food).toContainText('ppm here is milligrams per litre');
+    // Korea's, chosen to look at: no national poison line, and its five kinds of piece.
+    await food.getByLabel('Rules in', { exact: true }).selectOption('KR');
+    await expect(food.locator('tbody tr')).toHaveCount(5);
+    const overflow = await page.evaluate(() => globalThis.document.documentElement.scrollWidth - globalThis.innerWidth);
+    expect(overflow).toBeLessThanOrEqual(0);
+    await accessible(page);
+  });
+});
+
+test.describe('a potter in Malaysia', () => {
+  test.beforeEach(async ({ page }) => {
+    await page.addInitScript(() => globalThis.localStorage.setItem('preferredRegion', 'MY'));
+  });
+
+  test('is shown the poison centre with its hours, and told no shop was found', async ({ page }) => {
+    await page.goto('/guides/home-safety');
+    const lines = page.locator('gc-poison-lines');
+    await expect(lines.locator('a[href="tel:+6046536999"]')).toHaveText('04-6536 999');
+    await expect(lines).toContainText('Monday to Friday 8:00 to 22:00');
+    await accessible(page);
+
+    await page.goto('/guides/making-a-glaze');
+    const shops = page.locator('gc-shops');
+    await expect(shops).toContainText('We found no shop selling raw glaze materials in Malaysia.');
+    // Singapore's, chosen to look at.
+    await shops.getByLabel('Shops in', { exact: true }).selectOption('SG');
+    await expect(shops.getByRole('link', { name: 'Sam Mui Kuang Pottery' })).toHaveAttribute(
+      'href',
+      'http://smkpottery.com/'
+    );
+    await accessible(page);
+  });
+});

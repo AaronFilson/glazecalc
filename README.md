@@ -49,9 +49,9 @@ materials, colorants, firing logs and notes together in one private notebook.
   page on Letter or A4; weights in grams, or in pounds and ounces as set in your account.
 - **Your region and your numbers:** where you work sets numbers and dates as you write them
   (12,5 or 12.5 typed either way), °C or °F, Orton cones, SK cones (JIS R 8101) or firing by temperature, the standard
-  materials sold there, and in the guides, for 31 countries: who to call in an emergency, shops that
+  materials sold there, and in the guides, for 37 countries: who to call in an emergency, shops that
   sell glaze materials, the closest materials sold there to those a recipe names, the workplace
-  limit for silica dust and the food-contact limits for glazed ware (for 30: no official limit
+  limit for silica dust and the food-contact limits for glazed ware (for 36: no official limit
   was found for New Zealand), each checked on an official or the shop's own page.
 - **Translated into 26 languages:** an official language of every country of the EU (Bulgarian, Croatian, Czech, Danish, Dutch, English, Estonian, Finnish, French, German, Greek, Hungarian, Irish, Italian, Latvian, Lithuanian, Maltese, Polish, Portuguese, Romanian, Slovak, Slovenian, Spanish, and Swedish), Japanese and Turkish, each at its own addresses (`/de/recipe`).
 
