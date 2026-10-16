@@ -99,6 +99,16 @@ H-statement and SDS wording below is the form Chinese SDSs print, not re-read), 
 《现代汉语词典》, the government sites nhc.gov.cn and mem.gov.cn (refused automated reading in the region research), and any
 Chinese kiln maker's manual. The kiln-sitter, controller and firing-log rows rest on 麟文 and usage only.
 
+## Owner's decisions (2026-10-16)
+
+These settle the questions this sheet marks as the owner's; they win over anything below.
+
+- **Address:** 您.
+- **Silica dust:** 硅尘 everywhere, also where the law's own row name is 矽尘 (the check rejects 矽); the source link carries the law's wording.
+- **Seger formula:** 塞格式.
+- **GB 4806.4:** name the edition the English names; the edition in force is checked before the CN region data is added, not by the translator.
+- **Passkey:** 通行密钥. **Recovery code:** 恢复码.
+
 ## 1. Style sheet
 
 ### Register

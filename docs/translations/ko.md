@@ -113,6 +113,14 @@ themselves, the Daum blogs that once held glaze notes (blog.daum.net has closed)
 glaze use, whose content loads by script. The kiln, controller and firing-log rows rest on shop listings, blogs and
 usage only.
 
+## Owner's decisions (2026-10-16)
+
+These settle the questions this sheet marks as the owner's; they win over anything below.
+
+- **Register:** 합쇼체 with -세요 requests everywhere, interface included, as Microsoft, Google and Apple write Korean (not 해요체 for the interface).
+- **Two-step sign-in:** 이중 인증 (the numbers check rejects 2단계).
+- **Japanese source titles** in the guides: Hepburn romanization with the English gloss the guide gives, never Japanese script.
+
 ## 1. Style sheet
 
 ### Register

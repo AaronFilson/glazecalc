@@ -97,6 +97,14 @@ summaries of the rule and from Taiwanese safety data sheets); 教育部《重訂
 punctuation below rests on MS and on Google's and Apple's Taiwan pages); any Taiwanese kiln controller's manual; the EU's
 office in Taiwan (歐洲經濟貿易辦事處). The kiln-sitter, firing-log and some safety rows rest on usage or on nothing.
 
+## Owner's decisions (2026-10-16)
+
+These settle the questions this sheet marks as the owner's; they win over anything below.
+
+- **臺 / 台:** 臺 in formal names (臺灣, 臺北), 台 elsewhere, as Taiwan's government sites write.
+- **Recipe:** 釉方 for a glaze recipe, 配方 for a recipe in general.
+- **Passkey:** 密碼金鑰. **Recovery code:** 備用碼. **Two-step sign-in:** 兩步驟驗證, as this sheet has it.
+
 ## 1. Style sheet
 
 ### Register
