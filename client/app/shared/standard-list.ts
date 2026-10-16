@@ -21,6 +21,9 @@ import { fieldsText, firstOf } from './options';
 
 let nextId = 0;
 
+/** Stands in for the formula in its sentence, which is split there to set the formula apart. */
+const FORMULA_MARK = '';
+
 /** How many records are listed until all are asked for: the standard materials run to well over a hundred. */
 const FIRST_SHOWN = 25;
 
@@ -105,7 +108,12 @@ const FIRST_SHOWN = 25;
                   </summary>
                   <p class="standard-notes">{{ standardText(record, firstOf(record.notes)) }}</p>
                   @if (record.rawformula) {
-                    <p>{{ t('standard.formulaLine', { formula: formatFormula(record.rawformula) }) }}</p>
+                    <!-- The formula is never translated, though the sentence around it is. -->
+                    @let formulaLine = t('standard.formulaLine', { formula: FORMULA_MARK }).split(FORMULA_MARK);
+                    <p class="standard-formula">
+                      {{ formulaLine[0] }}<span translate="no">{{ formatFormula(record.rawformula) }}</span
+                      >{{ formulaLine.slice(1).join('') }}
+                    </p>
                   }
                   @if (record.substitutes?.length) {
                     @if (record.status && record.status !== 'current') {
@@ -212,6 +220,7 @@ export class StandardList {
   readonly retry = output<void>();
 
   protected readonly id = 'standard-' + nextId++;
+  protected readonly FORMULA_MARK = FORMULA_MARK;
   protected readonly regions = REGIONS;
   protected readonly filter = signal('');
   protected readonly category = signal('');
