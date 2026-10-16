@@ -117,6 +117,7 @@ describe('region facts', () => {
     fs.readFileSync(new URL('../../client/public/i18n/guides/en.json', import.meta.url), 'utf8')
   );
   const HTTP_ONLY = ['丸二陶料', '太麟化工原料有限公司', 'Sam Mui Kuang Pottery'];
+  const NO_SHOP_FOUND = ['MY'];
   const checkedLately = (fact: { checked: string; source?: string; url?: string }, label: string) => {
     expect(fact.source ?? fact.url, label).to.match(/^https:\/\//);
     expect(Date.parse(fact.checked), label + ': check this again').to.be.above(yearAgo);
@@ -166,7 +167,9 @@ describe('region facts', () => {
     for (const region of regions.REGIONS) {
       const entry = suppliers.shopsFor(region.code);
       expect(entry, region.name).not.to.equal(null);
-      expect(entry!.shops.length + entry!.nearby.length, region.name).to.be.above(0);
+      // Where no shop was found (Malaysia), the page says so.
+      if (!NO_SHOP_FOUND.includes(region.code))
+        expect(entry!.shops.length + entry!.nearby.length, region.name).to.be.above(0);
       for (const shop of entry!.shops) {
         // A shop whose site has no https address is linked as it is, and only that one.
         if (HTTP_ONLY.includes(shop.name)) expect(shop.url, shop.name).to.match(/^http:\/\//);
@@ -608,5 +611,52 @@ describe('Singapore', () => {
     expect(shops.map((shop) => shop.name)).to.eql(['Sam Mui Kuang Pottery', "The Potters' Guilt"]);
     expect(shops[1]!.sells).not.to.include('materials');
     expect(JSON.stringify(suppliers.SUPPLIERS['SG'])).not.to.contain('Wei Chuan');
+  });
+});
+
+// Malaysia (docs/asia-plan.md, Phase C), from research_notes/Asia/verification-KR-TW-SG-MY-2026-10-16.md.
+describe('Malaysia', () => {
+  it('stays in English, fires by temperature, and lists the US library', () => {
+    expect(regions.regionFor('MY')).to.include({ temperature: 'C', cones: 'temperature', library: 'US' });
+    expect(regions.regionFor('MY')!.languages).to.eql(['ms', 'en']);
+    expect(regions.formatLocaleFor('en', 'MY', 'auto')).to.equal('en-MY');
+  });
+
+  it('gives 999, and the National Poison Centre with its hours, not 24 hours, and no claim on cost', () => {
+    const shown = safety.shownFor('MY')!;
+    expect(shown.emergency.map((line) => line.number)).to.eql(['999']);
+    expect(shown.emergency.map((line) => line.number)).not.to.include('112');
+    expect(shown.poison.map((line) => [line.number, line.tel])).to.eql([['04-6536 999', '+6046536999']]);
+    const centre = shown.poison[0]!;
+    expect(centre.hours).to.contain('Monday to Friday 8:00 to 22:00');
+    expect(centre.hours).not.to.match(/24/);
+    expect(centre.fee).to.equal(undefined);
+    expect(JSON.stringify(safety.SAFETY['MY'])).not.to.match(/free/i);
+    expect(centre.online).to.eql({ name: 'Telegram', url: 'https://t.me/usm_prn_bot' });
+    expect(safety.ministryFor('MY')).to.include({ name: 'Kementerian Kesihatan Malaysia' });
+  });
+
+  it("gives the USECHH limits and DOSH's mask classes", () => {
+    const facts = workplace.workplaceFor('MY')!;
+    expect(facts.silica).to.include({ quartz: 0.1, cristobalite: 0.05, kind: 'binding' });
+    expect(facts.agency).to.include({ abbr: 'JKKP', url: 'https://dosh.gov.my/' });
+    expect(facts.respirators).to.include({ status: 'verified' });
+    expect(facts.respirators!.everyday).to.eql(['N95']);
+  });
+
+  it('gives the 2026 limits, four pieces judged, from 1 August 2026, without the 1.1 L line not read', () => {
+    const { rules } = food.foodRulesFor('MY')!;
+    expect(rules.inForce).to.equal('2026-08-01');
+    expect(rules.limits.map((l) => [l.category, l.lead, l.cadmium, l.unit, l.judged, l.pieces])).to.eql([
+      ['myFlat', 0.8, 0.07, 'mg/dm²', 'average', 4],
+      ['mySmall', 2, 0.5, 'mg/L', 'each', 4],
+      ['myLarge', 1, 0.25, 'mg/L', 'each', 4],
+      ['myCooking', 0.5, 0.05, 'mg/L', 'each', 4]
+    ]);
+    expect(JSON.stringify(rules)).not.to.contain('1.1');
+  });
+
+  it('lists no shop, since none was found', () => {
+    expect(suppliers.shopsFor('MY')).to.eql({ shops: [], nearby: [] });
   });
 });

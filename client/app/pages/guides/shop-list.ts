@@ -39,7 +39,9 @@ const SELLS: Record<Sells, string> = {
           <ng-container *ngTemplateOutlet="table; context: { $implicit: entry.nearby, nearby: true }" />
         }
       }
-      <gc-source-links [label]="t('guides.poison.checkedOn')" [urls]="sources()" />
+      @if (sources().length) {
+        <gc-source-links [label]="t('guides.poison.checkedOn')" [urls]="sources()" />
+      }
     } @else if (region()) {
       <p>{{ t('guides.shops.unknown', { region: regionName() }) }}</p>
     } @else {

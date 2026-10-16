@@ -351,3 +351,32 @@ describe('Singapore', () => {
     expect(paragraphsOf(element)[0]).toContain('limits for lead only');
   });
 });
+
+describe('Malaysia', () => {
+  it('gives 999 and the National Poison Centre with its hours and Telegram', async () => {
+    const { element } = await create(PoisonLines, 'MY');
+    const calls = [...element.querySelectorAll('a[href^="tel:"]')].map((a) => a.getAttribute('href'));
+    expect(calls).toEqual(['tel:999', 'tel:+6046536999']);
+    const text = (element.textContent ?? '').replace(/\s+/g, ' ');
+    expect(text).toContain('Monday to Friday 8:00 to 22:00');
+    expect(element.querySelector('a[href="https://t.me/usm_prn_bot"]')?.textContent).toBe('Telegram');
+  });
+
+  it('says how many pieces are judged, and when the rules came into force', async () => {
+    const { element, rows } = await create(FoodLimits, 'MY');
+    expect(rows()).toEqual([
+      ['Flatware (average of 4 pieces)', '0.8 mg/dm²', '0.07 mg/dm²'],
+      ['Small hollowware (any one of 4)', '2 mg/L', '0.5 mg/L'],
+      ['Large hollowware (any one of 4)', '1 mg/L', '0.25 mg/L'],
+      ['Cooking ware (any one of 4)', '0.5 mg/L', '0.05 mg/L']
+    ]);
+    expect(paragraphsOf(element)[0]).toContain('In force from 1 August 2026.');
+  });
+
+  it('says no shop was found, with no empty list of sources', async () => {
+    const { element } = await create(ShopList, 'MY');
+    expect(element.textContent).toContain('We found no shop selling raw glaze materials in Malaysia.');
+    expect(element.querySelector('table')).toBeNull();
+    expect(element.querySelector('.region-sources')).toBeNull();
+  });
+});
