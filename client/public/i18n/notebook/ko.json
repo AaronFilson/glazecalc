@@ -1,0 +1,88 @@
+{
+  "home": {
+    "title": "작업 노트",
+    "signedInAs": "로그인 계정: {email}",
+    "trying": "{name} 이름으로 Glazecalc를 체험하고 있습니다. 레시피부터 시작해 보세요.",
+    "welcomeBack": "지난번에 하던 작업을 이어서 하세요.",
+    "sections": {
+      "recipe": {
+        "title": "레시피",
+        "text": "원료와 양으로 유약을 짜고, 제게르식을 확인하고, 저장하세요."
+      },
+      "material": {
+        "title": "원료",
+        "text": "화학식이나 공급업체의 분석값으로 원료를 직접 추가하세요."
+      },
+      "additive": {
+        "title": "첨가제와 발색제",
+        "text": "기본 유약에 더해 넣는 발색제와 유탁제를 저장해 두세요."
+      },
+      "firing": {
+        "title": "소성 기록",
+        "text": "소성마다 시간, 온도, 콘을 기록하세요."
+      },
+      "notes": {
+        "title": "메모",
+        "text": "시험 결과와 그 밖에 기억해 둘 만한 것을 적어 두세요."
+      },
+      "advice": {
+        "title": "유약 조언",
+        "text": "유약 섞기, 시유, 소성에 관한 팁과 직접 적은 조언입니다."
+      },
+      "guides": {
+        "title": "가이드",
+        "text": "유약이 무엇인지부터 소성까지, 그리고 그 과정에서 모두의 안전을 지키는 방법을 다룹니다."
+      }
+    },
+    "newHere": "제게르식이 처음이라면 <advice>조언 페이지</advice>에서 기본을 알아보세요. <about>소개 페이지</about>에서는 Glazecalc가 어떻게 작동하는지 설명합니다."
+  },
+  "firing": {
+    "title": "소성 기록",
+    "lead": "소성마다 시간, 온도, 콘, 가마 메모를 기록하세요.",
+    "titleLabel": "소성 제목:",
+    "kiln": "가마:",
+    "date": "소성 날짜:",
+    "notes": "소성 메모:",
+    "fieldSelect": "소성 기록에 넣을 항목을 선택해 추가하세요:",
+    "addField": "항목 추가",
+    "included": "추가한 항목:",
+    "fieldName": "항목 이름: {name}",
+    "moveLeft": "항목을 왼쪽으로 이동",
+    "moveRight": "항목을 오른쪽으로 이동",
+    "removeField": "항목 삭제",
+    "addRow": "소성 표에 행 추가",
+    "recordHeading": "소성 기록하기",
+    "rowActions": "행 작업",
+    "cell": "{field} {row}행",
+    "removeRow": "행 삭제",
+    "save": "저장",
+    "storedHeading": "저장한 소성 기록:",
+    "stored": "제목: {title}, 가마: {kiln}, 날짜: {date}",
+    "storedNotes": "메모: {notes}",
+    "titleMissing": "소성 제목을 입력하세요.",
+    "fieldsMissing": "기록할 항목을 하나 이상 추가하세요(예: {example}).",
+    "chooseField": "추가할 항목을 선택한 다음 [항목 추가]를 누르세요.",
+    "fetchFailed": "소성 기록 정보를 가져오는 중에 오류가 발생했습니다.",
+    "saved": "소성 기록을 서버에 추가했습니다.",
+    "saveFailed": "오류: 서버 요청에 실패했습니다."
+  },
+  "notes": {
+    "title": "메모",
+    "lead": "유약에 관해 그 밖에 기억해 둘 만한 것을 적는 곳입니다.",
+    "intro": "메모 페이지입니다. 여기에서 메모를 작성하고 저장할 수 있습니다.",
+    "titleLabel": "제목:",
+    "content": "메모 내용:",
+    "save": "저장",
+    "mineHeading": "저장한 메모:",
+    "titleMissing": "메모 제목을 입력하세요.",
+    "contentMissing": "메모 내용을 입력하세요.",
+    "untitled": "제목 없는 메모",
+    "fetchFailed": "메모 정보를 가져오는 중에 오류가 발생했습니다.",
+    "saved": "메모를 서버에 추가했습니다.",
+    "saveFailed": "오류: 서버 요청에 실패했습니다."
+  },
+  "trash": {
+    "title": "휴지통",
+    "comingSoon": "휴지통 기능은 다음 버전의 Glazecalc에 추가될 예정입니다. 그때까지는 삭제 기능을 주의해서 사용하세요. 한 번 삭제하면 정보가 사라집니다."
+  }
+}

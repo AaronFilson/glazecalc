@@ -1,0 +1,176 @@
+{
+  "version": {
+    "cones": "설정에 따라 이 가이드는 콘 기준 소성으로 표시됩니다.",
+    "temperature": "설정에 따라 이 가이드는 온도 기준 소성으로 표시됩니다.",
+    "showTemperature": "온도 기준 소성으로 보기",
+    "showCones": "콘 기준 소성으로 보기",
+    "sk": "설정에 따라 이 가이드는 SK 콘(JIS R 8101) 기준 소성으로 표시됩니다.",
+    "showSk": "SK 콘(JIS R 8101) 기준 소성으로 보기",
+    "showOrton": "오튼 콘 기준 소성으로 보기"
+  },
+  "notTranslated": "이 가이드는 아직 번역되지 않아 영어로 표시됩니다.",
+  "sectionInEnglish": "이 부분은 번역한 뒤에 영어 원문이 바뀌었으므로, 번역을 최신 내용으로 고칠 때까지 영어로 표시됩니다.",
+  "list": {
+    "title": "가이드",
+    "lead": "처음 도예를 시작하는 사람을 위한 쉬운 가이드입니다. 유약이 무엇인지부터 소성까지, 그리고 그 과정에서 모두의 안전을 지키는 방법을 다룹니다.",
+    "note": "이 가이드는 제조사, 안전 기관, 경험 많은 도예가가 발표한 내용을 모은 것이며, 각 가이드 끝에 출처가 있습니다. 출발점일 뿐이며, 사용하는 원료의 물질안전보건자료, 가마의 사용 설명서, 지역 규정을 대신하지 않습니다.",
+    "glazingBasics": {
+      "title": "기초부터 배우는 유약",
+      "text": "유약이 무엇인지, 어떻게 녹는지, 그리고 레시피나 포대에서 만나는 모든 용어를 설명합니다."
+    },
+    "makingAGlaze": {
+      "title": "유약 만드는 법",
+      "text": "유약을 사서 보관하고, 계량하고, 섞고, 체에 거른 다음, 시험하고 기록하는 방법입니다."
+    },
+    "safeMixing": {
+      "title": "안전한 조합과 환기",
+      "text": "분진, 방진마스크, 청소, 가장 주의해야 할 원료, 가마 배기를 다룹니다."
+    },
+    "homeSafety": {
+      "title": "가족을 중독에서 지키세요",
+      "text": "아이와 반려동물이 있는 집에서 도예를 할 때의 보관, 분진, 가마, 그리고 무언가를 삼켰을 때 할 일을 다룹니다."
+    },
+    "firing": {
+      "title": "기본 가마 소성",
+      "text": "콘, 킬른 시터, 수동 스위치, 그리고 초벌과 재벌의 소성 스케줄을 다룹니다."
+    }
+  },
+  "contents": "이 페이지의 내용",
+  "poison": {
+    "numbersFor": "연락처를 볼 나라:",
+    "choose": "나라 선택",
+    "label": "{region}에서 연락할 곳",
+    "caption": "{region}에서 연락할 곳(전화번호 확인일: {date})",
+    "for": "용건",
+    "call": "전화번호",
+    "notes": "운영 시간과 참고 사항",
+    "emergency": "응급 상황: 의식이 없거나, 숨을 쉬지 않거나, 발작을 일으킨 경우",
+    "poisonAdvice": "{who, select, children {중독 상담: {name}(어린이 전용)} other {중독 상담: {name}}}",
+    "or": "또는 {number}",
+    "online": "온라인: <link>{name}</link>.",
+    "poisonAdviceNone": "중독 상담",
+    "noLine": "이 나라에서는 일반인이 이용할 수 있는 중독 상담 전화를 확인하지 못했습니다. 의사에게 전화하거나, 급한 경우에는 긴급 전화번호로 전화하세요.",
+    "medicalAdvice": "의료 상담: {name}",
+    "animals": "동물: {name}",
+    "animalsNone": "동물",
+    "vet": "다니는 동물병원에 전화하세요.",
+    "checkedOn": "확인한 페이지:",
+    "choosePrompt": "나라를 선택하면 그 나라에서 연락할 곳이 표시됩니다.",
+    "ministry": "보건부 페이지: <link>{name}</link>."
+  },
+  "density": {
+    "sg": "비중 {value}",
+    "baume": "{value} °Bé ({sg})",
+    "pint": "영국 파인트당 {value} oz ({sg})"
+  },
+  "shops": {
+    "shopsIn": "판매처가 있는 나라:",
+    "label": "{region}의 판매처",
+    "caption": "{region}에서 유약 원료를 파는 판매처 일부(확인일: {date})",
+    "nearbyCaption": "{region}까지 배송한다고 밝힌 다른 나라의 판매처(확인일: {date})",
+    "shop": "판매처",
+    "sells": "판매 품목",
+    "packs": "확인한 포장 단위",
+    "seen": "확인한 원료(판매처의 표기)",
+    "what": {
+      "materials": "유약 원료",
+      "frits": "프릿",
+      "oxides": "산화물",
+      "stains": "안료",
+      "clays": "점토",
+      "glazes": "완성 유약",
+      "kilns": "가마"
+    },
+    "none": "{region}에서 유약 원료를 파는 판매처를 찾지 못했습니다.",
+    "unknown": "{region}의 판매처는 아직 찾아보지 않았습니다.",
+    "choosePrompt": "나라를 선택하면 그 나라의 판매처가 표시됩니다."
+  },
+  "silica": {
+    "limitIn": "기준을 볼 나라:",
+    "label": "{region}의 실리카 기준",
+    "caption": "{region}의 호흡성 결정형 유리규산 작업장 노출 기준, 8시간 평균(확인일: {date})",
+    "captionControl": "{region}에서 작업장 공기 중 호흡성 결정형 유리규산을 판단하는 기준(확인일: {date})",
+    "both": "석영과 크리스토발라이트",
+    "quartz": "석영",
+    "cristobalite": "크리스토발라이트",
+    "actionLevel": "조치 수준",
+    "formula": "관리 농도(Q는 분진 중 유리규산의 함량, %)",
+    "formulaValue": "{numerator} / ({factor}Q + 1) mg/m³",
+    "formulaLimit": "호흡성 석영의 기준(Q는 분진 중 실리카(SiO₂)의 함량, %)",
+    "formulaQ": "{numerator} / (Q + {offset}) mg/m³",
+    "formulaFull": "{numerator} / ({factor}Q + {offset}) mg/m³",
+    "quartzAll": "석영(분진이 모두 석영인 경우)",
+    "cristobaliteAll": "크리스토발라이트(분진이 모두 크리스토발라이트인 경우)",
+    "allFree": "분진이 모두 유리규산인 경우의 관리 농도",
+    "recommended": "권고: {abbr}",
+    "value": "{value} mg/m³",
+    "kind": {
+      "binding": "법적 구속력이 있는 기준입니다.",
+      "indicative": "권고 기준입니다. 참고하는 값이며 법적 상한이 아닙니다.",
+      "assessment": "평가 기준입니다. 법적 구속력이 있는 기준이 아닙니다.",
+      "control": "관리 농도(일본어 kanri noudo)입니다. 작업장에서 잰 값으로 그 작업장의 공기를 판단하는 기준이며, 한 사람이 들이마시는 양의 상한이 아닙니다."
+    },
+    "setBy": "근거: <link>{law}</link>.",
+    "lowerThanEu": "EU의 법적 구속력이 있는 기준인 {value} mg/m³보다 낮습니다.",
+    "sameAsEu": "EU의 법적 구속력이 있는 기준과 같습니다.",
+    "recommendedBy": "이 값은 {abbr}({by})의 <link>{title}</link>에 나오는 권고값입니다. 법으로 정한 값이 아닙니다.",
+    "respirators": "이 나라의 방진마스크는 등급별로 판매됩니다. 유약 분진용은 {everyday}, 더 높은 보호용은 {higher}입니다(<link>공식 등급</link>).",
+    "unknown": "{region}의 국가 기준은 확인하지 못했습니다. EU의 법적 구속력이 있는 기준 {value} mg/m³는 모든 회원국에 적용됩니다.",
+    "noData": "{region}의 기준은 아직 확인하지 않았습니다.",
+    "agency": "국가 산업안전보건 기관: <link>{name}</link>",
+    "agencySilica": "이 기관의 <link>실리카 관련 페이지</link>.",
+    "choosePrompt": "나라를 선택하면 그 나라의 기준이 표시됩니다."
+  },
+  "food": {
+    "rulesIn": "규정을 볼 나라:",
+    "label": "{region}의 도자기 기준",
+    "caption": "{region}의 법정 시험에서 소성한 기물로부터 용출되어도 되는 양(확인일: {date})",
+    "article": "기물의 종류",
+    "lead": "납",
+    "cadmium": "카드뮴",
+    "category": {
+      "flat": "액체를 채울 수 없는 것, 또는 깊이 25 mm 이하인 것",
+      "fillable": "그 밖의 액체를 채울 수 있는 것",
+      "cooking": "크기에 관계없는 가열조리용 기구, 그리고 3 L 초과의 포장·저장 용기",
+      "rimBand": "입을 대는 가장자리: 안팎으로 폭 2 cm의 띠",
+      "rimArticle": "입을 대는 가장자리: 윗가장자리 바깥쪽 폭 20 mm의 띠, 기물 하나당",
+      "flatware": "납작한 그릇(깊이 25 mm 이하)",
+      "smallHollow": "작은 오목한 그릇(1.1 L 미만, 컵과 머그 제외)",
+      "cups": "컵과 머그",
+      "largeHollow": "큰 오목한 그릇(1.1 L 이상, 피처 제외)",
+      "pitchers": "피처",
+      "auSmall": "1100 mL 미만의 컵, 머그, 주전자, 볼, 찻주전자 등의 식기",
+      "auLarge": "위와 같은 것으로 1100 mL 이상인 것",
+      "auPlates": "접시, 받침 접시 등의 식기",
+      "auCooking": "가열조리용 기구",
+      "jpFlat": "액체를 채울 수 없는 것, 또는 깊이 2.5 cm 미만인 것",
+      "jpSmall": "그 밖의 용량 1.1 L 미만인 것(가열조리용 제외)",
+      "jpLarge": "그 밖의 용량 1.1 L 이상 3 L 미만인 것(가열조리용 제외)",
+      "jpStorage": "그 밖의 용량 3 L 이상인 것(가열조리용 제외)",
+      "jpCooking": "가열조리용 기구(깊이 2.5 cm 이상)"
+    },
+    "judged": {
+      "average": "6개의 평균",
+      "each": "6개 중 어느 것이든"
+    },
+    "euRules": "이 나라에는 EU의 규정이 적용됩니다.",
+    "law": "근거: <link>{law}</link>.",
+    "inForce": "{date}부터 시행됩니다.",
+    "atMost": "용출량이 기준 이하이면 적합합니다. 법령의 표현은 “이하”입니다.",
+    "unknown": "{region}의 규정은 아직 확인하지 않았습니다.",
+    "choosePrompt": "나라를 선택하면 그 나라의 규정이 표시됩니다."
+  },
+  "equivalents": {
+    "buyingIn": "구매하는 나라:",
+    "label": "{library, select, US {미국에서 파는 대체 원료} UK {영국에서 파는 대체 원료} EU {EU에서 파는 대체 원료} other {호주와 뉴질랜드에서 파는 대체 원료}}",
+    "caption": "{library, select, US {미국에서 팔지 않는 원료와, 각각 미국에서 파는 가장 가까운 원료} UK {영국에서 팔지 않는 원료와, 각각 영국에서 파는 가장 가까운 원료} EU {EU에서 팔지 않는 원료와, 각각 EU에서 파는 가장 가까운 원료} other {호주와 뉴질랜드에서 팔지 않는 원료와, 각각 그곳에서 파는 가장 가까운 원료}}",
+    "material": "레시피의 원료",
+    "soldIn": "판매 지역",
+    "closest": "{library, select, US {미국에서 파는 가장 가까운 원료} UK {영국에서 파는 가장 가까운 원료} EU {EU에서 파는 가장 가까운 원료} other {호주와 뉴질랜드에서 파는 가장 가까운 원료}}",
+    "apart": "100 g당 {grams} g 차이",
+    "noneClose": "100 g당 15 g 이내로 가까운 원료가 없습니다. 화학 조성으로 비교하세요.",
+    "loading": "라이브러리를 불러오는 중입니다…",
+    "failed": "라이브러리를 불러오지 못했습니다. 나중에 다시 시도하세요.",
+    "choosePrompt": "나라를 선택하면 그 나라에서 파는 원료가 표시됩니다."
+  }
+}

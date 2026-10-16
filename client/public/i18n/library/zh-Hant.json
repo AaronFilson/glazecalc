@@ -1,0 +1,50 @@
+{
+  "common": {
+    "formulaHelp": "輸入化學式時，數字直接輸入即可，例如 {typed}：數字會顯示為下標，即 {shown}。要連接化學式的各部分（如 {joined}），請複製這個點：",
+    "relatedTo": "相關項目：",
+    "notes": "備註：",
+    "loi": "燒失量（LOI，百分比）：",
+    "molecularWeight": "化學式的分子量（燒成前，僅在 LOI 空白時使用）：",
+    "formulaHeading": "輸入化學式（燒成後）：",
+    "oxideSelection": "選擇氧化物",
+    "noOxide": "無",
+    "addOxide": "將氧化物加入清單",
+    "formulaIn": "此化學式的表示方式：",
+    "percent": "百分比",
+    "molecular": "莫耳數 / 塞格式",
+    "amount": "用量：",
+    "removeOxide": "從化學式清單中移除",
+    "save": "儲存",
+    "elements": "元素",
+    "removeNote": "已儲存的釉方各自保有一份副本，因此不會改變。",
+    "saveFailed": "錯誤：向伺服器發出的要求失敗。"
+  },
+  "material": {
+    "title": "原料",
+    "lead": "您自己的原料，以化學式或氧化物分析值輸入。",
+    "newHeading": "輸入新原料的資訊",
+    "name": "原料名稱：",
+    "rawFormula": "燒成前化學式：",
+    "weightsNote": "儲存時，當量與燒成後重量會依化學式與燒失量計算。",
+    "mineHeading": "我的原料：",
+    "rawFormulaColumn": "燒成前化學式",
+    "standardHeading": "標準原料：",
+    "fetchFailed": "取得原料資訊時發生錯誤。",
+    "standardFetchFailed": "取得標準原料資訊時發生錯誤。",
+    "saved": "成功：已將原料加入資料庫。"
+  },
+  "additive": {
+    "title": "添加物與呈色劑",
+    "lead": "在基礎釉方之外外加計量的呈色劑與乳濁劑，例如鈷或氧化錫。釉方可以不將其計入塞格式，也可以計入。",
+    "newHeading": "輸入新添加物的資訊",
+    "name": "添加物名稱：",
+    "formulaAsSold": "化學式（販售時）：",
+    "noChemistry": "沒有氧化物分析值（例如市售色料）：不計入塞格式",
+    "firedNote": "請輸入燒成後留在釉中的成分：黑色氧化鈷 {asSold} 燒成後為 {fired}，燒失量為 {loi}%。這樣釉方就能將其計入塞格式。",
+    "mineHeading": "我的添加物與呈色劑：",
+    "standardHeading": "標準添加物：",
+    "fetchFailed": "取得添加物資訊時發生錯誤。",
+    "standardFetchFailed": "取得標準添加物資訊時發生錯誤。",
+    "saved": "成功：已將添加物加入資料庫。"
+  }
+}

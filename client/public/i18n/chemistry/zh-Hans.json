@@ -1,0 +1,23 @@
+{
+  "unknown-compound": "化学式中有未知化合物 {compound}",
+  "unknown-oxide": "原料 {material} 中有未知氧化物 {oxide}",
+  "invalid-oxide-amount": "原料 {material} 中 {oxide} 的含量无效",
+  "loi-range": "{material} 的烧失量必须不低于 0 且小于 100",
+  "no-oxides": "原料 {material} 没有氧化物",
+  "no-name": "原料必须有名称",
+  "no-analysis": "原料 {material} 需要化学式或化学组成",
+  "recipe-shape": "配方必须是由 '{ material, amount }' 组成的数组，或用量的映射",
+  "invalid-amount": "原料 {material} 的用量无效",
+  "missing-material": "配方中有一行缺少原料",
+  "unknown-material": "未知原料 {material}",
+  "no-flux": "配方中不含熔剂氧化物，因此无法确定釉式（UMF）",
+  "no-target": "目标中没有要逼近的氧化物",
+  "no-materials": "没有可供计算的原料",
+  "no-temperature": "需要烧成温度才能确定硼的用量",
+  "no-flux-to-rebuild": "这种釉没有可以重新配置的熔剂",
+  "unknown-element": "{formula} 中有未知元素 {element}",
+  "bad-formula": "无法解析化学式 {formula}",
+  "analysis-total": "{material} 的化学组成合计为 {total}%（含烧失量）；应约为 100%。",
+  "stored-equivalent": "{material} 保存的当量与其化学式和烧失量不符；已改用化学式和烧失量计算。",
+  "trace-flux": "配方中只含微量熔剂氧化物，因此釉式（UMF）没有意义。"
+}

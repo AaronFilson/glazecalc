@@ -1,0 +1,391 @@
+{
+  "auth": {
+    "signInHeading": "登入",
+    "keepHeading": "保留您的作品",
+    "signUpHeading": "建立您的帳戶",
+    "signInLead": "歡迎回到您的陶藝筆記本。",
+    "keepLead": "保留您以「{name}」建立的所有內容：請加入電子郵件地址與密碼。服務依然免費。",
+    "signUpLead": "免費。您的釉方、原料與筆記僅限您的帳戶存取，保持私密。",
+    "trialNote": "已經有帳戶？登入後，您以「{name}」建立的內容會移入該帳戶。第一次使用？<signup>建立帳戶</signup>即可改為保留這些內容。",
+    "email": "電子郵件",
+    "password": "密碼",
+    "passwordHint": "至少 8 個字元。",
+    "confirmation": "確認密碼",
+    "keepSignedIn": "在此裝置上保持登入",
+    "passwordMissing": "請輸入密碼。",
+    "createAccount": "建立帳戶",
+    "signIn": "登入",
+    "haveAccount": "已經有帳戶？<signin>登入</signin>",
+    "privacy": "您的電子郵件地址與您儲存的內容，僅用於維持您的帳戶運作，並儲存在美國的 Amazon Web Services。<privacy>Glazecalc 如何處理您的資料</privacy>",
+    "dataNotice": "Glazecalc 是免費、開放原始碼的專案，帳戶儲存在美國的伺服器上。您不需要帳戶，就可以閱讀指南並試用計算工具，也可以自行架設一份。是否在此建立帳戶由您自行決定，本專案對此不承擔任何責任。<where>您的帳戶保存在哪裡，以及您的選擇</where>",
+    "forgot": "忘記密碼？重設密碼",
+    "newHere": "第一次使用？<signup>建立免費帳戶</signup>",
+    "signUpFailed": "錯誤：無法建立帳戶。",
+    "signInFailed": "錯誤：無法登入。",
+    "or": "或",
+    "passkeySignIn": "使用密碼金鑰登入",
+    "passkeyHint": "密碼金鑰以指紋、臉部或螢幕鎖定取代密碼。請在您的帳戶頁面新增。"
+  },
+  "secondStep": {
+    "heading": "兩步驟驗證",
+    "signingInAs": "您的密碼正確。再完成一個步驟，即可以 {email} 登入。",
+    "leadCode": "請開啟驗證器應用程式，輸入應用程式為 Glazecalc 顯示的驗證碼。",
+    "leadPasskey": "請使用密碼金鑰完成登入。",
+    "leadRecovery": "請輸入您開啟兩步驟驗證時儲存的其中一個備用碼。每個備用碼只能使用一次。",
+    "code": "驗證器應用程式的驗證碼",
+    "codeHint": "{digits} 位數字。每 30 秒會顯示新的驗證碼。",
+    "codeFormat": "請輸入驗證器應用程式的 {digits} 位數驗證碼。",
+    "recoveryCode": "備用碼",
+    "recoveryHint": "格式像 abcde-12345。",
+    "recoveryMissing": "請輸入其中一個備用碼。",
+    "finish": "完成登入",
+    "usePasskey": "使用密碼金鑰",
+    "noPasskeysHere": "此瀏覽器無法使用密碼金鑰。請使用下方的其他方式，或在支援密碼金鑰的裝置上登入。",
+    "useRecovery": "改用備用碼",
+    "useApp": "改用驗證器應用程式",
+    "startOver": "重新開始",
+    "reloadNote": "此步驟會等待 {minutes} 分鐘。若您離開或重新載入此頁面，需要重新輸入密碼。",
+    "expired": "登入花費的時間太長。請重新輸入密碼。"
+  },
+  "passkey": {
+    "cancelled": "未使用密碼金鑰：要求已取消或逾時，或此裝置上沒有 Glazecalc 的密碼金鑰。請再試一次，或使用其他方式。",
+    "registered": "此密碼金鑰已在您的帳戶中。",
+    "browserFailed": "此瀏覽器無法使用密碼金鑰。請再試一次，或使用其他方式。"
+  },
+  "forgot": {
+    "heading": "重設密碼",
+    "checkInbox": "請檢查收件匣與垃圾郵件匣。若沒有收到信，請檢查地址並再要求一次。",
+    "intro": "請輸入您帳戶的電子郵件地址，我們會寄給您一個連結，用來選擇新密碼。",
+    "email": "電子郵件：",
+    "send": "寄送重設連結",
+    "back": "返回登入",
+    "failed": "錯誤：無法寄送重設郵件。請再試一次。"
+  },
+  "reset": {
+    "heading": "選擇新密碼",
+    "signIn": "登入",
+    "incomplete": "此頁面需要密碼重設郵件中的連結，而這個連結不完整。",
+    "askAgain": "重新索取連結",
+    "password": "新密碼：",
+    "confirmation": "確認新密碼：",
+    "save": "儲存新密碼",
+    "hint": "至少 8 個字元。此帳戶上所有已登入的裝置都會被登出。",
+    "failed": "錯誤：無法變更密碼。請再試一次。",
+    "secondStep": "若您的帳戶使用兩步驟驗證，登入時仍需要驗證器應用程式、密碼金鑰或備用碼。"
+  },
+  "account": {
+    "trialTitle": "您的試用",
+    "trialLead": "您正在以「{name}」試用 Glazecalc。",
+    "keepHeading": "保留您的作品",
+    "keepText": "此試用及其中所有內容會在 {date} 移除。建立免費帳戶即可保留：您的釉方、原料與筆記維持原狀，「{name}」仍是您的顯示名稱。",
+    "createAccount": "建立帳戶",
+    "title": "您的帳戶",
+    "signedInAs": "目前以 {email} 登入。",
+    "changeHeading": "變更密碼",
+    "current": "目前的密碼",
+    "currentMissing": "請輸入目前的密碼。",
+    "password": "新密碼",
+    "passwordHint": "至少 8 個字元。此帳戶上其他已登入的裝置會被登出。",
+    "confirmation": "確認新密碼",
+    "change": "變更密碼",
+    "changeFailed": "錯誤：無法變更密碼。請再試一次。",
+    "deleteHeading": "刪除您的帳戶",
+    "deleteText": "這會移除您的帳戶，以及您儲存的所有內容：釉方、原料、添加物、筆記、燒窯紀錄與建議。此操作無法復原。",
+    "deletePassword": "您的密碼（用於確認）",
+    "deletePasswordMissing": "請輸入密碼以確認。",
+    "delete": "刪除我的帳戶",
+    "deleteFailed": "錯誤：無法刪除帳戶。請再試一次。",
+    "unverifiedHeading": "確認您的電子郵件",
+    "unverifiedText": "建立此帳戶時，我們寄了一個連結到 {email}。請開啟連結，確認這個地址屬於您。在此之前，只有在您提出要求（例如重設密碼）時，我們才會寄信到這個地址。",
+    "resend": "重新寄送連結",
+    "resendFailed": "錯誤：無法寄送連結。請再試一次。",
+    "emailHeading": "變更電子郵件",
+    "emailText": "我們會寄一個連結到新地址，您開啟連結後，電子郵件才會變更。我們也會通知您目前的地址。此帳戶上所有已登入的裝置都會被登出。",
+    "newEmail": "新的電子郵件",
+    "emailPassword": "您的密碼（用於確認）",
+    "emailSend": "寄送連結",
+    "emailFailed": "錯誤：無法寄送連結。請再試一次。",
+    "signOutHeading": "登出所有裝置",
+    "signOutText": "在所有裝置上登出，包括目前這一台。若遺失裝置，或認為別人取得了您的登入資訊，請使用此功能。",
+    "signOutButton": "登出所有裝置",
+    "signOutFailed": "錯誤：無法登出。請再試一次。",
+    "confirmStep": "已開啟兩步驟驗證，請確認是您本人：輸入密碼與第二個步驟。"
+  },
+  "mfa": {
+    "heading": "兩步驟驗證",
+    "intro": "登入時，除了密碼，再多要求一個步驟：驗證器應用程式的驗證碼，或密碼金鑰。這樣，即使有人得知您的密碼，仍然無法登入。",
+    "loadFailed": "無法載入您的兩步驟驗證設定。請重新載入頁面。",
+    "on": "兩步驟驗證已開啟。",
+    "onText": "您以密碼加第二個步驟登入，或只用密碼金鑰登入。",
+    "off": "兩步驟驗證已關閉。",
+    "offText": "要開啟，請設定驗證器應用程式或新增密碼金鑰。",
+    "confirmEmailFirst": "請先確認上方的電子郵件。我們用它通知您登入方式的變更，並在您遺失第二個步驟時提供協助。",
+    "appHeading": "驗證器應用程式",
+    "appText": "手機或密碼管理員中的應用程式，每 30 秒顯示一個新的驗證碼，供您登入時輸入。",
+    "addApp": "設定驗證器應用程式",
+    "removeApp": "移除驗證器應用程式",
+    "added": "新增於 {date}。",
+    "lastUsed": "上次使用於 {date}。",
+    "notUsed": "尚未使用。",
+    "passkeysHeading": "密碼金鑰",
+    "passkeysText": "密碼金鑰讓您用指紋、臉部或螢幕鎖定登入，可在這台裝置或您的手機上使用。密碼金鑰可以作為第二個步驟，也可以不用密碼，單獨用來登入。",
+    "noPasskeysHere": "此瀏覽器無法建立或使用密碼金鑰。請改用其他瀏覽器或裝置。",
+    "addPasskey": "新增密碼金鑰",
+    "removePasskey": "移除密碼金鑰",
+    "rename": "重新命名",
+    "remove": "移除",
+    "renameLabel": "「{name}」的新名稱",
+    "saveName": "儲存名稱",
+    "name": "密碼金鑰的名稱",
+    "nameHint": "方便您區分不同的密碼金鑰，例如「筆電」或「手機」。",
+    "nameCheck": "請為密碼金鑰取一個 1 至 {most} 個字元的名稱。",
+    "passkeyLimit": "您已有 {most} 個密碼金鑰，這是一個帳戶的上限。請先移除一個，才能再新增。",
+    "codesTitle": "備用碼",
+    "codesLeft": "還剩 {count, plural, other {# 個備用碼}}（共 {total} 個）。如果無法使用應用程式或密碼金鑰，可改用備用碼登入。每個備用碼只能使用一次。",
+    "codesLow": "請盡快產生新的備用碼。若備用碼用完，而您又遺失了應用程式和密碼金鑰，就無法登入。",
+    "newCodes": "產生新的備用碼",
+    "offHeading": "關閉兩步驟驗證",
+    "offWhat": "只要您還有驗證器應用程式或密碼金鑰，兩步驟驗證就會保持開啟。移除最後一個後就會關閉，接著：",
+    "offPassword": "登入只需要密碼，因此任何得知密碼的人都能登入。",
+    "offCodes": "您的備用碼會失效。",
+    "offSignOut": "您帳戶上其他所有已登入的裝置都會被登出，這台裝置仍保持登入。",
+    "offEmail": "我們會寄電子郵件通知您已關閉。",
+    "offPasskeys": "{count, plural, other {要關閉，請移除上方「密碼金鑰」下的 # 個密碼金鑰。}}",
+    "offPasskeysToo": "{count, plural, other {您還有 # 個密碼金鑰：除了應用程式，也請移除上方「密碼金鑰」下的密碼金鑰。}}",
+    "addAppText": "要設定驗證器應用程式，請先確認是您本人。",
+    "removeAppText": "要移除驗證器應用程式，請確認是您本人。",
+    "addPasskeyText": "請為密碼金鑰命名並確認是您本人。接著瀏覽器會要求您建立密碼金鑰。",
+    "removePasskeyText": "要移除密碼金鑰「{name}」，請確認是您本人。",
+    "newCodesText": "新的備用碼會取代舊的，舊的備用碼將失效。請確認是您本人。",
+    "lastFactor": "這是您最後一個第二步驟，因此兩步驟驗證會關閉，備用碼也會失效。",
+    "continue": "繼續",
+    "cancel": "取消",
+    "password": "您的密碼",
+    "factorLegend": "以及您的第二個步驟",
+    "passkeyNext": "按下繼續後，瀏覽器會要求您提供密碼金鑰。",
+    "passkeyReadyText": "謝謝。現在請建立密碼金鑰「{name}」：按下按鈕後，瀏覽器會要求您提供指紋、臉部或螢幕鎖定，或使用您的手機。如果沒有成功，您可以在 {minutes} 分鐘內再試，不必重新確認。",
+    "passkeyCreate": "現在新增密碼金鑰",
+    "useApp": "改用驗證器應用程式",
+    "usePasskey": "改用密碼金鑰",
+    "useRecovery": "改用備用碼",
+    "failed": "錯誤：無法完成變更。請再試一次。",
+    "setupHeading": "設定您的驗證器應用程式",
+    "setupOpen": "開啟驗證器應用程式，選擇新增帳戶。",
+    "setupScan": "用應用程式掃描這個 QR code，或輸入設定金鑰。",
+    "setupTap": "按下按鈕，即可將 Glazecalc 加入這支手機上的驗證器應用程式或密碼管理員。",
+    "showQr": "顯示 QR code，以便在另一台裝置上設定",
+    "setupScanOther": "請用另一台裝置上的驗證器應用程式掃描。",
+    "qrAlt": "用於將 Glazecalc 加入驗證器應用程式的 QR code",
+    "key": "設定金鑰",
+    "copyKey": "複製金鑰",
+    "openInApp": "加入此裝置上的驗證器應用程式",
+    "clipboardNote": "複製的文字可能會留在剪貼簿的歷史紀錄中，並傳到您的其他裝置。請直接貼到密碼管理員，然後清除剪貼簿的歷史紀錄。",
+    "setupCode": "輸入應用程式現在為 Glazecalc 顯示的 {digits} 位數驗證碼",
+    "setupFinish": "完成設定",
+    "codesHeading": "您的備用碼",
+    "codesText": "請妥善保管，例如存放在密碼管理員，或列印出來和您的重要文件放在一起。如果無法使用應用程式或密碼金鑰，可改用備用碼登入。每個備用碼只能使用一次。備用碼只會在此刻顯示。",
+    "print": "列印備用碼",
+    "printNote": "每個備用碼只能使用一次。請將此頁面妥善保管。",
+    "download": "下載為文字檔",
+    "copy": "複製備用碼",
+    "copied": "已複製。",
+    "copyFailed": "無法複製。請選取文字後自行複製。",
+    "saved": "我已儲存備用碼",
+    "fileTitle": "{email} 的 Glazecalc 備用碼",
+    "fileNote": "每個備用碼只能使用一次。請將此檔案妥善保管。"
+  },
+  "export": {
+    "heading": "下載我的資料",
+    "text": "將您帳戶中的所有內容存成一個檔案：您的帳戶資料、設定、現有原料、釉方、原料、添加物、筆記、燒窯紀錄、建議與垃圾桶。檔案不含您的密碼。請將檔案保存在私密的地方，因為其中有您儲存的一切內容。",
+    "json": "下載全部內容（JSON）",
+    "csvText": "也可以只將釉方或只將您自己的原料存成試算表，用 Excel、Numbers 或 Sheets 開啟。",
+    "recipes": "釉方（CSV）",
+    "materials": "原料（CSV）"
+  },
+  "settings": {
+    "heading": "設定",
+    "intro": "已儲存在您的帳戶中，所有裝置都會套用。",
+    "saveFailed": "無法儲存此設定。請再試一次。",
+    "language": {
+      "legend": "語言",
+      "help": "應用程式、指南與電子郵件所用的語言。變更後，此頁面會以該語言重新開啟。",
+      "saved": "已儲存：{language}。"
+    },
+    "region": {
+      "legend": "所在地區",
+      "none": {
+        "label": "未選擇",
+        "saved": "已儲存：未選擇地區，預設值依照瀏覽器。"
+      },
+      "saved": "已儲存：{region}。",
+      "help": "當地販售的原料，以及下方數字、日期、溫度與測溫錐的預設值。在您選擇之前，依照瀏覽器的語言。"
+    },
+    "format": {
+      "legend": "數字與日期",
+      "auto": {
+        "label": "依我的語言與地區",
+        "saved": "已儲存：數字與日期依您的語言與地區書寫。"
+      },
+      "saved": "已儲存：數字與日期採用{language}的格式。",
+      "help": "數字與日期的寫法：12,345.6 或 12.345,6，以及日與月的順序。"
+    },
+    "decimalMark": {
+      "legend": "輸入數值",
+      "either": {
+        "label": "小數點可用逗號或句點",
+        "example": "12,5 或 12.5",
+        "saved": "已儲存：輸入用量時，小數點可用逗號或句點。"
+      },
+      "comma": {
+        "label": "小數點用逗號",
+        "saved": "已儲存：輸入用量時，小數點用逗號。"
+      },
+      "point": {
+        "label": "小數點用句點",
+        "saved": "已儲存：輸入用量時，小數點用句點。"
+      },
+      "help": "選擇可用逗號或句點時，像 1,250 這樣的用量，會依上方設定的數字寫法解讀。"
+    },
+    "temperature": {
+      "legend": "溫度",
+      "celsius": {
+        "label": "攝氏",
+        "saved": "已儲存：溫度以 °C 顯示。"
+      },
+      "fahrenheit": {
+        "label": "華氏",
+        "saved": "已儲存：溫度以 °F 顯示。"
+      },
+      "help": "在您選擇之前，依照所在地區：美國用 °F，其他地方用 °C。"
+    },
+    "cones": {
+      "legend": "燒成",
+      "orton": {
+        "label": "以 Orton 測溫錐",
+        "example": "Orton 04 號測溫錐、Orton 6 號測溫錐",
+        "saved": "已儲存：以 Orton 測溫錐燒成。"
+      },
+      "sk": {
+        "label": "以 SK 測溫錐（JIS R 8101）",
+        "example": "SK 4a、SK 8",
+        "saved": "已儲存：以 SK 測溫錐燒成。"
+      },
+      "temperature": {
+        "label": "依溫度（如溫度控制器的程式）",
+        "saved": "已儲存：依溫度燒成。"
+      },
+      "help": "在您選擇之前，依照所在地區：美國、英國、愛爾蘭、澳洲與紐西蘭用 Orton 測溫錐，日本用 SK 測溫錐，歐洲其他地區用溫度。"
+    },
+    "density": {
+      "legend": "釉漿濃度",
+      "sg": {
+        "label": "比重",
+        "saved": "已儲存：釉漿濃度以比重表示。",
+        "example": "SG 1.45"
+      },
+      "baume": {
+        "label": "波美度（用比重計測得）",
+        "saved": "已儲存：釉漿濃度以波美度表示。"
+      },
+      "pint": {
+        "label": "品脫重，每英制品脫的盎司數",
+        "saved": "已儲存：釉漿濃度以品脫重表示。"
+      },
+      "help": "指南表示釉漿濃稠程度的方式。在您選擇之前，依照所在地區：義大利與日本用波美度，其他地方用比重。"
+    },
+    "theme": {
+      "legend": "淺色或深色",
+      "system": {
+        "label": "依此裝置的設定",
+        "saved": "已儲存：淺色或深色依各裝置的設定。"
+      },
+      "light": {
+        "label": "淺色",
+        "saved": "已儲存：一律淺色。"
+      },
+      "dark": {
+        "label": "深色",
+        "saved": "已儲存：一律深色。"
+      },
+      "help": "列印的釉方一律是白底黑字。"
+    },
+    "palette": {
+      "legend": "顏色",
+      "saved": "已儲存：{palette}按鈕與連結。",
+      "help": "用於按鈕、連結與分頁，以釉色命名。每種配色在淺色與深色下都容易閱讀。"
+    },
+    "weightUnit": {
+      "legend": "秤料單位",
+      "grams": {
+        "label": "公克",
+        "saved": "已儲存：秤料單位為公克。"
+      },
+      "pounds": {
+        "label": "磅與盎司",
+        "saved": "已儲存：秤料單位為磅與盎司。"
+      },
+      "help": "用於列印的調配量。"
+    },
+    "gramPrecision": {
+      "legend": "列印時的公克位數",
+      "single": {
+        "label": "精確到十分之一公克",
+        "saved": "已儲存：公克顯示到十分位。"
+      },
+      "full": {
+        "label": "完整精確度",
+        "saved": "已儲存：公克完整顯示，到小數點後 5 位。"
+      },
+      "help": "精確到十分位時，不到 10 g 的用量仍會顯示百分位（2.35 g），適合小量試驗配方中的呈色劑。"
+    },
+    "lead": {
+      "legend": "鉛",
+      "off": {
+        "label": "關閉：絕不在釉方中加入鉛，也不建議使用鉛",
+        "saved": "已儲存：絕不在釉方中加入鉛，也不建議使用鉛。"
+      },
+      "on": {
+        "label": "開啟：可加入並建議含鉛原料",
+        "saved": "已儲存：可加入並建議含鉛原料。"
+      },
+      "help": "鉛吸入或吞入都有毒，會在體內累積，含鉛的釉藥可能把鉛釋放到食物和飲料中；任何計算都無法得知燒成的器物是否會釋出鉛。關閉時，已含鉛的釉方仍照原樣開啟。",
+      "warning": "鉛只能以熔塊的形式使用，切勿使用紅鉛、白鉛、黃鉛或密陀僧（litharge）這類生鉛原料。請以濕式調配，切勿噴施，請戴防塵口罩，並以濕式清潔。含鉛釉的器物不可盛裝食物和飲料，除非燒成的器物已通過實驗室的溶出試驗。",
+      "turnOn": "開啟鉛",
+      "keepOff": "保持關閉"
+    },
+    "englishTerms": {
+      "legend": "英文術語",
+      "off": {
+        "label": "關閉",
+        "saved": "已儲存：不顯示英文術語。"
+      },
+      "on": {
+        "label": "在主要術語後顯示英文",
+        "saved": "已儲存：在主要術語後顯示英文。"
+      },
+      "help": "方便對照閱讀 Digitalfire 等英文資料：主要術語後會以括號顯示英文。"
+    },
+    "notice": {
+      "legend": "翻譯說明",
+      "shown": {
+        "label": "顯示",
+        "saved": "已儲存：顯示說明。"
+      },
+      "hidden": {
+        "label": "隱藏",
+        "saved": "已儲存：隱藏說明。安全指南中仍會保留一行說明。",
+        "savedPlain": "已儲存：隱藏說明。每個頁面頂端仍會保留一行說明。"
+      },
+      "help": "每個頁面頂端的說明，告知此頁由 AI 翻譯，並提供建議修正的方式。"
+    }
+  },
+  "confirmEmail": {
+    "heading": "確認您的電子郵件",
+    "intro": "按下按鈕以確認此地址。",
+    "confirm": "確認",
+    "incomplete": "此頁面需要確認郵件中的連結，而這個連結不完整。",
+    "account": "您的帳戶",
+    "signIn": "登入",
+    "failed": "錯誤：無法確認地址。請再試一次。"
+  }
+}
