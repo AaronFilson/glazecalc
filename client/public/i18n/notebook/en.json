@@ -9,7 +9,8 @@
       "text": "Your notebook is ready. A good first step: type in a glaze you already mix, its materials and amounts, and see its unity formula.",
       "firstRecipe": "Start your first recipe",
       "confirmHeading": "Confirm your email",
-      "confirm": "Confirm your email: we sent a link to {email}. Two-step sign-in needs it. Your <account>account page</account> can send it again."
+      "confirm": "Confirm your email: we sent a link to {email}. Two-step sign-in needs it. Your <account>account page</account> can send it again.",
+      "confirmText": "We sent a link to {email}. Open it to confirm the address is yours: two-step sign-in needs it. Your <account>account page</account> can send it again."
     },
     "sections": {
       "recipe": {

@@ -538,12 +538,24 @@ img {
   line-height: 1;
 }
 
+// Between a phone and a wide screen the menu has no room for the email beside the pages: "Account" alone,
+// as on a phone's bar (Home and the account page say who is signed in).
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .account-email {
+    display: none;
+  }
+}
+
 // Only on a phone, beside Menu (see app.ts).
 .nav-quick-account {
   display: none;
 }
 
 @media (max-width: 767.98px) {
+  // Tighter, so the name, the initial and Menu share one line on the narrowest phones (320px).
+  .app-nav {
+    column-gap: 0.75rem;
+  }
   .nav-toggle {
     display: inline-block;
   }
@@ -572,6 +584,8 @@ img {
     display: none;
     flex-basis: 100%;
     flex-direction: column;
+    // One column, as wide as the screen: wrapped, a column would be as wide as its widest item, the email.
+    flex-wrap: nowrap;
     align-items: stretch;
     padding: 0.5rem 0;
     &.open {
@@ -610,8 +624,15 @@ img {
       white-space: nowrap;
     }
   }
+  // The email shortens with an ellipsis rather than pushing Sign out off the screen: the menu, its account
+  // row and the link may each be narrower than the email (a flex item is otherwise as wide as its content).
+  .nav-menu,
+  .nav-account,
+  .account-text {
+    min-width: 0;
+  }
   .account-email {
-    max-width: none;
+    max-width: 100%;
   }
 }
 

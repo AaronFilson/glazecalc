@@ -71,7 +71,11 @@ const SECTIONS: { path: string; fragment?: string; title: string; text: string }
         @if (auth.unverified()) {
           <p class="home-confirm">
             <gc-rich
-              [text]="t('notebook.home.welcome.confirm', { email: auth.email() })"
+              [text]="
+                t(welcome ? 'notebook.home.welcome.confirm' : 'notebook.home.welcome.confirmText', {
+                  email: auth.email()
+                })
+              "
               [links]="{ account: '/account' }"
             />
           </p>

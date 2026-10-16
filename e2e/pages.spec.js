@@ -1,5 +1,5 @@
 const { test, expect } = require('@playwright/test');
-const { expectFieldProblem, signUpAndSignIn } = require('./helpers');
+const { API, expectFieldProblem, signUpAndSignIn } = require('./helpers');
 
 const errors = (page) => page.locator('.errors-section');
 const messages = (page) => page.locator('.server-msg');
@@ -130,6 +130,25 @@ test.describe('home and navigation', () => {
     await page.locator('.nav-links').getByRole('link', { name: 'Notes' }).click();
     await expect(page).toHaveURL(/\/notes$/);
     await expect(page.locator('.nav-links')).toBeHidden();
+  });
+
+  test('on a phone, nothing is wider than the screen, even the menu with a long email', async ({ page }) => {
+    // A long address, signed in in place of the usual one.
+    const email = 'a-rather-long-address-for-a-potter-' + Date.now() + '@studio.example.com';
+    expect((await page.request.post(API + '/signup', { data: { email, password: 'password123' } })).ok()).toBe(true);
+    for (const width of [320, 390, 430]) {
+      await page.setViewportSize({ width, height: 844 });
+      await page.goto('/home');
+      await expect(page.locator('h1')).toBeVisible();
+      await page.getByRole('button', { name: 'Menu' }).click();
+      await expect(page.locator('.nav-account .account-email')).toHaveText(email);
+      const signOut = await page.locator('.nav-account').getByRole('button', { name: 'Sign out' }).boundingBox();
+      expect(signOut.x + signOut.width, 'Sign out at ' + width + 'px').toBeLessThanOrEqual(width);
+      const overflow = await page.evaluate(
+        () => globalThis.document.documentElement.scrollWidth - globalThis.innerWidth
+      );
+      expect(overflow, 'sideways scroll at ' + width + 'px').toBeLessThanOrEqual(0);
+    }
   });
 });
 

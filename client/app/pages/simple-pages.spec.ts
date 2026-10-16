@@ -75,6 +75,8 @@ describe('static pages', () => {
     // The next visit: only the email, until it is confirmed.
     const next = (await create(HomePage)).fixture;
     expect(text(next, '.home-welcome h2')).toBe('Confirm your email');
+    // The heading says it, so the line under it does not again.
+    expect(text(next, '.home-confirm')).toMatch(/^We sent a link to new@example.com\./);
     expect(next.nativeElement.querySelector('.home-welcome a.btn')).toBeNull();
     next.destroy();
     auth.unverified.set(false);

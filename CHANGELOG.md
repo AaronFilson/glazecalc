@@ -356,7 +356,8 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   - **The menu says "Account"** (or "Trial account"), with a round initial and the email in small
     text under it, and turns the palette's color when hovered or on the account page, like the other
     links. On a phone it comes first after the pages, beside Sign out, and the initial shows beside
-    Menu too. Home has an "Account and settings" card.
+    Menu too; a long email shortens with an ellipsis, and between a phone and a wide screen
+    "Account" stands alone. Home has an "Account and settings" card.
   - **A new account is welcomed on Home**, once, with "Start your first recipe", and asked to open
     the emailed link until it has.
   - **The account page lists its sections at the top**, each a link to its heading, so the
