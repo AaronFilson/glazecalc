@@ -159,10 +159,27 @@ export class PoisonLines {
   }
 
   protected notes(line: SafetyLine): string {
-    return [line.hours, line.note, line.animals, line.fee]
-      .filter((part): part is string => !!part)
-      .map((part) => this.words(part))
-      .join('. ')
-      .replace(/\.\./g, '.');
+    return joinNotes(
+      [line.hours, line.note, line.animals, line.fee]
+        .filter((part): part is string => !!part)
+        .map((part) => this.words(part))
+    );
   }
 }
+
+/** Chinese and Japanese end a sentence with 。 and no space. */
+const CJK_END = /[\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}）」』]$/u;
+
+/**
+ * A line's notes as sentences, each closed in its own language's way:
+ * "Weekdays 9–17. Free" in English, 「平日 9–17 時。無料」 in Japanese,
+ * never an English ". " after a 。.
+ */
+export const joinNotes = (parts: string[]): string =>
+  parts.reduce((out, part) => {
+    if (!out) return part;
+    if (/[。！？]$/u.test(out)) return out + part;
+    if (CJK_END.test(out)) return out + '。' + part;
+    if (/[.!?]$/.test(out)) return out + ' ' + part;
+    return out + '. ' + part;
+  }, '');
