@@ -141,7 +141,6 @@
     "nameCheck": "Ključu za dostop dajte ime z 1 do {most} znaki.",
     "passkeyLimit": "Imate {most} ključev za dostop, kar je največ, kolikor jih račun lahko ima. Če želite dodati novega, enega odstranite.",
     "codesTitle": "Obnovitvene kode",
-    "codesLeft": "{count, plural, one {Ostala je # obnovitvena koda} two {Ostali sta # obnovitveni kodi} few {Ostale so # obnovitvene kode} other {Ostalo je # obnovitvenih kod}} od {total}. Če ne morete uporabiti aplikacije ali ključa za dostop, vas prijavi koda. Vsaka koda deluje samo enkrat.",
     "codesLow": "Kmalu ustvarite nove kode. Če jih zmanjka in izgubite aplikacijo ter ključe za dostop, se ne boste mogli prijaviti.",
     "newCodes": "Ustvari nove obnovitvene kode",
     "offHeading": "Izklop",

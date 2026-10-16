@@ -141,7 +141,6 @@
     "nameCheck": "Ge lösennyckeln ett namn på 1 till {most} tecken.",
     "passkeyLimit": "Kontot har {most} lösennycklar, det högsta antal ett konto kan ha. Ta bort en för att lägga till en annan.",
     "codesTitle": "Återställningskoder",
-    "codesLeft": "{count, plural, one {# återställningskod} other {# återställningskoder}} av {total} kvar. Om appen eller en lösennyckel inte går att använda kan du logga in med en kod i stället. Varje kod fungerar en gång.",
     "codesLow": "Skapa nya koder snart. Om de tar slut och både appen och inloggningsnycklarna försvinner går det inte att logga in.",
     "newCodes": "Skapa nya återställningskoder",
     "offHeading": "Stänga av",

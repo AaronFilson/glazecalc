@@ -141,7 +141,6 @@
     "nameCheck": "Prieigos raktui suteikite nuo 1 iki {most} simbolių pavadinimą.",
     "passkeyLimit": "Turite {most} prieigos raktų, daugiau paskyroje būti negali. Kad pridėtumėte kitą, vieną pašalinkite.",
     "codesTitle": "Atkūrimo kodai",
-    "codesLeft": "Liko {count, plural, one {# atkūrimo kodas} few {# atkūrimo kodai} many {# atkūrimo kodo} other {# atkūrimo kodų}} iš {total}. Jei negalite naudoti programos ar prieigos rakto, prisijungti padės kodas. Kiekvieną kodą galima panaudoti vieną kartą.",
     "codesLow": "Netrukus sukurkite naujus kodus. Jei jie baigsis, o jūs prarasite programą ir prieigos raktus, prisijungti nebegalėsite.",
     "newCodes": "Sukurti naujus atkūrimo kodus",
     "offHeading": "Išjungimas",

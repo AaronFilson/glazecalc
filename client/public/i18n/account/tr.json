@@ -141,7 +141,6 @@
     "nameCheck": "Geçiş anahtarına 1 ile {most} karakter arasında bir ad verin.",
     "passkeyLimit": "{most} geçiş anahtarınız var; bu, bir hesabın sahip olabileceği en yüksek sayı. Yenisini eklemek için birini kaldırın.",
     "codesTitle": "Kurtarma kodları",
-    "codesLeft": "{total} kurtarma kodundan {count, plural, one {# kod} other {# kod}} kaldı. Uygulamanızı veya bir geçiş anahtarını kullanamazsanız onların yerine bir kodla oturum açabilirsiniz. Her kod bir kez çalışır.",
     "codesLow": "Yakında yeni kodlar oluşturun. Kodlar biterse ve uygulamanızı ve geçiş anahtarlarınızı kaybederseniz oturum açamazsınız.",
     "newCodes": "Yeni kurtarma kodları oluştur",
     "offHeading": "Devre dışı bırakma",

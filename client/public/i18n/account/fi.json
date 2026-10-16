@@ -141,7 +141,6 @@
     "nameCheck": "Anna pääsyavaimelle nimi, jossa on 1–{most} merkkiä.",
     "passkeyLimit": "Pääsyavaimia on {most}, mikä on tilin enimmäismäärä. Poista yksi, niin voit lisätä toisen.",
     "codesTitle": "Varmuuskoodit",
-    "codesLeft": "{total} koodista on jäljellä {count, plural, one {# varmuuskoodi} other {# varmuuskoodia}}. Jos sovellusta tai pääsyavainta ei voi käyttää, koodilla pääsee kirjautumaan sisään. Jokainen koodi toimii vain kerran.",
     "codesLow": "Luo uudet koodit pian. Jos ne loppuvat ja sovellus ja pääsyavaimet menetetään, kirjautuminen ei onnistu.",
     "newCodes": "Luo uudet varmuuskoodit",
     "offHeading": "Käytöstä poistaminen",

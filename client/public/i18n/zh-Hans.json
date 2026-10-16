@@ -233,7 +233,6 @@
     "aliases": "又称：{list}",
     "madeBy": "生产商：{name}",
     "source": "来源：",
-    "hazards": "危害",
     "noChemistry": "无化学数据：不计入釉式",
     "countedAs": "按“{name}”计算",
     "nothingMatches": "没有匹配项。请换个名称、类别或地区试试。",

@@ -46,7 +46,6 @@
     "fieldSelect": "选择字段并添加到烧窑记录：",
     "addField": "添加字段",
     "included": "已添加的字段：",
-    "fieldName": "字段名称：{name}",
     "moveLeft": "字段左移",
     "moveRight": "字段右移",
     "removeField": "移除字段",
@@ -57,7 +56,6 @@
     "removeRow": "移除行",
     "save": "保存",
     "storedHeading": "我保存的烧窑记录：",
-    "stored": "名称：{title}，使用的窑：{kiln}，日期：{date}",
     "storedNotes": "备注：{notes}",
     "titleMissing": "请为这次烧窑填写名称。",
     "fieldsMissing": "请至少添加一个要记录的字段，例如{example}。",
@@ -69,7 +67,6 @@
   "notes": {
     "title": "笔记",
     "lead": "关于釉的其他值得记住的事。",
-    "intro": "这是笔记页面。您可以在这里记笔记并保存。",
     "titleLabel": "标题：",
     "content": "笔记内容：",
     "save": "保存",

@@ -141,7 +141,6 @@
     "nameCheck": "Nazwa klucza dostępu musi mieć od 1 do {most} znaków.",
     "passkeyLimit": "Na koncie jest {most} kluczy dostępu, czyli maksimum. Aby dodać kolejny, należy usunąć jeden z nich.",
     "codesTitle": "Kody odzyskiwania",
-    "codesLeft": "{count, plural, one {Został # kod odzyskiwania} few {Zostały # kody odzyskiwania} many {Zostało # kodów odzyskiwania} other {Zostało # kodu odzyskiwania}} z {total}. Jeśli nie można użyć aplikacji ani klucza dostępu, można zalogować się kodem. Każdy kod działa tylko raz.",
     "codesLow": "Wkrótce należy wygenerować nowe kody. Jeśli się skończą, a aplikacja i klucze dostępu zostaną utracone, zalogowanie nie będzie możliwe.",
     "newCodes": "Wygeneruj nowe kody odzyskiwania",
     "offHeading": "Wyłączanie",

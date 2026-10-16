@@ -141,7 +141,6 @@
     "nameCheck": "Ponga a la llave de acceso un nombre de 1 a {most} caracteres.",
     "passkeyLimit": "Tiene {most} llaves de acceso, el máximo para una cuenta. Quite una para añadir otra.",
     "codesTitle": "Códigos de recuperación",
-    "codesLeft": "{count, plural, one {Queda # código de recuperación} many {Quedan # códigos de recuperación} other {Quedan # códigos de recuperación}} de {total}. Si no puede usar su aplicación o una llave de acceso, puede iniciar sesión con un código en su lugar. Cada código funciona una sola vez.",
     "codesLow": "Cree códigos nuevos pronto. Si se agotan y pierde su aplicación y sus llaves de acceso, no podrá iniciar sesión.",
     "newCodes": "Crear códigos de recuperación nuevos",
     "offHeading": "Desactivarlo",

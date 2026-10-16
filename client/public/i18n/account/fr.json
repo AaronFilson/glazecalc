@@ -141,7 +141,6 @@
     "nameCheck": "Donnez à la clé d’accès un nom de 1 à {most} caractères.",
     "passkeyLimit": "Vous avez {most} clés d’accès, le maximum pour un compte. Retirez-en une pour en ajouter une autre.",
     "codesTitle": "Codes de récupération",
-    "codesLeft": "Il reste {count, plural, one {# code de récupération} many {# codes de récupération} other {# codes de récupération}} sur {total}. Si vous ne pouvez pas utiliser votre application ou une clé d’accès, un code vous connecte à la place. Chaque code ne fonctionne qu’une fois.",
     "codesLow": "Créez bientôt de nouveaux codes. S’ils sont épuisés et que vous perdez votre application et vos clés d’accès, vous ne pourrez plus vous connecter.",
     "newCodes": "Créer de nouveaux codes de récupération",
     "offHeading": "Désactivation",

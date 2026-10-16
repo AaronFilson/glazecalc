@@ -141,7 +141,6 @@
     "nameCheck": "Pristupnom ključu dajte naziv od 1 do {most} znakova.",
     "passkeyLimit": "Imate {most} pristupnih ključeva, što je najviše što račun može imati. Da biste dodali novi, jedan uklonite.",
     "codesTitle": "Kodovi za oporavak",
-    "codesLeft": "{count, plural, one {Preostao je # kod za oporavak} few {Preostala su # koda za oporavak} other {Preostalo je # kodova za oporavak}} od {total}. Ako ne možete upotrijebiti aplikaciju ili pristupni ključ, prijavit će vas kod. Svaki kod vrijedi samo jednom.",
     "codesLow": "Uskoro stvorite nove kodove. Ako ih ponestane, a izgubite aplikaciju i pristupne ključeve, nećete se moći prijaviti.",
     "newCodes": "Stvori nove kodove za oporavak",
     "offHeading": "Isključivanje",

@@ -141,7 +141,6 @@
     "nameCheck": "Geef de passkey een naam van 1 tot {most} tekens.",
     "passkeyLimit": "U hebt {most} passkeys, het maximum voor een account. Verwijder er een om er nog een toe te voegen.",
     "codesTitle": "Herstelcodes",
-    "codesLeft": "Nog {count, plural, one {# herstelcode} other {# herstelcodes}} van {total} over. Als u uw app of een passkey niet kunt gebruiken, logt een code u in. Elke code werkt één keer.",
     "codesLow": "Maak binnenkort nieuwe codes. Als ze op zijn en u uw app en passkeys kwijtraakt, kunt u niet meer inloggen.",
     "newCodes": "Nieuwe herstelcodes maken",
     "offHeading": "Uitzetten",

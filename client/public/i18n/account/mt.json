@@ -141,7 +141,6 @@
     "nameCheck": "Agħti isem lill-passkey, b’għadd ta’ karattri minn 1 sa {most}.",
     "passkeyLimit": "Laħaqt l-akbar għadd ta’ passkeys li jista’ jkollu kont: {most}. Neħħi waħda biex iżżid oħra.",
     "codesTitle": "Kodiċijiet ta’ rkupru",
-    "codesLeft": "Fadal {count, plural, one {# kodiċi ta’ rkupru} two {# kodiċijiet ta’ rkupru} few {# kodiċijiet ta’ rkupru} many {#-il kodiċi ta’ rkupru} other {# kodiċi ta’ rkupru}} minn {total}. Jekk ma tistax tuża l-app jew passkey, kodiċi jdaħħlek minflokhom. Kull kodiċi jaħdem darba.",
     "codesLow": "Oħloq kodiċijiet ġodda dalwaqt. Jekk jispiċċaw u titlef l-app u l-passkeys tiegħek, ma tkunx tista’ tidħol.",
     "newCodes": "Oħloq kodiċijiet ta’ rkupru ġodda",
     "offHeading": "It-tifi",

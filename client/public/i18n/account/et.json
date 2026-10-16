@@ -141,7 +141,6 @@
     "nameCheck": "Andke pääsuvõtmele nimi, mis on 1 kuni {most} märki pikk.",
     "passkeyLimit": "Teil on {most} pääsuvõtit, rohkem kontol olla ei saa. Uue lisamiseks eemaldage üks.",
     "codesTitle": "Taastekoodid",
-    "codesLeft": "{total} taastekoodist on alles {count, plural, one {# taastekood} other {# taastekoodi}}. Kui te ei saa oma rakendust ega pääsuvõtit kasutada, logib teid sisse kood. Iga kood töötab ühe korra.",
     "codesLow": "Tehke peagi uued koodid. Kui need otsa saavad ja kaotate rakenduse ning pääsuvõtmed, ei saa te sisse logida.",
     "newCodes": "Tee uued taastekoodid",
     "offHeading": "Väljalülitamine",

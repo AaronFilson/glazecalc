@@ -141,7 +141,6 @@
     "nameCheck": "Adjon a hozzáférési kulcsnak 1 és {most} karakter közötti nevet.",
     "passkeyLimit": "Önnek {most} hozzáférési kulcsa van, ennél többet egy fiók nem tarthat. Egy újabb hozzáadásához távolítson el egyet.",
     "codesTitle": "Helyreállítási kódok",
-    "codesLeft": "{count, plural, one {# helyreállítási kód} other {# helyreállítási kód}} maradt a(z) {total} közül. Ha nem tudja használni az alkalmazást vagy a hozzáférési kulcsot, egy kód bejelentkezteti helyette. Minden kód egyszer használható.",
     "codesLow": "Hamarosan készítsen új kódokat. Ha elfogynak, és elveszíti az alkalmazást és a hozzáférési kulcsokat, nem tud bejelentkezni.",
     "newCodes": "Új helyreállítási kódok készítése",
     "offHeading": "Kikapcsolás",

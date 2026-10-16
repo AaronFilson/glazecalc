@@ -46,7 +46,6 @@
     "fieldSelect": "選擇欄位並加入燒窯紀錄：",
     "addField": "新增欄位",
     "included": "您已加入的欄位：",
-    "fieldName": "欄位名稱：{name}",
     "moveLeft": "欄位左移",
     "moveRight": "欄位右移",
     "removeField": "移除欄位",
@@ -57,7 +56,6 @@
     "removeRow": "移除此列",
     "save": "儲存",
     "storedHeading": "我儲存的燒窯紀錄：",
-    "stored": "名稱：{title}，使用的窯：{kiln}，日期：{date}",
     "storedNotes": "備註：{notes}",
     "titleMissing": "請為這次燒窯取個名稱。",
     "fieldsMissing": "請至少新增一個要記錄的欄位，例如「{example}」。",
@@ -69,7 +67,6 @@
   "notes": {
     "title": "筆記",
     "lead": "關於您的釉藥，其他值得記住的事。",
-    "intro": "這是筆記頁面。您可以在這裡寫筆記並儲存。",
     "titleLabel": "標題：",
     "content": "您的筆記：",
     "save": "儲存",

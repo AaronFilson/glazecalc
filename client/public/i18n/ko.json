@@ -233,7 +233,6 @@
     "aliases": "다른 이름: {list}",
     "madeBy": "제조사: {name}",
     "source": "출처:",
-    "hazards": "유해성",
     "noChemistry": "화학 조성 없음: 제게르식에서 제외",
     "countedAs": "계산 기준: {name}",
     "nothingMatches": "일치하는 항목이 없습니다. 다른 이름, 종류, 지역을 선택해 보세요.",

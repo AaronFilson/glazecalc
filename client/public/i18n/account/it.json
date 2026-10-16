@@ -141,7 +141,6 @@
     "nameCheck": "Dia alla passkey un nome da 1 a {most} caratteri.",
     "passkeyLimit": "Ha {most} passkey, il massimo per un account. Ne rimuova una per aggiungerne un’altra.",
     "codesTitle": "Codici di recupero",
-    "codesLeft": "{count, plural, one {Resta # codice di recupero} many {Restano # codici di recupero} other {Restano # codici di recupero}} su {total}. Se non può usare la Sua app o una passkey, un codice La fa accedere al loro posto. Ogni codice funziona una sola volta.",
     "codesLow": "Crei presto nuovi codici. Se finiscono e perde la Sua app e le Sue passkey, non potrà più accedere.",
     "newCodes": "Crea nuovi codici di recupero",
     "offHeading": "Disattivazione",

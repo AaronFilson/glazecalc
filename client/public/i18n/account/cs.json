@@ -141,7 +141,6 @@
     "nameCheck": "Zadejte název přístupového klíče o délce 1 až {most} znaků.",
     "passkeyLimit": "Máte {most} přístupových klíčů, což je maximum pro jeden účet. Chcete-li přidat další, jeden odeberte.",
     "codesTitle": "Kódy pro obnovení",
-    "codesLeft": "{count, plural, one {Zbývá # kód pro obnovení} few {Zbývají # kódy pro obnovení} many {Zbývá # kódu pro obnovení} other {Zbývá # kódů pro obnovení}} z {total}. Pokud nemůžete použít aplikaci ani přístupový klíč, přihlásí vás kód. Každý kód funguje jen jednou.",
     "codesLow": "Brzy si vytvořte nové kódy. Pokud dojdou a ztratíte aplikaci i přístupové klíče, nebudete se moci přihlásit.",
     "newCodes": "Vytvořit nové kódy pro obnovení",
     "offHeading": "Vypnutí",

@@ -141,7 +141,6 @@
     "nameCheck": "Piešķiriet piekļuves atslēgai nosaukumu no 1 līdz {most} rakstzīmēm.",
     "passkeyLimit": "Jūsu kontā jau ir lielākais atļautais piekļuves atslēgu skaits: {most}. Lai pievienotu citu, vienu noņemiet.",
     "codesTitle": "Atkopšanas kodi",
-    "codesLeft": "No {total} atkopšanas kodiem {count, plural, zero {atlicis # kodu} one {atlicis # kods} other {atlikuši # kodi}}. Ja nevarat izmantot lietotni vai piekļuves atslēgu, pierakstīties var ar kodu. Katru kodu var izmantot vienu reizi.",
     "codesLow": "Drīz izveidojiet jaunus kodus. Ja tie beigsies un jūs pazaudēsiet lietotni un piekļuves atslēgas, pierakstīties nevarēsiet.",
     "newCodes": "Izveidot jaunus atkopšanas kodus",
     "offHeading": "Izslēgšana",

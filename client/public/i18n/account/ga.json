@@ -141,7 +141,6 @@
     "nameCheck": "Tabhair ainm idir 1 agus {most} carachtar don eochair rochtana.",
     "passkeyLimit": "Tá {most} eochair rochtana agat, an líon is mó is féidir a bheith ag cuntas. Bain ceann acu chun ceann eile a chur leis.",
     "codesTitle": "Cóid aisghabhála",
-    "codesLeft": "Tá {count, plural, one {# chód aisghabhála} two {# chód aisghabhála} few {# chód aisghabhála} many {# gcód aisghabhála} other {# cód aisghabhála}} fágtha as {total}. Mura féidir leat d’aip nó eochair rochtana a úsáid, síníonn cód isteach thú ina n-ionad. Oibríonn gach cód uair amháin.",
     "codesLow": "Déan cóid nua go luath. Má ritheann siad amach agus má chailleann tú d’aip agus d’eochracha rochtana, ní féidir leat síniú isteach.",
     "newCodes": "Déan cóid aisghabhála nua",
     "offHeading": "É a chur as",

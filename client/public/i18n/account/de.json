@@ -141,7 +141,6 @@
     "nameCheck": "Geben Sie dem Passkey einen Namen mit 1 bis {most} Zeichen.",
     "passkeyLimit": "Sie haben {most} Passkeys, das ist die höchste Zahl für ein Konto. Entfernen Sie einen, um einen weiteren hinzuzufügen.",
     "codesTitle": "Wiederherstellungscodes",
-    "codesLeft": "Noch {count, plural, one {# Wiederherstellungscode} other {# Wiederherstellungscodes}} von {total}. Wenn Sie Ihre App oder einen Passkey nicht nutzen können, meldet Sie stattdessen ein Code an. Jeder Code funktioniert nur einmal.",
     "codesLow": "Erstellen Sie bald neue Codes. Wenn sie aufgebraucht sind und Sie Ihre App und Ihre Passkeys verlieren, können Sie sich nicht mehr anmelden.",
     "newCodes": "Neue Wiederherstellungscodes erstellen",
     "offHeading": "Ausschalten",

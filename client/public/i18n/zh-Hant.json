@@ -233,7 +233,6 @@
     "aliases": "又稱：{list}",
     "madeBy": "製造商：{name}",
     "source": "出處：",
-    "hazards": "危害",
     "noChemistry": "沒有化學成分：不計入塞格式",
     "countedAs": "視為 {name}",
     "nothingMatches": "沒有符合的項目。請試試其他名稱、類別或地區。",

@@ -141,7 +141,6 @@
     "nameCheck": "Dê à chave de acesso um nome com 1 a {most} carateres.",
     "passkeyLimit": "Tem {most} chaves de acesso, o máximo que uma conta pode ter. Remova uma para adicionar outra.",
     "codesTitle": "Códigos de recuperação",
-    "codesLeft": "{count, plural, one {Resta # código de recuperação} many {Restam # códigos de recuperação} other {Restam # códigos de recuperação}} de um total de {total}. Se não puder usar a aplicação ou uma chave de acesso, um código permite-lhe iniciar sessão. Cada código funciona uma só vez.",
     "codesLow": "Crie novos códigos em breve. Se acabarem e perder a aplicação e as chaves de acesso, não conseguirá iniciar sessão.",
     "newCodes": "Criar novos códigos de recuperação",
     "offHeading": "Desativar",

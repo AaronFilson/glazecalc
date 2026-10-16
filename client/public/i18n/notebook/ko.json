@@ -46,7 +46,6 @@
     "fieldSelect": "소성 기록에 넣을 항목을 선택해 추가하세요:",
     "addField": "항목 추가",
     "included": "추가한 항목:",
-    "fieldName": "항목 이름: {name}",
     "moveLeft": "항목을 왼쪽으로 이동",
     "moveRight": "항목을 오른쪽으로 이동",
     "removeField": "항목 삭제",
@@ -57,7 +56,6 @@
     "removeRow": "행 삭제",
     "save": "저장",
     "storedHeading": "저장한 소성 기록:",
-    "stored": "제목: {title}, 가마: {kiln}, 날짜: {date}",
     "storedNotes": "메모: {notes}",
     "titleMissing": "소성 제목을 입력하세요.",
     "fieldsMissing": "기록할 항목을 하나 이상 추가하세요(예: {example}).",
@@ -69,7 +67,6 @@
   "notes": {
     "title": "메모",
     "lead": "유약에 관해 그 밖에 기억해 둘 만한 것을 적는 곳입니다.",
-    "intro": "메모 페이지입니다. 여기에서 메모를 작성하고 저장할 수 있습니다.",
     "titleLabel": "제목:",
     "content": "메모 내용:",
     "save": "저장",

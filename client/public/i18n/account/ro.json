@@ -141,7 +141,6 @@
     "nameCheck": "Dați cheii de acces un nume de 1 până la {most} caractere.",
     "passkeyLimit": "Aveți {most} chei de acces, maximul pentru un cont. Eliminați una ca să adăugați alta.",
     "codesTitle": "Coduri de recuperare",
-    "codesLeft": "{count, plural, one {A rămas # cod de recuperare} few {Au rămas # coduri de recuperare} other {Au rămas # de coduri de recuperare}} din {total}. Dacă nu puteți folosi aplicația sau o cheie de acces, un cod vă conectează în schimb. Fiecare cod funcționează o singură dată.",
     "codesLow": "Creați curând coduri noi. Dacă se termină și pierdeți aplicația și cheile de acces, nu vă veți mai putea conecta.",
     "newCodes": "Creați coduri de recuperare noi",
     "offHeading": "Dezactivarea",
