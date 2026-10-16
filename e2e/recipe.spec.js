@@ -287,7 +287,8 @@ test('says when a recipe has no flux, and will not save it', async ({ page }) =>
   // Said beside the save buttons, where the person is looking.
   await expect(page.locator('.recipe-save-problem')).toContainText('no flux');
   await expect(page.locator('.server-msg')).toHaveCount(0);
-  await expect(saved(page)).not.toContainText('Just Silica');
+  // Nothing saved: no list of saved recipes.
+  await expect(saved(page)).toHaveCount(0);
 });
 
 test('asks for an amount for every material', async ({ page }) => {
@@ -338,7 +339,8 @@ test('fits the narrowest phone, 320px, without scrolling sideways', async ({ pag
   await addStandardMaterial(page, 'Wollastonite (NYAD 400)', 20);
   await addColorant(page, 'Spanish red iron oxide', 2);
   await save(page);
-  // The saved recipe's buttons are the widest row.
+  // The saved recipe's buttons, with More open, are the widest row.
+  await saved(page).getByRole('button', { name: 'More for Phone test' }).click();
   await expect(saved(page).getByRole('button', { name: 'Compare Phone test' })).toBeVisible();
   const overflow = await page.evaluate(
     () => globalThis.document.documentElement.scrollWidth - globalThis.document.documentElement.clientWidth

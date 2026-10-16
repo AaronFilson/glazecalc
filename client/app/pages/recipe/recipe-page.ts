@@ -585,9 +585,20 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
     this.loadStandardMaterials();
     void this.load(this.additives.getAll(), this.myAdditives, marker('recipe.page.fetchAdditives'));
     this.loadStandardAdditives();
-    void this.load(this.recipes.getAll(), this.myRecipes, marker('recipe.page.fetchRecipes')).then(() =>
-      this.recipesLoaded.set(true)
-    );
+    void this.load(this.recipes.getAll(), this.myRecipes, marker('recipe.page.fetchRecipes')).then(() => {
+      this.recipesLoaded.set(true);
+      // Opened at the saved recipes (Home's Recipes card): they arrive after the page, so the app could not go there.
+      if (this.route.snapshot.fragment === 'saved-recipes' && this.myRecipes().length) {
+        afterNextRender(
+          () => {
+            const heading = document.getElementById('saved-heading');
+            heading?.scrollIntoView({ block: 'start' });
+            heading?.focus({ preventScroll: true });
+          },
+          { injector: this.injector }
+        );
+      }
+    });
   }
 
   // Materials and additives.
