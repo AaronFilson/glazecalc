@@ -116,7 +116,7 @@ describe('region facts', () => {
   const guides = JSON.parse(
     fs.readFileSync(new URL('../../client/public/i18n/guides/en.json', import.meta.url), 'utf8')
   );
-  const HTTP_ONLY = ['丸二陶料', '太麟化工原料有限公司'];
+  const HTTP_ONLY = ['丸二陶料', '太麟化工原料有限公司', 'Sam Mui Kuang Pottery'];
   const checkedLately = (fact: { checked: string; source?: string; url?: string }, label: string) => {
     expect(fact.source ?? fact.url, label).to.match(/^https:\/\//);
     expect(Date.parse(fact.checked), label + ': check this again').to.be.above(yearAgo);
@@ -561,5 +561,52 @@ describe('Taiwan', () => {
     const { shops } = suppliers.shopsFor('TW')!;
     expect(shops.map((shop) => [shop.name, shop.url])).to.eql([['太麟化工原料有限公司', 'http://www.tai-lin.com.tw/']]);
     expect(JSON.stringify(suppliers.SUPPLIERS['TW'])).not.to.contain('glazes.com.tw');
+  });
+});
+
+// Singapore (docs/asia-plan.md, Phase C), from research_notes/Asia/verification-KR-TW-SG-MY-2026-10-16.md.
+describe('Singapore', () => {
+  it('stays in English, fires by temperature, and lists the US library', () => {
+    expect(regions.regionFor('SG')).to.include({ temperature: 'C', cones: 'temperature', library: 'US' });
+    expect(regions.regionFor('SG')!.languages[0]).to.equal('en');
+    expect(regions.formatLocaleFor('en', 'SG', 'auto')).to.equal('en-SG');
+  });
+
+  it('gives 995, no poison line (none is on an official page), and the health ministry', () => {
+    const shown = safety.shownFor('SG')!;
+    expect(shown.emergency.map((line) => line.number)).to.eql(['995']);
+    expect(shown.poison).to.eql([]);
+    expect(shown.advice).to.eql([]);
+    expect(JSON.stringify(safety.SAFETY['SG'])).not.to.match(/6423|6262|1777/);
+    expect(safety.ministryFor('SG')).to.include({ url: 'https://www.moh.gov.sg/' });
+  });
+
+  it('keeps the earlier check date for the statutes, which could not be read again', () => {
+    const facts = workplace.workplaceFor('SG')!;
+    expect(facts.silica).to.include({ quartz: 0.1, cristobalite: 0.05, kind: 'binding', checked: '2026-10-12' });
+    expect(facts.agency).to.include({ abbr: 'MOM' });
+    // SS 548's classes were not read, and N95 was seen only in a search extract.
+    expect(facts.respirators).to.equal(null);
+    expect(food.foodRulesFor('SG')!.rules.checked).to.equal('2026-10-12');
+  });
+
+  it('gives lead only, in the US kinds of piece, each of six within the limit', () => {
+    const { rules } = food.foodRulesFor('SG')!;
+    expect(rules.limits.map((l) => [l.category, l.lead, l.unit, l.judged])).to.eql([
+      ['flatware', 3, 'µg/mL', 'each'],
+      ['smallHollow', 2, 'µg/mL', 'each'],
+      ['cups', 0.5, 'µg/mL', 'each'],
+      ['largeHollow', 1, 'µg/mL', 'each'],
+      ['pitchers', 0.5, 'µg/mL', 'each']
+    ]);
+    for (const limit of rules.limits) expect(limit.cadmium).to.equal(undefined);
+    expect(rules.note).to.contain('lead only');
+  });
+
+  it('names two shops, and not the one known only from an extract', () => {
+    const { shops } = suppliers.shopsFor('SG')!;
+    expect(shops.map((shop) => shop.name)).to.eql(['Sam Mui Kuang Pottery', "The Potters' Guilt"]);
+    expect(shops[1]!.sells).not.to.include('materials');
+    expect(JSON.stringify(suppliers.SUPPLIERS['SG'])).not.to.contain('Wei Chuan');
   });
 });

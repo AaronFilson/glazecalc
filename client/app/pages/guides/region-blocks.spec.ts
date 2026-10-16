@@ -324,3 +324,30 @@ describe('Taiwan', () => {
     expect(paragraphsOf(element)[0]).toContain('ppm here is milligrams per litre of the test solution (mg/L).');
   });
 });
+
+describe('Singapore', () => {
+  it('gives 995, says no public poison line was confirmed, and links the health ministry', async () => {
+    const { element } = await create(PoisonLines, 'SG');
+    const calls = [...element.querySelectorAll('a[href^="tel:"]')].map((a) => a.getAttribute('href'));
+    expect(calls).toEqual(['tel:995']);
+    expect(element.textContent).toContain('We could not confirm a public poison line here.');
+    expect(element.querySelector('a[href="https://www.moh.gov.sg/"]')?.textContent).toBe('Ministry of Health');
+  });
+
+  it('gives the binding limits for quartz and cristobalite, and no mask classes', async () => {
+    const { element, rows } = await create(SilicaLimit, 'SG');
+    expect(rows()).toEqual([
+      ['Quartz', '0.1 mg/m³'],
+      ['Cristobalite', '0.05 mg/m³']
+    ]);
+    expect(element.textContent).not.toContain('Dust masks here are sold by class');
+  });
+
+  it('gives lead only, with no cadmium column', async () => {
+    const { element, rows } = await create(FoodLimits, 'SG');
+    expect(rows()[0]).toEqual(['Flatware, no deeper than 25 mm (any one of 6)', '3 µg/mL']);
+    expect(rows()).toHaveLength(5);
+    expect(element.querySelectorAll('thead th')).toHaveLength(2);
+    expect(paragraphsOf(element)[0]).toContain('limits for lead only');
+  });
+});
