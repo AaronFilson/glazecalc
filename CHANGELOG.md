@@ -352,6 +352,20 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Changed
 
+- **Easier to find your way**, from a review of the app's usability (2026-10-16):
+  - **The menu says "Account"** (or "Trial account"), with a round initial and the email in small
+    text under it, and turns the palette's color when hovered or on the account page, like the other
+    links. On a phone it comes first after the pages, beside Sign out, and the initial shows beside
+    Menu too. Home has an "Account and settings" card.
+  - **A new account is welcomed on Home**, once, with "Start your first recipe", and asked to open
+    the emailed link until it has.
+  - **On a phone**, every button and menu link is a finger's height (44px), and text in fields is
+    16px, so iPhones no longer zoom into a field.
+  - **Two-step sign-in** shows On or Off beside its heading, says "9 of 10 recovery codes left",
+    names its two buttons that remove the app apart, and asks for the code in a box the code's size.
+  - **Sign-up** no longer shows the password hint under the problem that says the same.
+  - **While a sign-in waits for its second step**, the menu no longer offers to sign in again.
+
 - **The session cookie is `__Host-glazecalc_session` in production, and the older
   `glazecalc_session` is no longer read there**, so a cookie set for the whole domain by a
   subdomain or a network faking one cannot sign a browser into someone else's account. Everyone
@@ -450,6 +464,12 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   Node types stay with Node 24, the version the app runs on.
 
 ### Fixed
+
+- **The compare table's headings no longer have wide gaps between words** ("Satin white"): the
+  numbers' tabular figures are kept to the number cells, as in the printed recipe, the guides'
+  tables and the landing page's example.
+- **On a phone, setting up an authenticator app** keeps the step's number beside the first line of
+  its label when the label wraps.
 
 - **Sign-in email addresses are no longer written to the web server's log.** Signing in sends the
   address as the HTTP Basic user name, which nginx's default log format recorded beside the IP

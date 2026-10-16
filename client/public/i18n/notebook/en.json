@@ -4,6 +4,13 @@
     "signedInAs": "Signed in as {email}.",
     "trying": "Trying Glazecalc as {name}. Start with a recipe.",
     "welcomeBack": "Pick up where you left off.",
+    "welcome": {
+      "heading": "Welcome to Glazecalc",
+      "text": "Your notebook is ready. A good first step: type in a glaze you already mix, its materials and amounts, and see its unity formula.",
+      "firstRecipe": "Start your first recipe",
+      "confirmHeading": "Confirm your email",
+      "confirm": "Confirm your email: we sent a link to {email}. Two-step sign-in needs it. Your <account>account page</account> can send it again."
+    },
     "sections": {
       "recipe": {
         "title": "Recipes",
@@ -32,6 +39,10 @@
       "guides": {
         "title": "Guides",
         "text": "From what a glaze is to firing it, and keeping everyone safe on the way."
+      },
+      "account": {
+        "title": "Account and settings",
+        "text": "Settings, your password, two-step sign-in, and a download of everything you keep here."
       }
     },
     "newHere": "New to unity formulas? The <advice>advice page</advice> explains the basics, and the <about>about page</about> says how Glazecalc works."

@@ -74,7 +74,15 @@ export const groupedKey = (secret: string): string => secret.match(/.{1,4}/g)?.j
   imports: [DatePipe, FieldCheck, FormsModule, IdentityConfirm, NgTemplateOutlet, NoticesList, TranslocoDirective],
   template: `<ng-container *transloco="let t">
     <section class="auth-text sign-in-section" aria-labelledby="mfa-heading">
-      <h2 id="mfa-heading" tabindex="-1" #heading>{{ t('account.mfa.heading') }}</h2>
+      <div class="mfa-top">
+        <h2 id="mfa-heading" tabindex="-1" #heading>{{ t('account.mfa.heading') }}</h2>
+        <!-- Its state at a glance, beside the heading; the sentence under it says the same. -->
+        @if (summary(); as mfa) {
+          <span class="mfa-badge" [class.on]="mfa.on">{{
+            mfa.on ? t('account.mfa.badgeOn') : t('account.mfa.badgeOff')
+          }}</span>
+        }
+      </div>
       <p>{{ t('account.mfa.intro') }}</p>
       <gc-notices [notices]="notices" />
 
@@ -166,7 +174,7 @@ export const groupedKey = (secret: string): string => secret.match(/.{1,4}/g)?.j
           </div>
         } @else {
           <p class="mfa-status">
-            <strong>{{ mfa.on ? t('account.mfa.on') : t('account.mfa.off') }}</strong>
+            {{ mfa.on ? t('account.mfa.on') : t('account.mfa.off') }}
             {{ mfa.on ? t('account.mfa.onText') : t('account.mfa.offText') }}
           </p>
           @if (needsEmail()) {
@@ -353,13 +361,14 @@ export const groupedKey = (secret: string): string => secret.match(/.{1,4}/g)?.j
               @if (removingApp() === 'off') {
                 <ng-container [ngTemplateOutlet]="confirm" />
               } @else {
+                <!-- Named apart from the app's own Remove button, above: here it is about turning it off. -->
                 <button
                   id="mfa-off-remove-app"
                   type="button"
                   class="btn btn-outline-danger"
                   (click)="open({ kind: 'remove-totp', at: 'off' }, 'mfa-off-remove-app')"
                 >
-                  {{ t('account.mfa.removeApp') }}
+                  {{ mfa.passkeys.length ? t('account.mfa.offRemoveAppFirst') : t('account.mfa.offRemoveApp') }}
                 </button>
               }
             }
@@ -446,13 +455,43 @@ export const groupedKey = (secret: string): string => secret.match(/.{1,4}/g)?.j
       padding: 8px;
       border-radius: 4px;
     }
+    /* As wide as the six digits it takes, not the page: the box's width says what goes in it. */
     .code-input {
       font-family: var(--bs-font-monospace, monospace);
       letter-spacing: 0.1em;
-      max-width: 12rem;
+      width: 8rem;
     }
     .setup-steps > li + li {
       margin-top: 1rem;
+    }
+    /* A step's label on a line of its own, so the step's number stays beside its first line when it wraps
+       (Bootstrap's labels are inline blocks, which put the number beside their last). */
+    .setup-steps label {
+      display: block;
+    }
+    .mfa-top {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.25rem 0.75rem;
+      margin-bottom: 0.5rem;
+    }
+    .mfa-top h2 {
+      margin: 0;
+    }
+    .mfa-badge {
+      border: 1px solid var(--gc-border);
+      border-radius: 999px;
+      background: var(--gc-surface-2);
+      color: var(--gc-text);
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 0.1rem 0.65rem;
+    }
+    .mfa-badge.on {
+      border-color: var(--gc-success-text);
+      background: var(--gc-success-bg);
+      color: var(--gc-success-text);
     }
     .panel-buttons,
     .passkey-buttons {

@@ -72,6 +72,7 @@ describe('SignInSection', () => {
     const fixture = await create(OFF);
     expect(text(fixture, 'h2')).toBe('Two-step sign-in');
     expect(text(fixture, '.mfa-status')).toContain('Two-step sign-in is off.');
+    expect(text(fixture, '.mfa-badge')).toBe('Off');
     expect(button(fixture, 'Set up an authenticator app')).toBeDefined();
     expect(button(fixture, 'Add a passkey')).toBeDefined();
     // No codes or turning off while it is off.
@@ -138,6 +139,7 @@ describe('SignInSection', () => {
     await press(fixture, 'I have saved them');
     expect(fixture.nativeElement.querySelector('ol.recovery-codes')).toBeNull();
     expect(text(fixture, '.mfa-status')).toContain('Two-step sign-in is on.');
+    expect(text(fixture, '.mfa-badge')).toBe('On');
   });
 
   /** From the section with two-step sign-in off to the authenticator app's QR code and key. */
@@ -472,6 +474,9 @@ describe('SignInSection', () => {
     expect(off()).toContain('Signing in needs only your password');
     expect(off()).toContain('recovery codes stop working');
     expect(text(fixture, '.off-passkeys')).toContain('You also have a passkey');
+    // Named apart from the app's own Remove button, so a list of the buttons tells them apart.
+    expect(text(fixture, '#mfa-remove-app')).toBe('Remove the authenticator app');
+    expect(text(fixture, '#mfa-off-remove-app')).toBe('Remove the app, to start turning it off');
     (fixture.nativeElement.querySelector('#mfa-off-remove-app') as HTMLButtonElement).click();
     await settle(fixture);
     // The confirmation is under "Turning it off", the only one open: the app's own button is gone meanwhile.
@@ -491,6 +496,7 @@ describe('SignInSection', () => {
 
   it('says when removing the last second step turns it off', async () => {
     const fixture = await create({ ...ON, passkeys: [] });
+    expect(text(fixture, '#mfa-off-remove-app')).toBe('Turn off two-step sign-in (removes the app)');
     await press(fixture, 'Remove the authenticator app');
     expect(text(fixture, '.last-factor')).toContain('two-step sign-in turns off');
   });
@@ -531,7 +537,7 @@ describe('SignInSection', () => {
 
   it('warns when few recovery codes are left', async () => {
     const fixture = await create({ ...ON, codesLeft: 2 });
-    expect(text(fixture)).toContain('2 recovery codes of 10 left.');
+    expect(text(fixture)).toContain('2 of 10 recovery codes left.');
     expect(text(fixture, '.codes-low')).toContain('Make new codes soon.');
   });
 

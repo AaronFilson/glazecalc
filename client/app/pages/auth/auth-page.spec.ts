@@ -176,6 +176,8 @@ describe('AuthPage', () => {
     await fixture.whenStable();
     expect(fieldProblem(fixture, 'email')).toBe('Enter an email address like name@example.com.');
     expect(fieldProblem(fixture, 'password')).toBe('Use at least 8 characters.');
+    // The hint would say the same again, so it steps aside while the problem shows.
+    expect(text(fixture, 'form')).not.toContain('At least 8 characters.');
     expect(fieldProblem(fixture, 'confirmation')).toBe('Enter the password again.');
     expect(document.activeElement?.id).toBe('email');
     // Fixed, the mark goes as it is typed.
@@ -279,6 +281,8 @@ describe('AuthPage two-step sign-in', () => {
       Object.keys(storage).map((key) => storage.getItem(key))
     );
     expect(stored.some((value) => value?.includes('pending-token'))).toBe(false);
+    // The menu does not offer to sign in again meanwhile (app.ts).
+    expect(TestBed.inject(AuthService).secondStepPending()).toBe(true);
 
     const code = fixture.nativeElement.querySelector('#second-code') as HTMLInputElement;
     code.value = '123456';
@@ -299,6 +303,7 @@ describe('AuthPage two-step sign-in', () => {
     page['startOver']('Signing in took too long. Please enter your password again.');
     await settle(fixture);
     expect(text(fixture, 'h1')).toBe('Sign in');
+    expect(TestBed.inject(AuthService).secondStepPending()).toBe(false);
     expect((fixture.nativeElement.querySelector('#email') as HTMLInputElement).value).toBe('a@b.com');
     expect(text(fixture, '.errors-section')).toContain('Signing in took too long.');
     expect(document.activeElement?.id).toBe('password');

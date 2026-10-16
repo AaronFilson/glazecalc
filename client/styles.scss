@@ -485,12 +485,62 @@ img {
   color: var(--gc-danger-text);
 }
 
+// "Account" with a round initial, and the email in small text under it (app.ts). Hovered, or on the
+// account page, it turns the palette's color and is underlined, like the page links.
+.account-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 0;
+  color: var(--gc-text);
+  &:hover,
+  &.active {
+    color: var(--gc-primary);
+    .account-label {
+      border-bottom-color: var(--gc-primary);
+    }
+  }
+}
+
+.account-text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  line-height: 1.25;
+}
+
+.account-label {
+  align-self: flex-start;
+  border-bottom: 2px solid transparent;
+}
+
 .account-email {
   color: var(--gc-muted);
+  font-size: 0.8rem;
   max-width: 16rem;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.account-initial {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: var(--gc-primary);
+  color: var(--gc-on-primary);
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+// Only on a phone, beside Menu (see app.ts).
+.nav-quick-account {
+  display: none;
 }
 
 @media (max-width: 767.98px) {
@@ -498,11 +548,24 @@ img {
     display: inline-block;
   }
   .nav-quick-signin {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
     margin-inline-start: auto;
     margin-inline-end: 0.75rem;
   }
-  .nav-quick-signin + .nav-toggle {
+  // A whole finger's width (44px) around the initial.
+  .nav-quick-account {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    min-height: 44px;
+    margin-inline-start: auto;
+    margin-inline-end: 0.5rem;
+  }
+  .nav-quick-signin + .nav-toggle,
+  .nav-quick-account + .nav-toggle {
     margin-inline-start: 0;
   }
   .nav-menu {
@@ -517,9 +580,38 @@ img {
   }
   .nav-links {
     flex-direction: column;
+    gap: 0;
+    // Each a finger's height (44px), for a phone held with clay on the hands.
+    a {
+      display: flex;
+      align-items: center;
+      min-height: 44px;
+      padding: 0;
+    }
   }
+  // Account first, then Sign out, set apart from the pages by a line.
   .nav-account {
     margin-inline-start: 0;
+    margin-top: 0.25rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--gc-border);
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    a:not(.btn) {
+      display: inline-flex;
+      align-items: center;
+      min-height: 44px;
+    }
+    .account-link {
+      flex: 1 1 auto;
+    }
+    .btn {
+      flex: none;
+      white-space: nowrap;
+    }
+  }
+  .account-email {
+    max-width: none;
   }
 }
 
@@ -642,6 +734,24 @@ main {
       background: var(--gc-surface-2);
       text-align: start;
     }
+  }
+}
+
+// On a phone, text in fields is at least 16px: iOS Safari zooms the page into a field with smaller
+// text, in the middle of a recipe. And every button is a finger's height (44px), by its padding.
+@media (max-width: 767.98px) {
+  main {
+    input:not([type='checkbox']):not([type='radio']):not([type='submit']):not([type='button']),
+    select,
+    textarea {
+      font-size: 1rem;
+    }
+  }
+  .btn {
+    --bs-btn-padding-y: 0.59rem;
+  }
+  .btn-sm {
+    --bs-btn-padding-y: 0.69rem;
   }
 }
 
@@ -1577,6 +1687,9 @@ bdi {
   }
   .num {
     text-align: end;
+  }
+  // Only the numbers: Lora's tabular figures widen its spaces too, which would gap a heading's words.
+  td.num {
     font-variant-numeric: tabular-nums;
   }
 }

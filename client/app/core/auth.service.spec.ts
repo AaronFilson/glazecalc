@@ -31,6 +31,8 @@ describe('AuthService', () => {
     expect(auth.signedIn()).toBe(true);
     expect(localStorage.getItem('session')).toBe('account');
     expect(localStorage.length).toBe(1);
+    // Home welcomes the new account (pages/home).
+    expect(auth.welcome()).toBe(true);
   });
 
   it('signs in with HTTP basic credentials, and says how much a trial brought', async () => {

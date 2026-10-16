@@ -115,6 +115,10 @@ export class AuthService {
   readonly unverified = signal(false);
   /** The trial in use, if this is one. */
   readonly trial = signal<Trial | null>(readStoredTrial());
+  /** Whether the sign-in page waits for a second step, so the menu does not offer to sign in again. */
+  readonly secondStepPending = signal(false);
+  /** Set by signing up, so the first page can welcome the new account (pages/home). */
+  readonly welcome = signal(false);
   /** Set when a trial runs out, so the start page can say so. */
   readonly trialEnded = signal(false);
   /** The title of a recipe whose changes were not saved when the session ended, so the next page can say so. */
@@ -154,12 +158,15 @@ export class AuthService {
    * `keep`: stay signed in for 7 days rather than until the browser closes.
    */
   async signUp(email: string, password: string, keep = false): Promise<void> {
-    const path = this.trial() ? '/guest/claim' : '/signup';
+    const claiming = !!this.trial();
+    const path = claiming ? '/guest/claim' : '/signup';
     const res = await firstValueFrom(
       this.http.post<EmailResponse>(this.apiBase + path, { email, password }, { headers: keepHeader(keep) })
     );
     this.signedInAs(res.email);
     this.unverified.set(true);
+    // A trial kept as an account has its work already; a new one starts empty.
+    this.welcome.set(!claiming);
   }
 
   /**
@@ -451,6 +458,7 @@ export class AuthService {
     this.setSession(null);
     this.email.set(null);
     this.unverified.set(false);
+    this.welcome.set(false);
     this.setTrial(null);
     for (const then of this.onEnd) then();
   }
