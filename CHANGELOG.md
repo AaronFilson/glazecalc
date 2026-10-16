@@ -359,6 +359,10 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
     Menu too. Home has an "Account and settings" card.
   - **A new account is welcomed on Home**, once, with "Start your first recipe", and asked to open
     the emailed link until it has.
+  - **The account page lists its sections at the top**, each a link to its heading, so the
+    password, two-step sign-in and deleting are a tap away; and its buttons are plain, the filled
+    one kept for the main action of a step under way.
+  - **The footer's 28 languages are one line**, "Language: English", that opens the list.
   - **On a phone**, every button and menu link is a finger's height (44px), and text in fields is
     16px, so iPhones no longer zoom into a field.
   - **Two-step sign-in** shows On or Off beside its heading, says "9 of 10 recovery codes left",

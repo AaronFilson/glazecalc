@@ -81,6 +81,7 @@
     "createAccount": "Create an account",
     "title": "Your account",
     "signedInAs": "Signed in as {email}.",
+    "contents": "On this page",
     "changeHeading": "Change your password",
     "current": "Current password",
     "currentMissing": "Enter your current password.",

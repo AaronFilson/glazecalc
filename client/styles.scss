@@ -640,8 +640,18 @@ img {
 
 // Each language's name in its own script, in the device's serif: in Lora they would fetch its Cyrillic,
 // Greek and Latin Extended files (some 100 kB) with every page, for one line at its foot.
-.footer-languages {
-  font-family: Georgia, 'Noto Serif', serif;
+.footer-language {
+  margin-bottom: 0.5rem;
+  // A finger's height (44px).
+  summary {
+    display: inline-block;
+    padding: 0.6rem 0;
+    cursor: pointer;
+  }
+  [lang],
+  .footer-languages {
+    font-family: Georgia, 'Noto Serif', serif;
+  }
 }
 
 /*************** Page sections **************/

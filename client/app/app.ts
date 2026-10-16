@@ -223,19 +223,26 @@ const APP_PAGES = [
           <a href="https://github.com/AaronFilson/glazecalc/issues">{{ t('footer.problem') }}</a>
           <a href="https://updraftpotterystudio.com/">{{ t('footer.pottery') }}</a>
         </nav>
+        <!-- One line, "Language: English", that opens the others: they are many, on every page. -->
         @if (languages.length > 1) {
-          <nav class="footer-languages" [attr.aria-label]="t('footer.languages')">
-            @for (code of languages; track code) {
-              <a
-                [href]="pageIn(code)"
-                [attr.lang]="code"
-                translate="no"
-                [attr.aria-current]="code === pageLanguage ? 'true' : null"
-                (click)="chooseLanguage($event, code)"
-                >{{ languageName(code) }}</a
-              >
-            }
-          </nav>
+          <details class="footer-language">
+            <summary>
+              {{ t('footer.language') }}
+              <span [attr.lang]="pageLanguage" translate="no">{{ languageName(pageLanguage) }}</span>
+            </summary>
+            <nav class="footer-languages" [attr.aria-label]="t('footer.languages')">
+              @for (code of languages; track code) {
+                <a
+                  [href]="pageIn(code)"
+                  [attr.lang]="code"
+                  translate="no"
+                  [attr.aria-current]="code === pageLanguage ? 'true' : null"
+                  (click)="chooseLanguage($event, code)"
+                  >{{ languageName(code) }}</a
+                >
+              }
+            </nav>
+          </details>
         }
         <p>{{ t('footer.copyright') }}</p>
       </footer>

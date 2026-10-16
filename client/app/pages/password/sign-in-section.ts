@@ -207,7 +207,7 @@ export const groupedKey = (secret: string): string => secret.match(/.{1,4}/g)?.j
               <button
                 id="mfa-add-app"
                 type="button"
-                class="btn btn-primary"
+                class="btn btn-light border"
                 (click)="open({ kind: 'add-totp' }, 'mfa-add-app')"
               >
                 {{ t('account.mfa.addApp') }}
@@ -322,7 +322,7 @@ export const groupedKey = (secret: string): string => secret.match(/.{1,4}/g)?.j
               <button
                 id="mfa-add-passkey"
                 type="button"
-                class="btn btn-primary"
+                class="btn btn-light border"
                 (click)="open({ kind: 'add-passkey' }, 'mfa-add-passkey')"
               >
                 {{ t('account.mfa.addPasskey') }}

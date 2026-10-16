@@ -67,7 +67,8 @@
     "problem": "Report a problem",
     "pottery": "Handmade pottery: Updraft Pottery Studio",
     "copyright": "© 2017–2026 Aaron Filson / Candling Development Studio · Free and open source (MIT License)",
-    "languages": "Languages"
+    "languages": "Languages",
+    "language": "Language:"
   },
   "numbers": {
     "notANumber": "Enter a number, such as {example}.",
