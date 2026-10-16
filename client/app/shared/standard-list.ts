@@ -1,5 +1,6 @@
 import { Component, computed, inject, input, output, signal } from '@angular/core';
 import { TranslocoDirective } from '@jsverse/transloco';
+import { marker } from '@jsverse/transloco-keys-manager/marker';
 import { PAGE_LANGUAGE } from '../i18n/language';
 import { RichText } from '../i18n/rich-text';
 import { formatFormula } from '../../../lib/chemistry';
@@ -109,10 +110,10 @@ const FIRST_SHOWN = 25;
                   <p class="standard-notes">{{ standardText(record, firstOf(record.notes)) }}</p>
                   @if (record.rawformula) {
                     <!-- The formula is never translated, though the sentence around it is. -->
-                    @let formulaLine = t('standard.formulaLine', { formula: FORMULA_MARK }).split(FORMULA_MARK);
+                    @let formulaParts = t(formulaLine, { formula: FORMULA_MARK }).split(FORMULA_MARK);
                     <p class="standard-formula">
-                      {{ formulaLine[0] }}<span translate="no">{{ formatFormula(record.rawformula) }}</span
-                      >{{ formulaLine.slice(1).join('') }}
+                      {{ formulaParts[0] }}<span translate="no">{{ formatFormula(record.rawformula) }}</span
+                      >{{ formulaParts.slice(1).join('') }}
                     </p>
                   }
                   @if (record.substitutes?.length) {
@@ -221,6 +222,8 @@ export class StandardList {
 
   protected readonly id = 'standard-' + nextId++;
   protected readonly FORMULA_MARK = FORMULA_MARK;
+  /** Named here, since the keys manager does not read a key in a template's @let. */
+  protected readonly formulaLine = marker('standard.formulaLine');
   protected readonly regions = REGIONS;
   protected readonly filter = signal('');
   protected readonly category = signal('');
