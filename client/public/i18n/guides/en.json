@@ -111,6 +111,7 @@
       "control": "A control concentration (管理濃度): the yardstick for judging the air of a work area from measurements there, not a limit on what one person breathes."
     },
     "setBy": "Set by <link>{law}</link>.",
+    "from": "It applies from {date}.",
     "lowerThanEu": "Lower than the EU's binding limit of {value} mg/m³.",
     "sameAsEu": "The same as the EU's binding limit.",
     "recommendedBy": "{abbr} ({by}) recommends this value in its <link>{title}</link>. It is not law.",
@@ -147,16 +148,31 @@
       "jpSmall": "Other pieces under 1.1 L, not for cooking",
       "jpLarge": "Other pieces from 1.1 L to under 3 L, not for cooking",
       "jpStorage": "Other pieces of 3 L or more, not for cooking",
-      "jpCooking": "Cooking ware, 2.5 cm deep or more"
+      "jpCooking": "Cooking ware, 2.5 cm deep or more",
+      "krFlat": "Pieces that cannot be filled, or less than 2.5 cm deep",
+      "krSmall": "Other pieces that can be filled, under 1.1 L",
+      "krMedium": "Other pieces that can be filled, from 1.1 L to under 3 L",
+      "krStorage": "Other pieces that can be filled, 3 L or more",
+      "krCooking": "Cooking ware, for heating food",
+      "twFlat": "Pieces that cannot be filled, or no more than 2.5 cm deep",
+      "twSmall": "Pieces more than 2.5 cm deep, up to 1.1 L",
+      "twLarge": "Pieces more than 2.5 cm deep, over 1.1 L",
+      "myFlat": "Flatware",
+      "mySmall": "Small hollowware",
+      "myLarge": "Large hollowware",
+      "myCooking": "Cooking ware"
     },
     "judged": {
       "average": "average of 6 pieces",
-      "each": "any one of 6"
+      "each": "any one of 6",
+      "averageOf": "average of {count} pieces",
+      "eachOf": "any one of {count}"
     },
     "euRules": "The EU's rules apply here.",
     "law": "Set by <link>{law}</link>.",
     "inForce": "In force from {date}.",
     "atMost": "A piece passes if it releases no more than the limit: the law says “at most”.",
+    "ppm": "ppm here is milligrams per litre of the test solution (mg/L).",
     "unknown": "We have not yet confirmed the rules in {region}.",
     "choosePrompt": "Choose your country to see its rules."
   },

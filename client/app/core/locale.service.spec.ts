@@ -32,7 +32,8 @@ describe('LocaleService', () => {
     expect(browserRegion(['de-AT', 'en'])).toBe('AT');
     expect(browserRegion(['en', 'fr-FR'])).toBe('FR');
     expect(browserRegion(['en', 'ja-JP'])).toBe('JP');
-    expect(browserRegion(['en', 'ko-KR'])).toBe('');
+    expect(browserRegion(['en', 'ko-KR'])).toBe('KR');
+    expect(browserRegion(['en', 'th-TH'])).toBe('');
     expect(browserRegion(['tr-TR', 'en'])).toBe('TR');
     expect(browserRegion(['not a tag'])).toBe('');
   });

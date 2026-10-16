@@ -129,6 +129,22 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   - **Lead and cadmium:** the Tebliğ's limits, the EU directive's figures, with its rule for three
     samples.
   - **Three shops** selling raw glaze materials, by their own names.
+- **South Korea, Taiwan, Singapore and Malaysia as regions** (in English; Singapore and Malaysia
+  stay in English). Each fires by temperature until you choose otherwise and lists the US
+  materials. The guides give, each from an official page with its source and date, and leave out
+  what could not be checked:
+  - **Who to call:** Korea 119, which also gives medical advice (no national public poison line was
+    found); Taiwan 119 and the Taipei Veterans General Hospital's poison centre (24 hours, free);
+    Singapore 995 (no public poison line on an official page, so the health ministry is linked);
+    Malaysia 999 and the National Poison Centre, with its hours.
+  - **Silica:** Korea's exposure standard (0.05 mg/m³, indicative), Taiwan's new limit of 0.1 mg/m³
+    with the day it applies from (1 January 2027), and Singapore's and Malaysia's binding limits
+    (0.1 for quartz, 0.05 for cristobalite); dust mask classes for Korea (1급, 특급), Taiwan (D2, D3)
+    and Malaysia (N95).
+  - **Lead and cadmium** in each law's units: Korea's five kinds of piece, Taiwan's in ppm (said as
+    mg/L), Singapore's lead only, and Malaysia's 2026 limits with four pieces judged.
+  - **Shops** by their own names: two in Korea, one in Taiwan, two in Singapore; none was found in
+    Malaysia, and the page says so.
 - **Groundwork for East and Southeast Asia**, before any of its languages:
   - **Numbers and dates** can be written as in Japan, Korea, mainland China and Taiwan (Simplified and
     Traditional Chinese each keep their script in any region), Hong Kong, Singapore, Malaysia,

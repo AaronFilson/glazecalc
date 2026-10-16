@@ -116,7 +116,8 @@ describe('region facts', () => {
   const guides = JSON.parse(
     fs.readFileSync(new URL('../../client/public/i18n/guides/en.json', import.meta.url), 'utf8')
   );
-  const HTTP_ONLY = ['丸二陶料'];
+  const HTTP_ONLY = ['丸二陶料', '太麟化工原料有限公司', 'Sam Mui Kuang Pottery'];
+  const NO_SHOP_FOUND = ['MY'];
   const checkedLately = (fact: { checked: string; source?: string; url?: string }, label: string) => {
     expect(fact.source ?? fact.url, label).to.match(/^https:\/\//);
     expect(Date.parse(fact.checked), label + ': check this again').to.be.above(yearAgo);
@@ -140,7 +141,7 @@ describe('region facts', () => {
   });
 
   it("should give every member state food-contact rules, its own or the EU's, in the law's units", () => {
-    const units = ['mg/dm²', 'mg/L', 'µg/dm²', 'µg/L', 'µg/mL', 'µg/cm²', 'mg'];
+    const units = ['mg/dm²', 'mg/L', 'µg/dm²', 'µg/L', 'µg/mL', 'µg/cm²', 'mg', 'ppm'];
     for (const region of regions.REGIONS) {
       const found = food.foodRulesFor(region.code);
       if (region.eu) expect(found, region.name).not.to.equal(null);
@@ -166,7 +167,9 @@ describe('region facts', () => {
     for (const region of regions.REGIONS) {
       const entry = suppliers.shopsFor(region.code);
       expect(entry, region.name).not.to.equal(null);
-      expect(entry!.shops.length + entry!.nearby.length, region.name).to.be.above(0);
+      // Where no shop was found (Malaysia), the page says so.
+      if (!NO_SHOP_FOUND.includes(region.code))
+        expect(entry!.shops.length + entry!.nearby.length, region.name).to.be.above(0);
       for (const shop of entry!.shops) {
         // A shop whose site has no https address is linked as it is, and only that one.
         if (HTTP_ONLY.includes(shop.name)) expect(shop.url, shop.name).to.match(/^http:\/\//);
@@ -411,5 +414,249 @@ describe('regions before Turkey', () => {
     data.push(['EU', food.FOOD['EU'], workplace.EU_SILICA]);
     const hash = crypto.createHash('sha256').update(JSON.stringify(data)).digest('hex');
     expect(hash).to.equal('b67632a22a57f9bd73f72e3af3ddf3abebdaacfb69f1a3fe20d0b071a9019340');
+  });
+});
+
+// The same, with Türkiye, before Korea, Taiwan, Singapore and Malaysia (docs/asia-plan.md, Phase C).
+describe('regions before Korea', () => {
+  it('keep their data exactly', () => {
+    const codes = [
+      'US', 'GB', 'AU', 'NZ', 'AT', 'BE', 'BG', 'HR', 'CY', 'CZ', 'DK', 'EE', 'FI', 'FR', 'DE', 'GR',
+      'HU', 'IE', 'IT', 'LV', 'LT', 'LU', 'MT', 'NL', 'PL', 'PT', 'RO', 'SK', 'SI', 'ES', 'SE', 'JP', 'TR'
+    ]; // prettier-ignore
+    const data: unknown[] = codes.map((code) => [
+      code,
+      regions.regionFor(code),
+      safety.SAFETY[code],
+      safety.MINISTRIES[code] ?? null,
+      workplace.WORKPLACE[code] ?? null,
+      food.FOOD[code] ?? null,
+      suppliers.SUPPLIERS[code] ?? null
+    ]);
+    data.push(['EU', food.FOOD['EU'], workplace.EU_SILICA]);
+    const hash = crypto.createHash('sha256').update(JSON.stringify(data)).digest('hex');
+    expect(hash).to.equal('019ecd75b9d1fbae7cd4090b7a2cd8f3bbacae6a5dff5b4c748b266557919f91');
+  });
+});
+
+// South Korea (docs/asia-plan.md, Phase C), from research_notes/Asia/verification-KR-TW-SG-MY-2026-10-16.md.
+describe('South Korea', () => {
+  it('fires by temperature, reads density as specific gravity, and lists the US library', () => {
+    expect(regions.regionFor('KR')).to.eql({
+      code: 'KR',
+      name: 'South Korea',
+      languages: ['ko'],
+      eu: false,
+      temperature: 'C',
+      cones: 'temperature',
+      density: 'sg',
+      library: 'US'
+    });
+    expect(regions.formatLocaleFor('en', 'KR', 'auto')).to.equal('en-KR');
+  });
+
+  it('gives 119, no poison line (none national was found), and 119 for medical advice', () => {
+    const shown = safety.shownFor('KR')!;
+    expect(shown.emergency.map((line) => line.number)).to.eql(['119']);
+    expect(shown.poison).to.eql([]);
+    expect(shown.advice.map((line) => [line.number, line.tel])).to.eql([['119', '119']]);
+    expect(shown.advice[0]!.note).to.contain('no national public poison line');
+    // The Seoul centre is known only from a journal report, and 02-3407-4050 only from a directory.
+    expect(JSON.stringify(safety.SAFETY['KR'])).not.to.match(/1855|3407|Seoul Poison/);
+    expect(safety.ministryFor('KR')).to.include({ name: '보건복지부', url: 'https://www.mohw.go.kr/' });
+  });
+
+  it('gives the exposure standard as indicative, 1급 and 특급 masks, and KF94 only as a health mask', () => {
+    const facts = workplace.workplaceFor('KR')!;
+    expect(facts.silica).to.include({ quartz: 0.05, kind: 'indicative', status: 'verified', checked: '2026-10-13' });
+    expect(facts.silica!.cristobalite).to.equal(undefined);
+    expect(facts.silica!.law).to.contain('제2020-48호');
+    expect(facts.silica!.from).to.equal(undefined);
+    expect(facts.agency).to.include({ name: '고용노동부', abbr: 'MoEL' });
+    expect(facts.respirators).to.include({ status: 'verified' });
+    expect(facts.respirators!.everyday).to.eql(['1급']);
+    expect(facts.respirators!.higher).to.eql(['특급']);
+    expect(facts.respirators!.note).to.contain('not certified dust masks for work');
+  });
+
+  it("gives the MFDS ceramic limits in the law's units, Japan's values, with no judging rule not read", () => {
+    const { rules, own } = food.foodRulesFor('KR')!;
+    expect(own).to.equal(true);
+    expect(rules.limits.map((l) => [l.category, l.lead, l.cadmium, l.unit])).to.eql([
+      ['krFlat', 8, 0.7, 'µg/cm²'],
+      ['krSmall', 2, 0.5, 'mg/L'],
+      ['krMedium', 1, 0.25, 'mg/L'],
+      ['krStorage', 0.5, 0.25, 'mg/L'],
+      ['krCooking', 0.5, 0.05, 'mg/L']
+    ]);
+    for (const limit of rules.limits) expect(limit.judged).to.equal(undefined);
+    expect(rules.atMost).to.equal(undefined);
+  });
+
+  it('names two shops checked on their own sites, and not the feldspar producer', () => {
+    const { shops, nearby } = suppliers.shopsFor('KR')!;
+    expect(shops.map((shop) => shop.name)).to.eql(['중앙도재', '클레이어']);
+    for (const shop of shops) expect(shop.place).to.equal(undefined);
+    expect(JSON.stringify(suppliers.SUPPLIERS['KR'])).not.to.contain('세라믹미네랄');
+    expect(nearby).to.eql([]);
+  });
+});
+
+// Taiwan (docs/asia-plan.md, Phase C), from research_notes/Asia/verification-KR-TW-SG-MY-2026-10-16.md.
+describe('Taiwan', () => {
+  it('fires by temperature, reads density as specific gravity, and lists the US library', () => {
+    expect(regions.regionFor('TW')).to.include({
+      code: 'TW',
+      name: 'Taiwan',
+      temperature: 'C',
+      cones: 'temperature',
+      density: 'sg',
+      library: 'US'
+    });
+    expect(regions.regionFor('TW')!.languages).to.eql(['zh-Hant']);
+    expect(regions.formatLocaleFor('en', 'TW', 'auto')).to.equal('en-TW');
+  });
+
+  it("gives 119 and the Taipei Veterans General Hospital's poison centre, around the clock and free", () => {
+    const shown = safety.shownFor('TW')!;
+    expect(shown.emergency.map((line) => line.number)).to.eql(['119']);
+    expect(shown.poison.map((line) => [line.number, line.tel])).to.eql([['02-2871-7121', '+886228717121']]);
+    expect(shown.poison[0]).to.include({ who: 'public', hours: '24 hours, every day, free' });
+    expect(shown.poison[0]!.also).to.equal(undefined);
+    expect(safety.ministryFor('TW')).to.include({ name: '衛生福利部' });
+  });
+
+  it('gives the 2027 limit with its start date, and not the earlier formula read only secondhand', () => {
+    const silica = workplace.workplaceFor('TW')!.silica!;
+    expect(silica).to.include({ quartz: 0.1, kind: 'binding', status: 'verified', from: '2027-01-01' });
+    expect(silica.formula).to.equal(undefined);
+    expect(silica.cristobalite).to.equal(undefined);
+    expect(silica.note).to.contain('Until 31 December 2026');
+    expect(silica.note).to.contain('not shown here');
+    expect(JSON.stringify(silica)).not.to.match(/SiO2 \+ 2|\(Q \+ 2\)/);
+    // Every start date is a day; a limit that starts later says what applies until then.
+    for (const [code, entry] of Object.entries(workplace.WORKPLACE)) {
+      if (!entry.silica?.from) continue;
+      expect(entry.silica.from, code).to.match(/^\d{4}-\d{2}-\d{2}$/);
+      if (Date.parse(entry.silica.from) > Date.now()) expect(entry.silica.note, code).to.match(/^Until /);
+    }
+  });
+
+  it('names the CNS 14755 classes as secondary, without percentages', () => {
+    const respirators = workplace.workplaceFor('TW')!.respirators!;
+    expect(respirators).to.include({ status: 'secondary' });
+    expect([respirators.everyday, respirators.higher]).to.eql([['D2'], ['D3']]);
+    expect(respirators.note).to.contain('CNS 14755');
+    expect(respirators.note).not.to.match(/%/);
+  });
+
+  it("gives the hygiene standard's limits in ppm and µg/cm², with no cooking ware", () => {
+    const { rules } = food.foodRulesFor('TW')!;
+    expect(rules.limits.map((l) => [l.category, l.lead, l.cadmium, l.unit])).to.eql([
+      ['twFlat', 17, 1.7, 'µg/cm²'],
+      ['twSmall', 5, 0.5, 'ppm'],
+      ['twLarge', 2.5, 0.25, 'ppm']
+    ]);
+    for (const limit of rules.limits) expect(limit.judged).to.equal(undefined);
+  });
+
+  it('names one shop, linked at the http address its site has, and not the one read only in an extract', () => {
+    const { shops } = suppliers.shopsFor('TW')!;
+    expect(shops.map((shop) => [shop.name, shop.url])).to.eql([['太麟化工原料有限公司', 'http://www.tai-lin.com.tw/']]);
+    expect(JSON.stringify(suppliers.SUPPLIERS['TW'])).not.to.contain('glazes.com.tw');
+  });
+});
+
+// Singapore (docs/asia-plan.md, Phase C), from research_notes/Asia/verification-KR-TW-SG-MY-2026-10-16.md.
+describe('Singapore', () => {
+  it('stays in English, fires by temperature, and lists the US library', () => {
+    expect(regions.regionFor('SG')).to.include({ temperature: 'C', cones: 'temperature', library: 'US' });
+    expect(regions.regionFor('SG')!.languages[0]).to.equal('en');
+    expect(regions.formatLocaleFor('en', 'SG', 'auto')).to.equal('en-SG');
+  });
+
+  it('gives 995, no poison line (none is on an official page), and the health ministry', () => {
+    const shown = safety.shownFor('SG')!;
+    expect(shown.emergency.map((line) => line.number)).to.eql(['995']);
+    expect(shown.poison).to.eql([]);
+    expect(shown.advice).to.eql([]);
+    expect(JSON.stringify(safety.SAFETY['SG'])).not.to.match(/6423|6262|1777/);
+    expect(safety.ministryFor('SG')).to.include({ url: 'https://www.moh.gov.sg/' });
+  });
+
+  it('keeps the earlier check date for the statutes, which could not be read again', () => {
+    const facts = workplace.workplaceFor('SG')!;
+    expect(facts.silica).to.include({ quartz: 0.1, cristobalite: 0.05, kind: 'binding', checked: '2026-10-12' });
+    expect(facts.agency).to.include({ abbr: 'MOM' });
+    // SS 548's classes were not read, and N95 was seen only in a search extract.
+    expect(facts.respirators).to.equal(null);
+    expect(food.foodRulesFor('SG')!.rules.checked).to.equal('2026-10-12');
+  });
+
+  it('gives lead only, in the US kinds of piece, each of six within the limit', () => {
+    const { rules } = food.foodRulesFor('SG')!;
+    expect(rules.limits.map((l) => [l.category, l.lead, l.unit, l.judged])).to.eql([
+      ['flatware', 3, 'µg/mL', 'each'],
+      ['smallHollow', 2, 'µg/mL', 'each'],
+      ['cups', 0.5, 'µg/mL', 'each'],
+      ['largeHollow', 1, 'µg/mL', 'each'],
+      ['pitchers', 0.5, 'µg/mL', 'each']
+    ]);
+    for (const limit of rules.limits) expect(limit.cadmium).to.equal(undefined);
+    expect(rules.note).to.contain('lead only');
+  });
+
+  it('names two shops, and not the one known only from an extract', () => {
+    const { shops } = suppliers.shopsFor('SG')!;
+    expect(shops.map((shop) => shop.name)).to.eql(['Sam Mui Kuang Pottery', "The Potters' Guilt"]);
+    expect(shops[1]!.sells).not.to.include('materials');
+    expect(JSON.stringify(suppliers.SUPPLIERS['SG'])).not.to.contain('Wei Chuan');
+  });
+});
+
+// Malaysia (docs/asia-plan.md, Phase C), from research_notes/Asia/verification-KR-TW-SG-MY-2026-10-16.md.
+describe('Malaysia', () => {
+  it('stays in English, fires by temperature, and lists the US library', () => {
+    expect(regions.regionFor('MY')).to.include({ temperature: 'C', cones: 'temperature', library: 'US' });
+    expect(regions.regionFor('MY')!.languages).to.eql(['ms', 'en']);
+    expect(regions.formatLocaleFor('en', 'MY', 'auto')).to.equal('en-MY');
+  });
+
+  it('gives 999, and the National Poison Centre with its hours, not 24 hours, and no claim on cost', () => {
+    const shown = safety.shownFor('MY')!;
+    expect(shown.emergency.map((line) => line.number)).to.eql(['999']);
+    expect(shown.emergency.map((line) => line.number)).not.to.include('112');
+    expect(shown.poison.map((line) => [line.number, line.tel])).to.eql([['04-6536 999', '+6046536999']]);
+    const centre = shown.poison[0]!;
+    expect(centre.hours).to.contain('Monday to Friday 8:00 to 22:00');
+    expect(centre.hours).not.to.match(/24/);
+    expect(centre.fee).to.equal(undefined);
+    expect(JSON.stringify(safety.SAFETY['MY'])).not.to.match(/free/i);
+    expect(centre.online).to.eql({ name: 'Telegram', url: 'https://t.me/usm_prn_bot' });
+    expect(safety.ministryFor('MY')).to.include({ name: 'Kementerian Kesihatan Malaysia' });
+  });
+
+  it("gives the USECHH limits and DOSH's mask classes", () => {
+    const facts = workplace.workplaceFor('MY')!;
+    expect(facts.silica).to.include({ quartz: 0.1, cristobalite: 0.05, kind: 'binding' });
+    expect(facts.agency).to.include({ abbr: 'JKKP', url: 'https://dosh.gov.my/' });
+    expect(facts.respirators).to.include({ status: 'verified' });
+    expect(facts.respirators!.everyday).to.eql(['N95']);
+  });
+
+  it('gives the 2026 limits, four pieces judged, from 1 August 2026, without the 1.1 L line not read', () => {
+    const { rules } = food.foodRulesFor('MY')!;
+    expect(rules.inForce).to.equal('2026-08-01');
+    expect(rules.limits.map((l) => [l.category, l.lead, l.cadmium, l.unit, l.judged, l.pieces])).to.eql([
+      ['myFlat', 0.8, 0.07, 'mg/dm²', 'average', 4],
+      ['mySmall', 2, 0.5, 'mg/L', 'each', 4],
+      ['myLarge', 1, 0.25, 'mg/L', 'each', 4],
+      ['myCooking', 0.5, 0.05, 'mg/L', 'each', 4]
+    ]);
+    expect(JSON.stringify(rules)).not.to.contain('1.1');
+  });
+
+  it('lists no shop, since none was found', () => {
+    expect(suppliers.shopsFor('MY')).to.eql({ shops: [], nearby: [] });
   });
 });
