@@ -133,8 +133,8 @@ test.describe('home and navigation', () => {
   });
 
   test('on a phone, nothing is wider than the screen, even the menu with a long email', async ({ page }) => {
-    // A long address, signed in in place of the usual one.
-    const email = 'a-rather-long-address-for-a-potter-' + Date.now() + '@studio.example.com';
+    // A long address, signed in in place of the usual one, with a long run that has no hyphen to break at.
+    const email = 'a-rather-long-address-for-a-potter-' + Date.now() + 'withnohyphens@studio.example.com';
     expect((await page.request.post(API + '/signup', { data: { email, password: 'password123' } })).ok()).toBe(true);
     for (const width of [320, 390, 430]) {
       await page.setViewportSize({ width, height: 844 });

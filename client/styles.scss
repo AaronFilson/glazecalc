@@ -686,6 +686,8 @@ img {
     color: var(--gc-muted);
     margin: 0;
     max-width: 48rem;
+    // "Signed in as …": an email address may be one long word, broken rather than widening a phone's page.
+    overflow-wrap: anywhere;
   }
 }
 

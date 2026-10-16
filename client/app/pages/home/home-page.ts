@@ -97,6 +97,10 @@ const SECTIONS: { path: string; fragment?: string; title: string; text: string }
     </p>
   </ng-container>`,
   styles: `
+    /* An email address may be one long word: break it anywhere rather than widen the page on a phone. */
+    .home-confirm {
+      overflow-wrap: anywhere;
+    }
     .home-sections {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
