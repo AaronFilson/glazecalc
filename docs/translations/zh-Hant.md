@@ -697,7 +697,7 @@ choice with no Traditional Chinese source; **Native check**: for a Taiwanese pot
 | squirrel-cage (centrifugal) fan                                       | 離心式風扇（鼠籠式）                                 | For a kiln vent, as against an axial fan (軸流風扇). No source.                                                                                                                                              |
 | emergency number; Emergency (a heading); calling the emergency number | 緊急電話; 緊急求助; 撥打緊急電話                     | "call the emergency number" → 「請撥打緊急電話」 (Taiwan: 119); the safety table's heading "Emergency" → 「緊急求助」; "An emergency: …" → 「緊急情況：…」.                                                  |
 | fire extinguisher (ABC)                                               | 滅火器（ABC 乾粉滅火器）                             | One word in both guides.                                                                                                                                                                                     |
-| 24/7, non-stop                                                        | 24 小時全年無休                                      | 毒藥物防治諮詢中心: 「全天候且全年無休」. "24 hours, every day" → 「每天 24 小時」.                                                                                                                          |
+| 24/7, non-stop                                                        | 24 小時、每週 7 天                                   | "24/7" has a 7, so the numbers check rejects 24 小時全年無休 (毒藥物防治諮詢中心: 「全天候且全年無休」); "non-stop" alone → 全年無休. "24 hours, every day" → 「每天 24 小時」.                              |
 
 ### 2.8 The app's own words
 

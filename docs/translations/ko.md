@@ -741,7 +741,7 @@ source**: a best choice with no Korean source; **via Naver**: read in Naver's se
 | squirrel-cage (centrifugal) fan                                       | 시로코 팬(원심 팬)                                  | For a kiln vent, as against a propeller fan (프로펠러 팬). Usage.                                                                                                                                                      |
 | emergency number; Emergency (a heading); calling the emergency number | 긴급 전화번호; 긴급 신고; 긴급 전화번호로 전화      | "call the emergency number" → "긴급 전화번호(119)로 전화하세요" only where the English gives the number; else "긴급 전화번호로 전화하세요"; the heading "Emergency" → "긴급 신고"; "An emergency: …" → "응급 상황: …". |
 | fire extinguisher (ABC)                                               | 소화기(ABC 소화기)                                  | One word in both guides.                                                                                                                                                                                               |
-| 24/7, non-stop                                                        | 24시간 연중무휴                                     | Poison-line hours (`safety`). "24 hours, every day" → "매일 24시간".                                                                                                                                                   |
+| 24/7, non-stop                                                        | 주 7일 24시간                                       | Poison-line hours (`safety`). "24/7" has a 7, so the numbers check rejects 24시간 연중무휴; "non-stop" alone → 상시 운영. "24 hours, every day" → "매일 24시간".                                                       |
 
 ### 2.8 The app's own words
 

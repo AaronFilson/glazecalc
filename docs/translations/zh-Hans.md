@@ -684,7 +684,7 @@ choice with no Chinese source.
 | squirrel-cage (centrifugal) fan                                       | 离心风机                                     | For a kiln vent, as against an axial fan (轴流风机). Usage.                                                                                                                                                 |
 | emergency number; Emergency (a heading); calling the emergency number | 急救电话; 紧急情况; 拨打急救电话             | "call the emergency number" → 「拨打急救电话」; the safety table's heading "Emergency" → 「紧急情况」.                                                                                                      |
 | fire extinguisher (ABC)                                               | 灭火器（ABC 灭火器）                         | One word in both guides.                                                                                                                                                                                    |
-| 24/7, non-stop                                                        | 全天 24 小时, 全年无休                       | Poison-line hours (`safety`).                                                                                                                                                                               |
+| 24/7, non-stop                                                        | 每周 7 天、每天 24 小时                      | Poison-line hours (`safety`). "24/7" has a 7, so the numbers check rejects a form without it; "non-stop" alone → 全年无休.                                                                                  |
 
 ### 2.8 The app's own words
 
