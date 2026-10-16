@@ -147,10 +147,6 @@
         "purpose": "Kas uutes retseptides arvestatakse lisaained Segeri valemisse, nagu viimati valisite.",
         "lasts": "Kuni tühjendate brauseri salvestusruumi."
       },
-      "recipeHelp": {
-        "purpose": "See, et peitsite retseptilehel abiteksti.",
-        "lasts": "Kuni kuvate abiteksti uuesti."
-      },
       "print": {
         "purpose": "Teie viimased valikud retsepti printimisel: kogu retsept või segu ning segu kogus.",
         "lasts": "Kuni tühjendate brauseri salvestusruumi."

@@ -365,6 +365,15 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
     names its two buttons that remove the app apart, and asks for the code in a box the code's size.
   - **Sign-up** no longer shows the password hint under the problem that says the same.
   - **While a sign-in waits for its second step**, the menu no longer offers to sign in again.
+  - **The recipe page starts with your saved recipes**, newest first, each with its date, a count
+    and a filter once there are more than five (the first eight, then "Show all"). A recipe's name
+    opens it; "Show details" shows it, and Print, Compare and Remove (last, in the danger color) are
+    under "More". Home's Recipes card opens at them.
+  - **The recipe page's help is one line**, "How the recipe calculator works", unless the account
+    has no recipes yet; opened or hidden, it stays so on every device, kept with the account's
+    settings. The privacy page lists it with the other settings.
+  - **The editor's heading is the recipe's title** ("New recipe" until it has one), and its button
+    says "Start a new recipe".
 
 - **The session cookie is `__Host-glazecalc_session` in production, and the older
   `glazecalc_session` is no longer read there**, so a cookie set for the whole domain by a

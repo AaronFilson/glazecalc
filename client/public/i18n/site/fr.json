@@ -147,10 +147,6 @@
         "purpose": "Si les nouvelles recettes comptent leurs additifs dans la formule de Seger, selon votre dernier choix.",
         "lasts": "Jusqu’à ce que vous effaciez le stockage de votre navigateur."
       },
-      "recipeHelp": {
-        "purpose": "Le fait que vous avez masqué l’aide de la page des recettes.",
-        "lasts": "Jusqu’à ce que vous réaffichiez l’aide."
-      },
       "print": {
         "purpose": "Vos derniers choix pour imprimer une recette : la recette entière ou une préparation, et la taille de la préparation.",
         "lasts": "Jusqu’à ce que vous effaciez le stockage de votre navigateur."

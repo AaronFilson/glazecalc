@@ -45,7 +45,16 @@ describe('static pages', () => {
     const links = [...home.nativeElement.querySelectorAll('.home-card')].map((a: HTMLAnchorElement) =>
       a.getAttribute('href')
     );
-    expect(links).toEqual(['/recipe', '/material', '/additive', '/firing', '/notes', '/advice', '/guides', '/account']);
+    expect(links).toEqual([
+      '/recipe#saved-recipes',
+      '/material',
+      '/additive',
+      '/firing',
+      '/notes',
+      '/advice',
+      '/guides',
+      '/account'
+    ]);
     expect(home.nativeElement.querySelector('.home-welcome')).toBeNull();
     expect(text((await create(TrashPage)).fixture)).toContain('trash functionality is coming soon');
     expect(text((await create(NotFoundPage)).fixture)).toContain('Page not found');

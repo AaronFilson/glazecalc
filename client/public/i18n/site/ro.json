@@ -147,10 +147,6 @@
         "purpose": "Dacă rețetele noi includ aditivii în formula Seger, așa cum ați ales ultima dată.",
         "lasts": "Până când ștergeți datele stocate de browser."
       },
-      "recipeHelp": {
-        "purpose": "Faptul că ați ascuns ajutorul de pe pagina rețetei.",
-        "lasts": "Până când afișați din nou ajutorul."
-      },
       "print": {
         "purpose": "Ultimele alegeri pentru imprimarea unei rețete: rețeta întreagă sau lista de cântărire, și cantitatea de preparat.",
         "lasts": "Până când ștergeți datele stocate de browser."

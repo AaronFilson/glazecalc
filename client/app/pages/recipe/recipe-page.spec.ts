@@ -480,7 +480,9 @@ describe('RecipePage', () => {
     expect(page['lines']().length).toBe(2);
     expect(page['status']()).toMatch(/^Saved at /);
     expect(text(fixture, '.saved-recipes')).toContain('Matte');
-    expect(text(fixture, '.saved-recipes')).toContain('Open above');
+    expect(text(fixture, '.saved-recipes')).toContain('Open in the editor');
+    // The editor's heading is the recipe's title.
+    expect(text(fixture, '#editor-heading')).toBe('Matte');
 
     page['setAmount'](1, '25');
     expect(page['status']()).toBe('Changes not saved yet');
@@ -675,7 +677,7 @@ describe('RecipePage', () => {
     page['title'].set('Draft');
     await fixture.whenStable();
     const newRecipe = [...fixture.nativeElement.querySelectorAll('button')].find(
-      (b: Element) => b.textContent?.trim() === 'New recipe'
+      (b: Element) => b.textContent?.trim() === 'Start a new recipe'
     ) as HTMLButtonElement;
     newRecipe.focus();
     newRecipe.click();
@@ -720,7 +722,7 @@ describe('RecipePage', () => {
       computed: [{ uList: { CaO: 1, Al2O3: 0.4, SiO2: 3.7 } }]
     };
     const { fixture } = await create([old]);
-    click(fixture, 'Expand to View');
+    click(fixture, 'Show details');
     await fixture.whenStable();
 
     const shown = text(fixture, '.saved-recipe');
@@ -731,9 +733,74 @@ describe('RecipePage', () => {
     expect(fixture.nativeElement.querySelector('.saved-recipe .keep-lines').textContent).toBe(
       'Notes: Good\nGlossy at cone 6'
     );
-    click(fixture, 'Hide');
+    click(fixture, 'Hide details');
     await fixture.whenStable();
     expect(text(fixture, '.saved-recipe')).not.toContain('Whiting : 20');
+  });
+
+  it('lists the saved recipes first, newest first, with their dates; a name opens it', async () => {
+    const recipes: Recipe[] = Array.from({ length: 10 }, (_, i) => ({
+      _id: 'r' + i,
+      title: (i === 3 ? 'Celadon ' : 'Matte ') + i,
+      date: i === 9 ? '2026-10-01' : undefined,
+      materials: [{ ...WHITING, amount: '10' }]
+    }));
+    const { fixture, page } = await create(recipes);
+    // Before the editor, so a returning potter finds them first.
+    const list = fixture.nativeElement.querySelector('#saved-recipes') as HTMLElement;
+    expect(list.compareDocumentPosition(fixture.nativeElement.querySelector('.recipe-editor'))).toBe(
+      Node.DOCUMENT_POSITION_FOLLOWING
+    );
+    expect(text(fixture, '#saved-heading')).toBe('My saved recipes (10 recipes)');
+    const names = () =>
+      [...fixture.nativeElement.querySelectorAll('.saved-recipe-open')].map((b: Element) => b.textContent?.trim());
+    expect(names()).toEqual(['Matte 9', 'Matte 8', 'Matte 7', 'Matte 6', 'Matte 5', 'Matte 4', 'Celadon 3', 'Matte 2']);
+    expect(text(fixture, '.saved-recipe-date')).toBe('Oct 1, 2026');
+    click(fixture, 'Show all 10 recipes');
+    await fixture.whenStable();
+    expect(names().length).toBe(10);
+
+    // Filtered by title.
+    const filter = fixture.nativeElement.querySelector('.saved-filter') as HTMLInputElement;
+    expect(filter.getAttribute('aria-label')).toBe('Find a saved recipe');
+    filter.value = 'celadon';
+    filter.dispatchEvent(new Event('input'));
+    await fixture.whenStable();
+    expect(names()).toEqual(['Celadon 3']);
+    filter.value = 'tenmoku';
+    filter.dispatchEvent(new Event('input'));
+    await fixture.whenStable();
+    expect(text(fixture, '.saved-list')).toBe('No saved recipe has that in its title.');
+    filter.value = '';
+    filter.dispatchEvent(new Event('input'));
+    await fixture.whenStable();
+
+    // The name opens it in the editor; the rest waits under More.
+    const open = fixture.nativeElement.querySelector('.saved-recipe-open') as HTMLButtonElement;
+    expect(open.getAttribute('aria-label')).toBe('Open Matte 9');
+    expect(fixture.nativeElement.querySelector('#print-r9')).toBeNull();
+    open.click();
+    await fixture.whenStable();
+    expect(page['title']()).toBe('Matte 9');
+    expect(document.activeElement?.id).toBe('recipe-name');
+    const more = fixture.nativeElement.querySelector('#more-r9') as HTMLButtonElement;
+    expect([more.getAttribute('aria-label'), more.getAttribute('aria-expanded')]).toEqual([
+      'More for Matte 9',
+      'false'
+    ]);
+    more.click();
+    await fixture.whenStable();
+    expect(more.getAttribute('aria-expanded')).toBe('true');
+    expect(text(fixture, '#more-actions-r9')).toBe('Print Compare Remove');
+  });
+
+  it('has no saved list until there is a recipe, and calls the editor "New recipe" until it has a title', async () => {
+    const { fixture, page } = await create();
+    expect(fixture.nativeElement.querySelector('#saved-recipes')).toBeNull();
+    expect(text(fixture, '#editor-heading')).toBe('New recipe');
+    page['title'].set('Shino');
+    await fixture.whenStable();
+    expect(text(fixture, '#editor-heading')).toBe('Shino');
   });
 
   it('removes a saved recipe; if it was open, it stays on the page as not saved', async () => {
@@ -741,10 +808,16 @@ describe('RecipePage', () => {
     const { fixture, page } = await create([saved]);
     page['open'](saved);
     await fixture.whenStable();
+    // Remove is under More, last, in the danger color.
+    click(fixture, 'More');
+    await fixture.whenStable();
+    const remove = fixture.nativeElement.querySelector('.saved-recipe-more .remove-start') as HTMLElement;
+    expect(remove.classList).toContain('btn-outline-danger');
+    expect(fixture.nativeElement.querySelector('.saved-recipe-more > :last-child').tagName).toBe('GC-REMOVE-BUTTON');
     click(fixture, 'Remove');
     await fixture.whenStable();
     expect(text(fixture, '.remove-confirm')).toContain(
-      'Remove "Gone"? It stays open above, as a recipe not saved yet.'
+      'Remove "Gone"? It stays open in the editor, as a recipe not saved yet.'
     );
     click(fixture, 'Yes, remove');
     httpMock()
@@ -966,6 +1039,8 @@ describe('RecipePage', () => {
       const router = TestBed.inject(Router);
       router.initialNavigation();
       await settle(fixture);
+      (fixture.nativeElement.querySelector('#more-r1') as HTMLButtonElement).click();
+      await settle(fixture);
       const button = fixture.nativeElement.querySelector('#print-r1') as HTMLButtonElement;
       expect(button.getAttribute('aria-label')).toBe('Print Saved matte');
       button.click();
@@ -1099,6 +1174,8 @@ describe('RecipePage', () => {
 
     it('compares a saved recipe from the list', async () => {
       const { fixture, router } = await start();
+      (fixture.nativeElement.querySelector('#more-r1') as HTMLButtonElement).click();
+      await settle(fixture);
       const button = fixture.nativeElement.querySelector('#compare-r1') as HTMLButtonElement;
       expect(button.getAttribute('aria-label')).toBe('Compare Old celadon');
       button.click();

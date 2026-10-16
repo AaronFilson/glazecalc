@@ -147,10 +147,6 @@
         "purpose": "Ob neue Rezepte ihre Zusätze in der Segerformel mitzählen, wie Sie es zuletzt gewählt haben.",
         "lasts": "Bis Sie den Speicher Ihres Browsers löschen."
       },
-      "recipeHelp": {
-        "purpose": "Dass Sie die Hilfe auf der Rezeptseite ausgeblendet haben.",
-        "lasts": "Bis Sie die Hilfe wieder einblenden."
-      },
       "print": {
         "purpose": "Ihre letzte Wahl beim Drucken eines Rezepts: das ganze Rezept oder ein Ansatz, und die Ansatzgröße.",
         "lasts": "Bis Sie den Speicher Ihres Browsers löschen."

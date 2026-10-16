@@ -1366,26 +1366,6 @@ button.library-item:focus-visible {
   margin-top: 1rem;
 }
 
-.saved-recipe-top {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.saved-recipe-actions {
-  display: inline-flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.4rem;
-  margin-inline-start: auto;
-}
-
-// The Remove question takes a line of its own, under the record's buttons.
-.saved-recipe-top > gc-remove-button.asking {
-  flex-basis: 100%;
-}
-
 // The standard materials and additives (shared/standard-list.ts).
 .standard-tools {
   display: flex;
@@ -1429,14 +1409,6 @@ button.library-item:focus-visible {
   summary {
     cursor: pointer;
   }
-}
-
-.saved-open-mark {
-  background: var(--gc-success-bg);
-  border-radius: 999px;
-  color: var(--gc-success-text);
-  font-size: 0.8rem;
-  padding: 0.1rem 0.5rem;
 }
 
 code {

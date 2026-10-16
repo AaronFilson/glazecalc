@@ -126,6 +126,18 @@ interface PendingLeave {
   from: HTMLElement | null;
 }
 
+/** More saved recipes than this, and a filter is offered. */
+const SAVED_FILTER_FROM = 5;
+/** How many saved recipes are listed until all are asked for. */
+const SAVED_SHOWN = 8;
+
+/** The set with the id added, or taken out if it was there. */
+const toggled = (set: ReadonlySet<string>, id: string): ReadonlySet<string> => {
+  const next = new Set(set);
+  if (!next.delete(id)) next.add(id);
+  return next;
+};
+
 @Component({
   selector: 'gc-recipe-page',
   imports: [
@@ -150,6 +162,90 @@ interface PendingLeave {
     UnityFormula
   ],
   templateUrl: './recipe-page.html',
+  // The saved recipes (styles.scss has the rest of the page's).
+  styles: `
+    .saved-recipes-top {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem 1rem;
+      margin-bottom: 0.5rem;
+    }
+    .saved-recipes-top h2 {
+      margin: 0;
+    }
+    .saved-count {
+      color: var(--gc-muted);
+      font-size: 1rem;
+      font-weight: 400;
+    }
+    .saved-filter {
+      width: auto;
+      flex: 0 1 16rem;
+    }
+    .saved-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .saved-recipe {
+      border-top: 1px solid var(--gc-border);
+      padding: 0.35rem 0;
+    }
+    .saved-recipe-top {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.4rem 0.75rem;
+    }
+    .saved-recipe-name {
+      display: inline-flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      gap: 0.25rem 0.75rem;
+      min-width: 0;
+    }
+    /* The name opens it: a link's look, a heading's weight, and a finger's height on a phone. */
+    .saved-recipe-open {
+      --bs-btn-padding-x: 0;
+      font-weight: 600;
+      text-align: start;
+      overflow-wrap: anywhere;
+    }
+    .saved-recipe-date {
+      color: var(--gc-muted);
+      font-size: 0.9rem;
+    }
+    .saved-recipe-actions,
+    .saved-recipe-more {
+      display: inline-flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .saved-recipe-actions {
+      margin-inline-start: auto;
+    }
+    /* Print, Compare and Remove, on a line of their own under the name, Remove last. */
+    .saved-recipe-more {
+      flex-basis: 100%;
+      justify-content: flex-end;
+    }
+    .saved-open-mark {
+      background: var(--gc-success-bg);
+      border-radius: 999px;
+      color: var(--gc-success-text);
+      font-size: 0.8rem;
+      padding: 0.1rem 0.5rem;
+    }
+    .saved-recipe-details {
+      padding: 0.25rem 0 0.5rem;
+    }
+    .saved-show-all {
+      margin-top: 0.5rem;
+    }
+  `,
   host: { '(window:beforeunload)': 'beforeUnload($event)' }
 })
 export class RecipePage implements OnInit, AsksBeforeLeaving {
@@ -193,6 +289,24 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
   protected readonly standardAdditivesFailed = signal(false);
   protected readonly myRecipes = signal<Recipe[]>([]);
   protected readonly expanded = signal<ReadonlySet<string>>(new Set());
+  /** The saved recipes whose More (Print, Compare, Remove) is open. */
+  protected readonly moreOpen = signal<ReadonlySet<string>>(new Set());
+  /** More saved recipes than this, and the list can be filtered by title. */
+  protected readonly filterFrom = SAVED_FILTER_FROM;
+  protected readonly recipeFilter = signal('');
+  protected readonly showAllRecipes = signal(false);
+  /** The saved recipes as listed: the newest first, those whose titles match the filter, the first few until all are asked for. */
+  private readonly listedRecipes = computed(() => {
+    const filter = this.recipeFilter().trim().toLocaleLowerCase();
+    const newest = [...this.myRecipes()].reverse();
+    return filter ? newest.filter((recipe) => recipe.title.toLocaleLowerCase().includes(filter)) : newest;
+  });
+  protected readonly shownRecipes = computed(() => {
+    const listed = this.listedRecipes();
+    return this.showAllRecipes() || this.recipeFilter().trim() ? listed : listed.slice(0, SAVED_SHOWN);
+  });
+  /** How many saved recipes are left out until all are asked for, or 0. */
+  protected readonly hiddenRecipes = computed(() => this.listedRecipes().length - this.shownRecipes().length);
   protected readonly removal = new Removal(this.recipes, this.myRecipes, this.notices, (recipe) => recipe.title);
 
   /** Whether the unity formula counts the colorants and additives too; saved with the recipe. */
@@ -445,6 +559,9 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
       if (comparing === compared) return;
       compared = comparing;
       const target = comparing ? 'compare-heading' : this.compareOpener;
+      if (!comparing && target.startsWith('compare-') && target !== 'compare-draft') {
+        untracked(() => this.showMore(target.slice('compare-'.length)));
+      }
       untracked(() =>
         afterNextRender(() => (document.getElementById(target) ?? document.getElementById('recipe-name'))?.focus(), {
           injector: this.injector
@@ -457,6 +574,7 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
       const printing = this.printRecipe() ? this.printParam() : null;
       if (printing === printed) return;
       const target = printing ? 'print-heading' : 'print-' + printed;
+      if (!printing && printed && printed !== 'draft') untracked(() => this.showMore(printed!));
       printed = printing;
       untracked(() => afterNextRender(() => document.getElementById(target)?.focus(), { injector: this.injector }));
     });
@@ -1426,12 +1544,16 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
   }
 
   protected toggleExpanded(recipe: Recipe): void {
-    const id = recipe._id ?? '';
-    this.expanded.update((set) => {
-      const next = new Set(set);
-      if (!next.delete(id)) next.add(id);
-      return next;
-    });
+    this.expanded.update((set) => toggled(set, recipe._id ?? ''));
+  }
+
+  protected toggleMore(recipe: Recipe): void {
+    this.moreOpen.update((set) => toggled(set, recipe._id ?? ''));
+  }
+
+  /** Opens a saved recipe's More, so the focus can go back to its Print or Compare. */
+  private showMore(id: string): void {
+    if (!this.moreOpen().has(id)) this.moreOpen.update((set) => toggled(set, id));
   }
 
   protected async remove(recipe: Recipe): Promise<void> {

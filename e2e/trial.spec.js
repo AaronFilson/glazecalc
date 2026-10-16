@@ -135,6 +135,7 @@ test('the sign-in lives in a cookie that scripts on the page cannot read', async
     'notice',
     'palette',
     'preferredRegion',
+    'recipeHelp',
     'temperature',
     'theme',
     'weightUnit'

@@ -147,10 +147,6 @@
         "purpose": "Lasketaanko uusien reseptien lisäaineet mukaan Segerin kaavaan, kuten viimeksi valittiin.",
         "lasts": "Kunnes selaimen tallennustila tyhjennetään."
       },
-      "recipeHelp": {
-        "purpose": "Tieto siitä, että reseptisivun ohje on piilotettu.",
-        "lasts": "Kunnes ohje näytetään uudelleen."
-      },
       "print": {
         "purpose": "Viimeisimmät valinnat reseptin tulostukseen: koko resepti vai erä, ja eräkoko.",
         "lasts": "Kunnes selaimen tallennustila tyhjennetään."

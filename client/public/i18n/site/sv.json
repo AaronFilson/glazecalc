@@ -147,10 +147,6 @@
         "purpose": "Om nya recept räknar med tillsatserna i Segerformeln, enligt ditt senaste val.",
         "lasts": "Tills webbläsarens lagring rensas."
       },
-      "recipeHelp": {
-        "purpose": "Att du har dolt hjälpen på receptsidan.",
-        "lasts": "Tills hjälpen visas igen."
-      },
       "print": {
         "purpose": "Dina senaste val för utskrift av ett recept: hela receptet eller en sats, och satsstorleken.",
         "lasts": "Tills webbläsarens lagring rensas."

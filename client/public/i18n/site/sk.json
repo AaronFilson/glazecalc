@@ -147,10 +147,6 @@
         "purpose": "Či nové recepty započítavajú prísady do Segerovho vzorca, ako ste naposledy zvolili.",
         "lasts": "Kým nevymažete úložisko prehliadača."
       },
-      "recipeHelp": {
-        "purpose": "To, že ste skryli pomocníka na stránke receptu.",
-        "lasts": "Kým pomocníka znova nezobrazíte."
-      },
       "print": {
         "purpose": "Vaše posledné voľby pri tlači receptu: celý recept alebo dávka a veľkosť dávky.",
         "lasts": "Kým nevymažete úložisko prehliadača."

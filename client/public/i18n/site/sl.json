@@ -147,10 +147,6 @@
         "purpose": "Ali novi recepti upoštevajo dodatke v Segerjevi formuli, kot ste nazadnje izbrali.",
         "lasts": "Dokler ne počistite shrambe brskalnika."
       },
-      "recipeHelp": {
-        "purpose": "Da ste skrili pomoč na strani recepta.",
-        "lasts": "Dokler pomoči znova ne prikažete."
-      },
       "print": {
         "purpose": "Vaše zadnje izbire za tiskanje recepta: celoten recept ali seznam za tehtanje in velikost mešanice.",
         "lasts": "Dokler ne počistite shrambe brskalnika."

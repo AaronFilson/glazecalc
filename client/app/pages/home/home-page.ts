@@ -7,9 +7,11 @@ import { RichText } from '../../i18n/rich-text';
 import { PageHeader } from '../../shared/page-header';
 
 // Each section's title and text are the keys of their messages, translated where they are shown.
-const SECTIONS = [
+// Recipes opens at the saved recipes, a potter's collection.
+const SECTIONS: { path: string; fragment?: string; title: string; text: string }[] = [
   {
     path: '/recipe',
+    fragment: 'saved-recipes',
     title: marker('notebook.home.sections.recipe.title'),
     text: marker('notebook.home.sections.recipe.text')
   },
@@ -79,7 +81,7 @@ const SECTIONS = [
     <ul class="home-sections">
       @for (section of sections; track section.path) {
         <li>
-          <a [routerLink]="section.path" class="panel home-card">
+          <a [routerLink]="section.path" [fragment]="section.fragment" class="panel home-card">
             <h2>{{ t(section.title) }}</h2>
             <p>{{ t(section.text) }}</p>
           </a>
