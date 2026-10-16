@@ -52,7 +52,7 @@
         try {
           const chosen = localStorage.getItem('language');
           const offered = 'bg cs da de el es et fi fr ga hr hu it lt lv mt nl pl pt-PT ro sk sl sv ja tr'.split(' ');
-          const prefixes = offered.concat('ar en-XA ar-XB ja-XC'.split(' '));
+          const prefixes = offered.concat('ar zh-Hant ko zh-Hans en-XA ar-XB ja-XC'.split(' '));
           const { pathname, search, hash } = location;
           if (
             offered.includes(chosen) &&
