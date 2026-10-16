@@ -1,5 +1,6 @@
 import { Type } from '@angular/core';
 import { TestBed } from '@angular/core/testing';
+import { NOW } from '../../core/clock';
 import { PreferencesService } from '../../core/preferences.service';
 import { testProviders } from '../../testing/test-providers';
 import { FoodLimits } from './food-limits';
@@ -304,6 +305,7 @@ describe('Taiwan', () => {
   });
 
   it('gives the 2027 limit with the day it applies from, and what applies until then', async () => {
+    TestBed.overrideProvider(NOW, { useValue: () => new Date(2026, 11, 31, 23, 59) });
     const { element, rows } = await create(SilicaLimit, 'TW');
     expect(rows()).toEqual([['Quartz and cristobalite', '0.1 mg/m³']]);
     const paragraphs = paragraphsOf(element);
@@ -312,6 +314,16 @@ describe('Taiwan', () => {
     expect(paragraphs[0]).toContain('Until 31 December 2026 an earlier table applies');
     expect(paragraphs[1]).toContain('Dust masks here are sold by class: D2 for glaze dust, or D3 for more protection');
     expect(paragraphs[2]).toContain('勞動部職業安全衛生署');
+  });
+
+  it('once the 2027 limit is in force, says neither when it applies from nor what applied before', async () => {
+    TestBed.overrideProvider(NOW, { useValue: () => new Date(2027, 0, 1, 0, 1) });
+    const { element, rows } = await create(SilicaLimit, 'TW');
+    expect(rows()).toEqual([['Quartz and cristobalite', '0.1 mg/m³']]);
+    const paragraph = paragraphsOf(element)[0];
+    expect(paragraph).toContain('A binding limit.');
+    expect(paragraph).not.toContain('It applies from');
+    expect(paragraph).not.toContain('Until 31 December 2026');
   });
 
   it('gives the limits in ppm and µg/cm², and says what ppm means', async () => {
