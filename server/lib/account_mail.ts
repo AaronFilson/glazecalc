@@ -910,8 +910,8 @@ export const sendDeleted = (to: string, language?: string): Promise<void> => {
   });
 };
 
-// The emails about confirming an address, in each language offered: a language
-// without a translation would get English, as with the others.
+// The emails about confirming an address, in most languages offered: a language
+// without a translation (for now Korean and Chinese) gets English, as with the others.
 
 /** Sent to a new account's address: {account}, {link}, {hours} and {app}. */
 export const VERIFY: Record<string, Email> = {
@@ -1939,8 +1939,8 @@ export const sendChangeNotice = (to: string, language?: string): Promise<void> =
   });
 };
 
-// Notices about two-step sign-in (docs/mfa-plan.md, item 10), in each language
-// offered. Each goes to the account's address after the change, so someone who
+// Notices about two-step sign-in (docs/mfa-plan.md, item 10), in most languages
+// offered (Korean and Chinese get English for now). Each goes to the account's address after the change, so someone who
 // did not make it hears of it.
 
 /** The factor a notice is about. */

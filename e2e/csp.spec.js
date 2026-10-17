@@ -93,7 +93,22 @@ test("every page loads with no violations under nginx's policy too", async ({ pa
 
   const first = await page.goto('/');
   expect(first.headers()['content-security-policy']).toContain(NGINX_POLICY);
-  await visitAll(page, ['/', '/guides', '/guides/firing', '/de/', '/de/guides/safe-mixing', '/privacy', '/signin']);
+  await visitAll(page, [
+    '/',
+    '/guides',
+    '/guides/firing',
+    '/de/',
+    '/de/guides/safe-mixing',
+    '/zh-Hans/',
+    '/zh-Hant/guides/safe-mixing',
+    '/ko/guides/firing',
+    '/ja/guides',
+    '/privacy',
+    '/signin'
+  ]);
+  // A guide with a region's own notes (China's), which add their own blocks.
+  await page.evaluate(() => localStorage.setItem('preferredRegion', 'CN'));
+  await visitAll(page, ['/zh-Hans/guides/safe-mixing', '/guides/home-safety']);
   await signUpAndSignIn(page);
   await visitAll(page, PAGES);
   expect(violations).toEqual([]);
