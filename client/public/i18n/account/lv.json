@@ -107,7 +107,6 @@
     "emailSend": "Sūtīt saiti",
     "emailFailed": "Kļūda: neizdevās nosūtīt saiti. Mēģiniet vēlreiz.",
     "signOutHeading": "Izrakstīšanās visās ierīcēs",
-    "signOutText": "Izraksta jūsu kontu visās ierīcēs, arī šajā. Izmantojiet to, ja ierīce ir pazaudēta vai jums šķiet, ka kāds cits zina jūsu pierakstīšanās datus.",
     "signOutButton": "Izrakstīties visās ierīcēs",
     "signOutFailed": "Kļūda: neizdevās izrakstīties. Mēģiniet vēlreiz.",
     "confirmStep": "Divpakāpju pierakstīšanās ir ieslēgta, tāpēc apstipriniet, ka tas esat jūs: ievadiet paroli un otro soli."

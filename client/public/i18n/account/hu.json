@@ -107,7 +107,6 @@
     "emailSend": "Link küldése",
     "emailFailed": "Hiba: nem sikerült elküldeni a linket. Kérjük, próbálja újra.",
     "signOutHeading": "Kijelentkezés mindenhol",
-    "signOutText": "Minden eszközön kijelentkezteti, ezen is. Akkor használja, ha elveszített egy eszközt, vagy úgy gondolja, hogy valaki más hozzájutott a bejelentkezési adataihoz.",
     "signOutButton": "Kijelentkezés mindenhol",
     "signOutFailed": "Hiba: nem sikerült kijelentkezni. Kérjük, próbálja újra.",
     "confirmStep": "A kétlépéses bejelentkezés be van kapcsolva, ezért erősítse meg, hogy Ön az: adja meg a jelszavát és a második lépést."

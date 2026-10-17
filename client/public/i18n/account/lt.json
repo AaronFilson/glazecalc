@@ -107,7 +107,6 @@
     "emailSend": "Siųsti nuorodą",
     "emailFailed": "Klaida: nuorodos išsiųsti nepavyko. Bandykite dar kartą.",
     "signOutHeading": "Atsijungimas visuose įrenginiuose",
-    "signOutText": "Atjungia jus visuose įrenginiuose, įskaitant šį. Naudokite, jei pametėte įrenginį arba manote, kad kažkas kitas turi jūsų prisijungimo duomenis.",
     "signOutButton": "Atsijungti visuose įrenginiuose",
     "signOutFailed": "Klaida: atsijungti nepavyko. Bandykite dar kartą.",
     "confirmStep": "Dviejų žingsnių prisijungimas įjungtas, todėl patvirtinkite, kad tai jūs: įveskite slaptažodį ir atlikite antrą žingsnį."

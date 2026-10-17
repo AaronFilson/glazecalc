@@ -112,7 +112,6 @@
     "rightsAsk": "其他事項，例如要求在更正錯誤期間暫停使用您的資料，或反對資料的使用方式，請寫信到 <mail>privacy@glazecalcapp.com</mail>。免費，您會在一個月內得到答覆。只會要求您證明帳戶是您的，方式是登入或開啟寄到該地址的連結，絕不會要求身分證件。",
     "rightsComplain": "如果您不滿意，可以向資料保護主管機關投訴：在歐盟，是<edpb>您所在國家的主管機關</edpb>；在英國，是<ico>資訊專員辦公室（Information Commissioner’s Office）</ico>。",
     "storageHeading": "Cookie 與瀏覽器儲存空間",
-    "storageIntro": "Glazecalc 設定一個 Cookie，並在您的瀏覽器中保存幾項少量的資料。每一項都是為了您要求的事：保持登入，或記住您做的選擇。沒有任何一項會追蹤您，也沒有任何一項會被分享，因此法律不要求事先詢問，也沒有 Cookie 橫幅。",
     "storageLabel": "Cookie 與瀏覽器儲存空間",
     "storageName": "名稱",
     "storagePurpose": "用途",

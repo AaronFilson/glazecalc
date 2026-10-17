@@ -112,7 +112,6 @@
     "rightsAsk": "Minden egyébhez, például ha azt kéri, hogy adatait egy hiba kijavításáig ne használjuk, vagy ha tiltakozik a felhasználásuk módja ellen, írjon ide: <mail>privacy@glazecalcapp.com</mail>. Ez ingyenes, és egy hónapon belül választ kap. Csak azt kell igazolnia, hogy a fiók az Öné, bejelentkezéssel vagy a fiók címére küldött link megnyitásával; személyazonosító igazolványt soha nem kérünk.",
     "rightsComplain": "Ha nem elégedett, panaszt tehet egy adatvédelmi hatóságnál: az EU-ban <edpb>az országa hatóságánál</edpb>, az Egyesült Királyságban pedig az <ico>Information Commissioner’s Office</ico> nevű hivatalnál.",
     "storageHeading": "Sütik és böngészőtárhely",
-    "storageIntro": "A Glazecalc egy sütit állít be, és néhány kis értéket tárol a böngészőjében. Mindegyik olyasmiért van ott, amit Ön kért: hogy bejelentkezve maradjon, vagy hogy megmaradjon egy választása. Egyik sem követi Önt, és egyiket sem osztjuk meg, ezért a jogszabály nem írja elő, hogy előbb engedélyt kérjünk, és nincs sütifigyelmeztetés.",
     "storageLabel": "Sütik és böngészőtárhely",
     "storageName": "Név",
     "storagePurpose": "Mire szolgál",

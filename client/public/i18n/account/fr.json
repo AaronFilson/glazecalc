@@ -107,7 +107,6 @@
     "emailSend": "Envoyer le lien",
     "emailFailed": "Erreur : impossible d’envoyer le lien. Veuillez réessayer.",
     "signOutHeading": "Se déconnecter partout",
-    "signOutText": "Ferme votre session sur tous les appareils, y compris celui-ci. À utiliser si vous avez perdu un appareil ou si vous pensez que quelqu’un d’autre connaît vos identifiants de connexion.",
     "signOutButton": "Se déconnecter partout",
     "signOutFailed": "Erreur : déconnexion impossible. Veuillez réessayer.",
     "confirmStep": "La connexion en deux étapes est activée : confirmez donc que c’est bien vous, avec votre mot de passe et une deuxième étape."

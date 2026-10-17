@@ -107,7 +107,6 @@
     "emailSend": "Pošalji poveznicu",
     "emailFailed": "Pogreška: poveznicu nije moguće poslati. Pokušajte ponovno.",
     "signOutHeading": "Odjava sa svih uređaja",
-    "signOutText": "Odjavljuje vas na svim uređajima, uključujući ovaj. Koristite je ako ste izgubili uređaj ili mislite da netko drugi ima vaše podatke za prijavu.",
     "signOutButton": "Odjavi se sa svih uređaja",
     "signOutFailed": "Pogreška: odjava nije uspjela. Pokušajte ponovno.",
     "confirmStep": "Dvostupanjska prijava je uključena, zato potvrdite da ste to vi: lozinkom i drugim korakom."

@@ -107,7 +107,6 @@
     "emailSend": "Wyślij link",
     "emailFailed": "Błąd: nie udało się wysłać linku. Proszę spróbować ponownie.",
     "signOutHeading": "Wylogowanie ze wszystkich urządzeń",
-    "signOutText": "Wylogowuje ze wszystkich urządzeń, również z tego. Przydaje się po utracie urządzenia lub w razie podejrzenia, że ktoś inny zna dane logowania.",
     "signOutButton": "Wyloguj ze wszystkich urządzeń",
     "signOutFailed": "Błąd: nie udało się wylogować. Proszę spróbować ponownie.",
     "confirmStep": "Logowanie dwuetapowe jest włączone, więc należy potwierdzić tożsamość: hasłem i drugim krokiem."

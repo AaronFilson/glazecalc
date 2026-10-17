@@ -107,7 +107,6 @@
     "emailSend": "Lähetä linkki",
     "emailFailed": "Virhe: linkin lähettäminen ei onnistunut. Yritä uudelleen.",
     "signOutHeading": "Uloskirjautuminen kaikilta laitteilta",
-    "signOutText": "Kirjaa ulos kaikilla laitteilla, myös tällä. Käytä tätä, jos laite on kadonnut tai on syytä epäillä, että kirjautumistiedot ovat jonkun muun käsissä.",
     "signOutButton": "Kirjaudu ulos kaikkialta",
     "signOutFailed": "Virhe: uloskirjautuminen ei onnistunut. Yritä uudelleen.",
     "confirmStep": "Kaksivaiheinen kirjautuminen on käytössä, joten vahvista henkilöllisyytesi: salasana ja toinen vaihe."

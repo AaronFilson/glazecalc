@@ -112,7 +112,6 @@
     "rightsAsk": "W każdej innej sprawie, np. aby poprosić o wstrzymanie wykorzystywania danych do czasu poprawienia błędu lub aby wnieść sprzeciw wobec sposobu ich wykorzystywania, należy napisać na adres <mail>privacy@glazecalcapp.com</mail>. Jest to bezpłatne, a odpowiedź nadejdzie w ciągu miesiąca. Poprosimy jedynie o wykazanie, że konto należy do osoby piszącej, przez zalogowanie się lub otwarcie linku wysłanego na adres konta, nigdy o dokument tożsamości.",
     "rightsComplain": "W razie niezadowolenia można złożyć skargę do organu ochrony danych: w UE do <edpb>organu we własnym kraju</edpb>, a w Wielkiej Brytanii do <ico>Information Commissioner’s Office</ico>.",
     "storageHeading": "Pliki cookie i pamięć przeglądarki",
-    "storageIntro": "Glazecalc ustawia jeden plik cookie i przechowuje w przeglądarce kilka małych wartości. Każda z nich służy czemuś, o co poprosił użytkownik: pozostaniu zalogowanym lub zapamiętaniu dokonanego wyboru. Żadna nie służy do śledzenia i żadna nie jest udostępniana, więc prawo nie wymaga wcześniejszego pytania o zgodę i nie ma banera cookie.",
     "storageLabel": "Pliki cookie i pamięć przeglądarki",
     "storageName": "Nazwa",
     "storagePurpose": "Do czego służy",

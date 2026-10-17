@@ -112,7 +112,6 @@
     "rightsAsk": "Skriv til <mail>privacy@glazecalcapp.com</mail> om alt andet, fx hvis du vil have, at dine data ikke bruges, mens en fejl bliver rettet, eller vil gøre indsigelse mod, hvordan de bruges. Det er gratis, og du får svar inden for en måned. Du bliver kun bedt om at vise, at kontoen er din, ved at logge ind eller ved at åbne et link, der sendes til dens adresse, aldrig om legitimation.",
     "rightsComplain": "Hvis du ikke er tilfreds, kan du klage til en databeskyttelsesmyndighed: i EU til <edpb>myndigheden i dit land</edpb> og i Storbritannien til <ico>Information Commissioner’s Office</ico>.",
     "storageHeading": "Cookies og lagring i browseren",
-    "storageIntro": "Glazecalc sætter én cookie og gemmer nogle få små værdier i din browser. Hver af dem er der for noget, du har bedt om: at forblive logget ind eller at huske et valg, du har truffet. Ingen af dem sporer dig, og ingen deles, så loven kræver ikke, at der spørges først, og der er intet cookiebanner.",
     "storageLabel": "Cookies og lagring i browseren",
     "storageName": "Navn",
     "storagePurpose": "Hvad den bruges til",

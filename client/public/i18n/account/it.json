@@ -107,7 +107,6 @@
     "emailSend": "Invia il link",
     "emailFailed": "Errore: impossibile inviare il link. Riprovare.",
     "signOutHeading": "Uscire da tutti i dispositivi",
-    "signOutText": "Disconnette l’account da ogni dispositivo, compreso questo. Da usare se ha perso un dispositivo o pensa che qualcun altro abbia i Suoi dati di accesso.",
     "signOutButton": "Esci da tutti i dispositivi",
     "signOutFailed": "Errore: impossibile disconnettere l’account. Riprovare.",
     "confirmStep": "L’accesso in due passaggi è attivo: confermi quindi che è Lei, con la Sua password e un secondo passaggio."

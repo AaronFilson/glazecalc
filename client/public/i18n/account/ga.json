@@ -107,7 +107,6 @@
     "emailSend": "Seol an nasc",
     "emailFailed": "Earráid: níorbh fhéidir an nasc a sheoladh. Bain triail eile as.",
     "signOutHeading": "Síniú amach i ngach áit",
-    "signOutText": "Síníonn sé seo amach thú ar gach gléas, an ceann seo san áireamh. Úsáid é má chaill tú gléas nó má cheapann tú go bhfuil do shonraí síniú isteach ag duine eile.",
     "signOutButton": "Sínigh amach i ngach áit",
     "signOutFailed": "Earráid: níorbh fhéidir síniú amach. Bain triail eile as.",
     "confirmStep": "Tá síniú isteach dhá chéim ar siúl, mar sin deimhnigh gur tusa atá ann: do phasfhocal agus an dara céim."

@@ -107,7 +107,6 @@
     "emailSend": "Trimiteți linkul",
     "emailFailed": "Eroare: linkul nu a putut fi trimis. Încercați din nou.",
     "signOutHeading": "Deconectare de pe toate dispozitivele",
-    "signOutText": "Vă deconectează de pe toate dispozitivele, inclusiv de pe acesta. Folosiți această opțiune dacă ați pierdut un dispozitiv sau credeți că altcineva are datele dumneavoastră de conectare.",
     "signOutButton": "Deconectați-vă de pe toate dispozitivele",
     "signOutFailed": "Eroare: deconectarea nu a reușit. Încercați din nou.",
     "confirmStep": "Conectarea în doi pași este activată, așa că confirmați că sunteți dumneavoastră: parola și un al doilea pas."

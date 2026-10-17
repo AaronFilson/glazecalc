@@ -107,7 +107,6 @@
     "emailSend": "Pošlji povezavo",
     "emailFailed": "Napaka: povezave ni bilo mogoče poslati. Poskusite znova.",
     "signOutHeading": "Odjava na vseh napravah",
-    "signOutText": "Odjavi vas na vseh napravah, tudi na tej. Uporabite to možnost, če ste izgubili napravo ali menite, da ima nekdo drug vaše podatke za prijavo.",
     "signOutButton": "Odjavi se povsod",
     "signOutFailed": "Napaka: odjava ni uspela. Poskusite znova.",
     "confirmStep": "Dvostopenjska prijava je vklopljena, zato potrdite, da ste to vi: z geslom in drugim korakom."

@@ -112,7 +112,6 @@
     "rightsAsk": "Başka herhangi bir şey için, örneğin bir hata düzeltilirken verilerinizin kullanılmamasını istemek ya da nasıl kullanıldığına itiraz etmek için <mail>privacy@glazecalcapp.com</mail> adresine yazın. Bu ücretsizdir ve bir ay içinde yanıt alırsınız. Sizden yalnızca hesabın size ait olduğunu göstermeniz istenir; bunu oturum açarak ya da hesabın adresine gönderilen bir bağlantıyı açarak yaparsınız, asla kimlik belgesiyle değil.",
     "rightsComplain": "Memnun kalmazsanız bir veri koruma otoritesine şikâyette bulunabilirsiniz: AB’de <edpb>ülkenizdeki otoriteye</edpb>, Birleşik Krallık’ta ise <ico>Information Commissioner’s Office</ico> kurumuna.",
     "storageHeading": "Çerezler ve tarayıcı depolama alanı",
-    "storageIntro": "Glazecalc tek bir çerez ayarlar ve tarayıcınızda birkaç küçük değer saklar. Her biri sizin istediğiniz bir şey için oradadır: oturumunuzun açık kalması ya da yaptığınız bir seçimin hatırlanması. Hiçbiri sizi izlemez ve hiçbiri paylaşılmaz; bu yüzden yasa önceden izin istenmesini gerektirmez ve çerez bildirimi yoktur.",
     "storageLabel": "Çerezler ve tarayıcı depolama alanı",
     "storageName": "Ad",
     "storagePurpose": "Ne için",

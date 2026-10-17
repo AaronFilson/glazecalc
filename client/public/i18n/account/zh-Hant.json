@@ -107,7 +107,6 @@
     "emailSend": "寄送連結",
     "emailFailed": "錯誤：無法寄送連結。請再試一次。",
     "signOutHeading": "登出所有裝置",
-    "signOutText": "在所有裝置上登出，包括目前這一台。若遺失裝置，或認為別人取得了您的登入資訊，請使用此功能。",
     "signOutButton": "登出所有裝置",
     "signOutFailed": "錯誤：無法登出。請再試一次。",
     "confirmStep": "已開啟兩步驟驗證，請確認是您本人：輸入密碼與第二個步驟。"

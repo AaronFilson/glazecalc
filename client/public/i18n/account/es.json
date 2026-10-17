@@ -107,7 +107,6 @@
     "emailSend": "Enviar el enlace",
     "emailFailed": "Error: no se ha podido enviar el enlace. Inténtelo de nuevo.",
     "signOutHeading": "Cerrar sesión en todas partes",
-    "signOutText": "Cierra su sesión en todos los dispositivos, incluido este. Úselo si ha perdido un dispositivo o cree que otra persona tiene sus datos de inicio de sesión.",
     "signOutButton": "Cerrar sesión en todas partes",
     "signOutFailed": "Error: no se ha podido cerrar la sesión. Inténtelo de nuevo.",
     "confirmStep": "El inicio de sesión en dos pasos está activado, así que confirme que es usted: con su contraseña y un segundo paso."

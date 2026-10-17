@@ -107,7 +107,6 @@
     "emailSend": "Send linket",
     "emailFailed": "Fejl: Linket kunne ikke sendes. Prøv igen.",
     "signOutHeading": "Log ud overalt",
-    "signOutText": "Logger dig ud på alle enheder, også denne. Brug det, hvis du har mistet en enhed eller tror, at en anden har dine loginoplysninger.",
     "signOutButton": "Log ud overalt",
     "signOutFailed": "Fejl: Udlogningen mislykkedes. Prøv igen.",
     "confirmStep": "Login i to trin er slået til, så bekræft, at det er dig: adgangskoden og et andet trin."

@@ -107,7 +107,6 @@
     "emailSend": "Link senden",
     "emailFailed": "Fehler: Der Link konnte nicht gesendet werden. Bitte versuchen Sie es erneut.",
     "signOutHeading": "Überall abmelden",
-    "signOutText": "Meldet Sie auf allen Geräten ab, auch auf diesem. Nutzen Sie es, wenn Sie ein Gerät verloren haben oder vermuten, dass jemand anderes Ihre Anmeldedaten hat.",
     "signOutButton": "Überall abmelden",
     "signOutFailed": "Fehler: Die Abmeldung ist fehlgeschlagen. Bitte versuchen Sie es erneut.",
     "confirmStep": "Die Zwei-Schritt-Anmeldung ist eingeschaltet. Bestätigen Sie daher, dass Sie es sind: mit Ihrem Passwort und einem zweiten Schritt."

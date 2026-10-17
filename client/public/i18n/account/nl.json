@@ -107,7 +107,6 @@
     "emailSend": "Link sturen",
     "emailFailed": "Fout: de link kon niet worden verstuurd. Probeer het opnieuw.",
     "signOutHeading": "Overal uitloggen",
-    "signOutText": "Hiermee logt u uit op elk apparaat, ook op dit apparaat. Gebruik het als u een apparaat kwijt bent of denkt dat iemand anders uw inloggegevens heeft.",
     "signOutButton": "Overal uitloggen",
     "signOutFailed": "Fout: uitloggen is niet gelukt. Probeer het opnieuw.",
     "confirmStep": "Inloggen in twee stappen staat aan, dus bevestig dat u het bent: met uw wachtwoord en een tweede stap."

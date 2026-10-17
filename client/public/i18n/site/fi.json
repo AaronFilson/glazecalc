@@ -112,7 +112,6 @@
     "rightsAsk": "Muissa asioissa, esimerkiksi kun pyydetään, ettei tietoja käytetä sinä aikana, kun virhettä korjataan, tai kun vastustetaan tietojen käyttötapaa, kirjoita osoitteeseen <mail>privacy@glazecalcapp.com</mail>. Se on maksutonta, ja vastaus annetaan kuukauden kuluessa. Ainoastaan tilin omistajuus pyydetään osoittamaan, kirjautumalla sisään tai avaamalla tilin osoitteeseen lähetetty linkki; henkilöllisyystodistusta ei koskaan pyydetä.",
     "rightsComplain": "Jos vastaus ei tyydytä, valituksen voi tehdä tietosuojaviranomaiselle: EU:ssa <edpb>oman maan viranomaiselle</edpb> ja Isossa-Britanniassa viranomaiselle <ico>Information Commissioner’s Office</ico>.",
     "storageHeading": "Evästeet ja selaimen tallennustila",
-    "storageIntro": "Glazecalc asettaa yhden evästeen ja säilyttää selaimessa muutamia pieniä arvoja. Jokainen niistä on olemassa jotakin pyydettyä varten: kirjautuneena pysymistä tai tehdyn valinnan muistamista. Mikään niistä ei seuraa käyttäjää eikä mitään niistä jaeta, joten laki ei edellytä luvan kysymistä etukäteen, eikä evästebanneria ole.",
     "storageLabel": "Evästeet ja selaimen tallennustila",
     "storageName": "Nimi",
     "storagePurpose": "Käyttötarkoitus",

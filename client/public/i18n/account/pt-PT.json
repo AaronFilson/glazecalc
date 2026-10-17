@@ -107,7 +107,6 @@
     "emailSend": "Enviar a ligação",
     "emailFailed": "Erro: não foi possível enviar a ligação. Tente novamente.",
     "signOutHeading": "Terminar sessão em todos os dispositivos",
-    "signOutText": "Termina a sessão em todos os dispositivos, incluindo este. Use-o se perdeu um dispositivo ou se pensa que outra pessoa tem os seus dados de início de sessão.",
     "signOutButton": "Terminar sessão em todos os dispositivos",
     "signOutFailed": "Erro: não foi possível terminar a sessão. Tente novamente.",
     "confirmStep": "O início de sessão em dois passos está ativo, por isso confirme que é você: a palavra-passe e um segundo passo."

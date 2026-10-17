@@ -107,7 +107,6 @@
     "emailSend": "Odeslat odkaz",
     "emailFailed": "Chyba: odkaz se nepodařilo odeslat. Zkuste to prosím znovu.",
     "signOutHeading": "Odhlášení na všech zařízeních",
-    "signOutText": "Odhlásí vás na všech zařízeních, včetně tohoto. Použijte to, pokud se vám ztratilo zařízení nebo si myslíte, že vaše přihlašovací údaje má někdo jiný.",
     "signOutButton": "Odhlásit se všude",
     "signOutFailed": "Chyba: odhlášení se nezdařilo. Zkuste to prosím znovu.",
     "confirmStep": "Dvoustupňové přihlášení je zapnuté, proto potvrďte, že jste to vy: heslem a druhým krokem."

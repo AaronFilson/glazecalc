@@ -107,7 +107,6 @@
     "emailSend": "Saada link",
     "emailFailed": "Viga: linki ei saanud saata. Proovige uuesti.",
     "signOutHeading": "Väljalogimine kõikjal",
-    "signOutText": "Logib teid välja kõigis seadmetes, ka selles. Kasutage seda, kui kaotasite seadme või arvate, et kellelgi teisel on teie sisselogimisandmed.",
     "signOutButton": "Logi välja kõikjal",
     "signOutFailed": "Viga: väljalogimine ebaõnnestus. Proovige uuesti.",
     "confirmStep": "Kaheastmeline sisselogimine on sees, seega kinnitage, et see olete teie: sisestage oma parool ja teine samm."

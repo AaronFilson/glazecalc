@@ -112,7 +112,6 @@
     "rightsAsk": "För allt annat, till exempel att begära att uppgifterna inte används medan ett fel rättas, eller att invända mot hur de används, skriv till <mail>privacy@glazecalcapp.com</mail>. Det är gratis, och du får svar inom en månad. Du blir bara ombedd att visa att kontot är ditt, genom att logga in eller öppna en länk som skickas till kontots adress, aldrig att visa legitimation.",
     "rightsComplain": "Om du inte är nöjd kan du klaga hos en dataskyddsmyndighet: i EU hos <edpb>myndigheten i ditt land</edpb> och i Storbritannien hos <ico>Information Commissioner's Office</ico>.",
     "storageHeading": "Kakor och lagring i webbläsaren",
-    "storageIntro": "Glazecalc sätter en kaka och sparar några små värden i webbläsaren. Var och en finns där för något du har bett om: att förbli inloggad eller att komma ihåg ett val du har gjort. Ingen av dem spårar dig och ingen delas, så lagen kräver inte att du tillfrågas först, och det finns ingen kakbanner.",
     "storageLabel": "Kakor och lagring i webbläsaren",
     "storageName": "Namn",
     "storagePurpose": "Vad den används till",

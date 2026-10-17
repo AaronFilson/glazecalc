@@ -107,7 +107,6 @@
     "emailSend": "Bağlantıyı gönder",
     "emailFailed": "Hata: bağlantı gönderilemedi. Lütfen yeniden deneyin.",
     "signOutHeading": "Her yerde oturumu kapat",
-    "signOutText": "Bu cihaz da dahil olmak üzere tüm cihazlarda oturumunuzu kapatır. Bir cihazı kaybettiyseniz ya da oturum bilgilerinizin başka birinde olduğunu düşünüyorsanız kullanın.",
     "signOutButton": "Her yerde oturumu kapat",
     "signOutFailed": "Hata: oturum kapatılamadı. Lütfen yeniden deneyin.",
     "confirmStep": "İki adımlı oturum açma etkin; bu yüzden siz olduğunuzu onaylayın: parolanız ve ikinci bir adım."

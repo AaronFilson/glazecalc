@@ -107,7 +107,6 @@
     "emailSend": "Skicka länken",
     "emailFailed": "Fel: det gick inte att skicka länken. Försök igen.",
     "signOutHeading": "Logga ut överallt",
-    "signOutText": "Loggar ut på alla enheter, även den här. Använd det om du har tappat bort en enhet eller tror att någon annan har dina inloggningsuppgifter.",
     "signOutButton": "Logga ut överallt",
     "signOutFailed": "Fel: det gick inte att logga ut. Försök igen.",
     "confirmStep": "Inloggning i två steg är aktiverad, så bekräfta att det är du: lösenordet och ett andra steg."

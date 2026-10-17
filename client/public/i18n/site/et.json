@@ -112,7 +112,6 @@
     "rightsAsk": "Kõige muu jaoks, näiteks kui soovite, et teie andmete kasutamine peatataks vea parandamise ajaks, või kui esitate vastuväite nende kasutamisele, kirjutage aadressil <mail>privacy@glazecalcapp.com</mail>. See on tasuta ja vastuse saate kuu jooksul. Teil palutakse ainult tõendada, et konto on teie oma, sisse logides või selle aadressile saadetud linki avades, mitte kunagi isikut tõendava dokumendiga.",
     "rightsComplain": "Kui te ei ole rahul, võite esitada kaebuse andmekaitse järelevalveasutusele: EL-is <edpb>oma riigi asutusele</edpb> ja Ühendkuningriigis asutusele <ico>Information Commissioner’s Office</ico>.",
     "storageHeading": "Küpsised ja brauseri salvestusruum",
-    "storageIntro": "Glazecalc seab ühe küpsise ja hoiab teie brauseris mõnda väikest väärtust. Igaüks neist on olemas millegi jaoks, mida te palusite: sisselogituks jäämiseks või tehtud valiku meeldejätmiseks. Ükski neist ei jälgi teid ega ole jagatud, seega ei nõua seadus eelnevat küsimist ja küpsiste teavitusriba ei ole.",
     "storageLabel": "Küpsised ja brauseri salvestusruum",
     "storageName": "Nimi",
     "storagePurpose": "Mille jaoks",
