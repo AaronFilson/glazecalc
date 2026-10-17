@@ -59,6 +59,38 @@ test('shows the unity formula of a dolomite matte as it is typed', async ({ page
   await expect(unity(page)).not.toContainText('MgO');
 });
 
+test("shows the recipe's hazards, and its cost from prices the account keeps", async ({ page }) => {
+  await addStandardMaterial(page, 'Silica', 60);
+  await addStandardMaterial(page, 'Whiting', 40);
+  const hazards = page.locator('.recipe-hazards');
+  await expect(hazards.locator('li')).toHaveCount(2);
+  await expect(hazards).toContainText('Silica: ' + standard['Silica'].hazards);
+  await expect(hazards.getByRole('link', { name: 'Safe mixing and ventilation' })).toHaveAttribute(
+    'href',
+    /\/guides\/safe-mixing$/
+  );
+
+  await page.getByRole('button', { name: 'Cost of a batch' }).click();
+  const cost = page.locator('.recipe-cost');
+  await expect(cost.locator('.recipe-cost-summary')).toContainText('Give a price for Silica and Whiting');
+  // Prices are per kilogram here, in the account's currency (USD for a US browser with no region chosen).
+  await page.getByRole('textbox', { name: 'Price of Silica per kilogram' }).fill('2');
+  await page.getByRole('textbox', { name: 'Price of Silica per kilogram' }).blur();
+  await expect(cost.locator('.recipe-cost-summary')).toContainText('Give a price for Whiting');
+  await page.getByRole('textbox', { name: 'Price of Whiting per kilogram' }).fill('0.5');
+  await page.getByRole('textbox', { name: 'Price of Whiting per kilogram' }).blur();
+  // 1000 g of base: 600 g at 2 and 400 g at 0.5.
+  await expect(cost.locator('.recipe-cost-summary')).toHaveText(
+    /^This batch costs \$1\.40: \$1\.40 per kilogram of dry glaze/
+  );
+
+  // Kept with the account: there after a reload, for any recipe using them.
+  await page.reload();
+  await addStandardMaterial(page, 'Whiting', 100);
+  await page.getByRole('button', { name: 'Cost of a batch' }).click();
+  await expect(page.locator('.recipe-cost-summary')).toHaveText(/^This batch costs \$0\.50/);
+});
+
 test('saves a recipe, keeps it open, and saves changes to the same recipe', async ({ page }) => {
   await page.locator('#recipe-name').fill('Dolomite Matte');
   for (const [name, grams] of DOLOMITE_MATTE) await addStandardMaterial(page, name, grams);

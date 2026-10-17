@@ -43,6 +43,15 @@ export const fixed = (value: number, places: number): string => numberFormat(pla
 /** Up to `places` decimals, without trailing zeros: 12,5 rather than 12,500. */
 export const upTo = (value: number, places: number): string => numberFormat(0, places).format(value);
 
+/** An amount of money in a currency (ISO 4217), as the locale writes it: $2.50, 2,50 €, ¥250. */
+export const money = (value: number, currency: string): string => {
+  try {
+    return new Intl.NumberFormat(formatLocale(), { style: 'currency', currency }).format(value);
+  } catch {
+    return upTo(value, 2) + ' ' + currency;
+  }
+};
+
 /** A whole percent: 7%, 7 % or 7 %, as the locale writes it. */
 export const percent = (value: number, places = 0): string =>
   new Intl.NumberFormat(formatLocale(), {

@@ -15,7 +15,7 @@
     <ng-container [ngTemplateOutlet]="unsavedQuestion" />
   }
   @if (printRecipe(); as recipe) {
-    <gc-recipe-print [recipe]="recipe" [chemistryOf]="chemistryOf" (back)="closePrint()" />
+    <gc-recipe-print [recipe]="recipe" [chemistryOf]="chemistryOf" [hazards]="printHazards()" (back)="closePrint()" />
   } @else if (printWaiting()) {
     <p class="muted" role="status">{{ t('recipe.page.gettingPrint') }}</p>
   } @else if (comparing()) {
@@ -802,6 +802,11 @@
           (pick)="addAdditive($event)"
           (retry)="loadStandardAdditives()"
         />
+
+        @if (lines().length || additiveLines().length) {
+          <gc-recipe-hazards [sources]="hazardSources()" />
+          <gc-recipe-cost [materials]="lines()" [additives]="additiveLines()" />
+        }
 
         <div class="recipe-save">
           <button type="button" class="btn btn-primary" [attr.aria-disabled]="saving.active() || null" (click)="save()">

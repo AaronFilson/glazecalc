@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable, Signal, WritableSignal, computed, inject, signal } from '@angular/core';
 import { firstValueFrom } from 'rxjs';
-import { FORMAT_LOCALES, REGION_CODES } from '../../../lib/regions';
+import { CURRENCIES, FORMAT_LOCALES, REGION_CODES } from '../../../lib/regions';
 import { LIVE_LANGUAGES } from '../../../lib/regions/languages';
 import { GramPrecision, WeightUnit } from '../shared/weights';
 import type { Palette, ThemeMode } from './theme';
@@ -34,6 +34,8 @@ export interface Preferences {
   notice: 'shown' | 'hidden';
   /** The recipe page's help: open for an account with no recipes yet ('auto'), or as chosen. */
   recipeHelp: 'auto' | 'shown' | 'hidden';
+  /** The one currency the account's prices are in (ISO 4217); '' follows the region (core/locale.service.ts). */
+  currency: string;
 }
 
 /** Whether materials with lead may be added to recipes and suggested: off unless chosen. */
@@ -62,7 +64,8 @@ const CHOICES: { [K in keyof Preferences]: ReadonlyArray<Preferences[K]> } = {
   density: ['', 'sg', 'baume', 'pint'],
   englishTerms: ['off', 'on'],
   notice: ['shown', 'hidden'],
-  recipeHelp: ['auto', 'shown', 'hidden']
+  recipeHelp: ['auto', 'shown', 'hidden'],
+  currency: ['', ...CURRENCIES]
 };
 const NAMES = Object.keys(CHOICES) as Array<keyof Preferences>;
 
@@ -135,7 +138,8 @@ export class PreferencesService {
     density: 0,
     englishTerms: 0,
     notice: 0,
-    recipeHelp: 0
+    recipeHelp: 0,
+    currency: 0
   };
 
   /**
@@ -158,7 +162,8 @@ export class PreferencesService {
     density: signal(readCopy('density')),
     englishTerms: signal(readCopy('englishTerms')),
     notice: signal(readCopy('notice')),
-    recipeHelp: signal(readCopy('recipeHelp'))
+    recipeHelp: signal(readCopy('recipeHelp')),
+    currency: signal(readCopy('currency'))
   };
 
   /** Batch weights in grams, or in pounds and ounces. */
@@ -182,6 +187,7 @@ export class PreferencesService {
   readonly englishTerms = this.shown('englishTerms');
   readonly notice = this.shown('notice');
   readonly recipeHelp = this.shown('recipeHelp');
+  readonly currency = this.shown('currency');
 
   constructor() {
     // Signed out, or the session ended: the account's choices leave this browser, and the visitor's own come back.

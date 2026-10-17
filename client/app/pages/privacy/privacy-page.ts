@@ -48,7 +48,8 @@ export const STORED: ReadonlyArray<{ names: string[]; kind: string; key: string 
       'density',
       'englishTerms',
       'notice',
-      'recipeHelp'
+      'recipeHelp',
+      'currency'
     ],
     kind: marker('site.privacy.storageLocal'),
     key: 'settings'
@@ -232,6 +233,7 @@ export class PrivacyPage {
   protected readonly storedOnDevice = STORED;
   protected readonly stored = marker([
     'site.privacy.storedAccount',
+    'site.privacy.storedPrices',
     'site.privacy.storedEmailChange',
     'site.privacy.storedSignIn',
     'site.privacy.storedSaved',

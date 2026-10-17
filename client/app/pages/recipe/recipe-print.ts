@@ -1,4 +1,4 @@
-import { fixed, forTyping, formatPlain, upTo } from '../../shared/format';
+import { fixed, forTyping, formatDate, formatPlain, upTo } from '../../shared/format';
 import { DatePipe } from '../../shared/format-pipes';
 import { NumberInput } from '../../shared/number-input';
 import { Component, OnDestroy, OnInit, computed, inject, input, output, signal } from '@angular/core';
@@ -13,6 +13,7 @@ import { firstOf } from '../../shared/options';
 import { GramPrecision, WeightUnit, formatWeight, fromGrams, toGrams, unitLabel } from '../../shared/weights';
 import { BatchWeights, amountOf, batchWeights, formatAmount, isAmount, totalOf } from './rebase';
 import { additiveAmount, evaluate } from './recipe-analysis';
+import { HazardSource, RecipeHazards } from './recipe-hazards';
 import { UnityFormula, unityColumns } from './unity-formula';
 
 /** What to print: the whole recipe with its chemistry, or just what to weigh. */
@@ -152,7 +153,7 @@ const UNITS: ReadonlyArray<{ value: WeightUnit; label: string }> = [
  */
 @Component({
   selector: 'gc-recipe-print',
-  imports: [DatePipe, NumberInput, TranslocoDirective, UnityFormula],
+  imports: [DatePipe, NumberInput, RecipeHazards, TranslocoDirective, UnityFormula],
   template: `<ng-container *transloco="let t">
     <section class="print-controls no-print" aria-labelledby="print-heading">
       <h1 id="print-heading" tabindex="-1">{{ t('recipe.print.heading') }}</h1>
@@ -208,6 +209,20 @@ const UNITS: ReadonlyArray<{ value: WeightUnit; label: string }> = [
             </p>
           }
         </div>
+        @if (mode() === 'batch') {
+          <div>
+            <label for="print-batch-number" class="form-label">{{ t('recipe.print.batchNumber') }}</label>
+            <input
+              id="print-batch-number"
+              class="form-control print-batch-number"
+              autocomplete="off"
+              aria-describedby="print-batch-number-help"
+              [value]="batchNumber()"
+              (input)="batchNumber.set($any($event.target).value)"
+            />
+            <div id="print-batch-number-help" class="form-text">{{ t('recipe.print.batchNumberHelp') }}</div>
+          </div>
+        }
         <fieldset>
           <legend class="form-label">{{ t('recipe.print.weighIn') }}</legend>
           @for (choice of units; track choice.value) {
@@ -246,6 +261,28 @@ const UNITS: ReadonlyArray<{ value: WeightUnit; label: string }> = [
         }
         @if (batchSummary(); as summary) {
           <p class="print-batch-summary">{{ summary }}</p>
+        }
+        @if (mode() === 'batch') {
+          <dl class="print-ticket">
+            <div>
+              <dt>{{ t('recipe.print.batchNumberShort') }}</dt>
+              <dd [class.print-blank]="!batchNumber().trim()">{{ batchNumber().trim() }}</dd>
+            </div>
+            <div>
+              <dt>{{ t('recipe.print.mixedOn') }}</dt>
+              <dd>{{ today() }}</dd>
+            </div>
+            @if (sgTarget(); as target) {
+              <div>
+                <dt>{{ t('recipe.print.sgTarget') }}</dt>
+                <dd>{{ target }}</dd>
+              </div>
+              <div>
+                <dt>{{ t('recipe.print.sgMeasured') }}</dt>
+                <dd class="print-blank"></dd>
+              </div>
+            }
+          </dl>
         }
       </header>
 
@@ -448,6 +485,20 @@ const UNITS: ReadonlyArray<{ value: WeightUnit; label: string }> = [
         @if (!weights) {
           <p class="print-note">{{ t('recipe.print.asWritten') }}</p>
         }
+        <dl class="print-ticket print-sign">
+          <div>
+            <dt>{{ t('recipe.print.mixedBy') }}</dt>
+            <dd class="print-blank print-signature"></dd>
+          </div>
+          <div>
+            <dt>{{ t('recipe.print.checkedBy') }}</dt>
+            <dd class="print-blank print-signature"></dd>
+          </div>
+        </dl>
+      }
+
+      @if (hazards().length) {
+        <gc-recipe-hazards class="print-hazards" headingId="print-hazards-heading" [sources]="hazards()" />
       }
     </article>
   </ng-container>`,
@@ -621,6 +672,47 @@ const UNITS: ReadonlyArray<{ value: WeightUnit; label: string }> = [
       white-space: pre-line;
       margin: 0;
     }
+    /* The mix ticket's lines: written in or signed on paper, so each blank is a line to write on. */
+    .print-ticket {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 2rem;
+      margin: 0.75rem 0 0;
+    }
+    .print-ticket > div {
+      display: flex;
+      align-items: baseline;
+      gap: 0.5rem;
+      flex: 1 1 12rem;
+      min-width: 0;
+    }
+    .print-ticket dt {
+      font-weight: 600;
+      white-space: nowrap;
+    }
+    .print-ticket dd {
+      margin: 0;
+      overflow-wrap: anywhere;
+    }
+    .print-blank {
+      flex: 1 1 auto;
+      min-width: 6rem;
+      min-height: 1.4em;
+      border-bottom: 1px solid var(--gc-text);
+    }
+    .print-sign {
+      margin-top: 1.5rem;
+    }
+    .print-signature {
+      min-height: 2.2em;
+    }
+    .print-batch-number {
+      max-width: 14rem;
+    }
+    .print-hazards {
+      display: block;
+      margin-top: 1.25rem;
+    }
     @media (max-width: 575.98px) {
       .print-controls,
       .print-sheet {
@@ -661,7 +753,8 @@ const UNITS: ReadonlyArray<{ value: WeightUnit; label: string }> = [
       }
       .print-table tr,
       .print-chemistry,
-      .print-notes {
+      .print-notes,
+      .print-ticket {
         break-inside: avoid;
       }
       /* Read at arm's length while weighing. */
@@ -679,7 +772,22 @@ export class RecipePrint implements OnInit, OnDestroy {
   readonly recipe = input.required<Recipe>();
   /** The chemistry an additive borrows by name (chemistryOf), for one with no analysis of its own. */
   readonly chemistryOf = input<(name: string) => MaterialInput | undefined>();
+  /** What the recipe's hazards are read from (recipe-hazards.ts hazardSources); none, and no hazards are printed. */
+  readonly hazards = input<HazardSource[]>([]);
   readonly back = output<void>();
+
+  /** The mix ticket's batch number, as typed: for this print only; blank leaves a line to write it on. */
+  protected readonly batchNumber = signal('');
+  /** The day it is printed, for the mix ticket. */
+  protected readonly today = computed(() => formatDate(new Date(), { dateStyle: 'long' }));
+  /**
+   * The recipe's target specific gravity, when it has one (saved as sgTarget, a plain number):
+   * the mix ticket shows it, with a line for the reading.
+   */
+  protected readonly sgTarget = computed(() => {
+    const target = (this.recipe() as Recipe & { sgTarget?: string | number }).sgTarget;
+    return target === undefined || target === null || String(target).trim() === '' ? '' : formatPlain(String(target));
+  });
 
   protected readonly units = UNITS;
   protected readonly unitLabel = unitLabel;

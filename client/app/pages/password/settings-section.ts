@@ -1,7 +1,7 @@
 import { Component, Injector, OnInit, afterNextRender, inject, signal } from '@angular/core';
 import { TranslocoDirective, translate } from '@jsverse/transloco';
 import { marker } from '@jsverse/transloco-keys-manager/marker';
-import { FORMAT_LOCALES, REGIONS } from '../../../../lib/regions';
+import { CURRENCIES, FORMAT_LOCALES, REGIONS } from '../../../../lib/regions';
 import { baseLanguage, languageFor, textLanguage } from '../../../../lib/regions/languages';
 import { errorMessage } from '../../core/error-message';
 import { LocaleService } from '../../core/locale.service';
@@ -81,6 +81,7 @@ function settingsIn(pageLanguage: string, offered: readonly string[]): Setting[]
   const language = textLanguage(pageLanguage);
   const regionNames = new Intl.DisplayNames([language], { type: 'region' });
   const languageNames = new Intl.DisplayNames([language], { type: 'language' });
+  const currencyNames = new Intl.DisplayNames([language], { type: 'currency' });
   const regions = REGIONS.map((region) => ({ code: region.code, name: regionNames.of(region.code) ?? region.name }));
   const languageSetting = setting(
     marker('account.settings.language.legend'),
@@ -250,6 +251,23 @@ function settingsIn(pageLanguage: string, offered: readonly string[]): Setting[]
       ]
     }),
     density,
+    // The one currency prices are in (cost per batch); its names in the page's language.
+    setting(marker('account.settings.currency.legend'), marker('account.settings.currency.help'), {
+      name: 'currency',
+      id: 'currency',
+      kind: 'select',
+      choices: CURRENCIES.map((code) => {
+        const name = currencyNames.of(code) ?? code;
+        return {
+          value: code,
+          label: name,
+          example: code,
+          get saved() {
+            return translate('account.settings.currency.saved', { currency: name });
+          }
+        };
+      }).sort((a, b) => a.label.localeCompare(b.label, language))
+    }),
     setting(marker('account.settings.theme.legend'), marker('account.settings.theme.help'), {
       name: 'theme',
       id: 'theme',
@@ -437,11 +455,12 @@ export class SettingsSection implements OnInit {
     void this.preferences.load();
   }
 
-  /** What is in effect: for temperature and cones, the region's until one is chosen. */
+  /** What is in effect: for temperature, cones, density and currency, the region's until one is chosen. */
   protected current(setting: Setting): string {
     if (setting.name === 'temperature') return this.locale.temperature();
     if (setting.name === 'cones') return this.locale.cones();
     if (setting.name === 'density') return this.locale.density();
+    if (setting.name === 'currency') return this.locale.currency();
     // The language of this page, whatever is saved.
     if (setting.name === 'language') return this.pageLanguage;
     return this.preferences[setting.name]();
