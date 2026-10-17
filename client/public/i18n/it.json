@@ -93,7 +93,6 @@
     "error": "Errore: {text}"
   },
   "remove": {
-    "removed": "Rimosso «{name}».",
     "alreadyRemoved": "Già rimosso: «{name}».",
     "failed": "Impossibile completare la rimozione. Riprovare.",
     "question": "Rimuovere «{name}»?",

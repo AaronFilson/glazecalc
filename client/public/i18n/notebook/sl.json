@@ -68,7 +68,6 @@
     "saveFailed": "Napaka: zahteva strežniku ni uspela."
   },
   "trash": {
-    "title": "Koš",
-    "comingSoon": "Koš bo na voljo v naslednji različici aplikacije Glazecalc. Do takrat brišite in odstranjujte previdno: ko podatki izginejo, so izgubljeni."
+    "title": "Koš"
   }
 }

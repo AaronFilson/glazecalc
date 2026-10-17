@@ -21,7 +21,8 @@ import { Notices } from './notices';
 
 /**
  * Removes the user's saved records from a list on a page and says how it went:
- * a removal on the page's messages, a failure beside the record.
+ * a removal on the page's messages, with Undo, which puts the record back from
+ * the Trash; a failure beside the record.
  */
 export class Removal<T extends Owned> {
   /** The _ids of the records being removed; several can be on their way at once. */
@@ -52,8 +53,12 @@ export class Removal<T extends Owned> {
     this.pending.update((ids) => new Set(ids).add(id));
     this.setProblem(id, '');
     try {
-      await this.api.remove(item);
-      this.notices.success(translate('remove.removed', { name }), 'remove');
+      const { trashId } = (await this.api.remove(item)) ?? {};
+      this.notices.success(
+        translate('remove.trashed', { name }),
+        'remove',
+        trashId ? { label: translate('remove.undo'), run: () => this.putBack(trashId, name) } : undefined
+      );
     } catch (err) {
       // The server has no such record: it was removed already, in another tab
       // or by an earlier try whose answer was lost.
@@ -73,6 +78,22 @@ export class Removal<T extends Owned> {
     return true;
   }
 
+  /** Puts a removed record back from the Trash, in its place in the list. */
+  private async putBack(trashId: string, name: string): Promise<void> {
+    try {
+      const record = await this.api.restore(trashId);
+      // The lists are oldest first, which their ids follow.
+      this.list.update((items) =>
+        [...items.filter((other) => other._id !== record._id), record].sort((a, b) =>
+          (a._id ?? '').localeCompare(b._id ?? '')
+        )
+      );
+      this.notices.success(translate('remove.restored', { name }), 'remove');
+    } catch (err) {
+      this.notices.error(errorMessage(err, translate('remove.restoreFailed', { name })));
+    }
+  }
+
   private setProblem(id: string, problem: string): void {
     this.problems.update((problems) => {
       const next = new Map(problems);
@@ -87,7 +108,8 @@ let nextQuestionId = 0;
 
 /**
  * A Remove button for one saved record that asks first, in place:
- * Remove "Celadon"? This can't be undone. [Yes, remove] [Cancel]
+ * Remove "Celadon"? You can put it back from the Trash for 30 days. [Yes, remove] [Cancel]
+ * On the Trash page (forGood) it says "This can't be undone." instead.
  *
  * The question starts on Cancel, and Escape cancels. When the record is
  * removed, the focus moves to the next record's Remove button (or the one
@@ -107,7 +129,7 @@ let nextQuestionId = 0;
           @if (note()) {
             {{ note() }}
           }
-          {{ t('remove.cannotUndo') }}
+          {{ forGood() ? t('remove.cannotUndo') : t('remove.toTrash') }}
         </span>
         <span class="remove-answers">
           <button
@@ -175,6 +197,8 @@ export class RemoveButton {
   readonly note = input('');
   /** Drawn in the danger color, where it sits among other actions. */
   readonly danger = input(false, { transform: booleanAttribute });
+  /** It is deleted for good, not moved to the Trash: on the Trash page. */
+  readonly forGood = input(false, { transform: booleanAttribute });
   /** The page is removing it now. */
   readonly busy = input(false);
   /** Why the last try failed, shown in the question. */

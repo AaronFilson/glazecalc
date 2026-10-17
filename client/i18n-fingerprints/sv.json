@@ -77,7 +77,6 @@
     "notices.dismiss": "an1pf7",
     "notices.warning": "a1wywc",
     "notices.error": "5cl9va",
-    "remove.removed": "64bmts",
     "remove.alreadyRemoved": "ga23s7",
     "remove.failed": "9l9woy",
     "remove.question": "7fhpsx",
@@ -759,8 +758,7 @@
     "notes.fetchFailed": "q9f351",
     "notes.saved": "xmy3hy",
     "notes.saveFailed": "qbu1gb",
-    "trash.title": "1596lh",
-    "trash.comingSoon": "1u8pu9b"
+    "trash.title": "1596lh"
   },
   "recipe": {
     "page.gettingPrint": "vf8ldu",

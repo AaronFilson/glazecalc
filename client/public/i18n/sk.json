@@ -93,7 +93,6 @@
     "error": "Chyba: {text}"
   },
   "remove": {
-    "removed": "Odstránené: „{name}“.",
     "alreadyRemoved": "Položka „{name}“ už bola odstránená.",
     "failed": "Nepodarilo sa to odstrániť. Skúste to, prosím, znova.",
     "question": "Odstrániť „{name}“?",

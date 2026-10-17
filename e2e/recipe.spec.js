@@ -272,7 +272,7 @@ test('removes a material from the recipe and a saved recipe from the list', asyn
   await entry.getByRole('button', { name: 'Remove Short lived' }).click();
   await expect(entry).toContainText('It stays open in the editor, as a recipe not saved yet.');
   await entry.getByRole('button', { name: 'Yes, remove' }).click();
-  await expect(page.locator('.server-msg')).toContainText('Removed "Short lived".');
+  await expect(page.locator('.server-msg')).toContainText('Moved "Short lived" to the Trash.');
   await expect(entry).toHaveCount(0);
   await expect(page.locator('#recipe-name')).toHaveValue('Short lived');
   await expect(page.locator('.recipe-status')).toHaveText('Not saved yet');

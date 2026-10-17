@@ -30,14 +30,14 @@ describe('Notices', () => {
     const notices = new Notices();
     notices.error('There was an error in getting your materials.');
     notices.success('Saved "A".', 'save');
-    notices.success('Removed "B".', 'remove');
+    notices.success('Moved "B" to the Trash.', 'remove');
     notices.success('Saved "A" again.', 'save');
-    expect(notices.messages()).toEqual(['Removed "B".', 'Saved "A" again.']);
+    expect(notices.messages()).toEqual(['Moved "B" to the Trash.', 'Saved "A" again.']);
     expect(notices.errors()).toEqual(['There was an error in getting your materials.']);
     // Dismissed by hand, the next on its topic is simply added.
     notices.dismissMessage(1);
     notices.success('Saved "A" a third time.', 'save');
-    expect(notices.messages()).toEqual(['Removed "B".', 'Saved "A" a third time.']);
+    expect(notices.messages()).toEqual(['Moved "B" to the Trash.', 'Saved "A" a third time.']);
   });
 
   it("replaces a calculation's warnings with the next one's, leaving other errors", () => {

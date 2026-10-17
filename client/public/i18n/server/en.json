@@ -85,7 +85,17 @@
   "record-updated": "Successfully updated {label, select, additive {additive} advice {advice} firing {firing} material {material} note {note} recipe {recipe} trash {trash} other {record}}",
   "record-invalid": "Invalid {label, select, additive {additive} advice {advice} firing {firing} material {material} note {note} recipe {recipe} trash {trash} other {record}}",
   "record-deleted": "Successfully deleted {label, select, additive {additive} advice {advice} firing {firing} material {material} note {note} recipe {recipe} trash {trash} other {record}}",
+  "record-trashed": "Moved the {label, select, additive {additive} advice {advice} firing {firing} material {material} note {note} recipe {recipe} trash {trash} other {record}} to the Trash. It can be put back for 30 days.",
+  "record-undone": "Went back to the earlier version of the {label, select, additive {additive} advice {advice} firing {firing} material {material} note {note} recipe {recipe} trash {trash} other {record}}.",
+  "nothing-to-undo": "There is no earlier version to go back to.",
+  "trash-restored": "Put the {label, select, additive {additive} advice {advice} firing {firing} material {material} note {note} recipe {recipe} trash {trash} other {record}} back.",
+  "trash-restored-already": "This has been put back already.",
+  "trash-emptied": "The Trash is empty.",
+  "trash-full": "The Trash is full, so an access token cannot move anything more to it. Please empty some of it on the website first.",
   "account-limit": "An account can keep up to {limit} {label, select, additive {additives} advice {pieces of advice} firing {firing logs} material {materials} note {notes} recipe {recipes} trash {items in the trash} other {records}}. Please remove some to save more.",
+  "token-invalid": "The access token is not valid, has expired or was revoked.",
+  "token-scope": "The access token does not allow this.",
+  "token-not-here": "This can only be done signed in on the website, not with an access token.",
   "not-found": "Not found",
   "other-site": "Requests from other sites are not accepted.",
   "invalid-input": "Some of the information sent is not valid.",
@@ -98,5 +108,7 @@
   "too-many-resets": "Too many password reset requests. Please wait a few minutes and try again.",
   "too-many-email-links": "Too many emails requested. Please wait a few minutes and try again.",
   "too-many-attempts": "Too many attempts. Please wait a few minutes and try again.",
-  "too-many-codes": "Too many codes tried. Please wait a few minutes and try again."
+  "too-many-codes": "Too many codes tried. Please wait a few minutes and try again.",
+  "too-many-tokens": "Too many access tokens that do not work were tried from this address. Please wait a few minutes and try again.",
+  "too-many-deletes": "This access token has moved too many records to the Trash in the last hour. Please try again later."
 }

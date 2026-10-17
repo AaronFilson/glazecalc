@@ -68,7 +68,6 @@
     "saveFailed": "Fel: begäran till servern misslyckades."
   },
   "trash": {
-    "title": "Papperskorgen",
-    "comingSoon": "Papperskorgen kommer snart, i nästa version av Glazecalc. Använd till dess radera / ta bort med försiktighet: när något väl är borta går uppgifterna förlorade."
+    "title": "Papperskorgen"
   }
 }

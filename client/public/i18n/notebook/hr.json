@@ -68,7 +68,6 @@
     "saveFailed": "Pogreška: zahtjev poslužitelju nije uspio."
   },
   "trash": {
-    "title": "Koš za smeće",
-    "comingSoon": "Koš za smeće stiže uskoro, u sljedećoj verziji aplikacije Glazecalc. Do tada pažljivo brišite i uklanjajte: kad nešto nestane, podaci su izgubljeni."
+    "title": "Koš za smeće"
   }
 }

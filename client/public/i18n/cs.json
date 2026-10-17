@@ -93,7 +93,6 @@
     "error": "Chyba: {text}"
   },
   "remove": {
-    "removed": "Odebráno: „{name}“.",
     "alreadyRemoved": "Už odebráno: „{name}“.",
     "failed": "Nepodařilo se to odebrat. Zkuste to prosím znovu.",
     "question": "Odebrat „{name}“?",

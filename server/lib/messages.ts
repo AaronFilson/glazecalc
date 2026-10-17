@@ -126,7 +126,20 @@ export const MESSAGES = {
   'record-updated': `Successfully updated {label, select, ${ONE}}`,
   'record-invalid': `Invalid {label, select, ${ONE}}`,
   'record-deleted': `Successfully deleted {label, select, ${ONE}}`,
+  'record-trashed': `Moved the {label, select, ${ONE}} to the Trash. It can be put back for 30 days.`,
+  'record-undone': `Went back to the earlier version of the {label, select, ${ONE}}.`,
+  'nothing-to-undo': 'There is no earlier version to go back to.',
+  'trash-restored': `Put the {label, select, ${ONE}} back.`,
+  'trash-restored-already': 'This has been put back already.',
+  'trash-emptied': 'The Trash is empty.',
+  'trash-full':
+    'The Trash is full, so an access token cannot move anything more to it. Please empty some of it on the website first.',
   'account-limit': `An account can keep up to {limit} {label, select, ${MANY}}. Please remove some to save more.`,
+
+  // Access tokens (server/lib/token_auth.ts).
+  'token-invalid': 'The access token is not valid, has expired or was revoked.',
+  'token-scope': 'The access token does not allow this.',
+  'token-not-here': 'This can only be done signed in on the website, not with an access token.',
 
   // Requests in general.
   'not-found': 'Not found',
@@ -141,7 +154,10 @@ export const MESSAGES = {
   'too-many-resets': 'Too many password reset requests. ' + WAIT,
   'too-many-email-links': 'Too many emails requested. ' + WAIT,
   'too-many-attempts': 'Too many attempts. ' + WAIT,
-  'too-many-codes': 'Too many codes tried. ' + WAIT
+  'too-many-codes': 'Too many codes tried. ' + WAIT,
+  'too-many-tokens': 'Too many access tokens that do not work were tried from this address. ' + WAIT,
+  'too-many-deletes':
+    'This access token has moved too many records to the Trash in the last hour. Please try again later.'
 } satisfies Record<string, Text>;
 
 export type MessageCode = keyof typeof MESSAGES;

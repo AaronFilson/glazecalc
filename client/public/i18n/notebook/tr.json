@@ -68,7 +68,6 @@
     "saveFailed": "Hata: sunucuya gönderilen istek başarısız oldu."
   },
   "trash": {
-    "title": "Çöp kutusu",
-    "comingSoon": "Çöp kutusu özelliği Glazecalc uygulamasının bir sonraki sürümünde gelecek. O zamana kadar silme / kaldırma işlemlerini dikkatle kullanın: silinen bilgi kaybolur."
+    "title": "Çöp kutusu"
   }
 }

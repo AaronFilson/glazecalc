@@ -93,7 +93,6 @@
     "error": "Pogreška: {text}"
   },
   "remove": {
-    "removed": "Uklonjeno: „{name}”.",
     "alreadyRemoved": "Već uklonjeno: „{name}”.",
     "failed": "Nije moguće ukloniti. Pokušajte ponovno.",
     "question": "Želite li ukloniti „{name}”?",

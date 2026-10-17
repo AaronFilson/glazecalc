@@ -93,7 +93,6 @@
     "error": "Viga: {text}"
   },
   "remove": {
-    "removed": "„{name}“ on eemaldatud.",
     "alreadyRemoved": "„{name}“ oli juba eemaldatud.",
     "failed": "Seda ei saanud eemaldada. Proovige uuesti.",
     "question": "Kas soovite „{name}“ eemaldada?",

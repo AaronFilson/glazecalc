@@ -93,7 +93,6 @@
     "error": "Fehler: {text}"
   },
   "remove": {
-    "removed": "„{name}“ wurde entfernt.",
     "alreadyRemoved": "„{name}“ war bereits entfernt.",
     "failed": "Das Entfernen ist fehlgeschlagen. Bitte versuchen Sie es erneut.",
     "question": "„{name}“ entfernen?",

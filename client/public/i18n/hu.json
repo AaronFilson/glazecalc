@@ -93,7 +93,6 @@
     "error": "Hiba: {text}"
   },
   "remove": {
-    "removed": "Eltávolítva: „{name}”.",
     "alreadyRemoved": "A(z) „{name}” elemet már eltávolították.",
     "failed": "Nem sikerült eltávolítani. Kérjük, próbálja újra.",
     "question": "Eltávolítja a(z) „{name}” elemet?",

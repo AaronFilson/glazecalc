@@ -77,7 +77,7 @@ describe('advice API', () => {
       .delete('/advice/delete/' + saved._id)
       .set('Authorization', 'Bearer ' + token);
     expect(res).to.have.status(200);
-    expect(res.body.msg).to.eql('Successfully deleted advice');
+    expect(res.body.code).to.eql('record-trashed');
     const all = await api()
       .get('/advice/getAll')
       .set('Authorization', 'Bearer ' + token);

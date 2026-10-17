@@ -93,7 +93,6 @@
     "error": "错误：{text}"
   },
   "remove": {
-    "removed": "已移除“{name}”。",
     "alreadyRemoved": "“{name}”已被移除。",
     "failed": "无法移除。请再试一次。",
     "question": "要移除“{name}”吗？",

@@ -100,6 +100,34 @@
   },
   "trash": {
     "title": "Trash",
-    "comingSoon": "The trash functionality is coming soon in the next version of Glazecalc. Until then, use the delete / remove with care: once it is gone the info is lost."
+    "lead": "What you remove from your recipes, materials, notes and logs waits here for 30 days. Put it back, or delete it for good.",
+    "listHeading": "In the Trash",
+    "none": "The Trash is empty.",
+    "untitled": "Untitled",
+    "kinds": {
+      "recipes": "Recipe",
+      "materials": "Material",
+      "additives": "Additive",
+      "notes": "Note",
+      "firing": "Firing log",
+      "advice": "Advice",
+      "other": "Record"
+    },
+    "removedOn": "Removed {date}",
+    "goesOn": "Deleted for good {date}",
+    "byApp": "Removed by a connected app",
+    "putBack": "Put back",
+    "putBackName": "Put back {name}",
+    "restored": "Put \"{name}\" back where it was.",
+    "restoredAlready": "\"{name}\" was put back already.",
+    "restoreFailed": "\"{name}\" could not be put back. Please try again.",
+    "deleted": "Deleted \"{name}\" for good.",
+    "empty": "Empty the Trash",
+    "emptyQuestion": "Delete {count, plural, one {the # record} other {all # records}} in the Trash for good? This can’t be undone.",
+    "emptyYes": "Yes, empty it",
+    "emptying": "Emptying...",
+    "emptied": "The Trash is empty.",
+    "emptyFailed": "The Trash could not be emptied. Please try again.",
+    "fetchFailed": "The Trash could not be loaded. Please try again."
   }
 }

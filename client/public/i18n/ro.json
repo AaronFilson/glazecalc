@@ -93,7 +93,6 @@
     "error": "Eroare: {text}"
   },
   "remove": {
-    "removed": "S-a eliminat „{name}”.",
     "alreadyRemoved": "Elementul „{name}” a fost deja eliminat.",
     "failed": "Nu s-a putut elimina. Încercați din nou.",
     "question": "Eliminați „{name}”?",

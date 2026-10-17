@@ -68,7 +68,6 @@
     "saveFailed": "Erro: o pedido ao servidor falhou."
   },
   "trash": {
-    "title": "Lixo",
-    "comingSoon": "A funcionalidade do lixo chega em breve, na próxima versão do Glazecalc. Até lá, use com cuidado as opções de eliminar / remover: depois de removida, a informação perde-se."
+    "title": "Lixo"
   }
 }

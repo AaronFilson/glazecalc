@@ -80,7 +80,9 @@ describe('RemoveButton', () => {
     expect(root.querySelector('.remove-confirm')).toBeNull();
     await press('b', 'Remove Celadon');
 
-    expect(text(fixture, '.remove-confirm')).toContain('Remove "Celadon"? This can\'t be undone.');
+    expect(text(fixture, '.remove-confirm')).toContain(
+      'Remove "Celadon"? You can put it back from the Trash for 30 days.'
+    );
     expect(document.activeElement).toBe(button('b', 'Cancel'));
     await press('b', 'Cancel');
     expect(root.querySelector('.remove-confirm')).toBeNull();
@@ -94,7 +96,9 @@ describe('RemoveButton', () => {
     const group = root.querySelector('[role=group]')!;
     const label = document.getElementById(group.getAttribute('aria-labelledby')!);
     // As a screen reader reads it, with the spaces collapsed.
-    expect(label?.textContent?.replace(/\s+/g, ' ').trim()).toBe('Remove "Celadon"? This can\'t be undone.');
+    expect(label?.textContent?.replace(/\s+/g, ' ').trim()).toBe(
+      'Remove "Celadon"? You can put it back from the Trash for 30 days.'
+    );
 
     button('b', 'Cancel').dispatchEvent(new KeyboardEvent('keydown', { key: 'Escape', bubbles: true }));
     await fixture.whenStable();
@@ -105,7 +109,7 @@ describe('RemoveButton', () => {
     const { fixture, press } = await create("Saved recipes keep their own copy, so they won't change.");
     await press('b', 'Remove Celadon');
     expect(text(fixture, '.remove-question')).toBe(
-      'Remove "Celadon"? Saved recipes keep their own copy, so they won\'t change. This can\'t be undone.'
+      'Remove "Celadon"? Saved recipes keep their own copy, so they won\'t change. You can put it back from the Trash for 30 days.'
     );
   });
 
@@ -123,7 +127,7 @@ describe('RemoveButton', () => {
       .flush({ msg: 'Successfully deleted thing' });
     await afterRemoval();
     expect(host.things().map((t) => t.name)).toEqual(['Shino', 'Tenmoku']);
-    expect(host.notices.messages()).toEqual(['Removed "Celadon".']);
+    expect(host.notices.messages()).toEqual(['Moved "Celadon" to the Trash.']);
     expect(document.activeElement).toBe(button('c', 'Remove Tenmoku'));
   });
 
@@ -138,7 +142,7 @@ describe('RemoveButton', () => {
     requests.forEach((req) => req.flush({}));
     await afterRemoval();
     expect(host.things().map((t) => t.name)).toEqual(['Shino']);
-    expect(host.notices.messages()).toEqual(['Removed "Tenmoku".']);
+    expect(host.notices.messages()).toEqual(['Moved "Tenmoku" to the Trash.']);
   });
 
   it("moves the focus to a neighbour's Cancel, not its Yes, when its question is open", async () => {
@@ -191,6 +195,45 @@ describe('RemoveButton', () => {
     expect(host.things().length).toBe(3);
     expect(root.querySelector('.remove-confirm')).not.toBeNull();
     expect(button('b', 'Yes, remove').getAttribute('aria-disabled')).toBeNull();
+  });
+
+  it('puts a removed record back in its place with Undo', async () => {
+    const { host, press, afterRemoval, fixture } = await create();
+    await press('b', 'Remove Celadon');
+    await press('b', 'Yes, remove');
+    httpMock()
+      .expectOne(API + '/things/delete/b')
+      .flush({ code: 'record-trashed', trashId: 't1' });
+    await afterRemoval();
+    expect(host.things().map((t) => t.name)).toEqual(['Shino', 'Tenmoku']);
+    const undo = host.notices.actions().get('Moved "Celadon" to the Trash.');
+    expect(undo?.label).toBe('Undo');
+
+    host.notices.act(0);
+    httpMock()
+      .expectOne({ method: 'POST', url: API + '/trash/restore/t1' })
+      .flush({ code: 'trash-restored', record: { _id: 'b', name: 'Celadon' } });
+    await settle(fixture);
+    expect(host.things().map((t) => t.name)).toEqual(['Shino', 'Celadon', 'Tenmoku']);
+    expect(host.notices.messages()).toEqual(['Put "Celadon" back.']);
+    expect(host.notices.actions().size).toBe(0);
+  });
+
+  it('says so when Undo cannot put it back', async () => {
+    const { host, press, afterRemoval, fixture } = await create();
+    await press('b', 'Remove Celadon');
+    await press('b', 'Yes, remove');
+    httpMock()
+      .expectOne(API + '/things/delete/b')
+      .flush({ trashId: 't1' });
+    await afterRemoval();
+    host.notices.act(0);
+    httpMock()
+      .expectOne(API + '/trash/restore/t1')
+      .flush({}, { status: 500, statusText: 'Server Error' });
+    await settle(fixture);
+    expect(host.things().map((t) => t.name)).toEqual(['Shino', 'Tenmoku']);
+    expect(host.notices.errors()).toEqual(['"Celadon" could not be put back. It is still in the Trash.']);
   });
 
   it('treats a record the server no longer has as removed', async () => {

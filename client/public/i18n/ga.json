@@ -93,7 +93,6 @@
     "error": "Earráid: {text}"
   },
   "remove": {
-    "removed": "Baineadh “{name}”.",
     "alreadyRemoved": "Baineadh “{name}” cheana.",
     "failed": "Níorbh fhéidir é a bhaint. Bain triail eile as.",
     "question": "An bhfuil tú cinnte gur mian leat “{name}” a bhaint?",

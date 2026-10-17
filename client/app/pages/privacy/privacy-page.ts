@@ -235,6 +235,10 @@ export class PrivacyPage {
     'site.privacy.storedEmailChange',
     'site.privacy.storedSignIn',
     'site.privacy.storedSaved',
+    'site.privacy.storedTrash',
+    'site.privacy.storedTokens',
+    'site.privacy.storedActivity',
+    'site.privacy.storedLimits',
     'site.privacy.storedTrial',
     'site.privacy.storedResets',
     'site.privacy.storedLogs',
@@ -244,6 +248,10 @@ export class PrivacyPage {
   ]);
   protected readonly kept = marker([
     'site.privacy.keptAccount',
+    'site.privacy.keptTrash',
+    'site.privacy.keptTokens',
+    'site.privacy.keptActivity',
+    'site.privacy.keptLimits',
     'site.privacy.keptTrial',
     'site.privacy.keptResets',
     'site.privacy.keptSignIn',

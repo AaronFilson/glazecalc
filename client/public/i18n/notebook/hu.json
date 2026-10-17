@@ -68,7 +68,6 @@
     "saveFailed": "Hiba: a szervernek küldött kérés sikertelen volt."
   },
   "trash": {
-    "title": "Lomtár",
-    "comingSoon": "A lomtár funkció a Glazecalc következő verziójában érkezik. Addig óvatosan használja a törlést / eltávolítást: ami egyszer eltűnt, annak az adatai elvesznek."
+    "title": "Lomtár"
   }
 }

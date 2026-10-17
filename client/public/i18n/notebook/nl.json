@@ -68,7 +68,6 @@
     "saveFailed": "Fout: het verzoek aan de server is mislukt."
   },
   "trash": {
-    "title": "Prullenbak",
-    "comingSoon": "De prullenbak komt binnenkort, in de volgende versie van Glazecalc. Ga tot die tijd voorzichtig om met verwijderen: wat eenmaal verwijderd is, is verloren."
+    "title": "Prullenbak"
   }
 }

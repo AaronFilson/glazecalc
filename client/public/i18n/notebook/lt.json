@@ -68,7 +68,6 @@
     "saveFailed": "Klaida: užklausa serveriui nepavyko."
   },
   "trash": {
-    "title": "Šiukšlinė",
-    "comingSoon": "Šiukšlinės funkcija netrukus atsiras kitoje programos Glazecalc versijoje. Iki tol naikinkite ir šalinkite atsargiai: kas pašalinta, prarandama visam laikui."
+    "title": "Šiukšlinė"
   }
 }

@@ -7,7 +7,9 @@ import path from 'node:path';
 import express, { type NextFunction, type Request, type Response } from 'express';
 import mongoose from 'mongoose';
 import * as log from './lib/log.ts';
+import * as limits from './lib/rate_limit.ts';
 import sameOrigin from './lib/same_origin.ts';
+import { refuseAccessTokens } from './lib/token_auth.ts';
 import authRoutes from './routes/auth_routes.ts';
 import exportRoutes from './routes/export_routes.ts';
 import guestRoutes from './routes/guest_routes.ts';
@@ -41,11 +43,13 @@ app.disable('x-powered-by');
 app.set('trust proxy', 1);
 
 // What a page may load or send. Scripts are left to the build's own <meta>
-// policy (angular.json, autoCsp); a page must pass both. There is no
-// default-src, which would also limit scripts to files and block the inline
-// script the meta policy allows by its hash. data: images are the check marks
-// and arrows Bootstrap's stylesheet inlines as SVG. Angular adds each
-// component's styles as <style> elements, which a page's own nonce allows.
+// policy (angular.json, autoCsp); a page must pass both, and in production
+// nginx's full policy too (deploy/nginx/glazecalc-proxy.conf, default-src
+// 'self'). There is no default-src here, which would also limit scripts to
+// files and block the inline script the meta policy allows by its hash.
+// data: images are the check marks and arrows Bootstrap's stylesheet inlines
+// as SVG. Angular adds each component's styles as <style> elements, which a
+// page's own nonce allows.
 export const contentSecurityPolicy = (nonce?: string): string =>
   [
     "connect-src 'self'",
@@ -72,6 +76,8 @@ api.use((req, res, next) => {
 });
 // Changes must come from the app's own pages (cross-site request forgery).
 api.use(sameOrigin);
+// Access tokens that do not work, per address, before any is checked.
+api.use(limits.accessTokens);
 
 // For Docker health checks and uptime monitors: 200 only when MongoDB answers.
 api.get('/health', (req, res) => {
@@ -85,8 +91,14 @@ api.get('/health', (req, res) => {
     .catch(() => unavailable('not responding'));
 });
 
-// /additives, /advice, /firing, /materials, /notes, /recipe and /trash
+// /additives, /advice, /firing, /materials, /notes, /recipe and /trash: the
+// only routes an access token can reach, each route asking for its permission
+// (server/lib/require_scope.ts).
 for (const [name, router] of Object.entries(records)) api.use('/' + name, router);
+// Nothing below takes an access token: the account, the password, signing in
+// and out, two-step sign-in, the export (default deny, docs/integrations-plan.md
+// item 5). A route that should take one goes above, behind requireScope.
+api.use(refuseAccessTokens);
 api.use('/export', exportRoutes);
 api.use('/guest', guestRoutes);
 api.use('/password', passwordRoutes);

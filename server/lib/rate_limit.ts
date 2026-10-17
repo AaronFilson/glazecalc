@@ -1,6 +1,7 @@
 import type { Request, Response } from 'express';
 import { type Options, rateLimit } from 'express-rate-limit';
 import { type MessageCode, say } from './messages.ts';
+import { accessTokenIn, checkAccessToken } from './token_auth.ts';
 
 // Limits per client address, unless they say otherwise. In production nginx
 // passes the address in X-Forwarded-For, which server/app.ts trusts for exactly
@@ -19,7 +20,7 @@ const limiter = (
   limit: number,
   code: MessageCode,
   more: Partial<Pick<Options, 'keyGenerator' | 'skipSuccessfulRequests' | 'requestWasSuccessful' | 'handler'>> & {
-    skip?: (req: Request, res: Response) => boolean;
+    skip?: (req: Request, res: Response) => boolean | Promise<boolean>;
   } = {}
 ) => {
   const { skip, ...rest } = more;
@@ -30,7 +31,7 @@ const limiter = (
     legacyHeaders: false,
     message: say(code),
     ...rest,
-    skip: (req, res) => process.env.RATE_LIMITS === 'off' || Boolean(skip?.(req, res))
+    skip: (req, res) => process.env.RATE_LIMITS === 'off' || (skip ? skip(req, res) : false)
   });
 };
 
@@ -82,6 +83,35 @@ export const changePassword = limiter(15, 10, 'too-many-attempts', { skipSuccess
  */
 export const passwordCheck = limiter(15, 10, 'too-many-attempts', {
   keyGenerator: (req) => 'user:' + String(req.user?._id)
+});
+
+/**
+ * Access tokens (server/lib/token_auth.ts) that do not work, per address:
+ * only requests that carry one are counted, and only those refused with 401.
+ * A token that works is checked first and never counted or held up, so
+ * someone sending bad tokens from a shared address (a VPN exit, a school)
+ * cannot stop the scripts of others there. Guessing tokens (a 2^256 search;
+ * the checksum turns away made-up ones before the database is asked) stops
+ * quickly: once over, every token that does not work gets 429.
+ */
+export const accessTokens = limiter(15, 30, 'too-many-tokens', {
+  skip: async (req) => {
+    const token = accessTokenIn(req);
+    return !token || (await checkAccessToken(req, token)) !== null;
+  },
+  requestWasSuccessful: (_req, res) => res.statusCode !== 401,
+  skipSuccessfulRequests: true
+});
+
+/**
+ * Records moved to the Trash with an access token (DELETE /api/<kind>/delete/:id),
+ * per token: plenty for a script tidying up, too few for one gone wrong to
+ * clear out an account before anyone notices. The web session is not counted.
+ * After requireScope, which says which token it is.
+ */
+export const tokenDeletes = limiter(60, 100, 'too-many-deletes', {
+  skip: (req) => !req.access || req.access.via === 'session',
+  keyGenerator: (req) => 'token-deletes:' + (req.access && 'tokenId' in req.access ? req.access.tokenId : '')
 });
 
 // Two-step sign-in (docs/mfa-plan.md, item 9). The guard on guessing codes

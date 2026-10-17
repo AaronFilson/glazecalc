@@ -68,7 +68,6 @@
     "saveFailed": "Kļūda: pieprasījums serverim neizdevās."
   },
   "trash": {
-    "title": "Atkritne",
-    "comingSoon": "Atkritne būs pieejama drīzumā, nākamajā lietotnes Glazecalc versijā. Līdz tam dzēsiet un noņemiet uzmanīgi: kad kaut kas ir izdzēsts, informācija ir zaudēta."
+    "title": "Atkritne"
   }
 }

@@ -68,7 +68,6 @@
     "saveFailed": "Earráid: theip ar an iarratas chuig an bhfreastalaí."
   },
   "trash": {
-    "title": "Bruscar",
-    "comingSoon": "Tá an bruscar le teacht go luath sa chéad leagan eile den aip Glazecalc. Go dtí sin, bí cúramach le scriosadh agus le baint: nuair a bhíonn rud imithe, tá an t-eolas caillte."
+    "title": "Bruscar"
   }
 }

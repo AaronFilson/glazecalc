@@ -93,7 +93,6 @@
     "error": "Błąd: {text}"
   },
   "remove": {
-    "removed": "Usunięto „{name}”.",
     "alreadyRemoved": "Element „{name}” został już usunięty.",
     "failed": "Nie udało się usunąć. Proszę spróbować ponownie.",
     "question": "Usunąć „{name}”?",

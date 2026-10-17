@@ -102,7 +102,7 @@ describe('materials API', () => {
       .delete('/materials/delete/' + saved._id)
       .set('Authorization', 'Bearer ' + token);
     expect(res).to.have.status(200);
-    expect(res.body.msg).to.eql('Successfully deleted material');
+    expect(res.body.code).to.eql('record-trashed');
     const all = await api()
       .get('/materials/getAll')
       .set('Authorization', 'Bearer ' + token);

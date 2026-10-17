@@ -93,7 +93,6 @@
     "error": "Fout: {text}"
   },
   "remove": {
-    "removed": "Verwijderd: “{name}”.",
     "alreadyRemoved": "“{name}” was al verwijderd.",
     "failed": "Verwijderen is niet gelukt. Probeer het opnieuw.",
     "question": "“{name}” verwijderen?",

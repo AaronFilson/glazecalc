@@ -1,6 +1,7 @@
 // The kinds of record a user keeps, each served under /api/<path> by the same
-// routes (server/lib/record_routes.ts). `fields` are what a user may set,
-// `required` what a new record must have.
+// routes (server/lib/record_routes.ts), and the Trash they go to when removed
+// (./trash_routes.ts). `fields` are what a user may set, `required` what a new
+// record must have.
 import type { Router } from 'express';
 import recordRoutes from '../lib/record_routes.ts';
 import Additive from '../models/additive.ts';
@@ -9,11 +10,12 @@ import Firing from '../models/firing.ts';
 import Material from '../models/material.ts';
 import Note from '../models/note.ts';
 import Recipe from '../models/recipe.ts';
-import Trash from '../models/trash.ts';
+import trashRouter from './trash_routes.ts';
 
 const records: Record<string, Router> = {
   additives: recordRoutes(Additive, {
     label: 'additive',
+    area: 'additives',
     fields: [
       'name',
       'rawformula',
@@ -33,17 +35,20 @@ const records: Record<string, Router> = {
   }),
   advice: recordRoutes(Advice, {
     label: 'advice',
+    area: 'advice',
     fields: ['title', 'content', 'tags'],
     required: ['title', 'content', 'tags'],
     standard: true
   }),
   firing: recordRoutes(Firing, {
     label: 'firing',
+    area: 'firing',
     fields: ['title', 'kiln', 'date', 'notes', 'fieldsIncluded', 'rows'],
     required: ['title', 'fieldsIncluded', 'rows']
   }),
   materials: recordRoutes(Material, {
     label: 'material',
+    area: 'materials',
     fields: [
       'name',
       'rawformula',
@@ -61,24 +66,21 @@ const records: Record<string, Router> = {
   }),
   notes: recordRoutes(Note, {
     label: 'note',
+    area: 'notes',
     fields: ['title', 'content', 'relatedCollection', 'relatedId'],
     required: ['content', 'relatedCollection', 'relatedId']
   }),
   // The client sends a changed recipe as { recipe: {...} }.
   recipe: recordRoutes(Recipe, {
     label: 'recipe',
+    area: 'recipes',
     fields: ['title', 'date', 'notes', 'materials', 'additives', 'computed', 'includeAdditives'],
     required: ['title', 'materials'],
     wrapper: { change: 'recipe' },
     standard: true
   }),
-  // ...and trash as { trash: {...} }, both new and changed.
-  trash: recordRoutes(Trash, {
-    label: 'trash',
-    fields: ['content', 'date', 'fromCollection'],
-    required: ['content', 'date', 'fromCollection'],
-    wrapper: { create: 'trash', change: 'trash' }
-  })
+  // The Trash has routes of its own.
+  trash: trashRouter
 };
 
 export default records;

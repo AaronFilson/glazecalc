@@ -68,7 +68,6 @@
     "saveFailed": "Virhe: pyyntö palvelimelle ei onnistunut."
   },
   "trash": {
-    "title": "Roskakori",
-    "comingSoon": "Roskakori tulee pian Glazecalcin seuraavaan versioon. Siihen asti käytä poistamista harkiten: kun tieto on poistettu, se on menetetty."
+    "title": "Roskakori"
   }
 }

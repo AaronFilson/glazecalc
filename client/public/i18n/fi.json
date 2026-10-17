@@ -93,7 +93,6 @@
     "error": "Virhe: {text}"
   },
   "remove": {
-    "removed": "Poistettu: ”{name}”.",
     "alreadyRemoved": "”{name}” oli jo poistettu.",
     "failed": "Poistaminen ei onnistunut. Yritä uudelleen.",
     "question": "Poistetaanko ”{name}”?",

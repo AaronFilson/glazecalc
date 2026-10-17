@@ -429,6 +429,43 @@ describe('RecipePage', () => {
     await saving;
   });
 
+  it('undoes a save of a saved recipe, showing it as it was', async () => {
+    const old: Recipe = { _id: 'r1', title: 'Old', materials: [{ ...WHITING, amount: '10' }] };
+    const { fixture, page } = await create([old]);
+    page['open'](old);
+    await fixture.whenStable();
+    page['title'].set('New');
+    const saving = page['save']();
+    httpMock()
+      .expectOne({ method: 'PUT', url: API + '/recipe/change/r1' })
+      .flush({ code: 'record-updated' });
+    await saving;
+    expect(page['notices'].actions().get('Saved "New".')?.label).toBe('Undo');
+
+    page['notices'].act(0);
+    httpMock()
+      .expectOne({ method: 'POST', url: API + '/recipe/undo/r1' })
+      .flush({ code: 'record-undone', record: old });
+    await fixture.whenStable();
+    await new Promise((resolve) => setTimeout(resolve));
+    expect(page['title']()).toBe('Old');
+    expect(page['dirty']()).toBe(false);
+    expect(page['myRecipes']().map((r: Recipe) => r.title)).toEqual(['Old']);
+    expect(page['notices'].messages()).toEqual(['Went back to the version of "Old" before you saved.']);
+  });
+
+  it('offers no Undo for a recipe saved for the first time', async () => {
+    const { page } = await create([]);
+    fill(page, [[WHITING, '10']]);
+    page['title'].set('Fresh');
+    const saving = page['save']();
+    httpMock()
+      .expectOne({ method: 'POST', url: API + '/recipe/create' })
+      .flush({ _id: 'r9', title: 'Fresh', materials: [] });
+    await saving;
+    expect(page['notices'].actions().size).toBe(0);
+  });
+
   it("writes colorant amounts the reader's way, as it does the materials'", async () => {
     const { fixture, page } = await create([], [IRON, RUTILE, COBALT]);
     formatLocale.set('de-DE');
@@ -849,7 +886,7 @@ describe('RecipePage', () => {
     expect(page['myRecipes']()).toEqual([]);
     expect(page['title']()).toBe('Gone');
     expect(page['status']()).toBe('Not saved yet');
-    expect(page['notices'].messages()).toEqual(['Removed "Gone".']);
+    expect(page['notices'].messages()).toEqual(['Moved "Gone" to the Trash.']);
   });
 
   it('drops a question about opening a recipe that has since been removed', async () => {

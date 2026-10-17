@@ -57,7 +57,12 @@ describe('static pages', () => {
       '/account'
     ]);
     expect(home.nativeElement.querySelector('.home-welcome')).toBeNull();
-    expect(text((await create(TrashPage)).fixture)).toContain('trash functionality is coming soon');
+    const trash = await create(TrashPage);
+    httpMock()
+      .expectOne(API + '/trash/getAll')
+      .flush([]);
+    await settle(trash.fixture);
+    expect(text(trash.fixture)).toContain('The Trash is empty.');
     expect(text((await create(NotFoundPage)).fixture)).toContain('Page not found');
   });
 
