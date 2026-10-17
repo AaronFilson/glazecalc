@@ -4,7 +4,8 @@
 //   GET    /api/trash/getAll       what is in it, newest first: [{ _id, fromCollection, label,
 //                                  recordId, title, trashedAt, expiresAt, by }]
 //   POST   /api/trash/restore/:id  puts one back where it was, with its own _id, and answers
-//                                  with the record; 409 when it is back already
+//                                  with the record; 409 when a record with that _id is in its
+//                                  list already (the entry stays in the Trash)
 //   DELETE /api/trash/delete/:id   deletes one for good, with its earlier versions
 //   DELETE /api/trash/empty        deletes everything in it for good
 //
@@ -83,10 +84,10 @@ trashRouter.post('/restore/:id', requireScope('trash:write'), async (req, res) =
     try {
       await Model.collection.insertOne(record);
     } catch (err) {
-      // A record with that _id is there already: it was put back before.
-      if (isDuplicateKey(err)) return false;
-      // Anything else: it goes back in the Trash as it was, and the error on.
+      // It goes back in the Trash as it was, whatever went wrong, so it is never lost.
       await Trash.collection.insertOne(taken);
+      // A record with that _id is in the list already (409): the entry stays, to delete or keep.
+      if (isDuplicateKey(err)) return false;
       throw err;
     }
     await keepVersions(ownedBy, taken.recordId);

@@ -71,6 +71,20 @@ describe('Trash', () => {
     expect(await Recipe.countDocuments({ ownedBy: String(user._id) })).to.equal(1);
   });
 
+  it('keeps the Trash entry when a record with its id is in the list already', async () => {
+    const saved = await create();
+    await remove(saved._id);
+    const [entry] = await trash();
+    // The same record back in the list by another way, as a backup restored would bring it.
+    await Recipe.collection.insertOne({ ...recipe, _id: new Types.ObjectId(saved._id), ownedBy: String(user._id) });
+    const res = await restore(entry._id);
+    expect(res).to.have.status(409);
+    expect(res.body.code).to.equal('trash-restored-already');
+    const [still] = await trash();
+    expect(still).to.include({ _id: entry._id, recordId: saved._id, title: 'Celadon' });
+    expect(await Trash.countDocuments({ _id: entry._id, record: { $exists: true } })).to.equal(1);
+  });
+
   it('keeps each account’s Trash to itself', async () => {
     const { token: other } = await makeUser();
     await remove((await create())._id);
