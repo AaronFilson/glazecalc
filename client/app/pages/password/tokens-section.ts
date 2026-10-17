@@ -38,7 +38,8 @@ const nameCheck =
 /**
  * "Access tokens" on the account page (docs/integrations-plan.md, item 27):
  * tokens the person makes for their own AI assistant or script, which for now
- * can only read their records. Making one asks for the password and, with
+ * can only read their records. Making one asks for the password (for an
+ * account with no password, a fresh sign-in with Google or GitHub) and, with
  * two-step sign-in on, a second step (IdentityConfirm), as other changes to
  * how the account is reached do. The new token is shown once, to copy; the
  * list shows each token's name, last characters, dates and whether it still

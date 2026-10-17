@@ -42,6 +42,7 @@ describe('AccountPage access tokens', () => {
     await fixture.whenStable();
     answer('/preferences', { weightUnit: 'g' });
     answer('/mfa', summary);
+    answer('/share/recipes', []);
     answer('/tokens', tokens);
     await settle(fixture);
     return { fixture };
@@ -155,6 +156,40 @@ describe('AccountPage access tokens', () => {
     await settle(fixture);
     // Still open, to try again.
     expect(el(fixture, '#token-confirm-password')).not.toBeNull();
+  });
+
+  it('confirms an account with no password by a fresh provider sign-in, with a second step when it is on', async () => {
+    const { fixture } = await create(ON);
+    const auth = TestBed.inject(AuthService);
+    auth.methods.set({
+      enabled: ['google'],
+      passwordless: true,
+      linked: [{ provider: 'google', linkedAt: '2026-10-01T10:00:00Z' }]
+    });
+    await settle(fixture);
+    await type(fixture, 'token-name', 'Cursor');
+    await press(fixture, 'Continue', '.tokens-section');
+    expect(el(fixture, '#token-confirm-password')).toBeNull();
+    expect(el(fixture, '.tokens-section [data-reauth="google"]')).not.toBeNull();
+
+    auth.holdReauth({ grant: 'fresh-grant', provider: 'google', expiresAt: Date.now() + 60000 });
+    await settle(fixture);
+    await type(fixture, 'token-confirm-code', '123456');
+    await press(fixture, 'Make the token');
+    const req = httpMock().expectOne(API + '/tokens');
+    expect(req.request.body).toEqual({ name: 'Cursor', days: 30, reauth: 'fresh-grant', code: '123456' });
+    req.flush(
+      {
+        code: 'token-made',
+        msg: 'Your access token is ready.',
+        token: 'glazecalc_pat_' + 'y'.repeat(49),
+        row: row('Cursor')
+      },
+      { status: 201, statusText: 'Created' }
+    );
+    await settle(fixture);
+    // The grant confirmed this one change.
+    expect(auth.reauth()).toBeNull();
   });
 
   it('lists tokens, revokes one, and says when the most are working', async () => {

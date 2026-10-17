@@ -883,6 +883,41 @@ describe('signing in with Google and GitHub', () => {
       expect(res).to.have.status(400);
       expect(res.body.code).to.eql('current-password-wrong');
     });
+
+    it('makes an access token with the grant, once, and with a second step as well once two-step sign-in is on', async () => {
+      const { sub, email, user, token } = await madeWith();
+      const make = (session: string, body: object) =>
+        api()
+          .post('/tokens')
+          .set(bearer(session))
+          .send({ name: 'My assistant', ...body });
+      expect((await make(token, {})).body.code).to.eql('provider-reauth-needed');
+      expect((await make(token, { password: 'anything' })).body.code).to.eql('provider-reauth-needed');
+      const grant = await grantOf('google', token, sub, email);
+      const made = await make(token, { reauth: grant });
+      expect(made, JSON.stringify(made.body)).to.have.status(201);
+      expect(made.body.token).to.be.a('string');
+      // Spent on that token.
+      expect((await make(token, { reauth: grant })).body.code).to.eql('provider-reauth-needed');
+
+      // Two-step sign-in on: the grant and a current factor.
+      const started = await api()
+        .post('/mfa/totp/start')
+        .set(bearer(token))
+        .send({ reauth: await grantOf('google', token, sub, email) });
+      const secret = totp.fromBase32(started.body.secret);
+      const added = await api()
+        .post('/mfa/totp')
+        .set(bearer(token))
+        .send({ setupId: started.body.setupId, code: totp.codeAt(secret, totp.stepAt()) });
+      expect(added, JSON.stringify(added.body)).to.have.status(200);
+      const renewed = sessionToken(added)!;
+      const second = await grantOf('google', renewed, sub, email);
+      expect((await make(renewed, { reauth: second })).body.code).to.eql('factor-needed');
+      await User.updateOne({ _id: user._id }, { $set: { 'mfa.totp.lastStep': totp.stepAt() - 2 } });
+      const withCode = await make(renewed, { reauth: second, code: totp.codeAt(secret, totp.stepAt()) });
+      expect(withCode, JSON.stringify(withCode.body)).to.have.status(201);
+    });
   });
 
   describe("the account's data", () => {
