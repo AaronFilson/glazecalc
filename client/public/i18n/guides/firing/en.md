@@ -34,13 +34,14 @@ A **hold** (also called a **soak**) keeps the kiln at one temperature for a whil
 Table: What a hold at the peak is worth
 Label: Holds and heatwork
 
-| Hold             | Roughly the same heatwork as                              |
-| ---------------- | --------------------------------------------------------- |
-| About 20 minutes | A peak {{18 °F; 10 °C}} hotter                            |
-| 40–60 minutes    | A peak {{36 °F; 20 °C}} hotter                            |
-| About 2 hours    | A peak {{54 °F; 30 °C}} hotter                            |
-| 1–2 hours        | "may be sufficient to deform the next higher cone number" |
-| 4–6 hours        | Enough to bend a cone two numbers hotter                  |
+| Hold             | Roughly the same heatwork as             |
+| ---------------- | ---------------------------------------- |
+| About 20 minutes | A peak {{18 °F; 10 °C}} hotter           |
+| 40–60 minutes    | A peak {{36 °F; 20 °C}} hotter           |
+| About 2 hours    | A peak {{54 °F; 30 °C}} hotter           |
+| 4–6 hours        | Enough to bend a cone two numbers hotter |
+
+Orton adds that a hold of 1–2 hours "may be sufficient to deform the next higher cone number".
 
 So a hold is never free: if you add one, expect the cones to bend further, and lower the peak to match.
 
