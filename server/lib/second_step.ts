@@ -278,11 +278,16 @@ export const noticeUnfinished = async (userId: Types.ObjectId | string): Promise
  * factors.confirmIdentity for a change to the account itself (the email, the
  * password, deleting it; decision 6), as the account page's changes to how
  * it signs in confirm: when it took a factor, a pending request to turn
- * two-step sign-in off is cancelled, as above. The routes call it only once
- * MFA is on; without it their own password check is unchanged.
+ * two-step sign-in off is cancelled, as above. The routes call it once MFA
+ * is on, or for an account with no password (a fresh provider sign-in in its
+ * place); otherwise their own password check is unchanged.
  */
-export const confirmChange = async (req: Request, body: unknown): Promise<factors.IdentityCheck> => {
-  const check = await factors.confirmIdentity(req, body);
+export const confirmChange = async (
+  req: Request,
+  body: unknown,
+  options: { reauth?: boolean } = {}
+): Promise<factors.IdentityCheck> => {
+  const check = await factors.confirmIdentity(req, body, options);
   if (check.ok && check.used) await cancelClearRequest(check.user._id);
   return check;
 };

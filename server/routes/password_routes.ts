@@ -118,7 +118,8 @@ passwordRouter.put(
     if (!user) return res.status(404).json(say('no-user'));
     if (mfaOn(user)) {
       // The password and a current factor (decision 6). The password here is `current`.
-      const check = await confirmChange(req, { ...body, password: body.current });
+      // Never a provider sign-in: an account without a password sets one by the reset email.
+      const check = await confirmChange(req, { ...body, password: body.current }, { reauth: false });
       if (!check.ok) {
         const field = check.field === 'password' ? 'current' : check.field;
         return res.status(check.status).json(say(check.code, check.params, field ? { field } : {}));

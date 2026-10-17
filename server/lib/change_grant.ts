@@ -27,14 +27,18 @@ const hashOf = (grant: string): string => crypto.createHash('sha256').update(gra
 export const versionIs = (version: number): Record<string, unknown> =>
   version ? { tokenVersion: version } : { tokenVersion: { $in: [0, null] } };
 
-/** Gives a grant for `purpose` to an account whose identity was just confirmed. */
+/**
+ * Gives a grant for `purpose` to an account whose identity was just confirmed:
+ * for GRANT_MINUTES from `confirmedAt` (now when not given).
+ */
 export const issue = async (
   user: { _id: Types.ObjectId; tokenVersion?: number },
-  purpose: GrantPurpose
+  purpose: GrantPurpose,
+  confirmedAt = new Date()
 ): Promise<{ grant: string; expiresAt: Date }> => {
   await AuthChallenge.deleteMany({ userId: user._id, kind: 'change-grant', purpose });
   const grant = crypto.randomBytes(32).toString('base64url');
-  const expiresAt = new Date(Date.now() + GRANT_MINUTES * 60 * 1000);
+  const expiresAt = new Date(confirmedAt.getTime() + GRANT_MINUTES * 60 * 1000);
   await AuthChallenge.create({
     userId: user._id,
     kind: 'change-grant',

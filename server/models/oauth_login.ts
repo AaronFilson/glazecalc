@@ -10,9 +10,11 @@ import mongoose from 'mongoose';
 // against: the state, the OpenID Connect nonce and the PKCE verifier. The
 // callback spends those and writes what the answer came to (outcome); the
 // page then finishes it with POST /api/auth/finish, which starts the session,
-// asks for the second step or links the provider. It lives
+// asks for the second step or links the provider, or, for a fresh sign-in
+// confirming a change (POST /api/auth/:provider/reauth), gives the grant
+// that confirms it (server/lib/change_grant.ts). It lives
 // OAUTH_LOGIN_MINUTES, then MongoDB deletes it.
-export type OAuthOutcome = 'signin' | 'create' | 'link-needed' | 'link' | 'error';
+export type OAuthOutcome = 'signin' | 'create' | 'link-needed' | 'link' | 'reauth' | 'error';
 
 export interface OAuthLoginFields {
   keyHash: string;
@@ -28,9 +30,15 @@ export interface OAuthLoginFields {
   keep: boolean;
   /** A trial on this browser at the start, merged into the account at the end. */
   trialId?: mongoose.Types.ObjectId;
-  /** Linking from the account page: the account, and its tokenVersion then. */
+  /**
+   * Linking from the account page, or a fresh sign-in to confirm a change
+   * there (`reauth`): the account, and its tokenVersion then.
+   */
   linkUserId?: mongoose.Types.ObjectId;
   linkTokenVersion?: number;
+  reauth?: boolean;
+  /** 'reauth': when the provider's answer came back, which the grant's 5 minutes count from. */
+  confirmedAt?: Date;
   /** What the provider's answer came to; absent until the callback. */
   outcome?: OAuthOutcome;
   /** 'signin': the account the provider account is linked to. */
@@ -58,7 +66,9 @@ const oauthLoginSchema = new mongoose.Schema<OAuthLoginFields>(
     trialId: mongoose.Schema.Types.ObjectId,
     linkUserId: { type: mongoose.Schema.Types.ObjectId, index: true },
     linkTokenVersion: Number,
-    outcome: { type: String, enum: ['signin', 'create', 'link-needed', 'link', 'error'] },
+    reauth: Boolean,
+    confirmedAt: Date,
+    outcome: { type: String, enum: ['signin', 'create', 'link-needed', 'link', 'reauth', 'error'] },
     userId: { type: mongoose.Schema.Types.ObjectId, index: true },
     subject: String,
     email: String,

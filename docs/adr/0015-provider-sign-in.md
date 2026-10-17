@@ -46,11 +46,42 @@ unconfirmed ones, exist.
     once, the usual way (password and second step, or a passkey); the same browser, still holding
     the cookie, then finishes the link, and only when the account's own email is confirmed. A
     session for any other account is refused;
-  - from the account page: after the password, and a second step when two-step sign-in is on (as
-    every change to how the account signs in, ADR 14), any provider account not linked elsewhere,
-    whatever its email; one per provider; the account's email must be confirmed;
-  - unlinking takes the same confirmation and never removes the last way in. Linking and
-    unlinking email the account (to a confirmed address only).
+  - from the account page: after the password (a fresh provider sign-in for an account without
+    one, below), and a second step when two-step sign-in is on (as every change to how the
+    account signs in, ADR 14), any provider account not linked elsewhere, whatever its email; one
+    per provider; the account's email must be confirmed;
+  - unlinking takes the same confirmation and never removes the last way in. It also raises the
+    account's `tokenVersion`, so every other session ends (whoever unlinks may be undoing a link
+    someone else made), and renews this browser's; linking ends none. Access tokens are left
+    alone, as with a password change. Linking and unlinking email the account (to a confirmed
+    address only).
+- **An account with no password confirms with a fresh provider sign-in** (the owner's decision of
+  2026-10-17, integrations-plan item 13). Changing its email, deleting it, turning on two-step
+  sign-in or changing its factors, and linking or unlinking a provider each need the owner to
+  sign in again with a provider already linked to the account, in place of the password:
+  - `POST /api/auth/:provider/reauth` (signed in, no password of its own, the provider linked)
+    starts a provider sign-in like linking does, with the account and its `tokenVersion` on the
+    record. The callback accepts only a provider subject linked to **that** account
+    (`provider-reauth-other` otherwise) and notes when the answer came;
+  - `POST /api/auth/finish`, from the same browser (the provider cookie) and the same account
+    still signed in as it was, within 5 minutes of the provider's answer, gives a **grant**: a
+    random value the page keeps in memory, stored only as its SHA-256 (an `AuthChallenge` of
+    kind `change-grant`, purpose `provider-reauth`, `server/lib/change_grant.ts`), good until 5
+    minutes after the provider's answer while the account's `tokenVersion` is unchanged; a newer
+    one replaces it;
+  - the change sends `reauth` in place of `password` (`lib/mfa.d.ts` `OwnerProof`), and
+    `factors.confirmIdentity` takes the grant **once**, atomically, only after the rest has
+    passed (so a wrong code leaves it for another try); with two-step sign-in on, a current
+    factor is still asked for. A grant names one account, so another account's sign-in, a
+    replay or a grant from before a sign-out everywhere is refused (`provider-reauth-needed`);
+  - an account with a password keeps confirming with it: it cannot start a reauth
+    (`provider-reauth-password`) and a grant does not stand in for its password. Changing the
+    password itself never takes a grant: an account without one sets it by the reset email.
+
+  How fresh the sign-in is at the provider is the provider's decision: with a live Google or
+  GitHub session it may be one click. What Glazecalc checks is that the person completed a new
+  round trip through a provider linked to this account, in this browser, moments ago.
+
 - **Two-step sign-in still applies.** A provider sign-in to an account with two-step sign-in on
   gets the same pending second step as a password (`server/lib/second_step.ts`), so a provider
   account alone is never enough.
@@ -71,10 +102,10 @@ unconfirmed ones, exist.
 - No new dependency, sub-processor or cost. Google and GitHub are separate controllers of what the
   person shares with them; the privacy notice and the record of processing say so, and list the
   extra cookie, which is set only when a provider button is pressed (strictly necessary).
-- An account made with a provider has no password: changing its email, turning on two-step
-  sign-in, linking another provider or deleting the account first needs a password, set through
-  the reset email (the account page offers it). A fresh provider re-authentication in place of the
-  password (the plan's `reauthUntil`, item 13) is left for later.
+- An account made with a provider has no password: it confirms changes with a fresh provider
+  sign-in (above), or sets a password through the reset email (the account page offers it). The
+  confirmation leaves the page for the provider and comes back, so the person makes the change
+  again on return; the account page says the sign-in is held for one change for 5 minutes.
 - The provider email is used only at the moment of sign-in; changing it at the provider changes
   nothing here. The link survives an email change on Glazecalc.
 - Microsoft (decision 1) needs its tenant id with the subject (the `email` claim cannot be trusted,

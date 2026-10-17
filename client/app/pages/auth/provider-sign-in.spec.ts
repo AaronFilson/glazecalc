@@ -176,7 +176,7 @@ describe('the account page section for Google and GitHub', () => {
     expect(fixture.nativeElement.textContent).toContain('GitHub is unlinked.');
   });
 
-  it('offers a passwordless account the email to set a password, and no link or unlink', async () => {
+  it('offers a passwordless account the email to set a password, and never unlinks its only provider', async () => {
     const fixture = await create();
     TestBed.inject(AuthService).email.set('potter@example.com');
     answer('/auth/methods', {
@@ -186,12 +186,88 @@ describe('the account page section for Google and GitHub', () => {
     });
     await settle(fixture);
     expect(fixture.nativeElement.querySelector('[data-unlink]')).toBe(null);
-    expect(fixture.nativeElement.querySelector('[data-link]')).toBe(null);
+    expect(fixture.nativeElement.querySelector('[data-link="github"]')).not.toBe(null);
     (fixture.nativeElement.querySelector('.passwordless button') as HTMLButtonElement).click();
     await settle(fixture);
     const req = httpMock().expectOne(API + '/password/forgot');
     expect(req.request.body).toEqual({ email: 'potter@example.com' });
     req.flush({ code: 'reset-sent', msg: 'Sent.', params: { minutes: 30 } });
     await settle(fixture);
+  });
+
+  it('confirms with a fresh provider sign-in in place of the password, once', async () => {
+    const fixture = await create();
+    const auth = TestBed.inject(AuthService);
+    answer('/auth/methods', {
+      enabled: ['google', 'github'],
+      passwordless: true,
+      linked: [
+        { provider: 'google', linkedAt: '2026-10-01T10:00:00Z' },
+        { provider: 'github', linkedAt: '2026-10-02T10:00:00Z' }
+      ]
+    });
+    await settle(fixture);
+    (fixture.nativeElement.querySelector('[data-unlink="github"]') as HTMLButtonElement).click();
+    await settle(fixture);
+    const confirm = fixture.nativeElement.querySelector('.identity-confirm') as HTMLElement;
+    expect(confirm.querySelector('input[type="password"]')).toBe(null);
+    const again = [...confirm.querySelectorAll('[data-reauth]')].map((b) => b.getAttribute('data-reauth'));
+    expect(again).toEqual(['google', 'github']);
+    // Not yet signed in again: nothing is sent.
+    (confirm.querySelector('button[type="submit"]') as HTMLButtonElement).click();
+    await settle(fixture);
+    expect(confirm.textContent).toContain('Please sign in again first');
+
+    auth.holdReauth({ grant: 'fresh-grant', provider: 'google', expiresAt: Date.now() + 60000 });
+    await settle(fixture);
+    expect(confirm.textContent).toContain('You signed in again with Google.');
+    (confirm.querySelector('button[type="submit"]') as HTMLButtonElement).click();
+    await settle(fixture);
+    const req = httpMock().expectOne(API + '/auth/github');
+    expect(req.request.body).toEqual({ reauth: 'fresh-grant' });
+    req.flush({ code: 'provider-unlinked', msg: 'GitHub is unlinked.', params: { provider: 'github' } });
+    await settle(fixture);
+    answer('/auth/methods', {
+      enabled: ['google', 'github'],
+      passwordless: true,
+      linked: [{ provider: 'google', linkedAt: '2026-10-01T10:00:00Z' }]
+    });
+    await settle(fixture);
+    expect(auth.reauth()).toBe(null);
+  });
+
+  it('holds the grant a fresh sign-in brings back, and says so', async () => {
+    localStorage.clear();
+    localStorage.setItem('session', 'account');
+    TestBed.configureTestingModule({
+      providers: [
+        ...testProviders(),
+        { provide: ActivatedRoute, useValue: route('signin', { provider: 'google' }) },
+        { provide: PASSKEYS, useValue: noPasskeys },
+        { provide: SIGN_IN_PROVIDERS, useValue: () => Promise.resolve(['google', 'github']) }
+      ]
+    });
+    vi.spyOn(TestBed.inject(Router), 'navigate').mockResolvedValue(true);
+    const fixture = TestBed.createComponent(ProvidersSection);
+    await settle(fixture);
+    httpMock()
+      .expectOne(API + '/auth/finish')
+      .flush({
+        code: 'provider-reauthed',
+        msg: 'You signed in again with Google.',
+        params: { provider: 'google' },
+        provider: 'google',
+        reauth: 'fresh-grant',
+        expiresAt: new Date(Date.now() + 300000).toISOString()
+      });
+    await settle(fixture);
+    answer('/auth/methods', {
+      enabled: ['google', 'github'],
+      passwordless: true,
+      linked: [{ provider: 'google', linkedAt: '2026-10-01T10:00:00Z' }]
+    });
+    await settle(fixture);
+    expect(TestBed.inject(AuthService).reauth()?.grant).toBe('fresh-grant');
+    expect(fixture.nativeElement.textContent).toContain('You signed in again with Google.');
   });
 });

@@ -1,11 +1,13 @@
 // Signing in with Google and GitHub (server/routes/oauth_routes.ts), against
 // the fake provider (support/fake_provider.ts): the flow and its checks, the
 // linking rules (pre-hijacking above all), two-step sign-in after a provider,
-// unconfirmed emails, linking and unlinking on the account page, and the
-// account's data.
+// unconfirmed emails, linking and unlinking on the account page, confirming
+// a change with a fresh provider sign-in when the account has no password,
+// and the account's data.
 import { exportAccount } from '../lib/export_data.ts';
 import * as oauth from '../lib/oauth.ts';
 import * as totp from '../lib/totp.ts';
+import AuthChallenge from '../models/auth_challenge.ts';
 import OAuthLogin from '../models/oauth_login.ts';
 import Recipe from '../models/recipe.ts';
 import User from '../models/user.ts';
@@ -476,6 +478,28 @@ describe('signing in with Google and GitHub', () => {
       expect((await User.findById(user._id).lean())!.identities).to.eql(undefined);
     });
 
+    it("signs out the account's other sessions when unlinking, but keeps this one; linking signs out none", async () => {
+      const { user, token, email, password } = await makeUser();
+      const other = user.generateToken();
+      const res = await linkStart('google', token, { password });
+      const flow = { location: res.body.location as string, cookie: oauthCookie(res)! };
+      await callback('google', flow, { sub: subject(), email, emailVerified: true });
+      const linked = await finish(flow.cookie, token);
+      expect(linked.body.code).to.eql('provider-linked');
+      expect(sessionToken(linked)).to.eql(null);
+      for (const kept of [token, other]) expect(await api().get('/auth/methods').set(bearer(kept))).to.have.status(200);
+
+      const done = await api().delete('/auth/google').set(bearer(token)).send({ password });
+      expect(done, JSON.stringify(done.body)).to.have.status(200);
+      const renewed = sessionToken(done)!;
+      expect(renewed).to.be.a('string');
+      for (const ended of [token, other])
+        expect(await api().get('/auth/methods').set(bearer(ended))).to.have.status(401);
+      expect(await api().get('/auth/methods').set(bearer(renewed))).to.have.status(200);
+      // The notice still goes.
+      await mail.waitFor(email, 2);
+    });
+
     it('unlinks after the password, with a notice, but never the last way in', async () => {
       const { token, email, password } = await makeUser();
       const res = await linkStart('google', token, { password });
@@ -484,14 +508,14 @@ describe('signing in with Google and GitHub', () => {
       await finish(flow.cookie, token);
       await mail.waitFor(email, 1);
 
-      const unlink = (body: object) => api().delete('/auth/google').set(bearer(token)).send(body);
+      const unlink = (body: object, as = token) => api().delete('/auth/google').set(bearer(as)).send(body);
       expect((await unlink({})).body.code).to.eql('current-password-needed');
       const done = await unlink({ password });
       expect(done, JSON.stringify(done.body)).to.have.status(200);
       expect(done.body.code).to.eql('provider-unlinked');
       const [, notice] = await mail.waitFor(email, 2);
       expect(notice!.subject).to.eql('A way to sign in was removed from your Glazecalc account');
-      expect((await unlink({ password })).body.code).to.eql('provider-not-linked');
+      expect((await unlink({ password }, sessionToken(done)!)).body.code).to.eql('provider-not-linked');
 
       // An account made with a provider has no password: its only way in stays.
       const sub = subject();
@@ -499,10 +523,224 @@ describe('signing in with Google and GitHub', () => {
       const madeToken = sessionToken(made.done)!;
       const last = await api().delete('/auth/google').set(bearer(madeToken)).send({ password: 'anything' });
       expect(last.body.code).to.eql('provider-last-method');
+      // Nor does a password stand in for the fresh provider sign-in it confirms with.
       expect(
         (await api().post('/auth/github/link').set(bearer(madeToken)).send({ password: 'anything' })).body.code
-      ).to.eql('provider-set-password-first');
+      ).to.eql('provider-reauth-needed');
       expect((await api().get('/auth/methods').set(bearer(madeToken))).body.passwordless).to.eql(true);
+    });
+  });
+
+  describe('confirming with a fresh provider sign-in (an account with no password)', () => {
+    /** An account made with a provider, signed in. */
+    const madeWith = async (provider: FakeProviderId = 'google') => {
+      const sub = subject();
+      const email = uniqueEmail('nopass');
+      const { done } = await signInWith(provider, { sub, email, emailVerified: true });
+      const user = (await User.findOne({ email }))!;
+      return { sub, email, user, token: sessionToken(done)! };
+    };
+
+    const reauthStart = (provider: FakeProviderId, token: string) =>
+      api()
+        .post('/auth/' + provider + '/reauth')
+        .set(bearer(token))
+        .send({ next: '/de/account' });
+
+    /** Signs in again with the provider as `identity`, and finishes with `finishToken` (the same session by default). */
+    const reauth = async (
+      provider: FakeProviderId,
+      token: string,
+      identity: FakeIdentity,
+      finishToken = token
+    ): Promise<{ back: Res; done: Res }> => {
+      const res = await reauthStart(provider, token);
+      expect(res, JSON.stringify(res.body)).to.have.status(200);
+      const flow = { location: res.body.location as string, cookie: oauthCookie(res)! };
+      const back = await callback(provider, flow, identity);
+      return { back, done: await finish(flow.cookie, finishToken) };
+    };
+
+    const grantOf = async (provider: FakeProviderId, token: string, sub: string, email: string): Promise<string> => {
+      const { done } = await reauth(provider, token, { sub, email, emailVerified: true });
+      expect(done, JSON.stringify(done.body)).to.have.status(200);
+      return done.body.reauth as string;
+    };
+
+    const deleteAs = (user: { _id: unknown }, token: string, body: object) =>
+      api()
+        .delete('/deleteuser/' + String(user._id))
+        .set(bearer(token))
+        .send(body);
+
+    it('gives a grant for one change, within 5 minutes, that stands in for the password', async () => {
+      const { sub, email, user, token } = await madeWith();
+      expect((await deleteAs(user, token, {})).body.code).to.eql('provider-reauth-needed');
+      expect((await deleteAs(user, token, { password: 'anything' })).body.code).to.eql('provider-reauth-needed');
+
+      const { back, done } = await reauth('google', token, { sub, email, emailVerified: true });
+      expect(back.headers.location).to.eql('/de/account?provider=google');
+      expect(done, JSON.stringify(done.body)).to.have.status(200);
+      expect(done.body.code).to.eql('provider-reauthed');
+      expect(done.body.provider).to.eql('google');
+      expect(done.body.reauth).to.match(/^[A-Za-z0-9_-]{43}$/);
+      const left = Date.parse(done.body.expiresAt) - Date.now();
+      expect(left)
+        .to.be.above(4 * 60 * 1000)
+        .and.at.most(5 * 60 * 1000);
+      // Only its hash is kept.
+      expect(await AuthChallenge.exists({ grantHash: done.body.reauth })).to.eql(null);
+
+      // The email change takes it...
+      const newAddress = uniqueEmail('moved');
+      const changed = await api()
+        .post('/email/change')
+        .set(bearer(token))
+        .send({ email: newAddress, reauth: done.body.reauth });
+      expect(changed, JSON.stringify(changed.body)).to.have.status(200);
+      expect(changed.body.code).to.eql('email-change-sent');
+      // ...once.
+      expect((await deleteAs(user, token, { reauth: done.body.reauth })).body.code).to.eql('provider-reauth-needed');
+      expect(await User.exists({ _id: user._id })).to.not.eql(null);
+
+      // An address already in use is refused before the grant is spent.
+      const other = await makeUser();
+      const grant = await grantOf('google', token, sub, email);
+      const inUse = await api().post('/email/change').set(bearer(token)).send({ email: other.email, reauth: grant });
+      expect(inUse.body.code).to.eql('email-in-use');
+      const deleted = await deleteAs(user, token, { reauth: grant });
+      expect(deleted, JSON.stringify(deleted.body)).to.have.status(200);
+      expect(await User.exists({ _id: user._id })).to.eql(null);
+    });
+
+    it("never takes another account's sign-in, or a provider account not linked to this one", async () => {
+      const a = await madeWith();
+      const b = await madeWith();
+      // B's Google account signs in for A: refused at the callback.
+      const crossed = await reauth('google', a.token, { sub: b.sub, email: b.email, emailVerified: true });
+      expect(crossed.done.body.code).to.eql('provider-reauth-other');
+      expect(crossed.done.body.reauth).to.eql(undefined);
+      // A provider account linked to no one, whatever its email.
+      const stranger = await reauth('google', a.token, { sub: subject(), email: a.email, emailVerified: true });
+      expect(stranger.done.body.code).to.eql('provider-reauth-other');
+
+      // A's sign-in, finished by B's session: refused, and nothing given.
+      const stolen = await reauth('google', a.token, { sub: a.sub, email: a.email, emailVerified: true }, b.token);
+      expect(stolen.done.body.code).to.eql('provider-expired');
+      expect(stolen.done.body.reauth).to.eql(undefined);
+
+      // A's grant does nothing for B.
+      const grant = await grantOf('google', a.token, a.sub, a.email);
+      expect((await deleteAs(b.user, b.token, { reauth: grant })).body.code).to.eql('provider-reauth-needed');
+      expect(await User.exists({ _id: b.user._id })).to.not.eql(null);
+      // Nor for a provider not linked to A.
+      expect((await reauthStart('github', a.token)).body.code).to.eql('provider-not-linked');
+
+      // An account with a password confirms with it: no provider sign-in, and a grant is no password.
+      const withPassword = await makeUser();
+      expect((await reauthStart('google', withPassword.token)).body.code).to.eql('provider-reauth-password');
+      expect((await deleteAs(withPassword.user, withPassword.token, { reauth: grant })).body.code).to.eql(
+        'current-password-needed'
+      );
+      // A trial has nothing to confirm with.
+      const trial = sessionToken(await api().post('/guest'))!;
+      expect(await reauthStart('google', trial)).to.have.status(403);
+    });
+
+    it('runs out after 5 minutes, and when the account signs out everywhere', async () => {
+      const { sub, email, user, token } = await madeWith();
+      // A provider answer older than 5 minutes gives nothing.
+      const res = await reauthStart('google', token);
+      const flow = { location: res.body.location as string, cookie: oauthCookie(res)! };
+      await callback('google', flow, { sub, email, emailVerified: true });
+      await OAuthLogin.updateOne(
+        { keyHash: oauth.sha256(flow.cookie) },
+        { $set: { confirmedAt: new Date(Date.now() - 6 * 60 * 1000) } }
+      );
+      expect((await finish(flow.cookie, token)).body.code).to.eql('provider-expired');
+
+      // A grant past its time.
+      const late = await grantOf('google', token, sub, email);
+      await AuthChallenge.updateMany(
+        { userId: user._id, purpose: 'provider-reauth' },
+        { $set: { expiresAt: new Date(Date.now() - 1000) } }
+      );
+      expect((await deleteAs(user, token, { reauth: late })).body.code).to.eql('provider-reauth-needed');
+
+      // A grant from before a sign-out everywhere.
+      const before = await grantOf('google', token, sub, email);
+      await User.updateOne({ _id: user._id }, { $inc: { tokenVersion: 1 } });
+      const fresh = (await User.findById(user._id))!.generateToken();
+      expect((await deleteAs(user, fresh, { reauth: before })).body.code).to.eql('provider-reauth-needed');
+      // And a newer grant replaces an older one.
+      const first = await grantOf('google', fresh, sub, email);
+      const second = await grantOf('google', fresh, sub, email);
+      expect((await deleteAs(user, fresh, { reauth: first })).body.code).to.eql('provider-reauth-needed');
+      expect(await deleteAs(user, fresh, { reauth: second })).to.have.status(200);
+    });
+
+    it('turns on two-step sign-in, then links and unlinks with it and a second step', async () => {
+      const { sub, email, user, token } = await madeWith();
+      expect((await api().post('/mfa/totp/start').set(bearer(token)).send({})).body.code).to.eql(
+        'provider-reauth-needed'
+      );
+      const started = await api()
+        .post('/mfa/totp/start')
+        .set(bearer(token))
+        .send({ reauth: await grantOf('google', token, sub, email) });
+      expect(started, JSON.stringify(started.body)).to.have.status(200);
+      const secret = totp.fromBase32(started.body.secret);
+      const added = await api()
+        .post('/mfa/totp')
+        .set(bearer(token))
+        .send({ setupId: started.body.setupId, code: totp.codeAt(secret, totp.stepAt()) });
+      expect(added, JSON.stringify(added.body)).to.have.status(200);
+      const renewed = sessionToken(added)!;
+      const code = async () => {
+        await User.updateOne({ _id: user._id }, { $set: { 'mfa.totp.lastStep': totp.stepAt() - 2 } });
+        return totp.codeAt(secret, totp.stepAt());
+      };
+
+      // Linking GitHub: the grant alone is not enough, and a wrong code does not spend it.
+      const grant = await grantOf('google', renewed, sub, email);
+      const link = (body: object) => api().post('/auth/github/link').set(bearer(renewed)).send(body);
+      expect((await link({ reauth: grant })).body.code).to.eql('factor-needed');
+      await User.updateOne({ _id: user._id }, { $set: { 'mfa.totp.lastStep': totp.stepAt() - 2 } });
+      expect((await link({ reauth: grant, code: '000000' })).body.code).to.eql('code-wrong');
+      const linking = await link({ reauth: grant, code: await code() });
+      expect(linking, JSON.stringify(linking.body)).to.have.status(200);
+      const flow = { location: linking.body.location as string, cookie: oauthCookie(linking)! };
+      const githubSub = subject();
+      await callback('github', flow, { sub: githubSub, email: uniqueEmail('gh'), emailVerified: true });
+      expect((await finish(flow.cookie, renewed)).body.code).to.eql('provider-linked');
+      // Spent on the link.
+      expect((await link({ reauth: grant, code: await code() })).body.code).to.eql('provider-already-linked');
+
+      // Unlinking Google, confirmed by a fresh GitHub sign-in and a code.
+      const viaGithub = await grantOf('github', renewed, githubSub, email);
+      const unlinked = await api()
+        .delete('/auth/google')
+        .set(bearer(renewed))
+        .send({ reauth: viaGithub, code: await code() });
+      expect(unlinked, JSON.stringify(unlinked.body)).to.have.status(200);
+      const after = sessionToken(unlinked)!;
+      expect(await api().get('/auth/methods').set(bearer(renewed))).to.have.status(401);
+      // GitHub is now the only way in.
+      const last = await api()
+        .delete('/auth/github')
+        .set(bearer(after))
+        .send({ reauth: await grantOf('github', after, githubSub, email), code: await code() });
+      expect(last.body.code).to.eql('provider-last-method');
+      // A Google sign-in no longer confirms anything.
+      expect((await reauthStart('google', after)).body.code).to.eql('provider-not-linked');
+    });
+
+    it('does not let a provider sign-in change the password', async () => {
+      const { sub, email, token } = await madeWith();
+      const grant = await grantOf('google', token, sub, email);
+      const res = await api().put('/password').set(bearer(token)).send({ reauth: grant, password: 'a-new-password' });
+      expect(res).to.have.status(400);
+      expect(res.body.code).to.eql('current-password-wrong');
     });
   });
 
@@ -529,6 +767,7 @@ describe('signing in with Google and GitHub', () => {
       const token = sessionToken(done)!;
       // A passwordless account sets a password (the reset email) before deleting; here, directly.
       user.hashPassword('password123');
+      user.passwordless = undefined;
       await user.save();
       const fresh = (await User.findById(user._id))!.generateToken();
       const res = await api()

@@ -11,11 +11,17 @@
 //                                      { email, kept, next } signed in;
 //                                      { code: 'second-step', methods, pending, expiresAt, email, next,
 //                                        passkeyOptions? } as GET /api/signin answers;
-//                                      { code: 'provider-linked' }; or 409 'provider-sign-in-to-link'
+//                                      { code: 'provider-linked' };
+//                                      { code: 'provider-reauthed', reauth, expiresAt, provider } after a
+//                                        reauth: `reauth` confirms one change in place of a password;
+//                                      or 409 'provider-sign-in-to-link'
 //   GET    /api/auth/methods            (signed in) { enabled, passwordless, linked: [{ provider, linkedAt, lastUsedAt }] }
 //   POST   /api/auth/:provider/link     (signed in) IdentityProof (lib/mfa.d.ts) and next: { location }
 //                                      for the browser to go to; the cookie is set
-//   DELETE /api/auth/:provider          (signed in) IdentityProof: unlinks it
+//   POST   /api/auth/:provider/reauth   (signed in, no password of its own) next: { location } for a
+//                                      fresh sign-in with this linked provider, to confirm a change
+//   DELETE /api/auth/:provider          (signed in) IdentityProof: unlinks it, and signs out the
+//                                      account's other sessions (this one is renewed)
 //
 // How an account is found (decision 8 of docs/integrations-plan.md, and the
 // research's linking rules):
@@ -33,6 +39,16 @@
 // An account with two-step sign-in still takes its second step after a provider
 // (docs/adr/0014-two-step-sign-in.md): finish answers as the password step does.
 // Linking and unlinking send a notice to a confirmed address.
+//
+// An account made with a provider has no password of its own. It confirms a
+// change (its email, deleting it, two-step sign-in, linking or unlinking) with
+// a fresh sign-in with one of its providers instead (integrations-plan item
+// 13): the reauth route starts one bound to the account and its session; the
+// callback accepts only a provider account linked to it; finish, for the same
+// account still signed in as it was, gives a grant (server/lib/change_grant.ts,
+// purpose 'provider-reauth') good for one change within GRANT_MINUTES of the
+// provider's answer, which factors.confirmIdentity takes in place of the
+// password. A second step still follows when two-step sign-in is on.
 import express, { type Request, type Response } from 'express';
 import type { Types } from 'mongoose';
 import languages from '../../lib/regions/languages.js';
@@ -40,7 +56,8 @@ import { mergeTrial } from '../lib/account_data.ts';
 import * as accountMail from '../lib/account_mail.ts';
 import * as email from '../lib/email.ts';
 import { notGuest } from '../lib/guest_limits.ts';
-import jwtAuth, { currentUser, userOf } from '../lib/jwt_auth.ts';
+import * as changeGrant from '../lib/change_grant.ts';
+import jwtAuth, { currentUser, keepsSignIn, userOf } from '../lib/jwt_auth.ts';
 import * as log from '../lib/log.ts';
 import { MESSAGES, say, type MessageCode } from '../lib/messages.ts';
 import { isDuplicateKey } from '../lib/mongo_errors.ts';
@@ -84,7 +101,7 @@ const uidOf = (provider: string, subject: string): string => provider + ':' + su
 const begin = async (
   res: Response,
   provider: oauth.ProviderId,
-  fields: Pick<OAuthLoginFields, 'next' | 'keep' | 'trialId' | 'linkUserId' | 'linkTokenVersion'>
+  fields: Pick<OAuthLoginFields, 'next' | 'keep' | 'trialId' | 'linkUserId' | 'linkTokenVersion' | 'reauth'>
 ): Promise<string> => {
   const key = oauth.randomValue();
   const started = { state: oauth.randomValue(), nonce: oauth.randomValue(), verifier: oauth.randomValue() };
@@ -159,6 +176,12 @@ const resolve = async (
   }
   const { subject } = identity;
   const owner = await User.findOne({ 'identities.uid': uidOf(provider, subject) }, { _id: 1, guest: 1 });
+  if (login.linkUserId && login.reauth) {
+    // Only a provider account linked to the account that asked confirms anything for it.
+    return owner?._id.equals(login.linkUserId)
+      ? { outcome: 'reauth', subject, confirmedAt: new Date() }
+      : error('provider-reauth-other');
+  }
   if (login.linkUserId) {
     if (owner && !owner._id.equals(login.linkUserId)) return error('provider-linked-elsewhere');
     return { outcome: 'link', subject };
@@ -346,26 +369,75 @@ oauthRouter.post('/finish', limits.oauth, async (req, res) => {
       const linked = await link(me, provider, login.subject!);
       return res.status(linked.status).json(say(linked.code, params, { provider }));
     }
+    case 'reauth': {
+      // The account that asked, still signed in as it was, still with that
+      // provider and still without a password, within the grant's minutes.
+      const me = await currentUser(req);
+      const confirmedAt = login.confirmedAt ? new Date(login.confirmedAt) : null;
+      if (
+        !me ||
+        me.guest ||
+        !login.linkUserId ||
+        !me._id.equals(login.linkUserId) ||
+        (me.tokenVersion || 0) !== login.linkTokenVersion ||
+        !confirmedAt ||
+        Date.now() - confirmedAt.getTime() > changeGrant.GRANT_MINUTES * 60 * 1000
+      ) {
+        return res.status(400).json(say('provider-expired'));
+      }
+      const uid = uidOf(provider, login.subject ?? '');
+      const user = await User.findOneAndUpdate(
+        { _id: me._id, 'identities.uid': uid, passwordless: true },
+        { $set: { 'identities.$.lastUsedAt': new Date() } },
+        { returnDocument: 'after' }
+      );
+      if (!user) return res.status(400).json(say('provider-expired'));
+      const { grant, expiresAt } = await changeGrant.issue(user, 'provider-reauth', confirmedAt);
+      return res
+        .status(200)
+        .json(say('provider-reauthed', params, { provider, reauth: grant, expiresAt: expiresAt.toISOString() }));
+    }
     default:
       return res.status(400).json(say(knownCode(login.error), params));
   }
 });
 
-/** Why a passwordless account cannot change its providers: it is the only way in, or it needs a password first. */
-const passwordlessRefusal = (user: UserDocument, provider?: string): MessageCode => {
-  const others = (user.identities ?? []).filter((identity) => identity.provider !== provider);
-  return provider && !others.length ? 'provider-last-method' : 'provider-set-password-first';
-};
+/** Whether unlinking `provider` would leave an account with no password no way in. */
+const lastWayIn = (user: UserDocument, provider: string): boolean =>
+  user.passwordless === true && !(user.identities ?? []).some((identity) => identity.provider !== provider);
+
+// A fresh sign-in with a provider linked to this account, which has no
+// password of its own, to confirm a change in place of one (ADR 15). The page
+// goes to `location`; the provider sends the browser back to the account page,
+// which finishes it and holds the grant for the change.
+oauthRouter.post('/:provider/reauth', jwtAuth, notGuest, limits.oauth, express.json(), async (req, res) => {
+  const provider = providerOn(req, res);
+  if (!provider) return undefined;
+  const me = userOf(req);
+  if (!me.passwordless) return res.status(400).json(say('provider-reauth-password'));
+  if (!me.identities?.some((identity) => identity.provider === provider)) {
+    return res.status(404).json(say('provider-not-linked', providerParams(provider)));
+  }
+  const body = (req.body ?? {}) as { next?: unknown };
+  const location = await begin(res, provider, {
+    next: inLanguageOf(nextPage(body.next), '/account'),
+    keep: false,
+    linkUserId: me._id,
+    linkTokenVersion: me.tokenVersion || 0,
+    reauth: true
+  });
+  return res.status(200).json({ location });
+});
 
 // Linking from the account page confirms it is the owner first, as every change
 // to how the account signs in does (decision 6 of docs/mfa-plan.md): the
-// password, and with two-step sign-in on, a second step.
+// password (a fresh provider sign-in for an account without one), and with
+// two-step sign-in on, a second step.
 oauthRouter.post('/:provider/link', jwtAuth, notGuest, limits.passwordCheck, express.json(), async (req, res) => {
   const provider = providerOn(req, res);
   if (!provider) return undefined;
   const me = userOf(req);
   if (me.emailUnverified) return res.status(400).json(say('provider-verify-first', providerParams(provider)));
-  if (me.passwordless) return res.status(400).json(say(passwordlessRefusal(me)));
   if (me.identities?.some((identity) => identity.provider === provider)) {
     return res.status(409).json(say('provider-already-linked', providerParams(provider)));
   }
@@ -392,17 +464,21 @@ oauthRouter.delete('/:provider', jwtAuth, notGuest, limits.passwordCheck, expres
   if (!me.identities?.some((identity) => identity.provider === provider)) {
     return res.status(404).json(say('provider-not-linked', params));
   }
-  // Never the last way in: an account made with a provider sets a password first.
-  if (me.passwordless) return res.status(400).json(say(passwordlessRefusal(me, provider)));
+  // Never the last way in: an account made with a provider sets a password or links another first.
+  if (lastWayIn(me, provider)) return res.status(400).json(say('provider-last-method'));
   const check = await secondStep.confirmChange(req, req.body ?? {});
   if (!check.ok) {
     return res.status(check.status).json(say(check.code, check.params, check.field ? { field: check.field } : {}));
   }
-  const result = await User.updateOne(
+  // The account's other sessions end with it (whoever unlinked may be undoing
+  // someone else's link); this browser's is renewed. Linking ends none.
+  const user = await User.findOneAndUpdate(
     { _id: me._id, 'identities.provider': provider },
-    { $pull: { identities: { provider } } }
+    { $pull: { identities: { provider } }, $inc: { tokenVersion: 1 } },
+    { returnDocument: 'after' }
   );
-  if (!result.modifiedCount) return res.status(404).json(say('provider-not-linked', params));
+  if (!user) return res.status(404).json(say('provider-not-linked', params));
+  session.start(res, user, 7, keepsSignIn(req));
   accountMail.noticeProvider(check.user, 'unlinked', provider);
   return res.status(200).json(say('provider-unlinked', params));
 });

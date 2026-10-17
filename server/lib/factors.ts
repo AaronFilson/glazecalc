@@ -5,6 +5,7 @@ import type { Request } from 'express';
 import type { AuthenticationResponseJSON } from '@simplewebauthn/server';
 import type { FactorKind } from '../../lib/mfa.js';
 import * as accountMail from './account_mail.ts';
+import * as changeGrant from './change_grant.ts';
 import * as codeLock from './code_lock.ts';
 import { userOf } from './jwt_auth.ts';
 import * as log from './log.ts';
@@ -132,29 +133,64 @@ const takeConfirmChallenge = async (user: UserDocument, response: unknown): Prom
 };
 
 /**
+ * The owner's first proof, without spending it: the password, or for an
+ * account with no password of its own (made with a provider, `passwordless`)
+ * a fresh sign-in with one of its providers, the grant in body.reauth
+ * (POST /api/auth/:provider/reauth, then /api/auth/finish; change_grant.ts,
+ * purpose 'provider-reauth'). Routes that check other things before a factor
+ * (server/routes/email_routes.ts) ask this first; confirmIdentity checks it
+ * again and spends the grant.
+ */
+export const firstProofHeld = async (user: UserDocument, body: unknown): Promise<boolean> => {
+  const fields = body && typeof body === 'object' ? (body as { password?: unknown; reauth?: unknown }) : {};
+  if (user.passwordless) return (await changeGrant.find(user._id, fields.reauth, 'provider-reauth')) !== null;
+  return password.matches(fields.password, user.password);
+};
+
+/**
  * Confirms it is the account's owner (body: lib/mfa.d.ts IdentityProof) before any change to how the account
  * signs in (decision 6), behind jwtAuth, notGuest, limits.passwordCheck.
  * Loads the user afresh with password and mfa (jwtAuth's has neither). Needs
- * body.password ('current-password-needed', 'current-password-wrong'), and,
- * once MFA is on, one current factor as well, checked by checkFactor
- * ('factor-needed' without one). A passkey answers the challenge from POST
+ * body.password ('current-password-needed', 'current-password-wrong'), or,
+ * for an account with no password of its own, body.reauth: a fresh sign-in
+ * with a linked provider, for this account only, within GRANT_MINUTES, spent
+ * here once the rest has passed ('provider-reauth-needed'; ADR 15). Once MFA
+ * is on, one current factor as well, checked by checkFactor ('factor-needed'
+ * without one). A passkey answers the challenge from POST
  * /api/mfa/confirm/options, an AuthChallenge of kind 'passkey-confirm', taken
- * once. When OAuth arrives (integrations-plan item 11), a fresh reauthUntil
- * that passed a second step will also do.
+ * once. `options.reauth: false` (changing the password) never takes a provider
+ * sign-in: the password is asked for whatever the account.
  */
-export const confirmIdentity = async (req: Request, body: unknown): Promise<IdentityCheck> => {
+export const confirmIdentity = async (
+  req: Request,
+  body: unknown,
+  options: { reauth?: boolean } = {}
+): Promise<IdentityCheck> => {
   const user = await User.findById(userOf(req)._id);
   if (!user) return { ok: false, status: 401, code: 'not-signed-in' };
-  const typed = body && typeof body === 'object' ? (body as { password?: unknown }).password : undefined;
-  // 400 rather than 401: the user is signed in, and a 401 would sign them out.
-  if (typeof typed !== 'string' || !typed) {
-    return { ok: false, status: 400, code: 'current-password-needed', field: 'password' };
+  let grant: changeGrant.Grant | null = null;
+  if (user.passwordless && options.reauth !== false) {
+    const reauth = body && typeof body === 'object' ? (body as { reauth?: unknown }).reauth : undefined;
+    grant = await changeGrant.find(user._id, reauth, 'provider-reauth');
+    if (!grant) return { ok: false, status: 400, code: 'provider-reauth-needed' };
+  } else {
+    const typed = body && typeof body === 'object' ? (body as { password?: unknown }).password : undefined;
+    // 400 rather than 401: the user is signed in, and a 401 would sign them out.
+    if (typeof typed !== 'string' || !typed) {
+      return { ok: false, status: 400, code: 'current-password-needed', field: 'password' };
+    }
+    // The password first, so a wrong one never uses up a recovery code or a challenge.
+    if (!(await password.matches(typed, user.password))) {
+      return { ok: false, status: 400, code: 'current-password-wrong', field: 'password' };
+    }
   }
-  // The password first, so a wrong one never uses up a recovery code or a challenge.
-  if (!(await password.matches(typed, user.password))) {
-    return { ok: false, status: 400, code: 'current-password-wrong', field: 'password' };
-  }
-  if (!mfaOn(user)) return { ok: true, user };
+  // A provider sign-in counts once: taken only when the rest has passed, so a
+  // wrong code leaves it for another try in its time.
+  const spend = async (check: IdentityCheck): Promise<IdentityCheck> =>
+    !check.ok || !grant || (await changeGrant.take(grant))
+      ? check
+      : { ok: false, status: 400, code: 'provider-reauth-needed' };
+  if (!mfaOn(user)) return spend({ ok: true, user });
 
   const fields = given(body);
   if (fields.length !== 1) return { ok: false, status: 400, code: 'factor-needed' };
@@ -179,5 +215,5 @@ export const confirmIdentity = async (req: Request, body: unknown): Promise<Iden
     return { ok: false, status: 400, code: check.code, ...(fields[0] !== 'passkey' ? { field: 'code' as const } : {}) };
   }
   if (codeTry) await codeLock.right(codeTry);
-  return { ok: true, user, used: check.kind };
+  return spend({ ok: true, user, used: check.kind });
 };

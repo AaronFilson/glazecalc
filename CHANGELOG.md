@@ -15,7 +15,12 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   account made in someone else's name can never take over their Google or GitHub. Two-step
   sign-in still asks for its second step after the provider. The account page lists Google and
   GitHub, and links or unlinks each after the password (and a second step when it is on), with a
-  notice email; the last way into an account is never removed. Nothing but the provider's id is
+  notice email; the last way into an account is never removed. Unlinking signs the account out on
+  its other devices (linking does not). An account made with a provider, which has no password,
+  confirms changing its email, deleting itself, two-step sign-in and linking or unlinking by
+  signing in again with one of its providers: that sign-in counts only for the same account, still
+  signed in as it was, for one change within 5 minutes, and a second step still follows when
+  two-step sign-in is on. Nothing but the provider's id is
   kept: no name, picture or provider token. A trial on the browser comes along into the account.
   The export lists the linked providers, and the privacy notice and the record of processing say
   what is kept. New English text only, for the next translation wave.

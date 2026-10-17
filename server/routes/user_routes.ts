@@ -135,7 +135,8 @@ const identityRefused = async (req: Request): Promise<{ status: 400 | 401 | 409 
   // A trial has no password; its token alone can discard it (selfOrAdmin: only itself).
   if (signedIn.guest) return null;
   const user = await User.findById(signedIn._id);
-  if (user && mfaOn(user)) {
+  // An account with no password of its own confirms with a fresh provider sign-in (ADR 15).
+  if (user && (mfaOn(user) || user.passwordless)) {
     const check = await confirmChange(req, req.body);
     if (check.ok) return null;
     return { status: check.status, body: say(check.code, check.params, check.field ? { field: check.field } : {}) };

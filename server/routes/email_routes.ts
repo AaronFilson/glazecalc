@@ -1,7 +1,8 @@
 // Confirming an address, and changing it.
 //
 //   POST /api/email/change   { email, password } (signed in) emails a link to the new address;
-//                            with two-step sign-in on, a current factor too (lib/mfa.d.ts IdentityProof)
+//                            with two-step sign-in on, a current factor too (lib/mfa.d.ts IdentityProof);
+//                            an account with no password sends { email, reauth } (ADR 15)
 //   POST /api/email/confirm  { token }           confirms an address from a link's token
 //   POST /api/email/resend   (signed in)         emails a new account the link again
 //
@@ -25,8 +26,8 @@ import jwtAuth, { userOf } from '../lib/jwt_auth.ts';
 import * as log from '../lib/log.ts';
 import * as mailer from '../lib/mailer.ts';
 import { isDuplicateKey } from '../lib/mongo_errors.ts';
-import * as password from '../lib/password.ts';
 import * as limits from '../lib/rate_limit.ts';
+import * as factors from '../lib/factors.ts';
 import { confirmChange } from '../lib/second_step.ts';
 import EmailToken, { cancelEmailLinks } from '../models/email_token.ts';
 import { cancelLinks } from '../models/password_reset.ts';
@@ -63,7 +64,9 @@ emailRouter.post(
     // anyway. (confirmChange checks the password again, with the codes the
     // other confirmations use.)
     const twoStep = mfaOn(user);
-    if (!(await password.matches(body.password, user.password))) {
+    // An account with no password of its own: a fresh provider sign-in instead (ADR 15).
+    if (!(await factors.firstProofHeld(user, body))) {
+      if (user.passwordless) return res.status(400).json(say('provider-reauth-needed'));
       const code = twoStep && body.password ? 'current-password-wrong' : 'current-password-needed';
       // 400 rather than 401: the user is signed in, and a 401 would sign them out.
       return res.status(400).json(say(code, undefined, { field: 'password' }));
@@ -72,7 +75,7 @@ emailRouter.post(
     // Checked again when the link is opened.
     if (await User.exists({ email: address }).collation(email.collation)) return res.status(400).json(inUse());
     if (await emailLinks.tooMany(user)) return res.status(429).json(say('too-many-email-links'));
-    if (twoStep) {
+    if (twoStep || user.passwordless) {
       const check = await confirmChange(req, body);
       if (!check.ok) return res.status(check.status).json(say(check.code, check.params, fieldOf(check.field)));
     }

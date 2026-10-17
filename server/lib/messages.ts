@@ -107,8 +107,11 @@ export const MESSAGES = {
   'provider-not-linked': `${PROVIDER} is not linked to this account.`,
   'provider-last-method':
     'This is the only way to sign in to this account. Please set a password or link another way first.',
-  'provider-set-password-first':
-    'This account has no password yet. Please set one with the link we can email you from this page, then try again.',
+  'provider-reauth-needed':
+    'This account has no password, so please confirm it is you by signing in again with Google or GitHub, then try again within 5 minutes.',
+  'provider-reauth-other': `That ${PROVIDER} account is not linked to this Glazecalc account, so it cannot confirm a change here.`,
+  'provider-reauth-password': 'This account has a password: please confirm with it instead.',
+  'provider-reauthed': `You signed in again with ${PROVIDER}. Within 5 minutes, you can confirm one change on this page without a password.`,
 
   // Trials.
   'trials-full': 'Too many people are trying Glazecalc right now. Please create a free account instead.',

@@ -27,9 +27,11 @@ interface Change {
  * linking or unlinking one, each confirmed with the password and, once
  * two-step sign-in is on, a second step. Linking goes to the provider, which
  * sends the browser back here with ?provider=<id>; the section then finishes
- * it. An account made with a provider has no password yet: it is offered the
- * reset email to set one, which every confirmation needs. Shown only when a
- * provider is on here.
+ * it. An account made with a provider has no password: it confirms with a
+ * fresh sign-in with one of its providers instead (IdentityConfirm), which
+ * also comes back here to be finished, and is offered the reset email to set
+ * a password. Unlinking signs out the account's other devices. Shown only
+ * when a provider is on here.
  */
 @Component({
   selector: 'gc-providers-section',
@@ -70,16 +72,19 @@ interface Change {
                   {{ t('account.providers.notLinked') }}
                 }
               </span>
-              @if (!methods.passwordless && !auth.unverified() && change()?.provider !== row.provider) {
+              @if (!auth.unverified() && change()?.provider !== row.provider) {
                 @if (row.linkedAt) {
-                  <button
-                    type="button"
-                    class="btn btn-outline-secondary btn-sm"
-                    [attr.data-unlink]="row.provider"
-                    (click)="open({ kind: 'unlink', provider: row.provider })"
-                  >
-                    {{ t('account.providers.unlink', { provider: names[row.provider] }) }}
-                  </button>
+                  <!-- Never the last way into an account with no password. -->
+                  @if (!methods.passwordless || methods.linked.length > 1) {
+                    <button
+                      type="button"
+                      class="btn btn-outline-secondary btn-sm"
+                      [attr.data-unlink]="row.provider"
+                      (click)="open({ kind: 'unlink', provider: row.provider })"
+                    >
+                      {{ t('account.providers.unlink', { provider: names[row.provider] }) }}
+                    </button>
+                  }
                 } @else if (row.enabled) {
                   <button
                     type="button"
@@ -192,7 +197,7 @@ export class ProvidersSection {
       void this.router.navigate([], { queryParams: {}, replaceUrl: true });
       try {
         const result = await this.auth.finishProvider();
-        if (result.kind === 'linked') this.notices.success(result.message);
+        if (result.kind === 'linked' || result.kind === 'reauthed') this.notices.success(result.message);
       } catch (err) {
         this.notices.error(errorMessage(err, translate('account.providers.linkFailed')));
       }

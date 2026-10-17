@@ -399,7 +399,7 @@
     "failed": "Signing in did not work. Please try again.",
     "heading": "Google and GitHub",
     "intro": "Link a Google or GitHub account to sign in with it. Glazecalc keeps only the account's id from it, never its name, picture or anything else, and two-step sign-in still asks for its second step.",
-    "passwordless": "This account has no password yet. Set one to change your email, turn on two-step sign-in, link or unlink an account here, or delete your account.",
+    "passwordless": "This account has no password. To change your email, two-step sign-in or the ways you sign in, or to delete your account, you confirm it is you by signing in again with Google or GitHub. You can also set a password.",
     "setPassword": "Email me a link to set a password",
     "setPasswordFailed": "Could not send the link. Please try again.",
     "confirmFirst": "Confirm your email first, with the link we sent you, to link Google or GitHub.",
@@ -407,6 +407,11 @@
     "notLinked": "Not linked",
     "link": "Link {provider}",
     "unlink": "Unlink {provider}",
-    "linkFailed": "Could not link it. Please try again."
+    "linkFailed": "Could not link it. Please try again.",
+    "reauthIntro": "This account has no password, so confirm it is you by signing in again. Then make the change within 5 minutes.",
+    "reauthButton": "Sign in again with {provider}",
+    "reauthHeld": "You signed in again with {provider}. You can make one change without a password in the next 5 minutes.",
+    "reauthFirst": "Please sign in again first, with one of the buttons above.",
+    "reauthFailed": "Could not start signing in again. Please try again."
   }
 }
