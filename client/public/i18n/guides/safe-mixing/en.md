@@ -86,7 +86,7 @@ The higher class filters a larger share of fine particles. Sources disagree on w
 
 A mask that leaks lets dust in around its edges, whatever its class. HSE warns that stubble and beards "make it impossible to get a good seal".
 
-- **Shave shortly before you work.** Guidance differs on how recent "clean-shaven" must be: within 8 hours (a UK maker, citing HSE) or preferably within 12 (the Australian and New Zealand fit-test standard). Shaving shortly before you work meets both.
+- **Shave shortly before you work.** Guidance differs on how recent "clean-shaven" must be. A UK maker, citing HSE, says shaved within 8 hours of starting work. The Australian and New Zealand fit-test standard asks for a shave before a fit test, "preferably within 12 hours". Shaving shortly before you work meets both.
 - **If you keep a beard,** a loose-fitting **powered respirator** (PAPR: a hood or helmet with a fan that supplies filtered air) needs no face seal.
 - **Get the size right.** Poor fit is a major cause of leaks. Workplaces use a **fit test**, a check that a particular mask seals on a particular face. At home, we suggest following the maker's instructions for checking the seal each time you put it on.
 

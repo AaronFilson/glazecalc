@@ -414,7 +414,7 @@ describe('China', () => {
     const paragraphs = paragraphsOf(element);
     expect(paragraphs[0]).toContain('A binding limit.');
     expect(paragraphs[0]).toContain('GBZ 2.1—2019');
-    expect(paragraphs[0]).toContain('Any dust with 10% free silica or more is held to these limits.');
+    expect(paragraphs[0]).toContain('not only the silica in it. Any dust with 10% free silica or more is held to them.');
     expect(element.textContent).not.toContain('Dust masks here are sold by class');
   });
 
@@ -491,7 +491,7 @@ describe('Thailand', () => {
     expect(calls).toEqual(['tel:1669', 'tel:1367']);
     const text = (element.textContent ?? '').replace(/\s+/g, ' ');
     expect(text).toContain('24 hours, every day');
-    expect(text).toContain('For the police, call 191; for a fire, 199.');
+    expect(text).toContain('For other emergencies, call 191; for a fire, 199.');
     expect(element.querySelector('a[href="https://page.line.me/749ilrut?openQrModal=true"]')?.textContent).toBe(
       'LINE (@rpc1367)'
     );
