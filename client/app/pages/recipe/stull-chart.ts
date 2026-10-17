@@ -38,7 +38,7 @@ const REGION_NAMES: Record<string, string> = {
 
 /** Where each region's name goes, in moles (Glazy's places), and how strongly it is shaded. */
 const REGIONS = [
-  { name: 'unfused', at: [1.0, 0.93], shade: 0.38 },
+  { name: 'unfused', at: [1.25, 0.93], shade: 0.38 },
   { name: 'matte', at: [2.75, 0.93], shade: 0.26 },
   { name: 'semi-matte', at: [3.95, 0.93], shade: 0.14 },
   { name: 'underfired', at: [4.6, 0.2], shade: 0.3 }

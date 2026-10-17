@@ -165,6 +165,7 @@ export function statusText(row: LimitRow): string {
     }
     .num {
       text-align: end;
+      white-space: nowrap;
     }
     .limits-past td:last-child {
       font-weight: 600;
@@ -172,6 +173,9 @@ export function statusText(row: LimitRow): string {
     h3 {
       font-size: 1.1rem;
       margin: 1rem 0 0.5rem;
+    }
+    h3:first-child {
+      margin-top: 0.25rem;
     }
   `
 })

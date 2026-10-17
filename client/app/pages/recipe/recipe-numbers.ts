@@ -102,20 +102,31 @@ import { silicaAluminaRatio, unityColumnOf } from './unity-formula';
     }
     .num {
       text-align: end;
+      white-space: nowrap;
     }
     .numbers-note {
       font-size: 0.9rem;
       color: var(--gc-muted);
     }
+    // Each fact under its name on a phone, beside it from 576px.
     .numbers-facts {
       display: grid;
-      grid-template-columns: auto minmax(0, 1fr);
-      gap: 0.2rem 1rem;
+      grid-template-columns: minmax(0, 1fr);
+      gap: 0 1rem;
       margin-bottom: 0.5rem;
     }
     .numbers-facts dd {
-      margin: 0;
+      margin: 0 0 0.35rem;
       font-variant-numeric: tabular-nums;
+    }
+    @media (min-width: 576px) {
+      .numbers-facts {
+        grid-template-columns: minmax(0, max-content) minmax(0, 1fr);
+        gap: 0.2rem 1rem;
+      }
+      .numbers-facts dd {
+        margin: 0;
+      }
     }
   `
 })
