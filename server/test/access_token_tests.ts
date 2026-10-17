@@ -270,6 +270,20 @@ describe('access tokens: routes', () => {
     expect(await AccessToken.countDocuments({ userId: user._id, revokedWhy: 'password-reset' })).to.equal(2);
   });
 
+  it('is revoked by a password reset even when saving the new password fails', async () => {
+    const write = await makeToken(user, { scopes: ['data:write'] });
+    const before = mail.to(user.email).length;
+    expect(await api().post('/password/forgot').send({ email: user.email })).to.have.status(200);
+    const sent = await mail.waitFor(user.email, before + 1);
+    const link = mail.tokenIn(sent[sent.length - 1]);
+    // An account the schema no longer accepts: its save is refused.
+    await User.collection.updateOne({ _id: user._id }, { $unset: { email: '' } });
+    const res = await api().post('/password/reset').send({ token: link, password: 'brand-new-password' });
+    expect(res.status).to.be.at.least(400);
+    expect(await api().get('/recipe/getAll').set('Authorization', bearer(write))).to.have.status(401);
+    expect(await AccessToken.countDocuments({ userId: user._id, revokedWhy: 'password-reset' })).to.equal(1);
+  });
+
   it('limits tokens that do not work per address, without counting ones that do', async () => {
     process.env.RATE_LIMITS = 'on';
     try {

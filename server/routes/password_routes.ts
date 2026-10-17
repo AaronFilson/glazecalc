@@ -93,10 +93,11 @@ passwordRouter.post('/reset', limits.resetPassword, express.json(), async (req, 
   );
   const user = reset && (await User.findById(reset.userId));
   if (!user) return res.status(400).json(say('reset-link-bad'));
+  // Tokens are revoked first: if saving the password then fails, none is left working.
+  await revokeAll(user._id, 'password-reset');
   // The link went to the account's address, so opening it also proves the address is theirs.
   user.emailUnverified = undefined;
   await setPassword(user, body.password as string);
-  await revokeAll(user._id, 'password-reset');
   return res.status(200).json(say('password-reset'));
 });
 
