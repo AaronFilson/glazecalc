@@ -815,7 +815,7 @@ describe('MCP: personal access tokens', () => {
         expect(one.checks.band).to.equal('mid');
         expect(one.checks.firingFrom).to.equal('firedAt');
         expect(one.checksAtOtherBands.high.band).to.equal('high');
-        const titles = (list: { recipes: Array<{ title: string }> }) => list.recipes.map((r) => r.title);
+        const titles = (list: Json) => list.recipes.map((r: { title: string }) => r.title);
         expect(titles(await data('list_recipes', { cone: '8' }, headers))).to.eql(['Satin white']);
         expect(titles(await data('list_recipes', { cone: '06' }, headers))).to.eql([]);
         expect(titles(await data('list_recipes', { cone: '8', scale: 'sk' }, headers))).to.eql([]);
