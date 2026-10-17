@@ -2,6 +2,8 @@
 //
 // The owner, signed in on the website (not a trial, not an access token):
 //
+//   GET    /api/share/recipes      every recipe the account shares: [{ recipeId, title,
+//                                  createdAt, includeNotes }]; never a secret or hash
 //   GET    /api/share/recipe/:id   { shared: false }, or { shared: true, createdAt, includeNotes }
 //   POST   /api/share/recipe/:id   { includeNotes }: makes the recipe's link, replacing any
 //                                  it had (the old one stops working); answers with
@@ -27,7 +29,7 @@ import jwtAuth, { userOf } from '../lib/jwt_auth.ts';
 import { say } from '../lib/messages.ts';
 import { isDuplicateKey } from '../lib/mongo_errors.ts';
 import * as limits from '../lib/rate_limit.ts';
-import { hashOf, linkOf, newSecret, openShared, stopSharing } from '../lib/share_links.ts';
+import { hashOf, linkOf, newSecret, openShared, sharedBy, stopSharing } from '../lib/share_links.ts';
 import Recipe from '../models/recipe.ts';
 import ShareLink from '../models/share_link.ts';
 
@@ -62,6 +64,10 @@ const includeNotesIn = (req: Request): boolean =>
   (req.body as { includeNotes?: unknown } | undefined)?.includeNotes === true;
 
 shareRouter.use(jwtAuth, notGuest);
+
+shareRouter.get('/recipes', async (req, res) => {
+  res.status(200).json(await sharedBy(userOf(req).id as string));
+});
 
 shareRouter.get('/recipe/:id', ownRecipe, async (req, res) => {
   const link = await linkOf(req.params.id as string, userOf(req).id);

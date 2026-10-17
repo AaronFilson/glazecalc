@@ -15,6 +15,7 @@ import { FieldCheck, FieldChecks, emailAddress, filled, newPassword, samePasswor
 import { Notices, NoticesList } from '../../shared/notices';
 import { PageHeader } from '../../shared/page-header';
 import { SettingsSection } from './settings-section';
+import { SharedRecipes } from './shared-section';
 import { SignInSection } from './sign-in-section';
 
 /** A change on this page that, with two-step sign-in on, asks for a second step too (decision 6). */
@@ -41,6 +42,7 @@ type Confirming = 'password' | 'email' | 'delete';
     PageHeader,
     RouterLink,
     SettingsSection,
+    SharedRecipes,
     SignInSection,
     TranslocoDirective
   ],
@@ -86,6 +88,7 @@ type Confirming = 'password' | 'email' | 'delete';
       }
       <gc-settings />
       <gc-export />
+      <gc-shared-recipes />
 
       <section class="auth-text">
         <h2 id="password-heading" tabindex="-1">{{ t('account.account.changeHeading') }}</h2>
@@ -296,6 +299,7 @@ export class AccountPage {
   protected readonly contents = [
     { id: 'settings-heading', label: marker('account.settings.heading') },
     { id: 'export-heading', label: marker('account.export.heading') },
+    { id: 'shared-heading', label: marker('account.shared.heading') },
     { id: 'password-heading', label: marker('account.account.changeHeading') },
     { id: 'mfa-heading', label: marker('account.mfa.heading') },
     { id: 'email-heading', label: marker('account.account.emailHeading') },

@@ -33,6 +33,28 @@ export const looksLikeSecret = (secret: unknown): secret is string => typeof sec
 export const linkOf = async (recipeId: string, ownedBy: string) =>
   ShareLink.findOne({ recipeId, ownedBy }, { _id: 0, createdAt: 1, includeNotes: 1 }).lean();
 
+/**
+ * Every recipe the account shares now: its id and title, when its link was
+ * made and whether it shows the notes, newest first. Never a hash or a secret.
+ * A link whose recipe is gone is left out.
+ */
+export async function sharedBy(ownedBy: string) {
+  const links = await ShareLink.find({ ownedBy }, { _id: 0, recipeId: 1, createdAt: 1, includeNotes: 1 })
+    .sort({ createdAt: -1 })
+    .lean();
+  if (!links.length) return [];
+  const recipes = await Recipe.find({ _id: { $in: links.map((link) => link.recipeId) }, ownedBy }, { title: 1 }).lean();
+  const titles = new Map(recipes.map((recipe) => [String(recipe._id), recipe.title ?? '']));
+  return links
+    .filter((link) => titles.has(String(link.recipeId)))
+    .map((link) => ({
+      recipeId: String(link.recipeId),
+      title: titles.get(String(link.recipeId)) as string,
+      createdAt: link.createdAt,
+      includeNotes: link.includeNotes === true
+    }));
+}
+
 /** Stops sharing a recipe: its link, if it has one, no longer opens it. */
 export const stopSharing = async (recipeId: string | Types.ObjectId, ownedBy: string): Promise<boolean> =>
   (await ShareLink.deleteOne({ recipeId, ownedBy })).deletedCount === 1;

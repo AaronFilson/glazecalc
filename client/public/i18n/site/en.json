@@ -164,7 +164,7 @@
         "lasts": "Until you clear your browser's storage."
       },
       "print": {
-        "purpose": "Your last choices for printing a recipe: the whole recipe or a batch, and the batch size.",
+        "purpose": "Your last choices for printing a recipe: the whole recipe, a batch or the worksheet, and the batch size.",
         "lasts": "Until you clear your browser's storage."
       },
       "token": {

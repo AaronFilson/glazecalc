@@ -82,3 +82,33 @@ test("Show the working prints the unity formula as a worksheet, with the recipe 
   const pdf = await page.pdf({ format: 'Letter' });
   expect(pdf.length).toBeGreaterThan(1000);
 });
+
+test('the account page lists the shared recipes, links to each, and stops sharing one', async ({ page }) => {
+  await signUpAndSignIn(page);
+  await page.goto('/recipe');
+  await page.locator('#recipe-name').fill('Class clear');
+  for (const [name, amount] of CLEAR) await addStandardMaterial(page, name, amount);
+  await page.getByRole('button', { name: 'Save', exact: true }).click();
+  await expect(page.locator('.saved-recipe-open', { hasText: 'Class clear' })).toBeVisible();
+  await page.getByRole('button', { name: 'More for Class clear' }).click();
+  await page.getByRole('button', { name: 'Share Class clear' }).click();
+  await page.getByRole('button', { name: 'Make a link' }).click();
+  const link = await page.getByLabel('The link').inputValue();
+
+  await page.goto('/account');
+  const section = page.locator('section', { has: page.getByRole('heading', { name: 'Shared recipes' }) });
+  await expect(section.getByRole('link', { name: 'Class clear' })).toBeVisible();
+  await expect(section).toContainText('Shared since');
+  await expect(section).toContainText('Notes not shown');
+  // The link itself is never shown again.
+  await expect(section).not.toContainText(link.slice(link.indexOf('#') + 1));
+  await section.getByRole('link', { name: 'Class clear' }).click();
+  await expect(page).toHaveURL(/\/recipe\?open=/);
+  await expect(page.locator('#recipe-name')).toHaveValue('Class clear');
+
+  await page.goto('/account');
+  await page.getByRole('button', { name: 'Stop sharing Class clear' }).click();
+  await expect(page.getByText('You are not sharing any recipe.')).toBeVisible();
+  const response = await page.request.get('/api/share/recipes');
+  expect(await response.json()).toEqual([]);
+});

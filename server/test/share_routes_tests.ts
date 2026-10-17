@@ -236,6 +236,41 @@ describe('share links', () => {
     expect(await view(secret)).to.have.status(404);
   });
 
+  it("list the account's shared recipes, from the session only, never a secret", async () => {
+    expect(await api().get('/share/recipes')).to.have.status(401);
+    const token = await makeToken(alice.user, { scopes: ['data:read', 'data:write'] });
+    expect(await as(token).get('/share/recipes')).to.have.status(403);
+    expect((await as(alice.token).get('/share/recipes')).body).to.eql([]);
+
+    const other = await Recipe.create({
+      title: 'Celadon',
+      ownedBy: String(alice.user._id),
+      materials: [{ name: 'Talc' }]
+    });
+    const { secret } = await share({ includeNotes: true });
+    await as(alice.token).post('/share/recipe/' + other._id);
+    const bobs = await Recipe.create({
+      title: 'Bob only',
+      ownedBy: String(bob.user._id),
+      materials: [{ name: 'Talc' }]
+    });
+    await as(bob.token).post('/share/recipe/' + bobs._id);
+
+    const res = await as(alice.token).get('/share/recipes');
+    expect(res).to.have.status(200);
+    expect(res.body.map((row: { title: string }) => row.title)).to.eql(['Celadon', 'Satin white']);
+    expect(res.body[0]).to.have.all.keys('recipeId', 'title', 'createdAt', 'includeNotes');
+    expect(res.body[0].includeNotes).to.eql(false);
+    expect(res.body[1].includeNotes).to.eql(true);
+    expect(res.body[1].recipeId).to.eql(recipeId);
+    const [row] = await ShareLink.find({ recipeId }).lean();
+    expect(JSON.stringify(res.body)).not.to.include(secret);
+    expect(JSON.stringify(res.body)).not.to.include(row.hash);
+
+    await as(alice.token).delete('/share/recipe/' + recipeId);
+    expect((await as(alice.token).get('/share/recipes')).body).to.have.length(1);
+  });
+
   describe('the shared page', function () {
     before(function () {
       // Needs a client build (CI builds before testing; locally: npm run build).

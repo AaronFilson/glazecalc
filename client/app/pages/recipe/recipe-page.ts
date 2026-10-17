@@ -606,6 +606,10 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
     this.loadStandardAdditives();
     void this.load(this.recipes.getAll(), this.myRecipes, marker('recipe.page.fetchRecipes')).then(() => {
       this.recipesLoaded.set(true);
+      // ?open=<id> (the account page's shared recipes): that saved recipe, ready to change.
+      const wanted = this.route.snapshot.queryParamMap.get('open');
+      const found = wanted ? this.myRecipes().find((recipe) => recipe._id === wanted) : undefined;
+      if (found) this.open(found);
       // Opened at the saved recipes (Home's Recipes card): they arrive after the page, so the app could not go there.
       if (this.route.snapshot.fragment === 'saved-recipes' && this.myRecipes().length) {
         afterNextRender(

@@ -1174,6 +1174,25 @@ describe('RecipePage', () => {
       expect(document.activeElement?.id).toBe('print-r0');
     });
 
+    it('opens the saved recipe the address names (the account page links to it), and ignores one that is not there', async () => {
+      const router = TestBed.inject(Router);
+      for (const [id, title] of [
+        ['r1', 'Saved matte'],
+        ['nope', '']
+      ]) {
+        await router.navigateByUrl('/?open=' + id);
+        const fixture = TestBed.createComponent(RecipePage);
+        await fixture.whenStable();
+        answer('/materials/getStandard', [WHITING, SILICA]);
+        answer('/materials/getAll', []);
+        answer('/additives/getAll', []);
+        answer('/additives/getStandard', []);
+        answer('/recipe/getAll', [SAVED]);
+        await settle(fixture);
+        expect((fixture.nativeElement.querySelector('#recipe-name') as HTMLInputElement).value).toBe(title);
+      }
+    });
+
     it('opens from the address once the saved recipes are in, and drops a print of what is not there', async () => {
       const router = TestBed.inject(Router);
       await router.navigateByUrl('/?print=r1');

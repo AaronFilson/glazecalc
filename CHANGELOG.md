@@ -14,6 +14,9 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   the owner's email or account, ids, material notes or prices, and the recipe's notes only when
   the owner ticks them. Shared pages are never indexed and are rate-limited. Trials cannot share.
   The privacy page, the data download and account deletion include share links.
+  The account page lists every recipe the account shares (a link to the recipe, since when, whether
+  its notes show) with Stop sharing for each; it never shows a link again. Links do not expire.
+  The privacy page's line on print choices now names the worksheet too.
 - **Show the working:** how the unity (Seger) formula comes from a recipe, step by step (grams,
   each material's oxides and their moles, the totals, the fluxes added up, each oxide divided by
   them), with the recipe's own numbers and the same answer as the recipe page. From the unity

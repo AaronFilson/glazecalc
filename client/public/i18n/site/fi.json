@@ -151,7 +151,6 @@
         "lasts": "Kunnes selaimen tallennustila tyhjennetään."
       },
       "print": {
-        "purpose": "Viimeisimmät valinnat reseptin tulostukseen: koko resepti vai erä, ja eräkoko.",
         "lasts": "Kunnes selaimen tallennustila tyhjennetään."
       },
       "token": {
