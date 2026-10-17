@@ -819,7 +819,7 @@ describe('Thailand', () => {
   it('fires by temperature and lists the US library', () => {
     expect(regions.regionFor('TH')).to.include({ temperature: 'C', cones: 'temperature', library: 'US' });
     expect(regions.regionFor('TH')!.languages).to.eql(['th']);
-    expect(regions.formatLocaleFor('th', 'TH', 'auto')).to.equal('th-TH');
+    expect(regions.formatLocaleFor('th', 'TH', 'auto')).to.equal('th-TH-u-ca-gregory');
   });
 
   it('gives 1669 and the Ramathibodi Poison Center, 1367, around the clock, with no claim on cost', () => {
