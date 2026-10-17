@@ -4,6 +4,14 @@
     "signedInAs": "目前以 {email} 登入。",
     "trying": "正在以「{name}」試用 Glazecalc。請從一個釉方開始。",
     "welcomeBack": "從上次中斷的地方繼續。",
+    "welcome": {
+      "heading": "歡迎使用 Glazecalc",
+      "text": "您的筆記本已經準備好了。建議的第一步：輸入一款您已經在調配的釉藥，包括原料與用量，看看釉藥的塞格式。",
+      "firstRecipe": "建立您的第一個釉方",
+      "confirmHeading": "確認您的電子郵件地址",
+      "confirm": "請確認您的電子郵件地址：我們已將連結寄到 {email}。兩步驟驗證需要用到這個地址。您可以在<account>帳戶頁面</account>重新寄送。",
+      "confirmText": "我們已將連結寄到 {email}。請開啟連結，確認這個地址屬於您：兩步驟驗證需要用到這個地址。您可以在<account>帳戶頁面</account>重新寄送。"
+    },
     "sections": {
       "recipe": {
         "title": "釉方",
@@ -32,6 +40,10 @@
       "guides": {
         "title": "指南",
         "text": "從認識釉藥到燒窯，以及過程中如何確保每個人的安全。"
+      },
+      "account": {
+        "title": "帳戶與設定",
+        "text": "設定、密碼、兩步驟驗證，以及下載您在這裡保存的所有內容。"
       }
     },
     "newHere": "第一次接觸塞格式嗎？<advice>建議頁面</advice>說明基本概念，<about>關於頁面</about>則說明 Glazecalc 的運作方式。"
@@ -39,23 +51,29 @@
   "firing": {
     "title": "燒窯紀錄",
     "lead": "記錄每次燒窯：時間、溫度、測溫錐與窯的備註。",
-    "titleLabel": "燒窯名稱：",
-    "kiln": "窯：",
-    "date": "燒窯日期：",
-    "notes": "燒窯備註：",
-    "fieldSelect": "選擇欄位並加入燒窯紀錄：",
+    "newHeading": "新的燒窯紀錄",
+    "titleLabel": "標題",
+    "kiln": "窯",
+    "date": "日期",
+    "notes": "備註",
+    "fieldSelect": "要記錄的欄位",
     "addField": "新增欄位",
-    "included": "您已加入的欄位：",
+    "included": "此紀錄的欄位",
     "moveLeft": "欄位左移",
     "moveRight": "欄位右移",
     "removeField": "移除欄位",
     "addRow": "在燒窯表格中新增一列",
+    "addRowWhy": "請先新增欄位。",
+    "tableEmpty": "請先在上方新增欄位，再新增列。",
     "recordHeading": "記錄這次燒窯",
     "rowActions": "列操作",
     "cell": "{field}，第 {row} 列",
     "removeRow": "移除此列",
     "save": "儲存",
-    "storedHeading": "我儲存的燒窯紀錄：",
+    "storedHeading": "我儲存的燒窯紀錄",
+    "noneSaved": "目前還沒有。儲存的燒窯紀錄會顯示在這裡。",
+    "storedIn": "{date}在「{kiln}」燒成。",
+    "storedOn": "{date}燒成。",
     "storedNotes": "備註：{notes}",
     "titleMissing": "請為這次燒窯取個名稱。",
     "fieldsMissing": "請至少新增一個要記錄的欄位，例如「{example}」。",
@@ -67,10 +85,12 @@
   "notes": {
     "title": "筆記",
     "lead": "關於您的釉藥，其他值得記住的事。",
-    "titleLabel": "標題：",
-    "content": "您的筆記：",
+    "newHeading": "新筆記",
+    "titleLabel": "標題",
+    "content": "筆記",
     "save": "儲存",
-    "mineHeading": "我儲存的筆記：",
+    "mineHeading": "我儲存的筆記",
+    "noneSaved": "目前還沒有。儲存的筆記會顯示在這裡。",
     "titleMissing": "請為筆記加上標題。",
     "contentMissing": "請輸入筆記內容。",
     "untitled": "未命名的筆記",

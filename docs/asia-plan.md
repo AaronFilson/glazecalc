@@ -2,6 +2,8 @@
 
 Status: drafted 2026-10-13 from the Asia research report and its three notes, for the owner's review. It follows docs/i18n-plan.md ("After the EU") and reuses its machinery. Nothing here changes the EU approach.
 
+Progress, 2026-10-16 (branch w1-asia-langs): **Traditional Chinese, Korean and Simplified Chinese are live**, the 27th to 29th languages, translated, reviewed, made consistent, back-translated (the comparison's fixes: Korean as firm as the English in its safety text, 과다 소성 for overfiring, zh-Hant's liner glaze without an added "stable", the account notice's disclaimer as the English has it) and gone live with `go-live.mjs`, one language per commit. Only the password emails are translated for them; the other account emails fall back to English.
+
 Progress, 2026-10-16: decisions 2–9 settled (2 as Turkish; 3–9 as recommended); Vietnam and Indonesia decided (Phase E item 3); Chinese and Korean style sheets on branch asia-wave1; Korea, Taiwan, Singapore and Malaysia region data on branch asia-regions1; China, Hong Kong, Indonesia, Thailand and the Philippines on branch w1-asia-regions.
 
 Progress, 2026-10-14 (branch asia-japan): **Phase A is merged** (the three groundwork branches: locales, checks, fonts). **Phase B items 1–4 and the data half of item 6 are done**: the third cone system, the guides' three-way version choice, the SK chart as data (lib/cones) and the English SK section of the firing guide. Item 6 is done too: the SK chart was checked row by row against Yuko Trading's PDF, and all 42 rows match. Item 5 (translating the new section) remains.

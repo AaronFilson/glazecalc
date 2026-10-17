@@ -75,6 +75,7 @@
   "density-choices": "請選擇比重、波美度或品脫重，或依照您的地區設定。",
   "englishTerms-choices": "請選擇開啟或關閉。",
   "notice-choices": "請選擇顯示或隱藏。",
+  "recipeHelp-choices": "請從 auto、shown 或 hidden 中選擇一種。",
   "shelf-invalid": "現有原料是最多 {most} 種原料的清單。",
   "missing-information": "缺少必要資訊",
   "invalid-id": "無效的 ID",

@@ -45,6 +45,13 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   [plan](docs/seo-plan.md)).
 - **In Turkish.** Türkiye is a region (112, UZEM, silica limit, food-contact limits, shops), and
   Glazecalc is fully translated into Turkish, the password emails included.
+- **In Traditional Chinese, Korean and Simplified Chinese** (繁體中文, 한국어, 简体中文), at their own
+  addresses (`/zh-Hant/recipe`, `/ko/recipe`, `/zh-Hans/recipe`), made the same way: a style sheet and
+  glossary for each (Traditional Chinese as Taiwan writes it, never converted from Simplified),
+  reviewed, made consistent and the safety text checked by translating it back. That found Korean
+  advice softer than the English ("it is best" where the English says should or never) and a word
+  for overfiring that can read as underfiring, both fixed. That makes 29 languages. The password
+  emails are in all three; the other account emails are in English for now.
 - **Where your account is kept, and your choice.** The sign-up page tells everyone outside the US
   (and anyone whose region is not known) that Glazecalc is a free, open-source project, that
   accounts are kept on servers in the United States, that the guides and a trial need no account,
@@ -140,8 +147,8 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   - **Lead and cadmium:** the Tebliğ's limits, the EU directive's figures, with its rule for three
     samples.
   - **Three shops** selling raw glaze materials, by their own names.
-- **South Korea, Taiwan, Singapore and Malaysia as regions** (in English; Singapore and Malaysia
-  stay in English). Each fires by temperature until you choose otherwise and lists the US
+- **South Korea, Taiwan, Singapore and Malaysia as regions** (in Korean, Traditional Chinese or
+  English; Singapore and Malaysia stay in English). Each fires by temperature until you choose otherwise and lists the US
   materials. The guides give, each from an official page with its source and date, and leave out
   what could not be checked:
   - **Who to call:** Korea 119, which also gives medical advice (no national public poison line was
