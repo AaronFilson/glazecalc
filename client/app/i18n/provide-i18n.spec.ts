@@ -1,5 +1,5 @@
 import { APP_BASE_HREF, DOCUMENT } from '@angular/common';
-import { ApplicationInitStatus } from '@angular/core';
+import { ApplicationInitStatus, PLATFORM_ID } from '@angular/core';
 import { TestBed } from '@angular/core/testing';
 import { Meta } from '@angular/platform-browser';
 import { TRANSLOCO_LOADER, TranslocoService } from '@jsverse/transloco';
@@ -26,7 +26,7 @@ describe('provideI18n', () => {
       }
     });
 
-  async function start(pathname: string, language?: string) {
+  async function start(pathname: string, language?: string, platform = 'server') {
     const doc = document.implementation.createHTMLDocument('');
     for (const [attr, name] of [
       ['name', 'description'],
@@ -40,6 +40,7 @@ describe('provideI18n', () => {
     }
     TestBed.configureTestingModule({
       providers: [
+        { provide: PLATFORM_ID, useValue: platform },
         { provide: DOCUMENT, useValue: withAddress(doc, pathname) },
         ...provideI18n(language),
         { provide: TRANSLOCO_LOADER, useValue: { getTranslation: (path: string) => of(FILES[path] ?? {}) } }
@@ -69,11 +70,19 @@ describe('provideI18n', () => {
     expect(TestBed.inject(PAGE_LANGUAGE)).toBe('de');
   });
 
-  it('writes the description and the preview text through the document', async () => {
+  it('writes the description and the preview text through the document when rendering', async () => {
     const doc = await start('/de/guides');
     const meta = TestBed.inject(Meta);
     expect(meta.getTag('name="description"')?.content).toBe('Eine Beschreibung');
     expect(doc.querySelector('meta[property="og:description"]')?.getAttribute('content')).toBe('Eine Beschreibung');
+    expect(doc.querySelector('meta[property="og:image:alt"]')?.getAttribute('content')).toBe('Ein Bild');
+  });
+
+  it("starting in the browser leaves the page's own description and its og:description as they are", async () => {
+    // start() gives each tag the content "English", standing in for the page's own.
+    const doc = await start('/de/guides/firing', undefined, 'browser');
+    expect(doc.querySelector('meta[name="description"]')?.getAttribute('content')).toBe('English');
+    expect(doc.querySelector('meta[property="og:description"]')?.getAttribute('content')).toBe('English');
     expect(doc.querySelector('meta[property="og:image:alt"]')?.getAttribute('content')).toBe('Ein Bild');
   });
 });

@@ -59,7 +59,9 @@
     "stackDeploy": "Deployed by GitHub Actions: images are built and tested on every change, and deploys sign in to AWS without stored keys.",
     "whoHeading": "Who made it",
     "who": "Glazecalc is made by Aaron Filson. Found a problem or have an idea? <issues>Open an issue on GitHub</issues>.",
-    "studio": "Aaron Filson's handmade pottery is at <studio>Updraft Pottery Studio</studio> in Tacoma, Washington. Have a look at the work, and order a piece if one speaks to you."
+    "studio": "Aaron Filson's handmade pottery is at <studio>Updraft Pottery Studio</studio> in Tacoma, Washington. Have a look at the work, and order a piece if one speaks to you.",
+    "languagesHeading": "Languages",
+    "languages": "Glazecalc is available in these languages. Each link opens this page in that language."
   },
   "privacy": {
     "title": "Privacy",
