@@ -73,3 +73,9 @@ export interface ReadFiring {
 }
 export function readFiring(line: string): ReadFiring | null;
 export function firingFromLines(lines: string[] | undefined, fallbackScale?: ConeScale): FiringBlock | null;
+
+/** The cones of a scale a firing log names in its cone columns, in order, each once. */
+export function conesFromLog(
+  log: { fieldsIncluded?: string[]; rows?: unknown[][] } | null | undefined,
+  scale: ConeScale
+): string[];

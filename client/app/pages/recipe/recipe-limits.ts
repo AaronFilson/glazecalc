@@ -3,7 +3,16 @@ import { TranslocoDirective, translate } from '@jsverse/transloco';
 import { marker } from '@jsverse/transloco-keys-manager/marker';
 import { formatFormula } from '../../../../lib/chemistry';
 import { stullPoint } from '../../../../lib/recipe/analysis';
-import { FIRING_BANDS, FiringBand, LIMIT_SETS, LimitRow, limitRows, unityFor } from '../../../../lib/recipe/limits';
+import { FiringBlock, firingBands } from '../../../../lib/cones/firing';
+import {
+  FIRING_BANDS,
+  FiringBand,
+  LIMIT_SETS,
+  LimitRow,
+  LimitSet,
+  limitRows,
+  unityFor
+} from '../../../../lib/recipe/limits';
 import { LimitSetChoice, PreferencesService } from '../../core/preferences.service';
 import { fixed, listOf } from '../../shared/format';
 import { StullChart } from './stull-chart';
@@ -49,6 +58,44 @@ export function rangeText(row: Pick<LimitRow, 'min' | 'max'>): string {
   return translate('recipe.limits.upTo', { max: fixed(max ?? 0, 2) });
 }
 
+/** What the panel shows for one band: its rows (null where the set does not apply), and what to say about them. */
+interface BandView {
+  band: FiringBand;
+  rows: LimitRow[] | null;
+  cone: string;
+  outside: number;
+  notInSet: { key: string; oxides: string } | null;
+}
+
+/**
+ * What a set leaves unchecked, said briefly. A set that ranges over silica and the fluxes (Hesselberth
+ * & Roy's) names the glaze's oxides it has no range for, when there is a meaningful amount of them; a
+ * narrow set (Glazecalc's own) says in one sentence what it checks, since it leaves most oxides out.
+ */
+function notInSetOf(rows: LimitRow[], unity: Record<string, number>): { key: string; oxides: string } | null {
+  const covered = new Set(rows.flatMap((row) => row.oxide.split('+')));
+  if (!covered.has('SiO2')) {
+    return rows.length
+      ? { key: marker('recipe.limits.checksOnly'), oxides: listOf(rows.map((row) => limitLabel(row.oxide))) }
+      : null;
+  }
+  const missing = Object.entries(unity)
+    .filter(([oxide, moles]) => moles >= MEANINGFUL && !covered.has(oxide))
+    .map(([oxide]) => formatFormula(oxide));
+  return missing.length ? { key: marker('recipe.limits.notInSet'), oxides: listOf(missing) } : null;
+}
+
+function bandView(unity: Record<string, number>, set: LimitSet, band: FiringBand): BandView {
+  const rows = limitRows(unity, set, band);
+  return {
+    band,
+    rows,
+    cone: set.cones?.[band] ?? '',
+    outside: (rows ?? []).filter((row) => row.past).length,
+    notInSet: rows ? notInSetOf(rows, unity) : null
+  };
+}
+
 /** A row's status, in words. */
 export function statusText(row: LimitRow): string {
   if (!row.past) return translate(STATUS['within']);
@@ -74,7 +121,13 @@ export function statusText(row: LimitRow): string {
         <div>
           <label for="limit-firing" class="form-label">{{ t('recipe.limits.firing') }}</label>
           <select id="limit-firing" class="form-select form-select-sm" (change)="firing.set($any($event.target).value)">
-            <option value="" [selected]="!firing()">{{ t('recipe.limits.firingUnknown') }}</option>
+            <option value="" [selected]="!firing()">
+              @if (fromBlock().length) {
+                {{ t('recipe.limits.firingFromBlock', { bands: blockBandNames() }) }}
+              } @else {
+                {{ t('recipe.limits.firingUnknown') }}
+              }
+            </option>
             @for (band of bands; track band) {
               <option [value]="band" [selected]="band === firing()">{{ t(bandNames[band]) }}</option>
             }
@@ -85,47 +138,62 @@ export function statusText(row: LimitRow): string {
         <p class="limits-problem" role="alert">{{ t('recipe.limits.saveFailed') }}</p>
       }
       <p class="limits-note">{{ t(setNotes[set().id]) }}</p>
-      @if (rows(); as rows) {
-        @if (!firing()) {
-          <p class="limits-note">{{ t('recipe.limits.shownFor', { band: t(bandNames[band()]) }) }}</p>
+      @if (!firing()) {
+        @if (views().length > 1) {
+          <p class="limits-note limits-both">{{ t('recipe.limits.bothBands', { bands: blockBandNames() }) }}</p>
+        } @else if (fromBlock().length) {
+          <p class="limits-note">{{ t('recipe.limits.fromFiring', { band: blockBandNames() }) }}</p>
+        } @else {
+          <p class="limits-note">{{ t('recipe.limits.shownFor', { band: t(bandNames[views()[0].band]) }) }}</p>
         }
-        @if (cone(); as cone) {
-          <p class="limits-note">{{ t('recipe.limits.cone', { cone }) }}</p>
-        }
-        <div class="table-responsive">
-          <table class="table table-sm limits-table">
-            <caption>
-              {{
-                t('recipe.limits.caption', { name: t(setNames[set().id]) })
-              }}
-            </caption>
-            <thead>
-              <tr>
-                <th scope="col">{{ t('recipe.limits.oxide') }}</th>
-                <th scope="col" class="num">{{ t('recipe.limits.glaze') }}</th>
-                <th scope="col" class="num">{{ t('recipe.limits.range') }}</th>
-                <th scope="col">{{ t('recipe.limits.status') }}</th>
-              </tr>
-            </thead>
-            <tbody>
-              @for (row of rows; track row.oxide) {
-                <tr [class.limits-past]="row.past">
-                  <th scope="row" class="formula" translate="no">{{ label(row.oxide) }}</th>
-                  <td class="num">{{ value(row.value) }}</td>
-                  <td class="num">{{ range(row) }}</td>
-                  <td>{{ status(row) }}</td>
-                </tr>
-              }
-            </tbody>
-          </table>
-        </div>
-        <p>{{ t('recipe.limits.outside', { count: outside() }) }}</p>
-        @if (notInSet(); as note) {
-          <p class="limits-note">{{ t(note.key, { oxides: note.oxides }) }}</p>
-        }
-      } @else {
-        <p>{{ t('recipe.limits.notApply', { name: t(setNames[set().id]), band: t(bandNames[band()]) }) }}</p>
       }
+      <div class="limits-bands" [class.limits-side]="views().length > 1">
+        @for (view of views(); track view.band) {
+          <div class="limits-band" [attr.data-band]="view.band">
+            @if (views().length > 1) {
+              <h4 class="limits-band-heading">{{ t(bandNames[view.band]) }}</h4>
+            }
+            @if (view.rows; as rows) {
+              @if (view.cone) {
+                <p class="limits-note">{{ t('recipe.limits.cone', { cone: view.cone }) }}</p>
+              }
+              <div class="table-responsive">
+                <table class="table table-sm limits-table">
+                  <caption>
+                    {{
+                      t('recipe.limits.caption', { name: t(setNames[set().id]) })
+                    }}
+                  </caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">{{ t('recipe.limits.oxide') }}</th>
+                      <th scope="col" class="num">{{ t('recipe.limits.glaze') }}</th>
+                      <th scope="col" class="num">{{ t('recipe.limits.range') }}</th>
+                      <th scope="col">{{ t('recipe.limits.status') }}</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    @for (row of rows; track row.oxide) {
+                      <tr [class.limits-past]="row.past">
+                        <th scope="row" class="formula" translate="no">{{ label(row.oxide) }}</th>
+                        <td class="num">{{ value(row.value) }}</td>
+                        <td class="num">{{ range(row) }}</td>
+                        <td>{{ status(row) }}</td>
+                      </tr>
+                    }
+                  </tbody>
+                </table>
+              </div>
+              <p>{{ t('recipe.limits.outside', { count: view.outside }) }}</p>
+              @if (view.notInSet; as note) {
+                <p class="limits-note">{{ t(note.key, { oxides: note.oxides }) }}</p>
+              }
+            } @else {
+              <p>{{ t('recipe.limits.notApply', { name: t(setNames[set().id]), band: t(bandNames[view.band]) }) }}</p>
+            }
+          </div>
+        }
+      </div>
       <p class="limits-note">{{ t('recipe.limits.guidance') }}</p>
       <p class="limits-note">
         {{ t('recipe.limits.source') }}
@@ -153,6 +221,20 @@ export function statusText(row: LimitRow): string {
     .limits-note {
       font-size: 0.9rem;
       color: var(--gc-muted);
+    }
+    .limits-bands.limits-side {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      gap: 0 1.5rem;
+    }
+    @media (min-width: 768px) {
+      .limits-bands.limits-side {
+        grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+      }
+    }
+    .limits-band-heading {
+      font-size: 1rem;
+      margin: 0.5rem 0 0.25rem;
     }
     .limits-problem {
       color: var(--gc-danger-text);
@@ -185,8 +267,10 @@ export function statusText(row: LimitRow): string {
 export class RecipeLimits {
   /** The recipe's unity formula. */
   readonly unity = input.required<Record<string, number>>();
-  /** The firing the recipe is for, saved with it; '' until chosen. */
+  /** The band chosen by hand, saved with the recipe; '' until chosen. It overrides the firing block's bands. */
   readonly firing = model<FiringBand | ''>('');
+  /** The recipe's firing block (lib/cones/firing.js), whose range gives the bands when none is chosen by hand. */
+  readonly firedAt = input<FiringBlock | null>(null);
 
   private readonly preferences = inject(PreferencesService);
   protected readonly setIds = Object.keys(LIMIT_SETS) as LimitSetChoice[];
@@ -198,31 +282,28 @@ export class RecipeLimits {
 
   /** The account's choice, which the note under the suggestions reads too (own-limits-note.ts). */
   protected readonly set = computed(() => LIMIT_SETS[this.preferences.limitSet()] ?? LIMIT_SETS['hesselberth-roy']);
-  /** The band the figures are for: the recipe's firing, or the set's own choice when it has none. */
-  protected readonly band = computed<FiringBand>(() => this.firing() || this.set().whenUnknown);
-  protected readonly ranges = computed(() => unityFor(this.set(), this.band()));
-  protected readonly rows = computed(() => limitRows(this.unity(), this.set(), this.band()));
-  protected readonly cone = computed(() => this.set().cones?.[this.band()] ?? '');
-  protected readonly outside = computed(() => (this.rows() ?? []).filter((row) => row.past).length);
-  protected readonly point = computed(() => stullPoint(this.unity()));
-  /**
-   * What the set leaves unchecked, said briefly. A set that ranges over silica and the fluxes (Hesselberth
-   * & Roy's) names the glaze's oxides it has no range for, when there is a meaningful amount of them; a
-   * narrow set (Glazecalc's own) says in one sentence what it checks, since it leaves most oxides out.
-   */
-  protected readonly notInSet = computed<{ key: string; oxides: string } | null>(() => {
-    const rows = this.rows() ?? [];
-    const covered = new Set(rows.flatMap((row) => row.oxide.split('+')));
-    if (!covered.has('SiO2')) {
-      return rows.length
-        ? { key: marker('recipe.limits.checksOnly'), oxides: listOf(rows.map((row) => limitLabel(row.oxide))) }
-        : null;
-    }
-    const missing = Object.entries(this.unity())
-      .filter(([oxide, moles]) => moles >= MEANINGFUL && !covered.has(oxide))
-      .map(([oxide]) => formatFormula(oxide));
-    return missing.length ? { key: marker('recipe.limits.notInSet'), oxides: listOf(missing) } : null;
+  /** The bands the firing block's range falls in, coolest first: two when it crosses a band (cone 6–10). */
+  protected readonly fromBlock = computed(() => firingBands(this.firedAt()));
+  protected readonly blockBandNames = computed(() =>
+    listOf(this.fromBlock().map((band) => translate(BAND_NAMES[band])))
+  );
+  /** The bands shown: the one chosen by hand, else the firing block's, else the set's own choice. */
+  protected readonly bandsShown = computed<FiringBand[]>(() => {
+    const chosen = this.firing();
+    if (chosen) return [chosen];
+    const fromBlock = this.fromBlock();
+    return fromBlock.length ? fromBlock : [this.set().whenUnknown];
   });
+  /** A view per band, leaving out a band the set reads with the same figures as the one before (its nearest). */
+  protected readonly views = computed(() => {
+    const set = this.set();
+    return this.bandsShown()
+      .filter((band, i, all) => i === 0 || unityFor(set, band) !== unityFor(set, all[i - 1]!))
+      .map((band) => bandView(this.unity(), set, band));
+  });
+  /** The Stull chart draws the coolest band's ranges. */
+  protected readonly ranges = computed(() => unityFor(this.set(), this.bandsShown()[0]!));
+  protected readonly point = computed(() => stullPoint(this.unity()));
 
   protected readonly label = limitLabel;
   protected readonly range = rangeText;

@@ -1,10 +1,11 @@
 import { DatePipe } from '../../shared/format-pipes';
 import { Component, OnInit, inject, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { RouterLink } from '@angular/router';
 import { TranslocoDirective, translate } from '@jsverse/transloco';
 import { ApiResourceFactory } from '../../core/api-resource.service';
 import { errorMessage } from '../../core/error-message';
-import { Firing } from '../../core/models';
+import { Firing, Recipe } from '../../core/models';
 import { Busy } from '../../shared/busy';
 import { FORM_GRID_STYLES } from '../../shared/chemistry-form';
 import { FieldCheck, FieldChecks, required } from '../../shared/field-checks';
@@ -17,7 +18,7 @@ import { FiringLog } from './firing-log';
 
 @Component({
   selector: 'gc-firing-page',
-  imports: [DatePipe, FieldCheck, FormsModule, NoticesList, PageHeader, RemoveButton, TranslocoDirective],
+  imports: [DatePipe, FieldCheck, FormsModule, NoticesList, PageHeader, RemoveButton, RouterLink, TranslocoDirective],
   templateUrl: './firing-page.html',
   // Labels above their fields, as on the recipe and account pages.
   styles: [
@@ -85,6 +86,21 @@ import { FiringLog } from './firing-log';
       .stored-firing p {
         margin: 0 0 0.5rem;
       }
+      .fired-recipes {
+        margin: 0.5rem 0;
+      }
+      .fired-list {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 0.5rem;
+      }
+      .fired-list li {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 0.25rem 0.75rem;
+        padding: 0.15rem 0;
+      }
     `
   ]
 })
@@ -120,7 +136,51 @@ export class FiringPage implements OnInit {
   protected readonly loaded = signal(false);
   protected readonly removal = new Removal(this.firings, this.myFirings, this.notices, (firing) => firing.title);
 
+  // The recipes fired in each log (docs/adr/0021-recipe-firing.md): the links are kept on the recipes,
+  // which list the logs they went through; here a log can pick them too.
+  private readonly recipes = inject(ApiResourceFactory).for<Recipe>('recipe');
+  protected readonly myRecipes = signal<Recipe[]>([]);
+  /** The recipes could not be fetched: a log offers none to pick, and says so. */
+  protected readonly recipesFailed = signal(false);
+  /** The log whose recipe link is being saved. */
+  protected readonly linking = signal<string | null>(null);
+
+  /** The recipes linked to a log. */
+  protected firedIn(firing: Firing): Recipe[] {
+    return this.myRecipes().filter((recipe) => recipe.firings?.some((link) => link.firing === firing._id));
+  }
+
+  /** The recipes that could be linked to a log: the rest, newest first. */
+  protected notFiredIn(firing: Firing): Recipe[] {
+    return [...this.myRecipes()].reverse().filter((recipe) => !recipe.firings?.some((l) => l.firing === firing._id));
+  }
+
+  /** Links a recipe to a log, or takes the link off; the recipe keeps it (with its result note). */
+  protected async setFiredIn(firing: Firing, recipeId: string, fired: boolean): Promise<void> {
+    const recipe = this.myRecipes().find((r) => r._id === recipeId);
+    if (!recipe || !firing._id) return;
+    const links = recipe.firings ?? [];
+    const next = fired
+      ? links.some((l) => l.firing === firing._id)
+        ? links
+        : [...links, { firing: firing._id }]
+      : links.filter((l) => l.firing !== firing._id);
+    this.linking.set(firing._id);
+    try {
+      await this.recipes.change(recipeId, { recipe: { firings: next } });
+      this.myRecipes.update((list) => list.map((r) => (r._id === recipeId ? { ...r, firings: next } : r)));
+    } catch (err) {
+      this.notices.error(errorMessage(err, translate('notebook.firing.linkFailed')));
+    } finally {
+      this.linking.set(null);
+    }
+  }
+
   async ngOnInit(): Promise<void> {
+    void this.recipes.getAll().then(
+      (list) => this.myRecipes.set(list),
+      () => this.recipesFailed.set(true)
+    );
     try {
       this.myFirings.set(await this.firings.getAll());
     } catch {

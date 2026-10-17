@@ -78,6 +78,34 @@
             />
           }
         </div>
+        @if (firingFiltersShown()) {
+          <div class="saved-firing-filters">
+            <select
+              id="saved-cone-filter"
+              class="form-select form-select-sm"
+              [attr.aria-label]="t('recipe.firing.filterCone')"
+              [(ngModel)]="coneFilter"
+            >
+              <option value="">{{ t('recipe.firing.anyCone') }}</option>
+              @for (option of coneOptions(); track option.key) {
+                <option [value]="option.key">{{ option.label }}</option>
+              }
+            </select>
+            @if (atmosphereOptions().length) {
+              <select
+                id="saved-atmosphere-filter"
+                class="form-select form-select-sm"
+                [attr.aria-label]="t('recipe.firing.filterAtmosphere')"
+                [(ngModel)]="atmosphereFilter"
+              >
+                <option value="">{{ t('recipe.firing.anyAtmosphere') }}</option>
+                @for (option of atmosphereOptions(); track option.key) {
+                  <option [value]="option.key">{{ option.label }}</option>
+                }
+              </select>
+            }
+          </div>
+        }
         <ul class="saved-list">
           @for (rec of shownRecipes(); track rec._id) {
             <li class="saved-recipe" [class.is-open]="rec._id === savedId()">
@@ -96,6 +124,9 @@
                   }
                   @if (rec._id === savedId()) {
                     <span class="saved-open-mark">{{ t('recipe.page.openAbove') }}</span>
+                  }
+                  @if (savedFiring(rec); as fired) {
+                    <span class="saved-firing">{{ fired }}</span>
                   }
                 </span>
                 <span class="saved-recipe-actions">
@@ -147,6 +178,15 @@
                     >
                       {{ t('recipe.page.blend') }}
                     </a>
+                    <button
+                      [id]="'duplicate-' + rec._id"
+                      type="button"
+                      class="btn btn-light border btn-sm"
+                      [attr.aria-label]="t('recipe.firing.duplicateName', { title: rec.title })"
+                      (click)="duplicateForCone(rec)"
+                    >
+                      {{ t('recipe.firing.duplicate') }}
+                    </button>
                     <button
                       [id]="'share-' + rec._id"
                       type="button"
@@ -262,6 +302,16 @@
             [(ngModel)]="notes"
           ></textarea>
         </div>
+        <gc-recipe-firing [(block)]="firedAt" [(foodSurface)]="foodSurface" />
+        @if (firingsShown()) {
+          <gc-recipe-firings [(links)]="firings" [(block)]="firedAt" />
+        } @else {
+          <p>
+            <button id="firings-open" type="button" class="btn btn-link p-0" (click)="firingsAsked.set(true)">
+              {{ t('recipe.firings.open') }}
+            </button>
+          </p>
+        }
 
         <h3 id="materials-heading" tabindex="-1">{{ t('recipe.page.materialsHeading') }}</h3>
         @if (lines().length) {
@@ -924,7 +974,12 @@
       </section>
     </div>
     @if (evaluation().analysis; as analysis) {
-      <gc-recipe-numbers [analysis]="analysis" [counted]="includeAdditives()" [(firing)]="firing" />
+      <gc-recipe-numbers
+        [analysis]="analysis"
+        [counted]="includeAdditives()"
+        [(firing)]="firing"
+        [firedAt]="firedAt()"
+      />
     }
     <gc-slurry-calculator [(sgTarget)]="sgTarget" />
   </div>

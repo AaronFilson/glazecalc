@@ -88,7 +88,15 @@
     "chooseField": "Choose a field to add, then Add the field.",
     "fetchFailed": "There was an error in getting the firing records information.",
     "saved": "Success in adding the firing record to the server.",
-    "saveFailed": "Error: the request to the server failed."
+    "saveFailed": "Error: the request to the server failed.",
+    "recipesHeading": "Recipes fired in it",
+    "noRecipes": "No recipes linked yet.",
+    "recipesFailed": "Your recipes could not be fetched, so none can be linked now.",
+    "pickRecipe": "A recipe fired in it",
+    "linkRecipe": "Link the recipe",
+    "unlink": "Unlink",
+    "unlinkRecipe": "Unlink {title}",
+    "linkFailed": "The link could not be saved."
   },
   "notes": {
     "title": "Notes",
