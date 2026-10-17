@@ -6,6 +6,7 @@ import { filter, firstValueFrom } from 'rxjs';
 import type { MockInstance } from 'vitest';
 import { App } from '../app';
 import { AuthService } from '../core/auth.service';
+import { OFFERED_LANGUAGES } from '../i18n/language';
 import {
   answer,
   API,
@@ -84,10 +85,28 @@ describe('static pages', () => {
   });
 
   it('shows the about and privacy pages with one h1 each', async () => {
-    for (const page of [AboutPage, PrivacyPage]) {
+    for (const page of [AboutPage, PrivacyPage] as Type<unknown>[]) {
       const { fixture } = await create(page);
       expect(fixture.nativeElement.querySelectorAll('h1').length).toBe(1);
     }
+  });
+
+  it('lists the offered languages on the about page, each in its own name and linked to the about page in it', async () => {
+    TestBed.overrideProvider(OFFERED_LANGUAGES, { useValue: ['en', 'de', 'fr'] });
+    const { fixture } = await create(AboutPage);
+    const nav = fixture.nativeElement.querySelector('nav[aria-labelledby="about-languages-heading"]') as HTMLElement;
+    expect(nav).not.toBeNull();
+    expect(fixture.nativeElement.querySelector('#about-languages-heading')).not.toBeNull();
+    const links = [...nav.querySelectorAll('li a')] as HTMLAnchorElement[];
+    expect(links.map((a) => a.getAttribute('href'))).toEqual(['/about', '/de/about', '/fr/about']);
+    expect(links.map((a) => a.getAttribute('lang'))).toEqual(['en', 'de', 'fr']);
+    expect(links.map((a) => a.textContent)).toEqual(['English', 'Deutsch', 'Français']);
+  });
+
+  it('leaves the language list off the about page while only English is offered', async () => {
+    TestBed.overrideProvider(OFFERED_LANGUAGES, { useValue: ['en'] });
+    const { fixture } = await create(AboutPage);
+    expect(fixture.nativeElement.querySelector('#about-languages-heading')).toBeNull();
   });
 
   it('gives the private contact, and lists the cookie and every storage key with what it is for and how long it stays', async () => {
