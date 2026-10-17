@@ -4,6 +4,7 @@ import {
   Injector,
   OnInit,
   WritableSignal,
+  afterEveryRender,
   afterNextRender,
   computed,
   effect,
@@ -657,12 +658,15 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
       const found = wanted ? this.myRecipes().find((recipe) => recipe._id === wanted) : undefined;
       if (found) this.open(found);
       // Opened at the saved recipes (Home's Recipes card): they arrive after the page, so the app could not go there.
+      // The page's words can arrive later still (the template waits for them), so it goes once the heading is drawn.
       if (this.route.snapshot.fragment === 'saved-recipes' && this.myRecipes().length) {
-        afterNextRender(
+        const goThere = afterEveryRender(
           () => {
             const heading = document.getElementById('saved-heading');
-            heading?.scrollIntoView({ block: 'start' });
-            heading?.focus({ preventScroll: true });
+            if (!heading) return;
+            goThere.destroy();
+            heading.scrollIntoView({ block: 'start' });
+            heading.focus({ preventScroll: true });
           },
           { injector: this.injector }
         );
