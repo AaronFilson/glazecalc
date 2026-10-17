@@ -117,7 +117,7 @@ describe('region facts', () => {
     fs.readFileSync(new URL('../../client/public/i18n/guides/en.json', import.meta.url), 'utf8')
   );
   const HTTP_ONLY = ['丸二陶料', '太麟化工原料有限公司', 'Sam Mui Kuang Pottery'];
-  const NO_SHOP_FOUND = ['MY', 'CN', 'HK'];
+  const NO_SHOP_FOUND = ['MY', 'CN', 'HK', 'ID', 'TH'];
   const checkedLately = (fact: { checked: string; source?: string; url?: string }, label: string) => {
     expect(fact.source ?? fact.url, label).to.match(/^https:\/\//);
     expect(Date.parse(fact.checked), label + ': check this again').to.be.above(yearAgo);
@@ -759,5 +759,73 @@ describe('Hong Kong', () => {
 
   it('gives no food-contact rules, since none of its own were found', () => {
     expect(food.foodRulesFor('HK')).to.equal(null);
+  });
+});
+
+describe('Indonesia', () => {
+  it('fires by temperature and lists the US library', () => {
+    expect(regions.regionFor('ID')).to.include({ temperature: 'C', cones: 'temperature', library: 'US' });
+    expect(regions.regionFor('ID')!.languages).to.eql(['id']);
+    expect(regions.formatLocaleFor('id', 'ID', 'auto')).to.equal('id-ID');
+  });
+
+  it('gives 119, no poison line, and the health ministry', () => {
+    const shown = safety.shownFor('ID')!;
+    expect(shown.emergency.map((line) => line.number)).to.eql(['119']);
+    expect(shown.poison).to.eql([]);
+    expect(JSON.stringify(safety.SAFETY['ID'])).not.to.contain('500533');
+    expect(safety.ministryFor('ID')).to.include({ name: 'Kementerian Kesehatan' });
+  });
+
+  it("gives Permenaker 5/2018's NAB of 0.025 for quartz and cristobalite", () => {
+    const facts = workplace.workplaceFor('ID')!;
+    expect(facts.silica).to.include({ quartz: 0.025, kind: 'binding' });
+    expect(facts.silica!.cristobalite).to.equal(undefined);
+    expect(facts.agency).to.include({ abbr: 'Kemnaker' });
+  });
+
+  it("gives BPOM 11/2026's limits, the same for both hollow sizes, with no in-force date not read", () => {
+    const { rules } = food.foodRulesFor('ID')!;
+    expect(rules.limits.map((l) => [l.category, l.lead, l.cadmium, l.unit])).to.eql([
+      ['idFlat', 0.8, 0.07, 'mg/dm²'],
+      ['idSmall', 0.5, 0.25, 'mg/L'],
+      ['idLarge', 0.5, 0.25, 'mg/L']
+    ]);
+    expect(rules.inForce).to.equal(undefined);
+    expect(rules.note).to.contain('third');
+  });
+});
+
+describe('Thailand', () => {
+  it('fires by temperature and lists the US library', () => {
+    expect(regions.regionFor('TH')).to.include({ temperature: 'C', cones: 'temperature', library: 'US' });
+    expect(regions.regionFor('TH')!.languages).to.eql(['th']);
+    expect(regions.formatLocaleFor('th', 'TH', 'auto')).to.equal('th-TH');
+  });
+
+  it('gives 1669 and the Ramathibodi Poison Center, 1367, around the clock, with no claim on cost', () => {
+    const shown = safety.shownFor('TH')!;
+    expect(shown.emergency.map((line) => line.number)).to.eql(['1669']);
+    expect(shown.poison.map((line) => [line.number, line.tel])).to.eql([['1367', '1367']]);
+    expect(shown.poison[0]).to.include({ who: 'public', hours: '24 hours, every day' });
+    expect(JSON.stringify(safety.SAFETY['TH'])).not.to.match(/free/i);
+  });
+
+  it("gives the labour department's limit of 0.025 for quartz and cristobalite", () => {
+    const facts = workplace.workplaceFor('TH')!;
+    expect(facts.silica).to.include({ quartz: 0.025, kind: 'binding' });
+    expect(facts.agency).to.include({ url: 'https://osh.labour.go.th/' });
+  });
+
+  it("gives Notification No. 92's five kinds of piece, all in mg/L", () => {
+    const { rules } = food.foodRulesFor('TH')!;
+    expect(rules.inForce).to.equal('1985-09-03');
+    expect(rules.limits.map((l) => [l.category, l.lead, l.cadmium, l.unit])).to.eql([
+      ['thFlat', 7, 0.7, 'mg/L'],
+      ['thSmall', 5, 0.5, 'mg/L'],
+      ['thLarge', 2.5, 0.25, 'mg/L'],
+      ['thInfant', 2.5, 0.25, 'mg/L'],
+      ['thCooking', 5, 0.5, 'mg/L']
+    ]);
   });
 });

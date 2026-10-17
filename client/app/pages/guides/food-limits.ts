@@ -40,7 +40,15 @@ const CATEGORY: Record<string, string> = {
   myFlat: marker('guides.food.category.myFlat'),
   mySmall: marker('guides.food.category.mySmall'),
   myLarge: marker('guides.food.category.myLarge'),
-  myCooking: marker('guides.food.category.myCooking')
+  myCooking: marker('guides.food.category.myCooking'),
+  idFlat: marker('guides.food.category.idFlat'),
+  idSmall: marker('guides.food.category.idSmall'),
+  idLarge: marker('guides.food.category.idLarge'),
+  thFlat: marker('guides.food.category.thFlat'),
+  thSmall: marker('guides.food.category.thSmall'),
+  thLarge: marker('guides.food.category.thLarge'),
+  thInfant: marker('guides.food.category.thInfant'),
+  thCooking: marker('guides.food.category.thCooking')
 };
 /** How a sample is judged. */
 const JUDGED: Record<NonNullable<FoodLimit['judged']>, string> = {
