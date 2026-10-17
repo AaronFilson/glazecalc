@@ -656,9 +656,10 @@ describe('MCP: personal access tokens', () => {
     let otherRecipeId: string;
     let firingId: string;
     let goneId: string;
+    let mine: Awaited<ReturnType<typeof makeUser>>;
 
     before(async () => {
-      const mine = await makeUser();
+      mine = await makeUser();
       const other = await makeUser();
       headers = bearer(await makeToken(mine.user));
       const session = { Authorization: 'Bearer ' + mine.token };
@@ -755,9 +756,37 @@ describe('MCP: personal access tokens', () => {
       expect(one.materials).to.have.length(4);
       expect(one.analysis.unityFormula.SiO2).to.be.above(2);
       expect(one.checks.band).to.equal('mid');
+      // The account's limit set (Hesselberth & Roy's until another is chosen); nothing saved, no check.
+      expect(one.checks.limitSet.id).to.equal('hesselberth-roy');
+      expect(one).to.not.have.property('firing');
+      expect(one).to.not.have.property('sgTarget');
+      expect((await data('get_recipe', { id: recipeId }, headers)).checks).to.equal(undefined);
       const theirs = await call('get_recipe', { id: otherRecipeId }, headers);
       expect(theirs.isError).to.equal(true);
       expect((await call('get_recipe', { id: 'nonsense' }, headers)).isError).to.equal(true);
+    });
+
+    it('get_recipe checks a recipe for its saved firing band against the limit set chosen in Settings', async () => {
+      await Recipe.updateOne({ _id: recipeId }, { $set: { firing: 'high', sgTarget: 1.45 } });
+      await User.updateOne({ _id: mine.user._id }, { $set: { 'preferences.limitSet': 'glazecalc' } });
+      try {
+        const saved = await data('get_recipe', { id: recipeId }, headers);
+        expect(saved).to.include({ firing: 'high', sgTarget: 1.45 });
+        expect(saved.checks.limitSet.id).to.equal('glazecalc');
+        // The app's own set has no high band: cone 10 is checked as mid fire, as the recipe page does.
+        expect(saved.checks.bandUsed).to.equal('mid');
+        expect(saved.checks.firingFrom).to.equal('recipe');
+        expect(saved.checks).to.not.have.property('celsius');
+        await User.updateOne({ _id: mine.user._id }, { $set: { 'preferences.limitSet': 'hesselberth-roy' } });
+        expect((await data('get_recipe', { id: recipeId }, headers)).checks.band).to.equal('high');
+        // A firing asked about wins over the saved one.
+        const asked = await data('get_recipe', { id: recipeId, firing: { cone: '04' } }, headers);
+        expect(asked.checks.band).to.equal('low');
+        expect(asked.checks).to.not.have.property('firingFrom');
+      } finally {
+        await Recipe.updateOne({ _id: recipeId }, { $unset: { firing: 1, sgTarget: 1 } });
+        await User.updateOne({ _id: mine.user._id }, { $unset: { 'preferences.limitSet': 1 } });
+      }
     });
 
     it('read the materials, the shelf, the firing logs, the notebook and the settings', async () => {
@@ -780,6 +809,16 @@ describe('MCP: personal access tokens', () => {
       expect((await data('list_notes', { search: 'Trash' }, headers)).total).to.equal(0);
       const settings = await data('get_my_settings', {}, headers);
       expect(settings.region).to.equal('US');
+      expect(settings).to.include({ limitSet: 'hesselberth-roy', currency: '' });
+      await User.updateOne(
+        { _id: mine.user._id },
+        { $set: { 'preferences.currency': 'EUR', prices: [{ key: 'library:whiting', perKg: 1.25 }] } }
+      );
+      const priced = await data('get_my_settings', {}, headers);
+      expect(priced.currency).to.equal('EUR');
+      // The currency, never the prices.
+      expect(JSON.stringify(priced)).to.not.include('1.25');
+      expect(priced).to.not.have.property('prices');
     });
 
     it('match_with_what_i_have uses the account’s shelf', async () => {

@@ -43,6 +43,21 @@ const pageArgs = {
 };
 const idArg = z.string().min(1).max(40).describe('The id from a list.');
 
+/**
+ * A temperature within each firing band a recipe can be saved for, to check
+ * it as that band: about Orton cone 04, 6 and 10 (lib/recipe/limits.js bands).
+ */
+const BAND_CELSIUS = { low: 1060, mid: 1222, high: 1285 } as const;
+type FiringBand = keyof typeof BAND_CELSIUS;
+
+/** The account's saved settings, with each one's default where none is saved. */
+const settingsOf = async (userId: string) => {
+  const user = await User.findById(userId, { preferences: 1 });
+  const saved = (user?.preferences ?? {}) as Record<string, unknown>;
+  return <K extends keyof typeof PREFERENCES>(name: K) =>
+    (saved[name] ?? PREFERENCES[name][0]) as (typeof PREFERENCES)[K][number];
+};
+
 /** A pattern matching text that contains the query, in any case; special characters taken literally. */
 const containing = (query: string): RegExp => new RegExp(query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'i');
 
@@ -140,7 +155,7 @@ export const registerAccountTools = (server: McpServer, caller: Caller): void =>
       {
         title: 'Get one of my recipes',
         description:
-          'One recipe from your account: its materials and amounts, colorants, notes, and its unity formula worked out afresh. Give a firing to have it checked against the limits too.',
+          "One recipe from your account: its materials and amounts, colorants, notes, the firing band and target specific gravity saved with it, and its unity formula worked out afresh. It is checked against the limit set chosen in your settings, for the firing given here or else the recipe's saved firing band.",
         inputSchema: z.object({ id: idArg, firing: firingArg, language: languageArg }),
         annotations: READ_ONLY
       },
@@ -151,9 +166,18 @@ export const registerAccountTools = (server: McpServer, caller: Caller): void =>
           const lines = savedLines(found.materials as unknown[]);
           let analysis: Record<string, unknown> | null = null;
           let checks: Record<string, unknown> | null = null;
+          const band = Object.hasOwn(BAND_CELSIUS, found.firing ?? '') ? (found.firing as FiringBand) : undefined;
           try {
             analysis = analysisOf(lines, lang).out;
-            if (firing) checks = checksOf(lines, celsiusOf(firing), undefined, lang);
+            if (firing || band) {
+              const setting = await settingsOf(userId);
+              // The recipe page's check: the account's limit set, for the firing asked about or the one saved.
+              checks = checksOf(lines, firing ? celsiusOf(firing) : BAND_CELSIUS[band!], setting('limitSet'), lang);
+              if (!firing) {
+                delete checks.celsius;
+                checks.firingFrom = 'recipe';
+              }
+            }
           } catch (err) {
             if (err instanceof ToolProblem) throw err;
             analysis = null;
@@ -163,6 +187,8 @@ export const registerAccountTools = (server: McpServer, caller: Caller): void =>
             title: found.title,
             ...(found.date && { date: found.date }),
             ...(textOf(found.notes) && { notes: textOf(found.notes) }),
+            ...(band && { firing: band }),
+            ...(typeof found.sgTarget === 'number' && { sgTarget: found.sgTarget }),
             materials: lines.map((line) => ({ material: line.name, amount: recipe.amountOf(line.amount) })),
             colorants: ((found.additives ?? []) as Array<{ name?: string; amount?: string; unit?: string }>)
               .filter((a) => a && a.name)
@@ -365,22 +391,23 @@ export const registerAccountTools = (server: McpServer, caller: Caller): void =>
       {
         title: 'My settings',
         description:
-          'Your Glazecalc settings that matter when talking about glazes: region, temperature scale, cones, language, weight unit and whether lead may be suggested.',
+          'Your Glazecalc settings that matter when talking about glazes: region, temperature scale, cones, language, weight unit, whether lead may be suggested, the limit set recipes are checked against, and the currency your prices are in (never the prices).',
         inputSchema: z.object({}),
         annotations: READ_ONLY
       },
       async () =>
         guarded(async () => {
-          const user = await User.findById(userId, { preferences: 1 });
-          const saved = (user?.preferences ?? {}) as Record<string, unknown>;
-          const pick = (name: keyof typeof PREFERENCES) => saved[name] ?? PREFERENCES[name][0];
+          const pick = await settingsOf(userId);
           return ok({
             region: pick('region'),
             temperature: pick('temperature'),
             cones: pick('cones'),
             language: pick('language'),
             weightUnit: pick('weightUnit'),
-            lead: pick('lead')
+            lead: pick('lead'),
+            limitSet: pick('limitSet'),
+            // '' follows the region (lib/regions currencyFor).
+            currency: pick('currency')
           });
         })
     );

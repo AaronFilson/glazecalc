@@ -96,6 +96,10 @@ an assistant to act for one person that is not their web session.
   `list_my_materials`, `get_shelf`, `match_with_what_i_have`, `list_firings`, `get_firing`,
   `list_notes` and `get_my_settings`, each only if the token's scopes allow its area
   (`server/lib/scopes.ts`), each limited to the token's account, and none changing anything.
+  `get_recipe` checks a recipe as its page does: against the limit set chosen in Settings, for the
+  firing asked about or else the firing band saved with the recipe, and returns that band and the
+  target specific gravity; `get_my_settings` includes the limit set and the currency, never the
+  prices.
   Without a token the list has only the public tools. A request with an Authorization header that
   is not a working personal token (unknown, expired, revoked, a trial's, an OAuth one, the web
   session's sign-in token, or not Bearer) gets 401 before the SDK, with RFC 6750's
