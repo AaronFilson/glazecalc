@@ -257,6 +257,39 @@ describe('signing in with Google and GitHub', () => {
       expect((await finish(again.cookie)).body.code).to.eql('provider-expired');
     });
 
+    it('logs a server error at the callback without the code or the state', async () => {
+      const flow = await start('google');
+      const { code, state } = fake.issue('google', flow.location, { sub: subject(), email: null });
+      const original = OAuthLogin.findOneAndUpdate;
+      const saved = process.env.LOG_LEVEL;
+      const written: string[] = [];
+      const stderr = process.stderr.write;
+      OAuthLogin.findOneAndUpdate = (() => {
+        throw new Error('database down');
+      }) as unknown as typeof OAuthLogin.findOneAndUpdate;
+      process.env.LOG_LEVEL = 'error';
+      process.stderr.write = ((text: string) => {
+        written.push(String(text));
+        return true;
+      }) as typeof process.stderr.write;
+      try {
+        const res = await api()
+          .get('/auth/google/callback')
+          .query({ code, state })
+          .set('Cookie', 'glazecalc_oauth=' + flow.cookie)
+          .redirects(0);
+        expect(res).to.have.status(500);
+      } finally {
+        process.stderr.write = stderr;
+        if (saved === undefined) delete process.env.LOG_LEVEL;
+        else process.env.LOG_LEVEL = saved;
+        OAuthLogin.findOneAndUpdate = original;
+      }
+      const line = written.join('');
+      expect(line).to.include('Server error').and.include('/api/auth/google/callback');
+      expect(line).to.not.include(code).and.not.include(state);
+    });
+
     it('refuses an expired sign-in', async () => {
       const flow = await start('google');
       await OAuthLogin.updateOne(

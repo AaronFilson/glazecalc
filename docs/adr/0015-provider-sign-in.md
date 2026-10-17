@@ -37,6 +37,11 @@ unconfirmed ones, exist.
   then calls `POST /api/auth/finish`, a same-site request, which starts the session. So the
   `Strict` session cookie is always set by a first-party request, and the second step can be
   shown by the page that already has it.
+- **The callback's code and state stay out of the logs.** nginx's access log (production and
+  staging, one format) writes `/api/auth/<provider>/callback` without its query (the
+  `$glazecalc_request` map in `deploy/nginx/glazecalc.conf`; `enable-https.sh` is run again to
+  install it), and the app's server-error log does the same (`log.pathForLog`). Every other
+  request is logged as before.
 - **Accounts are found by `{provider, subject}` only** (Google's `sub`, GitHub's numeric id), kept
   on the user as `identities` with a unique `provider:subject` key. The linking rules:
   - no account has the subject: a **new account only from a verified provider email**, with a

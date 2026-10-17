@@ -26,7 +26,8 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   two-step sign-in is on. Nothing but the provider's id is
   kept: no name, picture or provider token. A trial on the browser comes along into the account.
   The export lists the linked providers, and the privacy notice and the record of processing say
-  what is kept. New English text only, for the next translation wave.
+  what is kept. The provider's one-time code and state stay out of nginx's access log and the
+  app's error log (`enable-https.sh` is run again for the nginx part, deploy/README.md). New English text only, for the next translation wave.
 - **The Trash and Undo.** Removing a recipe, material, note or other record moves it to the Trash,
   where it waits 30 days; the removal notice has Undo, and the Trash page puts records back, deletes
   them for good or empties the Trash. Each saved change keeps the version before it (the last 20,

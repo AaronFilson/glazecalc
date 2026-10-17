@@ -279,10 +279,16 @@ each, and `staging.sh` refuses production's secret. The callbacks are exactly:
      --value 'PROD_GITHUB_CLIENT_SECRET'
    ```
 
-4. Run `staging.sh` (or Deploy for production). It prints `Sign in with google: on.` and
+4. **nginx, once, before the first provider sign-in.** Run
+   `sudo /opt/glazecalc/enable-https.sh --with-staging` (without the flag where staging is not
+   set up), so that nginx's access logs write the callback (`/api/auth/<provider>/callback`)
+   without its query, which carries the provider's one-time code and the state (the
+   `$glazecalc_request` map in `nginx/glazecalc.conf`; staging's log uses the same format).
+   Until then those codes and states would sit in `access.log` for 14 days.
+5. Run `staging.sh` (or Deploy for production). It prints `Sign in with google: on.` and
    `Sign in with github: on.`, or `off` with the parameter it did not find. The instance role
    already reads `/glazecalc/*`, so no policy changes.
-5. Try it: sign in with each on staging, with a new address and with one an account already has
+6. Try it: sign in with each on staging, with a new address and with one an account already has
    (it must ask you to sign in first), and with two-step sign-in on (it must ask for the second
    step). With an account made with Google, change its email from the account page: "Sign in
    again with Google" must ask for the Google password, not only for the account.
