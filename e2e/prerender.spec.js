@@ -60,13 +60,13 @@ test.describe('the head of each public page', () => {
     await page.addInitScript(() => {
       const seen = [];
       globalThis.__descriptions = seen;
-      new MutationObserver((records) => {
+      new globalThis.MutationObserver((records) => {
         for (const record of records) {
           const tag = record.target;
           const key = tag.getAttribute('name') ?? tag.getAttribute('property');
           if (key === 'description' || key === 'og:description') seen.push(key + ': ' + tag.getAttribute('content'));
         }
-      }).observe(document, { subtree: true, attributes: true, attributeFilter: ['content'] });
+      }).observe(globalThis.document, { subtree: true, attributes: true, attributeFilter: ['content'] });
     });
     await page.goto('/guides/firing');
     await appStarted(page);
