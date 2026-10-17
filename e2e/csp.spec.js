@@ -87,6 +87,8 @@ test('every page loads with no Content-Security-Policy violations', async ({ pag
 // apart, as two headers would). The prerendered public pages are checked
 // signed out as well, as most visitors see them.
 test("every page loads with no violations under nginx's policy too", async ({ page }) => {
+  // About thirty pages, signed out and signed in, in one browser: more than the default 30 s on a busy runner.
+  test.setTimeout(180_000);
   expect(NGINX_POLICY).toContain("default-src 'self'");
   await page.route('**/*', async (route) => {
     const response = await route.fetch();
