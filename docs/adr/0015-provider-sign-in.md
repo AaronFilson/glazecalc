@@ -50,10 +50,12 @@ unconfirmed ones, exist.
     one, below), and a second step when two-step sign-in is on (as every change to how the
     account signs in, ADR 14), any provider account not linked elsewhere, whatever its email; one
     per provider; the account's email must be confirmed;
-  - unlinking takes the same confirmation and never removes the last way in. It also raises the
-    account's `tokenVersion`, so every other session ends (whoever unlinks may be undoing a link
-    someone else made), and renews this browser's; linking ends none. Access tokens are left
-    alone, as with a password change. Linking and unlinking email the account (to a confirmed
+  - unlinking takes the same confirmation and never removes the last way in;
+  - linking and unlinking each raise the account's `tokenVersion`, as every change to how the
+    account signs in does (ADR 14), so every other session ends (whoever unlinks may be undoing a
+    link someone else made; whoever links may be someone else adding a way in), and renew this
+    browser's (the owner's decision of 2026-10-17). Access tokens are left alone, as with a
+    password change. Linking and unlinking email the account (to a confirmed
     address only).
 - **An account with no password confirms with a fresh provider sign-in** (the owner's decision of
   2026-10-17, integrations-plan item 13). Changing its email, deleting it, turning on two-step

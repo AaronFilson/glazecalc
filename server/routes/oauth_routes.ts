@@ -21,7 +21,8 @@
 //   POST   /api/auth/:provider/reauth   (signed in, no password of its own) next: { location } for a
 //                                      fresh sign-in with this linked provider, to confirm a change
 //   DELETE /api/auth/:provider          (signed in) IdentityProof: unlinks it, and signs out the
-//                                      account's other sessions (this one is renewed)
+//                                      account's other sessions (this one is renewed); a link
+//                                      through finish does the same
 //
 // How an account is found (decision 8 of docs/integrations-plan.md, and the
 // research's linking rules):
@@ -244,19 +245,26 @@ const signedIn = async (
   return res.status(200).json(say('signed-in', undefined, { email: user.email, kept, next }));
 };
 
-/** Links a provider account to this account: at most one per provider, and never one linked elsewhere. */
+/**
+ * Links a provider account to this account: at most one per provider, and
+ * never one linked elsewhere. Like every change to how the account signs in
+ * (ADR 14), it raises the account's tokenVersion, so its other sessions end;
+ * the reply renews this browser's (`renewed`).
+ */
 const link = async (
   user: UserDocument,
   provider: string,
   subject: string
-): Promise<{ status: 200 | 409; code: MessageCode }> => {
+): Promise<{ status: 200 | 409; code: MessageCode; renewed?: UserDocument }> => {
   const uid = uidOf(provider, subject);
+  let renewed: UserDocument | null;
   try {
-    const result = await User.updateOne(
+    renewed = await User.findOneAndUpdate(
       { _id: user._id, 'identities.provider': { $ne: provider } },
-      { $push: { identities: { provider, subject, uid, linkedAt: new Date() } } }
+      { $push: { identities: { provider, subject, uid, linkedAt: new Date() } }, $inc: { tokenVersion: 1 } },
+      { returnDocument: 'after' }
     );
-    if (result.matchedCount === 0) {
+    if (!renewed) {
       return (await User.exists({ _id: user._id, 'identities.uid': uid }))
         ? { status: 200, code: 'provider-linked' }
         : { status: 409, code: 'provider-already-linked' };
@@ -267,7 +275,7 @@ const link = async (
     throw err;
   }
   accountMail.noticeProvider(user, 'linked', provider);
-  return { status: 200, code: 'provider-linked' };
+  return { status: 200, code: 'provider-linked', renewed };
 };
 
 const knownCode = (code: string | undefined): MessageCode =>
@@ -367,6 +375,7 @@ oauthRouter.post('/finish', limits.oauth, async (req, res) => {
       }
       if (me.emailUnverified) return res.status(400).json(say('provider-verify-first', params));
       const linked = await link(me, provider, login.subject!);
+      if (linked.renewed) session.start(res, linked.renewed, 7, keepsSignIn(req));
       return res.status(linked.status).json(say(linked.code, params, { provider }));
     }
     case 'reauth': {
@@ -471,7 +480,7 @@ oauthRouter.delete('/:provider', jwtAuth, notGuest, limits.passwordCheck, expres
     return res.status(check.status).json(say(check.code, check.params, check.field ? { field: check.field } : {}));
   }
   // The account's other sessions end with it (whoever unlinked may be undoing
-  // someone else's link); this browser's is renewed. Linking ends none.
+  // someone else's link); this browser's is renewed. Linking does the same.
   const user = await User.findOneAndUpdate(
     { _id: me._id, 'identities.provider': provider },
     { $pull: { identities: { provider } }, $inc: { tokenVersion: 1 } },

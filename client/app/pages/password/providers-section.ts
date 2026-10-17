@@ -30,7 +30,7 @@ interface Change {
  * it. An account made with a provider has no password: it confirms with a
  * fresh sign-in with one of its providers instead (IdentityConfirm), which
  * also comes back here to be finished, and is offered the reset email to set
- * a password. Unlinking signs out the account's other devices. Shown only
+ * a password. Linking or unlinking signs out the account's other devices. Shown only
  * when a provider is on here.
  */
 @Component({

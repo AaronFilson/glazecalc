@@ -436,15 +436,16 @@ describe('signing in with Google and GitHub', () => {
       expect(done.body.code).to.eql('provider-linked');
       expect(done.body.msg).to.eql('GitHub is linked. You can now sign in with it.');
       await mail.waitFor(email, 1);
+      const renewed = sessionToken(done)!;
 
-      const methods = await api().get('/auth/methods').set(bearer(token));
+      const methods = await api().get('/auth/methods').set(bearer(renewed));
       expect(methods.body.enabled).to.eql(['google', 'github']);
       expect(methods.body.passwordless).to.eql(false);
       expect(methods.body.linked.map((entry: { provider: string }) => entry.provider)).to.eql(['github']);
       expect(JSON.stringify(methods.body)).to.not.include(sub);
 
       // One per provider.
-      expect((await linkStart('github', token, { password })).body.code).to.eql('provider-already-linked');
+      expect((await linkStart('github', renewed, { password })).body.code).to.eql('provider-already-linked');
       expect((await User.findById(user._id).lean())!.identities!.length).to.eql(1);
     });
 
@@ -478,7 +479,7 @@ describe('signing in with Google and GitHub', () => {
       expect((await User.findById(user._id).lean())!.identities).to.eql(undefined);
     });
 
-    it("signs out the account's other sessions when unlinking, but keeps this one; linking signs out none", async () => {
+    it("signs out the account's other sessions when linking and when unlinking, but keeps this one", async () => {
       const { user, token, email, password } = await makeUser();
       const other = user.generateToken();
       const res = await linkStart('google', token, { password });
@@ -486,14 +487,18 @@ describe('signing in with Google and GitHub', () => {
       await callback('google', flow, { sub: subject(), email, emailVerified: true });
       const linked = await finish(flow.cookie, token);
       expect(linked.body.code).to.eql('provider-linked');
-      expect(sessionToken(linked)).to.eql(null);
-      for (const kept of [token, other]) expect(await api().get('/auth/methods').set(bearer(kept))).to.have.status(200);
+      const afterLink = sessionToken(linked)!;
+      expect(afterLink).to.be.a('string');
+      for (const ended of [token, other])
+        expect(await api().get('/auth/methods').set(bearer(ended))).to.have.status(401);
+      expect(await api().get('/auth/methods').set(bearer(afterLink))).to.have.status(200);
 
-      const done = await api().delete('/auth/google').set(bearer(token)).send({ password });
+      const another = (await User.findById(user._id))!.generateToken();
+      const done = await api().delete('/auth/google').set(bearer(afterLink)).send({ password });
       expect(done, JSON.stringify(done.body)).to.have.status(200);
       const renewed = sessionToken(done)!;
       expect(renewed).to.be.a('string');
-      for (const ended of [token, other])
+      for (const ended of [afterLink, another])
         expect(await api().get('/auth/methods').set(bearer(ended))).to.have.status(401);
       expect(await api().get('/auth/methods').set(bearer(renewed))).to.have.status(200);
       // The notice still goes.
@@ -505,10 +510,10 @@ describe('signing in with Google and GitHub', () => {
       const res = await linkStart('google', token, { password });
       const flow = { location: res.body.location as string, cookie: oauthCookie(res)! };
       await callback('google', flow, { sub: subject(), email, emailVerified: true });
-      await finish(flow.cookie, token);
+      const afterLink = sessionToken(await finish(flow.cookie, token))!;
       await mail.waitFor(email, 1);
 
-      const unlink = (body: object, as = token) => api().delete('/auth/google').set(bearer(as)).send(body);
+      const unlink = (body: object, as = afterLink) => api().delete('/auth/google').set(bearer(as)).send(body);
       expect((await unlink({})).body.code).to.eql('current-password-needed');
       const done = await unlink({ password });
       expect(done, JSON.stringify(done.body)).to.have.status(200);
@@ -712,19 +717,27 @@ describe('signing in with Google and GitHub', () => {
       const flow = { location: linking.body.location as string, cookie: oauthCookie(linking)! };
       const githubSub = subject();
       await callback('github', flow, { sub: githubSub, email: uniqueEmail('gh'), emailVerified: true });
-      expect((await finish(flow.cookie, renewed)).body.code).to.eql('provider-linked');
+      const linkedGithub = await finish(flow.cookie, renewed);
+      expect(linkedGithub.body.code).to.eql('provider-linked');
+      // The link renews this session and ends the others.
+      const afterLink = sessionToken(linkedGithub)!;
+      expect(await api().get('/auth/methods').set(bearer(renewed))).to.have.status(401);
       // Spent on the link.
-      expect((await link({ reauth: grant, code: await code() })).body.code).to.eql('provider-already-linked');
+      const linkAgain = await api()
+        .post('/auth/github/link')
+        .set(bearer(afterLink))
+        .send({ reauth: grant, code: await code() });
+      expect(linkAgain.body.code).to.eql('provider-already-linked');
 
       // Unlinking Google, confirmed by a fresh GitHub sign-in and a code.
-      const viaGithub = await grantOf('github', renewed, githubSub, email);
+      const viaGithub = await grantOf('github', afterLink, githubSub, email);
       const unlinked = await api()
         .delete('/auth/google')
-        .set(bearer(renewed))
+        .set(bearer(afterLink))
         .send({ reauth: viaGithub, code: await code() });
       expect(unlinked, JSON.stringify(unlinked.body)).to.have.status(200);
       const after = sessionToken(unlinked)!;
-      expect(await api().get('/auth/methods').set(bearer(renewed))).to.have.status(401);
+      expect(await api().get('/auth/methods').set(bearer(afterLink))).to.have.status(401);
       // GitHub is now the only way in.
       const last = await api()
         .delete('/auth/github')
