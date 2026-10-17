@@ -134,8 +134,10 @@ unconfirmed ones, exist.
   sign-in (above), or sets a password through the reset email (the account page offers it). The
   confirmation leaves the page for the provider and comes back, so the person makes the change
   again on return; the account page says the sign-in is held for one change for 5 minutes.
-- The provider email is used only at the moment of sign-in; changing it at the provider changes
-  nothing here. The link survives an email change on Glazecalc.
+- The provider email is used only during the sign-in: kept on the sign-in record, for a new account
+  or to link to an existing account with that email once the person signs in to it, and deleted
+  with the record within about 10 minutes (TTL); the privacy notice and the record of processing
+  say so. Changing it at the provider changes nothing here. The link survives an email change on Glazecalc.
 - Microsoft (decision 1) needs its tenant id with the subject (the `email` claim cannot be trusted,
   "nOAuth"), so it will link by `tid` + `sub` only and never by email; the table has room for it.
 - Server tests run against a fake provider (`server/test/support/fake_provider.ts`) that checks
