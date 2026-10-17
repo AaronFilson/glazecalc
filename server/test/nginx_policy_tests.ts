@@ -41,9 +41,11 @@ describe('nginx Content-Security-Policy', () => {
 // callback without its query, which carries the one-time code and the state;
 // every other request line as it came. Checked here with the same pattern
 // nginx uses (PCRE, which reads this one as JavaScript does).
-const logMapIn = (file: string): { block: string; rewrite: (request: string) => string } => {
+const logMapIn = (file: string, format = 'glazecalc'): { block: string; rewrite: (request: string) => string } => {
   const text = fs.readFileSync(path.join(NGINX, file), 'utf8');
-  const block = /map \$request \$glazecalc_request \{[^}]*\}\nlog_format glazecalc '[^']*';/.exec(text);
+  const block = new RegExp(String.raw`map \$request \$${format}_request \{[^}]*\}\nlog_format ${format} '[^']*';`).exec(
+    text
+  );
   expect(block, file).to.not.eql(null);
   const rule = /"~\*([^"]+)" "\$1\$2";/.exec(block![0]);
   expect(rule, file).to.not.eql(null);
@@ -78,11 +80,28 @@ describe('nginx access log', () => {
     }
   });
 
-  it('is the same before and after HTTPS, and staging uses it', () => {
+  /** The log format each server block of a file writes its access log in. */
+  const formatsIn = (file: string): string[] => {
+    const text = fs.readFileSync(path.join(NGINX, file), 'utf8');
+    const logs = [...text.matchAll(/access_log (\S+) (\S+);/g)].map((m) => m[2]!);
+    expect(logs, file).to.have.length(text.match(/^server \{/gm)!.length);
+    return [...new Set(logs)];
+  };
+
+  it('is the same before and after HTTPS, and every server writes it', () => {
     expect(logMapIn('glazecalc-http.conf').block).to.eql(logMapIn('glazecalc.conf').block);
-    const staging = fs.readFileSync(path.join(NGINX, 'glazecalc-staging.conf'), 'utf8');
-    const logs = [...staging.matchAll(/access_log (\S+) (\S+);/g)].map((m) => m[2]);
-    expect(logs).to.have.length.above(0);
-    expect(new Set(logs)).to.eql(new Set(['glazecalc']));
+    expect(formatsIn('glazecalc.conf')).to.eql(['glazecalc']);
+    expect(formatsIn('glazecalc-http.conf')).to.eql(['glazecalc']);
+  });
+
+  it("is staging's own copy, under its own names, so staging never depends on production's file", () => {
+    // enable-https.sh can install the staging file from a branch (GLAZECALC_STAGING_REF)
+    // and production's from master: the staging file defines what it writes.
+    const staging = logMapIn('glazecalc-staging.conf', 'glazecalc_staging');
+    expect(staging.block.replaceAll('glazecalc_staging', 'glazecalc')).to.eql(logMapIn('glazecalc.conf').block);
+    expect(staging.rewrite('GET /api/auth/google/callback?code=4%2F0Ab&state=xyz HTTP/1.1')).to.eql(
+      'GET /api/auth/google/callback HTTP/1.1'
+    );
+    expect(formatsIn('glazecalc-staging.conf')).to.eql(['glazecalc_staging']);
   });
 });

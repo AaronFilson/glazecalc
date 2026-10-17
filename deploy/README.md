@@ -22,6 +22,25 @@ app can be checked by IP address before the DNS switch: pages load, and curl can
 session cookie is `Secure`. After DNS points at the instance,
 `enable-https.sh` (run once) gets the certificate and switches nginx to `nginx/glazecalc.conf`.
 
+> **Required with the release that brings the Content-Security-Policy, the tools for AI
+> assistants (`/mcp`) and Google and GitHub sign-in:** once it is merged to master, run
+>
+> ```sh
+> sudo /opt/glazecalc/enable-https.sh --with-staging
+> ```
+>
+> on the instance (without `--with-staging` only where staging was never set up), right after
+> the Deploy of that release and before turning on provider sign-in. The nginx files reach the
+> instance only this way, never with a deploy. It installs, for production and staging alike:
+> the `Content-Security-Policy` header (`nginx/glazecalc-proxy.conf`, and its copy in
+> `nginx/glazecalc-staging.conf`); the unbuffered `location = /mcp`, without which an
+> assistant's streamed answers wait in nginx's buffer; and the access-log map that writes the
+> provider callback (`/api/auth/<provider>/callback`) without its query, which carries the
+> provider's one-time code and the state. Until it runs, the site has no CSP and those codes
+> would sit in `access.log` for 14 days. The script checks the files with `nginx -t` and puts
+> the old ones back if they fail; afterwards check that
+> `curl -sI https://glazecalcapp.com/ | grep -i content-security-policy` prints the header.
+
 | File                                                     | Where it ends up                       | What it does                                                                                                                                                                                                                                                                                                                                 |
 | -------------------------------------------------------- | -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `cloud-init.yaml`                                        | launch template user data              | first-boot packages and settings; runs `setup-instance.sh`                                                                                                                                                                                                                                                                                   |
@@ -279,11 +298,13 @@ each, and `staging.sh` refuses production's secret. The callbacks are exactly:
      --value 'PROD_GITHUB_CLIENT_SECRET'
    ```
 
-4. **nginx, once, before the first provider sign-in.** Run
-   `sudo /opt/glazecalc/enable-https.sh --with-staging` (without the flag where staging is not
-   set up), so that nginx's access logs write the callback (`/api/auth/<provider>/callback`)
-   without its query, which carries the provider's one-time code and the state (the
-   `$glazecalc_request` map in `nginx/glazecalc.conf`; staging's log uses the same format).
+4. **nginx, once, before the first provider sign-in** (the required step at the top of this
+   file, if it has not been done). Run `sudo /opt/glazecalc/enable-https.sh --with-staging`
+   (without the flag where staging is not set up), so that nginx's access logs write the
+   callback (`/api/auth/<provider>/callback`) without its query, which carries the provider's
+   one-time code and the state (the `$glazecalc_request` map in `nginx/glazecalc.conf`;
+   `nginx/glazecalc-staging.conf` has its own copy, `$glazecalc_staging_request`, so staging's
+   log strips it even when its file comes from a branch through `GLAZECALC_STAGING_REF`).
    Until then those codes and states would sit in `access.log` for 14 days.
 5. Run `staging.sh` (or Deploy for production). It prints `Sign in with google: on.` and
    `Sign in with github: on.`, or `off` with the parameter it did not find. The instance role
