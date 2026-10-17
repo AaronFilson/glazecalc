@@ -31,6 +31,8 @@ export type TokenLifetime = `${number}d`;
  *   englishTerms   'on' puts the English after key terms in a translated page, for reading English sources
  *   notice         'hidden' once the translation notice is closed
  *   recipeHelp     the recipe page's help: open for an account with no recipes yet ('auto'), or as chosen
+ *   currency       the one currency the account's prices are in (ISO 4217), or '' to follow the region
+ *                  (lib/regions currencyFor); prices are never converted
  */
 export const PREFERENCES = {
   weightUnit: ['g', 'lb'],
@@ -47,7 +49,8 @@ export const PREFERENCES = {
   density: ['', 'sg', 'baume', 'pint'],
   englishTerms: ['off', 'on'],
   notice: ['shown', 'hidden'],
-  recipeHelp: ['auto', 'shown', 'hidden']
+  recipeHelp: ['auto', 'shown', 'hidden'],
+  currency: ['', ...regions.CURRENCIES]
 } as const;
 export type Preferences = { -readonly [K in keyof typeof PREFERENCES]: (typeof PREFERENCES)[K][number] };
 
@@ -72,6 +75,12 @@ export interface Passkey {
   name: string;
   addedAt: Date;
   lastUsedAt?: Date;
+}
+
+/** A material's price per kilogram, by its library key (see UserFields.prices). */
+export interface Price {
+  key: string;
+  perKg: number;
 }
 
 /** A recovery code: only HMAC-SHA256(MFA_KEY, normalized code) is kept (server/lib/recovery_codes.ts). */
@@ -149,6 +158,13 @@ export interface UserFields {
    * keys (a standard or own material's _id, or "name:" and its name).
    */
   shelf?: string[];
+  /**
+   * What the potter pays for materials, for cost per batch: a price per
+   * kilogram by library key (as the shelf's), in the account's one currency
+   * (preferences.currency). Business data, private to the account: never in
+   * a record, so never shared with one; exported and deleted with the account.
+   */
+  prices?: Price[];
   /**
    * Goes up when the password changes; login tokens carry it, so older tokens
    * (on other devices, or a stolen one) stop working.
@@ -250,9 +266,14 @@ const userSchema = new mongoose.Schema<UserFields, UserModel, UserMethods>({
     density: { type: String, enum: PREFERENCES.density },
     englishTerms: { type: String, enum: PREFERENCES.englishTerms },
     notice: { type: String, enum: PREFERENCES.notice },
-    recipeHelp: { type: String, enum: PREFERENCES.recipeHelp }
+    recipeHelp: { type: String, enum: PREFERENCES.recipeHelp },
+    currency: { type: String, enum: PREFERENCES.currency }
   },
   shelf: { type: [String], default: undefined },
+  prices: {
+    type: [new mongoose.Schema<Price>({ key: { type: String, required: true }, perKg: Number }, { _id: false })],
+    default: undefined
+  },
   tokenVersion: { type: Number, default: 0 },
   emailUnverified: Boolean,
   emailChangedAt: Date,

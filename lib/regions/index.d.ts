@@ -13,11 +13,17 @@ export interface Region {
   density: 'sg' | 'baume';
   /** The standard library's region filter. */
   library: 'US' | 'UK' | 'EU' | 'AU';
+  /** The money materials are priced in there, ISO 4217: the default for an account's currency. */
+  currency: string;
 }
 
 export const REGIONS: ReadonlyArray<Region>;
 export const REGION_CODES: ReadonlyArray<string>;
 export const FORMAT_LOCALES: ReadonlyArray<string>;
+/** The currencies an account may price materials in: each region's, once. */
+export const CURRENCIES: ReadonlyArray<string>;
+/** The currency to price in when none is chosen: the region's, else the format locale's region's, else USD. */
+export function currencyFor(regionCode: string | undefined | null, locale?: string | null): string;
 export function regionFor(code: string | undefined | null): Region | undefined;
 /** The locale for numbers and dates, from the page's language, the region and the format chosen ('auto' or a locale). */
 export function formatLocaleFor(

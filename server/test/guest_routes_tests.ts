@@ -368,6 +368,41 @@ describe('trial accounts', () => {
     expect(await User.findById(trialId)).to.eql(null);
   });
 
+  it('brings a trial’s prices along for materials the account has none for, in the same currency only', async () => {
+    const setPrices = (token: string | null, prices: object[]) =>
+      api()
+        .put('/prices')
+        .set('Authorization', 'Bearer ' + token)
+        .send({ prices });
+    const trialPrices = [
+      { key: 'name:Silica', perKg: 1 },
+      { key: 'name:Whiting', perKg: 9 }
+    ];
+
+    // Both follow no region and choose no currency: the same browser's.
+    const trial = await startTrial();
+    expect(await setPrices(trial.token, trialPrices)).to.have.status(200);
+    const { user, email, password, token } = await makeUser();
+    expect(await setPrices(token, [{ key: 'name:Whiting', perKg: 0.5 }])).to.have.status(200);
+    const res = await signIn(email, password).set('Cookie', 'glazecalc_session=' + trial.token);
+    expect(res).to.have.status(200);
+    expect((await User.findById(user._id).lean())!.prices).to.eql([
+      { key: 'name:Whiting', perKg: 0.5 },
+      { key: 'name:Silica', perKg: 1 }
+    ]);
+
+    // A trial in kronor and an account in euros: the trial's prices go with it.
+    const other = await startTrial();
+    expect(await setPrices(other.token, trialPrices)).to.have.status(200);
+    await User.updateOne({ _id: await idOf(other.token) }, { $set: { 'preferences.currency': 'SEK' } });
+    const euro = await makeUser();
+    await User.updateOne({ _id: euro.user._id }, { $set: { 'preferences.region': 'DE' } });
+    expect(await signIn(euro.email, euro.password).set('Cookie', 'glazecalc_session=' + other.token)).to.have.status(
+      200
+    );
+    expect((await User.findById(euro.user._id).lean())!.prices ?? []).to.eql([]);
+  });
+
   it('leaves an account alone when its own session is still on the browser', async () => {
     const { user, email, password, token } = await makeUser();
     expect(await addNote(token)).to.have.status(200);

@@ -93,7 +93,7 @@ const accessTokensOf = async (userId: Id): Promise<Row[]> =>
     })
   );
 
-/** The whole export: the account, its preferences and shelf, and every kind of record. */
+/** The whole export: the account, its preferences, shelf and prices, and every kind of record. */
 export const exportAccount = async (userId: Id, now = new Date()): Promise<Row | null> => {
   const user = await User.findById(userId, {
     email: 1,
@@ -101,6 +101,7 @@ export const exportAccount = async (userId: Id, now = new Date()): Promise<Row |
     role: 1,
     preferences: 1,
     shelf: 1,
+    prices: 1,
     guest: 1,
     expiresAt: 1,
     emailChangedAt: 1,
@@ -128,6 +129,8 @@ export const exportAccount = async (userId: Id, now = new Date()): Promise<Row |
     },
     preferences: user.preferences ?? {},
     shelf: user.shelf ?? [],
+    // Per kilogram, in the account's currency (preferences.currency, or the region's when '').
+    prices: (user.prices ?? []).map(({ key, perKg }) => ({ key, perKg })),
     signIn: signInOf(user),
     records: Object.fromEntries(kinds.map((kind, i) => [kind, lists[i]])),
     versions,

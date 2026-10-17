@@ -115,7 +115,10 @@ export const MESSAGES = {
   'englishTerms-choices': 'Choose on or off.',
   'notice-choices': 'Choose shown or hidden.',
   'recipeHelp-choices': 'Choose auto, shown or hidden.',
+  'currency-choices': 'Choose one of the currencies in the list, or leave it to your region.',
   'shelf-invalid': (p: Params) => 'The shelf is a list of up to ' + p.most + ' materials.',
+  'prices-invalid': (p: Params) =>
+    'Prices are a list of up to ' + p.most + ' materials, each with a price per kilogram of 0 or more.',
 
   // Records: recipes, materials, additives, firing logs, notes, advice.
   'missing-information': 'Missing required information',

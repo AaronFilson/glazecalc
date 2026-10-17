@@ -26,6 +26,8 @@ Node and the Angular build both load, typed by hand-written declarations, one pe
 | `temperature.js` | °C and °F, and a temperature in the reader's scale                                         |
 | `limits.js`      | The figures the checks warn at, as data (`CHECK_LIMITS`, `FIRING`), and limit sets         |
 | `checks.js`      | `pastLimits` and `sizeNotes`: cautions for a recipe                                        |
+| `cost.js`        | `batchCost`, `recipeCost`: a batch's cost from the account's prices, missing ones named    |
+| `hazards.js`     | `hazardsOf`: the recipe's hazard statements as the records give them, each once            |
 | `library.js`     | `hasLead`, `inRegion`, `suggestable`: what the library says, without the chemistry         |
 | `materials.js`   | Oxide percents, how alike two materials are, a frit's role, a recipe's moles and expansion |
 | `swaps.js`       | `modernMaterials`: discontinued materials swapped for their substitutes                    |

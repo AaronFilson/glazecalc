@@ -252,4 +252,91 @@ describe('Shared recipe tools', () => {
     expect(replaced.report?.uses.some((use) => use.name === bases[0].name)).to.equal(true);
     for (const caution of replaced.cautions) expect(words(caution)).to.not.match(/\{|undefined/);
   });
+
+  it('costs a batch from the account’s prices, naming the materials with none rather than guessing', () => {
+    const lines = {
+      materials: [
+        { key: 'potash', amount: '60' },
+        { key: 'whiting', amount: '40' },
+        { key: 'blank', amount: '' }
+      ],
+      additives: [{ key: 'cobalt', amount: '2', unit: 'percent' as const }]
+    };
+    const prices = [
+      { key: 'potash', perKg: 2 },
+      { key: 'whiting', perKg: 0.5 },
+      { key: 'cobalt', perKg: 80 }
+    ];
+    // 600 g at 2 a kg, 400 g at 0.5, and 20 g of cobalt at 80: 1.2 + 0.2 + 1.6.
+    const all = recipe.recipeCost(lines, 1000, prices)!;
+    expect(all.cost).to.be.closeTo(3, 1e-9);
+    expect(all.grams).to.be.closeTo(1020, 1e-9);
+    expect(all.perKg).to.be.closeTo((3 / 1020) * 1000, 1e-9);
+    expect(all).to.include({ complete: true });
+    expect(all.missing).to.eql([]);
+    // A line that weighs nothing needs no price.
+    expect(all.lines[2]).to.eql({ key: 'blank', grams: 0, perKg: null, cost: 0 });
+    // Twice the batch, twice the cost; the same per kilogram.
+    const twice = recipe.recipeCost(lines, 2000, prices)!;
+    expect(twice.cost).to.be.closeTo(6, 1e-9);
+    expect(twice.perKg).to.be.closeTo(all.perKg!, 1e-9);
+
+    // Without cobalt's price: the cost of the rest, cobalt named, and no cost per kilogram.
+    const some = recipe.recipeCost(
+      lines,
+      1000,
+      new Map([
+        ['potash', 2],
+        ['whiting', 0.5]
+      ])
+    )!;
+    expect(some.cost).to.be.closeTo(1.4, 1e-9);
+    expect(some).to.include({ complete: false, perKg: null });
+    expect(some.missing).to.eql(['cobalt']);
+    expect(some.lines[3]).to.include({ key: 'cobalt', perKg: null, cost: null });
+
+    // A price that is not one counts as none; a price of 0 is a price.
+    const odd = recipe.batchCost(
+      [
+        { key: 'a', grams: 500 },
+        { key: 'b', grams: 500 },
+        { key: 'a', grams: 100 }
+      ],
+      [
+        { key: 'a', perKg: -1 },
+        { key: 'b', perKg: 0 }
+      ]
+    );
+    expect(odd.missing).to.eql(['a']);
+    expect(odd.cost).to.equal(0);
+    expect(recipe.isPrice(0)).to.equal(true);
+    expect([NaN, Infinity, -0.01, '3', null].some((value) => recipe.isPrice(value))).to.equal(false);
+    // No amounts or no batch size: nothing to cost.
+    expect(recipe.recipeCost({ materials: [{ key: 'a', amount: '' }] }, 1000, prices)).to.equal(null);
+    expect(recipe.recipeCost(lines, 0, prices)).to.equal(null);
+  });
+
+  it('gathers the hazards the records give, each once, and names those that give none', () => {
+    const records = [
+      { name: 'Silica', hazards: 'Contains crystalline silica; avoid breathing the dust.' },
+      { name: 'Kaolin', hazards: ' Contains crystalline silica; avoid breathing the dust. ' },
+      { name: 'My frit' },
+      { name: 'Silica', hazards: 'Contains crystalline silica; avoid breathing the dust.' },
+      { name: 'Cobalt Carbonate', hazards: 'Danger: H350i may cause cancer by inhalation.' },
+      { name: 'My frit', hazards: '' }
+    ];
+    const { hazards, unknown } = recipe.hazardsOf(records);
+    expect(hazards.map((h) => [h.text, h.names])).to.eql([
+      ['Contains crystalline silica; avoid breathing the dust.', ['Silica', 'Kaolin']],
+      ['Danger: H350i may cause cancer by inhalation.', ['Cobalt Carbonate']]
+    ]);
+    expect(hazards[1].record).to.equal(records[4]);
+    expect(unknown).to.eql(['My frit']);
+    // Every standard material and additive has its hazards, so none of them is unknown.
+    const standard = [
+      ...(standardData.load('materials') as MaterialRecord[]),
+      ...(standardData.load('additives') as MaterialRecord[])
+    ] as Array<{ name: string; hazards?: string }>;
+    expect(recipe.hazardsOf(standard).unknown).to.eql([]);
+  });
 });
