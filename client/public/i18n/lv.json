@@ -39,6 +39,7 @@
     "guides": "Ceļveži",
     "about": "Par lietotni",
     "account": "Konts",
+    "trialAccount": "Izmēģinājums",
     "accountTitle": "Jūsu konts un iestatījumi",
     "signOut": "Izrakstīties",
     "createAccount": "Izveidot bezmaksas kontu"
@@ -66,7 +67,8 @@
     "problem": "Ziņot par problēmu",
     "pottery": "Ar rokām darināta keramika: Updraft Pottery Studio",
     "copyright": "© 2017–2026 Aaron Filson / Candling Development Studio · Bezmaksas atvērtā pirmkoda programmatūra (MIT licence)",
-    "languages": "Valodas"
+    "languages": "Valodas",
+    "language": "Valoda:"
   },
   "numbers": {
     "notANumber": "Ievadiet skaitli, piemēram, {example}.",
@@ -221,20 +223,26 @@
     "soldIn": "Pārdod",
     "showing": "Rāda {shown} no {noun, select, additives {{total, plural, zero {# piedevām} one {# piedevas} other {# piedevām}}} other {{total, plural, zero {# izejvielām} one {# izejvielas} other {# izejvielām}}}}",
     "name": "Nosaukums",
+    "equivalentWeight": "Ekvivalentmasa",
+    "firedWeight": "Masa pēc apdedzināšanas",
     "notes": "Piezīmes",
     "analysis": "Analīze",
+    "details": "Sīkāka informācija",
     "formula": "Formula",
+    "formulaLine": "Formula: {formula}",
     "useInstead": "<b>Tās vietā izmantot:</b> {list}",
     "similar": "Līdzīgas: {list}",
     "replaces": "Aizstāj: {list}",
     "aliases": "Citi nosaukumi: {list}",
     "madeBy": "Ražotājs: {name}",
     "source": "Avots:",
+    "hazardsLine": "Apdraudējumi: {hazards}",
     "noChemistry": "Nav ķīmiskā sastāva: neietilpst Zēgera formulā",
     "countedAs": "Ieskaitīts kā izejviela {name}",
     "nothingMatches": "Nav atbilstošu ierakstu. Izmēģiniet citu nosaukumu, veidu vai reģionu.",
     "loading": "Notiek ielāde...",
-    "notFetched": "Neizdevās ielādēt sarakstu. <retry>Mēģināt vēlreiz</retry>"
+    "notFetched": "Neizdevās ielādēt sarakstu. <retry>Mēģināt vēlreiz</retry>",
+    "showAll": "{noun, select, additives {{count, plural, zero {Rādīt visas # piedevas} one {Rādīt # piedevu} other {Rādīt visas # piedevas}}} other {{count, plural, zero {Rādīt visas # izejvielas} one {Rādīt # izejvielu} other {Rādīt visas # izejvielas}}}}"
   },
   "chemistryForm": {
     "name": "{noun, select, additive {Ievadiet piedevas nosaukumu.} other {Ievadiet izejvielas nosaukumu.}}",

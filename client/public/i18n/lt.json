@@ -39,6 +39,7 @@
     "guides": "Vadovai",
     "about": "Apie",
     "account": "Paskyra",
+    "trialAccount": "Bandomasis laikotarpis",
     "accountTitle": "Jūsų paskyra ir nustatymai",
     "signOut": "Atsijungti",
     "createAccount": "Sukurti nemokamą paskyrą"
@@ -66,7 +67,8 @@
     "problem": "Pranešti apie problemą",
     "pottery": "Rankų darbo keramika: Updraft Pottery Studio",
     "copyright": "© 2017–2026 Aaron Filson / Candling Development Studio · Nemokama atvirojo kodo programa (MIT licencija)",
-    "languages": "Kalbos"
+    "languages": "Kalbos",
+    "language": "Kalba:"
   },
   "numbers": {
     "notANumber": "Įveskite skaičių, pvz., {example}.",
@@ -221,20 +223,26 @@
     "soldIn": "Parduodama",
     "showing": "Rodoma {shown} iš {noun, select, additives {{total, plural, one {# priedo} few {# priedų} many {# priedo} other {# priedų}}} other {{total, plural, one {# žaliavos} few {# žaliavų} many {# žaliavos} other {# žaliavų}}}}",
     "name": "Pavadinimas",
+    "equivalentWeight": "Ekvivalentinė masė",
+    "firedWeight": "Masė po degimo",
     "notes": "Pastabos",
     "analysis": "Analizė",
+    "details": "Išsami informacija",
     "formula": "Formulė",
+    "formulaLine": "Formulė: {formula}",
     "useInstead": "<b>Vietoj to naudokite:</b> {list}",
     "similar": "Panašios: {list}",
     "replaces": "Pakeičia: {list}",
     "aliases": "Dar vadinama: {list}",
     "madeBy": "Gamintojas: {name}",
     "source": "Šaltinis:",
+    "hazardsLine": "Pavojai: {hazards}",
     "noChemistry": "Nėra cheminės sudėties: neįtraukta į Segerio formulę",
     "countedAs": "Skaičiuojama kaip žaliava {name}",
     "nothingMatches": "Nieko nerasta. Pabandykite kitą pavadinimą, rūšį ar regioną.",
     "loading": "Įkeliama...",
-    "notFetched": "Sąrašo gauti nepavyko. <retry>Bandyti dar kartą</retry>"
+    "notFetched": "Sąrašo gauti nepavyko. <retry>Bandyti dar kartą</retry>",
+    "showAll": "{noun, select, additives {{count, plural, one {Rodyti # priedą} few {Rodyti visus # priedus} many {Rodyti visus # priedo} other {Rodyti visus # priedų}}} other {{count, plural, one {Rodyti # žaliavą} few {Rodyti visas # žaliavas} many {Rodyti visas # žaliavos} other {Rodyti visų # žaliavų}}}}"
   },
   "chemistryForm": {
     "name": "{noun, select, additive {Įveskite priedo pavadinimą.} other {Įveskite žaliavos pavadinimą.}}",

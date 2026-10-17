@@ -75,6 +75,7 @@
   "density-choices": "Välj specifik vikt, baumégrader eller pintvikt, eller låt regionen avgöra.",
   "englishTerms-choices": "Välj på eller av.",
   "notice-choices": "Välj om meddelandet ska visas eller döljas.",
+  "recipeHelp-choices": "Välj auto, shown eller hidden.",
   "shelf-invalid": "Förrådet är en lista med högst {most} råvaror.",
   "missing-information": "Obligatoriska uppgifter saknas",
   "invalid-id": "Ogiltigt id",

@@ -75,6 +75,7 @@
   "density-choices": "Válassza a fajsúlyt, a Baumé-fokot vagy a pint-súlyt, vagy bízza a régiójára.",
   "englishTerms-choices": "Válassza a bekapcsolt vagy a kikapcsolt állapotot.",
   "notice-choices": "Válassza a megjelenítést vagy az elrejtést.",
+  "recipeHelp-choices": "Válasszon: auto, shown vagy hidden.",
   "shelf-invalid": "A készlet legfeljebb {most} nyersanyagból álló lista.",
   "missing-information": "Hiányzó kötelező adatok",
   "invalid-id": "Érvénytelen azonosító",

@@ -39,6 +39,7 @@
     "guides": "Poradniki",
     "about": "O aplikacji",
     "account": "Konto",
+    "trialAccount": "Okres próbny",
     "accountTitle": "Konto i ustawienia",
     "signOut": "Wyloguj się",
     "createAccount": "Załóż bezpłatne konto"
@@ -66,7 +67,8 @@
     "problem": "Zgłoś problem",
     "pottery": "Ręcznie robiona ceramika: Updraft Pottery Studio",
     "copyright": "© 2017–2026 Aaron Filson / Candling Development Studio · Bezpłatne oprogramowanie open source (licencja MIT)",
-    "languages": "Języki"
+    "languages": "Języki",
+    "language": "Język:"
   },
   "numbers": {
     "notANumber": "Należy wpisać liczbę, np. {example}.",
@@ -221,20 +223,26 @@
     "soldIn": "W sprzedaży w",
     "showing": "Widoczne: {shown} z {noun, select, additives {{total, plural, one {# dodatku} few {# dodatków} many {# dodatków} other {# dodatku}}} other {{total, plural, one {# surowca} few {# surowców} many {# surowców} other {# surowca}}}}",
     "name": "Nazwa",
+    "equivalentWeight": "Masa równoważnikowa",
+    "firedWeight": "Masa po wypale",
     "notes": "Uwagi",
     "analysis": "Skład chemiczny",
+    "details": "Szczegóły",
     "formula": "Wzór",
+    "formulaLine": "Wzór: {formula}",
     "useInstead": "<b>Zamiast niego:</b> {list}",
     "similar": "Podobne: {list}",
     "replaces": "Zastępuje: {list}",
     "aliases": "Inne nazwy: {list}",
     "madeBy": "Producent: {name}",
     "source": "Źródło:",
+    "hazardsLine": "Zagrożenia: {hazards}",
     "noChemistry": "Bez składu chemicznego: pominięty we wzorze Segera",
     "countedAs": "Liczony jako {name}",
     "nothingMatches": "Brak pasujących pozycji. Warto spróbować innej nazwy, rodzaju lub regionu.",
     "loading": "Wczytywanie…",
-    "notFetched": "Nie udało się pobrać listy. <retry>Spróbuj ponownie</retry>"
+    "notFetched": "Nie udało się pobrać listy. <retry>Spróbuj ponownie</retry>",
+    "showAll": "{noun, select, additives {{count, plural, one {Pokaż # dodatek} few {Pokaż wszystkie # dodatki} many {Pokaż wszystkie # dodatków} other {Pokaż wszystkie # dodatku}}} other {{count, plural, one {Pokaż # surowiec} few {Pokaż wszystkie # surowce} many {Pokaż wszystkie # surowców} other {Pokaż wszystkie # surowca}}}}"
   },
   "chemistryForm": {
     "name": "{noun, select, additive {Należy podać nazwę dodatku.} other {Należy podać nazwę surowca.}}",

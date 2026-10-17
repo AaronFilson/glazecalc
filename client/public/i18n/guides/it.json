@@ -111,6 +111,7 @@
       "control": "Una concentrazione di controllo (管理濃度): il riferimento per valutare l’aria di un’area di lavoro in base alle misurazioni fatte lì, non un limite a ciò che respira una singola persona."
     },
     "setBy": "Fissato da: <link>{law}</link>.",
+    "from": "Si applica dal {date}.",
     "lowerThanEu": "Inferiore al limite vincolante dell’UE di {value} mg/m³.",
     "sameAsEu": "Uguale al limite vincolante dell’UE.",
     "recommendedBy": "{abbr} ({by}) raccomanda questo valore nel documento <link>{title}</link>. Non è un obbligo di legge.",
@@ -147,16 +148,31 @@
       "jpSmall": "Altri oggetti di capacità inferiore a 1,1 L, non da cottura",
       "jpLarge": "Altri oggetti da 1,1 L a meno di 3 L, non da cottura",
       "jpStorage": "Altri oggetti di 3 L o più, non da cottura",
-      "jpCooking": "Recipienti da cottura, con profondità di 2,5 cm o più"
+      "jpCooking": "Recipienti da cottura, con profondità di 2,5 cm o più",
+      "krFlat": "Oggetti non riempibili, o profondi meno di 2,5 cm",
+      "krSmall": "Altri oggetti riempibili, sotto 1,1 L",
+      "krMedium": "Altri oggetti riempibili, da 1,1 L a meno di 3 L",
+      "krStorage": "Altri oggetti riempibili, da 3 L in su",
+      "krCooking": "Recipienti da cottura, per scaldare i cibi",
+      "twFlat": "Oggetti non riempibili, o profondi al massimo 2,5 cm",
+      "twSmall": "Oggetti profondi più di 2,5 cm, fino a 1,1 L",
+      "twLarge": "Oggetti profondi più di 2,5 cm, oltre 1,1 L",
+      "myFlat": "Oggetti piani",
+      "mySmall": "Oggetti cavi piccoli",
+      "myLarge": "Oggetti cavi grandi",
+      "myCooking": "Recipienti da cottura"
     },
     "judged": {
       "average": "media di 6 pezzi",
-      "each": "ciascuno dei 6 pezzi"
+      "each": "ciascuno dei 6 pezzi",
+      "averageOf": "media di {count} pezzi",
+      "eachOf": "ciascuno dei {count} pezzi"
     },
     "euRules": "Qui valgono le norme dell’UE.",
     "law": "Limiti fissati da: <link>{law}</link>.",
     "inForce": "In vigore dal {date}.",
     "atMost": "Un oggetto supera la prova se non cede più del limite: la legge dice «al massimo».",
+    "ppm": "Qui ppm indica milligrammi per litro della soluzione di prova (mg/L).",
     "unknown": "Non abbiamo ancora confermato le norme in questo paese ({region}).",
     "choosePrompt": "Scegliere il paese per vederne le norme."
   },

@@ -4,6 +4,14 @@
     "signedInAs": "Přihlášený účet: {email}.",
     "trying": "Zkoušíte aplikaci Glazecalc jako {name}. Začněte receptem.",
     "welcomeBack": "Navažte na svou předchozí práci.",
+    "welcome": {
+      "heading": "Vítejte v Glazecalcu",
+      "text": "Váš zápisník je připraven. Dobrý první krok: zadejte glazuru, kterou už míchíte, s jejími surovinami a množstvími, a podívejte se na její Segerův vzorec.",
+      "firstRecipe": "Začít první recept",
+      "confirmHeading": "Potvrďte svůj e-mail",
+      "confirm": "Potvrďte svůj e-mail: poslali jsme odkaz na adresu {email}. Dvoustupňové přihlášení ho potřebuje. Na <account>stránce účtu</account> ho můžete poslat znovu.",
+      "confirmText": "Poslali jsme odkaz na adresu {email}. Otevřete ho a potvrďte, že adresa je vaše: dvoustupňové přihlášení ho potřebuje. Na <account>stránce účtu</account> ho můžete poslat znovu."
+    },
     "sections": {
       "recipe": {
         "title": "Recepty",
@@ -32,6 +40,10 @@
       "guides": {
         "title": "Návody",
         "text": "Od toho, co je glazura, až po její výpal, a jak přitom zajistit bezpečnost všech."
+      },
+      "account": {
+        "title": "Účet a nastavení",
+        "text": "Nastavení, vaše heslo, dvoustupňové přihlášení a stažení všeho, co tu uchováváte."
       }
     },
     "newHere": "Segerův vzorec<en>unity formula</en> je pro vás novinka? Základy vysvětluje <advice>stránka s radami</advice> a <about>stránka o aplikaci</about> popisuje, jak Glazecalc funguje."
@@ -39,15 +51,29 @@
   "firing": {
     "title": "Záznamy výpalů",
     "lead": "Zaznamenejte každý výpal: časy, teploty, žároměrky a poznámky k peci.",
+    "newHeading": "Nový výpal",
+    "titleLabel": "Název",
+    "kiln": "Pec",
+    "date": "Datum",
+    "notes": "Poznámky",
+    "fieldSelect": "Pole k zaznamenání",
     "addField": "Přidat pole",
+    "included": "Pole v tomto záznamu",
     "moveLeft": "Posunout pole doleva",
     "moveRight": "Posunout pole doprava",
     "removeField": "Odebrat pole",
     "addRow": "Přidat řádek do tabulky výpalu",
+    "addRowWhy": "Nejprve přidejte pole.",
+    "tableEmpty": "Přidejte výše pole a potom řádky.",
+    "recordHeading": "Zaznamenat výpal",
     "rowActions": "Akce s řádkem",
     "cell": "{field}, řádek {row}",
     "removeRow": "Odebrat řádek",
     "save": "Uložit",
+    "storedHeading": "Moje uložené výpaly",
+    "noneSaved": "Zatím žádné. Uložené výpaly se objeví tady.",
+    "storedIn": "Vypáleno v peci {kiln} dne {date}.",
+    "storedOn": "Vypáleno dne {date}.",
     "storedNotes": "Poznámky: {notes}",
     "titleMissing": "Zadejte název výpalu.",
     "fieldsMissing": "Přidejte alespoň jedno pole k zaznamenání, například {example}.",
@@ -59,7 +85,12 @@
   "notes": {
     "title": "Poznámky",
     "lead": "Vše ostatní o vašich glazurách, co stojí za zapamatování.",
+    "newHeading": "Nová poznámka",
+    "titleLabel": "Název",
+    "content": "Poznámka",
     "save": "Uložit",
+    "mineHeading": "Moje uložené poznámky",
+    "noneSaved": "Zatím žádné. Uložené poznámky se objeví tady.",
     "titleMissing": "Zadejte název poznámky.",
     "contentMissing": "Napište text poznámky.",
     "untitled": "Poznámka bez názvu",

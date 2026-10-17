@@ -39,6 +39,7 @@
     "guides": "Anleitungen",
     "about": "Über Glazecalc",
     "account": "Konto",
+    "trialAccount": "Testzugang",
     "accountTitle": "Ihr Konto und Ihre Einstellungen",
     "signOut": "Abmelden",
     "createAccount": "Kostenloses Konto erstellen"
@@ -66,7 +67,8 @@
     "problem": "Problem melden",
     "pottery": "Handgemachte Keramik: Updraft Pottery Studio",
     "copyright": "© 2017–2026 Aaron Filson / Candling Development Studio · Kostenlos und Open Source (MIT-Lizenz)",
-    "languages": "Sprachen"
+    "languages": "Sprachen",
+    "language": "Sprache:"
   },
   "numbers": {
     "notANumber": "Geben Sie eine Zahl ein, zum Beispiel {example}.",
@@ -221,20 +223,26 @@
     "soldIn": "Erhältlich in",
     "showing": "{shown} von {noun, select, additives {{total, plural, one {# Zusatz} other {# Zusätzen}}} other {{total, plural, one {# Rohstoff} other {# Rohstoffen}}}} angezeigt",
     "name": "Name",
+    "equivalentWeight": "Äquivalentgewicht",
+    "firedWeight": "Gewicht nach dem Brand",
     "notes": "Notizen",
     "analysis": "Analyse",
+    "details": "Details",
     "formula": "Formel",
+    "formulaLine": "Formel: {formula}",
     "useInstead": "<b>Stattdessen verwenden:</b> {list}",
     "similar": "Ähnlich: {list}",
     "replaces": "Ersetzt: {list}",
     "aliases": "Auch genannt: {list}",
     "madeBy": "Hersteller: {name}",
     "source": "Quelle:",
+    "hazardsLine": "Gefahren: {hazards}",
     "noChemistry": "Keine Analyse: nicht in der Segerformel",
     "countedAs": "Gezählt als {name}",
     "nothingMatches": "Keine Treffer. Versuchen Sie einen anderen Namen, eine andere Art oder Region.",
     "loading": "Wird geladen …",
-    "notFetched": "Die Liste konnte nicht geladen werden. <retry>Erneut versuchen</retry>"
+    "notFetched": "Die Liste konnte nicht geladen werden. <retry>Erneut versuchen</retry>",
+    "showAll": "{noun, select, additives {{count, plural, one {# Zusatz anzeigen} other {Alle # Zusätze anzeigen}}} other {{count, plural, one {# Rohstoff anzeigen} other {Alle # Rohstoffe anzeigen}}}}"
   },
   "chemistryForm": {
     "name": "{noun, select, additive {Geben Sie dem Zusatz einen Namen.} other {Geben Sie dem Rohstoff einen Namen.}}",

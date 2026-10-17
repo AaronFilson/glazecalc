@@ -111,6 +111,7 @@
       "control": "En kontrolkoncentration (管理濃度): rettesnoren for at bedømme luften i et arbejdsområde ud fra målinger dér, ikke en grænse for, hvad én person indånder."
     },
     "setBy": "Fastsat i <link>{law}</link>.",
+    "from": "Den gælder fra {date}.",
     "lowerThanEu": "Lavere end EU’s bindende grænseværdi på {value} mg/m³.",
     "sameAsEu": "Den samme som EU’s bindende grænseværdi.",
     "recommendedBy": "{abbr} ({by}) anbefaler denne værdi i <link>{title}</link>. Den er ikke fastsat ved lov.",
@@ -147,16 +148,31 @@
       "jpSmall": "Andre genstande under 1,1 L, ikke til madlavning",
       "jpLarge": "Andre genstande fra 1,1 L til under 3 L, ikke til madlavning",
       "jpStorage": "Andre genstande på 3 L eller mere, ikke til madlavning",
-      "jpCooking": "Koge- og stegeredskaber, 2,5 cm dybe eller mere"
+      "jpCooking": "Koge- og stegeredskaber, 2,5 cm dybe eller mere",
+      "krFlat": "Genstande, der ikke kan fyldes, eller som er mindre end 2,5 cm dybe",
+      "krSmall": "Andre genstande, der kan fyldes, under 1,1 L",
+      "krMedium": "Andre genstande, der kan fyldes, fra 1,1 L til under 3 L",
+      "krStorage": "Andre genstande, der kan fyldes, 3 L eller mere",
+      "krCooking": "Koge- og stegeredskaber, til opvarmning af mad",
+      "twFlat": "Genstande, der ikke kan fyldes, eller som højst er 2,5 cm dybe",
+      "twSmall": "Genstande, der er dybere end 2,5 cm, op til 1,1 L",
+      "twLarge": "Genstande, der er dybere end 2,5 cm, over 1,1 L",
+      "myFlat": "Fladvarer",
+      "mySmall": "Små hulvarer",
+      "myLarge": "Store hulvarer",
+      "myCooking": "Koge- og stegeredskaber"
     },
     "judged": {
       "average": "gennemsnit af 6 genstande",
-      "each": "hver af de 6 for sig"
+      "each": "hver af de 6 for sig",
+      "averageOf": "gennemsnit af {count} genstande",
+      "eachOf": "hver af de {count} for sig"
     },
     "euRules": "Her gælder EU’s regler.",
     "law": "Fastsat i <link>{law}</link>.",
     "inForce": "Gælder fra den {date}.",
     "atMost": "En genstand består, hvis den ikke afgiver mere end grænseværdien: Loven siger »højst«.",
+    "ppm": "ppm betyder her milligram pr. liter af prøveopløsningen (mg/L).",
     "unknown": "Vi har endnu ikke bekræftet reglerne i {region}.",
     "choosePrompt": "Vælg land for at se reglerne der."
   },

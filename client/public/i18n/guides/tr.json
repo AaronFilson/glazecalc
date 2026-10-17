@@ -111,6 +111,7 @@
       "control": "Bir kontrol konsantrasyonu (管理濃度): bir çalışma alanının havasını oradaki ölçümlere göre değerlendirmek için kullanılan ölçüttür; bir kişinin soluduğu hava için bir sınır değer değildir."
     },
     "setBy": "Belirleyen: <link>{law}</link>.",
+    "from": "{date} tarihinden itibaren geçerlidir.",
     "lowerThanEu": "AB’nin {value} mg/m³ olan bağlayıcı sınır değerinden düşüktür.",
     "sameAsEu": "AB’nin bağlayıcı sınır değeriyle aynıdır.",
     "recommendedBy": "{abbr} ({by}), bu değeri <link>{title}</link> adlı yayınında önerir. Bu bir yasa değildir.",
@@ -147,16 +148,31 @@
       "jpSmall": "Pişirme için olmayan diğer kaplar: 1,1 L’den az",
       "jpLarge": "Pişirme için olmayan diğer kaplar: 1,1 L veya daha fazla, 3 L’den az",
       "jpStorage": "Pişirme için olmayan diğer kaplar: 3 L veya daha fazla",
-      "jpCooking": "Pişirme kapları, derinliği 2,5 cm veya daha fazla"
+      "jpCooking": "Pişirme kapları, derinliği 2,5 cm veya daha fazla",
+      "krFlat": "Doldurulamayan veya derinliği 2,5 cm’den az olan kaplar",
+      "krSmall": "Doldurulabilen diğer kaplar, 1,1 L’nin altında",
+      "krMedium": "Doldurulabilen diğer kaplar, 1,1 L ile 3 L’nin altı arasında",
+      "krStorage": "Doldurulabilen diğer kaplar, 3 L veya daha fazla",
+      "krCooking": "Yiyecek ısıtmak için pişirme kapları",
+      "twFlat": "Doldurulamayan veya derinliği en fazla 2,5 cm olan kaplar",
+      "twSmall": "Derinliği 2,5 cm’den fazla olan kaplar, 1,1 L’ye kadar",
+      "twLarge": "Derinliği 2,5 cm’den fazla olan kaplar, 1,1 L’nin üzerinde",
+      "myFlat": "Düz kaplar",
+      "mySmall": "Küçük çukur kaplar",
+      "myLarge": "Büyük çukur kaplar",
+      "myCooking": "Pişirme kapları"
     },
     "judged": {
       "average": "6 parçanın ortalaması",
-      "each": "6 parçadan herhangi biri"
+      "each": "6 parçadan herhangi biri",
+      "averageOf": "{count} parçanın ortalaması",
+      "eachOf": "{count} parçadan herhangi biri"
     },
     "euRules": "Burada AB kuralları uygulanır.",
     "law": "Belirleyen: <link>{law}</link>.",
     "inForce": "Yürürlük tarihi: {date}.",
     "atMost": "Bir parça, sınır değerden fazlasını salmıyorsa testi geçer: yasa “en fazla” der.",
+    "ppm": "Burada ppm, deney çözeltisinin litresindeki miligram anlamına gelir (mg/L).",
     "unknown": "{region} ülkesindeki kuralları henüz doğrulamadık.",
     "choosePrompt": "Kuralları görmek için ülkenizi seçin."
   },

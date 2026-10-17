@@ -111,6 +111,7 @@
       "control": "Une concentration de contrôle (管理濃度) : la référence pour juger l’air d’une zone de travail à partir des mesures qui y sont faites, pas une limite de ce qu’une personne respire."
     },
     "setBy": "Valeur fixée par <link>{law}</link>.",
+    "from": "Elle s’applique à partir du {date}.",
     "lowerThanEu": "Inférieure à la valeur limite contraignante de l’UE, qui est de {value} mg/m³.",
     "sameAsEu": "Identique à la valeur limite contraignante de l’UE.",
     "recommendedBy": "{abbr} ({by}) recommande cette valeur dans <link>{title}</link>. Elle n’a pas force de loi.",
@@ -147,16 +148,31 @@
       "jpSmall": "Autres objets de moins de 1,1 L, non destinés à la cuisson",
       "jpLarge": "Autres objets de 1,1 L à moins de 3 L, non destinés à la cuisson",
       "jpStorage": "Autres objets de 3 L ou plus, non destinés à la cuisson",
-      "jpCooking": "Ustensiles de cuisson, de 2,5 cm de profondeur ou plus"
+      "jpCooking": "Ustensiles de cuisson, de 2,5 cm de profondeur ou plus",
+      "krFlat": "Objets non remplissables, ou de moins de 2,5 cm de profondeur",
+      "krSmall": "Autres objets remplissables, de moins de 1,1 L",
+      "krMedium": "Autres objets remplissables, de 1,1 L à moins de 3 L",
+      "krStorage": "Autres objets remplissables, de 3 L ou plus",
+      "krCooking": "Ustensiles de cuisson, pour chauffer des aliments",
+      "twFlat": "Objets non remplissables, ou de 2,5 cm de profondeur au plus",
+      "twSmall": "Objets de plus de 2,5 cm de profondeur, jusqu’à 1,1 L",
+      "twLarge": "Objets de plus de 2,5 cm de profondeur, de plus de 1,1 L",
+      "myFlat": "Objets plats",
+      "mySmall": "Petits objets creux",
+      "myLarge": "Grands objets creux",
+      "myCooking": "Ustensiles de cuisson"
     },
     "judged": {
       "average": "moyenne de 6 pièces",
-      "each": "chacune des 6"
+      "each": "chacune des 6",
+      "averageOf": "moyenne de {count} pièces",
+      "eachOf": "chacune des {count}"
     },
     "euRules": "Les règles de l’UE s’appliquent ici.",
     "law": "Limites fixées par <link>{law}</link>.",
     "inForce": "En vigueur à partir du {date}.",
     "atMost": "Un objet est conforme s’il ne libère pas plus que la limite : la loi dit « au plus ».",
+    "ppm": "Ici, ppm désigne des milligrammes par litre de solution d’essai (mg/L).",
     "unknown": "Nous n’avons pas encore confirmé les règles de ce pays ({region}).",
     "choosePrompt": "Choisissez votre pays pour voir ses règles."
   },

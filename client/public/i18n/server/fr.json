@@ -75,6 +75,7 @@
   "density-choices": "Choisissez la densité relative, les degrés Baumé ou le poids de la pinte, ou laissez votre région décider.",
   "englishTerms-choices": "Choisissez activé (on) ou désactivé (off).",
   "notice-choices": "Choisissez affiché (shown) ou masqué (hidden).",
+  "recipeHelp-choices": "Choisissez auto, shown ou hidden.",
   "shelf-invalid": "Le stock est une liste de {most} matières au plus.",
   "missing-information": "Informations obligatoires manquantes.",
   "invalid-id": "Identifiant non valide.",

@@ -75,6 +75,7 @@
   "density-choices": "Επιλέξτε ειδικό βάρος, βαθμούς Baumé ή βάρος πίντας, ή αφήστε το να ακολουθεί την περιοχή σας.",
   "englishTerms-choices": "Επιλέξτε ενεργό (on) ή ανενεργό (off).",
   "notice-choices": "Επιλέξτε εμφάνιση (shown) ή απόκρυψη (hidden).",
+  "recipeHelp-choices": "Επιλέξτε auto, shown ή hidden.",
   "shelf-invalid": "Το απόθεμα είναι λίστα με έως {most} υλικά.",
   "missing-information": "Λείπουν απαραίτητες πληροφορίες",
   "invalid-id": "Μη έγκυρο αναγνωριστικό",

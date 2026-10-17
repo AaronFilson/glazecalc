@@ -75,6 +75,7 @@
   "density-choices": "Wählen Sie spezifisches Gewicht, Baumé oder Pint-Gewicht, oder überlassen Sie es Ihrer Region.",
   "englishTerms-choices": "Wählen Sie „Ein“ oder „Aus“.",
   "notice-choices": "Wählen Sie „Angezeigt“ oder „Ausgeblendet“.",
+  "recipeHelp-choices": "Wählen Sie auto, shown oder hidden.",
   "shelf-invalid": "Der Vorrat ist eine Liste mit bis zu {most} Rohstoffen.",
   "missing-information": "Erforderliche Angaben fehlen",
   "invalid-id": "Ungültige ID",

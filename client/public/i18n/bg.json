@@ -39,6 +39,7 @@
     "guides": "Наръчници",
     "about": "За приложението",
     "account": "Профил",
+    "trialAccount": "Пробен достъп",
     "accountTitle": "Профил и настройки",
     "signOut": "Изход",
     "createAccount": "Създай безплатен профил"
@@ -66,7 +67,8 @@
     "problem": "Съобщи за проблем",
     "pottery": "Ръчно изработена керамика: Updraft Pottery Studio",
     "copyright": "© 2017–2026 Aaron Filson / Candling Development Studio · Безплатен софтуер с отворен код (лиценз MIT)",
-    "languages": "Езици"
+    "languages": "Езици",
+    "language": "Език:"
   },
   "numbers": {
     "notANumber": "Въведете число, например {example}.",
@@ -221,20 +223,26 @@
     "soldIn": "Продава се в",
     "showing": "Показани: {shown} от {noun, select, additives {{total, plural, one {# добавка} other {# добавки}}} other {{total, plural, one {# суровина} other {# суровини}}}}",
     "name": "Име",
+    "equivalentWeight": "Еквивалентна маса",
+    "firedWeight": "Маса след изпичане",
     "notes": "Бележки",
     "analysis": "Анализ",
+    "details": "Подробности",
     "formula": "Формула",
+    "formulaLine": "Формула: {formula}",
     "useInstead": "<b>Вместо нея:</b> {list}",
     "similar": "Подобни: {list}",
     "replaces": "Заменя: {list}",
     "aliases": "Наричана също: {list}",
     "madeBy": "Производител: {name}",
     "source": "Източник:",
+    "hazardsLine": "Опасности: {hazards}",
     "noChemistry": "Без химичен състав: не влиза във формулата на Зегер",
     "countedAs": "Отчита се като {name}",
     "nothingMatches": "Няма съвпадения. Опитайте с друго име, вид или регион.",
     "loading": "Зареждане…",
-    "notFetched": "Списъкът не можа да бъде зареден. <retry>Опитайте отново</retry>"
+    "notFetched": "Списъкът не можа да бъде зареден. <retry>Опитайте отново</retry>",
+    "showAll": "{noun, select, additives {{count, plural, one {Покажи # добавка} other {Покажи всички # добавки}}} other {{count, plural, one {Покажи # суровина} other {Покажи всички # суровини}}}}"
   },
   "chemistryForm": {
     "name": "{noun, select, additive {Въведете име на добавката.} other {Въведете име на суровината.}}",

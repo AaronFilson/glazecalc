@@ -111,6 +111,7 @@
       "control": "Een beheersconcentratie (管理濃度): de maatstaf om de lucht van een werkruimte te beoordelen aan de hand van metingen daar, geen grens voor wat één persoon inademt."
     },
     "setBy": "Vastgelegd in <link>{law}</link>.",
+    "from": "Het geldt vanaf {date}.",
     "lowerThanEu": "Lager dan de bindende EU-grenswaarde van {value} mg/m³.",
     "sameAsEu": "Gelijk aan de bindende EU-grenswaarde.",
     "recommendedBy": "{abbr} ({by}) beveelt deze waarde aan in <link>{title}</link>. Het is geen wet.",
@@ -147,16 +148,31 @@
       "jpSmall": "Overige voorwerpen van minder dan 1,1 L, niet om in te koken",
       "jpLarge": "Overige voorwerpen van 1,1 L tot minder dan 3 L, niet om in te koken",
       "jpStorage": "Overige voorwerpen van 3 L of meer, niet om in te koken",
-      "jpCooking": "Kookgerei, 2,5 cm diep of meer"
+      "jpCooking": "Kookgerei, 2,5 cm diep of meer",
+      "krFlat": "Voorwerpen die niet gevuld kunnen worden, of minder dan 2,5 cm diep",
+      "krSmall": "Andere vulbare voorwerpen, onder 1,1 L",
+      "krMedium": "Andere vulbare voorwerpen, van 1,1 L tot onder 3 L",
+      "krStorage": "Andere vulbare voorwerpen, van 3 L of meer",
+      "krCooking": "Kookgerei, om voedsel te verhitten",
+      "twFlat": "Voorwerpen die niet gevuld kunnen worden, of ten hoogste 2,5 cm diep",
+      "twSmall": "Voorwerpen van meer dan 2,5 cm diep, tot 1,1 L",
+      "twLarge": "Voorwerpen van meer dan 2,5 cm diep, boven 1,1 L",
+      "myFlat": "Platte voorwerpen",
+      "mySmall": "Kleine holle voorwerpen",
+      "myLarge": "Grote holle voorwerpen",
+      "myCooking": "Kookgerei"
     },
     "judged": {
       "average": "gemiddelde van 6 stuks",
-      "each": "elk van de 6 afzonderlijk"
+      "each": "elk van de 6 afzonderlijk",
+      "averageOf": "gemiddelde van {count} stuks",
+      "eachOf": "elk van de {count} afzonderlijk"
     },
     "euRules": "Hier gelden de regels van de EU.",
     "law": "Vastgelegd in <link>{law}</link>.",
     "inForce": "Van kracht vanaf {date}.",
     "atMost": "Een voorwerp voldoet als het niet meer afgeeft dan de grenswaarde: de wet zegt “ten hoogste”.",
+    "ppm": "ppm betekent hier milligram per liter van de proefoplossing (mg/L).",
     "unknown": "{region}: we hebben de regels daar nog niet bevestigd.",
     "choosePrompt": "Kies uw land om de regels daar te zien."
   },

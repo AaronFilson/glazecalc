@@ -111,6 +111,7 @@
       "control": "Hallintapitoisuus (管理濃度): mittapuu, jolla työtilan ilmaa arvioidaan siellä tehtyjen mittausten perusteella, ei raja-arvo sille, mitä yksi henkilö hengittää."
     },
     "setBy": "Säädös: <link>{law}</link>.",
+    "from": "Se on voimassa {date} alkaen.",
     "lowerThanEu": "Alempi kuin EU:n sitova raja-arvo {value} mg/m³.",
     "sameAsEu": "Sama kuin EU:n sitova raja-arvo.",
     "recommendedBy": "{abbr} ({by}) suosittelee tätä arvoa julkaisussaan <link>{title}</link>. Arvo ei ole laissa säädetty.",
@@ -147,16 +148,31 @@
       "jpSmall": "Muut esineet, alle 1,1 L, joita ei ole tarkoitettu keittämiseen",
       "jpLarge": "Muut esineet, vähintään 1,1 L ja alle 3 L, joita ei ole tarkoitettu keittämiseen",
       "jpStorage": "Muut esineet, vähintään 3 L, joita ei ole tarkoitettu keittämiseen",
-      "jpCooking": "Keittoastiat, syvyys vähintään 2,5 cm"
+      "jpCooking": "Keittoastiat, syvyys vähintään 2,5 cm",
+      "krFlat": "Esineet, joita ei voi täyttää, tai joiden syvyys on alle 2,5 cm",
+      "krSmall": "Muut täytettävät esineet, alle 1,1 L",
+      "krMedium": "Muut täytettävät esineet, 1,1 L:stä alle 3 L:aan",
+      "krStorage": "Muut täytettävät esineet, vähintään 3 L",
+      "krCooking": "Keittoastiat, ruoan kuumentamiseen",
+      "twFlat": "Esineet, joita ei voi täyttää, tai joiden syvyys on enintään 2,5 cm",
+      "twSmall": "Esineet, joiden syvyys on yli 2,5 cm, enintään 1,1 L",
+      "twLarge": "Esineet, joiden syvyys on yli 2,5 cm, yli 1,1 L",
+      "myFlat": "Matalat astiat",
+      "mySmall": "Pienet syvät astiat",
+      "myLarge": "Suuret syvät astiat",
+      "myCooking": "Keittoastiat"
     },
     "judged": {
       "average": "6 esineen keskiarvo",
-      "each": "jokainen 6 esineestä erikseen"
+      "each": "jokainen 6 esineestä erikseen",
+      "averageOf": "{count} esineen keskiarvo",
+      "eachOf": "jokainen {count} esineestä erikseen"
     },
     "euRules": "Maassa noudatetaan EU:n sääntöjä.",
     "law": "Säädös: <link>{law}</link>.",
     "inForce": "Voimassa {date} alkaen.",
     "atMost": "Esine läpäisee testin, jos siitä siirtyy enintään raja-arvon verran: laissa sanotaan ”enintään”.",
+    "ppm": "ppm tarkoittaa tässä milligrammaa litrassa koeliuosta (mg/L).",
     "unknown": "Maan {region} sääntöjä ei ole vielä vahvistettu.",
     "choosePrompt": "Valitse maa, niin sivulla näkyvät sen säännöt."
   },

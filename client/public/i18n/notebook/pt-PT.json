@@ -4,6 +4,14 @@
     "signedInAs": "Sessão iniciada como {email}.",
     "trying": "Está a experimentar o Glazecalc como {name}. Comece por uma receita.",
     "welcomeBack": "Continue onde parou.",
+    "welcome": {
+      "heading": "Boas-vindas ao Glazecalc",
+      "text": "O seu caderno está pronto. Um bom primeiro passo: introduza um vidrado que já prepare, com as suas matérias-primas e quantidades, e veja a sua fórmula de Seger.",
+      "firstRecipe": "Começar a sua primeira receita",
+      "confirmHeading": "Confirmar o seu e-mail",
+      "confirm": "Confirme o seu e-mail: enviámos uma ligação para {email}. O início de sessão em dois passos precisa dela. A sua <account>página da conta</account> pode enviá-la novamente.",
+      "confirmText": "Enviámos uma ligação para {email}. Abra-a para confirmar que o endereço é seu: o início de sessão em dois passos precisa dela. A sua <account>página da conta</account> pode enviá-la novamente."
+    },
     "sections": {
       "recipe": {
         "title": "Receitas",
@@ -32,6 +40,10 @@
       "guides": {
         "title": "Guias",
         "text": "Desde o que é um vidrado até à sua cozedura, mantendo todos em segurança pelo caminho."
+      },
+      "account": {
+        "title": "Conta e definições",
+        "text": "Definições, a sua palavra-passe, o início de sessão em dois passos e uma transferência de tudo o que guarda aqui."
       }
     },
     "newHere": "Nunca usou fórmulas de Seger? A <advice>página de conselhos</advice> explica o básico, e a <about>página Sobre</about> explica como funciona o Glazecalc."
@@ -39,15 +51,29 @@
   "firing": {
     "title": "Registos de cozedura",
     "lead": "Registe cada cozedura: horas, temperaturas, cones e notas sobre o forno.",
+    "newHeading": "Uma nova cozedura",
+    "titleLabel": "Título",
+    "kiln": "Forno",
+    "date": "Data",
+    "notes": "Notas",
+    "fieldSelect": "Campos a registar",
     "addField": "Adicionar o campo",
+    "included": "Campos neste registo",
     "moveLeft": "Mover o campo para a esquerda",
     "moveRight": "Mover o campo para a direita",
     "removeField": "Remover o campo",
     "addRow": "Adicionar uma linha à tabela da cozedura",
+    "addRowWhy": "Adicione primeiro um campo.",
+    "tableEmpty": "Adicione um campo acima e depois linhas.",
+    "recordHeading": "Registar a cozedura",
     "rowActions": "Ações da linha",
     "cell": "{field}, linha {row}",
     "removeRow": "Remover a linha",
     "save": "Guardar",
+    "storedHeading": "As minhas cozeduras guardadas",
+    "noneSaved": "Ainda nenhuma. As cozeduras guardadas aparecem aqui.",
+    "storedIn": "Cozido em {kiln} em {date}.",
+    "storedOn": "Cozido em {date}.",
     "storedNotes": "Notas: {notes}",
     "titleMissing": "Dê um título à cozedura.",
     "fieldsMissing": "Adicione pelo menos um campo a registar, como {example}.",
@@ -59,7 +85,12 @@
   "notes": {
     "title": "Notas",
     "lead": "Tudo o resto que valha a pena lembrar sobre os seus vidrados.",
+    "newHeading": "Uma nova nota",
+    "titleLabel": "Título",
+    "content": "Nota",
     "save": "Guardar",
+    "mineHeading": "As minhas notas guardadas",
+    "noneSaved": "Ainda nenhuma. As notas guardadas aparecem aqui.",
     "titleMissing": "Dê um título à nota.",
     "contentMissing": "Escreva a nota.",
     "untitled": "Nota sem título",

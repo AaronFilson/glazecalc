@@ -75,6 +75,7 @@
   "density-choices": "Özgül ağırlık, bome veya pint ağırlığından birini seçin ya da bölgenize bırakın.",
   "englishTerms-choices": "Açık veya kapalı seçeneğini seçin.",
   "notice-choices": "Görünür veya gizli seçeneğini seçin.",
+  "recipeHelp-choices": "auto, shown veya hidden seçin.",
   "shelf-invalid": "Raf, en fazla {most} hammaddelik bir listedir.",
   "missing-information": "Gerekli bilgiler eksik",
   "invalid-id": "Geçersiz kimlik",

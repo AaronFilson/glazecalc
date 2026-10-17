@@ -75,6 +75,7 @@
   "density-choices": "Valige suhteline tihedus, Baumé kraadid või pindi kaal või laske see määrata oma piirkonna järgi.",
   "englishTerms-choices": "Valige sees või väljas.",
   "notice-choices": "Valige kuvatud või peidetud.",
+  "recipeHelp-choices": "Valige auto, shown või hidden.",
   "shelf-invalid": "Varu on loend, kuhu mahub kuni {most} toorainet.",
   "missing-information": "Nõutav teave puudub",
   "invalid-id": "Vigane ID",

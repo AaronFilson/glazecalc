@@ -4,6 +4,14 @@
     "signedInAs": "Jūs pierakstījāties kā {email}.",
     "trying": "Jūs izmēģināt lietotni Glazecalc kā {name}. Sāciet ar recepti.",
     "welcomeBack": "Turpiniet tur, kur pārtraucāt.",
+    "welcome": {
+      "heading": "Laipni lūdzam Glazecalc",
+      "text": "Jūsu burtnīca ir gatava. Labs pirmais solis: ievadiet glazūru, ko jau maisāt, ar tās izejvielām un daudzumiem, un apskatiet tās Zēgera formulu.",
+      "firstRecipe": "Sākt savu pirmo recepti",
+      "confirmHeading": "E-pasta adreses apstiprināšana",
+      "confirm": "Apstipriniet savu e-pastu: mēs nosūtījām saiti uz {email}. Divpakāpju pierakstīšanās to prasa. <account>Konta lapā</account> to var nosūtīt vēlreiz.",
+      "confirmText": "Mēs nosūtījām saiti uz {email}. Atveriet to, lai apstiprinātu, ka adrese ir jūsu: divpakāpju pierakstīšanās to prasa. <account>Konta lapā</account> to var nosūtīt vēlreiz."
+    },
     "sections": {
       "recipe": {
         "title": "Receptes",
@@ -32,6 +40,10 @@
       "guides": {
         "title": "Ceļveži",
         "text": "No tā, kas ir glazūra, līdz tās apdedzināšanai, un kā pa ceļam pasargāt visus."
+      },
+      "account": {
+        "title": "Konts un iestatījumi",
+        "text": "Iestatījumi, jūsu parole, divpakāpju pierakstīšanās un visa, ko šeit glabājat, lejupielāde."
       }
     },
     "newHere": "Vai Zēgera formula jums ir kas jauns? <advice>Padomu lapā</advice> ir izskaidroti pamati, bet <about>lapā par lietotni</about> aprakstīts, kā darbojas lietotne Glazecalc."
@@ -39,15 +51,29 @@
   "firing": {
     "title": "Apdedzināšanas žurnāli",
     "lead": "Pierakstiet katru apdedzināšanu: laikus, temperatūras, konusus un piezīmes par krāsni.",
+    "newHeading": "Jauna apdedzināšana",
+    "titleLabel": "Nosaukums",
+    "kiln": "Krāsns",
+    "date": "Datums",
+    "notes": "Piezīmes",
+    "fieldSelect": "Ierakstāmie lauki",
     "addField": "Pievienot lauku",
+    "included": "Šī ieraksta lauki",
     "moveLeft": "Pārvietot lauku pa kreisi",
     "moveRight": "Pārvietot lauku pa labi",
     "removeField": "Noņemt lauku",
     "addRow": "Pievienot rindu apdedzināšanas tabulai",
+    "addRowWhy": "Vispirms pievienojiet lauku.",
+    "tableEmpty": "Pievienojiet lauku augstāk, pēc tam rindas.",
+    "recordHeading": "Ierakstīt apdedzināšanu",
     "rowActions": "Darbības ar rindu",
     "cell": "{field}, rinda {row}",
     "removeRow": "Noņemt rindu",
     "save": "Saglabāt",
+    "storedHeading": "Manas saglabātās apdedzināšanas",
+    "noneSaved": "Pagaidām nav neviena. Saglabātās apdedzināšanas parādās šeit.",
+    "storedIn": "Apdedzināts krāsnī {kiln} {date}.",
+    "storedOn": "Apdedzināts {date}.",
     "storedNotes": "Piezīmes: {notes}",
     "titleMissing": "Ievadiet apdedzināšanas nosaukumu.",
     "fieldsMissing": "Pievienojiet vismaz vienu lauku, ko reģistrēt, piemēram, lauku {example}.",
@@ -59,7 +85,12 @@
   "notes": {
     "title": "Piezīmes",
     "lead": "Viss cits par jūsu glazūrām, ko vērts atcerēties.",
+    "newHeading": "Jauna piezīme",
+    "titleLabel": "Nosaukums",
+    "content": "Piezīme",
     "save": "Saglabāt",
+    "mineHeading": "Manas saglabātās piezīmes",
+    "noneSaved": "Pagaidām nav neviena. Saglabātās piezīmes parādās šeit.",
     "titleMissing": "Ievadiet piezīmes nosaukumu.",
     "contentMissing": "Uzrakstiet piezīmi.",
     "untitled": "Piezīme bez nosaukuma",

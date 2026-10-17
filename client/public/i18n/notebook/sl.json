@@ -4,6 +4,14 @@
     "signedInAs": "Prijavljeni ste kot {email}.",
     "trying": "Aplikacijo Glazecalc preizkušate kot {name}. Začnite z receptom.",
     "welcomeBack": "Nadaljujte, kjer ste ostali.",
+    "welcome": {
+      "heading": "Dobrodošli v Glazecalcu",
+      "text": "Vaša beležnica je pripravljena. Dober prvi korak: vnesite glazuro, ki jo že mešate, z njenimi surovinami in količinami, in poglejte njeno Segerjevo formulo.",
+      "firstRecipe": "Začni prvi recept",
+      "confirmHeading": "Potrditev e-poštnega naslova",
+      "confirm": "Potrdite svoj e-poštni naslov: poslali smo povezavo na {email}. Dvostopenjska prijava jo potrebuje. Na <account>strani računa</account> jo lahko pošljete znova.",
+      "confirmText": "Poslali smo povezavo na {email}. Odprite jo, da potrdite, da je naslov vaš: dvostopenjska prijava jo potrebuje. Na <account>strani računa</account> jo lahko pošljete znova."
+    },
     "sections": {
       "recipe": {
         "title": "Recepti",
@@ -32,6 +40,10 @@
       "guides": {
         "title": "Vodniki",
         "text": "Od tega, kaj je glazura, do njenega žganja, in kako pri tem poskrbeti za varnost vseh."
+      },
+      "account": {
+        "title": "Račun in nastavitve",
+        "text": "Nastavitve, vaše geslo, dvostopenjska prijava in prenos vsega, kar tu hranite."
       }
     },
     "newHere": "Se s Segerjevo formulo šele spoznavate? <advice>Stran z nasveti</advice> razloži osnove, <about>stran o aplikaciji</about> pa, kako deluje Glazecalc."
@@ -39,15 +51,29 @@
   "firing": {
     "title": "Dnevniki žganja",
     "lead": "Zapišite vsako žganje: čase, temperature, stožce in opombe o peči.",
+    "newHeading": "Novo žganje",
+    "titleLabel": "Naslov",
+    "kiln": "Peč",
+    "date": "Datum",
+    "notes": "Opombe",
+    "fieldSelect": "Polja za beleženje",
     "addField": "Dodaj polje",
+    "included": "Polja v tem zapisu",
     "moveLeft": "Premakni polje levo",
     "moveRight": "Premakni polje desno",
     "removeField": "Odstrani polje",
     "addRow": "Dodaj vrstico v preglednico žganja",
+    "addRowWhy": "Najprej dodajte polje.",
+    "tableEmpty": "Zgoraj dodajte polje, nato vrstice.",
+    "recordHeading": "Zabeleži žganje",
     "rowActions": "Dejanja za vrstico",
     "cell": "{field}, vrstica {row}",
     "removeRow": "Odstrani vrstico",
     "save": "Shrani",
+    "storedHeading": "Moja shranjena žganja",
+    "noneSaved": "Zaenkrat nobenega. Shranjena žganja se prikažejo tu.",
+    "storedIn": "Žgano v peči {kiln} dne {date}.",
+    "storedOn": "Žgano dne {date}.",
     "storedNotes": "Opombe: {notes}",
     "titleMissing": "Vnesite naslov žganja.",
     "fieldsMissing": "Dodajte vsaj eno polje za zapis, na primer {example}.",
@@ -59,7 +85,12 @@
   "notes": {
     "title": "Zapiski",
     "lead": "Vse drugo, kar si je vredno zapomniti o glazurah.",
+    "newHeading": "Nov zapisek",
+    "titleLabel": "Naslov",
+    "content": "Zapisek",
     "save": "Shrani",
+    "mineHeading": "Moji shranjeni zapiski",
+    "noneSaved": "Zaenkrat nobenega. Shranjeni zapiski se prikažejo tu.",
     "titleMissing": "Vnesite naslov zapiska.",
     "contentMissing": "Napišite zapisek.",
     "untitled": "Zapisek brez naslova",

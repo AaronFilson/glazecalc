@@ -4,6 +4,14 @@
     "signedInAs": "Ha iniciado sesión como {email}.",
     "trying": "Está probando Glazecalc como {name}. Empiece por una receta.",
     "welcomeBack": "Continúe donde lo dejó.",
+    "welcome": {
+      "heading": "Le damos la bienvenida a Glazecalc",
+      "text": "Su cuaderno está listo. Un buen primer paso: introduzca un esmalte que ya prepare, con sus materiales y cantidades, y vea su fórmula Seger.",
+      "firstRecipe": "Empezar su primera receta",
+      "confirmHeading": "Confirmar su correo electrónico",
+      "confirm": "Confirme su correo electrónico: hemos enviado un enlace a {email}. El inicio de sesión en dos pasos lo necesita. Su <account>página de cuenta</account> puede volver a enviarlo.",
+      "confirmText": "Hemos enviado un enlace a {email}. Ábralo para confirmar que la dirección es suya: el inicio de sesión en dos pasos lo necesita. Su <account>página de cuenta</account> puede volver a enviarlo."
+    },
     "sections": {
       "recipe": {
         "title": "Recetas",
@@ -32,6 +40,10 @@
       "guides": {
         "title": "Guías",
         "text": "Desde qué es un esmalte hasta su cocción, y cómo mantener a salvo a todo el mundo por el camino."
+      },
+      "account": {
+        "title": "Cuenta y ajustes",
+        "text": "Ajustes, su contraseña, el inicio de sesión en dos pasos y una descarga de todo lo que guarda aquí."
       }
     },
     "newHere": "¿Las fórmulas Seger son nuevas para usted? La <advice>página de consejos</advice> explica lo básico, y la <about>página Acerca de</about> cuenta cómo funciona Glazecalc."
@@ -39,15 +51,29 @@
   "firing": {
     "title": "Registros de cocción",
     "lead": "Anote cada cocción: horas, temperaturas, conos y notas sobre el horno.",
+    "newHeading": "Una nueva cocción",
+    "titleLabel": "Título",
+    "kiln": "Horno",
+    "date": "Fecha",
+    "notes": "Notas",
+    "fieldSelect": "Campos que registrar",
     "addField": "Añadir el campo",
+    "included": "Campos de este registro",
     "moveLeft": "Mover el campo a la izquierda",
     "moveRight": "Mover el campo a la derecha",
     "removeField": "Quitar el campo",
     "addRow": "Añadir una fila a la tabla de cocción",
+    "addRowWhy": "Añada primero un campo.",
+    "tableEmpty": "Añada un campo arriba y luego filas.",
+    "recordHeading": "Registrar la cocción",
     "rowActions": "Acciones de la fila",
     "cell": "{field}, fila {row}",
     "removeRow": "Quitar la fila",
     "save": "Guardar",
+    "storedHeading": "Mis cocciones guardadas",
+    "noneSaved": "Ninguna todavía. Las cocciones guardadas aparecen aquí.",
+    "storedIn": "Cocida en {kiln} el {date}.",
+    "storedOn": "Cocida el {date}.",
     "storedNotes": "Notas: {notes}",
     "titleMissing": "Ponga un título a la cocción.",
     "fieldsMissing": "Añada al menos un campo que registrar, como {example}.",
@@ -59,7 +85,12 @@
   "notes": {
     "title": "Notas",
     "lead": "Cualquier otra cosa sobre sus esmaltes que merezca la pena recordar.",
+    "newHeading": "Una nueva nota",
+    "titleLabel": "Título",
+    "content": "Nota",
     "save": "Guardar",
+    "mineHeading": "Mis notas guardadas",
+    "noneSaved": "Ninguna todavía. Las notas guardadas aparecen aquí.",
     "titleMissing": "Ponga un título a la nota.",
     "contentMissing": "Escriba la nota.",
     "untitled": "Nota sin título",

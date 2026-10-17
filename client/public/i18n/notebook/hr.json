@@ -4,6 +4,14 @@
     "signedInAs": "Prijavljeni ste kao {email}.",
     "trying": "Aplikaciju Glazecalc isprobavate kao {name}. Počnite s receptom.",
     "welcomeBack": "Nastavite ondje gdje ste stali.",
+    "welcome": {
+      "heading": "Dobro došli u Glazecalc",
+      "text": "Vaša bilježnica je spremna. Dobar prvi korak: unesite glazuru koju već miješate, s njezinim sirovinama i količinama, i pogledajte njezinu Segerovu formulu.",
+      "firstRecipe": "Započni prvi recept",
+      "confirmHeading": "Potvrdite adresu e-pošte",
+      "confirm": "Potvrdite adresu e-pošte: poslali smo poveznicu na {email}. Dvostupanjska prijava to zahtijeva. Na <account>stranici računa</account> možete je poslati ponovno.",
+      "confirmText": "Poslali smo poveznicu na {email}. Otvorite je kako biste potvrdili da je adresa vaša: dvostupanjska prijava to zahtijeva. Na <account>stranici računa</account> možete je poslati ponovno."
+    },
     "sections": {
       "recipe": {
         "title": "Recepti",
@@ -32,6 +40,10 @@
       "guides": {
         "title": "Vodiči",
         "text": "Od toga što je glazura do njezina pečenja, uz brigu da svi pritom ostanu sigurni."
+      },
+      "account": {
+        "title": "Račun i postavke",
+        "text": "Postavke, vaša lozinka, dvostupanjska prijava i preuzimanje svega što ovdje čuvate."
       }
     },
     "newHere": "Prvi put se susrećete sa Segerovom formulom<en>unity formula</en>? <advice>Stranica sa savjetima</advice> objašnjava osnove, a <about>stranica o aplikaciji</about> opisuje kako radi Glazecalc."
@@ -39,15 +51,29 @@
   "firing": {
     "title": "Zapisnici pečenja",
     "lead": "Zabilježite svako pečenje: vremena, temperature, stošce i napomene o peći.",
+    "newHeading": "Novo pečenje",
+    "titleLabel": "Naslov",
+    "kiln": "Peć",
+    "date": "Datum",
+    "notes": "Napomene",
+    "fieldSelect": "Polja za bilježenje",
     "addField": "Dodaj polje",
+    "included": "Polja u ovom zapisniku",
     "moveLeft": "Pomakni polje ulijevo",
     "moveRight": "Pomakni polje udesno",
     "removeField": "Ukloni polje",
     "addRow": "Dodaj redak u tablicu pečenja",
+    "addRowWhy": "Najprije dodajte polje.",
+    "tableEmpty": "Dodajte polje iznad, a zatim retke.",
+    "recordHeading": "Zabilježi pečenje",
     "rowActions": "Radnje s retkom",
     "cell": "{field}, redak {row}",
     "removeRow": "Ukloni redak",
     "save": "Spremi",
+    "storedHeading": "Moja spremljena pečenja",
+    "noneSaved": "Zasad nema nijednog. Spremljena pečenja pojavljuju se ovdje.",
+    "storedIn": "Pečeno u peći {kiln} dana {date}.",
+    "storedOn": "Pečeno dana {date}.",
     "storedNotes": "Napomene: {notes}",
     "titleMissing": "Unesite naziv pečenja.",
     "fieldsMissing": "Dodajte barem jedno polje za bilježenje, na primjer {example}.",
@@ -59,7 +85,12 @@
   "notes": {
     "title": "Bilješke",
     "lead": "Sve ostalo što vrijedi zapamtiti o vašim glazurama.",
+    "newHeading": "Nova bilješka",
+    "titleLabel": "Naslov",
+    "content": "Bilješka",
     "save": "Spremi",
+    "mineHeading": "Moje spremljene bilješke",
+    "noneSaved": "Zasad nema nijedne. Spremljene bilješke pojavljuju se ovdje.",
     "titleMissing": "Unesite naslov bilješke.",
     "contentMissing": "Napišite bilješku.",
     "untitled": "Bilješka bez naslova",

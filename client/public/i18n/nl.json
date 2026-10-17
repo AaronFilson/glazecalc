@@ -39,6 +39,7 @@
     "guides": "Gidsen",
     "about": "Over",
     "account": "Account",
+    "trialAccount": "Proefperiode",
     "accountTitle": "Uw account en instellingen",
     "signOut": "Uitloggen",
     "createAccount": "Gratis account aanmaken"
@@ -66,7 +67,8 @@
     "problem": "Probleem melden",
     "pottery": "Handgemaakte keramiek: Updraft Pottery Studio",
     "copyright": "© 2017–2026 Aaron Filson / Candling Development Studio · Gratis en open source (MIT-licentie)",
-    "languages": "Talen"
+    "languages": "Talen",
+    "language": "Taal:"
   },
   "numbers": {
     "notANumber": "Voer een getal in, bijvoorbeeld {example}.",
@@ -221,20 +223,26 @@
     "soldIn": "Verkrijgbaar in",
     "showing": "{shown} van {noun, select, additives {{total, plural, one {# toevoeging} other {# toevoegingen}}} other {{total, plural, one {# grondstof} other {# grondstoffen}}}} weergegeven",
     "name": "Naam",
+    "equivalentWeight": "Equivalentgewicht",
+    "firedWeight": "Gewicht na stoken",
     "notes": "Opmerkingen",
     "analysis": "Analyse",
+    "details": "Details",
     "formula": "Formule",
+    "formulaLine": "Formule: {formula}",
     "useInstead": "<b>In plaats daarvan gebruiken:</b> {list}",
     "similar": "Vergelijkbaar: {list}",
     "replaces": "Vervangt: {list}",
     "aliases": "Ook wel: {list}",
     "madeBy": "Fabrikant: {name}",
     "source": "Bron:",
+    "hazardsLine": "Gevaren: {hazards}",
     "noChemistry": "Geen analyse: niet in de Segerformule",
     "countedAs": "Meegeteld als {name}",
     "nothingMatches": "Niets gevonden. Probeer een andere naam, soort of regio.",
     "loading": "Laden...",
-    "notFetched": "De lijst kon niet worden opgehaald. <retry>Opnieuw proberen</retry>"
+    "notFetched": "De lijst kon niet worden opgehaald. <retry>Opnieuw proberen</retry>",
+    "showAll": "{noun, select, additives {{count, plural, one {# toevoeging tonen} other {Alle # toevoegingen tonen}}} other {{count, plural, one {# grondstof tonen} other {Alle # grondstoffen tonen}}}}"
   },
   "chemistryForm": {
     "name": "{noun, select, additive {Geef de toevoeging een naam.} other {Geef de grondstof een naam.}}",

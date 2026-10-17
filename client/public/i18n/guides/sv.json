@@ -111,6 +111,7 @@
       "control": "En kontrollkoncentration (管理濃度): måttstocken för att bedöma luften på ett arbetsområde utifrån mätningar där, inte ett gränsvärde för vad en enskild person andas in."
     },
     "setBy": "Fastställt i <link>{law}</link>.",
+    "from": "Den gäller från {date}.",
     "lowerThanEu": "Lägre än EU:s bindande gränsvärde på {value} mg/m³.",
     "sameAsEu": "Samma som EU:s bindande gränsvärde.",
     "recommendedBy": "{abbr} ({by}) rekommenderar detta värde i <link>{title}</link>. Det är inte lag.",
@@ -147,16 +148,31 @@
       "jpSmall": "Andra föremål under 1,1 L, inte för matlagning",
       "jpLarge": "Andra föremål från 1,1 L till under 3 L, inte för matlagning",
       "jpStorage": "Andra föremål på 3 L eller mer, inte för matlagning",
-      "jpCooking": "Kokkärl, 2,5 cm djupa eller mer"
+      "jpCooking": "Kokkärl, 2,5 cm djupa eller mer",
+      "krFlat": "Föremål som inte kan fyllas, eller som är mindre än 2,5 cm djupa",
+      "krSmall": "Andra föremål som kan fyllas, under 1,1 L",
+      "krMedium": "Andra föremål som kan fyllas, från 1,1 L till under 3 L",
+      "krStorage": "Andra föremål som kan fyllas, 3 L eller mer",
+      "krCooking": "Kokkärl, för att värma mat",
+      "twFlat": "Föremål som inte kan fyllas, eller som är högst 2,5 cm djupa",
+      "twSmall": "Föremål som är djupare än 2,5 cm, upp till 1,1 L",
+      "twLarge": "Föremål som är djupare än 2,5 cm, över 1,1 L",
+      "myFlat": "Flata föremål",
+      "mySmall": "Små föremål som kan fyllas",
+      "myLarge": "Stora föremål som kan fyllas",
+      "myCooking": "Kokkärl"
     },
     "judged": {
       "average": "medelvärde av 6 föremål",
-      "each": "vart och ett av 6"
+      "each": "vart och ett av 6",
+      "averageOf": "medelvärde av {count} föremål",
+      "eachOf": "vart och ett av {count}"
     },
     "euRules": "EU:s regler gäller här.",
     "law": "Fastställda i <link>{law}</link>.",
     "inForce": "Gäller från den {date}.",
     "atMost": "Ett föremål godkänns om det inte löser ut mer än gränsvärdet: lagen säger ”högst”.",
+    "ppm": "ppm betyder här milligram per liter av provlösningen (mg/L).",
     "unknown": "Vi har ännu inte bekräftat reglerna i {region}.",
     "choosePrompt": "Välj land för att se reglerna där."
   },

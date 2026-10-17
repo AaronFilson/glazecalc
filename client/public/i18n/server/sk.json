@@ -75,6 +75,7 @@
   "density-choices": "Vyberte relatívnu hustotu, stupne Baumé alebo hmotnosť pinty, alebo nechajte výber na regióne.",
   "englishTerms-choices": "Vyberte zapnuté (on) alebo vypnuté (off).",
   "notice-choices": "Vyberte zobrazené (shown) alebo skryté (hidden).",
+  "recipeHelp-choices": "Zvoľte auto, shown alebo hidden.",
   "shelf-invalid": "Zásoba je zoznam najviac {most} surovín.",
   "missing-information": "Chýbajú povinné údaje",
   "invalid-id": "Neplatné ID",

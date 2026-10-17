@@ -4,6 +4,14 @@
     "signedInAs": "Kirjautuneena: {email}.",
     "trying": "Glazecalcin kokeilu nimellä {name}. Aloita reseptistä.",
     "welcomeBack": "Jatka työtä siitä, mihin se jäi.",
+    "welcome": {
+      "heading": "Tervetuloa Glazecalciin",
+      "text": "Muistikirja on valmis. Hyvä ensimmäinen askel: kirjoita jo käytössä olevan lasitteen raaka-aineet ja määrät ja katso sen Segerin kaava.",
+      "firstRecipe": "Aloita ensimmäinen resepti",
+      "confirmHeading": "Sähköpostiosoitteen vahvistaminen",
+      "confirm": "Vahvista sähköpostiosoite: lähetimme linkin osoitteeseen {email}. Kaksivaiheinen kirjautuminen tarvitsee sen. Linkin voi lähettää uudelleen <account>tilisivulta</account>.",
+      "confirmText": "Lähetimme linkin osoitteeseen {email}. Avaa linkki osoitteen vahvistamiseksi: kaksivaiheinen kirjautuminen tarvitsee sen. Linkin voi lähettää uudelleen <account>tilisivulta</account>."
+    },
     "sections": {
       "recipe": {
         "title": "Reseptit",
@@ -32,6 +40,10 @@
       "guides": {
         "title": "Oppaat",
         "text": "Siitä, mikä lasite on, aina sen polttamiseen asti, ja miten kaikki pysyvät turvassa matkan varrella."
+      },
+      "account": {
+        "title": "Tili ja asetukset",
+        "text": "Asetukset, salasana, kaksivaiheinen kirjautuminen ja kaiken tänne tallennetun lataus."
       }
     },
     "newHere": "Onko Segerin kaava uusi asia? <advice>Neuvosivulla</advice> selitetään perusteet, ja <about>Tietoja-sivulla</about> kerrotaan, miten Glazecalc toimii."
@@ -39,15 +51,29 @@
   "firing": {
     "title": "Polttopäiväkirjat",
     "lead": "Kirjaa jokainen poltto: ajat, lämpötilat, keilat ja uunia koskevat huomiot.",
+    "newHeading": "Uusi poltto",
+    "titleLabel": "Nimi",
+    "kiln": "Uuni",
+    "date": "Päivämäärä",
+    "notes": "Muistiinpanot",
+    "fieldSelect": "Kirjattavat kentät",
     "addField": "Lisää kenttä",
+    "included": "Tämän kirjauksen kentät",
     "moveLeft": "Siirrä kenttää vasemmalle",
     "moveRight": "Siirrä kenttää oikealle",
     "removeField": "Poista kenttä",
     "addRow": "Lisää rivi polttotaulukkoon",
+    "addRowWhy": "Lisää ensin kenttä.",
+    "tableEmpty": "Lisää kenttä yllä ja sitten rivejä.",
+    "recordHeading": "Kirjaa poltto",
     "rowActions": "Rivin toiminnot",
     "cell": "{field}, rivi {row}",
     "removeRow": "Poista rivi",
     "save": "Tallenna",
+    "storedHeading": "Omat tallennetut poltot",
+    "noneSaved": "Ei vielä yhtään. Tallennetut poltot näkyvät tässä.",
+    "storedIn": "Poltettu uunissa {kiln} {date}.",
+    "storedOn": "Poltettu {date}.",
     "storedNotes": "Muistiinpanot: {notes}",
     "titleMissing": "Anna poltolle nimi.",
     "fieldsMissing": "Lisää vähintään yksi kirjattava kenttä, esimerkiksi {example}.",
@@ -59,7 +85,12 @@
   "notes": {
     "title": "Muistiinpanot",
     "lead": "Kaikki muu, mikä omista lasitteista kannattaa muistaa.",
+    "newHeading": "Uusi muistiinpano",
+    "titleLabel": "Otsikko",
+    "content": "Muistiinpano",
     "save": "Tallenna",
+    "mineHeading": "Omat tallennetut muistiinpanot",
+    "noneSaved": "Ei vielä yhtään. Tallennetut muistiinpanot näkyvät tässä.",
     "titleMissing": "Anna muistiinpanolle otsikko.",
     "contentMissing": "Kirjoita muistiinpano.",
     "untitled": "Nimetön muistiinpano",

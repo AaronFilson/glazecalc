@@ -75,6 +75,7 @@
   "density-choices": "Pasirinkite santykinį tankį, Baumé laipsnius arba pintos masę, arba palikite pagal savo regioną.",
   "englishTerms-choices": "Pasirinkite, ar įjungti, ar išjungti.",
   "notice-choices": "Pasirinkite, ar rodyti, ar slėpti.",
+  "recipeHelp-choices": "Pasirinkite auto, shown arba hidden.",
   "shelf-invalid": "Turimų žaliavų gali būti ne daugiau kaip {most}.",
   "missing-information": "Trūksta būtinos informacijos",
   "invalid-id": "Neteisingas ID",

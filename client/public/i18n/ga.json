@@ -39,6 +39,7 @@
     "guides": "Treoirleabhair",
     "about": "Faoin aip",
     "account": "Cuntas",
+    "trialAccount": "Triail",
     "accountTitle": "Do chuntas agus do shocruithe",
     "signOut": "Sínigh amach",
     "createAccount": "Cruthaigh cuntas saor in aisce"
@@ -66,7 +67,8 @@
     "problem": "Tuairiscigh fadhb",
     "pottery": "Potaireacht lámhdhéanta: Updraft Pottery Studio",
     "copyright": "© 2017–2026 Aaron Filson / Candling Development Studio · Saor in aisce agus foinse oscailte (Ceadúnas MIT)",
-    "languages": "Teangacha"
+    "languages": "Teangacha",
+    "language": "Teanga:"
   },
   "numbers": {
     "notANumber": "Cuir isteach uimhir, mar shampla {example}.",
@@ -221,20 +223,26 @@
     "soldIn": "Ar díol sa réigiún",
     "showing": "Á dtaispeáint: {shown} as {noun, select, additives {{total, plural, one {# bhreiseán} two {# bhreiseán} few {# bhreiseán} many {# mbreiseán} other {# breiseán}}} other {{total, plural, one {# ábhar} two {# ábhar} few {# ábhar} many {# n-ábhar} other {# ábhar}}}}",
     "name": "Ainm",
+    "equivalentWeight": "Meáchan coibhéiseach",
+    "firedWeight": "Meáchan tar éis bácála",
     "notes": "Nótaí",
     "analysis": "Anailís",
+    "details": "Sonraí",
     "formula": "Foirmle",
+    "formulaLine": "Foirmle: {formula}",
     "useInstead": "<b>Úsáid ina áit:</b> {list}",
     "similar": "Cosúil: {list}",
     "replaces": "Tagann in áit: {list}",
     "aliases": "Ainmneacha eile: {list}",
     "madeBy": "Déantóir: {name}",
     "source": "Foinse:",
+    "hazardsLine": "Guaiseacha: {hazards}",
     "noChemistry": "Gan anailís: fágtha as an bhfoirmle Seger",
     "countedAs": "Áirithe mar {name}",
     "nothingMatches": "Níl aon rud ag teacht leis seo. Bain triail as ainm, cineál nó réigiún eile.",
     "loading": "Á lódáil...",
-    "notFetched": "Níorbh fhéidir an liosta a fháil. <retry>Bain triail eile as</retry>"
+    "notFetched": "Níorbh fhéidir an liosta a fháil. <retry>Bain triail eile as</retry>",
+    "showAll": "{noun, select, additives {{count, plural, one {Taispeáin # bhreiseán} two {Taispeáin gach # bhreiseán} few {Taispeáin gach # breiseán} many {Taispeáin gach # mbreiseán} other {Taispeáin gach # breiseán}}} other {{count, plural, one {Taispeáin # ábhar} two {Taispeáin gach # ábhar} few {Taispeáin gach # ábhar} many {Taispeáin gach # n-ábhar} other {Taispeáin gach # ábhar}}}}"
   },
   "chemistryForm": {
     "name": "{noun, select, additive {Tabhair ainm don bhreiseán.} other {Tabhair ainm don ábhar.}}",

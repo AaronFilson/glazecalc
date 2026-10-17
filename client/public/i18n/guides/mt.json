@@ -111,6 +111,7 @@
       "control": "Konċentrazzjoni ta’ kontroll (管理濃度): il-livell ta’ referenza biex tiġi ġġudikata l-arja ta’ żona tax-xogħol mill-kejl li jsir hemm, mhux limitu fuq dak li tiġbed man-nifs persuna waħda."
     },
     "setBy": "Stabbilit minn <link>{law}</link>.",
+    "from": "Japplika mill-{date}.",
     "lowerThanEu": "Aktar baxx mil-limitu vinkolanti tal-UE ta’ {value} mg/m³.",
     "sameAsEu": "L-istess bħal-limitu vinkolanti tal-UE.",
     "recommendedBy": "Dan il-valur huwa rakkomandat minn {abbr} ({by}) f’<link>{title}</link>. Mhuwiex liġi.",
@@ -147,16 +148,31 @@
       "jpSmall": "Oġġetti oħra ta’ inqas minn 1.1 L, mhux għat-tisjir",
       "jpLarge": "Oġġetti oħra minn 1.1 L sa inqas minn 3 L, mhux għat-tisjir",
       "jpStorage": "Oġġetti oħra ta’ 3 L jew aktar, mhux għat-tisjir",
-      "jpCooking": "Oġġetti tat-tisjir, b’fond ta’ 2.5 cm jew aktar"
+      "jpCooking": "Oġġetti tat-tisjir, b’fond ta’ 2.5 cm jew aktar",
+      "krFlat": "Oġġetti li ma jistgħux jimtlew, jew inqas minn 2.5 cm fond",
+      "krSmall": "Oġġetti oħra li jistgħu jimtlew, taħt 1.1 L",
+      "krMedium": "Oġġetti oħra li jistgħu jimtlew, minn 1.1 L sa inqas minn 3 L",
+      "krStorage": "Oġġetti oħra li jistgħu jimtlew, 3 L jew iktar",
+      "krCooking": "Oġġetti tat-tisjir, biex jisħnu l-ikel",
+      "twFlat": "Oġġetti li ma jistgħux jimtlew, jew li ma jaqbżux 2.5 cm fond",
+      "twSmall": "Oġġetti iktar fondi minn 2.5 cm, sa 1.1 L",
+      "twLarge": "Oġġetti iktar fondi minn 2.5 cm, ’l fuq minn 1.1 L",
+      "myFlat": "Oġġetti ċatti",
+      "mySmall": "Oġġetti fondi żgħar",
+      "myLarge": "Oġġetti fondi kbar",
+      "myCooking": "Oġġetti tat-tisjir"
     },
     "judged": {
       "average": "medja ta’ 6 biċċiet",
-      "each": "kull waħda mis-6"
+      "each": "kull waħda mis-6",
+      "averageOf": "medja ta’ {count} biċċiet",
+      "eachOf": "kull waħda mill-{count}"
     },
     "euRules": "Hawn japplikaw ir-regoli tal-UE.",
     "law": "Stabbiliti minn <link>{law}</link>.",
     "inForce": "Data tad-dħul fis-seħħ: {date}.",
     "atMost": "Oġġett jgħaddi jekk ma jirrilaxxax aktar mil-limitu: il-liġi tgħid “mhux aktar minn”.",
+    "ppm": "Hawnhekk ppm tfisser milligrammi għal kull litru tas-soluzzjoni tat-test (mg/L).",
     "unknown": "Għadna ma kkonfermajniex ir-regoli ({region}).",
     "choosePrompt": "Agħżel il-pajjiż tiegħek biex tara r-regoli tiegħu."
   },

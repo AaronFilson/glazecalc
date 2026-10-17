@@ -39,6 +39,7 @@
     "guides": "Gwidi",
     "about": "Dwar",
     "account": "Kont",
+    "trialAccount": "Prova",
     "accountTitle": "Il-kont u s-settings",
     "signOut": "Oħroġ",
     "createAccount": "Oħloq kont b’xejn"
@@ -66,7 +67,8 @@
     "problem": "Irrapporta problema",
     "pottery": "Ċeramika magħmula bl-idejn: Updraft Pottery Studio",
     "copyright": "© 2017–2026 Aaron Filson / Candling Development Studio · B’xejn u b’sors miftuħ (Liċenzja MIT)",
-    "languages": "Lingwi"
+    "languages": "Lingwi",
+    "language": "Lingwa:"
   },
   "numbers": {
     "notANumber": "Daħħal numru, bħal {example}.",
@@ -221,20 +223,26 @@
     "soldIn": "Fejn jinbiegħ",
     "showing": "Qed jintwerew {shown} minn {noun, select, additives {{total, plural, one {# addittiv} two {# addittivi} few {# addittivi} many {#-il addittiv} other {# addittiv}}} other {{total, plural, one {# materjal} two {# materjali} few {# materjali} many {#-il materjal} other {# materjal}}}}",
     "name": "Isem",
+    "equivalentWeight": "Piż ekwivalenti",
+    "firedWeight": "Piż wara l-ħami",
     "notes": "Noti",
     "analysis": "Analiżi",
+    "details": "Dettalji",
     "formula": "Formula",
+    "formulaLine": "Formula: {formula}",
     "useInstead": "<b>Uża minflok:</b> {list}",
     "similar": "Simili: {list}",
     "replaces": "Jieħu post: {list}",
     "aliases": "Magħruf ukoll bħala: {list}",
     "madeBy": "Magħmul minn: {name}",
     "source": "Sors:",
+    "hazardsLine": "Perikli: {hazards}",
     "noChemistry": "Bla kimika: barra mill-formula ta’ Seger",
     "countedAs": "Magħdud bħala {name}",
     "nothingMatches": "Xejn ma jaqbel. Ipprova isem, tip jew reġjun ieħor.",
     "loading": "Qed jitgħabba…",
-    "notFetched": "Ma rnexxilniex inġibu l-lista. <retry>Erġa’ pprova</retry>"
+    "notFetched": "Ma rnexxilniex inġibu l-lista. <retry>Erġa’ pprova</retry>",
+    "showAll": "{noun, select, additives {{count, plural, one {Uri # addittiv} two {Uri l-# addittivi kollha} few {Uri l-# addittivi kollha} many {Uri l-#-il addittiv kollha} other {Uri l-# addittiv kollha}}} other {{count, plural, one {Uri # materjal} two {Uri l-# materjali kollha} few {Uri l-# materjali kollha} many {Uri l-#-il materjal kollha} other {Uri l-# materjal kollha}}}}"
   },
   "chemistryForm": {
     "name": "{noun, select, additive {Agħti isem lill-addittiv.} other {Agħti isem lill-materjal.}}",

@@ -111,6 +111,7 @@
       "control": "O concentrație de control (管理濃度): reperul după care se judecă aerul dintr-o zonă de lucru pe baza măsurătorilor făcute acolo, nu o limită pentru ce inspiră o persoană."
     },
     "setBy": "Stabilită prin <link>{law}</link>.",
+    "from": "Se aplică de la {date}.",
     "lowerThanEu": "Mai mică decât valoarea-limită obligatorie a UE, de {value} mg/m³.",
     "sameAsEu": "Aceeași cu valoarea-limită obligatorie a UE.",
     "recommendedBy": "{abbr} ({by}) recomandă această valoare în <link>{title}</link>. Nu are putere de lege.",
@@ -147,16 +148,31 @@
       "jpSmall": "Alte obiecte sub 1,1 L, care nu sunt pentru gătit",
       "jpLarge": "Alte obiecte de la 1,1 L până la mai puțin de 3 L, care nu sunt pentru gătit",
       "jpStorage": "Alte obiecte de 3 L sau mai mult, care nu sunt pentru gătit",
-      "jpCooking": "Vase de gătit, cu adâncimea de 2,5 cm sau mai mult"
+      "jpCooking": "Vase de gătit, cu adâncimea de 2,5 cm sau mai mult",
+      "krFlat": "Obiecte care nu pot fi umplute sau cu adâncimea de sub 2,5 cm",
+      "krSmall": "Alte obiecte care pot fi umplute, sub 1,1 L",
+      "krMedium": "Alte obiecte care pot fi umplute, de la 1,1 L până la sub 3 L",
+      "krStorage": "Alte obiecte care pot fi umplute, de 3 L sau mai mult",
+      "krCooking": "Vase de gătit, pentru încălzirea alimentelor",
+      "twFlat": "Obiecte care nu pot fi umplute sau cu adâncimea de cel mult 2,5 cm",
+      "twSmall": "Obiecte cu adâncimea de peste 2,5 cm, până la 1,1 L",
+      "twLarge": "Obiecte cu adâncimea de peste 2,5 cm, peste 1,1 L",
+      "myFlat": "Obiecte plate",
+      "mySmall": "Obiecte mici care pot fi umplute",
+      "myLarge": "Obiecte mari care pot fi umplute",
+      "myCooking": "Vase de gătit"
     },
     "judged": {
       "average": "media a 6 obiecte",
-      "each": "fiecare dintre cele 6"
+      "each": "fiecare dintre cele 6",
+      "averageOf": "media a {count} obiecte",
+      "eachOf": "fiecare dintre cele {count}"
     },
     "euRules": "Aici se aplică reglementările UE.",
     "law": "Stabilite prin <link>{law}</link>.",
     "inForce": "În vigoare de la {date}.",
     "atMost": "Un obiect trece testul dacă nu cedează mai mult decât limita: legea spune „cel mult”.",
+    "ppm": "ppm înseamnă aici miligrame pe litru de soluție de probă (mg/L).",
     "unknown": "Nu am confirmat încă reglementările din {region}.",
     "choosePrompt": "Alegeți țara pentru a vedea reglementările de acolo."
   },

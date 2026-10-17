@@ -75,6 +75,7 @@
   "density-choices": "Agħżel il-gravità speċifika, il-gradi Baumé jew il-piż tal-pinta, jew ħalli r-reġjun tiegħek jiddeċiedi.",
   "englishTerms-choices": "Agħżel mixgħul jew mitfi.",
   "notice-choices": "Agħżel jidher jew moħbi.",
+  "recipeHelp-choices": "Agħżel auto, shown jew hidden.",
   "shelf-invalid": "Il-ħażna hija lista ta’ materjali (mhux aktar minn {most}).",
   "missing-information": "Nieqsa informazzjoni meħtieġa",
   "invalid-id": "ID mhux validu",

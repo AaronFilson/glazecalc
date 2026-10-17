@@ -75,6 +75,7 @@
   "density-choices": "Elija densidad relativa, grados Baumé o peso por pinta, o deje que lo decida su región.",
   "englishTerms-choices": "Elija activado (on) o desactivado (off).",
   "notice-choices": "Elija visible (shown) u oculto (hidden).",
+  "recipeHelp-choices": "Elija auto, shown o hidden.",
   "shelf-invalid": "La lista de materiales disponibles admite hasta {most} materiales.",
   "missing-information": "Falta información obligatoria",
   "invalid-id": "Identificador no válido",

@@ -39,6 +39,7 @@
     "guides": "Juhendid",
     "about": "Teave",
     "account": "Konto",
+    "trialAccount": "Proovikasutus",
     "accountTitle": "Konto ja sätted",
     "signOut": "Logi välja",
     "createAccount": "Loo tasuta konto"
@@ -66,7 +67,8 @@
     "problem": "Teata probleemist",
     "pottery": "Käsitöökeraamika: Updraft Pottery Studio",
     "copyright": "© 2017–2026 Aaron Filson / Candling Development Studio · Tasuta ja avatud lähtekoodiga (MIT-litsents)",
-    "languages": "Keeled"
+    "languages": "Keeled",
+    "language": "Keel:"
   },
   "numbers": {
     "notANumber": "Sisestage arv, näiteks {example}.",
@@ -221,20 +223,26 @@
     "soldIn": "Müügil",
     "showing": "{noun, select, additives {{total, plural, one {# lisaainest} other {# lisaainest}}} other {{total, plural, one {# toorainest} other {# toorainest}}}} kuvatakse {shown}",
     "name": "Nimi",
+    "equivalentWeight": "Ekvivalentmass",
+    "firedWeight": "Mass põletatult",
     "notes": "Märkused",
     "analysis": "Analüüs",
+    "details": "Üksikasjad",
     "formula": "Valem",
+    "formulaLine": "Valem: {formula}",
     "useInstead": "<b>Kasuta selle asemel:</b> {list}",
     "similar": "Sarnane: {list}",
     "replaces": "Asendab: {list}",
     "aliases": "Ka nimetusega: {list}",
     "madeBy": "Tootja: {name}",
     "source": "Allikas:",
+    "hazardsLine": "Ohud: {hazards}",
     "noChemistry": "Keemiline koostis puudub: Segeri valemist välja jäetud",
     "countedAs": "Arvestatud toorainena {name}",
     "nothingMatches": "Vasteid ei leitud. Proovige muud nime, liiki või piirkonda.",
     "loading": "Laadimine...",
-    "notFetched": "Loendit ei saanud laadida. <retry>Proovi uuesti</retry>"
+    "notFetched": "Loendit ei saanud laadida. <retry>Proovi uuesti</retry>",
+    "showAll": "{noun, select, additives {{count, plural, one {Kuva # lisaaine} other {Kuva kõik # lisaainet}}} other {{count, plural, one {Kuva # toorainet} other {Kuva kõik # toorainet}}}}"
   },
   "chemistryForm": {
     "name": "{noun, select, additive {Sisestage lisaaine nimi.} other {Sisestage tooraine nimi.}}",

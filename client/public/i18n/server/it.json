@@ -75,6 +75,7 @@
   "density-choices": "Scegliere peso specifico, gradi Baumé o peso a pinta, oppure lasciare che segua il paese.",
   "englishTerms-choices": "Scegliere attivato o disattivato.",
   "notice-choices": "Scegliere visibile o nascosto.",
+  "recipeHelp-choices": "Scelga auto, shown o hidden.",
   "shelf-invalid": "Lo scaffale è un elenco di al massimo {most} materiali.",
   "missing-information": "Mancano informazioni obbligatorie",
   "invalid-id": "Id non valido",

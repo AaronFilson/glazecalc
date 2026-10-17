@@ -39,6 +39,7 @@
     "guides": "Útmutatók",
     "about": "Névjegy",
     "account": "Fiók",
+    "trialAccount": "Próbahasználat",
     "accountTitle": "Fiókja és beállításai",
     "signOut": "Kijelentkezés",
     "createAccount": "Ingyenes fiók létrehozása"
@@ -66,7 +67,8 @@
     "problem": "Hiba bejelentése",
     "pottery": "Kézműves kerámia: Updraft Pottery Studio",
     "copyright": "© 2017–2026 Aaron Filson / Candling Development Studio · Ingyenes és nyílt forráskódú (MIT-licenc)",
-    "languages": "Nyelvek"
+    "languages": "Nyelvek",
+    "language": "Nyelv:"
   },
   "numbers": {
     "notANumber": "Adjon meg egy számot, például {example}.",
@@ -221,20 +223,26 @@
     "soldIn": "Kapható",
     "showing": "{noun, select, additives {{total, plural, one {# adalékból} other {# adalékból}}} other {{total, plural, one {# nyersanyagból} other {# nyersanyagból}}}} {shown} látható",
     "name": "Név",
+    "equivalentWeight": "Egyenértéktömeg",
+    "firedWeight": "Égetett tömeg",
     "notes": "Megjegyzések",
     "analysis": "Összetétel",
+    "details": "Részletek",
     "formula": "Képlet",
+    "formulaLine": "Képlet: {formula}",
     "useInstead": "<b>Helyette használható:</b> {list}",
     "similar": "Hasonló: {list}",
     "replaces": "Helyettesíti: {list}",
     "aliases": "Más néven: {list}",
     "madeBy": "Gyártó: {name}",
     "source": "Forrás:",
+    "hazardsLine": "Veszélyek: {hazards}",
     "noChemistry": "Nincs kémiai adat: kimarad a Seger-képletből",
     "countedAs": "Számítva mint: {name}",
     "nothingMatches": "Nincs találat. Próbáljon másik nevet, típust vagy régiót.",
     "loading": "Betöltés...",
-    "notFetched": "A listát nem sikerült betölteni. <retry>Újrapróbálás</retry>"
+    "notFetched": "A listát nem sikerült betölteni. <retry>Újrapróbálás</retry>",
+    "showAll": "{noun, select, additives {{count, plural, one {# adalék megjelenítése} other {Minden # adalék megjelenítése}}} other {{count, plural, one {# nyersanyag megjelenítése} other {Minden # nyersanyag megjelenítése}}}}"
   },
   "chemistryForm": {
     "name": "{noun, select, additive {Adjon nevet az adaléknak.} other {Adjon nevet a nyersanyagnak.}}",

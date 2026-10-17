@@ -111,6 +111,7 @@
       "control": "Kontroles koncentrācija (管理濃度): mēraukla darba zonas gaisa novērtēšanai pēc tur veiktiem mērījumiem, nevis robežvērtība tam, ko ieelpo viens cilvēks."
     },
     "setBy": "Nosaka: <link>{law}</link>.",
+    "from": "Tā ir spēkā no {date}.",
     "lowerThanEu": "Zemāka par ES saistošo robežvērtību {value} mg/m³.",
     "sameAsEu": "Tāda pati kā ES saistošā robežvērtība.",
     "recommendedBy": "{abbr} ({by}) iesaka šo vērtību dokumentā <link>{title}</link>. Tā nav noteikta likumā.",
@@ -147,16 +148,31 @@
       "jpSmall": "Citi izstrādājumi ar ietilpību mazāku par 1,1 L, kas nav paredzēti ēdiena gatavošanai",
       "jpLarge": "Citi izstrādājumi ar ietilpību no 1,1 L līdz mazāk nekā 3 L, kas nav paredzēti ēdiena gatavošanai",
       "jpStorage": "Citi izstrādājumi ar ietilpību 3 L vai vairāk, kas nav paredzēti ēdiena gatavošanai",
-      "jpCooking": "Ēdiena gatavošanas piederumi, kuru dziļums ir 2,5 cm vai vairāk"
+      "jpCooking": "Ēdiena gatavošanas piederumi, kuru dziļums ir 2,5 cm vai vairāk",
+      "krFlat": "Nepildāmi izstrādājumi vai izstrādājumi, kuru dziļums ir mazāks par 2,5 cm",
+      "krSmall": "Citi pildāmi izstrādājumi, mazāki par 1,1 L",
+      "krMedium": "Citi pildāmi izstrādājumi, no 1,1 L līdz mazāk nekā 3 L",
+      "krStorage": "Citi pildāmi izstrādājumi, 3 L vai vairāk",
+      "krCooking": "Ēdiena gatavošanas piederumi, ēdiena sildīšanai",
+      "twFlat": "Nepildāmi izstrādājumi vai izstrādājumi, kuru dziļums nepārsniedz 2,5 cm",
+      "twSmall": "Izstrādājumi, kuru dziļums pārsniedz 2,5 cm, līdz 1,1 L",
+      "twLarge": "Izstrādājumi, kuru dziļums pārsniedz 2,5 cm, virs 1,1 L",
+      "myFlat": "Plakani trauki",
+      "mySmall": "Mazi dobi trauki",
+      "myLarge": "Lieli dobi trauki",
+      "myCooking": "Ēdiena gatavošanas piederumi"
     },
     "judged": {
       "average": "6 izstrādājumu vidējais",
-      "each": "katrs no 6"
+      "each": "katrs no 6",
+      "averageOf": "{count} izstrādājumu vidējais",
+      "eachOf": "katrs no {count}"
     },
     "euRules": "Šeit ir spēkā ES noteikumi.",
     "law": "Nosaka: <link>{law}</link>.",
     "inForce": "Spēkā stāšanās datums: {date}.",
     "atMost": "Izstrādājums atbilst prasībām, ja tas izdala ne vairāk par robežvērtību: likumā teikts “ne vairāk kā”.",
+    "ppm": "ppm šeit nozīmē miligramus uz litru pārbaudes šķīduma (mg/L).",
     "unknown": "Noteikumus valstī {region} vēl neesam noskaidrojuši.",
     "choosePrompt": "Izvēlieties valsti, lai redzētu tās noteikumus."
   },

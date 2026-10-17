@@ -111,6 +111,7 @@
       "control": "Stężenie kontrolne (管理濃度): miernik do oceny powietrza w miejscu pracy na podstawie wykonanych tam pomiarów, a nie limit tego, co wdycha pojedyncza osoba."
     },
     "setBy": "Wartość ustala <link>{law}</link>.",
+    "from": "Obowiązuje od {date}.",
     "lowerThanEu": "To mniej niż wiążący limit UE wynoszący {value} mg/m³.",
     "sameAsEu": "To tyle samo co wiążący limit UE.",
     "recommendedBy": "{abbr} ({by}) zaleca tę wartość w dokumencie <link>{title}</link>. Nie ma ona mocy prawnej.",
@@ -147,16 +148,31 @@
       "jpSmall": "Pozostałe wyroby o pojemności poniżej 1,1 L, nie do gotowania",
       "jpLarge": "Pozostałe wyroby o pojemności od 1,1 L do mniej niż 3 L, nie do gotowania",
       "jpStorage": "Pozostałe wyroby o pojemności 3 L lub większej, nie do gotowania",
-      "jpCooking": "Naczynia do gotowania o głębokości 2,5 cm lub większej"
+      "jpCooking": "Naczynia do gotowania o głębokości 2,5 cm lub większej",
+      "krFlat": "Wyroby, których nie można napełniać, lub o głębokości mniejszej niż 2,5 cm",
+      "krSmall": "Pozostałe wyroby, które można napełniać, poniżej 1,1 L",
+      "krMedium": "Pozostałe wyroby, które można napełniać, od 1,1 L do mniej niż 3 L",
+      "krStorage": "Pozostałe wyroby, które można napełniać, od 3 L wzwyż",
+      "krCooking": "Naczynia do gotowania, do podgrzewania żywności",
+      "twFlat": "Wyroby, których nie można napełniać, lub o głębokości najwyżej 2,5 cm",
+      "twSmall": "Wyroby o głębokości większej niż 2,5 cm, do 1,1 L",
+      "twLarge": "Wyroby o głębokości większej niż 2,5 cm, powyżej 1,1 L",
+      "myFlat": "Naczynia płaskie",
+      "mySmall": "Małe naczynia głębokie",
+      "myLarge": "Duże naczynia głębokie",
+      "myCooking": "Naczynia do gotowania"
     },
     "judged": {
       "average": "średnia z 6 sztuk",
-      "each": "każda z 6 sztuk"
+      "each": "każda z 6 sztuk",
+      "averageOf": "średnia z {count} sztuk",
+      "eachOf": "każda z {count} sztuk"
     },
     "euRules": "Obowiązują tu przepisy UE.",
     "law": "Limity ustala <link>{law}</link>.",
     "inForce": "Obowiązują od {date}.",
     "atMost": "Wyrób spełnia wymagania, jeśli uwalnia nie więcej, niż wynosi limit: przepisy mówią „co najwyżej”.",
+    "ppm": "ppm oznacza tu miligramy na litr roztworu badawczego (mg/L).",
     "unknown": "Nie potwierdziliśmy jeszcze przepisów obowiązujących w kraju: {region}.",
     "choosePrompt": "Wystarczy wybrać kraj, aby zobaczyć obowiązujące w nim przepisy."
   },

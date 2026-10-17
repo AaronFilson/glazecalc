@@ -75,6 +75,7 @@
   "density-choices": "Alegeți greutatea specifică, gradele Baumé sau greutatea pintei ori lăsați această alegere regiunii.",
   "englishTerms-choices": "Alegeți activat sau dezactivat.",
   "notice-choices": "Alegeți afișat sau ascuns.",
+  "recipeHelp-choices": "Alegeți auto, shown sau hidden.",
   "shelf-invalid": "Stocul este o listă de cel mult {most, plural, one {# materie primă} few {# materii prime} other {# de materii prime}}.",
   "missing-information": "Lipsesc informații obligatorii",
   "invalid-id": "Id nevalid",

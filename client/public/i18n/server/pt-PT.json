@@ -75,6 +75,7 @@
   "density-choices": "Escolha densidade relativa, graus Baumé ou peso por pinta, ou deixe que siga a sua região.",
   "englishTerms-choices": "Escolha ligado (on) ou desligado (off).",
   "notice-choices": "Escolha visível (shown) ou oculto (hidden).",
+  "recipeHelp-choices": "Escolha auto, shown ou hidden.",
   "shelf-invalid": "A prateleira é uma lista de até {most} matérias-primas.",
   "missing-information": "Falta informação obrigatória",
   "invalid-id": "ID inválido",

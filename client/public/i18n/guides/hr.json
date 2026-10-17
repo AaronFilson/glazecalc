@@ -111,6 +111,7 @@
       "control": "Kontrolna koncentracija (管理濃度): mjerilo za procjenu zraka u radnom prostoru na temelju mjerenja na tom mjestu, a ne granična vrijednost za ono što udiše pojedina osoba."
     },
     "setBy": "Utvrđeno propisom: <link>{law}</link>.",
+    "from": "Primjenjuje se od {date}.",
     "lowerThanEu": "Niža od obvezujuće granične vrijednosti EU-a od {value} mg/m³.",
     "sameAsEu": "Jednaka obvezujućoj graničnoj vrijednosti EU-a.",
     "recommendedBy": "{abbr} ({by}) preporučuje ovu vrijednost u dokumentu <link>{title}</link>. To nije zakon.",
@@ -147,16 +148,31 @@
       "jpSmall": "Drugi proizvodi zapremnine manje od 1,1 L, koji nisu za kuhanje",
       "jpLarge": "Drugi proizvodi zapremnine od 1,1 L do manje od 3 L, koji nisu za kuhanje",
       "jpStorage": "Drugi proizvodi zapremnine 3 L ili veće, koji nisu za kuhanje",
-      "jpCooking": "Posuđe za kuhanje, dubine 2,5 cm ili veće"
+      "jpCooking": "Posuđe za kuhanje, dubine 2,5 cm ili veće",
+      "krFlat": "Proizvodi koji se ne mogu napuniti ili su plići od 2,5 cm",
+      "krSmall": "Ostali proizvodi koji se mogu napuniti, ispod 1,1 L",
+      "krMedium": "Ostali proizvodi koji se mogu napuniti, od 1,1 L do manje od 3 L",
+      "krStorage": "Ostali proizvodi koji se mogu napuniti, 3 L ili više",
+      "krCooking": "Posuđe za kuhanje, za zagrijavanje hrane",
+      "twFlat": "Proizvodi koji se ne mogu napuniti ili su duboki najviše 2,5 cm",
+      "twSmall": "Proizvodi dublji od 2,5 cm, do 1,1 L",
+      "twLarge": "Proizvodi dublji od 2,5 cm, preko 1,1 L",
+      "myFlat": "Plitko posuđe",
+      "mySmall": "Malo duboko posuđe",
+      "myLarge": "Veliko duboko posuđe",
+      "myCooking": "Posuđe za kuhanje"
     },
     "judged": {
       "average": "prosjek 6 komada",
-      "each": "svaki od 6 komada"
+      "each": "svaki od 6 komada",
+      "averageOf": "prosjek {count} komada",
+      "eachOf": "svaki od {count} komada"
     },
     "euRules": "Ovdje se primjenjuju propisi EU-a.",
     "law": "Utvrđeno propisom: <link>{law}</link>.",
     "inForce": "Na snazi od {date}.",
     "atMost": "Proizvod zadovoljava ako ne otpušta više od granične vrijednosti: propis kaže „najviše”.",
+    "ppm": "ppm ovdje znači miligrame po litri ispitne otopine (mg/L).",
     "unknown": "Propise u ovoj zemlji ({region}) još nismo potvrdili.",
     "choosePrompt": "Odaberite svoju zemlju da biste vidjeli njezine propise."
   },

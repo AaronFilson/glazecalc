@@ -4,6 +4,14 @@
     "signedInAs": "Oturum açan hesap: {email}.",
     "trying": "Glazecalc uygulamasını {name} adıyla deniyorsunuz. Bir reçeteyle başlayın.",
     "welcomeBack": "Kaldığınız yerden devam edin.",
+    "welcome": {
+      "heading": "Glazecalc’e hoş geldiniz",
+      "text": "Defteriniz hazır. İyi bir ilk adım: zaten karıştırdığınız bir sırı hammaddeleri ve miktarlarıyla yazın ve Seger formülünü görün.",
+      "firstRecipe": "İlk reçeteyi başlat",
+      "confirmHeading": "E-posta adresinizi doğrulayın",
+      "confirm": "E-posta adresinizi doğrulayın: {email} adresine bir bağlantı gönderdik. İki adımlı oturum açma buna ihtiyaç duyar. <account>Hesap sayfanız</account> bağlantıyı yeniden gönderebilir.",
+      "confirmText": "{email} adresine bir bağlantı gönderdik. Adresin size ait olduğunu doğrulamak için bağlantıyı açın: iki adımlı oturum açma buna ihtiyaç duyar. <account>Hesap sayfanız</account> bağlantıyı yeniden gönderebilir."
+    },
     "sections": {
       "recipe": {
         "title": "Reçeteler",
@@ -32,6 +40,10 @@
       "guides": {
         "title": "Rehberler",
         "text": "Sırrın ne olduğundan pişirilmesine kadar, yol boyunca herkesi güvende tutarak."
+      },
+      "account": {
+        "title": "Hesap ve ayarlar",
+        "text": "Ayarlar, parolanız, iki adımlı oturum açma ve burada sakladığınız her şeyin indirilmesi."
       }
     },
     "newHere": "Seger formülleri size yeni mi? <advice>Tavsiyeler sayfası</advice> temel bilgileri açıklar, <about>hakkında sayfası</about> da Glazecalc uygulamasının nasıl çalıştığını anlatır."
@@ -39,15 +51,29 @@
   "firing": {
     "title": "Pişirim kayıtları",
     "lead": "Her pişirimi kaydedin: saatler, sıcaklıklar, piramitler ve fırın notları.",
+    "newHeading": "Yeni bir pişirim",
+    "titleLabel": "Başlık",
+    "kiln": "Fırın",
+    "date": "Tarih",
+    "notes": "Notlar",
+    "fieldSelect": "Kaydedilecek alanlar",
     "addField": "Alanı ekle",
+    "included": "Bu kayıttaki alanlar",
     "moveLeft": "Alanı sola taşı",
     "moveRight": "Alanı sağa taşı",
     "removeField": "Alanı kaldır",
     "addRow": "Pişirim tablosuna satır ekle",
+    "addRowWhy": "Önce bir alan ekleyin.",
+    "tableEmpty": "Yukarıya bir alan ekleyin, sonra satırlar ekleyin.",
+    "recordHeading": "Pişirimi kaydet",
     "rowActions": "Satır işlemleri",
     "cell": "{field}, satır {row}",
     "removeRow": "Satırı kaldır",
     "save": "Kaydet",
+    "storedHeading": "Kayıtlı pişirimlerim",
+    "noneSaved": "Henüz yok. Kayıtlı pişirimler burada görünür.",
+    "storedIn": "{date} tarihinde {kiln} içinde pişirildi.",
+    "storedOn": "{date} tarihinde pişirildi.",
     "storedNotes": "Notlar: {notes}",
     "titleMissing": "Pişirime bir ad verin.",
     "fieldsMissing": "Kaydedilecek en az bir alan ekleyin, örneğin {example}.",
@@ -59,7 +85,12 @@
   "notes": {
     "title": "Notlar",
     "lead": "Sırlarınızla ilgili hatırlamaya değer başka her şey.",
+    "newHeading": "Yeni bir not",
+    "titleLabel": "Başlık",
+    "content": "Not",
     "save": "Kaydet",
+    "mineHeading": "Kayıtlı notlarım",
+    "noneSaved": "Henüz yok. Kayıtlı notlar burada görünür.",
     "titleMissing": "Nota bir başlık verin.",
     "contentMissing": "Notu yazın.",
     "untitled": "Başlıksız not",

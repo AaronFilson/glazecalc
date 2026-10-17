@@ -4,6 +4,14 @@
     "signedInAs": "{email} でログインしています。",
     "trying": "{name} として Glazecalc をお試し中です。まずは調合から始めてみてください。",
     "welcomeBack": "前回の続きから始められます。",
+    "welcome": {
+      "heading": "Glazecalc へようこそ",
+      "text": "工房ノートの準備ができました。最初の一歩としては、いつも調合している釉薬を原料と量とあわせて入力し、そのゼーゲル式を確認するのがおすすめです。",
+      "firstRecipe": "最初の調合を始める",
+      "confirmHeading": "メールアドレスの確認",
+      "confirm": "メールアドレスを確認してください。{email} にリンクを送りました。二段階認証にはこの確認が必要です。<account>アカウントのページ</account>から再送信できます。",
+      "confirmText": "{email} にリンクを送りました。リンクを開いて、このアドレスがご本人のものであることを確認してください。二段階認証にはこの確認が必要です。<account>アカウントのページ</account>から再送信できます。"
+    },
     "sections": {
       "recipe": {
         "title": "調合",
@@ -32,6 +40,10 @@
       "guides": {
         "title": "ガイド",
         "text": "釉薬とは何かから焼成まで。その途中で皆の安全を守る方法も紹介します。"
+      },
+      "account": {
+        "title": "アカウントと設定",
+        "text": "設定、パスワード、二段階認証、ここに保存したすべてのデータのダウンロード。"
       }
     },
     "newHere": "ゼーゲル式は初めてですか? 基本は<advice>アドバイスのページ</advice>で、Glazecalc の仕組みは<about>Glazecalc についてのページ</about>で説明しています。"
@@ -39,15 +51,29 @@
   "firing": {
     "title": "焼成記録",
     "lead": "時間、温度、コーン、窯についてのメモなど、焼成ごとに記録します。",
+    "newHeading": "新しい焼成",
+    "titleLabel": "名前",
+    "kiln": "窯",
+    "date": "日付",
+    "notes": "メモ",
+    "fieldSelect": "記録する項目",
     "addField": "項目を追加",
+    "included": "この記録の項目",
     "moveLeft": "項目を左へ移動",
     "moveRight": "項目を右へ移動",
     "removeField": "項目を削除",
     "addRow": "焼成の表に行を追加",
+    "addRowWhy": "先に項目を追加してください。",
+    "tableEmpty": "上で項目を追加してから、行を追加してください。",
+    "recordHeading": "焼成を記録",
     "rowActions": "行の操作",
     "cell": "{field}、{row}行目",
     "removeRow": "行を削除",
     "save": "保存",
+    "storedHeading": "保存した焼成記録",
+    "noneSaved": "まだありません。保存した焼成記録がここに表示されます。",
+    "storedIn": "{kiln}で{date}に焼成。",
+    "storedOn": "{date}に焼成。",
     "storedNotes": "メモ: {notes}",
     "titleMissing": "焼成の名前を入力してください。",
     "fieldsMissing": "{example} など、記録する項目を一つ以上追加してください。",
@@ -59,7 +85,12 @@
   "notes": {
     "title": "メモ",
     "lead": "釉薬について、ほかに覚えておきたいこと。",
+    "newHeading": "新しいメモ",
+    "titleLabel": "名前",
+    "content": "メモ",
     "save": "保存",
+    "mineHeading": "保存したメモ",
+    "noneSaved": "まだありません。保存したメモがここに表示されます。",
     "titleMissing": "メモのタイトルを入力してください。",
     "contentMissing": "メモを書いてください。",
     "untitled": "無題のメモ",

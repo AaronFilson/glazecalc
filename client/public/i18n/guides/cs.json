@@ -111,6 +111,7 @@
       "control": "Kontrolní koncentrace (管理濃度): měřítko pro posouzení ovzduší pracoviště podle měření na místě, ne limit pro to, co vdechuje jedna osoba."
     },
     "setBy": "Tento limit stanoví <link>{law}</link>.",
+    "from": "Platí od {date}.",
     "lowerThanEu": "Je nižší než závazný limit EU ve výši {value} mg/m³.",
     "sameAsEu": "Je stejný jako závazný limit EU.",
     "recommendedBy": "{abbr} ({by}) tuto hodnotu doporučuje v dokumentu <link>{title}</link>. Není to zákon.",
@@ -147,16 +148,31 @@
       "jpSmall": "Ostatní předměty pod 1,1 L, ne k vaření",
       "jpLarge": "Ostatní předměty od 1,1 L do méně než 3 L, ne k vaření",
       "jpStorage": "Ostatní předměty od 3 L výše, ne k vaření",
-      "jpCooking": "Kuchyňské nádobí s hloubkou 2,5 cm nebo více"
+      "jpCooking": "Kuchyňské nádobí s hloubkou 2,5 cm nebo více",
+      "krFlat": "Předměty, které nelze plnit, nebo s hloubkou menší než 2,5 cm",
+      "krSmall": "Ostatní předměty, které lze plnit, do 1,1 L",
+      "krMedium": "Ostatní předměty, které lze plnit, od 1,1 L do méně než 3 L",
+      "krStorage": "Ostatní předměty, které lze plnit, od 3 L",
+      "krCooking": "Nádobí na vaření, k ohřevu jídla",
+      "twFlat": "Předměty, které nelze plnit, nebo s hloubkou nejvýše 2,5 cm",
+      "twSmall": "Předměty s hloubkou větší než 2,5 cm, do 1,1 L",
+      "twLarge": "Předměty s hloubkou větší než 2,5 cm, nad 1,1 L",
+      "myFlat": "Ploché nádobí",
+      "mySmall": "Malé duté nádobí",
+      "myLarge": "Velké duté nádobí",
+      "myCooking": "Nádobí na vaření"
     },
     "judged": {
       "average": "průměr ze 6 kusů",
-      "each": "každý ze 6 kusů"
+      "each": "každý ze 6 kusů",
+      "averageOf": "průměr ze {count} kusů",
+      "eachOf": "každý z {count} kusů"
     },
     "euRules": "Platí zde pravidla EU.",
     "law": "Tyto limity stanoví <link>{law}</link>.",
     "inForce": "Platí od {date}.",
     "atMost": "Kus vyhoví, pokud neuvolní víc, než je limit: zákon říká „nejvýše“.",
+    "ppm": "ppm zde znamená miligramy na litr zkušebního roztoku (mg/L).",
     "unknown": "Pravidla v zemi {region} jsme zatím neověřili.",
     "choosePrompt": "Vyberte svou zemi a zobrazí se její pravidla."
   },

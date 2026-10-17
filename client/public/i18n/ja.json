@@ -39,6 +39,7 @@
     "guides": "ガイド",
     "about": "このサイトについて",
     "account": "アカウント",
+    "trialAccount": "お試し利用",
     "accountTitle": "アカウントと設定",
     "signOut": "ログアウト",
     "createAccount": "無料アカウントを作成"
@@ -66,7 +67,8 @@
     "problem": "問題を報告",
     "pottery": "手作りのやきもの: Updraft Pottery Studio",
     "copyright": "© 2017–2026 Aaron Filson / Candling Development Studio · 無料のオープンソース (MIT License)",
-    "languages": "言語"
+    "languages": "言語",
+    "language": "言語:"
   },
   "numbers": {
     "notANumber": "{example} のように数値を入力してください。",
@@ -221,20 +223,26 @@
     "soldIn": "販売地域",
     "showing": "{noun, select, additives {{total, plural, other {添加物 #件中 {shown}件を表示}}} other {{total, plural, other {原料 #種類中 {shown}種類を表示}}}}",
     "name": "名前",
+    "equivalentWeight": "当量",
+    "firedWeight": "焼成後の重量",
     "notes": "備考",
     "analysis": "分析値",
+    "details": "詳細",
     "formula": "化学式",
+    "formulaLine": "化学式: {formula}",
     "useInstead": "<b>代わりに:</b> {list}",
     "similar": "類似: {list}",
     "replaces": "置き換え対象: {list}",
     "aliases": "別名: {list}",
     "madeBy": "メーカー: {name}",
     "source": "出典:",
+    "hazardsLine": "危険性: {hazards}",
     "noChemistry": "化学組成なし: ゼーゲル式から除外",
     "countedAs": "{name} として計算",
     "nothingMatches": "該当するものがありません。別の名前、種類、地域でお試しください。",
     "loading": "読み込み中...",
-    "notFetched": "一覧を取得できませんでした。<retry>再試行</retry>"
+    "notFetched": "一覧を取得できませんでした。<retry>再試行</retry>",
+    "showAll": "{noun, select, additives {{count, plural, other {添加物 #件をすべて表示}}} other {{count, plural, other {原料 #種類をすべて表示}}}}"
   },
   "chemistryForm": {
     "name": "{noun, select, additive {添加物の名前を入力してください。} other {原料の名前を入力してください。}}",

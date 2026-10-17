@@ -4,6 +4,14 @@
     "signedInAs": "Bejelentkezve: {email}.",
     "trying": "A Glazecalc próbahasználata ezen a néven: {name}. Kezdje egy recepttel.",
     "welcomeBack": "Folytassa ott, ahol abbahagyta.",
+    "welcome": {
+      "heading": "Üdvözöljük a Glazecalcban",
+      "text": "A műhelyfüzete készen áll. Jó első lépés: írjon be egy mázat, amelyet már kever, a nyersanyagaival és mennyiségeivel, és nézze meg a Seger-képletét.",
+      "firstRecipe": "Első receptjének megkezdése",
+      "confirmHeading": "E-mail-cím megerősítése",
+      "confirm": "Erősítse meg az e-mail-címét: linket küldtünk a(z) {email} címre. A kétlépéses bejelentkezéshez erre szükség van. A <account>fiókoldalról</account> újra elküldhető.",
+      "confirmText": "Linket küldtünk a(z) {email} címre. Nyissa meg, hogy megerősítse, hogy a cím az Öné: a kétlépéses bejelentkezéshez erre szükség van. A <account>fiókoldalról</account> újra elküldhető."
+    },
     "sections": {
       "recipe": {
         "title": "Receptek",
@@ -32,6 +40,10 @@
       "guides": {
         "title": "Útmutatók",
         "text": "Attól, hogy mi a máz, egészen az égetéséig, és hogy közben mindenki biztonságban maradjon."
+      },
+      "account": {
+        "title": "Fiók és beállítások",
+        "text": "Beállítások, a jelszava, a kétlépéses bejelentkezés, és mindazok letöltése, amit itt őriz."
       }
     },
     "newHere": "Most ismerkedik a Seger-képlettel? A <advice>tanácsok oldala</advice> elmagyarázza az alapokat, az <about>alkalmazásról szóló oldal</about> pedig azt, hogyan működik a Glazecalc."
@@ -39,15 +51,29 @@
   "firing": {
     "title": "Égetési naplók",
     "lead": "Rögzítsen minden égetést: az időket, a hőmérsékleteket, a gúlákat és a kemencével kapcsolatos megjegyzéseket.",
+    "newHeading": "Új égetés",
+    "titleLabel": "Cím",
+    "kiln": "Kemence",
+    "date": "Dátum",
+    "notes": "Megjegyzések",
+    "fieldSelect": "Rögzítendő mezők",
     "addField": "Mező hozzáadása",
+    "included": "Az ebben a bejegyzésben szereplő mezők",
     "moveLeft": "Mező mozgatása balra",
     "moveRight": "Mező mozgatása jobbra",
     "removeField": "Mező eltávolítása",
     "addRow": "Sor hozzáadása az égetési táblázathoz",
+    "addRowWhy": "Előbb adjon hozzá egy mezőt.",
+    "tableEmpty": "Adjon hozzá fent egy mezőt, majd sorokat.",
+    "recordHeading": "Az égetés rögzítése",
     "rowActions": "Sorműveletek",
     "cell": "{field}, {row}. sor",
     "removeRow": "Sor eltávolítása",
     "save": "Mentés",
+    "storedHeading": "Mentett égetéseim",
+    "noneSaved": "Még egy sem. A mentett égetések itt jelennek meg.",
+    "storedIn": "Égetve a(z) {kiln} kemencében, {date}.",
+    "storedOn": "Égetve: {date}.",
     "storedNotes": "Megjegyzések: {notes}",
     "titleMissing": "Adjon címet az égetésnek.",
     "fieldsMissing": "Adjon hozzá legalább egy rögzítendő mezőt, például: {example}.",
@@ -59,7 +85,12 @@
   "notes": {
     "title": "Jegyzetek",
     "lead": "Minden más, amit érdemes megjegyezni a mázairól.",
+    "newHeading": "Új jegyzet",
+    "titleLabel": "Cím",
+    "content": "Jegyzet",
     "save": "Mentés",
+    "mineHeading": "Mentett jegyzeteim",
+    "noneSaved": "Még egy sem. A mentett jegyzetek itt jelennek meg.",
     "titleMissing": "Adjon címet a jegyzetnek.",
     "contentMissing": "Írja meg a jegyzetet.",
     "untitled": "Cím nélküli jegyzet",

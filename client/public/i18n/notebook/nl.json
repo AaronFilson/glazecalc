@@ -4,6 +4,14 @@
     "signedInAs": "Ingelogd als {email}.",
     "trying": "U probeert Glazecalc als {name}. Begin met een recept.",
     "welcomeBack": "Ga verder waar u was gebleven.",
+    "welcome": {
+      "heading": "Welkom bij Glazecalc",
+      "text": "Uw logboek is klaar. Een goede eerste stap: voer een glazuur in dat u al mengt, met zijn grondstoffen en hoeveelheden, en bekijk de Segerformule.",
+      "firstRecipe": "Uw eerste recept beginnen",
+      "confirmHeading": "Uw e-mailadres bevestigen",
+      "confirm": "Bevestig uw e-mailadres: we hebben een link gestuurd naar {email}. Inloggen in twee stappen heeft dit nodig. Op uw <account>accountpagina</account> kunt u de link opnieuw laten sturen.",
+      "confirmText": "We hebben een link gestuurd naar {email}. Open de link om te bevestigen dat het adres van u is: inloggen in twee stappen heeft dit nodig. Op uw <account>accountpagina</account> kunt u de link opnieuw laten sturen."
+    },
     "sections": {
       "recipe": {
         "title": "Recepten",
@@ -32,6 +40,10 @@
       "guides": {
         "title": "Gidsen",
         "text": "Van wat een glazuur is tot het stoken ervan, en hoe iedereen onderweg veilig blijft."
+      },
+      "account": {
+        "title": "Account en instellingen",
+        "text": "Instellingen, uw wachtwoord, inloggen in twee stappen en een download van alles wat u hier bewaart."
       }
     },
     "newHere": "Is de Segerformule nieuw voor u? De <advice>adviespagina</advice> legt de basis uit, en de <about>pagina Over</about> vertelt hoe Glazecalc werkt."
@@ -39,15 +51,29 @@
   "firing": {
     "title": "Stookverslagen",
     "lead": "Leg elke stook vast: tijden, temperaturen, kegels en opmerkingen over de oven.",
+    "newHeading": "Een nieuwe stook",
+    "titleLabel": "Titel",
+    "kiln": "Oven",
+    "date": "Datum",
+    "notes": "Notities",
+    "fieldSelect": "Velden om vast te leggen",
     "addField": "Veld toevoegen",
+    "included": "Velden in dit verslag",
     "moveLeft": "Veld naar links verplaatsen",
     "moveRight": "Veld naar rechts verplaatsen",
     "removeField": "Veld verwijderen",
     "addRow": "Rij aan de stooktabel toevoegen",
+    "addRowWhy": "Voeg eerst een veld toe.",
+    "tableEmpty": "Voeg hierboven een veld toe en daarna rijen.",
+    "recordHeading": "De stook vastleggen",
     "rowActions": "Acties voor de rij",
     "cell": "{field}, rij {row}",
     "removeRow": "Rij verwijderen",
     "save": "Opslaan",
+    "storedHeading": "Mijn opgeslagen stooksessies",
+    "noneSaved": "Nog geen. Opgeslagen stooksessies verschijnen hier.",
+    "storedIn": "Gestookt in {kiln} op {date}.",
+    "storedOn": "Gestookt op {date}.",
     "storedNotes": "Opmerkingen: {notes}",
     "titleMissing": "Geef de stook een naam.",
     "fieldsMissing": "Voeg ten minste één veld toe om vast te leggen, zoals {example}.",
@@ -59,7 +85,12 @@
   "notes": {
     "title": "Notities",
     "lead": "Al het andere over uw glazuren dat het onthouden waard is.",
+    "newHeading": "Een nieuwe notitie",
+    "titleLabel": "Titel",
+    "content": "Notitie",
     "save": "Opslaan",
+    "mineHeading": "Mijn opgeslagen notities",
+    "noneSaved": "Nog geen. Opgeslagen notities verschijnen hier.",
     "titleMissing": "Geef de notitie een titel.",
     "contentMissing": "Schrijf de notitie.",
     "untitled": "Notitie zonder titel",
