@@ -248,6 +248,22 @@ describe('Shared recipe tools', () => {
     expect(own.find((r) => r.oxide === 'Al2O3')).to.include({ past: 'below', likely: true });
   });
 
+  it('counts a value at a maximum as past it in the table, as the swap checks do, and a thin glaze by its own likely figure', () => {
+    const own = recipe.GLAZECALC_LIMITS;
+    const lines = [{ material: KAOLIN, amount: '10' }];
+    const boron = (unity: Record<string, number>) =>
+      recipe.limitRows(unity, own, 'low')!.find((r) => r.oxide === 'B2O3')!;
+    const sound = { K2O: 0.2, CaO: 0.8, Al2O3: 0.3, SiO2: 3 };
+    // At exactly 0.8 boron the check warns, so the table says past, and not likely for a sound glaze.
+    expect(boron({ ...sound, B2O3: 0.8 })).to.include({ past: 'above', likely: false });
+    expect(
+      recipe.pastLimits({ lines, unity: { ...sound, B2O3: 0.8 }, celsius: 1060 }).some((c) => c.check === 'boron-high')
+    ).to.equal(true);
+    expect(boron({ ...sound, B2O3: 0.79 })).to.include({ past: null });
+    // A thin glaze (alumina under 0.15) is likely past 0.8 already, where a sound one needs 1.0.
+    expect(boron({ ...sound, Al2O3: 0.1, B2O3: 0.8 })).to.include({ past: 'above', likely: true });
+  });
+
   it('words cone 10 boron in a set’s high band', () => {
     const lines = [{ material: KAOLIN, amount: '10' }];
     const unity = { K2O: 0.2, CaO: 0.8, Al2O3: 0.4, B2O3: 0.45, SiO2: 4 };
