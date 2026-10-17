@@ -1,5 +1,6 @@
 import { Component, computed, inject, linkedSignal, model, signal } from '@angular/core';
-import { TranslocoDirective, translate } from '@jsverse/transloco';
+import { toSignal } from '@angular/core/rxjs-interop';
+import { TranslocoDirective, TranslocoService, translate } from '@jsverse/transloco';
 import { marker } from '@jsverse/transloco-keys-manager/marker';
 import * as slurry from '../../../../lib/recipe/slurry';
 import { LocaleService } from '../../core/locale.service';
@@ -208,6 +209,8 @@ function sgOf(text: string, density: Density): number | null {
 export class SlurryCalculator {
   private readonly locale = inject(LocaleService);
   private readonly preferences = inject(PreferencesService);
+  /** The language the sentences are in: they are worked out again when it changes. */
+  private readonly language = toSignal(inject(TranslocoService).langChanges$);
   protected readonly volumeUnits = VOLUME_UNITS;
   protected readonly pounds = computed(() => this.preferences.weightUnit() === 'lb');
 
@@ -245,6 +248,7 @@ export class SlurryCalculator {
 
   /** Why an SG typed cannot be worked with: not over water's, or not under the dry materials'. */
   protected readonly problem = computed(() => {
+    this.language();
     const { sg, target, dry } = this.numbers();
     const bad = (value: number | null) => value !== null && (value <= 1 || value >= dry);
     if (!(dry > 1)) return translate('recipe.slurry.badDry');
@@ -272,6 +276,7 @@ export class SlurryCalculator {
   }
 
   protected readonly results = computed(() => {
+    this.language();
     const { litres, sg, target, dry, batchKg } = this.numbers();
     const lines: string[] = [];
     if (litres !== null && sg !== null) {

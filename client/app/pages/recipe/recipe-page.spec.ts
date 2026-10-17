@@ -291,7 +291,12 @@ describe('RecipePage', () => {
   });
 
   it('takes the firing off a saved recipe with null when unknown is chosen', async () => {
-    const fired: Recipe = { _id: 'r2b', title: 'Cone 10 white', firing: 'high', materials: [{ ...WHITING, amount: '20' }] };
+    const fired: Recipe = {
+      _id: 'r2b',
+      title: 'Cone 10 white',
+      firing: 'high',
+      materials: [{ ...WHITING, amount: '20' }]
+    };
     const { fixture, page } = await create([fired]);
     page['open'](fired);
     await fixture.whenStable();

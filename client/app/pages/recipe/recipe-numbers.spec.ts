@@ -1,6 +1,8 @@
 import { TestBed } from '@angular/core/testing';
+import { TranslocoService } from '@jsverse/transloco';
 import { PreferencesService } from '../../core/preferences.service';
 import { RecipeAnalysis } from '../../core/models';
+import { ENGLISH } from '../../testing/i18n';
 import { API, httpMock, testProviders, text } from '../../testing/test-providers';
 import { RecipeNumbers } from './recipe-numbers';
 import { OwnLimitsNote } from './own-limits-note';
@@ -195,6 +197,22 @@ describe('SlurryCalculator', () => {
     };
     return { fixture, root, type };
   };
+
+  it('words its results again when the language is switched', async () => {
+    const { fixture, root, type } = await create();
+    await type('slurry-volume', '10');
+    await type('slurry-measured', '1.5');
+    expect(text(fixture, '.slurry-results')).toContain('the bucket holds');
+    const transloco = TestBed.inject(TranslocoService);
+    for (const [path, messages] of Object.entries(ENGLISH)) {
+      const copy = structuredClone(messages) as Record<string, any>;
+      if (path === 'recipe/en') copy['slurry'].contents = 'Sieben: {glaze}';
+      transloco.setTranslation(copy, path.replace(/en$/, 'de'));
+    }
+    transloco.setActiveLang('de');
+    await fixture.whenStable();
+    expect(root.querySelector('.slurry-results')?.textContent).toContain('Sieben:');
+  });
 
   it('works out what a bucket holds, the water to reach the SG wanted, and a new batch, in litres and kilograms', async () => {
     const { fixture, root, type } = await create();
