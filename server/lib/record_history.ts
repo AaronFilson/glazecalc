@@ -142,6 +142,27 @@ export const saveVersion = async (
 };
 
 /**
+ * Gives Trash entries from before the Trash was used (no trashedAt, so the
+ * TTL never removed them) the date they were written, or `now` when it does
+ * not read as a date in the past, so they go TRASH_DAYS after it. Safe to
+ * repeat: only entries without trashedAt are changed. Resolves with how many.
+ */
+export const dateOldTrash = async (now = new Date()): Promise<number> => {
+  const undated = await Trash.find({ trashedAt: { $exists: false } })
+    .select({ _id: 1, date: 1 })
+    .lean();
+  if (!undated.length) return 0;
+  const result = await Trash.bulkWrite(
+    undated.map(({ _id, date }) => {
+      const then = date ? new Date(date) : null;
+      const trashedAt = then && !Number.isNaN(then.getTime()) && then < now ? then : now;
+      return { updateOne: { filter: { _id, trashedAt: { $exists: false } }, update: { $set: { trashedAt } } } };
+    })
+  );
+  return result.modifiedCount;
+};
+
+/**
  * Writes what an access token did to the activity log; nothing for the web
  * session. The record is named by its title alone. A failure to write is
  * logged, not passed on: the change itself is made.

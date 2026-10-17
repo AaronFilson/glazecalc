@@ -1,5 +1,6 @@
 import { Types } from 'mongoose';
 import { mergeTrial, deleteAccount } from '../lib/account_data.ts';
+import { dateOldTrash } from '../lib/record_history.ts';
 import AccessToken from '../models/access_token.ts';
 import Activity, { ACTIVITY_DAYS } from '../models/activity.ts';
 import Note from '../models/note.ts';
@@ -146,6 +147,22 @@ describe('Trash', () => {
     expect(await ttlDays(Trash, 'trashedAt')).to.equal(30);
     await Trash.create({ content: ['old'], date: '1/1/2017', fromCollection: 'notes', ownedBy: String(user._id) });
     expect(await trash()).to.eql([]);
+  });
+
+  it('dates entries from before the Trash once, so they expire too', async () => {
+    const ownedBy = String(user._id);
+    const now = new Date();
+    // Two days ago, written as those entries were (m/d/yyyy), so MongoDB does not remove it mid-test.
+    const then = new Date(now.getTime() - 2 * DAY);
+    const date = `${then.getMonth() + 1}/${then.getDate()}/${then.getFullYear()}`;
+    const dated = await Trash.create({ content: ['old'], date, fromCollection: 'notes', ownedBy });
+    const undated = await Trash.create({ content: ['old'], date: 'someday', fromCollection: 'notes', ownedBy });
+    const current = await Trash.findById((await remove((await create())._id)).body.trashId).lean();
+    expect(await dateOldTrash(now)).to.be.at.least(2);
+    expect((await Trash.findById(dated._id).lean())!.trashedAt!.getTime()).to.equal(new Date(date).getTime());
+    expect((await Trash.findById(undated._id).lean())!.trashedAt!.getTime()).to.equal(now.getTime());
+    expect((await Trash.findById(current!._id).lean())!.trashedAt!.getTime()).to.equal(current!.trashedAt!.getTime());
+    expect(await dateOldTrash()).to.equal(0);
   });
 
   it('can be read and put back from with an access token, but not deleted from', async () => {

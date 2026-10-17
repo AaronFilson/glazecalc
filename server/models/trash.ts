@@ -9,6 +9,8 @@ import mongoose from 'mongoose';
 //
 // Entries from before this (content, date and fromCollection, written by an
 // API nothing in the app used) have no recordId; the Trash leaves them out.
+// They had no trashedAt either: server/main.ts gives them one at start
+// (dateOldTrash, server/lib/record_history.ts), so they expire like the rest.
 
 /** How long a record can be put back, in days. */
 export const TRASH_DAYS = 30;
