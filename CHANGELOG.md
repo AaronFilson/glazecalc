@@ -6,6 +6,23 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Added
 
+- **Access tokens** ([integrations plan](docs/integrations-plan.md), Phase 3): the account page's
+  new "Access tokens" section makes a token for your own AI assistant or script, which can read
+  your recipes, materials, notebook and firing logs but change nothing. Making one asks for the
+  password, and the second step when two-step sign-in is on; the token is shown once, to copy.
+  Each stops working after 7, 30, 90 or 365 days (30 unless chosen), up to 10 at once, and can be
+  revoked one by one or all together. An email says when one is made and, 7 days ahead, when one
+  is about to stop working. After a password change the page lists the tokens still working,
+  with "Revoke all". Trials cannot make tokens. In English for now.
+- **Glazecalc's tools for AI assistants** ([ADR 0017](docs/adr/0017-mcp-server.md)): `POST /mcp`
+  serves the Model Context Protocol, for Claude Code, VS Code, Cursor, Gemini CLI and others. With
+  no account: search the library, a material's data, a recipe's unity formula, the limit checks,
+  substitutes for old materials, a recipe remade from given materials, and cones and
+  temperatures, with cautions in the language asked for. With an access token: your own recipes,
+  materials, shelf, notebook, firing logs and settings, and Match with what I have on your shelf.
+  Limited to 60 requests a minute per address (120 per account with a token) and 10 substitutions
+  or matches a minute. A new page, "Use Glazecalc from your AI assistant" (`/assistants`, English
+  for now), shows how to add it.
 - **The Trash and Undo.** Removing a recipe, material, note or other record moves it to the Trash,
   where it waits 30 days; the removal notice has Undo, and the Trash page puts records back, deletes
   them for good or empties the Trash. Each saved change keeps the version before it (the last 20,
@@ -14,7 +31,7 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   one table for personal tokens and OAuth grants (hashed, always expiring), a shared check,
   `data:read` and `data:write` scopes with default deny (only the record routes take a token), an
   activity log of what tokens do (90 days, titles only), and revocation of every token by a
-  password reset or "Sign out everywhere". Nothing can make a token yet.
+  password reset or "Sign out everywhere".
 - **A full Content-Security-Policy from nginx** (`default-src 'self'`), on top of the app's
   header and the build's `<meta>` policy; the e2e check loads every page under all three.
 - **Groundwork for Indonesian, Vietnamese and Thai** (not offered yet): the three are known languages (their pages exist, unindexed), with style sheets and glossaries in `docs/translations`, prompts for their translation, and Thai dates in the Gregorian calendar until a Calendar setting exists. The landing page's small heading no longer spaces out Thai letters.
