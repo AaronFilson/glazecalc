@@ -6,6 +6,7 @@
 //                              two-step sign-in on, a current factor too (code,
 //                              recoveryCode or passkey, as lib/mfa.d.ts FactorProof)
 //
+// A reset also stops every share link (docs/adr/0020-share-links.md); a change keeps them.
 // A new password signs out every device (the user's tokenVersion goes up) and
 // sends a notice to the account's address. A reset, which may mean someone
 // else knew the password, also revokes every access token and connected app
@@ -18,6 +19,7 @@ import * as email from '../lib/email.ts';
 import { notGuest } from '../lib/guest_limits.ts';
 import jwtAuth, { keepsSignIn, userOf } from '../lib/jwt_auth.ts';
 import * as log from '../lib/log.ts';
+import { stopAllSharing } from '../lib/share_links.ts';
 import * as mailer from '../lib/mailer.ts';
 import * as password from '../lib/password.ts';
 import * as limits from '../lib/rate_limit.ts';
@@ -95,9 +97,11 @@ passwordRouter.post('/reset', limits.resetPassword, express.json(), async (req, 
   if (!user) return res.status(400).json(say('reset-link-bad'));
   // Tokens are revoked first: if saving the password then fails, none is left working.
   await revokeAll(user._id, 'password-reset');
+  // As for the tokens: a reset means someone else may have had the password, so every share link stops too.
+  const stopped = await stopAllSharing(user._id);
   // The link went to the account's address, so opening it also proves the address is theirs.
   user.emailUnverified = undefined;
-  await setPassword(user, body.password as string);
+  await setPassword(user, body.password as string, stopped > 0);
   return res.status(200).json(say('password-reset'));
 });
 
@@ -136,13 +140,15 @@ passwordRouter.put(
 
 // Saves a new password, signs out every device, cancels open reset links and
 // tells the account's owner.
-async function setPassword(user: UserDocument, newPassword: string): Promise<void> {
+async function setPassword(user: UserDocument, newPassword: string, linksStopped = false): Promise<void> {
   user.password = await password.hash(newPassword);
   user.tokenVersion = (user.tokenVersion || 0) + 1;
   await user.save();
   await cancelLinks(user._id);
   // Not to an address nobody has confirmed: it may be a stranger's.
   if (!user.emailUnverified) {
-    accountMail.sendChanged(user.email, user.preferences?.language).catch(logMailError('password changed'));
+    accountMail
+      .sendChanged(user.email, user.preferences?.language, linksStopped)
+      .catch(logMailError('password changed'));
   }
 }

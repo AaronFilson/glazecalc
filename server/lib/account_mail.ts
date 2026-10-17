@@ -892,12 +892,21 @@ export const sendReset = (to: string, token: string, minutes: number, language?:
   });
 };
 
-export const sendChanged = (to: string, language?: string): Promise<void> => {
+/**
+ * Added (in English only for now) to the changed-password email after a
+ * reset that stopped the account's shared recipe links (docs/adr/0020).
+ */
+export const LINKS_STOPPED =
+  'Because the password was reset, the links you had made to share recipes were stopped. You can make new ones from each recipe.\n';
+
+export const sendChanged = (to: string, language?: string, linksStopped = false): Promise<void> => {
   const email = inLanguage(CHANGED, language);
+  const text = fill(email.text, { account: to, forgot: pageIn(language, '/forgot'), app: mailer.appUrl() });
+  const at = text.lastIndexOf('\n-- \n');
   return mailer.send({
     to,
     subject: email.subject,
-    text: fill(email.text, { account: to, forgot: pageIn(language, '/forgot'), app: mailer.appUrl() })
+    text: linksStopped && at >= 0 ? text.slice(0, at) + '\n' + LINKS_STOPPED + text.slice(at) : text
   });
 };
 
