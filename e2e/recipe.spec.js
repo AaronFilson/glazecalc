@@ -1,5 +1,6 @@
 const { test, expect } = require('@playwright/test');
 const chemistry = require('../lib/chemistry');
+const recipeTools = require('../lib/recipe');
 const standardData = require('../data');
 const {
   API,
@@ -57,6 +58,35 @@ test('shows the unity formula of a dolomite matte as it is typed', async ({ page
   // A change shows at once: no dolomite, no magnesium.
   await amount(page, 'Dolomite').fill('0');
   await expect(unity(page)).not.toContainText('MgO');
+});
+
+test('checks the glaze against Hesselberth & Roy as it is typed, plots it on a Stull chart, and works out water', async ({
+  page
+}) => {
+  for (const [name, grams] of DOLOMITE_MATTE) await addStandardMaterial(page, name, grams);
+  const expected = chemistry.calculateUMF(
+    DOLOMITE_MATTE.map(([name, grams]) => ({ material: standard[name], amount: grams }))
+  );
+  const numbers = page.locator('.recipe-numbers');
+  await expect(numbers.getByRole('heading', { name: 'Analysis and limits' })).toBeVisible();
+  await expect(numbers).toContainText('Loss on ignition' + expected.loi.toFixed(1) + '% of the raw batch');
+  await expect(page.getByLabel('Limit set')).toHaveValue('hesselberth-roy');
+  await expect(numbers).toContainText('With no firing chosen, the figures shown are for: Mid fire, cone 4–6.');
+  const alumina = numbers.locator('.limits-table tr', { hasText: 'Al₂O₃' });
+  await expect(alumina).toContainText(expected.umf.Al2O3.toFixed(2) + '0.25–0.40');
+  // At low fire the set does not apply.
+  await page.getByLabel('Firing').selectOption('low');
+  await expect(numbers).toContainText('has no figures for this firing');
+  await expect(numbers.locator('.limits-table')).toHaveCount(0);
+  // The Stull chart says where the glaze is, in words as well.
+  const point = recipeTools.stullPoint(expected.umf);
+  await expect(page.getByRole('img', { name: /Stull chart/ })).toBeVisible();
+  await expect(numbers.locator('figcaption')).toContainText('is in the ' + point.region + ' region');
+
+  const slurry = page.locator('.slurry');
+  await slurry.getByLabel('Glaze in the bucket').fill('10');
+  await slurry.getByLabel('Its SG now').fill('1.5');
+  await expect(slurry).toContainText('To reach SG 1.45, add 1.11 kg of water.');
 });
 
 test('saves a recipe, keeps it open, and saves changes to the same recipe', async ({ page }) => {

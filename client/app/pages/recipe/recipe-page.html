@@ -389,6 +389,7 @@
               @if (suggestQuestion(); as question) {
                 <section class="recipe-suggest" aria-labelledby="suggest-heading">
                   <h4 id="suggest-heading" tabindex="-1">{{ t('recipe.page.suggestHeading') }}</h4>
+                  <gc-own-limits-note />
                   @for (short of question.plan.shortfalls; track short.oxide) {
                     <fieldset>
                       <legend>
@@ -503,6 +504,7 @@
             @if (leadQuestion(); as question) {
               <section class="recipe-suggest" aria-labelledby="lead-heading">
                 <h4 id="lead-heading" tabindex="-1">{{ t('recipe.page.replaceHeading') }}</h4>
+                <gc-own-limits-note />
                 <div class="recipe-lead-cone">
                   <label for="lead-cone">{{
                     byCones() ? t('recipe.page.firedToCone') : t('recipe.page.firedTo')
@@ -628,6 +630,7 @@
             @if (shelfOpen()) {
               <section class="recipe-suggest" aria-labelledby="shelf-heading">
                 <h4 id="shelf-heading" tabindex="-1">{{ t('recipe.page.shelfHeading') }}</h4>
+                <gc-own-limits-note />
                 <p>{{ t('recipe.page.shelfIntro') }}</p>
                 @if (shelfLoaded()) {
                   <div class="recipe-swap-buttons">
@@ -879,6 +882,10 @@
         }
       </section>
     </div>
+    @if (evaluation().analysis; as analysis) {
+      <gc-recipe-numbers [analysis]="analysis" [counted]="includeAdditives()" [(firing)]="firing" />
+    }
+    <gc-slurry-calculator [(sgTarget)]="sgTarget" />
   </div>
   <!-- What an action did that the focus does not show, for screen readers; outside the part hidden while printing or comparing. -->
   <p class="visually-hidden" role="status">{{ announcement() }}</p>

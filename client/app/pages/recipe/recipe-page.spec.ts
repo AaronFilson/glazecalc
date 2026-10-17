@@ -261,6 +261,79 @@ describe('RecipePage', () => {
     await saving;
   });
 
+  it('shows the analysis, limits and Stull chart under the recipe, and saves the firing chosen for its limits', async () => {
+    const fired: Recipe = {
+      _id: 'r2',
+      title: 'Cone 10 white',
+      firing: 'high',
+      materials: [{ ...WHITING, amount: '20' }]
+    };
+    const { fixture, page } = await create([fired]);
+    page['open'](fired);
+    await fixture.whenStable();
+    const root = fixture.nativeElement as HTMLElement;
+    expect(root.querySelector('#numbers-heading')?.textContent).toContain('Analysis and limits');
+    expect((root.querySelector('#limit-firing') as HTMLSelectElement).value).toBe('high');
+    expect(root.querySelector('gc-stull-chart svg')).not.toBeNull();
+    expect(root.querySelector('#slurry-heading')).not.toBeNull();
+    expect(page['dirty']()).toBe(false);
+
+    const firing = root.querySelector('#limit-firing') as HTMLSelectElement;
+    firing.value = 'mid';
+    firing.dispatchEvent(new Event('change'));
+    await fixture.whenStable();
+    expect(page['status']()).toBe('Changes not saved yet');
+    const saving = page['save']();
+    const req = httpMock().expectOne({ method: 'PUT', url: API + '/recipe/change/r2' });
+    expect(req.request.body.recipe.firing).toBe('mid');
+    req.flush({ msg: 'Successfully updated recipe' });
+    await saving;
+  });
+
+  it('takes the firing off a saved recipe with null when unknown is chosen', async () => {
+    const fired: Recipe = {
+      _id: 'r2b',
+      title: 'Cone 10 white',
+      firing: 'high',
+      materials: [{ ...WHITING, amount: '20' }]
+    };
+    const { fixture, page } = await create([fired]);
+    page['open'](fired);
+    await fixture.whenStable();
+    const firing = (fixture.nativeElement as HTMLElement).querySelector('#limit-firing') as HTMLSelectElement;
+    firing.value = '';
+    firing.dispatchEvent(new Event('change'));
+    await fixture.whenStable();
+    expect(page['dirty']()).toBe(true);
+    const saving = page['save']();
+    const req = httpMock().expectOne({ method: 'PUT', url: API + '/recipe/change/r2b' });
+    expect(req.request.body.recipe.firing).toBeNull();
+    req.flush({ msg: 'Successfully updated recipe' });
+    await saving;
+  });
+
+  it('saves the SG target the calculator sets as sgTarget, and takes it off a saved recipe with null', async () => {
+    const mixed: Recipe = { _id: 'r3', title: 'Dipping', sgTarget: 1.4, materials: [{ ...WHITING, amount: '20' }] };
+    const { fixture, page } = await create([mixed]);
+    page['open'](mixed);
+    await fixture.whenStable();
+    expect(page['sgTarget']()).toBe(1.4);
+    expect(page['dirty']()).toBe(false);
+    page['sgTarget'].set(1.55);
+    let saving = page['save']();
+    let req = httpMock().expectOne({ method: 'PUT', url: API + '/recipe/change/r3' });
+    expect(req.request.body.recipe.sgTarget).toBe(1.55);
+    req.flush({ msg: 'Successfully updated recipe' });
+    await saving;
+    page['sgTarget'].set(null);
+    expect(page['dirty']()).toBe(true);
+    saving = page['save']();
+    req = httpMock().expectOne({ method: 'PUT', url: API + '/recipe/change/r3' });
+    expect(req.request.body.recipe.sgTarget).toBeNull();
+    req.flush({ msg: 'Successfully updated recipe' });
+    await saving;
+  });
+
   it('copies picked materials, so amounts leave the lists alone', async () => {
     const { page } = await create();
     fill(page, [[WHITING, '5']]);
@@ -1664,6 +1737,8 @@ describe('RecipePage', () => {
       expect(names).not.toContain('Red lead');
       expect(names).toContain('Borosilicate frit');
       expect(page['title']()).toBe('Untitled recipe without lead');
+      // Cone 06 was the firing chosen, so the recipe's limits are checked for low fire.
+      expect(page['firing']()).toBe('low');
       expect(page['notes']()).toMatch(
         /^Lead replaced for cone 06 on Borosilicate frit: the old recipe's silica and alumina kept, with boron and other fluxes doing lead's work\. Changed: .*Red lead 55 → 0/
       );
@@ -1675,6 +1750,7 @@ describe('RecipePage', () => {
       click(fixture, 'Undo the swap');
       await settle(fixture);
       expect(page['lines']().map((l: Material) => l.name)).toEqual(['Red lead', 'China Clay', 'Silica']);
+      expect(page['firing']()).toBe('');
     });
 
     it('compares a changed recipe with itself before the swap', async () => {

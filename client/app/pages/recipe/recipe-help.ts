@@ -99,6 +99,13 @@ import { RichText } from '../../i18n/rich-text';
             <p><gc-rich [text]="t('recipe.help.compare.tries')" /></p>
           </li>
           <li>
+            <h3>{{ t('recipe.help.numbers.heading') }}</h3>
+            <p><gc-rich [text]="t('recipe.help.numbers.analysis')" /></p>
+            <p><gc-rich [text]="t('recipe.help.numbers.limits')" /></p>
+            <p><gc-rich [text]="t('recipe.help.numbers.stull')" /></p>
+            <p><gc-rich [text]="t('recipe.help.numbers.slurry')" /></p>
+          </li>
+          <li>
             <h3>{{ t('recipe.help.print.heading') }}</h3>
             <p><gc-rich [text]="t('recipe.help.print.text')" /></p>
           </li>

@@ -132,6 +132,7 @@ test('the sign-in lives in a cookie that scripts on the page cannot read', async
     'gramPrecision',
     'language',
     'lead',
+    'limitSet',
     'notice',
     'palette',
     'preferredRegion',

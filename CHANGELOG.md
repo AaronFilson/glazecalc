@@ -6,6 +6,31 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Added
 
+- **Analysis, limits and a Stull chart on the recipe page**, under the recipe, as you type: each
+  oxide's moles, mole % and fired weight %, the loss on ignition and the calculated thermal
+  expansion (an estimate, with the coefficients named); the unity formula against a limit set,
+  Hesselberth & Roy's stable glaze limits by default (cone 6 and cone 10, their "Recommended Stable
+  Glaze 'Limits'" table of September 2000, linked to their book on Google Books) or Glazecalc's own, chosen there and kept with your settings, shown as
+  guidelines rather than pass or fail and not applied at low fire; and Stull's chart (1912) of
+  silica against alumina with the glaze's point, Stull's regions and the set's ranges, described
+  in words too. A recipe keeps the firing it is for. The recipe help explains them.
+- **Recipe numbers, after review.** Choosing the firing "not chosen" on a saved recipe is now kept;
+  the limits table and the swap checks agree at a limit (a maximum is reached at its figure, and a
+  thin glaze uses the thin boron figure); the SG calculator's sentences follow a language switch and
+  are announced to a screen reader once typing pauses; a glaze with less alumina than Stull's lowest
+  region is "unclassified", not bright; the note for oxides a set has no range for is short (Glazecalc's
+  own set says what it checks, Hesselberth & Roy's names oxides present in a meaningful amount); a
+  lead replacement for a cone sets the recipe's firing when it has none; and a limit set that cannot
+  be saved goes back to the one before, in the table and in the note under the suggestions.
+- **Specific gravity and water** on the recipe page, by Brongniart's formula: what a bucket of
+  glaze holds, the water to add (or pour off) to reach the SG you want, and the water for a new
+  batch, with densities as SG, Baumé or pint weight as Settings say, volumes in litres or US or
+  imperial gallons, and weights in kilograms or pounds and ounces.
+- **A target SG kept with the recipe.** The SG calculator can save the SG you want as the recipe's
+  `sgTarget` (1 to 2.5, kept, versioned and exported with the recipe, and cleared with one click),
+  for the mix ticket to read.
+- **Credits.** The Stull chart's regions are credited on the About page and in
+  `THIRD-PARTY-NOTICES.md`, with Derek Au's MIT notice as the licence asks.
 - **The Trash and Undo.** Removing a recipe, material, note or other record moves it to the Trash,
   where it waits 30 days; the removal notice has Undo, and the Trash page puts records back, deletes
   them for good or empties the Trash. Each saved change keeps the version before it (the last 20,

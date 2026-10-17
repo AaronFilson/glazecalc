@@ -57,6 +57,8 @@
     "stackServer": "A TypeScript API on Node.js 24 and Express 5, with MongoDB 9, checked by more than 350 automated tests.",
     "stackHosting": "Runs in Docker on Amazon Web Services, behind nginx with HTTPS from Let's Encrypt.",
     "stackDeploy": "Deployed by GitHub Actions: images are built and tested on every change, and deploys sign in to AWS without stored keys.",
+    "creditsHeading": "Credits",
+    "credits": "The regions on the Stull chart come from Glazy's reading of R. T. Stull's 1912 chart, by Derek Au (Copyright (c) 2017 Derek Au, MIT License). The <notices>full notice</notices> is in the source.",
     "whoHeading": "Who made it",
     "who": "Glazecalc is made by Aaron Filson. Found a problem or have an idea? <issues>Open an issue on GitHub</issues>.",
     "studio": "Aaron Filson's handmade pottery is at <studio>Updraft Pottery Studio</studio> in Tacoma, Washington. Have a look at the work, and order a piece if one speaks to you.",

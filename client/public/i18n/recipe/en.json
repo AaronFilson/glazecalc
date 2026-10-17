@@ -260,6 +260,13 @@
       "shelf": "<b>Match with what I have</b> makes the recipe again from only the materials you have on hand, as near its fired oxides as they allow. Your list of materials on hand is kept with your account.",
       "tries": "Each of these can take <b>materials to try</b>, any you have or would like considered, and tick <b>Must use</b> to keep one in. The new recipe says what each material supplies and whether the match needs it, what else would help, and what to watch for. Past a recommended limit, such as a lot of boron at cone 6 or raw whiting at cone 04, it says what the glaze will likely do rather than refuse. Its buttons work the recipe out again from the old one: leave a material out, add one, or allow more past a limit."
     },
+    "numbers": {
+      "heading": "Read the analysis and the limits",
+      "analysis": "<b>Analysis and limits</b>, under the recipe, shows each oxide's moles, mole % and fired weight %, the loss on ignition and the calculated thermal expansion, an estimate for comparing glazes.",
+      "limits": "<b>Limits</b> sets the unity formula against a limit set: Hesselberth & Roy's stable glaze limits unless you choose Glazecalc's own (the choice is saved with your settings). Choose the <b>Firing</b> to check it against the right figures; it is saved with the recipe. Hesselberth & Roy's figures are for cone 6 and cone 10, so at low fire it says they do not apply. They are guidelines, not a pass or a fail.",
+      "stull": "The <b>Stull chart</b> plots the glaze's silica against its alumina, with Stull's matte, semi-matte and bright regions and the limit set's ranges. It is a guide to the surface, not a prediction.",
+      "slurry": "<b>Specific gravity and water</b> uses Brongniart's formula: weigh a measured volume of the glaze, then see the dry glaze in the bucket, the water that brings it to the SG you want, or the water for a new batch. Densities follow your setting for specific gravity, Baumé or pint weight."
+    },
     "print": {
       "heading": "Print it for the glaze room",
       "text": "<b>Print</b>, beside Save or on a saved recipe, lays it out for paper. Print the whole recipe with its unity formula and analysis, or just a batch list: what to weigh for a batch of any size, a running total for weighing into one bucket, and boxes to tick. Weights are in grams, to a tenth or in full, or in pounds and ounces: choose under Settings on your account page."
@@ -365,6 +372,7 @@
     "boronLowFireTends": "It tends to melt early and run, so leave a wider foot.",
     "boronLowFireEffects": "It may pinhole or blister, turn milky blue-white where thick, and wear less well. More kaolin and silica steady it.",
     "boronMidFire": "This is a lot of boron for cone 6 ({boron}; industry counts {high} as high).",
+    "boronHighFire": "This is a lot of boron for cone 10 ({boron}; this limit set counts {high} as high).",
     "boronMidFireProbably": "Glazes like this will probably run, go milky or streaky, and may craze or wear less well.",
     "boronMidFireTends": "Glazes like this tend to run, go milky or streaky, and may craze or wear less well.",
     "boronMidFireFix": "Use just enough boron to melt; kaolin and silica steady it.",
@@ -479,5 +487,126 @@
   },
   "shelf": {
     "empty": "There are no materials on hand to match with."
+  },
+  "numbers": {
+    "heading": "Analysis and limits",
+    "analysisHeading": "Analysis",
+    "caption": "The glaze's oxides",
+    "captionCounted": "The glaze's oxides, counting colorants and additives",
+    "oxide": "Oxide",
+    "unity": "Unity",
+    "molePercent": "Mole %",
+    "weightPercent": "Weight %, fired",
+    "moleNote": "Unity is the formula with the fluxes adding up to 1; mole % is each oxide's share of all the molecules; weight % is its share of the fired glaze by weight.",
+    "ratio": "Silica to alumina",
+    "fluxBalance": "Flux balance",
+    "loi": "Loss on ignition",
+    "expansion": "Thermal expansion, calculated",
+    "expansionValue": "{value} ×10⁻⁶ per °C",
+    "expansionNote": "The expansion is an estimate for comparing glazes, not a measured value: each fired oxide's weight percent times its coefficient, with Digitalfire's coefficients (which Glazy uses too, after West and Gerrow). Which way it moves from one glaze to another is surer than by how much."
+  },
+  "limits": {
+    "heading": "Limits",
+    "set": "Limit set",
+    "sets": {
+      "hesselberth-roy": "Hesselberth & Roy, stable glazes",
+      "glazecalc": "Glazecalc's own checks"
+    },
+    "notes": {
+      "hesselberth-roy": "John Hesselberth and Ron Roy's recommended limits for stable glazes on functional stoneware and porcelain, at cone 6 and cone 10. They keep to a short list of materials, so the set has no range for barium or lithium, nor for zinc at cone 10.",
+      "glazecalc": "The figures the app warns at when it swaps materials: boron, alumina, soda and potash, and magnesia at low fire."
+    },
+    "firing": "Firing",
+    "firingUnknown": "Not chosen",
+    "bands": {
+      "low": "Low fire, cone 06–02",
+      "mid": "Mid fire, cone 4–6",
+      "high": "High fire, cone 9–11"
+    },
+    "shownFor": "With no firing chosen, the figures shown are for: {band}. The firing is saved with the recipe.",
+    "cone": "These are the set's figures for cone {cone}.",
+    "caption": "The unity formula against {name}, in moles",
+    "oxide": "Oxide",
+    "glaze": "This glaze",
+    "range": "Range",
+    "status": "Compared",
+    "atLeast": "at least {min}",
+    "upTo": "up to {max}",
+    "within": "within",
+    "below": "below",
+    "above": "above",
+    "wellBelow": "well below",
+    "wellAbove": "well above",
+    "outside": "{count, plural, =0 {Within every range.} one {Outside # range.} other {Outside # ranges.}}",
+    "notInSet": "No range in this set for {oxides}.",
+    "checksOnly": "This set checks only {oxides}.",
+    "notApply": "{name} has no figures for this firing ({band}), so it is not checked: figures for another firing would mislead.",
+    "guidance": "These are guidelines, not a pass or a fail: a glaze outside them can be fine, and one inside them can still craze, leach or fail. Test it.",
+    "source": "Source:",
+    "saveFailed": "Your choice of limit set could not be saved to your account, so the limit set before is still the one in use.",
+    "ownLimits": "These suggestions use Glazecalc's own limits, not {name}."
+  },
+  "stull": {
+    "heading": "Stull chart",
+    "title": "Stull chart: silica against alumina in the unity formula",
+    "regions": {
+      "unfused": "unfused",
+      "matte": "matte",
+      "semi-matte": "semi-matte",
+      "bright": "bright",
+      "underfired": "underfired",
+      "crazed": "crazed"
+    },
+    "at": "This glaze, SiO₂ {silica} and Al₂O₃ {alumina} (ratio {ratio}), is in the {region} region.",
+    "inCrazed": "It is in the area where Stull's glazes crazed.",
+    "offChart": "This glaze, SiO₂ {silica} and Al₂O₃ {alumina} (ratio {ratio}), is off the chart.",
+    "unclassified": "This glaze, SiO₂ {silica} and Al₂O₃ {alumina} (ratio {ratio}), has less alumina than any of Stull's regions, so the chart does not say what its surface will be.",
+    "noPoint": "There is no point to plot without both silica and alumina.",
+    "keyPoint": "Dot: this glaze.",
+    "keyBright": "Dotted line: where Stull's glazes were brightest.",
+    "keyLimits": "Dashed lines and shading: the silica and alumina ranges of {name}.",
+    "keyCrazed": "Hatching: where they crazed.",
+    "note": "A guide, not a prediction. R. T. Stull (Transactions of the American Ceramic Society, 1912) fired at cone 11 with the fluxes fixed at 0.3 K₂O and 0.7 CaO; other fluxes and firings move the regions, and an underfired matte can plot as bright. The regions are as Glazy draws them."
+  },
+  "slurry": {
+    "heading": "Specific gravity and water",
+    "intro": "Weigh a measured volume of the glaze to find its specific gravity (SG), then see what the bucket holds, the water that brings it to the SG you want, or the water for a new batch. It uses Brongniart's formula.",
+    "volume": "Glaze in the bucket",
+    "volumeUnit": "Unit of volume",
+    "units": {
+      "litres": "litres",
+      "usGallon": "US gallons",
+      "imperialGallon": "imperial gallons"
+    },
+    "amounts": {
+      "litres": "{amount} L",
+      "usGallon": "{amount} US gal",
+      "imperialGallon": "{amount} imperial gal"
+    },
+    "measured": {
+      "sg": "Its SG now",
+      "baume": "Its density now, °Bé",
+      "pint": "Its pint weight now, oz per imperial pint"
+    },
+    "target": {
+      "sg": "The SG you want",
+      "baume": "The density you want, °Bé",
+      "pint": "The pint weight you want, oz"
+    },
+    "drySg": "SG of the dry materials",
+    "drySgHelp": "About 2.5 for most glazes; Glazy uses 2.6.",
+    "batch": "Dry glaze for a new batch, {unit}",
+    "contents": "At SG {sg}, the bucket holds {glaze} of dry glaze and {water} of water.",
+    "add": "To reach SG {target}, add {water} of water. It ends at about {volume}.",
+    "pourOff": "To reach SG {target}, let it settle and pour off {water} of clear water. It ends at about {volume}.",
+    "already": "It is already at SG {target}.",
+    "mix": "Mix {glaze} of dry glaze with {water} of water for about {volume} at SG {target}.",
+    "badSg": "An SG has to be more than 1 (water's) and less than the dry materials' {dry}.",
+    "badDry": "The dry materials' SG has to be more than 1.",
+    "note": "The water is by weight: a litre weighs a kilogram, a US gallon about 8.3 lb. The arithmetic takes the volumes to add, which is close, not exact: add water a little at a time, stir, and measure again. Two glazes at the same SG can still flow differently.",
+    "saveTarget": "Save SG {sg} as this recipe's target",
+    "targetSaved": "SG {sg} is this recipe's target. It is kept with the recipe when you save it.",
+    "targetKept": "The recipe's target is SG {sg}.",
+    "clearTarget": "Clear the target"
   }
 }

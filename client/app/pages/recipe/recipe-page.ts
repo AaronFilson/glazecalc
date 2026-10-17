@@ -54,6 +54,10 @@ import { matchFromShelf } from './shelf';
 import { Run, SwapReport, SwapResult } from './swap-report';
 import { TryMaterials } from './try-materials';
 import { UnityFormula, silicaAluminaRatio, unityColumns } from './unity-formula';
+import { OwnLimitsNote } from './own-limits-note';
+import { RecipeNumbers } from './recipe-numbers';
+import { SlurryCalculator } from './slurry-calculator';
+import { FiringBand, LIMIT_SETS, bandOf } from '../../../../lib/recipe/limits';
 
 const INCLUDE_KEY = 'includeAdditives';
 
@@ -162,7 +166,10 @@ const toggled = (set: ReadonlySet<string>, id: string): ReadonlySet<string> => {
     SwapReport,
     TranslocoDirective,
     TryMaterials,
-    UnityFormula
+    UnityFormula,
+    RecipeNumbers,
+    OwnLimitsNote,
+    SlurryCalculator
   ],
   templateUrl: './recipe-page.html',
   // The saved recipes (styles.scss has the rest of the page's).
@@ -315,6 +322,10 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
 
   /** Whether the unity formula counts the colorants and additives too; saved with the recipe. */
   protected readonly includeAdditives = signal(includeByDefault());
+  /** The firing the recipe is for, as a band, for its limits; saved with the recipe. */
+  protected readonly firing = signal<FiringBand | ''>('');
+  /** The SG the glaze is mixed to, set in the SG calculator; saved with the recipe as sgTarget. */
+  protected readonly sgTarget = signal<number | null>(null);
 
   // Saving: the saved recipe this is (if any), and whether it has changed since.
   protected readonly savedId = signal<string | null>(null);
@@ -326,7 +337,9 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
       notes: this.notes(),
       materials: this.lines().map((l) => [libraryKey(l), l.amount ?? '']),
       additives: this.additiveLines().map((a) => [libraryKey(a), a.amount ?? '', unitOf(a)]),
-      includeAdditives: this.includeAdditives()
+      includeAdditives: this.includeAdditives(),
+      firing: this.firing(),
+      sgTarget: this.sgTarget()
     })
   );
   private readonly savedSnapshot = signal(this.snapshot());
@@ -425,7 +438,9 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
     notes: this.notes(),
     materials: this.lines(),
     additives: this.additiveLines(),
-    includeAdditives: this.includeAdditives()
+    includeAdditives: this.includeAdditives(),
+    ...(this.firing() ? { firing: this.firing() as FiringBand } : {}),
+    ...(this.sgTarget() !== null ? { sgTarget: this.sgTarget() } : {})
   }));
   /** The recipe in the print view, while it is open. */
   protected readonly printRecipe = computed<Recipe | null>(() => {
@@ -816,7 +831,19 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
       materials: this.lines(),
       additives: this.additiveLines(),
       computed: analysis,
-      includeAdditives: this.includeAdditives()
+      includeAdditives: this.includeAdditives(),
+      // null takes a firing (like a target) off a recipe saved with one; a new recipe just has none.
+      ...(this.firing()
+        ? { firing: this.firing() as FiringBand }
+        : this.savedId() && mode !== 'copy'
+          ? { firing: null }
+          : {}),
+      // null takes a target off a recipe saved with one; a new recipe just has none.
+      ...(this.sgTarget() !== null
+        ? { sgTarget: this.sgTarget() }
+        : this.savedId() && mode !== 'copy'
+          ? { sgTarget: null }
+          : {})
     };
     // What is sent, and which recipe the page shows: both can change before the server answers.
     const sent = this.snapshot();
@@ -1230,6 +1257,8 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
       { run, report: replacement.report, cautions: replacement.cautions },
       compare
     );
+    // The cone it was rebuilt for tells which firing the recipe is for, when it has none yet.
+    if (!this.firing() && firing.celsius) this.firing.set(bandOf(LIMIT_SETS['hesselberth-roy'], firing.celsius) ?? '');
   }
 
   /** Match with what I have: shows the materials on hand, fetched from the account. */
@@ -1420,6 +1449,8 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
     this.lines.set(undo.recipe.materials);
     this.additiveLines.set(undo.recipe.additives ?? []);
     this.includeAdditives.set(!!undo.recipe.includeAdditives);
+    this.firing.set(undo.recipe.firing ?? '');
+    this.sgTarget.set(undo.recipe.sgTarget ?? null);
     this.savedId.set(undo.savedId);
     this.savedSnapshot.set(undo.savedSnapshot);
     this.savedAt.set(undo.savedAt);
@@ -1454,6 +1485,8 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
         this.lines.set(copy(recipe.materials ?? []));
         this.additiveLines.set(copy(recipe.additives ?? []));
         this.includeAdditives.set(!!recipe.includeAdditives);
+        this.firing.set(recipe.firing ?? '');
+        this.sgTarget.set(recipe.sgTarget ?? null);
         this.savedId.set(recipe._id ?? null);
         this.savedSnapshot.set(this.snapshot());
         this.savedAt.set(null);
@@ -1536,6 +1569,8 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
     this.lines.set([]);
     this.additiveLines.set([]);
     this.includeAdditives.set(includeByDefault());
+    this.firing.set('');
+    this.sgTarget.set(null);
     this.savedId.set(null);
     this.savedAt.set(null);
     this.savedSnapshot.set(this.snapshot());

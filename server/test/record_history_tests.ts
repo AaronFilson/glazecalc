@@ -295,6 +295,20 @@ describe('record versions and Undo', () => {
     expect(now.materials).to.eql(recipe.materials);
   });
 
+  it('keeps a recipe’s sgTarget in its versions, so Undo puts it back', async () => {
+    const saved = (
+      await api()
+        .post('/recipe/create')
+        .set('Authorization', bearer(token))
+        .send({ ...recipe, sgTarget: 1.4 })
+    ).body as { _id: string };
+    await api()
+      .put('/recipe/change/' + saved._id)
+      .set('Authorization', bearer(token))
+      .send({ recipe: { sgTarget: 1.6 } });
+    expect((await undo(saved._id)).body.record.sgTarget).to.equal(1.4);
+  });
+
   it('has nothing to undo before the first change', async () => {
     const none = await undo((await create())._id);
     expect(none).to.have.status(404);

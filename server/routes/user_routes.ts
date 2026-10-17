@@ -3,7 +3,7 @@
 //   GET    /api/verify            who the session belongs to (mfa: true when two-step sign-in is on)
 //   GET    /api/preferences       the account's (or trial's) choices: { weightUnit, gramPrecision, theme, palette, lead,
 //                                  region, format, decimalMark, temperature, cones, language,
-//                                  density, englishTerms, notice, recipeHelp }
+//                                  density, englishTerms, notice, recipeHelp, limitSet }
 //   PUT    /api/preferences       any of them (models/user.ts PREFERENCES lists what each may be)
 //   GET    /api/shelf             the materials the account (or trial) has on hand: { shelf: [key] }
 //   PUT    /api/shelf             { shelf: [key] } in place of the list

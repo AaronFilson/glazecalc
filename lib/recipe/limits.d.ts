@@ -65,12 +65,37 @@ export interface LimitSet {
   source: { title: string; url?: string };
   bands: ReadonlyArray<{ band: FiringBand; belowC?: number }>;
   whenUnknown: FiringBand;
+  /** The cone each band's figures are for, as the source names it ('6', '10'), where it names one. */
+  cones?: Readonly<Partial<Record<FiringBand, string>>>;
+  /** A band the set names but has no figures for is one it does not apply to. */
   unity: Readonly<Partial<Record<FiringBand, Readonly<Record<string, UnityRange>>>>>;
 }
 
-/** The app's own limits (low fire, and mid fire from 1150 °C up), the default. */
+/** The app's own limits (low fire, and mid fire from 1150 °C up), what the swaps check against. */
 export const GLAZECALC_LIMITS: LimitSet;
+/** Hesselberth & Roy's stable glaze limits, cone 6 and cone 10 (Ceramics Monthly, September 2000). */
+export const HESSELBERTH_ROY_LIMITS: LimitSet;
 /** The limit sets to choose from, by id. */
 export const LIMIT_SETS: Readonly<Record<string, LimitSet>>;
+/** The id of the set the recipe page shows until another is chosen. */
+export const DEFAULT_LIMIT_SET: string;
 /** The band of a set a firing falls in; undefined when the firing is not known. */
 export function bandOf(set: LimitSet, celsius: number | undefined): FiringBand | undefined;
+/** A set's ranges for a band (its nearest, if it does not name it), or null where it does not apply. */
+export function unityFor(set: LimitSet, band: FiringBand): Readonly<Record<string, UnityRange>> | null;
+
+/** A recipe's value against one of a set's ranges. */
+export interface LimitRow {
+  /** The oxide or sum: 'B2O3', 'K2O+Na2O'. */
+  oxide: string;
+  value: number;
+  min?: number;
+  max?: number;
+  /** Which side of the range the value is past; null within it. */
+  past: 'below' | 'above' | null;
+  /** Past the set's figure for a likely fault as well, where it has one. */
+  likely: boolean;
+}
+
+/** A row per limit a set has for a band, or null where the set does not apply to it. */
+export function limitRows(unity: Record<string, number>, set: LimitSet, band: FiringBand): LimitRow[] | null;

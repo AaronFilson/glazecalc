@@ -25,6 +25,8 @@ Node and the Angular build both load, typed by hand-written declarations, one pe
 | `numbers.js`     | Saved and typed numbers (`plainNumber`, `parseNumber`, `toPlain`, `forTyping`)             |
 | `temperature.js` | °C and °F, and a temperature in the reader's scale                                         |
 | `limits.js`      | The figures the checks warn at, as data (`CHECK_LIMITS`, `FIRING`), and limit sets         |
+| `analysis.js`    | Mole percent, and a unity formula's point on Stull's chart                                 |
+| `slurry.js`      | Brongniart's formula: dry glaze and water in a slurry, water to reach an SG                |
 | `checks.js`      | `pastLimits` and `sizeNotes`: cautions for a recipe                                        |
 | `library.js`     | `hasLead`, `inRegion`, `suggestable`: what the library says, without the chemistry         |
 | `materials.js`   | Oxide percents, how alike two materials are, a frit's role, a recipe's moles and expansion |
@@ -80,18 +82,49 @@ Node and the Angular build both load, typed by hand-written declarations, one pe
   built from `CHECK_LIMITS`, which keeps the figures that are not ranges on the unity formula
   (clay and whiting shares, expansion, boron blue, the size notes). `pastLimits` takes the set as
   `input.limitSet`, the app's own by default, and reads boron, alumina, soda and potash and
-  magnesia from it for the firing's band. Published sets (Hesselberth & Roy as the default, and
-  others to choose from) go in `LIMIT_SETS` beside it, with their figures as published; none is
-  there yet. Before a set with a high band is used, the boron caution needs cone 10 words (it uses
-  the mid-fire sentences, which name cone 6, for any band above low), and magnesia is checked only
-  in a low band because its sentence says it does not melt at cone 06-04. One more function, given
-  a unity formula, a set and a band, returns a row per limit (`{ oxide, value, min, max }`); live
-  warnings and the `check_limits` tool call it and `pastLimits`.
-- **Analysis.** A Stull chart point, LOI, expansion and mole percent are functions of the unity
-  formula and analysis that `lib/chemistry` already works out; they go in `lib/recipe` as pure
-  functions of a `UmfResult`, with no words.
-- **Batches.** SG and water, and cost per batch, build on `batchWeights`; a blend generator on
-  `rebase`; paste-in import on `parseNumber` and the library's `findNamed`-style lookup.
+  magnesia from it for the firing's band. Magnesia is checked only in a low band because its
+  sentence says it does not melt at cone 06-04.
+- **Hesselberth & Roy (added October 2026).** `HESSELBERTH_ROY_LIMITS` sits in `LIMIT_SETS`
+  beside the app's own, and `DEFAULT_LIMIT_SET` names it: the recipe page shows it unless the
+  potter chooses the app's own (the `limitSet` setting, kept with the account as the other
+  settings are, trials included). The figures are John Hesselberth and Ron Roy's "Recommended
+  Stable Glaze 'Limits'" table, copied figure for figure from "Making Stable Glazes for Functional
+  Stoneware and Porcelain" (Ceramics Monthly, September 2000; page 3 of the authors' edited
+  version). It has two columns, cone 6 (the `mid` band) and cone 10 (`high`), and no figures for
+  barium, lithium or lead, nor zinc at cone 10. A copy that circulates as a teaching handout, and
+  Glazy's table, give K2O + Na2O at cone 6 as .01-.03; the article has 0.1-0.3, which is what is
+  here. Their book, Mastering Cone 6 Glazes (2002), was not checked against it; the set's link
+  is the book's, since the article is not online from its publisher. The set names a `low` band
+  (below 1150 °C) with no figures: `unityFor(set, band)` gives null there and the page says the
+  set does not apply, rather than stretching cone 6's figures to cone 04. Its `mid` band runs to
+  1250 °C (cone 7 is read with the cone 6 figures), `high` from there. A set's `cones` names the
+  cone each band's figures are for, for the page's words. The boron caution has cone 10 words
+  (`checks.boronHighFire`) for a set's high band. The swaps keep checking against the app's own
+  set: its figures have the second, likely level the sentences need, which the published sets
+  do not.
+- **Live limits.** `limitRows(unity, set, band)` gives a row per range (`{ oxide, value, min,
+max, past, likely }`), or null where the set does not apply. The recipe page shows them as
+  guidance under the unity formula, with the source linked; a recipe keeps the firing it is for
+  as a band (`firing`: `low`, `mid` or `high`), chosen on the page.
+- **Analysis (added October 2026).** `analysis.js` has `molePercent(unity)` and `stullPoint(unity)`,
+  the point on R. T. Stull's chart (Transactions of the American Ceramic Society 14, 1912) with
+  its region as a code (`'matte'`, `'semi-matte'`, `'bright'`...). The regions' outlines are
+  Glazy's reading of Stull's chart (Derek Au, MIT licence), in `STULL`. LOI and expansion stay in
+  `lib/chemistry`'s `UmfResult`. The outlines' MIT notice is in `THIRD-PARTY-NOTICES.md`, in the
+  header of `analysis.js` and credited on the About page.
+- **Which limits check what.** The substitution, suggestion and lead-replacement checks always use
+  Glazecalc's own graded limits (`pastLimits`), whichever set the recipe page shows; when the shown
+  set differs, a line under those headings says so (`own-limits-note.ts`). Hesselberth & Roy's
+  set has no "likely" grade to drive them.
+- **Target SG.** The SG calculator can keep a target on the recipe as `sgTarget` (a number, 1 to
+  2.5, `SG_TARGET_RANGE`; null clears it). Another branch's mix ticket reads it by that name. It
+  is saved, versioned, trashed and exported like the recipe's other fields. Dry materials default
+  to SG 2.5 (editable).
+- **Batches.** `slurry.js` does Brongniart's formula in litres and kilograms: the dry glaze and
+  water in a slurry (`slurryContents`), the water to bring it to an SG (`waterToReach`, which
+  does not depend on the dry materials' SG), and the water for a batch (`waterForBatch`), with
+  Baumé and imperial pint weight conversions. Cost per batch can build on `batchWeights`; a blend
+  generator on `rebase`; paste-in import on `parseNumber` and the library's `findNamed`-style lookup.
 - New sentences get a code in `messages.js` and in the `RecipeMessageCode` union in
   `messages.d.ts`, a key in the recipe messages, and a line in the app's table. Each is checked:
   the server test fails if a code has no English or the union and `CODES` differ, and TypeScript

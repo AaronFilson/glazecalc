@@ -76,7 +76,8 @@ describe('user API', () => {
       density: '',
       englishTerms: 'off',
       notice: 'shown',
-      recipeHelp: 'auto'
+      recipeHelp: 'auto',
+      limitSet: 'hesselberth-roy'
     };
 
     it('start in grams to a tenth, and change one at a time', async () => {
@@ -111,6 +112,15 @@ describe('user API', () => {
       expect(refused).to.have.status(400);
       expect(refused.body.msg).to.equal('Choose auto, shown or hidden.');
       expect((await put(token, { recipeHelp: 'auto' })).body.recipeHelp).to.equal('auto');
+    });
+
+    it('keep the limits the recipe page checks against: Hesselberth & Roy’s until another is chosen', async () => {
+      expect((await put(token, { limitSet: 'glazecalc' })).body.limitSet).to.equal('glazecalc');
+      expect((await User.findById(user._id))?.preferences?.limitSet).to.equal('glazecalc');
+      const refused = await put(token, { limitSet: 'cushing' });
+      expect(refused).to.have.status(400);
+      expect(refused.body.msg).to.equal('Choose hesselberth-roy or glazecalc.');
+      expect((await put(token, { limitSet: 'hesselberth-roy' })).body.limitSet).to.equal('hesselberth-roy');
     });
 
     it('keep where the potter works and how numbers, temperatures and firing are shown', async () => {
