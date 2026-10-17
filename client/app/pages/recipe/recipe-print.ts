@@ -852,8 +852,8 @@ export class RecipePrint implements OnInit, OnDestroy {
    * the mix ticket shows it, with a line for the reading.
    */
   protected readonly sgTarget = computed(() => {
-    const target = (this.recipe() as Recipe & { sgTarget?: string | number }).sgTarget;
-    return target === undefined || target === null || String(target).trim() === '' ? '' : formatPlain(String(target));
+    const target = this.recipe().sgTarget;
+    return target === undefined || target === null ? '' : formatPlain(String(target));
   });
 
   protected readonly units = UNITS;

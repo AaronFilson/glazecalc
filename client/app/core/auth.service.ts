@@ -296,6 +296,7 @@ export class AuthService {
     type Finished = MessageResponse & {
       email?: string;
       kept?: number;
+      pricesSkipped?: number;
       next?: string;
       provider?: ProviderId;
       reauth?: string;

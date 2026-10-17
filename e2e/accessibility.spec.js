@@ -37,6 +37,7 @@ const PUBLIC_PAGES = [
   '/about',
   ...GUIDES,
   '/privacy',
+  '/assistants',
   '/signin',
   '/signup',
   '/forgot',

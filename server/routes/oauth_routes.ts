@@ -256,9 +256,13 @@ const signedIn = async (
 ) => {
   // Only while it is still a trial: it may have been claimed or swept since.
   const trial = trialId ? await User.exists({ _id: trialId, guest: true }) : null;
-  const kept = trial ? await mergeTrial(trial._id, user._id) : 0;
+  const { records: kept, pricesSkipped } = trial
+    ? await mergeTrial(trial._id, user._id)
+    : { records: 0, pricesSkipped: 0 };
   session.start(res, user, 7, keep);
-  return res.status(200).json(say('signed-in', undefined, { email: user.email, kept, next }));
+  return res
+    .status(200)
+    .json(say('signed-in', undefined, { email: user.email, kept, next, ...(pricesSkipped && { pricesSkipped }) }));
 };
 
 /**

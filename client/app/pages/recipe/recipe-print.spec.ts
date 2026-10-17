@@ -229,7 +229,7 @@ describe('RecipePrint', () => {
   });
 
   it('makes the batch list a mix ticket: batch number, date, target SG when there is one, and lines to sign', async () => {
-    const { fixture, root } = await create({ ...RECIPE, sgTarget: '1.45' } as Recipe);
+    const { fixture, root } = await create({ ...RECIPE, sgTarget: 1.45 });
     // Only the batch list asks for a batch number.
     expect(root.querySelector('#print-batch-number')).toBeNull();
     expect(root.querySelector('.print-ticket')).toBeNull();

@@ -30,6 +30,7 @@ const PAGES = [
   '/guides/safe-mixing',
   '/about',
   '/privacy',
+  '/assistants',
   '/de/guides',
   '/shared',
   '/pseudo'
