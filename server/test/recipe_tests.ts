@@ -2,7 +2,7 @@ import { readFileSync } from 'node:fs';
 import { expect } from 'chai';
 import { IntlMessageFormat } from 'intl-messageformat';
 import recipe from '../../lib/recipe/index.js';
-import type { Caution, MaterialRecord, RecipeMessage } from '../../lib/recipe/index.js';
+import type { Caution, LimitSet, MaterialRecord, RecipeMessage } from '../../lib/recipe/index.js';
 import standardData from '../../data/index.js';
 
 // The recipe tools the app and the server share (lib/recipe; docs/adr/0019).
@@ -142,6 +142,64 @@ describe('Shared recipe tools', () => {
     expect(recipe.FIRING.lowFireBelow).to.equal(1150);
   });
 
+  it('declares every code it can say, and no other, for TypeScript callers', () => {
+    const declared = readFileSync('lib/recipe/messages.d.ts', 'utf8');
+    const union = declared.slice(
+      declared.indexOf('export type RecipeMessageCode'),
+      declared.indexOf(';', declared.indexOf('export type RecipeMessageCode'))
+    );
+    const codes = [...union.matchAll(/'([^']+)'/g)].map((match) => match[1]);
+    expect(codes).to.deep.equal([...recipe.CODES]);
+  });
+
+  it('gives each caution as data too: the quantity, its value, the limit, which side is past, how serious', () => {
+    const lines = [
+      { material: POTASH, amount: '80' },
+      { material: SILICA, amount: '20' }
+    ];
+    const unity = { K2O: 0.6, Na2O: 0.1, CaO: 0.3, Al2O3: 0.3, SiO2: 3 };
+    const alkali = recipe.pastLimits({ lines, unity, celsius: 1222 }).find((c) => c.check === 'alkali');
+    expect(alkali).to.include({
+      severity: 'likely',
+      quantity: 'K2O+Na2O',
+      limit: 0.3,
+      direction: 'above'
+    });
+    expect(alkali?.value).to.be.closeTo(0.7, 1e-9);
+    const tends = recipe.pastLimits({ lines, unity: { ...unity, K2O: 0.25 }, celsius: 1222 });
+    expect(tends.find((c) => c.check === 'alkali')).to.include({ severity: 'caution', limit: 0.3 });
+    const clay = recipe.pastLimits({ lines, unity, celsius: 1222 }).find((c) => c.check === 'clay-low');
+    expect(clay).to.include({ quantity: 'raw-clay-percent', value: 0, limit: 5, direction: 'below' });
+  });
+
+  it('checks against a limit set, by its firing bands: the app’s own reads cone 10 as mid fire', () => {
+    const own = recipe.GLAZECALC_LIMITS;
+    expect(recipe.LIMIT_SETS[own.id]).to.equal(own);
+    expect(own.source.title).to.be.a('string');
+    expect(recipe.bandOf(own, 1060)).to.equal('low');
+    expect(recipe.bandOf(own, 1222)).to.equal('mid');
+    expect(recipe.bandOf(own, 1300)).to.equal('mid');
+    expect(recipe.bandOf(own, undefined)).to.equal(undefined);
+    expect(own.unity.mid?.['B2O3']?.max).to.equal(recipe.CHECK_LIMITS.boronMidFire.caution);
+    // A set with a high band checks cone 10 by its own figures.
+    const banded: LimitSet = {
+      id: 'test',
+      name: 'Test',
+      source: { title: 'A test set' },
+      bands: [{ band: 'low', belowC: 1150 }, { band: 'mid', belowC: 1250 }, { band: 'high' }],
+      whenUnknown: 'mid',
+      unity: { mid: { 'K2O+Na2O': { max: 0.3 } }, high: { 'K2O+Na2O': { max: 0.5 } } }
+    };
+    expect(recipe.bandOf(banded, 1300)).to.equal('high');
+    const lines = [{ material: KAOLIN, amount: '10' }];
+    const unity = { K2O: 0.4, CaO: 0.6, Al2O3: 0.4, SiO2: 4 };
+    const checks = (celsius: number, limitSet?: LimitSet) =>
+      recipe.pastLimits({ lines, unity, celsius, limitSet }).map((c) => c.check);
+    expect(checks(1300)).to.include('alkali');
+    expect(checks(1300, banded)).not.to.include('alkali');
+    expect(checks(1222, banded)).to.include('alkali');
+  });
+
   it('matches a recipe from the materials on hand, saying what changed as codes', () => {
     const lines = [line(POTASH, 40), line(WHITING, 20), line(KAOLIN, 10), line(SILICA, 30)];
     const shelf = [POTASH, WHITING, KAOLIN, SILICA].map((m) => ({ material: m, must: false }));
@@ -154,6 +212,15 @@ describe('Shared recipe tools', () => {
     // Without whiting on the shelf, it goes.
     const without = recipe.matchFromShelf(lines, shelf.slice(0, 1).concat(shelf.slice(2)));
     expect(without.changes.map(english)).to.include('Whiting 20 → 0');
+    // With nothing on hand it says so in a code, which has its English.
+    expect(() => recipe.matchFromShelf(lines, []))
+      .to.throw(recipe.RecipeError)
+      .with.property('code', 'shelf.empty');
+    try {
+      recipe.matchFromShelf(lines, []);
+    } catch (error) {
+      expect(english(error as RecipeMessage)).to.equal('There are no materials on hand to match with.');
+    }
   });
 
   it('replaces a discontinued material and suggests amounts, over the standard library', () => {

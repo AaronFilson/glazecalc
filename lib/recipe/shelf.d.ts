@@ -11,6 +11,7 @@ export interface ShelfMatch<M extends MaterialRecord = MaterialRecord> {
   cautions: Caution[];
 }
 
+/** The recipe made from the materials on the shelf only; throws a RecipeError ('shelf.empty') if there are none. */
 export function matchFromShelf<M extends MaterialRecord>(
   lines: M[],
   shelf: TryMaterial<M>[],

@@ -1,6 +1,6 @@
 import { translate } from '@jsverse/transloco';
 import { expansion, formatFormula } from '../../../../lib/chemistry';
-import * as recipe from '../../../../lib/recipe';
+import * as swapsLib from '../../../../lib/recipe/swaps';
 import { LibraryInfo, Material, RecipeAnalysis, RecipeMaterial } from '../../core/models';
 import { statusText } from '../../shared/library-info';
 import { UNITY_TITLES, silicaAluminaRatio, unityColumnOf } from './unity-formula';
@@ -99,7 +99,7 @@ export interface Swap {
 }
 
 // Whether one material can stand in for another gram for gram (lib/recipe/materials.js).
-export { likeForLike } from '../../../../lib/recipe';
+export { likeForLike } from '../../../../lib/recipe/materials';
 
 export type LibraryMaterial = Material & LibraryInfo;
 
@@ -111,9 +111,9 @@ export interface ColorantSwap {
 }
 
 /** A shared swap (lib/recipe/swaps.js) with its status in the page's language. */
-export function swapText(swap: recipe.Swap): Swap;
-export function swapText(swap: recipe.ColorantSwap): ColorantSwap;
-export function swapText({ statusSince, ...swap }: recipe.Swap | recipe.ColorantSwap): Swap | ColorantSwap {
+export function swapText(swap: swapsLib.Swap): Swap;
+export function swapText(swap: swapsLib.ColorantSwap): ColorantSwap;
+export function swapText({ statusSince, ...swap }: swapsLib.Swap | swapsLib.ColorantSwap): Swap | ColorantSwap {
   return { ...swap, status: statusText({ status: swap.status, statusSince }) };
 }
 
@@ -133,7 +133,7 @@ export function modernMaterials(
   region = '',
   options: { allowLead?: boolean; findAdditive?: (name: string) => (LibraryInfo & { name: string }) | undefined } = {}
 ): { materials: RecipeMaterial[]; swaps: Swap[]; colorants: ColorantSwap[] } {
-  const modern = recipe.modernMaterials<RecipeMaterial>(materials, find, region, options);
+  const modern = swapsLib.modernMaterials<RecipeMaterial>(materials, find, region, options);
   return {
     ...modern,
     swaps: modern.swaps.map((swap) => swapText(swap)),

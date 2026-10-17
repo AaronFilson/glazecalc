@@ -1,4 +1,4 @@
-import * as recipe from '../../../../lib/recipe';
+import * as leadLib from '../../../../lib/recipe/lead';
 import { Additive, RecipeMaterial } from '../../core/models';
 import { LibraryMaterial } from './compare';
 import { Report, TryMaterial, reportText } from './pool';
@@ -9,8 +9,9 @@ import { cautionText, recipeText } from './recipe-messages';
 // that frit's 85:15 base with kaolin. The working out is shared with the
 // server (lib/recipe/lead.js); this puts what it says in the page's language.
 
-export type { BaseChoice, LeadMode } from '../../../../lib/recipe';
-export { leadFreeBases, leadIn, recipeHasLead, roleOf } from '../../../../lib/recipe';
+export type { BaseChoice, LeadMode } from '../../../../lib/recipe/lead';
+export { leadFreeBases, leadIn, recipeHasLead } from '../../../../lib/recipe/lead';
+export { roleOf } from '../../../../lib/recipe/materials';
 
 export interface Replacement {
   materials: RecipeMaterial[];
@@ -42,9 +43,9 @@ export function replaceLead(
   find: (name: string) => LibraryMaterial | undefined,
   standard: LibraryMaterial[],
   region: string,
-  options: { base: string; celsius: number; mode: recipe.LeadMode } & LeadExtras
+  options: { base: string; celsius: number; mode: leadLib.LeadMode } & LeadExtras
 ): Replacement {
-  const replacement = recipe.replaceLead<RecipeMaterial>(lines, additives, find, standard, region, options);
+  const replacement = leadLib.replaceLead<RecipeMaterial>(lines, additives, find, standard, region, options);
   return {
     materials: replacement.materials,
     changes: replacement.changes.map(recipeText),

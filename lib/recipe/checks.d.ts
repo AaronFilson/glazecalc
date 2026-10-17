@@ -1,6 +1,7 @@
 // Types for lib/recipe/checks.js (see index.d.ts).
 
 import type { AdditiveRecord, MaterialRecord } from './library';
+import type { LimitSet } from './limits';
 import type { Caution } from './messages';
 
 export interface CheckInput {
@@ -17,6 +18,8 @@ export interface CheckInput {
   oldClay?: number;
   /** Calculated expansion, before and after. */
   expansion?: { was: number | null; now: number | null };
+  /** The limits on the unity formula to check against: the app's own (GLAZECALC_LIMITS) by default. */
+  limitSet?: LimitSet;
 }
 
 /** Cautions for what is past a recommended limit. */

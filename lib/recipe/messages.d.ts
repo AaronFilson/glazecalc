@@ -74,7 +74,8 @@ export type RecipeMessageCode =
   | 'lead.chrome'
   | 'lead.copper'
   | 'lead.manganese'
-  | 'lead.iron';
+  | 'lead.iron'
+  | 'shelf.empty';
 
 export const CODES: ReadonlyArray<RecipeMessageCode>;
 
@@ -121,10 +122,52 @@ export type CheckName =
   | 'lead-manganese'
   | 'lead-iron';
 
-/** A warning or note: the check, and its sentences, read one after another. */
+/** How serious a caution is: past the likely figure, past the recommended limit, or a note. */
+export type Severity = 'likely' | 'caution' | 'note';
+
+/**
+ * What a check measured: an oxide or sum in the unity formula ('B2O3',
+ * 'K2O+Na2O'), a ratio ('SiO2:Al2O3'), a share of the batch in percent
+ * (raw clay, raw whiting and dolomite, one material), calculated expansion
+ * (x10^-6 per °C), or the number of materials.
+ */
+export type Quantity =
+  | 'B2O3'
+  | 'Al2O3'
+  | 'K2O+Na2O'
+  | 'MgO'
+  | 'ZnO'
+  | 'SiO2:Al2O3'
+  | 'raw-clay-percent'
+  | 'raw-calcium-percent'
+  | 'material-percent'
+  | 'expansion'
+  | 'materials';
+
+/**
+ * A warning or note: the check, its sentences read one after another, and the
+ * same as data, so a program need not read the codes. A check that measures
+ * something gives the quantity, its value, the limit (where a caution starts)
+ * and the side of it that is past (`above`: at or over it; `below`: under it);
+ * one about a material names it.
+ */
 export interface Caution {
   check: CheckName;
+  severity: Severity;
+  quantity?: Quantity;
+  value?: number;
+  limit?: number;
+  direction?: 'above' | 'below';
+  material?: string;
   sentences: RecipeMessage[];
+}
+
+/** What a recipe tool throws when it cannot do what it was asked: `message` is the code. */
+export class RecipeError extends Error {
+  constructor(code: RecipeMessageCode, params?: RecipeMessage['params']);
+  name: 'RecipeError';
+  code: RecipeMessageCode;
+  params?: RecipeMessage['params'];
 }
 
 export function figure(value: number, places: number): Figure;

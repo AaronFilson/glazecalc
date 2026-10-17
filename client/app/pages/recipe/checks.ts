@@ -1,4 +1,4 @@
-import * as recipe from '../../../../lib/recipe';
+import * as checksLib from '../../../../lib/recipe/checks';
 import { listOf } from '../../shared/format';
 import { Additive, Material } from '../../core/models';
 import { oxideName } from './pool';
@@ -9,16 +9,16 @@ import { cautionText } from './recipe-messages';
 // shared with the server (lib/recipe/checks.js); this puts what they find in
 // the page's language.
 
-export { rawClayPercent } from '../../../../lib/recipe';
+export { rawClayPercent } from '../../../../lib/recipe/checks';
 
-export interface CheckInput extends recipe.CheckInput {
+export interface CheckInput extends checksLib.CheckInput {
   lines: Array<{ material: Material; amount: string | number | undefined }>;
   additives?: Additive[];
 }
 
 /** Warnings, in plain words, for what is past a recommended limit. */
 export function pastLimits(input: CheckInput): string[] {
-  return recipe.pastLimits(input).map(cautionText);
+  return checksLib.pastLimits(input).map(cautionText);
 }
 
 /**
@@ -29,7 +29,7 @@ export function sizeNotes(
   lines: Array<{ material: Material; amount: string | number | undefined }>,
   low?: boolean
 ): string[] {
-  return recipe.sizeNotes(lines, low).map(cautionText);
+  return checksLib.sizeNotes(lines, low).map(cautionText);
 }
 
 /** "potash, soda": oxide names for a list. */

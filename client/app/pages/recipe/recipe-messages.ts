@@ -1,7 +1,7 @@
 import { translate } from '@jsverse/transloco';
 import { marker } from '@jsverse/transloco-keys-manager/marker';
-import type { Caution, Figure, RecipeMessage, RecipeMessageCode } from '../../../../lib/recipe';
-import { paramsText } from '../../../../lib/recipe';
+import type { Caution, Figure, RecipeMessage, RecipeMessageCode } from '../../../../lib/recipe/messages';
+import { paramsText } from '../../../../lib/recipe/messages';
 import { fixed, upTo } from '../../shared/format';
 
 // What the shared recipe tools say (lib/recipe), in the page's language: each
@@ -81,7 +81,8 @@ const KEYS: Record<RecipeMessageCode, string> = {
   'lead.chrome': marker('recipe.lead.chrome'),
   'lead.copper': marker('recipe.lead.copper'),
   'lead.manganese': marker('recipe.lead.manganese'),
-  'lead.iron': marker('recipe.lead.iron')
+  'lead.iron': marker('recipe.lead.iron'),
+  'shelf.empty': marker('recipe.shelf.empty')
 };
 
 /** A figure as the reader writes numbers: 0,30 or 0.30. */

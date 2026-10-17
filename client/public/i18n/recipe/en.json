@@ -473,5 +473,8 @@
     "suppliesLittle": "a little of the glaze",
     "changed": "{name} {from} → {to}",
     "added": "{name} {amount}, new"
+  },
+  "shelf": {
+    "empty": "There are no materials on hand to match with."
   }
 }

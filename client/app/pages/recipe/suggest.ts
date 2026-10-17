@@ -1,4 +1,4 @@
-import * as recipe from '../../../../lib/recipe';
+import * as suggestLib from '../../../../lib/recipe/suggest';
 import { Additive, Material, RecipeMaterial } from '../../core/models';
 import { LibraryMaterial, Swap, swapText } from './compare';
 import { Report, TryMaterial, oxideLabel, oxidePercent, reportText } from './pool';
@@ -10,11 +10,11 @@ export { oxideLabel, oxidePercent };
 // 0012). The working out is shared with the server (lib/recipe/suggest.js);
 // this puts what it says in the page's language.
 
-export type { Choice, Shortfall } from '../../../../lib/recipe';
+export type { Choice, Shortfall } from '../../../../lib/recipe/suggest';
 
 export interface Plan {
   swaps: Swap[];
-  shortfalls: recipe.Shortfall[];
+  shortfalls: suggestLib.Shortfall[];
 }
 
 export interface Suggestion {
@@ -56,7 +56,7 @@ export function planSuggestion(
   region: string,
   options: LeadOption = {}
 ): Plan {
-  const plan = recipe.planSuggestion<RecipeMaterial>(lines, find, standard, region, options);
+  const plan = suggestLib.planSuggestion<RecipeMaterial>(lines, find, standard, region, options);
   return { ...plan, swaps: plan.swaps.map((swap) => swapText(swap)) };
 }
 
@@ -72,7 +72,7 @@ export function suggestAmounts(
   region: string,
   options: LeadOption & Extras = {}
 ): Suggestion {
-  const suggestion = recipe.suggestAmounts<RecipeMaterial>(lines, find, bringIn, region, options);
+  const suggestion = suggestLib.suggestAmounts<RecipeMaterial>(lines, find, bringIn, region, options);
   return {
     ...suggestion,
     changes: suggestion.changes.map(recipeText),

@@ -1,4 +1,5 @@
-import * as recipe from '../../../../lib/recipe';
+import { RecipeError } from '../../../../lib/recipe/messages';
+import * as shelfLib from '../../../../lib/recipe/shelf';
 import { Additive, RecipeMaterial } from '../../core/models';
 import { Report, TryMaterial, reportText } from './pool';
 import { cautionText, recipeText } from './recipe-messages';
@@ -25,7 +26,13 @@ export function matchFromShelf(
   shelf: TryMaterial[],
   options: { avoid?: string[]; additives?: Additive[] } = {}
 ): ShelfMatch {
-  const match = recipe.matchFromShelf<RecipeMaterial>(lines, shelf, options);
+  let match: shelfLib.ShelfMatch<RecipeMaterial>;
+  try {
+    match = shelfLib.matchFromShelf<RecipeMaterial>(lines, shelf, options);
+  } catch (error) {
+    // The library says why in a code; the page's error says it in words.
+    throw error instanceof RecipeError ? new Error(recipeText(error)) : error;
+  }
   return {
     materials: match.materials,
     changes: match.changes.map(recipeText),

@@ -1,7 +1,7 @@
 import { translate } from '@jsverse/transloco';
 import { marker } from '@jsverse/transloco-keys-manager/marker';
 import { Selection, formatFormula } from '../../../../lib/chemistry';
-import * as recipe from '../../../../lib/recipe';
+import * as poolLib from '../../../../lib/recipe/pool';
 import { Material, RecipeMaterial } from '../../core/models';
 import { listOf, upTo } from '../../shared/format';
 import { figureText, recipeText } from './recipe-messages';
@@ -41,7 +41,9 @@ export const oxideName = (oxide: string): string =>
   OXIDE_NAMES[oxide] ? translate(OXIDE_NAMES[oxide]) : formatFormula(oxide);
 
 // Whether the app may suggest a material, and how much of an oxide one brings (lib/recipe/materials.js).
-export { isIdealMineral, oxidePercent, placesFor, suggestable } from '../../../../lib/recipe';
+export { isIdealMineral, suggestable } from '../../../../lib/recipe/library';
+export { oxidePercent } from '../../../../lib/recipe/materials';
+export { placesFor } from '../../../../lib/recipe/pool';
 
 /** A material the potter added to try, perhaps marked "must use". */
 export interface TryMaterial {
@@ -98,7 +100,7 @@ function suppliesText(supplies: Array<{ oxide: string; share: number }>): string
 }
 
 /** A shared report (lib/recipe) in the page's language. */
-export function reportText(report: recipe.Report): Report {
+export function reportText(report: poolLib.Report): Report {
   return {
     ...report,
     uses: report.uses.map((use) => ({ ...use, amount: figureText(use.amount), supplies: suppliesText(use.supplies) })),
@@ -112,7 +114,7 @@ export function explain(
   lines: Array<{ material: Material; fixed?: boolean }>,
   places: number
 ): Report {
-  return reportText(recipe.explain(selection, lines, places));
+  return reportText(poolLib.explain(selection, lines, places));
 }
 
 /**
@@ -126,6 +128,6 @@ export function recipeFrom(
   replacements: Set<string>,
   places: number
 ): { materials: RecipeMaterial[]; changes: string[]; unused: string[] } {
-  const made = recipe.recipeFrom(selection, lines, replacements, places);
+  const made = poolLib.recipeFrom(selection, lines, replacements, places);
   return { ...made, changes: made.changes.map(recipeText) };
 }
