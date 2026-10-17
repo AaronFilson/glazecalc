@@ -107,7 +107,7 @@
     "emailSend": "Send the link",
     "emailFailed": "Error: could not send the link. Please try again.",
     "signOutHeading": "Sign out everywhere",
-    "signOutText": "Signs you out on every device, this one included. Use it if you lost a device or think someone else has your sign-in.",
+    "signOutText": "Signs you out on every device, this one included, and stops your access tokens, the assistants connected to your account and your share links. Use it if you lost a device or think someone else has your sign-in.",
     "signOutButton": "Sign out everywhere",
     "signOutFailed": "Error: could not sign out. Please try again.",
     "confirmStep": "Two-step sign-in is on, so confirm it is you: your password and a second step."
