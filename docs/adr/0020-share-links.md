@@ -31,6 +31,7 @@ never indexed; and it never shows prices, private notes, the owner's email or ac
 - **The view is live and an allowlist.** The shared page gets the recipe as it is now, so the
   owner's edits show, but only the fields `server/lib/share_links.ts` names: the title and date,
   each material's and additive's name, amount, unit and chemistry (fields, basis, LOI, weight),
+  for a standard one its hazards (below),
   whether additives count in the unity formula, and the notes only when the owner ticks Show the
   recipe's notes (off by default). Never ids, the owner, their email, a material's own notes, or
   any field a later version adds to a recipe (prices, costs): a new field stays private until it
@@ -39,6 +40,17 @@ never indexed; and it never shows prices, private notes, the owner's email or ac
   standard record is sent with its library name and aliases (public); the owner's own record is
   sent under the name the recipe itself asked for, never its own name or aliases. Only the
   records asked for are read; the standard library is kept in memory for ten minutes.
+- **The same safety words as the recipe page** (the owner's decision, 2026-10-17). The shared
+  page shows the recipe's hazards, the lead caution and the line to the safety guides (safe
+  mixing, safety at home) as the recipe page does, in both views and on paper, in the viewer's
+  language. A line that is a standard material or additive is sent marked `ownedBy: 'Standard'`
+  with the library's hazards as they are now (its safety data sheet may have changed since the
+  recipe was saved; the copy in the line if the library no longer has the record), which are
+  public and translated as on the recipe page. A potter's own material or additive is sent with
+  nothing of its own beyond the allowlist above, so neither its hazards nor its notes: the page
+  names it among those whose records give no hazards and points to the safety data sheet, as the
+  recipe page does for any record without them, so nothing is claimed for it either way. The lead
+  caution is worked out in the browser from the lines' chemistry (PbO), as the recipe page does.
 - **The numbers are worked out in the viewer's browser** by the same code as the recipe page
   (`evaluate` and `unityLines` in `recipe-analysis.ts`, on `lib/chemistry`), not sent by the
   server, so a link always agrees with the owner's page.

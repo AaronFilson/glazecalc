@@ -264,6 +264,73 @@ describe('share links', () => {
     }
   });
 
+  it("send a standard line's hazards as the library gives them now, and never the owner's own words for theirs", async () => {
+    const standard = await Material.create({
+      name: 'Share test frit',
+      ownedBy: 'Standard',
+      fields: [{ name: 'B2O3', amount: 20 }],
+      percentmole: 'percent',
+      loi: 0,
+      molecularweight: 1,
+      formulaweight: 1,
+      equivalent: 1,
+      hazards: 'Dust can irritate the lungs.'
+    });
+    const quiet = await Material.create({
+      name: 'Share test quiet spar',
+      ownedBy: 'Standard',
+      fields: [{ name: 'SiO2', amount: 60 }],
+      percentmole: 'percent',
+      loi: 0,
+      molecularweight: 1,
+      formulaweight: 1,
+      equivalent: 1
+    });
+    forgetStandards();
+    try {
+      await Recipe.updateOne(
+        { _id: recipeId },
+        {
+          $push: {
+            materials: {
+              $each: [
+                // Saved with the data sheet's words of then: the library's of now win.
+                { ...standard.toObject(), _id: String(standard._id), amount: '10', hazards: 'Old words.' },
+                // The library gives none now: none, not the copy's of then.
+                { ...quiet.toObject(), _id: String(quiet._id), amount: '5', hazards: 'Old quiet words.' },
+                // A standard record no longer in the library: the copy's.
+                { name: 'Gone frit', ownedBy: 'Standard', _id: 'gone', amount: '1', hazards: 'Gone words.' }
+              ]
+            },
+            additives: { name: 'My stain', amount: '1', ownedBy: String(alice.user._id), hazards: 'My own note' }
+          }
+        }
+      );
+      await Recipe.updateOne(
+        { _id: recipeId },
+        { $set: { 'materials.0.hazards': 'Whiting from the shop on Main St, wear a mask' } }
+      );
+      const { secret } = await share();
+      const { body } = await view(secret);
+      const named = (name: string) =>
+        [...body.materials, ...body.additives].find((line: { name: string }) => line.name === name);
+      expect(named('Share test frit')).to.include({ ownedBy: 'Standard', hazards: 'Dust can irritate the lungs.' });
+      expect(named('Share test quiet spar')).to.include({ ownedBy: 'Standard' });
+      expect(named('Share test quiet spar')).to.not.have.property('hazards');
+      expect(named('Gone frit')).to.include({ ownedBy: 'Standard', hazards: 'Gone words.' });
+      // The owner's own records: no owner, no hazards of theirs.
+      expect(named('Whiting')).to.not.have.any.keys('ownedBy', 'hazards');
+      expect(named('My stain')).to.not.have.any.keys('ownedBy', 'hazards');
+      const text = JSON.stringify(body);
+      for (const secretThing of ['My own note', 'Main St', 'Old words', 'Old quiet', String(standard._id)]) {
+        expect(text).not.to.include(secretThing);
+      }
+    } finally {
+      await Material.deleteMany({ _id: { $in: [standard._id, quiet._id] } });
+      forgetStandards();
+    }
+  });
+
   it('are all stopped by a password reset and by signing out everywhere, not by a password change', async () => {
     const other = await Recipe.create({
       title: 'Celadon',

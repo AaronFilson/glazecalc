@@ -39,7 +39,8 @@ const GUIDES = { mixing: '/guides/safe-mixing', home: '/guides/home-safety' };
  * (lib/recipe/hazards.js): each statement once, after the names it is for,
  * in the page's language where the library's words are translated; the
  * materials with none named, so no hazard is claimed or denied for them; and
- * a line to the safety guides. On the recipe page and on the print.
+ * a line to the safety guides. On the recipe page, on the print and on a
+ * shared recipe's page.
  */
 @Component({
   selector: 'gc-recipe-hazards',
@@ -47,7 +48,11 @@ const GUIDES = { mixing: '/guides/safe-mixing', home: '/guides/home-safety' };
   template: `<ng-container *transloco="let t">
     @let found = hazards();
     <section class="recipe-hazards" [attr.aria-labelledby]="headingId()">
-      <h3 [id]="headingId()">{{ t('recipe.hazards.heading') }}</h3>
+      @if (level() === 2) {
+        <h2 [id]="headingId()">{{ t('recipe.hazards.heading') }}</h2>
+      } @else {
+        <h3 [id]="headingId()">{{ t('recipe.hazards.heading') }}</h3>
+      }
       @if (found.hazards.length) {
         <p class="recipe-hazards-intro">{{ t('recipe.hazards.intro') }}</p>
         <ul class="recipe-hazards-list">
@@ -65,6 +70,7 @@ const GUIDES = { mixing: '/guides/safe-mixing', home: '/guides/home-safety' };
     </section>
   </ng-container>`,
   styles: `
+    .recipe-hazards h2,
     .recipe-hazards h3 {
       font-size: 1.1rem;
     }
@@ -91,6 +97,7 @@ const GUIDES = { mixing: '/guides/safe-mixing', home: '/guides/home-safety' };
         font-size: 8.5pt;
         line-height: 1.25;
       }
+      .recipe-hazards h2,
       .recipe-hazards h3 {
         font-size: 10pt;
         margin: 0 0 0.1rem;
@@ -122,6 +129,8 @@ export class RecipeHazards {
   readonly sources = input.required<HazardSource[]>();
   /** Its heading's id: one on the recipe page, another on the print. */
   readonly headingId = input('hazards-heading');
+  /** Its heading's level: 3 under the recipe page's sections, 2 on a shared recipe's page. */
+  readonly level = input<2 | 3>(3);
 
   protected readonly guides = GUIDES;
   protected readonly listOf = listOf;

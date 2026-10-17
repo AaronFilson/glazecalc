@@ -11,12 +11,19 @@ import { Additive, Recipe } from '../../core/models';
 import { fixed } from '../../shared/format';
 import { DatePipe } from '../../shared/format-pipes';
 import { folded } from '../../shared/library-info';
+import { RichText } from '../../i18n/rich-text';
+import { leadIn, recipeHasLead } from '../recipe/lead';
 import { printLines } from '../recipe/recipe-print';
 import { evaluate } from '../recipe/recipe-analysis';
+import { HazardSource, RecipeHazards } from '../recipe/recipe-hazards';
 import { UnityFormula, unityColumns } from '../recipe/unity-formula';
 import { WorkedCalculation } from '../recipe/worked-calculation';
 
-/** What GET /api/shared/recipe sends (server/lib/share_links.ts): the recipe, and the chemistry its additives borrow. */
+/**
+ * What GET /api/shared/recipe sends (server/lib/share_links.ts): the recipe,
+ * and the chemistry its additives borrow. A line from the standard library has
+ * ownedBy 'Standard' and the library's hazards; a potter's own has neither.
+ */
 export interface SharedRecipe extends Pick<Recipe, 'title' | 'date' | 'materials' | 'additives' | 'includeAdditives'> {
   notes?: string[];
   borrowed?: Array<Additive & { aliases?: string[] }>;
@@ -36,7 +43,7 @@ type View = 'recipe' | 'worked';
  */
 @Component({
   selector: 'gc-shared-page',
-  imports: [DatePipe, RouterLink, TranslocoDirective, UnityFormula, WorkedCalculation],
+  imports: [DatePipe, RecipeHazards, RichText, RouterLink, TranslocoDirective, UnityFormula, WorkedCalculation],
   template: `<ng-container *transloco="let t">
     @if (recipe(); as recipe) {
       <header class="page-header">
@@ -77,6 +84,14 @@ type View = 'recipe' | 'worked';
       </div>
 
       <article class="shared-sheet" aria-labelledby="shared-title">
+        <!-- As on the recipe page, in both views and on paper: the lead caution, and the hazards below. -->
+        @if (lead(); as lead) {
+          <p class="shared-lead" role="note">
+            <gc-rich
+              [text]="t('recipe.page.containsLead', { unity: fixed(lead.unity, 3), percent: fixed(lead.percent, 0) })"
+            />
+          </p>
+        }
         @if (view() === 'worked') {
           <gc-worked-calculation
             [materials]="recipe.materials"
@@ -199,6 +214,14 @@ type View = 'recipe' | 'worked';
               }
             </section>
           }
+        }
+        @if (hazardSources().length) {
+          <gc-recipe-hazards
+            class="shared-hazards"
+            headingId="shared-hazards-heading"
+            [level]="2"
+            [sources]="hazardSources()"
+          />
         }
       </article>
       <p class="shared-about no-print">
@@ -329,6 +352,15 @@ type View = 'recipe' | 'worked';
       color: var(--gc-muted);
       margin: 0.5rem 0 0;
     }
+    .shared-lead {
+      border-inline-start: 3px solid var(--gc-danger-text);
+      padding-inline-start: 0.75rem;
+      margin: 0 0 1rem;
+    }
+    .shared-hazards {
+      display: block;
+      margin: 1rem 0 0;
+    }
     .shared-notes p {
       white-space: pre-line;
       margin: 0 0 0.5rem;
@@ -394,6 +426,21 @@ export class SharedPage implements OnInit {
     );
   };
   protected readonly lines = computed(() => printLines(this.recipe() ?? { materials: [] }, 0, 'g'));
+  protected readonly fixed = fixed;
+  /** Lead in the materials, as the recipe page finds it: how much, for its caution. */
+  protected readonly lead = computed(() => {
+    const materials = this.recipe()?.materials ?? [];
+    return recipeHasLead(materials) ? leadIn(materials) : null;
+  });
+  /**
+   * What the hazards are read from: the lines as the server sent them, with the
+   * library's current hazards for its own materials and additives, and none
+   * for the owner's, which are then named as giving none.
+   */
+  protected readonly hazardSources = computed<HazardSource[]>(() => {
+    const recipe = this.recipe();
+    return recipe ? [...recipe.materials, ...(recipe.additives ?? [])] : [];
+  });
   protected readonly evaluation = computed(() => {
     const recipe = this.recipe();
     return evaluate(recipe?.materials ?? [], recipe?.additives ?? [], {

@@ -19,6 +19,8 @@ test('a saved recipe is shared by a link anyone can open, with the working, unti
   await page.locator('#recipe-name').fill('Class clear');
   for (const [name, amount] of CLEAR) await addStandardMaterial(page, name, amount);
   const unity = await page.locator('.unity-result gc-unity-formula').textContent();
+  const hazards = await page.locator('gc-recipe-hazards .recipe-hazards-list').textContent();
+  expect(hazards).toContain('Silica');
   await page.getByRole('button', { name: 'Save', exact: true }).click();
   await expect(page.locator('.saved-recipe-open', { hasText: 'Class clear' })).toBeVisible();
 
@@ -44,6 +46,9 @@ test('a saved recipe is shared by a link anyone can open, with the working, unti
   expect(response.headers()['referrer-policy']).toBe('no-referrer');
   await expect(viewer.locator('h1')).toHaveText('Class clear');
   await expect(viewer.locator('.shared-chemistry gc-unity-formula')).toHaveText(unity);
+  // The same hazards and safety guides as the owner's recipe page.
+  await expect(viewer.locator('.shared-hazards .recipe-hazards-list')).toHaveText(hazards);
+  await expect(viewer.locator('.shared-hazards a[href$="/guides/safe-mixing"]')).toBeVisible();
   // The secret never went into an address the server saw.
   const secret = link.slice(link.indexOf('#') + 1);
   expect(requests.filter((url) => url.includes(secret))).toEqual([]);

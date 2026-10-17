@@ -144,7 +144,7 @@ export const routes: Routes = [
   {
     path: 'shared',
     title: marker('titles.shared'),
-    providers: [provideTranslocoScope('recipe')],
+    providers: [provideTranslocoScope('recipe', 'records')],
     resolve: { messages: scopeTranslations },
     loadComponent: () => import('./pages/shared/shared-page').then((m) => m.SharedPage)
   },

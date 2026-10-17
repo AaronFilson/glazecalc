@@ -1,5 +1,8 @@
 import { TestBed } from '@angular/core/testing';
 import { TestRequest } from '@angular/common/http/testing';
+import { TranslocoService } from '@jsverse/transloco';
+import { textKey } from '../../../../lib/regions/languages';
+import { useCodedMessages } from '../../i18n/coded';
 import { Material } from '../../core/models';
 import { API, httpMock, settle, testProviders, text } from '../../testing/test-providers';
 import { evaluate } from '../recipe/recipe-analysis';
@@ -83,6 +86,68 @@ describe('SharedPage', () => {
     expect(root.querySelector('#shared-view-worked')?.getAttribute('aria-pressed')).toBe('true');
     expect(root.querySelector('gc-worked-calculation #worked-heading')?.getAttribute('aria-level')).toBe('2');
     expect(text(fixture, 'gc-worked-calculation')).toContain('Gum');
+  });
+
+  const SILICA_HAZARD = 'Dust can cause lung disease (silicosis) if breathed in over time.';
+  const HAZARDOUS: SharedRecipe = {
+    ...SHARED,
+    materials: [
+      { ...WHITING, amount: '20' },
+      { ...SILICA, amount: '30', ownedBy: 'Standard', hazards: SILICA_HAZARD },
+      {
+        name: 'Lead bisilicate',
+        percentmole: 'percent',
+        loi: 0,
+        fields: [
+          { name: 'PbO', amount: 65 },
+          { name: 'SiO2', amount: 35 }
+        ],
+        amount: '10',
+        ownedBy: 'Standard',
+        hazards: 'Toxic if swallowed or breathed in.'
+      }
+    ]
+  };
+
+  it("shows the recipe's hazards, the lead caution and the safety guides, as the recipe page does", async () => {
+    const { fixture, root } = await open('#' + SECRET, (req) => req.flush(HAZARDOUS));
+    const hazards = text(fixture, '.shared-hazards');
+    expect(hazards).toContain('Silica: ' + SILICA_HAZARD);
+    expect(hazards).toContain('Lead bisilicate: Toxic if swallowed or breathed in.');
+    // The owner's own records send no hazards: named as giving none, never claimed safe.
+    expect(hazards).toContain('No hazards are given for Whiting and Gum');
+    expect(root.querySelector('.shared-hazards h2')?.textContent).toContain('Hazards');
+    const guides = [...root.querySelectorAll('.shared-hazards a')].map((a) => a.getAttribute('href'));
+    expect(guides).toEqual(expect.arrayContaining(['/guides/safe-mixing', '/guides/home-safety']));
+    expect(text(fixture, '.shared-lead')).toContain('Contains lead:');
+    // In the working too.
+    (root.querySelector('#shared-view-worked') as HTMLButtonElement).click();
+    await settle(fixture);
+    expect(root.querySelector('.shared-hazards')).not.toBeNull();
+    expect(root.querySelector('.shared-lead')).not.toBeNull();
+  });
+
+  it('gives no lead caution for a recipe without lead', async () => {
+    const { root } = await open('#' + SECRET, (req) => req.flush(SHARED));
+    expect(root.querySelector('.shared-lead')).toBeNull();
+    expect(root.querySelector('.shared-hazards')).not.toBeNull();
+  });
+
+  it("shows the library's hazards in the reader's language", async () => {
+    const transloco = TestBed.inject(TranslocoService);
+    transloco.setTranslation({ ['records.' + textKey(SILICA_HAZARD)]: 'Staub kann Silikose verursachen.' }, 'de', {
+      merge: true
+    });
+    transloco.setActiveLang('de');
+    useCodedMessages(transloco);
+    try {
+      const { fixture } = await open('#' + SECRET, (req) => req.flush(HAZARDOUS));
+      expect(text(fixture, '.shared-hazards')).toContain('Staub kann Silikose verursachen.');
+      expect(text(fixture, '.shared-hazards')).not.toContain(SILICA_HAZARD);
+    } finally {
+      useCodedMessages(null);
+      transloco.setActiveLang('en');
+    }
   });
 
   it('says a recipe is not shared, for a link that opens nothing or has no secret', async () => {

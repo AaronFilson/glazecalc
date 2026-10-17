@@ -4,9 +4,13 @@
 // The page is sent the recipe as it is now, so the owner's edits show, but
 // only the fields named here: what the unity formula and the worked
 // calculation need, the title and date, and the notes when the owner chose to
-// show them. Never the owner, their email or id, the record's ids, prices or
-// costs, a material's notes, or anything a later version adds to a recipe: a
-// new field stays private until it is named here.
+// show them. A line that is a standard material or additive is marked
+// ownedBy 'Standard' and carries the library's current hazards, which are
+// public (the library ships in data/), so the page can show the recipe's
+// hazards as the recipe page does; a potter's own record carries none of its
+// own words, its hazards included. Never the owner, their email or id, the
+// record's ids, prices or costs, a material's notes, or anything a later
+// version adds to a recipe: a new field stays private until it is named here.
 import crypto from 'node:crypto';
 import type { Types } from 'mongoose';
 import Additive from '../models/additive.ts';
@@ -131,19 +135,31 @@ const byName = (records: Row[]): Map<string, Row> => {
  * in data/ and do not change while the app runs.
  */
 const STANDARDS_KEPT_MS = 10 * 60 * 1000;
-let standards: { at: number; maps: Promise<Map<string, Row>[]> } | undefined;
+interface Standards {
+  additives: Map<string, Row>;
+  materials: Map<string, Row>;
+  /** Each standard record's hazards by its id, '' where it gives none. */
+  hazards: Map<string, string>;
+}
+let standards: { at: number; maps: Promise<Standards> } | undefined;
 
 /** Forgets the standard records kept (for tests that change them). */
 export const forgetStandards = (): void => {
   standards = undefined;
 };
 
-function standardRecords(): Promise<Map<string, Row>[]> {
+function standardRecords(): Promise<Standards> {
   if (!standards || Date.now() - standards.at > STANDARDS_KEPT_MS) {
     const maps = Promise.all([
-      Additive.find({ ownedBy: 'Standard' }, MORE).lean(),
-      Material.find({ ownedBy: 'Standard' }, MORE).lean()
-    ]).then(([additives, materials]) => [byName(additives as Row[]), byName(materials as Row[])]);
+      Additive.find({ ownedBy: 'Standard' }, { ...MORE, hazards: 1 }).lean(),
+      Material.find({ ownedBy: 'Standard' }, { ...MORE, hazards: 1 }).lean()
+    ]).then(([additives, materials]) => {
+      const hazards = new Map<string, string>();
+      for (const record of [...additives, ...materials] as Row[]) {
+        hazards.set(String(record._id), isText(record.hazards) ? record.hazards : '');
+      }
+      return { additives: byName(additives as Row[]), materials: byName(materials as Row[]), hazards };
+    });
     maps.catch(() => {
       standards = undefined;
     });
@@ -180,7 +196,7 @@ async function borrowedFor(additives: Row[], ownedBy: string): Promise<Row[]> {
     want(additive.chemistryOf);
   }
   if (!wanted.size) return [];
-  const [stdAdditives, stdMaterials] = (await standardRecords()) as [Map<string, Row>, Map<string, Row>];
+  const { additives: stdAdditives, materials: stdMaterials } = await standardRecords();
   const picked = new Map<string, { rank: number; record: Row; asked: string | null }>();
   const asked = new Set<string>();
   // An old copy's record may itself borrow another's chemistry: one step more.
@@ -221,9 +237,30 @@ async function borrowedFor(additives: Row[], ownedBy: string): Promise<Row[]> {
     });
 }
 
+/**
+ * A line as sent, and for a standard material or additive the library's
+ * hazards now (its safety data sheet may have changed since the recipe was
+ * saved), or else those of the copy in the line, as the recipe page reads them
+ * (client/app/pages/recipe/recipe-hazards.ts, hazardSources).
+ */
+function sentLine(line: unknown, hazards: Map<string, string>): Row | null {
+  const out = lineOf(line);
+  if (!out) return null;
+  const row = line as Row;
+  if (row.ownedBy === 'Standard') {
+    out.ownedBy = 'Standard';
+    const known = row._id !== undefined && row._id !== null ? hazards.get(String(row._id)) : undefined;
+    const text = known ?? (isText(row.hazards) ? row.hazards : undefined);
+    if (text?.trim()) out.hazards = text;
+  }
+  return out;
+}
+
 /** What the shared page is sent for a recipe: see the top of this file. */
 export async function sharedRecipe(recipe: Row, includeNotes: boolean, ownedBy: string): Promise<Row> {
-  const lines = (list: unknown) => (Array.isArray(list) ? list.map(lineOf).filter((line) => line !== null) : []);
+  const { hazards } = await standardRecords();
+  const lines = (list: unknown) =>
+    Array.isArray(list) ? list.map((line) => sentLine(line, hazards)).filter((line) => line !== null) : [];
   const materials = lines(recipe.materials);
   const additives = lines(recipe.additives);
   const notes = includeNotes ? [recipe.notes].flat().filter(isText) : [];
