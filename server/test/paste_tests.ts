@@ -172,6 +172,17 @@ describe('Paste-in import: CSV and columns', () => {
     ]);
   });
 
+  it('marks a row whose name starts with "+" as an addition', () => {
+    expect(lines(one('Material;Amount\nCuster;50\n+ Tin oxide;2'))).to.eql([
+      ['Custer', 50, null, false],
+      ['Tin oxide', 2, null, true]
+    ]);
+    expect(lines(one('Custer\t50\n+Rutile\t4'))).to.eql([
+      ['Custer', 50, null, false],
+      ['Rutile', 4, null, true]
+    ]);
+  });
+
   it('reads a spreadsheet row with a code column before the name and a percent after it', () => {
     expect(lines(one('F3134\t20.00\t20.0%'))).to.eql([['F3134', 20, null, false]]);
   });
