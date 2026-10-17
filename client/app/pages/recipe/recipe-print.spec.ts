@@ -400,4 +400,34 @@ describe('RecipePrint', () => {
     expect(text(fixture, '.print-sheet h2')).toBe('Untitled recipe');
     expect(text(fixture, '.print-chemistry p')).toContain('no flux');
   });
+
+  it('shows the batch cost only when ticked, fetching no prices until then, and names what has no price', async () => {
+    localStorage.setItem('currency', 'USD');
+    const { fixture, root } = await create();
+    httpMock().expectNone(API + '/prices');
+    expect(root.querySelector('.print-cost')).toBeNull();
+    (root.querySelector('#print-show-cost') as HTMLInputElement).click();
+    await fixture.whenStable();
+    httpMock()
+      .expectOne(API + '/prices')
+      .flush({
+        prices: [
+          { key: 'w', perKg: 1 },
+          { key: 'k', perKg: 2 },
+          { key: 's', perKg: 0.5 }
+        ]
+      });
+    await settle(fixture);
+    // 200 g at $1, 300 g at $2, 500 g at $0.50 per kg: $1.05; the 20 g of iron oxide has no price.
+    expect(text(fixture, '.print-cost')).toBe('Priced materials cost $1.05. No price for Red iron oxide.');
+    fixture.componentRef.setInput('recipe', { ...RECIPE, additives: [] });
+    await fixture.whenStable();
+    expect(text(fixture, '.print-cost')).toBe(
+      'Batch cost $1.05: $1.05 per kilogram of dry glaze, colorants and additives included.'
+    );
+    // Unticked, it is gone from the sheet; nothing is fetched again.
+    (root.querySelector('#print-show-cost') as HTMLInputElement).click();
+    await fixture.whenStable();
+    expect(root.querySelector('.print-cost')).toBeNull();
+  });
 });

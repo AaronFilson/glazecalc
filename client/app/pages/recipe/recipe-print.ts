@@ -1,19 +1,31 @@
-import { fixed, forTyping, formatDate, formatPlain, upTo } from '../../shared/format';
+import { fixed, forTyping, formatDate, formatPlain, listOf, money, upTo } from '../../shared/format';
 import { DatePipe } from '../../shared/format-pipes';
 import { NumberInput } from '../../shared/number-input';
-import { Component, OnDestroy, OnInit, computed, inject, input, output, signal } from '@angular/core';
+import { Component, Injector, OnDestroy, OnInit, computed, inject, input, output, signal } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { TranslocoDirective, translate } from '@jsverse/transloco';
 import { marker } from '@jsverse/transloco-keys-manager/marker';
 import { MaterialInput, formatFormula } from '../../../../lib/chemistry';
+import { recipeCost } from '../../../../lib/recipe/cost';
 import { errorMessage } from '../../core/error-message';
 import { Recipe } from '../../core/models';
+import { LocaleService } from '../../core/locale.service';
 import { PreferencesService } from '../../core/preferences.service';
+import { PricesService } from '../../core/prices.service';
 import { firstOf } from '../../shared/options';
-import { GramPrecision, WeightUnit, formatWeight, fromGrams, toGrams, unitLabel } from '../../shared/weights';
+import {
+  GRAMS_PER_POUND,
+  GramPrecision,
+  WeightUnit,
+  formatWeight,
+  fromGrams,
+  toGrams,
+  unitLabel
+} from '../../shared/weights';
 import { BatchWeights, amountOf, batchWeights, formatAmount, isAmount, totalOf } from './rebase';
 import { additiveAmount, evaluate } from './recipe-analysis';
 import { HazardSource, RecipeHazards } from './recipe-hazards';
+import { libraryKey } from './recipe-library';
 import { UnityFormula, unityColumns } from './unity-formula';
 
 /** What to print: the whole recipe with its chemistry, or just what to weigh. */
@@ -209,6 +221,20 @@ const UNITS: ReadonlyArray<{ value: WeightUnit; label: string }> = [
             </p>
           }
         </div>
+        <div class="form-check">
+          <input
+            id="print-show-cost"
+            class="form-check-input"
+            type="checkbox"
+            [checked]="showCost()"
+            (change)="setShowCost($any($event.target).checked)"
+          />
+          <label for="print-show-cost" class="form-check-label">{{ t('recipe.print.showCost') }}</label>
+          <div class="form-text">{{ t('recipe.print.showCostHelp') }}</div>
+          @if (showCost() && pricesProblem()) {
+            <p class="print-problem" role="alert">{{ pricesProblem() }}</p>
+          }
+        </div>
         @if (mode() === 'batch') {
           <div>
             <label for="print-batch-number" class="form-label">{{ t('recipe.print.batchNumber') }}</label>
@@ -261,6 +287,9 @@ const UNITS: ReadonlyArray<{ value: WeightUnit; label: string }> = [
         }
         @if (batchSummary(); as summary) {
           <p class="print-batch-summary">{{ summary }}</p>
+        }
+        @if (costSummary(); as cost) {
+          <p class="print-cost">{{ cost }}</p>
         }
         @if (mode() === 'batch') {
           <dl class="print-ticket">
@@ -557,10 +586,12 @@ const UNITS: ReadonlyArray<{ value: WeightUnit; label: string }> = [
       margin: 1rem 0 0.5rem;
     }
     .print-meta,
-    .print-batch-summary {
+    .print-batch-summary,
+    .print-cost {
       margin: 0.25rem 0 0;
     }
-    .print-batch-summary {
+    .print-batch-summary,
+    .print-cost {
       font-weight: 600;
     }
     /* A table wider than a phone scrolls within the sheet; it can take the focus, to scroll by keyboard. */
@@ -714,6 +745,10 @@ const UNITS: ReadonlyArray<{ value: WeightUnit; label: string }> = [
       margin-top: 1.25rem;
     }
     @media print {
+      .print-cost {
+        margin-top: 0.1rem;
+        font-size: 9.5pt;
+      }
       .print-hazards {
         margin-top: 0.5rem;
       }
@@ -771,6 +806,8 @@ const UNITS: ReadonlyArray<{ value: WeightUnit; label: string }> = [
 })
 export class RecipePrint implements OnInit, OnDestroy {
   private readonly preferences = inject(PreferencesService);
+  private readonly prices = inject(PricesService);
+  private readonly injector = inject(Injector);
   private readonly titleService = inject(Title);
   private titleBefore = '';
 
@@ -838,6 +875,43 @@ export class RecipePrint implements OnInit, OnDestroy {
     });
   });
 
+  /** Whether the sheet gives the batch's cost: off each time, so a ticket handed on shows no prices unless chosen. */
+  protected readonly showCost = signal(false);
+  protected readonly pricesProblem = this.prices.problem;
+  /** The batch's cost for the size printed, from the account's prices; '' unless asked for, and until they are fetched. */
+  protected readonly costSummary = computed(() => {
+    const prices = this.prices.prices();
+    if (!this.showCost() || prices === null) return '';
+    const recipe = this.recipe();
+    const materials = recipe.materials ?? [];
+    const additives = recipe.additives ?? [];
+    const cost = recipeCost(
+      {
+        materials: materials.map((m) => ({ key: libraryKey(m), amount: m.amount })),
+        additives: additives.map((a) => ({ key: libraryKey(a), amount: a.amount, unit: a.unit }))
+      },
+      this.batchGrams(),
+      new Map(prices.map((p) => [p.key, p.perKg]))
+    );
+    if (!cost) return '';
+    const currency = this.injector.get(LocaleService).currency();
+    if (cost.perKg !== null) {
+      const perUnit = this.unit() === 'lb' ? GRAMS_PER_POUND / 1000 : 1;
+      return translate('recipe.print.cost', {
+        cost: money(cost.cost, currency),
+        perUnit: money(cost.perKg * perUnit, currency),
+        unit: this.unit()
+      });
+    }
+    const names = [...materials, ...additives]
+      .filter((line) => cost.missing.includes(libraryKey(line)))
+      .map((line) => line.name);
+    return translate('recipe.print.costPartial', {
+      cost: money(cost.cost, currency),
+      list: listOf([...new Set(names)])
+    });
+  });
+
   protected readonly evaluation = computed(() =>
     evaluate(this.recipe().materials ?? [], this.recipe().additives ?? [], {
       includeAdditives: !!this.recipe().includeAdditives,
@@ -881,6 +955,12 @@ export class RecipePrint implements OnInit, OnDestroy {
   protected setMode(mode: PrintMode): void {
     this.mode.set(mode);
     remember(MODE_KEY, mode);
+  }
+
+  /** Ticking it fetches the prices, the first time; unticked, they are not asked for. */
+  protected setShowCost(show: boolean): void {
+    this.showCost.set(show);
+    if (show) void this.prices.load();
   }
 
   protected setBatch(text: string): void {

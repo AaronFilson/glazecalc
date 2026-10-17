@@ -66,6 +66,20 @@ test('prints a recipe on one page, Letter or A4, in black on white even in dark 
   await expect(sheet(page).locator('.print-hazards li').first()).toBeVisible();
   await page.emulateMedia({ media: 'print' });
   for (const format of ['Letter', 'A4']) expect(pageCount(await page.pdf({ format })), format).toBe(1);
+
+  // With the batch cost ticked (off until then) both prints still fit one page.
+  await page.emulateMedia({ media: 'screen' });
+  await expect(sheet(page).locator('.print-cost')).toHaveCount(0);
+  await page.getByLabel('Show the batch cost').check();
+  await expect(sheet(page).locator('.print-cost')).toContainText('No price for');
+  await page.emulateMedia({ media: 'print' });
+  for (const format of ['Letter', 'A4']) expect(pageCount(await page.pdf({ format })), format).toBe(1);
+  await page.emulateMedia({ media: 'screen' });
+  await page.getByLabel(/^The whole recipe/).check();
+  await expect(sheet(page).locator('.print-chemistry')).toHaveCount(1);
+  await expect(sheet(page).locator('.print-cost')).toContainText('No price for');
+  await page.emulateMedia({ media: 'print' });
+  for (const format of ['Letter', 'A4']) expect(pageCount(await page.pdf({ format })), format).toBe(1);
 });
 
 test('goes back to the recipe just as it was, by its own button or the browser', async ({ page }) => {

@@ -19,6 +19,10 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 - **A mix ticket** in the batch-list print: a batch number (typed, or a line to write it on), the
   date, the recipe's target SG with a line for the reading when the recipe has one, and lines for
   who weighed and mixed it and who checked it, with the hazards.
+- **Batch cost on the print**, optionally: a "Show the batch cost" tick on the print page, off each time, so a
+  mix ticket handed to someone shows no prices unless chosen. It gives the cost of the batch size
+  printed and the cost per kg or lb, names materials with no price, and fetches no prices unless
+  ticked.
 - **The Trash and Undo.** Removing a recipe, material, note or other record moves it to the Trash,
   where it waits 30 days; the removal notice has Undo, and the Trash page puts records back, deletes
   them for good or empties the Trash. Each saved change keeps the version before it (the last 20,

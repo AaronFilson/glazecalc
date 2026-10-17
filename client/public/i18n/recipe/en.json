@@ -316,7 +316,11 @@
     "sgTarget": "Target SG",
     "sgMeasured": "Measured SG",
     "mixedBy": "Weighed and mixed by",
-    "checkedBy": "Checked by"
+    "checkedBy": "Checked by",
+    "showCost": "Show the batch cost",
+    "showCostHelp": "Off by default, so a ticket handed to someone shows no prices. Uses the prices kept with your account.",
+    "cost": "Batch cost {cost}: {perUnit} per {unit, select, lb {pound} other {kilogram}} of dry glaze, colorants and additives included.",
+    "costPartial": "Priced materials cost {cost}. No price for {list}."
   },
   "cost": {
     "heading": "Cost",
