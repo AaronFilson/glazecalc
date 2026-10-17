@@ -155,6 +155,27 @@ describe('MCP: the endpoint', () => {
     expect(big.status).to.equal(413);
   });
 
+  it('refuses a batch of messages, for any revision, before any is answered', async () => {
+    for (const version of [PROTOCOL, '2025-11-25', '2025-03-26']) {
+      const batch = Array.from({ length: 100 }, (_, i) => ({ jsonrpc: '2.0', id: i + 1, method: 'ping' }));
+      const res = await fetch(base() + '/mcp', {
+        method: 'POST',
+        headers: {
+          'content-type': 'application/json',
+          accept: 'application/json, text/event-stream',
+          'mcp-protocol-version': version
+        },
+        body: JSON.stringify(batch)
+      });
+      expect(res.status, version).to.equal(400);
+      const body = (await res.json()) as { error: { code: number; message: string }; result?: unknown };
+      expect(body.error.code).to.equal(-32600);
+      expect(body.error.message).to.include('Batches');
+    }
+    // One message is still answered.
+    expect((await rpc('ping')).status).to.equal(200);
+  });
+
   it('refuses another site’s pages and other host names (DNS rebinding)', async () => {
     const elsewhere = await rpc('tools/list', {}, { origin: 'https://evil.example' });
     expect(elsewhere.status).to.equal(403);
@@ -717,6 +738,31 @@ describe('MCP: limits', () => {
     expect(refused?.status).to.equal(429);
     // The address is used up; a token is counted per account instead.
     expect((await rpc('ping', {}, bearer(token))).status).to.equal(200);
+  });
+
+  it('counts a batch as the one request it is, and answers none of its messages', async () => {
+    const { user } = await makeUser();
+    const headers = bearer(await makeToken(user));
+    process.env.RATE_LIMITS = 'on';
+    const batch = Array.from({ length: 100 }, (_, i) => ({
+      jsonrpc: '2.0',
+      id: i + 1,
+      method: 'tools/call',
+      params: { name: 'match_from_materials', arguments: { lines: LINES, have: ['Whiting'] } }
+    }));
+    resetFits();
+    for (let i = 0; i < 3; i++) {
+      const res = await fetch(base() + '/mcp', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json', accept: 'application/json', ...headers },
+        body: JSON.stringify(batch)
+      });
+      expect(res.status).to.equal(400);
+    }
+    // None of the 300 fits was worked out, so the caller has them all still.
+    expect((await call('match_from_materials', { lines: LINES, have: ['Whiting'] }, headers)).isError).to.not.equal(
+      true
+    );
   });
 
   it(`works out at most ${FITS_PER_MINUTE} substitutions or matches a minute for one caller`, async () => {

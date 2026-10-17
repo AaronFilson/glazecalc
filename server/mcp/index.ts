@@ -80,6 +80,21 @@ const send = async (answer: globalThis.Response, res: Response): Promise<void> =
   res.end();
 };
 
+/**
+ * One JSON-RPC message per request: a batch (an array of them) is refused
+ * before the SDK, so the request limits count every message. Neither revision
+ * the endpoint is built for has batches: 2025-06-18 took them out, and
+ * 2025-11-25 and 2026-07-28 have none. Only a 2025-03-26 client could send
+ * one, and those send single messages too.
+ */
+const refuseBatches = (req: Request, res: Response, next: NextFunction): void => {
+  if (Array.isArray(req.body)) {
+    res.status(400).json(rpcError(-32600, 'Batches are not accepted: send one JSON-RPC message in each request.'));
+    return;
+  }
+  next();
+};
+
 const mcpRouter = express.Router();
 export default mcpRouter;
 
@@ -107,6 +122,7 @@ mcpRouter.post(
   limits.mcpMinute,
   limits.mcpDay,
   express.json({ limit: MOST_BODY }),
+  refuseBatches,
   async (req, res) => {
     const caller = req.mcpCaller!;
     const answer = await handler.fetch(webRequest(req), {
