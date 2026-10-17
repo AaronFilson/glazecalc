@@ -55,6 +55,10 @@ export async function sharedBy(ownedBy: string) {
     }));
 }
 
+/** Stops every link of an account (a password reset, signing out everywhere); resolves with how many. */
+export const stopAllSharing = async (ownedBy: string | Types.ObjectId): Promise<number> =>
+  (await ShareLink.deleteMany({ ownedBy: String(ownedBy) })).deletedCount;
+
 /** Stops sharing a recipe: its link, if it has one, no longer opens it. */
 export const stopSharing = async (recipeId: string | Types.ObjectId, ownedBy: string): Promise<boolean> =>
   (await ShareLink.deleteOne({ recipeId, ownedBy })).deletedCount === 1;
@@ -100,46 +104,120 @@ const folded = (text: string): string => text.normalize('NFKC').trim().toLowerCa
  */
 const isOldCopy = (additive: Row): boolean => !additive.percentmole && !additive.chemistryOf && !additive.noChemistry;
 
+const MORE = {
+  name: 1,
+  aliases: 1,
+  fields: 1,
+  percentmole: 1,
+  loi: 1,
+  molecularweight: 1,
+  noChemistry: 1,
+  chemistryOf: 1,
+  rawformula: 1
+};
+
+const namesOf = (record: Row): string[] =>
+  [record.name, ...(Array.isArray(record.aliases) ? record.aliases : [])].filter(isText).map(folded);
+
+/** Records by each of their names and aliases, the first that has it winning. */
+const byName = (records: Row[]): Map<string, Row> => {
+  const map = new Map<string, Row>();
+  for (const record of records) for (const name of namesOf(record)) if (!map.has(name)) map.set(name, record);
+  return map;
+};
+
+/**
+ * The standard additives and materials by name, kept for a while: they ship
+ * in data/ and do not change while the app runs.
+ */
+const STANDARDS_KEPT_MS = 10 * 60 * 1000;
+let standards: { at: number; maps: Promise<Map<string, Row>[]> } | undefined;
+
+/** Forgets the standard records kept (for tests that change them). */
+export const forgetStandards = (): void => {
+  standards = undefined;
+};
+
+function standardRecords(): Promise<Map<string, Row>[]> {
+  if (!standards || Date.now() - standards.at > STANDARDS_KEPT_MS) {
+    const maps = Promise.all([
+      Additive.find({ ownedBy: 'Standard' }, MORE).lean(),
+      Material.find({ ownedBy: 'Standard' }, MORE).lean()
+    ]).then(([additives, materials]) => [byName(additives as Row[]), byName(materials as Row[])]);
+    maps.catch(() => {
+      standards = undefined;
+    });
+    standards = { at: Date.now(), maps };
+  }
+  return standards.maps;
+}
+
+/** The owner's records of one kind that have any of the names (case aside); no others are read. */
+const ownersNamed = async (Model: typeof Additive | typeof Material, ownedBy: string, names: string[]) => {
+  const found = await (Model as typeof Additive)
+    .find({ ownedBy, $or: [{ name: { $in: names } }, { aliases: { $in: names } }] }, MORE)
+    .collation({ locale: 'en', strength: 2 })
+    .lean();
+  return byName(found as Row[]);
+};
+
 /**
  * The records whose chemistry the recipe's additives borrow by name, as the
- * recipe page finds them (findByName): the standard additives, the owner's,
- * the standard materials, then the owner's; each record's chemistry only, in
- * that order, so the first that matches a name is the page's.
+ * recipe page finds it (findByName): the standard additives, the owner's, the
+ * standard materials, then the owner's; the first that matches a name is the
+ * page's. Each is sent as its chemistry only. A standard record keeps its
+ * name and aliases (they are public); the owner's own record is sent under the
+ * name the recipe asked for, never its own name or aliases, which the recipe
+ * does not show. Only the records asked for are read.
  */
 async function borrowedFor(additives: Row[], ownedBy: string): Promise<Row[]> {
-  const wanted = new Set<string>();
+  const wanted = new Map<string, string>(); // folded, to the name as the recipe wrote it
+  const want = (name: unknown) => {
+    if (isText(name) && !wanted.has(folded(name))) wanted.set(folded(name), name.trim());
+  };
   for (const additive of additives) {
-    if (isOldCopy(additive) && isText(additive.name)) wanted.add(folded(additive.name));
-    if (isText(additive.chemistryOf)) wanted.add(folded(additive.chemistryOf));
+    if (isOldCopy(additive)) want(additive.name);
+    want(additive.chemistryOf);
   }
   if (!wanted.size) return [];
-  const fields = { name: 1, aliases: 1, fields: 1, percentmole: 1, loi: 1, molecularweight: 1 };
-  const more = { ...fields, noChemistry: 1, chemistryOf: 1, rawformula: 1 };
-  const lists = await Promise.all([
-    Additive.find({ ownedBy: 'Standard' }, more).lean(),
-    Additive.find({ ownedBy }, more).lean(),
-    Material.find({ ownedBy: 'Standard' }, more).lean(),
-    Material.find({ ownedBy }, more).lean()
-  ]);
-  const records = lists.flat() as Row[];
-  const names = (record: Row): string[] =>
-    [record.name, ...(Array.isArray(record.aliases) ? record.aliases : [])].filter(isText).map(folded);
-  const picked = new Set<number>();
+  const [stdAdditives, stdMaterials] = (await standardRecords()) as [Map<string, Row>, Map<string, Row>];
+  const picked = new Map<string, { rank: number; record: Row; asked: string | null }>();
+  const asked = new Set<string>();
   // An old copy's record may itself borrow another's chemistry: one step more.
   for (let round = 0; round < 2; round++) {
-    for (const name of [...wanted]) {
-      const index = records.findIndex((record) => names(record).includes(name));
-      if (index < 0 || picked.has(index)) continue;
-      picked.add(index);
-      const chemistry = records[index].chemistryOf;
-      if (isText(chemistry)) wanted.add(folded(chemistry));
+    const fresh = [...wanted.entries()].filter(([name]) => !asked.has(name));
+    if (!fresh.length) break;
+    fresh.forEach(([name]) => asked.add(name));
+    const texts = [...new Set(fresh.map(([, text]) => text))];
+    const [ownAdditives, ownMaterials] = await Promise.all([
+      ownersNamed(Additive, ownedBy, texts),
+      ownersNamed(Material, ownedBy, texts)
+    ]);
+    const lists: [Map<string, Row>, boolean][] = [
+      [stdAdditives, true],
+      [ownAdditives, false],
+      [stdMaterials, true],
+      [ownMaterials, false]
+    ];
+    for (const [name, text] of fresh) {
+      const rank = lists.findIndex(([map]) => map.has(name));
+      if (rank < 0) continue;
+      const record = lists[rank]![0].get(name) as Row;
+      const standard = lists[rank]![1];
+      picked.set(standard ? 's' + rank + ':' + String(record.name) : 'o:' + name, {
+        rank,
+        record,
+        asked: standard ? null : text
+      });
+      if (isText(record.chemistryOf)) want(record.chemistryOf);
     }
   }
-  return [...picked]
-    .sort((a, b) => a - b)
-    .map((index) => {
-      const aliases = Array.isArray(records[index].aliases) ? records[index].aliases.filter(isText) : [];
-      return { ...chemistryOf(records[index]), ...(aliases.length && { aliases }) };
+  return [...picked.values()]
+    .sort((a, b) => a.rank - b.rank)
+    .map(({ record, asked: text }) => {
+      if (text !== null) return { ...chemistryOf(record), name: text };
+      const aliases = Array.isArray(record.aliases) ? record.aliases.filter(isText) : [];
+      return { ...chemistryOf(record), ...(aliases.length && { aliases }) };
     });
 }
 
