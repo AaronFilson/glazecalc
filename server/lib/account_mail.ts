@@ -284,6 +284,16 @@ export const RESET: Record<string, Email> = {
       '此連結只能使用一次。如果您沒有提出這項要求，請忽略這封電子郵件；您的密碼不會改變。\n' +
       '\n' +
       '-- \nGlazecalc, {app}\n'
+  },
+  ko: {
+    subject: 'Glazecalc 비밀번호 재설정',
+    text:
+      '누군가(본인이기를 바랍니다) Glazecalc 계정 {account}의 비밀번호 재설정을 요청했습니다.\n\n' +
+      '새 비밀번호를 정하려면 {minutes}분 안에 다음 링크를 여세요.\n\n' +
+      '{link}\n\n' +
+      '이 링크는 한 번만 쓸 수 있습니다. 요청한 적이 없다면 이 이메일을 무시하세요. 비밀번호는 그대로 유지됩니다.\n' +
+      '\n' +
+      '-- \nGlazecalc, {app}\n'
   }
 };
 
@@ -501,6 +511,14 @@ export const CHANGED: Record<string, Email> = {
     text:
       'Glazecalc 帳戶 {account} 的密碼剛剛已變更，所有原本已登入的裝置都已登出。\n\n' +
       '如果這是您本人的操作，就不需要再做任何事。如果不是，請立即到 {forgot} 重設密碼\n' +
+      '\n' +
+      '-- \nGlazecalc, {app}\n'
+  },
+  ko: {
+    subject: 'Glazecalc 비밀번호가 변경되었습니다',
+    text:
+      'Glazecalc 계정 {account}의 비밀번호가 방금 변경되었으며, 로그인되어 있던 모든 기기에서 로그아웃되었습니다.\n\n' +
+      '본인이 변경했다면 따로 할 일은 없습니다. 그렇지 않다면 다음 주소에서 바로 비밀번호를 재설정하세요: {forgot}\n' +
       '\n' +
       '-- \nGlazecalc, {app}\n'
   }

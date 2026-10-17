@@ -92,8 +92,11 @@ describe('pages in each language', () => {
     expect(sitemap(SITE)).to.include('/tr/');
   });
 
-  it('offers Traditional Chinese, with the standard notice rather than the plainer one', () => {
-    for (const [code, name, english] of [['zh-Hant', '繁體中文', 'Traditional Chinese']]) {
+  it('offers Traditional Chinese and Korean, with the standard notice rather than the plainer one', () => {
+    for (const [code, name, english] of [
+      ['zh-Hant', '繁體中文', 'Traditional Chinese'],
+      ['ko', '한국어', 'Korean']
+    ]) {
       const language = languages.languageFor(code);
       expect(language).to.include({ name, english, dir: 'ltr', live: true });
       expect(language).not.to.have.property('plainNotice');
@@ -105,11 +108,8 @@ describe('pages in each language', () => {
     }
   });
 
-  it('knows Korean and Simplified Chinese, before they go live, without offering them or giving them the plainer notice', () => {
-    for (const [code, name, english] of [
-      ['ko', '한국어', 'Korean'],
-      ['zh-Hans', '简体中文', 'Simplified Chinese']
-    ]) {
+  it('knows Simplified Chinese, before it goes live, without offering it or giving it the plainer notice', () => {
+    for (const [code, name, english] of [['zh-Hans', '简体中文', 'Simplified Chinese']]) {
       const language = languages.languageFor(code);
       expect(language).to.include({ name, english, dir: 'ltr', live: false });
       expect(language).not.to.have.property('plainNotice');
