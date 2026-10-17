@@ -631,6 +631,7 @@ describe('MCP: personal access tokens', () => {
     let recipeId: string;
     let otherRecipeId: string;
     let firingId: string;
+    let goneId: string;
 
     before(async () => {
       const mine = await makeUser();
@@ -661,6 +662,13 @@ describe('MCP: personal access tokens', () => {
         .post('/recipe/create')
         .set(session)
         .send({ title: 'In the Trash', materials: [material('Silica', 50)] });
+      await api().post('/notes/create').set(session).send({
+        title: 'Gone with it',
+        content: 'About the recipe in the Trash',
+        relatedCollection: 'recipes',
+        relatedId: gone.body._id
+      });
+      goneId = gone.body._id;
       await api()
         .delete('/recipe/delete/' + gone.body._id)
         .set(session);
@@ -740,6 +748,12 @@ describe('MCP: personal access tokens', () => {
       expect(firing.columns).to.eql(['time', 'temperature']);
       const notes = await data('list_notes', { about: recipeId }, headers);
       expect(notes.notes[0]).to.include({ content: 'Crawled at the rim' });
+      // Not the notes about a record in the Trash, asked for or not.
+      const all = await data('list_notes', {}, headers);
+      expect(all.notes.map((n: { content: string }) => n.content)).to.eql(['Crawled at the rim']);
+      expect(all.total).to.equal(1);
+      expect((await data('list_notes', { about: goneId }, headers)).total).to.equal(0);
+      expect((await data('list_notes', { search: 'Trash' }, headers)).total).to.equal(0);
       const settings = await data('get_my_settings', {}, headers);
       expect(settings.region).to.equal('US');
     });

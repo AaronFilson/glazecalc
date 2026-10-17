@@ -4,7 +4,8 @@
 // Every query is limited to the token's account, as the record routes are
 // (server/lib/record_routes.ts), and nothing here changes anything: writing
 // waits for Phase 4. Records in the Trash are not in these collections, so
-// they are never shown.
+// they are never shown; nor are the notes about one, as the app shows a note
+// about a record only on that record's page.
 import * as z from 'zod';
 import mongoose from 'mongoose';
 import type { McpServer } from '@modelcontextprotocol/server';
@@ -15,6 +16,7 @@ import Firing from '../../models/firing.ts';
 import Material from '../../models/material.ts';
 import Note from '../../models/note.ts';
 import Recipe from '../../models/recipe.ts';
+import Trash from '../../models/trash.ts';
 import User, { PREFERENCES } from '../../models/user.ts';
 import {
   type Caller,
@@ -324,8 +326,14 @@ export const registerAccountTools = (server: McpServer, caller: Caller): void =>
         annotations: READ_ONLY
       },
       async ({ search, about, limit, offset }) => {
-        const filter: Record<string, unknown> = { ownedBy: userId };
-        if (about) filter.relatedId = about;
+        // Not the notes about a record in the Trash: they come back with it.
+        const trashed = (
+          await Trash.find({ ownedBy: userId, recordId: { $ne: null }, fromCollection: { $ne: 'notes' } })
+            .select({ recordId: 1 })
+            .lean()
+        ).map((entry) => String(entry.recordId));
+        const filter: Record<string, unknown> = { ownedBy: userId, relatedId: { $nin: trashed } };
+        if (about) filter.$and = [{ relatedId: about }];
         if (search) filter.$or = [{ title: containing(search) }, { content: containing(search) }];
         const total = await Note.countDocuments(filter);
         const found = await Note.find(filter)
