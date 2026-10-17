@@ -109,7 +109,7 @@ interface TileRecipe {
       <div class="blend-fields">
         <div class="blend-steps">
           <label class="form-label" for="blend-steps">{{ t(kindInfo().steps) }}</label>
-          <select id="blend-steps" class="form-select" [ngModel]="steps()" (ngModelChange)="steps.set(+$event)">
+          <select id="blend-steps" class="form-select" [ngModel]="steps()" (ngModelChange)="setSteps(+$event)">
             @for (n of stepChoices(); track n) {
               <option [ngValue]="n">{{ n }}</option>
             }
@@ -147,6 +147,16 @@ interface TileRecipe {
         <section class="panel blend-diagram-panel" aria-labelledby="blend-diagram-heading">
           <h2 class="h4" id="blend-diagram-heading">{{ t('recipe.blends.diagramHeading') }}</h2>
           <p class="small muted">{{ cornerKey() }}</p>
+          @if (includeDiffers()) {
+            <p class="small blend-problem no-print" role="status">
+              {{
+                t('recipe.blends.includeDiffers', {
+                  title: corners()[0]?.title,
+                  counts: includeAdditives() ? 'yes' : 'no'
+                })
+              }}
+            </p>
+          }
           <div
             role="list"
             class="blend-diagram"
@@ -162,14 +172,19 @@ interface TileRecipe {
                 [attr.data-row]="tile.row"
                 [style.grid-column]="placeOf(tile)"
                 [class.is-chosen]="chosen().has(tile.number)"
+                [class.is-saved]="savedTiles().has(tile.number)"
               >
                 <span class="blend-tile-number" aria-hidden="true">{{ tile.number }}</span>
                 <span class="blend-tile-shares" aria-hidden="true">{{ sharesShort(tile) }}</span>
+                @if (savedTiles().has(tile.number)) {
+                  <span class="blend-tile-saved no-print">{{ t('recipe.blends.tileSavedMark') }}</span>
+                }
                 <label class="blend-tile-choose no-print">
                   <input
                     type="checkbox"
                     class="form-check-input"
                     [checked]="chosen().has(tile.number)"
+                    [disabled]="savedTiles().has(tile.number)"
                     (change)="toggleTile(tile.number)"
                   />
                   <span class="visually-hidden">{{
@@ -335,6 +350,10 @@ interface TileRecipe {
       border-color: var(--gc-primary);
       box-shadow: inset 0 0 0 1px var(--gc-primary);
     }
+    .blend-tile-saved {
+      font-size: 0.7rem;
+      color: var(--gc-success-text, var(--gc-muted));
+    }
     .blend-tile-number {
       font-weight: 700;
       font-size: 1.1rem;
@@ -426,6 +445,8 @@ export class BlendsPage implements OnInit {
   /** Whether the person has typed a name, so choosing corners no longer writes one. */
   private nameTyped = false;
   protected readonly saveProblem = signal('');
+  /** The tiles of this blend already saved as recipes, so a second Save does not make them twice. */
+  protected readonly savedTiles = signal<ReadonlySet<number>>(new Set());
 
   protected readonly kindInfo = computed(() => KINDS.find((k) => k.kind === this.kind())!);
   protected readonly stepChoices = computed(() => {
@@ -449,11 +470,19 @@ export class BlendsPage implements OnInit {
   }
 
   /** The corner recipes chosen, in order, as many as the kind takes. */
-  private readonly corners = computed(() =>
+  protected readonly corners = computed(() =>
     Array.from({ length: this.kindInfo().corners.length }, (_, c) =>
       this.myRecipes().find((r) => r._id === this.cornerIds()[c])
     )
   );
+
+  /** Whether the tiles' unity formulas count additives: as the first corner's recipe does. */
+  protected readonly includeAdditives = computed(() => !!this.corners()[0]?.includeAdditives);
+  /** Whether the corner recipes disagree about that, so the first one's choice is followed and said so. */
+  protected readonly includeDiffers = computed(() => {
+    const chosen = this.corners().filter((corner): corner is Recipe => !!corner);
+    return chosen.some((corner) => !!corner.includeAdditives !== !!chosen[0].includeAdditives);
+  });
 
   /** Why there are no tiles to show, if there are none. */
   protected readonly problem = computed(() => {
@@ -502,14 +531,21 @@ export class BlendsPage implements OnInit {
     );
   }
 
+  protected setSteps(steps: number): void {
+    this.steps.set(steps);
+    this.savedTiles.set(new Set());
+  }
+
   protected setKind(kind: BlendKind): void {
     this.kind.set(kind);
+    this.savedTiles.set(new Set());
     this.steps.set(KINDS.find((k) => k.kind === kind)!.start);
     this.chosen.set(new Set());
     this.nameFromCorners();
   }
 
   protected setCorner(index: number, id: string): void {
+    this.savedTiles.set(new Set());
     this.cornerIds.update((ids) => {
       const next = [...ids];
       next[index] = id;
@@ -579,11 +615,30 @@ export class BlendsPage implements OnInit {
   protected save(): Promise<void> {
     return this.saving.run(async () => {
       this.saveProblem.set('');
-      const tiles = (this.tileRecipes() ?? []).filter((entry) => this.chosen().has(entry.tile.number));
-      if (!tiles.length) {
+      const wanted = (this.tileRecipes() ?? []).filter((entry) => this.chosen().has(entry.tile.number));
+      if (!wanted.length) {
         this.saveProblem.set(translate('recipe.blends.noneChosen'));
         return;
       }
+      // Tiles saved by an earlier Save, or before a failure, are not saved again.
+      const tiles = wanted.filter((entry) => !this.savedTiles().has(entry.tile.number));
+      if (!tiles.length) {
+        this.saveProblem.set(translate('recipe.blends.alreadySaved'));
+        return;
+      }
+      const numbers = (list: TileRecipe[]) => list.map((entry) => entry.tile.number).join(', ');
+      const stoppedAt = (index: number, problem: string) => {
+        const done = tiles.slice(0, index);
+        this.saveProblem.set(
+          done.length
+            ? translate('recipe.blends.stoppedTiles', {
+                saved: numbers(done),
+                rest: numbers(tiles.slice(index)),
+                problem
+              })
+            : translate('recipe.import.notSaved', { problem })
+        );
+      };
       const name = this.name().trim();
       if (!name) {
         this.saveProblem.set(translate('recipe.blends.nameMissing'));
@@ -606,11 +661,14 @@ export class BlendsPage implements OnInit {
             amount: formatScaled(amount),
             unit: 'percent' as const
           })),
-          includeAdditives: false
+          includeAdditives: this.includeAdditives()
         };
-        const { analysis, problem } = evaluate(recipe.materials, recipe.additives ?? []);
+        const { analysis, problem } = evaluate(recipe.materials, recipe.additives ?? [], {
+          includeAdditives: this.includeAdditives()
+        });
         if (!analysis) {
-          this.saveProblem.set(
+          stoppedAt(
+            saved,
             translate('recipe.blends.notSavedTile', {
               number: entry.tile.number,
               problem: problem ?? translate('recipe.page.notSavedNoUnity')
@@ -623,15 +681,11 @@ export class BlendsPage implements OnInit {
           const created = await this.recipes.create(recipe);
           this.myRecipes.update((list) => [...list, created]);
         } catch (err) {
-          const problem = errorMessage(err, translate('recipe.import.saveFailed'));
-          this.saveProblem.set(
-            saved
-              ? translate('recipe.import.stopped', { saved, count: tiles.length, problem })
-              : translate('recipe.import.notSaved', { problem })
-          );
+          stoppedAt(saved, errorMessage(err, translate('recipe.import.saveFailed')));
           return;
         }
         saved++;
+        this.savedTiles.update((set) => new Set(set).add(entry.tile.number));
       }
       this.chosen.set(new Set());
       this.notices.success(translate('recipe.blends.saved', { count: saved }), 'save');

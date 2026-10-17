@@ -229,6 +229,70 @@ describe('BlendsPage', () => {
     expect(text(fixture, '.blend-save .blend-problem')).toBe('Nothing was saved: A trial keeps up to 25 recipes.');
   });
 
+  it('after a failure part way, says which tiles were saved and does not save them again on retry', async () => {
+    const { fixture, root, pick, tiles } = await create(undefined, { recipe: 'cel' });
+    await pick('blend-corner-1', 'Shino');
+    await pick('blend-steps', '3');
+    (root.querySelectorAll('.blend-save-fields button')[0] as HTMLButtonElement).click();
+    await settle(fixture);
+    const save = async () => {
+      (root.querySelector('.blend-save button') as HTMLButtonElement).click();
+      await settle(fixture);
+    };
+    await save();
+    httpMock()
+      .expectOne({ method: 'POST', url: API + '/recipe/create' })
+      .flush({ _id: 'one' });
+    await settle(fixture);
+    httpMock()
+      .expectOne(API + '/recipe/create')
+      .flush({ msg: 'A trial keeps up to 25 recipes.' }, { status: 403, statusText: 'Forbidden' });
+    await settle(fixture);
+    expect(text(fixture, '.blend-save .blend-problem')).toBe(
+      'Saved tiles: 1. Not saved: 2, 3. A trial keeps up to 25 recipes.'
+    );
+    expect(tiles()[0].classList).toContain('is-saved');
+    expect(tiles()[1].classList).not.toContain('is-saved');
+    await save();
+    const titles: string[] = [];
+    for (const id of ['two', 'three']) {
+      const req = httpMock().expectOne(API + '/recipe/create');
+      titles.push(req.request.body.title);
+      req.flush({ _id: id });
+      await settle(fixture);
+    }
+    expect(titles).toEqual(['Celadon / Shino blend, tile 2', 'Celadon / Shino blend, tile 3']);
+    expect(text(fixture, '.server-msg')).toContain('Saved 2 tiles as recipes.');
+    // Choosing only tiles saved already saves nothing.
+    (root.querySelectorAll('.blend-save-fields button')[0] as HTMLButtonElement).click();
+    await settle(fixture);
+    await save();
+    httpMock().expectNone(API + '/recipe/create');
+    expect(text(fixture, '.blend-save .blend-problem')).toBe('The tiles chosen are saved already.');
+  });
+
+  it('carries whether additives count from the first corner, and says when the corners differ', async () => {
+    const counted = {
+      ...CELADON,
+      includeAdditives: true,
+      additives: CELADON.additives!.map((a) => ({ ...a, loi: 0, percentmole: 'molecular' as const }))
+    };
+    const { fixture, root, pick, tiles } = await create([counted, MATTE, SHINO, EMPTY], { recipe: 'cel' });
+    await pick('blend-corner-1', 'Matte');
+    expect(text(fixture, '.blend-diagram-panel .blend-problem')).toContain(
+      'The tiles follow recipe A, Celadon: counted.'
+    );
+    await pick('blend-steps', '2');
+    (tiles()[0].querySelector('input') as HTMLInputElement).click();
+    await settle(fixture);
+    (root.querySelector('.blend-save button') as HTMLButtonElement).click();
+    await settle(fixture);
+    const sent = httpMock().expectOne(API + '/recipe/create').request.body as Recipe;
+    expect(sent.includeAdditives).toBe(true);
+    // Counted: the iron oxide adds Fe2O3 to the analysis.
+    expect(JSON.stringify(sent.computed)).toContain('Fe2O3');
+  });
+
   it('prints the list', async () => {
     const { fixture, root, pick } = await create(undefined, { recipe: 'cel' });
     await pick('blend-corner-1', 'Shino');

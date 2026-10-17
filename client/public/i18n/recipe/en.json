@@ -599,6 +599,10 @@
     "nameMissing": "Give the saved tiles a name.",
     "tileTitle": "{name}, tile {number}",
     "tileNotes": "Blend tile: {shares} ({corners}).",
+    "stoppedTiles": "Saved tiles: {saved}. Not saved: {rest}. {problem}",
+    "alreadySaved": "The tiles chosen are saved already.",
+    "tileSavedMark": "Saved",
+    "includeDiffers": "These recipes differ in whether the unity formula counts additives. The tiles follow recipe A, {title}: {counts, select, yes {counted} other {not counted}}.",
     "notSavedTile": "Tile {number} was not saved: {problem}",
     "saved": "{count, plural, one {Saved # tile as a recipe.} other {Saved # tiles as recipes.}}"
   }
