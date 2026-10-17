@@ -207,5 +207,27 @@
     "standardFetchFailed": "There was an error in getting the server advice information.",
     "saved": "Success in adding to the advice records.",
     "saveFailed": "There was an error in submitting the advice information."
+  },
+  "assistants": {
+    "title": "Use Glazecalc from your AI assistant",
+    "lead": "AI assistants such as Claude, GitHub Copilot, Cursor and Gemini can use Glazecalc’s calculations directly, through the Model Context Protocol (MCP).",
+    "whatHeading": "What it can do",
+    "what": "With no account, an assistant can look up materials in the library, work out a recipe’s unity formula, check it against the limits for its firing, suggest substitutes for discontinued materials, remake a recipe from the materials you name, and convert between cones and temperatures. Nothing it sends is saved.",
+    "mine": "With an access token from your <account>account page</account>, it can also read your own recipes, materials, notebook, firing logs and the materials you have on hand. A token can only read: it never changes or removes anything.",
+    "caution": "The limit checks are cautions from published limits, the same as in the app, not proof that a glaze is food safe. Test-fire every glaze, and have glazes for food surfaces tested for leaching.",
+    "addressHeading": "The address",
+    "address": "Give your assistant this address, using the Streamable HTTP transport:",
+    "token": "To let it read your own records, make a token on your <account>account page</account> and copy it. Your assistant sends it in an Authorization header, as Bearer followed by the token. Keep it out of files you share or commit, as you would a password.",
+    "clientsHeading": "Adding Glazecalc to your assistant",
+    "claudeCode": "In a terminal:",
+    "claudeCodeToken": "With an access token, to read your own records too:",
+    "vscode": "In .vscode/mcp.json in a folder, or your user settings. VS Code asks for the token once and keeps it hidden; leave out headers and inputs to use only the tools that need no account:",
+    "cursor": "In ~/.cursor/mcp.json, or .cursor/mcp.json in a project. Leave out headers to use only the tools that need no account:",
+    "gemini": "In ~/.gemini/settings.json. Leave out headers to use only the tools that need no account:",
+    "appsHeading": "Claude, ChatGPT and other apps",
+    "apps": "Add a custom connector with the address above. These apps cannot send an access token yet, so they get the tools that need no account. Reaching your own records from them will come with signing in from the app.",
+    "stopHeading": "Stopping access",
+    "stop": "Revoke a token on your <account>account page</account> at any time. Every token stops working on the day you chose, and all of them stop at once if you reset your password or sign out everywhere.",
+    "limits": "Each address can make 60 requests a minute and 2,000 a day, and an account with a token a little more. Substitutions and matches are limited to 10 a minute."
   }
 }

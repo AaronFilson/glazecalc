@@ -96,6 +96,14 @@
   "token-invalid": "The access token is not valid, has expired or was revoked.",
   "token-scope": "The access token does not allow this.",
   "token-not-here": "This can only be done signed in on the website, not with an access token.",
+  "token-name": "Please give the token a name of 1 to {most} characters.",
+  "token-expiry-choices": "Please choose when the token expires: after {choices} days.",
+  "token-scope-choices": "For now a token can only read your records.",
+  "token-limit": "An account can have up to {most} access tokens at once. Please revoke one you no longer use first.",
+  "token-made": "Your access token is ready. Copy it now: it will not be shown again.",
+  "token-revoked": "The access token was revoked. It no longer works.",
+  "tokens-revoked": "{count, plural, =0 {No access tokens were working.} one {# access token was revoked.} other {# access tokens were revoked.}}",
+  "token-not-found": "No access token with that id.",
   "not-found": "Not found",
   "other-site": "Requests from other sites are not accepted.",
   "invalid-input": "Some of the information sent is not valid.",
@@ -110,5 +118,6 @@
   "too-many-attempts": "Too many attempts. Please wait a few minutes and try again.",
   "too-many-codes": "Too many codes tried. Please wait a few minutes and try again.",
   "too-many-tokens": "Too many access tokens that do not work were tried from this address. Please wait a few minutes and try again.",
-  "too-many-deletes": "This access token has moved too many records to the Trash in the last hour. Please try again later."
+  "too-many-deletes": "This access token has moved too many records to the Trash in the last hour. Please try again later.",
+  "too-many-mcp": "Too many requests to the Glazecalc tools for AI assistants. Please wait a few minutes and try again."
 }

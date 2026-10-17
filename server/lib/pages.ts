@@ -20,6 +20,7 @@ export { PUBLIC_PAGES };
  */
 export const APP_PAGES = [
   ...PUBLIC_PAGES,
+  '/assistants',
   '/signin',
   '/forgot',
   '/reset',

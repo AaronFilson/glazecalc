@@ -2,7 +2,16 @@ import { Location } from '@angular/common';
 import { TestBed } from '@angular/core/testing';
 import { ActivatedRoute, Router, convertToParamMap } from '@angular/router';
 import { AuthService } from '../../core/auth.service';
-import { answer, API, fieldProblem, httpMock, settle, testProviders, text } from '../../testing/test-providers';
+import {
+  answer,
+  API,
+  fieldProblem,
+  httpMock,
+  NO_TOKENS,
+  settle,
+  testProviders,
+  text
+} from '../../testing/test-providers';
 import { AccountPage } from './account-page';
 import { ForgotPage } from './forgot-page';
 import { ResetPage } from './reset-page';
@@ -139,6 +148,7 @@ describe('AccountPage', () => {
     await fixture.whenStable();
     answer('/preferences', { weightUnit: 'g' });
     answer('/mfa', { on: false, emailConfirmed: true, totp: null, passkeys: [], codesLeft: 0 });
+    answer('/tokens', NO_TOKENS);
     await settle(fixture);
     return { fixture, page: fixture.componentInstance as unknown as Page };
   };
@@ -152,6 +162,7 @@ describe('AccountPage', () => {
       'Download my data',
       'Change your password',
       'Two-step sign-in',
+      'Access tokens',
       'Change your email',
       'Sign out everywhere',
       'Delete your account'
@@ -169,6 +180,7 @@ describe('AccountPage', () => {
       'Download my data',
       'Change your password',
       'Two-step sign-in',
+      'Access tokens',
       'Change your email',
       'Sign out everywhere',
       'Delete your account'
@@ -196,6 +208,10 @@ describe('AccountPage', () => {
     req.flush({ msg: 'Your password has been changed.', email: 'a@b.com' });
     await submitting;
     await fixture.whenStable();
+    // The tokens still working are looked up, to offer to revoke them: none here.
+    answer('/tokens', NO_TOKENS);
+    await settle(fixture);
+    expect(fixture.nativeElement.querySelector('.tokens-after-change')).toBeNull();
 
     const auth = TestBed.inject(AuthService);
     expect(auth.hasSession()).toBe(true);
