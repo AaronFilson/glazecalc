@@ -425,6 +425,39 @@ describe('Paste-in import: finding the material', () => {
     expect(recipe.matchName('Ball clay', LIBRARY).how).to.equal('choose');
   });
 
+  it('offers every product that differs only by a qualifier, as Nickel Oxide is green or black', () => {
+    const match = recipe.matchName('Nickel Oxide', LIBRARY);
+    expect(match.how).to.equal('choose');
+    expect(match.record).to.equal(null);
+    expect(match.candidates.slice(0, 2).map((r) => r.name)).to.have.members([
+      'Nickel oxide, green',
+      'Nickel oxide, black'
+    ]);
+    // One product with the words is still taken.
+    expect(matched('Tin Oxide')).to.eql(['name', 'Tin oxide']);
+  });
+
+  it('never takes a mesh size silently, nor reads it as an amount', () => {
+    for (const name of ['Silica 200 mesh', '325 mesh silica', 'silica 200 Mesh']) {
+      const match = recipe.matchName(name, LIBRARY);
+      expect(match.how, name).to.equal('choose');
+      expect(match.record, name).to.equal(null);
+      expect(
+        match.candidates.map((r) => r.name),
+        name
+      ).to.include('Silica');
+    }
+    expect(
+      lines(one('Silica 200 mesh\n325 mesh silica\nSilica mesh 200 5\nSilica 200 mesh 25\n325 mesh silica 10'))
+    ).to.eql([
+      ['Silica 200 mesh', null, null, false],
+      ['325 mesh silica', null, null, false],
+      ['Silica mesh 200', 5, null, false],
+      ['Silica 200 mesh', 25, null, false],
+      ['325 mesh silica', 10, null, false]
+    ]);
+  });
+
   it('finds nothing for a name the library does not have', () => {
     expect(recipe.matchName('Plutonium', LIBRARY)).to.eql({ how: 'none', record: null, candidates: [] });
     expect(recipe.matchName('  ', LIBRARY).how).to.equal('none');
