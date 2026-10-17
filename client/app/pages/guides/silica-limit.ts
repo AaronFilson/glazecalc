@@ -127,8 +127,11 @@ const KIND: Record<Limit['kind'], string> = {
             />
           </p>
         }
-      } @else {
+      } @else if (facts.eu) {
         <p>{{ t('guides.silica.unknown', { region: regionName(), value: number(eu.quartz) }) }}</p>
+      } @else {
+        <!-- Outside the EU, with other facts but no limit read (the Philippines): no EU limit to fall back on. -->
+        <p>{{ t('guides.silica.noData', { region: regionName() }) }}</p>
       }
       @if (facts.respirators; as respirators) {
         <p>

@@ -515,3 +515,18 @@ describe('Thailand', () => {
     expect(paragraphsOf(element)[0]).toContain("the shallow pieces' too");
   });
 });
+
+describe('Philippines', () => {
+  it('gives 911 and the poison centre, around the clock and free', async () => {
+    const { element } = await create(PoisonLines, 'PH');
+    const calls = [...element.querySelectorAll('a[href^="tel:"]')].map((a) => a.getAttribute('href'));
+    expect(calls).toEqual(['tel:911', 'tel:+63285241078']);
+    expect(element.textContent).toContain('24 hours, every day, free');
+  });
+
+  it('says the silica limit is not yet confirmed', async () => {
+    expect((await create(SilicaLimit, 'PH')).element.textContent).toContain(
+      'We have not yet confirmed the limit in Philippines.'
+    );
+  });
+});

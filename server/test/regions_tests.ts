@@ -117,7 +117,7 @@ describe('region facts', () => {
     fs.readFileSync(new URL('../../client/public/i18n/guides/en.json', import.meta.url), 'utf8')
   );
   const HTTP_ONLY = ['丸二陶料', '太麟化工原料有限公司', 'Sam Mui Kuang Pottery'];
-  const NO_SHOP_FOUND = ['MY', 'CN', 'HK', 'ID', 'TH'];
+  const NO_SHOP_FOUND = ['MY', 'CN', 'HK', 'ID', 'TH', 'PH'];
   const checkedLately = (fact: { checked: string; source?: string; url?: string }, label: string) => {
     expect(fact.source ?? fact.url, label).to.match(/^https:\/\//);
     expect(Date.parse(fact.checked), label + ': check this again').to.be.above(yearAgo);
@@ -827,5 +827,26 @@ describe('Thailand', () => {
       ['thInfant', 2.5, 0.25, 'mg/L'],
       ['thCooking', 5, 0.5, 'mg/L']
     ]);
+  });
+});
+
+describe('Philippines', () => {
+  it('stays in English, fires by temperature, and lists the US library', () => {
+    expect(regions.regionFor('PH')).to.include({ temperature: 'C', cones: 'temperature', library: 'US' });
+    expect(regions.regionFor('PH')!.languages).to.eql(['fil', 'en']);
+    expect(regions.formatLocaleFor('en', 'PH', 'auto')).to.equal('en-PH');
+  });
+
+  it('gives 911 and the National Poison Management and Control Center, 24 hours and free', () => {
+    const shown = safety.shownFor('PH')!;
+    expect(shown.emergency.map((line) => line.number)).to.eql(['911']);
+    expect(shown.poison.map((line) => [line.number, line.tel])).to.eql([['(02) 8524 1078', '+63285241078']]);
+    expect(shown.poison[0]).to.include({ who: 'public', hours: '24 hours, every day, free' });
+  });
+
+  it('gives no silica limit, food-contact rules or shop, since none could be read', () => {
+    expect(workplace.workplaceFor('PH')).to.eql({ silica: null, agency: null, respirators: null, eu: false });
+    expect(food.foodRulesFor('PH')).to.equal(null);
+    expect(suppliers.shopsFor('PH')).to.eql({ shops: [], nearby: [] });
   });
 });
