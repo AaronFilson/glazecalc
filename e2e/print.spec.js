@@ -26,7 +26,10 @@ test.beforeEach(async ({ page }) => {
   await page.goto('/recipe');
 });
 
-test('prints a recipe on one page, Letter or A4, in black on white even in dark mode', async ({ page }) => {
+// The whole recipe, with its chemistry and hazards, may flow onto a second page; a batch ticket never does.
+test('prints a batch ticket on one page, and the whole recipe on one or two, Letter or A4, in black on white even in dark mode', async ({
+  page
+}) => {
   await buildRecipe(page);
   await printButton(page).click();
   await expect(page).toHaveURL(/\/recipe\?print=draft$/);
@@ -52,7 +55,7 @@ test('prints a recipe on one page, Letter or A4, in black on white even in dark 
     return [style.color, style.backgroundColor];
   });
   expect(colors).toEqual(['rgb(0, 0, 0)', 'rgb(255, 255, 255)']);
-  for (const format of ['Letter', 'A4']) expect(pageCount(await page.pdf({ format })), format).toBe(1);
+  for (const format of ['Letter', 'A4']) expect(pageCount(await page.pdf({ format })), format).toBeLessThanOrEqual(2);
 
   // The batch list too, with a box to tick for each thing to weigh. (The options show on screen only.)
   await page.emulateMedia({ media: 'screen', colorScheme: 'dark' });
@@ -67,7 +70,7 @@ test('prints a recipe on one page, Letter or A4, in black on white even in dark 
   await page.emulateMedia({ media: 'print' });
   for (const format of ['Letter', 'A4']) expect(pageCount(await page.pdf({ format })), format).toBe(1);
 
-  // With the batch cost ticked (off until then) both prints still fit one page.
+  // With the batch cost ticked (off until then) the ticket still fits one page; the whole recipe, one or two.
   await page.emulateMedia({ media: 'screen' });
   await expect(sheet(page).locator('.print-cost')).toHaveCount(0);
   await page.getByLabel('Show the batch cost').check();
@@ -79,7 +82,7 @@ test('prints a recipe on one page, Letter or A4, in black on white even in dark 
   await expect(sheet(page).locator('.print-chemistry')).toHaveCount(1);
   await expect(sheet(page).locator('.print-cost')).toContainText('No price for');
   await page.emulateMedia({ media: 'print' });
-  for (const format of ['Letter', 'A4']) expect(pageCount(await page.pdf({ format })), format).toBe(1);
+  for (const format of ['Letter', 'A4']) expect(pageCount(await page.pdf({ format })), format).toBeLessThanOrEqual(2);
 });
 
 test('goes back to the recipe just as it was, by its own button or the browser', async ({ page }) => {

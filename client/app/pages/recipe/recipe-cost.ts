@@ -335,7 +335,7 @@ export class RecipeCost {
       return;
     }
     this.setProblem(key, '');
-    const saved = await this.prices.set(key, value === null ? null : value / KG_PER_UNIT[this.unit()]);
+    const saved = await this.prices.set(key, value === null ? null : value / KG_PER_UNIT[this.unit()], this.currency());
     if (saved) {
       this.typed.update((typed) => {
         const rest = { ...typed };

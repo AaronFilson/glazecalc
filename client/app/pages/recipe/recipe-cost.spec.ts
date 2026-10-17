@@ -168,7 +168,7 @@ describe('RecipeCost', () => {
     // A save for a list loaded in another session is refused before it is sent.
     const service = TestBed.inject(PricesService);
     TestBed.inject(AuthService).sessionVersion.update((v) => v + 1);
-    expect(await service.set('potash', 3)).toBe(false);
+    expect(await service.set('potash', 3, 'USD')).toBe(false);
     httpMock().expectNone((req) => req.method !== 'GET');
     await settle(fixture);
     httpMock()

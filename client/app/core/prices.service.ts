@@ -6,7 +6,6 @@ import type { Price } from '../../../lib/recipe/cost';
 import { API_BASE } from './api-base';
 import { AuthService } from './auth.service';
 import { errorMessage } from './error-message';
-import { LocaleService } from './locale.service';
 import { PreferencesService } from './preferences.service';
 
 /**
@@ -21,7 +20,6 @@ export class PricesService {
   private readonly apiBase = inject(API_BASE);
   private readonly auth = inject(AuthService);
   private readonly preferences = inject(PreferencesService);
-  private readonly locale = inject(LocaleService);
   /** The prices, once fetched for this sign-in; null before, and after a fetch that failed. */
   readonly prices = signal<Price[] | null>(null);
   /** Why the last fetch or save did not work, or ''. */
@@ -54,16 +52,16 @@ export class PricesService {
    * Sets one material's price per kilogram, or takes it away (null); true once
    * the server has it. Only that change is sent, to be merged by key into the
    * account's list, so a list loaded for another session never overwrites it.
-   * With the first price the currency shown goes too, to become the account's.
+   * With the first price the currency shown (shownCurrency) goes too, to become the account's.
    */
-  async set(key: string, perKg: number | null): Promise<boolean> {
+  async set(key: string, perKg: number | null, shownCurrency: string): Promise<boolean> {
     const before = this.prices();
     const session = this.auth.sessionVersion();
     if (before === null || this.fetched?.session !== session) return false;
     const save = ++this.saves;
     const others = before.filter((price) => price.key !== key);
     this.prices.set(perKg === null ? others : [...others, { key, perKg }]);
-    const currency = this.preferences.currency() === '' ? this.locale.currency() : undefined;
+    const currency = this.preferences.currency() === '' ? shownCurrency : undefined;
     try {
       const res = await firstValueFrom(
         this.http.patch<{ prices: Price[]; currency?: string }>(this.apiBase + '/prices', {

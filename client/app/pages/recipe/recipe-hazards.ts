@@ -15,12 +15,18 @@ export interface HazardSource extends Owned {
 /**
  * The records to read a recipe's hazards from: for a standard material, the
  * library's current record (its safety data sheet may have changed since the
- * recipe was saved), else the line as it is; a potter's own material gives
- * what they wrote, or nothing.
+ * recipe was saved), else the line as it is; a potter's own material, the
+ * record as it is now (what they have written since), else the copy saved in
+ * the line if that material has been deleted; what they wrote, or nothing.
  */
-export function hazardSources(lines: readonly HazardSource[], standard: readonly HazardSource[]): HazardSource[] {
+export function hazardSources(
+  lines: readonly HazardSource[],
+  standard: readonly HazardSource[],
+  own: readonly HazardSource[] = []
+): HazardSource[] {
   return lines.map((line) => {
-    const current = line.ownedBy === 'Standard' && line._id ? standard.find((record) => record._id === line._id) : null;
+    const records = line.ownedBy === 'Standard' ? standard : own;
+    const current = line._id ? records.find((record) => record._id === line._id) : null;
     return current ? { ...current, name: line.name } : line;
   });
 }
@@ -78,15 +84,15 @@ const GUIDES = { mixing: '/guides/safe-mixing', home: '/guides/home-safety' };
       padding-inline-start: 0.75rem;
       margin: 0;
     }
-    /* On paper, small and run together: the recipe and its hazards fit one page, A4 or Letter. */
+    /* On paper, run together and no smaller than 8.5pt: a batch ticket with its hazards fits one page, A4 or Letter; the whole recipe may flow onto a second. */
     @media print {
       .recipe-hazards {
         break-inside: avoid;
-        font-size: 7.5pt;
+        font-size: 8.5pt;
         line-height: 1.25;
       }
       .recipe-hazards h3 {
-        font-size: 9.5pt;
+        font-size: 10pt;
         margin: 0 0 0.1rem;
       }
       .recipe-hazards-intro {

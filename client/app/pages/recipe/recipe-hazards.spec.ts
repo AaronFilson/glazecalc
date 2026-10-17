@@ -17,4 +17,16 @@ describe('hazardSources', () => {
       ['Unknown clay', undefined]
     ]);
   });
+
+  it("reads a potter's own material's hazards from its current record, and from the saved copy once it is deleted", () => {
+    const own = [{ _id: 'm', ownedBy: 'me', name: 'My ash', hazards: 'Now: wear a mask.' }];
+    const lines = [
+      { _id: 'm', ownedBy: 'me', name: 'My ash (old name)', hazards: 'Wear gloves.' },
+      { _id: 'deleted', ownedBy: 'me', name: 'My clay', hazards: 'As saved.' }
+    ];
+    expect(hazardSources(lines, [], own).map((source) => [source.name, source.hazards])).toEqual([
+      ['My ash (old name)', 'Now: wear a mask.'],
+      ['My clay', 'As saved.']
+    ]);
+  });
 });

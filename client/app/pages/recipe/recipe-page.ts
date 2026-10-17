@@ -449,7 +449,8 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
   protected readonly hazardSources = computed(() =>
     hazardSources(
       [...this.lines(), ...this.additiveLines()],
-      [...this.standardMaterials(), ...this.standardAdditives()]
+      [...this.standardMaterials(), ...this.standardAdditives()],
+      [...this.myMaterials(), ...this.myAdditives()]
     )
   );
   /** The same for the recipe being printed. */
@@ -458,7 +459,8 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
     return recipe
       ? hazardSources(
           [...(recipe.materials ?? []), ...(recipe.additives ?? [])],
-          [...this.standardMaterials(), ...this.standardAdditives()]
+          [...this.standardMaterials(), ...this.standardAdditives()],
+          [...this.myMaterials(), ...this.myAdditives()]
         )
       : [];
   });
