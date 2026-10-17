@@ -6,6 +6,7 @@ import chemistry from '../../lib/chemistry/index.js';
 import cones from '../../lib/cones/index.js';
 import recipe from '../../lib/recipe/index.js';
 import type { Caution, MaterialRecord } from '../../lib/recipe/index.js';
+import * as log from '../lib/log.ts';
 import { findMaterial, searchLibrary } from './library.ts';
 import { cautionText, chemistryText, languageOf, recipeText } from './words.ts';
 
@@ -194,7 +195,15 @@ export const countFit = (caller: Caller, now = Date.now()): void => {
 /** Forgets the fit counts (the tests). */
 export const resetFits = (): void => fits.clear();
 
-/** Runs a tool's work, turning a ToolProblem or a recipe tool's refusal into a refusal in words. */
+/** What a tool says when its work failed in a way nobody foresaw: nothing about why. */
+export const UNEXPECTED =
+  'Glazecalc could not work that out because of a problem on its side. Please try again; if it keeps happening, the problem has been logged for the Glazecalc team.';
+
+/**
+ * Runs a tool's work, turning a ToolProblem or a recipe tool's refusal into a
+ * refusal in words. Anything else is logged here (its kind and code, never its
+ * message or the request) and the assistant gets UNEXPECTED, never the error.
+ */
 export const guarded = async <T>(work: () => T | Promise<T>, language = 'en') => {
   try {
     return await work();
@@ -203,20 +212,20 @@ export const guarded = async <T>(work: () => T | Promise<T>, language = 'en') =>
     if (err instanceof recipe.RecipeError) {
       return fail(recipeText({ code: err.code, params: err.params }, language));
     }
-    const coded = err as { code?: string; message?: string };
-    // The chemistry's errors (no flux, an unknown oxide) say what is wrong in English, with a code.
-    if (coded && typeof coded.code === 'string' && typeof coded.message === 'string') {
-      return fail(
-        chemistryText(
-          {
-            code: coded.code,
-            params: (err as { params?: Record<string, string | number> }).params,
-            message: coded.message
-          },
-          language
-        )
-      );
+    const coded = err as { code?: unknown; message?: unknown; params?: Record<string, string | number> };
+    // The chemistry's errors (no flux, an unknown oxide) say what is wrong in English, with a code of its own.
+    if (
+      coded &&
+      typeof coded.code === 'string' &&
+      typeof coded.message === 'string' &&
+      Object.hasOwn(chemistry.MESSAGES, coded.code)
+    ) {
+      return fail(chemistryText({ code: coded.code, params: coded.params, message: coded.message }, language));
     }
-    throw err;
+    log.error('An MCP tool failed', {
+      kind: err instanceof Error ? err.constructor.name : typeof err,
+      code: log.codeOf(err)
+    });
+    return fail(UNEXPECTED);
   }
 };

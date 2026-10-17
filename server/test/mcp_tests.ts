@@ -4,7 +4,7 @@
 import chemistry from '../../lib/chemistry/index.js';
 import standardData from '../../data/index.js';
 import recipe from '../../lib/recipe/index.js';
-import { MOST_LINES, resetFits, FITS_PER_MINUTE } from '../mcp/common.ts';
+import { MOST_LINES, resetFits, FITS_PER_MINUTE, guarded, ToolProblem, UNEXPECTED } from '../mcp/common.ts';
 import { findMaterial } from '../mcp/library.ts';
 import { MOST_STREAMS_PER_ADDRESS, sdkSubscribers, streamsOpen } from '../mcp/index.ts';
 import { SERVER_INFO } from '../mcp/server.ts';
@@ -363,6 +363,41 @@ describe('MCP: the public tools', () => {
     for (const line of result.recipe) if (line.amount > 0) expect(allowed).to.include(line.material);
     const unknown = await call('match_from_materials', { lines: LINES, have: ['Moon dust'] });
     expect(unknown.isError).to.equal(true);
+  });
+});
+
+describe('MCP: a tool that fails', () => {
+  it('says what is wrong for a refusal it knows, and nothing about an error it does not, which it logs', async () => {
+    const logged: string[] = [];
+    const write = process.stderr.write.bind(process.stderr);
+    const level = process.env.LOG_LEVEL;
+    process.env.LOG_LEVEL = 'error';
+    process.stderr.write = ((chunk: string) => {
+      logged.push(String(chunk));
+      return true;
+    }) as typeof process.stderr.write;
+    try {
+      expect(await guarded(() => Promise.reject(new ToolProblem('No such cone.')))).to.eql({
+        content: [{ type: 'text', text: 'No such cone.' }],
+        isError: true
+      });
+      const flux = Object.assign(new Error('The recipe has no flux.'), { code: 'no-flux', params: {} });
+      expect(((await guarded(() => Promise.reject(flux))) as ToolResult).content[0]!.text).to.not.equal(UNEXPECTED);
+      const secret = 'mongodb://admin:hunter2@db.internal/glazecalc';
+      for (const err of [
+        new Error('connect failed to ' + secret),
+        Object.assign(new Error('getaddrinfo ' + secret), { code: 'ENOTFOUND' }),
+        'thrown as a string ' + secret
+      ]) {
+        const result = (await guarded(() => Promise.reject(err))) as ToolResult;
+        expect(result).to.eql({ content: [{ type: 'text', text: UNEXPECTED }], isError: true });
+      }
+    } finally {
+      process.stderr.write = write;
+      process.env.LOG_LEVEL = level;
+    }
+    expect(logged.join('')).to.include('An MCP tool failed').and.include('ENOTFOUND');
+    expect(logged.join('')).to.not.include('hunter2');
   });
 });
 
