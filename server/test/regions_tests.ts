@@ -516,6 +516,29 @@ describe('regions before China', () => {
   });
 });
 
+// The same, with China, Hong Kong, Indonesia, Thailand and the Philippines, before Vietnam.
+describe('regions before Vietnam', () => {
+  it('keep their data exactly', () => {
+    const codes = [
+      'US', 'GB', 'AU', 'NZ', 'AT', 'BE', 'BG', 'HR', 'CY', 'CZ', 'DK', 'EE', 'FI', 'FR', 'DE', 'GR',
+      'HU', 'IE', 'IT', 'LV', 'LT', 'LU', 'MT', 'NL', 'PL', 'PT', 'RO', 'SK', 'SI', 'ES', 'SE', 'JP', 'TR',
+      'KR', 'TW', 'SG', 'MY', 'CN', 'HK', 'ID', 'TH', 'PH'
+    ]; // prettier-ignore
+    const data: unknown[] = codes.map((code) => [
+      code,
+      asSnapshotted(code),
+      safety.SAFETY[code],
+      safety.MINISTRIES[code] ?? null,
+      workplace.WORKPLACE[code] ?? null,
+      food.FOOD[code] ?? null,
+      suppliers.SUPPLIERS[code] ?? null
+    ]);
+    data.push(['EU', food.FOOD['EU'], workplace.EU_SILICA]);
+    const hash = crypto.createHash('sha256').update(JSON.stringify(data)).digest('hex');
+    expect(hash).to.equal('8a2fe333cf8f9cbcfa05f081ef40c1120b7619e1284a8977f744d4ca0b627bc0');
+  });
+});
+
 // South Korea (docs/asia-plan.md, Phase C), from research_notes/Asia/verification-KR-TW-SG-MY-2026-10-16.md.
 describe('South Korea', () => {
   it('fires by temperature, reads density as specific gravity, and lists the US library', () => {
