@@ -39,6 +39,7 @@
     "guides": "Οδηγοί",
     "about": "Σχετικά",
     "account": "Λογαριασμός",
+    "trialAccount": "Δοκιμαστικός λογαριασμός",
     "accountTitle": "Ο λογαριασμός και οι ρυθμίσεις σας",
     "signOut": "Αποσύνδεση",
     "createAccount": "Δημιουργία δωρεάν λογαριασμού"
@@ -66,7 +67,8 @@
     "problem": "Αναφορά προβλήματος",
     "pottery": "Χειροποίητα κεραμικά: Updraft Pottery Studio",
     "copyright": "© 2017–2026 Aaron Filson / Candling Development Studio · Δωρεάν και ανοιχτού κώδικα (άδεια MIT)",
-    "languages": "Γλώσσες"
+    "languages": "Γλώσσες",
+    "language": "Γλώσσα:"
   },
   "numbers": {
     "notANumber": "Εισαγάγετε έναν αριθμό, όπως {example}.",
@@ -222,20 +224,26 @@
     "soldIn": "Διατίθεται σε",
     "showing": "Εμφάνιση {shown} από {noun, select, additives {{total, plural, one {# πρόσθετο} other {# πρόσθετα}}} other {{total, plural, one {# υλικό} other {# υλικά}}}}",
     "name": "Όνομα",
+    "equivalentWeight": "Ισοδύναμο βάρος",
+    "firedWeight": "Βάρος μετά το ψήσιμο",
     "notes": "Σημειώσεις",
     "analysis": "Ανάλυση",
+    "details": "Λεπτομέρειες",
     "formula": "Τύπος",
+    "formulaLine": "Τύπος: {formula}",
     "useInstead": "<b>Εναλλακτικά:</b> {list}",
     "similar": "Παρόμοιο: {list}",
     "replaces": "Αντικαθιστά: {list}",
     "aliases": "Άλλες ονομασίες: {list}",
     "madeBy": "Παραγωγός: {name}",
     "source": "Πηγή:",
+    "hazardsLine": "Κίνδυνοι: {hazards}",
     "noChemistry": "Χωρίς χημική ανάλυση: εκτός του μοριακού τύπου Seger",
     "countedAs": "Υπολογίζεται ως {name}",
     "nothingMatches": "Δεν βρέθηκε τίποτα. Δοκιμάστε άλλο όνομα, είδος ή περιοχή.",
     "loading": "Φόρτωση...",
-    "notFetched": "Δεν ήταν δυνατή η λήψη της λίστας. <retry>Δοκιμάστε ξανά</retry>"
+    "notFetched": "Δεν ήταν δυνατή η λήψη της λίστας. <retry>Δοκιμάστε ξανά</retry>",
+    "showAll": "{noun, select, additives {{count, plural, one {Εμφάνιση # προσθέτου} other {Εμφάνιση όλων των # προσθέτων}}} other {{count, plural, one {Εμφάνιση # υλικού} other {Εμφάνιση όλων των # υλικών}}}}"
   },
   "chemistryForm": {
     "name": "{noun, select, additive {Δώστε ένα όνομα στο πρόσθετο.} other {Δώστε ένα όνομα στο υλικό.}}",

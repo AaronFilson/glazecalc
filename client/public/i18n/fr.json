@@ -39,6 +39,7 @@
     "guides": "Guides",
     "about": "À propos",
     "account": "Compte",
+    "trialAccount": "Compte d’essai",
     "accountTitle": "Votre compte et vos paramètres",
     "signOut": "Se déconnecter",
     "createAccount": "Créer un compte gratuit"
@@ -66,7 +67,8 @@
     "problem": "Signaler un problème",
     "pottery": "Poterie faite main : Updraft Pottery Studio",
     "copyright": "© 2017–2026 Aaron Filson / Candling Development Studio · Gratuit et open source (licence MIT)",
-    "languages": "Langues"
+    "languages": "Langues",
+    "language": "Langue :"
   },
   "numbers": {
     "notANumber": "Saisissez un nombre, par exemple {example}.",
@@ -222,20 +224,26 @@
     "soldIn": "Disponible",
     "showing": "Affichage : {shown} sur {noun, select, additives {{total, plural, one {# additif} many {# d’additifs} other {# additifs}}} other {{total, plural, one {# matière} many {# de matières} other {# matières}}}}",
     "name": "Nom",
+    "equivalentWeight": "Masse équivalente",
+    "firedWeight": "Masse après cuisson",
     "notes": "Notes",
     "analysis": "Analyse",
+    "details": "Détails",
     "formula": "Formule",
+    "formulaLine": "Formule : {formula}",
     "useInstead": "<b>À utiliser à la place :</b> {list}",
     "similar": "Similaire : {list}",
     "replaces": "Remplace : {list}",
     "aliases": "Autres noms : {list}",
     "madeBy": "Fabricant : {name}",
     "source": "Source :",
+    "hazardsLine": "Dangers : {hazards}",
     "noChemistry": "Sans chimie : exclue de la formule de Seger",
     "countedAs": "Compté comme {name}",
     "nothingMatches": "Aucun résultat. Essayez un autre nom, une autre catégorie ou une autre région.",
     "loading": "Chargement…",
-    "notFetched": "Impossible de charger la liste. <retry>Réessayer</retry>"
+    "notFetched": "Impossible de charger la liste. <retry>Réessayer</retry>",
+    "showAll": "{noun, select, additives {{count, plural, one {Afficher # additif} many {Afficher tous les # d’additifs} other {Afficher tous les # additifs}}} other {{count, plural, one {Afficher # matière} many {Afficher toutes les # de matières} other {Afficher toutes les # matières}}}}"
   },
   "chemistryForm": {
     "name": "{noun, select, additive {Donnez un nom à l’additif.} other {Donnez un nom à la matière.}}",

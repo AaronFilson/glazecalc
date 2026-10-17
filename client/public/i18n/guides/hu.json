@@ -111,6 +111,7 @@
       "control": "Ellenőrzési koncentráció (管理濃度): mérce, amellyel egy munkaterület levegőjét az ott végzett mérések alapján ítélik meg, nem pedig határérték arra, amit egy személy belélegez."
     },
     "setBy": "Megállapítja: <link>{law}</link>.",
+    "from": "{date} naptól érvényes.",
     "lowerThanEu": "Alacsonyabb az EU kötelező határértékénél ({value} mg/m³).",
     "sameAsEu": "Megegyezik az EU kötelező határértékével.",
     "recommendedBy": "A(z) {abbr} ({by}) ezt az értéket ajánlja a(z) <link>{title}</link> című kiadványában. Nem jogszabály.",
@@ -147,16 +148,31 @@
       "jpSmall": "Egyéb tárgyak, 1,1 L alatt, nem főzésre",
       "jpLarge": "Egyéb tárgyak, legalább 1,1 L, de 3 L alatt, nem főzésre",
       "jpStorage": "Egyéb tárgyak, legalább 3 L, nem főzésre",
-      "jpCooking": "Főzőedények, legalább 2,5 cm mélyek"
+      "jpCooking": "Főzőedények, legalább 2,5 cm mélyek",
+      "krFlat": "Nem megtölthető tárgyak, vagy 2,5 cm-nél kisebb mélységűek",
+      "krSmall": "Egyéb megtölthető tárgyak, 1,1 L alatt",
+      "krMedium": "Egyéb megtölthető tárgyak, 1,1 L-től 3 L alatt",
+      "krStorage": "Egyéb megtölthető tárgyak, 3 L vagy több",
+      "krCooking": "Főzőedények, étel melegítésére",
+      "twFlat": "Nem megtölthető tárgyak, vagy legfeljebb 2,5 cm mélyek",
+      "twSmall": "2,5 cm-nél mélyebb tárgyak, legfeljebb 1,1 L",
+      "twLarge": "2,5 cm-nél mélyebb tárgyak, 1,1 L felett",
+      "myFlat": "Lapos edények",
+      "mySmall": "Kis mély edények",
+      "myLarge": "Nagy mély edények",
+      "myCooking": "Főzőedények"
     },
     "judged": {
       "average": "6 darab átlaga",
-      "each": "a 6 darab bármelyike"
+      "each": "a 6 darab bármelyike",
+      "averageOf": "{count} darab átlaga",
+      "eachOf": "a(z) {count} közül bármelyik"
     },
     "euRules": "Itt az EU szabályai érvényesek.",
     "law": "Megállapítja: <link>{law}</link>.",
     "inForce": "Hatálybalépés: {date}.",
     "atMost": "Egy darab akkor felel meg, ha nem oldódik ki belőle több a határértéknél: a jogszabály szövege „legfeljebb”.",
+    "ppm": "A ppm itt milligrammot jelent a vizsgálati oldat literenként (mg/L).",
     "unknown": "{region}: a szabályokat még nem erősítettük meg.",
     "choosePrompt": "Válassza ki az országát, hogy lássa az ottani szabályokat."
   },

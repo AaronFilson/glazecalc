@@ -4,6 +4,14 @@
     "signedInAs": "V-ați conectat cu {email}.",
     "trying": "Încercați Glazecalc sub numele {name}. Începeți cu o rețetă.",
     "welcomeBack": "Continuați de unde ați rămas.",
+    "welcome": {
+      "heading": "Bun venit la Glazecalc",
+      "text": "Caietul dumneavoastră este gata. Un prim pas bun: introduceți o glazură pe care o amestecați deja, cu materiile ei prime și cantitățile, și vedeți formula ei Seger.",
+      "firstRecipe": "Începeți prima rețetă",
+      "confirmHeading": "Confirmați adresa de e-mail",
+      "confirm": "Confirmați adresa de e-mail: am trimis un link la {email}. Conectarea în doi pași are nevoie de el. <account>Pagina contului</account> îl poate trimite din nou.",
+      "confirmText": "Am trimis un link la {email}. Deschideți-l pentru a confirma că adresa este a dumneavoastră: conectarea în doi pași are nevoie de el. <account>Pagina contului</account> îl poate trimite din nou."
+    },
     "sections": {
       "recipe": {
         "title": "Rețete",
@@ -32,6 +40,10 @@
       "guides": {
         "title": "Ghiduri",
         "text": "De la ce este o glazură până la arderea ei, cu toată lumea în siguranță pe parcurs."
+      },
+      "account": {
+        "title": "Cont și setări",
+        "text": "Setări, parola dumneavoastră, conectarea în doi pași și o descărcare a tot ce păstrați aici."
       }
     },
     "newHere": "Formula Seger<en>unity formula</en> vă este nouă? <advice>Pagina de sfaturi</advice> explică noțiunile de bază, iar <about>pagina despre aplicație</about> arată cum funcționează Glazecalc."
@@ -39,15 +51,29 @@
   "firing": {
     "title": "Jurnale de ardere",
     "lead": "Înregistrați fiecare ardere: ore, temperaturi, conuri și note despre cuptor.",
+    "newHeading": "O ardere nouă",
+    "titleLabel": "Titlu",
+    "kiln": "Cuptor",
+    "date": "Data",
+    "notes": "Note",
+    "fieldSelect": "Câmpuri de înregistrat",
     "addField": "Adăugați câmpul",
+    "included": "Câmpuri din această înregistrare",
     "moveLeft": "Mutați câmpul la stânga",
     "moveRight": "Mutați câmpul la dreapta",
     "removeField": "Eliminați câmpul",
     "addRow": "Adăugați un rând în tabelul arderii",
+    "addRowWhy": "Adăugați mai întâi un câmp.",
+    "tableEmpty": "Adăugați un câmp mai sus, apoi rânduri.",
+    "recordHeading": "Înregistrați arderea",
     "rowActions": "Acțiuni pentru rând",
     "cell": "{field}, rândul {row}",
     "removeRow": "Eliminați rândul",
     "save": "Salvați",
+    "storedHeading": "Arderile mele salvate",
+    "noneSaved": "Încă niciuna. Arderile salvate apar aici.",
+    "storedIn": "Arsă în {kiln} la {date}.",
+    "storedOn": "Arsă la {date}.",
     "storedNotes": "Note: {notes}",
     "titleMissing": "Dați un titlu arderii.",
     "fieldsMissing": "Adăugați cel puțin un câmp de înregistrat, de exemplu {example}.",
@@ -59,7 +85,12 @@
   "notes": {
     "title": "Notițe",
     "lead": "Orice altceva care merită reținut despre glazurile dumneavoastră.",
+    "newHeading": "O notiță nouă",
+    "titleLabel": "Titlu",
+    "content": "Notiță",
     "save": "Salvați",
+    "mineHeading": "Notițele mele salvate",
+    "noneSaved": "Încă niciuna. Notițele salvate apar aici.",
     "titleMissing": "Dați un titlu notiței.",
     "contentMissing": "Scrieți notița.",
     "untitled": "Notiță fără titlu",

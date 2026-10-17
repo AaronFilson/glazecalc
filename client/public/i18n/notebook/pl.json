@@ -4,6 +4,14 @@
     "signedInAs": "Zalogowano jako {email}.",
     "trying": "Trwa okres próbny aplikacji Glazecalc pod nazwą {name}. Warto zacząć od receptury.",
     "welcomeBack": "Można wrócić do przerwanej pracy.",
+    "welcome": {
+      "heading": "Witamy w Glazecalc",
+      "text": "Notatnik jest gotowy. Dobry pierwszy krok: wpisać szkliwo, które już się miesza, z jego surowcami i ilościami, i zobaczyć jego wzór Segera.",
+      "firstRecipe": "Zacznij pierwszą recepturę",
+      "confirmHeading": "Potwierdzenie adresu e-mail",
+      "confirm": "Potwierdź adres e-mail: wysłaliśmy link na adres {email}. Logowanie dwuetapowe tego wymaga. <account>Strona konta</account> może wysłać go ponownie.",
+      "confirmText": "Wysłaliśmy link na adres {email}. Należy go otworzyć, aby potwierdzić, że adres należy do Ciebie: logowanie dwuetapowe tego wymaga. <account>Strona konta</account> może wysłać go ponownie."
+    },
     "sections": {
       "recipe": {
         "title": "Receptury",
@@ -32,6 +40,10 @@
       "guides": {
         "title": "Poradniki",
         "text": "Od tego, czym jest szkliwo, po jego wypał – z dbałością o bezpieczeństwo wszystkich po drodze."
+      },
+      "account": {
+        "title": "Konto i ustawienia",
+        "text": "Ustawienia, hasło, logowanie dwuetapowe i pobranie wszystkiego, co jest tu przechowywane."
       }
     },
     "newHere": "Pierwsze spotkanie ze wzorem Segera? Podstawy wyjaśnia <advice>strona z poradami</advice>, a to, jak działa Glazecalc, opisuje <about>strona o aplikacji</about>."
@@ -39,15 +51,29 @@
   "firing": {
     "title": "Dzienniki wypałów",
     "lead": "Zapis każdego wypału: czasy, temperatury, stożki i uwagi o piecu.",
+    "newHeading": "Nowy wypał",
+    "titleLabel": "Tytuł",
+    "kiln": "Piec",
+    "date": "Data",
+    "notes": "Uwagi",
+    "fieldSelect": "Pola do zapisania",
     "addField": "Dodaj pole",
+    "included": "Pola w tym zapisie",
     "moveLeft": "Przesuń pole w lewo",
     "moveRight": "Przesuń pole w prawo",
     "removeField": "Usuń pole",
     "addRow": "Dodaj wiersz do tabeli wypału",
+    "addRowWhy": "Najpierw należy dodać pole.",
+    "tableEmpty": "Należy dodać pole powyżej, a potem wiersze.",
+    "recordHeading": "Zapisz wypał",
     "rowActions": "Działania na wierszu",
     "cell": "{field}, wiersz {row}",
     "removeRow": "Usuń wiersz",
     "save": "Zapisz",
+    "storedHeading": "Moje zapisane wypały",
+    "noneSaved": "Na razie brak. Zapisane wypały pojawią się tutaj.",
+    "storedIn": "Wypalono w piecu {kiln}, {date}.",
+    "storedOn": "Wypalono {date}.",
     "storedNotes": "Uwagi: {notes}",
     "titleMissing": "Należy nadać wypałowi nazwę.",
     "fieldsMissing": "Należy dodać co najmniej jedno pole do zapisu, na przykład {example}.",
@@ -59,7 +85,12 @@
   "notes": {
     "title": "Notatki",
     "lead": "Wszystko inne, co warto zapamiętać o szkliwach.",
+    "newHeading": "Nowa notatka",
+    "titleLabel": "Tytuł",
+    "content": "Notatka",
     "save": "Zapisz",
+    "mineHeading": "Moje zapisane notatki",
+    "noneSaved": "Na razie brak. Zapisane notatki pojawią się tutaj.",
     "titleMissing": "Należy nadać notatce tytuł.",
     "contentMissing": "Należy wpisać treść notatki.",
     "untitled": "Notatka bez tytułu",

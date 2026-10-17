@@ -111,6 +111,7 @@
       "control": "Kontrollkontsentratsioon (管理濃度): mõõdupuu, millega hinnatakse tööala õhku seal tehtud mõõtmiste põhjal, mitte piirnorm sellele, mida üks inimene sisse hingab."
     },
     "setBy": "Kehtestatud: <link>{law}</link>.",
+    "from": "See kehtib alates {date}.",
     "lowerThanEu": "Madalam kui EL-i siduv piirnorm {value} mg/m³.",
     "sameAsEu": "Sama mis EL-i siduv piirnorm.",
     "recommendedBy": "Seda väärtust soovitab {abbr} ({by}) dokumendis <link>{title}</link>. See ei ole seadus.",
@@ -147,16 +148,31 @@
       "jpSmall": "Muud esemed alla 1,1 L, mis ei ole mõeldud toiduvalmistamiseks",
       "jpLarge": "Muud esemed 1,1 L kuni alla 3 L, mis ei ole mõeldud toiduvalmistamiseks",
       "jpStorage": "Muud esemed 3 L või rohkem, mis ei ole mõeldud toiduvalmistamiseks",
-      "jpCooking": "Toiduvalmistamisnõud sügavusega 2,5 cm või rohkem"
+      "jpCooking": "Toiduvalmistamisnõud sügavusega 2,5 cm või rohkem",
+      "krFlat": "Esemed, mida ei saa täita, või alla 2,5 cm sügavused",
+      "krSmall": "Muud täidetavad esemed, alla 1,1 L",
+      "krMedium": "Muud täidetavad esemed, 1,1 L kuni alla 3 L",
+      "krStorage": "Muud täidetavad esemed, 3 L või rohkem",
+      "krCooking": "Toiduvalmistamisnõud, toidu kuumutamiseks",
+      "twFlat": "Esemed, mida ei saa täita, või kuni 2,5 cm sügavused",
+      "twSmall": "Esemed, mis on sügavamad kui 2,5 cm, kuni 1,1 L",
+      "twLarge": "Esemed, mis on sügavamad kui 2,5 cm, üle 1,1 L",
+      "myFlat": "Lamedad nõud",
+      "mySmall": "Väikesed sügavad nõud",
+      "myLarge": "Suured sügavad nõud",
+      "myCooking": "Toiduvalmistamisnõud"
     },
     "judged": {
       "average": "6 eseme keskmine",
-      "each": "iga 6 esemest"
+      "each": "iga 6 esemest",
+      "averageOf": "{count} eseme keskmine",
+      "eachOf": "mis tahes üks {count}-st"
     },
     "euRules": "Siin kehtivad EL-i reeglid.",
     "law": "Kehtestatud: <link>{law}</link>.",
     "inForce": "Jõustumise kuupäev: {date}.",
     "atMost": "Ese läbib katse, kui sellest ei eraldu rohkem kui piirnorm: seaduses on „kõige rohkem“.",
+    "ppm": "ppm tähendab siin milligrammi liitri katselahuse kohta (mg/L).",
     "unknown": "Reegleid ei ole veel kinnitatud (riik: {region}).",
     "choosePrompt": "Valige oma riik, et näha selle reegleid."
   },

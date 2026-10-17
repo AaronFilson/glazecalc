@@ -75,6 +75,7 @@
   "density-choices": "Roghnaigh sainmheáchan, Baumé nó meáchan pionta, nó fág faoi do réigiún é.",
   "englishTerms-choices": "Roghnaigh ar siúl nó as.",
   "notice-choices": "Roghnaigh ar taispeáint nó i bhfolach.",
+  "recipeHelp-choices": "Roghnaigh auto, shown nó hidden.",
   "shelf-invalid": "Is liosta é an stoc ina bhfuil suas le {most} ábhar.",
   "missing-information": "Tá faisnéis riachtanach in easnamh",
   "invalid-id": "Aitheantas neamhbhailí",

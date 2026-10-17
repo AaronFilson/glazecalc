@@ -4,6 +4,14 @@
     "signedInAs": "Logget ind som {email}.",
     "trying": "Du prøver Glazecalc som {name}. Begynd med en opskrift.",
     "welcomeBack": "Fortsæt, hvor du slap.",
+    "welcome": {
+      "heading": "Velkommen til Glazecalc",
+      "text": "Din notesbog er klar. Et godt første skridt: skriv en glasur ind, som du allerede blander, med dens råvarer og mængder, og se dens Seger-formel.",
+      "firstRecipe": "Begynd din første opskrift",
+      "confirmHeading": "Bekræft e-mailadressen",
+      "confirm": "Bekræft din e-mailadresse: vi har sendt et link til {email}. Login i to trin kræver det. Din <account>kontoside</account> kan sende det igen.",
+      "confirmText": "Vi har sendt et link til {email}. Åbn det for at bekræfte, at adressen er din: login i to trin kræver det. Din <account>kontoside</account> kan sende det igen."
+    },
     "sections": {
       "recipe": {
         "title": "Opskrifter",
@@ -32,6 +40,10 @@
       "guides": {
         "title": "Vejledninger",
         "text": "Fra hvad en glasur er, til hvordan den brændes, og hvordan alle holdes i sikkerhed undervejs."
+      },
+      "account": {
+        "title": "Konto og indstillinger",
+        "text": "Indstillinger, din adgangskode, login i to trin og en download af alt, hvad du gemmer her."
       }
     },
     "newHere": "Første gang med Seger-formler? <advice>Siden med glasurråd</advice> forklarer det grundlæggende, og <about>siden Om Glazecalc</about> fortæller, hvordan Glazecalc fungerer."
@@ -39,15 +51,29 @@
   "firing": {
     "title": "Brændingsjournaler",
     "lead": "Registrér hver brænding: tider, temperaturer, kegler og noter om ovnen.",
+    "newHeading": "En ny brænding",
+    "titleLabel": "Titel",
+    "kiln": "Ovn",
+    "date": "Dato",
+    "notes": "Noter",
+    "fieldSelect": "Felter, der skal registreres",
     "addField": "Tilføj feltet",
+    "included": "Felter i denne registrering",
     "moveLeft": "Flyt feltet til venstre",
     "moveRight": "Flyt feltet til højre",
     "removeField": "Fjern feltet",
     "addRow": "Tilføj en række til brændingstabellen",
+    "addRowWhy": "Tilføj først et felt.",
+    "tableEmpty": "Tilføj et felt ovenfor, og tilføj derefter rækker.",
+    "recordHeading": "Registrér brændingen",
     "rowActions": "Handlinger for rækken",
     "cell": "{field}, række {row}",
     "removeRow": "Fjern rækken",
     "save": "Gem",
+    "storedHeading": "Mine gemte brændinger",
+    "noneSaved": "Ingen endnu. Gemte brændinger vises her.",
+    "storedIn": "Brændt i {kiln} den {date}.",
+    "storedOn": "Brændt den {date}.",
     "storedNotes": "Noter: {notes}",
     "titleMissing": "Giv brændingen en titel.",
     "fieldsMissing": "Tilføj mindst ét felt at registrere, fx {example}.",
@@ -59,7 +85,12 @@
   "notes": {
     "title": "Noter",
     "lead": "Alt andet, der er værd at huske om glasurerne.",
+    "newHeading": "En ny note",
+    "titleLabel": "Titel",
+    "content": "Note",
     "save": "Gem",
+    "mineHeading": "Mine gemte noter",
+    "noneSaved": "Ingen endnu. Gemte noter vises her.",
     "titleMissing": "Giv noten en titel.",
     "contentMissing": "Skriv noten.",
     "untitled": "Note uden titel",

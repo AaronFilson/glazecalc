@@ -75,6 +75,7 @@
   "density-choices": "Vælg massefylde, Baumé eller pintvægt, eller lad regionen bestemme.",
   "englishTerms-choices": "Vælg til eller fra.",
   "notice-choices": "Vælg vist eller skjult.",
+  "recipeHelp-choices": "Vælg auto, shown eller hidden.",
   "shelf-invalid": "Lageret er en liste med op til {most} råvarer.",
   "missing-information": "Der mangler påkrævede oplysninger",
   "invalid-id": "Ugyldigt id",

@@ -39,6 +39,7 @@
     "guides": "Guider",
     "about": "Om",
     "account": "Konto",
+    "trialAccount": "Provkonto",
     "accountTitle": "Konto och inställningar",
     "signOut": "Logga ut",
     "createAccount": "Skapa ett gratis konto"
@@ -66,7 +67,8 @@
     "problem": "Rapportera ett problem",
     "pottery": "Handgjord keramik: Updraft Pottery Studio",
     "copyright": "© 2017–2026 Aaron Filson / Candling Development Studio · Gratis och med öppen källkod (MIT-licens)",
-    "languages": "Språk"
+    "languages": "Språk",
+    "language": "Språk:"
   },
   "numbers": {
     "notANumber": "Ange ett tal, till exempel {example}.",
@@ -222,20 +224,26 @@
     "soldIn": "Säljs i",
     "showing": "Visar {shown} av {noun, select, additives {{total, plural, one {# tillsats} other {# tillsatser}}} other {{total, plural, one {# råvara} other {# råvaror}}}}",
     "name": "Namn",
+    "equivalentWeight": "Ekvivalentvikt",
+    "firedWeight": "Vikt efter bränning",
     "notes": "Anteckningar",
     "analysis": "Analys",
+    "details": "Detaljer",
     "formula": "Formel",
+    "formulaLine": "Formel: {formula}",
     "useInstead": "<b>Använd i stället:</b> {list}",
     "similar": "Liknande: {list}",
     "replaces": "Ersätter: {list}",
     "aliases": "Kallas även: {list}",
     "madeBy": "Tillverkare: {name}",
     "source": "Källa:",
+    "hazardsLine": "Faror: {hazards}",
     "noChemistry": "Ingen analys: ingår inte i Segerformeln",
     "countedAs": "Räknas som {name}",
     "nothingMatches": "Inga träffar. Prova ett annat namn, en annan typ eller en annan region.",
     "loading": "Läser in…",
-    "notFetched": "Det gick inte att hämta listan. <retry>Försök igen</retry>"
+    "notFetched": "Det gick inte att hämta listan. <retry>Försök igen</retry>",
+    "showAll": "{noun, select, additives {{count, plural, one {Visa # tillsats} other {Visa alla # tillsatser}}} other {{count, plural, one {Visa # råvara} other {Visa alla # råvaror}}}}"
   },
   "chemistryForm": {
     "name": "{noun, select, additive {Ge tillsatsen ett namn.} other {Ge råvaran ett namn.}}",

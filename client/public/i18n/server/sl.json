@@ -75,6 +75,7 @@
   "density-choices": "Izberite relativno gostoto, stopinje Baumé ali maso pinte ali pa to prepustite regiji.",
   "englishTerms-choices": "Izberite vklopljeno ali izklopljeno.",
   "notice-choices": "Izberite prikazano ali skrito.",
+  "recipeHelp-choices": "Izberite auto, shown ali hidden.",
   "shelf-invalid": "Zaloga je seznam z največ {most} surovinami.",
   "missing-information": "Manjkajo zahtevani podatki",
   "invalid-id": "Neveljaven ID",

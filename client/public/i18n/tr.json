@@ -39,6 +39,7 @@
     "guides": "Rehberler",
     "about": "Hakkında",
     "account": "Hesap",
+    "trialAccount": "Deneme hesabı",
     "accountTitle": "Hesabınız ve ayarlarınız",
     "signOut": "Oturumu kapat",
     "createAccount": "Ücretsiz hesap oluştur"
@@ -66,7 +67,8 @@
     "problem": "Sorun bildir",
     "pottery": "El yapımı seramikler: Updraft Pottery Studio",
     "copyright": "© 2017–2026 Aaron Filson / Candling Development Studio · Ücretsiz ve açık kaynak (MIT Lisansı)",
-    "languages": "Diller"
+    "languages": "Diller",
+    "language": "Dil:"
   },
   "numbers": {
     "notANumber": "{example} gibi bir sayı girin.",
@@ -222,20 +224,26 @@
     "soldIn": "Satıldığı yer",
     "showing": "{noun, select, additives {{total, plural, one {# katkıdan} other {# katkıdan}}} other {{total, plural, one {# hammaddeden} other {# hammaddeden}}}} {shown} tanesi gösteriliyor",
     "name": "Ad",
+    "equivalentWeight": "Eşdeğer ağırlık",
+    "firedWeight": "Pişmiş ağırlık",
     "notes": "Notlar",
     "analysis": "Analiz",
+    "details": "Ayrıntılar",
     "formula": "Formül",
+    "formulaLine": "Formül: {formula}",
     "useInstead": "<b>Bunun yerine kullanın:</b> {list}",
     "similar": "Benzer: {list}",
     "replaces": "Yerine geçtiği: {list}",
     "aliases": "Diğer adları: {list}",
     "madeBy": "Üretici: {name}",
     "source": "Kaynak:",
+    "hazardsLine": "Tehlikeler: {hazards}",
     "noChemistry": "Kimyası yok: Seger formülünün dışında bırakıldı",
     "countedAs": "{name} olarak sayıldı",
     "nothingMatches": "Eşleşen bir şey yok. Başka bir ad, tür veya bölge deneyin.",
     "loading": "Yükleniyor...",
-    "notFetched": "Liste alınamadı. <retry>Yeniden dene</retry>"
+    "notFetched": "Liste alınamadı. <retry>Yeniden dene</retry>",
+    "showAll": "{noun, select, additives {{count, plural, one {# katkıyı göster} other {Tüm # katkıyı göster}}} other {{count, plural, one {# hammaddeyi göster} other {Tüm # hammaddeyi göster}}}}"
   },
   "chemistryForm": {
     "name": "{noun, select, additive {Katkıya bir ad verin.} other {Hammaddeye bir ad verin.}}",

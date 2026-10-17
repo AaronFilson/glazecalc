@@ -4,6 +4,14 @@
     "signedInAs": "Prisijungta kaip {email}.",
     "trying": "Išbandote programą Glazecalc kaip {name}. Pradėkite nuo recepto.",
     "welcomeBack": "Tęskite nuo ten, kur baigėte.",
+    "welcome": {
+      "heading": "Sveiki atvykę į Glazecalc",
+      "text": "Jūsų sąsiuvinis paruoštas. Geras pirmas žingsnis: įveskite glazūrą, kurią jau maišote, su jos žaliavomis ir kiekiais, ir pamatykite jos Segerio formulę.",
+      "firstRecipe": "Pradėti pirmąjį receptą",
+      "confirmHeading": "Patvirtinkite savo el. paštą",
+      "confirm": "Patvirtinkite savo el. paštą: išsiuntėme nuorodą adresu {email}. Dviejų žingsnių prisijungimui jos reikia. <account>Paskyros puslapyje</account> galite išsiųsti ją dar kartą.",
+      "confirmText": "Išsiuntėme nuorodą adresu {email}. Atidarykite ją, kad patvirtintumėte, jog adresas jūsų: dviejų žingsnių prisijungimui jos reikia. <account>Paskyros puslapyje</account> galite išsiųsti ją dar kartą."
+    },
     "sections": {
       "recipe": {
         "title": "Receptai",
@@ -32,6 +40,10 @@
       "guides": {
         "title": "Vadovai",
         "text": "Nuo to, kas yra glazūra, iki jos degimo, ir kaip visą tą laiką užtikrinti visų saugumą."
+      },
+      "account": {
+        "title": "Paskyra ir nustatymai",
+        "text": "Nustatymai, jūsų slaptažodis, dviejų žingsnių prisijungimas ir visko, ką čia laikote, atsisiuntimas."
       }
     },
     "newHere": "Segerio formulė jums nauja? <advice>Patarimų puslapyje</advice> paaiškinti pagrindai, o <about>puslapyje apie programą</about> – kaip veikia Glazecalc."
@@ -39,15 +51,29 @@
   "firing": {
     "title": "Degimo žurnalai",
     "lead": "Įrašykite kiekvieną degimą: laikus, temperatūras, piroskopus ir pastabas apie krosnį.",
+    "newHeading": "Naujas degimas",
+    "titleLabel": "Pavadinimas",
+    "kiln": "Krosnis",
+    "date": "Data",
+    "notes": "Pastabos",
+    "fieldSelect": "Įrašytini laukai",
     "addField": "Pridėti lauką",
+    "included": "Šio įrašo laukai",
     "moveLeft": "Perkelti lauką į kairę",
     "moveRight": "Perkelti lauką į dešinę",
     "removeField": "Pašalinti lauką",
     "addRow": "Pridėti eilutę į degimo lentelę",
+    "addRowWhy": "Pirmiausia pridėkite lauką.",
+    "tableEmpty": "Pridėkite lauką aukščiau, tada eilutes.",
+    "recordHeading": "Įrašyti degimą",
     "rowActions": "Eilutės veiksmai",
     "cell": "{field}, eilutė {row}",
     "removeRow": "Pašalinti eilutę",
     "save": "Įrašyti",
+    "storedHeading": "Mano įrašyti degimai",
+    "noneSaved": "Kol kas nėra. Įrašyti degimai rodomi čia.",
+    "storedIn": "Degta krosnyje {kiln} {date}.",
+    "storedOn": "Degta {date}.",
     "storedNotes": "Pastabos: {notes}",
     "titleMissing": "Įveskite degimo pavadinimą.",
     "fieldsMissing": "Pridėkite bent vieną įrašomą lauką, pvz., {example}.",
@@ -59,7 +85,12 @@
   "notes": {
     "title": "Užrašai",
     "lead": "Visa kita, ką verta prisiminti apie jūsų glazūras.",
+    "newHeading": "Naujas užrašas",
+    "titleLabel": "Pavadinimas",
+    "content": "Užrašas",
     "save": "Įrašyti",
+    "mineHeading": "Mano įrašyti užrašai",
+    "noneSaved": "Kol kas nėra. Įrašyti užrašai rodomi čia.",
     "titleMissing": "Įveskite užrašo pavadinimą.",
     "contentMissing": "Parašykite užrašą.",
     "untitled": "Užrašas be pavadinimo",

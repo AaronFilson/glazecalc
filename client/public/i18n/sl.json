@@ -39,6 +39,7 @@
     "guides": "Vodniki",
     "about": "O aplikaciji",
     "account": "Račun",
+    "trialAccount": "Preskusni račun",
     "accountTitle": "Vaš račun in nastavitve",
     "signOut": "Odjava",
     "createAccount": "Ustvari brezplačen račun"
@@ -66,7 +67,8 @@
     "problem": "Prijavi težavo",
     "pottery": "Ročno izdelana keramika: Updraft Pottery Studio",
     "copyright": "© 2017–2026 Aaron Filson / Candling Development Studio · Brezplačno in odprtokodno (licenca MIT)",
-    "languages": "Jeziki"
+    "languages": "Jeziki",
+    "language": "Jezik:"
   },
   "numbers": {
     "notANumber": "Vnesite število, na primer {example}.",
@@ -222,20 +224,26 @@
     "soldIn": "Kje se prodaja",
     "showing": "Prikazano: {shown} od {noun, select, additives {{total, plural, one {# dodatka} two {# dodatkov} few {# dodatkov} other {# dodatkov}}} other {{total, plural, one {# surovine} two {# surovin} few {# surovin} other {# surovin}}}}",
     "name": "Ime",
+    "equivalentWeight": "Ekvivalentna masa",
+    "firedWeight": "Masa po žganju",
     "notes": "Opombe",
     "analysis": "Analiza",
+    "details": "Podrobnosti",
     "formula": "Formula",
+    "formulaLine": "Formula: {formula}",
     "useInstead": "<b>Uporabi namesto:</b> {list}",
     "similar": "Podobno: {list}",
     "replaces": "Nadomešča: {list}",
     "aliases": "Imenuje se tudi: {list}",
     "madeBy": "Proizvajalec: {name}",
     "source": "Vir:",
+    "hazardsLine": "Nevarnosti: {hazards}",
     "noChemistry": "Ni analize: ni upoštevano v Segerjevi formuli",
     "countedAs": "Upoštevano kot {name}",
     "nothingMatches": "Ni zadetkov. Poskusite z drugim imenom, vrsto ali regijo.",
     "loading": "Nalaganje …",
-    "notFetched": "Seznama ni bilo mogoče naložiti. <retry>Poskusi znova</retry>"
+    "notFetched": "Seznama ni bilo mogoče naložiti. <retry>Poskusi znova</retry>",
+    "showAll": "{noun, select, additives {{count, plural, one {Pokaži # dodatek} two {Pokaži # dodatka} few {Pokaži vse # dodatke} other {Pokaži vseh # dodatkov}}} other {{count, plural, one {Pokaži # surovino} two {Pokaži # surovini} few {Pokaži vse # surovine} other {Pokaži vseh # surovin}}}}"
   },
   "chemistryForm": {
     "name": "{noun, select, additive {Vnesite ime dodatka.} other {Vnesite ime surovine.}}",

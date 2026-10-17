@@ -4,6 +4,14 @@
     "signedInAs": "Sisse logitud kasutajana {email}.",
     "trying": "Proovite Glazecalci nimega {name}. Alustage retseptist.",
     "welcomeBack": "Jätkake sealt, kus pooleli jäi.",
+    "welcome": {
+      "heading": "Tere tulemast Glazecalci",
+      "text": "Teie märkmik on valmis. Hea esimene samm: sisestage glasuur, mida juba segate, koos selle toorainete ja kogustega, ja vaadake selle Segeri valemit.",
+      "firstRecipe": "Alustage oma esimest retsepti",
+      "confirmHeading": "Kinnitage oma e-posti aadress",
+      "confirm": "Kinnitage oma e-posti aadress: saatsime lingi aadressile {email}. Kaheastmeline sisselogimine vajab seda. Teie <account>kontoleht</account> saab selle uuesti saata.",
+      "confirmText": "Saatsime lingi aadressile {email}. Avage see, et kinnitada, et aadress on teie oma: kaheastmeline sisselogimine vajab seda. Teie <account>kontoleht</account> saab selle uuesti saata."
+    },
     "sections": {
       "recipe": {
         "title": "Retseptid",
@@ -32,6 +40,10 @@
       "guides": {
         "title": "Juhendid",
         "text": "Alates sellest, mis on glasuur, kuni selle põletamiseni, ning kuidas seejuures kõigi ohutus tagada."
+      },
+      "account": {
+        "title": "Konto ja seaded",
+        "text": "Seaded, teie parool, kaheastmeline sisselogimine ja kõige, mida siin hoiate, allalaadimine."
       }
     },
     "newHere": "Kas Segeri valem on teile uus? <advice>Nõuannete leht</advice> selgitab põhitõdesid ja <about>teabeleht</about> räägib, kuidas Glazecalc töötab."
@@ -39,15 +51,29 @@
   "firing": {
     "title": "Põletuspäevikud",
     "lead": "Pange kirja iga põletus: ajad, temperatuurid, koonused ja märkused ahju kohta.",
+    "newHeading": "Uus põletus",
+    "titleLabel": "Pealkiri",
+    "kiln": "Ahi",
+    "date": "Kuupäev",
+    "notes": "Märkused",
+    "fieldSelect": "Salvestatavad väljad",
     "addField": "Lisa väli",
+    "included": "Selle kirje väljad",
     "moveLeft": "Nihuta väli vasakule",
     "moveRight": "Nihuta väli paremale",
     "removeField": "Eemalda väli",
     "addRow": "Lisa põletustabelisse rida",
+    "addRowWhy": "Lisage kõigepealt väli.",
+    "tableEmpty": "Lisage ülal väli ja seejärel read.",
+    "recordHeading": "Salvestage põletus",
     "rowActions": "Rea toimingud",
     "cell": "{field}, rida {row}",
     "removeRow": "Eemalda rida",
     "save": "Salvesta",
+    "storedHeading": "Minu salvestatud põletused",
+    "noneSaved": "Veel pole ühtegi. Salvestatud põletused ilmuvad siia.",
+    "storedIn": "Põletatud ahjus {kiln} kuupäeval {date}.",
+    "storedOn": "Põletatud kuupäeval {date}.",
     "storedNotes": "Märkused: {notes}",
     "titleMissing": "Andke põletusele nimetus.",
     "fieldsMissing": "Lisage vähemalt üks salvestatav väli, näiteks {example}.",
@@ -59,7 +85,12 @@
   "notes": {
     "title": "Märkmed",
     "lead": "Kõik muu, mida tasub oma glasuuride kohta meeles pidada.",
+    "newHeading": "Uus märge",
+    "titleLabel": "Pealkiri",
+    "content": "Märge",
     "save": "Salvesta",
+    "mineHeading": "Minu salvestatud märkmed",
+    "noneSaved": "Veel pole ühtegi. Salvestatud märkmed ilmuvad siia.",
     "titleMissing": "Andke märkmele pealkiri.",
     "contentMissing": "Kirjutage märge.",
     "untitled": "Pealkirjata märge",

@@ -75,6 +75,7 @@
   "density-choices": "Należy wybrać gęstość względną, stopnie Baumé lub masę pinty albo pozostawić wybór zgodny z regionem.",
   "englishTerms-choices": "Należy wybrać włączone (on) lub wyłączone (off).",
   "notice-choices": "Należy wybrać pokazywane (shown) lub ukryte (hidden).",
+  "recipeHelp-choices": "Należy wybrać auto, shown lub hidden.",
   "shelf-invalid": "Lista posiadanych surowców może mieć najwyżej {most} pozycji.",
   "missing-information": "Brak wymaganych informacji",
   "invalid-id": "Nieprawidłowy identyfikator",

@@ -75,6 +75,7 @@
   "density-choices": "比重、ボーメ度、パイント重量のいずれかを選ぶか、地域に任せてください。",
   "englishTerms-choices": "オンかオフを選んでください。",
   "notice-choices": "表示か非表示を選んでください。",
+  "recipeHelp-choices": "auto、shown、hidden から選んでください。",
   "shelf-invalid": "手持ちの原料は、{most}種類までの原料のリストです。",
   "missing-information": "必要な情報が不足しています。",
   "invalid-id": "無効な ID です。",

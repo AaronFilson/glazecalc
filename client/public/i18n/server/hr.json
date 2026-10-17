@@ -75,6 +75,7 @@
   "density-choices": "Odaberite relativnu gustoću, stupnjeve Baumé ili masu pinte ili to prepustite svojoj regiji.",
   "englishTerms-choices": "Odaberite uključeno ili isključeno.",
   "notice-choices": "Odaberite prikazano ili skriveno.",
+  "recipeHelp-choices": "Odaberite auto, shown ili hidden.",
   "shelf-invalid": "Zaliha je popis sirovina (najviše {most}).",
   "missing-information": "Nedostaju obavezni podaci.",
   "invalid-id": "Nevaljan ID.",

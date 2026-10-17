@@ -39,6 +39,7 @@
     "guides": "Vejledninger",
     "about": "Om Glazecalc",
     "account": "Konto",
+    "trialAccount": "Prøvekonto",
     "accountTitle": "Konto og indstillinger",
     "signOut": "Log ud",
     "createAccount": "Opret en gratis konto"
@@ -66,7 +67,8 @@
     "problem": "Rapportér et problem",
     "pottery": "Håndlavet keramik: Updraft Pottery Studio",
     "copyright": "© 2017–2026 Aaron Filson / Candling Development Studio · Gratis og open source (MIT-licens)",
-    "languages": "Sprog"
+    "languages": "Sprog",
+    "language": "Sprog:"
   },
   "numbers": {
     "notANumber": "Angiv et tal, fx {example}.",
@@ -222,20 +224,26 @@
     "soldIn": "Sælges i",
     "showing": "Viser {shown} af {noun, select, additives {{total, plural, one {# tilsætning} other {# tilsætninger}}} other {{total, plural, one {# råvare} other {# råvarer}}}}",
     "name": "Navn",
+    "equivalentWeight": "Ækvivalentvægt",
+    "firedWeight": "Brændt vægt",
     "notes": "Noter",
     "analysis": "Analyse",
+    "details": "Detaljer",
     "formula": "Formel",
+    "formulaLine": "Formel: {formula}",
     "useInstead": "<b>Brug i stedet:</b> {list}",
     "similar": "Lignende: {list}",
     "replaces": "Erstatter: {list}",
     "aliases": "Også kaldet: {list}",
     "madeBy": "Producent: {name}",
     "source": "Kilde:",
+    "hazardsLine": "Farer: {hazards}",
     "noChemistry": "Ingen analyse: ikke med i Seger-formlen",
     "countedAs": "Regnet som {name}",
     "nothingMatches": "Ingen resultater. Prøv et andet navn, en anden type eller en anden region.",
     "loading": "Indlæser…",
-    "notFetched": "Listen kunne ikke hentes. <retry>Prøv igen</retry>"
+    "notFetched": "Listen kunne ikke hentes. <retry>Prøv igen</retry>",
+    "showAll": "{noun, select, additives {{count, plural, one {Vis # tilsætning} other {Vis alle # tilsætninger}}} other {{count, plural, one {Vis # råvare} other {Vis alle # råvarer}}}}"
   },
   "chemistryForm": {
     "name": "{noun, select, additive {Giv tilsætningen et navn.} other {Giv råvaren et navn.}}",

@@ -4,6 +4,14 @@
     "signedInAs": "Inloggad som {email}.",
     "trying": "Provperiod som {name}. Börja med ett recept.",
     "welcomeBack": "Fortsätt där du slutade senast.",
+    "welcome": {
+      "heading": "Välkommen till Glazecalc",
+      "text": "Din anteckningsbok är klar. Ett bra första steg: skriv in en glasyr som du redan blandar, med dess råvaror och mängder, och se dess Segerformel.",
+      "firstRecipe": "Börja ditt första recept",
+      "confirmHeading": "Bekräfta e-postadressen",
+      "confirm": "Bekräfta e-postadressen: vi har skickat en länk till {email}. Inloggning i två steg kräver det. Din <account>kontosida</account> kan skicka den igen.",
+      "confirmText": "Vi har skickat en länk till {email}. Öppna den för att bekräfta att adressen är din: inloggning i två steg kräver det. Din <account>kontosida</account> kan skicka den igen."
+    },
     "sections": {
       "recipe": {
         "title": "Recept",
@@ -32,6 +40,10 @@
       "guides": {
         "title": "Guider",
         "text": "Från vad en glasyr är till hur den bränns, och hur alla skyddas på vägen."
+      },
+      "account": {
+        "title": "Konto och inställningar",
+        "text": "Inställningar, ditt lösenord, inloggning i två steg och en nedladdning av allt du sparar här."
       }
     },
     "newHere": "Aldrig arbetat med Segerformeln förut? <advice>Rådsidan</advice> förklarar grunderna och <about>Om-sidan</about> beskriver hur Glazecalc fungerar."
@@ -39,15 +51,29 @@
   "firing": {
     "title": "Brännloggar",
     "lead": "Registrera varje bränning: tider, temperaturer, käglor och anteckningar om ugnen.",
+    "newHeading": "En ny bränning",
+    "titleLabel": "Titel",
+    "kiln": "Ugn",
+    "date": "Datum",
+    "notes": "Anteckningar",
+    "fieldSelect": "Fält att registrera",
     "addField": "Lägg till fältet",
+    "included": "Fält i den här registreringen",
     "moveLeft": "Flytta fältet åt vänster",
     "moveRight": "Flytta fältet åt höger",
     "removeField": "Ta bort fältet",
     "addRow": "Lägg till en rad i bränningstabellen",
+    "addRowWhy": "Lägg till ett fält först.",
+    "tableEmpty": "Lägg till ett fält ovan och sedan rader.",
+    "recordHeading": "Registrera bränningen",
     "rowActions": "Åtgärder för raden",
     "cell": "{field}, rad {row}",
     "removeRow": "Ta bort raden",
     "save": "Spara",
+    "storedHeading": "Mina sparade bränningar",
+    "noneSaved": "Inga än. Sparade bränningar visas här.",
+    "storedIn": "Bränd i {kiln} den {date}.",
+    "storedOn": "Bränd den {date}.",
     "storedNotes": "Anteckningar: {notes}",
     "titleMissing": "Ge bränningen en titel.",
     "fieldsMissing": "Lägg till minst ett fält att registrera, till exempel {example}.",
@@ -59,7 +85,12 @@
   "notes": {
     "title": "Anteckningar",
     "lead": "Allt annat som är värt att komma ihåg om glasyrerna.",
+    "newHeading": "En ny anteckning",
+    "titleLabel": "Titel",
+    "content": "Anteckning",
     "save": "Spara",
+    "mineHeading": "Mina sparade anteckningar",
+    "noneSaved": "Inga än. Sparade anteckningar visas här.",
     "titleMissing": "Ge anteckningen en titel.",
     "contentMissing": "Skriv anteckningen.",
     "untitled": "Anteckning utan titel",

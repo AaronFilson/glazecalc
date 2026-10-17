@@ -111,6 +111,7 @@
       "control": "Eine Kontrollkonzentration (管理濃度): der Maßstab, nach dem die Luft eines Arbeitsbereichs anhand von Messungen dort beurteilt wird, kein Grenzwert für das, was eine einzelne Person einatmet."
     },
     "setBy": "Festgelegt in: <link>{law}</link>.",
+    "from": "Sie gilt ab {date}.",
     "lowerThanEu": "Niedriger als der verbindliche Grenzwert der EU von {value} mg/m³.",
     "sameAsEu": "Derselbe Wert wie der verbindliche Grenzwert der EU.",
     "recommendedBy": "{abbr} ({by}) empfiehlt diesen Wert in der Veröffentlichung <link>{title}</link>. Er ist nicht gesetzlich verbindlich.",
@@ -147,16 +148,31 @@
       "jpSmall": "Andere Gegenstände unter 1,1 L, nicht zum Kochen",
       "jpLarge": "Andere Gegenstände von 1,1 L bis unter 3 L, nicht zum Kochen",
       "jpStorage": "Andere Gegenstände mit 3 L oder mehr, nicht zum Kochen",
-      "jpCooking": "Kochgeschirr mit 2,5 cm Fülltiefe oder mehr"
+      "jpCooking": "Kochgeschirr mit 2,5 cm Fülltiefe oder mehr",
+      "krFlat": "Gegenstände, die sich nicht füllen lassen, oder weniger als 2,5 cm tief",
+      "krSmall": "Andere füllbare Gegenstände, unter 1,1 L",
+      "krMedium": "Andere füllbare Gegenstände, von 1,1 L bis unter 3 L",
+      "krStorage": "Andere füllbare Gegenstände, ab 3 L",
+      "krCooking": "Kochgeschirr zum Erhitzen von Speisen",
+      "twFlat": "Gegenstände, die sich nicht füllen lassen, oder höchstens 2,5 cm tief",
+      "twSmall": "Gegenstände mit mehr als 2,5 cm Tiefe, bis 1,1 L",
+      "twLarge": "Gegenstände mit mehr als 2,5 cm Tiefe, über 1,1 L",
+      "myFlat": "Flachgeschirr",
+      "mySmall": "Kleine Hohlgefäße",
+      "myLarge": "Große Hohlgefäße",
+      "myCooking": "Kochgeschirr"
     },
     "judged": {
       "average": "Mittelwert aus 6 Stücken",
-      "each": "jedes von 6 einzeln"
+      "each": "jedes von 6 einzeln",
+      "averageOf": "Mittelwert aus {count} Stücken",
+      "eachOf": "jedes einzelne von {count}"
     },
     "euRules": "Hier gelten die Vorschriften der EU.",
     "law": "Festgelegt in: <link>{law}</link>.",
     "inForce": "In Kraft ab dem {date}.",
     "atMost": "Ein Gegenstand besteht die Prüfung, wenn er nicht mehr als den Grenzwert abgibt: Das Gesetz sagt „höchstens“.",
+    "ppm": "ppm bedeutet hier Milligramm pro Liter der Prüflösung (mg/L).",
     "unknown": "{region}: Die dortigen Vorschriften haben wir noch nicht bestätigt.",
     "choosePrompt": "Wählen Sie Ihr Land, um die dortigen Vorschriften zu sehen."
   },

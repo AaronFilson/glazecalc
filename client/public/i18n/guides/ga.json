@@ -111,6 +111,7 @@
       "control": "Tiúchan rialaithe (管理濃度): an tslat tomhais chun aer limistéir oibre a mheas ó thomhais a dhéantar ann, ní teorainn leis an méid a análaíonn duine amháin."
     },
     "setBy": "Leagtha síos sa dlí seo: <link>{law}</link>.",
+    "from": "Baineann sé le {date} ar aghaidh.",
     "lowerThanEu": "Níos ísle ná teorainnluach ceangailteach an Aontais Eorpaigh, {value} mg/m³.",
     "sameAsEu": "Is ionann é agus teorainnluach ceangailteach an Aontais Eorpaigh.",
     "recommendedBy": "Molann {abbr} ({by}) an luach seo sa doiciméad <link>{title}</link>. Ní dlí é.",
@@ -147,16 +148,31 @@
       "jpSmall": "Píosaí eile faoi 1.1 L, nach le haghaidh cócaireachta",
       "jpLarge": "Píosaí eile ó 1.1 L go dtí faoi 3 L, nach le haghaidh cócaireachta",
       "jpStorage": "Píosaí eile de 3 L nó níos mó, nach le haghaidh cócaireachta",
-      "jpCooking": "Gréithe cócaireachta, 2.5 cm ar doimhneacht nó níos mó"
+      "jpCooking": "Gréithe cócaireachta, 2.5 cm ar doimhneacht nó níos mó",
+      "krFlat": "Píosaí nach féidir a líonadh, nó níos lú ná 2.5 cm ar doimhne",
+      "krSmall": "Píosaí eile is féidir a líonadh, faoi 1.1 L",
+      "krMedium": "Píosaí eile is féidir a líonadh, ó 1.1 L go dtí faoi 3 L",
+      "krStorage": "Píosaí eile is féidir a líonadh, 3 L nó níos mó",
+      "krCooking": "Gréithe cócaireachta, chun bia a théamh",
+      "twFlat": "Píosaí nach féidir a líonadh, nó nach bhfuil níos doimhne ná 2.5 cm",
+      "twSmall": "Píosaí níos doimhne ná 2.5 cm, suas go 1.1 L",
+      "twLarge": "Píosaí níos doimhne ná 2.5 cm, os cionn 1.1 L",
+      "myFlat": "Soithí cothroma",
+      "mySmall": "Soithí doimhne beaga",
+      "myLarge": "Soithí doimhne móra",
+      "myCooking": "Gréithe cócaireachta"
     },
     "judged": {
       "average": "meán 6 phíosa",
-      "each": "aon cheann de 6"
+      "each": "aon cheann de 6",
+      "averageOf": "meán {count} phíosa",
+      "eachOf": "aon cheann amháin de na {count}"
     },
     "euRules": "Tá feidhm ag rialacha an Aontais Eorpaigh anseo.",
     "law": "Leagtha síos sa dlí seo: <link>{law}</link>.",
     "inForce": "I bhfeidhm ó {date}.",
     "atMost": "Éiríonn le píosa sa tástáil mura scaoileann sé níos mó ná an teorainn: deir an dlí “ar a mhéad”.",
+    "ppm": "Ciallaíonn ppm anseo milleagraim in aghaidh an lítir den tuaslagán tástála (mg/L).",
     "unknown": "Níor dheimhníomar na rialacha fós sa tír seo: {region}.",
     "choosePrompt": "Roghnaigh do thír chun a rialacha a fheiceáil."
   },

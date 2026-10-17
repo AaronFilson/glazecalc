@@ -75,6 +75,7 @@
   "density-choices": "Vyberte měrnou hmotnost, stupně Baumé nebo hmotnost pinty, nebo volbu ponechte na vašem regionu.",
   "englishTerms-choices": "Vyberte zapnuto, nebo vypnuto.",
   "notice-choices": "Vyberte zobrazeno, nebo skryto.",
+  "recipeHelp-choices": "Zvolte auto, shown nebo hidden.",
   "shelf-invalid": "Zásoba je seznam surovin, nejvýše: {most}.",
   "missing-information": "Chybí povinné údaje",
   "invalid-id": "Neplatné ID",

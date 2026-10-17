@@ -111,6 +111,7 @@
       "control": "Nadzorna koncentracija (管理濃度): merilo za presojo zraka v delovnem območju na podlagi meritev na tem mestu, ne mejna vrednost za to, kar vdihuje posameznik."
     },
     "setBy": "Določa jo <link>{law}</link>.",
+    "from": "Velja od {date}.",
     "lowerThanEu": "Nižja od zavezujoče mejne vrednosti EU, ki znaša {value} mg/m³.",
     "sameAsEu": "Enaka zavezujoči mejni vrednosti EU.",
     "recommendedBy": "To vrednost priporoča {abbr} ({by}) v dokumentu <link>{title}</link>. Ni zakonsko predpisana.",
@@ -147,16 +148,31 @@
       "jpSmall": "Drugi izdelki pod 1,1 L, ne za kuhanje",
       "jpLarge": "Drugi izdelki od 1,1 L do manj kot 3 L, ne za kuhanje",
       "jpStorage": "Drugi izdelki s 3 L ali več, ne za kuhanje",
-      "jpCooking": "Posoda za kuhanje, globoka 2,5 cm ali več"
+      "jpCooking": "Posoda za kuhanje, globoka 2,5 cm ali več",
+      "krFlat": "Izdelki, ki jih ni mogoče napolniti, ali globoki manj kot 2,5 cm",
+      "krSmall": "Drugi izdelki, ki jih je mogoče napolniti, pod 1,1 L",
+      "krMedium": "Drugi izdelki, ki jih je mogoče napolniti, od 1,1 L do manj kot 3 L",
+      "krStorage": "Drugi izdelki, ki jih je mogoče napolniti, 3 L ali več",
+      "krCooking": "Posoda za kuhanje, za segrevanje hrane",
+      "twFlat": "Izdelki, ki jih ni mogoče napolniti, ali globoki največ 2,5 cm",
+      "twSmall": "Izdelki, globlji od 2,5 cm, do 1,1 L",
+      "twLarge": "Izdelki, globlji od 2,5 cm, nad 1,1 L",
+      "myFlat": "Ploščata posoda",
+      "mySmall": "Majhne votle posode",
+      "myLarge": "Velike votle posode",
+      "myCooking": "Posoda za kuhanje"
     },
     "judged": {
       "average": "povprečje 6 kosov",
-      "each": "vsak od 6 kosov"
+      "each": "vsak od 6 kosov",
+      "averageOf": "povprečje {count} kosov",
+      "eachOf": "kateri koli od {count}"
     },
     "euRules": "Tu veljajo pravila EU.",
     "law": "Določa jih <link>{law}</link>.",
     "inForce": "Začetek veljavnosti: {date}.",
     "atMost": "Izdelek ustreza, če ne sprosti več od mejne vrednosti: zakon pravi »največ«.",
+    "ppm": "ppm tu pomeni miligrame na liter preskusne raztopine (mg/L).",
     "unknown": "Pravil v državi {region} še nismo potrdili.",
     "choosePrompt": "Izberite državo, da vidite njena pravila."
   },

@@ -75,6 +75,7 @@
   "density-choices": "Kies soortelijk gewicht, Baumé of pintgewicht, of laat het aan uw regio over.",
   "englishTerms-choices": "Kies aan of uit.",
   "notice-choices": "Kies zichtbaar of verborgen.",
+  "recipeHelp-choices": "Kies auto, shown of hidden.",
   "shelf-invalid": "De voorraad is een lijst van maximaal {most} grondstoffen.",
   "missing-information": "Vereiste gegevens ontbreken.",
   "invalid-id": "Ongeldige id.",

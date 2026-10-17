@@ -75,6 +75,7 @@
   "density-choices": "Изберете относително тегло, градуси Боме или тегло на пинта, или оставете това да се определя от региона Ви.",
   "englishTerms-choices": "Изберете включено (on) или изключено (off).",
   "notice-choices": "Изберете показано (shown) или скрито (hidden).",
+  "recipeHelp-choices": "Изберете auto, shown или hidden.",
   "shelf-invalid": "Запасът е списък с до {most} суровини.",
   "missing-information": "Липсва задължителна информация",
   "invalid-id": "Невалиден идентификатор",

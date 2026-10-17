@@ -75,6 +75,7 @@
   "density-choices": "Izvēlieties relatīvo blīvumu, Bomē grādus vai pintes svaru, vai atstājiet to atbilstoši savam reģionam.",
   "englishTerms-choices": "Izvēlieties ieslēgts (on) vai izslēgts (off).",
   "notice-choices": "Izvēlieties rādīts (shown) vai paslēpts (hidden).",
+  "recipeHelp-choices": "Izvēlieties auto, shown vai hidden.",
   "shelf-invalid": "Krājumi ir izejvielu saraksts (ne vairāk kā {most}).",
   "missing-information": "Trūkst obligātas informācijas.",
   "invalid-id": "Nederīgs ID.",

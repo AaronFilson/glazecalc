@@ -111,6 +111,7 @@
       "control": "Uma concentração de controlo (管理濃度): o critério de referência para avaliar o ar de uma zona de trabalho a partir de medições aí feitas, não um valor-limite para o que uma pessoa respira."
     },
     "setBy": "Fixado por <link>{law}</link>.",
+    "from": "Aplica-se a partir de {date}.",
     "lowerThanEu": "Inferior ao valor-limite vinculativo da UE, de {value} mg/m³.",
     "sameAsEu": "Igual ao valor-limite vinculativo da UE.",
     "recommendedBy": "{abbr} ({by}) recomenda este valor no seu <link>{title}</link>. Não é lei.",
@@ -147,16 +148,31 @@
       "jpSmall": "Outras peças com menos de 1,1 L, não destinadas a cozinhar",
       "jpLarge": "Outras peças de 1,1 L a menos de 3 L, não destinadas a cozinhar",
       "jpStorage": "Outras peças de 3 L ou mais, não destinadas a cozinhar",
-      "jpCooking": "Utensílios para cozinhar, com 2,5 cm de profundidade ou mais"
+      "jpCooking": "Utensílios para cozinhar, com 2,5 cm de profundidade ou mais",
+      "krFlat": "Peças que não podem ser enchidas, ou com menos de 2,5 cm de profundidade",
+      "krSmall": "Outras peças que podem ser enchidas, com menos de 1,1 L",
+      "krMedium": "Outras peças que podem ser enchidas, de 1,1 L até menos de 3 L",
+      "krStorage": "Outras peças que podem ser enchidas, de 3 L ou mais",
+      "krCooking": "Utensílios para cozinhar, para aquecer alimentos",
+      "twFlat": "Peças que não podem ser enchidas, ou com 2,5 cm de profundidade, no máximo",
+      "twSmall": "Peças com mais de 2,5 cm de profundidade, até 1,1 L",
+      "twLarge": "Peças com mais de 2,5 cm de profundidade, com mais de 1,1 L",
+      "myFlat": "Louça plana",
+      "mySmall": "Peças ocas pequenas",
+      "myLarge": "Peças ocas grandes",
+      "myCooking": "Utensílios para cozinhar"
     },
     "judged": {
       "average": "média de 6 peças",
-      "each": "qualquer uma das 6"
+      "each": "qualquer uma das 6",
+      "averageOf": "média de {count} peças",
+      "eachOf": "qualquer uma das {count}"
     },
     "euRules": "Aplicam-se aqui as regras da UE.",
     "law": "Limites fixados por <link>{law}</link>.",
     "inForce": "Em vigor a partir de {date}.",
     "atMost": "Uma peça é aprovada se não libertar mais do que o limite: a lei diz «no máximo».",
+    "ppm": "Aqui, ppm são miligramas por litro da solução de ensaio (mg/L).",
     "unknown": "{region}: ainda não confirmámos as regras.",
     "choosePrompt": "Escolha o seu país para ver as respetivas regras."
   },

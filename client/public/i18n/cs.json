@@ -39,6 +39,7 @@
     "guides": "Návody",
     "about": "O aplikaci",
     "account": "Účet",
+    "trialAccount": "Zkušební účet",
     "accountTitle": "Váš účet a nastavení",
     "signOut": "Odhlásit se",
     "createAccount": "Vytvořit účet zdarma"
@@ -66,7 +67,8 @@
     "problem": "Nahlásit problém",
     "pottery": "Ručně vyráběná keramika: Updraft Pottery Studio",
     "copyright": "© 2017–2026 Aaron Filson / Candling Development Studio · Zdarma a open source (licence MIT)",
-    "languages": "Jazyky"
+    "languages": "Jazyky",
+    "language": "Jazyk:"
   },
   "numbers": {
     "notANumber": "Zadejte číslo, například {example}.",
@@ -222,20 +224,26 @@
     "soldIn": "Prodává se v",
     "showing": "Zobrazeno {shown} z {noun, select, additives {{total, plural, one {# přísady} few {# přísad} many {# přísady} other {# přísad}}} other {{total, plural, one {# suroviny} few {# surovin} many {# suroviny} other {# surovin}}}}",
     "name": "Název",
+    "equivalentWeight": "Ekvivalentní hmotnost",
+    "firedWeight": "Hmotnost po výpalu",
     "notes": "Poznámky",
     "analysis": "Rozbor",
+    "details": "Podrobnosti",
     "formula": "Vzorec",
+    "formulaLine": "Vzorec: {formula}",
     "useInstead": "<b>Náhrada:</b> {list}",
     "similar": "Podobné: {list}",
     "replaces": "Nahrazuje: {list}",
     "aliases": "Jiné názvy: {list}",
     "madeBy": "Výrobce: {name}",
     "source": "Zdroj:",
+    "hazardsLine": "Rizika: {hazards}",
     "noChemistry": "Bez rozboru: není v Segerově vzorci",
     "countedAs": "Počítáno jako {name}",
     "nothingMatches": "Nic neodpovídá. Zkuste jiný název, druh nebo region.",
     "loading": "Načítání…",
-    "notFetched": "Seznam se nepodařilo načíst. <retry>Zkusit znovu</retry>"
+    "notFetched": "Seznam se nepodařilo načíst. <retry>Zkusit znovu</retry>",
+    "showAll": "{noun, select, additives {{count, plural, one {Zobrazit # přísadu} few {Zobrazit všechny # přísady} many {Zobrazit všechny # přísady} other {Zobrazit všech # přísad}}} other {{count, plural, one {Zobrazit # surovinu} few {Zobrazit všechny # suroviny} many {Zobrazit všechny # suroviny} other {Zobrazit všech # surovin}}}}"
   },
   "chemistryForm": {
     "name": "{noun, select, additive {Zadejte název přísady.} other {Zadejte název suroviny.}}",

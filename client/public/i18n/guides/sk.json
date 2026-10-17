@@ -111,6 +111,7 @@
       "control": "Kontrolná koncentrácia (管理濃度): meradlo na posúdenie vzduchu na pracovisku podľa meraní na ňom, nie limit toho, čo vdychuje jeden človek."
     },
     "setBy": "Túto hodnotu stanovuje <link>{law}</link>.",
+    "from": "Platí od {date}.",
     "lowerThanEu": "Táto hodnota je nižšia ako záväzná limitná hodnota EÚ {value} mg/m³.",
     "sameAsEu": "Táto hodnota je rovnaká ako záväzná limitná hodnota EÚ.",
     "recommendedBy": "Túto hodnotu odporúča {abbr} ({by}) v dokumente <link>{title}</link>. Nie je to zákon.",
@@ -147,16 +148,31 @@
       "jpSmall": "Ostatné predmety s objemom pod 1,1 L, nie na varenie",
       "jpLarge": "Ostatné predmety s objemom od 1,1 L do menej ako 3 L, nie na varenie",
       "jpStorage": "Ostatné predmety s objemom 3 L a viac, nie na varenie",
-      "jpCooking": "Nádoby na varenie s hĺbkou 2,5 cm a viac"
+      "jpCooking": "Nádoby na varenie s hĺbkou 2,5 cm a viac",
+      "krFlat": "Predmety, ktoré nemožno plniť, alebo s hĺbkou menšou ako 2,5 cm",
+      "krSmall": "Ostatné predmety, ktoré možno plniť, do 1,1 L",
+      "krMedium": "Ostatné predmety, ktoré možno plniť, od 1,1 L do menej ako 3 L",
+      "krStorage": "Ostatné predmety, ktoré možno plniť, od 3 L",
+      "krCooking": "Nádoby na varenie, na ohrev jedla",
+      "twFlat": "Predmety, ktoré nemožno plniť, alebo s hĺbkou najviac 2,5 cm",
+      "twSmall": "Predmety s hĺbkou väčšou ako 2,5 cm, do 1,1 L",
+      "twLarge": "Predmety s hĺbkou väčšou ako 2,5 cm, nad 1,1 L",
+      "myFlat": "Ploché riady",
+      "mySmall": "Malé duté nádoby",
+      "myLarge": "Veľké duté nádoby",
+      "myCooking": "Nádoby na varenie"
     },
     "judged": {
       "average": "priemer zo 6 kusov",
-      "each": "každý zo 6 kusov"
+      "each": "každý zo 6 kusov",
+      "averageOf": "priemer z {count} kusov",
+      "eachOf": "ktorýkoľvek z {count}"
     },
     "euRules": "Platia tu pravidlá EÚ.",
     "law": "Tieto limity stanovuje <link>{law}</link>.",
     "inForce": "Platia od {date}.",
     "atMost": "Kus vyhovuje, ak neuvoľní viac, ako je limit: zákon hovorí „najviac“.",
+    "ppm": "ppm tu znamená miligramy na liter skúšobného roztoku (mg/L).",
     "unknown": "Pravidlá v krajine {region} sme zatiaľ neoverili.",
     "choosePrompt": "Vyberte krajinu, aby ste videli jej pravidlá."
   },
