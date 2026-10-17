@@ -3,78 +3,79 @@ title: Bränna i en enkel keramikugn
 lead: Bränna en elugn med Kiln-Sitter eller manuella vred: välja, placera och läsa av käglor, med publicerade brännprogram för skröjbränning och glasyrbränning.
 ---
 
-## Käglor: vad de mäter {#cones}
+## Cones: what they measure {#cones lang=en}
 
 > [!NOTE]
-> Följ i första hand ugnens egen bruksanvisning. Den här guiden samlar det som kägel- och ugnstillverkare publicerar om enkla elugnar; den ersätter inte instruktionerna för den egna ugnsmodellen, och där de skiljer sig åt gäller bruksanvisningen.
+> Follow your kiln's own manual first. This guide gathers what cone and kiln makers publish about basic electric kilns; it does not replace the instructions for your model, and where the two differ, the manual wins.
 
-En **pyrometrisk kägla**{{en: pyrometric cone}} (smältkägla) är en liten, smal pyramid av ett standardiserat keramiskt pulver. När den har fått tillräckligt med värme mjuknar den och böjer sig på ett sätt som går att upprepa. Käglorna ställs i ugnen bredvid godset, och efteråt läser man av hur långt de har böjt sig.
+A **pyrometric cone** is a small, slender pyramid made from a standardized ceramic powder. When it has had enough heat, it softens and bends over in a repeatable way. You set cones in the kiln beside the ware and read how far they bent.
 
-Käglor mäter **värmearbete**{{en: heatwork}}, den samlade effekten av temperatur och tid. Som Orton, den främsta kägeltillverkaren i USA, uttrycker det: ”Käglor mäter inte enbart temperatur.” En kägla som värms långsamt böjer sig vid en lägre temperatur än en som värms snabbt, och en glasyr{{en: glaze}} beter sig på samma sätt. Därför anger Orton varje käglas temperatur vid en angiven stigning under bränningens sista {{180 °F; 100 °C}}. När en kägla väl har börjat röra sig böjer den sig inom ett smalt intervall, ”vanligtvis mindre än 40° F” (22 °C).
+Cones measure **heatwork**, the combined effect of temperature and time. In the words of Orton, the main US cone maker, "Cones do not measure temperature alone." A cone heated slowly bends at a lower temperature than one heated fast, and a glaze behaves the same way. So Orton gives each cone's temperature for a stated heating rate over the last {{180 °F; 100 °C}} of the firing. Once a cone starts to move, it bends over a narrow range, "usually less than 40° F" (22 °C).
 
-### Kägelnummer
+### Cone numbers
 
-Kägelnumren går från 022, den kallaste, upp till 42. En inledande nolla markerar den kallare serien och läses ”noll”: kägla 06 (”noll sex”) är kallare än kägla 04, och kägla 01 behöver mindre värme än kägla 1. Orton varnar: det är viktigt att inte blanda ihop de två serierna. Skillnaden är stor: kägla 06 böjer sig vid en mer än {{400 °F; 220 °C}} lägre temperatur än kägla 6.
+Cone numbers run from 022, the coolest, up to 42. A leading zero marks the cooler series and is read as "oh": cone 06 ("oh-six") is cooler than cone 04, and cone 01 needs less heat than cone 1. Orton warns that it is important not to mix the two series up. The gap is large: cone 06 bends more than {{400 °F; 220 °C}} cooler than cone 6.
 
-Table: Vanliga temperaturområden, för självstående käglor vid {{108 °F/h; 60 °C/h}}
-Label: Temperaturområden
+Table: Common firing ranges, for self-supporting cones at {{108 °F/h; 60 °C/h}}
+Label: Firing ranges
 
-| Område           | Käglor |                     Temperatur | Typisk användning                                                    |
-| ---------------- | ------ | -----------------------------: | -------------------------------------------------------------------- |
-| Lågtemperatur    | 06–04  |  {{1828–1945 °F; 998–1063 °C}} | Glasyrer för lergods{{en: earthenware}}; skröjbränning{{en: bisque}} |
-| Mellantemperatur | 5–6    | {{2167–2232 °F; 1186–1222 °C}} | Stengods{{en: stoneware}} och porslin i elugn                        |
-| Högtemperatur    | 9–10   | {{2300–2345 °F; 1260–1285 °C}} | Mest gasbränt stengods och porslin                                   |
+| Range     | Cones |                    Temperature | Typical use                              |
+| --------- | ----- | -----------------------------: | ---------------------------------------- |
+| Low fire  | 06–04 |  {{1828–1945 °F; 998–1063 °C}} | Earthenware glazes; bisque               |
+| Mid fire  | 5–6   | {{2167–2232 °F; 1186–1222 °C}} | Electric-kiln stoneware and porcelain    |
+| High fire | 9–10  | {{2300–2345 °F; 1260–1285 °C}} | Mostly gas-fired stoneware and porcelain |
 
-Leverantörer i Storbritannien, Europa, Australien och Nya Zeeland anger ofta en temperatur i °C i stället för en kägla: leta upp närmaste kägla i tabellen nedan och bekräfta den med en kontrollkägla{{en: witness cone}}. Segerkäglor och Staffordshirekäglor, de äldre europeiska serierna, bör inte antas ha samma nummer som Ortons, så den här guiden använder Ortonkäglor.
+Suppliers in the UK, Europe, Australia and New Zealand often give a temperature in °C rather than a cone: find the nearest cone in the chart below and confirm it with a witness cone. Seger and Staffordshire cones, the older European series, should not be assumed to share Orton's numbers, so this guide uses Orton cones.
 
-### Hålltid ger mer värmearbete
+### Holding adds heatwork
 
-En **hålltid**{{en: hold}} (kallas också **utjämning**) håller ugnen vid en och samma temperatur en stund. Eftersom käglor mäter värmearbete kan en hålltid i toppen ersätta en högre topptemperatur. Orton anger de här ungefärliga motsvarigheterna:
+A **hold** (also called a **soak**) keeps the kiln at one temperature for a while. Because cones measure heatwork, a hold at the top can stand in for a hotter peak. Orton gives these rough equivalents:
 
-Table: Vad en hålltid vid topptemperaturen motsvarar
-Label: Hålltid och värmearbete
+Table: What a hold at the peak is worth
+Label: Holds and heatwork
 
-| Hålltid          | Ungefär samma värmearbete som                         |
-| ---------------- | ----------------------------------------------------- |
-| Cirka 20 minuter | En {{18 °F; 10 °C}} högre topptemperatur              |
-| 40–60 minuter    | En {{36 °F; 20 °C}} högre topptemperatur              |
-| Cirka 2 timmar   | En {{54 °F; 30 °C}} högre topptemperatur              |
-| 1–2 timmar       | ”kan räcka för att deformera nästa högre kägelnummer” |
-| 4–6 timmar       | Tillräckligt för att böja en kägla två nummer varmare |
+| Hold             | Roughly the same heatwork as             |
+| ---------------- | ---------------------------------------- |
+| About 20 minutes | A peak {{18 °F; 10 °C}} hotter           |
+| 40–60 minutes    | A peak {{36 °F; 20 °C}} hotter           |
+| About 2 hours    | A peak {{54 °F; 30 °C}} hotter           |
+| 4–6 hours        | Enough to bend a cone two numbers hotter |
 
-En hålltid är alltså aldrig gratis: läggs en hålltid till, räkna med att käglorna böjer sig längre och sänk topptemperaturen i motsvarande grad.
+Orton adds that a hold of 1–2 hours "may be sufficient to deform the next higher cone number".
 
-### Typer av käglor
+So a hold is never free: if you add one, expect the cones to bend further, and lower the peak to match.
 
-Orton tillverkar fyra typer. Två står på ugnsplattan och visar vad godset har fått; två är till Kiln-Sitter-brytaren.
+### Kinds of cone
 
-Table: Ortons fyra typer av käglor
-Label: Typer av käglor
+Orton makes four kinds. Two stand on the shelf to show what the ware received; two are for the kiln sitter.
 
-| Typ                 | Används som                  | Hur den står                                                                                       |
-| ------------------- | ---------------------------- | -------------------------------------------------------------------------------------------------- |
-| Självstående        | Kontrollkägla på ugnsplattan | En inbyggd fot ger höjden, 1¾ tum (44 mm), och lutningen på 8°; ingen hållare behövs               |
-| Stor                | Kontrollkägla på ugnsplattan | Sätts i en kägelhållare eller en klump lera med exakt 2 tum (51 mm) synligt, lutad 8° från lodrätt |
-| Liten (juniorkägla) | Kiln-Sitter                  | Ligger tvärs över brytarens kägelstöd; 15/16 tum (24 mm) synligt om den ställs på en ugnsplatta    |
-| Stav                | Kiln-Sitter                  | Samma pulver som små käglor, i en jämn stavform                                                    |
+Table: Orton's four kinds of cone
+Label: Kinds of cone
 
-Höjden spelar roll: en skillnad på ¼ tum (6 mm) i höjd hos en stor kägla ”kan ge mer än en halv käglas skillnad i böjning”. Käglor blir inte dåliga och åldras inte, och fuktig förvaring påverkar dem inte.
+| Kind            | Used for                  | How it stands                                                                               |
+| --------------- | ------------------------- | ------------------------------------------------------------------------------------------- |
+| Self-supporting | Witness cone on the shelf | A built-in base sets the height, 1¾ in (44 mm), and the 8° lean; no holder needed           |
+| Large           | Witness cone on the shelf | Set in a plaque or a pat of clay with exactly 2 in (51 mm) showing, leaning 8° from upright |
+| Small (junior)  | Kiln sitter               | Lies across the sitter's supports; 15/16 in (24 mm) showing if stood on a shelf             |
+| Bar             | Kiln sitter               | The same powder as small cones, in an even bar shape                                        |
 
-### Vad ”kägla 6” betyder i praktiken
+Height matters: a ¼ in (6 mm) difference in the height of a large cone "can cause more than a half cone difference in bending". Cones do not go bad or age, and damp storage does not affect them.
 
-Kägeltabellen anger {{2232 °F; 1222 °C}} för en självstående kägla 6, men bara när stigningen under de sista {{180 °F; 100 °C}} är {{108 °F/h; 60 °C/h}}. Med en stigning på {{270 °F/h; 150 °C/h}} böjer sig samma kägla vid {{2269 °F; 1243 °C}}. Verkliga ugnar avviker ytterligare: Digitalfire rapporterar att ”de flesta ugnar når kägla 6 vid 2200°F, inte 2232°F”. ”Kägla 6” betyder alltså att godset har fått det värmearbete som böjer en kägla 6, oavsett vad en termometer visade just då.
+### What "cone 6" means in practice
+
+The chart gives a self-supporting cone 6 as {{2232 °F; 1222 °C}}, but only when the last {{180 °F; 100 °C}} climbs at {{108 °F/h; 60 °C/h}}. Climbing at {{270 °F/h; 150 °C/h}}, the same cone bends at {{2269 °F; 1243 °C}}. Real kilns differ again: Digitalfire reports that "Most kilns reach cone 6 at 2200°F, not 2232°F". So "cone 6" means the ware received the heatwork that bends a cone 6, whatever a thermometer read at the time.
 
 :::orton
 
 > [!NOTE]
-> Bränn efter käglan, inte efter klockan eller mätaren. Ställ in en automatik efter kägelnummer, och låt en kontrollkägla på ugnsplattan bekräfta varje bränning.
+> Fire by the cone, not the clock or the dial. Set a controller by cone number, and let a witness cone on the shelf confirm every firing.
 
 :::
 
 :::temperature
 
 > [!NOTE]
-> Vid bränning efter temperatur: håll slutet av varje bränning likadant, med samma sista stigning, samma topptemperatur och samma hålltid. Då fungerar en glasyr som har fungerat en gång också nästa gång.
+> Firing by temperature, keep the end of every firing the same: the same last rate of climb, the same peak and the same hold. Then a glaze that worked once works again.
 
 :::
 

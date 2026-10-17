@@ -181,36 +181,36 @@ HSE는 분무가 “RCS(호흡성 결정형 유리규산)를 포함한 미스트
 
 라쿠는 연기와 CO를 많이 냅니다. 유타 대학교는 공기 흡입구와 창문에서 떨어진 실외에서 하라고 권합니다. 소성 자체는 《[기본 가마 소성](/guides/firing)》을 보세요.
 
-## 가장 주의할 원료 {#materials}
+## Materials that need most care {#materials lang=en}
 
-규석, 점토, 장석, 프릿을 비롯한 대부분의 유약 원료는 주로 분진 위험이며, 이는 위의 습관으로 관리합니다. 이보다 적은 수의 원료는 들이마시거나 삼키거나 피부에 닿았을 때 그 자체로 유독합니다. Digitalfire는 안료가 대개 원료 상태의 산화물보다 훨씬 안전하며, “독성 금속을 용출하는 균형이 맞지 않는 유약은 어떤 원료로든 만들 수 있다”고 덧붙입니다. 식품 안전성은 원료 하나가 아니라 레시피 전체에 달려 있습니다.
+Most glaze materials, including silica, clays, feldspars and frits, are mainly a dust hazard, which the habits above control. A shorter list is toxic in its own right, by breathing, swallowing or skin contact. Digitalfire adds that stains are generally much safer than raw oxides, and that "unbalanced glazes that release toxic metals can be made from any materials": food safety depends on the whole recipe, not on one ingredient.
 
-**IARC 그룹**은 암 분류입니다. 그룹 1은 “인체 발암성 물질”, 그룹 2A는 “인체 발암 추정 물질”을 뜻하며, 그룹 2B와 3은 근거가 더 약하다는 뜻입니다.
+An **IARC group** is a cancer classification: Group 1 means "carcinogenic to humans", Group 2A "probably carcinogenic to humans", Group 2B "possibly carcinogenic to humans", and Group 3 "not classifiable as to its carcinogenicity to humans", which means too little evidence to judge either way.
 
-Table: 특별히 주의가 필요한 유약 원료
-Label: 가장 주의할 원료
+Table: Glaze materials that need extra care
+Label: Materials that need most care
 
-| 원료                                   | 위험                                                                                                                                                      | 예방 조치                                                                                                             |
-| -------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| 납 화합물과 납 프릿                    | “흡입하거나 삼키면 매우 유독함”. 비교적 낮은 가마 온도에서 기화합니다.                                                                                    | 피하세요. Digitalfire는 전문가만 쓰라고 합니다. “무연”이나 “납 없음” 표시가 없는 유약은 모두 납이 들어 있다고 보세요. |
-| 탄산바륨                               | 물에는 녹지 않지만 위산에는 녹으며, 심장과 근육에 영향을 줍니다(불규칙한 심장 박동, 저칼륨).                                                              | 레시피가 허용하면 바륨 프릿이나 스트론튬을 쓰세요. 방진마스크를 쓰고, 라벨을 붙인 용기에 보관하세요.                  |
-| 이산화망간                             | 분진이나 흄은 **망간 중독**을 일으킬 수 있습니다. 파킨슨병과 비슷한 신경계 질환으로, 대개 1~3년 노출된 뒤에 나타납니다. 흄은 금속열을 일으킬 수 있습니다. | 대신 검은색 안료를 낮은 비율로 쓰세요. 가마를 배기하세요.                                                             |
-| 중크롬산칼륨과 산화크롬                | 중크롬산염에 있는 크롬(VI)은 IARC 그룹 1입니다. 이 분류는 산화크롬에 있는 크롬(III)에는 해당하지 않습니다.                                                | 중크롬산염은 피하세요. 저희는 산화크롬을 훨씬 덜 위험하다고 보지만, 분진은 줄이세요.                                  |
-| 코발트                                 | 수용성 코발트(II) 염은 IARC 2A, 산화코발트(II)는 2B, 검은색 Co₃O₄는 그룹 3입니다.                                                                         | 분진을 줄이세요. 검은색에는 안료를 쓰세요.                                                                            |
-| 니켈 화합물                            | 유타 대학교가 꼽은, 인체 발암물질로 알려졌거나 추정되는 물질에 속합니다.                                                                                  | 높은 비율로 쓰기보다 안료를 쓰세요.                                                                                   |
-| 카드뮴과 셀레늄(원료 그대로나 안료 속) | 카드뮴 화합물은 유타 대학교가 꼽은, 인체 발암물질로 알려졌거나 추정되는 물질에 속합니다.                                                                  | “전문가만”(Digitalfire). 어떤 안료든 물질안전보건자료를 읽으세요.                                                     |
-| 안티몬과 바나듐                        | 3가 안티몬(삼산화안티몬 등)은 IARC 2A입니다. 바나듐은 “흡입하면 매우 유독함”입니다.                                                                       | 바나듐은 전문가만 쓰세요. 안티몬 분진을 줄이세요.                                                                     |
-| 동과 아연                              | 가마의 흄은 금속열을 일으킬 수 있습니다. 원료 상태의 산화아연은 “일반적으로 위험하지 않은 것으로 여겨집니다”.                                             | 가마를 배기하세요.                                                                                                    |
-| 탄산리튬                               | “흡입하면 매우 유독함”. EU 전문가 위원회는 생식능력과 태아에 해를 끼칠 수 있다고 결론지었지만, 저희가 확인했을 때 공식 채택은 확인되지 않았습니다.        | 장갑과 방진마스크를 쓰고, 아이 손에 닿지 않게 하세요. 임신 중에는 더 주의하기를 권합니다.                             |
-| 붕사와 붕산                            | EU에서 “생식능력에 손상을 일으킬 수 있음. 태아에 손상을 일으킬 수 있음”으로 분류됩니다.                                                                   | 장갑을 끼세요. 가능하면 붕소를 프릿에서 얻으세요.                                                                     |
-| 탄산나트륨, 탄산칼륨, 알칼리 장석      | 피부를 자극합니다.                                                                                                                                        | 장갑을 끼세요.                                                                                                        |
-| 형석, 빙정석, 레피돌라이트             | 소성 중에 불소 가스를 내보내며, 형석은 피부도 자극합니다.                                                                                                 | 가마를 밖으로 배기하세요. 장갑을 끼세요.                                                                              |
-| 활석                                   | 2024년 7월부터 IARC 2A입니다. 석면에 오염된 활석은 석면으로 간주되어 그룹 1입니다.                                                                        | 섬유상이 아닌 판상의, 석면이 없는 활석을 쓰고, 물질안전보건자료를 확인하세요.                                         |
+| Material                               | Hazard                                                                                                                                                            | Precaution                                                                                                  |
+| -------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| Lead compounds and lead frits          | "Highly toxic by inhalation or ingestion"; vaporizes at lower kiln temperatures.                                                                                  | Avoid; Digitalfire says experts only. Assume any glaze not labeled "lead-free" or "leadless" contains lead. |
+| Barium carbonate                       | Insoluble in water but dissolves in stomach acid; affects the heart and muscles (irregular heartbeat, low potassium).                                             | A barium frit or strontium where the recipe allows; respirator; labeled container.                          |
+| Manganese dioxide                      | Dust or fume can cause **manganism**, a nervous-system illness like Parkinson's disease, usually after 1 to 3 years of exposure. Fume can cause metal fume fever. | Black stains at low percentages instead; vent the kiln.                                                     |
+| Potassium dichromate and chrome oxide  | Chromium(VI), as in dichromate, is IARC Group 1. That listing does not cover chromium(III), as in chrome oxide.                                                   | Avoid dichromate. We treat chrome oxide as far less hazardous, but keep its dust down.                      |
+| Cobalt                                 | Soluble cobalt(II) salts IARC 2A; cobalt(II) oxide 2B; black Co₃O₄ Group 3.                                                                                       | Keep dust down; stains for blacks.                                                                          |
+| Nickel compounds                       | Among the University of Utah's known or probable human carcinogens.                                                                                               | Stains rather than high percentages.                                                                        |
+| Cadmium and selenium, raw or in stains | Cadmium compounds are among Utah's known or probable human carcinogens.                                                                                           | "Only by experts" (Digitalfire); read any stain's SDS.                                                      |
+| Antimony and vanadium                  | Trivalent antimony (as in antimony trioxide) IARC 2A; vanadium "highly toxic by inhalation".                                                                      | Vanadium for experts only; keep antimony dust down.                                                         |
+| Copper and zinc                        | Kiln fume can cause metal fume fever; raw zinc oxide is "generally not considered hazardous".                                                                     | Vent the kiln.                                                                                              |
+| Lithium carbonate                      | "Highly toxic by inhalation". An EU expert committee concluded it may harm fertility and the unborn child; formal adoption was not confirmed when we checked.     | Gloves and respirator; keep from children. We suggest extra care in pregnancy.                              |
+| Borax and boric acid                   | Classified in the EU as "may damage fertility; may damage the unborn child".                                                                                      | Gloves; boron from a frit where you can.                                                                    |
+| Soda ash, potash, alkaline feldspars   | Skin irritants.                                                                                                                                                   | Gloves.                                                                                                     |
+| Fluorspar, cryolite, lepidolite        | Release fluorine gases in firing; fluorspar also irritates skin.                                                                                                  | Vent the kiln outdoors; gloves.                                                                             |
+| Talc                                   | IARC 2A since July 2024; talc contaminated with asbestos counts as asbestos, Group 1.                                                                             | Platy (not fibrous), asbestos-free talc; check its SDS.                                                     |
 
-붕사, 붕산, 탄산나트륨, 탄산칼륨은 물에 녹으므로, 저희는 이들이 상처 난 피부로 흡수되거나 씻지 않은 손을 통해 삼켜질 가능성이 가장 크다고 봅니다.
+Borax, boric acid, soda ash and potash dissolve in water, so we treat them as the likeliest to be absorbed through broken skin or swallowed from unwashed hands.
 
 > [!NOTE]
-> 레시피에 프릿화하지 않은 탄산바륨, 많은 양의 망간, 또는 납이나 카드뮴이 든 원료가 있다면 프릿이나 안료를 쓰는 버전을 찾아보세요. Glazecalc로 원래 유약과 바꾼 유약의 화학 조성을 비교할 수 있습니다. 그런 다음 새 유약을 시험하세요.
+> If a recipe calls for raw barium carbonate, a lot of manganese, or any lead or cadmium material, look for a version that uses a frit or a stain instead. Glazecalc can compare the chemistry of the original and the swap; then test the new glaze.
 
 ## 장갑, 피부, 눈 {#gloves-and-eyes}
 

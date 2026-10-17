@@ -3,78 +3,79 @@ title: Cuocere in un forno semplice
 lead: Come cuocere in un forno elettrico con kiln sitter o con commutatori manuali: scegliere, posizionare e leggere i coni, con le curve di cottura pubblicate per la biscottatura e la cottura dello smalto.
 ---
 
-## Coni: che cosa misurano {#cones}
+## Cones: what they measure {#cones lang=en}
 
 > [!NOTE]
-> Seguire prima di tutto il manuale del proprio forno. Questa guida raccoglie ciò che i produttori di coni e di forni pubblicano sui forni elettrici semplici; non sostituisce le istruzioni del modello in uso e, dove le due cose differiscono, vale il manuale.
+> Follow your kiln's own manual first. This guide gathers what cone and kiln makers publish about basic electric kilns; it does not replace the instructions for your model, and where the two differ, the manual wins.
 
-Un **cono pirometrico**{{en: pyrometric cone}} è una piccola piramide sottile fatta di una polvere ceramica standardizzata. Quando ha ricevuto abbastanza calore, si ammorbidisce e si piega in modo ripetibile. I coni si mettono nel forno accanto ai pezzi e si legge quanto si sono piegati.
+A **pyrometric cone** is a small, slender pyramid made from a standardized ceramic powder. When it has had enough heat, it softens and bends over in a repeatable way. You set cones in the kiln beside the ware and read how far they bent.
 
-I coni misurano il **lavoro termico**{{en: heatwork}}, l’effetto combinato di temperatura e tempo. Con le parole di Orton, il principale produttore di coni degli Stati Uniti: «I coni non misurano solo la temperatura». Un cono riscaldato lentamente si piega a una temperatura più bassa di uno riscaldato in fretta, e uno smalto{{en: glaze}} si comporta allo stesso modo. Per questo Orton dà la temperatura di ogni cono per una velocità di riscaldamento indicata negli ultimi {{180 °F; 100 °C}} della cottura. Quando un cono comincia a muoversi, si piega in un intervallo stretto, «di solito meno di 40° F» (22 °C).
+Cones measure **heatwork**, the combined effect of temperature and time. In the words of Orton, the main US cone maker, "Cones do not measure temperature alone." A cone heated slowly bends at a lower temperature than one heated fast, and a glaze behaves the same way. So Orton gives each cone's temperature for a stated heating rate over the last {{180 °F; 100 °C}} of the firing. Once a cone starts to move, it bends over a narrow range, "usually less than 40° F" (22 °C).
 
-### I numeri dei coni
+### Cone numbers
 
-I numeri dei coni vanno da 022, il più freddo, fino a 42. Lo zero iniziale indica la serie più fredda e si legge «zero»: il cono 06 («zero sei») è più freddo del cono 04, e il cono 01 richiede meno calore del cono 1. Orton avverte che è importante non confondere le due serie. La differenza è grande: il cono 06 si piega a una temperatura di oltre {{400 °F; 220 °C}} più bassa del cono 6.
+Cone numbers run from 022, the coolest, up to 42. A leading zero marks the cooler series and is read as "oh": cone 06 ("oh-six") is cooler than cone 04, and cone 01 needs less heat than cone 1. Orton warns that it is important not to mix the two series up. The gap is large: cone 06 bends more than {{400 °F; 220 °C}} cooler than cone 6.
 
-Table: Intervalli di cottura comuni, per coni autoportanti a {{108 °F/h; 60 °C/h}}
-Label: Intervalli di cottura
+Table: Common firing ranges, for self-supporting cones at {{108 °F/h; 60 °C/h}}
+Label: Firing ranges
 
-| Intervallo        | Coni  |                    Temperatura | Uso tipico                                                           |
-| ----------------- | ----- | -----------------------------: | -------------------------------------------------------------------- |
-| Bassa temperatura | 06–04 |  {{1828–1945 °F; 998–1063 °C}} | Smalti per terracotta{{en: earthenware}}; biscottatura{{en: bisque}} |
-| Media temperatura | 5–6   | {{2167–2232 °F; 1186–1222 °C}} | Gres{{en: stoneware}} e porcellana in forno elettrico                |
-| Alta temperatura  | 9–10  | {{2300–2345 °F; 1260–1285 °C}} | Soprattutto gres e porcellana cotti a gas                            |
+| Range     | Cones |                    Temperature | Typical use                              |
+| --------- | ----- | -----------------------------: | ---------------------------------------- |
+| Low fire  | 06–04 |  {{1828–1945 °F; 998–1063 °C}} | Earthenware glazes; bisque               |
+| Mid fire  | 5–6   | {{2167–2232 °F; 1186–1222 °C}} | Electric-kiln stoneware and porcelain    |
+| High fire | 9–10  | {{2300–2345 °F; 1260–1285 °C}} | Mostly gas-fired stoneware and porcelain |
 
-I fornitori del Regno Unito, d’Europa, d’Australia e della Nuova Zelanda spesso indicano una temperatura in °C anziché un cono: trovare il cono più vicino nella tabella qui sotto e verificarlo con un cono testimone{{en: witness cone}}. Non si deve dare per scontato che i coni Seger e Staffordshire, le serie europee più antiche, abbiano gli stessi numeri dei coni Orton, perciò questa guida usa i coni Orton.
+Suppliers in the UK, Europe, Australia and New Zealand often give a temperature in °C rather than a cone: find the nearest cone in the chart below and confirm it with a witness cone. Seger and Staffordshire cones, the older European series, should not be assumed to share Orton's numbers, so this guide uses Orton cones.
 
-### La sosta aggiunge lavoro termico
+### Holding adds heatwork
 
-Una **sosta**{{en: hold}} (detta anche **mantenimento**{{en: soak}}) tiene il forno a una temperatura per un certo tempo. Poiché i coni misurano il lavoro termico, una sosta alla temperatura massima può prendere il posto di una temperatura massima più alta. Orton dà queste equivalenze approssimative:
+A **hold** (also called a **soak**) keeps the kiln at one temperature for a while. Because cones measure heatwork, a hold at the top can stand in for a hotter peak. Orton gives these rough equivalents:
 
-Table: Quanto vale una sosta alla temperatura massima
-Label: Soste e lavoro termico
+Table: What a hold at the peak is worth
+Label: Holds and heatwork
 
-| Sosta           | Più o meno lo stesso lavoro termico di                  |
-| --------------- | ------------------------------------------------------- |
-| Circa 20 minuti | Una temperatura massima più alta di {{18 °F; 10 °C}}    |
-| 40–60 minuti    | Una temperatura massima più alta di {{36 °F; 20 °C}}    |
-| Circa 2 ore     | Una temperatura massima più alta di {{54 °F; 30 °C}}    |
-| 1–2 ore         | «può bastare a deformare il cono del numero successivo» |
-| 4–6 ore         | Abbastanza da piegare un cono di due numeri più caldo   |
+| Hold             | Roughly the same heatwork as             |
+| ---------------- | ---------------------------------------- |
+| About 20 minutes | A peak {{18 °F; 10 °C}} hotter           |
+| 40–60 minutes    | A peak {{36 °F; 20 °C}} hotter           |
+| About 2 hours    | A peak {{54 °F; 30 °C}} hotter           |
+| 4–6 hours        | Enough to bend a cone two numbers hotter |
 
-Una sosta, quindi, non è mai senza effetto: se se ne aggiunge una, aspettarsi che i coni si pieghino di più e abbassare di conseguenza la temperatura massima.
+Orton adds that a hold of 1–2 hours "may be sufficient to deform the next higher cone number".
 
-### Tipi di cono
+So a hold is never free: if you add one, expect the cones to bend further, and lower the peak to match.
 
-Orton produce quattro tipi di cono. Due stanno sulla piastra e mostrano quanto calore hanno ricevuto i pezzi; due sono per il kiln sitter, un interruttore meccanico a cono.
+### Kinds of cone
 
-Table: I quattro tipi di cono Orton
-Label: Tipi di cono
+Orton makes four kinds. Two stand on the shelf to show what the ware received; two are for the kiln sitter.
 
-| Tipo             | Uso                          | Come sta in piedi                                                                                                                                   |
-| ---------------- | ---------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Autoportante     | Cono testimone sulla piastra | Una base incorporata fissa l’altezza, 1¾ pollici (44 mm), e l’inclinazione di 8°; non serve un supporto                                             |
-| Grande           | Cono testimone sulla piastra | Si fissa in un supporto per coni o in un blocchetto di argilla con esattamente 2 pollici (51 mm) sporgenti, inclinato di 8° rispetto alla verticale |
-| Piccolo (junior) | Kiln sitter                  | Si appoggia di traverso sui supporti del kiln sitter; 15/16 di pollice (24 mm) sporgenti se messo in piedi su una piastra                           |
-| Barretta         | Kiln sitter                  | La stessa polvere dei coni piccoli, in forma di barretta uniforme                                                                                   |
+Table: Orton's four kinds of cone
+Label: Kinds of cone
 
-L’altezza conta: una differenza di ¼ di pollice (6 mm) nell’altezza di un cono grande «può causare una differenza di piegatura di oltre mezzo cono». I coni non si deteriorano né invecchiano, e la conservazione in un luogo umido non li altera.
+| Kind            | Used for                  | How it stands                                                                               |
+| --------------- | ------------------------- | ------------------------------------------------------------------------------------------- |
+| Self-supporting | Witness cone on the shelf | A built-in base sets the height, 1¾ in (44 mm), and the 8° lean; no holder needed           |
+| Large           | Witness cone on the shelf | Set in a plaque or a pat of clay with exactly 2 in (51 mm) showing, leaning 8° from upright |
+| Small (junior)  | Kiln sitter               | Lies across the sitter's supports; 15/16 in (24 mm) showing if stood on a shelf             |
+| Bar             | Kiln sitter               | The same powder as small cones, in an even bar shape                                        |
 
-### Che cosa significa «cono 6» in pratica
+Height matters: a ¼ in (6 mm) difference in the height of a large cone "can cause more than a half cone difference in bending". Cones do not go bad or age, and damp storage does not affect them.
 
-La tabella dà per un cono 6 autoportante {{2232 °F; 1222 °C}}, ma solo se negli ultimi {{180 °F; 100 °C}} la temperatura sale a {{108 °F/h; 60 °C/h}}. Salendo a {{270 °F/h; 150 °C/h}}, lo stesso cono si piega a {{2269 °F; 1243 °C}}. Nei forni reali le cose cambiano ancora: Digitalfire riferisce che «la maggior parte dei forni raggiunge il cono 6 a 2200°F, non a 2232°F». Quindi «cono 6» significa che i pezzi hanno ricevuto il lavoro termico che piega un cono 6, qualunque cosa segnasse un termometro in quel momento.
+### What "cone 6" means in practice
+
+The chart gives a self-supporting cone 6 as {{2232 °F; 1222 °C}}, but only when the last {{180 °F; 100 °C}} climbs at {{108 °F/h; 60 °C/h}}. Climbing at {{270 °F/h; 150 °C/h}}, the same cone bends at {{2269 °F; 1243 °C}}. Real kilns differ again: Digitalfire reports that "Most kilns reach cone 6 at 2200°F, not 2232°F". So "cone 6" means the ware received the heatwork that bends a cone 6, whatever a thermometer read at the time.
 
 :::orton
 
 > [!NOTE]
-> Cuocere seguendo il cono, non l’orologio o il quadrante. Impostare la centralina per numero di cono e far confermare ogni cottura da un cono testimone sulla piastra.
+> Fire by the cone, not the clock or the dial. Set a controller by cone number, and let a witness cone on the shelf confirm every firing.
 
 :::
 
 :::temperature
 
 > [!NOTE]
-> Quando si cuoce in temperatura, mantenere sempre uguale la fine di ogni cottura: la stessa velocità di salita finale, la stessa temperatura massima e la stessa sosta. Così uno smalto riuscito una volta riesce di nuovo.
+> Firing by temperature, keep the end of every firing the same: the same last rate of climb, the same peak and the same hold. Then a glaze that worked once works again.
 
 :::
 

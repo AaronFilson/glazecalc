@@ -3,78 +3,79 @@ title: Brennen mit einem einfachen Ofen
 lead: Wie Sie einen Elektroofen mit Kiln-Sitter oder Handschaltung brennen: Kegel auswählen, aufstellen und ablesen, mit veröffentlichten Brennkurven für den Schrühbrand und den Glasurbrand.
 ---
 
-## Kegel: was sie messen {#cones}
+## Cones: what they measure {#cones lang=en}
 
 > [!NOTE]
-> Folgen Sie zuerst der Bedienungsanleitung Ihres Ofens. Diese Anleitung fasst zusammen, was Kegel- und Ofenhersteller über einfache Elektroöfen veröffentlichen; sie ersetzt nicht die Bedienungsanleitung für Ihr Modell, und wo beide voneinander abweichen, gilt die Bedienungsanleitung.
+> Follow your kiln's own manual first. This guide gathers what cone and kiln makers publish about basic electric kilns; it does not replace the instructions for your model, and where the two differ, the manual wins.
 
-Ein **pyrometrischer Kegel**{{en: pyrometric cone}} ist eine kleine, schlanke Pyramide aus einem genormten keramischen Pulver. Hat er genug Hitze abbekommen, wird er weich und biegt sich auf wiederholbare Weise um. Sie stellen Kegel neben der Ware in den Ofen und lesen ab, wie weit sie sich gebogen haben.
+A **pyrometric cone** is a small, slender pyramid made from a standardized ceramic powder. When it has had enough heat, it softens and bends over in a repeatable way. You set cones in the kiln beside the ware and read how far they bent.
 
-Kegel messen die **Wärmearbeit**{{en: heatwork}}, das Zusammenwirken von Temperatur und Zeit. Mit den Worten von Orton, dem wichtigsten Kegelhersteller der USA: „Kegel messen nicht allein die Temperatur.“ Ein langsam erhitzter Kegel biegt sich bei einer niedrigeren Temperatur als ein schnell erhitzter, und eine Glasur{{en: glaze}} verhält sich genauso. Deshalb gibt Orton die Temperatur jedes Kegels für eine bestimmte Heizrate in den letzten {{180 °F; 100 °C}} des Brandes an. Hat ein Kegel einmal angefangen, sich zu bewegen, biegt er sich innerhalb einer kleinen Spanne um, „meist weniger als 40° F“ (22 °C).
+Cones measure **heatwork**, the combined effect of temperature and time. In the words of Orton, the main US cone maker, "Cones do not measure temperature alone." A cone heated slowly bends at a lower temperature than one heated fast, and a glaze behaves the same way. So Orton gives each cone's temperature for a stated heating rate over the last {{180 °F; 100 °C}} of the firing. Once a cone starts to move, it bends over a narrow range, "usually less than 40° F" (22 °C).
 
-### Kegelnummern
+### Cone numbers
 
-Die Kegelnummern reichen von 022, dem kühlsten, bis 42. Eine vorangestellte Null kennzeichnet die kühlere Reihe und wird als „null“ gelesen: Kegel 06 („null sechs“) ist kühler als Kegel 04, und Kegel 01 braucht weniger Hitze als Kegel 1. Orton betont, wie wichtig es ist, die beiden Reihen nicht zu verwechseln. Der Abstand ist groß: Kegel 06 biegt sich bei einer um mehr als {{400 °F; 220 °C}} niedrigeren Temperatur als Kegel 6.
+Cone numbers run from 022, the coolest, up to 42. A leading zero marks the cooler series and is read as "oh": cone 06 ("oh-six") is cooler than cone 04, and cone 01 needs less heat than cone 1. Orton warns that it is important not to mix the two series up. The gap is large: cone 06 bends more than {{400 °F; 220 °C}} cooler than cone 6.
 
-Table: Übliche Brennbereiche, für selbststehende Kegel bei {{108 °F/h; 60 °C/h}}
-Label: Brennbereiche
+Table: Common firing ranges, for self-supporting cones at {{108 °F/h; 60 °C/h}}
+Label: Firing ranges
 
-| Brennbereich | Kegel |                     Temperatur | Typische Verwendung                                                  |
-| ------------ | ----- | -----------------------------: | -------------------------------------------------------------------- |
-| Niedrig      | 06–04 |  {{1828–1945 °F; 998–1063 °C}} | Glasuren für Irdenware{{en: earthenware}}; Schrühbrand{{en: bisque}} |
-| Mittel       | 5–6   | {{2167–2232 °F; 1186–1222 °C}} | Steinzeug{{en: stoneware}} und Porzellan aus dem Elektroofen         |
-| Hoch         | 9–10  | {{2300–2345 °F; 1260–1285 °C}} | Meist Steinzeug und Porzellan aus dem Gasofen                        |
+| Range     | Cones |                    Temperature | Typical use                              |
+| --------- | ----- | -----------------------------: | ---------------------------------------- |
+| Low fire  | 06–04 |  {{1828–1945 °F; 998–1063 °C}} | Earthenware glazes; bisque               |
+| Mid fire  | 5–6   | {{2167–2232 °F; 1186–1222 °C}} | Electric-kiln stoneware and porcelain    |
+| High fire | 9–10  | {{2300–2345 °F; 1260–1285 °C}} | Mostly gas-fired stoneware and porcelain |
 
-Lieferanten in Großbritannien, Europa, Australien und Neuseeland geben oft eine Temperatur in °C statt eines Kegels an: Suchen Sie in der Tabelle unten den nächstliegenden Kegel und prüfen Sie ihn mit einem Messkegel{{en: witness cone}}. Gehen Sie nicht davon aus, dass Segerkegel und Staffordshire-Kegel, die älteren europäischen Reihen, dieselben Nummern wie Orton haben; deshalb verwendet diese Anleitung Ortonkegel.
+Suppliers in the UK, Europe, Australia and New Zealand often give a temperature in °C rather than a cone: find the nearest cone in the chart below and confirm it with a witness cone. Seger and Staffordshire cones, the older European series, should not be assumed to share Orton's numbers, so this guide uses Orton cones.
 
-### Haltezeiten erhöhen die Wärmearbeit
+### Holding adds heatwork
 
-Bei einer **Haltezeit**{{en: hold}} (englisch auch **soak**) bleibt der Ofen eine Weile auf einer Temperatur. Weil Kegel die Wärmearbeit messen, kann eine Haltezeit ganz oben eine höhere Endtemperatur ersetzen. Orton nennt diese ungefähren Entsprechungen:
+A **hold** (also called a **soak**) keeps the kiln at one temperature for a while. Because cones measure heatwork, a hold at the top can stand in for a hotter peak. Orton gives these rough equivalents:
 
-Table: Was eine Haltezeit bei der Endtemperatur ausmacht
-Label: Haltezeit und Wärmearbeit
+Table: What a hold at the peak is worth
+Label: Holds and heatwork
 
-| Haltezeit       | Ungefähr dieselbe Wärmearbeit wie                               |
-| --------------- | --------------------------------------------------------------- |
-| Etwa 20 Minuten | Eine um {{18 °F; 10 °C}} höhere Endtemperatur                   |
-| 40–60 Minuten   | Eine um {{36 °F; 20 °C}} höhere Endtemperatur                   |
-| Etwa 2 Stunden  | Eine um {{54 °F; 30 °C}} höhere Endtemperatur                   |
-| 1–2 Stunden     | „kann ausreichen, um die nächsthöhere Kegelnummer zu verformen“ |
-| 4–6 Stunden     | Genug, um einen zwei Nummern heißeren Kegel umzubiegen          |
+| Hold             | Roughly the same heatwork as             |
+| ---------------- | ---------------------------------------- |
+| About 20 minutes | A peak {{18 °F; 10 °C}} hotter           |
+| 40–60 minutes    | A peak {{36 °F; 20 °C}} hotter           |
+| About 2 hours    | A peak {{54 °F; 30 °C}} hotter           |
+| 4–6 hours        | Enough to bend a cone two numbers hotter |
 
-Eine Haltezeit gibt es also nie umsonst: Wenn Sie eine hinzufügen, rechnen Sie damit, dass sich die Kegel weiter biegen, und senken Sie die Endtemperatur entsprechend.
+Orton adds that a hold of 1–2 hours "may be sufficient to deform the next higher cone number".
 
-### Kegelarten
+So a hold is never free: if you add one, expect the cones to bend further, and lower the peak to match.
 
-Orton stellt vier Arten her. Zwei stehen auf der Ofenplatte und zeigen, was die Ware abbekommen hat; zwei sind für den Kiln-Sitter.
+### Kinds of cone
 
-Table: Die vier Kegelarten von Orton
-Label: Kegelarten
+Orton makes four kinds. Two stand on the shelf to show what the ware received; two are for the kiln sitter.
 
-| Art                | Verwendung                   | Wie er steht                                                                                                         |
-| ------------------ | ---------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| Selbststehend      | Messkegel auf der Ofenplatte | Ein angeformter Fuß gibt die Höhe, 1¾ Zoll (44 mm), und die Neigung von 8° vor; kein Halter nötig                    |
-| Groß (Normalkegel) | Messkegel auf der Ofenplatte | In eine Unterlegplatte oder einen Tonklumpen gesteckt, genau 2 Zoll (51 mm) sichtbar, 8° aus der Senkrechten geneigt |
-| Klein (Laborkegel) | Kiln-Sitter                  | Liegt quer über den Kegelauflagen des Kiln-Sitters; auf einer Ofenplatte aufgestellt 15/16 Zoll (24 mm) sichtbar     |
-| Temperaturstäbchen | Kiln-Sitter                  | Dasselbe Pulver wie bei kleinen Kegeln, in gleichmäßiger Stäbchenform                                                |
+Table: Orton's four kinds of cone
+Label: Kinds of cone
 
-Die Höhe zählt: ¼ Zoll (6 mm) Unterschied in der Höhe eines Normalkegels „kann beim Biegen mehr als einen halben Kegel Unterschied ausmachen“. Kegel verderben oder altern nicht, und feuchte Lagerung schadet ihnen nicht.
+| Kind            | Used for                  | How it stands                                                                               |
+| --------------- | ------------------------- | ------------------------------------------------------------------------------------------- |
+| Self-supporting | Witness cone on the shelf | A built-in base sets the height, 1¾ in (44 mm), and the 8° lean; no holder needed           |
+| Large           | Witness cone on the shelf | Set in a plaque or a pat of clay with exactly 2 in (51 mm) showing, leaning 8° from upright |
+| Small (junior)  | Kiln sitter               | Lies across the sitter's supports; 15/16 in (24 mm) showing if stood on a shelf             |
+| Bar             | Kiln sitter               | The same powder as small cones, in an even bar shape                                        |
 
-### Was „Kegel 6“ in der Praxis bedeutet
+Height matters: a ¼ in (6 mm) difference in the height of a large cone "can cause more than a half cone difference in bending". Cones do not go bad or age, and damp storage does not affect them.
 
-Die Kegeltabelle gibt für einen selbststehenden Kegel 6 {{2232 °F; 1222 °C}} an, aber nur, wenn der Ofen in den letzten {{180 °F; 100 °C}} mit {{108 °F/h; 60 °C/h}} steigt. Bei einem Anstieg von {{270 °F/h; 150 °C/h}} biegt sich derselbe Kegel bei {{2269 °F; 1243 °C}}. Echte Öfen weichen noch einmal ab; Digitalfire berichtet: „Die meisten Öfen erreichen Kegel 6 bei 2200°F, nicht bei 2232°F“. „Kegel 6“ heißt also: Die Ware hat die Wärmearbeit bekommen, die einen Kegel 6 umbiegt, ganz gleich, was ein Thermometer dabei anzeigte.
+### What "cone 6" means in practice
+
+The chart gives a self-supporting cone 6 as {{2232 °F; 1222 °C}}, but only when the last {{180 °F; 100 °C}} climbs at {{108 °F/h; 60 °C/h}}. Climbing at {{270 °F/h; 150 °C/h}}, the same cone bends at {{2269 °F; 1243 °C}}. Real kilns differ again: Digitalfire reports that "Most kilns reach cone 6 at 2200°F, not 2232°F". So "cone 6" means the ware received the heatwork that bends a cone 6, whatever a thermometer read at the time.
 
 :::orton
 
 > [!NOTE]
-> Brennen Sie nach dem Kegel, nicht nach der Uhr oder der Anzeige. Stellen Sie eine Steuerung nach Kegelnummer ein, und lassen Sie jeden Brand von einem Messkegel auf der Ofenplatte bestätigen.
+> Fire by the cone, not the clock or the dial. Set a controller by cone number, and let a witness cone on the shelf confirm every firing.
 
 :::
 
 :::temperature
 
 > [!NOTE]
-> Wenn Sie nach Temperatur brennen, halten Sie das Ende jedes Brandes gleich: dieselbe Heizrate am Schluss, dieselbe Endtemperatur und dieselbe Haltezeit. Dann gelingt eine Glasur, die einmal gelungen ist, auch wieder.
+> Firing by temperature, keep the end of every firing the same: the same last rate of climb, the same peak and the same hold. Then a glaze that worked once works again.
 
 :::
 

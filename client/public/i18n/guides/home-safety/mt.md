@@ -129,25 +129,25 @@ Iċ-ċomb fid-demm jitkejjel f’**µg/dL** (mikrogrammi ta’ ċomb għal kull 
 
 Glazecalc iżomm iċ-ċomb mitfi sakemm ma tagħżlux int [fis-settings](/account). Meta ċ-ċomb ikun mitfi, qatt ma jżid iċ-ċomb ma’ riċetta u lanqas jissuġġerih.
 
-## L-annimali domestiċi {#pets}
+## Pets {#pets lang=en}
 
 > [!NOTE]
-> Ma sibna l-ebda studju jew parir veterinarju miktub għall-annimali domestiċi fid-djar tal-fuħħarin. Il-pariri f’din it-taqsima huma sens komun, mibnija fuq fatti ġenerali dwar iċ-ċomb, il-barju u l-għasafar. Ma ġejjinx minn sors veterinarju.
+> We found no veterinary study or guidance written for pets in potters' homes. The advice in this section is common sense, built on general facts about lead, barium and birds. It does not come from a veterinary source.
 
-### X’inhu magħruf
+### What is known
 
-Is-servizz Pet Poison Helpline jgħid li “Iċ-ċomb huwa tossiku għall-ispeċi kollha, iżda l-annimali żgħar u/jew malnutriti huma l-aktar f’riskju ta’ avvelenament”, b’sinjali bħal rimettar, dijarea, nuqqas ta’ aptit, tfixkil fil-mixi, aċċessjonijiet u għama. Kelb li kiel logħob tan-nar (sparklers) li kien fih il-barju (melħ solubbli tal-barju, mhux glejż{{en: glaze}}) żviluppa dgħjufija fil-muskoli, paraliżi, riq żejjed u taħbit irregolari tal-qalb, u rkupra bil-kura veterinarja. L-għasafar huma każ speċjali: veterinarju tal-Università ta’ Illinois jispjega li “L-għasafar għandhom sistema respiratorja sofistikata ħafna u effiċjenti ħafna, u dan jagħmilhom partikolarment vulnerabbli meta jiġbdu man-nifs dħaħen u aerosols.”
+The Pet Poison Helpline says "Lead is toxic for all species, but young and/or malnourished animals are at highest risk for poisoning", with signs such as vomiting, diarrhea, not eating, stumbling, seizures and blindness. A veterinary case report describes a dog that ate sparklers containing barium nitrate (a soluble barium salt, not a glaze material): it developed sudden weakness, drooling and an irregular heartbeat, and recovered with veterinary treatment. Birds are a special case: a University of Illinois vet explains that "Birds have a highly sophisticated and ultra efficient respiratory system, making them particularly vulnerable to the inhalation of fumes and aerosols."
 
-### Regoli ta’ sens komun
+### Common-sense rules
 
-- Żomm l-annimali domestiċi barra mill-istudjo, bil-bieb magħluq.
-- Il-klieb jomogħdu x-xkejjer u jixorbu mill-bramel. Żomm ix-xkejjer f’armarju magħluq u għatu fuq kull barmil.
-- Il-qtates jimxu fit-trab u jilagħquh minn riġlejhom u minn xagħarhom. Naddaf l-art bl-ilma u żomm il-qtates barra mill-istudjo, biex ma jkollhom xejn x’jilagħqu minn fuqhom.
-- L-għasafar u l-mammiferi żgħar (fniek, guinea pigs, hamsters) jieħdu n-nifs mill-istess arja tad-dar. Żommhom f’kamra ’l bogħod, bil-bieb magħluq, waqt li taħdem bil-materjali nexfin u waqt il-ħamja.
-- L-akkwarji jiġbru t-trab li jinżel fihom. Żommhom barra mill-istudjo, u mgħottijin.
-- Żomm l-iskutelli tal-ikel u tal-ilma tal-annimali ’l bogħod mill-istudjo u mill-forn, u uża skutelli kummerċjali jew ittestjati, mhux esperimenti tal-istudjo.
+- Keep pets out of the studio, with the door shut.
+- Dogs chew bags and drink from buckets. Keep bags in a closed cabinet and a lid on every bucket.
+- Cats walk through dust and lick it off their paws and fur. Wet-clean the floor and keep cats out of the studio, so there is nothing to groom off.
+- Birds and small mammals (rabbits, guinea pigs, hamsters) share the household air. Keep them in a far room with the door shut while you handle dry materials and while the kiln fires.
+- Fish tanks collect settling dust. Keep them out of the studio, and covered.
+- Keep pet food and water bowls away from the studio and kiln, and use commercial or tested bowls, not studio experiments.
 
-Jekk jista’ jkun li annimal domestiku kiel jew xorob xi ħaġa mill-istudjo, jew juri sinjali bħal dawk ta’ hawn fuq, ċempel lill-veterinarju tiegħek jew lil xi linja tal-veleni għall-annimali (ara t-tabella fil-bidu tal-paġna), u żomm f’idejk l-isem tal-materjal u l-piż tal-annimal.
+If a pet may have eaten or drunk anything from the studio, or shows signs like those above, call your vet or an animal poison line (see the table at the top), with the material's name and the pet's weight to hand.
 
 ## Il-forn {#the-kiln}
 
@@ -220,40 +220,41 @@ Ix-**xegħir**{{en: crazing}} huwa xibka ta’ xquq fini fil-wiċċ tal-glejż, 
 
 Għal aktar dwar kif jdubu l-glejżijiet, għaliex xi wħud jirrilaxxaw il-metalli u x’ifissru l-limiti, ara l-gwida [Il-glejż mill-bidu nett](/guides/glazing-basics).
 
-## Sorsi {#sources}
+## Sources {#sources lang=en}
 
 - [America's Poison Centers: Poison Help](https://poisoncenters.org/)
 - [Poison Control (poison.org): webPOISONCONTROL](https://www.poison.org/)
 - [NHS: Poisoning](https://www.nhs.uk/conditions/poisoning/)
-- [National Poisons Information Service (ir-Renju Unit)](https://www.npis.org/)
+- [National Poisons Information Service (UK)](https://www.npis.org/)
 - [National Poisons Information Centre of Ireland: Public Poisons Line](https://www.poisons.ie/)
 - [European Commission: 112, the European emergency number](https://digital-strategy.ec.europa.eu/en/policies/112)
 - [healthdirect: Poisoning](https://www.healthdirect.gov.au/poisoning)
 - [National Poisons Centre (New Zealand)](https://www.poisons.co.nz/)
 - [ASPCA: Animal Poison Control](https://www.aspca.org/pet-care/animal-poison-control)
 - [Pet Poison Helpline](https://www.petpoisonhelpline.com/)
-- [Animal PoisonLine (ir-Renju Unit)](https://www.animalpoisonline.co.uk/)
-- [Animal Poisons Helpline (l-Awstralja u New Zealand)](https://animalpoisons.com.au/)
+- [Animal PoisonLine (UK)](https://www.animalpoisonline.co.uk/)
+- [Animal Poisons Helpline (Australia and New Zealand)](https://animalpoisons.com.au/)
 - [PubMed Central: Acute soluble barium poisoning, a review (2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC11700400)
 - [WikEM: Boron toxicity](https://wikem.org/wiki/Boron_toxicity)
-- [NPIC u l-EPA tal-Istati Uniti: Recognition and Management of Pesticide Poisonings, kapitolu 9 (PDF)](https://www.npic.orst.edu/RMPP/rmpp_ch9.pdf)
+- [NPIC and US EPA: Recognition and Management of Pesticide Poisonings, chapter 9 (PDF)](https://www.npic.orst.edu/RMPP/rmpp_ch9.pdf)
 - [medlibrary.org: Lithium carbonate prescribing information](https://medlibrary.org/lib/rx/meds/lithium-carbonate-16/page/2/)
 - [CDC: About Lead in Jobs, Hobbies, or Other Activities](https://cdc.gov/lead-prevention/prevention/jobs-hobbies-activities.html)
 - [CDC: Blood Lead Reference Value](https://www.cdc.gov/nceh/lead/data/blood-lead-reference-value.htm)
 - [US EPA: Children's health booklet (2018, PDF)](https://19january2021snapshot.epa.gov/sites/static/files/2018-10/documents/childrenshealthbooklet2018_final-4_newlinks.pdf)
 - [Pennsylvania Department of Health: Non-Occupational Lead Exposure (PDF)](https://www.health.pa.gov:443/topics/Documents/Environmental%20Health/Non-Occupational%20Lead%20Exposure.pdf)
 - [Western Carolina University: Ceramics Safety](https://www.wcu.edu/discover/campus-services-and-operations/facilities-management/safety-and-risk-management/visual-arts-theatre-safety/ceramics-safety.aspx)
-- [Crafts Council (ir-Renju Unit): How to make your pottery practice greener](https://craftscouncil.org.uk/stories/how-make-your-pottery-practice-greener)
+- [Crafts Council (UK): How to make your pottery practice greener](https://craftscouncil.org.uk/stories/how-make-your-pottery-practice-greener)
 - [Pet Poison Helpline: Lead](https://www.petpoisonhelpline.com/poison/lead/)
+- [Vet Candy: Sparkler ingestion results in barium toxicity](https://www.myvetcandy.com/clinicalupdblog/2019/3/15/sparkler-ingestion-results-in-barium-toxicity)
 - [University of Illinois College of Veterinary Medicine: Bird toxins](https://vetmed.illinois.edu/pet-health-columns/bird-toxins-teflon-avocado-lead-zinc/)
 - [Skutt: Designing a Kiln Room (PDF)](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Designing-A-Kiln-Room-1.pdf)
-- [Kiln Management, pubblikazzjoni għall-iskejjel (PDF)](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Kiln-Management-1.pdf)
+- [Kiln Management guide for schools (PDF)](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Kiln-Management-1.pdf)
 - [L&L Kiln: Front-loader installation checklist (PDF)](https://www.theceramicshop.com/downloads/LLFLChecklist.pdf)
 - [Rio Grande: PMC Kilns Handbook (PDF)](https://products.riogrande.com/content/Instruction-Sheets/RioGrande-PMC-Kilns-Handbook-IS.pdf)
-- [Dawson: il-manwal tal-Kiln-Sitter LT-3 (PDF)](https://oud.klei.nl/forum/bestanden/f675ae4a-d890-4b8b-a08e-173e652f25a6/KilnSitter%20lt3%20en%20lt3k.pdf)
+- [Dawson: Kiln-Sitter LT-3 manual (PDF)](https://oud.klei.nl/forum/bestanden/f675ae4a-d890-4b8b-a08e-173e652f25a6/KilnSitter%20lt3%20en%20lt3k.pdf)
 - [Ceramic Arts Network: In the Studio, Eye Health for Potters](https://ceramicartsnetwork.org/pottery-making-illustrated/pottery-making-illustrated-article/In-the-Studio-Eye-Health-for-Potters)
 - [FDA: Questions and Answers on Lead-Glazed Traditional Pottery](https://www.fda.gov/food/environmental-contaminants-food/questions-and-answers-lead-glazed-traditional-pottery)
-- [FDA: Compliance Policy Guide 545.450, iċ-ċomb fiċ-ċeramika (PDF)](https://www.fda.gov/media/71764/download)
+- [FDA: Compliance Policy Guide 545.450, lead in pottery (PDF)](https://www.fda.gov/media/71764/download)
 - [Digitalfire: Food Safe](https://digitalfire.com/glossary/food+safe)
 - [Ceramics NZ: Is it food safe?](https://ceramicsnz.org/news/is-it-food-safe/)
 - [Ceramic Arts Network: Techno File, Dirty Dishes](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/Techno-File-Dirty-Dishes)

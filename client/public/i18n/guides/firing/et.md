@@ -3,78 +3,79 @@ title: Põletamine lihtsas keraamikaahjus
 lead: Kuidas põletada elektriahjus Kiln-Sitteri või käsilülititega: koonuste valimine, paigutamine ja lugemine ning avaldatud põletusprogrammid eel- ja glasuuripõletuseks.
 ---
 
-## Koonused: mida need mõõdavad {#cones}
+## Cones: what they measure {#cones lang=en}
 
 > [!NOTE]
-> Järgige esmalt oma ahju kasutusjuhendit. See juhend koondab seda, mida koonuste ja ahjude tootjad lihtsate elektriahjude kohta avaldavad; see ei asenda teie ahjumudeli juhiseid ja kui juhend ja kasutusjuhend erinevad, kehtib kasutusjuhend.
+> Follow your kiln's own manual first. This guide gathers what cone and kiln makers publish about basic electric kilns; it does not replace the instructions for your model, and where the two differ, the manual wins.
 
-**Püromeetriline koonus**{{en: pyrometric cone}} on väike sihvakas püramiid, mis on valmistatud standarditud keraamilisest pulbrist. Kui see on saanud piisavalt kuumust, pehmeneb see ja paindub alati ühtemoodi. Koonused pannakse ahju esemete kõrvale ja vaadatakse, kui kaugele need paindusid.
+A **pyrometric cone** is a small, slender pyramid made from a standardized ceramic powder. When it has had enough heat, it softens and bends over in a repeatable way. You set cones in the kiln beside the ware and read how far they bent.
 
-Koonused mõõdavad **kuumustööd**{{en: heatwork}}, temperatuuri ja aja koosmõju. USA peamise koonusetootja Ortoni sõnul: „Koonused ei mõõda ainult temperatuuri.“ Aeglaselt kuumutatud koonus paindub madalamal temperatuuril kui kiiresti kuumutatud koonus ja glasuur{{en: glaze}} käitub samamoodi. Seepärast annab Orton iga koonuse temperatuuri kindla kuumutuskiiruse kohta põletuse viimase {{180 °F; 100 °C}} jooksul. Kui koonus hakkab liikuma, paindub see kitsas temperatuurivahemikus, „tavaliselt alla 40° F“ (22 °C).
+Cones measure **heatwork**, the combined effect of temperature and time. In the words of Orton, the main US cone maker, "Cones do not measure temperature alone." A cone heated slowly bends at a lower temperature than one heated fast, and a glaze behaves the same way. So Orton gives each cone's temperature for a stated heating rate over the last {{180 °F; 100 °C}} of the firing. Once a cone starts to move, it bends over a narrow range, "usually less than 40° F" (22 °C).
 
-### Koonuste numbrid
+### Cone numbers
 
-Koonuste numbrid algavad jahedaimast koonusest 022 ja lõpevad koonusega 42. Ees olev null tähistab jahedamat seeriat ja seda loetakse nullina: koonus 06 („null kuus“) on jahedam kui koonus 04 ja koonus 01 vajab vähem kuumust kui koonus 1. Orton hoiatab, et kaht seeriat on oluline mitte segi ajada. Vahe on suur: koonus 06 paindub temperatuuril, mis on üle {{400 °F; 220 °C}} madalam kui koonusel 6.
+Cone numbers run from 022, the coolest, up to 42. A leading zero marks the cooler series and is read as "oh": cone 06 ("oh-six") is cooler than cone 04, and cone 01 needs less heat than cone 1. Orton warns that it is important not to mix the two series up. The gap is large: cone 06 bends more than {{400 °F; 220 °C}} cooler than cone 6.
 
-Table: Tavalised põletusvahemikud isetoetuvate koonuste puhul kuumutuskiirusel {{108 °F/h; 60 °C/h}}
-Label: Põletusvahemikud
+Table: Common firing ranges, for self-supporting cones at {{108 °F/h; 60 °C/h}}
+Label: Firing ranges
 
-| Vahemik     | Koonused |                    Temperatuur | Tavaline kasutus                                                            |
-| ----------- | -------- | -----------------------------: | --------------------------------------------------------------------------- |
-| Madalkuumus | 06–04    |  {{1828–1945 °F; 998–1063 °C}} | Madalkuumuskeraamika{{en: earthenware}} glasuurid; eelpõletus{{en: bisque}} |
-| Keskkuumus  | 5–6      | {{2167–2232 °F; 1186–1222 °C}} | Kivikeraamika{{en: stoneware}} ja portselan elektriahjus                    |
-| Kõrgkuumus  | 9–10     | {{2300–2345 °F; 1260–1285 °C}} | Peamiselt gaasiahjus põletatav kivikeraamika ja portselan                   |
+| Range     | Cones |                    Temperature | Typical use                              |
+| --------- | ----- | -----------------------------: | ---------------------------------------- |
+| Low fire  | 06–04 |  {{1828–1945 °F; 998–1063 °C}} | Earthenware glazes; bisque               |
+| Mid fire  | 5–6   | {{2167–2232 °F; 1186–1222 °C}} | Electric-kiln stoneware and porcelain    |
+| High fire | 9–10  | {{2300–2345 °F; 1260–1285 °C}} | Mostly gas-fired stoneware and porcelain |
 
-Ühendkuningriigi, Euroopa, Austraalia ja Uus-Meremaa tarnijad annavad sageli koonuse asemel temperatuuri (°C): leidke allolevast tabelist lähim koonus ja kontrollige seda **kontrollkoonusega**{{en: witness cone}}. Ei peaks eeldama, et Segeri ja Staffordshire’i koonustel, vanematel Euroopa seeriatel, on samad numbrid kui Ortoni koonustel, seepärast kasutab see juhend Ortoni koonuseid.
+Suppliers in the UK, Europe, Australia and New Zealand often give a temperature in °C rather than a cone: find the nearest cone in the chart below and confirm it with a witness cone. Seger and Staffordshire cones, the older European series, should not be assumed to share Orton's numbers, so this guide uses Orton cones.
 
-### Hoid lisab kuumustööd
+### Holding adds heatwork
 
-**Hoid**{{en: hold}} ehk **hoideaeg**{{en: soak}} tähendab, et ahju hoitakse mõnda aega ühel temperatuuril. Kuna koonused mõõdavad kuumustööd, võib hoid lõpptemperatuuril asendada kõrgemat lõpptemperatuuri. Orton annab järgmised ligikaudsed vasted:
+A **hold** (also called a **soak**) keeps the kiln at one temperature for a while. Because cones measure heatwork, a hold at the top can stand in for a hotter peak. Orton gives these rough equivalents:
 
-Table: Mida annab hoid lõpptemperatuuril
-Label: Hoid ja kuumustöö
+Table: What a hold at the peak is worth
+Label: Holds and heatwork
 
-| Hoid             | Ligikaudu sama kuumustöö kui                                            |
-| ---------------- | ----------------------------------------------------------------------- |
-| Umbes 20 minutit | {{18 °F; 10 °C}} kõrgem lõpptemperatuur                                 |
-| 40–60 minutit    | {{36 °F; 20 °C}} kõrgem lõpptemperatuur                                 |
-| Umbes 2 tundi    | {{54 °F; 30 °C}} kõrgem lõpptemperatuur                                 |
-| 1–2 tundi        | „võib piisata järgmise, ühe numbri võrra kuumema koonuse painutamiseks“ |
-| 4–6 tundi        | Piisab kahe numbri võrra kuumema koonuse painutamiseks                  |
+| Hold             | Roughly the same heatwork as             |
+| ---------------- | ---------------------------------------- |
+| About 20 minutes | A peak {{18 °F; 10 °C}} hotter           |
+| 40–60 minutes    | A peak {{36 °F; 20 °C}} hotter           |
+| About 2 hours    | A peak {{54 °F; 30 °C}} hotter           |
+| 4–6 hours        | Enough to bend a cone two numbers hotter |
 
-Hoid ei ole seega kunagi tasuta: kui lisate hoiu, arvestage, et koonused painduvad rohkem, ja langetage lõpptemperatuuri vastavalt.
+Orton adds that a hold of 1–2 hours "may be sufficient to deform the next higher cone number".
 
-### Koonuste liigid
+So a hold is never free: if you add one, expect the cones to bend further, and lower the peak to match.
 
-Orton valmistab nelja liiki koonuseid. Kaks seisavad ahjuplaadil ja näitavad, mida esemed said; kaks on Kiln-Sitteri jaoks.
+### Kinds of cone
 
-Table: Ortoni neli koonuseliiki
-Label: Koonuste liigid
+Orton makes four kinds. Two stand on the shelf to show what the ware received; two are for the kiln sitter.
 
-| Liik               | Kasutus                    | Kuidas see seisab                                                                                          |
-| ------------------ | -------------------------- | ---------------------------------------------------------------------------------------------------------- |
-| Isetoetuv          | Kontrollkoonus ahjuplaadil | Sisseehitatud alus määrab kõrguse, 1¾ tolli (44 mm), ja 8° kalde; hoidikut pole vaja                       |
-| Suur               | Kontrollkoonus ahjuplaadil | Pannakse koonusealusesse või savitükki nii, et välja jääb täpselt 2 tolli (51 mm), 8° kaldega vertikaalist |
-| Väike (minikoonus) | Kiln-Sitter                | Lebab risti Kiln-Sitteri tugedel; ahjuplaadile püsti pannes jääb välja 15/16 tolli (24 mm)                 |
-| Pulk               | Kiln-Sitter                | Sama pulber kui väikestel koonustel, ühtlase pulga kujul                                                   |
+Table: Orton's four kinds of cone
+Label: Kinds of cone
 
-Kõrgus on oluline: kui suure koonuse kõrgus erineb ¼ tolli (6 mm), „võib see põhjustada paindumises rohkem kui poole koonuse erinevuse“. Koonused ei rikne ega vanane ja niiske hoiukoht neid ei mõjuta.
+| Kind            | Used for                  | How it stands                                                                               |
+| --------------- | ------------------------- | ------------------------------------------------------------------------------------------- |
+| Self-supporting | Witness cone on the shelf | A built-in base sets the height, 1¾ in (44 mm), and the 8° lean; no holder needed           |
+| Large           | Witness cone on the shelf | Set in a plaque or a pat of clay with exactly 2 in (51 mm) showing, leaning 8° from upright |
+| Small (junior)  | Kiln sitter               | Lies across the sitter's supports; 15/16 in (24 mm) showing if stood on a shelf             |
+| Bar             | Kiln sitter               | The same powder as small cones, in an even bar shape                                        |
 
-### Mida „koonus 6“ tegelikult tähendab
+Height matters: a ¼ in (6 mm) difference in the height of a large cone "can cause more than a half cone difference in bending". Cones do not go bad or age, and damp storage does not affect them.
 
-Tabel annab isetoetuva koonuse 6 temperatuuriks {{2232 °F; 1222 °C}}, kuid ainult siis, kui temperatuur tõuseb viimased {{180 °F; 100 °C}} kiirusega {{108 °F/h; 60 °C/h}}. Kiirusel {{270 °F/h; 150 °C/h}} paindub sama koonus temperatuuril {{2269 °F; 1243 °C}}. Päris ahjud erinevad veelgi: Digitalfire teatab, et „Enamik ahje jõuab koonuseni 6 temperatuuril 2200°F, mitte 2232°F“. Seega tähendab „koonus 6“, et esemed said kuumustöö, mis painutab koonuse 6, ükskõik mida termomeeter sel ajal näitas.
+### What "cone 6" means in practice
+
+The chart gives a self-supporting cone 6 as {{2232 °F; 1222 °C}}, but only when the last {{180 °F; 100 °C}} climbs at {{108 °F/h; 60 °C/h}}. Climbing at {{270 °F/h; 150 °C/h}}, the same cone bends at {{2269 °F; 1243 °C}}. Real kilns differ again: Digitalfire reports that "Most kilns reach cone 6 at 2200°F, not 2232°F". So "cone 6" means the ware received the heatwork that bends a cone 6, whatever a thermometer read at the time.
 
 :::orton
 
 > [!NOTE]
-> Põletage koonuse, mitte kella või näidiku järgi. Seadke kontroller koonuse numbri järgi ja laske ahjuplaadil oleval kontrollkoonusel iga põletust kinnitada.
+> Fire by the cone, not the clock or the dial. Set a controller by cone number, and let a witness cone on the shelf confirm every firing.
 
 :::
 
 :::temperature
 
 > [!NOTE]
-> Temperatuuri järgi põletades hoidke iga põletuse lõpp samasugune: sama viimane tõusukiirus, sama lõpptemperatuur ja sama hoid. Siis töötab kord õnnestunud glasuur ka uuesti.
+> Firing by temperature, keep the end of every firing the same: the same last rate of climb, the same peak and the same hold. Then a glaze that worked once works again.
 
 :::
 

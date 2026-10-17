@@ -129,25 +129,25 @@ Svinec v krvi se meri v **µg/dL** (mikrogramih svinca na deciliter, to je deset
 
 Glazecalc ima svinec izklopljen, razen če ga izberete v [nastavitvah](/account). Ko je svinec izklopljen, ga aplikacija nikoli ne doda v recept in ga nikoli ne predlaga.
 
-## Hišni ljubljenčki {#pets}
+## Pets {#pets lang=en}
 
 > [!NOTE]
-> Nismo našli nobene veterinarske študije ali smernic, napisanih za hišne ljubljenčke v domovih lončarjev. Nasveti v tem razdelku so zdrava pamet, ki temelji na splošnih dejstvih o svincu, bariju in pticah. Ne izhajajo iz veterinarskega vira.
+> We found no veterinary study or guidance written for pets in potters' homes. The advice in this section is common sense, built on general facts about lead, barium and birds. It does not come from a veterinary source.
 
-### Kaj je znano
+### What is known
 
-Pet Poison Helpline navaja, da je »svinec strupen za vse vrste, največje tveganje za zastrupitev pa imajo mlade in/ali podhranjene živali«, z znaki, kot so bruhanje, driska, odklanjanje hrane, opotekanje, napadi krčev in slepota. Pes, ki je pojedel bengalske vžigalice, ki so vsebovale barij (topno barijevo sol, ne glazuro), je dobil mišično šibkost, ohromitev, slinjenje in neredni srčni utrip ter si je z veterinarskim zdravljenjem opomogel. Ptice so poseben primer: veterinar z Univerze v Illinoisu pojasnjuje, da »imajo ptice zelo izpopolnjen in izjemno učinkovit dihalni sistem, zato so še posebej ranljive pri vdihavanju hlapov in aerosolov«.
+The Pet Poison Helpline says "Lead is toxic for all species, but young and/or malnourished animals are at highest risk for poisoning", with signs such as vomiting, diarrhea, not eating, stumbling, seizures and blindness. A veterinary case report describes a dog that ate sparklers containing barium nitrate (a soluble barium salt, not a glaze material): it developed sudden weakness, drooling and an irregular heartbeat, and recovered with veterinary treatment. Birds are a special case: a University of Illinois vet explains that "Birds have a highly sophisticated and ultra efficient respiratory system, making them particularly vulnerable to the inhalation of fumes and aerosols."
 
-### Pravila zdrave pameti
+### Common-sense rules
 
-- Hišnih ljubljenčkov ne spuščajte v delavnico in imejte vrata zaprta.
-- Psi grizejo vreče in pijejo iz veder. Vreče hranite v zaprti omari, vsako vedro pa naj ima pokrov.
-- Mačke hodijo po prahu in ga ližejo s tačk in dlake. Tla čistite mokro in mačk ne spuščajte v delavnico, da ne bo ničesar, kar bi si lahko polizale s kožuha.
-- Ptice in mali sesalci (kunci, morski prašički, hrčki) dihajo isti zrak kot vsi v hiši. Ko delate s suhimi surovinami in ko peč žge, jih imejte v oddaljenem prostoru z zaprtimi vrati.
-- V akvarijih se nabira prah, ki se useda. Akvariji naj ne bodo v delavnici in naj bodo pokriti.
-- Sklede za hrano in vodo hišnih ljubljenčkov imejte stran od delavnice in peči ter uporabljajte kupljene ali preskušene sklede, ne pa poskusnih kosov iz delavnice.
+- Keep pets out of the studio, with the door shut.
+- Dogs chew bags and drink from buckets. Keep bags in a closed cabinet and a lid on every bucket.
+- Cats walk through dust and lick it off their paws and fur. Wet-clean the floor and keep cats out of the studio, so there is nothing to groom off.
+- Birds and small mammals (rabbits, guinea pigs, hamsters) share the household air. Keep them in a far room with the door shut while you handle dry materials and while the kiln fires.
+- Fish tanks collect settling dust. Keep them out of the studio, and covered.
+- Keep pet food and water bowls away from the studio and kiln, and use commercial or tested bowls, not studio experiments.
 
-Če je hišni ljubljenček morda pojedel ali popil kar koli iz delavnice ali kaže znake, kot so opisani zgoraj, pokličite svojega veterinarja ali linijo za zastrupitve živali (glejte preglednico na vrhu) in imejte pri roki ime surovine in težo živali.
+If a pet may have eaten or drunk anything from the studio, or shows signs like those above, call your vet or an animal poison line (see the table at the top), with the material's name and the pet's weight to hand.
 
 ## Peč {#the-kiln}
 
@@ -220,40 +220,41 @@ Domači testi so sporni. FDA pravi, da lahko kompleti za domače testiranje z br
 
 Več o tem, kako se glazure stalijo, zakaj se iz nekaterih sproščajo kovine in kaj pomenijo mejne vrednosti, preberite v vodniku [Glaziranje od osnov](/guides/glazing-basics).
 
-## Viri {#sources}
+## Sources {#sources lang=en}
 
 - [America's Poison Centers: Poison Help](https://poisoncenters.org/)
 - [Poison Control (poison.org): webPOISONCONTROL](https://www.poison.org/)
 - [NHS: Poisoning](https://www.nhs.uk/conditions/poisoning/)
-- [National Poisons Information Service (Združeno kraljestvo)](https://www.npis.org/)
+- [National Poisons Information Service (UK)](https://www.npis.org/)
 - [National Poisons Information Centre of Ireland: Public Poisons Line](https://www.poisons.ie/)
 - [European Commission: 112, the European emergency number](https://digital-strategy.ec.europa.eu/en/policies/112)
 - [healthdirect: Poisoning](https://www.healthdirect.gov.au/poisoning)
-- [National Poisons Centre (Nova Zelandija)](https://www.poisons.co.nz/)
+- [National Poisons Centre (New Zealand)](https://www.poisons.co.nz/)
 - [ASPCA: Animal Poison Control](https://www.aspca.org/pet-care/animal-poison-control)
 - [Pet Poison Helpline](https://www.petpoisonhelpline.com/)
-- [Animal PoisonLine (Združeno kraljestvo)](https://www.animalpoisonline.co.uk/)
-- [Animal Poisons Helpline (Avstralija in Nova Zelandija)](https://animalpoisons.com.au/)
+- [Animal PoisonLine (UK)](https://www.animalpoisonline.co.uk/)
+- [Animal Poisons Helpline (Australia and New Zealand)](https://animalpoisons.com.au/)
 - [PubMed Central: Acute soluble barium poisoning, a review (2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC11700400)
 - [WikEM: Boron toxicity](https://wikem.org/wiki/Boron_toxicity)
-- [NPIC in US EPA: Recognition and Management of Pesticide Poisonings, poglavje 9 (PDF)](https://www.npic.orst.edu/RMPP/rmpp_ch9.pdf)
+- [NPIC and US EPA: Recognition and Management of Pesticide Poisonings, chapter 9 (PDF)](https://www.npic.orst.edu/RMPP/rmpp_ch9.pdf)
 - [medlibrary.org: Lithium carbonate prescribing information](https://medlibrary.org/lib/rx/meds/lithium-carbonate-16/page/2/)
 - [CDC: About Lead in Jobs, Hobbies, or Other Activities](https://cdc.gov/lead-prevention/prevention/jobs-hobbies-activities.html)
 - [CDC: Blood Lead Reference Value](https://www.cdc.gov/nceh/lead/data/blood-lead-reference-value.htm)
-- [US EPA: brošura o zdravju otrok (2018, PDF)](https://19january2021snapshot.epa.gov/sites/static/files/2018-10/documents/childrenshealthbooklet2018_final-4_newlinks.pdf)
+- [US EPA: Children's health booklet (2018, PDF)](https://19january2021snapshot.epa.gov/sites/static/files/2018-10/documents/childrenshealthbooklet2018_final-4_newlinks.pdf)
 - [Pennsylvania Department of Health: Non-Occupational Lead Exposure (PDF)](https://www.health.pa.gov:443/topics/Documents/Environmental%20Health/Non-Occupational%20Lead%20Exposure.pdf)
 - [Western Carolina University: Ceramics Safety](https://www.wcu.edu/discover/campus-services-and-operations/facilities-management/safety-and-risk-management/visual-arts-theatre-safety/ceramics-safety.aspx)
-- [Crafts Council (Združeno kraljestvo): How to make your pottery practice greener](https://craftscouncil.org.uk/stories/how-make-your-pottery-practice-greener)
+- [Crafts Council (UK): How to make your pottery practice greener](https://craftscouncil.org.uk/stories/how-make-your-pottery-practice-greener)
 - [Pet Poison Helpline: Lead](https://www.petpoisonhelpline.com/poison/lead/)
+- [Vet Candy: Sparkler ingestion results in barium toxicity](https://www.myvetcandy.com/clinicalupdblog/2019/3/15/sparkler-ingestion-results-in-barium-toxicity)
 - [University of Illinois College of Veterinary Medicine: Bird toxins](https://vetmed.illinois.edu/pet-health-columns/bird-toxins-teflon-avocado-lead-zinc/)
 - [Skutt: Designing a Kiln Room (PDF)](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Designing-A-Kiln-Room-1.pdf)
-- [Kiln Management, priročnik za šole (PDF)](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Kiln-Management-1.pdf)
+- [Kiln Management guide for schools (PDF)](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Kiln-Management-1.pdf)
 - [L&L Kiln: Front-loader installation checklist (PDF)](https://www.theceramicshop.com/downloads/LLFLChecklist.pdf)
 - [Rio Grande: PMC Kilns Handbook (PDF)](https://products.riogrande.com/content/Instruction-Sheets/RioGrande-PMC-Kilns-Handbook-IS.pdf)
-- [Dawson: navodila za uporabo stikala Kiln-Sitter LT-3 (PDF)](https://oud.klei.nl/forum/bestanden/f675ae4a-d890-4b8b-a08e-173e652f25a6/KilnSitter%20lt3%20en%20lt3k.pdf)
+- [Dawson: Kiln-Sitter LT-3 manual (PDF)](https://oud.klei.nl/forum/bestanden/f675ae4a-d890-4b8b-a08e-173e652f25a6/KilnSitter%20lt3%20en%20lt3k.pdf)
 - [Ceramic Arts Network: In the Studio, Eye Health for Potters](https://ceramicartsnetwork.org/pottery-making-illustrated/pottery-making-illustrated-article/In-the-Studio-Eye-Health-for-Potters)
 - [FDA: Questions and Answers on Lead-Glazed Traditional Pottery](https://www.fda.gov/food/environmental-contaminants-food/questions-and-answers-lead-glazed-traditional-pottery)
-- [FDA: Compliance Policy Guide 545.450, svinec v keramiki (PDF)](https://www.fda.gov/media/71764/download)
+- [FDA: Compliance Policy Guide 545.450, lead in pottery (PDF)](https://www.fda.gov/media/71764/download)
 - [Digitalfire: Food Safe](https://digitalfire.com/glossary/food+safe)
 - [Ceramics NZ: Is it food safe?](https://ceramicsnz.org/news/is-it-food-safe/)
 - [Ceramic Arts Network: Techno File, Dirty Dishes](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/Techno-File-Dirty-Dishes)

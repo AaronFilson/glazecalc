@@ -129,25 +129,25 @@ Label: 水溶性の原料
 
 Glazecalc では、[設定](/account) でオンにしない限り、鉛はオフのままです。オフのときは、調合に鉛を加えることも、鉛を提案することも決してありません。
 
-## ペット {#pets}
+## Pets {#pets lang=en}
 
 > [!NOTE]
-> 陶芸をする人の家庭のペットについて書かれた獣医学の研究や指針は見つかりませんでした。この節の助言は、鉛、バリウム、鳥についての一般的な事実に基づく常識的なものです。獣医学の資料に基づくものではありません。
+> We found no veterinary study or guidance written for pets in potters' homes. The advice in this section is common sense, built on general facts about lead, barium and birds. It does not come from a veterinary source.
 
-### わかっていること
+### What is known
 
-Pet Poison Helpline は、「鉛はすべての動物種にとって有毒ですが、幼い動物や栄養不良の動物は中毒のリスクが最も高い」とし、嘔吐、下痢、食べない、ふらつき、けいれん発作、失明などの症状を挙げています。バリウムを含む花火（釉薬{{en: glaze}}ではなく、水溶性のバリウム塩）を食べた犬は、筋力低下、麻痺、よだれ、不整脈を起こし、獣医師の治療で回復しました。鳥は特別です。イリノイ大学の獣医師は、「鳥は非常に高度で極めて効率のよい呼吸器系を持っているため、煙やエアロゾルを吸い込むことに特に弱い」と説明しています。
+The Pet Poison Helpline says "Lead is toxic for all species, but young and/or malnourished animals are at highest risk for poisoning", with signs such as vomiting, diarrhea, not eating, stumbling, seizures and blindness. A veterinary case report describes a dog that ate sparklers containing barium nitrate (a soluble barium salt, not a glaze material): it developed sudden weakness, drooling and an irregular heartbeat, and recovered with veterinary treatment. Birds are a special case: a University of Illinois vet explains that "Birds have a highly sophisticated and ultra efficient respiratory system, making them particularly vulnerable to the inhalation of fumes and aerosols."
 
-### 常識的なルール
+### Common-sense rules
 
-- ペットは工房に入れず、ドアを閉めておいてください。
-- 犬は袋をかじり、バケツの水を飲みます。袋は扉の閉まる戸棚に入れ、すべてのバケツにふたをしてください。
-- 猫は粉じんの上を歩き、足や毛に付いたものをなめ取ります。床を水拭きし、猫を工房に入れないでください。そうすれば、毛づくろいでなめ取るものがなくなります。
-- 鳥や小動物（ウサギ、モルモット、ハムスター）は、家の中の空気を共有しています。乾いた原料を扱っている間と窯を焚いている間は、離れた部屋に入れてドアを閉めておいてください。
-- 水槽には沈んでくる粉じんがたまります。水槽は工房の外に置き、ふたをしてください。
-- ペットのえさ入れや水入れは工房や窯から離して置き、工房で試作したものではなく、市販のものか試験済みのものを使ってください。
+- Keep pets out of the studio, with the door shut.
+- Dogs chew bags and drink from buckets. Keep bags in a closed cabinet and a lid on every bucket.
+- Cats walk through dust and lick it off their paws and fur. Wet-clean the floor and keep cats out of the studio, so there is nothing to groom off.
+- Birds and small mammals (rabbits, guinea pigs, hamsters) share the household air. Keep them in a far room with the door shut while you handle dry materials and while the kiln fires.
+- Fish tanks collect settling dust. Keep them out of the studio, and covered.
+- Keep pet food and water bowls away from the studio and kiln, and use commercial or tested bowls, not studio experiments.
 
-ペットが工房の何かを食べたり飲んだりしたかもしれないとき、または上のような症状が見られるときは、原料名とペットの体重を手元に用意して、獣医師か動物の中毒相談窓口（上の表を参照）に電話してください。
+If a pet may have eaten or drunk anything from the studio, or shows signs like those above, call your vet or an animal poison line (see the table at the top), with the material's name and the pet's weight to hand.
 
 ## 窯 {#the-kiln}
 
@@ -220,20 +220,20 @@ Rio Grande は、正しく接地されたコンセントのある**専用回路*
 
 釉薬が溶けるしくみ、溶出が起こる理由、限度の意味について詳しくは、「[基礎から学ぶ釉薬](/guides/glazing-basics)」を参照してください。
 
-## 出典 {#sources}
+## Sources {#sources lang=en}
 
 - [America's Poison Centers: Poison Help](https://poisoncenters.org/)
 - [Poison Control (poison.org): webPOISONCONTROL](https://www.poison.org/)
 - [NHS: Poisoning](https://www.nhs.uk/conditions/poisoning/)
-- [National Poisons Information Service（英国）](https://www.npis.org/)
+- [National Poisons Information Service (UK)](https://www.npis.org/)
 - [National Poisons Information Centre of Ireland: Public Poisons Line](https://www.poisons.ie/)
 - [European Commission: 112, the European emergency number](https://digital-strategy.ec.europa.eu/en/policies/112)
 - [healthdirect: Poisoning](https://www.healthdirect.gov.au/poisoning)
-- [National Poisons Centre（ニュージーランド）](https://www.poisons.co.nz/)
+- [National Poisons Centre (New Zealand)](https://www.poisons.co.nz/)
 - [ASPCA: Animal Poison Control](https://www.aspca.org/pet-care/animal-poison-control)
 - [Pet Poison Helpline](https://www.petpoisonhelpline.com/)
-- [Animal PoisonLine（英国）](https://www.animalpoisonline.co.uk/)
-- [Animal Poisons Helpline（オーストラリア・ニュージーランド）](https://animalpoisons.com.au/)
+- [Animal PoisonLine (UK)](https://www.animalpoisonline.co.uk/)
+- [Animal Poisons Helpline (Australia and New Zealand)](https://animalpoisons.com.au/)
 - [PubMed Central: Acute soluble barium poisoning, a review (2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC11700400)
 - [WikEM: Boron toxicity](https://wikem.org/wiki/Boron_toxicity)
 - [NPIC and US EPA: Recognition and Management of Pesticide Poisonings, chapter 9 (PDF)](https://www.npic.orst.edu/RMPP/rmpp_ch9.pdf)
@@ -243,8 +243,9 @@ Rio Grande は、正しく接地されたコンセントのある**専用回路*
 - [US EPA: Children's health booklet (2018, PDF)](https://19january2021snapshot.epa.gov/sites/static/files/2018-10/documents/childrenshealthbooklet2018_final-4_newlinks.pdf)
 - [Pennsylvania Department of Health: Non-Occupational Lead Exposure (PDF)](https://www.health.pa.gov:443/topics/Documents/Environmental%20Health/Non-Occupational%20Lead%20Exposure.pdf)
 - [Western Carolina University: Ceramics Safety](https://www.wcu.edu/discover/campus-services-and-operations/facilities-management/safety-and-risk-management/visual-arts-theatre-safety/ceramics-safety.aspx)
-- [Crafts Council（英国）: How to make your pottery practice greener](https://craftscouncil.org.uk/stories/how-make-your-pottery-practice-greener)
+- [Crafts Council (UK): How to make your pottery practice greener](https://craftscouncil.org.uk/stories/how-make-your-pottery-practice-greener)
 - [Pet Poison Helpline: Lead](https://www.petpoisonhelpline.com/poison/lead/)
+- [Vet Candy: Sparkler ingestion results in barium toxicity](https://www.myvetcandy.com/clinicalupdblog/2019/3/15/sparkler-ingestion-results-in-barium-toxicity)
 - [University of Illinois College of Veterinary Medicine: Bird toxins](https://vetmed.illinois.edu/pet-health-columns/bird-toxins-teflon-avocado-lead-zinc/)
 - [Skutt: Designing a Kiln Room (PDF)](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Designing-A-Kiln-Room-1.pdf)
 - [Kiln Management guide for schools (PDF)](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Kiln-Management-1.pdf)

@@ -3,78 +3,79 @@ title: Arderea într-un cuptor simplu
 lead: Cum ardeți piesele într-un cuptor electric cu Kiln-Sitter sau cu comutatoare manuale: cum alegeți, așezați și citiți conurile, cu programe de ardere publicate pentru arderea biscuit și arderea de glazură.
 ---
 
-## Conurile: ce măsoară {#cones}
+## Cones: what they measure {#cones lang=en}
 
 > [!NOTE]
-> Urmați în primul rând manualul cuptorului dumneavoastră. Acest ghid adună ce publică producătorii de conuri și de cuptoare despre cuptoarele electrice simple; nu înlocuiește instrucțiunile pentru modelul dumneavoastră, iar acolo unde cele două diferă, are prioritate manualul.
+> Follow your kiln's own manual first. This guide gathers what cone and kiln makers publish about basic electric kilns; it does not replace the instructions for your model, and where the two differ, the manual wins.
 
-Un **con pirometric**{{en: pyrometric cone}} este o piramidă mică și zveltă, făcută dintr-o pulbere ceramică standardizată. Când a primit destulă căldură, se înmoaie și se îndoaie, de fiecare dată în același fel. Așezați conurile{{en: cones}} în cuptor lângă piese și citiți cât de mult s-au îndoit.
+A **pyrometric cone** is a small, slender pyramid made from a standardized ceramic powder. When it has had enough heat, it softens and bends over in a repeatable way. You set cones in the kiln beside the ware and read how far they bent.
 
-Conurile măsoară **lucrul termic**{{en: heatwork}}, efectul combinat al temperaturii și al timpului. După cum spune Orton, principalul producător american de conuri: „Conurile nu măsoară doar temperatura.” Un con încălzit încet se îndoaie la o temperatură mai joasă decât unul încălzit repede, iar o glazură{{en: glaze}} se comportă la fel. De aceea, Orton dă temperatura fiecărui con pentru o rată de încălzire precizată în ultimele {{180 °F; 100 °C}} ale arderii. Odată ce un con începe să se miște, se îndoaie într-un interval îngust, „de obicei mai puțin de 40° F” (22 °C).
+Cones measure **heatwork**, the combined effect of temperature and time. In the words of Orton, the main US cone maker, "Cones do not measure temperature alone." A cone heated slowly bends at a lower temperature than one heated fast, and a glaze behaves the same way. So Orton gives each cone's temperature for a stated heating rate over the last {{180 °F; 100 °C}} of the firing. Once a cone starts to move, it bends over a narrow range, "usually less than 40° F" (22 °C).
 
-### Numerele conurilor
+### Cone numbers
 
-Numerele conurilor merg de la 022, conul cu temperatura cea mai joasă, până la 42. Un zero în față marchează seria de temperaturi mai joase și se citește „zero”: conul 06 („zero șase”) corespunde unei temperaturi mai joase decât conul 04, iar conul 01 cere mai puțină căldură decât conul 1. Orton avertizează că este important să nu confundați cele două serii. Diferența este mare: conul 06 se îndoaie la o temperatură cu peste {{400 °F; 220 °C}} mai joasă decât conul 6.
+Cone numbers run from 022, the coolest, up to 42. A leading zero marks the cooler series and is read as "oh": cone 06 ("oh-six") is cooler than cone 04, and cone 01 needs less heat than cone 1. Orton warns that it is important not to mix the two series up. The gap is large: cone 06 bends more than {{400 °F; 220 °C}} cooler than cone 6.
 
-Table: Intervale de ardere obișnuite, pentru conuri autoportante la {{108 °F/h; 60 °C/h}}
-Label: Intervale de ardere
+Table: Common firing ranges, for self-supporting cones at {{108 °F/h; 60 °C/h}}
+Label: Firing ranges
 
-| Interval           | Conuri |                    Temperatură | Utilizare obișnuită                                                      |
-| ------------------ | ------ | -----------------------------: | ------------------------------------------------------------------------ |
-| Temperatură joasă  | 06–04  |  {{1828–1945 °F; 998–1063 °C}} | Glazuri pentru faianță{{en: earthenware}}; arderea biscuit{{en: bisque}} |
-| Temperatură medie  | 5–6    | {{2167–2232 °F; 1186–1222 °C}} | Gresie{{en: stoneware}} și porțelan arse în cuptorul electric            |
-| Temperatură înaltă | 9–10   | {{2300–2345 °F; 1260–1285 °C}} | Mai ales gresie și porțelan arse în cuptoare cu gaz                      |
+| Range     | Cones |                    Temperature | Typical use                              |
+| --------- | ----- | -----------------------------: | ---------------------------------------- |
+| Low fire  | 06–04 |  {{1828–1945 °F; 998–1063 °C}} | Earthenware glazes; bisque               |
+| Mid fire  | 5–6   | {{2167–2232 °F; 1186–1222 °C}} | Electric-kiln stoneware and porcelain    |
+| High fire | 9–10  | {{2300–2345 °F; 1260–1285 °C}} | Mostly gas-fired stoneware and porcelain |
 
-Furnizorii din Marea Britanie, din Europa, din Australia și din Noua Zeelandă dau adesea o temperatură în °C, nu un con: căutați conul cel mai apropiat în tabelul de mai jos și verificați-l cu un con martor{{en: witness cone}}. Nu ar trebui să presupuneți că conurile Seger și Staffordshire, seriile europene mai vechi, au aceleași numere ca conurile Orton, așa că acest ghid folosește conuri Orton.
+Suppliers in the UK, Europe, Australia and New Zealand often give a temperature in °C rather than a cone: find the nearest cone in the chart below and confirm it with a witness cone. Seger and Staffordshire cones, the older European series, should not be assumed to share Orton's numbers, so this guide uses Orton cones.
 
-### Menținerea adaugă lucru termic
+### Holding adds heatwork
 
-O **menținere**{{en: hold}} (în engleză și „soak”) ține cuptorul la aceeași temperatură o vreme. Pentru că un con măsoară lucrul termic, o menținere la temperatura maximă poate ține locul unei temperaturi maxime mai înalte. Orton dă aceste echivalențe aproximative:
+A **hold** (also called a **soak**) keeps the kiln at one temperature for a while. Because cones measure heatwork, a hold at the top can stand in for a hotter peak. Orton gives these rough equivalents:
 
-Table: Cât valorează o menținere la temperatura maximă
-Label: Menținere și lucru termic
+Table: What a hold at the peak is worth
+Label: Holds and heatwork
 
-| Menținere                | Aproximativ același lucru termic ca                                |
-| ------------------------ | ------------------------------------------------------------------ |
-| Aproximativ 20 de minute | O temperatură maximă cu {{18 °F; 10 °C}} mai înaltă                |
-| 40–60 de minute          | O temperatură maximă cu {{36 °F; 20 °C}} mai înaltă                |
-| Aproximativ 2 ore        | O temperatură maximă cu {{54 °F; 30 °C}} mai înaltă                |
-| 1–2 ore                  | „poate fi suficientă pentru a deforma conul imediat mai fierbinte” |
-| 4–6 ore                  | Suficientă pentru a îndoi un con cu două numere mai fierbinte      |
+| Hold             | Roughly the same heatwork as             |
+| ---------------- | ---------------------------------------- |
+| About 20 minutes | A peak {{18 °F; 10 °C}} hotter           |
+| 40–60 minutes    | A peak {{36 °F; 20 °C}} hotter           |
+| About 2 hours    | A peak {{54 °F; 30 °C}} hotter           |
+| 4–6 hours        | Enough to bend a cone two numbers hotter |
 
-Așadar, o menținere nu este niciodată fără efect: dacă adăugați una, așteptați-vă ca conurile să se îndoaie mai mult și coborâți temperatura maximă pe măsură.
+Orton adds that a hold of 1–2 hours "may be sufficient to deform the next higher cone number".
 
-### Tipuri de conuri
+So a hold is never free: if you add one, expect the cones to bend further, and lower the peak to match.
 
-Orton produce patru tipuri. Două stau pe placă și arată ce au primit piesele; două sunt pentru Kiln-Sitter.
+### Kinds of cone
 
-Table: Cele patru tipuri de conuri Orton
-Label: Tipuri de conuri
+Orton makes four kinds. Two stand on the shelf to show what the ware received; two are for the kiln sitter.
 
-| Tip          | Folosit ca          | Cum stă                                                                                                                       |
-| ------------ | ------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| Autoportant  | Con martor pe placă | O bază încorporată îi dă înălțimea, 1¾ țoli (44 mm), și înclinarea de 8°; nu are nevoie de suport                             |
-| Mare         | Con martor pe placă | Fixat într-un suport de conuri sau într-o turtă de argilă, cu exact 2 țoli (51 mm) deasupra, înclinat la 8° față de verticală |
-| Mic (junior) | Kiln-Sitter         | Stă de-a curmezișul pe suporturile din Kiln-Sitter; 15/16 țol (24 mm) deasupra, dacă este așezat pe o placă                   |
-| Bară         | Kiln-Sitter         | Aceeași pulbere ca la conurile mici, în formă de bară uniformă                                                                |
+Table: Orton's four kinds of cone
+Label: Kinds of cone
 
-Înălțimea contează: o diferență de ¼ țol (6 mm) în înălțimea unui con mare „poate produce o diferență de îndoire de peste o jumătate de con”. Conurile nu se strică și nu îmbătrânesc, iar depozitarea într-un loc umed nu le afectează.
+| Kind            | Used for                  | How it stands                                                                               |
+| --------------- | ------------------------- | ------------------------------------------------------------------------------------------- |
+| Self-supporting | Witness cone on the shelf | A built-in base sets the height, 1¾ in (44 mm), and the 8° lean; no holder needed           |
+| Large           | Witness cone on the shelf | Set in a plaque or a pat of clay with exactly 2 in (51 mm) showing, leaning 8° from upright |
+| Small (junior)  | Kiln sitter               | Lies across the sitter's supports; 15/16 in (24 mm) showing if stood on a shelf             |
+| Bar             | Kiln sitter               | The same powder as small cones, in an even bar shape                                        |
 
-### Ce înseamnă „conul 6” în practică
+Height matters: a ¼ in (6 mm) difference in the height of a large cone "can cause more than a half cone difference in bending". Cones do not go bad or age, and damp storage does not affect them.
 
-Tabelul dă pentru un con 6 autoportant {{2232 °F; 1222 °C}}, dar numai dacă în ultimele {{180 °F; 100 °C}} temperatura urcă cu {{108 °F/h; 60 °C/h}}. La o urcare cu {{270 °F/h; 150 °C/h}}, același con se îndoaie la {{2269 °F; 1243 °C}}. Cuptoarele reale diferă și ele: Digitalfire arată că „Majoritatea cuptoarelor ajung la conul 6 la 2200°F, nu la 2232°F”. Așadar, „conul 6” înseamnă că piesele au primit lucrul termic care îndoaie un con 6, indiferent ce arăta un termometru în acel moment.
+### What "cone 6" means in practice
+
+The chart gives a self-supporting cone 6 as {{2232 °F; 1222 °C}}, but only when the last {{180 °F; 100 °C}} climbs at {{108 °F/h; 60 °C/h}}. Climbing at {{270 °F/h; 150 °C/h}}, the same cone bends at {{2269 °F; 1243 °C}}. Real kilns differ again: Digitalfire reports that "Most kilns reach cone 6 at 2200°F, not 2232°F". So "cone 6" means the ware received the heatwork that bends a cone 6, whatever a thermometer read at the time.
 
 :::orton
 
 > [!NOTE]
-> Ardeți după con, nu după ceas sau după cadran. Setați controlerul după numărul conului și lăsați un con martor de pe placă să confirme fiecare ardere.
+> Fire by the cone, not the clock or the dial. Set a controller by cone number, and let a witness cone on the shelf confirm every firing.
 
 :::
 
 :::temperature
 
 > [!NOTE]
-> Când ardeți după temperatură, păstrați la fel finalul fiecărei arderi: aceeași rată de încălzire la final, aceeași temperatură maximă și aceeași menținere. Astfel, o glazură care a reușit o dată va reuși din nou.
+> Firing by temperature, keep the end of every firing the same: the same last rate of climb, the same peak and the same hold. Then a glaze that worked once works again.
 
 :::
 

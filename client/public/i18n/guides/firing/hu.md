@@ -3,78 +3,79 @@ title: Égetés egyszerű kemencében
 lead: Elektromos kemence égetése Kiln-Sitterrel vagy kézi kapcsolókkal: a gúlák kiválasztása, elhelyezése és leolvasása, valamint a zsengélés és a mázas égetés közzétett égetési programjai.
 ---
 
-## Gúlák: mit mérnek? {#cones}
+## Cones: what they measure {#cones lang=en}
 
 > [!NOTE]
-> Elsősorban a kemencéje saját kezelési útmutatóját kövesse. Ez az útmutató azt gyűjti össze, amit a gúla- és kemencegyártók az egyszerű elektromos kemencékről közzétesznek; nem helyettesíti a kemencetípusára vonatkozó utasításokat, és ahol a kettő eltér, a kezelési útmutató az irányadó.
+> Follow your kiln's own manual first. This guide gathers what cone and kiln makers publish about basic electric kilns; it does not replace the instructions for your model, and where the two differ, the manual wins.
 
-A **hőfokjelző gúla**{{en: pyrometric cone}} szabványosított kerámiaporból készült kicsi, karcsú gúla. Ha elég hőt kapott, meglágyul, és mindig ugyanúgy, megismételhető módon lehajlik. A gúlákat az áru mellé állítja a kemencében, és azt olvassa le, mennyire hajlottak meg.
+A **pyrometric cone** is a small, slender pyramid made from a standardized ceramic powder. When it has had enough heat, it softens and bends over in a repeatable way. You set cones in the kiln beside the ware and read how far they bent.
 
-A gúlák a **felvett hőmennyiséget**{{en: heatwork}} mérik, vagyis a hőmérséklet és az idő együttes hatását. Az Orton, a vezető amerikai gúlagyártó szavaival: „A gúlák nem csak a hőmérsékletet mérik.” A lassan hevített gúla alacsonyabb hőmérsékleten hajlik meg, mint a gyorsan hevített, és a máz{{en: glaze}} is ugyanígy viselkedik. Ezért az Orton minden gúla hőmérsékletét az égetés utolsó {{180 °F; 100 °C}} emelkedése alatti, megadott felfűtési sebességre adja meg. Amint egy gúla mozogni kezd, szűk tartományon belül hajlik le: ez a tartomány „általában kevesebb, mint 40° F” (22 °C).
+Cones measure **heatwork**, the combined effect of temperature and time. In the words of Orton, the main US cone maker, "Cones do not measure temperature alone." A cone heated slowly bends at a lower temperature than one heated fast, and a glaze behaves the same way. So Orton gives each cone's temperature for a stated heating rate over the last {{180 °F; 100 °C}} of the firing. Once a cone starts to move, it bends over a narrow range, "usually less than 40° F" (22 °C).
 
-### Gúlaszámok
+### Cone numbers
 
-A gúlaszámok a legalacsonyabb hőfokú 022-estől a 42-esig tartanak. A szám elején álló nulla az alacsonyabb hőfokú sorozatot jelöli, és „nullának” kell olvasni: a 06-os („nulla hatos”) gúla alacsonyabb hőfokú, mint a 04-es, és a 01-es gúlának kevesebb hő kell, mint az 1-esnek. Az Orton figyelmeztet: fontos, hogy a két sorozatot ne keverje össze. Nagy a különbség: a 06-os gúla több mint {{400 °F; 220 °C}} értékkel alacsonyabb hőmérsékleten hajlik meg, mint a 6-os.
+Cone numbers run from 022, the coolest, up to 42. A leading zero marks the cooler series and is read as "oh": cone 06 ("oh-six") is cooler than cone 04, and cone 01 needs less heat than cone 1. Orton warns that it is important not to mix the two series up. The gap is large: cone 06 bends more than {{400 °F; 220 °C}} cooler than cone 6.
 
-Table: Szokásos égetési tartományok, önálló gúlákra, {{108 °F/h; 60 °C/h}} felfűtési sebességnél
-Label: Égetési tartományok
+Table: Common firing ranges, for self-supporting cones at {{108 °F/h; 60 °C/h}}
+Label: Firing ranges
 
-| Tartomány     | Gúlák |                    Hőmérséklet | Szokásos felhasználás                                        |
-| ------------- | ----- | -----------------------------: | ------------------------------------------------------------ |
-| Alacsony tüzű | 06–04 |  {{1828–1945 °F; 998–1063 °C}} | Fazekasáru{{en: earthenware}} mázai; zsengélés{{en: bisque}} |
-| Közepes tüzű  | 5–6   | {{2167–2232 °F; 1186–1222 °C}} | Kőagyag{{en: stoneware}} és porcelán elektromos kemencében   |
-| Magas tüzű    | 9–10  | {{2300–2345 °F; 1260–1285 °C}} | Főleg gázkemencében égetett kőagyag és porcelán              |
+| Range     | Cones |                    Temperature | Typical use                              |
+| --------- | ----- | -----------------------------: | ---------------------------------------- |
+| Low fire  | 06–04 |  {{1828–1945 °F; 998–1063 °C}} | Earthenware glazes; bisque               |
+| Mid fire  | 5–6   | {{2167–2232 °F; 1186–1222 °C}} | Electric-kiln stoneware and porcelain    |
+| High fire | 9–10  | {{2300–2345 °F; 1260–1285 °C}} | Mostly gas-fired stoneware and porcelain |
 
-Az Egyesült Királyságban, Európában, Ausztráliában és Új-Zélandon a forgalmazók gyakran gúla helyett °C-ban adják meg a hőmérsékletet: keresse meg a legközelebbi gúlát az alábbi táblázatban, és erősítse meg egy ellenőrző gúlával{{en: witness cone}}. A Seger- és a Staffordshire-gúlákról, a régebbi európai sorozatokról nem kellene feltételezni, hogy a számaik megegyeznek az Ortonéival, ezért ez az útmutató Orton-gúlákat használ.
+Suppliers in the UK, Europe, Australia and New Zealand often give a temperature in °C rather than a cone: find the nearest cone in the chart below and confirm it with a witness cone. Seger and Staffordshire cones, the older European series, should not be assumed to share Orton's numbers, so this guide uses Orton cones.
 
-### A hőntartás növeli a felvett hőmennyiséget
+### Holding adds heatwork
 
-A **hőntartás**{{en: hold}} (angol forrásokban **soak** néven is) egy ideig egy hőmérsékleten tartja a kemencét. Mivel a gúlák a felvett hőmennyiséget mérik, a csúcson beiktatott hőntartás helyettesítheti a magasabb csúcshőmérsékletet. Az Orton a következő hozzávetőleges megfeleléseket adja meg:
+A **hold** (also called a **soak**) keeps the kiln at one temperature for a while. Because cones measure heatwork, a hold at the top can stand in for a hotter peak. Orton gives these rough equivalents:
 
-Table: Mennyit ér a hőntartás a csúcshőmérsékleten
-Label: Hőntartás és felvett hőmennyiség
+Table: What a hold at the peak is worth
+Label: Holds and heatwork
 
-| Hőntartás          | Nagyjából ugyanannyi felvett hőmennyiség, mint                          |
-| ------------------ | ----------------------------------------------------------------------- |
-| Körülbelül 20 perc | {{18 °F; 10 °C}} értékkel magasabb csúcshőmérséklet                     |
-| 40–60 perc         | {{36 °F; 20 °C}} értékkel magasabb csúcshőmérséklet                     |
-| Körülbelül 2 óra   | {{54 °F; 30 °C}} értékkel magasabb csúcshőmérséklet                     |
-| 1–2 óra            | „elég lehet ahhoz, hogy a következő, magasabb számú gúla deformálódjon” |
-| 4–6 óra            | Elég ahhoz, hogy egy kettővel magasabb hőfokú gúla meghajoljon          |
+| Hold             | Roughly the same heatwork as             |
+| ---------------- | ---------------------------------------- |
+| About 20 minutes | A peak {{18 °F; 10 °C}} hotter           |
+| 40–60 minutes    | A peak {{36 °F; 20 °C}} hotter           |
+| About 2 hours    | A peak {{54 °F; 30 °C}} hotter           |
+| 4–6 hours        | Enough to bend a cone two numbers hotter |
 
-A hőntartásnak tehát mindig ára van: ha beiktat egyet, számítson rá, hogy a gúlák jobban meghajlanak, és ennek megfelelően csökkentse a csúcshőmérsékletet.
+Orton adds that a hold of 1–2 hours "may be sufficient to deform the next higher cone number".
 
-### A gúlák fajtái
+So a hold is never free: if you add one, expect the cones to bend further, and lower the peak to match.
 
-Az Orton négyféle gúlát gyárt. Kettő az égetőlapon áll, és azt mutatja, mennyi hőt kapott az áru; kettő a Kiln-Sitterbe (gúlás lekapcsolóba) való.
+### Kinds of cone
 
-Table: Az Orton négyféle gúlája
-Label: Gúlafajták
+Orton makes four kinds. Two stand on the shelf to show what the ware received; two are for the kiln sitter.
 
-| Fajta                        | Mire való                    | Hogyan áll                                                                                                              |
-| ---------------------------- | ---------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| Önálló (állvány nélkül álló) | Ellenőrző gúla az égetőlapon | A beépített talp adja meg a magasságot, 1¾ hüvelyk (44 mm), és a 8°-os dőlést; nem kell hozzá tartó                     |
-| Nagy                         | Ellenőrző gúla az égetőlapon | Gúlatartóba vagy agyaglepénybe állítva úgy, hogy pontosan 2 hüvelyk (51 mm) álljon ki, a függőlegestől 8°-ban megdöntve |
-| Kis (junior)                 | Kiln-Sitter                  | Keresztben fekszik a Kiln-Sitter támaszain; égetőlapra állítva 15/16 hüvelyk (24 mm) állna ki belőle                    |
-| Rúd                          | Kiln-Sitter                  | Ugyanabból a porból készül, mint a kis gúlák, egyenletes rúd alakban                                                    |
+Table: Orton's four kinds of cone
+Label: Kinds of cone
 
-A magasság számít: egy nagy gúla magasságában ¼ hüvelyk (6 mm) eltérés „a hajlásban több mint fél gúlányi különbséget okozhat”. A gúlák nem romlanak meg, nem öregszenek, és a nedves tárolás sem árt nekik.
+| Kind            | Used for                  | How it stands                                                                               |
+| --------------- | ------------------------- | ------------------------------------------------------------------------------------------- |
+| Self-supporting | Witness cone on the shelf | A built-in base sets the height, 1¾ in (44 mm), and the 8° lean; no holder needed           |
+| Large           | Witness cone on the shelf | Set in a plaque or a pat of clay with exactly 2 in (51 mm) showing, leaning 8° from upright |
+| Small (junior)  | Kiln sitter               | Lies across the sitter's supports; 15/16 in (24 mm) showing if stood on a shelf             |
+| Bar             | Kiln sitter               | The same powder as small cones, in an even bar shape                                        |
 
-### A „6-os gúla” a gyakorlatban
+Height matters: a ¼ in (6 mm) difference in the height of a large cone "can cause more than a half cone difference in bending". Cones do not go bad or age, and damp storage does not affect them.
 
-A táblázat szerint az önálló 6-os gúla {{2232 °F; 1222 °C}} hőmérsékleten hajlik meg, de csak akkor, ha az utolsó {{180 °F; 100 °C}} emelkedés {{108 °F/h; 60 °C/h}} sebességgel történik. Ha a hőmérséklet {{270 °F/h; 150 °C/h}} sebességgel emelkedik, ugyanez a gúla {{2269 °F; 1243 °C}} hőmérsékleten hajlik meg. A valódi kemencék ettől is eltérnek: a Digitalfire beszámolója szerint „A legtöbb kemence 2200°F-on éri el a 6-os gúlát, nem 2232°F-on”. A „6-os gúla” tehát azt jelenti, hogy az áru annyi hőmennyiséget vett fel, amennyi egy 6-os gúlát meghajlít, bármit mutatott is akkor a hőmérő.
+### What "cone 6" means in practice
+
+The chart gives a self-supporting cone 6 as {{2232 °F; 1222 °C}}, but only when the last {{180 °F; 100 °C}} climbs at {{108 °F/h; 60 °C/h}}. Climbing at {{270 °F/h; 150 °C/h}}, the same cone bends at {{2269 °F; 1243 °C}}. Real kilns differ again: Digitalfire reports that "Most kilns reach cone 6 at 2200°F, not 2232°F". So "cone 6" means the ware received the heatwork that bends a cone 6, whatever a thermometer read at the time.
 
 :::orton
 
 > [!NOTE]
-> A gúla szerint égessen, ne az óra vagy a számlap szerint. A vezérlőt gúlaszám szerint állítsa be, és minden égetést egy, az égetőlapon álló ellenőrző gúla igazoljon.
+> Fire by the cone, not the clock or the dial. Set a controller by cone number, and let a witness cone on the shelf confirm every firing.
 
 :::
 
 :::temperature
 
 > [!NOTE]
-> Ha hőmérséklet szerint éget, minden égetés vége legyen ugyanolyan: ugyanaz az utolsó felfűtési sebesség, ugyanaz a csúcshőmérséklet és ugyanaz a hőntartás. Így az a máz, amely egyszer bevált, újra be fog válni.
+> Firing by temperature, keep the end of every firing the same: the same last rate of climb, the same peak and the same hold. Then a glaze that worked once works again.
 
 :::
 

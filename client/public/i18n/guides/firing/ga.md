@@ -3,78 +3,79 @@ title: Bácáil in áith shimplí
 lead: Conas bácáil a dhéanamh in áith leictreach le Kiln-Sitter nó le lasca láimhe: cóin a roghnú, a shuíomh agus a léamh, le cláir bhácála foilsithe don bhrioscbhácáil agus don bhácáil glónra.
 ---
 
-## Cóin: cad a thomhaiseann siad {#cones}
+## Cones: what they measure {#cones lang=en}
 
 > [!NOTE]
-> Lean lámhleabhar d’áithe féin ar dtús. Cuireann an treoirleabhar seo le chéile a bhfoilsíonn déantóirí cón{{en: cone}} agus áitheanna faoi áitheanna leictreacha simplí; ní thagann sé in áit na dtreoracha don tsamhail atá agat, agus más difriúil iad, is é an lámhleabhar is ceart.
+> Follow your kiln's own manual first. This guide gathers what cone and kiln makers publish about basic electric kilns; it does not replace the instructions for your model, and where the two differ, the manual wins.
 
-Is pirimid bheag chaol é **cón piriméadrach**{{en: pyrometric cone}}, déanta as púdar ceirmeach caighdeánaithe. Nuair a bhíonn a dhóthain teasa faighte aige, bogann sé agus lúbann sé anonn, ar an mbealach céanna gach uair. Cuireann tú cóin san áith in aice leis na píosaí agus léann tú cé chomh fada is a lúb siad.
+A **pyrometric cone** is a small, slender pyramid made from a standardized ceramic powder. When it has had enough heat, it softens and bends over in a repeatable way. You set cones in the kiln beside the ware and read how far they bent.
 
-Tomhaiseann cóin **obair teasa**{{en: heatwork}}, éifeacht na teochta agus an ama le chéile. Mar a deir Orton, an príomhdhéantóir cón i Stáit Aontaithe Mheiriceá: “Ní hí an teocht amháin a thomhaiseann cóin.” Lúbann cón a théitear go mall ag teocht níos ísle ná cón a théitear go tapa, agus is mar an gcéanna a iompraíonn glónra{{en: glaze}} é féin. Mar sin, tugann Orton teocht gach cóin do ráta téimh sonraithe thar an {{180 °F; 100 °C}} deiridh den bhácáil. Nuair a thosaíonn cón ag bogadh, lúbann sé thar raon cúng, “níos lú ná 40° F de ghnáth” (22 °C).
+Cones measure **heatwork**, the combined effect of temperature and time. In the words of Orton, the main US cone maker, "Cones do not measure temperature alone." A cone heated slowly bends at a lower temperature than one heated fast, and a glaze behaves the same way. So Orton gives each cone's temperature for a stated heating rate over the last {{180 °F; 100 °C}} of the firing. Once a cone starts to move, it bends over a narrow range, "usually less than 40° F" (22 °C).
 
-### Uimhreacha na gcón
+### Cone numbers
 
-Téann uimhreacha na gcón ó 022, an ceann is fuaire, go 42. Léiríonn nialas chun tosaigh an tsraith is fuaire, agus léitear “náid” air: tá cón 06 (“náid a sé”) níos fuaire ná cón 04, agus tá níos lú teasa ag teastáil ó chón 01 ná ó chón 1. Tugann Orton rabhadh go bhfuil sé tábhachtach gan an dá shraith a chur trína chéile. Is mór an bhearna: lúbann cón 06 ag teocht atá níos mó ná {{400 °F; 220 °C}} níos fuaire ná cón 6.
+Cone numbers run from 022, the coolest, up to 42. A leading zero marks the cooler series and is read as "oh": cone 06 ("oh-six") is cooler than cone 04, and cone 01 needs less heat than cone 1. Orton warns that it is important not to mix the two series up. The gap is large: cone 06 bends more than {{400 °F; 220 °C}} cooler than cone 6.
 
-Table: Raonta bácála coitianta, do chóin fhéintacaithe ag {{108 °F/h; 60 °C/h}}
-Label: Raonta bácála
+Table: Common firing ranges, for self-supporting cones at {{108 °F/h; 60 °C/h}}
+Label: Firing ranges
 
-| Raon         | Cóin  |                         Teocht | Úsáid choitianta                                                    |
-| ------------ | ----- | -----------------------------: | ------------------------------------------------------------------- |
-| Ísealbhácáil | 06–04 |  {{1828–1945 °F; 998–1063 °C}} | Glónraí cré-earraí{{en: earthenware}}; brioscbhácáil{{en: bisque}}  |
-| Meánbhácáil  | 5–6   | {{2167–2232 °F; 1186–1222 °C}} | Earraí cruachré{{en: stoneware}} agus poirceallán ó áith leictreach |
-| Ardbhácáil   | 9–10  | {{2300–2345 °F; 1260–1285 °C}} | Earraí cruachré agus poirceallán ó áith gháis, den chuid is mó      |
+| Range     | Cones |                    Temperature | Typical use                              |
+| --------- | ----- | -----------------------------: | ---------------------------------------- |
+| Low fire  | 06–04 |  {{1828–1945 °F; 998–1063 °C}} | Earthenware glazes; bisque               |
+| Mid fire  | 5–6   | {{2167–2232 °F; 1186–1222 °C}} | Electric-kiln stoneware and porcelain    |
+| High fire | 9–10  | {{2300–2345 °F; 1260–1285 °C}} | Mostly gas-fired stoneware and porcelain |
 
-Is minic a thugann soláthraithe sa Ríocht Aontaithe, san Eoraip, san Astráil agus sa Nua-Shéalainn teocht in °C seachas cón: aimsigh an cón is gaire di sa tábla thíos agus deimhnigh é le cón fianaise{{en: witness cone}}. Níor cheart glacadh leis go bhfuil uimhreacha Orton ag cóin Seger ná ag cóin Staffordshire, na sraitheanna Eorpacha níos sine, agus mar sin úsáideann an treoirleabhar seo cóin Orton.
+Suppliers in the UK, Europe, Australia and New Zealand often give a temperature in °C rather than a cone: find the nearest cone in the chart below and confirm it with a witness cone. Seger and Staffordshire cones, the older European series, should not be assumed to share Orton's numbers, so this guide uses Orton cones.
 
-### Obair teasa breise ó choinneáil
+### Holding adds heatwork
 
-Le **coinneáil**{{en: hold}} (**soak** freisin i mBéarla), fanann an áith ag teocht amháin ar feadh tamaill. Toisc gur obair teasa a thomhaiseann cóin, is féidir le coinneáil ag barr na bácála seasamh in áit buaicteochta níos teo. Tugann Orton na coibhéisí garbha seo:
+A **hold** (also called a **soak**) keeps the kiln at one temperature for a while. Because cones measure heatwork, a hold at the top can stand in for a hotter peak. Orton gives these rough equivalents:
 
-Table: Luach coinneála ag an mbuaicteocht
-Label: Coinneáil agus obair teasa
+Table: What a hold at the peak is worth
+Label: Holds and heatwork
 
-| Coinneáil                 | Thart ar an obair teasa chéanna le                                                                    |
-| ------------------------- | ----------------------------------------------------------------------------------------------------- |
-| Thart ar 20 nóiméad       | Buaicteocht atá {{18 °F; 10 °C}} níos teo                                                             |
-| 40–60 nóiméad             | Buaicteocht atá {{36 °F; 20 °C}} níos teo                                                             |
-| Thart ar 2 uair an chloig | Buaicteocht atá {{54 °F; 30 °C}} níos teo                                                             |
-| 1–2 uair an chloig        | “d’fhéadfadh sé a bheith go leor chun an chéad chón eile, uimhir amháin níos teo, a chur as a riocht” |
-| 4–6 huaire an chloig      | Go leor chun cón atá dhá uimhir níos teo a lúbadh                                                     |
+| Hold             | Roughly the same heatwork as             |
+| ---------------- | ---------------------------------------- |
+| About 20 minutes | A peak {{18 °F; 10 °C}} hotter           |
+| 40–60 minutes    | A peak {{36 °F; 20 °C}} hotter           |
+| About 2 hours    | A peak {{54 °F; 30 °C}} hotter           |
+| 4–6 hours        | Enough to bend a cone two numbers hotter |
 
-Mar sin, ní bhíonn coinneáil saor in aisce riamh: má chuireann tú ceann leis, bí ag súil go lúbfaidh na cóin níos faide, agus ísligh an bhuaicteocht dá réir.
+Orton adds that a hold of 1–2 hours "may be sufficient to deform the next higher cone number".
 
-### Cineálacha cóin
+So a hold is never free: if you add one, expect the cones to bend further, and lower the peak to match.
 
-Déanann Orton ceithre chineál. Seasann dhá chineál ar an tseilf chun a thaispeáint cad a fuair na píosaí; is don Kiln-Sitter an dá chineál eile.
+### Kinds of cone
 
-Table: Ceithre chineál cóin Orton
-Label: Cineálacha cóin
+Orton makes four kinds. Two stand on the shelf to show what the ware received; two are for the kiln sitter.
 
-| Cineál            | Úsáid                     | Conas a sheasann sé                                                                                  |
-| ----------------- | ------------------------- | ---------------------------------------------------------------------------------------------------- |
-| Féintacaithe      | Cón fianaise ar an tseilf | Socraíonn bonn ionsuite an airde, 1¾ orlach (44 mm), agus an claonadh 8°; níl gá le haon choimeádán  |
-| Mór               | Cón fianaise ar an tseilf | Curtha i bplaic nó i gcnap cré agus 2 orlach (51 mm) go díreach le feiceáil, claonta 8° ón ingear    |
-| Beag (sóisearach) | Kiln-Sitter               | Luíonn sé trasna ar thacaí an Kiln-Sitter; 15/16 orlach (24 mm) le feiceáil má chuirtear ar sheilf é |
-| Barra             | Kiln-Sitter               | An púdar céanna atá i gcóin bheaga, i gcruth barra cothrom                                           |
+Table: Orton's four kinds of cone
+Label: Kinds of cone
 
-Is tábhachtach an airde: má bhíonn difríocht ¼ orlach (6 mm) in airde cóin mhóir, “féadann sé difríocht níos mó ná leathchón a dhéanamh sa lúbadh”. Ní théann cóin as feidhm ná in aois, agus ní chuireann stóráil thais isteach orthu.
+| Kind            | Used for                  | How it stands                                                                               |
+| --------------- | ------------------------- | ------------------------------------------------------------------------------------------- |
+| Self-supporting | Witness cone on the shelf | A built-in base sets the height, 1¾ in (44 mm), and the 8° lean; no holder needed           |
+| Large           | Witness cone on the shelf | Set in a plaque or a pat of clay with exactly 2 in (51 mm) showing, leaning 8° from upright |
+| Small (junior)  | Kiln sitter               | Lies across the sitter's supports; 15/16 in (24 mm) showing if stood on a shelf             |
+| Bar             | Kiln sitter               | The same powder as small cones, in an even bar shape                                        |
 
-### An bhrí atá le “cón 6” go praiticiúil
+Height matters: a ¼ in (6 mm) difference in the height of a large cone "can cause more than a half cone difference in bending". Cones do not go bad or age, and damp storage does not affect them.
 
-Tugann an tábla {{2232 °F; 1222 °C}} do chón 6 féintacaithe, ach amháin nuair a ardaíonn an {{180 °F; 100 °C}} deiridh ag {{108 °F/h; 60 °C/h}}. Má ardaíonn an teocht ag {{270 °F/h; 150 °C/h}}, lúbann an cón céanna ag {{2269 °F; 1243 °C}}. Bíonn áitheanna fíora difriúil arís: tuairiscíonn Digitalfire: “Sroicheann formhór na n-áitheanna cón 6 ag 2200°F, ní ag 2232°F”. Mar sin, ciallaíonn “cón 6” go bhfuair na píosaí an obair teasa a lúbann cón 6, is cuma cad a léigh teirmiméadar ag an am.
+### What "cone 6" means in practice
+
+The chart gives a self-supporting cone 6 as {{2232 °F; 1222 °C}}, but only when the last {{180 °F; 100 °C}} climbs at {{108 °F/h; 60 °C/h}}. Climbing at {{270 °F/h; 150 °C/h}}, the same cone bends at {{2269 °F; 1243 °C}}. Real kilns differ again: Digitalfire reports that "Most kilns reach cone 6 at 2200°F, not 2232°F". So "cone 6" means the ware received the heatwork that bends a cone 6, whatever a thermometer read at the time.
 
 :::orton
 
 > [!NOTE]
-> Bácáil de réir an chóin, ní de réir an chloig ná an diail. Socraigh rialaitheoir de réir uimhir an chóin, agus lig do chón fianaise ar an tseilf gach bácáil a dheimhniú.
+> Fire by the cone, not the clock or the dial. Set a controller by cone number, and let a witness cone on the shelf confirm every firing.
 
 :::
 
 :::temperature
 
 > [!NOTE]
-> Má bhácálann tú de réir teochta, coinnigh deireadh gach bácála mar an gcéanna: an ráta téimh deiridh céanna, an bhuaicteocht chéanna agus an choinneáil chéanna. Ansin oibreoidh glónra a d’oibrigh uair amháin arís.
+> Firing by temperature, keep the end of every firing the same: the same last rate of climb, the same peak and the same hold. Then a glaze that worked once works again.
 
 :::
 

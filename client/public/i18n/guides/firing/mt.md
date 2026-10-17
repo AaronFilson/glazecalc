@@ -3,78 +3,79 @@ title: Il-ħami f’forn sempliċi
 lead: Kif taħmi f’forn elettriku b’sitter jew bi swiċċijiet li tħaddem bl-idejn: kif tagħżel, tqiegħed u taqra l-koni, bi programmi ppubblikati għall-ħamjiet tal-bisque u tal-glejż.
 ---
 
-## Il-koni: x’ikejlu {#cones}
+## Cones: what they measure {#cones lang=en}
 
 > [!NOTE]
-> Segwi l-ewwel il-manwal tal-forn tiegħek. Din il-gwida tiġbor dak li jippubblikaw il-manifatturi tal-koni u tal-fran dwar fran elettriċi sempliċi; ma tiħux post l-istruzzjonijiet tal-mudell tiegħek, u fejn il-gwida u l-manwal ma jaqblux, segwi l-manwal.
+> Follow your kiln's own manual first. This guide gathers what cone and kiln makers publish about basic electric kilns; it does not replace the instructions for your model, and where the two differ, the manual wins.
 
-**Kon pirometriku**{{en: pyrometric cone}} huwa piramida żgħira u rqiqa magħmula minn trab taċ-ċeramika standardizzat. Meta jkun ħa biżżejjed sħana, jirtab u jitgħawweġ, dejjem bl-istess mod. Il-koni tqegħidhom fil-forn ħdejn l-oġġetti, u wara taqra kemm tgħawġu.
+A **pyrometric cone** is a small, slender pyramid made from a standardized ceramic powder. When it has had enough heat, it softens and bends over in a repeatable way. You set cones in the kiln beside the ware and read how far they bent.
 
-Il-koni jkejlu x-**xogħol tas-sħana**{{en: heatwork}}, l-effett tat-temperatura u tal-ħin flimkien. Kif jgħid Orton, il-manifattur ewlieni tal-koni fl-Istati Uniti, “Il-koni ma jkejlux it-temperatura biss.” Kon li jisħon bil-mod jitgħawweġ f’temperatura aktar baxxa minn wieħed li jisħon malajr, u l-glejż{{en: glaze}} jaġixxi bl-istess mod. Għalhekk Orton jagħti t-temperatura ta’ kull kon għal rata tat-tisħin speċifikata matul l-aħħar {{180 °F; 100 °C}} tal-ħamja. Ladarba kon jibda jiċċaqlaq, jitgħawweġ f’medda dejqa, “normalment inqas minn 40° F” (22 °C).
+Cones measure **heatwork**, the combined effect of temperature and time. In the words of Orton, the main US cone maker, "Cones do not measure temperature alone." A cone heated slowly bends at a lower temperature than one heated fast, and a glaze behaves the same way. So Orton gives each cone's temperature for a stated heating rate over the last {{180 °F; 100 °C}} of the firing. Once a cone starts to move, it bends over a narrow range, "usually less than 40° F" (22 °C).
 
-### In-numri tal-koni
+### Cone numbers
 
-In-numri tal-koni jibdew minn 022, l-aktar kon kiesaħ, u jaslu sa 42. Żero quddiem in-numru jfisser is-serje l-aktar kiesħa, u jinqara “żero”: il-kon 06 (“żero sitta”) huwa aktar kiesaħ mill-kon 04, u l-kon 01 irid inqas sħana mill-kon 1. Orton iwissi li huwa importanti li ma tħawwadx iż-żewġ serje. Id-differenza hija kbira: il-kon 06 jitgħawweġ f’temperatura li hija aktar minn {{400 °F; 220 °C}} inqas minn dik tal-kon 6.
+Cone numbers run from 022, the coolest, up to 42. A leading zero marks the cooler series and is read as "oh": cone 06 ("oh-six") is cooler than cone 04, and cone 01 needs less heat than cone 1. Orton warns that it is important not to mix the two series up. The gap is large: cone 06 bends more than {{400 °F; 220 °C}} cooler than cone 6.
 
-Table: Il-meded tal-ħami l-aktar komuni, għal koni li joqogħdu weħidhom b’rata ta’ {{108 °F/h; 60 °C/h}}
-Label: Meded tal-ħami
+Table: Common firing ranges, for self-supporting cones at {{108 °F/h; 60 °C/h}}
+Label: Firing ranges
 
-| Medda      | Koni  |                    Temperatura | Użu tipiku                                                                            |
-| ---------- | ----- | -----------------------------: | ------------------------------------------------------------------------------------- |
-| Ħami baxx  | 06–04 |  {{1828–1945 °F; 998–1063 °C}} | Glejżijiet għall-fuħħar{{en: earthenware}}; bisque                                    |
-| Ħami medju | 5–6   | {{2167–2232 °F; 1186–1222 °C}} | Stoneware (ċeramika moħmija għolja li ssir kważi ħġieġ) u porċellana f’forn elettriku |
-| Ħami għoli | 9–10  | {{2300–2345 °F; 1260–1285 °C}} | L-aktar stoneware u porċellana moħmija f’forn tal-gass                                |
+| Range     | Cones |                    Temperature | Typical use                              |
+| --------- | ----- | -----------------------------: | ---------------------------------------- |
+| Low fire  | 06–04 |  {{1828–1945 °F; 998–1063 °C}} | Earthenware glazes; bisque               |
+| Mid fire  | 5–6   | {{2167–2232 °F; 1186–1222 °C}} | Electric-kiln stoneware and porcelain    |
+| High fire | 9–10  | {{2300–2345 °F; 1260–1285 °C}} | Mostly gas-fired stoneware and porcelain |
 
-Il-fornituri fir-Renju Unit, fl-Ewropa, fl-Awstralja u f’New Zealand spiss jagħtu temperatura f’°C minflok kon: sib l-eqreb kon fit-tabella hawn taħt u kkonfermah b’kon xhud{{en: witness cone}}. Il-koni ta’ Seger u l-koni ta’ Staffordshire, is-serje Ewropej l-aktar qodma, m’għandekx tassumi li għandhom l-istess numri tal-koni Orton, għalhekk din il-gwida tuża l-koni Orton.
+Suppliers in the UK, Europe, Australia and New Zealand often give a temperature in °C rather than a cone: find the nearest cone in the chart below and confirm it with a witness cone. Seger and Staffordshire cones, the older European series, should not be assumed to share Orton's numbers, so this guide uses Orton cones.
 
-### Żamma żżid ix-xogħol tas-sħana
+### Holding adds heatwork
 
-**Żamma**{{en: hold}} f’temperatura (li tissejjaħ ukoll **soak**) iżżomm il-forn f’temperatura waħda għal xi żmien. Peress li l-koni jkejlu x-xogħol tas-sħana, żamma fl-ogħla temperatura tista’ tieħu post li tasal għal temperatura ogħla. Orton jagħti dawn l-ekwivalenzi, bejn wieħed u ieħor:
+A **hold** (also called a **soak**) keeps the kiln at one temperature for a while. Because cones measure heatwork, a hold at the top can stand in for a hotter peak. Orton gives these rough equivalents:
 
-Table: Kemm tiswa żamma fl-ogħla temperatura
-Label: Żammiet u xogħol tas-sħana
+Table: What a hold at the peak is worth
+Label: Holds and heatwork
 
-| Żamma            | Bejn wieħed u ieħor l-istess xogħol tas-sħana bħal                             |
-| ---------------- | ------------------------------------------------------------------------------ |
-| Madwar 20 minuta | L-ogħla temperatura b’{{18 °F; 10 °C}} aktar                                   |
-| 40–60 minuta     | L-ogħla temperatura b’{{36 °F; 20 °C}} aktar                                   |
-| Madwar 2 sigħat  | L-ogħla temperatura b’{{54 °F; 30 °C}} aktar                                   |
-| 1–2 sigħat       | “jista’ jkun biżżejjed biex jgħawweġ il-kon li jmiss, numru wieħed aktar sħun” |
-| 4–6 sigħat       | Biżżejjed biex jitgħawweġ kon żewġ numri aktar sħun                            |
+| Hold             | Roughly the same heatwork as             |
+| ---------------- | ---------------------------------------- |
+| About 20 minutes | A peak {{18 °F; 10 °C}} hotter           |
+| 40–60 minutes    | A peak {{36 °F; 20 °C}} hotter           |
+| About 2 hours    | A peak {{54 °F; 30 °C}} hotter           |
+| 4–6 hours        | Enough to bend a cone two numbers hotter |
 
-Għalhekk żamma qatt ma tiġi b’xejn: jekk iżżid waħda, stenna li l-koni jitgħawġu aktar, u naqqas l-ogħla temperatura biex tpatti.
+Orton adds that a hold of 1–2 hours "may be sufficient to deform the next higher cone number".
 
-### It-tipi ta’ koni
+So a hold is never free: if you add one, expect the cones to bend further, and lower the peak to match.
 
-Orton jagħmel erba’ tipi. Tnejn joqogħdu fuq ix-xkaffa biex juru x’xogħol tas-sħana ħadu l-oġġetti; tnejn huma għas-sitter{{en: kiln sitter}}, is-swiċċ li jitfi l-forn meta kon żgħir jitgħawweġ.
+### Kinds of cone
 
-Table: L-erba’ tipi ta’ koni ta’ Orton
-Label: Tipi ta’ koni
+Orton makes four kinds. Two stand on the shelf to show what the ware received; two are for the kiln sitter.
 
-| Tip              | Għal xiex jintuża      | Kif joqgħod                                                                                                               |
-| ---------------- | ---------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| Li joqgħod waħdu | Kon xhud fuq ix-xkaffa | Bażi li hija parti minnu tiffissa l-għoli, 1¾ pulzier (44 mm), u l-inklinazzjoni ta’ 8°; ma jridx sostenn                 |
-| Kbir             | Kon xhud fuq ix-xkaffa | Jitqiegħed f’bażi tal-koni jew f’ftit tafal, b’eżatt 2 pulzieri (51 mm) jidhru, inklinat 8° mill-vertikali                |
-| Żgħir (junior)   | Fis-sitter             | Jimtedd minn naħa għal oħra fuq l-appoġġi tas-sitter; jekk jitqiegħed wieqaf fuq xkaffa, jidhru 15/16 ta’ pulzier (24 mm) |
-| Virga            | Fis-sitter             | L-istess trab tal-koni ż-żgħar, f’forma ta’ virga uniformi                                                                |
+Table: Orton's four kinds of cone
+Label: Kinds of cone
 
-L-għoli jgħodd: differenza ta’ ¼ ta’ pulzier (6 mm) fl-għoli ta’ kon kbir “tista’ tikkawża differenza ta’ aktar minn nofs kon fit-tgħawwiġ”. Il-koni ma jitħassrux u ma jixjħux, u l-ħażna f’post umdu ma taffettwahomx.
+| Kind            | Used for                  | How it stands                                                                               |
+| --------------- | ------------------------- | ------------------------------------------------------------------------------------------- |
+| Self-supporting | Witness cone on the shelf | A built-in base sets the height, 1¾ in (44 mm), and the 8° lean; no holder needed           |
+| Large           | Witness cone on the shelf | Set in a plaque or a pat of clay with exactly 2 in (51 mm) showing, leaning 8° from upright |
+| Small (junior)  | Kiln sitter               | Lies across the sitter's supports; 15/16 in (24 mm) showing if stood on a shelf             |
+| Bar             | Kiln sitter               | The same powder as small cones, in an even bar shape                                        |
 
-### X’tfisser “kon 6” fil-prattika
+Height matters: a ¼ in (6 mm) difference in the height of a large cone "can cause more than a half cone difference in bending". Cones do not go bad or age, and damp storage does not affect them.
 
-It-tabella tagħti {{2232 °F; 1222 °C}} għal kon 6 li joqgħod waħdu, imma biss meta l-forn jitla’ l-aħħar {{180 °F; 100 °C}} b’rata ta’ {{108 °F/h; 60 °C/h}}. B’rata ta’ {{270 °F/h; 150 °C/h}}, l-istess kon jitgħawweġ f’{{2269 °F; 1243 °C}}. Il-fran veri jvarjaw ukoll: Digitalfire jirrapporta li “Il-biċċa l-kbira tal-fran jaslu għall-kon 6 f’2200°F, mhux f’2232°F”. Għalhekk “kon 6” ifisser li l-oġġetti rċevew ix-xogħol tas-sħana li jgħawweġ kon 6, tkun xi tkun it-temperatura li kien juri termometru dak il-ħin.
+### What "cone 6" means in practice
+
+The chart gives a self-supporting cone 6 as {{2232 °F; 1222 °C}}, but only when the last {{180 °F; 100 °C}} climbs at {{108 °F/h; 60 °C/h}}. Climbing at {{270 °F/h; 150 °C/h}}, the same cone bends at {{2269 °F; 1243 °C}}. Real kilns differ again: Digitalfire reports that "Most kilns reach cone 6 at 2200°F, not 2232°F". So "cone 6" means the ware received the heatwork that bends a cone 6, whatever a thermometer read at the time.
 
 :::orton
 
 > [!NOTE]
-> Aħmi skont il-kon, mhux skont l-arloġġ jew l-indikatur. Issettja l-kontrollur skont in-numru tal-kon, u ħalli kon xhud fuq ix-xkaffa jikkonferma kull ħamja.
+> Fire by the cone, not the clock or the dial. Set a controller by cone number, and let a witness cone on the shelf confirm every firing.
 
 :::
 
 :::temperature
 
 > [!NOTE]
-> Jekk taħmi bit-temperatura, żomm l-aħħar ta’ kull ħamja l-istess: l-istess rata tat-tisħin fl-aħħar, l-istess ogħla temperatura u l-istess żamma. Hekk glejż li ħadem darba jerġa’ jaħdem.
+> Firing by temperature, keep the end of every firing the same: the same last rate of climb, the same peak and the same hold. Then a glaze that worked once works again.
 
 :::
 

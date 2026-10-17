@@ -3,78 +3,79 @@ title: 기본 가마 소성
 lead: 킬른 시터나 수동 스위치가 달린 전기가마를 소성하는 방법입니다. 콘을 고르고, 놓고, 읽는 방법과 초벌 및 재벌의 공개된 소성 스케줄을 다룹니다.
 ---
 
-## 콘이 재는 것 {#cones}
+## Cones: what they measure {#cones lang=en}
 
 > [!NOTE]
-> 먼저 가마의 사용 설명서를 따르세요. 이 가이드는 콘 제조사와 가마 제조사가 기본적인 전기가마에 대해 발표한 내용을 모은 것이며, 사용하는 모델의 설명서를 대신하지 않습니다. 둘이 다를 때는 사용 설명서가 우선합니다.
+> Follow your kiln's own manual first. This guide gathers what cone and kiln makers publish about basic electric kilns; it does not replace the instructions for your model, and where the two differ, the manual wins.
 
-**파이로메트릭 콘**{{en: pyrometric cone}}은 규격화된 세라믹 가루로 만든 작고 가느다란 피라미드 모양입니다. 열을 충분히 받으면 부드러워져서 늘 같은 방식으로 휘어 쓰러집니다. 콘을 기물 옆에 두고 소성한 뒤 얼마나 휘었는지 읽습니다.
+A **pyrometric cone** is a small, slender pyramid made from a standardized ceramic powder. When it has had enough heat, it softens and bends over in a repeatable way. You set cones in the kiln beside the ware and read how far they bent.
 
-콘이 재는 것은 **소성 정도**{{en: heatwork}}, 곧 온도와 시간을 합친 효과입니다. 미국의 주요 콘 제조사인 Orton은 “콘은 온도만 재는 것이 아닙니다”라고 말합니다. 천천히 가열한 콘은 빨리 가열한 콘보다 낮은 온도에서 휘며, 유약도 똑같이 움직입니다. 그래서 Orton은 소성의 마지막 {{180 °F; 100 °C}} 구간의 정해진 승온 속도를 기준으로 각 콘의 온도를 제시합니다. 콘은 움직이기 시작하면 좁은 온도 범위, “보통 40° F 미만”(22 °C)에서 완전히 휩니다.
+Cones measure **heatwork**, the combined effect of temperature and time. In the words of Orton, the main US cone maker, "Cones do not measure temperature alone." A cone heated slowly bends at a lower temperature than one heated fast, and a glaze behaves the same way. So Orton gives each cone's temperature for a stated heating rate over the last {{180 °F; 100 °C}} of the firing. Once a cone starts to move, it bends over a narrow range, "usually less than 40° F" (22 °C).
 
-### 콘 번호
+### Cone numbers
 
-콘 번호는 가장 저온인 022부터 42까지 있습니다. 맨 앞에 영이 붙으면 저온 계열이라는 표시입니다. 오튼 콘 06은 오튼 콘 04보다 저온이고, 오튼 콘 01은 오튼 콘 1보다 열이 적게 필요합니다. Orton은 두 계열을 혼동하지 않는 것이 중요하다고 경고합니다. 차이는 큽니다. 오튼 콘 06은 콘 6보다 {{400 °F; 220 °C}} 넘게 낮은 온도에서 휩니다.
+Cone numbers run from 022, the coolest, up to 42. A leading zero marks the cooler series and is read as "oh": cone 06 ("oh-six") is cooler than cone 04, and cone 01 needs less heat than cone 1. Orton warns that it is important not to mix the two series up. The gap is large: cone 06 bends more than {{400 °F; 220 °C}} cooler than cone 6.
 
-Table: 일반적인 소성 범위: 셀프 서포트 콘, {{108 °F/h; 60 °C/h}} 기준
-Label: 소성 범위
+Table: Common firing ranges, for self-supporting cones at {{108 °F/h; 60 °C/h}}
+Label: Firing ranges
 
-| 범위   | 오튼 콘 |                           온도 | 주로 쓰는 용도                       |
-| ------ | ------- | -----------------------------: | ------------------------------------ |
-| 저화도 | 06~04   |  {{1828–1945 °F; 998–1063 °C}} | 도기 유약, 초벌                      |
-| 중화도 | 5~6     | {{2167–2232 °F; 1186–1222 °C}} | 전기가마 석기와 자기                 |
-| 고화도 | 9~10    | {{2300–2345 °F; 1260–1285 °C}} | 주로 가스가마로 소성하는 석기와 자기 |
+| Range     | Cones |                    Temperature | Typical use                              |
+| --------- | ----- | -----------------------------: | ---------------------------------------- |
+| Low fire  | 06–04 |  {{1828–1945 °F; 998–1063 °C}} | Earthenware glazes; bisque               |
+| Mid fire  | 5–6   | {{2167–2232 °F; 1186–1222 °C}} | Electric-kiln stoneware and porcelain    |
+| High fire | 9–10  | {{2300–2345 °F; 1260–1285 °C}} | Mostly gas-fired stoneware and porcelain |
 
-영국, 유럽, 오스트레일리아, 뉴질랜드의 판매점은 콘 대신 °C 온도를 알려 주는 경우가 많습니다. 아래 온도표에서 가장 가까운 콘을 찾고 확인용 콘{{en: witness cone}}으로 확인하세요. 독일의 제게르 콘과 스태퍼드셔 콘 같은 유럽의 오래된 계열은 Orton과 번호가 같다고 가정해서는 안 되므로, 이 가이드는 오튼 콘을 씁니다.
+Suppliers in the UK, Europe, Australia and New Zealand often give a temperature in °C rather than a cone: find the nearest cone in the chart below and confirm it with a witness cone. Seger and Staffordshire cones, the older European series, should not be assumed to share Orton's numbers, so this guide uses Orton cones.
 
-### 유지하면 소성 정도가 더해집니다
+### Holding adds heatwork
 
-**유지**{{en: hold}}(**뜸 들이기**라고도 합니다)는 가마를 한 온도에서 잠시 그대로 두는 것입니다. 콘은 소성 정도를 재므로, 최고 온도에서의 유지는 더 높은 최고 온도를 대신할 수 있습니다. Orton이 제시하는 대략적인 환산은 다음과 같습니다.
+A **hold** (also called a **soak**) keeps the kiln at one temperature for a while. Because cones measure heatwork, a hold at the top can stand in for a hotter peak. Orton gives these rough equivalents:
 
-Table: 최고 온도에서의 유지가 갖는 값
-Label: 유지와 소성 정도
+Table: What a hold at the peak is worth
+Label: Holds and heatwork
 
-| 유지     | 대략 같은 소성 정도                                     |
-| -------- | ------------------------------------------------------- |
-| 약 20분  | 최고 온도가 {{18 °F; 10 °C}} 더 높은 경우               |
-| 40~60분  | 최고 온도가 {{36 °F; 20 °C}} 더 높은 경우               |
-| 약 2시간 | 최고 온도가 {{54 °F; 30 °C}} 더 높은 경우               |
-| 1~2시간  | “다음으로 고온인 콘 번호를 변형시키기에 충분할 수 있음” |
-| 4~6시간  | 두 단계 고온의 콘을 휘게 하기에 충분함                  |
+| Hold             | Roughly the same heatwork as             |
+| ---------------- | ---------------------------------------- |
+| About 20 minutes | A peak {{18 °F; 10 °C}} hotter           |
+| 40–60 minutes    | A peak {{36 °F; 20 °C}} hotter           |
+| About 2 hours    | A peak {{54 °F; 30 °C}} hotter           |
+| 4–6 hours        | Enough to bend a cone two numbers hotter |
 
-그러니 유지는 결코 공짜가 아닙니다. 유지를 넣으면 콘이 더 많이 휠 것으로 예상하고, 그에 맞춰 최고 온도를 낮추세요.
+Orton adds that a hold of 1–2 hours "may be sufficient to deform the next higher cone number".
 
-### 콘의 종류
+So a hold is never free: if you add one, expect the cones to bend further, and lower the peak to match.
 
-Orton은 콘을 네 종류 만듭니다. 두 종류는 기물이 받은 열을 보여 주려고 내화판 위에 세우고, 두 종류는 킬른 시터용입니다.
+### Kinds of cone
 
-Table: Orton의 네 가지 콘
-Label: 콘의 종류
+Orton makes four kinds. Two stand on the shelf to show what the ware received; two are for the kiln sitter.
 
-| 종류               | 용도                  | 세우는 방법                                                                          |
-| ------------------ | --------------------- | ------------------------------------------------------------------------------------ |
-| 셀프 서포트 콘     | 내화판 위의 확인용 콘 | 밑받침이 붙어 있어 높이 1¾인치(44 mm)와 8° 기울기가 정해지므로 받침이 필요 없음      |
-| 라지 콘            | 내화판 위의 확인용 콘 | 콘 받침대나 점토 덩이에 꽂아 정확히 2인치(51 mm)가 드러나게 하고, 수직에서 8° 기울임 |
-| 스몰 콘(주니어 콘) | 킬른 시터             | 킬른 시터의 콘 받침에 가로질러 놓음, 내화판에 세우면 15/16인치(24 mm)가 드러남       |
-| 바 콘              | 킬른 시터             | 스몰 콘과 같은 가루로 만든 고른 막대 모양                                            |
+Table: Orton's four kinds of cone
+Label: Kinds of cone
 
-높이가 중요합니다. 라지 콘의 높이가 ¼인치(6 mm) 다르면 “휘는 정도에서 콘 반 개가 넘는 차이가 생길 수 있습니다”. 콘은 상하거나 오래된다고 해서 달라지지 않으며, 습한 곳에 보관해도 영향을 받지 않습니다.
+| Kind            | Used for                  | How it stands                                                                               |
+| --------------- | ------------------------- | ------------------------------------------------------------------------------------------- |
+| Self-supporting | Witness cone on the shelf | A built-in base sets the height, 1¾ in (44 mm), and the 8° lean; no holder needed           |
+| Large           | Witness cone on the shelf | Set in a plaque or a pat of clay with exactly 2 in (51 mm) showing, leaning 8° from upright |
+| Small (junior)  | Kiln sitter               | Lies across the sitter's supports; 15/16 in (24 mm) showing if stood on a shelf             |
+| Bar             | Kiln sitter               | The same powder as small cones, in an even bar shape                                        |
 
-### 실제로 “오튼 콘 6”이 뜻하는 것
+Height matters: a ¼ in (6 mm) difference in the height of a large cone "can cause more than a half cone difference in bending". Cones do not go bad or age, and damp storage does not affect them.
 
-온도표는 셀프 서포트 오튼 콘 6을 {{2232 °F; 1222 °C}}로 제시하지만, 마지막 {{180 °F; 100 °C}} 구간을 {{108 °F/h; 60 °C/h}}로 올릴 때만 그렇습니다. {{270 °F/h; 150 °C/h}}로 올리면 같은 콘이 {{2269 °F; 1243 °C}}에서 휩니다. 실제 가마는 또 다릅니다. Digitalfire는 “대부분의 가마는 2200°F에서 콘 6에 도달하며, 2232°F에서 도달하지 않습니다”라고 보고합니다. 그러므로 “콘 6”은 그 순간 온도계가 무엇을 가리켰든 기물이 콘 6을 휘게 하는 소성 정도를 받았다는 뜻입니다.
+### What "cone 6" means in practice
+
+The chart gives a self-supporting cone 6 as {{2232 °F; 1222 °C}}, but only when the last {{180 °F; 100 °C}} climbs at {{108 °F/h; 60 °C/h}}. Climbing at {{270 °F/h; 150 °C/h}}, the same cone bends at {{2269 °F; 1243 °C}}. Real kilns differ again: Digitalfire reports that "Most kilns reach cone 6 at 2200°F, not 2232°F". So "cone 6" means the ware received the heatwork that bends a cone 6, whatever a thermometer read at the time.
 
 :::orton
 
 > [!NOTE]
-> 시계나 다이얼이 아니라 콘을 기준으로 소성하세요. 컨트롤러는 콘 번호로 설정하고, 내화판 위의 확인용 콘으로 매번 소성을 확인하세요.
+> Fire by the cone, not the clock or the dial. Set a controller by cone number, and let a witness cone on the shelf confirm every firing.
 
 :::
 
 :::temperature
 
 > [!NOTE]
-> 온도를 기준으로 소성할 때는 매번 소성의 마지막 부분을 같게 하세요. 마지막 승온 속도, 최고 온도, 유지를 같게 하는 것입니다. 그러면 한 번 잘 나온 유약이 다시 잘 나옵니다.
+> Firing by temperature, keep the end of every firing the same: the same last rate of climb, the same peak and the same hold. Then a glaze that worked once works again.
 
 :::
 

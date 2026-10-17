@@ -3,78 +3,79 @@ title: Ψήσιμο σε ένα απλό καμίνι
 lead: Πώς ψήνετε σε ηλεκτρικό καμίνι με Kiln-Sitter ή με χειροκίνητους διακόπτες: επιλογή, τοποθέτηση και ανάγνωση των κώνων, με δημοσιευμένα προγράμματα για το ψήσιμο μπισκουί και το ψήσιμο του υαλώματος.
 ---
 
-## Κώνοι: τι μετρούν {#cones}
+## Cones: what they measure {#cones lang=en}
 
 > [!NOTE]
-> Ακολουθήστε πρώτα το εγχειρίδιο του δικού σας καμινιού. Αυτός ο οδηγός συγκεντρώνει όσα δημοσιεύουν οι κατασκευαστές κώνων και καμινιών για τα απλά ηλεκτρικά καμίνια. Δεν αντικαθιστά τις οδηγίες για το μοντέλο σας, και όπου τα δύο διαφέρουν, ισχύει το εγχειρίδιο.
+> Follow your kiln's own manual first. This guide gathers what cone and kiln makers publish about basic electric kilns; it does not replace the instructions for your model, and where the two differ, the manual wins.
 
-Ο **πυρομετρικός κώνος**{{en: pyrometric cone}} είναι μια μικρή, λεπτή πυραμίδα από τυποποιημένη κεραμική σκόνη. Όταν δεχτεί αρκετή θερμότητα, μαλακώνει και λυγίζει, πάντα με τον ίδιο τρόπο. Τοποθετείτε κώνους στο καμίνι δίπλα στα κομμάτια και μετά διαβάζετε πόσο λύγισαν.
+A **pyrometric cone** is a small, slender pyramid made from a standardized ceramic powder. When it has had enough heat, it softens and bends over in a repeatable way. You set cones in the kiln beside the ware and read how far they bent.
 
-Οι κώνοι μετρούν το **θερμικό έργο**{{en: heatwork}}, τη συνδυασμένη επίδραση θερμοκρασίας και χρόνου. Όπως το λέει η Orton, η κύρια εταιρεία κατασκευής κώνων στις ΗΠΑ: «Οι κώνοι δεν μετρούν μόνο τη θερμοκρασία.» Ένας κώνος που θερμαίνεται αργά λυγίζει σε χαμηλότερη θερμοκρασία από έναν που θερμαίνεται γρήγορα, και ένα υάλωμα{{en: glaze}} συμπεριφέρεται με τον ίδιο τρόπο. Γι’ αυτό η Orton δίνει τη θερμοκρασία κάθε κώνου για συγκεκριμένο ρυθμό ανόδου στους τελευταίους {{180 °F; 100 °C}} του ψησίματος. Μόλις ένας κώνος αρχίσει να κινείται, λυγίζει μέσα σε ένα στενό εύρος, «συνήθως λιγότερο από 40° F» (22 °C).
+Cones measure **heatwork**, the combined effect of temperature and time. In the words of Orton, the main US cone maker, "Cones do not measure temperature alone." A cone heated slowly bends at a lower temperature than one heated fast, and a glaze behaves the same way. So Orton gives each cone's temperature for a stated heating rate over the last {{180 °F; 100 °C}} of the firing. Once a cone starts to move, it bends over a narrow range, "usually less than 40° F" (22 °C).
 
-### Αριθμοί κώνων
+### Cone numbers
 
-Οι αριθμοί των κώνων πηγαίνουν από το 022, τον κώνο της χαμηλότερης θερμοκρασίας, έως το 42. Ένα μηδενικό μπροστά δείχνει τη σειρά των χαμηλότερων θερμοκρασιών και διαβάζεται «μηδέν»: ο κώνος 06 («μηδέν έξι») λυγίζει σε χαμηλότερη θερμοκρασία από τον κώνο 04, και ο κώνος 01 χρειάζεται λιγότερη θερμότητα από τον κώνο 1. Η Orton προειδοποιεί ότι είναι σημαντικό να μην μπερδεύετε τις δύο σειρές. Η διαφορά είναι μεγάλη: ο κώνος 06 λυγίζει σε θερμοκρασία χαμηλότερη κατά περισσότερο από {{400 °F; 220 °C}} από τον κώνο 6.
+Cone numbers run from 022, the coolest, up to 42. A leading zero marks the cooler series and is read as "oh": cone 06 ("oh-six") is cooler than cone 04, and cone 01 needs less heat than cone 1. Orton warns that it is important not to mix the two series up. The gap is large: cone 06 bends more than {{400 °F; 220 °C}} cooler than cone 6.
 
-Table: Συνηθισμένα εύρη ψησίματος, για αυτοστηριζόμενους κώνους με ρυθμό {{108 °F/h; 60 °C/h}}
-Label: Εύρη ψησίματος
+Table: Common firing ranges, for self-supporting cones at {{108 °F/h; 60 °C/h}}
+Label: Firing ranges
 
-| Εύρος              | Κώνοι |                    Θερμοκρασία | Συνήθης χρήση                                                                         |
-| ------------------ | ----- | -----------------------------: | ------------------------------------------------------------------------------------- |
-| Χαμηλή θερμοκρασία | 06–04 |  {{1828–1945 °F; 998–1063 °C}} | Υαλώματα για κεραμικά χαμηλής θερμοκρασίας{{en: earthenware}}, μπισκουί{{en: bisque}} |
-| Μέση θερμοκρασία   | 5–6   | {{2167–2232 °F; 1186–1222 °C}} | Stoneware και πορσελάνη σε ηλεκτρικό καμίνι                                           |
-| Υψηλή θερμοκρασία  | 9–10  | {{2300–2345 °F; 1260–1285 °C}} | Κυρίως stoneware και πορσελάνη σε καμίνι αερίου                                       |
+| Range     | Cones |                    Temperature | Typical use                              |
+| --------- | ----- | -----------------------------: | ---------------------------------------- |
+| Low fire  | 06–04 |  {{1828–1945 °F; 998–1063 °C}} | Earthenware glazes; bisque               |
+| Mid fire  | 5–6   | {{2167–2232 °F; 1186–1222 °C}} | Electric-kiln stoneware and porcelain    |
+| High fire | 9–10  | {{2300–2345 °F; 1260–1285 °C}} | Mostly gas-fired stoneware and porcelain |
 
-Οι προμηθευτές στο Ηνωμένο Βασίλειο, στην Ευρώπη, στην Αυστραλία και στη Νέα Ζηλανδία δίνουν συχνά θερμοκρασία σε °C αντί για κώνο: βρείτε τον πλησιέστερο κώνο στον πίνακα παρακάτω και επιβεβαιώστε τον με έναν κώνο-μάρτυρα{{en: witness cone}}. Δεν πρέπει να υποθέτετε ότι οι κώνοι Seger και Staffordshire, οι παλαιότερες ευρωπαϊκές σειρές, έχουν τους ίδιους αριθμούς με τους κώνους Orton, γι’ αυτό ο οδηγός χρησιμοποιεί κώνους Orton.
+Suppliers in the UK, Europe, Australia and New Zealand often give a temperature in °C rather than a cone: find the nearest cone in the chart below and confirm it with a witness cone. Seger and Staffordshire cones, the older European series, should not be assumed to share Orton's numbers, so this guide uses Orton cones.
 
-### Η παραμονή προσθέτει θερμικό έργο
+### Holding adds heatwork
 
-Η **παραμονή**{{en: hold}} (οι κεραμίστες τη λένε και **σιδέρωμα**{{en: soak}}) κρατά το καμίνι σε μία θερμοκρασία για κάποιο διάστημα. Επειδή οι κώνοι μετρούν θερμικό έργο, μια παραμονή στο ανώτατο σημείο μπορεί να υποκαταστήσει μια υψηλότερη τελική θερμοκρασία. Η Orton δίνει αυτές τις κατά προσέγγιση αντιστοιχίες:
+A **hold** (also called a **soak**) keeps the kiln at one temperature for a while. Because cones measure heatwork, a hold at the top can stand in for a hotter peak. Orton gives these rough equivalents:
 
-Table: Τι αξίζει μια παραμονή στην τελική θερμοκρασία
-Label: Παραμονή και θερμικό έργο
+Table: What a hold at the peak is worth
+Label: Holds and heatwork
 
-| Παραμονή         | Περίπου το ίδιο θερμικό έργο με                                       |
-| ---------------- | --------------------------------------------------------------------- |
-| Περίπου 20 λεπτά | Τελική θερμοκρασία υψηλότερη κατά {{18 °F; 10 °C}}                    |
-| 40–60 λεπτά      | Τελική θερμοκρασία υψηλότερη κατά {{36 °F; 20 °C}}                    |
-| Περίπου 2 ώρες   | Τελική θερμοκρασία υψηλότερη κατά {{54 °F; 30 °C}}                    |
-| 1–2 ώρες         | «μπορεί να αρκεί για να παραμορφώσει τον αμέσως επόμενο αριθμό κώνου» |
-| 4–6 ώρες         | Αρκετή για να λυγίσει ένας κώνος δύο αριθμούς θερμότερος              |
+| Hold             | Roughly the same heatwork as             |
+| ---------------- | ---------------------------------------- |
+| About 20 minutes | A peak {{18 °F; 10 °C}} hotter           |
+| 40–60 minutes    | A peak {{36 °F; 20 °C}} hotter           |
+| About 2 hours    | A peak {{54 °F; 30 °C}} hotter           |
+| 4–6 hours        | Enough to bend a cone two numbers hotter |
 
-Άρα μια παραμονή δεν είναι ποτέ χωρίς κόστος: αν προσθέσετε μία, να περιμένετε ότι οι κώνοι θα λυγίσουν περισσότερο, και χαμηλώστε ανάλογα την τελική θερμοκρασία.
+Orton adds that a hold of 1–2 hours "may be sufficient to deform the next higher cone number".
 
-### Είδη κώνων
+So a hold is never free: if you add one, expect the cones to bend further, and lower the peak to match.
 
-Η Orton φτιάχνει τέσσερα είδη. Τα δύο στέκονται στην πυρόπλακα και δείχνουν τι δέχτηκαν τα κομμάτια. Τα άλλα δύο είναι για το Kiln-Sitter (τον μηχανικό διακόπτη που σβήνει το καμίνι).
+### Kinds of cone
 
-Table: Τα τέσσερα είδη κώνων της Orton
-Label: Είδη κώνων
+Orton makes four kinds. Two stand on the shelf to show what the ware received; two are for the kiln sitter.
 
-| Είδος            | Χρήση                         | Πώς στέκεται                                                                                                  |
-| ---------------- | ----------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| Αυτοστηριζόμενος | Κώνος-μάρτυρας στην πυρόπλακα | Μια ενσωματωμένη βάση ορίζει το ύψος, 1¾ ίντσες (44 mm), και την κλίση των 8°. Δεν χρειάζεται στήριγμα        |
-| Μεγάλος          | Κώνος-μάρτυρας στην πυρόπλακα | Μπαίνει σε βάση κώνων ή σε ένα κομμάτι πηλού, με ακριβώς 2 ίντσες (51 mm) έξω, με κλίση 8° από την κατακόρυφο |
-| Μικρός (junior)  | Kiln-Sitter                   | Ακουμπά οριζόντια στα στηρίγματα του Kiln-Sitter. Αν στηθεί σε πυρόπλακα, μένουν έξω 15/16 της ίντσας (24 mm) |
-| Ράβδος           | Kiln-Sitter                   | Η ίδια σκόνη με τους μικρούς κώνους, σε σχήμα ομοιόμορφης ράβδου                                              |
+Table: Orton's four kinds of cone
+Label: Kinds of cone
 
-Το ύψος μετράει: διαφορά ¼ της ίντσας (6 mm) στο ύψος ενός μεγάλου κώνου «μπορεί να προκαλέσει διαφορά μεγαλύτερη από μισό κώνο στην κάμψη». Οι κώνοι δεν χαλάνε ούτε παλιώνουν, και η υγρασία στην αποθήκευση δεν τους επηρεάζει.
+| Kind            | Used for                  | How it stands                                                                               |
+| --------------- | ------------------------- | ------------------------------------------------------------------------------------------- |
+| Self-supporting | Witness cone on the shelf | A built-in base sets the height, 1¾ in (44 mm), and the 8° lean; no holder needed           |
+| Large           | Witness cone on the shelf | Set in a plaque or a pat of clay with exactly 2 in (51 mm) showing, leaning 8° from upright |
+| Small (junior)  | Kiln sitter               | Lies across the sitter's supports; 15/16 in (24 mm) showing if stood on a shelf             |
+| Bar             | Kiln sitter               | The same powder as small cones, in an even bar shape                                        |
 
-### Τι σημαίνει «κώνος 6» στην πράξη
+Height matters: a ¼ in (6 mm) difference in the height of a large cone "can cause more than a half cone difference in bending". Cones do not go bad or age, and damp storage does not affect them.
 
-Ο πίνακας δίνει για τον αυτοστηριζόμενο κώνο 6 τους {{2232 °F; 1222 °C}}, αλλά μόνο όταν οι τελευταίοι {{180 °F; 100 °C}} ανεβαίνουν με ρυθμό {{108 °F/h; 60 °C/h}}. Με άνοδο {{270 °F/h; 150 °C/h}}, ο ίδιος κώνος λυγίζει στους {{2269 °F; 1243 °C}}. Τα πραγματικά καμίνια διαφέρουν και πάλι: το Digitalfire αναφέρει ότι «Τα περισσότερα καμίνια φτάνουν στον κώνο 6 στους 2200°F, όχι στους 2232°F». Άρα «κώνος 6» σημαίνει ότι τα κομμάτια δέχτηκαν το θερμικό έργο που λυγίζει έναν κώνο 6, ό,τι κι αν έδειχνε ένα θερμόμετρο εκείνη την ώρα.
+### What "cone 6" means in practice
+
+The chart gives a self-supporting cone 6 as {{2232 °F; 1222 °C}}, but only when the last {{180 °F; 100 °C}} climbs at {{108 °F/h; 60 °C/h}}. Climbing at {{270 °F/h; 150 °C/h}}, the same cone bends at {{2269 °F; 1243 °C}}. Real kilns differ again: Digitalfire reports that "Most kilns reach cone 6 at 2200°F, not 2232°F". So "cone 6" means the ware received the heatwork that bends a cone 6, whatever a thermometer read at the time.
 
 :::orton
 
 > [!NOTE]
-> Ψήνετε με βάση τον κώνο, όχι το ρολόι ή το καντράν. Ρυθμίστε τον ελεγκτή με τον αριθμό του κώνου, και αφήστε έναν κώνο-μάρτυρα στην πυρόπλακα να επιβεβαιώνει κάθε ψήσιμο.
+> Fire by the cone, not the clock or the dial. Set a controller by cone number, and let a witness cone on the shelf confirm every firing.
 
 :::
 
 :::temperature
 
 > [!NOTE]
-> Όταν ψήνετε κατά θερμοκρασία, κρατήστε το τέλος κάθε ψησίματος ίδιο: τον ίδιο τελευταίο ρυθμό ανόδου, την ίδια τελική θερμοκρασία και την ίδια παραμονή. Τότε ένα υάλωμα που πέτυχε μία φορά θα πετύχει ξανά.
+> Firing by temperature, keep the end of every firing the same: the same last rate of climb, the same peak and the same hold. Then a glaze that worked once works again.
 
 :::
 

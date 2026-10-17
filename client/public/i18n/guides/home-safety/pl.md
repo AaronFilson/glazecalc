@@ -129,25 +129,25 @@ Stężenie ołowiu we krwi podaje się w **µg/dL** (mikrogramach ołowiu na dec
 
 Aplikacja Glazecalc ma ołów wyłączony, dopóki nie zostanie on włączony w [ustawieniach konta](/account). Przy wyłączonym ołowiu aplikacja nigdy nie dodaje ołowiu do receptury ani go nie proponuje.
 
-## Zwierzęta domowe {#pets}
+## Pets {#pets lang=en}
 
 > [!NOTE]
-> Nie znaleźliśmy żadnych badań ani zaleceń weterynaryjnych dotyczących zwierząt w domach ceramików. Rady w tej części to zdrowy rozsądek oparty na ogólnej wiedzy o ołowiu, barze i ptakach. Nie pochodzą ze źródła weterynaryjnego.
+> We found no veterinary study or guidance written for pets in potters' homes. The advice in this section is common sense, built on general facts about lead, barium and birds. It does not come from a veterinary source.
 
-### Co wiadomo
+### What is known
 
-Pet Poison Helpline podaje: „Ołów jest toksyczny dla wszystkich gatunków, ale największe ryzyko zatrucia dotyczy zwierząt młodych i/lub niedożywionych”, a objawy to między innymi wymioty, biegunka, brak apetytu, potykanie się, drgawki i ślepota. U psa, który zjadł zimne ognie zawierające bar (rozpuszczalną sól baru, nie szkliwo{{en: glaze}}), wystąpiły osłabienie mięśni, paraliż, ślinienie się i nieregularne bicie serca; pies wyzdrowiał dzięki leczeniu weterynaryjnemu. Ptaki to szczególny przypadek: lekarz weterynarii z Uniwersytetu Illinois wyjaśnia, że „ptaki mają bardzo złożony i niezwykle wydajny układ oddechowy, co czyni je szczególnie wrażliwymi na wdychanie oparów i aerozoli”.
+The Pet Poison Helpline says "Lead is toxic for all species, but young and/or malnourished animals are at highest risk for poisoning", with signs such as vomiting, diarrhea, not eating, stumbling, seizures and blindness. A veterinary case report describes a dog that ate sparklers containing barium nitrate (a soluble barium salt, not a glaze material): it developed sudden weakness, drooling and an irregular heartbeat, and recovered with veterinary treatment. Birds are a special case: a University of Illinois vet explains that "Birds have a highly sophisticated and ultra efficient respiratory system, making them particularly vulnerable to the inhalation of fumes and aerosols."
 
-### Zasady zdrowego rozsądku
+### Common-sense rules
 
-- Nie wpuszczać zwierząt do pracowni i trzymać jej drzwi zamknięte.
-- Psy gryzą worki i piją z wiader. Worki trzymać w zamkniętej szafce, a każde wiadro przykrywać pokrywą.
-- Koty chodzą po pyle i zlizują go z łap i sierści. Podłogę sprzątać na mokro, a kotów nie wpuszczać do pracowni, żeby nie miały czego zlizywać.
-- Ptaki i małe ssaki (króliki, świnki morskie, chomiki) oddychają tym samym powietrzem co domownicy. Podczas pracy z suchymi surowcami i podczas wypału trzymać je w odległym pokoju przy zamkniętych drzwiach.
-- W akwariach zbiera się opadający pył. Nie stawiać ich w pracowni i trzymać je przykryte.
-- Miski z jedzeniem i wodą dla zwierząt trzymać z dala od pracowni i pieca; używać misek kupionych w sklepie lub przebadanych, a nie eksperymentów z pracowni.
+- Keep pets out of the studio, with the door shut.
+- Dogs chew bags and drink from buckets. Keep bags in a closed cabinet and a lid on every bucket.
+- Cats walk through dust and lick it off their paws and fur. Wet-clean the floor and keep cats out of the studio, so there is nothing to groom off.
+- Birds and small mammals (rabbits, guinea pigs, hamsters) share the household air. Keep them in a far room with the door shut while you handle dry materials and while the kiln fires.
+- Fish tanks collect settling dust. Keep them out of the studio, and covered.
+- Keep pet food and water bowls away from the studio and kiln, and use commercial or tested bowls, not studio experiments.
 
-Jeśli zwierzę mogło zjeść lub wypić cokolwiek z pracowni albo ma objawy podobne do opisanych wyżej, należy zadzwonić do swojego weterynarza lub na linię pomocy przy zatruciach zwierząt (zob. tabela na górze strony), mając pod ręką nazwę surowca i wagę zwierzęcia.
+If a pet may have eaten or drunk anything from the studio, or shows signs like those above, call your vet or an animal poison line (see the table at the top), with the material's name and the pet's weight to hand.
 
 ## Piec {#the-kiln}
 
@@ -220,40 +220,41 @@ Testy domowe budzą spory. Według FDA domowe testy wymazowe mogą wykazać wymy
 
 Więcej o tym, jak topią się szkliwa, dlaczego niektóre uwalniają metale i co oznaczają limity – w poradniku [Szkliwienie od podstaw](/guides/glazing-basics).
 
-## Źródła {#sources}
+## Sources {#sources lang=en}
 
 - [America's Poison Centers: Poison Help](https://poisoncenters.org/)
 - [Poison Control (poison.org): webPOISONCONTROL](https://www.poison.org/)
 - [NHS: Poisoning](https://www.nhs.uk/conditions/poisoning/)
-- [National Poisons Information Service (Wielka Brytania)](https://www.npis.org/)
+- [National Poisons Information Service (UK)](https://www.npis.org/)
 - [National Poisons Information Centre of Ireland: Public Poisons Line](https://www.poisons.ie/)
 - [European Commission: 112, the European emergency number](https://digital-strategy.ec.europa.eu/en/policies/112)
 - [healthdirect: Poisoning](https://www.healthdirect.gov.au/poisoning)
-- [National Poisons Centre (Nowa Zelandia)](https://www.poisons.co.nz/)
+- [National Poisons Centre (New Zealand)](https://www.poisons.co.nz/)
 - [ASPCA: Animal Poison Control](https://www.aspca.org/pet-care/animal-poison-control)
 - [Pet Poison Helpline](https://www.petpoisonhelpline.com/)
-- [Animal PoisonLine (Wielka Brytania)](https://www.animalpoisonline.co.uk/)
-- [Animal Poisons Helpline (Australia i Nowa Zelandia)](https://animalpoisons.com.au/)
+- [Animal PoisonLine (UK)](https://www.animalpoisonline.co.uk/)
+- [Animal Poisons Helpline (Australia and New Zealand)](https://animalpoisons.com.au/)
 - [PubMed Central: Acute soluble barium poisoning, a review (2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC11700400)
 - [WikEM: Boron toxicity](https://wikem.org/wiki/Boron_toxicity)
-- [NPIC i US EPA: Recognition and Management of Pesticide Poisonings, rozdział 9 (PDF)](https://www.npic.orst.edu/RMPP/rmpp_ch9.pdf)
+- [NPIC and US EPA: Recognition and Management of Pesticide Poisonings, chapter 9 (PDF)](https://www.npic.orst.edu/RMPP/rmpp_ch9.pdf)
 - [medlibrary.org: Lithium carbonate prescribing information](https://medlibrary.org/lib/rx/meds/lithium-carbonate-16/page/2/)
 - [CDC: About Lead in Jobs, Hobbies, or Other Activities](https://cdc.gov/lead-prevention/prevention/jobs-hobbies-activities.html)
 - [CDC: Blood Lead Reference Value](https://www.cdc.gov/nceh/lead/data/blood-lead-reference-value.htm)
-- [US EPA: broszura o zdrowiu dzieci (2018, PDF)](https://19january2021snapshot.epa.gov/sites/static/files/2018-10/documents/childrenshealthbooklet2018_final-4_newlinks.pdf)
+- [US EPA: Children's health booklet (2018, PDF)](https://19january2021snapshot.epa.gov/sites/static/files/2018-10/documents/childrenshealthbooklet2018_final-4_newlinks.pdf)
 - [Pennsylvania Department of Health: Non-Occupational Lead Exposure (PDF)](https://www.health.pa.gov:443/topics/Documents/Environmental%20Health/Non-Occupational%20Lead%20Exposure.pdf)
 - [Western Carolina University: Ceramics Safety](https://www.wcu.edu/discover/campus-services-and-operations/facilities-management/safety-and-risk-management/visual-arts-theatre-safety/ceramics-safety.aspx)
-- [Crafts Council (Wielka Brytania): How to make your pottery practice greener](https://craftscouncil.org.uk/stories/how-make-your-pottery-practice-greener)
+- [Crafts Council (UK): How to make your pottery practice greener](https://craftscouncil.org.uk/stories/how-make-your-pottery-practice-greener)
 - [Pet Poison Helpline: Lead](https://www.petpoisonhelpline.com/poison/lead/)
+- [Vet Candy: Sparkler ingestion results in barium toxicity](https://www.myvetcandy.com/clinicalupdblog/2019/3/15/sparkler-ingestion-results-in-barium-toxicity)
 - [University of Illinois College of Veterinary Medicine: Bird toxins](https://vetmed.illinois.edu/pet-health-columns/bird-toxins-teflon-avocado-lead-zinc/)
 - [Skutt: Designing a Kiln Room (PDF)](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Designing-A-Kiln-Room-1.pdf)
-- [Kiln Management, poradnik dla szkół (PDF)](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Kiln-Management-1.pdf)
+- [Kiln Management guide for schools (PDF)](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Kiln-Management-1.pdf)
 - [L&L Kiln: Front-loader installation checklist (PDF)](https://www.theceramicshop.com/downloads/LLFLChecklist.pdf)
 - [Rio Grande: PMC Kilns Handbook (PDF)](https://products.riogrande.com/content/Instruction-Sheets/RioGrande-PMC-Kilns-Handbook-IS.pdf)
-- [Dawson: instrukcja Kiln-Sitter LT-3 (PDF)](https://oud.klei.nl/forum/bestanden/f675ae4a-d890-4b8b-a08e-173e652f25a6/KilnSitter%20lt3%20en%20lt3k.pdf)
+- [Dawson: Kiln-Sitter LT-3 manual (PDF)](https://oud.klei.nl/forum/bestanden/f675ae4a-d890-4b8b-a08e-173e652f25a6/KilnSitter%20lt3%20en%20lt3k.pdf)
 - [Ceramic Arts Network: In the Studio, Eye Health for Potters](https://ceramicartsnetwork.org/pottery-making-illustrated/pottery-making-illustrated-article/In-the-Studio-Eye-Health-for-Potters)
 - [FDA: Questions and Answers on Lead-Glazed Traditional Pottery](https://www.fda.gov/food/environmental-contaminants-food/questions-and-answers-lead-glazed-traditional-pottery)
-- [FDA: Compliance Policy Guide 545.450, ołów w ceramice (PDF)](https://www.fda.gov/media/71764/download)
+- [FDA: Compliance Policy Guide 545.450, lead in pottery (PDF)](https://www.fda.gov/media/71764/download)
 - [Digitalfire: Food Safe](https://digitalfire.com/glossary/food+safe)
 - [Ceramics NZ: Is it food safe?](https://ceramicsnz.org/news/is-it-food-safe/)
 - [Ceramic Arts Network: Techno File, Dirty Dishes](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/Techno-File-Dirty-Dishes)

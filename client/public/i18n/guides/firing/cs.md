@@ -3,78 +3,79 @@ title: Výpal v jednoduché peci
 lead: Jak vypalovat v elektrické peci s vypínačem Kiln-Sitter nebo s ručními přepínači: výběr, umístění a odečítání žároměrek a zveřejněné vypalovací křivky pro přežah a glazurový výpal.
 ---
 
-## Žároměrky: co měří {#cones}
+## Cones: what they measure {#cones lang=en}
 
 > [!NOTE]
-> Řiďte se především návodem k obsluze své pece. Tento návod shrnuje, co o jednoduchých elektrických pecích zveřejňují výrobci žároměrek a pecí; nenahrazuje návod k obsluze vašeho modelu, a kde se obojí liší, platí návod k obsluze.
+> Follow your kiln's own manual first. This guide gathers what cone and kiln makers publish about basic electric kilns; it does not replace the instructions for your model, and where the two differ, the manual wins.
 
-**Žároměrka**{{en: pyrometric cone}} (pyrometrický kužel) je malý, štíhlý jehlan z normalizovaného keramického prášku. Když dostane dost tepla, změkne a ohne se, a to pokaždé stejným způsobem. Žároměrky postavíte do pece vedle výrobků a odečtete, jak daleko se ohnuly.
+A **pyrometric cone** is a small, slender pyramid made from a standardized ceramic powder. When it has had enough heat, it softens and bends over in a repeatable way. You set cones in the kiln beside the ware and read how far they bent.
 
-Žároměrky měří **tepelnou expozici**{{en: heatwork}}, tedy společné působení teploty a času. Slovy společnosti Orton, hlavního amerického výrobce žároměrek: „Žároměrky neměří jen teplotu.“ Žároměrka ohřívaná pomalu se ohne při nižší teplotě než žároměrka ohřívaná rychle, a glazura{{en: glaze}} se chová stejně. Proto Orton uvádí teplotu každé žároměrky pro stanovenou rychlost ohřevu během posledních {{180 °F; 100 °C}} výpalu. Jakmile se žároměrka začne hýbat, ohne se v úzkém rozmezí, „obvykle menším než 40° F“ (22 °C).
+Cones measure **heatwork**, the combined effect of temperature and time. In the words of Orton, the main US cone maker, "Cones do not measure temperature alone." A cone heated slowly bends at a lower temperature than one heated fast, and a glaze behaves the same way. So Orton gives each cone's temperature for a stated heating rate over the last {{180 °F; 100 °C}} of the firing. Once a cone starts to move, it bends over a narrow range, "usually less than 40° F" (22 °C).
 
-### Čísla žároměrek
+### Cone numbers
 
-Čísla žároměrek sahají od 022, nejchladnější žároměrky, až po 42. Nula na začátku označuje chladnější řadu a čte se jako „nula“: žároměrka 06 („nula šest“) je chladnější než žároměrka 04 a žároměrka 01 potřebuje méně tepla než žároměrka 1. Orton upozorňuje, že je důležité obě řady nezaměnit. Rozdíl je velký: žároměrka 06 se ohne při teplotě o více než {{400 °F; 220 °C}} nižší než žároměrka 6.
+Cone numbers run from 022, the coolest, up to 42. A leading zero marks the cooler series and is read as "oh": cone 06 ("oh-six") is cooler than cone 04, and cone 01 needs less heat than cone 1. Orton warns that it is important not to mix the two series up. The gap is large: cone 06 bends more than {{400 °F; 220 °C}} cooler than cone 6.
 
-Table: Běžné rozsahy výpalu, pro samostojné žároměrky při {{108 °F/h; 60 °C/h}}
-Label: Rozsahy výpalu
+Table: Common firing ranges, for self-supporting cones at {{108 °F/h; 60 °C/h}}
+Label: Firing ranges
 
-| Rozsah                | Žároměrky |                        Teplota | Typické použití                                             |
-| --------------------- | --------- | -----------------------------: | ----------------------------------------------------------- |
-| Nízkoteplotní výpal   | 06–04     |  {{1828–1945 °F; 998–1063 °C}} | Glazury na hrnčinu{{en: earthenware}}; přežah{{en: bisque}} |
-| Středněteplotní výpal | 5–6       | {{2167–2232 °F; 1186–1222 °C}} | Kamenina{{en: stoneware}} a porcelán z elektrické pece      |
-| Vysokoteplotní výpal  | 9–10      | {{2300–2345 °F; 1260–1285 °C}} | Většinou kamenina a porcelán z plynové pece                 |
+| Range     | Cones |                    Temperature | Typical use                              |
+| --------- | ----- | -----------------------------: | ---------------------------------------- |
+| Low fire  | 06–04 |  {{1828–1945 °F; 998–1063 °C}} | Earthenware glazes; bisque               |
+| Mid fire  | 5–6   | {{2167–2232 °F; 1186–1222 °C}} | Electric-kiln stoneware and porcelain    |
+| High fire | 9–10  | {{2300–2345 °F; 1260–1285 °C}} | Mostly gas-fired stoneware and porcelain |
 
-Dodavatelé ve Spojeném království, v Evropě, Austrálii a na Novém Zélandu často uvádějí místo žároměrky teplotu v °C: najděte nejbližší žároměrku v tabulce níže a ověřte ji kontrolní žároměrkou{{en: witness cone}}. U Segerových žároměrek a žároměrek Staffordshire, starších evropských řad, byste neměli předpokládat, že mají stejná čísla jako Ortonovy žároměrky, a proto tento návod používá Ortonovy žároměrky.
+Suppliers in the UK, Europe, Australia and New Zealand often give a temperature in °C rather than a cone: find the nearest cone in the chart below and confirm it with a witness cone. Seger and Staffordshire cones, the older European series, should not be assumed to share Orton's numbers, so this guide uses Orton cones.
 
-### Výdrž přidává tepelnou expozici
+### Holding adds heatwork
 
-**Výdrž**{{en: hold}} (také **výdržná doba**) drží pec po určitou dobu na jedné teplotě. Protože žároměrky měří tepelnou expozici, může výdrž na vrcholu výpalu nahradit vyšší konečnou teplotu. Orton uvádí tyto přibližné ekvivalenty:
+A **hold** (also called a **soak**) keeps the kiln at one temperature for a while. Because cones measure heatwork, a hold at the top can stand in for a hotter peak. Orton gives these rough equivalents:
 
-Table: Co přinese výdrž na konečné teplotě
-Label: Výdrž a tepelná expozice
+Table: What a hold at the peak is worth
+Label: Holds and heatwork
 
-| Výdrž        | Přibližně stejná tepelná expozice jako                             |
-| ------------ | ------------------------------------------------------------------ |
-| Asi 20 minut | Konečná teplota o {{18 °F; 10 °C}} vyšší                           |
-| 40–60 minut  | Konečná teplota o {{36 °F; 20 °C}} vyšší                           |
-| Asi 2 hodiny | Konečná teplota o {{54 °F; 30 °C}} vyšší                           |
-| 1–2 hodiny   | „může stačit ke zdeformování žároměrky s nejbližším vyšším číslem“ |
-| 4–6 hodin    | Stačí k ohnutí žároměrky o dvě čísla teplejší                      |
+| Hold             | Roughly the same heatwork as             |
+| ---------------- | ---------------------------------------- |
+| About 20 minutes | A peak {{18 °F; 10 °C}} hotter           |
+| 40–60 minutes    | A peak {{36 °F; 20 °C}} hotter           |
+| About 2 hours    | A peak {{54 °F; 30 °C}} hotter           |
+| 4–6 hours        | Enough to bend a cone two numbers hotter |
 
-Výdrž tedy nikdy není zadarmo: když ji přidáte, počítejte s tím, že se žároměrky ohnou víc, a konečnou teplotu odpovídajícím způsobem snižte.
+Orton adds that a hold of 1–2 hours "may be sufficient to deform the next higher cone number".
 
-### Druhy žároměrek
+So a hold is never free: if you add one, expect the cones to bend further, and lower the peak to match.
 
-Orton vyrábí čtyři druhy. Dva se staví na plát a ukazují, co výrobky dostaly; dva jsou pro vypínač Kiln-Sitter{{en: kiln sitter}}.
+### Kinds of cone
 
-Table: Čtyři druhy Ortonových žároměrek
-Label: Druhy žároměrek
+Orton makes four kinds. Two stand on the shelf to show what the ware received; two are for the kiln sitter.
 
-| Druh          | Použití                      | Jak stojí                                                                                                    |
-| ------------- | ---------------------------- | ------------------------------------------------------------------------------------------------------------ |
-| Samostojná    | Kontrolní žároměrka na plátě | Pevná podstavička určuje výšku, 1¾ palce (44 mm), i sklon 8°; držák není potřeba                             |
-| Velká         | Kontrolní žároměrka na plátě | Zasazená do držáku nebo do placky hlíny tak, aby vyčnívala přesně 2 palce (51 mm), se sklonem 8° od svislice |
-| Malá (junior) | Vypínač Kiln-Sitter          | Leží napříč přes podpěrky ve vypínači; postavená na plátě vyčnívá 15/16 palce (24 mm)                        |
-| Tyčinka       | Vypínač Kiln-Sitter          | Stejný prášek jako u malých žároměrek, ve tvaru rovnoměrné tyčinky                                           |
+Table: Orton's four kinds of cone
+Label: Kinds of cone
 
-Na výšce záleží: rozdíl ¼ palce (6 mm) ve výšce velké žároměrky „může způsobit rozdíl v ohnutí větší než polovina čísla žároměrky“. Žároměrky se nekazí ani nestárnou a neškodí jim ani skladování ve vlhku.
+| Kind            | Used for                  | How it stands                                                                               |
+| --------------- | ------------------------- | ------------------------------------------------------------------------------------------- |
+| Self-supporting | Witness cone on the shelf | A built-in base sets the height, 1¾ in (44 mm), and the 8° lean; no holder needed           |
+| Large           | Witness cone on the shelf | Set in a plaque or a pat of clay with exactly 2 in (51 mm) showing, leaning 8° from upright |
+| Small (junior)  | Kiln sitter               | Lies across the sitter's supports; 15/16 in (24 mm) showing if stood on a shelf             |
+| Bar             | Kiln sitter               | The same powder as small cones, in an even bar shape                                        |
 
-### Co znamená „žároměrka 6“ v praxi
+Height matters: a ¼ in (6 mm) difference in the height of a large cone "can cause more than a half cone difference in bending". Cones do not go bad or age, and damp storage does not affect them.
 
-Tabulka uvádí pro samostojnou žároměrku 6 teplotu {{2232 °F; 1222 °C}}, ale jen tehdy, když teplota během posledních {{180 °F; 100 °C}} stoupá rychlostí {{108 °F/h; 60 °C/h}}. Při nárůstu {{270 °F/h; 150 °C/h}} se tatáž žároměrka ohne při {{2269 °F; 1243 °C}}. Skutečné pece se od toho zase liší: Digitalfire uvádí, že „většina pecí dosáhne žároměrky 6 při 2200°F, ne při 2232°F“. „Žároměrka 6“ tedy znamená, že výrobky dostaly takovou tepelnou expozici, jaká ohne žároměrku 6, ať teploměr v tu chvíli ukazoval cokoli.
+### What "cone 6" means in practice
+
+The chart gives a self-supporting cone 6 as {{2232 °F; 1222 °C}}, but only when the last {{180 °F; 100 °C}} climbs at {{108 °F/h; 60 °C/h}}. Climbing at {{270 °F/h; 150 °C/h}}, the same cone bends at {{2269 °F; 1243 °C}}. Real kilns differ again: Digitalfire reports that "Most kilns reach cone 6 at 2200°F, not 2232°F". So "cone 6" means the ware received the heatwork that bends a cone 6, whatever a thermometer read at the time.
 
 :::orton
 
 > [!NOTE]
-> Vypalujte podle žároměrky, ne podle hodin ani podle ukazatele. Regulátor nastavte podle čísla žároměrky a každý výpal si nechte potvrdit kontrolní žároměrkou na plátě.
+> Fire by the cone, not the clock or the dial. Set a controller by cone number, and let a witness cone on the shelf confirm every firing.
 
 :::
 
 :::temperature
 
 > [!NOTE]
-> Když vypalujete podle teploty, udržujte konec každého výpalu stejný: stejnou rychlost posledního nárůstu, stejnou konečnou teplotu a stejnou výdrž. Glazura, která se jednou povedla, se pak povede znovu.
+> Firing by temperature, keep the end of every firing the same: the same last rate of climb, the same peak and the same hold. Then a glaze that worked once works again.
 
 :::
 

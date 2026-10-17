@@ -3,78 +3,79 @@ title: 基本の窯焚き
 lead: キルンシッターや手動スイッチの付いた電気窯の焚き方です。コーンの選び方、置き方、読み方と、公開されている素焼きと本焼きのスケジュールを紹介します。
 ---
 
-## コーン: 何を測るのか {#cones}
+## Cones: what they measure {#cones lang=en}
 
 > [!NOTE]
-> まず、お使いの窯の取扱説明書に従ってください。このガイドは、コーンや窯のメーカーが基本的な電気窯について公開している情報をまとめたものです。お使いの機種の説明に代わるものではありません。両者が異なる場合は、取扱説明書が優先します。
+> Follow your kiln's own manual first. This guide gathers what cone and kiln makers publish about basic electric kilns; it does not replace the instructions for your model, and where the two differ, the manual wins.
 
-**コーン**{{en: pyrometric cone}}は、規格化されたセラミックの粉末で作った、小さく細長い三角錐です。十分な熱を受けると軟らかくなり、毎回同じように曲がって倒れます。コーンを作品の横に置いて窯に入れ、どこまで曲がったかを読みます。
+A **pyrometric cone** is a small, slender pyramid made from a standardized ceramic powder. When it has had enough heat, it softens and bends over in a repeatable way. You set cones in the kiln beside the ware and read how far they bent.
 
-コーンが測るのは**焼度**{{en: heatwork}}、つまり温度と時間を合わせた効果です。米国の主なコーンメーカーであるオルトンの言葉では、「コーンは温度だけを測るものではない」のです。ゆっくり加熱したコーンは、速く加熱したコーンより低い温度で曲がります。釉薬{{en: glaze}}も同じようにふるまいます。そのためオルトンは、焼成の最後の {{180 °F; 100 °C}} を決まった昇温速度で上げた場合について、各コーンの温度を示しています。コーンはいったん動き始めると、狭い温度範囲、「通常 40° F 未満」（22 °C）で曲がりきります。
+Cones measure **heatwork**, the combined effect of temperature and time. In the words of Orton, the main US cone maker, "Cones do not measure temperature alone." A cone heated slowly bends at a lower temperature than one heated fast, and a glaze behaves the same way. So Orton gives each cone's temperature for a stated heating rate over the last {{180 °F; 100 °C}} of the firing. Once a cone starts to move, it bends over a narrow range, "usually less than 40° F" (22 °C).
 
-### コーンの番号
+### Cone numbers
 
-オルトンコーンの番号は、最も低温の 022 から 42 まであります。先頭のゼロは低温側の系列を表し、英語では「オー」と読みます。オルトンコーン 06（「オー・シックス」）はコーン 04 より低温で、コーン 01 はコーン 1 より少ない熱で曲がります。オルトンは、二つの系列を混同しないことが大切だと注意しています。差は大きく、コーン 06 はコーン 6 より {{400 °F; 220 °C}} を超えて低い温度で曲がります。
+Cone numbers run from 022, the coolest, up to 42. A leading zero marks the cooler series and is read as "oh": cone 06 ("oh-six") is cooler than cone 04, and cone 01 needs less heat than cone 1. Orton warns that it is important not to mix the two series up. The gap is large: cone 06 bends more than {{400 °F; 220 °C}} cooler than cone 6.
 
-Table: 主な焼成範囲（自立型コーン、{{108 °F/h; 60 °C/h}} の場合）
-Label: 焼成範囲
+Table: Common firing ranges, for self-supporting cones at {{108 °F/h; 60 °C/h}}
+Label: Firing ranges
 
-| 範囲   | オルトンコーン |                           温度 | 主な用途                   |
-| ------ | -------------- | -----------------------------: | -------------------------- |
-| 低火度 | 06〜04         |  {{1828–1945 °F; 998–1063 °C}} | 陶器の釉薬、素焼き         |
-| 中火度 | 5〜6           | {{2167–2232 °F; 1186–1222 °C}} | 電気窯で焼く炻器と磁器     |
-| 高火度 | 9〜10          | {{2300–2345 °F; 1260–1285 °C}} | 主にガス窯で焼く炻器と磁器 |
+| Range     | Cones |                    Temperature | Typical use                              |
+| --------- | ----- | -----------------------------: | ---------------------------------------- |
+| Low fire  | 06–04 |  {{1828–1945 °F; 998–1063 °C}} | Earthenware glazes; bisque               |
+| Mid fire  | 5–6   | {{2167–2232 °F; 1186–1222 °C}} | Electric-kiln stoneware and porcelain    |
+| High fire | 9–10  | {{2300–2345 °F; 1260–1285 °C}} | Mostly gas-fired stoneware and porcelain |
 
-英国、ヨーロッパ、オーストラリア、ニュージーランドの販売店は、コーンではなく °C で温度を示すことがよくあります。下の温度表でいちばん近いコーンを探し、確認用コーン{{en: witness cone}}で確かめてください。ゼーゲルコーン（ドイツ）やスタッフォードシャーコーンといったヨーロッパの古い系列が、オルトンと同じ番号を使っていると考えるべきではありません。そのため、このガイドではオルトンコーンを使います。
+Suppliers in the UK, Europe, Australia and New Zealand often give a temperature in °C rather than a cone: find the nearest cone in the chart below and confirm it with a witness cone. Seger and Staffordshire cones, the older European series, should not be assumed to share Orton's numbers, so this guide uses Orton cones.
 
-### 保持で焼度が増す
+### Holding adds heatwork
 
-**保持**{{en: hold}}（**ねらし**とも言います）は、窯をしばらく一つの温度に保つことです。コーンは焼度を測るので、最高温度での保持は、より高い最高温度の代わりになります。オルトンは、おおよその目安として次の値を示しています。
+A **hold** (also called a **soak**) keeps the kiln at one temperature for a while. Because cones measure heatwork, a hold at the top can stand in for a hotter peak. Orton gives these rough equivalents:
 
-Table: 最高温度での保持の効果
-Label: 保持と焼度
+Table: What a hold at the peak is worth
+Label: Holds and heatwork
 
-| 保持     | ほぼ同じ焼度になるもの                                       |
-| -------- | ------------------------------------------------------------ |
-| 約20分   | 最高温度を {{18 °F; 10 °C}} 上げる                           |
-| 40〜60分 | 最高温度を {{36 °F; 20 °C}} 上げる                           |
-| 約2時間  | 最高温度を {{54 °F; 30 °C}} 上げる                           |
-| 1〜2時間 | 「一つ高温側の番号のコーンを変形させるのに十分なことがある」 |
-| 4〜6時間 | 二つ高温側のコーンを曲げるのに十分                           |
+| Hold             | Roughly the same heatwork as             |
+| ---------------- | ---------------------------------------- |
+| About 20 minutes | A peak {{18 °F; 10 °C}} hotter           |
+| 40–60 minutes    | A peak {{36 °F; 20 °C}} hotter           |
+| About 2 hours    | A peak {{54 °F; 30 °C}} hotter           |
+| 4–6 hours        | Enough to bend a cone two numbers hotter |
 
-つまり、保持は決してただではありません。保持を加えるなら、コーンがより大きく曲がることを見込んで、その分だけ最高温度を下げてください。
+Orton adds that a hold of 1–2 hours "may be sufficient to deform the next higher cone number".
 
-### コーンの種類
+So a hold is never free: if you add one, expect the cones to bend further, and lower the peak to match.
 
-オルトンのコーンには四種類あります。二種類は棚板に立てて作品が受けた焼度を示し、残りの二種類はキルンシッター{{en: kiln sitter}}用です。
+### Kinds of cone
 
-Table: オルトンの四種類のコーン
-Label: コーンの種類
+Orton makes four kinds. Two stand on the shelf to show what the ware received; two are for the kiln sitter.
 
-| 種類             | 用途                   | 立て方                                                                                   |
-| ---------------- | ---------------------- | ---------------------------------------------------------------------------------------- |
-| 自立型           | 棚板に置く確認用コーン | 台座が一体になっていて、高さ 1¾ インチ（44 mm）と 8° の傾きが決まる。コーン台は不要      |
-| 大型             | 棚板に置く確認用コーン | コーン台か粘土の塊に、ちょうど 2 インチ（51 mm）出して、垂直から 8° 傾けて立てる         |
-| 小型（ジュニア） | キルンシッター         | キルンシッターのコーンサポートに渡して置く。棚板に立てる場合は 15/16 インチ（24 mm）出す |
-| バー             | キルンシッター         | 小型コーンと同じ粉末で作った、太さの均一な棒                                             |
+Table: Orton's four kinds of cone
+Label: Kinds of cone
 
-高さは重要です。大型コーンの高さが ¼ インチ（6 mm）違うと、「曲がり方にコーン半分を超える差が出ることがある」とされています。コーンは劣化も経年変化もせず、湿気のある場所で保管しても影響を受けません。
+| Kind            | Used for                  | How it stands                                                                               |
+| --------------- | ------------------------- | ------------------------------------------------------------------------------------------- |
+| Self-supporting | Witness cone on the shelf | A built-in base sets the height, 1¾ in (44 mm), and the 8° lean; no holder needed           |
+| Large           | Witness cone on the shelf | Set in a plaque or a pat of clay with exactly 2 in (51 mm) showing, leaning 8° from upright |
+| Small (junior)  | Kiln sitter               | Lies across the sitter's supports; 15/16 in (24 mm) showing if stood on a shelf             |
+| Bar             | Kiln sitter               | The same powder as small cones, in an even bar shape                                        |
 
-### 「オルトンコーン 6」が実際に意味すること
+Height matters: a ¼ in (6 mm) difference in the height of a large cone "can cause more than a half cone difference in bending". Cones do not go bad or age, and damp storage does not affect them.
 
-温度表では、自立型のオルトンコーン 6 は {{2232 °F; 1222 °C}} ですが、それは最後の {{180 °F; 100 °C}} を {{108 °F/h; 60 °C/h}} で昇温した場合に限ります。{{270 °F/h; 150 °C/h}} で昇温すると、同じコーンは {{2269 °F; 1243 °C}} で曲がります。実際の窯ではさらに違います。Digitalfire は「ほとんどの窯は 2232°F ではなく 2200°F でコーン 6 に達する」と報告しています。つまり「コーン 6」とは、そのとき温度計が何度を示していたかにかかわらず、コーン 6 を曲げるだけの焼度を作品が受けたという意味です。
+### What "cone 6" means in practice
+
+The chart gives a self-supporting cone 6 as {{2232 °F; 1222 °C}}, but only when the last {{180 °F; 100 °C}} climbs at {{108 °F/h; 60 °C/h}}. Climbing at {{270 °F/h; 150 °C/h}}, the same cone bends at {{2269 °F; 1243 °C}}. Real kilns differ again: Digitalfire reports that "Most kilns reach cone 6 at 2200°F, not 2232°F". So "cone 6" means the ware received the heatwork that bends a cone 6, whatever a thermometer read at the time.
 
 :::orton
 
 > [!NOTE]
-> 時計やダイヤルではなく、コーンで焼成してください。コントローラーはコーンの番号で設定し、毎回の焼成を棚板の確認用コーンで確かめてください。
+> Fire by the cone, not the clock or the dial. Set a controller by cone number, and let a witness cone on the shelf confirm every firing.
 
 :::
 
 :::temperature
 
 > [!NOTE]
-> 温度で焼成する場合は、毎回の焼成の終わり方を同じにしてください。最後の昇温速度、最高温度、保持をすべて同じにします。そうすれば、一度うまくいった釉薬は、再びうまくいきます。
+> Firing by temperature, keep the end of every firing the same: the same last rate of climb, the same peak and the same hold. Then a glaze that worked once works again.
 
 :::
 
