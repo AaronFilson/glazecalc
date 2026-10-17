@@ -124,6 +124,7 @@ test('the sign-in lives in a cookie that scripts on the page cannot read', async
   expect(await page.evaluate(() => globalThis.document.cookie)).not.toContain('glazecalc_session');
   // A note that there is a session, the trial's name, and the display settings' copies: nothing that signs in.
   const settings = [
+    'calendar',
     'cones',
     'decimalMark',
     'density',

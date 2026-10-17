@@ -1,7 +1,7 @@
 import { Component, Injector, OnInit, afterNextRender, inject, signal } from '@angular/core';
 import { TranslocoDirective, translate } from '@jsverse/transloco';
 import { marker } from '@jsverse/transloco-keys-manager/marker';
-import { CURRENCIES, FORMAT_LOCALES, REGIONS } from '../../../../lib/regions';
+import { CURRENCIES, FORMAT_LOCALES, REGIONS, formatLocaleFor } from '../../../../lib/regions';
 import { baseLanguage, languageFor, textLanguage } from '../../../../lib/regions/languages';
 import { errorMessage } from '../../core/error-message';
 import { LocaleService } from '../../core/locale.service';
@@ -186,6 +186,29 @@ function settingsIn(pageLanguage: string, offered: readonly string[]): Setting[]
             }
           };
         })
+      ]
+    }),
+    // The calendar dates are shown in; each choice's example is a date as it would be shown now
+    // (settings-section exampleOf).
+    setting(marker('account.settings.calendar.legend'), marker('account.settings.calendar.help'), {
+      name: 'calendar',
+      id: 'calendar',
+      choices: [
+        choice(
+          'gregory',
+          marker('account.settings.calendar.gregory.label'),
+          marker('account.settings.calendar.gregory.saved')
+        ),
+        choice(
+          'buddhist',
+          marker('account.settings.calendar.buddhist.label'),
+          marker('account.settings.calendar.buddhist.saved')
+        ),
+        choice(
+          'japanese',
+          marker('account.settings.calendar.japanese.label'),
+          marker('account.settings.calendar.japanese.saved')
+        )
       ]
     }),
     setting(marker('account.settings.decimalMark.legend'), marker('account.settings.decimalMark.help'), {
@@ -385,8 +408,8 @@ function settingsIn(pageLanguage: string, offered: readonly string[]): Setting[]
                     ></span>
                   }
                   {{ choice.label }}
-                  @if (choice.example) {
-                    <span class="muted">({{ choice.example }})</span>
+                  @if (exampleOf(setting, choice); as example) {
+                    <span class="muted">({{ example }})</span>
                   }
                 </label>
               </div>
@@ -468,8 +491,24 @@ export class SettingsSection implements OnInit {
     return this.preferences[setting.name]();
   }
 
-  /** A choice's example; for "as my language and region", how numbers and dates are written now. */
+  /**
+   * A choice's example; for "as my language and region", how numbers and dates are written now; for a
+   * calendar, the sample date as it would be shown in it.
+   */
   protected exampleOf(setting: Setting, choice: Choice): string {
+    if (setting.name === 'calendar') {
+      const locale = formatLocaleFor(
+        this.locale.language(),
+        this.locale.region(),
+        this.preferences.format(),
+        choice.value
+      );
+      try {
+        return new Intl.DateTimeFormat(locale, { dateStyle: 'long' }).format(SAMPLE_DATE);
+      } catch {
+        return '';
+      }
+    }
     if (setting.name === 'format' && choice.value === 'auto') {
       const locale = this.locale.locale();
       try {

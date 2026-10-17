@@ -78,7 +78,8 @@ describe('user API', () => {
       notice: 'shown',
       recipeHelp: 'auto',
       limitSet: 'hesselberth-roy',
-      currency: ''
+      currency: '',
+      calendar: 'gregory'
     };
 
     it('start in grams to a tenth, and change one at a time', async () => {
@@ -122,6 +123,18 @@ describe('user API', () => {
       expect(refused).to.have.status(400);
       expect(refused.body.msg).to.equal('Choose hesselberth-roy or glazecalc.');
       expect((await put(token, { limitSet: 'hesselberth-roy' })).body.limitSet).to.equal('hesselberth-roy');
+    });
+
+    it('keep the calendar dates are shown in: the Gregorian until another is chosen', async () => {
+      expect((await put(token, { calendar: 'buddhist' })).body.calendar).to.equal('buddhist');
+      expect((await User.findById(user._id))?.preferences?.calendar).to.equal('buddhist');
+      expect((await put(token, { calendar: 'japanese' })).body.calendar).to.equal('japanese');
+      const refused = await put(token, { calendar: 'islamic' });
+      expect(refused).to.have.status(400);
+      expect(refused.body.msg).to.equal(
+        'Dates can be shown in the Gregorian calendar (gregory), the Thai Buddhist era (buddhist) or Japanese eras (japanese).'
+      );
+      expect((await put(token, { calendar: 'gregory' })).body.calendar).to.equal('gregory');
     });
 
     it('keep where the potter works and how numbers, temperatures and firing are shown', async () => {

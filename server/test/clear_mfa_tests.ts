@@ -175,3 +175,12 @@ describe('turning off two-step sign-in for a lost account (clear_mfa.ts)', () =>
     expect(errors).to.have.length(4);
   });
 });
+
+describe('mailDate', () => {
+  it('writes an email’s dates in the Gregorian calendar, Thai and Japanese too', () => {
+    const day = new Date(Date.UTC(2026, 9, 21));
+    expect(mailDate(day)).to.equal('21 October 2026');
+    expect(mailDate(day, 'th')).to.include('2026').and.not.include('2569');
+    expect(mailDate(day, 'ja')).to.equal('2026年10月21日');
+  });
+});

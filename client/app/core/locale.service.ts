@@ -41,8 +41,10 @@ export class LocaleService {
     this.firstRender() ? prerenderRegion(this.language()) : this.preferences.region() || browserRegion()
   );
   readonly regionInfo = computed(() => regionFor(this.region()));
-  /** The locale numbers and dates are written in. */
-  readonly locale = computed(() => formatLocaleFor(this.language(), this.region(), this.preferences.format()));
+  /** The locale numbers and dates are written in, its dates in the calendar chosen (Gregorian by default). */
+  readonly locale = computed(() =>
+    formatLocaleFor(this.language(), this.region(), this.preferences.format(), this.preferences.calendar())
+  );
   /** The locale lists in a sentence are joined in: its language, as the region writes it, whatever the format chosen. */
   readonly listLocale = computed(() => formatLocaleFor(this.language(), this.region(), 'auto'));
   /** °C or °F: the one chosen, or the region's. */

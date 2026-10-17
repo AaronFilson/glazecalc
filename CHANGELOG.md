@@ -307,6 +307,12 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   - **Lead and cadmium:** Indonesia's 2026 limits, with the third of three tests held to them, and
     Thailand's, all in mg/L. China's could not be read, and Hong Kong has none of its own found.
   - **Shops:** none was found in any of the five, and the page says so.
+- **A Calendar setting.** Dates are shown in the Gregorian calendar by default everywhere, Thai pages
+  too; Settings offers the Thai Buddhist era (2569) and Japanese eras (令和8年) for readers who want
+  them, each with a sample date. Every date the app shows follows it (firing logs, recipe dates,
+  prints, shared recipes, the account's and the trash's dates); numbers do not change, dates are still
+  typed in the browser's Gregorian date fields and saved as they were, and emails stay Gregorian. Kept
+  with the account (or trial) like the other settings.
 - **Vietnam as a region** (in English until Vietnamese is translated), firing by temperature until
   you choose otherwise, with the US materials, prices in dong, and numbers and dates as vi-VN.
   - **Who to call:** 115 for an ambulance, with 113 (police) and 114 (fire). No official government

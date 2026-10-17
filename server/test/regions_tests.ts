@@ -982,3 +982,47 @@ describe('Vietnam', () => {
     expect(suppliers.shopsFor('VN')).to.eql({ shops: [], nearby: [] });
   });
 });
+
+// The Calendar setting (docs/asia-plan.md, Phase E item 1): Gregorian by default everywhere, the Thai
+// Buddhist era or Japan's eras when chosen; numbers are written the same either way.
+describe('calendars', () => {
+  const day = new Date(2026, 9, 17);
+  const shown = (locale: string) => new Intl.DateTimeFormat(locale, { dateStyle: 'long' }).format(day);
+
+  it('offer the Gregorian first, then the Thai Buddhist era and Japanese eras', () => {
+    expect(regions.CALENDARS).to.eql(['gregory', 'buddhist', 'japanese']);
+  });
+
+  it('write dates in the Gregorian calendar by default, Thai too, and leave other locales as they were', () => {
+    expect(regions.formatLocaleFor('en', 'US', 'auto')).to.equal('en-US');
+    expect(regions.formatLocaleFor('en', 'US', 'auto', 'gregory')).to.equal('en-US');
+    expect(regions.formatLocaleFor('ja', 'JP', 'auto', 'gregory')).to.equal('ja-JP');
+    expect(regions.formatLocaleFor('th', 'TH', 'auto', 'gregory')).to.equal('th-TH-u-ca-gregory');
+    expect(shown(regions.formatLocaleFor('th', 'TH', 'auto'))).to.include('2026');
+    // Not a calendar offered: the Gregorian.
+    expect(regions.formatLocaleFor('en', 'US', 'auto', 'islamic')).to.equal('en-US');
+  });
+
+  it('write the Thai Buddhist era when chosen, in any language', () => {
+    const thai = regions.formatLocaleFor('th', 'TH', 'auto', 'buddhist');
+    expect(thai).to.equal('th-TH-u-ca-buddhist');
+    expect(shown(thai)).to.include('2569').and.not.include('2026');
+    expect(shown(regions.formatLocaleFor('en', 'TH', 'auto', 'buddhist'))).to.include('2569');
+    expect(regions.formatLocaleFor('en', null, 'th-TH', 'buddhist')).to.equal('th-TH-u-ca-buddhist');
+  });
+
+  it('write Japanese eras when chosen, in any language', () => {
+    const japanese = regions.formatLocaleFor('ja', 'JP', 'auto', 'japanese');
+    expect(japanese).to.equal('ja-JP-u-ca-japanese');
+    expect(shown(japanese)).to.equal('令和8年10月17日');
+    expect(shown(regions.formatLocaleFor('en', 'US', 'auto', 'japanese'))).to.include('Reiwa');
+  });
+
+  it('write numbers the same in every calendar', () => {
+    for (const calendar of regions.CALENDARS) {
+      expect(new Intl.NumberFormat(regions.formatLocaleFor('de', 'DE', 'auto', calendar)).format(12345.6)).to.equal(
+        '12.345,6'
+      );
+    }
+  });
+});
