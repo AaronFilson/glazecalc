@@ -336,6 +336,176 @@ const LANGUAGES = {
         'Names of Chinese services and bodies (中国疾控中心 中毒咨询热线, 国家卫生健康委员会, 120) stay in Chinese: compare what they refer to.'
       ]
     }
+  },
+  // Wave 2's other three (docs/asia-plan.md, Phase E), each with the standard notice: Indonesian
+  // first (the best-scored), then Vietnamese, then Thai. All three have only `other` in CLDR, write
+  // 1,5 (id, vi) or 1.5 (th), and are read by the numbers check for their 24-hour clocks (pukul 20.00,
+  // 20:30, 20.00 น.). Thai has no spaces between words and uses Western digits; its dates are Gregorian.
+  id: {
+    language: 'Indonesian',
+    country: 'Indonesia',
+    region: 'ID',
+    shops:
+      "lib/regions has no ID region yet (Phase C), and its research found no Indonesian shop for glaze materials and kilns: look for Indonesia's ceramics suppliers and their category and product pages (bahan glasir keramik, felspar, kaolin, silika, frit, oksida, stain, tungku, kerucut), the mineral suppliers whose pages give a material's name as it is sold (Sathir's Potassium Feldspar), and the catalogues of the makers whose materials and glazes they sell.",
+    termbank:
+      "Badan Pengembangan dan Pembinaan Bahasa's KBBI Daring and its term bank (Pangkalan Data Istilah, glosarium.kemdikbud.go.id), the SNI standards for ceramics as the BSN catalogue names them, and the school and university ceramics texts (Politeknik, ISI, the Kemdikbud SMK pages)",
+    kilns:
+      "Indonesian kiln makers' and dealers' catalogues and manuals for the electric and gas kilns sold to potters in Indonesia (tungku, kiln), the shops' kiln pages, and the vocational ceramics courses' pages; they give the words for kiln parts, controllers and firing steps (bakar biskuit, bakar glasir, oksidasi, reduksi).",
+    law: 'Indonesian law as peraturan.go.id and JDIH write it: Peraturan Menteri Ketenagakerjaan No. 5 Tahun 2018 (Keselamatan dan Kesehatan Kerja Lingkungan Kerja: nilai ambang batas, silika kristalin, kuarsa, kristobalit, the "(R)" for respirable), Peraturan BPOM No. 11 Tahun 2026 tentang Kemasan Pangan (Lampiran I.D Keramik: pangan, batas maksimal, the extraction in 4% acetic acid), the SNI for respirators (masker, respirator) as the BSN catalogue names them, the Indonesian GHS and safety data sheets (kata sinyal Bahaya and Peringatan, pernyataan bahaya, lembar data keselamatan); the bodies: Kementerian Ketenagakerjaan, Kementerian Kesehatan (119, the medical emergency service), BPOM. Where the English names EU law (Directive 84/500/EEC, CLP), there is no official Indonesian text: write what Indonesian pages of BPOM, the Ministry of Trade or the EU delegation call it, or describe it plainly with the number kept;',
+    terms:
+      'the term banks of Indonesian ({TERMBANK}); IATE has no Indonesian. For software conventions (register, buttons, punctuation, spelling, affixes), the Microsoft Indonesian style guide, the Ejaan yang Disempurnakan Edisi V and KBBI.',
+    notes: {
+      glossary: [
+        'Follow docs/translations/tr.md, ko.md and ja.md as well as fi.md and hr.md: they are the models for a language outside the EU. Terms come first from shops\' and makers\' catalogues (the names printed on the bag), then from textbooks, university and vocational course pages and the term banks. Say which source each row rests on, with its link; mark rows with no Indonesian source "No source" and rows for a native potter **Native check**.',
+        'Style sheet: name the subsection "EU law" "Law in Indonesia" (and say how the English\'s EU names are written); add the subsections the existing language-specific pages carry (Script, spelling and spaces; Placeholders and names; Choices for the owner). Say which wording of "at most", "less than" and "at least" the law uses, and keep them apart.',
+        'No rule may ask for figures the English lacks: no added SK or Orton equivalents, no converted units, no Buddhist-era or other-era years, no standard numbers where the English has none. The numbers check rejects every one.',
+        'Cones: Orton cones are named Orton wherever the English says Orton; SK cones are SK with the number as printed where the English has them; Seger only where the English says Seger (the firing guide\'s older European cones), and the Seger formula (the unity molecular formula, UMF) never names a cone. Never give an SK number for an Orton number or the reverse, nor any equivalence. Give the wording for "one number hotter/cooler", never higher or lower.',
+        "Specific gravity is the language's relative-density word with the English's figure, never density in kg/m³ or a litre weight; Baumé as the sources write it. Say which word the Settings labels use.",
+        'Plural forms: CLDR gives this language only `other`. Every plural message is written `{count, plural, other {…}}` with the classifier inside it; `=0` stays where the English has it. Give a classifier for each counted noun the app uses.',
+        "Pitfalls to settle: glaze vs coating/paint/enamel/varnish; frit vs flux; kiln vs oven; bisque vs raw (unfired); earthenware, stoneware, porcelain; the material vs the oxide (silica vs silicon vs silicone); whiting vs lime; boron vs boric acid vs borax; soda and potash as oxides vs soda ash and potassium carbonate; respirator vs ventilator vs ventilation; the app's guides vs a kiln's manual: two different words.",
+        'Two-step sign-in: add the table "2.10 Signing in" after the last one, with the words Google and Apple use on their own help pages in the language (link each): two-step sign-in, authenticator app, setup key, QR code, passkey, recovery code, the code from the app, security key, sign in, sign out, account, password, trusted device. The English writes "two-step" as a word, so a digit 2 is a figure the English lacks.',
+        'Register: "Anda" and standard Indonesian (baku), as the Microsoft Indonesian style guide, Google and Apple write it; no "kamu". Buttons are the bare verb (Simpan, Cetak, Hapus), headings noun phrases in sentence case; requests are the bare verb or "silakan"; "jangan" for do not, "jangan pernah" for never; harus, sebaiknya, dapat/bisa and boleh kept apart.',
+        'Numbers: decimal comma and thousands point (1,5; 12.500), four-digit temperatures ungrouped (1222 °C), 5% with no space, a range 10–60%; dates 14 Oktober 2026 (the month named, capital O); times on the 24-hour clock with a point and pukul before the hour (pukul 20.00, pukul 20.30, 20.00 WIB; "pukul 08.00 sampai pukul 17.00", pukul repeated), never pukul 8 malam (the check keeps it whole and reports it). A number the English writes as a word stays a word (dua lapis).',
+        'Affixes and placeholders: di- cannot attach to a placeholder and -nya cannot follow one; put a generic noun beside it (resep {name}, di {region}). No reduplicated plural after a figure (5 bahan, not bahan-bahan).',
+        'Law terms: tidak lebih dari, paling banyak or batas maksimal for "at most"; kurang dari for "less than". Silica: nilai ambang batas (NAB), silika kristalin; the food-contact text says pangan.',
+        'Specific gravity: berat jenis (relative density), never massa jenis; guides.density.sg writes "berat jenis {value}". Whiting is kalsium karbonat, never kapur. Glasir must be paired with keramik in titles (glasir alone is also a food icing).',
+        'Poison line: none is confirmed for Indonesia: where the English says "poison line", the Indonesian text names the emergency number (119 for medical emergencies, 112 general), as the region data will.'
+      ],
+      translate: [
+        "Style sheet and glossary: docs/translations/id.md. Every term as it gives it; where a row says Native check, use the row's choice and list the sentence in your flags for the reviewer.",
+        'Cones: Orton cones are Orton wherever the English says Orton; SK cones are SK with the number as printed; Seger only where the English says Seger; the Seger formula (UMF) is never a cone. Never give an SK number for an Orton number or the reverse, nor say they are equal. "One number hotter/cooler" as the style sheet gives it, never higher or lower.',
+        'Numbers as the style sheet gives them: decimal mark, thousands, percent, units as the English writes them (1222 °C, 10 g), dates with the month named (or as its number where the style sheet says so), times on the 24-hour clock written as the style sheet says. Digits wherever the English has digits; a number the English writes as a word stays a word, since a digit would be a figure the English lacks.',
+        'Plural forms: this language has only `other`; write `{count, plural, other {…}}` with the classifier the style sheet gives inside it, and keep `=0` where the English has it.',
+        'Should, must and may as the style sheet gives them, kept apart; no emphasis word (never, always, absolutely) the English lacks; "must be tested" means the test is done, not passed.',
+        'The food-contact text names Directive 84/500/EEC: it has no official text in this language, so write the EU categories plainly, so that the 3 L still applies only to packaging and storage vessels.',
+        "Japanese names in the guides and region notes (the firing guide's) are Hepburn romanization with the English gloss, never Japanese script.",
+        'Register: "Anda" (or no pronoun), bare-verb buttons, sentence case; di- and -nya never on a placeholder; berat jenis (not massa jenis) for specific gravity; pukul 20.00 and pukul 20.30 for times; the decimal comma and the thousands point.'
+      ],
+      review: [
+        'Indonesian: "at most", "no more than" and "up to" use the law\'s word for at most and never the word for "less than" or "under"; "at least" and "or more" never the word for "more than". A slip here moves a legal limit. Check every one in the food-contact, silica and safety text.',
+        'Indonesian: SK cones written "SK" as printed; Orton cones named Orton; Seger only where the English says Seger; the Seger formula never a cone; no SK number given for an Orton number or the reverse; "one number hotter/cooler", never higher or lower.',
+        "Indonesian: the numbers as the style sheet writes them; a number the English writes as a word stays a word; times on the 24-hour clock in the form the style sheet gives (the numbers check rejects 12-hour forms); specific gravity as the relative-density word with the English's figure.",
+        'Indonesian: should, must and may kept apart; no emphasis the English lacks; no should turned into must and no may dropped; plural messages with `other` only and the classifier inside it.',
+        'Indonesian: Anda and standard Indonesian throughout; no di- or -nya on a placeholder; the decimal comma (1,5) and thousands point (12.500), 1222 °C unspaced; times as pukul 20.00 (never pukul 8 malam); berat jenis, never massa jenis; glasir paired with keramik in titles.'
+      ],
+      backtranslate: [
+        'The law\'s word for "at most" means "at most" (the limit itself passes); the word for "less than" means "less than" (it does not). Translate each back exactly as it reads: a limit that moved from one to the other is a difference in meaning.',
+        'Words of emphasis and obligation are translated back as strongly as they read: one the English lacks is a difference in meaning.',
+        'Names of services and bodies stay in the language: compare what they refer to.',
+        'tidak lebih dari and paling banyak mean "at most"; kurang dari means "less than"; harus is "must", sebaiknya "should", dapat "may": translate each back exactly as it reads.'
+      ]
+    }
+  },
+  vi: {
+    language: 'Vietnamese',
+    country: 'Vietnam',
+    region: 'VN',
+    shops:
+      "lib/regions has no VN region yet (Phase C), and its research found no Vietnamese shop with an official price list: look for Vietnam's pottery suppliers (LaTacita, Vườn Nhà Gốm, and the shops of Bát Tràng) and their category and product pages (nguyên liệu men gốm, men, màu oxit, bột màu, frit, trường thạch or fenspat, cao lanh, thạch anh, lò nung, côn), and the catalogues of the makers whose materials they sell (Ceragroup, Ceratech).",
+    termbank:
+      "Vietnamese Wikipedia's ceramics articles (Men gốm, Gốm, Khuyết tật men), the Vietnamese national standards (TCVN) for ceramics as the STAMEQ catalogue names them, and the university ceramics and silicate-technology courses (Đại học Bách khoa Hà Nội, Đại học Bách khoa TP.HCM)",
+    kilns:
+      "Vietnamese kiln makers' and dealers' catalogues and manuals for the electric and gas kilns sold to potters in Vietnam (lò nung điện, lò nung gas), the shops' kiln pages and kiln-rental services (cho thuê lò nung), and the Bát Tràng workshops' pages; they give the words for kiln parts, controllers and firing steps (nung mộc, nung men, oxy hóa, khử).",
+    law: 'Vietnamese law as vbpl.vn and thuvienphapluat.vn write it: QCVN 02:2019/BYT (Thông tư 02/2019/TT-BYT: giá trị giới hạn tiếp xúc cho phép đối với bụi, silic tự do, bụi hô hấp), QCVN 12-4:2015/BYT (Thông tư 47/2015/TT-BYT: bao bì, dụng cụ làm bằng thủy tinh, gốm, sứ và tráng men tiếp xúc trực tiếp với thực phẩm, giới hạn thôi nhiễm), the Law on Chemicals and its GHS decrees (từ cảnh báo, câu cảnh báo nguy hiểm, phiếu an toàn hóa chất), the TCVN for respirators (khẩu trang lọc bụi) as the STAMEQ catalogue names them; the bodies: Bộ Y tế, Bộ Lao động - Thương binh và Xã hội, Trung tâm Chống độc Bệnh viện Bạch Mai, the emergency numbers 113, 114 and 115. Where the English names EU law (Directive 84/500/EEC, CLP), there is no official Vietnamese text: write what Vietnamese pages of the Ministry of Industry and Trade or the EU delegation call it, or describe it plainly with the number kept;',
+    terms:
+      "the term banks of Vietnamese ({TERMBANK}); IATE has no Vietnamese. For software conventions (register, buttons, punctuation, tone-mark style, loanwords), the Microsoft Vietnamese style guide and the Ministry of Education's spelling rules.",
+    notes: {
+      glossary: [
+        'Follow docs/translations/tr.md, ko.md and ja.md as well as fi.md and hr.md: they are the models for a language outside the EU. Terms come first from shops\' and makers\' catalogues (the names printed on the bag), then from textbooks, university and vocational course pages and the term banks. Say which source each row rests on, with its link; mark rows with no Vietnamese source "No source" and rows for a native potter **Native check**.',
+        'Style sheet: name the subsection "EU law" "Law in Vietnam" (and say how the English\'s EU names are written); add the subsections the existing language-specific pages carry (Script, spelling and spaces; Placeholders and names; Choices for the owner). Say which wording of "at most", "less than" and "at least" the law uses, and keep them apart.',
+        'No rule may ask for figures the English lacks: no added SK or Orton equivalents, no converted units, no Buddhist-era or other-era years, no standard numbers where the English has none. The numbers check rejects every one.',
+        'Cones: Orton cones are named Orton wherever the English says Orton; SK cones are SK with the number as printed where the English has them; Seger only where the English says Seger (the firing guide\'s older European cones), and the Seger formula (the unity molecular formula, UMF) never names a cone. Never give an SK number for an Orton number or the reverse, nor any equivalence. Give the wording for "one number hotter/cooler", never higher or lower.',
+        "Specific gravity is the language's relative-density word with the English's figure, never density in kg/m³ or a litre weight; Baumé as the sources write it. Say which word the Settings labels use.",
+        'Plural forms: CLDR gives this language only `other`. Every plural message is written `{count, plural, other {…}}` with the classifier inside it; `=0` stays where the English has it. Give a classifier for each counted noun the app uses.',
+        "Pitfalls to settle: glaze vs coating/paint/enamel/varnish; frit vs flux; kiln vs oven; bisque vs raw (unfired); earthenware, stoneware, porcelain; the material vs the oxide (silica vs silicon vs silicone); whiting vs lime; boron vs boric acid vs borax; soda and potash as oxides vs soda ash and potassium carbonate; respirator vs ventilator vs ventilation; the app's guides vs a kiln's manual: two different words.",
+        'Two-step sign-in: add the table "2.10 Signing in" after the last one, with the words Google and Apple use on their own help pages in the language (link each): two-step sign-in, authenticator app, setup key, QR code, passkey, recovery code, the code from the app, security key, sign in, sign out, account, password, trusted device. The English writes "two-step" as a word, so a digit 2 is a figure the English lacks.',
+        'Register: "bạn" and standard Vietnamese, as the Microsoft Vietnamese style guide, Google and Apple write it; no quý khách, anh or chị, no sentence-final particles (nhé, ạ). Buttons are the bare verb or noun (Lưu, In, So sánh), requests use hãy or vui lòng; không for do not, tuyệt đối không for never; phải, nên, có thể and không được kept apart.',
+        'Script: every Vietnamese text in NFC (precomposed letters), the new tone-mark style (hòa, khóa, thủy), syllables written apart, chemical names by the Vietnamese nomenclature (canxi cacbonat), oxit not ôxít; say which tone-mark style Google and Apple use and why this one is chosen.',
+        'Numbers: decimal comma and thousands point (1,5; 12.500), four-digit temperatures ungrouped (1222 °C), 5% with no space, a range 10–60%; dates 14 tháng 10 năm 2026 (the check reads "tháng 10" as the English October, so the month is written as a number); times on the 24-hour clock (20:00 or 20 giờ on the hour, 20:30 with minutes, never 20 giờ 30 and never "8 giờ tối", which the check keeps whole and reports). A number the English writes as a word stays a word (hai lớp).',
+        'Law terms: không quá, không vượt quá or tối đa for "at most"; dưới for "less than". Silica: giới hạn tiếp xúc, bụi hô hấp, silic tự do or silica tinh thể; the leach is thôi nhiễm.',
+        'Specific gravity: tỷ trọng (relative density), never khối lượng riêng; guides.density.sg writes "tỷ trọng {value}". Whiting is canxi cacbonat, never vôi. "men" must be paired with gốm in titles (men alone is also yeast). A recipe is công thức men, a chemical formula công thức hóa học, the unity formula công thức Seger.',
+        'Poison line: no public Vietnamese poison line is confirmed (Bạch Mai\'s Trung tâm Chống độc has a unit page only): where the English says "poison line", the Vietnamese text names the emergency number (115), as the region data will.'
+      ],
+      translate: [
+        "Style sheet and glossary: docs/translations/vi.md. Every term as it gives it; where a row says Native check, use the row's choice and list the sentence in your flags for the reviewer.",
+        'Cones: Orton cones are Orton wherever the English says Orton; SK cones are SK with the number as printed; Seger only where the English says Seger; the Seger formula (UMF) is never a cone. Never give an SK number for an Orton number or the reverse, nor say they are equal. "One number hotter/cooler" as the style sheet gives it, never higher or lower.',
+        'Numbers as the style sheet gives them: decimal mark, thousands, percent, units as the English writes them (1222 °C, 10 g), dates with the month named (or as its number where the style sheet says so), times on the 24-hour clock written as the style sheet says. Digits wherever the English has digits; a number the English writes as a word stays a word, since a digit would be a figure the English lacks.',
+        'Plural forms: this language has only `other`; write `{count, plural, other {…}}` with the classifier the style sheet gives inside it, and keep `=0` where the English has it.',
+        'Should, must and may as the style sheet gives them, kept apart; no emphasis word (never, always, absolutely) the English lacks; "must be tested" means the test is done, not passed.',
+        'The food-contact text names Directive 84/500/EEC: it has no official text in this language, so write the EU categories plainly, so that the 3 L still applies only to packaging and storage vessels.',
+        "Japanese names in the guides and region notes (the firing guide's) are Hepburn romanization with the English gloss, never Japanese script.",
+        'Register: "bạn" (or no pronoun), bare-verb buttons, sentence case, no particles; NFC and the new tone-mark style; tỷ trọng (not khối lượng riêng) for specific gravity; dates "14 tháng 10 năm 2026" and times 20:00, 20:30 (never 20 giờ 30, never giờ tối).'
+      ],
+      review: [
+        'Vietnamese: "at most", "no more than" and "up to" use the law\'s word for at most and never the word for "less than" or "under"; "at least" and "or more" never the word for "more than". A slip here moves a legal limit. Check every one in the food-contact, silica and safety text.',
+        'Vietnamese: SK cones written "SK" as printed; Orton cones named Orton; Seger only where the English says Seger; the Seger formula never a cone; no SK number given for an Orton number or the reverse; "one number hotter/cooler", never higher or lower.',
+        "Vietnamese: the numbers as the style sheet writes them; a number the English writes as a word stays a word; times on the 24-hour clock in the form the style sheet gives (the numbers check rejects 12-hour forms); specific gravity as the relative-density word with the English's figure.",
+        'Vietnamese: should, must and may kept apart; no emphasis the English lacks; no should turned into must and no may dropped; plural messages with `other` only and the classifier inside it.',
+        'Vietnamese: "bạn" throughout, no particles; every text in NFC with one tone-mark style; the decimal comma (1,5) and thousands point (12.500), 1222 °C unspaced; dates as "14 tháng 10 năm 2026" with the month as a number; times as 20:30 (never 8 giờ tối); tỷ trọng, never khối lượng riêng; men paired with gốm in titles; công thức men, công thức hóa học and công thức Seger kept apart.'
+      ],
+      backtranslate: [
+        'The law\'s word for "at most" means "at most" (the limit itself passes); the word for "less than" means "less than" (it does not). Translate each back exactly as it reads: a limit that moved from one to the other is a difference in meaning.',
+        'Words of emphasis and obligation are translated back as strongly as they read: one the English lacks is a difference in meaning.',
+        'Names of services and bodies stay in the language: compare what they refer to.',
+        'không quá, không vượt quá and tối đa mean "at most"; dưới means "less than"; phải is "must", nên "should", có thể "may": translate each back exactly as it reads.'
+      ]
+    }
+  },
+  th: {
+    language: 'Thai',
+    country: 'Thailand',
+    region: 'TH',
+    shops:
+      "lib/regions has no TH region yet (Phase C), and its research found no Thai shop with a price list it could read: look for Thailand's ceramics suppliers (Cerawan, Siam Ceramic Supply, Potteryclaythailand) and their category and product pages (น้ำเคลือบ, เคมีภัณฑ์ วัตถุดิบในงานเคลือบ, หินฟันม้า, ดินขาว, ควอตซ์, สีสะเตน, เตาเผา, โคน), and the catalogues of the makers whose materials and glazes they sell.",
+    termbank:
+      "the Royal Society's (Royal Institute's) dictionary and term lists (royin.go.th), the Thai industrial standards (TIS) for ceramics as the TISI catalogue names them, the Thai university ceramics departments' theses and course pages (Srinakharinwirot, Chiang Mai, Rajamangala), and the Thai Ceramic Society",
+    kilns:
+      "Thai kiln makers' and dealers' catalogues and manuals for the electric and gas kilns sold to potters in Thailand (เตาเผาไฟฟ้า, เตาเผาแก๊ส), the shops' kiln pages, and the university pages; they give the words for kiln parts, controllers and firing steps (เผาดิบ, เผาเคลือบ, ออกซิเดชัน, รีดักชัน).",
+    law: "Thai law as ratchakitcha.soc.go.th and the agencies write it: the Department of Labour Protection and Welfare's notification on ขีดจำกัดความเข้มข้นของสารเคมีอันตราย (2017: ซิลิกา คริสตัลลีน, the average over the normal working time), the Ministry of Public Health's notification No. 92 of 1985 on ceramic ware (ภาชนะแบบแบน, ภาชนะแบบลึก, ภาชนะหุงต้ม, ภาชนะบรรจุอาหารสำหรับทารก, ได้ไม่เกิน), the Industrial Works Department's GHS notification (คำสัญญาณ, ข้อความแสดงความเป็นอันตราย, เอกสารข้อมูลความปลอดภัย), the TIS for respirators as the TISI catalogue names them; the bodies: กรมสวัสดิการและคุ้มครองแรงงาน, กระทรวงสาธารณสุข, สำนักงานคณะกรรมการอาหารและยา (อย.), ศูนย์พิษวิทยารามาธิบดี (1367), the emergency numbers 191, 1669 and 199. Where the English names EU law (Directive 84/500/EEC, CLP), there is no official Thai text: write what Thai pages of อย. or the EU delegation call it, or describe it plainly with the number kept;",
+    terms:
+      "the term banks and teaching texts of Thai ({TERMBANK}); IATE has no Thai. For software conventions (register, buttons, punctuation, spaces, particles), the Microsoft Thai style guide and the Royal Society's spelling.",
+    notes: {
+      glossary: [
+        'Follow docs/translations/tr.md, ko.md and ja.md as well as fi.md and hr.md: they are the models for a language outside the EU. Terms come first from shops\' and makers\' catalogues (the names printed on the bag), then from textbooks, university and vocational course pages and the term banks. Say which source each row rests on, with its link; mark rows with no Thai source "No source" and rows for a native potter **Native check**.',
+        'Style sheet: name the subsection "EU law" "Law in Thailand" (and say how the English\'s EU names are written); add the subsections the existing language-specific pages carry (Script, spelling and spaces; Placeholders and names; Choices for the owner). Say which wording of "at most", "less than" and "at least" the law uses, and keep them apart.',
+        'No rule may ask for figures the English lacks: no added SK or Orton equivalents, no converted units, no Buddhist-era or other-era years, no standard numbers where the English has none. The numbers check rejects every one.',
+        'Cones: Orton cones are named Orton wherever the English says Orton; SK cones are SK with the number as printed where the English has them; Seger only where the English says Seger (the firing guide\'s older European cones), and the Seger formula (the unity molecular formula, UMF) never names a cone. Never give an SK number for an Orton number or the reverse, nor any equivalence. Give the wording for "one number hotter/cooler", never higher or lower.',
+        "Specific gravity is the language's relative-density word with the English's figure, never density in kg/m³ or a litre weight; Baumé as the sources write it. Say which word the Settings labels use.",
+        'Plural forms: CLDR gives this language only `other`. Every plural message is written `{count, plural, other {…}}` with the classifier inside it; `=0` stays where the English has it. Give a classifier for each counted noun the app uses.',
+        "Pitfalls to settle: glaze vs coating/paint/enamel/varnish; frit vs flux; kiln vs oven; bisque vs raw (unfired); earthenware, stoneware, porcelain; the material vs the oxide (silica vs silicon vs silicone); whiting vs lime; boron vs boric acid vs borax; soda and potash as oxides vs soda ash and potassium carbonate; respirator vs ventilator vs ventilation; the app's guides vs a kiln's manual: two different words.",
+        'Two-step sign-in: add the table "2.10 Signing in" after the last one, with the words Google and Apple use on their own help pages in the language (link each): two-step sign-in, authenticator app, setup key, QR code, passkey, recovery code, the code from the app, security key, sign in, sign out, account, password, trusted device. The English writes "two-step" as a word, so a digit 2 is a figure the English lacks.',
+        'Register: plain polite Thai with no sentence-final particles (no ครับ, ค่ะ, นะ), a gender-neutral voice; คุณ only where the sentence needs it, dropped elsewhere; กรุณา or โปรด in error text; buttons are the bare verb or noun (บันทึก, พิมพ์, เปรียบเทียบ); ต้อง, ควร, อาจ and ได้ kept apart; ห้าม for must not and do not, never "เด็ดขาด" the English lacks.',
+        'Script and spaces: no spaces between Thai words; a space between phrases and sentences, no full stop at the end of a sentence; a space on both sides of Latin text and figures; no space between a Thai word and a placeholder that stands for a Thai name ({region}); no ๆ or ฯ; Western digits only, never Thai digits. Say how U+200B or <wbr> may be used for a loanword that breaks badly, and that none goes in by default.',
+        'Numbers: Western digits, decimal point and thousands comma (1.5; 12,500), four-digit temperatures ungrouped (1222 °C), 5% with no space, a range 10–60%; dates 14 ตุลาคม ค.ศ. 2026, Gregorian with ค.ศ., never a Buddhist-era year (พ.ศ. 2569), which the English lacks; times on the 24-hour clock with a point and น. (20.00 น., 20.30 น., "08.00 น. ถึง 17.00 น." with น. repeated), never ตี, บ่าย or ทุ่ม with a figure. A number the English writes as a word stays a word (สองชั้น, ร้อนกว่าหนึ่งเบอร์).',
+        'Law terms: ไม่เกิน or ได้ไม่เกิน for "at most"; น้อยกว่า for "less than"; ตั้งแต่ … ขึ้นไป for "at least". Silica: ซิลิกา คริสตัลลีน and ขีดจำกัดความเข้มข้น as the DLPW writes them; the food-contact text uses ภาชนะแบบแบน, ภาชนะแบบลึก and ภาชนะหุงต้ม.',
+        'Specific gravity: ความถ่วงจำเพาะ (relative density), never ความหนาแน่น; guides.density.sg writes "ความถ่วงจำเพาะ {value}". Whiting is แคลเซียมคาร์บอเนต, never ปูนขาว or ดินสอพอง. "เคลือบ" must be paired with เซรามิก or สูตรเคลือบ in titles (เคลือบเซรามิก alone is a car coating). "ดิบ" (unfired) and "เผาดิบ" (bisque firing) are never taken for each other. A recipe is สูตรเคลือบ, a chemical formula สูตรเคมี, the unity formula สูตรเซเกอร์.',
+        'Poison line: the Ramathibodi Poison Center, 1367, is confirmed and may be named (ศูนย์พิษวิทยารามาธิบดี); where the English says "poison line" without naming one, name 1367 as the region data will.'
+      ],
+      translate: [
+        "Style sheet and glossary: docs/translations/th.md. Every term as it gives it; where a row says Native check, use the row's choice and list the sentence in your flags for the reviewer.",
+        'Cones: Orton cones are Orton wherever the English says Orton; SK cones are SK with the number as printed; Seger only where the English says Seger; the Seger formula (UMF) is never a cone. Never give an SK number for an Orton number or the reverse, nor say they are equal. "One number hotter/cooler" as the style sheet gives it, never higher or lower.',
+        'Numbers as the style sheet gives them: decimal mark, thousands, percent, units as the English writes them (1222 °C, 10 g), dates with the month named (or as its number where the style sheet says so), times on the 24-hour clock written as the style sheet says. Digits wherever the English has digits; a number the English writes as a word stays a word, since a digit would be a figure the English lacks.',
+        'Plural forms: this language has only `other`; write `{count, plural, other {…}}` with the classifier the style sheet gives inside it, and keep `=0` where the English has it.',
+        'Should, must and may as the style sheet gives them, kept apart; no emphasis word (never, always, absolutely) the English lacks; "must be tested" means the test is done, not passed.',
+        'The food-contact text names Directive 84/500/EEC: it has no official text in this language, so write the EU categories plainly, so that the 3 L still applies only to packaging and storage vessels.',
+        "Japanese names in the guides and region notes (the firing guide's) are Hepburn romanization with the English gloss, never Japanese script.",
+        'Register: no particles (ครับ, ค่ะ, นะ), คุณ only where needed, bare-verb buttons; no spaces inside words, a space between phrases and sentences, none at the end of a sentence, a space on both sides of Latin text and figures, none between a Thai word and {region}; Western digits only; no ๆ or ฯ.',
+        'Dates "14 ตุลาคม ค.ศ. 2026" (never พ.ศ.); times "20.00 น." and "20.30 น." with น. after every hour; ความถ่วงจำเพาะ (not ความหนาแน่น) for specific gravity; no zero-width spaces unless the style sheet says a word needs one.'
+      ],
+      review: [
+        'Thai: "at most", "no more than" and "up to" use the law\'s word for at most and never the word for "less than" or "under"; "at least" and "or more" never the word for "more than". A slip here moves a legal limit. Check every one in the food-contact, silica and safety text.',
+        'Thai: SK cones written "SK" as printed; Orton cones named Orton; Seger only where the English says Seger; the Seger formula never a cone; no SK number given for an Orton number or the reverse; "one number hotter/cooler", never higher or lower.',
+        "Thai: the numbers as the style sheet writes them; a number the English writes as a word stays a word; times on the 24-hour clock in the form the style sheet gives (the numbers check rejects 12-hour forms); specific gravity as the relative-density word with the English's figure.",
+        'Thai: should, must and may kept apart; no emphasis the English lacks; no should turned into must and no may dropped; plural messages with `other` only and the classifier inside it.',
+        'Thai: no particles (ครับ, ค่ะ, นะ); spaces only between phrases and sentences, none inside a word, a space on both sides of Latin text and figures; Western digits, never Thai digits; 1.5 with a point and 12,500 with a comma, 1222 °C unspaced; dates with ค.ศ. and never a Buddhist-era year; times as 20.00 น. with น. after each hour; ความถ่วงจำเพาะ, never ความหนาแน่น; เคลือบ paired with เซรามิก in titles; ดิบ and เผาดิบ kept apart.'
+      ],
+      backtranslate: [
+        'The law\'s word for "at most" means "at most" (the limit itself passes); the word for "less than" means "less than" (it does not). Translate each back exactly as it reads: a limit that moved from one to the other is a difference in meaning.',
+        'Words of emphasis and obligation are translated back as strongly as they read: one the English lacks is a difference in meaning.',
+        'Names of services and bodies stay in the language: compare what they refer to.',
+        'ไม่เกิน and ได้ไม่เกิน mean "at most"; น้อยกว่า means "less than"; ต้อง is "must", ควร "should", อาจ "may", ห้าม "must not": translate each back exactly as it reads.'
+      ]
+    }
   }
 };
 
