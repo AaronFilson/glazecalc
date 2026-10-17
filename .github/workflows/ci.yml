@@ -31,6 +31,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          # Nothing here pushes; the tools installed from npm cannot read a token from .git/config.
+          persist-credentials: false
 
       - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
@@ -65,8 +68,14 @@ jobs:
         run: npm run test:forwarder
 
       # The official MCP conformance suite (2026-07-28 and 2025-11-25) and the
-      # MCP Inspector against /mcp on a server of its own, at the exact versions
-      # pinned in scripts/mcp-conformance.mjs (about a minute, mostly downloading them).
+      # MCP Inspector against /mcp on a server of its own. They are installed
+      # apart from the app, from the lockfile in scripts/mcp-conformance/, with
+      # no install scripts; this job has no secrets in its environment, and the
+      # checkout keeps no GitHub token (persist-credentials: false above).
+      - name: Install the MCP conformance tools
+        run: npm ci --ignore-scripts --no-audit --no-fund
+        working-directory: scripts/mcp-conformance
+
       - name: MCP conformance
         run: npm run test:mcp
 

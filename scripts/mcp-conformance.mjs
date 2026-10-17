@@ -17,19 +17,24 @@
 //                               runs both, and stops it
 //   MCP_URL=http://host/mcp npm run test:mcp   checks a server already running
 //
-// MongoDB must be running for the first. The suite and the Inspector come from
-// npm at the exact versions below, through npx, so they are not dependencies.
+// MongoDB must be running for the first. The suite and the Inspector are not the
+// app's dependencies: they are installed apart, at the exact versions and with
+// the lockfile in scripts/mcp-conformance/ (package.json, package-lock.json),
+// by npm ci there with no install scripts, which this does when they are missing.
+// CI runs that step itself, with no secrets in its environment.
 import { spawn } from 'node:child_process';
-import { mkdtempSync, rmSync } from 'node:fs';
+import { existsSync, mkdtempSync, readFileSync, rmSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-export const CONFORMANCE = '@modelcontextprotocol/conformance@0.2.0-alpha.12';
-export const INSPECTOR = '@modelcontextprotocol/inspector@2.9.0';
 export const REVISIONS = ['2026-07-28', '2025-11-25'];
 
 const root = fileURLToPath(new URL('..', import.meta.url));
+/** Where the suite and the Inspector are installed, and their command names there. */
+const tools = path.join(root, 'scripts', 'mcp-conformance');
+const bin = path.join(tools, 'node_modules', '.bin');
+export const VERSIONS = JSON.parse(readFileSync(path.join(tools, 'package.json'), 'utf8')).dependencies;
 const port = process.env.MCP_PORT || '3190';
 const given = process.env.MCP_URL;
 const url = given || `http://localhost:${port}/mcp`;
@@ -37,10 +42,15 @@ const windows = process.platform === 'win32';
 
 const quote = (arg) => (/^[\w@./:=,-]+$/.test(arg) ? arg : JSON.stringify(arg));
 
-/** Runs a command (through the shell, for npx on Windows); resolves with its exit code and output. */
+/** Runs a command (through the shell, for npm's .cmd shims on Windows); resolves with its exit code and output. */
 const run = (command, args, { cwd = root, echo = true } = {}) =>
   new Promise((resolve) => {
-    const child = spawn([command, ...args].map(quote).join(' '), { cwd, shell: true, env: process.env });
+    const child = spawn([command, ...args].map(quote).join(' '), {
+      cwd,
+      shell: true,
+      // The installed tools first, so nothing else of the same name is run.
+      env: { ...process.env, PATH: bin + path.delimiter + (process.env.PATH ?? '') }
+    });
     let out = '';
     let err = '';
     child.stdout.on('data', (chunk) => {
@@ -97,7 +107,7 @@ const check = (ok, what) => {
 };
 
 const inspector = async (what, args, test) => {
-  const result = await run('npx', ['--yes', INSPECTOR, '--cli', url, '--transport', 'http', ...args], {
+  const result = await run('mcp-inspector', ['--cli', url, '--transport', 'http', ...args], {
     echo: false
   });
   if (result.code !== 0) {
@@ -114,7 +124,21 @@ const inspector = async (what, args, test) => {
   check(test(body), what);
 };
 
+/** Installs the suite and the Inspector from their lockfile, when they are not there yet. */
+const install = async () => {
+  if (['conformance', 'mcp-inspector'].every((name) => existsSync(path.join(bin, name)))) return;
+  console.log(
+    'Installing ' +
+      Object.entries(VERSIONS)
+        .map(([name, version]) => name + '@' + version)
+        .join(' and ')
+  );
+  const result = await run('npm', ['ci', '--ignore-scripts', '--no-audit', '--no-fund'], { cwd: tools });
+  if (result.code !== 0) throw new Error('npm ci in scripts/mcp-conformance failed');
+};
+
 const main = async () => {
+  await install();
   const server = given ? null : await startServer();
   // The suite writes its results under the directory it runs in: not the repository.
   const work = mkdtempSync(path.join(tmpdir(), 'glazecalc-mcp-'));
@@ -123,8 +147,8 @@ const main = async () => {
       console.log(`\n== Conformance suite, ${revision} ==`);
       const baseline = path.join(root, 'scripts', 'mcp-conformance', revision + '.yml');
       const result = await run(
-        'npx',
-        ['--yes', CONFORMANCE, 'server', '--url', url, '--requirements', revision, '--expected-failures', baseline],
+        'conformance',
+        ['server', '--url', url, '--requirements', revision, '--expected-failures', baseline],
         { cwd: work }
       );
       check(result.code === 0, `conformance ${revision}`);

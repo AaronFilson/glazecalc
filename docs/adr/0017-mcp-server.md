@@ -62,8 +62,11 @@ an assistant to act for one person that is not their web session.
   conformance suite, `@modelcontextprotocol/conformance` 0.2.0-alpha.12, runs exactly what the
   2026-07-28 and 2025-11-25 revisions require against a server of its own, and the MCP Inspector
   2.9.0's command line lists the tools (with its schema portability check), calls two, lists and
-  reads resources and gets a prompt. Both come through `npx` at exact versions over two weeks old,
-  so they are not dependencies; the run takes about a minute and a half. The scenarios that need the
+  reads resources and gets a prompt. Both are installed apart from the app, at exact versions over
+  two weeks old with a committed lockfile (`scripts/mcp-conformance/package.json` and
+  `package-lock.json`), by `npm ci --ignore-scripts` in that folder, so they are not the app's
+  dependencies and nothing newer can slip in; the CI job that runs them has no secrets in its
+  environment and its checkout keeps no GitHub token. The run takes about a minute and a half. The scenarios that need the
   suite's own test tools (`test_simple_text`, `test://static-text` and so on) or optional features
   Glazecalc does not offer (logging, subscriptions, asking the client for input, the tasks
   extension) are listed with their reasons in `scripts/mcp-conformance/<revision>.yml`; the suite

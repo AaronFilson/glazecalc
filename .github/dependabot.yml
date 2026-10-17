@@ -22,6 +22,12 @@ updates:
       - dependency-name: '@types/node'
         update-types: ['version-update:semver-major']
 
+  # The MCP conformance suite and Inspector CI installs apart (scripts/mcp-conformance/).
+  - package-ecosystem: npm
+    directory: /scripts/mcp-conformance
+    schedule:
+      interval: weekly
+
   - package-ecosystem: github-actions
     directory: /
     schedule:
