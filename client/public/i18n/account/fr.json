@@ -154,7 +154,7 @@
     "offSignOut": "Tous les autres appareils connectés à votre compte sont déconnectés. Celui-ci reste connecté.",
     "offEmail": "Nous vous envoyons un e-mail pour vous dire qu’elle a été désactivée.",
     "offRemoveApp": "Désactiver la connexion en deux étapes (retire l’application)",
-    "offRemoveAppFirst": "Retirez l’application pour commencer à la désactiver",
+    "offRemoveAppFirst": "Retirer l’application pour commencer à la désactiver",
     "offPasskeys": "{count, plural, one {Pour la désactiver, retirez votre clé d’accès sous Clés d’accès, plus haut.} many {Pour la désactiver, retirez vos # clés d’accès sous Clés d’accès, plus haut.} other {Pour la désactiver, retirez vos # clés d’accès sous Clés d’accès, plus haut.}}",
     "offPasskeysToo": "{count, plural, one {Vous avez aussi une clé d’accès : retirez-la sous Clés d’accès, plus haut, en plus de l’application.} many {Vous avez aussi # clés d’accès : retirez-les sous Clés d’accès, plus haut, en plus de l’application.} other {Vous avez aussi # clés d’accès : retirez-les sous Clés d’accès, plus haut, en plus de l’application.}}",
     "addAppText": "Pour configurer une application d’authentification, confirmez d’abord que c’est bien vous.",

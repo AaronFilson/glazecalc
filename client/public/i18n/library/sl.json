@@ -3,7 +3,7 @@
     "formulaHelp": "Formulo vnesite z navadnimi številkami, na primer {typed}: števila se prikažejo kot podpisani indeksi, {shown}. Če želite povezati dele formule, kot v {joined}, kopirajte to piko:",
     "relatedTo": "Povezano z",
     "notes": "Opombe",
-    "loi": "Izguba z žarjenjem (LOI), %",
+    "loi": "Izguba pri žarenju (LOI), %",
     "molecularWeight": "Molekulska masa surove formule (uporabi se samo, če je LOI prazen)",
     "formulaHeading": "Formula, žgana",
     "oxideSelection": "Oksid",

@@ -10,7 +10,7 @@
       "firstRecipe": "Zacznij pierwszą recepturę",
       "confirmHeading": "Potwierdzenie adresu e-mail",
       "confirm": "Potwierdź adres e-mail: wysłaliśmy link na adres {email}. Logowanie dwuetapowe tego wymaga. <account>Strona konta</account> może wysłać go ponownie.",
-      "confirmText": "Wysłaliśmy link na adres {email}. Należy go otworzyć, aby potwierdzić, że adres należy do Ciebie: logowanie dwuetapowe tego wymaga. <account>Strona konta</account> może wysłać go ponownie."
+      "confirmText": "Wysłaliśmy link na adres {email}. Należy go otworzyć, aby potwierdzić ten adres: logowanie dwuetapowe tego wymaga. <account>Strona konta</account> może wysłać go ponownie."
     },
     "sections": {
       "recipe": {

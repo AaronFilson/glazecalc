@@ -153,20 +153,20 @@
       "krSmall": "Kiti pripildomi gaminiai, mažesni kaip 1,1 L",
       "krMedium": "Kiti pripildomi gaminiai, nuo 1,1 L iki mažiau nei 3 L",
       "krStorage": "Kiti pripildomi gaminiai, 3 L ar daugiau",
-      "krCooking": "Indai maistui virti, maistui šildyti",
+      "krCooking": "Indai maistui gaminti, maistui šildyti",
       "twFlat": "Gaminiai, kurių negalima pripildyti, arba ne gilesni kaip 2,5 cm",
       "twSmall": "Gaminiai, gilesni kaip 2,5 cm, iki 1,1 L",
       "twLarge": "Gaminiai, gilesni kaip 2,5 cm, didesni kaip 1,1 L",
       "myFlat": "Plokšti indai",
       "mySmall": "Maži gilūs indai",
       "myLarge": "Dideli gilūs indai",
-      "myCooking": "Indai maistui virti"
+      "myCooking": "Indai maistui gaminti"
     },
     "judged": {
       "average": "6 gaminių vidurkis",
       "each": "kiekvienas iš 6",
       "averageOf": "{count} gaminių vidurkis",
-      "eachOf": "bet kuris iš {count}"
+      "eachOf": "kiekvienas iš {count}"
     },
     "euRules": "Čia taikomos ES taisyklės.",
     "law": "Nustatyta: <link>{law}</link>.",

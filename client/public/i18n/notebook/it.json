@@ -5,8 +5,8 @@
     "trying": "Sta provando Glazecalc come {name}. Cominci da una ricetta.",
     "welcomeBack": "Riprenda da dove aveva lasciato.",
     "welcome": {
-      "heading": "Benvenuto in Glazecalc",
-      "text": "Il Suo quaderno è pronto. Un buon primo passo: inserire uno smalto che prepara già, con i suoi materiali e le sue quantità, e vederne la formula di Seger.",
+      "heading": "Le diamo il benvenuto in Glazecalc",
+      "text": "Il Suo quaderno di laboratorio è pronto. Un buon primo passo: inserire uno smalto che prepara già, con i suoi materiali e le sue quantità, e vederne la formula di Seger.",
       "firstRecipe": "Inizia la prima ricetta",
       "confirmHeading": "Confermare l’email",
       "confirm": "Confermi l’email: abbiamo inviato un link a {email}. L’accesso in due passaggi ne ha bisogno. La Sua <account>pagina dell’account</account> può inviarlo di nuovo.",

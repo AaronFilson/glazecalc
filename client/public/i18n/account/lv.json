@@ -154,7 +154,7 @@
     "offSignOut": "Visas pārējās ierīces, kurās jūsu konts ir pierakstīts, tiek izrakstītas. Šī paliek pierakstīta.",
     "offEmail": "Mēs jums nosūtām e-pastu, ka tā ir izslēgta.",
     "offRemoveApp": "Izslēgt divpakāpju pierakstīšanos (noņem lietotni)",
-    "offRemoveAppFirst": "Noņemiet lietotni, lai sāktu izslēgšanu",
+    "offRemoveAppFirst": "Noņemt lietotni, lai sāktu izslēgšanu",
     "offPasskeys": "{count, plural, zero {Lai to izslēgtu, augstāk sadaļā Piekļuves atslēgas noņemiet # piekļuves atslēgu.} one {Lai to izslēgtu, augstāk sadaļā Piekļuves atslēgas noņemiet savu piekļuves atslēgu.} other {Lai to izslēgtu, augstāk sadaļā Piekļuves atslēgas noņemiet savas # piekļuves atslēgas.}}",
     "offPasskeysToo": "{count, plural, zero {Jums ir arī # piekļuves atslēgu: noņemiet tās augstāk sadaļā Piekļuves atslēgas, kā arī lietotni.} one {Jums ir arī piekļuves atslēga: noņemiet to augstāk sadaļā Piekļuves atslēgas, kā arī lietotni.} other {Jums ir arī # piekļuves atslēgas: noņemiet tās augstāk sadaļā Piekļuves atslēgas, kā arī lietotni.}}",
     "addAppText": "Lai iestatītu autentifikatora lietotni, vispirms apstipriniet, ka tas esat jūs.",

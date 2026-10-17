@@ -7,7 +7,7 @@
     "welcome": {
       "heading": "Glazecalc’e hoş geldiniz",
       "text": "Defteriniz hazır. İyi bir ilk adım: zaten karıştırdığınız bir sırı hammaddeleri ve miktarlarıyla yazın ve Seger formülünü görün.",
-      "firstRecipe": "İlk reçetenizi başlatın",
+      "firstRecipe": "İlk reçeteyi başlat",
       "confirmHeading": "E-posta adresinizi doğrulayın",
       "confirm": "E-posta adresinizi doğrulayın: {email} adresine bir bağlantı gönderdik. İki adımlı oturum açma buna ihtiyaç duyar. <account>Hesap sayfanız</account> bağlantıyı yeniden gönderebilir.",
       "confirmText": "{email} adresine bir bağlantı gönderdik. Adresin size ait olduğunu doğrulamak için bağlantıyı açın: iki adımlı oturum açma buna ihtiyaç duyar. <account>Hesap sayfanız</account> bağlantıyı yeniden gönderebilir."

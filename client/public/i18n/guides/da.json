@@ -157,16 +157,16 @@
       "twFlat": "Genstande, der ikke kan fyldes, eller som højst er 2,5 cm dybe",
       "twSmall": "Genstande, der er dybere end 2,5 cm, op til 1,1 L",
       "twLarge": "Genstande, der er dybere end 2,5 cm, over 1,1 L",
-      "myFlat": "Flade genstande",
-      "mySmall": "Små kar",
-      "myLarge": "Store kar",
+      "myFlat": "Fladvarer",
+      "mySmall": "Små hulvarer",
+      "myLarge": "Store hulvarer",
       "myCooking": "Koge- og stegeredskaber"
     },
     "judged": {
       "average": "gennemsnit af 6 genstande",
       "each": "hver af de 6 for sig",
       "averageOf": "gennemsnit af {count} genstande",
-      "eachOf": "en hvilken som helst af {count}"
+      "eachOf": "hver af de {count} for sig"
     },
     "euRules": "Her gælder EU’s regler.",
     "law": "Fastsat i <link>{law}</link>.",

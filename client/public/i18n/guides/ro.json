@@ -157,16 +157,16 @@
       "twFlat": "Obiecte care nu pot fi umplute sau cu adâncimea de cel mult 2,5 cm",
       "twSmall": "Obiecte cu adâncimea de peste 2,5 cm, până la 1,1 L",
       "twLarge": "Obiecte cu adâncimea de peste 2,5 cm, peste 1,1 L",
-      "myFlat": "Vase plate",
-      "mySmall": "Vase adânci mici",
-      "myLarge": "Vase adânci mari",
+      "myFlat": "Obiecte plate",
+      "mySmall": "Obiecte mici care pot fi umplute",
+      "myLarge": "Obiecte mari care pot fi umplute",
       "myCooking": "Vase de gătit"
     },
     "judged": {
       "average": "media a 6 obiecte",
       "each": "fiecare dintre cele 6",
       "averageOf": "media a {count} obiecte",
-      "eachOf": "oricare dintre cele {count}"
+      "eachOf": "fiecare dintre cele {count}"
     },
     "euRules": "Aici se aplică reglementările UE.",
     "law": "Stabilite prin <link>{law}</link>.",

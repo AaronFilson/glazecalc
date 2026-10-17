@@ -6,11 +6,11 @@
     "welcomeBack": "Jatka työtä siitä, mihin se jäi.",
     "welcome": {
       "heading": "Tervetuloa Glazecalciin",
-      "text": "Muistikirjasi on valmis. Hyvä ensimmäinen askel: kirjoita sisään lasite, jota jo sekoitat, sen raaka-aineet ja määrät, ja katso sen Segerin kaava.",
-      "firstRecipe": "Aloita ensimmäinen reseptisi",
-      "confirmHeading": "Vahvista sähköpostiosoitteesi",
-      "confirm": "Vahvista sähköpostiosoitteesi: lähetimme linkin osoitteeseen {email}. Kaksivaiheinen kirjautuminen tarvitsee sen. <account>Tilisivultasi</account> voi lähettää linkin uudelleen.",
-      "confirmText": "Lähetimme linkin osoitteeseen {email}. Avaa se vahvistaaksesi, että osoite on sinun: kaksivaiheinen kirjautuminen tarvitsee sen. <account>Tilisivultasi</account> voi lähettää linkin uudelleen."
+      "text": "Muistikirja on valmis. Hyvä ensimmäinen askel: kirjoita jo käytössä olevan lasitteen raaka-aineet ja määrät ja katso sen Segerin kaava.",
+      "firstRecipe": "Aloita ensimmäinen resepti",
+      "confirmHeading": "Sähköpostiosoitteen vahvistaminen",
+      "confirm": "Vahvista sähköpostiosoite: lähetimme linkin osoitteeseen {email}. Kaksivaiheinen kirjautuminen tarvitsee sen. Linkin voi lähettää uudelleen <account>tilisivulta</account>.",
+      "confirmText": "Lähetimme linkin osoitteeseen {email}. Avaa linkki osoitteen vahvistamiseksi: kaksivaiheinen kirjautuminen tarvitsee sen. Linkin voi lähettää uudelleen <account>tilisivulta</account>."
     },
     "sections": {
       "recipe": {
@@ -43,7 +43,7 @@
       },
       "account": {
         "title": "Tili ja asetukset",
-        "text": "Asetukset, salasanasi, kaksivaiheinen kirjautuminen ja kaiken tänne tallentamasi lataus."
+        "text": "Asetukset, salasana, kaksivaiheinen kirjautuminen ja kaiken tänne tallennetun lataus."
       }
     },
     "newHere": "Onko Segerin kaava uusi asia? <advice>Neuvosivulla</advice> selitetään perusteet, ja <about>Tietoja-sivulla</about> kerrotaan, miten Glazecalc toimii."
@@ -70,7 +70,7 @@
     "cell": "{field}, rivi {row}",
     "removeRow": "Poista rivi",
     "save": "Tallenna",
-    "storedHeading": "Tallennetut polttoni",
+    "storedHeading": "Omat tallennetut poltot",
     "noneSaved": "Ei vielä yhtään. Tallennetut poltot näkyvät tässä.",
     "storedIn": "Poltettu uunissa {kiln} {date}.",
     "storedOn": "Poltettu {date}.",
@@ -89,7 +89,7 @@
     "titleLabel": "Otsikko",
     "content": "Muistiinpano",
     "save": "Tallenna",
-    "mineHeading": "Tallennetut muistiinpanoni",
+    "mineHeading": "Omat tallennetut muistiinpanot",
     "noneSaved": "Ei vielä yhtään. Tallennetut muistiinpanot näkyvät tässä.",
     "titleMissing": "Anna muistiinpanolle otsikko.",
     "contentMissing": "Kirjoita muistiinpano.",

@@ -6,11 +6,11 @@
     "welcomeBack": "Fortsæt, hvor du slap.",
     "welcome": {
       "heading": "Velkommen til Glazecalc",
-      "text": "Din notesbog er klar. Et godt første skridt: skriv en glasur ind, som du allerede blander, med dens råvarer og mængder, og se dens Seger-formel.",
-      "firstRecipe": "Begynd din første opskrift",
+      "text": "Notesbogen er klar. Et godt første skridt: skriv en glasur ind, der allerede er i brug, med dens råvarer og mængder, og se dens Seger-formel.",
+      "firstRecipe": "Begynd den første opskrift",
       "confirmHeading": "Bekræft e-mailadressen",
-      "confirm": "Bekræft din e-mailadresse: vi har sendt et link til {email}. Login i to trin kræver det. Din <account>kontoside</account> kan sende det igen.",
-      "confirmText": "Vi har sendt et link til {email}. Åbn det for at bekræfte, at adressen er din: login i to trin kræver det. Din <account>kontoside</account> kan sende det igen."
+      "confirm": "Bekræft e-mailadressen: vi har sendt et link til {email}. Login i to trin kræver det. <account>Kontosiden</account> kan sende det igen.",
+      "confirmText": "Vi har sendt et link til {email}. Åbn det for at bekræfte adressen: login i to trin kræver det. <account>Kontosiden</account> kan sende det igen."
     },
     "sections": {
       "recipe": {
@@ -43,7 +43,7 @@
       },
       "account": {
         "title": "Konto og indstillinger",
-        "text": "Indstillinger, din adgangskode, login i to trin og en download af alt, hvad du gemmer her."
+        "text": "Indstillinger, adgangskoden, login i to trin og en download af alt, der gemmes her."
       }
     },
     "newHere": "Første gang med Seger-formler? <advice>Siden med glasurråd</advice> forklarer det grundlæggende, og <about>siden Om Glazecalc</about> fortæller, hvordan Glazecalc fungerer."

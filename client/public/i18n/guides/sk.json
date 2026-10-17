@@ -157,16 +157,16 @@
       "twFlat": "Predmety, ktoré nemožno plniť, alebo s hĺbkou najviac 2,5 cm",
       "twSmall": "Predmety s hĺbkou väčšou ako 2,5 cm, do 1,1 L",
       "twLarge": "Predmety s hĺbkou väčšou ako 2,5 cm, nad 1,1 L",
-      "myFlat": "Ploché riady",
-      "mySmall": "Malé duté nádoby",
-      "myLarge": "Veľké duté nádoby",
+      "myFlat": "Ploché predmety",
+      "mySmall": "Malé duté predmety",
+      "myLarge": "Veľké duté predmety",
       "myCooking": "Nádoby na varenie"
     },
     "judged": {
       "average": "priemer zo 6 kusov",
       "each": "každý zo 6 kusov",
       "averageOf": "priemer z {count} kusov",
-      "eachOf": "ktorýkoľvek z {count}"
+      "eachOf": "každý z {count} kusov"
     },
     "euRules": "Platia tu pravidlá EÚ.",
     "law": "Tieto limity stanovuje <link>{law}</link>.",

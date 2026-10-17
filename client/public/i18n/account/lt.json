@@ -154,7 +154,7 @@
     "offSignOut": "Visi kiti prie jūsų paskyros prisijungę įrenginiai atjungiami. Šis lieka prisijungęs.",
     "offEmail": "Atsiųsime jums el. laišką, kad jis buvo išjungtas.",
     "offRemoveApp": "Išjungti dviejų žingsnių prisijungimą (pašalina programą)",
-    "offRemoveAppFirst": "Pašalinkite programą, kad pradėtumėte išjungti",
+    "offRemoveAppFirst": "Pašalinti programą, kad būtų galima pradėti išjungti",
     "offPasskeys": "{count, plural, one {Norėdami išjungti, aukščiau skiltyje Prieigos raktai pašalinkite savo prieigos raktą.} few {Norėdami išjungti, aukščiau skiltyje Prieigos raktai pašalinkite savo # prieigos raktus.} many {Norėdami išjungti, aukščiau skiltyje Prieigos raktai pašalinkite savo # prieigos rakto.} other {Norėdami išjungti, aukščiau skiltyje Prieigos raktai pašalinkite savo # prieigos raktų.}}",
     "offPasskeysToo": "{count, plural, one {Turite ir prieigos raktą: pašalinkite jį aukščiau skiltyje Prieigos raktai, kartu su programa.} few {Turite ir # prieigos raktus: pašalinkite juos aukščiau skiltyje Prieigos raktai, kartu su programa.} many {Turite ir # prieigos rakto: pašalinkite juos aukščiau skiltyje Prieigos raktai, kartu su programa.} other {Turite ir # prieigos raktų: pašalinkite juos aukščiau skiltyje Prieigos raktai, kartu su programa.}}",
     "addAppText": "Norėdami nustatyti autentifikavimo programą, pirmiausia patvirtinkite, kad tai jūs.",

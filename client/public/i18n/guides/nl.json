@@ -157,16 +157,16 @@
       "twFlat": "Voorwerpen die niet gevuld kunnen worden, of ten hoogste 2,5 cm diep",
       "twSmall": "Voorwerpen van meer dan 2,5 cm diep, tot 1,1 L",
       "twLarge": "Voorwerpen van meer dan 2,5 cm diep, boven 1,1 L",
-      "myFlat": "Plat serviesgoed",
-      "mySmall": "Kleine holle vormen",
-      "myLarge": "Grote holle vormen",
+      "myFlat": "Platte voorwerpen",
+      "mySmall": "Kleine holle voorwerpen",
+      "myLarge": "Grote holle voorwerpen",
       "myCooking": "Kookgerei"
     },
     "judged": {
       "average": "gemiddelde van 6 stuks",
       "each": "elk van de 6 afzonderlijk",
       "averageOf": "gemiddelde van {count} stuks",
-      "eachOf": "een willekeurig van de {count}"
+      "eachOf": "elk van de {count} afzonderlijk"
     },
     "euRules": "Hier gelden de regels van de EU.",
     "law": "Vastgelegd in <link>{law}</link>.",

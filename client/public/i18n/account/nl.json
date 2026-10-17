@@ -154,7 +154,7 @@
     "offSignOut": "Elk ander apparaat dat bij uw account is ingelogd, wordt uitgelogd. Dit apparaat blijft ingelogd.",
     "offEmail": "We sturen u een e-mail dat het is uitgezet.",
     "offRemoveApp": "Inloggen in twee stappen uitzetten (verwijdert de app)",
-    "offRemoveAppFirst": "Verwijder de app om het uitzetten te beginnen",
+    "offRemoveAppFirst": "De app verwijderen om het uitzetten te beginnen",
     "offPasskeys": "{count, plural, one {Om het uit te zetten, verwijdert u uw passkey onder Passkeys, hierboven.} other {Om het uit te zetten, verwijdert u uw # passkeys onder Passkeys, hierboven.}}",
     "offPasskeysToo": "{count, plural, one {U hebt ook een passkey: verwijder die onder Passkeys, hierboven, en ook de app.} other {U hebt ook # passkeys: verwijder die onder Passkeys, hierboven, en ook de app.}}",
     "addAppText": "Om een authenticator-app in te stellen, bevestigt u eerst dat u het bent.",

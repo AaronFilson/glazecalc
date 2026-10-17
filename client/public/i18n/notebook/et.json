@@ -7,8 +7,8 @@
     "welcome": {
       "heading": "Tere tulemast Glazecalci",
       "text": "Teie märkmik on valmis. Hea esimene samm: sisestage glasuur, mida juba segate, koos selle toorainete ja kogustega, ja vaadake selle Segeri valemit.",
-      "firstRecipe": "Alustage oma esimest retsepti",
-      "confirmHeading": "Kinnitage oma e-posti aadress",
+      "firstRecipe": "Alusta oma esimest retsepti",
+      "confirmHeading": "E-posti aadressi kinnitamine",
       "confirm": "Kinnitage oma e-posti aadress: saatsime lingi aadressile {email}. Kaheastmeline sisselogimine vajab seda. Teie <account>kontoleht</account> saab selle uuesti saata.",
       "confirmText": "Saatsime lingi aadressile {email}. Avage see, et kinnitada, et aadress on teie oma: kaheastmeline sisselogimine vajab seda. Teie <account>kontoleht</account> saab selle uuesti saata."
     },

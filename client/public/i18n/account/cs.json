@@ -154,7 +154,7 @@
     "offSignOut": "Všechna ostatní zařízení přihlášená k vašemu účtu se odhlásí. Toto zůstane přihlášené.",
     "offEmail": "Pošleme vám e-mail, že bylo vypnuto.",
     "offRemoveApp": "Vypnout dvoustupňové přihlášení (odebere aplikaci)",
-    "offRemoveAppFirst": "Odeberte aplikaci, abyste ho mohli začít vypínat",
+    "offRemoveAppFirst": "Odebrat aplikaci a začít vypínat",
     "offPasskeys": "{count, plural, one {Chcete-li ho vypnout, odeberte přístupový klíč v části Přístupové klíče výše.} few {Chcete-li ho vypnout, odeberte své # přístupové klíče v části Přístupové klíče výše.} many {Chcete-li ho vypnout, odeberte # přístupového klíče v části Přístupové klíče výše.} other {Chcete-li ho vypnout, odeberte svých # přístupových klíčů v části Přístupové klíče výše.}}",
     "offPasskeysToo": "{count, plural, one {Máte také přístupový klíč: odeberte ho v části Přístupové klíče výše, stejně jako aplikaci.} few {Máte také # přístupové klíče: odeberte je v části Přístupové klíče výše, stejně jako aplikaci.} many {Máte také # přístupového klíče: odeberte je v části Přístupové klíče výše, stejně jako aplikaci.} other {Máte také # přístupových klíčů: odeberte je v části Přístupové klíče výše, stejně jako aplikaci.}}",
     "addAppText": "Chcete-li nastavit ověřovací aplikaci, nejdřív potvrďte, že jste to vy.",

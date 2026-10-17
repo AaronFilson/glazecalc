@@ -154,7 +154,7 @@
     "offSignOut": "Ogni altro dispositivo connesso al Suo account viene disconnesso. Questo resta connesso.",
     "offEmail": "Le inviamo un’email per dirLe che è stato disattivato.",
     "offRemoveApp": "Disattiva l’accesso in due passaggi (rimuove l’app)",
-    "offRemoveAppFirst": "Rimuova l’app, per iniziare a disattivarlo",
+    "offRemoveAppFirst": "Rimuovi l’app per iniziare a disattivarlo",
     "offPasskeys": "{count, plural, one {Per disattivarlo, rimuova la Sua passkey in Passkey, qui sopra.} many {Per disattivarlo, rimuova le Sue # passkey in Passkey, qui sopra.} other {Per disattivarlo, rimuova le Sue # passkey in Passkey, qui sopra.}}",
     "offPasskeysToo": "{count, plural, one {Ha anche una passkey: la rimuova in Passkey, qui sopra, oltre all’app.} many {Ha anche # passkey: le rimuova in Passkey, qui sopra, oltre all’app.} other {Ha anche # passkey: le rimuova in Passkey, qui sopra, oltre all’app.}}",
     "addAppText": "Per configurare un’app di autenticazione, confermi prima che è Lei.",

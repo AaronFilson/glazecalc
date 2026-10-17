@@ -157,16 +157,16 @@
       "twFlat": "Objets non remplissables, ou de 2,5 cm de profondeur au plus",
       "twSmall": "Objets de plus de 2,5 cm de profondeur, jusqu’à 1,1 L",
       "twLarge": "Objets de plus de 2,5 cm de profondeur, de plus de 1,1 L",
-      "myFlat": "Pièces plates",
-      "mySmall": "Petites pièces creuses",
-      "myLarge": "Grandes pièces creuses",
+      "myFlat": "Objets plats",
+      "mySmall": "Petits objets creux",
+      "myLarge": "Grands objets creux",
       "myCooking": "Ustensiles de cuisson"
     },
     "judged": {
       "average": "moyenne de 6 pièces",
       "each": "chacune des 6",
       "averageOf": "moyenne de {count} pièces",
-      "eachOf": "n’importe laquelle des {count}"
+      "eachOf": "chacune des {count}"
     },
     "euRules": "Les règles de l’UE s’appliquent ici.",
     "law": "Limites fixées par <link>{law}</link>.",

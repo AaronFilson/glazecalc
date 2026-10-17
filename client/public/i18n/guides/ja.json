@@ -166,7 +166,7 @@
       "average": "6個の平均",
       "each": "6個のいずれも",
       "averageOf": "{count}個の平均",
-      "eachOf": "{count}個のうちのいずれか"
+      "eachOf": "{count}個のいずれも"
     },
     "euRules": "この国では EU の規則が適用されます。",
     "law": "<link>{law}</link>で定められています。",

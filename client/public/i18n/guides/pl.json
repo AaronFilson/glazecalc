@@ -166,7 +166,7 @@
       "average": "średnia z 6 sztuk",
       "each": "każda z 6 sztuk",
       "averageOf": "średnia z {count} sztuk",
-      "eachOf": "którakolwiek z {count}"
+      "eachOf": "każda z {count} sztuk"
     },
     "euRules": "Obowiązują tu przepisy UE.",
     "law": "Limity ustala <link>{law}</link>.",

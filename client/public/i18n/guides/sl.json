@@ -157,16 +157,16 @@
       "twFlat": "Izdelki, ki jih ni mogoče napolniti, ali globoki največ 2,5 cm",
       "twSmall": "Izdelki, globlji od 2,5 cm, do 1,1 L",
       "twLarge": "Izdelki, globlji od 2,5 cm, nad 1,1 L",
-      "myFlat": "Ploščata posoda",
-      "mySmall": "Majhne votle posode",
-      "myLarge": "Velike votle posode",
+      "myFlat": "Ploska posoda",
+      "mySmall": "Majhna votla posoda",
+      "myLarge": "Velika votla posoda",
       "myCooking": "Posoda za kuhanje"
     },
     "judged": {
       "average": "povprečje 6 kosov",
       "each": "vsak od 6 kosov",
       "averageOf": "povprečje {count} kosov",
-      "eachOf": "kateri koli od {count}"
+      "eachOf": "vsak od {count} kosov"
     },
     "euRules": "Tu veljajo pravila EU.",
     "law": "Določa jih <link>{law}</link>.",

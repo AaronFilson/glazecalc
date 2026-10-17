@@ -154,7 +154,7 @@
     "offSignOut": "Se cierra la sesión en todos los demás dispositivos con la sesión iniciada en su cuenta. En este se mantiene.",
     "offEmail": "Le enviamos un correo para decirle que se ha desactivado.",
     "offRemoveApp": "Desactivar el inicio de sesión en dos pasos (quita la aplicación)",
-    "offRemoveAppFirst": "Quite la aplicación para empezar a desactivarlo",
+    "offRemoveAppFirst": "Quitar la aplicación para empezar a desactivarlo",
     "offPasskeys": "{count, plural, one {Para desactivarlo, quite su llave de acceso en Llaves de acceso, arriba.} many {Para desactivarlo, quite sus # llaves de acceso en Llaves de acceso, arriba.} other {Para desactivarlo, quite sus # llaves de acceso en Llaves de acceso, arriba.}}",
     "offPasskeysToo": "{count, plural, one {También tiene una llave de acceso: quítela en Llaves de acceso, arriba, además de la aplicación.} many {También tiene # llaves de acceso: quítelas en Llaves de acceso, arriba, además de la aplicación.} other {También tiene # llaves de acceso: quítelas en Llaves de acceso, arriba, además de la aplicación.}}",
     "addAppText": "Para configurar una aplicación de autenticación, confirme primero que es usted.",

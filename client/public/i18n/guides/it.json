@@ -157,7 +157,7 @@
       "twFlat": "Oggetti non riempibili, o profondi al massimo 2,5 cm",
       "twSmall": "Oggetti profondi più di 2,5 cm, fino a 1,1 L",
       "twLarge": "Oggetti profondi più di 2,5 cm, oltre 1,1 L",
-      "myFlat": "Stoviglie piatte",
+      "myFlat": "Oggetti piani",
       "mySmall": "Oggetti cavi piccoli",
       "myLarge": "Oggetti cavi grandi",
       "myCooking": "Recipienti da cottura"
@@ -166,7 +166,7 @@
       "average": "media di 6 pezzi",
       "each": "ciascuno dei 6 pezzi",
       "averageOf": "media di {count} pezzi",
-      "eachOf": "uno qualsiasi dei {count}"
+      "eachOf": "ciascuno dei {count} pezzi"
     },
     "euRules": "Qui valgono le norme dell’UE.",
     "law": "Limiti fissati da: <link>{law}</link>.",

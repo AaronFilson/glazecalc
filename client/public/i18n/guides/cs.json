@@ -158,15 +158,15 @@
       "twSmall": "Předměty s hloubkou větší než 2,5 cm, do 1,1 L",
       "twLarge": "Předměty s hloubkou větší než 2,5 cm, nad 1,1 L",
       "myFlat": "Ploché nádobí",
-      "mySmall": "Malé duté nádoby",
-      "myLarge": "Velké duté nádoby",
+      "mySmall": "Malé duté nádobí",
+      "myLarge": "Velké duté nádobí",
       "myCooking": "Nádobí na vaření"
     },
     "judged": {
       "average": "průměr ze 6 kusů",
       "each": "každý ze 6 kusů",
       "averageOf": "průměr ze {count} kusů",
-      "eachOf": "kterýkoli z {count}"
+      "eachOf": "každý z {count} kusů"
     },
     "euRules": "Platí zde pravidla EU.",
     "law": "Tyto limity stanoví <link>{law}</link>.",

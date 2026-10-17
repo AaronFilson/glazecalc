@@ -157,7 +157,7 @@
       "twFlat": "Esineet, joita ei voi täyttää, tai joiden syvyys on enintään 2,5 cm",
       "twSmall": "Esineet, joiden syvyys on yli 2,5 cm, enintään 1,1 L",
       "twLarge": "Esineet, joiden syvyys on yli 2,5 cm, yli 1,1 L",
-      "myFlat": "Litteät astiat",
+      "myFlat": "Matalat astiat",
       "mySmall": "Pienet syvät astiat",
       "myLarge": "Suuret syvät astiat",
       "myCooking": "Keittoastiat"
@@ -166,7 +166,7 @@
       "average": "6 esineen keskiarvo",
       "each": "jokainen 6 esineestä erikseen",
       "averageOf": "{count} esineen keskiarvo",
-      "eachOf": "mikä tahansa {count} esineestä"
+      "eachOf": "jokainen {count} esineestä erikseen"
     },
     "euRules": "Maassa noudatetaan EU:n sääntöjä.",
     "law": "Säädös: <link>{law}</link>.",

@@ -157,16 +157,16 @@
       "twFlat": "Föremål som inte kan fyllas, eller som är högst 2,5 cm djupa",
       "twSmall": "Föremål som är djupare än 2,5 cm, upp till 1,1 L",
       "twLarge": "Föremål som är djupare än 2,5 cm, över 1,1 L",
-      "myFlat": "Platta föremål",
-      "mySmall": "Små kärl",
-      "myLarge": "Stora kärl",
+      "myFlat": "Flata föremål",
+      "mySmall": "Små föremål som kan fyllas",
+      "myLarge": "Stora föremål som kan fyllas",
       "myCooking": "Kokkärl"
     },
     "judged": {
       "average": "medelvärde av 6 föremål",
       "each": "vart och ett av 6",
       "averageOf": "medelvärde av {count} föremål",
-      "eachOf": "vilket som helst av {count}"
+      "eachOf": "vart och ett av {count}"
     },
     "euRules": "EU:s regler gäller här.",
     "law": "Fastställda i <link>{law}</link>.",

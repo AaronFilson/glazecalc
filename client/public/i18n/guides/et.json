@@ -166,7 +166,7 @@
       "average": "6 eseme keskmine",
       "each": "iga 6 esemest",
       "averageOf": "{count} eseme keskmine",
-      "eachOf": "mis tahes üks {count}-st"
+      "eachOf": "iga {count} esemest"
     },
     "euRules": "Siin kehtivad EL-i reeglid.",
     "law": "Kehtestatud: <link>{law}</link>.",

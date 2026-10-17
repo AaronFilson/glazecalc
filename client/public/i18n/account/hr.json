@@ -154,7 +154,7 @@
     "offSignOut": "Svi ostali uređaji prijavljeni u vaš račun odjavljuju se. Ovaj ostaje prijavljen.",
     "offEmail": "Šaljemo vam e-poruku da je isključena.",
     "offRemoveApp": "Isključi dvostupanjsku prijavu (uklanja aplikaciju)",
-    "offRemoveAppFirst": "Uklonite aplikaciju da biste je počeli isključivati",
+    "offRemoveAppFirst": "Ukloni aplikaciju za početak isključivanja",
     "offPasskeys": "{count, plural, one {Da biste je isključili, uklonite svoj pristupni ključ u odjeljku Pristupni ključevi gore.} few {Da biste je isključili, uklonite svoja # pristupna ključa u odjeljku Pristupni ključevi gore.} other {Da biste je isključili, uklonite svojih # pristupnih ključeva u odjeljku Pristupni ključevi gore.}}",
     "offPasskeysToo": "{count, plural, one {Imate i pristupni ključ: uklonite ga u odjeljku Pristupni ključevi gore, kao i aplikaciju.} few {Imate i # pristupna ključa: uklonite ih u odjeljku Pristupni ključevi gore, kao i aplikaciju.} other {Imate i # pristupnih ključeva: uklonite ih u odjeljku Pristupni ključevi gore, kao i aplikaciju.}}",
     "addAppText": "Da biste postavili aplikaciju za provjeru autentičnosti, najprije potvrdite da ste to vi.",

@@ -158,15 +158,15 @@
       "twSmall": "Izstrādājumi, kuru dziļums pārsniedz 2,5 cm, līdz 1,1 L",
       "twLarge": "Izstrādājumi, kuru dziļums pārsniedz 2,5 cm, virs 1,1 L",
       "myFlat": "Plakani trauki",
-      "mySmall": "Mazi dziļi trauki",
-      "myLarge": "Lieli dziļi trauki",
+      "mySmall": "Mazi dobi trauki",
+      "myLarge": "Lieli dobi trauki",
       "myCooking": "Ēdiena gatavošanas piederumi"
     },
     "judged": {
       "average": "6 izstrādājumu vidējais",
       "each": "katrs no 6",
       "averageOf": "{count} izstrādājumu vidējais",
-      "eachOf": "jebkurš no {count}"
+      "eachOf": "katrs no {count}"
     },
     "euRules": "Šeit ir spēkā ES noteikumi.",
     "law": "Nosaka: <link>{law}</link>.",

@@ -166,7 +166,7 @@
       "average": "medja ta’ 6 biċċiet",
       "each": "kull waħda mis-6",
       "averageOf": "medja ta’ {count} biċċiet",
-      "eachOf": "kwalunkwe waħda mill-{count}"
+      "eachOf": "kull waħda mill-{count}"
     },
     "euRules": "Hawn japplikaw ir-regoli tal-UE.",
     "law": "Stabbiliti minn <link>{law}</link>.",

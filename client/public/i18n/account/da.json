@@ -144,7 +144,7 @@
     "nameCheck": "Giv adgangsnøglen et navn på 1 til {most} tegn.",
     "passkeyLimit": "Kontoen har {most} adgangsnøgler, det højeste antal en konto kan have. Fjern en for at tilføje en anden.",
     "codesTitle": "Gendannelseskoder",
-    "codesLeft": "{count, plural, one {# af {total} gendannelseskoder tilbage.} other {# af {total} gendannelseskoder tilbage.}} Hvis du ikke kan bruge din app eller en adgangsnøgle, logger en kode dig ind i stedet. Hver kode virker kun én gang.",
+    "codesLeft": "{count, plural, one {# af {total} gendannelseskoder tilbage.} other {# af {total} gendannelseskoder tilbage.}} Kan appen eller en adgangsnøgle ikke bruges, kan der logges ind med en kode i stedet. Hver kode virker kun én gang.",
     "codesLow": "Lav nye koder snart. Hvis de løber tør, og både appen og adgangsnøglerne er væk, er det ikke muligt at logge ind.",
     "newCodes": "Lav nye gendannelseskoder",
     "offHeading": "Slå det fra",

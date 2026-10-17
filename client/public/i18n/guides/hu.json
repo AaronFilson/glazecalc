@@ -157,22 +157,22 @@
       "twFlat": "Nem megtölthető tárgyak, vagy legfeljebb 2,5 cm mélyek",
       "twSmall": "2,5 cm-nél mélyebb tárgyak, legfeljebb 1,1 L",
       "twLarge": "2,5 cm-nél mélyebb tárgyak, 1,1 L felett",
-      "myFlat": "Lapos edények",
-      "mySmall": "Kis mély edények",
-      "myLarge": "Nagy mély edények",
+      "myFlat": "Laposáru",
+      "mySmall": "Kis öblösáru",
+      "myLarge": "Nagy öblösáru",
       "myCooking": "Főzőedények"
     },
     "judged": {
       "average": "6 darab átlaga",
       "each": "a 6 darab bármelyike",
       "averageOf": "{count} darab átlaga",
-      "eachOf": "a(z) {count} közül bármelyik"
+      "eachOf": "a(z) {count} darab bármelyike"
     },
     "euRules": "Itt az EU szabályai érvényesek.",
     "law": "Megállapítja: <link>{law}</link>.",
     "inForce": "Hatálybalépés: {date}.",
     "atMost": "Egy darab akkor felel meg, ha nem oldódik ki belőle több a határértéknél: a jogszabály szövege „legfeljebb”.",
-    "ppm": "A ppm itt milligrammot jelent a vizsgálati oldat literenként (mg/L).",
+    "ppm": "A ppm itt a vizsgálati oldat egy literére jutó milligrammot jelenti (mg/L).",
     "unknown": "{region}: a szabályokat még nem erősítettük meg.",
     "choosePrompt": "Válassza ki az országát, hogy lássa az ottani szabályokat."
   },

@@ -7,7 +7,7 @@
     "welcome": {
       "heading": "Fáilte go Glazecalc",
       "text": "Tá do leabhar nótaí réidh. Céim mhaith ar dtús: clóscríobh glónra a mheascann tú cheana, a ábhair agus a méideanna, agus féach a fhoirmle Seger.",
-      "firstRecipe": "Tosaigh d’oideas céanna",
+      "firstRecipe": "Tosaigh do chéad oideas",
       "confirmHeading": "Do ríomhphost a dheimhniú",
       "confirm": "Deimhnigh do ríomhphost: sheolamar nasc chuig {email}. Tá sé de dhíth ar shíniú isteach dhá chéim. Is féidir le <account>leathanach do chuntais</account> é a sheoladh arís.",
       "confirmText": "Sheolamar nasc chuig {email}. Oscail é chun a dheimhniú gur leatsa an seoladh: tá sé de dhíth ar shíniú isteach dhá chéim. Is féidir le <account>leathanach do chuntais</account> é a sheoladh arís."
