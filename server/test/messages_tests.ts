@@ -11,7 +11,9 @@ describe('messages', () => {
       label: 'recipe',
       palettes: 'tenmoku, ash',
       most: 500,
-      wait: 'hour'
+      wait: 'hour',
+      choices: '7, 30, 90, 365',
+      count: 2
     };
     for (const code of Object.keys(MESSAGES) as MessageCode[]) {
       const text = textOf(code, params);

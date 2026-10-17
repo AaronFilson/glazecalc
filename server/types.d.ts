@@ -1,5 +1,6 @@
 // What the server's middleware adds to Express requests.
 import type { Access, Verified } from './lib/token_auth.ts';
+import type { Caller } from './mcp/common.ts';
 import type { UserDocument } from './models/user.ts';
 
 declare global {
@@ -18,6 +19,8 @@ declare global {
       mfaUserId?: string;
       /** The access token this request carries, checked once (lib/token_auth.ts checkAccessToken). */
       tokenCheck?: { token: string; found: Verified | null };
+      /** Who is calling the MCP endpoint, for its limits (server/mcp/index.ts). */
+      mcpCaller?: Caller;
     }
   }
 }

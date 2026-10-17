@@ -80,3 +80,11 @@ export const revokeAll = async (userId: string | Types.ObjectId, why: RevokedWhy
       { $set: { revokedAt: now, revokedWhy: why } }
     )
   ).modifiedCount;
+
+/** The filter for an account's personal tokens that still work: neither revoked nor expired. */
+export const workingTokens = (userId: string | Types.ObjectId, now = new Date()) => ({
+  userId,
+  kind: 'pat' as const,
+  revokedAt: null,
+  expiresAt: { $gt: now }
+});

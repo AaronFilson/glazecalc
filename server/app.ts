@@ -16,8 +16,10 @@ import guestRoutes from './routes/guest_routes.ts';
 import mfaRoutes from './routes/mfa_routes.ts';
 import emailRoutes from './routes/email_routes.ts';
 import passwordRoutes from './routes/password_routes.ts';
+import tokenRoutes from './routes/token_routes.ts';
 import records from './routes/records.ts';
 import userRoutes from './routes/user_routes.ts';
+import mcpRouter, { metadataRouter } from './mcp/index.ts';
 import { say } from './lib/messages.ts';
 import * as site from './lib/site.ts';
 import {
@@ -103,6 +105,8 @@ api.use('/export', exportRoutes);
 api.use('/guest', guestRoutes);
 api.use('/password', passwordRoutes);
 api.use('/email', emailRoutes);
+// The account's own access tokens: made, listed and revoked with the web session only.
+api.use('/tokens', tokenRoutes);
 // Two-step sign-in: the account's factors (docs/mfa-plan.md).
 api.use('/mfa', mfaRoutes);
 // /signup, /signin, /signout, /verify, /usersettings/:id and /deleteuser/:id
@@ -110,6 +114,11 @@ api.use('/', authRoutes);
 api.use('/', userRoutes);
 api.use((req, res) => res.status(404).json(say('not-found')));
 app.use('/api', api);
+
+// The tools for AI assistants (MCP; docs/adr/0017-mcp-server.md): POST /mcp, with
+// its own checks and limits, and its metadata for clients (RFC 9728).
+app.use('/mcp', mcpRouter);
+app.use('/.well-known', metadataRouter);
 
 // The client. Built file names carry a content hash, so browsers may keep
 // them for a year; index.html must be checked each time to pick up new builds.
