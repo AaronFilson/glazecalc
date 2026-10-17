@@ -234,6 +234,9 @@ type Confirming = 'password' | 'email' | 'delete';
       <section class="auth-text">
         <h2 id="sign-out-heading" tabindex="-1">{{ t('account.account.signOutHeading') }}</h2>
         <p>{{ t('account.account.signOutText') }}</p>
+        @if (tokens.working().length) {
+          <p>{{ t('account.tokens.signOutNote', { count: tokens.working().length }) }}</p>
+        }
         <button
           type="button"
           class="btn btn-outline-secondary"

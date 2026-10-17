@@ -433,6 +433,7 @@
     "done": "I have copied it",
     "keptHeading": "Your access tokens still work",
     "keptText": "{count, plural, one {Changing your password did not stop your access token. If you changed it because someone else may know it, revoke the token too.} other {Changing your password did not stop your # access tokens. If you changed it because someone else may know it, revoke them too.}}",
-    "keep": "Keep them"
+    "keep": "Keep them",
+    "signOutNote": "{count, plural, one {It also stops your access token, for good.} other {It also stops your # access tokens, for good.}}"
   }
 }

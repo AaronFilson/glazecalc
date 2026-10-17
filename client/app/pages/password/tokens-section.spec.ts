@@ -123,6 +123,10 @@ describe('AccountPage access tokens', () => {
     };
     const { fixture } = await create(OFF, list);
     expect(text(fixture, '.tokens-section')).toContain('You have 2 access tokens working');
+    // Signing out everywhere stops them too, and says so.
+    expect((fixture.nativeElement as HTMLElement).textContent).toContain(
+      'It also stops your 2 access tokens, for good.'
+    );
     expect(el(fixture, '#token-name')).toBeNull();
     const old = [...(fixture.nativeElement as HTMLElement).querySelectorAll('.token-row')].find((li) =>
       li.textContent?.includes('Old')
