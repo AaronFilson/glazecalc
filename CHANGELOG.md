@@ -9,7 +9,8 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 - **Access tokens** ([integrations plan](docs/integrations-plan.md), Phase 3): the account page's
   new "Access tokens" section makes a token for your own AI assistant or script, which can read
   your recipes, materials, notebook and firing logs but change nothing. Making one asks for the
-  password, and the second step when two-step sign-in is on; the token is shown once, to copy.
+  password, and the second step when two-step sign-in is on, and only once the account's email is
+  confirmed (the section asks for that first, and sends the link again); the token is shown once, to copy.
   Each stops working after 7, 30, 90 or 365 days (30 unless chosen), up to 10 at once, and can be
   revoked one by one or all together. An email says when one is made and, 7 days ahead, when one
   is about to stop working. After a password change the page lists the tokens still working,
@@ -20,8 +21,14 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   substitutes for old materials, a recipe remade from given materials, and cones and
   temperatures, with cautions in the language asked for. With an access token: your own recipes,
   materials, shelf, notebook, firing logs and settings, and Match with what I have on your shelf.
-  Limited to 60 requests a minute per address (120 per account with a token) and 10 substitutions
-  or matches a minute. A new page, "Use Glazecalc from your AI assistant" (`/assistants`, English
+  `search_guides` finds what the guides say, in the language asked for (English where it has
+  nothing), with addresses to cite; the guides, materials and cone charts are also resources, and
+  four ready-made prompts diagnose a glaze fault, make a recipe lead-free, replace discontinued
+  materials or explain a recipe. Limited to 60 requests a minute and 2,000 a day per address (120
+  and 5,000 per account with a token) and 10 substitutions or matches a minute; the privacy page
+  says so. CI checks the endpoint with the official MCP conformance suite and the MCP Inspector
+  (`npm run test:mcp`), and `server.json` lists it in the MCP Registry as
+  `com.glazecalcapp/glazecalc` once the owner publishes it. A new page, "Use Glazecalc from your AI assistant" (`/assistants`, English
   for now), shows how to add it.
 - **The Trash and Undo.** Removing a recipe, material, note or other record moves it to the Trash,
   where it waits 30 days; the removal notice has Undo, and the Trash page puts records back, deletes

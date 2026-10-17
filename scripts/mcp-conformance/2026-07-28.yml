@@ -1,0 +1,62 @@
+# The conformance suite's expected failures for the 2026-07-28 revision
+# (scripts/mcp-conformance.mjs). Every entry needs something a real server has
+# no reason to carry: the suite's own test tools, prompts and resources
+# (test_simple_text, test://static-text...), or an optional feature Glazecalc
+# does not offer. The suite fails the run if anything else fails, or if one of
+# these starts passing. Keep it that way: add an entry only with its reason.
+server:
+  # The suite's own test tools, prompts and resources.
+  - completion-complete # test_prompt_with_arguments
+  - tools-call-simple-text # test_simple_text
+  - tools-call-image # test_image_content
+  - tools-call-audio # test_audio_content
+  - tools-call-embedded-resource # test_embedded_resource
+  - tools-call-mixed-content # test_multiple_content_types
+  - tools-call-error # test_error_handling
+  - tools-call-with-progress # test_tool_with_progress
+  - resources-read-text # test://static-text
+  - resources-read-binary # test://static-binary
+  - resources-templates-read # test://template/{id}/data
+  - prompts-get-simple # test_simple_prompt
+  - prompts-get-with-args # test_prompt_with_arguments
+  - prompts-get-embedded-resource # test_prompt_with_embedded_resource
+  - prompts-get-with-image # test_prompt_with_image
+  - json-schema-2020-12 # json_schema_2020_12_tool (pending in the suite)
+  # Asking the client for input in the middle of a request (SEP-2322): no tool here asks.
+  - input-required-result-basic-elicitation
+  - input-required-result-basic-sampling
+  - input-required-result-basic-list-roots
+  - input-required-result-request-state
+  - input-required-result-multiple-input-requests
+  - input-required-result-multi-round
+  - input-required-result-non-tool-request
+  - input-required-result-result-type
+  - input-required-result-tampered-state
+  - input-required-result-capability-check
+  - input-required-result-missing-input-response:sep-2322-missing-response-rerequests # warning: asks no input
+  - input-required-result-ignore-extra-params:sep-2322-ignore-unexpected-params # warning: calls the suite's tool
+  # The stateless checks that need the suite's diagnostic tools; the other two dozen must pass.
+  - server-stateless:sep-2575-server-rejects-undeclared-capability # test_missing_capability
+  - server-stateless:sep-2575-missing-capability-http-400 # test_missing_capability
+  - server-stateless:sep-2575-http-server-no-independent-requests-on-stream # test_streaming_elicitation
+  - server-stateless:sep-2575-server-no-log-without-loglevel # test_logging_tool
+  # Warnings (SHOULD), which a baseline counts as failures: the lists of tools and
+  # prompts never change while the server runs, so there is no change to announce.
+  - server-stateless:sep-2575-server-sends-tools-list-changed-on-subscription
+  - server-stateless:sep-2575-server-sends-prompts-list-changed-on-subscription
+  # Custom request headers (SEP-2243, pending in the suite): no tool here declares one.
+  - http-custom-header-server-validation:sep-2243-server-no-xmcp-tool
+  - http-custom-header-server-validation:sep-2243-server-decode-base64
+  - http-custom-header-server-validation:sep-2243-server-validate-param-match
+  - http-custom-header-server-validation:sep-2243-server-reject-invalid-param-chars
+  - http-custom-header-server-validation:sep-2243-server-reject-param-mismatch
+  # The tasks extension (not scored: optional): Glazecalc's tools answer at once.
+  - tasks-lifecycle
+  - tasks-capability-negotiation
+  - tasks-wire-fields
+  - tasks-request-state-removal
+  - tasks-mrtr-input
+  - tasks-request-headers
+  - tasks-dispatch-and-envelope
+  - tasks-required-task-error
+  - tasks-mrtr-composition

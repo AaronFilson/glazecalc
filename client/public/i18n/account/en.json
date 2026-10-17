@@ -419,6 +419,8 @@
     "expiry": "Stops working after",
     "days": "{count, plural, one {# day} other {# days}}",
     "expiryHint": "We email you 7 days before a token stops working.",
+    "confirmEmailFirst": "Before you can make a token, confirm your email: open the link we sent to {email}. We tell you at that address when a token is made and before one stops working.",
+    "resend": "Send the confirmation link again",
     "scopeNote": "The token can read your records but not change them.",
     "confirmStep": "To make the token, confirm it is you.",
     "create": "Make the token",

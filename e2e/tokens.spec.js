@@ -1,9 +1,18 @@
 const { test, expect } = require('@playwright/test');
-const { API, signUpAndSignIn } = require('./helpers');
+const { API, confirmedAccount, signUpAndSignIn } = require('./helpers');
+const { confirmLink, nextEmail } = require('./mail');
 
 // The account page's "Access tokens" (docs/integrations-plan.md, item 27):
 // made with the password, shown once, working on the records and the MCP
 // endpoint, listed, revoked; and offered for revoking after a password change.
+// Only an account whose email is confirmed makes one.
+
+/** Signed in on the page with an account whose email is confirmed. */
+const confirmedOnPage = async (page) => {
+  const account = await confirmedAccount(page.request);
+  await page.addInitScript(() => globalThis.localStorage.setItem('session', 'account'));
+  return account;
+};
 
 const makeToken = async (page, name, password = 'password123') => {
   const section = page.locator('.tokens-section');
@@ -15,8 +24,26 @@ const makeToken = async (page, name, password = 'password123') => {
   return section.locator('#new-token').inputValue();
 };
 
+test('asks an account whose email is not confirmed to confirm it first', async ({ page }) => {
+  const { email } = await signUpAndSignIn(page);
+  await page.goto('/account');
+  const section = page.locator('.tokens-section');
+  await expect(section.locator('.needs-email')).toContainText(
+    'Before you can make a token, confirm your email: open the link we sent to ' + email
+  );
+  await expect(section.getByLabel('Name', { exact: true })).toHaveCount(0);
+  await nextEmail(email);
+  await section.getByRole('button', { name: 'Send the confirmation link again' }).click();
+  await expect(section).toContainText('We have sent a new link');
+  expect(confirmLink(await nextEmail(email, 1))).toContain('/confirm-email#token=');
+  // The server refuses one all the same.
+  const res = await page.request.post(API + '/tokens', { data: { name: 'x', password: 'password123' } });
+  expect(res.status()).toBe(403);
+  expect((await res.json()).code).toBe('token-needs-confirmed-email');
+});
+
 test('makes a read-only token, shows it once, and revokes it', async ({ page, request }) => {
-  await signUpAndSignIn(page);
+  await confirmedOnPage(page);
   await page.goto('/account');
   const section = page.locator('.tokens-section');
   await expect(section.getByRole('heading', { name: 'Access tokens' })).toBeVisible();
@@ -65,7 +92,7 @@ test('makes a read-only token, shows it once, and revokes it', async ({ page, re
 });
 
 test('offers to revoke the tokens still working after a password change', async ({ page, request }) => {
-  await signUpAndSignIn(page);
+  await confirmedOnPage(page);
   await page.goto('/account');
   const first = await makeToken(page, 'Cursor');
   await page.locator('.tokens-section').getByRole('button', { name: 'I have copied it' }).click();

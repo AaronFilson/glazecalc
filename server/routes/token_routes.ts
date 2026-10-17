@@ -6,14 +6,16 @@
 //                           { tokens: [TokenRow], expiryDays, defaultDays, most, scopes }
 //   POST   /api/tokens      { name, days, scope?, password, and with two-step sign-in on a current
 //                           factor (lib/mfa.d.ts IdentityProof) } makes one: 201 with
-//                           { ...say('token-made'), token: the token itself, shown this once, row: TokenRow }
+//                           { ...say('token-made'), token: the token itself, shown this once, row: TokenRow };
+//                           403 token-needs-confirmed-email before the email is confirmed
 //   DELETE /api/tokens/:id  revokes one: 200 say('token-revoked'), 404 when it is not the account's
 //   DELETE /api/tokens      revokes every token and connected app still working: say('tokens-revoked', { count })
 //
 // Making one confirms the owner as any other change to how the account is
 // reached does (decision 6): the password, and a factor once two-step sign-in
 // is on. Revoking needs only the session: it takes access away, never gives it.
-// A trial makes none (decision 9). The token is never logged and never kept:
+// A trial makes none (decision 9), nor an account whose email is not yet
+// confirmed: 403 token-needs-confirmed-email. The token is never logged and never kept:
 // only its hash and last four characters are (server/models/access_token.ts).
 import express from 'express';
 import mongoose from 'mongoose';
@@ -107,6 +109,8 @@ tokenRouter.post('/', jwtAuth, notGuest, limits.passwordCheck, express.json(), a
   if (!isScope(scope) || !OFFERED_SCOPES.includes(scope)) {
     return res.status(400).json(say('token-scope-choices', undefined, { field: 'scope' }));
   }
+  // Only to an address the owner has confirmed (owner decision): the notices about tokens go there.
+  if (userOf(req).emailUnverified) return res.status(403).json(say('token-needs-confirmed-email'));
   const userId = userOf(req)._id;
   if ((await AccessToken.countDocuments(workingTokens(userId))) >= MAX_PATS) {
     return res.status(409).json(say('token-limit', { most: MAX_PATS }));

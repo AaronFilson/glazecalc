@@ -64,6 +64,12 @@ jobs:
       - name: Mail forwarder tests
         run: npm run test:forwarder
 
+      # The official MCP conformance suite (2026-07-28 and 2025-11-25) and the
+      # MCP Inspector against /mcp on a server of its own, at the exact versions
+      # pinned in scripts/mcp-conformance.mjs (about a minute, mostly downloading them).
+      - name: MCP conformance
+        run: npm run test:mcp
+
       - name: Client unit tests
         run: npm run test:client
 

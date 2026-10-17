@@ -145,6 +145,7 @@ export const MESSAGES = {
   'token-name': 'Please give the token a name of 1 to {most} characters.',
   'token-expiry-choices': 'Please choose when the token expires: after {choices} days.',
   'token-scope-choices': 'For now a token can only read your records.',
+  'token-needs-confirmed-email': 'Please confirm your email before making an access token.',
   'token-limit': 'An account can have up to {most} access tokens at once. Please revoke one you no longer use first.',
   'token-made': 'Your access token is ready. Copy it now: it will not be shown again.',
   'token-revoked': 'The access token was revoked. It no longer works.',

@@ -1,6 +1,6 @@
 # 17. AI assistants reach Glazecalc through a stateless MCP endpoint, with personal tokens for their own records
 
-Accepted, 2026-10-16. Phases 2 and 3 of [the integrations plan](../integrations-plan.md): the public
+Accepted, 2026-10-16; the guides, resources, prompts, conformance check and registry listing added 2026-10-17. Phases 2 and 3 of [the integrations plan](../integrations-plan.md): the public
 tools, and read-only personal access tokens. The plan's decisions 3, 4, 5, 6 and 9 are the owner's,
 all as recommended.
 
@@ -39,8 +39,44 @@ an assistant to act for one person that is not their web session.
   (`server/mcp/words.ts`); a language not offered gets English. All are marked read-only. The
   server's instructions tell the assistant that the limit checks are not proof of food safety.
   Nothing a caller sends is stored.
+- **The guides, as a tool and as resources** (`server/mcp/guides.ts`, `server/mcp/tools/guides.ts`):
+  `search_guides` searches the guides' sections in the language asked for (an app language, else
+  English), and the English guides where that language finds nothing, saying so; each hit has the
+  guide and section titles, the anchor, an excerpt of about 240 characters, the address on the site
+  in the caller's language and the section's resource URI. Words are matched without case, accents
+  or common endings ("crawling" finds "crawl"); a section with every word ranks first, its heading
+  counts most, and a list of sources comes last. Resources: `glazecalc://guides/{language}/{guide}`
+  and `.../{guide}/{section}` (Markdown, with the address it comes from), `glazecalc://materials/{name}`
+  (what `get_material` returns) and `glazecalc://cones` (the Orton and SK charts); only the five
+  English guides and the cone charts are listed, the rest are templates with completions. The guides
+  are read from the same Markdown the site shows, with the site's marks settled once for everyone:
+  temperatures in both scales as the source gives them, the parts for Orton cones (search can ask for
+  SK or temperature), and in place of what the site draws for the reader's country, a line pointing
+  to the page. All are cacheable for an hour on the 2026-07-28 revision.
+- **Four prompts** (`server/mcp/prompts.ts`): `diagnose_glaze_fault` (with the fault completed from
+  crawling, crazing, pinholing and the like, and the guides' "Glaze fit and defects" section attached
+  as an embedded resource in the caller's language), `make_lead_free`, `replace_discontinued` and
+  `explain_recipe`. Each is a request in English that names the tools to use in order, repeats that
+  the limit checks are not proof of food safety, and asks for the answer in the language given.
+- **Checked from outside in CI** (`npm run test:mcp`, `scripts/mcp-conformance.mjs`): the official
+  conformance suite, `@modelcontextprotocol/conformance` 0.2.0-alpha.12, runs exactly what the
+  2026-07-28 and 2025-11-25 revisions require against a server of its own, and the MCP Inspector
+  2.9.0's command line lists the tools (with its schema portability check), calls two, lists and
+  reads resources and gets a prompt. Both come through `npx` at exact versions over two weeks old,
+  so they are not dependencies; the run takes about a minute and a half. The scenarios that need the
+  suite's own test tools (`test_simple_text`, `test://static-text` and so on) or optional features
+  Glazecalc does not offer (logging, subscriptions, asking the client for input, the tasks
+  extension) are listed with their reasons in `scripts/mcp-conformance/<revision>.yml`; the suite
+  fails on anything else, and on a listed one that starts passing.
+- **Listed in the MCP Registry as `com.glazecalcapp/glazecalc`** (`server.json`), proved by a DNS TXT
+  record on the domain. The owner publishes it by hand (`deploy/README.md`, "Listing in the MCP
+  Registry"); nothing in CI publishes.
+- **Tokens need a confirmed email.** The notices about tokens go to the account's address, so an
+  account whose address is not yet confirmed is refused a new token (403
+  `token-needs-confirmed-email`, before the password is checked) and the account page asks it to
+  confirm first, with the link sent again on request.
 - **Personal access tokens** (`server/routes/token_routes.ts`, the account page's "Access
-  tokens"): made with the password and, with two-step sign-in on, a second step, as other changes
+  tokens"): made, once the account's email is confirmed, with the password and, with two-step sign-in on, a second step, as other changes
   to how the account is reached are ([ADR 14](0014-two-step-sign-in.md), decision 6); shown once;
   stored as a SHA-256 hash and a four-character hint (wave 1's `access_token.ts`). Every token
   expires: 7, 30, 90 or 365 days, 30 by default, never "never". At most 10 work at once; trials
@@ -85,6 +121,10 @@ an assistant to act for one person that is not their web session.
 - The emails about tokens, the account page's strings and the "Use Glazecalc from your AI
   assistant" page are in English until the next translation wave; that page joins the sitemap
   with its translations.
-- Still to do from the plan: `search_guides`, resources and prompts (items 20 and 21), the
-  conformance suite and an Inspector smoke test in CI (item 24), `server.json` and the registry
-  name (item 25).
+- Assistants can cite the guides by address, in the person's language where it is translated.
+- The conformance suite is still in alpha: a new version can add required scenarios, so it is
+  pinned and moved by hand, like the SDK.
+- The registry listing must be republished, with a higher `version`, whenever `server.json` changes.
+- Not built: the plan's `/.well-known/mcp-registry-auth` route, which the DNS proof makes
+  unneeded. The prompts' requests and the resources' line about the parts drawn by country are in
+  English, as the tools' descriptions are.

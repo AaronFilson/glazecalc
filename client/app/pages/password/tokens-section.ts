@@ -13,6 +13,7 @@ import { FormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
 import { TranslocoDirective, translate } from '@jsverse/transloco';
 import type { IdentityProof, MfaSummary } from '../../../../lib/mfa';
+import { AuthService } from '../../core/auth.service';
 import { errorMessage } from '../../core/error-message';
 import { TokenRow, TokensService } from '../../core/tokens.service';
 import { DatePipe } from '../../shared/format-pipes';
@@ -42,7 +43,8 @@ const nameCheck =
  * how the account is reached do. The new token is shown once, to copy; the
  * list shows each token's name, last characters, dates and whether it still
  * works, with Revoke and Revoke all. A trial has no section (the account page
- * leaves it out).
+ * leaves it out), and an account whose email is not yet confirmed is asked
+ * to confirm it first, with the link sent again on request.
  */
 @Component({
   selector: 'gc-tokens-section',
@@ -138,7 +140,18 @@ const nameCheck =
         }
 
         <h3 class="h5 mt-4" id="token-create-heading">{{ t('account.tokens.createHeading') }}</h3>
-        @if (service.working().length >= list.most) {
+        @if (auth.unverified()) {
+          <!-- Only with a confirmed email (owner decision): the server refuses one before. -->
+          <p class="needs-email">{{ t('account.tokens.confirmEmailFirst', { email: auth.email() }) }}</p>
+          <button
+            type="button"
+            class="btn btn-light border resend-confirmation"
+            [attr.aria-disabled]="busy() || null"
+            (click)="resend()"
+          >
+            {{ t('account.tokens.resend') }}
+          </button>
+        } @else if (service.working().length >= list.most) {
           <p class="help-text">{{ t('account.tokens.limit', { most: list.most }) }}</p>
         } @else {
           <form class="account-form" (ngSubmit)="start()">
@@ -248,6 +261,7 @@ const nameCheck =
 })
 export class TokensSection implements OnInit {
   protected readonly service = inject(TokensService);
+  protected readonly auth = inject(AuthService);
   private readonly injector = inject(Injector);
   /** The two-step sign-in section's summary, once it has loaded: whether a second step is asked for too. */
   readonly mfa = input<MfaSummary | null>(null);
@@ -303,6 +317,11 @@ export class TokensSection implements OnInit {
           this.confirming.set(false);
           this.checks.report('name', errorMessage(err, translate('account.tokens.failed')));
           return;
+        case 'token-needs-confirmed-email':
+          this.auth.unverified.set(true);
+          this.confirming.set(false);
+          this.notices.error(errorMessage(err, translate('account.tokens.failed')));
+          return;
         case 'token-limit':
         case 'token-expiry-choices':
         case 'token-scope-choices':
@@ -333,6 +352,19 @@ export class TokensSection implements OnInit {
     this.made.set(null);
     this.copied.set('');
     afterNextRender(() => document.getElementById('tokens-heading')?.focus(), { injector: this.injector });
+  }
+
+  /** Sends the confirmation link again, as the account page's own "Confirm your email" does. */
+  protected async resend(): Promise<void> {
+    if (this.busy()) return;
+    this.busy.set(true);
+    try {
+      this.notices.success(await this.auth.resendVerification());
+    } catch (err) {
+      this.notices.error(errorMessage(err, translate('account.account.resendFailed')));
+    } finally {
+      this.busy.set(false);
+    }
   }
 
   protected async revoke(token: TokenRow): Promise<void> {

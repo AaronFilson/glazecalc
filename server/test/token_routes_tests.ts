@@ -104,6 +104,24 @@ describe('access tokens: the account page', () => {
     expect(await AccessToken.countDocuments({ userId: user._id })).to.equal(1);
   });
 
+  it('is refused until the account’s email is confirmed, before the password is checked', async () => {
+    const { user, token: session, password } = await makeUser();
+    await User.updateOne({ _id: user._id }, { $set: { emailUnverified: true } });
+    for (const body of [
+      { name: 'Claude Code', password },
+      { name: 'Claude Code', password: 'not-the-password' }
+    ]) {
+      const res = await make(session, body);
+      expect(res).to.have.status(403);
+      expect(res.body.code).to.equal('token-needs-confirmed-email');
+    }
+    expect(await AccessToken.countDocuments({ userId: user._id })).to.equal(0);
+    // Listing still works, and once confirmed, making one does.
+    expect(await api().get('/tokens').set('Authorization', bearer(session))).to.have.status(200);
+    await User.updateOne({ _id: user._id }, { $unset: { emailUnverified: 1 } });
+    expect(await make(session, { name: 'Claude Code', password })).to.have.status(201);
+  });
+
   it('is refused to a trial, and to a token', async () => {
     const trial = await api().post('/guest').send({});
     const trialSession = sessionToken(trial)!;

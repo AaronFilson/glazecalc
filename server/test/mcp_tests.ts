@@ -6,6 +6,9 @@ import standardData from '../../data/index.js';
 import recipe from '../../lib/recipe/index.js';
 import { MOST_LINES, resetFits, FITS_PER_MINUTE } from '../mcp/common.ts';
 import { findMaterial } from '../mcp/library.ts';
+import { SERVER_INFO } from '../mcp/server.ts';
+import { readFileSync } from 'node:fs';
+import * as site from '../lib/site.ts';
 import { hashToken } from '../lib/token_auth.ts';
 import AccessToken from '../models/access_token.ts';
 import User from '../models/user.ts';
@@ -78,6 +81,7 @@ const PUBLIC_TOOLS = [
   'convert_cone_temperature',
   'get_material',
   'match_from_materials',
+  'search_guides',
   'search_materials',
   'suggest_substitutes'
 ];
@@ -110,7 +114,7 @@ describe('MCP: the endpoint', () => {
     expect(answer.status).to.equal(200);
     const result = answer.body!.result as { serverInfo: { name: string }; capabilities: object; instructions: string };
     expect(result.serverInfo.name).to.equal('glazecalc');
-    expect(result.capabilities).to.have.property('tools');
+    expect(result.capabilities).to.include.keys('tools', 'resources', 'prompts', 'completions');
     expect(result.instructions).to.include('not proof that a glaze is food safe');
     expect(answer.headers.get('set-cookie')).to.equal(null);
     expect(answer.headers.get('mcp-session-id')).to.equal(null);
@@ -171,6 +175,22 @@ describe('MCP: the endpoint', () => {
       req.end(JSON.stringify({ jsonrpc: '2.0', id: 1, method: 'ping' }));
     });
     expect(status).to.equal(403);
+  });
+
+  it('is listed for the MCP Registry as the server it is (server.json)', () => {
+    const listing = JSON.parse(readFileSync(new URL('../../server.json', import.meta.url), 'utf8'));
+    expect(listing.$schema).to.match(
+      /^https:\/\/static\.modelcontextprotocol\.io\/schemas\/[\d-]+\/server\.schema\.json$/
+    );
+    // The domain the registry checks is the site's own, reversed.
+    expect(listing.name).to.equal('com.glazecalcapp/glazecalc');
+    expect(listing.version).to.equal(SERVER_INFO.version);
+    expect(listing.title).to.equal(SERVER_INFO.title);
+    // The registry takes at most 100 characters.
+    expect(listing.description.length).to.be.within(1, 100);
+    expect(listing.remotes).to.have.length(1);
+    expect(listing.remotes[0]).to.include({ type: 'streamable-http', url: SERVER_INFO.websiteUrl + '/mcp' });
+    expect(listing.remotes[0].headers[0]).to.include({ name: 'Authorization', isRequired: false, isSecret: true });
   });
 
   it('publishes its Protected Resource Metadata', async () => {
@@ -321,6 +341,193 @@ describe('MCP: the public tools', () => {
     for (const line of result.recipe) if (line.amount > 0) expect(allowed).to.include(line.material);
     const unknown = await call('match_from_materials', { lines: LINES, have: ['Moon dust'] });
     expect(unknown.isError).to.equal(true);
+  });
+});
+
+describe('MCP: the guides, resources and prompts', () => {
+  const result = async (method: string, params: object = {}): Promise<Json> => {
+    const answer = await rpc(method, params);
+    expect(answer.status, JSON.stringify(answer.body)).to.equal(200);
+    expect(answer.body!.error, JSON.stringify(answer.body!.error)).to.equal(undefined);
+    return answer.body!.result as Json;
+  };
+  const read = async (uri: string): Promise<{ mimeType: string; text: string }> =>
+    (await result('resources/read', { uri })).contents[0];
+
+  it('search_guides finds sections, with their excerpts, addresses and resources', async () => {
+    const found = await data('search_guides', { query: 'crawling' });
+    expect(found.language).to.equal('en');
+    expect(found).not.to.have.property('note');
+    expect(found.results.length).to.be.within(1, 5);
+    const defects = found.results.find((hit: Json) => hit.section === 'fit-and-defects');
+    expect(defects).to.include({
+      guide: 'glazing-basics',
+      guideTitle: 'Glazing from first principles',
+      heading: 'Glaze fit and defects',
+      language: 'en',
+      url: site.siteUrl() + '/guides/glazing-basics#fit-and-defects',
+      resource: 'glazecalc://guides/en/glazing-basics/fit-and-defects'
+    });
+    expect(defects.excerpt.toLowerCase()).to.include('crawl');
+    expect(defects.excerpt.length).to.be.below(260);
+    // The site's own marks are made plain.
+    for (const hit of found.results) expect(hit.excerpt).not.to.match(/\{\{|\*\*|:::/);
+
+    // One guide, and a limit.
+    const firing = await data('search_guides', { query: 'cone', guide: 'firing', limit: 2 });
+    expect(firing.results).to.have.length(2);
+    for (const hit of firing.results) expect(hit.guide).to.equal('firing');
+  });
+
+  it('search_guides searches the language asked, and the English guides where it finds nothing', async () => {
+    const german = await data('search_guides', { query: 'Kegel', language: 'de-AT' });
+    expect(german.language).to.equal('de');
+    expect(german.results[0].url.startsWith(site.siteUrl() + '/de/guides/')).to.equal(true);
+    expect(german.results[0].resource).to.match(/^glazecalc:\/\/guides\/de\//);
+
+    const fallback = await data('search_guides', { query: 'dishwasher', language: 'de' });
+    expect(fallback.language).to.equal('en');
+    expect(fallback.note).to.include('English');
+    expect(fallback.results[0].url).to.match(/\/de\/guides\//);
+    expect(fallback.results[0].resource).to.match(/^glazecalc:\/\/guides\/en\//);
+
+    expect((await data('search_guides', { query: 'zzqxv' })).results).to.eql([]);
+    expect((await call('search_guides', { query: '' })).isError).to.equal(true);
+    expect((await call('search_guides', { query: 'cone', guide: 'nope' })).isError).to.equal(true);
+  });
+
+  it('lists the guides and the cone charts as resources, and the templates for the rest', async () => {
+    const { resources } = await result('resources/list');
+    expect(resources.map((r: Json) => r.uri).sort()).to.eql([
+      'glazecalc://cones',
+      'glazecalc://guides/en/firing',
+      'glazecalc://guides/en/glazing-basics',
+      'glazecalc://guides/en/home-safety',
+      'glazecalc://guides/en/making-a-glaze',
+      'glazecalc://guides/en/safe-mixing'
+    ]);
+    for (const resource of resources) {
+      expect(resource.name, resource.uri).to.be.a('string').and.not.equal('');
+      expect(resource.mimeType, resource.uri).to.match(/^(text\/markdown|application\/json)$/);
+    }
+    const { resourceTemplates } = await result('resources/templates/list');
+    expect(resourceTemplates.map((t: Json) => t.uriTemplate).sort()).to.eql([
+      'glazecalc://guides/{language}/{guide}',
+      'glazecalc://guides/{language}/{guide}/{section}',
+      'glazecalc://materials/{name}'
+    ]);
+  });
+
+  it('reads a guide, a section, a material and the cone charts', async () => {
+    const guide = await read('glazecalc://guides/en/firing');
+    expect(guide.mimeType).to.equal('text/markdown');
+    expect(guide.text).to.match(/^# Firing a basic kiln\n/);
+    expect(guide.text).to.include('Source: ' + site.siteUrl() + '/guides/firing');
+    expect(guide.text).to.include('## The kiln sitter');
+    // Both scales, Orton's parts only, and no marks of the site's own.
+    expect(guide.text).to.include('180 °F (100 °C)');
+    expect(guide.text).not.to.match(/\{\{|^:::/m);
+
+    const section = await read('glazecalc://guides/de/firing/kiln-sitter');
+    expect(section.text).to.match(/^# Brennen mit einem einfachen Ofen\n\n## Der Kiln-Sitter\n/);
+    expect(section.text).to.include('Source: ' + site.siteUrl() + '/de/guides/firing#kiln-sitter');
+
+    // Who to call is drawn for the reader's country on the site: the resource says so.
+    const swallowed = await read('glazecalc://guides/en/home-safety/if-something-is-swallowed');
+    expect(swallowed.text).to.include(
+      '(The guide on the website shows who to call for poison advice in your country: ' +
+        site.siteUrl() +
+        '/guides/home-safety#if-something-is-swallowed)'
+    );
+
+    // A language not offered is answered in English.
+    expect((await read('glazecalc://guides/xx/firing')).text).to.match(/^# Firing a basic kiln/);
+
+    const material = JSON.parse((await read('glazecalc://materials/Custer%20Spar')).text);
+    expect(material.name).to.equal(findMaterial('Custer Spar')!.name);
+    expect(material.oxides).to.have.property('SiO2');
+
+    const charts = JSON.parse((await read('glazecalc://cones')).text);
+    expect(charts.orton.cones).to.deep.include({ cone: '6', celsius: 1222, fahrenheit: 2232 });
+    expect(charts.sk.cones.length).to.be.above(30);
+
+    for (const uri of [
+      'glazecalc://guides/en/nope',
+      'glazecalc://guides/en/firing/nope',
+      'glazecalc://materials/Unobtainium',
+      'glazecalc://elsewhere'
+    ]) {
+      const answer = await rpc('resources/read', { uri });
+      expect(answer.body!.error, uri).to.have.property('code');
+    }
+  });
+
+  it('offers four prompts, each naming the tools to use', async () => {
+    const { prompts } = await result('prompts/list');
+    expect(prompts.map((p: Json) => p.name).sort()).to.eql([
+      'diagnose_glaze_fault',
+      'explain_recipe',
+      'make_lead_free',
+      'replace_discontinued'
+    ]);
+    for (const prompt of prompts) {
+      expect(prompt.description, prompt.name).to.have.length.above(40);
+      expect(
+        prompt.arguments.find((a: Json) => a.name === 'recipe'),
+        prompt.name
+      ).to.include({ required: true });
+    }
+
+    const recipeText = 'Custer Spar 40, Silica 30, Whiting 20, EPK 10';
+    const diagnosis = await result('prompts/get', {
+      name: 'diagnose_glaze_fault',
+      arguments: { recipe: recipeText, fault: 'crawling', cone: '6', language: 'de' }
+    });
+    const [ask, guide] = diagnosis.messages;
+    expect(ask.role).to.equal('user');
+    for (const part of [
+      recipeText,
+      'crawling',
+      'fired to 6',
+      'analyze_recipe',
+      'check_limits',
+      'search_guides',
+      'language: "de"',
+      'leach test'
+    ]) {
+      expect(ask.content.text).to.include(part);
+    }
+    expect(guide.content.type).to.equal('resource');
+    expect(guide.content.resource).to.include({
+      uri: 'glazecalc://guides/de/glazing-basics/fit-and-defects',
+      mimeType: 'text/markdown'
+    });
+
+    const leadFree = await result('prompts/get', {
+      name: 'make_lead_free',
+      arguments: { recipe: 'Lead Bisilicate 60, EPK 20, Silica 20', region: 'UK' }
+    });
+    expect(leadFree.messages[0].content.text).to.include('suggest_substitutes');
+    expect(leadFree.messages[0].content.text).to.include('I buy materials in UK.');
+    expect(leadFree.messages[0].content.text).not.to.include('Answer in the language');
+
+    for (const name of ['replace_discontinued', 'explain_recipe']) {
+      const got = await result('prompts/get', { name, arguments: { recipe: recipeText } });
+      expect(got.messages[0].content.text, name).to.include(recipeText);
+    }
+    // The recipe is required.
+    expect((await rpc('prompts/get', { name: 'explain_recipe', arguments: {} })).body!.error).to.have.property('code');
+  });
+
+  it('completes a fault, a guide and a language', async () => {
+    const complete = async (ref: object, argument: object) =>
+      ((await result('completion/complete', { ref, argument })).completion as Json).values;
+    const guides = { type: 'ref/resource', uri: 'glazecalc://guides/{language}/{guide}' };
+    expect(await complete({ type: 'ref/prompt', name: 'diagnose_glaze_fault' }, { name: 'fault', value: 'cr' })).to.eql(
+      ['crawling', 'crazing']
+    );
+    expect(await complete(guides, { name: 'guide', value: 'f' })).to.eql(['firing']);
+    expect(await complete(guides, { name: 'language', value: 'zh' })).to.have.members(['zh-Hans', 'zh-Hant']);
   });
 });
 

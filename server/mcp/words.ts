@@ -14,7 +14,11 @@ import type { Caution, RecipeMessage } from '../../lib/recipe/index.js';
 import languages from '../../lib/regions/languages.js';
 
 const ROOT = path.join(import.meta.dirname, '..', '..');
-const PLACES = [path.join(ROOT, 'dist', 'glazecalc', 'browser', 'i18n'), path.join(ROOT, 'client', 'public', 'i18n')];
+/** Where the app's message files are: the built client first, then the sources. */
+export const PLACES = [
+  path.join(ROOT, 'dist', 'glazecalc', 'browser', 'i18n'),
+  path.join(ROOT, 'client', 'public', 'i18n')
+];
 
 type Flat = Record<string, string>;
 

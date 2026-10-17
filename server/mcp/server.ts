@@ -1,10 +1,13 @@
 // The Glazecalc MCP server (docs/adr/0017-mcp-server.md): a fresh McpServer for
-// each request, as the SDK's stateless serving makes one, with the public tools
-// always and a person's own read tools only when the request carried a working
-// token (server/mcp/auth.ts puts who it is in authInfo.extra).
+// each request, as the SDK's stateless serving makes one, with the public tools,
+// the guides (a tool and resources), the cone charts and materials as resources,
+// and the prompts always, and a person's own read tools only when the request
+// carried a working token (server/mcp/auth.ts puts who it is in authInfo.extra).
 import { McpServer, type McpRequestContext } from '@modelcontextprotocol/server';
 import type { Caller } from './common.ts';
+import { registerPrompts } from './prompts.ts';
 import { registerAccountTools } from './tools/account.ts';
+import { registerGuides } from './tools/guides.ts';
 import { registerPublicTools } from './tools/public.ts';
 
 export const SERVER_INFO = {
@@ -18,7 +21,10 @@ const INSTRUCTIONS =
   'Glazecalc works out ceramic glaze chemistry. Use search_materials to find material names, then analyze_recipe, ' +
   'check_limits, suggest_substitutes or match_from_materials with recipe lines. Amounts can be in any unit the lines ' +
   'share. The limit checks are cautions from published limits, not proof that a glaze is food safe: say so, and ' +
-  'advise a test firing and, for food surfaces, a leach test. With a personal access token, the tools whose names ' +
+  'advise a test firing and, for food surfaces, a leach test. search_guides finds what the guides say about glaze ' +
+  'defects, safety and firing, in the person’s language, with addresses to cite; resources/read gives a guide or ' +
+  'section in full (glazecalc://guides/<language>/<guide>[/<section>]), a material (glazecalc://materials/<name>) ' +
+  'and the cone charts (glazecalc://cones). With a personal access token, the tools whose names ' +
   'say "my" or list_recipes read the person\'s own saved records; they never change anything.';
 
 /** The caller authInfo carries, as server/mcp/index.ts sets it. */
@@ -34,8 +40,13 @@ export const callerOf = (ctx: McpRequestContext): Caller => {
 
 export const makeServer = (ctx: McpRequestContext): McpServer => {
   const caller = callerOf(ctx);
-  const server = new McpServer(SERVER_INFO, { instructions: INSTRUCTIONS, capabilities: { tools: {} } });
+  const server = new McpServer(SERVER_INFO, {
+    instructions: INSTRUCTIONS,
+    capabilities: { tools: {}, resources: {}, prompts: {}, completions: {} }
+  });
   registerPublicTools(server, caller);
+  registerGuides(server);
+  registerPrompts(server);
   registerAccountTools(server, caller);
   return server;
 };

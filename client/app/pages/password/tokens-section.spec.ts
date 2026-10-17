@@ -1,5 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import type { MfaSummary } from '../../../../lib/mfa';
+import { AuthService } from '../../core/auth.service';
 import { PASSKEYS } from '../auth/passkeys';
 import { answer, API, httpMock, NO_TOKENS, settle, testProviders, text } from '../../testing/test-providers';
 import { AccountPage } from './account-page';
@@ -95,6 +96,47 @@ describe('AccountPage access tokens', () => {
     await press(fixture, 'I have copied it');
     expect(el(fixture, '#new-token')).toBeNull();
     expect((fixture.nativeElement as HTMLElement).textContent).not.toContain(token);
+  });
+
+  it('asks an account whose email is not confirmed to confirm it first, and sends the link again', async () => {
+    const { fixture } = await create();
+    const auth = TestBed.inject(AuthService);
+    auth.email.set('potter@example.com');
+    auth.unverified.set(true);
+    await settle(fixture);
+    expect(text(fixture, '.tokens-section .needs-email')).toContain(
+      'Before you can make a token, confirm your email: open the link we sent to potter@example.com.'
+    );
+    expect(el(fixture, '#token-name')).toBeNull();
+    await press(fixture, 'Send the confirmation link again', '.tokens-section');
+    const req = httpMock().expectOne(API + '/email/resend');
+    expect(req.request.method).toBe('POST');
+    req.flush({ msg: 'We have sent a new link to your email.' });
+    await settle(fixture);
+    expect(text(fixture, '.tokens-section')).toContain('We have sent a new link');
+
+    // Once confirmed, the form is there.
+    auth.unverified.set(false);
+    await settle(fixture);
+    expect(el(fixture, '#token-name')).not.toBeNull();
+  });
+
+  it('closes the step when the server says the email is not confirmed yet', async () => {
+    const { fixture } = await create();
+    await type(fixture, 'token-name', 'My laptop');
+    await press(fixture, 'Continue', '.tokens-section');
+    await type(fixture, 'token-confirm-password', 'password123');
+    await press(fixture, 'Make the token');
+    httpMock()
+      .expectOne(API + '/tokens')
+      .flush(
+        { code: 'token-needs-confirmed-email', msg: 'Please confirm your email before making an access token.' },
+        { status: 403, statusText: 'Forbidden' }
+      );
+    await settle(fixture);
+    expect(el(fixture, '#token-confirm-password')).toBeNull();
+    expect(text(fixture, '.tokens-section')).toContain('Please confirm your email before making an access token.');
+    expect(el(fixture, '.tokens-section .needs-email')).not.toBeNull();
   });
 
   it('asks for a second step too while two-step sign-in is on', async () => {

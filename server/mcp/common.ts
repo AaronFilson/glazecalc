@@ -35,7 +35,7 @@ export const lineSchema = z.object({
     .min(1)
     .max(200)
     .describe(
-      'The material, by its name in the Glazecalc library ("Custer Feldspar", "Whiting", "EPK"), or your own name when you give its analysis.'
+      'The material, by its name in the Glazecalc library ("Custer Spar", "Whiting", "EPK"), or your own name when you give its analysis.'
     ),
   amount: z
     .number()
