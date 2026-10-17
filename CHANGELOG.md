@@ -6,6 +6,17 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Added
 
+- **The Trash and Undo.** Removing a recipe, material, note or other record moves it to the Trash,
+  where it waits 30 days; the removal notice has Undo, and the Trash page puts records back, deletes
+  them for good or empties the Trash. Each saved change keeps the version before it (the last 20,
+  for 90 days), and the recipe page's "Saved" notice offers Undo.
+- **Foundations for access tokens** ([integrations plan](docs/integrations-plan.md), Phase 0):
+  one table for personal tokens and OAuth grants (hashed, always expiring), a shared check,
+  `data:read` and `data:write` scopes with default deny (only the record routes take a token), an
+  activity log of what tokens do (90 days, titles only), and revocation of every token by a
+  password reset or "Sign out everywhere". Nothing can make a token yet.
+- **A full Content-Security-Policy from nginx** (`default-src 'self'`), on top of the app's
+  header and the build's `<meta>` policy; the e2e check loads every page under all three.
 - **Two-step sign-in**, optional, on the account page ([ADR 0014](docs/adr/0014-two-step-sign-in.md),
   [plan](docs/mfa-plan.md)). An authenticator app (a QR code or a key to type), passkeys (named,
   renamed and removed, up to ten) and ten recovery codes, shown once. Signing in then takes the
