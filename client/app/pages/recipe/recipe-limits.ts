@@ -215,13 +215,13 @@ export class RecipeLimits {
     const covered = new Set(rows.flatMap((row) => row.oxide.split('+')));
     if (!covered.has('SiO2')) {
       return rows.length
-        ? { key: 'recipe.limits.checksOnly', oxides: listOf(rows.map((row) => limitLabel(row.oxide))) }
+        ? { key: marker('recipe.limits.checksOnly'), oxides: listOf(rows.map((row) => limitLabel(row.oxide))) }
         : null;
     }
     const missing = Object.entries(this.unity())
       .filter(([oxide, moles]) => moles >= MEANINGFUL && !covered.has(oxide))
       .map(([oxide]) => formatFormula(oxide));
-    return missing.length ? { key: 'recipe.limits.notInSet', oxides: listOf(missing) } : null;
+    return missing.length ? { key: marker('recipe.limits.notInSet'), oxides: listOf(missing) } : null;
   });
 
   protected readonly label = limitLabel;
