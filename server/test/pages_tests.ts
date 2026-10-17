@@ -92,9 +92,21 @@ describe('pages in each language', () => {
     expect(sitemap(SITE)).to.include('/tr/');
   });
 
-  it('knows Traditional Chinese, Korean and Simplified Chinese, before their translation is done, without offering them or giving them the plainer notice', () => {
+  it('offers Traditional Chinese, with the standard notice rather than the plainer one', () => {
+    for (const [code, name, english] of [['zh-Hant', '繁體中文', 'Traditional Chinese']]) {
+      const language = languages.languageFor(code);
+      expect(language).to.include({ name, english, dir: 'ltr', live: true });
+      expect(language).not.to.have.property('plainNotice');
+      expect(languages.LIVE_LANGUAGES).to.include(code);
+      const html = pageHtml(HTML, `/${code}/recipe`, SITE);
+      expect(html).to.include(`<html lang="${code}" dir="ltr">`);
+      expect(html).not.to.include('<meta name="robots" content="noindex" />');
+      expect(sitemap(SITE)).to.include(`/${code}/`);
+    }
+  });
+
+  it('knows Korean and Simplified Chinese, before they go live, without offering them or giving them the plainer notice', () => {
     for (const [code, name, english] of [
-      ['zh-Hant', '繁體中文', 'Traditional Chinese'],
       ['ko', '한국어', 'Korean'],
       ['zh-Hans', '简体中文', 'Simplified Chinese']
     ]) {

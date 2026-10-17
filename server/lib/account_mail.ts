@@ -274,6 +274,16 @@ export const RESET: Record<string, Email> = {
       'Bağlantı bir kez kullanılabilir. Bunu siz istemediyseniz bu e-postayı dikkate almayın; parolanız aynı kalır.\n' +
       '\n' +
       '-- \nGlazecalc, {app}\n'
+  },
+  'zh-Hant': {
+    subject: '重設您的 Glazecalc 密碼',
+    text:
+      '有人（希望是您本人）要求重設 Glazecalc 帳戶 {account} 的密碼。\n\n' +
+      '若要設定新密碼，請在 {minutes} 分鐘內開啟這個連結：\n\n' +
+      '{link}\n\n' +
+      '此連結只能使用一次。如果您沒有提出這項要求，請忽略這封電子郵件；您的密碼不會改變。\n' +
+      '\n' +
+      '-- \nGlazecalc, {app}\n'
   }
 };
 
@@ -483,6 +493,14 @@ export const CHANGED: Record<string, Email> = {
     text:
       'Glazecalc hesabı {account} için parola az önce değiştirildi ve oturum açık olan tüm cihazlarda oturum kapatıldı.\n\n' +
       'Bunu siz yaptıysanız başka bir şey yapmanız gerekmez. Siz yapmadıysanız parolanızı hemen şu adresten sıfırlayın: {forgot}\n' +
+      '\n' +
+      '-- \nGlazecalc, {app}\n'
+  },
+  'zh-Hant': {
+    subject: '您的 Glazecalc 密碼已變更',
+    text:
+      'Glazecalc 帳戶 {account} 的密碼剛剛已變更，所有原本已登入的裝置都已登出。\n\n' +
+      '如果這是您本人的操作，就不需要再做任何事。如果不是，請立即到 {forgot} 重設密碼\n' +
       '\n' +
       '-- \nGlazecalc, {app}\n'
   }
