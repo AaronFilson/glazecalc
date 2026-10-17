@@ -128,7 +128,7 @@
     "rightsAsk": "For anything else, such as asking for your data to be held back from use while a mistake is put right, or objecting to how it is used, write to <mail>privacy@glazecalcapp.com</mail>. It is free, and you will have an answer within a month. You will only be asked to show the account is yours, by signing in or by opening a link sent to its address, never for an ID.",
     "rightsComplain": "If you are not satisfied, you can complain to a data protection authority: in the EU, <edpb>the authority in your country</edpb>, and in the UK, the <ico>Information Commissioner's Office</ico>.",
     "storageHeading": "Cookies and browser storage",
-    "storageIntro": "Glazecalc sets one cookie and keeps a few small values in your browser. Each is there for something you asked for: staying signed in, or remembering a choice you made. None tracks you and none is shared, so the law does not require asking first, and there is no cookie banner.",
+    "storageIntro": "Glazecalc sets two cookies, the second only while you sign in with Google or GitHub, and keeps a few small values in your browser. Each is there for something you asked for: staying signed in, signing in with Google or GitHub, or remembering a choice you made. None tracks you and none is shared, so the law does not require asking first, and there is no cookie banner.",
     "storageLabel": "Cookies and browser storage",
     "storageName": "Name",
     "storagePurpose": "What it is for",
