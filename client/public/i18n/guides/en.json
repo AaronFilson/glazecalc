@@ -57,7 +57,7 @@
     "checkedOn": "Checked on:",
     "choosePrompt": "Choose your country to see who to call there.",
     "ministry": "The health ministry's page: <link>{name}</link>.",
-    "reported": "We could not find an official government page that lists these numbers; they are the ones widely reported."
+    "reported": "Official government pages list 113, 114 and 115, but not what each is for; the roles shown follow Circular 22/2014/TT-BTTTT, as secondary pages quote it."
   },
   "density": {
     "sg": "SG {value}",
@@ -92,6 +92,7 @@
     "caption": "The workplace limit for respirable crystalline silica in {region}, an 8-hour average (checked {date})",
     "captionControl": "The yardstick for respirable crystalline silica in the air of a work area in {region} (checked {date})",
     "both": "Quartz and cristobalite",
+    "freeSilica": "Free silica",
     "quartz": "Quartz",
     "cristobalite": "Cristobalite",
     "actionLevel": "Action level",

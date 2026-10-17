@@ -6,7 +6,7 @@ export interface SafetyLine {
   /** For the tel: link. */
   tel: string;
   who: 'public' | 'children';
-  /** 'reported': an emergency number with no official page found, shown with a caution (lib/regions/safety.js). */
+  /** 'reported': an emergency number listed on official pages without its role, shown with a caution (lib/regions/safety.js). */
   status: 'verified' | 'extract' | 'unverified' | 'reported';
   source: string;
   /** YYYY-MM-DD */

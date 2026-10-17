@@ -315,9 +315,10 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   with the account (or trial) like the other settings.
 - **Vietnam as a region** (in English until Vietnamese is translated), firing by temperature until
   you choose otherwise, with the US materials, prices in dong, and numbers and dates as vi-VN.
-  - **Who to call:** 115 for an ambulance, with 113 (police) and 114 (fire). No official government
-    page listing these numbers could be found; they are widely reported, and the page says so
-    plainly, and that a plan to merge them into 113 is under way. No public poison line could be
+  - **Who to call:** 115 for an ambulance, with 113 (police) and 114 (fire). Official government
+    pages list the three numbers but not what each is for, so the roles follow Circular 22/2014 as
+    secondary pages quote it, and the page says so plainly; a plan to merge them into 113, from 2027
+    at the earliest, may change them. No public poison line could be
     confirmed (Bạch Mai's Poison Control Centre gives no hours or callers for its number).
   - **Silica:** QCVN 02:2019/BYT's binding 0.1 mg/m³ for free silica in respirable dust (0.3 in all
     the dust), and **lead and cadmium** under QCVN 12-4:2015/BYT, six kinds of ceramic piece; both

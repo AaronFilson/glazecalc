@@ -509,8 +509,12 @@ export class SettingsSection implements OnInit {
         return '';
       }
     }
-    if (setting.name === 'format' && choice.value === 'auto') {
-      const locale = this.locale.locale();
+    if (setting.name === 'format') {
+      // The date in the calendar chosen now, so Thai shows Gregorian by default and Buddhist when chosen.
+      const locale =
+        choice.value === 'auto'
+          ? this.locale.locale()
+          : formatLocaleFor(this.locale.language(), this.locale.region(), choice.value, this.preferences.calendar());
       try {
         return sampleOf(locale);
       } catch {

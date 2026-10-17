@@ -4,6 +4,8 @@ export type Status = 'verified' | 'secondary' | 'extract' | 'unverified';
 /** The workplace limit for respirable crystalline silica, an 8-hour average, in mg/m³. */
 export interface SilicaLimit {
   quartz: number;
+  /** True where the law's value is for free silica (silic tự do) as a whole, not quartz and cristobalite named (Vietnam's). */
+  freeSilica?: boolean;
   /** Where cristobalite's limit differs from quartz's. */
   cristobalite?: number;
   /**

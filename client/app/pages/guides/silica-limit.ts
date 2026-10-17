@@ -236,6 +236,7 @@ export class SilicaLimit {
   protected firstRow(silica: Limit): string {
     if (silica.formula)
       return silica.cristobalite ? marker('guides.silica.quartzAll') : marker('guides.silica.allFree');
+    if (silica.freeSilica) return marker('guides.silica.freeSilica');
     return silica.cristobalite ? marker('guides.silica.quartz') : marker('guides.silica.both');
   }
 

@@ -534,13 +534,13 @@ describe('Philippines', () => {
 });
 
 describe('Vietnam', () => {
-  it('gives 115, with 113 and 114, and says plainly that no official page lists them', async () => {
+  it('gives 115, with 113 and 114, and says plainly that official pages give no roles', async () => {
     const { element, rows } = await create(PoisonLines, 'VN');
     const calls = [...element.querySelectorAll('a[href^="tel:"]')].map((a) => a.getAttribute('href'));
     expect(calls).toEqual(['tel:115']);
     expect(rows()[0]![2]).toContain('For the police, call 113; for a fire, 114.');
     expect(element.querySelector('.reported')?.textContent).toContain(
-      'We could not find an official government page that lists these numbers'
+      'Official government pages list 113, 114 and 115'
     );
     expect(element.textContent).toContain('We could not confirm a public poison line here.');
   });
