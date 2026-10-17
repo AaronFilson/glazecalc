@@ -56,20 +56,24 @@ const APP_PAGES = [
 ];
 
 // The palettes in Settings, light and dark: contrast of buttons, links, tabs and choices.
-test('every palette, light and dark', async ({ page }) => {
-  test.setTimeout(120000);
-  await signUpAndSignIn(page);
+// One test a palette, so each stays well inside its time as the pages grow.
+test.describe('every palette, light and dark', () => {
   for (const palette of ['tenmoku', 'celadon', 'cobalt', 'oxblood', 'shino', 'ash']) {
-    for (const theme of ['light', 'dark']) {
-      const res = await page.request.put(API + '/preferences', { data: { palette, theme } });
-      expect(res.ok()).toBe(true);
-      for (const path of ['/recipe', '/account']) {
-        await page.goto(path);
-        await expect(page.locator('html')).toHaveAttribute('data-theme', theme);
-        await expect(page.locator('h1')).toBeVisible();
-        await expectNoProblems(page, palette + ' ' + theme + ' ' + path);
+    test(palette, async ({ page }) => {
+      // Four pages, each checked whole: more than the default 30 seconds on a busy machine.
+      test.setTimeout(60000);
+      await signUpAndSignIn(page);
+      for (const theme of ['light', 'dark']) {
+        const res = await page.request.put(API + '/preferences', { data: { palette, theme } });
+        expect(res.ok()).toBe(true);
+        for (const path of ['/recipe', '/account']) {
+          await page.goto(path);
+          await expect(page.locator('html')).toHaveAttribute('data-theme', theme);
+          await expect(page.locator('h1')).toBeVisible();
+          await expectNoProblems(page, palette + ' ' + theme + ' ' + path);
+        }
       }
-    }
+    });
   }
 });
 
