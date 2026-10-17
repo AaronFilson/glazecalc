@@ -54,7 +54,7 @@
     "animals": "動物: {name}",
     "animalsNone": "動物",
     "vet": "かかりつけの獣医に電話してください。",
-    "checkedOn": "確認日:",
+    "checkedOn": "確認した出典:",
     "choosePrompt": "国を選ぶと、その国の連絡先が表示されます。",
     "ministry": "保健省のページ: <link>{name}</link>。"
   },
