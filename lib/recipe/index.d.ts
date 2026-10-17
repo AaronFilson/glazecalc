@@ -5,6 +5,7 @@
 
 export * from './amounts';
 export * from './analysis';
+export * from './blends';
 export * from './checks';
 export * from './cost';
 export * from './hazards';
@@ -14,6 +15,7 @@ export * from './limits';
 export * from './materials';
 export * from './messages';
 export * from './numbers';
+export * from './paste';
 export * from './pool';
 export * from './shelf';
 export * from './slurry';

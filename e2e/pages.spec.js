@@ -48,6 +48,12 @@ test.describe('home and navigation', () => {
     await page.goto('/home');
     await page.locator('.home-card', { hasText: 'Firing logs' }).click();
     await expect(page).toHaveURL(/\/firing$/);
+    await page.goto('/home');
+    await page.locator('.home-card', { hasText: 'Paste in recipes' }).click();
+    await expect(page).toHaveURL(/\/import$/);
+    await page.goto('/home');
+    await page.locator('.home-card', { hasText: 'Blends for test tiles' }).click();
+    await expect(page).toHaveURL(/\/blends$/);
     // Signed in, the site's root address goes home.
     await page.goto('/');
     await expect(page).toHaveURL(/\/home$/);

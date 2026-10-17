@@ -385,7 +385,7 @@ test('with recipes saved, the instructions are one line and the saved recipes co
   await addStandardMaterial(page, 'Silica', 30);
   await save(page);
   await page.goto('/home');
-  await page.locator('.home-card', { hasText: 'Recipes' }).click();
+  await page.locator('.home-card', { has: page.getByRole('heading', { name: 'Recipes', exact: true }) }).click();
   await expect(page).toHaveURL(/\/recipe#saved-recipes$/);
   await expect(page.getByRole('heading', { name: 'How to use the recipe calculator' })).toHaveCount(0);
   await expect(page.getByRole('button', { name: 'How the recipe calculator works' })).toBeVisible();

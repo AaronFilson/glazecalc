@@ -48,6 +48,27 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   mix ticket handed to someone shows no prices unless chosen. It gives the cost of the batch size
   printed and the cost per kg or lb, names materials with no price, and fetches no prices unless
   ticked.
+- **Paste in recipes** (`/import`, linked from the recipe page). Paste recipes copied from a website
+  (Glazy, Digitalfire), a spreadsheet (tab, semicolon or comma columns, CSV quotes) or notes: each
+  line is read as a material and its amount, before or after the name, in percent, parts, grams,
+  kilograms, pounds or ounces, with decimal commas as the reader's settings write them. Colorants
+  marked "+" or under a heading such as "Additions" (in many languages) are additions; titles,
+  firing notes, totals and column headings are told apart; several recipes in one paste are split
+  at their titles or a line of dashes. Each line shows the material it was taken for (by name,
+  another name, or a best guess to check), or asks for a choice where several are close or none is
+  found; any line can take another material or amount, or be left out. Nothing is saved until
+  Save, and a trial's or an account's limit stops the saving where the server says so. The reading
+  and matching are pure functions in `lib/recipe/paste.js`.
+  A generic word ("Kaolin", "Ball clay", "Feldspar", "Frit", "Zircopax" and other makers' names for
+  zircon) is never matched to one product: the library's products of that kind are offered as a
+  choice, most common first, from the table in `lib/recipe/generic-names.js`. A name or alias the
+  library has exactly (such as "Silica" or "Whiting") still wins.
+- **Home cards for Paste in recipes and Blends for test tiles**, beside the other sections.
+- **Blends for test tiles** (`/blends`, from the recipe page and each saved recipe's More). A line
+  blend between two saved recipes, a biaxial blend between four or a triaxial blend between three,
+  up to 21 tiles in a line, 8 by 8 or 11 rows: the tiles drawn as they are laid out and numbered,
+  a list of what to weigh for each tile for a chosen test batch, to print, and the tiles chosen
+  saved as recipes in percent. The tiles and their recipes come from `lib/recipe/blends.js`.
 - **The Trash and Undo.** Removing a recipe, material, note or other record moves it to the Trash,
   where it waits 30 days; the removal notice has Undo, and the Trash page puts records back, deletes
   them for good or empties the Trash. Each saved change keeps the version before it (the last 20,

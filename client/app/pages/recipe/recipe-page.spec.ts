@@ -939,7 +939,12 @@ describe('RecipePage', () => {
     more.click();
     await fixture.whenStable();
     expect(more.getAttribute('aria-expanded')).toBe('true');
-    expect(text(fixture, '#more-actions-r9')).toBe('Print Compare Remove');
+    expect(text(fixture, '#more-actions-r9')).toBe('Print Compare Blend Remove');
+    const blend = fixture.nativeElement.querySelector('#more-actions-r9 a') as HTMLAnchorElement;
+    expect([blend.getAttribute('aria-label'), blend.getAttribute('href')]).toEqual([
+      'Make a blend from Matte 9',
+      '/blends?recipe=r9'
+    ]);
   });
 
   it('stops filtering the saved recipes when the filter box goes', async () => {

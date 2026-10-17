@@ -26,6 +26,8 @@ export const APP_PAGES = [
   '/confirm-email',
   '/home',
   '/recipe',
+  '/import',
+  '/blends',
   '/material',
   '/additive',
   '/firing',
