@@ -81,6 +81,11 @@ describe('share links', () => {
     return res.body as { secret: string; createdAt: string; includeNotes: boolean };
   };
 
+  it("are found by the owner's id with an index, as the account page, stopping them all and deleting ask", async () => {
+    const indexes = await ShareLink.collection.indexes();
+    expect(indexes.some((index) => JSON.stringify(index.key) === '{"ownedBy":1}')).to.equal(true);
+  });
+
   it('need an account, signed in on the website', async () => {
     expect(await api().post('/share/recipe/' + recipeId)).to.have.status(401);
     expect(await api().get('/share/recipe/' + recipeId)).to.have.status(401);

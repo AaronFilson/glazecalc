@@ -33,6 +33,11 @@ describe('access tokens: format and storage', () => {
     expect(kindOf('')).to.equal(null);
   });
 
+  it("are found by the account's id with an index, as the account page, revoking and deleting ask", async () => {
+    const indexes = await AccessToken.collection.indexes();
+    expect(indexes.some((index) => JSON.stringify(index.key) === '{"userId":1}')).to.equal(true);
+  });
+
   it('stores only the hash and hint, never the token', async () => {
     const { user } = await makeUser();
     const token = await makeToken(user);
