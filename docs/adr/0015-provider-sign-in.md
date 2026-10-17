@@ -67,15 +67,19 @@ unconfirmed ones, exist.
   sign-in or changing its factors, and linking or unlinking a provider each need the owner to
   sign in again with a provider already linked to the account, in place of the password:
   - `POST /api/auth/:provider/reauth` (signed in, no password of its own, the provider linked)
-    starts a provider sign-in like linking does, with the account and its `tokenVersion` on the
-    record. The callback accepts only a provider subject linked to **that** account
+    starts a provider sign-in like linking does, with the account, its `tokenVersion` and the
+    **sign-in session** that started it on the record: the SHA-256 of that session's token
+    (`sessionKeyOf`, `server/lib/jwt_auth.ts`; each sign-in token carries a random `sid`, so no
+    two are alike). Linking from the account page records it too. The callback accepts only a provider subject linked to **that** account
     (`provider-reauth-other` otherwise) and notes when the answer came;
-  - `POST /api/auth/finish`, from the same browser (the provider cookie) and the same account
-    still signed in as it was, within 5 minutes of the provider's answer, gives a **grant**: a
-    random value the page keeps in memory, stored only as its SHA-256 (an `AuthChallenge` of
-    kind `change-grant`, purpose `provider-reauth`, `server/lib/change_grant.ts`), good until 5
-    minutes after the provider's answer while the account's `tokenVersion` is unchanged; a newer
-    one replaces it;
+  - `POST /api/auth/finish`, from the same browser (the provider cookie) and the same sign-in
+    session (not merely the same account), within 5 minutes of the provider's answer, gives a
+    **grant**: a random value the page keeps in memory, stored only as its SHA-256 (an
+    `AuthChallenge` of kind `change-grant`, purpose `provider-reauth`,
+    `server/lib/change_grant.ts`) **with the session's hash**, good until 5 minutes after the
+    provider's answer while the account's `tokenVersion` is unchanged, and **only for requests
+    from that session**: another browser signed in to the same account, or a session renewed
+    since, cannot spend it; a newer one replaces it;
   - the change sends `reauth` in place of `password` (`lib/mfa.d.ts` `OwnerProof`), and
     `factors.confirmIdentity` takes the grant **once**, atomically, only after the rest has
     passed (so a wrong code leaves it for another try); with two-step sign-in on, a current

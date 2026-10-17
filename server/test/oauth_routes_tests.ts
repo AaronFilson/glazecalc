@@ -479,6 +479,16 @@ describe('signing in with Google and GitHub', () => {
       expect((await User.findById(user._id).lean())!.identities).to.eql(undefined);
     });
 
+    it('finishes a link only in the sign-in session that started it', async () => {
+      const { user, token, password } = await makeUser();
+      const res = await linkStart('google', token, { password });
+      const flow = { location: res.body.location as string, cookie: oauthCookie(res)! };
+      await callback('google', flow, { sub: subject(), email: uniqueEmail('s'), emailVerified: true });
+      const otherSession = (await User.findById(user._id))!.generateToken();
+      expect((await finish(flow.cookie, otherSession)).body.code).to.eql('provider-expired');
+      expect((await User.findById(user._id).lean())!.identities).to.eql(undefined);
+    });
+
     it("signs out the account's other sessions when linking and when unlinking, but keeps this one", async () => {
       const { user, token, email, password } = await makeUser();
       const other = user.generateToken();
@@ -650,6 +660,29 @@ describe('signing in with Google and GitHub', () => {
       // A trial has nothing to confirm with.
       const trial = sessionToken(await api().post('/guest'))!;
       expect(await reauthStart('google', trial)).to.have.status(403);
+    });
+
+    it('is good only in the sign-in session that started it, not another of the same account', async () => {
+      const { sub, email, user, token } = await madeWith();
+      const identity = { sub, email, emailVerified: true };
+      // Another browser signed in to the same account (or a stolen copy of its session made anew).
+      const otherSession = (await User.findById(user._id))!.generateToken();
+      expect(otherSession).to.not.eql(token);
+
+      // Started in one session, finished in the other: nothing given.
+      const crossed = await reauth('google', token, identity, otherSession);
+      expect(crossed.done.body.code).to.eql('provider-expired');
+      expect(crossed.done.body.reauth).to.eql(undefined);
+
+      // A grant from one session does nothing in the other, and stays good in its own.
+      const grant = await grantOf('google', token, sub, email);
+      const elsewhere = await api()
+        .post('/email/change')
+        .set(bearer(otherSession))
+        .send({ email: uniqueEmail('moved'), reauth: grant });
+      expect(elsewhere.body.code).to.eql('provider-reauth-needed');
+      expect((await deleteAs(user, otherSession, { reauth: grant })).body.code).to.eql('provider-reauth-needed');
+      expect(await deleteAs(user, token, { reauth: grant })).to.have.status(200);
     });
 
     it('runs out after 5 minutes, and when the account signs out everywhere', async () => {

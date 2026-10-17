@@ -46,9 +46,9 @@
 // a fresh sign-in with one of its providers instead (integrations-plan item
 // 13): the reauth route starts one bound to the account and its session; the
 // callback accepts only a provider account linked to it; finish, for the same
-// account still signed in as it was, gives a grant (server/lib/change_grant.ts,
-// purpose 'provider-reauth') good for one change within GRANT_MINUTES of the
-// provider's answer, which factors.confirmIdentity takes in place of the
+// account still signed in as it was, in the same sign-in session, gives a grant
+// (server/lib/change_grant.ts, purpose 'provider-reauth') good for one change
+// within GRANT_MINUTES of the provider's answer, from that session only, which factors.confirmIdentity takes in place of the
 // password. A second step still follows when two-step sign-in is on.
 import express, { type Request, type Response } from 'express';
 import type { Types } from 'mongoose';
@@ -58,7 +58,7 @@ import * as accountMail from '../lib/account_mail.ts';
 import * as email from '../lib/email.ts';
 import { notGuest } from '../lib/guest_limits.ts';
 import * as changeGrant from '../lib/change_grant.ts';
-import jwtAuth, { currentUser, keepsSignIn, userOf } from '../lib/jwt_auth.ts';
+import jwtAuth, { currentUser, keepsSignIn, sessionKeyOf, userOf } from '../lib/jwt_auth.ts';
 import * as log from '../lib/log.ts';
 import { MESSAGES, say, type MessageCode } from '../lib/messages.ts';
 import { isDuplicateKey } from '../lib/mongo_errors.ts';
@@ -102,7 +102,10 @@ const uidOf = (provider: string, subject: string): string => provider + ':' + su
 const begin = async (
   res: Response,
   provider: oauth.ProviderId,
-  fields: Pick<OAuthLoginFields, 'next' | 'keep' | 'trialId' | 'linkUserId' | 'linkTokenVersion' | 'reauth'>
+  fields: Pick<
+    OAuthLoginFields,
+    'next' | 'keep' | 'trialId' | 'linkUserId' | 'linkTokenVersion' | 'reauth' | 'sessionHash'
+  >
 ): Promise<string> => {
   const key = oauth.randomValue();
   const started = { state: oauth.randomValue(), nonce: oauth.randomValue(), verifier: oauth.randomValue() };
@@ -283,6 +286,14 @@ const link = async (
   return { status: 200, code: 'provider-linked', renewed };
 };
 
+/**
+ * Whether the request comes from the sign-in session that started a link or
+ * a reauth from the account page (the same token, jwt_auth.ts sessionKeyOf):
+ * not merely the same account, and not after the session was renewed.
+ */
+const sameSession = (req: Request, login: OAuthLoginFields): boolean =>
+  Boolean(login.sessionHash) && login.sessionHash === sessionKeyOf(req);
+
 const knownCode = (code: string | undefined): MessageCode =>
   code && code in MESSAGES ? (code as MessageCode) : 'provider-failed';
 
@@ -371,7 +382,8 @@ oauthRouter.post('/finish', limits.oauth, async (req, res) => {
         if (
           !login.linkUserId ||
           !me._id.equals(login.linkUserId) ||
-          (me.tokenVersion || 0) !== login.linkTokenVersion
+          (me.tokenVersion || 0) !== login.linkTokenVersion ||
+          !sameSession(req, login)
         ) {
           return res.status(400).json(say('provider-expired'));
         }
@@ -394,6 +406,7 @@ oauthRouter.post('/finish', limits.oauth, async (req, res) => {
         !login.linkUserId ||
         !me._id.equals(login.linkUserId) ||
         (me.tokenVersion || 0) !== login.linkTokenVersion ||
+        !sameSession(req, login) ||
         !confirmedAt ||
         Date.now() - confirmedAt.getTime() > changeGrant.GRANT_MINUTES * 60 * 1000
       ) {
@@ -406,7 +419,8 @@ oauthRouter.post('/finish', limits.oauth, async (req, res) => {
         { returnDocument: 'after' }
       );
       if (!user) return res.status(400).json(say('provider-expired'));
-      const { grant, expiresAt } = await changeGrant.issue(user, 'provider-reauth', confirmedAt);
+      // Bound to this sign-in session: only its requests can spend it.
+      const { grant, expiresAt } = await changeGrant.issue(user, 'provider-reauth', confirmedAt, login.sessionHash);
       return res
         .status(200)
         .json(say('provider-reauthed', params, { provider, reauth: grant, expiresAt: expiresAt.toISOString() }));
@@ -438,7 +452,8 @@ oauthRouter.post('/:provider/reauth', jwtAuth, notGuest, limits.oauth, express.j
     keep: false,
     linkUserId: me._id,
     linkTokenVersion: me.tokenVersion || 0,
-    reauth: true
+    reauth: true,
+    sessionHash: sessionKeyOf(req)!
   });
   return res.status(200).json({ location });
 });
@@ -464,7 +479,8 @@ oauthRouter.post('/:provider/link', jwtAuth, notGuest, limits.passwordCheck, exp
     next: inLanguageOf(nextPage(body.next), '/account'),
     keep: false,
     linkUserId: check.user._id,
-    linkTokenVersion: check.user.tokenVersion || 0
+    linkTokenVersion: check.user.tokenVersion || 0,
+    sessionHash: sessionKeyOf(req)!
   });
   return res.status(200).json({ location });
 });

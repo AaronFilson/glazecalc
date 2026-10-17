@@ -1,3 +1,4 @@
+import crypto from 'node:crypto';
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
 import mongoose from 'mongoose';
@@ -315,13 +316,22 @@ userSchema.method('comparePassword', function (this: UserDocument, password: str
   return bcrypt.compareSync(password, this.password);
 });
 
-// { id, tv, ss }: the user, their token version, and ss when the sign-in is for
-// this browser session only (server/lib/session.ts), so a renewed cookie keeps its kind.
+// { id, tv, ss, sid }: the user, their token version, ss when the sign-in is for
+// this browser session only (server/lib/session.ts), so a renewed cookie keeps
+// its kind, and a random id, so that no two sign-in tokens are the same even
+// when made in the same second: what is tied to one session (a provider
+// reauth, jwt_auth.ts sessionKeyOf) is tied to that token alone.
 userSchema.method('generateToken', function (this: UserDocument, expiresIn: TokenLifetime = '7d', keep = true) {
-  return jwt.sign({ id: String(this._id), tv: this.tokenVersion || 0, ...(keep ? {} : { ss: true }) }, appSecret, {
-    algorithm: 'HS256',
-    expiresIn
-  });
+  return jwt.sign(
+    {
+      id: String(this._id),
+      tv: this.tokenVersion || 0,
+      ...(keep ? {} : { ss: true }),
+      sid: crypto.randomBytes(12).toString('base64url')
+    },
+    appSecret,
+    { algorithm: 'HS256', expiresIn }
+  );
 });
 
 // One account per email, ignoring case.

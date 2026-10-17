@@ -65,7 +65,7 @@ emailRouter.post(
     // other confirmations use.)
     const twoStep = mfaOn(user);
     // An account with no password of its own: a fresh provider sign-in instead (ADR 15).
-    if (!(await factors.firstProofHeld(user, body))) {
+    if (!(await factors.firstProofHeld(req, user, body))) {
       if (user.passwordless) return res.status(400).json(say('provider-reauth-needed'));
       const code = twoStep && body.password ? 'current-password-wrong' : 'current-password-needed';
       // 400 rather than 401: the user is signed in, and a 401 would sign them out.

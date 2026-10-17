@@ -37,6 +37,12 @@ export interface OAuthLoginFields {
   linkUserId?: mongoose.Types.ObjectId;
   linkTokenVersion?: number;
   reauth?: boolean;
+  /**
+   * Linking or a reauth from the account page: the sign-in session that
+   * started it (jwt_auth.ts sessionKeyOf), which alone can finish it, and a
+   * reauth's grant is then good for that session only.
+   */
+  sessionHash?: string;
   /** 'reauth': when the provider's answer came back, which the grant's 5 minutes count from. */
   confirmedAt?: Date;
   /** What the provider's answer came to; absent until the callback. */
@@ -69,6 +75,7 @@ const oauthLoginSchema = new mongoose.Schema<OAuthLoginFields>(
     linkUserId: { type: mongoose.Schema.Types.ObjectId, index: true },
     linkTokenVersion: Number,
     reauth: Boolean,
+    sessionHash: String,
     confirmedAt: Date,
     outcome: { type: String, enum: ['signin', 'create', 'link-needed', 'link', 'reauth', 'error'] },
     userId: { type: mongoose.Schema.Types.ObjectId, index: true },

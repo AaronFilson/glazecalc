@@ -7,7 +7,7 @@ import type { FactorKind } from '../../lib/mfa.js';
 import * as accountMail from './account_mail.ts';
 import * as changeGrant from './change_grant.ts';
 import * as codeLock from './code_lock.ts';
-import { userOf } from './jwt_auth.ts';
+import { sessionKeyOf, userOf } from './jwt_auth.ts';
 import * as log from './log.ts';
 import * as mfaKey from './mfa_key.ts';
 import * as password from './password.ts';
@@ -141,9 +141,11 @@ const takeConfirmChallenge = async (user: UserDocument, response: unknown): Prom
  * (server/routes/email_routes.ts) ask this first; confirmIdentity checks it
  * again and spends the grant.
  */
-export const firstProofHeld = async (user: UserDocument, body: unknown): Promise<boolean> => {
+export const firstProofHeld = async (req: Request, user: UserDocument, body: unknown): Promise<boolean> => {
   const fields = body && typeof body === 'object' ? (body as { password?: unknown; reauth?: unknown }) : {};
-  if (user.passwordless) return (await changeGrant.find(user._id, fields.reauth, 'provider-reauth')) !== null;
+  if (user.passwordless) {
+    return (await changeGrant.find(user._id, fields.reauth, 'provider-reauth', sessionKeyOf(req))) !== null;
+  }
   return password.matches(fields.password, user.password);
 };
 
@@ -171,7 +173,8 @@ export const confirmIdentity = async (
   let grant: changeGrant.Grant | null = null;
   if (user.passwordless && options.reauth !== false) {
     const reauth = body && typeof body === 'object' ? (body as { reauth?: unknown }).reauth : undefined;
-    grant = await changeGrant.find(user._id, reauth, 'provider-reauth');
+    // Only from the sign-in session that did the provider sign-in (ADR 15).
+    grant = await changeGrant.find(user._id, reauth, 'provider-reauth', sessionKeyOf(req));
     if (!grant) return { ok: false, status: 400, code: 'provider-reauth-needed' };
   } else {
     const typed = body && typeof body === 'object' ? (body as { password?: unknown }).password : undefined;
