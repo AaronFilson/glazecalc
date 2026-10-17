@@ -41,6 +41,13 @@ describe('recipe API', () => {
     expect(res.body.includeAdditives).to.equal(true);
   });
 
+  it('keeps the firing the recipe is for, as a band, and refuses one it does not know', async () => {
+    const res = await create({ ...leach, firing: 'high' });
+    expect(res).to.have.status(200);
+    expect(res.body.firing).to.equal('high');
+    expect(await create({ ...leach, firing: 'cone 10' })).to.have.status(400);
+  });
+
   it('lists all of your recipes, and finds the newest', async () => {
     for (const title of ['First', 'Second', 'Third']) {
       expect(await create({ ...leach, title })).to.have.status(200);

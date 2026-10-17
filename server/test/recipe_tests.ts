@@ -200,6 +200,109 @@ describe('Shared recipe tools', () => {
     expect(checks(1222, banded)).to.include('alkali');
   });
 
+  it('has Hesselberth & Roy’s limits as published, the recipe page’s default, applying at cone 6 and cone 10 only', () => {
+    const hr = recipe.HESSELBERTH_ROY_LIMITS;
+    expect(recipe.DEFAULT_LIMIT_SET).to.equal(hr.id);
+    expect(recipe.LIMIT_SETS[hr.id]).to.equal(hr);
+    expect(recipe.LIMIT_SETS.glazecalc).to.equal(recipe.GLAZECALC_LIMITS);
+    // The article's table, cone 6 then cone 10 (Ceramics Monthly, September 2000).
+    expect(hr.unity.mid).to.deep.equal({
+      'K2O+Na2O': { min: 0.1, max: 0.3 },
+      CaO: { min: 0.2, max: 0.6 },
+      MgO: { min: 0, max: 0.3 },
+      ZnO: { min: 0, max: 0.2 },
+      SrO: { min: 0, max: 0.2 },
+      Al2O3: { min: 0.25, max: 0.4 },
+      B2O3: { min: 0.15, max: 0.35 },
+      SiO2: { min: 2.5, max: 4 }
+    });
+    expect(hr.unity.high).to.deep.equal({
+      'K2O+Na2O': { min: 0.1, max: 0.3 },
+      CaO: { min: 0.3, max: 0.7 },
+      MgO: { min: 0, max: 0.4 },
+      SrO: { min: 0, max: 0.3 },
+      Al2O3: { min: 0.3, max: 0.6 },
+      B2O3: { min: 0, max: 0.3 },
+      SiO2: { min: 3, max: 5 }
+    });
+    expect([1060, 1222, 1240, 1300].map((c) => recipe.bandOf(hr, c))).to.deep.equal(['low', 'mid', 'mid', 'high']);
+    // At low fire it does not apply, rather than stretching cone 6's figures.
+    expect(recipe.unityFor(hr, 'low')).to.equal(null);
+    expect(recipe.limitRows({ SiO2: 3 }, hr, 'low')).to.equal(null);
+    // The app's own set has no high band: cone 10 reads its mid fire figures.
+    expect(recipe.unityFor(recipe.GLAZECALC_LIMITS, 'high')).to.equal(recipe.GLAZECALC_LIMITS.unity.mid);
+  });
+
+  it('gives a row per limit, with the sums added up and the side a value is past', () => {
+    const unity = { K2O: 0.2, Na2O: 0.15, CaO: 0.65, Al2O3: 0.3, B2O3: 0.1, SiO2: 3.2 };
+    const rows = recipe.limitRows(unity, recipe.HESSELBERTH_ROY_LIMITS, 'mid')!;
+    const row = (oxide: string) => rows.find((r) => r.oxide === oxide);
+    expect(row('K2O+Na2O')).to.include({ past: 'above', likely: false, max: 0.3 });
+    expect(row('K2O+Na2O')?.value).to.be.closeTo(0.35, 1e-9);
+    expect(row('CaO')).to.include({ past: 'above' });
+    expect(row('B2O3')).to.include({ past: 'below', min: 0.15 });
+    expect(row('Al2O3')).to.include({ past: null });
+    expect(row('ZnO')).to.include({ value: 0, past: null });
+    // The app's own set has a figure for a likely fault: past it, the row says so.
+    const own = recipe.limitRows({ ...unity, Al2O3: 0.15 }, recipe.GLAZECALC_LIMITS, 'mid')!;
+    expect(own.find((r) => r.oxide === 'Al2O3')).to.include({ past: 'below', likely: true });
+  });
+
+  it('words cone 10 boron in a set’s high band', () => {
+    const lines = [{ material: KAOLIN, amount: '10' }];
+    const unity = { K2O: 0.2, CaO: 0.8, Al2O3: 0.4, B2O3: 0.45, SiO2: 4 };
+    const hr = recipe.HESSELBERTH_ROY_LIMITS;
+    const boron = (celsius: number) =>
+      recipe.pastLimits({ lines, unity, celsius, limitSet: hr }).find((c) => c.check === 'boron-high');
+    expect(english(boron(1300)!.sentences[0])).to.equal(
+      'This is a lot of boron for cone 10 (0.45; this limit set counts 0.30 as high).'
+    );
+    expect(english(boron(1222)!.sentences[0])).to.match(/cone 6/);
+  });
+
+  it('works out the analysis a unity formula implies: mole percent and the point on Stull’s chart', () => {
+    const percent = recipe.molePercent({ CaO: 1, Al2O3: 0.5, SiO2: 3.5, ZnO: 0 });
+    expect(percent).to.deep.equal({ CaO: 20, Al2O3: 10, SiO2: 70 });
+    expect(recipe.molePercent({})).to.deep.equal({});
+    expect(recipe.stullPoint({ SiO2: 3.5, Al2O3: 0.35 })).to.include({ region: 'bright', ratio: 10, crazed: false });
+    expect(recipe.stullPoint({ SiO2: 2.5, Al2O3: 0.6 })?.region).to.equal('matte');
+    expect(recipe.stullPoint({ SiO2: 1.5, Al2O3: 0.9 })?.region).to.equal('unfused');
+    expect(recipe.stullPoint({ SiO2: 3.6, Al2O3: 0.75 })?.region).to.equal('semi-matte');
+    expect(recipe.stullPoint({ SiO2: 6, Al2O3: 0.3 })).to.include({ region: 'underfired', crazed: true });
+    expect(recipe.stullPoint({ SiO2: 9, Al2O3: 0.3 })?.region).to.equal(null);
+    expect(recipe.stullPoint({ SiO2: 3 })).to.equal(null);
+  });
+
+  it('works out a slurry by Brongniart’s formula: dry glaze, water to reach an SG, and a batch', () => {
+    // A litre at SG 1.5 with dry materials at 2.5: 0.5 × 2.5 ÷ 1.5 kg of glaze, the rest water.
+    expect(recipe.dryPerLitre(1.5)).to.be.closeTo(0.8333, 1e-4);
+    const contents = recipe.slurryContents(10, 1.5)!;
+    expect(contents.glaze).to.be.closeTo(8.333, 1e-3);
+    expect(contents.water).to.be.closeTo(6.667, 1e-3);
+    // Thinning 10 L from 1.5 to 1.45: water = 10 × 0.05 ÷ 0.45 kg, whatever the materials.
+    expect(recipe.waterToReach(10, 1.5, 1.45)).to.be.closeTo(1.111, 1e-3);
+    expect(recipe.waterToReach(10, 1.5, 1.45, 2.6)).to.be.closeTo(1.111, 1e-3);
+    // Thickening is water to pour off; the glaze stays the same.
+    const off = recipe.waterToReach(10, 1.4, 1.5)!;
+    expect(off).to.be.closeTo(-2, 1e-9);
+    expect(recipe.slurryContents(10 + off, 1.5)!.glaze).to.be.closeTo(recipe.slurryContents(10, 1.4)!.glaze, 1e-9);
+    // A batch: 5 kg of dry glaze at 1.45, and back again.
+    const batch = recipe.waterForBatch(5, 1.45)!;
+    expect(recipe.slurryContents(batch.litres, 1.45)!.glaze).to.be.closeTo(5, 1e-9);
+    expect(batch.water).to.be.closeTo(batch.litres * 1.45 - 5, 1e-9);
+    expect(recipe.batchForVolume(10, 1.5)).to.deep.equal(contents);
+    // What it cannot take: water, a slurry heavier than its materials, no volume.
+    expect(recipe.dryPerLitre(1)).to.equal(null);
+    expect(recipe.dryPerLitre(2.6)).to.equal(null);
+    expect(recipe.slurryContents(0, 1.5)).to.equal(null);
+    expect(recipe.waterToReach(10, 1.5, 0.9)).to.equal(null);
+    // Densities as potters read them.
+    expect(recipe.sgFromBaume(recipe.baumeFromSg(1.45))).to.be.closeTo(1.45, 1e-12);
+    expect(recipe.sgFromPint(29)).to.equal(1.45);
+    expect(recipe.pintFromSg(1.5)).to.equal(30);
+    expect(recipe.LITRES.usGallon).to.be.closeTo(3.785, 1e-3);
+  });
+
   it('matches a recipe from the materials on hand, saying what changed as codes', () => {
     const lines = [line(POTASH, 40), line(WHITING, 20), line(KAOLIN, 10), line(SILICA, 30)];
     const shelf = [POTASH, WHITING, KAOLIN, SILICA].map((m) => ({ material: m, must: false }));

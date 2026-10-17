@@ -1,4 +1,5 @@
 import type { MaterialField, UmfResult } from '../../../lib/chemistry';
+import type { FiringBand } from '../../../lib/recipe/limits';
 
 /** Records the server stores per user; 'Standard' marks built-in records. */
 export interface Owned {
@@ -105,6 +106,8 @@ export interface Recipe extends Owned {
   computed?: RecipeAnalysis[] | RecipeAnalysis;
   /** Whether the unity formula counts the additives too. */
   includeAdditives?: boolean;
+  /** The firing it is for, as a band (lib/recipe/limits.js): cone 06-02, cone 4-6 or cone 9-11. */
+  firing?: FiringBand;
 }
 
 export interface Advice extends Owned {

@@ -48,7 +48,8 @@ export const STORED: ReadonlyArray<{ names: string[]; kind: string; key: string 
       'density',
       'englishTerms',
       'notice',
-      'recipeHelp'
+      'recipeHelp',
+      'limitSet'
     ],
     kind: marker('site.privacy.storageLocal'),
     key: 'settings'

@@ -4,6 +4,7 @@
 // numbers and library from here without the chemistry).
 
 export * from './amounts';
+export * from './analysis';
 export * from './checks';
 export * from './lead';
 export * from './library';
@@ -13,6 +14,7 @@ export * from './messages';
 export * from './numbers';
 export * from './pool';
 export * from './shelf';
+export * from './slurry';
 export * from './suggest';
 export * from './swaps';
 export * from './temperature';

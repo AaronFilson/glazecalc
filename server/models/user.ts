@@ -3,6 +3,7 @@ import jwt from 'jsonwebtoken';
 import mongoose from 'mongoose';
 import regions from '../../lib/regions/index.js';
 import languages from '../../lib/regions/languages.js';
+import limits from '../../lib/recipe/limits.js';
 import appSecret from '../lib/app_secret.ts';
 import { PASSKEY_NAME_MAX } from '../../lib/mfa.js';
 import type { SecondStepMethods } from '../../lib/mfa.js';
@@ -31,6 +32,7 @@ export type TokenLifetime = `${number}d`;
  *   englishTerms   'on' puts the English after key terms in a translated page, for reading English sources
  *   notice         'hidden' once the translation notice is closed
  *   recipeHelp     the recipe page's help: open for an account with no recipes yet ('auto'), or as chosen
+ *   limitSet       the limits the recipe page shows a glaze against (lib/recipe/limits.js): Hesselberth & Roy's or the app's own
  */
 export const PREFERENCES = {
   weightUnit: ['g', 'lb'],
@@ -47,7 +49,11 @@ export const PREFERENCES = {
   density: ['', 'sg', 'baume', 'pint'],
   englishTerms: ['off', 'on'],
   notice: ['shown', 'hidden'],
-  recipeHelp: ['auto', 'shown', 'hidden']
+  recipeHelp: ['auto', 'shown', 'hidden'],
+  limitSet: [
+    limits.DEFAULT_LIMIT_SET,
+    ...Object.keys(limits.LIMIT_SETS).filter((id) => id !== limits.DEFAULT_LIMIT_SET)
+  ]
 } as const;
 export type Preferences = { -readonly [K in keyof typeof PREFERENCES]: (typeof PREFERENCES)[K][number] };
 
@@ -250,7 +256,8 @@ const userSchema = new mongoose.Schema<UserFields, UserModel, UserMethods>({
     density: { type: String, enum: PREFERENCES.density },
     englishTerms: { type: String, enum: PREFERENCES.englishTerms },
     notice: { type: String, enum: PREFERENCES.notice },
-    recipeHelp: { type: String, enum: PREFERENCES.recipeHelp }
+    recipeHelp: { type: String, enum: PREFERENCES.recipeHelp },
+    limitSet: { type: String, enum: PREFERENCES.limitSet }
   },
   shelf: { type: [String], default: undefined },
   tokenVersion: { type: Number, default: 0 },
