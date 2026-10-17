@@ -25,6 +25,7 @@ import mongoose from 'mongoose';
 import { notGuest } from '../lib/guest_limits.ts';
 import jwtAuth, { userOf } from '../lib/jwt_auth.ts';
 import { say } from '../lib/messages.ts';
+import { isDuplicateKey } from '../lib/mongo_errors.ts';
 import * as limits from '../lib/rate_limit.ts';
 import { hashOf, linkOf, newSecret, openShared, stopSharing } from '../lib/share_links.ts';
 import Recipe from '../models/recipe.ts';
@@ -72,12 +73,20 @@ shareRouter.post('/recipe/:id', jsonParser, ownRecipe, async (req, res) => {
   const secret = newSecret();
   const createdAt = new Date();
   const includeNotes = includeNotesIn(req);
-  // One link a recipe: a new one takes the old one's place, in one step.
-  await ShareLink.findOneAndUpdate(
-    { recipeId: req.params.id, ownedBy },
-    { $set: { hash: hashOf(secret), createdAt, includeNotes } },
-    { upsert: true }
-  );
+  // One link a recipe: a new one takes the old one's place, in one step. Two
+  // made at the same moment can both try to insert it; the second then replaces.
+  const replace = () =>
+    ShareLink.updateOne(
+      { recipeId: req.params.id, ownedBy },
+      { $set: { hash: hashOf(secret), createdAt, includeNotes } },
+      { upsert: true }
+    );
+  try {
+    await replace();
+  } catch (err) {
+    if (!isDuplicateKey(err)) throw err;
+    await replace();
+  }
   res.status(200).json({ secret, createdAt, includeNotes });
 });
 

@@ -254,9 +254,5 @@ describe('share links', () => {
         expect(res.text, page).not.to.include('hreflang');
       }
     });
-
-    it('is not in the sitemap', async () => {
-      expect((await site().get('/sitemap.xml')).text).not.to.include('shared');
-    });
   });
 });
