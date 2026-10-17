@@ -5,16 +5,17 @@
 import type { NextFunction, Request, Response } from 'express';
 import jwtAuth from './jwt_auth.ts';
 import { allows, isScope, scopeFor, type Permission } from './scopes.ts';
-import { accessTokenIn, insufficientScope, invalidToken, verifyAccessToken } from './token_auth.ts';
+import { accessTokenIn, checkAccessToken, insufficientScope, invalidToken, touchToken } from './token_auth.ts';
 
 export const requireScope =
   (permission: Permission) =>
   async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     const token = accessTokenIn(req);
     if (token === null) return jwtAuth(req, res, next);
-    const found = await verifyAccessToken(token);
+    const found = await checkAccessToken(req, token);
     if (!found) return invalidToken(res);
     if (!allows(found.token.scopes, permission)) return insufficientScope(res, scopeFor(permission));
+    await touchToken(found.token);
     req.user = found.user;
     req.access = {
       via: found.token.kind === 'pat' ? 'pat' : 'oauth',

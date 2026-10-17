@@ -1,7 +1,7 @@
 import type { Request, Response } from 'express';
 import { type Options, rateLimit } from 'express-rate-limit';
 import { type MessageCode, say } from './messages.ts';
-import { accessTokenIn } from './token_auth.ts';
+import { accessTokenIn, checkAccessToken } from './token_auth.ts';
 
 // Limits per client address, unless they say otherwise. In production nginx
 // passes the address in X-Forwarded-For, which server/app.ts trusts for exactly
@@ -20,7 +20,7 @@ const limiter = (
   limit: number,
   code: MessageCode,
   more: Partial<Pick<Options, 'keyGenerator' | 'skipSuccessfulRequests' | 'requestWasSuccessful' | 'handler'>> & {
-    skip?: (req: Request, res: Response) => boolean;
+    skip?: (req: Request, res: Response) => boolean | Promise<boolean>;
   } = {}
 ) => {
   const { skip, ...rest } = more;
@@ -31,7 +31,7 @@ const limiter = (
     legacyHeaders: false,
     message: say(code),
     ...rest,
-    skip: (req, res) => process.env.RATE_LIMITS === 'off' || Boolean(skip?.(req, res))
+    skip: (req, res) => process.env.RATE_LIMITS === 'off' || (skip ? skip(req, res) : false)
   });
 };
 
@@ -87,13 +87,18 @@ export const passwordCheck = limiter(15, 10, 'too-many-attempts', {
 
 /**
  * Access tokens (server/lib/token_auth.ts) that do not work, per address:
- * only requests that carry one are counted, and only those refused with 401,
- * so a script using a good token is never slowed, and guessing tokens (a
- * 2^256 search, and the checksum turns away made-up ones before the database
- * is asked) stops quickly. Once over, no token is checked at all.
+ * only requests that carry one are counted, and only those refused with 401.
+ * A token that works is checked first and never counted or held up, so
+ * someone sending bad tokens from a shared address (a VPN exit, a school)
+ * cannot stop the scripts of others there. Guessing tokens (a 2^256 search;
+ * the checksum turns away made-up ones before the database is asked) stops
+ * quickly: once over, every token that does not work gets 429.
  */
 export const accessTokens = limiter(15, 30, 'too-many-tokens', {
-  skip: (req) => !accessTokenIn(req),
+  skip: async (req) => {
+    const token = accessTokenIn(req);
+    return !token || (await checkAccessToken(req, token)) !== null;
+  },
   requestWasSuccessful: (_req, res) => res.statusCode !== 401,
   skipSuccessfulRequests: true
 });

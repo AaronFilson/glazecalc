@@ -108,11 +108,27 @@ export const verifyAccessToken = async (
   const user = await User.findById(row.userId, { password: 0, mfa: 0 });
   // Trials cannot make tokens (decision 9); a trial with one is refused all the same.
   if (!user || user.guest) return null;
-  if (touch && (!row.lastUsedAt || now.getTime() - row.lastUsedAt.getTime() > LAST_USED_EVERY_MS)) {
-    row.lastUsedAt = now;
-    await AccessToken.updateOne({ _id: row._id }, { $set: { lastUsedAt: now } });
-  }
+  if (touch) await touchToken(row, now);
   return { user, token: row };
+};
+
+/** Records a token's use, at most once a minute. */
+export const touchToken = async (row: AccessTokenDocument, now = new Date()): Promise<void> => {
+  if (row.lastUsedAt && now.getTime() - row.lastUsedAt.getTime() <= LAST_USED_EVERY_MS) return;
+  row.lastUsedAt = now;
+  await AccessToken.updateOne({ _id: row._id }, { $set: { lastUsedAt: now } });
+};
+
+/**
+ * verifyAccessToken without touching, once per request: the rate limit
+ * (limits.accessTokens) checks the token first, and requireScope or
+ * refuseAccessTokens use its answer rather than asking the database again.
+ */
+export const checkAccessToken = async (req: Request, token: string): Promise<Verified | null> => {
+  if (req.tokenCheck?.token === token) return req.tokenCheck.found;
+  const found = await verifyAccessToken(token, { touch: false });
+  req.tokenCheck = { token, found };
+  return found;
 };
 
 // RFC 6750 answers. realm names the site; error_description is plain ASCII,
@@ -155,7 +171,7 @@ export const insufficientScope = (res: Response, scope?: Scope): void => {
 export const refuseAccessTokens = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
   const token = accessTokenIn(req);
   if (token === null) return next();
-  if (await verifyAccessToken(token, { touch: false })) insufficientScope(res);
+  if (await checkAccessToken(req, token)) insufficientScope(res);
   else invalidToken(res);
 };
 

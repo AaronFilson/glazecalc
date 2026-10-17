@@ -284,7 +284,7 @@ describe('access tokens: routes', () => {
     expect(await AccessToken.countDocuments({ userId: user._id, revokedWhy: 'password-reset' })).to.equal(1);
   });
 
-  it('limits tokens that do not work per address, without counting ones that do', async () => {
+  it('limits tokens that do not work per address, without counting or holding up ones that do', async () => {
     process.env.RATE_LIMITS = 'on';
     try {
       const good = await makeToken(user);
@@ -299,6 +299,16 @@ describe('access tokens: routes', () => {
       }
       expect(last).to.have.status(429);
       expect(last!.body.code).to.equal('too-many-tokens');
+      // A token that works, from the same address, is still let in; one that is revoked is not.
+      expect(await api().get('/recipe/getAll').set('Authorization', bearer(good))).to.have.status(200);
+      const revoked = await makeToken(user, { revokedAt: new Date() });
+      expect(await api().get('/recipe/getAll').set('Authorization', bearer(revoked))).to.have.status(429);
+      // Nor is a made-up one checked against the database: still 429.
+      expect(
+        await api()
+          .get('/recipe/getAll')
+          .set('Authorization', bearer(mintToken('pat').token))
+      ).to.have.status(429);
       // A request without a token is not held up.
       expect(await api().get('/recipe/getAll').set('Authorization', bearer(session))).to.have.status(200);
     } finally {
