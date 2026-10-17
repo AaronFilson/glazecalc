@@ -239,6 +239,11 @@ each, and `staging.sh` refuses production's secret. The callbacks are exactly:
       to the password manager).
    7. A second client, "Glazecalc staging", with only
       `https://staging.glazecalcapp.com/api/auth/google/callback`.
+   8. Turn on the **`auth_time` claim** in the Google Auth Platform settings (Google's OpenID
+      Connect page: the claim is sent only when the request asks for it and it is enabled in
+      settings). A fresh sign-in that confirms a change on an account without a password asks
+      Google to sign the person in again (`max_age=0`) and needs `auth_time` to show it did;
+      without the claim every such confirmation is refused (`provider-not-fresh`).
 2. **GitHub** (the owner's account or the organisation: Settings → Developer settings → OAuth
    Apps → New OAuth App), twice:
    - "Glazecalc": homepage `https://glazecalcapp.com`, authorization callback URL
@@ -279,7 +284,8 @@ each, and `staging.sh` refuses production's secret. The callbacks are exactly:
    already reads `/glazecalc/*`, so no policy changes.
 5. Try it: sign in with each on staging, with a new address and with one an account already has
    (it must ask you to sign in first), and with two-step sign-in on (it must ask for the second
-   step).
+   step). With an account made with Google, change its email from the account page: "Sign in
+   again with Google" must ask for the Google password, not only for the account.
 
 Afterwards:
 

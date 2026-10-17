@@ -49,6 +49,8 @@ export interface OAuthLoginFields {
   /** 'error': the message code to show. */
   error?: string;
   expiresAt: Date;
+  /** When it started (a fresh sign-in's provider answer must be newer: auth_time, ADR 15). */
+  createdAt?: Date;
 }
 
 /** How long a provider sign-in may take, start to finish. */

@@ -32,6 +32,8 @@ interface Grant {
   method: string;
   redirectUri: string;
   clientId: string;
+  /** max_age=0 was asked for: the person signed in again just now (auth_time). */
+  signInAgain: boolean;
 }
 
 /** The settings the app needs to use the fake: the client ids and secrets it expects. */
@@ -54,7 +56,7 @@ export class FakeProvider {
   base = '';
   /** Who signs in at the next authorize request, per provider; none answers access_denied. */
   next: Partial<Record<FakeProviderId, FakeIdentity>> = {};
-  /** Changes made to the next ID token, to test that the app refuses it (nonce, aud, iss, exp). */
+  /** Changes made to the next ID token, to test that the app refuses it (nonce, aud, iss, exp, auth_time). */
   tamper: Record<string, unknown> | null = null;
   /** Token requests answered, per provider. */
   tokenRequests: Record<FakeProviderId, number> = { google: 0, github: 0 };
@@ -94,7 +96,8 @@ export class FakeProvider {
       challenge: get('code_challenge'),
       method: get('code_challenge_method'),
       redirectUri: get('redirect_uri'),
-      clientId: get('client_id')
+      clientId: get('client_id'),
+      signInAgain: get('max_age') === '0'
     });
     return { code, state: get('state') };
   }
@@ -164,6 +167,7 @@ export class FakeProvider {
         sub: grant.identity.sub,
         ...(grant.identity.email ? { email: grant.identity.email, email_verified: grant.identity.emailVerified } : {}),
         nonce: grant.nonce,
+        ...(grant.signInAgain && { auth_time: now }),
         iat: now,
         exp: now + 3600,
         ...this.tamper

@@ -85,9 +85,19 @@ unconfirmed ones, exist.
     (`provider-reauth-password`) and a grant does not stand in for its password. Changing the
     password itself never takes a grant: an account without one sets it by the reset email.
 
-  How fresh the sign-in is at the provider is the provider's decision: with a live Google or
-  GitHub session it may be one click. What Glazecalc checks is that the person completed a new
-  round trip through a provider linked to this account, in this browser, moments ago.
+  The sign-in must be fresh at the provider too, as far as each allows:
+  - **Google** is sent `max_age=0` (OpenID Connect: sign the person in again whatever their
+    Google session) and asked for the `auth_time` claim (`claims` parameter; the claim is also
+    turned on in the client's settings, deploy/README.md). The ID token's `auth_time` must be no
+    earlier than the start of this reauth (60 seconds' clock tolerance), or nothing is given
+    (`provider-not-fresh`). Google documents `prompt` as `none`, `consent` and `select_account`
+    only, so there is no `prompt=login` to add;
+  - **GitHub cannot be asked to sign the person in again.** Its authorize endpoint documents no
+    `max_age` and only `prompt=select_account`, which shows the account picker (sent for a
+    reauth, so the person sees which GitHub account answers) but does not ask for the password.
+    With a live GitHub session a GitHub reauth may be one click. **This weaker case is accepted**:
+    the person still completes a new round trip, in this browser, through a GitHub account linked
+    to this account, moments ago, and a second step still follows when two-step sign-in is on.
 
 - **Two-step sign-in still applies.** A provider sign-in to an account with two-step sign-in on
   gets the same pending second step as a password (`server/lib/second_step.ts`), so a provider

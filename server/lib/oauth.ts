@@ -112,7 +112,16 @@ export interface Started {
   state: string;
   nonce: string;
   verifier: string;
+  /**
+   * A fresh sign-in confirming a change (ADR 15): when it started. Google is
+   * asked to sign the person in again (max_age=0) and its answer must say
+   * they did after this (auth_time). GitHub cannot be asked to (ADR 15).
+   */
+  freshSince?: Date;
 }
+
+/** How far the provider's clock may be from ours, in seconds. */
+const CLOCK_TOLERANCE = 60;
 
 /** The provider's sign-in page, for a start. */
 export const authorizeUrl = (provider: ProviderId, started: Started): string => {
@@ -129,8 +138,20 @@ export const authorizeUrl = (provider: ProviderId, started: Started): string => 
   if (provider === 'google') {
     // Only the account id and the email: no name or picture arrives.
     Object.assign(params, { scope: 'openid email', nonce: started.nonce, prompt: 'select_account' });
+    if (started.freshSince) {
+      // Sign the person in again whatever their Google session (OpenID Connect
+      // max_age), and say when in the ID token (auth_time, which Google sends
+      // when asked for and turned on in the client's settings: deploy/README.md).
+      Object.assign(params, {
+        max_age: '0',
+        claims: JSON.stringify({ id_token: { auth_time: { essential: true } } })
+      });
+    }
   } else {
     Object.assign(params, { scope: 'user:email', allow_signup: 'true' });
+    // GitHub has no way to ask for the password again; the account picker at
+    // least shows which GitHub account is answering (ADR 15).
+    if (started.freshSince) params.prompt = 'select_account';
   }
   for (const [name, value] of Object.entries(params)) url.searchParams.set(name, value);
   return url.toString();
@@ -229,8 +250,16 @@ const keyFor = async (url: string, kid: string): Promise<KeyObject> => {
 /** Forgets the fetched keys (the tests' fake provider makes new ones). */
 export const forgetKeys = (): void => keyCache.clear();
 
-/** Checks Google's ID token: its signature, issuer, audience, expiry and the nonce this sign-in sent. */
-const googleIdentity = async (tokens: Record<string, unknown>, nonce: string): Promise<ProviderIdentity> => {
+/**
+ * Checks Google's ID token: its signature, issuer, audience, expiry and the
+ * nonce this sign-in sent, and for a fresh sign-in, that Google signed the
+ * person in after it started (auth_time).
+ */
+const googleIdentity = async (
+  tokens: Record<string, unknown>,
+  nonce: string,
+  freshSince?: Date
+): Promise<ProviderIdentity> => {
   const idToken = tokens.id_token;
   if (typeof idToken !== 'string') throw failed('no ID token');
   const decoded = jwt.decode(idToken, { complete: true });
@@ -245,13 +274,21 @@ const googleIdentity = async (tokens: Record<string, unknown>, nonce: string): P
       algorithms: ['RS256'],
       audience: credentials('google')!.id,
       issuer: issuers as [string, ...string[]],
-      clockTolerance: 60
+      clockTolerance: CLOCK_TOLERANCE
     }) as jwt.JwtPayload;
   } catch (err) {
     throw failed('ID token refused: ' + (err instanceof Error ? err.name : 'error'));
   }
   if (typeof claims.nonce !== 'string' || claims.nonce !== nonce) throw failed('nonce does not match');
   if (typeof claims.sub !== 'string' || !claims.sub) throw failed('no subject');
+  if (freshSince) {
+    const authTime = claims.auth_time;
+    const earliest = freshSince.getTime() / 1000 - CLOCK_TOLERANCE;
+    const latest = Date.now() / 1000 + CLOCK_TOLERANCE;
+    if (typeof authTime !== 'number' || authTime < earliest || authTime > latest) {
+      throw new ProviderError('provider-not-fresh', 'auth_time ' + (typeof authTime === 'number' ? 'old' : 'missing'));
+    }
+  }
   const email = typeof claims.email === 'string' && claims.email ? claims.email.trim().toLowerCase() : null;
   return { subject: claims.sub, email, emailVerified: claims.email_verified === true };
 };
@@ -298,5 +335,5 @@ const githubIdentity = async (tokens: Record<string, unknown>): Promise<Provider
 /** Finishes the provider's part: the code from the callback, swapped and read. */
 export const identify = async (provider: ProviderId, code: string, started: Started): Promise<ProviderIdentity> => {
   const tokens = await exchange(provider, code, started.verifier);
-  return provider === 'google' ? googleIdentity(tokens, started.nonce) : githubIdentity(tokens);
+  return provider === 'google' ? googleIdentity(tokens, started.nonce, started.freshSince) : githubIdentity(tokens);
 };

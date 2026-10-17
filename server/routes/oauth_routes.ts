@@ -106,7 +106,7 @@ const begin = async (
 ): Promise<string> => {
   const key = oauth.randomValue();
   const started = { state: oauth.randomValue(), nonce: oauth.randomValue(), verifier: oauth.randomValue() };
-  await OAuthLogin.create({
+  const login = await OAuthLogin.create({
     keyHash: oauth.sha256(key),
     provider,
     ...started,
@@ -114,7 +114,7 @@ const begin = async (
     expiresAt: new Date(Date.now() + OAUTH_LOGIN_MINUTES * 60 * 1000)
   });
   session.startOAuth(res, key, OAUTH_LOGIN_MINUTES);
-  return oauth.authorizeUrl(provider, started);
+  return oauth.authorizeUrl(provider, { ...started, ...(fields.reauth && { freshSince: login.createdAt }) });
 };
 
 /** The provider named in the address, when it is on here; otherwise the reply has been sent. */
@@ -165,7 +165,12 @@ const resolve = async (
   if (!code || code.length > 2048) return error('provider-failed');
   let identity: oauth.ProviderIdentity;
   try {
-    identity = await oauth.identify(provider, code, { state: '', nonce: login.nonce!, verifier: login.verifier! });
+    identity = await oauth.identify(provider, code, {
+      state: '',
+      nonce: login.nonce!,
+      verifier: login.verifier!,
+      ...(login.reauth && login.createdAt && { freshSince: new Date(login.createdAt) })
+    });
   } catch (err) {
     // What failed, never who: the details name no person.
     log.warn('A provider sign-in did not work', {

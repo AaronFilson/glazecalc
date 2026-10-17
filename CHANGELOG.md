@@ -20,7 +20,8 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   provider (someone who got in may have linked their own), and its notice says they can be linked
   again from the account page; changing the password while signed in keeps them. An account made with a provider, which has no password,
   confirms changing its email, deleting itself, two-step sign-in and linking or unlinking by
-  signing in again with one of its providers: that sign-in counts only for the same account, still
+  signing in again with one of its providers (Google is asked to sign the person in again, and
+  its answer must say it did; GitHub offers no way to ask): that sign-in counts only for the same account, still
   signed in as it was, for one change within 5 minutes, and a second step still follows when
   two-step sign-in is on. Nothing but the provider's id is
   kept: no name, picture or provider token. A trial on the browser comes along into the account.

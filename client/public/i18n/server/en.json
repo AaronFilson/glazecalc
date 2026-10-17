@@ -72,6 +72,7 @@
   "provider-reauth-needed": "This account has no password, so please confirm it is you by signing in again with Google or GitHub, then try again within 5 minutes.",
   "provider-reauth-other": "That {provider, select, google {Google} github {GitHub} other {the provider}} account is not linked to this Glazecalc account, so it cannot confirm a change here.",
   "provider-reauth-password": "This account has a password: please confirm with it instead.",
+  "provider-not-fresh": "{provider, select, google {Google} github {GitHub} other {the provider}} did not ask you to sign in again, so it cannot confirm a change. Please try again.",
   "provider-reauthed": "You signed in again with {provider, select, google {Google} github {GitHub} other {the provider}}. Within 5 minutes, you can confirm one change on this page without a password.",
   "trials-full": "Too many people are trying Glazecalc right now. Please create a free account instead.",
   "trial-failed": "Could not start a trial just now. Please try again.",

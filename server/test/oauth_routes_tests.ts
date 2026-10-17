@@ -748,6 +748,36 @@ describe('signing in with Google and GitHub', () => {
       expect((await reauthStart('google', after)).body.code).to.eql('provider-not-linked');
     });
 
+    it('asks Google to sign the person in again, and refuses an answer that says it did not', async () => {
+      const { sub, email, token } = await madeWith();
+      const plain = new URL((await start('google')).location);
+      expect(plain.searchParams.get('max_age')).to.eql(null);
+      expect(plain.searchParams.get('claims')).to.eql(null);
+      const res = await reauthStart('google', token);
+      const url = new URL(res.body.location as string);
+      expect(url.searchParams.get('max_age')).to.eql('0');
+      expect(JSON.parse(url.searchParams.get('claims')!)).to.eql({ id_token: { auth_time: { essential: true } } });
+
+      // Signed in at Google before the reauth started, or no auth_time at all: no grant.
+      const identity = { sub, email, emailVerified: true };
+      for (const tamper of [{ auth_time: Math.floor(Date.now() / 1000) - 3600 }, { auth_time: undefined }]) {
+        fake.tamper = tamper;
+        const { done } = await reauth('google', token, identity);
+        expect(done.body.code, JSON.stringify(tamper)).to.eql('provider-not-fresh');
+        expect(done.body.reauth).to.eql(undefined);
+      }
+      // A fresh one gives it.
+      expect((await reauth('google', token, identity)).done.body.code).to.eql('provider-reauthed');
+    });
+
+    it("shows GitHub's account picker for a fresh sign-in, which is all GitHub offers", async () => {
+      const { token } = await madeWith('github');
+      expect(new URL((await start('github')).location).searchParams.get('prompt')).to.eql(null);
+      const url = new URL((await reauthStart('github', token)).body.location as string);
+      expect(url.searchParams.get('prompt')).to.eql('select_account');
+      expect(url.searchParams.get('max_age')).to.eql(null);
+    });
+
     it('does not let a provider sign-in change the password', async () => {
       const { sub, email, token } = await madeWith();
       const grant = await grantOf('google', token, sub, email);

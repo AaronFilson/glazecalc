@@ -111,6 +111,7 @@ export const MESSAGES = {
     'This account has no password, so please confirm it is you by signing in again with Google or GitHub, then try again within 5 minutes.',
   'provider-reauth-other': `That ${PROVIDER} account is not linked to this Glazecalc account, so it cannot confirm a change here.`,
   'provider-reauth-password': 'This account has a password: please confirm with it instead.',
+  'provider-not-fresh': `${PROVIDER} did not ask you to sign in again, so it cannot confirm a change. Please try again.`,
   'provider-reauthed': `You signed in again with ${PROVIDER}. Within 5 minutes, you can confirm one change on this page without a password.`,
 
   // Trials.
