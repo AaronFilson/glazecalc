@@ -99,15 +99,16 @@ passwordRouter.post('/reset', limits.resetPassword, express.json(), async (req, 
   const user = reset && (await User.findById(reset.userId));
   if (!user) return res.status(400).json(say('reset-link-bad'));
   // Tokens are revoked first: if saving the password then fails, none is left working.
-  await revokeAll(user._id, 'password-reset');
+  const tokens = await revokeAll(user._id, 'password-reset');
   // As for the tokens: a reset means someone else may have had the password, so every share link stops too.
-  const stopped = await stopAllSharing(user._id);
+  const shareLinks = await stopAllSharing(user._id);
   // The link went to the account's address, so opening it also proves the address is theirs.
   user.emailUnverified = undefined;
   // Every provider link goes; an account made with a provider has the new password instead.
-  const unlinked = [...new Set((user.identities ?? []).map((identity) => identity.provider))];
+  const providers = [...new Set((user.identities ?? []).map((identity) => identity.provider))];
   user.identities = [];
-  await setPassword(user, body.password as string, stopped > 0, unlinked);
+  // One email says what the reset stopped: tokens, provider links and share links.
+  await setPassword(user, body.password as string, { tokens, providers, shareLinks });
   return res.status(200).json(say('password-reset'));
 });
 
@@ -149,13 +150,8 @@ passwordRouter.put(
 );
 
 // Saves a new password, signs out every device, cancels open reset links and
-// tells the account's owner: with the providers a reset unlinked, when it did.
-async function setPassword(
-  user: UserDocument,
-  newPassword: string,
-  linksStopped = false,
-  unlinked: string[] = []
-): Promise<void> {
+// tells the account's owner: after a reset, with what the reset stopped.
+async function setPassword(user: UserDocument, newPassword: string, reset?: accountMail.ResetStopped): Promise<void> {
   user.password = await password.hash(newPassword);
   // An account made with a provider has a password of its own from now on.
   user.passwordless = undefined;
@@ -165,9 +161,9 @@ async function setPassword(
   // Not to an address nobody has confirmed: it may be a stranger's.
   if (!user.emailUnverified) {
     const language = user.preferences?.language;
-    (unlinked.length
-      ? accountMail.sendResetUnlinked(user.email, unlinked, language)
-      : accountMail.sendChanged(user.email, language, linksStopped)
+    (reset
+      ? accountMail.sendResetDone(user.email, reset, language)
+      : accountMail.sendChanged(user.email, language)
     ).catch(logMailError('password changed'));
   }
 }

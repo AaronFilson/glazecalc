@@ -892,21 +892,12 @@ export const sendReset = (to: string, token: string, minutes: number, language?:
   });
 };
 
-/**
- * Added (in English only for now) to the changed-password email after a
- * reset that stopped the account's shared recipe links (docs/adr/0020).
- */
-export const LINKS_STOPPED =
-  'Because the password was reset, the links you had made to share recipes were stopped. You can make new ones from each recipe.\n';
-
-export const sendChanged = (to: string, language?: string, linksStopped = false): Promise<void> => {
+export const sendChanged = (to: string, language?: string): Promise<void> => {
   const email = inLanguage(CHANGED, language);
-  const text = fill(email.text, { account: to, forgot: pageIn(language, '/forgot'), app: mailer.appUrl() });
-  const at = text.lastIndexOf('\n-- \n');
   return mailer.send({
     to,
     subject: email.subject,
-    text: linksStopped && at >= 0 ? text.slice(0, at) + '\n' + LINKS_STOPPED + text.slice(at) : text
+    text: fill(email.text, { account: to, forgot: pageIn(language, '/forgot'), app: mailer.appUrl() })
   });
 };
 
@@ -4120,38 +4111,81 @@ export const PROVIDER_UNLINKED: Record<string, Email> = {
   }
 };
 
+/** A provider's name as the emails write it: a brand, the same in every language. */
+export const PROVIDER_NAMES: Record<string, string> = { google: 'Google', github: 'GitHub' };
+
 /**
- * Sent in place of CHANGED after a password reset that unlinked providers:
- * {account}, {providers}, {page}, {forgot} and {app}.
+ * The parts of the email after a password reset that stopped anything, put
+ * together by sendResetStopped: the opening ({account}), a lead-in to the list
+ * of what was stopped, a line for each kind ({count} and {page}; {providers},
+ * named as brands, and {page}; none), and the closing ({forgot} and {app}).
+ * A reset means someone else may have had the password, so it stops the
+ * account's access tokens and connected apps (docs/adr/0017-mcp-server.md), its
+ * links to Google and GitHub (docs/adr/0015-provider-sign-in.md) and its share
+ * links (docs/adr/0020-share-links.md). English only so far: the next
+ * translation wave adds the others, and until then every language gets it.
  */
-export const RESET_UNLINKED: Record<string, Email> = {
+export interface ResetStoppedEmail {
+  subject: string;
+  opening: string;
+  stopped: string;
+  tokens: string;
+  providers: string;
+  shareLinks: string;
+  closing: string;
+}
+
+export const RESET_STOPPED: Record<string, ResetStoppedEmail> = {
   en: {
     subject: 'Your Glazecalc password was changed',
-    text:
-      'The password for the Glazecalc account {account} was just reset, and every device that was signed in has been signed out.\n\n' +
-      'The reset also unlinked these ways to sign in from the account: {providers}. ' +
-      'You can link them again from your account page at {page}\n\n' +
-      'If this was you, there is nothing else to do. If not, reset your password right away at {forgot}\n' +
+    opening:
+      'The password for the Glazecalc account {account} was just reset, and every device that was signed in has been signed out.\n\n',
+    stopped: 'In case someone else had the old password, the reset also stopped these:\n\n',
+    tokens:
+      '- The access tokens and connected apps that could reach your saved work ({count}). If you still need one, make a new token on your account page at {page}\n',
+    providers: '- Signing in with {providers}, which you can link again on your account page at {page}\n',
+    shareLinks: '- The links you had made to share recipes. You can make new ones from each recipe.\n',
+    closing:
+      '\nIf this was you, there is nothing else to do. If not, reset your password right away at {forgot}\n' +
       '\n-- \nGlazecalc, {app}\n'
   }
 };
 
-/** A provider's name as the emails write it: a brand, the same in every language. */
-export const PROVIDER_NAMES: Record<string, string> = { google: 'Google', github: 'GitHub' };
+/** What a password reset stopped, for its email: none of them, and it is the changed-password email. */
+export interface ResetStopped {
+  /** Access tokens and connected apps revoked. */
+  tokens: number;
+  /** The providers unlinked (their ids). */
+  providers: string[];
+  /** Share links stopped. */
+  shareLinks: number;
+}
 
-/** The notice after a reset that unlinked `providers` (their ids), named as brands. */
-export const sendResetUnlinked = (to: string, providers: string[], language?: string): Promise<void> => {
-  const email = inLanguage(RESET_UNLINKED, language);
+/**
+ * The email after a password reset: CHANGED, in the account's language, when
+ * the reset stopped nothing else; otherwise RESET_STOPPED, with a line for
+ * each kind of thing it stopped, in the order they are listed there.
+ */
+export const sendResetDone = (to: string, stopped: ResetStopped, language?: string): Promise<void> => {
+  if (!stopped.tokens && !stopped.providers.length && !stopped.shareLinks) return sendChanged(to, language);
+  const email = (language && RESET_STOPPED[language]) || RESET_STOPPED['en']!;
+  const values = {
+    account: to,
+    count: stopped.tokens,
+    providers: stopped.providers.map((provider) => PROVIDER_NAMES[provider] ?? provider).join(', '),
+    page: pageIn(language, '/account'),
+    forgot: pageIn(language, '/forgot'),
+    app: mailer.appUrl()
+  };
+  const lines = [
+    stopped.tokens ? email.tokens : '',
+    stopped.providers.length ? email.providers : '',
+    stopped.shareLinks ? email.shareLinks : ''
+  ].join('');
   return mailer.send({
     to,
     subject: email.subject,
-    text: fill(email.text, {
-      account: to,
-      providers: providers.map((provider) => PROVIDER_NAMES[provider] ?? provider).join(', '),
-      page: pageIn(language, '/account'),
-      forgot: pageIn(language, '/forgot'),
-      app: mailer.appUrl()
-    })
+    text: fill(email.opening + email.stopped + lines + email.closing, values)
   });
 };
 

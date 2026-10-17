@@ -5,6 +5,10 @@ import User from '../models/user.ts';
 import PasswordReset from '../models/password_reset.ts';
 import appSecret from '../lib/app_secret.ts';
 import * as mail from './support/mail.ts';
+import { makeToken } from './support/tokens.ts';
+import AccessToken from '../models/access_token.ts';
+import Recipe from '../models/recipe.ts';
+import ShareLink from '../models/share_link.ts';
 
 const basic = (address: string, pw: string) => 'Basic ' + Buffer.from(address + ':' + pw).toString('base64');
 
@@ -200,6 +204,80 @@ describe('password reset and change', () => {
       expect(long.body.msg).to.match(/at most 72 characters/);
       expect(await reset(token, 'é'.repeat(40))).to.have.status(400);
       expect(await reset(token, 'a'.repeat(72))).to.have.status(200);
+    });
+
+    it('stops the access tokens, the provider links and the share links together, and says so in one email', async () => {
+      const address = newAddress();
+      const user = await makeUser(address);
+      const linkedAt = new Date();
+      user.identities = [
+        { provider: 'google', subject: 'g-' + address, uid: 'google:g-' + address, linkedAt },
+        { provider: 'github', subject: 'h-' + address, uid: 'github:h-' + address, linkedAt }
+      ];
+      await user.save();
+      const tokens = [await makeToken(user), await makeToken(user, { kind: 'oauth' })];
+      const recipe = await Recipe.create({ title: 'Shared', ownedBy: String(user._id), materials: [{ name: 'Talc' }] });
+      await ShareLink.create({
+        ownedBy: String(user._id),
+        recipeId: recipe._id,
+        hash: crypto.randomBytes(32).toString('hex')
+      });
+
+      const before = mail.to(address).length;
+      expect(await reset(await resetToken(address), 'brand-new-password')).to.have.status(200);
+      expect(await AccessToken.countDocuments({ userId: user._id, revokedWhy: 'password-reset' })).to.equal(
+        tokens.length
+      );
+      expect((await User.findById(user._id).lean())!.identities).to.eql([]);
+      expect(await ShareLink.countDocuments({ ownedBy: String(user._id) })).to.equal(0);
+
+      // One notice after the reset email, with a line for each, in one piece.
+      const sent = await mail.waitFor(address, before + 2);
+      await new Promise((resolve) => setTimeout(resolve, 100));
+      expect(mail.to(address)).to.have.length(before + 2);
+      const notice = sent[before + 1]!;
+      expect(notice.subject).to.equal('Your Glazecalc password was changed');
+      const lines = notice.text.split('\n');
+      const at = (start: string) => lines.findIndex((line) => line.startsWith(start));
+      expect(notice.text).to.include('In case someone else had the old password, the reset also stopped these:');
+      expect(lines[at('- The access tokens')]).to.include('could reach your saved work (2)');
+      expect(lines[at('- Signing in with')]).to.include('Signing in with Google, GitHub, which you can link again');
+      expect(lines[at('- The links you had made to share recipes')]).to.include('make new ones from each recipe');
+      expect([at('- The access tokens'), at('- Signing in with'), at('- The links')]).to.satisfy((order: number[]) =>
+        order.every((index, i) => index > 0 && (i === 0 || index === order[i - 1]! + 1))
+      );
+      expect(notice.text).to.include('/account');
+      expect(notice.text).to.match(
+        /If this was you, there is nothing else to do\. If not, reset your password right away at \S+\/forgot\n/
+      );
+      expect(notice.text).to.match(/\n-- \nGlazecalc, \S+\n$/);
+    });
+
+    it('names only what a reset stopped, and is the changed-password email in its language when it stopped nothing', async () => {
+      const onlyLinks = newAddress();
+      const user = await makeUser(onlyLinks);
+      const recipe = await Recipe.create({ title: 'Shared', ownedBy: String(user._id), materials: [{ name: 'Talc' }] });
+      await ShareLink.create({
+        ownedBy: String(user._id),
+        recipeId: recipe._id,
+        hash: crypto.randomBytes(32).toString('hex')
+      });
+      const before = mail.to(onlyLinks).length;
+      expect(await reset(await resetToken(onlyLinks), 'brand-new-password')).to.have.status(200);
+      const notice = (await mail.waitFor(onlyLinks, before + 2))[before + 1]!;
+      expect(notice.text).to.include('- The links you had made to share recipes');
+      expect(notice.text).to.not.include('access tokens').and.not.include('Signing in with');
+
+      // Nothing to stop: the changed-password email, translated.
+      const plain = newAddress();
+      const german = await makeUser(plain);
+      german.preferences = { ...german.preferences, language: 'de' };
+      await german.save();
+      const plainBefore = mail.to(plain).length;
+      expect(await reset(await resetToken(plain), 'brand-new-password')).to.have.status(200);
+      const changed = (await mail.waitFor(plain, plainBefore + 2))[plainBefore + 1]!;
+      expect(changed.subject).to.equal('Ihr Passwort für Glazecalc wurde geändert');
+      expect(changed.text).to.not.include('stopped');
     });
   });
 

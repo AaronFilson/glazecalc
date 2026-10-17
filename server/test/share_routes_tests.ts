@@ -4,6 +4,7 @@ import { deleteAccount } from '../lib/account_data.ts';
 import { exportAccount } from '../lib/export_data.ts';
 import { forgetStandards, hashOf } from '../lib/share_links.ts';
 import * as mail from './support/mail.ts';
+import AccessToken from '../models/access_token.ts';
 import Additive from '../models/additive.ts';
 import Material from '../models/material.ts';
 import Recipe from '../models/recipe.ts';
@@ -287,7 +288,7 @@ describe('share links', () => {
     expect(await view(second.secret)).to.have.status(404);
     const notice = (await mail.waitFor(alice.email, before + 3))[before + 2]!;
     expect(notice.subject).to.eql('Your Glazecalc password was changed');
-    expect(notice.text).to.include('links you had made to share recipes were stopped');
+    expect(notice.text).to.include('- The links you had made to share recipes.');
 
     // A reset with no links to stop says nothing about them.
     const bare = await makeUser();
@@ -309,6 +310,7 @@ describe('share links', () => {
     });
     const carols = (await as(carol.token).post('/share/recipe/' + recipe._id)).body as { secret: string };
     expect(await view(carols.secret)).to.have.status(200);
+    const carolsToken = await makeToken(carol.user);
     expect(
       await api()
         .post('/signout-everywhere')
@@ -316,6 +318,13 @@ describe('share links', () => {
     ).to.have.status(200);
     expect(await view(carols.secret)).to.have.status(404);
     expect(await ShareLink.countDocuments({ ownedBy: String(carol.user._id) })).to.eql(0);
+    // And her access tokens, in the same step.
+    expect((await AccessToken.findOne({ userId: carol.user._id }))!.revokedWhy).to.eql('signed-out-everywhere');
+    expect(
+      await api()
+        .get('/recipe/getAll')
+        .set('Authorization', 'Bearer ' + carolsToken)
+    ).to.have.status(401);
   });
 
   it('is taken away again when the recipe goes while the link is being made', async () => {

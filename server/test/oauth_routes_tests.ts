@@ -969,7 +969,7 @@ describe('signing in with Google and GitHub', () => {
       // The notice says so, and where to link it again.
       const [, notice] = await mail.waitFor(address, 2);
       expect(notice!.subject).to.eql('Your Glazecalc password was changed');
-      expect(notice!.text).to.include('unlinked these ways to sign in from the account: Google.');
+      expect(notice!.text).to.include('- Signing in with Google, which you can link again on your account page');
       expect(notice!.text).to.include('/account');
       // The new password signs in; Google is now an account with that email, to link again.
       const auth = 'Basic ' + Buffer.from(address + ':a-new-password').toString('base64');
@@ -1006,7 +1006,7 @@ describe('signing in with Google and GitHub', () => {
         'github'
       ]);
       const [, , changedNotice] = await mail.waitFor(email, 3);
-      expect(changedNotice!.text).to.not.include('unlinked');
+      expect(changedNotice!.text).to.not.include('Signing in with');
 
       // A reset removes both, and says so.
       await api().post('/password/forgot').send({ email });
@@ -1017,7 +1017,7 @@ describe('signing in with Google and GitHub', () => {
       expect(reset).to.have.status(200);
       expect((await User.findById(user._id).lean())!.identities).to.eql([]);
       const [, , , , notice] = await mail.waitFor(email, 5);
-      expect(notice!.text).to.include('unlinked these ways to sign in from the account: Google, GitHub.');
+      expect(notice!.text).to.include('- Signing in with Google, GitHub, which you can link again');
     });
   });
 });

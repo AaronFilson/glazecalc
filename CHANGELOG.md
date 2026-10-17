@@ -530,6 +530,11 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Changed
 
+- **One email after a password reset.** A reset stops the account's access tokens and connected
+  apps, unlinks Google and GitHub, and stops its share links, all in the same step, and its notice
+  lists what it stopped, a line for each (with how many tokens, and which providers to link again);
+  a reset that stopped nothing sends the changed-password email, in the account's language, as
+  before. Sign out everywhere stops the tokens and the share links too.
 - **Easier to find your way**, from a review of the app's usability (2026-10-16):
   - **The menu says "Account"** (or "Trial account"), with a round initial and the email in small
     text under it, and turns the palette's color when hovered or on the account page, like the other
