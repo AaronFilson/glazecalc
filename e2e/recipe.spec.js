@@ -75,7 +75,7 @@ test('checks the glaze against Hesselberth & Roy as it is typed, plots it on a S
   const alumina = numbers.locator('.limits-table tr', { hasText: 'Al₂O₃' });
   await expect(alumina).toContainText(expected.umf.Al2O3.toFixed(2) + '0.25–0.40');
   // At low fire the set does not apply.
-  await page.getByLabel('Firing').selectOption('low');
+  await page.getByRole('combobox', { name: 'Firing', exact: true }).selectOption('low');
   await expect(numbers).toContainText('has no figures for this firing');
   await expect(numbers.locator('.limits-table')).toHaveCount(0);
   // The Stull chart says where the glaze is, in words as well.
