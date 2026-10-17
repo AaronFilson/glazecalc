@@ -18,7 +18,7 @@ test('a saved recipe is shared by a link anyone can open, with the working, unti
   await page.goto('/recipe');
   await page.locator('#recipe-name').fill('Class clear');
   for (const [name, amount] of CLEAR) await addStandardMaterial(page, name, amount);
-  const unity = await page.locator('.unity-result gc-unity-formula').innerText();
+  const unity = await page.locator('.unity-result gc-unity-formula').textContent();
   await page.getByRole('button', { name: 'Save', exact: true }).click();
   await expect(page.locator('.saved-recipe-open', { hasText: 'Class clear' })).toBeVisible();
 
@@ -50,7 +50,7 @@ test('a saved recipe is shared by a link anyone can open, with the working, unti
   // Nothing wider than the phone.
   expect(await viewer.evaluate(() => globalThis.document.documentElement.scrollWidth)).toBeLessThanOrEqual(360);
 
-  await viewer.getByRole('button', { name: 'The working' }).click();
+  await viewer.getByRole('button', { name: 'The working', exact: true }).click();
   await expect(viewer.getByRole('heading', { name: 'How the unity formula is worked out' })).toBeVisible();
   await expect(viewer.locator('.worked-answer gc-unity-formula')).toHaveText(unity);
   expect(await viewer.evaluate(() => globalThis.document.documentElement.scrollWidth)).toBeLessThanOrEqual(360);
@@ -72,7 +72,7 @@ test("Show the working prints the unity formula as a worksheet, with the recipe 
   await signUpAndSignIn(page);
   await page.goto('/recipe');
   for (const [name, amount] of CLEAR) await addStandardMaterial(page, name, amount);
-  const unity = await page.locator('.unity-result gc-unity-formula').innerText();
+  const unity = await page.locator('.unity-result gc-unity-formula').textContent();
   await page.getByRole('button', { name: 'Show the working' }).click();
   await expect(page).toHaveURL(/\/recipe\?print=draft&sheet=worked$/);
   await expect(page.getByLabel(/^The working/)).toBeChecked();
