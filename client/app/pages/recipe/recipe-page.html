@@ -879,6 +879,10 @@
         }
       </section>
     </div>
+    @if (evaluation().analysis; as analysis) {
+      <gc-recipe-numbers [analysis]="analysis" [counted]="includeAdditives()" [(firing)]="firing" />
+    }
+    <gc-slurry-calculator />
   </div>
   <!-- What an action did that the focus does not show, for screen readers; outside the part hidden while printing or comparing. -->
   <p class="visually-hidden" role="status">{{ announcement() }}</p>

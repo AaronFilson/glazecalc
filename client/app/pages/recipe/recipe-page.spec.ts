@@ -261,6 +261,35 @@ describe('RecipePage', () => {
     await saving;
   });
 
+  it('shows the analysis, limits and Stull chart under the recipe, and saves the firing chosen for its limits', async () => {
+    const fired: Recipe = {
+      _id: 'r2',
+      title: 'Cone 10 white',
+      firing: 'high',
+      materials: [{ ...WHITING, amount: '20' }]
+    };
+    const { fixture, page } = await create([fired]);
+    page['open'](fired);
+    await fixture.whenStable();
+    const root = fixture.nativeElement as HTMLElement;
+    expect(root.querySelector('#numbers-heading')?.textContent).toContain('Analysis and limits');
+    expect((root.querySelector('#limit-firing') as HTMLSelectElement).value).toBe('high');
+    expect(root.querySelector('gc-stull-chart svg')).not.toBeNull();
+    expect(root.querySelector('#slurry-heading')).not.toBeNull();
+    expect(page['dirty']()).toBe(false);
+
+    const firing = root.querySelector('#limit-firing') as HTMLSelectElement;
+    firing.value = 'mid';
+    firing.dispatchEvent(new Event('change'));
+    await fixture.whenStable();
+    expect(page['status']()).toBe('Changes not saved yet');
+    const saving = page['save']();
+    const req = httpMock().expectOne({ method: 'PUT', url: API + '/recipe/change/r2' });
+    expect(req.request.body.recipe.firing).toBe('mid');
+    req.flush({ msg: 'Successfully updated recipe' });
+    await saving;
+  });
+
   it('copies picked materials, so amounts leave the lists alone', async () => {
     const { page } = await create();
     fill(page, [[WHITING, '5']]);
