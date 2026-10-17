@@ -42,6 +42,11 @@ export interface PasteOptions {
   isName?: (text: string) => boolean;
 }
 
+/** The most a paste can be: characters, lines, and characters in a line that can be a material. */
+export const PASTE_LIMITS: { readonly chars: number; readonly lines: number; readonly line: number };
+/** Which limit a paste is over, or null. parsePaste reads nothing from one that is over. */
+export function pasteTooLong(text: string): 'chars' | 'lines' | null;
+
 export function parsePaste(text: string, options?: PasteOptions): PastedRecipe[];
 
 /** Each line's amount as saved ("20.5"; '' for none), and an addition's unit. */

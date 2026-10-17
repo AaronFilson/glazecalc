@@ -266,6 +266,21 @@ describe('ImportPage', () => {
     httpMock().expectOne(API + '/recipe/create');
   });
 
+  it('limits the box, and says so when the paste is too long instead of reading part of it', async () => {
+    const { fixture, root, paste } = await create();
+    expect((root.querySelector('#paste-text') as HTMLTextAreaElement).getAttribute('maxlength')).toBe('50000');
+    await paste('Custer 50\n'.repeat(2001));
+    expect(text(fixture, '.import-too-long')).toBe(
+      'That is more than 2,000 lines. Nothing was read. Paste fewer recipes at a time.'
+    );
+    expect(root.querySelector('.import-recipe')).toBeNull();
+    await paste('x'.repeat(50000));
+    expect(text(fixture, '.import-too-long')).toContain('50,000 characters or more');
+    await paste('Custer 50\nSilica 50');
+    expect(root.querySelector('.import-too-long')).toBeNull();
+    expect(root.querySelectorAll('.import-recipe').length).toBe(1);
+  });
+
   it('says when nothing could be read', async () => {
     const { fixture, paste } = await create();
     await paste('Hello there');

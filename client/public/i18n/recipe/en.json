@@ -495,6 +495,7 @@
     "read": "Read the recipes",
     "gettingLibrary": "Getting the materials…",
     "previewHeading": "Check what was read",
+    "tooLong": "{reason, select, lines {That is more than {lines, number} lines.} other {That is {chars, number} characters or more.}} Nothing was read. Paste fewer recipes at a time.",
     "tooMany": "Only the first {max} recipes are shown. Paste the rest once these are saved.",
     "readCount": "{count, plural, one {Read # recipe} other {Read # recipes}}, {lines, plural, one {# line} other {# lines}} in all.",
     "nothingRead": "No materials were found in the text. Put each material on a line of its own, with its amount.",

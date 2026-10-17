@@ -4,7 +4,14 @@ import { RouterLink } from '@angular/router';
 import { TranslocoDirective, translate } from '@jsverse/transloco';
 import { marker } from '@jsverse/transloco-keys-manager/marker';
 import { amountOf, isAmount, totalOf } from '../../../../lib/recipe/amounts';
-import { foldedName, importAmounts, matchName, parsePaste } from '../../../../lib/recipe/paste';
+import {
+  PASTE_LIMITS,
+  foldedName,
+  importAmounts,
+  matchName,
+  parsePaste,
+  pasteTooLong
+} from '../../../../lib/recipe/paste';
 import type { MatchHow, PastedRecipe } from '../../../../lib/recipe/paste';
 import { ApiResourceFactory } from '../../core/api-resource.service';
 import { errorMessage } from '../../core/error-message';
@@ -93,10 +100,16 @@ const HOW_NOTES: Partial<Record<MatchHow, string>> = {
         rows="10"
         spellcheck="false"
         aria-describedby="paste-help"
+        [attr.maxlength]="limits.chars"
         [ngModel]="text()"
         (ngModelChange)="text.set($event)"
       ></textarea>
       <p id="paste-help" class="small muted import-help">{{ t('recipe.import.pasteHelp') }}</p>
+      @if (tooLong(); as reason) {
+        <p class="import-too-long" role="alert">
+          {{ t('recipe.import.tooLong', { reason, chars: limits.chars, lines: limits.lines }) }}
+        </p>
+      }
       <div class="import-actions">
         <button type="button" class="btn btn-primary" [attr.aria-disabled]="!ready() || null" (click)="readPaste()">
           {{ t('recipe.import.read') }}
@@ -279,6 +292,10 @@ const HOW_NOTES: Partial<Record<MatchHow, string>> = {
       font-family: var(--bs-font-monospace, monospace);
       font-size: 0.9rem;
     }
+    .import-too-long {
+      color: var(--gc-danger-text);
+      margin: 0 0 0.75rem;
+    }
     .import-help {
       margin: 0.5rem 0 0.75rem;
     }
@@ -389,6 +406,9 @@ export class ImportPage implements OnInit {
   protected readonly text = signal('');
   protected readonly drafts = signal<Draft[]>([]);
   protected readonly tooMany = signal(false);
+  protected readonly limits = PASTE_LIMITS;
+  /** Which limit the text is over, once Read has been pressed. */
+  protected readonly tooLong = signal<'chars' | 'lines' | null>(null);
   /** Read, and nothing found. */
   protected readonly readEmpty = signal(false);
   protected readonly readStatus = signal('');
@@ -459,6 +479,15 @@ export class ImportPage implements OnInit {
   /** Reads the pasted text into recipes to check, each line matched to a record. */
   protected readPaste(): void {
     if (!this.ready()) return;
+    // A box cut off at its limit may have lost the rest of the paste: say so.
+    const over = pasteTooLong(this.text()) ?? (this.text().length >= PASTE_LIMITS.chars ? 'chars' : null);
+    this.tooLong.set(over);
+    if (over) {
+      this.drafts.set([]);
+      this.readEmpty.set(false);
+      this.readStatus.set(translate('recipe.import.tooLong', { reason: over, ...PASTE_LIMITS }));
+      return;
+    }
     const choices = this.choices();
     const names = new Set(choices.flatMap((c) => [c.record.name, ...(c.record.aliases ?? [])]).map(foldedName));
     const read = parsePaste(this.text(), {

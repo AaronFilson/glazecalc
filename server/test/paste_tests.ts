@@ -137,6 +137,33 @@ describe('Paste-in import: decimal marks', () => {
   });
 });
 
+describe('Paste-in import: limits', () => {
+  it('reads a very long line quickly, as text', () => {
+    const started = Date.now();
+    for (const long of [
+      'a '.repeat(20000) + '1x',
+      '1 '.repeat(20000),
+      'x'.repeat(40000) + ' 1,5 %',
+      '.,'.repeat(20000)
+    ]) {
+      const read = recipe.parsePaste('Custer 50\n' + long + '\nSilica 50');
+      expect(read.flatMap((r) => r.lines.map((l) => l.name))).to.eql(['Custer', 'Silica']);
+    }
+    expect(Date.now() - started).to.be.below(1000);
+  });
+
+  it('says when a paste is too long, in characters or lines, and reads nothing from it', () => {
+    const { chars, lines: most } = recipe.PASTE_LIMITS;
+    expect(recipe.pasteTooLong('Custer 50\nSilica 50')).to.equal(null);
+    expect(recipe.pasteTooLong('x'.repeat(chars))).to.equal(null);
+    expect(recipe.pasteTooLong('x'.repeat(chars + 1))).to.equal('chars');
+    expect(recipe.pasteTooLong('\n'.repeat(most - 1))).to.equal(null);
+    expect(recipe.pasteTooLong('\n'.repeat(most))).to.equal('lines');
+    expect(recipe.parsePaste('Custer 50\n'.repeat(most))).to.eql([]);
+    expect(recipe.parsePaste('Custer 50 '.repeat(chars))).to.eql([]);
+  });
+});
+
 describe('Paste-in import: CSV and columns', () => {
   it('reads CSV with a heading row and quoted names with commas', () => {
     const read = one('Material,Amount\n"Feldspar, potash",25\nEPK,20\n"Silica ""325""",55');
