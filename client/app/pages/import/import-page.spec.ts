@@ -150,6 +150,18 @@ describe('ImportPage', () => {
     expect(text(fixture, 'a[fragment="saved-recipes"]')).toBe('Open your recipes');
   });
 
+  it('reads the firing from the notes into the recipe’s firing, keeping the text as pasted in the notes', async () => {
+    const { fixture, paste, save } = await create();
+    await paste('Tenmoku\ncone 5-6\nox/red\nCuster 40\nWhiting 20\nEPK 10\nSilica 30');
+    expect(text(fixture, '.import-firing')).toBe(
+      'Firing read from the notes: Range cone 5–6; no cone ticked as tested · oxidation, reduction'
+    );
+    await save();
+    const sent = httpMock().expectOne(API + '/recipe/create').request.body as Recipe;
+    expect(sent.firedAt).toEqual({ scale: 'orton', low: '5', high: '6', atmospheres: ['oxidation', 'reduction'] });
+    expect(sent.notes).toBe('cone 5-6\nox/red');
+  });
+
   it('asks for a choice where several materials are close, and saves once one is chosen or the line is left out', async () => {
     const { fixture, root, paste, save, selects } = await create();
     await paste('Test\nFeldspar 50\nSilica 50\nZircopax 5');
