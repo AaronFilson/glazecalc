@@ -6,6 +6,19 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Added
 
+- **Sign in with Google or GitHub** ([ADR 0015](docs/adr/0015-provider-sign-in.md), integrations
+  plan Phase 1), on the sign-in and sign-up pages, wherever the owner has set a provider up (off
+  until then). An account is found by the provider's own id for the person, never by email. A new
+  account is made only from an email the provider has verified, with no password until one is set
+  through "Forgot password". When an account already has that email, nothing is joined until the
+  person signs in to it once, the usual way, and then only if its own email is confirmed, so an
+  account made in someone else's name can never take over their Google or GitHub. Two-step
+  sign-in still asks for its second step after the provider. The account page lists Google and
+  GitHub, and links or unlinks each after the password (and a second step when it is on), with a
+  notice email; the last way into an account is never removed. Nothing but the provider's id is
+  kept: no name, picture or provider token. A trial on the browser comes along into the account.
+  The export lists the linked providers, and the privacy notice and the record of processing say
+  what is kept. New English text only, for the next translation wave.
 - **The Trash and Undo.** Removing a recipe, material, note or other record moves it to the Trash,
   where it waits 30 days; the removal notice has Undo, and the Trash page puts records back, deletes
   them for good or empties the Trash. Each saved change keeps the version before it (the last 20,

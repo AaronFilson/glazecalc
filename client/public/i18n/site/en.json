@@ -75,6 +75,7 @@
     "storedAccount": "<b>Your account:</b> your email address, and your password, stored only as a one-way hash (bcrypt), never as the password itself. Your settings (such as language, region and units) and the list of materials you have on hand are kept with it. An account needs an email address, to sign in and to reset a forgotten password. When you create an account, a link is sent to the address to confirm that it is yours; until then, mail goes to it only when you ask, such as for a password reset.",
     "storedEmailChange": "<b>Changing your email:</b> the date your address last changed, so that a request to turn off two-step sign-in is never taken from a new address in the 30 days after.",
     "storedSignIn": "<b>Two-step sign-in, if you turn it on:</b> whether it is on; the key your authenticator app shares with Glazecalc, encrypted; for each passkey, its public key (which cannot sign in on its own) with the id and details your device gives it, the name you gave it, and when it was added and last used; your recovery codes, only as a keyed one-way hash, so nobody can read them back; and, if someone enters your password but does not finish the second step, when Glazecalc last emailed you about that (at most once a day). While you sign in, between your password and the second step, the server keeps a note of the sign-in for 5 minutes, and the page holds a short token in its memory only: no new cookie, nothing in your browser's storage.",
+    "storedProviders": "<b>Google or GitHub, if you sign in with one:</b> the provider's own id for you (a number or code that never changes), when you linked it and when you last signed in with it, and whether your account has a password of its own. Nothing else from the provider is kept: not your name, your picture or any key to your account there. While you sign in, the server keeps a note of the sign-in for up to 10 minutes, and, for a new account, the email the provider says is yours, which becomes your account's email.",
     "storedSaved": "<b>What you save:</b> your recipes, materials, additives, notes, firing logs and advice, as you wrote them. Only you can see them: nothing is shared between users.",
     "storedTrash": "<b>The Trash and earlier versions:</b> what you remove from a list waits in the Trash, whole, so you can put it back; and each change you save to a record keeps the record as it was just before, so you can undo the change.",
     "storedTokens": "<b>Access tokens and connected apps, if you make or approve any:</b> for each, its name, what it may do, a one-way hash of the token (never the token itself) and its last 4 characters, and when it was made, last used, expires and was revoked.",
@@ -94,6 +95,7 @@
     "hosting": "Glazecalc runs on Amazon Web Services (AWS): the server (EC2), the backups (S3) and the email (Simple Email Service), all in the United States, in Oregon (us-west-2). AWS handles the data only on Glazecalc's behalf, under its <dpa>data processing terms</dpa>. No one else receives it.",
     "transfer": "If you live in the EU, the UK or Switzerland, your data goes to the United States. Amazon says it is certified under the <dpf>EU–US Data Privacy Framework</dpf> and its UK and Swiss extensions, and AWS's terms include the EU's Standard Contractual Clauses, which would still apply if the Framework, now challenged in court, were struck down. The owner and AWS are both in the US, and US law can require them to hand over data.",
     "noThirdParties": "Your browser loads nothing from other websites: no fonts, scripts, images or analytics from elsewhere, and the site's security settings block them. Links to GitHub and other sites are followed only when you click them.",
+    "providers": "<b>Signing in with Google or GitHub</b> is your choice, and only happens when you press its button. Your browser then goes to Google or GitHub, which send Glazecalc their id for you and your email. Each is a separate company, responsible for what you share with it under its own privacy policy. No script or image from either loads on Glazecalc's pages.",
     "choiceHeading": "Where your account is kept, and your choice",
     "choiceProject": "Glazecalc is a free, open-source project. Accounts, and everything they hold, are kept on servers in the United States, wherever you live, as described above.",
     "choiceNoAccount": "You do not need an account to read the guides, and you can try the calculator with \"Try it now\", with no email address or password. A trial is kept on the same servers for 14 days.",
@@ -109,6 +111,7 @@
     "keptTrial": "<b>A trial:</b> 14 days from its start, then it is deleted with everything in it, unless you create an account to keep it.",
     "keptResets": "<b>Password reset and email links:</b> a reset link works for 30 minutes and its record is deleted after about an hour; a link to confirm an address works, and is kept, for 24 hours.",
     "keptSignIn": "<b>Two-step sign-in:</b> each authenticator app, passkey and set of recovery codes until you remove it, turn two-step sign-in off or delete your account. A sign-in waiting for its second step is deleted after 5 minutes, and an app or passkey you began to add but did not finish, after at most 10.",
+    "keptProviders": "<b>Google or GitHub:</b> each link until you unlink it or delete your account. A sign-in under way is deleted after 10 minutes.",
     "keptBackups": "<b>Backups:</b> encrypted copies of the database are kept 30 days, and copies of the server's disk 7 days. So a deleted account is gone from every backup within 30 days.",
     "keptDeletions": "<b>The record of a deleted account:</b> 37 days, just longer than any backup.",
     "keptLogs": "<b>Logs:</b> the web server's, 14 days. The app's and the database's own logs are limited by size (50 MB each), which on a quiet site reaches back several days. The copies of the server's disk keep logs for up to 7 days more.",
@@ -176,6 +179,10 @@
       "reloadedFor": {
         "purpose": "After a new version of the site is released, which page was reloaded and when, so a page reloads at most once a minute.",
         "lasts": "Until you close the tab."
+      },
+      "oauthCookie": {
+        "purpose": "Only while you sign in with Google or GitHub: it ties the provider's answer to your browser, so no one else can finish your sign-in or start one for you. Scripts on the page cannot read it.",
+        "lasts": "Set when you press \"Continue with Google\" or \"Continue with GitHub\", or link one on your account page. Removed when the sign-in finishes, or after 10 minutes."
       }
     },
     "childrenHeading": "Children",

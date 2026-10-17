@@ -19,8 +19,9 @@ Each one is written once; a later change gets a new record that replaces the old
 | [0012](0012-choosing-materials.md)                | Choosing materials: the fewest that come near, said in words       | 2026-10-08 |
 | [0013](0013-translations.md)                      | Translations: Transloco with ICU messages, the language in the URL | 2026-10-08 |
 | [0014](0014-two-step-sign-in.md)                  | Two-step sign-in: passkeys, app codes, recovery codes              | 2026-10-14 |
+| [0015](0015-provider-sign-in.md)                  | Sign in with Google and GitHub, linked by the provider's id        | 2026-10-16 |
 | [0016](0016-prerendered-public-pages.md)          | Public pages are prerendered at build and hydrated in place        | 2026-10-13 |
 | [0019](0019-shared-recipe-tools.md)               | The recipe tools are shared by the app and the server, in codes    | 2026-10-16 |
 
-0015 is kept for sign-in with other providers (OAuth), and 0017 and 0018 for the AI assistant plans, all in
+0017 and 0018 are kept for the AI assistant plans, both in
 [the integrations plan](../integrations-plan.md). The next new record takes 0020.
