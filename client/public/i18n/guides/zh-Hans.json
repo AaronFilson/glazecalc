@@ -37,7 +37,7 @@
   },
   "contents": "本页内容",
   "poison": {
-    "numbersFor": "号码适用国家：",
+    "numbersFor": "查看电话号码的国家：",
     "choose": "选择您所在的国家",
     "label": "在{region}应拨打的电话",
     "caption": "在{region}应拨打的电话（号码核实于{date}）",
@@ -86,7 +86,7 @@
     "choosePrompt": "选择您所在的国家，查看当地的商店。"
   },
   "silica": {
-    "limitIn": "限值适用国家：",
+    "limitIn": "查看限值的国家：",
     "label": "{region}的硅尘限值",
     "caption": "{region}工作场所呼吸性结晶型二氧化硅的职业接触限值，8 小时时间加权平均（核实于{date}）",
     "captionControl": "{region}评价作业场所空气中呼吸性结晶型二氧化硅的标准（核实于{date}）",
@@ -123,7 +123,7 @@
     "choosePrompt": "选择您所在的国家，查看其限值。"
   },
   "food": {
-    "rulesIn": "规定适用国家：",
+    "rulesIn": "查看规定的国家：",
     "label": "{region}对陶瓷器物的限量",
     "caption": "在{region}的法定检测中，烧成后的器物允许溶出的量（核实于{date}）",
     "article": "器物类别",

@@ -54,7 +54,7 @@
     "animals": "動物：{name}",
     "animalsNone": "動物",
     "vet": "請打給您的獸醫。",
-    "checkedOn": "確認日期：",
+    "checkedOn": "查核來源：",
     "choosePrompt": "選擇您的國家，即可查看當地的求助電話。",
     "ministry": "衛生主管機關的網頁：<link>{name}</link>。"
   },
