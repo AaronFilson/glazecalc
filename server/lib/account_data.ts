@@ -17,6 +17,7 @@ import PasswordReset from '../models/password_reset.ts';
 import PendingSignIn from '../models/pending_sign_in.ts';
 import Recipe from '../models/recipe.ts';
 import RecordVersion from '../models/record_version.ts';
+import ShareLink from '../models/share_link.ts';
 import Trash from '../models/trash.ts';
 import User from '../models/user.ts';
 import type { RecordModel } from './guest_limits.ts';
@@ -43,10 +44,11 @@ export const OWNED_KINDS: Record<string, RecordModel> = {
 };
 /**
  * Also the user's (ownedBy), but not records they keep: the earlier versions
- * of their records and the activity log. They go, and move from a trial,
- * with the account. Access tokens are the account's by userId; a trial has none.
+ * of their records, the activity log and the recipes' share links. They go,
+ * and move from a trial, with the account. Access tokens are the account's
+ * by userId; a trial has none, nor any share link.
  */
-const OWNED_HISTORY: RecordModel[] = [RecordVersion, Activity];
+const OWNED_HISTORY: RecordModel[] = [RecordVersion, Activity, ShareLink];
 const OWNED_MODELS: RecordModel[] = [...Object.values(OWNED_KINDS), ...OWNED_HISTORY];
 // Accounts removed at a time when the log is re-applied.
 const BATCH = 500;

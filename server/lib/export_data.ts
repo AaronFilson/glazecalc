@@ -7,6 +7,7 @@ import { left as recoveryCodesLeft } from './recovery_codes.ts';
 import AccessToken from '../models/access_token.ts';
 import Activity from '../models/activity.ts';
 import RecordVersion from '../models/record_version.ts';
+import ShareLink from '../models/share_link.ts';
 import User, { mfaOn, type UserFields } from '../models/user.ts';
 
 type Id = string | Types.ObjectId;
@@ -93,6 +94,17 @@ const accessTokensOf = async (userId: Id): Promise<Row[]> =>
     })
   );
 
+/**
+ * The recipes shared by link: which, since when, and whether the notes show.
+ * Never the link: only its hash is kept, and that is left out too.
+ */
+const shareLinksOf = async (userId: Id): Promise<Row[]> =>
+  (
+    await ShareLink.find({ ownedBy: String(userId) })
+      .sort({ createdAt: 1, _id: 1 })
+      .lean()
+  ).map(({ recipeId, createdAt, includeNotes }) => ({ recipeId, createdAt, includeNotes }));
+
 /** The whole export: the account, its preferences and shelf, and every kind of record. */
 export const exportAccount = async (userId: Id, now = new Date()): Promise<Row | null> => {
   const user = await User.findById(userId, {
@@ -108,11 +120,12 @@ export const exportAccount = async (userId: Id, now = new Date()): Promise<Row |
   }).lean();
   if (!user) return null;
   const kinds = Object.keys(OWNED_KINDS);
-  const [lists, versions, activity, accessTokens] = await Promise.all([
+  const [lists, versions, activity, accessTokens, shareLinks] = await Promise.all([
     Promise.all(kinds.map((kind) => recordsOf(kind, userId))),
     versionsOf(userId),
     activityOf(userId),
-    accessTokensOf(userId)
+    accessTokensOf(userId),
+    shareLinksOf(userId)
   ]);
   return {
     format: 'glazecalc-export',
@@ -132,7 +145,8 @@ export const exportAccount = async (userId: Id, now = new Date()): Promise<Row |
     records: Object.fromEntries(kinds.map((kind, i) => [kind, lists[i]])),
     versions,
     activity,
-    accessTokens
+    accessTokens,
+    shareLinks
   };
 };
 

@@ -4,6 +4,7 @@
 // record must have.
 import type { Router } from 'express';
 import recordRoutes from '../lib/record_routes.ts';
+import { stopSharing } from '../lib/share_links.ts';
 import Additive from '../models/additive.ts';
 import Advice from '../models/advice.ts';
 import Firing from '../models/firing.ts';
@@ -77,7 +78,9 @@ const records: Record<string, Router> = {
     fields: ['title', 'date', 'notes', 'materials', 'additives', 'computed', 'includeAdditives'],
     required: ['title', 'materials'],
     wrapper: { change: 'recipe' },
-    standard: true
+    standard: true,
+    // Its share link stops working, and stays stopped if the recipe is put back.
+    onTrash: stopSharing
   }),
   // The Trash has routes of its own.
   trash: trashRouter

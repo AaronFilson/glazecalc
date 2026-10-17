@@ -14,9 +14,11 @@ import { GramPrecision, WeightUnit, formatWeight, fromGrams, toGrams, unitLabel 
 import { BatchWeights, amountOf, batchWeights, formatAmount, isAmount, totalOf } from './rebase';
 import { additiveAmount, evaluate } from './recipe-analysis';
 import { UnityFormula, unityColumns } from './unity-formula';
+import { WorkedCalculation } from './worked-calculation';
 
-/** What to print: the whole recipe with its chemistry, or just what to weigh. */
-export type PrintMode = 'full' | 'batch';
+/** What to print: the whole recipe with its chemistry, just what to weigh, or the unity formula worked step by step. */
+export type PrintMode = 'full' | 'batch' | 'worked';
+const MODES: readonly PrintMode[] = ['full', 'batch', 'worked'];
 
 export interface PrintLine {
   name: string;
@@ -113,7 +115,8 @@ const DEFAULT_BATCH: BatchSize = { text: '1000', unit: 'g' };
 // The last choices, on this browser.
 function readMode(): PrintMode {
   try {
-    return localStorage.getItem(MODE_KEY) === 'batch' ? 'batch' : 'full';
+    const saved = localStorage.getItem(MODE_KEY) as PrintMode | null;
+    return saved && MODES.includes(saved) ? saved : 'full';
   } catch {
     return 'full';
   }
@@ -152,7 +155,7 @@ const UNITS: ReadonlyArray<{ value: WeightUnit; label: string }> = [
  */
 @Component({
   selector: 'gc-recipe-print',
-  imports: [DatePipe, NumberInput, TranslocoDirective, UnityFormula],
+  imports: [DatePipe, NumberInput, TranslocoDirective, UnityFormula, WorkedCalculation],
   template: `<ng-container *transloco="let t">
     <section class="print-controls no-print" aria-labelledby="print-heading">
       <h1 id="print-heading" tabindex="-1">{{ t('recipe.print.heading') }}</h1>
@@ -183,8 +186,21 @@ const UNITS: ReadonlyArray<{ value: WeightUnit; label: string }> = [
             />
             <label for="print-batch-list" class="form-check-label">{{ t('recipe.print.batchList') }}</label>
           </div>
+          <div class="form-check">
+            <input
+              id="print-worked"
+              class="form-check-input"
+              type="radio"
+              name="print-mode"
+              value="worked"
+              [checked]="mode() === 'worked'"
+              (change)="setMode('worked')"
+            />
+            <label for="print-worked" class="form-check-label">{{ t('recipe.print.worked') }}</label>
+          </div>
         </fieldset>
-        <div>
+        <!-- The worked calculation reads the amounts as grams; a batch size and its unit change nothing in it. -->
+        <div [hidden]="mode() === 'worked'">
           <label for="print-batch-size" class="form-label">{{ t('recipe.print.batchSize') }}</label>
           <div class="input-group print-batch-size">
             <input
@@ -208,7 +224,7 @@ const UNITS: ReadonlyArray<{ value: WeightUnit; label: string }> = [
             </p>
           }
         </div>
-        <fieldset>
+        <fieldset [hidden]="mode() === 'worked'">
           <legend class="form-label">{{ t('recipe.print.weighIn') }}</legend>
           @for (choice of units; track choice.value) {
             <div class="form-check">
@@ -244,12 +260,19 @@ const UNITS: ReadonlyArray<{ value: WeightUnit; label: string }> = [
         @if (recipe().date) {
           <p class="print-meta">{{ recipe().date | gcDate }}</p>
         }
-        @if (batchSummary(); as summary) {
+        @if (mode() !== 'worked' && batchSummary(); as summary) {
           <p class="print-batch-summary">{{ summary }}</p>
         }
       </header>
 
-      @if (printed.unreadable.length) {
+      @if (mode() === 'worked') {
+        <gc-worked-calculation
+          [materials]="recipe().materials"
+          [additives]="recipe().additives ?? []"
+          [includeAdditives]="!!recipe().includeAdditives"
+          [chemistryOf]="chemistryOf()"
+        />
+      } @else if (printed.unreadable.length) {
         <div class="print-unreadable">
           @for (problem of printed.unreadable; track problem) {
             <p>{{ problem }}</p>
@@ -384,7 +407,7 @@ const UNITS: ReadonlyArray<{ value: WeightUnit; label: string }> = [
             <p>{{ notes() }}</p>
           </section>
         }
-      } @else {
+      } @else if (mode() === 'batch') {
         <div class="print-table-scroll" tabindex="0" role="region" [attr.aria-label]="t('recipe.print.toWeigh')">
           <table class="print-table print-batch-list">
             <caption class="visually-hidden">
@@ -680,6 +703,8 @@ export class RecipePrint implements OnInit, OnDestroy {
   /** The chemistry an additive borrows by name (chemistryOf), for one with no analysis of its own. */
   readonly chemistryOf = input<(name: string) => MaterialInput | undefined>();
   readonly back = output<void>();
+  /** What to show first, instead of the last choice (not remembered): the recipe page's Show the working. */
+  readonly startMode = input<PrintMode | null>(null);
 
   protected readonly units = UNITS;
   protected readonly unitLabel = unitLabel;
@@ -751,6 +776,8 @@ export class RecipePrint implements OnInit, OnDestroy {
   });
 
   ngOnInit(): void {
+    const start = this.startMode();
+    if (start) this.mode.set(start);
     void this.preferences.load();
     // Saved as a PDF, the file takes the page's title.
     this.titleBefore = this.titleService.getTitle();

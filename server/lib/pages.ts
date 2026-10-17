@@ -14,6 +14,17 @@ import { labelShown } from './site.ts';
 export { PUBLIC_PAGES };
 
 /**
+ * Pages that anyone can open but no search engine may index, nor any Referer
+ * name: a recipe opened by its share link (docs/adr/0020-share-links.md).
+ * Never in the sitemap or prerendered; X-Robots-Tag and Referrer-Policy are
+ * set on the reply (server/app.ts), and pageHtml adds the same as <meta>.
+ */
+export const PRIVATE_PAGES = ['/shared'];
+
+/** Whether an address is one of PRIVATE_PAGES, in any language: /de/shared is. */
+export const isPrivatePage = (pathname: string): boolean => PRIVATE_PAGES.includes(languages.pagePath(pathname));
+
+/**
  * Every page of the app (client/app/app.routes.ts): the public ones, and those
  * for signing in and once signed in. Any other address is the app's
  * not-found page.
@@ -31,7 +42,8 @@ export const APP_PAGES = [
   '/firing',
   '/notes',
   '/trash',
-  '/account'
+  '/account',
+  ...PRIVATE_PAGES
 ];
 
 /** Whether an address is one of the app's pages, in a language it knows: /de/recipe is, /xx/recipe is not. */
@@ -139,7 +151,13 @@ export function pageHtml(
   const page = languages.pagePath(pathname);
   const here = addressIn(site, code, page);
   const head: string[] = [];
-  if (isPage(pathname)) {
+  const listed = isPage(pathname) && !isPrivatePage(pathname);
+  if (isPrivatePage(pathname)) {
+    // nginx sends its own Referrer-Policy after the app's, which a browser would follow; this <meta> comes last.
+    head.push('<meta name="robots" content="noindex, nofollow" />');
+    head.push('<meta name="referrer" content="no-referrer" />');
+  }
+  if (listed) {
     head.push(`<link rel="canonical" href="${attribute(here)}" />`);
     if (!live.includes(code)) {
       head.push('<meta name="robots" content="noindex" />');
@@ -151,7 +169,7 @@ export function pageHtml(
     }
   }
   // Link previews read these; og:locale:alternate lists the other languages offered.
-  if (isPage(pathname) && live.includes(code)) {
+  if (listed && live.includes(code)) {
     head.push(`<meta property="og:locale" content="${ogLocale(code)}" />`);
     for (const other of live.filter((l) => l !== code)) {
       head.push(`<meta property="og:locale:alternate" content="${ogLocale(other)}" />`);

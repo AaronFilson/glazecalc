@@ -47,6 +47,7 @@ import { CompareChoice, RecipeCompare } from './recipe-compare';
 import { RecipeHelp } from './recipe-help';
 import { RecipeLibrary, libraryKey } from './recipe-library';
 import { RecipePrint } from './recipe-print';
+import { SharePanel } from './share-panel';
 import { Plan, oxideLabel, planSuggestion, suggestAmounts } from './suggest';
 import { BaseChoice, LeadMode, leadFreeBases, leadIn, recipeHasLead, replaceLead } from './lead';
 import { TryMaterial } from './pool';
@@ -157,6 +158,7 @@ const toggled = (set: ReadonlySet<string>, id: string): ReadonlySet<string> => {
     RecipeCompare,
     RecipeLibrary,
     RecipePrint,
+    SharePanel,
     RemoveButton,
     RichText,
     SwapReport,
@@ -230,7 +232,7 @@ const toggled = (set: ReadonlySet<string>, id: string): ReadonlySet<string> => {
     .saved-recipe-actions {
       margin-inline-start: auto;
     }
-    /* Print, Compare and Remove, on a line of their own under the name, Remove last. */
+    /* Print, Compare, Share and Remove, on a line of their own under the name, Remove last. */
     .saved-recipe-more {
       flex-basis: 100%;
       justify-content: flex-end;
@@ -292,8 +294,12 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
   protected readonly standardAdditivesFailed = signal(false);
   protected readonly myRecipes = signal<Recipe[]>([]);
   protected readonly expanded = signal<ReadonlySet<string>>(new Set());
-  /** The saved recipes whose More (Print, Compare, Remove) is open. */
+  /** The saved recipes whose More (Print, Compare, Share, Remove) is open. */
   protected readonly moreOpen = signal<ReadonlySet<string>>(new Set());
+  /** The saved recipe whose Share is open, under its More. */
+  protected readonly shareOpen = signal<string | null>(null);
+  /** A trial cannot share a recipe; its Share says why. */
+  protected readonly isTrial = computed(() => !!this.auth.trial());
   /** Whether there are enough saved recipes to offer to filter them by title. */
   protected readonly filterShown = computed(() => this.myRecipes().length > SAVED_FILTER_FROM);
   /** What the list is filtered by: emptied when the filter box goes, so a list it no longer shows is not filtered. */
@@ -417,6 +423,11 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
   private readonly printParam = toSignal(this.route.queryParamMap.pipe(map((params) => params.get('print'))), {
     initialValue: null
   });
+  /** ?sheet=worked opens the print view on the worked calculation (Show the working). */
+  protected readonly printSheet = toSignal(
+    this.route.queryParamMap.pipe(map((params) => (params.get('sheet') === 'worked' ? ('worked' as const) : null))),
+    { initialValue: null }
+  );
   private readonly recipesLoaded = signal(false);
   /** The recipe being edited, as it would be saved. */
   private readonly draft = computed<Recipe>(() => ({
@@ -573,13 +584,17 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
       );
     });
     // The focus goes to the print options when they open, and back to the Print button that opened them.
+    // Show the working opened it from its own button, in the unity formula's panel.
     let printed: string | null = null;
+    let sheet: string | null = null;
     effect(() => {
       const printing = this.printRecipe() ? this.printParam() : null;
       if (printing === printed) return;
-      const target = printing ? 'print-heading' : 'print-' + printed;
+      const opener = printed === 'draft' && sheet === 'worked' ? 'worked-draft' : 'print-' + printed;
+      const target = printing ? 'print-heading' : opener;
       if (!printing && printed && printed !== 'draft') untracked(() => this.showMore(printed!));
       printed = printing;
+      sheet = untracked(this.printSheet);
       untracked(() => afterNextRender(() => document.getElementById(target)?.focus(), { injector: this.injector }));
     });
   }
@@ -887,8 +902,8 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
 
   // Printing.
 
-  /** Opens the print view for the recipe being edited, saved or not. */
-  protected printDraft(): void {
+  /** Opens the print view for the recipe being edited, saved or not; on the worked calculation for Show the working. */
+  protected printDraft(sheet?: 'worked'): void {
     this.saveProblem.set('');
     if (!this.lines().length) {
       this.saveProblem.set(translate('recipe.page.addMaterialToPrint'));
@@ -900,15 +915,15 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
       this.checks.report(unreadable, notANumber());
       return;
     }
-    this.openPrint('draft');
+    this.openPrint('draft', sheet);
   }
 
   /** Opens the print view: for 'draft', or a saved recipe's id. Back in the browser closes it. */
-  protected openPrint(what: string): void {
+  protected openPrint(what: string, sheet?: 'worked'): void {
     this.viewOpenedHere = true;
     void this.router.navigate([], {
       relativeTo: this.route,
-      queryParams: { print: what },
+      queryParams: { print: what, sheet: sheet ?? null },
       queryParamsHandling: 'merge'
     });
   }
@@ -922,7 +937,7 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
   private leavePrint(): void {
     void this.router.navigate([], {
       relativeTo: this.route,
-      queryParams: { print: null },
+      queryParams: { print: null, sheet: null },
       queryParamsHandling: 'merge',
       replaceUrl: true
     });
@@ -1590,6 +1605,17 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
 
   protected toggleMore(recipe: Recipe): void {
     this.moreOpen.update((set) => toggled(set, recipe._id ?? ''));
+    if (!this.moreOpen().has(recipe._id ?? '') && this.shareOpen() === recipe._id) this.shareOpen.set(null);
+  }
+
+  /** Opens or closes a saved recipe's Share; the focus goes to its heading when it opens. */
+  protected toggleShare(recipe: Recipe): void {
+    const id = recipe._id ?? '';
+    const opening = this.shareOpen() !== id;
+    this.shareOpen.set(opening ? id : null);
+    if (opening) {
+      afterNextRender(() => document.getElementById('share-heading-' + id)?.focus(), { injector: this.injector });
+    }
   }
 
   /** Lists a saved recipe and opens its More, so the focus can go back to its Print or Compare. */

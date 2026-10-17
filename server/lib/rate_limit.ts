@@ -114,6 +114,23 @@ export const tokenDeletes = limiter(60, 100, 'too-many-deletes', {
   keyGenerator: (req) => 'token-deletes:' + (req.access && 'tokenId' in req.access ? req.access.tokenId : '')
 });
 
+/**
+ * Recipes opened by share link (GET /api/shared/recipe), per address: loose,
+ * for a class opening one teacher's links behind a school's one address, but
+ * not without end, since anyone may ask.
+ */
+export const sharedViews = limiter(15, 300, 'too-many-shared-views');
+
+/**
+ * Share links that open nothing, per address: a secret is 256 bits, so this
+ * only stops someone wasting the server's time; a class with a mistyped link
+ * has room to spare.
+ */
+export const sharedMisses = limiter(15, 50, 'too-many-shared-views', {
+  requestWasSuccessful: (_req, res) => res.statusCode !== 404,
+  skipSuccessfulRequests: true
+});
+
 // Two-step sign-in (docs/mfa-plan.md, item 9). The guard on guessing codes
 // is per account and kept on the account, not here: server/lib/code_lock.ts.
 

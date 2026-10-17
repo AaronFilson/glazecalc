@@ -136,6 +136,10 @@ export const MESSAGES = {
     'The Trash is full, so an access token cannot move anything more to it. Please empty some of it on the website first.',
   'account-limit': `An account can keep up to {limit} {label, select, ${MANY}}. Please remove some to save more.`,
 
+  // Share links (server/routes/share_routes.ts).
+  'not-shared': 'This recipe is not shared, or the link is not complete.',
+  'share-stopped': 'The recipe is no longer shared. Its link no longer opens it.',
+
   // Access tokens (server/lib/token_auth.ts).
   'token-invalid': 'The access token is not valid, has expired or was revoked.',
   'token-scope': 'The access token does not allow this.',
@@ -156,6 +160,7 @@ export const MESSAGES = {
   'too-many-attempts': 'Too many attempts. ' + WAIT,
   'too-many-codes': 'Too many codes tried. ' + WAIT,
   'too-many-tokens': 'Too many access tokens that do not work were tried from this address. ' + WAIT,
+  'too-many-shared-views': 'Too many shared recipes were opened from this address. ' + WAIT,
   'too-many-deletes':
     'This access token has moved too many records to the Trash in the last hour. Please try again later.'
 } satisfies Record<string, Text>;

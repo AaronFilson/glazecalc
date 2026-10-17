@@ -53,6 +53,8 @@ export interface RecordRoutesOptions {
   wrapper?: { create?: string; change?: string };
   /** Adds GET /getStandard. */
   standard?: boolean;
+  /** Runs once a record has gone to the Trash, with its id and owner: a recipe stops being shared. */
+  onTrash?: (id: string, ownedBy: string) => Promise<unknown>;
 }
 
 type Body = Record<string, unknown>;
@@ -85,7 +87,7 @@ const validId = (req: Request, res: Response): boolean => {
 
 export default function recordRoutes(
   Model: RecordModel,
-  { label, area, fields, required, wrapper = {}, standard = false }: RecordRoutesOptions
+  { label, area, fields, required, wrapper = {}, standard = false, onTrash }: RecordRoutesOptions
 ): express.Router {
   const router = express.Router();
   // The web session, or an access token that allows it.
@@ -165,6 +167,7 @@ export default function recordRoutes(
       res.status(409).json(say('trash-full'));
       return;
     }
+    await onTrash?.(req.params.id as string, String(user._id));
     await logActivity(req, 'trash', area, trashed.record);
     // A trial gets the place back for another record; the Trash does not count.
     if (user.guest) await giveBack(user._id, Model);

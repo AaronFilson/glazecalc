@@ -236,6 +236,7 @@ export class PrivacyPage {
     'site.privacy.storedSignIn',
     'site.privacy.storedSaved',
     'site.privacy.storedTrash',
+    'site.privacy.storedShares',
     'site.privacy.storedTokens',
     'site.privacy.storedActivity',
     'site.privacy.storedLimits',
@@ -249,6 +250,7 @@ export class PrivacyPage {
   protected readonly kept = marker([
     'site.privacy.keptAccount',
     'site.privacy.keptTrash',
+    'site.privacy.keptShares',
     'site.privacy.keptTokens',
     'site.privacy.keptActivity',
     'site.privacy.keptLimits',

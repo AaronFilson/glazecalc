@@ -46,23 +46,27 @@ function hasChemistry(record: MaterialInput): boolean {
 const isOldCopy = (additive: Additive): boolean =>
   !additive.percentmole && !additive.chemistryOf && !additive.noChemistry;
 
+/** The lines the unity formula is worked out from, and the additives left out of it, with why. */
+export interface UnityLines {
+  lines: RecipeLine[];
+  leftOut: string[];
+}
+
 /**
- * The unity formula of a recipe. Blank amounts count as 0. Additives are left
- * out unless they are included; then each counts at its weight in the base's
- * unit: a percent of the base's total, or its parts or grams as they are.
- * Stains and other additives with no chemistry add nothing, and an additive
- * whose analysis the unity formula cannot read is left out, with a warning.
- * An old copy in a saved recipe counts with the chemistry of the library's
- * record of that name, or is left out, with a warning, when there is none.
+ * The lines of a recipe that the unity formula counts: each material at its
+ * amount (blank counts as 0) and, when they are included, each additive at
+ * its weight in the base's unit: a percent of the base's total, or its parts
+ * or grams as they are. Stains and other additives with no chemistry add
+ * nothing, and an additive whose analysis the unity formula cannot read is
+ * left out, with a warning. An old copy in a saved recipe counts with the
+ * chemistry of the library's record of that name, or is left out, with a
+ * warning, when there is none. The worked calculation reads the same lines.
  */
-export function evaluate(
+export function unityLines(
   materials: RecipeMaterial[],
   additives: Additive[] = [],
   options: EvaluateOptions = {}
-): Evaluation {
-  if (!materials.some((m) => amountOf(m.amount) > 0 || (m.amount ?? '').trim() !== '')) {
-    return { analysis: null, problem: null, warnings: [] };
-  }
+): UnityLines {
   const lines: RecipeLine[] = materials.map((material) => ({ material, amount: material.amount ?? '' }));
   const leftOut: string[] = [];
   if (options.includeAdditives) {
@@ -85,6 +89,21 @@ export function evaluate(
       lines.push({ material: { ...chemistry, name: additive.name }, amount: weight });
     }
   }
+  return { lines, leftOut };
+}
+
+/** Whether a recipe has any amount to work a unity formula out from. */
+export const hasAmounts = (materials: RecipeMaterial[]): boolean =>
+  materials.some((m) => amountOf(m.amount) > 0 || (m.amount ?? '').trim() !== '');
+
+/** The unity formula of a recipe, from its unityLines. */
+export function evaluate(
+  materials: RecipeMaterial[],
+  additives: Additive[] = [],
+  options: EvaluateOptions = {}
+): Evaluation {
+  if (!hasAmounts(materials)) return { analysis: null, problem: null, warnings: [] };
+  const { lines, leftOut } = unityLines(materials, additives, options);
   try {
     const result = calculateUMF(lines);
     // uList is the key saved recipes and older versions of the app use.

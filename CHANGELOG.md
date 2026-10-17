@@ -6,6 +6,18 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Added
 
+- **Share a recipe by link** ([ADR 0020](docs/adr/0020-share-links.md)). Share, under a saved
+  recipe's More, makes a read-only link that anyone can open without an account: the recipe as it
+  is now, its unity formula and the working, in the viewer's language. The link is 256 random bits
+  after `#` (so no log or Referer holds it), shown once and stored only as a hash; a new link
+  replaces it, Stop sharing ends it, and moving the recipe to the Trash ends it too. It never shows
+  the owner's email or account, ids, material notes or prices, and the recipe's notes only when
+  the owner ticks them. Shared pages are never indexed and are rate-limited. Trials cannot share.
+  The privacy page, the data download and account deletion include share links.
+- **Show the working:** how the unity (Seger) formula comes from a recipe, step by step (grams,
+  each material's oxides and their moles, the totals, the fluxes added up, each oxide divided by
+  them), with the recipe's own numbers and the same answer as the recipe page. From the unity
+  formula's panel, as a third kind of print (a worksheet), and on a shared recipe.
 - **The Trash and Undo.** Removing a recipe, material, note or other record moves it to the Trash,
   where it waits 30 days; the removal notice has Undo, and the Trash page puts records back, deletes
   them for good or empties the Trash. Each saved change keeps the version before it (the last 20,
