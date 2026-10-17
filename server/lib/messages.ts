@@ -128,6 +128,11 @@ export const MESSAGES = {
   'record-deleted': `Successfully deleted {label, select, ${ONE}}`,
   'account-limit': `An account can keep up to {limit} {label, select, ${MANY}}. Please remove some to save more.`,
 
+  // Access tokens (server/lib/token_auth.ts).
+  'token-invalid': 'The access token is not valid, has expired or was revoked.',
+  'token-scope': 'The access token does not allow this.',
+  'token-not-here': 'This can only be done signed in on the website, not with an access token.',
+
   // Requests in general.
   'not-found': 'Not found',
   'other-site': 'Requests from other sites are not accepted.',
@@ -141,7 +146,8 @@ export const MESSAGES = {
   'too-many-resets': 'Too many password reset requests. ' + WAIT,
   'too-many-email-links': 'Too many emails requested. ' + WAIT,
   'too-many-attempts': 'Too many attempts. ' + WAIT,
-  'too-many-codes': 'Too many codes tried. ' + WAIT
+  'too-many-codes': 'Too many codes tried. ' + WAIT,
+  'too-many-tokens': 'Too many access tokens that do not work were tried from this address. ' + WAIT
 } satisfies Record<string, Text>;
 
 export type MessageCode = keyof typeof MESSAGES;

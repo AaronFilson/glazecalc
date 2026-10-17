@@ -14,6 +14,7 @@ import Trash from '../models/trash.ts';
 const records: Record<string, Router> = {
   additives: recordRoutes(Additive, {
     label: 'additive',
+    area: 'additives',
     fields: [
       'name',
       'rawformula',
@@ -33,17 +34,20 @@ const records: Record<string, Router> = {
   }),
   advice: recordRoutes(Advice, {
     label: 'advice',
+    area: 'advice',
     fields: ['title', 'content', 'tags'],
     required: ['title', 'content', 'tags'],
     standard: true
   }),
   firing: recordRoutes(Firing, {
     label: 'firing',
+    area: 'firing',
     fields: ['title', 'kiln', 'date', 'notes', 'fieldsIncluded', 'rows'],
     required: ['title', 'fieldsIncluded', 'rows']
   }),
   materials: recordRoutes(Material, {
     label: 'material',
+    area: 'materials',
     fields: [
       'name',
       'rawformula',
@@ -61,12 +65,14 @@ const records: Record<string, Router> = {
   }),
   notes: recordRoutes(Note, {
     label: 'note',
+    area: 'notes',
     fields: ['title', 'content', 'relatedCollection', 'relatedId'],
     required: ['content', 'relatedCollection', 'relatedId']
   }),
   // The client sends a changed recipe as { recipe: {...} }.
   recipe: recordRoutes(Recipe, {
     label: 'recipe',
+    area: 'recipes',
     fields: ['title', 'date', 'notes', 'materials', 'additives', 'computed', 'includeAdditives'],
     required: ['title', 'materials'],
     wrapper: { change: 'recipe' },
@@ -75,6 +81,7 @@ const records: Record<string, Router> = {
   // ...and trash as { trash: {...} }, both new and changed.
   trash: recordRoutes(Trash, {
     label: 'trash',
+    area: 'trash',
     fields: ['content', 'date', 'fromCollection'],
     required: ['content', 'date', 'fromCollection'],
     wrapper: { create: 'trash', change: 'trash' }

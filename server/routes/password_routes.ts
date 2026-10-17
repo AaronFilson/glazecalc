@@ -7,7 +7,9 @@
 //                              recoveryCode or passkey, as lib/mfa.d.ts FactorProof)
 //
 // A new password signs out every device (the user's tokenVersion goes up) and
-// sends a notice to the account's address. A 400 about one field names it:
+// sends a notice to the account's address. A reset, which may mean someone
+// else knew the password, also revokes every access token and connected app
+// (decision 5); an ordinary change keeps them. A 400 about one field names it:
 // { msg, field: 'password' }.
 import crypto from 'node:crypto';
 import express from 'express';
@@ -21,6 +23,7 @@ import * as password from '../lib/password.ts';
 import * as limits from '../lib/rate_limit.ts';
 import { confirmChange } from '../lib/second_step.ts';
 import * as session from '../lib/session.ts';
+import { revokeAll } from '../models/access_token.ts';
 import PasswordReset, { cancelLinks } from '../models/password_reset.ts';
 import User, { mfaOn, type UserDocument } from '../models/user.ts';
 import { say } from '../lib/messages.ts';
@@ -93,6 +96,7 @@ passwordRouter.post('/reset', limits.resetPassword, express.json(), async (req, 
   // The link went to the account's address, so opening it also proves the address is theirs.
   user.emailUnverified = undefined;
   await setPassword(user, body.password as string);
+  await revokeAll(user._id, 'password-reset');
   return res.status(200).json(say('password-reset'));
 });
 

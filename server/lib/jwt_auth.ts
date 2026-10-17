@@ -1,5 +1,8 @@
 // Lets a request through with req.user set when it carries a valid, current
-// sign-in token; otherwise answers 401.
+// sign-in token; otherwise answers 401. An access token (a personal token or
+// an OAuth client's, server/lib/token_auth.ts) is never a sign-in: routes
+// behind jwtAuth refuse it, and only requireScope (server/lib/require_scope.ts)
+// lets one in.
 import type { NextFunction, Request, Response } from 'express';
 import jwt from 'jsonwebtoken';
 import User, { type UserDocument } from '../models/user.ts';
@@ -7,6 +10,7 @@ import appSecret from './app_secret.ts';
 import * as guestLimits from './guest_limits.ts';
 import * as session from './session.ts';
 import { say } from './messages.ts';
+import { accessTokenIn, refuseAccessTokens } from './token_auth.ts';
 
 /**
  * The sign-in token: from an `Authorization: Bearer` header (scripts and tests),
@@ -71,12 +75,17 @@ export const userOf = (req: Request): UserDocument => {
 };
 
 export default async function jwtAuth(req: Request, res: Response, next: NextFunction): Promise<void> {
+  // No route here takes an access token (default deny). It is checked all
+  // the same, so a client learns whether its token is bad (401) or only not
+  // for this (403), as RFC 6750 asks; the cookie is not looked at.
+  if (accessTokenIn(req) !== null) return refuseAccessTokens(req, res, next);
   const user = await currentUser(req);
   if (!user) {
     res.status(401).json(say('not-signed-in'));
     return;
   }
   req.user = user;
+  req.access = { via: 'session' };
   if (user.guest) return guestLimits.parseBody(req, res, next);
   next();
 }

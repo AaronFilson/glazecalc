@@ -15,12 +15,16 @@
 import express, { type Request, type Response } from 'express';
 import mongoose from 'mongoose';
 import { giveBack, quota, type RecordModel } from './guest_limits.ts';
-import jwtAuth, { userOf } from './jwt_auth.ts';
+import { userOf } from './jwt_auth.ts';
 import { say } from './messages.ts';
+import requireScope from './require_scope.ts';
+import type { Area } from './scopes.ts';
 
 export interface RecordRoutesOptions {
   /** The kind of record, a code the messages name it by (server/lib/messages.ts): 'recipe'. */
   label: string;
+  /** The part of the account it is, for access tokens' permissions (server/lib/scopes.ts). */
+  area: Area;
   /** What a user may set. */
   fields: string[];
   /** What a new record must have. */
@@ -58,13 +62,16 @@ const validId = (req: Request, res: Response): boolean => {
 
 export default function recordRoutes(
   Model: RecordModel,
-  { label, fields, required, wrapper = {}, standard = false }: RecordRoutesOptions
+  { label, area, fields, required, wrapper = {}, standard = false }: RecordRoutesOptions
 ): express.Router {
   const router = express.Router();
+  // The web session, or an access token that allows it.
+  const reading = requireScope(`${area}:read`);
+  const writing = requireScope(`${area}:write`);
   const jsonParser = express.json();
   const notFound = say('record-not-found', { label });
 
-  router.post('/create', jwtAuth, quota(Model, label), jsonParser, async (req, res) => {
+  router.post('/create', writing, quota(Model, label), jsonParser, async (req, res) => {
     const source = recordIn(req, wrapper.create) ?? {};
     if (required.some((field) => missing(source[field]))) {
       res.status(400).json(MISSING);
@@ -73,11 +80,11 @@ export default function recordRoutes(
     res.status(200).json(await Model.create({ ...pick(source, fields), ownedBy: userOf(req).id }));
   });
 
-  router.get('/getAll', jwtAuth, async (req, res) => {
+  router.get('/getAll', reading, async (req, res) => {
     res.status(200).json(await Model.find({ ownedBy: userOf(req).id }).sort({ _id: 1 }));
   });
 
-  router.get('/getLatest', jwtAuth, async (req, res) => {
+  router.get('/getLatest', reading, async (req, res) => {
     const newest = await Model.findOne({ ownedBy: userOf(req).id }).sort({ _id: -1 });
     if (!newest) {
       res.status(404).json(say('none-saved', { label }));
@@ -86,7 +93,7 @@ export default function recordRoutes(
     res.status(200).json(newest);
   });
 
-  router.put('/change/:id', jwtAuth, jsonParser, async (req, res) => {
+  router.put('/change/:id', writing, jsonParser, async (req, res) => {
     if (!validId(req, res)) return;
     const source = recordIn(req, wrapper.change);
     if (!source) {
@@ -118,7 +125,7 @@ export default function recordRoutes(
     }
   });
 
-  router.delete('/delete/:id', jwtAuth, async (req, res) => {
+  router.delete('/delete/:id', writing, async (req, res) => {
     if (!validId(req, res)) return;
     const user = userOf(req);
     const result = await Model.deleteOne({ _id: req.params.id, ownedBy: user.id });

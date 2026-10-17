@@ -1,6 +1,7 @@
 import type { Request, Response } from 'express';
 import { type Options, rateLimit } from 'express-rate-limit';
 import { type MessageCode, say } from './messages.ts';
+import { accessTokenIn } from './token_auth.ts';
 
 // Limits per client address, unless they say otherwise. In production nginx
 // passes the address in X-Forwarded-For, which server/app.ts trusts for exactly
@@ -82,6 +83,19 @@ export const changePassword = limiter(15, 10, 'too-many-attempts', { skipSuccess
  */
 export const passwordCheck = limiter(15, 10, 'too-many-attempts', {
   keyGenerator: (req) => 'user:' + String(req.user?._id)
+});
+
+/**
+ * Access tokens (server/lib/token_auth.ts) that do not work, per address:
+ * only requests that carry one are counted, and only those refused with 401,
+ * so a script using a good token is never slowed, and guessing tokens (a
+ * 2^256 search, and the checksum turns away made-up ones before the database
+ * is asked) stops quickly. Once over, no token is checked at all.
+ */
+export const accessTokens = limiter(15, 30, 'too-many-tokens', {
+  skip: (req) => !accessTokenIn(req),
+  requestWasSuccessful: (_req, res) => res.statusCode !== 401,
+  skipSuccessfulRequests: true
 });
 
 // Two-step sign-in (docs/mfa-plan.md, item 9). The guard on guessing codes

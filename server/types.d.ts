@@ -1,4 +1,5 @@
 // What the server's middleware adds to Express requests.
+import type { Access } from './lib/token_auth.ts';
 import type { UserDocument } from './models/user.ts';
 
 declare global {
@@ -6,6 +7,8 @@ declare global {
     interface Request {
       /** The signed-in user, set by lib/jwt_auth.ts. */
       user?: UserDocument;
+      /** How the user got in: the web session, or an access token (lib/require_scope.ts). */
+      access?: Access;
       /** HTTP Basic credentials, set by lib/basic_http.ts for sign-in. */
       basicHTTP?: { email: string; password: string };
       /**
