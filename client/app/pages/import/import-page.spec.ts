@@ -266,6 +266,29 @@ describe('ImportPage', () => {
     httpMock().expectOne(API + '/recipe/create');
   });
 
+  it('asks how to read a number that can be read two ways, and reads the paste again as chosen', async () => {
+    const { fixture, root, page, paste } = await create();
+    await paste('Test\nCuster 50\nWhiting 22,5\nSilica 1,500');
+    const amounts = () => page['drafts']()[0].lines.map((l: { amount: string }) => l.amount);
+    // Read as the reader's locale does, but asked.
+    expect(amounts()).toEqual(['50', '22.5', '1500']);
+    expect(text(fixture, '.import-ambiguous-text')).toContain('can be read two ways, such as “1,500”: 1.5 or 1,500');
+    const buttons = [...root.querySelectorAll<HTMLButtonElement>('.import-ambiguous button')];
+    expect(buttons.map((b) => b.textContent?.trim())).toEqual(['Read 1,500 as 1.5', 'Read 1,500 as 1,500']);
+    expect(buttons.map((b) => b.getAttribute('aria-pressed'))).toEqual(['false', 'true']);
+    buttons[0].click();
+    await settle(fixture);
+    expect(amounts()).toEqual(['50', '22.5', '1.5']);
+    expect(
+      [...root.querySelectorAll<HTMLButtonElement>('.import-ambiguous button')].map((b) =>
+        b.getAttribute('aria-pressed')
+      )
+    ).toEqual(['true', 'false']);
+    // A paste with nothing to ask shows no choice.
+    await paste('Test\nCuster 50\nWhiting 22,5');
+    expect(root.querySelector('.import-ambiguous')).toBeNull();
+  });
+
   it('limits the box, and says so when the paste is too long instead of reading part of it', async () => {
     const { fixture, root, paste } = await create();
     expect((root.querySelector('#paste-text') as HTMLTextAreaElement).getAttribute('maxlength')).toBe('50000');

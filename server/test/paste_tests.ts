@@ -132,6 +132,33 @@ describe('Paste-in import: decimal marks', () => {
     expect(lines(one('Custer Feldspar 25,5'))).to.eql([['Custer Feldspar', 25.5, null, false]]);
   });
 
+  it('decides the decimal mark once for the whole paste, not number by number', () => {
+    const mixed = 'Feldspar 22,5\nEPK 1,500\nSilica 30';
+    // Other numbers write decimal commas, so 1,500 could be 1.5: asked, and by default read as the locale does.
+    expect(recipe.ambiguousNumbers(mixed)).to.eql(['1,500']);
+    expect(one(mixed, { locale: 'en' }).lines.map((l) => l.amount)).to.eql([22.5, 1500, 30]);
+    expect(one(mixed, { locale: 'de' }).lines.map((l) => l.amount)).to.eql([22.5, 1.5, 30]);
+    expect(one(mixed, { reading: 'decimal' }).lines.map((l) => l.amount)).to.eql([22.5, 1.5, 30]);
+    expect(one(mixed, { reading: 'group', locale: 'de' }).lines.map((l) => l.amount)).to.eql([22.5, 1500, 30]);
+    // A chosen mark decides it, with nothing to ask.
+    expect(recipe.ambiguousNumbers(mixed, 'comma')).to.eql([]);
+    expect(one(mixed, { mark: 'comma' }).lines.map((l) => l.amount)).to.eql([22.5, 1.5, 30]);
+  });
+
+  it('reads a number that the paste’s other numbers settle as they do', () => {
+    // Decimal points elsewhere: 1,500 is a thousand and a half, whatever the locale.
+    const points = 'Feldspar 22.5\nEPK 1,500';
+    expect(recipe.ambiguousNumbers(points)).to.eql([]);
+    expect(one(points, { locale: 'de' }).lines.map((l) => l.amount)).to.eql([22.5, 1500]);
+    // Decimal commas elsewhere: 1.500 is digit groups.
+    const commas = 'Feldspat 22,5\nQuarz 1.500';
+    expect(recipe.ambiguousNumbers(commas)).to.eql([]);
+    expect(one(commas, { locale: 'en' }).lines.map((l) => l.amount)).to.eql([22.5, 1500]);
+    // Nothing settles it: asked, and the locale reads it.
+    expect(recipe.ambiguousNumbers('Custer 1,250')).to.eql(['1,250']);
+    expect(recipe.ambiguousNumbers('Custer 12,5\nSilica 40\nWhiting 1250')).to.eql([]);
+  });
+
   it('reads Arabic-Indic digits and the Arabic decimal mark', () => {
     expect(one('Silica ٢٥٫٥').lines[0].amount).to.equal(25.5);
   });

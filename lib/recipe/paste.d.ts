@@ -40,12 +40,20 @@ export interface PasteOptions {
   locale?: string;
   /** Whether text is a material's whole name ("Frit 3134"), so it is not read as "Frit" at 3134. */
   isName?: (text: string) => boolean;
+  /** How to read a number that could be a decimal or digit groups ("1,500" as 1.5 or 1500), when the paste does not decide it; the locale reads it by default. */
+  reading?: 'decimal' | 'group';
 }
 
 /** The most a paste can be: characters, lines, and characters in a line that can be a material. */
 export const PASTE_LIMITS: { readonly chars: number; readonly lines: number; readonly line: number };
 /** Which limit a paste is over, or null. parsePaste reads nothing from one that is over. */
 export function pasteTooLong(text: string): 'chars' | 'lines' | null;
+
+/**
+ * The numbers of a paste that can be read two ways even given all its numbers ("1,500" beside decimal
+ * commas), as pasted, each once. None when the reader's mark is chosen.
+ */
+export function ambiguousNumbers(text: string, mark?: DecimalMark): string[];
 
 export function parsePaste(text: string, options?: PasteOptions): PastedRecipe[];
 

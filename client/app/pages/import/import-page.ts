@@ -6,6 +6,7 @@ import { marker } from '@jsverse/transloco-keys-manager/marker';
 import { amountOf, isAmount, totalOf } from '../../../../lib/recipe/amounts';
 import {
   PASTE_LIMITS,
+  ambiguousNumbers,
   foldedName,
   importAmounts,
   matchName,
@@ -18,7 +19,7 @@ import { errorMessage } from '../../core/error-message';
 import { Additive, AdditiveUnit, Material, Recipe } from '../../core/models';
 import { Busy } from '../../shared/busy';
 import { localDate } from '../../shared/dates';
-import { formatLocale, notANumber, typedDecimalMark, upTo } from '../../shared/format';
+import { formatLocale, notANumber, parseNumber, typedDecimalMark, upTo } from '../../shared/format';
 import { Notices, NoticesList } from '../../shared/notices';
 import { NumberInput } from '../../shared/number-input';
 import { PageHeader } from '../../shared/page-header';
@@ -102,7 +103,7 @@ const HOW_NOTES: Partial<Record<MatchHow, string>> = {
         aria-describedby="paste-help"
         [attr.maxlength]="limits.chars"
         [ngModel]="text()"
-        (ngModelChange)="text.set($event)"
+        (ngModelChange)="typed($event)"
       ></textarea>
       <p id="paste-help" class="small muted import-help">{{ t('recipe.import.pasteHelp') }}</p>
       @if (tooLong(); as reason) {
@@ -124,6 +125,38 @@ const HOW_NOTES: Partial<Record<MatchHow, string>> = {
 
     @if (drafts().length) {
       <h2 class="h4" id="preview-heading" tabindex="-1">{{ t('recipe.import.previewHeading') }}</h2>
+      @if (ambiguous().length) {
+        <section class="panel import-ambiguous" role="group" aria-labelledby="import-ambiguous-text">
+          <p id="import-ambiguous-text" class="import-ambiguous-text">
+            {{
+              t('recipe.import.ambiguous', {
+                count: ambiguous().length,
+                example: ambiguous()[0],
+                decimal: asDecimal(ambiguous()[0]),
+                group: asGroup(ambiguous()[0])
+              })
+            }}
+          </p>
+          <div class="import-actions">
+            <button
+              type="button"
+              class="btn btn-light border"
+              [attr.aria-pressed]="readingNow() === 'decimal'"
+              (click)="readAs('decimal')"
+            >
+              {{ t('recipe.import.readAsDecimal', { example: ambiguous()[0], value: asDecimal(ambiguous()[0]) }) }}
+            </button>
+            <button
+              type="button"
+              class="btn btn-light border"
+              [attr.aria-pressed]="readingNow() === 'group'"
+              (click)="readAs('group')"
+            >
+              {{ t('recipe.import.readAsGroup', { example: ambiguous()[0], value: asGroup(ambiguous()[0]) }) }}
+            </button>
+          </div>
+        </section>
+      }
       @if (tooMany()) {
         <p class="muted">{{ t('recipe.import.tooMany', { max: mostRecipes }) }}</p>
       }
@@ -296,6 +329,9 @@ const HOW_NOTES: Partial<Record<MatchHow, string>> = {
       color: var(--gc-danger-text);
       margin: 0 0 0.75rem;
     }
+    .import-ambiguous-text {
+      margin: 0 0 0.5rem;
+    }
     .import-help {
       margin: 0.5rem 0 0.75rem;
     }
@@ -407,6 +443,11 @@ export class ImportPage implements OnInit {
   protected readonly drafts = signal<Draft[]>([]);
   protected readonly tooMany = signal(false);
   protected readonly limits = PASTE_LIMITS;
+  /** Numbers in the paste that can be read two ways (1,500 is 1.5 or 1500), shown with a choice. */
+  protected readonly ambiguous = signal<string[]>([]);
+  /** How the person chose to read them; null until they do, when the locale reads them. */
+  private readonly reading = signal<'decimal' | 'group' | null>(null);
+  protected readonly readingNow = signal<'decimal' | 'group' | null>(null);
   /** Which limit the text is over, once Read has been pressed. */
   protected readonly tooLong = signal<'chars' | 'lines' | null>(null);
   /** Read, and nothing found. */
@@ -476,6 +517,20 @@ export class ImportPage implements OnInit {
     }
   }
 
+  protected typed(value: string): void {
+    this.text.set(value);
+    this.reading.set(null);
+  }
+
+  protected asDecimal = (token: string): number => Number(token.replace(',', '.'));
+  protected asGroup = (token: string): number => Number(token.replace(/[.,]/, ''));
+
+  /** Reads the paste again with the person's choice for the numbers that can be read two ways. */
+  protected readAs(reading: 'decimal' | 'group'): void {
+    this.reading.set(reading);
+    this.readPaste();
+  }
+
   /** Reads the pasted text into recipes to check, each line matched to a record. */
   protected readPaste(): void {
     if (!this.ready()) return;
@@ -484,6 +539,7 @@ export class ImportPage implements OnInit {
     this.tooLong.set(over);
     if (over) {
       this.drafts.set([]);
+      this.ambiguous.set([]);
       this.readEmpty.set(false);
       this.readStatus.set(translate('recipe.import.tooLong', { reason: over, ...PASTE_LIMITS }));
       return;
@@ -493,8 +549,19 @@ export class ImportPage implements OnInit {
     const read = parsePaste(this.text(), {
       mark: typedDecimalMark(),
       locale: formatLocale(),
+      reading: this.reading() ?? undefined,
       isName: (text) => names.has(foldedName(text))
     }).filter((recipe) => recipe.lines.length);
+    const unsure = ambiguousNumbers(this.text(), typedDecimalMark());
+    this.ambiguous.set(unsure);
+    this.readingNow.set(
+      !unsure.length
+        ? null
+        : (this.reading() ??
+            (parseNumber(unsure[0], typedDecimalMark(), formatLocale()) === this.asDecimal(unsure[0])
+              ? 'decimal'
+              : 'group'))
+    );
     this.tooMany.set(read.length > MOST_RECIPES);
     const drafts = read.slice(0, MOST_RECIPES).map((recipe) => this.draftOf(recipe, choices));
     this.drafts.set(drafts);
