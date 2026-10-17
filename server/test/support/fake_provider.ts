@@ -61,10 +61,26 @@ export class FakeProvider {
   /** Token requests answered, per provider. */
   tokenRequests: Record<FakeProviderId, number> = { google: 0, github: 0 };
   private server: http.Server | null = null;
-  private readonly keys = crypto.generateKeyPairSync('rsa', { modulusLength: 2048 });
-  private readonly kid = 'fake-' + crypto.randomBytes(4).toString('hex');
+  private readonly keys: { privateKey: crypto.KeyObject; publicKey: crypto.KeyObject };
+  private readonly kid: string;
   private readonly grants = new Map<string, Grant>();
   private readonly accessTokens = new Map<string, FakeIdentity>();
+
+  /**
+   * A new signing key for each fake, unless one is given (a PEM private key):
+   * the browser tests give each worker's fake the same one, since the app keeps
+   * the keys it fetched for a minute and would refuse a second fake's tokens.
+   */
+  constructor(privateKeyPem?: string) {
+    if (privateKeyPem) {
+      const privateKey = crypto.createPrivateKey(privateKeyPem);
+      this.keys = { privateKey, publicKey: crypto.createPublicKey(privateKey) };
+    } else {
+      this.keys = crypto.generateKeyPairSync('rsa', { modulusLength: 2048 });
+    }
+    const der = this.keys.publicKey.export({ format: 'der', type: 'spki' });
+    this.kid = 'fake-' + crypto.createHash('sha256').update(der).digest('hex').slice(0, 8);
+  }
 
   async start(port = 0): Promise<void> {
     this.server = http.createServer((req, res) => {

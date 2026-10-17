@@ -1,5 +1,5 @@
 const { test, expect } = require('@playwright/test');
-const { API, confirmedAccount, signUpAndSignIn } = require('./helpers');
+const { API, confirmedAccount, signUpAndSignIn, startTrial } = require('./helpers');
 const { confirmLink, nextEmail } = require('./mail');
 
 // The account page's "Access tokens" (docs/integrations-plan.md, item 27):
@@ -131,8 +131,7 @@ test('shows how to connect an assistant, with this site’s address', async ({ p
 });
 
 test('is not offered to a trial', async ({ page }) => {
-  await page.goto('/');
-  await page.locator('.hero-actions').getByRole('button', { name: 'Try it now' }).click();
+  await startTrial(page);
   await expect(page).toHaveURL(/\/recipe$/);
   await page.goto('/account');
   await expect(page.locator('.trial-account')).toBeVisible();

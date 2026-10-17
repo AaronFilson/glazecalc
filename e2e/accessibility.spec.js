@@ -4,9 +4,22 @@
 // how a screen reader words things still need a person.
 const { test, expect } = require('@playwright/test');
 const { default: AxeBuilder } = require('@axe-core/playwright');
-const { API, addColorant, addStandardMaterial, confirmedAccount, signUpAndSignIn, totp } = require('./helpers');
+const {
+  API,
+  addColorant,
+  addStandardMaterial,
+  confirmedAccount,
+  signUpAndSignIn,
+  startTrial,
+  totp
+} = require('./helpers');
 
 const WCAG = ['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa'];
+
+// A long file, its tests apart from each other: they spread over the workers
+// instead of running one after another in one.
+test.describe.configure({ mode: 'parallel' });
+
 // Landmarks and headings, which axe tags as best practice rather than WCAG: one main
 // landmark with all the content in landmarks, one h1, and no heading levels skipped.
 const STRUCTURE = Object.fromEntries(
@@ -155,8 +168,9 @@ for (const colorScheme of ['light', 'dark']) {
     });
 
     test('a trial', async ({ page }) => {
-      await page.goto('/');
-      await page.locator('.hero-actions').getByRole('button', { name: 'Try it now' }).click();
+      // Several pages or checks of a whole page: more than the default 30 seconds on a busy machine.
+      test.setTimeout(60000);
+      await startTrial(page);
       await expect(page.locator('.trial-bar')).toBeVisible();
       await expectNoProblems(page, colorScheme + ' trial /recipe');
       await page.locator('.trial-bar').getByRole('button', { name: 'Discard trial' }).click();

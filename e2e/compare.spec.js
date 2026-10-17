@@ -97,6 +97,8 @@ test('compares saved recipes picked from the list, and colorants counted alike',
 test('suggests amounts when a swap is not like for like, asking what brings back what it leaves short', async ({
   page
 }) => {
+  // Several pages or checks of a whole page: more than the default 30 seconds on a busy machine.
+  test.setTimeout(60000);
   await page.locator('#recipe-name').fill('Niter glaze');
   for (const [name, amount] of NITER_GLAZE) await addStandardMaterial(page, name, amount);
   await expect(page.locator('.recipe-swap')).toContainText(
@@ -132,6 +134,8 @@ test('suggests amounts when a swap is not like for like, asking what brings back
 });
 
 test('says how a suggestion was made, and works it out again leaving one out or trying others', async ({ page }) => {
+  // Several pages or checks of a whole page: more than the default 30 seconds on a busy machine.
+  test.setTimeout(60000);
   for (const [name, amount] of NITER_GLAZE) await addStandardMaterial(page, name, amount);
   await page.getByRole('button', { name: 'Suggest amounts and compare' }).click();
   // Materials to try, before working it out: added from the library, perhaps as a must.
@@ -175,6 +179,8 @@ test('says how a suggestion was made, and works it out again leaving one out or 
 });
 
 test('makes a recipe from what is on hand, kept with the account for next time', async ({ page }) => {
+  // Several pages or checks of a whole page: more than the default 30 seconds on a busy machine.
+  test.setTimeout(60000);
   await page.locator('#recipe-name').fill('Celadon');
   for (const [name, amount] of OLD_CELADON) await addStandardMaterial(page, name, amount);
   await page.getByRole('button', { name: 'Match with what I have' }).click();

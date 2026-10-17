@@ -69,6 +69,8 @@ const visitAll = async (page, pages) => {
 };
 
 test('every page loads with no Content-Security-Policy violations', async ({ page }) => {
+  // Several pages or checks of a whole page: more than the default 30 seconds on a busy machine.
+  test.setTimeout(60000);
   await signUpAndSignIn(page);
   const violations = await watchViolations(page);
 
@@ -87,6 +89,8 @@ test('every page loads with no Content-Security-Policy violations', async ({ pag
 // apart, as two headers would). The prerendered public pages are checked
 // signed out as well, as most visitors see them.
 test("every page loads with no violations under nginx's policy too", async ({ page }) => {
+  // Some 35 pages, each through page.route: more than the usual 30 seconds when the workers are busy.
+  test.slow();
   expect(NGINX_POLICY).toContain("default-src 'self'");
   await page.route('**/*', async (route) => {
     const response = await route.fetch();
