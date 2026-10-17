@@ -290,6 +290,23 @@ describe('RecipePage', () => {
     await saving;
   });
 
+  it('takes the firing off a saved recipe with null when unknown is chosen', async () => {
+    const fired: Recipe = { _id: 'r2b', title: 'Cone 10 white', firing: 'high', materials: [{ ...WHITING, amount: '20' }] };
+    const { fixture, page } = await create([fired]);
+    page['open'](fired);
+    await fixture.whenStable();
+    const firing = (fixture.nativeElement as HTMLElement).querySelector('#limit-firing') as HTMLSelectElement;
+    firing.value = '';
+    firing.dispatchEvent(new Event('change'));
+    await fixture.whenStable();
+    expect(page['dirty']()).toBe(true);
+    const saving = page['save']();
+    const req = httpMock().expectOne({ method: 'PUT', url: API + '/recipe/change/r2b' });
+    expect(req.request.body.recipe.firing).toBeNull();
+    req.flush({ msg: 'Successfully updated recipe' });
+    await saving;
+  });
+
   it('saves the SG target the calculator sets as sgTarget, and takes it off a saved recipe with null', async () => {
     const mixed: Recipe = { _id: 'r3', title: 'Dipping', sgTarget: 1.4, materials: [{ ...WHITING, amount: '20' }] };
     const { fixture, page } = await create([mixed]);

@@ -8,7 +8,7 @@ const recipeSchema = new mongoose.Schema({
   computed: [mongoose.Schema.Types.Mixed],
   date: String,
   // The firing the glaze is for, as a band: cone 06-02, cone 4-6 or cone 9-11 (lib/recipe/limits.js);
-  // the recipe page checks it against a limit set for that band. Not saved until chosen.
+  // the recipe page checks it against a limit set for that band. Not saved until chosen; null clears it.
   firing: { type: String, enum: ['low', 'mid', 'high'] },
   // The specific gravity the glaze is mixed to, set from the recipe page's SG calculator and
   // read by the mix ticket. A number from 1 (water) to 2.5; null clears it.

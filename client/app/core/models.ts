@@ -106,8 +106,8 @@ export interface Recipe extends Owned {
   computed?: RecipeAnalysis[] | RecipeAnalysis;
   /** Whether the unity formula counts the additives too. */
   includeAdditives?: boolean;
-  /** The firing it is for, as a band (lib/recipe/limits.js): cone 06-02, cone 4-6 or cone 9-11. */
-  firing?: FiringBand;
+  /** The firing it is for, as a band (lib/recipe/limits.js): cone 06-02, cone 4-6 or cone 9-11; null clears it. */
+  firing?: FiringBand | null;
   /** The specific gravity its glaze is mixed to, 1 to 2.5, set from the SG calculator; null clears it. */
   sgTarget?: number | null;
 }

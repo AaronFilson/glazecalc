@@ -48,6 +48,20 @@ describe('recipe API', () => {
     expect(await create({ ...leach, firing: 'cone 10' })).to.have.status(400);
   });
 
+  it('lets the firing be cleared with null, so a recipe saved as high and then set to unknown reloads as unknown', async () => {
+    const res = await create({ ...leach, firing: 'high' });
+    expect(res).to.have.status(200);
+    const cleared = await api()
+      .put('/recipe/change/' + res.body._id)
+      .set('Authorization', 'Bearer ' + token)
+      .send({ recipe: { firing: null } });
+    expect(cleared).to.have.status(200);
+    const again = await api()
+      .get('/recipe/getLatest')
+      .set('Authorization', 'Bearer ' + token);
+    expect(again.body.firing ?? null).to.equal(null);
+  });
+
   it('keeps the SG the glaze is mixed to as sgTarget, between 1 and 2.5, and lets it be cleared', async () => {
     const res = await create({ ...leach, sgTarget: 1.45 });
     expect(res).to.have.status(200);

@@ -832,7 +832,12 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
       additives: this.additiveLines(),
       computed: analysis,
       includeAdditives: this.includeAdditives(),
-      ...(this.firing() ? { firing: this.firing() as FiringBand } : {}),
+      // null takes a firing (like a target) off a recipe saved with one; a new recipe just has none.
+      ...(this.firing()
+        ? { firing: this.firing() as FiringBand }
+        : this.savedId() && mode !== 'copy'
+          ? { firing: null }
+          : {}),
       // null takes a target off a recipe saved with one; a new recipe just has none.
       ...(this.sgTarget() !== null
         ? { sgTarget: this.sgTarget() }
