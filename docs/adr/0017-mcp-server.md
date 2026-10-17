@@ -38,7 +38,10 @@ an assistant to act for one person that is not their web session.
   JSON text, and words its cautions in the language asked for, from the app's recipe messages
   (`server/mcp/words.ts`); a language not offered gets English. All are marked read-only. The
   server's instructions tell the assistant that the limit checks are not proof of food safety.
-  Nothing a caller sends is stored.
+  Nothing a caller sends is stored by the app. nginx's access log, kept 14 days as for every page,
+  records each request's IP address, time, request line (`POST /mcp`, never the body), status and
+  user agent ([processing record](../processing-record.md), "Web server logs"); the privacy page and
+  the assistants page say so.
 - **The guides, as a tool and as resources** (`server/mcp/guides.ts`, `server/mcp/tools/guides.ts`):
   `search_guides` searches the guides' sections in the language asked for (an app language, else
   English), and the English guides where that language finds nothing, saying so; each hit has the
@@ -66,8 +69,8 @@ an assistant to act for one person that is not their web session.
   two weeks old with a committed lockfile (`scripts/mcp-conformance/package.json` and
   `package-lock.json`), by `npm ci --ignore-scripts` in that folder, so they are not the app's
   dependencies and nothing newer can slip in; the CI job that runs them has no secrets in its
-  environment and its checkout keeps no GitHub token. The run takes about a minute and a half. The scenarios that need the
-  suite's own test tools (`test_simple_text`, `test://static-text` and so on) or optional features
+  environment and its checkout keeps no GitHub token. The run takes about a minute and a half. The
+  scenarios that need the suite's own test tools (`test_simple_text`, `test://static-text` and so on) or optional features
   Glazecalc does not offer (logging, subscriptions, asking the client for input, the tasks
   extension) are listed with their reasons in `scripts/mcp-conformance/<revision>.yml`; the suite
   fails on anything else, and on a listed one that starts passing.
@@ -101,7 +104,21 @@ an assistant to act for one person that is not their web session.
 - **Limits** (`server/lib/rate_limit.ts`, in memory as the others): without a token, 60 requests a
   minute and 2,000 a day per address; with one, 120 and 5,000 per account. The tools that fit
   amounts (`suggest_substitutes`, `match_from_materials`, `match_with_what_i_have`) are also
-  limited to 10 a minute per caller.
+  limited to 10 a minute per caller. A JSON-RPC batch is refused (400, `-32600`) before the SDK, so
+  each request is one message: 2025-06-18 removed batches, and neither 2025-11-25 nor 2026-07-28
+  has them (a 2025-03-26 client that batches is refused too). One address may keep at most 3
+  subscription streams (`subscriptions/listen`) open, of the SDK's 1,024, and a stream ends when
+  its client goes. The guides' cache holds only real guides in app languages and cone systems, at
+  most 64. A tool that fails in a way nobody foresaw logs the error's kind and code and tells the
+  assistant only that Glazecalc had a problem.
+- **What the assistant is given is data, some of it the person's own words.** The read tools return
+  the person's own free text (recipe titles and notes, the notebook, firing logs, material names),
+  and the guides return the site's text; any of it could hold words written to steer an assistant
+  (a note pasted from elsewhere, say). This is the endpoint's prompt-injection surface. It is
+  returned only as tool results, never in the server's instructions; every tool is read-only and
+  limited to the token's own account, so the most such words could get the server to do is read
+  the same person's records to the same assistant. Treating tool results as data is the
+  assistant's part. Phase 4's write tools must revisit this (asking the person before a change).
 
 ## Alternatives
 

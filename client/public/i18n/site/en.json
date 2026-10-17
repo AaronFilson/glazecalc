@@ -212,7 +212,7 @@
     "title": "Use Glazecalc from your AI assistant",
     "lead": "AI assistants such as Claude, GitHub Copilot, Cursor and Gemini can use Glazecalc’s calculations directly, through the Model Context Protocol (MCP).",
     "whatHeading": "What it can do",
-    "what": "With no account, an assistant can look up materials in the library, work out a recipe’s unity formula, check it against the limits for its firing, suggest substitutes for discontinued materials, remake a recipe from the materials you name, convert between cones and temperatures, and search and read the guides. Nothing it sends is saved.",
+    "what": "With no account, an assistant can look up materials in the library, work out a recipe’s unity formula, check it against the limits for its firing, suggest substitutes for discontinued materials, remake a recipe from the materials you name, convert between cones and temperatures, and search and read the guides. Nothing it sends is saved; as for every page, the web server’s log records each request’s IP address, time and address (never what was sent), for 14 days.",
     "mine": "With an access token from your <account>account page</account>, it can also read your own recipes, materials, notebook, firing logs and the materials you have on hand. A token can only read: it never changes or removes anything.",
     "caution": "The limit checks are cautions from published limits, the same as in the app, not proof that a glaze is food safe. Test-fire every glaze, and have glazes for food surfaces tested for leaching.",
     "addressHeading": "The address",
