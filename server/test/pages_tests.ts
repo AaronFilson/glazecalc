@@ -92,10 +92,11 @@ describe('pages in each language', () => {
     expect(sitemap(SITE)).to.include('/tr/');
   });
 
-  it('offers Traditional Chinese and Korean, with the standard notice rather than the plainer one', () => {
+  it('offers Traditional Chinese, Korean and Simplified Chinese, with the standard notice rather than the plainer one', () => {
     for (const [code, name, english] of [
       ['zh-Hant', '繁體中文', 'Traditional Chinese'],
-      ['ko', '한국어', 'Korean']
+      ['ko', '한국어', 'Korean'],
+      ['zh-Hans', '简体中文', 'Simplified Chinese']
     ]) {
       const language = languages.languageFor(code);
       expect(language).to.include({ name, english, dir: 'ltr', live: true });
@@ -105,20 +106,6 @@ describe('pages in each language', () => {
       expect(html).to.include(`<html lang="${code}" dir="ltr">`);
       expect(html).not.to.include('<meta name="robots" content="noindex" />');
       expect(sitemap(SITE)).to.include(`/${code}/`);
-    }
-  });
-
-  it('knows Simplified Chinese, before it goes live, without offering it or giving it the plainer notice', () => {
-    for (const [code, name, english] of [['zh-Hans', '简体中文', 'Simplified Chinese']]) {
-      const language = languages.languageFor(code);
-      expect(language).to.include({ name, english, dir: 'ltr', live: false });
-      expect(language).not.to.have.property('plainNotice');
-      expect(languages.LIVE_LANGUAGES).not.to.include(code);
-      const html = pageHtml(HTML, `/${code}/recipe`, SITE);
-      expect(html).to.include(`<html lang="${code}" dir="ltr">`);
-      expect(html).to.include('<meta name="robots" content="noindex" />');
-      expect(html).not.to.include(`hreflang="${code}"`);
-      expect(sitemap(SITE)).not.to.include(`/${code}/`);
     }
     expect(languages.canonicalLanguagePath('/zh-hans/recipe')).to.equal('/zh-Hans/recipe');
   });
