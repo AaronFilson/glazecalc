@@ -207,7 +207,8 @@ const resolve = async (
 
 // The record is taken once, by the cookie and the state together: a callback
 // another site sends the browser to, with its own code and state, finds
-// nothing (login CSRF), and a code is never swapped twice.
+// nothing (login CSRF), and a code is never swapped twice. Such a callback
+// never clears the cookie of a sign-in the browser has under way.
 oauthRouter.get('/:provider/callback', limits.oauth, async (req, res) => {
   const provider = providerOn(req, res);
   if (!provider) return undefined;
@@ -228,7 +229,14 @@ oauthRouter.get('/:provider/callback', limits.oauth, async (req, res) => {
         ).lean()
       : null;
   if (!login) {
-    // The page asks finish, which says it took too long.
+    // Another site may send the browser here with a made-up state while a
+    // sign-in of this browser's own is under way or waiting to be finished:
+    // that one is left alone, cookie and all, and the page is not asked to
+    // finish anything.
+    if (key && (await OAuthLogin.exists({ keyHash: oauth.sha256(key), expiresAt: { $gt: new Date() } }))) {
+      return res.redirect(303, '/signin');
+    }
+    // Otherwise the page asks finish, which says it took too long.
     session.endOAuth(res);
     return res.redirect(303, '/signin?provider=' + provider);
   }

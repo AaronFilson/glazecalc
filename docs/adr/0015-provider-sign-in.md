@@ -32,7 +32,9 @@ unconfirmed ones, exist.
   **`SameSite=Lax` cookie** (Lax, because the provider's redirect back is a cross-site top-level
   navigation). In production it is `__Host-glazecalc_oauth` on `Path=/`, so no other host can
   plant one, as with the session; in development `glazecalc_oauth` on `Path=/api/auth`. The
-  callback takes the record once, by cookie **and** state, swaps the code, decides what the
+  callback takes the record once, by cookie **and** state (a callback another site sends with a
+  made-up state finds nothing, and leaves a sign-in of the browser's own, and its cookie,
+  alone), swaps the code, decides what the
   answer means and sends the browser (303) back to the sign-in page in its language. The page
   then calls `POST /api/auth/finish`, a same-site request, which starts the session. So the
   `Strict` session cookie is always set by a first-party request, and the second step can be

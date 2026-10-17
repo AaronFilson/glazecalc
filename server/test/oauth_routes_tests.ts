@@ -243,14 +243,46 @@ describe('signing in with Google and GitHub', () => {
         .query({ code, state: 'not-the-state' })
         .set('Cookie', 'glazecalc_oauth=' + flow.cookie)
         .redirects(0);
-      expect(wrongState.headers.location).to.eql('/signin?provider=google');
-      expect((await finish(flow.cookie)).body.code).to.eql('provider-expired');
+      // The sign-in under way is left alone: the cookie stays, and the page is not asked to finish.
+      expect(wrongState.headers.location).to.eql('/signin');
+      expect(oauthCookie(wrongState)).to.eql(null);
+      expect(String(wrongState.headers['set-cookie'] ?? '')).to.not.include('glazecalc_oauth');
       expect((await finish(null)).body.code).to.eql('provider-expired');
+      // Nor does a made-up callback for the other provider, or one with no state.
+      for (const [other, query] of [
+        ['github', { code: 'x', state: 'made-up' }],
+        ['google', { code: 'x' }]
+      ] as const) {
+        const res = await api()
+          .get('/auth/' + other + '/callback')
+          .query(query)
+          .set('Cookie', 'glazecalc_oauth=' + flow.cookie)
+          .redirects(0);
+        expect(res.headers.location).to.eql('/signin');
+        expect(String(res.headers['set-cookie'] ?? '')).to.not.include('glazecalc_oauth');
+      }
+      // The person's own sign-in then finishes.
+      const own = await api()
+        .get('/auth/google/callback')
+        .query({ code, state: new URL(flow.location).searchParams.get('state')! })
+        .set('Cookie', 'glazecalc_oauth=' + flow.cookie)
+        .redirects(0);
+      expect(own.headers.location).to.eql('/signin?provider=google');
+      expect((await finish(flow.cookie)).body.code).to.eql('signed-in');
+      // A callback once it is finished, or with no sign-in at all, clears the cookie.
+      const late = await api()
+        .get('/auth/google/callback')
+        .query({ code, state: 'made-up' })
+        .set('Cookie', 'glazecalc_oauth=' + flow.cookie)
+        .redirects(0);
+      expect(late.headers.location).to.eql('/signin?provider=google');
+      expect(String(late.headers['set-cookie'] ?? '')).to.include('glazecalc_oauth=;');
 
       const again = await start('google');
       const first = await callback('google', again, identity);
       expect(first).to.have.status(303);
-      expect((await callback('google', again, identity)).headers.location).to.eql('/signin?provider=google');
+      // A second callback swaps no code, and leaves the answer waiting for finish.
+      expect((await callback('google', again, identity)).headers.location).to.eql('/signin');
       const done = await finish(again.cookie);
       expect(done.body.code).to.eql('signed-in');
       // Finished once only.
