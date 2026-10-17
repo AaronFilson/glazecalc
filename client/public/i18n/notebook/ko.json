@@ -4,6 +4,14 @@
     "signedInAs": "로그인한 계정: {email}.",
     "trying": "{name} 이름으로 Glazecalc를 체험하고 있습니다. 레시피부터 시작해 보세요.",
     "welcomeBack": "지난번에 하던 작업을 이어서 하세요.",
+    "welcome": {
+      "heading": "Glazecalc에 오신 것을 환영합니다",
+      "text": "작업 노트가 준비되었습니다. 첫걸음으로 이미 만들어 쓰는 유약을 원료와 양까지 입력하고 제게르식을 확인해 보세요.",
+      "firstRecipe": "첫 레시피 시작하기",
+      "confirmHeading": "이메일 주소 확인",
+      "confirm": "이메일 주소를 확인하세요. 링크를 {email} 주소로 보냈습니다. 이중 인증에 필요합니다. <account>계정 페이지</account>에서 다시 보낼 수 있습니다.",
+      "confirmText": "링크를 {email} 주소로 보냈습니다. 링크를 열어 본인의 주소임을 확인하세요. 이중 인증에 필요합니다. <account>계정 페이지</account>에서 다시 보낼 수 있습니다."
+    },
     "sections": {
       "recipe": {
         "title": "레시피",
@@ -32,6 +40,10 @@
       "guides": {
         "title": "가이드",
         "text": "유약이 무엇인지부터 소성까지, 그리고 그 과정에서 모두의 안전을 지키는 방법을 다룹니다."
+      },
+      "account": {
+        "title": "계정과 설정",
+        "text": "설정, 비밀번호, 이중 인증을 관리하고 여기에 보관한 모든 것을 내려받을 수 있습니다."
       }
     },
     "newHere": "제게르식이 처음이라면 <advice>조언 페이지</advice>에서 기본을 알아보세요. <about>소개 페이지</about>에서는 Glazecalc가 어떻게 작동하는지 설명합니다."
@@ -39,23 +51,29 @@
   "firing": {
     "title": "소성 기록",
     "lead": "소성마다 시간, 온도, 콘, 가마 메모를 기록하세요.",
-    "titleLabel": "소성 제목:",
-    "kiln": "가마:",
-    "date": "소성 날짜:",
-    "notes": "소성 메모:",
-    "fieldSelect": "소성 기록에 넣을 항목을 선택해 추가하세요:",
+    "newHeading": "새 소성 기록",
+    "titleLabel": "제목",
+    "kiln": "가마",
+    "date": "날짜",
+    "notes": "메모",
+    "fieldSelect": "기록할 항목",
     "addField": "항목 추가",
-    "included": "추가한 항목:",
+    "included": "이 기록의 항목",
     "moveLeft": "항목을 왼쪽으로 이동",
     "moveRight": "항목을 오른쪽으로 이동",
     "removeField": "항목 삭제",
     "addRow": "소성 표에 행 추가",
+    "addRowWhy": "먼저 항목을 추가하세요.",
+    "tableEmpty": "위에서 항목을 추가한 다음 행을 추가하세요.",
     "recordHeading": "소성 기록하기",
     "rowActions": "행 작업",
     "cell": "{field} {row}행",
     "removeRow": "행 삭제",
     "save": "저장",
-    "storedHeading": "저장한 소성 기록:",
+    "storedHeading": "저장한 소성 기록",
+    "noneSaved": "아직 없습니다. 저장한 소성 기록이 여기에 표시됩니다.",
+    "storedIn": "{date}에 {kiln}에서 소성했습니다.",
+    "storedOn": "{date}에 소성했습니다.",
     "storedNotes": "메모: {notes}",
     "titleMissing": "소성 제목을 입력하세요.",
     "fieldsMissing": "기록할 항목을 하나 이상 추가하세요(예: {example}).",
@@ -67,10 +85,12 @@
   "notes": {
     "title": "메모",
     "lead": "유약에 관해 그 밖에 기억해 둘 만한 것을 적는 곳입니다.",
-    "titleLabel": "제목:",
-    "content": "메모 내용:",
+    "newHeading": "새 메모",
+    "titleLabel": "제목",
+    "content": "내용",
     "save": "저장",
-    "mineHeading": "저장한 메모:",
+    "mineHeading": "저장한 메모",
+    "noneSaved": "아직 없습니다. 저장한 메모가 여기에 표시됩니다.",
     "titleMissing": "메모 제목을 입력하세요.",
     "contentMissing": "메모 내용을 입력하세요.",
     "untitled": "제목 없는 메모",

@@ -39,6 +39,7 @@
     "guides": "指南",
     "about": "關於",
     "account": "帳戶",
+    "trialAccount": "試用帳戶",
     "accountTitle": "您的帳戶與設定",
     "signOut": "登出",
     "createAccount": "建立免費帳戶"
@@ -66,7 +67,8 @@
     "problem": "回報問題",
     "pottery": "手作陶器：Updraft Pottery Studio",
     "copyright": "© 2017–2026 Aaron Filson / Candling Development Studio · 免費且開放原始碼（MIT License）",
-    "languages": "語言"
+    "languages": "語言",
+    "language": "語言："
   },
   "numbers": {
     "notANumber": "請輸入數字，例如 {example}。",
@@ -76,13 +78,13 @@
   "meta": {
     "description": "輸入釉方，即可看到其塞格式（UMF）、矽鋁比與助熔劑比例。免費且開放原始碼，可記錄釉方、原料與燒窯紀錄。",
     "guides": "寫給新手陶藝家的淺白指南：釉藥是什麼、如何安全調配、如何保護家人安全，以及如何燒基本的窯。",
-    "glazingBasics": "釉藥由什麼組成、窯如何把它變成玻璃，以及測溫錐、熔塊、塞格式與釉面缺陷的意思。寫給新手陶藝家的指南。",
+    "glazingBasics": "釉藥由什麼組成、窯如何將其變成玻璃，以及測溫錐、熔塊、塞格式與釉面缺陷的意思。寫給新手陶藝家的指南。",
     "makingAGlaze": "如何購買、保存、秤量與調配釉藥，調出適當的釉層厚度，在自己的坯土上試燒，並做好紀錄，日後才能重做。",
     "safeMixing": "如何讓釉藥粉塵遠離肺部、窯燒煙氣遠離住家：安全習慣、防塵口罩、清潔、通風與有風險的原料。",
     "homeSafety": "孩子或寵物吞下釉藥原料時該怎麼辦，以及如何讓原料、粉塵、窯與手作陶器對家人保持安全。",
     "firing": "如何燒電窯：選擇、擺放與判讀測溫錐，並依已發表的素燒與釉燒燒成曲線操作，附測溫錐對照表。",
     "advice": "關於調配、施釉與燒窯的實用訣竅，來自 Glazecalc，另有您自己的建議。免費提供給陶藝家使用。",
-    "about": "Glazecalc 是免費、開放原始碼的釉藥化學計算工具與筆記本。了解它如何算出塞格式，以及如何建置。",
+    "about": "Glazecalc 是免費、開放原始碼的釉藥化學計算工具與筆記本。了解 Glazecalc 如何算出塞格式，以及如何建置。",
     "privacy": "Glazecalc 如何處理您的資料：沒有廣告、沒有分析、沒有追蹤，也不出售任何資料。保存什麼、為什麼，以及如何行使您的權利。",
     "signup": "建立免費的 Glazecalc 帳戶，保存您的釉方、原料、筆記與燒窯紀錄。沒有廣告，也絕不出售您的資料。",
     "imageAlt": "Glazecalc：了解您的釉藥，而不只是調配。"
@@ -175,7 +177,7 @@
     "timer": "計時器",
     "exhaust": "排氣",
     "misc": "其他",
-    "probe": "熱電偶 {n}",
+    "probe": "測溫探針 {n}",
     "ring": "測溫環 {n}",
     "burnerN": "燃燒器 {n}"
   },
@@ -226,18 +228,22 @@
     "firedWeight": "燒成後重量",
     "notes": "備註",
     "analysis": "分析值",
+    "details": "詳細資料",
     "formula": "化學式",
+    "formulaLine": "化學式：{formula}",
     "useInstead": "<b>可改用：</b>{list}",
     "similar": "類似：{list}",
     "replaces": "取代：{list}",
     "aliases": "又稱：{list}",
     "madeBy": "製造商：{name}",
     "source": "出處：",
+    "hazardsLine": "危害：{hazards}",
     "noChemistry": "沒有化學成分：不計入塞格式",
-    "countedAs": "視為 {name}",
+    "countedAs": "視為「{name}」",
     "nothingMatches": "沒有符合的項目。請試試其他名稱、類別或地區。",
     "loading": "載入中...",
-    "notFetched": "無法取得清單。<retry>再試一次</retry>"
+    "notFetched": "無法取得清單。<retry>再試一次</retry>",
+    "showAll": "{noun, select, additives {{count, plural, other {顯示全部 # 種添加物}}} other {{count, plural, other {顯示全部 # 種原料}}}}"
   },
   "chemistryForm": {
     "name": "{noun, select, additive {請為添加物取個名稱。} other {請為原料取個名稱。}}",

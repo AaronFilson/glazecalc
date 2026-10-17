@@ -4,6 +4,14 @@
     "signedInAs": "当前登录账户：{email}。",
     "trying": "正在以“{name}”的身份试用 Glazecalc。先从一个配方开始。",
     "welcomeBack": "从上次停下的地方继续。",
+    "welcome": {
+      "heading": "欢迎使用 Glazecalc",
+      "text": "您的笔记本已准备好。不妨先输入一种您已经在调配的釉，包括原料和用量，然后查看它的釉式。",
+      "firstRecipe": "开始您的第一个配方",
+      "confirmHeading": "确认您的邮箱地址",
+      "confirm": "请确认您的邮箱地址：我们已向 {email} 发送了一个链接。两步验证需要用到这个地址。您的<account>账户页面</account>可以重新发送链接。",
+      "confirmText": "我们已向 {email} 发送了一个链接。打开链接，确认这个地址是您的：两步验证需要用到这个地址。您的<account>账户页面</account>可以重新发送链接。"
+    },
     "sections": {
       "recipe": {
         "title": "配方",
@@ -32,6 +40,10 @@
       "guides": {
         "title": "指南",
         "text": "从釉是什么到如何烧成，以及如何在整个过程中保证每个人的安全。"
+      },
+      "account": {
+        "title": "账户与设置",
+        "text": "设置、密码、两步验证，以及下载您在这里保存的全部内容。"
       }
     },
     "newHere": "刚接触釉式？<advice>建议页面</advice>讲解基础知识，<about>关于页面</about>介绍 Glazecalc 的工作原理。"
@@ -39,23 +51,29 @@
   "firing": {
     "title": "烧窑记录",
     "lead": "记录每次烧窑：时间、温度、测温锥和关于窑的备注。",
-    "titleLabel": "烧窑名称：",
-    "kiln": "窑：",
-    "date": "烧窑日期：",
-    "notes": "烧窑备注：",
-    "fieldSelect": "选择字段并添加到烧窑记录：",
+    "newHeading": "新的烧窑记录",
+    "titleLabel": "标题",
+    "kiln": "窑",
+    "date": "日期",
+    "notes": "备注",
+    "fieldSelect": "要记录的字段",
     "addField": "添加字段",
-    "included": "已添加的字段：",
+    "included": "本记录中的字段",
     "moveLeft": "字段左移",
     "moveRight": "字段右移",
     "removeField": "移除字段",
     "addRow": "在烧窑表中添加一行",
+    "addRowWhy": "先添加一个字段。",
+    "tableEmpty": "先在上方添加字段，然后添加行。",
     "recordHeading": "记录烧窑",
     "rowActions": "行操作",
     "cell": "{field}，第 {row} 行",
     "removeRow": "移除行",
     "save": "保存",
-    "storedHeading": "我保存的烧窑记录：",
+    "storedHeading": "我保存的烧窑记录",
+    "noneSaved": "还没有。保存的烧窑记录会显示在这里。",
+    "storedIn": "于{date}在“{kiln}”中烧成。",
+    "storedOn": "于{date}烧成。",
     "storedNotes": "备注：{notes}",
     "titleMissing": "请为这次烧窑填写名称。",
     "fieldsMissing": "请至少添加一个要记录的字段，例如{example}。",
@@ -67,10 +85,12 @@
   "notes": {
     "title": "笔记",
     "lead": "关于釉的其他值得记住的事。",
-    "titleLabel": "标题：",
-    "content": "笔记内容：",
+    "newHeading": "新笔记",
+    "titleLabel": "标题",
+    "content": "笔记",
     "save": "保存",
-    "mineHeading": "我保存的笔记：",
+    "mineHeading": "我保存的笔记",
+    "noneSaved": "还没有。保存的笔记会显示在这里。",
     "titleMissing": "请为笔记填写标题。",
     "contentMissing": "请填写笔记内容。",
     "untitled": "无标题笔记",

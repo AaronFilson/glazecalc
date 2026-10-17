@@ -5,7 +5,7 @@
     "guides": "가이드 - Glazecalc",
     "glazingBasics": "기초부터 배우는 유약 - Glazecalc",
     "makingAGlaze": "유약 만드는 법 - Glazecalc",
-    "safeMixing": "안전한 조합과 환기 - Glazecalc",
+    "safeMixing": "안전한 유약 조합과 환기 - Glazecalc",
     "homeSafety": "가족을 중독에서 지키세요 - Glazecalc",
     "firing": "기본 가마 소성 - Glazecalc",
     "about": "소개 - Glazecalc",
@@ -39,6 +39,7 @@
     "guides": "가이드",
     "about": "소개",
     "account": "계정",
+    "trialAccount": "체험 계정",
     "accountTitle": "계정과 설정",
     "signOut": "로그아웃",
     "createAccount": "무료 계정 만들기"
@@ -66,7 +67,8 @@
     "problem": "문제 신고",
     "pottery": "수제 도자기: Updraft Pottery Studio",
     "copyright": "© 2017–2026 Aaron Filson / Candling Development Studio · 무료 오픈 소스(MIT License)",
-    "languages": "언어"
+    "languages": "언어",
+    "language": "언어:"
   },
   "numbers": {
     "notANumber": "숫자를 입력하세요(예: {example}).",
@@ -226,18 +228,22 @@
     "firedWeight": "소성 후 무게",
     "notes": "비고",
     "analysis": "분석값",
+    "details": "자세히",
     "formula": "화학식",
+    "formulaLine": "화학식: {formula}",
     "useInstead": "<b>대신 사용:</b> {list}",
     "similar": "비슷한 원료: {list}",
     "replaces": "대체 대상: {list}",
     "aliases": "다른 이름: {list}",
     "madeBy": "제조사: {name}",
     "source": "출처:",
+    "hazardsLine": "유해성: {hazards}",
     "noChemistry": "화학 조성 없음: 제게르식에서 제외",
     "countedAs": "계산 기준: {name}",
     "nothingMatches": "일치하는 항목이 없습니다. 다른 이름, 종류, 지역을 선택해 보세요.",
     "loading": "불러오는 중...",
-    "notFetched": "목록을 불러오지 못했습니다. <retry>다시 시도</retry>"
+    "notFetched": "목록을 불러오지 못했습니다. <retry>다시 시도</retry>",
+    "showAll": "{noun, select, additives {{count, plural, other {첨가제 #가지 모두 보기}}} other {{count, plural, other {원료 #가지 모두 보기}}}}"
   },
   "chemistryForm": {
     "name": "{noun, select, additive {첨가제 이름을 입력하세요.} other {원료 이름을 입력하세요.}}",

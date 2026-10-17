@@ -111,6 +111,7 @@
       "control": "管理浓度（管理濃度）：根据工作场所的测定值评价作业环境空气的标准，不是对个人吸入量的限值。"
     },
     "setBy": "由<link>{law}</link>规定。",
+    "from": "自{date}起适用。",
     "lowerThanEu": "低于欧盟具有法律约束力的限值 {value} mg/m³。",
     "sameAsEu": "与欧盟具有法律约束力的限值相同。",
     "recommendedBy": "{abbr}（{by}）在其<link>{title}</link>中推荐此值。它不是法律规定。",
@@ -147,16 +148,31 @@
       "jpSmall": "其他容量低于 1.1 L、非烹饪用的器物",
       "jpLarge": "其他容量 1.1 L 及以上、低于 3 L、非烹饪用的器物",
       "jpStorage": "其他容量 3 L 及以上、非烹饪用的器物",
-      "jpCooking": "烹饪器皿，深度 2.5 cm 及以上"
+      "jpCooking": "烹饪器皿，深度 2.5 cm 及以上",
+      "krFlat": "不能盛装液体的器物，或深度低于 2.5 cm 的器物",
+      "krSmall": "其他可盛装液体、容量低于 1.1 L 的器物",
+      "krMedium": "其他可盛装液体、容量 1.1 L 及以上、低于 3 L 的器物",
+      "krStorage": "其他可盛装液体、容量 3 L 及以上的器物",
+      "krCooking": "烹饪器皿（用于加热食物）",
+      "twFlat": "不能盛装液体的器物，或深度不超过 2.5 cm 的器物",
+      "twSmall": "深度超过 2.5 cm、容量不超过 1.1 L 的器物",
+      "twLarge": "深度超过 2.5 cm、容量超过 1.1 L 的器物",
+      "myFlat": "扁平制品",
+      "mySmall": "小空心制品",
+      "myLarge": "大空心制品",
+      "myCooking": "烹饪器皿"
     },
     "judged": {
       "average": "6 件的平均值",
-      "each": "6 件中的每一件"
+      "each": "6 件中的每一件",
+      "averageOf": "{count} 件的平均值",
+      "eachOf": "{count} 件中的每一件"
     },
     "euRules": "这里适用欧盟的规定。",
     "law": "由<link>{law}</link>规定。",
     "inForce": "自{date}起施行。",
     "atMost": "溶出量不超过限值即为合格：法规写的是“不超过”。",
+    "ppm": "这里的 ppm 指每升检测溶液中的毫克数（mg/L）。",
     "unknown": "我们还没有确认{region}的规定。",
     "choosePrompt": "选择您所在的国家，查看其规定。"
   },
