@@ -17,6 +17,7 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   password reset or "Sign out everywhere". Nothing can make a token yet.
 - **A full Content-Security-Policy from nginx** (`default-src 'self'`), on top of the app's
   header and the build's `<meta>` policy; the e2e check loads every page under all three.
+- **Groundwork for Indonesian, Vietnamese and Thai** (not offered yet): the three are known languages (their pages exist, unindexed), with style sheets and glossaries in `docs/translations`, prompts for their translation, and Thai dates in the Gregorian calendar until a Calendar setting exists. The landing page's small heading no longer spaces out Thai letters.
 - **Two-step sign-in**, optional, on the account page ([ADR 0014](docs/adr/0014-two-step-sign-in.md),
   [plan](docs/mfa-plan.md)). An authenticator app (a QR code or a key to type), passkeys (named,
   renamed and removed, up to ten) and ten recovery codes, shown once. Signing in then takes the

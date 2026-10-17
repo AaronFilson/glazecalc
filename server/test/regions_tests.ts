@@ -53,6 +53,24 @@ describe('regions', () => {
     expect(written(regions.formatLocaleFor('zh-Hant', 'IE', 'auto'))).not.to.equal(written('zh-IE'));
   });
 
+  it('writes Thai dates in the Gregorian calendar, Western digits, until the Calendar setting exists', () => {
+    const date = new Date(2026, 9, 16);
+    const year = (locale: string) => new Intl.DateTimeFormat(locale, { year: 'numeric' }).format(date);
+    for (const locale of [
+      regions.formatLocaleFor('th', '', 'auto'),
+      regions.formatLocaleFor('th', 'DE', 'auto'),
+      regions.formatLocaleFor('th', '', 'th-TH')
+    ]) {
+      expect(year(locale), locale).to.match(/2026/);
+      expect(new Intl.NumberFormat(locale).format(1234.5), locale).to.equal('1,234.5');
+    }
+    // Other languages are as they were, and an explicit calendar is kept.
+    expect(regions.formatLocaleFor('id', '', 'auto')).to.equal('id');
+    expect(regions.formatLocaleFor('vi', 'DE', 'auto')).to.equal('vi-DE');
+    expect(regions.formatLocaleFor('en', 'DE', 'auto')).to.equal('en-DE');
+    expect(regions.formatLocaleFor('th', '', 'th-TH-u-ca-buddhist')).to.equal('th-TH-u-ca-buddhist');
+  });
+
   it('offers only formats the runtime knows, each once', () => {
     expect(new Set(regions.FORMAT_LOCALES).size).to.equal(regions.FORMAT_LOCALES.length);
     for (const locale of regions.FORMAT_LOCALES) {
