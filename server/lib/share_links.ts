@@ -3,8 +3,9 @@
 //
 // The page is sent the recipe as it is now, so the owner's edits show, but
 // only the fields named here: what the unity formula and the worked
-// calculation need, the title and date, and the notes when the owner chose to
-// show them. A line that is a standard material or additive is marked
+// calculation need, the title and date, the firing as stated and whether it is
+// for a food surface (never the firing logs it is linked to), and the notes when
+// the owner chose to show them. A line that is a standard material or additive is marked
 // ownedBy 'Standard' and carries the library's current hazards, which are
 // public (the library ships in data/), so the page can show the recipe's
 // hazards as the recipe page does; a potter's own record carries none of its
@@ -13,6 +14,8 @@
 // version adds to a recipe: a new field stays private until it is named here.
 import crypto from 'node:crypto';
 import type { Types } from 'mongoose';
+import firing from '../../lib/cones/firing.js';
+import type { FiringBlock } from '../../lib/cones/firing.js';
 import Additive from '../models/additive.ts';
 import Material from '../models/material.ts';
 import Recipe from '../models/recipe.ts';
@@ -264,10 +267,15 @@ export async function sharedRecipe(recipe: Row, includeNotes: boolean, ownedBy: 
   const materials = lines(recipe.materials);
   const additives = lines(recipe.additives);
   const notes = includeNotes ? [recipe.notes].flat().filter(isText) : [];
+  const firedAt = firing.cleanFiring(recipe.firedAt as FiringBlock | undefined);
   return {
     title: isText(recipe.title) ? recipe.title : '',
     ...(isText(recipe.date) && { date: recipe.date }),
     includeAdditives: recipe.includeAdditives === true,
+    // The firing as the author stated it, in their own scale (the page shows a conversion beside it), and
+    // whether it is for a food surface. Not the firing logs it is linked to: those stay the author's.
+    ...(firedAt && { firedAt }),
+    ...(recipe.foodSurface === true && { foodSurface: true }),
     materials,
     additives,
     ...(notes.length && { notes }),

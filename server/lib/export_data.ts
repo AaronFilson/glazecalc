@@ -2,6 +2,8 @@
 // named here are written, so the password hash, the token version and reset
 // links can never end up in a file, and every query is limited to the user.
 import type { Types } from 'mongoose';
+import firing from '../../lib/cones/firing.js';
+import type { FiringBlock } from '../../lib/cones/firing.js';
 import { OWNED_KINDS } from './account_data.ts';
 import { left as recoveryCodesLeft } from './recovery_codes.ts';
 import AccessToken from '../models/access_token.ts';
@@ -191,11 +193,39 @@ export const recipesCsv = async (userId: Id): Promise<string> => {
       ...((recipe.additives as Line[]) ?? []).map((line) => ['Additive', line])
     ] as Array<[string, Line]>;
     if (!lines.length) lines.push(['', {}]);
+    // The firing as Glazy's export writes it (its "Cone" string and "Atmospheres" list), and the liner flag.
+    const glazy = firing.glazyFiring(recipe.firedAt as FiringBlock | undefined);
+    const food = recipe.foodSurface === true ? 'yes' : '';
     for (const [type, line] of lines) {
-      rows.push([recipe.title, recipe.date, recipe.notes, type, line.name, line.amount, line.unit]);
+      rows.push([
+        recipe.title,
+        recipe.date,
+        recipe.notes,
+        type,
+        line.name,
+        line.amount,
+        line.unit,
+        glazy.cone,
+        glazy.atmospheres,
+        food
+      ]);
     }
   }
-  return csv(['Recipe', 'Date', 'Notes', 'Type', 'Ingredient', 'Amount', 'Unit of additive'], rows);
+  return csv(
+    [
+      'Recipe',
+      'Date',
+      'Notes',
+      'Type',
+      'Ingredient',
+      'Amount',
+      'Unit of additive',
+      'Cone',
+      'Atmospheres',
+      'Food surface'
+    ],
+    rows
+  );
 };
 
 interface Oxide {

@@ -75,7 +75,20 @@ const records: Record<string, Router> = {
   recipe: recordRoutes(Recipe, {
     label: 'recipe',
     area: 'recipes',
-    fields: ['title', 'date', 'notes', 'materials', 'additives', 'computed', 'includeAdditives', 'firing', 'sgTarget'],
+    fields: [
+      'title',
+      'date',
+      'notes',
+      'materials',
+      'additives',
+      'computed',
+      'includeAdditives',
+      'firing',
+      'firedAt',
+      'foodSurface',
+      'firings',
+      'sgTarget'
+    ],
     required: ['title', 'materials'],
     wrapper: { change: 'recipe' },
     standard: true,

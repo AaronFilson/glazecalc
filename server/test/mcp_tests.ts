@@ -789,6 +789,45 @@ describe('MCP: personal access tokens', () => {
       }
     });
 
+    it('get_recipe gives the stated firing and checks a range at both its bands; list_recipes filters by cone and atmosphere', async () => {
+      await Recipe.updateOne(
+        { _id: recipeId },
+        {
+          $set: {
+            firedAt: { scale: 'orton', low: '6', high: '10', tested: ['10'], atmospheres: ['reduction'] },
+            foodSurface: true,
+            firings: [{ firing: firingId, result: 'glossy' }]
+          }
+        }
+      );
+      try {
+        const one = await data('get_recipe', { id: recipeId }, headers);
+        expect(one.firedAt).to.eql({
+          scale: 'orton',
+          low: '6',
+          high: '10',
+          tested: ['10'],
+          atmospheres: ['reduction'],
+          bands: ['mid', 'high']
+        });
+        expect(one.foodSurface).to.equal(true);
+        expect(one.firings).to.eql([{ firingId, result: 'glossy' }]);
+        expect(one.checks.band).to.equal('mid');
+        expect(one.checks.firingFrom).to.equal('firedAt');
+        expect(one.checksAtOtherBands.high.band).to.equal('high');
+        const titles = (list: { recipes: Array<{ title: string }> }) => list.recipes.map((r) => r.title);
+        expect(titles(await data('list_recipes', { cone: '8' }, headers))).to.eql(['Satin white']);
+        expect(titles(await data('list_recipes', { cone: '06' }, headers))).to.eql([]);
+        expect(titles(await data('list_recipes', { cone: '8', scale: 'sk' }, headers))).to.eql([]);
+        expect(titles(await data('list_recipes', { atmosphere: 'reduction' }, headers))).to.eql(['Satin white']);
+        expect(titles(await data('list_recipes', { atmosphere: 'oxidation' }, headers))).to.eql([]);
+        expect((await data('list_recipes', { cone: '10' }, headers)).recipes[0].firedAt.tested).to.eql(['10']);
+        expect((await call('list_recipes', { cone: '6a' }, headers)).isError).to.equal(true);
+      } finally {
+        await Recipe.updateOne({ _id: recipeId }, { $unset: { firedAt: 1, foodSurface: 1, firings: 1 } });
+      }
+    });
+
     it('read the materials, the shelf, the firing logs, the notebook and the settings', async () => {
       const materials = await data('list_my_materials', {}, headers);
       expect(materials.materials.map((m: { name: string }) => m.name)).to.eql(['Local red clay']);
