@@ -6,6 +6,7 @@ import standardData from '../../data/index.js';
 import recipe from '../../lib/recipe/index.js';
 import { MOST_LINES, resetFits, FITS_PER_MINUTE } from '../mcp/common.ts';
 import { findMaterial } from '../mcp/library.ts';
+import { MOST_STREAMS_PER_ADDRESS, sdkSubscribers, streamsOpen } from '../mcp/index.ts';
 import { SERVER_INFO } from '../mcp/server.ts';
 import { readFileSync } from 'node:fs';
 import * as site from '../lib/site.ts';
@@ -718,6 +719,63 @@ describe('MCP: personal access tokens', () => {
       expect(names).to.include('Minspar 200');
       expect((await call('match_with_what_i_have', {}, headers)).isError).to.equal(true);
     });
+  });
+});
+
+/** Opens a subscription stream (subscriptions/listen, 2026-07-28); resolves once its headers come. */
+const listen = async (signal: AbortSignal): Promise<globalThis.Response> =>
+  fetch(base() + '/mcp', {
+    method: 'POST',
+    signal,
+    headers: {
+      'content-type': 'application/json',
+      accept: 'application/json, text/event-stream',
+      'mcp-protocol-version': '2026-07-28',
+      'mcp-method': 'subscriptions/listen'
+    },
+    body: JSON.stringify({
+      jsonrpc: '2.0',
+      id: ++id,
+      method: 'subscriptions/listen',
+      params: {
+        notifications: { toolsListChanged: true },
+        _meta: {
+          'io.modelcontextprotocol/protocolVersion': '2026-07-28',
+          'io.modelcontextprotocol/clientInfo': { name: 'test', version: '1' },
+          'io.modelcontextprotocol/clientCapabilities': {}
+        }
+      }
+    })
+  });
+
+const until = async (ok: () => boolean, what: string): Promise<void> => {
+  for (let i = 0; i < 100 && !ok(); i++) await new Promise((resolve) => setTimeout(resolve, 20));
+  expect(ok(), what).to.equal(true);
+};
+
+describe('MCP: subscription streams', () => {
+  it(`keeps at most ${MOST_STREAMS_PER_ADDRESS} open from one address, and ends each when its client goes`, async () => {
+    const clients = Array.from({ length: MOST_STREAMS_PER_ADDRESS }, () => new AbortController());
+    const streams = await Promise.all(clients.map((client) => listen(client.signal)));
+    for (const stream of streams) {
+      expect(stream.status).to.equal(200);
+      expect(stream.headers.get('content-type')).to.include('text/event-stream');
+    }
+    expect(streamsOpen()).to.equal(MOST_STREAMS_PER_ADDRESS);
+    await until(() => sdkSubscribers() === MOST_STREAMS_PER_ADDRESS, 'the SDK serves each stream');
+    const over = await listen(new AbortController().signal);
+    expect(over.status).to.equal(429);
+    expect(((await over.json()) as { error: { message: string } }).error.message).to.include('subscription streams');
+    // Other requests from the address are still answered.
+    expect((await rpc('ping')).status).to.equal(200);
+    // The clients go: the server ends their streams, and the address may open more.
+    for (const client of clients) client.abort();
+    await until(() => streamsOpen() === 0 && sdkSubscribers() === 0, 'every stream ended, in the SDK too');
+    const again = new AbortController();
+    const next = await listen(again.signal);
+    expect(next.status).to.equal(200);
+    again.abort();
+    await until(() => streamsOpen() === 0 && sdkSubscribers() === 0, 'the last stream ended');
   });
 });
 

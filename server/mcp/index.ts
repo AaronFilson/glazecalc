@@ -11,7 +11,8 @@
 // request limits, and a JSON body of at most 256 kB. No reply sets a cookie,
 // and the request's cookies and Authorization header never reach the SDK.
 import express, { type NextFunction, type Request, type Response } from 'express';
-import { createMcpHandler } from '@modelcontextprotocol/server';
+import { createMcpHandler, InMemoryServerEventBus } from '@modelcontextprotocol/server';
+import { ipKeyGenerator } from 'express-rate-limit';
 import * as log from '../lib/log.ts';
 import * as limits from '../lib/rate_limit.ts';
 import * as site from '../lib/site.ts';
@@ -21,7 +22,13 @@ import { makeServer } from './server.ts';
 /** The largest request body taken: far more than 40 recipe lines need. */
 export const MOST_BODY = '256kb';
 
+// The SDK's change-event bus, made here so the tests can see that a stream whose client went has ended.
+const bus = new InMemoryServerEventBus();
+/** How many subscription streams the SDK is serving now (the tests). */
+export const sdkSubscribers = (): number => bus.listenerCount;
+
 const handler = createMcpHandler(makeServer, {
+  bus,
   onerror: (err) => log.debug('MCP request refused', { message: err.message })
 });
 
@@ -54,18 +61,26 @@ const checkHostAndOrigin = (req: Request, res: Response, next: NextFunction): vo
   next();
 };
 
-/** The request as a web-standard Request for the SDK: without cookies or the Authorization header. */
-const webRequest = (req: Request): globalThis.Request => {
+/**
+ * The request as a web-standard Request for the SDK: without cookies or the
+ * Authorization header, and with a signal that aborts when the client goes,
+ * so the SDK ends a subscription stream it was keeping open.
+ */
+const webRequest = (req: Request, signal: AbortSignal): globalThis.Request => {
   const headers = new Headers();
   for (const [name, value] of Object.entries(req.headers)) {
     if (value === undefined || name === 'cookie' || name === 'authorization' || name === 'content-length') continue;
     for (const one of ([] as string[]).concat(value)) headers.append(name, one);
   }
-  return new Request(site.siteUrl() + '/mcp', { method: 'POST', headers, body: JSON.stringify(req.body) });
+  return new Request(site.siteUrl() + '/mcp', { method: 'POST', headers, body: JSON.stringify(req.body), signal });
 };
 
-/** Writes the SDK's answer: a JSON body, or for a 2025 client perhaps a short event stream. */
-const send = async (answer: globalThis.Response, res: Response): Promise<void> => {
+/**
+ * Writes the SDK's answer: a JSON body, or an event stream (a 2025 client's
+ * short one, or a subscription's long one). When the client goes (signal),
+ * the stream is cancelled and nothing more is written.
+ */
+const send = async (answer: globalThis.Response, res: Response, signal: AbortSignal): Promise<void> => {
   res.status(answer.status);
   answer.headers.forEach((value, name) => {
     if (name === 'set-cookie' || name === 'content-length') return;
@@ -76,9 +91,36 @@ const send = async (answer: globalThis.Response, res: Response): Promise<void> =
     res.end();
     return;
   }
-  for await (const chunk of answer.body) res.write(chunk);
+  const reader = answer.body.getReader();
+  const cancel = () => void reader.cancel().catch(() => {});
+  if (signal.aborted) cancel();
+  signal.addEventListener('abort', cancel, { once: true });
+  try {
+    for (;;) {
+      const { done, value } = await reader.read();
+      if (done || signal.aborted) break;
+      res.write(value);
+    }
+  } catch {
+    // The stream ended badly or the client went: nothing more to write.
+  } finally {
+    signal.removeEventListener('abort', cancel);
+  }
   res.end();
 };
+
+/**
+ * At most this many subscription streams (subscriptions/listen) open at once
+ * from one address, so one cannot hold all the SDK's 1,024 for everyone else.
+ */
+export const MOST_STREAMS_PER_ADDRESS = 3;
+const openStreams = new Map<string, number>();
+
+/** How many subscription streams are open now (the tests). */
+export const streamsOpen = (): number => [...openStreams.values()].reduce((sum, n) => sum + n, 0);
+
+const isListen = (body: unknown): boolean =>
+  Boolean(body) && typeof body === 'object' && (body as { method?: unknown }).method === 'subscriptions/listen';
 
 /**
  * One JSON-RPC message per request: a batch (an array of them) is refused
@@ -125,17 +167,47 @@ mcpRouter.post(
   refuseBatches,
   async (req, res) => {
     const caller = req.mcpCaller!;
-    const answer = await handler.fetch(webRequest(req), {
-      parsedBody: req.body,
-      authInfo: {
-        // Never the token itself: the SDK and the tools need only who is calling.
-        token: caller.tokenId ? 'pat:' + caller.tokenId : '',
-        clientId: caller.userId ? 'personal-access-token' : 'anyone',
-        scopes: caller.scopes ?? [],
-        extra: { ...caller }
+    const listen = isListen(req.body);
+    const address = 'ip:' + ipKeyGenerator(req.ip ?? 'unknown');
+    if (listen) {
+      const open = openStreams.get(address) ?? 0;
+      if (open >= MOST_STREAMS_PER_ADDRESS) {
+        res
+          .status(429)
+          .json(
+            rpcError(
+              -32000,
+              `Too many subscription streams are open from this address (at most ${MOST_STREAMS_PER_ADDRESS}). Close one and try again.`
+            )
+          );
+        return;
       }
-    });
-    await send(answer, res);
+      openStreams.set(address, open + 1);
+    }
+    const gone = new AbortController();
+    const abort = () => gone.abort();
+    // 'close' comes when the client goes, or after the answer is written: either way the exchange is over.
+    res.on('close', abort);
+    try {
+      const answer = await handler.fetch(webRequest(req, gone.signal), {
+        parsedBody: req.body,
+        authInfo: {
+          // Never the token itself: the SDK and the tools need only who is calling.
+          token: caller.tokenId ? 'pat:' + caller.tokenId : '',
+          clientId: caller.userId ? 'personal-access-token' : 'anyone',
+          scopes: caller.scopes ?? [],
+          extra: { ...caller }
+        }
+      });
+      await send(answer, res, gone.signal);
+    } finally {
+      res.off('close', abort);
+      if (listen) {
+        const left = (openStreams.get(address) ?? 1) - 1;
+        if (left > 0) openStreams.set(address, left);
+        else openStreams.delete(address);
+      }
+    }
   }
 );
 
