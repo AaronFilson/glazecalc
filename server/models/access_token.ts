@@ -88,3 +88,19 @@ export const workingTokens = (userId: string | Types.ObjectId, now = new Date())
   revokedAt: null,
   expiresAt: { $gt: now }
 });
+
+/**
+ * Keeps a personal token just made only while the account has at most
+ * MAX_PATS working: counted again after it is saved, and taken back (deleted,
+ * never having been shown) when there are more. Two made at the same moment
+ * may then both be taken back, but there are never more than MAX_PATS.
+ */
+export const keepWithinPatLimit = async (
+  userId: string | Types.ObjectId,
+  tokenId: Types.ObjectId,
+  now = new Date()
+): Promise<boolean> => {
+  if ((await AccessToken.countDocuments(workingTokens(userId, now))) <= MAX_PATS) return true;
+  await AccessToken.deleteOne({ _id: tokenId });
+  return false;
+};

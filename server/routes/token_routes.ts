@@ -31,6 +31,7 @@ import { confirmChange } from '../lib/second_step.ts';
 import { mintToken } from '../lib/token_auth.ts';
 import AccessToken, {
   DEFAULT_PAT_EXPIRY_DAYS,
+  keepWithinPatLimit,
   MAX_PATS,
   PAT_EXPIRY_DAYS,
   revokeAll,
@@ -121,7 +122,7 @@ tokenRouter.post('/', jwtAuth, notGuest, limits.passwordCheck, express.json(), a
     return res.status(check.status).json(say(check.code, check.params, check.field ? { field: check.field } : {}));
   }
   const user = check.user;
-  // Counted again after the confirmation, which takes a moment: two at once still make at most MAX_PATS.
+  // Counted again after the confirmation, which takes a moment.
   if ((await AccessToken.countDocuments(workingTokens(userId))) >= MAX_PATS) {
     return res.status(409).json(say('token-limit', { most: MAX_PATS }));
   }
@@ -137,6 +138,10 @@ tokenRouter.post('/', jwtAuth, notGuest, limits.passwordCheck, express.json(), a
     createdAt,
     expiresAt: new Date(createdAt.getTime() + (days as number) * DAY)
   });
+  // Counted once more now it is saved, so even requests at the same moment never make more than MAX_PATS.
+  if (!(await keepWithinPatLimit(user._id, row._id))) {
+    return res.status(409).json(say('token-limit', { most: MAX_PATS }));
+  }
   log.info('Access token made', { tokenId: String(row._id), days });
   // A notice to the owner, after the reply; not to an address nobody has confirmed.
   if (!user.emailUnverified && mailer.available()) {

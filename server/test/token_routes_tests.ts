@@ -7,7 +7,12 @@ import { sendTokenReminders } from '../lib/token_reminders.ts';
 import * as accountMail from '../lib/account_mail.ts';
 import * as totp from '../lib/totp.ts';
 import { hashToken, kindOf } from '../lib/token_auth.ts';
-import AccessToken, { MAX_PATS, REMINDER_DAYS_BEFORE } from '../models/access_token.ts';
+import AccessToken, {
+  keepWithinPatLimit,
+  MAX_PATS,
+  REMINDER_DAYS_BEFORE,
+  workingTokens
+} from '../models/access_token.ts';
 import User from '../models/user.ts';
 import { api, makeUser, sessionToken } from './support/app.ts';
 import * as mail from './support/mail.ts';
@@ -157,6 +162,33 @@ describe('access tokens: the account page', () => {
     expect(over).to.have.status(409);
     expect(over.body).to.include({ code: 'token-limit' });
     expect(over.body.params).to.eql({ most: MAX_PATS });
+  });
+
+  it(`never has more than ${MAX_PATS} working, even when several are made at the same moment`, async () => {
+    const { user, token: session, password } = await makeUser();
+    for (let i = 0; i < MAX_PATS - 1; i++) await makeToken(user);
+    const made = await Promise.all(
+      Array.from({ length: 4 }, (_, i) => make(session, { name: 'at once ' + i, password }))
+    );
+    for (const res of made) expect([201, 409]).to.include(res.status);
+    expect(await AccessToken.countDocuments(workingTokens(user._id))).to.be.at.most(MAX_PATS);
+    // A refused one was taken back whole: no row of it is left.
+    const kept = made.filter((res) => res.status === 201).map((res) => res.body.row.id);
+    const rows = await AccessToken.find({ userId: user._id, name: /^at once/ }).lean();
+    expect(rows.map((row) => String(row._id)).sort()).to.eql(kept.sort());
+  });
+
+  it('takes back a token saved past the limit, and keeps one within it', async () => {
+    const { user } = await makeUser();
+    for (let i = 0; i < MAX_PATS; i++) await makeToken(user);
+    const rows = await AccessToken.find({ userId: user._id }).sort({ _id: 1 });
+    // Exactly at the limit: kept.
+    expect(await keepWithinPatLimit(user._id, rows.at(-1)!._id)).to.equal(true);
+    await makeToken(user);
+    const extra = (await AccessToken.find({ userId: user._id }).sort({ _id: -1 }).limit(1))[0]!;
+    expect(await keepWithinPatLimit(user._id, extra._id)).to.equal(false);
+    expect(await AccessToken.findById(extra._id)).to.equal(null);
+    expect(await AccessToken.countDocuments(workingTokens(user._id))).to.equal(MAX_PATS);
   });
 
   it('revokes one, only the account’s own, and then all', async () => {
