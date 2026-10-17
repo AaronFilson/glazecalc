@@ -517,7 +517,8 @@ describe('account data: the new collections', () => {
       .delete('/recipe/delete/' + saved._id)
       .set('Authorization', bearer(trial));
     const { user } = await makeUser();
-    await mergeTrial(trialId, user._id);
+    // One record, in the Trash; its earlier version moves but is not counted.
+    expect(await mergeTrial(trialId, user._id)).to.equal(1);
     expect(await RecordVersion.countDocuments({ ownedBy: String(user._id) })).to.equal(1);
     expect(await Trash.countDocuments({ ownedBy: String(user._id) })).to.equal(1);
     expect(await RecordVersion.countDocuments({ ownedBy: trialId })).to.equal(0);

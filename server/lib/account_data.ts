@@ -53,16 +53,18 @@ const BATCH = 500;
 
 /**
  * Moves a trial's records into an account and removes the trial; resolves with
- * how many records moved.
+ * how many records moved. Their earlier versions and activity lines move too,
+ * but are not counted: they are not records the person made.
  */
 export const mergeTrial = async (trialId: Id, accountId: Id): Promise<number> => {
-  const results = await Promise.all(
-    OWNED_MODELS.map((Model) =>
-      Model.updateMany({ ownedBy: String(trialId) }, { $set: { ownedBy: String(accountId) } })
-    )
-  );
+  const move = (Model: RecordModel) =>
+    Model.updateMany({ ownedBy: String(trialId) }, { $set: { ownedBy: String(accountId) } });
+  const [records] = await Promise.all([
+    Promise.all(Object.values(OWNED_KINDS).map(move)),
+    Promise.all(OWNED_HISTORY.map(move))
+  ]);
   await deleteAccount(trialId);
-  return results.reduce((count, result) => count + result.modifiedCount, 0);
+  return records.reduce((count, result) => count + result.modifiedCount, 0);
 };
 
 /** Removes the records of these users; resolves with how many. */
