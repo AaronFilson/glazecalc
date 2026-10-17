@@ -68,7 +68,6 @@
     "saveFailed": "Chyba: požiadavka na server zlyhala."
   },
   "trash": {
-    "title": "Kôš",
-    "comingSoon": "Kôš pribudne čoskoro, v ďalšej verzii aplikácie Glazecalc. Dovtedy mažte a odstraňujte opatrne: keď údaje raz zmiznú, sú stratené."
+    "title": "Kôš"
   }
 }

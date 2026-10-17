@@ -93,7 +93,6 @@
     "error": "Fejl: {text}"
   },
   "remove": {
-    "removed": "»{name}« er fjernet.",
     "alreadyRemoved": "»{name}« var allerede fjernet.",
     "failed": "Det kunne ikke fjernes. Prøv igen.",
     "question": "Skal »{name}« fjernes?",

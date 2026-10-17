@@ -80,7 +80,7 @@ describe('notes API', () => {
       .delete('/notes/delete/' + saved._id)
       .set('Authorization', 'Bearer ' + token);
     expect(res).to.have.status(200);
-    expect(res.body.msg).to.eql('Successfully deleted note');
+    expect(res.body.code).to.eql('record-trashed');
     const all = await api()
       .get('/notes/getAll')
       .set('Authorization', 'Bearer ' + token);

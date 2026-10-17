@@ -93,7 +93,6 @@
     "error": "Napaka: {text}"
   },
   "remove": {
-    "removed": "Odstranjeno: »{name}«.",
     "alreadyRemoved": "Že odstranjeno: »{name}«.",
     "failed": "Odstranitev ni uspela. Poskusite znova.",
     "question": "Želite odstraniti »{name}«?",

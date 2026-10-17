@@ -93,7 +93,6 @@
     "error": "Erreur : {text}"
   },
   "remove": {
-    "removed": "Retiré : « {name} ».",
     "alreadyRemoved": "Déjà retiré : « {name} ».",
     "failed": "Impossible de retirer cet élément. Veuillez réessayer.",
     "question": "Retirer « {name} » ?",

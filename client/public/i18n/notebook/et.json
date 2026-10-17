@@ -68,7 +68,6 @@
     "saveFailed": "Viga: päring serverile ebaõnnestus."
   },
   "trash": {
-    "title": "Prügikast",
-    "comingSoon": "Prügikast lisandub peagi, Glazecalci järgmises versioonis. Seni kasutage kustutamist ja eemaldamist ettevaatlikult: kui midagi on kustutatud, on see teave kadunud."
+    "title": "Prügikast"
   }
 }

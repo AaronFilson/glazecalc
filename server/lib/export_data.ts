@@ -4,6 +4,9 @@
 import type { Types } from 'mongoose';
 import { OWNED_KINDS } from './account_data.ts';
 import { left as recoveryCodesLeft } from './recovery_codes.ts';
+import AccessToken from '../models/access_token.ts';
+import Activity from '../models/activity.ts';
+import RecordVersion from '../models/record_version.ts';
 import User, { mfaOn, type UserFields } from '../models/user.ts';
 
 type Id = string | Types.ObjectId;
@@ -12,13 +15,16 @@ type Row = Record<string, unknown>;
 /** Bump when a field is renamed or removed; adding one does not need it. */
 export const EXPORT_VERSION = 1;
 
+/** A record without the database's own bookkeeping. */
+const bare = ({ ownedBy: _owner, __v: _version, ...record }: Row): Row => record;
+
 /** The user's records of one kind, oldest first, without the database's own bookkeeping. */
 export const recordsOf = async (kind: string, userId: Id): Promise<Row[]> => {
   const found = await OWNED_KINDS[kind]
     .find({ ownedBy: String(userId) })
     .sort({ _id: 1 })
     .lean();
-  return found.map(({ ownedBy: _owner, __v: _version, ...record }: Row) => record);
+  return found.map(bare);
 };
 
 /**
@@ -40,6 +46,53 @@ const signInOf = (user: Pick<UserFields, 'mfa'>): Row => {
   };
 };
 
+/** Earlier versions of the user's records, kept for Undo, oldest first. */
+const versionsOf = async (userId: Id): Promise<Row[]> =>
+  (
+    await RecordVersion.find({ ownedBy: String(userId) })
+      .sort({ savedAt: 1, _id: 1 })
+      .lean()
+  ).map(({ fromCollection, recordId, savedAt, by, record }) => ({
+    fromCollection,
+    recordId,
+    savedAt,
+    by,
+    record: bare((record ?? {}) as Row)
+  }));
+
+/** What access tokens and connected apps did, oldest first. */
+const activityOf = async (userId: Id): Promise<Row[]> =>
+  (
+    await Activity.find({ ownedBy: String(userId) })
+      .sort({ at: 1, _id: 1 })
+      .lean()
+  ).map(({ at, via, client, action, fromCollection, recordId, title }) => ({
+    at,
+    via,
+    client,
+    action,
+    fromCollection,
+    recordId,
+    title
+  }));
+
+/** The account's access tokens and connected apps, in names and dates only: never a token's hash. */
+const accessTokensOf = async (userId: Id): Promise<Row[]> =>
+  (await AccessToken.find({ userId }).sort({ createdAt: 1, _id: 1 }).lean()).map(
+    ({ kind, name, clientId, hint, scopes, createdAt, expiresAt, lastUsedAt, revokedAt, revokedWhy }) => ({
+      kind,
+      name,
+      ...(clientId && { clientId }),
+      ...(hint && { endsWith: hint }),
+      scopes,
+      createdAt,
+      expiresAt,
+      lastUsedAt,
+      revokedAt,
+      revokedWhy
+    })
+  );
+
 /** The whole export: the account, its preferences and shelf, and every kind of record. */
 export const exportAccount = async (userId: Id, now = new Date()): Promise<Row | null> => {
   const user = await User.findById(userId, {
@@ -55,7 +108,12 @@ export const exportAccount = async (userId: Id, now = new Date()): Promise<Row |
   }).lean();
   if (!user) return null;
   const kinds = Object.keys(OWNED_KINDS);
-  const lists = await Promise.all(kinds.map((kind) => recordsOf(kind, userId)));
+  const [lists, versions, activity, accessTokens] = await Promise.all([
+    Promise.all(kinds.map((kind) => recordsOf(kind, userId))),
+    versionsOf(userId),
+    activityOf(userId),
+    accessTokensOf(userId)
+  ]);
   return {
     format: 'glazecalc-export',
     version: EXPORT_VERSION,
@@ -71,7 +129,10 @@ export const exportAccount = async (userId: Id, now = new Date()): Promise<Row |
     preferences: user.preferences ?? {},
     shelf: user.shelf ?? [],
     signIn: signInOf(user),
-    records: Object.fromEntries(kinds.map((kind, i) => [kind, lists[i]]))
+    records: Object.fromEntries(kinds.map((kind, i) => [kind, lists[i]])),
+    versions,
+    activity,
+    accessTokens
   };
 };
 

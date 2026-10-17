@@ -1,6 +1,7 @@
 // The kinds of record a user keeps, each served under /api/<path> by the same
-// routes (server/lib/record_routes.ts). `fields` are what a user may set,
-// `required` what a new record must have.
+// routes (server/lib/record_routes.ts), and the Trash they go to when removed
+// (./trash_routes.ts). `fields` are what a user may set, `required` what a new
+// record must have.
 import type { Router } from 'express';
 import recordRoutes from '../lib/record_routes.ts';
 import Additive from '../models/additive.ts';
@@ -9,7 +10,7 @@ import Firing from '../models/firing.ts';
 import Material from '../models/material.ts';
 import Note from '../models/note.ts';
 import Recipe from '../models/recipe.ts';
-import Trash from '../models/trash.ts';
+import trashRouter from './trash_routes.ts';
 
 const records: Record<string, Router> = {
   additives: recordRoutes(Additive, {
@@ -78,14 +79,8 @@ const records: Record<string, Router> = {
     wrapper: { change: 'recipe' },
     standard: true
   }),
-  // ...and trash as { trash: {...} }, both new and changed.
-  trash: recordRoutes(Trash, {
-    label: 'trash',
-    area: 'trash',
-    fields: ['content', 'date', 'fromCollection'],
-    required: ['content', 'date', 'fromCollection'],
-    wrapper: { create: 'trash', change: 'trash' }
-  })
+  // The Trash has routes of its own.
+  trash: trashRouter
 };
 
 export default records;

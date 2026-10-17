@@ -107,7 +107,7 @@ describe('additives API', () => {
       .delete('/additives/delete/' + saved._id)
       .set('Authorization', 'Bearer ' + token);
     expect(res).to.have.status(200);
-    expect(res.body.msg).to.eql('Successfully deleted additive');
+    expect(res.body.code).to.eql('record-trashed');
     const all = await api()
       .get('/additives/getAll')
       .set('Authorization', 'Bearer ' + token);

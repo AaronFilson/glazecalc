@@ -68,7 +68,6 @@
     "saveFailed": "Errore: la richiesta al server non è riuscita."
   },
   "trash": {
-    "title": "Cestino",
-    "comingSoon": "Il cestino arriverà presto, nella prossima versione di Glazecalc. Fino ad allora, usare con attenzione i comandi per eliminare e rimuovere: ciò che viene cancellato va perso."
+    "title": "Cestino"
   }
 }

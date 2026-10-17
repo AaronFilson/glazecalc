@@ -68,7 +68,6 @@
     "saveFailed": "Erreur : la requête au serveur a échoué."
   },
   "trash": {
-    "title": "Corbeille",
-    "comingSoon": "La corbeille arrive bientôt, dans la prochaine version de Glazecalc. D’ici là, supprimez et retirez avec prudence : une fois effacées, les informations sont perdues."
+    "title": "Corbeille"
   }
 }

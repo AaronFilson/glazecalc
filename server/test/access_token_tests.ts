@@ -1,36 +1,13 @@
 import { Types } from 'mongoose';
 import AccessToken, { revokeAll } from '../models/access_token.ts';
 import User, { type UserDocument } from '../models/user.ts';
-import { hashToken, kindOf, mintToken, verifyAccessToken, type TokenKind } from '../lib/token_auth.ts';
-import { allows, scopeFor, SCOPES, type Scope } from '../lib/scopes.ts';
+import { hashToken, kindOf, mintToken, verifyAccessToken } from '../lib/token_auth.ts';
+import { allows, scopeFor, SCOPES } from '../lib/scopes.ts';
 import { api, expect, makeUser } from './support/app.ts';
+import { makeToken } from './support/tokens.ts';
 import * as mail from './support/mail.ts';
 
 const DAY = 24 * 60 * 60 * 1000;
-
-/** A token saved for the user, as the token page (wave 2) will make one; resolves with the token itself. */
-export const makeToken = async (
-  user: UserDocument,
-  {
-    scopes = ['data:read'],
-    kind = 'pat',
-    expiresAt = new Date(Date.now() + 30 * DAY),
-    revokedAt
-  }: { scopes?: string[]; kind?: TokenKind; expiresAt?: Date; revokedAt?: Date } = {}
-): Promise<string> => {
-  const { token, hash, hint } = mintToken(kind);
-  await AccessToken.create({
-    kind,
-    userId: user._id,
-    name: 'Test token',
-    hash,
-    hint,
-    scopes: scopes as Scope[],
-    expiresAt,
-    revokedAt
-  });
-  return token;
-};
 
 const recipe = { title: 'Celadon', materials: [{ name: 'Silica', amount: '30' }] };
 
@@ -257,6 +234,24 @@ describe('access tokens: routes', () => {
     expect(out).to.have.status(200);
     expect(await api().get('/recipe/getAll').set('Authorization', bearer(token))).to.have.status(401);
     expect((await AccessToken.findOne({ hash: hashToken(token) }))!.revokedWhy).to.equal('signed-out-everywhere');
+  });
+
+  it('gets replies no browser or proxy keeps, as every signed-in reply is', async () => {
+    const write = await makeToken(user, { scopes: ['data:write'] });
+    const made = await api().post('/recipe/create').set('Authorization', bearer(write)).send(recipe);
+    const replies = [
+      made,
+      await api().get('/recipe/getAll').set('Authorization', bearer(write)),
+      await api()
+        .get('/recipe/versions/' + made.body._id)
+        .set('Authorization', bearer(write)),
+      await api().get('/trash/getAll').set('Authorization', bearer(session)),
+      await api().get('/verify').set('Authorization', bearer(write)),
+      await api()
+        .get('/recipe/getAll')
+        .set('Authorization', bearer(mintToken('pat').token))
+    ];
+    for (const [i, res] of replies.entries()) expect(res.headers['cache-control'], 'reply ' + i).to.equal('no-store');
   });
 
   it('is revoked, every one, by a password reset', async () => {

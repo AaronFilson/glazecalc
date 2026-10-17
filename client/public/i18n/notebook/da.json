@@ -68,7 +68,6 @@
     "saveFailed": "Fejl: Anmodningen til serveren mislykkedes."
   },
   "trash": {
-    "title": "Papirkurv",
-    "comingSoon": "Papirkurven kommer snart, i den næste version af Glazecalc. Brug indtil da slet/fjern med omtanke: Når noget er væk, er oplysningerne tabt."
+    "title": "Papirkurv"
   }
 }

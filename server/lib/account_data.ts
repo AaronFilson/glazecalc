@@ -3,6 +3,8 @@
 // written to the deletion log first (models/deletion.ts), so that a restored
 // backup can be put right: reapplyDeletions removes those accounts again.
 import type { Types } from 'mongoose';
+import AccessToken from '../models/access_token.ts';
+import Activity from '../models/activity.ts';
 import Additive from '../models/additive.ts';
 import Advice from '../models/advice.ts';
 import AuthChallenge from '../models/auth_challenge.ts';
@@ -14,6 +16,7 @@ import EmailToken from '../models/email_token.ts';
 import PasswordReset from '../models/password_reset.ts';
 import PendingSignIn from '../models/pending_sign_in.ts';
 import Recipe from '../models/recipe.ts';
+import RecordVersion from '../models/record_version.ts';
 import Trash from '../models/trash.ts';
 import User from '../models/user.ts';
 import type { RecordModel } from './guest_limits.ts';
@@ -38,7 +41,13 @@ export const OWNED_KINDS: Record<string, RecordModel> = {
   recipes: Recipe,
   trash: Trash
 };
-const OWNED_MODELS: RecordModel[] = Object.values(OWNED_KINDS);
+/**
+ * Also the user's (ownedBy), but not records they keep: the earlier versions
+ * of their records and the activity log. They go, and move from a trial,
+ * with the account. Access tokens are the account's by userId; a trial has none.
+ */
+const OWNED_HISTORY: RecordModel[] = [RecordVersion, Activity];
+const OWNED_MODELS: RecordModel[] = [...Object.values(OWNED_KINDS), ...OWNED_HISTORY];
 // Accounts removed at a time when the log is re-applied.
 const BATCH = 500;
 
@@ -64,7 +73,9 @@ const deleteRecords = async (ids: string[]): Promise<number> => {
     EmailToken.deleteMany({ userId: { $in: ids } }),
     // Two-step sign-in in progress; the factors themselves are in the User document.
     AuthChallenge.deleteMany({ userId: { $in: ids } }),
-    PendingSignIn.deleteMany({ userId: { $in: ids } })
+    PendingSignIn.deleteMany({ userId: { $in: ids } }),
+    // Personal access tokens and OAuth grants.
+    AccessToken.deleteMany({ userId: { $in: ids } })
   ]);
   return results.reduce((count, result) => count + result.deletedCount, 0);
 };

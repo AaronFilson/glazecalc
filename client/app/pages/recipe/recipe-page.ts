@@ -99,6 +99,8 @@ interface Saved {
   stillOpen: boolean;
   /** It was changed while it saved, so the page has changes that are not saved. */
   changedSince: boolean;
+  /** The saved recipe it changed, whose earlier version Undo puts back; none for a new one. */
+  changedId: string | null;
 }
 
 /** What Undo the swap puts back: the recipe as it was, and whether (and as what) it was saved. */
@@ -744,8 +746,34 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
   protected save(): Promise<void> {
     return this.saving.run(async () => {
       const saved = await this.saveAs('save');
-      if (saved) this.notices.success(translate('recipe.page.savedNotice', { title: saved.title }), 'save');
+      if (!saved) return;
+      const id = saved.changedId;
+      this.notices.success(
+        translate('recipe.page.savedNotice', { title: saved.title }),
+        'save',
+        id ? { label: translate('recipe.page.undoSave'), run: () => this.undoSave(id) } : undefined
+      );
     });
+  }
+
+  /**
+   * Puts back the saved recipe as it was before the last save (the server
+   * keeps it). The page shows it, unless the recipe has changed on the page
+   * since or another is open: then only the list changes, and the page's
+   * recipe counts as not saved.
+   */
+  private async undoSave(id: string): Promise<void> {
+    try {
+      const earlier = await this.recipes.undo(id);
+      this.myRecipes.update((list) => list.map((r) => (r._id === id ? earlier : r)));
+      if (this.savedId() === id) {
+        if (this.dirty()) this.savedSnapshot.set('');
+        else this.open(earlier);
+      }
+      this.notices.success(translate('recipe.page.undone', { title: earlier.title }), 'save');
+    } catch (err) {
+      this.notices.error(errorMessage(err, translate('recipe.page.undoFailed')));
+    }
   }
 
   /** Saves, then clears the page for the next recipe. */
@@ -812,7 +840,7 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
         this.savedSnapshot.set(sent);
         this.savedAt.set(new Date());
       }
-      return { title: recipe.title, stillOpen, changedSince: this.snapshot() !== sent };
+      return { title: recipe.title, stillOpen, changedSince: this.snapshot() !== sent, changedId: id };
     } catch (err) {
       const message = errorMessage(err, translate('recipe.page.saveFailed'));
       if (showing === this.showing) this.saveProblem.set(message);

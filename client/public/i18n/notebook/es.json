@@ -68,7 +68,6 @@
     "saveFailed": "Error: ha fallado la solicitud al servidor."
   },
   "trash": {
-    "title": "Papelera",
-    "comingSoon": "La papelera llegará pronto, en la próxima versión de Glazecalc. Hasta entonces, use con cuidado las opciones de eliminar y quitar: una vez borrada, la información se pierde."
+    "title": "Papelera"
   }
 }

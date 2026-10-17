@@ -160,6 +160,6 @@ describe('FiringPage', () => {
       .flush({});
     await removing;
     expect(page['myFirings']()).toEqual([]);
-    expect(page['notices'].messages()).toEqual(['Removed "Old".']);
+    expect(page['notices'].messages()).toEqual(['Moved "Old" to the Trash.']);
   });
 });

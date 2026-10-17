@@ -93,7 +93,6 @@
     "error": "Kļūda: {text}"
   },
   "remove": {
-    "removed": "Noņemts: “{name}”.",
     "alreadyRemoved": "Ieraksts “{name}” jau ir noņemts.",
     "failed": "Neizdevās noņemt. Mēģiniet vēlreiz.",
     "question": "Vai noņemt “{name}”?",

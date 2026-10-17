@@ -93,7 +93,6 @@
     "error": "Fel: {text}"
   },
   "remove": {
-    "removed": "”{name}” har tagits bort.",
     "alreadyRemoved": "”{name}” hade redan tagits bort.",
     "failed": "Det gick inte att ta bort. Försök igen.",
     "question": "Ta bort ”{name}”?",

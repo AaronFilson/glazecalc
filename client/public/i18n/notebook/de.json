@@ -68,7 +68,6 @@
     "saveFailed": "Fehler: Die Anfrage an den Server ist fehlgeschlagen."
   },
   "trash": {
-    "title": "Papierkorb",
-    "comingSoon": "Der Papierkorb kommt bald, mit der nächsten Version von Glazecalc. Gehen Sie bis dahin vorsichtig mit Löschen und Entfernen um: Ist etwas einmal weg, sind die Daten verloren."
+    "title": "Papierkorb"
   }
 }

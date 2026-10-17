@@ -126,6 +126,12 @@ export const MESSAGES = {
   'record-updated': `Successfully updated {label, select, ${ONE}}`,
   'record-invalid': `Invalid {label, select, ${ONE}}`,
   'record-deleted': `Successfully deleted {label, select, ${ONE}}`,
+  'record-trashed': `Moved the {label, select, ${ONE}} to the Trash. It can be put back for 30 days.`,
+  'record-undone': `Went back to the earlier version of the {label, select, ${ONE}}.`,
+  'nothing-to-undo': 'There is no earlier version to go back to.',
+  'trash-restored': `Put the {label, select, ${ONE}} back.`,
+  'trash-restored-already': 'This has been put back already.',
+  'trash-emptied': 'The Trash is empty.',
   'account-limit': `An account can keep up to {limit} {label, select, ${MANY}}. Please remove some to save more.`,
 
   // Access tokens (server/lib/token_auth.ts).

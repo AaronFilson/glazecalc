@@ -7,24 +7,39 @@
 //   GET    /getAll       the user's records, oldest first
 //   GET    /getLatest    the user's newest                       404 when there is none
 //   PUT    /change/:id   changes the listed fields of one of them 404 when it is not theirs
-//   DELETE /delete/:id   removes one of them                     404 when it is not theirs
+//   DELETE /delete/:id   moves one of them to the Trash           404 when it is not theirs
+//   GET    /versions/:id its earlier versions, newest first: [{ _id, savedAt, by, title }]
+//   POST   /undo/:id     puts back the version before the last change, and answers
+//                        with the record                          404 when there is none
 //   GET    /getStandard  the shared records from data/, for anyone (when `standard` is set)
+//
+// Each change keeps the record as it was (server/lib/record_history.ts), so it
+// can be undone; a removed record can be put back from the Trash
+// (server/routes/trash_routes.ts). The web session can use every route; an
+// access token those its scopes allow (server/lib/require_scope.ts), and what
+// it does is written to the activity log.
 //
 // Database errors go to the app's error handler (server/app.ts): values of the
 // wrong type are a 400, anything else a 500.
 import express, { type Request, type Response } from 'express';
 import mongoose from 'mongoose';
+import RecordVersion from '../models/record_version.ts';
 import { giveBack, quota, type RecordModel } from './guest_limits.ts';
 import { userOf } from './jwt_auth.ts';
 import { say } from './messages.ts';
+import { byOf, logActivity, moveToTrash, saveVersion, titleOf } from './record_history.ts';
 import requireScope from './require_scope.ts';
 import type { Area } from './scopes.ts';
 
 export interface RecordRoutesOptions {
   /** The kind of record, a code the messages name it by (server/lib/messages.ts): 'recipe'. */
   label: string;
-  /** The part of the account it is, for access tokens' permissions (server/lib/scopes.ts). */
-  area: Area;
+  /**
+   * The part of the account it is, for access tokens' permissions
+   * (server/lib/scopes.ts), and the kind of record as the account's data
+   * names it (server/lib/account_data.ts): 'recipes'.
+   */
+  area: Exclude<Area, 'trash' | 'shelf' | 'preferences'>;
   /** What a user may set. */
   fields: string[];
   /** What a new record must have. */
@@ -54,6 +69,9 @@ const recordIn = (req: Request, wrapper?: string): Body | null => {
 const pick = (source: Body, fields: string[]): Body =>
   Object.fromEntries(fields.filter((field) => source[field] !== undefined).map((field) => [field, source[field]]));
 
+/** A version's fields, to replace a record's with: the record keeps its own _id and owner. */
+const earlierOf = ({ _id: _id, ownedBy: _owner, ...earlier }: Body): Body => earlier;
+
 const validId = (req: Request, res: Response): boolean => {
   if (mongoose.isValidObjectId(req.params.id)) return true;
   res.status(400).json(say('invalid-id'));
@@ -77,7 +95,9 @@ export default function recordRoutes(
       res.status(400).json(MISSING);
       return;
     }
-    res.status(200).json(await Model.create({ ...pick(source, fields), ownedBy: userOf(req).id }));
+    const saved = await Model.create({ ...pick(source, fields), ownedBy: userOf(req).id });
+    await logActivity(req, 'create', area, saved.toObject());
+    res.status(200).json(saved);
   });
 
   router.get('/getAll', reading, async (req, res) => {
@@ -106,15 +126,18 @@ export default function recordRoutes(
       return;
     }
     try {
-      const result = await Model.updateOne(
+      // The record as it was, found and changed in one step, so the version kept is the one changed.
+      const before = await Model.findOneAndUpdate(
         { _id: req.params.id, ownedBy: userOf(req).id },
         { $set: changes },
-        { runValidators: true }
+        { runValidators: true, returnDocument: 'before', lean: true }
       );
-      if (!result.matchedCount) {
+      if (!before) {
         res.status(404).json(notFound);
         return;
       }
+      await saveVersion(area, before, byOf(req));
+      await logActivity(req, 'change', area, { ...before, ...changes });
       res.status(200).json(say('record-updated', { label }));
     } catch (err) {
       if (err instanceof Error && (err.name === 'ValidationError' || err.name === 'CastError')) {
@@ -128,14 +151,55 @@ export default function recordRoutes(
   router.delete('/delete/:id', writing, async (req, res) => {
     if (!validId(req, res)) return;
     const user = userOf(req);
-    const result = await Model.deleteOne({ _id: req.params.id, ownedBy: user.id });
-    if (result.deletedCount !== 1) {
+    const trashed = await moveToTrash(Model, area, user, req.params.id as string, byOf(req));
+    if (!trashed) {
       res.status(404).json(notFound);
       return;
     }
-    // A trial gets the place back for another record.
+    await logActivity(req, 'trash', area, trashed.record);
+    // A trial gets the place back for another record; the Trash does not count.
     if (user.guest) await giveBack(user._id, Model);
-    res.status(200).json(say('record-deleted', { label }));
+    res.status(200).json({ ...say('record-trashed', { label }), trashId: trashed.trashId });
+  });
+
+  router.get('/versions/:id', reading, async (req, res) => {
+    if (!validId(req, res)) return;
+    const versions = await RecordVersion.find({
+      ownedBy: userOf(req).id,
+      fromCollection: area,
+      recordId: req.params.id
+    })
+      .sort({ savedAt: -1, _id: -1 })
+      .lean();
+    res
+      .status(200)
+      .json(versions.map(({ _id, savedAt, by, record }) => ({ _id, savedAt, by, title: titleOf(record as Body) })));
+  });
+
+  router.post('/undo/:id', writing, async (req, res) => {
+    if (!validId(req, res)) return;
+    const ownedBy = userOf(req).id as string;
+    const version = await RecordVersion.findOne({ ownedBy, fromCollection: area, recordId: req.params.id }).sort({
+      savedAt: -1,
+      _id: -1
+    });
+    if (!version) {
+      res.status(404).json(say('nothing-to-undo'));
+      return;
+    }
+    const restored = await Model.findOneAndReplace(
+      { _id: req.params.id, ownedBy },
+      { ...earlierOf(version.record as Body), ownedBy },
+      { returnDocument: 'after', lean: true }
+    );
+    if (!restored) {
+      // In the Trash, or gone: the version stays, for when it is put back.
+      res.status(404).json(notFound);
+      return;
+    }
+    await RecordVersion.deleteOne({ _id: version._id });
+    await logActivity(req, 'undo', area, restored);
+    res.status(200).json({ ...say('record-undone', { label }), record: restored });
   });
 
   if (standard) {

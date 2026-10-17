@@ -93,7 +93,6 @@
     "error": "Żball: {text}"
   },
   "remove": {
-    "removed": "Neħħejt “{name}”.",
     "alreadyRemoved": "Dan diġà tneħħa: “{name}”.",
     "failed": "It-tneħħija ma rnexxietx. Erġa’ pprova.",
     "question": "Tneħħi “{name}”?",

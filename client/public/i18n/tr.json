@@ -93,7 +93,6 @@
     "error": "Hata: {text}"
   },
   "remove": {
-    "removed": "“{name}” kaldırıldı.",
     "alreadyRemoved": "“{name}” zaten kaldırılmıştı.",
     "failed": "Kaldırılamadı. Lütfen yeniden deneyin.",
     "question": "“{name}” kaldırılsın mı?",

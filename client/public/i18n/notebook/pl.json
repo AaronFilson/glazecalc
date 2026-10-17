@@ -68,7 +68,6 @@
     "saveFailed": "Błąd: żądanie do serwera nie powiodło się."
   },
   "trash": {
-    "title": "Kosz",
-    "comingSoon": "Kosz pojawi się wkrótce, w następnej wersji aplikacji Glazecalc. Do tego czasu z usuwania należy korzystać ostrożnie: usunięte dane przepadają."
+    "title": "Kosz"
   }
 }

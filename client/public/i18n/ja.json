@@ -93,7 +93,6 @@
     "error": "エラー: {text}"
   },
   "remove": {
-    "removed": "「{name}」を削除しました。",
     "alreadyRemoved": "「{name}」はすでに削除されています。",
     "failed": "削除できませんでした。もう一度お試しください。",
     "question": "「{name}」を削除しますか?",

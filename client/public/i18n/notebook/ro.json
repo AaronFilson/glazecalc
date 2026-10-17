@@ -68,7 +68,6 @@
     "saveFailed": "Eroare: cererea către server nu a reușit."
   },
   "trash": {
-    "title": "Coșul de reciclare",
-    "comingSoon": "Coșul de reciclare va fi disponibil în versiunea următoare a aplicației Glazecalc. Până atunci, ștergeți și eliminați cu grijă: odată dispărute, informațiile se pierd."
+    "title": "Coșul de reciclare"
   }
 }
