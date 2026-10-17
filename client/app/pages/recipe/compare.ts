@@ -1,8 +1,8 @@
 import { translate } from '@jsverse/transloco';
-import { MaterialInput, expansion, formatFormula } from '../../../../lib/chemistry';
+import { expansion, formatFormula } from '../../../../lib/chemistry';
+import * as swapsLib from '../../../../lib/recipe/swaps';
 import { LibraryInfo, Material, RecipeAnalysis, RecipeMaterial } from '../../core/models';
-import { LIKE_FOR_LIKE_GRAMS, gramsApart } from '../../shared/alike';
-import { hasLead, inRegion, statusText } from '../../shared/library-info';
+import { statusText } from '../../shared/library-info';
 import { UNITY_TITLES, silicaAluminaRatio, unityColumnOf } from './unity-formula';
 import { fixed } from '../../shared/format';
 
@@ -98,17 +98,8 @@ export interface Swap {
   lead: boolean;
 }
 
-/**
- * Whether one material can stand in for another gram for gram: their fired
- * oxides per 100 g of raw material differ by 15 g or less in all. Custer Spar
- * and G-200 EU Feldspar do; niter (potash) and a soda frit, or red lead and a
- * lead frit, do not, so their amounts need working out again.
- */
-export function likeForLike(a: MaterialInput, b: MaterialInput): boolean {
-  // Without oxides to compare, nothing says they are alike.
-  const grams = gramsApart(a, b);
-  return grams !== null && grams <= LIKE_FOR_LIKE_GRAMS;
-}
+// Whether one material can stand in for another gram for gram (lib/recipe/materials.js).
+export { likeForLike } from '../../../../lib/recipe/materials';
 
 export type LibraryMaterial = Material & LibraryInfo;
 
@@ -117,6 +108,13 @@ export interface ColorantSwap {
   from: string;
   status: string;
   to: string;
+}
+
+/** A shared swap (lib/recipe/swaps.js) with its status in the page's language. */
+export function swapText(swap: swapsLib.Swap): Swap;
+export function swapText(swap: swapsLib.ColorantSwap): ColorantSwap;
+export function swapText({ statusSince, ...swap }: swapsLib.Swap | swapsLib.ColorantSwap): Swap | ColorantSwap {
+  return { ...swap, status: statusText({ status: swap.status, statusSince }) };
 }
 
 /**
@@ -133,61 +131,12 @@ export function modernMaterials(
   materials: RecipeMaterial[],
   find: (name: string) => LibraryMaterial | undefined,
   region = '',
-  {
-    allowLead = true,
-    findAdditive
-  }: { allowLead?: boolean; findAdditive?: (name: string) => (LibraryInfo & { name: string }) | undefined } = {}
+  options: { allowLead?: boolean; findAdditive?: (name: string) => (LibraryInfo & { name: string }) | undefined } = {}
 ): { materials: RecipeMaterial[]; swaps: Swap[]; colorants: ColorantSwap[] } {
-  const swaps: Swap[] = [];
-  const colorants: ColorantSwap[] = [];
-  const current = (record: LibraryInfo | undefined) => !!record && (!record.status || record.status === 'current');
-  const modern = materials.map((material) => {
-    const record = find(material.name);
-    if (!record?.status || record.status === 'current' || !record.substitutes?.length) return material;
-    const substitutes = record.substitutes
-      .map((name) => find(name))
-      .filter((sub): sub is LibraryMaterial => current(sub))
-      // With lead off, only a substitute without lead.
-      .filter((sub) => allowLead || !hasLead(sub));
-    const substitute =
-      substitutes.find((sub) => region && sub.region?.includes(region)) ??
-      substitutes.find((sub) => inRegion(sub, region)) ??
-      substitutes[0];
-    if (!substitute) {
-      const additive =
-        record.category === 'colorant'
-          ? record.substitutes.map((name) => findAdditive?.(name)).find(current)
-          : undefined;
-      if (additive) colorants.push({ from: material.name, status: statusText(record), to: additive.name });
-      return material;
-    }
-    swaps.push({
-      from: material.name,
-      status: statusText(record),
-      to: substitute.name,
-      like: likeForLike(record, substitute),
-      lead: hasLead(substitute)
-    });
-    return { ...structuredClone(substitute), amount: material.amount };
-  });
-  return { materials: mergeSameMaterials(modern), swaps, colorants };
-}
-
-/**
- * One line for each material: two old ones replaced by the same new one
- * (Custer and Oxford spar by G-200 EU), or one already in the recipe, become
- * one line with their amounts added, where both are numbers.
- */
-function mergeSameMaterials(materials: RecipeMaterial[]): RecipeMaterial[] {
-  const merged: RecipeMaterial[] = [];
-  for (const material of materials) {
-    const same = merged.find((m) => m.name === material.name);
-    const [a, b] = [Number(same?.amount), Number(material.amount)];
-    if (same && same.amount?.trim() && material.amount?.trim() && Number.isFinite(a) && Number.isFinite(b)) {
-      same.amount = String(Number((a + b).toFixed(5)));
-    } else {
-      merged.push({ ...material });
-    }
-  }
-  return merged;
+  const modern = swapsLib.modernMaterials<RecipeMaterial>(materials, find, region, options);
+  return {
+    ...modern,
+    swaps: modern.swaps.map((swap) => swapText(swap)),
+    colorants: modern.colorants.map((swap) => swapText(swap))
+  };
 }
