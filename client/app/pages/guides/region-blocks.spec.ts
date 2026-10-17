@@ -532,3 +532,42 @@ describe('Philippines', () => {
     );
   });
 });
+
+describe('Vietnam', () => {
+  it('gives 115, with 113 and 114, and says plainly that no official page lists them', async () => {
+    const { element, rows } = await create(PoisonLines, 'VN');
+    const calls = [...element.querySelectorAll('a[href^="tel:"]')].map((a) => a.getAttribute('href'));
+    expect(calls).toEqual(['tel:115']);
+    expect(rows()[0]![2]).toContain('For the police, call 113; for a fire, 114.');
+    expect(element.querySelector('.reported')?.textContent).toContain(
+      'We could not find an official government page that lists these numbers'
+    );
+    expect(element.textContent).toContain('We could not confirm a public poison line here.');
+  });
+
+  it("gives QCVN 02:2019/BYT's limit for free silica in respirable dust", async () => {
+    const { element, rows } = await create(SilicaLimit, 'VN');
+    expect(rows()[0]![1]).toContain('0.1');
+    expect(element.textContent).toContain('QCVN 02:2019/BYT');
+    expect(element.textContent).toContain('0.3 mg/m³');
+  });
+
+  it("gives QCVN 12-4:2015/BYT's six kinds of piece", async () => {
+    const { element, rows } = await create(FoodLimits, 'VN');
+    expect(rows().map((row) => row[0])).toEqual([
+      'Shallow pieces, for holding or cooking food',
+      'Deep pieces for holding food, under 1100 mL',
+      'Deep pieces for holding food, from 1100 mL to under 3000 mL',
+      'Deep pieces for holding food, 3000 mL or more',
+      'Deep pieces for cooking',
+      'Cups and small bowls'
+    ]);
+    expect(element.textContent).toContain('TCVN 7146-1:2002');
+  });
+
+  it('lists no shop, and says so', async () => {
+    const { element } = await create(ShopList, 'VN');
+    expect(element.textContent).toContain('We found no shop selling raw glaze materials in Vietnam.');
+    expect(element.querySelector('table')).toBeNull();
+  });
+});

@@ -120,10 +120,15 @@ describe('regions', () => {
 
   it('should show only verified lines, each with its source and checked within the last year', () => {
     const yearAgo = Date.now() - 366 * 24 * 60 * 60 * 1000;
+    // Emergency numbers shown though no official page was found, by the owner's decision (2026-10-17).
+    const REPORTED = ['VN'];
     for (const region of regions.REGIONS) {
       const shown = safety.shownFor(region.code)!;
+      for (const line of shown.emergency) {
+        expect(line.status, line.name).to.equal(REPORTED.includes(region.code) ? 'reported' : 'verified');
+      }
       for (const line of [...shown.emergency, ...shown.poison, ...shown.animals, ...shown.advice]) {
-        expect(line.status, line.name).to.equal('verified');
+        if (!shown.emergency.includes(line)) expect(line.status, line.name).to.equal('verified');
         expect(line.source, line.name).to.match(/^https:\/\//);
         expect(Date.parse(line.checked), line.name + ': check this number again').to.be.above(yearAgo);
       }
@@ -160,7 +165,7 @@ describe('region facts', () => {
     fs.readFileSync(new URL('../../client/public/i18n/guides/en.json', import.meta.url), 'utf8')
   );
   const HTTP_ONLY = ['丸二陶料', '太麟化工原料有限公司', 'Sam Mui Kuang Pottery'];
-  const NO_SHOP_FOUND = ['MY', 'CN', 'HK', 'ID', 'TH', 'PH'];
+  const NO_SHOP_FOUND = ['MY', 'CN', 'HK', 'ID', 'TH', 'PH', 'VN'];
   const checkedLately = (fact: { checked: string; source?: string; url?: string }, label: string) => {
     expect(fact.source ?? fact.url, label).to.match(/^https:\/\//);
     expect(Date.parse(fact.checked), label + ': check this again').to.be.above(yearAgo);
@@ -926,5 +931,54 @@ describe('Philippines', () => {
     expect(workplace.workplaceFor('PH')).to.eql({ silica: null, agency: null, respirators: null, eu: false });
     expect(food.foodRulesFor('PH')).to.equal(null);
     expect(suppliers.shopsFor('PH')).to.eql({ shops: [], nearby: [] });
+  });
+});
+
+// Vietnam (docs/asia-plan.md, Phase C), from research_notes/Asia/region-VN-2026-10-17.md.
+describe('Vietnam', () => {
+  it('stays in English, fires by temperature, lists the US library, and prices in dong', () => {
+    expect(regions.regionFor('VN')).to.include({
+      temperature: 'C',
+      cones: 'temperature',
+      library: 'US',
+      currency: 'VND'
+    });
+    expect(regions.regionFor('VN')!.languages).to.eql(['vi']);
+    expect(regions.formatLocaleFor('en', 'VN', 'auto')).to.equal('en-VN');
+    expect(regions.formatLocaleFor('vi', 'VN', 'auto')).to.equal('vi-VN');
+  });
+
+  it('gives 115, with 113 and 114 in its note, marked as reported: no official page lists them', () => {
+    const shown = safety.shownFor('VN')!;
+    expect(shown.emergency.map((line) => [line.number, line.status])).to.eql([['115', 'reported']]);
+    expect(shown.emergency[0]!.note).to.include('113').and.include('114');
+    expect(shown.poison).to.eql([]);
+    expect(safety.ministryFor('VN')).to.equal(null);
+  });
+
+  it("gives QCVN 02:2019/BYT's 0.1 for free silica in respirable dust, read in a legal database's copy", () => {
+    const facts = workplace.workplaceFor('VN')!;
+    expect(facts.silica).to.include({ quartz: 0.1, kind: 'binding', status: 'secondary', checked: '2026-10-17' });
+    expect(facts.silica!.law).to.include('QCVN 02:2019/BYT');
+    expect(facts.agency).to.equal(null);
+    expect(facts.respirators).to.equal(null);
+  });
+
+  it("gives QCVN 12-4:2015/BYT's limits for ceramic ware, in force since 2016-05-01", () => {
+    const rules = food.foodRulesFor('VN')!;
+    expect(rules.own).to.equal(true);
+    expect(rules.rules).to.include({ status: 'secondary', inForce: '2016-05-01' });
+    expect(rules.rules.limits.map((l) => [l.category, l.lead, l.cadmium, l.unit])).to.eql([
+      ['vnFlat', 0.8, 0.07, 'mg/dm²'],
+      ['vnSmall', 2, 0.5, 'mg/L'],
+      ['vnMedium', 1, 0.25, 'mg/L'],
+      ['vnStorage', 0.5, 0.25, 'mg/L'],
+      ['vnCooking', 0.5, 0.05, 'mg/L'],
+      ['vnCups', 0.5, 0.25, 'mg/L']
+    ]);
+  });
+
+  it('lists no shop, since none was found', () => {
+    expect(suppliers.shopsFor('VN')).to.eql({ shops: [], nearby: [] });
   });
 });

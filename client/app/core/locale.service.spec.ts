@@ -197,7 +197,7 @@ describe('prerenderRegion', () => {
     // Taiwan comes before Hong Kong, the other region whose first language is Traditional Chinese; China is
     // the one whose first language is Simplified.
     expect(['zh-Hant', 'zh-Hans', 'ko', 'ja', 'ja-XC'].map(prerenderRegion)).toEqual(['TW', 'CN', 'KR', 'JP', 'JP']);
-    expect(['th', 'id'].map(prerenderRegion)).toEqual(['TH', 'ID']);
+    expect(['th', 'id', 'vi'].map(prerenderRegion)).toEqual(['TH', 'ID', 'VN']);
   });
 
   it('names none for English, a pseudo-locale, or a language no region lists', () => {

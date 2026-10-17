@@ -307,6 +307,17 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   - **Lead and cadmium:** Indonesia's 2026 limits, with the third of three tests held to them, and
     Thailand's, all in mg/L. China's could not be read, and Hong Kong has none of its own found.
   - **Shops:** none was found in any of the five, and the page says so.
+- **Vietnam as a region** (in English until Vietnamese is translated), firing by temperature until
+  you choose otherwise, with the US materials, prices in dong, and numbers and dates as vi-VN.
+  - **Who to call:** 115 for an ambulance, with 113 (police) and 114 (fire). No official government
+    page listing these numbers could be found; they are widely reported, and the page says so
+    plainly, and that a plan to merge them into 113 is under way. No public poison line could be
+    confirmed (Bạch Mai's Poison Control Centre gives no hours or callers for its number).
+  - **Silica:** QCVN 02:2019/BYT's binding 0.1 mg/m³ for free silica in respirable dust (0.3 in all
+    the dust), and **lead and cadmium** under QCVN 12-4:2015/BYT, six kinds of ceramic piece; both
+    read in a legal database's copy of the regulation, as the government's own pages could not be
+    read, and the page says that too.
+  - **Shops:** none was found, and the page says so.
 - **Groundwork for East and Southeast Asia**, before any of its languages:
   - **Numbers and dates** can be written as in Japan, Korea, mainland China and Taiwan (Simplified and
     Traditional Chinese each keep their script in any region), Hong Kong, Singapore, Malaysia,

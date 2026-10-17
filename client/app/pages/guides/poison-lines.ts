@@ -10,7 +10,7 @@ import { RegionChoice, RegionSelect, SourceLinks, earliest } from './region-sele
 /**
  * Who to call, for the reader's region (lib/regions/safety.js): the emergency
  * number, poison lines and animal lines, each one checked on an official page,
- * with where and when. The region is the one in Settings, or the browser's,
+ * with where and when (Vietnam's emergency numbers, found on none, say so). The region is the one in Settings, or the browser's,
  * and can be changed here to see another country's. Where no public poison
  * line could be confirmed, the health ministry's page is linked instead. The
  * data's words, such as opening hours, show translated where there is a
@@ -125,6 +125,12 @@ import { RegionChoice, RegionSelect, SourceLinks, earliest } from './region-sele
             </tbody>
           </table>
         </div>
+        <!-- Emergency numbers with no official page found (Vietnam's): said plainly, under the table. -->
+        @if (reported()) {
+          <p class="reported">
+            <strong>{{ t('guides.poison.reported') }}</strong>
+          </p>
+        }
         <gc-source-links [label]="t('guides.poison.checkedOn')" [urls]="sources()" />
       } @else {
         <p>{{ t('guides.poison.choosePrompt') }}</p>
@@ -152,6 +158,8 @@ export class PoisonLines {
     return shown ? [...shown.emergency, ...shown.poison, ...shown.advice, ...shown.animals] : [];
   });
   protected readonly checked = computed(() => earliest(this.lines().map((line) => line.checked)));
+  /** Whether an emergency number shown was found on no official page (lib/regions/safety.js, reported). */
+  protected readonly reported = computed(() => !!this.shown()?.emergency.some((line) => line.status === 'reported'));
   /** The pages the numbers were checked on. */
   protected readonly sources = computed(() => this.lines().map((line) => line.source));
 
