@@ -26,8 +26,9 @@
   font-size: 0.85rem;
   margin-bottom: 0.5rem;
 
-  // Japanese, Chinese and Korean have no capitals, and spaced-out characters read as separate words.
-  &:is(:lang(ja), :lang(zh), :lang(ko)) {
+  // Japanese, Chinese, Korean and Thai have no capitals, and spaced-out characters read as separate words
+  // (Thai's vowels and tone marks also stack on their letters).
+  &:is(:lang(ja), :lang(zh), :lang(ko), :lang(th)) {
     letter-spacing: normal;
   }
 }

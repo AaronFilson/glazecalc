@@ -92,6 +92,24 @@ describe('pages in each language', () => {
     expect(sitemap(SITE)).to.include('/tr/');
   });
 
+  it('knows Indonesian, Vietnamese and Thai, before their translation is done, without offering them or giving them the plainer notice', () => {
+    for (const [code, name, english] of [
+      ['id', 'Bahasa Indonesia', 'Indonesian'],
+      ['vi', 'Tiếng Việt', 'Vietnamese'],
+      ['th', 'ภาษาไทย', 'Thai']
+    ]) {
+      const language = languages.languageFor(code);
+      expect(language).to.include({ name, english, dir: 'ltr', live: false });
+      expect(language).not.to.have.property('plainNotice');
+      expect(languages.LIVE_LANGUAGES).not.to.include(code);
+      const html = pageHtml(HTML, `/${code}/recipe`, SITE);
+      expect(html).to.include(`<html lang="${code}" dir="ltr">`);
+      expect(html).to.include('<meta name="robots" content="noindex" />');
+      expect(html).not.to.include(`hreflang="${code}"`);
+      expect(sitemap(SITE)).not.to.include(`/${code}/`);
+    }
+  });
+
   it('knows Traditional Chinese, Korean and Simplified Chinese, before their translation is done, without offering them or giving them the plainer notice', () => {
     for (const [code, name, english] of [
       ['zh-Hant', '繁體中文', 'Traditional Chinese'],
