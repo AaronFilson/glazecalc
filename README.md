@@ -37,6 +37,25 @@ materials, colorants, firing logs and notes together in one private notebook.
   to watch for past a recommended limit.
 - **Match with what I have:** make a recipe again from only the materials on hand, a list kept
   with your account.
+- **Analysis and limits:** the unity formula set against Hesselberth & Roy's stable glaze limits
+  or Glazecalc's own, for the firing saved with the recipe, and a **Stull chart** of silica
+  against alumina with its matte, semi-matte and bright regions.
+- **Specific gravity and water:** weigh a measured volume of the glaze to find its SG, then the
+  water that brings the bucket to the SG you want, or the water for a new batch.
+- **Paste in recipes** from a website, a spreadsheet or your notes: see how each line was read
+  and which material it was taken for before anything is saved.
+- **Blends for test tiles:** two, three or four of your recipes blended into numbered tiles,
+  with what to weigh for each.
+- **Cost per batch** from the prices you pay, kept private with your account in one currency,
+  and a **mix ticket** to print for the glaze room, with the batch number, the target SG and the
+  materials' hazards (prices left off unless you choose).
+- **Share a recipe** with a read-only link that anyone can open without an account, with its
+  unity formula and **how it is worked out**, step by step; stop sharing at any time.
+- **Sign in with Google or GitHub,** or with a password, two-step sign-in or a passkey.
+- **Use it from your AI assistant:** Claude, GitHub Copilot, Cursor, Gemini and others can use
+  the calculations through the Model Context Protocol (MCP) server at `/mcp`, and read your own
+  recipes with a read-only access token you make, and revoke, on your account page; the
+  Assistants page says how to connect one.
 - **Guides for new potters,** sourced: glazing from first principles with a glossary, how to make
   a glaze, safe mixing and ventilation, pottery at home with children and pets, and firing a
   basic kiln with cones, kiln sitters and manual switches.
