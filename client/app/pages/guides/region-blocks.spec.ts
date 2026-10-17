@@ -414,7 +414,9 @@ describe('China', () => {
     const paragraphs = paragraphsOf(element);
     expect(paragraphs[0]).toContain('A binding limit.');
     expect(paragraphs[0]).toContain('GBZ 2.1—2019');
-    expect(paragraphs[0]).toContain('not only the silica in it. Any dust with 10% free silica or more is held to them.');
+    expect(paragraphs[0]).toContain(
+      'not only the silica in it. Any dust with 10% free silica or more is held to them.'
+    );
     expect(element.textContent).not.toContain('Dust masks here are sold by class');
   });
 

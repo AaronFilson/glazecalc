@@ -458,7 +458,8 @@ describe('regions before China', () => {
     ]);
     data.push(['EU', food.FOOD['EU'], workplace.EU_SILICA]);
     const hash = crypto.createHash('sha256').update(JSON.stringify(data)).digest('hex');
-    expect(hash).to.equal('4cbee0bb5cbd120803abee369112293bbae244bcd47d2e4a09828edbdb39de0c');
+    // Changed once on purpose: Taiwan's 119 note now says when to dial 112 (2026-10-16).
+    expect(hash).to.equal('78a40b67ef1ab8b683926873f242f85e67202d6bc66d38ac77f9340f21c0c980');
   });
 });
 
