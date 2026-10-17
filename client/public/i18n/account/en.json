@@ -401,6 +401,7 @@
     "intro": "Link a Google or GitHub account to sign in with it. Glazecalc keeps only the account's id from it, never its name, picture or anything else, and two-step sign-in still asks for its second step.",
     "passwordless": "This account has no password. To change your email, two-step sign-in or the ways you sign in, or to delete your account, you confirm it is you by signing in again with Google or GitHub. You can also set a password.",
     "setPassword": "Email me a link to set a password",
+    "setPasswordUnlinks": "Setting a password with the emailed link also unlinks Google and GitHub. You can link them again afterwards.",
     "setPasswordFailed": "Could not send the link. Please try again.",
     "confirmFirst": "Confirm your email first, with the link we sent you, to link Google or GitHub.",
     "linkedOn": "Linked on {date}",

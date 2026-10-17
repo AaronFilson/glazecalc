@@ -53,6 +53,7 @@ interface Change {
             >
               {{ t('account.providers.setPassword') }}
             </button>
+            <p class="form-text">{{ t('account.providers.setPasswordUnlinks') }}</p>
           </div>
         }
         @if (auth.unverified()) {

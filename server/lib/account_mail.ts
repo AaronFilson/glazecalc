@@ -4111,8 +4111,40 @@ export const PROVIDER_UNLINKED: Record<string, Email> = {
   }
 };
 
+/**
+ * Sent in place of CHANGED after a password reset that unlinked providers:
+ * {account}, {providers}, {page}, {forgot} and {app}.
+ */
+export const RESET_UNLINKED: Record<string, Email> = {
+  en: {
+    subject: 'Your Glazecalc password was changed',
+    text:
+      'The password for the Glazecalc account {account} was just reset, and every device that was signed in has been signed out.\n\n' +
+      'The reset also unlinked these ways to sign in from the account: {providers}. ' +
+      'You can link them again from your account page at {page}\n\n' +
+      'If this was you, there is nothing else to do. If not, reset your password right away at {forgot}\n' +
+      '\n-- \nGlazecalc, {app}\n'
+  }
+};
+
 /** A provider's name as the emails write it: a brand, the same in every language. */
 export const PROVIDER_NAMES: Record<string, string> = { google: 'Google', github: 'GitHub' };
+
+/** The notice after a reset that unlinked `providers` (their ids), named as brands. */
+export const sendResetUnlinked = (to: string, providers: string[], language?: string): Promise<void> => {
+  const email = inLanguage(RESET_UNLINKED, language);
+  return mailer.send({
+    to,
+    subject: email.subject,
+    text: fill(email.text, {
+      account: to,
+      providers: providers.map((provider) => PROVIDER_NAMES[provider] ?? provider).join(', '),
+      page: pageIn(language, '/account'),
+      forgot: pageIn(language, '/forgot'),
+      app: mailer.appUrl()
+    })
+  });
+};
 
 const sendProviderChange = (emails: Record<string, Email>, to: string, provider: string, language?: string) => {
   const email = inLanguage(emails, language);

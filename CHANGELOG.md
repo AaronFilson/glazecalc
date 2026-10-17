@@ -16,7 +16,9 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   sign-in still asks for its second step after the provider. The account page lists Google and
   GitHub, and links or unlinks each after the password (and a second step when it is on), with a
   notice email; the last way into an account is never removed. Linking or unlinking signs the account
-  out on its other devices, and keeps this one signed in. An account made with a provider, which has no password,
+  out on its other devices, and keeps this one signed in. A password reset by email unlinks every
+  provider (someone who got in may have linked their own), and its notice says they can be linked
+  again from the account page; changing the password while signed in keeps them. An account made with a provider, which has no password,
   confirms changing its email, deleting itself, two-step sign-in and linking or unlinking by
   signing in again with one of its providers: that sign-in counts only for the same account, still
   signed in as it was, for one change within 5 minutes, and a second step still follows when

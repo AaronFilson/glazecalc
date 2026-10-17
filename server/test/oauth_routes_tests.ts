@@ -792,14 +792,69 @@ describe('signing in with Google and GitHub', () => {
       expect(await OAuthLogin.exists({ linkUserId: user._id })).to.eql(null);
     });
 
-    it('gives a passwordless account a password of its own through the reset email', async () => {
+    it('gives a passwordless account a password of its own through the reset email, and unlinks its providers', async () => {
       const address = uniqueEmail('reset');
-      await signInWith('google', { sub: subject(), email: address, emailVerified: true });
+      const sub = subject();
+      await signInWith('google', { sub, email: address, emailVerified: true });
       expect(await api().post('/password/forgot').send({ email: address })).to.have.status(200);
       const [sent] = await mail.waitFor(address, 1);
       const token = mail.tokenIn(sent!)!;
       expect(await api().post('/password/reset').send({ token, password: 'a-new-password' })).to.have.status(200);
-      expect((await User.findOne({ email: address }).lean())!.passwordless).to.eql(undefined);
+      const user = (await User.findOne({ email: address }).lean())!;
+      expect(user.passwordless).to.eql(undefined);
+      expect(user.identities).to.eql([]);
+      // The notice says so, and where to link it again.
+      const [, notice] = await mail.waitFor(address, 2);
+      expect(notice!.subject).to.eql('Your Glazecalc password was changed');
+      expect(notice!.text).to.include('unlinked these ways to sign in from the account: Google.');
+      expect(notice!.text).to.include('/account');
+      // The new password signs in; Google is now an account with that email, to link again.
+      const auth = 'Basic ' + Buffer.from(address + ':a-new-password').toString('base64');
+      expect(await api().get('/signin').set('Authorization', auth)).to.have.status(200);
+      const again = await signInWith('google', { sub, email: address, emailVerified: true });
+      expect(again.done.body.code).to.eql('provider-sign-in-to-link');
+    });
+
+    it('unlinks every provider on a password reset, but keeps them on a password change', async () => {
+      const { user, token, email, password } = await makeUser();
+      const linkVia = async (provider: FakeProviderId, as: string, proof: string): Promise<string> => {
+        const res = await api()
+          .post('/auth/' + provider + '/link')
+          .set(bearer(as))
+          .send({ password: proof });
+        const flow = { location: res.body.location as string, cookie: oauthCookie(res)! };
+        await callback(provider, flow, { sub: subject(), email: uniqueEmail('l'), emailVerified: true });
+        const done = await finish(flow.cookie, as);
+        expect(done.body.code).to.eql('provider-linked');
+        return sessionToken(done)!;
+      };
+      const afterGoogle = await linkVia('google', token, password);
+      const afterBoth = await linkVia('github', afterGoogle, password);
+      await mail.waitFor(email, 2);
+
+      // A change keeps them.
+      const changed = await api()
+        .put('/password')
+        .set(bearer(afterBoth))
+        .send({ current: password, password: 'changed-password' });
+      expect(changed, JSON.stringify(changed.body)).to.have.status(200);
+      expect((await User.findById(user._id).lean())!.identities!.map(({ provider }) => provider)).to.eql([
+        'google',
+        'github'
+      ]);
+      const [, , changedNotice] = await mail.waitFor(email, 3);
+      expect(changedNotice!.text).to.not.include('unlinked');
+
+      // A reset removes both, and says so.
+      await api().post('/password/forgot').send({ email });
+      const [, , , sent] = await mail.waitFor(email, 4);
+      const reset = await api()
+        .post('/password/reset')
+        .send({ token: mail.tokenIn(sent!)!, password: 'reset-password' });
+      expect(reset).to.have.status(200);
+      expect((await User.findById(user._id).lean())!.identities).to.eql([]);
+      const [, , , , notice] = await mail.waitFor(email, 5);
+      expect(notice!.text).to.include('unlinked these ways to sign in from the account: Google, GitHub.');
     });
   });
 });

@@ -55,7 +55,12 @@ unconfirmed ones, exist.
     account signs in does (ADR 14), so every other session ends (whoever unlinks may be undoing a
     link someone else made; whoever links may be someone else adding a way in), and renew this
     browser's (the owner's decision of 2026-10-17). Access tokens are left alone, as with a
-    password change. Linking and unlinking email the account (to a confirmed
+    password change;
+  - a **password reset** ("Forgot password") **unlinks every provider** (the owner's decision of
+    2026-10-17): a reset may mean someone else got in, and they may have linked their own Google
+    or GitHub. Its notice email says which were unlinked and that they can be linked again from
+    the account page. An account made with a provider ends up with the new password and no links,
+    and signs in with the password. A plain password change, made while signed in, keeps them. Linking and unlinking email the account (to a confirmed
     address only).
 - **An account with no password confirms with a fresh provider sign-in** (the owner's decision of
   2026-10-17, integrations-plan item 13). Changing its email, deleting it, turning on two-step

@@ -9,7 +9,10 @@
 // A new password signs out every device (the user's tokenVersion goes up) and
 // sends a notice to the account's address. A reset, which may mean someone
 // else knew the password, also revokes every access token and connected app
-// (decision 5); an ordinary change keeps them. A 400 about one field names it:
+// (decision 5), and unlinks every Google or GitHub account (the owner's
+// decision of 2026-10-17, ADR 15): someone who got in may have linked their
+// own. Its notice says so, and that they can be linked again from the account
+// page. An ordinary change keeps them all. A 400 about one field names it:
 // { msg, field: 'password' }.
 import crypto from 'node:crypto';
 import express from 'express';
@@ -97,7 +100,10 @@ passwordRouter.post('/reset', limits.resetPassword, express.json(), async (req, 
   await revokeAll(user._id, 'password-reset');
   // The link went to the account's address, so opening it also proves the address is theirs.
   user.emailUnverified = undefined;
-  await setPassword(user, body.password as string);
+  // Every provider link goes; an account made with a provider has the new password instead.
+  const unlinked = [...new Set((user.identities ?? []).map((identity) => identity.provider))];
+  user.identities = [];
+  await setPassword(user, body.password as string, unlinked);
   return res.status(200).json(say('password-reset'));
 });
 
@@ -136,8 +142,8 @@ passwordRouter.put(
 );
 
 // Saves a new password, signs out every device, cancels open reset links and
-// tells the account's owner.
-async function setPassword(user: UserDocument, newPassword: string): Promise<void> {
+// tells the account's owner: with the providers a reset unlinked, when it did.
+async function setPassword(user: UserDocument, newPassword: string, unlinked: string[] = []): Promise<void> {
   user.password = await password.hash(newPassword);
   // An account made with a provider has a password of its own from now on.
   user.passwordless = undefined;
@@ -146,6 +152,10 @@ async function setPassword(user: UserDocument, newPassword: string): Promise<voi
   await cancelLinks(user._id);
   // Not to an address nobody has confirmed: it may be a stranger's.
   if (!user.emailUnverified) {
-    accountMail.sendChanged(user.email, user.preferences?.language).catch(logMailError('password changed'));
+    const language = user.preferences?.language;
+    (unlinked.length
+      ? accountMail.sendResetUnlinked(user.email, unlinked, language)
+      : accountMail.sendChanged(user.email, language)
+    ).catch(logMailError('password changed'));
   }
 }
