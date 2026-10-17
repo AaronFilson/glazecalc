@@ -20,6 +20,7 @@ import { say } from '../lib/messages.ts';
 import { isDuplicateKey } from '../lib/mongo_errors.ts';
 import { keepVersions, logActivity } from '../lib/record_history.ts';
 import requireScope from '../lib/require_scope.ts';
+import { stopSharing } from '../lib/share_links.ts';
 import RecordVersion from '../models/record_version.ts';
 import Trash, { TRASH_DAYS } from '../models/trash.ts';
 
@@ -82,6 +83,9 @@ trashRouter.post('/restore/:id', requireScope('trash:write'), async (req, res) =
     if (!taken?.recordId || !taken.record) return false;
     const record = { ...(taken.record as Record<string, unknown>), _id: taken.recordId, ownedBy };
     try {
+      // A recipe never comes back shared, whether or not its link was stopped when it went (or one was made
+      // since); taken away before it is back, so there is no moment it is both.
+      if (entry.fromCollection === 'recipes') await stopSharing(taken.recordId, ownedBy);
       await Model.collection.insertOne(record);
     } catch (err) {
       // It goes back in the Trash as it was, whatever went wrong, so it is never lost.

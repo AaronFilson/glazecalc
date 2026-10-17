@@ -93,6 +93,13 @@ shareRouter.post('/recipe/:id', jsonParser, ownRecipe, async (req, res) => {
     if (!isDuplicateKey(err)) throw err;
     await replace();
   }
+  // The recipe may have gone to the Trash or been deleted since it was looked up:
+  // then the link made just now is taken away again, so none outlives its recipe.
+  if (!(await Recipe.exists({ _id: req.params.id, ownedBy }))) {
+    await stopSharing(req.params.id as string, ownedBy);
+    res.status(404).json(say('record-not-found', { label: 'recipe' }));
+    return;
+  }
   res.status(200).json({ secret, createdAt, includeNotes });
 });
 
@@ -116,8 +123,13 @@ shareRouter.delete('/recipe/:id', ownRecipe, async (req, res) => {
 
 export const sharedRouter = express.Router();
 
-sharedRouter.get('/recipe', limits.sharedViews, limits.sharedMisses, async (req, res) => {
+// Before the limiters, so a 429 is not indexed or cached either.
+sharedRouter.use((_req, res, next) => {
   privateHeaders(res);
+  next();
+});
+
+sharedRouter.get('/recipe', limits.sharedViews, limits.sharedMisses, async (req, res) => {
   const recipe = await openShared(String(req.get(SECRET_HEADER) ?? ''));
   if (!recipe) {
     res.status(404).json(say('not-shared'));
