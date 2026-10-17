@@ -42,7 +42,7 @@ test.describe('the head of each public page', () => {
     for (const path of PUBLIC_PAGES) {
       await page.goto(path);
       await expect(page.locator('h1')).toBeVisible();
-      // Once the app is up: it sets the description again as it starts.
+      // Once the app is up: the description is the page's own, as the app starts and after.
       await appStarted(page);
       const description = await meta(page, 'name="description"');
       expect(description, path).not.toMatch(SITE_DESCRIPTION);
@@ -51,6 +51,30 @@ test.describe('the head of each public page', () => {
       seen.add(description);
     }
     expect(seen.size).toBe(PUBLIC_PAGES.length);
+  });
+
+  test("starting the app never replaces a page's own description, nor its og:description, even for a moment", async ({
+    page
+  }) => {
+    // Every value a description tag's content takes on, from the first moment the document exists.
+    await page.addInitScript(() => {
+      const seen = [];
+      globalThis.__descriptions = seen;
+      new MutationObserver((records) => {
+        for (const record of records) {
+          const tag = record.target;
+          const key = tag.getAttribute('name') ?? tag.getAttribute('property');
+          if (key === 'description' || key === 'og:description') seen.push(key + ': ' + tag.getAttribute('content'));
+        }
+      }).observe(document, { subtree: true, attributes: true, attributeFilter: ['content'] });
+    });
+    await page.goto('/guides/firing');
+    await appStarted(page);
+    expect(await meta(page, 'name="description"')).toBe(FIRING_DESCRIPTION);
+    expect(await meta(page, 'property="og:description"')).toBe(FIRING_DESCRIPTION);
+    // The head's tags are never written while the app starts, so the site's text never shows.
+    const changes = await page.evaluate(() => globalThis.__descriptions);
+    expect(changes.filter((change) => !change.endsWith(FIRING_DESCRIPTION))).toEqual([]);
   });
 
   test('the home page keeps the description of the whole site', async ({ page }) => {
