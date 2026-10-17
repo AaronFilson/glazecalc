@@ -31,9 +31,9 @@ describe('RecipeNumbers', () => {
   });
   afterEach(() => httpMock().verify());
 
-  const create = async (firing: '' | 'low' | 'mid' | 'high' = '') => {
+  const create = async (firing: '' | 'low' | 'mid' | 'high' = '', analysis: RecipeAnalysis = ANALYSIS) => {
     const fixture = TestBed.createComponent(RecipeNumbers);
-    fixture.componentRef.setInput('analysis', ANALYSIS);
+    fixture.componentRef.setInput('analysis', analysis);
     fixture.componentRef.setInput('firing', firing);
     await fixture.whenStable();
     return { fixture, root: fixture.nativeElement as HTMLElement };
@@ -83,6 +83,13 @@ describe('RecipeNumbers', () => {
     expect(source.textContent).toContain('Mastering Cone 6 Glazes');
   });
 
+  it('names an oxide a Hesselberth & Roy range is missing for only when there is a meaningful amount of it', async () => {
+    const trace = await create('', { ...ANALYSIS, uList: { ...ANALYSIS.uList, BaO: 0.005 } });
+    expect(text(trace.fixture)).not.toContain('No range in this set');
+    const some = await create('', { ...ANALYSIS, uList: { ...ANALYSIS.uList, BaO: 0.1 } });
+    expect(text(some.fixture)).toContain('No range in this set for BaO.');
+  });
+
   it('reads cone 10 by the set’s cone 10 figures, and says it does not apply at low fire rather than stretching them', async () => {
     const high = await create('high');
     expect(rows(high.root, '.limits-table')).toContainEqual(['Al₂O₃', '0.30', '0.30–0.60', 'within']);
@@ -109,7 +116,8 @@ describe('RecipeNumbers', () => {
     // The app's own set at mid fire: boron, alumina, soda and potash, with the rest named as not in it.
     expect(rows(root, '.limits-table').map((row) => row[0])).toEqual(['B₂O₃', 'Al₂O₃', 'K₂O + Na₂O']);
     expect(rows(root, '.limits-table')[1]).toEqual(['Al₂O₃', '0.30', 'at least 0.25', 'within']);
-    expect(text(fixture)).toContain('No range in this set for CaO and SiO₂.');
+    expect(text(fixture)).toContain('This set checks only B₂O₃, Al₂O₃, and K₂O + Na₂O.');
+    expect(text(fixture)).not.toContain('No range in this set');
 
     const firing = root.querySelector('#limit-firing') as HTMLSelectElement;
     firing.value = 'low';

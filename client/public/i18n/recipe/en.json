@@ -539,6 +539,7 @@
     "wellAbove": "well above",
     "outside": "{count, plural, =0 {Within every range.} one {Outside # range.} other {Outside # ranges.}}",
     "notInSet": "No range in this set for {oxides}.",
+    "checksOnly": "This set checks only {oxides}.",
     "notApply": "{name} has no figures for this firing ({band}), so it is not checked: figures for another firing would mislead.",
     "guidance": "These are guidelines, not a pass or a fail: a glaze outside them can be fine, and one inside them can still craze, leach or fail. Test it.",
     "source": "Source:",

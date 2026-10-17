@@ -35,6 +35,9 @@ const STATUS: Record<string, string> = {
   wellAbove: marker('recipe.limits.wellAbove')
 };
 
+/** Moles of an oxide from which leaving it out of a set is worth saying. */
+const MEANINGFUL = 0.02;
+
 /** 'K2O+Na2O' as K₂O + Na₂O. */
 export const limitLabel = (key: string): string => key.split('+').map(formatFormula).join(' + ');
 
@@ -117,8 +120,8 @@ export function statusText(row: LimitRow): string {
           </table>
         </div>
         <p>{{ t('recipe.limits.outside', { count: outside() }) }}</p>
-        @if (notInSet(); as oxides) {
-          <p class="limits-note">{{ t('recipe.limits.notInSet', { oxides }) }}</p>
+        @if (notInSet(); as note) {
+          <p class="limits-note">{{ t(note.key, { oxides: note.oxides }) }}</p>
         }
       } @else {
         <p>{{ t('recipe.limits.notApply', { name: t(setNames[set().id]), band: t(bandNames[band()]) }) }}</p>
@@ -205,13 +208,23 @@ export class RecipeLimits {
   protected readonly cone = computed(() => this.set().cones?.[this.band()] ?? '');
   protected readonly outside = computed(() => (this.rows() ?? []).filter((row) => row.past).length);
   protected readonly point = computed(() => stullPoint(this.unity()));
-  /** The glaze's oxides the set gives no range for: barium or lithium in Hesselberth & Roy's. */
-  protected readonly notInSet = computed(() => {
-    const covered = new Set((this.rows() ?? []).flatMap((row) => row.oxide.split('+')));
+  /**
+   * What the set leaves unchecked, said briefly. A set that ranges over silica and the fluxes (Hesselberth
+   * & Roy's) names the glaze's oxides it has no range for, when there is a meaningful amount of them; a
+   * narrow set (Glazecalc's own) says in one sentence what it checks, since it leaves most oxides out.
+   */
+  protected readonly notInSet = computed<{ key: string; oxides: string } | null>(() => {
+    const rows = this.rows() ?? [];
+    const covered = new Set(rows.flatMap((row) => row.oxide.split('+')));
+    if (!covered.has('SiO2')) {
+      return rows.length
+        ? { key: 'recipe.limits.checksOnly', oxides: listOf(rows.map((row) => limitLabel(row.oxide))) }
+        : null;
+    }
     const missing = Object.entries(this.unity())
-      .filter(([oxide, moles]) => moles > 0 && !covered.has(oxide))
+      .filter(([oxide, moles]) => moles >= MEANINGFUL && !covered.has(oxide))
       .map(([oxide]) => formatFormula(oxide));
-    return missing.length ? listOf(missing) : '';
+    return missing.length ? { key: 'recipe.limits.notInSet', oxides: listOf(missing) } : null;
   });
 
   protected readonly label = limitLabel;
