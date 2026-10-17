@@ -171,11 +171,13 @@ export const registerPublicTools = (server: McpServer, caller: Caller): void => 
       annotations: READ_ONLY
     },
     async ({ query, includeColorants, category, region, limit }) =>
-      ok({
-        materials: searchLibrary(query, { limit: limit ?? 20, additives: includeColorants, category, region }).map(
-          summaryOf
-        )
-      })
+      guarded(() =>
+        ok({
+          materials: searchLibrary(query, { limit: limit ?? 20, additives: includeColorants, category, region }).map(
+            summaryOf
+          )
+        })
+      )
   );
 
   server.registerTool(

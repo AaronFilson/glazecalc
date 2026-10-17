@@ -12,6 +12,8 @@ import { readFileSync } from 'node:fs';
 import * as site from '../lib/site.ts';
 import { hashToken } from '../lib/token_auth.ts';
 import AccessToken from '../models/access_token.ts';
+import Material from '../models/material.ts';
+import Recipe from '../models/recipe.ts';
 import User from '../models/user.ts';
 import { api, base, expect, makeUser, sessionToken } from './support/app.ts';
 import { makeToken } from './support/tokens.ts';
@@ -594,6 +596,28 @@ describe('MCP: personal access tokens', () => {
     const token = await makeToken(user);
     expect(await toolNames(bearer(token))).to.eql([...PUBLIC_TOOLS, ...ACCOUNT_TOOLS].sort());
     expect((await AccessToken.findOne({ hash: hashToken(token) }))!.lastUsedAt).to.be.an.instanceOf(Date);
+  });
+
+  it('answers a list tool that fails with the same plain refusal as the others, never the error', async () => {
+    const { user } = await makeUser();
+    const headers = bearer(await makeToken(user));
+    const secret = 'mongodb://admin:hunter2@db.internal/glazecalc';
+    const write = process.stderr.write.bind(process.stderr);
+    const counts = [Recipe, Material].map((model) => [model, model.countDocuments] as const);
+    process.stderr.write = (() => true) as typeof process.stderr.write;
+    for (const [model] of counts) {
+      (model as { countDocuments: unknown }).countDocuments = () =>
+        Promise.reject(new Error('connect failed to ' + secret));
+    }
+    try {
+      for (const name of ['list_recipes', 'list_my_materials']) {
+        const result = await call(name, {}, headers);
+        expect(result, name).to.eql({ content: [{ type: 'text', text: UNEXPECTED }], isError: true });
+      }
+    } finally {
+      for (const [model, original] of counts) (model as { countDocuments: unknown }).countDocuments = original;
+      process.stderr.write = write;
+    }
   });
 
   it('answers 401 with the metadata for a token that does not work, and never takes the session', async () => {

@@ -13,7 +13,7 @@ import chemistry from '../../../lib/chemistry/index.js';
 import cones from '../../../lib/cones/index.js';
 import recipe from '../../../lib/recipe/index.js';
 import languages from '../../../lib/regions/languages.js';
-import { languageArg, ok } from '../common.ts';
+import { guarded, languageArg, ok } from '../common.ts';
 import {
   CONE_SYSTEMS,
   GUIDE_IDS,
@@ -87,27 +87,28 @@ export const registerGuides = (server: McpServer): void => {
       }),
       annotations: READ_ONLY
     },
-    async ({ query, language, guide, cones: system, limit }) => {
-      const found = searchGuides(query, { language, guide, cones: system, limit });
-      const asked = languageOf(language);
-      return ok({
-        query,
-        language: found.language,
-        ...(found.language !== asked && {
-          note: `Nothing matched in the guides in ${asked}, so these are from the English guides.`
-        }),
-        results: found.hits.map((hit) => ({
-          guide: hit.guide,
-          guideTitle: hit.guideTitle,
-          section: hit.section,
-          heading: hit.heading,
-          language: hit.language,
-          excerpt: hit.excerpt,
-          url: hit.url,
-          resource: hit.resource
-        }))
-      });
-    }
+    async ({ query, language, guide, cones: system, limit }) =>
+      guarded(async () => {
+        const found = searchGuides(query, { language, guide, cones: system, limit });
+        const asked = languageOf(language);
+        return ok({
+          query,
+          language: found.language,
+          ...(found.language !== asked && {
+            note: `Nothing matched in the guides in ${asked}, so these are from the English guides.`
+          }),
+          results: found.hits.map((hit) => ({
+            guide: hit.guide,
+            guideTitle: hit.guideTitle,
+            section: hit.section,
+            heading: hit.heading,
+            language: hit.language,
+            excerpt: hit.excerpt,
+            url: hit.url,
+            resource: hit.resource
+          }))
+        });
+      })
   );
 
   const completeLanguage = (value: string) =>

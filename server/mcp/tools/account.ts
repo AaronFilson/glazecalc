@@ -113,25 +113,26 @@ export const registerAccountTools = (server: McpServer, caller: Caller): void =>
         inputSchema: z.object({ search: z.string().max(100).optional(), ...pageArgs }),
         annotations: READ_ONLY
       },
-      async ({ search, limit, offset }) => {
-        const filter: Record<string, unknown> = { ownedBy: userId };
-        if (search) filter.$or = [{ title: containing(search) }, { 'materials.name': containing(search) }];
-        const total = await Recipe.countDocuments(filter);
-        const found = await Recipe.find(filter, { title: 1, date: 1, materials: 1 })
-          .sort({ _id: -1 })
-          .skip(offset ?? 0)
-          .limit(limit ?? 25)
-          .lean();
-        return ok({
-          total,
-          recipes: found.map((r) => ({
-            id: String(r._id),
-            title: r.title,
-            ...(r.date && { date: r.date }),
-            materials: (r.materials as Array<{ name?: string }>).map((m) => m?.name).filter(Boolean)
-          }))
-        });
-      }
+      async ({ search, limit, offset }) =>
+        guarded(async () => {
+          const filter: Record<string, unknown> = { ownedBy: userId };
+          if (search) filter.$or = [{ title: containing(search) }, { 'materials.name': containing(search) }];
+          const total = await Recipe.countDocuments(filter);
+          const found = await Recipe.find(filter, { title: 1, date: 1, materials: 1 })
+            .sort({ _id: -1 })
+            .skip(offset ?? 0)
+            .limit(limit ?? 25)
+            .lean();
+          return ok({
+            total,
+            recipes: found.map((r) => ({
+              id: String(r._id),
+              title: r.title,
+              ...(r.date && { date: r.date }),
+              materials: (r.materials as Array<{ name?: string }>).map((m) => m?.name).filter(Boolean)
+            }))
+          });
+        })
     );
 
     server.registerTool(
@@ -185,26 +186,27 @@ export const registerAccountTools = (server: McpServer, caller: Caller): void =>
         inputSchema: z.object({ search: z.string().max(100).optional(), ...pageArgs }),
         annotations: READ_ONLY
       },
-      async ({ search, limit, offset }) => {
-        const filter: Record<string, unknown> = { ownedBy: userId };
-        if (search) filter.name = containing(search);
-        const total = await Material.countDocuments(filter);
-        const found = await Material.find(filter)
-          .sort({ name: 1, _id: 1 })
-          .skip(offset ?? 0)
-          .limit(limit ?? 25)
-          .lean();
-        return ok({
-          total,
-          materials: found.map((m) => ({
-            id: String(m._id),
-            name: m.name,
-            oxides: oxidesOf(m as unknown as MaterialRecord),
-            oxidesAre: m.percentmole === 'molecular' ? 'moles in the formula' : 'weight percent',
-            loi: m.loi
-          }))
-        });
-      }
+      async ({ search, limit, offset }) =>
+        guarded(async () => {
+          const filter: Record<string, unknown> = { ownedBy: userId };
+          if (search) filter.name = containing(search);
+          const total = await Material.countDocuments(filter);
+          const found = await Material.find(filter)
+            .sort({ name: 1, _id: 1 })
+            .skip(offset ?? 0)
+            .limit(limit ?? 25)
+            .lean();
+          return ok({
+            total,
+            materials: found.map((m) => ({
+              id: String(m._id),
+              name: m.name,
+              oxides: oxidesOf(m as unknown as MaterialRecord),
+              oxidesAre: m.percentmole === 'molecular' ? 'moles in the formula' : 'weight percent',
+              loi: m.loi
+            }))
+          });
+        })
     );
   }
 
@@ -217,10 +219,11 @@ export const registerAccountTools = (server: McpServer, caller: Caller): void =>
         inputSchema: z.object({}),
         annotations: READ_ONLY
       },
-      async () => {
-        const { materials, missing } = await shelfOf();
-        return ok({ materials: materials.map((m) => m.name), ...(missing && { notFound: missing }) });
-      }
+      async () =>
+        guarded(async () => {
+          const { materials, missing } = await shelfOf();
+          return ok({ materials: materials.map((m) => m.name), ...(missing && { notFound: missing }) });
+        })
     );
 
     if (may('recipes:read') && may('materials:read')) {
@@ -264,26 +267,27 @@ export const registerAccountTools = (server: McpServer, caller: Caller): void =>
         inputSchema: z.object({ search: z.string().max(100).optional(), ...pageArgs }),
         annotations: READ_ONLY
       },
-      async ({ search, limit, offset }) => {
-        const filter: Record<string, unknown> = { ownedBy: userId };
-        if (search) filter.$or = [{ title: containing(search) }, { kiln: containing(search) }];
-        const total = await Firing.countDocuments(filter);
-        const found = await Firing.find(filter, { title: 1, date: 1, kiln: 1, rows: 1 })
-          .sort({ _id: -1 })
-          .skip(offset ?? 0)
-          .limit(limit ?? 25)
-          .lean();
-        return ok({
-          total,
-          firings: found.map((f) => ({
-            id: String(f._id),
-            title: f.title,
-            ...(f.date && { date: f.date }),
-            ...(f.kiln && { kiln: f.kiln }),
-            rows: f.rows.length
-          }))
-        });
-      }
+      async ({ search, limit, offset }) =>
+        guarded(async () => {
+          const filter: Record<string, unknown> = { ownedBy: userId };
+          if (search) filter.$or = [{ title: containing(search) }, { kiln: containing(search) }];
+          const total = await Firing.countDocuments(filter);
+          const found = await Firing.find(filter, { title: 1, date: 1, kiln: 1, rows: 1 })
+            .sort({ _id: -1 })
+            .skip(offset ?? 0)
+            .limit(limit ?? 25)
+            .lean();
+          return ok({
+            total,
+            firings: found.map((f) => ({
+              id: String(f._id),
+              title: f.title,
+              ...(f.date && { date: f.date }),
+              ...(f.kiln && { kiln: f.kiln }),
+              rows: f.rows.length
+            }))
+          });
+        })
     );
 
     server.registerTool(
@@ -325,32 +329,33 @@ export const registerAccountTools = (server: McpServer, caller: Caller): void =>
         }),
         annotations: READ_ONLY
       },
-      async ({ search, about, limit, offset }) => {
-        // Not the notes about a record in the Trash: they come back with it.
-        const trashed = (
-          await Trash.find({ ownedBy: userId, recordId: { $ne: null }, fromCollection: { $ne: 'notes' } })
-            .select({ recordId: 1 })
-            .lean()
-        ).map((entry) => String(entry.recordId));
-        const filter: Record<string, unknown> = { ownedBy: userId, relatedId: { $nin: trashed } };
-        if (about) filter.$and = [{ relatedId: about }];
-        if (search) filter.$or = [{ title: containing(search) }, { content: containing(search) }];
-        const total = await Note.countDocuments(filter);
-        const found = await Note.find(filter)
-          .sort({ _id: -1 })
-          .skip(offset ?? 0)
-          .limit(limit ?? 25)
-          .lean();
-        return ok({
-          total,
-          notes: found.map((n) => ({
-            id: String(n._id),
-            ...(n.title && { title: n.title }),
-            content: n.content,
-            about: { kind: n.relatedCollection, id: n.relatedId }
-          }))
-        });
-      }
+      async ({ search, about, limit, offset }) =>
+        guarded(async () => {
+          // Not the notes about a record in the Trash: they come back with it.
+          const trashed = (
+            await Trash.find({ ownedBy: userId, recordId: { $ne: null }, fromCollection: { $ne: 'notes' } })
+              .select({ recordId: 1 })
+              .lean()
+          ).map((entry) => String(entry.recordId));
+          const filter: Record<string, unknown> = { ownedBy: userId, relatedId: { $nin: trashed } };
+          if (about) filter.$and = [{ relatedId: about }];
+          if (search) filter.$or = [{ title: containing(search) }, { content: containing(search) }];
+          const total = await Note.countDocuments(filter);
+          const found = await Note.find(filter)
+            .sort({ _id: -1 })
+            .skip(offset ?? 0)
+            .limit(limit ?? 25)
+            .lean();
+          return ok({
+            total,
+            notes: found.map((n) => ({
+              id: String(n._id),
+              ...(n.title && { title: n.title }),
+              content: n.content,
+              about: { kind: n.relatedCollection, id: n.relatedId }
+            }))
+          });
+        })
     );
   }
 
@@ -364,19 +369,20 @@ export const registerAccountTools = (server: McpServer, caller: Caller): void =>
         inputSchema: z.object({}),
         annotations: READ_ONLY
       },
-      async () => {
-        const user = await User.findById(userId, { preferences: 1 });
-        const saved = (user?.preferences ?? {}) as Record<string, unknown>;
-        const pick = (name: keyof typeof PREFERENCES) => saved[name] ?? PREFERENCES[name][0];
-        return ok({
-          region: pick('region'),
-          temperature: pick('temperature'),
-          cones: pick('cones'),
-          language: pick('language'),
-          weightUnit: pick('weightUnit'),
-          lead: pick('lead')
-        });
-      }
+      async () =>
+        guarded(async () => {
+          const user = await User.findById(userId, { preferences: 1 });
+          const saved = (user?.preferences ?? {}) as Record<string, unknown>;
+          const pick = (name: keyof typeof PREFERENCES) => saved[name] ?? PREFERENCES[name][0];
+          return ok({
+            region: pick('region'),
+            temperature: pick('temperature'),
+            cones: pick('cones'),
+            language: pick('language'),
+            weightUnit: pick('weightUnit'),
+            lead: pick('lead')
+          });
+        })
     );
   }
 };
