@@ -1,5 +1,6 @@
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { TestBed } from '@angular/core/testing';
+import { Router } from '@angular/router';
 import { firstValueFrom } from 'rxjs';
 import { API, httpMock, testProviders } from '../testing/test-providers';
 import { ApiResourceFactory } from './api-resource.service';
@@ -15,6 +16,7 @@ describe('sessionExpiredInterceptor', () => {
     localStorage.clear();
     localStorage.setItem('session', 'account');
     TestBed.configureTestingModule({ providers: testProviders() });
+    vi.spyOn(TestBed.inject(Router), 'navigateByUrl').mockResolvedValue(true);
   });
   afterEach(() => httpMock().verify());
 
@@ -32,6 +34,58 @@ describe('sessionExpiredInterceptor', () => {
   it('leaves a 401 from another host alone', () => {
     send('https://example.com/data').flush({}, { status: 401, statusText: 'Unauthorized' });
     expect(TestBed.inject(AuthService).hasSession()).toBe(true);
+  });
+
+  const unauthorized = { status: 401, statusText: 'Unauthorized' };
+  const settle = () => new Promise((resolve) => setTimeout(resolve));
+
+  it('ends the session on a 401 that crossed no change to it', async () => {
+    send(API + '/preferences').flush({}, unauthorized);
+    await settle();
+    expect(TestBed.inject(AuthService).hasSession()).toBe(false);
+  });
+
+  it('asks again, once the change has its answer, a request that crossed a change renewing the session', async () => {
+    // Linking a provider renews this browser's cookie and ends the account's
+    // other sessions; a request already out carries the old cookie.
+    const http = TestBed.inject(HttpClient);
+    const preferences = firstValueFrom(http.get(API + '/preferences'));
+    const finish = firstValueFrom(http.post(API + '/auth/finish', {}));
+    httpMock()
+      .expectOne(API + '/preferences')
+      .flush({}, unauthorized);
+    await settle();
+    // Not asked again until the change is answered.
+    httpMock().expectNone(API + '/preferences');
+    httpMock()
+      .expectOne(API + '/auth/finish')
+      .flush({ code: 'provider-linked' });
+    await settle();
+    httpMock()
+      .expectOne(API + '/preferences')
+      .flush({ theme: 'dark' });
+    expect(await preferences).toEqual({ theme: 'dark' });
+    await finish;
+    expect(TestBed.inject(AuthService).hasSession()).toBe(true);
+  });
+
+  it('ends the session when the request asked again is refused too', async () => {
+    const http = TestBed.inject(HttpClient);
+    const finish = firstValueFrom(http.post(API + '/auth/finish', {}));
+    const preferences = firstValueFrom(http.get(API + '/preferences')).catch(() => 'refused');
+    httpMock()
+      .expectOne(API + '/preferences')
+      .flush({}, unauthorized);
+    httpMock()
+      .expectOne(API + '/auth/finish')
+      .flush({});
+    await finish;
+    await settle();
+    httpMock()
+      .expectOne(API + '/preferences')
+      .flush({}, unauthorized);
+    expect(await preferences).toBe('refused');
+    expect(TestBed.inject(AuthService).hasSession()).toBe(false);
   });
 });
 
