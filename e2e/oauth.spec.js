@@ -89,11 +89,11 @@ test('links and unlinks GitHub on the account page, confirmed with the password'
   await section.locator('.identity-confirm').getByRole('button', { name: 'Link GitHub' }).click();
   await expect(page).toHaveURL(/\/account$/);
   await expect(section).toContainText('GitHub is linked. You can now sign in with it.');
-  await expect(section.locator('li', { hasText: 'GitHub' })).toContainText('Linked on');
+  await expect(section.locator('.provider-list li', { hasText: 'GitHub' })).toContainText('Linked on');
 
   await section.getByRole('button', { name: 'Unlink GitHub' }).click();
   await section.locator('#provider-confirm-password').fill(password);
   await section.locator('.identity-confirm').getByRole('button', { name: 'Unlink GitHub' }).click();
   await expect(section).toContainText('GitHub is unlinked. You can no longer sign in with it.');
-  await expect(section.locator('li', { hasText: 'GitHub' })).toContainText('Not linked');
+  await expect(section.locator('.provider-list li', { hasText: 'GitHub' })).toContainText('Not linked');
 });
