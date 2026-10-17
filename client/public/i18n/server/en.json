@@ -91,6 +91,7 @@
   "trash-restored": "Put the {label, select, additive {additive} advice {advice} firing {firing} material {material} note {note} recipe {recipe} trash {trash} other {record}} back.",
   "trash-restored-already": "This has been put back already.",
   "trash-emptied": "The Trash is empty.",
+  "trash-full": "The Trash is full, so an access token cannot move anything more to it. Please empty some of it on the website first.",
   "account-limit": "An account can keep up to {limit} {label, select, additive {additives} advice {pieces of advice} firing {firing logs} material {materials} note {notes} recipe {recipes} trash {items in the trash} other {records}}. Please remove some to save more.",
   "token-invalid": "The access token is not valid, has expired or was revoked.",
   "token-scope": "The access token does not allow this.",
@@ -108,5 +109,6 @@
   "too-many-email-links": "Too many emails requested. Please wait a few minutes and try again.",
   "too-many-attempts": "Too many attempts. Please wait a few minutes and try again.",
   "too-many-codes": "Too many codes tried. Please wait a few minutes and try again.",
-  "too-many-tokens": "Too many access tokens that do not work were tried from this address. Please wait a few minutes and try again."
+  "too-many-tokens": "Too many access tokens that do not work were tried from this address. Please wait a few minutes and try again.",
+  "too-many-deletes": "This access token has moved too many records to the Trash in the last hour. Please try again later."
 }

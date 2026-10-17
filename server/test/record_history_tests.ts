@@ -1,10 +1,11 @@
+import { Types } from 'mongoose';
 import { mergeTrial, deleteAccount } from '../lib/account_data.ts';
 import AccessToken from '../models/access_token.ts';
 import Activity, { ACTIVITY_DAYS } from '../models/activity.ts';
 import Note from '../models/note.ts';
 import Recipe from '../models/recipe.ts';
 import RecordVersion, { VERSION_DAYS, VERSIONS_KEPT } from '../models/record_version.ts';
-import Trash, { TRASH_DAYS, TRASH_MAX_TRIAL } from '../models/trash.ts';
+import Trash, { TRASH_DAYS, TRASH_MAX_ACCOUNT, TRASH_MAX_TRIAL } from '../models/trash.ts';
 import type { UserDocument } from '../models/user.ts';
 import { api, expect, makeUser, sessionToken } from './support/app.ts';
 import { makeToken } from './support/tokens.ts';
@@ -154,6 +155,61 @@ describe('Trash', () => {
     expect(await api().delete('/trash/empty')).to.have.status(401);
   });
 
+  /** Fills the user's Trash to its limit with entries trashed `daysAgo` and before. */
+  const fillTrash = async (daysAgo = 1) => {
+    const entries = Array.from({ length: TRASH_MAX_ACCOUNT }, (_, i) => ({
+      ownedBy: String(user._id),
+      fromCollection: 'recipes',
+      recordId: new Types.ObjectId(),
+      record: { title: 'Old ' + i },
+      title: 'Old ' + i,
+      trashedAt: new Date(Date.now() - (daysAgo * DAY + i * 1000)),
+      by: 'session'
+    }));
+    await Trash.insertMany(entries);
+    return entries;
+  };
+
+  it('refuses a token when the Trash is full, and never pushes out what is in it', async () => {
+    const entries = await fillTrash();
+    const oldest = entries[entries.length - 1];
+    const write = await makeToken(user, { scopes: ['data:write'] });
+    const saved = await create();
+    const refused = await remove(saved._id, write);
+    expect(refused).to.have.status(409);
+    expect(refused.body.code).to.equal('trash-full');
+    expect(await Recipe.countDocuments({ _id: saved._id })).to.equal(1);
+    expect(await Trash.countDocuments({ ownedBy: String(user._id) })).to.equal(TRASH_MAX_ACCOUNT);
+    expect(await Trash.countDocuments({ recordId: oldest.recordId })).to.equal(1);
+    // On the website the oldest makes room.
+    expect(await remove(saved._id)).to.have.status(200);
+    expect(await Trash.countDocuments({ ownedBy: String(user._id) })).to.equal(TRASH_MAX_ACCOUNT);
+    expect(await Trash.countDocuments({ recordId: oldest.recordId })).to.equal(0);
+  });
+
+  it('lets a token move at most 100 records an hour to the Trash, and does not count the website', async function () {
+    this.timeout(30000);
+    const write = await makeToken(user, { scopes: ['data:write'] });
+    const ids = (
+      await Recipe.insertMany(
+        Array.from({ length: 102 }, (_, i) => ({ ...recipe, title: 'R' + i, ownedBy: String(user._id) }))
+      )
+    ).map((saved) => String(saved._id));
+    process.env.RATE_LIMITS = 'on';
+    try {
+      for (const id of ids.slice(0, 100)) expect(await remove(id, write)).to.have.status(200);
+      const over = await remove(ids[100], write);
+      expect(over).to.have.status(429);
+      expect(over.body.code).to.equal('too-many-deletes');
+      expect(await Recipe.countDocuments({ _id: ids[100] })).to.equal(1);
+      // Another token, and the website, are not held up.
+      expect(await remove(ids[100], await makeToken(user, { scopes: ['data:write'] }))).to.have.status(200);
+      expect(await remove(ids[101])).to.have.status(200);
+    } finally {
+      process.env.RATE_LIMITS = 'off';
+    }
+  });
+
   it('takes a record removed with a token too', async () => {
     const write = await makeToken(user, { scopes: ['data:write'] });
     const saved = await create();
@@ -186,7 +242,7 @@ describe('record versions and Undo', () => {
         .set('Authorization', bearer(token))
     ).body;
 
-  it('keeps the record as it was before each change, and Undo goes back one at a time', async () => {
+  it('keeps the record as it was before each change, and Undo goes back, itself undoable', async () => {
     const saved = await create();
     await change(saved._id, 'Celadon 2');
     await change(saved._id, 'Celadon 3');
@@ -198,13 +254,37 @@ describe('record versions and Undo', () => {
     expect(first).to.have.status(200);
     expect(first.body.code).to.equal('record-undone');
     expect(first.body.record).to.include({ _id: saved._id, title: 'Celadon 2' });
-    expect((await undo(saved._id)).body.record.title).to.equal('Celadon');
-    const none = await undo(saved._id);
+    // What the undo replaced is the newest version now, in place of the one it put back.
+    const after = (await versions(saved._id)).map((v: { title: string }) => v.title);
+    expect(after).to.eql(['Celadon 3', 'Celadon']);
+    expect((await undo(saved._id)).body.record.title).to.equal('Celadon 3');
+    expect((await undo(saved._id)).body.record.title).to.equal('Celadon 2');
+    const [now] = (await api().get('/recipe/getAll').set('Authorization', bearer(token))).body;
+    expect(now).to.include({ title: 'Celadon 2' });
+    expect(now.materials).to.eql(recipe.materials);
+  });
+
+  it('has nothing to undo before the first change', async () => {
+    const none = await undo((await create())._id);
     expect(none).to.have.status(404);
     expect(none.body.code).to.equal('nothing-to-undo');
-    const [now] = (await api().get('/recipe/getAll').set('Authorization', bearer(token))).body;
-    expect(now).to.include({ title: 'Celadon' });
-    expect(now.materials).to.eql(recipe.materials);
+  });
+
+  it('always keeps the version from before a token’s changes, however many it makes', async () => {
+    const { user, token: session } = await makeUser();
+    token = session;
+    const saved = await create();
+    await change(saved._id, 'Mine');
+    const write = await makeToken(user, { scopes: ['data:write'] });
+    for (let i = 1; i <= VERSIONS_KEPT + 3; i++) await change(saved._id, 'Token ' + i, write);
+    const titles = (await versions(saved._id)).map((v: { title: string }) => v.title);
+    expect(titles).to.have.length(VERSIONS_KEPT + 1);
+    expect(titles[0]).to.equal('Token ' + (VERSIONS_KEPT + 2));
+    expect(titles[VERSIONS_KEPT]).to.equal('Mine');
+    expect(titles).not.to.include('Celadon');
+    // Token undos only swap the newest two; the version from before stays.
+    for (let i = 0; i < 5; i++) await undo(saved._id, write);
+    expect((await versions(saved._id)).map((v: { title: string }) => v.title)).to.include('Mine');
   });
 
   it(`keeps the last ${VERSIONS_KEPT} of a record, for ${VERSION_DAYS} days`, async () => {

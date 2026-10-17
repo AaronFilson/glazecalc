@@ -98,6 +98,17 @@ export const accessTokens = limiter(15, 30, 'too-many-tokens', {
   skipSuccessfulRequests: true
 });
 
+/**
+ * Records moved to the Trash with an access token (DELETE /api/<kind>/delete/:id),
+ * per token: plenty for a script tidying up, too few for one gone wrong to
+ * clear out an account before anyone notices. The web session is not counted.
+ * After requireScope, which says which token it is.
+ */
+export const tokenDeletes = limiter(60, 100, 'too-many-deletes', {
+  skip: (req) => !req.access || req.access.via === 'session',
+  keyGenerator: (req) => 'token-deletes:' + (req.access && 'tokenId' in req.access ? req.access.tokenId : '')
+});
+
 // Two-step sign-in (docs/mfa-plan.md, item 9). The guard on guessing codes
 // is per account and kept on the account, not here: server/lib/code_lock.ts.
 

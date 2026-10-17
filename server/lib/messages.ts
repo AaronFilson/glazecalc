@@ -132,6 +132,8 @@ export const MESSAGES = {
   'trash-restored': `Put the {label, select, ${ONE}} back.`,
   'trash-restored-already': 'This has been put back already.',
   'trash-emptied': 'The Trash is empty.',
+  'trash-full':
+    'The Trash is full, so an access token cannot move anything more to it. Please empty some of it on the website first.',
   'account-limit': `An account can keep up to {limit} {label, select, ${MANY}}. Please remove some to save more.`,
 
   // Access tokens (server/lib/token_auth.ts).
@@ -153,7 +155,9 @@ export const MESSAGES = {
   'too-many-email-links': 'Too many emails requested. ' + WAIT,
   'too-many-attempts': 'Too many attempts. ' + WAIT,
   'too-many-codes': 'Too many codes tried. ' + WAIT,
-  'too-many-tokens': 'Too many access tokens that do not work were tried from this address. ' + WAIT
+  'too-many-tokens': 'Too many access tokens that do not work were tried from this address. ' + WAIT,
+  'too-many-deletes':
+    'This access token has moved too many records to the Trash in the last hour. Please try again later.'
 } satisfies Record<string, Text>;
 
 export type MessageCode = keyof typeof MESSAGES;

@@ -7,10 +7,14 @@
 //   GET    /getAll       the user's records, oldest first
 //   GET    /getLatest    the user's newest                       404 when there is none
 //   PUT    /change/:id   changes the listed fields of one of them 404 when it is not theirs
-//   DELETE /delete/:id   moves one of them to the Trash           404 when it is not theirs
+//   DELETE /delete/:id   moves one of them to the Trash           404 when it is not theirs;
+//                        with an access token, 409 trash-full when the Trash is full, and
+//                        at most limits.tokenDeletes an hour for each token
 //   GET    /versions/:id its earlier versions, newest first: [{ _id, savedAt, by, title }]
 //   POST   /undo/:id     puts back the version before the last change, and answers
-//                        with the record                          404 when there is none
+//                        with the record                          404 when there is none;
+//                        the record as it was before the undo becomes the newest
+//                        version, so a second undo undoes the first
 //   GET    /getStandard  the shared records from data/, for anyone (when `standard` is set)
 //
 // Each change keeps the record as it was (server/lib/record_history.ts), so it
@@ -27,7 +31,8 @@ import RecordVersion from '../models/record_version.ts';
 import { giveBack, quota, type RecordModel } from './guest_limits.ts';
 import { userOf } from './jwt_auth.ts';
 import { say } from './messages.ts';
-import { byOf, logActivity, moveToTrash, saveVersion, titleOf } from './record_history.ts';
+import * as limits from './rate_limit.ts';
+import { byOf, logActivity, moveToTrash, saveVersion, titleOf, TRASH_FULL } from './record_history.ts';
 import requireScope from './require_scope.ts';
 import type { Area } from './scopes.ts';
 
@@ -148,12 +153,16 @@ export default function recordRoutes(
     }
   });
 
-  router.delete('/delete/:id', writing, async (req, res) => {
+  router.delete('/delete/:id', writing, limits.tokenDeletes, async (req, res) => {
     if (!validId(req, res)) return;
     const user = userOf(req);
     const trashed = await moveToTrash(Model, area, user, req.params.id as string, byOf(req));
     if (!trashed) {
       res.status(404).json(notFound);
+      return;
+    }
+    if (trashed === TRASH_FULL) {
+      res.status(409).json(say('trash-full'));
       return;
     }
     await logActivity(req, 'trash', area, trashed.record);
@@ -187,17 +196,18 @@ export default function recordRoutes(
       res.status(404).json(say('nothing-to-undo'));
       return;
     }
-    const restored = await Model.findOneAndReplace(
-      { _id: req.params.id, ownedBy },
-      { ...earlierOf(version.record as Body), ownedBy },
-      { returnDocument: 'after', lean: true }
-    );
-    if (!restored) {
+    const filter = { _id: req.params.id, ownedBy };
+    const replacement = { ...earlierOf(version.record as Body), ownedBy };
+    // The record as it was, found and replaced in one step, so the version kept is the one replaced.
+    const before = await Model.findOneAndReplace(filter, replacement, { returnDocument: 'before', lean: true });
+    if (!before) {
       // In the Trash, or gone: the version stays, for when it is put back.
       res.status(404).json(notFound);
       return;
     }
-    await RecordVersion.deleteOne({ _id: version._id });
+    // What the undo replaced is kept in place of the version it put back, so the undo can be undone.
+    await saveVersion(area, before, byOf(req), { replacing: version._id });
+    const restored = (await Model.findOne(filter).lean()) ?? { ...replacement, _id: before._id };
     await logActivity(req, 'undo', area, restored);
     res.status(200).json({ ...say('record-undone', { label }), record: restored });
   });
