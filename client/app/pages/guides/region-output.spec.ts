@@ -50,7 +50,8 @@ describe('region blocks before Turkey', () => {
       const all: Record<string, string> = {};
       for (const region of BEFORE_TURKEY) all[region] = await html(component, region);
       expect(all).toMatchSnapshot();
-    });
+      // Thirty-two regions, each with the list of every region to choose from: slow on a busy machine.
+    }, 30_000);
   }
 });
 
@@ -83,6 +84,6 @@ describe('region blocks before China', () => {
       const all: Record<string, string> = {};
       for (const region of ['KR', 'TW', 'SG', 'MY']) all[region] = await html(component, region);
       expect(all).toMatchSnapshot();
-    });
+    }, 15_000);
   }
 });

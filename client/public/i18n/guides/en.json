@@ -102,6 +102,9 @@
     "quartzAll": "Quartz, for dust that is all quartz",
     "cristobaliteAll": "Cristobalite, for dust that is all cristobalite",
     "allFree": "Control concentration for dust that is all free silica",
+    "bandFromTo": "Dust with {from}% to {to}% free silica (SiO₂)",
+    "bandOverTo": "Dust with more than {from}% and up to {to}% free silica",
+    "bandAbove": "Dust with more than {from}% free silica",
     "recommended": "Recommended by {abbr}",
     "value": "{value} mg/m³",
     "kind": {

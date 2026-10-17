@@ -392,3 +392,67 @@ describe('Malaysia', () => {
     expect(element.querySelector('.region-sources')).toBeNull();
   });
 });
+
+describe('China', () => {
+  it('gives 120 with the fire and police numbers, and no poison line, since none could be confirmed', async () => {
+    const { element } = await create(PoisonLines, 'CN');
+    const calls = [...element.querySelectorAll('a[href^="tel:"]')].map((a) => a.getAttribute('href'));
+    expect(calls).toEqual(['tel:120']);
+    const text = (element.textContent ?? '').replace(/\s+/g, ' ');
+    expect(text).toContain('For a fire, call 119; for the police, 110.');
+    expect(text).toContain('We could not confirm a public poison line here.');
+    expect(text).not.toContain('83132345');
+  });
+
+  it('gives the limit for each band of free silica, as GBZ 2.1 draws them, with no quartz row', async () => {
+    const { element, rows } = await create(SilicaLimit, 'CN');
+    expect(rows()).toEqual([
+      ['Dust with 10% to 50% free silica (SiO₂)', '0.7 mg/m³'],
+      ['Dust with more than 50% and up to 80% free silica', '0.3 mg/m³'],
+      ['Dust with more than 80% free silica', '0.2 mg/m³']
+    ]);
+    const paragraphs = paragraphsOf(element);
+    expect(paragraphs[0]).toContain('A binding limit.');
+    expect(paragraphs[0]).toContain('GBZ 2.1—2019');
+    expect(paragraphs[0]).toContain('Any dust with 10% free silica or more is held to these limits.');
+    expect(element.textContent).not.toContain('Dust masks here are sold by class');
+  });
+
+  it('says the food-contact rules and shops are not yet confirmed', async () => {
+    expect((await create(FoodLimits, 'CN')).element.textContent).toContain(
+      'We have not yet confirmed the rules in China.'
+    );
+    expect((await create(ShopList, 'CN')).element.textContent).toContain(
+      'We found no shop selling raw glaze materials in China.'
+    );
+  });
+});
+
+describe('Hong Kong', () => {
+  it('gives 999 and links the Department of Health, since the poison centre answers only professionals', async () => {
+    const { element } = await create(PoisonLines, 'HK');
+    const calls = [...element.querySelectorAll('a[href^="tel:"]')].map((a) => a.getAttribute('href'));
+    expect(calls).toEqual(['tel:999']);
+    expect(element.querySelector('a[href="https://www.dh.gov.hk/"]')?.textContent).toBe(
+      'Department of Health (衞生署)'
+    );
+  });
+
+  it("gives the Labour Department's guide values for quartz and cristobalite, with its silicosis page", async () => {
+    const { element, rows } = await create(SilicaLimit, 'HK');
+    expect(rows()).toEqual([
+      ['Quartz', '0.1 mg/m³'],
+      ['Cristobalite', '0.05 mg/m³']
+    ]);
+    const paragraphs = paragraphsOf(element);
+    expect(paragraphs[0]).toContain('An indicative limit');
+    expect(paragraphs[0]).toContain("Tridymite's limit is the same as cristobalite's.");
+    expect(element.querySelector('a[href="https://www.labour.gov.hk/eng/public/oh/silicosis.pdf"]')).not.toBeNull();
+  });
+
+  it('says the food-contact rules are not yet confirmed', async () => {
+    expect((await create(FoodLimits, 'HK')).element.textContent).toContain(
+      'We have not yet confirmed the rules in Hong Kong SAR China.'
+    );
+  });
+});

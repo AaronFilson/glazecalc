@@ -2,7 +2,7 @@ import { Component, computed, inject } from '@angular/core';
 import { TranslocoDirective } from '@jsverse/transloco';
 import { marker } from '@jsverse/transloco-keys-manager/marker';
 import { textKey } from '../../../../lib/regions/languages';
-import { EU_SILICA, Formula, SilicaLimit as Limit, workplaceFor } from '../../../../lib/regions/workplace';
+import { Band, EU_SILICA, Formula, SilicaLimit as Limit, workplaceFor } from '../../../../lib/regions/workplace';
 import { NOW, dayOf } from '../../core/clock';
 import { codedMessage } from '../../i18n/coded';
 import { RichText } from '../../i18n/rich-text';
@@ -61,10 +61,23 @@ const KIND: Record<Limit['kind'], string> = {
                   </td>
                 </tr>
               }
-              <tr>
-                <th scope="row">{{ t(firstRow(silica)) }}</th>
-                <td class="num">{{ t('guides.silica.value', { value: number(silica.quartz) }) }}</td>
-              </tr>
+              @if (silica.bands; as bands) {
+                @for (band of bands; track band.from) {
+                  <tr>
+                    <th scope="row">
+                      {{
+                        t(bandRow(band), { from: number(band.from), to: band.to === undefined ? '' : number(band.to) })
+                      }}
+                    </th>
+                    <td class="num">{{ t('guides.silica.value', { value: number(band.value) }) }}</td>
+                  </tr>
+                }
+              } @else {
+                <tr>
+                  <th scope="row">{{ t(firstRow(silica)) }}</th>
+                  <td class="num">{{ t('guides.silica.value', { value: number(silica.quartz) }) }}</td>
+                </tr>
+              }
               @if (silica.cristobalite; as cristobalite) {
                 <tr>
                   <th scope="row">{{ t(cristobaliteRow(silica)) }}</th>
@@ -221,6 +234,15 @@ export class SilicaLimit {
     if (silica.formula)
       return silica.cristobalite ? marker('guides.silica.quartzAll') : marker('guides.silica.allFree');
     return silica.cristobalite ? marker('guides.silica.quartz') : marker('guides.silica.both');
+  }
+
+  /**
+   * A band of free silica content, as the law draws it (China's): from one content to another, both
+   * included; above one content and up to another; or above one.
+   */
+  protected bandRow(band: Band): string {
+    if (band.to === undefined) return marker('guides.silica.bandAbove');
+    return band.fromIncluded ? marker('guides.silica.bandFromTo') : marker('guides.silica.bandOverTo');
   }
 
   /** What the formula is: Japan's control concentration, or a limit for quartz (Türkiye's). */
