@@ -71,7 +71,7 @@ export const toPlain = (typed: string, mark: DecimalMark = typedDecimalMark(), l
   numbers.toPlain(typed, mark, locale);
 
 /** A number saved plainly ("12.5", "-3"), as toPlain writes one; null for anything else, such as "12,5" or "1e3". */
-export { plainNumber } from '../../../lib/recipe/amounts';
+export { plainNumber } from '../../../lib/recipe/numbers';
 
 /** What to say when typed text is not a number: with the decimal mark Settings allow. */
 export function notANumber(mark: DecimalMark = typedDecimalMark()): string {

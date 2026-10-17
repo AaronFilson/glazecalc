@@ -22,7 +22,6 @@ export interface BatchWeights {
 
 type Amount = string | number | undefined | null;
 
-export function plainNumber(text: Amount): number | null;
 export function unitOf(additive: { unit?: AdditiveUnit }): AdditiveUnit;
 export function isAmount(value: Amount): boolean;
 export function amountOf(value: Amount): number;

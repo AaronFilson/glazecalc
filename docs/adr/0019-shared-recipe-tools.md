@@ -21,8 +21,8 @@ Node and the Angular build both load, typed by hand-written declarations, one pe
 
 | Module           | What it does                                                                               |
 | ---------------- | ------------------------------------------------------------------------------------------ |
-| `amounts.js`     | Amounts as saved (`amountOf`, `plainNumber`), rescaling (`rebase`), grams to weigh         |
-| `numbers.js`     | Typed numbers by decimal mark and locale (`parseNumber`, `toPlain`, `forTyping`)           |
+| `amounts.js`     | Amounts as saved (`amountOf`, `totalOf`), rescaling (`rebase`), grams to weigh             |
+| `numbers.js`     | Saved and typed numbers (`plainNumber`, `parseNumber`, `toPlain`, `forTyping`)             |
 | `temperature.js` | °C and °F, and a temperature in the reader's scale                                         |
 | `limits.js`      | The figures the checks warn at, as data (`CHECK_LIMITS`, `FIRING`)                         |
 | `checks.js`      | `pastLimits` and `sizeNotes`: cautions for a recipe                                        |
@@ -49,8 +49,8 @@ Node and the Angular build both load, typed by hand-written declarations, one pe
   `rebase.ts` and `shared/format.ts` keep their exports and call the library, putting what it says
   into words. Their tests did not change, which is the check that nothing a potter sees did.
 - **The first page loads only what it needs.** `shared/format.ts` and `shared/library-info.ts` are
-  in the initial bundle, so they import `lib/recipe/numbers`, `temperature`, `amounts` and
-  `library`, none of which needs the chemistry.
+  in the initial bundle, so they import `lib/recipe/numbers`, `temperature` and `library`,
+  none of which needs the chemistry.
 
 ## For what comes next
 
