@@ -53,7 +53,7 @@ test('pastes two recipes, checks them, saves them, and blends them into test til
 
   // Both are saved, with what was read.
   await page.getByRole('link', { name: 'Open your recipes' }).click();
-  await expect(page.locator('.saved-recipe-name')).toHaveText([/Dolomite matte/, /Satin white/]);
+  await expect(page.locator('.saved-recipe-name')).toHaveText([/Satin white/, /Dolomite matte/]);
 
   // A line blend between them, from the recipe's More.
   await page.getByRole('button', { name: 'More for Dolomite matte' }).click();
