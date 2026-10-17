@@ -116,6 +116,26 @@ export interface MfaFields {
   codeGuesses?: CodeGuesses;
 }
 
+/**
+ * A provider account the person signs in with (server/lib/oauth.ts, docs/adr/0015-provider-sign-in.md):
+ * found by the provider and its subject, the provider's own unchanging id for
+ * the person (Google's sub, GitHub's numeric id), never by an email. Nothing
+ * else from the provider is kept: no name, no picture, no provider token.
+ */
+export interface Identity {
+  /** 'google' or 'github' (server/lib/oauth.ts PROVIDERS). */
+  provider: string;
+  subject: string;
+  /**
+   * provider:subject (google:1234), what the unique index and the lookups use:
+   * an index on the two fields of one array would pair every provider with every
+   * subject in it, so two accounts could clash over a pair neither has.
+   */
+  uid: string;
+  linkedAt: Date;
+  lastUsedAt?: Date;
+}
+
 /** Wrong codes counted against an account (server/lib/code_lock.ts). */
 export interface CodeGuesses {
   /** The account's tokenVersion they were counted under: a new one starts again. */
@@ -173,6 +193,14 @@ export interface UserFields {
   trialCounts?: Map<string, number>;
   /** Two-step sign-in; never settable through /api/usersettings, never sent whole. */
   mfa?: MfaFields;
+  /** Provider accounts it signs in with, at most one per provider (server/routes/oauth_routes.ts). */
+  identities?: Identity[];
+  /**
+   * Made by signing in with a provider: the password is a random one nobody
+   * knows, until one is set through the reset email (server/routes/password_routes.ts).
+   * Absent on every other account.
+   */
+  passwordless?: boolean;
 }
 
 interface UserMethods {
@@ -259,7 +287,23 @@ const userSchema = new mongoose.Schema<UserFields, UserModel, UserMethods>({
   guest: Boolean,
   expiresAt: Date,
   trialCounts: { type: Map, of: Number },
-  mfa: { type: mfaSchema, default: undefined }
+  mfa: { type: mfaSchema, default: undefined },
+  identities: {
+    type: [
+      new mongoose.Schema<Identity>(
+        {
+          provider: { type: String, required: true },
+          subject: { type: String, required: true },
+          uid: { type: String, required: true },
+          linkedAt: { type: Date, required: true },
+          lastUsedAt: Date
+        },
+        { _id: false }
+      )
+    ],
+    default: undefined
+  },
+  passwordless: Boolean
 });
 
 userSchema.method('hashPassword', function (this: UserDocument, password: string) {
@@ -288,6 +332,12 @@ userSchema.index({ expiresAt: 1 }, { partialFilterExpression: { guest: true } })
 userSchema.index(
   { 'mfa.passkeys.credentialId': 1 },
   { unique: true, partialFilterExpression: { 'mfa.passkeys.credentialId': { $exists: true } } }
+);
+
+// One account per provider account, and provider sign-in finds the account by it.
+userSchema.index(
+  { 'identities.uid': 1 },
+  { unique: true, partialFilterExpression: { 'identities.uid': { $exists: true } } }
 );
 
 /** Whether the account has two-step sign-in on: an authenticator app or a passkey. */

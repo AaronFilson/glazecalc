@@ -138,6 +138,8 @@ passwordRouter.put(
 // tells the account's owner.
 async function setPassword(user: UserDocument, newPassword: string): Promise<void> {
   user.password = await password.hash(newPassword);
+  // An account made with a provider has a password of its own from now on.
+  user.passwordless = undefined;
   user.tokenVersion = (user.tokenVersion || 0) + 1;
   await user.save();
   await cancelLinks(user._id);

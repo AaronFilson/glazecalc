@@ -4083,3 +4083,74 @@ export const noticeMfa = (
     failed(err);
   }
 };
+
+// Notices about signing in with Google or GitHub (server/routes/oauth_routes.ts),
+// in English until the next translation wave; other languages get the English.
+
+/** Sent when a provider is linked: {account}, {provider}, {page}, {forgot} and {app}. */
+export const PROVIDER_LINKED: Record<string, Email> = {
+  en: {
+    subject: 'A new way to sign in was added to your Glazecalc account',
+    text:
+      'You can now sign in to the Glazecalc account {account} with {provider}.\n\n' +
+      'If this was you, there is nothing else to do. ' +
+      'If not, unlink it on your account page at {page} and reset your password right away at {forgot}\n' +
+      '\n-- \nGlazecalc, {app}\n'
+  }
+};
+
+/** Sent when a provider is unlinked: {account}, {provider}, {forgot} and {app}. */
+export const PROVIDER_UNLINKED: Record<string, Email> = {
+  en: {
+    subject: 'A way to sign in was removed from your Glazecalc account',
+    text:
+      '{provider} was unlinked from the Glazecalc account {account}, and can no longer be used to sign in to it.\n\n' +
+      'If this was you, there is nothing else to do. ' +
+      'If not, someone may be signed in to your account: reset your password right away at {forgot}\n' +
+      '\n-- \nGlazecalc, {app}\n'
+  }
+};
+
+/** A provider's name as the emails write it: a brand, the same in every language. */
+export const PROVIDER_NAMES: Record<string, string> = { google: 'Google', github: 'GitHub' };
+
+const sendProviderChange = (emails: Record<string, Email>, to: string, provider: string, language?: string) => {
+  const email = inLanguage(emails, language);
+  return mailer.send({
+    to,
+    subject: email.subject,
+    text: fill(email.text, {
+      account: to,
+      provider: PROVIDER_NAMES[provider] ?? provider,
+      page: pageIn(language, '/account'),
+      forgot: pageIn(language, '/forgot'),
+      app: mailer.appUrl()
+    })
+  });
+};
+
+/**
+ * Tells the account a provider was linked or unlinked, after the reply, as
+ * noticeMfa does: only to a confirmed address, never to a trial, never when
+ * email is off, and never throwing; a failure is logged by its code only.
+ */
+export const noticeProvider = (
+  user: {
+    email: string;
+    emailUnverified?: boolean | null;
+    guest?: boolean | null;
+    preferences?: { language?: string | null } | null;
+  },
+  change: 'linked' | 'unlinked',
+  provider: string
+): void => {
+  const failed = (err: unknown) =>
+    log.error('Could not send the sign-in method notice email', { code: log.codeOf(err) });
+  try {
+    if (!user?.email || user.emailUnverified || user.guest || isGuestAddress(user.email) || !mailer.available()) return;
+    const emails = change === 'linked' ? PROVIDER_LINKED : PROVIDER_UNLINKED;
+    sendProviderChange(emails, user.email, provider, user.preferences?.language ?? undefined).catch(failed);
+  } catch (err) {
+    failed(err);
+  }
+};

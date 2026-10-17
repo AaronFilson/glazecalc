@@ -32,10 +32,19 @@ export const recordsOf = async (kind: string, userId: Id): Promise<Row[]> => {
  * secret, a passkey's public key or credential id, the user handle or a
  * recovery code's hash.
  */
-const signInOf = (user: Pick<UserFields, 'mfa'>): Row => {
+const signInOf = (user: Pick<UserFields, 'mfa' | 'identities' | 'passwordless'>): Row => {
   const mfa = user.mfa;
   const on = mfaOn(user);
   return {
+    // false for an account made with a provider that has not set a password yet.
+    ownPassword: !user.passwordless,
+    // Each provider's own id for the person, as it gave it, and when it was linked and last used.
+    providers: (user.identities ?? []).map((identity) => ({
+      provider: identity.provider,
+      subject: identity.subject,
+      linkedAt: identity.linkedAt,
+      lastUsedAt: identity.lastUsedAt
+    })),
     authenticatorApp: mfa?.totp ? { addedAt: mfa.totp.addedAt, lastUsedAt: mfa.totp.lastUsedAt } : null,
     passkeys: (mfa?.passkeys ?? []).map((passkey) => ({
       name: passkey.name,
@@ -104,7 +113,9 @@ export const exportAccount = async (userId: Id, now = new Date()): Promise<Row |
     guest: 1,
     expiresAt: 1,
     emailChangedAt: 1,
-    mfa: 1
+    mfa: 1,
+    identities: 1,
+    passwordless: 1
   }).lean();
   if (!user) return null;
   const kinds = Object.keys(OWNED_KINDS);

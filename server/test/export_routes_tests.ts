@@ -111,7 +111,13 @@ describe('export API', () => {
     const { body } = await get('/export', bob.token);
     expect(body.preferences).to.eql({});
     expect(body.shelf).to.eql([]);
-    expect(body.signIn).to.eql({ authenticatorApp: null, passkeys: [], recoveryCodes: { left: 0 } });
+    expect(body.signIn).to.eql({
+      ownPassword: true,
+      providers: [],
+      authenticatorApp: null,
+      passkeys: [],
+      recoveryCodes: { left: 0 }
+    });
   });
 
   it('says how the account signs in, in names and dates, never a secret, key, id or hash', async () => {
@@ -147,6 +153,8 @@ describe('export API', () => {
     );
     const res = await get('/export', alice.token);
     expect(res.body.signIn).to.eql({
+      ownPassword: true,
+      providers: [],
       authenticatorApp: { addedAt: added.toISOString(), lastUsedAt: used.toISOString() },
       passkeys: [{ name: 'Studio laptop', addedAt: added.toISOString() }],
       recoveryCodes: { madeAt: added.toISOString(), left: 9 }

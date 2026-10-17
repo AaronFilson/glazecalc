@@ -12,6 +12,7 @@ import Deletion from '../models/deletion.ts';
 import Firing from '../models/firing.ts';
 import Material from '../models/material.ts';
 import Note from '../models/note.ts';
+import OAuthLogin from '../models/oauth_login.ts';
 import EmailToken from '../models/email_token.ts';
 import PasswordReset from '../models/password_reset.ts';
 import PendingSignIn from '../models/pending_sign_in.ts';
@@ -76,6 +77,8 @@ const deleteRecords = async (ids: string[]): Promise<number> => {
     // Two-step sign-in in progress; the factors themselves are in the User document.
     AuthChallenge.deleteMany({ userId: { $in: ids } }),
     PendingSignIn.deleteMany({ userId: { $in: ids } }),
+    // Provider sign-ins under way; the linked providers themselves are in the User document.
+    OAuthLogin.deleteMany({ $or: [{ userId: { $in: ids } }, { linkUserId: { $in: ids } }] }),
     // Personal access tokens and OAuth grants.
     AccessToken.deleteMany({ userId: { $in: ids } })
   ]);
