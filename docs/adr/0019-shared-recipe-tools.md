@@ -34,6 +34,8 @@ Node and the Angular build both load, typed by hand-written declarations, one pe
 | `shelf.js`       | `matchFromShelf`                                                                           |
 | `lead.js`        | `leadFreeBases`, `replaceLead`, `leadIn`                                                   |
 | `messages.js`    | Message codes, figures, and writing them for a locale                                      |
+| `paste.js`       | Paste-in import: `parsePaste` reads pasted text or CSV, `matchName` finds each name        |
+| `blends.js`      | Line, biaxial and triaxial blends: `blendTiles` and each tile's recipe (`mixRecipes`)      |
 
 - **They return codes, not words.** A sentence is `{ code, params }`, where the code is its key in
   the app's recipe messages (`client/public/i18n/recipe/<lang>.json`: `checks.alkali` is the app's
@@ -90,8 +92,9 @@ Node and the Angular build both load, typed by hand-written declarations, one pe
 - **Analysis.** A Stull chart point, LOI, expansion and mole percent are functions of the unity
   formula and analysis that `lib/chemistry` already works out; they go in `lib/recipe` as pure
   functions of a `UmfResult`, with no words.
-- **Batches.** SG and water, and cost per batch, build on `batchWeights`; a blend generator on
-  `rebase`; paste-in import on `parseNumber` and the library's `findNamed`-style lookup.
+- **Batches.** SG and water, and cost per batch, build on `batchWeights`. The blend generator
+  (`blends.js`) and paste-in import (`paste.js`, on `parseNumber`) are built: neither says
+  anything in words, so they have no message codes.
 - New sentences get a code in `messages.js` and in the `RecipeMessageCode` union in
   `messages.d.ts`, a key in the recipe messages, and a line in the app's table. Each is checked:
   the server test fails if a code has no English or the union and `CODES` differ, and TypeScript
