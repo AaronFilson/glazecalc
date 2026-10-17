@@ -73,7 +73,6 @@
     "storedAccount": "<b>Contul:</b> adresa de e-mail și parola, stocată numai ca hash unidirecțional (bcrypt), niciodată ca parola propriu-zisă. Setările (cum ar fi limba, regiunea și unitățile) și lista materiilor prime pe care le aveți în stoc sunt păstrate împreună cu contul. Un cont are nevoie de o adresă de e-mail, pentru conectare și pentru resetarea unei parole uitate. Când creați un cont, la adresă se trimite un link pentru a confirma că vă aparține; până atunci, la ea se trimit e-mailuri doar când cereți, de exemplu pentru resetarea parolei.",
     "storedEmailChange": "<b>Schimbarea adresei de e-mail:</b> data ultimei schimbări a adresei, pentru ca o cerere de dezactivare a conectării în doi pași să nu fie niciodată acceptată de la o adresă nouă în cele 30 de zile următoare.",
     "storedSignIn": "<b>Conectarea în doi pași, dacă o activați:</b> dacă este activată; cheia secretă pe care aplicația de autentificare o împarte cu Glazecalc, criptată; pentru fiecare cheie de acces, cheia ei publică (care nu poate conecta singură), cu identificatorul și datele pe care i le dă dispozitivul, numele dat de dumneavoastră și când a fost adăugată și folosită ultima oară; codurile de recuperare, doar ca hash unidirecțional cu cheie, pentru ca nimeni să nu le poată citi înapoi; și, dacă cineva introduce parola dar nu încheie al doilea pas, când v-a scris Glazecalc ultima oară despre aceasta (cel mult o dată pe zi). În timp ce vă conectați, între parolă și al doilea pas, serverul păstrează 5 minute o notă despre conectare, iar pagina ține un token scurt doar în memorie: niciun cookie nou, nimic în stocarea browserului.",
-    "storedSaved": "<b>Ce salvați:</b> rețetele, materiile prime, aditivii, notițele, jurnalele de ardere și sfaturile, așa cum le-ați scris. Numai dumneavoastră le puteți vedea: nimic nu este partajat între utilizatori.",
     "storedTrial": "<b>O perioadă de probă („Încercați acum”):</b> fără adresă de e-mail sau parolă, doar un nume inventat, cum ar fi „speckled quiet kilns”. Dacă, în timpul unei perioade de probă, vă conectați la un cont în același browser, ce ați creat în perioada de probă trece în cont.",
     "storedResets": "<b>Linkurile pentru resetarea parolei și pentru adresa de e-mail:</b> ce cont a cerut, când, adresa la care a fost trimis un link de confirmare a adresei și o amprentă a fiecărui link (nu linkul propriu-zis).",
     "storedLogs": "<b>Jurnalele de sistem:</b> serverul web înregistrează fiecare cerere: adresa IP, ora, pagina cerută și numele browserului. Aplicația înregistrează erorile împreună cu pagina pe care au apărut, niciodată adresa de e-mail.",
@@ -152,7 +151,6 @@
         "lasts": "Până când ștergeți datele stocate de browser."
       },
       "print": {
-        "purpose": "Ultimele alegeri pentru imprimarea unei rețete: rețeta întreagă sau lista de cântărire, și cantitatea de preparat.",
         "lasts": "Până când ștergeți datele stocate de browser."
       },
       "token": {

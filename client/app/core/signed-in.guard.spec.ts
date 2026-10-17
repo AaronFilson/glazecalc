@@ -99,7 +99,8 @@ describe('signedInGuard and visitorsOnlyGuard', () => {
       'signup',
       'forgot',
       'reset',
-      'confirm-email'
+      'confirm-email',
+      'shared'
     ]);
   });
 });

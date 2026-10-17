@@ -17,6 +17,7 @@ describe('AccountPage email and sessions', () => {
     const fixture = TestBed.createComponent(AccountPage);
     await fixture.whenStable();
     answer('/preferences', { weightUnit: 'g' });
+    answer('/share/recipes', []);
     answer('/mfa', { on: false, emailConfirmed: !unverified, totp: null, passkeys: [], codesLeft: 0 });
     await settle(fixture);
     return { fixture, page: fixture.componentInstance as unknown as Page };

@@ -138,6 +138,7 @@ describe('AccountPage', () => {
     const fixture = TestBed.createComponent(AccountPage);
     await fixture.whenStable();
     answer('/preferences', { weightUnit: 'g' });
+    answer('/share/recipes', []);
     answer('/mfa', { on: false, emailConfirmed: true, totp: null, passkeys: [], codesLeft: 0 });
     await settle(fixture);
     return { fixture, page: fixture.componentInstance as unknown as Page };
@@ -150,6 +151,7 @@ describe('AccountPage', () => {
     expect(headings).toEqual([
       'Settings',
       'Download my data',
+      'Shared recipes',
       'Change your password',
       'Two-step sign-in',
       'Change your email',
@@ -167,6 +169,7 @@ describe('AccountPage', () => {
     expect(links.map((a) => a.textContent?.trim())).toEqual([
       'Settings',
       'Download my data',
+      'Shared recipes',
       'Change your password',
       'Two-step sign-in',
       'Change your email',
@@ -178,7 +181,7 @@ describe('AccountPage', () => {
       const id = link.getAttribute('href')!.split('#')[1]!;
       expect(fixture.nativeElement.querySelector('#' + id)?.tagName).toBe('H2');
     }
-    links[3]!.dispatchEvent(new MouseEvent('click', { bubbles: true, cancelable: true, button: 0 }));
+    links[4]!.dispatchEvent(new MouseEvent('click', { bubbles: true, cancelable: true, button: 0 }));
     expect(document.activeElement?.id).toBe('mfa-heading');
     // One filled button at most, for a step under way: none while nothing is.
     expect(fixture.nativeElement.querySelectorAll('.btn-primary').length).toBe(0);

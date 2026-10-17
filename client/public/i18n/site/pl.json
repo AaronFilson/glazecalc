@@ -73,7 +73,6 @@
     "storedAccount": "<b>Konto:</b> adres e-mail oraz hasło, przechowywane wyłącznie jako jednokierunkowy skrót (bcrypt), nigdy jako samo hasło. Razem z nimi przechowywane są ustawienia (np. język, region i jednostki) oraz lista posiadanych surowców. Konto wymaga adresu e-mail, aby można było się logować i zresetować zapomniane hasło. Po założeniu konta na ten adres wysyłany jest link, który potwierdza, że to własny adres osoby zakładającej konto; do tego czasu wiadomości trafiają na niego tylko na prośbę, np. przy resetowaniu hasła.",
     "storedEmailChange": "<b>Zmiana adresu e-mail:</b> data ostatniej zmiany adresu, aby prośba o wyłączenie logowania dwuetapowego nigdy nie została przyjęta z nowego adresu w ciągu 30 dni po zmianie.",
     "storedSignIn": "<b>Logowanie dwuetapowe, jeśli zostanie włączone:</b> informacja, czy jest włączone; klucz, który aplikacja uwierzytelniająca współdzieli z Glazecalc, w postaci zaszyfrowanej; dla każdego klucza dostępu jego klucz publiczny (który sam nie pozwala się zalogować) wraz z identyfikatorem i danymi nadanymi przez urządzenie, nadana nazwa oraz data dodania i ostatniego użycia; kody odzyskiwania, wyłącznie jako jednokierunkowy skrót z kluczem, aby nikt nie mógł ich odczytać; a także, jeśli ktoś wpisze hasło, ale nie dokończy drugiego kroku, data ostatniej wiadomości e-mail z Glazecalc o tym (najwyżej raz na dobę). Podczas logowania, między hasłem a drugim krokiem, serwer przechowuje notatkę o logowaniu przez 5 minut, a strona trzyma krótki token tylko w pamięci: bez nowego pliku cookie i bez niczego w pamięci przeglądarki.",
-    "storedSaved": "<b>Zapisane dane:</b> receptury, surowce, dodatki, notatki, dzienniki wypałów i porady, w takiej postaci, w jakiej zostały zapisane. Widzi je tylko właściciel konta: nic nie jest udostępniane między użytkownikami.",
     "storedTrial": "<b>Okres próbny („Wypróbuj teraz”):</b> bez adresu e-mail i hasła, tylko wymyślona nazwa, np. „speckled quiet kilns”. Jeśli w trakcie okresu próbnego nastąpi zalogowanie na konto w tej samej przeglądarce, to, co powstało w okresie próbnym, zostanie przeniesione na konto.",
     "storedResets": "<b>Linki do resetowania hasła i linki e-mail:</b> które konto poprosiło o link i kiedy, adres, na który wysłano link potwierdzający adres, oraz odcisk każdego linku (a nie sam link).",
     "storedLogs": "<b>Logi:</b> serwer WWW zapisuje każde żądanie: adres IP, czas, żądaną stronę i nazwę przeglądarki. Aplikacja zapisuje błędy wraz ze stroną, na której wystąpiły, nigdy z adresem e-mail.",
@@ -152,7 +151,6 @@
         "lasts": "Do wyczyszczenia pamięci przeglądarki."
       },
       "print": {
-        "purpose": "Ostatnie ustawienia drukowania receptury: cała receptura lub porcja oraz wielkość porcji.",
         "lasts": "Do wyczyszczenia pamięci przeglądarki."
       },
       "token": {

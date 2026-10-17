@@ -30,6 +30,7 @@ import mongoose from 'mongoose';
 import RecordVersion from '../models/record_version.ts';
 import { giveBack, quota, type RecordModel } from './guest_limits.ts';
 import { userOf } from './jwt_auth.ts';
+import * as log from './log.ts';
 import { say } from './messages.ts';
 import * as limits from './rate_limit.ts';
 import { byOf, logActivity, moveToTrash, saveVersion, titleOf, TRASH_FULL } from './record_history.ts';
@@ -53,6 +54,8 @@ export interface RecordRoutesOptions {
   wrapper?: { create?: string; change?: string };
   /** Adds GET /getStandard. */
   standard?: boolean;
+  /** Runs once a record has gone to the Trash, with its id and owner: a recipe stops being shared. */
+  onTrash?: (id: string, ownedBy: string) => Promise<unknown>;
 }
 
 type Body = Record<string, unknown>;
@@ -85,7 +88,7 @@ const validId = (req: Request, res: Response): boolean => {
 
 export default function recordRoutes(
   Model: RecordModel,
-  { label, area, fields, required, wrapper = {}, standard = false }: RecordRoutesOptions
+  { label, area, fields, required, wrapper = {}, standard = false, onTrash }: RecordRoutesOptions
 ): express.Router {
   const router = express.Router();
   // The web session, or an access token that allows it.
@@ -165,6 +168,11 @@ export default function recordRoutes(
       res.status(409).json(say('trash-full'));
       return;
     }
+    // A failure here is logged and the delete still answers: the record is in the Trash already,
+    // and putting it back stops anything it had (its share link) on its own.
+    await onTrash?.(req.params.id as string, String(user._id)).catch((err: unknown) =>
+      log.error('Could not finish moving a record to the Trash', { area, code: log.codeOf(err) })
+    );
     await logActivity(req, 'trash', area, trashed.record);
     // A trial gets the place back for another record; the Trash does not count.
     if (user.guest) await giveBack(user._id, Model);

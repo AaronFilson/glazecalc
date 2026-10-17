@@ -18,6 +18,7 @@ const PAGES = [
   '/recipe?print=draft',
   '/import',
   '/blends',
+  '/recipe?print=draft&sheet=worked',
   '/material',
   '/additive',
   '/firing',
@@ -30,6 +31,7 @@ const PAGES = [
   '/about',
   '/privacy',
   '/de/guides',
+  '/shared',
   '/pseudo'
 ];
 

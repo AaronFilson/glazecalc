@@ -96,6 +96,8 @@
   "trash-emptied": "The Trash is empty.",
   "trash-full": "The Trash is full, so an access token cannot move anything more to it. Please empty some of it on the website first.",
   "account-limit": "An account can keep up to {limit} {label, select, additive {additives} advice {pieces of advice} firing {firing logs} material {materials} note {notes} recipe {recipes} trash {items in the trash} other {records}}. Please remove some to save more.",
+  "not-shared": "This recipe is not shared, or the link is not complete.",
+  "share-stopped": "The recipe is no longer shared. Its link no longer opens it.",
   "token-invalid": "The access token is not valid, has expired or was revoked.",
   "token-scope": "The access token does not allow this.",
   "token-not-here": "This can only be done signed in on the website, not with an access token.",
@@ -113,5 +115,6 @@
   "too-many-attempts": "Too many attempts. Please wait a few minutes and try again.",
   "too-many-codes": "Too many codes tried. Please wait a few minutes and try again.",
   "too-many-tokens": "Too many access tokens that do not work were tried from this address. Please wait a few minutes and try again.",
+  "too-many-shared-views": "Too many shared recipes were opened from this address. Please wait a few minutes and try again.",
   "too-many-deletes": "This access token has moved too many records to the Trash in the last hour. Please try again later."
 }

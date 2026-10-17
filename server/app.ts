@@ -17,11 +17,13 @@ import mfaRoutes from './routes/mfa_routes.ts';
 import emailRoutes from './routes/email_routes.ts';
 import passwordRoutes from './routes/password_routes.ts';
 import records from './routes/records.ts';
+import { privateHeaders, sharedRouter, shareRouter } from './routes/share_routes.ts';
 import userRoutes from './routes/user_routes.ts';
 import { say } from './lib/messages.ts';
 import * as site from './lib/site.ts';
 import {
   isPage,
+  isPrivatePage,
   looksLikeFile,
   pageHtml,
   prerenderedKey,
@@ -100,6 +102,9 @@ for (const [name, router] of Object.entries(records)) api.use('/' + name, router
 // item 5). A route that should take one goes above, behind requireScope.
 api.use(refuseAccessTokens);
 api.use('/export', exportRoutes);
+// Share links: the owner's (signed in), and the recipe a link opens (anyone).
+api.use('/share', shareRouter);
+api.use('/shared', sharedRouter);
 api.use('/guest', guestRoutes);
 api.use('/password', passwordRoutes);
 api.use('/email', emailRoutes);
@@ -221,6 +226,7 @@ app.use(async (req, res, next) => {
     .set('Cache-Control', 'no-cache')
     .set('Content-Security-Policy', contentSecurityPolicy(nonce))
     .set('Content-Language', code);
+  if (isPrivatePage(req.path)) privateHeaders(res);
   return res
     .status(isPage(req.path) ? 200 : 404)
     .type('html')

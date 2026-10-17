@@ -207,6 +207,20 @@
     "recipes": "Recipes (CSV)",
     "materials": "Materials (CSV)"
   },
+  "shared": {
+    "heading": "Shared recipes",
+    "text": "The recipes you share by link, which anyone holding the link can read without an account. A link is shown only once, when it is made, so it cannot be shown here. To share a recipe again, make a new link under the recipe's More.",
+    "since": "Shared since {date}",
+    "notesShown": "Notes shown",
+    "notesHidden": "Notes not shown",
+    "untitled": "Untitled recipe",
+    "stop": "Stop sharing",
+    "stopName": "Stop sharing {name}",
+    "stopped": "{name} is no longer shared. Its link no longer works.",
+    "stopFailed": "That did not work. Please try again.",
+    "fetchFailed": "Your shared recipes could not be loaded. Please try again.",
+    "none": "You are not sharing any recipe."
+  },
   "settings": {
     "heading": "Settings",
     "intro": "Saved with your account, so they hold on every device.",

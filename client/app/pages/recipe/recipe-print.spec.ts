@@ -289,6 +289,31 @@ describe('RecipePrint', () => {
     expect(root.querySelectorAll('.print-hazards li').length).toBe(2);
   });
 
+  it('prints the working as a worksheet, without the batch size, and remembers the choice', async () => {
+    const { fixture, root } = await create();
+    await choose(fixture, root, 'print-worked');
+    expect(root.querySelector('gc-worked-calculation')).not.toBeNull();
+    expect(root.querySelector('.print-chemistry')).toBeNull();
+    expect(root.querySelector('.print-batch-list')).toBeNull();
+    expect(root.querySelector('.print-batch-summary')).toBeNull();
+    expect((root.querySelector('#print-batch-size')?.closest('[hidden]') as HTMLElement | null)?.hidden).toBe(true);
+    expect(text(fixture, '.print-sheet')).toContain('How the unity formula is worked out');
+    expect(localStorage.getItem('printMode')).toBe('worked');
+  });
+
+  it('opens on the working when asked, without remembering it', async () => {
+    const fixture = TestBed.createComponent(RecipePrint);
+    fixture.componentRef.setInput('recipe', RECIPE);
+    fixture.componentRef.setInput('startMode', 'worked');
+    await fixture.whenStable();
+    answer('/preferences', { weightUnit: 'g', gramPrecision: 'single' });
+    await settle(fixture);
+    const root = fixture.nativeElement as HTMLElement;
+    expect((root.querySelector('#print-worked') as HTMLInputElement).checked).toBe(true);
+    expect(root.querySelector('gc-worked-calculation')).not.toBeNull();
+    expect(localStorage.getItem('printMode')).toBeNull();
+  });
+
   it("takes the batch size in the account's unit, and prints the amounts as written without one", async () => {
     const { fixture, root } = await create(RECIPE, 'lb');
     const input = root.querySelector('#print-batch-size') as HTMLInputElement;

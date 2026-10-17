@@ -939,7 +939,7 @@ describe('RecipePage', () => {
     more.click();
     await fixture.whenStable();
     expect(more.getAttribute('aria-expanded')).toBe('true');
-    expect(text(fixture, '#more-actions-r9')).toBe('Print Compare Blend Remove');
+    expect(text(fixture, '#more-actions-r9')).toBe('Print Compare Blend Share Remove');
     const blend = fixture.nativeElement.querySelector('#more-actions-r9 a') as HTMLAnchorElement;
     expect([blend.getAttribute('aria-label'), blend.getAttribute('href')]).toEqual([
       'Make a blend from Matte 9',
@@ -1229,6 +1229,48 @@ describe('RecipePage', () => {
       expect(document.activeElement?.id).toBe('print-r1');
     });
 
+    it('shows the working of the recipe being edited, and goes back to its button', async () => {
+      const { fixture, page } = await create();
+      const router = TestBed.inject(Router);
+      router.initialNavigation();
+      fill(page, [
+        [WHITING, '20'],
+        [SILICA, '30']
+      ]);
+      await settle(fixture);
+      click(fixture, 'Show the working');
+      await opened(fixture);
+      expect(router.url).toBe('/?print=draft&sheet=worked');
+      expect(fixture.nativeElement.querySelector('gc-worked-calculation')).not.toBeNull();
+      expect(localStorage.getItem('printMode')).not.toBe('worked');
+
+      click(fixture, 'Back to the recipe');
+      await settle(fixture);
+      expect(router.url).toBe('/');
+      expect(document.activeElement?.id).toBe('worked-draft');
+    });
+
+    it('shares a saved recipe from the list by a link shown once', async () => {
+      const { fixture } = await create([SAVED]);
+      await settle(fixture);
+      (fixture.nativeElement.querySelector('#more-r1') as HTMLButtonElement).click();
+      await settle(fixture);
+      const button = fixture.nativeElement.querySelector('#share-r1') as HTMLButtonElement;
+      expect(button.getAttribute('aria-label')).toBe('Share Saved matte');
+      button.click();
+      await settle(fixture);
+      answer('/share/recipe/r1', { shared: false });
+      await settle(fixture);
+      expect(document.activeElement?.id).toBe('share-heading-r1');
+      click(fixture, 'Make a link');
+      const made = httpMock().expectOne((req) => req.method === 'POST' && req.url === API + '/share/recipe/r1');
+      expect(made.request.body).toEqual({ includeNotes: false });
+      made.flush({ secret: 'a'.repeat(43), createdAt: '2026-10-16T00:00:00Z', includeNotes: false });
+      await settle(fixture);
+      const link = fixture.nativeElement.querySelector('#share-address-r1') as HTMLInputElement;
+      expect(link.value).toBe(location.origin + '/shared#' + 'a'.repeat(43));
+    });
+
     it('back from printing a saved recipe the list leaves out, lists them all so the focus can go to its Print', async () => {
       const recipes: Recipe[] = Array.from({ length: 10 }, (_, i) => ({ ...SAVED, _id: 'r' + i, title: 'Matte ' + i }));
       const router = TestBed.inject(Router);
@@ -1246,6 +1288,25 @@ describe('RecipePage', () => {
       await settle(fixture);
       expect(fixture.nativeElement.querySelectorAll('.saved-recipe-open').length).toBe(10);
       expect(document.activeElement?.id).toBe('print-r0');
+    });
+
+    it('opens the saved recipe the address names (the account page links to it), and ignores one that is not there', async () => {
+      const router = TestBed.inject(Router);
+      for (const [id, title] of [
+        ['r1', 'Saved matte'],
+        ['nope', '']
+      ]) {
+        await router.navigateByUrl('/?open=' + id);
+        const fixture = TestBed.createComponent(RecipePage);
+        await fixture.whenStable();
+        answer('/materials/getStandard', [WHITING, SILICA]);
+        answer('/materials/getAll', []);
+        answer('/additives/getAll', []);
+        answer('/additives/getStandard', []);
+        answer('/recipe/getAll', [SAVED]);
+        await settle(fixture);
+        expect((fixture.nativeElement.querySelector('#recipe-name') as HTMLInputElement).value).toBe(title);
+      }
     });
 
     it('opens from the address once the saved recipes are in, and drops a print of what is not there', async () => {

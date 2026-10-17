@@ -69,6 +69,26 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   up to 21 tiles in a line, 8 by 8 or 11 rows: the tiles drawn as they are laid out and numbered,
   a list of what to weigh for each tile for a chosen test batch, to print, and the tiles chosen
   saved as recipes in percent. The tiles and their recipes come from `lib/recipe/blends.js`.
+- **Share a recipe by link** ([ADR 0020](docs/adr/0020-share-links.md)). Share, under a saved
+  recipe's More, makes a read-only link that anyone can open without an account: the recipe as it
+  is now, its unity formula and the working, in the viewer's language. The link is 256 random bits
+  after `#` (so no log or Referer holds it), shown once and stored only as a hash; a new link
+  replaces it, Stop sharing ends it, and moving the recipe to the Trash ends it too. It never shows
+  the owner's email or account, ids, material notes or prices, and the recipe's notes only when
+  the owner ticks them. Shared pages are never indexed and are rate-limited. Trials cannot share.
+  The privacy page, the data download and account deletion include share links.
+  The account page lists every recipe the account shares (a link to the recipe, since when, whether
+  its notes show) with Stop sharing for each; it never shows a link again. Links do not expire.
+  The privacy page's line on print choices now names the worksheet too.
+  A password reset and Sign out everywhere stop every share link of the account (the reset's
+  notice email says so); a password change keeps them. Restoring a recipe from the Trash never
+  shares it again, and a link made as its recipe is trashed is taken back. An additive that
+  borrows a chemistry no longer sends the names of the owner's own materials. A shared recipe's
+  429 replies carry the no-index headers too.
+- **Show the working:** how the unity (Seger) formula comes from a recipe, step by step (grams,
+  each material's oxides and their moles, the totals, the fluxes added up, each oxide divided by
+  them), with the recipe's own numbers and the same answer as the recipe page. From the unity
+  formula's panel, as a third kind of print (a worksheet), and on a shared recipe.
 - **The Trash and Undo.** Removing a recipe, material, note or other record moves it to the Trash,
   where it waits 30 days; the removal notice has Undo, and the Trash page puts records back, deletes
   them for good or empties the Trash. Each saved change keeps the version before it (the last 20,

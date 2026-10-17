@@ -132,6 +132,14 @@ export const routes: Routes = [
     resolve: { messages: scopeTranslations },
     loadComponent: () => import('./pages/password/confirm-email-page').then((m) => m.ConfirmEmailPage)
   },
+  // A recipe shared by link, for anyone: never indexed (server/lib/pages.ts, PRIVATE_PAGES).
+  {
+    path: 'shared',
+    title: marker('titles.shared'),
+    providers: [provideTranslocoScope('recipe')],
+    resolve: { messages: scopeTranslations },
+    loadComponent: () => import('./pages/shared/shared-page').then((m) => m.SharedPage)
+  },
 
   // The app itself, once signed in.
   {

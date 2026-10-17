@@ -264,6 +264,20 @@ describe('pages in each language', () => {
     );
   });
 
+  it('keeps a shared recipe out of search results and Referers, with no canonical address or other languages', () => {
+    for (const address of ['/shared', '/de/shared']) {
+      const html = pageHtml(HTML, address, SITE, {}, ['en', 'de']);
+      expect(html, address).to.include('<meta name="robots" content="noindex, nofollow" />');
+      expect(html, address).to.include('<meta name="referrer" content="no-referrer" />');
+      expect(html, address).not.to.include('rel="canonical"');
+      expect(html, address).not.to.include('hreflang');
+      expect(html, address).not.to.include('og:locale');
+    }
+    expect(sitemap(SITE, ['en', 'de'])).not.to.include('shared');
+    expect(prerenderedKey('/shared')).to.equal(null);
+    expect(pageHtml(HTML, '/recipe', SITE, {}, ['en', 'de'])).not.to.include('name="referrer"');
+  });
+
   it("knows every page in the app's routes", () => {
     const routes = fs.readFileSync(
       path.join(import.meta.dirname, '..', '..', 'client', 'app', 'app.routes.ts'),

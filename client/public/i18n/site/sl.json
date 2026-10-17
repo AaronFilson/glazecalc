@@ -73,7 +73,6 @@
     "storedAccount": "<b>Vaš račun:</b> vaš e-poštni naslov in geslo, ki je shranjeno samo kot enosmerni zgoščeni zapis (bcrypt), nikoli kot geslo samo. Z njim se hranijo vaše nastavitve (na primer jezik, regija in enote) in seznam surovin, ki jih imate na zalogi. Račun potrebuje e-poštni naslov za prijavo in za ponastavitev pozabljenega gesla. Ko ustvarite račun, se na naslov pošlje povezava, s katero potrdite, da je vaš; do takrat se nanj pošilja pošta samo, kadar to zahtevate, na primer za ponastavitev gesla.",
     "storedEmailChange": "<b>Sprememba e-poštnega naslova:</b> datum zadnje spremembe vašega naslova, da se zahteva za izklop dvostopenjske prijave nikoli ne sprejme z novega naslova v 30 dneh po spremembi.",
     "storedSignIn": "<b>Dvostopenjska prijava, če jo vklopite:</b> ali je vklopljena; ključ, ki ga vaša aplikacija za preverjanje pristnosti deli z Glazecalc, šifriran; pri vsakem ključu za dostop njegov javni ključ (s katerim samim se ni mogoče prijaviti) z ID-jem in podatki, ki mu jih dodeli vaša naprava, ime, ki ste mu ga dali, ter kdaj je bil dodan in nazadnje uporabljen; vaše obnovitvene kode, samo kot enosmerni zgoščeni zapis s ključem, zato jih nihče ne more prebrati nazaj; in če nekdo vnese vaše geslo, a ne dokonča drugega koraka, kdaj vam je Glazecalc o tem nazadnje poslal e-pošto (največ enkrat na dan). Med prijavo, med geslom in drugim korakom, strežnik 5 minut hrani zapis o prijavi, stran pa drži kratek žeton samo v pomnilniku: brez novega piškotka, nič v shrambi vašega brskalnika.",
-    "storedSaved": "<b>Kar shranite:</b> vaši recepti, surovine, dodatki, zapiski, dnevniki žganja in nasveti, tako kot ste jih zapisali. Vidite jih samo vi: med uporabniki se nič ne deli.",
     "storedTrial": "<b>Preizkus (»Preizkusi zdaj«):</b> brez e-poštnega naslova ali gesla, samo izmišljeno ime, na primer »speckled quiet kilns«. Če se med preizkusom v istem brskalniku prijavite v račun, se to, kar ste ustvarili v preizkusu, prenese v račun.",
     "storedResets": "<b>Povezave za ponastavitev gesla in e-poštne povezave:</b> kateri račun je zahteval povezavo, kdaj, naslov, na katerega je bila poslana povezava za potrditev naslova, in prstni odtis vsake povezave (ne povezava sama).",
     "storedLogs": "<b>Dnevniki:</b> spletni strežnik zapiše vsako zahtevo: vaš naslov IP, čas, zahtevano stran in ime vašega brskalnika. Aplikacija zapisuje napake skupaj s stranjo, na kateri so nastale, nikoli pa vašega e-poštnega naslova.",
@@ -152,7 +151,6 @@
         "lasts": "Dokler ne počistite shrambe brskalnika."
       },
       "print": {
-        "purpose": "Vaše zadnje izbire za tiskanje recepta: celoten recept ali seznam za tehtanje in velikost mešanice.",
         "lasts": "Dokler ne počistite shrambe brskalnika."
       },
       "token": {

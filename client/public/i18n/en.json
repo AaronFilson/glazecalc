@@ -25,7 +25,8 @@
     "notes": "Notes - Glazecalc",
     "trash": "Trash - Glazecalc",
     "account": "Your account and settings - Glazecalc",
-    "notFound": "Not found - Glazecalc"
+    "notFound": "Not found - Glazecalc",
+    "shared": "Shared recipe - Glazecalc"
   },
   "nav": {
     "skip": "Skip to content",

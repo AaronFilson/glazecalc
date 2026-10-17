@@ -15,7 +15,13 @@
     <ng-container [ngTemplateOutlet]="unsavedQuestion" />
   }
   @if (printRecipe(); as recipe) {
-    <gc-recipe-print [recipe]="recipe" [chemistryOf]="chemistryOf" [hazards]="printHazards()" (back)="closePrint()" />
+    <gc-recipe-print
+      [recipe]="recipe"
+      [chemistryOf]="chemistryOf"
+      [hazards]="printHazards()"
+      [startMode]="printSheet()"
+      (back)="closePrint()"
+    />
   } @else if (printWaiting()) {
     <p class="muted" role="status">{{ t('recipe.page.gettingPrint') }}</p>
   } @else if (comparing()) {
@@ -141,6 +147,16 @@
                     >
                       {{ t('recipe.page.blend') }}
                     </a>
+                    <button
+                      [id]="'share-' + rec._id"
+                      type="button"
+                      class="btn btn-light border btn-sm"
+                      [attr.aria-expanded]="shareOpen() === rec._id"
+                      [attr.aria-label]="t('recipe.page.shareName', { title: rec.title })"
+                      (click)="toggleShare(rec)"
+                    >
+                      {{ t('recipe.page.share') }}
+                    </button>
                     <gc-remove-button
                       danger
                       [name]="rec.title"
@@ -152,6 +168,9 @@
                   </span>
                 }
               </div>
+              @if (shareOpen() === rec._id && moreOpen().has(rec._id)) {
+                <gc-share-panel [recipeId]="rec._id" [trial]="isTrial()" />
+              }
               @if (expanded().has(rec._id ?? '')) {
                 <div class="saved-recipe-details">
                   <em>{{ t('recipe.page.savedMaterials') }}</em>
@@ -870,6 +889,11 @@
         </div>
         @if (evaluation().analysis; as analysis) {
           <gc-unity-formula [analysis]="analysis" />
+          <p class="unity-working">
+            <button id="worked-draft" type="button" class="btn btn-light border btn-sm" (click)="printDraft('worked')">
+              {{ t('recipe.page.showWorking') }}
+            </button>
+          </p>
           @if (evaluation().warnings.length) {
             <ul class="unity-warnings">
               @for (warning of evaluation().warnings; track warning) {

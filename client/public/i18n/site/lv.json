@@ -73,7 +73,6 @@
     "storedAccount": "<b>Jūsu konts:</b> jūsu e-pasta adrese un parole, kas tiek glabāta tikai kā vienvirziena jaucējvērtība (bcrypt), nekad kā pati parole. Kopā ar to glabājas jūsu iestatījumi (piemēram, valoda, reģions un mērvienības) un jūsu krājumu saraksts. Kontam ir vajadzīga e-pasta adrese, lai pierakstītos un atiestatītu aizmirstu paroli. Kad izveidojat kontu, uz adresi tiek nosūtīta saite, lai apstiprinātu, ka tā ir jūsu; līdz tam uz to sūta e-pasta vēstules tikai tad, kad to lūdzat, piemēram, paroles atiestatīšanai.",
     "storedEmailChange": "<b>E-pasta adreses maiņa:</b> datums, kad jūsu adrese pēdējoreiz mainīta, lai pieprasījumu izslēgt divpakāpju pierakstīšanos nepieņemtu no jaunas adreses 30 dienas pēc maiņas.",
     "storedSignIn": "<b>Divpakāpju pierakstīšanās, ja to ieslēdzat:</b> vai tā ir ieslēgta; atslēga, ko jūsu autentifikatora lietotne kopīgo ar Glazecalc, šifrēta; par katru piekļuves atslēgu tās publiskā atslēga (ar kuru vien pierakstīties nevar), ID un dati, ko tai piešķir jūsu ierīce, jūsu dotais nosaukums, kā arī tās pievienošanas un pēdējās izmantošanas laiks; jūsu atkopšanas kodi, tikai kā atslēgota vienvirziena jaucējvērtība, lai neviens tos nevarētu atkal nolasīt; un, ja kāds ievada jūsu paroli, bet nepabeidz otro soli, kad Glazecalc jums par to pēdējoreiz sūtīja e-pastu (ne biežāk kā reizi dienā). Kamēr pierakstāties, starp paroli un otro soli, serveris 5 minūtes glabā pierakstīšanās ierakstu, bet lapa tikai savā atmiņā tur īsu marķieri: nekādas jaunas sīkdatnes, nekā jūsu pārlūkprogrammas krātuvē.",
-    "storedSaved": "<b>Tas, ko saglabājat:</b> jūsu receptes, izejvielas, piedevas, piezīmes, apdedzināšanas žurnāli un padomi, tādi, kādus tos uzrakstījāt. Tos varat redzēt tikai jūs: starp lietotājiem nekas netiek kopīgots.",
     "storedTrial": "<b>Izmēģinājums (“Izmēģināt tūlīt”):</b> nav ne e-pasta adreses, ne paroles, tikai izdomāts vārds, piemēram, “speckled quiet kilns”. Ja izmēģinājuma laikā tajā pašā pārlūkprogrammā pierakstāties kontā, izmēģinājumā izveidotais tiek pārnests uz kontu.",
     "storedResets": "<b>Paroles atiestatīšanas un e-pasta saites:</b> kurš konts to pieprasīja un kad, adrese, uz kuru nosūtīta adreses apstiprināšanas saite, un katras saites nospiedums (nevis pati saite).",
     "storedLogs": "<b>Žurnālfaili:</b> tīmekļa serveris reģistrē katru pieprasījumu: jūsu IP adresi, laiku, pieprasīto lapu un jūsu pārlūkprogrammas nosaukumu. Lietotne reģistrē kļūdas kopā ar lapu, kurā tās radās, bet nekad ne jūsu e-pasta adresi.",
@@ -152,7 +151,6 @@
         "lasts": "Līdz notīrāt pārlūkprogrammas krātuvi."
       },
       "print": {
-        "purpose": "Jūsu pēdējās receptes drukāšanas izvēles: visa recepte vai porcija, un porcijas lielums.",
         "lasts": "Līdz notīrāt pārlūkprogrammas krātuvi."
       },
       "token": {

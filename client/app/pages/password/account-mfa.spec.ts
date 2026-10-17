@@ -36,6 +36,7 @@ describe('AccountPage with two-step sign-in on', () => {
     const fixture = TestBed.createComponent(AccountPage);
     await fixture.whenStable();
     answer('/preferences', { weightUnit: 'g' });
+    answer('/share/recipes', []);
     answer('/mfa', summary);
     await settle(fixture);
     return { fixture, page: fixture.componentInstance as unknown as Page };

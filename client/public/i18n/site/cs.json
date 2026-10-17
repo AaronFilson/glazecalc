@@ -73,7 +73,6 @@
     "storedAccount": "<b>Váš účet:</b> vaše e-mailová adresa a vaše heslo, uložené jen jako jednosměrný hash (bcrypt), nikdy jako heslo samotné. Spolu s ním se uchovává vaše nastavení (například jazyk, region a jednotky) a seznam surovin, které máte v zásobě. Účet potřebuje e-mailovou adresu k přihlášení a k obnovení zapomenutého hesla. Při vytvoření účtu se na adresu pošle odkaz k potvrzení, že patří vám; do té doby na ni chodí pošta jen na vaši žádost, například při obnovení hesla.",
     "storedEmailChange": "<b>Změna e-mailu:</b> datum poslední změny vaší adresy, aby se žádost o vypnutí dvoustupňového přihlášení nikdy nepřijala z nové adresy během 30 dnů po změně.",
     "storedSignIn": "<b>Dvoustupňové přihlášení, pokud ho zapnete:</b> zda je zapnuté; klíč, který vaše ověřovací aplikace sdílí s Glazecalc, zašifrovaný; u každého přístupového klíče jeho veřejný klíč (kterým se samotným nelze přihlásit) spolu s ID a údaji, které mu přidělí vaše zařízení, název, který jste mu dali, a kdy byl přidán a naposledy použit; vaše kódy pro obnovení, jen jako jednosměrný otisk s klíčem, takže je nikdo nemůže přečíst zpět; a pokud někdo zadá vaše heslo, ale druhý krok nedokončí, kdy vám o tom Glazecalc naposledy poslal e-mail (nejvýše jednou denně). Při přihlašování, mezi heslem a druhým krokem, si server na 5 minut uchovává záznam o přihlášení a stránka drží krátký token jen v paměti: žádný nový cookie, nic v úložišti vašeho prohlížeče.",
-    "storedSaved": "<b>Co uložíte:</b> vaše recepty, suroviny, přísady, poznámky, záznamy výpalů a rady, tak jak je máte zapsané. Vidíte je jen vy: mezi uživateli se nic nesdílí.",
     "storedTrial": "<b>Zkušební přístup (Vyzkoušet hned):</b> žádný e-mail ani heslo, jen vymyšlené jméno, například „speckled quiet kilns“. Pokud se během zkušebního přístupu přihlásíte k účtu ve stejném prohlížeči, přesune se to, co ve zkušebním přístupu vzniklo, do účtu.",
     "storedResets": "<b>Odkazy pro obnovení hesla a e-mailové odkazy:</b> který účet o ně požádal, kdy, adresa, na kterou byl poslán odkaz k potvrzení adresy, a otisk každého odkazu (ne odkaz samotný).",
     "storedLogs": "<b>Protokoly:</b> webový server zaznamenává každý požadavek: vaši IP adresu, čas, požadovanou stránku a název vašeho prohlížeče. Aplikace zaznamenává chyby se stránkou, na které nastaly, nikdy s vaší e-mailovou adresou.",
@@ -152,7 +151,6 @@
         "lasts": "Dokud nevymažete úložiště prohlížeče."
       },
       "print": {
-        "purpose": "Vaše poslední volby pro tisk receptu: celý recept nebo dávka a velikost dávky.",
         "lasts": "Dokud nevymažete úložiště prohlížeče."
       },
       "token": {

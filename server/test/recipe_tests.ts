@@ -1,6 +1,7 @@
 import { readFileSync } from 'node:fs';
 import { expect } from 'chai';
 import { IntlMessageFormat } from 'intl-messageformat';
+import chemistry from '../../lib/chemistry/index.js';
 import recipe from '../../lib/recipe/index.js';
 import type { Caution, LimitSet, MaterialRecord, RecipeMessage } from '../../lib/recipe/index.js';
 import standardData from '../../data/index.js';
@@ -462,5 +463,69 @@ describe('Shared recipe tools', () => {
       ...(standardData.load('additives') as MaterialRecord[])
     ] as Array<{ name: string; hazards?: string }>;
     expect(recipe.hazardsOf(standard).unknown).to.eql([]);
+  });
+});
+
+describe('the unity formula worked step by step (workedCalculation)', () => {
+  const library = standardData.load('materials') as MaterialRecord[];
+  const named = (name: string) => {
+    const found = library.find((m) => m.name === name);
+    if (!found) throw new Error('No ' + name + ' in the library');
+    return found;
+  };
+  // Leach's 4321 and a cone 6 clear, from the library's own records.
+  const recipes = [
+    [
+      ['Custer Spar', 40],
+      ['Silica', 30],
+      ['Whiting', 20],
+      ['EPK Kaolin', 10]
+    ],
+    [
+      ['Ferro Frit 3134', 23.5],
+      ['Wollastonite (Vansil W)', 12],
+      ['EPK Kaolin', 20],
+      ['Silica', 34.5],
+      ['Talc', 10]
+    ]
+  ] as Array<Array<[string, number]>>;
+
+  it('comes to the unity formula calculateUMF gives, oxide for oxide', () => {
+    for (const lines of recipes) {
+      const recipeLines = lines.map(([name, amount]) => ({ material: named(name), amount }));
+      const worked = recipe.workedCalculation(recipeLines);
+      const umf = chemistry.calculateUMF(recipeLines).umf;
+      expect(worked.oxides.map((o) => o.oxide).sort()).to.eql(Object.keys(umf).sort());
+      for (const total of worked.oxides) expect(total.unity).to.be.closeTo(umf[total.oxide], 1e-12);
+      const fluxes = worked.oxides.filter((o) => o.flux).reduce((sum, o) => sum + o.unity, 0);
+      expect(fluxes).to.be.closeTo(1, 1e-12);
+    }
+  });
+
+  it('shows each step: grams of oxide, its molar mass and its moles, added up across the materials', () => {
+    const worked = recipe.workedCalculation([
+      { material: { name: 'Whiting', formula: { CaO: 1, CO2: 1 } }, amount: 20 },
+      { material: { name: 'Silica', formula: { SiO2: 1 } }, amount: '30' },
+      { material: { name: 'Nothing', formula: { SiO2: 1 } }, amount: 0 }
+    ]);
+    expect(worked.batchGrams).to.equal(50);
+    expect(worked.materials.map((m) => m.name)).to.eql(['Whiting', 'Silica']);
+    const [whiting] = worked.materials;
+    expect(whiting.loi).to.be.closeTo(43.97, 0.01);
+    const [lime] = whiting.oxides;
+    expect(lime.oxide).to.equal('CaO');
+    expect(lime.grams).to.be.closeTo((20 * lime.percent) / 100, 1e-12);
+    expect(lime.moles).to.be.closeTo(lime.grams / lime.molarMass, 1e-12);
+    expect(worked.fluxes.map((f) => f.oxide)).to.eql(['CaO']);
+    expect(worked.fluxMoles).to.be.closeTo(lime.moles, 1e-12);
+    // Fluxes first, then silica.
+    expect(worked.oxides.map((o) => o.oxide)).to.eql(['CaO', 'SiO2']);
+    expect(worked.oxides[0].unity).to.equal(1);
+  });
+
+  it('says there is no flux as calculateUMF does', () => {
+    expect(() => recipe.workedCalculation([{ material: { name: 'Silica', formula: { SiO2: 1 } }, amount: 10 }]))
+      .to.throw()
+      .with.property('code', 'no-flux');
   });
 });

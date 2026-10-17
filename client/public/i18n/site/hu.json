@@ -73,7 +73,6 @@
     "storedAccount": "<b>A fiókja:</b> az e-mail-címe és a jelszava, amelyet csak egyirányú kivonatként (bcrypt hash) tárolunk, magát a jelszót soha. A beállításait (például a nyelvet, a régiót és a mértékegységeket) és a készlete listáját vele együtt őrizzük. A fiókhoz e-mail-cím kell, a bejelentkezéshez és az elfelejtett jelszó visszaállításához. Amikor fiókot hoz létre, linket küldünk a címre, hogy megerősítse, hogy az Öné; addig csak akkor megy rá levél, ha kéri, például jelszó-visszaállításkor.",
     "storedEmailChange": "<b>E-mail-cím módosítása:</b> a cím legutóbbi változásának dátuma, hogy a kétlépéses bejelentkezés kikapcsolására vonatkozó kérést ne fogadjuk el új címről a változás utáni 30 napban.",
     "storedSignIn": "<b>Kétlépéses bejelentkezés, ha bekapcsolja:</b> hogy be van-e kapcsolva; a kulcs, amelyet a hitelesítő alkalmazása megoszt a Glazecalc-cal, titkosítva; minden hozzáférési kulcsnál a nyilvános kulcsa (amellyel önmagában nem lehet bejelentkezni), az azonosítója és az adatai, amelyeket az eszköze ad neki, az Ön által adott név, valamint hogy mikor adták hozzá és mikor használták utoljára; a helyreállítási kódjai, csak kulcsos egyirányú hash formájában, így senki sem tudja visszaolvasni őket; és ha valaki megadja a jelszavát, de nem fejezi be a második lépést, hogy a Glazecalc mikor értesítette Önt e-mailben erről (legfeljebb naponta egyszer). Amíg bejelentkezik, a jelszava és a második lépés között a szerver 5 percig megőrzi a bejelentkezés feljegyzését, az oldal pedig egy rövid tokent tart csak a memóriájában: nincs új süti, és semmi sem kerül a böngészője tárolójába.",
-    "storedSaved": "<b>Amit elment:</b> receptjei, nyersanyagai, adalékai, jegyzetei, égetési naplói és tanácsai, ahogy megírta őket. Csak Ön láthatja őket: a felhasználók között semmi sincs megosztva.",
     "storedTrial": "<b>Próbahasználat (Kipróbálás most):</b> nincs e-mail-cím vagy jelszó, csak egy kitalált név, például „speckled quiet kilns”. Ha próbahasználat közben ugyanabban a böngészőben bejelentkezik egy fiókba, amit a próbahasználatban készített, átkerül a fiókba.",
     "storedResets": "<b>Jelszó-visszaállítási és e-mail-linkek:</b> melyik fiók kérte, mikor, melyik címre küldtük a cím megerősítésére szolgáló linket, és minden link ujjlenyomata (nem maga a link).",
     "storedLogs": "<b>Naplók:</b> a webszerver minden kérést rögzít: az IP-címét, az időpontot, a kért oldalt és a böngészője nevét. Az alkalmazás a hibákat azzal az oldallal együtt rögzíti, amelyen történtek, az e-mail-címét soha.",
@@ -152,7 +151,6 @@
         "lasts": "Amíg nem törli a böngésző tárhelyét."
       },
       "print": {
-        "purpose": "A recept nyomtatásánál legutóbb választott beállításai: a teljes recept vagy egy adag, és az adagméret.",
         "lasts": "Amíg nem törli a böngésző tárhelyét."
       },
       "token": {

@@ -73,7 +73,6 @@
     "storedAccount": "<b>Kontoen:</b> e-mailadressen og adgangskoden, som kun gemmes som en envejs-hash (bcrypt), aldrig som selve adgangskoden. Indstillingerne (fx sprog, region og enheder) og listen over råvarer på lager gemmes sammen med den. En konto kræver en e-mailadresse til at logge ind og til at nulstille en glemt adgangskode. Når en konto oprettes, sendes et link til adressen for at bekræfte, at den er din; indtil da sendes der kun mail til den, når du beder om det, fx ved nulstilling af adgangskoden.",
     "storedEmailChange": "<b>Skift af e-mailadresse:</b> datoen, hvor adressen sidst blev ændret, så en anmodning om at slå login i to trin fra aldrig accepteres fra en ny adresse i de følgende 30 dage.",
     "storedSignIn": "<b>Login i to trin, hvis du slår det til:</b> om det er slået til; den hemmelige nøgle, godkendelsesappen deler med Glazecalc, krypteret; for hver adgangsnøgle dens offentlige nøgle (som ikke kan logge ind alene) med det id og de oplysninger, enheden giver den, det navn, du gav den, og hvornår den blev tilføjet og senest brugt; gendannelseskoderne, kun som en envejs-hash med nøgle, så ingen kan læse dem igen; og hvis nogen angiver din adgangskode, men ikke gennemfører det andet trin, hvornår Glazecalc sidst sendte dig en e-mail om det (højst én gang om dagen). Mens du logger ind, mellem adgangskoden og det andet trin, gemmer serveren en note om login i 5 minutter, og siden holder en kort token kun i hukommelsen: ingen ny cookie, intet i browserens lager.",
-    "storedSaved": "<b>Det, du gemmer:</b> opskrifter, råvarer, tilsætninger, noter, brændingsjournaler og råd, som du skrev dem. Kun du kan se dem: Intet deles mellem brugere.",
     "storedTrial": "<b>En prøveperiode (»Prøv nu«):</b> ingen e-mailadresse eller adgangskode, kun et opdigtet navn som »speckled quiet kilns«. Hvis du logger ind på en konto i samme browser under en prøveperiode, flyttes det, du har lavet i prøveperioden, over i kontoen.",
     "storedResets": "<b>Links til nulstilling af adgangskode og e-mail:</b> hvilken konto der bad om det, hvornår, den adresse, et link til bekræftelse af en adresse blev sendt til, og et fingeraftryk af hvert link (ikke selve linket).",
     "storedLogs": "<b>Logfiler:</b> Webserveren registrerer hver anmodning: din IP-adresse, tidspunktet, den side, der blev bedt om, og navnet på din browser. Appen registrerer fejl med den side, de opstod på, aldrig din e-mailadresse.",
@@ -152,7 +151,6 @@
         "lasts": "Indtil du rydder browserens lager."
       },
       "print": {
-        "purpose": "Dine seneste valg ved udskrivning af en opskrift: hele opskriften eller en portion og portionsstørrelsen.",
         "lasts": "Indtil du rydder browserens lager."
       },
       "token": {
