@@ -1,6 +1,9 @@
 import { TestBed } from '@angular/core/testing';
 import { Additive, RecipeMaterial } from '../../core/models';
 import { API, httpMock, settle, testProviders, text } from '../../testing/test-providers';
+import { AuthService } from '../../core/auth.service';
+import { PreferencesService } from '../../core/preferences.service';
+import { PricesService } from '../../core/prices.service';
 import { RecipeCost } from './recipe-cost';
 
 const line = (_id: string, name: string, amount: string): RecipeMaterial => ({
@@ -96,16 +99,11 @@ describe('RecipeCost', () => {
       'The materials with prices cost $1.20 in this batch. Give a price for Whiting and Cobalt Carbonate for the whole cost.'
     );
 
-    // A price given is saved with the others, per kilogram.
+    // A price given is sent alone, per kilogram, to be merged by key with the account's list.
     await typePrice(fixture, root, 1, '0.5');
     const put = httpMock().expectOne(API + '/prices');
-    expect(put.request.method).toBe('PUT');
-    expect(put.request.body).toEqual({
-      prices: [
-        { key: 'potash', perKg: 2 },
-        { key: 'whiting', perKg: 0.5 }
-      ]
-    });
+    expect(put.request.method).toBe('PATCH');
+    expect(put.request.body).toEqual({ set: [{ key: 'whiting', perKg: 0.5 }] });
     put.flush({});
     await settle(fixture);
     expect(rows(root)[1]).toEqual(['Whiting', '0.5', '$0.20']);
@@ -117,9 +115,10 @@ describe('RecipeCost', () => {
     expect(text(fixture, '#price-problem-2')).toBe('Enter the price as a number of 0 or more, such as 2.5.');
     // Blank takes a price away.
     await typePrice(fixture, root, 0, '');
-    httpMock()
-      .expectOne(API + '/prices')
-      .flush({});
+    const removal = httpMock().expectOne(API + '/prices');
+    expect(removal.request.method).toBe('PATCH');
+    expect(removal.request.body).toEqual({ remove: ['potash'] });
+    removal.flush({});
     await settle(fixture);
     expect(rows(root)[0]).toEqual(['Potash Feldspar', '', 'No price']);
   });
@@ -131,11 +130,94 @@ describe('RecipeCost', () => {
     expect(text(fixture, 'thead')).toContain('Price per lb');
     await typePrice(fixture, root, 1, '1');
     const put = httpMock().expectOne(API + '/prices');
-    const whiting = (put.request.body as { prices: Array<{ key: string; perKg: number }> }).prices[1]!;
+    const whiting = (put.request.body as { set: Array<{ key: string; perKg: number }> }).set[0]!;
     expect(whiting.key).toBe('whiting');
     expect(whiting.perKg).toBeCloseTo(1 / 0.45359237, 9);
     put.flush({});
     await settle(fixture);
+  });
+
+  it('sends the currency shown with the first price when the account has none chosen, and keeps what the server says', async () => {
+    localStorage.removeItem('currency');
+    const { fixture, root } = await create([]);
+    await typePrice(fixture, root, 0, '2');
+    const first = httpMock().expectOne(API + '/prices');
+    expect(typeof first.request.body.currency).toBe('string');
+    expect(first.request.body.currency).toMatch(/^[A-Z]{3}$/);
+    first.flush({ prices: [{ key: 'potash', perKg: 2 }], currency: 'SEK' });
+    await settle(fixture);
+    expect(TestBed.inject(PreferencesService).currency()).toBe('SEK');
+    // Once it is the account's, it is not sent again.
+    await typePrice(fixture, root, 1, '1');
+    const second = httpMock().expectOne(API + '/prices');
+    expect(second.request.body.currency).toBeUndefined();
+    second.flush({});
+    await settle(fixture);
+  });
+
+  it('fetches the prices again when the session changes, and does not save into a list fetched for another', async () => {
+    const { fixture, root } = await create([{ key: 'potash', perKg: 2 }]);
+    TestBed.inject(AuthService).sessionVersion.update((v) => v + 1);
+    await settle(fixture);
+    httpMock()
+      .expectOne(API + '/prices')
+      .flush({ prices: [{ key: 'whiting', perKg: 7 }] });
+    await settle(fixture);
+    expect(rows(root)[0]).toEqual(['Potash Feldspar', '', 'No price']);
+    expect(rows(root)[1]![1]).toBe('7');
+    // A save for a list loaded in another session is refused before it is sent.
+    const service = TestBed.inject(PricesService);
+    TestBed.inject(AuthService).sessionVersion.update((v) => v + 1);
+    expect(await service.set('potash', 3)).toBe(false);
+    httpMock().expectNone((req) => req.method !== 'GET');
+    await settle(fixture);
+    httpMock()
+      .expectOne(API + '/prices')
+      .flush({ prices: [] });
+    await settle(fixture);
+  });
+
+  it('says how many of a trial’s prices were not copied for being in another currency', async () => {
+    const { fixture } = await create([]);
+    expect(fixture.nativeElement.querySelector('.recipe-cost-skipped')).toBeNull();
+    TestBed.inject(AuthService).pricesSkipped.set(3);
+    await settle(fixture);
+    expect(text(fixture, '.recipe-cost-skipped')).toBe(
+      "3 prices from your trial were in another currency than this account's, so not copied."
+    );
+  });
+
+  it('tells a screen reader the cost once it settles, not on each keystroke', async () => {
+    const { fixture, root } = await create([
+      { key: 'potash', perKg: 2 },
+      { key: 'whiting', perKg: 0.5 },
+      { key: 'cobalt', perKg: 80 }
+    ]);
+    const live = () => (root.querySelector('[role="status"]') as HTMLElement).textContent?.trim();
+    expect(root.querySelector('.recipe-cost-summary')?.getAttribute('role')).toBeNull();
+    await new Promise((done) => setTimeout(done, 1200));
+    await settle(fixture);
+    expect(live()).toContain('This batch costs $3.00');
+    const batch = root.querySelector('#cost-batch-size') as HTMLInputElement;
+    batch.value = '2000';
+    batch.dispatchEvent(new Event('input'));
+    await settle(fixture);
+    expect(root.querySelector('.recipe-cost-summary')?.textContent).toContain('$6.00');
+    expect(live()).toContain('$3.00');
+    await new Promise((done) => setTimeout(done, 1200));
+    await settle(fixture);
+    expect(live()).toContain('$6.00');
+  });
+
+  it('says so when the shown line costs do not add up to the shown total', async () => {
+    const { fixture, root } = await create([
+      { key: 'potash', perKg: 0.0075 },
+      { key: 'whiting', perKg: 0.0075 },
+      { key: 'cobalt', perKg: 0.0075 }
+    ]);
+    // 600 g, 400 g and 20 g at 0.0075 a kilogram: each line rounds to $0.00, but the total is $0.01.
+    expect(root.querySelector('.recipe-cost-rounding')).not.toBeNull();
+    expect(text(fixture, '.recipe-cost-rounding')).toContain('unrounded');
   });
 
   it('says when the prices cannot be fetched, and asks again', async () => {

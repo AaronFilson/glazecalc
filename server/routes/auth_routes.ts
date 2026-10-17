@@ -125,9 +125,13 @@ authRouter.get('/signin', limits.signInAny, limits.signIn, basicHTTP, async (req
 const signedIn = async (res: Response, user: UserDocument, trialId: Types.ObjectId | undefined, keep: boolean) => {
   // Only while it is still a trial: it may have been claimed or swept since.
   const trial = trialId ? await User.exists({ _id: trialId, guest: true }) : null;
-  const kept = trial ? await mergeTrial(trial._id, user._id) : 0;
+  const { records: kept, pricesSkipped } = trial
+    ? await mergeTrial(trial._id, user._id)
+    : { records: 0, pricesSkipped: 0 };
   session.start(res, user, 7, keep);
-  return res.status(200).json(say('signed-in', undefined, { email: user.email, kept }));
+  return res
+    .status(200)
+    .json(say('signed-in', undefined, { email: user.email, kept, ...(pricesSkipped && { pricesSkipped }) }));
 };
 
 /** The one factor a second step sends, without the pending token. */

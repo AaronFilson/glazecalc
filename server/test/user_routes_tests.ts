@@ -261,6 +261,41 @@ describe('user API', () => {
       expect((await get(token)).body).to.eql({ prices: [] });
     });
 
+    it('changes prices by key, leaving the others, so a stale list never overwrites', async () => {
+      const patch = (body: object) =>
+        api()
+          .patch('/prices')
+          .set('Authorization', 'Bearer ' + token)
+          .send(body);
+      // Another device added Feldspar meanwhile; this one sets Silica and clears Whiting.
+      await put(token, {
+        prices: [
+          { key: 'name:Silica', perKg: 1 },
+          { key: 'name:Whiting', perKg: 2 },
+          { key: 'name:Feldspar', perKg: 3 }
+        ]
+      });
+      const res = await patch({ set: [{ key: 'name:Silica', perKg: 1.5 }], remove: ['name:Whiting'] });
+      expect(res).to.have.status(200);
+      const kept = [
+        { key: 'name:Feldspar', perKg: 3 },
+        { key: 'name:Silica', perKg: 1.5 }
+      ];
+      expect(res.body).to.eql({ prices: kept, currency: '' });
+      expect((await get(token)).body).to.eql({ prices: kept });
+      // The currency shown with the first price becomes the account's, once.
+      expect(res.body.currency).to.equal('');
+      const first = await patch({ set: [{ key: 'name:Silica', perKg: 2 }], currency: 'SEK' });
+      expect(first.body.currency).to.equal('SEK');
+      const later = await patch({ set: [{ key: 'name:Silica', perKg: 3 }], currency: 'EUR' });
+      expect(later.body.currency).to.equal('SEK');
+      expect(await patch({ currency: 'XXX' })).to.have.status(400);
+      expect(await patch({ set: [{ key: 'name:Silica', perKg: -1 }] })).to.have.status(400);
+      expect(await patch({ remove: [3] })).to.have.status(400);
+      expect(await api().patch('/prices').send({ remove: [] })).to.have.status(401);
+      await put(token, { prices: [] });
+    });
+
     it('refuses what is not a list of prices of 0 or more, or too long a one', async () => {
       for (const body of [
         {},

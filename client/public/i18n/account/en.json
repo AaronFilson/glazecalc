@@ -301,7 +301,8 @@
     "currency": {
       "legend": "Currency for prices",
       "help": "The prices you give for materials, and what a batch costs, are in this currency. Changing it does not convert prices you have already given. Until you choose, this follows your region.",
-      "saved": "Saved: prices in {currency}."
+      "saved": "Saved: prices in {currency}.",
+      "notConverted": "Your stored prices were not converted: they are still the numbers you gave."
     },
     "theme": {
       "legend": "Light or dark",

@@ -1,6 +1,7 @@
-import { Component, computed, inject, input, signal } from '@angular/core';
+import { Component, computed, effect, inject, input, signal, untracked } from '@angular/core';
 import { TranslocoDirective, translate } from '@jsverse/transloco';
 import { recipeCost } from '../../../../lib/recipe/cost';
+import { AuthService } from '../../core/auth.service';
 import { Additive, RecipeMaterial } from '../../core/models';
 import { LocaleService } from '../../core/locale.service';
 import { PreferencesService } from '../../core/preferences.service';
@@ -16,6 +17,9 @@ import { libraryKey } from './recipe-library';
 const DEFAULT_BATCH: Record<WeightUnit, string> = { g: '1000', lb: '2' };
 /** A price per unit of weight from one per kilogram, and back. */
 const KG_PER_UNIT: Record<WeightUnit, number> = { g: 1, lb: GRAMS_PER_POUND / 1000 };
+
+/** How long the cost stays unchanged before a screen reader is told it. */
+const ANNOUNCE_AFTER_MS = 1000;
 
 interface CostRow {
   key: string;
@@ -51,6 +55,9 @@ interface CostRow {
     @if (open()) {
       <section class="recipe-cost" aria-labelledby="cost-heading">
         <h3 id="cost-heading">{{ t('recipe.cost.heading') }}</h3>
+        @if (skipped() > 0) {
+          <p class="recipe-cost-skipped" role="status">{{ t('recipe.cost.skipped', { count: skipped() }) }}</p>
+        }
         <p class="small muted">
           <gc-rich
             [text]="t('recipe.cost.intro', { unit: unit(), currency: currency() })"
@@ -118,7 +125,11 @@ interface CostRow {
               </tbody>
             </table>
           </div>
-          <p class="recipe-cost-summary" role="status">{{ summary() }}</p>
+          <p class="recipe-cost-summary">{{ summary() }}</p>
+          @if (rounded()) {
+            <p class="small muted recipe-cost-rounding">{{ t('recipe.cost.rounding') }}</p>
+          }
+          <p class="visually-hidden" role="status">{{ announced() }}</p>
         } @else if (!problem()) {
           <p class="muted">{{ t('recipe.cost.loading') }}</p>
         }
@@ -178,6 +189,7 @@ export class RecipeCost {
   private readonly prices = inject(PricesService);
   private readonly preferences = inject(PreferencesService);
   private readonly locale = inject(LocaleService);
+  private readonly auth = inject(AuthService);
 
   readonly materials = input.required<RecipeMaterial[]>();
   readonly additives = input.required<Additive[]>();
@@ -187,6 +199,8 @@ export class RecipeCost {
   protected readonly currency = this.locale.currency;
   protected readonly loaded = computed(() => this.prices.prices() !== null);
   protected readonly problem = this.prices.problem;
+  /** Prices a trial brought at sign-in that were in another currency than the account's, and so not copied. */
+  protected readonly skipped = this.auth.pricesSkipped;
 
   /** The batch size as typed, and the unit it was typed in. */
   private readonly batchTyped = signal<{ text: string; unit: WeightUnit } | null>(null);
@@ -248,6 +262,50 @@ export class RecipeCost {
 
   /** Whether the costs are shown: the prices are fetched the first time they are. */
   protected readonly open = signal(false);
+
+  /**
+   * The line costs are shown to the currency's smallest unit while the total is
+   * worked from the unrounded costs: whether the shown lines add up to a
+   * different amount than the shown total, which the page then says.
+   */
+  protected readonly rounded = computed(() => {
+    const cost = this.cost();
+    if (!cost) return false;
+    let places = 2;
+    try {
+      places = new Intl.NumberFormat(undefined, { style: 'currency', currency: this.currency() }).resolvedOptions()
+        .maximumFractionDigits as number;
+    } catch {
+      // Two places, as money() writes an unknown currency.
+    }
+    const round = (value: number) => Math.round(value * 10 ** places) / 10 ** places;
+    const lines = cost.lines.reduce((sum, line) => sum + (line.cost === null ? 0 : round(line.cost)), 0);
+    return Math.abs(round(lines) - round(cost.cost)) > 0.5 / 10 ** places;
+  });
+
+  /**
+   * What a screen reader is told of the cost: the summary once it has stopped
+   * changing, not on each keystroke.
+   */
+  protected readonly announced = signal('');
+
+  constructor() {
+    effect((onCleanup) => {
+      const text = this.summary();
+      const timer = setTimeout(() => this.announced.set(text), ANNOUNCE_AFTER_MS);
+      onCleanup(() => clearTimeout(timer));
+    });
+    // Another sign-in (an account after a trial, or a different one) is another list: fetched again, and what was typed is dropped.
+    effect(() => {
+      this.auth.sessionVersion();
+      if (!this.open()) return;
+      untracked(() => {
+        this.typed.set({});
+        this.problems.set({});
+        void this.prices.load();
+      });
+    });
+  }
 
   protected toggle(): void {
     this.open.update((open) => !open);

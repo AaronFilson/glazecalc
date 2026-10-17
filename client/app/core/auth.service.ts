@@ -121,6 +121,8 @@ export class AuthService {
   readonly welcome = signal(false);
   /** Set when a trial runs out, so the start page can say so. */
   readonly trialEnded = signal(false);
+  /** How many of a trial's prices the last sign-in left out for being in another currency than the account's. */
+  readonly pricesSkipped = signal(0);
   /** The title of a recipe whose changes were not saved when the session ended, so the next page can say so. */
   readonly lostRecipe = signal<string | null>(null);
   /** What to call the user: their email, or their trial's name. */
@@ -443,7 +445,8 @@ export class AuthService {
   }
 
   /** A finished sign-in: notes the session, and says how many records a trial brought. */
-  private finished(res: { email: string; kept?: number }): number {
+  private finished(res: { email: string; kept?: number; pricesSkipped?: number }): number {
+    this.pricesSkipped.set(res.pricesSkipped ?? 0);
     this.signedInAs(res.email);
     return res.kept ?? 0;
   }

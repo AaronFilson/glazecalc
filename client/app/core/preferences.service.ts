@@ -263,6 +263,16 @@ export class PreferencesService {
     }
   }
 
+  /**
+   * Takes a choice the server already holds (it was saved along with something
+   * else, such as the currency with a first price) into this browser.
+   */
+  noteSaved<K extends keyof Preferences>(name: K, value: Preferences[K]): void {
+    this.saves[name]++;
+    this.apply(name, value);
+    writeRaw(copyKey(name), value);
+  }
+
   /** Keeps a choice on this browser only, for a visitor with no account to save it to. */
   remember<K extends keyof Preferences>(name: K, value: Preferences[K]): void {
     this.apply(name, value);

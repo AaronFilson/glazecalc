@@ -6,6 +6,8 @@ import type { Price } from '../../../lib/recipe/cost';
 import { API_BASE } from './api-base';
 import { AuthService } from './auth.service';
 import { errorMessage } from './error-message';
+import { LocaleService } from './locale.service';
+import { PreferencesService } from './preferences.service';
 
 /**
  * What the potter pays for materials, for cost per batch: a price per
@@ -18,6 +20,8 @@ export class PricesService {
   private readonly http = inject(HttpClient);
   private readonly apiBase = inject(API_BASE);
   private readonly auth = inject(AuthService);
+  private readonly preferences = inject(PreferencesService);
+  private readonly locale = inject(LocaleService);
   /** The prices, once fetched for this sign-in; null before, and after a fetch that failed. */
   readonly prices = signal<Price[] | null>(null);
   /** Why the last fetch or save did not work, or ''. */
@@ -46,20 +50,31 @@ export class PricesService {
     return request;
   }
 
-  /** Sets one material's price per kilogram, or takes it away (null); true once the server has the list. */
+  /**
+   * Sets one material's price per kilogram, or takes it away (null); true once
+   * the server has it. Only that change is sent, to be merged by key into the
+   * account's list, so a list loaded for another session never overwrites it.
+   * With the first price the currency shown goes too, to become the account's.
+   */
   async set(key: string, perKg: number | null): Promise<boolean> {
     const before = this.prices();
-    if (before === null) return false;
-    const others = before.filter((price) => price.key !== key);
-    return this.save(perKg === null ? others : [...others, { key, perKg }]);
-  }
-
-  /** Saves the list in place of the old one; true once the server has it. */
-  private async save(prices: Price[]): Promise<boolean> {
+    const session = this.auth.sessionVersion();
+    if (before === null || this.fetched?.session !== session) return false;
     const save = ++this.saves;
-    this.prices.set(prices);
+    const others = before.filter((price) => price.key !== key);
+    this.prices.set(perKg === null ? others : [...others, { key, perKg }]);
+    const currency = this.preferences.currency() === '' ? this.locale.currency() : undefined;
     try {
-      await firstValueFrom(this.http.put(this.apiBase + '/prices', { prices }));
+      const res = await firstValueFrom(
+        this.http.patch<{ prices: Price[]; currency?: string }>(this.apiBase + '/prices', {
+          ...(perKg === null ? { remove: [key] } : { set: [{ key, perKg }] }),
+          ...(currency && { currency })
+        })
+      );
+      if (this.auth.sessionVersion() !== session) return true;
+      if (res.currency) this.preferences.noteSaved('currency', res.currency);
+      // The account's list as the server now holds it, unless a later change is on its way.
+      if (save === this.saves && Array.isArray(res.prices)) this.prices.set(res.prices);
       if (save === this.saves) this.problem.set('');
       return true;
     } catch (err) {

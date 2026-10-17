@@ -6,6 +6,7 @@ import { baseLanguage, languageFor, textLanguage } from '../../../../lib/regions
 import { errorMessage } from '../../core/error-message';
 import { LocaleService } from '../../core/locale.service';
 import { Preferences, PreferencesService } from '../../core/preferences.service';
+import { PricesService } from '../../core/prices.service';
 import { PALETTES } from '../../core/theme';
 import { OFFERED_LANGUAGES, OPEN_PAGE, PAGE_LANGUAGE, languageName, pathIn } from '../../i18n/language';
 
@@ -442,6 +443,7 @@ function settingsIn(pageLanguage: string, offered: readonly string[]): Setting[]
 export class SettingsSection implements OnInit {
   protected readonly preferences = inject(PreferencesService);
   private readonly locale = inject(LocaleService);
+  private readonly prices = inject(PricesService);
   private readonly injector = inject(Injector);
   private readonly pageLanguage = inject(PAGE_LANGUAGE);
   private readonly openPage = inject(OPEN_PAGE);
@@ -530,6 +532,13 @@ export class SettingsSection implements OnInit {
       }
       if (this.current(setting) !== choice.value) return;
       this.message.set(choice.saved);
+      // Prices already given stay as they are: the numbers are not converted to the new currency.
+      if (setting.name === 'currency') {
+        await this.prices.load();
+        if (this.prices.prices()?.length && this.message() === choice.saved) {
+          this.message.set(choice.saved + ' ' + translate('account.settings.currency.notConverted'));
+        }
+      }
     } catch (err) {
       this.problem.set(true);
       this.message.set(errorMessage(err, translate('account.settings.saveFailed')));
