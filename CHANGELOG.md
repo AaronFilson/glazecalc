@@ -17,6 +17,11 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   found; any line can take another material or amount, or be left out. Nothing is saved until
   Save, and a trial's or an account's limit stops the saving where the server says so. The reading
   and matching are pure functions in `lib/recipe/paste.js`.
+  A generic word ("Kaolin", "Ball clay", "Feldspar", "Frit", "Zircopax" and other makers' names for
+  zircon) is never matched to one product: the library's products of that kind are offered as a
+  choice, most common first, from the table in `lib/recipe/generic-names.js`. A name or alias the
+  library has exactly (such as "Silica" or "Whiting") still wins.
+- **Home cards for Paste in recipes and Blends for test tiles**, beside the other sections.
 - **Blends for test tiles** (`/blends`, from the recipe page and each saved recipe's More). A line
   blend between two saved recipes, a biaxial blend between four or a triaxial blend between three,
   up to 21 tiles in a line, 8 by 8 or 11 rows: the tiles drawn as they are laid out and numbered,

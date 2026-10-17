@@ -161,6 +161,7 @@ describe('ImportPage', () => {
     const closest = [...selects()[0].querySelectorAll('optgroup')][0];
     expect(closest.label).toBe('Closest');
     expect([...closest.querySelectorAll('option')].map((o) => o.textContent?.trim()).sort()).toEqual([
+      'Custer Spar',
       'Potash Feldspar',
       'Soda Feldspar'
     ]);

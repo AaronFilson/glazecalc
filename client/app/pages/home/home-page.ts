@@ -16,6 +16,16 @@ const SECTIONS: { path: string; fragment?: string; title: string; text: string }
     text: marker('notebook.home.sections.recipe.text')
   },
   {
+    path: '/import',
+    title: marker('notebook.home.sections.import.title'),
+    text: marker('notebook.home.sections.import.text')
+  },
+  {
+    path: '/blends',
+    title: marker('notebook.home.sections.blends.title'),
+    text: marker('notebook.home.sections.blends.text')
+  },
+  {
     path: '/material',
     title: marker('notebook.home.sections.material.title'),
     text: marker('notebook.home.sections.material.text')

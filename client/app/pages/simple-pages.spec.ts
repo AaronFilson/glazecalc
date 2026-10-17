@@ -48,6 +48,8 @@ describe('static pages', () => {
     );
     expect(links).toEqual([
       '/recipe#saved-recipes',
+      '/import',
+      '/blends',
       '/material',
       '/additive',
       '/firing',

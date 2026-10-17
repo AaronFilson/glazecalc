@@ -17,6 +17,14 @@
         "title": "Recipes",
         "text": "Build a glaze from materials and amounts, see its unity formula, and save it."
       },
+      "import": {
+        "title": "Paste in recipes",
+        "text": "Paste recipes from a website, spreadsheet or notes, check what was read, and save them."
+      },
+      "blends": {
+        "title": "Blends for test tiles",
+        "text": "Blend two, three or four of your recipes into numbered test tiles, with what to weigh for each."
+      },
       "material": {
         "title": "Materials",
         "text": "Add raw materials of your own, from a chemical formula or a supplier’s analysis."

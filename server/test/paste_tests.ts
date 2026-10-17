@@ -1,6 +1,7 @@
 import { expect } from 'chai';
 import recipe from '../../lib/recipe/index.js';
 import type { PastedRecipe } from '../../lib/recipe/index.js';
+import { GENERIC_NAMES } from '../../lib/recipe/generic-names.js';
 import standardData from '../../data/index.js';
 
 // Paste-in import (lib/recipe/paste.js): recipes pasted as text or CSV, read
@@ -409,8 +410,59 @@ describe('Paste-in import: finding the material', () => {
   });
 
   it('finds nothing for a name the library does not have', () => {
-    expect(recipe.matchName('Zircopax', LIBRARY)).to.eql({ how: 'none', record: null, candidates: [] });
+    expect(recipe.matchName('Plutonium', LIBRARY)).to.eql({ how: 'none', record: null, candidates: [] });
     expect(recipe.matchName('  ', LIBRARY).how).to.equal('none');
+  });
+
+  it('offers the products of a generic word as a choice, most common first, never picking one', () => {
+    const names = (word: string) => recipe.matchName(word, LIBRARY).candidates.map((r) => r.name);
+    for (const word of ['Kaolin', 'ball clay', 'Feldspar', 'Frit', 'Zircopax', 'Superpax', 'Soda spar', 'Titanium']) {
+      const match = recipe.matchName(word, LIBRARY);
+      expect(match.how, word).to.equal('choose');
+      expect(match.record, word).to.equal(null);
+    }
+    expect(names('Kaolin').slice(0, 3)).to.eql(['EPK Kaolin', 'Grolleg China Clay', 'Tile #6 Kaolin']);
+    expect(names('Ball Clay')[0]).to.equal('OM-4 Ball Clay');
+    expect(names('Zircopax')).to.eql(['Zircon', 'Zirconium oxide']);
+    expect(names('Zirconium silicate')[0]).to.equal('Zircon');
+    expect(names('FELDSPAR')[0]).to.equal('Custer Spar');
+    expect(names('Frit')[0]).to.equal('Ferro Frit 3134');
+    expect(names('Kaolin').length).to.be.at.most(5);
+    expect(recipe.matchName('Kaolin', LIBRARY, 2).candidates).to.have.length(2);
+  });
+
+  it('still takes a library name or alias exactly, even when it is a generic word', () => {
+    expect(matched('Silica')).to.eql(['name', 'Silica']);
+    expect(matched('Flint')).to.eql(['name', 'Flint']);
+    expect(matched('Whiting')).to.eql(['name', 'Whiting']);
+    expect(matched('Talc')).to.eql(['name', 'Talc']);
+    expect(matched('Quartz')).to.eql(['alias', 'Silica']);
+    expect(matched('Zircon')).to.eql(['name', 'Zircon']);
+    expect(matched('Nepheline Syenite')).to.eql(['name', 'Nepheline Syenite']);
+  });
+
+  it('takes a potter’s own record named like a generic word before the table', () => {
+    const own = { name: 'Kaolin', aliases: [], ownedBy: 'me' };
+    expect(recipe.matchName('kaolin', [own, ...LIBRARY]).record).to.equal(own);
+  });
+
+  it('keeps the table to words, in the library, once each', () => {
+    const seen = new Set<string>();
+    for (const entry of GENERIC_NAMES) {
+      expect(entry.offer.length, entry.words[0]).to.be.greaterThan(0);
+      for (const name of entry.offer) {
+        expect(
+          LIBRARY.some((r) => r.name === name),
+          `${name} is not a library material`
+        ).to.equal(true);
+      }
+      expect(new Set(entry.offer).size).to.equal(entry.offer.length);
+      for (const word of entry.words) {
+        const key = recipe.compactName(word);
+        expect(seen.has(key), `${word} is in the table twice`).to.equal(false);
+        seen.add(key);
+      }
+    }
   });
 
   it('finds a potter’s own record first, when listed first', () => {
