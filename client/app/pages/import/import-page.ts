@@ -701,7 +701,7 @@ export class ImportPage implements OnInit {
     return {
       title: draft.title.trim(),
       date: localDate(),
-      notes: draft.notes.join('\n') || 'None.',
+      notes: draft.notes.join('\n'),
       materials: base.map((line) => ({ ...(record(line) as Material), amount: line.amount })),
       additives: lines
         .filter((l) => this.goesInAdditions(l))

@@ -141,6 +141,7 @@ describe('ImportPage', () => {
     expect(sent.additives?.map((a) => [a.name, a.amount, a.unit])).toEqual([['Red iron oxide', '2', 'percent']]);
     expect((sent.computed as { uList: Record<string, number> }).uList['K2O']).toBeGreaterThan(0);
     expect(sent.includeAdditives).toBe(false);
+    expect(sent.notes).toBe('');
     req.flush({ ...sent, _id: 'new' });
     await settle(fixture);
     expect(text(fixture, '.server-msg')).toContain('Saved 1 recipe.');

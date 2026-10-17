@@ -1589,7 +1589,7 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
   /** A saved recipe's notes; "None." is saved for a recipe with none. */
   protected savedNotes(recipe: Recipe): string {
     const notes = firstOf(recipe.notes);
-    return notes === 'None.' ? translate('recipe.page.noNotes') : notes;
+    return !notes || notes === 'None.' ? translate('recipe.page.noNotes') : notes;
   }
 
   protected toggleExpanded(recipe: Recipe): void {
