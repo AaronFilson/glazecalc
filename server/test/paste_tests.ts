@@ -272,6 +272,22 @@ describe('Paste-in import: titles, notes, totals and additions', () => {
     }
   });
 
+  it('a blank line ends a section of additions, so the next lines are base, or a new recipe', () => {
+    const read = recipe.parsePaste('Custer 50\nSilica 50\nColorants\nRutile 4\n\nCuster 40\nSilica 60');
+    expect(read.map((r) => r.lines.map((l) => l.addition))).to.eql([
+      [false, false, true],
+      [false, false]
+    ]);
+    expect(one('Custer 50\nSilica 50\nColorants\nRutile 4\n\nWhiting 5').lines.map((l) => l.addition)).to.eql([
+      false,
+      false,
+      true,
+      false
+    ]);
+    // A blank line between the heading and its first line is only a gap.
+    expect(one('Custer 100\nColorants\n\nRutile 4').lines.map((l) => l.addition)).to.eql([false, true]);
+  });
+
   it('a base heading after additions starts the base again', () => {
     expect(one('Additions\nRutile 4\nBase\nCuster 100').lines.map((l) => l.addition)).to.eql([true, false]);
   });
