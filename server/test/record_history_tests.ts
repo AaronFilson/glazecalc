@@ -122,7 +122,9 @@ describe('Trash', () => {
     expect(await trash()).to.eql([]);
   });
 
-  it('lets a trial put back only as many as it may keep, and keeps its Trash small', async () => {
+  it('lets a trial put back only as many as it may keep, and keeps its Trash small', async function () {
+    // Many records moved and put back: the files run in parallel, so allow more than 5 seconds.
+    this.timeout(15000);
     const started = await api().post('/guest');
     const trial = sessionToken(started)!;
     process.env.GUEST_MAX_RECORDS = '1';
@@ -315,7 +317,9 @@ describe('record versions and Undo', () => {
     expect(none.body.code).to.equal('nothing-to-undo');
   });
 
-  it('always keeps the version from before a token’s changes, however many it makes', async () => {
+  it('always keeps the version from before a token’s changes, however many it makes', async function () {
+    // Many changes, each kept as a version: the files run in parallel, so allow more than 5 seconds.
+    this.timeout(15000);
     const { user, token: session } = await makeUser();
     token = session;
     const saved = await create();

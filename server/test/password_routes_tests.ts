@@ -384,7 +384,9 @@ describe('password reset and change', () => {
       expect(res.headers).to.have.property('ratelimit-policy');
     });
 
-    it('slows down repeated sign-in attempts', async () => {
+    it('slows down repeated sign-in attempts', async function () {
+      // Many sign-ins, each checking a password: the files run in parallel, so allow more than 5 seconds.
+      this.timeout(15000);
       let last: ChaiHttp.Response | undefined;
       for (let i = 0; i < 21; i++) last = await signIn('nobody@tester.com', 'wrong-password');
       expect(last).to.have.status(429);
