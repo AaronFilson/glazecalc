@@ -6,7 +6,7 @@ import { Router, RouterLink } from '@angular/router';
 import { TranslocoDirective, translate } from '@jsverse/transloco';
 import { marker } from '@jsverse/transloco-keys-manager/marker';
 import type { FactorProof, IdentityProof, MfaSummary } from '../../../../lib/mfa';
-import { AuthService } from '../../core/auth.service';
+import { AuthService, SIGN_IN_PROVIDERS } from '../../core/auth.service';
 import { errorMessage } from '../../core/error-message';
 import { IdentityConfirm } from '../auth/identity-confirm';
 import { SectionLinks } from '../guides/guide-contents';
@@ -16,6 +16,7 @@ import { Notices, NoticesList } from '../../shared/notices';
 import { PageHeader } from '../../shared/page-header';
 import { SettingsSection } from './settings-section';
 import { SharedRecipes } from './shared-section';
+import { ProvidersSection } from './providers-section';
 import { SignInSection } from './sign-in-section';
 
 /** A change on this page that, with two-step sign-in on, asks for a second step too (decision 6). */
@@ -27,7 +28,9 @@ type Confirming = 'password' | 'email' | 'delete';
  * account instead. While two-step sign-in is on (the two-step section says so
  * when it loads), changing the password or the email and deleting the account
  * ask for the password and a second step in IdentityConfirm, in place of the
- * password field, once the rest of the form is filled in.
+ * password field, once the rest of the form is filled in. An account with no
+ * password of its own (made with a provider) changes its email and deletes
+ * itself through IdentityConfirm too, which asks for a fresh provider sign-in.
  */
 @Component({
   selector: 'gc-account-page',
@@ -40,6 +43,7 @@ type Confirming = 'password' | 'email' | 'delete';
     NgTemplateOutlet,
     NoticesList,
     PageHeader,
+    ProvidersSection,
     RouterLink,
     SettingsSection,
     SharedRecipes,
@@ -69,7 +73,7 @@ type Confirming = 'password' | 'email' | 'delete';
       <!-- The page is long: what is on it, so the security sections are a tap away. -->
       <nav class="account-contents" [attr.aria-label]="t('account.account.contents')">
         <ul>
-          @for (part of contents; track part.id) {
+          @for (part of contents(); track part.id) {
             <li>
               <a [href]="links.href(part.id)" (click)="links.go($event, part.id)">{{ t(part.label) }}</a>
             </li>
@@ -157,6 +161,8 @@ type Confirming = 'password' | 'email' | 'delete';
 
       <gc-sign-in-section (loaded)="mfaLoaded($event)" />
 
+      <gc-providers-section [mfa]="mfa()" />
+
       <section class="auth-text">
         <h2 id="email-heading" tabindex="-1">{{ t('account.account.emailHeading') }}</h2>
         <p>{{ t('account.account.emailText') }}</p>
@@ -175,7 +181,7 @@ type Confirming = 'password' | 'email' | 'delete';
               gcFieldName="newEmail"
             />
           </div>
-          @if (!twoStep()) {
+          @if (!confirmFirst()) {
             <div class="mb-3">
               <label for="email-password" class="form-label">{{ t('account.account.emailPassword') }}</label>
               <input
@@ -193,7 +199,7 @@ type Confirming = 'password' | 'email' | 'delete';
           }
           @if (confirming() !== 'email') {
             <button id="email-submit" type="submit" class="btn btn-light border" [attr.aria-disabled]="busy() || null">
-              {{ twoStep() ? t('account.mfa.continue') : t('account.account.emailSend') }}
+              {{ confirmFirst() ? t('account.mfa.continue') : t('account.account.emailSend') }}
             </button>
           }
         </form>
@@ -219,7 +225,7 @@ type Confirming = 'password' | 'email' | 'delete';
         <h2 id="delete-heading" tabindex="-1">{{ t('account.account.deleteHeading') }}</h2>
         <p>{{ t('account.account.deleteText') }}</p>
         <form (ngSubmit)="deleteAccount()" class="account-form">
-          @if (!twoStep()) {
+          @if (!confirmFirst()) {
             <div class="mb-3">
               <label for="delete-password" class="form-label">{{ t('account.account.deletePassword') }}</label>
               <input
@@ -258,7 +264,7 @@ type Confirming = 'password' | 'email' | 'delete';
           <p>{{ t('account.account.confirmStep') }}</p>
           <gc-identity-confirm
             [idPrefix]="which + '-confirm'"
-            [mfaOn]="true"
+            [mfaOn]="twoStep()"
             [hasTotp]="!!mfa()?.totp"
             [hasPasskeys]="!!mfa()?.passkeys?.length"
             [action]="confirmAction()"
@@ -295,17 +301,30 @@ type Confirming = 'password' | 'email' | 'delete';
 })
 export class AccountPage {
   protected readonly auth = inject(AuthService);
+  /** Whether Google or GitHub sign-in is on here, so the page has a section for it. */
+  private readonly providersOn = signal(false);
+  private readonly signInProviders = inject(SIGN_IN_PROVIDERS);
   /** The sections, for the contents at the top: each heading's id and its message. */
-  protected readonly contents = [
+  protected readonly contents = computed(() => [
     { id: 'settings-heading', label: marker('account.settings.heading') },
     { id: 'export-heading', label: marker('account.export.heading') },
     { id: 'shared-heading', label: marker('account.shared.heading') },
     { id: 'password-heading', label: marker('account.account.changeHeading') },
     { id: 'mfa-heading', label: marker('account.mfa.heading') },
+    ...(this.providersOn() ? [{ id: 'providers-heading', label: marker('account.providers.heading') }] : []),
     { id: 'email-heading', label: marker('account.account.emailHeading') },
     { id: 'sign-out-heading', label: marker('account.account.signOutHeading') },
     { id: 'delete-heading', label: marker('account.account.deleteHeading') }
-  ];
+  ]);
+
+  constructor() {
+    afterNextRender(() => {
+      this.signInProviders().then(
+        (providers) => this.providersOn.set(providers.length > 0),
+        () => this.providersOn.set(false)
+      );
+    });
+  }
   /** Each goes to its section's heading, as a guide's contents do. */
   protected readonly links = new SectionLinks();
   private readonly router = inject(Router);
@@ -314,6 +333,10 @@ export class AccountPage {
   /** The two-step sign-in section's summary, once it has loaded. */
   protected readonly mfa = signal<MfaSummary | null>(null);
   protected readonly twoStep = computed(() => this.mfa()?.on ?? false);
+  /** No password of its own (made with a provider): a fresh provider sign-in confirms instead (ADR 15). */
+  private readonly passwordless = computed(() => this.auth.methods()?.passwordless === true);
+  /** Changing the email and deleting confirm in IdentityConfirm: with two-step sign-in on, or without a password. */
+  protected readonly confirmFirst = computed(() => this.twoStep() || this.passwordless());
   /** The change waiting for its second step, if any. */
   protected readonly confirming = signal<Confirming | null>(null);
   protected readonly confirmAction = computed(() => {
@@ -329,7 +352,7 @@ export class AccountPage {
 
   protected mfaLoaded(summary: MfaSummary): void {
     this.mfa.set(summary);
-    if (!summary.on) this.confirming.set(null);
+    if (!summary.on && !this.passwordless()) this.confirming.set(null);
   }
 
   /** Closes the second step; a cancelled one gives the focus back to the button that opened it. */
@@ -351,7 +374,7 @@ export class AccountPage {
     const { password, ...factor } = proof;
     switch (this.confirming()) {
       case 'password':
-        return this.changePassword(password, factor as FactorProof);
+        return this.changePassword(password ?? '', factor as FactorProof);
       case 'email':
         return this.sendEmailLink(password, factor as FactorProof);
       case 'delete':
@@ -373,7 +396,7 @@ export class AccountPage {
     confirmation: samePassword(this.confirmation, this.password)
   }));
   protected readonly deleteChecks = new FieldChecks(() => ({
-    ...(!this.twoStep() && {
+    ...(!this.confirmFirst() && {
       deletePassword: filled(this.deletePassword, translate('account.account.deletePasswordMissing'))
     })
   }));
@@ -414,7 +437,7 @@ export class AccountPage {
 
   protected async deleteAccount(): Promise<void> {
     if (this.busy() || !this.deleteChecks.validate()) return;
-    if (this.twoStep()) return this.confirming.set('delete');
+    if (this.confirmFirst()) return this.confirming.set('delete');
     this.busy.set(true);
     try {
       await this.auth.deleteAccount(this.deletePassword());
@@ -434,12 +457,14 @@ export class AccountPage {
   protected readonly emailPassword = signal('');
   protected readonly emailChecks = new FieldChecks(() => ({
     newEmail: emailAddress(this.newEmail),
-    ...(!this.twoStep() && { emailPassword: filled(this.emailPassword, translate('account.account.currentMissing')) })
+    ...(!this.confirmFirst() && {
+      emailPassword: filled(this.emailPassword, translate('account.account.currentMissing'))
+    })
   }));
 
   protected async changeEmail(): Promise<void> {
     if (this.busy() || !this.emailChecks.validate()) return;
-    if (this.twoStep()) return this.confirming.set('email');
+    if (this.confirmFirst()) return this.confirming.set('email');
     this.busy.set(true);
     try {
       this.notices.success(await this.auth.changeEmail(this.newEmail(), this.emailPassword()));
@@ -456,7 +481,7 @@ export class AccountPage {
   }
 
   /** The email change with a second step, from runConfirmed. */
-  private async sendEmailLink(password: string, factor: FactorProof): Promise<void> {
+  private async sendEmailLink(password: string | undefined, factor: FactorProof): Promise<void> {
     if (!this.emailChecks.validate()) return this.closeConfirm();
     try {
       const message = await this.auth.changeEmail(this.newEmail(), password, factor);

@@ -63,6 +63,13 @@ export const passkeySignIn = limiter(15, 20, 'too-many-sign-ins', { skipSuccessf
  */
 export const passkeyOptions = limiter(15, 100, 'too-many-sign-ins');
 export const signUp = limiter(60, 10, 'too-many-sign-ups');
+/**
+ * Provider sign-in (server/routes/oauth_routes.ts): starting one, the
+ * provider's callback, and the page finishing it. Each start writes a short
+ * record and each callback calls the provider, so they are bounded; loose,
+ * for the many people behind one address.
+ */
+export const oauth = limiter(15, 100, 'too-many-sign-ins');
 export const guest = limiter(60, 10, 'too-many-trials');
 export const forgotPassword = limiter(15, 5, 'too-many-resets');
 export const resetPassword = limiter(15, 10, 'too-many-attempts');

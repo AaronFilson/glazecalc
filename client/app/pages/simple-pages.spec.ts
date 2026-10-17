@@ -129,7 +129,8 @@ describe('static pages', () => {
       expect.arrayContaining(['__Host-glazecalc_session', 'glazecalc_session', 'session', 'trial', 'preferredRegion'])
     );
     expect(names).toEqual(expect.arrayContaining(['visitor.language', 'region', 'printBatch', 'reloadedFor']));
-    expect(names.length).toBe(29);
+    expect(names).toEqual(expect.arrayContaining(['__Host-glazecalc_oauth', 'glazecalc_oauth']));
+    expect(names.length).toBe(31);
     for (const row of rows) {
       const cells = [...row.querySelectorAll('td')].map((td) => td.textContent?.trim() ?? '');
       expect(cells.length).toBe(2);

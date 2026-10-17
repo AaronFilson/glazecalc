@@ -3,6 +3,7 @@
 // an OAuth client's, server/lib/token_auth.ts) is never a sign-in: routes
 // behind jwtAuth refuse it, and only requireScope (server/lib/require_scope.ts)
 // lets one in.
+import crypto from 'node:crypto';
 import type { NextFunction, Request, Response } from 'express';
 import jwt from 'jsonwebtoken';
 import User, { type UserDocument } from '../models/user.ts';
@@ -20,6 +21,17 @@ export const tokenOf = (req: Request): string | null => {
   const auth = req.headers.authorization;
   const token = auth && /^Bearer /i.test(auth) ? auth.slice(7).trim() : session.tokenIn(req);
   return token && token !== 'null' ? token : null;
+};
+
+/**
+ * Names the sign-in session the request comes from, without being it: the
+ * SHA-256 (hex) of its sign-in token, or null without one. Something tied to
+ * one session (a provider reauth and its grant, ADR 15) stores this and asks
+ * for it again; a renewed session (a new token) is another session.
+ */
+export const sessionKeyOf = (req: Request): string | null => {
+  const token = tokenOf(req);
+  return token ? crypto.createHash('sha256').update(token).digest('hex') : null;
 };
 
 /** The user whose valid, current token the request carries, or null. */

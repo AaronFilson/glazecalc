@@ -89,6 +89,28 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   each material's oxides and their moles, the totals, the fluxes added up, each oxide divided by
   them), with the recipe's own numbers and the same answer as the recipe page. From the unity
   formula's panel, as a third kind of print (a worksheet), and on a shared recipe.
+- **Sign in with Google or GitHub** ([ADR 0015](docs/adr/0015-provider-sign-in.md), integrations
+  plan Phase 1), on the sign-in and sign-up pages, wherever the owner has set a provider up (off
+  until then). An account is found by the provider's own id for the person, never by email. A new
+  account is made only from an email the provider has verified, with no password until one is set
+  through "Forgot password". When an account already has that email, nothing is joined until the
+  person signs in to it once, the usual way, and then only if its own email is confirmed, so an
+  account made in someone else's name can never take over their Google or GitHub. Two-step
+  sign-in still asks for its second step after the provider. The account page lists Google and
+  GitHub, and links or unlinks each after the password (and a second step when it is on), with a
+  notice email; the last way into an account is never removed. Linking or unlinking signs the account
+  out on its other devices, and keeps this one signed in. A password reset by email unlinks every
+  provider (someone who got in may have linked their own), and its notice says they can be linked
+  again from the account page; changing the password while signed in keeps them. An account made with a provider, which has no password,
+  confirms changing its email, deleting itself, two-step sign-in and linking or unlinking by
+  signing in again with one of its providers (Google is asked to sign the person in again, and
+  its answer must say it did; GitHub offers no way to ask): that sign-in counts only for the same account, in the
+  same sign-in session on the same browser, for one change within 5 minutes, and a second step still follows when
+  two-step sign-in is on. Nothing but the provider's id is
+  kept: no name, picture or provider token. A trial on the browser comes along into the account.
+  The export lists the linked providers, and the privacy notice and the record of processing say
+  what is kept. The provider's one-time code and state stay out of nginx's access log and the
+  app's error log (`enable-https.sh` is run again for the nginx part, deploy/README.md). New English text only, for the next translation wave.
 - **The Trash and Undo.** Removing a recipe, material, note or other record moves it to the Trash,
   where it waits 30 days; the removal notice has Undo, and the Trash page puts records back, deletes
   them for good or empties the Trash. Each saved change keeps the version before it (the last 20,

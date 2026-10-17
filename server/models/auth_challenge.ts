@@ -11,7 +11,12 @@ import mongoose from 'mongoose';
 //   change-grant     a change confirmed with the password and a factor, whose
 //                    second request is still to come (server/lib/change_grant.ts):
 //                    for `purpose`, found by `grantHash`, good while the
-//                    account's tokenVersion is still `tokenVersion` (5 minutes)
+//                    account's tokenVersion is still `tokenVersion` (5 minutes);
+//                    purpose 'provider-reauth' is a fresh sign-in with a linked
+//                    provider, in place of the password of an account that has
+//                    none (server/routes/oauth_routes.ts, docs/adr/0015), and
+//                    good only for the sign-in session that started it
+//                    (`sessionHash`, jwt_auth.ts sessionKeyOf)
 //   passkey-add      the WebAuthn challenge for a passkey being registered,
 //                    under the change-grant `grantId`
 //   passkey-confirm  the challenge for a passkey that confirms a change to how
@@ -32,7 +37,7 @@ export const CHALLENGE_KINDS = [
 ] as const;
 export type ChallengeKind = (typeof CHALLENGE_KINDS)[number];
 /** What a change-grant is for. */
-export const GRANT_PURPOSES = ['passkey-add'] as const;
+export const GRANT_PURPOSES = ['passkey-add', 'provider-reauth'] as const;
 export type GrantPurpose = (typeof GRANT_PURPOSES)[number];
 
 export interface AuthChallengeFields {
@@ -50,6 +55,8 @@ export interface AuthChallengeFields {
   /** change-grant: what it is for, and the SHA-256 (hex) of the grant the page holds. */
   purpose?: GrantPurpose;
   grantHash?: string;
+  /** change-grant 'provider-reauth': the session it is good for (jwt_auth.ts sessionKeyOf). */
+  sessionHash?: string;
   /** passkey-add: the change-grant it was made under. */
   grantId?: mongoose.Types.ObjectId;
   expiresAt: Date;
@@ -66,6 +73,7 @@ const authChallengeSchema = new mongoose.Schema<AuthChallengeFields>(
     tokenVersion: Number,
     purpose: { type: String, enum: GRANT_PURPOSES },
     grantHash: String,
+    sessionHash: String,
     grantId: mongoose.Schema.Types.ObjectId,
     expiresAt: { type: Date, required: true },
     usedAt: Date

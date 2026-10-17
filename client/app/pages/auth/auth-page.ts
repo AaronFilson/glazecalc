@@ -16,13 +16,14 @@ import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { TranslocoDirective, translate } from '@jsverse/transloco';
 import { map } from 'rxjs';
 import type { AuthenticationResponseJSON, SecondStepResponse } from '../../../../lib/mfa';
-import { AuthService } from '../../core/auth.service';
+import { AuthService, SIGN_IN_PROVIDERS, type ProviderId } from '../../core/auth.service';
 import { errorMessage } from '../../core/error-message';
 import { LocaleService } from '../../core/locale.service';
 import { RichText } from '../../i18n/rich-text';
 import { FieldCheck, FieldChecks, emailAddress, filled, newPassword, samePassword } from '../../shared/field-checks';
 import { Notices, NoticesList } from '../../shared/notices';
 import { PASSKEYS, passkeyMessage } from './passkeys';
+import { ProviderButtons } from './provider-buttons';
 import { SecondStep } from './second-step';
 
 /**
@@ -34,10 +35,25 @@ import { SecondStep } from './second-step';
  * offers "Sign in with a passkey", and the email field's suggestions offer the
  * passkeys saved for this site (conditional mediation), either of which signs
  * in without the password (docs/mfa-plan.md, items 12 and 17).
+ *
+ * Where Google or GitHub sign-in is on, both forms offer it too
+ * (docs/adr/0015-provider-sign-in.md). The provider sends the browser back
+ * here with ?provider=<id>, and the page finishes the sign-in: signed in, a
+ * second step, or an account that has the provider's email, to sign in to
+ * first; once it is, the provider is linked to it.
  */
 @Component({
   selector: 'gc-auth-page',
-  imports: [FieldCheck, FormsModule, NoticesList, RichText, RouterLink, SecondStep, TranslocoDirective],
+  imports: [
+    FieldCheck,
+    FormsModule,
+    NoticesList,
+    ProviderButtons,
+    RichText,
+    RouterLink,
+    SecondStep,
+    TranslocoDirective
+  ],
   template: `<ng-container *transloco="let t">
     <div class="auth-card">
       <gc-notices [notices]="notices" />
@@ -120,6 +136,15 @@ import { SecondStep } from './second-step';
               {{ signup() ? t('account.auth.createAccount') : t('account.auth.signIn') }}
             </button>
           </form>
+
+          @if (providers().length) {
+            <div class="provider-first">
+              <p class="or" aria-hidden="true">
+                <span>{{ t('account.auth.or') }}</span>
+              </p>
+              <gc-provider-buttons [providers]="providers()" [from]="here" [keep]="keep()" />
+            </div>
+          }
 
           @if (passkeysShown()) {
             <div class="passkey-first">
@@ -235,6 +260,17 @@ export class AuthPage {
    */
   protected readonly secondStep = signal<SecondStepResponse | null>(null);
 
+  /** The providers that are on here, once the server has said. */
+  protected readonly providers = signal<ProviderId[]>([]);
+  /** This page's address, for the provider to come back in the same language. */
+  protected readonly here = typeof location === 'undefined' ? '/signin' : location.pathname;
+  /** Where a provider sign-in goes once finished. */
+  private providerNext = '/home';
+  /** A provider waiting to be linked once the account with its email is signed in to. */
+  private readonly linkWaiting = signal<ProviderId | null>(null);
+  private readonly route = inject(ActivatedRoute);
+  private readonly signInProviders = inject(SIGN_IN_PROVIDERS);
+
   private readonly passkeys = inject(PASSKEYS);
   private readonly injector = inject(Injector);
   private readonly passwordField = viewChild<ElementRef<HTMLInputElement>>('passwordField');
@@ -248,6 +284,14 @@ export class AuthPage {
 
   constructor() {
     // Only in the browser, after the first render: the page is the same as the server would draw it until then.
+    afterNextRender(() => {
+      this.signInProviders().then(
+        (providers) => this.providers.set(providers),
+        () => this.providers.set([])
+      );
+      const provider = this.route.snapshot?.queryParamMap.get('provider');
+      if (provider && !this.signup()) void this.finishProvider();
+    });
     afterNextRender(() => {
       if (this.signup() || !this.passkeys.supported()) return;
       this.passkeysShown.set(true);
@@ -279,7 +323,7 @@ export class AuthPage {
           return;
         }
       }
-      await this.router.navigateByUrl('/home');
+      await this.afterSignIn();
     } catch (err) {
       failed = true;
       // A problem with one field shows on it; others, such as a wrong password at sign-in, above the form.
@@ -298,7 +342,62 @@ export class AuthPage {
 
   protected signedIn(): Promise<boolean> {
     this.secondStep.set(null);
-    return this.router.navigateByUrl('/home');
+    return this.afterSignIn();
+  }
+
+  /**
+   * Signed in: on to the page the sign-in was for. A provider waiting to be
+   * linked is linked now, and the account page says so.
+   */
+  private async afterSignIn(): Promise<boolean> {
+    if (this.linkWaiting()) {
+      this.linkWaiting.set(null);
+      try {
+        const result = await this.auth.finishProvider();
+        if (result.kind === 'linked') this.auth.providerNotice.set(result.message);
+        return this.router.navigateByUrl('/account');
+      } catch (err) {
+        this.auth.providerNotice.set(errorMessage(err, translate('account.providers.linkFailed')));
+        return this.router.navigateByUrl('/account');
+      }
+    }
+    const next = this.providerNext;
+    this.providerNext = '/home';
+    return this.router.navigateByUrl(next);
+  }
+
+  /** The provider has sent the browser back: what its answer came to. */
+  private async finishProvider(): Promise<void> {
+    // The address loses ?provider, so a reload does not try again.
+    void this.router.navigate([], { queryParams: {}, replaceUrl: true });
+    this.busy.set(true);
+    try {
+      const result = await this.auth.finishProvider();
+      switch (result.kind) {
+        case 'signed-in':
+          this.providerNext = result.next;
+          await this.afterSignIn();
+          return;
+        case 'second-step':
+          this.providerNext = result.next;
+          this.email.set(result.email);
+          this.passkeys.cancel();
+          this.secondStep.set(result.secondStep);
+          return;
+        case 'sign-in-to-link':
+          this.linkWaiting.set(result.provider);
+          this.notices.success(result.message);
+          return;
+        case 'linked':
+          this.auth.providerNotice.set(result.message);
+          await this.router.navigateByUrl('/account');
+          return;
+      }
+    } catch (err) {
+      this.notices.error(errorMessage(err, translate('account.providers.failed')));
+    } finally {
+      this.busy.set(false);
+    }
   }
 
   /** Back to the password form, the email still filled in, saying why when the second step ran out. */
@@ -384,6 +483,6 @@ export class AuthPage {
 
   private async passkeySignedIn(response: AuthenticationResponseJSON): Promise<void> {
     await this.auth.signInWithPasskey(response, this.keep());
-    await this.router.navigateByUrl('/home');
+    await this.afterSignIn();
   }
 }

@@ -15,6 +15,8 @@ Effort is in working days for one person who knows the codebase. Figures come fr
 
 ## Phase 1: Sign in with Google, GitHub and Microsoft (6–9 days)
 
+Google and GitHub are built ([ADR 0015](adr/0015-provider-sign-in.md)), on `fetch` and `node:crypto` rather than `openid-client`, with the cookie as `__Host-glazecalc_oauth` on `Path=/` in production. Still to do: Microsoft (decision 1), and a fresh provider re-authentication in place of the password for accounts that have none (item 13).
+
 9. **Provider table and flow** on `openid-client` 6: start, then callback, with PKCE, `state`, `nonce` and one callback URL per provider. M–L (2–3 d). New `server/lib/oauth.ts`, `server/routes/oauth_routes.ts`, `server/models/oauth_login.ts` (TTL).
 10. **`SameSite=Lax` transaction cookie** `glazecalc_oauth` on `Path=/api/auth`, 10 minutes. Record the trial id at start, and use the query response mode (no `form_post`). S. `oauth_routes.ts`, `server/lib/session.ts`.
 11. **Identities on User.** Store `{provider, subject, tid?, linkedAt, lastUsedAt}` with a unique index, plus `hasPassword` and `reauthUntil`. S. `server/models/user.ts`.

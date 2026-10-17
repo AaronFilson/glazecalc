@@ -16,6 +16,8 @@ const WAIT = 'Please wait a few minutes and try again.';
 /** A kind of record, by the label its routes send (server/routes/records.ts): one, and several. */
 const ONE =
   'additive {additive} advice {advice} firing {firing} material {material} note {note} recipe {recipe} trash {trash} other {record}';
+/** A sign-in provider (server/lib/oauth.ts), by its id: brand names, kept as they are. */
+const PROVIDER = '{provider, select, google {Google} github {GitHub} other {the provider}}';
 const MANY =
   'additive {additives} advice {pieces of advice} firing {firing logs} material {materials} note {notes} recipe {recipes} trash {items in the trash} other {records}';
 
@@ -88,6 +90,29 @@ export const MESSAGES = {
   'recovery-codes-made': 'New recovery codes are ready. The old ones no longer work.',
   'mfa-off': 'Two-step sign-in is off, and your recovery codes no longer work.',
   'mfa-not-on': 'Two-step sign-in is not on, so there are no recovery codes to make. Set up a second step first.',
+
+  // Signing in with Google or GitHub (server/routes/oauth_routes.ts).
+  'provider-off': 'That way of signing in is not available.',
+  'provider-expired': 'Signing in took too long, or was started in another browser. Please try again.',
+  'provider-failed': `Signing in with ${PROVIDER} did not work. Please try again.`,
+  'provider-cancelled': `Signing in with ${PROVIDER} was cancelled.`,
+  'provider-email-unverified': `Your ${PROVIDER} account has no verified email, so we cannot make an account with it. Please verify your email with ${PROVIDER}, or sign up with an email and password.`,
+  'provider-sign-in-to-link': `A Glazecalc account already uses the email from ${PROVIDER}. Please sign in to it once, the usual way, to link ${PROVIDER} to it.`,
+  'provider-other-account': `This account does not have the email from ${PROVIDER}, so ${PROVIDER} was not linked. Please sign in to the account that does.`,
+  'provider-verify-first': `Please confirm your email first, with the link we sent you. Then link ${PROVIDER} on your account page.`,
+  'provider-linked': `${PROVIDER} is linked. You can now sign in with it.`,
+  'provider-linked-elsewhere': `That ${PROVIDER} account is already linked to another Glazecalc account.`,
+  'provider-already-linked': `Another ${PROVIDER} account is already linked to this one. Please unlink it first.`,
+  'provider-unlinked': `${PROVIDER} is unlinked. You can no longer sign in with it.`,
+  'provider-not-linked': `${PROVIDER} is not linked to this account.`,
+  'provider-last-method':
+    'This is the only way to sign in to this account. Please set a password or link another way first.',
+  'provider-reauth-needed':
+    'This account has no password, so please confirm it is you by signing in again with Google or GitHub, then try again within 5 minutes.',
+  'provider-reauth-other': `That ${PROVIDER} account is not linked to this Glazecalc account, so it cannot confirm a change here.`,
+  'provider-reauth-password': 'This account has a password: please confirm with it instead.',
+  'provider-not-fresh': `${PROVIDER} did not ask you to sign in again, so it cannot confirm a change. Please try again.`,
+  'provider-reauthed': `You signed in again with ${PROVIDER}. Within 5 minutes, you can confirm one change on this page without a password.`,
 
   // Trials.
   'trials-full': 'Too many people are trying Glazecalc right now. Please create a free account instead.',

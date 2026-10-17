@@ -10,7 +10,10 @@
 // A new password signs out every device (the user's tokenVersion goes up) and
 // sends a notice to the account's address. A reset, which may mean someone
 // else knew the password, also revokes every access token and connected app
-// (decision 5); an ordinary change keeps them. A 400 about one field names it:
+// (decision 5), and unlinks every Google or GitHub account (the owner's
+// decision of 2026-10-17, ADR 15): someone who got in may have linked their
+// own. Its notice says so, and that they can be linked again from the account
+// page. An ordinary change keeps them all. A 400 about one field names it:
 // { msg, field: 'password' }.
 import crypto from 'node:crypto';
 import express from 'express';
@@ -101,7 +104,10 @@ passwordRouter.post('/reset', limits.resetPassword, express.json(), async (req, 
   const stopped = await stopAllSharing(user._id);
   // The link went to the account's address, so opening it also proves the address is theirs.
   user.emailUnverified = undefined;
-  await setPassword(user, body.password as string, stopped > 0);
+  // Every provider link goes; an account made with a provider has the new password instead.
+  const unlinked = [...new Set((user.identities ?? []).map((identity) => identity.provider))];
+  user.identities = [];
+  await setPassword(user, body.password as string, stopped > 0, unlinked);
   return res.status(200).json(say('password-reset'));
 });
 
@@ -122,7 +128,8 @@ passwordRouter.put(
     if (!user) return res.status(404).json(say('no-user'));
     if (mfaOn(user)) {
       // The password and a current factor (decision 6). The password here is `current`.
-      const check = await confirmChange(req, { ...body, password: body.current });
+      // Never a provider sign-in: an account without a password sets one by the reset email.
+      const check = await confirmChange(req, { ...body, password: body.current }, { reauth: false });
       if (!check.ok) {
         const field = check.field === 'password' ? 'current' : check.field;
         return res.status(check.status).json(say(check.code, check.params, field ? { field } : {}));
@@ -139,16 +146,25 @@ passwordRouter.put(
 );
 
 // Saves a new password, signs out every device, cancels open reset links and
-// tells the account's owner.
-async function setPassword(user: UserDocument, newPassword: string, linksStopped = false): Promise<void> {
+// tells the account's owner: with the providers a reset unlinked, when it did.
+async function setPassword(
+  user: UserDocument,
+  newPassword: string,
+  linksStopped = false,
+  unlinked: string[] = []
+): Promise<void> {
   user.password = await password.hash(newPassword);
+  // An account made with a provider has a password of its own from now on.
+  user.passwordless = undefined;
   user.tokenVersion = (user.tokenVersion || 0) + 1;
   await user.save();
   await cancelLinks(user._id);
   // Not to an address nobody has confirmed: it may be a stranger's.
   if (!user.emailUnverified) {
-    accountMail
-      .sendChanged(user.email, user.preferences?.language, linksStopped)
-      .catch(logMailError('password changed'));
+    const language = user.preferences?.language;
+    (unlinked.length
+      ? accountMail.sendResetUnlinked(user.email, unlinked, language)
+      : accountMail.sendChanged(user.email, language, linksStopped)
+    ).catch(logMailError('password changed'));
   }
 }

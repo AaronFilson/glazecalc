@@ -12,6 +12,10 @@ process.env.E2E_MONGO_URI = mongoUri;
 // The server writes emails here as JSON files; e2e/mail.js reads them.
 const mailDir = path.join(os.tmpdir(), 'glazecalc-e2e-mail');
 process.env.E2E_MAIL_DIR = mailDir;
+// The fake Google and GitHub (server/test/support/fake_provider.ts), started by
+// e2e/oauth.spec.js on this port: the server's provider endpoints point there.
+const oauthPort = process.env.E2E_OAUTH_PORT || String(Number(port) + 1000);
+process.env.E2E_OAUTH_PORT = oauthPort;
 
 module.exports = defineConfig({
   testDir: './e2e',
@@ -42,7 +46,13 @@ module.exports = defineConfig({
       MAIL_TRANSPORT: 'file',
       MAIL_DIR: mailDir,
       // The tests sign up many accounts from one address.
-      RATE_LIMITS: 'off'
+      RATE_LIMITS: 'off',
+      // Sign in with Google and GitHub, against the fake provider (test use only).
+      OAUTH_TEST_BASE: 'http://127.0.0.1:' + oauthPort,
+      GOOGLE_CLIENT_ID: 'google-client',
+      GOOGLE_CLIENT_SECRET: 'google-secret',
+      GITHUB_CLIENT_ID: 'github-client',
+      GITHUB_CLIENT_SECRET: 'github-secret'
     }
   }
 });

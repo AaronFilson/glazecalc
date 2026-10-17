@@ -263,6 +263,27 @@ else
   fail "Could not read /glazecalc/smtp-url; staging is unchanged."
 fi
 unset smtp
+# Sign in with Google and GitHub, from staging's own provider apps
+# (/glazecalc/staging/<provider>-client-id and -client-secret): a GitHub OAuth
+# app has one callback URL, so production's cannot serve staging. Each is off
+# until both of its parameters exist.
+for provider in google github; do
+  upper=$(printf '%s' "$provider" | tr '[:lower:]' '[:upper:]')
+  if client_id=$(param "/glazecalc/staging/$provider-client-id" 2> /dev/null) \
+    && client_secret=$(param "/glazecalc/staging/$provider-client-secret" 2> /dev/null); then
+    if in_production_env "${upper}_CLIENT_SECRET=$client_secret"; then
+      fail "/glazecalc/staging/$provider-client-secret is production's; staging needs its own app. Staging is unchanged."
+    fi
+    printf '%s_CLIENT_ID=%s\n%s_CLIENT_SECRET=%s\n' "$upper" "$client_id" "$upper" "$client_secret" >> "$env_file.new"
+    echo "Sign in with $provider: on."
+  elif grep -q ParameterNotFound "$err"; then
+    echo "Sign in with $provider: off (no /glazecalc/staging/$provider-client-id or -client-secret)."
+  else
+    cat "$err" >&2
+    fail "Could not read /glazecalc/staging/$provider-client-id or -client-secret; staging is unchanged."
+  fi
+  unset client_id client_secret
+done
 grep -q '^MAIL_ALLOWLIST=.' "$env_file.new" || fail "No MAIL_ALLOWLIST; staging is unchanged."
 mv "$env_file.new" "$env_file"
 umask 022

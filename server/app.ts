@@ -14,6 +14,7 @@ import authRoutes from './routes/auth_routes.ts';
 import exportRoutes from './routes/export_routes.ts';
 import guestRoutes from './routes/guest_routes.ts';
 import mfaRoutes from './routes/mfa_routes.ts';
+import oauthRoutes from './routes/oauth_routes.ts';
 import emailRoutes from './routes/email_routes.ts';
 import passwordRoutes from './routes/password_routes.ts';
 import records from './routes/records.ts';
@@ -110,6 +111,8 @@ api.use('/password', passwordRoutes);
 api.use('/email', emailRoutes);
 // Two-step sign-in: the account's factors (docs/mfa-plan.md).
 api.use('/mfa', mfaRoutes);
+// Signing in with Google or GitHub (docs/adr/0015-provider-sign-in.md).
+api.use('/auth', oauthRoutes);
 // /signup, /signin, /signout, /verify, /usersettings/:id and /deleteuser/:id
 api.use('/', authRoutes);
 api.use('/', userRoutes);
@@ -253,6 +256,6 @@ app.use((err: HttpError, req: Request, res: Response, next: NextFunction) => {
     return res.status(400).json(say('invalid-input'));
   }
   const status = err.status || err.statusCode || 500;
-  if (status >= 500) log.error('Server error', { err, method: req.method, path: req.originalUrl });
+  if (status >= 500) log.error('Server error', { err, method: req.method, path: log.pathForLog(req.originalUrl) });
   return res.status(status).json(say(status === 413 ? 'too-large' : status < 500 ? 'bad-request' : 'server-error'));
 });

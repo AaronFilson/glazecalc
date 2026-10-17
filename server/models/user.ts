@@ -1,3 +1,4 @@
+import crypto from 'node:crypto';
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
 import mongoose from 'mongoose';
@@ -131,6 +132,26 @@ export interface MfaFields {
   codeGuesses?: CodeGuesses;
 }
 
+/**
+ * A provider account the person signs in with (server/lib/oauth.ts, docs/adr/0015-provider-sign-in.md):
+ * found by the provider and its subject, the provider's own unchanging id for
+ * the person (Google's sub, GitHub's numeric id), never by an email. Nothing
+ * else from the provider is kept: no name, no picture, no provider token.
+ */
+export interface Identity {
+  /** 'google' or 'github' (server/lib/oauth.ts PROVIDERS). */
+  provider: string;
+  subject: string;
+  /**
+   * provider:subject (google:1234), what the unique index and the lookups use:
+   * an index on the two fields of one array would pair every provider with every
+   * subject in it, so two accounts could clash over a pair neither has.
+   */
+  uid: string;
+  linkedAt: Date;
+  lastUsedAt?: Date;
+}
+
 /** Wrong codes counted against an account (server/lib/code_lock.ts). */
 export interface CodeGuesses {
   /** The account's tokenVersion they were counted under: a new one starts again. */
@@ -195,6 +216,14 @@ export interface UserFields {
   trialCounts?: Map<string, number>;
   /** Two-step sign-in; never settable through /api/usersettings, never sent whole. */
   mfa?: MfaFields;
+  /** Provider accounts it signs in with, at most one per provider (server/routes/oauth_routes.ts). */
+  identities?: Identity[];
+  /**
+   * Made by signing in with a provider: the password is a random one nobody
+   * knows, until one is set through the reset email (server/routes/password_routes.ts).
+   * Absent on every other account.
+   */
+  passwordless?: boolean;
 }
 
 interface UserMethods {
@@ -287,7 +316,23 @@ const userSchema = new mongoose.Schema<UserFields, UserModel, UserMethods>({
   guest: Boolean,
   expiresAt: Date,
   trialCounts: { type: Map, of: Number },
-  mfa: { type: mfaSchema, default: undefined }
+  mfa: { type: mfaSchema, default: undefined },
+  identities: {
+    type: [
+      new mongoose.Schema<Identity>(
+        {
+          provider: { type: String, required: true },
+          subject: { type: String, required: true },
+          uid: { type: String, required: true },
+          linkedAt: { type: Date, required: true },
+          lastUsedAt: Date
+        },
+        { _id: false }
+      )
+    ],
+    default: undefined
+  },
+  passwordless: Boolean
 });
 
 userSchema.method('hashPassword', function (this: UserDocument, password: string) {
@@ -299,13 +344,22 @@ userSchema.method('comparePassword', function (this: UserDocument, password: str
   return bcrypt.compareSync(password, this.password);
 });
 
-// { id, tv, ss }: the user, their token version, and ss when the sign-in is for
-// this browser session only (server/lib/session.ts), so a renewed cookie keeps its kind.
+// { id, tv, ss, sid }: the user, their token version, ss when the sign-in is for
+// this browser session only (server/lib/session.ts), so a renewed cookie keeps
+// its kind, and a random id, so that no two sign-in tokens are the same even
+// when made in the same second: what is tied to one session (a provider
+// reauth, jwt_auth.ts sessionKeyOf) is tied to that token alone.
 userSchema.method('generateToken', function (this: UserDocument, expiresIn: TokenLifetime = '7d', keep = true) {
-  return jwt.sign({ id: String(this._id), tv: this.tokenVersion || 0, ...(keep ? {} : { ss: true }) }, appSecret, {
-    algorithm: 'HS256',
-    expiresIn
-  });
+  return jwt.sign(
+    {
+      id: String(this._id),
+      tv: this.tokenVersion || 0,
+      ...(keep ? {} : { ss: true }),
+      sid: crypto.randomBytes(12).toString('base64url')
+    },
+    appSecret,
+    { algorithm: 'HS256', expiresIn }
+  );
 });
 
 // One account per email, ignoring case.
@@ -316,6 +370,12 @@ userSchema.index({ expiresAt: 1 }, { partialFilterExpression: { guest: true } })
 userSchema.index(
   { 'mfa.passkeys.credentialId': 1 },
   { unique: true, partialFilterExpression: { 'mfa.passkeys.credentialId': { $exists: true } } }
+);
+
+// One account per provider account, and provider sign-in finds the account by it.
+userSchema.index(
+  { 'identities.uid': 1 },
+  { unique: true, partialFilterExpression: { 'identities.uid': { $exists: true } } }
 );
 
 /** Whether the account has two-step sign-in on: an authenticator app or a passkey. */

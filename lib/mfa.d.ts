@@ -103,13 +103,21 @@ export interface PasskeySignInRequest {
 }
 
 /**
- * Every change to how the account signs in (decision 6): the current password,
- * and, once two-step sign-in is on, one current factor as well. With MFA off
+ * Every change to how the account signs in (decision 6): the current password
+ * (or a fresh provider sign-in, OwnerProof), and, once two-step sign-in is on,
+ * one current factor as well. With MFA off
  * (adding the first factor) the password alone.
  */
-export type IdentityProof = { password: string } & (
-  FactorProof | { code?: never; recoveryCode?: never; passkey?: never }
-);
+export type IdentityProof = OwnerProof & (FactorProof | { code?: never; recoveryCode?: never; passkey?: never });
+
+/**
+ * The first half of an IdentityProof: the password, or, for an account with
+ * no password of its own (made with a provider), `reauth`, the grant a fresh
+ * sign-in with one of its providers gave (POST /api/auth/finish answering
+ * 'provider-reauthed'; docs/adr/0015-provider-sign-in.md). Good for one
+ * change, within 5 minutes of that sign-in.
+ */
+export type OwnerProof = { password: string; reauth?: never } | { reauth: string; password?: never };
 
 /** A passkey as the account page lists it. `id` is the entry's id, never the credential id. */
 export interface PasskeySummary {
