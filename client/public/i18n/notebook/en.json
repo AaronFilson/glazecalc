@@ -4,6 +4,14 @@
     "signedInAs": "Signed in as {email}.",
     "trying": "Trying Glazecalc as {name}. Start with a recipe.",
     "welcomeBack": "Pick up where you left off.",
+    "welcome": {
+      "heading": "Welcome to Glazecalc",
+      "text": "Your notebook is ready. A good first step: type in a glaze you already mix, its materials and amounts, and see its unity formula.",
+      "firstRecipe": "Start your first recipe",
+      "confirmHeading": "Confirm your email",
+      "confirm": "Confirm your email: we sent a link to {email}. Two-step sign-in needs it. Your <account>account page</account> can send it again.",
+      "confirmText": "We sent a link to {email}. Open it to confirm the address is yours: two-step sign-in needs it. Your <account>account page</account> can send it again."
+    },
     "sections": {
       "recipe": {
         "title": "Recipes",
@@ -32,6 +40,10 @@
       "guides": {
         "title": "Guides",
         "text": "From what a glaze is to firing it, and keeping everyone safe on the way."
+      },
+      "account": {
+        "title": "Account and settings",
+        "text": "Settings, your password, two-step sign-in, and a download of everything you keep here."
       }
     },
     "newHere": "New to unity formulas? The <advice>advice page</advice> explains the basics, and the <about>about page</about> says how Glazecalc works."
@@ -39,25 +51,29 @@
   "firing": {
     "title": "Firing logs",
     "lead": "Record each firing: times, temperatures, cones and kiln notes.",
-    "titleLabel": "Title of Firing:",
-    "kiln": "Kiln:",
-    "date": "Date of firing:",
-    "notes": "Notes on the firing:",
-    "fieldSelect": "Select and add fields to the firing record :",
+    "newHeading": "A new firing",
+    "titleLabel": "Title",
+    "kiln": "Kiln",
+    "date": "Date",
+    "notes": "Notes",
+    "fieldSelect": "Fields to record",
     "addField": "Add the field",
-    "included": "The fields you have included :",
-    "fieldName": "Field name : {name}",
+    "included": "Fields in this record",
     "moveLeft": "Move field left",
     "moveRight": "Move field right",
     "removeField": "Remove the field",
     "addRow": "Add a row to the firing table",
-    "recordHeading": "Record the Firing",
+    "addRowWhy": "Add a field first.",
+    "tableEmpty": "Add a field above, then add rows.",
+    "recordHeading": "Record the firing",
     "rowActions": "Row actions",
     "cell": "{field} row {row}",
     "removeRow": "Remove row",
     "save": "Save",
-    "storedHeading": "My stored firings:",
-    "stored": "Title: {title}, Using kiln: {kiln}, Date: {date}",
+    "storedHeading": "My saved firings",
+    "noneSaved": "None yet. Saved firings appear here.",
+    "storedIn": "Fired in {kiln} on {date}.",
+    "storedOn": "Fired on {date}.",
     "storedNotes": "Notes: {notes}",
     "titleMissing": "Give the firing a title.",
     "fieldsMissing": "Add at least one field to record, such as {example}.",
@@ -69,11 +85,12 @@
   "notes": {
     "title": "Notes",
     "lead": "Anything else worth remembering about your glazes.",
-    "intro": "This is the notes page. You can take notes and save them here.",
-    "titleLabel": "Title:",
-    "content": "Your Note:",
+    "newHeading": "A new note",
+    "titleLabel": "Title",
+    "content": "Note",
     "save": "Save",
-    "mineHeading": "My saved notes:",
+    "mineHeading": "My saved notes",
+    "noneSaved": "None yet. Saved notes appear here.",
     "titleMissing": "Give the note a title.",
     "contentMissing": "Write the note.",
     "untitled": "Untitled note",

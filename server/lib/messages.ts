@@ -114,6 +114,7 @@ export const MESSAGES = {
   'density-choices': 'Choose specific gravity, Baumé or pint weight, or leave it to your region.',
   'englishTerms-choices': 'Choose on or off.',
   'notice-choices': 'Choose shown or hidden.',
+  'recipeHelp-choices': 'Choose auto, shown or hidden.',
   'shelf-invalid': (p: Params) => 'The shelf is a list of up to ' + p.most + ' materials.',
 
   // Records: recipes, materials, additives, firing logs, notes, advice.

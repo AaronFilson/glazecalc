@@ -1,20 +1,23 @@
-import { Component, ElementRef, Injector, afterNextRender, inject, signal, viewChild } from '@angular/core';
+import {
+  Component,
+  ElementRef,
+  Injector,
+  afterNextRender,
+  computed,
+  inject,
+  input,
+  linkedSignal,
+  signal,
+  viewChild
+} from '@angular/core';
 import { TranslocoDirective } from '@jsverse/transloco';
+import { PreferencesService } from '../../core/preferences.service';
 import { RichText } from '../../i18n/rich-text';
 
-const HIDDEN_KEY = 'recipeHelp';
-
-const readHidden = (): boolean => {
-  try {
-    return localStorage.getItem(HIDDEN_KEY) === 'hidden';
-  } catch {
-    return false;
-  }
-};
-
 /**
- * How to use the recipe page. Shown until hidden; the browser remembers that,
- * and a link brings it back.
+ * How to use the recipe page. Folded to one line, "How the recipe calculator
+ * works", unless the account has no recipes yet when the page opens; opened or
+ * hidden, it stays so, kept with the account's settings so it holds on every device.
  */
 @Component({
   selector: 'gc-recipe-help',
@@ -22,7 +25,7 @@ const readHidden = (): boolean => {
   template: `<ng-container *transloco="let t">
     @if (hidden()) {
       <p class="help-reopen">
-        <button #reopen type="button" class="btn btn-link p-0" (click)="setHidden(false)">
+        <button #reopen type="button" class="btn btn-link p-0" aria-expanded="false" (click)="setHidden(false)">
           {{ t('recipe.help.reopen') }}
         </button>
       </p>
@@ -30,7 +33,7 @@ const readHidden = (): boolean => {
       <section class="panel recipe-help" aria-labelledby="recipe-help-heading">
         <div class="recipe-help-top">
           <h2 #heading id="recipe-help-heading" tabindex="-1">{{ t('recipe.help.heading') }}</h2>
-          <button type="button" class="btn btn-light border btn-sm" (click)="setHidden(true)">
+          <button type="button" class="btn btn-light border btn-sm" aria-expanded="true" (click)="setHidden(true)">
             {{ t('recipe.help.hide') }}
           </button>
         </div>
@@ -106,22 +109,37 @@ const readHidden = (): boolean => {
   </ng-container>`
 })
 export class RecipeHelp {
-  protected readonly hidden = signal(readHidden());
+  /** Whether the account has no saved recipes yet: then it opens by itself. Null until known. */
+  readonly empty = input<boolean | null>(null);
+
+  private readonly preferences = inject(PreferencesService);
+  /**
+   * The first answer to empty(), kept while the page is open: the help that opened for an
+   * account with no recipes does not fold the moment the first one is saved.
+   */
+  private readonly emptyOnOpen = linkedSignal<boolean | null, boolean | null>({
+    source: this.empty,
+    computation: (now, before) => before?.value ?? now
+  });
+  /** What was chosen on this page, which holds while it is open even if saving it failed. */
+  private readonly chosen = signal<'shown' | 'hidden' | null>(null);
+  protected readonly hidden = computed(() => {
+    const choice = this.chosen() ?? this.preferences.recipeHelp();
+    return choice === 'auto' ? this.emptyOnOpen() !== true : choice === 'hidden';
+  });
   private readonly reopen = viewChild<ElementRef<HTMLElement>>('reopen');
   private readonly heading = viewChild<ElementRef<HTMLElement>>('heading');
   private readonly injector = inject(Injector);
 
   protected setHidden(hidden: boolean): void {
-    this.hidden.set(hidden);
+    const choice = hidden ? 'hidden' : 'shown';
+    this.chosen.set(choice);
+    // Saved with the account; if that fails, the choice still holds while this page is open,
+    // and the next time it is made, saving it is tried again.
+    this.preferences.set('recipeHelp', choice).catch(() => undefined);
     // The button pressed is replaced; the focus goes to what replaces it.
     afterNextRender(() => (hidden ? this.reopen() : this.heading())?.nativeElement.focus(), {
       injector: this.injector
     });
-    try {
-      if (hidden) localStorage.setItem(HIDDEN_KEY, 'hidden');
-      else localStorage.removeItem(HIDDEN_KEY);
-    } catch {
-      // Without storage it is remembered for this visit only.
-    }
   }
 }

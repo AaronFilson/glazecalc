@@ -71,6 +71,8 @@
     "contact": "Skriv till <mail>privacy@glazecalcapp.com</mail> för att fråga om dina uppgifter eller för att utöva någon av dina rättigheter. Det går också att <issues>öppna ett ärende på GitHub</issues>, men ärenden är offentliga: skriv aldrig e-postadressen eller något personligt i ett ärende. Det mesta som rör uppgifterna går att göra själv på <account>kontosidan</account>.",
     "storedHeading": "Vad som sparas, och varför",
     "storedAccount": "<b>Kontot:</b> e-postadressen och lösenordet, som bara sparas som en envägshash (bcrypt), aldrig som själva lösenordet. Inställningarna (som språk, region och enheter) och listan över råvarorna i förrådet sparas tillsammans med kontot. Ett konto behöver en e-postadress, för inloggning och för att återställa ett glömt lösenord. När ett konto skapas skickas en länk till adressen för att bekräfta att den är din; fram till dess skickas e-post till den bara när du ber om det, till exempel för att återställa lösenordet.",
+    "storedEmailChange": "<b>Byte av e-postadress:</b> datumet då adressen senast ändrades, så att en begäran om att stänga av inloggning i två steg aldrig godtas från en ny adress under de följande 30 dagarna.",
+    "storedSignIn": "<b>Inloggning i två steg, om du aktiverar den:</b> om den är aktiverad; den hemliga nyckel som autentiseringsappen delar med Glazecalc, krypterad; för varje lösennyckel dess publika nyckel (som inte kan logga in på egen hand) med det id och de uppgifter som enheten ger den, namnet du gav den och när den lades till och senast användes; dina återställningskoder, bara som en envägs-hash med nyckel, så att ingen kan läsa dem igen; och, om någon anger ditt lösenord men inte slutför det andra steget, när Glazecalc senast skickade e-post till dig om det (högst en gång per dag). Medan du loggar in, mellan lösenordet och det andra steget, sparar servern en anteckning om inloggningen i 5 minuter, och sidan håller en kort token enbart i minnet: ingen ny cookie, ingenting i webbläsarens lagring.",
     "storedSaved": "<b>Det du sparar:</b> recept, råvaror, tillsatser, anteckningar, brännloggar och råd, så som du skrev dem. Bara du kan se dem: inget delas mellan användare.",
     "storedTrial": "<b>En provperiod (Prova nu):</b> ingen e-postadress eller lösenord, bara ett påhittat namn som ”speckled quiet kilns”. Om du loggar in på ett konto i samma webbläsare under en provperiod flyttas det som skapats under provperioden in i kontot.",
     "storedResets": "<b>Länkar för att återställa lösenordet och för e-postadresser:</b> vilket konto som bad om länken, när, den adress som en länk för att bekräfta en adress skickades till, och ett fingeravtryck av varje länk (inte själva länken).",
@@ -96,6 +98,7 @@
     "keptAccount": "<b>Kontot och det du sparar:</b> tills du raderar dem. Konton tas inte bort för att de inte används.",
     "keptTrial": "<b>En provperiod:</b> 14 dagar från starten, sedan raderas den med allt i den, om du inte skapar ett konto för att behålla den.",
     "keptResets": "<b>Länkar för att återställa lösenordet och för e-postadresser:</b> en länk för återställning fungerar i 30 minuter och uppgiften om den raderas efter ungefär en timme; en länk för att bekräfta en adress fungerar, och sparas, i 24 timmar.",
+    "keptSignIn": "<b>Inloggning i två steg:</b> varje autentiseringsapp, lösennyckel och uppsättning återställningskoder tills du tar bort den, stänger av inloggning i två steg eller raderar kontot. En inloggning som väntar på sitt andra steg raderas efter 5 minuter, och en app eller lösennyckel som du började lägga till men inte slutförde raderas efter högst 10.",
     "keptBackups": "<b>Säkerhetskopior:</b> krypterade kopior av databasen sparas i 30 dagar, och kopior av serverns disk i 7 dagar. Ett raderat konto är alltså borta ur alla säkerhetskopior inom 30 dagar.",
     "keptDeletions": "<b>Uppgiften om ett raderat konto:</b> 37 dagar, strax längre än någon säkerhetskopia sparas.",
     "keptLogs": "<b>Loggar:</b> webbserverns i 14 dagar. Appens och databasens egna loggar begränsas av storleken (50 MB vardera), vilket på en lugn webbplats räcker flera dagar bakåt. Kopiorna av serverns disk behåller loggar i upp till 7 dagar till.",
@@ -103,6 +106,7 @@
     "keptInbound": "<b>E-post som skickas till Glazecalc:</b> 30 dagar i Amazons lagring, och i ägarens inkorg så länge det tar att svara dig. För en begäran som rör dina uppgifter sparas en kort anteckning (när den kom, vad som begärdes och vad som gjordes) i tre år.",
     "rightsHeading": "Dina rättigheter",
     "rightsIntro": "Du kan se, rätta, ta med dig och radera dina uppgifter. Det mesta går att göra själv på <account>kontosidan</account>:",
+    "rightsExport": "<b>Se dem och ta med dem:</b> Ladda ned mina uppgifter sparar allt i en fil (JSON), inklusive namn och datum för dina metoder för inloggning i två steg (aldrig deras nycklar eller koder), och recepten och råvarorna som kalkylblad (CSV).",
     "rightsCorrect": "<b>Rätta dem:</b> ändra inställningarna och det du har sparat när som helst. För att byta e-postadress öppnar du länken som skickas till den nya adressen; den gamla adressen får, om den var bekräftad, besked om ändringen, och alla enheter loggas ut.",
     "rightsDelete": "<b>Radera dem:</b> knappen Radera kontot tar bort kontot och allt du har sparat på en gång, och Radera provperioden gör detsamma för en provperiod. Kopior i säkerhetskopiorna är borta inom 30 dagar.",
     "rightsSignOut": "<b>Logga ut överallt:</b> avslutar kontots sessioner på alla enheter.",
@@ -146,10 +150,6 @@
       "includeAdditives": {
         "purpose": "Om nya recept räknar med tillsatserna i Segerformeln, enligt ditt senaste val.",
         "lasts": "Tills webbläsarens lagring rensas."
-      },
-      "recipeHelp": {
-        "purpose": "Att du har dolt hjälpen på receptsidan.",
-        "lasts": "Tills hjälpen visas igen."
       },
       "print": {
         "purpose": "Dina senaste val för utskrift av ett recept: hela receptet eller en sats, och satsstorleken.",

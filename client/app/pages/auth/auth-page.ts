@@ -5,6 +5,7 @@ import {
   Injector,
   afterNextRender,
   computed,
+  effect,
   inject,
   signal,
   viewChild
@@ -85,7 +86,8 @@ import { SecondStep } from './second-step';
                 [gcField]="checks"
                 gcFieldName="password"
               />
-              @if (signup()) {
+              <!-- The problem says it once a password is too short, so the hint steps aside. -->
+              @if (signup() && !checks.problem('password')) {
                 <div class="form-text">{{ t('account.auth.passwordHint') }}</div>
               }
             </div>
@@ -251,9 +253,12 @@ export class AuthPage {
       this.passkeysShown.set(true);
       void this.startAutofill();
     });
+    // Halfway through signing in, the menu does not offer to start again (app.ts).
+    effect(() => this.auth.secondStepPending.set(this.secondStep() !== null));
     inject(DestroyRef).onDestroy(() => {
       this.left = true;
       this.passkeys.cancel();
+      this.auth.secondStepPending.set(false);
     });
   }
 

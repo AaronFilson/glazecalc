@@ -1,5 +1,5 @@
 const { test, expect } = require('@playwright/test');
-const { expectFieldProblem, signUpAndSignIn } = require('./helpers');
+const { API, expectFieldProblem, signUpAndSignIn } = require('./helpers');
 
 const errors = (page) => page.locator('.errors-section');
 const messages = (page) => page.locator('.server-msg');
@@ -97,7 +97,7 @@ test.describe('home and navigation', () => {
     await expect(visitor.locator('h1')).toHaveText('Privacy');
     await expect(visitor.locator('a[href="mailto:privacy@glazecalcapp.com"]').first()).toBeVisible();
     const storage = visitor.locator('#storage');
-    await expect(storage.locator('tbody tr')).toHaveCount(12);
+    await expect(storage.locator('tbody tr')).toHaveCount(11);
     await expect(storage.locator('tbody tr').first()).toContainText('glazecalc_session');
     await visitor.close();
   });
@@ -131,13 +131,35 @@ test.describe('home and navigation', () => {
     await expect(page).toHaveURL(/\/notes$/);
     await expect(page.locator('.nav-links')).toBeHidden();
   });
+
+  test('on a phone, nothing is wider than the screen, even the menu with a long email', async ({ page }) => {
+    // A long address, signed in in place of the usual one, with a long run that has no hyphen to break at.
+    const email = 'a-rather-long-address-for-a-potter-' + Date.now() + 'withnohyphens@studio.example.com';
+    expect((await page.request.post(API + '/signup', { data: { email, password: 'password123' } })).ok()).toBe(true);
+    for (const width of [320, 390, 430]) {
+      await page.setViewportSize({ width, height: 844 });
+      await page.goto('/home');
+      await expect(page.locator('h1')).toBeVisible();
+      await page.getByRole('button', { name: 'Menu' }).click();
+      await expect(page.locator('.nav-account .account-email')).toHaveText(email);
+      const signOut = await page.locator('.nav-account').getByRole('button', { name: 'Sign out' }).boundingBox();
+      expect(signOut.x + signOut.width, 'Sign out at ' + width + 'px').toBeLessThanOrEqual(width);
+      const overflow = await page.evaluate(
+        () => globalThis.document.documentElement.scrollWidth - globalThis.innerWidth
+      );
+      expect(overflow, 'sideways scroll at ' + width + 'px').toBeLessThanOrEqual(0);
+    }
+  });
 });
 
 test.describe('additives', () => {
   test('lists the standard additives', async ({ page }) => {
     await page.goto('/additive');
-    const standard = page.locator('section', { hasText: 'The standard additives:' });
-    const row = standard.locator('tr', { has: page.locator('td', { hasText: /^\s*Cobalt carbonate\s*$/ }) });
+    const standard = page.locator('section', { hasText: 'Standard additives' });
+    await standard.getByLabel('Filter').fill('Cobalt carbonate');
+    const row = standard.locator('tr', {
+      has: page.locator('td:first-child', { hasText: /^\s*Cobalt carbonate\s*Details/ })
+    });
     // From the supplier's data sheet: a weight-percent analysis.
     await expect(row).toContainText('CoO 58.49%');
   });
@@ -151,11 +173,11 @@ test.describe('additives', () => {
     await addPart(page, '#additive-oxide', 'CoO', 'Add the oxide to the list', 1, '.part-amount');
     await addPart(page, '#additive-oxide', 'Al2O3', 'Add the oxide to the list', 1, '.part-amount');
     await addPart(page, '#additive-oxide', 'ZnO', 'Add the oxide to the list', 0.1, '.part-amount');
-    await page.locator('li', { hasText: 'ZnO' }).getByRole('button', { name: 'Remove from formula list' }).click();
+    await page.getByRole('button', { name: 'Remove ZnO from the formula' }).click();
     await page.getByRole('button', { name: 'Save' }).click();
 
     await expect(messages(page)).toContainText('Additive added');
-    const mine = page.locator('section', { hasText: 'My additives and colorants:' });
+    const mine = page.locator('section', { hasText: 'My additives and colorants' });
     const row = mine.locator('tr', { hasText: 'Blue stain' });
     await expect(row).toContainText('Spinel');
     await expect(row).toContainText('CoO : 1; Al₂O₃ : 1');
@@ -168,7 +190,9 @@ test.describe('additives', () => {
     await expect(row).toContainText("Saved recipes keep their own copy, so they won't change.");
     await row.getByRole('button', { name: 'Yes, remove' }).click();
     await expect(messages(page)).toContainText('Removed "Blue stain".');
-    await expect(page.locator('section', { hasText: 'My additives and colorants:' })).toHaveCount(0);
+    // The list is empty again, and says so.
+    await expect(mine).toContainText('None yet.');
+    await expect(row).toHaveCount(0);
   });
 
   test('asks for an oxide before adding one', async ({ page }) => {
@@ -295,7 +319,7 @@ test.describe('firing log', () => {
 
     await page.reload();
     const stored = page.locator('.stored-firing', { hasText: 'Cone 10 reduction' });
-    await expect(stored).toContainText('Using kiln: Car kiln');
+    await expect(stored).toContainText('Fired in Car kiln on Saturday, October 3, 2026.');
     await expect(stored).toContainText('Saturday, October 3, 2026');
     await expect(stored.locator('th')).toHaveText(['Cone', 'Time', 'Temperature F']);
     await expect(stored.locator('td')).toHaveText(['06', '9:30', '1830']);

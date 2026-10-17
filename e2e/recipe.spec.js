@@ -70,7 +70,8 @@ test('saves a recipe, keeps it open, and saves changes to the same recipe', asyn
   await expect(page.locator('#recipe-name')).toHaveValue('Dolomite Matte');
   await expect(amount(page, 'Dolomite')).toHaveValue('20');
   await expect(saved(page).locator('.saved-recipe')).toHaveCount(1);
-  await expect(saved(page)).toContainText('Open above');
+  await expect(saved(page)).toContainText('Open in the editor');
+  await expect(page.locator('#editor-heading')).toHaveText('Dolomite Matte');
 
   // Change it and save again: the same recipe is updated, not copied.
   await amount(page, 'Dolomite').fill('0');
@@ -82,7 +83,7 @@ test('saves a recipe, keeps it open, and saves changes to the same recipe', asyn
   // After a reload it is in the list, with the changed amounts, and can be opened again.
   await page.reload();
   const entry = saved(page).locator('.saved-recipe', { hasText: 'Dolomite Matte' });
-  await entry.getByRole('button', { name: 'Expand to View' }).click();
+  await entry.getByRole('button', { name: 'Show details' }).click();
   await expect(entry).toContainText('Dolomite : 0');
   await expect(entry).not.toContainText('MgO');
   await entry.getByRole('button', { name: 'Open' }).click();
@@ -106,22 +107,23 @@ test('"Save and add next recipe" starts a fresh one; "Save as a copy" keeps the 
   await amount(page, 'Silica').fill('40');
   await save(page, 'Save as a copy');
   await expect(saved(page).locator('.saved-recipe')).toHaveCount(2);
-  const original = saved(page).locator('.saved-recipe').first();
+  // The newest first: the copy, then the original.
+  const original = saved(page).locator('.saved-recipe').last();
   await expect(original).toContainText('First');
   await expect(original).not.toContainText('more silica');
-  await original.getByRole('button', { name: 'Expand to View' }).click();
+  await original.getByRole('button', { name: 'Show details' }).click();
   await expect(original).toContainText('Silica : 30');
 });
 
 test('asks before dropping changes that are not saved', async ({ page }) => {
   await page.locator('#recipe-name').fill('Unsaved');
   await addStandardMaterial(page, 'Whiting', 20);
-  await page.getByRole('button', { name: 'New recipe' }).click();
+  await page.getByRole('button', { name: 'Start a new recipe' }).click();
   await expect(page.locator('.recipe-unsaved')).toContainText('changes that are not saved');
   await page.getByRole('button', { name: 'Keep editing' }).click();
   await expect(page.locator('#recipe-name')).toHaveValue('Unsaved');
 
-  await page.getByRole('button', { name: 'New recipe' }).click();
+  await page.getByRole('button', { name: 'Start a new recipe' }).click();
   await page.getByRole('button', { name: 'Discard them' }).click();
   await expect(page.locator('#recipe-name')).toHaveValue('');
 });
@@ -155,7 +157,7 @@ test('uses my own materials and lists additives with the result', async ({ page 
 
   await save(page);
   const entry = saved(page).locator('.saved-recipe', { hasText: 'Mine' });
-  await entry.getByRole('button', { name: 'Expand to View' }).click();
+  await entry.getByRole('button', { name: 'Show details' }).click();
   await expect(entry).toContainText('My Whiting : 20');
   await expect(entry).toContainText('Cobalt carbonate : 0.5%');
 });
@@ -234,7 +236,7 @@ test('counts colorants in the unity formula only when asked, and saves the choic
   // Opened again after a reload, it still counts its colorant.
   await page.reload();
   const entry = saved(page).locator('.saved-recipe', { hasText: 'Cobalt blue' });
-  await entry.getByRole('button', { name: 'Expand to View' }).click();
+  await entry.getByRole('button', { name: 'Show details' }).click();
   await expect(entry).toContainText('counting colorants and additives');
   await entry.getByRole('button', { name: 'Open' }).click();
   await expect(page.getByLabel('Count colorants and additives in it')).toBeChecked();
@@ -244,7 +246,7 @@ test('counts colorants in the unity formula only when asked, and saves the choic
 test('keeps edits, and the focus, when asked about unsaved changes', async ({ page }) => {
   await page.locator('#recipe-name').fill('Draft');
   await addStandardMaterial(page, 'Whiting', 20);
-  const newRecipe = page.getByRole('button', { name: 'New recipe' });
+  const newRecipe = page.getByRole('button', { name: 'Start a new recipe' });
   await newRecipe.click();
   // The question is at the top of the editor, starting on the safe answer.
   await expect(page.getByRole('group', { name: 'This recipe has changes that are not saved.' })).toBeVisible();
@@ -264,10 +266,11 @@ test('removes a material from the recipe and a saved recipe from the list', asyn
   await save(page);
   await expect(saved(page).locator('.saved-recipe', { hasText: 'Short lived' })).toBeVisible();
 
-  // It is open above, so the question says what happens to it.
+  // It is open in the editor, so the question says what happens to it. Remove is under More.
   const entry = saved(page).locator('.saved-recipe', { hasText: 'Short lived' });
+  await entry.getByRole('button', { name: 'More for Short lived' }).click();
   await entry.getByRole('button', { name: 'Remove Short lived' }).click();
-  await expect(entry).toContainText('It stays open above, as a recipe not saved yet.');
+  await expect(entry).toContainText('It stays open in the editor, as a recipe not saved yet.');
   await entry.getByRole('button', { name: 'Yes, remove' }).click();
   await expect(page.locator('.server-msg')).toContainText('Removed "Short lived".');
   await expect(entry).toHaveCount(0);
@@ -284,7 +287,8 @@ test('says when a recipe has no flux, and will not save it', async ({ page }) =>
   // Said beside the save buttons, where the person is looking.
   await expect(page.locator('.recipe-save-problem')).toContainText('no flux');
   await expect(page.locator('.server-msg')).toHaveCount(0);
-  await expect(saved(page)).not.toContainText('Just Silica');
+  // Nothing saved: no list of saved recipes.
+  await expect(saved(page)).toHaveCount(0);
 });
 
 test('asks for an amount for every material', async ({ page }) => {
@@ -303,14 +307,29 @@ test('asks for an amount for every material', async ({ page }) => {
   await expect(amount(page, 'Whiting')).not.toHaveAttribute('aria-invalid');
 });
 
-test('the instructions can be hidden, stay hidden, and come back', async ({ page }) => {
+test('the instructions open for a new account, can be hidden, stay hidden, and come back', async ({ page }) => {
   const heading = page.getByRole('heading', { name: 'How to use the recipe calculator' });
   await expect(heading).toBeVisible();
   await page.getByRole('button', { name: 'Hide these instructions' }).click();
   await page.reload();
   await expect(heading).toHaveCount(0);
-  await page.getByRole('button', { name: 'How to use this page' }).click();
+  await page.getByRole('button', { name: 'How the recipe calculator works' }).click();
   await expect(heading).toBeVisible();
+});
+
+test('with recipes saved, the instructions are one line and the saved recipes come first', async ({ page }) => {
+  await page.locator('#recipe-name').fill('Kept');
+  await addStandardMaterial(page, 'Whiting', 20);
+  await addStandardMaterial(page, 'Silica', 30);
+  await save(page);
+  await page.goto('/home');
+  await page.locator('.home-card', { hasText: 'Recipes' }).click();
+  await expect(page).toHaveURL(/\/recipe#saved-recipes$/);
+  await expect(page.getByRole('heading', { name: 'How to use the recipe calculator' })).toHaveCount(0);
+  await expect(page.getByRole('button', { name: 'How the recipe calculator works' })).toBeVisible();
+  await expect(page.locator('#saved-heading')).toBeFocused();
+  await saved(page).getByRole('button', { name: 'Open Kept' }).click();
+  await expect(page.locator('#recipe-name')).toHaveValue('Kept');
 });
 
 test('fits the narrowest phone, 320px, without scrolling sideways', async ({ page }) => {
@@ -320,7 +339,8 @@ test('fits the narrowest phone, 320px, without scrolling sideways', async ({ pag
   await addStandardMaterial(page, 'Wollastonite (NYAD 400)', 20);
   await addColorant(page, 'Spanish red iron oxide', 2);
   await save(page);
-  // The saved recipe's buttons are the widest row.
+  // The saved recipe's buttons, with More open, are the widest row.
+  await saved(page).getByRole('button', { name: 'More for Phone test' }).click();
   await expect(saved(page).getByRole('button', { name: 'Compare Phone test' })).toBeVisible();
   const overflow = await page.evaluate(
     () => globalThis.document.documentElement.scrollWidth - globalThis.document.documentElement.clientWidth

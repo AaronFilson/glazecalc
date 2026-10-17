@@ -71,6 +71,8 @@
     "contact": "Om iets over uw gegevens te vragen of een van uw rechten uit te oefenen, schrijft u naar <mail>privacy@glazecalcapp.com</mail>. U kunt ook <issues>een issue openen op GitHub</issues>, maar issues zijn openbaar: zet er nooit uw e-mailadres of iets persoonlijks in. Het meeste wat met uw gegevens te maken heeft, kunt u zelf doen op uw <account>accountpagina</account>.",
     "storedHeading": "Wat wordt bewaard, en waarom",
     "storedAccount": "<b>Uw account:</b> uw e-mailadres, en uw wachtwoord, alleen opgeslagen als eenrichtingshash (bcrypt), nooit als het wachtwoord zelf. Uw instellingen (zoals taal, regio en eenheden) en de lijst met grondstoffen die u in voorraad hebt, worden erbij bewaard. Een account heeft een e-mailadres nodig, om in te loggen en om een vergeten wachtwoord opnieuw in te stellen. Als u een account aanmaakt, wordt er een link naar het adres gestuurd om te bevestigen dat het van u is; tot dan gaat er alleen e-mail naartoe als u erom vraagt, zoals om uw wachtwoord opnieuw in te stellen.",
+    "storedEmailChange": "<b>Uw e-mailadres wijzigen:</b> de datum waarop uw adres voor het laatst is gewijzigd, zodat een verzoek om inloggen in twee stappen uit te zetten in de 30 dagen daarna nooit van een nieuw adres wordt aangenomen.",
+    "storedSignIn": "<b>Inloggen in twee stappen, als u het aanzet:</b> of het aanstaat; de sleutel die uw authenticator-app met Glazecalc deelt, versleuteld; van elke passkey de openbare sleutel (waarmee op zichzelf niet kan worden ingelogd), met de id en gegevens die uw apparaat eraan geeft, de naam die u eraan hebt gegeven, en wanneer hij is toegevoegd en voor het laatst is gebruikt; uw herstelcodes, alleen als een eenrichtings-hash met sleutel, zodat niemand ze kan teruglezen; en, als iemand uw wachtwoord invoert maar de tweede stap niet afrondt, wanneer Glazecalc u daarover voor het laatst heeft gemaild (hoogstens één keer per dag). Terwijl u inlogt, tussen uw wachtwoord en de tweede stap, bewaart de server 5 minuten lang een notitie over het inloggen, en houdt de pagina een kort token alleen in haar geheugen: geen nieuwe cookie, niets in de opslag van uw browser.",
     "storedSaved": "<b>Wat u opslaat:</b> uw recepten, grondstoffen, toevoegingen, notities, stookverslagen en adviezen, zoals u ze hebt geschreven. Alleen u kunt ze zien: er wordt niets tussen gebruikers gedeeld.",
     "storedTrial": "<b>Een proefperiode (Nu proberen):</b> geen e-mailadres of wachtwoord, alleen een verzonnen naam zoals “speckled quiet kilns”. Als u tijdens een proefperiode in dezelfde browser inlogt bij een account, gaat wat u in de proefperiode hebt gemaakt over naar dat account.",
     "storedResets": "<b>Links om een wachtwoord opnieuw in te stellen en e-maillinks:</b> welk account erom vroeg, wanneer, het adres waarnaar een link om een adres te bevestigen is gestuurd, en een vingerafdruk van elke link (niet de link zelf).",
@@ -96,6 +98,7 @@
     "keptAccount": "<b>Uw account en wat u opslaat:</b> tot u ze verwijdert. Accounts worden niet verwijderd omdat ze niet worden gebruikt.",
     "keptTrial": "<b>Een proefperiode:</b> 14 dagen vanaf de start; daarna wordt ze met alles erin verwijderd, tenzij u een account aanmaakt om ze te bewaren.",
     "keptResets": "<b>Links om een wachtwoord opnieuw in te stellen en e-maillinks:</b> een link om het wachtwoord opnieuw in te stellen werkt 30 minuten, en de registratie ervan wordt na ongeveer een uur verwijderd; een link om een adres te bevestigen werkt, en wordt bewaard, 24 uur.",
+    "keptSignIn": "<b>Inloggen in twee stappen:</b> elke authenticator-app, passkey en set herstelcodes totdat u die verwijdert, inloggen in twee stappen uitzet of uw account verwijdert. Een inlogpoging die op haar tweede stap wacht, wordt na 5 minuten verwijderd, en een app of passkey die u begon toe te voegen maar niet afrondde, na hoogstens 10.",
     "keptBackups": "<b>Back-ups:</b> versleutelde kopieën van de database worden 30 dagen bewaard, en kopieën van de schijf van de server 7 dagen. Een verwijderd account is dus binnen 30 dagen uit elke back-up verdwenen.",
     "keptDeletions": "<b>De registratie van een verwijderd account:</b> 37 dagen, net langer dan elke back-up.",
     "keptLogs": "<b>Logbestanden:</b> die van de webserver 14 dagen. De eigen logbestanden van de app en de database zijn begrensd in grootte (elk 50 MB), wat op een rustige site enkele dagen teruggaat. De kopieën van de schijf van de server bewaren logbestanden tot 7 dagen langer.",
@@ -103,6 +106,7 @@
     "keptInbound": "<b>E-mail die u naar Glazecalc stuurt:</b> 30 dagen in de opslag van Amazon, en in de inbox van de eigenaar zo lang als nodig is om u te antwoorden. Bij een verzoek over uw gegevens wordt een korte notitie (wanneer het binnenkwam, wat er werd gevraagd en wat er is gedaan) drie jaar bewaard.",
     "rightsHeading": "Uw rechten",
     "rightsIntro": "U kunt uw gegevens inzien, corrigeren, meenemen en verwijderen. Het meeste daarvan kunt u zelf doen op uw <account>accountpagina</account>:",
+    "rightsExport": "<b>Inzien en meenemen:</b> Mijn gegevens downloaden slaat alles op in één bestand (JSON), inclusief de namen en datums van uw methoden voor inloggen in twee stappen (nooit hun sleutels of codes), en uw recepten en grondstoffen als spreadsheets (CSV).",
     "rightsCorrect": "<b>Corrigeren:</b> wijzig uw instellingen en uw gegevens op elk moment. Om uw e-mailadres te wijzigen, opent u de link die naar het nieuwe adres is gestuurd; het oude adres krijgt, als het bevestigd was, bericht van de wijziging, en elk apparaat wordt uitgelogd.",
     "rightsDelete": "<b>Verwijderen:</b> Mijn account verwijderen verwijdert uw account en alles wat u hebt opgeslagen in één keer, en Proefperiode wissen doet hetzelfde voor een proefperiode. Kopieën in back-ups zijn binnen 30 dagen verdwenen.",
     "rightsSignOut": "<b>Overal uitloggen:</b> beëindigt de sessies van uw account op elk apparaat.",
@@ -146,10 +150,6 @@
       "includeAdditives": {
         "purpose": "Of nieuwe recepten hun toevoegingen meetellen in de Segerformule, zoals u het laatst hebt gekozen.",
         "lasts": "Tot u de opslag van uw browser wist."
-      },
-      "recipeHelp": {
-        "purpose": "Dat u de hulp op de receptpagina hebt verborgen.",
-        "lasts": "Tot u de hulp weer toont."
       },
       "print": {
         "purpose": "Uw laatste keuzes voor het afdrukken van een recept: het hele recept of een afweeglijst, en de hoeveelheid.",

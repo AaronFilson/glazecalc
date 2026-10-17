@@ -71,6 +71,8 @@
     "contact": "Aby zapytać o swoje dane lub skorzystać z któregokolwiek z przysługujących praw, należy napisać na adres <mail>privacy@glazecalcapp.com</mail>. Można też <issues>zgłosić sprawę w serwisie GitHub</issues>, ale zgłoszenia są publiczne: nigdy nie należy umieszczać w nich adresu e-mail ani niczego osobistego. Większość spraw dotyczących danych można załatwić samodzielnie na <account>stronie konta</account>.",
     "storedHeading": "Co jest przechowywane i dlaczego",
     "storedAccount": "<b>Konto:</b> adres e-mail oraz hasło, przechowywane wyłącznie jako jednokierunkowy skrót (bcrypt), nigdy jako samo hasło. Razem z nimi przechowywane są ustawienia (np. język, region i jednostki) oraz lista posiadanych surowców. Konto wymaga adresu e-mail, aby można było się logować i zresetować zapomniane hasło. Po założeniu konta na ten adres wysyłany jest link, który potwierdza, że to własny adres osoby zakładającej konto; do tego czasu wiadomości trafiają na niego tylko na prośbę, np. przy resetowaniu hasła.",
+    "storedEmailChange": "<b>Zmiana adresu e-mail:</b> data ostatniej zmiany adresu, aby prośba o wyłączenie logowania dwuetapowego nigdy nie została przyjęta z nowego adresu w ciągu 30 dni po zmianie.",
+    "storedSignIn": "<b>Logowanie dwuetapowe, jeśli zostanie włączone:</b> informacja, czy jest włączone; klucz, który aplikacja uwierzytelniająca współdzieli z Glazecalc, w postaci zaszyfrowanej; dla każdego klucza dostępu jego klucz publiczny (który sam nie pozwala się zalogować) wraz z identyfikatorem i danymi nadanymi przez urządzenie, nadana nazwa oraz data dodania i ostatniego użycia; kody odzyskiwania, wyłącznie jako jednokierunkowy skrót z kluczem, aby nikt nie mógł ich odczytać; a także, jeśli ktoś wpisze hasło, ale nie dokończy drugiego kroku, data ostatniej wiadomości e-mail z Glazecalc o tym (najwyżej raz na dobę). Podczas logowania, między hasłem a drugim krokiem, serwer przechowuje notatkę o logowaniu przez 5 minut, a strona trzyma krótki token tylko w pamięci: bez nowego pliku cookie i bez niczego w pamięci przeglądarki.",
     "storedSaved": "<b>Zapisane dane:</b> receptury, surowce, dodatki, notatki, dzienniki wypałów i porady, w takiej postaci, w jakiej zostały zapisane. Widzi je tylko właściciel konta: nic nie jest udostępniane między użytkownikami.",
     "storedTrial": "<b>Okres próbny („Wypróbuj teraz”):</b> bez adresu e-mail i hasła, tylko wymyślona nazwa, np. „speckled quiet kilns”. Jeśli w trakcie okresu próbnego nastąpi zalogowanie na konto w tej samej przeglądarce, to, co powstało w okresie próbnym, zostanie przeniesione na konto.",
     "storedResets": "<b>Linki do resetowania hasła i linki e-mail:</b> które konto poprosiło o link i kiedy, adres, na który wysłano link potwierdzający adres, oraz odcisk każdego linku (a nie sam link).",
@@ -96,6 +98,7 @@
     "keptAccount": "<b>Konto i zapisane dane:</b> do czasu ich usunięcia. Konta nie są usuwane z powodu nieużywania.",
     "keptTrial": "<b>Okres próbny:</b> 14 dni od jego rozpoczęcia, potem zostaje usunięty wraz z całą zawartością, chyba że zostanie założone konto, aby go zachować.",
     "keptResets": "<b>Linki do resetowania hasła i linki e-mail:</b> link do resetowania hasła działa przez 30 minut, a jego zapis jest usuwany po około godzinie; link potwierdzający adres działa i jest przechowywany przez 24 godziny.",
+    "keptSignIn": "<b>Logowanie dwuetapowe:</b> każda aplikacja uwierzytelniająca, klucz dostępu i zestaw kodów odzyskiwania do czasu ich usunięcia, wyłączenia logowania dwuetapowego lub usunięcia konta. Logowanie oczekujące na drugi krok jest usuwane po 5 minutach, a aplikacja lub klucz dostępu, których dodawanie rozpoczęto, ale nie dokończono, po najwyżej 10.",
     "keptBackups": "<b>Kopie zapasowe:</b> zaszyfrowane kopie bazy danych są przechowywane przez 30 dni, a kopie dysku serwera przez 7 dni. Usunięte konto znika więc ze wszystkich kopii zapasowych w ciągu 30 dni.",
     "keptDeletions": "<b>Zapis o usuniętym koncie:</b> 37 dni, czyli nieco dłużej niż jakakolwiek kopia zapasowa.",
     "keptLogs": "<b>Logi:</b> logi serwera WWW – 14 dni. Własne logi aplikacji i bazy danych są ograniczone rozmiarem (po 50 MB), co na mało odwiedzanej stronie obejmuje kilka ostatnich dni. Kopie dysku serwera przechowują logi jeszcze do 7 dni dłużej.",
@@ -103,6 +106,7 @@
     "keptInbound": "<b>Poczta wysyłana do projektu Glazecalc:</b> 30 dni w magazynie Amazon, a w skrzynce właściciela tak długo, jak trwa udzielenie odpowiedzi. W przypadku prośby dotyczącej danych krótka notatka (kiedy wpłynęła, o co poproszono i co zrobiono) jest przechowywana przez trzy lata.",
     "rightsHeading": "Prawa użytkownika",
     "rightsIntro": "Dane można przeglądać, poprawiać, przenosić i usuwać. Większość z tego można zrobić samodzielnie na <account>stronie konta</account>:",
+    "rightsExport": "<b>Wgląd i zabranie danych ze sobą:</b> Pobranie moich danych zapisuje wszystko w jednym pliku (JSON), w tym nazwy i daty metod logowania dwuetapowego (nigdy ich kluczy ani kodów), a receptury i surowce jako arkusze kalkulacyjne (CSV).",
     "rightsCorrect": "<b>Poprawianie:</b> ustawienia i zapisy można zmieniać w dowolnym momencie. Aby zmienić adres e-mail, należy otworzyć link wysłany na nowy adres; stary adres, jeśli był potwierdzony, otrzymuje powiadomienie o zmianie, a wszystkie urządzenia zostają wylogowane.",
     "rightsDelete": "<b>Usuwanie:</b> przycisk Usuń moje konto od razu usuwa konto i wszystko, co zostało zapisane, a przycisk Zakończ okres próbny robi to samo z okresem próbnym. Kopie w kopiach zapasowych znikają w ciągu 30 dni.",
     "rightsSignOut": "<b>Wylogowanie ze wszystkich urządzeń:</b> kończy sesje konta na wszystkich urządzeniach.",
@@ -146,10 +150,6 @@
       "includeAdditives": {
         "purpose": "Czy nowe receptury uwzględniają dodatki we wzorze Segera, zgodnie z ostatnim wyborem.",
         "lasts": "Do wyczyszczenia pamięci przeglądarki."
-      },
-      "recipeHelp": {
-        "purpose": "Informacja, że ukryto pomoc na stronie receptury.",
-        "lasts": "Do ponownego wyświetlenia pomocy."
       },
       "print": {
         "purpose": "Ostatnie ustawienia drukowania receptury: cała receptura lub porcja oraz wielkość porcji.",

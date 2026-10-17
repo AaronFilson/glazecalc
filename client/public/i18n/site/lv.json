@@ -71,6 +71,8 @@
     "contact": "Lai uzdotu jautājumu par saviem datiem vai izmantotu kādu no savām tiesībām, rakstiet uz <mail>privacy@glazecalcapp.com</mail>. Varat arī <issues>izveidot pieteikumu vietnē GitHub</issues>, taču pieteikumi ir publiski: nekad nenorādiet tajos savu e-pasta adresi vai kaut ko personisku. Lielāko daļu darbību ar saviem datiem varat veikt patstāvīgi savā <account>konta lapā</account>.",
     "storedHeading": "Ko glabājam un kāpēc",
     "storedAccount": "<b>Jūsu konts:</b> jūsu e-pasta adrese un parole, kas tiek glabāta tikai kā vienvirziena jaucējvērtība (bcrypt), nekad kā pati parole. Kopā ar to glabājas jūsu iestatījumi (piemēram, valoda, reģions un mērvienības) un jūsu krājumu saraksts. Kontam ir vajadzīga e-pasta adrese, lai pierakstītos un atiestatītu aizmirstu paroli. Kad izveidojat kontu, uz adresi tiek nosūtīta saite, lai apstiprinātu, ka tā ir jūsu; līdz tam uz to sūta e-pasta vēstules tikai tad, kad to lūdzat, piemēram, paroles atiestatīšanai.",
+    "storedEmailChange": "<b>E-pasta adreses maiņa:</b> datums, kad jūsu adrese pēdējoreiz mainīta, lai pieprasījumu izslēgt divpakāpju pierakstīšanos nepieņemtu no jaunas adreses 30 dienas pēc maiņas.",
+    "storedSignIn": "<b>Divpakāpju pierakstīšanās, ja to ieslēdzat:</b> vai tā ir ieslēgta; atslēga, ko jūsu autentifikatora lietotne kopīgo ar Glazecalc, šifrēta; par katru piekļuves atslēgu tās publiskā atslēga (ar kuru vien pierakstīties nevar), ID un dati, ko tai piešķir jūsu ierīce, jūsu dotais nosaukums, kā arī tās pievienošanas un pēdējās izmantošanas laiks; jūsu atkopšanas kodi, tikai kā atslēgota vienvirziena jaucējvērtība, lai neviens tos nevarētu atkal nolasīt; un, ja kāds ievada jūsu paroli, bet nepabeidz otro soli, kad Glazecalc jums par to pēdējoreiz sūtīja e-pastu (ne biežāk kā reizi dienā). Kamēr pierakstāties, starp paroli un otro soli, serveris 5 minūtes glabā pierakstīšanās ierakstu, bet lapa tikai savā atmiņā tur īsu marķieri: nekādas jaunas sīkdatnes, nekā jūsu pārlūkprogrammas krātuvē.",
     "storedSaved": "<b>Tas, ko saglabājat:</b> jūsu receptes, izejvielas, piedevas, piezīmes, apdedzināšanas žurnāli un padomi, tādi, kādus tos uzrakstījāt. Tos varat redzēt tikai jūs: starp lietotājiem nekas netiek kopīgots.",
     "storedTrial": "<b>Izmēģinājums (“Izmēģināt tūlīt”):</b> nav ne e-pasta adreses, ne paroles, tikai izdomāts vārds, piemēram, “speckled quiet kilns”. Ja izmēģinājuma laikā tajā pašā pārlūkprogrammā pierakstāties kontā, izmēģinājumā izveidotais tiek pārnests uz kontu.",
     "storedResets": "<b>Paroles atiestatīšanas un e-pasta saites:</b> kurš konts to pieprasīja un kad, adrese, uz kuru nosūtīta adreses apstiprināšanas saite, un katras saites nospiedums (nevis pati saite).",
@@ -96,6 +98,7 @@
     "keptAccount": "<b>Jūsu konts un tas, ko saglabājat:</b> līdz brīdim, kad tos dzēšat. Kontus nedzēš tāpēc, ka tie netiek izmantoti.",
     "keptTrial": "<b>Izmēģinājums:</b> 14 dienas no tā sākuma, pēc tam to dzēš kopā ar visu tā saturu, ja vien neizveidojat kontu, lai to saglabātu.",
     "keptResets": "<b>Paroles atiestatīšanas un e-pasta saites:</b> atiestatīšanas saite ir derīga 30 minūtes, un tās ieraksts tiek dzēsts pēc apmēram stundas; adreses apstiprināšanas saite ir derīga un tiek glabāta 24 stundas.",
+    "keptSignIn": "<b>Divpakāpju pierakstīšanās:</b> katra autentifikatora lietotne, piekļuves atslēga un atkopšanas kodu kopa tiek glabāta, līdz to noņemat, izslēdzat divpakāpju pierakstīšanos vai dzēšat savu kontu. Pierakstīšanās, kas gaida otro soli, tiek dzēsta pēc 5 minūtēm, bet lietotne vai piekļuves atslēga, ko sākāt pievienot, bet nepabeidzāt, ne vēlāk kā pēc 10 minūtēm.",
     "keptBackups": "<b>Rezerves kopijas:</b> šifrētas datubāzes kopijas glabā 30 dienas, servera diska kopijas – 7 dienas. Tādējādi dzēsts konts 30 dienu laikā izzūd no visām rezerves kopijām.",
     "keptDeletions": "<b>Dzēsta konta ieraksts:</b> 37 dienas, nedaudz ilgāk nekā jebkura rezerves kopija.",
     "keptLogs": "<b>Žurnālfaili:</b> tīmekļa servera žurnālfailus glabā 14 dienas. Lietotnes un datubāzes žurnālfailus ierobežo to izmērs (katram 50 MB), kas vietnē ar nelielu noslodzi aptver vairākas dienas. Servera diska kopijās žurnālfaili saglabājas vēl līdz 7 dienām.",
@@ -103,6 +106,7 @@
     "keptInbound": "<b>E-pasta vēstules, ko sūtāt uz Glazecalc:</b> 30 dienas uzņēmuma Amazon krātuvē, bet īpašnieka pastkastītē tik ilgi, cik vajadzīgs, lai jums atbildētu. Par pieprasījumu saistībā ar jūsu datiem trīs gadus glabā īsu piezīmi (kad tas saņemts, kas tika lūgts un kas izdarīts).",
     "rightsHeading": "Jūsu tiesības",
     "rightsIntro": "Jūs varat savus datus apskatīt, labot, saņemt un dzēst. Lielāko daļu no tā varat izdarīt patstāvīgi savā <account>konta lapā</account>:",
+    "rightsExport": "<b>Apskatiet un ņemiet līdzi:</b> Lejupielādēt manus datus saglabā visu vienā failā (JSON), tostarp jūsu divpakāpju pierakstīšanās veidu nosaukumus un datumus (nekad ne to atslēgas vai kodus), kā arī jūsu receptes un izejvielas kā izklājlapas (CSV).",
     "rightsCorrect": "<b>Labot:</b> iestatījumus un ierakstus varat mainīt jebkurā laikā. Lai mainītu e-pasta adresi, atveriet saiti, kas nosūtīta uz jauno adresi; vecajai adresei, ja tā bija apstiprināta, tiek paziņots par izmaiņām, un konts tiek izrakstīts visās ierīcēs.",
     "rightsDelete": "<b>Dzēst:</b> poga Dzēst manu kontu uzreiz dzēš jūsu kontu un visu saglabāto, un “Atmest izmēģinājumu” to pašu dara ar izmēģinājumu. Dati rezerves kopijās izzūd 30 dienu laikā.",
     "rightsSignOut": "<b>Izrakstīties visās ierīcēs:</b> beidz jūsu konta sesijas visās ierīcēs.",
@@ -146,10 +150,6 @@
       "includeAdditives": {
         "purpose": "Vai jaunās receptēs piedevas tiek ieskaitītas Zēgera formulā, kā pēdējo reizi izvēlējāties.",
         "lasts": "Līdz notīrāt pārlūkprogrammas krātuvi."
-      },
-      "recipeHelp": {
-        "purpose": "Tas, ka paslēpāt palīdzību receptes lapā.",
-        "lasts": "Līdz atkal parādāt palīdzību."
       },
       "print": {
         "purpose": "Jūsu pēdējās receptes drukāšanas izvēles: visa recepte vai porcija, un porcijas lielums.",

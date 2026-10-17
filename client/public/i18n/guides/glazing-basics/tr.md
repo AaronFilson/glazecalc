@@ -275,7 +275,7 @@ Hedefler kaynağa göre değişir. Digitalfire daldırma sırları için 1,40–
 
 ### Sırrın sürülmesi
 
-Önce bisküvideki tozu ve yağı temizleyin. Digitalfire yıkamak yerine basınçlı hava, yumuşak bir fırça ya da hafifçe nemli bir sünger kullanmayı tercih eder.
+Önce bisküvideki tozu ve yağı yıkamak yerine hafifçe nemli bir süngerle temizleyin; yıkamak bisküviyi suya doyurur. Tozu basınçlı havayla üflemeyin ve kuru fırçalamayın: bu, silis tozunu havaya karıştırır ([Güvenli karıştırma ve havalandırma](/guides/safe-mixing#cleaning)).
 
 - **Daldırma** “genellikle eşit kalınlıkta bir kaplama verir” (Robin Hopper). Kalınlığı daldırma süresi belirler: Digitalfire, ticari daldırma sırlarının 5 saniyelik daldırma için yaklaşık 1,4, 1 saniyelik daldırma için 1,5 özgül ağırlıkta hazırlandığını belirtir.
 - **Dökme** yöntemindeki sır “daldırmada kullanılandan biraz daha sulu” olmalıdır; dökülen sırların üst üste bindiği yerlerde kat iki katına çıkar ve akabilir.

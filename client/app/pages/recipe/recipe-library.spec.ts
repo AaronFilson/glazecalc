@@ -1,5 +1,6 @@
 import { TestBed } from '@angular/core/testing';
-import { testProviders, text } from '../../testing/test-providers';
+import { PreferencesService } from '../../core/preferences.service';
+import { API, httpMock, testProviders, text } from '../../testing/test-providers';
 import { LibraryItem, RecipeLibrary } from './recipe-library';
 import { RecipeHelp } from './recipe-help';
 
@@ -140,9 +141,11 @@ describe('RecipeHelp', () => {
     localStorage.clear();
     TestBed.configureTestingModule({ providers: testProviders() });
   });
+  afterEach(() => httpMock().verify());
 
-  const create = async () => {
+  const create = async (empty: boolean | null) => {
     const fixture = TestBed.createComponent(RecipeHelp);
+    fixture.componentRef.setInput('empty', empty);
     await fixture.whenStable();
     const click = async (label: string) => {
       const button = [...fixture.nativeElement.querySelectorAll('button')].find(
@@ -153,22 +156,65 @@ describe('RecipeHelp', () => {
     };
     return { fixture, click };
   };
+  const saved = (value: string) =>
+    httpMock()
+      .expectOne((req) => req.method === 'PUT' && req.url === API + '/preferences')
+      .flush({ recipeHelp: value });
 
-  it('shows the instructions until hidden, remembers that, and brings them back', async () => {
-    const first = await create();
-    expect(text(first.fixture, 'h2')).toBe('How to use the recipe calculator');
+  it('opens by itself only for an account with no recipes yet; otherwise it is one line', async () => {
+    const empty = await create(true);
+    expect(text(empty.fixture, 'h2')).toBe('How to use the recipe calculator');
+    // Not known yet, or with recipes: folded to one line.
+    for (const state of [null, false]) {
+      const folded = await create(state);
+      expect(folded.fixture.nativeElement.querySelector('.recipe-help')).toBeNull();
+      expect(text(folded.fixture, '.help-reopen button')).toBe('How the recipe calculator works');
+      expect(folded.fixture.nativeElement.querySelector('.help-reopen button').getAttribute('aria-expanded')).toBe(
+        'false'
+      );
+    }
+  });
+
+  it('stays as chosen, saved with the account, and brings the focus to what replaced the button', async () => {
+    const first = await create(true);
     await first.click('Hide these instructions');
+    saved('hidden');
     expect(first.fixture.nativeElement.querySelector('.recipe-help')).toBeNull();
-    // The focus goes to the link that replaced the button.
-    expect(document.activeElement?.textContent?.trim()).toBe('How to use this page');
-    expect(localStorage.getItem('recipeHelp')).toBe('hidden');
+    expect(document.activeElement?.textContent?.trim()).toBe('How the recipe calculator works');
+    expect(TestBed.inject(PreferencesService).recipeHelp()).toBe('hidden');
 
-    // A later visit starts with them hidden.
-    const later = await create();
-    expect(later.fixture.nativeElement.querySelector('.recipe-help')).toBeNull();
-    await later.click('How to use this page');
+    // Hidden even for an empty account, once chosen; opened, it stays open with recipes too.
+    const later = await create(false);
+    await later.click('How the recipe calculator works');
+    saved('shown');
     expect(text(later.fixture, 'h2')).toBe('How to use the recipe calculator');
     expect(document.activeElement?.id).toBe('recipe-help-heading');
-    expect(localStorage.getItem('recipeHelp')).toBeNull();
+    expect((await create(false)).fixture.nativeElement.querySelector('.recipe-help')).not.toBeNull();
+  });
+
+  it('opened for an account with no recipes, it does not fold when the first one is saved', async () => {
+    const page = await create(null);
+    expect(page.fixture.nativeElement.querySelector('.recipe-help')).toBeNull();
+    page.fixture.componentRef.setInput('empty', true);
+    await page.fixture.whenStable();
+    expect(text(page.fixture, 'h2')).toBe('How to use the recipe calculator');
+    page.fixture.componentRef.setInput('empty', false);
+    await page.fixture.whenStable();
+    expect(text(page.fixture, 'h2')).toBe('How to use the recipe calculator');
+    // The next visit, with recipes, finds it folded.
+    expect((await create(false)).fixture.nativeElement.querySelector('.recipe-help')).toBeNull();
+  });
+
+  it('keeps the choice while the page is open when saving it fails, with the focus on what replaced the button', async () => {
+    const page = await create(true);
+    await page.click('Hide these instructions');
+    httpMock()
+      .expectOne((req) => req.method === 'PUT' && req.url === API + '/preferences')
+      .flush({}, { status: 503, statusText: 'Unavailable' });
+    await page.fixture.whenStable();
+    // Not kept with the account, but still hidden here.
+    expect(TestBed.inject(PreferencesService).recipeHelp()).toBe('auto');
+    expect(page.fixture.nativeElement.querySelector('.recipe-help')).toBeNull();
+    expect(document.activeElement?.textContent?.trim()).toBe('How the recipe calculator works');
   });
 });

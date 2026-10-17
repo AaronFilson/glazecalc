@@ -1,5 +1,6 @@
 import { Component, computed, inject, input, output, signal } from '@angular/core';
 import { TranslocoDirective } from '@jsverse/transloco';
+import { marker } from '@jsverse/transloco-keys-manager/marker';
 import { PAGE_LANGUAGE } from '../i18n/language';
 import { RichText } from '../i18n/rich-text';
 import { formatFormula } from '../../../lib/chemistry';
@@ -21,10 +22,18 @@ import { fieldsText, firstOf } from './options';
 
 let nextId = 0;
 
+/** Stands in for the formula in its sentence, which is split there to set the formula apart. */
+const FORMULA_MARK = '';
+
+/** How many records are listed until all are asked for: the standard materials run to well over a hundred. */
+const FIRST_SHOWN = 25;
+
 /**
  * The standard materials or additives: a table to filter by name or alias,
- * category and region, with each record's status, substitutes, source and
- * hazards. Old records stay in the list, marked, for comparing with old recipes.
+ * category and region, the first few until all are asked for, each with its
+ * weights and analysis and, on demand, its notes, formula, status,
+ * substitutes, source and hazards. Old records stay in the list, marked, for
+ * comparing with old recipes.
  */
 @Component({
   selector: 'gc-standard-list',
@@ -71,7 +80,7 @@ let nextId = 0;
         </select>
       </div>
       <p class="standard-count" role="status" [id]="id + '-count'">
-        {{ t('standard.showing', { shown: shown().length, total: records().length, noun: noun() }) }}
+        {{ t('standard.showing', { shown: listed().length, total: records().length, noun: noun() }) }}
       </p>
     </div>
     <!-- The table scrolls on its own on a narrow screen, so the page does not. -->
@@ -82,66 +91,69 @@ let nextId = 0;
             <th>{{ t('standard.name') }}</th>
             <th>{{ t('standard.equivalentWeight') }}</th>
             <th>{{ t('standard.firedWeight') }}</th>
-            <th>{{ t('standard.notes') }}</th>
             <th>{{ t('standard.analysis') }}</th>
-            <th>{{ t('standard.formula') }}</th>
           </tr>
         </thead>
         <tbody>
-          @for (record of shown(); track record._id ?? record.name) {
+          @for (record of listed(); track record._id ?? record.name) {
             <tr [class.not-current]="record.status && record.status !== 'current'">
-              <td>
+              <td class="standard-name">
                 {{ record.name }}
                 @if (statusText(record); as status) {
                   <span class="status-badge">{{ status }}</span>
                 }
+                <!-- What it is, its formula, what is like it and where the figures come from: on demand. -->
+                <details class="standard-detail">
+                  <summary>
+                    {{ t('standard.details') }}<span class="visually-hidden">: {{ record.name }}</span>
+                  </summary>
+                  <p class="standard-notes">{{ standardText(record, firstOf(record.notes)) }}</p>
+                  @if (record.rawformula) {
+                    <!-- The formula is never translated, though the sentence around it is. -->
+                    @let formulaParts = t(formulaLine, { formula: FORMULA_MARK }).split(FORMULA_MARK);
+                    <p class="standard-formula">
+                      {{ formulaParts[0] }}<span translate="no">{{ formatFormula(record.rawformula) }}</span
+                      >{{ formulaParts.slice(1).join('') }}
+                    </p>
+                  }
+                  @if (record.substitutes?.length) {
+                    @if (record.status && record.status !== 'current') {
+                      <p>
+                        <gc-rich [text]="t('standard.useInstead', { list: listOf(record.substitutes!, 'unit') })" />
+                      </p>
+                    } @else {
+                      <p>{{ t('standard.similar', { list: listOf(record.substitutes!, 'unit') }) }}</p>
+                    }
+                  }
+                  @if (record.replaces?.length) {
+                    <p>{{ t('standard.replaces', { list: listOf(record.replaces!, 'unit') }) }}</p>
+                  }
+                  @if (record.aliases?.length) {
+                    <p>{{ t('standard.aliases', { list: listOf(record.aliases!, 'unit') }) }}</p>
+                  }
+                  @if (record.manufacturer) {
+                    <p>{{ t('standard.madeBy', { name: record.manufacturer }) }}</p>
+                  }
+                  @if (record.source; as source) {
+                    <p>
+                      {{ t('standard.source') }}
+                      @if (source.url) {
+                        <a [href]="source.url" target="_blank" rel="noopener">{{ source.name }}</a>
+                      } @else {
+                        {{ source.name }}
+                      }
+                      @if (source.date) {
+                        ({{ source.date }})
+                      }
+                    </p>
+                  }
+                  @if (record.hazards) {
+                    <p>{{ t('standard.hazardsLine', { hazards: standardText(record, record.hazards) }) }}</p>
+                  }
+                </details>
               </td>
               <td>{{ record.equivalent | gcPlain }}</td>
               <td>{{ record.formulaweight | gcPlain }}</td>
-              <td class="standard-notes">
-                {{ standardText(record, firstOf(record.notes)) }}
-                @if (record.substitutes?.length) {
-                  @if (record.status && record.status !== 'current') {
-                    <p class="standard-detail">
-                      <gc-rich [text]="t('standard.useInstead', { list: listOf(record.substitutes!, 'unit') })" />
-                    </p>
-                  } @else {
-                    <p class="standard-detail">
-                      {{ t('standard.similar', { list: listOf(record.substitutes!, 'unit') }) }}
-                    </p>
-                  }
-                }
-                @if (record.replaces?.length) {
-                  <p class="standard-detail">
-                    {{ t('standard.replaces', { list: listOf(record.replaces!, 'unit') }) }}
-                  </p>
-                }
-                @if (record.aliases?.length) {
-                  <p class="standard-detail">{{ t('standard.aliases', { list: listOf(record.aliases!, 'unit') }) }}</p>
-                }
-                @if (record.manufacturer) {
-                  <p class="standard-detail">{{ t('standard.madeBy', { name: record.manufacturer }) }}</p>
-                }
-                @if (record.source; as source) {
-                  <p class="standard-detail">
-                    {{ t('standard.source') }}
-                    @if (source.url) {
-                      <a [href]="source.url" target="_blank" rel="noopener">{{ source.name }}</a>
-                    } @else {
-                      {{ source.name }}
-                    }
-                    @if (source.date) {
-                      ({{ source.date }})
-                    }
-                  </p>
-                }
-                @if (record.hazards) {
-                  <details class="standard-detail">
-                    <summary>{{ t('standard.hazards') }}</summary>
-                    {{ standardText(record, record.hazards) }}
-                  </details>
-                }
-              </td>
               <td>
                 @if (record.noChemistry) {
                   <span class="muted">{{ t('standard.noChemistry') }}</span>
@@ -151,11 +163,10 @@ let nextId = 0;
                   {{ fieldsText(record) }}
                 }
               </td>
-              <td translate="no">{{ formatFormula(record.rawformula) }}</td>
             </tr>
           } @empty {
             <tr>
-              <td colspan="6" class="muted">
+              <td colspan="4" class="muted">
                 @if (records().length) {
                   {{ t('standard.nothingMatches') }}
                 } @else if (failed()) {
@@ -169,7 +180,36 @@ let nextId = 0;
         </tbody>
       </table>
     </div>
-  </ng-container>`
+    @if (shown().length > listed().length) {
+      <button type="button" class="btn btn-light border standard-all" (click)="showAll.set(true)">
+        {{ t('standard.showAll', { count: shown().length, noun: noun() }) }}
+      </button>
+    }
+  </ng-container>`,
+  styles: `
+    .standard-name {
+      min-width: 12rem;
+    }
+    .standard-detail p {
+      margin: 0.25rem 0 0;
+    }
+    .standard-notes {
+      color: var(--gc-text);
+    }
+    .standard-detail summary {
+      display: inline-block;
+      padding: 0.15rem 0;
+    }
+    /* On a phone, a finger's height to open. */
+    @media (max-width: 767.98px) {
+      .standard-detail summary {
+        padding: 0.6rem 0;
+      }
+    }
+    .standard-all {
+      margin-top: 0.5rem;
+    }
+  `
 })
 export class StandardList {
   private readonly byName = byNameIn(inject(PAGE_LANGUAGE));
@@ -181,6 +221,9 @@ export class StandardList {
   readonly retry = output<void>();
 
   protected readonly id = 'standard-' + nextId++;
+  protected readonly FORMULA_MARK = FORMULA_MARK;
+  /** Named here, since the keys manager does not read a key in a template's @let. */
+  protected readonly formulaLine = marker('standard.formulaLine');
   protected readonly regions = REGIONS;
   protected readonly filter = signal('');
   protected readonly category = signal('');
@@ -199,6 +242,12 @@ export class StandardList {
       .filter(([value]) => present.has(value))
       .map(([value, label]) => ({ value, label }));
   });
+
+  /** Every record is listed once asked for, or once a filter or kind narrows the list. */
+  protected readonly showAll = signal(false);
+  protected readonly listed = computed(() =>
+    this.showAll() || this.filter().trim() || this.category() ? this.shown() : this.shown().slice(0, FIRST_SHOWN)
+  );
 
   protected readonly shown = computed(() =>
     this.records()

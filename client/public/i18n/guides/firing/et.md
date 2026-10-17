@@ -248,7 +248,7 @@ Käsijuhtimisega ahjus on vaateava ainus reaalajas signaal, seepärast peab komp
 
 ### Pärast põletust
 
-Orton loeb painet nagu kellasihverplaati. Paindumata koonus osutab üles, kella 12 asendisse. Lõpp-punkt on 90° paine, mille puhul tipp on alusega samal kõrgusel ja mida Orton nimetab kella 5 asendiks: punkt, mille juures tabeli temperatuurid on mõõdetud. Ahjuplaati puudutav koonus on kella 6 asendis; kella 4 asendi ja ahjuplaadi puudutamise vahel on erinevus väike, „tavaliselt 1 või 2 kraadi“.
+Orton loeb painet nagu kellasihverplaati. Paindumata koonus osutab üles, kella 12 asendisse; ahjuplaati puudutav koonus on kella 6 asendis. Lõpp-punkt on 90° paine, mille puhul tipp on alusega samal kõrgusel: punkt, mille juures tabeli temperatuurid on mõõdetud, ja Orton loeb õigesti põletatuks koonuse, mis on ükskõik kus kella 5 ja kella 6 asendi vahel. Kella 4 asendi ja ahjuplaadi puudutamise vahel on erinevus väike, „tavaliselt 1 või 2 kraadi“.
 
 Table: Koonusekomplekti lugemine pärast põletust (näide: koonused 5, 6 ja 7 koonuse 6 glasuuri jaoks)
 Label: Koonusekomplekti lugemine

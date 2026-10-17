@@ -39,6 +39,7 @@
     "guides": "Guides",
     "about": "About",
     "account": "Account",
+    "trialAccount": "Trial account",
     "accountTitle": "Your account and settings",
     "signOut": "Sign out",
     "createAccount": "Create a free account"
@@ -66,7 +67,8 @@
     "problem": "Report a problem",
     "pottery": "Handmade pottery: Updraft Pottery Studio",
     "copyright": "© 2017–2026 Aaron Filson / Candling Development Studio · Free and open source (MIT License)",
-    "languages": "Languages"
+    "languages": "Languages",
+    "language": "Language:"
   },
   "numbers": {
     "notANumber": "Enter a number, such as {example}.",
@@ -222,23 +224,26 @@
     "soldIn": "Sold in",
     "showing": "Showing {shown} of {noun, select, additives {{total, plural, one {# additive} other {# additives}}} other {{total, plural, one {# material} other {# materials}}}}",
     "name": "Name",
-    "equivalentWeight": "Equivalent Weight",
-    "firedWeight": "Fired Weight",
+    "equivalentWeight": "Equivalent weight",
+    "firedWeight": "Fired weight",
     "notes": "Notes",
     "analysis": "Analysis",
+    "details": "Details",
     "formula": "Formula",
+    "formulaLine": "Formula: {formula}",
     "useInstead": "<b>Use instead:</b> {list}",
     "similar": "Similar: {list}",
     "replaces": "Replaces: {list}",
     "aliases": "Also called: {list}",
     "madeBy": "Made by: {name}",
     "source": "Source:",
-    "hazards": "Hazards",
+    "hazardsLine": "Hazards: {hazards}",
     "noChemistry": "No chemistry: left out of the unity formula",
     "countedAs": "Counted as {name}",
     "nothingMatches": "Nothing matches. Try another name, kind or region.",
     "loading": "Loading...",
-    "notFetched": "The list could not be fetched. <retry>Try again</retry>"
+    "notFetched": "The list could not be fetched. <retry>Try again</retry>",
+    "showAll": "{noun, select, additives {{count, plural, one {Show the # additive} other {Show all # additives}}} other {{count, plural, one {Show the # material} other {Show all # materials}}}}"
   },
   "chemistryForm": {
     "name": "{noun, select, additive {Give the additive a name.} other {Give the material a name.}}",

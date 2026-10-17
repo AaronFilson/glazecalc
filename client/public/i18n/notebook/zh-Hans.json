@@ -1,0 +1,85 @@
+{
+  "home": {
+    "title": "工作室笔记本",
+    "signedInAs": "当前登录账户：{email}。",
+    "trying": "正在以“{name}”的身份试用 Glazecalc。先从一个配方开始。",
+    "welcomeBack": "从上次停下的地方继续。",
+    "sections": {
+      "recipe": {
+        "title": "配方",
+        "text": "用原料和用量配出一种釉，查看它的釉式并保存。"
+      },
+      "material": {
+        "title": "原料",
+        "text": "根据化学式或供应商的化学分析，添加您自己的原料。"
+      },
+      "additive": {
+        "title": "添加剂和着色剂",
+        "text": "记录在基础釉之外外加的着色剂和乳浊剂。"
+      },
+      "firing": {
+        "title": "烧窑记录",
+        "text": "记录每次烧窑的时间、温度和测温锥。"
+      },
+      "notes": {
+        "title": "笔记",
+        "text": "记录试验结果和其他值得记住的事。"
+      },
+      "advice": {
+        "title": "釉料建议",
+        "text": "关于配料、施釉和烧成的建议，以及您自己的建议。"
+      },
+      "guides": {
+        "title": "指南",
+        "text": "从釉是什么到如何烧成，以及如何在整个过程中保证每个人的安全。"
+      }
+    },
+    "newHere": "刚接触釉式？<advice>建议页面</advice>讲解基础知识，<about>关于页面</about>介绍 Glazecalc 的工作原理。"
+  },
+  "firing": {
+    "title": "烧窑记录",
+    "lead": "记录每次烧窑：时间、温度、测温锥和关于窑的备注。",
+    "titleLabel": "烧窑名称：",
+    "kiln": "窑：",
+    "date": "烧窑日期：",
+    "notes": "烧窑备注：",
+    "fieldSelect": "选择字段并添加到烧窑记录：",
+    "addField": "添加字段",
+    "included": "已添加的字段：",
+    "moveLeft": "字段左移",
+    "moveRight": "字段右移",
+    "removeField": "移除字段",
+    "addRow": "在烧窑表中添加一行",
+    "recordHeading": "记录烧窑",
+    "rowActions": "行操作",
+    "cell": "{field}，第 {row} 行",
+    "removeRow": "移除行",
+    "save": "保存",
+    "storedHeading": "我保存的烧窑记录：",
+    "storedNotes": "备注：{notes}",
+    "titleMissing": "请为这次烧窑填写名称。",
+    "fieldsMissing": "请至少添加一个要记录的字段，例如{example}。",
+    "chooseField": "选择要添加的字段，然后点击“添加字段”。",
+    "fetchFailed": "获取烧窑记录信息时出错。",
+    "saved": "已成功将烧窑记录添加到服务器。",
+    "saveFailed": "错误：向服务器发送的请求失败。"
+  },
+  "notes": {
+    "title": "笔记",
+    "lead": "关于釉的其他值得记住的事。",
+    "titleLabel": "标题：",
+    "content": "笔记内容：",
+    "save": "保存",
+    "mineHeading": "我保存的笔记：",
+    "titleMissing": "请为笔记填写标题。",
+    "contentMissing": "请填写笔记内容。",
+    "untitled": "无标题笔记",
+    "fetchFailed": "获取笔记信息时出错。",
+    "saved": "已成功将笔记添加到服务器。",
+    "saveFailed": "错误：向服务器发送的请求失败。"
+  },
+  "trash": {
+    "title": "回收站",
+    "comingSoon": "回收站功能将在 Glazecalc 的下一个版本中推出。在此之前，请谨慎使用删除/移除：一旦删除，信息就会丢失。"
+  }
+}

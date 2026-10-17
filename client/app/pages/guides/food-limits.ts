@@ -28,12 +28,29 @@ const CATEGORY: Record<string, string> = {
   jpSmall: marker('guides.food.category.jpSmall'),
   jpLarge: marker('guides.food.category.jpLarge'),
   jpStorage: marker('guides.food.category.jpStorage'),
-  jpCooking: marker('guides.food.category.jpCooking')
+  jpCooking: marker('guides.food.category.jpCooking'),
+  krFlat: marker('guides.food.category.krFlat'),
+  krSmall: marker('guides.food.category.krSmall'),
+  krMedium: marker('guides.food.category.krMedium'),
+  krStorage: marker('guides.food.category.krStorage'),
+  krCooking: marker('guides.food.category.krCooking'),
+  twFlat: marker('guides.food.category.twFlat'),
+  twSmall: marker('guides.food.category.twSmall'),
+  twLarge: marker('guides.food.category.twLarge'),
+  myFlat: marker('guides.food.category.myFlat'),
+  mySmall: marker('guides.food.category.mySmall'),
+  myLarge: marker('guides.food.category.myLarge'),
+  myCooking: marker('guides.food.category.myCooking')
 };
 /** How a sample is judged. */
 const JUDGED: Record<NonNullable<FoodLimit['judged']>, string> = {
   average: marker('guides.food.judged.average'),
   each: marker('guides.food.judged.each')
+};
+/** The same, where the law judges other than six pieces (Malaysia's four). */
+const JUDGED_OF: Record<NonNullable<FoodLimit['judged']>, string> = {
+  average: marker('guides.food.judged.averageOf'),
+  each: marker('guides.food.judged.eachOf')
 };
 
 /**
@@ -75,7 +92,11 @@ const JUDGED: Record<NonNullable<FoodLimit['judged']>, string> = {
                 <th scope="row">
                   {{ t(category[limit.category]!) }}
                   @if (limit.judged) {
-                    <span class="muted">({{ t(judged[limit.judged]) }})</span>
+                    <span class="muted"
+                      >({{
+                        limit.pieces ? t(judgedOf[limit.judged], { count: limit.pieces }) : t(judged[limit.judged])
+                      }})</span
+                    >
                   }
                 </th>
                 <td class="num">{{ amount(limit.lead, limit) }}</td>
@@ -101,6 +122,9 @@ const JUDGED: Record<NonNullable<FoodLimit['judged']>, string> = {
         @if (found.rules.atMost) {
           {{ t('guides.food.atMost') }}
         }
+        @if (hasPpm()) {
+          {{ t('guides.food.ppm') }}
+        }
         @if (found.rules.note; as note) {
           {{ words(note) }}
         }
@@ -119,8 +143,11 @@ export class FoodLimits {
   protected readonly regionName = this.choice.name;
   protected readonly category = CATEGORY;
   protected readonly judged = JUDGED;
+  protected readonly judgedOf = JUDGED_OF;
   protected readonly found = computed(() => (this.region() ? foodRulesFor(this.region()) : null));
   protected readonly checked = computed(() => earliest(this.found() ? [this.found()!.rules.checked] : []));
+  /** Taiwan's law writes ppm: said once, under the table, as mg/L of the test solution. */
+  protected readonly hasPpm = computed(() => (this.found()?.rules.limits ?? []).some((limit) => limit.unit === 'ppm'));
   protected readonly hasCadmium = computed(() =>
     (this.found()?.rules.limits ?? []).some((limit) => limit.cadmium !== undefined)
   );

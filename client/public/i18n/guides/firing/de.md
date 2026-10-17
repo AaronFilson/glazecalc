@@ -248,7 +248,7 @@ An einem handgeschalteten Ofen ist das Schauloch Ihr einziges Signal während de
 
 ### Nach dem Brand
 
-Orton liest die Biegung wie ein Zifferblatt. Ein ungebogener Kegel zeigt nach oben, auf 12 Uhr. Der Endpunkt ist eine Biegung um 90°, die Spitze auf gleicher Höhe mit dem Fuß, von Orton die 5-Uhr-Stellung genannt: der Punkt, für den die Temperaturen der Tabelle gemessen sind. Ein Kegel, der die Platte berührt, steht auf 6 Uhr; zwischen 4 Uhr und dem Berühren der Platte ist der Unterschied klein, „meist 1 oder 2 Grad“.
+Orton liest die Biegung wie ein Zifferblatt. Ein ungebogener Kegel zeigt nach oben, auf 12 Uhr; ein Kegel, der die Platte berührt, steht auf 6 Uhr. Der Endpunkt ist eine Biegung um 90°, die Spitze auf gleicher Höhe mit dem Fuß: der Punkt, für den die Temperaturen der Tabelle gemessen sind, und Orton wertet einen Kegel irgendwo zwischen 5 und 6 Uhr als richtig gebrannt. Zwischen 4 Uhr und dem Berühren der Platte ist der Unterschied klein, „meist 1 oder 2 Grad“.
 
 Table: Einen Kegelsatz nach dem Brand ablesen (Beispiel: Kegel 5, 6 und 7 für einen Glasurbrand auf Kegel 6)
 Label: Kegelsatz ablesen

@@ -29,6 +29,29 @@ describe('FiringPage', () => {
     return { fixture, page: fixture.componentInstance as unknown as Record<string, any> };
   };
 
+  it('says what to do while there is nothing yet: no saved firings, no fields, no rows', async () => {
+    const { fixture, page } = await create();
+    expect(text(fixture, '#stored-heading + p')).toBe('None yet. Saved firings appear here.');
+    expect(text(fixture, '.firing-table-empty')).toBe('Add a field above, then add rows.');
+    expect(fixture.nativeElement.querySelector('.firing-table')).toBeNull();
+    // Add a row waits for a field, and says so beside it.
+    const addRow = [...fixture.nativeElement.querySelectorAll('button')].find(
+      (b: Element) => b.textContent?.trim() === 'Add a row to the firing table'
+    ) as HTMLButtonElement;
+    expect(addRow.disabled).toBe(true);
+    expect(addRow.getAttribute('aria-describedby')).toBe('add-row-why');
+    expect(text(fixture, '#add-row-why')).toBe('Add a field first.');
+    // Labels above their fields, without colons.
+    expect(text(fixture, 'label[for=firing-title]')).toBe('Title');
+    expect(fixture.nativeElement.querySelector('#firing-title').classList).toContain('form-control');
+    page['addField']();
+    await fixture.whenStable();
+    expect(addRow.disabled).toBe(false);
+    expect(addRow.getAttribute('aria-describedby')).toBeNull();
+    expect(fixture.nativeElement.querySelector('#add-row-why')).toBeNull();
+    expect(skippedHeadings(fixture)).toEqual([]);
+  });
+
   it('builds a log table from the chosen fields and typed cells', async () => {
     const { fixture, page } = await create();
     page['selectedField'].set('Time');
@@ -98,7 +121,8 @@ describe('FiringPage', () => {
 
     expect(page['log']().fields).toEqual([]);
     expect(page['title']()).toBe('');
-    expect(text(fixture, '.stored-firing')).toContain('Title: Bisque, Using kiln: Electric');
+    expect(text(fixture, '.stored-firing h3')).toBe('Bisque');
+    expect(text(fixture, '.stored-firing')).toContain('Fired in Electric on Sunday, October 4, 2026.');
     expect(text(fixture, '.stored-firing')).toContain('Sunday, October 4, 2026');
   });
 

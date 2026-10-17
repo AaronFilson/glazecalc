@@ -1,0 +1,23 @@
+{
+  "unknown-compound": "化學式中有不明的化合物 {compound}",
+  "unknown-oxide": "原料「{material}」中有不明的氧化物 {oxide}",
+  "invalid-oxide-amount": "原料「{material}」中 {oxide} 的用量無效",
+  "loi-range": "「{material}」的燒失量必須在 0 以上、未滿 100",
+  "no-oxides": "原料「{material}」沒有任何氧化物",
+  "no-name": "原料必須有名稱",
+  "no-analysis": "原料「{material}」需要化學式或分析值",
+  "recipe-shape": "釉方必須是 '{ material, amount }' 的陣列，或用量的對應表",
+  "invalid-amount": "原料「{material}」的用量無效",
+  "missing-material": "釉方中有一行缺少原料",
+  "unknown-material": "不明的原料「{material}」",
+  "no-flux": "釉方中沒有助熔劑氧化物，因此無法定義塞格式（UMF）",
+  "no-target": "目標式中沒有要達成的氧化物",
+  "no-materials": "沒有可計算的原料",
+  "no-temperature": "需要燒成溫度才能設定硼的量",
+  "no-flux-to-rebuild": "此釉藥沒有可重新調配的助熔劑",
+  "unknown-element": "{formula} 中有不明的元素 {element}",
+  "bad-formula": "無法解析化學式 {formula}",
+  "analysis-total": "「{material}」的分析值含燒失量合計為 {total}%，應約為 100%。",
+  "stored-equivalent": "「{material}」儲存的當量與其化學式及燒失量不符，因此改用化學式與燒失量計算。",
+  "trace-flux": "釉方中只有微量的助熔劑氧化物，因此塞格式（UMF）沒有意義。"
+}

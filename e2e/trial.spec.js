@@ -25,7 +25,9 @@ test('a visitor tries the calculator, keeps the trial across a reload, and keeps
   page
 }) => {
   const name = await startTrialWithRecipe(page);
-  await expect(page.locator('.account-email')).toHaveText(name);
+  // The menu says "Trial account"; the trial bar names it.
+  await expect(page.locator('.account-link .account-label')).toHaveText('Trial account');
+  await expect(page.locator('.account-email')).toHaveCount(0);
   await expect(page.getByRole('button', { name: 'Sign out' })).toHaveCount(0);
 
   await page.reload();
@@ -101,7 +103,7 @@ test('signing in to an existing account brings the trial along', async ({ page, 
   expect((await request.post(API + '/signup', { data: { email, password: 'password123' } })).ok()).toBe(true);
   const name = await startTrialWithRecipe(page);
 
-  await page.locator('.nav-account').getByRole('link', { name }).click();
+  await page.locator('.nav-account').getByRole('link', { name: 'Trial account' }).click();
   await page.goto('/signin');
   await expect(page.locator('.trial-note')).toContainText('Signing in brings what you made as ' + name + ' into it.');
   await page.locator('#email').fill(email);
@@ -133,6 +135,7 @@ test('the sign-in lives in a cookie that scripts on the page cannot read', async
     'notice',
     'palette',
     'preferredRegion',
+    'recipeHelp',
     'temperature',
     'theme',
     'weightUnit'

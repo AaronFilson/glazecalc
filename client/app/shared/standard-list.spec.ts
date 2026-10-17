@@ -56,6 +56,36 @@ describe('StandardList', () => {
     const { fixture, names } = await create();
     expect(names()).toEqual(['Custer Spar', 'Grolleg China Clay', 'Silica', 'Stain (proprietary)']);
     expect(text(fixture, '.standard-count')).toBe('Showing 4 of 4 materials');
+    expect(fixture.nativeElement.querySelector('.standard-all')).toBeNull();
+  });
+
+  it('lists the first 25 until all are asked for, or a filter narrows them; details are on demand', async () => {
+    const many = Array.from({ length: 30 }, (_, i) => record('Spar ' + String(i).padStart(2, '0')));
+    const { fixture, names, set } = await create(many);
+    expect(names().length).toBe(25);
+    expect(text(fixture, '.standard-count')).toBe('Showing 25 of 30 materials');
+    // Four columns: the formula is with the details, not beside the analysis.
+    expect(
+      [...fixture.nativeElement.querySelectorAll('thead th')].map((th: Element) => th.textContent?.trim())
+    ).toEqual(['Name', 'Equivalent weight', 'Fired weight', 'Analysis']);
+    const details = fixture.nativeElement.querySelector('tbody details') as HTMLDetailsElement;
+    expect(details.open).toBe(false);
+    expect(text(fixture, 'tbody summary')).toBe('Details: Spar 00');
+    await set('Filter', 'spar 29');
+    expect(names()).toEqual(['Spar 29']);
+    await set('Filter', '');
+    (fixture.nativeElement.querySelector('.standard-all') as HTMLButtonElement).click();
+    await fixture.whenStable();
+    expect(names().length).toBe(30);
+    expect(fixture.nativeElement.querySelector('.standard-all')).toBeNull();
+  });
+
+  it('gives the formula in its sentence, set apart so a page translator leaves it as it is', async () => {
+    const { fixture } = await create([record('Whiting', { rawformula: 'CaCO3' })]);
+    const line = fixture.nativeElement.querySelector('.standard-formula') as HTMLElement;
+    expect(line.textContent?.replace(/\s+/g, ' ').trim()).toBe('Formula: CaCO₃');
+    const formula = line.querySelector('[translate="no"]') as HTMLElement;
+    expect(formula.textContent).toBe('CaCO₃');
   });
 
   it('filters by name or other name, by kind, and by region', async () => {
@@ -104,7 +134,7 @@ describe('StandardList', () => {
     expect(link.textContent?.trim()).toBe('Pacer data sheet');
     expect(link.getAttribute('href')).toBe('https://example.com/custer.pdf');
     expect(custer.textContent).toContain('(2005-03)');
-    expect(text(fixture, 'details')).toContain('Contains quartz.');
+    expect(text(fixture, 'tbody')).toContain('Hazards: Contains quartz.');
     expect(text(fixture, 'tbody')).toContain('No chemistry: left out of the unity formula');
   });
 });

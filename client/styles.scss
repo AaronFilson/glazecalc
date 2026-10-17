@@ -485,30 +485,107 @@ img {
   color: var(--gc-danger-text);
 }
 
+// "Account" with a round initial, and the email in small text under it (app.ts). Hovered, or on the
+// account page, it turns the palette's color and is underlined, like the page links.
+.account-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 0;
+  color: var(--gc-text);
+  &:hover,
+  &.active {
+    color: var(--gc-primary);
+    .account-label {
+      border-bottom-color: var(--gc-primary);
+    }
+  }
+}
+
+.account-text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  line-height: 1.25;
+}
+
+.account-label {
+  align-self: flex-start;
+  border-bottom: 2px solid transparent;
+}
+
 .account-email {
   color: var(--gc-muted);
+  font-size: 0.8rem;
   max-width: 16rem;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
+.account-initial {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: var(--gc-primary);
+  color: var(--gc-on-primary);
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+// Between a phone and a wide screen the menu has no room for the email beside the pages: "Account" alone,
+// as on a phone's bar (Home and the account page say who is signed in).
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .account-email {
+    display: none;
+  }
+}
+
+// Only on a phone, beside Menu (see app.ts).
+.nav-quick-account {
+  display: none;
+}
+
 @media (max-width: 767.98px) {
+  // Tighter, so the name, the initial and Menu share one line on the narrowest phones (320px).
+  .app-nav {
+    column-gap: 0.75rem;
+  }
   .nav-toggle {
     display: inline-block;
   }
   .nav-quick-signin {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
     margin-inline-start: auto;
     margin-inline-end: 0.75rem;
   }
-  .nav-quick-signin + .nav-toggle {
+  // A whole finger's width (44px) around the initial.
+  .nav-quick-account {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    min-height: 44px;
+    margin-inline-start: auto;
+    margin-inline-end: 0.5rem;
+  }
+  .nav-quick-signin + .nav-toggle,
+  .nav-quick-account + .nav-toggle {
     margin-inline-start: 0;
   }
   .nav-menu {
     display: none;
     flex-basis: 100%;
     flex-direction: column;
+    // One column, as wide as the screen: wrapped, a column would be as wide as its widest item, the email.
+    flex-wrap: nowrap;
     align-items: stretch;
     padding: 0.5rem 0;
     &.open {
@@ -517,9 +594,45 @@ img {
   }
   .nav-links {
     flex-direction: column;
+    gap: 0;
+    // Each a finger's height (44px), for a phone held with clay on the hands.
+    a {
+      display: flex;
+      align-items: center;
+      min-height: 44px;
+      padding: 0;
+    }
   }
+  // Account first, then Sign out, set apart from the pages by a line.
   .nav-account {
     margin-inline-start: 0;
+    margin-top: 0.25rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--gc-border);
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    a:not(.btn) {
+      display: inline-flex;
+      align-items: center;
+      min-height: 44px;
+    }
+    .account-link {
+      flex: 1 1 auto;
+    }
+    .btn {
+      flex: none;
+      white-space: nowrap;
+    }
+  }
+  // The email shortens with an ellipsis rather than pushing Sign out off the screen: the menu, its account
+  // row and the link may each be narrower than the email (a flex item is otherwise as wide as its content).
+  .nav-menu,
+  .nav-account,
+  .account-text {
+    min-width: 0;
+  }
+  .account-email {
+    max-width: 100%;
   }
 }
 
@@ -548,8 +661,18 @@ img {
 
 // Each language's name in its own script, in the device's serif: in Lora they would fetch its Cyrillic,
 // Greek and Latin Extended files (some 100 kB) with every page, for one line at its foot.
-.footer-languages {
-  font-family: Georgia, 'Noto Serif', serif;
+.footer-language {
+  margin-bottom: 0.5rem;
+  // A finger's height (44px).
+  summary {
+    display: inline-block;
+    padding: 0.6rem 0;
+    cursor: pointer;
+  }
+  [lang],
+  .footer-languages {
+    font-family: Georgia, 'Noto Serif', serif;
+  }
 }
 
 /*************** Page sections **************/
@@ -563,6 +686,8 @@ img {
     color: var(--gc-muted);
     margin: 0;
     max-width: 48rem;
+    // "Signed in as …": an email address may be one long word, broken rather than widening a phone's page.
+    overflow-wrap: anywhere;
   }
 }
 
@@ -642,6 +767,24 @@ main {
       background: var(--gc-surface-2);
       text-align: start;
     }
+  }
+}
+
+// On a phone, text in fields is at least 16px: iOS Safari zooms the page into a field with smaller
+// text, in the middle of a recipe. And every button is a finger's height (44px), by its padding.
+@media (max-width: 767.98px) {
+  main {
+    input:not([type='checkbox']):not([type='radio']):not([type='submit']):not([type='button']),
+    select,
+    textarea {
+      font-size: 1rem;
+    }
+  }
+  .btn {
+    --bs-btn-padding-y: 0.59rem;
+  }
+  .btn-sm {
+    --bs-btn-padding-y: 0.69rem;
   }
 }
 
@@ -1256,26 +1399,6 @@ button.library-item:focus-visible {
   margin-top: 1rem;
 }
 
-.saved-recipe-top {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.saved-recipe-actions {
-  display: inline-flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.4rem;
-  margin-inline-start: auto;
-}
-
-// The Remove question takes a line of its own, under the record's buttons.
-.saved-recipe-top > gc-remove-button.asking {
-  flex-basis: 100%;
-}
-
 // The standard materials and additives (shared/standard-list.ts).
 .standard-tools {
   display: flex;
@@ -1319,14 +1442,6 @@ button.library-item:focus-visible {
   summary {
     cursor: pointer;
   }
-}
-
-.saved-open-mark {
-  background: var(--gc-success-bg);
-  border-radius: 999px;
-  color: var(--gc-success-text);
-  font-size: 0.8rem;
-  padding: 0.1rem 0.5rem;
 }
 
 code {
@@ -1577,6 +1692,9 @@ bdi {
   }
   .num {
     text-align: end;
+  }
+  // Only the numbers: Lora's tabular figures widen its spaces too, which would gap a heading's words.
+  td.num {
     font-variant-numeric: tabular-nums;
   }
 }

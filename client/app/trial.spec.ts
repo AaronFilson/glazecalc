@@ -100,6 +100,8 @@ describe('AuthService trials', () => {
     expect(auth.trial()).toBeNull();
     expect(auth.displayName()).toBe('a@b.com');
     expect(localStorage.getItem('trial')).toBeNull();
+    // Its work came with it, so Home does not welcome it as new.
+    expect(auth.welcome()).toBe(false);
   });
 
   it('leaves the trial behind on sign-in', async () => {
@@ -184,7 +186,9 @@ describe('the trial bar', () => {
     expect(text(fixture, '.trial-bar')).toContain(
       "You're trying Glazecalc as " + NAME + '. Your work is kept until Monday, October 12.'
     );
-    expect(text(fixture, '.account-email')).toBe(NAME);
+    // The menu says what the link is; the bar has the trial's name.
+    expect(text(fixture, '.account-link')).toBe('Trial account');
+    expect(fixture.nativeElement.querySelector('.account-email')).toBeNull();
     expect(fixture.nativeElement.querySelector('.trial-bar a').getAttribute('href')).toBe('/signup');
     expect(text(fixture, '.nav-account')).not.toContain('Sign out');
   });

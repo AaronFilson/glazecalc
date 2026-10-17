@@ -275,7 +275,7 @@ Un **floculant**{{en: flocculant}} (sare amară, oțet sau clorură de calciu) g
 
 ### Aplicarea glazurii
 
-Mai întâi curățați biscuitul de praf și de grăsime. În locul spălării, Digitalfire preferă aerul comprimat, o pensulă moale sau un burete abia umed.
+Mai întâi curățați biscuitul de praf și de grăsime cu un burete abia umed, în loc să-l spălați, ceea ce îl îmbibă cu apă. Nu suflați praful cu aer comprimat și nu-l periați uscat: așa ajunge praf de silice în aer ([Prepararea în siguranță și ventilația](/guides/safe-mixing#cleaning)).
 
 - **Imersia** „dă în general un strat de grosime uniformă” (Robin Hopper). Timpul de imersie stabilește grosimea: Digitalfire notează că glazurile comerciale pentru imersie sunt preparate la aproximativ 1,4 pentru o imersie de 5 secunde și la 1,5 pentru o imersie de 1 secundă.
 - Glazura pentru **turnare** ar trebui să fie „puțin mai diluată decât atunci când este folosită pentru imersie”; acolo unde turnările se suprapun, stratul se dublează și poate curge.

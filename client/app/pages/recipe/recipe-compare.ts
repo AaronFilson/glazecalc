@@ -227,7 +227,6 @@ const COUNTING: ReadonlyArray<{ value: Counting; label: string }> = [
     .compare-materials {
       width: 100%;
       border-collapse: collapse;
-      font-variant-numeric: tabular-nums;
       margin: 0;
     }
     .compare-table caption {
@@ -258,9 +257,11 @@ const COUNTING: ReadonlyArray<{ value: Counting; label: string }> = [
     .num {
       text-align: end !important;
     }
-    /* Numbers stay whole; a column's heading (a recipe's title) wraps instead. */
+    /* Numbers stay whole; a column's heading (a recipe's title) wraps instead. Figures line up
+       in the cells alone: Lora's tabular figures widen its spaces too, which would gap the words. */
     td.num {
       white-space: nowrap;
+      font-variant-numeric: tabular-nums;
     }
     .compare-table tbody th {
       min-width: 7rem;

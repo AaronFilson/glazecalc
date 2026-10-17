@@ -71,6 +71,8 @@
     "contact": "Za pitanja o svojim podacima ili za ostvarivanje bilo kojeg od svojih prava pišite na <mail>privacy@glazecalcapp.com</mail>. Možete i <issues>otvoriti prijavu (issue) na GitHubu</issues>, ali prijave su javne: u njih nikad ne stavljajte svoju adresu e-pošte ni bilo što osobno. Većinu onoga što se tiče vaših podataka možete učiniti sami na <account>stranici svojeg računa</account>.",
     "storedHeading": "Što se čuva i zašto",
     "storedAccount": "<b>Vaš račun:</b> vaša adresa e-pošte i vaša lozinka, pohranjena samo kao jednosmjerni sažetak (bcrypt), nikad kao sama lozinka. Uz njih se čuvaju vaše postavke (primjerice jezik, regija i mjerne jedinice) i popis sirovina koje imate. Za račun je potrebna adresa e-pošte, za prijavu i za ponovno postavljanje zaboravljene lozinke. Kad stvorite račun, na adresu se šalje poveznica kojom potvrđujete da je adresa vaša; do tada se na nju šalje pošta samo kad to zatražite, primjerice za ponovno postavljanje lozinke.",
+    "storedEmailChange": "<b>Promjena adrese e-pošte:</b> datum zadnje promjene vaše adrese, kako se zahtjev za isključivanje dvostupanjske prijave nikada ne bi prihvatio s nove adrese u 30 dana nakon promjene.",
+    "storedSignIn": "<b>Dvostupanjska prijava, ako je uključite:</b> je li uključena; ključ koji vaša aplikacija za provjeru autentičnosti dijeli s Glazecalcom, šifriran; za svaki pristupni ključ njegov javni ključ (kojim se samim nije moguće prijaviti) s ID-om i podacima koje mu dodijeli vaš uređaj, naziv koji ste mu dali te kada je dodan i zadnji put korišten; vaši kodovi za oporavak, samo kao jednosmjerni sažetak s ključem, pa ih nitko ne može pročitati natrag; i, ako netko unese vašu lozinku, a ne dovrši drugi korak, kada vam je Glazecalc zadnji put poslao e-poruku o tome (najviše jednom dnevno). Dok se prijavljujete, između lozinke i drugog koraka, poslužitelj 5 minuta čuva bilješku o prijavi, a stranica drži kratak token samo u memoriji: bez novog kolačića, ništa u pohrani vašeg preglednika.",
     "storedSaved": "<b>Ono što spremite:</b> vaši recepti, sirovine, dodaci, bilješke, zapisnici pečenja i savjeti, onako kako ste ih napisali. Vidite ih samo vi: ništa se ne dijeli među korisnicima.",
     "storedTrial": "<b>Probno korištenje (Isprobajte odmah):</b> bez adrese e-pošte i lozinke, samo izmišljeno ime kao što je „speckled quiet kilns”. Ako se tijekom probnog korištenja u istom pregledniku prijavite u račun, ono što ste napravili u probnom korištenju prelazi u račun.",
     "storedResets": "<b>Poveznice za ponovno postavljanje lozinke i za adresu e-pošte:</b> koji je račun zatražio poveznicu, kada, adresa na koju je poslana poveznica za potvrdu adrese i otisak svake poveznice (ne sama poveznica).",
@@ -96,6 +98,7 @@
     "keptAccount": "<b>Vaš račun i ono što spremite:</b> dok ih ne izbrišete. Računi se ne uklanjaju zbog nekorištenja.",
     "keptTrial": "<b>Probno korištenje:</b> 14 dana od početka, a zatim se briše sa svime što sadrži, osim ako stvorite račun da biste ga zadržali.",
     "keptResets": "<b>Poveznice za ponovno postavljanje lozinke i za adresu e-pošte:</b> poveznica za ponovno postavljanje lozinke vrijedi 30 minuta, a njezin se zapis briše nakon otprilike sat vremena; poveznica za potvrdu adrese vrijedi i čuva se 24 sata.",
+    "keptSignIn": "<b>Dvostupanjska prijava:</b> svaka aplikacija za provjeru autentičnosti, pristupni ključ i skup kodova za oporavak, dok ih ne uklonite, isključite dvostupanjsku prijavu ili izbrišete račun. Prijava koja čeka drugi korak briše se nakon 5 minuta, a aplikacija ili pristupni ključ koje ste počeli dodavati, a niste dovršili, nakon najviše 10.",
     "keptBackups": "<b>Sigurnosne kopije:</b> šifrirane kopije baze podataka čuvaju se 30 dana, a kopije diska poslužitelja 7 dana. Izbrisani račun tako nestaje iz svih sigurnosnih kopija u roku od 30 dana.",
     "keptDeletions": "<b>Evidencija izbrisanog računa:</b> 37 dana, nešto dulje od bilo koje sigurnosne kopije.",
     "keptLogs": "<b>Zapisi:</b> zapisi web-poslužitelja 14 dana. Vlastiti zapisi aplikacije i baze podataka ograničeni su veličinom (po 50 MB), što na stranici s malo prometa seže nekoliko dana unatrag. Kopije diska poslužitelja čuvaju zapise još do 7 dana dulje.",
@@ -103,6 +106,7 @@
     "keptInbound": "<b>Pošta koju šaljete aplikaciji Glazecalc:</b> 30 dana u Amazonovoj pohrani, a u vlasnikovu sandučiću onoliko koliko je potrebno da vam odgovori. Za zahtjev u vezi s vašim podacima kratka bilješka (kada je stigao, što je zatraženo i što je učinjeno) čuva se tri godine.",
     "rightsHeading": "Vaša prava",
     "rightsIntro": "Svoje podatke možete vidjeti, ispraviti, preuzeti i izbrisati. Većinu toga možete učiniti sami na <account>stranici svojeg računa</account>:",
+    "rightsExport": "<b>Uvid i preuzimanje sa sobom:</b> Preuzimanje mojih podataka sprema sve u jednu datoteku (JSON), uključujući nazive i datume vaših načina dvostupanjske prijave (nikada njihove ključeve ni kodove), a vaše recepte i sirovine kao proračunske tablice (CSV).",
     "rightsCorrect": "<b>Ispravite ih:</b> svoje postavke i zapise možete promijeniti u bilo kojem trenutku. Da biste promijenili adresu e-pošte, otvorite poveznicu poslanu na novu adresu; stara adresa, ako je bila potvrđena, dobiva obavijest o promjeni, a svi se uređaji odjavljuju.",
     "rightsDelete": "<b>Izbrišite ih:</b> gumb Izbriši moj račun odmah uklanja vaš račun i sve što ste spremili, a gumb Odbaci probno korištenje čini isto za probno korištenje. Kopije u sigurnosnim kopijama nestaju u roku od 30 dana.",
     "rightsSignOut": "<b>Odjava sa svih uređaja:</b> završava sesije vašeg računa na svim uređajima.",
@@ -146,10 +150,6 @@
       "includeAdditives": {
         "purpose": "Uračunavaju li novi recepti svoje dodatke u Segerovu formulu, kako ste posljednji put odabrali.",
         "lasts": "Dok ne izbrišete pohranu preglednika."
-      },
-      "recipeHelp": {
-        "purpose": "To da ste sakrili pomoć na stranici recepta.",
-        "lasts": "Dok ponovno ne prikažete pomoć."
       },
       "print": {
         "purpose": "Vaši posljednji izbori za ispis recepta: cijeli recept ili smjesa te veličina smjese.",

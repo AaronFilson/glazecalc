@@ -52,3 +52,17 @@ describe('region blocks before Turkey', () => {
     });
   }
 });
+
+// Türkiye, frozen the same way before Korea, Taiwan, Singapore and Malaysia were added.
+describe('region blocks before Korea', () => {
+  beforeEach(() => {
+    localStorage.clear();
+    TestBed.configureTestingModule({ providers: testProviders() });
+  });
+
+  for (const [name, component] of BLOCKS) {
+    it(`says exactly what it said before for Türkiye: ${name}`, async () => {
+      expect(await html(component, 'TR')).toMatchSnapshot();
+    });
+  }
+});

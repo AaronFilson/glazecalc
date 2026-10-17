@@ -1,8 +1,10 @@
 import { Type } from '@angular/core';
 import { TestBed } from '@angular/core/testing';
+import { NOW } from '../../core/clock';
 import { PreferencesService } from '../../core/preferences.service';
 import { testProviders } from '../../testing/test-providers';
 import { FoodLimits } from './food-limits';
+import { PoisonLines } from './poison-lines';
 import { ShopList } from './shop-list';
 import { SilicaLimit } from './silica-limit';
 
@@ -241,5 +243,152 @@ describe('Türkiye', () => {
       'Seramiksir'
     ]);
     expect(rows()[0]![2]).toBe('250 g, 500 g, and 1 kg');
+  });
+});
+
+// The texts of every paragraph, for checking what is said and what is not.
+const paragraphsOf = (element: HTMLElement) =>
+  [...element.querySelectorAll('p')].map((p) => (p.textContent ?? '').replace(/\s+/g, ' ').trim());
+
+describe('South Korea', () => {
+  it('gives 119, says no national poison line was found, and links the health ministry', async () => {
+    const { element } = await create(PoisonLines, 'KR');
+    const calls = [...element.querySelectorAll('a[href^="tel:"]')].map((a) => a.getAttribute('href'));
+    expect(calls).toEqual(['tel:119', 'tel:119']);
+    const text = (element.textContent ?? '').replace(/\s+/g, ' ');
+    expect(text).toContain('We could not confirm a public poison line here.');
+    expect(text).toContain('Medical advice: 119 emergency medical advice (응급의료상담)');
+    expect(text).toContain('We found no national public poison line in South Korea');
+    expect(element.querySelector('a[href="https://www.mohw.go.kr/"]')?.textContent).toBe('보건복지부');
+  });
+
+  it('gives the exposure standard as an indicative limit, and the 1급 and 특급 dust masks', async () => {
+    const { element, rows } = await create(SilicaLimit, 'KR');
+    expect(rows()).toEqual([['Quartz and cristobalite', '0.05 mg/m³']]);
+    const paragraphs = paragraphsOf(element);
+    expect(paragraphs[0]).toContain('An indicative limit');
+    expect(paragraphs[0]).toContain('제2020-48호');
+    expect(paragraphs[0]).toContain('exposure standard (노출기준)');
+    expect(paragraphs[0]).not.toContain('It applies from');
+    expect(paragraphs[1]).toContain(
+      'Dust masks here are sold by class: 1급 for glaze dust, or 특급 for more protection'
+    );
+    expect(paragraphs[1]).toContain('not certified dust masks for work');
+    expect(paragraphs[2]).toContain('고용노동부 (MoEL)');
+  });
+
+  it("gives the ceramic limits in the law's units, with no judging rule", async () => {
+    const { element, rows } = await create(FoodLimits, 'KR');
+    expect(rows()).toEqual([
+      ['Pieces that cannot be filled, or less than 2.5 cm deep', '8 µg/cm²', '0.7 µg/cm²'],
+      ['Other pieces that can be filled, under 1.1 L', '2 mg/L', '0.5 mg/L'],
+      ['Other pieces that can be filled, from 1.1 L to under 3 L', '1 mg/L', '0.25 mg/L'],
+      ['Other pieces that can be filled, 3 L or more', '0.5 mg/L', '0.25 mg/L'],
+      ['Cooking ware, for heating food', '0.5 mg/L', '0.05 mg/L']
+    ]);
+    expect(paragraphsOf(element)[0]).not.toContain('ppm');
+  });
+
+  it('lists two shops by their own names', async () => {
+    const { rows } = await create(ShopList, 'KR');
+    expect(rows().map((row) => row[0])).toEqual(['중앙도재', '클레이어']);
+    expect(rows()[0]![3]).toContain('Ask the shop whether an item is in stock before buying.');
+  });
+});
+
+describe('Taiwan', () => {
+  it('gives 119 and the poison centre, linked to dial', async () => {
+    const { element } = await create(PoisonLines, 'TW');
+    const calls = [...element.querySelectorAll('a[href^="tel:"]')].map((a) => a.getAttribute('href'));
+    expect(calls).toEqual(['tel:119', 'tel:+886228717121']);
+    expect(element.textContent).toContain('24 hours, every day, free');
+  });
+
+  it('gives the 2027 limit with the day it applies from, and what applies until then', async () => {
+    TestBed.overrideProvider(NOW, { useValue: () => new Date(2026, 11, 31, 23, 59) });
+    const { element, rows } = await create(SilicaLimit, 'TW');
+    expect(rows()).toEqual([['Quartz and cristobalite', '0.1 mg/m³']]);
+    const paragraphs = paragraphsOf(element);
+    expect(paragraphs[0]).toContain('A binding limit.');
+    expect(paragraphs[0]).toContain('It applies from January 1, 2027.');
+    expect(paragraphs[0]).toContain('Until 31 December 2026 an earlier table applies');
+    expect(paragraphs[1]).toContain('Dust masks here are sold by class: D2 for glaze dust, or D3 for more protection');
+    expect(paragraphs[2]).toContain('勞動部職業安全衛生署');
+  });
+
+  it('once the 2027 limit is in force, says neither when it applies from nor what applied before', async () => {
+    TestBed.overrideProvider(NOW, { useValue: () => new Date(2027, 0, 1, 0, 1) });
+    const { element, rows } = await create(SilicaLimit, 'TW');
+    expect(rows()).toEqual([['Quartz and cristobalite', '0.1 mg/m³']]);
+    const paragraph = paragraphsOf(element)[0];
+    expect(paragraph).toContain('A binding limit.');
+    expect(paragraph).not.toContain('It applies from');
+    expect(paragraph).not.toContain('Until 31 December 2026');
+  });
+
+  it('gives the limits in ppm and µg/cm², and says what ppm means', async () => {
+    const { element, rows } = await create(FoodLimits, 'TW');
+    expect(rows()).toEqual([
+      ['Pieces that cannot be filled, or no more than 2.5 cm deep', '17 µg/cm²', '1.7 µg/cm²'],
+      ['Pieces more than 2.5 cm deep, up to 1.1 L', '5 ppm', '0.5 ppm'],
+      ['Pieces more than 2.5 cm deep, over 1.1 L', '2.5 ppm', '0.25 ppm']
+    ]);
+    expect(paragraphsOf(element)[0]).toContain('ppm here is milligrams per litre of the test solution (mg/L).');
+  });
+});
+
+describe('Singapore', () => {
+  it('gives 995, says no public poison line was confirmed, and links the health ministry', async () => {
+    const { element } = await create(PoisonLines, 'SG');
+    const calls = [...element.querySelectorAll('a[href^="tel:"]')].map((a) => a.getAttribute('href'));
+    expect(calls).toEqual(['tel:995']);
+    expect(element.textContent).toContain('We could not confirm a public poison line here.');
+    expect(element.querySelector('a[href="https://www.moh.gov.sg/"]')?.textContent).toBe('Ministry of Health');
+  });
+
+  it('gives the binding limits for quartz and cristobalite, and no mask classes', async () => {
+    const { element, rows } = await create(SilicaLimit, 'SG');
+    expect(rows()).toEqual([
+      ['Quartz', '0.1 mg/m³'],
+      ['Cristobalite', '0.05 mg/m³']
+    ]);
+    expect(element.textContent).not.toContain('Dust masks here are sold by class');
+  });
+
+  it('gives lead only, with no cadmium column', async () => {
+    const { element, rows } = await create(FoodLimits, 'SG');
+    expect(rows()[0]).toEqual(['Flatware, no deeper than 25 mm (any one of 6)', '3 µg/mL']);
+    expect(rows()).toHaveLength(5);
+    expect(element.querySelectorAll('thead th')).toHaveLength(2);
+    expect(paragraphsOf(element)[0]).toContain('limits for lead only');
+  });
+});
+
+describe('Malaysia', () => {
+  it('gives 999 and the National Poison Centre with its hours and Telegram', async () => {
+    const { element } = await create(PoisonLines, 'MY');
+    const calls = [...element.querySelectorAll('a[href^="tel:"]')].map((a) => a.getAttribute('href'));
+    expect(calls).toEqual(['tel:999', 'tel:+6046536999']);
+    const text = (element.textContent ?? '').replace(/\s+/g, ' ');
+    expect(text).toContain('Monday to Friday 8:00 to 22:00');
+    expect(element.querySelector('a[href="https://t.me/usm_prn_bot"]')?.textContent).toBe('Telegram');
+  });
+
+  it('says how many pieces are judged, and when the rules came into force', async () => {
+    const { element, rows } = await create(FoodLimits, 'MY');
+    expect(rows()).toEqual([
+      ['Flatware (average of 4 pieces)', '0.8 mg/dm²', '0.07 mg/dm²'],
+      ['Small hollowware (any one of 4)', '2 mg/L', '0.5 mg/L'],
+      ['Large hollowware (any one of 4)', '1 mg/L', '0.25 mg/L'],
+      ['Cooking ware (any one of 4)', '0.5 mg/L', '0.05 mg/L']
+    ]);
+    expect(paragraphsOf(element)[0]).toContain('In force from 1 August 2026.');
+  });
+
+  it('says no shop was found, with no empty list of sources', async () => {
+    const { element } = await create(ShopList, 'MY');
+    expect(element.textContent).toContain('We found no shop selling raw glaze materials in Malaysia.');
+    expect(element.querySelector('table')).toBeNull();
+    expect(element.querySelector('.region-sources')).toBeNull();
   });
 });

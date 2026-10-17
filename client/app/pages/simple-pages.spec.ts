@@ -45,9 +45,42 @@ describe('static pages', () => {
     const links = [...home.nativeElement.querySelectorAll('.home-card')].map((a: HTMLAnchorElement) =>
       a.getAttribute('href')
     );
-    expect(links).toEqual(['/recipe', '/material', '/additive', '/firing', '/notes', '/advice', '/guides']);
+    expect(links).toEqual([
+      '/recipe#saved-recipes',
+      '/material',
+      '/additive',
+      '/firing',
+      '/notes',
+      '/advice',
+      '/guides',
+      '/account'
+    ]);
+    expect(home.nativeElement.querySelector('.home-welcome')).toBeNull();
     expect(text((await create(TrashPage)).fixture)).toContain('trash functionality is coming soon');
     expect(text((await create(NotFoundPage)).fixture)).toContain('Page not found');
+  });
+
+  it('welcomes a new account once, with its first step and the emailed link to open', async () => {
+    const auth = TestBed.inject(AuthService);
+    auth.welcome.set(true);
+    auth.email.set('new@example.com');
+    auth.unverified.set(true);
+    const first = (await create(HomePage)).fixture;
+    expect(text(first, '.home-welcome h2')).toBe('Welcome to Glazecalc');
+    expect(first.nativeElement.querySelector('.home-welcome a.btn').getAttribute('href')).toBe('/recipe');
+    expect(text(first, '.home-confirm')).toContain('we sent a link to new@example.com');
+    expect(first.nativeElement.querySelector('.home-confirm a').getAttribute('href')).toBe('/account');
+    first.destroy();
+
+    // The next visit: only the email, until it is confirmed.
+    const next = (await create(HomePage)).fixture;
+    expect(text(next, '.home-welcome h2')).toBe('Confirm your email');
+    // The heading says it, so the line under it does not again.
+    expect(text(next, '.home-confirm')).toMatch(/^We sent a link to new@example.com\./);
+    expect(next.nativeElement.querySelector('.home-welcome a.btn')).toBeNull();
+    next.destroy();
+    auth.unverified.set(false);
+    expect((await create(HomePage)).fixture.nativeElement.querySelector('.home-welcome')).toBeNull();
   });
 
   it('shows the about and privacy pages with one h1 each', async () => {
@@ -238,6 +271,16 @@ describe('AdvicePage', () => {
 });
 
 describe('NotesPage', () => {
+  it('says when there are no notes yet, once they have been asked for', async () => {
+    const { fixture } = await create(NotesPage);
+    expect(fixture.nativeElement.querySelector('.notes-empty')).toBeNull();
+    answer('/notes/getAll', []);
+    await settle(fixture);
+    expect(text(fixture, '.notes-empty')).toBe('None yet. Saved notes appear here.');
+    expect(text(fixture, 'label[for=title]')).toBe('Title');
+    expect(text(fixture, 'label[for=content]')).toBe('Note');
+  });
+
   it('saves notes as general notes', async () => {
     const { fixture, page } = await create(NotesPage);
     answer('/notes/getAll', [
@@ -288,7 +331,11 @@ describe('App', () => {
       'Advice',
       'Guides'
     ]);
+    // "Account", with the email in small text and its first letter in a circle.
+    expect(text(fixture, '.account-link .account-label')).toBe('Account');
     expect(text(fixture, '.account-email')).toBe('a@b.com');
+    expect(text(fixture, '.nav-account .account-initial')).toBe('A');
+    expect(fixture.nativeElement.querySelector('.account-link').getAttribute('href')).toBe('/account');
 
     // A page with changes not saved can keep the visitor (core/leave.guard.ts): then nothing happens.
     navigate.mockResolvedValueOnce(false);
@@ -308,6 +355,13 @@ describe('App', () => {
     expect(TestBed.inject(AuthService).hasSession()).toBe(false);
     expect(navLinks(fixture)).toEqual(['Guides', 'Advice', 'About']);
     expect(navigate).toHaveBeenCalledWith('/signin', { onSameUrlNavigation: 'reload' });
+    expect(fixture.nativeElement.querySelector('.nav-account a[href="/signin"]')).not.toBeNull();
+
+    // Halfway through signing in, the menu does not offer to start again.
+    TestBed.inject(AuthService).secondStepPending.set(true);
+    await fixture.whenStable();
+    expect(fixture.nativeElement.querySelector('.nav-account')).toBeNull();
+    expect(fixture.nativeElement.querySelector('.nav-quick-signin')).toBeNull();
   });
 
   it('opens and closes the phone menu', async () => {

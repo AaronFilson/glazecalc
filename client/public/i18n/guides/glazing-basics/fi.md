@@ -275,7 +275,7 @@ Tavoitearvot vaihtelevat lähteittäin. Digitalfiren mukaan upotuslasitteiden om
 
 ### Lasitteen levittäminen
 
-Puhdista ensin pöly ja rasva raakapoltetusta esineestä. Digitalfire suosii pesemisen sijaan paineilmaa, pehmeää harjaa tai hädin tuskin kosteaa sientä.
+Puhdista ensin pöly ja rasva raakapoltetusta esineestä hädin tuskin kostealla sienellä äläkä pese sitä, koska silloin se imee itseensä vettä. Älä puhalla pölyä pois paineilmalla äläkä harjaa sitä kuivana: silloin kvartsipölyä pääsee ilmaan ([Turvallinen sekoittaminen ja ilmanvaihto](/guides/safe-mixing#cleaning)).
 
 - **Upottaminen** ”antaa yleensä tasapaksun kerroksen” (Robin Hopper). Upotusaika määrää paksuuden: Digitalfire huomauttaa, että kaupallisten upotuslasitteiden ominaispaino on noin 1,4, kun upotus kestää 5 sekuntia, ja 1,5, kun se kestää 1 sekunnin.
 - **Kaatamiseen** käytettävän lasitteen tulisi olla ”hieman ohuempaa kuin upottamiseen käytettäessä”; kohdissa, joissa kaadot menevät päällekkäin, kerros kaksinkertaistuu ja voi valua.

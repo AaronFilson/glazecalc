@@ -75,7 +75,9 @@ describe('MaterialPage', () => {
     const cells = [...fixture.nativeElement.querySelectorAll('table tbody tr:first-child td')].map((td: Element) =>
       td.textContent?.trim()
     );
-    expect(cells).toEqual(['Whiting', '100.08', '56.08', 'Calcium carbonate', 'CaO : 1', 'CaCO₃']);
+    expect(cells.slice(1)).toEqual(['100.08', '56.08', 'CaO : 1']);
+    // Its notes and formula are in its details, folded away.
+    expect(cells[0]).toMatch(/^Whiting\s+Details: Whiting\s*Calcium carbonate\s*Formula: CaCO₃$/);
   });
 
   it("writes the weights and analyses the reader's way", async () => {
@@ -155,7 +157,7 @@ describe('MaterialPage', () => {
     expect(page['notices'].messages()).toEqual(['Success. Material added to database.']);
     expect(page['form'].name()).toBe('');
     expect(page['form'].formula()).toEqual([]);
-    expect(text(fixture, '#my-materials-heading')).toBe('My materials:');
+    expect(text(fixture, '#my-materials-heading')).toBe('My materials');
   });
 
   it("takes numbers typed the reader's way, and saves them plainly", async () => {

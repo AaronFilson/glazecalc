@@ -248,7 +248,7 @@ La un cuptor cu comandă manuală, vizorul este singurul semnal în timp real; d
 
 ### După ardere
 
-Orton citește îndoirea ca pe un cadran de ceas. Un con neîndoit arată în sus, la ora 12. Punctul final este o îndoire de 90°, cu vârful la nivelul bazei, pe care Orton o numește poziția orei 5: punctul la care sunt măsurate temperaturile din tabel. Un con care atinge placa este la ora 6; între ora 4 și atingerea plăcii diferența este mică, „de obicei 1 sau 2 grade”.
+Orton citește îndoirea ca pe un cadran de ceas. Un con neîndoit arată în sus, la ora 12; un con care atinge placa este la ora 6. Punctul final este o îndoire de 90°, cu vârful la nivelul bazei: punctul la care sunt măsurate temperaturile din tabel, iar Orton consideră ars corect un con aflat oriunde între ora 5 și ora 6. Între ora 4 și atingerea plăcii diferența este mică, „de obicei 1 sau 2 grade”.
 
 Table: Citirea unui set de conuri{{en: cone pack}} după ardere (exemplu: conurile 5, 6 și 7 pentru o glazură arsă la conul 6)
 Label: Citirea unui set de conuri

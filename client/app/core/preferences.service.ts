@@ -32,6 +32,8 @@ export interface Preferences {
   englishTerms: 'off' | 'on';
   /** The translation notice, until it is closed. */
   notice: 'shown' | 'hidden';
+  /** The recipe page's help: open for an account with no recipes yet ('auto'), or as chosen. */
+  recipeHelp: 'auto' | 'shown' | 'hidden';
 }
 
 /** Whether materials with lead may be added to recipes and suggested: off unless chosen. */
@@ -59,7 +61,8 @@ const CHOICES: { [K in keyof Preferences]: ReadonlyArray<Preferences[K]> } = {
   language: LIVE_LANGUAGES,
   density: ['', 'sg', 'baume', 'pint'],
   englishTerms: ['off', 'on'],
-  notice: ['shown', 'hidden']
+  notice: ['shown', 'hidden'],
+  recipeHelp: ['auto', 'shown', 'hidden']
 };
 const NAMES = Object.keys(CHOICES) as Array<keyof Preferences>;
 
@@ -131,7 +134,8 @@ export class PreferencesService {
     language: 0,
     density: 0,
     englishTerms: 0,
-    notice: 0
+    notice: 0,
+    recipeHelp: 0
   };
 
   /**
@@ -153,7 +157,8 @@ export class PreferencesService {
     language: signal(readCopy('language')),
     density: signal(readCopy('density')),
     englishTerms: signal(readCopy('englishTerms')),
-    notice: signal(readCopy('notice'))
+    notice: signal(readCopy('notice')),
+    recipeHelp: signal(readCopy('recipeHelp'))
   };
 
   /** Batch weights in grams, or in pounds and ounces. */
@@ -176,6 +181,7 @@ export class PreferencesService {
   readonly density = this.shown('density');
   readonly englishTerms = this.shown('englishTerms');
   readonly notice = this.shown('notice');
+  readonly recipeHelp = this.shown('recipeHelp');
 
   constructor() {
     // Signed out, or the session ended: the account's choices leave this browser, and the visitor's own come back.

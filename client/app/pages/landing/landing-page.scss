@@ -105,6 +105,9 @@
   td:last-child,
   th:last-child {
     text-align: end;
+  }
+  // Only the numbers: Lora's tabular figures widen its spaces too, which would gap a heading's words.
+  td:last-child {
     font-variant-numeric: tabular-nums;
   }
 }

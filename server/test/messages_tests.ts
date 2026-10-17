@@ -97,7 +97,7 @@ describe('account emails', () => {
     const { RESET, CHANGED, DELETED } = await import('../lib/account_mail.ts');
     const { fingerprint } = await import('../../scripts/i18n-fingerprints.mjs');
     expect(fingerprint(JSON.stringify([RESET['en'], CHANGED['en']]))).to.equal('xj1yoc');
-    // English only so far: the next translation wave adds the others.
+    // Translated in a later wave than the two above, so fingerprinted on its own.
     expect(fingerprint(JSON.stringify(DELETED['en']))).to.equal('13s4itm');
   });
 
@@ -134,8 +134,8 @@ describe('account emails', () => {
     expect(values).to.eql(['account', 'app', 'forgot']);
     expect(email.text).to.match(/\n-- \nGlazecalc, \{app\}\n$/);
     expect(email.subject).to.include('Glazecalc');
-    // English only so far (docs/mfa-plan.md, item 19): the next wave adds the others.
-    expect(fingerprint(JSON.stringify(email))).to.equal('1yot3mr');
+    // The translations were made from this English: a change to it needs them done again.
+    expect(fingerprint(JSON.stringify(email))).to.equal('ccjhde');
   });
 });
 
@@ -171,13 +171,13 @@ describe('two-step sign-in notices', () => {
     for (const message of [added, removed, used, made]) expect(message!.text).to.not.include('{');
   });
 
-  it("should link the account's pages in its language, in English text for now", async () => {
+  it("should write in the account's language and link its pages in that language", async () => {
     const accountMail = await import('../lib/account_mail.ts');
     const mail = await import('./support/mail.ts');
     const user = account('notice-de', { preferences: { language: 'de' } });
     accountMail.noticeMfa(user, { kind: 'recovery-used', left: 1 });
     const [used] = await mail.waitFor(user.email, 1);
-    expect(used!.subject).to.equal('A recovery code was used on your Glazecalc account');
+    expect(used!.subject).to.equal('Ein Wiederherstellungscode wurde für Ihr Glazecalc-Konto verwendet');
     expect(used!.text).to.include('https://glazecalc.test/de/account');
   });
 
@@ -212,10 +212,10 @@ describe('two-step sign-in notices', () => {
       else process.env.SITE_LABEL = label;
     }
     const [notice] = await mail.waitFor(user.email, 1);
-    expect(notice!.subject).to.equal('[Staging] Two-step sign-in on your Glazecalc account will be turned off');
-    expect(notice!.text).to.include(
-      'will be turned off on 21 October 2026 unless you write to privacy@glazecalcapp.com'
-    );
+    expect(notice!.subject).to.equal('[Staging] Die Zwei-Schritt-Anmeldung für Ihr Glazecalc-Konto wird ausgeschaltet');
+    // The date as German writes it, in the German email.
+    expect(notice!.text).to.include('am 21. Oktober 2026 ausgeschaltet');
+    expect(notice!.text).to.include('privacy@glazecalcapp.com');
     expect(notice!.text).to.include('https://glazecalc.test/de/forgot');
     expect(notice!.text).to.include(user.email);
     expect(notice!.text).to.not.include('{');

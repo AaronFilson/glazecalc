@@ -7,9 +7,11 @@ import { RichText } from '../../i18n/rich-text';
 import { PageHeader } from '../../shared/page-header';
 
 // Each section's title and text are the keys of their messages, translated where they are shown.
-const SECTIONS = [
+// Recipes opens at the saved recipes, a potter's collection.
+const SECTIONS: { path: string; fragment?: string; title: string; text: string }[] = [
   {
     path: '/recipe',
+    fragment: 'saved-recipes',
     title: marker('notebook.home.sections.recipe.title'),
     text: marker('notebook.home.sections.recipe.text')
   },
@@ -42,6 +44,11 @@ const SECTIONS = [
     path: '/guides',
     title: marker('notebook.home.sections.guides.title'),
     text: marker('notebook.home.sections.guides.text')
+  },
+  {
+    path: '/account',
+    title: marker('notebook.home.sections.account.title'),
+    text: marker('notebook.home.sections.account.text')
   }
 ];
 
@@ -51,10 +58,34 @@ const SECTIONS = [
   imports: [PageHeader, RichText, RouterLink, TranslocoDirective],
   template: `<ng-container *transloco="let t">
     <gc-page-header [title]="t('notebook.home.title')" [lead]="greeting()" />
+    <!-- Just after signing up: one next step, and the emailed link to open. -->
+    @if (welcome || auth.unverified()) {
+      <section class="panel home-welcome" aria-labelledby="home-welcome-heading">
+        <h2 id="home-welcome-heading">
+          {{ welcome ? t('notebook.home.welcome.heading') : t('notebook.home.welcome.confirmHeading') }}
+        </h2>
+        @if (welcome) {
+          <p>{{ t('notebook.home.welcome.text') }}</p>
+          <a routerLink="/recipe" class="btn btn-primary">{{ t('notebook.home.welcome.firstRecipe') }}</a>
+        }
+        @if (auth.unverified()) {
+          <p class="home-confirm">
+            <gc-rich
+              [text]="
+                t(welcome ? 'notebook.home.welcome.confirm' : 'notebook.home.welcome.confirmText', {
+                  email: auth.email()
+                })
+              "
+              [links]="{ account: '/account' }"
+            />
+          </p>
+        }
+      </section>
+    }
     <ul class="home-sections">
       @for (section of sections; track section.path) {
         <li>
-          <a [routerLink]="section.path" class="panel home-card">
+          <a [routerLink]="section.path" [fragment]="section.fragment" class="panel home-card">
             <h2>{{ t(section.title) }}</h2>
             <p>{{ t(section.text) }}</p>
           </a>
@@ -66,6 +97,10 @@ const SECTIONS = [
     </p>
   </ng-container>`,
   styles: `
+    /* An email address may be one long word: break it anywhere rather than widen the page on a phone. */
+    .home-confirm {
+      overflow-wrap: anywhere;
+    }
     .home-sections {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
@@ -94,10 +129,29 @@ const SECTIONS = [
       margin: 0;
       color: var(--gc-muted);
     }
+    .home-welcome {
+      border-inline-start: 4px solid var(--gc-primary);
+    }
+    .home-welcome h2 {
+      font-size: 1.4rem;
+    }
+    .home-welcome .btn + .home-confirm,
+    .home-confirm:last-child {
+      margin: 1rem 0 0;
+    }
+    .home-welcome h2 + .home-confirm {
+      margin-top: 0;
+    }
   `
 })
 export class HomePage {
-  private readonly auth = inject(AuthService);
+  protected readonly auth = inject(AuthService);
+  /** Just signed up: welcomed once, on this first visit. */
+  protected readonly welcome = this.auth.welcome();
+
+  constructor() {
+    this.auth.welcome.set(false);
+  }
 
   protected readonly sections = SECTIONS;
 

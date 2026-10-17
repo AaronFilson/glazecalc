@@ -146,7 +146,8 @@ const PREFERENCE_COPIES = [
   'language',
   'density',
   'englishTerms',
-  'notice'
+  'notice',
+  'recipeHelp'
 ];
 
 test('deletes the account from the account page, leaving no choices on this browser', async ({ page, request }) => {

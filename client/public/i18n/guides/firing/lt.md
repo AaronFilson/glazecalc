@@ -248,7 +248,7 @@ Rankinio valdymo krosnyje stebėjimo anga – vienintelis signalas realiuoju lai
 
 ### Po degimo
 
-Ortonas linkimą vertina kaip laikrodžio ciferblatą. Nesulinkęs piroskopas rodo aukštyn, į 12 valandos padėtį. Galutinis taškas – sulinkimas 90° kampu, kai viršūnė yra viename lygyje su pagrindu, Ortono vadinamas 5 valandos padėtimi: būtent ties šiuo tašku išmatuotos lentelės temperatūros. Prie plokštės prisilietęs piroskopas yra 6 valandos padėtyje; tarp 4 valandos padėties ir prisilietimo prie plokštės skirtumas mažas, „paprastai 1 ar 2 laipsniai“.
+Ortonas linkimą vertina kaip laikrodžio ciferblatą. Nesulinkęs piroskopas rodo aukštyn, į 12 valandos padėtį; prie plokštės prisilietęs piroskopas yra 6 valandos padėtyje. Galutinis taškas – sulinkimas 90° kampu, kai viršūnė yra viename lygyje su pagrindu: būtent ties šiuo tašku išmatuotos lentelės temperatūros, o Ortonas laiko tinkamai išdegtu piroskopą bet kurioje padėtyje nuo 5 iki 6 valandos. Tarp 4 valandos padėties ir prisilietimo prie plokštės skirtumas mažas, „paprastai 1 ar 2 laipsniai“.
 
 Table: Piroskopų rinkinio vertinimas po degimo (pavyzdys: piroskopai 5, 6 ir 7 glazūrai piroskopui 6)
 Label: Rinkinio vertinimas

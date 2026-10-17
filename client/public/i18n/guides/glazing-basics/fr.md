@@ -275,7 +275,7 @@ Un **floculant**{{en: flocculant}} (sel d’Epsom, vinaigre ou chlorure de calci
 
 ### Poser l’émail
 
-Commencez par débarrasser le biscuit{{en: bisque}} de la poussière et de la graisse. Plutôt que de le laver, Digitalfire préfère l’air comprimé, une brosse douce ou une éponge à peine humide.
+Commencez par débarrasser le biscuit{{en: bisque}} de la poussière et de la graisse avec une éponge à peine humide, plutôt que de le laver, ce qui le gorge d’eau. Ne chassez pas la poussière à l’air comprimé et ne la brossez pas à sec : cela met de la poussière de silice dans l’air ([Préparation en sécurité et ventilation](/guides/safe-mixing#cleaning)).
 
 - Le **trempage** « donne en général une couche d’épaisseur régulière » (Robin Hopper). La durée du trempage règle l’épaisseur : Digitalfire note que les émaux du commerce pour le trempé sont préparés à environ 1,4 pour un trempage de 5 secondes et à 1,5 pour un trempage de 1 seconde.
 - L’émail pour l’**arrosage** doit être « un peu plus dilué que pour le trempage » ; là où les arrosages se chevauchent, la couche double et risque de couler.

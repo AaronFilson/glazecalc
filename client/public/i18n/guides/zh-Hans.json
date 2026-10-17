@@ -1,0 +1,176 @@
+{
+  "version": {
+    "cones": "本指南按测温锥烧成显示，这是在设置中设定的。",
+    "temperature": "本指南按温度烧成显示，这是在设置中设定的。",
+    "showTemperature": "按温度烧成时显示",
+    "showCones": "按测温锥烧成时显示",
+    "sk": "本指南按 SK 测温锥（JIS R 8101）烧成显示，这是在设置中设定的。",
+    "showSk": "按 SK 测温锥（JIS R 8101）烧成时显示",
+    "showOrton": "按 Orton 测温锥烧成时显示"
+  },
+  "notTranslated": "本指南尚未翻译，因此以英文显示。",
+  "sectionInEnglish": "本节在翻译之后有过改动，因此在译文更新之前以英文显示。",
+  "list": {
+    "title": "指南",
+    "lead": "为新手陶艺人写的通俗指南：从釉是什么到如何烧成，以及如何在整个过程中保证每个人的安全。",
+    "note": "这些指南汇集了生产商、安全机构和经验丰富的陶艺人发布的内容，每篇末尾都列出了来源。它们只是一个起点，不能代替原料的化学品安全技术说明书、窑的使用说明书或当地法规。",
+    "glazingBasics": {
+      "title": "从基本原理学施釉",
+      "text": "釉是什么，它如何熔化，并解释您在配方或包装袋上会遇到的每个词。"
+    },
+    "makingAGlaze": {
+      "title": "如何调配釉料",
+      "text": "购买、储存、称量、调配和过筛釉料，然后进行测试并做好记录。"
+    },
+    "safeMixing": {
+      "title": "安全配料与通风",
+      "text": "粉尘、防尘口罩、清洁、最需要小心的原料，以及给窑排风。"
+    },
+    "homeSafety": {
+      "title": "别让家人中毒",
+      "text": "家中有儿童和宠物时做陶艺：储存、粉尘、窑，以及有东西被吞下时该怎么办。"
+    },
+    "firing": {
+      "title": "简易窑炉烧成",
+      "text": "测温锥、窑炉看管器和手动开关，以及素烧和釉烧的烧成曲线。"
+    }
+  },
+  "contents": "本页内容",
+  "poison": {
+    "numbersFor": "号码适用国家：",
+    "choose": "选择您所在的国家",
+    "label": "在{region}应拨打的电话",
+    "caption": "在{region}应拨打的电话（号码核实于{date}）",
+    "for": "情况",
+    "call": "拨打",
+    "notes": "时间和备注",
+    "emergency": "紧急情况：失去知觉、没有呼吸、抽搐",
+    "poisonAdvice": "{who, select, children {中毒咨询：{name}（仅限儿童）} other {中毒咨询：{name}}}",
+    "or": "或 {number}",
+    "online": "在线：<link>{name}</link>。",
+    "poisonAdviceNone": "中毒咨询",
+    "noLine": "我们无法确认这里有面向公众的中毒咨询热线。请致电您的医生，情况紧急时拨打急救电话。",
+    "medicalAdvice": "医疗咨询：{name}",
+    "animals": "动物：{name}",
+    "animalsNone": "动物",
+    "vet": "请致电您的兽医。",
+    "checkedOn": "核实来源：",
+    "choosePrompt": "选择您所在的国家，查看当地应拨打的电话。",
+    "ministry": "卫生部门的页面：<link>{name}</link>。"
+  },
+  "density": {
+    "sg": "比重 {value}",
+    "baume": "{value} °Bé（{sg}）",
+    "pint": "每英制品脱 {value} oz（{sg}）"
+  },
+  "shops": {
+    "shopsIn": "有商店的国家：",
+    "label": "{region}的商店",
+    "caption": "在{region}销售釉用原料的部分商店（核实于{date}）",
+    "nearbyCaption": "其他地方声称可配送到{region}的商店（核实于{date}）",
+    "shop": "商店",
+    "sells": "销售",
+    "packs": "所见包装规格",
+    "seen": "所见原料（按商店使用的名称）",
+    "what": {
+      "materials": "釉用原料",
+      "frits": "熔块",
+      "oxides": "氧化物",
+      "stains": "色料",
+      "clays": "黏土",
+      "glazes": "成品釉",
+      "kilns": "窑"
+    },
+    "none": "我们没有找到在{region}销售釉用原料的商店。",
+    "unknown": "我们还没有查找{region}的商店。",
+    "choosePrompt": "选择您所在的国家，查看当地的商店。"
+  },
+  "silica": {
+    "limitIn": "限值适用国家：",
+    "label": "{region}的硅尘限值",
+    "caption": "{region}工作场所呼吸性结晶型二氧化硅的职业接触限值，8 小时时间加权平均（核实于{date}）",
+    "captionControl": "{region}评价作业场所空气中呼吸性结晶型二氧化硅的标准（核实于{date}）",
+    "both": "石英和方石英",
+    "quartz": "石英",
+    "cristobalite": "方石英",
+    "actionLevel": "行动水平",
+    "formula": "管理浓度，其中 Q 为粉尘中游离二氧化硅的含量，单位为 %",
+    "formulaValue": "{numerator} / ({factor}Q + 1) mg/m³",
+    "formulaLimit": "呼吸性石英的限值，其中 Q 为粉尘中二氧化硅（SiO₂）的含量，单位为 %",
+    "formulaQ": "{numerator} / (Q + {offset}) mg/m³",
+    "formulaFull": "{numerator} / ({factor}Q + {offset}) mg/m³",
+    "quartzAll": "石英（粉尘全部为石英时）",
+    "cristobaliteAll": "方石英（粉尘全部为方石英时）",
+    "allFree": "粉尘全部为游离二氧化硅时的管理浓度",
+    "recommended": "{abbr} 推荐值",
+    "value": "{value} mg/m³",
+    "kind": {
+      "binding": "具有法律约束力的限值。",
+      "indicative": "指示性限值：参考值，不是法定上限。",
+      "assessment": "评估标准，不是具有法律约束力的限值。",
+      "control": "管理浓度（管理濃度）：根据工作场所的测定值评价作业环境空气的标准，不是对个人吸入量的限值。"
+    },
+    "setBy": "由<link>{law}</link>规定。",
+    "lowerThanEu": "低于欧盟具有法律约束力的限值 {value} mg/m³。",
+    "sameAsEu": "与欧盟具有法律约束力的限值相同。",
+    "recommendedBy": "{abbr}（{by}）在其<link>{title}</link>中推荐此值。它不是法律规定。",
+    "respirators": "这里的防尘口罩按等级销售：防釉料粉尘用 {everyday}，需要更高防护时用 {higher}（<link>官方等级</link>）。",
+    "unknown": "我们无法确认{region}的国家限值。欧盟具有法律约束力的限值 {value} mg/m³ 适用于每个成员国。",
+    "noData": "我们还没有确认{region}的限值。",
+    "agency": "国家职业安全主管机构：<link>{name}</link>。",
+    "agencySilica": "其<link>关于二氧化硅的页面</link>。",
+    "choosePrompt": "选择您所在的国家，查看其限值。"
+  },
+  "food": {
+    "rulesIn": "规定适用国家：",
+    "label": "{region}对陶瓷器物的限量",
+    "caption": "在{region}的法定检测中，烧成后的器物允许溶出的量（核实于{date}）",
+    "article": "器物类别",
+    "lead": "铅",
+    "cadmium": "镉",
+    "category": {
+      "flat": "不能盛装液体的器物，或内深不超过 25 mm 的器物",
+      "fillable": "其他可盛装液体的器物",
+      "cooking": "各种容量的烹饪器皿，以及容量超过 3 L 的包装和储存容器",
+      "rimBand": "饮用器皿的口缘：内外两侧宽 2 cm 的带状区域",
+      "rimArticle": "饮用器皿的口缘：口沿外侧宽 20 mm 的带状区域，按每件计",
+      "flatware": "扁平制品，深度不超过 25 mm",
+      "smallHollow": "小空心制品，容量低于 1.1 L，杯和马克杯除外",
+      "cups": "杯和马克杯",
+      "largeHollow": "大空心制品，容量 1.1 L 及以上，壶类除外",
+      "pitchers": "壶类",
+      "auSmall": "容量低于 1100 mL 的杯、马克杯、水壶、碗、茶壶和其他餐具",
+      "auLarge": "同上，容量 1100 mL 及以上",
+      "auPlates": "盘、碟和类似的餐具",
+      "auCooking": "烹饪器皿",
+      "jpFlat": "不能盛装液体的器物，或深度小于 2.5 cm 的器物",
+      "jpSmall": "其他容量低于 1.1 L、非烹饪用的器物",
+      "jpLarge": "其他容量 1.1 L 及以上、低于 3 L、非烹饪用的器物",
+      "jpStorage": "其他容量 3 L 及以上、非烹饪用的器物",
+      "jpCooking": "烹饪器皿，深度 2.5 cm 及以上"
+    },
+    "judged": {
+      "average": "6 件的平均值",
+      "each": "6 件中的每一件"
+    },
+    "euRules": "这里适用欧盟的规定。",
+    "law": "由<link>{law}</link>规定。",
+    "inForce": "自{date}起施行。",
+    "atMost": "溶出量不超过限值即为合格：法规写的是“不超过”。",
+    "unknown": "我们还没有确认{region}的规定。",
+    "choosePrompt": "选择您所在的国家，查看其规定。"
+  },
+  "equivalents": {
+    "buyingIn": "购买国家：",
+    "label": "{library, select, US {在美国销售的对应原料} UK {在英国销售的对应原料} EU {在欧盟销售的对应原料} other {在澳大利亚和新西兰销售的对应原料}}",
+    "caption": "{library, select, US {美国不销售的原料，各附在美国销售的最接近原料} UK {英国不销售的原料，各附在英国销售的最接近原料} EU {欧盟不销售的原料，各附在欧盟销售的最接近原料} other {澳大利亚和新西兰不销售的原料，各附在当地销售的最接近原料}}",
+    "material": "配方中的原料",
+    "soldIn": "销售地区",
+    "closest": "{library, select, US {在美国销售的最接近原料} UK {在英国销售的最接近原料} EU {在欧盟销售的最接近原料} other {在澳大利亚和新西兰销售的最接近原料}}",
+    "apart": "每 100 g 相差 {grams} g",
+    "noneClose": "没有每 100 g 相差在 15 g 以内的原料：请按化学组成比较。",
+    "loading": "正在加载原料库……",
+    "failed": "无法加载原料库。请稍后再试。",
+    "choosePrompt": "选择您所在的国家，查看当地销售的原料。"
+  }
+}

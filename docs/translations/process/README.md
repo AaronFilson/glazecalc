@@ -106,3 +106,11 @@ phase), times as saat 20.00 (the check reads 20:00 as two numbers); İ/i and I/�
 suffix on a name or figure and none on a placeholder; `one` and `other` with the noun singular; siz forms; en fazla,
 never "-den az" or "altında", for "at most"; and no mutlaka, kesinlikle or her zaman the English lacks. The style sheet
 is docs/translations/tr.md. Generate its prompts in the worktree its agents work in (`{REPO}`).
+
+## Asia, Phase D: Traditional Chinese, Korean and Simplified Chinese (in preparation)
+
+docs/asia-plan.md, Phase D. `zh-Hant`, `ko` and `zh-Hans` are in lib/regions/languages.js (`live: false`, the
+standard notice) and in wave.js, and their style sheets are docs/translations/zh-Hant.md (Taiwan's usage, which Hong
+Kong also reads), ko.md and zh-Hans.md, each with a table of the two-step sign-in words. They are written separately:
+zh-Hant is never converted from zh-Hans or the reverse (矽/硅). ko.md must hold no Chinese or Japanese characters
+except hanja a translator may use, since the hanja check allows every run of them it finds there.

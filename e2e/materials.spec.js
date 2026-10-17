@@ -2,8 +2,8 @@ const { test, expect } = require('@playwright/test');
 const { formatFormula } = require('../lib/chemistry');
 const { expectFieldProblem, signUpAndSignIn } = require('./helpers');
 
-const standardTable = (page) => page.locator('section', { hasText: 'The standard materials:' }).locator('table');
-const myTable = (page) => page.locator('section', { hasText: 'My materials:' }).locator('table');
+const standardTable = (page) => page.locator('section', { hasText: 'Standard materials' }).locator('table');
+const myTable = (page) => page.locator('section', { hasText: 'My materials' }).locator('table');
 
 // Adds an oxide with the oxide picker and enters its amount.
 const addOxide = async (page, oxide, amount) => {
@@ -20,8 +20,13 @@ test.beforeEach(async ({ page, request }) => {
 });
 
 test('lists standard materials with corrected equivalent weights', async ({ page }) => {
+  // The first few are listed until all are asked for.
+  await page.getByRole('button', { name: /^Show all \d+ materials$/ }).click();
+  // By the name cell, which also holds the record's details, folded away.
   const row = (name) =>
-    standardTable(page).locator('tr', { has: page.locator('td', { hasText: new RegExp('^\\s*' + name + '\\s*$') }) });
+    standardTable(page).locator('tr', {
+      has: page.locator('td:first-child', { hasText: new RegExp('^\\s*' + name + '\\s*Details') })
+    });
   await expect(row('Dolomite')).toContainText('92.2');
   await expect(row('Talc')).toContainText('126.42');
   await expect(row('Bone Ash')).toContainText('CaO : 3; P₂O₅ : 1');
@@ -36,6 +41,7 @@ test('narrows the standard materials by kind and region, and says what replaced 
     standardTable(page).locator('tr', { has: page.locator('td:first-child', { hasText: new RegExp('^\\s*' + name) }) });
   const custer = row('Custer Spar');
   await expect(custer.locator('.status-badge')).toHaveText('Discontinued 2023');
+  await custer.getByText('Details').click();
   await expect(custer).toContainText('Use instead: G-200 EU Feldspar, Mahavir Potash Feldspar');
   await expect(custer.getByRole('link')).toHaveAttribute('href', /^https:/);
   await expect(row('G-200 EU Feldspar')).toContainText(/Replaces: [^.]*Custer Spar/);

@@ -275,7 +275,7 @@ Un **flocculante**{{en: flocculant}} (sale inglese, aceto o cloruro di calcio) g
 
 ### Stendere lo smalto
 
-Prima, pulire il biscotto{{en: bisque}} da polvere e grasso. Al lavaggio Digitalfire preferisce l’aria compressa, un pennello morbido o una spugna appena umida.
+Prima, pulire il biscotto{{en: bisque}} da polvere e grasso con una spugna appena umida invece di lavarlo, perché il lavaggio lo inzuppa. Non soffiare via la polvere con l’aria compressa e non spazzolarla a secco: così la polvere di silice finisce nell’aria ([Miscelazione sicura e ventilazione](/guides/safe-mixing#cleaning)).
 
 - L’**immersione** «in genere dà un rivestimento di spessore uniforme» (Robin Hopper). Il tempo di immersione determina lo spessore: Digitalfire osserva che gli smalti commerciali per immersione sono preparati a circa 1,4 per un’immersione di 5 secondi e a 1,5 per un’immersione di 1 secondo.
 - Per il **versamento** lo smalto dovrebbe essere «un po’ più diluito di quando lo si usa per immersione»; dove i versamenti si sovrappongono, lo strato raddoppia e può colare.

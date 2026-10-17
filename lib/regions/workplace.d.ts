@@ -28,6 +28,11 @@ export interface SilicaLimit {
   formula?: Formula;
   /** A recommended value from a scientific body beside the law's, not binding (Japan's JSOH). */
   recommended?: Recommended;
+  /**
+   * YYYY-MM-DD: the day the limit applies from, where it is a new limit not yet in force (Taiwan's,
+   * from 2027-01-01). What applies until then is said in the note, never guessed.
+   */
+  from?: string;
   note?: string;
 }
 

@@ -71,6 +71,8 @@
     "contact": "Ha az adatairól szeretne kérdezni, vagy bármelyik jogával élni szeretne, írjon ide: <mail>privacy@glazecalcapp.com</mail>. <issues>Hibajegyet is nyithat a GitHubon</issues>, de a hibajegyek nyilvánosak: soha ne írja bele az e-mail-címét vagy bármilyen személyes adatát. Az adataival kapcsolatos teendők többségét maga is elvégezheti a <account>fiókja oldalán</account>.",
     "storedHeading": "Mit őrzünk meg, és miért",
     "storedAccount": "<b>A fiókja:</b> az e-mail-címe és a jelszava, amelyet csak egyirányú kivonatként (bcrypt hash) tárolunk, magát a jelszót soha. A beállításait (például a nyelvet, a régiót és a mértékegységeket) és a készlete listáját vele együtt őrizzük. A fiókhoz e-mail-cím kell, a bejelentkezéshez és az elfelejtett jelszó visszaállításához. Amikor fiókot hoz létre, linket küldünk a címre, hogy megerősítse, hogy az Öné; addig csak akkor megy rá levél, ha kéri, például jelszó-visszaállításkor.",
+    "storedEmailChange": "<b>E-mail-cím módosítása:</b> a cím legutóbbi változásának dátuma, hogy a kétlépéses bejelentkezés kikapcsolására vonatkozó kérést ne fogadjuk el új címről a változás utáni 30 napban.",
+    "storedSignIn": "<b>Kétlépéses bejelentkezés, ha bekapcsolja:</b> hogy be van-e kapcsolva; a kulcs, amelyet a hitelesítő alkalmazása megoszt a Glazecalc-cal, titkosítva; minden hozzáférési kulcsnál a nyilvános kulcsa (amellyel önmagában nem lehet bejelentkezni), az azonosítója és az adatai, amelyeket az eszköze ad neki, az Ön által adott név, valamint hogy mikor adták hozzá és mikor használták utoljára; a helyreállítási kódjai, csak kulcsos egyirányú hash formájában, így senki sem tudja visszaolvasni őket; és ha valaki megadja a jelszavát, de nem fejezi be a második lépést, hogy a Glazecalc mikor értesítette Önt e-mailben erről (legfeljebb naponta egyszer). Amíg bejelentkezik, a jelszava és a második lépés között a szerver 5 percig megőrzi a bejelentkezés feljegyzését, az oldal pedig egy rövid tokent tart csak a memóriájában: nincs új süti, és semmi sem kerül a böngészője tárolójába.",
     "storedSaved": "<b>Amit elment:</b> receptjei, nyersanyagai, adalékai, jegyzetei, égetési naplói és tanácsai, ahogy megírta őket. Csak Ön láthatja őket: a felhasználók között semmi sincs megosztva.",
     "storedTrial": "<b>Próbahasználat (Kipróbálás most):</b> nincs e-mail-cím vagy jelszó, csak egy kitalált név, például „speckled quiet kilns”. Ha próbahasználat közben ugyanabban a böngészőben bejelentkezik egy fiókba, amit a próbahasználatban készített, átkerül a fiókba.",
     "storedResets": "<b>Jelszó-visszaállítási és e-mail-linkek:</b> melyik fiók kérte, mikor, melyik címre küldtük a cím megerősítésére szolgáló linket, és minden link ujjlenyomata (nem maga a link).",
@@ -96,6 +98,7 @@
     "keptAccount": "<b>A fiókja és amit elment:</b> amíg nem törli őket. A fiókokat nem töröljük azért, mert nem használják őket.",
     "keptTrial": "<b>Próbahasználat:</b> a kezdetétől számított 14 napig, utána mindennel együtt törlődik, ami benne van, hacsak nem hoz létre fiókot, hogy megőrizze.",
     "keptResets": "<b>Jelszó-visszaállítási és e-mail-linkek:</b> a visszaállító link 30 percig érvényes, és nyilvántartását körülbelül egy óra múlva töröljük; a cím megerősítésére szolgáló link 24 óráig érvényes, és ennyi ideig őrizzük.",
+    "keptSignIn": "<b>Kétlépéses bejelentkezés:</b> minden hitelesítő alkalmazás, hozzáférési kulcs és helyreállítási kódkészlet addig, amíg eltávolítja, kikapcsolja a kétlépéses bejelentkezést, vagy törli a fiókját. A második lépésre váró bejelentkezést 5 perc után töröljük, a hozzáadni kezdett, de be nem fejezett alkalmazást vagy hozzáférési kulcsot legfeljebb 10 perc után.",
     "keptBackups": "<b>Biztonsági mentések:</b> az adatbázis titkosított másolatait 30 napig, a szerver lemezének másolatait 7 napig őrizzük. Így a törölt fiók 30 napon belül minden biztonsági mentésből eltűnik.",
     "keptDeletions": "<b>A törölt fiók nyilvántartása:</b> 37 nap, épp valamivel hosszabb, mint bármelyik biztonsági mentés megőrzése.",
     "keptLogs": "<b>Naplók:</b> a webszerveréi 14 napig. Az alkalmazás és az adatbázis saját naplóit a méretük korlátozza (egyenként 50 MB), ami egy csendes webhelyen több napra visszanyúlik. A szerver lemezének másolatai a naplókat legfeljebb további 7 napig őrzik.",
@@ -103,6 +106,7 @@
     "keptInbound": "<b>A Glazecalc címeire küldött levelek:</b> 30 napig az Amazon tárhelyén, a tulajdonos postafiókjában pedig addig, amíg a válaszhoz szükséges. Az adataival kapcsolatos kérésről rövid feljegyzést (mikor érkezett, mit kértek és mi történt) három évig őrzünk meg.",
     "rightsHeading": "Az Ön jogai",
     "rightsIntro": "Megtekintheti, helyesbítheti, magával viheti és törölheti az adatait. A legtöbbet maga is megteheti a <account>fiókja oldalán</account>:",
+    "rightsExport": "<b>Megtekintés és magával vitel:</b> az Adataim letöltése egyetlen fájlba menti az összes adatát (JSON), beleértve a kétlépéses bejelentkezési módjai nevét és dátumát (a kulcsaikat és kódjaikat soha), valamint a receptjeit és nyersanyagait táblázatként (CSV).",
     "rightsCorrect": "<b>Helyesbítés:</b> beállításait és bejegyzéseit bármikor módosíthatja. Az e-mail-címe módosításához nyissa meg az új címre küldött linket; a régi címet, ha meg volt erősítve, értesítjük a változásról, és minden eszközt kijelentkeztetünk.",
     "rightsDelete": "<b>Törlés:</b> a Fiókom törlése gomb azonnal eltávolítja a fiókját és mindent, amit elmentett, a Próbahasználat elvetése pedig ugyanezt teszi egy próbahasználattal. A biztonsági mentésekben lévő másolatok 30 napon belül eltűnnek.",
     "rightsSignOut": "<b>Kijelentkezés mindenhol:</b> minden eszközön lezárja a fiókja munkameneteit.",
@@ -146,10 +150,6 @@
       "includeAdditives": {
         "purpose": "Hogy az új receptek beszámítják-e adalékaikat a Seger-képletbe, ahogy legutóbb választotta.",
         "lasts": "Amíg nem törli a böngésző tárhelyét."
-      },
-      "recipeHelp": {
-        "purpose": "Hogy elrejtette a súgót a recept oldalán.",
-        "lasts": "Amíg újra meg nem jeleníti a súgót."
       },
       "print": {
         "purpose": "A recept nyomtatásánál legutóbb választott beállításai: a teljes recept vagy egy adag, és az adagméret.",

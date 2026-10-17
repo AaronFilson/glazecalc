@@ -275,7 +275,7 @@ Cieľové hodnoty sa podľa zdrojov líšia. Digitalfire uvádza pre glazúry na
 
 ### Nanášanie glazúry
 
-Najprv z prežahu odstráňte prach a mastnotu. Digitalfire uprednostňuje pred umývaním stlačený vzduch, mäkký štetec alebo len mierne vlhkú špongiu.
+Najprv z prežahu odstráňte prach a mastnotu len mierne vlhkou špongiou namiesto umývania, ktorým by nasiakol vodou. Prach neodfukujte stlačeným vzduchom ani ho neoprašujte nasucho: prach oxidu kremičitého sa tak dostane do vzduchu ([Bezpečné miešanie a vetranie](/guides/safe-mixing#cleaning)).
 
 - **Ponáranie** „spravidla dáva vrstvu rovnomernej hrúbky“ (Robin Hopper). Hrúbku určuje doba ponorenia: Digitalfire uvádza, že komerčné glazúry na ponáranie sa vyrábajú s relatívnou hustotou asi 1,4 na 5-sekundové ponorenie a 1,5 na 1-sekundové ponorenie.
 - Glazúra na **polievanie** má byť „o niečo redšia ako pri ponáraní“; tam, kde sa polievania prekrývajú, je vrstva dvojnásobná a môže stekať.

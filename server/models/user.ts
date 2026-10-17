@@ -30,6 +30,7 @@ export type TokenLifetime = `${number}d`;
  *   density        glaze density as specific gravity, degrees Baumé or imperial pint weight, or '' to follow the region
  *   englishTerms   'on' puts the English after key terms in a translated page, for reading English sources
  *   notice         'hidden' once the translation notice is closed
+ *   recipeHelp     the recipe page's help: open for an account with no recipes yet ('auto'), or as chosen
  */
 export const PREFERENCES = {
   weightUnit: ['g', 'lb'],
@@ -45,7 +46,8 @@ export const PREFERENCES = {
   language: languages.LIVE_LANGUAGES as readonly string[],
   density: ['', 'sg', 'baume', 'pint'],
   englishTerms: ['off', 'on'],
-  notice: ['shown', 'hidden']
+  notice: ['shown', 'hidden'],
+  recipeHelp: ['auto', 'shown', 'hidden']
 } as const;
 export type Preferences = { -readonly [K in keyof typeof PREFERENCES]: (typeof PREFERENCES)[K][number] };
 
@@ -247,7 +249,8 @@ const userSchema = new mongoose.Schema<UserFields, UserModel, UserMethods>({
     language: { type: String, enum: PREFERENCES.language },
     density: { type: String, enum: PREFERENCES.density },
     englishTerms: { type: String, enum: PREFERENCES.englishTerms },
-    notice: { type: String, enum: PREFERENCES.notice }
+    notice: { type: String, enum: PREFERENCES.notice },
+    recipeHelp: { type: String, enum: PREFERENCES.recipeHelp }
   },
   shelf: { type: [String], default: undefined },
   tokenVersion: { type: Number, default: 0 },

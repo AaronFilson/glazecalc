@@ -366,7 +366,7 @@ test.describe('the pages', () => {
     await expect(page).toHaveURL(/\/home$/);
     await expect.poll(() => subjects(email)).toContain(RECOVERY_USED);
     await page.goto('/account');
-    await expect(section(page)).toContainText('9 recovery codes of 10 left.');
+    await expect(section(page)).toContainText('9 of 10 recovery codes left.');
   });
 
   // Run in the page (page.evaluate, addInitScript).

@@ -275,7 +275,7 @@ Tikslinės vertės skiriasi pagal šaltinį. Digitalfire glazūroms merkimui nur
 
 ### Glazūros užnešimas
 
-Pirmiausia nuvalykite nuo biskvito{{en: bisque}} dulkes ir riebalus. Digitalfire vietoj plovimo renkasi suspaustą orą, minkštą šepetėlį ar vos drėgną kempinę.
+Pirmiausia nuvalykite nuo biskvito{{en: bisque}} dulkes ir riebalus vos drėgna kempine, o ne plaukite jo, nes taip jis prisigeria vandens. Nenupūskite dulkių suslėgtuoju oru ir nevalykite jų sausu šepečiu: taip silicio dioksido dulkės patenka į orą ([Saugus maišymas ir vėdinimas](/guides/safe-mixing#cleaning)).
 
 - **Merkimas** „paprastai duoda vienodo storio dangą“ (Robin Hopper). Storį lemia merkimo trukmė: Digitalfire pažymi, kad parduodamos glazūros merkimui gaminamos maždaug 1,4 santykinio tankio 5 sekundžių merkimui ir 1,5 – 1 sekundės merkimui.
 - Glazūra **liejimui** turėtų būti „šiek tiek skystesnė nei merkimui“; kur užlieta du kartus, sluoksnis padvigubėja ir gali nubėgti.

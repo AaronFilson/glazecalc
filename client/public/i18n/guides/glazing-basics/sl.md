@@ -275,7 +275,7 @@ Priporočene vrednosti se od vira do vira razlikujejo. Digitalfire za glazure za
 
 ### Nanašanje glazure
 
-Z biskvita najprej očistite prah in maščobo. Digitalfire ima raje stisnjen zrak, mehak čopič ali komaj vlažno gobo kot pranje.
+Z biskvita najprej očistite prah in maščobo s komaj vlažno gobo, namesto da bi ga prali, saj se pri tem prepoji z vodo. Prahu ne odpihujte s stisnjenim zrakom in ga ne krtačite na suho: tako pride kremenov prah v zrak ([Varno mešanje in prezračevanje](/guides/safe-mixing#cleaning)).
 
 - **Namakanje** »na splošno da enakomerno debel nanos« (Robin Hopper). Debelino določa čas namakanja: Digitalfire navaja, da so komercialne glazure za namakanje pripravljene z relativno gostoto približno 1,4 za 5-sekundno namakanje in 1,5 za 1-sekundno namakanje.
 - Glazura za **polivanje** naj bo »nekoliko redkejša kot za namakanje«; kjer se polivi prekrivajo, je plast dvojna in lahko steče.

@@ -1,19 +1,9 @@
 {
   "common": {
     "formulaHelp": "Formülü düz rakamlarla yazın, örneğin {typed}: sayılar alt simge olarak görünür, {shown}. Bir formülün parçalarını {joined} örneğindeki gibi birleştirmek için şu noktayı kopyalayın:",
-    "relatedTo": "İlgili olduğu:",
-    "notes": "Notlar:",
-    "loi": "Kızdırma kaybı - K.K. (yüzde):",
-    "molecularWeight": "Formülün ham molekül ağırlığı (yalnızca K.K. boşsa kullanılır):",
-    "formulaHeading": "Formülü girin (pişmiş):",
-    "oxideSelection": "Oksit seçimi",
     "noOxide": "yok",
     "addOxide": "Oksidi listeye ekle",
-    "formulaIn": "Bu formülün biçimi:",
     "percent": "Yüzde",
-    "molecular": "Molekül / Seger formülü",
-    "amount": "Miktar:",
-    "removeOxide": "Formül listesinden kaldır",
     "save": "Kaydet",
     "elements": "Elementler",
     "removeNote": "Kayıtlı reçeteler kendi kopyalarını saklar, bu yüzden değişmezler.",
@@ -22,13 +12,7 @@
   "material": {
     "title": "Hammaddeler",
     "lead": "Kendi hammaddeleriniz; kimyasal formül veya oksit analizi olarak girilir.",
-    "newHeading": "Yeni hammaddenin bilgilerini girin",
-    "name": "Hammaddenin adı:",
-    "rawFormula": "Ham formül:",
     "weightsNote": "Eşdeğer ağırlık ve pişmiş ağırlık, kaydettiğinizde formülden ve kızdırma kaybından hesaplanır.",
-    "mineHeading": "Hammaddelerim:",
-    "rawFormulaColumn": "Ham formül",
-    "standardHeading": "Standart hammaddeler:",
     "fetchFailed": "Hammadde bilgileri alınırken bir hata oluştu.",
     "standardFetchFailed": "Standart hammaddelerin bilgileri alınırken bir hata oluştu.",
     "saved": "Başarılı. Hammadde veritabanına eklendi."
@@ -36,13 +20,8 @@
   "additive": {
     "title": "Katkılar ve renklendiriciler",
     "lead": "Temel reçetenin üzerine ölçülen renklendiriciler ve opaklaştırıcılar, örneğin kobalt veya kalay oksit. Bir reçete bunları Seger formülünün dışında bırakabilir ya da formüle katabilir.",
-    "newHeading": "Yeni katkının bilgilerini girin",
-    "name": "Katkının adı:",
-    "formulaAsSold": "Formül, satıldığı hâliyle:",
     "noChemistry": "Oksit analizi yok (örneğin ticari bir boya): Seger formülünün dışında bırak",
     "firedNote": "Pişince sırra ne verdiğini girin: siyah kobalt oksit, {asSold}, %{loi} kızdırma kaybıyla {fired} verir. Böylece bir reçete onu Seger formülüne katabilir.",
-    "mineHeading": "Katkılarım ve renklendiricilerim:",
-    "standardHeading": "Standart katkılar:",
     "fetchFailed": "Katkı bilgileri alınırken bir hata oluştu.",
     "standardFetchFailed": "Standart katkıların bilgileri alınırken bir hata oluştu.",
     "saved": "Başarılı. Katkı veritabanına eklendi."

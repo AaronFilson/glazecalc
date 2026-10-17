@@ -248,7 +248,7 @@ Sur un four à commande manuelle, le regard est votre seul signal en temps réel
 
 ### Après la cuisson
 
-Orton lit la courbure comme un cadran d’horloge. Un cône qui n’a pas bougé pointe vers le haut, à 12 heures. Le point final est une courbure de 90°, la pointe au niveau de la base, ce qu’Orton appelle la position de 5 heures : c’est le point auquel les températures du tableau sont mesurées. Un cône qui touche la plaque est à 6 heures ; entre 4 heures et le contact avec la plaque, la différence est faible, « généralement 1 ou 2 degrés ».
+Orton lit la courbure comme un cadran d’horloge. Un cône qui n’a pas bougé pointe vers le haut, à 12 heures ; un cône qui touche la plaque est à 6 heures. Le point final est une courbure de 90°, la pointe au niveau de la base : c’est le point auquel les températures du tableau sont mesurées, et Orton considère comme correctement cuit un cône qui se trouve n’importe où entre 5 heures et 6 heures. Entre 4 heures et le contact avec la plaque, la différence est faible, « généralement 1 ou 2 degrés ».
 
 Table: Lire un jeu de cônes après la cuisson (exemple : les cônes 5, 6 et 7 avec un émail pour le cône 6)
 Label: Lire un jeu de cônes

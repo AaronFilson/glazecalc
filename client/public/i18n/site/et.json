@@ -71,6 +71,8 @@
     "contact": "Oma andmete kohta küsimiseks või mis tahes oma õiguse kasutamiseks kirjutage aadressil <mail>privacy@glazecalcapp.com</mail>. Võite ka <issues>avada GitHubis probleemiteate</issues>, kuid probleemiteated on avalikud: ärge kunagi kirjutage sinna oma e-posti aadressi ega midagi isiklikku. Enamikku oma andmetega seotud toiminguid saate ise teha oma <account>konto lehel</account>.",
     "storedHeading": "Mida säilitatakse ja miks",
     "storedAccount": "<b>Teie konto:</b> teie e-posti aadress ja parool, mida hoitakse ainult ühesuunalise räsina (bcrypt), mitte kunagi parooli enda kujul. Koos sellega hoitakse teie sätteid (näiteks keel, piirkond ja ühikud) ning teie toorainete varu loendit. Konto jaoks on vaja e-posti aadressi, et sisse logida ja unustatud parool lähtestada. Konto loomisel saadetakse aadressile link, et kinnitada, et see on teie oma; seni saadetakse sellele kirju ainult siis, kui te seda palute, näiteks parooli lähtestamiseks.",
+    "storedEmailChange": "<b>E-posti aadressi muutmine:</b> kuupäev, mil teie aadress viimati muutus, et kaheastmelise sisselogimise väljalülitamise taotlust ei võetaks vastu uuelt aadressilt 30 päeva jooksul pärast muutust.",
+    "storedSignIn": "<b>Kaheastmeline sisselogimine, kui selle sisse lülitate:</b> kas see on sees; võti, mida teie autentimisrakendus Glazecalciga jagab, krüpteeritult; iga pääsuvõtme kohta selle avalik võti (millega üksi sisse logida ei saa), ID ja andmed, mille teie seade sellele annab, teie antud nimi ning lisamise ja viimase kasutamise aeg; teie taastekoodid ainult võtmega ühesuunalise räsina, nii et keegi ei saa neid tagasi lugeda; ning kui keegi sisestab teie parooli, kuid ei lõpeta teist sammu, millal Glazecalc teile sellest viimati e-kirja saatis (kõige rohkem kord päevas). Sisselogimise ajal, parooli ja teise sammu vahel, hoiab server sisselogimise märget 5 minutit ning leht hoiab lühikest luba ainult oma mälus: uut küpsist ei ole ja teie brauseri salvestusruumi ei jää midagi.",
     "storedSaved": "<b>See, mida salvestate:</b> teie retseptid, toorained, lisaained, märkmed, põletuspäevikud ja nõuanded nii, nagu need kirjutasite. Neid näete ainult teie: kasutajate vahel ei jagata midagi.",
     "storedTrial": "<b>Proovikasutus (nupp Proovi kohe):</b> ei e-posti aadressi ega parooli, ainult väljamõeldud nimi, näiteks „speckled quiet kilns“. Kui logite proovikasutuse ajal samas brauseris kontosse sisse, viiakse proovikasutuses tehtu kontosse üle.",
     "storedResets": "<b>Parooli lähtestamise ja e-posti lingid:</b> milline konto lingi küsis, millal, aadress, kuhu saadeti aadressi kinnitamise link, ja iga lingi sõrmejälg (mitte link ise).",
@@ -96,6 +98,7 @@
     "keptAccount": "<b>Teie konto ja salvestatu:</b> kuni te need kustutate. Kontosid ei eemaldata kasutamatuse tõttu.",
     "keptTrial": "<b>Proovikasutus:</b> 14 päeva selle algusest, seejärel kustutatakse see koos kõigega, mis selles on, kui te just ei loo selle säilitamiseks kontot.",
     "keptResets": "<b>Parooli lähtestamise ja e-posti lingid:</b> lähtestuslink kehtib 30 minutit ja selle kirje kustutatakse umbes tunni pärast; aadressi kinnitamise link kehtib ja seda säilitatakse 24 tundi.",
+    "keptSignIn": "<b>Kaheastmeline sisselogimine:</b> iga autentimisrakendust, pääsuvõtit ja taastekoodide komplekti hoitakse seni, kuni te selle eemaldate, lülitate kaheastmelise sisselogimise välja või kustutate oma konto. Teist sammu ootav sisselogimine kustutatakse 5 minuti pärast ning rakendus või pääsuvõti, mille lisamist alustasite, kuid ei lõpetanud, hiljemalt 10 minuti pärast.",
     "keptBackups": "<b>Varukoopiad:</b> andmebaasi krüpteeritud koopiaid hoitakse 30 päeva ja serveri ketta koopiaid 7 päeva. Seega kaob kustutatud konto kõigist varukoopiatest 30 päeva jooksul.",
     "keptDeletions": "<b>Kustutatud konto kirje:</b> 37 päeva, veidi kauem kui ükski varukoopia.",
     "keptLogs": "<b>Logid:</b> veebiserveri logid 14 päeva. Rakenduse ja andmebaasi enda logisid piirab maht (kumbki 50 MB), mis vaikse saidi puhul ulatub mitme päeva taha. Serveri ketta koopiad säilitavad logisid veel kuni 7 päeva.",
@@ -103,6 +106,7 @@
     "keptInbound": "<b>Kirjad, mille saadate Glazecalcile:</b> 30 päeva Amazoni hoidlas ja omaniku postkastis nii kaua, kui teile vastamiseks kulub. Teie andmeid puudutava taotluse kohta säilitatakse lühike märge (millal see saabus, mida küsiti ja mida tehti) kolm aastat.",
     "rightsHeading": "Teie õigused",
     "rightsIntro": "Saate oma andmeid vaadata, parandada, kaasa võtta ja kustutada. Enamikku sellest saate teha ise oma <account>konto lehel</account>:",
+    "rightsExport": "<b>Vaadake ja võtke endaga kaasa:</b> Minu andmete allalaadimine salvestab kõik ühte faili (JSON), sealhulgas teie kaheastmelise sisselogimise viiside nimed ja kuupäevad (mitte kunagi nende võtmeid ega koode), ning teie retseptid ja toorained tabelitena (CSV).",
     "rightsCorrect": "<b>Parandamine:</b> muutke oma sätteid ja kirjeid igal ajal. E-posti aadressi muutmiseks avage uuele aadressile saadetud link; vanale aadressile, kui see oli kinnitatud, teatatakse muudatusest ja kõik seadmed logitakse välja.",
     "rightsDelete": "<b>Kustutamine:</b> nupp Kustuta minu konto eemaldab kohe teie konto ja kõik, mille olete salvestanud, ning nupp Loobu proovikasutusest teeb sama proovikasutusega. Varukoopiates olevad koopiad kaovad 30 päeva jooksul.",
     "rightsSignOut": "<b>Väljalogimine kõikjal:</b> lõpetab teie konto seansid kõigis seadmetes.",
@@ -146,10 +150,6 @@
       "includeAdditives": {
         "purpose": "Kas uutes retseptides arvestatakse lisaained Segeri valemisse, nagu viimati valisite.",
         "lasts": "Kuni tühjendate brauseri salvestusruumi."
-      },
-      "recipeHelp": {
-        "purpose": "See, et peitsite retseptilehel abiteksti.",
-        "lasts": "Kuni kuvate abiteksti uuesti."
       },
       "print": {
         "purpose": "Teie viimased valikud retsepti printimisel: kogu retsept või segu ning segu kogus.",

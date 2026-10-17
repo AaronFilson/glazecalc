@@ -32,7 +32,8 @@ describe('LocaleService', () => {
     expect(browserRegion(['de-AT', 'en'])).toBe('AT');
     expect(browserRegion(['en', 'fr-FR'])).toBe('FR');
     expect(browserRegion(['en', 'ja-JP'])).toBe('JP');
-    expect(browserRegion(['en', 'ko-KR'])).toBe('');
+    expect(browserRegion(['en', 'ko-KR'])).toBe('KR');
+    expect(browserRegion(['en', 'th-TH'])).toBe('');
     expect(browserRegion(['tr-TR', 'en'])).toBe('TR');
     expect(browserRegion(['not a tag'])).toBe('');
   });
@@ -189,6 +190,11 @@ describe('prerenderRegion', () => {
       'IE',
       'SE'
     ]);
+  });
+
+  it('finds a language listed with its script, as the region data lists it', () => {
+    // Taiwan is the one region whose first language is Traditional Chinese; Singapore the one listing Simplified.
+    expect(['zh-Hant', 'zh-Hans', 'ko', 'ja', 'ja-XC'].map(prerenderRegion)).toEqual(['TW', 'SG', 'KR', 'JP', 'JP']);
   });
 
   it('names none for English, a pseudo-locale, or a language no region lists', () => {

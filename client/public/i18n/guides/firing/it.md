@@ -248,7 +248,7 @@ In un forno manuale lo spioncino è l’unico segnale in tempo reale, ed è per 
 
 ### Dopo la cottura
 
-Orton legge la piegatura come il quadrante di un orologio. Un cono non piegato punta in alto, a ore 12. Il punto finale è una piegatura di 90°, con la punta all’altezza della base, che Orton chiama la posizione a ore 5: il punto a cui sono misurate le temperature della tabella. Un cono che tocca la piastra è a ore 6; tra la posizione a ore 4 e il contatto con la piastra la differenza è piccola, «di solito 1 o 2 gradi».
+Orton legge la piegatura come il quadrante di un orologio. Un cono non piegato punta in alto, a ore 12; un cono che tocca la piastra è a ore 6. Il punto finale è una piegatura di 90°, con la punta all’altezza della base: il punto a cui sono misurate le temperature della tabella, e Orton considera cotto correttamente un cono in qualsiasi posizione tra ore 5 e ore 6. Tra la posizione a ore 4 e il contatto con la piastra la differenza è piccola, «di solito 1 o 2 gradi».
 
 Table: Leggere una terna di coni dopo la cottura (esempio: coni 5, 6 e 7 per uno smalto per cono 6)
 Label: Leggere una terna di coni

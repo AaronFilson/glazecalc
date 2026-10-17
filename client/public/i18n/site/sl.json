@@ -71,6 +71,8 @@
     "contact": "Če želite vprašati o svojih podatkih ali uveljavljati katero koli od svojih pravic, pišite na <mail>privacy@glazecalcapp.com</mail>. Lahko tudi <issues>odprete zadevo (issue) na GitHubu</issues>, vendar so zadeve javne: vanje nikoli ne pišite svojega e-poštnega naslova ali česar koli osebnega. Večino tega, kar zadeva vaše podatke, lahko naredite sami na <account>strani računa</account>.",
     "storedHeading": "Kaj se hrani in zakaj",
     "storedAccount": "<b>Vaš račun:</b> vaš e-poštni naslov in geslo, ki je shranjeno samo kot enosmerni zgoščeni zapis (bcrypt), nikoli kot geslo samo. Z njim se hranijo vaše nastavitve (na primer jezik, regija in enote) in seznam surovin, ki jih imate na zalogi. Račun potrebuje e-poštni naslov za prijavo in za ponastavitev pozabljenega gesla. Ko ustvarite račun, se na naslov pošlje povezava, s katero potrdite, da je vaš; do takrat se nanj pošilja pošta samo, kadar to zahtevate, na primer za ponastavitev gesla.",
+    "storedEmailChange": "<b>Sprememba e-poštnega naslova:</b> datum zadnje spremembe vašega naslova, da se zahteva za izklop dvostopenjske prijave nikoli ne sprejme z novega naslova v 30 dneh po spremembi.",
+    "storedSignIn": "<b>Dvostopenjska prijava, če jo vklopite:</b> ali je vklopljena; ključ, ki ga vaša aplikacija za preverjanje pristnosti deli z Glazecalc, šifriran; pri vsakem ključu za dostop njegov javni ključ (s katerim samim se ni mogoče prijaviti) z ID-jem in podatki, ki mu jih dodeli vaša naprava, ime, ki ste mu ga dali, ter kdaj je bil dodan in nazadnje uporabljen; vaše obnovitvene kode, samo kot enosmerni zgoščeni zapis s ključem, zato jih nihče ne more prebrati nazaj; in če nekdo vnese vaše geslo, a ne dokonča drugega koraka, kdaj vam je Glazecalc o tem nazadnje poslal e-pošto (največ enkrat na dan). Med prijavo, med geslom in drugim korakom, strežnik 5 minut hrani zapis o prijavi, stran pa drži kratek žeton samo v pomnilniku: brez novega piškotka, nič v shrambi vašega brskalnika.",
     "storedSaved": "<b>Kar shranite:</b> vaši recepti, surovine, dodatki, zapiski, dnevniki žganja in nasveti, tako kot ste jih zapisali. Vidite jih samo vi: med uporabniki se nič ne deli.",
     "storedTrial": "<b>Preizkus (»Preizkusi zdaj«):</b> brez e-poštnega naslova ali gesla, samo izmišljeno ime, na primer »speckled quiet kilns«. Če se med preizkusom v istem brskalniku prijavite v račun, se to, kar ste ustvarili v preizkusu, prenese v račun.",
     "storedResets": "<b>Povezave za ponastavitev gesla in e-poštne povezave:</b> kateri račun je zahteval povezavo, kdaj, naslov, na katerega je bila poslana povezava za potrditev naslova, in prstni odtis vsake povezave (ne povezava sama).",
@@ -96,6 +98,7 @@
     "keptAccount": "<b>Vaš račun in to, kar shranite:</b> dokler jih ne izbrišete. Računi se ne odstranijo zato, ker niso v uporabi.",
     "keptTrial": "<b>Preizkus:</b> 14 dni od začetka, nato se izbriše z vsem, kar vsebuje, razen če ustvarite račun, da ga ohranite.",
     "keptResets": "<b>Povezave za ponastavitev gesla in e-poštne povezave:</b> povezava za ponastavitev velja 30 minut, njen zapis pa se izbriše po približno eni uri; povezava za potrditev naslova velja in se hrani 24 ur.",
+    "keptSignIn": "<b>Dvostopenjska prijava:</b> vsaka aplikacija za preverjanje pristnosti, ključ za dostop in nabor obnovitvenih kod, dokler jih ne odstranite, izklopite dvostopenjske prijave ali izbrišete računa. Prijava, ki čaka na drugi korak, se izbriše po 5 minutah, aplikacija ali ključ za dostop, ki ste ju začeli dodajati, a niste dokončali, pa po največ 10.",
     "keptBackups": "<b>Varnostne kopije:</b> šifrirane kopije podatkovne zbirke se hranijo 30 dni, kopije strežnikovega diska pa 7 dni. Izbrisan račun tako v 30 dneh izgine iz vseh varnostnih kopij.",
     "keptDeletions": "<b>Zapis izbrisanega računa:</b> 37 dni, malo dlje od katere koli varnostne kopije.",
     "keptLogs": "<b>Dnevniki:</b> dnevniki spletnega strežnika 14 dni. Lastni dnevniki aplikacije in podatkovne zbirke so omejeni z velikostjo (vsak 50 MB), kar na spletnem mestu z malo prometa seže nekaj dni nazaj. Kopije strežnikovega diska hranijo dnevnike še do 7 dni dlje.",
@@ -103,6 +106,7 @@
     "keptInbound": "<b>Pošta, ki jo pošljete aplikaciji Glazecalc:</b> 30 dni v Amazonovi shrambi, v lastnikovem poštnem predalu pa toliko časa, kolikor je potrebno, da vam odgovori. Pri zahtevi glede vaših podatkov se kratek zapis (kdaj je prispela, kaj je bilo zahtevano in kaj je bilo storjeno) hrani tri leta.",
     "rightsHeading": "Vaše pravice",
     "rightsIntro": "Svoje podatke lahko vidite, popravite, prenesete in izbrišete. Večino tega lahko naredite sami na <account>strani računa</account>:",
+    "rightsExport": "<b>Vpogled in odnos s seboj:</b> Prenos mojih podatkov shrani vse v eno datoteko (JSON), vključno z imeni in datumi vaših načinov dvostopenjske prijave (nikoli njihovih ključev ali kod), ter vaše recepte in surovine kot preglednice (CSV).",
     "rightsCorrect": "<b>Popravek:</b> nastavitve in zapise lahko kadar koli spremenite. Če želite spremeniti e-poštni naslov, odprite povezavo, poslano na novi naslov; stari naslov, če je bil potrjen, prejme obvestilo o spremembi, vse naprave pa so odjavljene.",
     "rightsDelete": "<b>Izbris:</b> »Izbriši moj račun« takoj odstrani vaš račun in vse, kar ste shranili, »Zavrzi preizkus« pa enako stori za preizkus. Kopije v varnostnih kopijah izginejo v 30 dneh.",
     "rightsSignOut": "<b>Odjava na vseh napravah:</b> konča seje vašega računa na vseh napravah.",
@@ -146,10 +150,6 @@
       "includeAdditives": {
         "purpose": "Ali novi recepti upoštevajo dodatke v Segerjevi formuli, kot ste nazadnje izbrali.",
         "lasts": "Dokler ne počistite shrambe brskalnika."
-      },
-      "recipeHelp": {
-        "purpose": "Da ste skrili pomoč na strani recepta.",
-        "lasts": "Dokler pomoči znova ne prikažete."
       },
       "print": {
         "purpose": "Vaše zadnje izbire za tiskanje recepta: celoten recept ali seznam za tehtanje in velikost mešanice.",

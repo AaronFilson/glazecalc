@@ -1,11 +1,12 @@
-import { Component, computed } from '@angular/core';
+import { Component, computed, inject } from '@angular/core';
 import { TranslocoDirective } from '@jsverse/transloco';
 import { marker } from '@jsverse/transloco-keys-manager/marker';
 import { textKey } from '../../../../lib/regions/languages';
 import { EU_SILICA, Formula, SilicaLimit as Limit, workplaceFor } from '../../../../lib/regions/workplace';
+import { NOW, dayOf } from '../../core/clock';
 import { codedMessage } from '../../i18n/coded';
 import { RichText } from '../../i18n/rich-text';
-import { fixed, listOf, upTo } from '../../shared/format';
+import { fixed, formatDate, listOf, upTo } from '../../shared/format';
 import { RegionChoice, RegionSelect, SourceLinks, earliest } from './region-select';
 
 /** What kind of limit it is, by the data's code. */
@@ -88,10 +89,14 @@ const KIND: Record<Limit['kind'], string> = {
         <p>
           {{ t(kind[silica.kind]) }}
           <gc-rich [text]="t('guides.silica.setBy', { law: silica.law })" [links]="{ link: silica.source }" />
+          @if (silica.from && !inForce(silica.from)) {
+            {{ t('guides.silica.from', { date: date(silica.from) }) }}
+          }
           @if (facts.eu && comparison(); as comparison) {
             {{ t(comparison, { value: number(eu.quartz) }) }}
           }
-          @if (silica.note) {
+          <!-- Where the limit is a new one, the note says what applies until then: not once it is in force. -->
+          @if (silica.note && !(silica.from && inForce(silica.from))) {
             {{ words(silica.note) }}
           }
         </p>
@@ -153,6 +158,7 @@ export class SilicaLimit {
   protected readonly facts = computed(() => (this.region() ? workplaceFor(this.region()) : null));
   protected readonly eu = EU_SILICA;
   protected readonly kind = KIND;
+  private readonly now = inject(NOW);
 
   protected readonly checked = computed(() => {
     const facts = this.facts();
@@ -197,6 +203,15 @@ export class SilicaLimit {
   }
 
   protected readonly listOf = listOf;
+
+  /** Whether a limit that applies from this day (YYYY-MM-DD) is in force today. */
+  protected inForce(day: string): boolean {
+    return day <= dayOf(this.now());
+  }
+
+  protected date(day: string): string {
+    return formatDate(day, { dateStyle: 'long' });
+  }
 
   /**
    * What the first value is for: all free silica (Japan's formula), all quartz (a formula with

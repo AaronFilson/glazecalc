@@ -71,6 +71,8 @@
     "contact": "Chun ceist a chur faoi do shonraí, nó chun aon cheann de do chearta a úsáid, scríobh chuig <mail>privacy@glazecalcapp.com</mail>. Is féidir leat freisin <issues>saincheist a oscailt ar GitHub</issues>, ach is poiblí iad saincheisteanna: ná cuir do sheoladh ríomhphoist ná aon rud pearsanta i gceann riamh. Is féidir leat formhór na rudaí a bhaineann le do shonraí a dhéanamh tú féin ar <account>leathanach do chuntais</account>.",
     "storedHeading": "Cad a choinnítear, agus cén fáth",
     "storedAccount": "<b>Do chuntas:</b> do sheoladh ríomhphoist, agus do phasfhocal, nach stóráiltear ach mar haiseáil aontreo (bcrypt), ní mar an pasfhocal féin riamh. Coinnítear do shocruithe (mar shampla teanga, réigiún agus aonaid) agus liosta na n-ábhar atá agat leis. Tá seoladh ríomhphoist ag teastáil ó chuntas, chun síniú isteach agus chun pasfhocal dearmadta a athshocrú. Nuair a chruthaíonn tú cuntas, seoltar nasc chuig an seoladh chun a dheimhniú gur leatsa é; go dtí sin, ní théann ríomhphost chuige ach nuair a iarrann tú é, mar shampla le haghaidh athshocrú pasfhocail.",
+    "storedEmailChange": "<b>Do ríomhphost a athrú:</b> an dáta ar athraíodh do sheoladh go deireanach, ionas nach nglactar riamh le hiarratas chun síniú isteach dhá chéim a chur as ó sheoladh nua sna 30 lá ina dhiaidh sin.",
+    "storedSignIn": "<b>Síniú isteach dhá chéim, má chuireann tú ar siúl é:</b> cé acu atá sé ar siúl nó nach bhfuil; an eochair a roinneann d’aip fhíordheimhnithe le Glazecalc, criptithe; do gach eochair rochtana, a heochair phoiblí (nach féidir léi síniú isteach léi féin) mar aon leis an aitheantas agus na sonraí a thugann do ghléas di, an t-ainm a thug tú uirthi, agus cathain a cuireadh leis í agus cathain a úsáideadh go deireanach í; do chóid aisghabhála, ní mar théacs ach mar haiseáil aontreo le heochair, ionas nach féidir le duine ar bith iad a léamh ar ais; agus, má chuireann duine éigin do phasfhocal isteach ach nach gcríochnaítear an dara céim, cathain a sheol Glazecalc ríomhphost chugat faoi sin go deireanach (uair sa lá ar a mhéad). Fad a bhíonn tú ag síniú isteach, idir do phasfhocal agus an dara céim, coinníonn an freastalaí nóta den síniú isteach ar feadh 5 nóiméad, agus ní choinníonn an leathanach comhartha gearr ach ina chuimhne féin: gan fianán nua, gan aon rud i stóras do bhrabhsálaí.",
     "storedSaved": "<b>A shábhálann tú:</b> d’oidis, d’ábhair, do bhreiseáin, do nótaí, do thaifid bhácála agus do chomhairle, mar a scríobh tú iad. Ní féidir le duine ar bith ach tusa iad a fheiceáil: ní roinntear aon rud idir úsáideoirí.",
     "storedTrial": "<b>Triail (‘Bain triail as anois’):</b> gan ríomhphost ná pasfhocal, ach ainm cumtha, mar shampla “speckled quiet kilns”. Má shíníonn tú isteach i gcuntas ar an mbrabhsálaí céanna le linn trialach, bogann a ndearna tú sa triail isteach sa chuntas.",
     "storedResets": "<b>Naisc athshocraithe pasfhocail agus naisc ríomhphoist:</b> cén cuntas a d’iarr, cathain, an seoladh ar seoladh nasc chuige chun seoladh a dheimhniú, agus méarlorg de gach nasc (ní an nasc féin).",
@@ -96,6 +98,7 @@
     "keptAccount": "<b>Do chuntas agus a shábhálann tú:</b> go dtí go scriosann tú iad. Ní bhaintear cuntais toisc nach n-úsáidtear iad.",
     "keptTrial": "<b>Triail:</b> 14 lá óna tús, agus ansin scriostar í agus gach a bhfuil inti, mura gcruthaíonn tú cuntas chun í a choinneáil.",
     "keptResets": "<b>Naisc athshocraithe pasfhocail agus naisc ríomhphoist:</b> oibríonn nasc athshocraithe ar feadh 30 nóiméad agus scriostar a thaifead tar éis thart ar uair an chloig; oibríonn nasc chun seoladh a dheimhniú, agus coinnítear é, ar feadh 24 uair an chloig.",
+    "keptSignIn": "<b>Síniú isteach dhá chéim:</b> gach aip fhíordheimhnithe, eochair rochtana agus sraith cód aisghabhála go dtí go mbaineann tú é, go gcuireann tú síniú isteach dhá chéim as nó go scriosann tú do chuntas. Scriostar síniú isteach atá ag fanacht lena dhara céim tar éis 5 nóiméad, agus aip nó eochair rochtana a thosaigh tú a chur leis ach nár chríochnaigh tú, tar éis 10 nóiméad ar a mhéad.",
     "keptBackups": "<b>Cúltacaí:</b> coinnítear cóipeanna criptithe den bhunachar sonraí ar feadh 30 lá, agus cóipeanna de dhiosca an fhreastalaí ar feadh 7 lá. Mar sin, bíonn cuntas scriosta imithe as gach cúltaca laistigh de 30 lá.",
     "keptDeletions": "<b>An taifead ar chuntas scriosta:</b> 37 lá, beagán níos faide ná aon chúltaca.",
     "keptLogs": "<b>Logaí:</b> logaí an fhreastalaí gréasáin, 14 lá. Tá logaí na haipe agus logaí an bhunachair sonraí féin teoranta de réir méide (50 MB an ceann), rud a théann siar roinnt laethanta ar shuíomh ciúin. Coinníonn na cóipeanna de dhiosca an fhreastalaí logaí ar feadh suas le 7 lá eile.",
@@ -103,6 +106,7 @@
     "keptInbound": "<b>Ríomhphost a sheolann tú chuig Glazecalc:</b> 30 lá i stór Amazon, agus i mbosca isteach an úinéara chomh fada is a thógann sé freagra a thabhairt ort. I gcás iarratais faoi do shonraí, coinnítear nóta gearr (cathain a tháinig sé, cad a iarradh agus cad a rinneadh) ar feadh trí bliana.",
     "rightsHeading": "Do chearta",
     "rightsIntro": "Is féidir leat do shonraí a fheiceáil, a cheartú, a thabhairt leat agus a scriosadh. Is féidir leat a bhformhór a dhéanamh tú féin ar <account>leathanach do chuntais</account>:",
+    "rightsExport": "<b>Iad a fheiceáil agus a thabhairt leat:</b> sábhálann ‘Mo shonraí a íoslódáil’ gach rud i gcomhad amháin (JSON), lena n-áirítear ainmneacha agus dátaí do mhodhanna síniú isteach dhá chéim (ní a n-eochracha ná a gcóid riamh), agus d’oidis agus d’ábhair mar scarbhileoga (CSV).",
     "rightsCorrect": "<b>Iad a cheartú:</b> athraigh do shocruithe agus do thaifid am ar bith. Chun do sheoladh ríomhphoist a athrú, oscail an nasc a sheoltar chuig an seoladh nua; cuirtear an t-athrú in iúl don seanseoladh, má bhí sé deimhnithe, agus síntear amach gach gléas.",
     "rightsDelete": "<b>Iad a scriosadh:</b> baineann ‘Scrios mo chuntas’ do chuntas agus gach a shábháil tú láithreach, agus déanann ‘Scrios an triail’ an rud céanna do thriail. Bíonn na cóipeanna sna cúltacaí imithe laistigh de 30 lá.",
     "rightsSignOut": "<b>Síniú amach i ngach áit:</b> cuireann sé deireadh le seisiúin do chuntais ar gach gléas.",
@@ -146,10 +150,6 @@
       "includeAdditives": {
         "purpose": "Cé acu a áiríonn oidis nua a mbreiseáin san fhoirmle Seger nó nach n-áiríonn, mar a roghnaigh tú an uair dheireanach.",
         "lasts": "Go dtí go nglanann tú stóras do bhrabhsálaí."
-      },
-      "recipeHelp": {
-        "purpose": "Gur fholaigh tú an chabhair ar leathanach an oidis.",
-        "lasts": "Go dtí go dtaispeánann tú an chabhair arís."
       },
       "print": {
         "purpose": "Na roghanna deireanacha a rinne tú chun oideas a phriontáil: an t-oideas iomlán nó baisc, agus méid na baisce.",

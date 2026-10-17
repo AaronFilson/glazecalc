@@ -1,7 +1,9 @@
-import { Component, computed } from '@angular/core';
+import { Component, computed, inject } from '@angular/core';
 import { TranslocoDirective } from '@jsverse/transloco';
+import { baseLanguage } from '../../../../lib/regions/languages';
 import { SafetyLine, ministryFor, shownFor, textKey } from '../../../../lib/regions/safety';
 import { codedMessage } from '../../i18n/coded';
+import { PAGE_LANGUAGE } from '../../i18n/language';
 import { RichText } from '../../i18n/rich-text';
 import { RegionChoice, RegionSelect, SourceLinks, earliest } from './region-select';
 
@@ -138,6 +140,7 @@ import { RegionChoice, RegionSelect, SourceLinks, earliest } from './region-sele
   `
 })
 export class PoisonLines {
+  private readonly language = inject(PAGE_LANGUAGE);
   protected readonly choice = new RegionChoice();
   private readonly region = this.choice.region;
   protected readonly regionName = this.choice.name;
@@ -159,10 +162,29 @@ export class PoisonLines {
   }
 
   protected notes(line: SafetyLine): string {
-    return [line.hours, line.note, line.animals, line.fee]
-      .filter((part): part is string => !!part)
-      .map((part) => this.words(part))
-      .join('. ')
-      .replace(/\.\./g, '.');
+    return joinNotes(
+      [line.hours, line.note, line.animals, line.fee]
+        .filter((part): part is string => !!part)
+        .map((part) => this.words(part)),
+      this.language
+    );
   }
 }
+
+/** Chinese and Japanese end a sentence with 。 and no space. */
+const CJK_SENTENCES = new Set(['zh', 'ja']);
+
+/**
+ * A line's notes as sentences, each closed in the page language's way:
+ * "Weekdays 9–17. Free" in English, 「平日 9–17 時。無料」 in Japanese,
+ * and a note that already ends a sentence is not closed again.
+ */
+export const joinNotes = (parts: string[], language: string): string => {
+  const cjk = CJK_SENTENCES.has(baseLanguage(language));
+  return parts.reduce((out, part) => {
+    if (!out) return part;
+    if (/[。！？]$/u.test(out)) return out + part;
+    if (/[.!?]$/.test(out)) return out + ' ' + part;
+    return out + (cjk ? '。' : '. ') + part;
+  }, '');
+};

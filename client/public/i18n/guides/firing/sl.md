@@ -248,7 +248,7 @@ Pri peči brez krmilnika je opazovalna odprtina vaš edini signal v realnem čas
 
 ### Po žganju
 
-Orton upogib bere kot številčnico ure. Neupognjen stožec kaže navzgor, na položaj ob 12. Končna točka je upogib za 90°, ko je konica v višini podnožja, kar Orton imenuje položaj ob 5: pri tej točki so izmerjene temperature v preglednici. Stožec, ki se dotika plošče, je v položaju ob 6; med položajem ob 4 in dotikom plošče je razlika majhna, »običajno 1 ali 2 stopinji«.
+Orton upogib bere kot številčnico ure. Neupognjen stožec kaže navzgor, na položaj ob 12; stožec, ki se dotika plošče, je v položaju ob 6. Končna točka je upogib za 90°, ko je konica v višini podnožja: pri tej točki so izmerjene temperature v preglednici, Orton pa šteje za pravilno žgan stožec kjer koli med položajem ob 5 in ob 6. Med položajem ob 4 in dotikom plošče je razlika majhna, »običajno 1 ali 2 stopinji«.
 
 Table: Odčitavanje niza stožcev po žganju (primer: stožci 5, 6 in 7 za glazuro za stožec 6)
 Label: Odčitavanje niza stožcev

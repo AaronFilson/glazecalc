@@ -80,6 +80,7 @@ test('prints a saved recipe from the list, and a reload keeps it open', async ({
   await buildRecipe(page);
   await page.getByRole('button', { name: 'Save', exact: true }).click();
   await expect(page.locator('.recipe-status')).toContainText('Saved');
+  await page.getByRole('button', { name: 'More for Dolomite matte' }).click();
   await page.getByRole('button', { name: 'Print Dolomite matte' }).click();
   await expect(page).toHaveURL(/\/recipe\?print=[0-9a-f]{24}$/);
   await page.reload();

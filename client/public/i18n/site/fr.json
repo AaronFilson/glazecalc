@@ -71,6 +71,8 @@
     "contact": "Pour toute question sur vos données, ou pour exercer l’un de vos droits, écrivez à <mail>privacy@glazecalcapp.com</mail>. Vous pouvez aussi <issues>ouvrir un ticket sur GitHub</issues>, mais les tickets sont publics : n’y mettez jamais votre adresse e-mail ni quoi que ce soit de personnel. Vous pouvez faire vous-même la plupart des démarches concernant vos données sur la <account>page de votre compte</account>.",
     "storedHeading": "Ce qui est conservé, et pourquoi",
     "storedAccount": "<b>Votre compte :</b> votre adresse e-mail, et votre mot de passe, conservé uniquement sous forme de hachage à sens unique (bcrypt), jamais tel quel. Vos paramètres (comme la langue, la région et les unités) et la liste des matières dont vous disposez sont conservés avec lui. Un compte a besoin d’une adresse e-mail, pour se connecter et pour réinitialiser un mot de passe oublié. Quand vous créez un compte, un lien est envoyé à l’adresse pour confirmer qu’elle est bien la vôtre ; d’ici là, des e-mails n’y sont envoyés que si vous le demandez, par exemple pour réinitialiser le mot de passe.",
+    "storedEmailChange": "<b>Changement d’adresse e-mail :</b> la date du dernier changement de votre adresse, afin qu’une demande de désactivation de la connexion en deux étapes ne soit jamais acceptée depuis une nouvelle adresse dans les 30 jours qui suivent.",
+    "storedSignIn": "<b>Connexion en deux étapes, si vous l’activez :</b> si elle est activée ; la clé que votre application d’authentification partage avec Glazecalc, chiffrée ; pour chaque clé d’accès, sa clé publique (qui ne permet pas à elle seule de se connecter) avec l’identifiant et les détails que votre appareil lui donne, le nom que vous lui avez donné, et la date de son ajout et de sa dernière utilisation ; vos codes de récupération, uniquement sous forme d’empreinte à sens unique avec clé, pour que personne ne puisse les relire ; et, si quelqu’un saisit votre mot de passe sans terminer la deuxième étape, la date à laquelle Glazecalc vous a écrit à ce sujet pour la dernière fois (au plus une fois par jour). Pendant que vous vous connectez, entre votre mot de passe et la deuxième étape, le serveur garde une note de la connexion pendant 5 minutes, et la page garde un court jeton dans sa seule mémoire : aucun nouveau cookie, rien dans le stockage de votre navigateur.",
     "storedSaved": "<b>Ce que vous enregistrez :</b> vos recettes, matières, additifs, notes, relevés de cuisson et conseils, tels que vous les avez écrits. Ils ne sont visibles que par vous : rien n’est partagé entre les utilisateurs.",
     "storedTrial": "<b>Une période d’essai (Essayer maintenant) :</b> ni adresse e-mail ni mot de passe, seulement un nom inventé comme « speckled quiet kilns ». Si vous vous connectez à un compte dans le même navigateur pendant une période d’essai, ce que vous avez créé pendant l’essai passe dans ce compte.",
     "storedResets": "<b>Liens de réinitialisation du mot de passe et liens envoyés par e-mail :</b> le compte qui a fait la demande, quand, l’adresse à laquelle a été envoyé un lien de confirmation d’adresse, et une empreinte de chaque lien (pas le lien lui-même).",
@@ -96,6 +98,7 @@
     "keptAccount": "<b>Votre compte et ce que vous enregistrez :</b> jusqu’à ce que vous les supprimiez. Les comptes ne sont pas supprimés pour inactivité.",
     "keptTrial": "<b>Une période d’essai :</b> 14 jours à partir de son début ; elle est ensuite supprimée avec tout son contenu, sauf si vous créez un compte pour la conserver.",
     "keptResets": "<b>Liens de réinitialisation du mot de passe et liens envoyés par e-mail :</b> un lien de réinitialisation est valable 30 minutes et son enregistrement est supprimé après environ une heure ; un lien de confirmation d’adresse est valable, et conservé, 24 heures.",
+    "keptSignIn": "<b>Connexion en deux étapes :</b> chaque application d’authentification, clé d’accès et série de codes de récupération jusqu’à ce que vous la retiriez, désactiviez la connexion en deux étapes ou supprimiez votre compte. Une connexion qui attend sa deuxième étape est supprimée après 5 minutes, et une application ou une clé d’accès dont vous avez commencé l’ajout sans le terminer, après 10 au plus.",
     "keptBackups": "<b>Sauvegardes :</b> les copies chiffrées de la base de données sont conservées 30 jours, et les copies du disque du serveur 7 jours. Un compte supprimé disparaît donc de toutes les sauvegardes dans un délai de 30 jours.",
     "keptDeletions": "<b>L’enregistrement d’un compte supprimé :</b> 37 jours, soit un peu plus longtemps que toute sauvegarde.",
     "keptLogs": "<b>Journaux :</b> ceux du serveur web, 14 jours. Les journaux propres à l’application et à la base de données sont limités en taille (50 Mo chacun), ce qui, sur un site peu fréquenté, remonte à plusieurs jours. Les copies du disque du serveur conservent les journaux jusqu’à 7 jours de plus.",
@@ -103,6 +106,7 @@
     "keptInbound": "<b>Les e-mails que vous envoyez à Glazecalc :</b> 30 jours dans l’espace de stockage d’Amazon, et dans la boîte de réception du propriétaire le temps de vous répondre. Pour une demande concernant vos données, une courte note (date de réception, objet de la demande et suite donnée) est conservée trois ans.",
     "rightsHeading": "Vos droits",
     "rightsIntro": "Vous pouvez consulter, rectifier, récupérer et supprimer vos données. Vous pouvez faire l’essentiel vous-même sur la <account>page de votre compte</account> :",
+    "rightsExport": "<b>La consulter et l’emporter :</b> « Télécharger mes données » enregistre tout dans un seul fichier (JSON), y compris les noms et les dates de vos méthodes de connexion en deux étapes (jamais leurs clés ni leurs codes), ainsi que vos recettes et vos matières premières sous forme de tableaux (CSV).",
     "rightsCorrect": "<b>Les rectifier :</b> modifiez vos paramètres et vos enregistrements à tout moment. Pour changer d’adresse e-mail, ouvrez le lien envoyé à la nouvelle adresse ; l’ancienne adresse, si elle avait été confirmée, est prévenue du changement, et tous les appareils sont déconnectés.",
     "rightsDelete": "<b>Les supprimer :</b> Supprimer mon compte supprime immédiatement votre compte et tout ce que vous avez enregistré, et Abandonner l’essai fait de même pour une période d’essai. Les copies dans les sauvegardes disparaissent dans un délai de 30 jours.",
     "rightsSignOut": "<b>Se déconnecter partout :</b> met fin aux sessions de votre compte sur tous les appareils.",
@@ -146,10 +150,6 @@
       "includeAdditives": {
         "purpose": "Si les nouvelles recettes comptent leurs additifs dans la formule de Seger, selon votre dernier choix.",
         "lasts": "Jusqu’à ce que vous effaciez le stockage de votre navigateur."
-      },
-      "recipeHelp": {
-        "purpose": "Le fait que vous avez masqué l’aide de la page des recettes.",
-        "lasts": "Jusqu’à ce que vous réaffichiez l’aide."
       },
       "print": {
         "purpose": "Vos derniers choix pour imprimer une recette : la recette entière ou une préparation, et la taille de la préparation.",

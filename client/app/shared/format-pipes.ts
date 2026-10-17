@@ -25,7 +25,9 @@ const DATE_STYLES: Record<string, Intl.DateTimeFormatOptions> = {
   /** Thursday, October 8, 2026 */
   full: { dateStyle: 'full' },
   /** Thursday, October 8 */
-  weekday: { weekday: 'long', month: 'long', day: 'numeric' }
+  weekday: { weekday: 'long', month: 'long', day: 'numeric' },
+  /** Oct 8, 2026: in a list */
+  medium: { dateStyle: 'medium' }
 };
 
 /** A date as the reader writes it: {{ recipe.date | gcDate }}, {{ trial.expiresAt | gcDate: 'weekday' }}. */

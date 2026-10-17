@@ -71,6 +71,8 @@
     "contact": "Chcete-li se zeptat na svá data nebo uplatnit kterékoli ze svých práv, napište na <mail>privacy@glazecalcapp.com</mail>. Můžete také <issues>založit hlášení (issue) na webu GitHub</issues>, ale hlášení jsou veřejná: nikdy do nich nepište svou e-mailovou adresu ani nic osobního. Většinu věcí týkajících se vašich dat zvládnete sami na <account>stránce účtu</account>.",
     "storedHeading": "Co se uchovává a proč",
     "storedAccount": "<b>Váš účet:</b> vaše e-mailová adresa a vaše heslo, uložené jen jako jednosměrný hash (bcrypt), nikdy jako heslo samotné. Spolu s ním se uchovává vaše nastavení (například jazyk, region a jednotky) a seznam surovin, které máte v zásobě. Účet potřebuje e-mailovou adresu k přihlášení a k obnovení zapomenutého hesla. Při vytvoření účtu se na adresu pošle odkaz k potvrzení, že patří vám; do té doby na ni chodí pošta jen na vaši žádost, například při obnovení hesla.",
+    "storedEmailChange": "<b>Změna e-mailu:</b> datum poslední změny vaší adresy, aby se žádost o vypnutí dvoustupňového přihlášení nikdy nepřijala z nové adresy během 30 dnů po změně.",
+    "storedSignIn": "<b>Dvoustupňové přihlášení, pokud ho zapnete:</b> zda je zapnuté; klíč, který vaše ověřovací aplikace sdílí s Glazecalc, zašifrovaný; u každého přístupového klíče jeho veřejný klíč (kterým se samotným nelze přihlásit) spolu s ID a údaji, které mu přidělí vaše zařízení, název, který jste mu dali, a kdy byl přidán a naposledy použit; vaše kódy pro obnovení, jen jako jednosměrný otisk s klíčem, takže je nikdo nemůže přečíst zpět; a pokud někdo zadá vaše heslo, ale druhý krok nedokončí, kdy vám o tom Glazecalc naposledy poslal e-mail (nejvýše jednou denně). Při přihlašování, mezi heslem a druhým krokem, si server na 5 minut uchovává záznam o přihlášení a stránka drží krátký token jen v paměti: žádný nový cookie, nic v úložišti vašeho prohlížeče.",
     "storedSaved": "<b>Co uložíte:</b> vaše recepty, suroviny, přísady, poznámky, záznamy výpalů a rady, tak jak je máte zapsané. Vidíte je jen vy: mezi uživateli se nic nesdílí.",
     "storedTrial": "<b>Zkušební přístup (Vyzkoušet hned):</b> žádný e-mail ani heslo, jen vymyšlené jméno, například „speckled quiet kilns“. Pokud se během zkušebního přístupu přihlásíte k účtu ve stejném prohlížeči, přesune se to, co ve zkušebním přístupu vzniklo, do účtu.",
     "storedResets": "<b>Odkazy pro obnovení hesla a e-mailové odkazy:</b> který účet o ně požádal, kdy, adresa, na kterou byl poslán odkaz k potvrzení adresy, a otisk každého odkazu (ne odkaz samotný).",
@@ -96,6 +98,7 @@
     "keptAccount": "<b>Váš účet a to, co uložíte:</b> dokud je neodstraníte. Účty se neodstraňují kvůli tomu, že se nepoužívají.",
     "keptTrial": "<b>Zkušební přístup:</b> 14 dní od jeho začátku, pak se odstraní se vším, co obsahuje, pokud si nevytvoříte účet, abyste si ho uchovali.",
     "keptResets": "<b>Odkazy pro obnovení hesla a e-mailové odkazy:</b> odkaz pro obnovení hesla platí 30 minut a jeho záznam se odstraní asi po hodině; odkaz k potvrzení adresy platí a uchovává se 24 hodin.",
+    "keptSignIn": "<b>Dvoustupňové přihlášení:</b> každá ověřovací aplikace, přístupový klíč a sada kódů pro obnovení, dokud je neodeberete, nevypnete dvoustupňové přihlášení nebo nesmažete účet. Přihlášení čekající na druhý krok se smaže po 5 minutách a aplikace nebo přístupový klíč, které jste začali přidávat a nedokončili, nejpozději po 10.",
     "keptBackups": "<b>Zálohy:</b> šifrované kopie databáze se uchovávají 30 dní a kopie disku serveru 7 dní. Odstraněný účet tak do 30 dní zmizí ze všech záloh.",
     "keptDeletions": "<b>Záznam o odstraněném účtu:</b> 37 dní, o něco déle než kterákoli záloha.",
     "keptLogs": "<b>Protokoly:</b> protokoly webového serveru 14 dní. Vlastní protokoly aplikace a databáze jsou omezené velikostí (každý 50 MB), což na málo navštěvovaném webu sahá několik dní zpět. Kopie disku serveru uchovávají protokoly až o 7 dní déle.",
@@ -103,6 +106,7 @@
     "keptInbound": "<b>Pošta, kterou posíláte projektu Glazecalc:</b> 30 dní v úložišti Amazonu a ve schránce vlastníka tak dlouho, jak je potřeba k odpovědi. U žádosti týkající se vašich dat se krátký záznam (kdy přišla, co se žádalo a co se udělalo) uchovává tři roky.",
     "rightsHeading": "Vaše práva",
     "rightsIntro": "Svá data můžete zobrazit, opravit, vzít si je s sebou a odstranit. Většinu toho zvládnete sami na <account>stránce účtu</account>:",
+    "rightsExport": "<b>Nahlédnutí a odnesení s sebou:</b> Stažení mých dat uloží vše do jednoho souboru (JSON), včetně názvů a dat vašich způsobů dvoustupňového přihlášení (nikdy ne jejich klíčů ani kódů), a vaše recepty a suroviny jako tabulky (CSV).",
     "rightsCorrect": "<b>Opravit je:</b> nastavení a záznamy můžete kdykoli změnit. Chcete-li změnit e-mailovou adresu, otevřete odkaz poslaný na novou adresu; původní adresa, pokud byla potvrzena, dostane o změně zprávu a všechna zařízení se odhlásí.",
     "rightsDelete": "<b>Odstranit je:</b> tlačítko Odstranit můj účet okamžitě odstraní váš účet a vše, co máte uložené, a tlačítko Zahodit zkušební přístup udělá totéž se zkušebním přístupem. Kopie v zálohách zmizí do 30 dní.",
     "rightsSignOut": "<b>Odhlásit se všude:</b> ukončí relace vašeho účtu na všech zařízeních.",
@@ -146,10 +150,6 @@
       "includeAdditives": {
         "purpose": "Zda nové recepty započítávají přísady do Segerova vzorce (UMF), jak jste naposledy zvolili.",
         "lasts": "Dokud nevymažete úložiště prohlížeče."
-      },
-      "recipeHelp": {
-        "purpose": "Že jste skryli nápovědu na stránce receptu.",
-        "lasts": "Dokud nápovědu znovu nezobrazíte."
       },
       "print": {
         "purpose": "Vaše poslední volby pro tisk receptu: celý recept nebo dávka a velikost dávky.",

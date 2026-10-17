@@ -275,7 +275,7 @@ Ein **Flockungsmittel**{{en: flocculant}} (ein Stellmittel: Bittersalz, Essig od
 
 ### Glasur auftragen
 
-Entfernen Sie zuerst Staub und Fett von der geschrühten Ware. Digitalfire zieht Druckluft, einen weichen Pinsel oder einen kaum feuchten Schwamm dem Abwaschen vor.
+Entfernen Sie zuerst Staub und Fett von der geschrühten Ware mit einem kaum feuchten Schwamm, statt sie abzuwaschen, wodurch sie sich mit Wasser vollsaugt. Blasen Sie den Staub nicht mit Druckluft ab und bürsten Sie ihn nicht trocken ab: Das bringt Quarzstaub in die Luft ([Sicheres Anmischen und Lüften](/guides/safe-mixing#cleaning)).
 
 - **Tauchen** „ergibt im Allgemeinen eine Schicht von gleichmäßiger Dicke“ (Robin Hopper). Die Tauchzeit bestimmt die Dicke: Laut Digitalfire werden gekaufte Tauchglasuren auf etwa 1,4 für eine Tauchzeit von 5 Sekunden und auf 1,5 für eine Tauchzeit von 1 Sekunde eingestellt.
 - Zum **Übergießen** sollte die Glasur „etwas dünner sein als zum Tauchen“; wo sich Güsse überlappen, verdoppelt sich die Schicht und kann ablaufen.

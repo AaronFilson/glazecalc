@@ -47,7 +47,8 @@ export const STORED: ReadonlyArray<{ names: string[]; kind: string; key: string 
       'language',
       'density',
       'englishTerms',
-      'notice'
+      'notice',
+      'recipeHelp'
     ],
     kind: marker('site.privacy.storageLocal'),
     key: 'settings'
@@ -56,7 +57,6 @@ export const STORED: ReadonlyArray<{ names: string[]; kind: string; key: string 
   { names: ['visitor.language', 'visitor.notice'], kind: marker('site.privacy.storageLocal'), key: 'visitor' },
   { names: ['region'], kind: marker('site.privacy.storageLocal'), key: 'region' }, // shared/library-info.ts
   { names: ['includeAdditives'], kind: marker('site.privacy.storageLocal'), key: 'includeAdditives' },
-  { names: ['recipeHelp'], kind: marker('site.privacy.storageLocal'), key: 'recipeHelp' },
   { names: ['printMode', 'printBatch'], kind: marker('site.privacy.storageLocal'), key: 'print' },
   { names: ['token'], kind: marker('site.privacy.storageLocal'), key: 'token' },
   { names: ['readEnglish'], kind: marker('site.privacy.storageSession'), key: 'readEnglish' }, // i18n/translation-notice.ts
@@ -79,8 +79,6 @@ marker([
   'site.privacy.keys.region.lasts',
   'site.privacy.keys.includeAdditives.purpose',
   'site.privacy.keys.includeAdditives.lasts',
-  'site.privacy.keys.recipeHelp.purpose',
-  'site.privacy.keys.recipeHelp.lasts',
   'site.privacy.keys.print.purpose',
   'site.privacy.keys.print.lasts',
   'site.privacy.keys.token.purpose',
