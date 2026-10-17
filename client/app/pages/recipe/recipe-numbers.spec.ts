@@ -174,6 +174,9 @@ describe('StullChart', () => {
     expect(text(crazed.fixture, 'figcaption')).toContain(
       "in the underfired region. It is in the area where Stull's glazes crazed."
     );
+    const low = await create({ silica: 3.5, alumina: 0.05, ratio: 70, region: 'unclassified', crazed: false });
+    expect(text(low.fixture, 'figcaption')).toContain('has less alumina than any of Stull');
+    expect(text(low.fixture, 'figcaption')).not.toContain('bright region');
     const none = await create(null);
     expect(text(none.fixture, 'figcaption')).toContain('There is no point to plot');
   });

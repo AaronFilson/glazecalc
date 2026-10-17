@@ -5,13 +5,13 @@ export function molePercent(unity: Record<string, number> | null | undefined): R
 
 /** A point on Stull's chart: [SiO2, Al2O3] in moles. */
 export type StullXY = readonly [number, number];
-export type StullRegion = 'unfused' | 'matte' | 'semi-matte' | 'bright' | 'underfired';
+export type StullRegion = 'unfused' | 'matte' | 'semi-matte' | 'bright' | 'underfired' | 'unclassified';
 
 /** Stull's chart (1912), as Glazy reads it: its extent, regions, crazed area and line of brightest glazes. */
 export const STULL: Readonly<{
   silica: Readonly<{ min: number; max: number }>;
   alumina: Readonly<{ min: number; max: number }>;
-  regions: Readonly<Record<Exclude<StullRegion, 'bright'>, ReadonlyArray<StullXY>>>;
+  regions: Readonly<Record<Exclude<StullRegion, 'bright' | 'unclassified'>, ReadonlyArray<StullXY>>>;
   crazed: ReadonlyArray<StullXY>;
   bright: ReadonlyArray<StullXY>;
 }>;

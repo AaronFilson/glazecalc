@@ -270,6 +270,7 @@ export class StullChart {
     if (!point) return translate('recipe.stull.noPoint');
     const values = { silica: fixed(point.silica, 2), alumina: fixed(point.alumina, 2), ratio: fixed(point.ratio, 1) };
     if (!point.region) return translate('recipe.stull.offChart', values);
+    if (point.region === 'unclassified') return translate('recipe.stull.unclassified', values);
     const where = translate('recipe.stull.at', { ...values, region: translate(REGION_NAMES[point.region]) });
     return point.crazed ? where + ' ' + translate('recipe.stull.inCrazed') : where;
   }

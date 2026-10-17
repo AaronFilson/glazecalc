@@ -276,6 +276,11 @@ describe('Shared recipe tools', () => {
     expect(english(boron(1222)!.sentences[0])).to.match(/cone 6/);
   });
 
+  it('leaves a point under the lowest region’s alumina unclassified, not bright', () => {
+    expect(recipe.stullPoint({ SiO2: 3.5, Al2O3: 0.05 })).to.include({ region: 'unclassified', crazed: false });
+    expect(recipe.stullPoint({ SiO2: 3.5, Al2O3: 0.08 })?.region).to.equal('bright');
+  });
+
   it('works out the analysis a unity formula implies: mole percent and the point on Stull’s chart', () => {
     const percent = recipe.molePercent({ CaO: 1, Al2O3: 0.5, SiO2: 3.5, ZnO: 0 });
     expect(percent).to.deep.equal({ CaO: 20, Al2O3: 10, SiO2: 70 });
