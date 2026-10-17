@@ -39,6 +39,16 @@ import { PageHeader } from '../../shared/page-header';
     </section>
 
     <section class="panel">
+      <h2>{{ t('site.about.creditsHeading') }}</h2>
+      <p>
+        <gc-rich
+          [text]="t('site.about.credits')"
+          [links]="{ notices: 'https://github.com/AaronFilson/glazecalc/blob/master/THIRD-PARTY-NOTICES.md' }"
+        />
+      </p>
+    </section>
+
+    <section class="panel">
       <h2>{{ t('site.about.whoHeading') }}</h2>
       <p>
         <gc-rich [text]="t('site.about.who')" [links]="{ issues: 'https://github.com/AaronFilson/glazecalc/issues' }" />

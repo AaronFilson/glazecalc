@@ -542,7 +542,8 @@
     "notApply": "{name} has no figures for this firing ({band}), so it is not checked: figures for another firing would mislead.",
     "guidance": "These are guidelines, not a pass or a fail: a glaze outside them can be fine, and one inside them can still craze, leach or fail. Test it.",
     "source": "Source:",
-    "saveFailed": "Your choice of limit set could not be saved to your account. It holds while this page is open."
+    "saveFailed": "Your choice of limit set could not be saved to your account. It holds while this page is open.",
+    "ownLimits": "These suggestions use Glazecalc's own limits, not {name}."
   },
   "stull": {
     "heading": "Stull chart",
@@ -600,6 +601,10 @@
     "mix": "Mix {glaze} of dry glaze with {water} of water for about {volume} at SG {target}.",
     "badSg": "An SG has to be more than 1 (water's) and less than the dry materials' {dry}.",
     "badDry": "The dry materials' SG has to be more than 1.",
-    "note": "The water is by weight: a litre weighs a kilogram, a US gallon about 8.3 lb. The arithmetic takes the volumes to add, which is close, not exact: add water a little at a time, stir, and measure again. Two glazes at the same SG can still flow differently."
+    "note": "The water is by weight: a litre weighs a kilogram, a US gallon about 8.3 lb. The arithmetic takes the volumes to add, which is close, not exact: add water a little at a time, stir, and measure again. Two glazes at the same SG can still flow differently.",
+    "saveTarget": "Save SG {sg} as this recipe's target",
+    "targetSaved": "SG {sg} is this recipe's target. It is kept with the recipe when you save it.",
+    "targetKept": "The recipe's target is SG {sg}.",
+    "clearTarget": "Clear the target"
   }
 }

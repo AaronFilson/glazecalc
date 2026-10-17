@@ -29,6 +29,7 @@ describe('export API', () => {
       title: 'Clear, "gloss"',
       ownedBy: String(alice.user._id),
       date: '2026-01-02',
+      sgTarget: 1.45,
       notes: ['fires clear'],
       materials: [{ name: 'Whiting', amount: '20' }],
       additives: [{ name: 'Tin oxide', amount: '2', unit: 'percent' }]
@@ -83,7 +84,7 @@ describe('export API', () => {
     expect(body.shelf).to.eql(['name:Whiting']);
     expect(body.records).to.have.all.keys('additives', 'advice', 'firing', 'materials', 'notes', 'recipes', 'trash');
     expect(body.records.recipes).to.have.length(1);
-    expect(body.records.recipes[0]).to.include({ title: 'Clear, "gloss"' });
+    expect(body.records.recipes[0]).to.include({ title: 'Clear, "gloss"', sgTarget: 1.45 });
     expect(body.records.materials[0]).to.include({ name: '=cmd()' });
     expect(body.records.notes).to.eql([]);
   });

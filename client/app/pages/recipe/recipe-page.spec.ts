@@ -290,6 +290,28 @@ describe('RecipePage', () => {
     await saving;
   });
 
+  it('saves the SG target the calculator sets as sgTarget, and takes it off a saved recipe with null', async () => {
+    const mixed: Recipe = { _id: 'r3', title: 'Dipping', sgTarget: 1.4, materials: [{ ...WHITING, amount: '20' }] };
+    const { fixture, page } = await create([mixed]);
+    page['open'](mixed);
+    await fixture.whenStable();
+    expect(page['sgTarget']()).toBe(1.4);
+    expect(page['dirty']()).toBe(false);
+    page['sgTarget'].set(1.55);
+    let saving = page['save']();
+    let req = httpMock().expectOne({ method: 'PUT', url: API + '/recipe/change/r3' });
+    expect(req.request.body.recipe.sgTarget).toBe(1.55);
+    req.flush({ msg: 'Successfully updated recipe' });
+    await saving;
+    page['sgTarget'].set(null);
+    expect(page['dirty']()).toBe(true);
+    saving = page['save']();
+    req = httpMock().expectOne({ method: 'PUT', url: API + '/recipe/change/r3' });
+    expect(req.request.body.recipe.sgTarget).toBeNull();
+    req.flush({ msg: 'Successfully updated recipe' });
+    await saving;
+  });
+
   it('copies picked materials, so amounts leave the lists alone', async () => {
     const { page } = await create();
     fill(page, [[WHITING, '5']]);

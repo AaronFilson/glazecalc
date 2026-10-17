@@ -110,7 +110,16 @@ max, past, likely }`), or null where the set does not apply. The recipe page sho
   the point on R. T. Stull's chart (Transactions of the American Ceramic Society 14, 1912) with
   its region as a code (`'matte'`, `'semi-matte'`, `'bright'`...). The regions' outlines are
   Glazy's reading of Stull's chart (Derek Au, MIT licence), in `STULL`. LOI and expansion stay in
-  `lib/chemistry`'s `UmfResult`.
+  `lib/chemistry`'s `UmfResult`. The outlines' MIT notice is in `THIRD-PARTY-NOTICES.md`, in the
+  header of `analysis.js` and credited on the About page.
+- **Which limits check what.** The substitution, suggestion and lead-replacement checks always use
+  Glazecalc's own graded limits (`pastLimits`), whichever set the recipe page shows; when the shown
+  set differs, a line under those headings says so (`own-limits-note.ts`). Hesselberth & Roy's
+  set has no "likely" grade to drive them.
+- **Target SG.** The SG calculator can keep a target on the recipe as `sgTarget` (a number, 1 to
+  2.5, `SG_TARGET_RANGE`; null clears it). Another branch's mix ticket reads it by that name. It
+  is saved, versioned, trashed and exported like the recipe's other fields. Dry materials default
+  to SG 2.5 (editable).
 - **Batches.** `slurry.js` does Brongniart's formula in litres and kilograms: the dry glaze and
   water in a slurry (`slurryContents`), the water to bring it to an SG (`waterToReach`, which
   does not depend on the dry materials' SG), and the water for a batch (`waterForBatch`), with

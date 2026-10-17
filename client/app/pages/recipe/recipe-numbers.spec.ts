@@ -3,6 +3,7 @@ import { PreferencesService } from '../../core/preferences.service';
 import { RecipeAnalysis } from '../../core/models';
 import { API, httpMock, testProviders, text } from '../../testing/test-providers';
 import { RecipeNumbers } from './recipe-numbers';
+import { OwnLimitsNote } from './own-limits-note';
 import { SlurryCalculator } from './slurry-calculator';
 import { StullChart } from './stull-chart';
 
@@ -73,6 +74,11 @@ describe('RecipeNumbers', () => {
     const source = root.querySelector('.limits a') as HTMLAnchorElement;
     expect(source.textContent).toContain('Hesselberth and Ron Roy');
     expect(source.getAttribute('rel')).toBe('noopener');
+    // The link is the book on Google Books; the text names the table and where it ran.
+    expect(source.getAttribute('href')).toMatch(/^https:\/\/books\.google\.com\/books\/about\/Mastering_Cone_6_Glazes/);
+    expect(source.textContent).toContain(`"Recommended Stable Glaze 'Limits'"`);
+    expect(source.textContent).toContain('Ceramics Monthly, September 2000');
+    expect(source.textContent).toContain('Mastering Cone 6 Glazes');
   });
 
   it('reads cone 10 by the set’s cone 10 figures, and says it does not apply at low fire rather than stretching them', async () => {
@@ -228,5 +234,51 @@ describe('SlurryCalculator', () => {
     await pint.type('slurry-measured', '30');
     expect(text(pint.fixture, '.slurry-results')).toMatch(/holds \d+ lb [\d.]+ oz of dry glaze/);
     expect(text(pint.fixture, '.slurry-results')).toContain('US gal');
+  });
+
+  it('saves the SG wanted as the recipe’s target, within 1 to 2.5, shows it as kept, and clears it', async () => {
+    const { fixture, root, type } = await create();
+    const save = () => root.querySelector('.slurry-target button') as HTMLButtonElement | null;
+    expect(save()?.textContent).toContain('Save SG 1.45 as this recipe');
+    save()!.click();
+    await fixture.whenStable();
+    expect(fixture.componentInstance['sgTarget']()).toBe(1.45);
+    expect(text(fixture, '.slurry-target')).toContain("SG 1.45 is this recipe's target.");
+    await type('slurry-target', '1.6');
+    expect(save()?.textContent).toContain('Save SG 1.6 as this recipe');
+    expect(text(fixture, '.slurry-target')).toContain("The recipe's target is SG 1.45.");
+    await type('slurry-target', '2.7');
+    expect(save()).toBeNull();
+    await type('slurry-target', '1.45');
+    expect(save()?.textContent).toContain('Clear the target');
+    save()!.click();
+    await fixture.whenStable();
+    expect(fixture.componentInstance['sgTarget']()).toBeNull();
+  });
+
+  it('starts from the target a recipe keeps, as Settings read densities', async () => {
+    TestBed.inject(PreferencesService).remember('density', 'baume');
+    const fixture = TestBed.createComponent(SlurryCalculator);
+    fixture.componentRef.setInput('sgTarget', 1.5);
+    await fixture.whenStable();
+    expect((fixture.nativeElement.querySelector('#slurry-target') as HTMLInputElement).value).toBe('48.3');
+    expect(text(fixture, '.slurry-target')).toContain("SG 1.5 is this recipe's target.");
+  });
+});
+
+describe('OwnLimitsNote', () => {
+  beforeEach(() => {
+    localStorage.clear();
+    TestBed.configureTestingModule({ providers: testProviders() });
+  });
+
+  it('says the suggestions use Glazecalc’s own limits when the limits shown are another set, and stays quiet otherwise', async () => {
+    const preferences = TestBed.inject(PreferencesService);
+    const fixture = TestBed.createComponent(OwnLimitsNote);
+    await fixture.whenStable();
+    expect(text(fixture)).toBe("These suggestions use Glazecalc's own limits, not Hesselberth & Roy, stable glazes.");
+    preferences.remember('limitSet', 'glazecalc');
+    await fixture.whenStable();
+    expect(text(fixture)).toBe('');
   });
 });

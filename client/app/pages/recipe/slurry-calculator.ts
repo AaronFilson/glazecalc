@@ -1,4 +1,4 @@
-import { Component, computed, inject, linkedSignal, signal } from '@angular/core';
+import { Component, computed, inject, linkedSignal, model, signal } from '@angular/core';
 import { TranslocoDirective, translate } from '@jsverse/transloco';
 import { marker } from '@jsverse/transloco-keys-manager/marker';
 import * as slurry from '../../../../lib/recipe/slurry';
@@ -45,6 +45,12 @@ const TARGET: Record<Density, string> = {
 };
 /** A dipping glaze's usual SG (Digitalfire), as each density is read. */
 const TYPICAL: Record<Density, string> = { sg: '1.45', baume: '45', pint: '29' };
+
+/** An SG as the density Settings read, in the plain digits a field is typed in. */
+function densityText(sg: number, density: Density): string {
+  const value = density === 'baume' ? slurry.baumeFromSg(sg) : density === 'pint' ? slurry.pintFromSg(sg) : sg;
+  return String(Math.round(value * (density === 'sg' ? 1000 : 10)) / (density === 'sg' ? 1000 : 10));
+}
 
 /** SG from a density as Settings read it; null for what is not a number. */
 function sgOf(text: string, density: Density): number | null {
@@ -140,6 +146,23 @@ function sgOf(text: string, density: Density): number | null {
           <p>{{ line }}</p>
         }
       </div>
+      <div class="slurry-target" aria-live="polite">
+        @if (isKept()) {
+          <span>{{ t('recipe.slurry.targetSaved', { sg: sgText(sgTarget()!) }) }}</span>
+          <button type="button" class="btn btn-light border btn-sm" (click)="sgTarget.set(null)">
+            {{ t('recipe.slurry.clearTarget') }}
+          </button>
+        } @else {
+          @if (targetSg() !== null) {
+            <button type="button" class="btn btn-light border btn-sm" (click)="sgTarget.set(targetSg())">
+              {{ t('recipe.slurry.saveTarget', { sg: sgText(targetSg()!) }) }}
+            </button>
+          }
+          @if (sgTarget() !== null) {
+            <span>{{ t('recipe.slurry.targetKept', { sg: sgText(sgTarget()!) }) }}</span>
+          }
+        }
+      </div>
       <p class="slurry-note">{{ t('recipe.slurry.note') }}</p>
     </section>
   </ng-container>`,
@@ -169,6 +192,13 @@ function sgOf(text: string, density: Density): number | null {
     .slurry-problem {
       color: var(--gc-danger-text);
     }
+    .slurry-target {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.5rem 0.75rem;
+      margin-bottom: 0.5rem;
+    }
     .slurry-note {
       font-size: 0.9rem;
       color: var(--gc-muted);
@@ -181,6 +211,9 @@ export class SlurryCalculator {
   protected readonly volumeUnits = VOLUME_UNITS;
   protected readonly pounds = computed(() => this.preferences.weightUnit() === 'lb');
 
+  /** The SG the recipe is mixed to, saved with it as sgTarget; the page owns it. */
+  readonly sgTarget = model<number | null>(null);
+
   protected readonly volume = signal('');
   /** Litres with weights in grams; gallons with pounds, imperial ones in Britain and Ireland. */
   protected readonly volumeUnit = linkedSignal<VolumeUnit>(() =>
@@ -188,7 +221,10 @@ export class SlurryCalculator {
   );
   protected readonly measured = signal('');
   /** The usual SG for dipping, as Settings read densities, until another is typed. */
-  protected readonly target = linkedSignal(() => TYPICAL[this.locale.density()]);
+  protected readonly target = linkedSignal(() => {
+    const kept = this.sgTarget();
+    return kept !== null ? densityText(kept, this.locale.density()) : TYPICAL[this.locale.density()];
+  });
   protected readonly dry = signal(String(slurry.DRY_SG));
   protected readonly batch = signal('');
 
@@ -214,6 +250,26 @@ export class SlurryCalculator {
     if (!(dry > 1)) return translate('recipe.slurry.badDry');
     return bad(sg) || bad(target) ? translate('recipe.slurry.badSg', { dry: upTo(dry, 2) }) : '';
   });
+
+  /** The target as an SG the recipe can keep: above water's, under the dry materials' and the bounds of sgTarget. */
+  protected readonly targetSg = computed(() => {
+    const { target, dry } = this.numbers();
+    const { min, max } = slurry.SG_TARGET_RANGE;
+    if (target === null || !(dry > 1) || target <= min || target >= dry || target > max) return null;
+    return Math.round(target * 1000) / 1000;
+  });
+
+  /** Whether the target typed is the one the recipe keeps (to within what a Baumé or pint figure rounds to). */
+  protected isKept(): boolean {
+    const kept = this.sgTarget();
+    const now = this.targetSg();
+    return kept !== null && now !== null && Math.abs(kept - now) < 0.001;
+  }
+
+  /** An SG as the SG column writes it: 1.45. */
+  protected sgText(sg: number): string {
+    return upTo(sg, 3);
+  }
 
   protected readonly results = computed(() => {
     const { litres, sg, target, dry, batchKg } = this.numbers();

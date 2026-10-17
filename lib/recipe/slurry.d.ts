@@ -2,6 +2,8 @@
 
 /** The dry materials' specific gravity the formula assumes unless told: 2.5. */
 export const DRY_SG: number;
+/** The bounds of a recipe's `sgTarget`, the SG its glaze is mixed to: 1 to 2.5. */
+export const SG_TARGET_RANGE: Readonly<{ min: number; max: number }>;
 /** Litres in a US gallon, an imperial gallon and an imperial pint. */
 export const LITRES: Readonly<{ usGallon: number; imperialGallon: number; imperialPint: number }>;
 
