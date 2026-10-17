@@ -65,49 +65,49 @@ La mayor parte de la protección viene de los hábitos, no del equipo. Los conse
 
 Este orden es una recomendación nuestra, basada en el principio del HSE de evitar primero el material en polvo. Para pesar y mezclar paso a paso, consulte [Cómo preparar un esmalte](/guides/making-a-glaze).
 
-## Protección respiratoria {#respirators}
+## Respirators {#respirators lang=en}
 
-Un **equipo de protección respiratoria** (EPR) es una mascarilla certificada para filtrar las partículas finas del aire que respira. Solo funciona si se ajusta herméticamente a la cara, y complementa los buenos hábitos en lugar de sustituirlos.
+A **respirator** is a mask certified to filter fine particles from the air you breathe. It works only when it seals to your face, and it backs up good habits rather than replacing them.
 
-### Clases por región
+### Classes by region
 
-Table: Clases de protección respiratoria contra partículas por región (equivalencias aproximadas para el polvo de esmalte)
-Label: Clases de protección respiratoria
+Table: Particle respirator classes by region (rough equivalents for glaze dust)
+Label: Respirator classes
 
-| Región                    | Clase habitual | Clase superior | Qué buscar                                                                                              |
-| ------------------------- | -------------- | -------------- | ------------------------------------------------------------------------------------------------------- |
-| Estados Unidos            | N95            | P100           | La aprobación NIOSH en la mascarilla o en su envase                                                     |
-| Reino Unido y UE          | FFP2           | FFP3           | EN 149 en las mascarillas desechables; EN 140 en las medias máscaras reutilizables, con filtros P2 o P3 |
-| Australia y Nueva Zelanda | P2             | P3             | AS/NZS 1716                                                                                             |
+| Region                    | Everyday class | Higher class | Look for                                                                         |
+| ------------------------- | -------------- | ------------ | -------------------------------------------------------------------------------- |
+| United States             | N95            | P100         | NIOSH approval on the mask or its packaging                                      |
+| UK and EU                 | FFP2           | FFP3         | EN 149 on disposable masks; EN 140 on reusable half masks, with P2 or P3 filters |
+| Australia and New Zealand | P2             | P3           | AS/NZS 1716                                                                      |
 
-La clase superior filtra una proporción mayor de las partículas finas. Las fuentes no coinciden en lo que filtra un P3 australiano (al menos el 99 %, o al menos el 99,95 %), así que compre la clase certificada que se venda en su región. Una **media máscara** reutilizable (que cubre la nariz y la boca, con filtros recambiables) con filtros P100 (P3 fuera de EE. UU.) es una elección habitual en los talleres.
+The higher class filters a larger share of fine particles. Sources disagree on what an Australian P3 filters (at least 99%, or at least 99.95%), so buy the certified class sold in your region. A reusable **half mask** (covering the nose and mouth, with replaceable filters) fitted with P100 filters (P3 outside the US) is a common studio choice.
 
-### Ajuste y sellado
+### Fit and seal
 
-Una mascarilla con fugas deja entrar el polvo por los bordes, sea cual sea su clase. El HSE advierte de que la barba, incluso la de pocos días, «hace imposible conseguir un buen sellado».
+A mask that leaks lets dust in around its edges, whatever its class. HSE warns that stubble and beards "make it impossible to get a good seal".
 
-- **Aféitese poco antes de trabajar.** Las recomendaciones difieren sobre cuánto tiempo puede haber pasado desde el afeitado para contar como «bien afeitado»: menos de 8 horas (un fabricante británico, que cita al HSE) o, preferiblemente, menos de 12 (la norma australiana y neozelandesa de pruebas de ajuste). Si se afeita poco antes de trabajar, cumple ambas.
-- **Si conserva la barba,** un **equipo filtrante de ventilación asistida** de ajuste holgado (PAPR: una capucha o un casco con un ventilador que aporta aire filtrado) no necesita ajustarse herméticamente a la cara.
-- **Elija la talla correcta.** Un mal ajuste es una de las principales causas de fugas. En los lugares de trabajo se hace una **prueba de ajuste**, que comprueba que una mascarilla concreta se ajusta herméticamente a una cara concreta. En casa, le recomendamos seguir las instrucciones del fabricante para comprobar el sellado cada vez que se la ponga.
+- **Shave shortly before you work.** Guidance differs on how recent "clean-shaven" must be. A UK maker, citing HSE, says shaved within 8 hours of starting work. The Australian and New Zealand fit-test standard asks for a shave before a fit test, "preferably within 12 hours". Shaving shortly before you work meets both.
+- **If you keep a beard,** a loose-fitting **powered respirator** (PAPR: a hood or helmet with a fan that supplies filtered air) needs no face seal.
+- **Get the size right.** Poor fit is a major cause of leaks. Workplaces use a **fit test**, a check that a particular mask seals on a particular face. At home, we suggest following the maker's instructions for checking the seal each time you put it on.
 
 > [!NOTE]
-> En nuestra opinión, el ajuste importa más que la clase: una N95, FFP2 o P2 bien ajustada suele proteger mejor que una P100 mal ajustada.
+> In our view, fit matters more than class: a well-fitted N95, FFP2 or P2 will usually do better than a loose P100.
 
-### Cuándo llevarla
+### When to wear one
 
-El HSE dice que la protección respiratoria «normalmente no es necesaria» si se pesa y se mezcla en un recinto cerrado con ventilación, pero que «puede ser necesaria para el mantenimiento y la limpieza». La mayoría de los talleres caseros no tienen ese recinto, así que le recomendamos llevarla (como mínimo N95, FFP2 o P2; mejor P100, FFP3 o P3) siempre que:
+HSE says a respirator is "normally not needed" where weighing and mixing happen in a ventilated enclosure, but "may be needed for maintenance and cleaning". Most home studios have no enclosure, so we suggest wearing one (N95, FFP2 or P2 at least; P100, FFP3 or P3 is better) whenever you:
 
-- abra sacos o vierta material en polvo;
-- pese materiales en polvo y los mezcle con agua;
-- raspe, lije o amole esmalte{{en: glaze}} seco o bizcocho{{en: bisque}};
-- haga cualquier limpieza en seco, o vacíe un aspirador;
-- aplique esmalte a pistola (en una cabina: vea más abajo).
+- open bags or tip out powder;
+- weigh powders and stir them into water;
+- scrape, sand or grind dried glaze or bisque;
+- do any dry cleanup, or empty a vacuum;
+- spray glaze (in a booth: see below).
 
-### Lo que no es protección respiratoria
+### What is not a respirator
 
-- Las mascarillas quirúrgicas, las de tela y las mascarillas «para polvo molesto» sin marcado NIOSH, EN 149 o AS/NZS 1716. No confiaríamos en ellas para el polvo de esmalte.
-- Un equipo de protección respiratoria contra el polvo «no le protegerá contra gases, vapores» (OSHA), así que no sirve de nada contra los humos del horno.
-- Cuide el suyo: la OSHA señala que un equipo sucio o mal usado «puede convertirse en un peligro». Guárdelo limpio, lejos de la ropa de trabajo con polvo.
+- Surgical masks, cloth masks and "nuisance dust" masks without a NIOSH, EN 149 or AS/NZS 1716 marking. We would not rely on them for glaze dust.
+- A dust respirator "will not protect you against gases, vapors" (OSHA), so it does nothing for kiln fumes.
+- Look after yours: OSHA notes that a dirty or misused respirator "can become a hazard". Store it clean, away from dusty work clothes.
 
 ## Limpieza, ropa y manos {#cleaning}
 

@@ -595,22 +595,22 @@ Si el kiln sitter salta antes de que caigan los conos de la placa, pase a un con
 
 Un **pirómetro** es un indicador de temperatura que toma la lectura de un **termopar**, una sonda de calor que atraviesa la pared del horno. Muestra a qué velocidad sube el horno, para que pueda elegir la columna correcta de la tabla de conos. Pero mide cerca de la pared, no en las piezas, y su lectura se desvía con el tiempo. L&L señala que un termopar de tipo K puede desviarse más de {{25 °F; 14 °C}} tras repetidas cocciones a cono 6, «una diferencia mayor que un cono entero», mientras que un cono con pie no varía más de {{4 °F; 2 °C}}. Orton dice que los pirómetros necesitan recalibrarse de vez en cuando, y que los conos son la manera de comprobarlos.
 
-## Ventilación, mirillas y seguridad {#venting}
+## Venting, peeking and safety {#venting lang=en}
 
-### Ventilación
+### Venting
 
-Al principio de una cocción, la arcilla y el esmalte{{en: glaze}} desprenden vapor de agua y humos, entre ellos monóxido de carbono, y los esmaltes también pueden desprender humos tóxicos más avanzada la cocción. L&L considera «esencial» evacuarlos. Sin sistema de extracción, eso significa la tapa entreabierta y las mirillas abiertas en las primeras fases, como en los procedimientos de más arriba; ir más despacio durante este tiempo también ayuda a que se queme el carbono. Con un **extractor de tiro descendente** (un extractor motorizado instalado en el horno), Orton dice que la tapa y las mirillas quedan cerradas durante toda la cocción, salvo para revisar los conos{{en: cones}}. Una mirilla de arriba abierta también protege el tubo del kiln sitter y las partes metálicas del horno.
+Early in a firing, clay and glaze give off water vapor and fumes, including carbon monoxide, and glazes can give off toxic fumes later in the firing too. L&L calls venting them "essential". With no vent system, that means the lid propped and the peepholes open in the early stages, as in the procedures above; slowing the heating during this time also helps the carbon burn out. In a kiln without a vent, Dawson, who made the sitter, also says to leave the top peephole open for the whole firing: the venting "will reduce deterioration of the kiln's metal parts and increase the life of the tube assembly". A **downdraft vent** (a powered vent fitted to the kiln) changes this. It does the venting, so Orton says the lid and peepholes stay closed for the whole firing except to check the cones, and L&L says to leave the vent on and plug the peepholes.
 
-Para la ventilación de la sala y los detectores de monóxido de carbono, vea [Preparación segura y ventilación](/guides/safe-mixing) y [No envenene a su familia](/guides/home-safety).
+For venting the room, and for carbon monoxide alarms, see [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety).
 
-### Mientras el horno cuece
+### While the kiln is firing
 
-- Mire por una mirilla solo con gafas de soldadura de grado de protección 3 con filtro de infrarrojo; las gafas de sol no bastan. Skutt aconseja encajar los tapones girándolos, para que no se caigan.
-- No deje el horno desatendido más allá del tiempo de cocción previsto; un kiln sitter no es un sistema a prueba de fallos.
-- No cueza nunca sobre algo que arda, o cerca de ello, como un suelo de madera o una moqueta.
-- Respete las distancias de seguridad de su manual. Las cifras publicadas van de 12 pulgadas (30 cm) a 3 pies (91 cm); si el manual no dice nada, 18 pulgadas (46 cm) de las paredes y 3 pies (91 cm) de cualquier cosa que arda es la opción más segura.
-- Mantenga despejado el espacio alrededor del contrapeso del kiln sitter, para que pueda caer.
-- Cuando termine la cocción, apague los reguladores y desconecte también el interruptor automático.
+- Look through a peephole only with IR-rated shade 3 welding glasses; sunglasses are not enough. Skutt advises twisting the plugs into place so they do not fall out.
+- Do not leave the kiln unattended beyond its expected firing time; a sitter is not a fail-safe.
+- Never fire on or near anything that burns, such as a wood floor or carpet.
+- Keep the clearances in your manual. Published figures range from 12 in (30 cm) to 3 ft (91 cm); where the manual is silent, 18 in (46 cm) from walls and 3 ft (91 cm) from anything that burns is the safest choice.
+- Keep the space around the sitter's weight clear so it can drop.
+- When the firing ends, turn the switches off and turn off the breaker as well.
 
 ## Enfriamiento y descarga {#cooling}
 

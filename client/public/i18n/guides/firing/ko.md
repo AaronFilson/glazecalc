@@ -595,22 +595,22 @@ Label: 수동 가마의 출발점
 
 **온도계**(파이로미터)는 가마 벽을 지나는 열 센서인 **열전대**에서 값을 읽는 온도 표시기입니다. 가마가 얼마나 빠르게 오르는지 보여 주므로 콘 온도표에서 알맞은 열을 고를 수 있습니다. 하지만 기물이 아니라 벽 근처의 값을 읽고, 값이 틀어지기도 합니다. L&L은 K형 열전대가 오튼 콘 6 소성을 거듭하면 {{25 °F; 14 °C}}를 초과해 틀어질 수 있으며 이는 “콘 한 개를 넘는 차이”인 반면, 셀프 서포트 콘의 편차는 {{4 °F; 2 °C}} 이하라고 말합니다. Orton은 온도계를 가끔 다시 보정해야 하며, 이를 확인하는 방법이 콘이라고 말합니다.
 
-## 배기, 들여다보기, 안전 {#venting}
+## Venting, peeking and safety {#venting lang=en}
 
-### 배기
+### Venting
 
-소성 초기에 점토와 유약에서 수증기와 가스가 나오며, 여기에는 일산화탄소도 들어 있습니다. 소성 후반에도 유약에서 유독 가스가 나올 수 있습니다. L&L은 이를 배기하는 것이 “필수”라고 말합니다. 배기 장치가 없으면 초반에는 위의 순서처럼 뚜껑을 살짝 열고 불구멍을 열어 두라는 뜻이며, 이 동안 가열을 늦추면 탄소가 타서 빠지는 데도 도움이 됩니다. **하향식 배기 장치**(가마에 다는 동력식 배기 장치)가 있으면 Orton은 콘을 확인할 때를 빼고는 소성 내내 뚜껑과 불구멍을 닫아 두라고 합니다. 위쪽 불구멍을 열어 두면 시터 튜브와 가마의 금속 부품도 보호됩니다.
+Early in a firing, clay and glaze give off water vapor and fumes, including carbon monoxide, and glazes can give off toxic fumes later in the firing too. L&L calls venting them "essential". With no vent system, that means the lid propped and the peepholes open in the early stages, as in the procedures above; slowing the heating during this time also helps the carbon burn out. In a kiln without a vent, Dawson, who made the sitter, also says to leave the top peephole open for the whole firing: the venting "will reduce deterioration of the kiln's metal parts and increase the life of the tube assembly". A **downdraft vent** (a powered vent fitted to the kiln) changes this. It does the venting, so Orton says the lid and peepholes stay closed for the whole firing except to check the cones, and L&L says to leave the vent on and plug the peepholes.
 
-실내 환기와 일산화탄소 경보기는 《[안전한 조합과 환기](/guides/safe-mixing)》와 《[가족을 중독에서 지키세요](/guides/home-safety)》를 보세요.
+For venting the room, and for carbon monoxide alarms, see [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety).
 
-### 가마가 소성 중일 때
+### While the kiln is firing
 
-- 불구멍은 적외선을 막는 차광도 3 용접용 보안경을 쓰고서만 들여다보세요. 선글라스로는 충분하지 않습니다. Skutt는 마개가 빠지지 않도록 돌려서 끼우라고 조언합니다.
-- 가마를 예상 소성 시간이 지난 뒤에도 지켜보는 사람 없이 두지 마세요. 킬른 시터는 고장이 나도 안전하게 전원을 차단하는 장치가 아닙니다.
-- 나무 바닥이나 카펫처럼 불에 타는 것 위나 근처에서는 절대 소성하지 마세요.
-- 사용 설명서에 나온 이격 거리를 지키세요. 공개된 수치는 12인치(30 cm)에서 3피트(91 cm)까지 다양합니다. 사용 설명서에 없다면 벽에서 18인치(46 cm), 불에 타는 것에서 3피트(91 cm) 떨어뜨리는 것이 가장 안전한 선택입니다.
-- 웨이트가 떨어질 수 있도록 킬른 시터의 웨이트 주변 공간을 비워 두세요.
-- 소성이 끝나면 스위치를 끄고 차단기도 내리세요.
+- Look through a peephole only with IR-rated shade 3 welding glasses; sunglasses are not enough. Skutt advises twisting the plugs into place so they do not fall out.
+- Do not leave the kiln unattended beyond its expected firing time; a sitter is not a fail-safe.
+- Never fire on or near anything that burns, such as a wood floor or carpet.
+- Keep the clearances in your manual. Published figures range from 12 in (30 cm) to 3 ft (91 cm); where the manual is silent, 18 in (46 cm) from walls and 3 ft (91 cm) from anything that burns is the safest choice.
+- Keep the space around the sitter's weight clear so it can drop.
+- When the firing ends, turn the switches off and turn off the breaker as well.
 
 ## 냉각과 내임 {#cooling}
 

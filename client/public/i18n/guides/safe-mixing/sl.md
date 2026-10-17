@@ -65,49 +65,49 @@ Največ zaščite dajo navade, ne oprema. Nasveti HSE za keramične delavnice se
 
 Ta vrstni red je naš predlog, ki temelji na načelu HSE, da se prahu najprej izognemo. Tehtanje in mešanje po korakih opisuje vodnik [Kako pripraviti glazuro](/guides/making-a-glaze).
 
-## Zaščitne dihalne maske {#respirators}
+## Respirators {#respirators lang=en}
 
-**Zaščitna dihalna maska** je certificirana maska, ki iz zraka, ki ga vdihavate, filtrira drobne delce. Deluje le, če tesni na obrazu, in dobre navade dopolnjuje, ne nadomešča.
+A **respirator** is a mask certified to filter fine particles from the air you breathe. It works only when it seals to your face, and it backs up good habits rather than replacing them.
 
-### Razredi po regijah
+### Classes by region
 
-Table: Razredi zaščitnih dihalnih mask proti delcem po regijah (približni ustrezniki za prah glazur)
-Label: Razredi zaščitnih dihalnih mask
+Table: Particle respirator classes by region (rough equivalents for glaze dust)
+Label: Respirator classes
 
-| Regija                       | Razred za vsakdanjo rabo | Višji razred | Kaj iskati                                                                                         |
-| ---------------------------- | ------------------------ | ------------ | -------------------------------------------------------------------------------------------------- |
-| ZDA                          | N95                      | P100         | Odobritev NIOSH na maski ali njeni embalaži                                                        |
-| Združeno kraljestvo in EU    | FFP2                     | FFP3         | EN 149 na maskah za enkratno uporabo; EN 140 na polmaskah za večkratno uporabo, s filtri P2 ali P3 |
-| Avstralija in Nova Zelandija | P2                       | P3           | AS/NZS 1716                                                                                        |
+| Region                    | Everyday class | Higher class | Look for                                                                         |
+| ------------------------- | -------------- | ------------ | -------------------------------------------------------------------------------- |
+| United States             | N95            | P100         | NIOSH approval on the mask or its packaging                                      |
+| UK and EU                 | FFP2           | FFP3         | EN 149 on disposable masks; EN 140 on reusable half masks, with P2 or P3 filters |
+| Australia and New Zealand | P2             | P3           | AS/NZS 1716                                                                      |
 
-Višji razred zadrži večji delež drobnih delcev. Viri se ne ujemajo glede tega, koliko zadrži avstralski P3 (vsaj 99 % ali vsaj 99,95 %), zato kupite certificirani razred, ki se prodaja v vaši regiji. **Polmaska** za večkratno uporabo (pokriva nos in usta, ima zamenljive filtre) s filtri P100 (zunaj ZDA P3) je v delavnicah pogosta izbira.
+The higher class filters a larger share of fine particles. Sources disagree on what an Australian P3 filters (at least 99%, or at least 99.95%), so buy the certified class sold in your region. A reusable **half mask** (covering the nose and mouth, with replaceable filters) fitted with P100 filters (P3 outside the US) is a common studio choice.
 
-### Prileganje in tesnjenje
+### Fit and seal
 
-Maska, ki ne tesni, ob robovih prepušča prah, ne glede na razred. HSE opozarja, da strnišče in brada »onemogočata dobro tesnjenje«.
+A mask that leaks lets dust in around its edges, whatever its class. HSE warns that stubble and beards "make it impossible to get a good seal".
 
-- **Obrijte se malo pred delom.** Smernice se razlikujejo glede tega, kako nedavno se je treba obriti, da je obraz »gladko obrit«: v zadnjih 8 urah (britanski proizvajalec, ki se sklicuje na HSE) ali po možnosti v zadnjih 12 (avstralski in novozelandski standard za preskus tesnjenja maske). Če se obrijete malo pred delom, izpolnite oboje.
-- **Če nosite brado,** ohlapna **filtrirna naprava z ventilatorjem** (PAPR: kapuca ali čelada, v katero ventilator dovaja filtriran zrak) ne potrebuje tesnjenja na obrazu.
-- **Izberite pravo velikost.** Slabo prileganje je eden glavnih vzrokov puščanja. Na delovnih mestih uporabljajo **preskus tesnjenja maske** (fit test), s katerim preverijo, ali določena maska tesni na določenem obrazu. Doma predlagamo, da vsakič, ko si masko nadenete, preverite tesnjenje po navodilih proizvajalca.
+- **Shave shortly before you work.** Guidance differs on how recent "clean-shaven" must be. A UK maker, citing HSE, says shaved within 8 hours of starting work. The Australian and New Zealand fit-test standard asks for a shave before a fit test, "preferably within 12 hours". Shaving shortly before you work meets both.
+- **If you keep a beard,** a loose-fitting **powered respirator** (PAPR: a hood or helmet with a fan that supplies filtered air) needs no face seal.
+- **Get the size right.** Poor fit is a major cause of leaks. Workplaces use a **fit test**, a check that a particular mask seals on a particular face. At home, we suggest following the maker's instructions for checking the seal each time you put it on.
 
 > [!NOTE]
-> Po našem mnenju je prileganje pomembnejše od razreda: dobro prilegajoča se maska N95, FFP2 ali P2 bo običajno zaščitila bolje kot ohlapna maska P100.
+> In our view, fit matters more than class: a well-fitted N95, FFP2 or P2 will usually do better than a loose P100.
 
-### Kdaj jo nositi
+### When to wear one
 
-HSE pravi, da zaščitna dihalna maska »običajno ni potrebna«, kjer tehtanje in mešanje potekata v zaprtem prostoru z odsesavanjem, a da je »lahko potrebna pri vzdrževanju in čiščenju«. Večina domačih delavnic takega prostora nima, zato predlagamo, da masko (vsaj N95, FFP2 ali P2; P100, FFP3 ali P3 je boljša) nosite vedno, ko:
+HSE says a respirator is "normally not needed" where weighing and mixing happen in a ventilated enclosure, but "may be needed for maintenance and cleaning". Most home studios have no enclosure, so we suggest wearing one (N95, FFP2 or P2 at least; P100, FFP3 or P3 is better) whenever you:
 
-- odpirate vreče ali stresate prah;
-- tehtate prah in ga vmešavate v vodo;
-- strgate ali brusite (z brusnim papirjem ali brusilnikom) posušeno glazuro{{en: glaze}} ali biskvit{{en: bisque}};
-- kakor koli čistite na suho ali praznite sesalnik;
-- brizgate glazuro (v komori: glejte spodaj).
+- open bags or tip out powder;
+- weigh powders and stir them into water;
+- scrape, sand or grind dried glaze or bisque;
+- do any dry cleanup, or empty a vacuum;
+- spray glaze (in a booth: see below).
 
-### Kaj ni zaščitna dihalna maska
+### What is not a respirator
 
-- Kirurške maske, platnene maske in preproste maske »proti grobemu prahu« brez oznake NIOSH, EN 149 ali AS/NZS 1716. Pri prahu glazur se nanje ne bi zanašali.
-- Zaščitna dihalna maska proti prahu »vas ne bo zaščitila pred plini, hlapi« (OSHA), zato ne pomaga nič proti plinom in hlapom iz peči.
-- Skrbite zanjo: OSHA navaja, da umazana ali napačno uporabljena maska »lahko postane nevarna«. Hranite jo čisto, stran od prašnih delovnih oblačil.
+- Surgical masks, cloth masks and "nuisance dust" masks without a NIOSH, EN 149 or AS/NZS 1716 marking. We would not rely on them for glaze dust.
+- A dust respirator "will not protect you against gases, vapors" (OSHA), so it does nothing for kiln fumes.
+- Look after yours: OSHA notes that a dirty or misused respirator "can become a hazard". Store it clean, away from dusty work clothes.
 
 ## Čiščenje, oblačila in roke {#cleaning}
 

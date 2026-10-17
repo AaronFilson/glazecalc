@@ -65,49 +65,49 @@ De meeste bescherming komt van gewoonten, niet van uitrusting. Het advies van de
 
 Deze volgorde is ons voorstel, gebaseerd op het uitgangspunt van de HSE om eerst poeder te vermijden. Afwegen en aanmaken stap voor stap leest u in [Een glazuur aanmaken](/guides/making-a-glaze).
 
-## Adembescherming {#respirators}
+## Respirators {#respirators lang=en}
 
-Een **stofmasker** is een masker dat gecertificeerd is om fijne deeltjes te filteren uit de lucht die u inademt. Het werkt alleen als het goed op uw gezicht aansluit, en het ondersteunt goede gewoonten in plaats van ze te vervangen.
+A **respirator** is a mask certified to filter fine particles from the air you breathe. It works only when it seals to your face, and it backs up good habits rather than replacing them.
 
-### Klassen per regio
+### Classes by region
 
-Table: Klassen van stofmaskers per regio (bij benadering gelijkwaardig voor glazuurstof)
-Label: Klassen van stofmaskers
+Table: Particle respirator classes by region (rough equivalents for glaze dust)
+Label: Respirator classes
 
-| Regio                      | Gewone klasse | Hogere klasse | Waar u op let                                                                              |
-| -------------------------- | ------------- | ------------- | ------------------------------------------------------------------------------------------ |
-| Verenigde Staten           | N95           | P100          | NIOSH-goedkeuring op het masker of de verpakking                                           |
-| VK en EU                   | FFP2          | FFP3          | EN 149 op wegwerpmaskers; EN 140 op herbruikbare halfgelaatsmaskers, met P2- of P3-filters |
-| Australië en Nieuw-Zeeland | P2            | P3            | AS/NZS 1716                                                                                |
+| Region                    | Everyday class | Higher class | Look for                                                                         |
+| ------------------------- | -------------- | ------------ | -------------------------------------------------------------------------------- |
+| United States             | N95            | P100         | NIOSH approval on the mask or its packaging                                      |
+| UK and EU                 | FFP2           | FFP3         | EN 149 on disposable masks; EN 140 on reusable half masks, with P2 or P3 filters |
+| Australia and New Zealand | P2             | P3           | AS/NZS 1716                                                                      |
 
-De hogere klasse filtert een groter deel van de fijne deeltjes. De bronnen zijn het niet eens over wat een Australisch P3-filter tegenhoudt (minstens 99%, of minstens 99,95%), dus koop de gecertificeerde klasse die in uw regio wordt verkocht. Een herbruikbaar **halfgelaatsmasker** (over neus en mond, met vervangbare filters) met P100-filters (buiten de VS P3) is in ateliers een gangbare keuze.
+The higher class filters a larger share of fine particles. Sources disagree on what an Australian P3 filters (at least 99%, or at least 99.95%), so buy the certified class sold in your region. A reusable **half mask** (covering the nose and mouth, with replaceable filters) fitted with P100 filters (P3 outside the US) is a common studio choice.
 
-### Pasvorm en afdichting
+### Fit and seal
 
-Een masker dat lekt, laat langs de randen stof binnen, welke klasse het ook heeft. De HSE waarschuwt dat stoppels en baarden het “onmogelijk maken een goede afdichting te krijgen”.
+A mask that leaks lets dust in around its edges, whatever its class. HSE warns that stubble and beards "make it impossible to get a good seal".
 
-- **Scheer u kort voordat u gaat werken.** De adviezen verschillen over hoe recent “gladgeschoren” moet zijn: binnen 8 uur (een Britse fabrikant, die zich op de HSE beroept) of bij voorkeur binnen 12 uur (de Australische en Nieuw-Zeelandse norm voor de fittest). Als u zich kort voor het werk scheert, voldoet u aan beide.
-- **Als u een baard houdt,** heeft losjes zittende **aangeblazen adembescherming** (PAPR: een kap of helm met een ventilator die gefilterde lucht aanvoert) geen afdichting op het gezicht nodig.
-- **Kies de juiste maat.** Een slechte pasvorm is een belangrijke oorzaak van lekken. Op de werkplek wordt een **fittest** gedaan, een controle of een bepaald masker op een bepaald gezicht goed afsluit. Thuis stellen we voor de aanwijzingen van de fabrikant te volgen om de afdichting te controleren, telkens wanneer u het masker opzet.
+- **Shave shortly before you work.** Guidance differs on how recent "clean-shaven" must be. A UK maker, citing HSE, says shaved within 8 hours of starting work. The Australian and New Zealand fit-test standard asks for a shave before a fit test, "preferably within 12 hours". Shaving shortly before you work meets both.
+- **If you keep a beard,** a loose-fitting **powered respirator** (PAPR: a hood or helmet with a fan that supplies filtered air) needs no face seal.
+- **Get the size right.** Poor fit is a major cause of leaks. Workplaces use a **fit test**, a check that a particular mask seals on a particular face. At home, we suggest following the maker's instructions for checking the seal each time you put it on.
 
 > [!NOTE]
-> Naar onze mening is de pasvorm belangrijker dan de klasse: een goed passend N95-, FFP2- of P2-masker werkt meestal beter dan een loszittend P100-masker.
+> In our view, fit matters more than class: a well-fitted N95, FFP2 or P2 will usually do better than a loose P100.
 
-### Wanneer draagt u een stofmasker?
+### When to wear one
 
-Volgens de HSE is een stofmasker “normaal gesproken niet nodig” als het afwegen en aanmaken in een afgezogen omkasting gebeuren, maar “kan het nodig zijn bij onderhoud en schoonmaken”. De meeste thuisateliers hebben geen omkasting, dus we stellen voor er een te dragen (minstens N95, FFP2 of P2; P100, FFP3 of P3 is beter) telkens wanneer u:
+HSE says a respirator is "normally not needed" where weighing and mixing happen in a ventilated enclosure, but "may be needed for maintenance and cleaning". Most home studios have no enclosure, so we suggest wearing one (N95, FFP2 or P2 at least; P100, FFP3 or P3 is better) whenever you:
 
-- zakken opent of poeder uitstort;
-- poeders afweegt en in water roert;
-- gedroogd glazuur{{en: glaze}} of biscuit{{en: bisque}} afschraapt, schuurt of slijpt;
-- droog schoonmaakt, of een stofzuiger leegt;
-- glazuur spuit (in een spuitcabine: zie hieronder).
+- open bags or tip out powder;
+- weigh powders and stir them into water;
+- scrape, sand or grind dried glaze or bisque;
+- do any dry cleanup, or empty a vacuum;
+- spray glaze (in a booth: see below).
 
-### Wat geen stofmasker is
+### What is not a respirator
 
-- Chirurgische mondmaskers, stoffen mondkapjes en eenvoudige stofkapjes zonder NIOSH-, EN 149- of AS/NZS 1716-markering. Wij zouden er voor glazuurstof niet op vertrouwen.
-- Een stofmasker “beschermt u niet tegen gassen, dampen” (OSHA) en doet dus niets tegen ovendampen.
-- Zorg goed voor uw masker: OSHA merkt op dat een vuil of verkeerd gebruikt stofmasker “een gevaar kan worden”. Bewaar het schoon, uit de buurt van stoffige werkkleding.
+- Surgical masks, cloth masks and "nuisance dust" masks without a NIOSH, EN 149 or AS/NZS 1716 marking. We would not rely on them for glaze dust.
+- A dust respirator "will not protect you against gases, vapors" (OSHA), so it does nothing for kiln fumes.
+- Look after yours: OSHA notes that a dirty or misused respirator "can become a hazard". Store it clean, away from dusty work clothes.
 
 ## Schoonmaken, kleding en handen {#cleaning}
 

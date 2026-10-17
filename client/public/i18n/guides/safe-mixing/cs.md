@@ -65,49 +65,49 @@ Většinu ochrany zajistí návyky, ne vybavení. Rady HSE pro keramické provoz
 
 Toto pořadí je náš návrh, postavený na zásadě HSE vyhnout se nejdřív prášku. Vážení a míchání krok za krokem popisuje návod [Jak připravit glazuru](/guides/making-a-glaze).
 
-## Respirátory {#respirators}
+## Respirators {#respirators lang=en}
 
-**Respirátor** je maska s certifikací pro filtraci jemných částic ze vzduchu, který dýcháte. Funguje jen tehdy, když na obličeji těsní, a dobré návyky doplňuje, ale nenahrazuje.
+A **respirator** is a mask certified to filter fine particles from the air you breathe. It works only when it seals to your face, and it backs up good habits rather than replacing them.
 
-### Třídy podle regionu
+### Classes by region
 
-Table: Třídy respirátorů proti částicím podle regionu (přibližné ekvivalenty pro prach z glazur)
-Label: Třídy respirátorů
+Table: Particle respirator classes by region (rough equivalents for glaze dust)
+Label: Respirator classes
 
-| Region                  | Běžná třída | Vyšší třída | Co hledat                                                                                         |
-| ----------------------- | ----------- | ----------- | ------------------------------------------------------------------------------------------------- |
-| Spojené státy           | N95         | P100        | Schválení NIOSH na masce nebo jejím obalu                                                         |
-| Spojené království a EU | FFP2        | FFP3        | EN 149 na jednorázových maskách; EN 140 na opakovaně použitelných polomaskách s filtry P2 nebo P3 |
-| Austrálie a Nový Zéland | P2          | P3          | AS/NZS 1716                                                                                       |
+| Region                    | Everyday class | Higher class | Look for                                                                         |
+| ------------------------- | -------------- | ------------ | -------------------------------------------------------------------------------- |
+| United States             | N95            | P100         | NIOSH approval on the mask or its packaging                                      |
+| UK and EU                 | FFP2           | FFP3         | EN 149 on disposable masks; EN 140 on reusable half masks, with P2 or P3 filters |
+| Australia and New Zealand | P2             | P3           | AS/NZS 1716                                                                      |
 
-Vyšší třída zachytí větší podíl jemných částic. Zdroje se rozcházejí v tom, kolik zachytí australská třída P3 (nejméně 99 %, nebo nejméně 99,95 %), proto kupujte certifikovanou třídu, která se prodává ve vašem regionu. Častou volbou v dílnách je opakovaně použitelná **polomaska** (zakrývá nos a ústa a má vyměnitelné filtry) s filtry P100 (mimo USA P3).
+The higher class filters a larger share of fine particles. Sources disagree on what an Australian P3 filters (at least 99%, or at least 99.95%), so buy the certified class sold in your region. A reusable **half mask** (covering the nose and mouth, with replaceable filters) fitted with P100 filters (P3 outside the US) is a common studio choice.
 
-### Přiléhání a těsnost
+### Fit and seal
 
-Maska, která netěsní, propouští prach kolem okrajů, ať je jakékoli třídy. HSE varuje, že strniště a vousy „znemožňují dosáhnout dobrého utěsnění“.
+A mask that leaks lets dust in around its edges, whatever its class. HSE warns that stubble and beards "make it impossible to get a good seal".
 
-- **Holte se krátce před prací.** Doporučení se liší v tom, jak čerstvé musí být „hladké oholení“: do 8 hodin (britský výrobce s odvoláním na HSE), nebo nejlépe do 12 (australská a novozélandská norma pro zkoušky těsnosti). Oholení krátce před prací splní obojí.
-- **Pokud nosíte vousy,** volně nasazená **filtroventilační jednotka s nuceným přívodem vzduchu** (PAPR: kukla nebo přilba s ventilátorem, který přivádí filtrovaný vzduch) nepotřebuje těsnit na obličeji.
-- **Zvolte správnou velikost.** Špatné přiléhání je jednou z hlavních příčin netěsností. Na pracovištích se provádí **zkouška těsnosti (fit test)**, která ověří, že konkrétní maska těsní na konkrétním obličeji. Doma navrhujeme kontrolovat těsnost podle pokynů výrobce pokaždé, když si masku nasadíte.
+- **Shave shortly before you work.** Guidance differs on how recent "clean-shaven" must be. A UK maker, citing HSE, says shaved within 8 hours of starting work. The Australian and New Zealand fit-test standard asks for a shave before a fit test, "preferably within 12 hours". Shaving shortly before you work meets both.
+- **If you keep a beard,** a loose-fitting **powered respirator** (PAPR: a hood or helmet with a fan that supplies filtered air) needs no face seal.
+- **Get the size right.** Poor fit is a major cause of leaks. Workplaces use a **fit test**, a check that a particular mask seals on a particular face. At home, we suggest following the maker's instructions for checking the seal each time you put it on.
 
 > [!NOTE]
-> Podle nás záleží na přiléhání víc než na třídě: dobře přiléhající N95, FFP2 nebo P2 obvykle poslouží lépe než volně sedící P100.
+> In our view, fit matters more than class: a well-fitted N95, FFP2 or P2 will usually do better than a loose P100.
 
-### Kdy respirátor nosit
+### When to wear one
 
-Podle HSE respirátor „obvykle není potřeba“ tam, kde se váží a míchá v odsávaném boxu, ale „může být potřeba při údržbě a úklidu“. Většina domácích dílen žádný box nemá, proto navrhujeme nosit respirátor (alespoň N95, FFP2 nebo P2; P100, FFP3 nebo P3 je lepší) vždy, když:
+HSE says a respirator is "normally not needed" where weighing and mixing happen in a ventilated enclosure, but "may be needed for maintenance and cleaning". Most home studios have no enclosure, so we suggest wearing one (N95, FFP2 or P2 at least; P100, FFP3 or P3 is better) whenever you:
 
-- otevíráte pytle nebo vysypáváte prášek;
-- vážíte prášky a vmícháváte je do vody;
-- seškrabujete, brousíte smirkovým papírem nebo bruskou zaschlou glazuru{{en: glaze}} nebo přežahnutý střep{{en: bisque}};
-- uklízíte nasucho nebo vyprazdňujete vysavač;
-- stříkáte glazuru (v kabině: viz níže).
+- open bags or tip out powder;
+- weigh powders and stir them into water;
+- scrape, sand or grind dried glaze or bisque;
+- do any dry cleanup, or empty a vacuum;
+- spray glaze (in a booth: see below).
 
-### Co není respirátor
+### What is not a respirator
 
-- Chirurgické roušky, látkové roušky a jednoduché masky „proti hrubému prachu“ bez označení NIOSH, EN 149 nebo AS/NZS 1716. Proti prachu z glazur bychom na ně nespoléhali.
-- Respirátor proti prachu „vás neochrání před plyny, parami“ (OSHA), takže proti výparům z pece nepomůže.
-- Starejte se o svůj respirátor: OSHA upozorňuje, že špinavý nebo nesprávně používaný respirátor „se může stát nebezpečím“. Uchovávejte ho čistý, mimo zaprášené pracovní oblečení.
+- Surgical masks, cloth masks and "nuisance dust" masks without a NIOSH, EN 149 or AS/NZS 1716 marking. We would not rely on them for glaze dust.
+- A dust respirator "will not protect you against gases, vapors" (OSHA), so it does nothing for kiln fumes.
+- Look after yours: OSHA notes that a dirty or misused respirator "can become a hazard". Store it clean, away from dusty work clothes.
 
 ## Úklid, oblečení a ruce {#cleaning}
 

@@ -595,22 +595,22 @@ Pokud vypínač vypne dřív, než se žároměrky na plátě ohnou, dejte pří
 
 **Pyrometr** je teploměr, který odečítá teplotu z **termočlánku**, teplotního čidla procházejícího stěnou pece. Ukazuje, jak rychle teplota v peci stoupá, takže můžete vybrat správný sloupec tabulky žároměrek. Měří ale u stěny, ne u výrobků, a jeho údaj se časem posouvá. L&L upozorňuje, že termočlánek typu K se po opakovaných výpalech na žároměrku 6 může mýlit o více než {{25 °F; 14 °C}}, „rozdíl větší než celá žároměrka“, zatímco samostojná žároměrka se liší nejvýše o {{4 °F; 2 °C}}. Orton uvádí, že pyrometry je třeba čas od času znovu kalibrovat a že se kontrolují právě žároměrkami.
 
-## Větrání, nahlížení do pece a bezpečnost {#venting}
+## Venting, peeking and safety {#venting lang=en}
 
-### Větrání
+### Venting
 
-Na začátku výpalu uvolňují hlína a glazura{{en: glaze}} vodní páru a výpary, včetně oxidu uhelnatého, a glazury mohou uvolňovat toxické výpary i později během výpalu. L&L označuje jejich odvětrání za „nezbytné“. Bez odtahu to znamená v počátečních fázích pootevřené víko a otevřené průzory, jako v postupech výše; zpomalení ohřevu v této době také pomáhá, aby uhlík vyhořel. Se **spodním odtahem** (odtahem s ventilátorem připevněným k peci) zůstávají podle společnosti Orton víko i průzory po celý výpal zavřené, kromě kontroly žároměrek{{en: cones}}. Otevřený horní průzor také chrání trubičku vypínače Kiln-Sitter{{en: kiln sitter}} a kovové části pece.
+Early in a firing, clay and glaze give off water vapor and fumes, including carbon monoxide, and glazes can give off toxic fumes later in the firing too. L&L calls venting them "essential". With no vent system, that means the lid propped and the peepholes open in the early stages, as in the procedures above; slowing the heating during this time also helps the carbon burn out. In a kiln without a vent, Dawson, who made the sitter, also says to leave the top peephole open for the whole firing: the venting "will reduce deterioration of the kiln's metal parts and increase the life of the tube assembly". A **downdraft vent** (a powered vent fitted to the kiln) changes this. It does the venting, so Orton says the lid and peepholes stay closed for the whole firing except to check the cones, and L&L says to leave the vent on and plug the peepholes.
 
-O větrání místnosti a o detektorech oxidu uhelnatého se dočtete v návodech [Bezpečné míchání a větrání](/guides/safe-mixing) a [Neotravte svou rodinu](/guides/home-safety).
+For venting the room, and for carbon monoxide alarms, see [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety).
 
-### Během výpalu
+### While the kiln is firing
 
-- Do průzoru se dívejte jen přes svářečské brýle s ochranou proti IR a stupněm ochrany 3; sluneční brýle nestačí. Výrobce Skutt radí zátky do průzorů zasouvat otáčivým pohybem, aby nevypadly.
-- Nenechávejte pec bez dozoru déle, než je očekávaná doba výpalu; Kiln-Sitter není spolehlivá pojistka.
-- Nikdy nevypalujte na ničem hořlavém ani v blízkosti čehokoli hořlavého, jako je dřevěná podlaha nebo koberec.
-- Dodržujte bezpečné vzdálenosti uvedené v návodu k obsluze. Zveřejněné hodnoty se pohybují od 12 palců (30 cm) do 3 stop (91 cm); kde návod k obsluze nic neuvádí, je nejbezpečnější volbou 18 palců (46 cm) od stěn a 3 stopy (91 cm) od čehokoli hořlavého.
-- Prostor kolem závaží vypínače udržujte volný, aby závaží mohlo spadnout.
-- Po skončení výpalu vypněte přepínače a vypněte také jistič.
+- Look through a peephole only with IR-rated shade 3 welding glasses; sunglasses are not enough. Skutt advises twisting the plugs into place so they do not fall out.
+- Do not leave the kiln unattended beyond its expected firing time; a sitter is not a fail-safe.
+- Never fire on or near anything that burns, such as a wood floor or carpet.
+- Keep the clearances in your manual. Published figures range from 12 in (30 cm) to 3 ft (91 cm); where the manual is silent, 18 in (46 cm) from walls and 3 ft (91 cm) from anything that burns is the safest choice.
+- Keep the space around the sitter's weight clear so it can drop.
+- When the firing ends, turn the switches off and turn off the breaker as well.
 
 ## Chlazení a vykládání {#cooling}
 

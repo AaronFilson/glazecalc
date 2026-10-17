@@ -65,49 +65,49 @@ Suurin osa suojasta tulee työtavoista, ei varusteista. HSE:n neuvot keramiikka-
 
 Tämä järjestys on meidän ehdotuksemme, ja se perustuu HSE:n periaatteeseen välttää ensin jauhetta. Punnitsemisesta ja sekoittamisesta vaihe vaiheelta kerrotaan oppaassa [Lasitteen valmistaminen](/guides/making-a-glaze).
 
-## Hengityksensuojaimet {#respirators}
+## Respirators {#respirators lang=en}
 
-**Hengityksensuojain** on sertifioitu suojain, joka suodattaa hienot hiukkaset hengitysilmasta. Se toimii vain, kun se tiivistyy kasvoja vasten, ja se tukee hyviä työtapoja eikä korvaa niitä.
+A **respirator** is a mask certified to filter fine particles from the air you breathe. It works only when it seals to your face, and it backs up good habits rather than replacing them.
 
-### Suojausluokat alueittain
+### Classes by region
 
-Table: Hiukkassuojainten suojausluokat alueittain (lasitepölyn kannalta karkeasti toisiaan vastaavat)
-Label: Hengityksensuojainten suojausluokat
+Table: Particle respirator classes by region (rough equivalents for glaze dust)
+Label: Respirator classes
 
-| Alue                       | Tavallinen luokka | Korkeampi luokka | Tarkista                                                                                                               |
-| -------------------------- | ----------------- | ---------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| Yhdysvallat                | N95               | P100             | NIOSH-hyväksyntä suojaimessa tai sen pakkauksessa                                                                      |
-| Iso-Britannia ja EU        | FFP2              | FFP3             | EN 149 kertakäyttöisissä suojaimissa; EN 140 uudelleenkäytettävissä puolinaamareissa, joissa on P2- tai P3-suodattimet |
-| Australia ja Uusi-Seelanti | P2                | P3               | AS/NZS 1716                                                                                                            |
+| Region                    | Everyday class | Higher class | Look for                                                                         |
+| ------------------------- | -------------- | ------------ | -------------------------------------------------------------------------------- |
+| United States             | N95            | P100         | NIOSH approval on the mask or its packaging                                      |
+| UK and EU                 | FFP2           | FFP3         | EN 149 on disposable masks; EN 140 on reusable half masks, with P2 or P3 filters |
+| Australia and New Zealand | P2             | P3           | AS/NZS 1716                                                                      |
 
-Korkeampi luokka suodattaa suuremman osan hienoista hiukkasista. Lähteet ovat eri mieltä siitä, mitä australialainen P3-luokka suodattaa (vähintään 99 % vai vähintään 99,95 %), joten osta omalla alueella myytävä sertifioitu luokka. Uudelleenkäytettävä **puolinaamari** (peittää nenän ja suun, ja siinä on vaihdettavat suodattimet) P100-suodattimilla (Yhdysvaltojen ulkopuolella P3) on yleinen valinta pajoissa.
+The higher class filters a larger share of fine particles. Sources disagree on what an Australian P3 filters (at least 99%, or at least 99.95%), so buy the certified class sold in your region. A reusable **half mask** (covering the nose and mouth, with replaceable filters) fitted with P100 filters (P3 outside the US) is a common studio choice.
 
-### Istuvuus ja tiiviys
+### Fit and seal
 
-Vuotava suojain päästää pölyä sisään reunoiltaan, oli sen luokka mikä tahansa. HSE varoittaa, että sänki ja parta ”tekevät hyvän tiiviyden saavuttamisen mahdottomaksi”.
+A mask that leaks lets dust in around its edges, whatever its class. HSE warns that stubble and beards "make it impossible to get a good seal".
 
-- **Ajele parta vähän ennen työskentelyä.** Ohjeet eroavat siinä, kuinka äskettäin on ajeltava, jotta on ”sileäksi ajeltu”: enintään 8 tuntia aiemmin (brittiläinen valmistaja HSE:hen viitaten) tai mieluiten enintään 12 tuntia aiemmin (Australian ja Uuden-Seelannin tiiviystestistandardi). Ajelu vähän ennen työskentelyä täyttää kummankin ohjeen.
-- **Jos partaa ei ajeta,** väljä **puhallinsuojain** (PAPR: huppu tai kypärä, jossa puhallin syöttää suodatettua ilmaa) ei tarvitse tiivistystä kasvoja vasten.
-- **Valitse oikea koko.** Huono istuvuus on merkittävä vuotojen syy. Työpaikoilla tehdään **tiiviystesti**, jolla tarkistetaan, että tietty suojain tiivistyy tietyille kasvoille. Kotona ehdotamme, että tiiviys tarkistetaan valmistajan ohjeiden mukaan joka kerta, kun suojain pannaan kasvoille.
+- **Shave shortly before you work.** Guidance differs on how recent "clean-shaven" must be. A UK maker, citing HSE, says shaved within 8 hours of starting work. The Australian and New Zealand fit-test standard asks for a shave before a fit test, "preferably within 12 hours". Shaving shortly before you work meets both.
+- **If you keep a beard,** a loose-fitting **powered respirator** (PAPR: a hood or helmet with a fan that supplies filtered air) needs no face seal.
+- **Get the size right.** Poor fit is a major cause of leaks. Workplaces use a **fit test**, a check that a particular mask seals on a particular face. At home, we suggest following the maker's instructions for checking the seal each time you put it on.
 
 > [!NOTE]
-> Meidän näkemyksemme mukaan istuvuus on tärkeämpää kuin luokka: hyvin istuva N95-, FFP2- tai P2-suojain suojaa yleensä paremmin kuin löysä P100-suojain.
+> In our view, fit matters more than class: a well-fitted N95, FFP2 or P2 will usually do better than a loose P100.
 
-### Milloin suojainta käytetään
+### When to wear one
 
-HSE:n mukaan hengityksensuojainta ”ei tavallisesti tarvita”, kun punnitus ja sekoitus tehdään kohdepoistolla varustetussa kotelossa, mutta sitä ”voidaan tarvita huollossa ja siivouksessa”. Useimmissa kotipajoissa tällaista koteloa ei ole, joten ehdotamme suojaimen käyttöä (vähintään N95, FFP2 tai P2; P100, FFP3 tai P3 on parempi) aina, kun:
+HSE says a respirator is "normally not needed" where weighing and mixing happen in a ventilated enclosure, but "may be needed for maintenance and cleaning". Most home studios have no enclosure, so we suggest wearing one (N95, FFP2 or P2 at least; P100, FFP3 or P3 is better) whenever you:
 
-- avataan säkkejä tai kaadetaan jauhetta;
-- punnitaan jauheita ja sekoitetaan niitä veteen;
-- kaavitaan tai hiotaan hiomapaperilla tai hiomakoneella kuivunutta lasitetta{{en: glaze}} tai raakapoltettua{{en: bisque}} esinettä;
-- siivotaan kuivana tai tyhjennetään imuria;
-- ruiskutetaan lasitetta (ruiskutuskaapissa: katso alla).
+- open bags or tip out powder;
+- weigh powders and stir them into water;
+- scrape, sand or grind dried glaze or bisque;
+- do any dry cleanup, or empty a vacuum;
+- spray glaze (in a booth: see below).
 
-### Mikä ei ole hengityksensuojain
+### What is not a respirator
 
-- Kirurgiset maskit, kangasmaskit ja ”kevyet pölymaskit”, joissa ei ole merkintää NIOSH, EN 149 tai AS/NZS 1716. Emme luottaisi niihin lasitepölyä vastaan.
-- Pölysuojain ”ei suojaa kaasuilta eikä höyryiltä” (OSHA), joten se ei auta lainkaan uunin savukaasuja vastaan.
-- Pidä oma suojain kunnossa: OSHA huomauttaa, että likainen tai väärin käytetty hengityksensuojain ”voi muodostua vaaraksi”. Säilytä se puhtaana, erillään pölyisistä työvaatteista.
+- Surgical masks, cloth masks and "nuisance dust" masks without a NIOSH, EN 149 or AS/NZS 1716 marking. We would not rely on them for glaze dust.
+- A dust respirator "will not protect you against gases, vapors" (OSHA), so it does nothing for kiln fumes.
+- Look after yours: OSHA notes that a dirty or misused respirator "can become a hazard". Store it clean, away from dusty work clothes.
 
 ## Siivous, vaatteet ja kädet {#cleaning}
 

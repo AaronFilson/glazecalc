@@ -65,49 +65,49 @@ Is ó nósanna, ní ó threalamh, a thagann an chuid is mó den chosaint. Tosaí
 
 Is é an t-ord seo ár moladh féin, bunaithe ar phrionsabal HSE, púdar a sheachaint ar dtús. Chun glónra a mheá agus a mheascadh céim ar chéim, féach an treoirleabhar [Conas glónra a dhéanamh](/guides/making-a-glaze).
 
-## Maisc análaitheora {#respirators}
+## Respirators {#respirators lang=en}
 
-Is éard is **masc análaitheora** ann ná masc atá deimhnithe chun cáithníní mína a scagadh as an aer a análaíonn tú. Ní oibríonn sé ach nuair a dhúnann sé go dlúth ar d’aghaidh, agus tacaíonn sé le nósanna maithe; ní thagann sé ina n-áit.
+A **respirator** is a mask certified to filter fine particles from the air you breathe. It works only when it seals to your face, and it backs up good habits rather than replacing them.
 
-### Aicmí de réir réigiúin
+### Classes by region
 
-Table: Aicmí maisc análaitheora do cháithníní, de réir réigiúin (coibhéisí garbha do dheannach glónra)
-Label: Aicmí maisc análaitheora
+Table: Particle respirator classes by region (rough equivalents for glaze dust)
+Label: Respirator classes
 
-| Réigiún                          | Aicme don ghnáthúsáid | Aicme níos airde | Cad atá le lorg                                                                                    |
-| -------------------------------- | --------------------- | ---------------- | -------------------------------------------------------------------------------------------------- |
-| Stáit Aontaithe Mheiriceá        | N95                   | P100             | Ceadú NIOSH ar an masc nó ar a phacáistiú                                                          |
-| An Ríocht Aontaithe agus an tAE  | FFP2                  | FFP3             | EN 149 ar mhaisc indiúscartha; EN 140 ar mhaisc leath-aghaidhe in-athúsáidte, le scagairí P2 nó P3 |
-| An Astráil agus an Nua-Shéalainn | P2                    | P3               | AS/NZS 1716                                                                                        |
+| Region                    | Everyday class | Higher class | Look for                                                                         |
+| ------------------------- | -------------- | ------------ | -------------------------------------------------------------------------------- |
+| United States             | N95            | P100         | NIOSH approval on the mask or its packaging                                      |
+| UK and EU                 | FFP2           | FFP3         | EN 149 on disposable masks; EN 140 on reusable half masks, with P2 or P3 filters |
+| Australia and New Zealand | P2             | P3           | AS/NZS 1716                                                                      |
 
-Scagann an aicme níos airde sciar níos mó de na cáithníní mína. Ní réitíonn na foinsí le chéile faoin méid a scagann P3 Astrálach (99% ar a laghad, nó 99.95% ar a laghad), mar sin ceannaigh an aicme dheimhnithe a dhíoltar i do réigiún. Is rogha choitianta i stiúideonna é **masc leath-aghaidhe** in-athúsáidte (a chlúdaíonn an tsrón agus an béal, le scagairí is féidir a athsholáthar) a bhfuil scagairí P100 air (P3 lasmuigh de SAM).
+The higher class filters a larger share of fine particles. Sources disagree on what an Australian P3 filters (at least 99%, or at least 99.95%), so buy the certified class sold in your region. A reusable **half mask** (covering the nose and mouth, with replaceable filters) fitted with P100 filters (P3 outside the US) is a common studio choice.
 
-### Oiriúint agus dlúthú
+### Fit and seal
 
-Ligeann masc a sceitheann deannach isteach timpeall ar a imill, is cuma cén aicme atá air. Tugann HSE na Ríochta Aontaithe rabhadh gur “dodhéanta dlúthú maith a fháil” le coinleach agus le féasóga.
+A mask that leaks lets dust in around its edges, whatever its class. HSE warns that stubble and beards "make it impossible to get a good seal".
 
-- **Bearr d’aghaidh go gairid sula dtosaíonn tú ag obair.** Ní hionann an chomhairle faoi cé chomh déanach is a chaithfidh an bearradh a bheith le bheith “glanbhearrtha”: laistigh de 8 n-uaire (déantóir sa Ríocht Aontaithe, ag lua HSE) nó, más féidir, laistigh de 12 uair (caighdeán na hAstráile agus na Nua-Shéalainne don tástáil oiriúnachta). Má bhearrann tú go gairid sula dtosaíonn tú ag obair, sásaíonn tú an dá cheann.
-- **Má choinníonn tú féasóg,** níl dlúthú ar an aghaidh ag teastáil ó **análaitheoir cumhachtaithe** scaoilte (PAPR: cochall nó clogad le fean a sholáthraíonn aer scagtha).
-- **Faigh an méid ceart.** Is cúis mhór sceite í an drochoiriúint. Úsáideann ionaid oibre **tástáil oiriúnachta**, seiceáil go ndúnann masc áirithe go dlúth ar aghaidh áirithe. Sa bhaile, molaimid treoracha an déantóra a leanúint chun a sheiceáil go ndúnann sé go dlúth gach uair a chuireann tú ort é.
+- **Shave shortly before you work.** Guidance differs on how recent "clean-shaven" must be. A UK maker, citing HSE, says shaved within 8 hours of starting work. The Australian and New Zealand fit-test standard asks for a shave before a fit test, "preferably within 12 hours". Shaving shortly before you work meets both.
+- **If you keep a beard,** a loose-fitting **powered respirator** (PAPR: a hood or helmet with a fan that supplies filtered air) needs no face seal.
+- **Get the size right.** Poor fit is a major cause of leaks. Workplaces use a **fit test**, a check that a particular mask seals on a particular face. At home, we suggest following the maker's instructions for checking the seal each time you put it on.
 
 > [!NOTE]
-> Dar linn, is tábhachtaí an oiriúint ná an aicme: is gnách gur fearr a oibreoidh N95, FFP2 nó P2 a oireann go maith ná P100 scaoilte.
+> In our view, fit matters more than class: a well-fitted N95, FFP2 or P2 will usually do better than a loose P100.
 
-### Cathain le ceann a chaitheamh
+### When to wear one
 
-Deir HSE “nach mbíonn gá de ghnáth” le masc análaitheora san áit a ndéantar meá agus meascadh in imfhálú aeráilte, ach “go bhféadfadh gá a bheith leis le haghaidh cothabhála agus glantacháin”. Níl imfhálú ag formhór na stiúideonna baile, mar sin molaimid ceann a chaitheamh (N95, FFP2 nó P2 ar a laghad; is fearr P100, FFP3 nó P3) aon uair a bhíonn tú:
+HSE says a respirator is "normally not needed" where weighing and mixing happen in a ventilated enclosure, but "may be needed for maintenance and cleaning". Most home studios have no enclosure, so we suggest wearing one (N95, FFP2 or P2 at least; P100, FFP3 or P3 is better) whenever you:
 
-- ag oscailt málaí nó ag doirteadh púdair amach;
-- ag meá púdar agus á gcorraí isteach in uisce;
-- ag scríobadh, ag greanáil nó ag líomhadh glónra{{en: glaze}} thriomaithe nó brioscghréithe{{en: bisque}};
-- ag déanamh aon ghlantacháin thirim, nó ag folmhú folúsghlantóra;
-- ag spraeáil glónra (i mboth: féach thíos).
+- open bags or tip out powder;
+- weigh powders and stir them into water;
+- scrape, sand or grind dried glaze or bisque;
+- do any dry cleanup, or empty a vacuum;
+- spray glaze (in a booth: see below).
 
-### Rudaí nach maisc análaitheora iad
+### What is not a respirator
 
-- Maisc mháinliachta, maisc éadaigh agus maisc “deannaigh támh” nach bhfuil marc NIOSH, EN 149 nó AS/NZS 1716 orthu. Ní bheimis ag brath orthu chun cosaint a thabhairt ar dheannach glónra.
-- Ní chosnóidh masc análaitheora deannaigh thú “ar gháis, ar ghala” (OSHA), mar sin ní dhéanann sé dada i gcoinne múiche áithe.
-- Tabhair aire do do mhasc féin: tugann OSHA faoi deara gur féidir le masc análaitheora atá salach nó a úsáidtear go mícheart “a bheith ina ghuais”. Stóráil glan é, i bhfad ó éadaí oibre deannachúla.
+- Surgical masks, cloth masks and "nuisance dust" masks without a NIOSH, EN 149 or AS/NZS 1716 marking. We would not rely on them for glaze dust.
+- A dust respirator "will not protect you against gases, vapors" (OSHA), so it does nothing for kiln fumes.
+- Look after yours: OSHA notes that a dirty or misused respirator "can become a hazard". Store it clean, away from dusty work clothes.
 
 ## Glanadh, éadaí agus lámha {#cleaning}
 

@@ -595,22 +595,22 @@ Jekk is-sitter jiskatta qabel ma jinżlu l-koni tax-xkaffa, il-ħamja ta’ wara
 
 **Pirometru** huwa strument li juri t-temperatura kif taqraha **termokoppja**, sonda tas-sħana li tgħaddi mill-ħajt tal-forn. Juri kemm qed jitla’ malajr il-forn, biex tkun tista’ tagħżel il-kolonna t-tajba tat-tabella tal-koni. Imma jaqra qrib il-ħajt, mhux fejn hemm l-oġġetti, u l-qari tiegħu jinbidel maż-żmien. L&L jinnota li termokoppja tat-tip K tista’ tiżbalja b’aktar minn {{25 °F; 14 °C}} wara ħamjiet ripetuti sal-kon 6, “differenza akbar minn kon sħiħ”, filwaqt li kon li joqgħod waħdu ma jvarjax b’aktar minn {{4 °F; 2 °C}}. Orton jgħid li l-pirometri għandhom bżonn jiġu kkalibrati mill-ġdid minn żmien għal żmien, u l-koni huma l-mod kif tiċċekkjahom.
 
-## Il-ventilazzjoni, il-ħarsa ġol-forn u s-sigurtà {#venting}
+## Venting, peeking and safety {#venting lang=en}
 
-### Il-ventilazzjoni
+### Venting
 
-Fil-bidu tal-ħamja, it-tafal u l-glejż{{en: glaze}} joħorġu fwar tal-ilma u dħaħen, fosthom monossidu tal-karbonju, u l-glejżijiet jistgħu joħorġu dħaħen tossiċi anke aktar tard fil-ħamja. L&L jgħid li huwa “essenzjali” li dawn joħorġu mill-forn. Mingħajr sistema ta’ estrattur, dan ifisser l-għatu miftuħ ftit u t-toqob tal-ħarsa miftuħin fl-ewwel stadji, bħal fil-proċeduri ta’ hawn fuq; jekk tnaqqas ir-rata tat-tisħin f’dan iż-żmien, tgħin ukoll biex il-karbonju jinħaraq kollu. B’**estrattur minn taħt il-forn** (estrattur bil-mutur imwaħħal mal-forn), Orton jgħid li l-għatu u t-toqob tal-ħarsa jibqgħu magħluqin għall-ħamja kollha, ħlief biex tiċċekkja l-koni{{en: cones}}. Toqba tal-ħarsa ta’ fuq miftuħa tipproteġi wkoll it-tubu tas-sitter u l-partijiet tal-metall tal-forn.
+Early in a firing, clay and glaze give off water vapor and fumes, including carbon monoxide, and glazes can give off toxic fumes later in the firing too. L&L calls venting them "essential". With no vent system, that means the lid propped and the peepholes open in the early stages, as in the procedures above; slowing the heating during this time also helps the carbon burn out. In a kiln without a vent, Dawson, who made the sitter, also says to leave the top peephole open for the whole firing: the venting "will reduce deterioration of the kiln's metal parts and increase the life of the tube assembly". A **downdraft vent** (a powered vent fitted to the kiln) changes this. It does the venting, so Orton says the lid and peepholes stay closed for the whole firing except to check the cones, and L&L says to leave the vent on and plug the peepholes.
 
-Għall-ventilazzjoni tal-kamra, u għall-allarmi tal-monossidu tal-karbonju, ara l-gwidi [Taħlit sikur u ventilazzjoni](/guides/safe-mixing) u [Tavvelenax lill-familja tiegħek](/guides/home-safety).
+For venting the room, and for carbon monoxide alarms, see [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety).
 
-### Waqt li l-forn qed jaħmi
+### While the kiln is firing
 
-- Biex tħares minn toqba tal-ħarsa, uża biss nuċċali tal-iwweldjar kontra l-IR, bi grad ta’ dlam 3; in-nuċċali tax-xemx mhumiex biżżejjed. Skutt jagħti parir li ddawwar it-tappijiet f’posthom biex ma jaqgħux.
-- Tħallix il-forn mingħajr sorveljanza wara l-ħin mistenni tal-ħamja; sitter mhuwiex apparat li jitfi l-forn b’mod żgur f’każ ta’ ħsara.
-- Qatt ma taħmi fuq jew qrib xi ħaġa li taqbad, bħal art tal-injam jew tapit.
-- Żomm id-distanzi ta’ sigurtà li hemm fil-manwal tiegħek. Iċ-ċifri ppubblikati jvarjaw minn 12-il pulzier (30 cm) sa 3 piedi (91 cm); fejn il-manwal ma jgħid xejn, 18-il pulzier (46 cm) mill-ħitan u 3 piedi (91 cm) minn kull ħaġa li taqbad huma l-għażla l-aktar sikura.
-- Żomm l-ispazju madwar il-piż tas-sitter ħieles, biex il-piż ikun jista’ jaqa’.
-- Meta tispiċċa l-ħamja, itfi s-swiċċijiet u tfi wkoll l-interruttur taċ-ċirkwit.
+- Look through a peephole only with IR-rated shade 3 welding glasses; sunglasses are not enough. Skutt advises twisting the plugs into place so they do not fall out.
+- Do not leave the kiln unattended beyond its expected firing time; a sitter is not a fail-safe.
+- Never fire on or near anything that burns, such as a wood floor or carpet.
+- Keep the clearances in your manual. Published figures range from 12 in (30 cm) to 3 ft (91 cm); where the manual is silent, 18 in (46 cm) from walls and 3 ft (91 cm) from anything that burns is the safest choice.
+- Keep the space around the sitter's weight clear so it can drop.
+- When the firing ends, turn the switches off and turn off the breaker as well.
 
 ## It-tkessiħ u t-tbattil tal-forn {#cooling}
 

@@ -65,49 +65,49 @@ A maior parte da proteção vem dos hábitos, não do equipamento. Os conselhos 
 
 Esta ordem é uma sugestão nossa, baseada no princípio do HSE de evitar primeiro o pó. Para pesar e misturar passo a passo, veja [Como fazer um vidrado](/guides/making-a-glaze).
 
-## Máscaras de proteção respiratória {#respirators}
+## Respirators {#respirators lang=en}
 
-Uma **máscara de proteção respiratória** é uma máscara certificada para filtrar as partículas finas do ar que respira. Só funciona quando fica bem vedada ao rosto, e complementa os bons hábitos em vez de os substituir.
+A **respirator** is a mask certified to filter fine particles from the air you breathe. It works only when it seals to your face, and it backs up good habits rather than replacing them.
 
-### Classes por região
+### Classes by region
 
-Table: Classes de máscaras de proteção contra partículas por região (equivalências aproximadas para a poeira de vidrados)
-Label: Classes de máscaras
+Table: Particle respirator classes by region (rough equivalents for glaze dust)
+Label: Respirator classes
 
-| Região                    | Classe corrente | Classe superior | O que procurar                                                                                |
-| ------------------------- | --------------- | --------------- | --------------------------------------------------------------------------------------------- |
-| Estados Unidos            | N95             | P100            | Aprovação NIOSH na máscara ou na embalagem                                                    |
-| Reino Unido e UE          | FFP2            | FFP3            | EN 149 nas máscaras descartáveis; EN 140 nas semimáscaras reutilizáveis, com filtros P2 ou P3 |
-| Austrália e Nova Zelândia | P2              | P3              | AS/NZS 1716                                                                                   |
+| Region                    | Everyday class | Higher class | Look for                                                                         |
+| ------------------------- | -------------- | ------------ | -------------------------------------------------------------------------------- |
+| United States             | N95            | P100         | NIOSH approval on the mask or its packaging                                      |
+| UK and EU                 | FFP2           | FFP3         | EN 149 on disposable masks; EN 140 on reusable half masks, with P2 or P3 filters |
+| Australia and New Zealand | P2             | P3           | AS/NZS 1716                                                                      |
 
-A classe superior filtra uma maior proporção das partículas finas. As fontes não estão de acordo quanto ao que filtra uma P3 australiana (pelo menos 99%, ou pelo menos 99,95%), por isso compre a classe certificada que se vende na sua região. Uma **semimáscara** reutilizável (que cobre o nariz e a boca, com filtros substituíveis) equipada com filtros P100 (P3 fora dos EUA) é uma escolha comum nos ateliers.
+The higher class filters a larger share of fine particles. Sources disagree on what an Australian P3 filters (at least 99%, or at least 99.95%), so buy the certified class sold in your region. A reusable **half mask** (covering the nose and mouth, with replaceable filters) fitted with P100 filters (P3 outside the US) is a common studio choice.
 
-### Ajuste e vedação
+### Fit and seal
 
-Uma máscara com fugas deixa entrar poeira pelas bordas, seja qual for a sua classe. O HSE avisa que a barba por fazer e as barbas «tornam impossível obter uma boa vedação».
+A mask that leaks lets dust in around its edges, whatever its class. HSE warns that stubble and beards "make it impossible to get a good seal".
 
-- **Faça a barba pouco antes de trabalhar.** As orientações divergem quanto ao tempo que pode ter passado para a cara contar como «barbeada»: menos de 8 horas (um fabricante britânico, citando o HSE) ou, de preferência, menos de 12 (a norma australiana e neozelandesa de ensaio de ajuste). Fazer a barba pouco antes de trabalhar cumpre ambas.
-- **Se mantiver a barba,** um **aparelho filtrante motorizado** de ajuste folgado (PAPR: um capuz ou capacete com um ventilador que fornece ar filtrado) não precisa de vedar contra o rosto.
-- **Escolha o tamanho certo.** Um mau ajuste é uma das principais causas de fugas. Nos locais de trabalho faz-se um **ensaio de ajuste**, uma verificação de que uma determinada máscara veda num determinado rosto. Em casa, sugerimos que siga as instruções do fabricante para verificar a vedação sempre que a puser.
+- **Shave shortly before you work.** Guidance differs on how recent "clean-shaven" must be. A UK maker, citing HSE, says shaved within 8 hours of starting work. The Australian and New Zealand fit-test standard asks for a shave before a fit test, "preferably within 12 hours". Shaving shortly before you work meets both.
+- **If you keep a beard,** a loose-fitting **powered respirator** (PAPR: a hood or helmet with a fan that supplies filtered air) needs no face seal.
+- **Get the size right.** Poor fit is a major cause of leaks. Workplaces use a **fit test**, a check that a particular mask seals on a particular face. At home, we suggest following the maker's instructions for checking the seal each time you put it on.
 
 > [!NOTE]
-> Na nossa opinião, o ajuste conta mais do que a classe: uma N95, FFP2 ou P2 bem ajustada funciona normalmente melhor do que uma P100 folgada.
+> In our view, fit matters more than class: a well-fitted N95, FFP2 or P2 will usually do better than a loose P100.
 
-### Quando a usar
+### When to wear one
 
-O HSE diz que uma máscara de proteção respiratória «normalmente não é necessária» quando a pesagem e a mistura se fazem numa cabina ventilada, mas que «pode ser necessária para a manutenção e a limpeza». A maioria dos ateliers caseiros não tem cabina, por isso sugerimos que use uma (no mínimo N95, FFP2 ou P2; P100, FFP3 ou P3 é melhor) sempre que:
+HSE says a respirator is "normally not needed" where weighing and mixing happen in a ventilated enclosure, but "may be needed for maintenance and cleaning". Most home studios have no enclosure, so we suggest wearing one (N95, FFP2 or P2 at least; P100, FFP3 or P3 is better) whenever you:
 
-- abrir sacos ou despejar pó;
-- pesar pós e misturá-los na água;
-- raspar, lixar ou desbastar vidrado{{en: glaze}} seco ou chacota{{en: bisque}};
-- fizer qualquer limpeza a seco, ou esvaziar um aspirador;
-- pulverizar vidrado (numa cabina: ver abaixo).
+- open bags or tip out powder;
+- weigh powders and stir them into water;
+- scrape, sand or grind dried glaze or bisque;
+- do any dry cleanup, or empty a vacuum;
+- spray glaze (in a booth: see below).
 
-### O que não é uma máscara de proteção respiratória
+### What is not a respirator
 
-- Máscaras cirúrgicas, máscaras de pano e máscaras «contra poeiras incómodas» sem a marcação NIOSH, EN 149 ou AS/NZS 1716. Não confiaríamos nelas para a poeira de vidrados.
-- Uma máscara de proteção respiratória contra poeiras «não protege contra gases, vapores» (OSHA), por isso não serve de nada contra os fumos do forno.
-- Cuide da sua: a OSHA observa que uma máscara suja ou mal utilizada «pode tornar-se um perigo». Guarde-a limpa, longe da roupa de trabalho com pó.
+- Surgical masks, cloth masks and "nuisance dust" masks without a NIOSH, EN 149 or AS/NZS 1716 marking. We would not rely on them for glaze dust.
+- A dust respirator "will not protect you against gases, vapors" (OSHA), so it does nothing for kiln fumes.
+- Look after yours: OSHA notes that a dirty or misused respirator "can become a hazard". Store it clean, away from dusty work clothes.
 
 ## Limpeza, roupa e mãos {#cleaning}
 

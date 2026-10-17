@@ -65,49 +65,49 @@ Suurem osa kaitsest tuleb harjumustest, mitte varustusest. HSE nõuanded keraami
 
 See järjekord on selle juhendi soovitus, mis põhineb HSE põhimõttel vältida esmalt pulbrit. Kaalumist ja segamist samm-sammult kirjeldab juhend [Glasuuri valmistamine](/guides/making-a-glaze).
 
-## Respiraatorid {#respirators}
+## Respirators {#respirators lang=en}
 
-**Respiraator** on sertifitseeritud mask, mis filtreerib sissehingatavast õhust peeneid osakesi. See toimib ainult siis, kui see liibub tihedalt näole, ning see täiendab häid harjumusi, mitte ei asenda neid.
+A **respirator** is a mask certified to filter fine particles from the air you breathe. It works only when it seals to your face, and it backs up good habits rather than replacing them.
 
-### Klassid piirkonniti
+### Classes by region
 
-Table: Osakestevastaste respiraatorite klassid piirkonniti (glasuuritolmu puhul ligikaudsed vasted)
-Label: Respiraatorite klassid
+Table: Particle respirator classes by region (rough equivalents for glaze dust)
+Label: Respirator classes
 
-| Piirkond                  | Igapäevane klass | Kõrgem klass | Mida otsida                                                                                  |
-| ------------------------- | ---------------- | ------------ | -------------------------------------------------------------------------------------------- |
-| Ameerika Ühendriigid      | N95              | P100         | NIOSH-i heakskiit maskil või selle pakendil                                                  |
-| Ühendkuningriik ja EL     | FFP2             | FFP3         | EN 149 ühekordsetel maskidel; EN 140 korduvkasutatavatel poolmaskidel, P2- või P3-filtritega |
-| Austraalia ja Uus-Meremaa | P2               | P3           | AS/NZS 1716                                                                                  |
+| Region                    | Everyday class | Higher class | Look for                                                                         |
+| ------------------------- | -------------- | ------------ | -------------------------------------------------------------------------------- |
+| United States             | N95            | P100         | NIOSH approval on the mask or its packaging                                      |
+| UK and EU                 | FFP2           | FFP3         | EN 149 on disposable masks; EN 140 on reusable half masks, with P2 or P3 filters |
+| Australia and New Zealand | P2             | P3           | AS/NZS 1716                                                                      |
 
-Kõrgem klass filtreerib suurema osa peentest osakestest. Allikad ei ole ühel meelel, kui palju Austraalia P3 filtreerib (vähemalt 99% või vähemalt 99,95%), seega ostke oma piirkonnas müüdavat sertifitseeritud klassi. Korduvkasutatav **poolmask** (katab nina ja suu, vahetatavate filtritega) P100-filtritega (väljaspool USA-d P3) on töökodades levinud valik.
+The higher class filters a larger share of fine particles. Sources disagree on what an Australian P3 filters (at least 99%, or at least 99.95%), so buy the certified class sold in your region. A reusable **half mask** (covering the nose and mouth, with replaceable filters) fitted with P100 filters (P3 outside the US) is a common studio choice.
 
-### Sobivus ja tihedus
+### Fit and seal
 
-Lekkiv mask laseb tolmu servade kaudu sisse, olenemata selle klassist. HSE hoiatab, et habemetüügas ja habe „muudavad hea tiheduse saavutamise võimatuks“.
+A mask that leaks lets dust in around its edges, whatever its class. HSE warns that stubble and beards "make it impossible to get a good seal".
 
-- **Raseerige vahetult enne tööd.** Juhised erinevad selles, kui hiljuti peab olema „puhtaks raseeritud“: 8 tunni jooksul (üks Briti tootja, viidates HSE-le) või eelistatavalt 12 tunni jooksul (Austraalia ja Uus-Meremaa sobivustesti standard). Vahetult enne tööd raseerimine vastab mõlemale.
-- **Kui jätate habeme,** ei vaja vabalt istuv **puhuriga respiraator** (PAPR: kapuuts või kiiver puhuriga, mis annab filtreeritud õhku) näol tihedat liibumist.
-- **Valige õige suurus.** Halb sobivus on üks lekete peamisi põhjusi. Töökohtades tehakse **sobivustest**: kontroll, et konkreetne mask sobib tihedalt konkreetse inimese näole. Kodus soovitab see juhend järgida tootja juhiseid tiheduse kontrollimiseks iga kord, kui maski ette panete.
+- **Shave shortly before you work.** Guidance differs on how recent "clean-shaven" must be. A UK maker, citing HSE, says shaved within 8 hours of starting work. The Australian and New Zealand fit-test standard asks for a shave before a fit test, "preferably within 12 hours". Shaving shortly before you work meets both.
+- **If you keep a beard,** a loose-fitting **powered respirator** (PAPR: a hood or helmet with a fan that supplies filtered air) needs no face seal.
+- **Get the size right.** Poor fit is a major cause of leaks. Workplaces use a **fit test**, a check that a particular mask seals on a particular face. At home, we suggest following the maker's instructions for checking the seal each time you put it on.
 
 > [!NOTE]
-> Selle juhendi hinnangul on sobivus tähtsam kui klass: hästi istuv N95, FFP2 või P2 kaitseb tavaliselt paremini kui lõdvalt istuv P100.
+> In our view, fit matters more than class: a well-fitted N95, FFP2 or P2 will usually do better than a loose P100.
 
-### Millal respiraatorit kanda
+### When to wear one
 
-HSE järgi ei ole respiraator „tavaliselt vajalik“, kui kaalumine ja segamine toimub ventileeritud kapis, kuid see „võib olla vajalik hooldusel ja koristamisel“. Enamikus kodutöökodades kappi ei ole, seepärast soovitab see juhend kanda respiraatorit (vähemalt N95, FFP2 või P2; P100, FFP3 või P3 on parem) alati, kui:
+HSE says a respirator is "normally not needed" where weighing and mixing happen in a ventilated enclosure, but "may be needed for maintenance and cleaning". Most home studios have no enclosure, so we suggest wearing one (N95, FFP2 or P2 at least; P100, FFP3 or P3 is better) whenever you:
 
-- avate kotte või kallate pulbrit välja;
-- kaalute pulbreid ja segate neid vette;
-- kraabite, lihvite või ihute kuivanud glasuuri{{en: glaze}} või eelpõletatud esemeid{{en: bisque}};
-- koristate kuivalt või tühjendate tolmuimejat;
-- pritsite glasuuri (glasuurimiskapis: vt allpool).
+- open bags or tip out powder;
+- weigh powders and stir them into water;
+- scrape, sand or grind dried glaze or bisque;
+- do any dry cleanup, or empty a vacuum;
+- spray glaze (in a booth: see below).
 
-### Mis ei ole respiraator
+### What is not a respirator
 
-- Kirurgilised maskid, riidest maskid ja lihtsad tolmumaskid (nn inertse tolmu maskid), millel puudub NIOSH-i, EN 149 või AS/NZS 1716 märgistus. Selle juhendi hinnangul ei tasu neile glasuuritolmu puhul loota.
-- Tolmurespiraator „ei kaitse teid gaaside ega aurude eest“ (OSHA), seega ei kaitse see ahjuaurude eest.
-- Hoolitsege oma respiraatori eest: OSHA märgib, et määrdunud või valesti kasutatud respiraator „võib muutuda ohuallikaks“. Hoidke seda puhtana, tolmustest töörõivastest eemal.
+- Surgical masks, cloth masks and "nuisance dust" masks without a NIOSH, EN 149 or AS/NZS 1716 marking. We would not rely on them for glaze dust.
+- A dust respirator "will not protect you against gases, vapors" (OSHA), so it does nothing for kiln fumes.
+- Look after yours: OSHA notes that a dirty or misused respirator "can become a hazard". Store it clean, away from dusty work clothes.
 
 ## Koristamine, rõivad ja käed {#cleaning}
 

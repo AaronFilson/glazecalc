@@ -65,49 +65,49 @@ Daugiausia apsaugos suteikia įpročiai, o ne įranga. HSE patarimai keramikos �
 
 Šią eilę siūlome mes, remdamiesi HSE principu pirmiausia vengti miltelių. Kaip sverti ir maišyti žingsnis po žingsnio, žr. vadovą [Kaip pasigaminti glazūrą](/guides/making-a-glaze).
 
-## Respiratoriai {#respirators}
+## Respirators {#respirators lang=en}
 
-**Respiratorius** – tai kaukė, sertifikuota filtruoti smulkias daleles iš įkvepiamo oro. Jis veikia tik tada, kai sandariai priglunda prie veido, ir papildo gerus įpročius, o ne juos pakeičia.
+A **respirator** is a mask certified to filter fine particles from the air you breathe. It works only when it seals to your face, and it backs up good habits rather than replacing them.
 
-### Klasės pagal regioną
+### Classes by region
 
-Table: Dalelių respiratorių klasės pagal regioną (apytiksliai atitikmenys glazūrų dulkėms)
-Label: Respiratorių klasės
+Table: Particle respirator classes by region (rough equivalents for glaze dust)
+Label: Respirator classes
 
-| Regionas                        | Kasdienė klasė | Aukštesnė klasė | Ko ieškoti                                                                             |
-| ------------------------------- | -------------- | --------------- | -------------------------------------------------------------------------------------- |
-| JAV                             | N95            | P100            | NIOSH patvirtinimo žymos ant kaukės ar jos pakuotės                                    |
-| JK ir ES                        | FFP2           | FFP3            | EN 149 ant vienkartinių kaukių; EN 140 ant daugkartinių puskaukių su P2 ar P3 filtrais |
-| Australija ir Naujoji Zelandija | P2             | P3              | AS/NZS 1716                                                                            |
+| Region                    | Everyday class | Higher class | Look for                                                                         |
+| ------------------------- | -------------- | ------------ | -------------------------------------------------------------------------------- |
+| United States             | N95            | P100         | NIOSH approval on the mask or its packaging                                      |
+| UK and EU                 | FFP2           | FFP3         | EN 149 on disposable masks; EN 140 on reusable half masks, with P2 or P3 filters |
+| Australia and New Zealand | P2             | P3           | AS/NZS 1716                                                                      |
 
-Aukštesnės klasės respiratorius sulaiko didesnę smulkių dalelių dalį. Šaltiniai nesutaria, kiek sulaiko Australijos P3 (bent 99 % ar bent 99,95 %), todėl pirkite jūsų regione parduodamą sertifikuotos klasės respiratorių. Dirbtuvėse dažnai renkamasi daugkartinę **puskaukę** (dengiančią nosį ir burną, su keičiamais filtrais) su P100 filtrais (už JAV ribų – P3).
+The higher class filters a larger share of fine particles. Sources disagree on what an Australian P3 filters (at least 99%, or at least 99.95%), so buy the certified class sold in your region. A reusable **half mask** (covering the nose and mouth, with replaceable filters) fitted with P100 filters (P3 outside the US) is a common studio choice.
 
-### Prigludimas ir sandarumas
+### Fit and seal
 
-Nesandari kaukė praleidžia dulkes pro kraštus, kad ir kokia būtų jos klasė. HSE įspėja, kad dėl barzdos šerelių ir barzdų „neįmanoma pasiekti gero sandarumo“.
+A mask that leaks lets dust in around its edges, whatever its class. HSE warns that stubble and beards "make it impossible to get a good seal".
 
-- **Nusiskuskite neilgai prieš darbą.** Rekomendacijos skiriasi, kada turi būti nusiskusta, kad veidas būtų laikomas „švariai nuskustu“: per pastarąsias 8 valandas (vienas Jungtinės Karalystės gamintojas, remdamasis HSE) arba, pageidautina, per pastarąsias 12 (Australijos ir Naujosios Zelandijos sandarumo patikros standartas). Nusiskutę neilgai prieš darbą, atitiksite abi rekomendacijas.
-- **Jei nešiojate barzdą,** laisvai dėvimam **respiratoriui su priverstiniu oro tiekimu** (PAPR: gobtuvui ar šalmui su ventiliatoriumi, kuris tiekia išfiltruotą orą) sandarumo prie veido nereikia.
-- **Pasirinkite tinkamą dydį.** Prastas prigludimas – viena pagrindinių nesandarumo priežasčių. Darbovietėse atliekama **sandarumo patikra**: tikrinama, ar konkreti kaukė sandariai priglunda prie konkretaus veido. Namuose siūlome kiekvieną kartą užsidėjus kaukę patikrinti sandarumą taip, kaip nurodo gamintojo instrukcija.
+- **Shave shortly before you work.** Guidance differs on how recent "clean-shaven" must be. A UK maker, citing HSE, says shaved within 8 hours of starting work. The Australian and New Zealand fit-test standard asks for a shave before a fit test, "preferably within 12 hours". Shaving shortly before you work meets both.
+- **If you keep a beard,** a loose-fitting **powered respirator** (PAPR: a hood or helmet with a fan that supplies filtered air) needs no face seal.
+- **Get the size right.** Poor fit is a major cause of leaks. Workplaces use a **fit test**, a check that a particular mask seals on a particular face. At home, we suggest following the maker's instructions for checking the seal each time you put it on.
 
 > [!NOTE]
-> Mūsų nuomone, tai, kaip kaukė priglunda, svarbiau už jos klasę: gerai priglundantis N95, FFP2 ar P2 respiratorius paprastai apsaugo geriau nei laisvas P100.
+> In our view, fit matters more than class: a well-fitted N95, FFP2 or P2 will usually do better than a loose P100.
 
-### Kada jį dėvėti
+### When to wear one
 
-HSE teigia, kad respiratoriaus „paprastai nereikia“, jei sveriama ir maišoma uždaroje vietoje su ištraukiamąja ventiliacija, tačiau jo „gali prireikti atliekant techninę priežiūrą ir valymą“. Daugumoje namų dirbtuvių tokios uždaros vietos nėra, todėl siūlome dėvėti respiratorių (bent N95, FFP2 ar P2; P100, FFP3 ar P3 – dar geriau) kaskart, kai:
+HSE says a respirator is "normally not needed" where weighing and mixing happen in a ventilated enclosure, but "may be needed for maintenance and cleaning". Most home studios have no enclosure, so we suggest wearing one (N95, FFP2 or P2 at least; P100, FFP3 or P3 is better) whenever you:
 
-- atidarote maišus ar išpilate miltelius;
-- sveriate miltelius ir įmaišote juos į vandenį;
-- grandote, švitruojate ar šlifuojate išdžiūvusią glazūrą{{en: glaze}} arba biskvitą{{en: bisque}};
-- atliekate bet kokį sausą valymą ar ištuštinate dulkių siurblį;
-- purškiate glazūrą (purškimo kameroje: žr. toliau).
+- open bags or tip out powder;
+- weigh powders and stir them into water;
+- scrape, sand or grind dried glaze or bisque;
+- do any dry cleanup, or empty a vacuum;
+- spray glaze (in a booth: see below).
 
-### Kas nėra respiratorius
+### What is not a respirator
 
-- Medicininės kaukės, medžiaginės kaukės ir paprastos „inertinių dulkių“ kaukės be NIOSH, EN 149 ar AS/NZS 1716 žymėjimo. Nuo glazūrų dulkių jomis nepasikliautume.
-- Respiratorius nuo dulkių „neapsaugos jūsų nuo dujų, garų“ (OSHA), todėl nuo krosnies dūmų ir garų jis visiškai neapsaugo.
-- Prižiūrėkite savo respiratorių: OSHA pažymi, kad nešvarus ar netinkamai naudojamas respiratorius „gali tapti pavojaus šaltiniu“. Laikykite jį švarų, atokiau nuo dulkėtų darbo drabužių.
+- Surgical masks, cloth masks and "nuisance dust" masks without a NIOSH, EN 149 or AS/NZS 1716 marking. We would not rely on them for glaze dust.
+- A dust respirator "will not protect you against gases, vapors" (OSHA), so it does nothing for kiln fumes.
+- Look after yours: OSHA notes that a dirty or misused respirator "can become a hazard". Store it clean, away from dusty work clothes.
 
 ## Valymas, drabužiai ir rankos {#cleaning}
 

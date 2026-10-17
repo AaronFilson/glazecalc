@@ -595,22 +595,22 @@ Se o kiln sitter disparar antes de os cones da placa dobrarem, use um cone mais 
 
 Um **pirómetro** é um medidor de temperatura que lê um **termopar**, uma sonda de calor que atravessa a parede do forno. Mostra a rapidez com que o forno está a subir, para que possa escolher a coluna certa da tabela de cones. Mas lê junto à parede, não nas peças, e a leitura desvia-se com o tempo. A L&L nota que um termopar tipo K pode ficar errado em mais de {{25 °F; 14 °C}} depois de repetidas cozeduras ao cone 6, «uma diferença maior do que um cone inteiro», enquanto um cone autossuportado varia no máximo {{4 °F; 2 °C}}. A Orton diz que os pirómetros precisam de ser recalibrados de vez em quando, e que os cones são a forma de os verificar.
 
-## Ventilação, espreitar e segurança {#venting}
+## Venting, peeking and safety {#venting lang=en}
 
-### Ventilação
+### Venting
 
-No início de uma cozedura, o barro e o vidrado{{en: glaze}} libertam vapor de água e fumos, incluindo monóxido de carbono, e os vidrados podem libertar fumos tóxicos também mais tarde na cozedura. A L&L considera a sua evacuação «essencial». Sem sistema de exaustão, isso quer dizer a tampa entreaberta e os óculos abertos nas primeiras fases, como nos procedimentos acima; abrandar o aquecimento durante esse tempo também ajuda a queimar o carbono. Com um **exaustor por baixo do forno** (downdraft: um exaustor com motor, montado no próprio forno), a Orton diz que a tampa e os óculos ficam fechados durante toda a cozedura, exceto para verificar os cones. Um óculo de cima aberto também protege o tubo do kiln sitter e as partes metálicas do forno.
+Early in a firing, clay and glaze give off water vapor and fumes, including carbon monoxide, and glazes can give off toxic fumes later in the firing too. L&L calls venting them "essential". With no vent system, that means the lid propped and the peepholes open in the early stages, as in the procedures above; slowing the heating during this time also helps the carbon burn out. In a kiln without a vent, Dawson, who made the sitter, also says to leave the top peephole open for the whole firing: the venting "will reduce deterioration of the kiln's metal parts and increase the life of the tube assembly". A **downdraft vent** (a powered vent fitted to the kiln) changes this. It does the venting, so Orton says the lid and peepholes stay closed for the whole firing except to check the cones, and L&L says to leave the vent on and plug the peepholes.
 
-Para a ventilação da sala e para os detetores de monóxido de carbono, veja [Mistura segura e ventilação](/guides/safe-mixing) e [Não envenene a sua família](/guides/home-safety).
+For venting the room, and for carbon monoxide alarms, see [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety).
 
-### Enquanto o forno coze
+### While the kiln is firing
 
-- Espreite por um óculo apenas com óculos de soldadura de escala 3 com proteção IV; os óculos de sol não bastam. A Skutt aconselha a encaixar os tampões rodando-os, para que não caiam.
-- Não deixe o forno sem vigilância para além do tempo de cozedura previsto; um kiln sitter não é um dispositivo à prova de falhas.
-- Nunca faça cozeduras sobre ou perto de algo que arda, como um soalho de madeira ou uma alcatifa.
-- Respeite as distâncias de segurança do seu manual. Os valores publicados vão de 12 polegadas (30 cm) a 3 pés (91 cm); se o manual não disser nada, 18 polegadas (46 cm) das paredes e 3 pés (91 cm) de tudo o que arda é a escolha mais segura.
-- Mantenha livre o espaço à volta do peso do kiln sitter, para que possa cair.
-- Quando a cozedura terminar, desligue os reguladores e desligue também o disjuntor.
+- Look through a peephole only with IR-rated shade 3 welding glasses; sunglasses are not enough. Skutt advises twisting the plugs into place so they do not fall out.
+- Do not leave the kiln unattended beyond its expected firing time; a sitter is not a fail-safe.
+- Never fire on or near anything that burns, such as a wood floor or carpet.
+- Keep the clearances in your manual. Published figures range from 12 in (30 cm) to 3 ft (91 cm); where the manual is silent, 18 in (46 cm) from walls and 3 ft (91 cm) from anything that burns is the safest choice.
+- Keep the space around the sitter's weight clear so it can drop.
+- When the firing ends, turn the switches off and turn off the breaker as well.
 
 ## Arrefecimento e desenforna {#cooling}
 

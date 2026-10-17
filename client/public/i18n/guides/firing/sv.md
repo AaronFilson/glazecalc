@@ -595,22 +595,22 @@ Om Kiln-Sitter-brytaren löser ut innan käglorna på ugnsplattan har böjt sig 
 
 En **pyrometer** är en temperaturmätare som läser av ett **termoelement**, en värmegivare genom ugnsväggen. Den visar hur snabbt ugnen stiger, så att rätt kolumn i kägeltabellen kan väljas. Men den mäter nära väggen, inte vid godset, och visningen driver med tiden. L&L påpekar att ett termoelement av typ K kan visa fel med mer än {{25 °F; 14 °C}} efter upprepade bränningar till kägla 6, ”en skillnad större än en hel kägla”, medan en självstående kägla varierar med högst {{4 °F; 2 °C}}. Orton säger att pyrometrar behöver kalibreras om då och då, och det är med käglor som de kontrolleras.
 
-## Ventilation, titthål och säkerhet {#venting}
+## Venting, peeking and safety {#venting lang=en}
 
-### Ventilation
+### Venting
 
-Tidigt i en bränning avger lera och glasyr{{en: glaze}} vattenånga och rökgaser, bland annat kolmonoxid, och glasyrer kan avge giftiga ångor även senare i bränningen. L&L kallar det ”nödvändigt” att ventilera bort dem. Utan utsug betyder det att locket står på glänt och titthålen är öppna i de tidiga faserna, som i tillvägagångssätten ovan; att sakta ned uppvärmningen under den tiden hjälper också kolet att brinna ut. Med ett **utsug genom ugnsbotten** (ett eldrivet utsug som är monterat på ugnen) säger Orton att locket och titthålen ska vara stängda under hela bränningen, utom när käglorna{{en: cones}} kontrolleras. Ett öppet översta titthål skyddar också Kiln-Sitter-röret och ugnens metalldelar.
+Early in a firing, clay and glaze give off water vapor and fumes, including carbon monoxide, and glazes can give off toxic fumes later in the firing too. L&L calls venting them "essential". With no vent system, that means the lid propped and the peepholes open in the early stages, as in the procedures above; slowing the heating during this time also helps the carbon burn out. In a kiln without a vent, Dawson, who made the sitter, also says to leave the top peephole open for the whole firing: the venting "will reduce deterioration of the kiln's metal parts and increase the life of the tube assembly". A **downdraft vent** (a powered vent fitted to the kiln) changes this. It does the venting, so Orton says the lid and peepholes stay closed for the whole firing except to check the cones, and L&L says to leave the vent on and plug the peepholes.
 
-Om ventilation av rummet och om kolmonoxidlarm, se [Säker blandning och ventilation](/guides/safe-mixing) och [Förgifta inte familjen](/guides/home-safety).
+For venting the room, and for carbon monoxide alarms, see [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety).
 
-### Medan ugnen bränner
+### While the kiln is firing
 
-- Titta genom ett titthål bara med svetsglasögon med IR-skydd i skyddsgrad 3; solglasögon räcker inte. Skutt råder att vrida fast propparna så att de inte faller ut.
-- Lämna inte ugnen utan tillsyn längre än den väntade bränntiden; en Kiln-Sitter är ingen felsäker avstängning.
-- Bränn aldrig på eller nära något som kan brinna, till exempel ett trägolv eller en matta.
-- Håll de säkerhetsavstånd som bruksanvisningen anger. Publicerade värden går från 12 tum (30 cm) till 3 fot (91 cm); där bruksanvisningen inte säger något är 18 tum (46 cm) från väggar och 3 fot (91 cm) från allt som kan brinna det säkraste valet.
-- Håll utrymmet runt Kiln-Sitter-brytarens vikt fritt så att den kan falla.
-- När bränningen är slut, vrid av vreden och slå också av säkringen.
+- Look through a peephole only with IR-rated shade 3 welding glasses; sunglasses are not enough. Skutt advises twisting the plugs into place so they do not fall out.
+- Do not leave the kiln unattended beyond its expected firing time; a sitter is not a fail-safe.
+- Never fire on or near anything that burns, such as a wood floor or carpet.
+- Keep the clearances in your manual. Published figures range from 12 in (30 cm) to 3 ft (91 cm); where the manual is silent, 18 in (46 cm) from walls and 3 ft (91 cm) from anything that burns is the safest choice.
+- Keep the space around the sitter's weight clear so it can drop.
+- When the firing ends, turn the switches off and turn off the breaker as well.
 
 ## Kylning och urplockning {#cooling}
 

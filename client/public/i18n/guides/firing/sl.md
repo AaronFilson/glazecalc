@@ -595,22 +595,22 @@ Label: Izhodišče za peč brez krmilnika
 
 **Pirometer** je merilnik temperature, povezan s **termoelementom**, temperaturnim tipalom, ki skozi steno sega v peč. Pokaže, kako hitro temperatura v peči narašča, tako da lahko izberete pravi stolpec v preglednici stožcev. Vendar meri blizu stene, ne pri izdelkih, in sčasoma začne odstopati. L&L ugotavlja, da lahko termoelement tipa K po ponavljajočih se žganjih do stožca 6 odstopa za več kot {{25 °F; 14 °C}}, kar je »razlika, večja od celega stožca«, samostoječ stožec pa odstopa za največ {{4 °F; 2 °C}}. Orton pravi, da je treba pirometre občasno ponovno umeriti, preverite pa jih s stožci.
 
-## Odzračevanje, kukanje v peč in varnost {#venting}
+## Venting, peeking and safety {#venting lang=en}
 
-### Odzračevanje
+### Venting
 
-Na začetku žganja glina in glazura{{en: glaze}} oddajata vodno paro ter pline in hlape, med njimi ogljikov monoksid, glazure pa lahko strupene hlape oddajajo tudi pozneje med žganjem. L&L njihovo odvajanje imenuje »nujno«. Brez sistema za odzračevanje to pomeni priprt pokrov in odprte opazovalne odprtine v zgodnjih fazah, kot v zgornjih postopkih; počasnejše segrevanje v tem času pomaga tudi pri izgorevanju ogljika. Z **odsesavanjem pod pečjo** (napravo za odvod zraka z ventilatorjem, nameščeno na peč) po Ortonu pokrov in opazovalne odprtine ostanejo zaprti ves čas žganja, razen ko preverjate stožce. Odprta zgornja opazovalna odprtina ščiti tudi cevko Kiln-Sitterja in kovinske dele peči.
+Early in a firing, clay and glaze give off water vapor and fumes, including carbon monoxide, and glazes can give off toxic fumes later in the firing too. L&L calls venting them "essential". With no vent system, that means the lid propped and the peepholes open in the early stages, as in the procedures above; slowing the heating during this time also helps the carbon burn out. In a kiln without a vent, Dawson, who made the sitter, also says to leave the top peephole open for the whole firing: the venting "will reduce deterioration of the kiln's metal parts and increase the life of the tube assembly". A **downdraft vent** (a powered vent fitted to the kiln) changes this. It does the venting, so Orton says the lid and peepholes stay closed for the whole firing except to check the cones, and L&L says to leave the vent on and plug the peepholes.
 
-O prezračevanju prostora in o detektorjih ogljikovega monoksida si preberite vodnika [Varno mešanje in prezračevanje](/guides/safe-mixing) in [Ne zastrupite svoje družine](/guides/home-safety).
+For venting the room, and for carbon monoxide alarms, see [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety).
 
-### Ko peč žge
+### While the kiln is firing
 
-- V opazovalno odprtino glejte samo z varilskimi očali zaščitne stopnje 3 z zaščito pred IR; sončna očala niso dovolj. Skutt svetuje, da čepe v odprtine vstavite z obračanjem, da ne izpadejo.
-- Peči ne puščajte brez nadzora dlje od predvidenega časa žganja; Kiln-Sitter ni zanesljiva varnostna naprava.
-- Nikoli ne žgite na čem, kar gori, ali blizu tega, na primer na lesenem podu ali preprogi.
-- Upoštevajte varne razdalje iz navodil za uporabo. Objavljene vrednosti segajo od 12 palcev (30 cm) do 3 čevljev (91 cm); kjer navodila o tem molčijo, je najvarnejša izbira 18 palcev (46 cm) od sten in 3 čevlji (91 cm) od vsega, kar gori.
-- Prostor okrog uteži Kiln-Sitterja naj bo prost, da utež lahko pade.
-- Ko se žganje konča, izklopite stikala in še varovalko.
+- Look through a peephole only with IR-rated shade 3 welding glasses; sunglasses are not enough. Skutt advises twisting the plugs into place so they do not fall out.
+- Do not leave the kiln unattended beyond its expected firing time; a sitter is not a fail-safe.
+- Never fire on or near anything that burns, such as a wood floor or carpet.
+- Keep the clearances in your manual. Published figures range from 12 in (30 cm) to 3 ft (91 cm); where the manual is silent, 18 in (46 cm) from walls and 3 ft (91 cm) from anything that burns is the safest choice.
+- Keep the space around the sitter's weight clear so it can drop.
+- When the firing ends, turn the switches off and turn off the breaker as well.
 
 ## Hlajenje in praznjenje peči {#cooling}
 

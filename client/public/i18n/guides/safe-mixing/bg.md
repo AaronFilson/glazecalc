@@ -65,49 +65,49 @@ Label: Гранични стойности за силициевия диокс�
 
 Този ред е наше предложение, основано на принципа на HSE първо да се избягват праховете. За претеглянето и смесването стъпка по стъпка вижте [Как се приготвя глазура](/guides/making-a-glaze).
 
-## Респиратори {#respirators}
+## Respirators {#respirators lang=en}
 
-**Респираторът** е маска, сертифицирана да филтрира фините частици от въздуха, който дишате. Той действа само когато прилепва плътно към лицето Ви, и допълва добрите навици, а не ги замества.
+A **respirator** is a mask certified to filter fine particles from the air you breathe. It works only when it seals to your face, and it backs up good habits rather than replacing them.
 
-### Класове по региони
+### Classes by region
 
-Table: Класове на противопрахови респиратори по региони (приблизителни съответствия за праха от глазури)
-Label: Класове респиратори
+Table: Particle respirator classes by region (rough equivalents for glaze dust)
+Label: Respirator classes
 
-| Регион                    | Клас за ежедневна употреба | По-висок клас | Какво да търсите                                                                                            |
-| ------------------------- | -------------------------- | ------------- | ----------------------------------------------------------------------------------------------------------- |
-| САЩ                       | N95                        | P100          | Одобрение от NIOSH върху маската или опаковката ѝ                                                           |
-| Обединеното кралство и ЕС | FFP2                       | FFP3          | EN 149 на маските за еднократна употреба; EN 140 на полумаските за многократна употреба, с филтри P2 или P3 |
-| Австралия и Нова Зеландия | P2                         | P3            | AS/NZS 1716                                                                                                 |
+| Region                    | Everyday class | Higher class | Look for                                                                         |
+| ------------------------- | -------------- | ------------ | -------------------------------------------------------------------------------- |
+| United States             | N95            | P100         | NIOSH approval on the mask or its packaging                                      |
+| UK and EU                 | FFP2           | FFP3         | EN 149 on disposable masks; EN 140 on reusable half masks, with P2 or P3 filters |
+| Australia and New Zealand | P2             | P3           | AS/NZS 1716                                                                      |
 
-По-високият клас филтрира по-голям дял от фините частици. Източниците се разминават за това какво филтрира австралийският клас P3 (поне 99% или поне 99,95%), затова купувайте сертифицирания клас, който се продава във Вашия регион. Често срещан избор в ателиетата е **полумаска** за многократна употреба (покрива носа и устата, със сменяеми филтри) с филтри P100 (P3 извън САЩ).
+The higher class filters a larger share of fine particles. Sources disagree on what an Australian P3 filters (at least 99%, or at least 99.95%), so buy the certified class sold in your region. A reusable **half mask** (covering the nose and mouth, with replaceable filters) fitted with P100 filters (P3 outside the US) is a common studio choice.
 
-### Прилягане и уплътнение
+### Fit and seal
 
-Маска, която не прилепва плътно, пропуска прах покрай краищата си, независимо от класа ѝ. HSE предупреждава, че наболата брада и брадата „правят невъзможно доброто уплътнение“.
+A mask that leaks lets dust in around its edges, whatever its class. HSE warns that stubble and beards "make it impossible to get a good seal".
 
-- **Бръснете се малко преди работа.** Указанията се различават по това колко скорошно трябва да е бръсненето, за да се смята лицето за „гладко избръснато“: до 8 часа (британски производител, който се позовава на HSE) или за предпочитане до 12 (австралийският и новозеландският стандарт за тест за прилягане). Бръсненето малко преди работа отговаря и на двете изисквания.
-- **Ако носите брада,** свободно прилягащ **респиратор с вентилатор** (PAPR: качулка или шлем с вентилатор, който подава филтриран въздух) не се нуждае от уплътнение към лицето.
-- **Изберете правилния размер.** Лошото прилягане е основна причина за пропускане. На работните места се прави **тест за прилягане** – проверка дали определена маска прилепва плътно към определено лице. У дома предлагаме да следвате инструкциите на производителя за проверка на уплътнението всеки път, когато слагате маската.
+- **Shave shortly before you work.** Guidance differs on how recent "clean-shaven" must be. A UK maker, citing HSE, says shaved within 8 hours of starting work. The Australian and New Zealand fit-test standard asks for a shave before a fit test, "preferably within 12 hours". Shaving shortly before you work meets both.
+- **If you keep a beard,** a loose-fitting **powered respirator** (PAPR: a hood or helmet with a fan that supplies filtered air) needs no face seal.
+- **Get the size right.** Poor fit is a major cause of leaks. Workplaces use a **fit test**, a check that a particular mask seals on a particular face. At home, we suggest following the maker's instructions for checking the seal each time you put it on.
 
 > [!NOTE]
-> По наше мнение прилягането е по-важно от класа: добре прилепнала маска N95, FFP2 или P2 обикновено ще се справи по-добре от хлабава P100.
+> In our view, fit matters more than class: a well-fitted N95, FFP2 or P2 will usually do better than a loose P100.
 
-### Кога да го носите
+### When to wear one
 
-Според HSE респиратор „обикновено не е необходим“, когато претеглянето и смесването стават в кабина със смукателна вентилация, но „може да е необходим при поддръжка и почистване“. Повечето домашни ателиета нямат такава кабина, затова предлагаме да носите респиратор (поне N95, FFP2 или P2; P100, FFP3 или P3 е по-добре) винаги когато:
+HSE says a respirator is "normally not needed" where weighing and mixing happen in a ventilated enclosure, but "may be needed for maintenance and cleaning". Most home studios have no enclosure, so we suggest wearing one (N95, FFP2 or P2 at least; P100, FFP3 or P3 is better) whenever you:
 
-- отваряте торби или изсипвате прахове;
-- претегляте прахове и ги разбърквате във вода;
-- стържете, шкурите или шлифовате изсъхнала глазура{{en: glaze}} или бисквит{{en: bisque}};
-- почиствате на сухо или изпразвате прахосмукачка;
-- пръскате глазура (в кабина: вижте по-долу).
+- open bags or tip out powder;
+- weigh powders and stir them into water;
+- scrape, sand or grind dried glaze or bisque;
+- do any dry cleanup, or empty a vacuum;
+- spray glaze (in a booth: see below).
 
-### Какво не е респиратор
+### What is not a respirator
 
-- Хирургическите маски, платнените маски и обикновените маски против прах („nuisance dust“) без маркировка NIOSH, EN 149 или AS/NZS 1716. Ние не бихме разчитали на тях срещу праха от глазури.
-- Противопраховият респиратор „няма да Ви предпази от газове, изпарения“ (OSHA), така че не помага срещу газовете и парите от пещта.
-- Грижете се за своя: OSHA отбелязва, че замърсен или неправилно използван респиратор „може да се превърне в опасност“. Съхранявайте го чист, далеч от прашните работни дрехи.
+- Surgical masks, cloth masks and "nuisance dust" masks without a NIOSH, EN 149 or AS/NZS 1716 marking. We would not rely on them for glaze dust.
+- A dust respirator "will not protect you against gases, vapors" (OSHA), so it does nothing for kiln fumes.
+- Look after yours: OSHA notes that a dirty or misused respirator "can become a hazard". Store it clean, away from dusty work clothes.
 
 ## Почистване, дрехи и ръце {#cleaning}
 
