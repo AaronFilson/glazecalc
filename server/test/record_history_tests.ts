@@ -532,7 +532,7 @@ describe('account data: the new collections', () => {
       .set('Authorization', bearer(trial));
     const { user } = await makeUser();
     // One record, in the Trash; its earlier version moves but is not counted.
-    expect(await mergeTrial(trialId, user._id)).to.equal(1);
+    expect((await mergeTrial(trialId, user._id)).records).to.equal(1);
     expect(await RecordVersion.countDocuments({ ownedBy: String(user._id) })).to.equal(1);
     expect(await Trash.countDocuments({ ownedBy: String(user._id) })).to.equal(1);
     expect(await RecordVersion.countDocuments({ ownedBy: trialId })).to.equal(0);

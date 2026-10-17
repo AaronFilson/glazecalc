@@ -18,7 +18,8 @@ import PendingSignIn from '../models/pending_sign_in.ts';
 import Recipe from '../models/recipe.ts';
 import RecordVersion from '../models/record_version.ts';
 import Trash from '../models/trash.ts';
-import User from '../models/user.ts';
+import User, { type UserFields } from '../models/user.ts';
+import regions from '../../lib/regions/index.js';
 import type { RecordModel } from './guest_limits.ts';
 
 type Id = string | Types.ObjectId;
@@ -52,19 +53,62 @@ const OWNED_MODELS: RecordModel[] = [...Object.values(OWNED_KINDS), ...OWNED_HIS
 const BATCH = 500;
 
 /**
- * Moves a trial's records into an account and removes the trial; resolves with
- * how many records moved. Their earlier versions and activity lines move too,
- * but are not counted: they are not records the person made.
+ * The currency an account's prices are in, as far as the server can tell: the
+ * one chosen, or the region's; '' when neither is set, and the browser's
+ * format decides (lib/regions currencyFor).
  */
-export const mergeTrial = async (trialId: Id, accountId: Id): Promise<number> => {
+const currencyOf = (user: Pick<UserFields, 'preferences'> | null): string =>
+  user?.preferences?.currency || regions.regionFor(user?.preferences?.region)?.currency || '';
+
+/**
+ * A trial's prices join the account's, for materials the account has no price
+ * for, when both are in the same currency: prices are never converted, and
+ * mixed currencies would make every cost wrong. An account with no prices and
+ * no chosen currency or region takes the trial's currency with them, so the numbers keep
+ * their meaning. Otherwise the trial's prices go with it; resolves with how
+ * many were not copied for being in another currency.
+ */
+const mergePrices = async (trialId: Id, accountId: Id): Promise<number> => {
+  const fields = { prices: 1, 'preferences.currency': 1, 'preferences.region': 1 };
+  const [trial, account] = await Promise.all([
+    User.findById(trialId, fields).lean(),
+    User.findById(accountId, fields).lean()
+  ]);
+  if (!trial?.prices?.length || !account) return 0;
+  const trialCurrency = currencyOf(trial);
+  const adopts = !account.prices?.length && currencyOf(account) === '' && trialCurrency !== '';
+  if (!adopts && trialCurrency !== currencyOf(account)) return trial.prices.length;
+  const priced = new Set((account.prices ?? []).map((price) => price.key));
+  const added = trial.prices.filter((price) => !priced.has(price.key));
+  if (!added.length && !adopts) return 0;
+  await User.updateOne(
+    { _id: accountId },
+    {
+      ...(added.length && { $push: { prices: { $each: added.map(({ key, perKg }) => ({ key, perKg })) } } }),
+      ...(adopts && { $set: { 'preferences.currency': trialCurrency } })
+    }
+  );
+  return 0;
+};
+
+/**
+ * Moves a trial's records into an account and removes the trial; resolves with
+ * how many records moved and how many of the trial's prices were not copied
+ * (another currency). Their earlier versions and activity lines move too,
+ * but are not counted: they are not records the person made. Its prices join
+ * the account's (mergePrices); the prices go with the account, in the User
+ * document, when it is deleted.
+ */
+export const mergeTrial = async (trialId: Id, accountId: Id): Promise<{ records: number; pricesSkipped: number }> => {
   const move = (Model: RecordModel) =>
     Model.updateMany({ ownedBy: String(trialId) }, { $set: { ownedBy: String(accountId) } });
-  const [records] = await Promise.all([
+  const [records, , pricesSkipped] = await Promise.all([
     Promise.all(Object.values(OWNED_KINDS).map(move)),
-    Promise.all(OWNED_HISTORY.map(move))
+    Promise.all(OWNED_HISTORY.map(move)),
+    mergePrices(trialId, accountId)
   ]);
   await deleteAccount(trialId);
-  return records.reduce((count, result) => count + result.modifiedCount, 0);
+  return { records: records.reduce((count, result) => count + result.modifiedCount, 0), pricesSkipped };
 };
 
 /** Removes the records of these users; resolves with how many. */

@@ -28,6 +28,8 @@ Node and the Angular build both load, typed by hand-written declarations, one pe
 | `analysis.js`    | Mole percent, and a unity formula's point on Stull's chart                                 |
 | `slurry.js`      | Brongniart's formula: dry glaze and water in a slurry, water to reach an SG                |
 | `checks.js`      | `pastLimits` and `sizeNotes`: cautions for a recipe                                        |
+| `cost.js`        | `batchCost`, `recipeCost`: a batch's cost from the account's prices, missing ones named    |
+| `hazards.js`     | `hazardsOf`: the recipe's hazard statements as the records give them, each once            |
 | `library.js`     | `hasLead`, `inRegion`, `suggestable`: what the library says, without the chemistry         |
 | `materials.js`   | Oxide percents, how alike two materials are, a frit's role, a recipe's moles and expansion |
 | `swaps.js`       | `modernMaterials`: discontinued materials swapped for their substitutes                    |

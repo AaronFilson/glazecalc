@@ -188,6 +188,48 @@ describe('SettingsSection', () => {
     expect(text(fixture, '.settings-status')).toBe('Saved: glaze density as specific gravity.');
   });
 
+  it('asks the one currency prices are in, following the region until chosen', async () => {
+    const fixture = TestBed.createComponent(SettingsSection);
+    await fixture.whenStable();
+    answer('/preferences', { region: 'SE' });
+    await settle(fixture);
+    const select = fixture.nativeElement.querySelector('#currency') as HTMLSelectElement;
+    // Sweden prices in kronor; each currency is named in the page's language, with its code.
+    expect(select.value).toBe('SEK');
+    expect(select.selectedOptions[0]!.textContent?.trim()).toBe('Swedish Krona (SEK)');
+    expect([...select.options].map((option) => option.value)).toContain('EUR');
+    select.value = 'EUR';
+    select.dispatchEvent(new Event('change'));
+    await fixture.whenStable();
+    const req = httpMock().expectOne(API + '/preferences');
+    expect(req.request.body).toEqual({ currency: 'EUR' });
+    req.flush({ currency: 'EUR' });
+    await settle(fixture);
+    answer('/prices', { prices: [] });
+    await settle(fixture);
+    expect(text(fixture, '.settings-status')).toBe('Saved: prices in Euro.');
+  });
+
+  it('says that stored prices are not converted when the currency changes and prices exist', async () => {
+    const fixture = TestBed.createComponent(SettingsSection);
+    await fixture.whenStable();
+    answer('/preferences', { region: 'SE', currency: 'SEK' });
+    await settle(fixture);
+    const select = fixture.nativeElement.querySelector('#currency') as HTMLSelectElement;
+    select.value = 'EUR';
+    select.dispatchEvent(new Event('change'));
+    await fixture.whenStable();
+    httpMock()
+      .expectOne(API + '/preferences')
+      .flush({ currency: 'EUR' });
+    await settle(fixture);
+    answer('/prices', { prices: [{ key: 'name:Silica', perKg: 2 }] });
+    await settle(fixture);
+    expect(text(fixture, '.settings-status')).toBe(
+      'Saved: prices in Euro. Your stored prices were not converted: they are still the numbers you gave.'
+    );
+  });
+
   it('offers English terms and the translation notice only on a translated page, and a language only when there is a choice', async () => {
     TestBed.overrideProvider(OFFERED_LANGUAGES, { useValue: ['en'] });
     const english = await create();

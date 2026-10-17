@@ -1,6 +1,6 @@
 // "Download my data": everything the signed-in account (or trial) holds, as files.
 //
-//   GET /api/export                JSON: { format, version, exportedAt, account, preferences, shelf, records }
+//   GET /api/export                JSON: { format, version, exportedAt, account, preferences, shelf, prices, records }
 //   GET /api/export/recipes.csv    recipes, a row for each ingredient
 //   GET /api/export/materials.csv  the user's own materials, a row each
 //

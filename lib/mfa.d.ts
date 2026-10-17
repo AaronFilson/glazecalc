@@ -85,6 +85,8 @@ export interface SignedInResponse {
   msg: string;
   email: string;
   kept: number;
+  /** Prices a trial had in another currency than the account's, not copied; absent when none. */
+  pricesSkipped?: number;
 }
 
 /** POST /api/signin/passkey/options (passkey-first), POST /api/mfa/confirm/options, POST /api/mfa/passkeys/options. */

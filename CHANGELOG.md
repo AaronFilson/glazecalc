@@ -31,6 +31,23 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   for the mix ticket to read.
 - **Credits.** The Stull chart's regions are credited on the About page and in
   `THIRD-PARTY-NOTICES.md`, with Derek Au's MIT notice as the licence asks.
+- **Cost per batch.** The recipe page gives a price box for each material and additive (per kg, or
+  per lb with weights in pounds) and shows what a batch of the size entered costs, and the cost per
+  kg or lb of dry glaze. A material with no price is named, never guessed. Prices are kept with the
+  account, in one currency chosen in Settings (the region's until then; never converted), private
+  to it: they are in Download my data, go when the account is deleted, and join the account from a
+  trial in the same currency. Shared code in `lib/recipe/cost.js`.
+- **Hazards and a safety line** on the recipe page and on the print: each hazard statement the
+  recipe's materials and additives carry (the standard library's, from suppliers' safety data
+  sheets, as listed in the library), once, with the materials it is for; those with none named; and
+  links to the safety guides.
+- **A mix ticket** in the batch-list print: a batch number (typed, or a line to write it on), the
+  date, the recipe's target SG with a line for the reading when the recipe has one, and lines for
+  who weighed and mixed it and who checked it, with the hazards.
+- **Batch cost on the print**, optionally: a "Show the batch cost" tick on the print page, off each time, so a
+  mix ticket handed to someone shows no prices unless chosen. It gives the cost of the batch size
+  printed and the cost per kg or lb, names materials with no price, and fetches no prices unless
+  ticked.
 - **The Trash and Undo.** Removing a recipe, material, note or other record moves it to the Trash,
   where it waits 30 days; the removal notice has Undo, and the Trash page puts records back, deletes
   them for good or empties the Trash. Each saved change keeps the version before it (the last 20,

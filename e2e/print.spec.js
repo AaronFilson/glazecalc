@@ -26,7 +26,10 @@ test.beforeEach(async ({ page }) => {
   await page.goto('/recipe');
 });
 
-test('prints a recipe on one page, Letter or A4, in black on white even in dark mode', async ({ page }) => {
+// The whole recipe, with its chemistry and hazards, may flow onto a second page; a batch ticket never does.
+test('prints a batch ticket on one page, and the whole recipe on one or two, Letter or A4, in black on white even in dark mode', async ({
+  page
+}) => {
   await buildRecipe(page);
   await printButton(page).click();
   await expect(page).toHaveURL(/\/recipe\?print=draft$/);
@@ -39,6 +42,9 @@ test('prints a recipe on one page, Letter or A4, in black on white even in dark 
   );
   await expect(sheet(page).locator('tbody tr').first()).toHaveText(/Orthoclase.*40\s*40%\s*2000\sg\s*2000\sg/);
   await expect(sheet(page).locator('.print-chemistry')).toContainText('Flux balance');
+  // The hazards of what is in it, with the safety line, on paper too.
+  await expect(sheet(page).locator('.print-hazards')).toContainText('crystalline silica');
+  await expect(sheet(page).locator('.print-hazards .recipe-safety-line')).toBeVisible();
 
   // On paper: only the sheet, black on white, whatever the screen's theme.
   await page.emulateMedia({ media: 'print', colorScheme: 'dark' });
@@ -49,15 +55,34 @@ test('prints a recipe on one page, Letter or A4, in black on white even in dark 
     return [style.color, style.backgroundColor];
   });
   expect(colors).toEqual(['rgb(0, 0, 0)', 'rgb(255, 255, 255)']);
-  for (const format of ['Letter', 'A4']) expect(pageCount(await page.pdf({ format })), format).toBe(1);
+  for (const format of ['Letter', 'A4']) expect(pageCount(await page.pdf({ format })), format).toBeLessThanOrEqual(2);
 
   // The batch list too, with a box to tick for each thing to weigh. (The options show on screen only.)
   await page.emulateMedia({ media: 'screen', colorScheme: 'dark' });
   await page.getByLabel(/^Just a batch list/).check();
   await expect(sheet(page).locator('.tick-box')).toHaveCount(6);
   await expect(sheet(page).locator('.print-chemistry')).toHaveCount(0);
+  // A mix ticket: the batch number typed, the date, lines to sign, and the hazards.
+  await page.locator('#print-batch-number').fill('B-0417');
+  await expect(sheet(page).locator('.print-ticket').first()).toContainText('B-0417');
+  await expect(sheet(page).locator('.print-sign dt')).toHaveText(['Weighed and mixed by', 'Checked by']);
+  await expect(sheet(page).locator('.print-hazards li').first()).toBeVisible();
   await page.emulateMedia({ media: 'print' });
-  expect(pageCount(await page.pdf({ format: 'Letter' }))).toBe(1);
+  for (const format of ['Letter', 'A4']) expect(pageCount(await page.pdf({ format })), format).toBe(1);
+
+  // With the batch cost ticked (off until then) the ticket still fits one page; the whole recipe, one or two.
+  await page.emulateMedia({ media: 'screen' });
+  await expect(sheet(page).locator('.print-cost')).toHaveCount(0);
+  await page.getByLabel('Show the batch cost').check();
+  await expect(sheet(page).locator('.print-cost')).toContainText('No price for');
+  await page.emulateMedia({ media: 'print' });
+  for (const format of ['Letter', 'A4']) expect(pageCount(await page.pdf({ format })), format).toBe(1);
+  await page.emulateMedia({ media: 'screen' });
+  await page.getByLabel(/^The whole recipe/).check();
+  await expect(sheet(page).locator('.print-chemistry')).toHaveCount(1);
+  await expect(sheet(page).locator('.print-cost')).toContainText('No price for');
+  await page.emulateMedia({ media: 'print' });
+  for (const format of ['Letter', 'A4']) expect(pageCount(await page.pdf({ format })), format).toBeLessThanOrEqual(2);
 });
 
 test('goes back to the recipe just as it was, by its own button or the browser', async ({ page }) => {

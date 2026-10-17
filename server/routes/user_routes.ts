@@ -7,6 +7,13 @@
 //   PUT    /api/preferences       any of them (models/user.ts PREFERENCES lists what each may be)
 //   GET    /api/shelf             the materials the account (or trial) has on hand: { shelf: [key] }
 //   PUT    /api/shelf             { shelf: [key] } in place of the list
+//   GET    /api/prices            what the account (or trial) pays for materials: { prices: [{ key, perKg }] },
+//                                  per kilogram in its one currency (preferences.currency); private to it
+//   PUT    /api/prices            { prices: [{ key, perKg }] } in place of the list
+//   PATCH  /api/prices            { set?: [{ key, perKg }], remove?: [key] } merged into the list by key, so a
+//                                  list loaded for another session is never written over; { currency } too, kept as
+//                                  the account's currency when it has none yet, so prices keep their meaning;
+//                                  replies with { prices, currency }
 //   PUT    /api/usersettings/:id  { displayname }; the email changes by a link (routes/email_routes.ts)
 //   DELETE /api/deleteuser/:id    { password } removes the account and everything in it; with
 //                                  two-step sign-in on, a current factor too (lib/mfa.d.ts IdentityProof).
@@ -23,7 +30,9 @@ import * as password from '../lib/password.ts';
 import * as limits from '../lib/rate_limit.ts';
 import { confirmChange } from '../lib/second_step.ts';
 import * as session from '../lib/session.ts';
-import User, { mfaOn, PREFERENCES, type Preferences } from '../models/user.ts';
+import User, { mfaOn, PREFERENCES, type Preferences, type Price } from '../models/user.ts';
+import { isPrice } from '../../lib/recipe/cost.js';
+import regions from '../../lib/regions/index.js';
 import { say } from '../lib/messages.ts';
 
 const userRouter = express.Router();
@@ -105,6 +114,96 @@ userRouter.put('/shelf', jwtAuth, express.json(), async (req, res) => {
   }
   await User.updateOne({ _id: userOf(req)._id }, { $set: { shelf: keys } });
   return res.status(200).json({ shelf: keys });
+});
+
+// What the potter pays for materials, for cost per batch: a price per kilogram
+// by library key, as the shelf's. Like the shelf, a trial may keep them; like
+// everything in the account, they leave with it. Business data: no record
+// holds them, so nothing shared from a record can show them. A key given
+// twice keeps its last price.
+const PRICES_MOST = 1000;
+
+userRouter.get('/prices', jwtAuth, (req, res) => {
+  res.status(200).json({ prices: (userOf(req).prices ?? []).map(({ key, perKg }) => ({ key, perKg })) });
+});
+
+userRouter.put('/prices', jwtAuth, express.json(), async (req, res) => {
+  const sent = ((req.body ?? {}) as { prices?: unknown }).prices;
+  const valid =
+    Array.isArray(sent) &&
+    sent.every((entry: unknown) => {
+      const { key, perKg } = (entry ?? {}) as Partial<Price>;
+      return typeof key === 'string' && key && key.length <= KEY_LONGEST && isPrice(perKg);
+    });
+  const byKey = new Map<string, number>(valid ? (sent as Price[]).map(({ key, perKg }) => [key, perKg]) : []);
+  if (!valid || byKey.size > PRICES_MOST) {
+    return res.status(400).json(say('prices-invalid', { most: PRICES_MOST }));
+  }
+  const prices = [...byKey].map(([key, perKg]) => ({ key, perKg }));
+  await User.updateOne({ _id: userOf(req)._id }, { $set: { prices } });
+  return res.status(200).json({ prices });
+});
+
+// Changes to the list by key, in one step on the server: only what the person
+// changed, so a copy of the list that has gone stale (another device, a trial
+// merged at sign-in) is not written back over the account's.
+userRouter.patch('/prices', jwtAuth, express.json(), async (req, res) => {
+  const body = (req.body ?? {}) as { set?: unknown; remove?: unknown; currency?: unknown };
+  const set = body.set ?? [];
+  const remove = body.remove ?? [];
+  const validKey = (key: unknown): key is string => typeof key === 'string' && key !== '' && key.length <= KEY_LONGEST;
+  const valid =
+    Array.isArray(set) &&
+    Array.isArray(remove) &&
+    set.every((entry: unknown) => {
+      const { key, perKg } = (entry ?? {}) as Partial<Price>;
+      return validKey(key) && isPrice(perKg);
+    }) &&
+    remove.every(validKey) &&
+    (body.currency === undefined || (typeof body.currency === 'string' && regions.CURRENCIES.includes(body.currency)));
+  const sets = new Map<string, number>(valid ? (set as Price[]).map(({ key, perKg }) => [key, perKg]) : []);
+  if (!valid || sets.size + remove.length > PRICES_MOST) {
+    return res.status(400).json(say('prices-invalid', { most: PRICES_MOST }));
+  }
+  const touched = [...new Set([...sets.keys(), ...(remove as string[])])];
+  const now = new Set((userOf(req).prices ?? []).map((price) => price.key));
+  for (const key of sets.keys()) now.add(key);
+  if (now.size > PRICES_MOST) return res.status(400).json(say('prices-invalid', { most: PRICES_MOST }));
+  const updated = await User.findOneAndUpdate(
+    { _id: userOf(req)._id },
+    [
+      {
+        $set: {
+          // The currency the prices were shown in becomes the account's, the first time and only then.
+          ...(typeof body.currency === 'string' && {
+            'preferences.currency': {
+              $cond: [
+                { $in: [{ $ifNull: ['$preferences.currency', ''] }, ['']] },
+                { $literal: body.currency },
+                '$preferences.currency'
+              ]
+            }
+          }),
+          prices: {
+            $concatArrays: [
+              {
+                $filter: {
+                  input: { $ifNull: ['$prices', []] },
+                  cond: { $not: [{ $in: ['$$this.key', { $literal: touched }] }] }
+                }
+              },
+              { $literal: [...sets].map(([key, perKg]) => ({ key, perKg })) }
+            ]
+          }
+        }
+      }
+    ],
+    { returnDocument: 'after', updatePipeline: true, projection: { prices: 1, 'preferences.currency': 1 } }
+  ).lean();
+  return res.status(200).json({
+    prices: (updated?.prices ?? []).map(({ key, perKg }) => ({ key, perKg })),
+    currency: (updated as { preferences?: { currency?: string } } | null)?.preferences?.currency ?? ''
+  });
 });
 
 // Users may only change or delete their own account; admins may act on any.

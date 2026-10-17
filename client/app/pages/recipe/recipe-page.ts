@@ -44,6 +44,8 @@ import { LibraryMaterial, modernMaterials } from './compare';
 import { Rebase, amountOf, isAmount, rebase, totalOf, unitOf } from './rebase';
 import { additiveAmount, evaluate, savedAnalysis } from './recipe-analysis';
 import { CompareChoice, RecipeCompare } from './recipe-compare';
+import { RecipeCost } from './recipe-cost';
+import { RecipeHazards, hazardSources } from './recipe-hazards';
 import { RecipeHelp } from './recipe-help';
 import { RecipeLibrary, libraryKey } from './recipe-library';
 import { RecipePrint } from './recipe-print';
@@ -159,6 +161,8 @@ const toggled = (set: ReadonlySet<string>, id: string): ReadonlySet<string> => {
     PageHeader,
     RecipeHelp,
     RecipeCompare,
+    RecipeCost,
+    RecipeHazards,
     RecipeLibrary,
     RecipePrint,
     RemoveButton,
@@ -456,6 +460,25 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
   /** Whether this page opened the print or compare view, so closing it can go back in the history. */
   private viewOpenedHere = false;
   protected readonly chemistryOf = (name: string) => this.findByName(name);
+  /** What the recipe's hazards are read from: the library's current records for its standard materials. */
+  protected readonly hazardSources = computed(() =>
+    hazardSources(
+      [...this.lines(), ...this.additiveLines()],
+      [...this.standardMaterials(), ...this.standardAdditives()],
+      [...this.myMaterials(), ...this.myAdditives()]
+    )
+  );
+  /** The same for the recipe being printed. */
+  protected readonly printHazards = computed(() => {
+    const recipe = this.printRecipe();
+    return recipe
+      ? hazardSources(
+          [...(recipe.materials ?? []), ...(recipe.additives ?? [])],
+          [...this.standardMaterials(), ...this.standardAdditives()],
+          [...this.myMaterials(), ...this.myAdditives()]
+        )
+      : [];
+  });
 
   // Comparing: ?compare=<first>,<second>, each 'draft' (the recipe being edited),
   // 'before' (it before Try modern materials) or a saved recipe's id.

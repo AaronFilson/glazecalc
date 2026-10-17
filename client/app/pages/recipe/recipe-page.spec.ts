@@ -123,6 +123,44 @@ describe('RecipePage', () => {
     button.click();
   };
 
+  it("lists the hazards of the recipe's materials from the library as it is now, and offers its cost", async () => {
+    const fixture = TestBed.createComponent(RecipePage);
+    await fixture.whenStable();
+    const dusty = (m: Material, hazards: string): Material => ({ ...m, ownedBy: 'Standard', hazards });
+    answer('/materials/getStandard', [
+      dusty(WHITING, 'Fine dust; avoid breathing it.'),
+      dusty(SILICA, 'Contains crystalline silica; do not breathe the dust.')
+    ]);
+    answer('/materials/getAll', []);
+    answer('/additives/getAll', []);
+    answer('/additives/getStandard', [IRON]);
+    answer('/recipe/getAll', []);
+    await settle(fixture);
+    const page = fixture.componentInstance as unknown as Page;
+    const root = fixture.nativeElement as HTMLElement;
+    expect(root.querySelector('gc-recipe-hazards')).toBeNull();
+    // A line saved with an older sheet's words reads the library's current ones.
+    fill(page, [
+      [{ ...WHITING, ownedBy: 'Standard', hazards: 'An old sheet.' }, '20'],
+      [{ ...SILICA, ownedBy: 'Standard' }, '80']
+    ]);
+    page['addAdditive'](IRON);
+    await fixture.whenStable();
+    expect([...root.querySelectorAll('.recipe-hazards li')].map((li) => li.textContent?.trim())).toEqual([
+      'Whiting: Fine dust; avoid breathing it.',
+      'Silica: Contains crystalline silica; do not breathe the dust.'
+    ]);
+    expect(text(fixture, '.recipe-hazards')).toContain('No hazards are given for Iron oxide');
+    // The prices are fetched only when the cost is asked for.
+    httpMock().expectNone(API + '/prices');
+    click(fixture, 'Cost of a batch');
+    await fixture.whenStable();
+    answer('/prices', { prices: [] });
+    await settle(fixture);
+    // Iron oxide has no amount yet, so needs no price.
+    expect(text(fixture, '.recipe-cost-summary')).toContain('Give a price for Whiting and Silica for the whole cost.');
+  });
+
   it('shows the unity formula as amounts are typed, with each share and the total', async () => {
     const { fixture, page } = await create();
     expect(text(fixture, '.unity-result')).toContain('Add materials and their amounts');

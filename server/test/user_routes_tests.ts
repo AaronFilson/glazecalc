@@ -77,7 +77,8 @@ describe('user API', () => {
       englishTerms: 'off',
       notice: 'shown',
       recipeHelp: 'auto',
-      limitSet: 'hesselberth-roy'
+      limitSet: 'hesselberth-roy',
+      currency: ''
     };
 
     it('start in grams to a tenth, and change one at a time', async () => {
@@ -236,6 +237,114 @@ describe('user API', () => {
       expect((await get(trialToken)).body).to.eql({ shelf: ['name:Silica'] });
       expect(await api().get('/shelf')).to.have.status(401);
       expect(await api().put('/shelf').send({ shelf: [] })).to.have.status(401);
+    });
+  });
+
+  describe('prices', () => {
+    const get = (bearer: string) =>
+      api()
+        .get('/prices')
+        .set('Authorization', 'Bearer ' + bearer);
+    const put = (bearer: string, body: object) =>
+      api()
+        .put('/prices')
+        .set('Authorization', 'Bearer ' + bearer)
+        .send(body);
+
+    it('keeps a price per kilogram for each material, the last given for a key', async () => {
+      expect((await get(token)).body).to.eql({ prices: [] });
+      const res = await put(token, {
+        prices: [
+          { key: '6fd1f9f8c006e8f7e23d9126', perKg: 2.5 },
+          { key: 'name:Whiting', perKg: 0 },
+          { key: 'name:Whiting', perKg: 0.8 }
+        ]
+      });
+      expect(res).to.have.status(200);
+      const kept = [
+        { key: '6fd1f9f8c006e8f7e23d9126', perKg: 2.5 },
+        { key: 'name:Whiting', perKg: 0.8 }
+      ];
+      expect(res.body).to.eql({ prices: kept });
+      expect((await get(token)).body).to.eql({ prices: kept });
+      expect((await put(token, { prices: [] })).body).to.eql({ prices: [] });
+      expect((await get(token)).body).to.eql({ prices: [] });
+    });
+
+    it('changes prices by key, leaving the others, so a stale list never overwrites', async () => {
+      const patch = (body: object) =>
+        api()
+          .patch('/prices')
+          .set('Authorization', 'Bearer ' + token)
+          .send(body);
+      // Another device added Feldspar meanwhile; this one sets Silica and clears Whiting.
+      await put(token, {
+        prices: [
+          { key: 'name:Silica', perKg: 1 },
+          { key: 'name:Whiting', perKg: 2 },
+          { key: 'name:Feldspar', perKg: 3 }
+        ]
+      });
+      const res = await patch({ set: [{ key: 'name:Silica', perKg: 1.5 }], remove: ['name:Whiting'] });
+      expect(res).to.have.status(200);
+      const kept = [
+        { key: 'name:Feldspar', perKg: 3 },
+        { key: 'name:Silica', perKg: 1.5 }
+      ];
+      expect(res.body).to.eql({ prices: kept, currency: '' });
+      expect((await get(token)).body).to.eql({ prices: kept });
+      // The currency shown with the first price becomes the account's, once.
+      expect(res.body.currency).to.equal('');
+      const first = await patch({ set: [{ key: 'name:Silica', perKg: 2 }], currency: 'SEK' });
+      expect(first.body.currency).to.equal('SEK');
+      const later = await patch({ set: [{ key: 'name:Silica', perKg: 3 }], currency: 'EUR' });
+      expect(later.body.currency).to.equal('SEK');
+      expect(await patch({ currency: 'XXX' })).to.have.status(400);
+      expect(await patch({ set: [{ key: 'name:Silica', perKg: -1 }] })).to.have.status(400);
+      expect(await patch({ remove: [3] })).to.have.status(400);
+      expect(await api().patch('/prices').send({ remove: [] })).to.have.status(401);
+      await put(token, { prices: [] });
+    });
+
+    it('refuses what is not a list of prices of 0 or more, or too long a one', async () => {
+      for (const body of [
+        {},
+        { prices: 'cheap' },
+        { prices: [{ key: 'name:Silica' }] },
+        { prices: [{ key: 'name:Silica', perKg: -1 }] },
+        { prices: [{ key: 'name:Silica', perKg: '2' }] },
+        { prices: [{ key: '', perKg: 2 }] },
+        { prices: [{ key: 'x'.repeat(201), perKg: 2 }] },
+        { prices: [null] }
+      ]) {
+        const res = await put(token, body);
+        expect(res, JSON.stringify(body)).to.have.status(400);
+        expect(res.body.msg).to.equal(
+          'Prices are a list of up to 1000 materials, each with a price per kilogram of 0 or more.'
+        );
+      }
+      const many = Array.from({ length: 1001 }, (_, i) => ({ key: 'name:M' + i, perKg: 1 }));
+      expect(await put(token, { prices: many })).to.have.status(400);
+      expect((await get(token)).body).to.eql({ prices: [] });
+    });
+
+    it('can be kept by a trial, need a sign-in, and are in one currency, chosen or the region’s', async () => {
+      const trial = await api().post('/guest');
+      const trialToken = sessionToken(trial) ?? '';
+      expect(await put(trialToken, { prices: [{ key: 'name:Silica', perKg: 1 }] })).to.have.status(200);
+      expect((await get(trialToken)).body).to.eql({ prices: [{ key: 'name:Silica', perKg: 1 }] });
+      expect(await api().get('/prices')).to.have.status(401);
+      expect(await api().put('/prices').send({ prices: [] })).to.have.status(401);
+      const currency = (value: string) =>
+        api()
+          .put('/preferences')
+          .set('Authorization', 'Bearer ' + trialToken)
+          .send({ currency: value });
+      expect((await currency('SEK')).body).to.include({ currency: 'SEK' });
+      expect((await currency('')).body).to.include({ currency: '' });
+      const refused = await currency('XYZ');
+      expect(refused).to.have.status(400);
+      expect(refused.body.msg).to.equal('Choose one of the currencies in the list, or leave it to your region.');
     });
   });
 

@@ -35,6 +35,31 @@ describe('regions', () => {
     expect(regions.formatLocaleFor('en', 'DE', 'en-GB')).to.equal('en-GB');
   });
 
+  it('should price in each region’s own currency, which the runtime can write', () => {
+    for (const region of regions.REGIONS) {
+      expect(region.currency, region.name).to.match(/^[A-Z]{3}$/);
+      expect(regions.CURRENCIES).to.include(region.currency);
+      expect(() => new Intl.NumberFormat('en', { style: 'currency', currency: region.currency })).not.to.throw();
+    }
+    // The euro area, Bulgaria with it since 2026; the EU members outside it keep their own.
+    for (const code of ['DE', 'IE', 'BG', 'HR']) expect(regions.regionFor(code)!.currency, code).to.equal('EUR');
+    for (const [code, currency] of [
+      ['SE', 'SEK'],
+      ['PL', 'PLN'],
+      ['CZ', 'CZK'],
+      ['GB', 'GBP'],
+      ['US', 'USD'],
+      ['JP', 'JPY']
+    ])
+      expect(regions.regionFor(code)!.currency, code).to.equal(currency);
+    expect(new Set(regions.CURRENCIES).size).to.equal(regions.CURRENCIES.length);
+    // No region chosen: the format locale's region, or else the US dollar.
+    expect(regions.currencyFor('GB', 'de-DE')).to.equal('GBP');
+    expect(regions.currencyFor('', 'de-DE')).to.equal('EUR');
+    expect(regions.currencyFor('', 'en')).to.equal('USD');
+    expect(regions.currencyFor(null, 'not a locale')).to.equal('USD');
+  });
+
   it("keeps the language's script in its format, and drops its own region for the reader's", () => {
     // Traditional Chinese read in Ireland is written as Traditional, not as zh-IE (Simplified).
     expect(regions.formatLocaleFor('zh-Hant', 'IE', 'auto')).to.equal('zh-Hant-IE');
@@ -223,7 +248,8 @@ describe('Japan', () => {
       temperature: 'C',
       cones: 'sk',
       density: 'baume',
-      library: 'US'
+      library: 'US',
+      currency: 'JPY'
     });
     expect(regions.formatLocaleFor('en', 'JP', 'auto')).to.equal('en-JP');
   });
@@ -325,7 +351,8 @@ describe('Türkiye', () => {
       temperature: 'C',
       cones: 'temperature',
       density: 'sg',
-      library: 'EU'
+      library: 'EU',
+      currency: 'TRY'
     });
     expect(regions.formatLocaleFor('en', 'TR', 'auto')).to.equal('en-TR');
   });
@@ -414,6 +441,14 @@ describe('Türkiye', () => {
 
 // Adding a region, and the fields it needed, leaves every earlier region's data as it was:
 // the regions before Japan, then Japan too, before Turkey.
+
+/** A region as these snapshots took it, before regions had a currency (checked on its own above). */
+const asSnapshotted = (code: string): Record<string, unknown> => {
+  const region: Record<string, unknown> = { ...regions.regionFor(code) };
+  delete region.currency;
+  return region;
+};
+
 describe('regions before Turkey', () => {
   it('keep their data exactly', () => {
     const codes = [
@@ -422,7 +457,7 @@ describe('regions before Turkey', () => {
     ]; // prettier-ignore
     const data: unknown[] = codes.map((code) => [
       code,
-      regions.regionFor(code),
+      asSnapshotted(code),
       safety.SAFETY[code],
       safety.MINISTRIES[code] ?? null,
       workplace.WORKPLACE[code] ?? null,
@@ -444,7 +479,7 @@ describe('regions before Korea', () => {
     ]; // prettier-ignore
     const data: unknown[] = codes.map((code) => [
       code,
-      regions.regionFor(code),
+      asSnapshotted(code),
       safety.SAFETY[code],
       safety.MINISTRIES[code] ?? null,
       workplace.WORKPLACE[code] ?? null,
@@ -467,7 +502,7 @@ describe('regions before China', () => {
     ]; // prettier-ignore
     const data: unknown[] = codes.map((code) => [
       code,
-      regions.regionFor(code),
+      asSnapshotted(code),
       safety.SAFETY[code],
       safety.MINISTRIES[code] ?? null,
       workplace.WORKPLACE[code] ?? null,
@@ -492,7 +527,8 @@ describe('South Korea', () => {
       temperature: 'C',
       cones: 'temperature',
       density: 'sg',
-      library: 'US'
+      library: 'US',
+      currency: 'KRW'
     });
     expect(regions.formatLocaleFor('en', 'KR', 'auto')).to.equal('en-KR');
   });
