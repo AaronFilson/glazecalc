@@ -392,5 +392,21 @@
     "account": "Your account",
     "signIn": "Sign in",
     "failed": "Error: could not confirm the address. Please try again."
+  },
+  "providers": {
+    "continueGoogle": "Continue with Google",
+    "continueGithub": "Continue with GitHub",
+    "failed": "Signing in did not work. Please try again.",
+    "heading": "Google and GitHub",
+    "intro": "Link a Google or GitHub account to sign in with it. Glazecalc keeps only the account's id from it, never its name, picture or anything else, and two-step sign-in still asks for its second step.",
+    "passwordless": "This account has no password yet. Set one to change your email, turn on two-step sign-in, link or unlink an account here, or delete your account.",
+    "setPassword": "Email me a link to set a password",
+    "setPasswordFailed": "Could not send the link. Please try again.",
+    "confirmFirst": "Confirm your email first, with the link we sent you, to link Google or GitHub.",
+    "linkedOn": "Linked on {date}",
+    "notLinked": "Not linked",
+    "link": "Link {provider}",
+    "unlink": "Unlink {provider}",
+    "linkFailed": "Could not link it. Please try again."
   }
 }

@@ -6,7 +6,7 @@ import { Router, RouterLink } from '@angular/router';
 import { TranslocoDirective, translate } from '@jsverse/transloco';
 import { marker } from '@jsverse/transloco-keys-manager/marker';
 import type { FactorProof, IdentityProof, MfaSummary } from '../../../../lib/mfa';
-import { AuthService } from '../../core/auth.service';
+import { AuthService, SIGN_IN_PROVIDERS } from '../../core/auth.service';
 import { errorMessage } from '../../core/error-message';
 import { IdentityConfirm } from '../auth/identity-confirm';
 import { SectionLinks } from '../guides/guide-contents';
@@ -15,6 +15,7 @@ import { FieldCheck, FieldChecks, emailAddress, filled, newPassword, samePasswor
 import { Notices, NoticesList } from '../../shared/notices';
 import { PageHeader } from '../../shared/page-header';
 import { SettingsSection } from './settings-section';
+import { ProvidersSection } from './providers-section';
 import { SignInSection } from './sign-in-section';
 
 /** A change on this page that, with two-step sign-in on, asks for a second step too (decision 6). */
@@ -39,6 +40,7 @@ type Confirming = 'password' | 'email' | 'delete';
     NgTemplateOutlet,
     NoticesList,
     PageHeader,
+    ProvidersSection,
     RouterLink,
     SettingsSection,
     SignInSection,
@@ -67,7 +69,7 @@ type Confirming = 'password' | 'email' | 'delete';
       <!-- The page is long: what is on it, so the security sections are a tap away. -->
       <nav class="account-contents" [attr.aria-label]="t('account.account.contents')">
         <ul>
-          @for (part of contents; track part.id) {
+          @for (part of contents(); track part.id) {
             <li>
               <a [href]="links.href(part.id)" (click)="links.go($event, part.id)">{{ t(part.label) }}</a>
             </li>
@@ -153,6 +155,8 @@ type Confirming = 'password' | 'email' | 'delete';
       </section>
 
       <gc-sign-in-section (loaded)="mfaLoaded($event)" />
+
+      <gc-providers-section [mfa]="mfa()" />
 
       <section class="auth-text">
         <h2 id="email-heading" tabindex="-1">{{ t('account.account.emailHeading') }}</h2>
@@ -292,16 +296,29 @@ type Confirming = 'password' | 'email' | 'delete';
 })
 export class AccountPage {
   protected readonly auth = inject(AuthService);
+  /** Whether Google or GitHub sign-in is on here, so the page has a section for it. */
+  private readonly providersOn = signal(false);
+  private readonly signInProviders = inject(SIGN_IN_PROVIDERS);
   /** The sections, for the contents at the top: each heading's id and its message. */
-  protected readonly contents = [
+  protected readonly contents = computed(() => [
     { id: 'settings-heading', label: marker('account.settings.heading') },
     { id: 'export-heading', label: marker('account.export.heading') },
     { id: 'password-heading', label: marker('account.account.changeHeading') },
     { id: 'mfa-heading', label: marker('account.mfa.heading') },
+    ...(this.providersOn() ? [{ id: 'providers-heading', label: marker('account.providers.heading') }] : []),
     { id: 'email-heading', label: marker('account.account.emailHeading') },
     { id: 'sign-out-heading', label: marker('account.account.signOutHeading') },
     { id: 'delete-heading', label: marker('account.account.deleteHeading') }
-  ];
+  ]);
+
+  constructor() {
+    afterNextRender(() => {
+      this.signInProviders().then(
+        (providers) => this.providersOn.set(providers.length > 0),
+        () => this.providersOn.set(false)
+      );
+    });
+  }
   /** Each goes to its section's heading, as a guide's contents do. */
   protected readonly links = new SectionLinks();
   private readonly router = inject(Router);
