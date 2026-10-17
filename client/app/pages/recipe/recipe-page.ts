@@ -57,7 +57,7 @@ import { UnityFormula, silicaAluminaRatio, unityColumns } from './unity-formula'
 import { OwnLimitsNote } from './own-limits-note';
 import { RecipeNumbers } from './recipe-numbers';
 import { SlurryCalculator } from './slurry-calculator';
-import type { FiringBand } from '../../../../lib/recipe/limits';
+import { FiringBand, LIMIT_SETS, bandOf } from '../../../../lib/recipe/limits';
 
 const INCLUDE_KEY = 'includeAdditives';
 
@@ -1257,6 +1257,8 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
       { run, report: replacement.report, cautions: replacement.cautions },
       compare
     );
+    // The cone it was rebuilt for tells which firing the recipe is for, when it has none yet.
+    if (!this.firing() && firing.celsius) this.firing.set(bandOf(LIMIT_SETS['hesselberth-roy'], firing.celsius) ?? '');
   }
 
   /** Match with what I have: shows the materials on hand, fetched from the account. */

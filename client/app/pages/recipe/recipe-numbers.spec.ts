@@ -127,7 +127,7 @@ describe('RecipeNumbers', () => {
     expect(rows(root, '.limits-table').map((row) => row[0])).toContain('MgO');
   });
 
-  it('keeps a limit set chosen on the page when saving it fails, and says so', async () => {
+  it('puts the limit set back when saving the choice fails, and says so', async () => {
     const { fixture, root } = await create();
     const select = root.querySelector('#limit-set') as HTMLSelectElement;
     select.value = 'glazecalc';
@@ -138,7 +138,9 @@ describe('RecipeNumbers', () => {
     await fixture.whenStable();
     await fixture.whenStable();
     expect(text(fixture, '.limits-problem')).toContain('could not be saved');
-    expect((root.querySelector('#limit-set') as HTMLSelectElement).value).toBe('glazecalc');
+    expect((root.querySelector('#limit-set') as HTMLSelectElement).value).toBe('hesselberth-roy');
+    expect(TestBed.inject(PreferencesService).limitSet()).toBe('hesselberth-roy');
+    expect(text(fixture)).toContain('Hesselberth & Roy, stable glazes');
   });
 });
 
@@ -208,6 +210,20 @@ describe('SlurryCalculator', () => {
     };
     return { fixture, root, type };
   };
+
+  it('announces the results to a screen reader once typing has paused, not at every keystroke', async () => {
+    const { fixture, root, type } = await create();
+    const live = root.querySelector('[aria-live][data-testid=slurry-announced]')!;
+    expect(root.querySelector('.slurry-results')?.hasAttribute('aria-live')).toBe(false);
+    await type('slurry-volume', '1');
+    await type('slurry-volume', '10');
+    await type('slurry-measured', '1.5');
+    expect(live.textContent).toBe('');
+    expect(text(fixture, '.slurry-results')).toContain('the bucket holds');
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+    await fixture.whenStable();
+    expect(live.textContent).toContain('the bucket holds');
+  });
 
   it('words its results again when the language is switched', async () => {
     const { fixture, root, type } = await create();

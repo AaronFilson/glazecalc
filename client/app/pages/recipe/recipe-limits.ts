@@ -65,7 +65,7 @@ export function statusText(row: LimitRow): string {
       <div class="limits-choices">
         <div>
           <label for="limit-set" class="form-label">{{ t('recipe.limits.set') }}</label>
-          <select id="limit-set" class="form-select form-select-sm" (change)="chooseSet($any($event.target).value)">
+          <select id="limit-set" class="form-select form-select-sm" (change)="chooseSet($any($event.target))">
             @for (id of setIds; track id) {
               <option [value]="id" [selected]="id === set().id">{{ t(setNames[id]) }}</option>
             }
@@ -195,12 +195,9 @@ export class RecipeLimits {
   protected readonly bands = FIRING_BANDS;
   protected readonly bandNames = BAND_NAMES;
   protected readonly saveFailed = signal(false);
-  /** What was chosen on this page, which holds while it is open even if saving it failed. */
-  private readonly chosen = signal<LimitSetChoice | null>(null);
 
-  protected readonly set = computed(
-    () => LIMIT_SETS[this.chosen() ?? this.preferences.limitSet()] ?? LIMIT_SETS['hesselberth-roy']
-  );
+  /** The account's choice, which the note under the suggestions reads too (own-limits-note.ts). */
+  protected readonly set = computed(() => LIMIT_SETS[this.preferences.limitSet()] ?? LIMIT_SETS['hesselberth-roy']);
   /** The band the figures are for: the recipe's firing, or the set's own choice when it has none. */
   protected readonly band = computed<FiringBand>(() => this.firing() || this.set().whenUnknown);
   protected readonly ranges = computed(() => unityFor(this.set(), this.band()));
@@ -234,10 +231,13 @@ export class RecipeLimits {
     return fixed(value, 2);
   }
 
-  /** Kept with the account's settings; if saving fails, the choice holds while the page is open. */
-  protected chooseSet(id: LimitSetChoice): void {
+  /** Kept with the account's settings; if saving fails, the choice before comes back (the service puts it back) and this says so. */
+  protected chooseSet(select: HTMLSelectElement): void {
     this.saveFailed.set(false);
-    this.chosen.set(id);
-    this.preferences.set('limitSet', id).catch(() => this.saveFailed.set(true));
+    this.preferences.set('limitSet', select.value as LimitSetChoice).catch(() => {
+      // The choice before is back in the service; the box shows it again.
+      select.value = this.set().id;
+      this.saveFailed.set(true);
+    });
   }
 }

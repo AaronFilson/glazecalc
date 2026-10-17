@@ -1737,6 +1737,8 @@ describe('RecipePage', () => {
       expect(names).not.toContain('Red lead');
       expect(names).toContain('Borosilicate frit');
       expect(page['title']()).toBe('Untitled recipe without lead');
+      // Cone 06 was the firing chosen, so the recipe's limits are checked for low fire.
+      expect(page['firing']()).toBe('low');
       expect(page['notes']()).toMatch(
         /^Lead replaced for cone 06 on Borosilicate frit: the old recipe's silica and alumina kept, with boron and other fluxes doing lead's work\. Changed: .*Red lead 55 → 0/
       );
@@ -1748,6 +1750,7 @@ describe('RecipePage', () => {
       click(fixture, 'Undo the swap');
       await settle(fixture);
       expect(page['lines']().map((l: Material) => l.name)).toEqual(['Red lead', 'China Clay', 'Silica']);
+      expect(page['firing']()).toBe('');
     });
 
     it('compares a changed recipe with itself before the swap', async () => {

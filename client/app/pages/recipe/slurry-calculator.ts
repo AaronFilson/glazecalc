@@ -1,4 +1,4 @@
-import { Component, computed, inject, linkedSignal, model, signal } from '@angular/core';
+import { Component, computed, effect, inject, linkedSignal, model, signal } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { TranslocoDirective, TranslocoService, translate } from '@jsverse/transloco';
 import { marker } from '@jsverse/transloco-keys-manager/marker';
@@ -46,6 +46,9 @@ const TARGET: Record<Density, string> = {
 };
 /** A dipping glaze's usual SG (Digitalfire), as each density is read. */
 const TYPICAL: Record<Density, string> = { sg: '1.45', baume: '45', pint: '29' };
+
+/** How long typing pauses before the results are announced to a screen reader. */
+const ANNOUNCE_AFTER_MS = 800;
 
 /** An SG as the density Settings read, in the plain digits a field is typed in. */
 function densityText(sg: number, density: Density): string {
@@ -139,7 +142,7 @@ function sgOf(text: string, density: Density): number | null {
           />
         </div>
       </div>
-      <div class="slurry-results" aria-live="polite">
+      <div class="slurry-results">
         @if (problem()) {
           <p class="slurry-problem">{{ problem() }}</p>
         }
@@ -147,6 +150,7 @@ function sgOf(text: string, density: Density): number | null {
           <p>{{ line }}</p>
         }
       </div>
+      <div class="visually-hidden" aria-live="polite" data-testid="slurry-announced">{{ announced() }}</div>
       <div class="slurry-target" aria-live="polite">
         @if (isKept()) {
           <span>{{ t('recipe.slurry.targetSaved', { sg: sgText(sgTarget()!) }) }}</span>
@@ -246,6 +250,12 @@ export class SlurryCalculator {
     };
   });
 
+  /**
+   * What a screen reader is told: the problem and results once typing has paused, so it does not read
+   * them out again at every keystroke.
+   */
+  protected readonly announced = signal('');
+
   /** Why an SG typed cannot be worked with: not over water's, or not under the dry materials'. */
   protected readonly problem = computed(() => {
     this.language();
@@ -320,6 +330,12 @@ export class SlurryCalculator {
       }
     }
     return lines;
+  });
+
+  private readonly announce = effect((onCleanup) => {
+    const said = [this.problem(), ...this.results()].filter(Boolean).join(' ');
+    const timer = setTimeout(() => this.announced.set(said), ANNOUNCE_AFTER_MS);
+    onCleanup(() => clearTimeout(timer));
   });
 
   /** Kilograms as the account weighs: 8.33 kg or 640 g, or 18 lb 6.1 oz. */

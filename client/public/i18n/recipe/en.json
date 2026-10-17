@@ -543,7 +543,7 @@
     "notApply": "{name} has no figures for this firing ({band}), so it is not checked: figures for another firing would mislead.",
     "guidance": "These are guidelines, not a pass or a fail: a glaze outside them can be fine, and one inside them can still craze, leach or fail. Test it.",
     "source": "Source:",
-    "saveFailed": "Your choice of limit set could not be saved to your account. It holds while this page is open.",
+    "saveFailed": "Your choice of limit set could not be saved to your account, so the limit set before is still the one in use.",
     "ownLimits": "These suggestions use Glazecalc's own limits, not {name}."
   },
   "stull": {
