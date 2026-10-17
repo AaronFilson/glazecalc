@@ -16,6 +16,8 @@ const PAGES = [
   '/home',
   '/recipe',
   '/recipe?print=draft',
+  '/import',
+  '/blends',
   '/material',
   '/additive',
   '/firing',

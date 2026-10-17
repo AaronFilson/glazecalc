@@ -42,7 +42,18 @@ const PUBLIC_PAGES = [
   '/forgot',
   '/no-such-page'
 ];
-const APP_PAGES = ['/home', '/material', '/additive', '/firing', '/notes', '/advice', '/account', '/trash'];
+const APP_PAGES = [
+  '/home',
+  '/material',
+  '/additive',
+  '/firing',
+  '/notes',
+  '/advice',
+  '/account',
+  '/trash',
+  '/import',
+  '/blends'
+];
 
 // The palettes in Settings, light and dark: contrast of buttons, links, tabs and choices.
 test('every palette, light and dark', async ({ page }) => {

@@ -49,6 +49,10 @@
     <gc-page-header [title]="t('recipe.page.title')" [lead]="t('recipe.page.lead')" />
     <gc-recipe-help [empty]="recipesLoaded() ? !myRecipes().length : null" />
     <gc-notices [notices]="notices" />
+    <nav class="recipe-tools" [attr.aria-label]="t('recipe.page.toolsLabel')">
+      <a routerLink="/import">{{ t('recipe.page.pasteIn') }}</a>
+      <a routerLink="/blends">{{ t('recipe.page.blends') }}</a>
+    </nav>
 
     <!-- A potter's collection, first: each name opens it in the editor below; the rest is under More. -->
     @if (myRecipes().length) {
@@ -129,6 +133,14 @@
                     >
                       {{ t('recipe.page.compare') }}
                     </button>
+                    <a
+                      class="btn btn-light border btn-sm"
+                      routerLink="/blends"
+                      [queryParams]="{ recipe: rec._id }"
+                      [attr.aria-label]="t('recipe.page.blendName', { title: rec.title })"
+                    >
+                      {{ t('recipe.page.blend') }}
+                    </a>
                     <gc-remove-button
                       danger
                       [name]="rec.title"

@@ -69,7 +69,18 @@ describe('signedInGuard and visitorsOnlyGuard', () => {
       .filter((r) => r.canActivate?.includes(signedInGuard))
       .map((r) => r.path)
       .sort();
-    expect(guarded).toEqual(['account', 'additive', 'firing', 'home', 'material', 'notes', 'recipe', 'trash']);
+    expect(guarded).toEqual([
+      'account',
+      'additive',
+      'blends',
+      'firing',
+      'home',
+      'import',
+      'material',
+      'notes',
+      'recipe',
+      'trash'
+    ]);
   });
 
   it('keeps the public pages public', () => {

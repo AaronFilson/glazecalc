@@ -153,6 +153,22 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/recipe/recipe-page').then((m) => m.RecipePage)
   },
   {
+    path: 'import',
+    title: marker('titles.import'),
+    canActivate: [signedInGuard],
+    providers: [provideTranslocoScope('recipe', 'records')],
+    resolve: { messages: scopeTranslations },
+    loadComponent: () => import('./pages/import/import-page').then((m) => m.ImportPage)
+  },
+  {
+    path: 'blends',
+    title: marker('titles.blends'),
+    canActivate: [signedInGuard],
+    providers: [provideTranslocoScope('recipe', 'records')],
+    resolve: { messages: scopeTranslations },
+    loadComponent: () => import('./pages/blends/blends-page').then((m) => m.BlendsPage)
+  },
+  {
     path: 'material',
     title: marker('titles.material'),
     canActivate: [signedInGuard],

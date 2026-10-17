@@ -14,7 +14,7 @@ import {
 } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { FormsModule } from '@angular/forms';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { TranslocoDirective, translate } from '@jsverse/transloco';
 import { marker } from '@jsverse/transloco-keys-manager/marker';
 import { map } from 'rxjs';
@@ -159,6 +159,7 @@ const toggled = (set: ReadonlySet<string>, id: string): ReadonlySet<string> => {
     RecipePrint,
     RemoveButton,
     RichText,
+    RouterLink,
     SwapReport,
     TranslocoDirective,
     TryMaterials,
@@ -167,6 +168,13 @@ const toggled = (set: ReadonlySet<string>, id: string): ReadonlySet<string> => {
   templateUrl: './recipe-page.html',
   // The saved recipes (styles.scss has the rest of the page's).
   styles: `
+    /* Paste in recipes and Blends, which have pages of their own. */
+    .recipe-tools {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.25rem 1.25rem;
+      margin: 0 0 1rem;
+    }
     .saved-recipes-top {
       display: flex;
       flex-wrap: wrap;
