@@ -17,7 +17,7 @@ import { accessTokenIn, checkAccessToken } from './token_auth.ts';
 // again (deploy/README.md).
 const limiter = (
   minutes: number,
-  limit: number,
+  limit: number | ((req: Request) => number),
   code: MessageCode,
   more: Partial<Pick<Options, 'keyGenerator' | 'skipSuccessfulRequests' | 'requestWasSuccessful' | 'handler'>> & {
     skip?: (req: Request, res: Response) => boolean | Promise<boolean>;
@@ -190,3 +190,28 @@ export const mfaSetupAccount = limiter(15, 10, 'too-many-codes', {
 export const mfaChallenges = limiter(15, 30, 'too-many-attempts', {
   keyGenerator: (req) => 'mfa-challenge:' + String(req.user?._id)
 });
+
+/**
+ * The MCP endpoint (server/mcp/index.ts; docs/integrations-plan.md, items 23
+ * and 31): requests a minute and a day. Without a token, per address: 60 a
+ * minute and 2,000 a day, which an assistant working through a recipe stays
+ * well under. With a working token, per account (whichever of its tokens is
+ * used), and a little more. The tools that fit amounts have a limit of their
+ * own on top (server/mcp/common.ts countFit). After the token check, which
+ * says who is calling (req.mcpCaller).
+ */
+const mcpKey = (req: Request): string => 'mcp:' + (req.mcpCaller?.key ?? 'unknown');
+const withToken = (req: Request): boolean => Boolean(req.mcpCaller?.userId);
+export const MCP_LIMITS = { minute: { anyone: 60, account: 120 }, day: { anyone: 2000, account: 5000 } } as const;
+export const mcpMinute = limiter(
+  1,
+  (req) => (withToken(req) ? MCP_LIMITS.minute.account : MCP_LIMITS.minute.anyone),
+  'too-many-mcp',
+  { keyGenerator: mcpKey }
+);
+export const mcpDay = limiter(
+  24 * 60,
+  (req) => (withToken(req) ? MCP_LIMITS.day.account : MCP_LIMITS.day.anyone),
+  'too-many-mcp',
+  { keyGenerator: (req) => mcpKey(req) + ':day' }
+);

@@ -2,7 +2,16 @@ import { Location } from '@angular/common';
 import { TestBed } from '@angular/core/testing';
 import { ActivatedRoute, Router } from '@angular/router';
 import { AuthService } from '../../core/auth.service';
-import { answer, API, fieldProblem, httpMock, settle, testProviders, text } from '../../testing/test-providers';
+import {
+  answer,
+  API,
+  fieldProblem,
+  httpMock,
+  NO_TOKENS,
+  settle,
+  testProviders,
+  text
+} from '../../testing/test-providers';
 import { AccountPage } from './account-page';
 import { ConfirmEmailPage } from './confirm-email-page';
 
@@ -19,6 +28,7 @@ describe('AccountPage email and sessions', () => {
     answer('/preferences', { weightUnit: 'g' });
     answer('/share/recipes', []);
     answer('/mfa', { on: false, emailConfirmed: !unverified, totp: null, passkeys: [], codesLeft: 0 });
+    answer('/tokens', NO_TOKENS);
     await settle(fixture);
     return { fixture, page: fixture.componentInstance as unknown as Page };
   };

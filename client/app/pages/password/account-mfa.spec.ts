@@ -3,7 +3,16 @@ import { Router } from '@angular/router';
 import type { MfaSummary } from '../../../../lib/mfa';
 import { AuthService } from '../../core/auth.service';
 import { PASSKEYS, Passkeys } from '../auth/passkeys';
-import { answer, API, fieldProblem, httpMock, settle, testProviders, text } from '../../testing/test-providers';
+import {
+  answer,
+  API,
+  fieldProblem,
+  httpMock,
+  NO_TOKENS,
+  settle,
+  testProviders,
+  text
+} from '../../testing/test-providers';
 import { AccountPage } from './account-page';
 
 type Page = Record<string, any>;
@@ -38,6 +47,7 @@ describe('AccountPage with two-step sign-in on', () => {
     answer('/preferences', { weightUnit: 'g' });
     answer('/share/recipes', []);
     answer('/mfa', summary);
+    answer('/tokens', NO_TOKENS);
     await settle(fixture);
     return { fixture, page: fixture.componentInstance as unknown as Page };
   };
@@ -159,6 +169,8 @@ describe('AccountPage with two-step sign-in on', () => {
     const req = httpMock().expectOne(API + '/password');
     expect(req.request.body).toEqual({ current: 'old-password', password: 'new-password', code: '123456' });
     req.flush({ msg: 'Your password has been changed.', email: 'a@b.com' });
+    await settle(fixture);
+    answer('/tokens', NO_TOKENS);
     await settle(fixture);
     expect(text(fixture, '.server-msg')).toContain('Your password has been changed.');
     expect(el(fixture, '.confirm-step')).toBeNull();

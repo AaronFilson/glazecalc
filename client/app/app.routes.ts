@@ -95,6 +95,14 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/privacy/privacy-page').then((m) => m.PrivacyPage)
   },
   {
+    // In English for now, and not in the sitemap until it is translated (docs/integrations-plan.md, item 25).
+    path: 'assistants',
+    title: marker('titles.assistants'),
+    providers: [provideTranslocoScope('site')],
+    resolve: { messages: scopeTranslations },
+    loadComponent: () => import('./pages/assistants/assistants-page').then((m) => m.AssistantsPage)
+  },
+  {
     path: 'signin',
     title: marker('titles.signin'),
     data: { mode: 'signin' },

@@ -714,3 +714,51 @@ shrink the certificate to production's names with
 then delete the DNS record (`"Action": "DELETE"` with the same record), the four
 `/glazecalc/staging/*` parameters, `/opt/glazecalc/{staging.sh,compose.staging.yaml,staging.env,staging.tag}`,
 and the database (`dropDatabase` needs MongoDB without sign-in, as in step 4; an empty one can stay).
+
+## Listing in the MCP Registry
+
+The MCP endpoint (`/mcp`, [ADR 0017](../docs/adr/0017-mcp-server.md)) can be listed in the official
+[MCP Registry](https://registry.modelcontextprotocol.io), so assistants find it by name. The listing is
+`server.json` at the repository root: the name `com.glazecalcapp/glazecalc`, which the registry grants
+only to whoever proves they control `glazecalcapp.com`, and the address `https://glazecalcapp.com/mcp`.
+Publishing is outward-facing, so it is done by hand, by the owner, never by CI. Publish after the
+endpoint is live in production, and again whenever `server.json` changes (raise its `version` first:
+the registry refuses a version it already has).
+
+CI checks the endpoint with the official conformance suite and the Inspector on every push (`npm run test:mcp`).
+`MCP_URL=https://glazecalcapp.com/mcp npm run test:mcp` runs the same against the live site, but the suite
+sends more than the 60 requests a minute one address may make, so expect some 429 answers there.
+
+1. **Get `mcp-publisher`,** the registry's own CLI (a Go binary from its GitHub releases; the npm
+   package of that name is someone else's):
+
+   ```bash
+   curl -L "https://github.com/modelcontextprotocol/registry/releases/latest/download/mcp-publisher_$(uname -s | tr '[:upper:]' '[:lower:]')_$(uname -m | sed 's/x86_64/amd64/;s/aarch64/arm64/').tar.gz" | tar xz mcp-publisher
+   ```
+
+2. **Prove the domain with a DNS TXT record** (once; keep the key for later versions). Make an Ed25519
+   key outside the repository and print the record:
+
+   ```bash
+   openssl genpkey -algorithm Ed25519 -out ~/glazecalc-mcp-registry-key.pem
+   PUBLIC_KEY="$(openssl pkey -in ~/glazecalc-mcp-registry-key.pem -pubout -outform DER | tail -c 32 | base64)"
+   echo "v=MCPv1; k=ed25519; p=${PUBLIC_KEY}"
+   ```
+
+   Add that string as a TXT value on `glazecalcapp.com` in the Route 53 zone. The apex may already have
+   TXT values (SPF for SES): an `UPSERT` replaces the whole set, so list them first with
+   `aws route53 list-resource-record-sets --hosted-zone-id "$ZONE" --query "ResourceRecordSets[?Type=='TXT']"`
+   and put every existing value and the new one in the same change. (The registry also takes the
+   string as a file at `https://glazecalcapp.com/.well-known/mcp-registry-auth` with `mcp-publisher login http`,
+   but that needs a new nginx location; DNS needs nothing deployed.)
+
+3. **Log in and publish,** from the repository root once the record resolves (`dig +short TXT glazecalcapp.com`):
+
+   ```bash
+   PRIVATE_KEY="$(openssl pkey -in ~/glazecalc-mcp-registry-key.pem -noout -text | grep -A3 'priv:' | tail -n +2 | tr -d ' :\n')"
+   ./mcp-publisher login dns --domain glazecalcapp.com --private-key "${PRIVATE_KEY}"
+   ./mcp-publisher publish
+   ```
+
+4. **Check it:** `curl -s "https://registry.modelcontextprotocol.io/v0/servers?search=com.glazecalcapp/glazecalc"`
+   lists it. The TXT record can stay (later versions log in the same way) or go once published.

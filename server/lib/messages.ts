@@ -174,6 +174,18 @@ export const MESSAGES = {
   'token-scope': 'The access token does not allow this.',
   'token-not-here': 'This can only be done signed in on the website, not with an access token.',
 
+  // The account page's access tokens (server/routes/token_routes.ts).
+  'token-name': 'Please give the token a name of 1 to {most} characters.',
+  'token-expiry-choices': 'Please choose when the token expires: after {choices} days.',
+  'token-scope-choices': 'For now a token can only read your records.',
+  'token-needs-confirmed-email': 'Please confirm your email before making an access token.',
+  'token-limit': 'An account can have up to {most} access tokens at once. Please revoke one you no longer use first.',
+  'token-made': 'Your access token is ready. Copy it now: it will not be shown again.',
+  'token-revoked': 'The access token was revoked. It no longer works.',
+  'tokens-revoked':
+    '{count, plural, =0 {No access tokens were working.} one {# access token was revoked.} other {# access tokens were revoked.}}',
+  'token-not-found': 'No access token with that id.',
+
   // Requests in general.
   'not-found': 'Not found',
   'other-site': 'Requests from other sites are not accepted.',
@@ -191,7 +203,8 @@ export const MESSAGES = {
   'too-many-tokens': 'Too many access tokens that do not work were tried from this address. ' + WAIT,
   'too-many-shared-views': 'Too many shared recipes were opened from this address. ' + WAIT,
   'too-many-deletes':
-    'This access token has moved too many records to the Trash in the last hour. Please try again later.'
+    'This access token has moved too many records to the Trash in the last hour. Please try again later.',
+  'too-many-mcp': 'Too many requests to the Glazecalc tools for AI assistants. ' + WAIT
 } satisfies Record<string, Text>;
 
 export type MessageCode = keyof typeof MESSAGES;

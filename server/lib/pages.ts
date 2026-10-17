@@ -31,6 +31,7 @@ export const isPrivatePage = (pathname: string): boolean => PRIVATE_PAGES.includ
  */
 export const APP_PAGES = [
   ...PUBLIC_PAGES,
+  '/assistants',
   '/signin',
   '/forgot',
   '/reset',

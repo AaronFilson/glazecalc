@@ -4195,3 +4195,69 @@ export const noticeProvider = (
     failed(err);
   }
 };
+
+// Access tokens (docs/integrations-plan.md, item 28). English only so far: the
+// next translation wave adds the others, and until then every language gets
+// the English. A token's name is the person's own text, kept to one plain line.
+
+/** A new personal access token: {account}, {name}, {date} it expires, {page}, {forgot} and {app}. */
+export const TOKEN_MADE: Record<string, Email> = {
+  en: {
+    subject: 'A new access token for your Glazecalc account',
+    text:
+      'An access token named "{name}" was just made for the Glazecalc account {account}. It can read the recipes, materials, notes and firing logs saved in the account until {date}.\n\n' +
+      'If this was you, there is nothing else to do. You can see and revoke your tokens at {page}\n\n' +
+      'If not, revoke it there and reset your password right away at {forgot}\n' +
+      '\n-- \nGlazecalc, {app}\n'
+  }
+};
+
+/** A personal access token expiring soon: {account}, {name}, {date}, {page} and {app}. */
+export const TOKEN_EXPIRING: Record<string, Email> = {
+  en: {
+    subject: 'An access token for your Glazecalc account expires soon',
+    text:
+      'The access token named "{name}" on the Glazecalc account {account} stops working on {date}.\n\n' +
+      'If you still use it, make a new token before then at {page} and give it to your assistant or script in place of the old one. If you no longer use it, there is nothing to do.\n' +
+      '\n-- \nGlazecalc, {app}\n'
+  }
+};
+
+/** A token's name for an email: one plain line, at most 100 characters. */
+export const tokenNameForMail = (name: string): string =>
+  name
+    .replace(/[\p{Cc}\p{Cf}\p{Zl}\p{Zp}]+/gu, ' ')
+    .trim()
+    .slice(0, 100);
+
+const sendTokenMail = (
+  emails: Record<string, Email>,
+  to: string,
+  token: { name: string; expiresAt: Date },
+  language?: string
+): Promise<void> => {
+  const email = inLanguage(emails, language);
+  // The date in the email's own language: English where the email falls back to it.
+  const dateLanguage = language && emails[language] ? language : 'en';
+  return mailer.send({
+    to,
+    subject: email.subject,
+    text: fill(email.text, {
+      account: to,
+      name: tokenNameForMail(token.name),
+      date: mailDate(token.expiresAt, dateLanguage),
+      page: pageIn(language, '/account'),
+      forgot: pageIn(language, '/forgot'),
+      app: mailer.appUrl()
+    })
+  });
+};
+
+export const sendTokenMade = (to: string, token: { name: string; expiresAt: Date }, language?: string): Promise<void> =>
+  sendTokenMail(TOKEN_MADE, to, token, language);
+
+export const sendTokenExpiring = (
+  to: string,
+  token: { name: string; expiresAt: Date },
+  language?: string
+): Promise<void> => sendTokenMail(TOKEN_EXPIRING, to, token, language);

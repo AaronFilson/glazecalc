@@ -18,6 +18,8 @@ import { SettingsSection } from './settings-section';
 import { SharedRecipes } from './shared-section';
 import { ProvidersSection } from './providers-section';
 import { SignInSection } from './sign-in-section';
+import { TokensSection } from './tokens-section';
+import { TokensService } from '../../core/tokens.service';
 
 /** A change on this page that, with two-step sign-in on, asks for a second step too (decision 6). */
 type Confirming = 'password' | 'email' | 'delete';
@@ -48,6 +50,7 @@ type Confirming = 'password' | 'email' | 'delete';
     SettingsSection,
     SharedRecipes,
     SignInSection,
+    TokensSection,
     TranslocoDirective
   ],
   template: `<ng-container *transloco="let t">
@@ -157,11 +160,39 @@ type Confirming = 'password' | 'email' | 'delete';
         @if (confirming() === 'password') {
           <ng-container [ngTemplateOutlet]="confirmStep" />
         }
+        @if (tokensAfterChange()) {
+          <!-- An ordinary change keeps the access tokens (decision 5): offer to revoke them. -->
+          <div class="account-form tokens-after-change" role="region" aria-labelledby="tokens-kept-heading">
+            <h3 id="tokens-kept-heading" class="h5" tabindex="-1">{{ t('account.tokens.keptHeading') }}</h3>
+            <p>{{ t('account.tokens.keptText', { count: tokens.working().length }) }}</p>
+            <ul>
+              @for (token of tokens.working(); track token.id) {
+                <li>
+                  {{ token.name }} <span class="token-hint">{{ t('account.tokens.hint', { hint: token.hint }) }}</span>
+                </li>
+              }
+            </ul>
+            <div class="d-flex flex-wrap gap-2">
+              <button
+                type="button"
+                class="btn btn-outline-danger"
+                [attr.aria-disabled]="busy() || null"
+                (click)="revokeTokensAfterChange()"
+              >
+                {{ t('account.tokens.revokeAll') }}
+              </button>
+              <button type="button" class="btn btn-light border" (click)="tokensAfterChange.set(false)">
+                {{ t('account.tokens.keep') }}
+              </button>
+            </div>
+          </div>
+        }
       </section>
 
       <gc-sign-in-section (loaded)="mfaLoaded($event)" />
 
       <gc-providers-section [mfa]="mfa()" />
+      <gc-tokens-section [mfa]="mfa()" />
 
       <section class="auth-text">
         <h2 id="email-heading" tabindex="-1">{{ t('account.account.emailHeading') }}</h2>
@@ -211,6 +242,9 @@ type Confirming = 'password' | 'email' | 'delete';
       <section class="auth-text">
         <h2 id="sign-out-heading" tabindex="-1">{{ t('account.account.signOutHeading') }}</h2>
         <p>{{ t('account.account.signOutText') }}</p>
+        @if (tokens.working().length) {
+          <p>{{ t('account.tokens.signOutNote', { count: tokens.working().length }) }}</p>
+        }
         <button
           type="button"
           class="btn btn-outline-secondary"
@@ -312,6 +346,7 @@ export class AccountPage {
     { id: 'password-heading', label: marker('account.account.changeHeading') },
     { id: 'mfa-heading', label: marker('account.mfa.heading') },
     ...(this.providersOn() ? [{ id: 'providers-heading', label: marker('account.providers.heading') }] : []),
+    { id: 'tokens-heading', label: marker('account.tokens.heading') },
     { id: 'email-heading', label: marker('account.account.emailHeading') },
     { id: 'sign-out-heading', label: marker('account.account.signOutHeading') },
     { id: 'delete-heading', label: marker('account.account.deleteHeading') }
@@ -329,6 +364,9 @@ export class AccountPage {
   protected readonly links = new SectionLinks();
   private readonly router = inject(Router);
   private readonly injector = inject(Injector);
+  protected readonly tokens = inject(TokensService);
+  /** After a password change, while access tokens still work: the offer to revoke them. */
+  protected readonly tokensAfterChange = signal(false);
 
   /** The two-step sign-in section's summary, once it has loaded. */
   protected readonly mfa = signal<MfaSummary | null>(null);
@@ -411,6 +449,7 @@ export class AccountPage {
       this.current.set('');
       this.password.set('');
       this.confirmation.set('');
+      void this.offerToRevokeTokens();
     } catch (err) {
       if (this.changeChecks.reportServer(err)) return;
       this.notices.error(errorMessage(err, translate('account.account.changeFailed')));
@@ -428,10 +467,36 @@ export class AccountPage {
       this.notices.success(message);
       this.password.set('');
       this.confirmation.set('');
+      void this.offerToRevokeTokens();
     } catch (err) {
       // The new password (field "password"); the current one, "current", is IdentityConfirm's.
       if (!this.changeChecks.reportServer(err)) throw err;
       this.closeConfirm();
+    }
+  }
+
+  /** After a password change: the access tokens still working, with Revoke all, when there are any. */
+  private async offerToRevokeTokens(): Promise<void> {
+    try {
+      await this.tokens.load();
+    } catch {
+      return;
+    }
+    if (!this.tokens.working().length) return;
+    this.tokensAfterChange.set(true);
+    afterNextRender(() => document.getElementById('tokens-kept-heading')?.focus(), { injector: this.injector });
+  }
+
+  protected async revokeTokensAfterChange(): Promise<void> {
+    if (this.busy()) return;
+    this.busy.set(true);
+    try {
+      this.notices.success(await this.tokens.revokeAll());
+      this.tokensAfterChange.set(false);
+    } catch (err) {
+      this.notices.error(errorMessage(err, translate('account.tokens.revokeFailed')));
+    } finally {
+      this.busy.set(false);
     }
   }
 

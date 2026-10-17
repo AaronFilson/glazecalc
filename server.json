@@ -1,0 +1,26 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.glazecalcapp/glazecalc",
+  "title": "Glazecalc",
+  "description": "Ceramic glaze chemistry: unity formulas, limit checks, substitutes, cones and potters' guides.",
+  "version": "1.0.0",
+  "websiteUrl": "https://glazecalcapp.com/assistants",
+  "repository": {
+    "url": "https://github.com/AaronFilson/glazecalc",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://glazecalcapp.com/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Only to read your own saved records: \"Bearer \" and a personal access token made on your Glazecalc account page. The public tools need none.",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

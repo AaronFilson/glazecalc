@@ -38,6 +38,9 @@ export async function settle(fixture?: ComponentFixture<unknown>): Promise<void>
   if (fixture) await fixture.whenStable();
 }
 
+/** GET /api/tokens for an account with no access tokens (server/routes/token_routes.ts). */
+export const NO_TOKENS = { tokens: [], expiryDays: [7, 30, 90, 365], defaultDays: 30, most: 10, scopes: ['data:read'] };
+
 /** Answers every outstanding GET whose URL ends with the path. */
 export function answer(path: string, body: object | null): void {
   httpMock()

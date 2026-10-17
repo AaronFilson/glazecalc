@@ -28,7 +28,7 @@ import * as password from '../lib/password.ts';
 import * as limits from '../lib/rate_limit.ts';
 import { confirmChange } from '../lib/second_step.ts';
 import * as session from '../lib/session.ts';
-import { revokeAll } from '../models/access_token.ts';
+import AccessToken, { revokeAll, workingTokens } from '../models/access_token.ts';
 import PasswordReset, { cancelLinks } from '../models/password_reset.ts';
 import User, { mfaOn, type UserDocument } from '../models/user.ts';
 import { say } from '../lib/messages.ts';
@@ -141,7 +141,10 @@ passwordRouter.put(
     await setPassword(user, body.password as string);
     // A new session keeps this browser signed in; every other one is signed out.
     session.start(res, user, 7, keepsSignIn(req));
-    return res.status(200).json(say('password-changed', undefined, { email: user.email }));
+    // An ordinary change keeps the access tokens (decision 5); the page lists
+    // those still working, with "Revoke all", when there are any.
+    const tokens = await AccessToken.countDocuments(workingTokens(user._id));
+    return res.status(200).json(say('password-changed', undefined, { email: user.email, tokens }));
   }
 );
 
