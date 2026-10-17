@@ -98,26 +98,40 @@ export const plainMarks = (text: string, address: string): string =>
 export const guideUrl = (id: string, language: string, section?: string): string =>
   site.siteUrl() + languages.languagePrefix(language) + '/guides/' + id + (section ? '#' + section : '');
 
-const cache = new Map<string, Guide | null>();
+/**
+ * The guides read so far, most recently used last. Only real guides, in an
+ * app language and a cone system, are kept (a miss never is), and at most
+ * MOST_CACHED of them: the oldest goes first.
+ */
+export const MOST_CACHED = 64;
+const cache = new Map<string, Guide>();
+
+/** How many guides are kept now (the tests). */
+export const cachedGuides = (): number => cache.size;
 
 /**
  * A guide in the language asked for (an app language, else English), for a
  * cone system (Orton unless asked), or null when there is no such guide.
  */
 export const readGuide = (id: string, asked?: string, cones: ConeSystem = 'orton'): Guide | null => {
+  // Checked before the cache is touched, so what a caller sends never becomes a key.
+  if (!GUIDE_IDS.includes(id)) return null;
   const wanted = languageOf(asked);
-  const key = [id, wanted, cones].join('/');
-  if (cache.has(key)) return cache.get(key)!;
+  const system: ConeSystem = CONE_SYSTEMS.includes(cones) ? cones : 'orton';
+  const key = [id, wanted, system].join('/');
+  const kept = cache.get(key);
+  if (kept) {
+    cache.delete(key);
+    cache.set(key, kept);
+    return kept;
+  }
   let language = wanted;
   let source = markdownOf(id, language);
   if (source === null && language !== 'en') {
     language = 'en';
     source = markdownOf(id, language);
   }
-  if (source === null) {
-    cache.set(key, null);
-    return null;
-  }
+  if (source === null) return null;
   const front = /^---\n([\s\S]*?)\n---\n/.exec(source);
   const meta = Object.fromEntries(
     (front?.[1] ?? '').split('\n').map((line) => {
@@ -125,7 +139,7 @@ export const readGuide = (id: string, asked?: string, cones: ConeSystem = 'orton
       return [line.slice(0, at).trim(), line.slice(at + 1).trim()];
     })
   );
-  const body = forCones(front ? source.slice(front[0].length) : source, cones);
+  const body = forCones(front ? source.slice(front[0].length) : source, system);
   const address = guideUrl(id, wanted);
   const parts = body.split(/^## /m);
   const sections: GuideSection[] = [];
@@ -152,6 +166,7 @@ export const readGuide = (id: string, asked?: string, cones: ConeSystem = 'orton
     sections
   };
   cache.set(key, guide);
+  if (cache.size > MOST_CACHED) cache.delete(cache.keys().next().value!);
   return guide;
 };
 

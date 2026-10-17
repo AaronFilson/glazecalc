@@ -4,10 +4,12 @@
 import { expect } from 'chai';
 import languages from '../../lib/regions/languages.js';
 import {
+  cachedGuides,
   excerptOf,
   forCones,
   GUIDE_IDS,
   guideMarkdown,
+  MOST_CACHED,
   plainMarks,
   plainText,
   readGuide,
@@ -81,6 +83,21 @@ describe('MCP: the guides, read', () => {
         for (const section of translated.sections) expect(['en', code], `${id} ${code}`).to.include(section.language);
       }
     }
+  });
+  it('keep only real guides, and only so many, however many names are asked for', () => {
+    readGuide('firing', 'en');
+    const before = cachedGuides();
+    for (let i = 0; i < 500; i++) {
+      expect(readGuide('nope-' + i, 'en')).to.equal(null);
+      expect(readGuide('firing', 'xx-' + i)!.asked).to.equal('en');
+      // A cone system from outside, unchecked, is read as Orton's.
+      expect(readGuide('firing', 'en', ('cones-' + i) as never)!.id).to.equal('firing');
+    }
+    expect(cachedGuides()).to.equal(before);
+    for (const id of GUIDE_IDS)
+      for (const code of languages.LIVE_LANGUAGES)
+        for (const cones of ['orton', 'sk', 'temperature'] as const) readGuide(id, code, cones);
+    expect(cachedGuides()).to.be.at.most(MOST_CACHED);
   });
 });
 
