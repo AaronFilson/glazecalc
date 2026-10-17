@@ -78,10 +78,36 @@ const GUIDES = { mixing: '/guides/safe-mixing', home: '/guides/home-safety' };
       padding-inline-start: 0.75rem;
       margin: 0;
     }
+    /* On paper, small and run together: the recipe and its hazards fit one page, A4 or Letter. */
     @media print {
       .recipe-hazards {
         break-inside: avoid;
+        font-size: 7.5pt;
+        line-height: 1.25;
+      }
+      .recipe-hazards h3 {
         font-size: 9.5pt;
+        margin: 0 0 0.1rem;
+      }
+      .recipe-hazards-intro {
+        display: none;
+      }
+      .recipe-hazards p,
+      .recipe-hazards-list {
+        margin-bottom: 0.1rem;
+      }
+      .recipe-hazards-list {
+        padding: 0;
+      }
+      .recipe-hazards-list li {
+        display: inline;
+      }
+      .recipe-hazards-list li + li::before {
+        content: ' · ';
+      }
+      .recipe-safety-line {
+        border: 0;
+        padding: 0;
       }
     }
   `

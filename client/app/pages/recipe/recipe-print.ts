@@ -713,6 +713,11 @@ const UNITS: ReadonlyArray<{ value: WeightUnit; label: string }> = [
       display: block;
       margin-top: 1.25rem;
     }
+    @media print {
+      .print-hazards {
+        margin-top: 0.5rem;
+      }
+    }
     @media (max-width: 575.98px) {
       .print-controls,
       .print-sheet {
