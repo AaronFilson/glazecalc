@@ -17,7 +17,7 @@ import { giveBack, makeRoom, type RecordModel } from '../lib/guest_limits.ts';
 import jwtAuth, { userOf } from '../lib/jwt_auth.ts';
 import { say } from '../lib/messages.ts';
 import { isDuplicateKey } from '../lib/mongo_errors.ts';
-import { logActivity } from '../lib/record_history.ts';
+import { keepVersions, logActivity } from '../lib/record_history.ts';
 import requireScope from '../lib/require_scope.ts';
 import RecordVersion from '../models/record_version.ts';
 import Trash, { TRASH_DAYS } from '../models/trash.ts';
@@ -89,6 +89,7 @@ trashRouter.post('/restore/:id', requireScope('trash:write'), async (req, res) =
       await Trash.collection.insertOne(taken);
       throw err;
     }
+    await keepVersions(ownedBy, taken.recordId);
     await logActivity(req, 'restore', entry.fromCollection, record);
     res.status(200).json({ ...say('trash-restored', { label }), fromCollection: entry.fromCollection, record });
     return true;

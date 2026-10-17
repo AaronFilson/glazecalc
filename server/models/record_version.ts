@@ -3,8 +3,12 @@ import mongoose from 'mongoose';
 // Earlier versions of a record (docs/integrations-plan.md, item 2): each
 // change to a recipe, material, note or other record saves the record as it
 // was just before, so the change can be undone. Kept for VERSION_DAYS, and
-// at most VERSIONS_KEPT for one record. Deleted and exported with the
-// account (server/lib/account_data.ts).
+// at most VERSIONS_KEPT for one record (and the one from before an access
+// token's changes, server/lib/record_history.ts). A record in the Trash keeps
+// its versions only as long as its Trash entry: expiresAt is set to the same
+// moment when it is trashed, cleared when it is put back, and they are deleted
+// with the entry when it is deleted for good or pushed out. Deleted and
+// exported with the account (server/lib/account_data.ts).
 
 export const VERSION_DAYS = 90;
 export const VERSIONS_KEPT = 20;
@@ -19,7 +23,9 @@ const recordVersionSchema = new mongoose.Schema(
     record: { type: mongoose.Schema.Types.Mixed, required: true },
     savedAt: { type: Date, required: true, default: () => new Date() },
     /** Who made the change: the web session, a personal token or an OAuth client. */
-    by: { type: String, enum: ['session', 'pat', 'oauth'], default: 'session' }
+    by: { type: String, enum: ['session', 'pat', 'oauth'], default: 'session' },
+    /** While the record is in the Trash: when its Trash entry goes, and these with it. */
+    expiresAt: Date
   },
   { versionKey: false, minimize: false }
 );
@@ -27,5 +33,7 @@ const recordVersionSchema = new mongoose.Schema(
 recordVersionSchema.index({ ownedBy: 1, recordId: 1, savedAt: -1 });
 // MongoDB removes a version VERSION_DAYS after it was saved.
 recordVersionSchema.index({ savedAt: 1 }, { expireAfterSeconds: VERSION_DAYS * 24 * 60 * 60 });
+// And at expiresAt, for a record in the Trash.
+recordVersionSchema.index({ expiresAt: 1 }, { expireAfterSeconds: 0 });
 
 export default mongoose.model('RecordVersion', recordVersionSchema);

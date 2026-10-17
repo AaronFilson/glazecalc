@@ -97,7 +97,7 @@
     "choiceNoWarranty": "Glazecalc is provided as is, without warranty. Its maintainers accept no responsibility or liability for your decision to create an account, or for where its data is held.",
     "keptHeading": "How long it is kept",
     "keptAccount": "<b>Your account and what you save:</b> until you delete them. Accounts are not removed for being unused.",
-    "keptTrash": "<b>The Trash and earlier versions:</b> a removed record 30 days after you removed it, or until you delete it for good or empty the Trash; earlier versions 90 days, and only the last 20 of each record. Both go at once when you delete your account.",
+    "keptTrash": "<b>The Trash and earlier versions:</b> a removed record 30 days after you removed it, or until you delete it for good or empty the Trash; earlier versions 90 days, and only the last 20 of each record (and the one from before an access token's changes), but never longer than the record: while it is in the Trash its versions go when it does. Both go at once when you delete your account.",
     "keptTrial": "<b>A trial:</b> 14 days from its start, then it is deleted with everything in it, unless you create an account to keep it.",
     "keptResets": "<b>Password reset and email links:</b> a reset link works for 30 minutes and its record is deleted after about an hour; a link to confirm an address works, and is kept, for 24 hours.",
     "keptSignIn": "<b>Two-step sign-in:</b> each authenticator app, passkey and set of recovery codes until you remove it, turn two-step sign-in off or delete your account. A sign-in waiting for its second step is deleted after 5 minutes, and an app or passkey you began to add but did not finish, after at most 10.",

@@ -310,6 +310,48 @@ describe('record versions and Undo', () => {
     expect((await undo(saved._id)).body.record.title).to.equal('Celadon');
   });
 
+  it('keeps a trashed record’s versions only as long as its Trash entry, and for their own time once it is back', async () => {
+    const saved = await create();
+    await change(saved._id, 'Celadon 2');
+    const removed = await api()
+      .delete('/recipe/delete/' + saved._id)
+      .set('Authorization', bearer(token));
+    const entry = await Trash.findById(removed.body.trashId).lean();
+    const [version] = await RecordVersion.find({ recordId: saved._id }).lean();
+    expect(version.expiresAt!.getTime()).to.equal(entry!.trashedAt!.getTime() + TRASH_DAYS * DAY);
+    expect(await ttlDays(RecordVersion, 'expiresAt')).to.equal(0);
+    await api()
+      .post('/trash/restore/' + removed.body.trashId)
+      .set('Authorization', bearer(token));
+    expect((await RecordVersion.findById(version._id).lean())!.expiresAt).to.equal(undefined);
+  });
+
+  it('deletes a trashed record’s versions when the Trash pushes it out', async () => {
+    const { user, token: session } = await makeUser();
+    token = session;
+    const saved = await create();
+    await change(saved._id, 'Celadon 2');
+    await api()
+      .delete('/recipe/delete/' + saved._id)
+      .set('Authorization', bearer(token));
+    await Trash.updateOne({ recordId: saved._id }, { $set: { trashedAt: new Date(Date.now() - DAY) } });
+    await Trash.insertMany(
+      Array.from({ length: TRASH_MAX_ACCOUNT }, (_, i) => ({
+        ownedBy: String(user._id),
+        fromCollection: 'recipes',
+        recordId: new Types.ObjectId(),
+        record: { title: 'Newer ' + i },
+        trashedAt: new Date(Date.now() - 1000 - i)
+      }))
+    );
+    // One more on the website pushes out the oldest: the record changed above.
+    await api()
+      .delete('/recipe/delete/' + (await create())._id)
+      .set('Authorization', bearer(token));
+    expect(await Trash.countDocuments({ recordId: saved._id })).to.equal(0);
+    expect(await RecordVersion.countDocuments({ recordId: saved._id })).to.equal(0);
+  });
+
   it('never shows or undoes another account’s versions', async () => {
     const saved = await create();
     await change(saved._id, 'Celadon 2');

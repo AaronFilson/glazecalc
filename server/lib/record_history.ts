@@ -7,13 +7,15 @@ import type { Request } from 'express';
 import type { Types } from 'mongoose';
 import Activity, { TITLE_LENGTH, type ActivityAction } from '../models/activity.ts';
 import RecordVersion, { VERSIONS_KEPT } from '../models/record_version.ts';
-import Trash, { TRASH_MAX_ACCOUNT, TRASH_MAX_TRIAL } from '../models/trash.ts';
+import Trash, { TRASH_DAYS, TRASH_MAX_ACCOUNT, TRASH_MAX_TRIAL } from '../models/trash.ts';
 import type { UserDocument } from '../models/user.ts';
 import type { RecordModel } from './guest_limits.ts';
 import * as log from './log.ts';
 
 type Row = Record<string, unknown> & { _id: Types.ObjectId };
 type By = 'session' | 'pat' | 'oauth';
+
+const DAY = 24 * 60 * 60 * 1000;
 
 /** Who is making the change: the web session, or the kind of access token. */
 export const byOf = (req: Request): By => {
@@ -73,14 +75,31 @@ export const moveToTrash = async (
     await Trash.deleteOne({ _id: entry._id });
     return null;
   }
+  // Its earlier versions go when its Trash entry does (models/record_version.ts).
+  await RecordVersion.updateMany(
+    { ownedBy, recordId: record._id },
+    { $set: { expiresAt: new Date(now.getTime() + TRASH_DAYS * DAY) } }
+  );
   if (!byToken) await keepTrashWithin(ownedBy, most);
   return { record, trashId: String(entry._id) };
 };
 
-/** Deletes for good the oldest of the user's Trash past `most`. */
+/** Deletes for good the oldest of the user's Trash past `most`, with their earlier versions. */
 const keepTrashWithin = async (ownedBy: string, most: number): Promise<void> => {
-  const over = await Trash.find({ ownedBy }).sort({ trashedAt: -1, _id: -1 }).skip(most).select({ _id: 1 }).lean();
-  if (over.length) await Trash.deleteMany({ _id: { $in: over.map((entry) => entry._id) } });
+  const over = await Trash.find({ ownedBy })
+    .sort({ trashedAt: -1, _id: -1 })
+    .skip(most)
+    .select({ _id: 1, recordId: 1 })
+    .lean();
+  if (!over.length) return;
+  await Trash.deleteMany({ _id: { $in: over.map((entry) => entry._id) } });
+  const ids = over.flatMap((entry) => (entry.recordId ? [entry.recordId] : []));
+  if (ids.length) await RecordVersion.deleteMany({ ownedBy, recordId: { $in: ids } });
+};
+
+/** A record put back from the Trash keeps its earlier versions for their own time again. */
+export const keepVersions = async (ownedBy: string, recordId: Types.ObjectId): Promise<void> => {
+  await RecordVersion.updateMany({ ownedBy, recordId }, { $unset: { expiresAt: 1 } });
 };
 
 /**
