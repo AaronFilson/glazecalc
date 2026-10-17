@@ -117,7 +117,7 @@ describe('region facts', () => {
     fs.readFileSync(new URL('../../client/public/i18n/guides/en.json', import.meta.url), 'utf8')
   );
   const HTTP_ONLY = ['丸二陶料', '太麟化工原料有限公司', 'Sam Mui Kuang Pottery'];
-  const NO_SHOP_FOUND = ['MY'];
+  const NO_SHOP_FOUND = ['MY', 'CN', 'HK', 'ID', 'TH', 'PH'];
   const checkedLately = (fact: { checked: string; source?: string; url?: string }, label: string) => {
     expect(fact.source ?? fact.url, label).to.match(/^https:\/\//);
     expect(Date.parse(fact.checked), label + ': check this again').to.be.above(yearAgo);
@@ -439,6 +439,30 @@ describe('regions before Korea', () => {
   });
 });
 
+// The same, with Korea, Taiwan, Singapore and Malaysia, before China, Hong Kong, Indonesia and Thailand.
+describe('regions before China', () => {
+  it('keep their data exactly', () => {
+    const codes = [
+      'US', 'GB', 'AU', 'NZ', 'AT', 'BE', 'BG', 'HR', 'CY', 'CZ', 'DK', 'EE', 'FI', 'FR', 'DE', 'GR',
+      'HU', 'IE', 'IT', 'LV', 'LT', 'LU', 'MT', 'NL', 'PL', 'PT', 'RO', 'SK', 'SI', 'ES', 'SE', 'JP', 'TR',
+      'KR', 'TW', 'SG', 'MY'
+    ]; // prettier-ignore
+    const data: unknown[] = codes.map((code) => [
+      code,
+      regions.regionFor(code),
+      safety.SAFETY[code],
+      safety.MINISTRIES[code] ?? null,
+      workplace.WORKPLACE[code] ?? null,
+      food.FOOD[code] ?? null,
+      suppliers.SUPPLIERS[code] ?? null
+    ]);
+    data.push(['EU', food.FOOD['EU'], workplace.EU_SILICA]);
+    const hash = crypto.createHash('sha256').update(JSON.stringify(data)).digest('hex');
+    // Changed once on purpose: Taiwan's 119 note now says when to dial 112 (2026-10-16).
+    expect(hash).to.equal('78a40b67ef1ab8b683926873f242f85e67202d6bc66d38ac77f9340f21c0c980');
+  });
+});
+
 // South Korea (docs/asia-plan.md, Phase C), from research_notes/Asia/verification-KR-TW-SG-MY-2026-10-16.md.
 describe('South Korea', () => {
   it('fires by temperature, reads density as specific gravity, and lists the US library', () => {
@@ -658,5 +682,172 @@ describe('Malaysia', () => {
 
   it('lists no shop, since none was found', () => {
     expect(suppliers.shopsFor('MY')).to.eql({ shops: [], nearby: [] });
+  });
+});
+
+// China (docs/asia-plan.md, Phase C), from research_notes/Asia/regions-CN-HK-ID-TH-VN-PH-2026-10-16.md.
+describe('China', () => {
+  it('fires by temperature, reads density as specific gravity, and lists the US library', () => {
+    expect(regions.regionFor('CN')).to.include({
+      name: 'China',
+      temperature: 'C',
+      cones: 'temperature',
+      density: 'sg',
+      library: 'US'
+    });
+    expect(regions.regionFor('CN')!.languages).to.eql(['zh-Hans']);
+    expect(regions.formatLocaleFor('zh-Hans', 'CN', 'auto')).to.equal('zh-Hans-CN');
+  });
+
+  it('gives 120, and neither the poison line whose hours and callers no page states nor an unread ministry', () => {
+    const shown = safety.shownFor('CN')!;
+    expect(shown.emergency.map((line) => line.number)).to.eql(['120']);
+    expect(shown.poison).to.eql([]);
+    expect(JSON.stringify(safety.SAFETY['CN'])).not.to.contain('8313');
+    expect(safety.ministryFor('CN')).to.equal(null);
+  });
+
+  it("gives GBZ 2.1's binding limits by band of free silica, the top band's as quartz's", () => {
+    const facts = workplace.workplaceFor('CN')!;
+    const silica = facts.silica!;
+    expect(silica).to.include({ quartz: 0.2, kind: 'binding', status: 'verified' });
+    expect(silica.cristobalite).to.equal(undefined);
+    expect(silica.bands).to.eql([
+      { from: 10, fromIncluded: true, to: 50, value: 0.7 },
+      { from: 50, fromIncluded: false, to: 80, value: 0.3 },
+      { from: 80, fromIncluded: false, value: 0.2 }
+    ]);
+    // Bands run upward without gaps, and the top one is quartz's.
+    for (const [code, entry] of Object.entries(workplace.WORKPLACE)) {
+      const bands = entry.silica?.bands;
+      if (!bands) continue;
+      bands.slice(1).forEach((band, i) => expect(band.from, code).to.equal(bands[i]!.to));
+      expect(bands.at(-1)!.to, code).to.equal(undefined);
+      expect(bands.at(-1)!.value, code).to.equal(entry.silica!.quartz);
+    }
+    expect(facts.agency).to.equal(null);
+    expect(facts.respirators).to.equal(null);
+  });
+
+  it('gives no food-contact rules and no shop, since neither could be confirmed', () => {
+    expect(food.foodRulesFor('CN')).to.equal(null);
+    expect(suppliers.shopsFor('CN')).to.eql({ shops: [], nearby: [] });
+  });
+});
+
+describe('Hong Kong', () => {
+  it("reads Traditional Chinese and English, formats as Hong Kong's, and comes after Taiwan", () => {
+    expect(regions.regionFor('HK')).to.include({ temperature: 'C', cones: 'temperature', library: 'US' });
+    expect(regions.regionFor('HK')!.languages).to.eql(['zh-Hant', 'en']);
+    expect(regions.formatLocaleFor('zh-Hant', 'HK', 'auto')).to.equal('zh-Hant-HK');
+    expect(regions.formatLocaleFor('en', 'HK', 'auto')).to.equal('en-HK');
+    // Traditional Chinese pages are prerendered for the first region listing it first: Taiwan.
+    expect(regions.REGION_CODES.indexOf('TW')).to.be.below(regions.REGION_CODES.indexOf('HK'));
+  });
+
+  it('gives 999 and the Department of Health, since the poison centre answers only professionals', () => {
+    const shown = safety.shownFor('HK')!;
+    expect(shown.emergency.map((line) => line.number)).to.eql(['999']);
+    expect(shown.poison).to.eql([]);
+    expect(safety.ministryFor('HK')).to.include({ url: 'https://www.dh.gov.hk/' });
+  });
+
+  it("gives the Labour Department's guide values, quartz 0.1 and cristobalite 0.05", () => {
+    const facts = workplace.workplaceFor('HK')!;
+    expect(facts.silica).to.include({ quartz: 0.1, cristobalite: 0.05, kind: 'indicative' });
+    expect(facts.agency).to.include({ silicaUrl: 'https://www.labour.gov.hk/eng/public/oh/silicosis.pdf' });
+  });
+
+  it('gives no food-contact rules, since none of its own were found', () => {
+    expect(food.foodRulesFor('HK')).to.equal(null);
+  });
+});
+
+describe('Indonesia', () => {
+  it('fires by temperature and lists the US library', () => {
+    expect(regions.regionFor('ID')).to.include({ temperature: 'C', cones: 'temperature', library: 'US' });
+    expect(regions.regionFor('ID')!.languages).to.eql(['id']);
+    expect(regions.formatLocaleFor('id', 'ID', 'auto')).to.equal('id-ID');
+  });
+
+  it('gives 119, no poison line, and the health ministry', () => {
+    const shown = safety.shownFor('ID')!;
+    expect(shown.emergency.map((line) => line.number)).to.eql(['119']);
+    expect(shown.poison).to.eql([]);
+    expect(JSON.stringify(safety.SAFETY['ID'])).not.to.contain('500533');
+    expect(safety.ministryFor('ID')).to.include({ name: 'Kementerian Kesehatan' });
+  });
+
+  it("gives Permenaker 5/2018's NAB of 0.025 for quartz and cristobalite", () => {
+    const facts = workplace.workplaceFor('ID')!;
+    expect(facts.silica).to.include({ quartz: 0.025, kind: 'binding' });
+    expect(facts.silica!.cristobalite).to.equal(undefined);
+    expect(facts.agency).to.include({ abbr: 'Kemnaker' });
+  });
+
+  it("gives BPOM 11/2026's limits, the same for both hollow sizes, with no in-force date not read", () => {
+    const { rules } = food.foodRulesFor('ID')!;
+    expect(rules.limits.map((l) => [l.category, l.lead, l.cadmium, l.unit])).to.eql([
+      ['idFlat', 0.8, 0.07, 'mg/dm²'],
+      ['idSmall', 0.5, 0.25, 'mg/L'],
+      ['idLarge', 0.5, 0.25, 'mg/L']
+    ]);
+    expect(rules.inForce).to.equal(undefined);
+    expect(rules.note).to.contain('third');
+  });
+});
+
+describe('Thailand', () => {
+  it('fires by temperature and lists the US library', () => {
+    expect(regions.regionFor('TH')).to.include({ temperature: 'C', cones: 'temperature', library: 'US' });
+    expect(regions.regionFor('TH')!.languages).to.eql(['th']);
+    expect(regions.formatLocaleFor('th', 'TH', 'auto')).to.equal('th-TH');
+  });
+
+  it('gives 1669 and the Ramathibodi Poison Center, 1367, around the clock, with no claim on cost', () => {
+    const shown = safety.shownFor('TH')!;
+    expect(shown.emergency.map((line) => line.number)).to.eql(['1669']);
+    expect(shown.poison.map((line) => [line.number, line.tel])).to.eql([['1367', '1367']]);
+    expect(shown.poison[0]).to.include({ who: 'public', hours: '24 hours, every day' });
+    expect(JSON.stringify(safety.SAFETY['TH'])).not.to.match(/free/i);
+  });
+
+  it("gives the labour department's limit of 0.025 for quartz and cristobalite", () => {
+    const facts = workplace.workplaceFor('TH')!;
+    expect(facts.silica).to.include({ quartz: 0.025, kind: 'binding' });
+    expect(facts.agency).to.include({ url: 'https://osh.labour.go.th/' });
+  });
+
+  it("gives Notification No. 92's five kinds of piece, all in mg/L", () => {
+    const { rules } = food.foodRulesFor('TH')!;
+    expect(rules.inForce).to.equal('1985-09-03');
+    expect(rules.limits.map((l) => [l.category, l.lead, l.cadmium, l.unit])).to.eql([
+      ['thFlat', 7, 0.7, 'mg/L'],
+      ['thSmall', 5, 0.5, 'mg/L'],
+      ['thLarge', 2.5, 0.25, 'mg/L'],
+      ['thInfant', 2.5, 0.25, 'mg/L'],
+      ['thCooking', 5, 0.5, 'mg/L']
+    ]);
+  });
+});
+
+describe('Philippines', () => {
+  it('stays in English, fires by temperature, and lists the US library', () => {
+    expect(regions.regionFor('PH')).to.include({ temperature: 'C', cones: 'temperature', library: 'US' });
+    expect(regions.regionFor('PH')!.languages).to.eql(['fil', 'en']);
+    expect(regions.formatLocaleFor('en', 'PH', 'auto')).to.equal('en-PH');
+  });
+
+  it('gives 911 and the National Poison Management and Control Center, 24 hours and free', () => {
+    const shown = safety.shownFor('PH')!;
+    expect(shown.emergency.map((line) => line.number)).to.eql(['911']);
+    expect(shown.poison.map((line) => [line.number, line.tel])).to.eql([['(02) 8524 1078', '+63285241078']]);
+    expect(shown.poison[0]).to.include({ who: 'public', hours: '24 hours, every day, free' });
+  });
+
+  it('gives no silica limit, food-contact rules or shop, since none could be read', () => {
+    expect(workplace.workplaceFor('PH')).to.eql({ silica: null, agency: null, respirators: null, eu: false });
+    expect(food.foodRulesFor('PH')).to.equal(null);
+    expect(suppliers.shopsFor('PH')).to.eql({ shops: [], nearby: [] });
   });
 });

@@ -595,22 +595,22 @@ Label: 手動の窯の最初の目安
 
 **温度計**（パイロメーター）は、窯の壁から差し込んだ温度センサー、**熱電対**の値を表示する計器です。窯がどれだけ速く昇温しているかがわかるので、コーンの温度表の正しい列を選べます。しかし、測っているのは作品の所ではなく壁の近くで、値も次第にずれていきます。L&L によれば、K 熱電対はオルトンコーン 6 の焼成を繰り返すと {{25 °F; 14 °C}} を超えてずれることがあり、「コーン一つ分を超える差」になります。一方、自立型コーンのばらつきは {{4 °F; 2 °C}} 以下です。オルトンは、温度計はときどき較正し直す必要があり、その確認に使うのがコーンだと述べています。
 
-## 排気、のぞき穴、安全 {#venting}
+## Venting, peeking and safety {#venting lang=en}
 
-### 排気
+### Venting
 
-焼成の初期には、粘土と釉薬から水蒸気と、一酸化炭素を含むガスが出ます。釉薬は焼成の後半にも有毒なガスを出すことがあります。L&L は、これらを排気することを「不可欠」としています。排気装置がない場合は、上の手順のように、初期の段階で蓋を少し開けて支え、のぞき穴を開けておくことになります。この間に昇温をゆっくりにすると、炭素も燃え抜けやすくなります。**下引き排気装置**（窯に取り付ける電動の排気装置）がある場合、オルトンによれば、蓋とのぞき穴は、コーンを確認するとき以外、焼成中ずっと閉めておきます。上ののぞき穴を開けておくと、キルンシッターのチューブと窯の金属部分を守ることにもなります。
+Early in a firing, clay and glaze give off water vapor and fumes, including carbon monoxide, and glazes can give off toxic fumes later in the firing too. L&L calls venting them "essential". With no vent system, that means the lid propped and the peepholes open in the early stages, as in the procedures above; slowing the heating during this time also helps the carbon burn out. In a kiln without a vent, Dawson, who made the sitter, also says to leave the top peephole open for the whole firing: the venting "will reduce deterioration of the kiln's metal parts and increase the life of the tube assembly". A **downdraft vent** (a powered vent fitted to the kiln) changes this. It does the venting, so Orton says the lid and peepholes stay closed for the whole firing except to check the cones, and L&L says to leave the vent on and plug the peepholes.
 
-部屋の換気と一酸化炭素警報器については、「[安全な調合と換気](/guides/safe-mixing)」と「[家族を中毒にさせない](/guides/home-safety)」を参照してください。
+For venting the room, and for carbon monoxide alarms, see [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety).
 
-### 焼成中は
+### While the kiln is firing
 
-- のぞき穴は、赤外線を遮る遮光度番号3の溶接用遮光メガネをかけたときだけのぞいてください。サングラスでは不十分です。Skutt は、栓が落ちないよう、ひねってはめ込むことをすすめています。
-- 予想焼成時間を超えて、窯を無人のままにしないでください。キルンシッターはフェイルセーフではありません。
-- 木の床やカーペットなど、燃えるものの上や近くでは、絶対に焼成しないでください。
-- 取扱説明書にある離隔距離を守ってください。公表されている数値は 12 インチ（30 cm）から 3 フィート（91 cm）まであります。取扱説明書に記載がなければ、壁から 18 インチ（46 cm）、燃えるものから 3 フィート（91 cm）離すのが最も安全です。
-- キルンシッターのウェイトが落ちられるよう、その周りには何も置かないでください。
-- 焼成が終わったら、スイッチを切り、ブレーカーも切ってください。
+- Look through a peephole only with IR-rated shade 3 welding glasses; sunglasses are not enough. Skutt advises twisting the plugs into place so they do not fall out.
+- Do not leave the kiln unattended beyond its expected firing time; a sitter is not a fail-safe.
+- Never fire on or near anything that burns, such as a wood floor or carpet.
+- Keep the clearances in your manual. Published figures range from 12 in (30 cm) to 3 ft (91 cm); where the manual is silent, 18 in (46 cm) from walls and 3 ft (91 cm) from anything that burns is the safest choice.
+- Keep the space around the sitter's weight clear so it can drop.
+- When the firing ends, turn the switches off and turn off the breaker as well.
 
 ## 冷却と窯出し {#cooling}
 

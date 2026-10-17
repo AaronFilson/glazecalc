@@ -65,49 +65,49 @@ Label: 二氧化矽容許濃度
 
 這個順序是我們的建議，依據的是 HSE 先避免粉料的原則。逐步的秤料與調配方法，請參閱[如何調配釉藥](/guides/making-a-glaze)。
 
-## 防塵口罩 {#respirators}
+## Respirators {#respirators lang=en}
 
-**防塵口罩**（呼吸防護具）是經過認證、能濾除您吸入空氣中細微粒子的口罩。防塵口罩只有與臉部密合時才有效，而且是用來輔助良好的習慣，不能取代習慣。
+A **respirator** is a mask certified to filter fine particles from the air you breathe. It works only when it seals to your face, and it backs up good habits rather than replacing them.
 
-### 各地區的等級
+### Classes by region
 
-Table: 各地區的防塵口罩等級（對釉藥粉塵而言大致相當）
-Label: 防塵口罩等級
+Table: Particle respirator classes by region (rough equivalents for glaze dust)
+Label: Respirator classes
 
-| 地區         | 日常等級 | 較高等級 | 認明標示                                                                           |
-| ------------ | -------- | -------- | ---------------------------------------------------------------------------------- |
-| 美國         | N95      | P100     | 口罩或其包裝上的 NIOSH 認證                                                        |
-| 英國與歐盟   | FFP2     | FFP3     | 拋棄式口罩上的 EN 149；可重複使用的半面式呼吸防護具上的 EN 140，搭配 P2 或 P3 濾材 |
-| 澳洲與紐西蘭 | P2       | P3       | AS/NZS 1716                                                                        |
+| Region                    | Everyday class | Higher class | Look for                                                                         |
+| ------------------------- | -------------- | ------------ | -------------------------------------------------------------------------------- |
+| United States             | N95            | P100         | NIOSH approval on the mask or its packaging                                      |
+| UK and EU                 | FFP2           | FFP3         | EN 149 on disposable masks; EN 140 on reusable half masks, with P2 or P3 filters |
+| Australia and New Zealand | P2             | P3           | AS/NZS 1716                                                                      |
 
-較高等級能濾除較大比例的細微粒子。對於澳洲 P3 的過濾效率，各資料來源說法不一（99% 以上，或 99.95% 以上），因此請購買您所在地區販售的認證等級。可重複使用的**半面式呼吸防護具**（遮住口鼻、濾材可更換）裝上 P100 濾材（美國以外為 P3），是工作室常見的選擇。
+The higher class filters a larger share of fine particles. Sources disagree on what an Australian P3 filters (at least 99%, or at least 99.95%), so buy the certified class sold in your region. A reusable **half mask** (covering the nose and mouth, with replaceable filters) fitted with P100 filters (P3 outside the US) is a common studio choice.
 
-### 配戴與密合
+### Fit and seal
 
-會漏氣的口罩，不論等級為何，粉塵都會從邊緣進入。英國 HSE 警告，鬍渣和鬍子「使口罩不可能良好密合」。
+A mask that leaks lets dust in around its edges, whatever its class. HSE warns that stubble and beards "make it impossible to get a good seal".
 
-- **在工作前不久刮鬍子**。對於「刮乾淨」必須在多久之內，各指引說法不同：8 小時內（一家英國製造商，引用 HSE），或最好在 12 小時內（澳洲與紐西蘭的密合度測試標準）。在工作前不久刮鬍子，兩者都能符合。
-- **如果您留鬍子**，鬆配式的**動力型呼吸防護具**（PAPR：附有風扇、會供應過濾空氣的頭罩或頭盔）不需要與臉部密合。
-- **選對尺寸**。不密合是漏氣的主要原因之一。職場會做**密合度測試**，檢查某一款口罩在某一個人的臉上是否密合。在家裡，我們建議每次戴上時，依照製造商的說明檢查密合。
+- **Shave shortly before you work.** Guidance differs on how recent "clean-shaven" must be. A UK maker, citing HSE, says shaved within 8 hours of starting work. The Australian and New Zealand fit-test standard asks for a shave before a fit test, "preferably within 12 hours". Shaving shortly before you work meets both.
+- **If you keep a beard,** a loose-fitting **powered respirator** (PAPR: a hood or helmet with a fan that supplies filtered air) needs no face seal.
+- **Get the size right.** Poor fit is a major cause of leaks. Workplaces use a **fit test**, a check that a particular mask seals on a particular face. At home, we suggest following the maker's instructions for checking the seal each time you put it on.
 
 > [!NOTE]
-> 我們認為，密合比等級更重要：配戴良好的 N95、FFP2 或 P2，效果通常會比鬆垮的 P100 更好。
+> In our view, fit matters more than class: a well-fitted N95, FFP2 or P2 will usually do better than a loose P100.
 
-### 何時配戴
+### When to wear one
 
-HSE 說，若秤料和調配是在有排氣的密閉設備中進行，防塵口罩「通常不需要」，但「維護和清潔時可能需要」。大多數家庭工作室沒有密閉設備，因此我們建議在下列情況配戴（至少 N95、FFP2 或 P2；P100、FFP3 或 P3 更好）：
+HSE says a respirator is "normally not needed" where weighing and mixing happen in a ventilated enclosure, but "may be needed for maintenance and cleaning". Most home studios have no enclosure, so we suggest wearing one (N95, FFP2 or P2 at least; P100, FFP3 or P3 is better) whenever you:
 
-- 打開袋子或倒出粉料時；
-- 秤取粉料並攪入水中時；
-- 刮除、砂磨或研磨乾掉的釉或素燒坯{{en: bisque}}時；
-- 進行任何乾式清潔，或倒空吸塵器時；
-- 噴釉時（在噴釉台內噴：見下文）。
+- open bags or tip out powder;
+- weigh powders and stir them into water;
+- scrape, sand or grind dried glaze or bisque;
+- do any dry cleanup, or empty a vacuum;
+- spray glaze (in a booth: see below).
 
-### 哪些不是防塵口罩
+### What is not a respirator
 
-- 外科口罩、布口罩，以及沒有 NIOSH、EN 149 或 AS/NZS 1716 標示的「低危害性粉塵」口罩。我們不會靠它們來防護釉藥粉塵。
-- 防塵口罩「無法保護您免受氣體、蒸氣的危害」（美國 OSHA），所以對窯燒產生的煙氣毫無作用。
-- 好好保養您的口罩：OSHA 指出，骯髒或使用不當的呼吸防護具「可能變成一種危害」。請保持清潔，存放在遠離沾滿粉塵的工作服的地方。
+- Surgical masks, cloth masks and "nuisance dust" masks without a NIOSH, EN 149 or AS/NZS 1716 marking. We would not rely on them for glaze dust.
+- A dust respirator "will not protect you against gases, vapors" (OSHA), so it does nothing for kiln fumes.
+- Look after yours: OSHA notes that a dirty or misused respirator "can become a hazard". Store it clean, away from dusty work clothes.
 
 ## 清潔、衣物與雙手 {#cleaning}
 

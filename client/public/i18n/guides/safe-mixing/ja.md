@@ -65,49 +65,49 @@ EU の限度値より低い値を定めている EU 加盟国もいくつかあ�
 
 この順序は、まず粉を避けるという HSE の原則に基づく私たちの提案です。計量と調合の手順は「[釉薬の作り方](/guides/making-a-glaze)」を参照してください。
 
-## 防じんマスク {#respirators}
+## Respirators {#respirators lang=en}
 
-**防じんマスク**は、吸い込む空気から細かい粒子をろ過することが認証されたマスクです。顔に密着して初めて効果があり、良い習慣の代わりではなく、それを補うものです。
+A **respirator** is a mask certified to filter fine particles from the air you breathe. It works only when it seals to your face, and it backs up good habits rather than replacing them.
 
-### 地域ごとの区分
+### Classes by region
 
-Table: 地域ごとの防じんマスクの区分（釉薬の粉じんに対するおおよその対応）
-Label: 防じんマスクの区分
+Table: Particle respirator classes by region (rough equivalents for glaze dust)
+Label: Respirator classes
 
-| 地域                             | 一般的な区分 | 上位の区分 | 確認する表示                                                                                    |
-| -------------------------------- | ------------ | ---------- | ----------------------------------------------------------------------------------------------- |
-| 米国                             | N95          | P100       | マスクまたはパッケージの NIOSH 認証                                                             |
-| 英国・EU                         | FFP2         | FFP3       | 使い捨てマスクは EN 149、再使用できる半面形マスクは EN 140（P2 または P3 のフィルターを付ける） |
-| オーストラリア・ニュージーランド | P2           | P3         | AS/NZS 1716                                                                                     |
+| Region                    | Everyday class | Higher class | Look for                                                                         |
+| ------------------------- | -------------- | ------------ | -------------------------------------------------------------------------------- |
+| United States             | N95            | P100         | NIOSH approval on the mask or its packaging                                      |
+| UK and EU                 | FFP2           | FFP3         | EN 149 on disposable masks; EN 140 on reusable half masks, with P2 or P3 filters |
+| Australia and New Zealand | P2             | P3           | AS/NZS 1716                                                                      |
 
-上位の区分ほど、細かい粒子をろ過する割合が大きくなります。オーストラリアの P3 がどれだけろ過するかは出典によって異なる（99%以上、または99.95%以上）ため、お住まいの地域で販売されている認証済みの区分を購入してください。P100 フィルター（米国以外では P3）を取り付けた再使用できる**半面形マスク**（鼻と口を覆い、フィルターを交換できるもの）は、工房でよく選ばれています。
+The higher class filters a larger share of fine particles. Sources disagree on what an Australian P3 filters (at least 99%, or at least 99.95%), so buy the certified class sold in your region. A reusable **half mask** (covering the nose and mouth, with replaceable filters) fitted with P100 filters (P3 outside the US) is a common studio choice.
 
-### フィットと密着
+### Fit and seal
 
-漏れのあるマスクは、区分にかかわらず、縁のすき間から粉じんが入ります。英国の HSE は、無精ひげやあごひげがあると「十分な密着を得ることが不可能になる」と警告しています。
+A mask that leaks lets dust in around its edges, whatever its class. HSE warns that stubble and beards "make it impossible to get a good seal".
 
-- **作業の少し前にひげをそってください**。「ひげをそった状態」がどれくらい直前であるべきかは、指針によって異なります。8時間以内（HSE を引用する英国のメーカー）、またはできれば12時間以内（オーストラリアとニュージーランドのフィットテスト規格）です。作業の少し前にそれば、どちらも満たせます。
-- **あごひげを残す場合は**、ゆったりした**電動ファン付き呼吸用保護具**（PAPR: ファンでろ過した空気を送るフードやヘルメット）なら、顔への密着は必要ありません。
-- **サイズを合わせてください**。合っていないことは漏れの大きな原因です。職場では**フィットテスト**、つまり特定のマスクが特定の人の顔に密着するかどうかの確認を行います。家庭では、着用のたびにメーカーの説明に従って密着を確認することをおすすめします。
+- **Shave shortly before you work.** Guidance differs on how recent "clean-shaven" must be. A UK maker, citing HSE, says shaved within 8 hours of starting work. The Australian and New Zealand fit-test standard asks for a shave before a fit test, "preferably within 12 hours". Shaving shortly before you work meets both.
+- **If you keep a beard,** a loose-fitting **powered respirator** (PAPR: a hood or helmet with a fan that supplies filtered air) needs no face seal.
+- **Get the size right.** Poor fit is a major cause of leaks. Workplaces use a **fit test**, a check that a particular mask seals on a particular face. At home, we suggest following the maker's instructions for checking the seal each time you put it on.
 
 > [!NOTE]
-> 私たちの考えでは、区分よりフィットのほうが重要です。よく合った N95、FFP2 または P2 は、たいてい緩い P100 より効果があります。
+> In our view, fit matters more than class: a well-fitted N95, FFP2 or P2 will usually do better than a loose P100.
 
-### 着用するとき
+### When to wear one
 
-HSE は、計量と調合を換気された囲いの中で行う場合、防じんマスクは「通常は必要ない」が、「保守や清掃では必要になることがある」と述べています。家庭の工房のほとんどには囲いがないため、次の作業のときはいつも着用することをおすすめします（少なくとも N95、FFP2 または P2。P100、FFP3 または P3 ならさらによい）。
+HSE says a respirator is "normally not needed" where weighing and mixing happen in a ventilated enclosure, but "may be needed for maintenance and cleaning". Most home studios have no enclosure, so we suggest wearing one (N95, FFP2 or P2 at least; P100, FFP3 or P3 is better) whenever you:
 
-- 袋を開けるとき、粉を出すとき。
-- 粉を計量し、水に混ぜるとき。
-- 乾いた釉薬や素焼き{{en: bisque}}の器を削る、やすりをかける、研削するとき。
-- 乾いたまま掃除をするとき、掃除機のごみを捨てるとき。
-- 釉薬を吹き掛けるとき（ブースの中で。後述）。
+- open bags or tip out powder;
+- weigh powders and stir them into water;
+- scrape, sand or grind dried glaze or bisque;
+- do any dry cleanup, or empty a vacuum;
+- spray glaze (in a booth: see below).
 
-### 防じんマスクではないもの
+### What is not a respirator
 
-- サージカルマスク、布マスク、NIOSH、EN 149、AS/NZS 1716 の表示がない「簡易マスク」。釉薬の粉じんに対して、私たちならこれらには頼りません。
-- 防じんマスクは「ガスや蒸気からは守ってくれない」（OSHA）ため、窯から出るガスには何の効果もありません。
-- 手入れをしてください。OSHA は、汚れた防じんマスクや誤った使い方をしたマスクは「危険の元になりうる」と指摘しています。粉じんの付いた作業着から離して、清潔な状態で保管してください。
+- Surgical masks, cloth masks and "nuisance dust" masks without a NIOSH, EN 149 or AS/NZS 1716 marking. We would not rely on them for glaze dust.
+- A dust respirator "will not protect you against gases, vapors" (OSHA), so it does nothing for kiln fumes.
+- Look after yours: OSHA notes that a dirty or misused respirator "can become a hazard". Store it clean, away from dusty work clothes.
 
 ## 掃除、衣服、手 {#cleaning}
 

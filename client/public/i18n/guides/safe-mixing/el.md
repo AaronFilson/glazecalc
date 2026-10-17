@@ -65,49 +65,49 @@ Label: Οριακές τιμές έκθεσης στο πυριτικό
 
 Αυτή η σειρά είναι δική μας πρόταση, με βάση την αρχή της HSE να αποφεύγεται πρώτα από όλα η σκόνη. Για τη ζύγιση και το ανακάτεμα βήμα βήμα, δείτε [Πώς να φτιάξετε ένα υάλωμα](/guides/making-a-glaze).
 
-## Μάσκες προστασίας της αναπνοής {#respirators}
+## Respirators {#respirators lang=en}
 
-Η **μάσκα προστασίας της αναπνοής** είναι μάσκα πιστοποιημένη να φιλτράρει τα λεπτά σωματίδια από τον αέρα που αναπνέετε. Λειτουργεί μόνο όταν εφαρμόζει στεγανά στο πρόσωπό σας, και συμπληρώνει τις καλές συνήθειες, δεν τις αντικαθιστά.
+A **respirator** is a mask certified to filter fine particles from the air you breathe. It works only when it seals to your face, and it backs up good habits rather than replacing them.
 
-### Κατηγορίες ανά περιοχή
+### Classes by region
 
-Table: Κατηγορίες μασκών για σωματίδια ανά περιοχή (κατά προσέγγιση αντίστοιχες για τη σκόνη των υαλωμάτων)
-Label: Κατηγορίες μασκών
+Table: Particle respirator classes by region (rough equivalents for glaze dust)
+Label: Respirator classes
 
-| Περιοχή                    | Συνήθης κατηγορία | Ανώτερη κατηγορία | Τι να αναζητήσετε                                                                               |
-| -------------------------- | ----------------- | ----------------- | ----------------------------------------------------------------------------------------------- |
-| ΗΠΑ                        | N95               | P100              | Έγκριση NIOSH στη μάσκα ή στη συσκευασία της                                                    |
-| Ηνωμένο Βασίλειο και ΕΕ    | FFP2              | FFP3              | EN 149 στις μάσκες μιας χρήσης. EN 140 στις επαναχρησιμοποιούμενες ημιμάσκες, με φίλτρα P2 ή P3 |
-| Αυστραλία και Νέα Ζηλανδία | P2                | P3                | AS/NZS 1716                                                                                     |
+| Region                    | Everyday class | Higher class | Look for                                                                         |
+| ------------------------- | -------------- | ------------ | -------------------------------------------------------------------------------- |
+| United States             | N95            | P100         | NIOSH approval on the mask or its packaging                                      |
+| UK and EU                 | FFP2           | FFP3         | EN 149 on disposable masks; EN 140 on reusable half masks, with P2 or P3 filters |
+| Australia and New Zealand | P2             | P3           | AS/NZS 1716                                                                      |
 
-Η ανώτερη κατηγορία φιλτράρει μεγαλύτερο ποσοστό των λεπτών σωματιδίων. Οι πηγές διαφωνούν για το τι φιλτράρει ένα αυστραλιανό P3 (τουλάχιστον 99% ή τουλάχιστον 99,95%), γι’ αυτό αγοράστε την πιστοποιημένη κατηγορία που πωλείται στην περιοχή σας. Μια επαναχρησιμοποιούμενη **ημιμάσκα** (καλύπτει τη μύτη και το στόμα, με φίλτρα που αλλάζουν) με φίλτρα P100 (P3 εκτός ΗΠΑ) είναι συνηθισμένη επιλογή στα εργαστήρια.
+The higher class filters a larger share of fine particles. Sources disagree on what an Australian P3 filters (at least 99%, or at least 99.95%), so buy the certified class sold in your region. A reusable **half mask** (covering the nose and mouth, with replaceable filters) fitted with P100 filters (P3 outside the US) is a common studio choice.
 
-### Εφαρμογή και στεγανότητα
+### Fit and seal
 
-Μια μάσκα που δεν κλείνει καλά αφήνει τη σκόνη να μπαίνει από τις άκρες της, όποια κι αν είναι η κατηγορία της. Η HSE προειδοποιεί ότι η αξυρισιά και τα γένια «κάνουν αδύνατη την καλή στεγανότητα».
+A mask that leaks lets dust in around its edges, whatever its class. HSE warns that stubble and beards "make it impossible to get a good seal".
 
-- **Ξυριστείτε λίγο πριν δουλέψετε.** Οι οδηγίες διαφέρουν για το πόσο πρόσφατο πρέπει να είναι το ξύρισμα, ώστε το πρόσωπο να είναι «καλοξυρισμένο»: μέσα σε 8 ώρες (ένας βρετανικός κατασκευαστής, που επικαλείται την HSE) ή κατά προτίμηση μέσα σε 12 (το πρότυπο της Αυστραλίας και της Νέας Ζηλανδίας για τη δοκιμή εφαρμογής (fit test)). Αν ξυρίζεστε λίγο πριν δουλέψετε, καλύπτετε και τα δύο.
-- **Αν κρατάτε γένια,** μια χαλαρή **συσκευή με ανεμιστήρα** (PAPR: κουκούλα ή κράνος με ανεμιστήρα που δίνει φιλτραρισμένο αέρα) δεν χρειάζεται στεγανή εφαρμογή στο πρόσωπο.
-- **Διαλέξτε το σωστό μέγεθος.** Η κακή εφαρμογή είναι μια σημαντική αιτία διαρροών. Στους χώρους εργασίας γίνεται **δοκιμή εφαρμογής**, ένας έλεγχος ότι μια συγκεκριμένη μάσκα κλείνει στεγανά σε ένα συγκεκριμένο πρόσωπο. Στο σπίτι, προτείνουμε να ακολουθείτε τις οδηγίες του κατασκευαστή για τον έλεγχο της στεγανότητας κάθε φορά που τη φοράτε.
+- **Shave shortly before you work.** Guidance differs on how recent "clean-shaven" must be. A UK maker, citing HSE, says shaved within 8 hours of starting work. The Australian and New Zealand fit-test standard asks for a shave before a fit test, "preferably within 12 hours". Shaving shortly before you work meets both.
+- **If you keep a beard,** a loose-fitting **powered respirator** (PAPR: a hood or helmet with a fan that supplies filtered air) needs no face seal.
+- **Get the size right.** Poor fit is a major cause of leaks. Workplaces use a **fit test**, a check that a particular mask seals on a particular face. At home, we suggest following the maker's instructions for checking the seal each time you put it on.
 
 > [!NOTE]
-> Κατά τη γνώμη μας, η εφαρμογή μετράει περισσότερο από την κατηγορία: μια N95, FFP2 ή P2 που εφαρμόζει καλά συνήθως θα προστατεύσει καλύτερα από μια P100 που κάθεται χαλαρά.
+> In our view, fit matters more than class: a well-fitted N95, FFP2 or P2 will usually do better than a loose P100.
 
-### Πότε να τη φοράτε
+### When to wear one
 
-Η HSE λέει ότι μάσκα προστασίας της αναπνοής «κανονικά δεν χρειάζεται» όπου η ζύγιση και το ανακάτεμα γίνονται σε κλειστό θάλαμο με εξαερισμό, αλλά «μπορεί να χρειαστεί για τη συντήρηση και τον καθαρισμό». Τα περισσότερα εργαστήρια στο σπίτι δεν έχουν τέτοιο θάλαμο, γι’ αυτό προτείνουμε να φοράτε μάσκα (τουλάχιστον N95, FFP2 ή P2, και καλύτερα P100, FFP3 ή P3) κάθε φορά που:
+HSE says a respirator is "normally not needed" where weighing and mixing happen in a ventilated enclosure, but "may be needed for maintenance and cleaning". Most home studios have no enclosure, so we suggest wearing one (N95, FFP2 or P2 at least; P100, FFP3 or P3 is better) whenever you:
 
-- ανοίγετε σακιά ή αδειάζετε σκόνη,
-- ζυγίζετε σκόνες και τις ανακατεύετε στο νερό,
-- ξύνετε, τρίβετε με γυαλόχαρτο ή τροχίζετε ξερό υάλωμα{{en: glaze}} ή μπισκουί{{en: bisque}},
-- καθαρίζετε οτιδήποτε στεγνά, χωρίς νερό, ή αδειάζετε ηλεκτρική σκούπα,
-- ψεκάζετε υάλωμα (σε θάλαμο ψεκασμού: δείτε παρακάτω).
+- open bags or tip out powder;
+- weigh powders and stir them into water;
+- scrape, sand or grind dried glaze or bisque;
+- do any dry cleanup, or empty a vacuum;
+- spray glaze (in a booth: see below).
 
-### Τι δεν είναι μάσκα προστασίας της αναπνοής
+### What is not a respirator
 
-- Οι χειρουργικές μάσκες, οι υφασμάτινες μάσκες και οι απλές «μάσκες σκόνης» χωρίς σήμανση NIOSH, EN 149 ή AS/NZS 1716. Δεν θα βασιζόμασταν σε αυτές για τη σκόνη των υαλωμάτων.
-- Μια μάσκα προστασίας της αναπνοής για σκόνη «δεν θα σας προστατεύσει από αέρια, ατμούς» (OSHA), οπότε δεν κάνει τίποτα για τις αναθυμιάσεις του καμινιού.
-- Φροντίζετε τη δική σας: η OSHA σημειώνει ότι μια βρόμικη μάσκα ή μια μάσκα που χρησιμοποιείται λάθος «μπορεί να γίνει κίνδυνος». Φυλάγετέ τη καθαρή, μακριά από σκονισμένα ρούχα δουλειάς.
+- Surgical masks, cloth masks and "nuisance dust" masks without a NIOSH, EN 149 or AS/NZS 1716 marking. We would not rely on them for glaze dust.
+- A dust respirator "will not protect you against gases, vapors" (OSHA), so it does nothing for kiln fumes.
+- Look after yours: OSHA notes that a dirty or misused respirator "can become a hazard". Store it clean, away from dusty work clothes.
 
 ## Καθαρισμός, ρούχα και χέρια {#cleaning}
 

@@ -65,49 +65,49 @@ Lielāko aizsardzību dod paradumi, nevis aprīkojums. HSE ieteikumi keramikas d
 
 Šī secība ir mūsu ieteikums, kas balstās uz HSE principu vispirms izvairīties no pulvera. Svēršanu un jaukšanu soli pa solim skatiet ceļvedī [Kā sagatavot glazūru](/guides/making-a-glaze).
 
-## Respiratori {#respirators}
+## Respirators {#respirators lang=en}
 
-**Respirators** ir maska, kas sertificēta smalku daļiņu filtrēšanai no gaisa, ko elpojat. Tas darbojas tikai tad, ja cieši pieguļ sejai, un tas papildina labus paradumus, nevis tos aizstāj.
+A **respirator** is a mask certified to filter fine particles from the air you breathe. It works only when it seals to your face, and it backs up good habits rather than replacing them.
 
-### Klases pa reģioniem
+### Classes by region
 
-Table: Daļiņu respiratoru klases pa reģioniem (glazūras putekļiem aptuveni līdzvērtīgas)
-Label: Respiratoru klases
+Table: Particle respirator classes by region (rough equivalents for glaze dust)
+Label: Respirator classes
 
-| Reģions                   | Ikdienas klase | Augstāka klase | Ko meklēt                                                                                           |
-| ------------------------- | -------------- | -------------- | --------------------------------------------------------------------------------------------------- |
-| ASV                       | N95            | P100           | NIOSH apstiprinājums uz maskas vai tās iepakojuma                                                   |
-| Apvienotā Karaliste un ES | FFP2           | FFP3           | EN 149 uz vienreizlietojamām maskām; EN 140 uz atkārtoti lietojamām pusmaskām ar P2 vai P3 filtriem |
-| Austrālija un Jaunzēlande | P2             | P3             | AS/NZS 1716                                                                                         |
+| Region                    | Everyday class | Higher class | Look for                                                                         |
+| ------------------------- | -------------- | ------------ | -------------------------------------------------------------------------------- |
+| United States             | N95            | P100         | NIOSH approval on the mask or its packaging                                      |
+| UK and EU                 | FFP2           | FFP3         | EN 149 on disposable masks; EN 140 on reusable half masks, with P2 or P3 filters |
+| Australia and New Zealand | P2             | P3           | AS/NZS 1716                                                                      |
 
-Augstākā klase aiztur lielāku daļu smalko daļiņu. Avoti nav vienisprātis par to, cik daudz aiztur Austrālijas P3 (vismaz 99% vai vismaz 99,95%), tāpēc pērciet sertificētu klasi, ko pārdod jūsu reģionā. Darbnīcās bieži izvēlas atkārtoti lietojamu **pusmasku** (kas nosedz degunu un muti, ar maināmiem filtriem) ar P100 filtriem (ārpus ASV – P3).
+The higher class filters a larger share of fine particles. Sources disagree on what an Australian P3 filters (at least 99%, or at least 99.95%), so buy the certified class sold in your region. A reusable **half mask** (covering the nose and mouth, with replaceable filters) fitted with P100 filters (P3 outside the US) is a common studio choice.
 
-### Piegulšana un blīvums
+### Fit and seal
 
-Maska, kas nepieguļ cieši, ielaiž putekļus gar malām neatkarīgi no tās klases. HSE brīdina, ka rugāji un bārda “padara labu piegulšanu neiespējamu”.
+A mask that leaks lets dust in around its edges, whatever its class. HSE warns that stubble and beards "make it impossible to get a good seal".
 
-- **Noskujieties īsi pirms darba.** Norādījumi atšķiras par to, cik nesen seja jānoskuj, lai tā skaitītos “gludi noskūta”: pēdējo 8 stundu laikā (kāds britu ražotājs, atsaucoties uz HSE) vai, vēlams, pēdējo 12 stundu laikā (Austrālijas un Jaunzēlandes piegulšanas pārbaudes standarts). Ja noskujaties īsi pirms darba, ir izpildītas abas prasības.
-- **Ja nēsājat bārdu,** vaļīgam **respiratoram ar ventilatoru** (PAPR: kapuce vai ķivere ar ventilatoru, kas pievada filtrētu gaisu) cieša piegulšana sejai nav vajadzīga.
-- **Izvēlieties pareizo izmēru.** Slikta piegulšana ir viens no galvenajiem iemesliem, kāpēc maska laiž cauri gaisu. Darba vietās izmanto **piegulšanas pārbaudi** – pārbaudi, vai konkrēta maska cieši pieguļ konkrētai sejai. Mājās iesakām ik reizi, kad masku uzliekat, pēc ražotāja norādījumiem pārbaudīt, vai tā cieši pieguļ.
+- **Shave shortly before you work.** Guidance differs on how recent "clean-shaven" must be. A UK maker, citing HSE, says shaved within 8 hours of starting work. The Australian and New Zealand fit-test standard asks for a shave before a fit test, "preferably within 12 hours". Shaving shortly before you work meets both.
+- **If you keep a beard,** a loose-fitting **powered respirator** (PAPR: a hood or helmet with a fan that supplies filtered air) needs no face seal.
+- **Get the size right.** Poor fit is a major cause of leaks. Workplaces use a **fit test**, a check that a particular mask seals on a particular face. At home, we suggest following the maker's instructions for checking the seal each time you put it on.
 
 > [!NOTE]
-> Mūsuprāt, piegulšana ir svarīgāka par klasi: labi pieguļošs N95, FFP2 vai P2 respirators parasti aizsargās labāk nekā vaļīgs P100.
+> In our view, fit matters more than class: a well-fitted N95, FFP2 or P2 will usually do better than a loose P100.
 
-### Kad to lietot
+### When to wear one
 
-HSE norāda, ka respirators “parasti nav vajadzīgs”, ja sver un jauc slēgtā kabīnē ar ventilāciju, taču “var būt vajadzīgs apkopei un tīrīšanai”. Lielākajā daļā mājas darbnīcu šādas kabīnes nav, tāpēc iesakām lietot respiratoru (vismaz N95, FFP2 vai P2; labāk P100, FFP3 vai P3) ikreiz, kad:
+HSE says a respirator is "normally not needed" where weighing and mixing happen in a ventilated enclosure, but "may be needed for maintenance and cleaning". Most home studios have no enclosure, so we suggest wearing one (N95, FFP2 or P2 at least; P100, FFP3 or P3 is better) whenever you:
 
-- atverat maisus vai izberat pulveri;
-- sverat pulverus un iemaisāt tos ūdenī;
-- nokasāt, slīpējat ar smilšpapīru vai noslīpējat ar slīpripu izžuvušu glazūru{{en: glaze}} vai biskvītu{{en: bisque}};
-- jebko tīrāt sausā veidā vai iztukšojat putekļsūcēju;
-- uzsmidzināt glazūru (kabīnē: skatiet tālāk).
+- open bags or tip out powder;
+- weigh powders and stir them into water;
+- scrape, sand or grind dried glaze or bisque;
+- do any dry cleanup, or empty a vacuum;
+- spray glaze (in a booth: see below).
 
-### Kas nav respirators
+### What is not a respirator
 
-- Medicīniskās maskas, auduma maskas un vienkāršas putekļu maskas bez NIOSH, EN 149 vai AS/NZS 1716 marķējuma. Pret glazūras putekļiem mēs uz tām nepaļautos.
-- Putekļu respirators “neaizsargās jūs pret gāzēm, tvaikiem” (OSHA), tāpēc pret krāsns izplūdes gāzēm un tvaikiem tas nelīdz.
-- Rūpējieties par savu respiratoru: OSHA norāda, ka netīrs vai nepareizi lietots respirators “var kļūt par apdraudējumu”. Glabājiet to tīru, atsevišķi no putekļainām darba drēbēm.
+- Surgical masks, cloth masks and "nuisance dust" masks without a NIOSH, EN 149 or AS/NZS 1716 marking. We would not rely on them for glaze dust.
+- A dust respirator "will not protect you against gases, vapors" (OSHA), so it does nothing for kiln fumes.
+- Look after yours: OSHA notes that a dirty or misused respirator "can become a hazard". Store it clean, away from dusty work clothes.
 
 ## Uzkopšana, apģērbs un rokas {#cleaning}
 

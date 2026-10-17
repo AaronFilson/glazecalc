@@ -65,49 +65,49 @@ Korumanın çoğu ekipmandan değil, alışkanlıklardan gelir. HSE’nin serami
 
 Bu sıra, HSE’nin önce tozdan kaçınma ilkesine dayanan bizim önerimizdir. Adım adım tartım ve karıştırma için [Sır nasıl hazırlanır](/guides/making-a-glaze) rehberine bakın.
 
-## Solunum koruyucu maskeler {#respirators}
+## Respirators {#respirators lang=en}
 
-**Solunum koruyucu maske**, soluduğunuz havadaki ince parçacıkları süzmek için sertifika almış bir maskedir. Yalnızca yüzünüze sızdırmaz biçimde oturduğunda işe yarar ve iyi alışkanlıkların yerini almaz, onları destekler.
+A **respirator** is a mask certified to filter fine particles from the air you breathe. It works only when it seals to your face, and it backs up good habits rather than replacing them.
 
-### Bölgelere göre sınıflar
+### Classes by region
 
-Table: Bölgelere göre parçacık filtreli maske sınıfları (sır tozu için yaklaşık karşılıklar)
-Label: Maske sınıfları
+Table: Particle respirator classes by region (rough equivalents for glaze dust)
+Label: Respirator classes
 
-| Bölge                       | Günlük sınıf | Daha yüksek sınıf | Nelere bakılmalı                                                                                             |
-| --------------------------- | ------------ | ----------------- | ------------------------------------------------------------------------------------------------------------ |
-| Amerika Birleşik Devletleri | N95          | P100              | Maskenin veya ambalajının üzerinde NIOSH onayı                                                               |
-| Birleşik Krallık ve AB      | FFP2         | FFP3              | Tek kullanımlık maskelerde EN 149; P2 veya P3 filtreli, yeniden kullanılabilir yarım yüz maskelerinde EN 140 |
-| Avustralya ve Yeni Zelanda  | P2           | P3                | AS/NZS 1716                                                                                                  |
+| Region                    | Everyday class | Higher class | Look for                                                                         |
+| ------------------------- | -------------- | ------------ | -------------------------------------------------------------------------------- |
+| United States             | N95            | P100         | NIOSH approval on the mask or its packaging                                      |
+| UK and EU                 | FFP2           | FFP3         | EN 149 on disposable masks; EN 140 on reusable half masks, with P2 or P3 filters |
+| Australia and New Zealand | P2             | P3           | AS/NZS 1716                                                                      |
 
-Daha yüksek sınıf, ince parçacıkların daha büyük bir kısmını süzer. Kaynaklar, Avustralya’daki P3 sınıfının ne kadarını süzdüğü konusunda ayrılıyor (en az %99 veya en az %99,95); bu yüzden bölgenizde satılan sertifikalı sınıfı alın. P100 filtreli (ABD dışında P3) yeniden kullanılabilir bir **yarım yüz maskesi** (burnu ve ağzı örten, filtreleri değiştirilebilen) atölyelerde yaygın bir tercihtir.
+The higher class filters a larger share of fine particles. Sources disagree on what an Australian P3 filters (at least 99%, or at least 99.95%), so buy the certified class sold in your region. A reusable **half mask** (covering the nose and mouth, with replaceable filters) fitted with P100 filters (P3 outside the US) is a common studio choice.
 
-### Yüze oturma ve sızdırmazlık
+### Fit and seal
 
-Sızdıran bir maske, sınıfı ne olursa olsun, tozun kenarlarından içeri girmesine izin verir. HSE, kirli sakalın ve sakalın “iyi bir sızdırmazlık sağlamayı imkânsız kıldığı” uyarısında bulunuyor.
+A mask that leaks lets dust in around its edges, whatever its class. HSE warns that stubble and beards "make it impossible to get a good seal".
 
-- **Çalışmadan kısa süre önce tıraş olun.** “Sinekkaydı tıraşlı” olmanın ne kadar yeni olması gerektiği konusunda öneriler farklıdır: 8 saat içinde (HSE’ye dayanan bir Birleşik Krallık üreticisi) veya tercihen 12 saat içinde (Avustralya ve Yeni Zelanda yüz uyum testi standardı). Çalışmadan kısa süre önce tıraş olmak ikisini de karşılar.
-- **Sakalınızı korumak istiyorsanız,** gevşek oturan bir **motorlu solunum koruyucu** (PAPR: fanı süzülmüş hava veren bir başlık veya kask) yüzde sızdırmazlık gerektirmez.
-- **Doğru bedeni seçin.** Kötü oturma, sızıntıların başlıca nedenlerinden biridir. İşyerleri **yüz uyum testi** kullanır: belirli bir maskenin belirli bir yüze sızdırmaz oturup oturmadığının kontrolü. Evde, maskeyi her taktığınızda sızdırmazlığı kontrol etmek için üreticinin talimatlarını izlemenizi öneriyoruz.
+- **Shave shortly before you work.** Guidance differs on how recent "clean-shaven" must be. A UK maker, citing HSE, says shaved within 8 hours of starting work. The Australian and New Zealand fit-test standard asks for a shave before a fit test, "preferably within 12 hours". Shaving shortly before you work meets both.
+- **If you keep a beard,** a loose-fitting **powered respirator** (PAPR: a hood or helmet with a fan that supplies filtered air) needs no face seal.
+- **Get the size right.** Poor fit is a major cause of leaks. Workplaces use a **fit test**, a check that a particular mask seals on a particular face. At home, we suggest following the maker's instructions for checking the seal each time you put it on.
 
 > [!NOTE]
-> Bize göre yüze oturma, sınıftan daha önemlidir: iyi oturan bir N95, FFP2 veya P2, gevşek bir P100’den genellikle daha iyi iş görür.
+> In our view, fit matters more than class: a well-fitted N95, FFP2 or P2 will usually do better than a loose P100.
 
-### Ne zaman takılmalı
+### When to wear one
 
-HSE, tartım ve karıştırmanın havalandırmalı bir kapalı bölmede yapıldığı yerlerde solunum koruyucu maskenin “normalde gerekmediğini”, ancak “bakım ve temizlik için gerekebileceğini” söylüyor. Çoğu ev atölyesinde böyle bir bölme yoktur; bu yüzden şu durumların her birinde bir solunum koruyucu maske (en az N95, FFP2 veya P2; P100, FFP3 veya P3 daha iyidir) takmanızı öneriyoruz:
+HSE says a respirator is "normally not needed" where weighing and mixing happen in a ventilated enclosure, but "may be needed for maintenance and cleaning". Most home studios have no enclosure, so we suggest wearing one (N95, FFP2 or P2 at least; P100, FFP3 or P3 is better) whenever you:
 
-- torbaları açarken veya toz boşaltırken;
-- tozları tartarken ve suya karıştırırken;
-- kurumuş sırrı veya bisküviyi{{en: bisque}} kazırken, zımparalarken ya da taşlarken;
-- herhangi bir kuru temizlik yaparken veya bir elektrikli süpürgeyi boşaltırken;
-- sır püskürtürken (bir kabinde: aşağıya bakın).
+- open bags or tip out powder;
+- weigh powders and stir them into water;
+- scrape, sand or grind dried glaze or bisque;
+- do any dry cleanup, or empty a vacuum;
+- spray glaze (in a booth: see below).
 
-### Solunum koruyucu maske sayılmayanlar
+### What is not a respirator
 
-- Cerrahi maskeler, bez maskeler ve NIOSH, EN 149 veya AS/NZS 1716 işareti taşımayan “rahatsız edici toz” maskeleri. Sır tozu için bunlara güvenmezdik.
-- Toz için yapılmış bir solunum koruyucu maske “sizi gazlara, buharlara karşı korumaz” (OSHA); bu yüzden fırın gazlarına ve dumanlarına karşı hiçbir işe yaramaz.
-- Maskenize iyi bakın: OSHA, kirli veya yanlış kullanılan bir solunum koruyucu maskenin “bir tehlike hâline gelebileceğini” belirtiyor. Maskenizi temiz ve tozlu iş kıyafetlerinden uzak saklayın.
+- Surgical masks, cloth masks and "nuisance dust" masks without a NIOSH, EN 149 or AS/NZS 1716 marking. We would not rely on them for glaze dust.
+- A dust respirator "will not protect you against gases, vapors" (OSHA), so it does nothing for kiln fumes.
+- Look after yours: OSHA notes that a dirty or misused respirator "can become a hazard". Store it clean, away from dusty work clothes.
 
 ## Temizlik, kıyafetler ve eller {#cleaning}
 

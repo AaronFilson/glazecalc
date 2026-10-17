@@ -65,49 +65,49 @@ EU 회원국 가운데 여러 나라가 EU보다 낮은 기준을 정합니다. 
 
 이 순서는 가루를 먼저 피한다는 HSE의 원칙에 바탕을 둔 저희의 제안입니다. 단계별 계량과 조합은 《[유약 만드는 법](/guides/making-a-glaze)》을 보세요.
 
-## 방진마스크 {#respirators}
+## Respirators {#respirators lang=en}
 
-**방진마스크**는 들이마시는 공기에서 미세 입자를 걸러 내도록 인증받은 마스크입니다. 얼굴에 밀착될 때만 효과가 있으며, 좋은 습관을 대신하는 것이 아니라 뒷받침합니다.
+A **respirator** is a mask certified to filter fine particles from the air you breathe. It works only when it seals to your face, and it backs up good habits rather than replacing them.
 
-### 지역별 등급
+### Classes by region
 
-Table: 지역별 입자용 방진마스크 등급(유약 분진에 대한 대략적인 대응)
-Label: 방진마스크 등급
+Table: Particle respirator classes by region (rough equivalents for glaze dust)
+Label: Respirator classes
 
-| 지역            | 일상용 등급 | 상위 등급 | 확인할 표시                                                                 |
-| --------------- | ----------- | --------- | --------------------------------------------------------------------------- |
-| 미국            | N95         | P100      | 마스크나 포장에 있는 NIOSH 인증                                             |
-| 영국과 EU       | FFP2        | FFP3      | 일회용 마스크에는 EN 149, 재사용 반면형 마스크에는 EN 140과 P2 또는 P3 필터 |
-| 호주와 뉴질랜드 | P2          | P3        | AS/NZS 1716                                                                 |
+| Region                    | Everyday class | Higher class | Look for                                                                         |
+| ------------------------- | -------------- | ------------ | -------------------------------------------------------------------------------- |
+| United States             | N95            | P100         | NIOSH approval on the mask or its packaging                                      |
+| UK and EU                 | FFP2           | FFP3         | EN 149 on disposable masks; EN 140 on reusable half masks, with P2 or P3 filters |
+| Australia and New Zealand | P2             | P3           | AS/NZS 1716                                                                      |
 
-상위 등급은 미세 입자를 더 높은 비율로 걸러 냅니다. 호주 P3가 얼마나 걸러 내는지(99% 이상 또는 99.95% 이상)는 자료마다 다르므로, 사는 지역에서 판매하는 인증 등급을 사세요. P100 필터(미국 밖에서는 P3)를 끼운 재사용 **반면형 방진마스크**(코와 입을 덮고 필터를 교체할 수 있는 것)는 작업실에서 흔히 고르는 제품입니다.
+The higher class filters a larger share of fine particles. Sources disagree on what an Australian P3 filters (at least 99%, or at least 99.95%), so buy the certified class sold in your region. A reusable **half mask** (covering the nose and mouth, with replaceable filters) fitted with P100 filters (P3 outside the US) is a common studio choice.
 
-### 맞춤과 밀착
+### Fit and seal
 
-새는 마스크는 등급과 관계없이 가장자리로 분진이 들어옵니다. HSE(영국 보건안전청)는 짧게 자란 수염과 턱수염이 “제대로 밀착시키는 것을 불가능하게 한다”고 경고합니다.
+A mask that leaks lets dust in around its edges, whatever its class. HSE warns that stubble and beards "make it impossible to get a good seal".
 
-- **작업 직전에 면도하세요.** “깨끗이 면도한 상태”가 얼마나 최근이어야 하는지는 지침마다 다릅니다. 8시간 이내(HSE를 인용한 영국의 한 제조사) 또는 가능하면 12시간 이내(호주·뉴질랜드 밀착도 검사 표준)입니다. 작업 직전에 면도하면 둘 다 충족합니다.
-- **턱수염을 기른다면** 헐렁하게 쓰는 **전동식 호흡보호구**(PAPR: 팬이 걸러 낸 공기를 보내 주는 후드나 헬멧)는 얼굴 밀착이 필요 없습니다.
-- **크기를 맞게 고르세요.** 잘 맞지 않는 것이 새는 주된 원인입니다. 작업장에서는 **밀착도 검사**를 합니다. 특정 마스크가 특정 얼굴에 밀착되는지 확인하는 검사입니다. 집에서는 쓸 때마다 제조사의 안내에 따라 밀착을 확인하기를 권합니다.
+- **Shave shortly before you work.** Guidance differs on how recent "clean-shaven" must be. A UK maker, citing HSE, says shaved within 8 hours of starting work. The Australian and New Zealand fit-test standard asks for a shave before a fit test, "preferably within 12 hours". Shaving shortly before you work meets both.
+- **If you keep a beard,** a loose-fitting **powered respirator** (PAPR: a hood or helmet with a fan that supplies filtered air) needs no face seal.
+- **Get the size right.** Poor fit is a major cause of leaks. Workplaces use a **fit test**, a check that a particular mask seals on a particular face. At home, we suggest following the maker's instructions for checking the seal each time you put it on.
 
 > [!NOTE]
-> 저희가 보기에는 등급보다 맞춤이 더 중요합니다. 잘 맞는 N95, FFP2, P2가 헐렁한 P100보다 대개 더 낫습니다.
+> In our view, fit matters more than class: a well-fitted N95, FFP2 or P2 will usually do better than a loose P100.
 
-### 쓸 때
+### When to wear one
 
-HSE는 계량과 조합을 환기되는 밀폐 부스에서 할 때는 방진마스크가 “보통 필요하지 않다”고 하지만, “유지 보수와 청소에는 필요할 수 있다”고 합니다. 대부분의 가정 작업실에는 그런 부스가 없으므로, 다음 작업을 할 때는 언제나 방진마스크(최소 N95, FFP2, P2이며, P100, FFP3, P3가 더 좋습니다)를 쓰기를 권합니다.
+HSE says a respirator is "normally not needed" where weighing and mixing happen in a ventilated enclosure, but "may be needed for maintenance and cleaning". Most home studios have no enclosure, so we suggest wearing one (N95, FFP2 or P2 at least; P100, FFP3 or P3 is better) whenever you:
 
-- 포대를 열거나 가루를 쏟을 때
-- 가루를 계량하고 물에 저어 넣을 때
-- 마른 유약이나 초벌 기물을 긁거나 사포질하거나 갈 때
-- 마른 상태로 청소하거나 진공청소기를 비울 때
-- 유약을 분무할 때(부스 안에서. 아래를 보세요)
+- open bags or tip out powder;
+- weigh powders and stir them into water;
+- scrape, sand or grind dried glaze or bisque;
+- do any dry cleanup, or empty a vacuum;
+- spray glaze (in a booth: see below).
 
-### 방진마스크가 아닌 것
+### What is not a respirator
 
-- 수술용 마스크, 천 마스크, 그리고 NIOSH, EN 149, AS/NZS 1716 표시가 없는 “유해성이 낮은 분진”용 마스크. 저희는 유약 분진을 막는 데 이것들을 믿지 않습니다.
-- 분진용 방진마스크는 “가스, 증기로부터 보호하지 못합니다”(OSHA). 따라서 가마에서 나오는 가스에는 아무 효과가 없습니다.
-- 방진마스크를 잘 관리하세요. OSHA는 더럽거나 잘못 쓴 방진마스크가 “위험 요인이 될 수 있다”고 지적합니다. 깨끗하게, 분진이 묻은 작업복과 떨어진 곳에 보관하세요.
+- Surgical masks, cloth masks and "nuisance dust" masks without a NIOSH, EN 149 or AS/NZS 1716 marking. We would not rely on them for glaze dust.
+- A dust respirator "will not protect you against gases, vapors" (OSHA), so it does nothing for kiln fumes.
+- Look after yours: OSHA notes that a dirty or misused respirator "can become a hazard". Store it clean, away from dusty work clothes.
 
 ## 청소, 옷, 손 {#cleaning}
 

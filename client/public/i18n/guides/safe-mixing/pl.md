@@ -65,49 +65,49 @@ Ochronę zapewniają głównie nawyki, a nie sprzęt. Zalecenia HSE dla zakład�
 
 Tę kolejność proponujemy sami, opierając się na zasadzie HSE, by przede wszystkim unikać proszku. Ważenie i rozrabianie krok po kroku opisuje poradnik [Jak przygotować szkliwo](/guides/making-a-glaze).
 
-## Półmaski filtrujące {#respirators}
+## Respirators {#respirators lang=en}
 
-**Półmaska filtrująca** to maska z certyfikatem, która odfiltrowuje drobne cząstki z wdychanego powietrza. Działa tylko wtedy, gdy szczelnie przylega do twarzy, i uzupełnia dobre nawyki, a nie je zastępuje.
+A **respirator** is a mask certified to filter fine particles from the air you breathe. It works only when it seals to your face, and it backs up good habits rather than replacing them.
 
-### Klasy w poszczególnych regionach
+### Classes by region
 
-Table: Klasy półmasek przeciwpyłowych w poszczególnych regionach (przybliżone odpowiedniki dla pyłu ze szkliw)
-Label: Klasy półmasek
+Table: Particle respirator classes by region (rough equivalents for glaze dust)
+Label: Respirator classes
 
-| Region                    | Klasa podstawowa | Klasa wyższa | Czego szukać                                                                                        |
-| ------------------------- | ---------------- | ------------ | --------------------------------------------------------------------------------------------------- |
-| Stany Zjednoczone         | N95              | P100         | Zatwierdzenie NIOSH na masce lub jej opakowaniu                                                     |
-| Wielka Brytania i UE      | FFP2             | FFP3         | EN 149 na półmaskach jednorazowych; EN 140 na półmaskach wielokrotnego użytku, z filtrami P2 lub P3 |
-| Australia i Nowa Zelandia | P2               | P3           | AS/NZS 1716                                                                                         |
+| Region                    | Everyday class | Higher class | Look for                                                                         |
+| ------------------------- | -------------- | ------------ | -------------------------------------------------------------------------------- |
+| United States             | N95            | P100         | NIOSH approval on the mask or its packaging                                      |
+| UK and EU                 | FFP2           | FFP3         | EN 149 on disposable masks; EN 140 on reusable half masks, with P2 or P3 filters |
+| Australia and New Zealand | P2             | P3           | AS/NZS 1716                                                                      |
 
-Wyższa klasa zatrzymuje większą część drobnych cząstek. Źródła różnią się co do tego, ile zatrzymuje australijska klasa P3 (co najmniej 99 % lub co najmniej 99,95 %), dlatego należy kupować certyfikowaną klasę sprzedawaną w danym regionie. W pracowniach często wybiera się **półmaskę** wielokrotnego użytku (zakrywającą nos i usta, z wymiennymi filtrami), a do niej filtry P100 (poza USA – P3).
+The higher class filters a larger share of fine particles. Sources disagree on what an Australian P3 filters (at least 99%, or at least 99.95%), so buy the certified class sold in your region. A reusable **half mask** (covering the nose and mouth, with replaceable filters) fitted with P100 filters (P3 outside the US) is a common studio choice.
 
-### Dopasowanie i szczelność
+### Fit and seal
 
-Nieszczelna maska wpuszcza pył przy krawędziach, niezależnie od swojej klasy. HSE ostrzega, że zarost i broda „uniemożliwiają dobre uszczelnienie”.
+A mask that leaks lets dust in around its edges, whatever its class. HSE warns that stubble and beards "make it impossible to get a good seal".
 
-- **Golić się krótko przed pracą.** Zalecenia różnią się co do tego, ile czasu może upłynąć od golenia, by twarz była „gładko ogolona”: do 8 godzin (brytyjski producent, powołujący się na HSE) albo najlepiej do 12 (australijska i nowozelandzka norma dotycząca testu dopasowania). Golenie się krótko przed pracą spełnia oba wymagania.
-- **Jeśli nosi się brodę,** luźny **sprzęt z wymuszonym przepływem powietrza** (PAPR: kaptur lub hełm z wentylatorem, który dostarcza przefiltrowane powietrze) nie wymaga szczelnego przylegania do twarzy.
-- **Dobrać właściwy rozmiar.** Złe dopasowanie to jedna z głównych przyczyn nieszczelności. W zakładach pracy wykonuje się **test dopasowania**, czyli sprawdzenie, czy konkretna maska szczelnie przylega do konkretnej twarzy. W domu proponujemy sprawdzać szczelność według instrukcji producenta za każdym razem po założeniu maski.
+- **Shave shortly before you work.** Guidance differs on how recent "clean-shaven" must be. A UK maker, citing HSE, says shaved within 8 hours of starting work. The Australian and New Zealand fit-test standard asks for a shave before a fit test, "preferably within 12 hours". Shaving shortly before you work meets both.
+- **If you keep a beard,** a loose-fitting **powered respirator** (PAPR: a hood or helmet with a fan that supplies filtered air) needs no face seal.
+- **Get the size right.** Poor fit is a major cause of leaks. Workplaces use a **fit test**, a check that a particular mask seals on a particular face. At home, we suggest following the maker's instructions for checking the seal each time you put it on.
 
 > [!NOTE]
-> Naszym zdaniem dopasowanie jest ważniejsze niż klasa: dobrze dopasowana półmaska N95, FFP2 lub P2 zwykle sprawdzi się lepiej niż luźna P100.
+> In our view, fit matters more than class: a well-fitted N95, FFP2 or P2 will usually do better than a loose P100.
 
-### Kiedy zakładać półmaskę
+### When to wear one
 
-Według HSE półmaska „zwykle nie jest potrzebna” tam, gdzie ważenie i mieszanie odbywają się w obudowanym stanowisku z wentylacją, ale „może być potrzebna przy konserwacji i sprzątaniu”. Większość domowych pracowni nie ma takiego stanowiska, dlatego proponujemy zakładać półmaskę (co najmniej N95, FFP2 lub P2; lepiej P100, FFP3 lub P3) zawsze przy:
+HSE says a respirator is "normally not needed" where weighing and mixing happen in a ventilated enclosure, but "may be needed for maintenance and cleaning". Most home studios have no enclosure, so we suggest wearing one (N95, FFP2 or P2 at least; P100, FFP3 or P3 is better) whenever you:
 
-- otwieraniu worków lub wysypywaniu proszku;
-- ważeniu proszków i rozrabianiu ich w wodzie;
-- skrobaniu, przecieraniu papierem ściernym lub szlifowaniu zaschniętego szkliwa{{en: glaze}} albo biskwitu{{en: bisque}};
-- każdym sprzątaniu na sucho lub opróżnianiu odkurzacza;
-- natryskiwaniu szkliwa (w kabinie: zob. niżej).
+- open bags or tip out powder;
+- weigh powders and stir them into water;
+- scrape, sand or grind dried glaze or bisque;
+- do any dry cleanup, or empty a vacuum;
+- spray glaze (in a booth: see below).
 
-### Co nie jest półmaską filtrującą
+### What is not a respirator
 
-- Maseczki chirurgiczne, maseczki z tkaniny i maski „przeciw uciążliwemu pyłowi” bez oznaczenia NIOSH, EN 149 lub AS/NZS 1716. Nie polegalibyśmy na nich w przypadku pyłu ze szkliw.
-- Półmaska przeciwpyłowa „nie chroni przed gazami, parami” (OSHA), więc nic nie daje przy gazach i oparach z wypału.
-- Należy dbać o swoją półmaskę: OSHA zwraca uwagę, że brudna lub niewłaściwie używana półmaska „może stać się zagrożeniem”. Przechowywać ją w czystości, z dala od zakurzonej odzieży roboczej.
+- Surgical masks, cloth masks and "nuisance dust" masks without a NIOSH, EN 149 or AS/NZS 1716 marking. We would not rely on them for glaze dust.
+- A dust respirator "will not protect you against gases, vapors" (OSHA), so it does nothing for kiln fumes.
+- Look after yours: OSHA notes that a dirty or misused respirator "can become a hazard". Store it clean, away from dusty work clothes.
 
 ## Sprzątanie, ubrania i ręce {#cleaning}
 

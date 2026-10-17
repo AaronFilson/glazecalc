@@ -65,49 +65,49 @@ Cea mai mare parte a protecției vine din obiceiuri, nu din echipament. Sfaturil
 
 Această ordine este sugestia noastră, pornind de la principiul HSE de a evita în primul rând pulberile. Pentru cântărire și amestecare pas cu pas, vedeți ghidul [Cum se prepară o glazură](/guides/making-a-glaze).
 
-## Măștile de protecție respiratorie {#respirators}
+## Respirators {#respirators lang=en}
 
-O **mască de protecție respiratorie** este o mască certificată să filtreze particulele fine din aerul pe care îl inspirați. Funcționează numai dacă se etanșează pe față și vine în sprijinul obiceiurilor bune, nu le înlocuiește.
+A **respirator** is a mask certified to filter fine particles from the air you breathe. It works only when it seals to your face, and it backs up good habits rather than replacing them.
 
-### Clase pe regiuni
+### Classes by region
 
-Table: Clasele măștilor de protecție respiratorie împotriva particulelor, pe regiuni (echivalențe aproximative pentru praful de glazură)
-Label: Clasele măștilor
+Table: Particle respirator classes by region (rough equivalents for glaze dust)
+Label: Respirator classes
 
-| Regiune                    | Clasa obișnuită | Clasa superioară | Ce să căutați                                                                                  |
-| -------------------------- | --------------- | ---------------- | ---------------------------------------------------------------------------------------------- |
-| Statele Unite              | N95             | P100             | Aprobarea NIOSH pe mască sau pe ambalaj                                                        |
-| Regatul Unit și UE         | FFP2            | FFP3             | EN 149 pe măștile de unică folosință; EN 140 pe semimăștile reutilizabile, cu filtre P2 sau P3 |
-| Australia și Noua Zeelandă | P2              | P3               | AS/NZS 1716                                                                                    |
+| Region                    | Everyday class | Higher class | Look for                                                                         |
+| ------------------------- | -------------- | ------------ | -------------------------------------------------------------------------------- |
+| United States             | N95            | P100         | NIOSH approval on the mask or its packaging                                      |
+| UK and EU                 | FFP2           | FFP3         | EN 149 on disposable masks; EN 140 on reusable half masks, with P2 or P3 filters |
+| Australia and New Zealand | P2             | P3           | AS/NZS 1716                                                                      |
 
-Clasa superioară filtrează o proporție mai mare din particulele fine. Sursele diferă în privința proporției de particule reținute de un filtru australian P3 (cel puțin 99 % sau cel puțin 99,95 %), așa că cumpărați clasa certificată care se vinde în regiunea dumneavoastră. O **semimască** reutilizabilă (care acoperă nasul și gura, cu filtre înlocuibile) echipată cu filtre P100 (P3 în afara SUA) este o alegere frecventă în ateliere.
+The higher class filters a larger share of fine particles. Sources disagree on what an Australian P3 filters (at least 99%, or at least 99.95%), so buy the certified class sold in your region. A reusable **half mask** (covering the nose and mouth, with replaceable filters) fitted with P100 filters (P3 outside the US) is a common studio choice.
 
-### Potrivirea și etanșarea
+### Fit and seal
 
-O mască neetanșă lasă praful să intre pe la margini, oricare i-ar fi clasa. HSE avertizează că barba și chiar și firele scurte ale bărbii nerase „fac imposibilă o etanșare bună”.
+A mask that leaks lets dust in around its edges, whatever its class. HSE warns that stubble and beards "make it impossible to get a good seal".
 
-- **Bărbieriți-vă cu puțin timp înainte de lucru.** Recomandările diferă în privința a cât de recent trebuie să fie bărbieritul: cu cel mult 8 ore înainte (un producător britanic, care citează HSE) sau, de preferință, cu cel mult 12 ore înainte (standardul australian și neozeelandez pentru testul de etanșeitate, fit test). Dacă vă bărbieriți cu puțin timp înainte de lucru, respectați ambele recomandări.
-- **Dacă păstrați barba,** un **aparat filtrant cu ventilare asistată** de tip lejer (PAPR: o glugă sau o cască cu un ventilator care furnizează aer filtrat) nu are nevoie de etanșare pe față.
-- **Alegeți mărimea potrivită.** O mască nepotrivită este una dintre principalele cauze ale neetanșeității. La locurile de muncă se face un **test de etanșeitate**, o verificare a faptului că o anumită mască se etanșează pe o anumită față. Acasă, vă sugerăm să urmați instrucțiunile producătorului pentru verificarea etanșării de fiecare dată când puneți masca.
+- **Shave shortly before you work.** Guidance differs on how recent "clean-shaven" must be. A UK maker, citing HSE, says shaved within 8 hours of starting work. The Australian and New Zealand fit-test standard asks for a shave before a fit test, "preferably within 12 hours". Shaving shortly before you work meets both.
+- **If you keep a beard,** a loose-fitting **powered respirator** (PAPR: a hood or helmet with a fan that supplies filtered air) needs no face seal.
+- **Get the size right.** Poor fit is a major cause of leaks. Workplaces use a **fit test**, a check that a particular mask seals on a particular face. At home, we suggest following the maker's instructions for checking the seal each time you put it on.
 
 > [!NOTE]
-> În opinia noastră, potrivirea contează mai mult decât clasa: o mască N95, FFP2 sau P2 bine potrivită va proteja de obicei mai bine decât o mască P100 care stă larg pe față.
+> In our view, fit matters more than class: a well-fitted N95, FFP2 or P2 will usually do better than a loose P100.
 
-### Când să o purtați
+### When to wear one
 
-HSE spune că o mască de protecție respiratorie „în mod normal nu este necesară” acolo unde cântărirea și amestecarea se fac într-o incintă ventilată, dar „poate fi necesară pentru întreținere și curățenie”. Majoritatea atelierelor de acasă nu au o astfel de incintă, așa că vă sugerăm să purtați una (cel puțin N95, FFP2 sau P2; o mască P100, FFP3 sau P3 este mai bună) ori de câte ori:
+HSE says a respirator is "normally not needed" where weighing and mixing happen in a ventilated enclosure, but "may be needed for maintenance and cleaning". Most home studios have no enclosure, so we suggest wearing one (N95, FFP2 or P2 at least; P100, FFP3 or P3 is better) whenever you:
 
-- deschideți saci sau turnați pulbere;
-- cântăriți pulberi și le amestecați în apă;
-- răzuiți, șlefuiți sau polizați glazură{{en: glaze}} uscată sau biscuit{{en: bisque}};
-- faceți orice curățenie uscată sau goliți un aspirator;
-- pulverizați glazură (într-o cabină: vedeți mai jos).
+- open bags or tip out powder;
+- weigh powders and stir them into water;
+- scrape, sand or grind dried glaze or bisque;
+- do any dry cleanup, or empty a vacuum;
+- spray glaze (in a booth: see below).
 
-### Ce nu este o mască de protecție respiratorie
+### What is not a respirator
 
-- Măștile chirurgicale, măștile de pânză și măștile simple „de praf” fără marcaj NIOSH, EN 149 sau AS/NZS 1716. Nu ne-am baza pe ele pentru praful de glazură.
-- O mască de protecție respiratorie pentru praf „nu vă va proteja împotriva gazelor, vaporilor” (OSHA), deci nu face nimic împotriva gazelor cuptorului.
-- Aveți grijă de masca dumneavoastră: OSHA notează că o mască murdară sau folosită greșit „poate deveni un pericol”. Păstrați-o curată, departe de hainele de lucru prăfuite.
+- Surgical masks, cloth masks and "nuisance dust" masks without a NIOSH, EN 149 or AS/NZS 1716 marking. We would not rely on them for glaze dust.
+- A dust respirator "will not protect you against gases, vapors" (OSHA), so it does nothing for kiln fumes.
+- Look after yours: OSHA notes that a dirty or misused respirator "can become a hazard". Store it clean, away from dusty work clothes.
 
 ## Curățenia, hainele și mâinile {#cleaning}
 

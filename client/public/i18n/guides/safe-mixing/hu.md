@@ -65,49 +65,49 @@ A védelem nagy része a szokásokból fakad, nem az eszközökből. A HSE kerá
 
 Ez a sorrend a mi javaslatunk, a HSE elvére építve, amely szerint elsőként a port kell elkerülni. A bemérést és a keverést lépésről lépésre a [Mázkészítés](/guides/making-a-glaze) című útmutató mutatja be.
 
-## Légzésvédők {#respirators}
+## Respirators {#respirators lang=en}
 
-A **légzésvédő** olyan tanúsított maszk, amely kiszűri a finom részecskéket a belélegzett levegőből. Csak akkor működik, ha szorosan illeszkedik az arcához, és a jó szokásokat kiegészíti, nem helyettesíti.
+A **respirator** is a mask certified to filter fine particles from the air you breathe. It works only when it seals to your face, and it backs up good habits rather than replacing them.
 
-### Védelmi osztályok régiónként
+### Classes by region
 
-Table: Részecskeszűrős légzésvédők osztályai régiónként (mázporra nagyjából egyenértékű osztályok)
-Label: Légzésvédő-osztályok
+Table: Particle respirator classes by region (rough equivalents for glaze dust)
+Label: Respirator classes
 
-| Régió                    | Mindennapi osztály | Magasabb osztály | Mit keressen                                                                                   |
-| ------------------------ | ------------------ | ---------------- | ---------------------------------------------------------------------------------------------- |
-| Egyesült Államok         | N95                | P100             | NIOSH-jóváhagyás a maszkon vagy a csomagolásán                                                 |
-| Egyesült Királyság és EU | FFP2               | FFP3             | EN 149 az eldobható maszkokon; EN 140 a többször használható félálarcokon, P2 vagy P3 szűrővel |
-| Ausztrália és Új-Zéland  | P2                 | P3               | AS/NZS 1716                                                                                    |
+| Region                    | Everyday class | Higher class | Look for                                                                         |
+| ------------------------- | -------------- | ------------ | -------------------------------------------------------------------------------- |
+| United States             | N95            | P100         | NIOSH approval on the mask or its packaging                                      |
+| UK and EU                 | FFP2           | FFP3         | EN 149 on disposable masks; EN 140 on reusable half masks, with P2 or P3 filters |
+| Australia and New Zealand | P2             | P3           | AS/NZS 1716                                                                      |
 
-A magasabb osztály a finom részecskék nagyobb hányadát szűri ki. A források eltérnek abban, mennyit szűr egy ausztrál P3-as szűrő (legalább 99%-ot vagy legalább 99,95%-ot), ezért az Ön régiójában forgalmazott, tanúsított osztályt vásárolja meg. Műhelyben gyakori választás a többször használható **félálarc** (az orrot és a szájat takarja, cserélhető szűrőkkel), P100-as szűrőkkel (az Egyesült Államokon kívül P3-assal).
+The higher class filters a larger share of fine particles. Sources disagree on what an Australian P3 filters (at least 99%, or at least 99.95%), so buy the certified class sold in your region. A reusable **half mask** (covering the nose and mouth, with replaceable filters) fitted with P100 filters (P3 outside the US) is a common studio choice.
 
-### Illeszkedés és tömítés
+### Fit and seal
 
-A szivárgó maszk a szélei mentén beengedi a port, bármilyen osztályú is. A HSE figyelmeztet, hogy a borosta és a szakáll „lehetetlenné teszi a jó tömítést”.
+A mask that leaks lets dust in around its edges, whatever its class. HSE warns that stubble and beards "make it impossible to get a good seal".
 
-- **Nem sokkal a munka előtt borotválkozzon.** Az útmutatások eltérnek abban, mennyi idővel korábbi borotválkozás számít még „frissen borotváltnak”: 8 órán belüli (egy brit gyártó szerint, a HSE-re hivatkozva), vagy lehetőleg 12 órán belüli (az ausztrál és új-zélandi illeszkedésvizsgálati szabvány szerint). Ha nem sokkal a munka előtt borotválkozik, mindkettőnek megfelel.
-- **Ha szakállat visel,** a lazán illeszkedő **ventilátoros szűrőkészülék** (PAPR: csuklya vagy sisak ventilátorral, amely szűrt levegőt juttat be) nem igényel arctömítést.
-- **Válassza meg jól a méretet.** A rossz illeszkedés a szivárgás egyik fő oka. Munkahelyeken **illeszkedésvizsgálatot** (fit-tesztet) végeznek: ez azt ellenőrzi, hogy egy adott maszk jól tömít-e egy adott arcon. Otthon azt javasoljuk, hogy minden felvételkor végezze el a tömítettség-ellenőrzést a gyártó utasításai szerint.
+- **Shave shortly before you work.** Guidance differs on how recent "clean-shaven" must be. A UK maker, citing HSE, says shaved within 8 hours of starting work. The Australian and New Zealand fit-test standard asks for a shave before a fit test, "preferably within 12 hours". Shaving shortly before you work meets both.
+- **If you keep a beard,** a loose-fitting **powered respirator** (PAPR: a hood or helmet with a fan that supplies filtered air) needs no face seal.
+- **Get the size right.** Poor fit is a major cause of leaks. Workplaces use a **fit test**, a check that a particular mask seals on a particular face. At home, we suggest following the maker's instructions for checking the seal each time you put it on.
 
 > [!NOTE]
-> Véleményünk szerint az illeszkedés fontosabb, mint az osztály: egy jól illeszkedő N95-ös, FFP2-es vagy P2-es maszk általában jobban véd, mint egy lazán álló P100-as.
+> In our view, fit matters more than class: a well-fitted N95, FFP2 or P2 will usually do better than a loose P100.
 
-### Mikor viseljen légzésvédőt
+### When to wear one
 
-A HSE szerint légzésvédőre „általában nincs szükség”, ha a bemérés és a keverés elszívással ellátott burkolatban történik, de „karbantartáshoz és takarításhoz szükség lehet rá”. A legtöbb otthoni műhelyben nincs ilyen burkolat, ezért azt javasoljuk, hogy viseljen légzésvédőt (legalább N95-öst, FFP2-est vagy P2-est; a P100-as, FFP3-as vagy P3-as jobb) minden alkalommal, amikor:
+HSE says a respirator is "normally not needed" where weighing and mixing happen in a ventilated enclosure, but "may be needed for maintenance and cleaning". Most home studios have no enclosure, so we suggest wearing one (N95, FFP2 or P2 at least; P100, FFP3 or P3 is better) whenever you:
 
-- zsákot bont vagy port önt ki;
-- port mér be és vízbe keveri;
-- száraz mázat{{en: glaze}} vagy zsengélt árut{{en: bisque}} kapar, csiszol vagy köszörül;
-- bármilyen száraz takarítást végez, vagy porszívót ürít;
-- mázat szór (szórófülkében: lásd lent).
+- open bags or tip out powder;
+- weigh powders and stir them into water;
+- scrape, sand or grind dried glaze or bisque;
+- do any dry cleanup, or empty a vacuum;
+- spray glaze (in a booth: see below).
 
-### Mi nem légzésvédő
+### What is not a respirator
 
-- A sebészi maszkok, a textilmaszkok és a NIOSH, EN 149 vagy AS/NZS 1716 jelölés nélküli, „inert por” elleni porvédő maszkok. Mázpor ellen nem hagyatkoznánk rájuk.
-- A porszűrős légzésvédő „nem véd a gázok, gőzök ellen” (OSHA), így az égetési gázok ellen semmit sem ér.
-- Gondozza a sajátját: az OSHA megjegyzi, hogy a piszkos vagy helytelenül használt légzésvédő „veszélyforrássá válhat”. Tárolja tisztán, a poros munkaruháktól távol.
+- Surgical masks, cloth masks and "nuisance dust" masks without a NIOSH, EN 149 or AS/NZS 1716 marking. We would not rely on them for glaze dust.
+- A dust respirator "will not protect you against gases, vapors" (OSHA), so it does nothing for kiln fumes.
+- Look after yours: OSHA notes that a dirty or misused respirator "can become a hazard". Store it clean, away from dusty work clothes.
 
 ## Takarítás, ruházat és kéz {#cleaning}
 

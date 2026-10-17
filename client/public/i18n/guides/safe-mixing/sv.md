@@ -65,49 +65,49 @@ Det mesta skyddet kommer från vanor, inte från utrustning. HSE:s råd för ker
 
 Ordningen är vårt förslag, byggt på HSE:s princip att först och främst undvika pulver. Vägning och blandning steg för steg finns i [Blanda en glasyr](/guides/making-a-glaze).
 
-## Andningsskydd {#respirators}
+## Respirators {#respirators lang=en}
 
-Ett **andningsskydd** är en mask som är certifierad för att filtrera bort fina partiklar ur inandningsluften. Det fungerar bara när det sluter tätt mot ansiktet, och det är ett komplement till goda vanor, inte en ersättning för dem.
+A **respirator** is a mask certified to filter fine particles from the air you breathe. It works only when it seals to your face, and it backs up good habits rather than replacing them.
 
-### Skyddsklasser i olika regioner
+### Classes by region
 
-Table: Skyddsklasser för partikelfiltrerande andningsskydd i olika regioner (ungefärliga motsvarigheter för glasyrdamm)
-Label: Skyddsklasser för andningsskydd
+Table: Particle respirator classes by region (rough equivalents for glaze dust)
+Label: Respirator classes
 
-| Region                     | Vanlig klass | Högre klass | Titta efter                                                                           |
-| -------------------------- | ------------ | ----------- | ------------------------------------------------------------------------------------- |
-| USA                        | N95          | P100        | NIOSH-godkännande på masken eller förpackningen                                       |
-| Storbritannien och EU      | FFP2         | FFP3        | EN 149 på engångsmasker; EN 140 på återanvändbara halvmasker, med P2- eller P3-filter |
-| Australien och Nya Zeeland | P2           | P3          | AS/NZS 1716                                                                           |
+| Region                    | Everyday class | Higher class | Look for                                                                         |
+| ------------------------- | -------------- | ------------ | -------------------------------------------------------------------------------- |
+| United States             | N95            | P100         | NIOSH approval on the mask or its packaging                                      |
+| UK and EU                 | FFP2           | FFP3         | EN 149 on disposable masks; EN 140 on reusable half masks, with P2 or P3 filters |
+| Australia and New Zealand | P2             | P3           | AS/NZS 1716                                                                      |
 
-Den högre klassen filtrerar bort en större andel av de fina partiklarna. Källorna är oeniga om hur mycket ett australiskt P3-filter filtrerar (minst 99 % eller minst 99,95 %), så köp den certifierade klass som säljs i den egna regionen. En återanvändbar **halvmask** (som täcker näsa och mun, med utbytbara filter) med P100-filter (P3 utanför USA) är ett vanligt val i verkstaden.
+The higher class filters a larger share of fine particles. Sources disagree on what an Australian P3 filters (at least 99%, or at least 99.95%), so buy the certified class sold in your region. A reusable **half mask** (covering the nose and mouth, with replaceable filters) fitted with P100 filters (P3 outside the US) is a common studio choice.
 
-### Passform och täthet
+### Fit and seal
 
-En mask som läcker släpper in damm runt kanterna, oavsett skyddsklass. HSE varnar för att skäggstubb och skägg ”gör det omöjligt att få en bra tätning”.
+A mask that leaks lets dust in around its edges, whatever its class. HSE warns that stubble and beards "make it impossible to get a good seal".
 
-- **Raka dig strax före arbetet.** Råden skiljer sig åt i hur nyligen man måste ha rakat sig för att räknas som ”slätrakad”: inom 8 timmar (en brittisk tillverkare, med hänvisning till HSE) eller helst inom 12 (den australiska och nyzeeländska standarden för täthetsprovning). Rakning strax före arbetet uppfyller båda.
-- **För den som har skägg:** en löst sittande **fläktmatad skyddsmask** (PAPR: en huva eller hjälm med en fläkt som tillför filtrerad luft) behöver ingen tätning mot ansiktet.
-- **Välj rätt storlek.** Dålig passform är en viktig orsak till läckor. På arbetsplatser används **täthetsprovning**, en kontroll av att en viss mask sluter tätt på ett visst ansikte. Hemma föreslår vi att följa tillverkarens instruktioner för att kontrollera tätheten varje gång masken sätts på.
+- **Shave shortly before you work.** Guidance differs on how recent "clean-shaven" must be. A UK maker, citing HSE, says shaved within 8 hours of starting work. The Australian and New Zealand fit-test standard asks for a shave before a fit test, "preferably within 12 hours". Shaving shortly before you work meets both.
+- **If you keep a beard,** a loose-fitting **powered respirator** (PAPR: a hood or helmet with a fan that supplies filtered air) needs no face seal.
+- **Get the size right.** Poor fit is a major cause of leaks. Workplaces use a **fit test**, a check that a particular mask seals on a particular face. At home, we suggest following the maker's instructions for checking the seal each time you put it on.
 
 > [!NOTE]
-> Enligt vår bedömning betyder passformen mer än skyddsklassen: en välsittande N95, FFP2 eller P2 fungerar oftast bättre än en P100 som sitter löst.
+> In our view, fit matters more than class: a well-fitted N95, FFP2 or P2 will usually do better than a loose P100.
 
-### När andningsskydd ska användas
+### When to wear one
 
-HSE skriver att andningsskydd ”normalt inte behövs” där vägning och blandning sker i en ventilerad inbyggnad, men att det ”kan behövas vid underhåll och rengöring”. De flesta hemverkstäder saknar en sådan inbyggnad, så vi föreslår andningsskydd (minst N95, FFP2 eller P2; P100, FFP3 eller P3 är bättre) varje gång man:
+HSE says a respirator is "normally not needed" where weighing and mixing happen in a ventilated enclosure, but "may be needed for maintenance and cleaning". Most home studios have no enclosure, so we suggest wearing one (N95, FFP2 or P2 at least; P100, FFP3 or P3 is better) whenever you:
 
-- öppnar säckar eller häller ut pulver;
-- väger pulver och rör ner det i vatten;
-- skrapar, sandpapprar eller slipar torkad glasyr{{en: glaze}} eller skröjat gods{{en: bisque}};
-- städar torrt på något sätt eller tömmer en dammsugare;
-- sprutar glasyr (i ett sprutskåp: se nedan).
+- open bags or tip out powder;
+- weigh powders and stir them into water;
+- scrape, sand or grind dried glaze or bisque;
+- do any dry cleanup, or empty a vacuum;
+- spray glaze (in a booth: see below).
 
-### Vad som inte är andningsskydd
+### What is not a respirator
 
-- Kirurgiska munskydd, tygmasker och enkla dammasker utan märkning enligt NIOSH, EN 149 eller AS/NZS 1716. Vi skulle inte förlita oss på dem mot glasyrdamm.
-- Ett andningsskydd mot damm ”skyddar dig inte mot gaser, ångor” (OSHA), så det gör ingenting mot ugnsgaser.
-- Sköt om andningsskyddet: OSHA påpekar att ett smutsigt eller felanvänt andningsskydd ”kan bli en fara”. Förvara det rent, borta från dammiga arbetskläder.
+- Surgical masks, cloth masks and "nuisance dust" masks without a NIOSH, EN 149 or AS/NZS 1716 marking. We would not rely on them for glaze dust.
+- A dust respirator "will not protect you against gases, vapors" (OSHA), so it does nothing for kiln fumes.
+- Look after yours: OSHA notes that a dirty or misused respirator "can become a hazard". Store it clean, away from dusty work clothes.
 
 ## Städning, kläder och händer {#cleaning}
 

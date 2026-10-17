@@ -595,22 +595,22 @@ Ha a Kiln-Sitter lekapcsol, mielőtt az égetőlapon álló gúlák lehajlanána
 
 A **pirométer** hőmérséklet-kijelző műszer, amely egy **hőelem** jelét mutatja; a hőelem a kemence falán átvezetett hőérzékelő. Megmutatja, milyen gyorsan fűt fel a kemence, így kiválaszthatja a gúlatáblázat megfelelő oszlopát. A fal közelében mér azonban, nem az árunál, és a mérése idővel elcsúszik. Az L&L megjegyzi, hogy egy K típusú hőelem ismételt 6-os gúlás égetések után több mint {{25 °F; 14 °C}} értékkel is tévedhet, ami „egy teljes gúlánál nagyobb eltérés”, míg egy önálló gúla legfeljebb {{4 °F; 2 °C}} értékkel ingadozik. Az Orton szerint a pirométereket időnként újra kell kalibrálni, és ezt gúlákkal lehet ellenőrizni.
 
-## Szellőztetés, betekintés és biztonság {#venting}
+## Venting, peeking and safety {#venting lang=en}
 
-### Szellőztetés
+### Venting
 
-Az égetés elején az agyag és a máz{{en: glaze}} vízgőzt és égetési gázokat bocsát ki, köztük szén-monoxidot, és a mázak az égetés későbbi szakaszában is bocsáthatnak ki mérgező gázokat. Az L&L ezek elvezetését „elengedhetetlennek” nevezi. Elszívórendszer nélkül ez azt jelenti, hogy a korai szakaszokban a fedél ki van támasztva, és a kémlelőnyílások nyitva vannak, ahogy a fenti eljárásokban; ha ilyenkor lassabban fűt, az a szén kiégését is segíti. **Alsó elszívással** (a kemencére szerelt, ventilátoros elszívóval) az Orton szerint a fedél és a kémlelőnyílások az egész égetés alatt zárva maradnak, kivéve a gúlák ellenőrzésekor. A nyitott felső kémlelőnyílás a Kiln-Sitter csövét és a kemence fém alkatrészeit is védi.
+Early in a firing, clay and glaze give off water vapor and fumes, including carbon monoxide, and glazes can give off toxic fumes later in the firing too. L&L calls venting them "essential". With no vent system, that means the lid propped and the peepholes open in the early stages, as in the procedures above; slowing the heating during this time also helps the carbon burn out. In a kiln without a vent, Dawson, who made the sitter, also says to leave the top peephole open for the whole firing: the venting "will reduce deterioration of the kiln's metal parts and increase the life of the tube assembly". A **downdraft vent** (a powered vent fitted to the kiln) changes this. It does the venting, so Orton says the lid and peepholes stay closed for the whole firing except to check the cones, and L&L says to leave the vent on and plug the peepholes.
 
-A helyiség szellőztetéséről és a szén-monoxid-érzékelőkről a [Biztonságos keverés és szellőzés](/guides/safe-mixing) és a [Ne mérgezze meg a családját](/guides/home-safety) című útmutatókban olvashat.
+For venting the room, and for carbon monoxide alarms, see [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety).
 
-### Amíg a kemence éget
+### While the kiln is firing
 
-- Csak IR-szűrős, 3-as védőfokozatú hegesztőszemüvegben nézzen be a kémlelőnyíláson; a napszemüveg nem elég. A Skutt azt tanácsolja, hogy a dugókat csavarva illessze a helyükre, hogy ne essenek ki.
-- Ne hagyja a kemencét felügyelet nélkül a várható égetési időn túl; a Kiln-Sitter nem hibabiztos.
-- Soha ne égessen éghető dolgon vagy annak közelében, amilyen például a fapadló vagy a szőnyeg.
-- Tartsa be a kezelési útmutatóban megadott védőtávolságokat. A közzétett értékek 12 hüvelyktől (30 cm) 3 lábig (91 cm) terjednek; ha a kezelési útmutató nem ír róla, a legbiztonságosabb a falaktól 18 hüvelyk (46 cm), minden éghető dologtól 3 láb (91 cm).
-- A Kiln-Sitter súlya körül hagyja szabadon a helyet, hogy a súly le tudjon esni.
-- Az égetés végén kapcsolja ki a kapcsolókat, és a kismegszakítót is kapcsolja le.
+- Look through a peephole only with IR-rated shade 3 welding glasses; sunglasses are not enough. Skutt advises twisting the plugs into place so they do not fall out.
+- Do not leave the kiln unattended beyond its expected firing time; a sitter is not a fail-safe.
+- Never fire on or near anything that burns, such as a wood floor or carpet.
+- Keep the clearances in your manual. Published figures range from 12 in (30 cm) to 3 ft (91 cm); where the manual is silent, 18 in (46 cm) from walls and 3 ft (91 cm) from anything that burns is the safest choice.
+- Keep the space around the sitter's weight clear so it can drop.
+- When the firing ends, turn the switches off and turn off the breaker as well.
 
 ## Hűtés és kirakás {#cooling}
 

@@ -595,22 +595,22 @@ Slår Kiln-Sitteren fra, før keglerne på ovnpladen er bøjet ned, så gå én 
 
 Et **pyrometer** er en temperaturmåler, der aflæser et **termoelement**, en varmeføler gennem ovnvæggen. Det viser, hvor hurtigt ovnen stiger, så den rigtige kolonne i kegletabellen kan vælges. Men det måler nær væggen, ikke ved emnerne, og det driver med tiden. L&L bemærker, at et termoelement af type K kan vise mere end {{25 °F; 14 °C}} forkert efter gentagne brændinger til kegle 6, »en forskel, der er større end en hel kegle«, mens en selvstående kegle højst varierer med {{4 °F; 2 °C}}. Ifølge Orton skal pyrometre kalibreres igen fra tid til anden, og det er med kegler, de tjekkes.
 
-## Udluftning, kighuller og sikkerhed {#venting}
+## Venting, peeking and safety {#venting lang=en}
 
-### Udluftning
+### Venting
 
-Tidligt i en brænding afgiver ler og glasur{{en: glaze}} vanddamp og røggas, herunder kulilte, og glasurer kan også afgive giftige dampe senere i brændingen. L&L kalder det »afgørende« at lede dem ud. Uden udsugningssystem betyder det låget på klem og kighullerne åbne i de tidlige faser, som i fremgangsmåderne ovenfor; at varme langsommere op i denne tid hjælper også kulstoffet med at brænde ud. Med en **bundudsugning** (en motordrevet udsugning monteret på ovnen) forbliver låget og kighullerne ifølge Orton lukkede under hele brændingen, undtagen når keglerne tjekkes. Et åbent øverste kighul beskytter også Kiln-Sitterens rør og ovnens metaldele.
+Early in a firing, clay and glaze give off water vapor and fumes, including carbon monoxide, and glazes can give off toxic fumes later in the firing too. L&L calls venting them "essential". With no vent system, that means the lid propped and the peepholes open in the early stages, as in the procedures above; slowing the heating during this time also helps the carbon burn out. In a kiln without a vent, Dawson, who made the sitter, also says to leave the top peephole open for the whole firing: the venting "will reduce deterioration of the kiln's metal parts and increase the life of the tube assembly". A **downdraft vent** (a powered vent fitted to the kiln) changes this. It does the venting, so Orton says the lid and peepholes stay closed for the whole firing except to check the cones, and L&L says to leave the vent on and plug the peepholes.
 
-Om udluftning af rummet og om kuliltealarmer: Se [Sikker blanding og ventilation](/guides/safe-mixing) og [Forgift ikke familien](/guides/home-safety).
+For venting the room, and for carbon monoxide alarms, see [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety).
 
-### Mens ovnen brænder
+### While the kiln is firing
 
-- Kig kun gennem et kighul med svejsebriller med IR-filter og beskyttelsestrin 3; solbriller er ikke nok. Skutt anbefaler at dreje propperne på plads, så de ikke falder ud.
-- Lad ikke ovnen være uden opsyn ud over den forventede brændingstid; en Kiln-Sitter er ikke fejlsikker.
-- Brænd aldrig på eller nær noget, der kan brænde, fx et trægulv eller et tæppe.
-- Overhold sikkerhedsafstandene i brugsanvisningen. De offentliggjorte tal går fra 12 tommer (30 cm) til 3 fod (91 cm); hvor brugsanvisningen intet siger, er 18 tommer (46 cm) fra vægge og 3 fod (91 cm) fra alt, der kan brænde, det sikreste valg.
-- Hold pladsen omkring Kiln-Sitterens lod fri, så det kan falde.
-- Når brændingen er slut, så sluk kontakterne, og slå også sikringen fra.
+- Look through a peephole only with IR-rated shade 3 welding glasses; sunglasses are not enough. Skutt advises twisting the plugs into place so they do not fall out.
+- Do not leave the kiln unattended beyond its expected firing time; a sitter is not a fail-safe.
+- Never fire on or near anything that burns, such as a wood floor or carpet.
+- Keep the clearances in your manual. Published figures range from 12 in (30 cm) to 3 ft (91 cm); where the manual is silent, 18 in (46 cm) from walls and 3 ft (91 cm) from anything that burns is the safest choice.
+- Keep the space around the sitter's weight clear so it can drop.
+- When the firing ends, turn the switches off and turn off the breaker as well.
 
 ## Afkøling og tømning {#cooling}
 

@@ -33,7 +33,8 @@ describe('LocaleService', () => {
     expect(browserRegion(['en', 'fr-FR'])).toBe('FR');
     expect(browserRegion(['en', 'ja-JP'])).toBe('JP');
     expect(browserRegion(['en', 'ko-KR'])).toBe('KR');
-    expect(browserRegion(['en', 'th-TH'])).toBe('');
+    expect(browserRegion(['en', 'th-TH'])).toBe('TH');
+    expect(browserRegion(['en', 'ar-EG'])).toBe('');
     expect(browserRegion(['tr-TR', 'en'])).toBe('TR');
     expect(browserRegion(['not a tag'])).toBe('');
   });
@@ -193,8 +194,10 @@ describe('prerenderRegion', () => {
   });
 
   it('finds a language listed with its script, as the region data lists it', () => {
-    // Taiwan is the one region whose first language is Traditional Chinese; Singapore the one listing Simplified.
-    expect(['zh-Hant', 'zh-Hans', 'ko', 'ja', 'ja-XC'].map(prerenderRegion)).toEqual(['TW', 'SG', 'KR', 'JP', 'JP']);
+    // Taiwan comes before Hong Kong, the other region whose first language is Traditional Chinese; China is
+    // the one whose first language is Simplified.
+    expect(['zh-Hant', 'zh-Hans', 'ko', 'ja', 'ja-XC'].map(prerenderRegion)).toEqual(['TW', 'CN', 'KR', 'JP', 'JP']);
+    expect(['th', 'id'].map(prerenderRegion)).toEqual(['TH', 'ID']);
   });
 
   it('names none for English, a pseudo-locale, or a language no region lists', () => {

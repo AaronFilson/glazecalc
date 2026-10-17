@@ -156,6 +156,20 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
     mg/L), Singapore's lead only, and Malaysia's 2026 limits with four pieces judged.
   - **Shops** by their own names: two in Korea, one in Taiwan, two in Singapore; none was found in
     Malaysia, and the page says so.
+- **China, Hong Kong, Indonesia, Thailand and the Philippines as regions** (in English; Hong Kong
+  also reads Traditional Chinese, and the Philippines stays in English). Each fires by temperature
+  until you choose otherwise and lists the US materials. The guides give, each from an official page
+  with its source and date, and leave out what could not be checked:
+  - **Who to call:** China 120 (with 119 and 110); Hong Kong 999, with the Department of Health
+    linked (its poison centre answers professionals only); Indonesia 119, with the health ministry
+    linked; Thailand 1669 and the Ramathibodi Poison Center on 1367, 24 hours; the Philippines 911
+    and the National Poison Management and Control Center, 24 hours and free.
+  - **Silica:** China's binding limits by the dust's free silica content (0.7, 0.3 and 0.2 mg/m³),
+    Hong Kong's guide values (0.1 for quartz, 0.05 for cristobalite), and Indonesia's and Thailand's
+    binding 0.025 mg/m³. The Philippines' limit could not be read, and the page says so.
+  - **Lead and cadmium:** Indonesia's 2026 limits, with the third of three tests held to them, and
+    Thailand's, all in mg/L. China's could not be read, and Hong Kong has none of its own found.
+  - **Shops:** none was found in any of the five, and the page says so.
 - **Groundwork for East and Southeast Asia**, before any of its languages:
   - **Numbers and dates** can be written as in Japan, Korea, mainland China and Taiwan (Simplified and
     Traditional Chinese each keep their script in any region), Hong Kong, Singapore, Malaysia,

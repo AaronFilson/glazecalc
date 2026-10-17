@@ -595,22 +595,22 @@ Label: Отправна точка за пещ с ръчно управлени�
 
 **Пирометърът** е уред, който показва температурата, измерена от **термодвойка** – температурен датчик, прекаран през стената на пещта. Той показва колко бързо се нагрява пещта, така че да изберете правилната колона на таблицата на конусите. Но той измерва близо до стената, а не при изделията, и показанията му се отклоняват с времето. L&L отбелязва, че термодвойка тип K може да греши с повече от {{25 °F; 14 °C}} след многократни изпичания до конус 6, „разлика, по-голяма от цял конус“, докато самостоящият конус варира с не повече от {{4 °F; 2 °C}}. Orton казва, че пирометрите трябва да се калибрират отново от време на време, а конусите са начинът да ги проверите.
 
-## Вентилация, наблюдение и безопасност {#venting}
+## Venting, peeking and safety {#venting lang=en}
 
-### Вентилация
+### Venting
 
-В началото на изпичането глината и глазурата{{en: glaze}} отделят водна пара и газове, включително въглероден оксид, а глазурите могат да отделят токсични газове и пари и по-късно в изпичането. L&L нарича отвеждането им „от съществено значение“. Без вентилационна система това означава открехнат капак и отворени наблюдателни отвори в началните етапи, както в процедурите по-горе; забавянето на нагряването през това време помага и на въглерода да изгори. При **долна смукателна вентилация** (вентилатор с мотор, монтиран към пещта) капакът и наблюдателните отвори според Orton остават затворени през цялото изпичане, освен за проверка на конусите. Отвореният горен наблюдателен отвор предпазва също тръбичката на Kiln-Sitter и металните части на пещта.
+Early in a firing, clay and glaze give off water vapor and fumes, including carbon monoxide, and glazes can give off toxic fumes later in the firing too. L&L calls venting them "essential". With no vent system, that means the lid propped and the peepholes open in the early stages, as in the procedures above; slowing the heating during this time also helps the carbon burn out. In a kiln without a vent, Dawson, who made the sitter, also says to leave the top peephole open for the whole firing: the venting "will reduce deterioration of the kiln's metal parts and increase the life of the tube assembly". A **downdraft vent** (a powered vent fitted to the kiln) changes this. It does the venting, so Orton says the lid and peepholes stay closed for the whole firing except to check the cones, and L&L says to leave the vent on and plug the peepholes.
 
-За вентилацията на помещението и за детекторите за въглероден оксид вижте [Безопасно смесване и вентилация](/guides/safe-mixing) и [Не тровете семейството си](/guides/home-safety).
+For venting the room, and for carbon monoxide alarms, see [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety).
 
-### Докато пещта работи
+### While the kiln is firing
 
-- Гледайте през наблюдателния отвор само със заваръчни очила със степен на затъмняване 3 и IR филтър; слънчевите очила не са достатъчни. Skutt съветва тапите да се завъртат при поставяне, за да не изпаднат.
-- Не оставяйте пещта без надзор след очакваното време на изпичане; Kiln-Sitter не е безотказна защита.
-- Никога не изпичайте върху нещо горимо или близо до него, като дървен под или килим.
-- Спазвайте безопасните разстояния от ръководството за експлоатация. Публикуваните стойности са от 12 инча (30 cm) до 3 фута (91 cm); когато ръководството не казва нищо, 18 инча (46 cm) от стените и 3 фута (91 cm) от всичко горимо е най-безопасният избор.
-- Пазете пространството около тежестта на Kiln-Sitter свободно, за да може тя да падне.
-- Когато изпичането приключи, изключете превключвателите, а също и предпазителя на веригата.
+- Look through a peephole only with IR-rated shade 3 welding glasses; sunglasses are not enough. Skutt advises twisting the plugs into place so they do not fall out.
+- Do not leave the kiln unattended beyond its expected firing time; a sitter is not a fail-safe.
+- Never fire on or near anything that burns, such as a wood floor or carpet.
+- Keep the clearances in your manual. Published figures range from 12 in (30 cm) to 3 ft (91 cm); where the manual is silent, 18 in (46 cm) from walls and 3 ft (91 cm) from anything that burns is the safest choice.
+- Keep the space around the sitter's weight clear so it can drop.
+- When the firing ends, turn the switches off and turn off the breaker as well.
 
 ## Охлаждане и изваждане на изделията {#cooling}
 

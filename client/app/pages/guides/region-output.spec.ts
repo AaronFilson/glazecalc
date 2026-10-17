@@ -1,5 +1,6 @@
 import { Type } from '@angular/core';
 import { TestBed } from '@angular/core/testing';
+import { NOW } from '../../core/clock';
 import { PreferencesService } from '../../core/preferences.service';
 import { testProviders } from '../../testing/test-providers';
 import { FoodLimits } from './food-limits';
@@ -49,7 +50,8 @@ describe('region blocks before Turkey', () => {
       const all: Record<string, string> = {};
       for (const region of BEFORE_TURKEY) all[region] = await html(component, region);
       expect(all).toMatchSnapshot();
-    });
+      // Thirty-two regions, each with the list of every region to choose from: slow on a busy machine.
+    }, 30_000);
   }
 });
 
@@ -64,5 +66,24 @@ describe('region blocks before Korea', () => {
     it(`says exactly what it said before for Türkiye: ${name}`, async () => {
       expect(await html(component, 'TR')).toMatchSnapshot();
     });
+  }
+});
+
+// Korea, Taiwan, Singapore and Malaysia, frozen before China, Hong Kong, Indonesia and Thailand. The
+// day is fixed, since Taiwan's limit says the day it applies from only until that day.
+describe('region blocks before China', () => {
+  beforeEach(() => {
+    localStorage.clear();
+    TestBed.configureTestingModule({
+      providers: [...testProviders(), { provide: NOW, useValue: () => new Date('2026-10-16T12:00:00Z') }]
+    });
+  });
+
+  for (const [name, component] of BLOCKS) {
+    it(`says exactly what it said before for Korea, Taiwan, Singapore and Malaysia: ${name}`, async () => {
+      const all: Record<string, string> = {};
+      for (const region of ['KR', 'TW', 'SG', 'MY']) all[region] = await html(component, region);
+      expect(all).toMatchSnapshot();
+    }, 15_000);
   }
 });

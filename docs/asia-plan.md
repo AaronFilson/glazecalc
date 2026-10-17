@@ -2,7 +2,7 @@
 
 Status: drafted 2026-10-13 from the Asia research report and its three notes, for the owner's review. It follows docs/i18n-plan.md ("After the EU") and reuses its machinery. Nothing here changes the EU approach.
 
-Progress, 2026-10-16: decisions 2–9 settled (2 as Turkish; 3–9 as recommended); Vietnam and Indonesia decided (Phase E item 3); Chinese and Korean style sheets on branch asia-wave1; Korea, Taiwan, Singapore and Malaysia region data on branch asia-regions1.
+Progress, 2026-10-16: decisions 2–9 settled (2 as Turkish; 3–9 as recommended); Vietnam and Indonesia decided (Phase E item 3); Chinese and Korean style sheets on branch asia-wave1; Korea, Taiwan, Singapore and Malaysia region data on branch asia-regions1; China, Hong Kong, Indonesia, Thailand and the Philippines on branch w1-asia-regions.
 
 Progress, 2026-10-14 (branch asia-japan): **Phase A is merged** (the three groundwork branches: locales, checks, fonts). **Phase B items 1–4 and the data half of item 6 are done**: the third cone system, the guides' three-way version choice, the SK chart as data (lib/cones) and the English SK section of the firing guide. Item 6 is done too: the SK chart was checked row by row against Yuko Trading's PDF, and all 42 rows match. Item 5 (translating the new section) remains.
 
@@ -13,6 +13,8 @@ Progress, 2026-10-14 (branch asia-japan): **Phase A is merged** (the three groun
 **Phase C for Türkiye is done** (2026-10-14, branch asia-turkey, English only): the TR region (temperature, specific gravity, the EU library) with 112, UZEM 114, the dust regulation's silica formula, FFP mask classes, the Tebliğ's food-contact limits and three shops; see "Türkiye's region data" under Phase C. The silica formula became general (E = numerator / (factor × Q + offset), with the law's decimals) without changing Japan's data or output; the data hash and the snapshot test now cover Japan as well as the 31 earlier regions. The Turkish translation is Phase E, live since the owner's KVKK decision (decision 10).
 
 **Phase C for South Korea, Taiwan, Singapore and Malaysia is done** (2026-10-16, branch asia-regions1, English only): the KR, TW, SG and MY regions (temperature, specific gravity, the US library; SG and MY stay English, decision 9) with their emergency numbers, poison lines where one was confirmed, silica limits, food-contact rules, mask classes where read, and shops; see "Korea, Taiwan, Singapore and Malaysia's region data" under Phase C. The model gained a silica limit's start date (`from`, Taiwan's 2027-01-01), `ppm` as a food unit (said under the table as mg/L of the test solution), `pieces` for a law that judges other than six (Malaysia's four), and the kinds of piece `kr*`, `tw*` and `my*` (Singapore's are the US ones). The data hash and the snapshot test now cover Türkiye as well. CN, HK, ID and TH are next, after their verification pass.
+
+**Phase C for China, Hong Kong, Indonesia, Thailand and the Philippines is done** (2026-10-16, branch w1-asia-regions, English only): the CN, HK, ID, TH and PH regions (temperature, specific gravity, the US library; HK reads zh-Hant and English, decision 5; PH stays English, decision 9) with their emergency numbers, poison lines where one was confirmed (Thailand's and the Philippines'), silica limits (none for the Philippines), food-contact rules for Indonesia and Thailand, and no shops (none found); see "China, Hong Kong, Indonesia, Thailand and the Philippines' region data" under Phase C. The model gained silica `bands` (China's GBZ 2.1 by free SiO2 content) and the kinds of piece `id*` and `th*`. Vietnam is not added: no official page for its emergency numbers could be read. The data hash and the snapshot test now cover Korea, Taiwan, Singapore and Malaysia as well.
 
 **Phase E for Turkish is translated, reviewed, made consistent and live** (2026-10-14, branch asia-turkey): the owner decided Türkiye's data law, KVKK, by telling readers plainly what the system is (decision 10), and the sign-up page now says so before an account is made. Thai, Vietnamese and Indonesian remain.
 
@@ -128,15 +130,15 @@ Tests:
 Each country goes through the same steps, and none goes live with an unverified safety value.
 
 1. **Verification pass.** A person in a browser, or a fresh research session with a search budget, reads the official pages the notes could not, from each country's "Could not verify" list. In particular:
-   - **CN:** 120/119/110, GB 4806.4-2016, the hours of China CDC's line and whether the public may call it, KN95 names, GBZ 2.1 amendment 2;
-   - **HK:** 999 in words, the silica pairing by eye, any food-ware rule;
+   - **CN:** _done 2026-10-16_ (120/119/110 on Shanghai's page; GBZ 2.1 amendment 2 read, silica unchanged); still open: GB 4806.4-2016, the China CDC line's hours and callers, KN95 names;
+   - **HK:** _done 2026-10-16_ (999 in words; the silica pairing in two text orders; no food-ware rule of its own found);
    - **TW:** _done 2026-10-16_ (119 and 110 body text read; the limit before 2027 is still secondary only, so it is not shown);
    - **KR:** _done 2026-10-16_ (no national public poison line on any official page; KF94 read as MFDS's health mask);
    - **SG, MY:** _done 2026-10-16_ (see below);
-   - **TH:** 1669/191/199 on an official page, the silica limit, the Thai original of MOPH No. 92 and any later amendment;
+   - **TH:** _done 2026-10-16_ (1669/191/199 on the MFA's page; the DLPW limit; MOPH No. 92's Thai original; no later ceramic rule listed);
    - **VN:** 113/114/115, Bạch Mai's hours and public status, QCVN 02:2019 and QCVN 12-4:2015;
-   - **ID:** HALOBPOM's poison role, BPOM 11/2026's ≥1100 mL sign, promulgation date and the 0.5 mg/L lead figure;
-   - **PH:** the DOLE silica table, NPMCC hours;
+   - **ID:** _done 2026-10-16_ (the ≥1100 mL sign and 0.5 mg/L lead read in the PDF); still open: HALOBPOM's poison role, BPOM 11/2026's promulgation date;
+   - **PH:** _done 2026-10-16_ (NPMCC 24/7, free, in PGH's Citizen's Charter); still open: the DOLE silica table;
    - **JP:** _done 2026-10-14_ (the 作業環境評価基準 text read; JSOH's 2025–2026 list read; its 2026 list is members only).
    - **TR:** _done 2026-10-14_ (see "Türkiye's region data" below); still open: UZEM's cost and scope, TS EN 149 on TSE's site, the date of the announced dust-regulation revision.
 
@@ -205,6 +207,29 @@ Could not verify (not shipped as fact):
 - **TW:** the silica limit in force until 2026-12-31 (only a university table, `10 / (%SiO2 + 2)`); D2/D3 percentages on a government page; the TFDA mask guideline; the extension of the second poison number (85500 or 85519); each-or-average judging; 釉藥堂 (an extract only).
 - **SG:** any public poison line; NurseFirst 6262 6262; SS 548's class names and a MOM silica page; the food test method; Wei Chuan Pottery Studio; the statutes re-read on 2026-10-16.
 - **MY:** 112 from mobiles; the poison centre's cost; the 1.1 L line between small and large hollowware and the test method (regulation 28 not read); whether newer USECHH rules replace the 2000 ones; any shop.
+
+### China, Hong Kong, Indonesia, Thailand and the Philippines' region data (done 2026-10-16)
+
+From research_notes/Asia/regions-CN-HK-ID-TH-VN-PH-2026-10-16.md, building on region-data.md (2026-10-12/13). Every value carries its source, its check date and a status; all were read again on 2026-10-16.
+
+| Region                                                 | Emergency and poison                                                                                                                               | Silica                                                                                                                                                                 | Food contact                                                                                                                                                               | Shops                        |
+| ------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------- |
+| `CN`, `['zh-Hans']`, temperature, sg, US library       | 120, with 119 and 110 in its note (Shanghai government's page); no poison line shown, no ministry linked (nhc.gov.cn unreadable)                   | GBZ 2.1—2019 表2, binding (强制性), by free SiO2 band (`bands`): 0.7 (10–50 %), 0.3 (over 50–80 %), 0.2 (over 80 %) mg/m³ respirable; amendment 2 adds acetochlor only | not shown: GB 4806.4-2016's official text could not be reached                                                                                                             | none found; the page says so |
+| `HK`, `['zh-Hant', 'en']`, temperature, sg, US library | 999 (HK Talent Engage); the Poison Information Centre answers professionals only, so the Department of Health is linked                            | Labour Department silicosis guidance (2000): quartz 0.1, cristobalite 0.05, `indicative`; pairing checked in two text orders                                           | none of its own found; the page says the rules are not yet confirmed                                                                                                       | none found; the page says so |
+| `ID`, `['id']`, temperature, sg, US library            | 119, with 118, 110/112 and 113 in its note (Ministry of Tourism); HALOBPOM not confirmed as a poison line, so Kementerian Kesehatan is linked      | Permenaker 5/2018: 0.025 quartz and cristobalite, binding (NAB), read on the gazette's annex page through a mirror                                                     | BPOM 11/2026 Lampiran I.D: `idFlat` 0.8/0.07 mg/dm², `idSmall` and `idLarge` 0.5/0.25 mg/L; the third of three extractions counts (note); no in-force date (blank in copy) | none found; the page says so |
+| `TH`, `['th']`, temperature, sg, US library            | 1669, with 191 and 199 in its note (Ministry of Foreign Affairs); Ramathibodi Poison Center 1367, 24 hours, with its LINE link                     | DLPW notification on hazardous chemical limits (Royal Gazette 2017-08-03): 0.025 quartz and cristobalite, binding                                                      | MOPH No. 92 (1985), Thai original read: `thFlat` 7/0.7, `thSmall` 5/0.5, `thLarge` 2.5/0.25, `thInfant` 2.5/0.25, `thCooking` 5/0.5, all mg/L                              | none found; the page says so |
+| `PH`, `['fil', 'en']`, temperature, sg, US library     | 911 (DILG page, free, 24/7); National Poison Management and Control Center (02) 8524 1078, 24 hours, free, lay persons too (PGH Citizen's Charter) | not shown: DOLE's sites answered 403                                                                                                                                   | none found                                                                                                                                                                 | none found; the page says so |
+
+Model changes: a silica limit may give `bands` of free silica content (from, whether from is included, to, value), shown as one row each in place of the quartz row, with three messages (`guides.silica.bandFromTo`, `bandOverTo`, `bandAbove`); quartz holds the top band's value. The silica block outside the EU with no limit read (the Philippines) says none is confirmed instead of pointing to the EU's. Hong Kong is listed after Taiwan, so Traditional Chinese pages are still prerendered for Taiwan; Simplified Chinese pages are now prerendered for China (they were for Singapore), and Thai and Indonesian ones for Thailand and Indonesia.
+
+Could not verify (not shipped as fact):
+
+- **CN:** the China CDC poison line (83132345)'s hours, who may call and its area code; NHC's and MEM's own pages; GB 4806.4-2016's figures (lab articles disagree; one cites a "2023" edition no official page shows); GB 2626's class names; any shop.
+- **HK:** the 2000 Code of Practice's OEL table (an image); respirator guidance (an image PDF); any ceramic food-ware law; any shop (one lead, undated).
+- **ID:** HALOBPOM 1500533 as a 24-hour poison line today; PSC 119's hours; BPOM 11/2026's promulgation date and Berita Negara number; Permenaker 5/2018 on peraturan.go.id itself; SNI mask classes; any shop.
+- **TH:** NIEMS's own page for 1669; the Siriraj centre; 1367's cost; mask classes; any shop.
+- **PH:** the OSH Standards' silica table (DOLE 403); DOH's page; any shop; any mandatory food-ware rule.
+- **VN (not added):** 113/114/115 on an official page (only law-firm and news pages; a merger into 113 is being prepared), Bạch Mai's hours and public access, QCVN 02:2019/BYT and QCVN 12-4:2015/BYT. A region needs a verified emergency number, so Vietnam waits.
 
 Tests:
 

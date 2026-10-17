@@ -102,6 +102,9 @@
     "quartzAll": "Quartz, for dust that is all quartz",
     "cristobaliteAll": "Cristobalite, for dust that is all cristobalite",
     "allFree": "Control concentration for dust that is all free silica",
+    "bandFromTo": "Dust with {from}% to {to}% free silica (SiO₂)",
+    "bandOverTo": "Dust with more than {from}% and up to {to}% free silica",
+    "bandAbove": "Dust with more than {from}% free silica",
     "recommended": "Recommended by {abbr}",
     "value": "{value} mg/m³",
     "kind": {
@@ -160,7 +163,15 @@
       "myFlat": "Flatware",
       "mySmall": "Small hollowware",
       "myLarge": "Large hollowware",
-      "myCooking": "Cooking ware"
+      "myCooking": "Cooking ware",
+      "idFlat": "Pieces no more than 25 mm deep inside",
+      "idSmall": "Pieces more than 25 mm deep inside, under 1100 mL",
+      "idLarge": "Pieces more than 25 mm deep inside, 1100 mL or more",
+      "thFlat": "Pieces no more than 25 mm deep",
+      "thSmall": "Pieces more than 25 mm deep, under 1.1 L",
+      "thLarge": "Pieces more than 25 mm deep, 1.1 L or more",
+      "thInfant": "Containers for the food of babies up to 12 months old",
+      "thCooking": "Cooking ware, made to stand the heat of cooking"
     },
     "judged": {
       "average": "average of 6 pieces",

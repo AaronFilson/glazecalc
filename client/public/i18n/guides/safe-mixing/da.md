@@ -65,49 +65,49 @@ Det meste af beskyttelsen kommer fra vaner, ikke fra udstyr. HSE’s råd til ke
 
 Denne prioritering er vores forslag, bygget på HSE’s princip om først at undgå pulver. Afvejning og blanding trin for trin står i [Sådan laver man en glasur](/guides/making-a-glaze).
 
-## Åndedrætsværn {#respirators}
+## Respirators {#respirators lang=en}
 
-Et **åndedrætsværn** er en maske, der er certificeret til at filtrere fine partikler fra den luft, man indånder. Det virker kun, når det slutter tæt til ansigtet, og det supplerer gode vaner i stedet for at erstatte dem.
+A **respirator** is a mask certified to filter fine particles from the air you breathe. It works only when it seals to your face, and it backs up good habits rather than replacing them.
 
-### Klasser efter region
+### Classes by region
 
-Table: Klasser af åndedrætsværn mod partikler efter region (omtrent ligeværdige for glasurstøv)
-Label: Klasser af åndedrætsværn
+Table: Particle respirator classes by region (rough equivalents for glaze dust)
+Label: Respirator classes
 
-| Region                    | Almindelig klasse | Højere klasse | Se efter                                                                             |
-| ------------------------- | ----------------- | ------------- | ------------------------------------------------------------------------------------ |
-| USA                       | N95               | P100          | NIOSH-godkendelse på masken eller emballagen                                         |
-| Storbritannien og EU      | FFP2              | FFP3          | EN 149 på engangsmasker; EN 140 på genanvendelige halvmasker med P2- eller P3-filtre |
-| Australien og New Zealand | P2                | P3            | AS/NZS 1716                                                                          |
+| Region                    | Everyday class | Higher class | Look for                                                                         |
+| ------------------------- | -------------- | ------------ | -------------------------------------------------------------------------------- |
+| United States             | N95            | P100         | NIOSH approval on the mask or its packaging                                      |
+| UK and EU                 | FFP2           | FFP3         | EN 149 on disposable masks; EN 140 on reusable half masks, with P2 or P3 filters |
+| Australia and New Zealand | P2             | P3           | AS/NZS 1716                                                                      |
 
-Den højere klasse filtrerer en større andel af de fine partikler. Kilderne er uenige om, hvad et australsk P3 filtrerer (mindst 99 % eller mindst 99,95 %), så køb den certificerede klasse, der sælges lokalt. En genanvendelig **halvmaske** (der dækker næse og mund og har udskiftelige filtre) med P100-filtre (P3 uden for USA) er et almindeligt valg i værkstedet.
+The higher class filters a larger share of fine particles. Sources disagree on what an Australian P3 filters (at least 99%, or at least 99.95%), so buy the certified class sold in your region. A reusable **half mask** (covering the nose and mouth, with replaceable filters) fitted with P100 filters (P3 outside the US) is a common studio choice.
 
-### Pasform og tæthed
+### Fit and seal
 
-En maske, der er utæt, lukker støv ind langs kanterne, uanset klasse. HSE advarer om, at skægstubbe og skæg »gør det umuligt at opnå en god tætning«.
+A mask that leaks lets dust in around its edges, whatever its class. HSE warns that stubble and beards "make it impossible to get a good seal".
 
-- **Barbér dig kort før arbejdet.** Vejledningerne er uenige om, hvor nylig barberingen skal være for at gælde som »glatbarberet«: inden for 8 timer (en britisk producent med henvisning til HSE) eller helst inden for 12 (den australske og newzealandske standard for fit-test). En barbering kort før arbejdet opfylder begge.
-- **Med skæg** kræver et løstsiddende **turboudstyr** (PAPR: en hætte eller hjelm med en blæser, der leverer filtreret luft) ingen tætning mod ansigtet.
-- **Vælg den rigtige størrelse.** Dårlig pasform er en væsentlig årsag til utætheder. Arbejdspladser bruger en **fit-test** (tilpasningstest), en kontrol af, at en bestemt maske slutter tæt på et bestemt ansigt. Derhjemme foreslår vi at følge producentens anvisninger for tæthedsprøven, hver gang masken tages på.
+- **Shave shortly before you work.** Guidance differs on how recent "clean-shaven" must be. A UK maker, citing HSE, says shaved within 8 hours of starting work. The Australian and New Zealand fit-test standard asks for a shave before a fit test, "preferably within 12 hours". Shaving shortly before you work meets both.
+- **If you keep a beard,** a loose-fitting **powered respirator** (PAPR: a hood or helmet with a fan that supplies filtered air) needs no face seal.
+- **Get the size right.** Poor fit is a major cause of leaks. Workplaces use a **fit test**, a check that a particular mask seals on a particular face. At home, we suggest following the maker's instructions for checking the seal each time you put it on.
 
 > [!NOTE]
-> Efter vores vurdering betyder pasformen mere end klassen: en velsiddende N95, FFP2 eller P2 vil som regel beskytte bedre end en løstsiddende P100.
+> In our view, fit matters more than class: a well-fitted N95, FFP2 or P2 will usually do better than a loose P100.
 
-### Hvornår der skal bruges åndedrætsværn
+### When to wear one
 
-Ifølge HSE er åndedrætsværn »normalt ikke nødvendigt«, hvor afvejning og blanding foregår i en indkapsling med udsugning, men det »kan være nødvendigt ved vedligeholdelse og rengøring«. De fleste hjemmeværksteder har ingen indkapsling, så vi foreslår at bære åndedrætsværn (mindst N95, FFP2 eller P2; P100, FFP3 eller P3 er bedre), hver gang man:
+HSE says a respirator is "normally not needed" where weighing and mixing happen in a ventilated enclosure, but "may be needed for maintenance and cleaning". Most home studios have no enclosure, so we suggest wearing one (N95, FFP2 or P2 at least; P100, FFP3 or P3 is better) whenever you:
 
-- åbner sække eller hælder pulver ud;
-- afvejer pulver og rører det op i vand;
-- skraber, pudser eller sliber tørret glasur{{en: glaze}} eller forglødet gods{{en: bisque}};
-- udfører nogen form for tør rengøring eller tømmer en støvsuger;
-- sprøjter glasur (i en kabine: se nedenfor).
+- open bags or tip out powder;
+- weigh powders and stir them into water;
+- scrape, sand or grind dried glaze or bisque;
+- do any dry cleanup, or empty a vacuum;
+- spray glaze (in a booth: see below).
 
-### Hvad der ikke er åndedrætsværn
+### What is not a respirator
 
-- Kirurgiske masker, stofmasker og simple støvmasker (»nuisance dust«-masker) uden NIOSH-, EN 149- eller AS/NZS 1716-mærkning. Vi ville ikke stole på dem mod glasurstøv.
-- Et åndedrætsværn mod støv »beskytter dig ikke mod gasser, dampe« (OSHA), så det hjælper intet mod røggas fra ovnen.
-- Pas på åndedrætsværnet: OSHA bemærker, at et snavset eller forkert brugt åndedrætsværn »kan blive en fare«. Opbevar det rent og væk fra støvet arbejdstøj.
+- Surgical masks, cloth masks and "nuisance dust" masks without a NIOSH, EN 149 or AS/NZS 1716 marking. We would not rely on them for glaze dust.
+- A dust respirator "will not protect you against gases, vapors" (OSHA), so it does nothing for kiln fumes.
+- Look after yours: OSHA notes that a dirty or misused respirator "can become a hazard". Store it clean, away from dusty work clothes.
 
 ## Rengøring, tøj og hænder {#cleaning}
 
