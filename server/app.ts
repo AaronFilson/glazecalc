@@ -43,11 +43,13 @@ app.disable('x-powered-by');
 app.set('trust proxy', 1);
 
 // What a page may load or send. Scripts are left to the build's own <meta>
-// policy (angular.json, autoCsp); a page must pass both. There is no
-// default-src, which would also limit scripts to files and block the inline
-// script the meta policy allows by its hash. data: images are the check marks
-// and arrows Bootstrap's stylesheet inlines as SVG. Angular adds each
-// component's styles as <style> elements, which a page's own nonce allows.
+// policy (angular.json, autoCsp); a page must pass both, and in production
+// nginx's full policy too (deploy/nginx/glazecalc-proxy.conf, default-src
+// 'self'). There is no default-src here, which would also limit scripts to
+// files and block the inline script the meta policy allows by its hash.
+// data: images are the check marks and arrows Bootstrap's stylesheet inlines
+// as SVG. Angular adds each component's styles as <style> elements, which a
+// page's own nonce allows.
 export const contentSecurityPolicy = (nonce?: string): string =>
   [
     "connect-src 'self'",
