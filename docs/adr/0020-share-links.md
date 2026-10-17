@@ -35,13 +35,23 @@ never indexed; and it never shows prices, private notes, the owner's email or ac
   recipe's notes (off by default). Never ids, the owner, their email, a material's own notes, or
   any field a later version adds to a recipe (prices, costs): a new field stays private until it
   is named there. Additives that borrow another record's chemistry by name get that chemistry
-  sent with the recipe (`borrowed`), found as the recipe page finds it, so the numbers match.
+  sent with the recipe (`borrowed`), found as the recipe page finds it, so the numbers match. A
+  standard record is sent with its library name and aliases (public); the owner's own record is
+  sent under the name the recipe itself asked for, never its own name or aliases. Only the
+  records asked for are read; the standard library is kept in memory for ten minutes.
 - **The numbers are worked out in the viewer's browser** by the same code as the recipe page
   (`evaluate` and `unityLines` in `recipe-analysis.ts`, on `lib/chemistry`), not sent by the
   server, so a link always agrees with the owner's page.
 - **Gone is one answer.** An unknown, replaced or stopped link, a recipe in the Trash, deleted or
   in a deleted account all answer `404 not-shared`, and the page says the recipe is not shared.
-  Moving a recipe to the Trash removes its link, so putting it back does not share it again.
+  Moving a recipe to the Trash removes its link, so putting it back does not share it again: the
+  Trash's restore also deletes any link of that recipe (so it holds even if the Trash could not
+  stop the link, or one was made while the recipe was in it), and making a link checks again,
+  after saving it, that the recipe is still the account's and takes the link back if not.
+- **A password reset and Sign out everywhere stop every link of the account,** as they revoke
+  every access token (the same reasoning: someone else may have had the account). The reset's
+  notice email says the links were stopped and can be made again. An ordinary password change and
+  an email change keep them, as they keep access tokens.
 - **Not indexed, nothing passed on.** `/shared` (in every language) is in `PRIVATE_PAGES`
   (`server/lib/pages.ts`): never in the sitemap or prerendered, no canonical address or hreflang,
   and its replies and the API's carry `X-Robots-Tag: noindex, nofollow, noarchive`,
@@ -49,7 +59,8 @@ never indexed; and it never shows prices, private notes, the owner's email or ac
   `Referrer-Policy` after the app's, which a browser would follow, so the page also has
   `<meta name="referrer" content="no-referrer">` (and `<meta name="robots">`), which wins.
 - **Rate-limited per address:** 300 views in 15 minutes (a class behind one school address), and
-  50 links that open nothing.
+  50 links that open nothing. The no-index and no-cache headers are set before the limiters, so a
+  429 carries them too.
 - **The viewer's language, the owner's words.** The page is a normal app page: a viewer who chose
   a language is taken to `/de/shared#...` as on any page, and the labels are theirs; the recipe's
   title, materials and notes are as the owner wrote them.
@@ -79,7 +90,8 @@ kind of print, and the shared page as its second view.
 
 ## Consequences
 
-- A link works for anyone who has it, forwarded or not; the owner can only stop it or replace it.
+- A link works for anyone who has it, forwarded or not; the owner can only stop it or replace it
+  (or reset the password, or sign out everywhere, which stops all of them).
   The privacy page says so.
 - A new field on a recipe is private by default; showing it on shared pages takes a change here.
 - Viewers are not recorded beyond the in-memory rate-limit count.

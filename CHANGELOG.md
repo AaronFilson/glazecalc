@@ -17,6 +17,11 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   The account page lists every recipe the account shares (a link to the recipe, since when, whether
   its notes show) with Stop sharing for each; it never shows a link again. Links do not expire.
   The privacy page's line on print choices now names the worksheet too.
+  A password reset and Sign out everywhere stop every share link of the account (the reset's
+  notice email says so); a password change keeps them. Restoring a recipe from the Trash never
+  shares it again, and a link made as its recipe is trashed is taken back. An additive that
+  borrows a chemistry no longer sends the names of the owner's own materials. A shared recipe's
+  429 replies carry the no-index headers too.
 - **Show the working:** how the unity (Seger) formula comes from a recipe, step by step (grams,
   each material's oxides and their moles, the totals, the fluxes added up, each oxide divided by
   them), with the recipe's own numbers and the same answer as the recipe page. From the unity

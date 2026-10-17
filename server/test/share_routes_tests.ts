@@ -2,8 +2,10 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { deleteAccount } from '../lib/account_data.ts';
 import { exportAccount } from '../lib/export_data.ts';
-import { hashOf } from '../lib/share_links.ts';
+import { forgetStandards, hashOf } from '../lib/share_links.ts';
+import * as mail from './support/mail.ts';
 import Additive from '../models/additive.ts';
+import Material from '../models/material.ts';
 import Recipe from '../models/recipe.ts';
 import ShareLink from '../models/share_link.ts';
 import { api, expect, makeUser, sessionToken, site } from './support/app.ts';
@@ -180,6 +182,192 @@ describe('share links', () => {
       loi: 8
     });
     expect(JSON.stringify(body)).not.to.include('note');
+  });
+
+  it("send the owner's own records under the name the recipe asked for, never their names or aliases", async () => {
+    await Additive.create({
+      name: 'Private bentonite name',
+      aliases: ['Wyoming gel'],
+      ownedBy: String(alice.user._id),
+      fields: [{ name: 'SiO2', amount: 60 }],
+      percentmole: 'percent',
+      loi: 8
+    });
+    await Material.create({
+      name: 'Secret kaolin',
+      aliases: ['EPK'],
+      ownedBy: String(alice.user._id),
+      fields: [{ name: 'Al2O3', amount: 40 }],
+      percentmole: 'percent',
+      loi: 12,
+      molecularweight: 258,
+      formulaweight: 258,
+      equivalent: 258
+    });
+    await Recipe.updateOne(
+      { _id: recipeId },
+      {
+        $push: {
+          additives: {
+            $each: [
+              { name: 'Gum', amount: '1', chemistryOf: 'wyoming gel' },
+              { name: 'Clay', amount: '1', chemistryOf: 'epk' }
+            ]
+          }
+        }
+      }
+    );
+    const { secret } = await share();
+    const { body } = await view(secret);
+    expect(body.borrowed.map((record: { name: string }) => record.name).sort()).to.eql(['epk', 'wyoming gel']);
+    const text = JSON.stringify(body);
+    for (const hidden of ['Private bentonite name', 'Secret kaolin', 'aliases', 'EPK', 'Wyoming gel']) {
+      expect(text).not.to.include(hidden);
+    }
+    expect(body.borrowed.find((record: { name: string }) => record.name === 'epk').fields).to.eql([
+      { name: 'Al2O3', amount: 40 }
+    ]);
+  });
+
+  it('send a standard record borrowed, as the library names it', async () => {
+    const standard = await Additive.create({
+      name: 'Share test standard clay',
+      aliases: ['sts clay'],
+      ownedBy: 'Standard',
+      fields: [{ name: 'SiO2', amount: 50 }],
+      percentmole: 'percent',
+      loi: 5
+    });
+    forgetStandards();
+    try {
+      await Recipe.updateOne({ _id: recipeId }, { $push: { additives: { name: 'Gum', chemistryOf: 'STS clay' } } });
+      const { secret } = await share();
+      const { body } = await view(secret);
+      expect(body.borrowed).to.eql([
+        {
+          name: 'Share test standard clay',
+          aliases: ['sts clay'],
+          fields: [{ name: 'SiO2', amount: 50 }],
+          percentmole: 'percent',
+          loi: 5
+        }
+      ]);
+    } finally {
+      await Additive.deleteOne({ _id: standard._id });
+      forgetStandards();
+    }
+  });
+
+  it('are all stopped by a password reset and by signing out everywhere, not by a password change', async () => {
+    const other = await Recipe.create({
+      title: 'Celadon',
+      ownedBy: String(alice.user._id),
+      materials: [{ name: 'Talc' }]
+    });
+    const first = await share();
+    const second = (await as(alice.token).post('/share/recipe/' + other._id)).body as { secret: string };
+    const links = async () => ShareLink.countDocuments({ ownedBy: String(alice.user._id) });
+
+    // A plain password change keeps them.
+    const before = mail.to(alice.email).length;
+    const changed = await as(alice.token).put('/password', { current: alice.password, password: 'a-new-password-1' });
+    expect(changed, JSON.stringify(changed.body)).to.have.status(200);
+    expect(await links()).to.eql(2);
+    await mail.waitFor(alice.email, before + 1);
+
+    // A reset stops them all, and the notice says so.
+    expect(await api().post('/password/forgot').send({ email: alice.email })).to.have.status(200);
+    const sent = await mail.waitFor(alice.email, before + 2);
+    const done = await api()
+      .post('/password/reset')
+      .send({ token: mail.tokenIn(sent[sent.length - 1]!), password: 'a-new-password-2' });
+    expect(done).to.have.status(200);
+    expect(await links()).to.eql(0);
+    expect(await view(first.secret)).to.have.status(404);
+    expect(await view(second.secret)).to.have.status(404);
+    const notice = (await mail.waitFor(alice.email, before + 3))[before + 2]!;
+    expect(notice.subject).to.eql('Your Glazecalc password was changed');
+    expect(notice.text).to.include('links you had made to share recipes were stopped');
+
+    // A reset with no links to stop says nothing about them.
+    const bare = await makeUser();
+    const bareBefore = mail.to(bare.email).length;
+    await api().post('/password/forgot').send({ email: bare.email });
+    const bareSent = await mail.waitFor(bare.email, bareBefore + 1);
+    await api()
+      .post('/password/reset')
+      .send({ token: mail.tokenIn(bareSent[bareSent.length - 1]!), password: 'a-new-password-3' });
+    const bareNotice = (await mail.waitFor(bare.email, bareBefore + 2))[bareBefore + 1]!;
+    expect(bareNotice.text).not.to.include('share recipes');
+
+    // Signing out everywhere stops them too.
+    const carol = await makeUser();
+    const recipe = await Recipe.create({
+      title: 'Carol',
+      ownedBy: String(carol.user._id),
+      materials: [{ name: 'Talc' }]
+    });
+    const carols = (await as(carol.token).post('/share/recipe/' + recipe._id)).body as { secret: string };
+    expect(await view(carols.secret)).to.have.status(200);
+    expect(
+      await api()
+        .post('/signout-everywhere')
+        .set('Authorization', 'Bearer ' + carol.token)
+    ).to.have.status(200);
+    expect(await view(carols.secret)).to.have.status(404);
+    expect(await ShareLink.countDocuments({ ownedBy: String(carol.user._id) })).to.eql(0);
+  });
+
+  it('is taken away again when the recipe goes while the link is being made', async () => {
+    const real = Recipe.exists.bind(Recipe);
+    let calls = 0;
+    // The first look (is it the account's?) finds it; the second, after the link is made, does not.
+    (Recipe as unknown as { exists: unknown }).exists = (filter: object) =>
+      calls++ === 0 ? real(filter) : Promise.resolve(null);
+    try {
+      const res = await as(alice.token).post('/share/recipe/' + recipeId);
+      expect(res).to.have.status(404);
+    } finally {
+      (Recipe as unknown as { exists: unknown }).exists = real;
+    }
+    expect(await ShareLink.countDocuments({ recipeId })).to.eql(0);
+  });
+
+  it('are stopped on restore, even if the Trash could not stop them', async () => {
+    await share();
+    const realDelete = ShareLink.deleteOne.bind(ShareLink);
+    let failed = false;
+    // Going to the Trash cannot stop the link, yet the delete still answers...
+    (ShareLink as unknown as { deleteOne: unknown }).deleteOne = () => {
+      failed = true;
+      return Promise.reject(new Error('down'));
+    };
+    let trashed;
+    try {
+      trashed = await as(alice.token).delete('/recipe/delete/' + recipeId);
+    } finally {
+      (ShareLink as unknown as { deleteOne: unknown }).deleteOne = realDelete;
+    }
+    expect(failed).to.eql(true);
+    expect(trashed).to.have.status(200);
+    expect(await ShareLink.countDocuments({ recipeId })).to.eql(1);
+    // ...and putting it back takes the link away before the recipe is back.
+    expect(await as(alice.token).post('/trash/restore/' + trashed.body.trashId)).to.have.status(200);
+    expect(await ShareLink.countDocuments({ recipeId })).to.eql(0);
+  });
+
+  it('send the privacy headers on a rate-limited reply too', async () => {
+    process.env.RATE_LIMITS = 'on';
+    try {
+      let last;
+      for (let i = 0; i < 52; i++) last = await view('nothing');
+      expect(last).to.have.status(429);
+      expect(last!.headers['x-robots-tag']).to.eql('noindex, nofollow, noarchive');
+      expect(last!.headers['cache-control']).to.eql('no-store');
+      expect(last!.headers['referrer-policy']).to.eql('no-referrer');
+    } finally {
+      process.env.RATE_LIMITS = 'off';
+    }
   });
 
   it('are replaced by a new link, and stop when the owner says', async () => {
