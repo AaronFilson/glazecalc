@@ -3,39 +3,39 @@ title: Pha trộn an toàn và thông gió
 lead: Cách giữ bụi men không vào phổi bạn và khói lò không vào nhà bạn: những thói quen, thiết bị và nguyên liệu quan trọng nhất.
 ---
 
-## Nguy cơ chính: bụi {#the-main-hazard}
+## The main hazard: dust {#the-main-hazard lang=en}
 
-Nguy cơ lâu dài chính trong công việc làm men là bụi, trên hết là **silica tinh thể hô hấp được**{{en: respirable crystalline silica}}: các hạt thạch anh hoặc cristobalit (các dạng tinh thể của silica) đủ nhỏ để vào sâu trong phổi. Silica tinh thể có thể chiếm khoảng 10 đến 60% khối lượng khô của một loại men, và hầu hết các loại đất sét (trừ cao lanh) và nhiều loại trường thạch cũng mang thạch anh mịn. Cơ quan Sức khỏe và An toàn của Vương quốc Anh (Health and Safety Executive, HSE) nói loại bụi này “rất mịn và không nhìn thấy dưới ánh sáng thường”, nên một căn phòng trông sạch không phải bằng chứng rằng không khí cũng sạch.
+The main long-term hazard in glaze work is dust, above all **respirable crystalline silica**: particles of quartz or cristobalite (crystal forms of silica) small enough to reach deep into the lungs. Crystalline silica can make up about 10 to 60% of a glaze's dry weight, and most clays (except kaolin) and many feldspars also carry fine quartz. The UK's Health and Safety Executive (HSE) says this dust "is very fine and invisible under normal lighting", so a room that looks clean is not proof that the air is.
 
-Hít vào theo thời gian, nó có thể gây **bệnh bụi phổi silic**, một bệnh phổi mà HSE mô tả là “nghiêm trọng và không thể phục hồi” và có thể “gây tàn tật vĩnh viễn và chết sớm”. Nó cũng có thể gây **COPD** (bệnh phổi tắc nghẽn mạn tính: viêm phế quản và khí phế thũng lâu dài), mà hút thuốc làm nặng thêm. IARC, cơ quan ung thư của Tổ chức Y tế Thế giới, xếp silica tinh thể hít vào vào Nhóm 1, “gây ung thư cho người”.
+Breathed in over time, it can cause **silicosis**, a lung disease that HSE describes as "serious and irreversible" and able to "cause permanent disablement and early death". It can also cause **COPD** (chronic obstructive pulmonary disease: long-term bronchitis and emphysema), which smoking makes worse. IARC, the World Health Organization's cancer agency, places inhaled crystalline silica in Group 1, "carcinogenic to humans".
 
-Silica không biến thành khói trong lò nung, và men ướt không phải là nguy cơ hít phải. Những lúc cần cẩn thận là khi nguyên liệu khô: mở túi, cân, khuấy bột vào nước, và dọn các giọt, sương phun thừa và nước bẩn một khi chúng đã khô trở lại thành bụi.
+Silica does not turn into fumes in the kiln, and a wet glaze is not an inhalation hazard unless it is sprayed: spray mist carries silica and dries to dust (see Spraying, below). The times to take care are when material is dry: opening bags, weighing, stirring powder into water, and cleaning up drips, overspray and slop once they have dried back into dust.
 
-### Giới hạn tiếp xúc
+### Exposure limits
 
-Các quy định tại nơi làm việc đặt ra một **giới hạn tiếp xúc**: lượng silica tối đa một người lao động được hít, tính trung bình trong một ngày 8 giờ, bằng miligam (mg) hoặc microgam (µg, một phần nghìn miligam) trên mỗi mét khối không khí.
+Workplace rules set an **exposure limit**: the most silica a worker may breathe, averaged over an 8-hour day, in milligrams (mg) or micrograms (µg, thousandths of a milligram) per cubic meter of air.
 
-Table: Giới hạn tại nơi làm việc đối với silica tinh thể hô hấp được (trung bình 8 giờ)
-Label: Giới hạn tiếp xúc silica
+Table: Workplace limits for respirable crystalline silica (8-hour average)
+Label: Silica exposure limits
 
-| Khu vực           |              Giới hạn | Ghi chú                                                                                                               |
-| ----------------- | --------------------: | --------------------------------------------------------------------------------------------------------------------- |
-| Hoa Kỳ            | 0,05 mg/m³ (50 µg/m³) | Giới hạn của OSHA (cơ quan an toàn lao động Hoa Kỳ). Chủ lao động phải bắt đầu hành động ở 25 µg/m³, “mức hành động”. |
-| Vương quốc Anh    |             0,1 mg/m³ | Mức tiếp xúc cũng phải được giữ “thấp đến mức hợp lý có thể thực hiện được”.                                          |
-| Liên minh châu Âu |             0,1 mg/m³ | Giới hạn có tính ràng buộc (Chỉ thị EU 2017/2398). Một số quốc gia thành viên đặt giới hạn thấp hơn.                  |
-| Úc                |            0,05 mg/m³ | Từ tháng 7 năm 2020. Vào tháng 6 năm 2026, hầu hết các bộ trưởng không ủng hộ việc giảm xuống 0,025.                  |
-| New Zealand       |           0,025 mg/m³ | Từ năm 2023. Các tiêu chuẩn của WorkSafe là hướng dẫn, không phải giới hạn theo luật.                                 |
+| Region         |                 Limit | Notes                                                                             |
+| -------------- | --------------------: | --------------------------------------------------------------------------------- |
+| United States  | 0.05 mg/m³ (50 µg/m³) | OSHA's limit. Employers must start taking action at 25 µg/m³, the "action level". |
+| United Kingdom |             0.1 mg/m³ | Exposure must also be kept "as low as reasonably practicable".                    |
+| European Union |             0.1 mg/m³ | Binding limit (Directive 2017/2398). Some member states set lower ones.           |
+| Australia      |            0.05 mg/m³ | Since July 2020. In June 2026, most ministers did not support a cut to 0.025.     |
+| New Zealand    |           0.025 mg/m³ | Since 2023. WorkSafe's standards are guidance, not legal limits.                  |
 
-Một số trang nêu 0,025 mg/m³ cho Úc, nhưng giới hạn chính thức vẫn là 0,05. Dù thế nào, lời khuyên là như nhau: hãy giữ bụi thấp nhất có thể.
+Some pages quote 0.025 mg/m³ for Australia, but the official limit is still 0.05. Either way, the advice is the same: keep dust as low as you can.
 
-Một số quốc gia thành viên EU đặt giới hạn thấp hơn của EU. Giới hạn nơi bạn sống, luật đặt ra nó và cơ quan quốc gia về an toàn lao động:
+Several EU member states set lower limits than the EU's. The limit where you live, the law that sets it and the national body for safety at work:
 
 ::silica-limit
 
 > [!NOTE]
-> Đây là các giới hạn tại nơi làm việc. Chúng ràng buộc chủ lao động, nên không ai kiểm tra một thợ gốm làm việc một mình ở nhà, dù các xưởng cộng đồng và trường học có nhân viên thường được áp dụng (hãy kiểm tra quy định tại địa phương). Bụi ở nhà cũng giống vậy, và các giới hạn cho thấy quy mô của nguy cơ: 25 đến 100 phần triệu gam trong mỗi mét khối không khí, trung bình trong một ngày.
+> These are workplace limits. They bind employers, so no one inspects a potter working alone at home, though community studios and schools with staff are usually covered (check your local rules). The dust is the same at home, and the limits show the scale of the hazard: 25 to 100 millionths of a gram in each cubic meter of air, averaged over a day.
 
-Hầu như không ai đã đo bụi trong các xưởng sở thích, nên chúng tôi gợi ý coi mọi việc dùng bột khô là việc có bụi.
+Almost no one has measured dust in hobby studios, so we suggest treating every dry-powder task as a dusty one.
 
 ## Những thói quen quan trọng nhất {#habits}
 
@@ -65,49 +65,49 @@ Phần lớn sự bảo vệ đến từ thói quen, không phải thiết bị.
 
 Thứ tự này là gợi ý của chúng tôi, dựa trên nguyên tắc tránh bột trước của HSE. Để biết cách cân và pha từng bước, xem [Cách làm men gốm](/guides/making-a-glaze).
 
-## Khẩu trang lọc bụi đạt chuẩn {#respirators}
+## Respirators {#respirators lang=en}
 
-**Khẩu trang lọc bụi đạt chuẩn**{{en: respirator}} (mặt nạ hô hấp) là một khẩu trang được chứng nhận để lọc các hạt mịn khỏi không khí bạn hít. Nó chỉ hoạt động khi nó bịt kín vào mặt bạn, và nó hỗ trợ cho các thói quen tốt chứ không thay thế chúng.
+A **respirator** is a mask certified to filter fine particles from the air you breathe. It works only when it seals to your face, and it backs up good habits rather than replacing them.
 
-### Các hạng theo khu vực
+### Classes by region
 
-Table: Các hạng khẩu trang lọc hạt theo khu vực (tương đương gần đúng cho bụi men)
-Label: Các hạng khẩu trang lọc bụi đạt chuẩn
+Table: Particle respirator classes by region (rough equivalents for glaze dust)
+Label: Respirator classes
 
-| Khu vực           | Hạng thông thường | Hạng cao hơn | Hãy tìm                                                                                         |
-| ----------------- | ----------------- | ------------ | ----------------------------------------------------------------------------------------------- |
-| Hoa Kỳ            | N95               | P100         | Chứng nhận NIOSH trên khẩu trang hoặc bao bì của nó                                             |
-| Anh và EU         | FFP2              | FFP3         | EN 149 trên khẩu trang dùng một lần; EN 140 trên mặt nạ nửa mặt dùng lại, với bộ lọc P2 hoặc P3 |
-| Úc và New Zealand | P2                | P3           | AS/NZS 1716                                                                                     |
+| Region                    | Everyday class | Higher class | Look for                                                                   |
+| ------------------------- | -------------- | ------------ | -------------------------------------------------------------------------- |
+| United States             | N95            | P100         | NIOSH approval on the mask or its packaging                                |
+| UK and EU                 | FFP2           | FFP3         | EN 149 on disposable masks; EN 140 half masks with EN 143 P2 or P3 filters |
+| Australia and New Zealand | P2             | P3           | AS/NZS 1716                                                                |
 
-Hạng cao hơn lọc một phần lớn hơn các hạt mịn. Các nguồn không thống nhất về những gì một P3 của Úc lọc (ít nhất 99%, hoặc ít nhất 99,95%), nên hãy mua hạng đã được chứng nhận bán ở khu vực của bạn. Một **mặt nạ nửa mặt** dùng lại (che mũi và miệng, với bộ lọc thay được) lắp bộ lọc P100 (P3 ngoài Hoa Kỳ) là lựa chọn phổ biến trong xưởng.
+The higher class filters a larger share of fine particles. Sources disagree on what an Australian P3 filters (at least 99%, or at least 99.95%), so buy the certified class sold in your region. A reusable **half mask** (covering the nose and mouth, with replaceable filters) fitted with P100 filters (P3 outside the US) is a common studio choice.
 
-### Độ vừa khít và độ kín
+### Fit and seal
 
-Một khẩu trang bị hở để bụi lọt vào quanh mép, bất kể hạng của nó. HSE của Vương quốc Anh cảnh báo rằng râu lởm chởm và râu rậm “khiến không thể có độ kín tốt”.
+A mask that leaks lets dust in around its edges, whatever its class. HSE warns that stubble and beards "make it impossible to get a good seal".
 
-- **Cạo râu ngay trước khi làm việc.** Hướng dẫn khác nhau về việc “cạo sạch râu” phải gần đây đến mức nào. Một nhà sản xuất ở Anh, trích dẫn HSE, nói cạo trong vòng 8 giờ trước khi bắt đầu làm việc. Tiêu chuẩn kiểm tra độ vừa khít của Úc và New Zealand yêu cầu cạo râu trước một lần kiểm tra độ vừa khít, “tốt nhất là trong vòng 12 giờ”. Cạo râu ngay trước khi làm việc đáp ứng cả hai.
-- **Nếu bạn để râu,** một **mặt nạ có quạt**{{en: powered respirator}} vừa lỏng (PAPR: một mũ trùm hoặc mũ bảo hiểm có quạt cung cấp không khí đã lọc) không cần độ kín trên mặt.
-- **Chọn đúng cỡ.** Vừa khít kém là một nguyên nhân chính gây hở. Các nơi làm việc dùng một **kiểm tra độ kín khít**{{en: fit test}}, việc kiểm tra rằng một khẩu trang cụ thể bịt kín trên một khuôn mặt cụ thể. Ở nhà, chúng tôi gợi ý làm theo hướng dẫn của nhà sản xuất để kiểm tra độ kín mỗi lần bạn đeo.
+- **Shave shortly before you work.** Guidance differs on how recent "clean-shaven" must be. A UK maker, citing HSE, says shaved within 8 hours of starting work. The Australian and New Zealand fit-test standard asks for a shave before a fit test, "preferably within 12 hours". Shaving shortly before you work meets both.
+- **If you keep a beard,** a loose-fitting **powered respirator** (PAPR: a hood or helmet with a fan that supplies filtered air) needs no face seal.
+- **Get the size right.** Poor fit is a major cause of leaks. Workplaces use a **fit test**, a check that a particular mask seals on a particular face. At home, we suggest following the maker's instructions for checking the seal each time you put it on.
 
 > [!NOTE]
-> Theo quan điểm của chúng tôi, độ vừa khít quan trọng hơn hạng: một chiếc N95, FFP2 hay P2 vừa khít thường sẽ tốt hơn một chiếc P100 lỏng.
+> In our view, fit matters more than class: a well-fitted N95, FFP2 or P2 will usually do better than a loose P100.
 
-### Khi nào nên đeo
+### When to wear one
 
-HSE nói một khẩu trang lọc bụi đạt chuẩn “thường không cần” khi việc cân và pha diễn ra trong một không gian kín có thông gió, nhưng “có thể cần cho bảo trì và vệ sinh”. Hầu hết các xưởng tại nhà không có không gian kín, nên chúng tôi gợi ý đeo một chiếc (ít nhất N95, FFP2 hoặc P2; P100, FFP3 hoặc P3 thì tốt hơn) bất cứ khi nào bạn:
+HSE says a respirator is "normally not needed" where weighing and mixing happen in a ventilated enclosure, but "may be needed for maintenance and cleaning". Most home studios have no enclosure, so we suggest wearing one (N95, FFP2 or P2 at least; P100, FFP3 or P3 is better) whenever you:
 
-- mở túi hoặc đổ bột ra;
-- cân bột và khuấy chúng vào nước;
-- cạo, chà nhám hoặc nghiền men khô hay gốm mộc;
-- làm bất kỳ việc dọn dẹp khô nào, hoặc đổ máy hút bụi;
-- phun men (trong buồng phun: xem bên dưới).
+- open bags or tip out powder;
+- weigh powders and stir them into water;
+- scrape, sand or grind dried glaze or bisque;
+- do any dry cleanup, or empty a vacuum;
+- spray glaze (in a booth: see below).
 
-### Những gì không phải là khẩu trang lọc bụi đạt chuẩn
+### What is not a respirator
 
-- Khẩu trang y tế, khẩu trang vải và khẩu trang “bụi gây khó chịu” loại không có dấu NIOSH, EN 149 hay AS/NZS 1716. Chúng tôi sẽ không dựa vào chúng cho bụi men.
-- Một khẩu trang lọc bụi đạt chuẩn “sẽ không bảo vệ bạn khỏi khí, hơi” (OSHA, cơ quan an toàn lao động Hoa Kỳ), nên nó không có tác dụng gì với khói lò.
-- Hãy chăm sóc chiếc của bạn: OSHA ghi chú rằng một khẩu trang lọc bụi đạt chuẩn bị bẩn hoặc dùng sai “có thể trở thành một nguy cơ”. Hãy cất nó sạch, tránh xa quần áo làm việc đầy bụi.
+- Surgical masks, cloth masks and "nuisance dust" masks without a NIOSH, EN 149 or AS/NZS 1716 marking. We would not rely on them for glaze dust.
+- A dust respirator "will not protect you against gases, vapors" (OSHA), so it does nothing for kiln fumes.
+- Look after yours: OSHA notes that a dirty or misused respirator "can become a hazard". Store it clean, away from dusty work clothes.
 
 ## Dọn dẹp, quần áo và bàn tay {#cleaning}
 
@@ -181,36 +181,36 @@ Một **chụp hút**{{en: hood vent}} (một mái che phía trên lò) là lự
 
 Raku tạo ra lượng lớn khói và CO; Utah khuyên làm ngoài trời, tránh xa cửa hút gió và cửa sổ. Về việc nung, xem [Nung một lò gốm cơ bản](/guides/firing).
 
-## Các nguyên liệu cần cẩn trọng nhất {#materials}
+## Materials that need most care {#materials lang=en}
 
-Hầu hết nguyên liệu làm men, gồm silica, đất sét, trường thạch và frit, chủ yếu là nguy cơ về bụi, mà các thói quen ở trên kiểm soát được. Một danh sách ngắn hơn độc tự thân, qua hít, nuốt hoặc tiếp xúc với da. Digitalfire nói thêm rằng bột màu nhìn chung an toàn hơn nhiều so với oxit thô, và rằng “có thể làm ra các loại men không cân bằng thải kim loại độc từ bất kỳ nguyên liệu nào”: an toàn thực phẩm phụ thuộc vào toàn bộ công thức men, không phải một thành phần.
+Most glaze materials, including silica, clays, feldspars and frits, are mainly a dust hazard, which the habits above control. A shorter list is toxic in its own right, by breathing, swallowing or skin contact. Digitalfire adds that stains are generally much safer than raw oxides, and that "unbalanced glazes that release toxic metals can be made from any materials": food safety depends on the whole recipe, not on one ingredient.
 
-Một **nhóm IARC** là một phân loại ung thư: Nhóm 1 nghĩa là “gây ung thư cho người”, Nhóm 2A “có khả năng gây ung thư cho người”, Nhóm 2B “có thể gây ung thư cho người”, và Nhóm 3 “không thể phân loại về khả năng gây ung thư cho người”, nghĩa là có quá ít bằng chứng để đánh giá theo hướng nào.
+An **IARC group** is a cancer classification: Group 1 means "carcinogenic to humans", Group 2A "probably carcinogenic to humans", Group 2B "possibly carcinogenic to humans", and Group 3 "not classifiable as to its carcinogenicity to humans", which means too little evidence to judge either way.
 
-Table: Các nguyên liệu làm men cần cẩn trọng hơn
-Label: Các nguyên liệu cần cẩn trọng nhất
+Table: Glaze materials that need extra care
+Label: Materials that need most care
 
-| Nguyên liệu                             | Nguy cơ                                                                                                                                                                                 | Biện pháp phòng ngừa                                                                                                                     |
-| --------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| Hợp chất chì và frit chì                | “Rất độc khi hít phải hoặc nuốt phải”; bay hơi trong lò ở nhiệt độ thấp hơn hầu hết các nguyên liệu men.                                                                                | Tránh; Digitalfire nói chỉ dành cho chuyên gia. Hãy cho rằng bất kỳ loại men nào không dán nhãn “không chì” hay “leadless” đều chứa chì. |
-| Bari cacbonat                           | Không tan trong nước nhưng tan trong axit dạ dày; ảnh hưởng đến tim và cơ (nhịp tim không đều, kali thấp).                                                                              | Một frit bari hoặc stronti khi công thức men cho phép; khẩu trang lọc bụi đạt chuẩn; đồ đựng có dán nhãn.                                |
-| Mangan đioxit                           | Bụi hoặc khói có thể gây **nhiễm độc mangan**, một bệnh hệ thần kinh giống bệnh Parkinson, thường sau 1 đến 3 năm tiếp xúc. Khói có thể gây sốt khói kim loại.                          | Thay vào đó dùng bột màu đen ở tỷ lệ thấp; thông gió cho lò.                                                                             |
-| Kali dicromat và crom oxit              | Crom(VI), như trong dicromat, thuộc IARC Nhóm 1. Danh mục đó không bao gồm crom(III), như trong crom oxit.                                                                              | Tránh dicromat. Chúng tôi coi crom oxit là ít nguy hiểm hơn nhiều, nhưng hãy giữ bụi của nó ở mức thấp.                                  |
-| Coban                                   | Các muối coban(II) tan IARC 2A; coban(II) oxit 2B; Co₃O₄ đen Nhóm 3.                                                                                                                    | Giữ bụi ở mức thấp; bột màu cho màu đen.                                                                                                 |
-| Hợp chất niken                          | Nằm trong danh sách các chất đã biết hoặc có khả năng gây ung thư cho người của Đại học Utah.                                                                                           | Bột màu thay vì tỷ lệ cao.                                                                                                               |
-| Cadimi và selen, thô hoặc trong bột màu | Các hợp chất cadimi nằm trong danh sách các chất đã biết hoặc có khả năng gây ung thư cho người của Utah.                                                                               | “Chỉ dành cho chuyên gia” (Digitalfire); hãy đọc SDS của bất kỳ bột màu nào.                                                             |
-| Antimon và vanadi                       | Antimon hóa trị ba (như trong antimon trioxit) IARC 2A; vanadi “rất độc khi hít phải”.                                                                                                  | Vanadi chỉ dành cho chuyên gia; giữ bụi antimon ở mức thấp.                                                                              |
-| Đồng và kẽm                             | Khói lò có thể gây sốt khói kim loại; kẽm oxit thô “nhìn chung không được coi là nguy hiểm”.                                                                                            | Thông gió cho lò.                                                                                                                        |
-| Liti cacbonat                           | “Rất độc khi hít phải”. Một ủy ban chuyên gia của EU kết luận nó có thể gây hại cho khả năng sinh sản và thai nhi; việc thông qua chính thức chưa được xác nhận khi chúng tôi kiểm tra. | Găng tay và khẩu trang lọc bụi đạt chuẩn; giữ tránh xa trẻ em. Chúng tôi gợi ý cẩn thận hơn khi mang thai.                               |
-| Borax và axit boric                     | Được phân loại ở EU là “có thể gây hại cho khả năng sinh sản; có thể gây hại cho thai nhi”.                                                                                             | Găng tay; bo từ một frit khi bạn có thể.                                                                                                 |
-| Soda, kali cacbonat, trường thạch kiềm  | Chất gây kích ứng da.                                                                                                                                                                   | Găng tay.                                                                                                                                |
-| Fluorit, cryolit, lepidolit             | Thải khí flo khi nung; fluorit cũng gây kích ứng da.                                                                                                                                    | Thông gió cho lò ra ngoài trời; găng tay.                                                                                                |
-| Talc                                    | IARC 2A từ tháng 7 năm 2024; talc bị nhiễm amiăng được tính là amiăng, Nhóm 1.                                                                                                          | Talc dạng vảy (không phải dạng sợi), không có amiăng; hãy kiểm tra SDS của nó.                                                           |
+| Material                               | Hazard                                                                                                                                                                                                                                       | Precaution                                                                                                  |
+| -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| Lead compounds and lead frits          | "Highly toxic by inhalation or ingestion"; vaporizes in the kiln at lower temperatures than most glaze materials.                                                                                                                            | Avoid; Digitalfire says experts only. Assume any glaze not labeled "lead-free" or "leadless" contains lead. |
+| Barium carbonate                       | Insoluble in water but dissolves in stomach acid; affects the heart and muscles (irregular heartbeat, low potassium).                                                                                                                        | A barium frit or strontium where the recipe allows; respirator; labeled container.                          |
+| Manganese dioxide                      | Dust or fume can cause **manganism**, a nervous-system illness like Parkinson's disease, usually after 1 to 3 years of exposure. Fume can cause metal fume fever.                                                                            | Black stains at low percentages instead; vent the kiln.                                                     |
+| Potassium dichromate and chrome oxide  | Chromium(VI), as in dichromate, is IARC Group 1. That listing does not cover chromium(III), as in chrome oxide.                                                                                                                              | Avoid dichromate. We treat chrome oxide as far less hazardous, but keep its dust down.                      |
+| Cobalt                                 | Soluble cobalt(II) salts IARC 2A; cobalt(II) oxide 2B; black Co₃O₄ Group 3. Cobalt carbonate is classified in the EU as may cause cancer if breathed in, may damage fertility and suspected of causing genetic defects (H350i, H360F, H341). | Keep dust down; stains for blacks.                                                                          |
+| Nickel compounds                       | Among the University of Utah's known or probable human carcinogens.                                                                                                                                                                          | Stains rather than high percentages.                                                                        |
+| Cadmium and selenium, raw or in stains | Cadmium compounds are among Utah's known or probable human carcinogens.                                                                                                                                                                      | "Only by experts" (Digitalfire); read any stain's SDS.                                                      |
+| Antimony and vanadium                  | Trivalent antimony (as in antimony trioxide) IARC 2A; vanadium "highly toxic by inhalation".                                                                                                                                                 | Vanadium for experts only; keep antimony dust down.                                                         |
+| Copper and zinc                        | Kiln fume can cause metal fume fever; raw zinc oxide is "generally not considered hazardous".                                                                                                                                                | Vent the kiln.                                                                                              |
+| Lithium carbonate                      | "Highly toxic by inhalation". An EU expert committee concluded it may harm fertility, the unborn child and breast-fed children; formal adoption was not confirmed when we checked.                                                           | Gloves and respirator; keep from children. We suggest extra care in pregnancy and while breastfeeding.      |
+| Borax and boric acid                   | Classified in the EU as "may damage fertility; may damage the unborn child".                                                                                                                                                                 | Gloves; boron from a frit where you can.                                                                    |
+| Soda ash, potash, alkaline feldspars   | Skin irritants.                                                                                                                                                                                                                              | Gloves.                                                                                                     |
+| Fluorspar, cryolite, lepidolite        | Release fluorine gases in firing; fluorspar also irritates skin.                                                                                                                                                                             | Vent the kiln outdoors; gloves.                                                                             |
+| Talc                                   | IARC 2A since July 2024; talc contaminated with asbestos counts as asbestos, Group 1.                                                                                                                                                        | Platy (not fibrous), asbestos-free talc; check its SDS.                                                     |
 
-Borax, axit boric, soda và kali cacbonat tan trong nước, nên chúng tôi coi chúng là những chất dễ được hấp thụ nhất qua da bị tổn thương hoặc nuốt phải từ bàn tay chưa rửa.
+Borax, boric acid, soda ash and potash dissolve in water, so we treat them as the likeliest to be absorbed through broken skin or swallowed from unwashed hands.
 
 > [!NOTE]
-> Nếu một công thức men yêu cầu bari cacbonat thô, nhiều mangan, hoặc bất kỳ nguyên liệu chì hay cadimi nào, hãy tìm một phiên bản dùng frit hoặc bột màu thay thế. Glazecalc có thể so sánh thành phần hóa học của bản gốc và bản hoán đổi; sau đó hãy thử loại men mới.
+> If a recipe calls for raw barium carbonate, a lot of manganese, or any lead or cadmium material, look for a version that uses a frit or a stain instead. Glazecalc can compare the chemistry of the original and the swap; then test the new glaze.
 
 ## Găng tay, da và mắt {#gloves-and-eyes}
 
@@ -252,7 +252,7 @@ Các hình đồ cảnh báo và câu cảnh báo nguy hiểm đến từ **GHS*
 - **New Zealand:** WorkSafe New Zealand đặt các tiêu chuẩn tiếp xúc tại nơi làm việc; [lịch sử của tiêu chuẩn silica](https://mbie.govt.nz/building-and-energy/building/building-and-construction-consultations/work-with-engineered-stone-and-materials-containing-crystalline-silica/annex-iii) của MBIE nêu các ngày.
 - **Lò nung:** [hướng dẫn phòng lò](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Designing-A-Kiln-Room-1.pdf) của Skutt, [phiếu của Orton và CCSA về khói lò](https://assets.noviams.com/novi-file-uploads/ccsa/Product_Safety/Fumes.pdf), và trên hết là hướng dẫn sử dụng của chính lò của bạn.
 
-## Nguồn {#sources}
+## Sources {#sources lang=en}
 
 - [OSHA: 29 CFR 1910.1053, Respirable crystalline silica](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.1053)
 - [OSHA: 29 CFR 1910.134 Appendix D, Information for employees using respirators when not required](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.134AppD)
@@ -262,11 +262,13 @@ Các hình đồ cảnh báo và câu cảnh báo nguy hiểm đến từ **GHS*
 - [HSE: COSHH essentials CR5, Spraying glazes and colours](https://www.hse.gov.uk/PUBNS/guidance/cr5.pdf)
 - [HSE: Fit testing basics](https://www.hse.gov.uk/respiratory-protective-equipment/fit-testing-basics.htm)
 - [Safe Work Australia: Research on a lower workplace exposure standard for respirable crystalline silica](https://www.safeworkaustralia.gov.au/safety-topic/hazards/crystalline-silica-and-silicosis/research-lower-workplace-exposure-standard-respirable-crystalline-silica-0)
-- [Enviliance: Report 16612, quyết định tháng 6 năm 2026 của Úc về tiêu chuẩn tiếp xúc silica](https://enviliance.com/regions/oceania/au/report_16612)
+- [Enviliance: Report 16612, Australia's June 2026 decision on the silica exposure standard](https://enviliance.com/regions/oceania/au/report_16612)
 - [MBIE (New Zealand): Work with engineered stone and materials containing crystalline silica, Annex III](https://mbie.govt.nz/building-and-energy/building/building-and-construction-consultations/work-with-engineered-stone-and-materials-containing-crystalline-silica/annex-iii)
 - [IARC: Monographs Volume 100C](https://publications.iarc.who.int/120)
 - [IARC: Volume 131, Cobalt, antimony compounds and weapons-grade tungsten alloy](https://monographs.iarc.who.int/news-events/volume-131-cobalt-antimony-compounds-and-weapons-grade-tungsten-alloy)
 - [Science Media Centre Spain: IARC classifies talc (2024)](https://sciencemediacentre.es/en/node/3775)
+- [ECHA: Risk Assessment Committee opinion on lithium carbonate, chloride and hydroxide (2021, PDF)](https://echa.europa.eu/documents/10162/e2a3c38e-85fe-505c-a325-293c70a74da5)
+- [PubChem: Cobalt carbonate, GHS classification, including its EU harmonised one](https://pubchem.ncbi.nlm.nih.gov/compound/10565#section=GHS-Classification)
 - [ECHA: Risk Assessment Committee document on boric acid and borates](https://echa.europa.eu/documents/10162/7d740d8c-5cd5-872b-5da2-e549983a9ff9)
 - [Coslaw: EU introduces new CMR classifications under the 24th ATP to the CLP Regulation](https://coslaw.eu/eu-introduces-new-cmr-classifications-under-the-24th-atp-to-the-clp-regulation/)
 - [University of Utah EHS: Arts safety: ceramics](https://www.ehs.utah.edu/guidelines/arts-safety-ceramics/)
@@ -275,6 +277,7 @@ Các hình đồ cảnh báo và câu cảnh báo nguy hiểm đến từ **GHS*
 - [Digitalfire: Kiln fumes](https://digitalfire.com/glossary/kiln+fumes)
 - [Digitalfire: Barium and compounds toxicology](https://digitalfire.com/hazard/barium+and+compounds+toxicology)
 - [Digitalfire: Manganese inorganic compounds toxicology](https://digitalfire.com/hazard/manganese+inorganic+compounds+toxicology)
+- [JSP: What levels of protection do particulate filters provide?](https://jspsafety.helpjuice.com/en_GB/what-levels-of-protection-do-particulate-filters-provide)
 - [JSP: Why is a clean shave essential for a proper tight-fitting respirator seal?](https://jspsafety.helpjuice.com/en_GB/why-is-a-clean-shave-essential-for-a-proper-tight-fitting-respirator-seal-can-i-have-a-beard)
 - [Skutt: Kiln room design and product specifications](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Designing-A-Kiln-Room-1.pdf)
 - [CIRMA: Kiln safety bulletin (2025)](https://downloads.ccm-ct.org/pdf/Media-Library-Bulletins/KilnSafety-Bulletin-052825.pdf)

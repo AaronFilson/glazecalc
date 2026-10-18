@@ -116,7 +116,6 @@
   },
   "trash": {
     "title": "Papirkurv",
-    "lead": "Det, der fjernes fra opskrifter, råvarer, noter og journaler, bliver her i 30 dage. Sæt det tilbage, eller slet det for altid.",
     "listHeading": "I papirkurven",
     "none": "Papirkurven er tom.",
     "untitled": "Uden navn",

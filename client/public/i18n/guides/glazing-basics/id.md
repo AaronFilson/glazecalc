@@ -18,40 +18,40 @@ Resep mencantumkan bahan baku, seperti feldspar{{en: feldspar}}, whiting, dan ka
 > [!NOTE]
 > Satu cara untuk mengingatnya: silika adalah kaca, pelebur membuatnya meleleh pada suhu yang dapat dicapai tungku Anda, dan alumina mengentalkannya agar tetap di tempat Anda menaruhnya.
 
-## Tanah liat, lapisan, dan dua pembakaran {#clay-and-firings}
+## Clay, coatings and the two firings {#clay-and-firings lang=en}
 
-### Bodi tanah liat
+### Clay bodies
 
-**Bodi tanah liat**{{en: clay body}} adalah tanah liat tempat benda dibuat. Ada tiga jenis utama.
+The **clay body** is the clay a pot is made of. There are three main kinds.
 
-- **Gerabah**{{en: earthenware}}: bodi suhu rendah, sekitar kerucut 06–02, yang tetap berpori. Sering berwarna merah atau krem, memerlukan glasir agar dapat menahan air.
-- **Stoneware**{{en: stoneware}}: bodi suhu menengah sampai tinggi, sekitar kerucut 5–10, yang menjadi bersifat gelas atau hampir demikian.
-- **Porselen**: bodi putih suhu tinggi yang kaya kaolin, sering tembus cahaya.
+- **Earthenware**: a low-fire body, about cone 06–02, that stays porous. Often red or buff, it needs a glaze to hold water.
+- **Stoneware**: a mid- to high-fire body, about cone 5–10, that becomes vitreous or nearly so.
+- **Porcelain**: a white, high-fire body rich in kaolin, often translucent.
 
-**Bersifat gelas** (vitreous) berarti seperti kaca dan tidak berpori; **vitrifikasi** adalah bodi menjadi demikian saat dibakar. Pembuat keramik Inggris sering menarik garis berdasarkan suhu: stoneware dibakar di atas {{2192 °F; 1200 °C}}, gerabah di bawahnya. Suhu menengah, kerucut 5–6, jatuh tepat di kedua sisi garis itu.
+**Vitreous** means glassy and non-porous; **vitrification** is a body becoming so as it fires. UK potters often draw the line by temperature instead: stoneware is fired above {{2192 °F; 1200 °C}}, earthenware below. Mid fire, cone 5–6, falls just either side of that line.
 
-### Lapisan dan pengeringan
+### Coatings and drying
 
-**Slip** adalah tanah liat yang tersuspensi dalam air, untuk mencetak tuang, menyambung, atau menghias. **Engobe** adalah lapisan mirip slip, sering berwarna, dengan lebih banyak bahan bukan tanah liat. **Underglaze** adalah slip berwarna atau hiasan oksida, biasanya ditutup dengan glasir bening.
+**Slip** is clay suspended in water, for casting, joining or decorating. An **engobe** is a slip-like coating, often colored, with more non-clay materials. An **underglaze** is colored slip or oxide decoration, usually covered with a clear glaze.
 
-Benda yang belum dibakar adalah **keramik mentah**{{en: greenware}} (sumber berbeda pendapat apakah kata ini mencakup semua benda yang belum dibakar atau hanya benda yang kering). Saat mengering, benda menjadi **setengah kering**, kaku tetapi sedikit lembap, tahap untuk memangkas dan memasang pegangan; lalu **kering total**, tanpa air bebas tersisa, sangat rapuh dan siap dibakar.
+Unfired ware is **greenware** (sources disagree on whether the word covers all unfired ware or only dry ware). As it dries it becomes **leather-hard**, stiff but slightly damp, the stage for trimming and handles; then **bone dry**, with no free water left, very fragile and ready to fire.
 
-### Dua pembakaran
+### The two firings
 
-Pembakaran pertama yang lebih rendah adalah **biskuit**{{en: bisque}} (Inggris: **biscuit**), biasanya kerucut 08–04, sekitar {{1740–1940 °F; 950–1060 °C}}. Pembakaran ini menyisakan benda yang kuat tetapi berpori. Digitalfire, situs acuan glasir, menyarankan umumnya porositas lebih dari 15%, sehingga biskuit menyerap air dari glasir saat dioleskan. Biskuit lunak (kerucut 08–06) lebih berpori; biskuit keras (sering kerucut 04) lebih kokoh tetapi kurang mudah menerima glasir.
+The first, lower firing is the **bisque** (UK: **biscuit**), usually cone 08–04 (most often 06–04), about {{1728–1945 °F; 942–1063 °C}}. It leaves ware strong but porous. Digitalfire, a glaze reference site, suggests generally more than 15% porosity, so the bisque draws water out of the glaze as it goes on. A soft bisque (cone 08–06) is more porous; a hard bisque (often cone 04) is sturdier but takes glaze less readily.
 
-Table: Bagaimana biskuit mengubah pengglasiran (Digitalfire)
-Label: Bagaimana biskuit mengubah pengglasiran
+Table: How the bisque changes glazing (Digitalfire)
+Label: How the bisque changes glazing
 
-| Biskuit                                                | Yang terjadi                                                                                             |
-| ------------------------------------------------------ | -------------------------------------------------------------------------------------------------------- |
-| Kurang bakar, sangat menyerap                          | Glasir menempel terlalu tebal, lalu retak dan menggumpal                                                 |
-| Terlalu bakar, padat                                   | Pencelupan dan pengeringan memerlukan waktu lebih lama                                                   |
-| Dibakar lebih panas, atau ditahan lebih lama di puncak | Lebih banyak gas terbakar habis sekarang, sehingga lebih sedikit yang menggelembung melalui glasir nanti |
+| Bisque                                  | What happens                                                    |
+| --------------------------------------- | --------------------------------------------------------------- |
+| Under-fired, very absorbent             | Glaze goes on too thick, then cracks and crawls                 |
+| Over-fired, dense                       | Dipping and drying take longer                                  |
+| Fired hotter, or held longer at the top | More gas burns off now, so less bubbles through the glaze later |
 
-Potclays, pemasok Inggris, menjelaskan pembakaran biskuit sampai sekitar {{1000 °C; 1832 °F}}, sekitar kerucut 06. Dengan membaca sumber-sumber ini bersama, kami menyarankan kerucut 06–04 untuk biskuit pertama: {{1828–1945 °F; 998–1063 °C}} pada laju sedang Orton.
+Potclays, a UK supplier, describes biscuit firing to around {{1000 °C; 1832 °F}}, about cone 06. Reading these sources together, we suggest cone 06–04 for a first bisque: {{1828–1945 °F; 998–1063 °C}} at Orton's medium rate.
 
-**Pembakaran glasir**{{en: glaze firing}} (pembuat keramik Inggris dapat menyebutnya pembakaran **glost**) melelehkan glasir dan, untuk stoneware, juga mematangkan tanah liat. **Sekali bakar**{{en: once-firing}} berarti mengglasir benda yang belum dibakar dan membakarnya hanya sekali. Digitalfire melaporkan kasus produksi tempat benda berglasir mentah menggumpal di tepinya sampai pembakaran biskuit menyembuhkannya, jadi mulailah dengan dua pembakaran. [Membakar di tungku sederhana](/guides/firing) memberikan jadwal untuk keduanya.
+The **glaze firing** (British potters may say **glost** firing) melts the glaze and, for stoneware, matures the clay too. **Once-firing** glazes unfired ware and fires it just once. Digitalfire reports a production case where raw-glazed ware crawled on its rims until a bisque firing cured it, so begin with two firings. [Firing a basic kiln](/guides/firing) gives schedules for both.
 
 ## Kerucut dan kerja panas {#cones}
 
@@ -238,30 +238,30 @@ Label: Cacat glasir umum
 | Mengalir                      | Glasir mengalir ke rak                                            | Alumina terlalu sedikit; terlalu tebal, seperti di tempat tuangan bertumpuk; banyak besi                          | Lapisi lebih tipis; tambahkan alumina; jaga glasir tetap jauh di atas kaki                               |
 | Dunting{{en: dunting}}        | Retakan pada benda akibat pendinginan atau pemanasan              | Pendinginan cepat melewati inversi kuarsa, {{1063 °F; 573 °C}}; dinding tidak rata; kecocokan buruk               | Bakar perlahan melewati {{1063 °F; 573 °C}}, naik dan turun; dinding rata                                |
 
-## Keamanan pangan {#food-safety}
+## Food safety {#food-safety lang=en}
 
-**Pelindian**{{en: leaching}} adalah logam yang larut keluar dari glasir yang sudah dibakar ke dalam makanan atau minuman, dan glasir dapat tampak sempurna tetapi tetap melakukannya. Uji menurut hukum merendam benda yang sudah dibakar dalam larutan asam dan mengukur timbal dan kadmium yang keluar.
+**Leaching** is metal dissolving out of a fired glaze into food or drink, and a glaze can look perfect and still do it. The legal tests soak the fired piece in an acid solution and measure the lead and cadmium that come out.
 
-### Bebas timbal tidak sama dengan aman untuk pangan
+### Lead-free is not the same as food-safe
 
-Aturan di AS, UE, Inggris, dan Australia membatasi timbal dan kadmium yang dilepaskan benda yang sudah dibakar, bukan apa yang dikandung glasir. "Bebas timbal" menghilangkan satu bahaya; itu bukan peringkat keamanan pangan. Oksida lain juga mengalami pelindian: Glazy memperingatkan bahwa glasir barium tinggi "dapat mengalami pelindian dan umumnya tidak aman untuk pangan", Digitalfire menyatakan tembaga "dapat membuat glasir mudah terlindi; ujilah", dan Glazy tidak lagi menganjurkan glasir timbal untuk benda fungsional.
+The rules in the US, the EU, the UK and Australia limit the lead and cadmium a fired piece releases, not what the glaze contains. "Lead-free" removes one hazard; it is not a food-safety rating. Other oxides leach too: Glazy warns that high-barium glazes "can leach and are generally not food-safe", Digitalfire says copper "can make a glaze leachable; test it", and Glazy no longer advises lead glazes for functional ware.
 
-**Glasir lapisan dalam**{{en: liner glaze}} adalah glasir yang stabil, biasanya bening atau putih, untuk permukaan yang bersentuhan dengan makanan. Menurut kami, glasir tanpa pewarna, barium, timbal, atau litium, yang meleleh sepenuhnya, tidak retak halus, dan awet, adalah pilihan berisiko lebih rendah. Risiko lebih rendah bukan bukti.
+A **liner glaze** is a stable, usually clear or white glaze for surfaces that touch food. In our view, one with no colorant, barium, lead or lithium, that melts fully, does not craze and wears well, is the lower-risk choice. Lower risk is not proof.
 
-**Formula batas**{{en: limit formula}} (Digitalfire lebih suka **formula target**) memberi rentang formula Seger tipikal untuk glasir stabil pada suatu kerucut: target kerucut 6 Digitalfire menempatkan alumina pada 0,285–0,64 dan silika pada 2,4–4,7. Rentang itu membimbing Anda ke kimia yang sehat tetapi tidak membuktikan apa pun; Digitalfire menghindari kata "batas" karena menyiratkan glasir di dalam rentang itu "entah bagaimana aman". Alat Glazecalc untuk mengubah resep menyatakan bila resep baru melewati batas yang dianjurkan, seperti banyak boron pada kerucut 6, dan apa yang kemungkinan akan dilakukan glasir.
+**Limit formulas** (Digitalfire prefers **target formulas**) give typical unity-formula ranges for stable glazes at a cone: Digitalfire's cone 6 targets put alumina at 0.285–0.64 and silica at 2.4–4.7. They guide you toward sound chemistry but prove nothing; Digitalfire avoids the word "limit" because it suggests glazes inside the ranges "are somehow safe". Glazecalc's tools for changing a recipe say when the new one goes past a recommended limit, such as a lot of boron at cone 6, and what the glaze will likely do.
 
-Batas menurut hukum berbeda menurut negara. Tabel menunjukkan yang berlaku di tempat Anda, dalam satuan hukum itu sendiri; pilih negara lain untuk membandingkan.
+The legal limits differ by country. The table shows those where you live, in the law's own units; choose another country to compare.
 
 ::food-limits
 
-Di AS, benda yang tidak dimaksudkan untuk makanan harus membawa pemberitahuan "Not for Food Use" yang permanen dan dibakar, atau memiliki lubang menembus permukaan makanan. UE menetapkan batas timbal dan kadmium dalam Direktif UE 84/500/EEC, dan Inggris mempertahankan angka yang sama dalam hukumnya sendiri. Mulai 29 Mei 2026 Belanda, Belgia, dan Luksemburg mengizinkan timbal sekitar 130 sampai 150 kali lebih sedikit, dan kadmium sekitar 15 kali lebih sedikit. Australia menetapkan batas untuk benda impor; kami tidak menemukan batas resmi untuk benda yang dibuat di Australia atau Selandia Baru.
+In the US, decorative ceramic ware that looks usable for food is treated as food ware unless it carries a stick-on label and a permanent notice molded or fired onto its base, such as "Not for Food Use. May Poison Food", or has a hole through the food surface. The EU sets lead and cadmium limits in Directive 84/500/EEC, and the UK keeps the same figures in its own law. From 29 May 2026 the Netherlands, Belgium and Luxembourg allow about 130 to 150 times less lead, and about 15 times less cadmium. Australia sets limits for imported ware; we found no official limit for ware made in Australia or New Zealand.
 
-### Pengujian
+### Testing
 
-FDA (badan pangan dan obat AS) menyatakan alat usap rumahan dapat menunjukkan timbal yang dapat terlindi, tetapi Ceramics New Zealand memperingatkan bahwa pena uji tidak dirancang untuk keramik dan memberi hasil positif palsu. Perlakukan hasil positif sebagai alasan berhenti memakai benda itu, dan hasil negatif sebagai tidak membuktikan apa pun. Uji pelindian laboratorium terhadap benda yang sudah dibakar (ASTM C738 di AS; EN 1388 atau ISO 6486 di Eropa) adalah jawaban yang sebenarnya.
+The FDA says home swab kits can show leachable lead, but Ceramics New Zealand warns that test pens are not designed for ceramics and give false positives. Treat a positive as a reason to stop using the piece, and a negative as proving nothing. A laboratory leach test of the fired piece (ASTM C738 in the US; EN 1388 or ISO 6486 in Europe) is the real answer.
 
 > [!WARNING]
-> "Aman untuk pangan"{{en: food safe}} berarti glasir ini, pada tanah liat ini, dibakar sampai kerucut ini di tungku ini dan dioleskan dengan cara ini, melepaskan kurang dari batas hukum. Glazecalc dapat membantu Anda membuat glasir yang stabil, dan **Ganti timbal** dapat menyusun ulang resep timbal lama tanpa timbal, tetapi tidak ada kalkulator yang dapat mensertifikasi sebuah benda. Hanya uji terhadap benda yang sudah dibakar yang dapat.
+> "Food safe" means this glaze, on this clay, fired to this cone in this kiln and applied this way, releases less than the legal limits. Glazecalc can help you build a stable glaze, and **Replace lead** can rebuild an old lead recipe without lead, but no calculator can certify a pot. Only a test of the fired piece can.
 
 ## Berat jenis dan pengglasiran {#application}
 
@@ -298,171 +298,171 @@ Gas di dalam tungku, **atmosfer**nya, mengubah hasil glasir. **Oksidasi**{{en: o
 
 Setiap tungku, termasuk yang listrik, melepaskan asap, jadi beri ventilasi. [Mencampur dengan aman dan ventilasi](/guides/safe-mixing) menjelaskan caranya.
 
-## Daftar istilah {#glossary}
+## Glossary {#glossary lang=en}
 
-Aditif
-: Pewarna, pengopak, atau penyuspensi yang ditambahkan di atas 100 dalam resep.
+Additive
+: A colorant, opacifier or suspender added on top of a recipe's 100.
 
 Alumina (Al₂O₃)
-: Penstabil utama: menghentikan pengaliran dan menambah kekerasan. Dari tanah liat dan feldspar.
+: The main stabilizer: stops running and adds hardness. From clays and feldspars.
 
 Ball clay
-: Tanah liat plastis dengan lebih banyak besi dan bahan organik daripada kaolin.
+: A plastic clay with more iron and organic matter than kaolin.
 
-Resep batch
-: Bahan baku glasir menurut berat, biasanya berjumlah 100.
+Batch recipe
+: A glaze's raw materials by weight, usually adding up to 100.
 
-Bentonit
-: Tanah liat sangat halus yang ditambahkan 1–3% agar glasir tidak mengendap.
+Bentonite
+: A very fine clay added at 1–3% to keep glaze from settling.
 
-Biskuit (Inggris: biscuit)
-: Pembakaran pertama yang lebih rendah, biasanya kerucut 08–04, menyisakan benda yang kuat tetapi berpori.
+Bisque (UK: biscuit)
+: The first, lower firing, usually cone 08–04 (most often 06–04), leaving ware strong but porous.
 
 Boron (B₂O₃)
-: Secara formal pembentuk kaca tetapi dipakai sebagai pelebur; penting dari kerucut 06 sampai kerucut 6.
+: Formally a glass former but used as a flux; essential from cone 06 to cone 6.
 
-Gom CMC
-: Gom selulosa yang membantu glasir dikuaskan dan menempel; terbakar habis.
+CMC gum
+: A cellulose gum that helps glaze brush on and stick; it burns away.
 
-Pewarna dan stain
-: Oksida atau karbonat logam yang mewarnai glasir; stain adalah pewarna buatan pabrik yang lebih stabil.
+Colorant and stain
+: A metal oxide or carbonate that colors glaze; a stain is a factory-made, more stable colorant.
 
-Kerucut
-: Piramida keramik terkalibrasi yang menekuk pada kerja panas tertentu. Kerucut saksi menunjukkan apa yang diterima benda.
+Cone
+: A calibrated ceramic pyramid that bends at a set heatwork. A witness cone shows what the pots received.
 
-Menggumpal (crawling)
-: Glasir menarik diri menjadi butiran saat pembakaran, menyisakan tanah liat kosong.
+Crawling
+: Glaze pulling back into beads in firing, leaving bare clay.
 
-Retak halus (crazing)
-: Retakan halus pada glasir yang menyusut lebih banyak daripada bodinya; retak seribu bila dikehendaki.
+Crazing
+: Fine cracks in a glaze that shrinks more than its body; crackle when wanted.
 
-Devitrifikasi
-: Kristal yang tumbuh keluar dari kaca di awal pendinginan, di tempat yang tidak dikehendaki.
+Devitrification
+: Crystals growing out of the glass early in cooling, where they are not wanted.
 
 Dunting
-: Retakan pada benda akibat tegangan pendinginan atau pemanasan, sering pada inversi kuarsa, {{1063 °F; 573 °C}}.
+: Cracks in a pot from cooling or heating stress, often at quartz inversion, {{1063 °F; 573 °C}}.
 
-Gerabah
-: Bodi suhu rendah (sekitar kerucut 06–02) yang tetap berpori.
+Earthenware
+: A low-fire body (about cone 06–02) that stays porous.
 
 Feldspar
-: Mineral yang menyediakan pelebur alkali dengan alumina dan silika: kalium, natrium, atau nefelin sienit.
+: A mineral supplying alkali flux with alumina and silica: potash, soda or nepheline syenite.
 
-Flokulan dan deflokulan
-: Bahan tambahan yang menggelkan cairan (garam Epsom, cuka) atau mengencerkannya (natrium silikat, Darvan).
+Flocculant and deflocculant
+: Additives that gel a slurry (Epsom salts, vinegar) or thin it (sodium silicate, Darvan).
 
-Pelebur
-: Oksida yang menurunkan suhu leleh silika.
+Flux
+: An oxide that lowers the melting temperature of silica.
 
-Aman untuk pangan
-: Menurut hukum, melepaskan timbal dan kadmium kurang dari batas dalam uji asam. Tidak sama dengan bebas timbal.
+Food safe
+: In law, releasing less lead and cadmium than the limits in an acid test. Not the same as lead-free.
 
 Frit
-: Kaca buatan pabrik, dilelehkan, didinginkan mendadak, dan digiling, yang membuat oksida larut atau beracun menjadi tidak larut.
+: Factory-made glass, melted, quenched and ground, that makes soluble or toxic oxides insoluble.
 
-Pembentuk kaca
-: Oksida yang membangun kaca, biasanya silika.
+Glass former
+: The oxide that builds the glass, usually silica.
 
-Glasir
-: Lapisan kaca yang meleleh saat pembakaran untuk menyegel dan menghias benda.
+Glaze
+: A coat of glass that melts in firing to seal and decorate a pot.
 
-Pembakaran glasir (Inggris: pembakaran glost)
-: Pembakaran yang melelehkan glasir.
+Glaze firing (UK: glost firing)
+: The firing that melts the glaze.
 
-Kecocokan glasir
-: Seberapa cocok pemuaian glasir dan bodi; kecocokan yang baik membuat glasir sedikit tertekan.
+Glaze fit
+: How well glaze and body expansion match; a good fit leaves the glaze slightly compressed.
 
-Mengilap, satin, dan doff
-: Memantulkan cahaya dan halus; kilau redup; kusam.
+Gloss, satin and matte
+: Reflective and smooth; a subdued sheen; dull.
 
-Keramik mentah (greenware)
-: Benda yang belum dibakar: setengah kering bila kaku tetapi lembap, kering total bila tidak ada air bebas tersisa.
+Greenware
+: Unfired ware: leather-hard when stiff but damp, bone dry when no free water is left.
 
-Kerja panas
-: Efek gabungan suhu dan waktu di tungku; apa yang diukur kerucut.
+Heatwork
+: The combined effect of temperature and time in a kiln; what cones measure.
 
-Kaolin (Inggris: china clay)
-: Tanah liat putih murni yang menyediakan alumina dan silika; menjaga glasir tetap tersuspensi. Australia: Eckalite.
+Kaolin (UK: china clay)
+: A pure white clay supplying alumina and silica; keeps glaze suspended. Australia: Eckalite.
 
-Pelapis rak tungku (kiln wash)
-: Lapisan tahan panas yang melindungi rak tungku dari tetesan.
+Kiln wash
+: A heat-resisting coating that protects kiln shelves from drips.
 
-Pelindian
-: Logam yang larut keluar dari glasir yang sudah dibakar ke dalam makanan atau minuman.
+Leaching
+: Metals dissolving out of a fired glaze into food or drink.
 
-Formula batas (formula target)
-: Rentang formula Seger tipikal untuk glasir stabil pada suatu kerucut; petunjuk, bukan jaminan.
+Limit formula (target formula)
+: Typical unity-formula ranges for stable glazes at a cone; a guide, not a guarantee.
 
-Campuran garis
-: Uji yang menaikkan satu bahan di antara dua jumlah. Campuran triaksial mengubah tiga bahan pada kisi.
+Line blend
+: Tests stepping one ingredient between two amounts. A triaxial blend varies three on a grid.
 
-Glasir lapisan dalam
-: Glasir yang stabil, biasanya bening atau putih, untuk permukaan yang bersentuhan dengan makanan.
+Liner glaze
+: A stable, usually clear or white glaze for surfaces that touch food.
 
-LOI (susut pijar)
-: Berat yang hilang saat pembakaran sebagai air, karbon dioksida, bahan organik, atau belerang.
+LOI (loss on ignition)
+: Weight lost in firing as water, carbon dioxide, organic matter or sulfur.
 
-Sekali bakar (pembakaran tunggal)
-: Mengglasir benda yang belum dibakar dan membakarnya hanya sekali.
+Once-firing (single firing)
+: Glazing unfired ware and firing it only once.
 
-Pengopak
-: Bahan, seperti zirkon, timah oksida, atau titanium dioksida, yang membuat glasir buram.
+Opacifier
+: A material, such as zircon, tin oxide or titanium dioxide, that makes glaze opaque.
 
-Oksidasi dan reduksi
-: Membakar dengan oksigen yang banyak (tungku listrik), atau dengan oksigen yang dibatasi (biasanya gas atau kayu).
+Oxidation and reduction
+: Firing with plenty of oxygen (electric kilns), or with oxygen restricted (usually gas or wood).
 
-Oksida
-: Senyawa suatu unsur dengan oksigen; analisis oksida mencantumkannya menurut persen berat.
+Oxide
+: A compound of an element with oxygen; an oxide analysis lists them by weight percent.
 
-Lubang jarum dan lepuh
-: Lubang kecil, atau kawah bertepi tajam, tempat gas lolos melalui lelehan.
+Pinholing and blistering
+: Small holes, or sharp-edged craters, where gas escaped through the melt.
 
-Porselen
-: Bodi putih, kaya kaolin, suhu tinggi, sering tembus cahaya.
+Porcelain
+: A white, kaolin-rich, high-fire body, often translucent.
 
-R₂O dan RO
-: Pelebur alkali (Na₂O, K₂O, Li₂O) dan pelebur alkali tanah (CaO, MgO, BaO, SrO, dengan ZnO).
+R₂O and RO
+: The alkali fluxes (Na₂O, K₂O, Li₂O) and alkaline-earth fluxes (CaO, MgO, BaO, SrO, with ZnO).
 
-Mengelupas (shivering)
-: Glasir terkelupas dari tepi karena tertekan berlebihan; bahaya pada benda fungsional.
+Shivering
+: Glaze flaking off edges because it is over-compressed; a hazard on functional ware.
 
-Silika (SiO₂)
-: Pembentuk kaca; juga disebut flint atau kuarsa.
+Silica (SiO₂)
+: The glass former; also called flint or quartz.
 
-Rasio silika terhadap alumina
-: Silika dibagi alumina dalam formula Seger: lebih tinggi cenderung mengilap, lebih rendah cenderung doff.
+Silica to alumina ratio
+: Silica divided by alumina in the unity formula: higher tends to gloss, lower to matte.
 
-Slip dan engobe
-: Tanah liat dalam air; engobe adalah lapisan mirip slip dengan lebih banyak bahan bukan tanah liat.
+Slip and engobe
+: Clay in water; an engobe is a slip-like coating with more non-clay material.
 
-Berat jenis
-: Berat cairan dibandingkan dengan volume air yang sama. Inggris lama: berat pint.
+Specific gravity (SG)
+: A slurry's weight compared with the same volume of water. Older UK: pint weight.
 
-Penstabil
-: Oksida, terutama alumina, yang mengentalkan lelehan dan menambah daya tahan.
+Stabilizer
+: An oxide, mainly alumina, that stiffens the melt and adds durability.
 
 Stoneware
-: Bodi suhu menengah sampai tinggi (sekitar kerucut 5–10) yang menjadi bersifat gelas atau hampir demikian.
+: A mid- to high-fire body (about cone 5–10) that becomes vitreous or nearly so.
 
-Tiksotropi
-: Mengalir saat diaduk, mengeras menjadi gel lunak saat diam.
+Thixotropy
+: Flowing when stirred, setting into a soft gel when still.
 
 Underglaze
-: Slip berwarna atau hiasan oksida, biasanya di bawah glasir bening.
+: Colored slip or oxide decoration, usually under a clear glaze.
 
-Formula Seger (UMF)
-: Oksida glasir sebagai hitungan molekul, diskalakan agar pelebur berjumlah 1.
+Unity molecular formula (UMF, Seger formula)
+: A glaze's oxides as molecule counts, scaled so the fluxes add up to 1.
 
-Vitrifikasi
-: Bodi menjadi seperti kaca dan tidak berpori saat pembakaran.
+Vitrification
+: A body becoming glassy and non-porous in firing.
 
-Lilin penahan
-: Lilin yang dioleskan di tempat glasir tidak boleh masuk, biasanya kaki.
+Wax resist
+: Wax painted where glaze must not go, usually the foot.
 
 Whiting
-: Kalsium karbonat, pelebur kalsium utama; kehilangan lebih dari 40% beratnya saat pembakaran. Jerman: Kreide.
+: Calcium carbonate, the main calcium flux; loses over 40% of its weight in firing. German: Kreide.
 
-## Sumber {#sources}
+## Sources {#sources lang=en}
 
 - [Glazy Help: Glaze](https://help.glazy.org/concepts/glaze)
 - [Glazy Help: Oxides](https://help.glazy.org/concepts/oxides)
@@ -474,6 +474,7 @@ Whiting
 - [Glazy Help: Specific gravity](https://help.glazy.org/testing/specific-gravity)
 - [Orton Ceramic Foundation: Pyrometric cone chart, °F (via The Ceramic Shop)](https://www.theceramicshop.com/technical_info/Cones/Orton-Cone-Chart-F-022-14.pdf)
 - [Digitalfire: Bisque](https://digitalfire.com/glossary/bisque)
+- [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Unity molecular formula](https://digitalfire.com/glossary/unity+molecular+formula)
 - [Digitalfire: LOI](https://digitalfire.com/glossary/loi)
 - [Digitalfire: Frit](https://digitalfire.com/glossary/frit)
@@ -489,3 +490,4 @@ Whiting
 - [Potclays: The difference between stoneware and earthenware](https://www.potclays.co.uk/clay-questions/difference-stoneware-earthenware)
 - [US FDA: Compliance Policy Guide Sec. 545.450, Pottery (ceramics), lead contamination](https://www.fda.gov/media/71764/download)
 - [EUR-Lex: Council Directive 84/500/EEC on ceramic articles in contact with food](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:31984L0500)
+- [eCFR: 21 CFR 109.16, Ornamental and decorative ceramicware](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-109/subpart-A/section-109.16)

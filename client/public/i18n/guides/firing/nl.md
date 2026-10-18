@@ -370,83 +370,83 @@ Zelfstaande Ortonkegels worden in Japan verkocht onder de naam 立つゼーゲ�
 
 :::
 
-## Biscuitstook {#bisque}
+## Bisque firing {#bisque lang=en}
 
-De **biscuitstook**{{en: bisque}} (in Brits Engels: biscuit) is de eerste, lagere stook, die droge klei verandert in hard, poreus werk dat klaar is om te glazuren. Meestal wordt er gestookt tot kegel 06–04, {{1828–1945 °F; 998–1063 °C}} in de tabel van Orton; Britse pottenbakkers stoken vaak tot rond {{1000 °C; 1832 °F}}, dicht bij kegel 06. Het biscuit zou poreus moeten blijven, “doorgaans meer dan 15%” (Digitalfire), zodat het water uit het glazuur{{en: glaze}} opzuigt. Te zacht biscuit neemt het glazuur te dik op, dat dan barst en **samentrekt**{{en: crawls}} (zich terugtrekt tot eilandjes en kale klei achterlaat). Te laag gestookt biscuit heeft nog een nadeel: het “blijft krimpen tijdens de glazuurstook”, wat de passing van glazuur en scherf{{en: glaze fit}} bederft. Het vullen van de oven is vergevingsgezind: stukken mogen elkaar raken, deksels kunnen op hun potten mee worden gestookt, en kommen gaan rand op rand in plaats van in elkaar.
+The **bisque** firing (biscuit in the UK) is the first, lower firing that turns dry clay into hard, porous ware ready to glaze. It is usually fired to cone 06–04, {{1828–1945 °F; 998–1063 °C}} on Orton's chart; UK potters often fire to around {{1000 °C; 1832 °F}}, near cone 06. The bisque should stay porous, "generally more than 15%" (Digitalfire), so it soaks water out of the glaze. Too soft a bisque takes glaze on too thick, which then cracks and **crawls** (pulls back into islands, leaving bare clay). Under-fired bisque also "continues to shrink during glaze firing", which spoils the glaze fit. Loading is forgiving: pieces may touch, lids can be fired on their pots, and bowls go rim to rim rather than nested.
 
-### Waarom het begin langzaam gaat
+### Why the early part goes slowly
 
-Water dat stoom wordt, “zet 1170 keer uit”, schrijft Bracker’s, dus vochtig werk moet langzaam worden gedroogd. L&L en Orton raden aan: “Onder 1500°F (815°C) zou er extra op moeten worden gelet dat de scherf gelijkmatig wordt verhit”, en koolstof moet vóór ongeveer {{1200 °F; 650 °C}} zijn uitgebrand. Boven {{1500 °F; 816 °C}} kan de oven sneller stijgen.
+Water expands more than a thousandfold as it turns to steam, so damp ware has to be dried slowly. L&L and Orton advise that "Special care should be taken below 1500°F (815°C) to heat the body evenly", and that carbon must be burned out before about {{1200 °F; 650 °C}}. Above {{1500 °F; 816 °C}} the kiln can climb faster.
 
-Table: Wat er gebeurt als een biscuitstook opwarmt
-Label: Wat er gebeurt in een biscuitstook
+Table: What happens as a bisque heats
+Label: What happens in a bisque
 
-|                      Temperatuur | Wat er gebeurt                                                                             |
-| -------------------------------: | ------------------------------------------------------------------------------------------ |
-|       {{300–500 °F; 149–260 °C}} | Bindmiddelen branden weg                                                                   |
-|          Rond {{450 °F; 232 °C}} | Organisch materiaal begint te branden                                                      |
-|           Tot {{700 °F; 371 °C}} | Er blijft water uit de klei komen tot boven deze temperatuur                               |
-|      {{842–1022 °F; 450–550 °C}} | Chemisch gebonden water verlaat de klei                                                    |
-|              {{1063 °F; 573 °C}} | Kwartssprong{{en: quartz inversion}}: het kwarts in de klei zet plotseling uit             |
-|        Boven {{1112 °F; 600 °C}} | Zwavel brandt uit                                                                          |
-| Tot {{1200–1400 °F; 649–760 °C}} | Natuurlijke koolstof brandt weg; dit zou klaar moeten zijn voordat de oven roodgloeiend is |
-|        Boven {{1544 °F; 840 °C}} | Calciumcarbonaat ontleedt                                                                  |
+|                        Temperature | What happens                                                |
+| ---------------------------------: | ----------------------------------------------------------- |
+|         {{300–500 °F; 149–260 °C}} | Binders burn off                                            |
+|           About {{450 °F; 232 °C}} | Organic matter starts to burn                               |
+|           Up to {{700 °F; 371 °C}} | Water keeps leaving the clay until above this temperature   |
+|        {{842–1022 °F; 450–550 °C}} | Chemically bound water leaves the clay                      |
+|                {{1063 °F; 573 °C}} | Quartz inversion: silica in the clay expands suddenly       |
+|          Above {{1112 °F; 600 °C}} | Sulfur burns out                                            |
+| Up to {{1200–1400 °F; 649–760 °C}} | Natural carbon burns off; this should finish below red heat |
+|          Above {{1544 °F; 840 °C}} | Calcium carbonate breaks down                               |
 
-De **kwartssprong** is de plotselinge verandering in afmeting van het kwarts in klei bij {{1063 °F; 573 °C}}: het zet uit bij het opwarmen en krimpt bij het afkoelen. Het programma Slow Bisque van L&L gaat er langzaam doorheen, tussen {{1000 °F; 538 °C}} en {{1100 °F; 593 °C}}. Digitalfire vond dit “onnodig voor biscuitstoken”, en Ceramics Monthly zegt dat het vooral uitmaakt bij het afkoelen van dicht werk. Vertragen kost weinig; ons voorstel is het voor dikke stukken te blijven doen.
+**Quartz inversion** is the sudden change in size of the silica in clay at {{1063 °F; 573 °C}}: it expands on the way up and contracts on the way down. L&L's Slow Bisque slows through it, between {{1000 °F; 538 °C}} and {{1100 °F; 593 °C}}. Digitalfire found this "unnecessary for bisque firings", and Ceramics Monthly says it mainly matters when cooling dense ware. Slowing costs little, so our suggestion is to keep it for thick pieces.
 
-### Droogstoken: drogen in de oven
+### Candling: drying in the kiln
 
-**Droogstoken**{{en: candling}} betekent de oven op een lage temperatuur houden, met het deksel op een kier of de afzuiging aan, tot het laatste vocht uit het werk is. De bronnen zijn het niet eens over de temperatuur:
+**Candling** means holding the kiln at a low temperature, with the lid propped or the vent running, until the last moisture has left the ware. Sources disagree about the temperature:
 
-Table: Temperaturen voor droogstoken
+Table: Candling temperatures
 
-| Bron               | Droogstoken                                                                                       |
-| ------------------ | ------------------------------------------------------------------------------------------------- |
-| Ceramics Monthly   | Net onder het kookpunt; bijvoorbeeld 4–6 uur stijgen met {{25 °F/h; 14 °C/h}}                     |
-| L&L, voorverwarmen | Aanhouden op {{150–200 °F; 66–93 °C}}                                                             |
-| Digitalfire        | Aanhouden op {{250 °F; 121 °C}}, omdat aanhouden onder het kookpunt “niet al het water verdrijft” |
+| Source           | Candling                                                                                 |
+| ---------------- | ---------------------------------------------------------------------------------------- |
+| Ceramics Monthly | Just short of boiling; for example, climbing at {{25 °F/h; 14 °C/h}} for 4–6 hours       |
+| L&L preheat      | Hold at {{150–200 °F; 66–93 °C}}                                                         |
+| Digitalfire      | Hold at {{250 °F; 121 °C}}, because holding below boiling "does not expel all the water" |
 
 > [!NOTE]
-> Ons uitgangspunt: laat de oven langzaam stijgen tot niet meer dan ongeveer {{250 °F; 121 °C}}, en houd aan tot een spiegel bij de ontluchting helder blijft. Houd bij dik of vochtig werk de hele nacht aan.
+> Our starting point: climb slowly to no more than about {{250 °F; 121 °C}}, and hold until a mirror at the vent stays clear. Hold overnight for thick or damp ware.
 
-De **spiegeltest**: houd een spiegel op kamertemperatuur bij een ontluchtingsgat of bij de spleet onder een deksel dat op een kier staat. Beslaat hij, dan komt er nog water vrij; wacht en test dan opnieuw.
+The **mirror test**: hold a room-temperature mirror at a vent hole or at the gap under a propped lid. If it fogs, water is still leaving; wait, then test again.
 
-### Stookschema’s voor de regelaar
+### Controller schedules
 
-Een **regelaar** is een elektronisch apparaat dat de oven stookt volgens een **stookschema**: een lijst van **segmenten**, elk met een stooksnelheid (de **stijging**{{en: ramp}}), een doeltemperatuur en eventueel een houdtijd{{en: hold}}. Hieronder staan twee standaardprogramma’s van de DynaTrol-regelaar van L&L en van Bartlett-regelaars, en een stookschema dat Digitalfire heeft gepubliceerd. “Toptemperatuur” is de eigen temperatuur van de regelaar voor de kegel die u kiest: voor kegel 04 is dat {{1926 °F; 1052 °C}}, en voor kegel 06 {{1819 °F; 993 °C}}.
+A **controller** is an electronic unit that fires the kiln through a **schedule**: a list of **segments**, each a rate of climb (the **ramp**), a target temperature and an optional hold. Below are two presets from L&L's DynaTrol and Bartlett controllers, and a schedule published by Digitalfire. "Peak" is the controller's own temperature for the cone you choose: for cone 04 it is {{1926 °F; 1052 °C}}, and for cone 06, {{1819 °F; 993 °C}}.
 
-Table: Standaardprogramma’s voor biscuit van L&L en Bartlett
-Label: Standaardprogramma’s voor biscuit
+Table: L&L and Bartlett bisque presets
+Label: Bisque presets
 
-| Segment               |                                                                   Stijgen tot |             Slow Bisque |            Fast Bisque |
-| --------------------- | ----------------------------------------------------------------------------: | ----------------------: | ---------------------: |
-| 1                     |                                                            {{250 °F; 121 °C}} |    {{80 °F/h; 44 °C/h}} |  {{120 °F/h; 67 °C/h}} |
-| 2                     |                                                           {{1000 °F; 538 °C}} |  {{200 °F/h; 111 °C/h}} | {{300 °F/h; 167 °C/h}} |
-| 3                     |                                                           {{1100 °F; 593 °C}} |   {{100 °F/h; 56 °C/h}} |  {{150 °F/h; 83 °C/h}} |
-| 4                     | {{250 °F; 139 °C}} onder de toptemperatuur: {{1676 °F; 913 °C}} voor kegel 04 |  {{180 °F/h; 100 °C/h}} | {{180 °F/h; 100 °C/h}} |
-| 5                     |                                                             De toptemperatuur |    {{80 °F/h; 44 °C/h}} |  {{108 °F/h; 60 °C/h}} |
-| Opwarmtijd, lege oven |                                                                               | Ongeveer 13 uur of meer |    Ongeveer 10–11½ uur |
+| Segment                  |                                                           Climb to |            Slow Bisque |            Fast Bisque |
+| ------------------------ | -----------------------------------------------------------------: | ---------------------: | ---------------------: |
+| 1                        |                                                 {{250 °F; 121 °C}} |   {{80 °F/h; 44 °C/h}} |  {{120 °F/h; 67 °C/h}} |
+| 2                        |                                                {{1000 °F; 538 °C}} | {{200 °F/h; 111 °C/h}} | {{300 °F/h; 167 °C/h}} |
+| 3                        |                                                {{1100 °F; 593 °C}} |  {{100 °F/h; 56 °C/h}} |  {{150 °F/h; 83 °C/h}} |
+| 4                        | {{250 °F; 139 °C}} below the peak: {{1676 °F; 913 °C}} for cone 04 | {{180 °F/h; 100 °C/h}} | {{180 °F/h; 100 °C/h}} |
+| 5                        |                                                           The peak |   {{80 °F/h; 44 °C/h}} |  {{108 °F/h; 60 °C/h}} |
+| Heating time, empty kiln |                                                                    | About 13 hours or more |     About 10–11½ hours |
 
-De tijden van L&L gelden “voor de snelst mogelijke lege ovens”; een gevulde oven kan wel vier keer zo lang nodig hebben, en elke houdtijd die u toevoegt, is extra heatwork waar de standaardprogramma’s geen rekening mee houden. L&L raadt voor grote of vochtige stukken Slow Bisque aan, met 2–3 uur of langer voorverwarmen, en waarschuwt voor snel stoken, dat “fouten kan veroorzaken zoals speldenprikken{{en: pinholes}}, scheuren en onvoldoende uitbranden”.
+L&L's times are "for the fastest possible empty kilns"; a loaded kiln can take as much as four times longer, and any hold you add is extra heatwork the presets do not allow for. L&L advises Slow Bisque, with a preheat of 2–3 hours or longer, for large or damp pieces, and warns against fast firing, which "can cause defects like pinholes, cracking, and insufficient burnout".
 
-Table: Digitalfire BQ1000, biscuit tot ongeveer kegel 06
+Table: Digitalfire BQ1000 bisque, to about cone 06
 Label: Digitalfire BQ1000
 
-| Stap |               Snelheid |                 Doel | Houdtijd                               |
-| ---- | ---------------------: | -------------------: | -------------------------------------- |
-| 1    | {{306 °F/h; 170 °C/h}} |   {{248 °F; 120 °C}} | 60 minuten; tot 10 uur voor zwaar werk |
-| 2    | {{306 °F/h; 170 °C/h}} |  {{1733 °F; 945 °C}} | Geen                                   |
-| 3    |  {{108 °F/h; 60 °C/h}} | {{1832 °F; 1000 °C}} | 15 minuten                             |
+| Step |                   Rate |               Target | Hold                                      |
+| ---- | ---------------------: | -------------------: | ----------------------------------------- |
+| 1    | {{306 °F/h; 170 °C/h}} |   {{248 °F; 120 °C}} | 60 minutes; up to 10 hours for heavy ware |
+| 2    | {{306 °F/h; 170 °C/h}} |  {{1733 °F; 945 °C}} | None                                      |
+| 3    |  {{108 °F/h; 60 °C/h}} | {{1832 °F; 1000 °C}} | 15 minutes                                |
 
-BQ1000 duurt ongeveer 7 uur en 44 minuten. De auteur vindt tot {{500 °F/h; 278 °C/h}} prima voor dun, droog werk, en vertraagt de laatste stap om de temperatuur in de hele lading gelijk te trekken.
+BQ1000 takes about 7 hours 44 minutes. Its author finds up to {{500 °F/h; 278 °C/h}} fine for thin, dry ware, and slows the last step to even out the temperature through the load.
 
-### Kegels van de regelaar en de tabel van Orton
+### Controller cones and Orton's chart
 
-Regelaars van L&L en Bartlett gebruiken {{1926 °F; 1052 °C}} voor kegel 04 en {{1819 °F; 993 °C}} voor kegel 06, iets onder de {{1945 °F; 1063 °C}} en {{1828 °F; 998 °C}} van Orton; bij kegel 6 en kegel 10 komen ze overeen. Controlekegels{{en: witness cones}} beslechten het verschil: wijken ze af van de regelaar, corrigeer die dan met de kegeloffset.
+L&L and Bartlett controllers use {{1926 °F; 1052 °C}} for cone 04 and {{1819 °F; 993 °C}} for cone 06, a little below Orton's {{1945 °F; 1063 °C}} and {{1828 °F; 998 °C}}; they agree at cone 6 and cone 10. Witness cones settle the difference: if they disagree with the controller, correct it with the cone offset.
 
-### Bij een handbediende oven
+### On a manual kiln
 
-Een handbediende oven volgt hetzelfde plan, maar dan met de hand: droog langzaam met het deksel op een kier en de kijkgaten open, zet de schakelaars stap voor stap hoger van Low via Medium naar High (laag, middel, hoog), en laat de kiln sitter de stook beëindigen. De gepubliceerde werkwijzen staan onder Handbediende ovens in detail, hieronder.
+A manual kiln follows the same plan by hand: dry slowly with the lid propped and the peepholes open, step the switches up from Low to Medium to High, and let the sitter end the firing. The published procedures are under Manual kilns in detail, below.
 
 ## Glazuurstook {#glaze}
 

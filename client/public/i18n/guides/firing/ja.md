@@ -370,83 +370,83 @@ Label: SK コーンの温度表
 
 :::
 
-## 素焼き {#bisque}
+## Bisque firing {#bisque lang=en}
 
-**素焼き**{{en: bisque}}（英国では biscuit）は、最初に行う低めの焼成で、乾いた粘土を、施釉できる硬く吸水性のある器にします。通常はオルトンコーン 06〜04、オルトンの温度表で {{1828–1945 °F; 998–1063 °C}} まで焼きます。英国の陶芸家は、コーン 06 に近い {{1000 °C; 1832 °F}} 前後で焼くことが多いです。素焼きは「一般に15%を超える」吸水性を残すべきです（Digitalfire）。そうすれば、釉薬の水分を吸い取ります。素焼きが甘すぎると釉薬が厚く付きすぎ、ひびが入って**縮れ**{{en: crawls}}（釉が島のように縮み、素地が露出すること）が起きます。焼成不足の素焼きは「本焼き中も収縮を続ける」ため、釉と素地の適合{{en: glaze fit}}も損なわれます。窯詰めは融通がききます。作品どうしが触れてもかまいませんし、蓋は器にのせたまま焼けます。鉢は入れ子にせず、口縁どうしを合わせて重ねます。
+The **bisque** firing (biscuit in the UK) is the first, lower firing that turns dry clay into hard, porous ware ready to glaze. It is usually fired to cone 06–04, {{1828–1945 °F; 998–1063 °C}} on Orton's chart; UK potters often fire to around {{1000 °C; 1832 °F}}, near cone 06. The bisque should stay porous, "generally more than 15%" (Digitalfire), so it soaks water out of the glaze. Too soft a bisque takes glaze on too thick, which then cracks and **crawls** (pulls back into islands, leaving bare clay). Under-fired bisque also "continues to shrink during glaze firing", which spoils the glaze fit. Loading is forgiving: pieces may touch, lids can be fired on their pots, and bowls go rim to rim rather than nested.
 
-### 初めをゆっくり焼く理由
+### Why the early part goes slowly
 
-Bracker's によれば、水が水蒸気になると「1,170倍に膨張する」ため、湿った器はゆっくり乾かさなければなりません。L&L とオルトンは、「1500°F (815°C) 未満では、素地を均一に加熱するよう特に注意するべきである」とし、炭素は約 {{1200 °F; 650 °C}} までに燃やしきらなければならないと助言しています。{{1500 °F; 816 °C}} を超えたら、もっと速く昇温してかまいません。
+Water expands more than a thousandfold as it turns to steam, so damp ware has to be dried slowly. L&L and Orton advise that "Special care should be taken below 1500°F (815°C) to heat the body evenly", and that carbon must be burned out before about {{1200 °F; 650 °C}}. Above {{1500 °F; 816 °C}} the kiln can climb faster.
 
-Table: 素焼きの加熱中に起きること
-Label: 素焼きで起きること
+Table: What happens as a bisque heats
+Label: What happens in a bisque
 
-|                              温度 | 起きること                                             |
-| --------------------------------: | ------------------------------------------------------ |
-|        {{300–500 °F; 149–260 °C}} | バインダー（糊剤）が燃える                             |
-|             約 {{450 °F; 232 °C}} | 有機物が燃え始める                                     |
-|           {{700 °F; 371 °C}} まで | この温度を超えるまで、粘土から水分が出続ける           |
-|       {{842–1022 °F; 450–550 °C}} | 化学的に結合した水が粘土から出る                       |
-|               {{1063 °F; 573 °C}} | 石英転移: 粘土中のシリカが急に膨張する                 |
-|            {{1112 °F; 600 °C}} 超 | 硫黄が燃え抜ける                                       |
-| {{1200–1400 °F; 649–760 °C}} まで | 天然の炭素が燃え抜ける。赤熱になる前に終わっているべき |
-|            {{1544 °F; 840 °C}} 超 | 炭酸カルシウムが分解する                               |
+|                        Temperature | What happens                                                |
+| ---------------------------------: | ----------------------------------------------------------- |
+|         {{300–500 °F; 149–260 °C}} | Binders burn off                                            |
+|           About {{450 °F; 232 °C}} | Organic matter starts to burn                               |
+|           Up to {{700 °F; 371 °C}} | Water keeps leaving the clay until above this temperature   |
+|        {{842–1022 °F; 450–550 °C}} | Chemically bound water leaves the clay                      |
+|                {{1063 °F; 573 °C}} | Quartz inversion: silica in the clay expands suddenly       |
+|          Above {{1112 °F; 600 °C}} | Sulfur burns out                                            |
+| Up to {{1200–1400 °F; 649–760 °C}} | Natural carbon burns off; this should finish below red heat |
+|          Above {{1544 °F; 840 °C}} | Calcium carbonate breaks down                               |
 
-**石英転移**{{en: quartz inversion}}は、粘土中のシリカが {{1063 °F; 573 °C}} で急に寸法を変えることです。昇温時に膨張し、冷却時に収縮します。L&L の Slow Bisque は、{{1000 °F; 538 °C}} から {{1100 °F; 593 °C}} の間をゆっくり昇温してここを通過します。Digitalfire はこれを「素焼きには不要」としており、Ceramics Monthly は、これが主に問題になるのは緻密な器を冷ますときだと述べています。ゆっくりにしても損は小さいので、厚い作品ではこの減速を残すことをおすすめします。
+**Quartz inversion** is the sudden change in size of the silica in clay at {{1063 °F; 573 °C}}: it expands on the way up and contracts on the way down. L&L's Slow Bisque slows through it, between {{1000 °F; 538 °C}} and {{1100 °F; 593 °C}}. Digitalfire found this "unnecessary for bisque firings", and Ceramics Monthly says it mainly matters when cooling dense ware. Slowing costs little, so our suggestion is to keep it for thick pieces.
 
-### あぶり: 窯の中で乾かす
+### Candling: drying in the kiln
 
-**あぶり**{{en: candling}}とは、蓋を少し開けて支えるか排気装置を動かした状態で、窯を低い温度に保ち、作品から最後の水分が抜けるまで待つことです。温度については、資料によって意見が分かれます。
+**Candling** means holding the kiln at a low temperature, with the lid propped or the vent running, until the last moisture has left the ware. Sources disagree about the temperature:
 
-Table: あぶりの温度
+Table: Candling temperatures
 
-| 出典             | あぶり                                                                                      |
-| ---------------- | ------------------------------------------------------------------------------------------- |
-| Ceramics Monthly | 沸点の少し手前。例えば {{25 °F/h; 14 °C/h}} で4〜6時間昇温する                              |
-| L&L（予熱）      | {{150–200 °F; 66–93 °C}} で保持                                                             |
-| Digitalfire      | {{250 °F; 121 °C}} で保持。沸点未満で保持しても「すべての水分を追い出せるわけではない」ため |
+| Source           | Candling                                                                                 |
+| ---------------- | ---------------------------------------------------------------------------------------- |
+| Ceramics Monthly | Just short of boiling; for example, climbing at {{25 °F/h; 14 °C/h}} for 4–6 hours       |
+| L&L preheat      | Hold at {{150–200 °F; 66–93 °C}}                                                         |
+| Digitalfire      | Hold at {{250 °F; 121 °C}}, because holding below boiling "does not expel all the water" |
 
 > [!NOTE]
-> 最初の目安: 約 {{250 °F; 121 °C}} 以下までゆっくり昇温し、排気口に当てた鏡が曇らなくなるまで保持してください。厚い作品や湿った作品は、一晩保持してください。
+> Our starting point: climb slowly to no more than about {{250 °F; 121 °C}}, and hold until a mirror at the vent stays clear. Hold overnight for thick or damp ware.
 
-**鏡テスト**: 室温の鏡を、排気穴か、少し開けた蓋の下のすき間にかざします。曇るなら、まだ水分が出ています。待ってから、もう一度試してください。
+The **mirror test**: hold a room-temperature mirror at a vent hole or at the gap under a propped lid. If it fogs, water is still leaving; wait, then test again.
 
-### コントローラーのスケジュール
+### Controller schedules
 
-**コントローラー**は、**焼成スケジュール**に従って窯を焚く電子機器です。スケジュールは**セグメント**の並びで、各セグメントは昇温速度（**ランプ**{{en: ramp}}）、目標温度、必要に応じた保持から成ります。下に、L&L の DynaTrol と Bartlett のコントローラーにあるプリセット二つと、Digitalfire が公開しているスケジュールを示します。「最高温度」は、選んだコーンに対してコントローラーが使う温度で、オルトンコーン 04 なら {{1926 °F; 1052 °C}}、コーン 06 なら {{1819 °F; 993 °C}} です。
+A **controller** is an electronic unit that fires the kiln through a **schedule**: a list of **segments**, each a rate of climb (the **ramp**), a target temperature and an optional hold. Below are two presets from L&L's DynaTrol and Bartlett controllers, and a schedule published by Digitalfire. "Peak" is the controller's own temperature for the cone you choose: for cone 04 it is {{1926 °F; 1052 °C}}, and for cone 06, {{1819 °F; 993 °C}}.
 
-Table: L&L と Bartlett の素焼きのプリセット
-Label: 素焼きのプリセット
+Table: L&L and Bartlett bisque presets
+Label: Bisque presets
 
-| セグメント         |                                                                       到達温度 |            Slow Bisque |            Fast Bisque |
-| ------------------ | -----------------------------------------------------------------------------: | ---------------------: | ---------------------: |
-| 1                  |                                                             {{250 °F; 121 °C}} |   {{80 °F/h; 44 °C/h}} |  {{120 °F/h; 67 °C/h}} |
-| 2                  |                                                            {{1000 °F; 538 °C}} | {{200 °F/h; 111 °C/h}} | {{300 °F/h; 167 °C/h}} |
-| 3                  |                                                            {{1100 °F; 593 °C}} |  {{100 °F/h; 56 °C/h}} |  {{150 °F/h; 83 °C/h}} |
-| 4                  | 最高温度の {{250 °F; 139 °C}} 下（オルトンコーン 04 では {{1676 °F; 913 °C}}） | {{180 °F/h; 100 °C/h}} | {{180 °F/h; 100 °C/h}} |
-| 5                  |                                                                       最高温度 |   {{80 °F/h; 44 °C/h}} |  {{108 °F/h; 60 °C/h}} |
-| 昇温時間（空の窯） |                                                                                |           約13時間以上 |          約10〜11½時間 |
+| Segment                  |                                                           Climb to |            Slow Bisque |            Fast Bisque |
+| ------------------------ | -----------------------------------------------------------------: | ---------------------: | ---------------------: |
+| 1                        |                                                 {{250 °F; 121 °C}} |   {{80 °F/h; 44 °C/h}} |  {{120 °F/h; 67 °C/h}} |
+| 2                        |                                                {{1000 °F; 538 °C}} | {{200 °F/h; 111 °C/h}} | {{300 °F/h; 167 °C/h}} |
+| 3                        |                                                {{1100 °F; 593 °C}} |  {{100 °F/h; 56 °C/h}} |  {{150 °F/h; 83 °C/h}} |
+| 4                        | {{250 °F; 139 °C}} below the peak: {{1676 °F; 913 °C}} for cone 04 | {{180 °F/h; 100 °C/h}} | {{180 °F/h; 100 °C/h}} |
+| 5                        |                                                           The peak |   {{80 °F/h; 44 °C/h}} |  {{108 °F/h; 60 °C/h}} |
+| Heating time, empty kiln |                                                                    | About 13 hours or more |     About 10–11½ hours |
 
-L&L の時間は「最も速く昇温できる空の窯の場合」です。作品を詰めた窯では最大で四倍の時間がかかることがあり、保持を加えれば、それはプリセットが見込んでいない焼度の上乗せになります。大きな作品や湿った作品には、L&L は 2〜3時間以上の予熱を付けた Slow Bisque をすすめ、速い焼成については「ピンホール、ひび割れ、炭素の焼き抜き不足などの欠点を起こすことがある」と注意しています。
+L&L's times are "for the fastest possible empty kilns"; a loaded kiln can take as much as four times longer, and any hold you add is extra heatwork the presets do not allow for. L&L advises Slow Bisque, with a preheat of 2–3 hours or longer, for large or damp pieces, and warns against fast firing, which "can cause defects like pinholes, cracking, and insufficient burnout".
 
-Table: Digitalfire BQ1000 素焼き（オルトンコーン 06 前後まで）
+Table: Digitalfire BQ1000 bisque, to about cone 06
 Label: Digitalfire BQ1000
 
-| ステップ |               昇温速度 |             目標温度 | 保持                       |
-| -------- | ---------------------: | -------------------: | -------------------------- |
-| 1        | {{306 °F/h; 170 °C/h}} |   {{248 °F; 120 °C}} | 60分。重い器では最大10時間 |
-| 2        | {{306 °F/h; 170 °C/h}} |  {{1733 °F; 945 °C}} | なし                       |
-| 3        |  {{108 °F/h; 60 °C/h}} | {{1832 °F; 1000 °C}} | 15分                       |
+| Step |                   Rate |               Target | Hold                                      |
+| ---- | ---------------------: | -------------------: | ----------------------------------------- |
+| 1    | {{306 °F/h; 170 °C/h}} |   {{248 °F; 120 °C}} | 60 minutes; up to 10 hours for heavy ware |
+| 2    | {{306 °F/h; 170 °C/h}} |  {{1733 °F; 945 °C}} | None                                      |
+| 3    |  {{108 °F/h; 60 °C/h}} | {{1832 °F; 1000 °C}} | 15 minutes                                |
 
-BQ1000 の所要時間は約7時間44分です。作者は、薄く乾いた器なら {{500 °F/h; 278 °C/h}} までの昇温で問題ないとしており、窯詰めした作品全体の温度をそろえるために、最後のステップを遅くしています。
+BQ1000 takes about 7 hours 44 minutes. Its author finds up to {{500 °F/h; 278 °C/h}} fine for thin, dry ware, and slows the last step to even out the temperature through the load.
 
-### コントローラーのコーンとオルトンの温度表
+### Controller cones and Orton's chart
 
-L&L と Bartlett のコントローラーは、オルトンコーン 04 に {{1926 °F; 1052 °C}}、コーン 06 に {{1819 °F; 993 °C}} を使います。オルトンの {{1945 °F; 1063 °C}} と {{1828 °F; 998 °C}} より少し低い値です。コーン 6 とコーン 10 では一致します。この違いは確認用コーンで決着をつけてください。確認用コーンとコントローラーが食い違うなら、コーンオフセットで補正します。
+L&L and Bartlett controllers use {{1926 °F; 1052 °C}} for cone 04 and {{1819 °F; 993 °C}} for cone 06, a little below Orton's {{1945 °F; 1063 °C}} and {{1828 °F; 998 °C}}; they agree at cone 6 and cone 10. Witness cones settle the difference: if they disagree with the controller, correct it with the cone offset.
 
-### 手動の窯の場合
+### On a manual kiln
 
-手動の窯でも、同じ計画を手で行います。蓋を少し開けて支え、のぞき穴を開けたままゆっくり乾かし、スイッチを弱から中、強へと段階的に上げ、キルンシッターで焼成を終えます。公開されている手順は、下の「手動の窯の詳細」にあります。
+A manual kiln follows the same plan by hand: dry slowly with the lid propped and the peepholes open, step the switches up from Low to Medium to High, and let the sitter end the firing. The published procedures are under Manual kilns in detail, below.
 
 ## 本焼き {#glaze}
 

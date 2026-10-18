@@ -22,58 +22,58 @@ lead: 유약을 사서 보관하고 계량해 섞는 방법, 알맞은 두께로
 > [!WARNING]
 > **마른 유약 가루는 분진 위험이 있습니다.** 결정형 유리규산은 마른 유약의 10~60%를 차지할 수 있으며, 영국 보건안전청(HSE)은 이 분진이 보통 조명에서는 보이지 않는다고 경고합니다. 낮은 높이에서 살살 퍼내고, 뚜껑을 닫아 두고, 가능한 한 빨리 가루를 물에 적시고, 청소는 젖은 상태로 하며 빗자루는 절대 쓰지 마세요. 가루가 마른 동안에는 얼굴에 밀착되는 방진마스크를 쓰세요(미국은 N95 또는 P100, 영국과 EU는 FFP2 또는 FFP3, 호주와 뉴질랜드는 P2 또는 P3). 분진, 방진마스크, 청소는 《[안전한 유약 배합과 환기](/guides/safe-mixing)》에서 자세히 다룹니다.
 
-## 원료 사기 {#buying-materials}
+## Buying materials {#buying-materials lang=en}
 
-### 구매처
+### Where to buy
 
-도예가는 점토, 유약 원료, 도구를 파는 도자기 재료 판매점에서 삽니다. 표는 사는 나라의 판매점 몇 곳을 보여 주며, 각각 판매점 자신의 사이트에서 확인했습니다. 다른 나라를 고르면 그 나라의 판매점을 볼 수 있습니다. 재고는 바뀌므로 주문하기 전에 확인하세요. Sibelco와 Imerys 같은 대형 생산업체는 산업체에 판매하며, 도예가는 이런 판매점을 통해 원료를 삽니다. 도자기 참고 사이트 Digitalfire는 다른 지역의 판매점 목록을 갖추고 있습니다.
+Potters buy from ceramic suppliers, which sell clay, glaze materials and tools. The table shows some for your country, each checked on the shop's own site, and you can choose another country to see its shops. Stock changes, so check before you order. Large producers such as Sibelco and Imerys sell to industry; potters buy their materials through shops like these. The ceramics reference site Digitalfire keeps a directory of supplier stores for other places.
 
 ::shops
 
-### 구매량
+### How much to buy
 
-표준 포대는 미국에서 **50 lb**(22.7 kg), 그 밖의 나라에서 **25 kg**(55 lb)이므로 둘은 거의 같습니다. 시험용으로 1, 2.5, 5 kg 포장(약 2.2, 5.5, 11 lb)을 파는 곳도 많습니다. 공개 레시피 데이터베이스 Glazy는 꾸준히 쓰는 원료(장석{{en: feldspar}}, 규석, 고령토{{en: kaolin}}, 석회석{{en: whiting}}, 중화도 소성용 프릿)를 포대째 사라고 권하며, 포대째 사면 흔히 20~30% 쌉니다. **발색제**, 즉 유약에 색을 내는 금속 산화물과 안료는 소량만 사세요. 대부분 5% 미만으로 쓰기 때문입니다. Glazy의 구매 목록 예시는 미국 가격으로 중화도가 약 $515, 고화도가 약 $397이었습니다.
+The standard sack is **50 lb (22.7 kg)** in the US and **25 kg (55 lb)** elsewhere, so the two are nearly the same. Many suppliers also sell 1, 2.5 or 5 kg packs (about 2.2, 5.5 or 11 lb) for tests. Glazy, the open recipe database, advises buying the materials you use steadily (feldspar, silica, kaolin, whiting, and frit for mid-fire) in full sacks, which are often 20 to 30% cheaper. Buy **colorants**, the metal oxides and stains that color a glaze, in small amounts: most are used at under 5%. Glazy's sample shopping lists came to about $515 for mid-fire and $397 for high-fire, at US prices.
 
-### 기본 원료 세트
+### A starter set
 
-Glazy의 핵심 목록은 어느 온도에서나 규석, 고령토, 장석, 석회석, 아연화, 그리고 백운석 또는 활석입니다. 중화도(오튼 콘 5~6) 유약 대부분은 붕소도 필요하며 보통 프릿에서 얻는데, Glazy는 이를 “천연 붕산염보다 일정하고 덜 녹는다”고 설명합니다. 아래 세트는 Glazy의 목록과 한 포럼의 목록을 바탕으로 한 저희의 제안입니다. 각 원료가 하는 일은 《[기초부터 배우는 유약](/guides/glazing-basics)》에서 설명합니다.
+Glazy's core list for any temperature is silica, kaolin, feldspar, whiting, zinc oxide, and dolomite or talc. Most mid-fire (cone 5 to 6) glazes also need boron, usually from a frit, which Glazy calls "consistent and less soluble than raw borates". The set below is our suggestion, drawn from Glazy's list and a forum list. The [glazing basics guide](/guides/glazing-basics) explains what each material does.
 
-Table: 기본 원료 세트(저희의 제안)
-Label: 기본 원료 세트
+Table: A starter set of materials (our suggestion)
+Label: Starter set
 
-| 원료                                   | 살 것                                                                        |
-| -------------------------------------- | ---------------------------------------------------------------------------- |
-| 규석(플린트라고도 부릅니다. 아래 참고) | 325메시, Glazy가 유약용으로 선호하는 더 고운 등급                            |
-| 고령토(영국에서는 china clay)          | 미국은 EPK, 영국은 Grolleg 또는 다른 china clay, 뉴질랜드는 NZ 고령토        |
-| 칼리장석                               | 사는 곳에서 현재 유통되는 것이면 무엇이든. 미국의 Mahavir 등                 |
-| 네플린사이나이트                       | 아무거나. Glazy는 융제 작용이 더 강해 저화도와 중화도에서 자주 쓴다고 합니다 |
-| 석회석                                 | 아무거나                                                                     |
-| 활석                                   | 아무거나                                                                     |
-| 중화도용 붕소 프릿                     | Ferro 3134, 3124 또는 3195. 영국에서는 Potterycrafts P3124 또는 P3195        |
-| 벤토나이트와 발색제                    | 소량                                                                         |
+| Material                              | What to buy                                                                      |
+| ------------------------------------- | -------------------------------------------------------------------------------- |
+| Silica (also called flint; see below) | 325 mesh, the finer grade Glazy prefers for glazes                               |
+| Kaolin (china clay in the UK)         | EPK in the US; Grolleg or another china clay in the UK; NZ kaolin in New Zealand |
+| Potash feldspar                       | Whichever is current where you live, such as Mahavir in the US                   |
+| Nepheline syenite                     | Any; Glazy notes its stronger fluxing power, often used at low and mid-fire      |
+| Whiting                               | Any                                                                              |
+| Talc                                  | Any asbestos-free grade; check its SDS (see Safe mixing)                         |
+| A boron frit, for mid-fire            | Ferro 3134, 3124 or 3195; in the UK, Potterycrafts P3124 or P3195                |
+| Bentonite and colorants               | Small amounts                                                                    |
 
-### 기술 자료와 물질안전보건자료
+### Data sheets and safety data sheets
 
-원료마다 문서를 두 가지 요청하세요. **기술 자료**(TDS)에는 **화학 분석값**, 즉 가루에 든 각 산화물의 중량 비율이 나옵니다. Glazecalc는 이 값을 바탕으로 계산하며, 공급업체의 분석값으로 [원료 페이지](/material)에서 원료를 추가할 수 있습니다. **물질안전보건자료**(MSDS)에는 원료 가루를 다루는 방법이 나옵니다. MSDS는 모두 보관하고, 섞기 전에 읽으세요.
+Ask for two documents for each material. A **technical data sheet** (TDS) gives its **chemical analysis**: the share of each oxide in the powder, by weight. Glazecalc works from these, and you can add a material from a supplier's analysis on the [Materials page](/material). A **safety data sheet** (SDS) says how to handle the raw powder. Keep each SDS, and read it before you mix.
 
-분석값은 평균일 뿐 보증이 아닙니다. Valentine Clays는 플린트 기술 자료에 “MEAN VALUES. THESE DO NOT REPRESENT A SPECIFICATION”(평균값입니다. 이 값은 규격을 의미하지 않습니다)이라고 적어 두었고, Glazy에 실린 Custer 장석 분석값은 연도에 따라 실리카가 약 68.5%에서 72.4%까지 다릅니다. 저희는 포대마다 **로트 번호**(제조 묶음 코드)를 기록에 적어 두기를 권합니다. 그러면 믿던 유약이 달라졌을 때 원료 때문인지 알 수 있습니다.
+Analyses are averages, not promises. Valentine Clays prints "MEAN VALUES. THESE DO NOT REPRESENT A SPECIFICATION" on its flint data sheet, and Glazy's analyses of Custer feldspar from different years run from about 68.5% to 72.4% silica. We suggest writing each sack's **lot number** (its batch code) in your records, so you can tell whether a change in a trusted glaze came from the material.
 
-HSE는 결정형 유리규산이 “‘비정질 실리카’로 잘못 표시될 수 있다”고 경고합니다. 또 MSDS는 기물이 아니라 가루에 관한 문서이므로, 소성한 유약이 식품에 안전한지는 전혀 알려 주지 않습니다. 그것을 보여 줄 수 있는 것은 소성한 기물의 실험실 **용출시험**{{en: leach test}}뿐입니다.
+HSE warns that crystalline silica "can be wrongly labelled as 'amorphous silica'". And an SDS is about the powder, not the pot: it says nothing about whether a fired glaze is safe for food. Only a laboratory leach test of the fired pot can show that.
 
-### 이름은 바뀌므로 성분을 보고 사기
+### Names change, so buy by chemistry
 
-광산이 문을 닫으면 상표 이름도 나타났다 사라집니다. 사우스다코타에서 75년 넘게 채굴한 Custer 장석은 2023년 말에 바닥났습니다. Clay Art Center가 G-200 AU와 Mahavir로 바꾸자 유약의 약 절반을 조정해야 했습니다. G-200과 G-200 HP도 없어졌으며, 지금은 Laguna가 G-200과 성분이 비슷한 Mahavir 장석을 수입합니다.
+Brand names come and go as mines close. Custer feldspar, mined in South Dakota for more than 75 years, ran out in late 2023. When Clay Art Center switched to G-200 AU and Mahavir, about half its glazes needed adjusting. G-200 and G-200 HP are gone too, and Laguna now imports Mahavir, whose chemistry is close to G-200.
 
-많은 옛 레시피에 든 천연 붕소 광물 **Gerstley Borate**(저슬리보레이트)는 광산이 2000년에 문을 닫은 뒤로 구하기 어렵지만, New Mexico Clay는 2025년 11월에 Laguna가 “Gerstley Borate Original”을 공급하고 있다고 전했습니다. **Gillespie Borate**를 대체품으로 쓸 수 있는지는 자료마다 다릅니다. 제조사는 같은 무게로 바꿔 쓸 수 있는 제품으로 판매합니다. Berkeley Potters Studio는 이것이 “직접적인 대체품이 아니다”라고 하고, Digitalfire는 유약의 색이 바뀌는 것을 확인했습니다. 안전한 방법은 두 원료를 산화물로 비교한 다음 시험하는 것입니다.
+**Gerstley Borate**, a natural boron mineral in many older recipes, has been scarce since its mine closed in 2000, though New Mexico Clay reported in November 2025 that Laguna was supplying "Gerstley Borate Original". Sources disagree about **Gillespie Borate** as a replacement. Its maker sells it as pound-for-pound. Berkeley Potters Studio says it "is not a direct substitute", and Digitalfire found it changed a glaze's color. The safe course is to compare the two by their oxides, then test.
 
-지역마다 이름도 다릅니다. 북미에서는 **플린트**{{en: flint}}, 석영, 규석이 모두 같은 곱게 간 규석을 뜻하며, Digitalfire는 판매점에서 진짜 플린트 가루는 아마 찾지 못할 것이라고 합니다. 영국에서 플린트는 별도의 제품이며, Valentine의 제품은 하소한(가열한) 규석입니다. 둘 다 거의 순수한 규석이므로 비슷할 것으로 예상하지만, 분석값을 확인하세요. 고령토는 EPK를 china clay로 바꾸는 것처럼 같은 양으로 바꾸면 “특히 양이 \<10%일 때 많은 경우 아무 문제 없다”고 Glazy는 말합니다.
+Regional names differ too. In North America, **flint**, quartz and silica mean the same ground silica, and Digitalfire says you probably won't find true flint powder from suppliers. In the UK, flint is its own product: Valentine's is calcined (heated) silica. Both are nearly pure silica, so we expect them to be close, but check the analysis. For kaolin, Glazy says one-for-one swaps, such as EPK for a china clay, "often work just fine, especially when amounts are \<10%".
 
-많은 레시피에는 한 나라에서만 팔고 다른 나라에서는 팔지 않는 원료가 나옵니다. 아래 표는 Glazecalc 라이브러리의 원료 중 사는 곳에서 팔지 않는 것마다, 분석값으로 볼 때 같은 종류에서 가장 가까운 원료를 찾아 보여 줍니다. 숫자는 두 원료가 얼마나 다른지를 나타냅니다. 원료 100 g당 소성 후 산화물의 차이를 그램으로 나타내 모든 산화물에 걸쳐 합한 값입니다. 약 15 g 이내이면 첫 시험에서는 대개 한쪽이 다른 쪽을 대신할 수 있습니다. 이름에는 제조사와 판매점의 고유 코드가 붙어 있어 이름으로 요청할 수 있습니다.
+Many recipes name materials that are sold in one country and not another. The table below takes each material in Glazecalc's library that is not sold where you buy, and finds the closest of its kind that is, by their analyses. The figure is how far apart the two are: the grams by which their fired oxides differ, per 100 g of material, added up over every oxide. Within about 15 g, one can usually stand in for the other in a first test. The names carry the makers' and shops' own codes, so you can ask for them by name.
 
 ::local-equivalents
 
 > [!NOTE]
-> Glazecalc는 이름이 아니라 원료가 소성 후 유약에 더하는 성분으로 원료를 비교합니다. 더 이상 만들지 않는 원료가 든 [레시피](/recipe)는 지금 쓰는 원료가 무엇인지 알려 줍니다. **양 제안 후 비교**는 대체 원료의 양을 다시 계산하고, **가진 원료로 맞추기**는 가진 원료로 레시피를 다시 만듭니다. 둘 다 소성 후 산화물만 맞추므로, 먼저 소량으로 시험하세요.
+> Glazecalc compares materials by what they bring to the fired glaze, not by name. A [recipe](/recipe) with a material no longer made says what is used now. **Suggest amounts and compare** works the amounts out again for a substitute, and **Match with what I have** makes the recipe again from the materials on your shelf. Both match the fired oxides only, so test a small batch first.
 
 ## 원료와 유약 보관 {#storing}
 
@@ -163,55 +163,55 @@ Label: 체 메시
 | 코발트나 철 같은 발색제가 든 유약 | 100~120메시    |
 | 회유와 거친 원료가 든 다른 유약   | 60~80메시      |
 
-## 비중 {#specific-gravity}
+## Specific gravity {#specific-gravity lang=en}
 
-**비중**{{en: specific gravity}}(SG)은 유약물에 가루가 얼마나 들어 있는지를 알려 줍니다. 어떤 부피의 유약 무게를 같은 부피의 물의 무게로 나눈 값입니다. 물은 1.00이고, {{SG 1.45}}인 유약은 100 mL의 무게가 145 g입니다. 잰 비중에 맞춰 섞으면 매번 같은 걸쭉함과 같은 유약층을 얻을 수 있습니다. 비중에는 단위가 없으므로 그램으로 재든 온스로 재든 같습니다.
+**Specific gravity** (SG) tells you how much powder is in your slurry. It is the weight of a volume of glaze divided by the weight of the same volume of water. Water is 1.00, and a glaze at {{SG 1.45}} weighs 145 g per 100 mL. Mixing to a measured SG is how you get the same thickness, and the same coat, every time. It has no units, so it is the same in grams or ounces.
 
-### 100 mL의 무게로 재기
+### Measure it by weighing 100 mL
 
-1. 유약을 저어서 가라앉은 것이 없게 하세요.
-2. 100 mL **눈금 실린더**(눈금이 있는 길쭉한 계량 관) 또는 100 mL 주사기를 저울에 올리고 영점을 맞추세요.
-3. 유약을 정확히 100 mL까지 채우세요. 눈금은 눈높이에서 읽습니다.
-4. 무게를 재고 그램 값을 100으로 나눕니다. 145 g이면 비중 1.45입니다.
+1. Stir the glaze so nothing has settled.
+2. Put a 100 mL **graduated cylinder** (a tall, marked measuring tube) or a 100 mL syringe on the scale, and tare it.
+3. Fill it with glaze to exactly 100 mL, reading the mark at eye level.
+4. Weigh it and divide the grams by 100: 145 g is SG 1.45.
 
-Digitalfire는 컵에 물 500 g이 들어가는 높이를 표시해 두고, 그 표시까지 유약을 채워 무게를 500으로 나누기도 합니다. 더 크고 가득 채운 용기가 더 정확합니다. **비중계**는 유약에 띄워 떠 있는 위치를 읽는 부표로, 빠르지만 걸쭉하거나 젤 상태인 유약은 잘못 읽을 수 있습니다. Potclays 같은 영국의 비중계는 보메도(°Bé)로 읽습니다. 저희 계산으로는 비중 = 145 ÷ (145 − °Bé)이므로 46 °Bé는 약 1.46입니다. 영국의 옛 책에는 **파인트 무게**, 즉 영국 파인트의 유약에 든 온스 수가 나옵니다. 이를 20으로 나누면 되며, 29 oz는 약 비중 1.45입니다(이것도 저희 계산입니다).
+Digitalfire also marks a cup at the level of 500 g of water, fills it to the mark with glaze, and divides the weight by 500; a bigger, fuller measure is more accurate. A **hydrometer**, a float read where it sits in the glaze, is quick but can misread thick or gelled glazes. UK hydrometers, such as Potclays', read in degrees Baumé (°Bé). By our arithmetic, SG = 145 ÷ (145 − °Bé), so 46 °Bé is about 1.46. Older UK books give a **pint weight**, the ounces in an imperial pint of glaze: divide it by 20, so 29 oz is about SG 1.45 (also our arithmetic).
 
-### 목표로 삼을 비중
+### What to aim for
 
-자료마다 다르며, 특히 붓 시유와 분무 시유에서 크게 다릅니다. 영국 공급업체 Potclays는 훨씬 높은 수치를 제시합니다(Potclays 자신의 수치는 “참고용일 뿐”입니다). 모든 숫자를 시작점으로 여기세요. Digitalfire의 핵심 조언은 유약마다 맞는 비중과 젤 상태를 찾은 다음 그것을 반복하고 기록하라는 것입니다.
+Sources disagree, most of all on brushing and spraying, where the UK supplier Potclays gives much higher figures (its own are "for guidance only"). Treat every number as a starting point. Digitalfire's core advice is to find the SG and gelling that work for each glaze, then repeat them and write them down.
 
-Table: 비중 목표, 자료마다 다른 값
-Label: 비중 목표
+Table: Specific gravity targets, where sources disagree
+Label: Specific gravity targets
 
-| 용도      | Digitalfire와 Glazy                                                                                                                             | Potclays(영국)                               | 안전한 시작점                                                           |
-| --------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------- | ----------------------------------------------------------------------- |
-| 덤벙 시유 | {{SG 1.40}}(5초 담그기)에서 {{SG 1.50}}(1초 담그기)까지. 집에서 섞어 젤 상태로 만든 유약은 {{SG 1.43–1.45}}에서 가장 잘 맞습니다                | 투명유 {{SG 1.46–1.48}}, 색 유약 {{SG 1.61}} | {{SG 1.45}}. 뚝뚝 떨어지면 {{SG 1.43}}까지 묽게 하고 젤 상태로 만드세요 |
-| 붓 시유   | {{SG 1.25}}(묽은 투명유)에서 {{SG 1.55}}(진한 세부 표현)까지                                                                                    | {{SG 1.71–1.81}}                             | 제품의 지시를 따르세요. CMC 바인더나 붓 시유용 미디엄을 쓰세요          |
-| 분무 시유 | 수치 없음. Ceramic Arts Network에 글을 쓴 Hopper는 훨씬 묽게 하고 해교제{{en: deflocculant}}(유약물을 더 잘 흐르게 하는 첨가제)를 쓴다고 합니다 | {{SG 1.71}}                                  | 믿을 만한 수치 없음. 스프레이 부스에서만 분무하세요                     |
+| Use      | Digitalfire and Glazy                                                                                                                 | Potclays (UK)                               | Safe starting point                                     |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------- |
+| Dipping  | {{SG 1.40}} (for a 5-second dip) to {{SG 1.50}} (for a 1-second dip); home-mixed glazes that are gelled do best at {{SG 1.43–1.45}}   | Clear {{SG 1.46–1.48}}; colored {{SG 1.61}} | {{SG 1.45}}; thin to {{SG 1.43}} and gel it if it drips |
+| Brushing | {{SG 1.25}} (thin clear) to {{SG 1.55}} (dark detail)                                                                                 | {{SG 1.71–1.81}}                            | Follow the product; use CMC gum or a brushing medium    |
+| Spraying | No figure; Hopper, writing for Ceramic Arts Network, says much thinner, with a deflocculant (an additive that makes a slurry runnier) | {{SG 1.71}}                                 | No reliable number; spray only in a spray booth         |
 
-덤벙 시유 유약을 눈으로 확인하려면, AMACO는 5초 동안 담근 뒤 미국 다임 동전 두께쯤 되는 유약층이 생겼는지 봅니다. Digitalfire는 5초 담근 시편을 구워서 확인합니다.
+To check a dipping glaze by eye, AMACO dips for 5 seconds and looks for a coat about as thick as a US dime. Digitalfire fires tiles dipped for 5 seconds to check.
 
-### 목표 비중에 맞는 물의 양: 저희의 추정
+### Water for a target SG: our estimate
 
-아래 표는 어느 자료의 것이 아니라 저희가 직접 계산한 값입니다. 가루 입자의 밀도를 cm³당 2.6 g으로 가정했으며, 이는 측정값이 아니라 가정입니다. 점토, 수용성 원료, 젤 상태는 모두 실제 유약을 바꾸므로, 시작점으로만 쓰고 그다음에 재세요. 확인 삼아 보면, 가루와 물을 같은 무게로 섞을 때 {{SG 1.44}}로 예측하는데, 이는 Digitalfire가 측정한 {{SG 1.46}}과 가깝습니다. 또한 100 g당 70~80 mL로 시작하면 {{SG 1.50}}보다 높은 값에서 출발하게 되며, 필요한 것보다 걸쭉하다는 것도 보여 줍니다.
+The table below is our own arithmetic, not a source's. It assumes the powder's particles have a density of 2.6 g per cm³, which is an assumption, not a measurement. Clay, soluble materials and gelling all change a real glaze, so use it to start, then measure. As a check, it predicts {{SG 1.44}} for equal weights of powder and water, close to Digitalfire's measured {{SG 1.46}}. It also shows that 70 to 80 mL per 100 g starts you above {{SG 1.50}}, thicker than you need.
 
-Table: 목표 비중에 맞는 물의 양(저희의 추정)
-Label: 목표 비중에 맞는 물의 양
+Table: Water for a target specific gravity (our estimate)
+Label: Water for a target specific gravity
 
-| 목표        | 가루 100 g당 | 킬로그램당 |       파운드당 |
-| ----------- | -----------: | ---------: | -------------: |
-| {{SG 1.40}} |    약 115 mL | 약 1150 mL | 약 18 US fl oz |
-| {{SG 1.45}} |     약 98 mL |  약 980 mL | 약 15 US fl oz |
-| {{SG 1.50}} |     약 85 mL |  약 850 mL | 약 13 US fl oz |
-| {{SG 1.60}} |     약 64 mL |  약 640 mL | 약 10 US fl oz |
+| Target      | Per 100 g of powder |  Per kilogram |         Per pound |
+| ----------- | ------------------: | ------------: | ----------------: |
+| {{SG 1.40}} |        about 115 mL | about 1150 mL | about 18 US fl oz |
+| {{SG 1.45}} |         about 98 mL |  about 980 mL | about 15 US fl oz |
+| {{SG 1.50}} |         about 85 mL |  about 850 mL | about 13 US fl oz |
+| {{SG 1.60}} |         about 64 mL |  about 640 mL | about 10 US fl oz |
 
-### 황산마그네슘, CMC, 벤토나이트
+### Epsom salts, CMC gum and bentonite
 
-**황산마그네슘**(엡섬염)은 유약이 가만히 있으면 살짝 젤처럼 굳고 저으면 다시 흐르게 합니다. 이를 **응집시킨다**{{en: flocculate}}고 하며, 이렇게 움직이는 유약은 **틱소트로피**{{en: thixotropic}}(요변성)가 있는 유약입니다. 이런 유약은 더 고르게 발리고, 덜 흘러내리고, 덜 가라앉습니다. Digitalfire는 비중이 맞은 뒤에 갤런당 약 2 g으로 시작하고(리터당 약 0.5 g, 저희의 환산) 배합할 때마다 양을 조정하라고 제안합니다. 어떤 레시피도 투입량을 고정하지 않는 것이 좋기 때문입니다. 저희는 먼저 소량의 뜨거운 물에 녹이기를 권합니다. Digitalfire의 한 예에서는 {{SG 1.45}}인 유약이 뚝뚝 흘러서 물로 {{SG 1.43}}까지 낮추고 엡섬염으로 다시 크림처럼 젤 상태로 만들었더니 고르게 발렸습니다. 대략 확인하는 방법은 젓고, 멈추고, 지켜보는 것입니다. 젤 상태의 유약은 약 2~3초 동안 계속 움직이다가 멈추고 조금 되튑니다.
+**Epsom salts** make a glaze gel slightly when it stands still and flow again when it is stirred. This is called **flocculating** it, and a glaze that behaves this way is **thixotropic**: it goes on more evenly, drips less and settles less. Digitalfire suggests starting at about 2 g per gallon once the SG is right (roughly 0.5 g per liter, our conversion) and tuning the amount each time you mix, since no recipe should fix the dose. We suggest dissolving it in a little hot water first. In a Digitalfire example, a glaze at {{SG 1.45}} dripped, so water brought it down to {{SG 1.43}} and Epsom salts gelled it back to creamy, and it went on evenly. A rough check: stir, stop and watch. A gelled glaze moves on for about 2 or 3 seconds, then stops and springs back a little.
 
-**CMC**(카복시메틸셀룰로스) 바인더는 유약물을 더 끈적하고 더디게 마르게 하며, 기물에 달라붙는 더 단단한 유약층을 남깁니다. 붓 시유용 유약과 프릿이 많은 유약에서 특히 중요합니다. Digitalfire의 예는 유약물 1000 g에 3.75 g을 섞는 것이며, 믹서로 넣어야 합니다. CMC가 든 유약은 엡섬염으로 젤 상태가 되지 않으며, 미생물이 이 바인더를 먹고 살기 때문에 통 안에서 변하거나 냄새가 나기 시작할 수 있습니다.
+**CMC gum** (carboxymethyl cellulose) makes a slurry stickier and slower to dry, and leaves a harder coat that holds to the pot. It matters most for brushing glazes and glazes high in frit. Digitalfire's example blends 3.75 g into 1000 g of slurry, and it has to go in with a blender. A glaze with CMC will not gel with Epsom salts, and since microbes feed on the gum, it can change in the bucket and start to smell.
 
-**벤토나이트**는 아주 고운 점토로, 다른 입자가 가라앉지 않고 떠 있도록 도와줍니다. 덤벙 시유 유약은 보통 이를 위해 15~25%의 하소하지 않은 점토에 의지합니다. 점토가 부족한 레시피에는 벤토나이트 약 1~2%가 도움이 됩니다.
+**Bentonite**, a very fine clay, helps hold the other particles in suspension. Dipping glazes usually rely on 15 to 25% raw clay for this. For a recipe short of clay, about 1 to 3% bentonite helps; Digitalfire says a glaze with more than 15% clay should not need more than 1%.
 
 ## 시편과 라인 블렌드 {#testing}
 
@@ -276,7 +276,7 @@ Label: 기록 양식
 > [!NOTE]
 > Glazecalc에서 저장한 [레시피](/recipe)에는 레시피 자체가 들어갑니다. [소성 기록](/firing)은 가마, 날짜, 시간, 온도, 콘, 메모 등 소성마다 기록합니다. [노트](/notes)에는 위의 배합 기록이나 시편마다 나타난 결과처럼 나머지 모든 것을 적습니다.
 
-## 출처 {#sources}
+## Sources {#sources lang=en}
 
 - [Glazy: Raw materials](https://help.glazy.org/concepts/materials)
 - [Glazy: Specific gravity](https://help.glazy.org/testing/specific-gravity)
@@ -284,12 +284,13 @@ Label: 기록 양식
 - [Digitalfire: Epsom salts](https://digitalfire.com/material/epsom+salts)
 - [Digitalfire: CMC gum](https://digitalfire.com/material/cmc%2Bgum)
 - [Digitalfire: Dipping glaze](https://digitalfire.com/glossary/dipping+glaze)
+- [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Water solubility](https://digitalfire.com/glossary/water+solubility)
 - [Digitalfire: Gerstley Borate](https://digitalfire.com/material/gerstley+borate)
 - [Digitalfire: Mahavir potash feldspar](https://digitalfire.com/material/mahavir+potash+feldspar)
 - [Digitalfire: Flint](https://digitalfire.com/material/flint)
 - [Clay Art Center: The end of an era, the extinction of Custer feldspar](https://www.clayartcenter.org/clay-art-center-blog/2025/4/the-end-of-an-era-the-extinction-of-custer-feldspar)
-- [Berkeley Potters Studio: What the flux, 2023년 11월](https://www.berkeleypottersstudio.com/what-the-flux-nov-2023)
+- [Berkeley Potters Studio: What the flux, November 2023](https://www.berkeleypottersstudio.com/what-the-flux-nov-2023)
 - [New Mexico Clay: Gerstley Borate Original](https://nmclay.com/gerstley-borate-original)
 - [Ceramic Arts Network: Glaze chemistry 101, a quick course on mixing ceramic glazes (Zakin)](https://ceramicartsnetwork.org/daily/article/Glaze-Chemistry-101-A-Quick-Course-on-Mixing-Ceramic-Glazes)
 - [Ceramic Arts Network: How to keep good records when testing ceramic glazes (Willers)](<https://ceramicartsnetwork.org/daily/article/how-to-keep-good-records-when-testing-ceramic-glazes-(and-improve-your-results!)>)

@@ -30,34 +30,34 @@ lead: 아이나 반려동물이 유약 원료를 삼켰을 때 할 일, 그리�
 
 병원에 가게 되면, 안전하게 할 수 있는 경우 포장이나 샘플을 가져가라고 NHS는 말합니다. 유약 원료라면 포대의 라벨이나 물질안전보건자료가 그것입니다.
 
-## 삼키면 가장 위험한 것 {#most-dangerous}
+## What is most dangerous to swallow {#most-dangerous lang=en}
 
-유약 원료는 서로 다른 두 가지 방식으로 가족에게 해를 끼칠 수 있습니다.
+Glaze materials can harm a family in two different ways:
 
-- **급성** 위험(한 번 먹은 양으로 몇 시간 안에 생기는 해)은 **수용성** 원료, 곧 물이나 위산에 녹는 원료를 삼키는 것입니다. 잠가 두는 보관과 위의 전화번호로 대비합니다.
-- **만성** 위험(적은 양을 여러 번 먹어서 생기는 해)은 분진, 주로 실리카{{en: silica}}와 납입니다. 처음에는 아무 증상이 없고, 옷에 묻어 집으로 옮겨 옵니다. 깨끗한 작업 습관으로 대비합니다.
+- The **acute** danger (harm from one dose, within hours) is swallowing a **soluble** material, one that dissolves in water or stomach acid. Locked storage and the numbers above deal with it.
+- The **chronic** danger (harm from many small doses) is dust, mainly silica and lead, which causes no symptoms at first and travels home on clothes. Clean habits deal with it.
 
-유약의 대부분은 규석, 고령토{{en: kaolin}}, 장석이며, 이들은 거의 녹지 않습니다. 저희는 이들을 삼켰을 때의 응급 상황보다는 오랜 기간에 걸친 호흡 위험으로 봅니다. 가장 먼저 잠가 둘 것은 아래의 수용성 원료입니다.
+Most of a glaze is silica, kaolin and feldspar, which barely dissolve. We treat them as a long-term breathing hazard rather than a swallowing emergency. The soluble materials below are the ones to lock away first.
 
-Table: 수용성 유약 원료: 삼켰을 때 일어나는 일
-Label: 수용성 원료
+Table: Soluble glaze materials: what they do if swallowed
+Label: Soluble materials
 
-| 원료               | 일어나는 일                                                                                                                                                                                                                                                                | 보고된 양                                                                                                                                                                                                                                                                                                          |
-| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 탄산바륨           | 한때 쥐약으로 팔렸습니다. 물에는 거의 녹지 않지만 산에는 녹으므로, 삼킨 뒤에는 수용성으로 취급하세요. 바륨은 혈액 속 칼륨을 떨어뜨려 구토, 설사, 근력 저하를 일으키며, 이는 마비, 호흡 부전, 불규칙한 심장 박동으로 진행할 수 있습니다. 증상은 보통 2시간 안에 시작됩니다. | 자료마다 다릅니다. 2025년의 한 의학 리뷰는 수용성 바륨염인 염화바륨으로 0.8~0.9 g이라는 적은 양에서도 사망한 사례를 보고합니다. 한 응급의학 참고 자료는 바륨염의 치사량 범위를 1~30 g으로 제시하며, 약 200 mg부터 해가 생길 수 있다고 합니다. 아이에 대한 수치를 제시한 자료는 없으므로, 양에 관계없이 전화하세요. |
-| 붕사와 붕산        | 먼저 메스꺼움, 구토, 설사, 복통이 나타나며, 토사물과 대변이 청록색을 띨 수 있습니다. 심하면 나중에 벗겨지는 선홍색 발진, 발작, 신장 손상, 쇼크가 옵니다.                                                                                                                   | 대략적인 최소 치사량: 영아 2~3 g, 어린이 5~6 g. 삼킨 사례 784건을 다룬 한 리뷰에서는 12%만 증상이 나타났고 사망은 없었지만, 사망 사례는 실제로 있으며 해독제는 없습니다.                                                                                                                                           |
-| 탄산리튬           | 300 mg을 삼킨 체중 15 kg(33 lb)의 아이에게 불수의적인 근육 경련과 과도한 반사(급성 근긴장이상과 반사항진)가 잠시 나타났다가 사라졌습니다.                                                                                                                                  | 어린아이에 관한 자료는 거의 없습니다. 300 mg은 가루 한 숟가락보다 훨씬 적은 양입니다.                                                                                                                                                                                                                              |
-| 탄산나트륨(소다회) | 물에 잘 녹습니다. 아이에게 어떤 영향을 주는지 믿을 만한 수치는 찾지 못했습니다.                                                                                                                                                                                            | 찾지 못했습니다. 양에 관계없이 전화하세요.                                                                                                                                                                                                                                                                         |
-| 중크롬산칼륨       | 일부 레시피에 쓰이는 크롬 발색제입니다. 그 물질안전보건자료는 “삼키면 치명적일 수 있음”이라고 경고하며, 소화관에 화상을 일으킨다는 것과 신장을 손상시킬 수 있다는 것도 적고 있습니다.                                                                                      | 확립되지 않았으며, 독성이 얼마나 강한지에 대해 물질안전보건자료마다 말이 다릅니다.                                                                                                                                                                                                                                 |
+| Material                    | What it does                                                                                                                                                                                                                                                                                                                                 | Reported doses                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Barium carbonate            | Once sold as rat poison. It barely dissolves in water but does dissolve in acid, so treat it as soluble once swallowed. Barium drives down the potassium in the blood, causing vomiting, diarrhea and muscle weakness that can progress to paralysis, breathing failure and an irregular heartbeat. Symptoms typically begin within 2 hours. | Sources disagree. A WHO review estimates the lethal dose of barium absorbed from the gut at 3 to 4 g in untreated cases, with toxic effects from 0.2 to 0.5 g, and lists a lowest reported lethal dose of barium chloride, a soluble barium salt, of 11.4 mg per kg of body weight. An emergency-medicine reference gives a lethal range of 1 to 30 g for barium salts, with harm possibly from about 200 mg. None gives a figure for children, so call for any amount. |
+| Borax and boric acid        | Nausea, vomiting, diarrhea and stomach pain come first; vomit and stool may be blue-green. Severe cases bring a bright red rash that later peels, seizures, kidney injury and shock.                                                                                                                                                         | Rough lowest lethal doses: 2 to 3 g for an infant, 5 to 6 g for a child. In one review of 784 swallowings, only 12% caused symptoms and none were fatal, but deaths do happen, and there is no antidote.                                                                                                                                                                                                                                                                |
+| Lithium carbonate           | A child weighing 15 kg (33 lb) who swallowed 300 mg had a short spell of involuntary muscle spasms and overactive reflexes (acute dystonia and hyperreflexia), which passed.                                                                                                                                                                 | Little has been written about young children. 300 mg is far less than a spoonful of powder.                                                                                                                                                                                                                                                                                                                                                                             |
+| Soda ash (sodium carbonate) | Dissolves readily in water. We found no reliable figures for what it does to a child.                                                                                                                                                                                                                                                        | None found. Call for any amount.                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| Potassium dichromate        | A chrome colorant used in some recipes. Fisher Scientific's safety data sheet warns that it "May be fatal if swallowed", causes burns in the gut and may damage the kidneys. The same sheet warns that it "May be fatal if inhaled" and may cause cancer, and of a "possible risk of harm to the unborn child".                              | Not established, and safety data sheets disagree on how toxic it is.                                                                                                                                                                                                                                                                                                                                                                                                    |
 
 > [!NOTE]
-> 이렇게 해로운 양은 몇백 밀리그램에서 몇 그램 사이입니다. 유약 원료는 파운드나 킬로그램 단위로 팔리므로, 열린 포대나 통 하나에는 걸음마를 하는 아이를 해치고도 훨씬 남을 만큼의 양이 들어 있습니다.
+> These harmful amounts run from a few hundred milligrams to a few grams. Glaze materials are sold by the pound or kilogram, so one open bag or bucket holds far more than enough to harm a toddler.
 
-### 발색제와 납
+### Colorants and lead
 
-**발색제**{{en: colorants}}는 유약에 색을 내는 금속 산화물과 안료{{en: stains}}입니다. 동, 코발트, 크롬, 망간, 니켈, 카드뮴·셀레늄 안료 등이 있습니다. 한 대학의 도예 안전 페이지는 특히 위험한 유약 성분으로 납, 카드뮴, 코발트, 크롬을 꼽습니다. 어떤 발색제에 대해서도 믿을 만한 용량 수치를 찾지 못했으므로, 양에 관계없이 전화하세요. 섞어 둔 유약 한 통에는 그 유약을 만든 포대 속 원료가 그대로, 젖은 상태로 들어 있습니다.
+**Colorants** are the metal oxides and stains that give a glaze its color: copper, cobalt, chrome, manganese, nickel, cadmium-selenium stains and others. A university ceramics safety page names lead, cadmium, cobalt and chromium among the especially hazardous glaze ingredients. We found no reliable dose figures for any colorant, so call for any amount. A bucket of mixed glaze holds the same materials as the bags it came from, only wet.
 
-납의 주된 위험은 다릅니다. 한 숟가락이 아니라, 몇 주나 몇 달에 걸쳐 조금씩 삼킨 분진이며, 경고 신호가 전혀 없습니다(아래 “납과 아이” 참조).
+Lead's main danger is different: not one spoonful, but small amounts of dust swallowed over weeks or months, with no warning signs (see Lead and children, below).
 
 ## 집에서 원료 보관하기 {#storing-materials}
 
@@ -220,7 +220,7 @@ Rio Grande는 제대로 접지된 콘센트가 있는 **전용 회로**(다른 �
 
 유약이 녹는 원리, 일부 유약이 용출되는 이유, 기준이 뜻하는 바는 《[기초부터 배우는 유약](/guides/glazing-basics)》을 보세요.
 
-## 출처 {#sources}
+## Sources {#sources lang=en}
 
 - [America's Poison Centers: Poison Help](https://poisoncenters.org/)
 - [Poison Control (poison.org): webPOISONCONTROL](https://www.poison.org/)
@@ -234,7 +234,9 @@ Rio Grande는 제대로 접지된 콘센트가 있는 **전용 회로**(다른 �
 - [Pet Poison Helpline](https://www.petpoisonhelpline.com/)
 - [Animal PoisonLine (UK)](https://www.animalpoisonline.co.uk/)
 - [Animal Poisons Helpline (Australia and New Zealand)](https://animalpoisons.com.au/)
-- [PubMed Central: Acute soluble barium poisoning, a review (2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC11700400)
+- [PubMed Central: Non-fatal acute barium carbonate poisoning, a case report (2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC11700400)
+- [WHO IPCS: Environmental Health Criteria 107, Barium (1990)](https://www.inchem.org/documents/ehc/ehc/ehc107.htm)
+- [Fisher Scientific: Potassium dichromate safety data sheet (2007)](https://fscimage.fishersci.com/msds/19370.htm)
 - [WikEM: Boron toxicity](https://wikem.org/wiki/Boron_toxicity)
 - [NPIC and US EPA: Recognition and Management of Pesticide Poisonings, chapter 9 (PDF)](https://www.npic.orst.edu/RMPP/rmpp_ch9.pdf)
 - [medlibrary.org: Lithium carbonate prescribing information](https://medlibrary.org/lib/rx/meds/lithium-carbonate-16/page/2/)

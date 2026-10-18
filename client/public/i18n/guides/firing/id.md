@@ -370,83 +370,83 @@ Kerucut berdiri sendiri Orton dijual di Jepang dengan nama tatsu zeegeru ("Seger
 
 :::
 
-## Pembakaran biskuit {#bisque}
+## Bisque firing {#bisque lang=en}
 
-Pembakaran **biskuit**{{en: bisque}} (biscuit di Inggris) adalah pembakaran pertama yang lebih rendah yang mengubah tanah liat kering menjadi benda keras dan berpori yang siap diglasir. Biasanya dibakar sampai kerucut 06–04, {{1828–1945 °F; 998–1063 °C}} pada tabel Orton; pembuat keramik Inggris sering membakar sekitar {{1000 °C; 1832 °F}}, mendekati kerucut 06. Biskuit sebaiknya tetap berpori, "umumnya lebih dari 15%" (Digitalfire), sehingga menyerap air dari glasir. Biskuit yang terlalu lunak menerima glasir terlalu tebal, yang kemudian retak dan **menggumpal** (menarik diri menjadi pulau-pulau, menyisakan tanah liat kosong). Biskuit yang kurang bakar juga "terus menyusut selama pembakaran glasir", yang merusak kecocokan glasir. Pemuatan longgar: benda boleh bersentuhan, tutup dapat dibakar di atas wadahnya, dan mangkuk disusun tepi ke tepi, bukan ditumpuk.
+The **bisque** firing (biscuit in the UK) is the first, lower firing that turns dry clay into hard, porous ware ready to glaze. It is usually fired to cone 06–04, {{1828–1945 °F; 998–1063 °C}} on Orton's chart; UK potters often fire to around {{1000 °C; 1832 °F}}, near cone 06. The bisque should stay porous, "generally more than 15%" (Digitalfire), so it soaks water out of the glaze. Too soft a bisque takes glaze on too thick, which then cracks and **crawls** (pulls back into islands, leaving bare clay). Under-fired bisque also "continues to shrink during glaze firing", which spoils the glaze fit. Loading is forgiving: pieces may touch, lids can be fired on their pots, and bowls go rim to rim rather than nested.
 
-### Mengapa bagian awal berjalan lambat
+### Why the early part goes slowly
 
-Air yang menjadi uap "mengembang 1.170 kali", catat Bracker's, jadi benda yang lembap harus dikeringkan perlahan. L&L dan Orton menyarankan bahwa "Perhatian khusus sebaiknya diberikan di bawah 1500°F (815°C) untuk memanaskan bodi secara merata", dan bahwa karbon harus terbakar habis sebelum sekitar {{1200 °F; 650 °C}}. Di atas {{1500 °F; 816 °C}} tungku dapat naik lebih cepat.
+Water expands more than a thousandfold as it turns to steam, so damp ware has to be dried slowly. L&L and Orton advise that "Special care should be taken below 1500°F (815°C) to heat the body evenly", and that carbon must be burned out before about {{1200 °F; 650 °C}}. Above {{1500 °F; 816 °C}} the kiln can climb faster.
 
-Table: Apa yang terjadi saat biskuit dipanaskan
-Label: Apa yang terjadi pada biskuit
+Table: What happens as a bisque heats
+Label: What happens in a bisque
 
-|                                Suhu | Yang terjadi                                                               |
-| ----------------------------------: | -------------------------------------------------------------------------- |
-|          {{300–500 °F; 149–260 °C}} | Pengikat terbakar habis                                                    |
-|          Sekitar {{450 °F; 232 °C}} | Bahan organik mulai terbakar                                               |
-|           Sampai {{700 °F; 371 °C}} | Air terus keluar dari tanah liat sampai di atas suhu ini                   |
-|         {{842–1022 °F; 450–550 °C}} | Air yang terikat secara kimia keluar dari tanah liat                       |
-|                 {{1063 °F; 573 °C}} | Inversi kuarsa: silika dalam tanah liat tiba-tiba memuai                   |
-|         Di atas {{1112 °F; 600 °C}} | Belerang terbakar habis                                                    |
-| Sampai {{1200–1400 °F; 649–760 °C}} | Karbon alami terbakar habis; ini seharusnya selesai di bawah merah membara |
-|         Di atas {{1544 °F; 840 °C}} | Kalsium karbonat terurai                                                   |
+|                        Temperature | What happens                                                |
+| ---------------------------------: | ----------------------------------------------------------- |
+|         {{300–500 °F; 149–260 °C}} | Binders burn off                                            |
+|           About {{450 °F; 232 °C}} | Organic matter starts to burn                               |
+|           Up to {{700 °F; 371 °C}} | Water keeps leaving the clay until above this temperature   |
+|        {{842–1022 °F; 450–550 °C}} | Chemically bound water leaves the clay                      |
+|                {{1063 °F; 573 °C}} | Quartz inversion: silica in the clay expands suddenly       |
+|          Above {{1112 °F; 600 °C}} | Sulfur burns out                                            |
+| Up to {{1200–1400 °F; 649–760 °C}} | Natural carbon burns off; this should finish below red heat |
+|          Above {{1544 °F; 840 °C}} | Calcium carbonate breaks down                               |
 
-**Inversi kuarsa**{{en: quartz inversion}} adalah perubahan ukuran mendadak silika dalam tanah liat pada {{1063 °F; 573 °C}}: memuai saat naik dan menyusut saat turun. Slow Bisque L&L melambat melewatinya, antara {{1000 °F; 538 °C}} dan {{1100 °F; 593 °C}}. Digitalfire menemukan ini "tidak perlu untuk pembakaran biskuit", dan Ceramics Monthly menyatakan ini terutama penting saat mendinginkan benda padat. Melambat hanya memakan sedikit biaya, jadi saran kami adalah menyimpannya untuk benda tebal.
+**Quartz inversion** is the sudden change in size of the silica in clay at {{1063 °F; 573 °C}}: it expands on the way up and contracts on the way down. L&L's Slow Bisque slows through it, between {{1000 °F; 538 °C}} and {{1100 °F; 593 °C}}. Digitalfire found this "unnecessary for bisque firings", and Ceramics Monthly says it mainly matters when cooling dense ware. Slowing costs little, so our suggestion is to keep it for thick pieces.
 
-### Candling: mengeringkan di dalam tungku
+### Candling: drying in the kiln
 
-**Candling** (pemanasan awal) berarti menahan tungku pada suhu rendah, dengan tutup disangga atau ventilasi menyala, sampai kelembapan terakhir meninggalkan benda. Sumber berbeda pendapat tentang suhunya:
+**Candling** means holding the kiln at a low temperature, with the lid propped or the vent running, until the last moisture has left the ware. Sources disagree about the temperature:
 
-Table: Suhu candling
+Table: Candling temperatures
 
-| Sumber             | Candling                                                                                          |
-| ------------------ | ------------------------------------------------------------------------------------------------- |
-| Ceramics Monthly   | Tepat di bawah titik didih; misalnya, naik pada {{25 °F/h; 14 °C/h}} selama 4–6 jam               |
-| Pemanasan awal L&L | Tahan pada {{150–200 °F; 66–93 °C}}                                                               |
-| Digitalfire        | Tahan pada {{250 °F; 121 °C}}, karena menahan di bawah titik didih "tidak mengeluarkan semua air" |
+| Source           | Candling                                                                                 |
+| ---------------- | ---------------------------------------------------------------------------------------- |
+| Ceramics Monthly | Just short of boiling; for example, climbing at {{25 °F/h; 14 °C/h}} for 4–6 hours       |
+| L&L preheat      | Hold at {{150–200 °F; 66–93 °C}}                                                         |
+| Digitalfire      | Hold at {{250 °F; 121 °C}}, because holding below boiling "does not expel all the water" |
 
 > [!NOTE]
-> Titik awal kami: naik perlahan sampai tidak lebih dari sekitar {{250 °F; 121 °C}}, dan tahan sampai cermin di lubang ventilasi tetap bening. Tahan semalam untuk benda tebal atau lembap.
+> Our starting point: climb slowly to no more than about {{250 °F; 121 °C}}, and hold until a mirror at the vent stays clear. Hold overnight for thick or damp ware.
 
-**Uji cermin**: pegang cermin bersuhu ruang di lubang ventilasi atau di celah di bawah tutup yang disangga. Jika berembun, air masih keluar; tunggu, lalu uji lagi.
+The **mirror test**: hold a room-temperature mirror at a vent hole or at the gap under a propped lid. If it fogs, water is still leaving; wait, then test again.
 
-### Jadwal pengendali
+### Controller schedules
 
-**Pengendali** adalah unit elektronik yang membakar tungku melalui **jadwal**: daftar **segmen**, masing-masing laju naik (**ramp**{{en: ramp}}), suhu target, dan penahanan opsional. Di bawah ini dua preset dari pengendali DynaTrol dan Bartlett L&L, dan jadwal yang diterbitkan Digitalfire. "Puncak" adalah suhu milik pengendali sendiri untuk kerucut yang Anda pilih: untuk kerucut 04 itu {{1926 °F; 1052 °C}}, dan untuk kerucut 06, {{1819 °F; 993 °C}}.
+A **controller** is an electronic unit that fires the kiln through a **schedule**: a list of **segments**, each a rate of climb (the **ramp**), a target temperature and an optional hold. Below are two presets from L&L's DynaTrol and Bartlett controllers, and a schedule published by Digitalfire. "Peak" is the controller's own temperature for the cone you choose: for cone 04 it is {{1926 °F; 1052 °C}}, and for cone 06, {{1819 °F; 993 °C}}.
 
-Table: Preset biskuit L&L dan Bartlett
-Label: Preset biskuit
+Table: L&L and Bartlett bisque presets
+Label: Bisque presets
 
-| Segmen                         |                                                              Naik sampai |               Slow Bisque |            Fast Bisque |
-| ------------------------------ | -----------------------------------------------------------------------: | ------------------------: | ---------------------: |
-| 1                              |                                                       {{250 °F; 121 °C}} |      {{80 °F/h; 44 °C/h}} |  {{120 °F/h; 67 °C/h}} |
-| 2                              |                                                      {{1000 °F; 538 °C}} |    {{200 °F/h; 111 °C/h}} | {{300 °F/h; 167 °C/h}} |
-| 3                              |                                                      {{1100 °F; 593 °C}} |     {{100 °F/h; 56 °C/h}} |  {{150 °F/h; 83 °C/h}} |
-| 4                              | {{250 °F; 139 °C}} di bawah puncak: {{1676 °F; 913 °C}} untuk kerucut 04 |    {{180 °F/h; 100 °C/h}} | {{180 °F/h; 100 °C/h}} |
-| 5                              |                                                                   Puncak |      {{80 °F/h; 44 °C/h}} |  {{108 °F/h; 60 °C/h}} |
-| Waktu pemanasan, tungku kosong |                                                                          | Sekitar 13 jam atau lebih |     Sekitar 10–11½ jam |
+| Segment                  |                                                           Climb to |            Slow Bisque |            Fast Bisque |
+| ------------------------ | -----------------------------------------------------------------: | ---------------------: | ---------------------: |
+| 1                        |                                                 {{250 °F; 121 °C}} |   {{80 °F/h; 44 °C/h}} |  {{120 °F/h; 67 °C/h}} |
+| 2                        |                                                {{1000 °F; 538 °C}} | {{200 °F/h; 111 °C/h}} | {{300 °F/h; 167 °C/h}} |
+| 3                        |                                                {{1100 °F; 593 °C}} |  {{100 °F/h; 56 °C/h}} |  {{150 °F/h; 83 °C/h}} |
+| 4                        | {{250 °F; 139 °C}} below the peak: {{1676 °F; 913 °C}} for cone 04 | {{180 °F/h; 100 °C/h}} | {{180 °F/h; 100 °C/h}} |
+| 5                        |                                                           The peak |   {{80 °F/h; 44 °C/h}} |  {{108 °F/h; 60 °C/h}} |
+| Heating time, empty kiln |                                                                    | About 13 hours or more |     About 10–11½ hours |
 
-Waktu L&L adalah "untuk tungku kosong tercepat yang mungkin"; tungku yang dimuat dapat memerlukan waktu sampai empat kali lebih lama, dan penahanan apa pun yang Anda tambahkan adalah kerja panas ekstra yang tidak diperhitungkan preset. L&L menyarankan Slow Bisque, dengan pemanasan awal 2–3 jam atau lebih lama, untuk benda besar atau lembap, dan memperingatkan agar tidak membakar cepat, yang "dapat menyebabkan cacat seperti lubang jarum, retak, dan pembakaran habis yang tidak memadai".
+L&L's times are "for the fastest possible empty kilns"; a loaded kiln can take as much as four times longer, and any hold you add is extra heatwork the presets do not allow for. L&L advises Slow Bisque, with a preheat of 2–3 hours or longer, for large or damp pieces, and warns against fast firing, which "can cause defects like pinholes, cracking, and insufficient burnout".
 
-Table: Biskuit BQ1000 Digitalfire, sampai sekitar kerucut 06
+Table: Digitalfire BQ1000 bisque, to about cone 06
 Label: Digitalfire BQ1000
 
-| Langkah |                   Laju |               Target | Tahan                                     |
-| ------- | ---------------------: | -------------------: | ----------------------------------------- |
-| 1       | {{306 °F/h; 170 °C/h}} |   {{248 °F; 120 °C}} | 60 menit; sampai 10 jam untuk benda berat |
-| 2       | {{306 °F/h; 170 °C/h}} |  {{1733 °F; 945 °C}} | Tidak ada                                 |
-| 3       |  {{108 °F/h; 60 °C/h}} | {{1832 °F; 1000 °C}} | 15 menit                                  |
+| Step |                   Rate |               Target | Hold                                      |
+| ---- | ---------------------: | -------------------: | ----------------------------------------- |
+| 1    | {{306 °F/h; 170 °C/h}} |   {{248 °F; 120 °C}} | 60 minutes; up to 10 hours for heavy ware |
+| 2    | {{306 °F/h; 170 °C/h}} |  {{1733 °F; 945 °C}} | None                                      |
+| 3    |  {{108 °F/h; 60 °C/h}} | {{1832 °F; 1000 °C}} | 15 minutes                                |
 
-BQ1000 memakan sekitar 7 jam 44 menit. Penulisnya menganggap sampai {{500 °F/h; 278 °C/h}} baik untuk benda tipis dan kering, dan memperlambat langkah terakhir untuk meratakan suhu di seluruh muatan.
+BQ1000 takes about 7 hours 44 minutes. Its author finds up to {{500 °F/h; 278 °C/h}} fine for thin, dry ware, and slows the last step to even out the temperature through the load.
 
-### Kerucut pengendali dan tabel Orton
+### Controller cones and Orton's chart
 
-Pengendali L&L dan Bartlett memakai {{1926 °F; 1052 °C}} untuk kerucut 04 dan {{1819 °F; 993 °C}} untuk kerucut 06, sedikit di bawah {{1945 °F; 1063 °C}} dan {{1828 °F; 998 °C}} milik Orton; keduanya sama pada kerucut 6 dan kerucut 10. Kerucut saksi menyelesaikan perbedaannya: jika berbeda dari pengendali, koreksi dengan offset kerucut.
+L&L and Bartlett controllers use {{1926 °F; 1052 °C}} for cone 04 and {{1819 °F; 993 °C}} for cone 06, a little below Orton's {{1945 °F; 1063 °C}} and {{1828 °F; 998 °C}}; they agree at cone 6 and cone 10. Witness cones settle the difference: if they disagree with the controller, correct it with the cone offset.
 
-### Pada tungku manual
+### On a manual kiln
 
-Tungku manual mengikuti rencana yang sama dengan tangan: keringkan perlahan dengan tutup disangga dan lubang intip terbuka, naikkan sakelar dari Rendah ke Sedang ke Tinggi, dan biarkan sitter mengakhiri pembakaran. Prosedur yang diterbitkan ada di bawah Tungku manual secara rinci, di bawah.
+A manual kiln follows the same plan by hand: dry slowly with the lid propped and the peepholes open, step the switches up from Low to Medium to High, and let the sitter end the firing. The published procedures are under Manual kilns in detail, below.
 
 ## Pembakaran glasir {#glaze}
 

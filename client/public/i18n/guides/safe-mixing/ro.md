@@ -3,39 +3,39 @@ title: Prepararea în siguranță și ventilația
 lead: Cum să țineți praful de glazură departe de plămâni și gazele cuptorului departe de casă: obiceiurile, echipamentul și materiile prime care contează cel mai mult.
 ---
 
-## Pericolul principal: praful {#the-main-hazard}
+## The main hazard: dust {#the-main-hazard lang=en}
 
-Principalul pericol pe termen lung în lucrul cu glazurile{{en: glaze}} este praful, mai ales **pulberea respirabilă de silice cristalină**{{en: respirable crystalline silica}}: particule de cuarț sau de cristobalit (forme cristaline ale silicei{{en: silica}}) destul de mici încât să ajungă adânc în plămâni. Silicea cristalină poate reprezenta aproximativ 10–60 % din masa uscată a unei glazuri, iar majoritatea argilelor (cu excepția caolinului{{en: kaolin}}) și mulți feldspați{{en: feldspar}} conțin și ei cuarț fin. Health and Safety Executive (HSE) din Regatul Unit spune că acest praf „este foarte fin și invizibil la lumină normală”, așa că o încăpere care pare curată nu dovedește că și aerul este curat.
+The main long-term hazard in glaze work is dust, above all **respirable crystalline silica**: particles of quartz or cristobalite (crystal forms of silica) small enough to reach deep into the lungs. Crystalline silica can make up about 10 to 60% of a glaze's dry weight, and most clays (except kaolin) and many feldspars also carry fine quartz. The UK's Health and Safety Executive (HSE) says this dust "is very fine and invisible under normal lighting", so a room that looks clean is not proof that the air is.
 
-Inspirat timp îndelungat, acest praf poate provoca **silicoză**, o boală pulmonară pe care HSE o descrie ca „gravă și ireversibilă” și care poate „provoca invaliditate permanentă și deces prematur”. Poate provoca și **BPOC** (bronhopneumopatia obstructivă cronică: bronșită de lungă durată și emfizem), pe care fumatul o agravează. IARC, agenția pentru cancer a Organizației Mondiale a Sănătății, încadrează silicea cristalină inhalată în grupa 1, „cancerigen pentru om”.
+Breathed in over time, it can cause **silicosis**, a lung disease that HSE describes as "serious and irreversible" and able to "cause permanent disablement and early death". It can also cause **COPD** (chronic obstructive pulmonary disease: long-term bronchitis and emphysema), which smoking makes worse. IARC, the World Health Organization's cancer agency, places inhaled crystalline silica in Group 1, "carcinogenic to humans".
 
-Silicea nu se transformă în vapori în cuptor, iar o glazură umedă nu prezintă un pericol la inhalare. Trebuie să aveți grijă atunci când materialul este uscat: când deschideți sacii, când cântăriți, când amestecați pulberea în apă și când curățați picăturile, ceața de pulverizare depusă (overspray) și resturile de glazură după ce s-au uscat și au redevenit praf.
+Silica does not turn into fumes in the kiln, and a wet glaze is not an inhalation hazard unless it is sprayed: spray mist carries silica and dries to dust (see Spraying, below). The times to take care are when material is dry: opening bags, weighing, stirring powder into water, and cleaning up drips, overspray and slop once they have dried back into dust.
 
-### Valori-limită de expunere
+### Exposure limits
 
-Reglementările pentru locurile de muncă stabilesc o **valoare-limită de expunere profesională**: cea mai mare cantitate de silice pe care are voie să o inspire un lucrător, ca medie pe o zi de lucru de 8 ore, în miligrame (mg) sau micrograme (µg, miimi de miligram) pe metru cub de aer.
+Workplace rules set an **exposure limit**: the most silica a worker may breathe, averaged over an 8-hour day, in milligrams (mg) or micrograms (µg, thousandths of a milligram) per cubic meter of air.
 
-Table: Valori-limită la locul de muncă pentru pulberea respirabilă de silice cristalină (medie pe 8 ore)
-Label: Valori-limită pentru silice
+Table: Workplace limits for respirable crystalline silica (8-hour average)
+Label: Silica exposure limits
 
-| Regiune           |        Valoare-limită | Observații                                                                                                |
-| ----------------- | --------------------: | --------------------------------------------------------------------------------------------------------- |
-| Statele Unite     | 0,05 mg/m³ (50 µg/m³) | Valoarea-limită a OSHA. Angajatorii trebuie să înceapă să ia măsuri de la 25 µg/m³, „nivelul de acțiune”. |
-| Regatul Unit      |             0,1 mg/m³ | Expunerea trebuie, în plus, menținută „atât de scăzută cât este practic rezonabil”.                       |
-| Uniunea Europeană |             0,1 mg/m³ | Valoare-limită obligatorie (Directiva (UE) 2017/2398). Unele state membre stabilesc valori mai mici.      |
-| Australia         |            0,05 mg/m³ | Din iulie 2020. În iunie 2026, majoritatea miniștrilor nu au susținut o reducere la 0,025.                |
-| Noua Zeelandă     |           0,025 mg/m³ | Din 2023. Standardele WorkSafe sunt orientative, nu valori-limită legale.                                 |
+| Region         |                 Limit | Notes                                                                             |
+| -------------- | --------------------: | --------------------------------------------------------------------------------- |
+| United States  | 0.05 mg/m³ (50 µg/m³) | OSHA's limit. Employers must start taking action at 25 µg/m³, the "action level". |
+| United Kingdom |             0.1 mg/m³ | Exposure must also be kept "as low as reasonably practicable".                    |
+| European Union |             0.1 mg/m³ | Binding limit (Directive 2017/2398). Some member states set lower ones.           |
+| Australia      |            0.05 mg/m³ | Since July 2020. In June 2026, most ministers did not support a cut to 0.025.     |
+| New Zealand    |           0.025 mg/m³ | Since 2023. WorkSafe's standards are guidance, not legal limits.                  |
 
-Unele pagini indică 0,025 mg/m³ pentru Australia, dar valoarea-limită oficială este tot 0,05. Oricum, sfatul este același: reduceți praful cât de mult puteți.
+Some pages quote 0.025 mg/m³ for Australia, but the official limit is still 0.05. Either way, the advice is the same: keep dust as low as you can.
 
-Mai multe state membre ale UE stabilesc valori-limită mai mici decât cea a UE. Valoarea-limită din țara în care locuiți, actul normativ care o stabilește și organismul național pentru securitate și sănătate în muncă:
+Several EU member states set lower limits than the EU's. The limit where you live, the law that sets it and the national body for safety at work:
 
 ::silica-limit
 
 > [!NOTE]
-> Acestea sunt valori-limită pentru locurile de muncă. Ele îi obligă pe angajatori, așa că nimeni nu inspectează un ceramist care lucrează singur acasă, deși atelierele comunitare și școlile cu personal angajat intră de obicei sub incidența lor (verificați reglementările locale). Praful este același acasă, iar valorile-limită arată amploarea pericolului: între 25 și 100 de milionimi de gram în fiecare metru cub de aer, ca medie pe o zi.
+> These are workplace limits. They bind employers, so no one inspects a potter working alone at home, though community studios and schools with staff are usually covered (check your local rules). The dust is the same at home, and the limits show the scale of the hazard: 25 to 100 millionths of a gram in each cubic meter of air, averaged over a day.
 
-Aproape nimeni nu a măsurat praful din atelierele de amatori, așa că vă sugerăm să tratați orice lucru cu pulberi uscate ca pe unul care face praf.
+Almost no one has measured dust in hobby studios, so we suggest treating every dry-powder task as a dusty one.
 
 ## Obiceiurile care contează cel mai mult {#habits}
 
@@ -65,49 +65,49 @@ Cea mai mare parte a protecției vine din obiceiuri, nu din echipament. Sfaturil
 
 Această ordine este sugestia noastră, pornind de la principiul HSE de a evita în primul rând pulberile. Pentru cântărire și amestecare pas cu pas, vedeți ghidul [Cum se prepară o glazură](/guides/making-a-glaze).
 
-## Măști de protecție respiratorie {#respirators}
+## Respirators {#respirators lang=en}
 
-O **mască de protecție respiratorie** este o mască certificată să filtreze particulele fine din aerul pe care îl respirați. Funcționează doar când se etanșează pe față și susține obiceiurile bune, nu le înlocuiește.
+A **respirator** is a mask certified to filter fine particles from the air you breathe. It works only when it seals to your face, and it backs up good habits rather than replacing them.
 
-### Clase pe regiuni
+### Classes by region
 
-Table: Clase de măști pentru particule pe regiuni (echivalențe aproximative pentru praful de glazură)
-Label: Clase de măști
+Table: Particle respirator classes by region (rough equivalents for glaze dust)
+Label: Respirator classes
 
-| Regiune                    | Clasa obișnuită | Clasa superioară | Ce să căutați                                                                                  |
-| -------------------------- | --------------- | ---------------- | ---------------------------------------------------------------------------------------------- |
-| Statele Unite              | N95             | P100             | Aprobare NIOSH pe mască sau pe ambalajul ei                                                    |
-| Regatul Unit și UE         | FFP2            | FFP3             | EN 149 pe măștile de unică folosință; EN 140 pe semimăștile reutilizabile, cu filtre P2 sau P3 |
-| Australia și Noua Zeelandă | P2              | P3               | AS/NZS 1716                                                                                    |
+| Region                    | Everyday class | Higher class | Look for                                                                   |
+| ------------------------- | -------------- | ------------ | -------------------------------------------------------------------------- |
+| United States             | N95            | P100         | NIOSH approval on the mask or its packaging                                |
+| UK and EU                 | FFP2           | FFP3         | EN 149 on disposable masks; EN 140 half masks with EN 143 P2 or P3 filters |
+| Australia and New Zealand | P2             | P3           | AS/NZS 1716                                                                |
 
-Clasa superioară filtrează o parte mai mare din particulele fine. Sursele nu sunt de acord asupra a ce filtrează un P3 australian (cel puțin 99 % sau cel puțin 99,95 %), așa că cumpărați clasa certificată vândută în regiunea dumneavoastră. O **semimască** reutilizabilă (care acoperă nasul și gura, cu filtre înlocuibile) cu filtre P100 (P3 în afara SUA) este o alegere frecventă în ateliere.
+The higher class filters a larger share of fine particles. Sources disagree on what an Australian P3 filters (at least 99%, or at least 99.95%), so buy the certified class sold in your region. A reusable **half mask** (covering the nose and mouth, with replaceable filters) fitted with P100 filters (P3 outside the US) is a common studio choice.
 
-### Potrivirea și etanșarea
+### Fit and seal
 
-O mască care are scurgeri lasă praful să intre pe la margini, indiferent de clasa ei. HSE avertizează că barba și barba de câteva zile „fac imposibilă o bună etanșare”.
+A mask that leaks lets dust in around its edges, whatever its class. HSE warns that stubble and beards "make it impossible to get a good seal".
 
-- **Bărbieriți-vă cu puțin timp înainte să lucrați.** Recomandările diferă în ceea ce privește cât de recentă trebuie să fie bărbierirea. Un producător din Regatul Unit, citând HSE, spune să vă bărbieriți în cele 8 ore dinaintea începerii lucrului. Standardul australian și neozeelandez pentru testul de etanșeitate cere bărbierirea înainte de un test de etanșeitate, „de preferat în decurs de 12 ore”. Bărbierirea cu puțin timp înainte să lucrați le îndeplinește pe amândouă.
-- **Dacă purtați barbă,** un **aparat filtrant cu ventilare asistată** cu potrivire largă (PAPR: o glugă sau o cască cu un ventilator care furnizează aer filtrat) nu are nevoie de etanșare pe față.
-- **Alegeți mărimea potrivită.** Potrivirea slabă este o cauză importantă a scurgerilor. Locurile de muncă folosesc un **test de etanșeitate** (fit test), o verificare că o anumită mască se etanșează pe o anumită față. Acasă vă sugerăm să urmați instrucțiunile producătorului pentru verificarea etanșării de fiecare dată când o puneți.
+- **Shave shortly before you work.** Guidance differs on how recent "clean-shaven" must be. A UK maker, citing HSE, says shaved within 8 hours of starting work. The Australian and New Zealand fit-test standard asks for a shave before a fit test, "preferably within 12 hours". Shaving shortly before you work meets both.
+- **If you keep a beard,** a loose-fitting **powered respirator** (PAPR: a hood or helmet with a fan that supplies filtered air) needs no face seal.
+- **Get the size right.** Poor fit is a major cause of leaks. Workplaces use a **fit test**, a check that a particular mask seals on a particular face. At home, we suggest following the maker's instructions for checking the seal each time you put it on.
 
 > [!NOTE]
-> După părerea noastră, potrivirea contează mai mult decât clasa: o N95, FFP2 sau P2 bine potrivită va funcționa de obicei mai bine decât o P100 largă.
+> In our view, fit matters more than class: a well-fitted N95, FFP2 or P2 will usually do better than a loose P100.
 
-### Când să o purtați
+### When to wear one
 
-HSE spune că o mască „nu este de obicei necesară” când cântărirea și amestecarea se fac într-o incintă ventilată, dar „poate fi necesară pentru întreținere și curățare”. Majoritatea atelierelor de acasă nu au incintă, așa că vă sugerăm să purtați una (N95, FFP2 sau P2 cel puțin; P100, FFP3 sau P3 este mai bine) ori de câte ori:
+HSE says a respirator is "normally not needed" where weighing and mixing happen in a ventilated enclosure, but "may be needed for maintenance and cleaning". Most home studios have no enclosure, so we suggest wearing one (N95, FFP2 or P2 at least; P100, FFP3 or P3 is better) whenever you:
 
-- deschideți saci sau turnați pulbere;
-- cântăriți pulberi și le amestecați în apă;
-- răzuiți, șlefuiți sau măcinați glazură uscată sau biscuit;
-- faceți orice curățenie uscată sau goliți un aspirator;
-- pulverizați glazură (într-o cabină: vedeți mai jos).
+- open bags or tip out powder;
+- weigh powders and stir them into water;
+- scrape, sand or grind dried glaze or bisque;
+- do any dry cleanup, or empty a vacuum;
+- spray glaze (in a booth: see below).
 
-### Ce nu este o mască de protecție respiratorie
+### What is not a respirator
 
-- Măștile chirurgicale, măștile din material textil și măștile pentru „praf supărător” fără marcaj NIOSH, EN 149 sau AS/NZS 1716. Nu ne-am baza pe ele pentru praful de glazură.
-- O mască împotriva prafului „nu vă va proteja împotriva gazelor, vaporilor” (OSHA), așa că nu face nimic împotriva fumului din cuptor.
-- Îngrijiți-o pe a dumneavoastră: OSHA notează că o mască murdară sau folosită greșit „poate deveni un pericol”. Păstrați-o curată, departe de hainele de lucru prăfuite.
+- Surgical masks, cloth masks and "nuisance dust" masks without a NIOSH, EN 149 or AS/NZS 1716 marking. We would not rely on them for glaze dust.
+- A dust respirator "will not protect you against gases, vapors" (OSHA), so it does nothing for kiln fumes.
+- Look after yours: OSHA notes that a dirty or misused respirator "can become a hazard". Store it clean, away from dusty work clothes.
 
 ## Curățenia, hainele și mâinile {#cleaning}
 
@@ -181,36 +181,36 @@ O **hotă de evacuare** (un capac larg suspendat deasupra cuptorului) este alter
 
 Arderea raku produce cantități mari de fum și de CO; Universitatea din Utah recomandă să fie făcută afară, departe de prize de aer și de ferestre. Pentru arderea propriu-zisă, vedeți ghidul [Arderea într-un cuptor simplu](/guides/firing).
 
-## Materiile prime care cer cea mai mare grijă {#materials}
+## Materials that need most care {#materials lang=en}
 
-Majoritatea materiilor prime pentru glazuri{{en: glaze}}, inclusiv silicea{{en: silica}}, argilele, feldspații{{en: feldspar}} și fritele{{en: frit}}, sunt în principal un pericol prin praful lor, pe care obiceiurile de mai sus îl țin sub control. Un număr mai mic dintre ele sunt toxice prin ele însele, dacă sunt inspirate, înghițite sau ajung pe piele. Digitalfire adaugă că pigmenții ceramici{{en: stain}} sunt în general mult mai siguri decât oxizii ca atare și că „glazurile dezechilibrate care eliberează metale toxice pot fi făcute din orice materii prime”: dacă o glazură este potrivită pentru contact alimentar{{en: food safe}} depinde de întreaga rețetă, nu de un singur ingredient.
+Most glaze materials, including silica, clays, feldspars and frits, are mainly a dust hazard, which the habits above control. A shorter list is toxic in its own right, by breathing, swallowing or skin contact. Digitalfire adds that stains are generally much safer than raw oxides, and that "unbalanced glazes that release toxic metals can be made from any materials": food safety depends on the whole recipe, not on one ingredient.
 
-O **grupă IARC** este o clasificare privind cancerul: grupa 1 înseamnă „cancerigen pentru om”, grupa 2A „probabil cancerigen pentru om”, grupa 2B „posibil cancerigen pentru om” și grupa 3 „neclasificabil în privința carcinogenității pentru om”, ceea ce înseamnă prea puține dovezi pentru a judeca într-un sens sau în altul.
+An **IARC group** is a cancer classification: Group 1 means "carcinogenic to humans", Group 2A "probably carcinogenic to humans", Group 2B "possibly carcinogenic to humans", and Group 3 "not classifiable as to its carcinogenicity to humans", which means too little evidence to judge either way.
 
-Table: Materii prime pentru glazuri care cer o grijă deosebită
-Label: Materiile prime care cer cea mai mare grijă
+Table: Glaze materials that need extra care
+Label: Materials that need most care
 
-| Materie primă                                                            | Pericol                                                                                                                                                                                             | Precauție                                                                                                                            |
-| ------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| Compuși de plumb și frite cu plumb                                       | „Foarte toxic prin inhalare sau înghițire”; se vaporizează în cuptor la temperaturi mai joase decât majoritatea materiilor prime pentru glazuri.                                                    | De evitat; Digitalfire spune: numai pentru experți. Considerați că orice glazură care nu este etichetată „fără plumb” conține plumb. |
-| Carbonat de bariu                                                        | Insolubil în apă, dar se dizolvă în acidul gastric; afectează inima și mușchii (ritm cardiac neregulat, nivel scăzut de potasiu).                                                                   | O frită cu bariu sau, în locul bariului, stronțiu, unde rețeta permite; mască de protecție respiratorie; recipient etichetat.        |
-| Dioxid de mangan                                                         | Praful sau fumul metalic pot provoca **manganism**, o boală a sistemului nervos asemănătoare bolii Parkinson, de obicei după 1–3 ani de expunere. Fumul metalic poate provoca febra de fum metalic. | În schimb, pigmenți negri în procente mici; aerisiți cuptorul.                                                                       |
-| Dicromat de potasiu și oxid de crom                                      | Cromul(VI), ca în dicromat, este în grupa IARC 1. Această clasificare nu se referă la cromul(III), ca în oxidul de crom.                                                                            | Evitați dicromatul. Considerăm oxidul de crom mult mai puțin periculos, dar reduceți-i praful la minimum.                            |
-| Cobalt                                                                   | Sărurile solubile de cobalt(II): IARC 2A; oxidul de cobalt(II): 2B; Co₃O₄ negru: grupa 3.                                                                                                           | Reduceți praful la minimum; pigmenți pentru negru.                                                                                   |
-| Compuși de nichel                                                        | Printre substanțele cancerigene pentru om, cunoscute sau probabile, enumerate de Universitatea din Utah.                                                                                            | Pigmenți, nu procente mari.                                                                                                          |
-| Cadmiu și seleniu, ca atare sau în pigmenți                              | Compușii de cadmiu sunt printre substanțele cancerigene pentru om, cunoscute sau probabile, enumerate de Universitatea din Utah.                                                                    | „Numai de către experți” (Digitalfire); citiți FDS a oricărui pigment.                                                               |
-| Antimoniu și vanadiu                                                     | Antimoniul trivalent (ca în trioxidul de antimoniu): IARC 2A; vanadiul: „foarte toxic prin inhalare”.                                                                                               | Vanadiul numai pentru experți; reduceți la minimum praful de antimoniu.                                                              |
-| Cupru și zinc                                                            | Fumul metalic din cuptor poate provoca febra de fum metalic; oxidul de zinc ca atare „în general nu este considerat periculos”.                                                                     | Aerisiți cuptorul.                                                                                                                   |
-| Carbonat de litiu                                                        | „Foarte toxic prin inhalare”. Un comitet de experți al UE a concluzionat că poate dăuna fertilității și fătului; adoptarea oficială nu era confirmată când am verificat.                            | Mănuși și mască de protecție respiratorie; nu îl lăsați la îndemâna copiilor. Vă sugerăm o grijă sporită în timpul sarcinii.         |
-| Borax și acid boric                                                      | Clasificate în UE ca „poate dăuna fertilității; poate dăuna fătului”.                                                                                                                               | Mănuși; borul dintr-o frită, când puteți.                                                                                            |
-| Carbonat de sodiu, carbonat de potasiu{{en: potash}}, feldspați alcalini | Iritante pentru piele.                                                                                                                                                                              | Mănuși.                                                                                                                              |
-| Spat fluor, criolit, lepidolit                                           | Degajă gaze cu fluor la ardere; spatul fluor irită și pielea.                                                                                                                                       | Aerisiți cuptorul spre exterior; mănuși.                                                                                             |
-| Talc                                                                     | IARC 2A din iulie 2024; talcul contaminat cu azbest este tratat ca azbest, grupa 1.                                                                                                                 | Talc lamelar (nu fibros), fără azbest; verificați-i FDS.                                                                             |
+| Material                               | Hazard                                                                                                                                                                                                                                       | Precaution                                                                                                  |
+| -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| Lead compounds and lead frits          | "Highly toxic by inhalation or ingestion"; vaporizes in the kiln at lower temperatures than most glaze materials.                                                                                                                            | Avoid; Digitalfire says experts only. Assume any glaze not labeled "lead-free" or "leadless" contains lead. |
+| Barium carbonate                       | Insoluble in water but dissolves in stomach acid; affects the heart and muscles (irregular heartbeat, low potassium).                                                                                                                        | A barium frit or strontium where the recipe allows; respirator; labeled container.                          |
+| Manganese dioxide                      | Dust or fume can cause **manganism**, a nervous-system illness like Parkinson's disease, usually after 1 to 3 years of exposure. Fume can cause metal fume fever.                                                                            | Black stains at low percentages instead; vent the kiln.                                                     |
+| Potassium dichromate and chrome oxide  | Chromium(VI), as in dichromate, is IARC Group 1. That listing does not cover chromium(III), as in chrome oxide.                                                                                                                              | Avoid dichromate. We treat chrome oxide as far less hazardous, but keep its dust down.                      |
+| Cobalt                                 | Soluble cobalt(II) salts IARC 2A; cobalt(II) oxide 2B; black Co₃O₄ Group 3. Cobalt carbonate is classified in the EU as may cause cancer if breathed in, may damage fertility and suspected of causing genetic defects (H350i, H360F, H341). | Keep dust down; stains for blacks.                                                                          |
+| Nickel compounds                       | Among the University of Utah's known or probable human carcinogens.                                                                                                                                                                          | Stains rather than high percentages.                                                                        |
+| Cadmium and selenium, raw or in stains | Cadmium compounds are among Utah's known or probable human carcinogens.                                                                                                                                                                      | "Only by experts" (Digitalfire); read any stain's SDS.                                                      |
+| Antimony and vanadium                  | Trivalent antimony (as in antimony trioxide) IARC 2A; vanadium "highly toxic by inhalation".                                                                                                                                                 | Vanadium for experts only; keep antimony dust down.                                                         |
+| Copper and zinc                        | Kiln fume can cause metal fume fever; raw zinc oxide is "generally not considered hazardous".                                                                                                                                                | Vent the kiln.                                                                                              |
+| Lithium carbonate                      | "Highly toxic by inhalation". An EU expert committee concluded it may harm fertility, the unborn child and breast-fed children; formal adoption was not confirmed when we checked.                                                           | Gloves and respirator; keep from children. We suggest extra care in pregnancy and while breastfeeding.      |
+| Borax and boric acid                   | Classified in the EU as "may damage fertility; may damage the unborn child".                                                                                                                                                                 | Gloves; boron from a frit where you can.                                                                    |
+| Soda ash, potash, alkaline feldspars   | Skin irritants.                                                                                                                                                                                                                              | Gloves.                                                                                                     |
+| Fluorspar, cryolite, lepidolite        | Release fluorine gases in firing; fluorspar also irritates skin.                                                                                                                                                                             | Vent the kiln outdoors; gloves.                                                                             |
+| Talc                                   | IARC 2A since July 2024; talc contaminated with asbestos counts as asbestos, Group 1.                                                                                                                                                        | Platy (not fibrous), asbestos-free talc; check its SDS.                                                     |
 
-Boraxul, acidul boric, carbonatul de sodiu și carbonatul de potasiu se dizolvă în apă, așa că le considerăm pe acestea cele mai susceptibile de a fi absorbite prin pielea cu leziuni sau înghițite de pe mâinile nespălate.
+Borax, boric acid, soda ash and potash dissolve in water, so we treat them as the likeliest to be absorbed through broken skin or swallowed from unwashed hands.
 
 > [!NOTE]
-> Dacă o rețetă cere carbonat de bariu nefritat, mult mangan sau orice materie primă cu plumb ori cadmiu, căutați o variantă care folosește în schimb o frită sau un pigment ceramic. Glazecalc poate compara chimia rețetei originale cu cea a înlocuirii; apoi testați noua glazură.
+> If a recipe calls for raw barium carbonate, a lot of manganese, or any lead or cadmium material, look for a version that uses a frit or a stain instead. Glazecalc can compare the chemistry of the original and the swap; then test the new glaze.
 
 ## Mănuși, piele și ochi {#gloves-and-eyes}
 
@@ -252,21 +252,23 @@ Acestea sunt sursele primare care merită cel mai mult să fie citite. Majoritat
 - **Noua Zeelandă:** WorkSafe New Zealand stabilește standardele de expunere la locul de muncă; [istoricul standardului pentru silice](https://mbie.govt.nz/building-and-energy/building/building-and-construction-consultations/work-with-engineered-stone-and-materials-containing-crystalline-silica/annex-iii) al MBIE indică datele modificărilor.
 - **Cuptoare:** [ghidul Skutt pentru amenajarea încăperii cuptorului](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Designing-A-Kiln-Room-1.pdf), [fișa Orton și CCSA despre gazele cuptorului](https://assets.noviams.com/novi-file-uploads/ccsa/Product_Safety/Fumes.pdf) și, mai presus de toate, manualul propriului cuptor.
 
-## Surse {#sources}
+## Sources {#sources lang=en}
 
 - [OSHA: 29 CFR 1910.1053, Respirable crystalline silica](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.1053)
 - [OSHA: 29 CFR 1910.134 Appendix D, Information for employees using respirators when not required](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.134AppD)
 - [OSHA: 29 CFR 1910.1200 Appendix D, Safety data sheets](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.1200AppD)
-- [NIOSH: Silicosis alert (publicația 92-107)](https://www.cdc.gov/niosh/docs/92-107)
+- [NIOSH: Silicosis alert (publication 92-107)](https://www.cdc.gov/niosh/docs/92-107)
 - [HSE: COSHH essentials CR1, Glaze and colour preparation](https://www.hse.gov.uk/PUBNS/guidance/cr1.pdf)
 - [HSE: COSHH essentials CR5, Spraying glazes and colours](https://www.hse.gov.uk/PUBNS/guidance/cr5.pdf)
 - [HSE: Fit testing basics](https://www.hse.gov.uk/respiratory-protective-equipment/fit-testing-basics.htm)
 - [Safe Work Australia: Research on a lower workplace exposure standard for respirable crystalline silica](https://www.safeworkaustralia.gov.au/safety-topic/hazards/crystalline-silica-and-silicosis/research-lower-workplace-exposure-standard-respirable-crystalline-silica-0)
 - [Enviliance: Report 16612, Australia's June 2026 decision on the silica exposure standard](https://enviliance.com/regions/oceania/au/report_16612)
-- [MBIE (Noua Zeelandă): Work with engineered stone and materials containing crystalline silica, Annex III](https://mbie.govt.nz/building-and-energy/building/building-and-construction-consultations/work-with-engineered-stone-and-materials-containing-crystalline-silica/annex-iii)
+- [MBIE (New Zealand): Work with engineered stone and materials containing crystalline silica, Annex III](https://mbie.govt.nz/building-and-energy/building/building-and-construction-consultations/work-with-engineered-stone-and-materials-containing-crystalline-silica/annex-iii)
 - [IARC: Monographs Volume 100C](https://publications.iarc.who.int/120)
 - [IARC: Volume 131, Cobalt, antimony compounds and weapons-grade tungsten alloy](https://monographs.iarc.who.int/news-events/volume-131-cobalt-antimony-compounds-and-weapons-grade-tungsten-alloy)
 - [Science Media Centre Spain: IARC classifies talc (2024)](https://sciencemediacentre.es/en/node/3775)
+- [ECHA: Risk Assessment Committee opinion on lithium carbonate, chloride and hydroxide (2021, PDF)](https://echa.europa.eu/documents/10162/e2a3c38e-85fe-505c-a325-293c70a74da5)
+- [PubChem: Cobalt carbonate, GHS classification, including its EU harmonised one](https://pubchem.ncbi.nlm.nih.gov/compound/10565#section=GHS-Classification)
 - [ECHA: Risk Assessment Committee document on boric acid and borates](https://echa.europa.eu/documents/10162/7d740d8c-5cd5-872b-5da2-e549983a9ff9)
 - [Coslaw: EU introduces new CMR classifications under the 24th ATP to the CLP Regulation](https://coslaw.eu/eu-introduces-new-cmr-classifications-under-the-24th-atp-to-the-clp-regulation/)
 - [University of Utah EHS: Arts safety: ceramics](https://www.ehs.utah.edu/guidelines/arts-safety-ceramics/)
@@ -275,8 +277,9 @@ Acestea sunt sursele primare care merită cel mai mult să fie citite. Majoritat
 - [Digitalfire: Kiln fumes](https://digitalfire.com/glossary/kiln+fumes)
 - [Digitalfire: Barium and compounds toxicology](https://digitalfire.com/hazard/barium+and+compounds+toxicology)
 - [Digitalfire: Manganese inorganic compounds toxicology](https://digitalfire.com/hazard/manganese+inorganic+compounds+toxicology)
+- [JSP: What levels of protection do particulate filters provide?](https://jspsafety.helpjuice.com/en_GB/what-levels-of-protection-do-particulate-filters-provide)
 - [JSP: Why is a clean shave essential for a proper tight-fitting respirator seal?](https://jspsafety.helpjuice.com/en_GB/why-is-a-clean-shave-essential-for-a-proper-tight-fitting-respirator-seal-can-i-have-a-beard)
 - [Skutt: Kiln room design and product specifications](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Designing-A-Kiln-Room-1.pdf)
 - [CIRMA: Kiln safety bulletin (2025)](https://downloads.ccm-ct.org/pdf/Media-Library-Bulletins/KilnSafety-Bulletin-052825.pdf)
 - [Ceramic Arts Network: Dave Finkelnburg, How and why to use a kiln vent](https://ceramicartsnetwork.org/daily/article/How-and-Why-to-Use-a-Kiln-Vent)
-- [CCSA și Orton: What is so bad about fumes?](https://assets.noviams.com/novi-file-uploads/ccsa/Product_Safety/Fumes.pdf)
+- [CCSA and Orton: What is so bad about fumes?](https://assets.noviams.com/novi-file-uploads/ccsa/Product_Safety/Fumes.pdf)

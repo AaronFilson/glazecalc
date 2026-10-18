@@ -469,7 +469,6 @@
     "expansionRises": "Sen laskennallinen lämpölaajeneminen nousee arvosta {was} arvoon {now}.",
     "expansionRisesProbably": "Jos vanha lasite sopi juuri ja juuri käytettyyn saveen, tämä todennäköisesti säröilee, joskus vasta viikkojen päästä.",
     "expansionRisesMay": "Jos vanha lasite sopi juuri ja juuri käytettyyn saveen, tämä voi säröillä, joskus vasta viikkojen päästä.",
-    "expansionRisesFix": "Säröily heikentää esineitä, eikä sitä suositella ruoan kanssa kosketuksiin tuleville pinnoille. Vähemmän natriumia ja kaliumia tai enemmän booria, piidioksidia tai alumiinioksidia laskee sitä.",
     "expansionFalls": "Sen laskennallinen lämpölaajeneminen laskee arvosta {was} arvoon {now}. Hieman pienempi kestää yleensä säröilyä paremmin.",
     "expansionFallsProbably": "Paljon pienempi todennäköisesti hilseilee, ja suista ja reunoista irtoaa teräviä siruja.",
     "expansionFallsCan": "Paljon pienempi voi hilseillä, ja suista ja reunoista voi irrota teräviä siruja.",

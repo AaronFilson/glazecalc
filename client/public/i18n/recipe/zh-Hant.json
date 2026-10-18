@@ -469,7 +469,6 @@
     "expansionRises": "這個釉的計算熱膨脹係數從 {was} 升到 {now}。",
     "expansionRisesProbably": "如果舊釉與您的坯土剛好勉強適配，這個釉很可能開片，有時幾週後才出現。",
     "expansionRisesMay": "如果舊釉與您的坯土剛好勉強適配，這個釉可能開片，有時幾週後才出現。",
-    "expansionRisesFix": "開片會使作品變脆弱，不建議用於接觸食物的表面。減少鈉與鉀，或增加硼、二氧化矽或氧化鋁，可降低熱膨脹係數。",
     "expansionFalls": "這個釉的計算熱膨脹係數從 {was} 降到 {now}。稍微低一點通常更能防止開片。",
     "expansionFallsProbably": "低很多就很可能跳釉，從口緣和邊緣掉下鋒利的碎片。",
     "expansionFallsCan": "低很多就可能跳釉，從口緣和邊緣掉下鋒利的碎片。",

@@ -83,7 +83,6 @@
     "storedShares": "<b>Recept som delas med en länk, om några delas:</b> vilket recept, när länken skapades och om den visar receptets anteckningar, med en enkelriktad hash av länken (aldrig själva länken). Den som har länken kan se receptet som det är nu, med dess Segerformel, och dess anteckningar om det valdes att visa dem; aldrig e-postadressen, kontot eller några priser. Delade recept hålls utanför sökmotorer, och länken når aldrig serverns loggar. För att motverka missbruk räknas de delade recept som öppnas från varje IP-adress, i minnet, i 15 minuter. En provperiod kan inte dela.",
     "storedTokens": "<b>Åtkomsttoken och anslutna appar, om några skapas eller godkänns:</b> för var och en dess namn, vad den får göra, en enkelriktad hash av åtkomsttoken (aldrig själva åtkomsttoken) och dess sista 4 tecken, och när den skapades, användes senast, går ut och återkallades.",
     "storedActivity": "<b>Vad åtkomsttoken och appar har gjort:</b> en rad för varje post som en åtkomsttoken eller ansluten app skapade, ändrade, flyttade till papperskorgen, lade tillbaka eller ångrade: när, vilken åtkomsttoken eller app, vad den gjorde och postens titel, avkortad. Aldrig en antecknings text eller något annat i posten. Ändringar som görs på webbplatsen listas inte.",
-    "storedLimits": "<b>Gränser för hur ofta:</b> för att stoppa gissning och skript som skenar, räkningar av inloggningsförsök, registreringar, begäranden om återställning och provperioder per IP-adress eller konto, av åtkomsttoken som inte fungerar per IP-adress, av poster som varje åtkomsttoken flyttar till papperskorgen, per åtkomsttoken, av öppnade delade recept och av delningslänkar som inte öppnar något, per IP-adress, och av förfrågningar till verktygen för AI-assistenter (MCP): 60 i minuten och 2000 om dagen per IP-adress, eller 120 i minuten och 5000 om dagen per konto när en åtkomsttoken används, med högst 10 byten eller matchningar i minuten.",
     "storedTrial": "<b>En provperiod (Prova nu):</b> ingen e-postadress eller lösenord, bara ett påhittat namn som ”speckled quiet kilns”. Om du loggar in på ett konto i samma webbläsare under en provperiod flyttas det som skapats under provperioden in i kontot.",
     "storedResets": "<b>Länkar för att återställa lösenordet och för e-postadresser:</b> vilket konto som bad om länken, när, den adress som en länk för att bekräfta en adress skickades till, och ett fingeravtryck av varje länk (inte själva länken).",
     "storedLogs": "<b>Loggar:</b> webbservern registrerar varje förfrågan: IP-adressen, tidpunkten, den begärda sidan och webbläsarens namn. Appen registrerar fel tillsammans med sidan där de inträffade, aldrig e-postadressen.",
@@ -216,7 +215,6 @@
     "titleMissing": "Ge rådet en titel.",
     "contentMissing": "Skriv rådet.",
     "fetchFailed": "Ett fel uppstod när råden hämtades.",
-    "standardFetchFailed": "Ett fel uppstod när råden från servern hämtades.",
     "saved": "Rådet har lagts till.",
     "saveFailed": "Ett fel uppstod när rådet skickades."
   },

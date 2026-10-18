@@ -18,40 +18,40 @@ Recept navaja surovine, na primer glinenec{{en: feldspar}}, kredo{{en: whiting}}
 > [!NOTE]
 > Tako si lahko zapomnite: kremenica je steklo, talila omogočijo, da se stali pri temperaturi, ki jo vaša peč doseže, glinica pa ga zgosti, da ostane tam, kamor ste ga nanesli.
 
-## Glina, premazi in dve žganji {#clay-and-firings}
+## Clay, coatings and the two firings {#clay-and-firings lang=en}
 
-### Glinene mase
+### Clay bodies
 
-**Glinena masa**{{en: clay body}} je glina, iz katere je izdelek narejen. Poznamo tri glavne vrste.
+The **clay body** is the clay a pot is made of. There are three main kinds.
 
-- **Lončenina**{{en: earthenware}}: masa za nizkotemperaturno žganje, približno stožec{{en: cone}} 06–02, ki ostane porozna. Pogosto je rdeča ali rumenkasta in potrebuje glazuro{{en: glaze}}, da drži vodo.
-- **Kamenina**{{en: stoneware}}: masa za srednje- do visokotemperaturno žganje, približno stožec 5–10, ki zastekli ali skoraj zastekli.
-- **Porcelan**: bela masa za visokotemperaturno žganje, bogata s kaolinom, pogosto prosojna.
+- **Earthenware**: a low-fire body, about cone 06–02, that stays porous. Often red or buff, it needs a glaze to hold water.
+- **Stoneware**: a mid- to high-fire body, about cone 5–10, that becomes vitreous or nearly so.
+- **Porcelain**: a white, high-fire body rich in kaolin, often translucent.
 
-**Steklast** pomeni podoben steklu in neporozen; **vitrifikacija** (posteklitev) je proces, v katerem masa med žganjem postane taka. Britanski lončarji mejo pogosto raje postavijo po temperaturi: kamenina se žge nad {{2192 °F; 1200 °C}}, lončenina pod to temperaturo. Srednjetemperaturno žganje, stožec 5–6, leži tik ob tej meji, na obeh straneh.
+**Vitreous** means glassy and non-porous; **vitrification** is a body becoming so as it fires. UK potters often draw the line by temperature instead: stoneware is fired above {{2192 °F; 1200 °C}}, earthenware below. Mid fire, cone 5–6, falls just either side of that line.
 
-### Premazi in sušenje
+### Coatings and drying
 
-**Glineni preliv** je glina, razmešana v vodi, za ulivanje, spajanje ali okraševanje. **Engoba** je premaz, podoben glinenemu prelivu, pogosto obarvan, z več neglinenih surovin. **Podglazurna barva** je obarvan glineni preliv ali okras z oksidi, ki ga običajno prekrije prozorna glazura.
+**Slip** is clay suspended in water, for casting, joining or decorating. An **engobe** is a slip-like coating, often colored, with more non-clay materials. An **underglaze** is colored slip or oxide decoration, usually covered with a clear glaze.
 
-Nežgan izdelek je **surovec**{{en: greenware}} (viri se ne strinjajo, ali izraz zajema vse nežgane izdelke ali le suhe). Med sušenjem postane **usnjeno trd**, čvrst, a še rahlo vlažen, kar je čas za struženje in pritrjevanje ročajev; nato **popolnoma suh**, brez proste vode, zelo krhek in pripravljen za žganje.
+Unfired ware is **greenware** (sources disagree on whether the word covers all unfired ware or only dry ware). As it dries it becomes **leather-hard**, stiff but slightly damp, the stage for trimming and handles; then **bone dry**, with no free water left, very fragile and ready to fire.
 
-### Dve žganji
+### The two firings
 
-Prvo, nižje žganje je **biskvitno žganje**{{en: bisque}} (v Združenem kraljestvu **biscuit**), običajno do stožca 08–04, približno {{1740–1940 °F; 950–1060 °C}}. Po njem so izdelki trdni, a porozni. Digitalfire, spletni priročnik o glazurah, priporoča poroznost na splošno več kot 15 %, da biskvit med nanašanjem glazure iz nje vleče vodo. Nizko biskvitno žgan izdelek (stožec 08–06) je bolj porozen; visoko biskvitno žgan (pogosto stožec 04) je trdnejši, a glazuro sprejema slabše.
+The first, lower firing is the **bisque** (UK: **biscuit**), usually cone 08–04 (most often 06–04), about {{1728–1945 °F; 942–1063 °C}}. It leaves ware strong but porous. Digitalfire, a glaze reference site, suggests generally more than 15% porosity, so the bisque draws water out of the glaze as it goes on. A soft bisque (cone 08–06) is more porous; a hard bisque (often cone 04) is sturdier but takes glaze less readily.
 
-Table: Kako biskvitno žganje vpliva na glaziranje (Digitalfire)
-Label: Kako biskvitno žganje vpliva na glaziranje
+Table: How the bisque changes glazing (Digitalfire)
+Label: How the bisque changes glazing
 
-| Biskvit                                                              | Kaj se zgodi                                                                     |
-| -------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
-| Premalo žgan, zelo vpojen                                            | Glazura se nanese predebelo, nato razpoka in se skrči{{en: crawling}}            |
-| Preveč žgan, gost                                                    | Namakanje in sušenje trajata dlje                                                |
-| Žgan pri višji temperaturi ali dlje zadržan pri najvišji temperaturi | Več plinov izgori že zdaj, zato jih pozneje manj uhaja skozi glazuro v mehurčkih |
+| Bisque                                  | What happens                                                    |
+| --------------------------------------- | --------------------------------------------------------------- |
+| Under-fired, very absorbent             | Glaze goes on too thick, then cracks and crawls                 |
+| Over-fired, dense                       | Dipping and drying take longer                                  |
+| Fired hotter, or held longer at the top | More gas burns off now, so less bubbles through the glaze later |
 
-Potclays, britanski dobavitelj, opisuje biskvitno žganje do približno {{1000 °C; 1832 °F}}, kar je približno stožec 06. Ob upoštevanju vseh teh virov za prvo biskvitno žganje predlagamo stožec 06–04: {{1828–1945 °F; 998–1063 °C}} pri Ortonovi srednji hitrosti segrevanja.
+Potclays, a UK supplier, describes biscuit firing to around {{1000 °C; 1832 °F}}, about cone 06. Reading these sources together, we suggest cone 06–04 for a first bisque: {{1828–1945 °F; 998–1063 °C}} at Orton's medium rate.
 
-**Glazurno žganje**{{en: glaze firing}} (britanski lončarji mu lahko rečejo **glost** firing) stali glazuro, pri kamenini pa glina pri njem tudi dovolj zastekli. Pri **enkratnem žganju**{{en: once-firing}} se glazirajo nežgani izdelki, ki se nato žgejo samo enkrat. Digitalfire poroča o primeru iz proizvodnje, ko se je glazura na glaziranih nežganih izdelkih na robovih krčila, dokler težave ni odpravilo biskvitno žganje; zato začnite z dvema žganjema. Programe žganja za obe podaja vodnik [Žganje v preprosti peči](/guides/firing).
+The **glaze firing** (British potters may say **glost** firing) melts the glaze and, for stoneware, matures the clay too. **Once-firing** glazes unfired ware and fires it just once. Digitalfire reports a production case where raw-glazed ware crawled on its rims until a bisque firing cured it, so begin with two firings. [Firing a basic kiln](/guides/firing) gives schedules for both.
 
 ## Stožci in toplotno delo {#cones}
 
@@ -238,30 +238,30 @@ Label: Pogoste napake glazure
 | Odtekanje glazure                       | Glazura steče na šamotno ploščo                   | Premalo glinice; predebela plast, na primer tam, kjer se polivi prekrivajo; veliko železa                                                               | Nanesite tanjšo plast; dodajte glinico; glazura naj se konča precej nad dnom                      |
 | Razpoke zaradi ohlajanja{{en: dunting}} | Razpoke v izdelku zaradi ohlajanja ali segrevanja | Hitro ohlajanje skozi kremenovo pretvorbo{{en: quartz inversion}} pri {{1063 °F; 573 °C}}; neenakomerno debele stene; slabo ujemanje glazure s črepinjo | Okoli {{1063 °F; 573 °C}} žgite počasi, pri segrevanju in ohlajanju; enakomerno debele stene      |
 
-## Varnost pri stiku z živili {#food-safety}
+## Food safety {#food-safety lang=en}
 
-**Sproščanje kovin**{{en: leaching}} pomeni, da se kovina iz žgane glazure{{en: glaze}} raztaplja v hrano ali pijačo, in glazura je lahko videti brezhibna, pa se to vseeno dogaja. Pri zakonsko predpisanih preskusih žgan izdelek namočijo v kislo raztopino in izmerijo, koliko svinca in kadmija se iz njega sprosti.
+**Leaching** is metal dissolving out of a fired glaze into food or drink, and a glaze can look perfect and still do it. The legal tests soak the fired piece in an acid solution and measure the lead and cadmium that come out.
 
-### »Brez svinca« ni isto kot »primerno za stik z živili«
+### Lead-free is not the same as food-safe
 
-Predpisi v ZDA, EU, Združenem kraljestvu in Avstraliji omejujejo, koliko svinca in kadmija sprosti žgan izdelek, ne pa, kaj vsebuje glazura. »Brez svinca« odpravi eno nevarnost; ni pa ocena primernosti za stik z živili{{en: food safe}}. Sproščajo se tudi drugi oksidi: Glazy svari, da glazure z veliko barija »lahko sproščajo kovine in na splošno niso primerne za stik z živili«, Digitalfire pravi, da baker »lahko povzroči, da glazura sprošča kovine; preskusite jo«, Glazy pa svinčevih glazur za uporabno keramiko ne priporoča več.
+The rules in the US, the EU, the UK and Australia limit the lead and cadmium a fired piece releases, not what the glaze contains. "Lead-free" removes one hazard; it is not a food-safety rating. Other oxides leach too: Glazy warns that high-barium glazes "can leach and are generally not food-safe", Digitalfire says copper "can make a glaze leachable; test it", and Glazy no longer advises lead glazes for functional ware.
 
-**Notranja glazura**{{en: liner glaze}} je stabilna, običajno prozorna ali bela glazura za površine, ki so v stiku s hrano. Po našem mnenju je manj tvegana izbira glazura brez barvil, barija, svinca ali litija, ki se popolnoma stali, v kateri ne nastanejo lasaste razpoke in ki je odporna proti obrabi. Manjše tveganje ni dokaz.
+A **liner glaze** is a stable, usually clear or white glaze for surfaces that touch food. In our view, one with no colorant, barium, lead or lithium, that melts fully, does not craze and wears well, is the lower-risk choice. Lower risk is not proof.
 
-**Ciljne formule**{{en: limit formula}} (angleško limit formulas ali, kot raje pravi Digitalfire, **target formulas**) podajajo tipične razpone Segerjeve formule za stabilne glazure pri določenem stožcu{{en: cone}}: za stožec 6 Digitalfire navaja glinico 0,285–0,64 in kremenico 2,4–4,7. Usmerjajo vas k dobri kemijski sestavi, ne dokazujejo pa ničesar; Digitalfire se besedi »limit« (meja) izogiba, ker nakazuje, da so glazure znotraj teh razponov »nekako varne«. Orodja aplikacije Glazecalc za spreminjanje recepta povedo, kdaj nov recept preseže priporočeno mejo, na primer ko je pri stožcu 6 v glazuri veliko bora, in kako se bo glazura verjetno obnašala.
+**Limit formulas** (Digitalfire prefers **target formulas**) give typical unity-formula ranges for stable glazes at a cone: Digitalfire's cone 6 targets put alumina at 0.285–0.64 and silica at 2.4–4.7. They guide you toward sound chemistry but prove nothing; Digitalfire avoids the word "limit" because it suggests glazes inside the ranges "are somehow safe". Glazecalc's tools for changing a recipe say when the new one goes past a recommended limit, such as a lot of boron at cone 6, and what the glaze will likely do.
 
-Zakonske mejne vrednosti se med državami razlikujejo. Preglednica prikazuje tiste, ki veljajo tam, kjer živite, v enotah, ki jih uporablja zakon; za primerjavo izberite drugo državo.
+The legal limits differ by country. The table shows those where you live, in the law's own units; choose another country to compare.
 
 ::food-limits
 
-V ZDA morajo izdelki, ki niso namenjeni za hrano, imeti trajno, vžgano opozorilo »Not for Food Use« (ni za uporabo z živili) ali luknjo skozi površino, ki bi prišla v stik s hrano. EU določa mejne vrednosti za svinec in kadmij v Direktivi Sveta 84/500/EGS, Združeno kraljestvo pa iste vrednosti ohranja v svoji zakonodaji. Od 29. maja 2026 Nizozemska, Belgija in Luksemburg dovoljujejo približno 130- do 150-krat manj svinca in približno 15-krat manj kadmija. Avstralija določa mejne vrednosti za uvožene izdelke; za izdelke, izdelane v Avstraliji ali na Novi Zelandiji, uradne mejne vrednosti nismo našli.
+In the US, decorative ceramic ware that looks usable for food is treated as food ware unless it carries a stick-on label and a permanent notice molded or fired onto its base, such as "Not for Food Use. May Poison Food", or has a hole through the food surface. The EU sets lead and cadmium limits in Directive 84/500/EEC, and the UK keeps the same figures in its own law. From 29 May 2026 the Netherlands, Belgium and Luxembourg allow about 130 to 150 times less lead, and about 15 times less cadmium. Australia sets limits for imported ware; we found no official limit for ware made in Australia or New Zealand.
 
-### Preskušanje
+### Testing
 
-FDA pravi, da lahko domači kompleti za test z brisom pokažejo svinec, ki se sprošča, Ceramics New Zealand pa svari, da testna pisala niso narejena za keramiko in dajejo lažno pozitivne rezultate. Pozitiven rezultat vzemite kot razlog, da izdelka ne uporabljate več, negativen pa ne dokazuje ničesar. Pravi odgovor je laboratorijski preskus sproščanja kovin iz žganega izdelka (ASTM C738 v ZDA; EN 1388 ali ISO 6486 v Evropi).
+The FDA says home swab kits can show leachable lead, but Ceramics New Zealand warns that test pens are not designed for ceramics and give false positives. Treat a positive as a reason to stop using the piece, and a negative as proving nothing. A laboratory leach test of the fired piece (ASTM C738 in the US; EN 1388 or ISO 6486 in Europe) is the real answer.
 
 > [!WARNING]
-> »Primerno za stik z živili« pomeni, da ta glazura na tej glini, žgana do tega stožca v tej peči in nanesena na ta način, sprošča manj, kot dovoljujejo zakonske mejne vrednosti. Aplikacija Glazecalc vam lahko pomaga sestaviti stabilno glazuro, funkcija **Zamenjaj svinec** pa lahko star svinčev recept sestavi na novo brez svinca, vendar noben kalkulator ne more dati potrdila za izdelek. To lahko da le preskus žganega izdelka.
+> "Food safe" means this glaze, on this clay, fired to this cone in this kiln and applied this way, releases less than the legal limits. Glazecalc can help you build a stable glaze, and **Replace lead** can rebuild an old lead recipe without lead, but no calculator can certify a pot. Only a test of the fired piece can.
 
 ## Relativna gostota in nanašanje {#application}
 
@@ -298,171 +298,171 @@ Plini v peči, njena **atmosfera**, vplivajo na to, kakšne so glazure{{en: glaz
 
 Vsaka peč, tudi električna, oddaja pline in hlape, zato jo prezračujte. Kako, razloži vodnik [Varno mešanje in prezračevanje](/guides/safe-mixing).
 
-## Slovarček {#glossary}
+## Glossary {#glossary lang=en}
+
+Additive
+: A colorant, opacifier or suspender added on top of a recipe's 100.
+
+Alumina (Al₂O₃)
+: The main stabilizer: stops running and adds hardness. From clays and feldspars.
 
 Ball clay
-: Plastična glina z več železa in organskih snovi kot kaolin.
+: A plastic clay with more iron and organic matter than kaolin.
 
-Barvilo in keramični pigment (colorant and stain)
-: Kovinski oksid ali karbonat, ki obarva glazuro; keramični pigment je barvilo, izdelano v tovarni, bolj stabilno.
+Batch recipe
+: A glaze's raw materials by weight, usually adding up to 100.
 
-Bentonit (bentonite)
-: Zelo fina glina, dodana v količini 1–3 %, da se glazura ne poseda.
+Bentonite
+: A very fine clay added at 1–3% to keep glaze from settling.
 
-Biskvitno žganje, biskvit (bisque; v Združenem kraljestvu biscuit)
-: Prvo, nižje žganje, običajno do stožca 08–04; po njem so izdelki trdni, a porozni.
+Bisque (UK: biscuit)
+: The first, lower firing, usually cone 08–04 (most often 06–04), leaving ware strong but porous.
 
-Bor, B₂O₃ (boron)
-: Formalno tvorec stekla, a se uporablja kot talilo; nujen od stožca 06 do stožca 6.
+Boron (B₂O₃)
+: Formally a glass former but used as a flux; essential from cone 06 to cone 6.
 
-Ciljna formula (limit formula, target formula)
-: Tipični razponi Segerjeve formule za stabilne glazure pri določenem stožcu; vodilo, ne jamstvo.
+CMC gum
+: A cellulose gum that helps glaze brush on and stick; it burns away.
 
-CMC, karboksimetilceluloza (CMC gum)
-: Celulozno vezivo, s katerim se glazura laže nanaša s čopičem in bolje prime; pri žganju izgori.
+Colorant and stain
+: A metal oxide or carbonate that colors glaze; a stain is a factory-made, more stable colorant.
 
-Devitrifikacija (devitrification)
-: Kristali, ki zgodaj med ohlajanjem zrastejo iz stekla tam, kjer niso zaželeni.
+Cone
+: A calibrated ceramic pyramid that bends at a set heatwork. A witness cone shows what the pots received.
 
-Dodatek (additive)
-: Barvilo, sredstvo za motnost ali sredstvo proti posedanju, dodano poleg 100 delov recepta.
+Crawling
+: Glaze pulling back into beads in firing, leaving bare clay.
 
-Enkratno žganje (once-firing, single firing)
-: Glaziranje nežganih izdelkov, ki se nato žgejo samo enkrat.
+Crazing
+: Fine cracks in a glaze that shrinks more than its body; crackle when wanted.
 
-Flokulant in deflokulant (flocculant and deflocculant)
-: Dodatki, ki suspenzijo zgostijo (grenka sol, kis) ali razredčijo (natrijev silikat, Darvan).
+Devitrification
+: Crystals growing out of the glass early in cooling, where they are not wanted.
 
-Frita (frit)
-: Steklo, izdelano v tovarni, staljeno, hitro ohlajeno in zmleto, ki naredi topne ali strupene okside netopne.
+Dunting
+: Cracks in a pot from cooling or heating stress, often at quartz inversion, {{1063 °F; 573 °C}}.
 
-Glazura (glaze)
-: Plast stekla, ki se med žganjem stali ter izdelek zapre in okrasi.
+Earthenware
+: A low-fire body (about cone 06–02) that stays porous.
 
-Glazurno žganje (glaze firing; v Združenem kraljestvu glost firing)
-: Žganje, pri katerem se glazura stali.
+Feldspar
+: A mineral supplying alkali flux with alumina and silica: potash, soda or nepheline syenite.
 
-Glinenec (feldspar)
-: Mineral, ki daje alkalijsko talilo skupaj z glinico in kremenico: kalijev ali natrijev glinenec ali nefelin sienit.
+Flocculant and deflocculant
+: Additives that gel a slurry (Epsom salts, vinegar) or thin it (sodium silicate, Darvan).
 
-Glineni preliv in engoba (slip and engobe)
-: Glina v vodi; engoba je premaz, podoben glinenemu prelivu, z več neglinenih surovin.
+Flux
+: An oxide that lowers the melting temperature of silica.
 
-Glinica, Al₂O₃ (alumina)
-: Glavni stabilizator: preprečuje odtekanje in doda trdoto. Prihaja iz glin in glinencev.
+Food safe
+: In law, releasing less lead and cadmium than the limits in an acid test. Not the same as lead-free.
 
-Izguba pri žarenju, LOI (loss on ignition)
-: Masa, izgubljena med žganjem, ko izhajajo voda, ogljikov dioksid, organske snovi ali žveplo.
+Frit
+: Factory-made glass, melted, quenched and ground, that makes soluble or toxic oxides insoluble.
 
-Kamenina (stoneware)
-: Masa za srednje- do visokotemperaturno žganje (približno stožec 5–10), ki zastekli ali skoraj zastekli.
+Glass former
+: The oxide that builds the glass, usually silica.
 
-Kaolin (v Združenem kraljestvu China clay)
-: Čista bela glina, ki daje glinico in kremenico; pomaga, da glazura ostane v suspenziji. V Avstraliji: Eckalite.
+Glaze
+: A coat of glass that melts in firing to seal and decorate a pot.
 
-Krčenje glazure (crawling)
-: Glazura se med žganjem skrči v otočke in pusti golo glino.
+Glaze firing (UK: glost firing)
+: The firing that melts the glaze.
 
-Kreda (whiting)
-: Kalcijev karbonat, glavno kalcijevo talilo; med žganjem izgubi več kot 40 % svoje mase. V nemščini: Kreide.
+Glaze fit
+: How well glaze and body expansion match; a good fit leaves the glaze slightly compressed.
 
-Kremenica, SiO₂ (silica)
-: Tvorec stekla; kot surovina se imenuje kremen ali kremenjak.
+Gloss, satin and matte
+: Reflective and smooth; a subdued sheen; dull.
 
-Lasaste razpoke (crazing)
-: Drobne razpoke v glazuri, ki se skrči bolj kot črepinja; kadar so zaželene, krakle.
+Greenware
+: Unfired ware: leather-hard when stiff but damp, bone dry when no free water is left.
 
-Lončenina (earthenware)
-: Masa za nizkotemperaturno žganje (približno stožec 06–02), ki ostane porozna.
+Heatwork
+: The combined effect of temperature and time in a kiln; what cones measure.
 
-Luknjice in mehurji (pinholing and blistering)
-: Drobne luknjice ali kraterji z ostrimi robovi, kjer je plin ušel skozi talino.
+Kaolin (UK: china clay)
+: A pure white clay supplying alumina and silica; keeps glaze suspended. Australia: Eckalite.
 
-Luščenje glazure (shivering)
-: Glazura se lušči z robov, ker je pod preveliko tlačno napetostjo; nevarnost na uporabni keramiki.
+Kiln wash
+: A heat-resisting coating that protects kiln shelves from drips.
 
-Notranja glazura (liner glaze)
-: Stabilna, običajno prozorna ali bela glazura za površine, ki so v stiku s hrano.
+Leaching
+: Metals dissolving out of a fired glaze into food or drink.
 
-Oksid (oxide)
-: Spojina elementa s kisikom; oksidna analiza jih navaja v masnih odstotkih.
+Limit formula (target formula)
+: Typical unity-formula ranges for stable glazes at a cone; a guide, not a guarantee.
 
-Oksidacija in redukcija (oxidation and reduction)
-: Žganje z veliko kisika (električne peči) ali z omejenim dovodom kisika (običajno na plin ali drva).
+Line blend
+: Tests stepping one ingredient between two amounts. A triaxial blend varies three on a grid.
 
-Podglazurna barva (underglaze)
-: Obarvan glineni preliv ali okras z oksidi, običajno pod prozorno glazuro.
+Liner glaze
+: A stable, usually clear or white glaze for surfaces that touch food.
 
-Porcelan (porcelain)
-: Bela masa za visokotemperaturno žganje, bogata s kaolinom, pogosto prosojna.
+LOI (loss on ignition)
+: Weight lost in firing as water, carbon dioxide, organic matter or sulfur.
 
-Premaz za šamotne plošče (kiln wash)
-: Ognjeodporen premaz, ki ščiti šamotne plošče pred kapljami.
+Once-firing (single firing)
+: Glazing unfired ware and firing it only once.
 
-Primerno za stik z živili (food safe)
-: Po zakonu: v kislinskem preskusu sprošča manj svinca in kadmija, kot dovoljujejo mejne vrednosti. Ni isto kot brez svinca.
+Opacifier
+: A material, such as zircon, tin oxide or titanium dioxide, that makes glaze opaque.
 
-R₂O in RO
-: Alkalijska talila (Na₂O, K₂O, Li₂O) in zemeljskoalkalijska talila (CaO, MgO, BaO, SrO, z ZnO).
+Oxidation and reduction
+: Firing with plenty of oxygen (electric kilns), or with oxygen restricted (usually gas or wood).
 
-Razmerje kremenica : glinica (silica to alumina ratio)
-: Kremenica, deljena z glinico, v Segerjevi formuli: višje razmerje se nagiba k sijaju, nižje k mat površini.
+Oxide
+: A compound of an element with oxygen; an oxide analysis lists them by weight percent.
 
-Razpoke zaradi ohlajanja (dunting)
-: Razpoke v izdelku zaradi napetosti pri ohlajanju ali segrevanju, pogosto pri kremenovi pretvorbi, {{1063 °F; 573 °C}}.
+Pinholing and blistering
+: Small holes, or sharp-edged craters, where gas escaped through the melt.
 
-Recept (batch recipe)
-: Surovine glazure po masi, ki se običajno seštejejo v 100.
+Porcelain
+: A white, kaolin-rich, high-fire body, often translucent.
 
-Relativna gostota (specific gravity, SG)
-: Masa suspenzije v primerjavi z maso enake prostornine vode. V starejših britanskih virih: masa pinte (pint weight).
+R₂O and RO
+: The alkali fluxes (Na₂O, K₂O, Li₂O) and alkaline-earth fluxes (CaO, MgO, BaO, SrO, with ZnO).
 
-Segerjeva formula, UMF (unity molecular formula, Seger formula)
-: Oksidi glazure kot število molekul, preračunani tako, da talila skupaj dajo 1.
+Shivering
+: Glaze flaking off edges because it is over-compressed; a hazard on functional ware.
 
-Sijajna, svilnato mat in mat površina (gloss, satin and matte)
-: Odbija svetlobo in je gladka; ima pridušen lesk; je brez leska.
+Silica (SiO₂)
+: The glass former; also called flint or quartz.
 
-Sproščanje kovin (leaching)
-: Raztapljanje kovin iz žgane glazure v hrano ali pijačo.
+Silica to alumina ratio
+: Silica divided by alumina in the unity formula: higher tends to gloss, lower to matte.
 
-Sredstvo za motnost (opacifier)
-: Surovina, na primer cirkonijev silikat, kositrov oksid ali titanov dioksid, ki naredi glazuro prekrivno.
+Slip and engobe
+: Clay in water; an engobe is a slip-like coating with more non-clay material.
 
-Stabilizator (stabilizer)
-: Oksid, predvsem glinica, ki naredi talino bolj viskozno in doda obstojnost.
+Specific gravity (SG)
+: A slurry's weight compared with the same volume of water. Older UK: pint weight.
 
-Stožec (cone)
-: Umerjena keramična piramida, ki se upogne pri določenem toplotnem delu. Kontrolni stožec pokaže, koliko toplotnega dela so prejeli izdelki.
+Stabilizer
+: An oxide, mainly alumina, that stiffens the melt and adds durability.
 
-Surovec, nežgani izdelki (greenware)
-: Nežgan izdelek: usnjeno trd, ko je čvrst, a vlažen, popolnoma suh, ko v njem ni več proste vode.
+Stoneware
+: A mid- to high-fire body (about cone 5–10) that becomes vitreous or nearly so.
 
-Talilo (flux)
-: Oksid, ki zniža temperaturo taljenja kremenice.
+Thixotropy
+: Flowing when stirred, setting into a soft gel when still.
 
-Testna serija (line blend)
-: Preizkusi, v katerih se količina ene sestavine postopno spreminja med dvema količinama. Triaksialna mešanica spreminja tri sestavine na mreži.
+Underglaze
+: Colored slip or oxide decoration, usually under a clear glaze.
 
-Tiksotropija (thixotropy)
-: Lastnost, da snov teče, ko jo mešamo, v mirovanju pa se strdi v mehak gel.
+Unity molecular formula (UMF, Seger formula)
+: A glaze's oxides as molecule counts, scaled so the fluxes add up to 1.
 
-Toplotno delo (heatwork)
-: Skupni učinek temperature in časa v peči; to merijo stožci.
+Vitrification
+: A body becoming glassy and non-porous in firing.
 
-Tvorec stekla (glass former)
-: Oksid, ki gradi steklo, običajno kremenica.
+Wax resist
+: Wax painted where glaze must not go, usually the foot.
 
-Ujemanje glazure s črepinjo (glaze fit)
-: Kako dobro se ujemata raztezanje glazure in raztezanje črepinje; pri dobrem ujemanju je glazura rahlo stisnjena.
+Whiting
+: Calcium carbonate, the main calcium flux; loses over 40% of its weight in firing. German: Kreide.
 
-Vitrifikacija, posteklitev (vitrification)
-: Proces, v katerem masa med žganjem postane steklasta in neporozna.
-
-Zaščitni vosek (wax resist)
-: Vosek, nanesen tja, kamor glazura ne sme, običajno na dno.
-
-## Viri {#sources}
+## Sources {#sources lang=en}
 
 - [Glazy Help: Glaze](https://help.glazy.org/concepts/glaze)
 - [Glazy Help: Oxides](https://help.glazy.org/concepts/oxides)
@@ -472,8 +472,9 @@ Zaščitni vosek (wax resist)
 - [Glazy Help: Firing](https://help.glazy.org/concepts/firing)
 - [Glazy Help: Defects](https://help.glazy.org/concepts/defects)
 - [Glazy Help: Specific gravity](https://help.glazy.org/testing/specific-gravity)
-- [Orton Ceramic Foundation: Pyrometric cone chart, °F (na spletnem mestu The Ceramic Shop)](https://www.theceramicshop.com/technical_info/Cones/Orton-Cone-Chart-F-022-14.pdf)
+- [Orton Ceramic Foundation: Pyrometric cone chart, °F (via The Ceramic Shop)](https://www.theceramicshop.com/technical_info/Cones/Orton-Cone-Chart-F-022-14.pdf)
 - [Digitalfire: Bisque](https://digitalfire.com/glossary/bisque)
+- [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Unity molecular formula](https://digitalfire.com/glossary/unity+molecular+formula)
 - [Digitalfire: LOI](https://digitalfire.com/glossary/loi)
 - [Digitalfire: Frit](https://digitalfire.com/glossary/frit)
@@ -489,3 +490,4 @@ Zaščitni vosek (wax resist)
 - [Potclays: The difference between stoneware and earthenware](https://www.potclays.co.uk/clay-questions/difference-stoneware-earthenware)
 - [US FDA: Compliance Policy Guide Sec. 545.450, Pottery (ceramics), lead contamination](https://www.fda.gov/media/71764/download)
 - [EUR-Lex: Council Directive 84/500/EEC on ceramic articles in contact with food](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:31984L0500)
+- [eCFR: 21 CFR 109.16, Ornamental and decorative ceramicware](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-109/subpart-A/section-109.16)

@@ -90,8 +90,7 @@
     "advice": "Leideanna praiticiúla faoi mheascadh, ghlónrú agus bhácáil, ón aip Glazecalc, agus do chomhairle féin. Saor in aisce do photadóirí agus do cheirmeoirí.",
     "about": "Áireamhán ceimice glónra agus leabhar nótaí saor in aisce, foinse oscailte, is ea Glazecalc. Féach mar a ríomhann sé foirmle Seger (UMF) agus conas a tógadh é.",
     "privacy": "Conas a láimhseálann Glazecalc do shonraí: gan fógraí, gan anailísíocht, gan rianú, ní dhíoltar faic. Cad a choinnítear, cén fáth agus conas do chearta a úsáid.",
-    "signup": "Cruthaigh cuntas Glazecalc saor in aisce chun d’oidis ghlónra, d’ábhair, do nótaí agus do thaifid bhácála a shábháil. Gan fógraí; ní dhíoltar do shonraí riamh.",
-    "imageAlt": "Glazecalc: tuig do ghlónraí, in ionad iad a mheascadh amháin."
+    "signup": "Cruthaigh cuntas Glazecalc saor in aisce chun d’oidis ghlónra, d’ábhair, do nótaí agus do thaifid bhácála a shábháil. Gan fógraí; ní dhíoltar do shonraí riamh."
   },
   "notices": {
     "dismiss": "Ruaig",
@@ -286,7 +285,6 @@
     "close": "Dún"
   },
   "unity": {
-    "fluxes": "Floscanna – RO",
     "stabilizers": "Cobhsaitheoirí – R₂O₃",
     "glassFormers": "Foirmeoirí gloine – RO₂",
     "wildcards": "Ocsaídí eile",

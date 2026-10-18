@@ -83,7 +83,6 @@
     "storedShares": "<b>Recepty zdieľané odkazom, ak nejaké zdieľate:</b> ktorý recept, kedy bol jeho odkaz vytvorený a či zobrazuje poznámky receptu, s jednosmerným odtlačkom (hash) odkazu (nikdy samotný odkaz). Ktokoľvek, kto odkaz má, uvidí recept tak, ako je teraz, s jeho Segerovým vzorcom a s poznámkami, ak ste zvolili ich zobrazenie; nikdy váš e-mail, váš účet ani žiadne ceny. Zdieľané recepty sú vylúčené z vyhľadávačov a odkaz sa nikdy nedostane do logov servera. Aby sa zabránilo zneužitiu, počítajú sa v pamäti 15 minút zdieľané recepty otvorené z každej IP adresy. Skúšobný prístup zdieľať nemôže.",
     "storedTokens": "<b>Prístupové tokeny a pripojené aplikácie, ak nejaké vytvoríte alebo schválite:</b> pri každom jeho názov, čo smie robiť, jednosmerný odtlačok (hash) tokenu (nikdy samotný token) a jeho posledné 4 znaky a kedy bol vytvorený, naposledy použitý, kedy vyprší a kedy bol zneplatnený.",
     "storedActivity": "<b>Čo robili tokeny a aplikácie:</b> riadok pre každý záznam, ktorý prístupový token alebo pripojená aplikácia vytvorili, zmenili, presunuli do Koša, vrátili z Koša alebo pri nich vrátili zmenu späť: kedy, ktorý token alebo aplikácia, čo urobili a názov záznamu, skrátený. Nikdy text poznámky ani nič iné zo záznamu. Zmeny, ktoré urobíte na webe, sa neuvádzajú.",
-    "storedLimits": "<b>Obmedzenia početnosti:</b> aby sa zabránilo hádaniu a splašeným skriptom, počítajú sa pokusy o prihlásenie, registrácie, žiadosti o obnovenie a skúšobné prístupy podľa IP adresy alebo účtu, nefunkčné prístupové tokeny podľa IP adresy, záznamy, ktoré každý prístupový token presunie do Koša, podľa tokenu, otvorené zdieľané recepty a zdieľané odkazy, ktoré nič neotvoria, podľa IP adresy, a požiadavky na nástroje pre AI asistentov (MCP): 60 za minútu a 2000 za deň podľa IP adresy, alebo 120 za minútu a 5000 za deň podľa účtu, keď sa používa prístupový token, s najviac 10 výmenami alebo zhodami za minútu.",
     "storedTrial": "<b>Skúšobný prístup („Vyskúšať teraz“):</b> žiadny e-mail ani heslo, len vymyslené meno, napríklad „speckled quiet kilns“. Ak sa počas skúšobného prístupu prihlásite do účtu v tom istom prehliadači, to, čo ste v skúšobnom prístupe vytvorili, sa presunie do účtu.",
     "storedResets": "<b>Odkazy na obnovenie hesla a e-mailové odkazy:</b> ktorý účet o ne požiadal, kedy, adresa, na ktorú bol poslaný odkaz na potvrdenie adresy, a odtlačok každého odkazu (nie samotný odkaz).",
     "storedLogs": "<b>Logy:</b> webový server zaznamenáva každú požiadavku: vašu IP adresu, čas, požadovanú stránku a názov vášho prehliadača. Aplikácia zaznamenáva chyby so stránkou, na ktorej nastali, nikdy nie vašu e-mailovú adresu.",
@@ -216,7 +215,6 @@
     "titleMissing": "Zadajte názov rady.",
     "contentMissing": "Napíšte text rady.",
     "fetchFailed": "Pri načítaní rád nastala chyba.",
-    "standardFetchFailed": "Pri načítaní rád zo servera nastala chyba.",
     "saved": "Rada bola úspešne pridaná.",
     "saveFailed": "Pri odosielaní rady nastala chyba."
   },

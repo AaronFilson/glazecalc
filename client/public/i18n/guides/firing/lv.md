@@ -370,83 +370,83 @@ Ortona pašstāvošos konusus Japānā pārdod ar nosaukumu 立つゼーゲル (
 
 :::
 
-## Biskvīta apdedzināšana {#bisque}
+## Bisque firing {#bisque lang=en}
 
-**Biskvīta**{{en: bisque}} apdedzināšana (Apvienotajā Karalistē: biscuit) ir pirmā, zemākas temperatūras apdedzināšana, kas sausu mālu pārvērš cietos, porainos izstrādājumos, kurus var glazēt. Parasti to apdedzina līdz konusiem 06–04, Ortona konusu tabulā {{1828–1945 °F; 998–1063 °C}}; britu keramiķi bieži apdedzina līdz apmēram {{1000 °C; 1832 °F}}, tuvu konusam 06. Biskvītam vajadzētu palikt porainam, “parasti vairāk nekā 15%” (Digitalfire), lai tas uzsūktu ūdeni no glazūras{{en: glaze}}. Pārāk mīksts biskvīts uzņem pārāk biezu glazūras kārtu, kas pēc tam saplaisā un **savelkas**{{en: crawls}} (atraujas saliņās, atstājot kailu mālu). Nepietiekami apdedzināts biskvīts arī “turpina sarukt glazūras apdedzināšanas{{en: glaze firing}} laikā”, un tas sabojā glazūras un masas saderību{{en: glaze fit}}. Iekraušana ir pielaidīga: izstrādājumi drīkst saskarties, vākus var apdedzināt uzliktus uz to traukiem, un bļodas liek mala pret malu, nevis vienu otrā.
+The **bisque** firing (biscuit in the UK) is the first, lower firing that turns dry clay into hard, porous ware ready to glaze. It is usually fired to cone 06–04, {{1828–1945 °F; 998–1063 °C}} on Orton's chart; UK potters often fire to around {{1000 °C; 1832 °F}}, near cone 06. The bisque should stay porous, "generally more than 15%" (Digitalfire), so it soaks water out of the glaze. Too soft a bisque takes glaze on too thick, which then cracks and **crawls** (pulls back into islands, leaving bare clay). Under-fired bisque also "continues to shrink during glaze firing", which spoils the glaze fit. Loading is forgiving: pieces may touch, lids can be fired on their pots, and bowls go rim to rim rather than nested.
 
-### Kāpēc sākumā silda lēni
+### Why the early part goes slowly
 
-Ūdens, pārvēršoties tvaikā, “izplešas 1170 reižu”, norāda Bracker's, tāpēc mitri izstrādājumi jāžāvē lēni. L&L un Orton iesaka: “Temperatūrā zem 1500°F (815°C) vajadzētu īpaši uzmanīties, lai masu{{en: body}} sakarsētu vienmērīgi”, un ogleklim jāizdeg, pirms sasniegti apmēram {{1200 °F; 650 °C}}. Virs {{1500 °F; 816 °C}} krāsns var sildīties ātrāk.
+Water expands more than a thousandfold as it turns to steam, so damp ware has to be dried slowly. L&L and Orton advise that "Special care should be taken below 1500°F (815°C) to heat the body evenly", and that carbon must be burned out before about {{1200 °F; 650 °C}}. Above {{1500 °F; 816 °C}} the kiln can climb faster.
 
-Table: Kas notiek, biskvītam sasilstot
-Label: Kas notiek biskvīta apdedzināšanā
+Table: What happens as a bisque heats
+Label: What happens in a bisque
 
-|                       Temperatūra | Kas notiek                                                                        |
-| --------------------------------: | --------------------------------------------------------------------------------- |
-|        {{300–500 °F; 149–260 °C}} | Izdeg saistvielas                                                                 |
-|        Apmēram {{450 °F; 232 °C}} | Sāk degt organiskās vielas                                                        |
-|           Līdz {{700 °F; 371 °C}} | Ūdens turpina izdalīties no māla, līdz šī temperatūra ir pārsniegta               |
-|       {{842–1022 °F; 450–550 °C}} | No māla izdalās ķīmiski saistītais ūdens                                          |
-|               {{1063 °F; 573 °C}} | Kvarca pārvērtība{{en: quartz inversion}}: silīcija dioksīds mālā pēkšņi izplešas |
-|          Virs {{1112 °F; 600 °C}} | Izdeg sērs                                                                        |
-| Līdz {{1200–1400 °F; 649–760 °C}} | Izdeg dabiskais ogleklis; tam vajadzētu beigties pirms sarkankvēles               |
-|          Virs {{1544 °F; 840 °C}} | Sadalās kalcija karbonāts                                                         |
+|                        Temperature | What happens                                                |
+| ---------------------------------: | ----------------------------------------------------------- |
+|         {{300–500 °F; 149–260 °C}} | Binders burn off                                            |
+|           About {{450 °F; 232 °C}} | Organic matter starts to burn                               |
+|           Up to {{700 °F; 371 °C}} | Water keeps leaving the clay until above this temperature   |
+|        {{842–1022 °F; 450–550 °C}} | Chemically bound water leaves the clay                      |
+|                {{1063 °F; 573 °C}} | Quartz inversion: silica in the clay expands suddenly       |
+|          Above {{1112 °F; 600 °C}} | Sulfur burns out                                            |
+| Up to {{1200–1400 °F; 649–760 °C}} | Natural carbon burns off; this should finish below red heat |
+|          Above {{1544 °F; 840 °C}} | Calcium carbonate breaks down                               |
 
-**Kvarca pārvērtība** (α–β pāreja) ir pēkšņa māla silīcija dioksīda izmēru maiņa {{1063 °F; 573 °C}} temperatūrā: sildot tas izplešas, dzesējot saraujas. L&L programma Slow Bisque šajā posmā, starp {{1000 °F; 538 °C}} un {{1100 °F; 593 °C}}, sildīšanu palēnina. Digitalfire secināja, ka tas ir “nevajadzīgi biskvīta apdedzināšanā”, un žurnāls Ceramics Monthly raksta, ka tas galvenokārt ir svarīgi, dzesējot blīvus izstrādājumus. Palēnināšana maksā maz, tāpēc iesakām to saglabāt bieziem izstrādājumiem.
+**Quartz inversion** is the sudden change in size of the silica in clay at {{1063 °F; 573 °C}}: it expands on the way up and contracts on the way down. L&L's Slow Bisque slows through it, between {{1000 °F; 538 °C}} and {{1100 °F; 593 °C}}. Digitalfire found this "unnecessary for bisque firings", and Ceramics Monthly says it mainly matters when cooling dense ware. Slowing costs little, so our suggestion is to keep it for thick pieces.
 
-### Iztvaicēšanas fāze: izžāvēšana krāsnī
+### Candling: drying in the kiln
 
-**Izžāvēšana krāsnī**{{en: candling}} nozīmē, ka krāsni notur zemā temperatūrā ar pavērtu vāku vai ieslēgtu nosūcēju, līdz no izstrādājumiem izgājis pēdējais mitrums. Avoti nav vienisprātis par temperatūru:
+**Candling** means holding the kiln at a low temperature, with the lid propped or the vent running, until the last moisture has left the ware. Sources disagree about the temperature:
 
-Table: Izžāvēšanas temperatūras
+Table: Candling temperatures
 
-| Avots            | Izžāvēšana                                                                                               |
-| ---------------- | -------------------------------------------------------------------------------------------------------- |
-| Ceramics Monthly | Tieši zem viršanas temperatūras; piemēram, sildot ar ātrumu {{25 °F/h; 14 °C/h}} 4–6 stundas             |
-| L&L, izžāvēšana  | Noturēšana {{150–200 °F; 66–93 °C}} temperatūrā                                                          |
-| Digitalfire      | Noturēšana {{250 °F; 121 °C}} temperatūrā, jo noturēšana zem viršanas temperatūras “neizvada visu ūdeni” |
+| Source           | Candling                                                                                 |
+| ---------------- | ---------------------------------------------------------------------------------------- |
+| Ceramics Monthly | Just short of boiling; for example, climbing at {{25 °F/h; 14 °C/h}} for 4–6 hours       |
+| L&L preheat      | Hold at {{150–200 °F; 66–93 °C}}                                                         |
+| Digitalfire      | Hold at {{250 °F; 121 °C}}, because holding below boiling "does not expel all the water" |
 
 > [!NOTE]
-> Mūsu ieteikums sākumam: sildiet lēni līdz ne vairāk kā apmēram {{250 °F; 121 °C}} un noturiet, līdz spogulis pie ventilācijas atveres paliek neaizsvīdis. Bieziem vai mitriem izstrādājumiem noturiet visu nakti.
+> Our starting point: climb slowly to no more than about {{250 °F; 121 °C}}, and hold until a mirror at the vent stays clear. Hold overnight for thick or damp ware.
 
-**Spoguļa pārbaude**: turiet istabas temperatūras spoguli pie ventilācijas atveres vai pie spraugas zem pavērtā vāka. Ja tas aizsvīst, ūdens vēl izdalās; pagaidiet un pārbaudiet vēlreiz.
+The **mirror test**: hold a room-temperature mirror at a vent hole or at the gap under a propped lid. If it fogs, water is still leaving; wait, then test again.
 
-### Kontroliera programmas
+### Controller schedules
 
-**Kontrolieris** ir elektroniska ierīce, kas vada apdedzināšanu pēc **apdedzināšanas programmas**: **segmentu** saraksta, kur katram segmentam ir sildīšanas ātrums (**rampa**{{en: ramp}}), mērķa temperatūra un, ja vajag, noturēšana{{en: hold}}. Zemāk ir divas iebūvētās programmas no L&L DynaTrol un Bartlett kontrolieriem un viena Digitalfire publicēta programma. “Maksimālā temperatūra” ir paša kontroliera temperatūra izvēlētajam konusam: konusam 04 tā ir {{1926 °F; 1052 °C}}, konusam 06 – {{1819 °F; 993 °C}}.
+A **controller** is an electronic unit that fires the kiln through a **schedule**: a list of **segments**, each a rate of climb (the **ramp**), a target temperature and an optional hold. Below are two presets from L&L's DynaTrol and Bartlett controllers, and a schedule published by Digitalfire. "Peak" is the controller's own temperature for the cone you choose: for cone 04 it is {{1926 °F; 1052 °C}}, and for cone 06, {{1819 °F; 993 °C}}.
 
-Table: L&L un Bartlett iebūvētās biskvīta programmas
-Label: Biskvīta programmas
+Table: L&L and Bartlett bisque presets
+Label: Bisque presets
 
-| Segments                        |                                                                    Sildīt līdz |                  Slow Bisque |            Fast Bisque |
-| ------------------------------- | -----------------------------------------------------------------------------: | ---------------------------: | ---------------------: |
-| 1                               |                                                             {{250 °F; 121 °C}} |         {{80 °F/h; 44 °C/h}} |  {{120 °F/h; 67 °C/h}} |
-| 2                               |                                                            {{1000 °F; 538 °C}} |       {{200 °F/h; 111 °C/h}} | {{300 °F/h; 167 °C/h}} |
-| 3                               |                                                            {{1100 °F; 593 °C}} |        {{100 °F/h; 56 °C/h}} |  {{150 °F/h; 83 °C/h}} |
-| 4                               | {{250 °F; 139 °C}} zem maksimālās temperatūras: konusam 04 {{1676 °F; 913 °C}} |       {{180 °F/h; 100 °C/h}} | {{180 °F/h; 100 °C/h}} |
-| 5                               |                                                          Maksimālā temperatūra |         {{80 °F/h; 44 °C/h}} |  {{108 °F/h; 60 °C/h}} |
-| Sildīšanas laiks tukšai krāsnij |                                                                                | Apmēram 13 stundu vai vairāk | Apmēram 10–11½ stundas |
+| Segment                  |                                                           Climb to |            Slow Bisque |            Fast Bisque |
+| ------------------------ | -----------------------------------------------------------------: | ---------------------: | ---------------------: |
+| 1                        |                                                 {{250 °F; 121 °C}} |   {{80 °F/h; 44 °C/h}} |  {{120 °F/h; 67 °C/h}} |
+| 2                        |                                                {{1000 °F; 538 °C}} | {{200 °F/h; 111 °C/h}} | {{300 °F/h; 167 °C/h}} |
+| 3                        |                                                {{1100 °F; 593 °C}} |  {{100 °F/h; 56 °C/h}} |  {{150 °F/h; 83 °C/h}} |
+| 4                        | {{250 °F; 139 °C}} below the peak: {{1676 °F; 913 °C}} for cone 04 | {{180 °F/h; 100 °C/h}} | {{180 °F/h; 100 °C/h}} |
+| 5                        |                                                           The peak |   {{80 °F/h; 44 °C/h}} |  {{108 °F/h; 60 °C/h}} |
+| Heating time, empty kiln |                                                                    | About 13 hours or more |     About 10–11½ hours |
 
-L&L laiki ir “visātrākajām iespējamajām tukšām krāsnīm”; piekrauta krāsns var sildīties pat četras reizes ilgāk, un katra pievienotā noturēšana ir papildu siltuma iedarbība{{en: heatwork}}, ko iebūvētās programmas neparedz. Lieliem vai mitriem izstrādājumiem L&L iesaka Slow Bisque ar 2–3 stundu vai ilgāku izžāvēšanu krāsnī un brīdina no ātras apdedzināšanas, kas “var izraisīt tādus defektus kā adatas dūrieni{{en: pinholes}}, plaisāšana un nepilnīga izdegšana”.
+L&L's times are "for the fastest possible empty kilns"; a loaded kiln can take as much as four times longer, and any hold you add is extra heatwork the presets do not allow for. L&L advises Slow Bisque, with a preheat of 2–3 hours or longer, for large or damp pieces, and warns against fast firing, which "can cause defects like pinholes, cracking, and insufficient burnout".
 
-Table: Digitalfire BQ1000 biskvīts, līdz apmēram konusam 06
+Table: Digitalfire BQ1000 bisque, to about cone 06
 Label: Digitalfire BQ1000
 
-| Solis |                 Ātrums |               Mērķis | Noturēšana                                        |
-| ----- | ---------------------: | -------------------: | ------------------------------------------------- |
-| 1     | {{306 °F/h; 170 °C/h}} |   {{248 °F; 120 °C}} | 60 minūšu; smagiem izstrādājumiem līdz 10 stundām |
-| 2     | {{306 °F/h; 170 °C/h}} |  {{1733 °F; 945 °C}} | Nav                                               |
-| 3     |  {{108 °F/h; 60 °C/h}} | {{1832 °F; 1000 °C}} | 15 minūšu                                         |
+| Step |                   Rate |               Target | Hold                                      |
+| ---- | ---------------------: | -------------------: | ----------------------------------------- |
+| 1    | {{306 °F/h; 170 °C/h}} |   {{248 °F; 120 °C}} | 60 minutes; up to 10 hours for heavy ware |
+| 2    | {{306 °F/h; 170 °C/h}} |  {{1733 °F; 945 °C}} | None                                      |
+| 3    |  {{108 °F/h; 60 °C/h}} | {{1832 °F; 1000 °C}} | 15 minutes                                |
 
-BQ1000 ilgst apmēram 7 stundas 44 minūtes. Tās autors uzskata, ka plāniem, sausiem izstrādājumiem der līdz {{500 °F/h; 278 °C/h}}, un pēdējo soli palēnina, lai temperatūra visā krāsns saturā izlīdzinātos.
+BQ1000 takes about 7 hours 44 minutes. Its author finds up to {{500 °F/h; 278 °C/h}} fine for thin, dry ware, and slows the last step to even out the temperature through the load.
 
-### Kontroliera konusi un Ortona tabula
+### Controller cones and Orton's chart
 
-L&L un Bartlett kontrolieri konusam 04 izmanto {{1926 °F; 1052 °C}} un konusam 06 – {{1819 °F; 993 °C}}, nedaudz mazāk nekā Ortona tabulas {{1945 °F; 1063 °C}} un {{1828 °F; 998 °C}}; konusam 6 un konusam 10 skaitļi sakrīt. Atšķirību izšķir kontrolkonusi{{en: witness cones}}: ja tie nesaskan ar kontrolieri, izlabojiet to ar temperatūras korekciju.
+L&L and Bartlett controllers use {{1926 °F; 1052 °C}} for cone 04 and {{1819 °F; 993 °C}} for cone 06, a little below Orton's {{1945 °F; 1063 °C}} and {{1828 °F; 998 °C}}; they agree at cone 6 and cone 10. Witness cones settle the difference: if they disagree with the controller, correct it with the cone offset.
 
-### Manuāli vadāmā krāsnī
+### On a manual kiln
 
-Manuāli vadāmā krāsnī to pašu plānu izpilda ar roku: žāvējiet lēni ar pavērtu vāku un atvērtiem skatlodziņiem, pakāpeniski pārslēdziet slēdžus no pozīcijas Low (zema) uz Medium (vidēja) un tad uz High (augsta) un ļaujiet Kiln-Sitter pabeigt apdedzināšanu. Publicētās procedūras ir sadaļā “Manuāli vadāmas krāsnis sīkāk” zemāk.
+A manual kiln follows the same plan by hand: dry slowly with the lid propped and the peepholes open, step the switches up from Low to Medium to High, and let the sitter end the firing. The published procedures are under Manual kilns in detail, below.
 
 ## Glazūras apdedzināšana {#glaze}
 

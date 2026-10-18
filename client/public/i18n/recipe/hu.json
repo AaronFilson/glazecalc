@@ -469,7 +469,6 @@
     "expansionRises": "A számított hőtágulása {was} értékről {now} értékre nő.",
     "expansionRisesProbably": "Ha a régi máz épp hogy illeszkedett az Ön masszájához, ez valószínűleg hajszálrepedezik, néha hetekkel később.",
     "expansionRisesMay": "Ha a régi máz épp hogy illeszkedett az Ön masszájához, ez hajszálrepedezhet, néha hetekkel később.",
-    "expansionRisesFix": "A hajszálrepedés gyengíti az edényt, és élelmiszerrel érintkező felületen nem ajánlott. Kevesebb nátrium és kálium, vagy több bór, szilícium-dioxid vagy timföld csökkenti.",
     "expansionFalls": "A számított hőtágulása {was} értékről {now} értékre csökken. A kissé alacsonyabb érték általában jobban ellenáll a hajszálrepedésnek.",
     "expansionFallsProbably": "Jóval alacsonyabb érték esetén valószínűleg lepattogzik, éles szilánkok válnak le a peremekről és az élekről.",
     "expansionFallsCan": "Jóval alacsonyabb érték esetén lepattogzhat, éles szilánkok válhatnak le a peremekről és az élekről.",

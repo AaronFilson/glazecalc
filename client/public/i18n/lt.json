@@ -90,8 +90,7 @@
     "advice": "Praktiniai Glazecalc patarimai apie keramikos glazūrų maišymą, glazūravimą ir degimą, taip pat jūsų pačių patarimai. Nemokamai keramikams.",
     "about": "Glazecalc – nemokama atvirojo kodo keramikos glazūrų chemijos skaičiuoklė ir sąsiuvinis. Sužinokite, kaip ji apskaičiuoja Segerio formulę (UMF) ir kaip sukurta.",
     "privacy": "Kaip Glazecalc tvarko jūsų duomenis: jokių reklamų, analitikos ir sekimo, niekas neparduodama. Kas saugoma, kodėl ir kaip pasinaudoti savo teisėmis.",
-    "signup": "Nemokama Glazecalc paskyra keramikos glazūrų receptams, žaliavoms, užrašams ir degimo žurnalams saugoti. Be reklamų, jūsų duomenys niekada neparduodami.",
-    "imageAlt": "Glazecalc: supraskite savo glazūras, o ne tik jas maišykite."
+    "signup": "Nemokama Glazecalc paskyra keramikos glazūrų receptams, žaliavoms, užrašams ir degimo žurnalams saugoti. Be reklamų, jūsų duomenys niekada neparduodami."
   },
   "notices": {
     "dismiss": "Uždaryti",
@@ -286,7 +285,6 @@
     "close": "Uždaryti"
   },
   "unity": {
-    "fluxes": "Fliusai – RO",
     "stabilizers": "Stabilizatoriai – R₂O₃",
     "glassFormers": "Stiklą sudarantys oksidai – RO₂",
     "wildcards": "Kiti oksidai",

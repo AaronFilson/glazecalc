@@ -3,39 +3,39 @@ title: Turvallinen sekoittaminen ja ilmanvaihto
 lead: Näin lasitepöly pysyy poissa keuhkoista ja uunin savukaasut poissa kodista: työtavat, varusteet ja raaka-aineet, joilla on eniten merkitystä.
 ---
 
-## Suurin vaara: pöly {#the-main-hazard}
+## The main hazard: dust {#the-main-hazard lang=en}
 
-Lasitetyön suurin pitkäaikainen vaara on pöly, ennen kaikkea **alveolijakeinen kvartsi**{{en: respirable crystalline silica}} eli hengitettävä kiteinen piidioksidipöly: kvartsin tai kristobaliitin (piidioksidin{{en: silica}} kidemuotojen) hiukkasia, jotka ovat niin pieniä, että ne kulkeutuvat syvälle keuhkoihin, keuhkorakkuloihin asti. Kiteistä piidioksidia voi olla noin 10–60 % lasitteen{{en: glaze}} kuivapainosta, ja useimmissa savissa (kaoliinia{{en: kaolin}} lukuun ottamatta) ja monissa maasälvissä{{en: feldspar}} on myös hienoa kvartsia. Ison-Britannian työsuojeluviranomainen Health and Safety Executive (HSE) toteaa, että tämä pöly ”on hyvin hienoa ja tavallisessa valaistuksessa näkymätöntä”, joten puhtaalta näyttävä huone ei todista, että ilmakin on puhdasta.
+The main long-term hazard in glaze work is dust, above all **respirable crystalline silica**: particles of quartz or cristobalite (crystal forms of silica) small enough to reach deep into the lungs. Crystalline silica can make up about 10 to 60% of a glaze's dry weight, and most clays (except kaolin) and many feldspars also carry fine quartz. The UK's Health and Safety Executive (HSE) says this dust "is very fine and invisible under normal lighting", so a room that looks clean is not proof that the air is.
 
-Pitkään hengitettynä se voi aiheuttaa **silikoosia** (kivipölykeuhkoa), keuhkosairautta, jota HSE kuvaa ”vakavaksi ja palautumattomaksi” ja joka voi ”aiheuttaa pysyvän invaliditeetin ja ennenaikaisen kuoleman”. Se voi aiheuttaa myös **keuhkoahtaumatautia** (COPD: pitkäaikainen keuhkoputkentulehdus ja keuhkolaajentuma), jota tupakointi pahentaa. Maailman terveysjärjestön syöväntutkimuslaitos IARC luokittelee hengitetyn kiteisen piidioksidin ryhmään 1, ”syöpää aiheuttava ihmiselle”.
+Breathed in over time, it can cause **silicosis**, a lung disease that HSE describes as "serious and irreversible" and able to "cause permanent disablement and early death". It can also cause **COPD** (chronic obstructive pulmonary disease: long-term bronchitis and emphysema), which smoking makes worse. IARC, the World Health Organization's cancer agency, places inhaled crystalline silica in Group 1, "carcinogenic to humans".
 
-Piidioksidi ei muutu uunissa savukaasuiksi, eikä märkä lasite aiheuta vaaraa hengitysteille. Varovaisuutta tarvitaan silloin, kun raaka-aineet ovat kuivia: säkkejä avattaessa, punnittaessa, jauhetta veteen sekoitettaessa sekä valumia, ruiskutussumun jäämiä ja roiskeita siivottaessa, kun ne ovat kuivuneet takaisin pölyksi.
+Silica does not turn into fumes in the kiln, and a wet glaze is not an inhalation hazard unless it is sprayed: spray mist carries silica and dries to dust (see Spraying, below). The times to take care are when material is dry: opening bags, weighing, stirring powder into water, and cleaning up drips, overspray and slop once they have dried back into dust.
 
-### Altistumisen raja-arvot
+### Exposure limits
 
-Työpaikkoja koskevat säännöt asettavat **altistumisen raja-arvon**: suurimman piidioksidimäärän, jonka työntekijä saa hengittää 8 tunnin työpäivän keskiarvona, milligrammoina (mg) tai mikrogrammoina (µg, milligramman tuhannesosia) ilmakuutiometriä kohden.
+Workplace rules set an **exposure limit**: the most silica a worker may breathe, averaged over an 8-hour day, in milligrams (mg) or micrograms (µg, thousandths of a milligram) per cubic meter of air.
 
-Table: Alveolijakeisen kvartsin raja-arvot työpaikoilla (8 tunnin keskiarvo)
-Label: Piidioksidipölyn raja-arvot
+Table: Workplace limits for respirable crystalline silica (8-hour average)
+Label: Silica exposure limits
 
-| Alue            |             Raja-arvo | Huomautuksia                                                                                                 |
-| --------------- | --------------------: | ------------------------------------------------------------------------------------------------------------ |
-| Yhdysvallat     | 0,05 mg/m³ (50 µg/m³) | OSHA:n raja-arvo. Työnantajien on ryhdyttävä toimiin pitoisuudesta 25 µg/m³ alkaen: se on ”toimenpideraja”.  |
-| Iso-Britannia   |             0,1 mg/m³ | Altistuminen on lisäksi pidettävä ”niin pienenä kuin kohtuudella on käytännössä mahdollista”.                |
-| Euroopan unioni |             0,1 mg/m³ | Sitova raja-arvo (direktiivi (EU) 2017/2398). Jotkin jäsenvaltiot ovat asettaneet alempia.                   |
-| Australia       |            0,05 mg/m³ | Heinäkuusta 2020. Kesäkuussa 2026 useimmat ministerit eivät kannattaneet raja-arvon laskemista arvoon 0,025. |
-| Uusi-Seelanti   |           0,025 mg/m³ | Vuodesta 2023. WorkSafen standardit ovat ohjeellisia, eivät laissa säädettyjä raja-arvoja.                   |
+| Region         |                 Limit | Notes                                                                             |
+| -------------- | --------------------: | --------------------------------------------------------------------------------- |
+| United States  | 0.05 mg/m³ (50 µg/m³) | OSHA's limit. Employers must start taking action at 25 µg/m³, the "action level". |
+| United Kingdom |             0.1 mg/m³ | Exposure must also be kept "as low as reasonably practicable".                    |
+| European Union |             0.1 mg/m³ | Binding limit (Directive 2017/2398). Some member states set lower ones.           |
+| Australia      |            0.05 mg/m³ | Since July 2020. In June 2026, most ministers did not support a cut to 0.025.     |
+| New Zealand    |           0.025 mg/m³ | Since 2023. WorkSafe's standards are guidance, not legal limits.                  |
 
-Jotkin sivustot ilmoittavat Australian raja-arvoksi 0,025 mg/m³, mutta virallinen raja-arvo on edelleen 0,05. Kummassakin tapauksessa neuvo on sama: pidä pölyn määrä niin pienenä kuin mahdollista.
+Some pages quote 0.025 mg/m³ for Australia, but the official limit is still 0.05. Either way, the advice is the same: keep dust as low as you can.
 
-Useat EU:n jäsenvaltiot ovat asettaneet EU:n raja-arvoa alempia raja-arvoja. Oman asuinmaan raja-arvo, sen säätävä laki ja kansallinen työturvallisuudesta vastaava taho:
+Several EU member states set lower limits than the EU's. The limit where you live, the law that sets it and the national body for safety at work:
 
 ::silica-limit
 
 > [!NOTE]
-> Nämä ovat työpaikkojen raja-arvoja. Ne velvoittavat työnantajia, joten kukaan ei valvo kotona yksin työskentelevää keraamikkoa, mutta yhteisöpajat ja koulut, joissa on henkilökuntaa, kuuluvat yleensä niiden piiriin (tarkista paikalliset määräykset). Pöly on kotona samaa, ja raja-arvot kertovat vaaran suuruusluokan: 25–100 miljoonasosaa grammasta jokaisessa ilmakuutiometrissä päivän keskiarvona.
+> These are workplace limits. They bind employers, so no one inspects a potter working alone at home, though community studios and schools with staff are usually covered (check your local rules). The dust is the same at home, and the limits show the scale of the hazard: 25 to 100 millionths of a gram in each cubic meter of air, averaged over a day.
 
-Lähes kukaan ei ole mitannut pölyä harrastajien pajoissa, joten ehdotamme, että jokaista kuivan jauheen käsittelyä pidetään pölyävänä työnä.
+Almost no one has measured dust in hobby studios, so we suggest treating every dry-powder task as a dusty one.
 
 ## Tärkeimmät työtavat {#habits}
 
@@ -65,49 +65,49 @@ Suurin osa suojasta tulee työtavoista, ei varusteista. HSE:n neuvot keramiikka-
 
 Tämä järjestys on meidän ehdotuksemme, ja se perustuu HSE:n periaatteeseen välttää ensin jauhetta. Punnitsemisesta ja sekoittamisesta vaihe vaiheelta kerrotaan oppaassa [Lasitteen valmistaminen](/guides/making-a-glaze).
 
-## Hengityksensuojaimet {#respirators}
+## Respirators {#respirators lang=en}
 
-**Hengityksensuojain** on sertifioitu suojain, joka suodattaa hienot hiukkaset hengitysilmasta. Se toimii vain, kun se tiivistyy kasvoja vasten, ja se tukee hyviä työtapoja eikä korvaa niitä.
+A **respirator** is a mask certified to filter fine particles from the air you breathe. It works only when it seals to your face, and it backs up good habits rather than replacing them.
 
-### Suojausluokat alueittain
+### Classes by region
 
-Table: Hiukkassuojainten suojausluokat alueittain (lasitepölyn kannalta karkeasti toisiaan vastaavat)
-Label: Hengityksensuojainten suojausluokat
+Table: Particle respirator classes by region (rough equivalents for glaze dust)
+Label: Respirator classes
 
-| Alue                       | Tavallinen luokka | Korkeampi luokka | Tarkista                                                                                                               |
-| -------------------------- | ----------------- | ---------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| Yhdysvallat                | N95               | P100             | NIOSH-hyväksyntä suojaimessa tai sen pakkauksessa                                                                      |
-| Iso-Britannia ja EU        | FFP2              | FFP3             | EN 149 kertakäyttöisissä suojaimissa; EN 140 uudelleenkäytettävissä puolinaamareissa, joissa on P2- tai P3-suodattimet |
-| Australia ja Uusi-Seelanti | P2                | P3               | AS/NZS 1716                                                                                                            |
+| Region                    | Everyday class | Higher class | Look for                                                                   |
+| ------------------------- | -------------- | ------------ | -------------------------------------------------------------------------- |
+| United States             | N95            | P100         | NIOSH approval on the mask or its packaging                                |
+| UK and EU                 | FFP2           | FFP3         | EN 149 on disposable masks; EN 140 half masks with EN 143 P2 or P3 filters |
+| Australia and New Zealand | P2             | P3           | AS/NZS 1716                                                                |
 
-Korkeampi luokka suodattaa suuremman osan hienoista hiukkasista. Lähteet ovat eri mieltä siitä, mitä australialainen P3-luokka suodattaa (vähintään 99 % vai vähintään 99,95 %), joten osta omalla alueella myytävä sertifioitu luokka. Uudelleenkäytettävä **puolinaamari** (peittää nenän ja suun, ja siinä on vaihdettavat suodattimet) P100-suodattimilla (Yhdysvaltojen ulkopuolella P3) on yleinen valinta pajoissa.
+The higher class filters a larger share of fine particles. Sources disagree on what an Australian P3 filters (at least 99%, or at least 99.95%), so buy the certified class sold in your region. A reusable **half mask** (covering the nose and mouth, with replaceable filters) fitted with P100 filters (P3 outside the US) is a common studio choice.
 
-### Istuvuus ja tiiviys
+### Fit and seal
 
-Vuotava suojain päästää pölyä sisään reunoiltaan, oli sen luokka mikä tahansa. HSE varoittaa, että sänki ja parta ”tekevät hyvän tiiviyden saavuttamisen mahdottomaksi”.
+A mask that leaks lets dust in around its edges, whatever its class. HSE warns that stubble and beards "make it impossible to get a good seal".
 
-- **Ajele parta vähän ennen työskentelyä.** Ohjeet eroavat siinä, kuinka äskettäin on ajeltava, jotta on ”sileäksi ajeltu”. Brittiläinen valmistaja HSE:hen viitaten sanoo, että ajelu tehdään enintään 8 tuntia ennen työn aloittamista. Australian ja Uuden-Seelannin tiiviystestistandardi edellyttää ajelua ennen tiiviystestiä, ”mieluiten 12 tunnin sisällä”. Ajelu vähän ennen työskentelyä täyttää kummankin ohjeen.
-- **Jos partaa ei ajeta,** väljä **puhallinsuojain** (PAPR: huppu tai kypärä, jossa puhallin syöttää suodatettua ilmaa) ei tarvitse tiivistystä kasvoja vasten.
-- **Valitse oikea koko.** Huono istuvuus on merkittävä vuotojen syy. Työpaikoilla tehdään **tiiviystesti**, jolla tarkistetaan, että tietty suojain tiivistyy tietyille kasvoille. Kotona ehdotamme, että tiiviys tarkistetaan valmistajan ohjeiden mukaan joka kerta, kun suojain pannaan kasvoille.
+- **Shave shortly before you work.** Guidance differs on how recent "clean-shaven" must be. A UK maker, citing HSE, says shaved within 8 hours of starting work. The Australian and New Zealand fit-test standard asks for a shave before a fit test, "preferably within 12 hours". Shaving shortly before you work meets both.
+- **If you keep a beard,** a loose-fitting **powered respirator** (PAPR: a hood or helmet with a fan that supplies filtered air) needs no face seal.
+- **Get the size right.** Poor fit is a major cause of leaks. Workplaces use a **fit test**, a check that a particular mask seals on a particular face. At home, we suggest following the maker's instructions for checking the seal each time you put it on.
 
 > [!NOTE]
-> Meidän näkemyksemme mukaan istuvuus on tärkeämpää kuin luokka: hyvin istuva N95-, FFP2- tai P2-suojain suojaa yleensä paremmin kuin löysä P100-suojain.
+> In our view, fit matters more than class: a well-fitted N95, FFP2 or P2 will usually do better than a loose P100.
 
-### Milloin suojainta käytetään
+### When to wear one
 
-HSE:n mukaan hengityksensuojainta ”ei tavallisesti tarvita”, kun punnitus ja sekoitus tehdään kohdepoistolla varustetussa kotelossa, mutta sitä ”voidaan tarvita huollossa ja siivouksessa”. Useimmissa kotipajoissa tällaista koteloa ei ole, joten ehdotamme suojaimen käyttöä (vähintään N95, FFP2 tai P2; P100, FFP3 tai P3 on parempi) aina, kun:
+HSE says a respirator is "normally not needed" where weighing and mixing happen in a ventilated enclosure, but "may be needed for maintenance and cleaning". Most home studios have no enclosure, so we suggest wearing one (N95, FFP2 or P2 at least; P100, FFP3 or P3 is better) whenever you:
 
-- avataan säkkejä tai kaadetaan jauhetta;
-- punnitaan jauheita ja sekoitetaan niitä veteen;
-- kaavitaan tai hiotaan hiomapaperilla tai hiomakoneella kuivunutta lasitetta{{en: glaze}} tai raakapoltettua{{en: bisque}} esinettä;
-- siivotaan kuivana tai tyhjennetään imuria;
-- ruiskutetaan lasitetta (ruiskutuskaapissa: katso alla).
+- open bags or tip out powder;
+- weigh powders and stir them into water;
+- scrape, sand or grind dried glaze or bisque;
+- do any dry cleanup, or empty a vacuum;
+- spray glaze (in a booth: see below).
 
-### Mikä ei ole hengityksensuojain
+### What is not a respirator
 
-- Kirurgiset maskit, kangasmaskit ja ”kevyet pölymaskit”, joissa ei ole merkintää NIOSH, EN 149 tai AS/NZS 1716. Emme luottaisi niihin lasitepölyä vastaan.
-- Pölysuojain ”ei suojaa kaasuilta eikä höyryiltä” (OSHA), joten se ei auta lainkaan uunin savukaasuja vastaan.
-- Pidä oma suojain kunnossa: OSHA huomauttaa, että likainen tai väärin käytetty hengityksensuojain ”voi muodostua vaaraksi”. Säilytä se puhtaana, erillään pölyisistä työvaatteista.
+- Surgical masks, cloth masks and "nuisance dust" masks without a NIOSH, EN 149 or AS/NZS 1716 marking. We would not rely on them for glaze dust.
+- A dust respirator "will not protect you against gases, vapors" (OSHA), so it does nothing for kiln fumes.
+- Look after yours: OSHA notes that a dirty or misused respirator "can become a hazard". Store it clean, away from dusty work clothes.
 
 ## Siivous, vaatteet ja kädet {#cleaning}
 
@@ -181,36 +181,36 @@ Vaihtoehto on **poistohuuva** (uunin yläpuolella oleva kupu). Se imee karkaavat
 
 Rakupoltosta syntyy paljon savua ja häkää; Utahin yliopisto neuvoo polttamaan rakua ulkona, kaukana ilmanottoaukoista ja ikkunoista. Itse polttamisesta kerrotaan oppaassa [Polttaminen yksinkertaisessa keramiikkauunissa](/guides/firing).
 
-## Eniten varovaisuutta vaativat raaka-aineet {#materials}
+## Materials that need most care {#materials lang=en}
 
-Useimmat lasiteraaka-aineet, kuten kvartsi{{en: silica}}, savet, maasälvät{{en: feldspar}} ja fritit{{en: frit}}, ovat vaarallisia lähinnä pölynä, ja edellä kuvatut työtavat hallitsevat tämän vaaran. Pienempi osa raaka-aineista on myrkyllisiä jo sinänsä: hengitettynä, nieltynä tai iholle joutuessaan. Digitalfire lisää, että väripigmentit{{en: stain}} ovat yleensä paljon turvallisempia kuin oksidit sellaisinaan ja että ”epätasapainoisia lasitteita, joista liukenee myrkyllisiä metalleja, voi tehdä mistä tahansa raaka-aineista”: elintarvikekäyttöön sopivuus{{en: food safe}} riippuu koko reseptistä, ei yhdestä raaka-aineesta.
+Most glaze materials, including silica, clays, feldspars and frits, are mainly a dust hazard, which the habits above control. A shorter list is toxic in its own right, by breathing, swallowing or skin contact. Digitalfire adds that stains are generally much safer than raw oxides, and that "unbalanced glazes that release toxic metals can be made from any materials": food safety depends on the whole recipe, not on one ingredient.
 
-**IARC:n ryhmä** on syöpävaarallisuuden luokitus: ryhmä 1 tarkoittaa ”syöpää aiheuttava ihmiselle”, ryhmä 2A ”todennäköisesti syöpää aiheuttava ihmiselle”, ryhmä 2B ”mahdollisesti syöpää aiheuttava ihmiselle” ja ryhmä 3 ”ei luokiteltavissa ihmiselle syöpää aiheuttavaksi”, mikä tarkoittaa, että näyttöä on liian vähän arvioimiseksi kumpaankaan suuntaan.
+An **IARC group** is a cancer classification: Group 1 means "carcinogenic to humans", Group 2A "probably carcinogenic to humans", Group 2B "possibly carcinogenic to humans", and Group 3 "not classifiable as to its carcinogenicity to humans", which means too little evidence to judge either way.
 
-Table: Lasiteraaka-aineet, jotka vaativat erityistä varovaisuutta
-Label: Eniten varovaisuutta vaativat raaka-aineet
+Table: Glaze materials that need extra care
+Label: Materials that need most care
 
-| Raaka-aine                                                                             | Vaara                                                                                                                                                                                                                | Varotoimet                                                                                                                                                         |
-| -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Lyijyyhdisteet ja lyijyfritit                                                          | ”Erittäin myrkyllisiä hengitettynä tai nieltynä”; höyrystyvät uunissa alemmassa lämpötilassa kuin useimmat lasiteraaka-aineet.                                                                                       | Vältä; Digitalfiren mukaan vain asiantuntijoille. Oleta, että jokainen lasite, jonka merkinnöissä ei lue ”lyijytön” (”lead-free” tai ”leadless”), sisältää lyijyä. |
-| Bariumkarbonaatti                                                                      | Ei liukene veteen, mutta liukenee mahahappoon; vaikuttaa sydämeen ja lihaksiin (epäsäännöllinen syke, alhainen kaliumpitoisuus).                                                                                     | Bariumfritti tai strontium, jos resepti sallii; hengityksensuojain; merkitty astia.                                                                                |
-| Mangaanidioksidi                                                                       | Pöly tai höyry voi aiheuttaa **manganismia**, Parkinsonin tautia muistuttavaa hermoston sairautta, yleensä 1–3 vuoden altistumisen jälkeen. Höyry voi aiheuttaa metallihöyrykuumetta.                                | Sen sijaan mustia väripigmenttejä pieninä prosenttimäärinä; tuuleta uunia.                                                                                         |
-| Kaliumdikromaatti ja kromioksidi                                                       | Kuudenarvoinen kromi, kromi(VI), kuten dikromaatissa, kuuluu IARC:n ryhmään 1. Luokitus ei koske kolmenarvoista kromia, kromi(III), kuten kromioksidissa.                                                            | Vältä dikromaattia. Pidämme kromioksidia paljon vähemmän vaarallisena, mutta pidä sen pölyäminen vähäisenä.                                                        |
-| Koboltti                                                                               | Liukenevat koboltti(II)suolat IARC 2A; koboltti(II)oksidi 2B; musta Co₃O₄ ryhmä 3.                                                                                                                                   | Pidä pölyäminen vähäisenä; mustiin lasitteisiin väripigmenttejä.                                                                                                   |
-| Nikkeliyhdisteet                                                                       | Utahin yliopiston luettelossa tunnettujen tai todennäköisten ihmiselle syöpää aiheuttavien aineiden joukossa.                                                                                                        | Väripigmenttejä mieluummin kuin suuria prosenttimääriä.                                                                                                            |
-| Kadmium ja seleeni, sellaisenaan tai väripigmenteissä                                  | Kadmiumyhdisteet ovat Utahin yliopiston luettelossa tunnettujen tai todennäköisten ihmiselle syöpää aiheuttavien aineiden joukossa.                                                                                  | ”Vain asiantuntijoiden käyttöön” (Digitalfire); lue jokaisen väripigmentin käyttöturvallisuustiedote.                                                              |
-| Antimoni ja vanadiini                                                                  | Kolmenarvoinen antimoni (kuten antimonitrioksidissa) IARC 2A; vanadiini ”erittäin myrkyllistä hengitettynä”.                                                                                                         | Vanadiini vain asiantuntijoille; pidä antimonin pölyäminen vähäisenä.                                                                                              |
-| Kupari ja sinkki                                                                       | Uunin savukaasut voivat aiheuttaa metallihöyrykuumetta; kalsinoimatonta sinkkioksidia ”ei yleensä pidetä vaarallisena”.                                                                                              | Tuuleta uunia.                                                                                                                                                     |
-| Litiumkarbonaatti                                                                      | ”Erittäin myrkyllistä hengitettynä”. EU:n asiantuntijakomitea päätyi siihen, että se saattaa heikentää hedelmällisyyttä ja vaurioittaa sikiötä; virallista hyväksymistä ei ollut vahvistettu, kun tarkistimme asian. | Käsineet ja hengityksensuojain; pidä poissa lasten ulottuvilta. Ehdotamme erityistä varovaisuutta raskauden aikana.                                                |
-| Booraksi ja boorihappo                                                                 | Luokiteltu EU:ssa: ”saattaa heikentää hedelmällisyyttä; voi vaurioittaa sikiötä”.                                                                                                                                    | Käsineet; boori fritistä, kun mahdollista.                                                                                                                         |
-| Sooda (natriumkarbonaatti), potaska{{en: potash}} (kaliumkarbonaatti), alkalimaasälvät | Ärsyttävät ihoa.                                                                                                                                                                                                     | Käsineet.                                                                                                                                                          |
-| Fluoriitti, kryoliitti, lepidoliitti                                                   | Vapauttavat poltossa fluorikaasuja; fluoriitti ärsyttää myös ihoa.                                                                                                                                                   | Johda uunin poistoilma ulos; käsineet.                                                                                                                             |
-| Talkki                                                                                 | IARC 2A heinäkuusta 2024; asbestilla saastunut talkki luetaan asbestiksi, ryhmä 1.                                                                                                                                   | Levymäinen (ei kuitumainen), asbestiton talkki; tarkista sen käyttöturvallisuustiedote.                                                                            |
+| Material                               | Hazard                                                                                                                                                                                                                                       | Precaution                                                                                                  |
+| -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| Lead compounds and lead frits          | "Highly toxic by inhalation or ingestion"; vaporizes in the kiln at lower temperatures than most glaze materials.                                                                                                                            | Avoid; Digitalfire says experts only. Assume any glaze not labeled "lead-free" or "leadless" contains lead. |
+| Barium carbonate                       | Insoluble in water but dissolves in stomach acid; affects the heart and muscles (irregular heartbeat, low potassium).                                                                                                                        | A barium frit or strontium where the recipe allows; respirator; labeled container.                          |
+| Manganese dioxide                      | Dust or fume can cause **manganism**, a nervous-system illness like Parkinson's disease, usually after 1 to 3 years of exposure. Fume can cause metal fume fever.                                                                            | Black stains at low percentages instead; vent the kiln.                                                     |
+| Potassium dichromate and chrome oxide  | Chromium(VI), as in dichromate, is IARC Group 1. That listing does not cover chromium(III), as in chrome oxide.                                                                                                                              | Avoid dichromate. We treat chrome oxide as far less hazardous, but keep its dust down.                      |
+| Cobalt                                 | Soluble cobalt(II) salts IARC 2A; cobalt(II) oxide 2B; black Co₃O₄ Group 3. Cobalt carbonate is classified in the EU as may cause cancer if breathed in, may damage fertility and suspected of causing genetic defects (H350i, H360F, H341). | Keep dust down; stains for blacks.                                                                          |
+| Nickel compounds                       | Among the University of Utah's known or probable human carcinogens.                                                                                                                                                                          | Stains rather than high percentages.                                                                        |
+| Cadmium and selenium, raw or in stains | Cadmium compounds are among Utah's known or probable human carcinogens.                                                                                                                                                                      | "Only by experts" (Digitalfire); read any stain's SDS.                                                      |
+| Antimony and vanadium                  | Trivalent antimony (as in antimony trioxide) IARC 2A; vanadium "highly toxic by inhalation".                                                                                                                                                 | Vanadium for experts only; keep antimony dust down.                                                         |
+| Copper and zinc                        | Kiln fume can cause metal fume fever; raw zinc oxide is "generally not considered hazardous".                                                                                                                                                | Vent the kiln.                                                                                              |
+| Lithium carbonate                      | "Highly toxic by inhalation". An EU expert committee concluded it may harm fertility, the unborn child and breast-fed children; formal adoption was not confirmed when we checked.                                                           | Gloves and respirator; keep from children. We suggest extra care in pregnancy and while breastfeeding.      |
+| Borax and boric acid                   | Classified in the EU as "may damage fertility; may damage the unborn child".                                                                                                                                                                 | Gloves; boron from a frit where you can.                                                                    |
+| Soda ash, potash, alkaline feldspars   | Skin irritants.                                                                                                                                                                                                                              | Gloves.                                                                                                     |
+| Fluorspar, cryolite, lepidolite        | Release fluorine gases in firing; fluorspar also irritates skin.                                                                                                                                                                             | Vent the kiln outdoors; gloves.                                                                             |
+| Talc                                   | IARC 2A since July 2024; talc contaminated with asbestos counts as asbestos, Group 1.                                                                                                                                                        | Platy (not fibrous), asbestos-free talc; check its SDS.                                                     |
 
-Booraksi, boorihappo, sooda ja potaska liukenevat veteen, joten pidämme niitä todennäköisimpinä aineina, jotka imeytyvät rikkoutuneen ihon läpi tai niellään pesemättömistä käsistä.
+Borax, boric acid, soda ash and potash dissolve in water, so we treat them as the likeliest to be absorbed through broken skin or swallowed from unwashed hands.
 
 > [!NOTE]
-> Jos reseptissä on fritittämätöntä bariumkarbonaattia, paljon mangaania tai mitä tahansa lyijyä tai kadmiumia sisältävää raaka-ainetta, etsi versio, jossa niiden sijaan käytetään frittiä tai väripigmenttiä. Glazecalcilla voi verrata alkuperäisen ja vaihdon jälkeisen reseptin kemiallista koostumusta; testaa sitten uusi lasite{{en: glaze}}.
+> If a recipe calls for raw barium carbonate, a lot of manganese, or any lead or cadmium material, look for a version that uses a frit or a stain instead. Glazecalc can compare the chemistry of the original and the swap; then test the new glaze.
 
 ## Käsineet, iho ja silmät {#gloves-and-eyes}
 
@@ -252,21 +252,23 @@ Nämä ovat lukemisen arvoisimmat ensisijaiset lähteet. Useimmat on kirjoitettu
 - **Uusi-Seelanti:** WorkSafe New Zealand asettaa työpaikkojen altistumisstandardit; MBIE:n [piidioksidistandardin historia](https://mbie.govt.nz/building-and-energy/building/building-and-construction-consultations/work-with-engineered-stone-and-materials-containing-crystalline-silica/annex-iii) kertoo päivämäärät.
 - **Uunit:** Skuttin [ohje uunihuoneen suunnitteluun](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Designing-A-Kiln-Room-1.pdf), [Ortonin ja CCSA:n tiedote uunin savukaasuista](https://assets.noviams.com/novi-file-uploads/ccsa/Product_Safety/Fumes.pdf) ja ennen kaikkea oman uunin käyttöohje.
 
-## Lähteet {#sources}
+## Sources {#sources lang=en}
 
 - [OSHA: 29 CFR 1910.1053, Respirable crystalline silica](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.1053)
 - [OSHA: 29 CFR 1910.134 Appendix D, Information for employees using respirators when not required](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.134AppD)
 - [OSHA: 29 CFR 1910.1200 Appendix D, Safety data sheets](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.1200AppD)
-- [NIOSH: Silicosis alert (julkaisu 92-107)](https://www.cdc.gov/niosh/docs/92-107)
+- [NIOSH: Silicosis alert (publication 92-107)](https://www.cdc.gov/niosh/docs/92-107)
 - [HSE: COSHH essentials CR1, Glaze and colour preparation](https://www.hse.gov.uk/PUBNS/guidance/cr1.pdf)
 - [HSE: COSHH essentials CR5, Spraying glazes and colours](https://www.hse.gov.uk/PUBNS/guidance/cr5.pdf)
 - [HSE: Fit testing basics](https://www.hse.gov.uk/respiratory-protective-equipment/fit-testing-basics.htm)
 - [Safe Work Australia: Research on a lower workplace exposure standard for respirable crystalline silica](https://www.safeworkaustralia.gov.au/safety-topic/hazards/crystalline-silica-and-silicosis/research-lower-workplace-exposure-standard-respirable-crystalline-silica-0)
 - [Enviliance: Report 16612, Australia's June 2026 decision on the silica exposure standard](https://enviliance.com/regions/oceania/au/report_16612)
-- [MBIE (Uusi-Seelanti): Work with engineered stone and materials containing crystalline silica, Annex III](https://mbie.govt.nz/building-and-energy/building/building-and-construction-consultations/work-with-engineered-stone-and-materials-containing-crystalline-silica/annex-iii)
+- [MBIE (New Zealand): Work with engineered stone and materials containing crystalline silica, Annex III](https://mbie.govt.nz/building-and-energy/building/building-and-construction-consultations/work-with-engineered-stone-and-materials-containing-crystalline-silica/annex-iii)
 - [IARC: Monographs Volume 100C](https://publications.iarc.who.int/120)
 - [IARC: Volume 131, Cobalt, antimony compounds and weapons-grade tungsten alloy](https://monographs.iarc.who.int/news-events/volume-131-cobalt-antimony-compounds-and-weapons-grade-tungsten-alloy)
 - [Science Media Centre Spain: IARC classifies talc (2024)](https://sciencemediacentre.es/en/node/3775)
+- [ECHA: Risk Assessment Committee opinion on lithium carbonate, chloride and hydroxide (2021, PDF)](https://echa.europa.eu/documents/10162/e2a3c38e-85fe-505c-a325-293c70a74da5)
+- [PubChem: Cobalt carbonate, GHS classification, including its EU harmonised one](https://pubchem.ncbi.nlm.nih.gov/compound/10565#section=GHS-Classification)
 - [ECHA: Risk Assessment Committee document on boric acid and borates](https://echa.europa.eu/documents/10162/7d740d8c-5cd5-872b-5da2-e549983a9ff9)
 - [Coslaw: EU introduces new CMR classifications under the 24th ATP to the CLP Regulation](https://coslaw.eu/eu-introduces-new-cmr-classifications-under-the-24th-atp-to-the-clp-regulation/)
 - [University of Utah EHS: Arts safety: ceramics](https://www.ehs.utah.edu/guidelines/arts-safety-ceramics/)
@@ -275,8 +277,9 @@ Nämä ovat lukemisen arvoisimmat ensisijaiset lähteet. Useimmat on kirjoitettu
 - [Digitalfire: Kiln fumes](https://digitalfire.com/glossary/kiln+fumes)
 - [Digitalfire: Barium and compounds toxicology](https://digitalfire.com/hazard/barium+and+compounds+toxicology)
 - [Digitalfire: Manganese inorganic compounds toxicology](https://digitalfire.com/hazard/manganese+inorganic+compounds+toxicology)
+- [JSP: What levels of protection do particulate filters provide?](https://jspsafety.helpjuice.com/en_GB/what-levels-of-protection-do-particulate-filters-provide)
 - [JSP: Why is a clean shave essential for a proper tight-fitting respirator seal?](https://jspsafety.helpjuice.com/en_GB/why-is-a-clean-shave-essential-for-a-proper-tight-fitting-respirator-seal-can-i-have-a-beard)
 - [Skutt: Kiln room design and product specifications](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Designing-A-Kiln-Room-1.pdf)
 - [CIRMA: Kiln safety bulletin (2025)](https://downloads.ccm-ct.org/pdf/Media-Library-Bulletins/KilnSafety-Bulletin-052825.pdf)
 - [Ceramic Arts Network: Dave Finkelnburg, How and why to use a kiln vent](https://ceramicartsnetwork.org/daily/article/How-and-Why-to-Use-a-Kiln-Vent)
-- [CCSA ja Orton: What is so bad about fumes?](https://assets.noviams.com/novi-file-uploads/ccsa/Product_Safety/Fumes.pdf)
+- [CCSA and Orton: What is so bad about fumes?](https://assets.noviams.com/novi-file-uploads/ccsa/Product_Safety/Fumes.pdf)

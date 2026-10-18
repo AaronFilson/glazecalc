@@ -370,83 +370,83 @@ Orton’un kendiliğinden ayaklı piramitleri, altlık ya da sehpa gerektirmedik
 
 :::
 
-## Bisküvi pişirimi {#bisque}
+## Bisque firing {#bisque lang=en}
 
-**Bisküvi**{{en: bisque}} pişirimi (İngiliz İngilizcesinde biscuit), kuru çamuru sırlamaya hazır, sert ve gözenekli ürüne dönüştüren ilk ve daha düşük sıcaklıktaki pişirimdir. Genellikle 06–04 numaralı piramitlere{{en: cone}} kadar, Orton’un tablosuna göre {{1828–1945 °F; 998–1063 °C}} aralığında pişirilir; Birleşik Krallık’taki seramikçiler genellikle 06 numaralı piramide yakın, {{1000 °C; 1832 °F}} civarında pişirir. Bisküvinin gözenekli kalması gerekir, “genellikle %15’ten fazla” (Digitalfire), ki sırrın{{en: glaze}} suyunu emebilsin. Fazla yumuşak bir bisküvi sırrı fazla kalın alır; sır sonra çatlar ve **toplanır**{{en: crawls}} (adacıklar halinde çekilip çıplak çamur bırakır). Az pişmiş bisküvi ayrıca “sırlı pişirim{{en: glaze firing}} sırasında da küçülmeye devam eder”, bu da sır-bünye uyumunu{{en: glaze fit}} bozar. Fırını doldururken kurallar esnektir: parçalar birbirine değebilir, kapaklar kendi kaplarının üzerinde pişirilebilir, kaseler iç içe değil ağız ağıza konur.
+The **bisque** firing (biscuit in the UK) is the first, lower firing that turns dry clay into hard, porous ware ready to glaze. It is usually fired to cone 06–04, {{1828–1945 °F; 998–1063 °C}} on Orton's chart; UK potters often fire to around {{1000 °C; 1832 °F}}, near cone 06. The bisque should stay porous, "generally more than 15%" (Digitalfire), so it soaks water out of the glaze. Too soft a bisque takes glaze on too thick, which then cracks and **crawls** (pulls back into islands, leaving bare clay). Under-fired bisque also "continues to shrink during glaze firing", which spoils the glaze fit. Loading is forgiving: pieces may touch, lids can be fired on their pots, and bowls go rim to rim rather than nested.
 
-### İlk aşama neden yavaş ilerler
+### Why the early part goes slowly
 
-Bracker's firmasının belirttiği gibi, buhara dönüşen su “1170 kat genleşir”; bu yüzden nemli ürünün yavaş kurutulması gerekir. L&L ve Orton, “Bünyeyi eşit ısıtmak için 1500°F (815°C) altında özel dikkat gösterilmelidir” der ve karbonun yaklaşık {{1200 °F; 650 °C}} sıcaklıktan önce yanıp gitmesi gerektiğini öğütler. {{1500 °F; 816 °C}} üzerinde fırın daha hızlı çıkabilir.
+Water expands more than a thousandfold as it turns to steam, so damp ware has to be dried slowly. L&L and Orton advise that "Special care should be taken below 1500°F (815°C) to heat the body evenly", and that carbon must be burned out before about {{1200 °F; 650 °C}}. Above {{1500 °F; 816 °C}} the kiln can climb faster.
 
-Table: Bisküvi ısınırken neler olur
-Label: Bisküvide neler olur
+Table: What happens as a bisque heats
+Label: What happens in a bisque
 
-|                                     Sıcaklık | Ne olur                                                                  |
-| -------------------------------------------: | ------------------------------------------------------------------------ |
-|                   {{300–500 °F; 149–260 °C}} | Bağlayıcılar yanar                                                       |
-|                  Yaklaşık {{450 °F; 232 °C}} | Organik maddeler yanmaya başlar                                          |
-|           {{700 °F; 371 °C}} sıcaklığa kadar | Su, bu sıcaklık aşılana kadar çamurdan çıkmaya devam eder                |
-|                  {{842–1022 °F; 450–550 °C}} | Kimyasal olarak bağlı su çamurdan çıkar                                  |
-|                          {{1063 °F; 573 °C}} | Kuvars dönüşümü{{en: quartz inversion}}: çamurdaki silis aniden genleşir |
-|                 {{1112 °F; 600 °C}} üzerinde | Kükürt yanıp gider                                                       |
-| {{1200–1400 °F; 649–760 °C}} sıcaklığa kadar | Doğal karbon yanıp gider; bunun kızıl ısıya ulaşmadan bitmesi gerekir    |
-|                 {{1544 °F; 840 °C}} üzerinde | Kalsiyum karbonat ayrışır                                                |
+|                        Temperature | What happens                                                |
+| ---------------------------------: | ----------------------------------------------------------- |
+|         {{300–500 °F; 149–260 °C}} | Binders burn off                                            |
+|           About {{450 °F; 232 °C}} | Organic matter starts to burn                               |
+|           Up to {{700 °F; 371 °C}} | Water keeps leaving the clay until above this temperature   |
+|        {{842–1022 °F; 450–550 °C}} | Chemically bound water leaves the clay                      |
+|                {{1063 °F; 573 °C}} | Quartz inversion: silica in the clay expands suddenly       |
+|          Above {{1112 °F; 600 °C}} | Sulfur burns out                                            |
+| Up to {{1200–1400 °F; 649–760 °C}} | Natural carbon burns off; this should finish below red heat |
+|          Above {{1544 °F; 840 °C}} | Calcium carbonate breaks down                               |
 
-**Kuvars dönüşümü**, çamurdaki silisin {{1063 °F; 573 °C}} sıcaklıkta boyutunun aniden değişmesidir: ısınırken genleşir, soğurken büzülür. L&L’nin Slow Bisque programı bu noktadan {{1000 °F; 538 °C}} ile {{1100 °F; 593 °C}} arasında yavaşlayarak geçer. Digitalfire bunu “bisküvi pişirimleri için gereksiz” bulmuştur; Ceramics Monthly ise bunun esas olarak yoğun ürünler soğurken önemli olduğunu söyler. Yavaşlamanın maliyeti azdır; bu yüzden önerimiz, kalın parçalar için bunu korumanızdır.
+**Quartz inversion** is the sudden change in size of the silica in clay at {{1063 °F; 573 °C}}: it expands on the way up and contracts on the way down. L&L's Slow Bisque slows through it, between {{1000 °F; 538 °C}} and {{1100 °F; 593 °C}}. Digitalfire found this "unnecessary for bisque firings", and Ceramics Monthly says it mainly matters when cooling dense ware. Slowing costs little, so our suggestion is to keep it for thick pieces.
 
-### Ön kurutma: ürünün fırında kurutulması
+### Candling: drying in the kiln
 
-**Ön kurutma**{{en: candling}}, son nem de üründen çıkana kadar, kapak aralık ya da aspiratör çalışır durumdayken fırını düşük bir sıcaklıkta tutmak demektir. Kaynaklar sıcaklık konusunda farklı düşünür:
+**Candling** means holding the kiln at a low temperature, with the lid propped or the vent running, until the last moisture has left the ware. Sources disagree about the temperature:
 
-Table: Ön kurutma sıcaklıkları
+Table: Candling temperatures
 
-| Kaynak           | Ön kurutma                                                                                                      |
-| ---------------- | --------------------------------------------------------------------------------------------------------------- |
-| Ceramics Monthly | Kaynama noktasının hemen altı; örneğin 4–6 saat boyunca {{25 °F/h; 14 °C/h}} hızla çıkmak                       |
-| L&L ön ısıtma    | {{150–200 °F; 66–93 °C}} sıcaklıkta bekletme                                                                    |
-| Digitalfire      | {{250 °F; 121 °C}} sıcaklıkta bekletme, çünkü kaynama noktasının altında bekletmek “suyun hepsini dışarı atmaz” |
+| Source           | Candling                                                                                 |
+| ---------------- | ---------------------------------------------------------------------------------------- |
+| Ceramics Monthly | Just short of boiling; for example, climbing at {{25 °F/h; 14 °C/h}} for 4–6 hours       |
+| L&L preheat      | Hold at {{150–200 °F; 66–93 °C}}                                                         |
+| Digitalfire      | Hold at {{250 °F; 121 °C}}, because holding below boiling "does not expel all the water" |
 
 > [!NOTE]
-> Başlangıç noktamız: en fazla yaklaşık {{250 °F; 121 °C}} sıcaklığa kadar yavaşça çıkın ve havalandırma deliğinde tutulan bir ayna buğulanmaz hale gelene kadar bekletin. Kalın ya da nemli ürünler için bir gece boyunca bekletin.
+> Our starting point: climb slowly to no more than about {{250 °F; 121 °C}}, and hold until a mirror at the vent stays clear. Hold overnight for thick or damp ware.
 
-**Ayna testi**: oda sıcaklığındaki bir aynayı bir havalandırma deliğinde ya da aralık bırakılmış kapağın altındaki boşlukta tutun. Buğulanıyorsa su hâlâ çıkıyordur; bekleyin, sonra yeniden deneyin.
+The **mirror test**: hold a room-temperature mirror at a vent hole or at the gap under a propped lid. If it fogs, water is still leaving; wait, then test again.
 
-### Kontrol ünitesi programları
+### Controller schedules
 
-**Kontrol ünitesi**, fırını bir **pişirim programıyla** pişiren elektronik bir birimdir: program, her biri bir çıkış hızı (**rampa**{{en: ramp}}), bir hedef sıcaklık ve isteğe bağlı bir bekletmeden{{en: hold}} oluşan **segmentlerin** bir listesidir. Aşağıda L&L’nin DynaTrol ve Bartlett kontrol ünitelerindeki iki hazır program ile Digitalfire’ın yayımladığı bir program var. “En yüksek sıcaklık”, kontrol ünitesinin seçtiğiniz piramit için kullandığı kendi sıcaklığıdır: 04 numaralı piramit için {{1926 °F; 1052 °C}}, 06 numaralı piramit için {{1819 °F; 993 °C}}.
+A **controller** is an electronic unit that fires the kiln through a **schedule**: a list of **segments**, each a rate of climb (the **ramp**), a target temperature and an optional hold. Below are two presets from L&L's DynaTrol and Bartlett controllers, and a schedule published by Digitalfire. "Peak" is the controller's own temperature for the cone you choose: for cone 04 it is {{1926 °F; 1052 °C}}, and for cone 06, {{1819 °F; 993 °C}}.
 
-Table: L&L ve Bartlett bisküvi hazır programları
-Label: Bisküvi hazır programları
+Table: L&L and Bartlett bisque presets
+Label: Bisque presets
 
-| Segment                  |                                                                         Çıkılacak sıcaklık |                       Slow Bisque |            Fast Bisque |
-| ------------------------ | -----------------------------------------------------------------------------------------: | --------------------------------: | ---------------------: |
-| 1                        |                                                                         {{250 °F; 121 °C}} |              {{80 °F/h; 44 °C/h}} |  {{120 °F/h; 67 °C/h}} |
-| 2                        |                                                                        {{1000 °F; 538 °C}} |            {{200 °F/h; 111 °C/h}} | {{300 °F/h; 167 °C/h}} |
-| 3                        |                                                                        {{1100 °F; 593 °C}} |             {{100 °F/h; 56 °C/h}} |  {{150 °F/h; 83 °C/h}} |
-| 4                        | En yüksek sıcaklığın {{250 °F; 139 °C}} altı: 04 numaralı piramit için {{1676 °F; 913 °C}} |            {{180 °F/h; 100 °C/h}} | {{180 °F/h; 100 °C/h}} |
-| 5                        |                                                                         En yüksek sıcaklık |              {{80 °F/h; 44 °C/h}} |  {{108 °F/h; 60 °C/h}} |
-| Isıtma süresi, boş fırın |                                                                                            | Yaklaşık 13 saat ya da daha fazla |   Yaklaşık 10–11½ saat |
+| Segment                  |                                                           Climb to |            Slow Bisque |            Fast Bisque |
+| ------------------------ | -----------------------------------------------------------------: | ---------------------: | ---------------------: |
+| 1                        |                                                 {{250 °F; 121 °C}} |   {{80 °F/h; 44 °C/h}} |  {{120 °F/h; 67 °C/h}} |
+| 2                        |                                                {{1000 °F; 538 °C}} | {{200 °F/h; 111 °C/h}} | {{300 °F/h; 167 °C/h}} |
+| 3                        |                                                {{1100 °F; 593 °C}} |  {{100 °F/h; 56 °C/h}} |  {{150 °F/h; 83 °C/h}} |
+| 4                        | {{250 °F; 139 °C}} below the peak: {{1676 °F; 913 °C}} for cone 04 | {{180 °F/h; 100 °C/h}} | {{180 °F/h; 100 °C/h}} |
+| 5                        |                                                           The peak |   {{80 °F/h; 44 °C/h}} |  {{108 °F/h; 60 °C/h}} |
+| Heating time, empty kiln |                                                                    | About 13 hours or more |     About 10–11½ hours |
 
-L&L’nin süreleri “mümkün olan en hızlı boş fırınlar içindir”; dolu bir fırın dört kata kadar daha uzun sürebilir ve eklediğiniz her bekletme, hazır programların hesaba katmadığı ek ısı işidir{{en: heatwork}}. L&L, büyük ya da nemli parçalar için 2–3 saat ya da daha uzun bir ön ısıtmayla Slow Bisque programını önerir ve “iğne deliği{{en: pinholes}}, çatlama ve organik maddelerin yetersiz yanması gibi kusurlara yol açabilen” hızlı pişirime karşı uyarır.
+L&L's times are "for the fastest possible empty kilns"; a loaded kiln can take as much as four times longer, and any hold you add is extra heatwork the presets do not allow for. L&L advises Slow Bisque, with a preheat of 2–3 hours or longer, for large or damp pieces, and warns against fast firing, which "can cause defects like pinholes, cracking, and insufficient burnout".
 
-Table: Digitalfire BQ1000 bisküvi programı, yaklaşık 06 numaralı piramide kadar
+Table: Digitalfire BQ1000 bisque, to about cone 06
 Label: Digitalfire BQ1000
 
-| Adım |                    Hız |                Hedef | Bekletme                                    |
-| ---- | ---------------------: | -------------------: | ------------------------------------------- |
-| 1    | {{306 °F/h; 170 °C/h}} |   {{248 °F; 120 °C}} | 60 dakika; ağır ürünler için 10 saate kadar |
-| 2    | {{306 °F/h; 170 °C/h}} |  {{1733 °F; 945 °C}} | Yok                                         |
-| 3    |  {{108 °F/h; 60 °C/h}} | {{1832 °F; 1000 °C}} | 15 dakika                                   |
+| Step |                   Rate |               Target | Hold                                      |
+| ---- | ---------------------: | -------------------: | ----------------------------------------- |
+| 1    | {{306 °F/h; 170 °C/h}} |   {{248 °F; 120 °C}} | 60 minutes; up to 10 hours for heavy ware |
+| 2    | {{306 °F/h; 170 °C/h}} |  {{1733 °F; 945 °C}} | None                                      |
+| 3    |  {{108 °F/h; 60 °C/h}} | {{1832 °F; 1000 °C}} | 15 minutes                                |
 
-BQ1000 yaklaşık 7 saat 44 dakika sürer. Programın yazarı ince ve kuru ürünler için {{500 °F/h; 278 °C/h}} hıza kadar çıkmayı sorunsuz bulur ve sıcaklığı yükün içinde eşitlemek için son adımı yavaşlatır.
+BQ1000 takes about 7 hours 44 minutes. Its author finds up to {{500 °F/h; 278 °C/h}} fine for thin, dry ware, and slows the last step to even out the temperature through the load.
 
-### Kontrol ünitesi piramitleri ve Orton’un tablosu
+### Controller cones and Orton's chart
 
-L&L ve Bartlett kontrol üniteleri 04 numaralı piramit için {{1926 °F; 1052 °C}}, 06 numaralı piramit için {{1819 °F; 993 °C}} kullanır; bu değerler Orton’un {{1945 °F; 1063 °C}} ve {{1828 °F; 998 °C}} değerlerinin biraz altındadır; 6 ve 10 numaralı piramitlerde ise aynıdır. Farkı gözlem piramitleri{{en: witness cones}} çözer: kontrol ünitesiyle uyuşmazlarsa onu piramit düzeltmesiyle düzeltin.
+L&L and Bartlett controllers use {{1926 °F; 1052 °C}} for cone 04 and {{1819 °F; 993 °C}} for cone 06, a little below Orton's {{1945 °F; 1063 °C}} and {{1828 °F; 998 °C}}; they agree at cone 6 and cone 10. Witness cones settle the difference: if they disagree with the controller, correct it with the cone offset.
 
-### Manuel bir fırında
+### On a manual kiln
 
-Manuel bir fırın aynı planı elle uygular: kapak aralık ve gözetleme delikleri açıkken yavaşça kurutun, anahtarları sırayla Düşük, Orta ve Yüksek konumlarına çıkarın ve pişirimi kiln sitter’ın bitirmesine bırakın. Yayımlanmış yöntemler aşağıda Manuel fırınlar ayrıntılı olarak bölümündedir.
+A manual kiln follows the same plan by hand: dry slowly with the lid propped and the peepholes open, step the switches up from Low to Medium to High, and let the sitter end the firing. The published procedures are under Manual kilns in detail, below.
 
 ## Sırlı pişirim {#glaze}
 

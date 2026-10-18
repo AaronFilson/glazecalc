@@ -370,83 +370,83 @@ Os cones autossuportados Orton vendem-se no Japão com o nome 立つゼーゲル
 
 :::
 
-## Cozedura de chacota {#bisque}
+## Bisque firing {#bisque lang=en}
 
-A cozedura de **chacota**{{en: bisque}} (em inglês britânico, _biscuit_) é a primeira cozedura, a temperatura mais baixa, que transforma o barro seco em peças duras e porosas, prontas a vidrar. Costuma fazer-se aos cones 06–04, {{1828–1945 °F; 998–1063 °C}} na tabela da Orton; os ceramistas do Reino Unido cozem muitas vezes a cerca de {{1000 °C; 1832 °F}}, perto do cone 06. A chacota deve ficar porosa, «geralmente mais de 15%» (Digitalfire), para absorver a água do vidrado{{en: glaze}}. Uma chacota demasiado branda recebe uma camada de vidrado demasiado grossa, que depois fissura e **recolhe**{{en: crawls}} (junta-se em ilhas e deixa o barro à vista). A chacota subcozida também «continua a retrair-se durante a cozedura de vidrado{{en: glaze firing}}», o que prejudica o acordo pasta-vidrado{{en: glaze fit}}. A enforna é tolerante: as peças podem tocar-se, as tampas podem cozer em cima das suas peças, e as taças ficam boca com boca em vez de umas dentro das outras.
+The **bisque** firing (biscuit in the UK) is the first, lower firing that turns dry clay into hard, porous ware ready to glaze. It is usually fired to cone 06–04, {{1828–1945 °F; 998–1063 °C}} on Orton's chart; UK potters often fire to around {{1000 °C; 1832 °F}}, near cone 06. The bisque should stay porous, "generally more than 15%" (Digitalfire), so it soaks water out of the glaze. Too soft a bisque takes glaze on too thick, which then cracks and **crawls** (pulls back into islands, leaving bare clay). Under-fired bisque also "continues to shrink during glaze firing", which spoils the glaze fit. Loading is forgiving: pieces may touch, lids can be fired on their pots, and bowls go rim to rim rather than nested.
 
-### Porque é que a fase inicial é lenta
+### Why the early part goes slowly
 
-A água ao passar a vapor «expande-se 1170 vezes», nota a Bracker's, por isso as peças húmidas têm de secar devagar. A L&L e a Orton aconselham que «Deve ter-se especial cuidado abaixo de 1500°F (815°C) para aquecer a pasta{{en: body}} por igual», e que o carbono seja queimado antes de cerca de {{1200 °F; 650 °C}}. Acima de {{1500 °F; 816 °C}}, o forno pode subir mais depressa.
+Water expands more than a thousandfold as it turns to steam, so damp ware has to be dried slowly. L&L and Orton advise that "Special care should be taken below 1500°F (815°C) to heat the body evenly", and that carbon must be burned out before about {{1200 °F; 650 °C}}. Above {{1500 °F; 816 °C}} the kiln can climb faster.
 
-Table: O que acontece quando uma chacota aquece
-Label: O que acontece numa chacota
+Table: What happens as a bisque heats
+Label: What happens in a bisque
 
-|                      Temperatura | O que acontece                                                         |
-| -------------------------------: | ---------------------------------------------------------------------- |
-|       {{300–500 °F; 149–260 °C}} | Os ligantes queimam-se                                                 |
-|      Cerca de {{450 °F; 232 °C}} | A matéria orgânica começa a arder                                      |
-|           Até {{700 °F; 371 °C}} | A água continua a sair do barro até acima desta temperatura            |
-|      {{842–1022 °F; 450–550 °C}} | A água quimicamente ligada sai do barro                                |
-|              {{1063 °F; 573 °C}} | Inversão do quartzo: a sílica{{en: silica}} do barro dilata de repente |
-|     Acima de {{1112 °F; 600 °C}} | O enxofre queima-se                                                    |
-| Até {{1200–1400 °F; 649–760 °C}} | O carbono natural queima-se; isto deve terminar abaixo do rubro        |
-|     Acima de {{1544 °F; 840 °C}} | O carbonato de cálcio decompõe-se                                      |
+|                        Temperature | What happens                                                |
+| ---------------------------------: | ----------------------------------------------------------- |
+|         {{300–500 °F; 149–260 °C}} | Binders burn off                                            |
+|           About {{450 °F; 232 °C}} | Organic matter starts to burn                               |
+|           Up to {{700 °F; 371 °C}} | Water keeps leaving the clay until above this temperature   |
+|        {{842–1022 °F; 450–550 °C}} | Chemically bound water leaves the clay                      |
+|                {{1063 °F; 573 °C}} | Quartz inversion: silica in the clay expands suddenly       |
+|          Above {{1112 °F; 600 °C}} | Sulfur burns out                                            |
+| Up to {{1200–1400 °F; 649–760 °C}} | Natural carbon burns off; this should finish below red heat |
+|          Above {{1544 °F; 840 °C}} | Calcium carbonate breaks down                               |
 
-A **inversão do quartzo**{{en: quartz inversion}} é a mudança brusca de tamanho da sílica do barro a {{1063 °F; 573 °C}}: dilata na subida e contrai na descida. O programa Slow Bisque da L&L abranda ao passar por ela, entre {{1000 °F; 538 °C}} e {{1100 °F; 593 °C}}. A Digitalfire achou isto «desnecessário nas cozeduras de chacota», e a Ceramics Monthly diz que importa sobretudo ao arrefecer peças densas. Abrandar custa pouco, por isso sugerimos que o faça nas peças grossas.
+**Quartz inversion** is the sudden change in size of the silica in clay at {{1063 °F; 573 °C}}: it expands on the way up and contracts on the way down. L&L's Slow Bisque slows through it, between {{1000 °F; 538 °C}} and {{1100 °F; 593 °C}}. Digitalfire found this "unnecessary for bisque firings", and Ceramics Monthly says it mainly matters when cooling dense ware. Slowing costs little, so our suggestion is to keep it for thick pieces.
 
-### Pré-aquecimento: secar no forno
+### Candling: drying in the kiln
 
-O **pré-aquecimento**{{en: candling}} consiste em manter o forno a uma temperatura baixa, com a tampa entreaberta ou o exaustor a funcionar, até a última humidade ter saído das peças. As fontes não concordam quanto à temperatura:
+**Candling** means holding the kiln at a low temperature, with the lid propped or the vent running, until the last moisture has left the ware. Sources disagree about the temperature:
 
-Table: Temperaturas de pré-aquecimento
+Table: Candling temperatures
 
-| Fonte                 | Pré-aquecimento                                                                              |
-| --------------------- | -------------------------------------------------------------------------------------------- |
-| Ceramics Monthly      | Um pouco abaixo da ebulição; por exemplo, a subir a {{25 °F/h; 14 °C/h}} durante 4–6 horas   |
-| L&L (pré-aquecimento) | Patamar{{en: hold}} a {{150–200 °F; 66–93 °C}}                                               |
-| Digitalfire           | Patamar a {{250 °F; 121 °C}}, porque um patamar abaixo da ebulição «não expulsa toda a água» |
+| Source           | Candling                                                                                 |
+| ---------------- | ---------------------------------------------------------------------------------------- |
+| Ceramics Monthly | Just short of boiling; for example, climbing at {{25 °F/h; 14 °C/h}} for 4–6 hours       |
+| L&L preheat      | Hold at {{150–200 °F; 66–93 °C}}                                                         |
+| Digitalfire      | Hold at {{250 °F; 121 °C}}, because holding below boiling "does not expel all the water" |
 
 > [!NOTE]
-> O nosso ponto de partida: suba devagar até não mais de cerca de {{250 °F; 121 °C}} e mantenha esse patamar até um espelho junto à saída de ar deixar de embaciar. Para peças grossas ou húmidas, mantenha-o durante a noite.
+> Our starting point: climb slowly to no more than about {{250 °F; 121 °C}}, and hold until a mirror at the vent stays clear. Hold overnight for thick or damp ware.
 
-O **teste do espelho**: segure um espelho à temperatura ambiente junto a um orifício de ventilação ou à fresta de uma tampa entreaberta. Se embaciar, ainda está a sair água; espere e volte a testar.
+The **mirror test**: hold a room-temperature mirror at a vent hole or at the gap under a propped lid. If it fogs, water is still leaving; wait, then test again.
 
-### Curvas de cozedura do controlador
+### Controller schedules
 
-Um **controlador** é uma unidade eletrónica que coze o forno segundo uma **curva de cozedura**: uma lista de **segmentos**, cada um com uma velocidade de subida (a **rampa**{{en: ramp}}), uma temperatura-alvo e um patamar opcional. Abaixo estão dois programas predefinidos dos controladores DynaTrol da L&L e Bartlett, e uma curva publicada pela Digitalfire. «A temperatura máxima» é a temperatura que o próprio controlador usa para o cone escolhido: para o cone 04 é {{1926 °F; 1052 °C}} e para o cone 06, {{1819 °F; 993 °C}}.
+A **controller** is an electronic unit that fires the kiln through a **schedule**: a list of **segments**, each a rate of climb (the **ramp**), a target temperature and an optional hold. Below are two presets from L&L's DynaTrol and Bartlett controllers, and a schedule published by Digitalfire. "Peak" is the controller's own temperature for the cone you choose: for cone 04 it is {{1926 °F; 1052 °C}}, and for cone 06, {{1819 °F; 993 °C}}.
 
-Table: Programas predefinidos de chacota da L&L e da Bartlett
-Label: Programas de chacota
+Table: L&L and Bartlett bisque presets
+Label: Bisque presets
 
-| Segmento                          |                                                                           Subir até |               Slow Bisque |            Fast Bisque |
-| --------------------------------- | ----------------------------------------------------------------------------------: | ------------------------: | ---------------------: |
-| 1                                 |                                                                  {{250 °F; 121 °C}} |      {{80 °F/h; 44 °C/h}} |  {{120 °F/h; 67 °C/h}} |
-| 2                                 |                                                                 {{1000 °F; 538 °C}} |    {{200 °F/h; 111 °C/h}} | {{300 °F/h; 167 °C/h}} |
-| 3                                 |                                                                 {{1100 °F; 593 °C}} |     {{100 °F/h; 56 °C/h}} |  {{150 °F/h; 83 °C/h}} |
-| 4                                 | {{250 °F; 139 °C}} abaixo da temperatura máxima: {{1676 °F; 913 °C}} para o cone 04 |    {{180 °F/h; 100 °C/h}} | {{180 °F/h; 100 °C/h}} |
-| 5                                 |                                                                A temperatura máxima |      {{80 °F/h; 44 °C/h}} |  {{108 °F/h; 60 °C/h}} |
-| Tempo de aquecimento, forno vazio |                                                                                     | Cerca de 13 horas ou mais |  Cerca de 10–11½ horas |
+| Segment                  |                                                           Climb to |            Slow Bisque |            Fast Bisque |
+| ------------------------ | -----------------------------------------------------------------: | ---------------------: | ---------------------: |
+| 1                        |                                                 {{250 °F; 121 °C}} |   {{80 °F/h; 44 °C/h}} |  {{120 °F/h; 67 °C/h}} |
+| 2                        |                                                {{1000 °F; 538 °C}} | {{200 °F/h; 111 °C/h}} | {{300 °F/h; 167 °C/h}} |
+| 3                        |                                                {{1100 °F; 593 °C}} |  {{100 °F/h; 56 °C/h}} |  {{150 °F/h; 83 °C/h}} |
+| 4                        | {{250 °F; 139 °C}} below the peak: {{1676 °F; 913 °C}} for cone 04 | {{180 °F/h; 100 °C/h}} | {{180 °F/h; 100 °C/h}} |
+| 5                        |                                                           The peak |   {{80 °F/h; 44 °C/h}} |  {{108 °F/h; 60 °C/h}} |
+| Heating time, empty kiln |                                                                    | About 13 hours or more |     About 10–11½ hours |
 
-Os tempos da L&L são «para os fornos vazios mais rápidos possíveis»; um forno carregado pode demorar até quatro vezes mais, e qualquer patamar que acrescente é trabalho térmico{{en: heatwork}} extra que os programas não preveem. A L&L aconselha o Slow Bisque, com um pré-aquecimento de 2–3 horas ou mais, para peças grandes ou húmidas, e desaconselha a cozedura rápida, que «pode causar defeitos como picadas{{en: pinholes}}, fissuras e queima incompleta da matéria orgânica».
+L&L's times are "for the fastest possible empty kilns"; a loaded kiln can take as much as four times longer, and any hold you add is extra heatwork the presets do not allow for. L&L advises Slow Bisque, with a preheat of 2–3 hours or longer, for large or damp pieces, and warns against fast firing, which "can cause defects like pinholes, cracking, and insufficient burnout".
 
-Table: Digitalfire BQ1000 para chacota, até cerca do cone 06
+Table: Digitalfire BQ1000 bisque, to about cone 06
 Label: Digitalfire BQ1000
 
-| Passo |             Velocidade |                 Alvo | Patamar                                     |
-| ----- | ---------------------: | -------------------: | ------------------------------------------- |
-| 1     | {{306 °F/h; 170 °C/h}} |   {{248 °F; 120 °C}} | 60 minutos; até 10 horas para peças pesadas |
-| 2     | {{306 °F/h; 170 °C/h}} |  {{1733 °F; 945 °C}} | Nenhum                                      |
-| 3     |  {{108 °F/h; 60 °C/h}} | {{1832 °F; 1000 °C}} | 15 minutos                                  |
+| Step |                   Rate |               Target | Hold                                      |
+| ---- | ---------------------: | -------------------: | ----------------------------------------- |
+| 1    | {{306 °F/h; 170 °C/h}} |   {{248 °F; 120 °C}} | 60 minutes; up to 10 hours for heavy ware |
+| 2    | {{306 °F/h; 170 °C/h}} |  {{1733 °F; 945 °C}} | None                                      |
+| 3    |  {{108 °F/h; 60 °C/h}} | {{1832 °F; 1000 °C}} | 15 minutes                                |
 
-A BQ1000 demora cerca de 7 horas e 44 minutos. O seu autor considera aceitável até {{500 °F/h; 278 °C/h}} para peças finas e secas, e abranda o último passo para igualar a temperatura em toda a carga.
+BQ1000 takes about 7 hours 44 minutes. Its author finds up to {{500 °F/h; 278 °C/h}} fine for thin, dry ware, and slows the last step to even out the temperature through the load.
 
-### Os cones do controlador e a tabela da Orton
+### Controller cones and Orton's chart
 
-Os controladores da L&L e da Bartlett usam {{1926 °F; 1052 °C}} para o cone 04 e {{1819 °F; 993 °C}} para o cone 06, um pouco abaixo dos {{1945 °F; 1063 °C}} e {{1828 °F; 998 °C}} da Orton; coincidem no cone 6 e no cone 10. Os cones testemunho{{en: witness cones}} resolvem a diferença: se discordarem do controlador, acerte-o com a correção do cone (offset).
+L&L and Bartlett controllers use {{1926 °F; 1052 °C}} for cone 04 and {{1819 °F; 993 °C}} for cone 06, a little below Orton's {{1945 °F; 1063 °C}} and {{1828 °F; 998 °C}}; they agree at cone 6 and cone 10. Witness cones settle the difference: if they disagree with the controller, correct it with the cone offset.
 
-### Num forno manual
+### On a manual kiln
 
-Um forno manual segue o mesmo plano à mão: secar devagar com a tampa entreaberta e os óculos abertos, subir os reguladores de Baixo para Médio e depois para Alto, e deixar o kiln sitter terminar a cozedura. Os procedimentos publicados estão em «Fornos manuais em pormenor», abaixo.
+A manual kiln follows the same plan by hand: dry slowly with the lid propped and the peepholes open, step the switches up from Low to Medium to High, and let the sitter end the firing. The published procedures are under Manual kilns in detail, below.
 
 ## Cozedura de vidrado {#glaze}
 

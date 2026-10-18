@@ -3,39 +3,39 @@ title: Mistura segura e ventilação
 lead: Como manter a poeira dos vidrados fora dos seus pulmões e os fumos do forno fora da sua casa: os hábitos, o equipamento e as matérias-primas que mais importam.
 ---
 
-## O principal perigo: a poeira {#the-main-hazard}
+## The main hazard: dust {#the-main-hazard lang=en}
 
-No trabalho com vidrados{{en: glazes}}, o principal perigo a longo prazo é a poeira, acima de tudo a **sílica cristalina respirável**{{en: respirable crystalline silica}}: partículas de quartzo ou de cristobalite (formas cristalinas da sílica{{en: silica}}) suficientemente pequenas para chegarem ao fundo dos pulmões. A sílica cristalina pode constituir cerca de 10 a 60% do peso seco de um vidrado, e a maioria das argilas (exceto o caulino{{en: kaolin}}) e muitos feldspatos{{en: feldspars}} também contêm quartzo fino. O Health and Safety Executive (HSE) do Reino Unido diz que esta poeira «é muito fina e invisível sob iluminação normal», por isso uma sala com aspeto limpo não prova que o ar também o esteja.
+The main long-term hazard in glaze work is dust, above all **respirable crystalline silica**: particles of quartz or cristobalite (crystal forms of silica) small enough to reach deep into the lungs. Crystalline silica can make up about 10 to 60% of a glaze's dry weight, and most clays (except kaolin) and many feldspars also carry fine quartz. The UK's Health and Safety Executive (HSE) says this dust "is very fine and invisible under normal lighting", so a room that looks clean is not proof that the air is.
 
-Respirada ao longo do tempo, pode causar **silicose**, uma doença pulmonar que o HSE descreve como «grave e irreversível» e capaz de «causar incapacidade permanente e morte prematura». Pode também causar **DPOC** (doença pulmonar obstrutiva crónica: bronquite crónica e enfisema), que o tabaco agrava. O IARC, a agência da Organização Mundial da Saúde para o cancro, classifica a sílica cristalina inalada no Grupo 1, «carcinogénico para o ser humano».
+Breathed in over time, it can cause **silicosis**, a lung disease that HSE describes as "serious and irreversible" and able to "cause permanent disablement and early death". It can also cause **COPD** (chronic obstructive pulmonary disease: long-term bronchitis and emphysema), which smoking makes worse. IARC, the World Health Organization's cancer agency, places inhaled crystalline silica in Group 1, "carcinogenic to humans".
 
-A sílica não se transforma em fumos no forno, e um vidrado húmido não é um perigo por inalação. Os momentos em que é preciso ter cuidado são aqueles em que o material está seco: ao abrir sacos, ao pesar, ao misturar o pó na água e ao limpar pingos, névoa de pulverização e restos de vidrado que secaram e voltaram a ser pó.
+Silica does not turn into fumes in the kiln, and a wet glaze is not an inhalation hazard unless it is sprayed: spray mist carries silica and dries to dust (see Spraying, below). The times to take care are when material is dry: opening bags, weighing, stirring powder into water, and cleaning up drips, overspray and slop once they have dried back into dust.
 
-### Valores-limite de exposição
+### Exposure limits
 
-As regras para os locais de trabalho fixam um **valor-limite de exposição profissional**: a quantidade máxima de sílica que um trabalhador pode respirar, em média ao longo de um dia de 8 horas, em miligramas (mg) ou microgramas (µg, milésimos de miligrama) por metro cúbico de ar.
+Workplace rules set an **exposure limit**: the most silica a worker may breathe, averaged over an 8-hour day, in milligrams (mg) or micrograms (µg, thousandths of a milligram) per cubic meter of air.
 
-Table: Valores-limite de exposição profissional à sílica cristalina respirável (média de 8 horas)
-Label: Valores-limite para a sílica
+Table: Workplace limits for respirable crystalline silica (8-hour average)
+Label: Silica exposure limits
 
-| Região         |          Valor-limite | Notas                                                                                                         |
-| -------------- | --------------------: | ------------------------------------------------------------------------------------------------------------- |
-| Estados Unidos | 0,05 mg/m³ (50 µg/m³) | Valor-limite da OSHA. Os empregadores têm de começar a tomar medidas a partir de 25 µg/m³, o «nível de ação». |
-| Reino Unido    |             0,1 mg/m³ | A exposição tem também de ser mantida «tão baixa quanto razoavelmente praticável».                            |
-| União Europeia |             0,1 mg/m³ | Valor-limite vinculativo (Diretiva 2017/2398). Alguns Estados-Membros fixam valores mais baixos.              |
-| Austrália      |            0,05 mg/m³ | Desde julho de 2020. Em junho de 2026, a maioria dos ministros não apoiou uma redução para 0,025.             |
-| Nova Zelândia  |           0,025 mg/m³ | Desde 2023. Os valores-limite da WorkSafe são orientações, não limites legais.                                |
+| Region         |                 Limit | Notes                                                                             |
+| -------------- | --------------------: | --------------------------------------------------------------------------------- |
+| United States  | 0.05 mg/m³ (50 µg/m³) | OSHA's limit. Employers must start taking action at 25 µg/m³, the "action level". |
+| United Kingdom |             0.1 mg/m³ | Exposure must also be kept "as low as reasonably practicable".                    |
+| European Union |             0.1 mg/m³ | Binding limit (Directive 2017/2398). Some member states set lower ones.           |
+| Australia      |            0.05 mg/m³ | Since July 2020. In June 2026, most ministers did not support a cut to 0.025.     |
+| New Zealand    |           0.025 mg/m³ | Since 2023. WorkSafe's standards are guidance, not legal limits.                  |
 
-Algumas páginas indicam 0,025 mg/m³ para a Austrália, mas o valor-limite oficial continua a ser 0,05. Seja como for, o conselho é o mesmo: mantenha o nível de poeira tão baixo quanto puder.
+Some pages quote 0.025 mg/m³ for Australia, but the official limit is still 0.05. Either way, the advice is the same: keep dust as low as you can.
 
-Vários Estados-Membros da UE fixam valores-limite mais baixos do que o da UE. O valor-limite do país onde vive, a lei que o fixa e o organismo nacional de segurança no trabalho:
+Several EU member states set lower limits than the EU's. The limit where you live, the law that sets it and the national body for safety at work:
 
 ::silica-limit
 
 > [!NOTE]
-> Estes são valores-limite para locais de trabalho. Obrigam os empregadores, por isso ninguém fiscaliza um ceramista que trabalhe sozinho em casa, embora os ateliers comunitários e as escolas com pessoal ao serviço estejam normalmente abrangidos (verifique as regras locais). A poeira é a mesma em casa, e os valores-limite mostram a dimensão do perigo: 25 a 100 milionésimos de grama em cada metro cúbico de ar, em média ao longo de um dia.
+> These are workplace limits. They bind employers, so no one inspects a potter working alone at home, though community studios and schools with staff are usually covered (check your local rules). The dust is the same at home, and the limits show the scale of the hazard: 25 to 100 millionths of a gram in each cubic meter of air, averaged over a day.
 
-Quase ninguém mediu a poeira em ateliers de amadores, por isso sugerimos que trate todas as tarefas com pó seco como tarefas que levantam poeira.
+Almost no one has measured dust in hobby studios, so we suggest treating every dry-powder task as a dusty one.
 
 ## Os hábitos que mais importam {#habits}
 
@@ -65,49 +65,49 @@ A maior parte da proteção vem dos hábitos, não do equipamento. Os conselhos 
 
 Esta ordem é uma sugestão nossa, baseada no princípio do HSE de evitar primeiro o pó. Para pesar e misturar passo a passo, veja [Como fazer um vidrado](/guides/making-a-glaze).
 
-## Máscaras de proteção respiratória {#respirators}
+## Respirators {#respirators lang=en}
 
-Uma **máscara de proteção respiratória** é uma máscara certificada para filtrar partículas finas do ar que respira. Só funciona quando veda no rosto, e reforça os bons hábitos em vez de os substituir.
+A **respirator** is a mask certified to filter fine particles from the air you breathe. It works only when it seals to your face, and it backs up good habits rather than replacing them.
 
-### Classes por região
+### Classes by region
 
-Table: Classes de máscaras para partículas por região (equivalências aproximadas para poeira de vidrado)
-Label: Classes de máscaras
+Table: Particle respirator classes by region (rough equivalents for glaze dust)
+Label: Respirator classes
 
-| Região                    | Classe habitual | Classe superior | O que procurar                                                                              |
-| ------------------------- | --------------- | --------------- | ------------------------------------------------------------------------------------------- |
-| Estados Unidos            | N95             | P100            | Aprovação NIOSH na máscara ou na embalagem                                                  |
-| Reino Unido e UE          | FFP2            | FFP3            | EN 149 em máscaras descartáveis; EN 140 em semimáscaras reutilizáveis, com filtros P2 ou P3 |
-| Austrália e Nova Zelândia | P2              | P3              | AS/NZS 1716                                                                                 |
+| Region                    | Everyday class | Higher class | Look for                                                                   |
+| ------------------------- | -------------- | ------------ | -------------------------------------------------------------------------- |
+| United States             | N95            | P100         | NIOSH approval on the mask or its packaging                                |
+| UK and EU                 | FFP2           | FFP3         | EN 149 on disposable masks; EN 140 half masks with EN 143 P2 or P3 filters |
+| Australia and New Zealand | P2             | P3           | AS/NZS 1716                                                                |
 
-A classe superior filtra uma maior proporção de partículas finas. As fontes não concordam quanto ao que filtra uma P3 australiana (pelo menos 99%, ou pelo menos 99,95%), por isso compre a classe certificada que se vende na sua região. Uma **semimáscara** reutilizável (que cobre o nariz e a boca, com filtros substituíveis) com filtros P100 (P3 fora dos EUA) é uma escolha comum nos ateliers.
+The higher class filters a larger share of fine particles. Sources disagree on what an Australian P3 filters (at least 99%, or at least 99.95%), so buy the certified class sold in your region. A reusable **half mask** (covering the nose and mouth, with replaceable filters) fitted with P100 filters (P3 outside the US) is a common studio choice.
 
-### Ajuste e vedação
+### Fit and seal
 
-Uma máscara que tem fugas deixa entrar poeira pelos bordos, seja qual for a sua classe. O HSE avisa que a barba e a barba por fazer «tornam impossível obter uma boa vedação».
+A mask that leaks lets dust in around its edges, whatever its class. HSE warns that stubble and beards "make it impossible to get a good seal".
 
-- **Faça a barba pouco antes de trabalhar.** As orientações diferem quanto ao tempo que pode passar depois de fazer a barba para ainda contar como «barba feita». Um fabricante do Reino Unido, citando o HSE, diz que a barba deve ser feita nas 8 horas anteriores ao início do trabalho. A norma australiana e neozelandesa de ensaio de ajuste pede que se faça a barba antes de um ensaio de ajuste, «de preferência nas 12 horas anteriores». Fazer a barba pouco antes de trabalhar cumpre ambas.
-- **Se usa barba,** um **aparelho filtrante motorizado** de ajuste largo (PAPR: um capuz ou capacete com uma ventoinha que fornece ar filtrado) não precisa de vedação no rosto.
-- **Escolha bem o tamanho.** Um mau ajuste é uma causa importante de fugas. Os locais de trabalho usam um **ensaio de ajuste**, uma verificação de que uma máscara em particular veda num rosto em particular. Em casa, sugerimos seguir as instruções do fabricante para verificar a vedação sempre que a puser.
+- **Shave shortly before you work.** Guidance differs on how recent "clean-shaven" must be. A UK maker, citing HSE, says shaved within 8 hours of starting work. The Australian and New Zealand fit-test standard asks for a shave before a fit test, "preferably within 12 hours". Shaving shortly before you work meets both.
+- **If you keep a beard,** a loose-fitting **powered respirator** (PAPR: a hood or helmet with a fan that supplies filtered air) needs no face seal.
+- **Get the size right.** Poor fit is a major cause of leaks. Workplaces use a **fit test**, a check that a particular mask seals on a particular face. At home, we suggest following the maker's instructions for checking the seal each time you put it on.
 
 > [!NOTE]
-> Na nossa opinião, o ajuste importa mais do que a classe: uma N95, FFP2 ou P2 bem ajustada costuma funcionar melhor do que uma P100 larga.
+> In our view, fit matters more than class: a well-fitted N95, FFP2 or P2 will usually do better than a loose P100.
 
-### Quando usar
+### When to wear one
 
-O HSE diz que uma máscara «normalmente não é necessária» quando a pesagem e a mistura se fazem numa cabina com exaustão, mas «pode ser necessária para manutenção e limpeza». A maioria dos ateliers caseiros não tem cabina, por isso sugerimos usar uma (N95, FFP2 ou P2 no mínimo; P100, FFP3 ou P3 é melhor) sempre que:
+HSE says a respirator is "normally not needed" where weighing and mixing happen in a ventilated enclosure, but "may be needed for maintenance and cleaning". Most home studios have no enclosure, so we suggest wearing one (N95, FFP2 or P2 at least; P100, FFP3 or P3 is better) whenever you:
 
-- abrir sacos ou despejar pó;
-- pesar pós e mexê-los em água;
-- raspar, lixar ou moer vidrado seco ou chacota;
-- fizer qualquer limpeza a seco, ou esvaziar um aspirador;
-- pulverizar vidrado (numa cabina: veja abaixo).
+- open bags or tip out powder;
+- weigh powders and stir them into water;
+- scrape, sand or grind dried glaze or bisque;
+- do any dry cleanup, or empty a vacuum;
+- spray glaze (in a booth: see below).
 
-### O que não é uma máscara de proteção respiratória
+### What is not a respirator
 
-- Máscaras cirúrgicas, máscaras de pano e máscaras para «poeiras incómodas» sem marcação NIOSH, EN 149 ou AS/NZS 1716. Não confiaríamos nelas para poeira de vidrado.
-- Uma máscara contra poeiras «não o protegerá contra gases nem vapores» (OSHA), por isso não faz nada contra os fumos do forno.
-- Cuide da sua: a OSHA observa que uma máscara suja ou mal usada «pode tornar-se um perigo». Guarde-a limpa, longe da roupa de trabalho com poeira.
+- Surgical masks, cloth masks and "nuisance dust" masks without a NIOSH, EN 149 or AS/NZS 1716 marking. We would not rely on them for glaze dust.
+- A dust respirator "will not protect you against gases, vapors" (OSHA), so it does nothing for kiln fumes.
+- Look after yours: OSHA notes that a dirty or misused respirator "can become a hazard". Store it clean, away from dusty work clothes.
 
 ## Limpeza, roupa e mãos {#cleaning}
 
@@ -181,36 +181,36 @@ A alternativa é uma **campânula de exaustão** (uma cobertura por cima do forn
 
 O raku produz grandes quantidades de fumo e de CO; a Universidade do Utah aconselha a fazê-lo ao ar livre, longe de tomadas de ar e de janelas. Sobre a cozedura em si, veja [Cozer num forno simples](/guides/firing).
 
-## Matérias-primas que exigem mais cuidado {#materials}
+## Materials that need most care {#materials lang=en}
 
-A maioria das matérias-primas dos vidrados{{en: glazes}}, incluindo a sílica{{en: silica}}, as argilas, os feldspatos{{en: feldspars}} e as fritas{{en: frits}}, é sobretudo um perigo de poeira, que os hábitos acima controlam. Uma lista mais curta é tóxica por si só, ao respirar, ao engolir ou em contacto com a pele. O Digitalfire acrescenta que os pigmentos cerâmicos{{en: stains}} são em geral muito mais seguros do que os óxidos em cru, e que «podem fazer-se vidrados desequilibrados que libertam metais tóxicos a partir de quaisquer matérias-primas»: saber se um vidrado é apto para contacto com alimentos{{en: food safe}} depende da receita inteira, não de um só ingrediente.
+Most glaze materials, including silica, clays, feldspars and frits, are mainly a dust hazard, which the habits above control. A shorter list is toxic in its own right, by breathing, swallowing or skin contact. Digitalfire adds that stains are generally much safer than raw oxides, and that "unbalanced glazes that release toxic metals can be made from any materials": food safety depends on the whole recipe, not on one ingredient.
 
-Um **grupo do IARC** é uma classificação quanto ao cancro: o Grupo 1 significa «carcinogénico para o ser humano», o Grupo 2A «provavelmente carcinogénico para o ser humano», o Grupo 2B «possivelmente carcinogénico para o ser humano» e o Grupo 3 «não classificável quanto à sua carcinogenicidade para o ser humano», o que quer dizer que não há provas suficientes para julgar num ou noutro sentido.
+An **IARC group** is a cancer classification: Group 1 means "carcinogenic to humans", Group 2A "probably carcinogenic to humans", Group 2B "possibly carcinogenic to humans", and Group 3 "not classifiable as to its carcinogenicity to humans", which means too little evidence to judge either way.
 
-Table: Matérias-primas de vidrados que exigem cuidado especial
-Label: Matérias-primas que exigem mais cuidado
+Table: Glaze materials that need extra care
+Label: Materials that need most care
 
-| Matéria-prima                                                                 | Perigo                                                                                                                                                                                                      | Precaução                                                                                                                                                      |
-| ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Compostos de chumbo e fritas de chumbo                                        | «Altamente tóxicos por inalação ou ingestão»; vaporizam-se no forno a temperaturas mais baixas do que a maioria das matérias-primas dos vidrados.                                                           | Evite; segundo o Digitalfire, só para especialistas. Parta do princípio de que qualquer vidrado sem o rótulo «sem chumbo» ou «isento de chumbo» contém chumbo. |
-| Carbonato de bário                                                            | Insolúvel em água, mas dissolve-se no ácido do estômago; afeta o coração e os músculos (batimento cardíaco irregular, potássio baixo).                                                                      | Estrôncio ou uma frita de bário, quando a receita o permitir; máscara de proteção respiratória; recipiente rotulado.                                           |
-| Dióxido de manganês                                                           | A poeira ou os fumos podem causar **manganismo**, uma doença do sistema nervoso semelhante à doença de Parkinson, geralmente após 1 a 3 anos de exposição. Os fumos podem causar febre dos fumos metálicos. | Em vez dele, pigmentos cerâmicos pretos em percentagens baixas; ventile o forno.                                                                               |
-| Dicromato de potássio e óxido de crómio                                       | O crómio(VI), como no dicromato, é do Grupo 1 do IARC. Essa classificação não abrange o crómio(III), como no óxido de crómio.                                                                               | Evite o dicromato. Consideramos o óxido de crómio muito menos perigoso, mas reduza ao mínimo a sua poeira.                                                     |
-| Cobalto                                                                       | Sais solúveis de cobalto(II): IARC 2A; óxido de cobalto(II): 2B; Co₃O₄ negro: Grupo 3.                                                                                                                      | Reduza ao mínimo a poeira; pigmentos cerâmicos para os pretos.                                                                                                 |
-| Compostos de níquel                                                           | Na lista de carcinogénicos humanos conhecidos ou prováveis da Universidade do Utah.                                                                                                                         | Pigmentos cerâmicos em vez de percentagens altas.                                                                                                              |
-| Cádmio e selénio, em cru ou em pigmentos                                      | Os compostos de cádmio estão na lista de carcinogénicos humanos conhecidos ou prováveis do Utah.                                                                                                            | «Só por especialistas» (Digitalfire); leia a FDS de qualquer pigmento.                                                                                         |
-| Antimónio e vanádio                                                           | O antimónio trivalente (como no trióxido de antimónio) é IARC 2A; o vanádio é «altamente tóxico por inalação».                                                                                              | Vanádio só para especialistas; reduza ao mínimo a poeira de antimónio.                                                                                         |
-| Cobre e zinco                                                                 | Os fumos do forno podem causar febre dos fumos metálicos; o óxido de zinco cru «geralmente não é considerado perigoso».                                                                                     | Ventile o forno.                                                                                                                                               |
-| Carbonato de lítio                                                            | «Altamente tóxico por inalação». Um comité de peritos da UE concluiu que pode prejudicar a fertilidade e o nascituro; quando verificámos, a adoção formal não estava confirmada.                            | Luvas e máscara de proteção respiratória; mantenha-o longe das crianças. Sugerimos cuidados redobrados durante a gravidez.                                     |
-| Bórax e ácido bórico                                                          | Classificados na UE como «Pode afetar a fertilidade. Pode afetar o nascituro.»                                                                                                                              | Luvas; boro de uma frita, sempre que possível.                                                                                                                 |
-| Carbonato de sódio, carbonato de potássio{{en: potash}}, feldspatos alcalinos | Irritantes para a pele.                                                                                                                                                                                     | Luvas.                                                                                                                                                         |
-| Fluorite, criolite, lepidolite                                                | Libertam gases de flúor na cozedura; a fluorite também irrita a pele.                                                                                                                                       | Ventile o forno para o exterior; luvas.                                                                                                                        |
-| Talco                                                                         | IARC 2A desde julho de 2024; o talco contaminado com amianto conta como amianto, Grupo 1.                                                                                                                   | Talco lamelar (não fibroso) e sem amianto; verifique a sua FDS.                                                                                                |
+| Material                               | Hazard                                                                                                                                                                                                                                       | Precaution                                                                                                  |
+| -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| Lead compounds and lead frits          | "Highly toxic by inhalation or ingestion"; vaporizes in the kiln at lower temperatures than most glaze materials.                                                                                                                            | Avoid; Digitalfire says experts only. Assume any glaze not labeled "lead-free" or "leadless" contains lead. |
+| Barium carbonate                       | Insoluble in water but dissolves in stomach acid; affects the heart and muscles (irregular heartbeat, low potassium).                                                                                                                        | A barium frit or strontium where the recipe allows; respirator; labeled container.                          |
+| Manganese dioxide                      | Dust or fume can cause **manganism**, a nervous-system illness like Parkinson's disease, usually after 1 to 3 years of exposure. Fume can cause metal fume fever.                                                                            | Black stains at low percentages instead; vent the kiln.                                                     |
+| Potassium dichromate and chrome oxide  | Chromium(VI), as in dichromate, is IARC Group 1. That listing does not cover chromium(III), as in chrome oxide.                                                                                                                              | Avoid dichromate. We treat chrome oxide as far less hazardous, but keep its dust down.                      |
+| Cobalt                                 | Soluble cobalt(II) salts IARC 2A; cobalt(II) oxide 2B; black Co₃O₄ Group 3. Cobalt carbonate is classified in the EU as may cause cancer if breathed in, may damage fertility and suspected of causing genetic defects (H350i, H360F, H341). | Keep dust down; stains for blacks.                                                                          |
+| Nickel compounds                       | Among the University of Utah's known or probable human carcinogens.                                                                                                                                                                          | Stains rather than high percentages.                                                                        |
+| Cadmium and selenium, raw or in stains | Cadmium compounds are among Utah's known or probable human carcinogens.                                                                                                                                                                      | "Only by experts" (Digitalfire); read any stain's SDS.                                                      |
+| Antimony and vanadium                  | Trivalent antimony (as in antimony trioxide) IARC 2A; vanadium "highly toxic by inhalation".                                                                                                                                                 | Vanadium for experts only; keep antimony dust down.                                                         |
+| Copper and zinc                        | Kiln fume can cause metal fume fever; raw zinc oxide is "generally not considered hazardous".                                                                                                                                                | Vent the kiln.                                                                                              |
+| Lithium carbonate                      | "Highly toxic by inhalation". An EU expert committee concluded it may harm fertility, the unborn child and breast-fed children; formal adoption was not confirmed when we checked.                                                           | Gloves and respirator; keep from children. We suggest extra care in pregnancy and while breastfeeding.      |
+| Borax and boric acid                   | Classified in the EU as "may damage fertility; may damage the unborn child".                                                                                                                                                                 | Gloves; boron from a frit where you can.                                                                    |
+| Soda ash, potash, alkaline feldspars   | Skin irritants.                                                                                                                                                                                                                              | Gloves.                                                                                                     |
+| Fluorspar, cryolite, lepidolite        | Release fluorine gases in firing; fluorspar also irritates skin.                                                                                                                                                                             | Vent the kiln outdoors; gloves.                                                                             |
+| Talc                                   | IARC 2A since July 2024; talc contaminated with asbestos counts as asbestos, Group 1.                                                                                                                                                        | Platy (not fibrous), asbestos-free talc; check its SDS.                                                     |
 
-O bórax, o ácido bórico, o carbonato de sódio e o carbonato de potássio dissolvem-se em água, por isso consideramo-los os mais suscetíveis de serem absorvidos pela pele ferida ou engolidos a partir de mãos por lavar.
+Borax, boric acid, soda ash and potash dissolve in water, so we treat them as the likeliest to be absorbed through broken skin or swallowed from unwashed hands.
 
 > [!NOTE]
-> Se uma receita pedir carbonato de bário cru, muito manganês ou qualquer matéria-prima com chumbo ou cádmio, procure uma versão que use em vez disso uma frita ou um pigmento cerâmico. O Glazecalc pode comparar a química da receita original e a da troca; depois, teste o novo vidrado.
+> If a recipe calls for raw barium carbonate, a lot of manganese, or any lead or cadmium material, look for a version that uses a frit or a stain instead. Glazecalc can compare the chemistry of the original and the swap; then test the new glaze.
 
 ## Luvas, pele e olhos {#gloves-and-eyes}
 
@@ -252,22 +252,24 @@ Estas são as fontes primárias que mais vale a pena ler. A maioria foi escrita 
 - **Nova Zelândia:** a WorkSafe New Zealand fixa os valores-limite de exposição nos locais de trabalho; o [historial do valor-limite para a sílica](https://mbie.govt.nz/building-and-energy/building/building-and-construction-consultations/work-with-engineered-stone-and-materials-containing-crystalline-silica/annex-iii) do MBIE indica as datas.
 - **Fornos:** o [guia da Skutt para a sala do forno](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Designing-A-Kiln-Room-1.pdf), a [ficha da Orton e da CCSA sobre os fumos dos fornos](https://assets.noviams.com/novi-file-uploads/ccsa/Product_Safety/Fumes.pdf) e, acima de tudo, o manual do seu próprio forno.
 
-## Fontes {#sources}
+## Sources {#sources lang=en}
 
 - [OSHA: 29 CFR 1910.1053, Respirable crystalline silica](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.1053)
 - [OSHA: 29 CFR 1910.134 Appendix D, Information for employees using respirators when not required](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.134AppD)
 - [OSHA: 29 CFR 1910.1200 Appendix D, Safety data sheets](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.1200AppD)
-- [NIOSH: Silicosis alert (publicação 92-107)](https://www.cdc.gov/niosh/docs/92-107)
+- [NIOSH: Silicosis alert (publication 92-107)](https://www.cdc.gov/niosh/docs/92-107)
 - [HSE: COSHH essentials CR1, Glaze and colour preparation](https://www.hse.gov.uk/PUBNS/guidance/cr1.pdf)
 - [HSE: COSHH essentials CR5, Spraying glazes and colours](https://www.hse.gov.uk/PUBNS/guidance/cr5.pdf)
 - [HSE: Fit testing basics](https://www.hse.gov.uk/respiratory-protective-equipment/fit-testing-basics.htm)
 - [Safe Work Australia: Research on a lower workplace exposure standard for respirable crystalline silica](https://www.safeworkaustralia.gov.au/safety-topic/hazards/crystalline-silica-and-silicosis/research-lower-workplace-exposure-standard-respirable-crystalline-silica-0)
-- [Enviliance: relatório 16612, a decisão da Austrália de junho de 2026 sobre o valor-limite para a sílica](https://enviliance.com/regions/oceania/au/report_16612)
-- [MBIE (Nova Zelândia): Work with engineered stone and materials containing crystalline silica, Annex III](https://mbie.govt.nz/building-and-energy/building/building-and-construction-consultations/work-with-engineered-stone-and-materials-containing-crystalline-silica/annex-iii)
+- [Enviliance: Report 16612, Australia's June 2026 decision on the silica exposure standard](https://enviliance.com/regions/oceania/au/report_16612)
+- [MBIE (New Zealand): Work with engineered stone and materials containing crystalline silica, Annex III](https://mbie.govt.nz/building-and-energy/building/building-and-construction-consultations/work-with-engineered-stone-and-materials-containing-crystalline-silica/annex-iii)
 - [IARC: Monographs Volume 100C](https://publications.iarc.who.int/120)
 - [IARC: Volume 131, Cobalt, antimony compounds and weapons-grade tungsten alloy](https://monographs.iarc.who.int/news-events/volume-131-cobalt-antimony-compounds-and-weapons-grade-tungsten-alloy)
 - [Science Media Centre Spain: IARC classifies talc (2024)](https://sciencemediacentre.es/en/node/3775)
-- [ECHA: documento do Comité de Avaliação dos Riscos sobre o ácido bórico e os boratos](https://echa.europa.eu/documents/10162/7d740d8c-5cd5-872b-5da2-e549983a9ff9)
+- [ECHA: Risk Assessment Committee opinion on lithium carbonate, chloride and hydroxide (2021, PDF)](https://echa.europa.eu/documents/10162/e2a3c38e-85fe-505c-a325-293c70a74da5)
+- [PubChem: Cobalt carbonate, GHS classification, including its EU harmonised one](https://pubchem.ncbi.nlm.nih.gov/compound/10565#section=GHS-Classification)
+- [ECHA: Risk Assessment Committee document on boric acid and borates](https://echa.europa.eu/documents/10162/7d740d8c-5cd5-872b-5da2-e549983a9ff9)
 - [Coslaw: EU introduces new CMR classifications under the 24th ATP to the CLP Regulation](https://coslaw.eu/eu-introduces-new-cmr-classifications-under-the-24th-atp-to-the-clp-regulation/)
 - [University of Utah EHS: Arts safety: ceramics](https://www.ehs.utah.edu/guidelines/arts-safety-ceramics/)
 - [University of Calgary: Ceramics health hazards](https://arts.ucalgary.ca/sites/default/files/teams/36/Ceramics%20PDF.pdf)
@@ -275,8 +277,9 @@ Estas são as fontes primárias que mais vale a pena ler. A maioria foi escrita 
 - [Digitalfire: Kiln fumes](https://digitalfire.com/glossary/kiln+fumes)
 - [Digitalfire: Barium and compounds toxicology](https://digitalfire.com/hazard/barium+and+compounds+toxicology)
 - [Digitalfire: Manganese inorganic compounds toxicology](https://digitalfire.com/hazard/manganese+inorganic+compounds+toxicology)
+- [JSP: What levels of protection do particulate filters provide?](https://jspsafety.helpjuice.com/en_GB/what-levels-of-protection-do-particulate-filters-provide)
 - [JSP: Why is a clean shave essential for a proper tight-fitting respirator seal?](https://jspsafety.helpjuice.com/en_GB/why-is-a-clean-shave-essential-for-a-proper-tight-fitting-respirator-seal-can-i-have-a-beard)
 - [Skutt: Kiln room design and product specifications](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Designing-A-Kiln-Room-1.pdf)
 - [CIRMA: Kiln safety bulletin (2025)](https://downloads.ccm-ct.org/pdf/Media-Library-Bulletins/KilnSafety-Bulletin-052825.pdf)
 - [Ceramic Arts Network: Dave Finkelnburg, How and why to use a kiln vent](https://ceramicartsnetwork.org/daily/article/How-and-Why-to-Use-a-Kiln-Vent)
-- [CCSA e Orton: What is so bad about fumes?](https://assets.noviams.com/novi-file-uploads/ccsa/Product_Safety/Fumes.pdf)
+- [CCSA and Orton: What is so bad about fumes?](https://assets.noviams.com/novi-file-uploads/ccsa/Product_Safety/Fumes.pdf)

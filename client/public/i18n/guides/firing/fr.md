@@ -370,83 +370,83 @@ Les cônes Orton autoportants sont vendus au Japon sous le nom 立つゼーゲ�
 
 :::
 
-## Cuisson de biscuit {#bisque}
+## Bisque firing {#bisque lang=en}
 
-La cuisson de **biscuit**{{en: bisque}} (les Britanniques disent aussi biscuit) est la première cuisson, à plus basse température, qui transforme la terre sèche en pièces dures et poreuses, prêtes à émailler. On la fait en général aux cônes{{en: cones}} 06–04, {{1828–1945 °F; 998–1063 °C}} d’après le tableau d’Orton ; les céramistes britanniques cuisent souvent vers {{1000 °C; 1832 °F}}, près du cône 06. Le biscuit doit rester poreux, « en général à plus de 15 % » (Digitalfire), pour absorber l’eau de l’émail{{en: glaze}}. Un biscuit trop tendre prend une couche d’émail trop épaisse, qui se fendille puis **se rétracte**{{en: crawls}} (se retire en îlots en laissant la terre à nu). Un biscuit sous-cuit « continue aussi à rétrécir pendant la cuisson d’émail{{en: glaze firing}} », ce qui nuit à l’accord terre-émail{{en: glaze fit}}. L’enfournement est tolérant : les pièces peuvent se toucher, les couvercles peuvent cuire sur leurs pots, et les bols se placent bord contre bord plutôt qu’emboîtés.
+The **bisque** firing (biscuit in the UK) is the first, lower firing that turns dry clay into hard, porous ware ready to glaze. It is usually fired to cone 06–04, {{1828–1945 °F; 998–1063 °C}} on Orton's chart; UK potters often fire to around {{1000 °C; 1832 °F}}, near cone 06. The bisque should stay porous, "generally more than 15%" (Digitalfire), so it soaks water out of the glaze. Too soft a bisque takes glaze on too thick, which then cracks and **crawls** (pulls back into islands, leaving bare clay). Under-fired bisque also "continues to shrink during glaze firing", which spoils the glaze fit. Loading is forgiving: pieces may touch, lids can be fired on their pots, and bowls go rim to rim rather than nested.
 
-### Pourquoi le début de la cuisson est lent
+### Why the early part goes slowly
 
-L’eau qui se transforme en vapeur « se dilate 1170 fois », note Bracker’s : les pièces humides doivent donc sécher lentement. L&L et Orton conseillent de « veiller tout particulièrement, en dessous de 1500°F (815°C), à chauffer la pâte de façon homogène », et de brûler le carbone avant environ {{1200 °F; 650 °C}}. Au-dessus de {{1500 °F; 816 °C}}, le four peut monter plus vite.
+Water expands more than a thousandfold as it turns to steam, so damp ware has to be dried slowly. L&L and Orton advise that "Special care should be taken below 1500°F (815°C) to heat the body evenly", and that carbon must be burned out before about {{1200 °F; 650 °C}}. Above {{1500 °F; 816 °C}} the kiln can climb faster.
 
-Table: Ce qui se passe pendant la chauffe d’un biscuit
-Label: Ce qui se passe dans un biscuit
+Table: What happens as a bisque heats
+Label: What happens in a bisque
 
-|                          Température | Ce qui se passe                                                                                     |
-| -----------------------------------: | --------------------------------------------------------------------------------------------------- |
-|           {{300–500 °F; 149–260 °C}} | Les liants brûlent                                                                                  |
-|              Vers {{450 °F; 232 °C}} | Les matières organiques commencent à brûler                                                         |
-|           Jusqu’à {{700 °F; 371 °C}} | L’eau continue de quitter la terre jusqu’au-delà de cette température                               |
-|          {{842–1022 °F; 450–550 °C}} | L’eau liée chimiquement quitte la terre                                                             |
-|                  {{1063 °F; 573 °C}} | Point de quartz{{en: quartz inversion}} : la silice{{en: silica}} de la terre se dilate brusquement |
-|     Au-dessus de {{1112 °F; 600 °C}} | Le soufre brûle                                                                                     |
-| Jusqu’à {{1200–1400 °F; 649–760 °C}} | Le carbone naturel brûle ; cela doit se terminer avant le rouge                                     |
-|     Au-dessus de {{1544 °F; 840 °C}} | Le carbonate de calcium se décompose                                                                |
+|                        Temperature | What happens                                                |
+| ---------------------------------: | ----------------------------------------------------------- |
+|         {{300–500 °F; 149–260 °C}} | Binders burn off                                            |
+|           About {{450 °F; 232 °C}} | Organic matter starts to burn                               |
+|           Up to {{700 °F; 371 °C}} | Water keeps leaving the clay until above this temperature   |
+|        {{842–1022 °F; 450–550 °C}} | Chemically bound water leaves the clay                      |
+|                {{1063 °F; 573 °C}} | Quartz inversion: silica in the clay expands suddenly       |
+|          Above {{1112 °F; 600 °C}} | Sulfur burns out                                            |
+| Up to {{1200–1400 °F; 649–760 °C}} | Natural carbon burns off; this should finish below red heat |
+|          Above {{1544 °F; 840 °C}} | Calcium carbonate breaks down                               |
 
-Le **point de quartz** est le changement de volume brusque de la silice contenue dans la terre à {{1063 °F; 573 °C}} : elle se dilate à la montée et se contracte à la descente. Le programme Slow Bisque de L&L ralentit pour le franchir, entre {{1000 °F; 538 °C}} et {{1100 °F; 593 °C}}. Digitalfire a trouvé cela « inutile pour les cuissons de biscuit », et Ceramics Monthly dit que cela compte surtout au refroidissement des pièces denses. Ralentir coûte peu : nous vous suggérons donc de le garder pour les pièces épaisses.
+**Quartz inversion** is the sudden change in size of the silica in clay at {{1063 °F; 573 °C}}: it expands on the way up and contracts on the way down. L&L's Slow Bisque slows through it, between {{1000 °F; 538 °C}} and {{1100 °F; 593 °C}}. Digitalfire found this "unnecessary for bisque firings", and Ceramics Monthly says it mainly matters when cooling dense ware. Slowing costs little, so our suggestion is to keep it for thick pieces.
 
-### L’étuvage : sécher dans le four
+### Candling: drying in the kiln
 
-L’**étuvage**{{en: candling}} consiste à maintenir le four à basse température, couvercle entrouvert ou extracteur en marche, jusqu’à ce que la dernière humidité ait quitté les pièces. Les sources ne s’accordent pas sur la température :
+**Candling** means holding the kiln at a low temperature, with the lid propped or the vent running, until the last moisture has left the ware. Sources disagree about the temperature:
 
-Table: Températures d’étuvage
+Table: Candling temperatures
 
-| Source             | Étuvage                                                                                              |
-| ------------------ | ---------------------------------------------------------------------------------------------------- |
-| Ceramics Monthly   | Juste en dessous de l’ébullition ; par exemple, une montée à {{25 °F/h; 14 °C/h}} pendant 4–6 heures |
-| L&L (préchauffage) | Palier{{en: hold}} à {{150–200 °F; 66–93 °C}}                                                        |
-| Digitalfire        | Palier à {{250 °F; 121 °C}}, car un palier en dessous de l’ébullition « n’évacue pas toute l’eau »   |
+| Source           | Candling                                                                                 |
+| ---------------- | ---------------------------------------------------------------------------------------- |
+| Ceramics Monthly | Just short of boiling; for example, climbing at {{25 °F/h; 14 °C/h}} for 4–6 hours       |
+| L&L preheat      | Hold at {{150–200 °F; 66–93 °C}}                                                         |
+| Digitalfire      | Hold at {{250 °F; 121 °C}}, because holding below boiling "does not expel all the water" |
 
 > [!NOTE]
-> Notre point de départ : montez lentement jusqu’à {{250 °F; 121 °C}} environ, sans aller au-delà, et maintenez cette température jusqu’à ce qu’un miroir tenu devant l’aération ne s’embue plus. Pour les pièces épaisses ou humides, maintenez-la toute la nuit.
+> Our starting point: climb slowly to no more than about {{250 °F; 121 °C}}, and hold until a mirror at the vent stays clear. Hold overnight for thick or damp ware.
 
-Le **test du miroir** : tenez un miroir à température ambiante devant un trou d’aération ou devant l’espace sous le couvercle entrouvert. S’il s’embue, l’eau continue de s’échapper : attendez, puis recommencez le test.
+The **mirror test**: hold a room-temperature mirror at a vent hole or at the gap under a propped lid. If it fogs, water is still leaving; wait, then test again.
 
-### Courbes pour programmateur
+### Controller schedules
 
-Un **programmateur** est un boîtier électronique qui conduit la cuisson selon une **courbe de cuisson** : une liste de **segments**, chacun formé d’une vitesse de montée (la **rampe**{{en: ramp}}), d’une température cible et d’un palier facultatif. Voici deux programmes préenregistrés des programmateurs DynaTrol de L&L et Bartlett, et une courbe publiée par Digitalfire. La « température maximale » est celle que le programmateur associe lui-même au cône choisi : pour le cône 04, {{1926 °F; 1052 °C}}, et pour le cône 06, {{1819 °F; 993 °C}}.
+A **controller** is an electronic unit that fires the kiln through a **schedule**: a list of **segments**, each a rate of climb (the **ramp**), a target temperature and an optional hold. Below are two presets from L&L's DynaTrol and Bartlett controllers, and a schedule published by Digitalfire. "Peak" is the controller's own temperature for the cone you choose: for cone 04 it is {{1926 °F; 1052 °C}}, and for cone 06, {{1819 °F; 993 °C}}.
 
-Table: Programmes préenregistrés de biscuit L&L et Bartlett
-Label: Programmes de biscuit
+Table: L&L and Bartlett bisque presets
+Label: Bisque presets
 
-| Segment                     |                                                                                        Jusqu’à |               Slow Bisque |            Fast Bisque |
-| --------------------------- | ---------------------------------------------------------------------------------------------: | ------------------------: | ---------------------: |
-| 1                           |                                                                             {{250 °F; 121 °C}} |      {{80 °F/h; 44 °C/h}} |  {{120 °F/h; 67 °C/h}} |
-| 2                           |                                                                            {{1000 °F; 538 °C}} |    {{200 °F/h; 111 °C/h}} | {{300 °F/h; 167 °C/h}} |
-| 3                           |                                                                            {{1100 °F; 593 °C}} |     {{100 °F/h; 56 °C/h}} |  {{150 °F/h; 83 °C/h}} |
-| 4                           | {{250 °F; 139 °C}} en dessous de la température maximale : {{1676 °F; 913 °C}} pour le cône 04 |    {{180 °F/h; 100 °C/h}} | {{180 °F/h; 100 °C/h}} |
-| 5                           |                                                                        La température maximale |      {{80 °F/h; 44 °C/h}} |  {{108 °F/h; 60 °C/h}} |
-| Durée de chauffe, four vide |                                                                                                | Environ 13 heures ou plus |  Environ 10–11½ heures |
+| Segment                  |                                                           Climb to |            Slow Bisque |            Fast Bisque |
+| ------------------------ | -----------------------------------------------------------------: | ---------------------: | ---------------------: |
+| 1                        |                                                 {{250 °F; 121 °C}} |   {{80 °F/h; 44 °C/h}} |  {{120 °F/h; 67 °C/h}} |
+| 2                        |                                                {{1000 °F; 538 °C}} | {{200 °F/h; 111 °C/h}} | {{300 °F/h; 167 °C/h}} |
+| 3                        |                                                {{1100 °F; 593 °C}} |  {{100 °F/h; 56 °C/h}} |  {{150 °F/h; 83 °C/h}} |
+| 4                        | {{250 °F; 139 °C}} below the peak: {{1676 °F; 913 °C}} for cone 04 | {{180 °F/h; 100 °C/h}} | {{180 °F/h; 100 °C/h}} |
+| 5                        |                                                           The peak |   {{80 °F/h; 44 °C/h}} |  {{108 °F/h; 60 °C/h}} |
+| Heating time, empty kiln |                                                                    | About 13 hours or more |     About 10–11½ hours |
 
-Les durées de L&L sont données « pour les fours vides les plus rapides possibles » ; un four chargé peut mettre jusqu’à quatre fois plus de temps, et tout palier que vous ajoutez est un travail thermique{{en: heatwork}} supplémentaire que ces programmes ne prévoient pas. L&L conseille Slow Bisque, avec un préchauffage de 2–3 heures ou plus, pour les pièces grandes ou humides, et met en garde contre la cuisson rapide, qui « peut provoquer des défauts comme des trous d’épingle, des fissures et une combustion incomplète des matières organiques ».
+L&L's times are "for the fastest possible empty kilns"; a loaded kiln can take as much as four times longer, and any hold you add is extra heatwork the presets do not allow for. L&L advises Slow Bisque, with a preheat of 2–3 hours or longer, for large or damp pieces, and warns against fast firing, which "can cause defects like pinholes, cracking, and insufficient burnout".
 
-Table: Digitalfire BQ1000, biscuit jusqu’au cône 06 environ
+Table: Digitalfire BQ1000 bisque, to about cone 06
 Label: Digitalfire BQ1000
 
-| Étape |                Vitesse |                Cible | Palier                                                 |
-| ----- | ---------------------: | -------------------: | ------------------------------------------------------ |
-| 1     | {{306 °F/h; 170 °C/h}} |   {{248 °F; 120 °C}} | 60 minutes ; jusqu’à 10 heures pour les pièces lourdes |
-| 2     | {{306 °F/h; 170 °C/h}} |  {{1733 °F; 945 °C}} | Aucun                                                  |
-| 3     |  {{108 °F/h; 60 °C/h}} | {{1832 °F; 1000 °C}} | 15 minutes                                             |
+| Step |                   Rate |               Target | Hold                                      |
+| ---- | ---------------------: | -------------------: | ----------------------------------------- |
+| 1    | {{306 °F/h; 170 °C/h}} |   {{248 °F; 120 °C}} | 60 minutes; up to 10 hours for heavy ware |
+| 2    | {{306 °F/h; 170 °C/h}} |  {{1733 °F; 945 °C}} | None                                      |
+| 3    |  {{108 °F/h; 60 °C/h}} | {{1832 °F; 1000 °C}} | 15 minutes                                |
 
-La courbe BQ1000 dure environ 7 heures 44 minutes. Son auteur juge qu’une montée allant jusqu’à {{500 °F/h; 278 °C/h}} convient aux pièces fines et sèches, et ralentit la dernière étape pour égaliser la température dans toute la charge.
+BQ1000 takes about 7 hours 44 minutes. Its author finds up to {{500 °F/h; 278 °C/h}} fine for thin, dry ware, and slows the last step to even out the temperature through the load.
 
-### Les cônes des programmateurs et le tableau d’Orton
+### Controller cones and Orton's chart
 
-Les programmateurs L&L et Bartlett utilisent {{1926 °F; 1052 °C}} pour le cône 04 et {{1819 °F; 993 °C}} pour le cône 06, un peu en dessous des {{1945 °F; 1063 °C}} et {{1828 °F; 998 °C}} d’Orton ; ils concordent au cône 6 et au cône 10. Les cônes témoins{{en: witness cones}} tranchent : s’ils ne s’accordent pas avec le programmateur, corrigez-le avec le décalage de cône.
+L&L and Bartlett controllers use {{1926 °F; 1052 °C}} for cone 04 and {{1819 °F; 993 °C}} for cone 06, a little below Orton's {{1945 °F; 1063 °C}} and {{1828 °F; 998 °C}}; they agree at cone 6 and cone 10. Witness cones settle the difference: if they disagree with the controller, correct it with the cone offset.
 
-### Sur un four à commande manuelle
+### On a manual kiln
 
-Un four à commande manuelle suit le même plan, à la main : séchez lentement, couvercle entrouvert et regards ouverts, passez les commutateurs de Bas à Moyen puis à Haut, et laissez le Kiln-Sitter terminer la cuisson. Les procédures publiées se trouvent plus bas, dans Les fours à commande manuelle en détail.
+A manual kiln follows the same plan by hand: dry slowly with the lid propped and the peepholes open, step the switches up from Low to Medium to High, and let the sitter end the firing. The published procedures are under Manual kilns in detail, below.
 
 ## Cuisson d’émail {#glaze}
 

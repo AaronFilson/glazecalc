@@ -90,8 +90,7 @@
     "advice": "Consigli pratici per miscelare, smaltare e cuocere, da Glazecalc, più i propri consigli. Gratuito per chi fa ceramica.",
     "about": "Glazecalc: calcolatore di chimica degli smalti ceramici e quaderno di laboratorio, gratuito e open source. Come calcola la formula di Seger (UMF) e com’è fatto.",
     "privacy": "Come Glazecalc tratta i dati: niente pubblicità, statistiche o tracciamento, e nulla viene venduto. Cosa si conserva, perché e come esercitare i propri diritti.",
-    "signup": "Creare un account Glazecalc gratuito per salvare ricette di smalti, materiali, note e registri di cottura. Niente pubblicità, e i dati non vengono mai venduti.",
-    "imageAlt": "Glazecalc: capire i propri smalti, non solo prepararli."
+    "signup": "Creare un account Glazecalc gratuito per salvare ricette di smalti, materiali, note e registri di cottura. Niente pubblicità, e i dati non vengono mai venduti."
   },
   "notices": {
     "dismiss": "Chiudi",
@@ -286,7 +285,6 @@
     "close": "Chiudi"
   },
   "unity": {
-    "fluxes": "Fondenti - RO",
     "stabilizers": "Stabilizzanti - R₂O₃",
     "glassFormers": "Vetrificanti - RO₂",
     "wildcards": "Altri ossidi",

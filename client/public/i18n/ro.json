@@ -90,8 +90,7 @@
     "advice": "Sfaturi practice despre prepararea glazurilor ceramice, glazurare și ardere, de la Glazecalc, plus propriile sfaturi. Gratuit, pentru olari și ceramiști.",
     "about": "Glazecalc: calculator și caiet gratuite, open source, pentru chimia glazurilor ceramice. Aflați cum calculează formula Seger (UMF) și cum este construit.",
     "privacy": "Cum tratează Glazecalc datele: fără reclame, instrumente de analiză sau urmărire, și nimic nu se vinde. Ce se păstrează, de ce și cum vă exercitați drepturile.",
-    "signup": "Creați gratuit un cont Glazecalc pentru rețete de glazură ceramică, materii prime, notițe și jurnale de ardere. Fără reclame; datele nu se vând niciodată.",
-    "imageAlt": "Glazecalc: înțelegeți glazurile, nu doar amestecați-le."
+    "signup": "Creați gratuit un cont Glazecalc pentru rețete de glazură ceramică, materii prime, notițe și jurnale de ardere. Fără reclame; datele nu se vând niciodată."
   },
   "notices": {
     "dismiss": "Închideți",
@@ -286,7 +285,6 @@
     "close": "Închideți"
   },
   "unity": {
-    "fluxes": "Fondanți – RO",
     "stabilizers": "Stabilizatori – R₂O₃",
     "glassFormers": "Formatori de sticlă – RO₂",
     "wildcards": "Alți oxizi",

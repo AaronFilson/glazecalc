@@ -22,58 +22,58 @@ lead: วิธีซื้อ เก็บ ชั่ง และผสมเ�
 > [!WARNING]
 > **ผงเคลือบแห้งเป็นอันตรายจากฝุ่น** ซิลิกาผลึกอาจเป็น 10 ถึง 60% ของเคลือบแห้ง และหน่วยงานสุขภาพและความปลอดภัยของสหราชอาณาจักร (Health and Safety Executive หรือ HSE) เตือนว่าฝุ่นของซิลิกามองไม่เห็นในแสงปกติ ตักอย่างเบามือ จากที่ต่ำ ปิดฝาไว้ ทำให้ผงเปียกโดยเร็วที่สุด และทำความสะอาดแบบเปียก ห้ามใช้ไม้กวาดโดยเด็ดขาด สวมหน้ากากกรองอนุภาคที่แนบสนิทขณะที่ผงยังแห้ง (N95 หรือ P100 ในสหรัฐอเมริกา FFP2 หรือ FFP3 ในสหราชอาณาจักรและ EU P2 หรือ P3 ในออสเตรเลียและนิวซีแลนด์) [คำแนะนำการผสมอย่างปลอดภัย](/guides/safe-mixing)ครอบคลุมฝุ่น หน้ากากกรองอนุภาค และการทำความสะอาดอย่างครบถ้วน
 
-## การซื้อวัตถุดิบ {#buying-materials}
+## Buying materials {#buying-materials lang=en}
 
-### ซื้อที่ไหน
+### Where to buy
 
-ช่างปั้นซื้อจากผู้จำหน่ายเซรามิก ซึ่งขายดิน วัตถุดิบเคลือบ และเครื่องมือ ตารางแสดงบางร้านสำหรับประเทศของคุณ ตรวจสอบแต่ละร้านบนเว็บไซต์ของร้านเอง และคุณเลือกประเทศอื่นเพื่อดูร้านของประเทศนั้นได้ สต็อกเปลี่ยนไป จึงตรวจก่อนสั่ง ผู้ผลิตรายใหญ่ เช่น Sibelco และ Imerys ขายให้อุตสาหกรรม ช่างปั้นซื้อวัตถุดิบผ่านร้านเช่นนี้ เว็บไซต์อ้างอิงเซรามิก Digitalfire เก็บรวบรวมรายชื่อร้านผู้จำหน่ายสำหรับที่อื่น
+Potters buy from ceramic suppliers, which sell clay, glaze materials and tools. The table shows some for your country, each checked on the shop's own site, and you can choose another country to see its shops. Stock changes, so check before you order. Large producers such as Sibelco and Imerys sell to industry; potters buy their materials through shops like these. The ceramics reference site Digitalfire keeps a directory of supplier stores for other places.
 
 ::shops
 
-### ซื้อเท่าใด
+### How much to buy
 
-กระสอบมาตรฐานคือ **50 lb (22.7 kg)** ในสหรัฐอเมริกา และ **25 kg (55 lb)** ที่อื่น ทั้งสองจึงเกือบเท่ากัน ผู้จำหน่ายหลายรายยังขายแพ็ก 1, 2.5 หรือ 5 kg (ประมาณ 2.2, 5.5 หรือ 11 lb) สำหรับการทดสอบ Glazy ฐานข้อมูลสูตรเคลือบแบบเปิด แนะนำให้ซื้อวัตถุดิบที่คุณใช้สม่ำเสมอ (หินฟันม้า ซิลิกา ดินขาว แคลเซียมคาร์บอเนต และฟริตสำหรับไฟกลาง) เป็นกระสอบเต็ม ซึ่งมักถูกกว่า 20 ถึง 30% ซื้อ**สารให้สี**{{en: colorant}} ซึ่งเป็นออกไซด์ของโลหะและสีสะเตนที่ให้สีแก่เคลือบ ในปริมาณน้อย: ส่วนใหญ่ใช้ที่ต่ำกว่า 5% รายการซื้อของตัวอย่างของ Glazy รวมได้ประมาณ $515 สำหรับไฟกลางและ $397 สำหรับไฟสูง ตามราคาสหรัฐอเมริกา
+The standard sack is **50 lb (22.7 kg)** in the US and **25 kg (55 lb)** elsewhere, so the two are nearly the same. Many suppliers also sell 1, 2.5 or 5 kg packs (about 2.2, 5.5 or 11 lb) for tests. Glazy, the open recipe database, advises buying the materials you use steadily (feldspar, silica, kaolin, whiting, and frit for mid-fire) in full sacks, which are often 20 to 30% cheaper. Buy **colorants**, the metal oxides and stains that color a glaze, in small amounts: most are used at under 5%. Glazy's sample shopping lists came to about $515 for mid-fire and $397 for high-fire, at US prices.
 
-### ชุดเริ่มต้น
+### A starter set
 
-รายการหลักของ Glazy สำหรับทุกอุณหภูมิคือซิลิกา ดินขาว หินฟันม้า แคลเซียมคาร์บอเนต สังกะสีออกไซด์ และโดโลไมต์หรือทัลค์ เคลือบไฟกลางส่วนใหญ่ (โคน 5 ถึง 6) ยังต้องมีโบรอน โดยปกติจากฟริต ซึ่ง Glazy เรียกว่า “สม่ำเสมอและละลายน้อยกว่าบอเรตดิบ” ชุดด้านล่างเป็นข้อเสนอของเรา สร้างจากรายการของ Glazy และรายการจากฟอรัม [คำแนะนำพื้นฐานการเคลือบ](/guides/glazing-basics)อธิบายว่าวัตถุดิบแต่ละอย่างทำอะไร
+Glazy's core list for any temperature is silica, kaolin, feldspar, whiting, zinc oxide, and dolomite or talc. Most mid-fire (cone 5 to 6) glazes also need boron, usually from a frit, which Glazy calls "consistent and less soluble than raw borates". The set below is our suggestion, drawn from Glazy's list and a forum list. The [glazing basics guide](/guides/glazing-basics) explains what each material does.
 
-Table: ชุดวัตถุดิบเริ่มต้น (ข้อเสนอของเรา)
-Label: ชุดเริ่มต้น
+Table: A starter set of materials (our suggestion)
+Label: Starter set
 
-| วัตถุดิบ                                   | ซื้ออะไร                                                                                |
-| ------------------------------------------ | --------------------------------------------------------------------------------------- |
-| ซิลิกา (เรียกอีกอย่างว่าฟลินต์ ดูด้านล่าง) | 325 เมช เกรดละเอียดที่ Glazy ชอบสำหรับเคลือบ                                            |
-| ดินขาว (china clay ในสหราชอาณาจักร)        | EPK ในสหรัฐอเมริกา; Grolleg หรือ china clay อื่นในสหราชอาณาจักร; NZ kaolin ในนิวซีแลนด์ |
-| หินฟันม้าโพแทช                             | อย่างใดก็ได้ที่เป็นปัจจุบันในที่ที่คุณอยู่ เช่น Mahavir ในสหรัฐอเมริกา                  |
-| เนฟีลีนไซอีไนต์                            | อย่างใดก็ได้; Glazy ระบุว่ามีกำลังช่วยหลอมที่แรงกว่า มักใช้ที่ไฟต่ำและไฟกลาง            |
-| แคลเซียมคาร์บอเนต                          | อย่างใดก็ได้                                                                            |
-| ทัลค์                                      | อย่างใดก็ได้                                                                            |
-| ฟริตโบรอน สำหรับไฟกลาง                     | Ferro 3134, 3124 หรือ 3195; ในสหราชอาณาจักร Potterycrafts P3124 หรือ P3195              |
-| เบนโทไนต์และสารให้สี                       | ปริมาณน้อย                                                                              |
+| Material                              | What to buy                                                                      |
+| ------------------------------------- | -------------------------------------------------------------------------------- |
+| Silica (also called flint; see below) | 325 mesh, the finer grade Glazy prefers for glazes                               |
+| Kaolin (china clay in the UK)         | EPK in the US; Grolleg or another china clay in the UK; NZ kaolin in New Zealand |
+| Potash feldspar                       | Whichever is current where you live, such as Mahavir in the US                   |
+| Nepheline syenite                     | Any; Glazy notes its stronger fluxing power, often used at low and mid-fire      |
+| Whiting                               | Any                                                                              |
+| Talc                                  | Any asbestos-free grade; check its SDS (see Safe mixing)                         |
+| A boron frit, for mid-fire            | Ferro 3134, 3124 or 3195; in the UK, Potterycrafts P3124 or P3195                |
+| Bentonite and colorants               | Small amounts                                                                    |
 
-### เอกสารข้อมูลและเอกสารข้อมูลความปลอดภัย
+### Data sheets and safety data sheets
 
-ขอเอกสารสองอย่างสำหรับวัตถุดิบแต่ละอย่าง **เอกสารข้อมูลทางเทคนิค** (TDS) ให้**ผลวิเคราะห์ทางเคมี**: สัดส่วนของออกไซด์แต่ละตัวในผง ตามน้ำหนัก Glazecalc ทำงานจากเอกสารเหล่านี้ และคุณเพิ่มวัตถุดิบจากผลวิเคราะห์ของผู้จำหน่ายได้ที่[หน้าวัตถุดิบ](/material) **เอกสารข้อมูลความปลอดภัย** (SDS) บอกวิธีจัดการผงดิบ เก็บ SDS แต่ละฉบับไว้ และอ่านก่อนผสม
+Ask for two documents for each material. A **technical data sheet** (TDS) gives its **chemical analysis**: the share of each oxide in the powder, by weight. Glazecalc works from these, and you can add a material from a supplier's analysis on the [Materials page](/material). A **safety data sheet** (SDS) says how to handle the raw powder. Keep each SDS, and read it before you mix.
 
-ผลวิเคราะห์เป็นค่าเฉลี่ย ไม่ใช่คำมั่นสัญญา Valentine Clays พิมพ์ “MEAN VALUES. THESE DO NOT REPRESENT A SPECIFICATION” บนเอกสารข้อมูลฟลินต์ และผลวิเคราะห์หินฟันม้า Custer ของ Glazy จากหลายปี มีซิลิกาตั้งแต่ประมาณ 68.5% ถึง 72.4% เราแนะนำให้จด**หมายเลขล็อต** (รหัสแบตช์) ของแต่ละกระสอบไว้ในบันทึกของคุณ เพื่อให้รู้ว่าการเปลี่ยนแปลงในเคลือบที่ไว้ใจได้มาจากวัตถุดิบหรือไม่
+Analyses are averages, not promises. Valentine Clays prints "MEAN VALUES. THESE DO NOT REPRESENT A SPECIFICATION" on its flint data sheet, and Glazy's analyses of Custer feldspar from different years run from about 68.5% to 72.4% silica. We suggest writing each sack's **lot number** (its batch code) in your records, so you can tell whether a change in a trusted glaze came from the material.
 
-HSE เตือนว่าซิลิกาผลึก “อาจถูกติดฉลากผิดว่าเป็น ‘ซิลิกาอสัณฐาน’” และ SDS เป็นเรื่องของผง ไม่ใช่ชิ้นงาน: ไม่ได้บอกอะไรเลยว่าเคลือบที่เผาแล้วปลอดภัยสำหรับอาหารหรือไม่ มีเพียงการทดสอบการละลายออกของโลหะในห้องปฏิบัติการกับชิ้นงานที่เผาแล้วเท่านั้นที่แสดงได้
+HSE warns that crystalline silica "can be wrongly labelled as 'amorphous silica'". And an SDS is about the powder, not the pot: it says nothing about whether a fired glaze is safe for food. Only a laboratory leach test of the fired pot can show that.
 
-### ชื่อเปลี่ยน จึงซื้อตามเคมี
+### Names change, so buy by chemistry
 
-ชื่อยี่ห้อมาและไปเมื่อเหมืองปิด หินฟันม้า Custer ที่ขุดในเซาท์ดาโคตามากกว่า 75 ปี หมดลงในปลายปี ค.ศ. 2023 เมื่อ Clay Art Center เปลี่ยนเป็น G-200 AU และ Mahavir เคลือบประมาณครึ่งหนึ่งต้องปรับ G-200 และ G-200 HP ก็หมดไปเช่นกัน และตอนนี้ Laguna นำเข้า Mahavir ซึ่งมีเคมีใกล้เคียง G-200
+Brand names come and go as mines close. Custer feldspar, mined in South Dakota for more than 75 years, ran out in late 2023. When Clay Art Center switched to G-200 AU and Mahavir, about half its glazes needed adjusting. G-200 and G-200 HP are gone too, and Laguna now imports Mahavir, whose chemistry is close to G-200.
 
-**Gerstley Borate** แร่โบรอนธรรมชาติในสูตรเคลือบเก่าหลายสูตร หายากตั้งแต่เหมืองปิดในปี ค.ศ. 2000 แม้ New Mexico Clay จะรายงานในเดือนพฤศจิกายน ค.ศ. 2025 ว่า Laguna จัดหา “Gerstley Borate Original” แหล่งข้อมูลไม่ตรงกันเรื่อง **Gillespie Borate** ในฐานะวัตถุดิบทดแทน ผู้ผลิตขายเป็นแบบปอนด์ต่อปอนด์ Berkeley Potters Studio ระบุว่า “ไม่ใช่ตัวแทนโดยตรง” และ Digitalfire พบว่าเปลี่ยนสีของเคลือบ ทางที่ปลอดภัยคือเปรียบเทียบทั้งสองตามออกไซด์ แล้วทดสอบ
+**Gerstley Borate**, a natural boron mineral in many older recipes, has been scarce since its mine closed in 2000, though New Mexico Clay reported in November 2025 that Laguna was supplying "Gerstley Borate Original". Sources disagree about **Gillespie Borate** as a replacement. Its maker sells it as pound-for-pound. Berkeley Potters Studio says it "is not a direct substitute", and Digitalfire found it changed a glaze's color. The safe course is to compare the two by their oxides, then test.
 
-ชื่อตามภูมิภาคก็ต่างกัน ในอเมริกาเหนือ **ฟลินต์** ควอตซ์ และซิลิกาหมายถึงซิลิกาบดอย่างเดียวกัน และ Digitalfire ระบุว่าคุณอาจไม่พบผงฟลินต์แท้จากผู้จำหน่าย ในสหราชอาณาจักร ฟลินต์เป็นผลิตภัณฑ์เฉพาะ: ของ Valentine คือซิลิกาแคลไซน์ (ให้ความร้อน) ทั้งสองเกือบเป็นซิลิกาบริสุทธิ์ เราจึงคาดว่าใกล้เคียงกัน แต่ให้ตรวจผลวิเคราะห์ สำหรับดินขาว Glazy ระบุว่าการสลับหนึ่งต่อหนึ่ง เช่น EPK กับ china clay “มักใช้ได้ดี โดยเฉพาะเมื่อปริมาณ \<10%”
+Regional names differ too. In North America, **flint**, quartz and silica mean the same ground silica, and Digitalfire says you probably won't find true flint powder from suppliers. In the UK, flint is its own product: Valentine's is calcined (heated) silica. Both are nearly pure silica, so we expect them to be close, but check the analysis. For kaolin, Glazy says one-for-one swaps, such as EPK for a china clay, "often work just fine, especially when amounts are \<10%".
 
-สูตรเคลือบหลายสูตรระบุวัตถุดิบที่จำหน่ายในประเทศหนึ่งและไม่จำหน่ายอีกประเทศหนึ่ง ตารางด้านล่างหยิบวัตถุดิบแต่ละอย่างในคลังของ Glazecalc ที่ไม่ได้จำหน่ายในที่ที่คุณซื้อ และหาวัตถุดิบประเภทเดียวกันที่ใกล้เคียงที่สุดที่จำหน่าย ตามผลวิเคราะห์ ตัวเลขคือความต่างระหว่างทั้งสอง: กรัมที่ออกไซด์หลังเผาของทั้งสองต่างกัน ต่อวัตถุดิบ 100 g รวมทุกออกไซด์ ภายในประมาณ 15 g โดยปกติอย่างหนึ่งใช้แทนอีกอย่างได้ในการทดสอบแรก ชื่อมีรหัสของผู้ผลิตและร้านเอง คุณจึงขอตามชื่อได้
+Many recipes name materials that are sold in one country and not another. The table below takes each material in Glazecalc's library that is not sold where you buy, and finds the closest of its kind that is, by their analyses. The figure is how far apart the two are: the grams by which their fired oxides differ, per 100 g of material, added up over every oxide. Within about 15 g, one can usually stand in for the other in a first test. The names carry the makers' and shops' own codes, so you can ask for them by name.
 
 ::local-equivalents
 
 > [!NOTE]
-> Glazecalc เปรียบเทียบวัตถุดิบตามสิ่งที่นำมาสู่เคลือบที่เผาแล้ว ไม่ใช่ตามชื่อ [สูตรเคลือบ](/recipe)ที่มีวัตถุดิบเลิกผลิตแล้วจะบอกว่าตอนนี้ใช้อะไร **แนะนำปริมาณและเปรียบเทียบ** คำนวณปริมาณใหม่สำหรับตัวแทน และ **จับคู่กับที่ฉันมี** ทำสูตรเคลือบขึ้นใหม่จากวัตถุดิบบนชั้นของคุณ ทั้งสองจับคู่เฉพาะออกไซด์หลังเผา จึงทดสอบแบตช์ขนาดเล็กก่อน
+> Glazecalc compares materials by what they bring to the fired glaze, not by name. A [recipe](/recipe) with a material no longer made says what is used now. **Suggest amounts and compare** works the amounts out again for a substitute, and **Match with what I have** makes the recipe again from the materials on your shelf. Both match the fired oxides only, so test a small batch first.
 
 ## การเก็บวัตถุดิบและเคลือบ {#storing}
 
@@ -163,55 +163,55 @@ Label: เมชของตะแกรง
 | เคลือบที่มีสารให้สี เช่น โคบอลต์หรือเหล็ก    | 100 ถึง 120 เมช   |
 | เคลือบขี้เถ้า และเคลือบอื่นที่มีวัตถุดิบหยาบ | 60 ถึง 80 เมช     |
 
-## ความถ่วงจำเพาะ {#specific-gravity}
+## Specific gravity {#specific-gravity lang=en}
 
-**ความถ่วงจำเพาะ**{{en: specific gravity}} (SG) บอกว่ามีผงในน้ำเคลือบของคุณเท่าใด คือน้ำหนักของปริมาตรเคลือบหารด้วยน้ำหนักของน้ำปริมาตรเท่ากัน น้ำคือ 1.00 และเคลือบที่ {{SG 1.45}} หนัก 145 g ต่อ 100 mL การผสมให้ถึงความถ่วงจำเพาะที่วัดได้คือวิธีที่ทำให้ได้ความหนาเท่ากันและชั้นเคลือบเท่ากันทุกครั้ง ไม่มีหน่วย จึงเหมือนกันทั้งกรัมหรือออนซ์
+**Specific gravity** (SG) tells you how much powder is in your slurry. It is the weight of a volume of glaze divided by the weight of the same volume of water. Water is 1.00, and a glaze at {{SG 1.45}} weighs 145 g per 100 mL. Mixing to a measured SG is how you get the same thickness, and the same coat, every time. It has no units, so it is the same in grams or ounces.
 
-### วัดโดยชั่ง 100 mL
+### Measure it by weighing 100 mL
 
-1. คนเคลือบเพื่อไม่ให้มีอะไรตกตะกอน
-2. วาง**กระบอกตวง** (หลอดตวงสูงที่มีขีด) 100 mL หรือกระบอกฉีดยา 100 mL บนเครื่องชั่ง และปรับศูนย์
-3. เติมเคลือบให้ได้ 100 mL พอดี อ่านขีดในระดับสายตา
-4. ชั่งและหารกรัมด้วย 100: 145 g คือ SG 1.45
+1. Stir the glaze so nothing has settled.
+2. Put a 100 mL **graduated cylinder** (a tall, marked measuring tube) or a 100 mL syringe on the scale, and tare it.
+3. Fill it with glaze to exactly 100 mL, reading the mark at eye level.
+4. Weigh it and divide the grams by 100: 145 g is SG 1.45.
 
-Digitalfire ยังทำเครื่องหมายถ้วยที่ระดับน้ำ 500 g เติมเคลือบถึงขีด และหารน้ำหนักด้วย 500 เครื่องตวงที่ใหญ่และเต็มกว่าแม่นยำกว่า **ไฮโดรมิเตอร์** ซึ่งเป็นทุ่นที่อ่านตรงที่ลอยอยู่ในเคลือบ ใช้เร็วแต่อาจอ่านผิดในเคลือบที่ข้นหรือจับเป็นเจล ไฮโดรมิเตอร์ของสหราชอาณาจักร เช่นของ Potclays อ่านเป็นองศาโบเม (°Bé) ตามเลขคณิตของเรา SG = 145 ÷ (145 − °Bé) ดังนั้น 46 °Bé ประมาณ 1.46 หนังสือสหราชอาณาจักรรุ่นเก่าให้**น้ำหนักต่อไพนต์** คือออนซ์ในหนึ่งไพนต์อิมพีเรียลของเคลือบ: หารด้วย 20 ดังนั้น 29 oz ประมาณ SG 1.45 (เป็นเลขคณิตของเราเช่นกัน)
+Digitalfire also marks a cup at the level of 500 g of water, fills it to the mark with glaze, and divides the weight by 500; a bigger, fuller measure is more accurate. A **hydrometer**, a float read where it sits in the glaze, is quick but can misread thick or gelled glazes. UK hydrometers, such as Potclays', read in degrees Baumé (°Bé). By our arithmetic, SG = 145 ÷ (145 − °Bé), so 46 °Bé is about 1.46. Older UK books give a **pint weight**, the ounces in an imperial pint of glaze: divide it by 20, so 29 oz is about SG 1.45 (also our arithmetic).
 
-### เล็งไปที่เท่าใด
+### What to aim for
 
-แหล่งข้อมูลไม่ตรงกัน มากที่สุดเรื่องการทาและการพ่น ซึ่งผู้จำหน่ายในสหราชอาณาจักร Potclays ให้ตัวเลขสูงกว่ามาก (ของตนเองคือ “เพื่อเป็นแนวทางเท่านั้น”) ถือทุกตัวเลขเป็นจุดเริ่มต้น คำแนะนำหลักของ Digitalfire คือหา SG และการจับเป็นเจลที่ได้ผลสำหรับเคลือบแต่ละสูตร แล้วทำซ้ำและจดไว้
+Sources disagree, most of all on brushing and spraying, where the UK supplier Potclays gives much higher figures (its own are "for guidance only"). Treat every number as a starting point. Digitalfire's core advice is to find the SG and gelling that work for each glaze, then repeat them and write them down.
 
-Table: เป้าหมายความถ่วงจำเพาะ เมื่อแหล่งข้อมูลไม่ตรงกัน
-Label: เป้าหมายความถ่วงจำเพาะ
+Table: Specific gravity targets, where sources disagree
+Label: Specific gravity targets
 
-| การใช้ | Digitalfire และ Glazy                                                                                                                      | Potclays (สหราชอาณาจักร)              | จุดเริ่มต้นที่ปลอดภัย                                           |
-| ------ | ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------- | --------------------------------------------------------------- |
-| ชุบ    | {{SG 1.40}} (สำหรับการชุบ 5 วินาที) ถึง {{SG 1.50}} (สำหรับการชุบ 1 วินาที); เคลือบที่ผสมเองและจับเป็นเจลได้ผลดีที่สุดที่ {{SG 1.43–1.45}} | ใส {{SG 1.46–1.48}}; มีสี {{SG 1.61}} | {{SG 1.45}}; ทำให้บางลงถึง {{SG 1.43}} และทำให้จับเป็นเจลหากหยด |
-| ทา     | {{SG 1.25}} (ใสบาง) ถึง {{SG 1.55}} (รายละเอียดสีเข้ม)                                                                                     | {{SG 1.71–1.81}}                      | ทำตามผลิตภัณฑ์; ใช้กาว CMC หรือสื่อสำหรับทา                     |
-| พ่น    | ไม่มีตัวเลข; Hopper เขียนให้ Ceramic Arts Network ระบุว่าบางกว่ามาก พร้อมสารช่วยกระจายตัว (สารเติมแต่งที่ทำให้น้ำเคลือบไหลง่ายขึ้น)        | {{SG 1.71}}                           | ไม่มีตัวเลขที่เชื่อถือได้; พ่นเฉพาะในห้องพ่นเคลือบ              |
+| Use      | Digitalfire and Glazy                                                                                                                 | Potclays (UK)                               | Safe starting point                                     |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------- |
+| Dipping  | {{SG 1.40}} (for a 5-second dip) to {{SG 1.50}} (for a 1-second dip); home-mixed glazes that are gelled do best at {{SG 1.43–1.45}}   | Clear {{SG 1.46–1.48}}; colored {{SG 1.61}} | {{SG 1.45}}; thin to {{SG 1.43}} and gel it if it drips |
+| Brushing | {{SG 1.25}} (thin clear) to {{SG 1.55}} (dark detail)                                                                                 | {{SG 1.71–1.81}}                            | Follow the product; use CMC gum or a brushing medium    |
+| Spraying | No figure; Hopper, writing for Ceramic Arts Network, says much thinner, with a deflocculant (an additive that makes a slurry runnier) | {{SG 1.71}}                                 | No reliable number; spray only in a spray booth         |
 
-หากต้องการตรวจเคลือบสำหรับชุบด้วยตา AMACO ชุบ 5 วินาทีและมองหาชั้นเคลือบที่หนาประมาณเหรียญไดม์ของสหรัฐอเมริกา Digitalfire เผาแผ่นทดสอบที่ชุบ 5 วินาทีเพื่อตรวจ
+To check a dipping glaze by eye, AMACO dips for 5 seconds and looks for a coat about as thick as a US dime. Digitalfire fires tiles dipped for 5 seconds to check.
 
-### น้ำสำหรับ SG เป้าหมาย: ค่าประมาณของเรา
+### Water for a target SG: our estimate
 
-ตารางด้านล่างเป็นเลขคณิตของเราเอง ไม่ใช่ของแหล่งข้อมูล สมมติว่าอนุภาคของผงมีความหนาแน่น 2.6 g ต่อ cm³ ซึ่งเป็นข้อสมมติ ไม่ใช่การวัด ดิน วัตถุดิบที่ละลายได้ และการจับเป็นเจลล้วนเปลี่ยนเคลือบจริง จึงใช้เพื่อเริ่ม แล้ววัด เพื่อตรวจสอบ ตารางทำนาย {{SG 1.44}} สำหรับผงและน้ำน้ำหนักเท่ากัน ใกล้เคียง {{SG 1.46}} ที่ Digitalfire วัดได้ ตารางยังแสดงว่า 70 ถึง 80 mL ต่อ 100 g เริ่มคุณที่สูงกว่า {{SG 1.50}} ซึ่งข้นกว่าที่ต้องการ
+The table below is our own arithmetic, not a source's. It assumes the powder's particles have a density of 2.6 g per cm³, which is an assumption, not a measurement. Clay, soluble materials and gelling all change a real glaze, so use it to start, then measure. As a check, it predicts {{SG 1.44}} for equal weights of powder and water, close to Digitalfire's measured {{SG 1.46}}. It also shows that 70 to 80 mL per 100 g starts you above {{SG 1.50}}, thicker than you need.
 
-Table: น้ำสำหรับความถ่วงจำเพาะเป้าหมาย (ค่าประมาณของเรา)
-Label: น้ำสำหรับความถ่วงจำเพาะเป้าหมาย
+Table: Water for a target specific gravity (our estimate)
+Label: Water for a target specific gravity
 
-| เป้าหมาย    |   ต่อผง 100 g |    ต่อกิโลกรัม |           ต่อปอนด์ |
-| ----------- | ------------: | -------------: | -----------------: |
-| {{SG 1.40}} | ประมาณ 115 mL | ประมาณ 1150 mL | ประมาณ 18 US fl oz |
-| {{SG 1.45}} |  ประมาณ 98 mL |  ประมาณ 980 mL | ประมาณ 15 US fl oz |
-| {{SG 1.50}} |  ประมาณ 85 mL |  ประมาณ 850 mL | ประมาณ 13 US fl oz |
-| {{SG 1.60}} |  ประมาณ 64 mL |  ประมาณ 640 mL | ประมาณ 10 US fl oz |
+| Target      | Per 100 g of powder |  Per kilogram |         Per pound |
+| ----------- | ------------------: | ------------: | ----------------: |
+| {{SG 1.40}} |        about 115 mL | about 1150 mL | about 18 US fl oz |
+| {{SG 1.45}} |         about 98 mL |  about 980 mL | about 15 US fl oz |
+| {{SG 1.50}} |         about 85 mL |  about 850 mL | about 13 US fl oz |
+| {{SG 1.60}} |         about 64 mL |  about 640 mL | about 10 US fl oz |
 
-### เกลือเอปซัม กาว CMC และเบนโทไนต์
+### Epsom salts, CMC gum and bentonite
 
-**เกลือเอปซัม**ทำให้เคลือบจับเป็นเจลเล็กน้อยเมื่อตั้งนิ่งและไหลอีกครั้งเมื่อคน เรียกว่า**การทำให้จับกลุ่ม**{{en: flocculant}} และเคลือบที่ทำงานแบบนี้เป็น**ไทโซโทรปี**{{en: thixotropy}}: เคลือบสม่ำเสมอกว่า หยดน้อยกว่า และตกตะกอนน้อยกว่า Digitalfire แนะนำให้เริ่มที่ประมาณ 2 g ต่อแกลลอนเมื่อ SG ถูกต้องแล้ว (ประมาณ 0.5 g ต่อลิตร ตามการแปลงของเรา) และปรับปริมาณทุกครั้งที่ผสม เพราะไม่มีสูตรเคลือบใดควรกำหนดปริมาณ เราแนะนำให้ละลายในน้ำร้อนเล็กน้อยก่อน ในตัวอย่างของ Digitalfire เคลือบที่ {{SG 1.45}} หยด จึงใช้น้ำลดลงเป็น {{SG 1.43}} และเกลือเอปซัมทำให้จับเป็นเจลกลับเป็นครีม และเคลือบได้สม่ำเสมอ การตรวจแบบหยาบ: คน หยุด และดู เคลือบที่จับเป็นเจลเคลื่อนต่อประมาณ 2 หรือ 3 วินาที แล้วหยุดและเด้งกลับเล็กน้อย
+**Epsom salts** make a glaze gel slightly when it stands still and flow again when it is stirred. This is called **flocculating** it, and a glaze that behaves this way is **thixotropic**: it goes on more evenly, drips less and settles less. Digitalfire suggests starting at about 2 g per gallon once the SG is right (roughly 0.5 g per liter, our conversion) and tuning the amount each time you mix, since no recipe should fix the dose. We suggest dissolving it in a little hot water first. In a Digitalfire example, a glaze at {{SG 1.45}} dripped, so water brought it down to {{SG 1.43}} and Epsom salts gelled it back to creamy, and it went on evenly. A rough check: stir, stop and watch. A gelled glaze moves on for about 2 or 3 seconds, then stops and springs back a little.
 
-**กาว CMC** (คาร์บอกซีเมทิลเซลลูโลส) ทำให้น้ำเคลือบเหนียวขึ้นและแห้งช้าลง และทิ้งชั้นเคลือบที่แข็งกว่าซึ่งยึดกับชิ้นงาน สำคัญที่สุดสำหรับเคลือบสำหรับทาและเคลือบที่มีฟริตสูง ตัวอย่างของ Digitalfire ผสม 3.75 g ลงในน้ำเคลือบ 1000 g และต้องใส่ด้วยเครื่องปั่น เคลือบที่มี CMC จะไม่จับเป็นเจลกับเกลือเอปซัม และเพราะจุลินทรีย์กินกัม จึงเปลี่ยนในถังและเริ่มมีกลิ่นได้
+**CMC gum** (carboxymethyl cellulose) makes a slurry stickier and slower to dry, and leaves a harder coat that holds to the pot. It matters most for brushing glazes and glazes high in frit. Digitalfire's example blends 3.75 g into 1000 g of slurry, and it has to go in with a blender. A glaze with CMC will not gel with Epsom salts, and since microbes feed on the gum, it can change in the bucket and start to smell.
 
-**เบนโทไนต์** ดินละเอียดมาก ช่วยให้อนุภาคอื่นแขวนลอย เคลือบสำหรับชุบมักพึ่งดินดิบ 15 ถึง 25% สำหรับเรื่องนี้ สำหรับสูตรเคลือบที่ขาดดิน เบนโทไนต์ประมาณ 1 ถึง 2% ช่วยได้
+**Bentonite**, a very fine clay, helps hold the other particles in suspension. Dipping glazes usually rely on 15 to 25% raw clay for this. For a recipe short of clay, about 1 to 3% bentonite helps; Digitalfire says a glaze with more than 15% clay should not need more than 1%.
 
 ## แผ่นทดสอบและชุดทดสอบแบบเส้น {#testing}
 
@@ -276,7 +276,7 @@ Label: แม่แบบบันทึก
 > [!NOTE]
 > ใน Glazecalc [สูตรเคลือบ](/recipe)ที่บันทึกไว้เก็บตัวสูตรเคลือบเอง [บันทึกการเผา](/firing)บันทึกการเผาแต่ละรอบ: เตาเผา วันที่ เวลา อุณหภูมิ โคน และหมายเหตุ [บันทึกย่อ](/notes)เก็บทุกอย่างอื่น เช่น บันทึกแบตช์ข้างต้นและสิ่งที่แต่ละแผ่นทดสอบแสดง
 
-## แหล่งข้อมูล {#sources}
+## Sources {#sources lang=en}
 
 - [Glazy: Raw materials](https://help.glazy.org/concepts/materials)
 - [Glazy: Specific gravity](https://help.glazy.org/testing/specific-gravity)
@@ -284,6 +284,7 @@ Label: แม่แบบบันทึก
 - [Digitalfire: Epsom salts](https://digitalfire.com/material/epsom+salts)
 - [Digitalfire: CMC gum](https://digitalfire.com/material/cmc%2Bgum)
 - [Digitalfire: Dipping glaze](https://digitalfire.com/glossary/dipping+glaze)
+- [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Water solubility](https://digitalfire.com/glossary/water+solubility)
 - [Digitalfire: Gerstley Borate](https://digitalfire.com/material/gerstley+borate)
 - [Digitalfire: Mahavir potash feldspar](https://digitalfire.com/material/mahavir+potash+feldspar)

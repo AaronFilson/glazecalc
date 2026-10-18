@@ -90,8 +90,7 @@
     "advice": "Praktilised nõuanded keraamika glasuuride segamise, glasuurimise ja põletamise kohta Glazecalcilt, lisaks teie enda nõuanded. Tasuta keraamikutele.",
     "about": "Glazecalc on tasuta avatud lähtekoodiga glasuurikeemia kalkulaator ja märkmik. Vaadake, kuidas see arvutab Segeri valemi (UMF) ja kuidas see on üles ehitatud.",
     "privacy": "Kuidas Glazecalc teie andmeid käsitleb: reklaame, analüütikat ega jälgimist pole ja midagi ei müüda. Mida säilitatakse, miks ja kuidas oma õigusi kasutada.",
-    "signup": "Looge tasuta Glazecalci konto, et säilitada oma glasuuri retseptid, toorained, märkmed ja põletuspäevikud. Reklaamideta ja teie andmeid ei müüda kunagi.",
-    "imageAlt": "Glazecalc: mõistke oma glasuure, ärge ainult segage neid."
+    "signup": "Looge tasuta Glazecalci konto, et säilitada oma glasuuri retseptid, toorained, märkmed ja põletuspäevikud. Reklaamideta ja teie andmeid ei müüda kunagi."
   },
   "notices": {
     "dismiss": "Sulge",
@@ -286,7 +285,6 @@
     "close": "Sulge"
   },
   "unity": {
-    "fluxes": "Sulandajad – RO",
     "stabilizers": "Stabilisaatorid – R₂O₃",
     "glassFormers": "Klaasimoodustajad – RO₂",
     "wildcards": "Muud oksiidid",

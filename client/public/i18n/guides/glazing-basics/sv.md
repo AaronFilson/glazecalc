@@ -18,40 +18,40 @@ Ett recept anger råvaror, till exempel fältspat{{en: feldspar}}, krita{{en: wh
 > [!NOTE]
 > Ett sätt att komma ihåg det: kiseldioxiden är glaset, flussmedlen låter det smälta vid en temperatur som ugnen kan nå, och aluminiumoxiden gör det trögare så att det stannar där det lades på.
 
-## Lera, ytskikt och de två bränningarna {#clay-and-firings}
+## Clay, coatings and the two firings {#clay-and-firings lang=en}
 
-### Lermassor
+### Clay bodies
 
-**Lermassan**{{en: clay body}} är den lera som ett föremål är gjort av. Det finns tre huvudtyper.
+The **clay body** is the clay a pot is made of. There are three main kinds.
 
-- **Lergods**{{en: earthenware}}: en lermassa för lågtemperatur, ungefär kägla 06–02, som förblir porös. Den är ofta röd eller ljust gulbrun och behöver en glasyr för att hålla vatten.
-- **Stengods**{{en: stoneware}}: en lermassa för mellan- till högtemperatur, ungefär kägla 5–10, som sintrar helt eller nästan helt.
-- **Porslin**: en vit lermassa för högtemperatur, rik på kaolin, ofta genomlysande.
+- **Earthenware**: a low-fire body, about cone 06–02, that stays porous. Often red or buff, it needs a glaze to hold water.
+- **Stoneware**: a mid- to high-fire body, about cone 5–10, that becomes vitreous or nearly so.
+- **Porcelain**: a white, high-fire body rich in kaolin, often translucent.
 
-**Sintrad** betyder glasartad och inte porös; **sintring** är när en lermassa blir det under bränningen. Brittiska keramiker drar ofta gränsen efter temperatur i stället: stengods bränns över {{2192 °F; 1200 °C}}, lergods under. Mellantemperatur, kägla 5–6, hamnar strax på båda sidor om den gränsen.
+**Vitreous** means glassy and non-porous; **vitrification** is a body becoming so as it fires. UK potters often draw the line by temperature instead: stoneware is fired above {{2192 °F; 1200 °C}}, earthenware below. Mid fire, cone 5–6, falls just either side of that line.
 
-### Ytskikt och torkning
+### Coatings and drying
 
-**Slicker** är lera uppslammad i vatten, för gjutning, hopfogning eller dekor. En **engob** är ett slickerliknande ytskikt, ofta färgat, med mer råvaror som inte är lera. En **underglasyrfärg** är färgad slicker eller oxiddekor, som oftast täcks av en transparent glasyr.
+**Slip** is clay suspended in water, for casting, joining or decorating. An **engobe** is a slip-like coating, often colored, with more non-clay materials. An **underglaze** is colored slip or oxide decoration, usually covered with a clear glaze.
 
-Obränt gods är **rågods**{{en: greenware}} (källorna är oeniga om ordet gäller allt obränt gods eller bara torrt gods). När det torkar blir det först **läderhårt**, fast men fortfarande lite fuktigt, det stadium då godset svarvas och får handtag; sedan **helt torrt**, utan fritt vatten kvar, mycket skört och färdigt att brännas.
+Unfired ware is **greenware** (sources disagree on whether the word covers all unfired ware or only dry ware). As it dries it becomes **leather-hard**, stiff but slightly damp, the stage for trimming and handles; then **bone dry**, with no free water left, very fragile and ready to fire.
 
-### De två bränningarna
+### The two firings
 
-Den första, lägre bränningen är **skröjbränningen**{{en: bisque}} (i Storbritannien **biscuit**), oftast kägla 08–04, ungefär {{1740–1940 °F; 950–1060 °C}}. Efter den är godset starkt men poröst. Digitalfire, ett uppslagsverk om glasyrer på nätet, föreslår i regel mer än 15 % porositet, så att det skröjade godset suger vatten ur glasyren när den läggs på. Lågt skröjat gods (kägla 08–06) är porösare; högt skröjat gods (ofta kägla 04) är tåligare men tar inte lika lätt emot glasyr.
+The first, lower firing is the **bisque** (UK: **biscuit**), usually cone 08–04 (most often 06–04), about {{1728–1945 °F; 942–1063 °C}}. It leaves ware strong but porous. Digitalfire, a glaze reference site, suggests generally more than 15% porosity, so the bisque draws water out of the glaze as it goes on. A soft bisque (cone 08–06) is more porous; a hard bisque (often cone 04) is sturdier but takes glaze less readily.
 
-Table: Hur skröjbränningen påverkar glaseringen (Digitalfire)
-Label: Hur skröjbränningen påverkar glaseringen
+Table: How the bisque changes glazing (Digitalfire)
+Label: How the bisque changes glazing
 
-| Skröjat gods                                                 | Vad som händer                                                            |
-| ------------------------------------------------------------ | ------------------------------------------------------------------------- |
-| Underbränt, mycket sugande                                   | Glasyren läggs på för tjockt, spricker sedan och kryper                   |
-| Överbränt, tätt                                              | Doppning och torkning tar längre tid                                      |
-| Bränt varmare, eller med längre hålltid vid topptemperaturen | Mer gas bränns bort redan nu, så mindre bubblar upp genom glasyren senare |
+| Bisque                                  | What happens                                                    |
+| --------------------------------------- | --------------------------------------------------------------- |
+| Under-fired, very absorbent             | Glaze goes on too thick, then cracks and crawls                 |
+| Over-fired, dense                       | Dipping and drying take longer                                  |
+| Fired hotter, or held longer at the top | More gas burns off now, so less bubbles through the glaze later |
 
-Potclays, en brittisk leverantör, beskriver skröjbränning till omkring {{1000 °C; 1832 °F}}, ungefär kägla 06. Med dessa källor sammantagna föreslår vi kägla 06–04 för en första skröjbränning: {{1828–1945 °F; 998–1063 °C}} vid Ortons medelsnabba stigning.
+Potclays, a UK supplier, describes biscuit firing to around {{1000 °C; 1832 °F}}, about cone 06. Reading these sources together, we suggest cone 06–04 for a first bisque: {{1828–1945 °F; 998–1063 °C}} at Orton's medium rate.
 
-**Glasyrbränningen**{{en: glaze firing}} (brittiska keramiker säger ibland **glost** firing) smälter glasyren och gör, för stengods, även leran tät. Vid **råglasering**{{en: once-firing}} glaseras obränt gods, som sedan bränns bara en gång. Digitalfire berättar om ett fall i produktion där glasyren på råglaserat gods kröp vid kanterna tills en skröjbränning avhjälpte det, så börja med två bränningar. [Bränna i en enkel keramikugn](/guides/firing) ger brännprogram för båda.
+The **glaze firing** (British potters may say **glost** firing) melts the glaze and, for stoneware, matures the clay too. **Once-firing** glazes unfired ware and fires it just once. Digitalfire reports a production case where raw-glazed ware crawled on its rims until a bisque firing cured it, so begin with two firings. [Firing a basic kiln](/guides/firing) gives schedules for both.
 
 ## Käglor och värmearbete {#cones}
 
@@ -238,30 +238,30 @@ Label: Vanliga glasyrfel
 | Rinnande glasyr            | Glasyren rinner ned på ugnsplattan                     | För lite aluminiumoxid; för tjockt, som där hällningar överlappar; mycket järn                                          | Lägg på ett tunnare lager; tillsätt aluminiumoxid; håll glasyren en bra bit ovanför foten                                               |
 | Kylsprickor{{en: dunting}} | Sprickor i föremålet från avkylning eller uppvärmning  | Snabb avkylning genom kvartsomvandlingen{{en: quartz inversion}}, {{1063 °F; 573 °C}}; ojämna väggar; dålig passning    | Bränn långsamt genom {{1063 °F; 573 °C}}, både uppåt och nedåt; jämna väggar                                                            |
 
-## Livsmedelssäkerhet {#food-safety}
+## Food safety {#food-safety lang=en}
 
-**Utlösning av metaller**{{en: leaching}} är när metall löses ut ur en bränd glasyr och går över i mat eller dryck, och en glasyr kan se perfekt ut och ändå göra det. Vid de tester som lagen föreskriver får det brända föremålet stå i en sur lösning, och det bly och kadmium som löses ut mäts.
+**Leaching** is metal dissolving out of a fired glaze into food or drink, and a glaze can look perfect and still do it. The legal tests soak the fired piece in an acid solution and measure the lead and cadmium that come out.
 
-### Blyfri är inte detsamma som livsmedelssäker
+### Lead-free is not the same as food-safe
 
-Reglerna i USA, EU, Storbritannien och Australien begränsar hur mycket bly och kadmium ett bränt föremål avger, inte vad glasyren innehåller. ”Blyfri” tar bort en fara; det är inget betyg på livsmedelssäkerhet. Även andra oxider löses ut: Glazy varnar för att glasyrer med mycket barium ”kan avge metaller och i regel inte är livsmedelssäkra”, Digitalfire skriver att koppar ”kan göra att metaller löses ut ur en glasyr; testa den”, och Glazy rekommenderar inte längre blyglasyrer för bruksgods.
+The rules in the US, the EU, the UK and Australia limit the lead and cadmium a fired piece releases, not what the glaze contains. "Lead-free" removes one hazard; it is not a food-safety rating. Other oxides leach too: Glazy warns that high-barium glazes "can leach and are generally not food-safe", Digitalfire says copper "can make a glaze leachable; test it", and Glazy no longer advises lead glazes for functional ware.
 
-En **insidesglasyr**{{en: liner glaze}} är en stabil, oftast transparent eller vit glasyr för ytor som kommer i kontakt med mat. Enligt vår bedömning är en insidesglasyr utan färgmedel, barium, bly eller litium, som smälter ut helt, inte krackelerar och tål slitage, det val som innebär lägre risk. Lägre risk är inget bevis.
+A **liner glaze** is a stable, usually clear or white glaze for surfaces that touch food. In our view, one with no colorant, barium, lead or lithium, that melts fully, does not craze and wears well, is the lower-risk choice. Lower risk is not proof.
 
-**Gränsformler**{{en: limit formulas}} (Digitalfire föredrar **målformler**{{en: target formulas}}) anger typiska intervall i Segerformeln för stabila glasyrer vid en viss kägla: Digitalfires målvärden för kägla 6 sätter aluminiumoxid till 0,285–0,64 och kiseldioxid till 2,4–4,7. De vägleder mot en sund kemi men bevisar ingenting; Digitalfire undviker ordet ”limit” (gräns) eftersom det antyder att glasyrer inom intervallen ”på något sätt är säkra”. Verktygen i Glazecalc för att ändra ett recept säger till när det nya receptet går över en rekommenderad gräns, till exempel mycket bor vid kägla 6, och vad glasyren troligen kommer att göra.
+**Limit formulas** (Digitalfire prefers **target formulas**) give typical unity-formula ranges for stable glazes at a cone: Digitalfire's cone 6 targets put alumina at 0.285–0.64 and silica at 2.4–4.7. They guide you toward sound chemistry but prove nothing; Digitalfire avoids the word "limit" because it suggests glazes inside the ranges "are somehow safe". Glazecalc's tools for changing a recipe say when the new one goes past a recommended limit, such as a lot of boron at cone 6, and what the glaze will likely do.
 
-De lagstadgade gränsvärdena skiljer sig mellan länder. Tabellen visar det egna landets gränsvärden, i de enheter som lagen själv använder; välj ett annat land för att jämföra.
+The legal limits differ by country. The table shows those where you live, in the law's own units; choose another country to compare.
 
 ::food-limits
 
-I USA måste gods som inte är avsett för mat ha en permanent, inbränd märkning ”Not for Food Use” (inte avsett för livsmedel) eller ett hål genom den yta som kommer i kontakt med mat. EU fastställer gränsvärden för bly och kadmium i rådets direktiv 84/500/EEG, och Storbritannien behåller samma värden i sin egen lag. Från och med den 29 maj 2026 tillåter Nederländerna, Belgien och Luxemburg ungefär 130 till 150 gånger mindre bly och ungefär 15 gånger mindre kadmium. Australien har gränsvärden för importerat gods; vi har inte hittat något officiellt gränsvärde för gods som tillverkas i Australien eller Nya Zeeland.
+In the US, decorative ceramic ware that looks usable for food is treated as food ware unless it carries a stick-on label and a permanent notice molded or fired onto its base, such as "Not for Food Use. May Poison Food", or has a hole through the food surface. The EU sets lead and cadmium limits in Directive 84/500/EEC, and the UK keeps the same figures in its own law. From 29 May 2026 the Netherlands, Belgium and Luxembourg allow about 130 to 150 times less lead, and about 15 times less cadmium. Australia sets limits for imported ware; we found no official limit for ware made in Australia or New Zealand.
 
-### Testning
+### Testing
 
-FDA skriver att testkit med provpinnar för hemmabruk kan visa bly som kan lösas ut, men Ceramics New Zealand varnar för att testpennor inte är gjorda för keramik och ger falskt positiva resultat. Se ett positivt resultat som ett skäl att sluta använda föremålet, och ett negativt resultat som något som inte bevisar någonting. Ett laboratorietest av metallavgivningen från det brända föremålet (ASTM C738 i USA; EN 1388 eller ISO 6486 i Europa) är det verkliga svaret.
+The FDA says home swab kits can show leachable lead, but Ceramics New Zealand warns that test pens are not designed for ceramics and give false positives. Treat a positive as a reason to stop using the piece, and a negative as proving nothing. A laboratory leach test of the fired piece (ASTM C738 in the US; EN 1388 or ISO 6486 in Europe) is the real answer.
 
 > [!WARNING]
-> ”Livsmedelssäker”{{en: food safe}} betyder att just den här glasyren, på just den här leran, bränd till just den här käglan i just den här ugnen och pålagd på just det här sättet, avger mindre än de lagstadgade gränsvärdena. Glazecalc kan hjälpa till att bygga upp en stabil glasyr, och **Ersätt bly** kan bygga om ett gammalt blyrecept utan bly, men ingen kalkylator kan certifiera ett föremål. Det kan bara ett test av det brända föremålet.
+> "Food safe" means this glaze, on this clay, fired to this cone in this kiln and applied this way, releases less than the legal limits. Glazecalc can help you build a stable glaze, and **Replace lead** can rebuild an old lead recipe without lead, but no calculator can certify a pot. Only a test of the fired piece can.
 
 ## Specifik vikt och glasering {#application}
 
@@ -298,171 +298,171 @@ Gaserna i ugnen, **ugnsatmosfären**, påverkar hur glasyrerna blir. **Oxidation
 
 Alla ugnar, även elugnar, avger ugnsgaser, så ventilera dem. [Säker blandning och ventilation](/guides/safe-mixing) förklarar hur.
 
-## Ordlista {#glossary}
+## Glossary {#glossary lang=en}
 
-Aluminiumoxid (Al₂O₃; alumina)
-: Den viktigaste stabilisatorn: hindrar att glasyren rinner och ger hårdhet. Kommer från leror och fältspater.
+Additive
+: A colorant, opacifier or suspender added on top of a recipe's 100.
 
-Avglasning (devitrification)
-: Kristaller som växer ur glaset tidigt under avsvalningen, där de inte är önskade.
+Alumina (Al₂O₃)
+: The main stabilizer: stops running and adds hardness. From clays and feldspars.
 
-Avskalning (shivering)
-: Glasyr som flagnar av vid kanter eftersom den står under för stark tryckspänning; en fara på bruksgods.
+Ball clay
+: A plastic clay with more iron and organic matter than kaolin.
 
-Bentonit (bentonite)
-: En mycket fin lera som tillsätts med 1–3 % för att hindra att glasyren sjunker till botten.
+Batch recipe
+: A glaze's raw materials by weight, usually adding up to 100.
 
-Blank, sidenmatt och matt (gloss, satin and matte)
-: Reflekterande och slät; en dämpad lyster; glanslös.
+Bentonite
+: A very fine clay added at 1–3% to keep glaze from settling.
 
-Bor (B₂O₃; boron)
-: Formellt en glasbildare men används som flussmedel; nödvändigt från kägla 06 till kägla 6.
+Bisque (UK: biscuit)
+: The first, lower firing, usually cone 08–04 (most often 06–04), leaving ware strong but porous.
 
-Flockningsmedel och flytmedel (flocculant and deflocculant)
-: Tillsatser som gör ett glasyrslam geléartat (epsomsalt, ättika) eller tunnare (vattenglas, Darvan).
+Boron (B₂O₃)
+: Formally a glass former but used as a flux; essential from cone 06 to cone 6.
 
-Flussmedel (flux)
-: En oxid som sänker smälttemperaturen för kiseldioxid.
+CMC gum
+: A cellulose gum that helps glaze brush on and stick; it burns away.
 
-Fritta (frit)
-: Fabrikstillverkat glas, smält, snabbkylt och malt, som gör lösliga eller giftiga oxider olösliga.
+Colorant and stain
+: A metal oxide or carbonate that colors glaze; a stain is a factory-made, more stable colorant.
 
-Fältspat (feldspar)
-: Ett mineral som ger alkaliskt flussmedel tillsammans med aluminiumoxid och kiseldioxid: kalifältspat, natronfältspat eller nefelinsyenit.
+Cone
+: A calibrated ceramic pyramid that bends at a set heatwork. A witness cone shows what the pots received.
 
-Färgmedel och färgkropp (colorant and stain)
-: En metalloxid eller ett metallkarbonat som färgar glasyr; en färgkropp är ett fabrikstillverkat, stabilare färgmedel.
+Crawling
+: Glaze pulling back into beads in firing, leaving bare clay.
 
-Förhållandet kiseldioxid–aluminiumoxid (silica to alumina ratio)
-: Kiseldioxid dividerat med aluminiumoxid i Segerformeln: högre tenderar mot blankt, lägre mot matt.
+Crazing
+: Fine cracks in a glaze that shrinks more than its body; crackle when wanted.
 
-Glasbildare (glass former)
-: Den oxid som bygger upp glaset, oftast kiseldioxid.
+Devitrification
+: Crystals growing out of the glass early in cooling, where they are not wanted.
 
-Glasyr (glaze)
-: Ett lager glas som smälter vid bränningen och försluter och dekorerar ett föremål.
+Dunting
+: Cracks in a pot from cooling or heating stress, often at quartz inversion, {{1063 °F; 573 °C}}.
 
-Glasyrbränning (glaze firing; UK: glost firing)
-: Bränningen som smälter glasyren.
+Earthenware
+: A low-fire body (about cone 06–02) that stays porous.
 
-Glasyrlim, CMC (CMC gum)
-: Ett cellulosalim som gör att glasyren går lättare att pensla på och fäster bättre; det bränns bort.
+Feldspar
+: A mineral supplying alkali flux with alumina and silica: potash, soda or nepheline syenite.
 
-Glödförlust, LOI (loss on ignition)
-: Vikt som går förlorad vid bränningen som vatten, koldioxid, organiskt material eller svavel.
+Flocculant and deflocculant
+: Additives that gel a slurry (Epsom salts, vinegar) or thin it (sodium silicate, Darvan).
 
-Gränsformel, målformel (limit formula, target formula)
-: Typiska intervall i Segerformeln för stabila glasyrer vid en viss kägla; en vägledning, ingen garanti.
+Flux
+: An oxide that lowers the melting temperature of silica.
 
-Insidesglasyr (liner glaze)
-: En stabil, oftast transparent eller vit glasyr för ytor som kommer i kontakt med mat.
+Food safe
+: In law, releasing less lead and cadmium than the limits in an acid test. Not the same as lead-free.
+
+Frit
+: Factory-made glass, melted, quenched and ground, that makes soluble or toxic oxides insoluble.
+
+Glass former
+: The oxide that builds the glass, usually silica.
+
+Glaze
+: A coat of glass that melts in firing to seal and decorate a pot.
+
+Glaze firing (UK: glost firing)
+: The firing that melts the glaze.
+
+Glaze fit
+: How well glaze and body expansion match; a good fit leaves the glaze slightly compressed.
+
+Gloss, satin and matte
+: Reflective and smooth; a subdued sheen; dull.
+
+Greenware
+: Unfired ware: leather-hard when stiff but damp, bone dry when no free water is left.
+
+Heatwork
+: The combined effect of temperature and time in a kiln; what cones measure.
 
 Kaolin (UK: china clay)
-: En ren vit lera som ger aluminiumoxid och kiseldioxid; håller glasyren i suspension. Australien: Eckalite.
+: A pure white clay supplying alumina and silica; keeps glaze suspended. Australia: Eckalite.
 
-Kiseldioxid (SiO₂; silica)
-: Glasbildaren; som råvara även kallad flinta eller kvarts.
+Kiln wash
+: A heat-resisting coating that protects kiln shelves from drips.
 
-Krackelering (crazing)
-: Fina sprickor i en glasyr som krymper mer än sin skärv; krackelyr när de är avsiktliga.
+Leaching
+: Metals dissolving out of a fired glaze into food or drink.
 
-Krita (whiting)
-: Kalciumkarbonat, det viktigaste kalciumflussmedlet; förlorar över 40 % av sin vikt vid bränningen. Tyska: Kreide.
+Limit formula (target formula)
+: Typical unity-formula ranges for stable glazes at a cone; a guide, not a guarantee.
 
-Krypning (crawling)
-: Glasyr som drar ihop sig till pärlor under bränningen och lämnar bar lera.
+Line blend
+: Tests stepping one ingredient between two amounts. A triaxial blend varies three on a grid.
 
-Kylsprickor (dunting)
-: Sprickor i ett föremål från spänningar vid avkylning eller uppvärmning, ofta vid kvartsomvandlingen, {{1063 °F; 573 °C}}.
+Liner glaze
+: A stable, usually clear or white glaze for surfaces that touch food.
 
-Kägla (cone)
-: En kalibrerad keramisk pyramid som böjer sig vid ett bestämt värmearbete. En kontrollkägla visar vad föremålen har fått.
+LOI (loss on ignition)
+: Weight lost in firing as water, carbon dioxide, organic matter or sulfur.
 
-Lergods (earthenware)
-: En lermassa för lågtemperatur (ungefär kägla 06–02) som förblir porös.
+Once-firing (single firing)
+: Glazing unfired ware and firing it only once.
 
-Livsmedelssäker (food safe)
-: Enligt lagen: avger mindre bly och kadmium än gränsvärdena i ett test med syra. Inte detsamma som blyfri.
+Opacifier
+: A material, such as zircon, tin oxide or titanium dioxide, that makes glaze opaque.
 
-Nålstick och blåsor (pinholing and blistering)
-: Små hål, eller kratrar med vassa kanter, där gas har tagit sig ut genom smältan.
+Oxidation and reduction
+: Firing with plenty of oxygen (electric kilns), or with oxygen restricted (usually gas or wood).
 
-Oxid (oxide)
-: En förening av ett grundämne med syre; en oxidanalys anger oxiderna i viktprocent.
+Oxide
+: A compound of an element with oxygen; an oxide analysis lists them by weight percent.
 
-Oxidation och reduktion (oxidation and reduction)
-: Bränning med gott om syre (elugnar), eller med begränsat syre (oftast gas eller ved).
+Pinholing and blistering
+: Small holes, or sharp-edged craters, where gas escaped through the melt.
 
-Passning mellan glasyr och skärv (glaze fit)
-: Hur väl glasyrens och skärvens värmeutvidgning stämmer överens; vid god passning står glasyren under lätt tryckspänning.
+Porcelain
+: A white, kaolin-rich, high-fire body, often translucent.
 
-Piplera (ball clay)
-: En plastisk lera med mer järn och organiskt material än kaolin.
+R₂O and RO
+: The alkali fluxes (Na₂O, K₂O, Li₂O) and alkaline-earth fluxes (CaO, MgO, BaO, SrO, with ZnO).
 
-Plattengobe (kiln wash)
-: Ett värmetåligt skikt som skyddar ugnsplattor mot droppar.
+Shivering
+: Glaze flaking off edges because it is over-compressed; a hazard on functional ware.
 
-Porslin (porcelain)
-: En vit, kaolinrik lermassa för högtemperatur, ofta genomlysande.
+Silica (SiO₂)
+: The glass former; also called flint or quartz.
 
-Provserie (line blend)
-: Prov där en råvara ökas stegvis mellan två mängder. En triaxialblandning varierar tre i ett rutnät.
+Silica to alumina ratio
+: Silica divided by alumina in the unity formula: higher tends to gloss, lower to matte.
 
-R₂O och RO (R₂O and RO)
-: De alkaliska flussmedlen (Na₂O, K₂O, Li₂O) och flussmedlen av alkaliska jordartsmetaller (CaO, MgO, BaO, SrO, med ZnO).
+Slip and engobe
+: Clay in water; an engobe is a slip-like coating with more non-clay material.
 
-Recept (batch recipe)
-: En glasyrs råvaror efter vikt, oftast summerade till 100.
+Specific gravity (SG)
+: A slurry's weight compared with the same volume of water. Older UK: pint weight.
 
-Råglasering (once-firing, single firing)
-: Att glasera obränt gods och bränna det bara en gång.
+Stabilizer
+: An oxide, mainly alumina, that stiffens the melt and adds durability.
 
-Rågods (greenware)
-: Obränt gods: läderhårt när det är fast men fuktigt, helt torrt när inget fritt vatten finns kvar.
+Stoneware
+: A mid- to high-fire body (about cone 5–10) that becomes vitreous or nearly so.
 
-Segerformel, UMF (unity molecular formula, Seger formula)
-: En glasyrs oxider som antal molekyler, omräknade så att flussmedlen summeras till 1.
+Thixotropy
+: Flowing when stirred, setting into a soft gel when still.
 
-Sintring (vitrification)
-: När en lermassa blir glasartad och tät under bränningen.
+Underglaze
+: Colored slip or oxide decoration, usually under a clear glaze.
 
-Skröjbränning (bisque; UK: biscuit)
-: Den första, lägre bränningen, oftast kägla 08–04, som lämnar godset starkt men poröst.
+Unity molecular formula (UMF, Seger formula)
+: A glaze's oxides as molecule counts, scaled so the fluxes add up to 1.
 
-Slicker och engob (slip and engobe)
-: Lera i vatten; en engob är ett slickerliknande ytskikt med mer råvaror som inte är lera.
+Vitrification
+: A body becoming glassy and non-porous in firing.
 
-Specifik vikt, SG (specific gravity)
-: Ett glasyrslams vikt jämfört med samma volym vatten. I äldre brittiska källor: pintvikt.
+Wax resist
+: Wax painted where glaze must not go, usually the foot.
 
-Stabilisator (stabilizer)
-: En oxid, främst aluminiumoxid, som gör smältan trögare och ger hållbarhet.
+Whiting
+: Calcium carbonate, the main calcium flux; loses over 40% of its weight in firing. German: Kreide.
 
-Stengods (stoneware)
-: En lermassa för mellan- till högtemperatur (ungefär kägla 5–10) som sintrar helt eller nästan helt.
-
-Tillsats (additive)
-: Ett färgmedel, täckmedel eller ställmedel som tillsätts utöver receptets 100.
-
-Tixotropi (thixotropy)
-: Att flyta när det rörs om och stelna till en mjuk gelé när det står stilla.
-
-Täckmedel (opacifier)
-: En råvara, till exempel zirkonsilikat, tennoxid eller titandioxid, som gör glasyren opak.
-
-Underglasyrfärg (underglaze)
-: Färgad slicker eller oxiddekor, oftast under en transparent glasyr.
-
-Utlösning av metaller (leaching)
-: Metaller som löses ut ur en bränd glasyr och går över i mat eller dryck.
-
-Vax (wax resist)
-: Vax som målas där glasyren inte får hamna, oftast på foten.
-
-Värmearbete (heatwork)
-: Den sammanlagda effekten av temperatur och tid i en ugn; det som käglor mäter.
-
-## Källor {#sources}
+## Sources {#sources lang=en}
 
 - [Glazy Help: Glaze](https://help.glazy.org/concepts/glaze)
 - [Glazy Help: Oxides](https://help.glazy.org/concepts/oxides)
@@ -474,6 +474,7 @@ Värmearbete (heatwork)
 - [Glazy Help: Specific gravity](https://help.glazy.org/testing/specific-gravity)
 - [Orton Ceramic Foundation: Pyrometric cone chart, °F (via The Ceramic Shop)](https://www.theceramicshop.com/technical_info/Cones/Orton-Cone-Chart-F-022-14.pdf)
 - [Digitalfire: Bisque](https://digitalfire.com/glossary/bisque)
+- [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Unity molecular formula](https://digitalfire.com/glossary/unity+molecular+formula)
 - [Digitalfire: LOI](https://digitalfire.com/glossary/loi)
 - [Digitalfire: Frit](https://digitalfire.com/glossary/frit)
@@ -489,3 +490,4 @@ Värmearbete (heatwork)
 - [Potclays: The difference between stoneware and earthenware](https://www.potclays.co.uk/clay-questions/difference-stoneware-earthenware)
 - [US FDA: Compliance Policy Guide Sec. 545.450, Pottery (ceramics), lead contamination](https://www.fda.gov/media/71764/download)
 - [EUR-Lex: Council Directive 84/500/EEC on ceramic articles in contact with food](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:31984L0500)
+- [eCFR: 21 CFR 109.16, Ornamental and decorative ceramicware](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-109/subpart-A/section-109.16)

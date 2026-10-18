@@ -370,83 +370,83 @@ Il-koni Orton li joqogħdu weħidhom jinbiegħu fil-Ġappun bl-isem 立つゼー
 
 :::
 
-## Il-ħamja tal-bisque {#bisque}
+## Bisque firing {#bisque lang=en}
 
-Il-ħamja tal-**bisque** (fir-Renju Unit: biscuit) hija l-ewwel ħamja, aktar baxxa, li tibdel it-tafal niexef f’oġġetti iebsa u porużi, lesti għall-glejż{{en: glaze}}. Normalment issir sal-koni{{en: cones}} 06–04, {{1828–1945 °F; 998–1063 °C}} skont it-tabella ta’ Orton; il-fuħħarin tar-Renju Unit spiss jaħmu sa madwar {{1000 °C; 1832 °F}}, qrib il-kon 06. Il-bisque għandu jibqa’ poruż, “ġeneralment aktar minn 15%” (Digitalfire), biex jiġbed l-ilma mill-glejż. Bisque baxx wisq jieħu saff ħoxn wisq ta’ glejż, li mbagħad jixxaqqaq u **jinġabar**{{en: crawls}} (jiġbed lura f’gżejjer, u jħalli t-tafal mikxuf). Il-bisque moħmi wisq ftit ukoll “jibqa’ jiċkien waqt il-ħamja tal-glejż{{en: glaze firing}}”, u dan iħassar kif il-glejż jaqbel mat-tafal{{en: glaze fit}}. Il-mili tal-forn ma jitlobx wisq reqqa: il-biċċiet jistgħu jmissu ma’ xulxin, l-għotjien jistgħu jinħmew fuq il-biċċiet tagħhom, u l-iskutelli jitqiegħdu xoffa ma’ xoffa, mhux waħda ġol-oħra.
+The **bisque** firing (biscuit in the UK) is the first, lower firing that turns dry clay into hard, porous ware ready to glaze. It is usually fired to cone 06–04, {{1828–1945 °F; 998–1063 °C}} on Orton's chart; UK potters often fire to around {{1000 °C; 1832 °F}}, near cone 06. The bisque should stay porous, "generally more than 15%" (Digitalfire), so it soaks water out of the glaze. Too soft a bisque takes glaze on too thick, which then cracks and **crawls** (pulls back into islands, leaving bare clay). Under-fired bisque also "continues to shrink during glaze firing", which spoils the glaze fit. Loading is forgiving: pieces may touch, lids can be fired on their pots, and bowls go rim to rim rather than nested.
 
-### Għaliex il-bidu jsir bil-mod
+### Why the early part goes slowly
 
-L-ilma, meta jsir fwar, “jespandi 1170 darba”, jinnota Bracker’s, għalhekk l-oġġetti umdi jridu jinxfu bil-mod. L&L u Orton jagħtu l-parir li “Għandha tittieħed attenzjoni speċjali taħt 1500°F (815°C) biex it-tafal{{en: body}} jisħon b’mod uniformi”, u li l-karbonju jrid jinħaraq kollu qabel madwar {{1200 °F; 650 °C}}. ’Il fuq minn {{1500 °F; 816 °C}} il-forn jista’ jitla’ aktar malajr.
+Water expands more than a thousandfold as it turns to steam, so damp ware has to be dried slowly. L&L and Orton advise that "Special care should be taken below 1500°F (815°C) to heat the body evenly", and that carbon must be burned out before about {{1200 °F; 650 °C}}. Above {{1500 °F; 816 °C}} the kiln can climb faster.
 
-Table: X’jiġri hekk kif jisħon il-bisque
-Label: X’jiġri fil-ħamja tal-bisque
+Table: What happens as a bisque heats
+Label: What happens in a bisque
 
-|                      Temperatura | X’jiġri                                                                                            |
-| -------------------------------: | -------------------------------------------------------------------------------------------------- |
-|       {{300–500 °F; 149–260 °C}} | Il-leganti jinħarqu                                                                                |
-|        Madwar {{450 °F; 232 °C}} | Il-materja organika tibda tinħaraq                                                                 |
-|            Sa {{700 °F; 371 °C}} | L-ilma jibqa’ joħroġ mit-tafal sakemm tinqabeż din it-temperatura                                  |
-|      {{842–1022 °F; 450–550 °C}} | L-ilma marbut kimikament joħroġ mit-tafal                                                          |
-|              {{1063 °F; 573 °C}} | L-inverżjoni tal-kwarz{{en: quartz inversion}}: is-silika{{en: silica}} fit-tafal tespandi f’daqqa |
-| ’Il fuq minn {{1112 °F; 600 °C}} | Il-kubrit jinħaraq u joħroġ                                                                        |
-|  Sa {{1200–1400 °F; 649–760 °C}} | Il-karbonju naturali jinħaraq; dan għandu jispiċċa qabel ma tasal is-sħana ħamra                   |
-| ’Il fuq minn {{1544 °F; 840 °C}} | Il-karbonat tal-kalċju jiddekomponi                                                                |
+|                        Temperature | What happens                                                |
+| ---------------------------------: | ----------------------------------------------------------- |
+|         {{300–500 °F; 149–260 °C}} | Binders burn off                                            |
+|           About {{450 °F; 232 °C}} | Organic matter starts to burn                               |
+|           Up to {{700 °F; 371 °C}} | Water keeps leaving the clay until above this temperature   |
+|        {{842–1022 °F; 450–550 °C}} | Chemically bound water leaves the clay                      |
+|                {{1063 °F; 573 °C}} | Quartz inversion: silica in the clay expands suddenly       |
+|          Above {{1112 °F; 600 °C}} | Sulfur burns out                                            |
+| Up to {{1200–1400 °F; 649–760 °C}} | Natural carbon burns off; this should finish below red heat |
+|          Above {{1544 °F; 840 °C}} | Calcium carbonate breaks down                               |
 
-L-**inverżjoni tal-kwarz** hija l-bidla f’daqqa fid-daqs tas-silika fit-tafal f’{{1063 °F; 573 °C}}: tespandi meta t-temperatura titla’ u tiċkien meta tinżel. Il-programm Slow Bisque ta’ L&L jimxi bil-mod minnha, bejn {{1000 °F; 538 °C}} u {{1100 °F; 593 °C}}. Digitalfire sab li dan “mhux meħtieġ għall-ħamjiet tal-bisque”, u Ceramics Monthly jgħid li l-aktar li jgħodd huwa meta jitkessħu oġġetti densi. Li timxi bil-mod ma jiswiex wisq, għalhekk nissuġġerixxu li żżommu għall-biċċiet ħoxnin.
+**Quartz inversion** is the sudden change in size of the silica in clay at {{1063 °F; 573 °C}}: it expands on the way up and contracts on the way down. L&L's Slow Bisque slows through it, between {{1000 °F; 538 °C}} and {{1100 °F; 593 °C}}. Digitalfire found this "unnecessary for bisque firings", and Ceramics Monthly says it mainly matters when cooling dense ware. Slowing costs little, so our suggestion is to keep it for thick pieces.
 
-### Tnixxif fil-forn
+### Candling: drying in the kiln
 
-It-**tnixxif fil-forn**{{en: candling}} ifisser li żżomm il-forn f’temperatura baxxa, bl-għatu miftuħ ftit jew bl-estrattur jaħdem, sakemm l-aħħar umdità toħroġ mill-oġġetti. Is-sorsi ma jaqblux dwar it-temperatura:
+**Candling** means holding the kiln at a low temperature, with the lid propped or the vent running, until the last moisture has left the ware. Sources disagree about the temperature:
 
-Table: Temperaturi tat-tnixxif fil-forn
+Table: Candling temperatures
 
-| Sors             | Tnixxif fil-forn                                                                                                   |
-| ---------------- | ------------------------------------------------------------------------------------------------------------------ |
-| Ceramics Monthly | Ftit taħt il-punt tat-togħlija; per eżempju, it-temperatura titla’ b’rata ta’ {{25 °F/h; 14 °C/h}} għal 4–6 sigħat |
-| Preheat ta’ L&L  | Żamma{{en: hold}} f’{{150–200 °F; 66–93 °C}}                                                                       |
-| Digitalfire      | Żamma f’{{250 °F; 121 °C}}, għax żamma taħt il-punt tat-togħlija “ma toħroġx l-ilma kollu”                         |
+| Source           | Candling                                                                                 |
+| ---------------- | ---------------------------------------------------------------------------------------- |
+| Ceramics Monthly | Just short of boiling; for example, climbing at {{25 °F/h; 14 °C/h}} for 4–6 hours       |
+| L&L preheat      | Hold at {{150–200 °F; 66–93 °C}}                                                         |
+| Digitalfire      | Hold at {{250 °F; 121 °C}}, because holding below boiling "does not expel all the water" |
 
 > [!NOTE]
-> Il-punt tat-tluq tagħna: tella’ t-temperatura bil-mod sa mhux aktar minn madwar {{250 °F; 121 °C}}, u żommha hemm sakemm mera quddiem it-toqba tal-arja tibqa’ ċara. Għall-oġġetti ħoxnin jew umdi, żommha hemm il-lejl kollu.
+> Our starting point: climb slowly to no more than about {{250 °F; 121 °C}}, and hold until a mirror at the vent stays clear. Hold overnight for thick or damp ware.
 
-It-**test tal-mera**: żomm mera f’temperatura tal-kamra quddiem toqba tal-arja jew quddiem il-fetħa taħt l-għatu miftuħ ftit. Jekk tiċċajpar, l-ilma għadu ħiereġ; stenna, imbagħad erġa’ ttestja.
+The **mirror test**: hold a room-temperature mirror at a vent hole or at the gap under a propped lid. If it fogs, water is still leaving; wait, then test again.
 
-### Programmi tal-kontrollur
+### Controller schedules
 
-**Kontrollur** huwa apparat elettroniku li jaħmi l-forn skont **programm tal-ħami**: lista ta’ **segmenti**, kull wieħed b’rata tat-tisħin (ir-**rampa**{{en: ramp}}), temperatura fil-mira u żamma jekk tridha. Hawn taħt hemm żewġ programmi lesti tal-kontrolluri DynaTrol ta’ L&L u tal-kontrolluri Bartlett, u programm ippubblikat minn Digitalfire. “L-ogħla temperatura” hija t-temperatura li l-kontrollur innifsu juża għall-kon li tagħżel: għall-kon 04 hija {{1926 °F; 1052 °C}}, u għall-kon 06, {{1819 °F; 993 °C}}.
+A **controller** is an electronic unit that fires the kiln through a **schedule**: a list of **segments**, each a rate of climb (the **ramp**), a target temperature and an optional hold. Below are two presets from L&L's DynaTrol and Bartlett controllers, and a schedule published by Digitalfire. "Peak" is the controller's own temperature for the cone you choose: for cone 04 it is {{1926 °F; 1052 °C}}, and for cone 06, {{1819 °F; 993 °C}}.
 
-Table: Programmi lesti tal-bisque ta’ L&L u Bartlett
-Label: Programmi lesti tal-bisque
+Table: L&L and Bartlett bisque presets
+Label: Bisque presets
 
-| Segment                   |                                                                     Tisħin sa |                   Slow Bisque |            Fast Bisque |
-| ------------------------- | ----------------------------------------------------------------------------: | ----------------------------: | ---------------------: |
-| 1                         |                                                            {{250 °F; 121 °C}} |          {{80 °F/h; 44 °C/h}} |  {{120 °F/h; 67 °C/h}} |
-| 2                         |                                                           {{1000 °F; 538 °C}} |        {{200 °F/h; 111 °C/h}} | {{300 °F/h; 167 °C/h}} |
-| 3                         |                                                           {{1100 °F; 593 °C}} |         {{100 °F/h; 56 °C/h}} |  {{150 °F/h; 83 °C/h}} |
-| 4                         | {{250 °F; 139 °C}} taħt l-ogħla temperatura: {{1676 °F; 913 °C}} għall-kon 04 |        {{180 °F/h; 100 °C/h}} | {{180 °F/h; 100 °C/h}} |
-| 5                         |                                                           L-ogħla temperatura |          {{80 °F/h; 44 °C/h}} |  {{108 °F/h; 60 °C/h}} |
-| Ħin tat-tisħin, forn vojt |                                                                               | Madwar 13-il siegħa jew aktar |   Madwar 10–11½ siegħa |
+| Segment                  |                                                           Climb to |            Slow Bisque |            Fast Bisque |
+| ------------------------ | -----------------------------------------------------------------: | ---------------------: | ---------------------: |
+| 1                        |                                                 {{250 °F; 121 °C}} |   {{80 °F/h; 44 °C/h}} |  {{120 °F/h; 67 °C/h}} |
+| 2                        |                                                {{1000 °F; 538 °C}} | {{200 °F/h; 111 °C/h}} | {{300 °F/h; 167 °C/h}} |
+| 3                        |                                                {{1100 °F; 593 °C}} |  {{100 °F/h; 56 °C/h}} |  {{150 °F/h; 83 °C/h}} |
+| 4                        | {{250 °F; 139 °C}} below the peak: {{1676 °F; 913 °C}} for cone 04 | {{180 °F/h; 100 °C/h}} | {{180 °F/h; 100 °C/h}} |
+| 5                        |                                                           The peak |   {{80 °F/h; 44 °C/h}} |  {{108 °F/h; 60 °C/h}} |
+| Heating time, empty kiln |                                                                    | About 13 hours or more |     About 10–11½ hours |
 
-Il-ħinijiet ta’ L&L huma “għall-fran vojta l-aktar mgħaġġlin possibbli”; forn mimli jista’ jieħu sa erba’ darbiet aktar, u kull żamma li żżid hija xogħol tas-sħana{{en: heatwork}} żejjed li l-programmi lesti ma jqisuhx. L&L jagħti l-parir li tuża Slow Bisque, b’tnixxif fil-forn (preheat) ta’ 2–3 sigħat jew aktar, għal biċċiet kbar jew umdi, u jwissi kontra l-ħami mgħaġġel, li “jista’ jikkawża difetti bħal toqob tal-labra{{en: pinholes}}, xquq, u ħruq mhux biżżejjed tal-materja organika”.
+L&L's times are "for the fastest possible empty kilns"; a loaded kiln can take as much as four times longer, and any hold you add is extra heatwork the presets do not allow for. L&L advises Slow Bisque, with a preheat of 2–3 hours or longer, for large or damp pieces, and warns against fast firing, which "can cause defects like pinholes, cracking, and insufficient burnout".
 
-Table: Bisque BQ1000 ta’ Digitalfire, sa madwar il-kon 06
+Table: Digitalfire BQ1000 bisque, to about cone 06
 Label: Digitalfire BQ1000
 
-| Pass |                   Rata |                 Mira | Żamma                                     |
+| Step |                   Rate |               Target | Hold                                      |
 | ---- | ---------------------: | -------------------: | ----------------------------------------- |
-| 1    | {{306 °F/h; 170 °C/h}} |   {{248 °F; 120 °C}} | 60 minuta; sa 10 sigħat għal oġġetti tqal |
-| 2    | {{306 °F/h; 170 °C/h}} |  {{1733 °F; 945 °C}} | Xejn                                      |
-| 3    |  {{108 °F/h; 60 °C/h}} | {{1832 °F; 1000 °C}} | 15-il minuta                              |
+| 1    | {{306 °F/h; 170 °C/h}} |   {{248 °F; 120 °C}} | 60 minutes; up to 10 hours for heavy ware |
+| 2    | {{306 °F/h; 170 °C/h}} |  {{1733 °F; 945 °C}} | None                                      |
+| 3    |  {{108 °F/h; 60 °C/h}} | {{1832 °F; 1000 °C}} | 15 minutes                                |
 
-BQ1000 jieħu madwar 7 sigħat u 44 minuta. L-awtur tiegħu jsib li sa {{500 °F/h; 278 °C/h}} huwa tajjeb għal oġġetti rqaq u nexfin, u jnaqqas ir-rata fl-aħħar pass biex it-temperatura ssir uniformi f’dak kollu li hemm fil-forn.
+BQ1000 takes about 7 hours 44 minutes. Its author finds up to {{500 °F/h; 278 °C/h}} fine for thin, dry ware, and slows the last step to even out the temperature through the load.
 
-### Il-koni tal-kontrollur u t-tabella ta’ Orton
+### Controller cones and Orton's chart
 
-Il-kontrolluri ta’ L&L u ta’ Bartlett jużaw {{1926 °F; 1052 °C}} għall-kon 04 u {{1819 °F; 993 °C}} għall-kon 06, ftit taħt il-valuri ta’ Orton, {{1945 °F; 1063 °C}} u {{1828 °F; 998 °C}}; jaqblu fil-kon 6 u fil-kon 10. Il-koni xhieda{{en: witness cones}} jsolvu d-differenza: jekk ma jaqblux mal-kontrollur, ikkoreġih bl-aġġustament tal-kon.
+L&L and Bartlett controllers use {{1926 °F; 1052 °C}} for cone 04 and {{1819 °F; 993 °C}} for cone 06, a little below Orton's {{1945 °F; 1063 °C}} and {{1828 °F; 998 °C}}; they agree at cone 6 and cone 10. Witness cones settle the difference: if they disagree with the controller, correct it with the cone offset.
 
-### F’forn mingħajr kontrollur
+### On a manual kiln
 
-Forn mingħajr kontrollur isegwi l-istess pjan, imma bl-idejn: nixxef bil-mod bl-għatu miftuħ ftit u t-toqob tal-ħarsa miftuħin, għolli s-swiċċijiet minn Low (baxx) għal Medium (medju) u mbagħad għal High (għoli), u ħalli s-sitter itemm il-ħamja. Il-proċeduri ppubblikati jinsabu fit-taqsima Fran mingħajr kontrollur, fid-dettall, aktar ’l isfel.
+A manual kiln follows the same plan by hand: dry slowly with the lid propped and the peepholes open, step the switches up from Low to Medium to High, and let the sitter end the firing. The published procedures are under Manual kilns in detail, below.
 
 ## Il-ħamja tal-glejż {#glaze}
 

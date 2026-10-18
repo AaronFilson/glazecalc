@@ -469,7 +469,6 @@
     "expansionRises": "Apskaičiuotas šios glazūros šiluminis plėtimasis padidėja nuo {was} iki {now}.",
     "expansionRisesProbably": "Jei senoji glazūra vos tiko jūsų molio masei, ši tikriausiai trūkinės, kartais praėjus kelioms savaitėms.",
     "expansionRisesMay": "Jei senoji glazūra vos tiko jūsų molio masei, ši gali trūkinėti, kartais praėjus kelioms savaitėms.",
-    "expansionRisesFix": "Trūkinėjimas silpnina dirbinius, ir jo nepatariama turėti paviršiuose, kurie liečiasi su maistu. Mažiau natrio ir kalio arba daugiau boro, silicio dioksido ar aliuminio oksido šiluminį plėtimąsi sumažina.",
     "expansionFalls": "Apskaičiuotas šios glazūros šiluminis plėtimasis sumažėja nuo {was} iki {now}. Kai jis šiek tiek mažesnis, glazūra paprastai geriau atspari trūkinėjimui.",
     "expansionFallsProbably": "Kai jis daug mažesnis, glazūra tikriausiai atšoks, nuo kraštų ir briaunų atskeldama aštrias skeveldras.",
     "expansionFallsCan": "Kai jis daug mažesnis, glazūra gali atšokti, nuo kraštų ir briaunų atskeldama aštrias skeveldras.",

@@ -370,83 +370,83 @@ Label: ตาราง SK
 
 :::
 
-## การเผาดิบ {#bisque}
+## Bisque firing {#bisque lang=en}
 
-การเผา**ดิบ**{{en: bisque}} (ในสหราชอาณาจักรเรียกว่า biscuit) คือการเผาครั้งแรกที่อุณหภูมิต่ำกว่า ซึ่งเปลี่ยนดินแห้งให้เป็นชิ้นงานแข็งและพรุนพร้อมเคลือบ โดยปกติเผาถึงโคน 06–04 หรือ {{1828–1945 °F; 998–1063 °C}} ตามตารางของ Orton ช่างปั้นในสหราชอาณาจักรมักเผาที่ประมาณ {{1000 °C; 1832 °F}} ใกล้โคน 06 ชิ้นงานเผาดิบควรยังพรุนอยู่ “โดยทั่วไปมากกว่า 15%” (Digitalfire) เพื่อดูดน้ำออกจากเคลือบ ชิ้นงานเผาดิบที่อ่อนเกินไปรับเคลือบหนาเกินไป ซึ่งจะแตกและ**หดรวมตัว**{{en: crawling}} (ถอยเป็นเกาะ ทิ้งดินเปล่า) ชิ้นงานเผาดิบที่เผาไม่สุกยัง “หดตัวต่อไปในระหว่างการเผาเคลือบ” ซึ่งทำให้เคลือบเข้ากับเนื้อดินได้ไม่ดี การบรรจุผ่อนปรน: ชิ้นงานสัมผัสกันได้ ฝาเผาติดกับภาชนะของมันได้ และชามวางปากชนปากแทนการซ้อนกัน
+The **bisque** firing (biscuit in the UK) is the first, lower firing that turns dry clay into hard, porous ware ready to glaze. It is usually fired to cone 06–04, {{1828–1945 °F; 998–1063 °C}} on Orton's chart; UK potters often fire to around {{1000 °C; 1832 °F}}, near cone 06. The bisque should stay porous, "generally more than 15%" (Digitalfire), so it soaks water out of the glaze. Too soft a bisque takes glaze on too thick, which then cracks and **crawls** (pulls back into islands, leaving bare clay). Under-fired bisque also "continues to shrink during glaze firing", which spoils the glaze fit. Loading is forgiving: pieces may touch, lids can be fired on their pots, and bowls go rim to rim rather than nested.
 
-### ทำไมช่วงแรกจึงช้า
+### Why the early part goes slowly
 
-น้ำที่กลายเป็นไอ “ขยายตัว 1,170 เท่า” Bracker's ระบุ ดังนั้นชิ้นงานที่ชื้นต้องทำให้แห้งอย่างช้า L&L และ Orton แนะนำว่า “ควรระมัดระวังเป็นพิเศษต่ำกว่า 1500°F (815°C) เพื่อให้ความร้อนแก่เนื้อดินอย่างสม่ำเสมอ” และต้องเผาคาร์บอนออกให้หมดก่อนประมาณ {{1200 °F; 650 °C}} เหนือ {{1500 °F; 816 °C}} เตาเผาเพิ่มอุณหภูมิได้เร็วขึ้น
+Water expands more than a thousandfold as it turns to steam, so damp ware has to be dried slowly. L&L and Orton advise that "Special care should be taken below 1500°F (815°C) to heat the body evenly", and that carbon must be burned out before about {{1200 °F; 650 °C}}. Above {{1500 °F; 816 °C}} the kiln can climb faster.
 
-Table: สิ่งที่เกิดขึ้นเมื่อชิ้นงานเผาดิบร้อนขึ้น
-Label: สิ่งที่เกิดขึ้นในการเผาดิบ
+Table: What happens as a bisque heats
+Label: What happens in a bisque
 
-|                         อุณหภูมิ | สิ่งที่เกิดขึ้น                                        |
-| -------------------------------: | ------------------------------------------------------ |
-|       {{300–500 °F; 149–260 °C}} | สารยึดเกาะไหม้ออก                                      |
-|        ประมาณ {{450 °F; 232 °C}} | สารอินทรีย์เริ่มไหม้                                   |
-|           ถึง {{700 °F; 371 °C}} | น้ำยังคงออกจากดินจนกว่าจะเกินอุณหภูมินี้               |
-|      {{842–1022 °F; 450–550 °C}} | น้ำที่จับกับดินทางเคมีออกจากดิน                        |
-|              {{1063 °F; 573 °C}} | การเปลี่ยนรูปของควอตซ์: ซิลิกาในดินขยายตัวอย่างฉับพลัน |
-|        เหนือ {{1112 °F; 600 °C}} | ซัลเฟอร์ไหม้ออก                                        |
-| ถึง {{1200–1400 °F; 649–760 °C}} | คาร์บอนธรรมชาติไหม้ออก ควรเสร็จก่อนถึงแดงเรือง         |
-|        เหนือ {{1544 °F; 840 °C}} | แคลเซียมคาร์บอเนตสลายตัว                               |
+|                        Temperature | What happens                                                |
+| ---------------------------------: | ----------------------------------------------------------- |
+|         {{300–500 °F; 149–260 °C}} | Binders burn off                                            |
+|           About {{450 °F; 232 °C}} | Organic matter starts to burn                               |
+|           Up to {{700 °F; 371 °C}} | Water keeps leaving the clay until above this temperature   |
+|        {{842–1022 °F; 450–550 °C}} | Chemically bound water leaves the clay                      |
+|                {{1063 °F; 573 °C}} | Quartz inversion: silica in the clay expands suddenly       |
+|          Above {{1112 °F; 600 °C}} | Sulfur burns out                                            |
+| Up to {{1200–1400 °F; 649–760 °C}} | Natural carbon burns off; this should finish below red heat |
+|          Above {{1544 °F; 840 °C}} | Calcium carbonate breaks down                               |
 
-**การเปลี่ยนรูปของควอตซ์**{{en: quartz inversion}}คือการเปลี่ยนขนาดอย่างฉับพลันของซิลิกาในดินที่ {{1063 °F; 573 °C}}: ขยายตัวขณะร้อนขึ้นและหดตัวขณะเย็นลง Slow Bisque ของ L&L ชะลอผ่านจุดนั้น ระหว่าง {{1000 °F; 538 °C}} และ {{1100 °F; 593 °C}} Digitalfire พบว่า “ไม่จำเป็นสำหรับการเผาดิบ” และ Ceramics Monthly ระบุว่ามีความสำคัญเป็นหลักเมื่อทำให้ชิ้นงานหนาแน่นเย็นลง การชะลอมีค่าใช้จ่ายน้อย ข้อเสนอของเราจึงคือเก็บไว้สำหรับชิ้นงานหนา
+**Quartz inversion** is the sudden change in size of the silica in clay at {{1063 °F; 573 °C}}: it expands on the way up and contracts on the way down. L&L's Slow Bisque slows through it, between {{1000 °F; 538 °C}} and {{1100 °F; 593 °C}}. Digitalfire found this "unnecessary for bisque firings", and Ceramics Monthly says it mainly matters when cooling dense ware. Slowing costs little, so our suggestion is to keep it for thick pieces.
 
-### การอบไล่ความชื้น: ทำให้แห้งในเตาเผา
+### Candling: drying in the kiln
 
-**การอบไล่ความชื้น**{{en: candling}}หมายถึงการคงเตาเผาไว้ที่อุณหภูมิต่ำ โดยค้ำฝาให้แง้มไว้หรือเปิดระบบระบายอากาศ จนกว่าความชื้นสุดท้ายจะออกจากชิ้นงาน แหล่งข้อมูลไม่ตรงกันเรื่องอุณหภูมิ:
+**Candling** means holding the kiln at a low temperature, with the lid propped or the vent running, until the last moisture has left the ware. Sources disagree about the temperature:
 
-Table: อุณหภูมิการอบไล่ความชื้น
+Table: Candling temperatures
 
-| แหล่งข้อมูล      | การอบไล่ความชื้น                                                                |
-| ---------------- | ------------------------------------------------------------------------------- |
-| Ceramics Monthly | ต่ำกว่าจุดเดือดเล็กน้อย เช่น เพิ่มที่ {{25 °F/h; 14 °C/h}} เป็นเวลา 4–6 ชั่วโมง |
-| L&L preheat      | คงที่ {{150–200 °F; 66–93 °C}}                                                  |
-| Digitalfire      | คงที่ {{250 °F; 121 °C}} เพราะการคงต่ำกว่าจุดเดือดไว้ “ไม่ขับน้ำออกทั้งหมด”     |
+| Source           | Candling                                                                                 |
+| ---------------- | ---------------------------------------------------------------------------------------- |
+| Ceramics Monthly | Just short of boiling; for example, climbing at {{25 °F/h; 14 °C/h}} for 4–6 hours       |
+| L&L preheat      | Hold at {{150–200 °F; 66–93 °C}}                                                         |
+| Digitalfire      | Hold at {{250 °F; 121 °C}}, because holding below boiling "does not expel all the water" |
 
 > [!NOTE]
-> จุดเริ่มต้นของเรา: เพิ่มอุณหภูมิอย่างช้า ไม่เกินประมาณ {{250 °F; 121 °C}} และคงไว้จนกว่ากระจกที่รูระบายอากาศจะไม่ขึ้นฝ้า คงไว้ข้ามคืนสำหรับชิ้นงานหนาหรือชื้น
+> Our starting point: climb slowly to no more than about {{250 °F; 121 °C}}, and hold until a mirror at the vent stays clear. Hold overnight for thick or damp ware.
 
-**การทดสอบด้วยกระจก**: ถือกระจกที่อุณหภูมิห้องไว้ที่รูระบายอากาศหรือช่องใต้ฝาที่ค้ำไว้ หากขึ้นฝ้า แสดงว่าน้ำยังออกอยู่ ให้รอแล้วทดสอบอีกครั้ง
+The **mirror test**: hold a room-temperature mirror at a vent hole or at the gap under a propped lid. If it fogs, water is still leaving; wait, then test again.
 
-### โปรแกรมของตัวควบคุมอุณหภูมิ
+### Controller schedules
 
-**ตัวควบคุมอุณหภูมิ**คือหน่วยอิเล็กทรอนิกส์ที่เผาเตาเผาตาม**โปรแกรมการเผา**: รายการของ**ช่วง** แต่ละช่วงคืออัตราการเพิ่มอุณหภูมิ (**ช่วงเพิ่มอุณหภูมิ**{{en: ramp}}) อุณหภูมิเป้าหมาย และการคงอุณหภูมิที่ไม่บังคับ ด้านล่างคือพรีเซ็ตสองรายการจากตัวควบคุมอุณหภูมิ DynaTrol และ Bartlett ของ L&L และโปรแกรมที่ Digitalfire เผยแพร่ “จุดสูงสุด” คืออุณหภูมิของตัวควบคุมอุณหภูมิเองสำหรับโคนที่คุณเลือก: สำหรับโคน 04 คือ {{1926 °F; 1052 °C}} และสำหรับโคน 06 คือ {{1819 °F; 993 °C}}
+A **controller** is an electronic unit that fires the kiln through a **schedule**: a list of **segments**, each a rate of climb (the **ramp**), a target temperature and an optional hold. Below are two presets from L&L's DynaTrol and Bartlett controllers, and a schedule published by Digitalfire. "Peak" is the controller's own temperature for the cone you choose: for cone 04 it is {{1926 °F; 1052 °C}}, and for cone 06, {{1819 °F; 993 °C}}.
 
-Table: พรีเซ็ตการเผาดิบของ L&L และ Bartlett
-Label: พรีเซ็ตการเผาดิบ
+Table: L&L and Bartlett bisque presets
+Label: Bisque presets
 
-| ช่วง                       |                                                              เพิ่มถึง |             Slow Bisque |            Fast Bisque |
-| -------------------------- | --------------------------------------------------------------------: | ----------------------: | ---------------------: |
-| 1                          |                                                    {{250 °F; 121 °C}} |    {{80 °F/h; 44 °C/h}} |  {{120 °F/h; 67 °C/h}} |
-| 2                          |                                                   {{1000 °F; 538 °C}} |  {{200 °F/h; 111 °C/h}} | {{300 °F/h; 167 °C/h}} |
-| 3                          |                                                   {{1100 °F; 593 °C}} |   {{100 °F/h; 56 °C/h}} |  {{150 °F/h; 83 °C/h}} |
-| 4                          | {{250 °F; 139 °C}} ต่ำกว่าจุดสูงสุด: {{1676 °F; 913 °C}} สำหรับโคน 04 |  {{180 °F/h; 100 °C/h}} | {{180 °F/h; 100 °C/h}} |
-| 5                          |                                                             จุดสูงสุด |    {{80 °F/h; 44 °C/h}} |  {{108 °F/h; 60 °C/h}} |
-| เวลาให้ความร้อน เตาเผาว่าง |                                                                       | ประมาณ 13 ชั่วโมงขึ้นไป |  ประมาณ 10–11½ ชั่วโมง |
+| Segment                  |                                                           Climb to |            Slow Bisque |            Fast Bisque |
+| ------------------------ | -----------------------------------------------------------------: | ---------------------: | ---------------------: |
+| 1                        |                                                 {{250 °F; 121 °C}} |   {{80 °F/h; 44 °C/h}} |  {{120 °F/h; 67 °C/h}} |
+| 2                        |                                                {{1000 °F; 538 °C}} | {{200 °F/h; 111 °C/h}} | {{300 °F/h; 167 °C/h}} |
+| 3                        |                                                {{1100 °F; 593 °C}} |  {{100 °F/h; 56 °C/h}} |  {{150 °F/h; 83 °C/h}} |
+| 4                        | {{250 °F; 139 °C}} below the peak: {{1676 °F; 913 °C}} for cone 04 | {{180 °F/h; 100 °C/h}} | {{180 °F/h; 100 °C/h}} |
+| 5                        |                                                           The peak |   {{80 °F/h; 44 °C/h}} |  {{108 °F/h; 60 °C/h}} |
+| Heating time, empty kiln |                                                                    | About 13 hours or more |     About 10–11½ hours |
 
-เวลาของ L&L คือ “สำหรับเตาเผาว่างที่เร็วที่สุดเท่าที่เป็นไปได้” เตาเผาที่บรรจุของอาจใช้เวลานานกว่ามากถึงสี่เท่า และการคงอุณหภูมิที่คุณเพิ่มคือฮีตเวิร์กเพิ่มเติมที่พรีเซ็ตไม่ได้คำนึงถึง L&L แนะนำ Slow Bisque พร้อมการอบไล่ความชื้น 2–3 ชั่วโมงหรือนานกว่า สำหรับชิ้นงานใหญ่หรือชื้น และเตือนไม่ให้เผาเร็ว ซึ่ง “อาจทำให้เกิดข้อบกพร่อง เช่น รูเข็ม การแตก และการเผาไหม้ออกไม่หมด”
+L&L's times are "for the fastest possible empty kilns"; a loaded kiln can take as much as four times longer, and any hold you add is extra heatwork the presets do not allow for. L&L advises Slow Bisque, with a preheat of 2–3 hours or longer, for large or damp pieces, and warns against fast firing, which "can cause defects like pinholes, cracking, and insufficient burnout".
 
-Table: การเผาดิบ BQ1000 ของ Digitalfire ถึงประมาณโคน 06
+Table: Digitalfire BQ1000 bisque, to about cone 06
 Label: Digitalfire BQ1000
 
-| ขั้น |                  อัตรา |             เป้าหมาย | การคงอุณหภูมิ                            |
-| ---- | ---------------------: | -------------------: | ---------------------------------------- |
-| 1    | {{306 °F/h; 170 °C/h}} |   {{248 °F; 120 °C}} | 60 นาที; ถึง 10 ชั่วโมงสำหรับชิ้นงานหนัก |
-| 2    | {{306 °F/h; 170 °C/h}} |  {{1733 °F; 945 °C}} | ไม่มี                                    |
-| 3    |  {{108 °F/h; 60 °C/h}} | {{1832 °F; 1000 °C}} | 15 นาที                                  |
+| Step |                   Rate |               Target | Hold                                      |
+| ---- | ---------------------: | -------------------: | ----------------------------------------- |
+| 1    | {{306 °F/h; 170 °C/h}} |   {{248 °F; 120 °C}} | 60 minutes; up to 10 hours for heavy ware |
+| 2    | {{306 °F/h; 170 °C/h}} |  {{1733 °F; 945 °C}} | None                                      |
+| 3    |  {{108 °F/h; 60 °C/h}} | {{1832 °F; 1000 °C}} | 15 minutes                                |
 
-BQ1000 ใช้เวลาประมาณ 7 ชั่วโมง 44 นาที ผู้เขียนพบว่าถึง {{500 °F/h; 278 °C/h}} ใช้ได้สำหรับชิ้นงานบางและแห้ง และชะลอขั้นสุดท้ายเพื่อให้อุณหภูมิเท่ากันทั่วชิ้นงานที่บรรจุ
+BQ1000 takes about 7 hours 44 minutes. Its author finds up to {{500 °F/h; 278 °C/h}} fine for thin, dry ware, and slows the last step to even out the temperature through the load.
 
-### โคนของตัวควบคุมอุณหภูมิและตารางของ Orton
+### Controller cones and Orton's chart
 
-ตัวควบคุมอุณหภูมิของ L&L และ Bartlett ใช้ {{1926 °F; 1052 °C}} สำหรับโคน 04 และ {{1819 °F; 993 °C}} สำหรับโคน 06 ต่ำกว่า {{1945 °F; 1063 °C}} และ {{1828 °F; 998 °C}} ของ Orton เล็กน้อย; ตรงกันที่โคน 6 และโคน 10 โคนอ้างอิงตัดสินความต่าง: หากไม่ตรงกับตัวควบคุมอุณหภูมิ ให้แก้ด้วยค่าชดเชยโคน
+L&L and Bartlett controllers use {{1926 °F; 1052 °C}} for cone 04 and {{1819 °F; 993 °C}} for cone 06, a little below Orton's {{1945 °F; 1063 °C}} and {{1828 °F; 998 °C}}; they agree at cone 6 and cone 10. Witness cones settle the difference: if they disagree with the controller, correct it with the cone offset.
 
-### ในเตาเผาแบบมือ
+### On a manual kiln
 
-เตาเผาแบบมือทำตามแผนเดียวกันด้วยมือ: ทำให้แห้งอย่างช้า โดยค้ำฝาให้แง้มไว้และเปิดช่องดูไฟ ปรับสวิตช์ขึ้นจากต่ำเป็นกลางเป็นสูง และให้ Kiln-Sitter จบการเผา ขั้นตอนที่เผยแพร่อยู่ใต้เตาเผาแบบมือโดยละเอียด ด้านล่าง
+A manual kiln follows the same plan by hand: dry slowly with the lid propped and the peepholes open, step the switches up from Low to Medium to High, and let the sitter end the firing. The published procedures are under Manual kilns in detail, below.
 
 ## การเผาเคลือบ {#glaze}
 

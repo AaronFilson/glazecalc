@@ -370,83 +370,83 @@ Ortonovi samostoječi stožci se na Japonskem prodajajo pod imenom 立つゼー�
 
 :::
 
-## Biskvitno žganje {#bisque}
+## Bisque firing {#bisque lang=en}
 
-**Biskvitno žganje**{{en: bisque}} (v britanski angleščini biscuit) je prvo, nižje žganje, ki suho glino spremeni v trde, porozne izdelke, pripravljene za glaziranje. Običajno poteka do stožca{{en: cone}} 06–04, po Ortonovi preglednici {{1828–1945 °F; 998–1063 °C}}; britanski lončarji pogosto žgejo do približno {{1000 °C; 1832 °F}}, blizu stožca 06. Biskvit naj ostane porozen, »običajno več kot 15%« (Digitalfire), da iz glazure{{en: glaze}} vpije vodo. Na prenizko biskvitno žgane izdelke se nanese predebela plast glazure, ki nato razpoka in se **skrči**{{en: crawls}} (se umakne v otočke in pusti golo glino). Premalo žgan biskvit se poleg tega »med glazurnim žganjem{{en: glaze firing}} še naprej krči«, kar pokvari ujemanje glazure s črepinjo{{en: glaze fit}}. Pri polnjenju je biskvitno žganje prizanesljivo: kosi se smejo dotikati, pokrovke lahko žgete na njihovih posodah, sklede pa postavite rob na rob, ne eno v drugo.
+The **bisque** firing (biscuit in the UK) is the first, lower firing that turns dry clay into hard, porous ware ready to glaze. It is usually fired to cone 06–04, {{1828–1945 °F; 998–1063 °C}} on Orton's chart; UK potters often fire to around {{1000 °C; 1832 °F}}, near cone 06. The bisque should stay porous, "generally more than 15%" (Digitalfire), so it soaks water out of the glaze. Too soft a bisque takes glaze on too thick, which then cracks and **crawls** (pulls back into islands, leaving bare clay). Under-fired bisque also "continues to shrink during glaze firing", which spoils the glaze fit. Loading is forgiving: pieces may touch, lids can be fired on their pots, and bowls go rim to rim rather than nested.
 
-### Zakaj začetek poteka počasi
+### Why the early part goes slowly
 
-Voda, ki se spremeni v paro, se »razširi 1170-krat«, opozarja Bracker's, zato je treba vlažne izdelke sušiti počasi. L&L in Orton svetujeta, da »bi morali pod 1500°F (815°C) posebej paziti, da se glinena masa{{en: clay body}} segreva enakomerno«, in da mora ogljik izgoreti do približno {{1200 °F; 650 °C}}. Nad {{1500 °F; 816 °C}} lahko temperatura v peči narašča hitreje.
+Water expands more than a thousandfold as it turns to steam, so damp ware has to be dried slowly. L&L and Orton advise that "Special care should be taken below 1500°F (815°C) to heat the body evenly", and that carbon must be burned out before about {{1200 °F; 650 °C}}. Above {{1500 °F; 816 °C}} the kiln can climb faster.
 
-Table: Kaj se dogaja med segrevanjem pri biskvitnem žganju
-Label: Dogajanje pri biskvitnem žganju
+Table: What happens as a bisque heats
+Label: What happens in a bisque
 
-|                     Temperatura | Kaj se zgodi                                                                    |
-| ------------------------------: | ------------------------------------------------------------------------------- |
-|      {{300–500 °F; 149–260 °C}} | Veziva izgorijo                                                                 |
-|    Približno {{450 °F; 232 °C}} | Organske snovi začnejo goreti                                                   |
-|           Do {{700 °F; 371 °C}} | Voda še naprej izhaja iz gline, dokler temperatura ne preseže te vrednosti      |
-|     {{842–1022 °F; 450–550 °C}} | Iz gline izhaja kemijsko vezana voda                                            |
-|             {{1063 °F; 573 °C}} | Kremenova pretvorba{{en: quartz inversion}}: kremen v glini se nenadoma razširi |
-|         Nad {{1112 °F; 600 °C}} | Izgori žveplo                                                                   |
-| Do {{1200–1400 °F; 649–760 °C}} | Izgori naravni ogljik; to naj se konča, preden nastopi rdeče žarenje            |
-|         Nad {{1544 °F; 840 °C}} | Kalcijev karbonat razpade                                                       |
+|                        Temperature | What happens                                                |
+| ---------------------------------: | ----------------------------------------------------------- |
+|         {{300–500 °F; 149–260 °C}} | Binders burn off                                            |
+|           About {{450 °F; 232 °C}} | Organic matter starts to burn                               |
+|           Up to {{700 °F; 371 °C}} | Water keeps leaving the clay until above this temperature   |
+|        {{842–1022 °F; 450–550 °C}} | Chemically bound water leaves the clay                      |
+|                {{1063 °F; 573 °C}} | Quartz inversion: silica in the clay expands suddenly       |
+|          Above {{1112 °F; 600 °C}} | Sulfur burns out                                            |
+| Up to {{1200–1400 °F; 649–760 °C}} | Natural carbon burns off; this should finish below red heat |
+|          Above {{1544 °F; 840 °C}} | Calcium carbonate breaks down                               |
 
-**Kremenova pretvorba** je nenadna sprememba velikosti kremena{{en: silica}} v glini pri {{1063 °F; 573 °C}}: pri segrevanju se razširi, pri ohlajanju skrči. Program Slow Bisque podjetja L&L skozi to območje upočasni segrevanje, med {{1000 °F; 538 °C}} in {{1100 °F; 593 °C}}. Digitalfire je ugotovil, da je to »pri biskvitnem žganju nepotrebno«, revija Ceramics Monthly pa pravi, da je pomembno predvsem pri ohlajanju gostih izdelkov. Upočasnitev malo stane, zato predlagamo, da jo pri debelih kosih obdržite.
+**Quartz inversion** is the sudden change in size of the silica in clay at {{1063 °F; 573 °C}}: it expands on the way up and contracts on the way down. L&L's Slow Bisque slows through it, between {{1000 °F; 538 °C}} and {{1100 °F; 593 °C}}. Digitalfire found this "unnecessary for bisque firings", and Ceramics Monthly says it mainly matters when cooling dense ware. Slowing costs little, so our suggestion is to keep it for thick pieces.
 
-### Predgrevanje: sušenje v peči
+### Candling: drying in the kiln
 
-**Predgrevanje**{{en: candling}} pomeni, da peč držite pri nizki temperaturi, s priprtim pokrovom ali z vklopljenim odzračevanjem, dokler iz izdelkov ne izide zadnja vlaga. Viri se o temperaturi ne ujemajo:
+**Candling** means holding the kiln at a low temperature, with the lid propped or the vent running, until the last moisture has left the ware. Sources disagree about the temperature:
 
-Table: Temperature predgrevanja
+Table: Candling temperatures
 
-| Vir               | Predgrevanje                                                                         |
-| ----------------- | ------------------------------------------------------------------------------------ |
-| Ceramics Monthly  | Tik pod vreliščem; na primer segrevanje s hitrostjo {{25 °F/h; 14 °C/h}} 4–6 ur      |
-| L&L, predgrevanje | Zadržanje pri {{150–200 °F; 66–93 °C}}                                               |
-| Digitalfire       | Zadržanje pri {{250 °F; 121 °C}}, ker zadržanje pod vreliščem »ne odstrani vse vode« |
+| Source           | Candling                                                                                 |
+| ---------------- | ---------------------------------------------------------------------------------------- |
+| Ceramics Monthly | Just short of boiling; for example, climbing at {{25 °F/h; 14 °C/h}} for 4–6 hours       |
+| L&L preheat      | Hold at {{150–200 °F; 66–93 °C}}                                                         |
+| Digitalfire      | Hold at {{250 °F; 121 °C}}, because holding below boiling "does not expel all the water" |
 
 > [!NOTE]
-> Naše izhodišče: počasi segrejte do največ približno {{250 °F; 121 °C}} in temperaturo zadržite, dokler se ogledalo ob prezračevalni odprtini še orosi. Pri debelih ali vlažnih izdelkih zadržite čez noč.
+> Our starting point: climb slowly to no more than about {{250 °F; 121 °C}}, and hold until a mirror at the vent stays clear. Hold overnight for thick or damp ware.
 
-**Test z ogledalom**: ogledalo sobne temperature držite ob prezračevalni odprtini ali ob reži pod priprtim pokrovom. Če se orosi, voda še izhaja; počakajte in preskusite znova.
+The **mirror test**: hold a room-temperature mirror at a vent hole or at the gap under a propped lid. If it fogs, water is still leaving; wait, then test again.
 
-### Programi krmilnika
+### Controller schedules
 
-**Krmilnik** je elektronska naprava, ki peč žge po **programu žganja**: seznamu **segmentov**, od katerih ima vsak hitrost segrevanja (**rampo**{{en: ramp}}), ciljno temperaturo in izbirno zadržanje{{en: hold}}. Spodaj najdete dva prednastavljena programa krmilnikov L&L DynaTrol in Bartlett ter program, ki ga je objavil Digitalfire. »Končna temperatura« je temperatura, ki jo krmilnik sam uporablja za izbrani stožec: za stožec 04 je {{1926 °F; 1052 °C}}, za stožec 06 pa {{1819 °F; 993 °C}}.
+A **controller** is an electronic unit that fires the kiln through a **schedule**: a list of **segments**, each a rate of climb (the **ramp**), a target temperature and an optional hold. Below are two presets from L&L's DynaTrol and Bartlett controllers, and a schedule published by Digitalfire. "Peak" is the controller's own temperature for the cone you choose: for cone 04 it is {{1926 °F; 1052 °C}}, and for cone 06, {{1819 °F; 993 °C}}.
 
-Table: Prednastavljeni programi L&L in Bartlett za biskvitno žganje
-Label: Programi za biskvitno žganje
+Table: L&L and Bartlett bisque presets
+Label: Bisque presets
 
-| Segment                    |                                                               Segrevanje do |             Slow Bisque |            Fast Bisque |
-| -------------------------- | --------------------------------------------------------------------------: | ----------------------: | ---------------------: |
-| 1                          |                                                          {{250 °F; 121 °C}} |    {{80 °F/h; 44 °C/h}} |  {{120 °F/h; 67 °C/h}} |
-| 2                          |                                                         {{1000 °F; 538 °C}} |  {{200 °F/h; 111 °C/h}} | {{300 °F/h; 167 °C/h}} |
-| 3                          |                                                         {{1100 °F; 593 °C}} |   {{100 °F/h; 56 °C/h}} |  {{150 °F/h; 83 °C/h}} |
-| 4                          | {{250 °F; 139 °C}} pod končno temperaturo: {{1676 °F; 913 °C}} za stožec 04 |  {{180 °F/h; 100 °C/h}} | {{180 °F/h; 100 °C/h}} |
-| 5                          |                                                          Končna temperatura |    {{80 °F/h; 44 °C/h}} |  {{108 °F/h; 60 °C/h}} |
-| Čas segrevanja, prazna peč |                                                                             | Približno 13 ur ali več |   Približno 10–11½ ure |
+| Segment                  |                                                           Climb to |            Slow Bisque |            Fast Bisque |
+| ------------------------ | -----------------------------------------------------------------: | ---------------------: | ---------------------: |
+| 1                        |                                                 {{250 °F; 121 °C}} |   {{80 °F/h; 44 °C/h}} |  {{120 °F/h; 67 °C/h}} |
+| 2                        |                                                {{1000 °F; 538 °C}} | {{200 °F/h; 111 °C/h}} | {{300 °F/h; 167 °C/h}} |
+| 3                        |                                                {{1100 °F; 593 °C}} |  {{100 °F/h; 56 °C/h}} |  {{150 °F/h; 83 °C/h}} |
+| 4                        | {{250 °F; 139 °C}} below the peak: {{1676 °F; 913 °C}} for cone 04 | {{180 °F/h; 100 °C/h}} | {{180 °F/h; 100 °C/h}} |
+| 5                        |                                                           The peak |   {{80 °F/h; 44 °C/h}} |  {{108 °F/h; 60 °C/h}} |
+| Heating time, empty kiln |                                                                    | About 13 hours or more |     About 10–11½ hours |
 
-Časi L&L veljajo »za najhitrejše možne prazne peči«; polna peč lahko potrebuje do štirikrat več časa, vsako zadržanje, ki ga dodate, pa je dodatno toplotno delo{{en: heatwork}}, ki ga prednastavljeni programi ne upoštevajo. Za velike ali vlažne kose L&L svetuje Slow Bisque s predgrevanjem 2–3 ure ali dlje in odsvetuje hitro žganje, ki »lahko povzroči napake, kot so luknjice{{en: pinholes}}, razpoke in nepopolno izgorevanje«.
+L&L's times are "for the fastest possible empty kilns"; a loaded kiln can take as much as four times longer, and any hold you add is extra heatwork the presets do not allow for. L&L advises Slow Bisque, with a preheat of 2–3 hours or longer, for large or damp pieces, and warns against fast firing, which "can cause defects like pinholes, cracking, and insufficient burnout".
 
-Table: Digitalfire BQ1000, biskvitno žganje do približno stožca 06
+Table: Digitalfire BQ1000 bisque, to about cone 06
 Label: Digitalfire BQ1000
 
-| Korak |                Hitrost |                 Cilj | Zadržanje                              |
-| ----- | ---------------------: | -------------------: | -------------------------------------- |
-| 1     | {{306 °F/h; 170 °C/h}} |   {{248 °F; 120 °C}} | 60 minut; pri težkih izdelkih do 10 ur |
-| 2     | {{306 °F/h; 170 °C/h}} |  {{1733 °F; 945 °C}} | Brez                                   |
-| 3     |  {{108 °F/h; 60 °C/h}} | {{1832 °F; 1000 °C}} | 15 minut                               |
+| Step |                   Rate |               Target | Hold                                      |
+| ---- | ---------------------: | -------------------: | ----------------------------------------- |
+| 1    | {{306 °F/h; 170 °C/h}} |   {{248 °F; 120 °C}} | 60 minutes; up to 10 hours for heavy ware |
+| 2    | {{306 °F/h; 170 °C/h}} |  {{1733 °F; 945 °C}} | None                                      |
+| 3    |  {{108 °F/h; 60 °C/h}} | {{1832 °F; 1000 °C}} | 15 minutes                                |
 
-BQ1000 traja približno 7 ur in 44 minut. Njegov avtor meni, da je za tanke, suhe izdelke primerno do {{500 °F/h; 278 °C/h}}, zadnji korak pa upočasni, da se temperatura po vsej vsebini peči izenači.
+BQ1000 takes about 7 hours 44 minutes. Its author finds up to {{500 °F/h; 278 °C/h}} fine for thin, dry ware, and slows the last step to even out the temperature through the load.
 
-### Stožci krmilnika in Ortonova preglednica
+### Controller cones and Orton's chart
 
-Krmilniki L&L in Bartlett za stožec 04 uporabljajo {{1926 °F; 1052 °C}}, za stožec 06 pa {{1819 °F; 993 °C}}, malo manj od Ortonovih {{1945 °F; 1063 °C}} in {{1828 °F; 998 °C}}; pri stožcu 6 in stožcu 10 se z Ortonom ujemajo. Razliko razrešijo kontrolni stožci{{en: witness cones}}: če se ne ujemajo s krmilnikom, ga popravite z zamikom za stožec.
+L&L and Bartlett controllers use {{1926 °F; 1052 °C}} for cone 04 and {{1819 °F; 993 °C}} for cone 06, a little below Orton's {{1945 °F; 1063 °C}} and {{1828 °F; 998 °C}}; they agree at cone 6 and cone 10. Witness cones settle the difference: if they disagree with the controller, correct it with the cone offset.
 
-### Pri peči brez krmilnika
+### On a manual kiln
 
-Pri peči brez krmilnika ročno sledite istemu načrtu: počasi sušite s priprtim pokrovom in odprtimi opazovalnimi odprtinami, stikala postopoma prestavljajte z »Low« (nizko) na »Medium« (srednje) in na »High« (visoko), žganje pa naj konča Kiln-Sitter. Objavljeni postopki so spodaj, v razdelku Peči brez krmilnika podrobneje.
+A manual kiln follows the same plan by hand: dry slowly with the lid propped and the peepholes open, step the switches up from Low to Medium to High, and let the sitter end the firing. The published procedures are under Manual kilns in detail, below.
 
 ## Glazurno žganje {#glaze}
 

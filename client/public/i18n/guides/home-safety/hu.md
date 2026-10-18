@@ -30,34 +30,34 @@ Javasoljuk, hogy még ma mentse el a telefonjába a régiója számait, és tegy
 
 Ha kórházba megy, az NHS szerint vigye magával a csomagolást vagy egy mintát, ha ez biztonságosan megtehető. Máznyersanyagnál ez a zsák címkéjét vagy a biztonsági adatlapot jelenti.
 
-## Mit a legveszélyesebb lenyelni? {#most-dangerous}
+## What is most dangerous to swallow {#most-dangerous lang=en}
 
-A máznyersanyagok{{en: glaze materials}} két különböző módon árthatnak egy családnak:
+Glaze materials can harm a family in two different ways:
 
-- Az **akut** veszély (egyetlen dózis okozta ártalom, órákon belül) egy **oldódó** nyersanyag lenyelése, vagyis olyané, amely vízben vagy gyomorsavban feloldódik. Ellene a nyersanyagok elzárása és a fenti telefonszámok segítenek.
-- A **krónikus** veszély (sok kis dózis okozta ártalom) a por, főként a kvarc{{en: silica}} és az ólom pora, amely eleinte nem okoz tüneteket, és a ruhán jut haza. Ellene a tiszta munkaszokások segítenek.
+- The **acute** danger (harm from one dose, within hours) is swallowing a **soluble** material, one that dissolves in water or stomach acid. Locked storage and the numbers above deal with it.
+- The **chronic** danger (harm from many small doses) is dust, mainly silica and lead, which causes no symptoms at first and travels home on clothes. Clean habits deal with it.
 
-A máz nagy része kvarc, kaolin és földpát{{en: feldspar}}, amelyek alig oldódnak. Ezeket inkább hosszú távú, belégzéssel járó veszélynek tekintjük, mint lenyeléses vészhelyzetnek. Elsőként az alábbi oldódó nyersanyagokat zárja el.
+Most of a glaze is silica, kaolin and feldspar, which barely dissolve. We treat them as a long-term breathing hazard rather than a swallowing emergency. The soluble materials below are the ones to lock away first.
 
-Table: Oldódó máznyersanyagok: mit okoznak, ha lenyelik
-Label: Oldódó nyersanyagok
+Table: Soluble glaze materials: what they do if swallowed
+Label: Soluble materials
 
-| Nyersanyag               | Hatása                                                                                                                                                                                                                                                                                                                                      | Közölt dózisok                                                                                                                                                                                                                                                                                                                                                                       |
-| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Bárium-karbonát          | Régen patkányméregként árulták. Vízben alig oldódik, savban viszont igen, ezért ha lenyelték, tekintse oldódónak. A bárium lecsökkenti a vér káliumszintjét, ami hányást, hasmenést és izomgyengeséget okoz, és ez bénulássá, légzési elégtelenséggé és szabálytalan szívveréssé súlyosbodhat. A tünetek jellemzően 2 órán belül kezdődnek. | A források eltérnek. Egy 2025-ös orvosi áttekintés bárium-klorid, egy oldódó báriumsó okozta halálesetekről számol be, már 0,8–0,9 g-os dózisnál is. Egy sürgősségi orvostani kézikönyv a báriumsók halálos dózisát 1–30 g-ra teszi, ártalmat pedig esetleg már körülbelül 200 mg-tól. Egyik sem ad meg gyermekekre vonatkozó adatot, ezért bármilyen mennyiség esetén telefonáljon. |
-| Bórax és bórsav          | Először hányinger, hányás, hasmenés és gyomorfájás jelentkezik; a hányadék és a széklet kékeszöld lehet. Súlyos esetben élénkvörös, később hámló kiütés, görcsrohamok, vesekárosodás és sokk lép fel.                                                                                                                                       | Hozzávetőleges legkisebb halálos dózis: csecsemőnél 2–3 g, gyermeknél 5–6 g. Egy 784 lenyeléses esetet vizsgáló áttekintésben csak 12% okozott tüneteket, és egyik sem volt halálos, de előfordul haláleset, és ellenszere nincs.                                                                                                                                                    |
-| Lítium-karbonát          | Egy 15 kg-os (33 lb) gyermeknél, aki 300 mg-ot nyelt le, rövid ideig akaratlan izomgörcsök és fokozott reflexek (akut disztónia és hiperreflexia) jelentkeztek, amelyek elmúltak.                                                                                                                                                           | Kisgyermekekről keveset írtak. A 300 mg jóval kevesebb egy kanálnyi pornál.                                                                                                                                                                                                                                                                                                          |
-| Szóda (nátrium-karbonát) | Vízben könnyen oldódik. Nem találtunk megbízható adatot arra, hogyan hat egy gyermekre.                                                                                                                                                                                                                                                     | Nem találtunk. Bármilyen mennyiség esetén telefonáljon.                                                                                                                                                                                                                                                                                                                              |
-| Kálium-dikromát          | Egyes receptekben használt krómos színezőanyag{{en: colorant}}. Biztonsági adatlapja figyelmeztet, hogy „lenyelve halálos lehet”, marási sérülést okoz az emésztőrendszerben, és károsíthatja a vesét.                                                                                                                                      | Nincs megállapítva, és a biztonsági adatlapok eltérnek abban, mennyire mérgező.                                                                                                                                                                                                                                                                                                      |
+| Material                    | What it does                                                                                                                                                                                                                                                                                                                                 | Reported doses                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Barium carbonate            | Once sold as rat poison. It barely dissolves in water but does dissolve in acid, so treat it as soluble once swallowed. Barium drives down the potassium in the blood, causing vomiting, diarrhea and muscle weakness that can progress to paralysis, breathing failure and an irregular heartbeat. Symptoms typically begin within 2 hours. | Sources disagree. A WHO review estimates the lethal dose of barium absorbed from the gut at 3 to 4 g in untreated cases, with toxic effects from 0.2 to 0.5 g, and lists a lowest reported lethal dose of barium chloride, a soluble barium salt, of 11.4 mg per kg of body weight. An emergency-medicine reference gives a lethal range of 1 to 30 g for barium salts, with harm possibly from about 200 mg. None gives a figure for children, so call for any amount. |
+| Borax and boric acid        | Nausea, vomiting, diarrhea and stomach pain come first; vomit and stool may be blue-green. Severe cases bring a bright red rash that later peels, seizures, kidney injury and shock.                                                                                                                                                         | Rough lowest lethal doses: 2 to 3 g for an infant, 5 to 6 g for a child. In one review of 784 swallowings, only 12% caused symptoms and none were fatal, but deaths do happen, and there is no antidote.                                                                                                                                                                                                                                                                |
+| Lithium carbonate           | A child weighing 15 kg (33 lb) who swallowed 300 mg had a short spell of involuntary muscle spasms and overactive reflexes (acute dystonia and hyperreflexia), which passed.                                                                                                                                                                 | Little has been written about young children. 300 mg is far less than a spoonful of powder.                                                                                                                                                                                                                                                                                                                                                                             |
+| Soda ash (sodium carbonate) | Dissolves readily in water. We found no reliable figures for what it does to a child.                                                                                                                                                                                                                                                        | None found. Call for any amount.                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| Potassium dichromate        | A chrome colorant used in some recipes. Fisher Scientific's safety data sheet warns that it "May be fatal if swallowed", causes burns in the gut and may damage the kidneys. The same sheet warns that it "May be fatal if inhaled" and may cause cancer, and of a "possible risk of harm to the unborn child".                              | Not established, and safety data sheets disagree on how toxic it is.                                                                                                                                                                                                                                                                                                                                                                                                    |
 
 > [!NOTE]
-> Ezek az ártalmas mennyiségek néhány száz milligrammtól néhány grammig terjednek. A máznyersanyagokat fontra vagy kilogrammra árulják, így egyetlen nyitott zsákban vagy vödörben is jóval több van annál, ami egy kisgyermeknek ártani tud.
+> These harmful amounts run from a few hundred milligrams to a few grams. Glaze materials are sold by the pound or kilogram, so one open bag or bucket holds far more than enough to harm a toddler.
 
-### Színezőanyagok és ólom
+### Colorants and lead
 
-A **színezőanyagok** azok a fém-oxidok és színtestek{{en: stains}}, amelyek a máz színét adják: réz, kobalt, króm, mangán, nikkel, kadmium-szelén színtestek és mások. Egy egyetem kerámiabiztonsági oldala az ólmot, a kadmiumot, a kobaltot és a krómot a máz különösen veszélyes összetevői között említi. Egyetlen színezőanyagra sem találtunk megbízható dózisadatot, ezért bármilyen mennyiség esetén telefonáljon. Egy vödör bekevert máz ugyanazokat a nyersanyagokat tartalmazza, mint a zsákok, amelyekből készült, csak nedvesen.
+**Colorants** are the metal oxides and stains that give a glaze its color: copper, cobalt, chrome, manganese, nickel, cadmium-selenium stains and others. A university ceramics safety page names lead, cadmium, cobalt and chromium among the especially hazardous glaze ingredients. We found no reliable dose figures for any colorant, so call for any amount. A bucket of mixed glaze holds the same materials as the bags it came from, only wet.
 
-Az ólom fő veszélye más: nem egyetlen kanálnyi, hanem a hetek vagy hónapok alatt lenyelt kis mennyiségű por, figyelmeztető jelek nélkül (lásd lent: Az ólom és a gyermekek).
+Lead's main danger is different: not one spoonful, but small amounts of dust swallowed over weeks or months, with no warning signs (see Lead and children, below).
 
 ## Nyersanyagok tárolása otthon {#storing-materials}
 
@@ -220,41 +220,43 @@ A **belső máz**{{en: liner glaze}} a csésze vagy a tál belsején lévő máz
 
 Arról, hogyan olvadnak ki a mázak, miért oldódnak ki egyesekből fémek, és mit jelentenek a határértékek, a [Mázazás az alapoktól](/guides/glazing-basics) című útmutató ír bővebben.
 
-## Források {#sources}
+## Sources {#sources lang=en}
 
 - [America's Poison Centers: Poison Help](https://poisoncenters.org/)
 - [Poison Control (poison.org): webPOISONCONTROL](https://www.poison.org/)
 - [NHS: Poisoning](https://www.nhs.uk/conditions/poisoning/)
-- [National Poisons Information Service (Egyesült Királyság)](https://www.npis.org/)
+- [National Poisons Information Service (UK)](https://www.npis.org/)
 - [National Poisons Information Centre of Ireland: Public Poisons Line](https://www.poisons.ie/)
 - [European Commission: 112, the European emergency number](https://digital-strategy.ec.europa.eu/en/policies/112)
 - [healthdirect: Poisoning](https://www.healthdirect.gov.au/poisoning)
-- [National Poisons Centre (Új-Zéland)](https://www.poisons.co.nz/)
+- [National Poisons Centre (New Zealand)](https://www.poisons.co.nz/)
 - [ASPCA: Animal Poison Control](https://www.aspca.org/pet-care/animal-poison-control)
 - [Pet Poison Helpline](https://www.petpoisonhelpline.com/)
-- [Animal PoisonLine (Egyesült Királyság)](https://www.animalpoisonline.co.uk/)
-- [Animal Poisons Helpline (Ausztrália és Új-Zéland)](https://animalpoisons.com.au/)
-- [PubMed Central: Acute soluble barium poisoning, áttekintő tanulmány (2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC11700400)
+- [Animal PoisonLine (UK)](https://www.animalpoisonline.co.uk/)
+- [Animal Poisons Helpline (Australia and New Zealand)](https://animalpoisons.com.au/)
+- [PubMed Central: Non-fatal acute barium carbonate poisoning, a case report (2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC11700400)
+- [WHO IPCS: Environmental Health Criteria 107, Barium (1990)](https://www.inchem.org/documents/ehc/ehc/ehc107.htm)
+- [Fisher Scientific: Potassium dichromate safety data sheet (2007)](https://fscimage.fishersci.com/msds/19370.htm)
 - [WikEM: Boron toxicity](https://wikem.org/wiki/Boron_toxicity)
-- [NPIC és US EPA: Recognition and Management of Pesticide Poisonings, 9. fejezet (PDF)](https://www.npic.orst.edu/RMPP/rmpp_ch9.pdf)
+- [NPIC and US EPA: Recognition and Management of Pesticide Poisonings, chapter 9 (PDF)](https://www.npic.orst.edu/RMPP/rmpp_ch9.pdf)
 - [medlibrary.org: Lithium carbonate prescribing information](https://medlibrary.org/lib/rx/meds/lithium-carbonate-16/page/2/)
 - [CDC: About Lead in Jobs, Hobbies, or Other Activities](https://cdc.gov/lead-prevention/prevention/jobs-hobbies-activities.html)
 - [CDC: Blood Lead Reference Value](https://www.cdc.gov/nceh/lead/data/blood-lead-reference-value.htm)
-- [US EPA: füzet a gyermekek egészségéről (2018, PDF)](https://19january2021snapshot.epa.gov/sites/static/files/2018-10/documents/childrenshealthbooklet2018_final-4_newlinks.pdf)
+- [US EPA: Children's health booklet (2018, PDF)](https://19january2021snapshot.epa.gov/sites/static/files/2018-10/documents/childrenshealthbooklet2018_final-4_newlinks.pdf)
 - [Pennsylvania Department of Health: Non-Occupational Lead Exposure (PDF)](https://www.health.pa.gov:443/topics/Documents/Environmental%20Health/Non-Occupational%20Lead%20Exposure.pdf)
 - [Western Carolina University: Ceramics Safety](https://www.wcu.edu/discover/campus-services-and-operations/facilities-management/safety-and-risk-management/visual-arts-theatre-safety/ceramics-safety.aspx)
-- [Crafts Council (Egyesült Királyság): How to make your pottery practice greener](https://craftscouncil.org.uk/stories/how-make-your-pottery-practice-greener)
+- [Crafts Council (UK): How to make your pottery practice greener](https://craftscouncil.org.uk/stories/how-make-your-pottery-practice-greener)
 - [Pet Poison Helpline: Lead](https://www.petpoisonhelpline.com/poison/lead/)
 - [Vet Candy: Sparkler ingestion results in barium toxicity](https://www.myvetcandy.com/clinicalupdblog/2019/3/15/sparkler-ingestion-results-in-barium-toxicity)
 - [University of Illinois College of Veterinary Medicine: Bird toxins](https://vetmed.illinois.edu/pet-health-columns/bird-toxins-teflon-avocado-lead-zinc/)
 - [Skutt: Designing a Kiln Room (PDF)](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Designing-A-Kiln-Room-1.pdf)
-- [Kiln Management, útmutató iskoláknak (PDF)](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Kiln-Management-1.pdf)
+- [Kiln Management guide for schools (PDF)](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Kiln-Management-1.pdf)
 - [L&L Kiln: Front-loader installation checklist (PDF)](https://www.theceramicshop.com/downloads/LLFLChecklist.pdf)
 - [Rio Grande: PMC Kilns Handbook (PDF)](https://products.riogrande.com/content/Instruction-Sheets/RioGrande-PMC-Kilns-Handbook-IS.pdf)
-- [Dawson: a Kiln-Sitter LT-3 kezelési útmutatója (PDF)](https://oud.klei.nl/forum/bestanden/f675ae4a-d890-4b8b-a08e-173e652f25a6/KilnSitter%20lt3%20en%20lt3k.pdf)
+- [Dawson: Kiln-Sitter LT-3 manual (PDF)](https://oud.klei.nl/forum/bestanden/f675ae4a-d890-4b8b-a08e-173e652f25a6/KilnSitter%20lt3%20en%20lt3k.pdf)
 - [Ceramic Arts Network: In the Studio, Eye Health for Potters](https://ceramicartsnetwork.org/pottery-making-illustrated/pottery-making-illustrated-article/In-the-Studio-Eye-Health-for-Potters)
 - [FDA: Questions and Answers on Lead-Glazed Traditional Pottery](https://www.fda.gov/food/environmental-contaminants-food/questions-and-answers-lead-glazed-traditional-pottery)
-- [FDA: Compliance Policy Guide 545.450, ólom a kerámiában (PDF)](https://www.fda.gov/media/71764/download)
+- [FDA: Compliance Policy Guide 545.450, lead in pottery (PDF)](https://www.fda.gov/media/71764/download)
 - [Digitalfire: Food Safe](https://digitalfire.com/glossary/food+safe)
 - [Ceramics NZ: Is it food safe?](https://ceramicsnz.org/news/is-it-food-safe/)
 - [Ceramic Arts Network: Techno File, Dirty Dishes](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/Techno-File-Dirty-Dishes)

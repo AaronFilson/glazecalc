@@ -22,58 +22,58 @@ Biex tagħmel glejż{{en: glaze}}, tiżen **materji primi** fi trab (minerali mi
 > [!WARNING]
 > **It-trab tal-glejż niexef joħloq periklu ta’ trab.** Is-silika kristallina{{en: crystalline silica}} tista’ tkun minn 10 sa 60% ta’ glejż niexef, u l-awtorità tar-Renju Unit Health and Safety Executive (HSE) twissi li t-trab tagħha ma jidhirx f’dawl normali. Ħu t-trab bil-mod bl-imgħarfa u minn ftit għoli, żomm l-għotjien fuq il-kontenituri, xarrab it-trab malajr kemm tista’, u naddaf bl-ilma, qatt bl-ixkupa. Ilbes respiratur li jaqbel sewwa ma’ wiċċek sakemm it-trabijiet ikunu nexfin (N95 jew P100 fl-Istati Uniti, FFP2 jew FFP3 fir-Renju Unit u fl-UE, P2 jew P3 fl-Awstralja u f’New Zealand). Il-gwida [Taħlit sikur u ventilazzjoni](/guides/safe-mixing) tittratta bis-sħiħ it-trab, ir-respiraturi u t-tindif.
 
-## Ix-xiri tal-materjali {#buying-materials}
+## Buying materials {#buying-materials lang=en}
 
-### Minn fejn tixtri
+### Where to buy
 
-Il-fuħħarin jixtru mingħand fornituri taċ-ċeramika, li jbigħu t-tafal, il-materjali tal-glejż{{en: glaze}} u l-għodda. It-tabella turi xi wħud għall-pajjiż tiegħek, kull wieħed iċċekkjat fuq is-sit tal-ħanut stess, u tista’ tagħżel pajjiż ieħor biex tara l-ħwienet tiegħu. L-istokk jinbidel, għalhekk iċċekkja qabel ma tordna. Produtturi kbar bħal Sibelco u Imerys ibigħu lill-industrija; il-fuħħarin jixtru l-materjali tagħhom permezz ta’ ħwienet bħal dawn. Digitalfire, sit ta’ referenza dwar iċ-ċeramika, għandu direttorju ta’ ħwienet tal-fornituri għal postijiet oħra.
+Potters buy from ceramic suppliers, which sell clay, glaze materials and tools. The table shows some for your country, each checked on the shop's own site, and you can choose another country to see its shops. Stock changes, so check before you order. Large producers such as Sibelco and Imerys sell to industry; potters buy their materials through shops like these. The ceramics reference site Digitalfire keeps a directory of supplier stores for other places.
 
 ::shops
 
-### Kemm għandek tixtri
+### How much to buy
 
-Ix-xkora standard hija ta’ **50 lb (22.7 kg)** fl-Istati Uniti u ta’ **25 kg (55 lb)** f’postijiet oħra, għalhekk it-tnejn huma kważi l-istess. Ħafna fornituri jbigħu wkoll pakketti ta’ 1, 2.5 jew 5 kg (madwar 2.2, 5.5 jew 11 lb) għat-testijiet. Glazy, id-database miftuħa tar-riċetti, jagħti l-parir li l-materjali li tuża regolarment (feldspar, silika{{en: silica}}, kawlina{{en: kaolin}}, karbonat tal-kalċju{{en: whiting}}, u fritta{{en: frit}} għall-ħami medju) tixtrihom fi xkejjer sħaħ, li spiss ikunu 20 sa 30% orħos. Ixtri l-**kuluranti**{{en: colorants}}, l-ossidi tal-metall u l-pigmenti{{en: stains}} li jagħtu l-kulur lill-glejż, f’ammonti żgħar: il-biċċa l-kbira minnhom jintużaw f’inqas minn 5%. Il-listi tax-xiri ta’ eżempju ta’ Glazy waslu għal madwar $515 għall-ħami medju u $397 għall-ħami għoli, bi prezzijiet tal-Istati Uniti.
+The standard sack is **50 lb (22.7 kg)** in the US and **25 kg (55 lb)** elsewhere, so the two are nearly the same. Many suppliers also sell 1, 2.5 or 5 kg packs (about 2.2, 5.5 or 11 lb) for tests. Glazy, the open recipe database, advises buying the materials you use steadily (feldspar, silica, kaolin, whiting, and frit for mid-fire) in full sacks, which are often 20 to 30% cheaper. Buy **colorants**, the metal oxides and stains that color a glaze, in small amounts: most are used at under 5%. Glazy's sample shopping lists came to about $515 for mid-fire and $397 for high-fire, at US prices.
 
-### Sett tal-bidu
+### A starter set
 
-Il-lista bażika ta’ Glazy għal kull temperatura hija: silika, kawlina, feldspar, karbonat tal-kalċju, ossidu taż-żingu, u dolomit jew talk. Il-biċċa l-kbira tal-glejżijiet għal ħami medju (koni{{en: cones}} 5–6) għandhom bżonn ukoll il-boron, normalment minn fritta, li Glazy jiddeskriviha bħala “konsistenti u inqas solubbli mill-borati mhux f’fritta”. Is-sett hawn taħt huwa s-suġġeriment tagħna, meħud mil-lista ta’ Glazy u minn lista ta’ forum. Il-gwida [Il-glejż mill-bidu nett](/guides/glazing-basics) tispjega x’jagħmel kull materjal.
+Glazy's core list for any temperature is silica, kaolin, feldspar, whiting, zinc oxide, and dolomite or talc. Most mid-fire (cone 5 to 6) glazes also need boron, usually from a frit, which Glazy calls "consistent and less soluble than raw borates". The set below is our suggestion, drawn from Glazy's list and a forum list. The [glazing basics guide](/guides/glazing-basics) explains what each material does.
 
-Table: Sett tal-bidu ta’ materjali (is-suġġeriment tagħna)
-Label: Sett tal-bidu
+Table: A starter set of materials (our suggestion)
+Label: Starter set
 
-| Materjal                                         | X’għandek tixtri                                                                                    |
-| ------------------------------------------------ | --------------------------------------------------------------------------------------------------- |
-| Silika (imsejħa wkoll flint; ara aktar ’l isfel) | 325 mesh, it-tħin l-aktar fin, li Glazy jippreferi għall-glejżijiet                                 |
-| Kawlina (fir-Renju Unit: china clay)             | EPK fl-Istati Uniti; Grolleg jew kawlina oħra fir-Renju Unit; kawlina ta’ New Zealand f’New Zealand |
-| Feldspar tal-potassju{{en: potash feldspar}}     | Dak li jkun qed jinbiegħ illum fejn tgħix, bħal Mahavir fl-Istati Uniti                             |
-| Sijenit tan-nefelina{{en: nepheline syenite}}    | Kwalunkwe tip; Glazy jinnota li għandu qawwa flussanti akbar, u spiss jintuża f’ħami baxx u medju   |
-| Karbonat tal-kalċju                              | Kwalunkwe tip                                                                                       |
-| Talk                                             | Kwalunkwe tip                                                                                       |
-| Fritta tal-boron, għal ħami medju                | Ferro 3134, 3124 jew 3195; fir-Renju Unit, Potterycrafts P3124 jew P3195                            |
-| Bentonit u kuluranti                             | Ammonti żgħar                                                                                       |
+| Material                              | What to buy                                                                      |
+| ------------------------------------- | -------------------------------------------------------------------------------- |
+| Silica (also called flint; see below) | 325 mesh, the finer grade Glazy prefers for glazes                               |
+| Kaolin (china clay in the UK)         | EPK in the US; Grolleg or another china clay in the UK; NZ kaolin in New Zealand |
+| Potash feldspar                       | Whichever is current where you live, such as Mahavir in the US                   |
+| Nepheline syenite                     | Any; Glazy notes its stronger fluxing power, often used at low and mid-fire      |
+| Whiting                               | Any                                                                              |
+| Talc                                  | Any asbestos-free grade; check its SDS (see Safe mixing)                         |
+| A boron frit, for mid-fire            | Ferro 3134, 3124 or 3195; in the UK, Potterycrafts P3124 or P3195                |
+| Bentonite and colorants               | Small amounts                                                                    |
 
-### Skedi tekniċi u skedi ta’ data ta’ sigurtà
+### Data sheets and safety data sheets
 
-Itlob żewġ dokumenti għal kull materjal. **Skeda teknika** (TDS) tagħti l-**analiżi kimika** tiegħu: is-sehem ta’ kull ossidu fit-trab, skont il-piż. Glazecalc jaħdem minn dawn, u tista’ żżid materjal mill-analiżi tal-fornitur fil-[paġna Materjali](/material). **Skeda ta’ data ta’ sigurtà** (SDS) tgħid kif timmaniġġja t-trab mhux moħmi. Żomm kull SDS, u aqraha qabel ma tħallat.
+Ask for two documents for each material. A **technical data sheet** (TDS) gives its **chemical analysis**: the share of each oxide in the powder, by weight. Glazecalc works from these, and you can add a material from a supplier's analysis on the [Materials page](/material). A **safety data sheet** (SDS) says how to handle the raw powder. Keep each SDS, and read it before you mix.
 
-L-analiżi huma medji, mhux wegħdiet. Valentine Clays jistampa “VALURI MEDJI. DAWN MA JIRRAPPREŻENTAWX SPEĊIFIKAZZJONI” fuq l-iskeda teknika tal-flint tiegħu, u l-analiżi ta’ Glazy tal-feldspar Custer minn snin differenti jvarjaw minn madwar 68.5% sa 72.4% silika. Nissuġġerixxu li tikteb in-**numru tal-lott** ta’ kull xkora (il-kodiċi tal-produzzjoni tagħha) fir-reġistri tiegħek, biex tkun tista’ tgħid jekk bidla fi glejż li tafdah ġietx mill-materjal.
+Analyses are averages, not promises. Valentine Clays prints "MEAN VALUES. THESE DO NOT REPRESENT A SPECIFICATION" on its flint data sheet, and Glazy's analyses of Custer feldspar from different years run from about 68.5% to 72.4% silica. We suggest writing each sack's **lot number** (its batch code) in your records, so you can tell whether a change in a trusted glaze came from the material.
 
-L-HSE twissi li s-silika kristallina{{en: crystalline silica}} “tista’ tiġi ttikkettjata ħażin bħala ‘silika amorfa’”. U SDS titkellem dwar it-trab, mhux dwar il-biċċa: ma tgħid xejn dwar jekk glejż moħmi huwiex sikur għall-ikel{{en: food safe}}. Test tal-laboratorju tar-rilaxx tal-metalli{{en: leach test}} fuq il-biċċa moħmija biss jista’ juri dan.
+HSE warns that crystalline silica "can be wrongly labelled as 'amorphous silica'". And an SDS is about the powder, not the pot: it says nothing about whether a fired glaze is safe for food. Only a laboratory leach test of the fired pot can show that.
 
-### L-ismijiet jinbidlu, għalhekk ixtri skont il-kimika
+### Names change, so buy by chemistry
 
-L-ismijiet kummerċjali jiġu u jmorru hekk kif jagħlqu l-minjieri. Il-feldspar Custer, li ġie estratt f’South Dakota għal aktar minn 75 sena, spiċċa lejn tmiem l-2023. Meta Clay Art Center qaleb għal G-200 AU u Mahavir, madwar nofs il-glejżijiet tiegħu kellhom bżonn jiġu aġġustati. Anke G-200 u G-200 HP spiċċaw, u issa Laguna jimporta Mahavir, li għandu kimika qrib dik ta’ G-200.
+Brand names come and go as mines close. Custer feldspar, mined in South Dakota for more than 75 years, ran out in late 2023. When Clay Art Center switched to G-200 AU and Mahavir, about half its glazes needed adjusting. G-200 and G-200 HP are gone too, and Laguna now imports Mahavir, whose chemistry is close to G-200.
 
-**Gerstley Borate**, mineral naturali tal-boron li jidher f’ħafna riċetti eqdem, ilu skars minn meta għalqet il-minjiera tiegħu fl-2000, għalkemm New Mexico Clay irrapporta f’Novembru 2025 li Laguna kien qed iforni “Gerstley Borate Original”. Is-sorsi ma jaqblux dwar **Gillespie Borate** bħala sostitut. Min jagħmlu jbigħu bħala sostitut libra b’libra. Berkeley Potters Studio jgħid li “mhuwiex sostitut dirett”, u Digitalfire sab li biddel il-kulur ta’ glejż. It-triq sikura hija li tqabbel it-tnejn skont l-ossidi tagħhom, imbagħad tittestja.
+**Gerstley Borate**, a natural boron mineral in many older recipes, has been scarce since its mine closed in 2000, though New Mexico Clay reported in November 2025 that Laguna was supplying "Gerstley Borate Original". Sources disagree about **Gillespie Borate** as a replacement. Its maker sells it as pound-for-pound. Berkeley Potters Studio says it "is not a direct substitute", and Digitalfire found it changed a glaze's color. The safe course is to compare the two by their oxides, then test.
 
-L-ismijiet ivarjaw ukoll minn reġjun għal ieħor. Fl-Amerika ta’ Fuq, **flint**, kwarz u silika jfissru l-istess silika mitħuna, u Digitalfire jgħid li probabbilment ma ssibx trab tal-flint veru mingħand il-fornituri. Fir-Renju Unit, il-flint huwa prodott separat: dak ta’ Valentine huwa silika kkalċinata (imsaħħna). It-tnejn huma silika kważi pura, għalhekk nistennew li jkunu qrib xulxin, iżda ċċekkja l-analiżi. Għall-kawlina, Glazy jgħid li l-bdil wieħed b’wieħed, bħal EPK minflok china clay, “spiss jaħdem tajjeb ħafna, speċjalment meta l-ammonti jkunu \<10%”.
+Regional names differ too. In North America, **flint**, quartz and silica mean the same ground silica, and Digitalfire says you probably won't find true flint powder from suppliers. In the UK, flint is its own product: Valentine's is calcined (heated) silica. Both are nearly pure silica, so we expect them to be close, but check the analysis. For kaolin, Glazy says one-for-one swaps, such as EPK for a china clay, "often work just fine, especially when amounts are \<10%".
 
-Ħafna riċetti jsemmu materjali li jinbiegħu f’pajjiż wieħed u mhux f’ieħor. It-tabella hawn taħt tieħu kull materjal fil-librerija ta’ Glazecalc li ma jinbiegħx fejn tixtri int, u ssib l-eqreb wieħed tal-istess tip li jinbiegħ hemm, skont l-analiżi tagħhom. Iċ-ċifra turi kemm huma differenti t-tnejn: il-grammi li bihom ivarjaw l-ossidi tagħhom wara l-ħami, kull 100 g ta’ materjal, miżjuda flimkien għal kull ossidu. Jekk id-differenza tkun sa madwar 15 g, normalment wieħed jista’ jieħu post l-ieħor fl-ewwel test. L-ismijiet għandhom il-kodiċijiet tal-manifatturi u tal-ħwienet stess, biex tkun tista’ titlobhom b’isimhom.
+Many recipes name materials that are sold in one country and not another. The table below takes each material in Glazecalc's library that is not sold where you buy, and finds the closest of its kind that is, by their analyses. The figure is how far apart the two are: the grams by which their fired oxides differ, per 100 g of material, added up over every oxide. Within about 15 g, one can usually stand in for the other in a first test. The names carry the makers' and shops' own codes, so you can ask for them by name.
 
 ::local-equivalents
 
 > [!NOTE]
-> Glazecalc iqabbel il-materjali skont x’iġibu fil-glejż moħmi, mhux skont isimhom. [Riċetta](/recipe) b’materjal li ma jsirx aktar tgħid x’jintuża llum. Il-funzjoni **Issuġġerixxi ammonti u qabbel** terġa’ tikkalkula l-ammonti għal sostitut, u l-funzjoni **Agħmilha b’dak li għandi** terġa’ tagħmel ir-riċetta mill-materjali li għandek. It-tnejn iqabblu biss l-ossidi wara l-ħami, għalhekk ittestja taħlita żgħira l-ewwel.
+> Glazecalc compares materials by what they bring to the fired glaze, not by name. A [recipe](/recipe) with a material no longer made says what is used now. **Suggest amounts and compare** works the amounts out again for a substitute, and **Match with what I have** makes the recipe again from the materials on your shelf. Both match the fired oxides only, so test a small batch first.
 
 ## Il-ħżin tal-materjali u tal-glejżijiet {#storing}
 
@@ -163,55 +163,55 @@ Label: Il-mesh tal-għarbiel
 | Glejżijiet b’kuluranti{{en: colorants}} bħall-kobalt jew il-ħadid | 100 sa 120 mesh       |
 | Glejżijiet tar-rmied, u oħrajn b’materjali ħoxnin                 | 60 sa 80 mesh         |
 
-## Il-gravità speċifika {#specific-gravity}
+## Specific gravity {#specific-gravity lang=en}
 
-Il-**gravità speċifika**{{en: specific gravity}} (SG) turik kemm hemm trab fil-glejż likwidu{{en: slurry}} tiegħek. Hija l-piż ta’ volum ta’ glejż{{en: glaze}} maqsum bil-piż tal-istess volum ta’ ilma. L-ilma huwa 1.00, u glejż b’{{SG 1.45}} jiżen 145 g kull 100 mL. It-taħlit sa gravità speċifika mkejla huwa l-mod kif tikseb l-istess ħxuna, u l-istess saff, kull darba. M’għandha l-ebda unità, għalhekk hija l-istess kemm bil-grammi kif ukoll bl-uqija.
+**Specific gravity** (SG) tells you how much powder is in your slurry. It is the weight of a volume of glaze divided by the weight of the same volume of water. Water is 1.00, and a glaze at {{SG 1.45}} weighs 145 g per 100 mL. Mixing to a measured SG is how you get the same thickness, and the same coat, every time. It has no units, so it is the same in grams or ounces.
 
-### Kejjilha billi tiżen 100 mL
+### Measure it by weighing 100 mL
 
-1. Ħawwad il-glejż biex xejn ma jkun niżel fil-qiegħ.
-2. Poġġi **ċilindru graduat** ta’ 100 mL (tubu twil tal-kejl, immarkat) jew siringa ta’ 100 mL fuq il-miżien, u ġib il-miżien fuq żero.
-3. Imlieh bil-glejż sa eżatt 100 mL, u aqra l-marka b’għajnejk fil-livell tagħha.
-4. Iżnu u aqsam il-grammi b’100: 145 g ifissru gravità speċifika ta’ 1.45.
+1. Stir the glaze so nothing has settled.
+2. Put a 100 mL **graduated cylinder** (a tall, marked measuring tube) or a 100 mL syringe on the scale, and tare it.
+3. Fill it with glaze to exactly 100 mL, reading the mark at eye level.
+4. Weigh it and divide the grams by 100: 145 g is SG 1.45.
 
-Digitalfire jimmarka wkoll tazza fil-livell ta’ 500 g ilma, jimlieha bil-glejż sal-marka, u jaqsam il-piż b’500; kejl akbar u aktar mimli huwa aktar preċiż. **Idrometru**, għawwiema li taqraha fejn tieqaf fil-glejż, huwa mgħaġġel iżda jista’ jaqra ħażin fi glejżijiet ħoxnin jew ġellifikati. L-idrometri tar-Renju Unit, bħal dak ta’ Potclays, jaqraw bi gradi Baumé (°Bé). Skont il-kalkolu tagħna, gravità speċifika = 145 ÷ (145 − °Bé), għalhekk 46 °Bé jagħti madwar 1.46. Il-kotba Brittaniċi eqdem jagħtu l-**piż tal-pinta**, l-uqija f’pinta imperjali ta’ glejż: aqsmu b’20, għalhekk 29 oz jagħtu madwar gravità speċifika ta’ 1.45 (ukoll skont il-kalkolu tagħna).
+Digitalfire also marks a cup at the level of 500 g of water, fills it to the mark with glaze, and divides the weight by 500; a bigger, fuller measure is more accurate. A **hydrometer**, a float read where it sits in the glaze, is quick but can misread thick or gelled glazes. UK hydrometers, such as Potclays', read in degrees Baumé (°Bé). By our arithmetic, SG = 145 ÷ (145 − °Bé), so 46 °Bé is about 1.46. Older UK books give a **pint weight**, the ounces in an imperial pint of glaze: divide it by 20, so 29 oz is about SG 1.45 (also our arithmetic).
 
-### Għal xiex timmira
+### What to aim for
 
-Is-sorsi ma jaqblux, l-aktar fuq il-pinzellar u l-isprejjar, fejn il-fornitur Brittaniku Potclays jagħti ċifri ferm ogħla (iċ-ċifri tiegħu stess huma “indikattivi biss”). Qis kull numru bħala punt tat-tluq. Il-parir ewlieni ta’ Digitalfire huwa li ssib il-gravità speċifika u l-ġellifikazzjoni li jaħdmu għal kull glejż, imbagħad tirrepetihom u tiktibhom.
+Sources disagree, most of all on brushing and spraying, where the UK supplier Potclays gives much higher figures (its own are "for guidance only"). Treat every number as a starting point. Digitalfire's core advice is to find the SG and gelling that work for each glaze, then repeat them and write them down.
 
-Table: Gravità speċifika fil-mira, fejn is-sorsi ma jaqblux
-Label: Gravità speċifika fil-mira
+Table: Specific gravity targets, where sources disagree
+Label: Specific gravity targets
 
-| Użu       | Digitalfire u Glazy                                                                                                                                                     | Potclays (Renju Unit)                                 | Punt tat-tluq sikur                                                 |
-| --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- | ------------------------------------------------------------------- |
-| Għadis    | {{SG 1.40}} (għal għadsa ta’ 5 sekondi) sa {{SG 1.50}} (għal għadsa ta’ 1 sekonda); il-glejżijiet imħallta d-dar li jkunu ġellifikati jaħdmu l-aħjar b’{{SG 1.43–1.45}} | Trasparenti: {{SG 1.46–1.48}}; ikkulurit: {{SG 1.61}} | {{SG 1.45}}; raqqaq sa {{SG 1.43}} u ġegħlu jagħqad jekk iqattar    |
-| Pinzellar | {{SG 1.25}} (trasparenti rqiq) sa {{SG 1.55}} (dettall skur)                                                                                                            | {{SG 1.71–1.81}}                                      | Segwi dak li jgħid il-prodott; uża gomma CMC jew mezz għall-pinzell |
-| Sprejjar  | L-ebda ċifra; Hopper, li jikteb għal Ceramic Arts Network, jgħid ferm irqaq, b’deflokkulant{{en: deflocculant}} (addittiv li jagħmel il-glejż likwidu jiġri aktar)      | {{SG 1.71}}                                           | L-ebda numru affidabbli; sprejja biss ġo kabina tal-isprejjar       |
+| Use      | Digitalfire and Glazy                                                                                                                 | Potclays (UK)                               | Safe starting point                                     |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------- |
+| Dipping  | {{SG 1.40}} (for a 5-second dip) to {{SG 1.50}} (for a 1-second dip); home-mixed glazes that are gelled do best at {{SG 1.43–1.45}}   | Clear {{SG 1.46–1.48}}; colored {{SG 1.61}} | {{SG 1.45}}; thin to {{SG 1.43}} and gel it if it drips |
+| Brushing | {{SG 1.25}} (thin clear) to {{SG 1.55}} (dark detail)                                                                                 | {{SG 1.71–1.81}}                            | Follow the product; use CMC gum or a brushing medium    |
+| Spraying | No figure; Hopper, writing for Ceramic Arts Network, says much thinner, with a deflocculant (an additive that makes a slurry runnier) | {{SG 1.71}}                                 | No reliable number; spray only in a spray booth         |
 
-Biex tiċċekkja glejż għall-għadis bl-għajn, AMACO jgħaddas għal 5 sekondi u jfittex saff oħxon madwar daqs munita dime Amerikana. Digitalfire jaħmi madum imgħaddas għal 5 sekondi biex jiċċekkja.
+To check a dipping glaze by eye, AMACO dips for 5 seconds and looks for a coat about as thick as a US dime. Digitalfire fires tiles dipped for 5 seconds to check.
 
-### Ilma għal gravità speċifika fil-mira: l-istima tagħna
+### Water for a target SG: our estimate
 
-It-tabella hawn taħt hija l-kalkolu tagħna stess, mhux ta’ sors. Tassumi li l-partiċelli tat-trab għandhom densità ta’ 2.6 g kull cm³, li hija suppożizzjoni, mhux kejl. It-tafal, il-materjali solubbli u l-ġellifikazzjoni kollha jibdlu glejż reali, għalhekk użaha biex tibda, imbagħad kejjel. Bħala kontroll, tbassar {{SG 1.44}} għall-istess piż ta’ trab u ta’ ilma, qrib il-valur li kejjel Digitalfire, {{SG 1.46}}. Turi wkoll li b’70 sa 80 mL kull 100 g tibda ’l fuq minn {{SG 1.50}}, aktar oħxon milli għandek bżonn.
+The table below is our own arithmetic, not a source's. It assumes the powder's particles have a density of 2.6 g per cm³, which is an assumption, not a measurement. Clay, soluble materials and gelling all change a real glaze, so use it to start, then measure. As a check, it predicts {{SG 1.44}} for equal weights of powder and water, close to Digitalfire's measured {{SG 1.46}}. It also shows that 70 to 80 mL per 100 g starts you above {{SG 1.50}}, thicker than you need.
 
-Table: Ilma għal gravità speċifika fil-mira (l-istima tagħna)
-Label: Ilma għal gravità speċifika fil-mira
+Table: Water for a target specific gravity (our estimate)
+Label: Water for a target specific gravity
 
-| Mira        | Kull 100 g trab | Kull kilogramma |         Kull libra |
-| ----------- | --------------: | --------------: | -----------------: |
-| {{SG 1.40}} |   madwar 115 mL |  madwar 1150 mL | madwar 18 US fl oz |
-| {{SG 1.45}} |    madwar 98 mL |   madwar 980 mL | madwar 15 US fl oz |
-| {{SG 1.50}} |    madwar 85 mL |   madwar 850 mL | madwar 13 US fl oz |
-| {{SG 1.60}} |    madwar 64 mL |   madwar 640 mL | madwar 10 US fl oz |
+| Target      | Per 100 g of powder |  Per kilogram |         Per pound |
+| ----------- | ------------------: | ------------: | ----------------: |
+| {{SG 1.40}} |        about 115 mL | about 1150 mL | about 18 US fl oz |
+| {{SG 1.45}} |         about 98 mL |  about 980 mL | about 15 US fl oz |
+| {{SG 1.50}} |         about 85 mL |  about 850 mL | about 13 US fl oz |
+| {{SG 1.60}} |         about 64 mL |  about 640 mL | about 10 US fl oz |
 
-### Melħ Epsom, gomma CMC u bentonit
+### Epsom salts, CMC gum and bentonite
 
-Il-**melħ Epsom** (sulfat tal-manjeżju) iġiegħel il-glejż jagħqad kemmxejn meta jkun wieqaf u jerġa’ jiġri meta tħawwdu. Dan jissejjaħ **flokkulazzjoni**{{en: flocculating}}, u glejż li jġib ruħu hekk huwa **tissotropiku**{{en: thixotropic}}: jitqiegħed b’mod aktar uniformi, iqattar inqas u jinżel inqas fil-qiegħ. Digitalfire jissuġġerixxi li tibda b’madwar 2 g kull gallun ladarba l-gravità speċifika tkun it-tajba (bejn wieħed u ieħor 0.5 g kull litru, skont il-konverżjoni tagħna) u li taġġusta l-ammont kull darba li tħallat, għax l-ebda riċetta m’għandha tiffissa d-doża. Nissuġġerixxu li l-ewwel tħollu fi ftit ilma sħun. F’eżempju ta’ Digitalfire, glejż b’{{SG 1.45}} kien iqattar, għalhekk l-ilma niżżlu għal {{SG 1.43}} u l-melħ Epsom reġa’ għaqqdu sakemm sar kremuż, u tqiegħed b’mod uniformi. Kontroll approssimattiv: ħawwad, ieqaf u osserva. Glejż ġellifikat jibqa’ jiċċaqlaq għal madwar 2 jew 3 sekondi, imbagħad jieqaf u jerġa’ lura ftit.
+**Epsom salts** make a glaze gel slightly when it stands still and flow again when it is stirred. This is called **flocculating** it, and a glaze that behaves this way is **thixotropic**: it goes on more evenly, drips less and settles less. Digitalfire suggests starting at about 2 g per gallon once the SG is right (roughly 0.5 g per liter, our conversion) and tuning the amount each time you mix, since no recipe should fix the dose. We suggest dissolving it in a little hot water first. In a Digitalfire example, a glaze at {{SG 1.45}} dripped, so water brought it down to {{SG 1.43}} and Epsom salts gelled it back to creamy, and it went on evenly. A rough check: stir, stop and watch. A gelled glaze moves on for about 2 or 3 seconds, then stops and springs back a little.
 
-Il-**gomma CMC** (karbossimetilċelluloża) tagħmel il-glejż likwidu aktar iwaħħal u jdum aktar biex jinxef, u tħalli saff aktar iebes li jeħel mal-biċċa. L-aktar hija importanti għall-glejżijiet għall-pinzell u għal dawk b’ħafna fritta{{en: frit}}. L-eżempju ta’ Digitalfire jħallat 3.75 g f’1000 g ta’ glejż likwidu, u trid tiżdied bil-blender. Glejż bis-CMC ma jagħqadx bil-melħ Epsom, u peress li l-mikrobi jieklu l-gomma, jista’ jinbidel fil-barmil u jibda jinten.
+**CMC gum** (carboxymethyl cellulose) makes a slurry stickier and slower to dry, and leaves a harder coat that holds to the pot. It matters most for brushing glazes and glazes high in frit. Digitalfire's example blends 3.75 g into 1000 g of slurry, and it has to go in with a blender. A glaze with CMC will not gel with Epsom salts, and since microbes feed on the gum, it can change in the bucket and start to smell.
 
-Il-**bentonit**, tafal fin ħafna, jgħin iżomm il-partiċelli l-oħra f’sospensjoni. Il-glejżijiet għall-għadis normalment jiddependu fuq 15 sa 25% tafal mhux moħmi għal dan. Għal riċetta li m’għandhiex biżżejjed tafal, madwar 1 sa 2% bentonit jgħin.
+**Bentonite**, a very fine clay, helps hold the other particles in suspension. Dipping glazes usually rely on 15 to 25% raw clay for this. For a recipe short of clay, about 1 to 3% bentonite helps; Digitalfire says a glaze with more than 15% clay should not need more than 1%.
 
 ## Madum tal-prova u sensiela ta’ provi {#testing}
 
@@ -276,7 +276,7 @@ Label: Mudell tar-reġistru
 > [!NOTE]
 > Fl-app Glazecalc, [riċetta](/recipe) issejvjata żżomm ir-riċetta nfisha. [Reġistru tal-ħami](/firing) jirreġistra kull ħamja: il-forn, id-data, il-ħinijiet, it-temperaturi, il-koni u n-noti. [In-noti](/notes) iżommu l-bqija kollu, bħar-reġistru tat-taħlita hawn fuq u x’wera kull maduma.
 
-## Sorsi {#sources}
+## Sources {#sources lang=en}
 
 - [Glazy: Raw materials](https://help.glazy.org/concepts/materials)
 - [Glazy: Specific gravity](https://help.glazy.org/testing/specific-gravity)
@@ -284,6 +284,7 @@ Label: Mudell tar-reġistru
 - [Digitalfire: Epsom salts](https://digitalfire.com/material/epsom+salts)
 - [Digitalfire: CMC gum](https://digitalfire.com/material/cmc%2Bgum)
 - [Digitalfire: Dipping glaze](https://digitalfire.com/glossary/dipping+glaze)
+- [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Water solubility](https://digitalfire.com/glossary/water+solubility)
 - [Digitalfire: Gerstley Borate](https://digitalfire.com/material/gerstley+borate)
 - [Digitalfire: Mahavir potash feldspar](https://digitalfire.com/material/mahavir+potash+feldspar)

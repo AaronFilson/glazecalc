@@ -370,83 +370,83 @@ Ortono savaime stovintys piroskopai Japonijoje parduodami pavadinimu 立つゼ�
 
 :::
 
-## Biskvitinis degimas {#bisque}
+## Bisque firing {#bisque lang=en}
 
-**Biskvitinis degimas**{{en: bisque}} (JK – biscuit) – tai pirmasis, žemesnės temperatūros degimas, kuris sausą molį paverčia kietais, akytais, glazūruoti paruoštais dirbiniais. Paprastai degama iki piroskopų{{en: cone}} 06–04, t. y. {{1828–1945 °F; 998–1063 °C}} pagal Ortono lentelę; Jungtinės Karalystės keramikai dažnai dega iki maždaug {{1000 °C; 1832 °F}}, o tai artima piroskopui 06. Biskvitas turėtų likti akytas, „paprastai daugiau nei 15%“ (Digitalfire), kad sugertų vandenį iš glazūros{{en: glaze}}. Po per žemo biskvitinio degimo dirbinys sugeria per storą glazūros sluoksnį, kuris paskui sutrūkinėja ir **susitraukia**{{en: crawling}} (susitraukia į salas, palikdamas neglazūruoto molio plotus). Nepakankamai išdegtas biskvitas, be to, „glazūros degimo metu toliau traukiasi“, o tai gadina glazūros ir šukės suderinamumą{{en: glaze fit}}. Krauti galima nesibaiminant: dirbiniai gali liestis, dangteliai gali būti degami uždėti ant savo indų, o dubenys dedami kraštas prie krašto, o ne sudėti vienas į kitą.
+The **bisque** firing (biscuit in the UK) is the first, lower firing that turns dry clay into hard, porous ware ready to glaze. It is usually fired to cone 06–04, {{1828–1945 °F; 998–1063 °C}} on Orton's chart; UK potters often fire to around {{1000 °C; 1832 °F}}, near cone 06. The bisque should stay porous, "generally more than 15%" (Digitalfire), so it soaks water out of the glaze. Too soft a bisque takes glaze on too thick, which then cracks and **crawls** (pulls back into islands, leaving bare clay). Under-fired bisque also "continues to shrink during glaze firing", which spoils the glaze fit. Loading is forgiving: pieces may touch, lids can be fired on their pots, and bowls go rim to rim rather than nested.
 
-### Kodėl pradžia lėta
+### Why the early part goes slowly
 
-Vanduo, virsdamas garais, „išsiplečia 1170 kartų“, pažymi Bracker's, todėl drėgnus dirbinius reikia džiovinti lėtai. L&L ir Ortonas pataria, kad „žemiau 1500°F (815°C) reikėtų ypač rūpintis, kad molio masė įkaistų tolygiai“, ir kad anglis turi išdegti iki maždaug {{1200 °F; 650 °C}}. Virš {{1500 °F; 816 °C}} krosnis gali kaisti greičiau.
+Water expands more than a thousandfold as it turns to steam, so damp ware has to be dried slowly. L&L and Orton advise that "Special care should be taken below 1500°F (815°C) to heat the body evenly", and that carbon must be burned out before about {{1200 °F; 650 °C}}. Above {{1500 °F; 816 °C}} the kiln can climb faster.
 
-Table: Kas vyksta kaitinant biskvitą
-Label: Biskvitinio degimo eiga
+Table: What happens as a bisque heats
+Label: What happens in a bisque
 
-|                      Temperatūra | Kas vyksta                                                                                               |
-| -------------------------------: | -------------------------------------------------------------------------------------------------------- |
-|       {{300–500 °F; 149–260 °C}} | Išdega rišikliai                                                                                         |
-|          Apie {{450 °F; 232 °C}} | Pradeda degti organinės medžiagos                                                                        |
-|           Iki {{700 °F; 371 °C}} | Vanduo iš molio išeina tol, kol temperatūra pakyla virš šios ribos                                       |
-|      {{842–1022 °F; 450–550 °C}} | Iš molio išeina chemiškai surištas vanduo                                                                |
-|              {{1063 °F; 573 °C}} | Kvarco virsmas{{en: quartz inversion}}: molyje esantis silicio dioksidas{{en: silica}} staiga išsiplečia |
-|         Virš {{1112 °F; 600 °C}} | Išdega siera                                                                                             |
-| Iki {{1200–1400 °F; 649–760 °C}} | Išdega natūrali anglis; tai turėtų baigtis nepasiekus raudono įkaitimo                                   |
-|         Virš {{1544 °F; 840 °C}} | Skyla kalcio karbonatas                                                                                  |
+|                        Temperature | What happens                                                |
+| ---------------------------------: | ----------------------------------------------------------- |
+|         {{300–500 °F; 149–260 °C}} | Binders burn off                                            |
+|           About {{450 °F; 232 °C}} | Organic matter starts to burn                               |
+|           Up to {{700 °F; 371 °C}} | Water keeps leaving the clay until above this temperature   |
+|        {{842–1022 °F; 450–550 °C}} | Chemically bound water leaves the clay                      |
+|                {{1063 °F; 573 °C}} | Quartz inversion: silica in the clay expands suddenly       |
+|          Above {{1112 °F; 600 °C}} | Sulfur burns out                                            |
+| Up to {{1200–1400 °F; 649–760 °C}} | Natural carbon burns off; this should finish below red heat |
+|          Above {{1544 °F; 840 °C}} | Calcium carbonate breaks down                               |
 
-**Kvarco virsmas** – tai staigus molyje esančio silicio dioksido tūrio pokytis ties {{1063 °F; 573 °C}}: kaitinant jis išsiplečia, aušinant susitraukia. L&L programa Slow Bisque šį intervalą, tarp {{1000 °F; 538 °C}} ir {{1100 °F; 593 °C}}, praeina lėčiau. Digitalfire nustatė, kad tai „nebūtina biskvitiniam degimui“, o Ceramics Monthly teigia, kad tai daugiausia svarbu aušinant tankius dirbinius. Sulėtinimas kainuoja nedaug, todėl siūlome jį palikti storiems dirbiniams.
+**Quartz inversion** is the sudden change in size of the silica in clay at {{1063 °F; 573 °C}}: it expands on the way up and contracts on the way down. L&L's Slow Bisque slows through it, between {{1000 °F; 538 °C}} and {{1100 °F; 593 °C}}. Digitalfire found this "unnecessary for bisque firings", and Ceramics Monthly says it mainly matters when cooling dense ware. Slowing costs little, so our suggestion is to keep it for thick pieces.
 
-### Pradinis džiovinimas krosnyje
+### Candling: drying in the kiln
 
-**Pradinis džiovinimas krosnyje**{{en: candling}} – tai krosnies laikymas žemoje temperatūroje, pravėrus dangtį arba įjungus ištraukiamąją ventiliaciją, kol iš dirbinių išeina paskutinė drėgmė. Šaltiniai nesutaria dėl temperatūros:
+**Candling** means holding the kiln at a low temperature, with the lid propped or the vent running, until the last moisture has left the ware. Sources disagree about the temperature:
 
-Table: Pradinio džiovinimo temperatūros
+Table: Candling temperatures
 
-| Šaltinis                 | Pradinis džiovinimas                                                                                    |
-| ------------------------ | ------------------------------------------------------------------------------------------------------- |
-| Ceramics Monthly         | Šiek tiek žemiau virimo temperatūros; pavyzdžiui, kaitinant {{25 °F/h; 14 °C/h}} sparta 4–6 val.        |
-| L&L pradinis džiovinimas | Išlaikymas ties {{150–200 °F; 66–93 °C}}                                                                |
-| Digitalfire              | Išlaikymas ties {{250 °F; 121 °C}}, nes išlaikymas žemiau virimo temperatūros „nepašalina viso vandens“ |
+| Source           | Candling                                                                                 |
+| ---------------- | ---------------------------------------------------------------------------------------- |
+| Ceramics Monthly | Just short of boiling; for example, climbing at {{25 °F/h; 14 °C/h}} for 4–6 hours       |
+| L&L preheat      | Hold at {{150–200 °F; 66–93 °C}}                                                         |
+| Digitalfire      | Hold at {{250 °F; 121 °C}}, because holding below boiling "does not expel all the water" |
 
 > [!NOTE]
-> Mūsų atspirties taškas: lėtai kaitinkite ne aukščiau kaip iki maždaug {{250 °F; 121 °C}} ir išlaikykite, kol prie oro angos laikomas veidrodis nebeaprasos. Storus ar drėgnus dirbinius išlaikykite per naktį.
+> Our starting point: climb slowly to no more than about {{250 °F; 121 °C}}, and hold until a mirror at the vent stays clear. Hold overnight for thick or damp ware.
 
-**Veidrodžio bandymas**: prie oro angos arba prie tarpo po pravertu dangčiu palaikykite kambario temperatūros veidrodį. Jei jis aprasoja, vanduo dar išeina; palaukite ir patikrinkite dar kartą.
+The **mirror test**: hold a room-temperature mirror at a vent hole or at the gap under a propped lid. If it fogs, water is still leaving; wait, then test again.
 
-### Valdiklio degimo programos
+### Controller schedules
 
-**Valdiklis** – tai elektroninis įtaisas, kuris valdo krosnies degimą pagal **degimo programą** – **segmentų** sąrašą, kurių kiekvienas turi kaitinimo spartą (**kreivę**{{en: ramp}}), tikslinę temperatūrą ir nebūtiną išlaikymą{{en: hold}}. Toliau pateiktos dvi iš anksto nustatytos L&L valdiklio DynaTrol ir Bartlett valdiklių programos ir viena Digitalfire paskelbta programa. Lentelėse „aukščiausia temperatūra“ – tai paties valdiklio temperatūra pasirinktam piroskopui: piroskopui 04 ji yra {{1926 °F; 1052 °C}}, o piroskopui 06 – {{1819 °F; 993 °C}}.
+A **controller** is an electronic unit that fires the kiln through a **schedule**: a list of **segments**, each a rate of climb (the **ramp**), a target temperature and an optional hold. Below are two presets from L&L's DynaTrol and Bartlett controllers, and a schedule published by Digitalfire. "Peak" is the controller's own temperature for the cone you choose: for cone 04 it is {{1926 °F; 1052 °C}}, and for cone 06, {{1819 °F; 993 °C}}.
 
-Table: L&L ir Bartlett biskvitinio degimo programos
-Label: Biskvitinio degimo programos
+Table: L&L and Bartlett bisque presets
+Label: Bisque presets
 
-| Segmentas                          |                                                                           Kaitinti iki |            Slow Bisque |            Fast Bisque |
-| ---------------------------------- | -------------------------------------------------------------------------------------: | ---------------------: | ---------------------: |
-| 1                                  |                                                                     {{250 °F; 121 °C}} |   {{80 °F/h; 44 °C/h}} |  {{120 °F/h; 67 °C/h}} |
-| 2                                  |                                                                    {{1000 °F; 538 °C}} | {{200 °F/h; 111 °C/h}} | {{300 °F/h; 167 °C/h}} |
-| 3                                  |                                                                    {{1100 °F; 593 °C}} |  {{100 °F/h; 56 °C/h}} |  {{150 °F/h; 83 °C/h}} |
-| 4                                  | {{250 °F; 139 °C}} žemiau aukščiausios temperatūros: {{1676 °F; 913 °C}} piroskopui 04 | {{180 °F/h; 100 °C/h}} | {{180 °F/h; 100 °C/h}} |
-| 5                                  |                                                                Aukščiausia temperatūra |   {{80 °F/h; 44 °C/h}} |  {{108 °F/h; 60 °C/h}} |
-| Kaitinimo trukmė tuščioje krosnyje |                                                                                        | Apie 13 val. ar ilgiau |       Apie 10–11½ val. |
+| Segment                  |                                                           Climb to |            Slow Bisque |            Fast Bisque |
+| ------------------------ | -----------------------------------------------------------------: | ---------------------: | ---------------------: |
+| 1                        |                                                 {{250 °F; 121 °C}} |   {{80 °F/h; 44 °C/h}} |  {{120 °F/h; 67 °C/h}} |
+| 2                        |                                                {{1000 °F; 538 °C}} | {{200 °F/h; 111 °C/h}} | {{300 °F/h; 167 °C/h}} |
+| 3                        |                                                {{1100 °F; 593 °C}} |  {{100 °F/h; 56 °C/h}} |  {{150 °F/h; 83 °C/h}} |
+| 4                        | {{250 °F; 139 °C}} below the peak: {{1676 °F; 913 °C}} for cone 04 | {{180 °F/h; 100 °C/h}} | {{180 °F/h; 100 °C/h}} |
+| 5                        |                                                           The peak |   {{80 °F/h; 44 °C/h}} |  {{108 °F/h; 60 °C/h}} |
+| Heating time, empty kiln |                                                                    | About 13 hours or more |     About 10–11½ hours |
 
-L&L nurodyta trukmė skirta „greičiausioms įmanomoms tuščioms krosnims“; prikrauta krosnis gali kaisti net keturis kartus ilgiau, o kiekvienas jūsų pridėtas išlaikymas – papildomas šilumos poveikis{{en: heatwork}}, į kurį programos neatsižvelgia. Dideliems ar drėgniems dirbiniams L&L pataria rinktis Slow Bisque su 2–3 valandų ar ilgesniu pradiniu džiovinimu ir įspėja dėl greito degimo, kuris „gali sukelti tokius defektus kaip adatinės skylutės, įtrūkimai ir nepakankamas išdegimas“.
+L&L's times are "for the fastest possible empty kilns"; a loaded kiln can take as much as four times longer, and any hold you add is extra heatwork the presets do not allow for. L&L advises Slow Bisque, with a preheat of 2–3 hours or longer, for large or damp pieces, and warns against fast firing, which "can cause defects like pinholes, cracking, and insufficient burnout".
 
-Table: Digitalfire BQ1000 biskvitinis degimas iki maždaug piroskopo 06
+Table: Digitalfire BQ1000 bisque, to about cone 06
 Label: Digitalfire BQ1000
 
-| Žingsnis |                 Sparta | Tikslinė temperatūra | Išlaikymas                               |
-| -------- | ---------------------: | -------------------: | ---------------------------------------- |
-| 1        | {{306 °F/h; 170 °C/h}} |   {{248 °F; 120 °C}} | 60 min.; sunkiems dirbiniams iki 10 val. |
-| 2        | {{306 °F/h; 170 °C/h}} |  {{1733 °F; 945 °C}} | Nėra                                     |
-| 3        |  {{108 °F/h; 60 °C/h}} | {{1832 °F; 1000 °C}} | 15 min.                                  |
+| Step |                   Rate |               Target | Hold                                      |
+| ---- | ---------------------: | -------------------: | ----------------------------------------- |
+| 1    | {{306 °F/h; 170 °C/h}} |   {{248 °F; 120 °C}} | 60 minutes; up to 10 hours for heavy ware |
+| 2    | {{306 °F/h; 170 °C/h}} |  {{1733 °F; 945 °C}} | None                                      |
+| 3    |  {{108 °F/h; 60 °C/h}} | {{1832 °F; 1000 °C}} | 15 minutes                                |
 
-Programa BQ1000 trunka apie 7 valandas 44 minutes. Jos autorius mano, kad ploniems, sausiems dirbiniams tinka iki {{500 °F/h; 278 °C/h}} sparta, o paskutinį žingsnį sulėtina, kad temperatūra visoje įkrovoje susilygintų.
+BQ1000 takes about 7 hours 44 minutes. Its author finds up to {{500 °F/h; 278 °C/h}} fine for thin, dry ware, and slows the last step to even out the temperature through the load.
 
-### Valdiklio piroskopai ir Ortono lentelė
+### Controller cones and Orton's chart
 
-L&L ir Bartlett valdikliai piroskopui 04 naudoja {{1926 °F; 1052 °C}}, o piroskopui 06 – {{1819 °F; 993 °C}}, šiek tiek mažiau nei Ortono {{1945 °F; 1063 °C}} ir {{1828 °F; 998 °C}}; ties piroskopais 6 ir 10 jie sutampa. Skirtumą išsprendžia kontroliniai piroskopai{{en: witness cone}}: jei jie nesutaria su valdikliu, pataisykite jį temperatūros korekcija.
+L&L and Bartlett controllers use {{1926 °F; 1052 °C}} for cone 04 and {{1819 °F; 993 °C}} for cone 06, a little below Orton's {{1945 °F; 1063 °C}} and {{1828 °F; 998 °C}}; they agree at cone 6 and cone 10. Witness cones settle the difference: if they disagree with the controller, correct it with the cone offset.
 
-### Rankinio valdymo krosnyje
+### On a manual kiln
 
-Rankinio valdymo krosnis laikosi to paties plano, tik ranka: lėtai džiovinkite pravėrę dangtį ir atidarę stebėjimo angas, jungiklius palaipsniui perjunkite iš padėties Low į Medium, paskui į High, o degimą tegul baigia išjungiklis. Paskelbtos procedūros aprašytos toliau, skyriuje Rankinio valdymo krosnys išsamiau.
+A manual kiln follows the same plan by hand: dry slowly with the lid propped and the peepholes open, step the switches up from Low to Medium to High, and let the sitter end the firing. The published procedures are under Manual kilns in detail, below.
 
 ## Glazūros degimas {#glaze}
 

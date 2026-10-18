@@ -370,83 +370,83 @@ Az önálló Orton-gúlákat Japánban 立つゼーゲル („álló Seger”) n
 
 :::
 
-## Zsengélés {#bisque}
+## Bisque firing {#bisque lang=en}
 
-A **zsengélés**{{en: bisque}} (brit angolul biscuit) az első, alacsonyabb hőfokú égetés, amely a száraz agyagból kemény, porózus, mázazásra kész árut csinál. Általában 06–04-es gúlára égetik, ez az Orton táblázatában {{1828–1945 °F; 998–1063 °C}}; a brit fazekasok gyakran {{1000 °C; 1832 °F}} körül égetnek, a 06-os gúla közelében. A zsengélt áru maradjon porózus, porozitása „általában több mint 15%” legyen (Digitalfire), hogy kiszívja a vizet a mázból{{en: glaze}}. A túl alacsony hőfokon zsengélt áru túl vastagon veszi fel a mázat, amely aztán megreped és **összehúzódik**{{en: crawls}} (szigetekbe húzódik vissza, csupaszon hagyva az agyagot). Az alulzsengélt áru ráadásul „a mázas égetés{{en: glaze firing}} alatt tovább zsugorodik”, ami rontja a máz illeszkedését{{en: glaze fit}}. A berakás nem kényes: a darabok összeérhetnek, a fedők a saját edényükön égethetők, a tálak pedig peremmel egymásnak fordítva kerülnek be, nem egymásba rakva.
+The **bisque** firing (biscuit in the UK) is the first, lower firing that turns dry clay into hard, porous ware ready to glaze. It is usually fired to cone 06–04, {{1828–1945 °F; 998–1063 °C}} on Orton's chart; UK potters often fire to around {{1000 °C; 1832 °F}}, near cone 06. The bisque should stay porous, "generally more than 15%" (Digitalfire), so it soaks water out of the glaze. Too soft a bisque takes glaze on too thick, which then cracks and **crawls** (pulls back into islands, leaving bare clay). Under-fired bisque also "continues to shrink during glaze firing", which spoils the glaze fit. Loading is forgiving: pieces may touch, lids can be fired on their pots, and bowls go rim to rim rather than nested.
 
-### Miért lassú az eleje
+### Why the early part goes slowly
 
-A gőzzé váló víz „1170-szeresére tágul”, jegyzi meg a Bracker’s, ezért a nedves árut lassan kell kiszárítani. Az L&L és az Orton azt tanácsolja, hogy „1500°F (815°C) alatt különös gondot kellene fordítani a massza{{en: body}} egyenletes felmelegítésére”, és hogy a szénnek körülbelül {{1200 °F; 650 °C}} előtt ki kell égnie. A kemence {{1500 °F; 816 °C}} fölött gyorsabban fűthet fel.
+Water expands more than a thousandfold as it turns to steam, so damp ware has to be dried slowly. L&L and Orton advise that "Special care should be taken below 1500°F (815°C) to heat the body evenly", and that carbon must be burned out before about {{1200 °F; 650 °C}}. Above {{1500 °F; 816 °C}} the kiln can climb faster.
 
-Table: Mi történik zsengélés közben, ahogy nő a hőmérséklet
-Label: Mi történik zsengéléskor
+Table: What happens as a bisque heats
+Label: What happens in a bisque
 
-|                                        Hőmérséklet | Mi történik                                                                                   |
-| -------------------------------------------------: | --------------------------------------------------------------------------------------------- |
-|                         {{300–500 °F; 149–260 °C}} | A kötőanyagok kiégnek                                                                         |
-|                      Körülbelül {{450 °F; 232 °C}} | A szerves anyagok égni kezdenek                                                               |
-|           Egészen {{700 °F; 371 °C}} hőmérsékletig | Az agyagból addig távozik a víz, amíg a hőmérséklet ezt meg nem haladja                       |
-|                        {{842–1022 °F; 450–550 °C}} | A kémiailag kötött víz távozik az agyagból                                                    |
-|                                {{1063 °F; 573 °C}} | Kvarcátalakulás{{en: quartz inversion}}: az agyagban lévő kvarc hirtelen kitágul              |
-|                         {{1112 °F; 600 °C}} fölött | A kén kiég                                                                                    |
-| Egészen {{1200–1400 °F; 649–760 °C}} hőmérsékletig | A természetes széntartalom kiég; ennek a vörös izzás hőmérséklete alatt be kellene fejeződnie |
-|                         {{1544 °F; 840 °C}} fölött | A kalcium-karbonát elbomlik                                                                   |
+|                        Temperature | What happens                                                |
+| ---------------------------------: | ----------------------------------------------------------- |
+|         {{300–500 °F; 149–260 °C}} | Binders burn off                                            |
+|           About {{450 °F; 232 °C}} | Organic matter starts to burn                               |
+|           Up to {{700 °F; 371 °C}} | Water keeps leaving the clay until above this temperature   |
+|        {{842–1022 °F; 450–550 °C}} | Chemically bound water leaves the clay                      |
+|                {{1063 °F; 573 °C}} | Quartz inversion: silica in the clay expands suddenly       |
+|          Above {{1112 °F; 600 °C}} | Sulfur burns out                                            |
+| Up to {{1200–1400 °F; 649–760 °C}} | Natural carbon burns off; this should finish below red heat |
+|          Above {{1544 °F; 840 °C}} | Calcium carbonate breaks down                               |
 
-A **kvarcátalakulás** az agyagban lévő kvarc{{en: silica}} hirtelen méretváltozása {{1063 °F; 573 °C}} hőmérsékleten: felfűtéskor kitágul, hűléskor összehúzódik. Az L&L Slow Bisque programja lelassít ezen a szakaszon, {{1000 °F; 538 °C}} és {{1100 °F; 593 °C}} között. A Digitalfire ezt „zsengélésnél szükségtelennek” találta, a Ceramics Monthly szerint pedig főleg a tömör áru hűtésekor számít. A lassítás nem sokba kerül, ezért azt javasoljuk, hogy vastag daraboknál tartsa meg.
+**Quartz inversion** is the sudden change in size of the silica in clay at {{1063 °F; 573 °C}}: it expands on the way up and contracts on the way down. L&L's Slow Bisque slows through it, between {{1000 °F; 538 °C}} and {{1100 °F; 593 °C}}. Digitalfire found this "unnecessary for bisque firings", and Ceramics Monthly says it mainly matters when cooling dense ware. Slowing costs little, so our suggestion is to keep it for thick pieces.
 
-### Kiszárítás: az áru szárítása a kemencében
+### Candling: drying in the kiln
 
-A **kiszárítás**{{en: candling}} azt jelenti, hogy a kemencét alacsony hőmérsékleten tartja, résnyire kitámasztott fedéllel vagy működő elszívóval, amíg az utolsó nedvesség is el nem távozik az áruból. A hőmérsékletről a források nem értenek egyet:
+**Candling** means holding the kiln at a low temperature, with the lid propped or the vent running, until the last moisture has left the ware. Sources disagree about the temperature:
 
-Table: A kiszárítás hőmérséklete
+Table: Candling temperatures
 
-| Forrás           | Kiszárítás                                                                                                  |
-| ---------------- | ----------------------------------------------------------------------------------------------------------- |
-| Ceramics Monthly | Éppen a forráspont alatt; például {{25 °F/h; 14 °C/h}} sebességű felfűtéssel 4–6 órán át                    |
-| L&L előmelegítés | Hőntartás {{150–200 °F; 66–93 °C}} hőmérsékleten                                                            |
-| Digitalfire      | Hőntartás {{250 °F; 121 °C}} hőmérsékleten, mert a forráspont alatti hőntartás „nem űzi ki az összes vizet” |
+| Source           | Candling                                                                                 |
+| ---------------- | ---------------------------------------------------------------------------------------- |
+| Ceramics Monthly | Just short of boiling; for example, climbing at {{25 °F/h; 14 °C/h}} for 4–6 hours       |
+| L&L preheat      | Hold at {{150–200 °F; 66–93 °C}}                                                         |
+| Digitalfire      | Hold at {{250 °F; 121 °C}}, because holding below boiling "does not expel all the water" |
 
 > [!NOTE]
-> Kiindulópontunk: lassan fűtsön fel legfeljebb körülbelül {{250 °F; 121 °C}} hőmérsékletig, és tartsa ott, amíg a szellőzőnyílásnál tartott tükör tiszta nem marad. Vastag vagy nedves árunál tartsa ott egész éjjel.
+> Our starting point: climb slowly to no more than about {{250 °F; 121 °C}}, and hold until a mirror at the vent stays clear. Hold overnight for thick or damp ware.
 
-A **tükörpróba**: tartson egy szobahőmérsékletű tükröt egy szellőzőnyíláshoz vagy a kitámasztott fedél alatti réshez. Ha bepárásodik, még távozik a víz; várjon, majd próbálja újra.
+The **mirror test**: hold a room-temperature mirror at a vent hole or at the gap under a propped lid. If it fogs, water is still leaving; wait, then test again.
 
-### Vezérlős égetési programok
+### Controller schedules
 
-A **vezérlő** olyan elektronikus egység, amely egy **égetési program** szerint égeti ki a kemencét: a program **szegmensek** listája, mindegyikben egy felfűtési sebesség (a **rámpa**{{en: ramp}}), egy célhőmérséklet és egy választható hőntartás{{en: hold}}. Lent az L&L DynaTrol és a Bartlett vezérlőinek két gyári programja, valamint a Digitalfire által közzétett égetési program látható. A „csúcs” a vezérlő saját hőmérséklete a választott gúlához: a 04-es gúlánál {{1926 °F; 1052 °C}}, a 06-osnál {{1819 °F; 993 °C}}.
+A **controller** is an electronic unit that fires the kiln through a **schedule**: a list of **segments**, each a rate of climb (the **ramp**), a target temperature and an optional hold. Below are two presets from L&L's DynaTrol and Bartlett controllers, and a schedule published by Digitalfire. "Peak" is the controller's own temperature for the cone you choose: for cone 04 it is {{1926 °F; 1052 °C}}, and for cone 06, {{1819 °F; 993 °C}}.
 
-Table: Az L&L és a Bartlett gyári zsengélőprogramjai
-Label: Gyári zsengélőprogramok
+Table: L&L and Bartlett bisque presets
+Label: Bisque presets
 
-| Szegmens                    |                                                                 Felfűtés eddig |                 Slow Bisque |            Fast Bisque |
-| --------------------------- | -----------------------------------------------------------------------------: | --------------------------: | ---------------------: |
-| 1                           |                                                             {{250 °F; 121 °C}} |        {{80 °F/h; 44 °C/h}} |  {{120 °F/h; 67 °C/h}} |
-| 2                           |                                                            {{1000 °F; 538 °C}} |      {{200 °F/h; 111 °C/h}} | {{300 °F/h; 167 °C/h}} |
-| 3                           |                                                            {{1100 °F; 593 °C}} |       {{100 °F/h; 56 °C/h}} |  {{150 °F/h; 83 °C/h}} |
-| 4                           | {{250 °F; 139 °C}} értékkel a csúcs alatt: a 04-es gúlánál {{1676 °F; 913 °C}} |      {{180 °F/h; 100 °C/h}} | {{180 °F/h; 100 °C/h}} |
-| 5                           |                                                                        A csúcs |        {{80 °F/h; 44 °C/h}} |  {{108 °F/h; 60 °C/h}} |
-| Felfűtési idő, üres kemence |                                                                                | Körülbelül 13 óra vagy több |  Körülbelül 10–11½ óra |
+| Segment                  |                                                           Climb to |            Slow Bisque |            Fast Bisque |
+| ------------------------ | -----------------------------------------------------------------: | ---------------------: | ---------------------: |
+| 1                        |                                                 {{250 °F; 121 °C}} |   {{80 °F/h; 44 °C/h}} |  {{120 °F/h; 67 °C/h}} |
+| 2                        |                                                {{1000 °F; 538 °C}} | {{200 °F/h; 111 °C/h}} | {{300 °F/h; 167 °C/h}} |
+| 3                        |                                                {{1100 °F; 593 °C}} |  {{100 °F/h; 56 °C/h}} |  {{150 °F/h; 83 °C/h}} |
+| 4                        | {{250 °F; 139 °C}} below the peak: {{1676 °F; 913 °C}} for cone 04 | {{180 °F/h; 100 °C/h}} | {{180 °F/h; 100 °C/h}} |
+| 5                        |                                                           The peak |   {{80 °F/h; 44 °C/h}} |  {{108 °F/h; 60 °C/h}} |
+| Heating time, empty kiln |                                                                    | About 13 hours or more |     About 10–11½ hours |
 
-Az L&L időadatai „a lehető leggyorsabb üres kemencékre” vonatkoznak; egy megrakott kemence akár négyszer annyi ideig is fűthet, és minden hőntartás, amelyet beiktat, olyan többlet felvett hőmennyiséget{{en: heatwork}} jelent, amellyel a gyári programok nem számolnak. Nagy vagy nedves darabokhoz az L&L a Slow Bisque programot ajánlja, 2–3 órás vagy hosszabb előmelegítéssel, és óv a gyors égetéstől, amely „olyan hibákat okozhat, mint a tűszúrás{{en: pinholes}}, a repedés és az elégtelen kiégés”.
+L&L's times are "for the fastest possible empty kilns"; a loaded kiln can take as much as four times longer, and any hold you add is extra heatwork the presets do not allow for. L&L advises Slow Bisque, with a preheat of 2–3 hours or longer, for large or damp pieces, and warns against fast firing, which "can cause defects like pinholes, cracking, and insufficient burnout".
 
-Table: A Digitalfire BQ1000 zsengélőprogramja, körülbelül 06-os gúláig
+Table: Digitalfire BQ1000 bisque, to about cone 06
 Label: Digitalfire BQ1000
 
-| Lépés |               Sebesség |                  Cél | Hőntartás                                      |
-| ----- | ---------------------: | -------------------: | ---------------------------------------------- |
-| 1     | {{306 °F/h; 170 °C/h}} |   {{248 °F; 120 °C}} | 60 perc; nehéz, vastag falú árunál akár 10 óra |
-| 2     | {{306 °F/h; 170 °C/h}} |  {{1733 °F; 945 °C}} | Nincs                                          |
-| 3     |  {{108 °F/h; 60 °C/h}} | {{1832 °F; 1000 °C}} | 15 perc                                        |
+| Step |                   Rate |               Target | Hold                                      |
+| ---- | ---------------------: | -------------------: | ----------------------------------------- |
+| 1    | {{306 °F/h; 170 °C/h}} |   {{248 °F; 120 °C}} | 60 minutes; up to 10 hours for heavy ware |
+| 2    | {{306 °F/h; 170 °C/h}} |  {{1733 °F; 945 °C}} | None                                      |
+| 3    |  {{108 °F/h; 60 °C/h}} | {{1832 °F; 1000 °C}} | 15 minutes                                |
 
-A BQ1000 körülbelül 7 óra 44 percig tart. Szerzője szerint vékony, száraz árunál akár {{500 °F/h; 278 °C/h}} sebesség is megfelelő, az utolsó lépést pedig azért lassítja, hogy a hőmérséklet kiegyenlítődjön a rakatban.
+BQ1000 takes about 7 hours 44 minutes. Its author finds up to {{500 °F/h; 278 °C/h}} fine for thin, dry ware, and slows the last step to even out the temperature through the load.
 
-### A vezérlők gúlaértékei és az Orton táblázata
+### Controller cones and Orton's chart
 
-Az L&L és a Bartlett vezérlői a 04-es gúlához {{1926 °F; 1052 °C}}, a 06-oshoz {{1819 °F; 993 °C}} hőmérsékletet használnak, kicsivel kevesebbet, mint az Orton {{1945 °F; 1063 °C}} és {{1828 °F; 998 °C}} értéke; a 6-os és a 10-es gúlánál megegyeznek. A különbséget az ellenőrző gúlák{{en: witness cones}} döntik el: ha nem egyeznek a vezérlővel, javítsa ki a gúlakorrekcióval.
+L&L and Bartlett controllers use {{1926 °F; 1052 °C}} for cone 04 and {{1819 °F; 993 °C}} for cone 06, a little below Orton's {{1945 °F; 1063 °C}} and {{1828 °F; 998 °C}}; they agree at cone 6 and cone 10. Witness cones settle the difference: if they disagree with the controller, correct it with the cone offset.
 
-### Kézi kapcsolású kemencében
+### On a manual kiln
 
-A kézi kapcsolású kemencében ugyanezt a tervet kézzel kell követni: lassan szárítson, kitámasztott fedéllel és nyitott kémlelőnyílásokkal, a kapcsolókat fokozatosan állítsa Low (alacsony) állásból Medium (közepes), majd High (magas) állásba, és hagyja, hogy a Kiln-Sitter fejezze be az égetést. A közzétett eljárások lent, a Kézi kapcsolású kemencék részletesen című részben találhatók.
+A manual kiln follows the same plan by hand: dry slowly with the lid propped and the peepholes open, step the switches up from Low to Medium to High, and let the sitter end the firing. The published procedures are under Manual kilns in detail, below.
 
 ## Mázas égetés {#glaze}
 

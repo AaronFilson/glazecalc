@@ -116,7 +116,6 @@
   },
   "trash": {
     "title": "Cestino",
-    "lead": "Ciò che rimuove da ricette, materiali, note e registri resta qui per 30 giorni. Lo ripristini, oppure lo elimini per sempre.",
     "listHeading": "Nel cestino",
     "none": "Il cestino è vuoto.",
     "untitled": "Senza titolo",

@@ -370,83 +370,83 @@ Label: Πίνακας κώνων SK
 
 :::
 
-## Ψήσιμο μπισκουί {#bisque}
+## Bisque firing {#bisque lang=en}
 
-Το **ψήσιμο μπισκουί**{{en: bisque}} (στη Βρετανία biscuit) είναι το πρώτο, χαμηλότερο ψήσιμο, που κάνει τον στεγνό πηλό σκληρά, πορώδη κομμάτια, έτοιμα για υάλωμα{{en: glaze}}. Συνήθως γίνεται στους κώνους{{en: cones}} 06–04, {{1828–1945 °F; 998–1063 °C}} στον πίνακα της Orton. Στη Βρετανία οι κεραμίστες ψήνουν συχνά γύρω στους {{1000 °C; 1832 °F}}, κοντά στον κώνο 06. Το μπισκουί πρέπει να μένει πορώδες, «γενικά πάνω από 15%» (Digitalfire), ώστε να ρουφά το νερό του υαλώματος. Ένα μπισκουί ψημένο πολύ χαμηλά παίρνει πολύ χοντρή στρώση υαλώματος, που μετά ραγίζει και **τραβάει**{{en: crawling}} (μαζεύεται σε νησίδες και αφήνει γυμνό πηλό). Το υποψημένο μπισκουί επίσης «συνεχίζει να συρρικνώνεται κατά το ψήσιμο του υαλώματος», και αυτό χαλάει τη συμβατότητα υαλώματος και μάζας{{en: glaze fit}}. Το φόρτωμα συγχωρεί λάθη: τα κομμάτια μπορούν να ακουμπούν μεταξύ τους, τα καπάκια μπορούν να ψηθούν πάνω στα δοχεία τους, και τα μπολ μπαίνουν χείλος με χείλος, όχι το ένα μέσα στο άλλο.
+The **bisque** firing (biscuit in the UK) is the first, lower firing that turns dry clay into hard, porous ware ready to glaze. It is usually fired to cone 06–04, {{1828–1945 °F; 998–1063 °C}} on Orton's chart; UK potters often fire to around {{1000 °C; 1832 °F}}, near cone 06. The bisque should stay porous, "generally more than 15%" (Digitalfire), so it soaks water out of the glaze. Too soft a bisque takes glaze on too thick, which then cracks and **crawls** (pulls back into islands, leaving bare clay). Under-fired bisque also "continues to shrink during glaze firing", which spoils the glaze fit. Loading is forgiving: pieces may touch, lids can be fired on their pots, and bowls go rim to rim rather than nested.
 
-### Γιατί η αρχή γίνεται αργά
+### Why the early part goes slowly
 
-Το νερό, όταν γίνεται ατμός, «διαστέλλεται 1170 φορές», σημειώνει η Bracker's, γι’ αυτό τα υγρά κομμάτια πρέπει να στεγνώνουν αργά. Η L&L και η Orton συμβουλεύουν ότι «Χρειάζεται ιδιαίτερη προσοχή κάτω από τους 1500°F (815°C), ώστε η μάζα να θερμαίνεται ομοιόμορφα», και ότι ο άνθρακας πρέπει να καεί πριν από τους {{1200 °F; 650 °C}} περίπου. Πάνω από τους {{1500 °F; 816 °C}} το καμίνι μπορεί να ανεβαίνει πιο γρήγορα.
+Water expands more than a thousandfold as it turns to steam, so damp ware has to be dried slowly. L&L and Orton advise that "Special care should be taken below 1500°F (815°C) to heat the body evenly", and that carbon must be burned out before about {{1200 °F; 650 °C}}. Above {{1500 °F; 816 °C}} the kiln can climb faster.
 
-Table: Τι συμβαίνει καθώς θερμαίνεται το μπισκουί
-Label: Τι συμβαίνει στο μπισκουί
+Table: What happens as a bisque heats
+Label: What happens in a bisque
 
-|                      Θερμοκρασία | Τι συμβαίνει                                                                                            |
-| -------------------------------: | ------------------------------------------------------------------------------------------------------- |
-|       {{300–500 °F; 149–260 °C}} | Τα συνδετικά καίγονται                                                                                  |
-|       Περίπου {{450 °F; 232 °C}} | Η οργανική ύλη αρχίζει να καίγεται                                                                      |
-|           Έως {{700 °F; 371 °C}} | Το νερό συνεχίζει να φεύγει από τον πηλό μέχρι να ξεπεραστεί αυτή η θερμοκρασία                         |
-|      {{842–1022 °F; 450–550 °C}} | Το χημικά δεσμευμένο νερό φεύγει από τον πηλό                                                           |
-|              {{1063 °F; 573 °C}} | Μετατροπή του χαλαζία{{en: quartz inversion}}: το πυριτικό{{en: silica}} στον πηλό διαστέλλεται απότομα |
-|     Πάνω από {{1112 °F; 600 °C}} | Το θείο καίγεται και φεύγει                                                                             |
-| Έως {{1200–1400 °F; 649–760 °C}} | Ο φυσικός άνθρακας καίγεται. Αυτό πρέπει να τελειώσει πριν από την ερυθροπύρωση                         |
-|     Πάνω από {{1544 °F; 840 °C}} | Το ανθρακικό ασβέστιο διασπάται                                                                         |
+|                        Temperature | What happens                                                |
+| ---------------------------------: | ----------------------------------------------------------- |
+|         {{300–500 °F; 149–260 °C}} | Binders burn off                                            |
+|           About {{450 °F; 232 °C}} | Organic matter starts to burn                               |
+|           Up to {{700 °F; 371 °C}} | Water keeps leaving the clay until above this temperature   |
+|        {{842–1022 °F; 450–550 °C}} | Chemically bound water leaves the clay                      |
+|                {{1063 °F; 573 °C}} | Quartz inversion: silica in the clay expands suddenly       |
+|          Above {{1112 °F; 600 °C}} | Sulfur burns out                                            |
+| Up to {{1200–1400 °F; 649–760 °C}} | Natural carbon burns off; this should finish below red heat |
+|          Above {{1544 °F; 840 °C}} | Calcium carbonate breaks down                               |
 
-Η **μετατροπή του χαλαζία** είναι η απότομη αλλαγή μεγέθους του πυριτικού στον πηλό στους {{1063 °F; 573 °C}}: διαστέλλεται στην άνοδο και συστέλλεται στην κάθοδο. Το Slow Bisque της L&L περνά αργά από αυτήν, ανάμεσα στους {{1000 °F; 538 °C}} και στους {{1100 °F; 593 °C}}. Το Digitalfire το βρήκε «περιττό για ψησίματα μπισκουί», και το Ceramics Monthly λέει ότι μετράει κυρίως στο κρύωμα πυκνών κομματιών. Το αργό πέρασμα κοστίζει λίγο, γι’ αυτό προτείνουμε να το κρατάτε για τα χοντρά κομμάτια.
+**Quartz inversion** is the sudden change in size of the silica in clay at {{1063 °F; 573 °C}}: it expands on the way up and contracts on the way down. L&L's Slow Bisque slows through it, between {{1000 °F; 538 °C}} and {{1100 °F; 593 °C}}. Digitalfire found this "unnecessary for bisque firings", and Ceramics Monthly says it mainly matters when cooling dense ware. Slowing costs little, so our suggestion is to keep it for thick pieces.
 
-### Προθέρμανση: στέγνωμα στο καμίνι
+### Candling: drying in the kiln
 
-**Προθέρμανση**{{en: candling}} σημαίνει να κρατάτε το καμίνι σε χαμηλή θερμοκρασία, με το καπάκι μισάνοιχτο ή τον εξαερισμό σε λειτουργία, μέχρι να φύγει και η τελευταία υγρασία από τα κομμάτια. Οι πηγές διαφωνούν για τη θερμοκρασία:
+**Candling** means holding the kiln at a low temperature, with the lid propped or the vent running, until the last moisture has left the ware. Sources disagree about the temperature:
 
-Table: Θερμοκρασίες προθέρμανσης
+Table: Candling temperatures
 
-| Πηγή             | Προθέρμανση                                                                                              |
-| ---------------- | -------------------------------------------------------------------------------------------------------- |
-| Ceramics Monthly | Λίγο κάτω από το σημείο βρασμού, για παράδειγμα άνοδος με {{25 °F/h; 14 °C/h}} για 4–6 ώρες              |
-| Προθέρμανση L&L  | Παραμονή{{en: hold}} στους {{150–200 °F; 66–93 °C}}                                                      |
-| Digitalfire      | Παραμονή στους {{250 °F; 121 °C}}, γιατί η παραμονή κάτω από το σημείο βρασμού «δεν διώχνει όλο το νερό» |
+| Source           | Candling                                                                                 |
+| ---------------- | ---------------------------------------------------------------------------------------- |
+| Ceramics Monthly | Just short of boiling; for example, climbing at {{25 °F/h; 14 °C/h}} for 4–6 hours       |
+| L&L preheat      | Hold at {{150–200 °F; 66–93 °C}}                                                         |
+| Digitalfire      | Hold at {{250 °F; 121 °C}}, because holding below boiling "does not expel all the water" |
 
 > [!NOTE]
-> Το σημείο εκκίνησης που προτείνουμε: ανεβείτε αργά μέχρι περίπου {{250 °F; 121 °C}} το πολύ, και κρατήστε εκεί μέχρι ένας καθρέφτης στον εξαερισμό να μη θολώνει πια. Για χοντρά ή υγρά κομμάτια, κρατήστε όλη τη νύχτα.
+> Our starting point: climb slowly to no more than about {{250 °F; 121 °C}}, and hold until a mirror at the vent stays clear. Hold overnight for thick or damp ware.
 
-Η **δοκιμή του καθρέφτη**: κρατήστε έναν καθρέφτη σε θερμοκρασία δωματίου μπροστά σε μια οπή εξαερισμού ή στο κενό κάτω από το μισάνοιχτο καπάκι. Αν θολώσει, φεύγει ακόμη νερό. Περιμένετε και δοκιμάστε ξανά.
+The **mirror test**: hold a room-temperature mirror at a vent hole or at the gap under a propped lid. If it fogs, water is still leaving; wait, then test again.
 
-### Προγράμματα ελεγκτή
+### Controller schedules
 
-Ο **ελεγκτής** είναι μια ηλεκτρονική μονάδα που ελέγχει το ψήσιμο σύμφωνα με ένα **πρόγραμμα ψησίματος**: μια λίστα από **τμήματα**, το καθένα με έναν ρυθμό ανόδου (τη **ράμπα**{{en: ramp}}), μια θερμοκρασία στόχο και, αν θέλετε, μια παραμονή. Παρακάτω είναι δύο έτοιμα προγράμματα από τους ελεγκτές DynaTrol της L&L και τους ελεγκτές της Bartlett, και ένα πρόγραμμα που έχει δημοσιεύσει το Digitalfire. «Τελική θερμοκρασία» είναι η θερμοκρασία που χρησιμοποιεί ο ίδιος ο ελεγκτής για τον κώνο που επιλέγετε: για τον κώνο 04 είναι {{1926 °F; 1052 °C}}, και για τον κώνο 06 {{1819 °F; 993 °C}}.
+A **controller** is an electronic unit that fires the kiln through a **schedule**: a list of **segments**, each a rate of climb (the **ramp**), a target temperature and an optional hold. Below are two presets from L&L's DynaTrol and Bartlett controllers, and a schedule published by Digitalfire. "Peak" is the controller's own temperature for the cone you choose: for cone 04 it is {{1926 °F; 1052 °C}}, and for cone 06, {{1819 °F; 993 °C}}.
 
-Table: Έτοιμα προγράμματα μπισκουί των L&L και Bartlett
-Label: Προγράμματα μπισκουί
+Table: L&L and Bartlett bisque presets
+Label: Bisque presets
 
-| Τμήμα                          |                                                                              Άνοδος έως |                   Slow Bisque |            Fast Bisque |
-| ------------------------------ | --------------------------------------------------------------------------------------: | ----------------------------: | ---------------------: |
-| 1                              |                                                                      {{250 °F; 121 °C}} |          {{80 °F/h; 44 °C/h}} |  {{120 °F/h; 67 °C/h}} |
-| 2                              |                                                                     {{1000 °F; 538 °C}} |        {{200 °F/h; 111 °C/h}} | {{300 °F/h; 167 °C/h}} |
-| 3                              |                                                                     {{1100 °F; 593 °C}} |         {{100 °F/h; 56 °C/h}} |  {{150 °F/h; 83 °C/h}} |
-| 4                              | {{250 °F; 139 °C}} κάτω από την τελική θερμοκρασία: {{1676 °F; 913 °C}} για τον κώνο 04 |        {{180 °F/h; 100 °C/h}} | {{180 °F/h; 100 °C/h}} |
-| 5                              |                                                                    Η τελική θερμοκρασία |          {{80 °F/h; 44 °C/h}} |  {{108 °F/h; 60 °C/h}} |
-| Χρόνος θέρμανσης, άδειο καμίνι |                                                                                         | Περίπου 13 ώρες ή περισσότερο |    Περίπου 10–11½ ώρες |
+| Segment                  |                                                           Climb to |            Slow Bisque |            Fast Bisque |
+| ------------------------ | -----------------------------------------------------------------: | ---------------------: | ---------------------: |
+| 1                        |                                                 {{250 °F; 121 °C}} |   {{80 °F/h; 44 °C/h}} |  {{120 °F/h; 67 °C/h}} |
+| 2                        |                                                {{1000 °F; 538 °C}} | {{200 °F/h; 111 °C/h}} | {{300 °F/h; 167 °C/h}} |
+| 3                        |                                                {{1100 °F; 593 °C}} |  {{100 °F/h; 56 °C/h}} |  {{150 °F/h; 83 °C/h}} |
+| 4                        | {{250 °F; 139 °C}} below the peak: {{1676 °F; 913 °C}} for cone 04 | {{180 °F/h; 100 °C/h}} | {{180 °F/h; 100 °C/h}} |
+| 5                        |                                                           The peak |   {{80 °F/h; 44 °C/h}} |  {{108 °F/h; 60 °C/h}} |
+| Heating time, empty kiln |                                                                    | About 13 hours or more |     About 10–11½ hours |
 
-Οι χρόνοι της L&L είναι «για τα πιο γρήγορα δυνατά άδεια καμίνια». Ένα φορτωμένο καμίνι μπορεί να χρειαστεί έως και τέσσερις φορές περισσότερο, και κάθε παραμονή που προσθέτετε είναι επιπλέον θερμικό έργο{{en: heatwork}} που τα έτοιμα προγράμματα δεν υπολογίζουν. Για μεγάλα ή υγρά κομμάτια η L&L συνιστά το Slow Bisque, με προθέρμανση 2–3 ωρών ή περισσότερο, και προειδοποιεί για το γρήγορο ψήσιμο, που «μπορεί να προκαλέσει ελαττώματα όπως τρυπίτσες, ραγίσματα και ατελές κάψιμο των οργανικών».
+L&L's times are "for the fastest possible empty kilns"; a loaded kiln can take as much as four times longer, and any hold you add is extra heatwork the presets do not allow for. L&L advises Slow Bisque, with a preheat of 2–3 hours or longer, for large or damp pieces, and warns against fast firing, which "can cause defects like pinholes, cracking, and insufficient burnout".
 
-Table: Μπισκουί BQ1000 του Digitalfire, περίπου στον κώνο 06
+Table: Digitalfire BQ1000 bisque, to about cone 06
 Label: Digitalfire BQ1000
 
-| Βήμα |                 Ρυθμός |               Στόχος | Παραμονή                                 |
-| ---- | ---------------------: | -------------------: | ---------------------------------------- |
-| 1    | {{306 °F/h; 170 °C/h}} |   {{248 °F; 120 °C}} | 60 λεπτά, έως 10 ώρες για βαριά κομμάτια |
-| 2    | {{306 °F/h; 170 °C/h}} |  {{1733 °F; 945 °C}} | Καμία                                    |
-| 3    |  {{108 °F/h; 60 °C/h}} | {{1832 °F; 1000 °C}} | 15 λεπτά                                 |
+| Step |                   Rate |               Target | Hold                                      |
+| ---- | ---------------------: | -------------------: | ----------------------------------------- |
+| 1    | {{306 °F/h; 170 °C/h}} |   {{248 °F; 120 °C}} | 60 minutes; up to 10 hours for heavy ware |
+| 2    | {{306 °F/h; 170 °C/h}} |  {{1733 °F; 945 °C}} | None                                      |
+| 3    |  {{108 °F/h; 60 °C/h}} | {{1832 °F; 1000 °C}} | 15 minutes                                |
 
-Το BQ1000 διαρκεί περίπου 7 ώρες και 44 λεπτά. Ο δημιουργός του θεωρεί ότι έως {{500 °F/h; 278 °C/h}} είναι εντάξει για λεπτά, στεγνά κομμάτια, και κάνει πιο αργό το τελευταίο βήμα, ώστε να εξισωθεί η θερμοκρασία σε όλο το φόρτωμα.
+BQ1000 takes about 7 hours 44 minutes. Its author finds up to {{500 °F/h; 278 °C/h}} fine for thin, dry ware, and slows the last step to even out the temperature through the load.
 
-### Οι κώνοι του ελεγκτή και ο πίνακας της Orton
+### Controller cones and Orton's chart
 
-Οι ελεγκτές της L&L και της Bartlett χρησιμοποιούν {{1926 °F; 1052 °C}} για τον κώνο 04 και {{1819 °F; 993 °C}} για τον κώνο 06, λίγο κάτω από τους {{1945 °F; 1063 °C}} και {{1828 °F; 998 °C}} της Orton. Συμφωνούν στον κώνο 6 και στον κώνο 10. Οι κώνοι-μάρτυρες{{en: witness cones}} λύνουν τη διαφορά: αν διαφωνούν με τον ελεγκτή, ρυθμίστε τον με τη διόρθωση κώνου (offset).
+L&L and Bartlett controllers use {{1926 °F; 1052 °C}} for cone 04 and {{1819 °F; 993 °C}} for cone 06, a little below Orton's {{1945 °F; 1063 °C}} and {{1828 °F; 998 °C}}; they agree at cone 6 and cone 10. Witness cones settle the difference: if they disagree with the controller, correct it with the cone offset.
 
-### Σε καμίνι χωρίς ελεγκτή
+### On a manual kiln
 
-Ένα καμίνι χωρίς ελεγκτή ακολουθεί το ίδιο σχέδιο με το χέρι: στεγνώστε αργά με το καπάκι μισάνοιχτο και τις οπές παρατήρησης ανοιχτές, ανεβάστε τους διακόπτες σταδιακά από Low σε Medium και μετά σε High (χαμηλή, μεσαία και υψηλή θέση), και αφήστε το Kiln-Sitter να τελειώσει το ψήσιμο. Οι δημοσιευμένες διαδικασίες βρίσκονται παρακάτω, στο «Καμίνια χωρίς ελεγκτή αναλυτικά».
+A manual kiln follows the same plan by hand: dry slowly with the lid propped and the peepholes open, step the switches up from Low to Medium to High, and let the sitter end the firing. The published procedures are under Manual kilns in detail, below.
 
 ## Ψήσιμο του υαλώματος {#glaze}
 

@@ -3,39 +3,39 @@ title: Biztonságos keverés és szellőzés
 lead: Hogyan tartsa távol a mázport a tüdejétől, az égetési gázokat pedig az otthonától: a legfontosabb szokások, eszközök és nyersanyagok.
 ---
 
-## A fő veszély: a por {#the-main-hazard}
+## The main hazard: dust {#the-main-hazard lang=en}
 
-A mázzal{{en: glaze}} végzett munka fő hosszú távú veszélye a por, mindenekelőtt a **respirábilis kristályos szilícium-dioxid**{{en: respirable crystalline silica}}: kvarc- vagy krisztobalitszemcsék (a szilícium-dioxid{{en: silica}} kristályos formái), amelyek elég aprók ahhoz, hogy mélyen a tüdőbe jussanak. A kristályos szilícium-dioxid a máz száraz tömegének nagyjából 10–60%-át teheti ki, és a legtöbb agyag (a kaolin{{en: kaolin}} kivételével) és sok földpát{{en: feldspar}} is tartalmaz finom kvarcot. Az Egyesült Királyság munkavédelmi hatósága, a Health and Safety Executive (HSE) szerint ez a por „nagyon finom, és normál megvilágításnál láthatatlan”, így az, hogy egy helyiség tisztának látszik, nem bizonyítja, hogy a levegője is tiszta.
+The main long-term hazard in glaze work is dust, above all **respirable crystalline silica**: particles of quartz or cristobalite (crystal forms of silica) small enough to reach deep into the lungs. Crystalline silica can make up about 10 to 60% of a glaze's dry weight, and most clays (except kaolin) and many feldspars also carry fine quartz. The UK's Health and Safety Executive (HSE) says this dust "is very fine and invisible under normal lighting", so a room that looks clean is not proof that the air is.
 
-Huzamos ideig belélegezve **szilikózist** okozhat: ezt a tüdőbetegséget a HSE „súlyos és visszafordíthatatlan” betegségként írja le, amely „maradandó rokkantságot és korai halált okozhat”. **COPD**-t (krónikus obstruktív tüdőbetegséget: hosszan tartó hörghurutot és tüdőtágulatot) is okozhat, amelyet a dohányzás súlyosbít. Az IARC, az Egészségügyi Világszervezet rákkutató ügynöksége a belélegzett kristályos szilícium-dioxidot az 1. csoportba sorolja: „az emberre rákkeltő”.
+Breathed in over time, it can cause **silicosis**, a lung disease that HSE describes as "serious and irreversible" and able to "cause permanent disablement and early death". It can also cause **COPD** (chronic obstructive pulmonary disease: long-term bronchitis and emphysema), which smoking makes worse. IARC, the World Health Organization's cancer agency, places inhaled crystalline silica in Group 1, "carcinogenic to humans".
 
-A szilícium-dioxid a kemencében nem alakul át gázzá, és a nedves máz belélegzés útján nem jelent veszélyt. Akkor kell vigyázni, amikor az anyag száraz: a zsákok kibontásakor, a bemérésnél, a por vízbe keverésekor, valamint a cseppek, a túlszórás és a kilöttyent máz feltakarításakor, ha azok már visszaszáradtak porrá.
+Silica does not turn into fumes in the kiln, and a wet glaze is not an inhalation hazard unless it is sprayed: spray mist carries silica and dries to dust (see Spraying, below). The times to take care are when material is dry: opening bags, weighing, stirring powder into water, and cleaning up drips, overspray and slop once they have dried back into dust.
 
-### Expozíciós határértékek
+### Exposure limits
 
-A munkahelyi szabályok **foglalkozási expozíciós határértéket** írnak elő: azt a legnagyobb mennyiségű szilícium-dioxidot, amelyet egy munkavállaló belélegezhet, 8 órás munkanapra átlagolva, a levegő egy köbméterére vetítve milligrammban (mg) vagy mikrogrammban (µg, a milligramm ezredrésze) megadva.
+Workplace rules set an **exposure limit**: the most silica a worker may breathe, averaged over an 8-hour day, in milligrams (mg) or micrograms (µg, thousandths of a milligram) per cubic meter of air.
 
-Table: A respirábilis kristályos szilícium-dioxid munkahelyi határértékei (8 órás átlag)
-Label: A szilícium-dioxid expozíciós határértékei
+Table: Workplace limits for respirable crystalline silica (8-hour average)
+Label: Silica exposure limits
 
-| Régió              |            Határérték | Megjegyzés                                                                                           |
-| ------------------ | --------------------: | ---------------------------------------------------------------------------------------------------- |
-| Egyesült Államok   | 0,05 mg/m³ (50 µg/m³) | Az OSHA határértéke. A munkáltatóknak már 25 µg/m³-nél, a „beavatkozási szintnél” intézkedniük kell. |
-| Egyesült Királyság |             0,1 mg/m³ | Az expozíciót emellett „az észszerűen megvalósítható legalacsonyabb szinten” kell tartani.           |
-| Európai Unió       |             0,1 mg/m³ | Kötelező határérték (az (EU) 2017/2398 irányelv szerint). Egyes tagállamok alacsonyabbat írnak elő.  |
-| Ausztrália         |            0,05 mg/m³ | 2020 júliusa óta. 2026 júniusában a miniszterek többsége nem támogatta a 0,025-re való csökkentést.  |
-| Új-Zéland          |           0,025 mg/m³ | 2023 óta. A WorkSafe standardjai iránymutatások, nem jogszabályi határértékek.                       |
+| Region         |                 Limit | Notes                                                                             |
+| -------------- | --------------------: | --------------------------------------------------------------------------------- |
+| United States  | 0.05 mg/m³ (50 µg/m³) | OSHA's limit. Employers must start taking action at 25 µg/m³, the "action level". |
+| United Kingdom |             0.1 mg/m³ | Exposure must also be kept "as low as reasonably practicable".                    |
+| European Union |             0.1 mg/m³ | Binding limit (Directive 2017/2398). Some member states set lower ones.           |
+| Australia      |            0.05 mg/m³ | Since July 2020. In June 2026, most ministers did not support a cut to 0.025.     |
+| New Zealand    |           0.025 mg/m³ | Since 2023. WorkSafe's standards are guidance, not legal limits.                  |
 
-Egyes oldalak 0,025 mg/m³-t adnak meg Ausztráliára, de a hivatalos határérték továbbra is 0,05. A tanács mindenképp ugyanaz: tartsa a port olyan alacsony szinten, amennyire csak lehet.
+Some pages quote 0.025 mg/m³ for Australia, but the official limit is still 0.05. Either way, the advice is the same: keep dust as low as you can.
 
-Több uniós tagállam alacsonyabb határértéket ír elő, mint az EU. A határérték ott, ahol Ön él, az azt előíró jogszabály és a munkavédelemért felelős országos szerv:
+Several EU member states set lower limits than the EU's. The limit where you live, the law that sets it and the national body for safety at work:
 
 ::silica-limit
 
 > [!NOTE]
-> Ezek munkahelyi határértékek. A munkáltatókra kötelezők, ezért az otthon egyedül dolgozó fazekast senki sem ellenőrzi, a közösségi műhelyekre és az alkalmazottakat foglalkoztató iskolákra viszont általában vonatkoznak (nézzen utána a helyi szabályoknak). Otthon ugyanaz a por, és a határértékek megmutatják, mekkora a veszély: a levegő minden köbméterében 25–100 milliomod gramm, egy napra átlagolva.
+> These are workplace limits. They bind employers, so no one inspects a potter working alone at home, though community studios and schools with staff are usually covered (check your local rules). The dust is the same at home, and the limits show the scale of the hazard: 25 to 100 millionths of a gram in each cubic meter of air, averaged over a day.
 
-Hobbiműhelyekben szinte senki sem mérte még a port, ezért azt javasoljuk, hogy minden száraz porral végzett munkát tekintsen poros munkának.
+Almost no one has measured dust in hobby studios, so we suggest treating every dry-powder task as a dusty one.
 
 ## A legfontosabb szokások {#habits}
 
@@ -65,49 +65,49 @@ A védelem nagy része a szokásokból fakad, nem az eszközökből. A HSE kerá
 
 Ez a sorrend a mi javaslatunk, a HSE elvére építve, amely szerint elsőként a port kell elkerülni. A bemérést és a keverést lépésről lépésre a [Mázkészítés](/guides/making-a-glaze) című útmutató mutatja be.
 
-## Légzésvédők {#respirators}
+## Respirators {#respirators lang=en}
 
-A **légzésvédő** olyan tanúsított maszk, amely kiszűri a finom részecskéket a belélegzett levegőből. Csak akkor működik, ha szorosan illeszkedik az arcához, és a jó szokásokat kiegészíti, nem helyettesíti.
+A **respirator** is a mask certified to filter fine particles from the air you breathe. It works only when it seals to your face, and it backs up good habits rather than replacing them.
 
-### Védelmi osztályok régiónként
+### Classes by region
 
-Table: Részecskeszűrős légzésvédők osztályai régiónként (mázporra nagyjából egyenértékű osztályok)
-Label: Légzésvédő-osztályok
+Table: Particle respirator classes by region (rough equivalents for glaze dust)
+Label: Respirator classes
 
-| Régió                    | Mindennapi osztály | Magasabb osztály | Mit keressen                                                                                   |
-| ------------------------ | ------------------ | ---------------- | ---------------------------------------------------------------------------------------------- |
-| Egyesült Államok         | N95                | P100             | NIOSH-jóváhagyás a maszkon vagy a csomagolásán                                                 |
-| Egyesült Királyság és EU | FFP2               | FFP3             | EN 149 az eldobható maszkokon; EN 140 a többször használható félálarcokon, P2 vagy P3 szűrővel |
-| Ausztrália és Új-Zéland  | P2                 | P3               | AS/NZS 1716                                                                                    |
+| Region                    | Everyday class | Higher class | Look for                                                                   |
+| ------------------------- | -------------- | ------------ | -------------------------------------------------------------------------- |
+| United States             | N95            | P100         | NIOSH approval on the mask or its packaging                                |
+| UK and EU                 | FFP2           | FFP3         | EN 149 on disposable masks; EN 140 half masks with EN 143 P2 or P3 filters |
+| Australia and New Zealand | P2             | P3           | AS/NZS 1716                                                                |
 
-A magasabb osztály a finom részecskék nagyobb hányadát szűri ki. A források eltérnek abban, mennyit szűr egy ausztrál P3-as szűrő (legalább 99%-ot vagy legalább 99,95%-ot), ezért az Ön régiójában forgalmazott, tanúsított osztályt vásárolja meg. Műhelyben gyakori választás a többször használható **félálarc** (az orrot és a szájat takarja, cserélhető szűrőkkel), P100-as szűrőkkel (az Egyesült Államokon kívül P3-assal).
+The higher class filters a larger share of fine particles. Sources disagree on what an Australian P3 filters (at least 99%, or at least 99.95%), so buy the certified class sold in your region. A reusable **half mask** (covering the nose and mouth, with replaceable filters) fitted with P100 filters (P3 outside the US) is a common studio choice.
 
-### Illeszkedés és tömítés
+### Fit and seal
 
-A szivárgó maszk a szélei mentén beengedi a port, bármilyen osztályú is. A HSE figyelmeztet, hogy a borosta és a szakáll „lehetetlenné teszi a jó tömítést”.
+A mask that leaks lets dust in around its edges, whatever its class. HSE warns that stubble and beards "make it impossible to get a good seal".
 
-- **Nem sokkal a munka előtt borotválkozzon.** Az útmutatások eltérnek abban, mennyi idővel korábbi borotválkozás számít még „frissen borotváltnak”. Egy brit gyártó a HSE-re hivatkozva azt mondja: a munka megkezdése előtt legfeljebb 8 órával. Az ausztrál és új-zélandi illeszkedésvizsgálati szabvány azt kéri, hogy az illeszkedésvizsgálat előtt borotválkozzon meg, „lehetőleg 12 órán belül”. Ha nem sokkal a munka előtt borotválkozik, mindkettőnek megfelel.
-- **Ha szakállat visel,** a lazán illeszkedő **ventilátoros szűrőkészülék** (PAPR: csuklya vagy sisak ventilátorral, amely szűrt levegőt juttat be) nem igényel arctömítést.
-- **Válassza meg jól a méretet.** A rossz illeszkedés a szivárgás egyik fő oka. Munkahelyeken **illeszkedésvizsgálatot** (fit-tesztet) végeznek: ez azt ellenőrzi, hogy egy adott maszk jól tömít-e egy adott arcon. Otthon azt javasoljuk, hogy minden felvételkor végezze el a tömítettség-ellenőrzést a gyártó utasításai szerint.
+- **Shave shortly before you work.** Guidance differs on how recent "clean-shaven" must be. A UK maker, citing HSE, says shaved within 8 hours of starting work. The Australian and New Zealand fit-test standard asks for a shave before a fit test, "preferably within 12 hours". Shaving shortly before you work meets both.
+- **If you keep a beard,** a loose-fitting **powered respirator** (PAPR: a hood or helmet with a fan that supplies filtered air) needs no face seal.
+- **Get the size right.** Poor fit is a major cause of leaks. Workplaces use a **fit test**, a check that a particular mask seals on a particular face. At home, we suggest following the maker's instructions for checking the seal each time you put it on.
 
 > [!NOTE]
-> Véleményünk szerint az illeszkedés fontosabb, mint az osztály: egy jól illeszkedő N95-ös, FFP2-es vagy P2-es maszk általában jobban véd, mint egy lazán álló P100-as.
+> In our view, fit matters more than class: a well-fitted N95, FFP2 or P2 will usually do better than a loose P100.
 
-### Mikor viseljen légzésvédőt
+### When to wear one
 
-A HSE szerint légzésvédőre „általában nincs szükség”, ha a bemérés és a keverés elszívással ellátott burkolatban történik, de „karbantartáshoz és takarításhoz szükség lehet rá”. A legtöbb otthoni műhelyben nincs ilyen burkolat, ezért azt javasoljuk, hogy viseljen légzésvédőt (legalább N95-öst, FFP2-est vagy P2-est; a P100-as, FFP3-as vagy P3-as jobb) minden alkalommal, amikor:
+HSE says a respirator is "normally not needed" where weighing and mixing happen in a ventilated enclosure, but "may be needed for maintenance and cleaning". Most home studios have no enclosure, so we suggest wearing one (N95, FFP2 or P2 at least; P100, FFP3 or P3 is better) whenever you:
 
-- zsákot bont vagy port önt ki;
-- port mér be és vízbe keveri;
-- száraz mázat{{en: glaze}} vagy zsengélt árut{{en: bisque}} kapar, csiszol vagy köszörül;
-- bármilyen száraz takarítást végez, vagy porszívót ürít;
-- mázat szór (szórófülkében: lásd lent).
+- open bags or tip out powder;
+- weigh powders and stir them into water;
+- scrape, sand or grind dried glaze or bisque;
+- do any dry cleanup, or empty a vacuum;
+- spray glaze (in a booth: see below).
 
-### Mi nem légzésvédő
+### What is not a respirator
 
-- A sebészi maszkok, a textilmaszkok és a NIOSH, EN 149 vagy AS/NZS 1716 jelölés nélküli, „inert por” elleni porvédő maszkok. Mázpor ellen nem hagyatkoznánk rájuk.
-- A porszűrős légzésvédő „nem véd a gázok, gőzök ellen” (OSHA), így az égetési gázok ellen semmit sem ér.
-- Gondozza a sajátját: az OSHA megjegyzi, hogy a piszkos vagy helytelenül használt légzésvédő „veszélyforrássá válhat”. Tárolja tisztán, a poros munkaruháktól távol.
+- Surgical masks, cloth masks and "nuisance dust" masks without a NIOSH, EN 149 or AS/NZS 1716 marking. We would not rely on them for glaze dust.
+- A dust respirator "will not protect you against gases, vapors" (OSHA), so it does nothing for kiln fumes.
+- Look after yours: OSHA notes that a dirty or misused respirator "can become a hazard". Store it clean, away from dusty work clothes.
 
 ## Takarítás, ruházat és kéz {#cleaning}
 
@@ -181,36 +181,36 @@ A másik megoldás az **elszívóernyő** (a kemence fölötti ernyő). A kiszö
 
 A rakuégetés sok füsttel és CO-val jár; a Utahi Egyetem azt tanácsolja, hogy a szabadban végezzék, légbeszívó nyílásoktól és ablakoktól távol. Magáról az égetésről az [Égetés egyszerű kemencében](/guides/firing) című útmutató szól.
 
-## A legnagyobb figyelmet igénylő nyersanyagok {#materials}
+## Materials that need most care {#materials lang=en}
 
-A legtöbb máznyersanyag, köztük a kvarc{{en: silica}}, az agyagok, a földpátok{{en: feldspar}} és a frittek{{en: frit}}, főként porként veszélyes, és ezt a fenti szokások kézben tartják. Egy rövidebb listán szereplő nyersanyagok önmagukban is mérgezők: belélegezve, lenyelve vagy bőrrel érintkezve. A Digitalfire hozzáteszi, hogy a színtestek{{en: stain}} általában sokkal biztonságosabbak, mint a nyers oxidok, és hogy „mérgező fémeket kioldó, kiegyensúlyozatlan mázak bármilyen nyersanyagból készülhetnek”: az, hogy egy máz{{en: glaze}} élelmiszerrel érintkezésre alkalmas-e{{en: food safe}}, az egész recepten múlik, nem egyetlen összetevőn.
+Most glaze materials, including silica, clays, feldspars and frits, are mainly a dust hazard, which the habits above control. A shorter list is toxic in its own right, by breathing, swallowing or skin contact. Digitalfire adds that stains are generally much safer than raw oxides, and that "unbalanced glazes that release toxic metals can be made from any materials": food safety depends on the whole recipe, not on one ingredient.
 
-Az **IARC-csoport** a rákkeltő hatás szerinti besorolás: az 1. csoport jelentése „az emberre rákkeltő”, a 2A csoporté „valószínűleg rákkeltő az emberre”, a 2B csoporté „lehetséges, hogy rákkeltő az emberre”, a 3. csoporté pedig „rákkeltő hatása az emberre nem besorolható”, ami azt jelenti, hogy túl kevés a bizonyíték ahhoz, hogy bármelyik irányban dönteni lehessen.
+An **IARC group** is a cancer classification: Group 1 means "carcinogenic to humans", Group 2A "probably carcinogenic to humans", Group 2B "possibly carcinogenic to humans", and Group 3 "not classifiable as to its carcinogenicity to humans", which means too little evidence to judge either way.
 
-Table: Fokozott óvatosságot igénylő máznyersanyagok
-Label: A legnagyobb figyelmet igénylő nyersanyagok
+Table: Glaze materials that need extra care
+Label: Materials that need most care
 
-| Nyersanyag                                                                           | Veszély                                                                                                                                                                                                     | Óvintézkedés                                                                                                                   |
-| ------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| Ólomvegyületek és ólomfrittek                                                        | „Belélegezve vagy lenyelve erősen mérgező”; a kemencében alacsonyabb hőmérsékleten párolog el, mint a legtöbb máznyersanyag.                                                                                | Kerülje; a Digitalfire szerint csak szakértőknek. Ha egy mázon nincs „ólommentes” jelölés, feltételezze, hogy ólmot tartalmaz. |
-| Bárium-karbonát                                                                      | Vízben oldhatatlan, de a gyomorsavban oldódik; a szívre és az izmokra hat (szabálytalan szívverés, alacsony káliumszint).                                                                                   | Báriumfritt vagy stroncium, ahol a recept megengedi; légzésvédő; felcímkézett edény.                                           |
-| Mangán-dioxid                                                                        | Pora vagy gőze általában 1–3 évnyi expozíció után **manganizmust** okozhat, amely a Parkinson-kórhoz hasonló idegrendszeri betegség. Gőze fémgőzlázat okozhat.                                              | Helyette fekete színtest kis százalékban; szellőztesse a kemencét.                                                             |
-| Kálium-dikromát és króm-oxid                                                         | A dikromátban lévő króm(VI) az IARC 1. csoportjába tartozik. Ez a besorolás nem vonatkozik a króm-oxidban lévő króm(III)-ra.                                                                                | Kerülje a dikromátot. A króm-oxidot sokkal kevésbé veszélyesnek tekintjük, de a porzását tartsa a lehető legkisebb szinten.    |
-| Kobalt                                                                               | Az oldódó kobalt(II)-sók: IARC 2A; a kobalt(II)-oxid: 2B; a fekete Co₃O₄: 3. csoport.                                                                                                                       | A porzást tartsa a lehető legkisebb szinten; feketéhez színtest.                                                               |
-| Nikkelvegyületek                                                                     | A Utahi Egyetem listáján az emberre ismerten vagy valószínűleg rákkeltő anyagok között szerepelnek.                                                                                                         | Nagy százalék helyett színtest.                                                                                                |
-| Kadmium és szelén, nyersen vagy színtestben                                          | A kadmiumvegyületek a Utahi Egyetem listáján az emberre ismerten vagy valószínűleg rákkeltő anyagok között szerepelnek.                                                                                     | „Csak szakértők kezeljék” (Digitalfire); olvassa el minden színtest biztonsági adatlapját.                                     |
-| Antimon és vanádium                                                                  | A háromértékű antimon (például az antimon-trioxidban): IARC 2A; a vanádium „belélegezve erősen mérgező”.                                                                                                    | A vanádium csak szakértőknek való; az antimon porzását tartsa a lehető legkisebb szinten.                                      |
-| Réz és cink                                                                          | A kemencében keletkező gőzük fémgőzlázat okozhat; a nyers cink-oxidot „általában nem tekintik veszélyesnek”.                                                                                                | Szellőztesse a kemencét.                                                                                                       |
-| Lítium-karbonát                                                                      | „Belélegezve erősen mérgező”. Egy uniós szakértői bizottság arra jutott, hogy károsíthatja a termékenységet és a születendő gyermeket; a hivatalos elfogadás ellenőrzésünk idején még nem volt megerősítve. | Kesztyű és légzésvédő; tartsa távol a gyerekektől. Várandósság alatt fokozott óvatosságot javaslunk.                           |
-| Bórax és bórsav                                                                      | Az EU-ban a „károsíthatja a termékenységet; károsíthatja a születendő gyermeket” besorolást kapta.                                                                                                          | Kesztyű; ahol lehet, a bórt frittből vigye be.                                                                                 |
-| Szóda (nátrium-karbonát), hamuzsír{{en: potash}} (kálium-karbonát), alkáli földpátok | Irritálják a bőrt.                                                                                                                                                                                          | Kesztyű.                                                                                                                       |
-| Folypát, kriolit, lepidolit                                                          | Égetéskor fluortartalmú gázokat bocsátanak ki; a folypát a bőrt is irritálja.                                                                                                                               | A kemencét a szabadba szellőztesse; kesztyű.                                                                                   |
-| Talkum                                                                               | 2024 júliusa óta IARC 2A; az azbeszttel szennyezett talkum azbesztnek számít, 1. csoport.                                                                                                                   | Lemezes (nem szálas), azbesztmentes talkum; nézze meg a biztonsági adatlapját.                                                 |
+| Material                               | Hazard                                                                                                                                                                                                                                       | Precaution                                                                                                  |
+| -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| Lead compounds and lead frits          | "Highly toxic by inhalation or ingestion"; vaporizes in the kiln at lower temperatures than most glaze materials.                                                                                                                            | Avoid; Digitalfire says experts only. Assume any glaze not labeled "lead-free" or "leadless" contains lead. |
+| Barium carbonate                       | Insoluble in water but dissolves in stomach acid; affects the heart and muscles (irregular heartbeat, low potassium).                                                                                                                        | A barium frit or strontium where the recipe allows; respirator; labeled container.                          |
+| Manganese dioxide                      | Dust or fume can cause **manganism**, a nervous-system illness like Parkinson's disease, usually after 1 to 3 years of exposure. Fume can cause metal fume fever.                                                                            | Black stains at low percentages instead; vent the kiln.                                                     |
+| Potassium dichromate and chrome oxide  | Chromium(VI), as in dichromate, is IARC Group 1. That listing does not cover chromium(III), as in chrome oxide.                                                                                                                              | Avoid dichromate. We treat chrome oxide as far less hazardous, but keep its dust down.                      |
+| Cobalt                                 | Soluble cobalt(II) salts IARC 2A; cobalt(II) oxide 2B; black Co₃O₄ Group 3. Cobalt carbonate is classified in the EU as may cause cancer if breathed in, may damage fertility and suspected of causing genetic defects (H350i, H360F, H341). | Keep dust down; stains for blacks.                                                                          |
+| Nickel compounds                       | Among the University of Utah's known or probable human carcinogens.                                                                                                                                                                          | Stains rather than high percentages.                                                                        |
+| Cadmium and selenium, raw or in stains | Cadmium compounds are among Utah's known or probable human carcinogens.                                                                                                                                                                      | "Only by experts" (Digitalfire); read any stain's SDS.                                                      |
+| Antimony and vanadium                  | Trivalent antimony (as in antimony trioxide) IARC 2A; vanadium "highly toxic by inhalation".                                                                                                                                                 | Vanadium for experts only; keep antimony dust down.                                                         |
+| Copper and zinc                        | Kiln fume can cause metal fume fever; raw zinc oxide is "generally not considered hazardous".                                                                                                                                                | Vent the kiln.                                                                                              |
+| Lithium carbonate                      | "Highly toxic by inhalation". An EU expert committee concluded it may harm fertility, the unborn child and breast-fed children; formal adoption was not confirmed when we checked.                                                           | Gloves and respirator; keep from children. We suggest extra care in pregnancy and while breastfeeding.      |
+| Borax and boric acid                   | Classified in the EU as "may damage fertility; may damage the unborn child".                                                                                                                                                                 | Gloves; boron from a frit where you can.                                                                    |
+| Soda ash, potash, alkaline feldspars   | Skin irritants.                                                                                                                                                                                                                              | Gloves.                                                                                                     |
+| Fluorspar, cryolite, lepidolite        | Release fluorine gases in firing; fluorspar also irritates skin.                                                                                                                                                                             | Vent the kiln outdoors; gloves.                                                                             |
+| Talc                                   | IARC 2A since July 2024; talc contaminated with asbestos counts as asbestos, Group 1.                                                                                                                                                        | Platy (not fibrous), asbestos-free talc; check its SDS.                                                     |
 
-A bórax, a bórsav, a szóda és a hamuzsír vízben oldódik, ezért ezeket tartjuk a legvalószínűbbnek arra, hogy a sérült bőrön át felszívódjanak, vagy mosatlan kézről lenyelje őket valaki.
+Borax, boric acid, soda ash and potash dissolve in water, so we treat them as the likeliest to be absorbed through broken skin or swallowed from unwashed hands.
 
 > [!NOTE]
-> Ha egy recept nyers bárium-karbonátot, sok mangánt vagy bármilyen ólom- vagy kadmiumtartalmú nyersanyagot ír elő, keressen olyan változatot, amely helyette frittet vagy színtestet használ. A Glazecalc össze tudja hasonlítani az eredeti recept és a csere utáni változat kémiáját; utána próbálja ki az új mázat.
+> If a recipe calls for raw barium carbonate, a lot of manganese, or any lead or cadmium material, look for a version that uses a frit or a stain instead. Glazecalc can compare the chemistry of the original and the swap; then test the new glaze.
 
 ## Kesztyű, bőr és szem {#gloves-and-eyes}
 
@@ -252,21 +252,23 @@ Ezeket az elsődleges forrásokat a leginkább érdemes elolvasni. A legtöbbjü
 - **Új-Zéland:** a WorkSafe New Zealand határozza meg a munkahelyi expozíciós standardokat; az MBIE [áttekintése a szilícium-dioxid-standard történetéről](https://mbie.govt.nz/building-and-energy/building/building-and-construction-consultations/work-with-engineered-stone-and-materials-containing-crystalline-silica/annex-iii) megadja a dátumokat.
 - **Kemencék:** a Skutt [útmutatója a kemencehelyiség kialakításáról](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Designing-A-Kiln-Room-1.pdf), [az Orton és a CCSA tájékoztatója az égetési gázokról](https://assets.noviams.com/novi-file-uploads/ccsa/Product_Safety/Fumes.pdf), és mindenekelőtt a saját kemencéje kezelési útmutatója.
 
-## Források {#sources}
+## Sources {#sources lang=en}
 
 - [OSHA: 29 CFR 1910.1053, Respirable crystalline silica](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.1053)
 - [OSHA: 29 CFR 1910.134 Appendix D, Information for employees using respirators when not required](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.134AppD)
 - [OSHA: 29 CFR 1910.1200 Appendix D, Safety data sheets](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.1200AppD)
-- [NIOSH: Silicosis alert (kiadvány: 92-107)](https://www.cdc.gov/niosh/docs/92-107)
+- [NIOSH: Silicosis alert (publication 92-107)](https://www.cdc.gov/niosh/docs/92-107)
 - [HSE: COSHH essentials CR1, Glaze and colour preparation](https://www.hse.gov.uk/PUBNS/guidance/cr1.pdf)
 - [HSE: COSHH essentials CR5, Spraying glazes and colours](https://www.hse.gov.uk/PUBNS/guidance/cr5.pdf)
 - [HSE: Fit testing basics](https://www.hse.gov.uk/respiratory-protective-equipment/fit-testing-basics.htm)
 - [Safe Work Australia: Research on a lower workplace exposure standard for respirable crystalline silica](https://www.safeworkaustralia.gov.au/safety-topic/hazards/crystalline-silica-and-silicosis/research-lower-workplace-exposure-standard-respirable-crystalline-silica-0)
 - [Enviliance: Report 16612, Australia's June 2026 decision on the silica exposure standard](https://enviliance.com/regions/oceania/au/report_16612)
-- [MBIE (Új-Zéland): Work with engineered stone and materials containing crystalline silica, Annex III](https://mbie.govt.nz/building-and-energy/building/building-and-construction-consultations/work-with-engineered-stone-and-materials-containing-crystalline-silica/annex-iii)
+- [MBIE (New Zealand): Work with engineered stone and materials containing crystalline silica, Annex III](https://mbie.govt.nz/building-and-energy/building/building-and-construction-consultations/work-with-engineered-stone-and-materials-containing-crystalline-silica/annex-iii)
 - [IARC: Monographs Volume 100C](https://publications.iarc.who.int/120)
 - [IARC: Volume 131, Cobalt, antimony compounds and weapons-grade tungsten alloy](https://monographs.iarc.who.int/news-events/volume-131-cobalt-antimony-compounds-and-weapons-grade-tungsten-alloy)
 - [Science Media Centre Spain: IARC classifies talc (2024)](https://sciencemediacentre.es/en/node/3775)
+- [ECHA: Risk Assessment Committee opinion on lithium carbonate, chloride and hydroxide (2021, PDF)](https://echa.europa.eu/documents/10162/e2a3c38e-85fe-505c-a325-293c70a74da5)
+- [PubChem: Cobalt carbonate, GHS classification, including its EU harmonised one](https://pubchem.ncbi.nlm.nih.gov/compound/10565#section=GHS-Classification)
 - [ECHA: Risk Assessment Committee document on boric acid and borates](https://echa.europa.eu/documents/10162/7d740d8c-5cd5-872b-5da2-e549983a9ff9)
 - [Coslaw: EU introduces new CMR classifications under the 24th ATP to the CLP Regulation](https://coslaw.eu/eu-introduces-new-cmr-classifications-under-the-24th-atp-to-the-clp-regulation/)
 - [University of Utah EHS: Arts safety: ceramics](https://www.ehs.utah.edu/guidelines/arts-safety-ceramics/)
@@ -275,8 +277,9 @@ Ezeket az elsődleges forrásokat a leginkább érdemes elolvasni. A legtöbbjü
 - [Digitalfire: Kiln fumes](https://digitalfire.com/glossary/kiln+fumes)
 - [Digitalfire: Barium and compounds toxicology](https://digitalfire.com/hazard/barium+and+compounds+toxicology)
 - [Digitalfire: Manganese inorganic compounds toxicology](https://digitalfire.com/hazard/manganese+inorganic+compounds+toxicology)
+- [JSP: What levels of protection do particulate filters provide?](https://jspsafety.helpjuice.com/en_GB/what-levels-of-protection-do-particulate-filters-provide)
 - [JSP: Why is a clean shave essential for a proper tight-fitting respirator seal?](https://jspsafety.helpjuice.com/en_GB/why-is-a-clean-shave-essential-for-a-proper-tight-fitting-respirator-seal-can-i-have-a-beard)
 - [Skutt: Kiln room design and product specifications](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Designing-A-Kiln-Room-1.pdf)
 - [CIRMA: Kiln safety bulletin (2025)](https://downloads.ccm-ct.org/pdf/Media-Library-Bulletins/KilnSafety-Bulletin-052825.pdf)
 - [Ceramic Arts Network: Dave Finkelnburg, How and why to use a kiln vent](https://ceramicartsnetwork.org/daily/article/How-and-Why-to-Use-a-Kiln-Vent)
-- [CCSA és Orton: What is so bad about fumes?](https://assets.noviams.com/novi-file-uploads/ccsa/Product_Safety/Fumes.pdf)
+- [CCSA and Orton: What is so bad about fumes?](https://assets.noviams.com/novi-file-uploads/ccsa/Product_Safety/Fumes.pdf)

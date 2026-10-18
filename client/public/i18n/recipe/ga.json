@@ -469,7 +469,6 @@
     "expansionRises": "Ardaíonn a fhorbairt theirmeach ríofa ó {was} go {now}.",
     "expansionRisesProbably": "Más ar éigean a d’oir an seanghlónra do do chré, is dócha go snáithlíonróidh an ceann seo, uaireanta seachtainí ina dhiaidh sin.",
     "expansionRisesMay": "Más ar éigean a d’oir an seanghlónra do do chré, d’fhéadfadh an ceann seo snáithlíonrú, uaireanta seachtainí ina dhiaidh sin.",
-    "expansionRisesFix": "Laghdaíonn snáithlíonrú neart na bpotaí agus ní mholtar é ar dhromchlaí a mbíonn bia orthu. Íslíonn níos lú sóide agus potaise í, nó níos mó bóróin, silice nó alúmana.",
     "expansionFalls": "Titeann a fhorbairt theirmeach ríofa ó {was} go {now}. Is gnách gur fearr a sheasann forbairt atá beagán níos ísle in aghaidh an tsnáithlíonraithe.",
     "expansionFallsProbably": "Le forbairt i bhfad níos ísle, is dócha go dtarlóidh spallú glónra, le slisní géara ag scealpadh de na béil agus de na himill.",
     "expansionFallsCan": "Le forbairt i bhfad níos ísle, is féidir go dtarlóidh spallú glónra, le slisní géara ag scealpadh de na béil agus de na himill.",

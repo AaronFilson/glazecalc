@@ -90,8 +90,7 @@
     "advice": "A Glazecalc gyakorlati tanácsai a keveréshez, a mázazáshoz és az égetéshez, mellettük saját tanácsaival. Ingyenes fazekasoknak és keramikusoknak.",
     "about": "A Glazecalc ingyenes, nyílt forráskódú mázkémiai kalkulátor és műhelyfüzet. Nézze meg, hogyan számítja ki a Seger-képletet (UMF), és hogyan épül fel.",
     "privacy": "Hogyan kezeli a Glazecalc az adatait: nincs reklám, nincs analitika, nincs követés, és semmit nem ad el. Mit őriz meg, miért, és hogyan élhet a jogaival.",
-    "signup": "Hozzon létre ingyenes Glazecalc-fiókot, hogy megőrizze mázreceptjeit, nyersanyagait, jegyzeteit és égetési naplóit. Nincs reklám, és adatait soha nem adjuk el.",
-    "imageAlt": "Glazecalc: értse meg a mázait, ne csak keverje őket."
+    "signup": "Hozzon létre ingyenes Glazecalc-fiókot, hogy megőrizze mázreceptjeit, nyersanyagait, jegyzeteit és égetési naplóit. Nincs reklám, és adatait soha nem adjuk el."
   },
   "notices": {
     "dismiss": "Bezárás",
@@ -286,7 +285,6 @@
     "close": "Bezárás"
   },
   "unity": {
-    "fluxes": "Olvasztóanyagok – RO",
     "stabilizers": "Stabilizálók – R₂O₃",
     "glassFormers": "Üvegképzők – RO₂",
     "wildcards": "Egyéb oxidok",

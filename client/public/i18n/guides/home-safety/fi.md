@@ -30,34 +30,34 @@ Suosittelemme tallentamaan oman maan numerot puhelimeen jo tänään ja kirjoitt
 
 Sairaalaan lähdettäessä NHS kehottaa ottamaan mukaan pakkauksen tai näytteen, jos sen voi tehdä turvallisesti. Lasiteraaka-aineen kohdalla se tarkoittaa pussin etikettiä tai käyttöturvallisuustiedotetta.
 
-## Vaarallisimmat raaka-aineet nieltyinä {#most-dangerous}
+## What is most dangerous to swallow {#most-dangerous lang=en}
 
-Lasiteraaka-aineet{{en: glaze materials}} voivat vahingoittaa perhettä kahdella eri tavalla:
+Glaze materials can harm a family in two different ways:
 
-- **Akuutti** vaara (yhden annoksen aiheuttama haitta tuntien kuluessa) on **liukenevan** raaka-aineen eli veteen tai mahahappoon liukenevan aineen nieleminen. Sen varalle ovat lukittu säilytys ja yllä olevat numerot.
-- **Krooninen** vaara (monen pienen annoksen aiheuttama haitta) on pöly, lähinnä kvartsi{{en: silica}} ja lyijy, joka ei aluksi aiheuta oireita ja kulkeutuu kotiin vaatteissa. Sen varalle ovat hyvät siisteystavat.
+- The **acute** danger (harm from one dose, within hours) is swallowing a **soluble** material, one that dissolves in water or stomach acid. Locked storage and the numbers above deal with it.
+- The **chronic** danger (harm from many small doses) is dust, mainly silica and lead, which causes no symptoms at first and travels home on clothes. Clean habits deal with it.
 
-Lasite on enimmäkseen kvartsia, kaoliinia{{en: kaolin}} ja maasälpää{{en: feldspar}}, jotka liukenevat tuskin lainkaan. Pidämme niitä pitkäaikaisena hengitysvaarana emmekä nielemiseen liittyvänä hätätilanteena. Alla olevat liukenevat raaka-aineet lukitaan talteen ensimmäisinä.
+Most of a glaze is silica, kaolin and feldspar, which barely dissolve. We treat them as a long-term breathing hazard rather than a swallowing emergency. The soluble materials below are the ones to lock away first.
 
-Table: Liukenevat lasiteraaka-aineet: vaikutukset nieltyinä
-Label: Liukenevat raaka-aineet
+Table: Soluble glaze materials: what they do if swallowed
+Label: Soluble materials
 
-| Raaka-aine                 | Vaikutus                                                                                                                                                                                                                                                                                                                                                   | Raportoidut annokset                                                                                                                                                                                                                                                                                                                                              |
-| -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Bariumkarbonaatti          | Myytiin aikoinaan rotanmyrkkynä. Se liukenee veteen tuskin lainkaan mutta liukenee happoon, joten pidä sitä nieltynä liukenevana. Barium laskee veren kaliumpitoisuutta, mikä aiheuttaa oksentelua, ripulia ja lihasheikkoutta, joka voi edetä halvaukseen, hengitysvajaukseen ja sydämen rytmihäiriöihin. Oireet alkavat tyypillisesti 2 tunnin kuluessa. | Lähteet ovat eri mieltä. Vuoden 2025 lääketieteellinen katsaus raportoi kuolemia bariumkloridista, joka on liukeneva bariumsuola, jo 0,8–0,9 g:n annoksilla. Akuuttilääketieteen hakuteos antaa bariumsuolojen tappavaksi annokseksi 1–30 g, ja haittaa voi aiheutua jo noin 200 mg:sta. Yksikään lähde ei anna lukua lapsille, joten soita määrästä riippumatta. |
-| Booraksi ja boorihappo     | Ensin tulevat pahoinvointi, oksentelu, ripuli ja vatsakipu; oksennus ja uloste voivat olla sinivihreitä. Vakavissa tapauksissa ilmenee kirkkaanpunainen ihottuma, joka myöhemmin kesii, kouristuksia, munuaisvaurio ja sokki.                                                                                                                              | Pienimmät tappavat annokset karkeasti: vauvalle 2–3 g, lapselle 5–6 g. Yhdessä 784 nielemistapausta käsittäneessä katsauksessa vain 12 % aiheutti oireita eikä yksikään johtanut kuolemaan, mutta kuolemia sattuu, eikä vastalääkettä ole.                                                                                                                        |
-| Litiumkarbonaatti          | Lapsella, joka painoi 15 kg (33 lb) ja nieli 300 mg, oli lyhyen aikaa tahattomia lihaskouristuksia ja ylivilkkaita refleksejä (akuutti dystonia ja hyperrefleksia), jotka menivät ohi.                                                                                                                                                                     | Pienistä lapsista on kirjoitettu vähän. Määrä 300 mg on paljon vähemmän kuin lusikallinen jauhetta.                                                                                                                                                                                                                                                               |
-| Sooda (natriumkarbonaatti) | Liukenee helposti veteen. Emme löytäneet luotettavia tietoja siitä, miten se vaikuttaa lapseen.                                                                                                                                                                                                                                                            | Ei löytynyt. Soita määrästä riippumatta.                                                                                                                                                                                                                                                                                                                          |
-| Kaliumdikromaatti          | Kromia sisältävä väriaine{{en: colorant}}, jota käytetään joissakin resepteissä. Sen käyttöturvallisuustiedote varoittaa, että se ”voi olla tappavaa nieltynä”, aiheuttaa syöpymiä ruoansulatuskanavassa ja voi vaurioittaa munuaisia.                                                                                                                     | Ei vahvistettu, ja käyttöturvallisuustiedotteet ovat eri mieltä siitä, kuinka myrkyllistä se on.                                                                                                                                                                                                                                                                  |
+| Material                    | What it does                                                                                                                                                                                                                                                                                                                                 | Reported doses                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Barium carbonate            | Once sold as rat poison. It barely dissolves in water but does dissolve in acid, so treat it as soluble once swallowed. Barium drives down the potassium in the blood, causing vomiting, diarrhea and muscle weakness that can progress to paralysis, breathing failure and an irregular heartbeat. Symptoms typically begin within 2 hours. | Sources disagree. A WHO review estimates the lethal dose of barium absorbed from the gut at 3 to 4 g in untreated cases, with toxic effects from 0.2 to 0.5 g, and lists a lowest reported lethal dose of barium chloride, a soluble barium salt, of 11.4 mg per kg of body weight. An emergency-medicine reference gives a lethal range of 1 to 30 g for barium salts, with harm possibly from about 200 mg. None gives a figure for children, so call for any amount. |
+| Borax and boric acid        | Nausea, vomiting, diarrhea and stomach pain come first; vomit and stool may be blue-green. Severe cases bring a bright red rash that later peels, seizures, kidney injury and shock.                                                                                                                                                         | Rough lowest lethal doses: 2 to 3 g for an infant, 5 to 6 g for a child. In one review of 784 swallowings, only 12% caused symptoms and none were fatal, but deaths do happen, and there is no antidote.                                                                                                                                                                                                                                                                |
+| Lithium carbonate           | A child weighing 15 kg (33 lb) who swallowed 300 mg had a short spell of involuntary muscle spasms and overactive reflexes (acute dystonia and hyperreflexia), which passed.                                                                                                                                                                 | Little has been written about young children. 300 mg is far less than a spoonful of powder.                                                                                                                                                                                                                                                                                                                                                                             |
+| Soda ash (sodium carbonate) | Dissolves readily in water. We found no reliable figures for what it does to a child.                                                                                                                                                                                                                                                        | None found. Call for any amount.                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| Potassium dichromate        | A chrome colorant used in some recipes. Fisher Scientific's safety data sheet warns that it "May be fatal if swallowed", causes burns in the gut and may damage the kidneys. The same sheet warns that it "May be fatal if inhaled" and may cause cancer, and of a "possible risk of harm to the unborn child".                              | Not established, and safety data sheets disagree on how toxic it is.                                                                                                                                                                                                                                                                                                                                                                                                    |
 
 > [!NOTE]
-> Nämä haitalliset määrät vaihtelevat muutamasta sadasta milligrammasta muutamaan grammaan. Lasiteraaka-aineita myydään paunoittain tai kiloittain, joten yhdessä avatussa pussissa tai ämpärissä on paljon enemmän kuin taaperon vahingoittamiseen tarvitaan.
+> These harmful amounts run from a few hundred milligrams to a few grams. Glaze materials are sold by the pound or kilogram, so one open bag or bucket holds far more than enough to harm a toddler.
 
-### Väriaineet ja lyijy
+### Colorants and lead
 
-**Väriaineet** ovat metallioksideja ja väripigmenttejä{{en: stains}}, jotka antavat lasitteelle sen värin: kupari, koboltti, kromi, mangaani, nikkeli, kadmium-seleenipigmentit ja muut. Erään yliopiston keramiikan turvallisuussivu mainitsee lyijyn, kadmiumin, koboltin ja kromin erityisen vaarallisten lasiteainesosien joukossa. Emme löytäneet luotettavia annostietoja mistään väriaineesta, joten soita määrästä riippumatta. Ämpärissä oleva sekoitettu lasite sisältää samat raaka-aineet kuin pussit, joista se on tehty, vain märkinä.
+**Colorants** are the metal oxides and stains that give a glaze its color: copper, cobalt, chrome, manganese, nickel, cadmium-selenium stains and others. A university ceramics safety page names lead, cadmium, cobalt and chromium among the especially hazardous glaze ingredients. We found no reliable dose figures for any colorant, so call for any amount. A bucket of mixed glaze holds the same materials as the bags it came from, only wet.
 
-Lyijyn pääasiallinen vaara on toisenlainen: ei yksi lusikallinen, vaan pienet määrät pölyä, jotka niellään viikkojen tai kuukausien kuluessa ilman varoitusmerkkejä (ks. jäljempänä Lyijy ja lapset).
+Lead's main danger is different: not one spoonful, but small amounts of dust swallowed over weeks or months, with no warning signs (see Lead and children, below).
 
 ## Raaka-aineiden säilyttäminen kotona {#storing-materials}
 
@@ -220,41 +220,43 @@ Kotitestit ovat kiistanalaisia. FDA:n mukaan kotikäyttöön tarkoitetut pyyhkä
 
 Lisää siitä, miten lasitteet sulavat, miksi joistakin liukenee metalleja ja mitä raja-arvot tarkoittavat, kerrotaan oppaassa [Lasittamisen perusteet](/guides/glazing-basics).
 
-## Lähteet {#sources}
+## Sources {#sources lang=en}
 
 - [America's Poison Centers: Poison Help](https://poisoncenters.org/)
 - [Poison Control (poison.org): webPOISONCONTROL](https://www.poison.org/)
 - [NHS: Poisoning](https://www.nhs.uk/conditions/poisoning/)
-- [National Poisons Information Service (Iso-Britannia)](https://www.npis.org/)
+- [National Poisons Information Service (UK)](https://www.npis.org/)
 - [National Poisons Information Centre of Ireland: Public Poisons Line](https://www.poisons.ie/)
 - [European Commission: 112, the European emergency number](https://digital-strategy.ec.europa.eu/en/policies/112)
 - [healthdirect: Poisoning](https://www.healthdirect.gov.au/poisoning)
-- [National Poisons Centre (Uusi-Seelanti)](https://www.poisons.co.nz/)
+- [National Poisons Centre (New Zealand)](https://www.poisons.co.nz/)
 - [ASPCA: Animal Poison Control](https://www.aspca.org/pet-care/animal-poison-control)
 - [Pet Poison Helpline](https://www.petpoisonhelpline.com/)
-- [Animal PoisonLine (Iso-Britannia)](https://www.animalpoisonline.co.uk/)
-- [Animal Poisons Helpline (Australia ja Uusi-Seelanti)](https://animalpoisons.com.au/)
-- [PubMed Central: Acute soluble barium poisoning, a review (2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC11700400)
+- [Animal PoisonLine (UK)](https://www.animalpoisonline.co.uk/)
+- [Animal Poisons Helpline (Australia and New Zealand)](https://animalpoisons.com.au/)
+- [PubMed Central: Non-fatal acute barium carbonate poisoning, a case report (2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC11700400)
+- [WHO IPCS: Environmental Health Criteria 107, Barium (1990)](https://www.inchem.org/documents/ehc/ehc/ehc107.htm)
+- [Fisher Scientific: Potassium dichromate safety data sheet (2007)](https://fscimage.fishersci.com/msds/19370.htm)
 - [WikEM: Boron toxicity](https://wikem.org/wiki/Boron_toxicity)
-- [NPIC ja US EPA: Recognition and Management of Pesticide Poisonings, luku 9 (PDF)](https://www.npic.orst.edu/RMPP/rmpp_ch9.pdf)
+- [NPIC and US EPA: Recognition and Management of Pesticide Poisonings, chapter 9 (PDF)](https://www.npic.orst.edu/RMPP/rmpp_ch9.pdf)
 - [medlibrary.org: Lithium carbonate prescribing information](https://medlibrary.org/lib/rx/meds/lithium-carbonate-16/page/2/)
 - [CDC: About Lead in Jobs, Hobbies, or Other Activities](https://cdc.gov/lead-prevention/prevention/jobs-hobbies-activities.html)
 - [CDC: Blood Lead Reference Value](https://www.cdc.gov/nceh/lead/data/blood-lead-reference-value.htm)
-- [US EPA: lasten terveyttä käsittelevä esite (2018, PDF)](https://19january2021snapshot.epa.gov/sites/static/files/2018-10/documents/childrenshealthbooklet2018_final-4_newlinks.pdf)
+- [US EPA: Children's health booklet (2018, PDF)](https://19january2021snapshot.epa.gov/sites/static/files/2018-10/documents/childrenshealthbooklet2018_final-4_newlinks.pdf)
 - [Pennsylvania Department of Health: Non-Occupational Lead Exposure (PDF)](https://www.health.pa.gov:443/topics/Documents/Environmental%20Health/Non-Occupational%20Lead%20Exposure.pdf)
 - [Western Carolina University: Ceramics Safety](https://www.wcu.edu/discover/campus-services-and-operations/facilities-management/safety-and-risk-management/visual-arts-theatre-safety/ceramics-safety.aspx)
-- [Crafts Council (Iso-Britannia): How to make your pottery practice greener](https://craftscouncil.org.uk/stories/how-make-your-pottery-practice-greener)
+- [Crafts Council (UK): How to make your pottery practice greener](https://craftscouncil.org.uk/stories/how-make-your-pottery-practice-greener)
 - [Pet Poison Helpline: Lead](https://www.petpoisonhelpline.com/poison/lead/)
 - [Vet Candy: Sparkler ingestion results in barium toxicity](https://www.myvetcandy.com/clinicalupdblog/2019/3/15/sparkler-ingestion-results-in-barium-toxicity)
 - [University of Illinois College of Veterinary Medicine: Bird toxins](https://vetmed.illinois.edu/pet-health-columns/bird-toxins-teflon-avocado-lead-zinc/)
 - [Skutt: Designing a Kiln Room (PDF)](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Designing-A-Kiln-Room-1.pdf)
-- [Kiln Management, koulujen uuniopas (PDF)](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Kiln-Management-1.pdf)
+- [Kiln Management guide for schools (PDF)](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Kiln-Management-1.pdf)
 - [L&L Kiln: Front-loader installation checklist (PDF)](https://www.theceramicshop.com/downloads/LLFLChecklist.pdf)
 - [Rio Grande: PMC Kilns Handbook (PDF)](https://products.riogrande.com/content/Instruction-Sheets/RioGrande-PMC-Kilns-Handbook-IS.pdf)
-- [Dawson: Kiln-Sitter LT-3 -käyttöohje (PDF)](https://oud.klei.nl/forum/bestanden/f675ae4a-d890-4b8b-a08e-173e652f25a6/KilnSitter%20lt3%20en%20lt3k.pdf)
+- [Dawson: Kiln-Sitter LT-3 manual (PDF)](https://oud.klei.nl/forum/bestanden/f675ae4a-d890-4b8b-a08e-173e652f25a6/KilnSitter%20lt3%20en%20lt3k.pdf)
 - [Ceramic Arts Network: In the Studio, Eye Health for Potters](https://ceramicartsnetwork.org/pottery-making-illustrated/pottery-making-illustrated-article/In-the-Studio-Eye-Health-for-Potters)
 - [FDA: Questions and Answers on Lead-Glazed Traditional Pottery](https://www.fda.gov/food/environmental-contaminants-food/questions-and-answers-lead-glazed-traditional-pottery)
-- [FDA: Compliance Policy Guide 545.450, lyijy keramiikassa (PDF)](https://www.fda.gov/media/71764/download)
+- [FDA: Compliance Policy Guide 545.450, lead in pottery (PDF)](https://www.fda.gov/media/71764/download)
 - [Digitalfire: Food Safe](https://digitalfire.com/glossary/food+safe)
 - [Ceramics NZ: Is it food safe?](https://ceramicsnz.org/news/is-it-food-safe/)
 - [Ceramic Arts Network: Techno File, Dirty Dishes](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/Techno-File-Dirty-Dishes)

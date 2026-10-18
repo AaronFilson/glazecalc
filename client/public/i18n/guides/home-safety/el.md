@@ -30,34 +30,34 @@ lead: Τι να κάνετε αν ένα παιδί ή ένα κατοικίδι
 
 Αν πάτε στο νοσοκομείο, το NHS λέει να πάρετε μαζί σας τη συσκευασία ή ένα δείγμα, αν μπορείτε να το κάνετε με ασφάλεια. Για μια πρώτη ύλη υαλωμάτων, αυτό σημαίνει την ετικέτα του σακιού ή το δελτίο δεδομένων ασφαλείας.
 
-## Τι είναι πιο επικίνδυνο στην κατάποση {#most-dangerous}
+## What is most dangerous to swallow {#most-dangerous lang=en}
 
-Οι πρώτες ύλες υαλωμάτων μπορούν να βλάψουν μια οικογένεια με δύο διαφορετικούς τρόπους:
+Glaze materials can harm a family in two different ways:
 
-- Ο **οξύς** κίνδυνος (βλάβη από μία δόση, μέσα σε ώρες) είναι η κατάποση ενός **διαλυτού** υλικού, δηλαδή ενός υλικού που διαλύεται στο νερό ή στο οξύ του στομάχου. Αυτόν τον κίνδυνο τον αντιμετωπίζουν η φύλαξη κάτω από κλειδί και οι αριθμοί παραπάνω.
-- Ο **χρόνιος** κίνδυνος (βλάβη από πολλές μικρές δόσεις) είναι η σκόνη, κυρίως πυριτικού{{en: silica}} και μολύβδου, που στην αρχή δεν προκαλεί συμπτώματα και φτάνει στο σπίτι πάνω στα ρούχα. Αυτόν τον αντιμετωπίζουν οι καλές συνήθειες καθαριότητας.
+- The **acute** danger (harm from one dose, within hours) is swallowing a **soluble** material, one that dissolves in water or stomach acid. Locked storage and the numbers above deal with it.
+- The **chronic** danger (harm from many small doses) is dust, mainly silica and lead, which causes no symptoms at first and travels home on clothes. Clean habits deal with it.
 
-Το μεγαλύτερο μέρος ενός υαλώματος{{en: glaze}} είναι πυριτικό, καολίνης{{en: kaolin}} και άστριος{{en: feldspar}}, που σχεδόν δεν διαλύονται. Τα αντιμετωπίζουμε ως μακροχρόνιο κίνδυνο για την αναπνοή και όχι ως επείγον περιστατικό κατάποσης. Τα διαλυτά υλικά που ακολουθούν είναι αυτά που κλειδώνετε πρώτα.
+Most of a glaze is silica, kaolin and feldspar, which barely dissolve. We treat them as a long-term breathing hazard rather than a swallowing emergency. The soluble materials below are the ones to lock away first.
 
-Table: Διαλυτές πρώτες ύλες υαλωμάτων: τι προκαλούν αν καταποθούν
-Label: Διαλυτά υλικά
+Table: Soluble glaze materials: what they do if swallowed
+Label: Soluble materials
 
-| Υλικό                       | Τι προκαλεί                                                                                                                                                                                                                                                                                                                                                               | Δόσεις που έχουν αναφερθεί                                                                                                                                                                                                                                                                                                                                                            |
-| --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Ανθρακικό βάριο             | Κάποτε πουλιόταν ως ποντικοφάρμακο. Σχεδόν δεν διαλύεται στο νερό, αλλά διαλύεται στα οξέα, οπότε, μόλις καταποθεί, να το θεωρείτε διαλυτό. Το βάριο ρίχνει το κάλιο στο αίμα και προκαλεί εμετό, διάρροια και μυϊκή αδυναμία, που μπορεί να εξελιχθεί σε παράλυση, αναπνευστική ανεπάρκεια και ακανόνιστο καρδιακό ρυθμό. Τα συμπτώματα συνήθως αρχίζουν μέσα σε 2 ώρες. | Οι πηγές διαφωνούν. Μια ιατρική ανασκόπηση του 2025 αναφέρει θανάτους από χλωριούχο βάριο, ένα διαλυτό άλας του βαρίου, σε δόσεις τόσο μικρές όσο 0,8 έως 0,9 g. Ένα βιβλίο αναφοράς επείγουσας ιατρικής δίνει θανατηφόρο εύρος 1 έως 30 g για τα άλατα του βαρίου, με πιθανή βλάβη από περίπου 200 mg. Καμία πηγή δεν δίνει τιμή για παιδιά, οπότε καλέστε για οποιαδήποτε ποσότητα. |
-| Βόρακας και βορικό οξύ      | Πρώτα εμφανίζονται ναυτία, εμετός, διάρροια και πόνος στο στομάχι. Ο εμετός και τα κόπρανα μπορεί να είναι γαλαζοπράσινα. Στις σοβαρές περιπτώσεις εμφανίζονται έντονο κόκκινο εξάνθημα που αργότερα ξεφλουδίζει, σπασμοί, νεφρική βλάβη και σοκ.                                                                                                                         | Κατά προσέγγιση ελάχιστες θανατηφόρες δόσεις: 2 έως 3 g για βρέφος, 5 έως 6 g για παιδί. Σε μια ανασκόπηση 784 περιστατικών κατάποσης, μόνο το 12% προκάλεσε συμπτώματα και κανένα δεν ήταν θανατηφόρο, όμως θάνατοι συμβαίνουν, και δεν υπάρχει αντίδοτο.                                                                                                                            |
-| Ανθρακικό λίθιο             | Ένα παιδί βάρους 15 kg (33 lb) που κατάπιε 300 mg είχε για λίγη ώρα ακούσιους μυϊκούς σπασμούς και υπερβολικά έντονα αντανακλαστικά (οξεία δυστονία και υπεραντανακλαστικότητα), που πέρασαν.                                                                                                                                                                             | Λίγα έχουν γραφτεί για τα μικρά παιδιά. Τα 300 mg είναι πολύ λιγότερα από μια κουταλιά σκόνη.                                                                                                                                                                                                                                                                                         |
-| Ανθρακικό νάτριο (soda ash) | Διαλύεται εύκολα στο νερό. Δεν βρήκαμε αξιόπιστα στοιχεία για το τι προκαλεί σε ένα παιδί.                                                                                                                                                                                                                                                                                | Δεν βρέθηκαν. Καλέστε για οποιαδήποτε ποσότητα.                                                                                                                                                                                                                                                                                                                                       |
-| Διχρωμικό κάλιο             | Χρωστική{{en: colorant}} χρωμίου που χρησιμοποιείται σε ορισμένες συνταγές. Το δελτίο δεδομένων ασφαλείας του προειδοποιεί ότι «Μπορεί να προκαλέσει θάνατο σε περίπτωση κατάποσης», ότι προκαλεί εγκαύματα στο πεπτικό σύστημα και ότι μπορεί να βλάψει τα νεφρά.                                                                                                        | Δεν έχουν προσδιοριστεί, και τα δελτία δεδομένων ασφαλείας διαφωνούν για το πόσο τοξικό είναι.                                                                                                                                                                                                                                                                                        |
+| Material                    | What it does                                                                                                                                                                                                                                                                                                                                 | Reported doses                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Barium carbonate            | Once sold as rat poison. It barely dissolves in water but does dissolve in acid, so treat it as soluble once swallowed. Barium drives down the potassium in the blood, causing vomiting, diarrhea and muscle weakness that can progress to paralysis, breathing failure and an irregular heartbeat. Symptoms typically begin within 2 hours. | Sources disagree. A WHO review estimates the lethal dose of barium absorbed from the gut at 3 to 4 g in untreated cases, with toxic effects from 0.2 to 0.5 g, and lists a lowest reported lethal dose of barium chloride, a soluble barium salt, of 11.4 mg per kg of body weight. An emergency-medicine reference gives a lethal range of 1 to 30 g for barium salts, with harm possibly from about 200 mg. None gives a figure for children, so call for any amount. |
+| Borax and boric acid        | Nausea, vomiting, diarrhea and stomach pain come first; vomit and stool may be blue-green. Severe cases bring a bright red rash that later peels, seizures, kidney injury and shock.                                                                                                                                                         | Rough lowest lethal doses: 2 to 3 g for an infant, 5 to 6 g for a child. In one review of 784 swallowings, only 12% caused symptoms and none were fatal, but deaths do happen, and there is no antidote.                                                                                                                                                                                                                                                                |
+| Lithium carbonate           | A child weighing 15 kg (33 lb) who swallowed 300 mg had a short spell of involuntary muscle spasms and overactive reflexes (acute dystonia and hyperreflexia), which passed.                                                                                                                                                                 | Little has been written about young children. 300 mg is far less than a spoonful of powder.                                                                                                                                                                                                                                                                                                                                                                             |
+| Soda ash (sodium carbonate) | Dissolves readily in water. We found no reliable figures for what it does to a child.                                                                                                                                                                                                                                                        | None found. Call for any amount.                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| Potassium dichromate        | A chrome colorant used in some recipes. Fisher Scientific's safety data sheet warns that it "May be fatal if swallowed", causes burns in the gut and may damage the kidneys. The same sheet warns that it "May be fatal if inhaled" and may cause cancer, and of a "possible risk of harm to the unborn child".                              | Not established, and safety data sheets disagree on how toxic it is.                                                                                                                                                                                                                                                                                                                                                                                                    |
 
 > [!NOTE]
-> Αυτές οι επιβλαβείς ποσότητες κυμαίνονται από μερικές εκατοντάδες χιλιοστόγραμμα έως μερικά γραμμάρια. Οι πρώτες ύλες υαλωμάτων πωλούνται με τη λίβρα ή με το κιλό, οπότε ένα ανοιχτό σακί ή ένας κουβάς περιέχει πολύ περισσότερα από όσα χρειάζονται για να βλάψουν ένα νήπιο.
+> These harmful amounts run from a few hundred milligrams to a few grams. Glaze materials are sold by the pound or kilogram, so one open bag or bucket holds far more than enough to harm a toddler.
 
-### Χρωστικές και μόλυβδος
+### Colorants and lead
 
-Οι **χρωστικές** είναι τα οξείδια μετάλλων και τα στέιν{{en: stains}} που δίνουν στο υάλωμα το χρώμα του: χαλκός, κοβάλτιο, χρώμιο, μαγγάνιο, νικέλιο, στέιν καδμίου-σεληνίου και άλλα. Η σελίδα ενός πανεπιστημίου για την ασφάλεια στην κεραμική κατατάσσει τον μόλυβδο, το κάδμιο, το κοβάλτιο και το χρώμιο στα ιδιαίτερα επικίνδυνα συστατικά των υαλωμάτων. Δεν βρήκαμε αξιόπιστα στοιχεία για δόσεις για καμία χρωστική, οπότε καλέστε για οποιαδήποτε ποσότητα. Ένας κουβάς με ανακατεμένο υάλωμα περιέχει τα ίδια υλικά με τα σακιά από τα οποία φτιάχτηκε, απλώς υγρά.
+**Colorants** are the metal oxides and stains that give a glaze its color: copper, cobalt, chrome, manganese, nickel, cadmium-selenium stains and others. A university ceramics safety page names lead, cadmium, cobalt and chromium among the especially hazardous glaze ingredients. We found no reliable dose figures for any colorant, so call for any amount. A bucket of mixed glaze holds the same materials as the bags it came from, only wet.
 
-Ο κύριος κίνδυνος του μολύβδου είναι διαφορετικός: όχι μία κουταλιά, αλλά μικρές ποσότητες σκόνης που καταπίνονται επί εβδομάδες ή μήνες, χωρίς προειδοποιητικά σημάδια (δείτε «Ο μόλυβδος και τα παιδιά» πιο κάτω).
+Lead's main danger is different: not one spoonful, but small amounts of dust swallowed over weeks or months, with no warning signs (see Lead and children, below).
 
 ## Φύλαξη των υλικών στο σπίτι {#storing-materials}
 
@@ -220,41 +220,43 @@ Label: Διαλυτά υλικά
 
 Για περισσότερα σχετικά με το πώς λιώνουν τα υαλώματα, γιατί κάποια απελευθερώνουν μέταλλα και τι σημαίνουν τα όρια, δείτε [Τα υαλώματα από τις βασικές αρχές](/guides/glazing-basics).
 
-## Πηγές {#sources}
+## Sources {#sources lang=en}
 
 - [America's Poison Centers: Poison Help](https://poisoncenters.org/)
 - [Poison Control (poison.org): webPOISONCONTROL](https://www.poison.org/)
 - [NHS: Poisoning](https://www.nhs.uk/conditions/poisoning/)
-- [National Poisons Information Service (Ηνωμένο Βασίλειο)](https://www.npis.org/)
+- [National Poisons Information Service (UK)](https://www.npis.org/)
 - [National Poisons Information Centre of Ireland: Public Poisons Line](https://www.poisons.ie/)
 - [European Commission: 112, the European emergency number](https://digital-strategy.ec.europa.eu/en/policies/112)
 - [healthdirect: Poisoning](https://www.healthdirect.gov.au/poisoning)
-- [National Poisons Centre (Νέα Ζηλανδία)](https://www.poisons.co.nz/)
+- [National Poisons Centre (New Zealand)](https://www.poisons.co.nz/)
 - [ASPCA: Animal Poison Control](https://www.aspca.org/pet-care/animal-poison-control)
 - [Pet Poison Helpline](https://www.petpoisonhelpline.com/)
-- [Animal PoisonLine (Ηνωμένο Βασίλειο)](https://www.animalpoisonline.co.uk/)
-- [Animal Poisons Helpline (Αυστραλία και Νέα Ζηλανδία)](https://animalpoisons.com.au/)
-- [PubMed Central: Acute soluble barium poisoning, a review (2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC11700400)
+- [Animal PoisonLine (UK)](https://www.animalpoisonline.co.uk/)
+- [Animal Poisons Helpline (Australia and New Zealand)](https://animalpoisons.com.au/)
+- [PubMed Central: Non-fatal acute barium carbonate poisoning, a case report (2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC11700400)
+- [WHO IPCS: Environmental Health Criteria 107, Barium (1990)](https://www.inchem.org/documents/ehc/ehc/ehc107.htm)
+- [Fisher Scientific: Potassium dichromate safety data sheet (2007)](https://fscimage.fishersci.com/msds/19370.htm)
 - [WikEM: Boron toxicity](https://wikem.org/wiki/Boron_toxicity)
-- [NPIC και US EPA: Recognition and Management of Pesticide Poisonings, κεφάλαιο 9 (PDF)](https://www.npic.orst.edu/RMPP/rmpp_ch9.pdf)
+- [NPIC and US EPA: Recognition and Management of Pesticide Poisonings, chapter 9 (PDF)](https://www.npic.orst.edu/RMPP/rmpp_ch9.pdf)
 - [medlibrary.org: Lithium carbonate prescribing information](https://medlibrary.org/lib/rx/meds/lithium-carbonate-16/page/2/)
 - [CDC: About Lead in Jobs, Hobbies, or Other Activities](https://cdc.gov/lead-prevention/prevention/jobs-hobbies-activities.html)
 - [CDC: Blood Lead Reference Value](https://www.cdc.gov/nceh/lead/data/blood-lead-reference-value.htm)
-- [US EPA: φυλλάδιο για την υγεία των παιδιών (2018, PDF)](https://19january2021snapshot.epa.gov/sites/static/files/2018-10/documents/childrenshealthbooklet2018_final-4_newlinks.pdf)
+- [US EPA: Children's health booklet (2018, PDF)](https://19january2021snapshot.epa.gov/sites/static/files/2018-10/documents/childrenshealthbooklet2018_final-4_newlinks.pdf)
 - [Pennsylvania Department of Health: Non-Occupational Lead Exposure (PDF)](https://www.health.pa.gov:443/topics/Documents/Environmental%20Health/Non-Occupational%20Lead%20Exposure.pdf)
 - [Western Carolina University: Ceramics Safety](https://www.wcu.edu/discover/campus-services-and-operations/facilities-management/safety-and-risk-management/visual-arts-theatre-safety/ceramics-safety.aspx)
-- [Crafts Council (Ηνωμένο Βασίλειο): How to make your pottery practice greener](https://craftscouncil.org.uk/stories/how-make-your-pottery-practice-greener)
+- [Crafts Council (UK): How to make your pottery practice greener](https://craftscouncil.org.uk/stories/how-make-your-pottery-practice-greener)
 - [Pet Poison Helpline: Lead](https://www.petpoisonhelpline.com/poison/lead/)
 - [Vet Candy: Sparkler ingestion results in barium toxicity](https://www.myvetcandy.com/clinicalupdblog/2019/3/15/sparkler-ingestion-results-in-barium-toxicity)
 - [University of Illinois College of Veterinary Medicine: Bird toxins](https://vetmed.illinois.edu/pet-health-columns/bird-toxins-teflon-avocado-lead-zinc/)
 - [Skutt: Designing a Kiln Room (PDF)](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Designing-A-Kiln-Room-1.pdf)
-- [Kiln Management, οδηγός για σχολεία (PDF)](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Kiln-Management-1.pdf)
+- [Kiln Management guide for schools (PDF)](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Kiln-Management-1.pdf)
 - [L&L Kiln: Front-loader installation checklist (PDF)](https://www.theceramicshop.com/downloads/LLFLChecklist.pdf)
 - [Rio Grande: PMC Kilns Handbook (PDF)](https://products.riogrande.com/content/Instruction-Sheets/RioGrande-PMC-Kilns-Handbook-IS.pdf)
-- [Dawson: εγχειρίδιο του Kiln-Sitter LT-3 (PDF)](https://oud.klei.nl/forum/bestanden/f675ae4a-d890-4b8b-a08e-173e652f25a6/KilnSitter%20lt3%20en%20lt3k.pdf)
+- [Dawson: Kiln-Sitter LT-3 manual (PDF)](https://oud.klei.nl/forum/bestanden/f675ae4a-d890-4b8b-a08e-173e652f25a6/KilnSitter%20lt3%20en%20lt3k.pdf)
 - [Ceramic Arts Network: In the Studio, Eye Health for Potters](https://ceramicartsnetwork.org/pottery-making-illustrated/pottery-making-illustrated-article/In-the-Studio-Eye-Health-for-Potters)
 - [FDA: Questions and Answers on Lead-Glazed Traditional Pottery](https://www.fda.gov/food/environmental-contaminants-food/questions-and-answers-lead-glazed-traditional-pottery)
-- [FDA: Compliance Policy Guide 545.450, μόλυβδος στα κεραμικά (PDF)](https://www.fda.gov/media/71764/download)
+- [FDA: Compliance Policy Guide 545.450, lead in pottery (PDF)](https://www.fda.gov/media/71764/download)
 - [Digitalfire: Food Safe](https://digitalfire.com/glossary/food+safe)
 - [Ceramics NZ: Is it food safe?](https://ceramicsnz.org/news/is-it-food-safe/)
 - [Ceramic Arts Network: Techno File, Dirty Dishes](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/Techno-File-Dirty-Dishes)

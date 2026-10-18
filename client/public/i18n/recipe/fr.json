@@ -469,7 +469,6 @@
     "expansionRises": "Sa dilatation calculée passe de {was} à {now}.",
     "expansionRisesProbably": "Si l’ancien émail s’accordait tout juste à votre terre, celui-ci va probablement tressailler, parfois des semaines plus tard.",
     "expansionRisesMay": "Si l’ancien émail s’accordait tout juste à votre terre, celui-ci peut tressailler, parfois des semaines plus tard.",
-    "expansionRisesFix": "Le tressaillage fragilise les pièces et est déconseillé sur les surfaces en contact avec les aliments. Moins de soude et de potasse, ou plus de bore, de silice ou d’alumine, font baisser la dilatation.",
     "expansionFalls": "Sa dilatation calculée baisse de {was} à {now}. Un émail à dilatation un peu plus basse résiste généralement mieux au tressaillage.",
     "expansionFallsProbably": "Avec une dilatation beaucoup plus basse, l’émail va probablement s’écailler, en détachant des éclats coupants des bords et des arêtes.",
     "expansionFallsCan": "Avec une dilatation beaucoup plus basse, l’émail peut s’écailler, en détachant des éclats coupants des bords et des arêtes.",

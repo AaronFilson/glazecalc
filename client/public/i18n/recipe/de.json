@@ -469,7 +469,6 @@
     "expansionRises": "Die berechnete Wärmeausdehnung steigt von {was} auf {now}.",
     "expansionRisesProbably": "Wenn die alte Glasur gerade noch auf Ihre Tonmasse passte, bekommt diese wahrscheinlich Haarrisse, manchmal erst Wochen später.",
     "expansionRisesMay": "Wenn die alte Glasur gerade noch auf Ihre Tonmasse passte, kann diese Haarrisse bekommen, manchmal erst Wochen später.",
-    "expansionRisesFix": "Haarrisse schwächen die Stücke und sind auf Flächen mit Lebensmittelkontakt nicht ratsam. Weniger Natrium und Kalium oder mehr Bor, Kieselsäure oder Tonerde senken die Wärmeausdehnung.",
     "expansionFalls": "Die berechnete Wärmeausdehnung sinkt von {was} auf {now}. Eine etwas niedrigere schützt meist besser vor Haarrissen.",
     "expansionFallsProbably": "Ist sie viel niedriger, platzt die Glasur wahrscheinlich ab, mit scharfkantigen Splittern an Rändern und Kanten.",
     "expansionFallsCan": "Ist sie viel niedriger, kann die Glasur abplatzen, mit scharfkantigen Splittern an Rändern und Kanten.",

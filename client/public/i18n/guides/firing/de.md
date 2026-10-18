@@ -370,83 +370,83 @@ Selbststehende Ortonkegel werden in Japan unter dem Namen 立つゼーゲル (�
 
 :::
 
-## Schrühbrand {#bisque}
+## Bisque firing {#bisque lang=en}
 
-Der **Schrühbrand**{{en: bisque}} (britisches Englisch: biscuit) ist der erste, niedrigere Brand, der trockenen Ton in harte, poröse Ware verwandelt, die bereit zum Glasieren ist. Er wird meist auf Kegel{{en: cone}} 06–04 gebrannt, {{1828–1945 °F; 998–1063 °C}} nach Ortons Tabelle; in Großbritannien wird oft auf etwa {{1000 °C; 1832 °F}} gebrannt, nahe Kegel 06. Der geschrühte Scherben soll porös bleiben, „im Allgemeinen mehr als 15%“ (Digitalfire), damit er der Glasur{{en: glaze}} das Wasser entzieht. Ein zu niedrig geschrühter Scherben nimmt die Glasur zu dick an; sie reißt dann und **rollt ab**{{en: crawls}} (zieht sich zu Inseln zusammen und lässt nackten Ton frei). Zu schwach geschrühte Ware „schrumpft auch beim Glasurbrand{{en: glaze firing}} weiter“, was den Glasursitz{{en: glaze fit}} verdirbt. Beim Einräumen ist der Schrühbrand nachsichtig: Stücke dürfen sich berühren, Deckel können auf ihren Gefäßen gebrannt werden, und Schalen stehen Rand auf Rand statt ineinander.
+The **bisque** firing (biscuit in the UK) is the first, lower firing that turns dry clay into hard, porous ware ready to glaze. It is usually fired to cone 06–04, {{1828–1945 °F; 998–1063 °C}} on Orton's chart; UK potters often fire to around {{1000 °C; 1832 °F}}, near cone 06. The bisque should stay porous, "generally more than 15%" (Digitalfire), so it soaks water out of the glaze. Too soft a bisque takes glaze on too thick, which then cracks and **crawls** (pulls back into islands, leaving bare clay). Under-fired bisque also "continues to shrink during glaze firing", which spoils the glaze fit. Loading is forgiving: pieces may touch, lids can be fired on their pots, and bowls go rim to rim rather than nested.
 
-### Warum der Anfang langsam geht
+### Why the early part goes slowly
 
-Wasser, das zu Dampf wird, „dehnt sich auf das 1170-Fache aus“, schreibt Bracker’s; deshalb muss feuchte Ware langsam getrocknet werden. L&L und Orton raten: „Unterhalb von 1500°F (815°C) sollte besonders darauf geachtet werden, den Scherben gleichmäßig zu erhitzen“, und der Kohlenstoff müsse vor etwa {{1200 °F; 650 °C}} ausgebrannt sein. Oberhalb von {{1500 °F; 816 °C}} kann der Ofen schneller steigen.
+Water expands more than a thousandfold as it turns to steam, so damp ware has to be dried slowly. L&L and Orton advise that "Special care should be taken below 1500°F (815°C) to heat the body evenly", and that carbon must be burned out before about {{1200 °F; 650 °C}}. Above {{1500 °F; 816 °C}} the kiln can climb faster.
 
-Table: Was beim Aufheizen im Schrühbrand geschieht
-Label: Was im Schrühbrand geschieht
+Table: What happens as a bisque heats
+Label: What happens in a bisque
 
-|                       Temperatur | Was geschieht                                                                           |
-| -------------------------------: | --------------------------------------------------------------------------------------- |
-|       {{300–500 °F; 149–260 °C}} | Bindemittel brennen aus                                                                 |
-|          Etwa {{450 °F; 232 °C}} | Organische Stoffe beginnen zu brennen                                                   |
-|           Bis {{700 °F; 371 °C}} | Wasser entweicht aus dem Ton, noch bis über diese Temperatur hinaus                     |
-|      {{842–1022 °F; 450–550 °C}} | Chemisch gebundenes Wasser entweicht aus dem Ton                                        |
-|              {{1063 °F; 573 °C}} | Quarzsprung{{en: quartz inversion}}: Der Quarz im Ton dehnt sich plötzlich aus          |
-|         Über {{1112 °F; 600 °C}} | Schwefel brennt aus                                                                     |
-| Bis {{1200–1400 °F; 649–760 °C}} | Natürlicher Kohlenstoff brennt aus; das sollte unterhalb der Rotglut abgeschlossen sein |
-|         Über {{1544 °F; 840 °C}} | Calciumcarbonat zersetzt sich                                                           |
+|                        Temperature | What happens                                                |
+| ---------------------------------: | ----------------------------------------------------------- |
+|         {{300–500 °F; 149–260 °C}} | Binders burn off                                            |
+|           About {{450 °F; 232 °C}} | Organic matter starts to burn                               |
+|           Up to {{700 °F; 371 °C}} | Water keeps leaving the clay until above this temperature   |
+|        {{842–1022 °F; 450–550 °C}} | Chemically bound water leaves the clay                      |
+|                {{1063 °F; 573 °C}} | Quartz inversion: silica in the clay expands suddenly       |
+|          Above {{1112 °F; 600 °C}} | Sulfur burns out                                            |
+| Up to {{1200–1400 °F; 649–760 °C}} | Natural carbon burns off; this should finish below red heat |
+|          Above {{1544 °F; 840 °C}} | Calcium carbonate breaks down                               |
 
-Der **Quarzsprung** ist die plötzliche Größenänderung des Quarzes im Ton bei {{1063 °F; 573 °C}}: Er dehnt sich beim Aufheizen aus und zieht sich beim Abkühlen zusammen. Das Programm Slow Bisque von L&L fährt dort langsamer, zwischen {{1000 °F; 538 °C}} und {{1100 °F; 593 °C}}. Digitalfire hält das für „unnötig bei Schrühbränden“, und Ceramics Monthly sagt, es sei vor allem beim Abkühlen dichter Ware wichtig. Langsamer zu fahren kostet wenig; wir schlagen deshalb vor, es bei dicken Stücken beizubehalten.
+**Quartz inversion** is the sudden change in size of the silica in clay at {{1063 °F; 573 °C}}: it expands on the way up and contracts on the way down. L&L's Slow Bisque slows through it, between {{1000 °F; 538 °C}} and {{1100 °F; 593 °C}}. Digitalfire found this "unnecessary for bisque firings", and Ceramics Monthly says it mainly matters when cooling dense ware. Slowing costs little, so our suggestion is to keep it for thick pieces.
 
-### Vortrocknen: Trocknen im Ofen
+### Candling: drying in the kiln
 
-**Vortrocknen**{{en: candling}} heißt, den Ofen bei niedriger Temperatur zu halten, mit dem Deckel einen Spalt offen oder mit laufender Abluftanlage, bis die letzte Feuchtigkeit aus der Ware entwichen ist. Über die Temperatur sind sich die Quellen nicht einig:
+**Candling** means holding the kiln at a low temperature, with the lid propped or the vent running, until the last moisture has left the ware. Sources disagree about the temperature:
 
-Table: Temperaturen zum Vortrocknen
+Table: Candling temperatures
 
-| Quelle           | Vortrocknen                                                                                        |
-| ---------------- | -------------------------------------------------------------------------------------------------- |
-| Ceramics Monthly | Knapp unter dem Siedepunkt; zum Beispiel 4–6 Stunden lang mit {{25 °F/h; 14 °C/h}} steigen         |
-| L&L, Vorwärmen   | Halten bei {{150–200 °F; 66–93 °C}}                                                                |
-| Digitalfire      | Halten bei {{250 °F; 121 °C}}, weil Halten unter dem Siedepunkt „nicht das ganze Wasser austreibt“ |
+| Source           | Candling                                                                                 |
+| ---------------- | ---------------------------------------------------------------------------------------- |
+| Ceramics Monthly | Just short of boiling; for example, climbing at {{25 °F/h; 14 °C/h}} for 4–6 hours       |
+| L&L preheat      | Hold at {{150–200 °F; 66–93 °C}}                                                         |
+| Digitalfire      | Hold at {{250 °F; 121 °C}}, because holding below boiling "does not expel all the water" |
 
 > [!NOTE]
-> Unser Ausgangspunkt: Heizen Sie langsam auf höchstens etwa {{250 °F; 121 °C}} auf und halten Sie, bis ein Spiegel an der Abluftöffnung klar bleibt. Bei dicker oder feuchter Ware halten Sie über Nacht.
+> Our starting point: climb slowly to no more than about {{250 °F; 121 °C}}, and hold until a mirror at the vent stays clear. Hold overnight for thick or damp ware.
 
-Der **Spiegeltest**: Halten Sie einen zimmerwarmen Spiegel an ein Entlüftungsloch oder an den Spalt unter dem aufgestellten Deckel. Beschlägt er, entweicht noch Wasser; warten Sie und prüfen Sie dann erneut.
+The **mirror test**: hold a room-temperature mirror at a vent hole or at the gap under a propped lid. If it fogs, water is still leaving; wait, then test again.
 
-### Brennkurven für Steuerungen
+### Controller schedules
 
-Eine **Steuerung** ist ein elektronisches Gerät, das den Ofen nach einer **Brennkurve** brennt: einer Liste von **Segmenten**, jedes mit einer Heizrate (der **Rampe**{{en: ramp}}), einer Zieltemperatur und einer optionalen Haltezeit{{en: hold}}. Unten stehen zwei voreingestellte Programme der Steuerungen DynaTrol von L&L und von Bartlett sowie eine von Digitalfire veröffentlichte Brennkurve. „Endtemperatur“ ist die Temperatur, die die Steuerung selbst für den gewählten Kegel verwendet: für Kegel 04 {{1926 °F; 1052 °C}} und für Kegel 06 {{1819 °F; 993 °C}}.
+A **controller** is an electronic unit that fires the kiln through a **schedule**: a list of **segments**, each a rate of climb (the **ramp**), a target temperature and an optional hold. Below are two presets from L&L's DynaTrol and Bartlett controllers, and a schedule published by Digitalfire. "Peak" is the controller's own temperature for the cone you choose: for cone 04 it is {{1926 °F; 1052 °C}}, and for cone 06, {{1819 °F; 993 °C}}.
 
-Table: Schrühbrand-Programme von L&L und Bartlett
-Label: Schrühbrand-Programme
+Table: L&L and Bartlett bisque presets
+Label: Bisque presets
 
-| Segment                  |                                                                  Steigen auf |               Slow Bisque |            Fast Bisque |
-| ------------------------ | ---------------------------------------------------------------------------: | ------------------------: | ---------------------: |
-| 1                        |                                                           {{250 °F; 121 °C}} |      {{80 °F/h; 44 °C/h}} |  {{120 °F/h; 67 °C/h}} |
-| 2                        |                                                          {{1000 °F; 538 °C}} |    {{200 °F/h; 111 °C/h}} | {{300 °F/h; 167 °C/h}} |
-| 3                        |                                                          {{1100 °F; 593 °C}} |     {{100 °F/h; 56 °C/h}} |  {{150 °F/h; 83 °C/h}} |
-| 4                        | {{250 °F; 139 °C}} unter der Endtemperatur: {{1676 °F; 913 °C}} für Kegel 04 |    {{180 °F/h; 100 °C/h}} | {{180 °F/h; 100 °C/h}} |
-| 5                        |                                                            Die Endtemperatur |      {{80 °F/h; 44 °C/h}} |  {{108 °F/h; 60 °C/h}} |
-| Aufheizzeit, leerer Ofen |                                                                              | Etwa 13 Stunden oder mehr |    Etwa 10–11½ Stunden |
+| Segment                  |                                                           Climb to |            Slow Bisque |            Fast Bisque |
+| ------------------------ | -----------------------------------------------------------------: | ---------------------: | ---------------------: |
+| 1                        |                                                 {{250 °F; 121 °C}} |   {{80 °F/h; 44 °C/h}} |  {{120 °F/h; 67 °C/h}} |
+| 2                        |                                                {{1000 °F; 538 °C}} | {{200 °F/h; 111 °C/h}} | {{300 °F/h; 167 °C/h}} |
+| 3                        |                                                {{1100 °F; 593 °C}} |  {{100 °F/h; 56 °C/h}} |  {{150 °F/h; 83 °C/h}} |
+| 4                        | {{250 °F; 139 °C}} below the peak: {{1676 °F; 913 °C}} for cone 04 | {{180 °F/h; 100 °C/h}} | {{180 °F/h; 100 °C/h}} |
+| 5                        |                                                           The peak |   {{80 °F/h; 44 °C/h}} |  {{108 °F/h; 60 °C/h}} |
+| Heating time, empty kiln |                                                                    | About 13 hours or more |     About 10–11½ hours |
 
-Die Zeiten von L&L gelten „für die schnellstmöglichen leeren Öfen“; ein beladener Ofen kann bis zu viermal länger brauchen, und jede Haltezeit, die Sie hinzufügen, ist zusätzliche Wärmearbeit{{en: heatwork}}, die die Programme nicht berücksichtigen. Für große oder feuchte Stücke rät L&L zu Slow Bisque mit 2–3 Stunden Vorwärmen oder länger und warnt vor schnellem Brennen, das „Fehler wie Nadelstiche{{en: pinholes}}, Risse und unvollständiges Ausbrennen verursachen kann“.
+L&L's times are "for the fastest possible empty kilns"; a loaded kiln can take as much as four times longer, and any hold you add is extra heatwork the presets do not allow for. L&L advises Slow Bisque, with a preheat of 2–3 hours or longer, for large or damp pieces, and warns against fast firing, which "can cause defects like pinholes, cracking, and insufficient burnout".
 
-Table: Digitalfire BQ1000, Schrühbrand bis etwa Kegel 06
+Table: Digitalfire BQ1000 bisque, to about cone 06
 Label: Digitalfire BQ1000
 
-| Schritt |                   Rate |                 Ziel | Haltezeit                                       |
-| ------- | ---------------------: | -------------------: | ----------------------------------------------- |
-| 1       | {{306 °F/h; 170 °C/h}} |   {{248 °F; 120 °C}} | 60 Minuten; bis zu 10 Stunden bei schwerer Ware |
-| 2       | {{306 °F/h; 170 °C/h}} |  {{1733 °F; 945 °C}} | Keine                                           |
-| 3       |  {{108 °F/h; 60 °C/h}} | {{1832 °F; 1000 °C}} | 15 Minuten                                      |
+| Step |                   Rate |               Target | Hold                                      |
+| ---- | ---------------------: | -------------------: | ----------------------------------------- |
+| 1    | {{306 °F/h; 170 °C/h}} |   {{248 °F; 120 °C}} | 60 minutes; up to 10 hours for heavy ware |
+| 2    | {{306 °F/h; 170 °C/h}} |  {{1733 °F; 945 °C}} | None                                      |
+| 3    |  {{108 °F/h; 60 °C/h}} | {{1832 °F; 1000 °C}} | 15 minutes                                |
 
-BQ1000 dauert etwa 7 Stunden 44 Minuten. Sein Autor hält bei dünner, trockener Ware bis zu {{500 °F/h; 278 °C/h}} für unbedenklich und verlangsamt den letzten Schritt, um die Temperatur im ganzen Besatz auszugleichen.
+BQ1000 takes about 7 hours 44 minutes. Its author finds up to {{500 °F/h; 278 °C/h}} fine for thin, dry ware, and slows the last step to even out the temperature through the load.
 
-### Kegel der Steuerung und Ortons Tabelle
+### Controller cones and Orton's chart
 
-Die Steuerungen von L&L und Bartlett verwenden {{1926 °F; 1052 °C}} für Kegel 04 und {{1819 °F; 993 °C}} für Kegel 06, etwas unter Ortons {{1945 °F; 1063 °C}} und {{1828 °F; 998 °C}}; bei Kegel 6 und Kegel 10 stimmen sie überein. Den Unterschied klären Messkegel{{en: witness cones}}: Wenn sie der Steuerung widersprechen, korrigieren Sie diese mit dem Kegel-Offset.
+L&L and Bartlett controllers use {{1926 °F; 1052 °C}} for cone 04 and {{1819 °F; 993 °C}} for cone 06, a little below Orton's {{1945 °F; 1063 °C}} and {{1828 °F; 998 °C}}; they agree at cone 6 and cone 10. Witness cones settle the difference: if they disagree with the controller, correct it with the cone offset.
 
-### Am handgeschalteten Ofen
+### On a manual kiln
 
-Ein handgeschalteter Ofen folgt demselben Plan von Hand: Sie trocknen langsam bei einen Spalt geöffnetem Deckel und offenen Schaulöchern, stellen die Schalter schrittweise von Low über Medium auf High und lassen den Kiln-Sitter den Brand beenden. Die veröffentlichten Abläufe stehen unten unter „Handgeschaltete Öfen im Einzelnen“.
+A manual kiln follows the same plan by hand: dry slowly with the lid propped and the peepholes open, step the switches up from Low to Medium to High, and let the sitter end the firing. The published procedures are under Manual kilns in detail, below.
 
 ## Glasurbrand {#glaze}
 

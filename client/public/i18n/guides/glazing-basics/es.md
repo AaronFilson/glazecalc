@@ -18,40 +18,40 @@ El **boro** (B₂O₃) difumina la frontera. Los químicos lo clasifican como fo
 > [!NOTE]
 > Una forma de recordarlo: la sílice es el vidrio, los fundentes le permiten fundirse a una temperatura que su horno puede alcanzar, y la alúmina lo espesa para que se quede donde usted lo puso.
 
-## La arcilla, los recubrimientos y las dos cocciones {#clay-and-firings}
+## Clay, coatings and the two firings {#clay-and-firings lang=en}
 
-### Las pastas
+### Clay bodies
 
-La **pasta**{{en: clay body}} es la arcilla de la que está hecha una pieza. Hay tres tipos principales.
+The **clay body** is the clay a pot is made of. There are three main kinds.
 
-- **Loza**{{en: earthenware}}: una pasta de baja temperatura, de cono 06–02 aproximadamente, que sigue siendo porosa. A menudo roja o beige, necesita un esmalte{{en: glaze}} para retener el agua.
-- **Gres**{{en: stoneware}}: una pasta de media a alta temperatura, de cono 5–10 aproximadamente, que vitrifica, o casi.
-- **Porcelana**: una pasta blanca de alta temperatura, rica en caolín{{en: kaolin}}, a menudo translúcida.
+- **Earthenware**: a low-fire body, about cone 06–02, that stays porous. Often red or buff, it needs a glaze to hold water.
+- **Stoneware**: a mid- to high-fire body, about cone 5–10, that becomes vitreous or nearly so.
+- **Porcelain**: a white, high-fire body rich in kaolin, often translucent.
 
-**Vítreo** significa parecido al vidrio y no poroso; la **vitrificación** es el proceso por el que una pasta llega a serlo durante la cocción. En el Reino Unido, los ceramistas suelen trazar la línea por la temperatura: el gres se cuece por encima de {{2192 °F; 1200 °C}} y la loza, por debajo. La media temperatura, cono 5–6, queda justo a uno y otro lado de esa línea.
+**Vitreous** means glassy and non-porous; **vitrification** is a body becoming so as it fires. UK potters often draw the line by temperature instead: stoneware is fired above {{2192 °F; 1200 °C}}, earthenware below. Mid fire, cone 5–6, falls just either side of that line.
 
-### Recubrimientos y secado
+### Coatings and drying
 
-La **barbotina** es arcilla en suspensión en agua, para colar, unir o decorar. Un **engobe** es un recubrimiento parecido a la barbotina, a menudo coloreado, con más materiales que no son arcilla. Un **color bajo cubierta** es una decoración de barbotina coloreada o de óxidos, normalmente cubierta con un esmalte transparente.
+**Slip** is clay suspended in water, for casting, joining or decorating. An **engobe** is a slip-like coating, often colored, with more non-clay materials. An **underglaze** is colored slip or oxide decoration, usually covered with a clear glaze.
 
-Las piezas sin cocer son **piezas en crudo**{{en: greenware}} (las fuentes no coinciden en si la palabra inglesa, greenware, abarca todas las piezas sin cocer o solo las secas). Al secarse llegan a la **dureza de cuero**, firmes pero algo húmedas, el momento de retornear y poner las asas; luego quedan **totalmente secas**, sin agua libre, muy frágiles y listas para cocer.
+Unfired ware is **greenware** (sources disagree on whether the word covers all unfired ware or only dry ware). As it dries it becomes **leather-hard**, stiff but slightly damp, the stage for trimming and handles; then **bone dry**, with no free water left, very fragile and ready to fire.
 
-### Las dos cocciones
+### The two firings
 
-La primera cocción, a menor temperatura, es la **cocción de bizcocho**{{en: bisque}} (en el Reino Unido, **biscuit**), normalmente a cono 08–04, unos {{1740–1940 °F; 950–1060 °C}}. Deja las piezas resistentes pero porosas. Digitalfire, un sitio web de referencia sobre esmaltes, aconseja en general más de un 15 % de porosidad, para que el bizcocho absorba el agua del esmalte al aplicarlo. Un bizcocho blando (cono 08–06) es más poroso; un bizcocho duro (a menudo cono 04) es más resistente, pero absorbe el esmalte con menos facilidad.
+The first, lower firing is the **bisque** (UK: **biscuit**), usually cone 08–04 (most often 06–04), about {{1728–1945 °F; 942–1063 °C}}. It leaves ware strong but porous. Digitalfire, a glaze reference site, suggests generally more than 15% porosity, so the bisque draws water out of the glaze as it goes on. A soft bisque (cone 08–06) is more porous; a hard bisque (often cone 04) is sturdier but takes glaze less readily.
 
-Table: Cómo cambia el esmaltado según el bizcocho (Digitalfire)
-Label: Cómo cambia el esmaltado según el bizcocho
+Table: How the bisque changes glazing (Digitalfire)
+Label: How the bisque changes glazing
 
-| Bizcocho                                                                           | Qué ocurre                                                                          |
-| ---------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
-| Poco cocido, muy absorbente                                                        | El esmalte se deposita demasiado grueso, y luego se agrieta y se recoge             |
-| Sobrecocido, denso                                                                 | La inmersión y el secado tardan más                                                 |
-| Cocido a más temperatura, o con un mantenimiento más largo a la temperatura máxima | Ahora se quema más gas, así que después pasa menos en burbujas a través del esmalte |
+| Bisque                                  | What happens                                                    |
+| --------------------------------------- | --------------------------------------------------------------- |
+| Under-fired, very absorbent             | Glaze goes on too thick, then cracks and crawls                 |
+| Over-fired, dense                       | Dipping and drying take longer                                  |
+| Fired hotter, or held longer at the top | More gas burns off now, so less bubbles through the glaze later |
 
-Potclays, un proveedor británico, describe la cocción de bizcocho a unos {{1000 °C; 1832 °F}}, aproximadamente cono 06. Leyendo estas fuentes en conjunto, le recomendamos cono 06–04 para un primer bizcocho: {{1828–1945 °F; 998–1063 °C}} a la velocidad media de Orton.
+Potclays, a UK supplier, describes biscuit firing to around {{1000 °C; 1832 °F}}, about cone 06. Reading these sources together, we suggest cone 06–04 for a first bisque: {{1828–1945 °F; 998–1063 °C}} at Orton's medium rate.
 
-La **cocción de esmalte**{{en: glaze firing}} (los ceramistas británicos pueden llamarla **glost** firing) funde el esmalte y, en el gres, también hace madurar la pasta. La **monococción**{{en: once-firing}} consiste en esmaltar piezas sin cocer y cocerlas una sola vez. Digitalfire cuenta un caso de producción en el que el esmalte de las piezas esmaltadas en crudo se recogía en los bordes hasta que una cocción de bizcocho lo solucionó, así que empiece con dos cocciones. [La cocción en un horno sencillo](/guides/firing) da programas de cocción para las dos.
+The **glaze firing** (British potters may say **glost** firing) melts the glaze and, for stoneware, matures the clay too. **Once-firing** glazes unfired ware and fires it just once. Digitalfire reports a production case where raw-glazed ware crawled on its rims until a bisque firing cured it, so begin with two firings. [Firing a basic kiln](/guides/firing) gives schedules for both.
 
 ## Conos y trabajo térmico {#cones}
 
@@ -238,30 +238,30 @@ Label: Defectos frecuentes del esmalte
 | Escurrido                                              | El esmalte cae sobre la placa                                        | Muy poca alúmina; capa demasiado gruesa, como donde se solapan los vertidos; mucho hierro                                                            | Dé una capa más fina; añada alúmina; deje el esmalte bien por encima del pie                                       |
 | Grietas de enfriamiento o calentamiento{{en: dunting}} | Grietas en la pieza por el enfriamiento o el calentamiento           | Enfriamiento rápido al pasar por la inversión del cuarzo{{en: quartz inversion}}, {{1063 °F; 573 °C}}; paredes de grosor irregular; mal acoplamiento | Cueza despacio al pasar por {{1063 °F; 573 °C}}, al subir y al bajar; haga paredes uniformes                       |
 
-## Seguridad alimentaria {#food-safety}
+## Food safety {#food-safety lang=en}
 
-La **cesión**{{en: leaching}} es la disolución de metales de un esmalte cocido en la comida o la bebida, y un esmalte puede tener un aspecto perfecto y aun así ceder metales. Los ensayos legales sumergen la pieza cocida en una solución ácida y miden el plomo y el cadmio que se liberan.
+**Leaching** is metal dissolving out of a fired glaze into food or drink, and a glaze can look perfect and still do it. The legal tests soak the fired piece in an acid solution and measure the lead and cadmium that come out.
 
-### Sin plomo no es lo mismo que apto para uso alimentario
+### Lead-free is not the same as food-safe
 
-Las normas de EE. UU., la UE, el Reino Unido y Australia limitan el plomo y el cadmio que libera una pieza cocida, no lo que contiene el esmalte. «Sin plomo» elimina un peligro; no es una calificación de seguridad alimentaria. También se ceden otros óxidos: Glazy advierte que los esmaltes con mucho bario «pueden ceder metales y en general no son aptos para uso alimentario»{{en: food-safe}}, Digitalfire dice que el cobre «puede hacer que un esmalte ceda metales; analícelo», y Glazy ya no recomienda esmaltes de plomo para la cerámica funcional.
+The rules in the US, the EU, the UK and Australia limit the lead and cadmium a fired piece releases, not what the glaze contains. "Lead-free" removes one hazard; it is not a food-safety rating. Other oxides leach too: Glazy warns that high-barium glazes "can leach and are generally not food-safe", Digitalfire says copper "can make a glaze leachable; test it", and Glazy no longer advises lead glazes for functional ware.
 
-Un **esmalte de interior**{{en: liner glaze}} es un esmalte estable, normalmente transparente o blanco, para las superficies que tocan los alimentos. En nuestra opinión, uno sin colorantes, bario, plomo ni litio, que funda por completo, no se cuartee y resista bien el desgaste es la opción de menor riesgo. Que el riesgo sea menor no demuestra que sea seguro.
+A **liner glaze** is a stable, usually clear or white glaze for surfaces that touch food. In our view, one with no colorant, barium, lead or lithium, that melts fully, does not craze and wears well, is the lower-risk choice. Lower risk is not proof.
 
-Las **fórmulas límite**{{en: limit formulas}} (Digitalfire prefiere **fórmulas objetivo**{{en: target formulas}}) dan intervalos típicos de la fórmula Seger{{en: unity formula}} para esmaltes estables a un cono: los objetivos de Digitalfire para cono 6 sitúan la alúmina en 0,285–0,64 y la sílice en 2,4–4,7. Le orientan hacia una química sólida, pero no demuestran nada; Digitalfire evita la palabra «límite» porque sugiere que los esmaltes dentro de los intervalos «son de algún modo seguros». Las herramientas de Glazecalc para modificar una receta avisan cuando la nueva supera un límite recomendado, como mucho boro a cono 6, y dicen qué hará probablemente el esmalte.
+**Limit formulas** (Digitalfire prefers **target formulas**) give typical unity-formula ranges for stable glazes at a cone: Digitalfire's cone 6 targets put alumina at 0.285–0.64 and silica at 2.4–4.7. They guide you toward sound chemistry but prove nothing; Digitalfire avoids the word "limit" because it suggests glazes inside the ranges "are somehow safe". Glazecalc's tools for changing a recipe say when the new one goes past a recommended limit, such as a lot of boron at cone 6, and what the glaze will likely do.
 
-Los límites legales varían de un país a otro. La tabla muestra los del lugar donde usted vive, en las unidades de la propia norma; elija otro país para compararlos.
+The legal limits differ by country. The table shows those where you live, in the law's own units; choose another country to compare.
 
 ::food-limits
 
-En EE. UU., las piezas que no son para alimentos deben llevar un aviso permanente y cocido, «Not for Food Use» (no apto para alimentos), o tener un agujero que atraviese la superficie destinada a los alimentos. La UE fija límites de plomo y cadmio en la Directiva 84/500/CEE, y el Reino Unido mantiene las mismas cifras en su propia legislación. A partir del 29 de mayo de 2026, los Países Bajos, Bélgica y Luxemburgo permiten unas 130 a 150 veces menos plomo, y unas 15 veces menos cadmio. Australia fija límites para las piezas importadas; no hemos encontrado ningún límite oficial para las piezas fabricadas en Australia o Nueva Zelanda.
+In the US, decorative ceramic ware that looks usable for food is treated as food ware unless it carries a stick-on label and a permanent notice molded or fired onto its base, such as "Not for Food Use. May Poison Food", or has a hole through the food surface. The EU sets lead and cadmium limits in Directive 84/500/EEC, and the UK keeps the same figures in its own law. From 29 May 2026 the Netherlands, Belgium and Luxembourg allow about 130 to 150 times less lead, and about 15 times less cadmium. Australia sets limits for imported ware; we found no official limit for ware made in Australia or New Zealand.
 
-### Ensayos
+### Testing
 
-La FDA dice que los kits caseros de hisopo pueden detectar plomo que puede cederse, pero Ceramics New Zealand advierte que los rotuladores de prueba no están pensados para la cerámica y dan falsos positivos. Tome un positivo como motivo para dejar de usar la pieza, y un negativo, como algo que no demuestra nada. Un ensayo de cesión en laboratorio de la pieza cocida (ASTM C738 en EE. UU.; EN 1388 o ISO 6486 en Europa) es la respuesta de verdad.
+The FDA says home swab kits can show leachable lead, but Ceramics New Zealand warns that test pens are not designed for ceramics and give false positives. Treat a positive as a reason to stop using the piece, and a negative as proving nothing. A laboratory leach test of the fired piece (ASTM C738 in the US; EN 1388 or ISO 6486 in Europe) is the real answer.
 
 > [!WARNING]
-> «Apto para uso alimentario»{{en: food safe}} significa que este esmalte, sobre esta pasta, cocido a este cono en este horno y aplicado de esta manera, libera menos de lo que fijan los límites legales. Glazecalc puede ayudarle a crear un esmalte estable, y **Sustituir el plomo** puede rehacer sin plomo una receta antigua con plomo, pero ninguna calculadora puede certificar una pieza. Solo un ensayo de la pieza cocida puede hacerlo.
+> "Food safe" means this glaze, on this clay, fired to this cone in this kiln and applied this way, releases less than the legal limits. Glazecalc can help you build a stable glaze, and **Replace lead** can rebuild an old lead recipe without lead, but no calculator can certify a pot. Only a test of the fired piece can.
 
 ## Densidad y aplicación {#application}
 
@@ -298,171 +298,171 @@ La **reducción**{{en: reduction}} restringe a propósito el oxígeno, normalmen
 
 Todo horno, también los eléctricos, desprende humos, así que ventílelo. [Preparación segura y ventilación](/guides/safe-mixing) explica cómo.
 
-## Glosario {#glossary}
+## Glossary {#glossary lang=en}
 
-Acoplamiento esmalte-pasta (glaze fit)
-: Lo bien que coinciden la dilatación del esmalte y la de la pasta; un buen acoplamiento deja el esmalte ligeramente comprimido.
+Additive
+: A colorant, opacifier or suspender added on top of a recipe's 100.
 
-Aditivo (additive)
-: Un colorante, opacificante o suspensivo que se añade por encima del 100 de una receta.
-
-Alúmina (alumina, Al₂O₃)
-: El principal estabilizante: evita que el esmalte escurra y aporta dureza. Procede de las arcillas y los feldespatos.
-
-Apto para uso alimentario (food safe)
-: En sentido legal: que libera, en un ensayo con ácido, menos plomo y cadmio que los límites. No es lo mismo que sin plomo.
+Alumina (Al₂O₃)
+: The main stabilizer: stops running and adds hardness. From clays and feldspars.
 
 Ball clay
-: Una arcilla plástica con más hierro y materia orgánica que el caolín.
+: A plastic clay with more iron and organic matter than kaolin.
 
-Barbotina y engobe (slip and engobe)
-: Arcilla en agua; un engobe es un recubrimiento parecido a la barbotina, con más material que no es arcilla.
+Batch recipe
+: A glaze's raw materials by weight, usually adding up to 100.
 
-Bentonita (bentonite)
-: Una arcilla muy fina que se añade al 1–3 % para evitar que el esmalte sedimente.
+Bentonite
+: A very fine clay added at 1–3% to keep glaze from settling.
 
-Bizcocho, cocción de bizcocho (bisque; en el Reino Unido, biscuit)
-: La primera cocción, a menor temperatura, normalmente a cono 08–04, que deja las piezas resistentes pero porosas.
+Bisque (UK: biscuit)
+: The first, lower firing, usually cone 08–04 (most often 06–04), leaving ware strong but porous.
 
-Boro (boron, B₂O₃)
-: Formalmente un formador de vidrio, pero se usa como fundente; imprescindible del cono 06 al cono 6.
+Boron (B₂O₃)
+: Formally a glass former but used as a flux; essential from cone 06 to cone 6.
 
-Brillante, satinado y mate (gloss, satin and matte)
-: Reflectante y liso; un brillo apagado; sin brillo.
+CMC gum
+: A cellulose gum that helps glaze brush on and stick; it burns away.
 
-Caolín (kaolin; en el Reino Unido, china clay)
-: Una arcilla blanca y pura que aporta alúmina y sílice; mantiene el esmalte en suspensión. En Australia: Eckalite.
+Colorant and stain
+: A metal oxide or carbonate that colors glaze; a stain is a factory-made, more stable colorant.
 
-Carbonato cálcico (whiting)
-: El principal fundente de calcio; pierde más del 40 % de su peso en la cocción. En alemán: Kreide.
+Cone
+: A calibrated ceramic pyramid that bends at a set heatwork. A witness cone shows what the pots received.
 
-Cera de reserva (wax resist)
-: Cera que se aplica a pincel donde no debe ir el esmalte, normalmente en el pie.
+Crawling
+: Glaze pulling back into beads in firing, leaving bare clay.
 
-Cesión (leaching)
-: La disolución de metales de un esmalte cocido en la comida o la bebida.
+Crazing
+: Fine cracks in a glaze that shrinks more than its body; crackle when wanted.
 
-CMC (CMC gum)
-: Una goma de celulosa que ayuda a aplicar el esmalte a pincel y a que se adhiera; desaparece al quemarse.
+Devitrification
+: Crystals growing out of the glass early in cooling, where they are not wanted.
 
-Cocción de esmalte (glaze firing; en el Reino Unido, glost firing)
-: La cocción que funde el esmalte.
+Dunting
+: Cracks in a pot from cooling or heating stress, often at quartz inversion, {{1063 °F; 573 °C}}.
 
-Color bajo cubierta (underglaze)
-: Decoración de barbotina coloreada o de óxidos, normalmente bajo un esmalte transparente.
+Earthenware
+: A low-fire body (about cone 06–02) that stays porous.
 
-Colorante y pigmento (colorant and stain)
-: Un óxido o carbonato metálico que colorea el esmalte; un pigmento es un colorante fabricado industrialmente, más estable.
+Feldspar
+: A mineral supplying alkali flux with alumina and silica: potash, soda or nepheline syenite.
 
-Cono (cone)
-: Una pirámide cerámica calibrada que se dobla al recibir un trabajo térmico determinado. Un cono testigo muestra lo que recibieron las piezas.
+Flocculant and deflocculant
+: Additives that gel a slurry (Epsom salts, vinegar) or thin it (sodium silicate, Darvan).
 
-Cuarteado (crazing)
-: Grietas finas en un esmalte que se contrae más que su pasta; craquelado cuando se busca a propósito.
+Flux
+: An oxide that lowers the melting temperature of silica.
 
-Densidad (specific gravity, SG)
-: El peso de una suspensión comparado con el de un mismo volumen de agua. En los libros británicos antiguos: pint weight (peso por pinta).
+Food safe
+: In law, releasing less lead and cadmium than the limits in an acid test. Not the same as lead-free.
 
-Desconchado (shivering)
-: El esmalte salta en escamas de los bordes porque está demasiado comprimido; un peligro en la cerámica funcional.
+Frit
+: Factory-made glass, melted, quenched and ground, that makes soluble or toxic oxides insoluble.
 
-Desvitrificación (devitrification)
-: Cristales que crecen en el vidrio al principio del enfriamiento, donde no se quieren.
+Glass former
+: The oxide that builds the glass, usually silica.
 
-Esmalte (glaze)
-: Una capa de vidrio que se funde en la cocción para sellar y decorar una pieza.
+Glaze
+: A coat of glass that melts in firing to seal and decorate a pot.
 
-Esmalte de interior (liner glaze)
-: Un esmalte estable, normalmente transparente o blanco, para las superficies que tocan los alimentos.
+Glaze firing (UK: glost firing)
+: The firing that melts the glaze.
 
-Estabilizante (stabilizer)
-: Un óxido, sobre todo la alúmina, que hace más viscoso el fundido y aporta durabilidad.
+Glaze fit
+: How well glaze and body expansion match; a good fit leaves the glaze slightly compressed.
 
-Feldespato (feldspar)
-: Un mineral que aporta un fundente alcalino junto con alúmina y sílice: potásico, sódico o nefelina sienita.
+Gloss, satin and matte
+: Reflective and smooth; a subdued sheen; dull.
 
-Floculante y defloculante (flocculant and deflocculant)
-: Aditivos que gelifican una suspensión (sales de Epsom, vinagre) o la hacen más fluida (silicato sódico, Darvan).
+Greenware
+: Unfired ware: leather-hard when stiff but damp, bone dry when no free water is left.
 
-Formador de vidrio (glass former)
-: El óxido que construye el vidrio, normalmente la sílice.
+Heatwork
+: The combined effect of temperature and time in a kiln; what cones measure.
 
-Fórmula límite o fórmula objetivo (limit formula, target formula)
-: Intervalos típicos de la fórmula Seger para esmaltes estables a un cono; una guía, no una garantía.
+Kaolin (UK: china clay)
+: A pure white clay supplying alumina and silica; keeps glaze suspended. Australia: Eckalite.
 
-Fórmula Seger, UMF (unity molecular formula, Seger formula)
-: Los óxidos de un esmalte expresados como número de moléculas, ajustados para que los fundentes sumen 1.
+Kiln wash
+: A heat-resisting coating that protects kiln shelves from drips.
 
-Frita (frit)
-: Vidrio hecho en fábrica, fundido, enfriado bruscamente y molido, que vuelve insolubles los óxidos solubles o tóxicos.
+Leaching
+: Metals dissolving out of a fired glaze into food or drink.
 
-Fundente (flux)
-: Un óxido que baja la temperatura de fusión de la sílice.
+Limit formula (target formula)
+: Typical unity-formula ranges for stable glazes at a cone; a guide, not a guarantee.
 
-Gres (stoneware)
-: Una pasta de media a alta temperatura (de cono 5–10 aproximadamente) que vitrifica, o casi.
+Line blend
+: Tests stepping one ingredient between two amounts. A triaxial blend varies three on a grid.
 
-Grieta de enfriamiento o de calentamiento (dunting)
-: Grietas en una pieza por las tensiones del enfriamiento o del calentamiento, a menudo en la inversión del cuarzo, {{1063 °F; 573 °C}}.
+Liner glaze
+: A stable, usually clear or white glaze for surfaces that touch food.
 
-Loza (earthenware)
-: Una pasta de baja temperatura (de cono 06–02 aproximadamente) que sigue siendo porosa.
+LOI (loss on ignition)
+: Weight lost in firing as water, carbon dioxide, organic matter or sulfur.
 
-Mezcla lineal (line blend)
-: Pruebas en las que un ingrediente varía por pasos entre dos cantidades. Una mezcla triaxial (triaxial blend) hace variar tres en una cuadrícula.
+Once-firing (single firing)
+: Glazing unfired ware and firing it only once.
 
-Monococción (once-firing, single firing)
-: Esmaltar piezas sin cocer y cocerlas una sola vez.
+Opacifier
+: A material, such as zircon, tin oxide or titanium dioxide, that makes glaze opaque.
 
-Opacificante (opacifier)
-: Un material, como el silicato de zirconio, el óxido de estaño o el dióxido de titanio, que vuelve opaco el esmalte.
+Oxidation and reduction
+: Firing with plenty of oxygen (electric kilns), or with oxygen restricted (usually gas or wood).
 
-Oxidación y reducción (oxidation and reduction)
-: Cocción con abundante oxígeno (hornos eléctricos) o con el oxígeno restringido (normalmente, gas o leña).
+Oxide
+: A compound of an element with oxygen; an oxide analysis lists them by weight percent.
 
-Óxido (oxide)
-: Un compuesto de un elemento con oxígeno; un análisis de óxidos los enumera en porcentaje en peso.
+Pinholing and blistering
+: Small holes, or sharp-edged craters, where gas escaped through the melt.
 
-Pérdida al fuego, PF (loss on ignition, LOI)
-: El peso que se pierde en la cocción en forma de agua, dióxido de carbono, materia orgánica o azufre.
+Porcelain
+: A white, kaolin-rich, high-fire body, often translucent.
 
-Piezas en crudo (greenware)
-: Piezas sin cocer: a dureza de cuero cuando están firmes pero húmedas; totalmente secas cuando no les queda agua libre.
+R₂O and RO
+: The alkali fluxes (Na₂O, K₂O, Li₂O) and alkaline-earth fluxes (CaO, MgO, BaO, SrO, with ZnO).
 
-Pinchado y ampollas (pinholing and blistering)
-: Agujeritos, o cráteres de bordes afilados, por donde el gas escapó a través del fundido.
+Shivering
+: Glaze flaking off edges because it is over-compressed; a hazard on functional ware.
 
-Porcelana (porcelain)
-: Una pasta blanca de alta temperatura, rica en caolín, a menudo translúcida.
+Silica (SiO₂)
+: The glass former; also called flint or quartz.
 
-Protector de placas (kiln wash)
-: Un recubrimiento resistente al calor que protege las placas del horno de los goteos.
+Silica to alumina ratio
+: Silica divided by alumina in the unity formula: higher tends to gloss, lower to matte.
 
-R₂O y RO
-: Los fundentes alcalinos (Na₂O, K₂O, Li₂O) y los alcalinotérreos (CaO, MgO, BaO, SrO, con ZnO).
+Slip and engobe
+: Clay in water; an engobe is a slip-like coating with more non-clay material.
 
-Receta (batch recipe)
-: Las materias primas de un esmalte en peso, que normalmente suman 100.
+Specific gravity (SG)
+: A slurry's weight compared with the same volume of water. Older UK: pint weight.
 
-Recogido (crawling)
-: El esmalte se retira formando gotas durante la cocción y deja la arcilla al descubierto.
+Stabilizer
+: An oxide, mainly alumina, that stiffens the melt and adds durability.
 
-Relación sílice/alúmina (silica to alumina ratio)
-: La sílice dividida por la alúmina en la fórmula Seger: cuanto más alta, más tiende al brillo; cuanto más baja, al mate.
+Stoneware
+: A mid- to high-fire body (about cone 5–10) that becomes vitreous or nearly so.
 
-Sílice (silica, SiO₂)
-: El formador de vidrio; también se llama sílex o cuarzo.
+Thixotropy
+: Flowing when stirred, setting into a soft gel when still.
 
-Tixotropía (thixotropy)
-: Fluir al removerse y cuajar en un gel blando en reposo.
+Underglaze
+: Colored slip or oxide decoration, usually under a clear glaze.
 
-Trabajo térmico (heatwork)
-: El efecto conjunto de la temperatura y el tiempo en un horno; lo que miden los conos.
+Unity molecular formula (UMF, Seger formula)
+: A glaze's oxides as molecule counts, scaled so the fluxes add up to 1.
 
-Vitrificación (vitrification)
-: El proceso por el que una pasta se vuelve vítrea y no porosa en la cocción.
+Vitrification
+: A body becoming glassy and non-porous in firing.
 
-## Fuentes {#sources}
+Wax resist
+: Wax painted where glaze must not go, usually the foot.
+
+Whiting
+: Calcium carbonate, the main calcium flux; loses over 40% of its weight in firing. German: Kreide.
+
+## Sources {#sources lang=en}
 
 - [Glazy Help: Glaze](https://help.glazy.org/concepts/glaze)
 - [Glazy Help: Oxides](https://help.glazy.org/concepts/oxides)
@@ -472,8 +472,9 @@ Vitrificación (vitrification)
 - [Glazy Help: Firing](https://help.glazy.org/concepts/firing)
 - [Glazy Help: Defects](https://help.glazy.org/concepts/defects)
 - [Glazy Help: Specific gravity](https://help.glazy.org/testing/specific-gravity)
-- [Orton Ceramic Foundation: Pyrometric cone chart, °F (vía The Ceramic Shop)](https://www.theceramicshop.com/technical_info/Cones/Orton-Cone-Chart-F-022-14.pdf)
+- [Orton Ceramic Foundation: Pyrometric cone chart, °F (via The Ceramic Shop)](https://www.theceramicshop.com/technical_info/Cones/Orton-Cone-Chart-F-022-14.pdf)
 - [Digitalfire: Bisque](https://digitalfire.com/glossary/bisque)
+- [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Unity molecular formula](https://digitalfire.com/glossary/unity+molecular+formula)
 - [Digitalfire: LOI](https://digitalfire.com/glossary/loi)
 - [Digitalfire: Frit](https://digitalfire.com/glossary/frit)
@@ -489,3 +490,4 @@ Vitrificación (vitrification)
 - [Potclays: The difference between stoneware and earthenware](https://www.potclays.co.uk/clay-questions/difference-stoneware-earthenware)
 - [US FDA: Compliance Policy Guide Sec. 545.450, Pottery (ceramics), lead contamination](https://www.fda.gov/media/71764/download)
 - [EUR-Lex: Council Directive 84/500/EEC on ceramic articles in contact with food](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:31984L0500)
+- [eCFR: 21 CFR 109.16, Ornamental and decorative ceramicware](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-109/subpart-A/section-109.16)

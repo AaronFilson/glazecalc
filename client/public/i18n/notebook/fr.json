@@ -116,7 +116,6 @@
   },
   "trash": {
     "title": "Corbeille",
-    "lead": "Ce que vous retirez de vos recettes, matières, notes et relevés attend ici pendant 30 jours. Remettez-le en place, ou supprimez-le définitivement.",
     "listHeading": "Dans la corbeille",
     "none": "La corbeille est vide.",
     "untitled": "Sans titre",

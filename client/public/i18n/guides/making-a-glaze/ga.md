@@ -22,58 +22,58 @@ Nuair a dhéanann tú glónra{{en: glaze}}, meánn tú **amhábhair** i bhfoirm 
 > [!WARNING]
 > **Is guais deannaigh é púdar glónra tirim.** Is féidir go bhfuil idir 10 agus 60% de ghlónra tirim déanta de shilice{{en: silica}} chriostalta, agus tugann Health and Safety Executive (HSE) na Ríochta Aontaithe rabhadh nach bhfeictear a deannach faoi ghnáthsholas. Tóg an púdar go réidh le scúp ó airde íseal, coinnigh na clúdaigh ar na coimeádáin, fliuch an púdar chomh luath agus is féidir leat, agus glan suas go fliuch, gan scuab a úsáid riamh. Caith masc análaitheora a oireann duit fad atá na púdair tirim (N95 nó P100 i SAM, FFP2 nó FFP3 sa Ríocht Aontaithe agus san AE, P2 nó P3 san Astráil agus sa Nua-Shéalainn). Pléann an treoirleabhar [Meascadh sábháilte agus aeráil](/guides/safe-mixing) go hiomlán le deannach, le maisc análaitheora agus le glanadh.
 
-## Ábhair a cheannach {#buying-materials}
+## Buying materials {#buying-materials lang=en}
 
-### Cá háit le ceannach
+### Where to buy
 
-Ceannaíonn potadóirí ó sholáthraithe ceirmeachta, a dhíolann cré, amhábhair ghlónra agus uirlisí. Taispeánann an tábla cuid acu do do thír féin, gach ceann seiceáilte ar shuíomh an tsiopa féin, agus is féidir leat tír eile a roghnú chun a siopaí a fheiceáil. Athraíonn a mbíonn ar díol, mar sin seiceáil sula n-ordaíonn tú. Díolann táirgeoirí móra ar nós Sibelco agus Imerys leis an tionscal; ceannaíonn potadóirí a gcuid ábhar trí shiopaí mar iad seo. Coinníonn Digitalfire, suíomh tagartha ceirmeachta, eolaire de shiopaí soláthraithe d’áiteanna eile.
+Potters buy from ceramic suppliers, which sell clay, glaze materials and tools. The table shows some for your country, each checked on the shop's own site, and you can choose another country to see its shops. Stock changes, so check before you order. Large producers such as Sibelco and Imerys sell to industry; potters buy their materials through shops like these. The ceramics reference site Digitalfire keeps a directory of supplier stores for other places.
 
 ::shops
 
-### An méid le ceannach
+### How much to buy
 
-Is é **50 lb (22.7 kg)** an gnáthmhála i SAM agus **25 kg (55 lb)** in áiteanna eile, mar sin tá an dá cheann beagnach mar a chéile. Díolann go leor soláthraithe pacáistí 1, 2.5 nó 5 kg (thart ar 2.2, 5.5 nó 11 lb) le haghaidh tástálacha freisin. Molann Glazy, an bunachar oscailte oideas, na hábhair a úsáideann tú go rialta (iathchloch{{en: feldspar}}, silice{{en: silica}}, caoilín{{en: kaolin}}, bánlí{{en: whiting}}, agus friot{{en: frit}} do mheánbhácáil) a cheannach ina málaí iomlána, atá 20–30% níos saoire go minic. Ceannaigh **ábhair datha**{{en: colorants}}, na hocsaídí miotail agus na líocha{{en: stains}} a thugann dath do ghlónra{{en: glaze}}, i méideanna beaga: úsáidtear an chuid is mó acu faoi bhun 5%. Chosain liostaí siopadóireachta samplacha Glazy thart ar $515 do mheánbhácáil agus $397 d’ardbhácáil, ar phraghsanna SAM.
+The standard sack is **50 lb (22.7 kg)** in the US and **25 kg (55 lb)** elsewhere, so the two are nearly the same. Many suppliers also sell 1, 2.5 or 5 kg packs (about 2.2, 5.5 or 11 lb) for tests. Glazy, the open recipe database, advises buying the materials you use steadily (feldspar, silica, kaolin, whiting, and frit for mid-fire) in full sacks, which are often 20 to 30% cheaper. Buy **colorants**, the metal oxides and stains that color a glaze, in small amounts: most are used at under 5%. Glazy's sample shopping lists came to about $515 for mid-fire and $397 for high-fire, at US prices.
 
-### Tacar tosaigh
+### A starter set
 
-Is é seo bunliosta Glazy d’aon teocht: silice, caoilín, iathchloch, bánlí, ocsaíd since, agus dolaimít nó talc. Bíonn bórón ag teastáil freisin ón gcuid is mó de ghlónraí meánbhácála (cón{{en: cone}} 5–6), ó fhriot de ghnáth: dar le Glazy, bíonn friot “comhsheasmhach agus níos lú intuaslagtha ná bóráití nach ndearnadh friot díobh”. Is é an tacar thíos ár moladh féin, bunaithe ar liosta Glazy agus ar liosta ó fhóram. Míníonn an treoirleabhar [Glónrú ó bhunphrionsabail](/guides/glazing-basics) cad a dhéanann gach ábhar.
+Glazy's core list for any temperature is silica, kaolin, feldspar, whiting, zinc oxide, and dolomite or talc. Most mid-fire (cone 5 to 6) glazes also need boron, usually from a frit, which Glazy calls "consistent and less soluble than raw borates". The set below is our suggestion, drawn from Glazy's list and a forum list. The [glazing basics guide](/guides/glazing-basics) explains what each material does.
 
-Table: Tacar tosaigh ábhar (ár moladh)
-Label: Tacar tosaigh
+Table: A starter set of materials (our suggestion)
+Label: Starter set
 
-| Ábhar                                                              | Cad atá le ceannach                                                                                                            |
-| ------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ |
-| Silice (ar a dtugtar breochloch{{en: flint}} freisin; féach thíos) | 325 mesh, an grád níos míne is fearr le Glazy do ghlónraí                                                                      |
-| Caoilín (cré shíneach sa Ríocht Aontaithe)                         | EPK i SAM; Grolleg nó cré shíneach eile sa Ríocht Aontaithe; caoilín NZ sa Nua-Shéalainn                                       |
-| Iathchloch photaise                                                | Pé ceann atá ar díol anois san áit a bhfuil cónaí ort, mar shampla Mahavir i SAM                                               |
-| Siainít neifilín{{en: nepheline syenite}}                          | Aon cheann; deir Glazy go bhfuil cumas floscach níos láidre aici, agus úsáidtear go minic í in ísealbhácáil agus i meánbhácáil |
-| Bánlí                                                              | Aon cheann                                                                                                                     |
-| Talc                                                               | Aon cheann                                                                                                                     |
-| Friot bóróin, do mheánbhácáil                                      | Ferro 3134, 3124 nó 3195; sa Ríocht Aontaithe, Potterycrafts P3124 nó P3195                                                    |
-| Beintinít agus ábhair datha                                        | Méideanna beaga                                                                                                                |
+| Material                              | What to buy                                                                      |
+| ------------------------------------- | -------------------------------------------------------------------------------- |
+| Silica (also called flint; see below) | 325 mesh, the finer grade Glazy prefers for glazes                               |
+| Kaolin (china clay in the UK)         | EPK in the US; Grolleg or another china clay in the UK; NZ kaolin in New Zealand |
+| Potash feldspar                       | Whichever is current where you live, such as Mahavir in the US                   |
+| Nepheline syenite                     | Any; Glazy notes its stronger fluxing power, often used at low and mid-fire      |
+| Whiting                               | Any                                                                              |
+| Talc                                  | Any asbestos-free grade; check its SDS (see Safe mixing)                         |
+| A boron frit, for mid-fire            | Ferro 3134, 3124 or 3195; in the UK, Potterycrafts P3124 or P3195                |
+| Bentonite and colorants               | Small amounts                                                                    |
 
-### Bileoga sonraí agus bileoga sonraí sábháilteachta
+### Data sheets and safety data sheets
 
-Iarr dhá cháipéis do gach ábhar. Tugann **bileog sonraí teicniúla** (TDS) a **anailís cheimiceach**: sciar gach ocsaíde sa phúdar, de réir meáchain. Oibríonn an aip Glazecalc ó na hanailísí seo, agus is féidir leat ábhar a chur leis ó anailís soláthraí ar an [leathanach ‘Ábhair’](/material). Insíonn **bileog sonraí sábháilteachta** (SDS) conas an púdar neamhbhácáilte a láimhseáil. Coinnigh gach SDS, agus léigh í sula meascann tú.
+Ask for two documents for each material. A **technical data sheet** (TDS) gives its **chemical analysis**: the share of each oxide in the powder, by weight. Glazecalc works from these, and you can add a material from a supplier's analysis on the [Materials page](/material). A **safety data sheet** (SDS) says how to handle the raw powder. Keep each SDS, and read it before you mix.
 
-Meáin is ea na hanailísí, ní geallúintí. Priontálann Valentine Clays “MEÁNLUACHANNA. NÍ SONRAÍOCHT IAD SEO” ar a bhileog sonraí don bhreochloch, agus téann anailísí Glazy ar an iathchloch Custer ó bhlianta éagsúla ó thart ar 68.5% go 72.4% silice. Molaimid **baiscuimhir** gach mála (a chód baisce) a scríobh i do thaifid, ionas gur féidir leat a aithint ar ón ábhar a tháinig athrú ar ghlónra a bhfuil muinín agat as.
+Analyses are averages, not promises. Valentine Clays prints "MEAN VALUES. THESE DO NOT REPRESENT A SPECIFICATION" on its flint data sheet, and Glazy's analyses of Custer feldspar from different years run from about 68.5% to 72.4% silica. We suggest writing each sack's **lot number** (its batch code) in your records, so you can tell whether a change in a trusted glaze came from the material.
 
-Tugann HSE na Ríochta Aontaithe rabhadh gur féidir go mbeadh silice chriostalta “lipéadaithe go mícheart mar ‘silice éagruthach’”. Agus baineann SDS leis an bpúdar, ní leis an bpota: ní deir sí tada faoi cé acu atá glónra bácáilte slán i gcomhair bia{{en: food safe}} nó nach bhfuil. Ní féidir é sin a léiriú ach le tástáil saotharlainne láistithe miotal ar an bpota bácáilte.
+HSE warns that crystalline silica "can be wrongly labelled as 'amorphous silica'". And an SDS is about the powder, not the pot: it says nothing about whether a fired glaze is safe for food. Only a laboratory leach test of the fired pot can show that.
 
-### Ceannach de réir ceimice, mar go n-athraíonn ainmneacha
+### Names change, so buy by chemistry
 
-Tagann agus imíonn ainmneacha branda de réir mar a dhúntar mianaigh. Baineadh an iathchloch Custer i nDakota Theas ar feadh níos mó ná 75 bliain, agus tháinig deireadh léi go déanach in 2023. Nuair a d’aistrigh Clay Art Center go G-200 AU agus Mahavir, b’éigean thart ar leath dá ghlónraí a choigeartú. Tá G-200 agus G-200 HP imithe freisin, agus allmhairíonn Laguna an t-ábhar Mahavir anois, atá gar don ábhar G-200 ó thaobh ceimice de.
+Brand names come and go as mines close. Custer feldspar, mined in South Dakota for more than 75 years, ran out in late 2023. When Clay Art Center switched to G-200 AU and Mahavir, about half its glazes needed adjusting. G-200 and G-200 HP are gone too, and Laguna now imports Mahavir, whose chemistry is close to G-200.
 
-Tá **Gerstley Borate**, mianra nádúrtha bóróin atá i go leor seanoideas, gann ó dúnadh a mhianach sa bhliain 2000, cé gur thuairiscigh New Mexico Clay i mí na Samhna 2025 go raibh Laguna ag soláthar “Gerstley Borate Original”. Ní réitíonn na foinsí le chéile faoi **Gillespie Borate** mar ionadach. Díolann a dhéantóir é mar mhalairt punt ar phunt. Deir Berkeley Potters Studio “nach ionadach díreach é”, agus fuair Digitalfire gur athraigh sé dath glónra. Is é an rud sábháilte an dá cheann a chur i gcomparáid de réir a n-ocsaídí, agus ansin tástáil a dhéanamh.
+**Gerstley Borate**, a natural boron mineral in many older recipes, has been scarce since its mine closed in 2000, though New Mexico Clay reported in November 2025 that Laguna was supplying "Gerstley Borate Original". Sources disagree about **Gillespie Borate** as a replacement. Its maker sells it as pound-for-pound. Berkeley Potters Studio says it "is not a direct substitute", and Digitalfire found it changed a glaze's color. The safe course is to compare the two by their oxides, then test.
 
-Bíonn difríochtaí idir ainmneacha ó réigiún go réigiún freisin. I Meiriceá Thuaidh, ciallaíonn **breochloch**, grianchloch agus silice an tsilice mheilte chéanna, agus deir Digitalfire gur dócha nach bhfaighidh tú fíorphúdar breochloiche ó sholáthraithe. Sa Ríocht Aontaithe, is táirge ar leith í an bhreochloch: silice chailcínithe (téite) atá sa bhreochloch ó Valentine. Is silice nach mór íon iad araon, mar sin measaimid go bhfuil siad gar dá chéile, ach seiceáil an anailís. Maidir le caoilín, deir Glazy go n-oibríonn malartuithe ceann ar cheann, mar shampla EPK a úsáid seachas cré shíneach, “go breá go minic, go háirithe nuair atá na méideanna \<10%”.
+Regional names differ too. In North America, **flint**, quartz and silica mean the same ground silica, and Digitalfire says you probably won't find true flint powder from suppliers. In the UK, flint is its own product: Valentine's is calcined (heated) silica. Both are nearly pure silica, so we expect them to be close, but check the analysis. For kaolin, Glazy says one-for-one swaps, such as EPK for a china clay, "often work just fine, especially when amounts are \<10%".
 
-Ainmníonn go leor oideas ábhair a dhíoltar i dtír amháin agus nach ndíoltar i dtír eile. Glacann an tábla thíos gach ábhar i leabharlann Glazecalc nach ndíoltar san áit a gceannaíonn tú, agus aimsíonn sé, de réir a n-anailísí, an t-ábhar is gaire dó den chineál céanna a dhíoltar ann. Léiríonn an figiúr an fad atá eatarthu: na graim difríochta idir a n-ocsaídí tar éis bácála, sa 100 g d’ábhar, curtha le chéile do gach ocsaíd. Laistigh de thart ar 15 g, is féidir de ghnáth ceann amháin a úsáid in áit an chinn eile sa chéad tástáil. Tá cóid na ndéantóirí agus na siopaí féin sna hainmneacha, ionas gur féidir leat iad a iarraidh de réir ainm.
+Many recipes name materials that are sold in one country and not another. The table below takes each material in Glazecalc's library that is not sold where you buy, and finds the closest of its kind that is, by their analyses. The figure is how far apart the two are: the grams by which their fired oxides differ, per 100 g of material, added up over every oxide. Within about 15 g, one can usually stand in for the other in a first test. The names carry the makers' and shops' own codes, so you can ask for them by name.
 
 ::local-equivalents
 
 > [!NOTE]
-> Cuireann an aip Glazecalc ábhair i gcomparáid de réir a dtugann siad don ghlónra bácáilte, ní de réir ainm. Insíonn [oideas](/recipe) ina bhfuil ábhar nach ndéantar a thuilleadh cad a úsáidtear anois. Oibríonn an ghné **Mol méideanna agus cuir i gcomparáid** na méideanna amach arís d’ionadach, agus déanann an ghné **Meaitseáil leis a bhfuil agam** an t-oideas as an nua ó na hábhair i do stoc. Ní mheaitseálann ceachtar acu ach na hocsaídí tar éis bácála, mar sin tástáil baisc bheag ar dtús.
+> Glazecalc compares materials by what they bring to the fired glaze, not by name. A [recipe](/recipe) with a material no longer made says what is used now. **Suggest amounts and compare** works the amounts out again for a substitute, and **Match with what I have** makes the recipe again from the materials on your shelf. Both match the fired oxides only, so test a small batch first.
 
 ## Ábhair agus glónraí a stóráil {#storing}
 
@@ -163,55 +163,55 @@ Label: Mesh an chriathair
 | Glónraí le hábhair datha{{en: colorants}} ar nós cóbailt nó iarainn | 100 go 120 mesh                |
 | Glónraí luaithe, agus glónraí eile le hábhair gharbha               | 60 go 80 mesh                  |
 
-## Sainmheáchan {#specific-gravity}
+## Specific gravity {#specific-gravity lang=en}
 
-Insíonn an **sainmheáchan**{{en: specific gravity, SG}} (SM) duit cé mhéad púdair atá i do dhraoib{{en: slurry}}. Is é atá ann ná meáchan toirte áirithe glónra{{en: glaze}} roinnte ar mheáchan na toirte céanna uisce. Is é 1.00 luach an uisce, agus meánn glónra ag {{SG 1.45}} 145 g sa 100 mL. Má mheascann tú go sainmheáchan tomhaiste, gheobhaidh tú an tiús céanna, agus an brat céanna, gach uair. Níl aonad ar bith leis, mar sin is ionann é i ngraim nó in unsaí.
+**Specific gravity** (SG) tells you how much powder is in your slurry. It is the weight of a volume of glaze divided by the weight of the same volume of water. Water is 1.00, and a glaze at {{SG 1.45}} weighs 145 g per 100 mL. Mixing to a measured SG is how you get the same thickness, and the same coat, every time. It has no units, so it is the same in grams or ounces.
 
-### É a thomhas trí 100 mL a mheá
+### Measure it by weighing 100 mL
 
-1. Corraigh an glónra ionas nach bhfuil aon rud síothlaithe.
-2. Cuir **sorcóir tomhais** 100 mL (feadán tomhais ard marcáilte) nó steallaire 100 mL ar an meá, agus brúigh táir.
-3. Líon le glónra é go dtí 100 mL go díreach, ag léamh an mhairc ag leibhéal na súl.
-4. Meáigh é agus roinn na graim ar 100: is ionann 145 g agus SM 1.45.
+1. Stir the glaze so nothing has settled.
+2. Put a 100 mL **graduated cylinder** (a tall, marked measuring tube) or a 100 mL syringe on the scale, and tare it.
+3. Fill it with glaze to exactly 100 mL, reading the mark at eye level.
+4. Weigh it and divide the grams by 100: 145 g is SG 1.45.
 
-Cuireann Digitalfire marc freisin ar chupán ag leibhéal 500 g uisce, líonann sé go dtí an marc é le glónra, agus roinneann sé an meáchan ar 500; is cruinne tomhas níos mó, níos lána. Is tapa an **hidriméadar**, snámhán a léitear san áit a luíonn sé sa ghlónra, ach is féidir leis léamh mícheart a thabhairt ar ghlónraí tiubha nó glóthaithe. Léann hidriméadair na Ríochta Aontaithe, ar nós an chinn ó Potclays, i gcéimeanna Baumé (°Bé). De réir ár n-uimhríochta, SM = 145 ÷ (145 − °Bé), mar sin is ionann 46 °Bé agus thart ar 1.46. Tugann seanleabhair ón Ríocht Aontaithe **meáchan pionta**, na hunsaí i bpionta impiriúil glónra: roinn ar 20 é, mar sin is ionann 29 oz agus thart ar SM 1.45 (ár n-uimhríocht féin freisin).
+Digitalfire also marks a cup at the level of 500 g of water, fills it to the mark with glaze, and divides the weight by 500; a bigger, fuller measure is more accurate. A **hydrometer**, a float read where it sits in the glaze, is quick but can misread thick or gelled glazes. UK hydrometers, such as Potclays', read in degrees Baumé (°Bé). By our arithmetic, SG = 145 ÷ (145 − °Bé), so 46 °Bé is about 1.46. Older UK books give a **pint weight**, the ounces in an imperial pint of glaze: divide it by 20, so 29 oz is about SG 1.45 (also our arithmetic).
 
-### Cad ar cheart díriú air
+### What to aim for
 
-Ní réitíonn na foinsí le chéile, go háirithe faoi scuabadh agus spraeáil, áit a dtugann Potclays, soláthraí sa Ríocht Aontaithe, figiúirí i bhfad níos airde (deir sé féin go bhfuil a fhigiúirí “mar threoir amháin”). Caith le gach uimhir mar phointe tosaigh. Is é príomhchomhairle Digitalfire an sainmheáchan agus an glóthú a oibríonn do gach glónra a aimsiú, ansin iad a athdhéanamh agus a scríobh síos.
+Sources disagree, most of all on brushing and spraying, where the UK supplier Potclays gives much higher figures (its own are "for guidance only"). Treat every number as a starting point. Digitalfire's core advice is to find the SG and gelling that work for each glaze, then repeat them and write them down.
 
-Table: Spriocanna sainmheáchain, áit a n-easaontaíonn na foinsí
-Label: Spriocanna sainmheáchain
+Table: Specific gravity targets, where sources disagree
+Label: Specific gravity targets
 
-| Úsáid    | Digitalfire agus Glazy                                                                                                                                                      | Potclays (UK)                                           | Pointe tosaigh sábháilte                                                               |
-| -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| Tumadh   | {{SG 1.40}} (do thumadh 5 shoicind) go {{SG 1.50}} (do thumadh 1 soicind); is fearr a oibríonn glónraí measctha sa bhaile atá glóthaithe ag {{SG 1.43–1.45}}                | Glónra glé: {{SG 1.46–1.48}}; glónra daite: {{SG 1.61}} | {{SG 1.45}}; má shileann sé, tanaigh é go dtí go léann sé {{SG 1.43}} agus glóthaigh é |
-| Scuabadh | {{SG 1.25}} (glónra glé tanaí) go {{SG 1.55}} (mionsonraí dorcha)                                                                                                           | {{SG 1.71–1.81}}                                        | Lean treoracha an táirge; úsáid guma CMC nó meán scuabtha                              |
-| Spraeáil | Gan figiúr; deir Hopper, ag scríobh do Ceramic Arts Network, go mbíonn sé i bhfad níos tanaí, le dífhlocasach{{en: deflocculant}} (breiseán a fhágann draoib níos leachtaí) | {{SG 1.71}}                                             | Níl figiúr iontaofa ann; ná spraeáil ach i mboth spraeála                              |
+| Use      | Digitalfire and Glazy                                                                                                                 | Potclays (UK)                               | Safe starting point                                     |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------- |
+| Dipping  | {{SG 1.40}} (for a 5-second dip) to {{SG 1.50}} (for a 1-second dip); home-mixed glazes that are gelled do best at {{SG 1.43–1.45}}   | Clear {{SG 1.46–1.48}}; colored {{SG 1.61}} | {{SG 1.45}}; thin to {{SG 1.43}} and gel it if it drips |
+| Brushing | {{SG 1.25}} (thin clear) to {{SG 1.55}} (dark detail)                                                                                 | {{SG 1.71–1.81}}                            | Follow the product; use CMC gum or a brushing medium    |
+| Spraying | No figure; Hopper, writing for Ceramic Arts Network, says much thinner, with a deflocculant (an additive that makes a slurry runnier) | {{SG 1.71}}                                 | No reliable number; spray only in a spray booth         |
 
-Chun glónra tumtha a sheiceáil le do shúil, tumann AMACO ar feadh 5 shoicind agus lorgaíonn sé brat atá thart ar chomh tiubh le dím, bonn deich gcent SAM. Bácálann Digitalfire tíleanna a tumadh ar feadh 5 shoicind chun é a sheiceáil.
+To check a dipping glaze by eye, AMACO dips for 5 seconds and looks for a coat about as thick as a US dime. Digitalfire fires tiles dipped for 5 seconds to check.
 
-### An méid uisce do gach sprioc: ár meastachán
+### Water for a target SG: our estimate
 
-Is é ár n-uimhríocht féin an tábla thíos, ní uimhríocht foinse. Glacann sé leis go bhfuil dlús 2.6 g sa cm³ ag cáithníní an phúdair; is toimhde é sin, ní tomhas. Athraíonn cré, ábhair intuaslagtha agus glóthú glónra fíor, mar sin úsáid é chun tosú, ansin tomhais. Mar sheiceáil, tuarann sé {{SG 1.44}} do mheáchain chothroma púdair agus uisce, agus thomhais Digitalfire {{SG 1.46}}, atá gar dó. Léiríonn sé freisin go dtosaíonn tú ag níos mó ná {{SG 1.50}} le 70 go 80 mL sa 100 g: níos tibhe ná mar is gá.
+The table below is our own arithmetic, not a source's. It assumes the powder's particles have a density of 2.6 g per cm³, which is an assumption, not a measurement. Clay, soluble materials and gelling all change a real glaze, so use it to start, then measure. As a check, it predicts {{SG 1.44}} for equal weights of powder and water, close to Digitalfire's measured {{SG 1.46}}. It also shows that 70 to 80 mL per 100 g starts you above {{SG 1.50}}, thicker than you need.
 
-Table: Uisce do gach sprioc sainmheáchain (ár meastachán)
-Label: Uisce do gach sprioc sainmheáchain
+Table: Water for a target specific gravity (our estimate)
+Label: Water for a target specific gravity
 
-| Sprioc      | Sa 100 g púdair |    Sa chileagram |             Sa phunt |
-| ----------- | --------------: | ---------------: | -------------------: |
-| {{SG 1.40}} | thart ar 115 mL | thart ar 1150 mL | thart ar 18 US fl oz |
-| {{SG 1.45}} |  thart ar 98 mL |  thart ar 980 mL | thart ar 15 US fl oz |
-| {{SG 1.50}} |  thart ar 85 mL |  thart ar 850 mL | thart ar 13 US fl oz |
-| {{SG 1.60}} |  thart ar 64 mL |  thart ar 640 mL | thart ar 10 US fl oz |
+| Target      | Per 100 g of powder |  Per kilogram |         Per pound |
+| ----------- | ------------------: | ------------: | ----------------: |
+| {{SG 1.40}} |        about 115 mL | about 1150 mL | about 18 US fl oz |
+| {{SG 1.45}} |         about 98 mL |  about 980 mL | about 15 US fl oz |
+| {{SG 1.50}} |         about 85 mL |  about 850 mL | about 13 US fl oz |
+| {{SG 1.60}} |         about 64 mL |  about 640 mL | about 10 US fl oz |
 
-### Salann Epsom, guma CMC agus beintinít
+### Epsom salts, CMC gum and bentonite
 
-Fágann **salann Epsom** go nglóthaíonn glónra beagán nuair a sheasann sé socair, agus go sreabhann sé arís nuair a chorraítear é. **Flocasú**{{en: flocculating}} a thugtar air seo, agus is glónra **ticseatrópach**{{en: thixotropic}} é glónra a iompraíonn é féin mar seo: leathann sé níos cothroime, sileann sé níos lú agus síothlaíonn sé níos lú. Molann Digitalfire tosú le thart ar 2 g sa ghalún nuair a bhíonn an sainmheáchan ceart (thart ar 0.5 g sa lítear, de réir ár n-athraithe féin) agus an méid a choigeartú gach uair a mheascann tú, mar níor cheart d’aon oideas an dáileog a shocrú. Molaimid é a thuaslagadh i mbeagán uisce te ar dtús. I sampla ó Digitalfire, shil glónra ag {{SG 1.45}}, mar sin tanaíodh le huisce é go dtí go raibh sé ag {{SG 1.43}}, agus ghlóthaigh salann Epsom é go raibh sé cosúil le huachtar arís, agus leath sé go cothrom. Seiceáil gharbh: corraigh, stop agus breathnaigh. Leanann glónra glóthaithe ag gluaiseacht ar feadh thart ar 2 nó 3 shoicind, ansin stopann sé agus preabann sé siar beagán.
+**Epsom salts** make a glaze gel slightly when it stands still and flow again when it is stirred. This is called **flocculating** it, and a glaze that behaves this way is **thixotropic**: it goes on more evenly, drips less and settles less. Digitalfire suggests starting at about 2 g per gallon once the SG is right (roughly 0.5 g per liter, our conversion) and tuning the amount each time you mix, since no recipe should fix the dose. We suggest dissolving it in a little hot water first. In a Digitalfire example, a glaze at {{SG 1.45}} dripped, so water brought it down to {{SG 1.43}} and Epsom salts gelled it back to creamy, and it went on evenly. A rough check: stir, stop and watch. A gelled glaze moves on for about 2 or 3 seconds, then stops and springs back a little.
 
-Fágann **guma CMC** (ceallalós carbocsaimeitile) draoib níos greamaithí agus níos moille ag triomú, agus fágann sé brat níos crua a ghreamaíonn den phota. Is mó a bhíonn sé tábhachtach do ghlónraí scuabtha agus do ghlónraí a bhfuil cuid mhór friota{{en: frit}} iontu. I sampla Digitalfire, cumasctar 3.75 g isteach i 1000 g draoibe, agus caithfear cumascóir a úsáid chun é a chur isteach. Ní ghlóthóidh salann Epsom glónra a bhfuil CMC ann, agus ós rud é go n-itheann miocróib an guma, is féidir leis an nglónra athrú sa bhuicéad agus tosú ag cur drochbholadh de.
+**CMC gum** (carboxymethyl cellulose) makes a slurry stickier and slower to dry, and leaves a harder coat that holds to the pot. It matters most for brushing glazes and glazes high in frit. Digitalfire's example blends 3.75 g into 1000 g of slurry, and it has to go in with a blender. A glaze with CMC will not gel with Epsom salts, and since microbes feed on the gum, it can change in the bucket and start to smell.
 
-Cabhraíonn **beintinít**, cré an-mhín, leis na cáithníní eile a choinneáil ar fuaidreán. Is gnách go mbíonn glónraí tumtha ag brath ar 15 go 25% cré neamhbhácáilte chuige sin. I gcás oidis nach bhfuil a dhóthain cré ann, cabhraíonn thart ar 1 go 2% beintiníte.
+**Bentonite**, a very fine clay, helps hold the other particles in suspension. Dipping glazes usually rely on 15 to 25% raw clay for this. For a recipe short of clay, about 1 to 3% bentonite helps; Digitalfire says a glaze with more than 15% clay should not need more than 1%.
 
 ## Tíleanna tástála agus sraitheanna cumaisc {#testing}
 
@@ -276,7 +276,7 @@ Label: Teimpléad taifid
 > [!NOTE]
 > San aip Glazecalc, coinníonn [oideas](/recipe) sábháilte an t-oideas féin. Coinníonn [taifead bácála](/firing) cuntas ar gach bácáil: an áith, an dáta, amanna, teochtaí, cóin agus nótaí. Coinníonn na [nótaí](/notes) gach rud eile, mar shampla taifead na baisce thuas agus an méid a léirigh gach tíl.
 
-## Foinsí {#sources}
+## Sources {#sources lang=en}
 
 - [Glazy: Raw materials](https://help.glazy.org/concepts/materials)
 - [Glazy: Specific gravity](https://help.glazy.org/testing/specific-gravity)
@@ -284,6 +284,7 @@ Label: Teimpléad taifid
 - [Digitalfire: Epsom salts](https://digitalfire.com/material/epsom+salts)
 - [Digitalfire: CMC gum](https://digitalfire.com/material/cmc%2Bgum)
 - [Digitalfire: Dipping glaze](https://digitalfire.com/glossary/dipping+glaze)
+- [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Water solubility](https://digitalfire.com/glossary/water+solubility)
 - [Digitalfire: Gerstley Borate](https://digitalfire.com/material/gerstley+borate)
 - [Digitalfire: Mahavir potash feldspar](https://digitalfire.com/material/mahavir+potash+feldspar)

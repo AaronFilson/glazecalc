@@ -22,58 +22,58 @@ Pripraviti glazuro{{en: glaze}} pomeni po receptu stehtati **surovine** v prahu 
 > [!WARNING]
 > **Suha glazura v prahu je vir nevarnega prahu.** Kristalni kremen lahko obsega od 10 do 60 % suhe glazure, britanski urad za varnost in zdravje pri delu Health and Safety Executive (HSE) pa opozarja, da je njegov prah pri običajni svetlobi neviden. Zajemajte nežno in z majhne višine, posode imejte zaprte, prah čim prej navlažite in čistite mokro, nikoli z metlo. Dokler so prahovi suhi, nosite dobro prilegajočo se zaščitno dihalno masko (N95 ali P100 v ZDA, FFP2 ali FFP3 v Združenem kraljestvu in EU, P2 ali P3 v Avstraliji in na Novi Zelandiji). Vodnik [Varno mešanje in prezračevanje](/guides/safe-mixing) podrobno obravnava prah, zaščitne dihalne maske in čiščenje.
 
-## Nakup surovin {#buying-materials}
+## Buying materials {#buying-materials lang=en}
 
-### Kje kupiti
+### Where to buy
 
-Lončarji kupujejo pri dobaviteljih keramičnih potrebščin, ki prodajajo glino, surovine za glazure{{en: glaze}} in orodje. Preglednica prikazuje nekatere v vaši državi, vsakega preverjenega na lastni spletni strani trgovine, izberete pa lahko tudi drugo državo in si ogledate njene trgovine. Ponudba se spreminja, zato jo pred naročilom preverite. Veliki proizvajalci, kot sta Sibelco in Imerys, prodajajo industriji; lončarji kupujejo njihove surovine prek trgovin, kot so te. Strokovno spletno mesto o keramiki Digitalfire vodi imenik trgovin dobaviteljev za druge kraje.
+Potters buy from ceramic suppliers, which sell clay, glaze materials and tools. The table shows some for your country, each checked on the shop's own site, and you can choose another country to see its shops. Stock changes, so check before you order. Large producers such as Sibelco and Imerys sell to industry; potters buy their materials through shops like these. The ceramics reference site Digitalfire keeps a directory of supplier stores for other places.
 
 ::shops
 
-### Koliko kupiti
+### How much to buy
 
-Standardna vreča ima v ZDA **50 lb (22,7 kg)**, drugod pa **25 kg (55 lb)**, tako da sta obe skoraj enaki. Mnogi dobavitelji za preizkuse prodajajo tudi pakiranja po 1; 2,5 ali 5 kg (približno 2,2; 5,5 ali 11 lb). Glazy, odprta zbirka receptov, svetuje, da surovine, ki jih redno porabljate (glinenec{{en: feldspar}}, kremen{{en: silica}}, kaolin{{en: kaolin}}, kredo{{en: whiting}} in za srednjetemperaturno žganje frito{{en: frit}}), kupujete v celih vrečah, ki so pogosto za 20 do 30 % cenejše. **Barvila**{{en: colorants}}, torej kovinske okside in keramične pigmente{{en: stains}}, ki glazuro obarvajo, kupujte v majhnih količinah: večina se jih uporablja v deležu pod 5 %. Vzorčni nakupovalni seznami zbirke Glazy so znašali približno 515 USD za srednjetemperaturno in 397 USD za visokotemperaturno žganje, po cenah v ZDA.
+The standard sack is **50 lb (22.7 kg)** in the US and **25 kg (55 lb)** elsewhere, so the two are nearly the same. Many suppliers also sell 1, 2.5 or 5 kg packs (about 2.2, 5.5 or 11 lb) for tests. Glazy, the open recipe database, advises buying the materials you use steadily (feldspar, silica, kaolin, whiting, and frit for mid-fire) in full sacks, which are often 20 to 30% cheaper. Buy **colorants**, the metal oxides and stains that color a glaze, in small amounts: most are used at under 5%. Glazy's sample shopping lists came to about $515 for mid-fire and $397 for high-fire, at US prices.
 
-### Začetni nabor
+### A starter set
 
-Osnovni seznam zbirke Glazy za katero koli temperaturo obsega kremen, kaolin, glinenec, kredo, cinkov oksid ter dolomit ali talkum. Večina glazur za srednjetemperaturno žganje (Ortonov stožec{{en: cone}} 5–6) potrebuje tudi bor, običajno iz frite, ki jo Glazy opisuje kot »enakomerno in manj topno od surovih boratov«. Spodnji nabor je naš predlog, sestavljen po seznamu zbirke Glazy in seznamu z nekega foruma. Vodnik [Glaziranje od osnov](/guides/glazing-basics) pojasni, kaj počne posamezna surovina.
+Glazy's core list for any temperature is silica, kaolin, feldspar, whiting, zinc oxide, and dolomite or talc. Most mid-fire (cone 5 to 6) glazes also need boron, usually from a frit, which Glazy calls "consistent and less soluble than raw borates". The set below is our suggestion, drawn from Glazy's list and a forum list. The [glazing basics guide](/guides/glazing-basics) explains what each material does.
 
-Table: Začetni nabor surovin (naš predlog)
-Label: Začetni nabor
+Table: A starter set of materials (our suggestion)
+Label: Starter set
 
-| Surovina                                                     | Kaj kupiti                                                                                                          |
-| ------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------- |
-| Kremen (imenovan tudi kremenjak{{en: flint}}; glejte spodaj) | 325 mesh, finejša zrnatost, ki ji Glazy za glazure daje prednost                                                    |
-| Kaolin (v Združenem kraljestvu China clay)                   | EPK v ZDA; Grolleg ali drug China clay v Združenem kraljestvu; NZ kaolin na Novi Zelandiji                          |
-| Kalijev glinenec                                             | Tisti, ki se trenutno prodaja tam, kjer živite, na primer Mahavir v ZDA                                             |
-| Nefelin sienit{{en: nepheline syenite}}                      | Kateri koli; Glazy omenja njegovo večjo talilno moč, pogosto se uporablja pri nizko- in srednjetemperaturnem žganju |
-| Kreda                                                        | Katera koli                                                                                                         |
-| Talkum                                                       | Kateri koli                                                                                                         |
-| Borova frita, za srednjetemperaturno žganje                  | Ferro 3134, 3124 ali 3195; v Združenem kraljestvu Potterycrafts P3124 ali P3195                                     |
-| Bentonit in barvila                                          | V majhnih količinah                                                                                                 |
+| Material                              | What to buy                                                                      |
+| ------------------------------------- | -------------------------------------------------------------------------------- |
+| Silica (also called flint; see below) | 325 mesh, the finer grade Glazy prefers for glazes                               |
+| Kaolin (china clay in the UK)         | EPK in the US; Grolleg or another china clay in the UK; NZ kaolin in New Zealand |
+| Potash feldspar                       | Whichever is current where you live, such as Mahavir in the US                   |
+| Nepheline syenite                     | Any; Glazy notes its stronger fluxing power, often used at low and mid-fire      |
+| Whiting                               | Any                                                                              |
+| Talc                                  | Any asbestos-free grade; check its SDS (see Safe mixing)                         |
+| A boron frit, for mid-fire            | Ferro 3134, 3124 or 3195; in the UK, Potterycrafts P3124 or P3195                |
+| Bentonite and colorants               | Small amounts                                                                    |
 
-### Tehnični in varnostni listi
+### Data sheets and safety data sheets
 
-Za vsako surovino zahtevajte dva dokumenta. **Tehnični list** (TDS) navaja njeno **kemijsko analizo**: masni delež vsakega oksida v prahu. Glazecalc računa na podlagi teh analiz, surovino iz dobaviteljeve analize pa lahko dodate na [strani Surovine](/material). **Varnostni list** (VL) pove, kako ravnati s surovim prahom. Vsak varnostni list shranite in ga preberite, preden začnete mešati.
+Ask for two documents for each material. A **technical data sheet** (TDS) gives its **chemical analysis**: the share of each oxide in the powder, by weight. Glazecalc works from these, and you can add a material from a supplier's analysis on the [Materials page](/material). A **safety data sheet** (SDS) says how to handle the raw powder. Keep each SDS, and read it before you mix.
 
-Analize so povprečja, ne obljube. Valentine Clays na svojem tehničnem listu za kremenjak piše »POVPREČNE VREDNOSTI. TE NE PREDSTAVLJAJO SPECIFIKACIJE«, analize glinenca Custer iz različnih let v zbirki Glazy pa segajo od približno 68,5 % do 72,4 % kremenice. Priporočamo, da v zapiske vpišete **številko šarže** (oznako proizvodne serije) vsake vreče, da boste lahko ugotovili, ali je sprememba pri preizkušeni glazuri prišla od surovine.
+Analyses are averages, not promises. Valentine Clays prints "MEAN VALUES. THESE DO NOT REPRESENT A SPECIFICATION" on its flint data sheet, and Glazy's analyses of Custer feldspar from different years run from about 68.5% to 72.4% silica. We suggest writing each sack's **lot number** (its batch code) in your records, so you can tell whether a change in a trusted glaze came from the material.
 
-HSE opozarja, da je kristalni kremen »lahko napačno označen kot ›amorfni silicijev dioksid‹«. Varnostni list pa govori o prahu, ne o izdelku: nič ne pove o tem, ali je žgana glazura primerna za stik z živili{{en: food safe}}. To lahko pokaže le laboratorijski preskus sproščanja kovin{{en: leach test}} iz žganega izdelka.
+HSE warns that crystalline silica "can be wrongly labelled as 'amorphous silica'". And an SDS is about the powder, not the pot: it says nothing about whether a fired glaze is safe for food. Only a laboratory leach test of the fired pot can show that.
 
-### Imena se spreminjajo, zato kupujte po kemijski sestavi
+### Names change, so buy by chemistry
 
-Blagovna imena prihajajo in odhajajo, ko se rudniki zapirajo. Glinenca Custer, ki so ga v Južni Dakoti kopali več kot 75 let, je konec leta 2023 zmanjkalo. Ko je Clay Art Center prešel na G-200 AU in Mahavir, je bilo treba prilagoditi približno polovico njegovih glazur. Tudi G-200 in G-200 HP ni več, Laguna pa zdaj uvaža Mahavir, ki je po kemijski sestavi blizu G-200.
+Brand names come and go as mines close. Custer feldspar, mined in South Dakota for more than 75 years, ran out in late 2023. When Clay Art Center switched to G-200 AU and Mahavir, about half its glazes needed adjusting. G-200 and G-200 HP are gone too, and Laguna now imports Mahavir, whose chemistry is close to G-200.
 
-**Gerstley Borate**, naraven borov mineral, ki ga vsebujejo mnogi starejši recepti, je težko dobiti, odkar so leta 2000 zaprli njegov rudnik, čeprav je New Mexico Clay novembra 2025 poročal, da Laguna dobavlja »Gerstley Borate Original«. Viri se ne strinjajo, ali je **Gillespie Borate** primeren nadomestek. Proizvajalec ga prodaja kot zamenjavo funt za funt. Berkeley Potters Studio pravi, da »ni neposreden nadomestek«, Digitalfire pa je ugotovil, da je spremenil barvo glazure. Varno je oba primerjati po oksidih, nato pa preizkusiti.
+**Gerstley Borate**, a natural boron mineral in many older recipes, has been scarce since its mine closed in 2000, though New Mexico Clay reported in November 2025 that Laguna was supplying "Gerstley Borate Original". Sources disagree about **Gillespie Borate** as a replacement. Its maker sells it as pound-for-pound. Berkeley Potters Studio says it "is not a direct substitute", and Digitalfire found it changed a glaze's color. The safe course is to compare the two by their oxides, then test.
 
-Tudi imena se med regijami razlikujejo. V Severni Ameriki imena flint (**kremenjak**), quartz (kremen) in silica (kremenica) pomenijo isti mleti kremen, Digitalfire pa pravi, da pravega kremenjaka v prahu pri dobaviteljih verjetno ne boste našli. V Združenem kraljestvu je kremenjak samostojen izdelek: tisti od Valentine Clays je kalciniran (segret) kremen. Oba sta iz skoraj čiste kremenice, zato pričakujemo, da sta si blizu, vendar preverite analizo. Za kaolin Glazy pravi, da zamenjave ena za eno, na primer EPK namesto China clay, »pogosto delujejo povsem v redu, zlasti kadar so količine \<10 %«.
+Regional names differ too. In North America, **flint**, quartz and silica mean the same ground silica, and Digitalfire says you probably won't find true flint powder from suppliers. In the UK, flint is its own product: Valentine's is calcined (heated) silica. Both are nearly pure silica, so we expect them to be close, but check the analysis. For kaolin, Glazy says one-for-one swaps, such as EPK for a china clay, "often work just fine, especially when amounts are \<10%".
 
-Mnogi recepti navajajo surovine, ki se prodajajo v eni državi, v drugi pa ne. Spodnja preglednica za vsako surovino iz knjižnice aplikacije Glazecalc, ki se tam, kjer kupujete, ne prodaja, po analizah poišče najbližjo surovino iste vrste, ki se tam prodaja. Številka pove, kako daleč narazen sta: razlike med njunimi oksidi po žganju v gramih na 100 g surovine, seštete po vseh oksidih. Pri razliki do približno 15 g lahko ena pri prvem preizkusu navadno nadomesti drugo. Imena vsebujejo oznake proizvajalcev in trgovin, zato jih lahko zahtevate po imenu.
+Many recipes name materials that are sold in one country and not another. The table below takes each material in Glazecalc's library that is not sold where you buy, and finds the closest of its kind that is, by their analyses. The figure is how far apart the two are: the grams by which their fired oxides differ, per 100 g of material, added up over every oxide. Within about 15 g, one can usually stand in for the other in a first test. The names carry the makers' and shops' own codes, so you can ask for them by name.
 
 ::local-equivalents
 
 > [!NOTE]
-> Glazecalc surovine primerja po tem, kaj prispevajo k žgani glazuri, ne po imenu. [Recept](/recipe) s surovino, ki je ne izdelujejo več, pove, kaj se uporablja zdaj. **Predlagaj količine in primerjaj** znova izračuna količine za nadomestek, **Sestavi iz mojih surovin** pa recept sestavi na novo iz surovin, ki jih imate na zalogi. Obe izenačita samo okside po žganju, zato najprej preizkusite majhno mešanico.
+> Glazecalc compares materials by what they bring to the fired glaze, not by name. A [recipe](/recipe) with a material no longer made says what is used now. **Suggest amounts and compare** works the amounts out again for a substitute, and **Match with what I have** makes the recipe again from the materials on your shelf. Both match the fired oxides only, so test a small batch first.
 
 ## Shranjevanje surovin in glazur {#storing}
 
@@ -163,55 +163,55 @@ Label: Sito
 | Glazure z barvili{{en: colorants}}, kot sta kobalt ali železo | 100 do 120 mesh           |
 | Pepelne glazure in druge z grobimi surovinami                 | 60 do 80 mesh             |
 
-## Relativna gostota {#specific-gravity}
+## Specific gravity {#specific-gravity lang=en}
 
-**Relativna gostota**{{en: specific gravity, SG}} (okrajšano rel. gostota) pove, koliko prahu je v glazurni suspenziji{{en: slurry}}. To je masa določene prostornine glazure{{en: glaze}}, deljena z maso enake prostornine vode. Voda ima vrednost 1,00, glazura, pri kateri je {{SG 1.45}}, pa tehta 145 g na 100 mL. Če mešate do izmerjene relativne gostote, dobite vsakič enako gostoto in enako debel nanos. Nima enote, zato je enaka v gramih ali unčah.
+**Specific gravity** (SG) tells you how much powder is in your slurry. It is the weight of a volume of glaze divided by the weight of the same volume of water. Water is 1.00, and a glaze at {{SG 1.45}} weighs 145 g per 100 mL. Mixing to a measured SG is how you get the same thickness, and the same coat, every time. It has no units, so it is the same in grams or ounces.
 
-### Merjenje s tehtanjem 100 mL
+### Measure it by weighing 100 mL
 
-1. Premešajte glazuro, da na dnu ni nič posedenega.
-2. Na tehtnico postavite **merilni valj** (visoko cev z merilnimi oznakami) za 100 mL ali brizgo za 100 mL in tarirajte.
-3. Natočite glazuro točno do 100 mL; oznako odčitajte v višini oči.
-4. Stehtajte in grame delite s 100: 145 g pomeni relativno gostoto 1,45.
+1. Stir the glaze so nothing has settled.
+2. Put a 100 mL **graduated cylinder** (a tall, marked measuring tube) or a 100 mL syringe on the scale, and tare it.
+3. Fill it with glaze to exactly 100 mL, reading the mark at eye level.
+4. Weigh it and divide the grams by 100: 145 g is SG 1.45.
 
-Digitalfire tudi označi gladino 500 g vode na lončku, ga do oznake napolni z glazuro in maso deli s 500; večja, polnejša mera je natančnejša. **Areometer**, plovec, ki ga odčitate tam, kjer obstane v glazuri, je hiter, a pri gostih ali zgoščenih glazurah lahko kaže napačno. Britanski areometri, na primer tisti podjetja Potclays, kažejo v stopinjah Baumé (°Bé). Po našem izračunu je relativna gostota = 145 ÷ (145 − °Bé), tako da je 46 °Bé približno 1,46. Starejše britanske knjige navajajo **maso pinte**, unče v britanski pinti glazure: delite jo z 20, tako da 29 oz pomeni relativno gostoto približno 1,45 (tudi to je naš izračun).
+Digitalfire also marks a cup at the level of 500 g of water, fills it to the mark with glaze, and divides the weight by 500; a bigger, fuller measure is more accurate. A **hydrometer**, a float read where it sits in the glaze, is quick but can misread thick or gelled glazes. UK hydrometers, such as Potclays', read in degrees Baumé (°Bé). By our arithmetic, SG = 145 ÷ (145 − °Bé), so 46 °Bé is about 1.46. Older UK books give a **pint weight**, the ounces in an imperial pint of glaze: divide it by 20, so 29 oz is about SG 1.45 (also our arithmetic).
 
-### Ciljne vrednosti
+### What to aim for
 
-Viri se ne strinjajo, najbolj pri nanašanju s čopičem in brizganju, kjer britanski dobavitelj Potclays navaja precej višje vrednosti (njegove so »le za orientacijo«). Vsako število jemljite kot izhodišče. Osnovni nasvet spletnega mesta Digitalfire je, da za vsako glazuro poiščete relativno gostoto in zgoščenost, ki delujeta, nato pa ju ponavljate in zapišete.
+Sources disagree, most of all on brushing and spraying, where the UK supplier Potclays gives much higher figures (its own are "for guidance only"). Treat every number as a starting point. Digitalfire's core advice is to find the SG and gelling that work for each glaze, then repeat them and write them down.
 
-Table: Ciljne relativne gostote, pri katerih se viri razhajajo
-Label: Ciljne relativne gostote
+Table: Specific gravity targets, where sources disagree
+Label: Specific gravity targets
 
-| Uporaba             | Digitalfire in Glazy                                                                                                                                                                    | Potclays (Združeno kraljestvo)                  | Varno izhodišče                                                              |
-| ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- | ---------------------------------------------------------------------------- |
-| Namakanje           | {{SG 1.40}} (pri namakanju 5 sekund) – {{SG 1.50}} (pri namakanju 1 sekundo); doma zmešanim zgoščenim glazuram najbolj ustreza {{SG 1.43–1.45}}                                         | Prozorne: {{SG 1.46–1.48}}; barvne: {{SG 1.61}} | {{SG 1.45}}; če kaplja, jo razredčite, da bo {{SG 1.43}}, in zgostite        |
-| Nanašanje s čopičem | {{SG 1.25}} (redka prozorna) – {{SG 1.55}} (temne podrobnosti)                                                                                                                          | {{SG 1.71–1.81}}                                | Upoštevajte navodila izdelka; uporabite CMC ali medij za nanašanje s čopičem |
-| Brizganje           | Brez vrednosti; Hopper v članku za Ceramic Arts Network svetuje precej redkejšo glazuro, z deflokulantom{{en: deflocculant}} (elektrolitom, dodatkom, ki naredi suspenzijo bolj tekočo) | {{SG 1.71}}                                     | Ni zanesljive vrednosti; brizgajte samo v komori za glaziranje               |
+| Use      | Digitalfire and Glazy                                                                                                                 | Potclays (UK)                               | Safe starting point                                     |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------- |
+| Dipping  | {{SG 1.40}} (for a 5-second dip) to {{SG 1.50}} (for a 1-second dip); home-mixed glazes that are gelled do best at {{SG 1.43–1.45}}   | Clear {{SG 1.46–1.48}}; colored {{SG 1.61}} | {{SG 1.45}}; thin to {{SG 1.43}} and gel it if it drips |
+| Brushing | {{SG 1.25}} (thin clear) to {{SG 1.55}} (dark detail)                                                                                 | {{SG 1.71–1.81}}                            | Follow the product; use CMC gum or a brushing medium    |
+| Spraying | No figure; Hopper, writing for Ceramic Arts Network, says much thinner, with a deflocculant (an additive that makes a slurry runnier) | {{SG 1.71}}                                 | No reliable number; spray only in a spray booth         |
 
-Da bi glazuro za namakanje preverili na oko, AMACO namaka 5 sekund in preveri, ali je nanos debel približno toliko kot ameriški kovanec za deset centov (dime). Digitalfire za preverjanje žge ploščice, namočene 5 sekund.
+To check a dipping glaze by eye, AMACO dips for 5 seconds and looks for a coat about as thick as a US dime. Digitalfire fires tiles dipped for 5 seconds to check.
 
-### Voda za ciljno relativno gostoto: naša ocena
+### Water for a target SG: our estimate
 
-Spodnja preglednica je naš lasten izračun, ne podatek iz vira. Predpostavlja, da imajo delci prahu gostoto 2,6 g na cm³, kar je predpostavka, ne meritev. Glina, topne surovine in zgoščanje spremenijo resnično glazuro, zato preglednico uporabite za začetek, nato pa merite. Za preverbo: pri enaki masi prahu in vode preglednica napove, da bo {{SG 1.44}}, kar je blizu vrednosti, ki jo je izmeril Digitalfire ({{SG 1.46}}). Pokaže tudi, da s 70 do 80 mL na 100 g začnete višje, kot je {{SG 1.50}}, torej pri večji gostoti, kot jo potrebujete.
+The table below is our own arithmetic, not a source's. It assumes the powder's particles have a density of 2.6 g per cm³, which is an assumption, not a measurement. Clay, soluble materials and gelling all change a real glaze, so use it to start, then measure. As a check, it predicts {{SG 1.44}} for equal weights of powder and water, close to Digitalfire's measured {{SG 1.46}}. It also shows that 70 to 80 mL per 100 g starts you above {{SG 1.50}}, thicker than you need.
 
-Table: Voda za ciljno relativno gostoto (naša ocena)
-Label: Voda za ciljno relativno gostoto
+Table: Water for a target specific gravity (our estimate)
+Label: Water for a target specific gravity
 
-| Cilj        |   Na 100 g prahu |       Na kilogram |               Na funt |
-| ----------- | ---------------: | ----------------: | --------------------: |
-| {{SG 1.40}} | približno 115 mL | približno 1150 mL | približno 18 US fl oz |
-| {{SG 1.45}} |  približno 98 mL |  približno 980 mL | približno 15 US fl oz |
-| {{SG 1.50}} |  približno 85 mL |  približno 850 mL | približno 13 US fl oz |
-| {{SG 1.60}} |  približno 64 mL |  približno 640 mL | približno 10 US fl oz |
+| Target      | Per 100 g of powder |  Per kilogram |         Per pound |
+| ----------- | ------------------: | ------------: | ----------------: |
+| {{SG 1.40}} |        about 115 mL | about 1150 mL | about 18 US fl oz |
+| {{SG 1.45}} |         about 98 mL |  about 980 mL | about 15 US fl oz |
+| {{SG 1.50}} |         about 85 mL |  about 850 mL | about 13 US fl oz |
+| {{SG 1.60}} |         about 64 mL |  about 640 mL | about 10 US fl oz |
 
-### Grenka sol, CMC in bentonit
+### Epsom salts, CMC gum and bentonite
 
-**Grenka sol** (magnezijev sulfat) povzroči, da se glazura v mirovanju rahlo zgosti, ko jo premešate, pa spet teče. Temu pravimo **flokulacija**{{en: flocculating}}, glazura, ki se tako obnaša, pa je **tiksotropna**{{en: thixotropic}}: nanaša se bolj enakomerno, manj kaplja in se manj poseda. Digitalfire predlaga, da začnete s približno 2 g na galono, ko je relativna gostota prava (grobo 0,5 g na liter, naš preračun), in količino prilagodite ob vsakem mešanju, saj noben recept ne bi smel določati odmerka. Priporočamo, da grenko sol najprej raztopite v malo vroče vode. V enem od primerov spletnega mesta Digitalfire je glazura ({{SG 1.45}}) kapljala, zato so jo z vodo razredčili, da je bila {{SG 1.43}}, z grenko soljo pa znova zgostili do kremaste gostote; nato se je nanesla enakomerno. Groba preverba: premešajte, nehajte in opazujte. Zgoščena glazura se giblje še približno 2 ali 3 sekunde, nato se ustavi in se malo vrne nazaj.
+**Epsom salts** make a glaze gel slightly when it stands still and flow again when it is stirred. This is called **flocculating** it, and a glaze that behaves this way is **thixotropic**: it goes on more evenly, drips less and settles less. Digitalfire suggests starting at about 2 g per gallon once the SG is right (roughly 0.5 g per liter, our conversion) and tuning the amount each time you mix, since no recipe should fix the dose. We suggest dissolving it in a little hot water first. In a Digitalfire example, a glaze at {{SG 1.45}} dripped, so water brought it down to {{SG 1.43}} and Epsom salts gelled it back to creamy, and it went on evenly. A rough check: stir, stop and watch. A gelled glaze moves on for about 2 or 3 seconds, then stops and springs back a little.
 
-**CMC** (karboksimetilceluloza) naredi suspenzijo bolj lepljivo in počasneje sušečo ter pusti trši nanos, ki se drži izdelka. Najbolj je pomembna pri glazurah za nanos s čopičem in glazurah z veliko frite{{en: frit}}. V primeru spletnega mesta Digitalfire v 1000 g suspenzije vmešajo 3,75 g, vmešati pa jo je treba z blenderjem. Glazura s CMC se z grenko soljo ne zgosti, in ker se mikrobi hranijo z vezivom, se lahko v vedru spremeni in začne smrdeti.
+**CMC gum** (carboxymethyl cellulose) makes a slurry stickier and slower to dry, and leaves a harder coat that holds to the pot. It matters most for brushing glazes and glazes high in frit. Digitalfire's example blends 3.75 g into 1000 g of slurry, and it has to go in with a blender. A glaze with CMC will not gel with Epsom salts, and since microbes feed on the gum, it can change in the bucket and start to smell.
 
-**Bentonit**, zelo drobna glina, pomaga ohranjati druge delce v suspenziji. Glazure za namakanje se pri tem navadno zanašajo na 15 do 25 % surove gline. Pri receptu z premalo gline pomaga približno 1 do 2 % bentonita.
+**Bentonite**, a very fine clay, helps hold the other particles in suspension. Dipping glazes usually rely on 15 to 25% raw clay for this. For a recipe short of clay, about 1 to 3% bentonite helps; Digitalfire says a glaze with more than 15% clay should not need more than 1%.
 
 ## Testne ploščice in testne serije {#testing}
 
@@ -276,7 +276,7 @@ Label: Predloga zapiska
 > [!NOTE]
 > V aplikaciji Glazecalc shranjen [recept](/recipe) vsebuje sam recept. [Dnevnik žganja](/firing) beleži vsako žganje: peč, datum, čase, temperature, stožce in opombe. V [zapiskih](/notes) je vse drugo, na primer zgornji zapis o mešanici in kaj je pokazala vsaka ploščica.
 
-## Viri {#sources}
+## Sources {#sources lang=en}
 
 - [Glazy: Raw materials](https://help.glazy.org/concepts/materials)
 - [Glazy: Specific gravity](https://help.glazy.org/testing/specific-gravity)
@@ -284,6 +284,7 @@ Label: Predloga zapiska
 - [Digitalfire: Epsom salts](https://digitalfire.com/material/epsom+salts)
 - [Digitalfire: CMC gum](https://digitalfire.com/material/cmc%2Bgum)
 - [Digitalfire: Dipping glaze](https://digitalfire.com/glossary/dipping+glaze)
+- [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Water solubility](https://digitalfire.com/glossary/water+solubility)
 - [Digitalfire: Gerstley Borate](https://digitalfire.com/material/gerstley+borate)
 - [Digitalfire: Mahavir potash feldspar](https://digitalfire.com/material/mahavir+potash+feldspar)

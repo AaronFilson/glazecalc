@@ -90,8 +90,7 @@
     "advice": "Praktični nasveti za mešanje, glaziranje in žganje iz aplikacije Glazecalc ter vaši lastni nasveti. Brezplačno za lončarje in keramike.",
     "about": "Glazecalc je brezplačen odprtokoden kalkulator kemije glazur za keramiko in beležnica. Oglejte si, kako izračuna Segerjevo formulo (UMF) in kako je narejen.",
     "privacy": "Kako Glazecalc ravna z vašimi podatki: brez oglasov, analitike in sledenja, nič se ne prodaja. Kaj se hrani, zakaj in kako uveljavljate svoje pravice.",
-    "signup": "Ustvarite brezplačen račun Glazecalc za recepte za glazure, surovine, zapiske in dnevnike žganja. Brez oglasov, vaši podatki se nikoli ne prodajajo.",
-    "imageAlt": "Glazecalc: glazure ne le mešajte, temveč jih tudi razumite."
+    "signup": "Ustvarite brezplačen račun Glazecalc za recepte za glazure, surovine, zapiske in dnevnike žganja. Brez oglasov, vaši podatki se nikoli ne prodajajo."
   },
   "notices": {
     "dismiss": "Opusti",
@@ -286,7 +285,6 @@
     "close": "Zapri"
   },
   "unity": {
-    "fluxes": "Talila – RO",
     "stabilizers": "Stabilizatorji – R₂O₃",
     "glassFormers": "Tvorci stekla – RO₂",
     "wildcards": "Drugi oksidi",

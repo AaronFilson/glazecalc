@@ -116,7 +116,6 @@
   },
   "trash": {
     "title": "Kosz",
-    "lead": "To, co zostanie usunięte z receptur, surowców, notatek i dzienników, czeka tutaj 30 dni. Można to przywrócić albo usunąć na stałe.",
     "listHeading": "W koszu",
     "none": "Kosz jest pusty.",
     "untitled": "Bez nazwy",

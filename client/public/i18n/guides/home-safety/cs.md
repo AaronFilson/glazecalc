@@ -30,34 +30,34 @@ Navrhujeme ještě dnes uložit čísla pro váš region do telefonu a napsat je
 
 Když jedete do nemocnice, podle NHS si vezměte s sebou obal nebo vzorek, pokud je to bezpečné. U suroviny pro glazury to znamená etiketu z pytle nebo bezpečnostní list.
 
-## Co je nejnebezpečnější spolknout {#most-dangerous}
+## What is most dangerous to swallow {#most-dangerous lang=en}
 
-Suroviny pro glazury{{en: glaze materials}} mohou rodině ublížit dvěma různými způsoby:
+Glaze materials can harm a family in two different ways:
 
-- **Akutní** nebezpečí (újma z jedné dávky, během několika hodin) je spolknutí **rozpustné** suroviny, tedy takové, která se rozpouští ve vodě nebo v žaludeční kyselině. Řeší ho zamčené skladování a čísla uvedená výše.
-- **Chronické** nebezpečí (újma z mnoha malých dávek) je prach, hlavně z oxidu křemičitého{{en: silica}} a olova, který zpočátku nezpůsobuje žádné příznaky a na oblečení se dostává domů. Řeší ho hygienické návyky.
+- The **acute** danger (harm from one dose, within hours) is swallowing a **soluble** material, one that dissolves in water or stomach acid. Locked storage and the numbers above deal with it.
+- The **chronic** danger (harm from many small doses) is dust, mainly silica and lead, which causes no symptoms at first and travels home on clothes. Clean habits deal with it.
 
-Většinu glazury tvoří křemen, kaolin{{en: kaolin}} a živec{{en: feldspar}}, které se téměř nerozpouštějí. Považujeme je spíš za dlouhodobé riziko při vdechování než za naléhavý případ při spolknutí. Jako první je třeba zamknout rozpustné suroviny uvedené níže.
+Most of a glaze is silica, kaolin and feldspar, which barely dissolve. We treat them as a long-term breathing hazard rather than a swallowing emergency. The soluble materials below are the ones to lock away first.
 
-Table: Rozpustné suroviny pro glazury: co způsobí při spolknutí
-Label: Rozpustné suroviny
+Table: Soluble glaze materials: what they do if swallowed
+Label: Soluble materials
 
-| Surovina                           | Co způsobuje                                                                                                                                                                                                                                                                                                                                                | Uváděné dávky                                                                                                                                                                                                                                                                                                                         |
-| ---------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Uhličitan barnatý                  | Dříve se prodával jako jed na krysy. Ve vodě se téměř nerozpouští, ale v kyselině se rozpouští, takže po spolknutí ho považujte za rozpustný. Baryum snižuje hladinu draslíku v krvi, což způsobuje zvracení, průjem a svalovou slabost, která může přejít v ochrnutí, selhání dýchání a nepravidelný srdeční rytmus. Příznaky obvykle začínají do 2 hodin. | Zdroje se rozcházejí. Lékařský přehled z roku 2025 uvádí úmrtí po chloridu barnatém, rozpustné soli barya, už při dávkách 0,8 až 0,9 g. Příručka urgentní medicíny uvádí pro soli barya smrtelné rozmezí 1 až 30 g, přičemž újma je možná zhruba od 200 mg. Žádný z nich neuvádí údaj pro děti, proto volejte při jakémkoli množství. |
-| Borax a kyselina boritá            | Nejdřív se objeví nevolnost, zvracení, průjem a bolest břicha; zvratky a stolice mohou být modrozelené. V těžkých případech následuje jasně červená vyrážka, která se později olupuje, křeče, poškození ledvin a šok.                                                                                                                                       | Přibližné nejnižší smrtelné dávky: 2 až 3 g u kojence, 5 až 6 g u dítěte. V jednom přehledu 784 případů spolknutí vyvolalo příznaky jen 12 % z nich a žádný nebyl smrtelný, ale k úmrtím dochází a protijed neexistuje.                                                                                                               |
-| Uhličitan lithný                   | Dítě s hmotností 15 kg (33 lb), které spolklo 300 mg, mělo krátce mimovolní svalové křeče a zvýšené reflexy (akutní dystonie a hyperreflexie), které odezněly.                                                                                                                                                                                              | O malých dětech toho bylo napsáno málo. 300 mg je mnohem méně než lžíce prášku.                                                                                                                                                                                                                                                       |
-| Soda kalcinovaná (uhličitan sodný) | Snadno se rozpouští ve vodě. Nenašli jsme spolehlivé údaje o tom, co způsobí dítěti.                                                                                                                                                                                                                                                                        | Žádné jsme nenašli. Volejte při jakémkoli množství.                                                                                                                                                                                                                                                                                   |
-| Dichroman draselný                 | Chromové barvivo{{en: colorant}}, které se používá v některých receptech. Jeho bezpečnostní list varuje, že „při požití může způsobit smrt“, způsobuje poleptání trávicího traktu a může poškodit ledviny.                                                                                                                                                  | Nebyly stanoveny a bezpečnostní listy se rozcházejí v tom, jak je toxický.                                                                                                                                                                                                                                                            |
+| Material                    | What it does                                                                                                                                                                                                                                                                                                                                 | Reported doses                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Barium carbonate            | Once sold as rat poison. It barely dissolves in water but does dissolve in acid, so treat it as soluble once swallowed. Barium drives down the potassium in the blood, causing vomiting, diarrhea and muscle weakness that can progress to paralysis, breathing failure and an irregular heartbeat. Symptoms typically begin within 2 hours. | Sources disagree. A WHO review estimates the lethal dose of barium absorbed from the gut at 3 to 4 g in untreated cases, with toxic effects from 0.2 to 0.5 g, and lists a lowest reported lethal dose of barium chloride, a soluble barium salt, of 11.4 mg per kg of body weight. An emergency-medicine reference gives a lethal range of 1 to 30 g for barium salts, with harm possibly from about 200 mg. None gives a figure for children, so call for any amount. |
+| Borax and boric acid        | Nausea, vomiting, diarrhea and stomach pain come first; vomit and stool may be blue-green. Severe cases bring a bright red rash that later peels, seizures, kidney injury and shock.                                                                                                                                                         | Rough lowest lethal doses: 2 to 3 g for an infant, 5 to 6 g for a child. In one review of 784 swallowings, only 12% caused symptoms and none were fatal, but deaths do happen, and there is no antidote.                                                                                                                                                                                                                                                                |
+| Lithium carbonate           | A child weighing 15 kg (33 lb) who swallowed 300 mg had a short spell of involuntary muscle spasms and overactive reflexes (acute dystonia and hyperreflexia), which passed.                                                                                                                                                                 | Little has been written about young children. 300 mg is far less than a spoonful of powder.                                                                                                                                                                                                                                                                                                                                                                             |
+| Soda ash (sodium carbonate) | Dissolves readily in water. We found no reliable figures for what it does to a child.                                                                                                                                                                                                                                                        | None found. Call for any amount.                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| Potassium dichromate        | A chrome colorant used in some recipes. Fisher Scientific's safety data sheet warns that it "May be fatal if swallowed", causes burns in the gut and may damage the kidneys. The same sheet warns that it "May be fatal if inhaled" and may cause cancer, and of a "possible risk of harm to the unborn child".                              | Not established, and safety data sheets disagree on how toxic it is.                                                                                                                                                                                                                                                                                                                                                                                                    |
 
 > [!NOTE]
-> Tato škodlivá množství se pohybují od několika set miligramů po několik gramů. Suroviny pro glazury se prodávají po librách nebo kilogramech, takže jeden otevřený pytel nebo kbelík obsahuje mnohem víc, než je potřeba, aby to batoleti ublížilo.
+> These harmful amounts run from a few hundred milligrams to a few grams. Glaze materials are sold by the pound or kilogram, so one open bag or bucket holds far more than enough to harm a toddler.
 
-### Barviva a olovo
+### Colorants and lead
 
-**Barviva**{{en: colorants}} jsou oxidy kovů a barvítka{{en: stains}}, které dávají glazuře barvu: měď, kobalt, chrom, mangan, nikl, kadmiovo-selenová barvítka a další. Stránka jedné univerzity o bezpečnosti práce s keramikou uvádí olovo, kadmium, kobalt a chrom mezi zvlášť nebezpečnými složkami glazur. Pro žádné barvivo jsme nenašli spolehlivé údaje o dávkách, proto volejte při jakémkoli množství. Kbelík namíchané glazury obsahuje stejné suroviny jako pytle, ze kterých vznikla, jen mokré.
+**Colorants** are the metal oxides and stains that give a glaze its color: copper, cobalt, chrome, manganese, nickel, cadmium-selenium stains and others. A university ceramics safety page names lead, cadmium, cobalt and chromium among the especially hazardous glaze ingredients. We found no reliable dose figures for any colorant, so call for any amount. A bucket of mixed glaze holds the same materials as the bags it came from, only wet.
 
-Hlavní nebezpečí olova je jiné: ne jedna lžíce, ale malá množství prachu spolknutá během týdnů nebo měsíců, bez jakýchkoli varovných příznaků (viz část Olovo a děti níže).
+Lead's main danger is different: not one spoonful, but small amounts of dust swallowed over weeks or months, with no warning signs (see Lead and children, below).
 
 ## Skladování surovin doma {#storing-materials}
 
@@ -220,41 +220,43 @@ Domácí testy jsou sporné. FDA uvádí, že domácí stěrové testy mohou odh
 
 Víc o tom, jak se glazury taví, proč některé uvolňují kovy a co znamenají limity, najdete v návodu [Glazování od základů](/guides/glazing-basics).
 
-## Zdroje {#sources}
+## Sources {#sources lang=en}
 
 - [America's Poison Centers: Poison Help](https://poisoncenters.org/)
 - [Poison Control (poison.org): webPOISONCONTROL](https://www.poison.org/)
 - [NHS: Poisoning](https://www.nhs.uk/conditions/poisoning/)
-- [National Poisons Information Service (Spojené království)](https://www.npis.org/)
+- [National Poisons Information Service (UK)](https://www.npis.org/)
 - [National Poisons Information Centre of Ireland: Public Poisons Line](https://www.poisons.ie/)
 - [European Commission: 112, the European emergency number](https://digital-strategy.ec.europa.eu/en/policies/112)
 - [healthdirect: Poisoning](https://www.healthdirect.gov.au/poisoning)
-- [National Poisons Centre (Nový Zéland)](https://www.poisons.co.nz/)
+- [National Poisons Centre (New Zealand)](https://www.poisons.co.nz/)
 - [ASPCA: Animal Poison Control](https://www.aspca.org/pet-care/animal-poison-control)
 - [Pet Poison Helpline](https://www.petpoisonhelpline.com/)
-- [Animal PoisonLine (Spojené království)](https://www.animalpoisonline.co.uk/)
-- [Animal Poisons Helpline (Austrálie a Nový Zéland)](https://animalpoisons.com.au/)
-- [PubMed Central: Acute soluble barium poisoning, a review (2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC11700400)
+- [Animal PoisonLine (UK)](https://www.animalpoisonline.co.uk/)
+- [Animal Poisons Helpline (Australia and New Zealand)](https://animalpoisons.com.au/)
+- [PubMed Central: Non-fatal acute barium carbonate poisoning, a case report (2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC11700400)
+- [WHO IPCS: Environmental Health Criteria 107, Barium (1990)](https://www.inchem.org/documents/ehc/ehc/ehc107.htm)
+- [Fisher Scientific: Potassium dichromate safety data sheet (2007)](https://fscimage.fishersci.com/msds/19370.htm)
 - [WikEM: Boron toxicity](https://wikem.org/wiki/Boron_toxicity)
-- [NPIC a US EPA: Recognition and Management of Pesticide Poisonings, kapitola 9 (PDF)](https://www.npic.orst.edu/RMPP/rmpp_ch9.pdf)
+- [NPIC and US EPA: Recognition and Management of Pesticide Poisonings, chapter 9 (PDF)](https://www.npic.orst.edu/RMPP/rmpp_ch9.pdf)
 - [medlibrary.org: Lithium carbonate prescribing information](https://medlibrary.org/lib/rx/meds/lithium-carbonate-16/page/2/)
 - [CDC: About Lead in Jobs, Hobbies, or Other Activities](https://cdc.gov/lead-prevention/prevention/jobs-hobbies-activities.html)
 - [CDC: Blood Lead Reference Value](https://www.cdc.gov/nceh/lead/data/blood-lead-reference-value.htm)
-- [US EPA: brožura o zdraví dětí (2018, PDF)](https://19january2021snapshot.epa.gov/sites/static/files/2018-10/documents/childrenshealthbooklet2018_final-4_newlinks.pdf)
+- [US EPA: Children's health booklet (2018, PDF)](https://19january2021snapshot.epa.gov/sites/static/files/2018-10/documents/childrenshealthbooklet2018_final-4_newlinks.pdf)
 - [Pennsylvania Department of Health: Non-Occupational Lead Exposure (PDF)](https://www.health.pa.gov:443/topics/Documents/Environmental%20Health/Non-Occupational%20Lead%20Exposure.pdf)
 - [Western Carolina University: Ceramics Safety](https://www.wcu.edu/discover/campus-services-and-operations/facilities-management/safety-and-risk-management/visual-arts-theatre-safety/ceramics-safety.aspx)
-- [Crafts Council (Spojené království): How to make your pottery practice greener](https://craftscouncil.org.uk/stories/how-make-your-pottery-practice-greener)
+- [Crafts Council (UK): How to make your pottery practice greener](https://craftscouncil.org.uk/stories/how-make-your-pottery-practice-greener)
 - [Pet Poison Helpline: Lead](https://www.petpoisonhelpline.com/poison/lead/)
 - [Vet Candy: Sparkler ingestion results in barium toxicity](https://www.myvetcandy.com/clinicalupdblog/2019/3/15/sparkler-ingestion-results-in-barium-toxicity)
 - [University of Illinois College of Veterinary Medicine: Bird toxins](https://vetmed.illinois.edu/pet-health-columns/bird-toxins-teflon-avocado-lead-zinc/)
 - [Skutt: Designing a Kiln Room (PDF)](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Designing-A-Kiln-Room-1.pdf)
-- [Kiln Management, příručka pro školy (PDF)](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Kiln-Management-1.pdf)
+- [Kiln Management guide for schools (PDF)](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Kiln-Management-1.pdf)
 - [L&L Kiln: Front-loader installation checklist (PDF)](https://www.theceramicshop.com/downloads/LLFLChecklist.pdf)
 - [Rio Grande: PMC Kilns Handbook (PDF)](https://products.riogrande.com/content/Instruction-Sheets/RioGrande-PMC-Kilns-Handbook-IS.pdf)
-- [Dawson: návod k obsluze vypínače Kiln-Sitter LT-3 (PDF)](https://oud.klei.nl/forum/bestanden/f675ae4a-d890-4b8b-a08e-173e652f25a6/KilnSitter%20lt3%20en%20lt3k.pdf)
+- [Dawson: Kiln-Sitter LT-3 manual (PDF)](https://oud.klei.nl/forum/bestanden/f675ae4a-d890-4b8b-a08e-173e652f25a6/KilnSitter%20lt3%20en%20lt3k.pdf)
 - [Ceramic Arts Network: In the Studio, Eye Health for Potters](https://ceramicartsnetwork.org/pottery-making-illustrated/pottery-making-illustrated-article/In-the-Studio-Eye-Health-for-Potters)
 - [FDA: Questions and Answers on Lead-Glazed Traditional Pottery](https://www.fda.gov/food/environmental-contaminants-food/questions-and-answers-lead-glazed-traditional-pottery)
-- [FDA: Compliance Policy Guide 545.450, olovo v keramice (PDF)](https://www.fda.gov/media/71764/download)
+- [FDA: Compliance Policy Guide 545.450, lead in pottery (PDF)](https://www.fda.gov/media/71764/download)
 - [Digitalfire: Food Safe](https://digitalfire.com/glossary/food+safe)
 - [Ceramics NZ: Is it food safe?](https://ceramicsnz.org/news/is-it-food-safe/)
 - [Ceramic Arts Network: Techno File, Dirty Dishes](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/Techno-File-Dirty-Dishes)

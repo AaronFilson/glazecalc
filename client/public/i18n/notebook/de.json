@@ -116,7 +116,6 @@
   },
   "trash": {
     "title": "Papierkorb",
-    "lead": "Was Sie aus Ihren Rezepten, Rohstoffen, Notizen und Protokollen entfernen, bleibt hier 30 Tage liegen. Stellen Sie es wieder her oder löschen Sie es endgültig.",
     "listHeading": "Im Papierkorb",
     "none": "Der Papierkorb ist leer.",
     "untitled": "Ohne Titel",

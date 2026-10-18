@@ -30,34 +30,34 @@ See juhend soovitab salvestada oma piirkonna numbrid juba täna telefoni ning ki
 
 Kui lähete haiglasse, võtke NHS-i juhise kohaselt kaasa pakend või proov, kui seda saab ohutult teha. Glasuuri tooraine puhul tähendab see koti silti või ohutuskaarti.
 
-## Mida on kõige ohtlikum alla neelata {#most-dangerous}
+## What is most dangerous to swallow {#most-dangerous lang=en}
 
-Glasuuri toorained{{en: glaze materials}} võivad peret kahjustada kahel eri viisil:
+Glaze materials can harm a family in two different ways:
 
-- **Äge** oht (kahju ühest annusest, tundide jooksul) on **lahustuva** tooraine allaneelamine, st tooraine, mis lahustub vees või maohappes. Selle vastu aitavad lukustatud hoiukoht ja ülal toodud numbrid.
-- **Krooniline** oht (kahju paljudest väikestest annustest) on tolm, peamiselt ränidioksiid{{en: silica}} ja plii, mis alguses sümptomeid ei tekita ja jõuab riiete peal koju. Selle vastu aitavad puhtad tööharjumused.
+- The **acute** danger (harm from one dose, within hours) is swallowing a **soluble** material, one that dissolves in water or stomach acid. Locked storage and the numbers above deal with it.
+- The **chronic** danger (harm from many small doses) is dust, mainly silica and lead, which causes no symptoms at first and travels home on clothes. Clean habits deal with it.
 
-Suurem osa glasuurist on kvarts, kaoliin{{en: kaolin}} ja põldpagu{{en: feldspar}}, mis lahustuvad vaevu. Siin käsitletakse neid pikaajalise ohuna hingamisteedele, mitte allaneelamisega seotud hädaolukorrana. Allpool loetletud lahustuvad toorained tuleks luku taha panna esimesena.
+Most of a glaze is silica, kaolin and feldspar, which barely dissolve. We treat them as a long-term breathing hazard rather than a swallowing emergency. The soluble materials below are the ones to lock away first.
 
-Table: Lahustuvad glasuuri toorained: mis juhtub nende allaneelamisel
-Label: Lahustuvad toorained
+Table: Soluble glaze materials: what they do if swallowed
+Label: Soluble materials
 
-| Tooraine                  | Toime                                                                                                                                                                                                                                                                                                                                                            | Teatatud annused                                                                                                                                                                                                                                                                                                                                                              |
-| ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Baariumkarbonaat          | Seda müüdi kunagi rotimürgina. See lahustub vees vaevu, kuid lahustub happes, seega käsitlege seda allaneelamise korral lahustuvana. Baarium alandab kaaliumi taset veres, põhjustades oksendamist, kõhulahtisust ja lihasnõrkust, mis võib süveneda halvatuseni, hingamispuudulikkuseni ja südame rütmihäireteni. Sümptomid algavad tavaliselt 2 tunni jooksul. | Allikad on eri meelt. 2025. aasta meditsiiniline ülevaade kirjeldab surmajuhtumeid baariumkloriidi, lahustuva baariumisoola, annustest alates 0,8–0,9 g. Erakorralise meditsiini teatmik annab baariumisoolade surmavaks vahemikuks 1–30 g ning kahju võib tekkida juba umbes 200 mg juures. Ükski allikas ei anna arvu laste kohta, seega helistage mis tahes koguse korral. |
-| Booraks ja boorhape       | Esmalt tekivad iiveldus, oksendamine, kõhulahtisus ja kõhuvalu; okse ja väljaheide võivad olla sinakasrohelised. Rasketel juhtudel tekivad erepunane lööve, mis hiljem koorub, krambid, neerukahjustus ja šokk.                                                                                                                                                  | Ligikaudsed väikseimad surmavad annused: imikule 2–3 g, lapsele 5–6 g. Ühes ülevaates 784 allaneelamisjuhtumist põhjustas sümptomeid vaid 12% ja ükski ei lõppenud surmaga, kuid surmajuhtumeid siiski esineb ja vastumürki ei ole.                                                                                                                                           |
-| Liitiumkarbonaat          | 15 kg (33 lb) kaaluval lapsel, kes neelas alla 300 mg, tekkisid lühiajaliselt tahtmatud lihasspasmid ja liiga tugevad refleksid (äge düstoonia ja hüperrefleksia), mis möödusid.                                                                                                                                                                                 | Väikelaste kohta on vähe kirjutatud. 300 mg on palju vähem kui lusikatäis pulbrit.                                                                                                                                                                                                                                                                                            |
-| Sooda (naatriumkarbonaat) | Lahustub vees kergesti. Usaldusväärseid andmeid selle toime kohta lapsele ei leitud.                                                                                                                                                                                                                                                                             | Ei leitud. Helistage mis tahes koguse korral.                                                                                                                                                                                                                                                                                                                                 |
-| Kaaliumdikromaat          | Kroomi sisaldav värvaine{{en: colorant}}, mida kasutatakse mõnes retseptis. Selle ohutuskaart hoiatab: „Allaneelamisel võib olla surmav“; ohutuskaardi järgi põhjustab see ka söövitushaavu seedetraktis ja võib kahjustada neerusid.                                                                                                                            | Ei ole kindlaks tehtud ja ohutuskaardid hindavad selle mürgisust erinevalt.                                                                                                                                                                                                                                                                                                   |
+| Material                    | What it does                                                                                                                                                                                                                                                                                                                                 | Reported doses                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Barium carbonate            | Once sold as rat poison. It barely dissolves in water but does dissolve in acid, so treat it as soluble once swallowed. Barium drives down the potassium in the blood, causing vomiting, diarrhea and muscle weakness that can progress to paralysis, breathing failure and an irregular heartbeat. Symptoms typically begin within 2 hours. | Sources disagree. A WHO review estimates the lethal dose of barium absorbed from the gut at 3 to 4 g in untreated cases, with toxic effects from 0.2 to 0.5 g, and lists a lowest reported lethal dose of barium chloride, a soluble barium salt, of 11.4 mg per kg of body weight. An emergency-medicine reference gives a lethal range of 1 to 30 g for barium salts, with harm possibly from about 200 mg. None gives a figure for children, so call for any amount. |
+| Borax and boric acid        | Nausea, vomiting, diarrhea and stomach pain come first; vomit and stool may be blue-green. Severe cases bring a bright red rash that later peels, seizures, kidney injury and shock.                                                                                                                                                         | Rough lowest lethal doses: 2 to 3 g for an infant, 5 to 6 g for a child. In one review of 784 swallowings, only 12% caused symptoms and none were fatal, but deaths do happen, and there is no antidote.                                                                                                                                                                                                                                                                |
+| Lithium carbonate           | A child weighing 15 kg (33 lb) who swallowed 300 mg had a short spell of involuntary muscle spasms and overactive reflexes (acute dystonia and hyperreflexia), which passed.                                                                                                                                                                 | Little has been written about young children. 300 mg is far less than a spoonful of powder.                                                                                                                                                                                                                                                                                                                                                                             |
+| Soda ash (sodium carbonate) | Dissolves readily in water. We found no reliable figures for what it does to a child.                                                                                                                                                                                                                                                        | None found. Call for any amount.                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| Potassium dichromate        | A chrome colorant used in some recipes. Fisher Scientific's safety data sheet warns that it "May be fatal if swallowed", causes burns in the gut and may damage the kidneys. The same sheet warns that it "May be fatal if inhaled" and may cause cancer, and of a "possible risk of harm to the unborn child".                              | Not established, and safety data sheets disagree on how toxic it is.                                                                                                                                                                                                                                                                                                                                                                                                    |
 
 > [!NOTE]
-> Need kahjulikud kogused ulatuvad mõnesajast milligrammist mõne grammini. Glasuuri tooraineid müüakse naela või kilogrammi kaupa, nii et üks avatud kott või ämber sisaldab kaugelt rohkem, kui on vaja väikelapse kahjustamiseks.
+> These harmful amounts run from a few hundred milligrams to a few grams. Glaze materials are sold by the pound or kilogram, so one open bag or bucket holds far more than enough to harm a toddler.
 
-### Värvained ja plii
+### Colorants and lead
 
-**Värvained** on metallioksiidid ja pigmendid{{en: stains}}, mis annavad glasuurile värvi: vask, koobalt, kroom, mangaan, nikkel, kaadmium-seleenpigmendid ja teised. Ühe ülikooli keraamikaohutuse veebileht nimetab eriti ohtlike glasuuri koostisosade seas pliid, kaadmiumi, koobaltit ja kroomi. Usaldusväärseid annuseandmeid ei leitud ühegi värvaine kohta, seega helistage mis tahes koguse korral. Ämber segatud glasuuriga sisaldab samu tooraineid kui kotid, millest see tehti, ainult märjana.
+**Colorants** are the metal oxides and stains that give a glaze its color: copper, cobalt, chrome, manganese, nickel, cadmium-selenium stains and others. A university ceramics safety page names lead, cadmium, cobalt and chromium among the especially hazardous glaze ingredients. We found no reliable dose figures for any colorant, so call for any amount. A bucket of mixed glaze holds the same materials as the bags it came from, only wet.
 
-Plii peamine oht on teistsugune: mitte üks lusikatäis, vaid väikesed kogused tolmu, mis neelatakse alla nädalate või kuude jooksul ilma ühegi hoiatava märgita (vt allpool jaotist „Plii ja lapsed“).
+Lead's main danger is different: not one spoonful, but small amounts of dust swallowed over weeks or months, with no warning signs (see Lead and children, below).
 
 ## Toorainete hoiustamine kodus {#storing-materials}
 
@@ -220,41 +220,43 @@ Kodused testid on vaieldavad. FDA ütleb, et vatitikuga kodutestid võivad näid
 
 Kuidas glasuurid sulavad, miks mõnest glasuurist metallid eralduvad ja mida piirnormid tähendavad, sellest lähemalt juhendis [Glasuurimise alused](/guides/glazing-basics).
 
-## Allikad {#sources}
+## Sources {#sources lang=en}
 
 - [America's Poison Centers: Poison Help](https://poisoncenters.org/)
 - [Poison Control (poison.org): webPOISONCONTROL](https://www.poison.org/)
 - [NHS: Poisoning](https://www.nhs.uk/conditions/poisoning/)
-- [National Poisons Information Service (Ühendkuningriik)](https://www.npis.org/)
+- [National Poisons Information Service (UK)](https://www.npis.org/)
 - [National Poisons Information Centre of Ireland: Public Poisons Line](https://www.poisons.ie/)
 - [European Commission: 112, the European emergency number](https://digital-strategy.ec.europa.eu/en/policies/112)
 - [healthdirect: Poisoning](https://www.healthdirect.gov.au/poisoning)
-- [National Poisons Centre (Uus-Meremaa)](https://www.poisons.co.nz/)
+- [National Poisons Centre (New Zealand)](https://www.poisons.co.nz/)
 - [ASPCA: Animal Poison Control](https://www.aspca.org/pet-care/animal-poison-control)
 - [Pet Poison Helpline](https://www.petpoisonhelpline.com/)
-- [Animal PoisonLine (Ühendkuningriik)](https://www.animalpoisonline.co.uk/)
-- [Animal Poisons Helpline (Austraalia ja Uus-Meremaa)](https://animalpoisons.com.au/)
-- [PubMed Central: Acute soluble barium poisoning, a review (2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC11700400)
+- [Animal PoisonLine (UK)](https://www.animalpoisonline.co.uk/)
+- [Animal Poisons Helpline (Australia and New Zealand)](https://animalpoisons.com.au/)
+- [PubMed Central: Non-fatal acute barium carbonate poisoning, a case report (2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC11700400)
+- [WHO IPCS: Environmental Health Criteria 107, Barium (1990)](https://www.inchem.org/documents/ehc/ehc/ehc107.htm)
+- [Fisher Scientific: Potassium dichromate safety data sheet (2007)](https://fscimage.fishersci.com/msds/19370.htm)
 - [WikEM: Boron toxicity](https://wikem.org/wiki/Boron_toxicity)
-- [NPIC ja USA EPA: Recognition and Management of Pesticide Poisonings, 9. peatükk (PDF)](https://www.npic.orst.edu/RMPP/rmpp_ch9.pdf)
+- [NPIC and US EPA: Recognition and Management of Pesticide Poisonings, chapter 9 (PDF)](https://www.npic.orst.edu/RMPP/rmpp_ch9.pdf)
 - [medlibrary.org: Lithium carbonate prescribing information](https://medlibrary.org/lib/rx/meds/lithium-carbonate-16/page/2/)
 - [CDC: About Lead in Jobs, Hobbies, or Other Activities](https://cdc.gov/lead-prevention/prevention/jobs-hobbies-activities.html)
 - [CDC: Blood Lead Reference Value](https://www.cdc.gov/nceh/lead/data/blood-lead-reference-value.htm)
-- [USA EPA: brošüür laste tervisest (2018, PDF)](https://19january2021snapshot.epa.gov/sites/static/files/2018-10/documents/childrenshealthbooklet2018_final-4_newlinks.pdf)
+- [US EPA: Children's health booklet (2018, PDF)](https://19january2021snapshot.epa.gov/sites/static/files/2018-10/documents/childrenshealthbooklet2018_final-4_newlinks.pdf)
 - [Pennsylvania Department of Health: Non-Occupational Lead Exposure (PDF)](https://www.health.pa.gov:443/topics/Documents/Environmental%20Health/Non-Occupational%20Lead%20Exposure.pdf)
 - [Western Carolina University: Ceramics Safety](https://www.wcu.edu/discover/campus-services-and-operations/facilities-management/safety-and-risk-management/visual-arts-theatre-safety/ceramics-safety.aspx)
-- [Crafts Council (Ühendkuningriik): How to make your pottery practice greener](https://craftscouncil.org.uk/stories/how-make-your-pottery-practice-greener)
+- [Crafts Council (UK): How to make your pottery practice greener](https://craftscouncil.org.uk/stories/how-make-your-pottery-practice-greener)
 - [Pet Poison Helpline: Lead](https://www.petpoisonhelpline.com/poison/lead/)
 - [Vet Candy: Sparkler ingestion results in barium toxicity](https://www.myvetcandy.com/clinicalupdblog/2019/3/15/sparkler-ingestion-results-in-barium-toxicity)
 - [University of Illinois College of Veterinary Medicine: Bird toxins](https://vetmed.illinois.edu/pet-health-columns/bird-toxins-teflon-avocado-lead-zinc/)
 - [Skutt: Designing a Kiln Room (PDF)](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Designing-A-Kiln-Room-1.pdf)
-- [Kiln Management, koolidele mõeldud ahjukäsiraamat (PDF)](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Kiln-Management-1.pdf)
+- [Kiln Management guide for schools (PDF)](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Kiln-Management-1.pdf)
 - [L&L Kiln: Front-loader installation checklist (PDF)](https://www.theceramicshop.com/downloads/LLFLChecklist.pdf)
 - [Rio Grande: PMC Kilns Handbook (PDF)](https://products.riogrande.com/content/Instruction-Sheets/RioGrande-PMC-Kilns-Handbook-IS.pdf)
-- [Dawson: Kiln-Sitter LT-3 kasutusjuhend (PDF)](https://oud.klei.nl/forum/bestanden/f675ae4a-d890-4b8b-a08e-173e652f25a6/KilnSitter%20lt3%20en%20lt3k.pdf)
+- [Dawson: Kiln-Sitter LT-3 manual (PDF)](https://oud.klei.nl/forum/bestanden/f675ae4a-d890-4b8b-a08e-173e652f25a6/KilnSitter%20lt3%20en%20lt3k.pdf)
 - [Ceramic Arts Network: In the Studio, Eye Health for Potters](https://ceramicartsnetwork.org/pottery-making-illustrated/pottery-making-illustrated-article/In-the-Studio-Eye-Health-for-Potters)
 - [FDA: Questions and Answers on Lead-Glazed Traditional Pottery](https://www.fda.gov/food/environmental-contaminants-food/questions-and-answers-lead-glazed-traditional-pottery)
-- [FDA: Compliance Policy Guide 545.450, plii keraamikas (PDF)](https://www.fda.gov/media/71764/download)
+- [FDA: Compliance Policy Guide 545.450, lead in pottery (PDF)](https://www.fda.gov/media/71764/download)
 - [Digitalfire: Food Safe](https://digitalfire.com/glossary/food+safe)
 - [Ceramics NZ: Is it food safe?](https://ceramicsnz.org/news/is-it-food-safe/)
 - [Ceramic Arts Network: Techno File, Dirty Dishes](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/Techno-File-Dirty-Dishes)

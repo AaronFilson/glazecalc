@@ -90,8 +90,7 @@
     "advice": "Praktiska tips om att blanda, glasera och bränna, från Glazecalc, plus egna råd. Gratis för keramiker och krukmakare.",
     "about": "Glazecalc är en gratis kalkylator och anteckningsbok för glasyrkemi, med öppen källkod. Se hur den räknar fram Segerformeln (UMF) och hur den är byggd.",
     "privacy": "Så hanterar Glazecalc dina uppgifter: inga annonser, ingen analys eller spårning, och inget säljs. Vad som sparas, varför och hur du använder dina rättigheter.",
-    "signup": "Skapa ett gratis konto på Glazecalc och spara glasyrrecept, råvaror, anteckningar och brännloggar. Inga annonser, och uppgifterna säljs aldrig.",
-    "imageAlt": "Glazecalc: förstå glasyrerna, inte bara blanda dem."
+    "signup": "Skapa ett gratis konto på Glazecalc och spara glasyrrecept, råvaror, anteckningar och brännloggar. Inga annonser, och uppgifterna säljs aldrig."
   },
   "notices": {
     "dismiss": "Stäng",
@@ -284,7 +283,6 @@
     "close": "Stäng"
   },
   "unity": {
-    "fluxes": "Flussmedel – RO",
     "stabilizers": "Stabilisatorer – R₂O₃",
     "glassFormers": "Glasbildare – RO₂",
     "wildcards": "Övriga oxider",

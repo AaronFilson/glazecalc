@@ -90,8 +90,7 @@
     "advice": "Tips praktis tentang mencampur, mengglasir, dan membakar dari Glazecalc, ditambah saran Anda sendiri. Gratis untuk pembuat keramik.",
     "about": "Glazecalc adalah kalkulator dan buku catatan kimia glasir yang gratis dan bersumber terbuka. Lihat cara menghitung formula Seger dan cara aplikasi ini dibangun.",
     "privacy": "Cara Glazecalc menangani data Anda: tanpa iklan, analitik, atau pelacakan, dan tidak ada yang dijual. Apa yang disimpan, mengapa, dan cara memakai hak Anda.",
-    "signup": "Buat akun Glazecalc gratis untuk menyimpan resep glasir, bahan, catatan, dan catatan pembakaran Anda. Tanpa iklan, dan data Anda tidak pernah dijual.",
-    "imageAlt": "Glazecalc: pahami glasir Anda, bukan sekadar mencampurnya."
+    "signup": "Buat akun Glazecalc gratis untuk menyimpan resep glasir, bahan, catatan, dan catatan pembakaran Anda. Tanpa iklan, dan data Anda tidak pernah dijual."
   },
   "notices": {
     "dismiss": "Tutup",
@@ -284,7 +283,6 @@
     "close": "Tutup"
   },
   "unity": {
-    "fluxes": "Pelebur - RO",
     "stabilizers": "Penstabil - R₂O₃",
     "glassFormers": "Pembentuk kaca - RO₂",
     "wildcards": "Oksida lain",

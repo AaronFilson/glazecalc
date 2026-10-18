@@ -22,58 +22,58 @@ Przygotowanie szkliwa{{en: glaze}} polega na odważeniu według receptury sprosz
 > [!WARNING]
 > **Suchy proszek szkliwa stwarza zagrożenie pyłem.** Krzemionka krystaliczna może stanowić od 10 do 60 % suchego szkliwa, a brytyjski urząd ds. bezpieczeństwa i higieny pracy Health and Safety Executive (HSE) ostrzega, że jej pył jest niewidoczny w zwykłym świetle. Proszek należy nabierać ostrożnie i z niewielkiej wysokości, trzymać pojemniki zamknięte, jak najszybciej zwilżyć proszek i sprzątać na mokro, nigdy miotłą. Dopóki proszki są suche, należy nosić dopasowaną półmaskę filtrującą (N95 lub P100 w USA, FFP2 lub FFP3 w Wielkiej Brytanii i UE, P2 lub P3 w Australii i Nowej Zelandii). [Poradnik o bezpiecznym rozrabianiu szkliw](/guides/safe-mixing) szczegółowo omawia pył, półmaski i sprzątanie.
 
-## Kupowanie surowców {#buying-materials}
+## Buying materials {#buying-materials lang=en}
 
-### Gdzie kupować
+### Where to buy
 
-Ceramicy kupują u dostawców artykułów ceramicznych, którzy sprzedają gliny, surowce do szkliw i narzędzia. Tabela pokazuje kilka sklepów we własnym kraju, a każdy z nich sprawdzono na jego własnej stronie internetowej; po wybraniu innego kraju można zobaczyć tamtejsze sklepy. Asortyment się zmienia, więc przed zamówieniem należy go sprawdzić. Duzi producenci, tacy jak Sibelco i Imerys, sprzedają odbiorcom przemysłowym; ceramicy kupują ich surowce w sklepach takich jak te. Dla innych miejsc katalog sklepów z artykułami ceramicznymi prowadzi Digitalfire, serwis z wiedzą o ceramice.
+Potters buy from ceramic suppliers, which sell clay, glaze materials and tools. The table shows some for your country, each checked on the shop's own site, and you can choose another country to see its shops. Stock changes, so check before you order. Large producers such as Sibelco and Imerys sell to industry; potters buy their materials through shops like these. The ceramics reference site Digitalfire keeps a directory of supplier stores for other places.
 
 ::shops
 
-### Ile kupować
+### How much to buy
 
-Standardowy worek waży **50 lb (22,7 kg)** w USA i **25 kg (55 lb)** w innych krajach, więc oba są niemal takie same. Wielu dostawców sprzedaje też do testów opakowania po 1; 2,5 lub 5 kg (ok. 2,2; 5,5 lub 11 lb). Glazy, otwarta baza receptur, radzi kupować w pełnych workach, często o 20–30 % tańszych, surowce zużywane regularnie (skaleń{{en: feldspar}}, krzemionkę{{en: silica}}, kaolin, kredę{{en: whiting}}, a do średniego wypału także frytę{{en: frit}}). **Barwniki**{{en: colorants}}, czyli tlenki metali i pigmenty{{en: stains}} barwiące szkliwo{{en: glaze}}, należy kupować w małych ilościach: większość stosuje się w ilości poniżej 5 %. Przykładowe listy zakupów z Glazy wyniosły ok. 515 USD dla średniego wypału i 397 USD dla wysokiego, w cenach amerykańskich.
+The standard sack is **50 lb (22.7 kg)** in the US and **25 kg (55 lb)** elsewhere, so the two are nearly the same. Many suppliers also sell 1, 2.5 or 5 kg packs (about 2.2, 5.5 or 11 lb) for tests. Glazy, the open recipe database, advises buying the materials you use steadily (feldspar, silica, kaolin, whiting, and frit for mid-fire) in full sacks, which are often 20 to 30% cheaper. Buy **colorants**, the metal oxides and stains that color a glaze, in small amounts: most are used at under 5%. Glazy's sample shopping lists came to about $515 for mid-fire and $397 for high-fire, at US prices.
 
-### Zestaw na początek
+### A starter set
 
-Podstawowa lista Glazy na każdą temperaturę to krzemionka, kaolin, skaleń, kreda, tlenek cynku oraz dolomit lub talk. Większość szkliw na średni wypał (stożek{{en: cone}} 5–6) potrzebuje też boru, zwykle z fryty, którą Glazy określa jako „powtarzalną i mniej rozpuszczalną niż borany naturalne”. Poniższy zestaw to nasza propozycja, oparta na liście Glazy i liście z forum. [Poradnik o podstawach szkliwienia](/guides/glazing-basics) wyjaśnia, do czego służy każdy surowiec.
+Glazy's core list for any temperature is silica, kaolin, feldspar, whiting, zinc oxide, and dolomite or talc. Most mid-fire (cone 5 to 6) glazes also need boron, usually from a frit, which Glazy calls "consistent and less soluble than raw borates". The set below is our suggestion, drawn from Glazy's list and a forum list. The [glazing basics guide](/guides/glazing-basics) explains what each material does.
 
-Table: Zestaw surowców na początek (nasza propozycja)
-Label: Zestaw na początek
+Table: A starter set of materials (our suggestion)
+Label: Starter set
 
-| Surowiec                                        | Co kupić                                                                                                     |
-| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
-| Krzemionka (po angielsku też flint; zob. niżej) | 325 mesh, drobniejsze uziarnienie, które Glazy preferuje do szkliw                                           |
-| Kaolin (w Wielkiej Brytanii zwany china clay)   | EPK w USA; Grolleg lub inny china clay w Wielkiej Brytanii; kaolin nowozelandzki w Nowej Zelandii            |
-| Skaleń potasowy                                 | Ten, który jest obecnie dostępny w danym kraju, np. Mahavir w USA                                            |
-| Syenit nefelinowy{{en: nepheline syenite}}      | Dowolny; Glazy zwraca uwagę na jego silniejsze działanie topiące; często stosowany w niskim i średnim wypale |
-| Kreda                                           | Dowolna                                                                                                      |
-| Talk                                            | Dowolny                                                                                                      |
-| Fryta borowa, do średniego wypału               | Ferro 3134, 3124 lub 3195; w Wielkiej Brytanii Potterycrafts P3124 lub P3195                                 |
-| Bentonit i barwniki                             | Niewielkie ilości                                                                                            |
+| Material                              | What to buy                                                                      |
+| ------------------------------------- | -------------------------------------------------------------------------------- |
+| Silica (also called flint; see below) | 325 mesh, the finer grade Glazy prefers for glazes                               |
+| Kaolin (china clay in the UK)         | EPK in the US; Grolleg or another china clay in the UK; NZ kaolin in New Zealand |
+| Potash feldspar                       | Whichever is current where you live, such as Mahavir in the US                   |
+| Nepheline syenite                     | Any; Glazy notes its stronger fluxing power, often used at low and mid-fire      |
+| Whiting                               | Any                                                                              |
+| Talc                                  | Any asbestos-free grade; check its SDS (see Safe mixing)                         |
+| A boron frit, for mid-fire            | Ferro 3134, 3124 or 3195; in the UK, Potterycrafts P3124 or P3195                |
+| Bentonite and colorants               | Small amounts                                                                    |
 
-### Karty techniczne i karty charakterystyki
+### Data sheets and safety data sheets
 
-Do każdego surowca należy poprosić o dwa dokumenty. **Karta techniczna** (ang. TDS) podaje jego **skład chemiczny**: udział masowy każdego tlenku w proszku. Na tych danych opiera się Glazecalc, a surowiec można dodać na podstawie składu podanego przez dostawcę na [stronie Surowce](/material). **Karta charakterystyki** (ang. SDS) mówi, jak obchodzić się z surowym proszkiem. Każdą kartę charakterystyki należy zachować i przeczytać przed mieszaniem.
+Ask for two documents for each material. A **technical data sheet** (TDS) gives its **chemical analysis**: the share of each oxide in the powder, by weight. Glazecalc works from these, and you can add a material from a supplier's analysis on the [Materials page](/material). A **safety data sheet** (SDS) says how to handle the raw powder. Keep each SDS, and read it before you mix.
 
-Składy chemiczne to wartości średnie, a nie gwarancje. Valentine Clays drukuje na karcie technicznej swojego produktu flint napis „WARTOŚCI ŚREDNIE. NIE STANOWIĄ ONE SPECYFIKACJI”, a analizy skalenia Custer z różnych lat w bazie Glazy wykazują od ok. 68,5 % do 72,4 % krzemionki. Proponujemy zapisywać w notatkach **numer partii** każdego worka (jego kod serii produkcyjnej), by móc ocenić, czy zmiana w sprawdzonym szkliwie wynika z surowca.
+Analyses are averages, not promises. Valentine Clays prints "MEAN VALUES. THESE DO NOT REPRESENT A SPECIFICATION" on its flint data sheet, and Glazy's analyses of Custer feldspar from different years run from about 68.5% to 72.4% silica. We suggest writing each sack's **lot number** (its batch code) in your records, so you can tell whether a change in a trusted glaze came from the material.
 
-HSE ostrzega, że krzemionka krystaliczna „może być błędnie oznaczona jako «krzemionka bezpostaciowa»”. Poza tym karta charakterystyki dotyczy proszku, a nie naczynia: nie mówi nic o tym, czy wypalone szkliwo jest bezpieczne w kontakcie z żywnością{{en: food safe}}. Może to wykazać tylko laboratoryjne badanie uwalniania metali{{en: leach test}} z wypalonego naczynia.
+HSE warns that crystalline silica "can be wrongly labelled as 'amorphous silica'". And an SDS is about the powder, not the pot: it says nothing about whether a fired glaze is safe for food. Only a laboratory leach test of the fired pot can show that.
 
-### Nazwy się zmieniają, więc liczy się skład chemiczny
+### Names change, so buy by chemistry
 
-Nazwy handlowe pojawiają się i znikają wraz z zamykaniem kopalń. Skaleń Custer, wydobywany w Dakocie Południowej przez ponad 75 lat, wyczerpał się pod koniec 2023 r. Gdy w Clay Art Center przestawiono się na G-200 AU i Mahavir, mniej więcej połowa tamtejszych szkliw wymagała korekty. Zniknęły też G-200 i G-200 HP, a Laguna sprowadza teraz Mahavir, którego skład chemiczny jest zbliżony do G-200.
+Brand names come and go as mines close. Custer feldspar, mined in South Dakota for more than 75 years, ran out in late 2023. When Clay Art Center switched to G-200 AU and Mahavir, about half its glazes needed adjusting. G-200 and G-200 HP are gone too, and Laguna now imports Mahavir, whose chemistry is close to G-200.
 
-**Gerstley Borate**, naturalny minerał boru obecny w wielu starszych recepturach, jest trudno dostępny od zamknięcia jego kopalni w 2000 r., choć według informacji New Mexico Clay z listopada 2025 r. Laguna dostarczała „Gerstley Borate Original”. Źródła nie są zgodne co do **Gillespie Borate** jako zamiennika. Producent sprzedaje go jako zamiennik funt za funt. Berkeley Potters Studio twierdzi, że „nie jest bezpośrednim zamiennikiem”, a w Digitalfire stwierdzono, że zmienił on kolor szkliwa. Bezpieczne wyjście to porównać oba surowce pod względem tlenków, a potem je przetestować.
+**Gerstley Borate**, a natural boron mineral in many older recipes, has been scarce since its mine closed in 2000, though New Mexico Clay reported in November 2025 that Laguna was supplying "Gerstley Borate Original". Sources disagree about **Gillespie Borate** as a replacement. Its maker sells it as pound-for-pound. Berkeley Potters Studio says it "is not a direct substitute", and Digitalfire found it changed a glaze's color. The safe course is to compare the two by their oxides, then test.
 
-Nazwy różnią się też w zależności od regionu. W Ameryce Północnej **flint** (krzemień), quartz (kwarc) i silica (krzemionka) oznaczają tę samą mieloną krzemionkę, a Digitalfire pisze, że prawdziwego mielonego krzemienia u dostawców raczej się nie znajdzie. W Wielkiej Brytanii flint to osobny produkt: flint firmy Valentine Clays to kalcynowana (wyprażona) krzemionka. Oba produkty to niemal czysta krzemionka, więc spodziewamy się, że są do siebie zbliżone, ale należy sprawdzić skład chemiczny. W przypadku kaolinu Glazy pisze, że zamiany jeden do jednego, np. EPK na china clay, „często sprawdzają się bez problemu, zwłaszcza przy ilościach \<10 %”.
+Regional names differ too. In North America, **flint**, quartz and silica mean the same ground silica, and Digitalfire says you probably won't find true flint powder from suppliers. In the UK, flint is its own product: Valentine's is calcined (heated) silica. Both are nearly pure silica, so we expect them to be close, but check the analysis. For kaolin, Glazy says one-for-one swaps, such as EPK for a china clay, "often work just fine, especially when amounts are \<10%".
 
-Wiele receptur wymienia surowce, które są sprzedawane w jednym kraju, a w innym nie. Poniższa tabela zestawia każdy surowiec z biblioteki aplikacji Glazecalc, którego nie sprzedaje się tam, gdzie robi się zakupy, z najbliższym surowcem tego samego rodzaju, który jest tam w sprzedaży, na podstawie ich składów chemicznych. Podana liczba mówi, jak bardzo te dwa surowce się od siebie różnią: to różnice w gramach między ich tlenkami po wypale, na 100 g surowca, zsumowane dla wszystkich tlenków. Przy różnicy do ok. 15 g jeden surowiec zwykle może zastąpić drugi w pierwszym teście. Nazwy zawierają własne kody producentów i sklepów, więc można o nie poprosić, podając nazwę.
+Many recipes name materials that are sold in one country and not another. The table below takes each material in Glazecalc's library that is not sold where you buy, and finds the closest of its kind that is, by their analyses. The figure is how far apart the two are: the grams by which their fired oxides differ, per 100 g of material, added up over every oxide. Within about 15 g, one can usually stand in for the other in a first test. The names carry the makers' and shops' own codes, so you can ask for them by name.
 
 ::local-equivalents
 
 > [!NOTE]
-> Glazecalc porównuje surowce według tego, co wnoszą do wypalonego szkliwa, a nie według nazwy. [Receptura](/recipe) z surowcem, którego już się nie produkuje, podaje, czego używa się obecnie. Przycisk **Zaproponuj ilości i porównaj** przelicza ilości na nowo dla zamiennika, a funkcja **Dopasuj do tego, co mam** odtwarza recepturę z posiadanych surowców. Obie dopasowują wyłącznie tlenki po wypale, dlatego najpierw należy przetestować małą porcję.
+> Glazecalc compares materials by what they bring to the fired glaze, not by name. A [recipe](/recipe) with a material no longer made says what is used now. **Suggest amounts and compare** works the amounts out again for a substitute, and **Match with what I have** makes the recipe again from the materials on your shelf. Both match the fired oxides only, so test a small batch first.
 
 ## Przechowywanie surowców i szkliw {#storing}
 
@@ -163,55 +163,55 @@ Label: Sito (mesh)
 | Szkliwa z barwnikami{{en: colorants}}, np. z kobaltem lub żelazem | 100–120 mesh             |
 | Szkliwa popiołowe i inne z gruboziarnistymi surowcami             | 60–80 mesh               |
 
-## Gęstość względna {#specific-gravity}
+## Specific gravity {#specific-gravity lang=en}
 
-**Gęstość względna**{{en: specific gravity}} (SG) mówi, ile proszku jest w zawiesinie{{en: slurry}}. To masa pewnej objętości szkliwa{{en: glaze}} podzielona przez masę takiej samej objętości wody. Dla wody wynosi ona 1,00, a szkliwo o {{SG 1.45}} waży 145 g na 100 mL. Rozrabianie do zmierzonej SG pozwala za każdym razem uzyskać tę samą konsystencję i taką samą warstwę. Gęstość względna nie ma jednostki, więc jest taka sama w gramach i w uncjach.
+**Specific gravity** (SG) tells you how much powder is in your slurry. It is the weight of a volume of glaze divided by the weight of the same volume of water. Water is 1.00, and a glaze at {{SG 1.45}} weighs 145 g per 100 mL. Mixing to a measured SG is how you get the same thickness, and the same coat, every time. It has no units, so it is the same in grams or ounces.
 
-### Pomiar przez zważenie 100 mL
+### Measure it by weighing 100 mL
 
-1. Zamieszać szkliwo, aby nic nie zostało na dnie.
-2. Postawić na wadze **cylinder miarowy** na 100 mL (wysokie naczynie pomiarowe z podziałką) lub strzykawkę na 100 mL i wytarować wagę.
-3. Napełnić go szkliwem dokładnie do 100 mL, odczytując kreskę na wysokości oczu.
-4. Zważyć i podzielić liczbę gramów przez 100: 145 g to SG 1,45.
+1. Stir the glaze so nothing has settled.
+2. Put a 100 mL **graduated cylinder** (a tall, marked measuring tube) or a 100 mL syringe on the scale, and tare it.
+3. Fill it with glaze to exactly 100 mL, reading the mark at eye level.
+4. Weigh it and divide the grams by 100: 145 g is SG 1.45.
 
-W Digitalfire zaznacza się też na kubku poziom 500 g wody, napełnia go szkliwem do tej kreski i dzieli masę przez 500; większa, pełniejsza miara jest dokładniejsza. **Areometr**, czyli pływak, z którego odczytuje się wynik na poziomie szkliwa, działa szybko, ale może źle mierzyć szkliwa gęste lub zżelowane. Brytyjskie areometry, np. firmy Potclays, mają skalę w stopniach Baumé (°Bé). Według naszych obliczeń SG = 145 ÷ (145 − °Bé), więc 46 °Bé to ok. 1,46. Starsze brytyjskie książki podają **masę pinty**, czyli liczbę uncji w pincie imperialnej szkliwa: należy ją podzielić przez 20, więc 29 oz to ok. SG 1,45 (to również nasze obliczenia).
+Digitalfire also marks a cup at the level of 500 g of water, fills it to the mark with glaze, and divides the weight by 500; a bigger, fuller measure is more accurate. A **hydrometer**, a float read where it sits in the glaze, is quick but can misread thick or gelled glazes. UK hydrometers, such as Potclays', read in degrees Baumé (°Bé). By our arithmetic, SG = 145 ÷ (145 − °Bé), so 46 °Bé is about 1.46. Older UK books give a **pint weight**, the ounces in an imperial pint of glaze: divide it by 20, so 29 oz is about SG 1.45 (also our arithmetic).
 
-### Wartości docelowe
+### What to aim for
 
-Źródła nie są zgodne, najbardziej w przypadku malowania pędzlem i natrysku, gdzie brytyjski dostawca Potclays podaje znacznie wyższe wartości (sam określa je jako „wyłącznie orientacyjne”). Każdą liczbę należy traktować jako punkt wyjścia. Główna rada Digitalfire brzmi: znaleźć SG i stopień zżelowania, które sprawdzają się w danym szkliwie, a potem je powtarzać i zapisywać.
+Sources disagree, most of all on brushing and spraying, where the UK supplier Potclays gives much higher figures (its own are "for guidance only"). Treat every number as a starting point. Digitalfire's core advice is to find the SG and gelling that work for each glaze, then repeat them and write them down.
 
-Table: Docelowa gęstość względna: rozbieżności między źródłami
-Label: Docelowa gęstość względna
+Table: Specific gravity targets, where sources disagree
+Label: Specific gravity targets
 
-| Zastosowanie      | Digitalfire i Glazy                                                                                                                                                                    | Potclays (Wielka Brytania)                     | Bezpieczny punkt wyjścia                                                  |
-| ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------- |
-| Zanurzanie        | Od {{SG 1.40}} (przy zanurzeniu na 5 sekund) do {{SG 1.50}} (przy zanurzeniu na 1 sekundę); szkliwa rozrabiane samodzielnie i zżelowane najlepiej sprawdzają się przy {{SG 1.43–1.45}} | Bezbarwne {{SG 1.46–1.48}}; barwne {{SG 1.61}} | {{SG 1.45}}; jeśli kapie, rozrzedzić do {{SG 1.43}} i zżelować            |
-| Malowanie pędzlem | Od {{SG 1.25}} (cienkie bezbarwne) do {{SG 1.55}} (ciemne detale)                                                                                                                      | {{SG 1.71–1.81}}                               | Według zaleceń producenta; użyć kleju CMC lub medium do malowania pędzlem |
-| Natrysk           | Brak wartości; Hopper w artykule dla Ceramic Arts Network zaleca znacznie rzadsze szkliwo z deflokulantem{{en: deflocculant}} (dodatkiem, który upłynnia zawiesinę)                    | {{SG 1.71}}                                    | Brak wiarygodnej wartości; natryskiwać tylko w kabinie natryskowej        |
+| Use      | Digitalfire and Glazy                                                                                                                 | Potclays (UK)                               | Safe starting point                                     |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------- |
+| Dipping  | {{SG 1.40}} (for a 5-second dip) to {{SG 1.50}} (for a 1-second dip); home-mixed glazes that are gelled do best at {{SG 1.43–1.45}}   | Clear {{SG 1.46–1.48}}; colored {{SG 1.61}} | {{SG 1.45}}; thin to {{SG 1.43}} and gel it if it drips |
+| Brushing | {{SG 1.25}} (thin clear) to {{SG 1.55}} (dark detail)                                                                                 | {{SG 1.71–1.81}}                            | Follow the product; use CMC gum or a brushing medium    |
+| Spraying | No figure; Hopper, writing for Ceramic Arts Network, says much thinner, with a deflocculant (an additive that makes a slurry runnier) | {{SG 1.71}}                                 | No reliable number; spray only in a spray booth         |
 
-Aby ocenić szkliwo do zanurzania na oko, w firmie AMACO zanurza się płytkę na 5 sekund i sprawdza, czy warstwa ma mniej więcej grubość amerykańskiej monety dziesięciocentowej (dime). W Digitalfire dla sprawdzenia wypala się płytki testowe{{en: test tiles}} zanurzane na 5 sekund.
+To check a dipping glaze by eye, AMACO dips for 5 seconds and looks for a coat about as thick as a US dime. Digitalfire fires tiles dipped for 5 seconds to check.
 
-### Ilość wody dla docelowej gęstości względnej: nasze szacunki
+### Water for a target SG: our estimate
 
-Poniższa tabela to nasze własne obliczenia, a nie dane ze źródła. Zakłada, że cząstki proszku mają gęstość 2,6 g na cm³, co jest założeniem, a nie wynikiem pomiaru. Glina, surowce rozpuszczalne i żelowanie zmieniają rzeczywiste szkliwo, dlatego tabela służy jako punkt wyjścia, a potem trzeba mierzyć. Dla sprawdzenia: przy równych masach proszku i wody przewiduje ona {{SG 1.44}}, blisko zmierzonej przez Digitalfire wartości {{SG 1.46}}. Pokazuje też, że przy 70–80 mL na 100 g zaczyna się powyżej {{SG 1.50}}, czyli gęściej, niż potrzeba.
+The table below is our own arithmetic, not a source's. It assumes the powder's particles have a density of 2.6 g per cm³, which is an assumption, not a measurement. Clay, soluble materials and gelling all change a real glaze, so use it to start, then measure. As a check, it predicts {{SG 1.44}} for equal weights of powder and water, close to Digitalfire's measured {{SG 1.46}}. It also shows that 70 to 80 mL per 100 g starts you above {{SG 1.50}}, thicker than you need.
 
-Table: Ilość wody dla docelowej gęstości względnej (nasze szacunki)
-Label: Ilość wody dla docelowej gęstości względnej
+Table: Water for a target specific gravity (our estimate)
+Label: Water for a target specific gravity
 
-| Wartość docelowa | Na 100 g proszku | Na kilogram |         Na funt |
-| ---------------- | ---------------: | ----------: | --------------: |
-| {{SG 1.40}}      |       ok. 115 mL | ok. 1150 mL | ok. 18 US fl oz |
-| {{SG 1.45}}      |        ok. 98 mL |  ok. 980 mL | ok. 15 US fl oz |
-| {{SG 1.50}}      |        ok. 85 mL |  ok. 850 mL | ok. 13 US fl oz |
-| {{SG 1.60}}      |        ok. 64 mL |  ok. 640 mL | ok. 10 US fl oz |
+| Target      | Per 100 g of powder |  Per kilogram |         Per pound |
+| ----------- | ------------------: | ------------: | ----------------: |
+| {{SG 1.40}} |        about 115 mL | about 1150 mL | about 18 US fl oz |
+| {{SG 1.45}} |         about 98 mL |  about 980 mL | about 15 US fl oz |
+| {{SG 1.50}} |         about 85 mL |  about 850 mL | about 13 US fl oz |
+| {{SG 1.60}} |         about 64 mL |  about 640 mL | about 10 US fl oz |
 
-### Sól gorzka, klej CMC i bentonit
+### Epsom salts, CMC gum and bentonite
 
-**Sól gorzka** (siarczan magnezu) sprawia, że szkliwo lekko tężeje w żel, gdy stoi, i znowu płynie po zamieszaniu. Nazywa się to **flokulacją**{{en: flocculating}}, a szkliwo, które tak się zachowuje, jest **tiksotropowe**{{en: thixotropic}}: nakłada się równiej, mniej kapie i mniej osiada. Digitalfire proponuje, by po ustaleniu właściwej SG zacząć od ok. 2 g na galon (w przybliżeniu 0,5 g na litr, w naszym przeliczeniu) i dostrajać ilość przy każdym rozrabianiu, bo żadna receptura nie powinna ustalać dawki na sztywno. Proponujemy najpierw rozpuścić sól w niewielkiej ilości gorącej wody. W przykładzie z Digitalfire szkliwo o {{SG 1.45}} kapało, więc rozrzedzono je wodą do {{SG 1.43}}, a sól gorzka z powrotem nadała mu kremową konsystencję i szkliwo nałożyło się równo. Prosty sprawdzian: zamieszać, przestać i obserwować. Zżelowane szkliwo płynie jeszcze przez ok. 2 lub 3 sekundy, potem zatrzymuje się i lekko cofa.
+**Epsom salts** make a glaze gel slightly when it stands still and flow again when it is stirred. This is called **flocculating** it, and a glaze that behaves this way is **thixotropic**: it goes on more evenly, drips less and settles less. Digitalfire suggests starting at about 2 g per gallon once the SG is right (roughly 0.5 g per liter, our conversion) and tuning the amount each time you mix, since no recipe should fix the dose. We suggest dissolving it in a little hot water first. In a Digitalfire example, a glaze at {{SG 1.45}} dripped, so water brought it down to {{SG 1.43}} and Epsom salts gelled it back to creamy, and it went on evenly. A rough check: stir, stop and watch. A gelled glaze moves on for about 2 or 3 seconds, then stops and springs back a little.
 
-**Klej CMC** (karboksymetyloceluloza) sprawia, że zawiesina jest bardziej lepka i wolniej schnie, a po wyschnięciu tworzy twardszą warstwę, która dobrze trzyma się naczynia. Ma największe znaczenie w szkliwach do malowania pędzlem i szkliwach z dużą zawartością fryty{{en: frit}}. W przykładzie z Digitalfire miesza się 3,75 g z 1000 g zawiesiny i trzeba to zrobić blenderem. Szkliwo z CMC nie zżeluje się pod wpływem soli gorzkiej, a ponieważ drobnoustroje żywią się klejem, może się zmieniać w wiadrze i zacząć nieprzyjemnie pachnieć.
+**CMC gum** (carboxymethyl cellulose) makes a slurry stickier and slower to dry, and leaves a harder coat that holds to the pot. It matters most for brushing glazes and glazes high in frit. Digitalfire's example blends 3.75 g into 1000 g of slurry, and it has to go in with a blender. A glaze with CMC will not gel with Epsom salts, and since microbes feed on the gum, it can change in the bucket and start to smell.
 
-**Bentonit**, bardzo drobna glina, pomaga utrzymać pozostałe cząstki w zawiesinie. Szkliwa do zanurzania zwykle zawdzięczają to 15–25 % surowej gliny. W recepturze z niewielką ilością gliny pomaga ok. 1–2 % bentonitu.
+**Bentonite**, a very fine clay, helps hold the other particles in suspension. Dipping glazes usually rely on 15 to 25% raw clay for this. For a recipe short of clay, about 1 to 3% bentonite helps; Digitalfire says a glaze with more than 15% clay should not need more than 1%.
 
 ## Płytki testowe i próby liniowe {#testing}
 
@@ -276,7 +276,7 @@ Label: Wzór zapisu
 > [!NOTE]
 > W aplikacji Glazecalc zapisana [receptura](/recipe) przechowuje samą recepturę. [Dziennik wypałów](/firing) rejestruje każdy wypał: piec, datę, godziny, temperatury, stożki i uwagi. W [notatkach](/notes) mieści się cała reszta, np. powyższy zapis porcji i to, co pokazała każda płytka.
 
-## Źródła {#sources}
+## Sources {#sources lang=en}
 
 - [Glazy: Raw materials](https://help.glazy.org/concepts/materials)
 - [Glazy: Specific gravity](https://help.glazy.org/testing/specific-gravity)
@@ -284,6 +284,7 @@ Label: Wzór zapisu
 - [Digitalfire: Epsom salts](https://digitalfire.com/material/epsom+salts)
 - [Digitalfire: CMC gum](https://digitalfire.com/material/cmc%2Bgum)
 - [Digitalfire: Dipping glaze](https://digitalfire.com/glossary/dipping+glaze)
+- [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Water solubility](https://digitalfire.com/glossary/water+solubility)
 - [Digitalfire: Gerstley Borate](https://digitalfire.com/material/gerstley+borate)
 - [Digitalfire: Mahavir potash feldspar](https://digitalfire.com/material/mahavir+potash+feldspar)

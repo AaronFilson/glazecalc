@@ -3,39 +3,39 @@ title: Taħlit sikur u ventilazzjoni
 lead: Kif iżżomm it-trab tal-glejż ’il bogħod mill-pulmuni tiegħek u d-dħaħen tal-forn barra mid-dar tiegħek: id-drawwiet, it-tagħmir u l-materjali li jgħoddu l-aktar.
 ---
 
-## Il-periklu ewlieni: it-trab {#the-main-hazard}
+## The main hazard: dust {#the-main-hazard lang=en}
 
-Il-periklu ewlieni fit-tul fix-xogħol bil-glejż{{en: glaze}} huwa t-trab, fuq kollox is-**silika kristallina respirabbli**{{en: respirable crystalline silica}}: partikoli tal-kwarz jew tal-kristobalit (forom kristallini tas-silika{{en: silica}}) tant żgħar li jaslu sal-fond tal-pulmuni. Is-silika kristallina tista’ tagħmel madwar 10 sa 60% tal-piż niexef ta’ glejż, u l-biċċa l-kbira tat-tipi ta’ tafal (ħlief il-kawlina{{en: kaolin}}) u ħafna feldspars fihom ukoll kwarz fin. Il-Health and Safety Executive (HSE) tar-Renju Unit jgħid li dan it-trab “huwa fin ħafna u ma jidhirx f’dawl normali”, għalhekk kamra li tidher nadifa mhix prova li l-arja hija nadifa wkoll.
+The main long-term hazard in glaze work is dust, above all **respirable crystalline silica**: particles of quartz or cristobalite (crystal forms of silica) small enough to reach deep into the lungs. Crystalline silica can make up about 10 to 60% of a glaze's dry weight, and most clays (except kaolin) and many feldspars also carry fine quartz. The UK's Health and Safety Executive (HSE) says this dust "is very fine and invisible under normal lighting", so a room that looks clean is not proof that the air is.
 
-Jekk jinġibed man-nifs maż-żmien, jista’ jikkawża s-**silikożi**, marda tal-pulmun li l-HSE jiddeskriviha bħala “serja u irriversibbli” u li tista’ “tikkawża diżabbiltà permanenti u mewt qabel iż-żmien”. Jista’ jikkawża wkoll il-**COPD** (mard pulmonari ostruttiv kroniku: bronkite fit-tul u emfisema), li t-tipjip jaggravah. L-IARC, l-aġenzija tal-Organizzazzjoni Dinjija tas-Saħħa għall-kanċer, tqiegħed is-silika kristallina li tinġibed man-nifs fil-Grupp 1, “karċinoġenu għall-bnedmin”.
+Breathed in over time, it can cause **silicosis**, a lung disease that HSE describes as "serious and irreversible" and able to "cause permanent disablement and early death". It can also cause **COPD** (chronic obstructive pulmonary disease: long-term bronchitis and emphysema), which smoking makes worse. IARC, the World Health Organization's cancer agency, places inhaled crystalline silica in Group 1, "carcinogenic to humans".
 
-Is-silika ma ssirx dħaħen fil-forn, u l-glejż imxarrab mhuwiex periklu għan-nifs. Il-ħin biex toqgħod attent huwa meta l-materjal ikun niexef: meta tiftaħ ix-xkejjer, meta tiżen, meta tħawwad it-trab fl-ilma, u meta tnaddaf it-taqtir, l-isprej żejjed u l-glejż imxerred wara li jkunu reġgħu nixfu u saru trab.
+Silica does not turn into fumes in the kiln, and a wet glaze is not an inhalation hazard unless it is sprayed: spray mist carries silica and dries to dust (see Spraying, below). The times to take care are when material is dry: opening bags, weighing, stirring powder into water, and cleaning up drips, overspray and slop once they have dried back into dust.
 
-### Valuri limitu tal-espożizzjoni
+### Exposure limits
 
-Ir-regoli tal-post tax-xogħol jistabbilixxu **valur limitu tal-espożizzjoni**: l-akbar ammont ta’ silika li l-ħaddiema jistgħu jieħdu man-nifs, bħala medja fuq jum ta’ 8 sigħat, f’milligrammi (mg) jew mikrogrammi (µg, wieħed minn elf ta’ milligramma) għal kull metru kubu ta’ arja.
+Workplace rules set an **exposure limit**: the most silica a worker may breathe, averaged over an 8-hour day, in milligrams (mg) or micrograms (µg, thousandths of a milligram) per cubic meter of air.
 
-Table: Limiti tal-post tax-xogħol għas-silika kristallina respirabbli (medja ta’ 8 sigħat)
-Label: Limiti tal-espożizzjoni għas-silika
+Table: Workplace limits for respirable crystalline silica (8-hour average)
+Label: Silica exposure limits
 
-| Reġjun           |                Limitu | Noti                                                                                            |
-| ---------------- | --------------------: | ----------------------------------------------------------------------------------------------- |
-| L-Istati Uniti   | 0.05 mg/m³ (50 µg/m³) | Il-limitu tal-OSHA. Min iħaddem irid jibda jieħu azzjoni f’25 µg/m³, “il-livell ta’ azzjoni”.   |
-| Ir-Renju Unit    |             0.1 mg/m³ | L-espożizzjoni trid tinżamm ukoll “baxxa kemm hu raġonevolment prattikabbli”.                   |
-| L-Unjoni Ewropea |             0.1 mg/m³ | Limitu vinkolanti (Direttiva (UE) 2017/2398). Xi Stati Membri jistabbilixxu limiti aktar baxxi. |
-| L-Awstralja      |            0.05 mg/m³ | Minn Lulju 2020. F’Ġunju 2026, il-biċċa l-kbira tal-ministri ma appoġġawx tnaqqis għal 0.025.   |
-| New Zealand      |           0.025 mg/m³ | Mill-2023. L-istandards ta’ WorkSafe huma linji gwida, mhux limiti legali.                      |
+| Region         |                 Limit | Notes                                                                             |
+| -------------- | --------------------: | --------------------------------------------------------------------------------- |
+| United States  | 0.05 mg/m³ (50 µg/m³) | OSHA's limit. Employers must start taking action at 25 µg/m³, the "action level". |
+| United Kingdom |             0.1 mg/m³ | Exposure must also be kept "as low as reasonably practicable".                    |
+| European Union |             0.1 mg/m³ | Binding limit (Directive 2017/2398). Some member states set lower ones.           |
+| Australia      |            0.05 mg/m³ | Since July 2020. In June 2026, most ministers did not support a cut to 0.025.     |
+| New Zealand    |           0.025 mg/m³ | Since 2023. WorkSafe's standards are guidance, not legal limits.                  |
 
-Xi paġni jagħtu 0.025 mg/m³ għall-Awstralja, imma l-limitu uffiċjali għadu 0.05. Fi kwalunkwe każ, il-parir huwa l-istess: żomm it-trab baxx kemm tista’.
+Some pages quote 0.025 mg/m³ for Australia, but the official limit is still 0.05. Either way, the advice is the same: keep dust as low as you can.
 
-Diversi Stati Membri tal-UE jistabbilixxu limiti aktar baxxi minn dak tal-UE. Il-limitu fejn tgħix, il-liġi li tistabbilixxih u l-awtorità nazzjonali għas-saħħa u s-sigurtà fuq il-post tax-xogħol:
+Several EU member states set lower limits than the EU's. The limit where you live, the law that sets it and the national body for safety at work:
 
 ::silica-limit
 
 > [!NOTE]
-> Dawn huma limiti tal-post tax-xogħol. Jorbtu lil min iħaddem, għalhekk ħadd ma jispezzjona lill-fuħħarin li jaħdmu weħidhom id-dar, għalkemm l-istudjos komunitarji u l-iskejjel bl-istaff normalment ikunu koperti (iċċekkja r-regoli lokali tiegħek). It-trab huwa l-istess id-dar, u l-limiti juru kemm hu kbir il-periklu: minn 25 sa 100 parti minn miljun ta’ gramma f’kull metru kubu ta’ arja, bħala medja fuq jum.
+> These are workplace limits. They bind employers, so no one inspects a potter working alone at home, though community studios and schools with staff are usually covered (check your local rules). The dust is the same at home, and the limits show the scale of the hazard: 25 to 100 millionths of a gram in each cubic meter of air, averaged over a day.
 
-Kważi ħadd ma kejjel it-trab fl-istudjos tad-dilettanti, għalhekk nissuġġerixxu li tqis kull xogħol bi trab niexef bħala xogħol li jqajjem it-trab.
+Almost no one has measured dust in hobby studios, so we suggest treating every dry-powder task as a dusty one.
 
 ## Id-drawwiet li jgħoddu l-aktar {#habits}
 
@@ -65,49 +65,49 @@ Il-biċċa l-kbira tal-protezzjoni tiġi mid-drawwiet, mhux mit-tagħmir. Il-par
 
 Din l-ordni hija s-suġġeriment tagħna, mibnija fuq il-prinċipju tal-HSE li l-ewwel tevita t-trab. Għall-użin u t-taħlit pass pass, ara l-gwida [Kif tagħmel glejż](/guides/making-a-glaze).
 
-## Ir-respiraturi {#respirators}
+## Respirators {#respirators lang=en}
 
-**Respiratur** huwa maskra ċċertifikata biex tiffiltra l-partikoli fini mill-arja li tieħu man-nifs. Jaħdem biss meta jissiġilla sewwa ma’ wiċċek, u jsaħħaħ id-drawwiet tajbin, mhux jieħu posthom.
+A **respirator** is a mask certified to filter fine particles from the air you breathe. It works only when it seals to your face, and it backs up good habits rather than replacing them.
 
-### Klassijiet skont ir-reġjun
+### Classes by region
 
-Table: Klassijiet tar-respiraturi kontra l-partikoli skont ir-reġjun (ekwivalenti bejn wieħed u ieħor għat-trab tal-glejż)
-Label: Klassijiet tar-respiraturi
+Table: Particle respirator classes by region (rough equivalents for glaze dust)
+Label: Respirator classes
 
-| Reġjun                    | Klassi ta’ kuljum | Klassi ogħla | X’għandek tfittex                                                                                            |
-| ------------------------- | ----------------- | ------------ | ------------------------------------------------------------------------------------------------------------ |
-| L-Istati Uniti            | N95               | P100         | L-approvazzjoni tan-NIOSH fuq il-maskra jew fuq l-imballaġġ tagħha                                           |
-| Ir-Renju Unit u l-UE      | FFP2              | FFP3         | EN 149 fuq il-maskri li jintremew wara l-użu; EN 140 fuq nofs maskri li jerġgħu jintużaw, b’filtri P2 jew P3 |
-| L-Awstralja u New Zealand | P2                | P3           | AS/NZS 1716                                                                                                  |
+| Region                    | Everyday class | Higher class | Look for                                                                   |
+| ------------------------- | -------------- | ------------ | -------------------------------------------------------------------------- |
+| United States             | N95            | P100         | NIOSH approval on the mask or its packaging                                |
+| UK and EU                 | FFP2           | FFP3         | EN 149 on disposable masks; EN 140 half masks with EN 143 P2 or P3 filters |
+| Australia and New Zealand | P2             | P3           | AS/NZS 1716                                                                |
 
-Il-klassi l-ogħla tiffiltra sehem akbar tal-partikoli fini. Is-sorsi ma jaqblux dwar kemm jiffiltra filtru P3 Awstraljan (mill-inqas 99%, jew mill-inqas 99.95%), għalhekk ixtri l-klassi ċċertifikata li tinbiegħ fir-reġjun tiegħek. **Nofs maskra** li terġa’ tintuża (tgħatti l-imnieħer u l-ħalq, b’filtri li jinbidlu) b’filtri P100 (P3 barra mill-Istati Uniti) hija għażla komuni fl-istudjo.
+The higher class filters a larger share of fine particles. Sources disagree on what an Australian P3 filters (at least 99%, or at least 99.95%), so buy the certified class sold in your region. A reusable **half mask** (covering the nose and mouth, with replaceable filters) fitted with P100 filters (P3 outside the US) is a common studio choice.
 
-### Il-qbil mal-wiċċ u s-siġill
+### Fit and seal
 
-Maskra li tnixxi ddaħħal it-trab minn mat-truf tagħha, tkun xi tkun il-klassi tagħha. L-HSE iwissi li x-xagħar qasir tal-leħja u l-leħja “jagħmluha impossibbli li jkollok siġill tajjeb”.
+A mask that leaks lets dust in around its edges, whatever its class. HSE warns that stubble and beards "make it impossible to get a good seal".
 
-- **Ħu l-leħja ftit qabel ma taħdem.** Il-pariri ma jaqblux dwar kemm trid tkun ħadt il-leħja riċentement biex wiċċek jitqies “bil-leħja meħuda għal kollox”. Manifattur mir-Renju Unit, li jikkwota lill-HSE, jgħid li l-leħja tittieħed fi żmien 8 sigħat qabel ma tibda taħdem. L-istandard Awstraljan u ta’ New Zealand għat-test tal-qbil tal-maskra jitlob li tieħu l-leħja qabel it-test tal-qbil, “preferibbilment fi żmien 12-il siegħa”. Jekk tieħu l-leħja ftit qabel ma taħdem, tissodisfa t-tnejn.
-- **Jekk iżżomm il-leħja,** **respiratur bil-fann** maħlul (PAPR: kappuċċ jew elmu b’fann li jagħti arja ffiltrata) ma jeħtieġx siġill mal-wiċċ.
-- **Agħżel id-daqs it-tajjeb.** Qbil ħażin huwa waħda mill-kawżi ewlenin tat-tnixxija. Fil-postijiet tax-xogħol jużaw **test tal-qbil tal-maskra**, kontroll li juri li maskra partikolari tissiġilla sewwa fuq wiċċ partikolari. Id-dar, nissuġġerixxu li ssegwi l-istruzzjonijiet tal-manifattur biex tiċċekkja s-siġill kull darba li tilbisha.
+- **Shave shortly before you work.** Guidance differs on how recent "clean-shaven" must be. A UK maker, citing HSE, says shaved within 8 hours of starting work. The Australian and New Zealand fit-test standard asks for a shave before a fit test, "preferably within 12 hours". Shaving shortly before you work meets both.
+- **If you keep a beard,** a loose-fitting **powered respirator** (PAPR: a hood or helmet with a fan that supplies filtered air) needs no face seal.
+- **Get the size right.** Poor fit is a major cause of leaks. Workplaces use a **fit test**, a check that a particular mask seals on a particular face. At home, we suggest following the maker's instructions for checking the seal each time you put it on.
 
 > [!NOTE]
-> Fil-fehma tagħna, il-qbil mal-wiċċ jgħodd aktar mill-klassi: N95, FFP2 jew P2 li jaqbel sewwa normalment jaħdem aħjar minn P100 maħlul.
+> In our view, fit matters more than class: a well-fitted N95, FFP2 or P2 will usually do better than a loose P100.
 
-### Meta tilbes respiratur
+### When to wear one
 
-L-HSE jgħid li respiratur “normalment ma jkunx meħtieġ” fejn l-użin u t-taħlit isiru ġo kabina ventilata, imma “jista’ jkun meħtieġ għall-manutenzjoni u għat-tindif”. Il-biċċa l-kbira tal-istudjos tad-dar m’għandhom l-ebda kabina, għalhekk nissuġġerixxu li tilbes wieħed (mill-inqas N95, FFP2 jew P2; P100, FFP3 jew P3 huwa aħjar) kull meta:
+HSE says a respirator is "normally not needed" where weighing and mixing happen in a ventilated enclosure, but "may be needed for maintenance and cleaning". Most home studios have no enclosure, so we suggest wearing one (N95, FFP2 or P2 at least; P100, FFP3 or P3 is better) whenever you:
 
-- tiftaħ ix-xkejjer jew tferra’ t-trab;
-- tiżen il-materjali fi trab u tħawwadhom fl-ilma;
-- tobrox, tħakk jew tmolli glejż{{en: glaze}} niexef jew bisque;
-- tagħmel xi tindif niexef, jew tbattal vacuum cleaner;
-- tisprejja l-glejż (ġo kabina: ara aktar ’l isfel).
+- open bags or tip out powder;
+- weigh powders and stir them into water;
+- scrape, sand or grind dried glaze or bisque;
+- do any dry cleanup, or empty a vacuum;
+- spray glaze (in a booth: see below).
 
-### X’mhuwiex respiratur
+### What is not a respirator
 
-- Il-maskri kirurġiċi, il-maskri tad-drapp u l-maskri għal “trab inerti” mingħajr marka NIOSH, EN 149 jew AS/NZS 1716. Aħna ma konniex nistrieħu fuqhom għat-trab tal-glejż.
-- Respiratur għat-trab “mhux se jipproteġik kontra gassijiet, fwar” (OSHA), għalhekk ma jagħmel xejn kontra d-dħaħen tal-forn.
-- Ħu ħsieb tiegħek: l-OSHA tinnota li respiratur maħmuġ jew użat ħażin “jista’ jsir periklu”. Żommu nadif, ’il bogħod mill-ħwejjeġ tax-xogħol mimlijin trab.
+- Surgical masks, cloth masks and "nuisance dust" masks without a NIOSH, EN 149 or AS/NZS 1716 marking. We would not rely on them for glaze dust.
+- A dust respirator "will not protect you against gases, vapors" (OSHA), so it does nothing for kiln fumes.
+- Look after yours: OSHA notes that a dirty or misused respirator "can become a hazard". Store it clean, away from dusty work clothes.
 
 ## It-tindif, il-ħwejjeġ u l-idejn {#cleaning}
 
@@ -181,36 +181,36 @@ Il-materjali tal-glejż{{en: glaze}} iżidu aktar. Xi ossidi tal-metall jiffurma
 
 Ir-raku jagħmel ħafna duħħan u CO; Utah tagħti parir li jsir barra, ’il bogħod mid-daħliet tal-arja u mit-twieqi. Għall-ħami nnifsu, ara l-gwida [Il-ħami f’forn sempliċi](/guides/firing).
 
-## Il-materjali li jeħtieġu l-akbar attenzjoni {#materials}
+## Materials that need most care {#materials lang=en}
 
-Il-biċċa l-kbira tal-materjali tal-glejż{{en: glaze}}, fosthom is-silika{{en: silica}}, it-tafal, il-feldspars u l-fritti{{en: frits}}, huma l-aktar periklu bħala trab, u d-drawwiet ta’ hawn fuq jikkontrollawh. Għadd iżgħar ta’ materjali huma tossiċi minnhom infushom, jekk jinġibdu man-nifs, jinbelgħu jew imissu l-ġilda. Digitalfire iżid li l-pigmenti{{en: stains}} ġeneralment huma ħafna aktar sikuri mill-ossidi puri, u li “glejżijiet mhux ibbilanċjati li jirrilaxxaw metalli tossiċi jistgħu jsiru minn kwalunkwe materjal”: jekk glejż huwiex sikur għall-ikel{{en: food safe}} jiddependi mir-riċetta kollha, mhux minn ingredjent wieħed.
+Most glaze materials, including silica, clays, feldspars and frits, are mainly a dust hazard, which the habits above control. A shorter list is toxic in its own right, by breathing, swallowing or skin contact. Digitalfire adds that stains are generally much safer than raw oxides, and that "unbalanced glazes that release toxic metals can be made from any materials": food safety depends on the whole recipe, not on one ingredient.
 
-**Grupp tal-IARC** huwa klassifikazzjoni tal-kanċer: il-Grupp 1 ifisser “karċinoġenu għall-bnedmin”, il-Grupp 2A “probabbilment karċinoġenu għall-bnedmin”, il-Grupp 2B “possibbilment karċinoġenu għall-bnedmin”, u l-Grupp 3 “ma jistax jiġi kklassifikat dwar il-karċinoġeniċità tiegħu għall-bnedmin”, li jfisser li hemm wisq ftit evidenza biex wieħed jiġġudika b’xi mod jew ieħor.
+An **IARC group** is a cancer classification: Group 1 means "carcinogenic to humans", Group 2A "probably carcinogenic to humans", Group 2B "possibly carcinogenic to humans", and Group 3 "not classifiable as to its carcinogenicity to humans", which means too little evidence to judge either way.
 
-Table: Materjali tal-glejż li jeħtieġu attenzjoni żejda
-Label: Materjali li jeħtieġu l-akbar attenzjoni
+Table: Glaze materials that need extra care
+Label: Materials that need most care
 
-| Materjal                                                                    | Periklu                                                                                                                                                                                                                              | Prekawzjoni                                                                                                                                                         |
-| --------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Komposti taċ-ċomb u fritti taċ-ċomb                                         | “Tossiku ħafna jekk jinxtamm jew jinbela’”; jevapora fil-forn f’temperaturi aktar baxxi mill-biċċa l-kbira tal-materjali tal-glejż.                                                                                                  | Evitahom; Digitalfire jgħid li huma għall-esperti biss. Assumi li kull glejż li fuq it-tikketta ma jgħidx “mingħajr ċomb” (“lead-free” jew “leadless”) fih iċ-ċomb. |
-| Karbonat tal-barju                                                          | Insolubbli fl-ilma imma jinħall fl-aċidu tal-istonku; jaffettwa l-qalb u l-muskoli (taħbit tal-qalb irregolari, potassju baxx).                                                                                                      | Fritta tal-barju, jew stronzju minflok il-barju, fejn ir-riċetta tippermetti; respiratur; kontenitur b’tikketta.                                                    |
-| Diossidu tal-manganiż                                                       | It-trab jew id-dħaħen jistgħu jikkawżaw il-**manganiżmu**, marda tas-sistema nervuża simili għall-marda ta’ Parkinson, normalment wara minn 1 sa 3 snin ta’ espożizzjoni. Id-dħaħen jistgħu jikkawżaw id-deni tad-dħaħen tal-metall. | Minflok, pigmenti suwed f’perċentwali baxxi; ħalli l-arja toħroġ mill-forn.                                                                                         |
-| Dikromat tal-potassju u ossidu tal-kromju                                   | Il-kromju(VI), bħal fid-dikromat, huwa fil-Grupp 1 tal-IARC. Din il-klassifikazzjoni ma tkoprix il-kromju(III), bħal fl-ossidu tal-kromju.                                                                                           | Evita d-dikromat. Aħna nqisu l-ossidu tal-kromju bħala ħafna inqas perikoluż, imma żomm it-trab tiegħu għall-minimu.                                                |
-| Kobalt                                                                      | Imlieħ solubbli tal-kobalt(II): IARC 2A; ossidu tal-kobalt(II): 2B; Co₃O₄ iswed: Grupp 3.                                                                                                                                            | Żomm it-trab għall-minimu; pigmenti għal glejżijiet suwed.                                                                                                          |
-| Komposti tan-nikil                                                          | Fil-lista tal-Università ta’ Utah tal-karċinoġeni magħrufa jew probabbli għall-bnedmin.                                                                                                                                              | Pigmenti minflok perċentwali għoljin.                                                                                                                               |
-| Kadmju u selenju, puri jew f’pigmenti                                       | Il-komposti tal-kadmju huma fil-lista ta’ Utah tal-karċinoġeni magħrufa jew probabbli għall-bnedmin.                                                                                                                                 | “Mill-esperti biss” (Digitalfire); aqra l-SDS ta’ kull pigment.                                                                                                     |
-| Antimonju u vanadju                                                         | L-antimonju trivalenti (bħal fit-triossidu tal-antimonju): IARC 2A; il-vanadju “tossiku ħafna jekk jinxtamm”.                                                                                                                        | Il-vanadju għall-esperti biss; żomm it-trab tal-antimonju għall-minimu.                                                                                             |
-| Ram u żingu                                                                 | Id-dħaħen tal-forn jistgħu jikkawżaw id-deni tad-dħaħen tal-metall; l-ossidu taż-żingu bħala materja prima “ġeneralment mhuwiex meqjus perikoluż”.                                                                                   | Ħalli l-arja toħroġ mill-forn.                                                                                                                                      |
-| Karbonat tal-litju                                                          | “Tossiku ħafna jekk jinxtamm”. Kumitat ta’ esperti tal-UE kkonkluda li jista’ jagħmel ħsara lill-fertilità u lit-tarbija li għadha ma twelditx; meta ċċekkjajna, l-adozzjoni formali ma kinitx ikkonfermata.                         | Ingwanti u respiratur; żommu ’l bogħod mit-tfal. Nissuġġerixxu attenzjoni żejda fit-tqala.                                                                          |
-| Burax u aċidu boriku                                                        | Ikklassifikati fl-UE bħala “jista’ jagħmel ħsara lill-fertilità; jista’ jagħmel ħsara lit-tarbija li għadha ma twelditx”.                                                                                                            | Ingwanti; il-boron minn fritta fejn tista’.                                                                                                                         |
-| Karbonat tas-sodju, karbonat tal-potassju{{en: potash}}, feldspars alkalini | Jirritaw il-ġilda.                                                                                                                                                                                                                   | Ingwanti.                                                                                                                                                           |
-| Fluworspar, krijolit, lepidolit                                             | Joħorġu gassijiet tal-fluworu fil-ħami; il-fluworspar jirrita wkoll il-ġilda.                                                                                                                                                        | Ħalli l-arja tal-forn toħroġ barra; ingwanti.                                                                                                                       |
-| Talk                                                                        | IARC 2A minn Lulju 2024; talk ikkontaminat bl-asbestos jitqies bħala asbestos, Grupp 1.                                                                                                                                              | Talk lamellari (mhux fibruż), mingħajr asbestos; iċċekkja l-SDS tiegħu.                                                                                             |
+| Material                               | Hazard                                                                                                                                                                                                                                       | Precaution                                                                                                  |
+| -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| Lead compounds and lead frits          | "Highly toxic by inhalation or ingestion"; vaporizes in the kiln at lower temperatures than most glaze materials.                                                                                                                            | Avoid; Digitalfire says experts only. Assume any glaze not labeled "lead-free" or "leadless" contains lead. |
+| Barium carbonate                       | Insoluble in water but dissolves in stomach acid; affects the heart and muscles (irregular heartbeat, low potassium).                                                                                                                        | A barium frit or strontium where the recipe allows; respirator; labeled container.                          |
+| Manganese dioxide                      | Dust or fume can cause **manganism**, a nervous-system illness like Parkinson's disease, usually after 1 to 3 years of exposure. Fume can cause metal fume fever.                                                                            | Black stains at low percentages instead; vent the kiln.                                                     |
+| Potassium dichromate and chrome oxide  | Chromium(VI), as in dichromate, is IARC Group 1. That listing does not cover chromium(III), as in chrome oxide.                                                                                                                              | Avoid dichromate. We treat chrome oxide as far less hazardous, but keep its dust down.                      |
+| Cobalt                                 | Soluble cobalt(II) salts IARC 2A; cobalt(II) oxide 2B; black Co₃O₄ Group 3. Cobalt carbonate is classified in the EU as may cause cancer if breathed in, may damage fertility and suspected of causing genetic defects (H350i, H360F, H341). | Keep dust down; stains for blacks.                                                                          |
+| Nickel compounds                       | Among the University of Utah's known or probable human carcinogens.                                                                                                                                                                          | Stains rather than high percentages.                                                                        |
+| Cadmium and selenium, raw or in stains | Cadmium compounds are among Utah's known or probable human carcinogens.                                                                                                                                                                      | "Only by experts" (Digitalfire); read any stain's SDS.                                                      |
+| Antimony and vanadium                  | Trivalent antimony (as in antimony trioxide) IARC 2A; vanadium "highly toxic by inhalation".                                                                                                                                                 | Vanadium for experts only; keep antimony dust down.                                                         |
+| Copper and zinc                        | Kiln fume can cause metal fume fever; raw zinc oxide is "generally not considered hazardous".                                                                                                                                                | Vent the kiln.                                                                                              |
+| Lithium carbonate                      | "Highly toxic by inhalation". An EU expert committee concluded it may harm fertility, the unborn child and breast-fed children; formal adoption was not confirmed when we checked.                                                           | Gloves and respirator; keep from children. We suggest extra care in pregnancy and while breastfeeding.      |
+| Borax and boric acid                   | Classified in the EU as "may damage fertility; may damage the unborn child".                                                                                                                                                                 | Gloves; boron from a frit where you can.                                                                    |
+| Soda ash, potash, alkaline feldspars   | Skin irritants.                                                                                                                                                                                                                              | Gloves.                                                                                                     |
+| Fluorspar, cryolite, lepidolite        | Release fluorine gases in firing; fluorspar also irritates skin.                                                                                                                                                                             | Vent the kiln outdoors; gloves.                                                                             |
+| Talc                                   | IARC 2A since July 2024; talc contaminated with asbestos counts as asbestos, Group 1.                                                                                                                                                        | Platy (not fibrous), asbestos-free talc; check its SDS.                                                     |
 
-Il-burax, l-aċidu boriku, il-karbonat tas-sodju u l-karbonat tal-potassju jinħallu fl-ilma, għalhekk aħna nqisuhom bħala l-aktar probabbli li jgħaddu mill-ġilda miftuħa jew li jinbelgħu minn idejn mhux maħsula.
+Borax, boric acid, soda ash and potash dissolve in water, so we treat them as the likeliest to be absorbed through broken skin or swallowed from unwashed hands.
 
 > [!NOTE]
-> Jekk riċetta titlob karbonat tal-barju mhux f’fritta, ħafna manganiż, jew kwalunkwe materjal taċ-ċomb jew tal-kadmju, fittex verżjoni li minflok tuża fritta jew pigment. Glazecalc jista’ jqabbel il-kimika tal-oriġinal u tal-verżjoni bil-bdil; imbagħad ittestja l-glejż il-ġdid.
+> If a recipe calls for raw barium carbonate, a lot of manganese, or any lead or cadmium material, look for a version that uses a frit or a stain instead. Glazecalc can compare the chemistry of the original and the swap; then test the new glaze.
 
 ## L-ingwanti, il-ġilda u l-għajnejn {#gloves-and-eyes}
 
@@ -252,12 +252,12 @@ Dawn huma s-sorsi primarji li l-aktar jiswew jinqraw. Il-biċċa l-kbira tagħho
 - **New Zealand:** WorkSafe New Zealand jistabbilixxi l-istandards tal-espożizzjoni fil-post tax-xogħol; [l-istorja tal-istandard tas-silika](https://mbie.govt.nz/building-and-energy/building/building-and-construction-consultations/work-with-engineered-stone-and-materials-containing-crystalline-silica/annex-iii) tal-MBIE tagħti d-dati.
 - **Il-fran:** [il-pubblikazzjoni ta’ Skutt dwar il-kamra tal-forn](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Designing-A-Kiln-Room-1.pdf), [il-folja ta’ Orton u CCSA dwar id-dħaħen tal-forn](https://assets.noviams.com/novi-file-uploads/ccsa/Product_Safety/Fumes.pdf), u fuq kollox il-manwal tal-forn tiegħek.
 
-## Sorsi {#sources}
+## Sources {#sources lang=en}
 
 - [OSHA: 29 CFR 1910.1053, Respirable crystalline silica](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.1053)
 - [OSHA: 29 CFR 1910.134 Appendix D, Information for employees using respirators when not required](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.134AppD)
 - [OSHA: 29 CFR 1910.1200 Appendix D, Safety data sheets](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.1200AppD)
-- [NIOSH: Silicosis alert (pubblikazzjoni 92-107)](https://www.cdc.gov/niosh/docs/92-107)
+- [NIOSH: Silicosis alert (publication 92-107)](https://www.cdc.gov/niosh/docs/92-107)
 - [HSE: COSHH essentials CR1, Glaze and colour preparation](https://www.hse.gov.uk/PUBNS/guidance/cr1.pdf)
 - [HSE: COSHH essentials CR5, Spraying glazes and colours](https://www.hse.gov.uk/PUBNS/guidance/cr5.pdf)
 - [HSE: Fit testing basics](https://www.hse.gov.uk/respiratory-protective-equipment/fit-testing-basics.htm)
@@ -267,6 +267,8 @@ Dawn huma s-sorsi primarji li l-aktar jiswew jinqraw. Il-biċċa l-kbira tagħho
 - [IARC: Monographs Volume 100C](https://publications.iarc.who.int/120)
 - [IARC: Volume 131, Cobalt, antimony compounds and weapons-grade tungsten alloy](https://monographs.iarc.who.int/news-events/volume-131-cobalt-antimony-compounds-and-weapons-grade-tungsten-alloy)
 - [Science Media Centre Spain: IARC classifies talc (2024)](https://sciencemediacentre.es/en/node/3775)
+- [ECHA: Risk Assessment Committee opinion on lithium carbonate, chloride and hydroxide (2021, PDF)](https://echa.europa.eu/documents/10162/e2a3c38e-85fe-505c-a325-293c70a74da5)
+- [PubChem: Cobalt carbonate, GHS classification, including its EU harmonised one](https://pubchem.ncbi.nlm.nih.gov/compound/10565#section=GHS-Classification)
 - [ECHA: Risk Assessment Committee document on boric acid and borates](https://echa.europa.eu/documents/10162/7d740d8c-5cd5-872b-5da2-e549983a9ff9)
 - [Coslaw: EU introduces new CMR classifications under the 24th ATP to the CLP Regulation](https://coslaw.eu/eu-introduces-new-cmr-classifications-under-the-24th-atp-to-the-clp-regulation/)
 - [University of Utah EHS: Arts safety: ceramics](https://www.ehs.utah.edu/guidelines/arts-safety-ceramics/)
@@ -275,8 +277,9 @@ Dawn huma s-sorsi primarji li l-aktar jiswew jinqraw. Il-biċċa l-kbira tagħho
 - [Digitalfire: Kiln fumes](https://digitalfire.com/glossary/kiln+fumes)
 - [Digitalfire: Barium and compounds toxicology](https://digitalfire.com/hazard/barium+and+compounds+toxicology)
 - [Digitalfire: Manganese inorganic compounds toxicology](https://digitalfire.com/hazard/manganese+inorganic+compounds+toxicology)
+- [JSP: What levels of protection do particulate filters provide?](https://jspsafety.helpjuice.com/en_GB/what-levels-of-protection-do-particulate-filters-provide)
 - [JSP: Why is a clean shave essential for a proper tight-fitting respirator seal?](https://jspsafety.helpjuice.com/en_GB/why-is-a-clean-shave-essential-for-a-proper-tight-fitting-respirator-seal-can-i-have-a-beard)
 - [Skutt: Kiln room design and product specifications](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Designing-A-Kiln-Room-1.pdf)
 - [CIRMA: Kiln safety bulletin (2025)](https://downloads.ccm-ct.org/pdf/Media-Library-Bulletins/KilnSafety-Bulletin-052825.pdf)
 - [Ceramic Arts Network: Dave Finkelnburg, How and why to use a kiln vent](https://ceramicartsnetwork.org/daily/article/How-and-Why-to-Use-a-Kiln-Vent)
-- [CCSA u Orton: What is so bad about fumes?](https://assets.noviams.com/novi-file-uploads/ccsa/Product_Safety/Fumes.pdf)
+- [CCSA and Orton: What is so bad about fumes?](https://assets.noviams.com/novi-file-uploads/ccsa/Product_Safety/Fumes.pdf)

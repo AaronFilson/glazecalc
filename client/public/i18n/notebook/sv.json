@@ -116,7 +116,6 @@
   },
   "trash": {
     "title": "Papperskorgen",
-    "lead": "Det som tas bort från recept, råvaror, anteckningar och loggar ligger här i 30 dagar. Lägg tillbaka det, eller radera det för gott.",
     "listHeading": "I papperskorgen",
     "none": "Papperskorgen är tom.",
     "untitled": "Utan namn",

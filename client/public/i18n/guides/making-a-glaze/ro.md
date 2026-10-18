@@ -22,58 +22,58 @@ A prepara o glazură{{en: glaze}} înseamnă să cântăriți după o rețetă *
 > [!WARNING]
 > **Glazura sub formă de pulbere uscată produce praf periculos.** Silicea cristalină poate reprezenta între 10 și 60 % dintr-o glazură uscată, iar Health and Safety Executive (HSE) din Regatul Unit avertizează că praful ei este invizibil în lumină obișnuită. Luați pulberea ușor cu lingura, de la mică înălțime, țineți capacele puse, umeziți pulberea cât mai repede și curățați umed, niciodată cu mătura. Purtați o mască de protecție respiratorie bine ajustată pe față cât timp pulberile sunt uscate (N95 sau P100 în SUA, FFP2 sau FFP3 în Regatul Unit și UE, P2 sau P3 în Australia și Noua Zeelandă). Ghidul [Prepararea în siguranță și ventilația](/guides/safe-mixing) tratează pe larg praful, măștile de protecție respiratorie și curățenia.
 
-## Cumpărarea materiilor prime {#buying-materials}
+## Buying materials {#buying-materials lang=en}
 
-### De unde să cumpărați
+### Where to buy
 
-Ceramiștii cumpără de la furnizori de materiale ceramice, care vând argilă, materii prime pentru glazuri și unelte. Tabelul arată câțiva furnizori din țara dumneavoastră, fiecare verificat pe site-ul propriu al magazinului, și puteți alege altă țară pentru a-i vedea magazinele. Oferta se schimbă, așa că verificați înainte de a comanda. Producătorii mari, precum Sibelco și Imerys, vând industriei; ceramiștii își cumpără materiile prime prin magazine ca acestea. Digitalfire, site de referință pentru ceramică, ține un director al magazinelor furnizorilor din alte locuri.
+Potters buy from ceramic suppliers, which sell clay, glaze materials and tools. The table shows some for your country, each checked on the shop's own site, and you can choose another country to see its shops. Stock changes, so check before you order. Large producers such as Sibelco and Imerys sell to industry; potters buy their materials through shops like these. The ceramics reference site Digitalfire keeps a directory of supplier stores for other places.
 
 ::shops
 
-### Cât să cumpărați
+### How much to buy
 
-Sacul standard are **50 lb (22,7 kg)** în SUA și **25 kg (55 lb)** în alte părți, deci cei doi sunt aproape la fel. Mulți furnizori vând și ambalaje de 1; 2,5 sau 5 kg (aproximativ 2,2; 5,5 sau 11 lb) pentru teste. Glazy, baza de date deschisă de rețete, recomandă să cumpărați în saci întregi materiile prime pe care le folosiți în mod regulat (feldspat{{en: feldspar}}, silice{{en: silica}}, caolin{{en: kaolin}}, carbonat de calciu{{en: whiting}} și, pentru temperatură medie, frită{{en: frit}}), care sunt adesea cu 20–30 % mai ieftini. Cumpărați **coloranții**{{en: colorants}}, adică oxizii metalici și pigmenții ceramici{{en: stains}} care colorează o glazură{{en: glaze}}, în cantități mici: majoritatea se folosesc în proporție de sub 5 %. Listele de cumpărături date ca exemplu de Glazy au costat aproximativ 515 $ pentru temperatură medie și 397 $ pentru temperatură înaltă, la prețurile din SUA.
+The standard sack is **50 lb (22.7 kg)** in the US and **25 kg (55 lb)** elsewhere, so the two are nearly the same. Many suppliers also sell 1, 2.5 or 5 kg packs (about 2.2, 5.5 or 11 lb) for tests. Glazy, the open recipe database, advises buying the materials you use steadily (feldspar, silica, kaolin, whiting, and frit for mid-fire) in full sacks, which are often 20 to 30% cheaper. Buy **colorants**, the metal oxides and stains that color a glaze, in small amounts: most are used at under 5%. Glazy's sample shopping lists came to about $515 for mid-fire and $397 for high-fire, at US prices.
 
-### Un set de început
+### A starter set
 
-Lista de bază a Glazy, pentru orice temperatură, cuprinde silice, caolin, feldspat, carbonat de calciu, oxid de zinc și dolomită sau talc. Majoritatea glazurilor de temperatură medie (conul{{en: cone}} 5–6) au nevoie și de bor, de obicei dintr-o frită, pe care Glazy o descrie ca „constantă și mai puțin solubilă decât borații nefritați”. Setul de mai jos este sugestia noastră, pornind de la lista Glazy și de la o listă de pe un forum. Ghidul [Bazele glazurării](/guides/glazing-basics) explică rolul fiecărei materii prime.
+Glazy's core list for any temperature is silica, kaolin, feldspar, whiting, zinc oxide, and dolomite or talc. Most mid-fire (cone 5 to 6) glazes also need boron, usually from a frit, which Glazy calls "consistent and less soluble than raw borates". The set below is our suggestion, drawn from Glazy's list and a forum list. The [glazing basics guide](/guides/glazing-basics) explains what each material does.
 
-Table: Un set de început de materii prime (sugestia noastră)
-Label: Set de început
+Table: A starter set of materials (our suggestion)
+Label: Starter set
 
-| Materie primă                                           | Ce să cumpărați                                                                                        |
-| ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
-| Silice (numită și cremene{{en: flint}}; vedeți mai jos) | 325 mesh, granulația mai fină pe care Glazy o preferă pentru glazuri                                   |
-| Caolin (în Regatul Unit, China Clay)                    | EPK în SUA; Grolleg sau alt China Clay în Regatul Unit; caolinul NZ în Noua Zeelandă                   |
-| Feldspat potasic{{en: potash feldspar}}                 | Cel care se găsește acum acolo unde locuiți, de exemplu Mahavir în SUA                                 |
-| Nefelin-sienit{{en: nepheline syenite}}                 | Oricare; Glazy remarcă puterea lui de fondant mai mare; se folosește des la temperatură joasă și medie |
-| Carbonat de calciu (cretă)                              | Oricare                                                                                                |
-| Talc                                                    | Oricare                                                                                                |
-| O frită cu bor, pentru temperatură medie                | Ferro 3134, 3124 sau 3195; în Regatul Unit, Potterycrafts P3124 sau P3195                              |
-| Bentonită și coloranți                                  | Cantități mici                                                                                         |
+| Material                              | What to buy                                                                      |
+| ------------------------------------- | -------------------------------------------------------------------------------- |
+| Silica (also called flint; see below) | 325 mesh, the finer grade Glazy prefers for glazes                               |
+| Kaolin (china clay in the UK)         | EPK in the US; Grolleg or another china clay in the UK; NZ kaolin in New Zealand |
+| Potash feldspar                       | Whichever is current where you live, such as Mahavir in the US                   |
+| Nepheline syenite                     | Any; Glazy notes its stronger fluxing power, often used at low and mid-fire      |
+| Whiting                               | Any                                                                              |
+| Talc                                  | Any asbestos-free grade; check its SDS (see Safe mixing)                         |
+| A boron frit, for mid-fire            | Ferro 3134, 3124 or 3195; in the UK, Potterycrafts P3124 or P3195                |
+| Bentonite and colorants               | Small amounts                                                                    |
 
-### Fișe tehnice și fișe cu date de securitate
+### Data sheets and safety data sheets
 
-Cereți două documente pentru fiecare materie primă. O **fișă tehnică** (TDS) dă **analiza chimică** a materiei prime: ponderea fiecărui oxid din pulbere, în procente de masă. Glazecalc lucrează cu aceste analize, iar o materie primă o puteți adăuga pe [pagina Materii prime](/material), pornind de la analiza furnizorului. O **fișă cu date de securitate** (FDS) arată cum se manipulează pulberea. Păstrați fiecare FDS și citiți-o înainte de a prepara glazura.
+Ask for two documents for each material. A **technical data sheet** (TDS) gives its **chemical analysis**: the share of each oxide in the powder, by weight. Glazecalc works from these, and you can add a material from a supplier's analysis on the [Materials page](/material). A **safety data sheet** (SDS) says how to handle the raw powder. Keep each SDS, and read it before you mix.
 
-Analizele sunt valori medii, nu garanții. Valentine Clays tipărește pe fișa tehnică a cremenii sale „VALORI MEDII. ACESTEA NU REPREZINTĂ O SPECIFICAȚIE”, iar analizele Glazy pentru feldspatul Custer din ani diferiți variază între aproximativ 68,5 % și 72,4 % silice. Vă sugerăm să notați în evidența dumneavoastră **numărul lotului** fiecărui sac (codul lui de fabricație), ca să puteți afla dacă o schimbare la o glazură de încredere vine de la materia primă.
+Analyses are averages, not promises. Valentine Clays prints "MEAN VALUES. THESE DO NOT REPRESENT A SPECIFICATION" on its flint data sheet, and Glazy's analyses of Custer feldspar from different years run from about 68.5% to 72.4% silica. We suggest writing each sack's **lot number** (its batch code) in your records, so you can tell whether a change in a trusted glaze came from the material.
 
-HSE avertizează că silicea cristalină „poate fi etichetată greșit drept «silice amorfă»”. Iar o FDS privește pulberea, nu piesa: nu spune nimic despre faptul că o glazură arsă este sau nu potrivită pentru contact alimentar{{en: food safe}}. Numai un test de laborator privind migrarea metalelor din piesa arsă poate arăta acest lucru.
+HSE warns that crystalline silica "can be wrongly labelled as 'amorphous silica'". And an SDS is about the powder, not the pot: it says nothing about whether a fired glaze is safe for food. Only a laboratory leach test of the fired pot can show that.
 
-### Denumirile se schimbă, așa că cumpărați după chimie
+### Names change, so buy by chemistry
 
-Mărcile apar și dispar pe măsură ce se închid minele. Feldspatul Custer, extras în Dakota de Sud timp de peste 75 de ani, s-a epuizat la sfârșitul lui 2023. Când Clay Art Center a trecut la G-200 AU și Mahavir, aproximativ jumătate dintre glazurile sale au trebuit ajustate. Au dispărut și G-200 și G-200 HP, iar Laguna importă acum Mahavir, a cărui compoziție chimică este apropiată de cea a lui G-200.
+Brand names come and go as mines close. Custer feldspar, mined in South Dakota for more than 75 years, ran out in late 2023. When Clay Art Center switched to G-200 AU and Mahavir, about half its glazes needed adjusting. G-200 and G-200 HP are gone too, and Laguna now imports Mahavir, whose chemistry is close to G-200.
 
-**Gerstley Borate**, un mineral natural de bor prezent în multe rețete mai vechi, se găsește greu de când i s-a închis mina, în 2000, deși New Mexico Clay a anunțat în noiembrie 2025 că Laguna livra „Gerstley Borate Original”. Sursele nu sunt de acord în privința lui **Gillespie Borate** ca înlocuitor. Producătorul îl vinde ca înlocuitor livră cu livră. Berkeley Potters Studio spune că „nu este un înlocuitor direct”, iar Digitalfire a constatat că a schimbat culoarea unei glazuri. Calea sigură este să le comparați după oxizi, apoi să testați.
+**Gerstley Borate**, a natural boron mineral in many older recipes, has been scarce since its mine closed in 2000, though New Mexico Clay reported in November 2025 that Laguna was supplying "Gerstley Borate Original". Sources disagree about **Gillespie Borate** as a replacement. Its maker sells it as pound-for-pound. Berkeley Potters Studio says it "is not a direct substitute", and Digitalfire found it changed a glaze's color. The safe course is to compare the two by their oxides, then test.
 
-Și denumirile diferă de la o regiune la alta. În America de Nord, **cremenea** (flint), cuarțul și silicea înseamnă aceeași silice măcinată, iar Digitalfire spune că probabil nu veți găsi la furnizori pulbere de cremene adevărată. În Regatul Unit, cremenea este un produs aparte: cea de la Valentine este silice calcinată (încălzită). Ambele sunt silice aproape pură, așa că ne așteptăm să fie apropiate, dar verificați analiza. Pentru caolin, Glazy spune că înlocuirile unu la unu, cum ar fi EPK în locul unui China Clay, „funcționează adesea foarte bine, mai ales când cantitățile sunt \<10 %”.
+Regional names differ too. In North America, **flint**, quartz and silica mean the same ground silica, and Digitalfire says you probably won't find true flint powder from suppliers. In the UK, flint is its own product: Valentine's is calcined (heated) silica. Both are nearly pure silica, so we expect them to be close, but check the analysis. For kaolin, Glazy says one-for-one swaps, such as EPK for a china clay, "often work just fine, especially when amounts are \<10%".
 
-Multe rețete numesc materii prime care se vând într-o țară și nu în alta. Tabelul de mai jos ia fiecare materie primă din biblioteca Glazecalc care nu se vinde acolo unde cumpărați și găsește, după analize, cea mai apropiată de același tip care se vinde. Cifra arată cât de departe sunt una de alta: gramele cu care diferă oxizii lor după ardere, la 100 g de materie primă, adunate pentru toți oxizii. La o diferență de până la aproximativ 15 g, una o poate înlocui de obicei pe cealaltă la un prim test. Denumirile includ codurile producătorilor și ale magazinelor, ca să le puteți cere pe nume.
+Many recipes name materials that are sold in one country and not another. The table below takes each material in Glazecalc's library that is not sold where you buy, and finds the closest of its kind that is, by their analyses. The figure is how far apart the two are: the grams by which their fired oxides differ, per 100 g of material, added up over every oxide. Within about 15 g, one can usually stand in for the other in a first test. The names carry the makers' and shops' own codes, so you can ask for them by name.
 
 ::local-equivalents
 
 > [!NOTE]
-> Glazecalc compară materiile prime după ce aduc glazurii arse, nu după nume. O [rețetă](/recipe) cu o materie primă scoasă din fabricație arată ce se folosește acum. **Calculați cantitățile și comparați** recalculează cantitățile pentru un înlocuitor, iar **Refaceți din stocul meu** reface rețeta din materiile prime pe care le aveți în stoc. Ambele potrivesc doar oxizii după ardere, așa că testați mai întâi o cantitate mică.
+> Glazecalc compares materials by what they bring to the fired glaze, not by name. A [recipe](/recipe) with a material no longer made says what is used now. **Suggest amounts and compare** works the amounts out again for a substitute, and **Match with what I have** makes the recipe again from the materials on your shelf. Both match the fired oxides only, so test a small batch first.
 
 ## Depozitarea materiilor prime și a glazurilor {#storing}
 
@@ -163,55 +163,55 @@ Label: Mărimea sitei (mesh)
 | Glazuri cu coloranți{{en: colorants}}, cum ar fi cobaltul sau fierul | 100–120 mesh              |
 | Glazuri de cenușă și altele cu materii prime grosiere                | 60–80 mesh                |
 
-## Greutatea specifică {#specific-gravity}
+## Specific gravity {#specific-gravity lang=en}
 
-**Greutatea specifică**{{en: specific gravity, SG}} vă arată câtă pulbere conține glazura preparată{{en: slurry}}. Este greutatea unui volum de glazură{{en: glaze}} împărțită la greutatea aceluiași volum de apă. Pentru apă, valoarea este 1,00, iar o glazură cu {{SG 1.45}} cântărește 145 g la 100 mL. Dacă preparați glazura la o greutate specifică măsurată, obțineți de fiecare dată aceeași consistență și același strat. Nu are unitate de măsură, deci este aceeași în grame sau în uncii.
+**Specific gravity** (SG) tells you how much powder is in your slurry. It is the weight of a volume of glaze divided by the weight of the same volume of water. Water is 1.00, and a glaze at {{SG 1.45}} weighs 145 g per 100 mL. Mixing to a measured SG is how you get the same thickness, and the same coat, every time. It has no units, so it is the same in grams or ounces.
 
-### Măsurați-o cântărind 100 mL
+### Measure it by weighing 100 mL
 
-1. Amestecați glazura, ca nimic să nu rămână sedimentat.
-2. Puneți pe cântar un **cilindru gradat** de 100 mL (un tub de măsurare înalt, cu gradații) sau o seringă de 100 mL și tarați cântarul.
-3. Umpleți-l cu glazură exact până la 100 mL, citind gradația la nivelul ochilor.
-4. Cântăriți și împărțiți gramele la 100: 145 g înseamnă greutatea specifică 1,45.
+1. Stir the glaze so nothing has settled.
+2. Put a 100 mL **graduated cylinder** (a tall, marked measuring tube) or a 100 mL syringe on the scale, and tare it.
+3. Fill it with glaze to exactly 100 mL, reading the mark at eye level.
+4. Weigh it and divide the grams by 100: 145 g is SG 1.45.
 
-Digitalfire mai marchează un pahar la nivelul a 500 g de apă, îl umple cu glazură până la semn și împarte greutatea la 500; o măsură mai mare și mai plină este mai precisă. Un **areometru**, un plutitor citit la nivelul la care stă în glazură, este rapid, dar poate da citiri greșite în glazurile groase sau gelificate. Areometrele din Regatul Unit, cum este cel de la Potclays, indică grade Baumé (°Bé). După calculul nostru, greutatea specifică = 145 ÷ (145 − °Bé), deci 46 °Bé înseamnă aproximativ 1,46. Cărțile britanice mai vechi dau **greutatea pintei**, adică uncii la o pintă imperială de glazură: împărțiți-o la 20, deci 29 oz înseamnă aproximativ greutatea specifică 1,45 (tot după calculul nostru).
+Digitalfire also marks a cup at the level of 500 g of water, fills it to the mark with glaze, and divides the weight by 500; a bigger, fuller measure is more accurate. A **hydrometer**, a float read where it sits in the glaze, is quick but can misread thick or gelled glazes. UK hydrometers, such as Potclays', read in degrees Baumé (°Bé). By our arithmetic, SG = 145 ÷ (145 − °Bé), so 46 °Bé is about 1.46. Older UK books give a **pint weight**, the ounces in an imperial pint of glaze: divide it by 20, so 29 oz is about SG 1.45 (also our arithmetic).
 
-### Ce valori să urmăriți
+### What to aim for
 
-Sursele nu sunt de acord, mai ales la pensulare și pulverizare, unde furnizorul britanic Potclays dă cifre mult mai mari (despre ale sale spune că sunt „doar orientative”). Considerați fiecare cifră un punct de plecare. Sfatul de bază al Digitalfire este să găsiți greutatea specifică și gradul de gelificare potrivite pentru fiecare glazură, apoi să le repetați și să le notați.
+Sources disagree, most of all on brushing and spraying, where the UK supplier Potclays gives much higher figures (its own are "for guidance only"). Treat every number as a starting point. Digitalfire's core advice is to find the SG and gelling that work for each glaze, then repeat them and write them down.
 
-Table: Greutăți specifice țintă, acolo unde sursele nu sunt de acord
-Label: Greutăți specifice țintă
+Table: Specific gravity targets, where sources disagree
+Label: Specific gravity targets
 
-| Utilizare   | Digitalfire și Glazy                                                                                                                                                                                         | Potclays (Regatul Unit)                               | Punct de plecare sigur                                                    |
-| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------- | ------------------------------------------------------------------------- |
-| Imersie     | De la {{SG 1.40}} (pentru o imersie de 5 secunde) la {{SG 1.50}} (pentru o imersie de 1 secundă); glazurile preparate acasă și gelificate dau cele mai bune rezultate la {{SG 1.43–1.45}}                    | Transparente: {{SG 1.46–1.48}}; colorate: {{SG 1.61}} | {{SG 1.45}}; dacă picură, diluați-o la {{SG 1.43}} și gelificați-o        |
-| Pensulare   | De la {{SG 1.25}} (glazură transparentă, subțire) la {{SG 1.55}} (detalii închise la culoare)                                                                                                                | {{SG 1.71–1.81}}                                      | Urmați indicațiile produsului; folosiți CMC sau un mediu pentru pensulare |
-| Pulverizare | Nicio cifră; Hopper, într-un articol pentru Ceramic Arts Network, spune că glazura trebuie să fie mult mai diluată, cu un defloculant{{en: deflocculant}} (un aditiv care face glazura preparată mai fluidă) | {{SG 1.71}}                                           | Nicio cifră de încredere; pulverizați numai într-o cabină de pulverizare  |
+| Use      | Digitalfire and Glazy                                                                                                                 | Potclays (UK)                               | Safe starting point                                     |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------- |
+| Dipping  | {{SG 1.40}} (for a 5-second dip) to {{SG 1.50}} (for a 1-second dip); home-mixed glazes that are gelled do best at {{SG 1.43–1.45}}   | Clear {{SG 1.46–1.48}}; colored {{SG 1.61}} | {{SG 1.45}}; thin to {{SG 1.43}} and gel it if it drips |
+| Brushing | {{SG 1.25}} (thin clear) to {{SG 1.55}} (dark detail)                                                                                 | {{SG 1.71–1.81}}                            | Follow the product; use CMC gum or a brushing medium    |
+| Spraying | No figure; Hopper, writing for Ceramic Arts Network, says much thinner, with a deflocculant (an additive that makes a slurry runnier) | {{SG 1.71}}                                 | No reliable number; spray only in a spray booth         |
 
-Pentru a verifica din ochi o glazură pentru imersie, AMACO scufundă piesa timp de 5 secunde și urmărește un strat cam de grosimea unui dime (o monedă americană). Pentru verificare, Digitalfire face o ardere cu plăcuțe de test{{en: test tiles}} scufundate timp de 5 secunde.
+To check a dipping glaze by eye, AMACO dips for 5 seconds and looks for a coat about as thick as a US dime. Digitalfire fires tiles dipped for 5 seconds to check.
 
-### Apa pentru o greutate specifică țintă: estimarea noastră
+### Water for a target SG: our estimate
 
-Tabelul de mai jos este calculul nostru, nu al unei surse. Pornește de la ipoteza că particulele pulberii au o densitate de 2,6 g pe cm³, ceea ce este o presupunere, nu o măsurătoare. Argila, materiile prime solubile și gelificarea schimbă toate o glazură reală, așa că folosiți tabelul pentru început, apoi măsurați. Ca verificare, pentru mase egale de pulbere și apă, calculul dă {{SG 1.44}}, aproape de valoarea măsurată de Digitalfire, {{SG 1.46}}. Tabelul mai arată că, pornind cu 70–80 mL la 100 g, ajungeți peste {{SG 1.50}}, deci la o glazură mai groasă decât aveți nevoie.
+The table below is our own arithmetic, not a source's. It assumes the powder's particles have a density of 2.6 g per cm³, which is an assumption, not a measurement. Clay, soluble materials and gelling all change a real glaze, so use it to start, then measure. As a check, it predicts {{SG 1.44}} for equal weights of powder and water, close to Digitalfire's measured {{SG 1.46}}. It also shows that 70 to 80 mL per 100 g starts you above {{SG 1.50}}, thicker than you need.
 
-Table: Apa pentru o greutate specifică țintă (estimarea noastră)
-Label: Apa pentru o greutate specifică țintă
+Table: Water for a target specific gravity (our estimate)
+Label: Water for a target specific gravity
 
-| Țintă       | La 100 g de pulbere |         La kilogram |                La livră |
-| ----------- | ------------------: | ------------------: | ----------------------: |
-| {{SG 1.40}} |  aproximativ 115 mL | aproximativ 1150 mL | aproximativ 18 US fl oz |
-| {{SG 1.45}} |   aproximativ 98 mL |  aproximativ 980 mL | aproximativ 15 US fl oz |
-| {{SG 1.50}} |   aproximativ 85 mL |  aproximativ 850 mL | aproximativ 13 US fl oz |
-| {{SG 1.60}} |   aproximativ 64 mL |  aproximativ 640 mL | aproximativ 10 US fl oz |
+| Target      | Per 100 g of powder |  Per kilogram |         Per pound |
+| ----------- | ------------------: | ------------: | ----------------: |
+| {{SG 1.40}} |        about 115 mL | about 1150 mL | about 18 US fl oz |
+| {{SG 1.45}} |         about 98 mL |  about 980 mL | about 15 US fl oz |
+| {{SG 1.50}} |         about 85 mL |  about 850 mL | about 13 US fl oz |
+| {{SG 1.60}} |         about 64 mL |  about 640 mL | about 10 US fl oz |
 
-### Sarea amară, CMC și bentonita
+### Epsom salts, CMC gum and bentonite
 
-**Sarea amară** (sulfat de magneziu) face ca glazura să se gelifice ușor când stă nemișcată și să curgă din nou când este amestecată. Aceasta se numește **floculare**{{en: flocculating}}, iar o glazură care se comportă astfel este **tixotropă**{{en: thixotropic}}: se aplică mai uniform, picură mai puțin și se sedimentează mai puțin. Digitalfire sugerează să începeți cu aproximativ 2 g la galon, după ce greutatea specifică este cea potrivită (cam 0,5 g la litru, conversia noastră), și să ajustați cantitatea la fiecare preparare, pentru că nicio rețetă nu ar trebui să fixeze doza. Vă sugerăm să o dizolvați mai întâi în puțină apă fierbinte. Într-un exemplu al Digitalfire, o glazură cu {{SG 1.45}} picura, așa că a fost diluată cu apă până la {{SG 1.43}}, iar sarea amară a gelificat-o din nou până la o consistență cremoasă, și s-a aplicat uniform. O verificare aproximativă: amestecați, opriți-vă și urmăriți. O glazură gelificată se mai mișcă aproximativ 2 sau 3 secunde, apoi se oprește și revine puțin.
+**Epsom salts** make a glaze gel slightly when it stands still and flow again when it is stirred. This is called **flocculating** it, and a glaze that behaves this way is **thixotropic**: it goes on more evenly, drips less and settles less. Digitalfire suggests starting at about 2 g per gallon once the SG is right (roughly 0.5 g per liter, our conversion) and tuning the amount each time you mix, since no recipe should fix the dose. We suggest dissolving it in a little hot water first. In a Digitalfire example, a glaze at {{SG 1.45}} dripped, so water brought it down to {{SG 1.43}} and Epsom salts gelled it back to creamy, and it went on evenly. A rough check: stir, stop and watch. A gelled glaze moves on for about 2 or 3 seconds, then stops and springs back a little.
 
-**CMC** (carboximetilceluloză) face glazura preparată mai lipicioasă și mai lentă la uscare și lasă un strat mai tare, care aderă la piesă. Contează cel mai mult la glazurile pentru pensulare și la cele cu multă frită{{en: frit}}. În exemplul Digitalfire se amestecă 3,75 g în 1000 g de glazură preparată, iar încorporarea trebuie făcută cu blenderul. O glazură cu CMC nu se gelifică cu sare amară și, pentru că microbii se hrănesc cu acest liant, se poate schimba în găleată și poate începe să miroasă.
+**CMC gum** (carboxymethyl cellulose) makes a slurry stickier and slower to dry, and leaves a harder coat that holds to the pot. It matters most for brushing glazes and glazes high in frit. Digitalfire's example blends 3.75 g into 1000 g of slurry, and it has to go in with a blender. A glaze with CMC will not gel with Epsom salts, and since microbes feed on the gum, it can change in the bucket and start to smell.
 
-**Bentonita**, o argilă foarte fină, ajută la menținerea celorlalte particule în suspensie. Pentru aceasta, glazurile pentru imersie se bazează de obicei pe 15–25 % argilă crudă. Pentru o rețetă cu prea puțină argilă, ajută aproximativ 1–2 % bentonită.
+**Bentonite**, a very fine clay, helps hold the other particles in suspension. Dipping glazes usually rely on 15 to 25% raw clay for this. For a recipe short of clay, about 1 to 3% bentonite helps; Digitalfire says a glaze with more than 15% clay should not need more than 1%.
 
 ## Plăcuțe de test și serii de teste {#testing}
 
@@ -276,7 +276,7 @@ Label: Model de evidență
 > [!NOTE]
 > În Glazecalc, o [rețetă](/recipe) salvată păstrează rețeta propriu-zisă. Un [jurnal de ardere](/firing) înregistrează fiecare ardere: cuptorul, data, orele, temperaturile, conurile și observațiile. [Notițele](/notes) păstrează tot restul, cum ar fi evidența amestecului de mai sus și ce a arătat fiecare plăcuță.
 
-## Surse {#sources}
+## Sources {#sources lang=en}
 
 - [Glazy: Raw materials](https://help.glazy.org/concepts/materials)
 - [Glazy: Specific gravity](https://help.glazy.org/testing/specific-gravity)
@@ -284,6 +284,7 @@ Label: Model de evidență
 - [Digitalfire: Epsom salts](https://digitalfire.com/material/epsom+salts)
 - [Digitalfire: CMC gum](https://digitalfire.com/material/cmc%2Bgum)
 - [Digitalfire: Dipping glaze](https://digitalfire.com/glossary/dipping+glaze)
+- [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Water solubility](https://digitalfire.com/glossary/water+solubility)
 - [Digitalfire: Gerstley Borate](https://digitalfire.com/material/gerstley+borate)
 - [Digitalfire: Mahavir potash feldspar](https://digitalfire.com/material/mahavir+potash+feldspar)

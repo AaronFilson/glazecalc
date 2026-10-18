@@ -469,7 +469,6 @@
     "expansionRises": "Jej vypočítaná tepelná rozťažnosť stúpa: predtým {was}, teraz {now}.",
     "expansionRisesProbably": "Ak bola pôvodná glazúra s vašou hlinou zladená len tesne, táto bude pravdepodobne trhlinkovať, niekedy až po týždňoch.",
     "expansionRisesMay": "Ak bola pôvodná glazúra s vašou hlinou zladená len tesne, táto môže trhlinkovať, niekedy až po týždňoch.",
-    "expansionRisesFix": "Trhlinkovanie oslabuje výrobky a na plochy v styku s potravinami sa neodporúča. Rozťažnosť zníži menej sodíka a draslíka alebo viac bóru, oxidu kremičitého či oxidu hlinitého.",
     "expansionFalls": "Jej vypočítaná tepelná rozťažnosť klesá: predtým {was}, teraz {now}. Trochu nižšia zvyčajne lepšie odoláva trhlinkovaniu.",
     "expansionFallsProbably": "Pri oveľa nižšej sa glazúra pravdepodobne bude odlupovať a z okrajov a hrán budú odskakovať ostré úlomky.",
     "expansionFallsCan": "Pri oveľa nižšej sa glazúra môže odlupovať a z okrajov a hrán môžu odskakovať ostré úlomky.",

@@ -3,39 +3,39 @@ title: Säker blandning och ventilation
 lead: Så hålls glasyrdamm borta från lungorna och ugnsgaser borta från hemmet: de vanor, den utrustning och de råvaror som betyder mest.
 ---
 
-## Den största faran: damm {#the-main-hazard}
+## The main hazard: dust {#the-main-hazard lang=en}
 
-Den största långsiktiga faran i arbetet med glasyr{{en: glaze}} är damm, framför allt **respirabel kristallin kiseldioxid**{{en: respirable crystalline silica}}: partiklar av kvarts eller kristobalit (kristallina former av kiseldioxid{{en: silica}}) som är så små att de når djupt ner i lungorna. Kristallin kiseldioxid kan utgöra ungefär 10 till 60 % av en glasyrs torrvikt, och de flesta leror (utom kaolin{{en: kaolin}}) och många fältspater{{en: feldspar}} innehåller också fin kvarts. Den brittiska arbetsmiljömyndigheten Health and Safety Executive (HSE) skriver att dammet ”är mycket fint och osynligt i normal belysning”, så ett rum som ser rent ut är inget bevis på att luften är ren.
+The main long-term hazard in glaze work is dust, above all **respirable crystalline silica**: particles of quartz or cristobalite (crystal forms of silica) small enough to reach deep into the lungs. Crystalline silica can make up about 10 to 60% of a glaze's dry weight, and most clays (except kaolin) and many feldspars also carry fine quartz. The UK's Health and Safety Executive (HSE) says this dust "is very fine and invisible under normal lighting", so a room that looks clean is not proof that the air is.
 
-Om dammet andas in under lång tid kan det orsaka **silikos** (stendammlunga), en lungsjukdom som HSE beskriver som ”allvarlig och obotlig” och som kan ”orsaka bestående invaliditet och förtida död”. Det kan också orsaka **KOL** (kroniskt obstruktiv lungsjukdom: långvarig bronkit och emfysem), som förvärras av rökning. IARC, Världshälsoorganisationens cancerforskningsinstitut, placerar inandad kristallin kiseldioxid i grupp 1, ”cancerframkallande för människor”.
+Breathed in over time, it can cause **silicosis**, a lung disease that HSE describes as "serious and irreversible" and able to "cause permanent disablement and early death". It can also cause **COPD** (chronic obstructive pulmonary disease: long-term bronchitis and emphysema), which smoking makes worse. IARC, the World Health Organization's cancer agency, places inhaled crystalline silica in Group 1, "carcinogenic to humans".
 
-Kiseldioxid blir inte till ångor i ugnen, och en våt glasyr är ingen fara vid inandning. Försiktighet behövs när materialet är torrt: när säckar öppnas, när råvaror vägs, när pulver rörs ner i vatten och när droppar, sprutdimma och spill städas upp efter att de har torkat och blivit damm igen.
+Silica does not turn into fumes in the kiln, and a wet glaze is not an inhalation hazard unless it is sprayed: spray mist carries silica and dries to dust (see Spraying, below). The times to take care are when material is dry: opening bags, weighing, stirring powder into water, and cleaning up drips, overspray and slop once they have dried back into dust.
 
-### Hygieniska gränsvärden
+### Exposure limits
 
-Reglerna för arbetsplatser sätter ett **hygieniskt gränsvärde**: den största mängd kiseldioxid som en arbetstagare får andas in, som medelvärde under en arbetsdag på 8 timmar, i milligram (mg) eller mikrogram (µg, tusendels milligram) per kubikmeter luft.
+Workplace rules set an **exposure limit**: the most silica a worker may breathe, averaged over an 8-hour day, in milligrams (mg) or micrograms (µg, thousandths of a milligram) per cubic meter of air.
 
-Table: Gränsvärden i arbetslivet för respirabel kristallin kiseldioxid (medelvärde under 8 timmar)
-Label: Gränsvärden för kiseldioxid
+Table: Workplace limits for respirable crystalline silica (8-hour average)
+Label: Silica exposure limits
 
-| Region             |            Gränsvärde | Kommentarer                                                                             |
-| ------------------ | --------------------: | --------------------------------------------------------------------------------------- |
-| USA                | 0,05 mg/m³ (50 µg/m³) | OSHA:s gränsvärde. Arbetsgivare måste börja vidta åtgärder vid 25 µg/m³, ”insatsnivån”. |
-| Storbritannien     |             0,1 mg/m³ | Exponeringen måste dessutom hållas ”så låg som det rimligen är praktiskt möjligt”.      |
-| Europeiska unionen |             0,1 mg/m³ | Bindande gränsvärde (direktiv 2017/2398). Vissa medlemsstater har lägre gränsvärden.    |
-| Australien         |            0,05 mg/m³ | Sedan juli 2020. I juni 2026 stödde de flesta ministrarna inte en sänkning till 0,025.  |
-| Nya Zeeland        |           0,025 mg/m³ | Sedan 2023. WorkSafes standarder är vägledning, inte lagstadgade gränsvärden.           |
+| Region         |                 Limit | Notes                                                                             |
+| -------------- | --------------------: | --------------------------------------------------------------------------------- |
+| United States  | 0.05 mg/m³ (50 µg/m³) | OSHA's limit. Employers must start taking action at 25 µg/m³, the "action level". |
+| United Kingdom |             0.1 mg/m³ | Exposure must also be kept "as low as reasonably practicable".                    |
+| European Union |             0.1 mg/m³ | Binding limit (Directive 2017/2398). Some member states set lower ones.           |
+| Australia      |            0.05 mg/m³ | Since July 2020. In June 2026, most ministers did not support a cut to 0.025.     |
+| New Zealand    |           0.025 mg/m³ | Since 2023. WorkSafe's standards are guidance, not legal limits.                  |
 
-Vissa webbsidor anger 0,025 mg/m³ för Australien, men det officiella gränsvärdet är fortfarande 0,05. Rådet är detsamma i båda fallen: håll dammhalten så låg som möjligt.
+Some pages quote 0.025 mg/m³ for Australia, but the official limit is still 0.05. Either way, the advice is the same: keep dust as low as you can.
 
-Flera av EU:s medlemsstater har lägre gränsvärden än EU. Gränsvärdet i det egna landet, lagen som fastställer det och den nationella myndigheten för arbetsmiljö:
+Several EU member states set lower limits than the EU's. The limit where you live, the law that sets it and the national body for safety at work:
 
 ::silica-limit
 
 > [!NOTE]
-> Det här är gränsvärden för arbetsplatser. De är bindande för arbetsgivare, så ingen inspekterar en keramiker som arbetar ensam hemma, men gemensamma verkstäder och skolor med anställda omfattas oftast (kontrollera de lokala reglerna). Dammet är detsamma hemma, och gränsvärdena visar hur stor faran är: 25 till 100 miljondels gram i varje kubikmeter luft, som medelvärde under en dag.
+> These are workplace limits. They bind employers, so no one inspects a potter working alone at home, though community studios and schools with staff are usually covered (check your local rules). The dust is the same at home, and the limits show the scale of the hazard: 25 to 100 millionths of a gram in each cubic meter of air, averaged over a day.
 
-Nästan ingen har mätt dammet i hobbyverkstäder, så vi föreslår att allt arbete med torrt pulver behandlas som dammigt arbete.
+Almost no one has measured dust in hobby studios, so we suggest treating every dry-powder task as a dusty one.
 
 ## De viktigaste vanorna {#habits}
 
@@ -65,49 +65,49 @@ Det mesta skyddet kommer från vanor, inte från utrustning. HSE:s råd för ker
 
 Ordningen är vårt förslag, byggt på HSE:s princip att först och främst undvika pulver. Vägning och blandning steg för steg finns i [Blanda en glasyr](/guides/making-a-glaze).
 
-## Andningsskydd {#respirators}
+## Respirators {#respirators lang=en}
 
-Ett **andningsskydd** är en mask som är certifierad för att filtrera fina partiklar ur luften som andas in. Det fungerar bara när det sluter tätt mot ansiktet, och det är ett stöd för bra vanor, inte en ersättning för dem.
+A **respirator** is a mask certified to filter fine particles from the air you breathe. It works only when it seals to your face, and it backs up good habits rather than replacing them.
 
-### Klasser per region
+### Classes by region
 
-Table: Klasser av partikelfiltrerande andningsskydd per region (ungefärliga motsvarigheter för glasyrdamm)
-Label: Klasser av andningsskydd
+Table: Particle respirator classes by region (rough equivalents for glaze dust)
+Label: Respirator classes
 
-| Region                     | Vanlig klass | Högre klass | Leta efter                                                                            |
-| -------------------------- | ------------ | ----------- | ------------------------------------------------------------------------------------- |
-| USA                        | N95          | P100        | NIOSH-godkännande på masken eller förpackningen                                       |
-| Storbritannien och EU      | FFP2         | FFP3        | EN 149 på engångsmasker; EN 140 på återanvändbara halvmasker, med P2- eller P3-filter |
-| Australien och Nya Zeeland | P2           | P3          | AS/NZS 1716                                                                           |
+| Region                    | Everyday class | Higher class | Look for                                                                   |
+| ------------------------- | -------------- | ------------ | -------------------------------------------------------------------------- |
+| United States             | N95            | P100         | NIOSH approval on the mask or its packaging                                |
+| UK and EU                 | FFP2           | FFP3         | EN 149 on disposable masks; EN 140 half masks with EN 143 P2 or P3 filters |
+| Australia and New Zealand | P2             | P3           | AS/NZS 1716                                                                |
 
-Den högre klassen filtrerar en större andel av de fina partiklarna. Källorna är oeniga om vad ett australiskt P3 filtrerar (minst 99 % eller minst 99,95 %), så köp den certifierade klass som säljs i regionen. En återanvändbar **halvmask** (som täcker näsa och mun, med utbytbara filter) med P100-filter (P3 utanför USA) är ett vanligt val i verkstäder.
+The higher class filters a larger share of fine particles. Sources disagree on what an Australian P3 filters (at least 99%, or at least 99.95%), so buy the certified class sold in your region. A reusable **half mask** (covering the nose and mouth, with replaceable filters) fitted with P100 filters (P3 outside the US) is a common studio choice.
 
-### Passform och tätning
+### Fit and seal
 
-En mask som läcker släpper in damm runt kanterna, oavsett klass. HSE varnar för att skäggstubb och skägg ”gör det omöjligt att få en bra tätning”.
+A mask that leaks lets dust in around its edges, whatever its class. HSE warns that stubble and beards "make it impossible to get a good seal".
 
-- **Raka dig strax före arbetet.** Rådgivningen skiljer sig åt om hur nyligen ”slätrakad” måste vara. En brittisk tillverkare, som hänvisar till HSE, säger rakad inom 8 timmar före arbetets start. Den australiska och nyzeeländska standarden för täthetsprovning ber om en rakning före en täthetsprovning, ”helst inom 12 timmar”. Att raka sig strax före arbetet uppfyller båda.
-- **Om skägget behålls** kräver en löst sittande **fläktmatad skyddsmask** (PAPR: en huva eller hjälm med en fläkt som tillför filtrerad luft) ingen tätning mot ansiktet.
-- **Välj rätt storlek.** Dålig passform är en stor orsak till läckage. Arbetsplatser använder en **täthetsprovning**, en kontroll av att en viss mask sluter tätt mot ett visst ansikte. Hemma föreslår vi att tillverkarens anvisningar för kontroll av tätningen följs varje gång masken tas på.
+- **Shave shortly before you work.** Guidance differs on how recent "clean-shaven" must be. A UK maker, citing HSE, says shaved within 8 hours of starting work. The Australian and New Zealand fit-test standard asks for a shave before a fit test, "preferably within 12 hours". Shaving shortly before you work meets both.
+- **If you keep a beard,** a loose-fitting **powered respirator** (PAPR: a hood or helmet with a fan that supplies filtered air) needs no face seal.
+- **Get the size right.** Poor fit is a major cause of leaks. Workplaces use a **fit test**, a check that a particular mask seals on a particular face. At home, we suggest following the maker's instructions for checking the seal each time you put it on.
 
 > [!NOTE]
-> Enligt vår mening betyder passformen mer än klassen: ett välsittande N95, FFP2 eller P2 fungerar oftast bättre än ett löst sittande P100.
+> In our view, fit matters more than class: a well-fitted N95, FFP2 or P2 will usually do better than a loose P100.
 
-### När man ska ha ett på sig
+### When to wear one
 
-HSE säger att ett andningsskydd ”normalt inte behövs” där vägning och blandning sker i en ventilerad inbyggnad, men ”kan behövas för underhåll och rengöring”. De flesta hemverkstäder har ingen inbyggnad, så vi föreslår att ha ett på sig (minst N95, FFP2 eller P2; P100, FFP3 eller P3 är bättre) varje gång:
+HSE says a respirator is "normally not needed" where weighing and mixing happen in a ventilated enclosure, but "may be needed for maintenance and cleaning". Most home studios have no enclosure, so we suggest wearing one (N95, FFP2 or P2 at least; P100, FFP3 or P3 is better) whenever you:
 
-- påsar öppnas eller pulver hälls ut;
-- pulver vägs och rörs ut i vatten;
-- torkad glasyr eller skröj skrapas, slipas eller mals;
-- något torrt städas, eller en dammsugare töms;
-- glasyr sprutas (i ett sprutskåp: se nedan).
+- open bags or tip out powder;
+- weigh powders and stir them into water;
+- scrape, sand or grind dried glaze or bisque;
+- do any dry cleanup, or empty a vacuum;
+- spray glaze (in a booth: see below).
 
-### Vad som inte är ett andningsskydd
+### What is not a respirator
 
-- Kirurgiska munskydd, tygmasker och enkla dammasker (”nuisance dust”-masker) utan NIOSH-, EN 149- eller AS/NZS 1716-märkning. Vi skulle inte lita på dem för glasyrdamm.
-- Ett partikelfiltrerande andningsskydd ”skyddar inte mot gaser, ångor” (OSHA), så det gör ingenting mot ugnsgaser.
-- Sköt det väl: OSHA noterar att ett smutsigt eller felanvänt andningsskydd ”kan bli en fara”. Förvara det rent, långt från dammiga arbetskläder.
+- Surgical masks, cloth masks and "nuisance dust" masks without a NIOSH, EN 149 or AS/NZS 1716 marking. We would not rely on them for glaze dust.
+- A dust respirator "will not protect you against gases, vapors" (OSHA), so it does nothing for kiln fumes.
+- Look after yours: OSHA notes that a dirty or misused respirator "can become a hazard". Store it clean, away from dusty work clothes.
 
 ## Städning, kläder och händer {#cleaning}
 
@@ -181,36 +181,36 @@ En **kåpa** (en huv ovanför ugnen) är alternativet. Den suger in gaser som l�
 
 Raku ger stora mängder rök och CO; Utah råder till att rakubränna utomhus, bort från luftintag och fönster. Om själva bränningen: se [Bränna i en enkel keramikugn](/guides/firing).
 
-## Råvaror som kräver mest försiktighet {#materials}
+## Materials that need most care {#materials lang=en}
 
-De flesta glasyrråvaror, däribland kiseldioxid, lera, fältspater{{en: feldspars}} och frittor{{en: frits}}, är främst en dammrisk, som vanorna ovan hanterar. En kortare lista är giftig i sig, genom inandning, förtäring eller hudkontakt. Digitalfire tillägger att färgkroppar{{en: stains}} i allmänhet är mycket säkrare än råa oxider, och att ”obalanserade glasyrer som avger giftiga metaller kan göras av vilka råvaror som helst”: livsmedelssäkerhet beror på hela receptet, inte på en enskild ingrediens.
+Most glaze materials, including silica, clays, feldspars and frits, are mainly a dust hazard, which the habits above control. A shorter list is toxic in its own right, by breathing, swallowing or skin contact. Digitalfire adds that stains are generally much safer than raw oxides, and that "unbalanced glazes that release toxic metals can be made from any materials": food safety depends on the whole recipe, not on one ingredient.
 
-En **IARC-grupp** är en cancerklassificering: grupp 1 betyder ”cancerframkallande för människor”, grupp 2A ”troligen cancerframkallande för människor”, grupp 2B ”möjligen cancerframkallande för människor” och grupp 3 ”kan inte klassificeras vad gäller cancerframkallande egenskaper för människor”, vilket betyder att det finns för lite belägg för att bedöma åt något håll.
+An **IARC group** is a cancer classification: Group 1 means "carcinogenic to humans", Group 2A "probably carcinogenic to humans", Group 2B "possibly carcinogenic to humans", and Group 3 "not classifiable as to its carcinogenicity to humans", which means too little evidence to judge either way.
 
-Table: Glasyrråvaror som kräver extra försiktighet
-Label: Råvaror som kräver mest försiktighet
+Table: Glaze materials that need extra care
+Label: Materials that need most care
 
-| Råvara                                     | Fara                                                                                                                                                                                        | Försiktighetsåtgärd                                                                                                                  |
-| ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| Blyföreningar och blyfrittor               | ”Mycket giftigt vid inandning eller förtäring”; förångas i ugnen vid lägre temperaturer än de flesta glasyrråvaror.                                                                         | Undvik; Digitalfire säger: bara för experter. Utgå från att varje glasyr som inte är märkt ”blyfri” eller ”utan bly” innehåller bly. |
-| Bariumkarbonat                             | Olösligt i vatten men löser sig i magsyra; påverkar hjärtat och musklerna (oregelbunden hjärtrytm, lågt kalium).                                                                            | En bariumfritta eller strontium där receptet tillåter det; andningsskydd; märkt behållare.                                           |
-| Mangandioxid                               | Damm eller rök kan orsaka **manganism**, en sjukdom i nervsystemet som liknar Parkinsons sjukdom, vanligen efter 1 till 3 års exponering. Rök kan orsaka metallröksfeber.                   | Svarta färgkroppar i låga procentandelar i stället; vädra ugnen.                                                                     |
-| Kaliumdikromat och kromoxid                | Krom(VI), som i dikromat, är IARC grupp 1. Den klassificeringen omfattar inte krom(III), som i kromoxid.                                                                                    | Undvik dikromat. Vi anser att kromoxid är långt mindre farligt, men håll dess damm nere.                                             |
-| Kobolt                                     | Lösliga kobolt(II)-salter IARC 2A; kobolt(II)oxid 2B; svart Co₃O₄ grupp 3.                                                                                                                  | Håll dammet nere; färgkroppar för svart.                                                                                             |
-| Nickelföreningar                           | Bland University of Utahs kända eller troliga cancerframkallande ämnen för människor.                                                                                                       | Färgkroppar i stället för höga procentandelar.                                                                                       |
-| Kadmium och selen, råa eller i färgkroppar | Kadmiumföreningar finns bland Utahs kända eller troliga cancerframkallande ämnen för människor.                                                                                             | ”Endast av experter” (Digitalfire); läs säkerhetsdatabladet för varje färgkropp.                                                     |
-| Antimon och vanadin                        | Trevärt antimon (som i antimontrioxid) IARC 2A; vanadin ”mycket giftigt vid inandning”.                                                                                                     | Vanadin bara för experter; håll antimondammet nere.                                                                                  |
-| Koppar och zink                            | Ugnsrök kan orsaka metallröksfeber; rå zinkoxid ”anses i allmänhet inte vara farlig”.                                                                                                       | Vädra ugnen.                                                                                                                         |
-| Litiumkarbonat                             | ”Mycket giftigt vid inandning”. En expertkommitté inom EU drog slutsatsen att det kan skada fertiliteten och det ofödda barnet; formellt antagande var inte bekräftat när vi kontrollerade. | Handskar och andningsskydd; förvara oåtkomligt för barn. Vi föreslår extra försiktighet under graviditet.                            |
-| Borax och borsyra                          | Klassificerat i EU som ”kan skada fertiliteten; kan skada det ofödda barnet”.                                                                                                               | Handskar; bor från en fritta där det går.                                                                                            |
-| Soda, pottaska, alkaliska fältspater       | Hudirriterande.                                                                                                                                                                             | Handskar.                                                                                                                            |
-| Fluorspat, kryolit, lepidolit              | Avger fluorgaser vid bränning; fluorspat irriterar också huden.                                                                                                                             | Led ut ugnsgaserna utomhus; handskar.                                                                                                |
-| Talk                                       | IARC 2A sedan juli 2024; talk förorenad med asbest räknas som asbest, grupp 1.                                                                                                              | Plattformig (inte fibrös), asbestfri talk; kontrollera dess säkerhetsdatablad.                                                       |
+| Material                               | Hazard                                                                                                                                                                                                                                       | Precaution                                                                                                  |
+| -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| Lead compounds and lead frits          | "Highly toxic by inhalation or ingestion"; vaporizes in the kiln at lower temperatures than most glaze materials.                                                                                                                            | Avoid; Digitalfire says experts only. Assume any glaze not labeled "lead-free" or "leadless" contains lead. |
+| Barium carbonate                       | Insoluble in water but dissolves in stomach acid; affects the heart and muscles (irregular heartbeat, low potassium).                                                                                                                        | A barium frit or strontium where the recipe allows; respirator; labeled container.                          |
+| Manganese dioxide                      | Dust or fume can cause **manganism**, a nervous-system illness like Parkinson's disease, usually after 1 to 3 years of exposure. Fume can cause metal fume fever.                                                                            | Black stains at low percentages instead; vent the kiln.                                                     |
+| Potassium dichromate and chrome oxide  | Chromium(VI), as in dichromate, is IARC Group 1. That listing does not cover chromium(III), as in chrome oxide.                                                                                                                              | Avoid dichromate. We treat chrome oxide as far less hazardous, but keep its dust down.                      |
+| Cobalt                                 | Soluble cobalt(II) salts IARC 2A; cobalt(II) oxide 2B; black Co₃O₄ Group 3. Cobalt carbonate is classified in the EU as may cause cancer if breathed in, may damage fertility and suspected of causing genetic defects (H350i, H360F, H341). | Keep dust down; stains for blacks.                                                                          |
+| Nickel compounds                       | Among the University of Utah's known or probable human carcinogens.                                                                                                                                                                          | Stains rather than high percentages.                                                                        |
+| Cadmium and selenium, raw or in stains | Cadmium compounds are among Utah's known or probable human carcinogens.                                                                                                                                                                      | "Only by experts" (Digitalfire); read any stain's SDS.                                                      |
+| Antimony and vanadium                  | Trivalent antimony (as in antimony trioxide) IARC 2A; vanadium "highly toxic by inhalation".                                                                                                                                                 | Vanadium for experts only; keep antimony dust down.                                                         |
+| Copper and zinc                        | Kiln fume can cause metal fume fever; raw zinc oxide is "generally not considered hazardous".                                                                                                                                                | Vent the kiln.                                                                                              |
+| Lithium carbonate                      | "Highly toxic by inhalation". An EU expert committee concluded it may harm fertility, the unborn child and breast-fed children; formal adoption was not confirmed when we checked.                                                           | Gloves and respirator; keep from children. We suggest extra care in pregnancy and while breastfeeding.      |
+| Borax and boric acid                   | Classified in the EU as "may damage fertility; may damage the unborn child".                                                                                                                                                                 | Gloves; boron from a frit where you can.                                                                    |
+| Soda ash, potash, alkaline feldspars   | Skin irritants.                                                                                                                                                                                                                              | Gloves.                                                                                                     |
+| Fluorspar, cryolite, lepidolite        | Release fluorine gases in firing; fluorspar also irritates skin.                                                                                                                                                                             | Vent the kiln outdoors; gloves.                                                                             |
+| Talc                                   | IARC 2A since July 2024; talc contaminated with asbestos counts as asbestos, Group 1.                                                                                                                                                        | Platy (not fibrous), asbestos-free talc; check its SDS.                                                     |
 
-Borax, borsyra, soda och pottaska löser sig i vatten, så vi anser att de är de mest sannolika att tas upp genom skadad hud eller sväljas från otvättade händer.
+Borax, boric acid, soda ash and potash dissolve in water, so we treat them as the likeliest to be absorbed through broken skin or swallowed from unwashed hands.
 
 > [!NOTE]
-> Om ett recept kräver rått bariumkarbonat, mycket mangan eller något bly- eller kadmiummaterial, leta efter en version som använder en fritta eller en färgkropp i stället. Glazecalc kan jämföra kemin i originalet och bytet; prova sedan den nya glasyren.
+> If a recipe calls for raw barium carbonate, a lot of manganese, or any lead or cadmium material, look for a version that uses a frit or a stain instead. Glazecalc can compare the chemistry of the original and the swap; then test the new glaze.
 
 ## Handskar, hud och ögon {#gloves-and-eyes}
 
@@ -252,21 +252,23 @@ Det här är de primärkällor som är mest värda att läsa. De flesta är skri
 - **Nya Zeeland:** WorkSafe New Zealand fastställer exponeringsstandarderna för arbetsplatser; MBIE:s [historik över standarden för kiseldioxid](https://mbie.govt.nz/building-and-energy/building/building-and-construction-consultations/work-with-engineered-stone-and-materials-containing-crystalline-silica/annex-iii) anger datumen.
 - **Keramikugnar:** Skutts [guide för ugnsrum](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Designing-A-Kiln-Room-1.pdf), [Ortons och CCSA:s faktablad om ugnsgaser](https://assets.noviams.com/novi-file-uploads/ccsa/Product_Safety/Fumes.pdf), och framför allt den egna ugnens bruksanvisning.
 
-## Källor {#sources}
+## Sources {#sources lang=en}
 
 - [OSHA: 29 CFR 1910.1053, Respirable crystalline silica](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.1053)
 - [OSHA: 29 CFR 1910.134 Appendix D, Information for employees using respirators when not required](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.134AppD)
 - [OSHA: 29 CFR 1910.1200 Appendix D, Safety data sheets](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.1200AppD)
-- [NIOSH: Silicosis alert (publikation 92-107)](https://www.cdc.gov/niosh/docs/92-107)
+- [NIOSH: Silicosis alert (publication 92-107)](https://www.cdc.gov/niosh/docs/92-107)
 - [HSE: COSHH essentials CR1, Glaze and colour preparation](https://www.hse.gov.uk/PUBNS/guidance/cr1.pdf)
 - [HSE: COSHH essentials CR5, Spraying glazes and colours](https://www.hse.gov.uk/PUBNS/guidance/cr5.pdf)
 - [HSE: Fit testing basics](https://www.hse.gov.uk/respiratory-protective-equipment/fit-testing-basics.htm)
 - [Safe Work Australia: Research on a lower workplace exposure standard for respirable crystalline silica](https://www.safeworkaustralia.gov.au/safety-topic/hazards/crystalline-silica-and-silicosis/research-lower-workplace-exposure-standard-respirable-crystalline-silica-0)
 - [Enviliance: Report 16612, Australia's June 2026 decision on the silica exposure standard](https://enviliance.com/regions/oceania/au/report_16612)
-- [MBIE (Nya Zeeland): Work with engineered stone and materials containing crystalline silica, Annex III](https://mbie.govt.nz/building-and-energy/building/building-and-construction-consultations/work-with-engineered-stone-and-materials-containing-crystalline-silica/annex-iii)
+- [MBIE (New Zealand): Work with engineered stone and materials containing crystalline silica, Annex III](https://mbie.govt.nz/building-and-energy/building/building-and-construction-consultations/work-with-engineered-stone-and-materials-containing-crystalline-silica/annex-iii)
 - [IARC: Monographs Volume 100C](https://publications.iarc.who.int/120)
 - [IARC: Volume 131, Cobalt, antimony compounds and weapons-grade tungsten alloy](https://monographs.iarc.who.int/news-events/volume-131-cobalt-antimony-compounds-and-weapons-grade-tungsten-alloy)
 - [Science Media Centre Spain: IARC classifies talc (2024)](https://sciencemediacentre.es/en/node/3775)
+- [ECHA: Risk Assessment Committee opinion on lithium carbonate, chloride and hydroxide (2021, PDF)](https://echa.europa.eu/documents/10162/e2a3c38e-85fe-505c-a325-293c70a74da5)
+- [PubChem: Cobalt carbonate, GHS classification, including its EU harmonised one](https://pubchem.ncbi.nlm.nih.gov/compound/10565#section=GHS-Classification)
 - [ECHA: Risk Assessment Committee document on boric acid and borates](https://echa.europa.eu/documents/10162/7d740d8c-5cd5-872b-5da2-e549983a9ff9)
 - [Coslaw: EU introduces new CMR classifications under the 24th ATP to the CLP Regulation](https://coslaw.eu/eu-introduces-new-cmr-classifications-under-the-24th-atp-to-the-clp-regulation/)
 - [University of Utah EHS: Arts safety: ceramics](https://www.ehs.utah.edu/guidelines/arts-safety-ceramics/)
@@ -275,8 +277,9 @@ Det här är de primärkällor som är mest värda att läsa. De flesta är skri
 - [Digitalfire: Kiln fumes](https://digitalfire.com/glossary/kiln+fumes)
 - [Digitalfire: Barium and compounds toxicology](https://digitalfire.com/hazard/barium+and+compounds+toxicology)
 - [Digitalfire: Manganese inorganic compounds toxicology](https://digitalfire.com/hazard/manganese+inorganic+compounds+toxicology)
+- [JSP: What levels of protection do particulate filters provide?](https://jspsafety.helpjuice.com/en_GB/what-levels-of-protection-do-particulate-filters-provide)
 - [JSP: Why is a clean shave essential for a proper tight-fitting respirator seal?](https://jspsafety.helpjuice.com/en_GB/why-is-a-clean-shave-essential-for-a-proper-tight-fitting-respirator-seal-can-i-have-a-beard)
 - [Skutt: Kiln room design and product specifications](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Designing-A-Kiln-Room-1.pdf)
 - [CIRMA: Kiln safety bulletin (2025)](https://downloads.ccm-ct.org/pdf/Media-Library-Bulletins/KilnSafety-Bulletin-052825.pdf)
 - [Ceramic Arts Network: Dave Finkelnburg, How and why to use a kiln vent](https://ceramicartsnetwork.org/daily/article/How-and-Why-to-Use-a-Kiln-Vent)
-- [CCSA och Orton: What is so bad about fumes?](https://assets.noviams.com/novi-file-uploads/ccsa/Product_Safety/Fumes.pdf)
+- [CCSA and Orton: What is so bad about fumes?](https://assets.noviams.com/novi-file-uploads/ccsa/Product_Safety/Fumes.pdf)

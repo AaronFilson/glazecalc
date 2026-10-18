@@ -22,58 +22,58 @@ lead: 如何購買、保存、秤量與調配釉藥，調出適當的釉層厚�
 > [!WARNING]
 > **乾的釉粉有粉塵危害**。結晶型二氧化矽可能占乾釉粉的 10–60%，英國健康與安全執行署（HSE）警告，這種粉塵在一般光線下看不見。請從低處輕輕舀取，隨時蓋好蓋子，盡快把粉料弄濕，清理時用濕的方式，切勿用掃帚。粉料還乾著的時候，請戴上密合的呼吸防護具（美國用 N95 或 P100，英國與歐盟用 FFP2 或 FFP3，澳洲與紐西蘭用 P2 或 P3）。[安全調配與通風](/guides/safe-mixing)指南完整說明粉塵、呼吸防護具與清理。
 
-## 購買原料 {#buying-materials}
+## Buying materials {#buying-materials lang=en}
 
-### 在哪裡買
+### Where to buy
 
-陶藝家向陶藝材料行購買，這些店賣黏土、釉藥原料和工具。下表列出一些您所在國家的店家，每家都已在店家自己的網站上確認過，您也可以選擇其他國家，查看那裡的店家。庫存會變動，下單前請先確認。Sibelco 和 Imerys 等大型生產商是賣給工業用戶的；陶藝家是透過像這些店家購買原料。陶瓷參考網站 Digitalfire 有一份其他地區供應商店家的名錄。
+Potters buy from ceramic suppliers, which sell clay, glaze materials and tools. The table shows some for your country, each checked on the shop's own site, and you can choose another country to see its shops. Stock changes, so check before you order. Large producers such as Sibelco and Imerys sell to industry; potters buy their materials through shops like these. The ceramics reference site Digitalfire keeps a directory of supplier stores for other places.
 
 ::shops
 
-### 買多少
+### How much to buy
 
-標準袋裝在美國是 **50 lb (22.7 kg)**，其他地方是 **25 kg (55 lb)**，兩者幾乎一樣。許多供應商也賣 1、2.5 或 5 kg 的小包裝（約 2.2、5.5 或 11 lb），適合做測試。開放式釉方資料庫 Glazy 建議，常用的原料（長石{{en: feldspar}}、石英粉、高嶺土{{en: kaolin}}、碳酸鈣，以及中溫用的熔塊）買整袋，往往便宜 20–30%。**呈色劑**{{en: colorants}}，也就是為釉藥上色的金屬氧化物與色料，要少量購買：大多數的用量不到 5%。Glazy 的範例採購清單，以美國價格計，中溫約 $515，高溫約 $397。
+The standard sack is **50 lb (22.7 kg)** in the US and **25 kg (55 lb)** elsewhere, so the two are nearly the same. Many suppliers also sell 1, 2.5 or 5 kg packs (about 2.2, 5.5 or 11 lb) for tests. Glazy, the open recipe database, advises buying the materials you use steadily (feldspar, silica, kaolin, whiting, and frit for mid-fire) in full sacks, which are often 20 to 30% cheaper. Buy **colorants**, the metal oxides and stains that color a glaze, in small amounts: most are used at under 5%. Glazy's sample shopping lists came to about $515 for mid-fire and $397 for high-fire, at US prices.
 
-### 入門組合
+### A starter set
 
-Glazy 針對任何溫度的核心清單是石英粉、高嶺土、長石、碳酸鈣、氧化鋅，以及白雲石或滑石。大多數中溫（Orton 5–6 號測溫錐）的釉藥還需要硼，通常來自熔塊，Glazy 稱熔塊「穩定一致，而且比天然硼酸鹽更不易溶」。下表是我們的建議，取自 Glazy 的清單和一份論壇的清單。[從基本原理認識釉藥](/guides/glazing-basics)指南說明每種原料的作用。
+Glazy's core list for any temperature is silica, kaolin, feldspar, whiting, zinc oxide, and dolomite or talc. Most mid-fire (cone 5 to 6) glazes also need boron, usually from a frit, which Glazy calls "consistent and less soluble than raw borates". The set below is our suggestion, drawn from Glazy's list and a forum list. The [glazing basics guide](/guides/glazing-basics) explains what each material does.
 
-Table: 入門原料組合（我們的建議）
-Label: 入門組合
+Table: A starter set of materials (our suggestion)
+Label: Starter set
 
-| 原料                              | 該買什麼                                                         |
-| --------------------------------- | ---------------------------------------------------------------- |
-| 石英粉（也稱 flint 燧石；見下文） | 325 目，Glazy 建議用於釉藥的較細等級                             |
-| 高嶺土（英國稱 china clay）       | 美國用 EPK；英國用 Grolleg 或其他 china clay；紐西蘭用 NZ kaolin |
-| 鉀長石                            | 買您所在地目前有賣的，例如美國的 Mahavir                         |
-| 霞石正長石                        | 任何一種；Glazy 指出其助熔能力較強，常用於低溫與中溫             |
-| 碳酸鈣                            | 任何一種                                                         |
-| 滑石                              | 任何一種                                                         |
-| 含硼熔塊（中溫用）                | Ferro 3134、3124 或 3195；英國用 Potterycrafts P3124 或 P3195    |
-| 皂土與呈色劑                      | 少量                                                             |
+| Material                              | What to buy                                                                      |
+| ------------------------------------- | -------------------------------------------------------------------------------- |
+| Silica (also called flint; see below) | 325 mesh, the finer grade Glazy prefers for glazes                               |
+| Kaolin (china clay in the UK)         | EPK in the US; Grolleg or another china clay in the UK; NZ kaolin in New Zealand |
+| Potash feldspar                       | Whichever is current where you live, such as Mahavir in the US                   |
+| Nepheline syenite                     | Any; Glazy notes its stronger fluxing power, often used at low and mid-fire      |
+| Whiting                               | Any                                                                              |
+| Talc                                  | Any asbestos-free grade; check its SDS (see Safe mixing)                         |
+| A boron frit, for mid-fire            | Ferro 3134, 3124 or 3195; in the UK, Potterycrafts P3124 or P3195                |
+| Bentonite and colorants               | Small amounts                                                                    |
 
-### 資料表與安全資料表
+### Data sheets and safety data sheets
 
-每種原料請索取兩份文件。**技術資料表**（TDS）列出原料的**化學分析**：粉料中各氧化物所占的重量比例。Glazecalc 就是依這些資料計算，您可以依供應商的分析值，在[原料頁面](/material)新增原料。**安全資料表**（SDS）說明如何處理未加工的粉料。請保存每一份 SDS，調配前先閱讀。
+Ask for two documents for each material. A **technical data sheet** (TDS) gives its **chemical analysis**: the share of each oxide in the powder, by weight. Glazecalc works from these, and you can add a material from a supplier's analysis on the [Materials page](/material). A **safety data sheet** (SDS) says how to handle the raw powder. Keep each SDS, and read it before you mix.
 
-分析值是平均值，不是保證。Valentine Clays 在其燧石資料表上印著「平均值，不代表規格」，而 Glazy 對不同年份 Custer 長石的分析，二氧化矽含量從約 68.5% 到 72.4% 不等。我們建議把每袋的**批號**（該袋的生產批次代碼）寫進您的紀錄，這樣當一款一向穩定的釉藥有變化時，您就能判斷是不是原料造成的。
+Analyses are averages, not promises. Valentine Clays prints "MEAN VALUES. THESE DO NOT REPRESENT A SPECIFICATION" on its flint data sheet, and Glazy's analyses of Custer feldspar from different years run from about 68.5% to 72.4% silica. We suggest writing each sack's **lot number** (its batch code) in your records, so you can tell whether a change in a trusted glaze came from the material.
 
-英國 HSE 警告，結晶型二氧化矽「可能被誤標為『非晶型二氧化矽』」。而且 SDS 談的是粉料，不是作品：SDS 並沒有說燒成後的釉藥盛裝食物是否安全。只有對燒好的作品做實驗室溶出試驗{{en: leach test}}，才能證明這一點。
+HSE warns that crystalline silica "can be wrongly labelled as 'amorphous silica'". And an SDS is about the powder, not the pot: it says nothing about whether a fired glaze is safe for food. Only a laboratory leach test of the fired pot can show that.
 
-### 名稱會變，所以要看成分購買
+### Names change, so buy by chemistry
 
-品牌名稱會隨礦場關閉而消失。在南達科他州開採了超過 75 年的 Custer 長石，已於 2023年底用完。Clay Art Center 改用 G-200 AU 和 Mahavir 時，約有一半的釉藥需要調整。G-200 和 G-200 HP 也買不到了，Laguna 現在進口 Mahavir，其化學組成與 G-200 相近。
+Brand names come and go as mines close. Custer feldspar, mined in South Dakota for more than 75 years, ran out in late 2023. When Clay Art Center switched to G-200 AU and Mahavir, about half its glazes needed adjusting. G-200 and G-200 HP are gone too, and Laguna now imports Mahavir, whose chemistry is close to G-200.
 
-**Gerstley Borate** 是許多舊釉方中使用的一種天然含硼礦物，自 2000年礦場關閉後一直很稀少，不過 New Mexico Clay 在 2025年11月報告，Laguna 正在供應「Gerstley Borate Original」。關於 **Gillespie Borate** 能否作為替代品，各來源說法不一。其製造商宣稱可以用量不變直接替換。Berkeley Potters Studio 說這種原料「不是直接的替代品」，而 Digitalfire 發現這種原料改變了釉藥的顏色。穩妥的做法是先比較兩者的氧化物，再做測試。
+**Gerstley Borate**, a natural boron mineral in many older recipes, has been scarce since its mine closed in 2000, though New Mexico Clay reported in November 2025 that Laguna was supplying "Gerstley Borate Original". Sources disagree about **Gillespie Borate** as a replacement. Its maker sells it as pound-for-pound. Berkeley Potters Studio says it "is not a direct substitute", and Digitalfire found it changed a glaze's color. The safe course is to compare the two by their oxides, then test.
 
-各地的名稱也不同。在北美，**燧石**{{en: flint}}、石英和二氧化矽指的是同一種磨細的二氧化矽，Digitalfire 指出，您大概買不到供應商賣的真正燧石粉。在英國，flint 是獨立的產品：Valentine's 的是鍛燒（加熱過）的二氧化矽。兩者都幾乎是純二氧化矽，所以我們預期兩者接近，但仍要查看分析值。高嶺土方面，Glazy 說一對一的替換，例如用 EPK 替換 china clay，「通常效果很好，尤其是用量 \<10% 時」。
+Regional names differ too. In North America, **flint**, quartz and silica mean the same ground silica, and Digitalfire says you probably won't find true flint powder from suppliers. In the UK, flint is its own product: Valentine's is calcined (heated) silica. Both are nearly pure silica, so we expect them to be close, but check the analysis. For kaolin, Glazy says one-for-one swaps, such as EPK for a china clay, "often work just fine, especially when amounts are \<10%".
 
-許多釉方用到的原料，在一個國家有賣，在另一個國家卻買不到。下表針對 Glazecalc 原料庫中每一種在您購買的地方沒有販售的原料，依分析值找出該處有賣的、同類中最接近的原料。數字表示兩者相差多少：兩者燒成後的氧化物，每 100 g 原料相差的克數，把每種氧化物加總起來。差距在約 15 g 以內，第一次試驗時通常可以用其中一種代替另一種。名稱附有製造商和店家自己的代碼，您可以直接用名稱詢問。
+Many recipes name materials that are sold in one country and not another. The table below takes each material in Glazecalc's library that is not sold where you buy, and finds the closest of its kind that is, by their analyses. The figure is how far apart the two are: the grams by which their fired oxides differ, per 100 g of material, added up over every oxide. Within about 15 g, one can usually stand in for the other in a first test. The names carry the makers' and shops' own codes, so you can ask for them by name.
 
 ::local-equivalents
 
 > [!NOTE]
-> Glazecalc 比較原料時，看的是原料為燒成後的釉藥帶來什麼，而不是名稱。[配方](/recipe)中若有已不再生產的原料，會告訴您現在改用什麼。**建議用量並比較**會為替代原料重新算出用量，**用現有原料調配**則用您的現有原料重新調出釉方。兩者都只比對燒成後的氧化物，所以請先試調一小批。
+> Glazecalc compares materials by what they bring to the fired glaze, not by name. A [recipe](/recipe) with a material no longer made says what is used now. **Suggest amounts and compare** works the amounts out again for a substitute, and **Match with what I have** makes the recipe again from the materials on your shelf. Both match the fired oxides only, so test a small batch first.
 
 ## 原料與釉藥的存放 {#storing}
 
@@ -163,55 +163,55 @@ Label: 篩網目數
 | 含鈷或鐵等呈色劑的釉藥           | 100–120 目  |
 | 灰釉，以及其他含粗顆粒原料的釉藥 | 60–80 目    |
 
-## 比重 {#specific-gravity}
+## Specific gravity {#specific-gravity lang=en}
 
-**比重**{{en: specific gravity}}（SG）告訴您釉漿裡有多少粉料。比重是一定體積的釉藥重量，除以同體積水的重量。水是 1.00，{{SG 1.45}} 的釉藥每 100 mL 重 145 g。依測得的比重來調配，就能每次得到同樣的濃稠度與同樣的釉層。比重沒有單位，所以不論以公克還是盎司計都相同。
+**Specific gravity** (SG) tells you how much powder is in your slurry. It is the weight of a volume of glaze divided by the weight of the same volume of water. Water is 1.00, and a glaze at {{SG 1.45}} weighs 145 g per 100 mL. Mixing to a measured SG is how you get the same thickness, and the same coat, every time. It has no units, so it is the same in grams or ounces.
 
-### 秤 100 mL 來測量
+### Measure it by weighing 100 mL
 
-1. 把釉藥攪拌均勻，不要有任何沉澱。
-2. 把 100 mL 的**量筒**（有刻度的高管狀量具）或 100 mL 的針筒放在秤上，並扣重。
-3. 裝入釉藥到剛好 100 mL，讀刻度時視線與液面齊平。
-4. 秤重，把公克數除以 100：145 g 就是比重 1.45。
+1. Stir the glaze so nothing has settled.
+2. Put a 100 mL **graduated cylinder** (a tall, marked measuring tube) or a 100 mL syringe on the scale, and tare it.
+3. Fill it with glaze to exactly 100 mL, reading the mark at eye level.
+4. Weigh it and divide the grams by 100: 145 g is SG 1.45.
 
-Digitalfire 還會在杯子上標出 500 g 水的液面，把釉藥裝到記號處，再把重量除以 500；較大、裝得較滿的量具比較準確。**比重計**是浮在釉藥中、依其浮出位置讀數的浮標，很快，但遇到濃稠或已膠化的釉藥可能讀錯。英國的比重計，例如 Potclays 的，讀數單位是波美度（°Bé）。依我們的算法，SG = 145 ÷ (145 − °Bé)，所以 46 °Bé 約為 1.46。較舊的英國書籍給的是**品脫重**，也就是一英制品脫釉藥的盎司數：除以 20，所以 29 oz 約為比重 1.45（同樣是我們的算法）。
+Digitalfire also marks a cup at the level of 500 g of water, fills it to the mark with glaze, and divides the weight by 500; a bigger, fuller measure is more accurate. A **hydrometer**, a float read where it sits in the glaze, is quick but can misread thick or gelled glazes. UK hydrometers, such as Potclays', read in degrees Baumé (°Bé). By our arithmetic, SG = 145 ÷ (145 − °Bé), so 46 °Bé is about 1.46. Older UK books give a **pint weight**, the ounces in an imperial pint of glaze: divide it by 20, so 29 oz is about SG 1.45 (also our arithmetic).
 
-### 目標值
+### What to aim for
 
-各來源說法不一，尤其是刷釉和噴釉，英國供應商 Potclays 給的數值高得多（該公司自己的數值「僅供參考」）。請把每個數字都當成起點。Digitalfire 的核心建議是，為每款釉藥找出適合的比重與膠化程度，然後重複使用並記下來。
+Sources disagree, most of all on brushing and spraying, where the UK supplier Potclays gives much higher figures (its own are "for guidance only"). Treat every number as a starting point. Digitalfire's core advice is to find the SG and gelling that work for each glaze, then repeat them and write them down.
 
-Table: 目標比重，各來源說法不一
-Label: 比重目標值
+Table: Specific gravity targets, where sources disagree
+Label: Specific gravity targets
 
-| 用途 | Digitalfire 與 Glazy                                                                                             | Potclays（英國）                            | 穩妥的起點                                             |
-| ---- | ---------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------ |
-| 浸釉 | {{SG 1.40}}（浸 5 秒）至 {{SG 1.50}}（浸 1 秒）；自己調配且已膠化的釉藥，在 {{SG 1.43–1.45}} 效果最好            | 透明釉 {{SG 1.46–1.48}}；有色釉 {{SG 1.61}} | {{SG 1.45}}；如果會滴流，稀釋到 {{SG 1.43}} 並使其膠化 |
-| 刷釉 | {{SG 1.25}}（稀的透明釉）至 {{SG 1.55}}（深色細部）                                                              | {{SG 1.71–1.81}}                            | 照產品說明；使用 CMC 或刷釉用調和劑                    |
-| 噴釉 | 沒有數值；為 Ceramic Arts Network 撰文的 Hopper 說要稀得多，並加解膠劑{{en: deflocculant}}（使釉漿變稀的添加物） | {{SG 1.71}}                                 | 沒有可靠的數值；只在噴釉台內噴釉                       |
+| Use      | Digitalfire and Glazy                                                                                                                 | Potclays (UK)                               | Safe starting point                                     |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------- |
+| Dipping  | {{SG 1.40}} (for a 5-second dip) to {{SG 1.50}} (for a 1-second dip); home-mixed glazes that are gelled do best at {{SG 1.43–1.45}}   | Clear {{SG 1.46–1.48}}; colored {{SG 1.61}} | {{SG 1.45}}; thin to {{SG 1.43}} and gel it if it drips |
+| Brushing | {{SG 1.25}} (thin clear) to {{SG 1.55}} (dark detail)                                                                                 | {{SG 1.71–1.81}}                            | Follow the product; use CMC gum or a brushing medium    |
+| Spraying | No figure; Hopper, writing for Ceramic Arts Network, says much thinner, with a deflocculant (an additive that makes a slurry runnier) | {{SG 1.71}}                                 | No reliable number; spray only in a spray booth         |
 
-用肉眼檢查浸釉用釉藥時，AMACO 浸 5 秒，看釉層是否約有一枚美國十美分硬幣那麼厚。Digitalfire 則燒浸 5 秒的試片來檢查。
+To check a dipping glaze by eye, AMACO dips for 5 seconds and looks for a coat about as thick as a US dime. Digitalfire fires tiles dipped for 5 seconds to check.
 
-### 達到目標比重所需的水量：我們的估算
+### Water for a target SG: our estimate
 
-下表是我們自己算的，不是哪個來源的。這個表假設粉料顆粒的密度是 2.6 g/cm³，這是假設，不是測量值。黏土、可溶的原料和膠化都會改變實際的釉藥，所以只用這個表來起步，然後再測量。作為對照，粉料與水等重時這個表預測 {{SG 1.44}}，和 Digitalfire 量到的 {{SG 1.46}} 很接近。這個表也顯示，每 100 g 加 70–80 mL 的起點會高於 {{SG 1.50}}，比您需要的更稠。
+The table below is our own arithmetic, not a source's. It assumes the powder's particles have a density of 2.6 g per cm³, which is an assumption, not a measurement. Clay, soluble materials and gelling all change a real glaze, so use it to start, then measure. As a check, it predicts {{SG 1.44}} for equal weights of powder and water, close to Digitalfire's measured {{SG 1.46}}. It also shows that 70 to 80 mL per 100 g starts you above {{SG 1.50}}, thicker than you need.
 
-Table: 達到目標比重所需的水量（我們的估算）
-Label: 達到目標比重所需的水量
+Table: Water for a target specific gravity (our estimate)
+Label: Water for a target specific gravity
 
-| 目標        | 每 100 g 粉料 |     每公斤 |           每磅 |
-| ----------- | ------------: | ---------: | -------------: |
-| {{SG 1.40}} |     約 115 mL | 約 1150 mL | 約 18 US fl oz |
-| {{SG 1.45}} |      約 98 mL |  約 980 mL | 約 15 US fl oz |
-| {{SG 1.50}} |      約 85 mL |  約 850 mL | 約 13 US fl oz |
-| {{SG 1.60}} |      約 64 mL |  約 640 mL | 約 10 US fl oz |
+| Target      | Per 100 g of powder |  Per kilogram |         Per pound |
+| ----------- | ------------------: | ------------: | ----------------: |
+| {{SG 1.40}} |        about 115 mL | about 1150 mL | about 18 US fl oz |
+| {{SG 1.45}} |         about 98 mL |  about 980 mL | about 15 US fl oz |
+| {{SG 1.50}} |         about 85 mL |  about 850 mL | about 13 US fl oz |
+| {{SG 1.60}} |         about 64 mL |  about 640 mL | about 10 US fl oz |
 
-### 瀉鹽、CMC 與皂土
+### Epsom salts, CMC gum and bentonite
 
-**瀉鹽**（硫酸鎂）會讓釉藥靜置時輕微膠化，攪拌時又能再流動。這稱為使釉藥**絮凝**{{en: flocculating}}，具有這種特性的釉藥是**觸變**{{en: thixotropic}}的：上得更均勻、較不易滴流、也較不易沉澱。Digitalfire 建議在比重調對之後，從每加侖約 2 g 開始（約每公升 0.5 g，這是我們的換算），並在每次調配時調整用量，因為不該由釉方來固定劑量。我們建議先用少量熱水溶解。在 Digitalfire 的一個例子中，一款 {{SG 1.45}} 的釉藥會滴流，所以加水把比重降到 {{SG 1.43}}，再用瀉鹽讓釉藥膠化回奶油般的狀態，結果上得很均勻。簡單的檢查方法：攪拌，停下來，觀察。膠化的釉藥會繼續流動約 2 或 3 秒，然後停住，並稍微彈回一點。
+**Epsom salts** make a glaze gel slightly when it stands still and flow again when it is stirred. This is called **flocculating** it, and a glaze that behaves this way is **thixotropic**: it goes on more evenly, drips less and settles less. Digitalfire suggests starting at about 2 g per gallon once the SG is right (roughly 0.5 g per liter, our conversion) and tuning the amount each time you mix, since no recipe should fix the dose. We suggest dissolving it in a little hot water first. In a Digitalfire example, a glaze at {{SG 1.45}} dripped, so water brought it down to {{SG 1.43}} and Epsom salts gelled it back to creamy, and it went on evenly. A rough check: stir, stop and watch. A gelled glaze moves on for about 2 or 3 seconds, then stops and springs back a little.
 
-**CMC**（羧甲基纖維素）會讓釉漿更黏、乾得更慢，並留下較硬、附著在作品上更牢的釉層。CMC 對刷釉用釉藥和熔塊含量高的釉藥最重要。Digitalfire 的例子是在 1000 g 釉漿中混入 3.75 g，而且必須用果汁機打進去。含 CMC 的釉藥不會被瀉鹽膠化，而且由於微生物以這種膠為食，這種釉藥在桶子裡可能變質並開始發臭。
+**CMC gum** (carboxymethyl cellulose) makes a slurry stickier and slower to dry, and leaves a harder coat that holds to the pot. It matters most for brushing glazes and glazes high in frit. Digitalfire's example blends 3.75 g into 1000 g of slurry, and it has to go in with a blender. A glaze with CMC will not gel with Epsom salts, and since microbes feed on the gum, it can change in the bucket and start to smell.
 
-**皂土**是一種非常細的黏土，有助於讓其他顆粒保持懸浮。浸釉用釉藥通常靠 15–25% 的生土來達成這一點。對缺少黏土的釉方，加約 1–2% 的皂土會有幫助。
+**Bentonite**, a very fine clay, helps hold the other particles in suspension. Dipping glazes usually rely on 15 to 25% raw clay for this. For a recipe short of clay, about 1 to 3% bentonite helps; Digitalfire says a glaze with more than 15% clay should not need more than 1%.
 
 ## 試片與直線配比試驗 {#testing}
 
@@ -276,7 +276,7 @@ Label: 紀錄範本
 > [!NOTE]
 > 在 Glazecalc 中，儲存的[配方](/recipe)存放釉方本身。[燒窯紀錄](/firing)記錄每次燒窯：窯、日期、時間、溫度、測溫錐與備註。[筆記](/notes)則存放其他一切，例如上面的批次紀錄，以及每片試片的結果。
 
-## 資料來源 {#sources}
+## Sources {#sources lang=en}
 
 - [Glazy: Raw materials](https://help.glazy.org/concepts/materials)
 - [Glazy: Specific gravity](https://help.glazy.org/testing/specific-gravity)
@@ -284,12 +284,13 @@ Label: 紀錄範本
 - [Digitalfire: Epsom salts](https://digitalfire.com/material/epsom+salts)
 - [Digitalfire: CMC gum](https://digitalfire.com/material/cmc%2Bgum)
 - [Digitalfire: Dipping glaze](https://digitalfire.com/glossary/dipping+glaze)
+- [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Water solubility](https://digitalfire.com/glossary/water+solubility)
 - [Digitalfire: Gerstley Borate](https://digitalfire.com/material/gerstley+borate)
 - [Digitalfire: Mahavir potash feldspar](https://digitalfire.com/material/mahavir+potash+feldspar)
 - [Digitalfire: Flint](https://digitalfire.com/material/flint)
 - [Clay Art Center: The end of an era, the extinction of Custer feldspar](https://www.clayartcenter.org/clay-art-center-blog/2025/4/the-end-of-an-era-the-extinction-of-custer-feldspar)
-- [Berkeley Potters Studio: What the flux, 2023年11月](https://www.berkeleypottersstudio.com/what-the-flux-nov-2023)
+- [Berkeley Potters Studio: What the flux, November 2023](https://www.berkeleypottersstudio.com/what-the-flux-nov-2023)
 - [New Mexico Clay: Gerstley Borate Original](https://nmclay.com/gerstley-borate-original)
 - [Ceramic Arts Network: Glaze chemistry 101, a quick course on mixing ceramic glazes (Zakin)](https://ceramicartsnetwork.org/daily/article/Glaze-Chemistry-101-A-Quick-Course-on-Mixing-Ceramic-Glazes)
 - [Ceramic Arts Network: How to keep good records when testing ceramic glazes (Willers)](<https://ceramicartsnetwork.org/daily/article/how-to-keep-good-records-when-testing-ceramic-glazes-(and-improve-your-results!)>)

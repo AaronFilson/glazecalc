@@ -370,83 +370,83 @@ Label: Таблица на конусите SK
 
 :::
 
-## Бисквитно изпичане {#bisque}
+## Bisque firing {#bisque lang=en}
 
-**Бисквитното изпичане**{{en: bisque}} (на британски английски biscuit) е първото, по-ниско изпичане, което превръща сухата глина в твърди, порьозни изделия, готови за глазиране. Обикновено се изпича до конус{{en: cone}} 06–04, {{1828–1945 °F; 998–1063 °C}} по таблицата на Orton; британските керамици често изпичат до около {{1000 °C; 1832 °F}}, близо до конус 06. Бисквитът следва да остане порьозен, „като цяло над 15%“ (Digitalfire), за да попива водата от глазурата{{en: glaze}}. Твърде ниско изпеченият бисквит поема твърде дебел слой глазура, който после се напуква и **се събира**{{en: crawling}} (отдръпва се на островчета и оголва глината). Недопеченият бисквит освен това „продължава да се свива по време на глазурното изпичане“{{en: glaze firing}}, което разваля съвместимостта на глазурата с черепа{{en: glaze fit}}. Подреждането е по-свободно: изделията може да се допират, капаците може да се изпичат върху съдовете си, а купите се поставят ръб в ръб, а не една в друга.
+The **bisque** firing (biscuit in the UK) is the first, lower firing that turns dry clay into hard, porous ware ready to glaze. It is usually fired to cone 06–04, {{1828–1945 °F; 998–1063 °C}} on Orton's chart; UK potters often fire to around {{1000 °C; 1832 °F}}, near cone 06. The bisque should stay porous, "generally more than 15%" (Digitalfire), so it soaks water out of the glaze. Too soft a bisque takes glaze on too thick, which then cracks and **crawls** (pulls back into islands, leaving bare clay). Under-fired bisque also "continues to shrink during glaze firing", which spoils the glaze fit. Loading is forgiving: pieces may touch, lids can be fired on their pots, and bowls go rim to rim rather than nested.
 
-### Защо началото е бавно
+### Why the early part goes slowly
 
-Водата, която се превръща в пара, „се разширява 1170 пъти“, отбелязва Bracker’s, затова влажните изделия трябва да се сушат бавно. L&L и Orton съветват, че „под 1500°F (815°C) следва да се внимава особено керамичната маса да се нагрява равномерно“ и че въглеродът трябва да изгори преди около {{1200 °F; 650 °C}}. Над {{1500 °F; 816 °C}} пещта може да се нагрява по-бързо.
+Water expands more than a thousandfold as it turns to steam, so damp ware has to be dried slowly. L&L and Orton advise that "Special care should be taken below 1500°F (815°C) to heat the body evenly", and that carbon must be burned out before about {{1200 °F; 650 °C}}. Above {{1500 °F; 816 °C}} the kiln can climb faster.
 
-Table: Какво става при нагряването на бисквита
-Label: Какво става при бисквитно изпичане
+Table: What happens as a bisque heats
+Label: What happens in a bisque
 
-|                     Температура | Какво става                                                                      |
-| ------------------------------: | -------------------------------------------------------------------------------- |
-|      {{300–500 °F; 149–260 °C}} | Свързващите вещества изгарят                                                     |
-|        Около {{450 °F; 232 °C}} | Органичните вещества започват да горят                                           |
-|           До {{700 °F; 371 °C}} | Водата продължава да излиза от глината, докато температурата не надхвърли тази   |
-|     {{842–1022 °F; 450–550 °C}} | Химически свързаната вода излиза от глината                                      |
-|             {{1063 °F; 573 °C}} | Кварцов преход{{en: quartz inversion}}: кварцът в глината внезапно се разширява  |
-|         Над {{1112 °F; 600 °C}} | Сярата изгаря                                                                    |
-| До {{1200–1400 °F; 649–760 °C}} | Естественият въглерод изгаря; това следва да приключи преди червеното нажежаване |
-|         Над {{1544 °F; 840 °C}} | Калциевият карбонат се разлага                                                   |
+|                        Temperature | What happens                                                |
+| ---------------------------------: | ----------------------------------------------------------- |
+|         {{300–500 °F; 149–260 °C}} | Binders burn off                                            |
+|           About {{450 °F; 232 °C}} | Organic matter starts to burn                               |
+|           Up to {{700 °F; 371 °C}} | Water keeps leaving the clay until above this temperature   |
+|        {{842–1022 °F; 450–550 °C}} | Chemically bound water leaves the clay                      |
+|                {{1063 °F; 573 °C}} | Quartz inversion: silica in the clay expands suddenly       |
+|          Above {{1112 °F; 600 °C}} | Sulfur burns out                                            |
+| Up to {{1200–1400 °F; 649–760 °C}} | Natural carbon burns off; this should finish below red heat |
+|          Above {{1544 °F; 840 °C}} | Calcium carbonate breaks down                               |
 
-**Кварцовият преход** е внезапната промяна в обема на кварца в глината при {{1063 °F; 573 °C}}: той се разширява при нагряване и се свива при охлаждане. Програмата Slow Bisque на L&L забавя нагряването през него, между {{1000 °F; 538 °C}} и {{1100 °F; 593 °C}}. Digitalfire установява, че това е „ненужно при бисквитни изпичания“, а Ceramics Monthly казва, че има значение главно при охлаждането на плътни изделия. Забавянето струва малко, затова предлагаме да го запазите за дебелите изделия.
+**Quartz inversion** is the sudden change in size of the silica in clay at {{1063 °F; 573 °C}}: it expands on the way up and contracts on the way down. L&L's Slow Bisque slows through it, between {{1000 °F; 538 °C}} and {{1100 °F; 593 °C}}. Digitalfire found this "unnecessary for bisque firings", and Ceramics Monthly says it mainly matters when cooling dense ware. Slowing costs little, so our suggestion is to keep it for thick pieces.
 
-### Подсушаване: изсушаване в пещта
+### Candling: drying in the kiln
 
-**Подсушаването**{{en: candling}} означава пещта да се държи на ниска температура, с открехнат капак или с включена вентилация, докато и последната влага излезе от изделията. Източниците не са единодушни за температурата:
+**Candling** means holding the kiln at a low temperature, with the lid propped or the vent running, until the last moisture has left the ware. Sources disagree about the temperature:
 
-Table: Температури на подсушаване
+Table: Candling temperatures
 
-| Източник          | Подсушаване                                                                                         |
-| ----------------- | --------------------------------------------------------------------------------------------------- |
-| Ceramics Monthly  | Малко под кипене; например нагряване с {{25 °F/h; 14 °C/h}} в продължение на 4–6 часа               |
-| L&L (подсушаване) | Задържане при {{150–200 °F; 66–93 °C}}                                                              |
-| Digitalfire       | Задържане при {{250 °F; 121 °C}}, защото задържането под точката на кипене „не изгонва цялата вода“ |
+| Source           | Candling                                                                                 |
+| ---------------- | ---------------------------------------------------------------------------------------- |
+| Ceramics Monthly | Just short of boiling; for example, climbing at {{25 °F/h; 14 °C/h}} for 4–6 hours       |
+| L&L preheat      | Hold at {{150–200 °F; 66–93 °C}}                                                         |
+| Digitalfire      | Hold at {{250 °F; 121 °C}}, because holding below boiling "does not expel all the water" |
 
 > [!NOTE]
-> Нашата отправна точка: нагрявайте бавно до не повече от около {{250 °F; 121 °C}} и задръжте, докато огледало, поднесено към вентилационния отвор, спре да се изпотява. При дебели или влажни изделия задръжте през нощта.
+> Our starting point: climb slowly to no more than about {{250 °F; 121 °C}}, and hold until a mirror at the vent stays clear. Hold overnight for thick or damp ware.
 
-**Пробата с огледало**: поднесете огледало със стайна температура към вентилационен отвор или към процепа под открехнатия капак. Ако се изпоти, водата още излиза; изчакайте и опитайте отново.
+The **mirror test**: hold a room-temperature mirror at a vent hole or at the gap under a propped lid. If it fogs, water is still leaving; wait, then test again.
 
-### Програми за контролер
+### Controller schedules
 
-**Контролерът** е електронно устройство, което управлява изпичането по **програма**: списък от **сегменти**, всеки със скорост на нагряване (**рампа**{{en: ramp}}), целева температура и задържане{{en: hold}} по избор. По-долу са две готови програми от контролерите DynaTrol на L&L и Bartlett и една програма, публикувана от Digitalfire. „Максималната температура“ е собствената температура на контролера за избрания от Вас конус: за конус 04 тя е {{1926 °F; 1052 °C}}, а за конус 06 – {{1819 °F; 993 °C}}.
+A **controller** is an electronic unit that fires the kiln through a **schedule**: a list of **segments**, each a rate of climb (the **ramp**), a target temperature and an optional hold. Below are two presets from L&L's DynaTrol and Bartlett controllers, and a schedule published by Digitalfire. "Peak" is the controller's own temperature for the cone you choose: for cone 04 it is {{1926 °F; 1052 °C}}, and for cone 06, {{1819 °F; 993 °C}}.
 
-Table: Готови програми за бисквит на L&L и Bartlett
-Label: Готови програми за бисквит
+Table: L&L and Bartlett bisque presets
+Label: Bisque presets
 
-| Сегмент                        |                                                                     Нагряване до |              Slow Bisque |            Fast Bisque |
-| ------------------------------ | -------------------------------------------------------------------------------: | -----------------------: | ---------------------: |
-| 1                              |                                                               {{250 °F; 121 °C}} |     {{80 °F/h; 44 °C/h}} |  {{120 °F/h; 67 °C/h}} |
-| 2                              |                                                              {{1000 °F; 538 °C}} |   {{200 °F/h; 111 °C/h}} | {{300 °F/h; 167 °C/h}} |
-| 3                              |                                                              {{1100 °F; 593 °C}} |    {{100 °F/h; 56 °C/h}} |  {{150 °F/h; 83 °C/h}} |
-| 4                              | {{250 °F; 139 °C}} под максималната температура: {{1676 °F; 913 °C}} за конус 04 |   {{180 °F/h; 100 °C/h}} | {{180 °F/h; 100 °C/h}} |
-| 5                              |                                                         Максималната температура |     {{80 °F/h; 44 °C/h}} |  {{108 °F/h; 60 °C/h}} |
-| Време за нагряване, празна пещ |                                                                                  | Около 13 часа или повече |      Около 10–11½ часа |
+| Segment                  |                                                           Climb to |            Slow Bisque |            Fast Bisque |
+| ------------------------ | -----------------------------------------------------------------: | ---------------------: | ---------------------: |
+| 1                        |                                                 {{250 °F; 121 °C}} |   {{80 °F/h; 44 °C/h}} |  {{120 °F/h; 67 °C/h}} |
+| 2                        |                                                {{1000 °F; 538 °C}} | {{200 °F/h; 111 °C/h}} | {{300 °F/h; 167 °C/h}} |
+| 3                        |                                                {{1100 °F; 593 °C}} |  {{100 °F/h; 56 °C/h}} |  {{150 °F/h; 83 °C/h}} |
+| 4                        | {{250 °F; 139 °C}} below the peak: {{1676 °F; 913 °C}} for cone 04 | {{180 °F/h; 100 °C/h}} | {{180 °F/h; 100 °C/h}} |
+| 5                        |                                                           The peak |   {{80 °F/h; 44 °C/h}} |  {{108 °F/h; 60 °C/h}} |
+| Heating time, empty kiln |                                                                    | About 13 hours or more |     About 10–11½ hours |
 
-Времената на L&L са „за възможно най-бързите празни пещи“; заредена пещ може да изисква до четири пъти повече време, а всяко задържане, което добавите, е допълнително топлинно въздействие{{en: heatwork}}, което готовите програми не отчитат. За големи или влажни изделия L&L съветва Slow Bisque с подсушаване от 2–3 часа или повече и предупреждава срещу бързото изпичане, което „може да причини дефекти като иглен бод{{en: pinholing}}, пукнатини и непълно изгаряне на органичните вещества“.
+L&L's times are "for the fastest possible empty kilns"; a loaded kiln can take as much as four times longer, and any hold you add is extra heatwork the presets do not allow for. L&L advises Slow Bisque, with a preheat of 2–3 hours or longer, for large or damp pieces, and warns against fast firing, which "can cause defects like pinholes, cracking, and insufficient burnout".
 
-Table: Програма за бисквит BQ1000 на Digitalfire, до около конус 06
+Table: Digitalfire BQ1000 bisque, to about cone 06
 Label: Digitalfire BQ1000
 
-| Стъпка |                Скорост |   Целева температура | Задържане                                |
-| ------ | ---------------------: | -------------------: | ---------------------------------------- |
-| 1      | {{306 °F/h; 170 °C/h}} |   {{248 °F; 120 °C}} | 60 минути; до 10 часа за масивни изделия |
-| 2      | {{306 °F/h; 170 °C/h}} |  {{1733 °F; 945 °C}} | Няма                                     |
-| 3      |  {{108 °F/h; 60 °C/h}} | {{1832 °F; 1000 °C}} | 15 минути                                |
+| Step |                   Rate |               Target | Hold                                      |
+| ---- | ---------------------: | -------------------: | ----------------------------------------- |
+| 1    | {{306 °F/h; 170 °C/h}} |   {{248 °F; 120 °C}} | 60 minutes; up to 10 hours for heavy ware |
+| 2    | {{306 °F/h; 170 °C/h}} |  {{1733 °F; 945 °C}} | None                                      |
+| 3    |  {{108 °F/h; 60 °C/h}} | {{1832 °F; 1000 °C}} | 15 minutes                                |
 
-Програмата BQ1000 трае около 7 часа и 44 минути. Авторът ѝ смята, че до {{500 °F/h; 278 °C/h}} е допустимо за тънки, сухи изделия, и забавя последната стъпка, за да изравни температурата сред всички заредени изделия.
+BQ1000 takes about 7 hours 44 minutes. Its author finds up to {{500 °F/h; 278 °C/h}} fine for thin, dry ware, and slows the last step to even out the temperature through the load.
 
-### Конусите на контролера и таблицата на Orton
+### Controller cones and Orton's chart
 
-Контролерите на L&L и Bartlett използват {{1926 °F; 1052 °C}} за конус 04 и {{1819 °F; 993 °C}} за конус 06, малко под стойностите на Orton {{1945 °F; 1063 °C}} и {{1828 °F; 998 °C}}; при конус 6 и конус 10 съвпадат. Контролните конуси{{en: witness cones}} решават въпроса: ако не съвпадат с контролера, нагласете го чрез корекцията на конуса.
+L&L and Bartlett controllers use {{1926 °F; 1052 °C}} for cone 04 and {{1819 °F; 993 °C}} for cone 06, a little below Orton's {{1945 °F; 1063 °C}} and {{1828 °F; 998 °C}}; they agree at cone 6 and cone 10. Witness cones settle the difference: if they disagree with the controller, correct it with the cone offset.
 
-### В пещ с ръчно управление
+### On a manual kiln
 
-Пещта с ръчно управление следва същия план, но на ръка: сушете бавно с открехнат капак и отворени наблюдателни отвори, превключвайте стъпка по стъпка от Low (ниско) на Medium (средно) и на High (високо) и оставете Kiln-Sitter да приключи изпичането. Публикуваните процедури са в „Пещи с ръчно управление в подробности“ по-долу.
+A manual kiln follows the same plan by hand: dry slowly with the lid propped and the peepholes open, step the switches up from Low to Medium to High, and let the sitter end the firing. The published procedures are under Manual kilns in detail, below.
 
 ## Глазурно изпичане {#glaze}
 

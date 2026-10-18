@@ -90,8 +90,7 @@
     "advice": "Käytännön vinkkejä lasitteen sekoittamiseen, lasittamiseen ja polttamiseen Glazecalcilta sekä omat neuvot. Ilmainen keraamikoille ja savenvalajille.",
     "about": "Glazecalc on ilmainen, avoimen lähdekoodin lasitekemian laskin ja muistikirja. Katso, miten se laskee Segerin kaavan (UMF) ja miten se on rakennettu.",
     "privacy": "Miten Glazecalc käsittelee tietoja: ei mainoksia, ei analytiikkaa eikä seurantaa, eikä mitään myydä. Mitä säilytetään, miksi ja miten oikeuksia käytetään.",
-    "signup": "Luo ilmainen Glazecalc-tili ja säilytä lasitereseptit, raaka-aineet, muistiinpanot ja polttopäiväkirjat. Ei mainoksia, eikä tietoja koskaan myydä.",
-    "imageAlt": "Glazecalc: ymmärrä lasitteita, älä vain sekoita niitä."
+    "signup": "Luo ilmainen Glazecalc-tili ja säilytä lasitereseptit, raaka-aineet, muistiinpanot ja polttopäiväkirjat. Ei mainoksia, eikä tietoja koskaan myydä."
   },
   "notices": {
     "dismiss": "Sulje",
@@ -286,7 +285,6 @@
     "close": "Sulje"
   },
   "unity": {
-    "fluxes": "Sulattajat – RO",
     "stabilizers": "Tasapainottajat – R₂O₃",
     "glassFormers": "Lasinmuodostajat – RO₂",
     "wildcards": "Muut oksidit",

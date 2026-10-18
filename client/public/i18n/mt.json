@@ -90,8 +90,7 @@
     "advice": "Suġġerimenti prattiċi dwar it-taħlit, it-tqegħid tal-glejż u l-ħami, minn Glazecalc, u l-pariri tiegħek. B’xejn għall-fuħħarin u għal min jaħdem iċ-ċeramika.",
     "about": "Glazecalc huwa kalkulatur tal-kimika tal-glejż u pitazz, b’xejn u b’sors miftuħ. Ara kif jikkalkula l-formula ta’ Seger (UMF) u kif inhu mibni.",
     "privacy": "Kif Glazecalc jittratta d-data tiegħek: l-ebda reklam, analitika jew traċċar, u xejn ma jinbiegħ. X’jinżamm, għaliex, u kif tuża d-drittijiet tiegħek.",
-    "signup": "Oħloq kont Glazecalc b’xejn biex iżżomm ir-riċetti tal-glejż, il-materjali, in-noti u r-reġistri tal-ħami tiegħek. Bla reklam; id-data tiegħek qatt ma tinbiegħ.",
-    "imageAlt": "Glazecalc: ifhem il-glejżijiet tiegħek, mhux biss tħallathom."
+    "signup": "Oħloq kont Glazecalc b’xejn biex iżżomm ir-riċetti tal-glejż, il-materjali, in-noti u r-reġistri tal-ħami tiegħek. Bla reklam; id-data tiegħek qatt ma tinbiegħ."
   },
   "notices": {
     "dismiss": "Agħlaq",
@@ -286,7 +285,6 @@
     "close": "Agħlaq"
   },
   "unity": {
-    "fluxes": "Flussi – RO",
     "stabilizers": "Stabilizzaturi – R₂O₃",
     "glassFormers": "Formaturi tal-ħġieġ – RO₂",
     "wildcards": "Ossidi oħra",

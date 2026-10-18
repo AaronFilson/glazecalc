@@ -30,34 +30,34 @@ lead: Какво да направите, ако дете или домашен 
 
 Ако отидете в болница, NHS казва да вземете опаковката или проба, ако това е безопасно. За суровина за глазури това означава етикета на торбата или информационния лист за безопасност.
 
-## Кое е най-опасно при поглъщане {#most-dangerous}
+## What is most dangerous to swallow {#most-dangerous lang=en}
 
-Суровините за глазури могат да навредят на семейството по два различни начина:
+Glaze materials can harm a family in two different ways:
 
-- **Острата** опасност (вреда от една доза, в рамките на часове) е поглъщането на **разтворима** суровина, такава, която се разтваря във вода или в стомашната киселина. Срещу нея помагат заключеното съхранение и номерата по-горе.
-- **Хроничната** опасност (вреда от много малки дози) е прахът, главно от силициев диоксид{{en: silica}} и олово, който отначало не предизвиква симптоми и се пренася в дома по дрехите. Срещу нея помагат навиците за чистота.
+- The **acute** danger (harm from one dose, within hours) is swallowing a **soluble** material, one that dissolves in water or stomach acid. Locked storage and the numbers above deal with it.
+- The **chronic** danger (harm from many small doses) is dust, mainly silica and lead, which causes no symptoms at first and travels home on clothes. Clean habits deal with it.
 
-По-голямата част от една глазура{{en: glaze}} е кварц, каолин{{en: kaolin}} и фелдшпат{{en: feldspar}}, които почти не се разтварят. Смятаме ги за дългосрочна опасност при вдишване, а не за спешен случай при поглъщане. Разтворимите суровини по-долу са тези, които да заключите на първо място.
+Most of a glaze is silica, kaolin and feldspar, which barely dissolve. We treat them as a long-term breathing hazard rather than a swallowing emergency. The soluble materials below are the ones to lock away first.
 
-Table: Разтворими суровини за глазури: какво причиняват при поглъщане
-Label: Разтворими суровини
+Table: Soluble glaze materials: what they do if swallowed
+Label: Soluble materials
 
-| Суровина                            | Какво причинява                                                                                                                                                                                                                                                                                                                                                                       | Посочени дози                                                                                                                                                                                                                                                                                                                                                                 |
-| ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Бариев карбонат                     | Някога продаван като отрова за плъхове. Почти не се разтваря във вода, но се разтваря в киселина, затова го смятайте за разтворим, щом бъде погълнат. Барият понижава калия в кръвта и причинява повръщане, диария и мускулна слабост, която може да прерасне в парализа, дихателна недостатъчност и неравномерен сърдечен ритъм. Симптомите обикновено започват в рамките на 2 часа. | Източниците се разминават. Медицински обзор от 2025 г. съобщава за смъртни случаи от бариев хлорид, разтворима бариева сол, при дози от едва 0,8 до 0,9 g. Справочник по спешна медицина посочва смъртоносен диапазон от 1 до 30 g за бариевите соли, като вреда е възможна от около 200 mg. Никой от тях не дава стойност за деца, затова се обаждайте при всяко количество. |
-| Боракс и борна киселина             | Първо се появяват гадене, повръщане, диария и болки в корема; повърнатото и изпражненията може да са синьо-зелени. При тежките случаи има яркочервен обрив, който по-късно се лющи, гърчове, увреждане на бъбреците и шок.                                                                                                                                                            | Приблизителни най-ниски смъртоносни дози: от 2 до 3 g за кърмаче, от 5 до 6 g за дете. В един обзор на 784 случая на поглъщане само 12% са предизвикали симптоми и нито един не е завършил със смърт, но смъртни случаи все пак има, а антидот няма.                                                                                                                          |
-| Литиев карбонат                     | Дете с тегло 15 kg (33 lb), погълнало 300 mg, е имало кратък пристъп на неволеви мускулни спазми и засилени рефлекси (остра дистония и хиперрефлексия), който е отминал.                                                                                                                                                                                                              | За малки деца е писано малко. 300 mg е много по-малко от една лъжица прах.                                                                                                                                                                                                                                                                                                    |
-| Калцинирана сода (натриев карбонат) | Разтваря се лесно във вода. Не открихме надеждни данни за това какво причинява на дете.                                                                                                                                                                                                                                                                                               | Не са открити. Обаждайте се при всяко количество.                                                                                                                                                                                                                                                                                                                             |
-| Калиев дихромат                     | Хромов оцветител{{en: colorant}}, използван в някои рецепти. Информационният му лист за безопасност предупреждава, че „Може да бъде смъртоносен при поглъщане“, причинява изгаряния в храносмилателния тракт и може да увреди бъбреците.                                                                                                                                              | Не са установени, а информационните листове за безопасност се разминават за това колко е токсичен.                                                                                                                                                                                                                                                                            |
+| Material                    | What it does                                                                                                                                                                                                                                                                                                                                 | Reported doses                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Barium carbonate            | Once sold as rat poison. It barely dissolves in water but does dissolve in acid, so treat it as soluble once swallowed. Barium drives down the potassium in the blood, causing vomiting, diarrhea and muscle weakness that can progress to paralysis, breathing failure and an irregular heartbeat. Symptoms typically begin within 2 hours. | Sources disagree. A WHO review estimates the lethal dose of barium absorbed from the gut at 3 to 4 g in untreated cases, with toxic effects from 0.2 to 0.5 g, and lists a lowest reported lethal dose of barium chloride, a soluble barium salt, of 11.4 mg per kg of body weight. An emergency-medicine reference gives a lethal range of 1 to 30 g for barium salts, with harm possibly from about 200 mg. None gives a figure for children, so call for any amount. |
+| Borax and boric acid        | Nausea, vomiting, diarrhea and stomach pain come first; vomit and stool may be blue-green. Severe cases bring a bright red rash that later peels, seizures, kidney injury and shock.                                                                                                                                                         | Rough lowest lethal doses: 2 to 3 g for an infant, 5 to 6 g for a child. In one review of 784 swallowings, only 12% caused symptoms and none were fatal, but deaths do happen, and there is no antidote.                                                                                                                                                                                                                                                                |
+| Lithium carbonate           | A child weighing 15 kg (33 lb) who swallowed 300 mg had a short spell of involuntary muscle spasms and overactive reflexes (acute dystonia and hyperreflexia), which passed.                                                                                                                                                                 | Little has been written about young children. 300 mg is far less than a spoonful of powder.                                                                                                                                                                                                                                                                                                                                                                             |
+| Soda ash (sodium carbonate) | Dissolves readily in water. We found no reliable figures for what it does to a child.                                                                                                                                                                                                                                                        | None found. Call for any amount.                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| Potassium dichromate        | A chrome colorant used in some recipes. Fisher Scientific's safety data sheet warns that it "May be fatal if swallowed", causes burns in the gut and may damage the kidneys. The same sheet warns that it "May be fatal if inhaled" and may cause cancer, and of a "possible risk of harm to the unborn child".                              | Not established, and safety data sheets disagree on how toxic it is.                                                                                                                                                                                                                                                                                                                                                                                                    |
 
 > [!NOTE]
-> Тези вредни количества са от няколкостотин милиграма до няколко грама. Суровините за глазури се продават на фунтове или килограми, така че една отворена торба или кофа съдържа много повече от достатъчното, за да навреди на малко дете.
+> These harmful amounts run from a few hundred milligrams to a few grams. Glaze materials are sold by the pound or kilogram, so one open bag or bucket holds far more than enough to harm a toddler.
 
-### Оцветители и олово
+### Colorants and lead
 
-**Оцветителите**{{en: colorants}} са металните оксиди и керамичните пигменти{{en: stains}}, които дават цвета на глазурата: мед, кобалт, хром, манган, никел, кадмиево-селенови пигменти и други. Страница за безопасността в керамиката на един университет посочва оловото, кадмия, кобалта и хрома сред особено опасните съставки на глазурите. Не открихме надеждни данни за дозите на нито един оцветител, затова се обаждайте при всяко количество. Кофа с приготвена глазура съдържа същите суровини като торбите, от които е направена, само че мокри.
+**Colorants** are the metal oxides and stains that give a glaze its color: copper, cobalt, chrome, manganese, nickel, cadmium-selenium stains and others. A university ceramics safety page names lead, cadmium, cobalt and chromium among the especially hazardous glaze ingredients. We found no reliable dose figures for any colorant, so call for any amount. A bucket of mixed glaze holds the same materials as the bags it came from, only wet.
 
-Главната опасност от оловото е друга: не една лъжица, а малки количества прах, поглъщани седмици или месеци, без предупредителни признаци (вижте „Олово и деца“ по-долу).
+Lead's main danger is different: not one spoonful, but small amounts of dust swallowed over weeks or months, with no warning signs (see Lead and children, below).
 
 ## Съхранение на суровините у дома {#storing-materials}
 
@@ -220,41 +220,43 @@ Rio Grande препоръчва **отделна електрическа вер
 
 Повече за това как се стапят глазурите, защо някои отделят метали и какво означават границите, вижте в наръчника [Глазиране от основните принципи](/guides/glazing-basics).
 
-## Източници {#sources}
+## Sources {#sources lang=en}
 
 - [America's Poison Centers: Poison Help](https://poisoncenters.org/)
 - [Poison Control (poison.org): webPOISONCONTROL](https://www.poison.org/)
 - [NHS: Poisoning](https://www.nhs.uk/conditions/poisoning/)
-- [National Poisons Information Service (Обединеното кралство)](https://www.npis.org/)
+- [National Poisons Information Service (UK)](https://www.npis.org/)
 - [National Poisons Information Centre of Ireland: Public Poisons Line](https://www.poisons.ie/)
 - [European Commission: 112, the European emergency number](https://digital-strategy.ec.europa.eu/en/policies/112)
 - [healthdirect: Poisoning](https://www.healthdirect.gov.au/poisoning)
-- [National Poisons Centre (Нова Зеландия)](https://www.poisons.co.nz/)
+- [National Poisons Centre (New Zealand)](https://www.poisons.co.nz/)
 - [ASPCA: Animal Poison Control](https://www.aspca.org/pet-care/animal-poison-control)
 - [Pet Poison Helpline](https://www.petpoisonhelpline.com/)
-- [Animal PoisonLine (Обединеното кралство)](https://www.animalpoisonline.co.uk/)
-- [Animal Poisons Helpline (Австралия и Нова Зеландия)](https://animalpoisons.com.au/)
-- [PubMed Central: Acute soluble barium poisoning, a review (2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC11700400)
+- [Animal PoisonLine (UK)](https://www.animalpoisonline.co.uk/)
+- [Animal Poisons Helpline (Australia and New Zealand)](https://animalpoisons.com.au/)
+- [PubMed Central: Non-fatal acute barium carbonate poisoning, a case report (2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC11700400)
+- [WHO IPCS: Environmental Health Criteria 107, Barium (1990)](https://www.inchem.org/documents/ehc/ehc/ehc107.htm)
+- [Fisher Scientific: Potassium dichromate safety data sheet (2007)](https://fscimage.fishersci.com/msds/19370.htm)
 - [WikEM: Boron toxicity](https://wikem.org/wiki/Boron_toxicity)
-- [NPIC и US EPA: Recognition and Management of Pesticide Poisonings, глава 9 (PDF)](https://www.npic.orst.edu/RMPP/rmpp_ch9.pdf)
+- [NPIC and US EPA: Recognition and Management of Pesticide Poisonings, chapter 9 (PDF)](https://www.npic.orst.edu/RMPP/rmpp_ch9.pdf)
 - [medlibrary.org: Lithium carbonate prescribing information](https://medlibrary.org/lib/rx/meds/lithium-carbonate-16/page/2/)
 - [CDC: About Lead in Jobs, Hobbies, or Other Activities](https://cdc.gov/lead-prevention/prevention/jobs-hobbies-activities.html)
 - [CDC: Blood Lead Reference Value](https://www.cdc.gov/nceh/lead/data/blood-lead-reference-value.htm)
-- [US EPA: брошура за здравето на децата (2018, PDF)](https://19january2021snapshot.epa.gov/sites/static/files/2018-10/documents/childrenshealthbooklet2018_final-4_newlinks.pdf)
+- [US EPA: Children's health booklet (2018, PDF)](https://19january2021snapshot.epa.gov/sites/static/files/2018-10/documents/childrenshealthbooklet2018_final-4_newlinks.pdf)
 - [Pennsylvania Department of Health: Non-Occupational Lead Exposure (PDF)](https://www.health.pa.gov:443/topics/Documents/Environmental%20Health/Non-Occupational%20Lead%20Exposure.pdf)
 - [Western Carolina University: Ceramics Safety](https://www.wcu.edu/discover/campus-services-and-operations/facilities-management/safety-and-risk-management/visual-arts-theatre-safety/ceramics-safety.aspx)
-- [Crafts Council (Обединеното кралство): How to make your pottery practice greener](https://craftscouncil.org.uk/stories/how-make-your-pottery-practice-greener)
+- [Crafts Council (UK): How to make your pottery practice greener](https://craftscouncil.org.uk/stories/how-make-your-pottery-practice-greener)
 - [Pet Poison Helpline: Lead](https://www.petpoisonhelpline.com/poison/lead/)
 - [Vet Candy: Sparkler ingestion results in barium toxicity](https://www.myvetcandy.com/clinicalupdblog/2019/3/15/sparkler-ingestion-results-in-barium-toxicity)
 - [University of Illinois College of Veterinary Medicine: Bird toxins](https://vetmed.illinois.edu/pet-health-columns/bird-toxins-teflon-avocado-lead-zinc/)
 - [Skutt: Designing a Kiln Room (PDF)](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Designing-A-Kiln-Room-1.pdf)
-- [Kiln Management, наръчник за училища (PDF)](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Kiln-Management-1.pdf)
+- [Kiln Management guide for schools (PDF)](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Kiln-Management-1.pdf)
 - [L&L Kiln: Front-loader installation checklist (PDF)](https://www.theceramicshop.com/downloads/LLFLChecklist.pdf)
 - [Rio Grande: PMC Kilns Handbook (PDF)](https://products.riogrande.com/content/Instruction-Sheets/RioGrande-PMC-Kilns-Handbook-IS.pdf)
-- [Dawson: ръководство за експлоатация на Kiln-Sitter LT-3 (PDF)](https://oud.klei.nl/forum/bestanden/f675ae4a-d890-4b8b-a08e-173e652f25a6/KilnSitter%20lt3%20en%20lt3k.pdf)
+- [Dawson: Kiln-Sitter LT-3 manual (PDF)](https://oud.klei.nl/forum/bestanden/f675ae4a-d890-4b8b-a08e-173e652f25a6/KilnSitter%20lt3%20en%20lt3k.pdf)
 - [Ceramic Arts Network: In the Studio, Eye Health for Potters](https://ceramicartsnetwork.org/pottery-making-illustrated/pottery-making-illustrated-article/In-the-Studio-Eye-Health-for-Potters)
 - [FDA: Questions and Answers on Lead-Glazed Traditional Pottery](https://www.fda.gov/food/environmental-contaminants-food/questions-and-answers-lead-glazed-traditional-pottery)
-- [FDA: Compliance Policy Guide 545.450, олово в керамиката (PDF)](https://www.fda.gov/media/71764/download)
+- [FDA: Compliance Policy Guide 545.450, lead in pottery (PDF)](https://www.fda.gov/media/71764/download)
 - [Digitalfire: Food Safe](https://digitalfire.com/glossary/food+safe)
 - [Ceramics NZ: Is it food safe?](https://ceramicsnz.org/news/is-it-food-safe/)
 - [Ceramic Arts Network: Techno File, Dirty Dishes](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/Techno-File-Dirty-Dishes)

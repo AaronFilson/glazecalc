@@ -30,34 +30,34 @@ Proponujemy jeszcze dziś zapisać numery dla swojego regionu w telefonie, a tak
 
 Jeśli trzeba jechać do szpitala, według NHS należy zabrać opakowanie lub próbkę, o ile można to zrobić bezpiecznie. W przypadku surowca do szkliw oznacza to etykietę z worka lub kartę charakterystyki.
 
-## Co jest najgroźniejsze po połknięciu {#most-dangerous}
+## What is most dangerous to swallow {#most-dangerous lang=en}
 
-Surowce do szkliw{{en: glaze materials}} mogą zaszkodzić rodzinie na dwa różne sposoby:
+Glaze materials can harm a family in two different ways:
 
-- Zagrożenie **ostre** (szkodliwe działanie jednej dawki, w ciągu godzin) to połknięcie surowca **rozpuszczalnego**, czyli takiego, który rozpuszcza się w wodzie lub w kwasie żołądkowym. Odpowiedzią na nie są przechowywanie pod kluczem i numery podane wyżej.
-- Zagrożenie **przewlekłe** (szkodliwe działanie wielu małych dawek) to pył, głównie krzemionki{{en: silica}} i ołowiu, który początkowo nie daje żadnych objawów i przenosi się na ubraniu do domu. Odpowiedzią na nie są nawyki utrzymywania czystości.
+- The **acute** danger (harm from one dose, within hours) is swallowing a **soluble** material, one that dissolves in water or stomach acid. Locked storage and the numbers above deal with it.
+- The **chronic** danger (harm from many small doses) is dust, mainly silica and lead, which causes no symptoms at first and travels home on clothes. Clean habits deal with it.
 
-Szkliwo składa się głównie z krzemionki, kaolinu i skalenia{{en: feldspar}}, które prawie się nie rozpuszczają. Traktujemy je jako długotrwałe zagrożenie przy wdychaniu, a nie jako nagły przypadek przy połknięciu. Rozpuszczalne surowce wymienione niżej należy zamknąć na klucz w pierwszej kolejności.
+Most of a glaze is silica, kaolin and feldspar, which barely dissolve. We treat them as a long-term breathing hazard rather than a swallowing emergency. The soluble materials below are the ones to lock away first.
 
-Table: Rozpuszczalne surowce do szkliw: działanie po połknięciu
-Label: Surowce rozpuszczalne
+Table: Soluble glaze materials: what they do if swallowed
+Label: Soluble materials
 
-| Surowiec                       | Działanie                                                                                                                                                                                                                                                                                                                                                                                                        | Opisane dawki                                                                                                                                                                                                                                                                                                                                                                           |
-| ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Węglan baru                    | Dawniej sprzedawany jako trutka na szczury. Prawie nie rozpuszcza się w wodzie, ale rozpuszcza się w kwasie, dlatego po połknięciu należy traktować go jak surowiec rozpuszczalny. Bar obniża poziom potasu we krwi, wywołując wymioty, biegunkę i osłabienie mięśni, które może postępować aż do paraliżu, niewydolności oddechowej i nieregularnego bicia serca. Objawy zwykle pojawiają się w ciągu 2 godzin. | Źródła się różnią. Przegląd medyczny z 2025 roku opisuje zgony po chlorku baru, rozpuszczalnej soli baru, przy dawkach już od 0,8–0,9 g. Kompendium medycyny ratunkowej podaje dla soli baru zakres dawek śmiertelnych 1–30 g, przy czym szkodliwe działanie jest możliwe od około 200 mg. Żadne z nich nie podaje wartości dla dzieci, dlatego należy zadzwonić niezależnie od ilości. |
-| Boraks i kwas borowy           | Najpierw pojawiają się nudności, wymioty, biegunka i ból brzucha; wymiociny i stolec mogą być niebiesko-zielone. W ciężkich przypadkach dochodzi do jaskrawoczerwonej wysypki, która później się łuszczy, drgawek, uszkodzenia nerek i wstrząsu.                                                                                                                                                                 | Najniższe dawki śmiertelne, w przybliżeniu: 2–3 g dla niemowlęcia, 5–6 g dla dziecka. W jednym przeglądzie 784 przypadków połknięcia tylko 12 % wywołało objawy i żaden nie zakończył się zgonem, ale zgony się zdarzają, a odtrutki nie ma.                                                                                                                                            |
-| Węglan litu                    | U dziecka ważącego 15 kg (33 lb), które połknęło 300 mg, wystąpiły krótkotrwałe mimowolne skurcze mięśni i wzmożone odruchy (ostra dystonia i hiperrefleksja), które ustąpiły.                                                                                                                                                                                                                                   | O małych dzieciach napisano niewiele. 300 mg to znacznie mniej niż łyżka proszku.                                                                                                                                                                                                                                                                                                       |
-| Soda kalcynowana (węglan sodu) | Łatwo rozpuszcza się w wodzie. Nie znaleźliśmy wiarygodnych danych o tym, jak działa na dziecko.                                                                                                                                                                                                                                                                                                                 | Nie znaleziono. Należy zadzwonić niezależnie od ilości.                                                                                                                                                                                                                                                                                                                                 |
-| Dichromian potasu              | Barwnik{{en: colorant}} zawierający chrom, używany w niektórych recepturach. Jego karta charakterystyki ostrzega, że „połknięcie może grozić śmiercią”, że powoduje oparzenia przewodu pokarmowego i może uszkodzić nerki.                                                                                                                                                                                       | Nieustalone, a karty charakterystyki różnią się w ocenie tego, jak bardzo jest toksyczny.                                                                                                                                                                                                                                                                                               |
+| Material                    | What it does                                                                                                                                                                                                                                                                                                                                 | Reported doses                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Barium carbonate            | Once sold as rat poison. It barely dissolves in water but does dissolve in acid, so treat it as soluble once swallowed. Barium drives down the potassium in the blood, causing vomiting, diarrhea and muscle weakness that can progress to paralysis, breathing failure and an irregular heartbeat. Symptoms typically begin within 2 hours. | Sources disagree. A WHO review estimates the lethal dose of barium absorbed from the gut at 3 to 4 g in untreated cases, with toxic effects from 0.2 to 0.5 g, and lists a lowest reported lethal dose of barium chloride, a soluble barium salt, of 11.4 mg per kg of body weight. An emergency-medicine reference gives a lethal range of 1 to 30 g for barium salts, with harm possibly from about 200 mg. None gives a figure for children, so call for any amount. |
+| Borax and boric acid        | Nausea, vomiting, diarrhea and stomach pain come first; vomit and stool may be blue-green. Severe cases bring a bright red rash that later peels, seizures, kidney injury and shock.                                                                                                                                                         | Rough lowest lethal doses: 2 to 3 g for an infant, 5 to 6 g for a child. In one review of 784 swallowings, only 12% caused symptoms and none were fatal, but deaths do happen, and there is no antidote.                                                                                                                                                                                                                                                                |
+| Lithium carbonate           | A child weighing 15 kg (33 lb) who swallowed 300 mg had a short spell of involuntary muscle spasms and overactive reflexes (acute dystonia and hyperreflexia), which passed.                                                                                                                                                                 | Little has been written about young children. 300 mg is far less than a spoonful of powder.                                                                                                                                                                                                                                                                                                                                                                             |
+| Soda ash (sodium carbonate) | Dissolves readily in water. We found no reliable figures for what it does to a child.                                                                                                                                                                                                                                                        | None found. Call for any amount.                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| Potassium dichromate        | A chrome colorant used in some recipes. Fisher Scientific's safety data sheet warns that it "May be fatal if swallowed", causes burns in the gut and may damage the kidneys. The same sheet warns that it "May be fatal if inhaled" and may cause cancer, and of a "possible risk of harm to the unborn child".                              | Not established, and safety data sheets disagree on how toxic it is.                                                                                                                                                                                                                                                                                                                                                                                                    |
 
 > [!NOTE]
-> Te szkodliwe ilości wynoszą od kilkuset miligramów do kilku gramów. Surowce do szkliw sprzedaje się na funty lub kilogramy, więc jeden otwarty worek czy wiadro zawiera o wiele więcej, niż wystarczy, by zaszkodzić małemu dziecku.
+> These harmful amounts run from a few hundred milligrams to a few grams. Glaze materials are sold by the pound or kilogram, so one open bag or bucket holds far more than enough to harm a toddler.
 
-### Barwniki i ołów
+### Colorants and lead
 
-**Barwniki** to tlenki metali i pigmenty{{en: stains}}, które nadają szkliwu kolor: miedź, kobalt, chrom, mangan, nikiel, pigmenty kadmowo-selenowe i inne. Strona pewnego uniwersytetu poświęcona bezpieczeństwu w ceramice wymienia ołów, kadm, kobalt i chrom wśród szczególnie niebezpiecznych składników szkliw. Nie znaleźliśmy wiarygodnych danych o dawkach dla żadnego barwnika, dlatego należy zadzwonić niezależnie od ilości. Wiadro rozrobionego szkliwa zawiera te same surowce co worki, z których powstało, tylko mokre.
+**Colorants** are the metal oxides and stains that give a glaze its color: copper, cobalt, chrome, manganese, nickel, cadmium-selenium stains and others. A university ceramics safety page names lead, cadmium, cobalt and chromium among the especially hazardous glaze ingredients. We found no reliable dose figures for any colorant, so call for any amount. A bucket of mixed glaze holds the same materials as the bags it came from, only wet.
 
-Główne zagrożenie ze strony ołowiu jest inne: nie jedna łyżka, lecz małe ilości pyłu połykane przez tygodnie lub miesiące, bez żadnych sygnałów ostrzegawczych (zob. niżej: Ołów a dzieci).
+Lead's main danger is different: not one spoonful, but small amounts of dust swallowed over weeks or months, with no warning signs (see Lead and children, below).
 
 ## Przechowywanie surowców w domu {#storing-materials}
 
@@ -220,41 +220,43 @@ Testy domowe budzą spory. Według FDA domowe testy wymazowe mogą wykazać wymy
 
 Więcej o tym, jak topią się szkliwa, dlaczego niektóre uwalniają metale i co oznaczają limity – w poradniku [Szkliwienie od podstaw](/guides/glazing-basics).
 
-## Źródła {#sources}
+## Sources {#sources lang=en}
 
 - [America's Poison Centers: Poison Help](https://poisoncenters.org/)
 - [Poison Control (poison.org): webPOISONCONTROL](https://www.poison.org/)
 - [NHS: Poisoning](https://www.nhs.uk/conditions/poisoning/)
-- [National Poisons Information Service (Wielka Brytania)](https://www.npis.org/)
+- [National Poisons Information Service (UK)](https://www.npis.org/)
 - [National Poisons Information Centre of Ireland: Public Poisons Line](https://www.poisons.ie/)
 - [European Commission: 112, the European emergency number](https://digital-strategy.ec.europa.eu/en/policies/112)
 - [healthdirect: Poisoning](https://www.healthdirect.gov.au/poisoning)
-- [National Poisons Centre (Nowa Zelandia)](https://www.poisons.co.nz/)
+- [National Poisons Centre (New Zealand)](https://www.poisons.co.nz/)
 - [ASPCA: Animal Poison Control](https://www.aspca.org/pet-care/animal-poison-control)
 - [Pet Poison Helpline](https://www.petpoisonhelpline.com/)
-- [Animal PoisonLine (Wielka Brytania)](https://www.animalpoisonline.co.uk/)
-- [Animal Poisons Helpline (Australia i Nowa Zelandia)](https://animalpoisons.com.au/)
-- [PubMed Central: Acute soluble barium poisoning, a review (2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC11700400)
+- [Animal PoisonLine (UK)](https://www.animalpoisonline.co.uk/)
+- [Animal Poisons Helpline (Australia and New Zealand)](https://animalpoisons.com.au/)
+- [PubMed Central: Non-fatal acute barium carbonate poisoning, a case report (2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC11700400)
+- [WHO IPCS: Environmental Health Criteria 107, Barium (1990)](https://www.inchem.org/documents/ehc/ehc/ehc107.htm)
+- [Fisher Scientific: Potassium dichromate safety data sheet (2007)](https://fscimage.fishersci.com/msds/19370.htm)
 - [WikEM: Boron toxicity](https://wikem.org/wiki/Boron_toxicity)
-- [NPIC i US EPA: Recognition and Management of Pesticide Poisonings, rozdział 9 (PDF)](https://www.npic.orst.edu/RMPP/rmpp_ch9.pdf)
+- [NPIC and US EPA: Recognition and Management of Pesticide Poisonings, chapter 9 (PDF)](https://www.npic.orst.edu/RMPP/rmpp_ch9.pdf)
 - [medlibrary.org: Lithium carbonate prescribing information](https://medlibrary.org/lib/rx/meds/lithium-carbonate-16/page/2/)
 - [CDC: About Lead in Jobs, Hobbies, or Other Activities](https://cdc.gov/lead-prevention/prevention/jobs-hobbies-activities.html)
 - [CDC: Blood Lead Reference Value](https://www.cdc.gov/nceh/lead/data/blood-lead-reference-value.htm)
-- [US EPA: broszura o zdrowiu dzieci (2018, PDF)](https://19january2021snapshot.epa.gov/sites/static/files/2018-10/documents/childrenshealthbooklet2018_final-4_newlinks.pdf)
+- [US EPA: Children's health booklet (2018, PDF)](https://19january2021snapshot.epa.gov/sites/static/files/2018-10/documents/childrenshealthbooklet2018_final-4_newlinks.pdf)
 - [Pennsylvania Department of Health: Non-Occupational Lead Exposure (PDF)](https://www.health.pa.gov:443/topics/Documents/Environmental%20Health/Non-Occupational%20Lead%20Exposure.pdf)
 - [Western Carolina University: Ceramics Safety](https://www.wcu.edu/discover/campus-services-and-operations/facilities-management/safety-and-risk-management/visual-arts-theatre-safety/ceramics-safety.aspx)
-- [Crafts Council (Wielka Brytania): How to make your pottery practice greener](https://craftscouncil.org.uk/stories/how-make-your-pottery-practice-greener)
+- [Crafts Council (UK): How to make your pottery practice greener](https://craftscouncil.org.uk/stories/how-make-your-pottery-practice-greener)
 - [Pet Poison Helpline: Lead](https://www.petpoisonhelpline.com/poison/lead/)
 - [Vet Candy: Sparkler ingestion results in barium toxicity](https://www.myvetcandy.com/clinicalupdblog/2019/3/15/sparkler-ingestion-results-in-barium-toxicity)
 - [University of Illinois College of Veterinary Medicine: Bird toxins](https://vetmed.illinois.edu/pet-health-columns/bird-toxins-teflon-avocado-lead-zinc/)
 - [Skutt: Designing a Kiln Room (PDF)](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Designing-A-Kiln-Room-1.pdf)
-- [Kiln Management, poradnik dla szkół (PDF)](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Kiln-Management-1.pdf)
+- [Kiln Management guide for schools (PDF)](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Kiln-Management-1.pdf)
 - [L&L Kiln: Front-loader installation checklist (PDF)](https://www.theceramicshop.com/downloads/LLFLChecklist.pdf)
 - [Rio Grande: PMC Kilns Handbook (PDF)](https://products.riogrande.com/content/Instruction-Sheets/RioGrande-PMC-Kilns-Handbook-IS.pdf)
-- [Dawson: instrukcja Kiln-Sitter LT-3 (PDF)](https://oud.klei.nl/forum/bestanden/f675ae4a-d890-4b8b-a08e-173e652f25a6/KilnSitter%20lt3%20en%20lt3k.pdf)
+- [Dawson: Kiln-Sitter LT-3 manual (PDF)](https://oud.klei.nl/forum/bestanden/f675ae4a-d890-4b8b-a08e-173e652f25a6/KilnSitter%20lt3%20en%20lt3k.pdf)
 - [Ceramic Arts Network: In the Studio, Eye Health for Potters](https://ceramicartsnetwork.org/pottery-making-illustrated/pottery-making-illustrated-article/In-the-Studio-Eye-Health-for-Potters)
 - [FDA: Questions and Answers on Lead-Glazed Traditional Pottery](https://www.fda.gov/food/environmental-contaminants-food/questions-and-answers-lead-glazed-traditional-pottery)
-- [FDA: Compliance Policy Guide 545.450, ołów w ceramice (PDF)](https://www.fda.gov/media/71764/download)
+- [FDA: Compliance Policy Guide 545.450, lead in pottery (PDF)](https://www.fda.gov/media/71764/download)
 - [Digitalfire: Food Safe](https://digitalfire.com/glossary/food+safe)
 - [Ceramics NZ: Is it food safe?](https://ceramicsnz.org/news/is-it-food-safe/)
 - [Ceramic Arts Network: Techno File, Dirty Dishes](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/Techno-File-Dirty-Dishes)

@@ -30,34 +30,34 @@ Siūlome dar šiandien įsirašyti savo regiono numerius į telefoną ir užraš
 
 Jei vykstate į ligoninę, NHS pataria pasiimti pakuotę arba mėginį, jei tai saugu. Glazūrų žaliavos atveju tai maišo etiketė arba saugos duomenų lapas.
 
-## Ką praryti pavojingiausia {#most-dangerous}
+## What is most dangerous to swallow {#most-dangerous lang=en}
 
-Glazūrų žaliavos{{en: glaze materials}} gali pakenkti šeimai dviem skirtingais būdais:
+Glaze materials can harm a family in two different ways:
 
-- **Ūmus** pavojus (žala nuo vienos dozės, per kelias valandas) – praryti **tirpią** žaliavą, t. y. tokią, kuri tirpsta vandenyje ar skrandžio rūgštyje. Jį suvaldyti padeda užrakinta laikymo vieta ir aukščiau pateikti numeriai.
-- **Lėtinis** pavojus (žala nuo daugybės mažų dozių) – dulkės, daugiausia silicio dioksido{{en: silica}} ir švino, kurios iš pradžių nesukelia jokių simptomų ir ant drabužių patenka į namus. Jį suvaldyti padeda švaros įpročiai.
+- The **acute** danger (harm from one dose, within hours) is swallowing a **soluble** material, one that dissolves in water or stomach acid. Locked storage and the numbers above deal with it.
+- The **chronic** danger (harm from many small doses) is dust, mainly silica and lead, which causes no symptoms at first and travels home on clothes. Clean habits deal with it.
 
-Didžiąją glazūros dalį sudaro kvarcas, kaolinas{{en: kaolin}} ir lauko špatas{{en: feldspar}}, kurie beveik netirpsta. Juos vertiname kaip ilgalaikį pavojų įkvepiant, o ne kaip skubų atvejį prarijus. Pirmiausia užrakinkite toliau išvardytas tirpias žaliavas.
+Most of a glaze is silica, kaolin and feldspar, which barely dissolve. We treat them as a long-term breathing hazard rather than a swallowing emergency. The soluble materials below are the ones to lock away first.
 
-Table: Tirpios glazūrų žaliavos: ką jos sukelia prarijus
-Label: Tirpios žaliavos
+Table: Soluble glaze materials: what they do if swallowed
+Label: Soluble materials
 
-| Žaliava                               | Poveikis                                                                                                                                                                                                                                                                                                                                                    | Aprašytos dozės                                                                                                                                                                                                                                                                                                                                    |
-| ------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Bario karbonatas                      | Kadaise parduotas kaip nuodai žiurkėms. Vandenyje beveik netirpsta, bet tirpsta rūgštyje, todėl prarytą jį laikykite tirpiu. Baris sumažina kalio kiekį kraujyje ir sukelia vėmimą, viduriavimą bei raumenų silpnumą, kuris gali pereiti į paralyžių, kvėpavimo nepakankamumą ir nereguliarų širdies plakimą. Simptomai paprastai prasideda per 2 valandas. | Šaltiniai nesutaria. 2025 m. medicininėje apžvalgoje aprašomos mirtys nuo bario chlorido, tirpios bario druskos, esant vos 0,8–0,9 g dozei. Skubiosios medicinos žinyne nurodoma, kad bario druskų mirtina dozė yra 1–30 g, o pakenkti gali jau maždaug 200 mg. Nė viename šaltinyje nėra skaičių vaikams, todėl skambinkite dėl bet kokio kiekio. |
-| Boraksas ir boro rūgštis              | Pirmiausia pasireiškia pykinimas, vėmimas, viduriavimas ir pilvo skausmas; vėmalai ir išmatos gali būti melsvai žalios. Sunkiais atvejais atsiranda ryškiai raudonas bėrimas, kuris vėliau lupasi, traukuliai, inkstų pažeidimas ir šokas.                                                                                                                  | Apytikslės mažiausios mirtinos dozės: kūdikiui 2–3 g, vaikui 5–6 g. Vienoje 784 prarijimo atvejų apžvalgoje simptomus sukėlė tik 12 % atvejų ir nė vienas nebuvo mirtinas, tačiau mirčių pasitaiko, o priešnuodžio nėra.                                                                                                                           |
-| Ličio karbonatas                      | 15 kg (33 lb) sveriančiam vaikui, prarijusiam 300 mg, trumpam pasireiškė nevalingi raumenų spazmai ir padidėję refleksai (ūmi distonija ir hiperrefleksija), kurie praėjo.                                                                                                                                                                                  | Apie mažus vaikus parašyta nedaug. 300 mg – gerokai mažiau nei šaukštas miltelių.                                                                                                                                                                                                                                                                  |
-| Kalcinuotoji soda (natrio karbonatas) | Lengvai tirpsta vandenyje. Neradome patikimų skaitinių duomenų apie jos poveikį vaikui.                                                                                                                                                                                                                                                                     | Nerasta. Skambinkite dėl bet kokio kiekio.                                                                                                                                                                                                                                                                                                         |
-| Kalio dichromatas                     | Chromo dažiklis{{en: colorant}}, naudojamas kai kuriuose receptuose. Jo saugos duomenų lape įspėjama, kad jis „prarijus gali sukelti mirtį“, nudegina virškinamąjį traktą ir gali pažeisti inkstus.                                                                                                                                                         | Nenustatyta, o saugos duomenų lapuose nurodomas skirtingas jo toksiškumas.                                                                                                                                                                                                                                                                         |
+| Material                    | What it does                                                                                                                                                                                                                                                                                                                                 | Reported doses                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Barium carbonate            | Once sold as rat poison. It barely dissolves in water but does dissolve in acid, so treat it as soluble once swallowed. Barium drives down the potassium in the blood, causing vomiting, diarrhea and muscle weakness that can progress to paralysis, breathing failure and an irregular heartbeat. Symptoms typically begin within 2 hours. | Sources disagree. A WHO review estimates the lethal dose of barium absorbed from the gut at 3 to 4 g in untreated cases, with toxic effects from 0.2 to 0.5 g, and lists a lowest reported lethal dose of barium chloride, a soluble barium salt, of 11.4 mg per kg of body weight. An emergency-medicine reference gives a lethal range of 1 to 30 g for barium salts, with harm possibly from about 200 mg. None gives a figure for children, so call for any amount. |
+| Borax and boric acid        | Nausea, vomiting, diarrhea and stomach pain come first; vomit and stool may be blue-green. Severe cases bring a bright red rash that later peels, seizures, kidney injury and shock.                                                                                                                                                         | Rough lowest lethal doses: 2 to 3 g for an infant, 5 to 6 g for a child. In one review of 784 swallowings, only 12% caused symptoms and none were fatal, but deaths do happen, and there is no antidote.                                                                                                                                                                                                                                                                |
+| Lithium carbonate           | A child weighing 15 kg (33 lb) who swallowed 300 mg had a short spell of involuntary muscle spasms and overactive reflexes (acute dystonia and hyperreflexia), which passed.                                                                                                                                                                 | Little has been written about young children. 300 mg is far less than a spoonful of powder.                                                                                                                                                                                                                                                                                                                                                                             |
+| Soda ash (sodium carbonate) | Dissolves readily in water. We found no reliable figures for what it does to a child.                                                                                                                                                                                                                                                        | None found. Call for any amount.                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| Potassium dichromate        | A chrome colorant used in some recipes. Fisher Scientific's safety data sheet warns that it "May be fatal if swallowed", causes burns in the gut and may damage the kidneys. The same sheet warns that it "May be fatal if inhaled" and may cause cancer, and of a "possible risk of harm to the unborn child".                              | Not established, and safety data sheets disagree on how toxic it is.                                                                                                                                                                                                                                                                                                                                                                                                    |
 
 > [!NOTE]
-> Šie kenksmingi kiekiai – nuo kelių šimtų miligramų iki kelių gramų. Glazūrų žaliavos parduodamos svarais ar kilogramais, todėl viename atidarytame maiše ar kibire jų yra gerokai daugiau, nei reikia mažyliui pakenkti.
+> These harmful amounts run from a few hundred milligrams to a few grams. Glaze materials are sold by the pound or kilogram, so one open bag or bucket holds far more than enough to harm a toddler.
 
-### Dažikliai ir švinas
+### Colorants and lead
 
-**Dažikliai** – tai metalų oksidai ir keramikos pigmentai{{en: stains}}, suteikiantys glazūrai spalvą: varis, kobaltas, chromas, manganas, nikelis, kadmio-seleno pigmentai ir kiti. Vieno universiteto keramikos saugos puslapyje švinas, kadmis, kobaltas ir chromas įvardijami tarp ypač pavojingų glazūros sudedamųjų dalių. Neradome patikimų dozių duomenų nė apie vieną dažiklį, todėl skambinkite dėl bet kokio kiekio. Kibire sumaišytoje glazūroje yra tos pačios žaliavos kaip ir maišuose, iš kurių ji pagaminta, tik šlapios.
+**Colorants** are the metal oxides and stains that give a glaze its color: copper, cobalt, chrome, manganese, nickel, cadmium-selenium stains and others. A university ceramics safety page names lead, cadmium, cobalt and chromium among the especially hazardous glaze ingredients. We found no reliable dose figures for any colorant, so call for any amount. A bucket of mixed glaze holds the same materials as the bags it came from, only wet.
 
-Pagrindinis švino pavojus kitoks: ne vienas šaukštas, o nedideli dulkių kiekiai, prarijami savaites ar mėnesius, be jokių įspėjamųjų ženklų (žr. skyrių „Švinas ir vaikai“ toliau).
+Lead's main danger is different: not one spoonful, but small amounts of dust swallowed over weeks or months, with no warning signs (see Lead and children, below).
 
 ## Žaliavų laikymas namuose {#storing-materials}
 
@@ -220,41 +220,43 @@ Dėl namų testų nesutariama. FDA teigia, kad namų testų rinkiniai su tampon�
 
 Daugiau apie tai, kaip glazūros lydosi, kodėl iš kai kurių išsiskiria metalų ir ką reiškia ribos, skaitykite vadove [Glazūravimas nuo pagrindų](/guides/glazing-basics).
 
-## Šaltiniai {#sources}
+## Sources {#sources lang=en}
 
 - [America's Poison Centers: Poison Help](https://poisoncenters.org/)
 - [Poison Control (poison.org): webPOISONCONTROL](https://www.poison.org/)
 - [NHS: Poisoning](https://www.nhs.uk/conditions/poisoning/)
-- [National Poisons Information Service (JK)](https://www.npis.org/)
+- [National Poisons Information Service (UK)](https://www.npis.org/)
 - [National Poisons Information Centre of Ireland: Public Poisons Line](https://www.poisons.ie/)
 - [European Commission: 112, the European emergency number](https://digital-strategy.ec.europa.eu/en/policies/112)
 - [healthdirect: Poisoning](https://www.healthdirect.gov.au/poisoning)
-- [National Poisons Centre (Naujoji Zelandija)](https://www.poisons.co.nz/)
+- [National Poisons Centre (New Zealand)](https://www.poisons.co.nz/)
 - [ASPCA: Animal Poison Control](https://www.aspca.org/pet-care/animal-poison-control)
 - [Pet Poison Helpline](https://www.petpoisonhelpline.com/)
-- [Animal PoisonLine (JK)](https://www.animalpoisonline.co.uk/)
-- [Animal Poisons Helpline (Australija ir Naujoji Zelandija)](https://animalpoisons.com.au/)
-- [PubMed Central: Acute soluble barium poisoning, a review (2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC11700400)
+- [Animal PoisonLine (UK)](https://www.animalpoisonline.co.uk/)
+- [Animal Poisons Helpline (Australia and New Zealand)](https://animalpoisons.com.au/)
+- [PubMed Central: Non-fatal acute barium carbonate poisoning, a case report (2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC11700400)
+- [WHO IPCS: Environmental Health Criteria 107, Barium (1990)](https://www.inchem.org/documents/ehc/ehc/ehc107.htm)
+- [Fisher Scientific: Potassium dichromate safety data sheet (2007)](https://fscimage.fishersci.com/msds/19370.htm)
 - [WikEM: Boron toxicity](https://wikem.org/wiki/Boron_toxicity)
-- [NPIC ir JAV EPA: Recognition and Management of Pesticide Poisonings, 9 skyrius (PDF)](https://www.npic.orst.edu/RMPP/rmpp_ch9.pdf)
+- [NPIC and US EPA: Recognition and Management of Pesticide Poisonings, chapter 9 (PDF)](https://www.npic.orst.edu/RMPP/rmpp_ch9.pdf)
 - [medlibrary.org: Lithium carbonate prescribing information](https://medlibrary.org/lib/rx/meds/lithium-carbonate-16/page/2/)
 - [CDC: About Lead in Jobs, Hobbies, or Other Activities](https://cdc.gov/lead-prevention/prevention/jobs-hobbies-activities.html)
 - [CDC: Blood Lead Reference Value](https://www.cdc.gov/nceh/lead/data/blood-lead-reference-value.htm)
-- [JAV EPA: knygelė apie vaikų sveikatą (2018, PDF)](https://19january2021snapshot.epa.gov/sites/static/files/2018-10/documents/childrenshealthbooklet2018_final-4_newlinks.pdf)
+- [US EPA: Children's health booklet (2018, PDF)](https://19january2021snapshot.epa.gov/sites/static/files/2018-10/documents/childrenshealthbooklet2018_final-4_newlinks.pdf)
 - [Pennsylvania Department of Health: Non-Occupational Lead Exposure (PDF)](https://www.health.pa.gov:443/topics/Documents/Environmental%20Health/Non-Occupational%20Lead%20Exposure.pdf)
 - [Western Carolina University: Ceramics Safety](https://www.wcu.edu/discover/campus-services-and-operations/facilities-management/safety-and-risk-management/visual-arts-theatre-safety/ceramics-safety.aspx)
-- [Crafts Council (JK): How to make your pottery practice greener](https://craftscouncil.org.uk/stories/how-make-your-pottery-practice-greener)
+- [Crafts Council (UK): How to make your pottery practice greener](https://craftscouncil.org.uk/stories/how-make-your-pottery-practice-greener)
 - [Pet Poison Helpline: Lead](https://www.petpoisonhelpline.com/poison/lead/)
 - [Vet Candy: Sparkler ingestion results in barium toxicity](https://www.myvetcandy.com/clinicalupdblog/2019/3/15/sparkler-ingestion-results-in-barium-toxicity)
 - [University of Illinois College of Veterinary Medicine: Bird toxins](https://vetmed.illinois.edu/pet-health-columns/bird-toxins-teflon-avocado-lead-zinc/)
 - [Skutt: Designing a Kiln Room (PDF)](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Designing-A-Kiln-Room-1.pdf)
-- [Kiln Management, krosnių priežiūros leidinys mokykloms (PDF)](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Kiln-Management-1.pdf)
+- [Kiln Management guide for schools (PDF)](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Kiln-Management-1.pdf)
 - [L&L Kiln: Front-loader installation checklist (PDF)](https://www.theceramicshop.com/downloads/LLFLChecklist.pdf)
 - [Rio Grande: PMC Kilns Handbook (PDF)](https://products.riogrande.com/content/Instruction-Sheets/RioGrande-PMC-Kilns-Handbook-IS.pdf)
-- [Dawson: Kiln-Sitter LT-3 naudojimo instrukcija (PDF)](https://oud.klei.nl/forum/bestanden/f675ae4a-d890-4b8b-a08e-173e652f25a6/KilnSitter%20lt3%20en%20lt3k.pdf)
+- [Dawson: Kiln-Sitter LT-3 manual (PDF)](https://oud.klei.nl/forum/bestanden/f675ae4a-d890-4b8b-a08e-173e652f25a6/KilnSitter%20lt3%20en%20lt3k.pdf)
 - [Ceramic Arts Network: In the Studio, Eye Health for Potters](https://ceramicartsnetwork.org/pottery-making-illustrated/pottery-making-illustrated-article/In-the-Studio-Eye-Health-for-Potters)
 - [FDA: Questions and Answers on Lead-Glazed Traditional Pottery](https://www.fda.gov/food/environmental-contaminants-food/questions-and-answers-lead-glazed-traditional-pottery)
-- [FDA: Compliance Policy Guide 545.450, švinas keramikoje (PDF)](https://www.fda.gov/media/71764/download)
+- [FDA: Compliance Policy Guide 545.450, lead in pottery (PDF)](https://www.fda.gov/media/71764/download)
 - [Digitalfire: Food Safe](https://digitalfire.com/glossary/food+safe)
 - [Ceramics NZ: Is it food safe?](https://ceramicsnz.org/news/is-it-food-safe/)
 - [Ceramic Arts Network: Techno File, Dirty Dishes](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/Techno-File-Dirty-Dishes)

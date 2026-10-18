@@ -22,58 +22,58 @@ Sagatavot glazūru{{en: glaze}} nozīmē pēc receptes nosvērt pulverveida **iz
 > [!WARNING]
 > **Sauss glazūras pulveris rada bīstamus putekļus.** Kristāliskais silīcija dioksīds var veidot 10–60% no sausas glazūras, un Apvienotās Karalistes darba drošības iestāde HSE (Health and Safety Executive) brīdina, ka tā putekļi parastā apgaismojumā nav redzami. Smeliet pulveri saudzīgi un no neliela augstuma, turiet vākus uzliktus, samitriniet pulveri, cik drīz vien iespējams, un uzkopiet mitri, nekad ar slotu. Kamēr pulveri ir sausi, valkājiet pareizi pieguļošu respiratoru (ASV – N95 vai P100, Apvienotajā Karalistē un ES – FFP2 vai FFP3, Austrālijā un Jaunzēlandē – P2 vai P3). Ceļvedī [Droša jaukšana un ventilācija](/guides/safe-mixing) sīki aprakstīti putekļi, respiratori un uzkopšana.
 
-## Izejvielu iegāde {#buying-materials}
+## Buying materials {#buying-materials lang=en}
 
-### Kur iegādāties
+### Where to buy
 
-Keramiķi iepērkas pie keramikas piegādātājiem, kas pārdod mālu, glazūru izejvielas un instrumentus. Tabulā parādīti daži no tiem jūsu valstī, katrs pārbaudīts veikala paša tīmekļa vietnē, un varat izvēlēties citu valsti, lai redzētu tās veikalus. Preču klāsts mainās, tāpēc pirms pasūtīšanas pārbaudiet. Lielie ražotāji, piemēram, Sibelco un Imerys, pārdod rūpniecībai, bet keramiķi to izejvielas pērk šādos veikalos. Keramikas uzziņu vietnē Digitalfire ir piegādātāju veikalu katalogs arī citām vietām.
+Potters buy from ceramic suppliers, which sell clay, glaze materials and tools. The table shows some for your country, each checked on the shop's own site, and you can choose another country to see its shops. Stock changes, so check before you order. Large producers such as Sibelco and Imerys sell to industry; potters buy their materials through shops like these. The ceramics reference site Digitalfire keeps a directory of supplier stores for other places.
 
 ::shops
 
-### Cik daudz iegādāties
+### How much to buy
 
-Standarta maiss ASV ir **50 lb (22,7 kg)**, citur – **25 kg (55 lb)**, tātad abi ir gandrīz vienādi. Daudzi piegādātāji izmēģinājumiem pārdod arī 1; 2,5 vai 5 kg iepakojumus (apmēram 2,2; 5,5 vai 11 lb). Atvērtā recepšu datubāze Glazy iesaka izejvielas, ko lietojat pastāvīgi (laukšpatu{{en: feldspar}}, kvarcu{{en: silica}}, kaolīnu{{en: kaolin}}, krītu{{en: whiting}} un vidējas temperatūras apdedzināšanai – friti{{en: frit}}), pirkt veselos maisos, kas bieži ir par 20–30% lētāki. **Krāsvielas**{{en: colorants}} – metālu oksīdus un keramikas pigmentus{{en: stains}}, kas krāso glazūru{{en: glaze}}, – pērciet nelielos daudzumos: lielāko daļu no tām lieto mazāk par 5%. Glazy iepirkumu sarakstu paraugi ASV cenās izmaksāja apmēram 515 USD vidējas temperatūras un 397 USD augstas temperatūras apdedzināšanai.
+The standard sack is **50 lb (22.7 kg)** in the US and **25 kg (55 lb)** elsewhere, so the two are nearly the same. Many suppliers also sell 1, 2.5 or 5 kg packs (about 2.2, 5.5 or 11 lb) for tests. Glazy, the open recipe database, advises buying the materials you use steadily (feldspar, silica, kaolin, whiting, and frit for mid-fire) in full sacks, which are often 20 to 30% cheaper. Buy **colorants**, the metal oxides and stains that color a glaze, in small amounts: most are used at under 5%. Glazy's sample shopping lists came to about $515 for mid-fire and $397 for high-fire, at US prices.
 
-### Pamatkomplekts sākumam
+### A starter set
 
-Glazy pamatsaraksts jebkurai temperatūrai ir kvarcs, kaolīns, laukšpats, krīts, cinka oksīds un dolomīts vai talks. Lielākajai daļai vidējas temperatūras glazūru (konusi{{en: cone}} 5–6) vajag arī boru, parasti no frites, ko Glazy raksturo kā “nemainīgu un mazāk šķīstošu nekā nefritēti borāti”. Zemāk dotais komplekts ir mūsu ieteikums, kas sastādīts pēc Glazy saraksta un kāda foruma saraksta. Ceļvedī [Glazēšana no pašiem pamatiem](/guides/glazing-basics) izskaidrots, ko dara katra izejviela.
+Glazy's core list for any temperature is silica, kaolin, feldspar, whiting, zinc oxide, and dolomite or talc. Most mid-fire (cone 5 to 6) glazes also need boron, usually from a frit, which Glazy calls "consistent and less soluble than raw borates". The set below is our suggestion, drawn from Glazy's list and a forum list. The [glazing basics guide](/guides/glazing-basics) explains what each material does.
 
-Table: Izejvielu pamatkomplekts sākumam (mūsu ieteikums)
-Label: Pamatkomplekts
+Table: A starter set of materials (our suggestion)
+Label: Starter set
 
-| Izejviela                                                  | Ko iegādāties                                                                                                          |
-| ---------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| Kvarcs (to sauc arī par kramu{{en: flint}}; skatiet zemāk) | 325 mesh, smalkākais malums, kam Glazy glazūrās dod priekšroku                                                         |
-| Kaolīns (Apvienotajā Karalistē: china clay)                | ASV – EPK; Apvienotajā Karalistē – Grolleg vai cits kaolīns; Jaunzēlandē – Jaunzēlandes kaolīns                        |
-| Kālija laukšpats                                           | Jebkurš, kas pašlaik ir pieejams jūsu dzīvesvietā, piemēram, ASV – Mahavir                                             |
-| Nefelīna sienīts{{en: nepheline syenite}}                  | Jebkurš; Glazy atzīmē, ka tam ir spēcīgāka kušņu iedarbība, to bieži lieto zemas un vidējas temperatūras apdedzināšanā |
-| Krīts                                                      | Jebkurš                                                                                                                |
-| Talks                                                      | Jebkurš                                                                                                                |
-| Bora frite vidējas temperatūras apdedzināšanai             | Ferro 3134, 3124 vai 3195; Apvienotajā Karalistē – Potterycrafts P3124 vai P3195                                       |
-| Bentonīts un krāsvielas                                    | Nelielos daudzumos                                                                                                     |
+| Material                              | What to buy                                                                      |
+| ------------------------------------- | -------------------------------------------------------------------------------- |
+| Silica (also called flint; see below) | 325 mesh, the finer grade Glazy prefers for glazes                               |
+| Kaolin (china clay in the UK)         | EPK in the US; Grolleg or another china clay in the UK; NZ kaolin in New Zealand |
+| Potash feldspar                       | Whichever is current where you live, such as Mahavir in the US                   |
+| Nepheline syenite                     | Any; Glazy notes its stronger fluxing power, often used at low and mid-fire      |
+| Whiting                               | Any                                                                              |
+| Talc                                  | Any asbestos-free grade; check its SDS (see Safe mixing)                         |
+| A boron frit, for mid-fire            | Ferro 3134, 3124 or 3195; in the UK, Potterycrafts P3124 or P3195                |
+| Bentonite and colorants               | Small amounts                                                                    |
 
-### Tehnisko datu lapas un drošības datu lapas
+### Data sheets and safety data sheets
 
-Katrai izejvielai prasiet divus dokumentus. **Tehnisko datu lapā** (TDS) ir dota tās **ķīmiskā analīze**: katra oksīda masas daļa pulverī. Lietotne Glazecalc rēķina pēc šīm analīzēm, un [lapā Izejvielas](/material) varat pievienot izejvielu pēc piegādātāja analīzes. **Drošības datu lapā** (DDL) teikts, kā rīkoties ar neapdedzināto pulveri. Glabājiet katru drošības datu lapu un izlasiet to pirms jaukšanas.
+Ask for two documents for each material. A **technical data sheet** (TDS) gives its **chemical analysis**: the share of each oxide in the powder, by weight. Glazecalc works from these, and you can add a material from a supplier's analysis on the [Materials page](/material). A **safety data sheet** (SDS) says how to handle the raw powder. Keep each SDS, and read it before you mix.
 
-Analīzes ir vidējās vērtības, nevis solījumi. Valentine Clays uz sava krama datu lapas raksta: “VIDĒJĀS VĒRTĪBAS. TĀS NAV SPECIFIKĀCIJA”, un Glazy dažādu gadu Custer laukšpata analīzēs silīcija dioksīda saturs ir no apmēram 68,5% līdz 72,4%. Iesakām savos pierakstos atzīmēt katra maisa **partijas numuru** (ražošanas partijas kodu), lai varētu noteikt, vai izmaiņas jau pārbaudītā glazūrā radušās izejvielas dēļ.
+Analyses are averages, not promises. Valentine Clays prints "MEAN VALUES. THESE DO NOT REPRESENT A SPECIFICATION" on its flint data sheet, and Glazy's analyses of Custer feldspar from different years run from about 68.5% to 72.4% silica. We suggest writing each sack's **lot number** (its batch code) in your records, so you can tell whether a change in a trusted glaze came from the material.
 
-HSE brīdina, ka kristāliskais silīcija dioksīds “var būt kļūdaini marķēts kā ‘amorfais silīcija dioksīds’”. Turklāt drošības datu lapa attiecas uz pulveri, nevis uz izstrādājumu: tajā nekas nav teikts par to, vai apdedzināta glazūra ir piemērota saskarei ar pārtiku{{en: food safe}}. To var parādīt tikai apdedzinātā izstrādājuma metālu izskalošanās laboratorijas pārbaude.
+HSE warns that crystalline silica "can be wrongly labelled as 'amorphous silica'". And an SDS is about the powder, not the pot: it says nothing about whether a fired glaze is safe for food. Only a laboratory leach test of the fired pot can show that.
 
-### Mainīgi nosaukumi un izvēle pēc ķīmiskā sastāva
+### Names change, so buy by chemistry
 
-Tirdzniecības nosaukumi rodas un izzūd, jo raktuves slēdz. Custer laukšpats, ko Dienviddakotā ieguva vairāk nekā 75 gadus, beidzās 2023. gada beigās. Kad Clay Art Center pārgāja uz G-200 AU un Mahavir, apmēram pusi tā glazūru vajadzēja koriģēt. Arī G-200 un G-200 HP vairs nav pieejami, un Laguna tagad importē Mahavir, kura ķīmiskais sastāvs ir tuvs G-200.
+Brand names come and go as mines close. Custer feldspar, mined in South Dakota for more than 75 years, ran out in late 2023. When Clay Art Center switched to G-200 AU and Mahavir, about half its glazes needed adjusting. G-200 and G-200 HP are gone too, and Laguna now imports Mahavir, whose chemistry is close to G-200.
 
-**Gerstley Borate**, dabīgs bora minerāls, kas minēts daudzās vecākās receptēs, ir grūti iegādājams kopš tā raktuvju slēgšanas 2000. gadā, lai gan New Mexico Clay 2025. gada novembrī ziņoja, ka Laguna piegādā “Gerstley Borate Original”. Avoti nav vienisprātis par to, vai **Gillespie Borate** to var aizstāt. Tā ražotājs to pārdod kā aizstājēju mārciņa pret mārciņu. Berkeley Potters Studio raksta, ka tas “nav tiešs aizstājējs”, un Digitalfire konstatēja, ka tas mainīja glazūras krāsu. Drošs ceļš ir salīdzināt abus pēc to oksīdiem un pēc tam izmēģināt.
+**Gerstley Borate**, a natural boron mineral in many older recipes, has been scarce since its mine closed in 2000, though New Mexico Clay reported in November 2025 that Laguna was supplying "Gerstley Borate Original". Sources disagree about **Gillespie Borate** as a replacement. Its maker sells it as pound-for-pound. Berkeley Potters Studio says it "is not a direct substitute", and Digitalfire found it changed a glaze's color. The safe course is to compare the two by their oxides, then test.
 
-Arī reģionālie nosaukumi atšķiras. Ziemeļamerikā nosaukumi **flint** (krams), quartz un silica nozīmē vienu un to pašu malto kvarcu, un Digitalfire raksta, ka īstu krama pulveri pie piegādātājiem jūs, visticamāk, neatradīsiet. Apvienotajā Karalistē krams ir atsevišķs produkts: Valentine Clays krams ir kalcinēts (karsēts) silīcija dioksīds. Abi ir gandrīz tīrs silīcija dioksīds, tāpēc sagaidām, ka tie ir līdzīgi, taču pārbaudiet analīzi. Par kaolīnu Glazy raksta, ka apmaiņa viens pret vienu, piemēram, EPK pret britu kaolīnu (china clay), “bieži darbojas lieliski, īpaši, ja daudzumi ir \<10%”.
+Regional names differ too. In North America, **flint**, quartz and silica mean the same ground silica, and Digitalfire says you probably won't find true flint powder from suppliers. In the UK, flint is its own product: Valentine's is calcined (heated) silica. Both are nearly pure silica, so we expect them to be close, but check the analysis. For kaolin, Glazy says one-for-one swaps, such as EPK for a china clay, "often work just fine, especially when amounts are \<10%".
 
-Daudzās receptēs minētas izejvielas, ko pārdod vienā valstī, bet ne citā. Zemāk dotā tabula katrai lietotnes Glazecalc bibliotēkas izejvielai, ko nepārdod tur, kur iepērkaties, pēc analīzēm atrod tuvāko tāda paša veida izejvielu, ko tur pārdod. Skaitlis rāda, cik tālu abas ir viena no otras: par cik gramiem uz 100 g izejvielas atšķiras to oksīdi pēc apdedzināšanas, saskaitot pa visiem oksīdiem. Ja atšķirība ir līdz apmēram 15 g, pirmajā izmēģinājumā vienu parasti var lietot otras vietā. Nosaukumos ir ražotāju un veikalu pašu kodi, tāpēc izejvielas var prasīt pēc nosaukuma.
+Many recipes name materials that are sold in one country and not another. The table below takes each material in Glazecalc's library that is not sold where you buy, and finds the closest of its kind that is, by their analyses. The figure is how far apart the two are: the grams by which their fired oxides differ, per 100 g of material, added up over every oxide. Within about 15 g, one can usually stand in for the other in a first test. The names carry the makers' and shops' own codes, so you can ask for them by name.
 
 ::local-equivalents
 
 > [!NOTE]
-> Lietotne Glazecalc salīdzina izejvielas pēc tā, ko tās dod apdedzinātai glazūrai, nevis pēc nosaukuma. [Recepte](/recipe), kurā ir izejviela, ko vairs neražo, norāda, ko lieto tagad. Poga **Ieteikt daudzumus un salīdzināt** pārrēķina daudzumus aizstājējam, un poga **Sastādīt no tā, kas man ir** sastāda recepti no jauna no jūsu krājumiem. Abas pieskaņo tikai oksīdus pēc apdedzināšanas, tāpēc vispirms izmēģiniet nelielu porciju.
+> Glazecalc compares materials by what they bring to the fired glaze, not by name. A [recipe](/recipe) with a material no longer made says what is used now. **Suggest amounts and compare** works the amounts out again for a substitute, and **Match with what I have** makes the recipe again from the materials on your shelf. Both match the fired oxides only, so test a small batch first.
 
 ## Izejvielu un glazūru uzglabāšana {#storing}
 
@@ -163,55 +163,55 @@ Label: Sieta mesh
 | Glazūras ar krāsvielām{{en: colorants}}, piemēram, kobaltu vai dzelzi | 100–120 mesh                 |
 | Pelnu glazūras un citas glazūras ar rupjām izejvielām                 | 60–80 mesh                   |
 
-## Relatīvais blīvums {#specific-gravity}
+## Specific gravity {#specific-gravity lang=en}
 
-**Relatīvais blīvums**{{en: specific gravity, SG}} (rel. blīvums) parāda, cik daudz pulvera ir jūsu glazūras suspensijā{{en: slurry}}. Tas ir noteikta glazūras{{en: glaze}} tilpuma svars, dalīts ar tāda paša ūdens tilpuma svaru. Ūdenim tas ir 1,00, un glazūra, kuras rādījums ir {{SG 1.45}}, sver 145 g uz 100 mL. Sajaucot līdz izmērītam relatīvajam blīvumam, jūs katru reizi iegūstat tādu pašu biezumu un tādu pašu glazūras kārtu. Tam nav mērvienības, tāpēc tas ir vienāds gan gramos, gan uncēs.
+**Specific gravity** (SG) tells you how much powder is in your slurry. It is the weight of a volume of glaze divided by the weight of the same volume of water. Water is 1.00, and a glaze at {{SG 1.45}} weighs 145 g per 100 mL. Mixing to a measured SG is how you get the same thickness, and the same coat, every time. It has no units, so it is the same in grams or ounces.
 
-### Mērīšana, nosverot 100 mL
+### Measure it by weighing 100 mL
 
-1. Samaisiet glazūru, lai nekas nebūtu nosēdies.
-2. Novietojiet uz svariem 100 mL **mērcilindru** (augstu mērtrauku ar iedaļām) vai 100 mL šļirci un notarējiet svarus.
-3. Piepildiet to ar glazūru tieši līdz 100 mL atzīmei, nolasot atzīmi acu augstumā.
-4. Nosveriet un gramus daliet ar 100: 145 g nozīmē rel. blīvumu 1,45.
+1. Stir the glaze so nothing has settled.
+2. Put a 100 mL **graduated cylinder** (a tall, marked measuring tube) or a 100 mL syringe on the scale, and tare it.
+3. Fill it with glaze to exactly 100 mL, reading the mark at eye level.
+4. Weigh it and divide the grams by 100: 145 g is SG 1.45.
 
-Digitalfire arī atzīmē uz krūzes 500 g ūdens līmeni, piepilda krūzi līdz atzīmei ar glazūru un svaru dala ar 500. Lielāks, pilnāks mērtrauks ir precīzāks. **Areometrs** – pludiņš, kura rādījumu nolasa tur, kur tas iegrimst glazūrā, – ir ātrs, bet bieza vai sabiezējusi glazūra var dot kļūdainu rādījumu. Britu areometri, piemēram, tie, ko pārdod Potclays, rāda Bomē grādos (°Bé). Pēc mūsu aprēķina rel. blīvums = 145 ÷ (145 − °Bé), tātad 46 °Bé atbilst apmēram 1,46. Vecākās britu grāmatās norādīts **pintes svars** – cik unču sver britu pinte glazūras: daliet to ar 20, tātad 29 oz atbilst apmēram rel. blīvumam 1,45 (arī mūsu aprēķins).
+Digitalfire also marks a cup at the level of 500 g of water, fills it to the mark with glaze, and divides the weight by 500; a bigger, fuller measure is more accurate. A **hydrometer**, a float read where it sits in the glaze, is quick but can misread thick or gelled glazes. UK hydrometers, such as Potclays', read in degrees Baumé (°Bé). By our arithmetic, SG = 145 ÷ (145 − °Bé), so 46 °Bé is about 1.46. Older UK books give a **pint weight**, the ounces in an imperial pint of glaze: divide it by 20, so 29 oz is about SG 1.45 (also our arithmetic).
 
-### Mērķa vērtības
+### What to aim for
 
-Avoti nav vienisprātis, visvairāk par uzklāšanu ar otu un uzsmidzināšanu, kur britu piegādātājs Potclays norāda daudz augstākas vērtības (pēc paša teiktā, “tikai orientējošas”). Uzskatiet katru skaitli par sākumpunktu. Digitalfire galvenais ieteikums ir atrast katrai glazūrai piemērotu relatīvo blīvumu un sabiezēšanas pakāpi, tad tos atkārtot un pierakstīt.
+Sources disagree, most of all on brushing and spraying, where the UK supplier Potclays gives much higher figures (its own are "for guidance only"). Treat every number as a starting point. Digitalfire's core advice is to find the SG and gelling that work for each glaze, then repeat them and write them down.
 
-Table: Relatīvā blīvuma mērķa vērtības, kur avoti nav vienisprātis
-Label: Relatīvā blīvuma mērķa vērtības
+Table: Specific gravity targets, where sources disagree
+Label: Specific gravity targets
 
-| Lietojums        | Digitalfire un Glazy                                                                                                                                                                  | Potclays (Apvienotā Karaliste)                       | Drošs sākumpunkts                                                       |
-| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- | ----------------------------------------------------------------------- |
-| Iemērkšana       | No {{SG 1.40}} (5 sekunžu iemērkšanai) līdz {{SG 1.50}} (1 sekundes iemērkšanai); mājās sajauktām sabiezinātām glazūrām vislabāk der {{SG 1.43–1.45}}                                 | Caurspīdīgai {{SG 1.46–1.48}}; krāsainai {{SG 1.61}} | {{SG 1.45}}; ja glazūra pil, atšķaidiet līdz {{SG 1.43}} un sabieziniet |
-| Uzklāšana ar otu | No {{SG 1.25}} (plāna caurspīdīga glazūra) līdz {{SG 1.55}} (tumšas detaļas)                                                                                                          | {{SG 1.71–1.81}}                                     | Ievērojiet produkta norādījumus; lietojiet CMC vai otas mediju          |
-| Uzsmidzināšana   | Skaitlis nav dots; Hopers (Hopper), rakstot vietnei Ceramic Arts Network, iesaka daudz šķidrāku glazūru ar deflokulantu{{en: deflocculant}} (piedevu, kas padara suspensiju šķidrāku) | {{SG 1.71}}                                          | Uzticama skaitļa nav; smidziniet tikai smidzināšanas kabīnē             |
+| Use      | Digitalfire and Glazy                                                                                                                 | Potclays (UK)                               | Safe starting point                                     |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------- |
+| Dipping  | {{SG 1.40}} (for a 5-second dip) to {{SG 1.50}} (for a 1-second dip); home-mixed glazes that are gelled do best at {{SG 1.43–1.45}}   | Clear {{SG 1.46–1.48}}; colored {{SG 1.61}} | {{SG 1.45}}; thin to {{SG 1.43}} and gel it if it drips |
+| Brushing | {{SG 1.25}} (thin clear) to {{SG 1.55}} (dark detail)                                                                                 | {{SG 1.71–1.81}}                            | Follow the product; use CMC gum or a brushing medium    |
+| Spraying | No figure; Hopper, writing for Ceramic Arts Network, says much thinner, with a deflocculant (an additive that makes a slurry runnier) | {{SG 1.71}}                                 | No reliable number; spray only in a spray booth         |
 
-Lai iemērkšanas glazūru pārbaudītu ar aci, AMACO iemērc uz 5 sekundēm un skatās, vai kārta ir apmēram tik bieza kā ASV desmit centu monēta (dime). Digitalfire pārbaudei apdedzina proves{{en: test tiles}}, kas iemērktas uz 5 sekundēm.
+To check a dipping glaze by eye, AMACO dips for 5 seconds and looks for a coat about as thick as a US dime. Digitalfire fires tiles dipped for 5 seconds to check.
 
-### Ūdens daudzums mērķa relatīvajam blīvumam: mūsu aplēse
+### Water for a target SG: our estimate
 
-Zemāk dotā tabula ir mūsu pašu aprēķins, nevis kāda avota dati. Tajā pieņemts, ka pulvera daļiņu blīvums ir 2,6 g uz cm³, un tas ir pieņēmums, nevis mērījums. Māls, šķīstošas izejvielas un sabiezēšana – tas viss maina īstu glazūru, tāpēc izmantojiet tabulu sākumam un pēc tam mēriet. Pārbaudei: vienādam pulvera un ūdens svaram tā paredz rādījumu {{SG 1.44}}, kas ir tuvu Digitalfire izmērītajam rādījumam {{SG 1.46}}. Tā arī parāda, ka ar 70–80 mL uz 100 g jūs sākat virs rādījuma {{SG 1.50}}, tātad biezāk, nekā vajag.
+The table below is our own arithmetic, not a source's. It assumes the powder's particles have a density of 2.6 g per cm³, which is an assumption, not a measurement. Clay, soluble materials and gelling all change a real glaze, so use it to start, then measure. As a check, it predicts {{SG 1.44}} for equal weights of powder and water, close to Digitalfire's measured {{SG 1.46}}. It also shows that 70 to 80 mL per 100 g starts you above {{SG 1.50}}, thicker than you need.
 
-Table: Ūdens daudzums mērķa relatīvajam blīvumam (mūsu aplēse)
-Label: Ūdens daudzums mērķa relatīvajam blīvumam
+Table: Water for a target specific gravity (our estimate)
+Label: Water for a target specific gravity
 
-| Mērķis      | Uz 100 g pulvera |    Uz kilogramu |           Uz mārciņu |
-| ----------- | ---------------: | --------------: | -------------------: |
-| {{SG 1.40}} |   apmēram 115 mL | apmēram 1150 mL | apmēram 18 ASV fl oz |
-| {{SG 1.45}} |    apmēram 98 mL |  apmēram 980 mL | apmēram 15 ASV fl oz |
-| {{SG 1.50}} |    apmēram 85 mL |  apmēram 850 mL | apmēram 13 ASV fl oz |
-| {{SG 1.60}} |    apmēram 64 mL |  apmēram 640 mL | apmēram 10 ASV fl oz |
+| Target      | Per 100 g of powder |  Per kilogram |         Per pound |
+| ----------- | ------------------: | ------------: | ----------------: |
+| {{SG 1.40}} |        about 115 mL | about 1150 mL | about 18 US fl oz |
+| {{SG 1.45}} |         about 98 mL |  about 980 mL | about 15 US fl oz |
+| {{SG 1.50}} |         about 85 mL |  about 850 mL | about 13 US fl oz |
+| {{SG 1.60}} |         about 64 mL |  about 640 mL | about 10 US fl oz |
 
-### Epsoma sāls, CMC un bentonīts
+### Epsom salts, CMC gum and bentonite
 
-**Epsoma sāls** liek glazūrai nedaudz sabiezēt, kad tā stāv mierā, un atkal plūst, kad to samaisa. To sauc par glazūras **flokulēšanu**{{en: flocculating}}, un glazūra, kas šādi uzvedas, ir **tiksotropa**{{en: thixotropic}}: tā uzklājas vienmērīgāk, mazāk pil un mazāk nosēžas. Digitalfire iesaka, kad relatīvais blīvums ir pareizs, sākt ar apmēram 2 g uz galonu (aptuveni 0,5 g uz litru, mūsu pārrēķins) un daudzumu pielāgot katru reizi, kad jaucat, jo devu nevajadzētu noteikt receptē. Iesakām to vispirms izšķīdināt nelielā daudzumā karsta ūdens. Kādā Digitalfire piemērā glazūra, kuras rādījums bija {{SG 1.45}}, pilēja, tāpēc ar ūdeni to atšķaidīja līdz {{SG 1.43}}, bet Epsoma sāls to atkal sabiezināja līdz krēmīgai konsistencei, un tā uzklājās vienmērīgi. Aptuvena pārbaude: samaisiet, apstājieties un vērojiet. Sabiezējusi glazūra vēl apmēram 2 vai 3 sekundes turpina kustēties, tad apstājas un nedaudz atvirzās atpakaļ.
+**Epsom salts** make a glaze gel slightly when it stands still and flow again when it is stirred. This is called **flocculating** it, and a glaze that behaves this way is **thixotropic**: it goes on more evenly, drips less and settles less. Digitalfire suggests starting at about 2 g per gallon once the SG is right (roughly 0.5 g per liter, our conversion) and tuning the amount each time you mix, since no recipe should fix the dose. We suggest dissolving it in a little hot water first. In a Digitalfire example, a glaze at {{SG 1.45}} dripped, so water brought it down to {{SG 1.43}} and Epsom salts gelled it back to creamy, and it went on evenly. A rough check: stir, stop and watch. A gelled glaze moves on for about 2 or 3 seconds, then stops and springs back a little.
 
-**CMC** (karboksimetilceluloze) padara glazūras suspensiju lipīgāku un lēnāk žūstošu un atstāj cietāku kārtu, kas labi turas uz izstrādājuma. Vislielākā nozīme tai ir glazūrām uzklāšanai ar otu un glazūrām ar daudz frites{{en: frit}}. Digitalfire piemērā 3,75 g iejauc 1000 g suspensijas, un CMC jāiejauc ar blenderi. Glazūra ar CMC ar Epsoma sāli nesabiezē, un, tā kā mikrobi barojas ar šo saistvielu, glazūra spainī var mainīties un sākt smirdēt.
+**CMC gum** (carboxymethyl cellulose) makes a slurry stickier and slower to dry, and leaves a harder coat that holds to the pot. It matters most for brushing glazes and glazes high in frit. Digitalfire's example blends 3.75 g into 1000 g of slurry, and it has to go in with a blender. A glaze with CMC will not gel with Epsom salts, and since microbes feed on the gum, it can change in the bucket and start to smell.
 
-**Bentonīts**, ļoti smalks māls, palīdz noturēt pārējās daļiņas suspensijā. Iemērkšanas glazūrās šo uzdevumu parasti veic 15–25% neapdedzināta māla. Receptei, kurā māla ir maz, palīdz apmēram 1–2% bentonīta.
+**Bentonite**, a very fine clay, helps hold the other particles in suspension. Dipping glazes usually rely on 15 to 25% raw clay for this. For a recipe short of clay, about 1 to 3% bentonite helps; Digitalfire says a glaze with more than 15% clay should not need more than 1%.
 
 ## Proves un provju rindas {#testing}
 
@@ -276,7 +276,7 @@ Label: Pierakstu veidne
 > [!NOTE]
 > Lietotnē Glazecalc saglabātā [recepte](/recipe) glabā pašu recepti. [Apdedzināšanas žurnāls](/firing) reģistrē katru apdedzināšanu: krāsni, datumu, laikus, temperatūras, konusus un piezīmes. [Piezīmēs](/notes) glabājas viss pārējais, piemēram, iepriekš aprakstītais porcijas pieraksts un tas, ko parādīja katra prove.
 
-## Avoti {#sources}
+## Sources {#sources lang=en}
 
 - [Glazy: Raw materials](https://help.glazy.org/concepts/materials)
 - [Glazy: Specific gravity](https://help.glazy.org/testing/specific-gravity)
@@ -284,6 +284,7 @@ Label: Pierakstu veidne
 - [Digitalfire: Epsom salts](https://digitalfire.com/material/epsom+salts)
 - [Digitalfire: CMC gum](https://digitalfire.com/material/cmc%2Bgum)
 - [Digitalfire: Dipping glaze](https://digitalfire.com/glossary/dipping+glaze)
+- [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Water solubility](https://digitalfire.com/glossary/water+solubility)
 - [Digitalfire: Gerstley Borate](https://digitalfire.com/material/gerstley+borate)
 - [Digitalfire: Mahavir potash feldspar](https://digitalfire.com/material/mahavir+potash+feldspar)
@@ -297,10 +298,10 @@ Label: Pierakstu veidne
 - [Derek Au: Mixing test glazes](https://www.derekau.net/blog/2016/02/24/mixing-test-glazes)
 - [Derek Au: Digital scales for weighing glazes](https://derekau.net/blog/digital-scales-for-weighing-glazes/)
 - [Derek Au: Triaxial testing](https://derekau.net/blog/triaxial-testing/)
-- [UT Austin keramikas wiki: How to mix glazes](https://cloud.wikis.utexas.edu/wiki/display/ceramics/How+To+Mix+Glazes)
+- [UT Austin ceramics wiki: How to mix glazes](https://cloud.wikis.utexas.edu/wiki/display/ceramics/How+To+Mix+Glazes)
 - [Potclays: The beginner's guide to glaze testing](https://www.potclays.co.uk/the-beginners-guide-to-glaze-testing/)
 - [Potclays: Glaze hydrometer](https://www.potclays.co.uk/glaze-hydrometer)
 - [Potterycrafts: Nordic Blue Mist powder glaze](https://potterycrafts.co.uk/products/potterycrafts-nordic-blue-mist-powder-glaze)
 - [HSE: Glaze and colour preparation (CR1)](https://www.hse.gov.uk/PUBNS/guidance/cr1.pdf)
 - [Valentine Clays: Flint technical data sheet](https://valentineclays.co.uk/cdn/shop/files/Flint_Damp_Dry_Technical_Data_Sheet.pdf)
-- [Ceramic Arts Daily forums: Ian Currie test tiles](https://community.ceramicartsdaily.org/topic/7974-ian-currie-test-tiles-forums/page/16/)
+- [Ceramic Arts Daily forum: Ian Currie test tiles](https://community.ceramicartsdaily.org/topic/7974-ian-currie-test-tiles-forums/page/16/)
