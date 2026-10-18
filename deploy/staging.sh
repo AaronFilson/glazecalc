@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 # Staging: a test build of glazecalc beside production on this instance, at
 # https://staging.glazecalcapp.com (docs/mfa-plan.md, "Phase 2"; deploy/README.md,
-# "Staging"). Run as root, by hand, in Session Manager; nothing in CI runs it.
+# "Staging"). Run as root: by the Deploy staging workflow through SSM Run
+# Command (deploy/aws/staging-deploy-document.json), or by hand in Session Manager.
 #
 #   /opt/glazecalc/staging.sh staging-<sha>   an image from scripts/build-staging.sh, pushed to GHCR
 #   /opt/glazecalc/staging.sh sha-<sha>       a master build from CI, as production uses
@@ -11,8 +12,11 @@
 #   /opt/glazecalc/staging.sh stop            stops staging (it can also stay running between rounds)
 #   /opt/glazecalc/staging.sh reset-db        empties the staging database, after a typed confirmation
 #
-# <sha> is the full 40-character commit. A failed start puts back the staging
-# version that was running (or leaves staging stopped) and says so.
+# <sha> is the full 40-character commit, pushed to GitHub: staging.sh,
+# compose.staging.yaml and mongo-users.sh are first updated from it (re-running
+# this script if it changed), and staging's nginx site after the start
+# (install-nginx.sh), as deploy.sh does for production. A failed start puts
+# back the staging version that was running (or leaves staging stopped) and says so.
 #
 # Production is never touched, on any path:
 #   - every Compose command goes through staging(), which names the project
@@ -58,6 +62,42 @@ cd "$dir"
 exec 9> /run/glazecalc-staging.lock
 flock -n 9 || fail "staging.sh is already running."
 
+# Deploying an image: its tag names its commit, and the image's revision label
+# must name the same one (checked once it is pulled).
+s3=
+sha=
+if [[ "$arg" =~ ^s3://[a-z0-9.-]+/staging-images/(staging-([0-9a-f]{40}))\.tar\.gz$ ]]; then
+  s3=$arg
+  tag=${BASH_REMATCH[1]}
+  sha=${BASH_REMATCH[2]}
+elif [[ "$arg" =~ ^(staging|sha)-([0-9a-f]{40})$ ]]; then
+  tag=$arg
+  sha=${BASH_REMATCH[2]}
+fi
+raw=https://raw.githubusercontent.com/AaronFilson/glazecalc/$sha/deploy
+
+# That commit's staging files, checked below as any others. If staging.sh
+# changed, the new one runs instead, once: it sees GLAZECALC_STAGING_SELF.
+if [ -n "$sha" ] && [ "${GLAZECALC_STAGING_SELF:-}" != "$sha" ]; then
+  for f in staging.sh mongo-users.sh compose.staging.yaml; do
+    curl -fsSL "$raw/$f" -o "$dir/$f.new" \
+      || fail "Could not download deploy/$f at ${sha:0:12}: is the commit pushed to GitHub? Staging is unchanged."
+  done
+  bash -n "$dir/staging.sh.new" && bash -n "$dir/mongo-users.sh.new" \
+    || fail "The staging scripts at ${sha:0:12} do not parse; staging is unchanged."
+  chmod 750 "$dir/staging.sh.new" "$dir/mongo-users.sh.new"
+  mv "$dir/mongo-users.sh.new" "$dir/mongo-users.sh"
+  # The Compose file the running version uses, for restore_previous.
+  if [ -f "$dir/compose.staging.yaml" ]; then cp -a "$dir/compose.staging.yaml" "$dir/compose.staging.yaml.prev"; fi
+  mv "$dir/compose.staging.yaml.new" "$dir/compose.staging.yaml"
+  if ! cmp -s "$dir/staging.sh.new" "$dir/staging.sh"; then
+    mv "$dir/staging.sh.new" "$dir/staging.sh"
+    echo "staging.sh changed in ${sha:0:7}; running the new version."
+    GLAZECALC_STAGING_SELF=$sha exec "$dir/staging.sh" "$arg"
+  fi
+  rm -f "$dir/staging.sh.new"
+fi
+
 # Every Compose command for staging. --project-name keeps it in its own project
 # whatever the file says; --env-file /dev/null keeps production's .env (its
 # GLAZECALC_TAG) out of it. The image tag comes from $use_tag.
@@ -67,7 +107,7 @@ staging() {
     --project-directory "$dir" --env-file /dev/null -f "$file" "$@"
 }
 
-# compose.staging.yaml is installed by hand (deploy/README.md, "Staging"). Check
+# compose.staging.yaml comes from the deployed commit (above), or was installed by hand. Check
 # that it is the staging file: its own project, only an app service.
 [ -f "$file" ] || fail "$file is missing (deploy/README.md, Staging: install the files)."
 grep -qx 'name: glazecalc-staging' "$file" || fail "$file is not the staging Compose file."
@@ -167,19 +207,8 @@ case "$arg" in
     ;;
 esac
 
-# Deploying an image. Its tag names its commit; the image's revision label must
-# name the same one.
-s3=
-if [[ "$arg" =~ ^s3://[a-z0-9.-]+/staging-images/(staging-([0-9a-f]{40}))\.tar\.gz$ ]]; then
-  s3=$arg
-  tag=${BASH_REMATCH[1]}
-  sha=${BASH_REMATCH[2]}
-elif [[ "$arg" =~ ^(staging|sha)-([0-9a-f]{40})$ ]]; then
-  tag=$arg
-  sha=${BASH_REMATCH[2]}
-else
-  usage
-fi
+# Deploying an image (its tag and commit were read above).
+[ -n "$sha" ] || usage
 previous=$(running_tag)
 # Put back after a failure only if it was running: one stopped between rounds stays stopped.
 was_running=$(use_tag=$previous staging ps -q --status running app)
@@ -292,6 +321,11 @@ restore_previous() {
   echo "Staging $tag failed." >&2
   use_tag=$tag staging ps -a --format '{{.Service}}: {{.Status}}' >&2 || true
   use_tag=$tag staging logs --no-color --tail 30 app >&2 || true
+  # With the Compose file it ran with, if this run replaced it.
+  if [ -f "$file.prev" ]; then
+    use_tag=$tag staging down || true
+    mv "$file.prev" "$file"
+  fi
   if [ -n "$was_running" ] && [ -n "$previous" ] && [ "$previous" != "$tag" ]; then
     echo "Starting the previous staging version again: $previous" >&2
     if use_tag=$previous staging up -d --wait --wait-timeout 180; then
@@ -306,17 +340,34 @@ restore_previous() {
 }
 
 echo "Starting staging $tag (previous: ${previous:-none})"
+started=$(date -u +%Y-%m-%dT%H:%M:%SZ)
 use_tag=$tag staging up -d --wait --wait-timeout 180 || restore_previous
 healthy > /dev/null || restore_previous
+# Indexes it could not build (server/main.ts), as deploy.sh checks.
+if use_tag=$tag staging logs --no-color --since "$started" app 2>&1 | grep 'Could not build the indexes' >&2; then
+  restore_previous
+fi
 # The running app must have the allowlist, whatever the Compose file says.
 container=$(use_tag=$tag staging ps -q app)
 docker inspect -f '{{range .Config.Env}}{{println .}}{{end}}' "$container" | grep -q '^MAIL_ALLOWLIST=.' \
   || restore_previous
 printf 'GLAZECALC_STAGING_TAG=%s\n' "$tag" > "$tag_file"
+rm -f "$file.prev"
 
 # Standard materials, additives and advice from this image, as deploy.sh loads them.
 use_tag=$tag staging run --rm --no-deps app node scripts/seed-standard.js > /dev/null \
   || echo "Staging runs $tag, but loading the standard data failed; run this again." >&2
+
+# Staging's nginx site from the same commit, by that commit's install-nginx.sh,
+# which stays out of $dir: production's copy comes only with production's deploys.
+nginx_failed=no
+installer=$(mktemp)
+if ! curl -fsSL "$raw/install-nginx.sh" -o "$installer" 2> /dev/null; then
+  echo "${sha:0:7} has no install-nginx.sh; staging's nginx site is unchanged."
+elif ! bash "$installer" staging "$sha"; then
+  nginx_failed=yes
+fi
+rm -f "$installer"
 
 # Older staging images, never production's (sha-*): this one and the previous stay.
 docker image ls --format '{{.Repository}}:{{.Tag}}' "$image" \
@@ -327,3 +378,4 @@ docker image ls --format '{{.Repository}}:{{.Tag}}' "$image" \
 echo "Staged $tag (previous: ${previous:-none}): https://staging.glazecalcapp.com"
 echo "Health: $(healthy)"
 echo "It can stay running between rounds; to stop it: $0 stop"
+[ "$nginx_failed" = no ] || fail "But nginx kept staging's previous site (above): fix it and deploy again."

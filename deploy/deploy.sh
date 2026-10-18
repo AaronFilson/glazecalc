@@ -12,9 +12,11 @@
 # with the password alone (deploy/README.md, "Roll back").
 # If the new version fails to pull or to become healthy, the previous one is
 # started again and nothing is recorded, so a reboot never starts a failed deploy.
-# Each deploy also loads the standard data that ships with the image, and the
-# scripts here (deploy.sh, backup.sh, restore.sh, enable-https.sh) are updated from the
-# image's commit, so a change to them takes effect with the deploy that ships it.
+# Each deploy first backs up MongoDB (backup.sh; GLAZECALC_SKIP_BACKUP=1 skips
+# it, by hand only). It also loads the standard data that ships with the image,
+# and the scripts here (deploy.sh, backup.sh, restore.sh, enable-https.sh,
+# install-nginx.sh) and nginx's files are updated from the image's commit, so a
+# change to them takes effect with the deploy that ships it.
 set -euo pipefail
 
 allow_pre_mfa=no
@@ -86,6 +88,21 @@ if [ "$mfa_label" != 1 ]; then
   echo "Deploying $tag from before two-step sign-in (--allow-pre-mfa): accounts sign in with the password alone until a newer image is deployed." >&2
 fi
 
+# A backup before anything changes, since a release may add collections and
+# indexes or change the shape of records. Made once per deploy, by whichever
+# deploy.sh gets here first (GLAZECALC_BACKED_UP goes on to the new one below),
+# and only while production's MongoDB runs: a new instance has nothing to save.
+if [ -z "${GLAZECALC_BACKED_UP:-}" ] && [ "${GLAZECALC_SKIP_BACKUP:-}" != 1 ] \
+  && [ -n "$(docker compose -f compose.prod.yaml ps -q --status running mongo 2>/dev/null)" ]; then
+  echo "Backing up MongoDB before deploying."
+  if ! ./backup.sh; then
+    echo "The backup failed, so nothing was deployed. To deploy without one, by hand:" >&2
+    echo "GLAZECALC_SKIP_BACKUP=1 $0 $tag" >&2
+    exit 1
+  fi
+  export GLAZECALC_BACKED_UP=1
+fi
+
 # This commit's scripts. If deploy.sh itself changed, run the new one instead,
 # once: it sees GLAZECALC_DEPLOY_REF and skips this step.
 if [ "${GLAZECALC_DEPLOY_REF:-}" != "$ref" ]; then
@@ -104,6 +121,15 @@ if [ "${GLAZECALC_DEPLOY_REF:-}" != "$ref" ]; then
   fi
   rm -f deploy.sh.new
 fi
+# install-nginx.sh too, outside the step above: a deploy.sh from before it
+# hands over with that step done. Commits before it have none (a rollback):
+# the copy here stays.
+if curl -fsSL "$raw/$ref/deploy/install-nginx.sh" -o install-nginx.sh.new 2>/dev/null; then
+  bash -n install-nginx.sh.new
+  chmod 750 install-nginx.sh.new
+  mv install-nginx.sh.new install-nginx.sh
+fi
+rm -f install-nginx.sh.new
 
 # Region from the instance metadata service (IMDSv2).
 token=$(curl -fsS -X PUT http://169.254.169.254/latest/api/token -H 'X-aws-ec2-metadata-token-ttl-seconds: 60')
@@ -229,7 +255,22 @@ restore_previous() {
 
 new() { GLAZECALC_TAG="$tag" compose -f compose.prod.yaml.new "$@"; }
 new pull --quiet || restore_previous
+started=$(date -u +%Y-%m-%dT%H:%M:%SZ)
 new up -d --remove-orphans --wait --wait-timeout 180 || restore_previous
+# The app builds its indexes before it answers /api/health (server/main.ts). One
+# it could not build, such as an index changed in place (IndexOptionsConflict),
+# goes back to the previous version: drop the old index by hand, then deploy again
+# (deploy/README.md, "An index the app cannot build"). GLAZECALC_ALLOW_INDEX_ERRORS=1,
+# by hand only, keeps the new version anyway.
+index_errors=$(new logs --no-color --since "$started" app 2>&1 | grep 'Could not build the indexes' || true)
+if [ -n "$index_errors" ]; then
+  echo "$index_errors" >&2
+  if [ "${GLAZECALC_ALLOW_INDEX_ERRORS:-}" = 1 ]; then
+    echo "Keeping $tag although it could not build an index (GLAZECALC_ALLOW_INDEX_ERRORS=1)." >&2
+  else
+    restore_previous
+  fi
+fi
 
 mv compose.prod.yaml.new compose.prod.yaml
 printf 'GLAZECALC_TAG=%s\n' "$tag" > .env
@@ -249,4 +290,13 @@ fi
 # current and previous ones (which may have no container, or come from S3 and
 # cannot be pulled again) and removes the older ones itself.
 docker image prune -af --filter 'label!=com.glazecalcapp.staging' >/dev/null
+
+# nginx's files from the same commit (install-nginx.sh): the security headers,
+# routes and log rules this code expects. If nginx rejects them it keeps its own.
+if [ ! -x install-nginx.sh ]; then
+  echo "nginx: no install-nginx.sh here or at ${ref:0:7}; nginx's files are unchanged."
+elif ! ./install-nginx.sh production "$ref"; then
+  echo "The app runs $tag, but nginx kept its previous files (above). Fix them and deploy again." >&2
+  exit 1
+fi
 curl -fsS http://127.0.0.1:3000/api/health && echo

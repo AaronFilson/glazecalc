@@ -4,8 +4,10 @@
 #
 # Run once as root after the DNS switch: Let's Encrypt checks both names over
 # port 80, so they must already point at this instance. Running it again is
-# safe; it keeps the current certificate and refreshes the nginx files from
-# master. certbot.timer renews the certificate and reloads nginx afterwards.
+# safe; it keeps the current certificate and refreshes the nginx files
+# (install-nginx.sh). certbot.timer renews the certificate and reloads nginx
+# afterwards. Deploys install the nginx files themselves, so after the first
+# run this is needed only to add staging's name to the certificate.
 #
 #   ./enable-https.sh --dry-run   test against Let's Encrypt's staging server
 #                                 without saving a certificate or changing nginx
@@ -19,9 +21,9 @@
 # Without --with-staging the certificate keeps the names it has: production's
 # two, and the staging name only if it was added before (a run without the flag
 # never removes it; deploy/README.md, Staging, says how to retire it). The
-# nginx files come from master; GLAZECALC_STAGING_REF (a branch or commit) takes
-# the staging site's file from there instead, to set staging up from a branch
-# before it is merged. Production's files always come from master.
+# nginx files come from the commits production and staging run (master's before
+# the first deploy); GLAZECALC_STAGING_REF (a branch or commit) takes the staging
+# site's file from there instead.
 set -euo pipefail
 
 with_staging=false
@@ -30,7 +32,6 @@ for arg in "$@"; do
   if [ "$arg" = --with-staging ]; then with_staging=true; else certbot_args+=("$arg"); fi
 done
 staging=staging.glazecalcapp.com
-raw=https://raw.githubusercontent.com/AaronFilson/glazecalc/master/deploy/nginx
 staging_ref=${GLAZECALC_STAGING_REF:-master}
 # It goes into a URL path: no "..", and no leading "/", "-" or ".".
 if [[ ! "$staging_ref" =~ ^[A-Za-z0-9_][A-Za-z0-9._/-]*$ ]] || [[ "$staging_ref" == *..* ]]; then
@@ -79,54 +80,39 @@ if [[ " ${certbot_args[*]} " == *' --dry-run '* ]]; then
   exit 0
 fi
 
-# Install the HTTPS site, keeping the current files until nginx accepts the new ones.
-new=$(mktemp -d)
-trap 'rm -rf "$new"' EXIT
-for f in glazecalc-proxy.conf glazecalc-tls.conf glazecalc.conf; do
-  curl -fsSL "$raw/$f" -o "$new/$f"
-done
-# The staging site, once the certificate has its name (after --with-staging).
+# Install the HTTPS site with install-nginx.sh, which keeps the current files
+# until nginx accepts the new ones. Production's files come from the commit
+# production runs (its image's label), as deploy.sh installs them; master's
+# before the first deploy. Staging's from GLAZECALC_STAGING_REF, else the
+# commit staging runs, else master.
+image_commit() {
+  docker image inspect -f '{{ index .Config.Labels "org.opencontainers.image.revision" }}' \
+    "ghcr.io/aaronfilson/glazecalc:$1" 2> /dev/null || true
+}
+production_tag=$(sed -n 's/^GLAZECALC_TAG=//p' /opt/glazecalc/.env 2> /dev/null || true)
+production_ref=$( [ -n "$production_tag" ] && image_commit "$production_tag" || true)
+[[ "$production_ref" =~ ^[0-9a-f]{40}$ ]] || production_ref=master
+if [ -z "${GLAZECALC_STAGING_REF:-}" ]; then
+  staging_tag=$(sed -n 's/^GLAZECALC_STAGING_TAG=//p' /opt/glazecalc/staging.tag 2> /dev/null || true)
+  running_staging=$( [ -n "$staging_tag" ] && image_commit "$staging_tag" || true)
+  if [[ "$running_staging" =~ ^[0-9a-f]{40}$ ]]; then staging_ref=$running_staging; fi
+fi
+
+# deploy.sh keeps install-nginx.sh beside this script; a copy run from
+# elsewhere (deploy/README.md, Staging, step 5) takes it from the same commit.
+installer=/opt/glazecalc/install-nginx.sh
+if [ ! -f "$installer" ]; then
+  installer=$(mktemp)
+  trap 'rm -f "$installer"' EXIT
+  curl -fsSL "https://raw.githubusercontent.com/AaronFilson/glazecalc/$production_ref/deploy/install-nginx.sh" \
+    -o "$installer"
+fi
+bash "$installer" production "$production_ref"
 staging_site=false
 if [ "$with_staging" = true ] || [ "$has_staging" = true ]; then
-  curl -fsSL "${raw%/master/deploy/nginx}/$staging_ref/deploy/nginx/glazecalc-staging.conf" \
-    -o "$new/glazecalc-staging.conf"
+  bash "$installer" staging "$staging_ref"
   staging_site=true
 fi
-backup=$(mktemp -d)
-cp -a /etc/nginx/snippets/glazecalc-proxy.conf /etc/nginx/sites-available/glazecalc "$backup/"
-if [ -f /etc/nginx/sites-available/glazecalc-staging ]; then
-  cp -a /etc/nginx/sites-available/glazecalc-staging "$backup/"
-fi
-staging_was_on=false
-if [ -e /etc/nginx/sites-enabled/glazecalc-staging ]; then staging_was_on=true; fi
-install -m 644 "$new/glazecalc-proxy.conf" "$new/glazecalc-tls.conf" /etc/nginx/snippets/
-install -m 644 "$new/glazecalc.conf" /etc/nginx/sites-available/glazecalc
-if [ "$staging_site" = true ]; then
-  install -m 644 "$new/glazecalc-staging.conf" /etc/nginx/sites-available/glazecalc-staging
-  ln -sf /etc/nginx/sites-available/glazecalc-staging /etc/nginx/sites-enabled/glazecalc-staging
-fi
-if ! nginx -t; then
-  cp -a "$backup/glazecalc-proxy.conf" /etc/nginx/snippets/
-  cp -a "$backup/glazecalc" /etc/nginx/sites-available/
-  if [ -f "$backup/glazecalc-staging" ]; then
-    cp -a "$backup/glazecalc-staging" /etc/nginx/sites-available/
-  else
-    rm -f /etc/nginx/sites-available/glazecalc-staging
-  fi
-  if [ "$staging_was_on" = false ]; then rm -f /etc/nginx/sites-enabled/glazecalc-staging; fi
-  echo 'nginx rejected the new configuration; the previous one is back in place.' >&2
-  exit 1
-fi
-rm -rf "$backup"
-# The nginx log rotation (14 days) from the same place. A failed download or an
-# invalid file leaves the one in use.
-if curl -fsSL "${raw%/nginx}/logrotate/nginx" -o "$new/logrotate-nginx" \
-  && logrotate --debug "$new/logrotate-nginx" >/dev/null 2>&1; then
-  install -m 644 "$new/logrotate-nginx" /etc/logrotate.d/nginx
-else
-  echo 'Could not update the nginx log rotation; the current one is unchanged.' >&2
-fi
-systemctl reload nginx
 
 curl -fsS https://glazecalcapp.com/api/health
 echo

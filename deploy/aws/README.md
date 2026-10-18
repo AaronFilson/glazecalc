@@ -123,9 +123,29 @@ aws ssm create-document --name glazecalc-deploy --document-type Command --docume
   --content file://deploy/aws/deploy-document.json --tags Key=app,Value=glazecalc
 ```
 
-If `deploy-document.json` changes later:
+If `deploy-document.json` changes later (its timeout went from 600 to 900 seconds when deploys
+began backing up first: update it then):
 `aws ssm update-document --name glazecalc-deploy --content file://deploy/aws/deploy-document.json --document-version '$LATEST'`,
 then `aws ssm update-document-default-version --name glazecalc-deploy --document-version <new version>`.
+
+**Staging** (the Deploy staging workflow, deploy/README.md, "Staging"): a second role, which only
+runs in the repository's `staging` environment can assume, and which may only run the
+`glazecalc-staging-deploy` document. That runs `staging.sh` with a tag AWS checks to be
+`staging-<40 hex>` or `sha-<40 hex>`; the role cannot run production's document or any other
+command. But `staging.sh` runs as root on the instance production shares, and takes its own
+scripts from the commit it stages: approving a staging run trusts that branch's `deploy/` as
+much as running it by hand would. The workflow stages only commits on this repository's branches
+(never a fork's pull request), and only after the `staging` environment's reviewer approves. The
+OIDC provider above is shared.
+
+```bash
+aws iam create-role --role-name glazecalc-github-staging \
+  --assume-role-policy-document file://deploy/aws/github-oidc-trust-staging.json
+aws iam put-role-policy --role-name glazecalc-github-staging --policy-name ssm-staging-deploy \
+  --policy-document file://deploy/aws/staging-deploy-policy.json
+aws ssm create-document --name glazecalc-staging-deploy --document-type Command --document-format JSON \
+  --content file://deploy/aws/staging-deploy-document.json --tags Key=app,Value=glazecalc
+```
 
 ## 6. Security group: web traffic only
 
@@ -257,6 +277,11 @@ Sign in with a browser after `enable-https.sh`.
    required reviewer; add variables `AWS_DEPLOY_ROLE_ARN` =
    `arn:aws:iam::724654236968:role/glazecalc-github-deploy` and `AWS_REGION` = `us-west-2`.
 3. Actions → **Deploy** → Run workflow deploys the current master image.
+4. For staging, an environment `staging` the same way, with `AWS_STAGING_ROLE_ARN` =
+   `arn:aws:iam::724654236968:role/glazecalc-github-staging` and `AWS_REGION` = `us-west-2`.
+   Under **Deployment branches**, choose "Selected branches" and add `master`: the workflow is
+   always run from master (the branch to stage is its input), so a workflow file edited on
+   another branch can never assume the role.
 
 ## 13. DNS switch (after restoring data, see the plan)
 

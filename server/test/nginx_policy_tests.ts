@@ -95,8 +95,8 @@ describe('nginx access log', () => {
   });
 
   it("is staging's own copy, under its own names, so staging never depends on production's file", () => {
-    // enable-https.sh can install the staging file from a branch (GLAZECALC_STAGING_REF)
-    // and production's from master: the staging file defines what it writes.
+    // staging.sh installs the staging file from the branch it deploys, and deploy.sh
+    // production's from its own commit (install-nginx.sh): the staging file defines what it writes.
     const staging = logMapIn('glazecalc-staging.conf', 'glazecalc_staging');
     expect(staging.block.replaceAll('glazecalc_staging', 'glazecalc')).to.eql(logMapIn('glazecalc.conf').block);
     expect(staging.rewrite('GET /api/auth/google/callback?code=4%2F0Ab&state=xyz HTTP/1.1')).to.eql(
