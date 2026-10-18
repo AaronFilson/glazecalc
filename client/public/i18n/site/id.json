@@ -1,0 +1,245 @@
+{
+  "landing": {
+    "eyebrow": "Kalkulator glasir dan buku catatan studio",
+    "heading": "Kimia glasir gratis untuk pembuat keramik.",
+    "lead": "Pahami glasir Anda, bukan sekadar mencampurnya. Masukkan resep dan lihat formula Seger (UMF), rasio silika terhadap alumina, dan keseimbangan pelebur sekaligus. Simpan resep, bahan, pewarna, catatan, dan catatan pembakaran Anda bersama di satu buku catatan pribadi.",
+    "trialEnded": "Percobaan Anda telah berakhir. Mulai yang baru, atau buat akun gratis untuk menyimpan pekerjaan Anda.",
+    "tryIt": "Coba sekarang",
+    "createAccount": "Buat akun gratis",
+    "trialFailed": "Tidak dapat memulai percobaan saat ini. Silakan coba lagi.",
+    "heroNote": "Tidak perlu mendaftar untuk mencoba · Gratis dan sumber terbuka · Resep Anda tetap privat",
+    "heroAlt": "Sederet set kerucut yang telah dibakar: kerucut pirometrik putih di setiap set telah menekuk karena panas tungku.",
+    "heroCaption": "Set kerucut setelah pembakaran: setiap kerucut menekuk setelah tungku mencapai kerja panas yang cukup.",
+    "exampleHeading": "Lihat cara kerjanya: dasar seladon klasik",
+    "exampleCaption": "\"4321\" karya Bernard Leach, sering dibakar sampai kerucut 10, dalam bagian berat.",
+    "material": "Bahan",
+    "parts": "Bagian",
+    "unityHeading": "Formula Seger resep ini",
+    "exampleNote": "Pelebur berjumlah 1, sehingga dua glasir apa pun dapat dibandingkan secara adil. Dihitung di sini juga, di peramban Anda, oleh kode yang sama dengan yang dipakai kalkulator.",
+    "featuresHeading": "Apa yang dilakukan Glazecalc",
+    "features": {
+      "unity": {
+        "title": "Formula Seger instan",
+        "text": "Lihat pelebur, alumina, dan silika dalam kesatuan, cara ahli kimia glasir membandingkan resep, begitu Anda memasukkan resep."
+      },
+      "substitute": {
+        "title": "Perbaiki dan ganti",
+        "text": "Bahan dihentikan produksinya? Bandingkan rumus untuk menemukan pengganti yang meleleh dengan cara yang sama."
+      },
+      "notebook": {
+        "title": "Buku catatan studio Anda",
+        "text": "Simpan resep, bahan Anda sendiri, pewarna, catatan, dan catatan pembakaran bersama di satu tempat."
+      },
+      "learn": {
+        "title": "Belajar sambil jalan",
+        "text": "Panduan berbahasa sederhana, dari apa itu glasir sampai membakarnya dengan aman, berdampingan dengan angka-angkanya."
+      }
+    },
+    "umfHeading": "Apa itu formula Seger?",
+    "umfRecipe": "Resep glasir menyatakan berapa banyak setiap bahan yang ditimbang. Formula molekul kesatuan (UMF), disebut juga formula Seger, menyatakan menjadi apa bahan-bahan itu di dalam tungku: berapa banyak molekul setiap oksida, diskalakan agar pelebur berjumlah satu.",
+    "umfGroups": "Pelebur membuat glasir meleleh, alumina mengentalkan lelehan, dan silika membentuk kaca. Membandingkan ketiga kelompok itu menjelaskan mengapa satu glasir mengilap dan yang lain doff, atau mengapa satu mengalir sementara yang lain tetap di tempat, dan menunjukkan cara mengganti bahan yang tidak lagi dijual.",
+    "readAdvice": "Baca saran glasir lainnya",
+    "closingHeading": "Siap kapan pun Anda siap.",
+    "closingText": "Coba kalkulator sekarang, lalu buat akun untuk menyimpan apa yang Anda buat."
+  },
+  "about": {
+    "title": "Tentang Glazecalc",
+    "lead": "Kalkulator dan buku catatan kimia glasir yang gratis dan bersumber terbuka untuk pembuat keramik, keramikus, dan pelajar.",
+    "whatHeading": "Apa yang dilakukannya",
+    "what": "Glazecalc mengubah resep glasir, yaitu bahan dan berapa banyak masing-masing yang Anda timbang, menjadi formula Seger: oksida penyusun glasir setelah dibakar, diskalakan agar pelebur berjumlah satu. Itu membuat resep dapat dibandingkan, membantu menjelaskan perilaku glasir, dan membantu saat bahan harus diganti.",
+    "alongside": "Di samping kalkulator, aplikasi ini menyimpan resep, bahan Anda sendiri, pewarna dan aditif lain, catatan, dan catatan pembakaran Anda, halaman <advice>saran glasir</advice> praktis, dan <guides>panduan</guides> untuk pembuat keramik pemula, dari apa itu glasir sampai membakarnya dengan aman.",
+    "numbersHeading": "Cara angka dihitung",
+    "numbers": "Setiap bahan dijelaskan dengan rumus kimia atau analisis oksidanya, ditambah susut pijar (LOI)-nya: bagian yang terbakar habis di tungku, seperti karbon dioksida pada whiting atau air pada kaolin. Glazecalc mengubah setiap jumlah menjadi mol setiap oksida memakai massa molar standar, menjumlahkannya di seluruh resep, dan membaginya dengan total mol pelebur. Pewarna dan aditif lain dicantumkan bersama resep tetapi tidak dimasukkan ke formula Seger, seperti lazimnya.",
+    "guide": "Hasilnya adalah panduan, bukan jaminan. Bahan nyata berbeda dari satu pemasok ke pemasok lain dan dari satu batch ke batch lain, dan pembakaran sama pentingnya dengan kimia, jadi ujilah setiap glasir. Glasir untuk permukaan pangan sebaiknya diuji pelindian.",
+    "builtHeading": "Cara aplikasi ini dibuat",
+    "built": "Glazecalc dimulai pada 2017 dan dibangun ulang pada 2026. Aplikasi ini adalah satu aplikasi web kecil, dan <source>kode sumbernya ada di GitHub</source> di bawah Lisensi MIT.",
+    "stackBrowser": "Angular 22 di peramban (komponen mandiri dan signal), dengan kimia glasir dalam pustaka bersama yang kecil.",
+    "stackServer": "API TypeScript di Node.js 24 dan Express 5, dengan MongoDB 9, diperiksa oleh lebih dari 350 pengujian otomatis.",
+    "stackHosting": "Berjalan di Docker di Amazon Web Services, di belakang nginx dengan HTTPS dari Let's Encrypt.",
+    "stackDeploy": "Dirilis oleh GitHub Actions: image dibangun dan diuji pada setiap perubahan, dan perilisan masuk ke AWS tanpa kunci tersimpan.",
+    "creditsHeading": "Kredit",
+    "credits": "Wilayah pada bagan Stull berasal dari pembacaan Glazy atas bagan R. T. Stull tahun 1912, oleh Derek Au (Hak Cipta (c) 2017 Derek Au, Lisensi MIT). <notices>Pemberitahuan lengkapnya</notices> ada di kode sumber.",
+    "whoHeading": "Siapa yang membuatnya",
+    "who": "Glazecalc dibuat oleh Aaron Filson. Menemukan masalah atau punya ide? <issues>Buka isu di GitHub</issues>.",
+    "studio": "Keramik buatan tangan Aaron Filson ada di <studio>Updraft Pottery Studio</studio> di Tacoma, Washington. Lihat karyanya, dan pesanlah sebuah karya jika ada yang menarik hati Anda.",
+    "languagesHeading": "Bahasa",
+    "languages": "Glazecalc tersedia dalam bahasa-bahasa ini. Setiap tautan membuka halaman ini dalam bahasa tersebut."
+  },
+  "privacy": {
+    "title": "Privasi",
+    "lead": "Terakhir diperbarui Oktober 2026.",
+    "shortHeading": "Singkatnya",
+    "short": "Glazecalc menyimpan apa yang diperlukan untuk menjalankan akun Anda, dan tidak lebih. Tidak ada iklan, tidak ada analitik, dan tidak ada pelacakan. Data Anda tidak pernah dijual, dan satu-satunya perusahaan yang menanganinya adalah Amazon Web Services, yang menjadi host situs ini dan mengirim emailnya.",
+    "whoHeading": "Siapa yang bertanggung jawab",
+    "who": "Glazecalc adalah proyek gratis, sumber terbuka, dan nirlaba, dijalankan oleh pemiliknya, Aaron Filson, di Amerika Serikat. Dialah yang memutuskan apa yang terjadi pada data Anda, sehingga dalam hukum perlindungan data ia disebut \"pengendali\" data Anda.",
+    "contact": "Untuk bertanya tentang data Anda, atau menggunakan hak Anda, tulis ke <mail>privacy@glazecalcapp.com</mail>. Anda juga dapat <issues>membuka isu di GitHub</issues>, tetapi isu bersifat publik: jangan pernah menaruh alamat email Anda atau apa pun yang bersifat pribadi di dalamnya. Sebagian besar hal tentang data Anda dapat Anda lakukan sendiri di <account>halaman akun</account> Anda.",
+    "storedHeading": "Apa yang disimpan, dan mengapa",
+    "storedAccount": "<b>Akun Anda:</b> alamat email Anda, dan kata sandi Anda, yang disimpan hanya sebagai hash satu arah (bcrypt), tidak pernah sebagai kata sandi itu sendiri. Pengaturan Anda (seperti bahasa, wilayah, dan satuan) dan daftar bahan yang Anda punya disimpan bersamanya. Akun memerlukan alamat email, untuk masuk dan untuk menyetel ulang kata sandi yang terlupa. Saat Anda membuat akun, sebuah tautan dikirim ke alamat itu untuk memastikan bahwa alamat itu milik Anda; sampai saat itu, email dikirim ke sana hanya jika Anda memintanya, misalnya untuk penyetelan ulang kata sandi.",
+    "storedPrices": "<b>Harga, jika Anda memberikannya:</b> apa yang Anda bayar untuk setiap bahan, per kilogram, dan mata uangnya, untuk biaya satu batch. Ini data bisnis, disimpan bersama akun Anda dan privat untuknya: harga tidak pernah menjadi bagian dari resep, sehingga tidak ada yang Anda bagikan yang menampilkannya. Unduh data saya menyertakannya, dan menghapus akun menghapusnya. Harga dari sebuah percobaan pindah ke akun Anda bersama catatannya, untuk bahan yang belum Anda beri harga, jika keduanya dalam mata uang yang sama.",
+    "storedEmailChange": "<b>Mengubah email Anda:</b> tanggal alamat Anda terakhir berubah, sehingga permintaan untuk mematikan autentikasi dua langkah tidak pernah diterima dari alamat baru dalam 30 hari sesudahnya.",
+    "storedSignIn": "<b>Autentikasi dua langkah, jika Anda mengaktifkannya:</b> apakah aktif; kunci yang dibagikan aplikasi autentikator Anda dengan Glazecalc, terenkripsi; untuk setiap kunci sandi, kunci publiknya (yang tidak dapat dipakai masuk sendiri) beserta id dan rincian yang diberikan perangkat Anda, nama yang Anda berikan, dan kapan ditambahkan dan terakhir dipakai; kode pemulihan Anda, hanya sebagai hash satu arah berkunci, sehingga tidak ada yang dapat membacanya kembali; dan, jika seseorang memasukkan kata sandi Anda tetapi tidak menyelesaikan langkah kedua, kapan Glazecalc terakhir mengirim email kepada Anda tentang hal itu (paling banyak sekali sehari). Saat Anda masuk, antara kata sandi dan langkah kedua, server menyimpan catatan proses masuk itu selama 5 menit, dan halaman menyimpan token singkat hanya di memorinya: tanpa cookie baru, tanpa apa pun di penyimpanan peramban Anda.",
+    "storedSaved": "<b>Apa yang Anda simpan:</b> resep, bahan, aditif, catatan, catatan pembakaran, dan saran Anda, sebagaimana Anda menulisnya. Hanya Anda yang dapat melihatnya, kecuali Anda membagikan resep lewat tautan.",
+    "storedTrash": "<b>Sampah dan versi sebelumnya:</b> apa yang Anda hapus dari daftar menunggu di Sampah, utuh, sehingga Anda dapat mengembalikannya; dan setiap perubahan yang Anda simpan pada sebuah item menyimpan item itu seperti sebelumnya, sehingga Anda dapat membatalkan perubahan.",
+    "storedShares": "<b>Resep yang Anda bagikan lewat tautan, jika ada:</b> resep yang mana, kapan tautannya dibuat dan apakah menampilkan catatan resep, dengan hash satu arah dari tautan (tidak pernah tautannya sendiri). Siapa pun yang memiliki tautan dapat melihat resep seperti saat ini, dengan formula Seger-nya, dan catatannya jika Anda memilih menampilkannya; tidak pernah email Anda, akun Anda, atau harga apa pun. Resep yang dibagikan dijauhkan dari mesin pencari, dan tautannya tidak pernah sampai ke log server. Untuk mencegah penyalahgunaan, resep yang dibagikan yang dibuka dari setiap alamat IP dihitung, di memori, selama 15 menit. Percobaan tidak dapat membagikan.",
+    "storedTokens": "<b>Token akses dan aplikasi terhubung, jika Anda membuat atau menyetujuinya:</b> untuk masing-masing, namanya, apa yang boleh dilakukannya, hash satu arah dari token (tidak pernah tokennya sendiri) dan 4 karakter terakhirnya, serta kapan dibuat, terakhir dipakai, kedaluwarsa, dan dicabut.",
+    "storedActivity": "<b>Apa yang dilakukan token dan aplikasi:</b> satu baris untuk setiap item yang dibuat, diubah, dipindahkan ke Sampah, dikembalikan, atau dibatalkan oleh token akses atau aplikasi terhubung: kapan, token atau aplikasi yang mana, apa yang dilakukannya dan judul item, dipotong. Tidak pernah teks catatan atau apa pun lain dalam item itu. Perubahan yang Anda buat di situs web tidak dicantumkan.",
+    "storedLimits": "<b>Batas seberapa sering:</b> untuk mencegah tebak-tebakan dan skrip yang lepas kendali, hitungan percobaan masuk, pendaftaran, permintaan penyetelan ulang, dan percobaan menurut alamat IP atau akun, token akses yang tidak berfungsi menurut alamat IP, item yang dipindahkan setiap token akses ke Sampah, menurut token, resep yang dibagikan yang dibuka dan tautan berbagi yang tidak membuka apa pun, menurut alamat IP, dan permintaan ke alat untuk asisten AI (MCP): 60 per menit dan 2.000 per hari menurut alamat IP, atau 120 per menit dan 5.000 per hari menurut akun saat token akses dipakai, dengan paling banyak 10 penggantian atau pencocokan per menit.",
+    "storedTrial": "<b>Percobaan (\"Coba sekarang\"):</b> tanpa email atau kata sandi, hanya nama karangan seperti \"speckled quiet kilns\". Jika Anda masuk ke akun di peramban yang sama saat percobaan, apa yang Anda buat dalam percobaan pindah ke akun.",
+    "storedResets": "<b>Penyetelan ulang kata sandi dan tautan email:</b> akun mana yang meminta, kapan, alamat tempat tautan untuk mengonfirmasi alamat dikirim, dan sidik jari setiap tautan (bukan tautannya sendiri).",
+    "storedLogs": "<b>Log:</b> server web mencatat setiap permintaan: alamat IP Anda, waktu, halaman yang diminta, dan nama peramban Anda. Aplikasi mencatat kesalahan bersama halaman tempat kesalahan itu terjadi, tidak pernah alamat email Anda.",
+    "storedDeletions": "<b>Akun yang dihapus:</b> nomor id akun dan kapan dihapus, dan tidak ada yang lain, agar cadangan yang dipulihkan tidak dapat mengembalikan akun itu.",
+    "storedMail": "<b>Masalah email:</b> jika email ke alamat Anda memantul atau dilaporkan sebagai spam, layanan email Amazon memasukkan alamat itu ke daftar yang tidak boleh dikirimi email lagi, dan mengirim pemberitahuan kepada pemilik yang menyertakan alamat itu.",
+    "storedInbound": "<b>Email yang Anda kirim ke Glazecalc:</b> email ke privacy@glazecalcapp.com dan alamat Glazecalc lainnya diperiksa oleh Amazon untuk spam dan virus, disimpan di penyimpanan privat, dan diteruskan ke kotak masuk pribadi pemilik (Gmail).",
+    "basisHeading": "Dasar hukum",
+    "basisContract": "<b>Menjalankan akun Anda</b>, menyimpan apa yang Anda simpan, dan email tentang akun Anda adalah layanan yang Anda minta: dasar hukumnya adalah kontrak antara Anda dan Glazecalc (GDPR Pasal 6(1)(b)).",
+    "basisInterests": "<b>Menjaga situs tetap aman dan berfungsi</b>: log, batas seberapa sering seseorang dapat mencoba masuk, cadangan, catatan akun yang dihapus, dan daftar alamat yang tidak boleh dikirimi email. Ini bertumpu pada kepentingan sah Glazecalc dalam keamanan, mencegah penyalahgunaan, dan tidak kehilangan pekerjaan Anda (Pasal 6(1)(f)). Semuanya disimpan singkat dan tidak dipakai untuk hal lain. Anda dapat keberatan dengan menulis ke alamat di atas.",
+    "basisNone": "Tidak ada keputusan tentang Anda yang diambil secara otomatis, tidak ada pembuatan profil, dan tidak ada yang dipakai untuk iklan.",
+    "whereHeading": "Di mana data disimpan, dan siapa yang menanganinya",
+    "hosting": "Glazecalc berjalan di Amazon Web Services (AWS): server (EC2), cadangan (S3), dan email (Simple Email Service), semuanya di Amerika Serikat, di Oregon (us-west-2). AWS menangani data hanya atas nama Glazecalc, berdasarkan <dpa>ketentuan pemrosesan datanya</dpa>. Tidak ada pihak lain yang menerimanya.",
+    "transfer": "Jika Anda tinggal di UE, Inggris Raya, atau Swiss, data Anda dikirim ke Amerika Serikat. Amazon menyatakan telah tersertifikasi di bawah <dpf>Kerangka Privasi Data UE–AS</dpf> dan perluasannya untuk Inggris Raya dan Swiss, dan ketentuan AWS mencakup Klausul Kontrak Standar UE, yang tetap berlaku seandainya Kerangka itu, yang kini digugat di pengadilan, dibatalkan. Pemilik dan AWS sama-sama berada di AS, dan hukum AS dapat mewajibkan mereka menyerahkan data.",
+    "noThirdParties": "Peramban Anda tidak memuat apa pun dari situs web lain: tidak ada font, skrip, gambar, atau analitik dari tempat lain, dan pengaturan keamanan situs memblokirnya. Tautan ke GitHub dan situs lain hanya diikuti saat Anda mengekliknya.",
+    "choiceHeading": "Di mana akun Anda disimpan, dan pilihan Anda",
+    "choiceProject": "Glazecalc adalah proyek gratis dan sumber terbuka. Akun, dan semua yang dimuatnya, disimpan di server di Amerika Serikat, di mana pun Anda tinggal, seperti dijelaskan di atas.",
+    "choiceNoAccount": "Anda tidak perlu akun untuk membaca panduan, dan Anda dapat mencoba kalkulator dengan \"Coba sekarang\", tanpa alamat email atau kata sandi. Percobaan disimpan di server yang sama selama 14 hari.",
+    "choiceOwnCopy": "Siapa pun dapat menjalankan salinan Glazecalc sendiri, di komputer atau server sendiri: kodenya gratis di <source>GitHub</source>.",
+    "choiceDecision": "Apakah akan membuat akun di sini, dengan mengetahui bahwa akun itu disimpan di Amerika Serikat, adalah keputusan Anda sendiri.",
+    "choiceNoWarranty": "Glazecalc disediakan apa adanya, tanpa jaminan. Para pengelolanya tidak menerima tanggung jawab atau kewajiban atas keputusan Anda membuat akun, atau atas di mana datanya disimpan.",
+    "keptHeading": "Berapa lama disimpan",
+    "keptAccount": "<b>Akun Anda dan apa yang Anda simpan:</b> sampai Anda menghapusnya. Akun tidak dihapus karena tidak dipakai.",
+    "keptTrash": "<b>Sampah dan versi sebelumnya:</b> item yang dihapus disimpan 30 hari setelah Anda menghapusnya, atau sampai Anda menghapusnya secara permanen atau mengosongkan Sampah; versi sebelumnya 90 hari, dan hanya 20 terakhir dari setiap item (dan satu dari sebelum perubahan oleh token akses), tetapi tidak pernah lebih lama dari item itu sendiri: selama item ada di Sampah, versinya hilang saat item itu hilang. Keduanya hilang sekaligus saat Anda menghapus akun.",
+    "keptShares": "<b>Tautan berbagi:</b> sampai Anda berhenti membagikan resep, membuat tautan baru untuknya, memindahkannya ke Sampah, atau menghapus akun Anda. Mengembalikan resep dari Sampah tidak membagikannya lagi. Menyetel ulang kata sandi atau keluar dari semua perangkat juga menghentikan semua tautan Anda; mengubah kata sandi tidak.",
+    "keptTokens": "<b>Token akses dan aplikasi terhubung:</b> masing-masing sampai 30 hari setelah kedaluwarsa (setiap token kedaluwarsa, paling lama dalam setahun), atau sampai Anda menghapus akun. Penyetelan ulang kata sandi atau \"Keluar dari semua perangkat\" menghentikan semuanya sekaligus.",
+    "keptActivity": "<b>Apa yang dilakukan token dan aplikasi:</b> 90 hari, atau sampai Anda menghapus akun.",
+    "keptLimits": "<b>Batas seberapa sering:</b> hitungan disimpan hanya di memori server, selama 1 menit sampai 24 jam, dan hilang saat server dimulai ulang.",
+    "keptTrial": "<b>Percobaan:</b> 14 hari sejak dimulai, lalu dihapus beserta semua isinya, kecuali Anda membuat akun untuk menyimpannya.",
+    "keptResets": "<b>Penyetelan ulang kata sandi dan tautan email:</b> tautan penyetelan ulang berlaku 30 menit dan catatannya dihapus setelah sekitar satu jam; tautan untuk mengonfirmasi alamat berlaku, dan disimpan, selama 24 jam.",
+    "keptSignIn": "<b>Autentikasi dua langkah:</b> setiap aplikasi autentikator, kunci sandi, dan set kode pemulihan sampai Anda menghapusnya, mematikan autentikasi dua langkah, atau menghapus akun. Proses masuk yang menunggu langkah kedua dihapus setelah 5 menit, dan aplikasi atau kunci sandi yang mulai Anda tambahkan tetapi tidak selesai, setelah paling lama 10.",
+    "keptBackups": "<b>Cadangan:</b> salinan terenkripsi basis data disimpan 30 hari, dan salinan disk server 7 hari. Jadi akun yang dihapus hilang dari setiap cadangan dalam 30 hari.",
+    "keptDeletions": "<b>Catatan akun yang dihapus:</b> 37 hari, sedikit lebih lama dari cadangan mana pun.",
+    "keptLogs": "<b>Log:</b> log server web, 14 hari. Log aplikasi dan log basis data sendiri dibatasi menurut ukuran (masing-masing 50 MB), yang di situs yang sepi mencakup beberapa hari ke belakang. Salinan disk server menyimpan log sampai 7 hari lebih lama.",
+    "keptMail": "<b>Daftar alamat yang tidak boleh dikirimi email:</b> sampai pemilik menghapus suatu alamat, yang ia lakukan setiap bulan untuk alamat yang tidak lagi milik akun mana pun. Pemilik menghapus pemberitahuan pantulan dalam 30 hari.",
+    "keptInbound": "<b>Email yang Anda kirim ke Glazecalc:</b> 30 hari di penyimpanan Amazon, dan di kotak masuk pemilik selama diperlukan untuk menjawab Anda. Untuk permintaan tentang data Anda, catatan singkat (kapan masuk, apa yang diminta, dan apa yang dilakukan) disimpan selama tiga tahun.",
+    "rightsHeading": "Hak Anda",
+    "rightsIntro": "Anda dapat melihat, memperbaiki, membawa, dan menghapus data Anda. Sebagian besar dapat Anda lakukan sendiri di <account>halaman akun</account> Anda:",
+    "rightsExport": "<b>Melihatnya dan membawanya:</b> Unduh data saya menyimpan semuanya dalam satu berkas (JSON), termasuk nama dan tanggal metode autentikasi dua langkah Anda (tidak pernah kunci atau kodenya), dan resep serta bahan Anda sebagai lembar kerja (CSV).",
+    "rightsCorrect": "<b>Memperbaikinya:</b> ubah pengaturan dan data Anda kapan saja. Untuk mengubah alamat email, buka tautan yang dikirim ke alamat baru; alamat lama, jika sudah dikonfirmasi, diberi tahu tentang perubahan itu, dan setiap perangkat dikeluarkan.",
+    "rightsDelete": "<b>Menghapusnya:</b> Hapus akun saya menghapus akun Anda dan semua yang Anda simpan sekaligus, dan \"Buang percobaan\" melakukan hal yang sama untuk percobaan. Salinan di cadangan hilang dalam 30 hari.",
+    "rightsSignOut": "<b>Keluar dari semua perangkat:</b> mengakhiri sesi akun Anda di setiap perangkat.",
+    "rightsAsk": "Untuk hal lain, seperti meminta agar data Anda ditahan dari penggunaan sementara kesalahan diperbaiki, atau keberatan atas cara data dipakai, tulis ke <mail>privacy@glazecalcapp.com</mail>. Gratis, dan Anda akan mendapat jawaban dalam sebulan. Anda hanya akan diminta menunjukkan bahwa akun itu milik Anda, dengan masuk atau dengan membuka tautan yang dikirim ke alamatnya, tidak pernah kartu identitas.",
+    "rightsComplain": "Jika Anda tidak puas, Anda dapat mengajukan pengaduan ke otoritas perlindungan data: di UE, <edpb>otoritas di negara Anda</edpb>, dan di Inggris Raya, <ico>Information Commissioner's Office</ico>.",
+    "storageHeading": "Cookie dan penyimpanan peramban",
+    "storageIntro": "Glazecalc menetapkan dua cookie, yang kedua hanya saat Anda masuk dengan Google atau GitHub, dan menyimpan beberapa nilai kecil di peramban Anda. Masing-masing ada untuk sesuatu yang Anda minta: tetap masuk, masuk dengan Google atau GitHub, atau mengingat pilihan yang Anda buat. Tidak ada yang melacak Anda dan tidak ada yang dibagikan, jadi hukum tidak mewajibkan meminta izin terlebih dahulu, dan tidak ada spanduk cookie.",
+    "storageLabel": "Cookie dan penyimpanan peramban",
+    "storageName": "Nama",
+    "storagePurpose": "Untuk apa",
+    "storageLasts": "Berapa lama bertahan",
+    "storageCookie": "Cookie",
+    "storageLocal": "Penyimpanan lokal",
+    "storageSession": "Penyimpanan sesi",
+    "storageNote": "Anda dapat menghapus semua ini di pengaturan peramban kapan saja. Menghapus akun Anda menghapus catatan masuk dan setiap pengaturan yang disimpan di sini.",
+    "keys": {
+      "cookie": {
+        "purpose": "Membuat Anda tetap masuk. Berisi token masuk Anda. Skrip di halaman tidak dapat membacanya, dan peramban Anda mengirimkannya hanya ke server Glazecalc sendiri, lewat HTTPS, dan tidak pernah bersama permintaan yang dimulai di situs lain.",
+        "lasts": "Ditetapkan saat Anda masuk, membuat akun, atau memulai percobaan. Sampai Anda menutup peramban, atau 7 hari jika Anda mencentang \"Biarkan saya tetap masuk di perangkat ini\"; 14 hari untuk percobaan. Keluar menghapusnya."
+      },
+      "session": {
+        "purpose": "Mencatat bahwa Anda masuk, ke akun atau percobaan, agar aplikasi tahu harus bertanya ke server. Tidak berisi token atau kata sandi.",
+        "lasts": "Sampai Anda keluar atau sesi berakhir."
+      },
+      "trial": {
+        "purpose": "Selama percobaan, namanya dan tanggal berakhirnya, untuk menampilkannya.",
+        "lasts": "Sampai percobaan berakhir, atau disimpan atau dibuang."
+      },
+      "settings": {
+        "purpose": "Pengaturan yang Anda ubah di peramban ini, agar halaman berikutnya langsung menampilkannya, sebelum server menjawab. <code>theme</code> dan <code>palette</code> mewarnai halaman sebelum muncul, dan <code>language</code> membuka halaman dalam bahasa Anda.",
+        "lasts": "Sampai Anda mengubahnya. Keluar mengembalikan apa yang Anda pilih saat tidak masuk, jika ada, dan menghapus sisanya."
+      },
+      "visitor": {
+        "purpose": "Bahasa yang Anda pilih, atau bahwa Anda menutup catatan terjemahan, saat belum masuk, agar kembali saat Anda keluar.",
+        "lasts": "Sampai Anda menghapus penyimpanan peramban atau menghapus akun di peramban ini."
+      },
+      "region": {
+        "purpose": "Filter wilayah pada daftar pustaka.",
+        "lasts": "Sampai Anda mengembalikan filter ke semua wilayah."
+      },
+      "includeAdditives": {
+        "purpose": "Apakah resep baru menghitung aditifnya dalam formula Seger, sesuai pilihan terakhir Anda.",
+        "lasts": "Sampai Anda menghapus penyimpanan peramban."
+      },
+      "print": {
+        "purpose": "Pilihan terakhir Anda untuk mencetak resep: seluruh resep, batch, atau lembar kerja, dan ukuran batch.",
+        "lasts": "Sampai Anda menghapus penyimpanan peramban."
+      },
+      "token": {
+        "purpose": "Token masuk dari versi lama Glazecalc. Sekarang tidak pernah ditulis.",
+        "lasts": "Dihapus saat halaman dibuka."
+      },
+      "readEnglish": {
+        "purpose": "Bahwa Anda memilih membaca halaman terjemahan dalam bahasa Inggris, agar aplikasi berhenti memindahkan Anda ke bahasa Anda.",
+        "lasts": "Sampai Anda menutup tab."
+      },
+      "reloadedFor": {
+        "purpose": "Setelah versi baru situs dirilis, halaman mana yang dimuat ulang dan kapan, agar halaman dimuat ulang paling banyak sekali semenit.",
+        "lasts": "Sampai Anda menutup tab."
+      },
+      "oauthCookie": {
+        "purpose": "Hanya saat Anda masuk dengan Google atau GitHub: mengikat jawaban penyedia ke peramban Anda, agar tidak ada orang lain yang dapat menyelesaikan proses masuk Anda atau memulai satu untuk Anda. Skrip di halaman tidak dapat membacanya.",
+        "lasts": "Ditetapkan saat Anda menekan \"Lanjutkan dengan Google\" atau \"Lanjutkan dengan GitHub\", atau menautkan salah satunya di halaman akun Anda. Dihapus saat proses masuk selesai, atau setelah 10 menit."
+      }
+    },
+    "childrenHeading": "Anak-anak",
+    "children": "Glazecalc adalah alat untuk pembuat keramik dan tidak ditujukan kepada anak-anak.",
+    "changesHeading": "Perubahan",
+    "changes": "Jika pemberitahuan ini berubah, tanggal di bagian atas halaman juga berubah.",
+    "storedProviders": "<b>Google atau GitHub, jika Anda masuk dengan salah satunya:</b> id milik penyedia untuk Anda (angka atau kode yang tidak pernah berubah), kapan Anda menautkannya dan kapan terakhir masuk dengannya, dan apakah akun Anda memiliki kata sandi sendiri. Tidak ada yang lain dari penyedia yang disimpan: bukan nama Anda, foto Anda, atau kunci apa pun ke akun Anda di sana. Saat Anda masuk, server menyimpan catatan proses masuk itu, dengan email yang menurut penyedia milik Anda bila diperlukan: untuk akun baru, tempat email itu menjadi email akun Anda, atau, bila akun Glazecalc sudah memiliki email itu, untuk menautkan penyedia ke akun tersebut setelah Anda masuk ke akun itu. Catatan itu, dan email di dalamnya, dihapus dalam sekitar 10 menit.",
+    "providers": "<b>Masuk dengan Google atau GitHub</b> adalah pilihan Anda, dan hanya terjadi saat Anda menekan tombolnya. Peramban Anda lalu menuju Google atau GitHub, yang mengirim ke Glazecalc id mereka untuk Anda dan email Anda. Masing-masing adalah perusahaan terpisah, yang bertanggung jawab atas apa yang Anda bagikan kepadanya berdasarkan kebijakan privasinya sendiri. Tidak ada skrip atau gambar dari keduanya yang dimuat di halaman Glazecalc.",
+    "keptProviders": "<b>Google atau GitHub:</b> setiap tautan sampai Anda melepaskannya atau menghapus akun. Proses masuk yang sedang berlangsung dihapus setelah 10 menit."
+  },
+  "notFound": {
+    "heading": "Halaman tidak ditemukan",
+    "text": "Tidak ada halaman di alamat ini. Mungkin sudah dipindahkan, atau tautannya salah ketik.",
+    "start": "Ke halaman awal"
+  },
+  "advice": {
+    "title": "Saran glasir",
+    "lead": "Tips praktis tentang mencampur, mengglasir, dan membakar, ditambah saran Anda sendiri.",
+    "signUp": "<signup>Buat akun gratis</signup> atau <signin>masuk</signin> untuk menyimpan saran Anda sendiri.",
+    "generalHeading": "Saran umum",
+    "tags": "Tag: {list}",
+    "addHeading": "Tambahkan saran Anda sendiri",
+    "titleLabel": "Judul:",
+    "tagsLabel": "Tag:",
+    "contentLabel": "Isi saran:",
+    "save": "Simpan",
+    "mineHeading": "Saran saya",
+    "nothingSaved": "Belum ada yang tersimpan.",
+    "titleMissing": "Beri judul pada saran.",
+    "contentMissing": "Tulis sarannya.",
+    "fetchFailed": "Terjadi kesalahan saat mengambil informasi saran.",
+    "standardFetchFailed": "Terjadi kesalahan saat mengambil informasi saran dari server.",
+    "saved": "Berhasil menambahkan ke catatan saran.",
+    "saveFailed": "Terjadi kesalahan saat mengirim informasi saran."
+  },
+  "assistants": {
+    "title": "Pakai Glazecalc dari asisten AI Anda",
+    "lead": "Asisten AI seperti Claude, GitHub Copilot, Cursor, dan Gemini dapat memakai perhitungan Glazecalc secara langsung, lewat Model Context Protocol (MCP).",
+    "whatHeading": "Apa yang dapat dilakukannya",
+    "what": "Tanpa akun, asisten dapat mencari bahan di pustaka, menghitung formula Seger sebuah resep, memeriksanya terhadap batas untuk pembakarannya, menyarankan pengganti untuk bahan yang dihentikan, membuat ulang resep dari bahan yang Anda sebutkan, mengonversi antara kerucut dan suhu, serta mencari dan membaca panduan. Tidak ada yang dikirimkannya yang disimpan; seperti untuk setiap halaman, log server web mencatat alamat IP, waktu, dan alamat setiap permintaan (tidak pernah apa yang dikirim), selama 14 hari.",
+    "mine": "Dengan token akses dari <account>halaman akun</account> Anda, asisten juga dapat membaca resep, bahan, buku catatan, catatan pembakaran, dan bahan yang Anda punya. Token hanya dapat membaca: token tidak pernah mengubah atau menghapus apa pun.",
+    "caution": "Pemeriksaan batas adalah peringatan dari batas yang dipublikasikan, sama seperti di aplikasi, bukan bukti bahwa glasir aman untuk pangan. Bakar uji setiap glasir, dan minta glasir untuk permukaan pangan diuji pelindian.",
+    "addressHeading": "Alamat",
+    "address": "Berikan alamat ini kepada asisten Anda, memakai transport Streamable HTTP:",
+    "token": "Agar asisten dapat membaca data Anda sendiri, buat token di <account>halaman akun</account> Anda dan salin. Asisten Anda mengirimkannya di header Authorization, sebagai Bearer diikuti token. Jauhkan dari berkas yang Anda bagikan atau commit, seperti halnya kata sandi.",
+    "clientsHeading": "Menambahkan Glazecalc ke asisten Anda",
+    "claudeCode": "Di terminal:",
+    "claudeCodeToken": "Dengan token akses, untuk membaca data Anda sendiri juga:",
+    "vscode": "Di .vscode/mcp.json dalam sebuah folder, atau di pengaturan pengguna Anda. VS Code menanyakan token sekali dan menyembunyikannya; hilangkan headers dan inputs untuk memakai hanya alat yang tidak memerlukan akun:",
+    "cursor": "Di ~/.cursor/mcp.json, atau .cursor/mcp.json dalam sebuah proyek. Hilangkan headers untuk memakai hanya alat yang tidak memerlukan akun:",
+    "gemini": "Di ~/.gemini/settings.json. Hilangkan headers untuk memakai hanya alat yang tidak memerlukan akun:",
+    "appsHeading": "Claude, ChatGPT, dan aplikasi lain",
+    "apps": "Tambahkan konektor kustom dengan alamat di atas. Aplikasi ini belum dapat mengirim token akses, jadi mendapat alat yang tidak memerlukan akun. Mengakses data Anda sendiri dari aplikasi ini akan hadir bersama proses masuk dari aplikasi.",
+    "stopHeading": "Menghentikan akses",
+    "stop": "Cabut token di <account>halaman akun</account> Anda kapan saja. Setiap token berhenti berfungsi pada hari yang Anda pilih, dan semuanya berhenti sekaligus jika Anda menyetel ulang kata sandi atau keluar dari semua perangkat.",
+    "limits": "Setiap alamat dapat membuat 60 permintaan per menit dan 2.000 per hari; akun yang memakai token, 120 per menit dan 5.000 per hari. Penggantian dan pencocokan dibatasi 10 per menit."
+  }
+}

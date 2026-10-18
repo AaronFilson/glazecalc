@@ -1,0 +1,23 @@
+{
+  "unknown-compound": "Senyawa {compound} dalam rumus tidak dikenal",
+  "unknown-oxide": "Oksida {oxide} pada bahan {material} tidak dikenal",
+  "invalid-oxide-amount": "Jumlah {oxide} pada bahan {material} tidak valid",
+  "loi-range": "LOI {material} harus paling sedikit 0 dan kurang dari 100",
+  "no-oxides": "Bahan {material} tidak memiliki oksida",
+  "no-name": "Bahan harus punya nama",
+  "no-analysis": "Bahan {material} memerlukan rumus atau analisis",
+  "recipe-shape": "Resep harus berupa larik '{ material, amount }' atau peta jumlah",
+  "invalid-amount": "Jumlah bahan {material} tidak valid",
+  "missing-material": "Baris resep tidak memiliki bahan",
+  "unknown-material": "Bahan {material} tidak dikenal",
+  "no-flux": "Resep tidak mengandung oksida pelebur, sehingga formula Seger (UMF) tidak terdefinisi",
+  "no-target": "Target tidak memiliki oksida yang dituju",
+  "no-materials": "Tidak ada bahan untuk dihitung",
+  "no-temperature": "Suhu pembakaran diperlukan untuk menentukan boron",
+  "no-flux-to-rebuild": "Glasir tidak memiliki pelebur untuk disusun ulang",
+  "unknown-element": "Unsur {element} dalam {formula} tidak dikenal",
+  "bad-formula": "Rumus {formula} tidak dapat dibaca",
+  "analysis-total": "Total analisis {material} adalah {total}% termasuk LOI; yang diharapkan sekitar 100%.",
+  "stored-equivalent": "Berat ekuivalen {material} yang tersimpan tidak cocok dengan rumus dan LOI-nya; rumus dan LOI dipakai sebagai gantinya.",
+  "trace-flux": "Resep hanya mengandung jejak oksida pelebur, sehingga formula Seger (UMF) tidak bermakna."
+}

@@ -1,0 +1,53 @@
+{
+  "common": {
+    "formulaHelp": "Ketik rumus dengan angka biasa, misalnya {typed}: jumlahnya tampil sebagai subskrip, {shown}. Untuk menyambung bagian-bagian rumus, seperti pada {joined}, salin titik ini:",
+    "relatedTo": "Terkait dengan",
+    "notes": "Catatan",
+    "loi": "Susut pijar (LOI), %",
+    "molecularWeight": "Berat molekul rumus mentah (hanya dipakai jika LOI kosong)",
+    "formulaHeading": "Rumus setelah dibakar",
+    "oxideSelection": "Oksida",
+    "noOxide": "tidak ada",
+    "addOxide": "Tambahkan oksida ke daftar",
+    "formulaIn": "Rumus ini ada di",
+    "percent": "Persen",
+    "molecular": "Molekuler (Seger)",
+    "amount": "jumlah",
+    "removeOxide": "Hapus",
+    "removeOxideName": "Hapus {oxide} dari rumus",
+    "save": "Simpan",
+    "elements": "Unsur",
+    "removeNote": "Resep yang tersimpan memiliki salinannya sendiri, sehingga tidak akan berubah.",
+    "saveFailed": "Kesalahan: permintaan ke server gagal."
+  },
+  "material": {
+    "title": "Bahan",
+    "lead": "Bahan baku Anda sendiri, dimasukkan sebagai rumus kimia atau analisis oksida.",
+    "newHeading": "Tambahkan bahan",
+    "name": "Nama",
+    "rawFormula": "Rumus mentah",
+    "weightsNote": "Berat ekuivalen dan berat setelah dibakar dihitung dari rumus dan LOI saat Anda menyimpan.",
+    "mineHeading": "Bahan saya",
+    "none": "Belum ada. Bahan yang Anda tambahkan di bawah dapat dipakai dalam resep Anda, di samping bahan standar.",
+    "rawFormulaColumn": "Rumus mentah",
+    "standardHeading": "Bahan standar",
+    "fetchFailed": "Terjadi kesalahan saat mengambil informasi bahan.",
+    "standardFetchFailed": "Terjadi kesalahan saat mengambil informasi bahan standar.",
+    "saved": "Berhasil. Bahan ditambahkan ke basis data."
+  },
+  "additive": {
+    "title": "Aditif dan pewarna",
+    "lead": "Pewarna dan pengopak yang ditimbang di atas resep dasar, seperti kobalt atau timah oksida. Resep dapat tidak memasukkannya ke dalam formula Seger atau memasukkannya.",
+    "newHeading": "Tambahkan aditif atau pewarna",
+    "name": "Nama",
+    "formulaAsSold": "Rumus, sebagaimana dijual",
+    "noChemistry": "Tidak memiliki analisis oksida, seperti stain komersial: jangan masukkan ke formula Seger",
+    "firedNote": "Masukkan apa yang diberikannya pada glasir setelah dibakar: kobalt oksida hitam, {asSold}, menjadi {fired} dengan LOI {loi}%. Resep kemudian dapat memasukkannya ke dalam formula Seger.",
+    "mineHeading": "Aditif dan pewarna saya",
+    "none": "Belum ada. Aditif yang Anda tambahkan di bawah dapat dipakai dalam resep Anda, di samping aditif standar.",
+    "standardHeading": "Aditif standar",
+    "fetchFailed": "Terjadi kesalahan saat mengambil informasi aditif.",
+    "standardFetchFailed": "Terjadi kesalahan saat mengambil informasi aditif standar.",
+    "saved": "Berhasil. Aditif ditambahkan ke basis data."
+  }
+}
