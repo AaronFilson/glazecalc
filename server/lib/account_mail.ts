@@ -304,6 +304,36 @@ export const RESET: Record<string, Email> = {
       '此链接只能使用一次。如果您没有申请，请忽略此邮件；您的密码保持不变。\n' +
       '\n' +
       '-- \nGlazecalc, {app}\n'
+  },
+  id: {
+    subject: 'Setel ulang kata sandi Glazecalc Anda',
+    text:
+      'Seseorang (semoga Anda) meminta penyetelan ulang kata sandi untuk akun Glazecalc {account}.\n\n' +
+      'Untuk memilih kata sandi baru, buka tautan ini dalam {minutes} menit:\n\n' +
+      '{link}\n\n' +
+      'Tautan hanya berfungsi sekali. Jika Anda tidak memintanya, abaikan email ini; kata sandi Anda tetap sama.\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  th: {
+    subject: 'รีเซ็ตรหัสผ่าน Glazecalc ของคุณ',
+    text:
+      'มีคนขอ (หวังว่าเป็นคุณ) ให้รีเซ็ตรหัสผ่านของบัญชี Glazecalc {account}\n\n' +
+      'หากต้องการตั้งรหัสผ่านใหม่ ให้เปิดลิงก์นี้ภายใน {minutes} นาที:\n\n' +
+      '{link}\n\n' +
+      'ลิงก์ใช้ได้ครั้งเดียว หากคุณไม่ได้ขอ ให้เพิกเฉยต่ออีเมลนี้ รหัสผ่านของคุณจะเหมือนเดิม\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  vi: {
+    subject: 'Đặt lại mật khẩu Glazecalc của bạn',
+    text:
+      'Có người (hy vọng là bạn) đã yêu cầu đặt lại mật khẩu cho tài khoản Glazecalc {account}.\n\n' +
+      'Để chọn mật khẩu mới, hãy mở liên kết này trong vòng {minutes} phút:\n\n' +
+      '{link}\n\n' +
+      'Liên kết chỉ dùng được một lần. Nếu bạn không yêu cầu việc này, hãy bỏ qua email này; mật khẩu của bạn vẫn như cũ.\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
   }
 };
 
@@ -539,6 +569,30 @@ export const CHANGED: Record<string, Email> = {
       '如果是您本人操作，无需再做任何事。如果不是，请立即在此重置密码：{forgot}\n' +
       '\n' +
       '-- \nGlazecalc, {app}\n'
+  },
+  id: {
+    subject: 'Kata sandi Glazecalc Anda diubah',
+    text:
+      'Kata sandi untuk akun Glazecalc {account} baru saja diubah, dan setiap perangkat yang sedang masuk telah dikeluarkan.\n\n' +
+      'Jika ini Anda, tidak ada lagi yang perlu dilakukan. Jika bukan, segera setel ulang kata sandi Anda di {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  th: {
+    subject: 'เปลี่ยนรหัสผ่าน Glazecalc ของคุณแล้ว',
+    text:
+      'รหัสผ่านของบัญชี Glazecalc {account} เพิ่งถูกเปลี่ยน และทุกอุปกรณ์ที่ลงชื่อเข้าใช้อยู่ถูกออกจากระบบแล้ว\n\n' +
+      'หากเป็นคุณ ไม่ต้องทำอะไรเพิ่ม หากไม่ใช่ ให้รีเซ็ตรหัสผ่านทันทีที่ {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  vi: {
+    subject: 'Mật khẩu Glazecalc của bạn đã được đổi',
+    text:
+      'Mật khẩu của tài khoản Glazecalc {account} vừa được đổi, và mọi thiết bị đã đăng nhập đều đã bị đăng xuất.\n\n' +
+      'Nếu đó là bạn, không cần làm gì thêm. Nếu không, hãy đặt lại mật khẩu của bạn ngay tại {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
   }
 };
 
@@ -852,6 +906,60 @@ export const DELETED: Record<string, Email> = {
       '\n' +
       'İstediğiniz zaman yeni bir hesap oluşturabilirsiniz.\n' +
       '\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  id: {
+    subject: 'Akun Glazecalc Anda telah dihapus',
+    text:
+      'Akun Glazecalc {account} telah dihapus, beserta semua yang tersimpan di dalamnya: resep, bahan, catatan pembakaran, catatan, dan pengaturan. Tindakan ini tidak dapat dibatalkan.\n\n' +
+      'Salinan di cadangan situs dihapus saat cadangan itu kedaluwarsa, dalam waktu {days} hari.\n\n' +
+      'Anda dapat membuat akun baru kapan saja.\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  ko: {
+    subject: 'Glazecalc 계정이 삭제되었습니다',
+    text:
+      'Glazecalc 계정 {account}에 저장되어 있던 레시피, 원료, 소성 기록, 메모, 설정 등 모든 내용과 함께 계정이 삭제되었습니다. 되돌릴 수 없습니다.\n\n' +
+      '사이트 백업에 있는 사본은 백업이 만료되는 대로, {days}일 안에 삭제됩니다.\n\n' +
+      '언제든지 새 계정을 만들 수 있습니다.\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  th: {
+    subject: 'ลบบัญชี Glazecalc ของคุณแล้ว',
+    text:
+      'ลบบัญชี Glazecalc {account} แล้ว พร้อมทุกอย่างที่บันทึกไว้ในบัญชี ได้แก่ สูตรเคลือบ วัตถุดิบ บันทึกการเผา บันทึกย่อ และการตั้งค่า ย้อนกลับไม่ได้\n\n' +
+      'สำเนาในข้อมูลสำรองของเว็บไซต์จะถูกลบเมื่อข้อมูลสำรองหมดอายุ ภายใน {days} วัน\n\n' +
+      'คุณสร้างบัญชีใหม่ได้ทุกเมื่อ\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  vi: {
+    subject: 'Tài khoản Glazecalc của bạn đã được xóa',
+    text:
+      'Tài khoản Glazecalc {account} đã được xóa, cùng mọi thứ đã lưu trong đó: công thức men, nguyên liệu, các lần nung, ghi chú và cài đặt. Không thể hoàn tác.\n\n' +
+      'Các bản sao trong bản sao lưu của trang web sẽ bị xóa khi các bản sao lưu hết hạn, trong vòng {days} ngày.\n\n' +
+      'Bạn có thể tạo tài khoản mới bất cứ lúc nào.\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  'zh-Hans': {
+    subject: '您的 Glazecalc 账户已删除',
+    text:
+      'Glazecalc 账户 {account} 已删除，其中保存的所有内容也一并删除：配方、原料、烧窑记录、笔记和设置。此操作无法撤销。\n\n' +
+      '网站备份中的副本会随备份到期而删除，最迟在 {days} 天内。\n\n' +
+      '您随时可以创建新账户。\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  'zh-Hant': {
+    subject: '您的 Glazecalc 帳戶已刪除',
+    text:
+      'Glazecalc 帳戶 {account} 已刪除，其中儲存的所有內容也一併刪除：釉方、原料、燒窯紀錄、筆記和設定。此動作無法復原。\n\n' +
+      '網站備份中的副本會隨備份到期而刪除，最遲在 {days} 天內。\n\n' +
+      '您隨時可以建立新帳戶。\n\n' +
       '-- \n' +
       'Glazecalc, {app}\n'
   }
@@ -1273,6 +1381,66 @@ export const VERIFY: Record<string, Email> = {
       '\n' +
       '-- \n' +
       'Glazecalc, {app}\n'
+  },
+  id: {
+    subject: 'Konfirmasi email Anda untuk Glazecalc',
+    text:
+      'Seseorang (semoga Anda) membuat akun Glazecalc dengan alamat {account}.\n\n' +
+      'Untuk memastikan bahwa alamat ini milik Anda, buka tautan ini dalam {hours} jam:\n\n' +
+      '{link}\n\n' +
+      'Tautan hanya berfungsi sekali. Jika Anda tidak membuat akun, abaikan email ini; tidak ada email lain yang akan dikirim kepada Anda kecuali Anda memintanya.\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  ko: {
+    subject: 'Glazecalc 이메일 확인',
+    text:
+      '누군가(본인이기를 바랍니다) {account} 주소로 Glazecalc 계정을 만들었습니다.\n\n' +
+      '이 주소가 본인 것임을 확인하려면 {hours}시간 안에 다음 링크를 여세요.\n\n' +
+      '{link}\n\n' +
+      '이 링크는 한 번만 쓸 수 있습니다. 계정을 만든 적이 없다면 이 이메일을 무시하세요. 요청하지 않는 한 더 이상 메일을 보내지 않습니다.\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  th: {
+    subject: 'ยืนยันอีเมลของคุณสำหรับ Glazecalc',
+    text:
+      'มีคนสร้างบัญชี Glazecalc (หวังว่าเป็นคุณ) ด้วยที่อยู่ {account}\n\n' +
+      'หากต้องการยืนยันว่าที่อยู่นี้เป็นของคุณ ให้เปิดลิงก์นี้ภายใน {hours} ชั่วโมง:\n\n' +
+      '{link}\n\n' +
+      'ลิงก์ใช้ได้ครั้งเดียว หากคุณไม่ได้สร้างบัญชี ให้เพิกเฉยต่ออีเมลนี้ จะไม่มีการส่งอะไรถึงคุณอีก เว้นแต่คุณขอ\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  vi: {
+    subject: 'Xác nhận email của bạn cho Glazecalc',
+    text:
+      'Có người (hy vọng là bạn) đã tạo một tài khoản Glazecalc với địa chỉ {account}.\n\n' +
+      'Để xác nhận địa chỉ này là của bạn, hãy mở liên kết này trong vòng {hours} giờ:\n\n' +
+      '{link}\n\n' +
+      'Liên kết chỉ dùng được một lần. Nếu bạn không tạo tài khoản, hãy bỏ qua email này; sẽ không có gì khác được gửi cho bạn trừ khi bạn yêu cầu.\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  'zh-Hans': {
+    subject: '确认您的 Glazecalc 电子邮箱',
+    text:
+      '有人（希望是您本人）用地址 {account} 创建了 Glazecalc 账户。\n\n' +
+      '要确认此地址属于您，请在 {hours} 小时内打开此链接：\n\n' +
+      '{link}\n\n' +
+      '此链接只能使用一次。如果您没有创建账户，请忽略此邮件；除非您提出要求，否则不会再向您发送任何邮件。\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  'zh-Hant': {
+    subject: '確認您的 Glazecalc 電子郵件',
+    text:
+      '有人（希望是您本人）用地址 {account} 建立了 Glazecalc 帳戶。\n\n' +
+      '若要確認這個地址屬於您，請在 {hours} 小時內開啟這個連結：\n\n' +
+      '{link}\n\n' +
+      '此連結只能使用一次。如果您沒有建立帳戶，請忽略這封電子郵件；除非您提出要求，否則不會再寄任何郵件給您。\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
   }
 };
 
@@ -1636,6 +1804,66 @@ export const CONFIRM_CHANGE: Record<string, Email> = {
       '\n' +
       '-- \n' +
       'Glazecalc, {app}\n'
+  },
+  id: {
+    subject: 'Konfirmasi email baru Anda untuk Glazecalc',
+    text:
+      'Seseorang (semoga Anda) meminta agar {account} dipakai sebagai email untuk akunnya di Glazecalc.\n\n' +
+      'Untuk melakukan perubahan, buka tautan ini dalam {hours} jam:\n\n' +
+      '{link}\n\n' +
+      'Tautan hanya berfungsi sekali, dan setiap perangkat yang sedang masuk akan dikeluarkan. Jika Anda tidak memintanya, abaikan email ini; tidak ada yang akan berubah.\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  ko: {
+    subject: 'Glazecalc 새 이메일 확인',
+    text:
+      '누군가(본인이기를 바랍니다) Glazecalc 계정의 이메일로 {account} 주소를 사용하도록 요청했습니다.\n\n' +
+      '변경하려면 {hours}시간 안에 다음 링크를 여세요.\n\n' +
+      '{link}\n\n' +
+      '이 링크는 한 번만 쓸 수 있으며, 변경하면 로그인되어 있던 모든 기기에서 로그아웃됩니다. 요청한 적이 없다면 이 이메일을 무시하세요. 아무것도 바뀌지 않습니다.\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  th: {
+    subject: 'ยืนยันอีเมลใหม่ของคุณสำหรับ Glazecalc',
+    text:
+      'มีคนขอ (หวังว่าเป็นคุณ) ให้ใช้ {account} เป็นอีเมลของบัญชี Glazecalc\n\n' +
+      'หากต้องการเปลี่ยน ให้เปิดลิงก์นี้ภายใน {hours} ชั่วโมง:\n\n' +
+      '{link}\n\n' +
+      'ลิงก์ใช้ได้ครั้งเดียว และทุกอุปกรณ์ที่ลงชื่อเข้าใช้อยู่จะถูกออกจากระบบ หากคุณไม่ได้ขอ ให้เพิกเฉยต่ออีเมลนี้ จะไม่มีอะไรเปลี่ยนแปลง\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  vi: {
+    subject: 'Xác nhận email mới của bạn cho Glazecalc',
+    text:
+      'Có người (hy vọng là bạn) đã yêu cầu dùng {account} làm email cho tài khoản Glazecalc của họ.\n\n' +
+      'Để thực hiện thay đổi, hãy mở liên kết này trong vòng {hours} giờ:\n\n' +
+      '{link}\n\n' +
+      'Liên kết chỉ dùng được một lần, và mọi thiết bị đã đăng nhập sẽ bị đăng xuất. Nếu bạn không yêu cầu việc này, hãy bỏ qua email này; sẽ không có gì thay đổi.\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  'zh-Hans': {
+    subject: '确认您的 Glazecalc 新电子邮箱',
+    text:
+      '有人（希望是您本人）申请把 {account} 用作 Glazecalc 账户的电子邮箱。\n\n' +
+      '要完成更改，请在 {hours} 小时内打开此链接：\n\n' +
+      '{link}\n\n' +
+      '此链接只能使用一次，所有已登录的设备都会退出登录。如果您没有提出这个申请，请忽略此邮件；不会有任何更改。\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  'zh-Hant': {
+    subject: '確認您的 Glazecalc 新電子郵件',
+    text:
+      '有人（希望是您本人）要求把 {account} 用作 Glazecalc 帳戶的電子郵件。\n\n' +
+      '若要完成變更，請在 {hours} 小時內開啟這個連結：\n\n' +
+      '{link}\n\n' +
+      '此連結只能使用一次，所有已登入的裝置都會登出。如果您沒有提出這項要求，請忽略這封電子郵件；不會有任何變更。\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
   }
 };
 
@@ -1895,6 +2123,54 @@ export const CHANGE_NOTICE: Record<string, Email> = {
       '\n' +
       'Bunu siz yaptıysanız başka bir şey yapmanız gerekmez. Siz yapmadıysanız biri parolanızı biliyor olabilir: parolanızı hemen şu adresten sıfırlayın: {forgot}\n' +
       '\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  id: {
+    subject: 'Email baru diminta untuk akun Glazecalc Anda',
+    text:
+      'Pergantian email baru saja diminta untuk akun Glazecalc {account}. Sebuah tautan telah dikirim ke alamat baru, dan perubahan hanya terjadi bila tautan itu dibuka.\n\n' +
+      'Jika ini Anda, tidak ada lagi yang perlu dilakukan. Jika bukan, mungkin seseorang mengetahui kata sandi Anda: segera setel ulang di {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  ko: {
+    subject: 'Glazecalc 계정에 새 이메일이 요청되었습니다',
+    text:
+      'Glazecalc 계정 {account}에서 방금 이메일 변경이 요청되었습니다. 새 주소로 링크를 보냈으며, 그 링크를 열어야만 변경됩니다.\n\n' +
+      '본인이 요청했다면 따로 할 일은 없습니다. 그렇지 않다면 누군가 비밀번호를 알고 있을 수 있으니, 다음 주소에서 바로 재설정하세요: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  th: {
+    subject: 'มีการขอเปลี่ยนอีเมลของบัญชี Glazecalc ของคุณ',
+    text:
+      'เพิ่งมีการขอเปลี่ยนอีเมลของบัญชี Glazecalc {account} มีการส่งลิงก์ไปที่ที่อยู่ใหม่ และการเปลี่ยนแปลงจะเกิดขึ้นเมื่อเปิดลิงก์นั้นเท่านั้น\n\n' +
+      'หากเป็นคุณ ไม่ต้องทำอะไรเพิ่ม หากไม่ใช่ อาจมีคนรู้รหัสผ่านของคุณ: ให้รีเซ็ตรหัสผ่านทันทีที่ {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  vi: {
+    subject: 'Đã có yêu cầu dùng email mới cho tài khoản Glazecalc của bạn',
+    text:
+      'Vừa có yêu cầu đổi email cho tài khoản Glazecalc {account}. Một liên kết đã được gửi đến địa chỉ mới, và việc đổi chỉ xảy ra khi liên kết đó được mở.\n\n' +
+      'Nếu đó là bạn, không cần làm gì thêm. Nếu không, có thể có người biết mật khẩu của bạn: hãy đặt lại mật khẩu ngay tại {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  'zh-Hans': {
+    subject: '有人申请更换您的 Glazecalc 账户的电子邮箱',
+    text:
+      '刚刚有人申请更改 Glazecalc 账户 {account} 的电子邮箱。链接已发送到新地址，只有打开该链接，更改才会生效。\n\n' +
+      '如果是您本人操作，无需再做任何事。如果不是，说明有人可能知道您的密码，请立即在此重置：{forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  'zh-Hant': {
+    subject: '有人要求變更您的 Glazecalc 帳戶的電子郵件',
+    text:
+      '剛剛有人要求變更 Glazecalc 帳戶 {account} 的電子郵件。連結已寄到新地址，只有開啟該連結，變更才會生效。\n\n' +
+      '如果這是您本人的操作，就不需要再做任何事。如果不是，表示有人可能知道您的密碼，請立即到 {forgot} 重設密碼\n\n' +
       '-- \n' +
       'Glazecalc, {app}\n'
   }
@@ -2205,6 +2481,54 @@ export const MFA_ADDED: Record<string, Email> = {
       '\n' +
       '-- \n' +
       'Glazecalc, {app}\n'
+  },
+  id: {
+    subject: 'Langkah masuk ditambahkan ke akun Glazecalc Anda',
+    text:
+      'Langkah kedua untuk masuk ini baru saja ditambahkan ke akun Glazecalc {account}: {method}.\n\n' +
+      'Jika ini Anda, tidak ada lagi yang perlu dilakukan. Simpan kode pemulihan Anda di tempat yang aman. Jika bukan, mungkin seseorang mengetahui kata sandi Anda: segera setel ulang di {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  ko: {
+    subject: 'Glazecalc 계정에 로그인 단계가 추가되었습니다',
+    text:
+      'Glazecalc 계정 {account}에 로그인의 두 번째 단계로 다음이 방금 추가되었습니다: {method}.\n\n' +
+      '본인이 한 일이라면 따로 할 일은 없습니다. 복구 코드를 안전한 곳에 보관하세요. 그렇지 않다면 누군가 비밀번호를 알고 있을 수 있으니, 다음 주소에서 바로 재설정하세요: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  th: {
+    subject: 'เพิ่มขั้นตอนการลงชื่อเข้าใช้ในบัญชี Glazecalc ของคุณ',
+    text:
+      'เพิ่งเพิ่มสิ่งนี้ลงในบัญชี Glazecalc {account} เป็นขั้นตอนที่สองสำหรับการลงชื่อเข้าใช้: {method}\n\n' +
+      'หากเป็นคุณ ไม่ต้องทำอะไรเพิ่ม เก็บรหัสกู้คืนของคุณไว้ในที่ปลอดภัย หากไม่ใช่ อาจมีคนรู้รหัสผ่านของคุณ: ให้รีเซ็ตรหัสผ่านทันทีที่ {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  vi: {
+    subject: 'Một bước đăng nhập đã được thêm vào tài khoản Glazecalc của bạn',
+    text:
+      'Mục này vừa được thêm vào tài khoản Glazecalc {account} làm bước thứ hai để đăng nhập: {method}.\n\n' +
+      'Nếu đó là bạn, không cần làm gì thêm. Hãy giữ các mã khôi phục của bạn ở nơi an toàn. Nếu không, có thể có người biết mật khẩu của bạn: hãy đặt lại mật khẩu ngay tại {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  'zh-Hans': {
+    subject: '您的 Glazecalc 账户新增了一个登录步骤',
+    text:
+      '刚刚为 Glazecalc 账户 {account} 添加了以下内容，作为登录的第二步：{method}。\n\n' +
+      '如果是您本人操作，无需再做任何事。请把您的恢复码保存在安全的地方。如果不是，说明有人可能知道您的密码，请立即在此重置：{forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  'zh-Hant': {
+    subject: '您的 Glazecalc 帳戶新增了一個登入步驟',
+    text:
+      '剛剛為 Glazecalc 帳戶 {account} 新增了以下內容，作為登入的第二個步驟：{method}。\n\n' +
+      '如果這是您本人的操作，就不需要再做任何事。請把您的備用碼存放在安全的地方。如果不是，表示有人可能知道您的密碼，請立即到 {forgot} 重設密碼\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
   }
 };
 
@@ -2465,6 +2789,54 @@ export const MFA_REMOVED: Record<string, Email> = {
       '\n' +
       'Bunu siz yaptıysanız başka bir şey yapmanız gerekmez. Siz yapmadıysanız parolanızı hemen şu adresten sıfırlayın: {forgot}\n' +
       '\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  id: {
+    subject: 'Langkah masuk dihapus dari akun Glazecalc Anda',
+    text:
+      'Langkah kedua untuk masuk ini baru saja dihapus dari akun Glazecalc {account}: {method}. Jika itu yang terakhir, sekarang untuk masuk hanya perlu kata sandi.\n\n' +
+      'Jika ini Anda, tidak ada lagi yang perlu dilakukan. Jika bukan, segera setel ulang kata sandi Anda di {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  ko: {
+    subject: 'Glazecalc 계정에서 로그인 단계가 삭제되었습니다',
+    text:
+      'Glazecalc 계정 {account}에서 로그인의 두 번째 단계로 쓰던 다음이 방금 삭제되었습니다: {method}. 마지막 단계였다면 이제 로그인에는 비밀번호만 필요합니다.\n\n' +
+      '본인이 한 일이라면 따로 할 일은 없습니다. 그렇지 않다면 바로 비밀번호를 재설정하세요: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  th: {
+    subject: 'ลบขั้นตอนการลงชื่อเข้าใช้ออกจากบัญชี Glazecalc ของคุณแล้ว',
+    text:
+      'เพิ่งลบสิ่งนี้ออกจากบัญชี Glazecalc {account} ซึ่งเป็นขั้นตอนที่สองสำหรับการลงชื่อเข้าใช้: {method} หากเป็นรายการสุดท้าย ตอนนี้การลงชื่อเข้าใช้ต้องใช้เพียงรหัสผ่าน\n\n' +
+      'หากเป็นคุณ ไม่ต้องทำอะไรเพิ่ม หากไม่ใช่ ให้รีเซ็ตรหัสผ่านทันทีที่ {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  vi: {
+    subject: 'Một bước đăng nhập đã bị xóa khỏi tài khoản Glazecalc của bạn',
+    text:
+      'Mục này vừa bị xóa khỏi tài khoản Glazecalc {account}, vốn là bước thứ hai để đăng nhập: {method}. Nếu đó là bước cuối cùng, giờ đây đăng nhập chỉ cần mật khẩu.\n\n' +
+      'Nếu đó là bạn, không cần làm gì thêm. Nếu không, hãy đặt lại mật khẩu của bạn ngay tại {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  'zh-Hans': {
+    subject: '您的 Glazecalc 账户移除了一个登录步骤',
+    text:
+      '刚刚从 Glazecalc 账户 {account} 移除了以下内容，它原本是登录的第二步：{method}。如果它是最后一个，现在登录只需要密码。\n\n' +
+      '如果是您本人操作，无需再做任何事。如果不是，请立即在此重置密码：{forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  'zh-Hant': {
+    subject: '您的 Glazecalc 帳戶移除了一個登入步驟',
+    text:
+      '剛剛從 Glazecalc 帳戶 {account} 移除了以下這個登入的第二個步驟：{method}。如果這是最後一個，現在登入只需要密碼。\n\n' +
+      '如果這是您本人的操作，就不需要再做任何事。如果不是，請立即到 {forgot} 重設密碼\n\n' +
       '-- \n' +
       'Glazecalc, {app}\n'
   }
@@ -2729,6 +3101,54 @@ export const RECOVERY_USED: Record<string, Email> = {
       '\n' +
       '-- \n' +
       'Glazecalc, {app}\n'
+  },
+  id: {
+    subject: 'Kode pemulihan dipakai pada akun Glazecalc Anda',
+    text:
+      'Salah satu kode pemulihan untuk akun Glazecalc {account} baru saja dipakai, sehingga tidak akan berfungsi lagi. Sisa kode yang belum dipakai: {left}. Anda dapat membuat kode baru di halaman akun Anda: {page}\n\n' +
+      'Jika ini bukan Anda, mungkin seseorang memiliki kata sandi dan kode Anda: segera setel ulang kata sandi Anda di {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  ko: {
+    subject: 'Glazecalc 계정에서 복구 코드가 사용되었습니다',
+    text:
+      'Glazecalc 계정 {account}의 복구 코드 하나가 방금 사용되었으며, 다시 쓸 수 없습니다. 남은 코드: {left}개. 계정 페이지에서 새 코드를 만들 수 있습니다: {page}\n\n' +
+      '본인이 한 일이 아니라면 누군가 비밀번호와 코드를 가지고 있을 수 있으니, 바로 비밀번호를 재설정하세요: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  th: {
+    subject: 'มีการใช้รหัสกู้คืนในบัญชี Glazecalc ของคุณ',
+    text:
+      'เพิ่งมีการใช้รหัสกู้คืนหนึ่งรหัสของบัญชี Glazecalc {account} จึงใช้ซ้ำไม่ได้ รหัสที่ยังไม่ได้ใช้เหลืออยู่: {left} คุณสร้างรหัสใหม่ได้ที่หน้าบัญชีของคุณ: {page}\n\n' +
+      'หากไม่ใช่คุณ อาจมีคนมีรหัสผ่านและรหัสกู้คืนของคุณ: ให้รีเซ็ตรหัสผ่านทันทีที่ {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  vi: {
+    subject: 'Một mã khôi phục đã được dùng trên tài khoản Glazecalc của bạn',
+    text:
+      'Một trong các mã khôi phục của tài khoản Glazecalc {account} vừa được dùng, nên nó sẽ không dùng lại được. Số mã chưa dùng còn lại: {left}. Bạn có thể tạo mã mới trên trang tài khoản của bạn: {page}\n\n' +
+      'Nếu đó không phải bạn, có thể có người có mật khẩu và các mã của bạn: hãy đặt lại mật khẩu của bạn ngay tại {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  'zh-Hans': {
+    subject: '您的 Glazecalc 账户使用了一个恢复码',
+    text:
+      'Glazecalc 账户 {account} 的一个恢复码刚刚被使用，不能再次使用。未使用的恢复码还剩 {left} 个。您可以在账户页面生成新的恢复码：{page}\n\n' +
+      '如果不是您本人操作，说明有人可能知道您的密码和恢复码：请立即在此重置密码：{forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  'zh-Hant': {
+    subject: '您的 Glazecalc 帳戶使用了一個備用碼',
+    text:
+      'Glazecalc 帳戶 {account} 的一個備用碼剛剛被使用，不能再次使用。未使用的備用碼還剩 {left} 個。您可以在帳戶頁面產生新的備用碼：{page}\n\n' +
+      '如果這不是您本人的操作，表示有人可能知道您的密碼和備用碼：請立即到 {forgot} 重設密碼\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
   }
 };
 
@@ -2988,6 +3408,54 @@ export const RECOVERY_NEW: Record<string, Email> = {
       '\n' +
       'Bunu siz yaptıysanız yeni kodları güvenli bir yerde saklayın. Siz yapmadıysanız parolanızı hemen şu adresten sıfırlayın: {forgot}\n' +
       '\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  id: {
+    subject: 'Kode pemulihan baru untuk akun Glazecalc Anda',
+    text:
+      'Kode pemulihan baru baru saja dibuat untuk akun Glazecalc {account}. Kode lama tidak lagi berfungsi.\n\n' +
+      'Jika ini Anda, simpan kode baru di tempat yang aman. Jika bukan, segera setel ulang kata sandi Anda di {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  ko: {
+    subject: 'Glazecalc 계정의 새 복구 코드',
+    text:
+      'Glazecalc 계정 {account}의 새 복구 코드를 방금 만들었습니다. 이전 코드는 더 이상 사용할 수 없습니다.\n\n' +
+      '본인이 한 일이라면 새 코드를 안전한 곳에 보관하세요. 그렇지 않다면 바로 비밀번호를 재설정하세요: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  th: {
+    subject: 'รหัสกู้คืนใหม่สำหรับบัญชี Glazecalc ของคุณ',
+    text:
+      'เพิ่งสร้างรหัสกู้คืนใหม่สำหรับบัญชี Glazecalc {account} รหัสเก่าใช้ไม่ได้อีก\n\n' +
+      'หากเป็นคุณ ให้เก็บรหัสใหม่ไว้ในที่ปลอดภัย หากไม่ใช่ ให้รีเซ็ตรหัสผ่านทันทีที่ {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  vi: {
+    subject: 'Mã khôi phục mới cho tài khoản Glazecalc của bạn',
+    text:
+      'Các mã khôi phục mới vừa được tạo cho tài khoản Glazecalc {account}. Các mã cũ không còn dùng được.\n\n' +
+      'Nếu đó là bạn, hãy giữ các mã mới ở nơi an toàn. Nếu không, hãy đặt lại mật khẩu của bạn ngay tại {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  'zh-Hans': {
+    subject: '您的 Glazecalc 账户有了新的恢复码',
+    text:
+      '刚刚为 Glazecalc 账户 {account} 生成了新的恢复码，旧的恢复码已失效。\n\n' +
+      '如果是您本人操作，请把新的恢复码保存在安全的地方。如果不是，请立即在此重置密码：{forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  'zh-Hant': {
+    subject: '您的 Glazecalc 帳戶有了新的備用碼',
+    text:
+      '剛剛為 Glazecalc 帳戶 {account} 產生了新的備用碼，舊的備用碼已失效。\n\n' +
+      '如果這是您本人的操作，請把新的備用碼存放在安全的地方。如果不是，請立即到 {forgot} 重設密碼\n\n' +
       '-- \n' +
       'Glazecalc, {app}\n'
   }
@@ -3308,6 +3776,60 @@ export const SECOND_STEP_UNFINISHED: Record<string, Email> = {
       '\n' +
       '-- \n' +
       'Glazecalc, {app}\n'
+  },
+  id: {
+    subject: 'Seseorang memasukkan kata sandi Glazecalc Anda tetapi tidak menyelesaikan proses masuk',
+    text:
+      'Seseorang memasukkan kata sandi yang benar untuk akun Glazecalc {account}, tetapi tidak menyelesaikan langkah kedua untuk masuk. Langkah kedua Anda mencegah orang itu masuk.\n\n' +
+      'Jika ini Anda, tidak ada lagi yang perlu dilakukan. Jika bukan, seseorang mengetahui kata sandi Anda: segera ubah kata sandi itu. Anda dapat menyetel ulangnya di {forgot}\n\n' +
+      'Setelah 10 kode yang salah dari aplikasi autentikator, kode ditolak selama satu jam; setelah 10 lagi, selama satu hari; dan selanjutnya selama satu minggu setiap kalinya. Kunci sandi atau kode pemulihan tetap berfungsi selama kode ditolak. Menyetel ulang kata sandi Anda lewat email mengeluarkan orang itu: setiap proses masuk yang ia mulai berakhir, kata sandi yang ia ketahui berhenti berfungsi, dan kode berfungsi lagi.\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  ko: {
+    subject: '누군가 Glazecalc 비밀번호를 입력했지만 로그인을 마치지 못했습니다',
+    text:
+      '누군가 Glazecalc 계정 {account}의 올바른 비밀번호를 입력했지만 로그인의 두 번째 단계를 마치지 못했습니다. 두 번째 단계 덕분에 그 사람은 들어오지 못했습니다.\n\n' +
+      '본인이 한 일이라면 따로 할 일은 없습니다. 그렇지 않다면 누군가 비밀번호를 알고 있으니, 바로 변경하세요. 다음 주소에서 재설정할 수 있습니다: {forgot}\n\n' +
+      '인증 앱의 코드를 10번 잘못 입력하면 한 시간 동안, 10번 더 잘못 입력하면 하루 동안, 그 뒤로는 매번 한 주 동안 코드를 받지 않습니다. 코드를 받지 않는 동안에도 패스키나 복구 코드는 사용할 수 있습니다. 이메일로 비밀번호를 재설정하면 그 사람을 막을 수 있습니다. 그 사람이 시작한 로그인은 끝나고, 그 사람이 아는 비밀번호는 더 이상 작동하지 않으며, 코드는 다시 작동합니다.\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  th: {
+    subject: 'มีคนกรอกรหัสผ่าน Glazecalc ของคุณแต่ลงชื่อเข้าใช้ไม่เสร็จ',
+    text:
+      'มีคนกรอกรหัสผ่านที่ถูกต้องของบัญชี Glazecalc {account} แต่ไม่ทำขั้นตอนที่สองของการลงชื่อเข้าใช้ให้เสร็จ ขั้นตอนที่สองของคุณกันไม่ให้บุคคลนั้นเข้าบัญชีได้\n\n' +
+      'หากเป็นคุณ ไม่ต้องทำอะไรเพิ่ม หากไม่ใช่ แปลว่ามีคนรู้รหัสผ่านของคุณ: ให้เปลี่ยนทันที คุณรีเซ็ตได้ที่ {forgot}\n\n' +
+      'หลังกรอกรหัสผิดจากแอปตรวจสอบสิทธิ์ 10 ครั้ง จะปฏิเสธรหัสเป็นเวลาหนึ่งชั่วโมง หลังกรอกผิดอีก 10 ครั้ง เป็นเวลาหนึ่งวัน และจากนั้นเป็นเวลาหนึ่งสัปดาห์ทุกครั้ง พาสคีย์หรือรหัสกู้คืนยังใช้ได้ขณะที่ปฏิเสธรหัส การรีเซ็ตรหัสผ่านทางอีเมลกันบุคคลนั้นออกไป: การลงชื่อเข้าใช้ที่บุคคลนั้นเริ่มไว้จะสิ้นสุด รหัสผ่านที่บุคคลนั้นรู้จะใช้ไม่ได้ และรหัสจะใช้ได้อีกครั้ง\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  vi: {
+    subject: 'Có người đã nhập mật khẩu Glazecalc của bạn nhưng chưa hoàn tất đăng nhập',
+    text:
+      'Có người đã nhập đúng mật khẩu của tài khoản Glazecalc {account}, nhưng chưa hoàn tất bước thứ hai của việc đăng nhập. Bước thứ hai của bạn đã chặn họ.\n\n' +
+      'Nếu đó là bạn, không cần làm gì thêm. Nếu không, có người biết mật khẩu của bạn: hãy đổi mật khẩu ngay. Bạn có thể đặt lại mật khẩu tại {forgot}\n\n' +
+      'Sau 10 mã sai từ ứng dụng xác thực, các mã bị từ chối trong một giờ; sau thêm 10 mã sai nữa, trong một ngày; và sau đó trong một tuần mỗi lần. Khóa truy cập hoặc mã khôi phục vẫn dùng được khi các mã bị từ chối. Đặt lại mật khẩu bằng email sẽ chặn người đó: mọi lần đăng nhập họ đã bắt đầu đều kết thúc, mật khẩu họ biết ngừng hoạt động, và các mã dùng được trở lại.\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  'zh-Hans': {
+    subject: '有人输入了您的 Glazecalc 密码，但没有完成登录',
+    text:
+      '有人输入了 Glazecalc 账户 {account} 的正确密码，但没有完成登录的第二步。您设置的第二步把此人挡在了门外。\n\n' +
+      '如果是您本人操作，无需再做任何事。如果不是，说明有人知道您的密码：请立即修改。您可以在此重置：{forgot}\n\n' +
+      '身份验证器应用的验证码连续输错 10 次后，将在一小时内拒绝验证码；再输错 10 次后，拒绝一天；此后每次都拒绝一周。在验证码被拒绝期间，通行密钥或恢复码仍然可以使用。通过电子邮件重置密码，可以把此人拒之门外：其已开始的任何登录都会结束，其所知道的密码会失效，验证码也会恢复可用。\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  'zh-Hant': {
+    subject: '有人輸入了您的 Glazecalc 密碼，但沒有完成登入',
+    text:
+      '有人輸入了 Glazecalc 帳戶 {account} 的正確密碼，但沒有完成登入的第二個步驟。您設定的第二個步驟把此人擋在了門外。\n\n' +
+      '如果這是您本人的操作，就不需要再做任何事。如果不是，表示有人知道您的密碼：請立即變更。您可以到 {forgot} 重設\n\n' +
+      '驗證器應用程式的驗證碼連續輸錯 10 次後，將在一小時內拒絕驗證碼；再輸錯 10 次後，拒絕一天；此後每次都拒絕一週。在驗證碼被拒絕期間，密碼金鑰或備用碼仍然可以使用。透過電子郵件重設密碼，可以把此人拒於門外：其已開始的任何登入都會結束，其所知道的密碼會失效，驗證碼也會恢復可用。\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
   }
 };
 
@@ -3571,6 +4093,54 @@ export const MFA_OFF: Record<string, Email> = {
       '\n' +
       'İki adımlı oturum açmayı hesap sayfanızdan yeniden etkinleştirebilirsiniz. Bunu siz istemediyseniz parolanızı hemen şu adresten sıfırlayın: {forgot}\n' +
       '\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  id: {
+    subject: 'Autentikasi dua langkah dimatikan pada akun Glazecalc Anda',
+    text:
+      'Autentikasi dua langkah baru saja dimatikan pada akun Glazecalc {account}: semua aplikasi autentikator, kunci sandi, dan kode pemulihan dihapus, dan setiap perangkat yang sedang masuk telah dikeluarkan. Sekarang untuk masuk hanya perlu kata sandi.\n\n' +
+      'Anda dapat menyalakan kembali autentikasi dua langkah di halaman akun Anda. Jika Anda tidak memintanya, segera setel ulang kata sandi Anda di {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  ko: {
+    subject: 'Glazecalc 계정의 이중 인증이 꺼졌습니다',
+    text:
+      'Glazecalc 계정 {account}의 이중 인증이 방금 꺼졌습니다. 모든 인증 앱, 패스키, 복구 코드가 삭제되었고, 로그인되어 있던 모든 기기에서 로그아웃되었습니다. 이제 로그인에는 비밀번호만 필요합니다.\n\n' +
+      '계정 페이지에서 이중 인증을 다시 켤 수 있습니다. 요청한 적이 없다면 바로 비밀번호를 재설정하세요: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  th: {
+    subject: 'ปิดการยืนยันตัวตนสองขั้นตอนในบัญชี Glazecalc ของคุณแล้ว',
+    text:
+      'เพิ่งปิดการยืนยันตัวตนสองขั้นตอนของบัญชี Glazecalc {account}: ลบแอปตรวจสอบสิทธิ์ พาสคีย์ และรหัสกู้คืนทุกรายการ และทุกอุปกรณ์ที่ลงชื่อเข้าใช้อยู่ถูกออกจากระบบแล้ว ตอนนี้การลงชื่อเข้าใช้ต้องใช้เพียงรหัสผ่าน\n\n' +
+      'คุณเปิดการยืนยันตัวตนสองขั้นตอนอีกครั้งได้ที่หน้าบัญชีของคุณ หากคุณไม่ได้ขอ ให้รีเซ็ตรหัสผ่านทันทีที่ {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  vi: {
+    subject: 'Xác minh hai bước đã bị tắt trên tài khoản Glazecalc của bạn',
+    text:
+      'Xác minh hai bước vừa bị tắt trên tài khoản Glazecalc {account}: mọi ứng dụng xác thực, khóa truy cập và mã khôi phục đã bị xóa, và mọi thiết bị đã đăng nhập đều đã bị đăng xuất. Giờ đây đăng nhập chỉ cần mật khẩu.\n\n' +
+      'Bạn có thể bật lại xác minh hai bước trên trang tài khoản của bạn. Nếu bạn không yêu cầu việc này, hãy đặt lại mật khẩu của bạn ngay tại {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  'zh-Hans': {
+    subject: '您的 Glazecalc 账户的两步验证已关闭',
+    text:
+      '刚刚关闭了 Glazecalc 账户 {account} 的两步验证：所有的身份验证器应用、通行密钥和恢复码都已移除，所有已登录的设备都已退出登录。现在登录只需要密码。\n\n' +
+      '您可以在账户页面重新开启两步验证。如果您没有提出这个操作，请立即在此重置密码：{forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  'zh-Hant': {
+    subject: '您的 Glazecalc 帳戶的兩步驟驗證已關閉',
+    text:
+      '剛剛關閉了 Glazecalc 帳戶 {account} 的兩步驟驗證：所有的驗證器應用程式、密碼金鑰和備用碼都已移除，所有已登入的裝置都已登出。現在登入只需要密碼。\n\n' +
+      '您可以在帳戶頁面重新開啟兩步驟驗證。如果您沒有提出這項要求，請立即到 {forgot} 重設密碼\n\n' +
       '-- \n' +
       'Glazecalc, {app}\n'
   }
@@ -3889,6 +4459,60 @@ export const MFA_CLEAR_NOTICE: Record<string, Email> = {
       '\n' +
       '-- \n' +
       'Glazecalc, {app}\n'
+  },
+  id: {
+    subject: 'Autentikasi dua langkah pada akun Glazecalc Anda akan dimatikan',
+    text:
+      'Seseorang meminta agar autentikasi dua langkah dimatikan pada akun Glazecalc {account}, karena semua aplikasi autentikator, kunci sandi, dan kode pemulihan untuk akun itu hilang.\n\n' +
+      'Autentikasi dua langkah akan dimatikan pada {date} kecuali Anda menulis ke privacy@glazecalcapp.com sebelum itu. Setelah itu, orang dapat masuk ke akun ini hanya dengan kata sandinya.\n\n' +
+      'Jika ini Anda, tidak ada lagi yang perlu dilakukan. Jika bukan, tulis ke privacy@glazecalcapp.com sekarang, dan segera setel ulang kata sandi Anda di {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  ko: {
+    subject: 'Glazecalc 계정의 이중 인증이 꺼질 예정입니다',
+    text:
+      '누군가 Glazecalc 계정 {account}의 인증 앱, 패스키, 복구 코드를 모두 잃어버렸다며 이중 인증을 꺼 달라고 요청했습니다.\n\n' +
+      '그 전에 privacy@glazecalcapp.com으로 연락하지 않으면 이중 인증은 {date}에 꺼집니다. 그 뒤에는 비밀번호만으로 이 계정에 로그인할 수 있습니다.\n\n' +
+      '본인이 요청했다면 따로 할 일은 없습니다. 그렇지 않다면 지금 바로 privacy@glazecalcapp.com으로 연락하고, 바로 비밀번호를 재설정하세요: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  th: {
+    subject: 'การยืนยันตัวตนสองขั้นตอนในบัญชี Glazecalc ของคุณจะถูกปิด',
+    text:
+      'มีคนขอให้ปิดการยืนยันตัวตนสองขั้นตอนของบัญชี Glazecalc {account} เพราะแอปตรวจสอบสิทธิ์ พาสคีย์ และรหัสกู้คืนทุกรายการของบัญชีนี้สูญหาย\n\n' +
+      'การยืนยันตัวตนสองขั้นตอนจะถูกปิดในวันที่ {date} เว้นแต่คุณเขียนถึง privacy@glazecalcapp.com ก่อนถึงวันนั้น หลังจากนั้นจะลงชื่อเข้าใช้บัญชีนี้ได้ด้วยรหัสผ่านเพียงอย่างเดียว\n\n' +
+      'หากเป็นคุณ ไม่ต้องทำอะไรเพิ่ม หากไม่ใช่ ให้เขียนถึง privacy@glazecalcapp.com ทันที และรีเซ็ตรหัสผ่านทันทีที่ {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  vi: {
+    subject: 'Xác minh hai bước trên tài khoản Glazecalc của bạn sẽ bị tắt',
+    text:
+      'Có người đã yêu cầu tắt xác minh hai bước trên tài khoản Glazecalc {account}, vì mọi ứng dụng xác thực, khóa truy cập và mã khôi phục của tài khoản đã bị mất.\n\n' +
+      'Xác minh hai bước sẽ bị tắt vào {date} trừ khi bạn viết thư đến privacy@glazecalcapp.com trước đó. Sau đó, tài khoản có thể được đăng nhập chỉ bằng mật khẩu.\n\n' +
+      'Nếu đó là bạn, không cần làm gì thêm. Nếu không, hãy viết thư đến privacy@glazecalcapp.com ngay, và đặt lại mật khẩu của bạn ngay tại {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  'zh-Hans': {
+    subject: '您的 Glazecalc 账户的两步验证将被关闭',
+    text:
+      '有人申请关闭 Glazecalc 账户 {account} 的两步验证，原因是该账户所有的身份验证器应用、通行密钥和恢复码都丢失了。\n\n' +
+      '除非您在此之前写信给 privacy@glazecalcapp.com，否则两步验证将在 {date} 关闭。之后，只用密码就可以登录该账户。\n\n' +
+      '如果是您本人操作，无需再做任何事。如果不是，请立即写信给 privacy@glazecalcapp.com，并立即在此重置密码：{forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  'zh-Hant': {
+    subject: '您的 Glazecalc 帳戶的兩步驟驗證將被關閉',
+    text:
+      '有人要求關閉 Glazecalc 帳戶 {account} 的兩步驟驗證，原因是該帳戶所有的驗證器應用程式、密碼金鑰和備用碼都遺失了。\n\n' +
+      '除非您在此之前寄信到 privacy@glazecalcapp.com，否則兩步驟驗證將在 {date} 關閉。之後，只用密碼就可以登入該帳戶。\n\n' +
+      '如果這是您本人的操作，就不需要再做任何事。如果不是，請立即寄信到 privacy@glazecalcapp.com，並立即到 {forgot} 重設密碼\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
   }
 };
 
@@ -3934,7 +4558,13 @@ export const METHODS: Record<string, { totp: string; passkey: string }> = {
   ga: { totp: 'aip fhíordheimhnithe', passkey: 'an eochair rochtana “{name}”' },
   ja: { totp: '認証アプリ', passkey: 'パスキー「{name}」' },
   mt: { totp: 'app tal-awtentikazzjoni', passkey: 'il-passkey “{name}”' },
-  tr: { totp: 'bir kimlik doğrulama uygulaması', passkey: '“{name}” adlı geçiş anahtarı' }
+  tr: { totp: 'bir kimlik doğrulama uygulaması', passkey: '“{name}” adlı geçiş anahtarı' },
+  id: { totp: 'aplikasi autentikator', passkey: 'kunci sandi "{name}"' },
+  ko: { totp: '인증 앱', passkey: '패스키 “{name}”' },
+  th: { totp: 'แอปตรวจสอบสิทธิ์', passkey: 'พาสคีย์ “{name}”' },
+  vi: { totp: 'một ứng dụng xác thực', passkey: 'khóa truy cập “{name}”' },
+  'zh-Hans': { totp: '身份验证器应用', passkey: '通行密钥“{name}”' },
+  'zh-Hant': { totp: '驗證器應用程式', passkey: '密碼金鑰「{name}」' }
 };
 
 /** The phrase for a factor in the language, or in English. A passkey's name is kept to one plain line. */
@@ -4291,6 +4921,62 @@ export const PROVIDER_LINKED: Record<string, Email> = {
       'Bu sizseniz başka bir şey yapmanız gerekmez. Değilseniz hesap sayfanızdan ({page}) bu oturum açma yolunun bağlantısını kaldırın ve parolanızı hemen şu adresten sıfırlayın: {forgot}\n\n' +
       '-- \n' +
       'Glazecalc, {app}\n'
+  },
+  id: {
+    subject: 'Cara masuk baru ditambahkan ke akun Glazecalc Anda',
+    text:
+      'Sekarang Anda dapat masuk ke akun Glazecalc {account} dengan {provider}.\n\n' +
+      'Jika ini Anda, tidak ada lagi yang perlu dilakukan. Jika bukan, lepaskan tautannya di halaman akun Anda di {page} dan segera setel ulang kata sandi Anda di {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  ja: {
+    subject: 'Glazecalc のアカウントに新しいログイン方法が追加されました',
+    text:
+      'Glazecalc のアカウント {account} で、{provider} を使ってログインできるようになりました。\n\n' +
+      'ご本人による操作であれば、ほかに必要な操作はありません。そうでない場合は、アカウントページ {page} で連携を解除し、すぐに次のページでパスワードを再設定してください: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  ko: {
+    subject: 'Glazecalc 계정에 새 로그인 방법이 추가되었습니다',
+    text:
+      '이제 {provider} 계정으로 Glazecalc 계정 {account}에 로그인할 수 있습니다.\n\n' +
+      '본인이 한 일이라면 따로 할 일은 없습니다. 그렇지 않다면 계정 페이지 {page}에서 연결을 해제하고, 바로 비밀번호를 재설정하세요: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  th: {
+    subject: 'เพิ่มวิธีลงชื่อเข้าใช้ใหม่ในบัญชี Glazecalc ของคุณ',
+    text:
+      'ตอนนี้คุณลงชื่อเข้าใช้บัญชี Glazecalc {account} ด้วย {provider} ได้\n\n' +
+      'หากเป็นคุณ ไม่ต้องทำอะไรเพิ่ม หากไม่ใช่ ให้ยกเลิกการเชื่อมโยงที่หน้าบัญชีของคุณที่ {page} และรีเซ็ตรหัสผ่านทันทีที่ {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  vi: {
+    subject: 'Một cách đăng nhập mới đã được thêm vào tài khoản Glazecalc của bạn',
+    text:
+      'Giờ đây bạn có thể đăng nhập vào tài khoản Glazecalc {account} bằng {provider}.\n\n' +
+      'Nếu đó là bạn, không cần làm gì thêm. Nếu không, hãy hủy liên kết trên trang tài khoản của bạn tại {page} và đặt lại mật khẩu của bạn ngay tại {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  'zh-Hans': {
+    subject: '您的 Glazecalc 账户新增了一种登录方式',
+    text:
+      '现在可以用 {provider} 登录 Glazecalc 账户 {account}。\n\n' +
+      '如果是您本人操作，无需再做任何事。如果不是，请到账户页面 {page} 取消它的关联，并立即在此重置密码：{forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  'zh-Hant': {
+    subject: '您的 Glazecalc 帳戶新增了一種登入方式',
+    text:
+      '現在可以用 {provider} 登入 Glazecalc 帳戶 {account}。\n\n' +
+      '如果這是您本人的操作，就不需要再做任何事。如果不是，請到帳戶頁面 {page} 取消連結，並立即到 {forgot} 重設密碼\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
   }
 };
 
@@ -4493,6 +5179,62 @@ export const PROVIDER_UNLINKED: Record<string, Email> = {
     text:
       '{provider} bağlantısı Glazecalc hesabı {account} için kaldırıldı ve artık bu hesapta oturum açmak için kullanılamaz.\n\n' +
       'Bu sizseniz başka bir şey yapmanız gerekmez. Değilseniz biri hesabınızda oturum açmış olabilir: parolanızı hemen şu adresten sıfırlayın: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  id: {
+    subject: 'Cara masuk dihapus dari akun Glazecalc Anda',
+    text:
+      'Tautan {provider} ke akun Glazecalc {account} telah dilepas, sehingga {provider} tidak lagi dapat dipakai untuk masuk ke akun itu.\n\n' +
+      'Jika ini Anda, tidak ada lagi yang perlu dilakukan. Jika bukan, mungkin seseorang sedang masuk ke akun Anda: segera setel ulang kata sandi Anda di {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  ja: {
+    subject: 'Glazecalc のアカウントからログイン方法が削除されました',
+    text:
+      '{provider} と Glazecalc のアカウント {account} の連携が解除されました。今後、{provider} ではこのアカウントにログインできません。\n\n' +
+      'ご本人による操作であれば、ほかに必要な操作はありません。そうでない場合は、誰かがアカウントにログインしている可能性があります。すぐに次のページでパスワードを再設定してください: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  ko: {
+    subject: 'Glazecalc 계정에서 로그인 방법이 삭제되었습니다',
+    text:
+      'Glazecalc 계정 {account}에서 {provider} 연결이 해제되었으며, 이제 그 계정으로는 로그인할 수 없습니다.\n\n' +
+      '본인이 한 일이라면 따로 할 일은 없습니다. 그렇지 않다면 누군가 계정에 로그인해 있을 수 있으니, 바로 비밀번호를 재설정하세요: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  th: {
+    subject: 'ลบวิธีลงชื่อเข้าใช้ออกจากบัญชี Glazecalc ของคุณแล้ว',
+    text:
+      'ยกเลิกการเชื่อมโยง {provider} จากบัญชี Glazecalc {account} แล้ว และใช้ลงชื่อเข้าใช้บัญชีนี้ไม่ได้อีก\n\n' +
+      'หากเป็นคุณ ไม่ต้องทำอะไรเพิ่ม หากไม่ใช่ อาจมีคนลงชื่อเข้าใช้บัญชีของคุณอยู่: ให้รีเซ็ตรหัสผ่านทันทีที่ {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  vi: {
+    subject: 'Một cách đăng nhập đã bị xóa khỏi tài khoản Glazecalc của bạn',
+    text:
+      '{provider} đã bị hủy liên kết khỏi tài khoản Glazecalc {account}, và không còn dùng được để đăng nhập vào tài khoản đó.\n\n' +
+      'Nếu đó là bạn, không cần làm gì thêm. Nếu không, có thể có người đang đăng nhập vào tài khoản của bạn: hãy đặt lại mật khẩu ngay tại {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  'zh-Hans': {
+    subject: '您的 Glazecalc 账户移除了一种登录方式',
+    text:
+      '已取消 {provider} 与 Glazecalc 账户 {account} 的关联，不能再用它登录该账户。\n\n' +
+      '如果是您本人操作，无需再做任何事。如果不是，说明有人可能已登录您的账户：请立即在此重置密码：{forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  'zh-Hant': {
+    subject: '您的 Glazecalc 帳戶移除了一種登入方式',
+    text:
+      '已取消 {provider} 與 Glazecalc 帳戶 {account} 的連結，無法再用來登入該帳戶。\n\n' +
+      '如果這是您本人的操作，就不需要再做任何事。如果不是，表示有人可能已登入您的帳戶：請立即到 {forgot} 重設密碼\n\n' +
       '-- \n' +
       'Glazecalc, {app}\n'
   }
@@ -4909,6 +5651,111 @@ export const RESET_STOPPED: Record<string, ResetStoppedEmail> = {
       'Bu sizseniz başka bir şey yapmanız gerekmez. Değilseniz parolanızı hemen şu adresten sıfırlayın: {forgot}\n\n' +
       '-- \n' +
       'Glazecalc, {app}\n'
+  },
+  id: {
+    subject: 'Kata sandi Glazecalc Anda diubah',
+    opening:
+      'Kata sandi untuk akun Glazecalc {account} baru saja disetel ulang, dan setiap perangkat yang sedang masuk telah dikeluarkan.\n\n',
+    stopped:
+      'Untuk berjaga-jaga jika orang lain mengetahui kata sandi lama, penyetelan ulang ini juga telah menghentikan hal-hal berikut:\n\n',
+    tokens:
+      '- Token akses dan aplikasi terhubung yang dapat mengakses pekerjaan Anda yang tersimpan ({count}). Jika Anda masih memerlukan salah satunya, buat token baru di halaman akun Anda di {page}\n',
+    providers: '- Masuk dengan {providers}, yang dapat Anda tautkan kembali di halaman akun Anda di {page}\n',
+    shareLinks: '- Tautan yang Anda buat untuk membagikan resep. Anda dapat membuat yang baru dari setiap resep.\n',
+    closing:
+      '\n' +
+      'Jika ini Anda, tidak ada lagi yang perlu dilakukan. Jika bukan, segera setel ulang kata sandi Anda di {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  ja: {
+    subject: 'Glazecalc のパスワードが変更されました',
+    opening:
+      'Glazecalc のアカウント {account} のパスワードが先ほど再設定され、ログインしていたすべての端末がログアウトされました。\n\n',
+    stopped: '以前のパスワードをほかの人が知っていた場合に備えて、再設定により、次のものも使えなくなりました:\n\n',
+    tokens:
+      '- 保存した作業にアクセスできたアクセストークンと連携したアプリ（{count}件）。まだ必要な場合は、アカウントページ {page} で新しいトークンを作成してください\n',
+    providers: '- {providers} でのログイン。アカウントページ {page} で、もう一度連携できます\n',
+    shareLinks: '- 調合を共有するために作成したリンク。新しいリンクは、各調合から作成できます。\n',
+    closing:
+      '\n' +
+      'ご本人による操作であれば、ほかに必要な操作はありません。そうでない場合は、すぐに次のページでパスワードを再設定してください: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  ko: {
+    subject: 'Glazecalc 비밀번호가 변경되었습니다',
+    opening:
+      'Glazecalc 계정 {account}의 비밀번호가 방금 재설정되었고, 로그인되어 있던 모든 기기에서 로그아웃되었습니다.\n\n',
+    stopped: '이전 비밀번호를 다른 사람이 알고 있었을 경우에 대비해, 재설정으로 다음도 사용할 수 없게 되었습니다.\n\n',
+    tokens:
+      '- 저장한 작업에 접근할 수 있던 액세스 토큰과 연결된 앱({count}개). 아직 필요하다면 계정 페이지 {page}에서 새 토큰을 만드세요\n',
+    providers: '- {providers} 계정으로 로그인하는 방법. 계정 페이지 {page}에서 다시 연결할 수 있습니다\n',
+    shareLinks: '- 레시피를 공유하려고 만든 링크. 각 레시피에서 새 링크를 만들 수 있습니다.\n',
+    closing:
+      '\n' +
+      '본인이 한 일이라면 따로 할 일은 없습니다. 그렇지 않다면 바로 비밀번호를 재설정하세요: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  th: {
+    subject: 'เปลี่ยนรหัสผ่าน Glazecalc ของคุณแล้ว',
+    opening:
+      'รหัสผ่านของบัญชี Glazecalc {account} เพิ่งถูกรีเซ็ต และทุกอุปกรณ์ที่ลงชื่อเข้าใช้อยู่ถูกออกจากระบบแล้ว\n\n',
+    stopped: 'ในกรณีที่มีคนอื่นรู้รหัสผ่านเดิม การรีเซ็ตยังทำให้สิ่งเหล่านี้หยุดใช้งานด้วย:\n\n',
+    tokens:
+      '- โทเค็นการเข้าถึงและแอปที่เชื่อมต่อซึ่งเข้าถึงงานที่คุณบันทึกไว้ได้ ({count}) หากคุณยังต้องการ ให้สร้างโทเค็นใหม่ที่หน้าบัญชีของคุณที่ {page}\n',
+    providers: '- การลงชื่อเข้าใช้ด้วย {providers} ซึ่งคุณเชื่อมโยงใหม่ได้ที่หน้าบัญชีของคุณที่ {page}\n',
+    shareLinks: '- ลิงก์ที่คุณสร้างไว้เพื่อแชร์สูตรเคลือบ คุณสร้างลิงก์ใหม่ได้จากแต่ละสูตรเคลือบ\n',
+    closing:
+      '\n' +
+      'หากเป็นคุณ ไม่ต้องทำอะไรเพิ่ม หากไม่ใช่ ให้รีเซ็ตรหัสผ่านทันทีที่ {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  vi: {
+    subject: 'Mật khẩu Glazecalc của bạn đã được đổi',
+    opening:
+      'Mật khẩu của tài khoản Glazecalc {account} vừa được đặt lại, và mọi thiết bị đã đăng nhập đều đã bị đăng xuất.\n\n',
+    stopped: 'Phòng khi có người khác biết mật khẩu cũ, việc đặt lại cũng đã vô hiệu hóa những thứ sau:\n\n',
+    tokens:
+      '- Các mã thông báo truy cập và ứng dụng được kết nối có thể truy cập công việc đã lưu của bạn ({count}). Nếu bạn vẫn cần một mã, hãy tạo mã thông báo mới trên trang tài khoản của bạn tại {page}\n',
+    providers: '- Đăng nhập bằng {providers}, mà bạn có thể liên kết lại trên trang tài khoản của bạn tại {page}\n',
+    shareLinks:
+      '- Các liên kết bạn đã tạo để chia sẻ công thức men. Bạn có thể tạo liên kết mới từ từng công thức men.\n',
+    closing:
+      '\n' +
+      'Nếu đó là bạn, không cần làm gì thêm. Nếu không, hãy đặt lại mật khẩu của bạn ngay tại {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  'zh-Hans': {
+    subject: '您的 Glazecalc 密码已修改',
+    opening: 'Glazecalc 账户 {account} 的密码刚刚被重置，所有已登录的设备都已退出登录。\n\n',
+    stopped: '为防有人知道旧密码，这次重置还使以下内容失效：\n\n',
+    tokens:
+      '- 可以访问您已保存内容的访问令牌和已连接的应用（{count} 个）。如果您仍需要，请到账户页面 {page} 生成新令牌\n',
+    providers: '- 使用 {providers} 登录，您可以在账户页面 {page} 再次关联\n',
+    shareLinks: '- 您为分享配方生成的链接。您可以在每个配方中生成新的链接。\n',
+    closing:
+      '\n' +
+      '如果是您本人操作，无需再做任何事。如果不是，请立即在此重置密码：{forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  'zh-Hant': {
+    subject: '您的 Glazecalc 密碼已變更',
+    opening: 'Glazecalc 帳戶 {account} 的密碼剛剛已重設，所有已登入的裝置都已登出。\n\n',
+    stopped: '為防有人知道舊密碼，這次重設還讓以下內容失效：\n\n',
+    tokens:
+      '- 可以存取您已儲存內容的存取權杖和已連接的應用程式（{count} 個）。如果您仍需要，請到帳戶頁面 {page} 建立新權杖\n',
+    providers: '- 使用 {providers} 登入，您可以在帳戶頁面 {page} 再次連結\n',
+    shareLinks: '- 您為分享釉方所建立的連結。您可以在每個釉方中建立新的連結。\n',
+    closing:
+      '\n' +
+      '如果這是您本人的操作，就不需要再做任何事。如果不是，請立即到 {forgot} 重設密碼\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
   }
 };
 
@@ -5220,6 +6067,69 @@ export const TOKEN_MADE: Record<string, Email> = {
       'Değilseniz onu orada iptal edin ve parolanızı hemen şu adresten sıfırlayın: {forgot}\n\n' +
       '-- \n' +
       'Glazecalc, {app}\n'
+  },
+  id: {
+    subject: 'Token akses baru untuk akun Glazecalc Anda',
+    text:
+      'Token akses bernama "{name}" baru saja dibuat untuk akun Glazecalc {account}. Token ini dapat membaca resep, bahan, catatan, dan catatan pembakaran yang tersimpan di akun sampai {date}.\n\n' +
+      'Jika ini Anda, tidak ada lagi yang perlu dilakukan. Anda dapat melihat dan mencabut token Anda di {page}\n\n' +
+      'Jika bukan, cabut token itu di sana dan segera setel ulang kata sandi Anda di {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  ja: {
+    subject: 'Glazecalc のアカウントに新しいアクセストークンが作成されました',
+    text:
+      'Glazecalc のアカウント {account} に、「{name}」というアクセストークンが先ほど作成されました。このトークンは、{date}まで、アカウントに保存された調合、原料、メモ、焼成記録を読み取れます。\n\n' +
+      'ご本人による操作であれば、ほかに必要な操作はありません。トークンは {page} で確認と失効ができます。\n\n' +
+      'そうでない場合は、そこでトークンを失効させ、すぐに次のページでパスワードを再設定してください: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  ko: {
+    subject: 'Glazecalc 계정의 새 액세스 토큰',
+    text:
+      'Glazecalc 계정 {account}에서 이름이 “{name}”인 액세스 토큰을 방금 만들었습니다. 이 토큰은 {date}까지 계정에 저장된 레시피, 원료, 메모, 소성 기록을 읽을 수 있습니다.\n\n' +
+      '본인이 한 일이라면 따로 할 일은 없습니다. {page}에서 토큰을 확인하고 폐기할 수 있습니다.\n\n' +
+      '그렇지 않다면 그곳에서 토큰을 폐기하고 바로 비밀번호를 재설정하세요: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  th: {
+    subject: 'โทเค็นการเข้าถึงใหม่สำหรับบัญชี Glazecalc ของคุณ',
+    text:
+      'เพิ่งสร้างโทเค็นการเข้าถึงชื่อ “{name}” สำหรับบัญชี Glazecalc {account} โทเค็นอ่านสูตรเคลือบ วัตถุดิบ บันทึกย่อ และบันทึกการเผาที่บันทึกไว้ในบัญชีได้จนถึง {date}\n\n' +
+      'หากเป็นคุณ ไม่ต้องทำอะไรเพิ่ม คุณดูและเพิกถอนโทเค็นของคุณได้ที่ {page}\n\n' +
+      'หากไม่ใช่ ให้เพิกถอนที่นั่นและรีเซ็ตรหัสผ่านทันทีที่ {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  vi: {
+    subject: 'Một mã thông báo truy cập mới cho tài khoản Glazecalc của bạn',
+    text:
+      'Một mã thông báo truy cập có tên “{name}” vừa được tạo cho tài khoản Glazecalc {account}. Nó có thể đọc các công thức men, nguyên liệu, ghi chú và nhật ký nung đã lưu trong tài khoản đến {date}.\n\n' +
+      'Nếu đó là bạn, không cần làm gì thêm. Bạn có thể xem và thu hồi các mã thông báo của mình tại {page}\n\n' +
+      'Nếu không, hãy thu hồi nó ở đó và đặt lại mật khẩu của bạn ngay tại {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  'zh-Hans': {
+    subject: '您的 Glazecalc 账户有了新的访问令牌',
+    text:
+      '刚刚为 Glazecalc 账户 {account} 生成了一个名为“{name}”的访问令牌。在 {date} 之前，它可以读取该账户中保存的配方、原料、笔记和烧窑记录。\n\n' +
+      '如果是您本人操作，无需再做任何事。您可以在 {page} 查看并吊销您的令牌\n\n' +
+      '如果不是，请在那里吊销它，并立即在此重置密码：{forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  'zh-Hant': {
+    subject: '您的 Glazecalc 帳戶有了新的存取權杖',
+    text:
+      '剛剛為 Glazecalc 帳戶 {account} 建立了一個名為「{name}」的存取權杖。在 {date} 之前，這個權杖可以讀取該帳戶中儲存的釉方、原料、筆記和燒窯紀錄。\n\n' +
+      '如果這是您本人的操作，就不需要再做任何事。您可以在 {page} 查看並撤銷您的權杖。\n\n' +
+      '如果不是，請在那裡撤銷這個權杖，並立即到 {forgot} 重設密碼\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
   }
 };
 
@@ -5421,6 +6331,62 @@ export const TOKEN_EXPIRING: Record<string, Email> = {
     text:
       'Glazecalc hesabı {account} üzerindeki “{name}” adlı erişim belirteci {date} tarihinde çalışmayı bırakacak.\n\n' +
       'Hâlâ kullanıyorsanız, o tarihten önce {page} adresinde yeni bir belirteç oluşturun ve eskisinin yerine asistanınıza veya betiğinize verin. Artık kullanmıyorsanız yapmanız gereken bir şey yok.\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  id: {
+    subject: 'Token akses untuk akun Glazecalc Anda segera kedaluwarsa',
+    text:
+      'Token akses bernama "{name}" pada akun Glazecalc {account} berhenti berfungsi pada {date}.\n\n' +
+      'Jika Anda masih memakainya, buat token baru sebelum itu di {page} dan berikan ke asisten atau skrip Anda sebagai pengganti yang lama. Jika Anda tidak lagi memakainya, tidak ada yang perlu dilakukan.\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  ja: {
+    subject: 'Glazecalc のアカウントのアクセストークンがまもなく期限切れになります',
+    text:
+      'Glazecalc のアカウント {account} の「{name}」というアクセストークンは、{date}に使えなくなります。\n\n' +
+      'まだ使っている場合は、それまでに {page} で新しいトークンを作成し、古いものの代わりにアシスタントやスクリプトに渡してください。もう使っていない場合は、何もする必要はありません。\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  ko: {
+    subject: 'Glazecalc 계정의 액세스 토큰이 곧 만료됩니다',
+    text:
+      'Glazecalc 계정 {account}에서 이름이 “{name}”인 액세스 토큰은 {date}에 사용할 수 없게 됩니다.\n\n' +
+      '아직 쓰고 있다면 그 전에 {page}에서 새 토큰을 만들어 이전 토큰 대신 어시스턴트나 스크립트에 넣으세요. 더 이상 쓰지 않는다면 할 일은 없습니다.\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  th: {
+    subject: 'โทเค็นการเข้าถึงของบัญชี Glazecalc ของคุณจะหมดอายุในไม่ช้า',
+    text:
+      'โทเค็นการเข้าถึงชื่อ “{name}” ในบัญชี Glazecalc {account} จะหยุดใช้งานในวันที่ {date}\n\n' +
+      'หากคุณยังใช้อยู่ ให้สร้างโทเค็นใหม่ก่อนถึงวันนั้นที่ {page} และให้ผู้ช่วยหรือสคริปต์ของคุณใช้แทนโทเค็นเก่า หากคุณไม่ใช้แล้ว ไม่ต้องทำอะไร\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  vi: {
+    subject: 'Một mã thông báo truy cập của tài khoản Glazecalc của bạn sắp hết hạn',
+    text:
+      'Mã thông báo truy cập có tên “{name}” trên tài khoản Glazecalc {account} sẽ ngừng hoạt động vào {date}.\n\n' +
+      'Nếu bạn vẫn dùng nó, hãy tạo mã thông báo mới trước thời điểm đó tại {page} và đưa nó cho trợ lý hoặc tập lệnh của bạn thay cho mã cũ. Nếu bạn không còn dùng nó, không cần làm gì.\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  'zh-Hans': {
+    subject: '您的 Glazecalc 账户的一个访问令牌即将失效',
+    text:
+      'Glazecalc 账户 {account} 上名为“{name}”的访问令牌将在 {date} 失效。\n\n' +
+      '如果您仍在使用它，请在此之前到 {page} 生成新令牌，并交给您的助手或脚本，以取代旧令牌。如果您已不再使用它，无需做任何事。\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  'zh-Hant': {
+    subject: '您的 Glazecalc 帳戶的一個存取權杖即將失效',
+    text:
+      'Glazecalc 帳戶 {account} 上名為「{name}」的存取權杖將在 {date} 失效。\n\n' +
+      '如果您仍在使用這個權杖，請在此之前到 {page} 建立新權杖，並交給您的助理或指令碼，以取代舊權杖。如果您已不再使用，就不需要做任何事。\n\n' +
       '-- \n' +
       'Glazecalc, {app}\n'
   }
