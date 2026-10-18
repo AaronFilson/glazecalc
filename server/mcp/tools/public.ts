@@ -225,7 +225,9 @@ export const registerPublicTools = (server: McpServer, caller: Caller): void => 
           .string()
           .max(40)
           .optional()
-          .describe('The limits to check against: "glazecalc" (the default) is the only set so far.'),
+          .describe(
+            'The limits to check against: "glazecalc" (the default here) or "hesselberth-roy" (Hesselberth & Roy, cone 6 and 10 only, no low-fire figures; the recipe page’s default).'
+          ),
         language: languageArg
       }),
       annotations: READ_ONLY

@@ -317,6 +317,13 @@ describe('MCP: the public tools', () => {
     expect(badSet.isError).to.equal(true);
   });
 
+  it('check_limits names every limit set it takes', async () => {
+    const tools = ((await rpc('tools/list')).body!.result as { tools: Json[] }).tools;
+    const tool = tools.find((t) => t.name === 'check_limits')!;
+    const described = tool.inputSchema.properties.limitSet.description as string;
+    for (const id of Object.keys(recipe.LIMIT_SETS)) expect(described).to.include(`"${id}"`);
+  });
+
   it('convert_cone_temperature reads the Orton and SK charts', async () => {
     expect(await data('convert_cone_temperature', { cone: '6' })).to.include({ celsius: 1222, fahrenheit: 2232 });
     const sk = recipe.inScale(1230, 'F');
