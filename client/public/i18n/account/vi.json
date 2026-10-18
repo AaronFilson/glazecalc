@@ -316,7 +316,7 @@
       "sg": {
         "label": "Tỷ trọng",
         "saved": "Đã lưu: độ đặc của men theo tỷ trọng.",
-        "example": "tỷ trọng 1,45"
+        "example": "1,45"
       },
       "baume": {
         "label": "Độ Baumé, đo bằng tỷ trọng kế",

@@ -92,11 +92,8 @@ describe('pages in each language', () => {
     expect(sitemap(SITE)).to.include('/tr/');
   });
 
-  it('knows Indonesian and Vietnamese, before they go live, without offering them or giving them the plainer notice', () => {
-    for (const [code, name, english] of [
-      ['id', 'Bahasa Indonesia', 'Indonesian'],
-      ['vi', 'Tiếng Việt', 'Vietnamese']
-    ]) {
+  it('knows Indonesian, before it goes live, without offering it or giving it the plainer notice', () => {
+    for (const [code, name, english] of [['id', 'Bahasa Indonesia', 'Indonesian']]) {
       const language = languages.languageFor(code);
       expect(language).to.include({ name, english, dir: 'ltr', live: false });
       expect(language).not.to.have.property('plainNotice');
@@ -109,8 +106,11 @@ describe('pages in each language', () => {
     }
   });
 
-  it('offers Thai, with the standard notice rather than the plainer one', () => {
-    for (const [code, name, english] of [['th', 'ภาษาไทย', 'Thai']]) {
+  it('offers Thai and Vietnamese, with the standard notice rather than the plainer one', () => {
+    for (const [code, name, english] of [
+      ['th', 'ภาษาไทย', 'Thai'],
+      ['vi', 'Tiếng Việt', 'Vietnamese']
+    ]) {
       const language = languages.languageFor(code);
       expect(language).to.include({ name, english, dir: 'ltr', live: true });
       expect(language).not.to.have.property('plainNotice');
