@@ -11,14 +11,19 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   fired it to (the tested cone shows first); Orton 022 to 13, half cones and 14 to 42; atmosphere (oxidation, reduction,
   neutral) and process (wood, soda, salt, raku, pit); for a temperature, the rate over the last hour and the hold; a
   schedule note and a witness cone. Conversions into your own scale are shown beside it, marked approximate, using
-  Kyoto's measured SK bends rather than the JIS figures. The limits panel takes its band from the firing and shows both
+  Kyoto's measured SK bends only (SK 8, 10 and 12; other SK cones show no temperature or Orton cone, never the JIS
+  figures). The limits panel takes its band from the firing and shows both
   bands side by side for a range across them (cone 6–10); the band picker still overrides. A **food surface** flag brings
   a note that food safety depends on firing to the tested cone (test a range at its low end). **Firing logs** link to
   recipes both ways, each with a result note, and can fill in the tested cones. **Duplicate for another cone**, cone and
   atmosphere filters on the saved recipes, the firing on the mix ticket, print and shared page (the author's scale first),
-  paste-in reading "Cone 6 ox", "^6", "SK8", "1240°C", "6½" or "ox/red", Glazy's Cone and Atmospheres in the recipes CSV,
-  and the firing in the MCP tools (`get_recipe`; `list_recipes` by cone and atmosphere). Existing recipes show the
-  firing as not stated.
+  paste-in reading "Cone 6 ox", "^6", "SK8" (SK 6a's chart number), "1240°C", "6½", "cone 4,5" (cones 4 and 5) or
+  "ox/red" (a firing line never splits a recipe, and a title such as "Red" or "Salt" is not read as a firing), Glazy's
+  Cone and Atmospheres in the recipes CSV (Orton cones marked Δ, so a spreadsheet keeps "06"), and the firing in the MCP
+  tools (`get_recipe`; `list_recipes` by cone, across scales by measured equivalents, and by atmosphere). Firing log
+  links change one at a time, so two open pages never undo each other's; a log in the Trash is hidden and comes back
+  with it. A shared recipe shows the firing's schedule note only with the notes. Existing recipes show the firing as
+  not stated.
 - **Analysis, limits and a Stull chart on the recipe page**, under the recipe, as you type: each
   oxide's moles, mole % and fired weight %, the loss on ignition and the calculated thermal
   expansion (an estimate, with the coefficients named); the unity formula against a limit set,
