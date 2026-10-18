@@ -102,6 +102,9 @@
     "quartzAll": "Kvarc, csak kvarcból álló por esetén",
     "cristobaliteAll": "Krisztobalit, csak krisztobalitból álló por esetén",
     "allFree": "Ellenőrzési koncentráció csak szabad szilícium-dioxidból álló por esetén",
+    "bandFromTo": "{from}% és {to}% közötti szabad szilícium-dioxid-tartalmú (SiO₂) por",
+    "bandOverTo": "Több mint {from}% és legfeljebb {to}% szabad szilícium-dioxid-tartalmú por",
+    "bandAbove": "Több mint {from}% szabad szilícium-dioxid-tartalmú por",
     "recommended": "Ajánlja: {abbr}",
     "value": "{value} mg/m³",
     "kind": {
@@ -160,7 +163,15 @@
       "myFlat": "Laposáru",
       "mySmall": "Kis öblösáru",
       "myLarge": "Nagy öblösáru",
-      "myCooking": "Főzőedények"
+      "myCooking": "Főzőedények",
+      "idFlat": "Legfeljebb 25 mm belső mélységű tárgyak",
+      "idSmall": "25 mm-nél nagyobb belső mélységű tárgyak, 1100 mL alatt",
+      "idLarge": "25 mm-nél nagyobb belső mélységű tárgyak, legalább 1100 mL",
+      "thFlat": "Legfeljebb 25 mm mély tárgyak",
+      "thSmall": "25 mm-nél mélyebb tárgyak, 1,1 L alatt",
+      "thLarge": "25 mm-nél mélyebb tárgyak, legalább 1,1 L",
+      "thInfant": "Legfeljebb 12 hónapos csecsemők ételéhez használt edények",
+      "thCooking": "Főzőedények, amelyeket a főzés hőjének elviselésére készítettek"
     },
     "judged": {
       "average": "6 darab átlaga",

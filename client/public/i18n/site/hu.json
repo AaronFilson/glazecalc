@@ -57,9 +57,13 @@
     "stackServer": "TypeScript API (Node.js 24, Express 5) MongoDB 9 adatbázissal, több mint 350 automatizált teszttel ellenőrizve.",
     "stackHosting": "Dockerben fut az Amazon Web Services rendszerén, nginx mögött, HTTPS-sel (Let's Encrypt).",
     "stackDeploy": "A telepítést a GitHub Actions végzi: minden változtatásnál elkészülnek és tesztelésen mennek át a konténerképek, a telepítés pedig tárolt kulcsok nélkül jelentkezik be az AWS-be.",
+    "creditsHeading": "Közreműködők",
+    "credits": "A Stull-diagram tartományai a Glazy által R. T. Stull 1912-es diagramjából készített értelmezésből származnak, Derek Au munkája (Copyright (c) 2017 Derek Au, MIT License). A <notices>teljes közlemény</notices> a forráskódban található.",
     "whoHeading": "Ki készítette",
     "who": "A Glazecalc alkalmazást Aaron Filson készíti. Hibát talált, vagy van egy ötlete? <issues>Tegyen bejelentést a GitHubon</issues>.",
-    "studio": "Aaron Filson kézműves kerámiái a Washington állambeli Tacomában, az <studio>Updraft Pottery Studio</studio> műhelyben találhatók. Nézze meg a munkákat, és rendeljen egy darabot, ha valamelyik megtetszik."
+    "studio": "Aaron Filson kézműves kerámiái a Washington állambeli Tacomában, az <studio>Updraft Pottery Studio</studio> műhelyben találhatók. Nézze meg a munkákat, és rendeljen egy darabot, ha valamelyik megtetszik.",
+    "languagesHeading": "Nyelvek",
+    "languages": "A Glazecalc ezeken a nyelveken érhető el. Mindegyik link ezt az oldalt nyitja meg az adott nyelven."
   },
   "privacy": {
     "title": "Adatvédelem",
@@ -71,8 +75,15 @@
     "contact": "Ha az adatairól szeretne kérdezni, vagy bármelyik jogával élni szeretne, írjon ide: <mail>privacy@glazecalcapp.com</mail>. <issues>Hibajegyet is nyithat a GitHubon</issues>, de a hibajegyek nyilvánosak: soha ne írja bele az e-mail-címét vagy bármilyen személyes adatát. Az adataival kapcsolatos teendők többségét maga is elvégezheti a <account>fiókja oldalán</account>.",
     "storedHeading": "Mit őrzünk meg, és miért",
     "storedAccount": "<b>A fiókja:</b> az e-mail-címe és a jelszava, amelyet csak egyirányú kivonatként (bcrypt hash) tárolunk, magát a jelszót soha. A beállításait (például a nyelvet, a régiót és a mértékegységeket) és a készlete listáját vele együtt őrizzük. A fiókhoz e-mail-cím kell, a bejelentkezéshez és az elfelejtett jelszó visszaállításához. Amikor fiókot hoz létre, linket küldünk a címre, hogy megerősítse, hogy az Öné; addig csak akkor megy rá levél, ha kéri, például jelszó-visszaállításkor.",
+    "storedPrices": "<b>Árak, ha megad ilyeneket:</b> amennyit az egyes nyersanyagokért fizet kilogrammonként, és a pénznem, amelyben vannak, egy adag költségének kiszámításához. Üzleti adatok, a fiókjával együtt őrizzük őket, és csak Ön láthatja őket: soha nem részei egy receptnek, ezért semmi, amit megoszt, nem mutatja őket. Az „Adataim letöltése” tartalmazza őket, a fiók törlése pedig törli őket. A próbahasználat árai a bejegyzéseivel együtt átkerülnek a fiókjába azokhoz a nyersanyagokhoz, amelyekhez még nem adott meg árat, ha mindkettő ugyanabban a pénznemben van.",
     "storedEmailChange": "<b>E-mail-cím módosítása:</b> a cím legutóbbi változásának dátuma, hogy a kétlépéses bejelentkezés kikapcsolására vonatkozó kérést ne fogadjuk el új címről a változás utáni 30 napban.",
     "storedSignIn": "<b>Kétlépéses bejelentkezés, ha bekapcsolja:</b> hogy be van-e kapcsolva; a kulcs, amelyet a hitelesítő alkalmazása megoszt a Glazecalc-cal, titkosítva; minden hozzáférési kulcsnál a nyilvános kulcsa (amellyel önmagában nem lehet bejelentkezni), az azonosítója és az adatai, amelyeket az eszköze ad neki, az Ön által adott név, valamint hogy mikor adták hozzá és mikor használták utoljára; a helyreállítási kódjai, csak kulcsos egyirányú hash formájában, így senki sem tudja visszaolvasni őket; és ha valaki megadja a jelszavát, de nem fejezi be a második lépést, hogy a Glazecalc mikor értesítette Önt e-mailben erről (legfeljebb naponta egyszer). Amíg bejelentkezik, a jelszava és a második lépés között a szerver 5 percig megőrzi a bejelentkezés feljegyzését, az oldal pedig egy rövid tokent tart csak a memóriájában: nincs új süti, és semmi sem kerül a böngészője tárolójába.",
+    "storedSaved": "<b>Amit elment:</b> a receptjei, nyersanyagai, adalékai, jegyzetei, égetési naplói és tanácsai, ahogy megírta őket. Csak Ön láthatja őket, hacsak nem oszt meg egy receptet linkkel.",
+    "storedTrash": "<b>A Lomtár és a korábbi változatok:</b> amit eltávolít egy listából, egészében a Lomtárban vár, hogy visszahelyezhesse; a bejegyzésen elmentett minden módosítás pedig megőrzi a bejegyzést olyannak, amilyen közvetlenül előtte volt, hogy visszavonhassa a módosítást.",
+    "storedShares": "<b>A linkkel megosztott receptek, ha oszt meg ilyeneket:</b> melyik recept, mikor készült a linkje, és megjeleníti-e a recept megjegyzéseit, a link egyirányú kivonatával (soha nem magával a linkkel). Aki rendelkezik a linkkel, láthatja a receptet olyannak, amilyen most, a Seger-képletével együtt, és a megjegyzéseivel, ha úgy döntött, hogy megjeleníti őket; az e-mail-címét, a fiókját és az árakat soha. A megosztott receptek ki vannak zárva a keresőmotorokból, és a link soha nem kerül a szerver naplóiba. A visszaélések megelőzésére az egyes IP-címekről megnyitott megosztott recepteket 15 percig számoljuk, a memóriában. Próbahasználat nem oszthat meg.",
+    "storedTokens": "<b>Hozzáférési tokenek és csatlakoztatott alkalmazások, ha létrehoz vagy jóváhagy ilyeneket:</b> mindegyikről a neve, mit tehet, a token egyirányú kivonata (soha nem maga a token) és az utolsó 4 karaktere, valamint hogy mikor készült, mikor használták utoljára, mikor jár le és mikor vonták vissza.",
+    "storedActivity": "<b>Mit tettek a tokenek és az alkalmazások:</b> egy sor minden olyan bejegyzésről, amelyet egy hozzáférési token vagy csatlakoztatott alkalmazás létrehozott, módosított, a Lomtárba helyezett, visszahelyezett vagy visszavont: mikor, melyik token vagy alkalmazás, mit tett, és a bejegyzés rövidre vágott címe. Soha egy jegyzet szövege vagy bármi más a bejegyzésben. A weboldalon végzett módosításai nem szerepelnek a listában.",
+    "storedLimits": "<b>Gyakorisági korlátok:</b> a találgatás és az elszabadult szkriptek megállítására számláljuk a bejelentkezési kísérleteket, a regisztrációkat, a visszaállítási kéréseket és a próbahasználatokat IP-cím vagy fiók szerint, a nem működő hozzáférési tokeneket IP-cím szerint, az egyes hozzáférési tokenek által a Lomtárba helyezett bejegyzéseket token szerint, a megnyitott megosztott recepteket és a semmit sem megnyitó megosztási linkeket IP-cím szerint, valamint az MI-asszisztensek eszközeihez (MCP) érkező kéréseket: percenként 60 és naponta 2000 IP-cím szerint, vagy percenként 120 és naponta 5000 fiók szerint, ha hozzáférési tokent használnak, percenként legfeljebb 10 helyettesítéssel vagy összeállítással.",
     "storedTrial": "<b>Próbahasználat (Kipróbálás most):</b> nincs e-mail-cím vagy jelszó, csak egy kitalált név, például „speckled quiet kilns”. Ha próbahasználat közben ugyanabban a böngészőben bejelentkezik egy fiókba, amit a próbahasználatban készített, átkerül a fiókba.",
     "storedResets": "<b>Jelszó-visszaállítási és e-mail-linkek:</b> melyik fiók kérte, mikor, melyik címre küldtük a cím megerősítésére szolgáló linket, és minden link ujjlenyomata (nem maga a link).",
     "storedLogs": "<b>Naplók:</b> a webszerver minden kérést rögzít: az IP-címét, az időpontot, a kért oldalt és a böngészője nevét. Az alkalmazás a hibákat azzal az oldallal együtt rögzíti, amelyen történtek, az e-mail-címét soha.",
@@ -95,6 +106,11 @@
     "choiceNoWarranty": "A Glazecalc „ahogy van” állapotban, szavatosság nélkül érhető el. Fenntartói semmilyen felelősséget vagy kártérítési felelősséget nem vállalnak azért, hogy Ön úgy dönt, fiókot hoz létre, sem azért, hogy a fiók adatait hol tárolják.",
     "keptHeading": "Meddig őrizzük meg",
     "keptAccount": "<b>A fiókja és amit elment:</b> amíg nem törli őket. A fiókokat nem töröljük azért, mert nem használják őket.",
+    "keptTrash": "<b>A Lomtár és a korábbi változatok:</b> az eltávolított bejegyzés az eltávolítása után 30 napig, vagy amíg véglegesen nem törli, illetve ki nem üríti a Lomtárat; a korábbi változatok 90 napig, és minden bejegyzésből csak az utolsó 20 (meg az, amelyik egy hozzáférési token módosításai előtti), de soha nem hosszabb ideig, mint maga a bejegyzés: amíg a bejegyzés a Lomtárban van, a változatai vele együtt törlődnek. Mindkettő azonnal törlődik, amikor törli a fiókját.",
+    "keptShares": "<b>Megosztási linkek:</b> amíg abba nem hagyja a recept megosztását, nem készít hozzá új linket, nem helyezi a Lomtárba, vagy nem törli a fiókját. A recept Lomtárból való visszahelyezése nem osztja meg újra. A jelszó visszaállítása vagy a mindenhol való kijelentkezés is leállítja az összes linkjét; a jelszó módosítása nem.",
+    "keptTokens": "<b>Hozzáférési tokenek és csatlakoztatott alkalmazások:</b> mindegyik a lejárata után 30 napig (mindegyik lejár, legfeljebb egy éven belül), vagy amíg nem törli a fiókját. A jelszó visszaállítása vagy a „Kijelentkezés mindenhol” mindet egyszerre leállítja.",
+    "keptActivity": "<b>Mit tettek a tokenek és az alkalmazások:</b> 90 napig, vagy amíg nem törli a fiókját.",
+    "keptLimits": "<b>Gyakorisági korlátok:</b> a számlálókat csak a szerver memóriájában őrizzük, 1 perctől 24 óráig, és az újraindításkor elvesznek.",
     "keptTrial": "<b>Próbahasználat:</b> a kezdetétől számított 14 napig, utána mindennel együtt törlődik, ami benne van, hacsak nem hoz létre fiókot, hogy megőrizze.",
     "keptResets": "<b>Jelszó-visszaállítási és e-mail-linkek:</b> a visszaállító link 30 percig érvényes, és nyilvántartását körülbelül egy óra múlva töröljük; a cím megerősítésére szolgáló link 24 óráig érvényes, és ennyi ideig őrizzük.",
     "keptSignIn": "<b>Kétlépéses bejelentkezés:</b> minden hitelesítő alkalmazás, hozzáférési kulcs és helyreállítási kódkészlet addig, amíg eltávolítja, kikapcsolja a kétlépéses bejelentkezést, vagy törli a fiókját. A második lépésre váró bejelentkezést 5 perc után töröljük, a hozzáadni kezdett, de be nem fejezett alkalmazást vagy hozzáférési kulcsot legfeljebb 10 perc után.",
@@ -112,6 +128,7 @@
     "rightsAsk": "Minden egyébhez, például ha azt kéri, hogy adatait egy hiba kijavításáig ne használjuk, vagy ha tiltakozik a felhasználásuk módja ellen, írjon ide: <mail>privacy@glazecalcapp.com</mail>. Ez ingyenes, és egy hónapon belül választ kap. Csak azt kell igazolnia, hogy a fiók az Öné, bejelentkezéssel vagy a fiók címére küldött link megnyitásával; személyazonosító igazolványt soha nem kérünk.",
     "rightsComplain": "Ha nem elégedett, panaszt tehet egy adatvédelmi hatóságnál: az EU-ban <edpb>az országa hatóságánál</edpb>, az Egyesült Királyságban pedig az <ico>Information Commissioner’s Office</ico> nevű hivatalnál.",
     "storageHeading": "Sütik és böngészőtárhely",
+    "storageIntro": "A Glazecalc két sütit állít be, a másodikat csak akkor, amikor Google-lal vagy GitHubbal jelentkezik be, és néhány kis értéket tárol a böngészőjében. Mindegyik valamilyen kért dologhoz kell: a bejelentkezve maradáshoz, a Google-lal vagy GitHubbal való bejelentkezéshez, vagy egy választása megjegyzéséhez. Egyik sem követi Önt, és egyiket sem osztjuk meg, ezért a jogszabály nem írja elő, hogy előbb megkérdezzük, és nincs süti-szalag.",
     "storageLabel": "Sütik és böngészőtárhely",
     "storageName": "Név",
     "storagePurpose": "Mire szolgál",
@@ -150,6 +167,7 @@
         "lasts": "Amíg nem törli a böngésző tárhelyét."
       },
       "print": {
+        "purpose": "Legutóbbi választásai egy recept nyomtatásához: a teljes recept, egy adag vagy a munkalap, és az adag mérete.",
         "lasts": "Amíg nem törli a böngésző tárhelyét."
       },
       "token": {
@@ -163,12 +181,19 @@
       "reloadedFor": {
         "purpose": "A webhely új verziójának kiadása után az, hogy melyik oldal töltődött újra és mikor, hogy egy oldal legfeljebb percenként egyszer töltődjön újra.",
         "lasts": "Amíg be nem zárja a lapot."
+      },
+      "oauthCookie": {
+        "purpose": "Csak amíg Google-lal vagy GitHubbal jelentkezik be: a szolgáltató válaszát a böngészőjéhez köti, így senki más nem fejezheti be az Ön bejelentkezését, és nem indíthat el helyette egyet. Az oldalon futó szkriptek nem olvashatják.",
+        "lasts": "Akkor jön létre, amikor megnyomja a „Folytatás a Google-lal” vagy a „Folytatás a GitHubbal” gombot, vagy összekapcsol egyet a fiókoldalán. Törlődik, amikor a bejelentkezés befejeződik, vagy 10 perc múlva."
       }
     },
     "childrenHeading": "Gyermekek",
     "children": "A Glazecalc fazekasoknak szóló eszköz, és nem gyermekeknek készült.",
     "changesHeading": "Változások",
-    "changes": "Ha ez a tájékoztató megváltozik, az oldal tetején lévő dátum is megváltozik."
+    "changes": "Ha ez a tájékoztató megváltozik, az oldal tetején lévő dátum is megváltozik.",
+    "storedProviders": "<b>Google vagy GitHub, ha valamelyikkel bejelentkezik:</b> a szolgáltató saját azonosítója Önről (egy szám vagy kód, amely soha nem változik), mikor kapcsolta össze, és mikor jelentkezett be vele utoljára, valamint hogy a fióknak van-e saját jelszava. A szolgáltatótól mást nem őrzünk meg: se a nevét, se a képét, se semmilyen kulcsot az ottani fiókjához. Amíg bejelentkezik, a szerver feljegyzést tart a bejelentkezésről, azzal az e-mail-címmel, amelyet a szolgáltató az Öné gyanánt megad, amikor szükség van rá: új fióknál, ahol ez lesz a fiók e-mail-címe, vagy ha egy Glazecalc-fiók már rendelkezik ezzel az e-mail-címmel, hogy a bejelentkezés után ahhoz a fiókhoz kapcsolhassuk a szolgáltatót. A feljegyzés, és benne az e-mail-cím, körülbelül 10 percen belül törlődik.",
+    "providers": "<b>A Google-lal vagy GitHubbal való bejelentkezés</b> az Ön döntése, és csak akkor történik meg, amikor megnyomja a gombját. A böngészője ekkor a Google-hoz vagy a GitHubhoz megy, amelyek elküldik a Glazecalcnak az Önre vonatkozó azonosítójukat és az e-mail-címét. Mindkettő önálló vállalat, és a saját adatvédelmi szabályzata szerint felel azért, amit megoszt vele. Egyiküktől sem töltődik be szkript vagy kép a Glazecalc oldalain.",
+    "keptProviders": "<b>Google vagy GitHub:</b> mindegyik összekapcsolás addig, amíg le nem választja, vagy nem törli a fiókját. A folyamatban lévő bejelentkezés 10 perc után törlődik."
   },
   "notFound": {
     "heading": "Az oldal nem található",
@@ -194,5 +219,27 @@
     "standardFetchFailed": "Hiba történt a szerveren tárolt tanácsok betöltésekor.",
     "saved": "Sikeresen hozzáadva a tanácsokhoz.",
     "saveFailed": "Hiba történt a tanács elküldésekor."
+  },
+  "assistants": {
+    "title": "A Glazecalc használata az MI-asszisztensből",
+    "lead": "Az olyan MI-asszisztensek, mint a Claude, a GitHub Copilot, a Cursor és a Gemini, a Model Context Protocol (MCP) segítségével közvetlenül használhatják a Glazecalc számításait.",
+    "whatHeading": "Mit tud",
+    "what": "Fiók nélkül egy asszisztens kikeresheti a könyvtár nyersanyagait, kiszámíthatja egy recept Seger-képletét, összevetheti az égetéséhez tartozó határértékekkel, helyettesítőket javasolhat a megszűnt nyersanyagokhoz, újraépíthet egy receptet az Ön által megnevezett nyersanyagokból, átválthat gúlák és hőmérsékletek között, valamint kereshet az útmutatókban és olvashatja őket. Amit küld, azt nem mentjük el; mint minden oldalnál, a webszerver naplója rögzíti az egyes kérések IP-címét, idejét és címét (soha nem azt, amit küldtek), 14 napig.",
+    "mine": "A <account>fiókoldalon</account> létrehozott hozzáférési tokennel a saját receptjeit, nyersanyagait, műhelyfüzetét, égetési naplóit és a meglévő nyersanyagait is elolvashatja. A token csak olvasni tud: soha nem módosít és nem távolít el semmit.",
+    "caution": "A határérték-ellenőrzések a közzétett határértékekből származó figyelmeztetések, ugyanúgy, mint az alkalmazásban, nem bizonyítékai annak, hogy egy máz élelmiszerrel érintkezésre alkalmas. Minden mázat próbaégessen, és az élelmiszerrel érintkező felületekre szánt mázakat vizsgáltassa meg kioldódásra.",
+    "addressHeading": "A cím",
+    "address": "Adja meg az asszisztensének ezt a címet, a Streamable HTTP átvitelt használva:",
+    "token": "Hogy a saját bejegyzéseit is elolvashassa, hozzon létre egy tokent a <account>fiókoldalon</account>, és másolja ki. Az asszisztense egy Authorization fejlécben küldi el, Bearer után a tokennel. Tartsa távol a megosztott vagy közzétett fájloktól, ahogy egy jelszót is.",
+    "clientsHeading": "A Glazecalc hozzáadása az asszisztenséhez",
+    "claudeCode": "Terminálban:",
+    "claudeCodeToken": "Hozzáférési tokennel, hogy a saját bejegyzéseit is elolvashassa:",
+    "vscode": "Egy mappa .vscode/mcp.json fájljában, vagy a felhasználói beállításokban. A VS Code egyszer kéri a tokent, és rejtve tartja; a headers és az inputs elhagyásával csak azokat az eszközöket használhatja, amelyekhez nem kell fiók:",
+    "cursor": "A ~/.cursor/mcp.json fájlban, vagy egy projekt .cursor/mcp.json fájljában. A headers elhagyásával csak azokat az eszközöket használhatja, amelyekhez nem kell fiók:",
+    "gemini": "A ~/.gemini/settings.json fájlban. A headers elhagyásával csak azokat az eszközöket használhatja, amelyekhez nem kell fiók:",
+    "appsHeading": "Claude, ChatGPT és más alkalmazások",
+    "apps": "Adjon hozzá egyéni csatlakozót a fenti címmel. Ezek az alkalmazások még nem tudnak hozzáférési tokent küldeni, ezért azokat az eszközöket kapják, amelyekhez nem kell fiók. A saját bejegyzései elérése belőlük az alkalmazásból való bejelentkezéssel válik majd lehetővé.",
+    "stopHeading": "A hozzáférés megszüntetése",
+    "stop": "Bármikor visszavonhat egy tokent a <account>fiókoldalon</account>. Minden token az Ön által választott napon leáll, és mind egyszerre leáll, ha visszaállítja a jelszavát vagy mindenhol kijelentkezik.",
+    "limits": "Minden cím percenként 60 és naponta 2000 kérést indíthat; a tokent használó fiók percenként 120 és naponta 5000 kérést. A helyettesítések és az összeállítások percenként 10-re vannak korlátozva."
   }
 }

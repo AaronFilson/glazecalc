@@ -17,6 +17,14 @@
         "title": "Receptek",
         "text": "Állítson össze mázat nyersanyagokból és mennyiségekből, nézze meg a Seger-képletét (UMF), és mentse el."
       },
+      "import": {
+        "title": "Receptek beillesztése",
+        "text": "Illesszen be recepteket egy weboldalról, táblázatból vagy jegyzetekből, nézze át, mit olvasott be a program, és mentse el őket."
+      },
+      "blends": {
+        "title": "Keverékek próbalapokhoz",
+        "text": "Keverje össze két, három vagy négy receptjét számozott próbalapokká, és kapja meg, mit kell lemérni mindegyikhez."
+      },
       "material": {
         "title": "Nyersanyagok",
         "text": "Adjon hozzá saját nyersanyagokat kémiai képlet vagy a forgalmazó által közölt összetétel alapján."
@@ -99,6 +107,35 @@
     "saveFailed": "Hiba: a szervernek küldött kérés sikertelen volt."
   },
   "trash": {
-    "title": "Lomtár"
+    "title": "Lomtár",
+    "lead": "Amit eltávolít a receptjei, nyersanyagai, jegyzetei és naplói közül, itt vár 30 napig. Helyezze vissza, vagy törölje véglegesen.",
+    "listHeading": "A Lomtárban",
+    "none": "A Lomtár üres.",
+    "untitled": "Névtelen",
+    "kinds": {
+      "recipes": "Recept",
+      "materials": "Nyersanyag",
+      "additives": "Adalék",
+      "notes": "Jegyzet",
+      "firing": "Égetési napló",
+      "advice": "Tanács",
+      "other": "Bejegyzés"
+    },
+    "removedOn": "Eltávolítva: {date}",
+    "goesOn": "Végleges törlés: {date}",
+    "byApp": "Egy csatlakoztatott alkalmazás távolította el",
+    "putBack": "Visszahelyezés",
+    "putBackName": "{name} visszahelyezése",
+    "restored": "A(z) „{name}” elemet visszahelyeztük az eredeti helyére.",
+    "restoredAlready": "A(z) „{name}” elemet már visszahelyeztük.",
+    "restoreFailed": "A(z) „{name}” elemet nem sikerült visszahelyezni. Kérjük, próbálja újra.",
+    "deleted": "A(z) „{name}” elemet véglegesen töröltük.",
+    "empty": "A Lomtár kiürítése",
+    "emptyQuestion": "Véglegesen törli a Lomtárban lévő {count, plural, one {# bejegyzést} other {mind a(z) # bejegyzést}}? Ez nem vonható vissza.",
+    "emptyYes": "Igen, kiürítés",
+    "emptying": "Kiürítés...",
+    "emptied": "A Lomtár üres.",
+    "emptyFailed": "A Lomtárat nem sikerült kiüríteni. Kérjük, próbálja újra.",
+    "fetchFailed": "A Lomtárat nem sikerült betölteni. Kérjük, próbálja újra."
   }
 }

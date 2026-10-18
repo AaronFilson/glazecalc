@@ -17,13 +17,17 @@
     "confirmEmail": "E-mail-cím megerősítése - Glazecalc",
     "home": "Az Ön műhelyfüzete - Glazecalc",
     "recipe": "Receptek - Glazecalc",
+    "import": "Receptek beillesztése - Glazecalc",
+    "blends": "Keverékek próbalapokhoz - Glazecalc",
     "material": "Nyersanyagok - Glazecalc",
     "additive": "Adalékok - Glazecalc",
     "firingLogs": "Égetési naplók - Glazecalc",
     "notes": "Jegyzetek - Glazecalc",
     "trash": "Lomtár - Glazecalc",
     "account": "Fiókja és beállításai - Glazecalc",
-    "notFound": "Az oldal nem található - Glazecalc"
+    "notFound": "Az oldal nem található - Glazecalc",
+    "shared": "Megosztott recept - Glazecalc",
+    "assistants": "A Glazecalc használata az MI-asszisztensből - Glazecalc"
   },
   "nav": {
     "skip": "Ugrás a tartalomhoz",
@@ -96,9 +100,14 @@
   },
   "remove": {
     "alreadyRemoved": "A(z) „{name}” elemet már eltávolították.",
+    "trashed": "A(z) „{name}” elemet áthelyeztük a Lomtárba.",
+    "undo": "Visszavonás",
+    "restored": "A(z) „{name}” elemet visszahelyeztük.",
+    "restoreFailed": "A(z) „{name}” elemet nem sikerült visszahelyezni. Még mindig a Lomtárban van.",
     "failed": "Nem sikerült eltávolítani. Kérjük, próbálja újra.",
     "question": "Eltávolítja a(z) „{name}” elemet?",
     "cannotUndo": "Ez nem vonható vissza.",
+    "toTrash": "30 napig visszahelyezheti a Lomtárból.",
     "removing": "Eltávolítás...",
     "yes": "Igen, eltávolítás",
     "cancel": "Mégse",
