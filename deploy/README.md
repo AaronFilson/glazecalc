@@ -69,7 +69,8 @@ Day to day:
 
 - **Deploy:** after each merge to master, CI and Publish image run, then Deploy starts by
   itself and waits for you: open the run (GitHub emails the reviewer) and approve it, or reject it
-  to leave production as it is; a newer commit's run replaces one still waiting. By hand,
+  to leave production as it is. One deploy runs at a time: while one waits, the next waits
+  behind it, and a newer one replaces that (reject an older one to move on). By hand,
   Actions → Deploy → Run workflow (blank tag = the current master commit). It backs
   up MongoDB first (a deploy whose backup fails changes nothing; by hand,
   `GLAZECALC_SKIP_BACKUP=1 /opt/glazecalc/deploy.sh <tag>` deploys without one), installs

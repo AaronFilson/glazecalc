@@ -134,8 +134,10 @@ It makes what is missing and brings what exists up to date with the files in `de
 role's trust and policy, each document, whose new version becomes its default), and changes
 nothing else; run it again whenever one of those files changes. The first run after the Deploy
 staging workflow was added makes the staging role and document, and raises production's
-document timeout from 600 to 900 seconds (deploys now back up first). It prints the two role ARNs
-for GitHub (section 12).
+document timeout from 600 to 900 seconds (deploys now back up first): run it before approving
+the first production deploy that backs up, or that deploy could be cut off at 600 seconds. It only
+changes AWS, so it can run before the merge, from the branch (`git clone --depth 1 -b
+deploy-automation ...`). It prints the two role ARNs for GitHub (section 12).
 
 ## 6. Security group: web traffic only
 

@@ -9,11 +9,13 @@ name: Deploy
 # deploy.sh backs up MongoDB first and installs nginx's files from the image's
 # commit, so a release needs nothing run by hand on the instance.
 #
-# It starts by itself once Publish image has published a master commit, and
-# waits for the production environment's reviewer: approve to deploy that
-# commit, or reject to leave production as it is. A newer commit's run takes
-# the place of one still waiting. Run it by hand to deploy another tag (a
-# rollback).
+# It starts by itself once Publish image has published a master commit (named
+# in that run's title), and waits for the production environment's reviewer:
+# approve to deploy that commit, or reject to leave production as it is. One
+# deploy runs at a time; while one waits for approval, the next commit's waits
+# behind it, and a third replaces that one (GitHub keeps one pending), so
+# reject an older one to move on to the newest. Run it by hand to deploy
+# another tag (a rollback).
 #
 # Setup (once): the AWS side in deploy/aws/README.md, then in the repository
 # settings an environment named "production" (add yourself as a required
@@ -32,14 +34,14 @@ on:
 
 permissions: {}
 
-concurrency:
-  group: deploy-production
-  cancel-in-progress: false
-
 jobs:
   deploy:
-    # After Publish image: only when it published, never for a failed run.
+    # After Publish image: only when it published (a run after a failed CI is
+    # skipped). The group is on the job, so a run skipped here never holds a place.
     if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
+    concurrency:
+      group: deploy-production
+      cancel-in-progress: false
     runs-on: ubuntu-26.04
     timeout-minutes: 20
     environment: production
@@ -47,12 +49,37 @@ jobs:
       contents: read
       id-token: write
     outputs:
-      ref: ${{ steps.deployed.outputs.ref }}
+      ref: ${{ steps.image.outputs.ref }}
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
           sparse-checkout: .github/scripts
+
+      # The tag to deploy, and its commit for the Live checks ("latest" is
+      # master's newest). After Publish image, the commit it built is the one in
+      # its run's title: a run started by another's end carries master's newest
+      # commit as its own, which may be later than the one built.
+      - name: The image
+        id: image
+        env:
+          EVENT: ${{ github.event_name }}
+          GIVEN: ${{ inputs.tag }}
+          PUBLISHED: ${{ github.event.workflow_run.display_title }}
+          THIS: ${{ github.sha }}
+        run: |
+          if [ "$EVENT" = workflow_run ]; then
+            if [[ ! "$PUBLISHED" =~ ^Publish\ image\ ([0-9a-f]{40})$ ]]; then
+              echo "Publish image's run is titled '$PUBLISHED', which names no commit; nothing deployed."
+              exit 1
+            fi
+            tag=sha-${BASH_REMATCH[1]}
+          else
+            tag=${GIVEN:-sha-$THIS}
+          fi
+          echo "tag=$tag" >> "$GITHUB_OUTPUT"
+          if [ "$tag" = latest ]; then echo "ref=master" >> "$GITHUB_OUTPUT"; else echo "ref=${tag#sha-}" >> "$GITHUB_OUTPUT"; fi
+          echo "Deploying $tag" >> "$GITHUB_STEP_SUMMARY"
 
       - uses: aws-actions/configure-aws-credentials@e1253824e5c10ff9df46874f81ed3ec929e19cfd # v6.3.0
         with:
@@ -61,17 +88,8 @@ jobs:
 
       - name: Run deploy.sh on the instance
         env:
-          TAG: ${{ inputs.tag || format('sha-{0}', github.event.workflow_run.head_sha || github.sha) }}
+          TAG: ${{ steps.image.outputs.tag }}
         run: .github/scripts/ssm-run.sh glazecalc-deploy '^(latest|sha-[0-9a-f]{40})$' "$TAG"
-
-      # The deployed commit, for the Live checks to test it with its own checks;
-      # "latest" is master's newest.
-      - name: The deployed commit
-        id: deployed
-        env:
-          TAG: ${{ inputs.tag || format('sha-{0}', github.event.workflow_run.head_sha || github.sha) }}
-        run: |
-          if [ "$TAG" = latest ]; then echo "ref=master" >> "$GITHUB_OUTPUT"; else echo "ref=${TAG#sha-}" >> "$GITHUB_OUTPUT"; fi
 
   check:
     needs: deploy

@@ -4,6 +4,11 @@ name: Publish image
 # arm64 (Graviton) and publishes one multi-architecture image to GHCR, tagged
 # with the full commit SHA, and "latest" if it is still master's newest commit.
 # deploy/deploy.sh pulls these tags.
+#
+# The commit it builds, in the run's title: Deploy reads it there, since a run
+# started by another's end carries master's newest commit as its own, which
+# may be a later one than CI built.
+run-name: Publish image ${{ github.event.workflow_run.head_sha }}
 on:
   workflow_run:
     workflows: [CI]

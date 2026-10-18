@@ -76,6 +76,10 @@ elif [[ "$arg" =~ ^(staging|sha)-([0-9a-f]{40})$ ]]; then
 fi
 raw=https://raw.githubusercontent.com/AaronFilson/glazecalc/$sha/deploy
 
+# The Compose file the running version uses, back in place (a failure before
+# the new version started), unless the start succeeded and removed the copy.
+put_back_compose() { if [ -f "$file.prev" ]; then mv "$file.prev" "$file"; fi; }
+
 # That commit's staging files, checked below as any others. If staging.sh
 # changed, the new one runs instead, once: it sees GLAZECALC_STAGING_SELF.
 if [ -n "$sha" ] && [ "${GLAZECALC_STAGING_SELF:-}" != "$sha" ]; then
@@ -89,6 +93,8 @@ if [ -n "$sha" ] && [ "${GLAZECALC_STAGING_SELF:-}" != "$sha" ]; then
   mv "$dir/mongo-users.sh.new" "$dir/mongo-users.sh"
   # The Compose file the running version uses, for restore_previous.
   if [ -f "$dir/compose.staging.yaml" ]; then cp -a "$dir/compose.staging.yaml" "$dir/compose.staging.yaml.prev"; fi
+  # Until the new version has started, any failure puts that file back.
+  trap put_back_compose EXIT
   mv "$dir/compose.staging.yaml.new" "$dir/compose.staging.yaml"
   if ! cmp -s "$dir/staging.sh.new" "$dir/staging.sh"; then
     mv "$dir/staging.sh.new" "$dir/staging.sh"
@@ -135,7 +141,7 @@ region() {
 }
 
 err=$(mktemp)
-trap 'rm -f "$err" "$env_file.new"' EXIT
+trap 'rm -f "$err" "$env_file.new"; put_back_compose' EXIT
 
 # One SSM parameter, decrypted. Any error stops here with staging unchanged, as
 # deploy.sh does, naming the parameter.

@@ -304,9 +304,13 @@ fi
 # GLAZECALC_STAGING_SELF) is replaced by this commit's, with its Compose file
 # and mongo-users.sh, so that the Deploy staging workflow can run it; from then
 # on each staging deploy keeps them current and this leaves them alone. A
-# running staging copy is not restarted.
+# running staging copy is not restarted. Never while staging.sh runs (its
+# lock): the next deploy tries again.
 if [ -f staging.sh ] && ! grep -q GLAZECALC_STAGING_SELF staging.sh; then
-  if curl -fsSL "$raw/$ref/deploy/staging.sh" -o staging.sh.new 2>/dev/null \
+  exec 9> /run/glazecalc-staging.lock
+  if ! flock -n 9; then
+    echo "Staging's scripts: not updated now, as staging.sh is running; the next deploy will."
+  elif curl -fsSL "$raw/$ref/deploy/staging.sh" -o staging.sh.new 2>/dev/null \
     && grep -q GLAZECALC_STAGING_SELF staging.sh.new && bash -n staging.sh.new \
     && curl -fsSL "$raw/$ref/deploy/mongo-users.sh" -o mongo-users.sh.new && bash -n mongo-users.sh.new \
     && curl -fsSL "$raw/$ref/deploy/compose.staging.yaml" -o compose.staging.yaml.new; then
@@ -319,6 +323,7 @@ if [ -f staging.sh ] && ! grep -q GLAZECALC_STAGING_SELF staging.sh; then
     echo "Staging's scripts: not updated (${ref:0:7} has none that keep themselves current)."
   fi
   rm -f staging.sh.new mongo-users.sh.new compose.staging.yaml.new
+  exec 9>&-
 fi
 
 curl -fsS http://127.0.0.1:3000/api/health && echo
