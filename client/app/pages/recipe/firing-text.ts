@@ -115,10 +115,7 @@ export function conversionText(block: FiringBlock, reader: Reader): string {
   }
   if (reader.cones !== 'temperature' && reader.cones !== block.scale) {
     const cones = ends.map((cone) => approxCone(block.scale, cone, reader.cones));
-    if (
-      cones.every((c) => c !== null) &&
-      inOrder(cones.map((c) => ordinal(reader.cones as ConeScale, c!.cone)))
-    ) {
+    if (cones.every((c) => c !== null) && inOrder(cones.map((c) => ordinal(reader.cones as ConeScale, c!.cone)))) {
       const named = [...new Set(cones.map((c) => c!.cone))];
       const text = rangeText(reader.cones, named[0]!, named[1], reader);
       const bases = [...new Set(cones.map((c) => translate(BASIS[c!.basis])))];
