@@ -129,25 +129,25 @@ Bly i blodet mäts i **µg/dL** (mikrogram bly per deciliter blod; en deciliter 
 
 Glazecalc har bly avstängt om det inte väljs under [Inställningar](/account). När bly är avstängt lägger Glazecalc aldrig till bly i ett recept och föreslår det aldrig.
 
-## Pets {#pets lang=en}
+## Husdjur {#pets}
 
 > [!NOTE]
-> We found no veterinary study or guidance written for pets in potters' homes. The advice in this section is common sense, built on general facts about lead, barium and birds. It does not come from a veterinary source.
+> Vi hittade ingen veterinärstudie eller vägledning skriven för husdjur i keramikers hem. Råden i det här avsnittet är sunt förnuft, byggt på allmänna fakta om bly, barium och fåglar. De kommer inte från en veterinärkälla.
 
-### What is known
+### Vad som är känt
 
-The Pet Poison Helpline says "Lead is toxic for all species, but young and/or malnourished animals are at highest risk for poisoning", with signs such as vomiting, diarrhea, not eating, stumbling, seizures and blindness. A veterinary case report describes a dog that ate sparklers containing barium nitrate (a soluble barium salt, not a glaze material): it developed sudden weakness, drooling and an irregular heartbeat, and recovered with veterinary treatment. Birds are a special case: a University of Illinois vet explains that "Birds have a highly sophisticated and ultra efficient respiratory system, making them particularly vulnerable to the inhalation of fumes and aerosols."
+Pet Poison Helpline säger ”Bly är giftigt för alla arter, men unga och/eller undernärda djur löper störst risk att förgiftas”, med tecken som kräkningar, diarré, att inte äta, vingligt gående, krampanfall och blindhet. En veterinär fallrapport beskriver en hund som åt tomtebloss med bariumnitrat (ett lösligt bariumsalt, inte en glasyrråvara): den fick plötslig svaghet, dreglade och fick oregelbunden hjärtrytm, och tillfrisknade med veterinärbehandling. Fåglar är ett särskilt fall: en veterinär vid University of Illinois förklarar att ”fåglar har ett mycket sofistikerat och ytterst effektivt andningssystem, vilket gör dem särskilt sårbara för inandning av ångor och aerosoler.”
 
-### Common-sense rules
+### Regler med sunt förnuft
 
-- Keep pets out of the studio, with the door shut.
-- Dogs chew bags and drink from buckets. Keep bags in a closed cabinet and a lid on every bucket.
-- Cats walk through dust and lick it off their paws and fur. Wet-clean the floor and keep cats out of the studio, so there is nothing to groom off.
-- Birds and small mammals (rabbits, guinea pigs, hamsters) share the household air. Keep them in a far room with the door shut while you handle dry materials and while the kiln fires.
-- Fish tanks collect settling dust. Keep them out of the studio, and covered.
-- Keep pet food and water bowls away from the studio and kiln, and use commercial or tested bowls, not studio experiments.
+- Håll husdjur borta från verkstaden, med dörren stängd.
+- Hundar tuggar på säckar och dricker ur hinkar. Förvara säckar i ett stängt skåp och ha lock på varje hink.
+- Katter går genom damm och slickar bort det från tassar och päls. Våtstäda golvet och håll katter borta från verkstaden, så att det inte finns något att slicka bort.
+- Fåglar och smådjur (kaniner, marsvin, hamstrar) delar luften i hemmet. Ha dem i ett rum långt bort med dörren stängd medan torra råvaror hanteras och medan ugnen bränner.
+- Akvarier samlar upp damm som sjunker ner. Håll dem borta från verkstaden, och övertäckta.
+- Håll husdjurens mat- och vattenskålar borta från verkstaden och ugnen, och använd skålar från handeln eller testade skålar, inte verkstadsexperiment.
 
-If a pet may have eaten or drunk anything from the studio, or shows signs like those above, call your vet or an animal poison line (see the table at the top), with the material's name and the pet's weight to hand.
+Om ett husdjur kan ha ätit eller druckit något från verkstaden, eller visar tecken som de ovan, ring veterinären eller en giftlinje för djur (se tabellen överst), med råvarans namn och djurets vikt till hands.
 
 ## Keramikugnen {#the-kiln}
 
@@ -220,7 +220,7 @@ En **insidesglasyr**{{en: liner glaze}} är glasyren på insidan av en kopp elle
 
 Mer om hur glasyrer smälter, varför metaller löses ut ur vissa och vad gränsvärdena betyder finns i [Glasering från grunden](/guides/glazing-basics).
 
-## Sources {#sources lang=en}
+## Källor {#sources}
 
 - [America's Poison Centers: Poison Help](https://poisoncenters.org/)
 - [Poison Control (poison.org): webPOISONCONTROL](https://www.poison.org/)

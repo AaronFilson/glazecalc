@@ -3,79 +3,79 @@ title: Bränna i en enkel keramikugn
 lead: Bränna en elugn med Kiln-Sitter eller manuella vred: välja, placera och läsa av käglor, med publicerade brännprogram för skröjbränning och glasyrbränning.
 ---
 
-## Cones: what they measure {#cones lang=en}
+## Käglor: vad de mäter {#cones}
 
 > [!NOTE]
-> Follow your kiln's own manual first. This guide gathers what cone and kiln makers publish about basic electric kilns; it does not replace the instructions for your model, and where the two differ, the manual wins.
+> Följ först ugnens egen manual. Den här guiden samlar vad kägel- och ugnstillverkare publicerar om enkla elektriska ugnar; den ersätter inte instruktionerna för den egna modellen, och där de skiljer sig åt gäller manualen.
 
-A **pyrometric cone** is a small, slender pyramid made from a standardized ceramic powder. When it has had enough heat, it softens and bends over in a repeatable way. You set cones in the kiln beside the ware and read how far they bent.
+En **pyrometrisk kägla**{{en: pyrometric cone}} är en liten, smal pyramid av ett standardiserat keramiskt pulver. När den har fått tillräckligt med värme mjuknar den och böjer sig över på ett återkommande sätt. Käglor ställs i ugnen bredvid godset och läses av efter hur långt de har böjt sig.
 
-Cones measure **heatwork**, the combined effect of temperature and time. In the words of Orton, the main US cone maker, "Cones do not measure temperature alone." A cone heated slowly bends at a lower temperature than one heated fast, and a glaze behaves the same way. So Orton gives each cone's temperature for a stated heating rate over the last {{180 °F; 100 °C}} of the firing. Once a cone starts to move, it bends over a narrow range, "usually less than 40° F" (22 °C).
+Käglor mäter **värmearbete**{{en: heatwork}}, den samlade effekten av temperatur och tid. Med Ortons ord, den största amerikanska kägeltillverkaren: ”Käglor mäter inte enbart temperatur.” En kägla som värms långsamt böjer sig vid lägre temperatur än en som värms snabbt, och en glasyr{{en: glaze}} beter sig likadant. Därför anger Orton varje käglas temperatur för en angiven uppvärmningshastighet under de sista {{180 °F; 100 °C}} av bränningen. När en kägla väl börjar röra sig böjer den sig över inom ett smalt intervall, ”vanligtvis mindre än 40° F” (22 °C).
 
-### Cone numbers
+### Kägelnummer
 
-Cone numbers run from 022, the coolest, up to 42. A leading zero marks the cooler series and is read as "oh": cone 06 ("oh-six") is cooler than cone 04, and cone 01 needs less heat than cone 1. Orton warns that it is important not to mix the two series up. The gap is large: cone 06 bends more than {{400 °F; 220 °C}} cooler than cone 6.
+Kägelnummer går från 022, den svalaste, upp till 42. En inledande nolla markerar den svalare serien och läses som ”noll”: kägla 06 (”noll sex”) är svalare än kägla 04, och kägla 01 behöver mindre värme än kägla 1. Orton varnar för att det är viktigt att inte blanda ihop de två serierna. Skillnaden är stor: kägla 06 böjer sig mer än {{400 °F; 220 °C}} svalare än kägla 6.
 
-Table: Common firing ranges, for self-supporting cones at {{108 °F/h; 60 °C/h}}
-Label: Firing ranges
+Table: Vanliga bränningsintervall, för självstående käglor vid {{108 °F/h; 60 °C/h}}
+Label: Bränningsintervall
 
-| Range     | Cones |                    Temperature | Typical use                              |
-| --------- | ----- | -----------------------------: | ---------------------------------------- |
-| Low fire  | 06–04 |  {{1828–1945 °F; 998–1063 °C}} | Earthenware glazes; bisque               |
-| Mid fire  | 5–6   | {{2167–2232 °F; 1186–1222 °C}} | Electric-kiln stoneware and porcelain    |
-| High fire | 9–10  | {{2300–2345 °F; 1260–1285 °C}} | Mostly gas-fired stoneware and porcelain |
+| Intervall        | Käglor |                     Temperatur | Vanlig användning                    |
+| ---------------- | ------ | -----------------------------: | ------------------------------------ |
+| Låg temperatur   | 06–04  |  {{1828–1945 °F; 998–1063 °C}} | Glasyrer för lergods; skröjbränning  |
+| Mellantemperatur | 5–6    | {{2167–2232 °F; 1186–1222 °C}} | Stengods och porslin i elektrisk ugn |
+| Hög temperatur   | 9–10   | {{2300–2345 °F; 1260–1285 °C}} | Stengods och porslin, mest gasbränt  |
 
-Suppliers in the UK, Europe, Australia and New Zealand often give a temperature in °C rather than a cone: find the nearest cone in the chart below and confirm it with a witness cone. Seger and Staffordshire cones, the older European series, should not be assumed to share Orton's numbers, so this guide uses Orton cones.
+Leverantörer i Storbritannien, Europa, Australien och Nya Zeeland anger ofta en temperatur i °C i stället för en kägla: hitta närmaste kägla i diagrammet nedan och bekräfta den med en kontrollkägla{{en: witness cone}}. Seger- och Staffordshire-käglor, de äldre europeiska serierna, bör inte antas ha samma nummer som Orton, så den här guiden använder Ortonkäglor.
 
-### Holding adds heatwork
+### En hålltid ger mer värmearbete
 
-A **hold** (also called a **soak**) keeps the kiln at one temperature for a while. Because cones measure heatwork, a hold at the top can stand in for a hotter peak. Orton gives these rough equivalents:
+En **hålltid**{{en: hold}} (även kallad **soak**) håller ugnen på en och samma temperatur en stund. Eftersom käglor mäter värmearbete kan en hålltid vid toppen ersätta en högre topptemperatur. Orton anger de här ungefärliga motsvarigheterna:
 
-Table: What a hold at the peak is worth
-Label: Holds and heatwork
+Table: Vad en hålltid vid toppen är värd
+Label: Hålltider och värmearbete
 
-| Hold             | Roughly the same heatwork as             |
-| ---------------- | ---------------------------------------- |
-| About 20 minutes | A peak {{18 °F; 10 °C}} hotter           |
-| 40–60 minutes    | A peak {{36 °F; 20 °C}} hotter           |
-| About 2 hours    | A peak {{54 °F; 30 °C}} hotter           |
-| 4–6 hours        | Enough to bend a cone two numbers hotter |
+| Hålltid            | Ungefär samma värmearbete som                         |
+| ------------------ | ----------------------------------------------------- |
+| Omkring 20 minuter | En topptemperatur som är {{18 °F; 10 °C}} högre       |
+| 40–60 minuter      | En topptemperatur som är {{36 °F; 20 °C}} högre       |
+| Omkring 2 timmar   | En topptemperatur som är {{54 °F; 30 °C}} högre       |
+| 4–6 timmar         | Tillräckligt för att böja en kägla två nummer varmare |
 
-Orton adds that a hold of 1–2 hours "may be sufficient to deform the next higher cone number".
+Orton tillägger att en hålltid på 1–2 timmar ”kan räcka för att deformera nästa varmare kägelnummer”.
 
-So a hold is never free: if you add one, expect the cones to bend further, and lower the peak to match.
+En hålltid är alltså aldrig gratis: om en läggs till, räkna med att käglorna böjer sig längre, och sänk toppen i motsvarande grad.
 
-### Kinds of cone
+### Typer av kägla
 
-Orton makes four kinds. Two stand on the shelf to show what the ware received; two are for the kiln sitter.
+Orton gör fyra typer. Två står på ugnsplattan för att visa vad godset har fått; två är till Kiln-Sittern.
 
-Table: Orton's four kinds of cone
-Label: Kinds of cone
+Table: Ortons fyra typer av kägla
+Label: Typer av kägla
 
-| Kind            | Used for                  | How it stands                                                                               |
-| --------------- | ------------------------- | ------------------------------------------------------------------------------------------- |
-| Self-supporting | Witness cone on the shelf | A built-in base sets the height, 1¾ in (44 mm), and the 8° lean; no holder needed           |
-| Large           | Witness cone on the shelf | Set in a plaque or a pat of clay with exactly 2 in (51 mm) showing, leaning 8° from upright |
-| Small (junior)  | Kiln sitter               | Lies across the sitter's supports; 15/16 in (24 mm) showing if stood on a shelf             |
-| Bar             | Kiln sitter               | The same powder as small cones, in an even bar shape                                        |
+| Typ            | Används till                 | Hur den står                                                                                     |
+| -------------- | ---------------------------- | ------------------------------------------------------------------------------------------------ |
+| Självstående   | Kontrollkägla på ugnsplattan | En inbyggd bas anger höjden, 1¾ tum (44 mm), och lutningen på 8°; ingen hållare behövs           |
+| Stor           | Kontrollkägla på ugnsplattan | Satt i en kägelhållare eller en klump lera med exakt 2 tum (51 mm) synlig, lutad 8° från lodrätt |
+| Liten (junior) | Kiln-Sitter                  | Ligger tvärs över Kiln-Sitterns stöd; 15/16 tum (24 mm) synlig om den ställs på en ugnsplatta    |
+| Stav           | Kiln-Sitter                  | Samma pulver som små käglor, i en jämn stavform                                                  |
 
-Height matters: a ¼ in (6 mm) difference in the height of a large cone "can cause more than a half cone difference in bending". Cones do not go bad or age, and damp storage does not affect them.
+Höjden spelar roll: en skillnad på ¼ tum (6 mm) i höjden på en stor kägla ”kan ge mer än en halv käglas skillnad i böjning”. Käglor blir inte dåliga och åldras inte, och fuktig förvaring påverkar dem inte.
 
-### What "cone 6" means in practice
+### Vad ”kägla 6” betyder i praktiken
 
-The chart gives a self-supporting cone 6 as {{2232 °F; 1222 °C}}, but only when the last {{180 °F; 100 °C}} climbs at {{108 °F/h; 60 °C/h}}. Climbing at {{270 °F/h; 150 °C/h}}, the same cone bends at {{2269 °F; 1243 °C}}. Real kilns differ again: Digitalfire reports that "Most kilns reach cone 6 at 2200°F, not 2232°F". So "cone 6" means the ware received the heatwork that bends a cone 6, whatever a thermometer read at the time.
+Diagrammet anger en självstående kägla 6 som {{2232 °F; 1222 °C}}, men bara när de sista {{180 °F; 100 °C}} stiger med {{108 °F/h; 60 °C/h}}. Vid en stigning på {{270 °F/h; 150 °C/h}} böjer sig samma kägla vid {{2269 °F; 1243 °C}}. Riktiga ugnar skiljer sig ytterligare: Digitalfire uppger att ”de flesta ugnar når kägla 6 vid 2200°F, inte 2232°F”. ”Kägla 6” betyder alltså att godset fick det värmearbete som böjer en kägla 6, vad en termometer än visade vid tillfället.
 
 :::orton
 
 > [!NOTE]
-> Fire by the cone, not the clock or the dial. Set a controller by cone number, and let a witness cone on the shelf confirm every firing.
+> Bränn efter kägla, inte efter klockan eller visaren. Ställ in automatiken efter kägelnummer, och låt en kontrollkägla på ugnsplattan bekräfta varje bränning.
 
 :::
 
 :::temperature
 
 > [!NOTE]
-> Firing by temperature, keep the end of every firing the same: the same last rate of climb, the same peak and the same hold. Then a glaze that worked once works again.
+> Vid bränning efter temperatur, håll slutet av varje bränning likadant: samma sista stigningstakt, samma topp och samma hålltid. Då fungerar en glasyr som fungerade en gång igen.
 
 :::
 
@@ -596,22 +596,22 @@ Om Kiln-Sitter-brytaren löser ut innan käglorna på ugnsplattan har böjt sig 
 
 En **pyrometer** är en temperaturmätare som läser av ett **termoelement**, en värmegivare genom ugnsväggen. Den visar hur snabbt ugnen stiger, så att rätt kolumn i kägeltabellen kan väljas. Men den mäter nära väggen, inte vid godset, och visningen driver med tiden. L&L påpekar att ett termoelement av typ K kan visa fel med mer än {{25 °F; 14 °C}} efter upprepade bränningar till kägla 6, ”en skillnad större än en hel kägla”, medan en självstående kägla varierar med högst {{4 °F; 2 °C}}. Orton säger att pyrometrar behöver kalibreras om då och då, och det är med käglor som de kontrolleras.
 
-## Venting, peeking and safety {#venting lang=en}
+## Utsug, titta och säkerhet {#venting}
 
-### Venting
+### Utsug
 
-Early in a firing, clay and glaze give off water vapor and fumes, including carbon monoxide, and glazes can give off toxic fumes later in the firing too. L&L calls venting them "essential". With no vent system, that means the lid propped and the peepholes open in the early stages, as in the procedures above; slowing the heating during this time also helps the carbon burn out. In a kiln without a vent, Dawson, who made the sitter, also says to leave the top peephole open for the whole firing: the venting "will reduce deterioration of the kiln's metal parts and increase the life of the tube assembly". A **downdraft vent** (a powered vent fitted to the kiln) changes this. It does the venting, so Orton says the lid and peepholes stay closed for the whole firing except to check the cones, and L&L says to leave the vent on and plug the peepholes.
+Tidigt i en bränning avger lera och glasyr{{en: glaze}} vattenånga och gaser, däribland kolmonoxid, och glasyrer kan avge giftiga gaser senare i bränningen också. L&L kallar det ”helt nödvändigt” att ventilera bort dem. Utan utsug betyder det locket på glänt och titthålen öppna i de tidiga stegen, som i tillvägagångssätten ovan; att värma långsammare under den tiden hjälper också kolet att brinna bort. I en ugn utan utsug säger Dawson, som tillverkade Kiln-Sittern, också att översta titthålet ska stå öppet under hela bränningen: ventilationen ”minskar förslitningen av ugnens metalldelar och förlänger rörenhetens livslängd”. Ett **utsug genom ugnsbotten**{{en: downdraft vent}} (ett fläktdrivet utsug som monteras på ugnen) ändrar det. Det sköter ventilationen, så Orton säger att locket och titthålen hålls stängda under hela bränningen utom för att kontrollera käglorna, och L&L säger att utsuget ska stå på och titthålen proppas.
 
-For venting the room, and for carbon monoxide alarms, see [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety).
+För ventilation av rummet, och för kolmonoxidlarm, se [Säker blandning och ventilation](/guides/safe-mixing) och [Förgifta inte familjen](/guides/home-safety).
 
-### While the kiln is firing
+### Medan ugnen bränner
 
-- Look through a peephole only with IR-rated shade 3 welding glasses; sunglasses are not enough. Skutt advises twisting the plugs into place so they do not fall out.
-- Do not leave the kiln unattended beyond its expected firing time; a sitter is not a fail-safe.
-- Never fire on or near anything that burns, such as a wood floor or carpet.
-- Keep the clearances in your manual. Published figures range from 12 in (30 cm) to 3 ft (91 cm); where the manual is silent, 18 in (46 cm) from walls and 3 ft (91 cm) from anything that burns is the safest choice.
-- Keep the space around the sitter's weight clear so it can drop.
-- When the firing ends, turn the switches off and turn off the breaker as well.
+- Titta genom ett titthål bara med svetsglasögon med IR-skydd i skyddsgrad 3; solglasögon räcker inte. Skutt rekommenderar att proppen vrids på plats så att den inte faller ut.
+- Lämna inte ugnen utan uppsikt utöver den väntade bränningstiden; en Kiln-Sitter är inget felsäkert skydd.
+- Bränn aldrig på eller nära något brännbart, som ett trägolv eller en matta.
+- Håll de avstånd som anges i manualen. Publicerade siffror varierar från 12 tum (30 cm) till 3 fot (91 cm); där manualen är tyst är 18 tum (46 cm) från väggar och 3 fot (91 cm) från allt brännbart det säkraste valet.
+- Håll utrymmet runt Kiln-Sitterns vikt fritt så att den kan falla.
+- När bränningen är klar, stäng av brytarna och stäng också av säkringen.
 
 ## Kylning och urplockning {#cooling}
 

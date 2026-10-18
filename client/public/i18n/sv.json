@@ -17,13 +17,17 @@
     "confirmEmail": "Bekräfta e-postadressen - Glazecalc",
     "home": "Verkstadens anteckningsbok - Glazecalc",
     "recipe": "Recept - Glazecalc",
+    "import": "Klistra in recept - Glazecalc",
+    "blends": "Blandningar för provbitar - Glazecalc",
     "material": "Råvaror - Glazecalc",
     "additive": "Tillsatser - Glazecalc",
     "firingLogs": "Brännloggar - Glazecalc",
     "notes": "Anteckningar - Glazecalc",
     "trash": "Papperskorgen - Glazecalc",
     "account": "Konto och inställningar - Glazecalc",
-    "notFound": "Sidan hittades inte - Glazecalc"
+    "notFound": "Sidan hittades inte - Glazecalc",
+    "shared": "Delat recept - Glazecalc",
+    "assistants": "Använd Glazecalc från en AI-assistent - Glazecalc"
   },
   "nav": {
     "skip": "Hoppa till innehållet",
@@ -96,9 +100,14 @@
   },
   "remove": {
     "alreadyRemoved": "”{name}” hade redan tagits bort.",
+    "trashed": "”{name}” har flyttats till papperskorgen.",
+    "undo": "Ångra",
+    "restored": "”{name}” har lagts tillbaka.",
+    "restoreFailed": "”{name}” kunde inte läggas tillbaka. Den ligger kvar i papperskorgen.",
     "failed": "Det gick inte att ta bort. Försök igen.",
     "question": "Ta bort ”{name}”?",
     "cannotUndo": "Det går inte att ångra.",
+    "toTrash": "Den kan läggas tillbaka från papperskorgen i 30 dagar.",
     "removing": "Tar bort…",
     "yes": "Ja, ta bort",
     "cancel": "Avbryt",

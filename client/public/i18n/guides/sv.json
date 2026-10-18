@@ -102,6 +102,9 @@
     "quartzAll": "Kvarts, för damm som helt består av kvarts",
     "cristobaliteAll": "Kristobalit, för damm som helt består av kristobalit",
     "allFree": "Kontrollkoncentration för damm som helt består av fri kiseldioxid",
+    "bandFromTo": "Damm med {from} % till {to} % fri kiseldioxid (SiO₂)",
+    "bandOverTo": "Damm med mer än {from} % och upp till {to} % fri kiseldioxid",
+    "bandAbove": "Damm med mer än {from} % fri kiseldioxid",
     "recommended": "Rekommenderat av {abbr}",
     "value": "{value} mg/m³",
     "kind": {
@@ -160,7 +163,15 @@
       "myFlat": "Flata föremål",
       "mySmall": "Små föremål som kan fyllas",
       "myLarge": "Stora föremål som kan fyllas",
-      "myCooking": "Kokkärl"
+      "myCooking": "Kokkärl",
+      "idFlat": "Föremål som är högst 25 mm djupa på insidan",
+      "idSmall": "Föremål som är djupare än 25 mm på insidan, under 1100 mL",
+      "idLarge": "Föremål som är djupare än 25 mm på insidan, 1100 mL eller mer",
+      "thFlat": "Föremål som är högst 25 mm djupa",
+      "thSmall": "Föremål som är djupare än 25 mm, under 1,1 L",
+      "thLarge": "Föremål som är djupare än 25 mm, 1,1 L eller mer",
+      "thInfant": "Kärl för mat till spädbarn upp till 12 månader",
+      "thCooking": "Kokkärl, gjorda för att tåla värmen vid matlagning"
     },
     "judged": {
       "average": "medelvärde av 6 föremål",

@@ -17,6 +17,14 @@
         "title": "Recept",
         "text": "Bygg en glasyr av råvaror och mängder, se dess Segerformel (UMF) och spara den."
       },
+      "import": {
+        "title": "Klistra in recept",
+        "text": "Klistra in recept från en webbplats, ett kalkylblad eller anteckningar, kontrollera vad som lästes in och spara dem."
+      },
+      "blends": {
+        "title": "Blandningar för provbitar",
+        "text": "Blanda två, tre eller fyra av recepten till numrerade provbitar, med vad som ska vägas upp för varje."
+      },
       "material": {
         "title": "Råvaror",
         "text": "Lägg till egna råvaror, från en kemisk formel eller en leverantörs analys."
@@ -99,6 +107,35 @@
     "saveFailed": "Fel: begäran till servern misslyckades."
   },
   "trash": {
-    "title": "Papperskorgen"
+    "title": "Papperskorgen",
+    "lead": "Det som tas bort från recept, råvaror, anteckningar och loggar ligger här i 30 dagar. Lägg tillbaka det, eller radera det för gott.",
+    "listHeading": "I papperskorgen",
+    "none": "Papperskorgen är tom.",
+    "untitled": "Utan namn",
+    "kinds": {
+      "recipes": "Recept",
+      "materials": "Råvara",
+      "additives": "Tillsats",
+      "notes": "Anteckning",
+      "firing": "Brännlogg",
+      "advice": "Råd",
+      "other": "Post"
+    },
+    "removedOn": "Borttaget {date}",
+    "goesOn": "Raderas för gott {date}",
+    "byApp": "Borttaget av en ansluten app",
+    "putBack": "Lägg tillbaka",
+    "putBackName": "Lägg tillbaka {name}",
+    "restored": "”{name}” har lagts tillbaka där den låg.",
+    "restoredAlready": "”{name}” har redan lagts tillbaka.",
+    "restoreFailed": "”{name}” kunde inte läggas tillbaka. Försök igen.",
+    "deleted": "”{name}” har raderats för gott.",
+    "empty": "Töm papperskorgen",
+    "emptyQuestion": "Radera {count, plural, one {den # posten} other {alla # poster}} i papperskorgen för gott? Det går inte att ångra.",
+    "emptyYes": "Ja, töm den",
+    "emptying": "Tömmer…",
+    "emptied": "Papperskorgen är tom.",
+    "emptyFailed": "Papperskorgen kunde inte tömmas. Försök igen.",
+    "fetchFailed": "Papperskorgen kunde inte läsas in. Försök igen."
   }
 }
