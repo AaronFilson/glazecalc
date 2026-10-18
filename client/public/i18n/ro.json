@@ -17,13 +17,17 @@
     "confirmEmail": "Confirmați adresa de e-mail – Glazecalc",
     "home": "Caietul de atelier – Glazecalc",
     "recipe": "Rețete – Glazecalc",
+    "import": "Lipiți rețete - Glazecalc",
+    "blends": "Amestecuri pentru plăcuțe de test - Glazecalc",
     "material": "Materii prime – Glazecalc",
     "additive": "Aditivi – Glazecalc",
     "firingLogs": "Jurnale de ardere – Glazecalc",
     "notes": "Notițe – Glazecalc",
     "trash": "Coșul de reciclare – Glazecalc",
     "account": "Contul și setările – Glazecalc",
-    "notFound": "Pagina nu a fost găsită – Glazecalc"
+    "notFound": "Pagina nu a fost găsită – Glazecalc",
+    "shared": "Rețetă partajată - Glazecalc",
+    "assistants": "Folosiți Glazecalc din asistentul dumneavoastră AI - Glazecalc"
   },
   "nav": {
     "skip": "Treceți la conținut",
@@ -96,9 +100,14 @@
   },
   "remove": {
     "alreadyRemoved": "Elementul „{name}” a fost deja eliminat.",
+    "trashed": "A fost mutat în coșul de reciclare: „{name}”.",
+    "undo": "Anulați",
+    "restored": "A fost pus la loc: „{name}”.",
+    "restoreFailed": "„{name}” nu a putut fi pus la loc. Este încă în coșul de reciclare.",
     "failed": "Nu s-a putut elimina. Încercați din nou.",
     "question": "Eliminați „{name}”?",
     "cannotUndo": "Acțiunea nu poate fi anulată.",
+    "toTrash": "Îl puteți pune la loc din coșul de reciclare timp de 30 de zile.",
     "removing": "Se elimină...",
     "yes": "Da, eliminați",
     "cancel": "Anulați",

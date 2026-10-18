@@ -102,6 +102,9 @@
     "quartzAll": "Cuarț, pentru pulberea care este în întregime cuarț",
     "cristobaliteAll": "Cristobalit, pentru pulberea care este în întregime cristobalit",
     "allFree": "Concentrația de control pentru pulberea care este în întregime silice liberă",
+    "bandFromTo": "Praf cu {from} % până la {to} % silice liberă (SiO₂)",
+    "bandOverTo": "Praf cu mai mult de {from} % și până la {to} % silice liberă",
+    "bandAbove": "Praf cu mai mult de {from} % silice liberă",
     "recommended": "Valoare recomandată de {abbr}",
     "value": "{value} mg/m³",
     "kind": {
@@ -160,7 +163,15 @@
       "myFlat": "Obiecte plate",
       "mySmall": "Obiecte mici care pot fi umplute",
       "myLarge": "Obiecte mari care pot fi umplute",
-      "myCooking": "Vase de gătit"
+      "myCooking": "Vase de gătit",
+      "idFlat": "Piese cu adâncimea interioară de cel mult 25 mm",
+      "idSmall": "Piese cu adâncimea interioară de peste 25 mm, sub 1100 mL",
+      "idLarge": "Piese cu adâncimea interioară de peste 25 mm, de 1100 mL sau mai mult",
+      "thFlat": "Piese cu adâncimea de cel mult 25 mm",
+      "thSmall": "Piese cu adâncimea de peste 25 mm, sub 1,1 L",
+      "thLarge": "Piese cu adâncimea de peste 25 mm, de 1,1 L sau mai mult",
+      "thInfant": "Recipiente pentru hrana bebelușilor de până la 12 luni",
+      "thCooking": "Vase de gătit, făcute să reziste la căldura gătitului"
     },
     "judged": {
       "average": "media a 6 obiecte",

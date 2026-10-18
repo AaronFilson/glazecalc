@@ -57,9 +57,13 @@
     "stackServer": "Un API în TypeScript pe Node.js 24 și Express 5, cu MongoDB 9, verificat de peste 350 de teste automate.",
     "stackHosting": "Rulează în Docker pe Amazon Web Services, în spatele nginx, cu HTTPS de la Let’s Encrypt.",
     "stackDeploy": "Se implementează prin GitHub Actions: imaginile sunt construite și testate la fiecare modificare, iar implementările se conectează la AWS fără chei stocate.",
+    "creditsHeading": "Credite",
+    "credits": "Regiunile din diagrama Stull provin din interpretarea de către Glazy a diagramei lui R. T. Stull din 1912, de Derek Au (Copyright (c) 2017 Derek Au, licența MIT). <notices>Mențiunea completă</notices> se află în codul sursă.",
     "whoHeading": "Cine a creat aplicația",
     "who": "Glazecalc este creat de Aaron Filson. Ați găsit o problemă sau aveți o idee? <issues>Deschideți un tichet pe GitHub</issues>.",
-    "studio": "Ceramica lucrată manual de Aaron Filson se găsește la <studio>Updraft Pottery Studio</studio> din Tacoma, Washington. Aruncați o privire la lucrări și comandați o piesă dacă vreuna vă atrage."
+    "studio": "Ceramica lucrată manual de Aaron Filson se găsește la <studio>Updraft Pottery Studio</studio> din Tacoma, Washington. Aruncați o privire la lucrări și comandați o piesă dacă vreuna vă atrage.",
+    "languagesHeading": "Limbi",
+    "languages": "Glazecalc este disponibil în aceste limbi. Fiecare link deschide această pagină în limba respectivă."
   },
   "privacy": {
     "title": "Confidențialitate",
@@ -71,8 +75,15 @@
     "contact": "Pentru întrebări despre datele dumneavoastră sau pentru a vă exercita oricare dintre drepturi, scrieți la <mail>privacy@glazecalcapp.com</mail>. Puteți și să <issues>deschideți un tichet pe GitHub</issues>, dar tichetele sunt publice: nu scrieți niciodată în ele adresa de e-mail sau ceva personal. Cele mai multe lucruri legate de date le puteți face direct pe <account>pagina contului</account>.",
     "storedHeading": "Ce se păstrează și de ce",
     "storedAccount": "<b>Contul:</b> adresa de e-mail și parola, stocată numai ca hash unidirecțional (bcrypt), niciodată ca parola propriu-zisă. Setările (cum ar fi limba, regiunea și unitățile) și lista materiilor prime pe care le aveți în stoc sunt păstrate împreună cu contul. Un cont are nevoie de o adresă de e-mail, pentru conectare și pentru resetarea unei parole uitate. Când creați un cont, la adresă se trimite un link pentru a confirma că vă aparține; până atunci, la ea se trimit e-mailuri doar când cereți, de exemplu pentru resetarea parolei.",
+    "storedPrices": "<b>Prețuri, dacă dați vreunul:</b> ce plătiți pentru fiecare materie primă, pe kilogram, și moneda în care sunt, pentru costul unui amestec. Sunt date de afaceri, păstrate în contul dumneavoastră și private: nu fac niciodată parte dintr-o rețetă, așa că nimic din ce partajați nu le arată. Descărcarea datelor mele le include, iar ștergerea contului le șterge. Prețurile dintr-o perioadă de probă trec în contul dumneavoastră odată cu înregistrările ei, pentru materiile prime pentru care nu ați dat un preț, când ambele sunt în aceeași monedă.",
     "storedEmailChange": "<b>Schimbarea adresei de e-mail:</b> data ultimei schimbări a adresei, pentru ca o cerere de dezactivare a conectării în doi pași să nu fie niciodată acceptată de la o adresă nouă în cele 30 de zile următoare.",
     "storedSignIn": "<b>Conectarea în doi pași, dacă o activați:</b> dacă este activată; cheia secretă pe care aplicația de autentificare o împarte cu Glazecalc, criptată; pentru fiecare cheie de acces, cheia ei publică (care nu poate conecta singură), cu identificatorul și datele pe care i le dă dispozitivul, numele dat de dumneavoastră și când a fost adăugată și folosită ultima oară; codurile de recuperare, doar ca hash unidirecțional cu cheie, pentru ca nimeni să nu le poată citi înapoi; și, dacă cineva introduce parola dar nu încheie al doilea pas, când v-a scris Glazecalc ultima oară despre aceasta (cel mult o dată pe zi). În timp ce vă conectați, între parolă și al doilea pas, serverul păstrează 5 minute o notă despre conectare, iar pagina ține un token scurt doar în memorie: niciun cookie nou, nimic în stocarea browserului.",
+    "storedSaved": "<b>Ce salvați:</b> rețetele, materiile prime, aditivii, notițele, jurnalele de ardere și sfaturile dumneavoastră, așa cum le-ați scris. Doar dumneavoastră le puteți vedea, dacă nu partajați o rețetă printr-un link.",
+    "storedTrash": "<b>Coșul de reciclare și versiunile anterioare:</b> ce ștergeți dintr-o listă așteaptă în coșul de reciclare, întreg, ca să-l puteți pune la loc; iar fiecare modificare pe care o salvați într-o înregistrare păstrează înregistrarea așa cum era chiar înainte, ca să puteți anula modificarea.",
+    "storedShares": "<b>Rețete pe care le partajați printr-un link, dacă partajați vreuna:</b> care rețetă, când a fost creat linkul ei și dacă arată notițele rețetei, cu un hash unidirecțional al linkului (niciodată linkul însuși). Oricine are linkul poate vedea rețeta așa cum este acum, cu formula ei Seger, și notițele ei dacă ați ales să le arătați; niciodată adresa dumneavoastră de e-mail, contul sau vreun preț. Rețetele partajate sunt ținute departe de motoarele de căutare, iar linkul nu ajunge niciodată în jurnalele serverului. Ca să se oprească abuzurile, rețetele partajate deschise de la fiecare adresă IP sunt numărate, în memorie, timp de 15 minute. O perioadă de probă nu poate partaja.",
+    "storedTokens": "<b>Tokenuri de acces și aplicații conectate, dacă creați sau aprobați vreuna:</b> pentru fiecare, numele ei, ce poate face, un hash unidirecțional al tokenului (niciodată tokenul însuși) și ultimele lui 4 caractere, și când a fost creat, folosit ultima dată, când expiră și când a fost revocat.",
+    "storedActivity": "<b>Ce au făcut tokenurile și aplicațiile:</b> un rând pentru fiecare înregistrare pe care un token de acces sau o aplicație conectată a creat-o, a schimbat-o, a mutat-o în coșul de reciclare, a pus-o la loc sau a anulat-o: când, ce token sau aplicație, ce a făcut și titlul înregistrării, tăiat. Niciodată textul unei notițe sau altceva din înregistrare. Modificările pe care le faceți pe site nu sunt listate.",
+    "storedLimits": "<b>Limite de frecvență:</b> ca să se oprească încercările de ghicire și scripturile scăpate de sub control, numărători ale încercărilor de conectare, înregistrărilor, cererilor de resetare și perioadelor de probă după adresa IP sau cont, ale tokenurilor de acces care nu funcționează după adresa IP, ale înregistrărilor pe care fiecare token de acces le mută în coșul de reciclare, după token, ale rețetelor partajate deschise și ale linkurilor de partajare care nu deschid nimic, după adresa IP, și ale cererilor către instrumentele pentru asistenți AI (MCP): 60 pe minut și 2000 pe zi după adresa IP, sau 120 pe minut și 5000 pe zi după cont când se folosește un token de acces, cu cel mult 10 înlocuiri sau potriviri pe minut.",
     "storedTrial": "<b>O perioadă de probă („Încercați acum”):</b> fără adresă de e-mail sau parolă, doar un nume inventat, cum ar fi „speckled quiet kilns”. Dacă, în timpul unei perioade de probă, vă conectați la un cont în același browser, ce ați creat în perioada de probă trece în cont.",
     "storedResets": "<b>Linkurile pentru resetarea parolei și pentru adresa de e-mail:</b> ce cont a cerut, când, adresa la care a fost trimis un link de confirmare a adresei și o amprentă a fiecărui link (nu linkul propriu-zis).",
     "storedLogs": "<b>Jurnalele de sistem:</b> serverul web înregistrează fiecare cerere: adresa IP, ora, pagina cerută și numele browserului. Aplicația înregistrează erorile împreună cu pagina pe care au apărut, niciodată adresa de e-mail.",
@@ -95,6 +106,11 @@
     "choiceNoWarranty": "Glazecalc este oferit „ca atare”, fără garanție. Cei care întrețin proiectul nu își asumă nicio responsabilitate sau răspundere pentru decizia dumneavoastră de a crea un cont sau pentru locul în care sunt păstrate datele acestuia.",
     "keptHeading": "Cât timp se păstrează",
     "keptAccount": "<b>Contul și ce salvați:</b> până când le ștergeți. Conturile nu sunt eliminate pentru că nu sunt folosite.",
+    "keptTrash": "<b>Coșul de reciclare și versiunile anterioare:</b> o înregistrare ștearsă, 30 de zile după ce ați șters-o, sau până când o ștergeți definitiv ori goliți coșul de reciclare; versiunile anterioare, 90 de zile, și doar ultimele 20 ale fiecărei înregistrări (și cea dinaintea modificărilor unui token de acces), dar niciodată mai mult decât înregistrarea: cât timp este în coșul de reciclare, versiunile ei pleacă odată cu ea. Ambele dispar deodată când ștergeți contul.",
+    "keptShares": "<b>Linkuri de partajare:</b> până când nu mai partajați rețeta, creați un link nou pentru ea, o mutați în coșul de reciclare sau ștergeți contul. Punerea la loc a rețetei din coșul de reciclare nu o partajează din nou. Resetarea parolei sau deconectarea de pe toate dispozitivele oprește de asemenea toate linkurile dumneavoastră; schimbarea parolei nu.",
+    "keptTokens": "<b>Tokenuri de acces și aplicații conectate:</b> fiecare până la 30 de zile după ce expiră (toate expiră, cel mult într-un an), sau până când ștergeți contul. O resetare a parolei sau „Deconectare de pe toate dispozitivele” le oprește pe toate deodată.",
+    "keptActivity": "<b>Ce au făcut tokenurile și aplicațiile:</b> 90 de zile sau până când ștergeți contul.",
+    "keptLimits": "<b>Limite de frecvență:</b> numărătorile sunt păstrate doar în memoria serverului, de la 1 minut la 24 de ore, și se pierd când acesta repornește.",
     "keptTrial": "<b>O perioadă de probă:</b> 14 zile de la început, apoi este ștearsă cu tot ce conține, cu excepția cazului în care vă creați un cont pentru a o păstra.",
     "keptResets": "<b>Linkurile pentru resetarea parolei și pentru adresa de e-mail:</b> un link de resetare este valabil 30 de minute, iar evidența lui este ștearsă după aproximativ o oră; un link de confirmare a unei adrese este valabil, și este păstrat, 24 de ore.",
     "keptSignIn": "<b>Conectarea în doi pași:</b> fiecare aplicație de autentificare, cheie de acces și set de coduri de recuperare, până când o eliminați, dezactivați conectarea în doi pași sau ștergeți contul. O conectare care așteaptă al doilea pas se șterge după 5 minute, iar o aplicație sau o cheie de acces pe care ați început să o adăugați, dar nu ați terminat-o, după cel mult 10.",
@@ -112,6 +128,7 @@
     "rightsAsk": "Pentru orice altceva, cum ar fi să cereți ca datele să nu fie folosite cât timp se corectează o greșeală sau să vă opuneți modului în care sunt folosite, scrieți la <mail>privacy@glazecalcapp.com</mail>. Este gratuit și veți primi un răspuns în termen de o lună. Vi se va cere doar să arătați că acel cont vă aparține, conectându-vă sau deschizând un link trimis la adresa contului, niciodată un act de identitate.",
     "rightsComplain": "Dacă răspunsul nu vă mulțumește, puteți depune o plângere la o autoritate pentru protecția datelor: în UE, la <edpb>autoritatea din țara dumneavoastră</edpb>, iar în Regatul Unit, la <ico>Information Commissioner’s Office</ico>.",
     "storageHeading": "Cookie-uri și stocarea în browser",
+    "storageIntro": "Glazecalc setează două cookie-uri, al doilea doar cât vă conectați cu Google sau GitHub, și păstrează câteva valori mici în browser. Fiecare există pentru ceva ce ați cerut: să rămâneți conectat, să vă conectați cu Google sau GitHub ori să vă amintim o alegere pe care ați făcut-o. Niciunul nu vă urmărește și niciunul nu este partajat, așa că legea nu cere să se ceară acordul mai întâi și nu există banner de cookie-uri.",
     "storageLabel": "Cookie-uri și stocarea în browser",
     "storageName": "Denumire",
     "storagePurpose": "La ce folosește",
@@ -150,6 +167,7 @@
         "lasts": "Până când ștergeți datele stocate de browser."
       },
       "print": {
+        "purpose": "Ultimele dumneavoastră alegeri pentru tipărirea unei rețete: rețeta întreagă, un amestec sau fișa de lucru, și mărimea amestecului.",
         "lasts": "Până când ștergeți datele stocate de browser."
       },
       "token": {
@@ -163,12 +181,19 @@
       "reloadedFor": {
         "purpose": "După lansarea unei versiuni noi a site-ului, ce pagină a fost reîncărcată și când, astfel încât o pagină să se reîncarce cel mult o dată pe minut.",
         "lasts": "Până când închideți fila."
+      },
+      "oauthCookie": {
+        "purpose": "Doar cât vă conectați cu Google sau GitHub: leagă răspunsul de la Google sau GitHub de browserul dumneavoastră, ca nimeni altcineva să nu poată încheia conectarea dumneavoastră sau începe una în locul dumneavoastră. Scripturile din pagină nu îl pot citi.",
+        "lasts": "Se setează când apăsați „Continuați cu Google” sau „Continuați cu GitHub”, sau asociați unul pe pagina contului. Se elimină când conectarea se încheie sau după 10 minute."
       }
     },
     "childrenHeading": "Copii",
     "children": "Glazecalc este un instrument pentru ceramiști și nu se adresează copiilor.",
     "changesHeading": "Modificări",
-    "changes": "Dacă această informare se modifică, se modifică și data din partea de sus a paginii."
+    "changes": "Dacă această informare se modifică, se modifică și data din partea de sus a paginii.",
+    "storedProviders": "<b>Google sau GitHub, dacă vă conectați cu unul:</b> identificatorul pe care vi-l dă acel serviciu (un număr sau cod care nu se schimbă niciodată), când l-ați asociat și când v-ați conectat ultima dată cu el, și dacă contul dumneavoastră are o parolă proprie. Nimic altceva de la acel serviciu nu este păstrat: nici numele, nici poza, nici vreo cheie către contul dumneavoastră de acolo. Cât vă conectați, serverul păstrează o notă despre conectare, cu adresa de e-mail pe care serviciul spune că este a dumneavoastră când este nevoie: pentru un cont nou, unde devine adresa de e-mail a contului, sau, când un cont Glazecalc are deja acea adresă de e-mail, ca să asocieze serviciul la el odată ce vă conectați la acel cont. Nota și adresa de e-mail din ea sunt șterse în aproximativ 10 minute.",
+    "providers": "<b>Conectarea cu Google sau GitHub</b> este alegerea dumneavoastră și se întâmplă doar când apăsați butonul lui. Browserul dumneavoastră merge atunci la Google sau GitHub, care trimit către Glazecalc identificatorul lor pentru dumneavoastră și adresa de e-mail. Fiecare este o companie separată, responsabilă pentru ce partajați cu ea conform propriei politici de confidențialitate. Niciun script sau imagine de la niciuna dintre ele nu se încarcă pe paginile Glazecalc.",
+    "keptProviders": "<b>Google sau GitHub:</b> fiecare asociere până o dezasociați sau ștergeți contul. O conectare în curs este ștearsă după 10 minute."
   },
   "notFound": {
     "heading": "Pagina nu a fost găsită",
@@ -194,5 +219,27 @@
     "standardFetchFailed": "A apărut o eroare la încărcarea sfaturilor de pe server.",
     "saved": "Sfatul a fost adăugat cu succes.",
     "saveFailed": "A apărut o eroare la trimiterea sfatului."
+  },
+  "assistants": {
+    "title": "Folosiți Glazecalc din asistentul dumneavoastră AI",
+    "lead": "Asistenți AI precum Claude, GitHub Copilot, Cursor și Gemini pot folosi direct calculele Glazecalc, prin Model Context Protocol (MCP).",
+    "whatHeading": "Ce poate face",
+    "what": "Fără cont, un asistent poate căuta materii prime în bibliotecă, calcula formula Seger a unei rețete, o poate verifica față de limitele pentru arderea ei, sugera înlocuitori pentru materii prime retrase, reface o rețetă din materiile prime pe care le numiți, converti între conuri și temperaturi și căuta și citi ghidurile. Nimic din ce trimite nu este salvat; ca pentru orice pagină, jurnalul serverului web înregistrează adresa IP, ora și adresa fiecărei cereri (niciodată ce a fost trimis), timp de 14 zile.",
+    "mine": "Cu un token de acces de pe <account>pagina contului</account> dumneavoastră, poate citi și propriile rețete, materii prime, caiet, jurnale de ardere și materiile prime pe care le aveți în stoc. Un token poate doar să citească: nu schimbă și nu șterge nimic niciodată.",
+    "caution": "Verificările de limite sunt avertismente din limite publicate, ca în aplicație, nu o dovadă că o glazură este potrivită pentru contact alimentar. Ardeți o probă din fiecare glazură și dați la testat glazurile pentru suprafețele în contact cu alimentele, pentru migrarea metalelor.",
+    "addressHeading": "Adresa",
+    "address": "Dați asistentului dumneavoastră această adresă, folosind transportul Streamable HTTP:",
+    "token": "Ca să-l lăsați să vă citească propriile înregistrări, creați un token pe <account>pagina contului</account> și copiați-l. Asistentul dumneavoastră îl trimite într-un antet Authorization, ca Bearer urmat de token. Țineți-l departe de fișierele pe care le partajați sau le trimiteți într-un depozit, ca pe o parolă.",
+    "clientsHeading": "Adăugarea Glazecalc la asistentul dumneavoastră",
+    "claudeCode": "Într-un terminal:",
+    "claudeCodeToken": "Cu un token de acces, ca să citiți și propriile înregistrări:",
+    "vscode": "În .vscode/mcp.json dintr-un dosar sau în setările de utilizator. VS Code cere tokenul o dată și îl ține ascuns; omiteți headers și inputs ca să folosiți doar instrumentele care nu au nevoie de cont:",
+    "cursor": "În ~/.cursor/mcp.json sau .cursor/mcp.json într-un proiect. Omiteți headers ca să folosiți doar instrumentele care nu au nevoie de cont:",
+    "gemini": "În ~/.gemini/settings.json. Omiteți headers ca să folosiți doar instrumentele care nu au nevoie de cont:",
+    "appsHeading": "Claude, ChatGPT și alte aplicații",
+    "apps": "Adăugați un conector personalizat cu adresa de mai sus. Aceste aplicații nu pot trimite încă un token de acces, așa că primesc instrumentele care nu au nevoie de cont. Accesul la propriile înregistrări din ele va veni odată cu conectarea din aplicație.",
+    "stopHeading": "Oprirea accesului",
+    "stop": "Revocați un token pe <account>pagina contului</account> oricând. Fiecare token încetează să funcționeze în ziua pe care ați ales-o, iar toate încetează deodată dacă resetați parola sau vă deconectați de pe toate dispozitivele.",
+    "limits": "Fiecare adresă poate face 60 de cereri pe minut și 2000 pe zi; un cont care folosește un token, 120 pe minut și 5000 pe zi. Înlocuirile și potrivirile sunt limitate la 10 pe minut."
   }
 }

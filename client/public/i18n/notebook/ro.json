@@ -17,6 +17,14 @@
         "title": "Rețete",
         "text": "Compuneți o glazură din materii prime și cantități, vedeți formula Seger (UMF) a acesteia și salvați-o."
       },
+      "import": {
+        "title": "Lipiți rețete",
+        "text": "Lipiți rețete de pe un site web, dintr-un tabel sau din notițe, verificați ce s-a citit și salvați-le."
+      },
+      "blends": {
+        "title": "Amestecuri pentru plăcuțe de test",
+        "text": "Amestecați două, trei sau patru dintre rețetele dumneavoastră în plăcuțe de test numerotate, cu ce trebuie cântărit pentru fiecare."
+      },
       "material": {
         "title": "Materii prime",
         "text": "Adăugați materii prime proprii, după o formulă chimică sau după analiza unui furnizor."
@@ -99,6 +107,35 @@
     "saveFailed": "Eroare: cererea către server nu a reușit."
   },
   "trash": {
-    "title": "Coșul de reciclare"
+    "title": "Coșul de reciclare",
+    "lead": "Ce ștergeți din rețete, materii prime, notițe și jurnale așteaptă aici 30 de zile. Puneți la loc sau ștergeți definitiv.",
+    "listHeading": "În coșul de reciclare",
+    "none": "Coșul de reciclare este gol.",
+    "untitled": "Fără titlu",
+    "kinds": {
+      "recipes": "Rețetă",
+      "materials": "Materie primă",
+      "additives": "Aditiv",
+      "notes": "Notiță",
+      "firing": "Jurnal de ardere",
+      "advice": "Sfat",
+      "other": "Înregistrare"
+    },
+    "removedOn": "Șters la {date}",
+    "goesOn": "Șters definitiv la {date}",
+    "byApp": "Șters de o aplicație conectată",
+    "putBack": "Puneți la loc",
+    "putBackName": "Puneți la loc {name}",
+    "restored": "„{name}” a fost pus la loc unde era.",
+    "restoredAlready": "„{name}” a fost deja pus la loc.",
+    "restoreFailed": "„{name}” nu a putut fi pus la loc. Încercați din nou.",
+    "deleted": "„{name}” a fost șters definitiv.",
+    "empty": "Goliți coșul de reciclare",
+    "emptyQuestion": "Ștergeți definitiv {count, plural, one {înregistrarea} few {cele # înregistrări} other {cele # de înregistrări}} din coșul de reciclare? Nu se poate anula.",
+    "emptyYes": "Da, goliți-l",
+    "emptying": "Se golește...",
+    "emptied": "Coșul de reciclare este gol.",
+    "emptyFailed": "Coșul de reciclare nu a putut fi golit. Încercați din nou.",
+    "fetchFailed": "Coșul de reciclare nu a putut fi încărcat. Încercați din nou."
   }
 }
