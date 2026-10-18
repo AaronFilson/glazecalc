@@ -65,49 +65,49 @@ Label: 二氧化硅职业接触限值
 
 这个顺序是我们的建议，依据的是 HSE 首先避免使用粉料的原则。分步的称量和调配方法，参阅[《如何调配釉料》](/guides/making-a-glaze)。
 
-## Respirators {#respirators lang=en}
+## 防颗粒物呼吸器 {#respirators}
 
-A **respirator** is a mask certified to filter fine particles from the air you breathe. It works only when it seals to your face, and it backs up good habits rather than replacing them.
+**防颗粒物呼吸器**（简称呼吸器）是经过认证、能从您吸入的空气中滤除细颗粒的面罩，不同于普通的防尘口罩。它只有与面部密合时才起作用，而且它是好习惯的补充，不能代替好习惯。
 
-### Classes by region
+### 各地区的等级
 
-Table: Particle respirator classes by region (rough equivalents for glaze dust)
-Label: Respirator classes
+Table: 各地区的防颗粒物呼吸器等级（就釉料粉尘而言大致相当）
+Label: 呼吸器等级
 
-| Region                    | Everyday class | Higher class | Look for                                                                         |
-| ------------------------- | -------------- | ------------ | -------------------------------------------------------------------------------- |
-| United States             | N95            | P100         | NIOSH approval on the mask or its packaging                                      |
-| UK and EU                 | FFP2           | FFP3         | EN 149 on disposable masks; EN 140 on reusable half masks, with P2 or P3 filters |
-| Australia and New Zealand | P2             | P3           | AS/NZS 1716                                                                      |
+| 地区             | 日常等级 | 更高等级 | 认准                                                                     |
+| ---------------- | -------- | -------- | ------------------------------------------------------------------------ |
+| 美国             | N95      | P100     | 面罩或其包装上的 NIOSH（美国国家职业安全卫生研究所）认证                 |
+| 英国和欧盟       | FFP2     | FFP3     | 一次性面罩标有 EN 149；可重复使用的半面罩标有 EN 140，并配 P2 或 P3 滤芯 |
+| 澳大利亚和新西兰 | P2       | P3       | AS/NZS 1716                                                              |
 
-The higher class filters a larger share of fine particles. Sources disagree on what an Australian P3 filters (at least 99%, or at least 99.95%), so buy the certified class sold in your region. A reusable **half mask** (covering the nose and mouth, with replaceable filters) fitted with P100 filters (P3 outside the US) is a common studio choice.
+更高等级能滤除更大比例的细颗粒。关于澳大利亚 P3 的过滤效率，各来源说法不一（至少 99%，或至少 99.95%），所以请购买您所在地区销售的经认证的等级。配 P100 滤芯（美国以外为 P3）的**可更换式半面罩**（可重复使用，罩住口鼻，滤芯可以更换）是工作室里常见的选择。
 
-### Fit and seal
+### 贴合与密封
 
-A mask that leaks lets dust in around its edges, whatever its class. HSE warns that stubble and beards "make it impossible to get a good seal".
+漏气的面罩会让粉尘从边缘进入，无论它是什么等级。英国 HSE 警告说，胡茬和胡须“使面罩不可能良好密封”。
 
-- **Shave shortly before you work.** Guidance differs on how recent "clean-shaven" must be. A UK maker, citing HSE, says shaved within 8 hours of starting work. The Australian and New Zealand fit-test standard asks for a shave before a fit test, "preferably within 12 hours". Shaving shortly before you work meets both.
-- **If you keep a beard,** a loose-fitting **powered respirator** (PAPR: a hood or helmet with a fan that supplies filtered air) needs no face seal.
-- **Get the size right.** Poor fit is a major cause of leaks. Workplaces use a **fit test**, a check that a particular mask seals on a particular face. At home, we suggest following the maker's instructions for checking the seal each time you put it on.
+- **在开始工作前不久刮胡子**。关于“胡子刮干净”必须是多久以内的事，各方指导不一。英国一家制造商引用 HSE 的说法，要求在开始工作前 8 小时内刮过。澳大利亚和新西兰的适合性检验标准要求在适合性检验前刮胡子，“最好在 12 小时以内”。在开始工作前不久刮胡子，两者都能满足。
+- **如果您留胡须**，宽松型**动力送风过滤式呼吸器**（PAPR：带风机、提供过滤空气的头罩或头盔）不需要与面部密封。
+- **选对尺码**。贴合不良是漏气的主要原因之一。工作场所会做**适合性检验**，即检查某一款面罩在某一个人的脸上能否密封。在家里，我们建议每次戴上时都按照制造商的说明检查密封。
 
 > [!NOTE]
-> In our view, fit matters more than class: a well-fitted N95, FFP2 or P2 will usually do better than a loose P100.
+> 我们认为，贴合比等级更重要：一只贴合良好的 N95、FFP2 或 P2 通常比一只松垮的 P100 效果更好。
 
-### When to wear one
+### 何时佩戴
 
-HSE says a respirator is "normally not needed" where weighing and mixing happen in a ventilated enclosure, but "may be needed for maintenance and cleaning". Most home studios have no enclosure, so we suggest wearing one (N95, FFP2 or P2 at least; P100, FFP3 or P3 is better) whenever you:
+HSE 说，在有通风的封闭罩内称量和调配时，呼吸器“通常不需要”，但“在维护和清洁时可能需要”。大多数家庭工作室没有封闭罩，所以我们建议每逢以下情况都佩戴呼吸器（至少 N95、FFP2 或 P2；P100、FFP3 或 P3 更好）：
 
-- open bags or tip out powder;
-- weigh powders and stir them into water;
-- scrape, sand or grind dried glaze or bisque;
-- do any dry cleanup, or empty a vacuum;
-- spray glaze (in a booth: see below).
+- 开袋或倒出粉料时；
+- 称量粉料并把它们搅入水中时；
+- 刮擦、砂磨或研磨干燥的釉或素坯{{en: bisque}}时；
+- 进行任何干式清洁，或清空吸尘器时；
+- 喷釉时（在喷釉柜中进行：见下文）。
 
-### What is not a respirator
+### 哪些不是呼吸器
 
-- Surgical masks, cloth masks and "nuisance dust" masks without a NIOSH, EN 149 or AS/NZS 1716 marking. We would not rely on them for glaze dust.
-- A dust respirator "will not protect you against gases, vapors" (OSHA), so it does nothing for kiln fumes.
-- Look after yours: OSHA notes that a dirty or misused respirator "can become a hazard". Store it clean, away from dusty work clothes.
+- 没有 NIOSH、EN 149 或 AS/NZS 1716 标志的医用外科口罩、布口罩和普通防尘口罩（标称防“低危害粉尘”的那种）。我们不会依靠它们来防护釉料粉尘。
+- 防尘呼吸器“不能防护气体、蒸气”（OSHA），所以它对烧窑废气毫无作用。
+- 爱护好您的呼吸器：OSHA 指出，脏的或使用不当的呼吸器“可能成为一种危害”。把它清洁地存放，远离沾有粉尘的工作服。
 
 ## 清洁、衣物和双手 {#cleaning}
 
@@ -181,36 +181,36 @@ HSE says a respirator is "normally not needed" where weighing and mixing happen 
 
 乐烧会产生大量烟和一氧化碳；犹他大学建议在室外进行，远离进风口和窗户。关于烧窑本身，参阅[《简易窑炉烧成》](/guides/firing)。
 
-## Materials that need most care {#materials lang=en}
+## 需要格外小心的原料 {#materials}
 
-Most glaze materials, including silica, clays, feldspars and frits, are mainly a dust hazard, which the habits above control. A shorter list is toxic in its own right, by breathing, swallowing or skin contact. Digitalfire adds that stains are generally much safer than raw oxides, and that "unbalanced glazes that release toxic metals can be made from any materials": food safety depends on the whole recipe, not on one ingredient.
+大多数釉用原料，包括石英{{en: silica}}、黏土、长石{{en: feldspar}}和熔块{{en: frit}}，主要是粉尘危害，上述习惯可以控制这种危害。另有较少的一些原料本身就有毒，可经吸入、吞入或皮肤接触造成危害。Digitalfire 还说，色料{{en: stain}}通常比生料氧化物安全得多，并且“能溶出有毒金属的不平衡的釉，可以用任何原料做出来”：釉是否符合食品接触安全要求{{en: food safe}}，取决于整个配方，而不是某一种成分。
 
-An **IARC group** is a cancer classification: Group 1 means "carcinogenic to humans", Group 2A "probably carcinogenic to humans", Group 2B "possibly carcinogenic to humans", and Group 3 "not classifiable as to its carcinogenicity to humans", which means too little evidence to judge either way.
+**IARC 分类**是一种致癌性分类：第 1 类指“对人类致癌”，2A 类指“对人类很可能致癌”，2B 类指“对人类可能致癌”，第 3 类指“尚无法就其对人类的致癌性进行分类”，意思是证据太少，无法判断是否致癌。
 
-Table: Glaze materials that need extra care
-Label: Materials that need most care
+Table: 需要格外小心的釉用原料
+Label: 需要格外小心的原料
 
-| Material                               | Hazard                                                                                                                                                            | Precaution                                                                                                  |
-| -------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| Lead compounds and lead frits          | "Highly toxic by inhalation or ingestion"; vaporizes at lower kiln temperatures.                                                                                  | Avoid; Digitalfire says experts only. Assume any glaze not labeled "lead-free" or "leadless" contains lead. |
-| Barium carbonate                       | Insoluble in water but dissolves in stomach acid; affects the heart and muscles (irregular heartbeat, low potassium).                                             | A barium frit or strontium where the recipe allows; respirator; labeled container.                          |
-| Manganese dioxide                      | Dust or fume can cause **manganism**, a nervous-system illness like Parkinson's disease, usually after 1 to 3 years of exposure. Fume can cause metal fume fever. | Black stains at low percentages instead; vent the kiln.                                                     |
-| Potassium dichromate and chrome oxide  | Chromium(VI), as in dichromate, is IARC Group 1. That listing does not cover chromium(III), as in chrome oxide.                                                   | Avoid dichromate. We treat chrome oxide as far less hazardous, but keep its dust down.                      |
-| Cobalt                                 | Soluble cobalt(II) salts IARC 2A; cobalt(II) oxide 2B; black Co₃O₄ Group 3.                                                                                       | Keep dust down; stains for blacks.                                                                          |
-| Nickel compounds                       | Among the University of Utah's known or probable human carcinogens.                                                                                               | Stains rather than high percentages.                                                                        |
-| Cadmium and selenium, raw or in stains | Cadmium compounds are among Utah's known or probable human carcinogens.                                                                                           | "Only by experts" (Digitalfire); read any stain's SDS.                                                      |
-| Antimony and vanadium                  | Trivalent antimony (as in antimony trioxide) IARC 2A; vanadium "highly toxic by inhalation".                                                                      | Vanadium for experts only; keep antimony dust down.                                                         |
-| Copper and zinc                        | Kiln fume can cause metal fume fever; raw zinc oxide is "generally not considered hazardous".                                                                     | Vent the kiln.                                                                                              |
-| Lithium carbonate                      | "Highly toxic by inhalation". An EU expert committee concluded it may harm fertility and the unborn child; formal adoption was not confirmed when we checked.     | Gloves and respirator; keep from children. We suggest extra care in pregnancy.                              |
-| Borax and boric acid                   | Classified in the EU as "may damage fertility; may damage the unborn child".                                                                                      | Gloves; boron from a frit where you can.                                                                    |
-| Soda ash, potash, alkaline feldspars   | Skin irritants.                                                                                                                                                   | Gloves.                                                                                                     |
-| Fluorspar, cryolite, lepidolite        | Release fluorine gases in firing; fluorspar also irritates skin.                                                                                                  | Vent the kiln outdoors; gloves.                                                                             |
-| Talc                                   | IARC 2A since July 2024; talc contaminated with asbestos counts as asbestos, Group 1.                                                                             | Platy (not fibrous), asbestos-free talc; check its SDS.                                                     |
+| 原料                                 | 危害                                                                                                             | 防护措施                                                                             |
+| ------------------------------------ | ---------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
+| 铅化合物和含铅熔块                   | “吸入或吞入时毒性很高”；在较低的窑温下就会挥发。                                                                 | 避免使用；Digitalfire 说仅限专家使用。凡未标明“无铅”或“不含铅”的釉，都应假定其含铅。 |
+| 碳酸钡                               | 不溶于水，但溶于胃酸；影响心脏和肌肉（心律不齐、低血钾）。                                                       | 配方允许时改用钡熔块或锶；戴呼吸器；容器贴标签。                                     |
+| 二氧化锰                             | 粉尘或烟气可导致**锰中毒**，一种类似帕金森病的神经系统疾病，通常在接触 1～3 年后发生。烟气可导致金属烟热。       | 改用低百分比的黑色色料；窑炉排风。                                                   |
+| 重铬酸钾和氧化铬                     | 铬(VI)（如重铬酸盐中的铬）属 IARC 第 1 类。这一分类不包括铬(III)（如氧化铬中的铬）。                             | 避免使用重铬酸盐。我们把氧化铬视为危害小得多的原料，但仍要控制其粉尘。               |
+| 钴                                   | 可溶性钴(II)盐为 IARC 2A 类；氧化钴(II)为 2B 类；黑色的 Co₃O₄ 为第 3 类。                                        | 控制粉尘；做黑色用色料。                                                             |
+| 镍化合物                             | 列于犹他大学的已知或很可能的人类致癌物之中。                                                                     | 用色料，不要高百分比使用。                                                           |
+| 镉和硒（生料或色料中的）             | 镉化合物列于犹他大学的已知或很可能的人类致癌物之中。                                                             | “仅限专家”（Digitalfire）；阅读任何色料的 SDS。                                      |
+| 锑和钒                               | 三价锑（如三氧化二锑中的锑）为 IARC 2A 类；钒“吸入时毒性很高”。                                                  | 钒仅限专家使用；控制锑的粉尘。                                                       |
+| 铜和锌                               | 窑内产生的烟气可导致金属烟热；未煅烧的氧化锌“一般不被认为有害”。                                                 | 窑炉排风。                                                                           |
+| 碳酸锂                               | “吸入时毒性很高”。欧盟的一个专家委员会认定它可能损害生育能力和未出生的胎儿；在我们查证时，未能确认已被正式采纳。 | 戴手套和呼吸器；远离儿童。我们建议孕期格外小心。                                     |
+| 硼砂和硼酸                           | 在欧盟被分类为“可能损害生育能力；可能对胎儿造成伤害”。                                                           | 戴手套；尽可能用熔块引入硼。                                                         |
+| 纯碱、碳酸钾{{en: potash}}、碱性长石 | 刺激皮肤。                                                                                                       | 戴手套。                                                                             |
+| 萤石、冰晶石、锂云母                 | 烧成时释放含氟气体；萤石还会刺激皮肤。                                                                           | 窑炉排风至室外；戴手套。                                                             |
+| 滑石                                 | 自 2024年7月起为 IARC 2A 类；被石棉污染的滑石按石棉对待，属第 1 类。                                             | 使用片状（非纤维状）、不含石棉的滑石；查阅其 SDS。                                   |
 
-Borax, boric acid, soda ash and potash dissolve in water, so we treat them as the likeliest to be absorbed through broken skin or swallowed from unwashed hands.
+硼砂、硼酸、纯碱和碳酸钾都溶于水，所以我们认为它们最有可能通过破损的皮肤被吸收，或从没洗的手上被吞入。
 
 > [!NOTE]
-> If a recipe calls for raw barium carbonate, a lot of manganese, or any lead or cadmium material, look for a version that uses a frit or a stain instead. Glazecalc can compare the chemistry of the original and the swap; then test the new glaze.
+> 如果配方需要生料碳酸钡、大量的锰，或任何含铅或含镉的原料，寻找改用熔块或色料的版本。Glazecalc 可以比较原配方和替换后配方的化学组成；然后测试新釉。
 
 ## 手套、皮肤和眼睛 {#gloves-and-eyes}
 

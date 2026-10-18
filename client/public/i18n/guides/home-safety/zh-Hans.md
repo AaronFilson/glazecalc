@@ -129,25 +129,25 @@ Label: 可溶原料
 
 Glazecalc 让铅保持关闭，除非您在[设置](/account)中选择开启。铅关闭时，它绝不会在配方中加入铅，也绝不会建议使用铅。
 
-## Pets {#pets lang=en}
+## 宠物 {#pets}
 
 > [!NOTE]
-> We found no veterinary study or guidance written for pets in potters' homes. The advice in this section is common sense, built on general facts about lead, barium and birds. It does not come from a veterinary source.
+> 我们没有找到针对陶艺人家中宠物的兽医研究或指导。本节的建议是常识，基于关于铅、钡和鸟类的一般事实。它并非来自兽医资料。
 
-### What is known
+### 已知的情况
 
-The Pet Poison Helpline says "Lead is toxic for all species, but young and/or malnourished animals are at highest risk for poisoning", with signs such as vomiting, diarrhea, not eating, stumbling, seizures and blindness. A veterinary case report describes a dog that ate sparklers containing barium nitrate (a soluble barium salt, not a glaze material): it developed sudden weakness, drooling and an irregular heartbeat, and recovered with veterinary treatment. Birds are a special case: a University of Illinois vet explains that "Birds have a highly sophisticated and ultra efficient respiratory system, making them particularly vulnerable to the inhalation of fumes and aerosols."
+Pet Poison Helpline 说：“铅对所有物种都有毒，但幼小和/或营养不良的动物中毒风险最高”，症状包括呕吐、腹泻、不进食、步态不稳、抽搐和失明。一份兽医病例报告描述了一只狗，吃了含硝酸钡的烟花棒（一种可溶性钡盐，不是釉料原料）：它突然出现无力、流口水和心律不齐，经兽医治疗后康复。鸟类是特殊情况：伊利诺伊大学的一位兽医解释说：“鸟类拥有高度精密、效率极高的呼吸系统，因此特别容易受到吸入烟雾和气溶胶的伤害。”
 
-### Common-sense rules
+### 常识性规则
 
-- Keep pets out of the studio, with the door shut.
-- Dogs chew bags and drink from buckets. Keep bags in a closed cabinet and a lid on every bucket.
-- Cats walk through dust and lick it off their paws and fur. Wet-clean the floor and keep cats out of the studio, so there is nothing to groom off.
-- Birds and small mammals (rabbits, guinea pigs, hamsters) share the household air. Keep them in a far room with the door shut while you handle dry materials and while the kiln fires.
-- Fish tanks collect settling dust. Keep them out of the studio, and covered.
-- Keep pet food and water bowls away from the studio and kiln, and use commercial or tested bowls, not studio experiments.
+- 让宠物远离工作室，并关上门。
+- 狗会咬袋子、喝桶里的水。把袋子放在关好的柜子里，每个桶都盖上盖子。
+- 猫会从粉尘中走过，再从爪子和毛上把粉尘舔掉。湿拖地面，并让猫远离工作室，这样猫梳理毛发时就舔不到什么。
+- 鸟类和小型哺乳动物（兔子、豚鼠、仓鼠）呼吸的是同一个家里的空气。在您处理干原料时，以及窑烧制时，把它们放在远处的房间里并关上门。
+- 鱼缸会积聚沉降的粉尘。不要把鱼缸放在工作室里，并且要盖上。
+- 宠物的食盆和水盆要远离工作室和窑，并使用市售的或经过检测的碗，不要用工作室里的试验品。
 
-If a pet may have eaten or drunk anything from the studio, or shows signs like those above, call your vet or an animal poison line (see the table at the top), with the material's name and the pet's weight to hand.
+如果宠物可能吃了或喝了工作室里的任何东西，或出现上述症状，就给兽医或动物中毒咨询热线打电话（见本页顶部的表格），并准备好原料名称和宠物的体重。
 
 ## 窑 {#the-kiln}
 
@@ -220,20 +220,20 @@ Rio Grande 建议使用**专用线路**（不为其他任何设备供电的线�
 
 关于釉如何熔融、为什么有些釉会溶出金属以及这些限值意味着什么，参阅[《从基本原理学施釉》](/guides/glazing-basics)。
 
-## Sources {#sources lang=en}
+## 资料来源 {#sources}
 
 - [America's Poison Centers: Poison Help](https://poisoncenters.org/)
 - [Poison Control (poison.org): webPOISONCONTROL](https://www.poison.org/)
 - [NHS: Poisoning](https://www.nhs.uk/conditions/poisoning/)
-- [National Poisons Information Service (UK)](https://www.npis.org/)
+- [National Poisons Information Service（英国）](https://www.npis.org/)
 - [National Poisons Information Centre of Ireland: Public Poisons Line](https://www.poisons.ie/)
 - [European Commission: 112, the European emergency number](https://digital-strategy.ec.europa.eu/en/policies/112)
 - [healthdirect: Poisoning](https://www.healthdirect.gov.au/poisoning)
-- [National Poisons Centre (New Zealand)](https://www.poisons.co.nz/)
+- [National Poisons Centre（新西兰）](https://www.poisons.co.nz/)
 - [ASPCA: Animal Poison Control](https://www.aspca.org/pet-care/animal-poison-control)
 - [Pet Poison Helpline](https://www.petpoisonhelpline.com/)
-- [Animal PoisonLine (UK)](https://www.animalpoisonline.co.uk/)
-- [Animal Poisons Helpline (Australia and New Zealand)](https://animalpoisons.com.au/)
+- [Animal PoisonLine（英国）](https://www.animalpoisonline.co.uk/)
+- [Animal Poisons Helpline（澳大利亚和新西兰）](https://animalpoisons.com.au/)
 - [PubMed Central: Acute soluble barium poisoning, a review (2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC11700400)
 - [WikEM: Boron toxicity](https://wikem.org/wiki/Boron_toxicity)
 - [NPIC and US EPA: Recognition and Management of Pesticide Poisonings, chapter 9 (PDF)](https://www.npic.orst.edu/RMPP/rmpp_ch9.pdf)
@@ -243,7 +243,7 @@ Rio Grande 建议使用**专用线路**（不为其他任何设备供电的线�
 - [US EPA: Children's health booklet (2018, PDF)](https://19january2021snapshot.epa.gov/sites/static/files/2018-10/documents/childrenshealthbooklet2018_final-4_newlinks.pdf)
 - [Pennsylvania Department of Health: Non-Occupational Lead Exposure (PDF)](https://www.health.pa.gov:443/topics/Documents/Environmental%20Health/Non-Occupational%20Lead%20Exposure.pdf)
 - [Western Carolina University: Ceramics Safety](https://www.wcu.edu/discover/campus-services-and-operations/facilities-management/safety-and-risk-management/visual-arts-theatre-safety/ceramics-safety.aspx)
-- [Crafts Council (UK): How to make your pottery practice greener](https://craftscouncil.org.uk/stories/how-make-your-pottery-practice-greener)
+- [Crafts Council（英国）: How to make your pottery practice greener](https://craftscouncil.org.uk/stories/how-make-your-pottery-practice-greener)
 - [Pet Poison Helpline: Lead](https://www.petpoisonhelpline.com/poison/lead/)
 - [Vet Candy: Sparkler ingestion results in barium toxicity](https://www.myvetcandy.com/clinicalupdblog/2019/3/15/sparkler-ingestion-results-in-barium-toxicity)
 - [University of Illinois College of Veterinary Medicine: Bird toxins](https://vetmed.illinois.edu/pet-health-columns/bird-toxins-teflon-avocado-lead-zinc/)

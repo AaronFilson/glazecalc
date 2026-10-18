@@ -17,13 +17,17 @@
     "confirmEmail": "确认电子邮箱 - Glazecalc",
     "home": "工作室笔记本 - Glazecalc",
     "recipe": "配方 - Glazecalc",
+    "import": "粘贴配方 - Glazecalc",
+    "blends": "试片混配 - Glazecalc",
     "material": "原料 - Glazecalc",
     "additive": "添加剂 - Glazecalc",
     "firingLogs": "烧窑记录 - Glazecalc",
     "notes": "笔记 - Glazecalc",
     "trash": "回收站 - Glazecalc",
     "account": "账户与设置 - Glazecalc",
-    "notFound": "页面不存在 - Glazecalc"
+    "notFound": "页面不存在 - Glazecalc",
+    "shared": "分享的配方 - Glazecalc",
+    "assistants": "在 AI 助手中使用 Glazecalc - Glazecalc"
   },
   "nav": {
     "skip": "跳到正文",
@@ -96,9 +100,14 @@
   },
   "remove": {
     "alreadyRemoved": "“{name}”已被移除。",
+    "trashed": "已将“{name}”移入回收站。",
+    "undo": "撤销",
+    "restored": "已放回“{name}”。",
+    "restoreFailed": "无法放回“{name}”。它仍在回收站中。",
     "failed": "无法移除。请再试一次。",
     "question": "要移除“{name}”吗？",
     "cannotUndo": "此操作无法撤销。",
+    "toTrash": "30 天内可以从回收站放回。",
     "removing": "正在移除……",
     "yes": "是，移除",
     "cancel": "取消",

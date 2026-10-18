@@ -3,79 +3,79 @@ title: 简易窑炉烧成
 lead: 如何用窑炉看管器或手动开关烧电窑：选择、摆放和读取测温锥，并附素烧和釉烧的已发布烧成曲线。
 ---
 
-## Cones: what they measure {#cones lang=en}
+## 测温锥：测量什么 {#cones}
 
 > [!NOTE]
-> Follow your kiln's own manual first. This guide gathers what cone and kiln makers publish about basic electric kilns; it does not replace the instructions for your model, and where the two differ, the manual wins.
+> 首先遵循窑自带的使用说明书。本指南汇集了测温锥和窑的生产商发布的有关基本电窑的内容；它不能代替所用型号的说明，两者不一致时，以使用说明书为准。
 
-A **pyrometric cone** is a small, slender pyramid made from a standardized ceramic powder. When it has had enough heat, it softens and bends over in a repeatable way. You set cones in the kiln beside the ware and read how far they bent.
+**测温锥**{{en: pyrometric cone}}是用标准化陶瓷粉料制成的细长小三角锥。受热足够后，它会软化，并以可重复的方式弯倒。把测温锥放在窑里器物旁边，再读取它们弯了多少。
 
-Cones measure **heatwork**, the combined effect of temperature and time. In the words of Orton, the main US cone maker, "Cones do not measure temperature alone." A cone heated slowly bends at a lower temperature than one heated fast, and a glaze behaves the same way. So Orton gives each cone's temperature for a stated heating rate over the last {{180 °F; 100 °C}} of the firing. Once a cone starts to move, it bends over a narrow range, "usually less than 40° F" (22 °C).
+测温锥测量的是**热功**{{en: heatwork}}，即温度与时间的综合作用。用美国主要的测温锥生产商 Orton 的话说：“测温锥不只是测量温度。”升温慢的测温锥比升温快的在更低的温度下弯倒，釉{{en: glaze}}的表现也一样。所以 Orton 给出每支测温锥的温度时，都注明烧成最后 {{180 °F; 100 °C}} 的升温速率。测温锥一旦开始动，会在很窄的范围内弯倒，“通常小于 40° F”（22 °C）。
 
-### Cone numbers
+### 锥号
 
-Cone numbers run from 022, the coolest, up to 42. A leading zero marks the cooler series and is read as "oh": cone 06 ("oh-six") is cooler than cone 04, and cone 01 needs less heat than cone 1. Orton warns that it is important not to mix the two series up. The gap is large: cone 06 bends more than {{400 °F; 220 °C}} cooler than cone 6.
+锥号从最冷的 022 一直到 42。前面的零表示较冷的系列，英语中把它读作“oh”：Orton 测温锥 06 号（英语读作“oh-six”）比 04 号锥冷，01 号锥所需的热比 1 号锥少。Orton 提醒，重要的是不要把这两个系列弄混。差距很大：06 号锥弯倒时的温度比 6 号锥低，相差超过 {{400 °F; 220 °C}}。
 
-Table: Common firing ranges, for self-supporting cones at {{108 °F/h; 60 °C/h}}
-Label: Firing ranges
+Table: 常见烧成温度范围，针对 {{108 °F/h; 60 °C/h}} 升温速率下带底座的测温锥
+Label: 烧成范围
 
-| Range     | Cones |                    Temperature | Typical use                              |
-| --------- | ----- | -----------------------------: | ---------------------------------------- |
-| Low fire  | 06–04 |  {{1828–1945 °F; 998–1063 °C}} | Earthenware glazes; bisque               |
-| Mid fire  | 5–6   | {{2167–2232 °F; 1186–1222 °C}} | Electric-kiln stoneware and porcelain    |
-| High fire | 9–10  | {{2300–2345 °F; 1260–1285 °C}} | Mostly gas-fired stoneware and porcelain |
+| 范围 | 锥号   |                           温度 | 常见用途                            |
+| ---- | ------ | -----------------------------: | ----------------------------------- |
+| 低温 | 06～04 |  {{1828–1945 °F; 998–1063 °C}} | 陶器{{en: earthenware}}釉；素烧     |
+| 中温 | 5～6   | {{2167–2232 °F; 1186–1222 °C}} | 电窑烧的炻器{{en: stoneware}}和瓷器 |
+| 高温 | 9～10  | {{2300–2345 °F; 1260–1285 °C}} | 多为气窑烧的炻器和瓷器              |
 
-Suppliers in the UK, Europe, Australia and New Zealand often give a temperature in °C rather than a cone: find the nearest cone in the chart below and confirm it with a witness cone. Seger and Staffordshire cones, the older European series, should not be assumed to share Orton's numbers, so this guide uses Orton cones.
+英国、欧洲、澳大利亚和新西兰的供应商常常给出以 °C 表示的温度，而不是锥号：在下面的对照表中找到最接近的锥号，并用证据锥{{en: witness cone}}加以确认。塞格锥和斯塔福德郡测温锥是欧洲较早的系列，不应假定它们的锥号与 Orton 的相同，所以本指南使用 Orton 测温锥。
 
-### Holding adds heatwork
+### 保温会增加热功
 
-A **hold** (also called a **soak**) keeps the kiln at one temperature for a while. Because cones measure heatwork, a hold at the top can stand in for a hotter peak. Orton gives these rough equivalents:
+**保温**{{en: hold}}（英语中也称 **soak**）是让窑在一个温度上停留一段时间。因为测温锥测量的是热功，在最高温度处保温可以代替更高的最高温度。Orton 给出这些大致的等效关系：
 
-Table: What a hold at the peak is worth
-Label: Holds and heatwork
+Table: 在最高温度保温相当于多少
+Label: 保温与热功
 
-| Hold             | Roughly the same heatwork as             |
-| ---------------- | ---------------------------------------- |
-| About 20 minutes | A peak {{18 °F; 10 °C}} hotter           |
-| 40–60 minutes    | A peak {{36 °F; 20 °C}} hotter           |
-| About 2 hours    | A peak {{54 °F; 30 °C}} hotter           |
-| 4–6 hours        | Enough to bend a cone two numbers hotter |
+| 保温        | 热功大致相当于              |
+| ----------- | --------------------------- |
+| 约 20 分钟  | 最高温度高 {{18 °F; 10 °C}} |
+| 40～60 分钟 | 最高温度高 {{36 °F; 20 °C}} |
+| 约 2 小时   | 最高温度高 {{54 °F; 30 °C}} |
+| 4～6 小时   | 足以使热两号的锥弯倒        |
 
-Orton adds that a hold of 1–2 hours "may be sufficient to deform the next higher cone number".
+Orton 还指出，保温 1～2 小时“可能足以使热一号的锥变形”。
 
-So a hold is never free: if you add one, expect the cones to bend further, and lower the peak to match.
+所以保温从来不是没有代价的：如果加了保温，就要预期测温锥弯得更多，并相应调低最高温度。
 
-### Kinds of cone
+### 测温锥的种类
 
-Orton makes four kinds. Two stand on the shelf to show what the ware received; two are for the kiln sitter.
+Orton 生产四种测温锥。两种立在棚板上，显示器物受到了多少热；两种供窑炉看管器使用。
 
-Table: Orton's four kinds of cone
-Label: Kinds of cone
+Table: Orton 的四种测温锥
+Label: 测温锥的种类
 
-| Kind            | Used for                  | How it stands                                                                               |
-| --------------- | ------------------------- | ------------------------------------------------------------------------------------------- |
-| Self-supporting | Witness cone on the shelf | A built-in base sets the height, 1¾ in (44 mm), and the 8° lean; no holder needed           |
-| Large           | Witness cone on the shelf | Set in a plaque or a pat of clay with exactly 2 in (51 mm) showing, leaning 8° from upright |
-| Small (junior)  | Kiln sitter               | Lies across the sitter's supports; 15/16 in (24 mm) showing if stood on a shelf             |
-| Bar             | Kiln sitter               | The same powder as small cones, in an even bar shape                                        |
+| 种类     | 用途           | 如何放置                                                          |
+| -------- | -------------- | ----------------------------------------------------------------- |
+| 带底座的 | 棚板上的证据锥 | 高度 1¾ 英寸（44 mm）和 8° 的倾斜由内置底座决定；不需要支架       |
+| 大号     | 棚板上的证据锥 | 插在锥座或一团黏土中，露出恰好 2 英寸（51 mm），从竖直方向倾斜 8° |
+| 小号     | 窑炉看管器     | 横放在看管器的锥托上；如果立在棚板上，露出 15/16 英寸（24 mm）    |
+| 测温棒   | 窑炉看管器     | 粉料与小号测温锥相同，做成粗细均匀的棒形                          |
 
-Height matters: a ¼ in (6 mm) difference in the height of a large cone "can cause more than a half cone difference in bending". Cones do not go bad or age, and damp storage does not affect them.
+高度很重要：大号测温锥的高度差 ¼ 英寸（6 mm），“可使弯曲程度相差超过半个锥号”。测温锥不会变质或老化，潮湿存放也不影响它们。
 
-### What "cone 6" means in practice
+### “6 号锥”在实际中的含义
 
-The chart gives a self-supporting cone 6 as {{2232 °F; 1222 °C}}, but only when the last {{180 °F; 100 °C}} climbs at {{108 °F/h; 60 °C/h}}. Climbing at {{270 °F/h; 150 °C/h}}, the same cone bends at {{2269 °F; 1243 °C}}. Real kilns differ again: Digitalfire reports that "Most kilns reach cone 6 at 2200°F, not 2232°F". So "cone 6" means the ware received the heatwork that bends a cone 6, whatever a thermometer read at the time.
+对照表给出带底座的 Orton 测温锥 6 号为 {{2232 °F; 1222 °C}}，但前提是最后 {{180 °F; 100 °C}} 以 {{108 °F/h; 60 °C/h}} 升温。若以 {{270 °F/h; 150 °C/h}} 升温，同一支锥在 {{2269 °F; 1243 °C}} 弯倒。实际的窑还会不同：Digitalfire 报告说，“大多数窑在 2200°F 达到 6 号锥，而不是 2232°F”。所以“6 号锥”的意思是，器物受到了能使 6 号锥弯倒的热功，不论当时温度计读数是多少。
 
 :::orton
 
 > [!NOTE]
-> Fire by the cone, not the clock or the dial. Set a controller by cone number, and let a witness cone on the shelf confirm every firing.
+> 以测温锥为准来烧，不以时钟或刻度盘为准。按锥号设置温控仪，并让棚板上的证据锥确认每一次烧成。
 
 :::
 
 :::temperature
 
 > [!NOTE]
-> Firing by temperature, keep the end of every firing the same: the same last rate of climb, the same peak and the same hold. Then a glaze that worked once works again.
+> 按温度烧成时，每次烧成的结尾保持相同：相同的最后升温速率、相同的最高温度和相同的保温。这样，成功过一次的釉就能再次成功。
 
 :::
 
@@ -596,22 +596,22 @@ Label: 手动控制的窑的起点
 
 **测温仪**是一种温度表，读数来自**热电偶**，即穿过窑壁的一根测热探头。它显示窑升温有多快，据此可以选对测温锥对照表的列。但它读取的是靠近窑壁的温度，而不是器物处的温度，而且会漂移。L&L 指出，K 型热电偶在多次 6 号锥烧成之后，可能偏差超过 {{25 °F; 14 °C}}，“这个差别大于整整一个锥号”，而带底座的测温锥的差异不超过 {{4 °F; 2 °C}}。Orton 说，测温仪需要不时重新校准，而测温锥就是检验它们的办法。
 
-## Venting, peeking and safety {#venting lang=en}
+## 排风、观火与安全 {#venting}
 
-### Venting
+### 排风
 
-Early in a firing, clay and glaze give off water vapor and fumes, including carbon monoxide, and glazes can give off toxic fumes later in the firing too. L&L calls venting them "essential". With no vent system, that means the lid propped and the peepholes open in the early stages, as in the procedures above; slowing the heating during this time also helps the carbon burn out. In a kiln without a vent, Dawson, who made the sitter, also says to leave the top peephole open for the whole firing: the venting "will reduce deterioration of the kiln's metal parts and increase the life of the tube assembly". A **downdraft vent** (a powered vent fitted to the kiln) changes this. It does the venting, so Orton says the lid and peepholes stay closed for the whole firing except to check the cones, and L&L says to leave the vent on and plug the peepholes.
+烧窑初期，黏土和釉会放出水蒸气和废气，包括一氧化碳，釉在烧成后期也可能放出有毒废气。L&L 称对它们排风“必不可少”。没有排风系统时，意思是在早期阶段撑开盖子、打开观火孔，如上面的步骤所示；这段时间放慢升温也有助于碳烧尽。在没有排风装置的窑中，制造窑炉看管器的 Dawson 还说，整个烧成期间都要让最上面的观火孔保持打开：这样排风“会减少窑的金属部件的劣化，并延长套管组件的寿命”。**下抽式排风装置**（装在窑上的动力排风装置）会改变这一点。它来完成排风，所以 Orton 说盖子和观火孔在整个烧成期间保持关闭，只在查看测温锥时才打开，而 L&L 说要让排风装置一直开着，并堵住观火孔。
 
-For venting the room, and for carbon monoxide alarms, see [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety).
+关于房间的通风和一氧化碳报警器，见[安全配料与通风](/guides/safe-mixing)和[别让家人中毒](/guides/home-safety)。
 
-### While the kiln is firing
+### 烧窑期间
 
-- Look through a peephole only with IR-rated shade 3 welding glasses; sunglasses are not enough. Skutt advises twisting the plugs into place so they do not fall out.
-- Do not leave the kiln unattended beyond its expected firing time; a sitter is not a fail-safe.
-- Never fire on or near anything that burns, such as a wood floor or carpet.
-- Keep the clearances in your manual. Published figures range from 12 in (30 cm) to 3 ft (91 cm); where the manual is silent, 18 in (46 cm) from walls and 3 ft (91 cm) from anything that burns is the safest choice.
-- Keep the space around the sitter's weight clear so it can drop.
-- When the firing ends, turn the switches off and turn off the breaker as well.
+- 只有戴防红外的遮光号 3 焊接护目镜，才能从观火孔往里看；太阳镜不够。Skutt 建议把塞子拧着塞好，以免掉出来。
+- 不要让窑在超出预计烧成时间后无人看管；看管器不是故障安全装置。
+- 切勿在可燃物上或可燃物附近烧窑，例如木地板或地毯。
+- 保持使用说明书中规定的安全距离。已发布的数据从 12 英寸（30 cm）到 3 英尺（91 cm）不等；说明书没有规定时，离墙 18 英寸（46 cm）、离可燃物 3 英尺（91 cm）是最安全的选择。
+- 保持看管器配重周围的空间畅通，使它能落下。
+- 烧成结束时，把开关关掉，并同时关闭断路器。
 
 ## 冷却与出窑 {#cooling}
 
