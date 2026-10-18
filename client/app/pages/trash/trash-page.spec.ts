@@ -57,6 +57,14 @@ describe('TrashPage', () => {
     expect(text(fixture, '.trash-list > li:last-child')).not.toContain('connected app');
   });
 
+  it('names in its lead every kind of record that can be removed to it', async () => {
+    const { fixture } = await create([]);
+    const lead = text(fixture, 'gc-page-header');
+    for (const kind of ['recipes', 'materials', 'additives', 'notes', 'firing logs', 'advice']) {
+      expect(lead).toContain(kind);
+    }
+  });
+
   it('says when the Trash is empty, and when it could not be loaded', async () => {
     const { fixture } = await create([]);
     expect(text(fixture, '.trash-none')).toBe('The Trash is empty.');

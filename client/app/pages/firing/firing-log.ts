@@ -6,7 +6,9 @@ export class FiringLog {
   fields: string[] = [];
   rows: string[][] = [];
 
+  /** Adds a column, once: a field already in the log is not added again. */
   addField(field: string): void {
+    if (this.fields.includes(field)) return;
     this.fields = [...this.fields, field];
     this.rows = this.rows.map((row) => [...row, '']);
   }

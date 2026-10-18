@@ -98,7 +98,9 @@ test('Undo puts a removed record back, and the Trash puts back or deletes for go
     await page.getByRole('button', { name: 'Yes, remove' }).click();
     await expect(page.locator('.server-msg')).toContainText(`Moved "${name}" to the Trash.`);
   }
-  await page.goto('/trash');
+  // The way in: the menu's Trash link, beside the account.
+  await page.getByRole('navigation', { name: 'Main' }).getByRole('link', { name: 'Trash', exact: true }).click();
+  await expect(page).toHaveURL(/\/trash$/);
   const items = page.locator('.trash-list > li');
   await expect(items).toHaveCount(2);
   await expect(items.first()).toContainText('Whiting, bag 2');

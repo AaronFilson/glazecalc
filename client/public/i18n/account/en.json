@@ -207,6 +207,11 @@
     "recipes": "Recipes (CSV)",
     "materials": "Materials (CSV)"
   },
+  "trash": {
+    "heading": "Trash",
+    "text": "What you remove from your notebook waits in the Trash for 30 days. Put it back from there, or delete it for good.",
+    "open": "Open the Trash"
+  },
   "shared": {
     "heading": "Shared recipes",
     "text": "The recipes you share by link, which anyone holding the link can read without an account. A link is shown only once, when it is made, so it cannot be shown here. To share a recipe again, make a new link under the recipe's More.",
@@ -301,7 +306,7 @@
         "saved": "Saved: firing to Orton cones."
       },
       "sk": {
-        "label": "To SK cones (JIS R 8101)",
+        "label": "To SK cones, JIS R 8101",
         "example": "SK 4a, SK 8",
         "saved": "Saved: firing to SK cones."
       },

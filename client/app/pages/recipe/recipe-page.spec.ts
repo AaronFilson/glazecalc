@@ -157,8 +157,10 @@ describe('RecipePage', () => {
     await fixture.whenStable();
     answer('/prices', { prices: [] });
     await settle(fixture);
-    // Iron oxide has no amount yet, so needs no price.
-    expect(text(fixture, '.recipe-cost-summary')).toContain('Give a price for Whiting and Silica for the whole cost.');
+    // Nothing has a price yet: what to do, not a total of nothing.
+    expect(text(fixture, '.recipe-cost-summary')).toBe(
+      "Give each material's price per kilogram to see what a batch costs."
+    );
   });
 
   it('shows the unity formula as amounts are typed, with each share and the total', async () => {
@@ -1193,6 +1195,35 @@ describe('RecipePage', () => {
     const errors = (fixture.componentInstance as unknown as Page)['notices'].errors();
     expect(errors).toContain('There was an error in getting your recipes.');
     expect(errors).toHaveLength(5);
+  });
+
+  it('after its own recipes fail to load, opens no first-run help, and fetches them again on Try again', async () => {
+    const fixture = TestBed.createComponent(RecipePage);
+    await fixture.whenStable();
+    answer('/materials/getStandard', [WHITING]);
+    answer('/materials/getAll', []);
+    answer('/additives/getAll', []);
+    answer('/additives/getStandard', [IRON]);
+    httpMock()
+      .expectOne(API + '/recipe/getAll')
+      .flush({}, { status: 500, statusText: 'Server Error' });
+    await settle(fixture);
+    const page = fixture.componentInstance as unknown as Page;
+    // Not known to be empty: the help is not opened for a first visit.
+    expect(page['recipesLoaded']()).toBe(false);
+    expect(text(fixture, '.recipe-retry')).toBe(
+      'Your own records were not all loaded. Check your connection, then try again.'
+    );
+    const retry = [
+      ...fixture.nativeElement.querySelectorAll('.recipe-retry a, .recipe-retry button')
+    ][0] as HTMLElement;
+    retry.click();
+    answer('/recipe/getAll', [{ _id: 'r1', title: 'Celadon', materials: [] }]);
+    await settle(fixture);
+    expect(page['recipesLoaded']()).toBe(true);
+    expect(page['myRecipes']().map((r: Recipe) => r.title)).toEqual(['Celadon']);
+    expect(fixture.nativeElement.querySelector('.recipe-retry')).toBeNull();
+    expect(page['notices'].errors()).not.toContain('There was an error in getting your recipes.');
   });
 
   describe('leaving the page', () => {

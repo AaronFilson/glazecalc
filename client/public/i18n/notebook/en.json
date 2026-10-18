@@ -49,6 +49,10 @@
         "title": "Guides",
         "text": "From what a glaze is to firing it, and keeping everyone safe on the way."
       },
+      "trash": {
+        "title": "Trash",
+        "text": "Put back what you removed in the last 30 days."
+      },
       "account": {
         "title": "Account and settings",
         "text": "Settings, your password, two-step sign-in, and a download of everything you keep here."
@@ -116,7 +120,7 @@
   },
   "trash": {
     "title": "Trash",
-    "lead": "What you remove from your recipes, materials, notes and logs waits here for 30 days. Put it back, or delete it for good.",
+    "lead": "What you remove (recipes, materials, additives, notes, firing logs and advice) waits here for 30 days. Put it back, or delete it for good.",
     "listHeading": "In the Trash",
     "none": "The Trash is empty.",
     "untitled": "Untitled",

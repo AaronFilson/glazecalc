@@ -101,6 +101,28 @@ describe('BlendsPage', () => {
     expect((root.querySelector('#blend-name') as HTMLInputElement | null)?.value).toBeUndefined();
   });
 
+  it('asks for nothing in red before a letter has a recipe', async () => {
+    const { fixture, root, pick } = await create();
+    expect(root.querySelector('.blend-problem')).toBeNull();
+    await pick('blend-corner-0', 'Celadon');
+    expect(text(fixture, '.blend-problem')).toBe('Choose a recipe for each letter.');
+  });
+
+  it('with fewer than two recipes, offers ways to make them in place of the form', async () => {
+    const { fixture, root } = await create([CELADON]);
+    expect(text(fixture, '.blend-need-two')).toContain('save at least two first');
+    const links = [...root.querySelectorAll('.blend-need-two a')].map((a) => [
+      a.textContent?.trim(),
+      a.getAttribute('href')
+    ]);
+    expect(links).toEqual([
+      ['Start a recipe', '/recipe'],
+      ['Paste in recipes', '/import']
+    ]);
+    expect(root.querySelector('#blend-setup-heading')).toBeNull();
+    expect(root.querySelector('.blend-problem')).toBeNull();
+  });
+
   it('draws a line blend’s tiles, numbered, with each tile’s mix, and lists what to weigh', async () => {
     const { fixture, root, pick, tiles } = await create(undefined, { recipe: 'cel' });
     await pick('blend-corner-1', 'Matte');

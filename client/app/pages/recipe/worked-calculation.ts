@@ -270,7 +270,7 @@ export function workedResult(
       overflow-x: auto;
     }
     .worked-scroll:focus-visible {
-      outline: 3px solid rgba(var(--gc-primary-rgb), 0.5);
+      outline: 3px solid var(--gc-primary);
       outline-offset: 2px;
     }
     .worked-material {

@@ -54,6 +54,9 @@ test.describe('home and navigation', () => {
     await page.goto('/home');
     await page.locator('.home-card', { hasText: 'Blends for test tiles' }).click();
     await expect(page).toHaveURL(/\/blends$/);
+    await page.goto('/home');
+    await page.locator('.home-card', { hasText: 'Trash' }).click();
+    await expect(page).toHaveURL(/\/trash$/);
     // Signed in, the site's root address goes home.
     await page.goto('/');
     await expect(page).toHaveURL(/\/home$/);
@@ -136,6 +139,13 @@ test.describe('home and navigation', () => {
     await page.locator('.nav-links').getByRole('link', { name: 'Notes' }).click();
     await expect(page).toHaveURL(/\/notes$/);
     await expect(page.locator('.nav-links')).toBeHidden();
+    // Escape closes it too, and the focus goes back to the Menu button.
+    await toggle.click();
+    await page.locator('.nav-links').getByRole('link', { name: 'Recipes' }).focus();
+    await page.keyboard.press('Escape');
+    await expect(toggle).toHaveAttribute('aria-expanded', 'false');
+    await expect(page.locator('.nav-links')).toBeHidden();
+    await expect(toggle).toBeFocused();
   });
 
   test('on a phone, nothing is wider than the screen, even the menu with a long email', async ({ page }) => {
@@ -288,6 +298,9 @@ test.describe('firing log', () => {
       await page.locator('#fieldselect').selectOption(field);
       await page.getByRole('button', { name: 'Add the field' }).click();
     }
+    // A field added is not offered again.
+    await expect(page.locator('#fieldselect option[value="Time"]')).toHaveCount(0);
+    await expect(page.locator('#fieldselect')).toHaveValue('Gas');
     await page.getByRole('button', { name: 'Add a row to the firing table' }).click();
     await page.getByRole('button', { name: 'Add a row to the firing table' }).click();
     await page.getByLabel('Time row 1').fill('8:00');

@@ -40,6 +40,8 @@ export interface PasteOptions {
   locale?: string;
   /** Whether text is a material's whole name ("Frit 3134"), so it is not read as "Frit" at 3134. */
   isName?: (text: string) => boolean;
+  /** Whether a name is like any material, even only closely: such a line is never read as a title ("Leach 4321"). */
+  known?: (text: string) => boolean;
   /** How to read a number that could be a decimal or digit groups ("1,500" as 1.5 or 1500), when the paste does not decide it; the locale reads it by default. */
   reading?: 'decimal' | 'group';
 }

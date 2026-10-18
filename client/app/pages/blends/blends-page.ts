@@ -83,64 +83,71 @@ interface TileRecipe {
     <gc-notices [notices]="notices" />
 
     @if (loaded() && myRecipes().length < 2) {
-      <p class="panel no-print">{{ t('recipe.blends.needTwo') }}</p>
-    }
+      <!-- Nothing to blend yet: the ways to make recipes, in place of a form that cannot be used. -->
+      <section class="panel no-print blend-need-two">
+        <p>{{ t('recipe.blends.needTwo') }}</p>
+        <p class="blend-need-two-links">
+          <a routerLink="/recipe" class="btn btn-primary">{{ t('recipe.blends.startRecipe') }}</a>
+          <a routerLink="/import" class="btn btn-light border">{{ t('recipe.blends.pasteIn') }}</a>
+        </p>
+      </section>
+    } @else {
+      <section class="panel no-print" aria-labelledby="blend-setup-heading">
+        <h2 class="h4" id="blend-setup-heading">{{ t('recipe.blends.setupHeading') }}</h2>
+        <fieldset class="blend-kinds">
+          <legend class="form-label">{{ t('recipe.blends.kindLegend') }}</legend>
+          @for (option of kinds; track option.kind) {
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="blend-kind"
+                [id]="'blend-kind-' + option.kind"
+                [value]="option.kind"
+                [checked]="kind() === option.kind"
+                (change)="setKind(option.kind)"
+              />
+              <label class="form-check-label" [for]="'blend-kind-' + option.kind">{{ t(option.label) }}</label>
+            </div>
+          }
+        </fieldset>
 
-    <section class="panel no-print" aria-labelledby="blend-setup-heading">
-      <h2 class="h4" id="blend-setup-heading">{{ t('recipe.blends.setupHeading') }}</h2>
-      <fieldset class="blend-kinds">
-        <legend class="form-label">{{ t('recipe.blends.kindLegend') }}</legend>
-        @for (option of kinds; track option.kind) {
-          <div class="form-check form-check-inline">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="blend-kind"
-              [id]="'blend-kind-' + option.kind"
-              [value]="option.kind"
-              [checked]="kind() === option.kind"
-              (change)="setKind(option.kind)"
-            />
-            <label class="form-check-label" [for]="'blend-kind-' + option.kind">{{ t(option.label) }}</label>
-          </div>
-        }
-      </fieldset>
-
-      <div class="blend-fields">
-        <div class="blend-steps">
-          <label class="form-label" for="blend-steps">{{ t(kindInfo().steps) }}</label>
-          <select id="blend-steps" class="form-select" [ngModel]="steps()" (ngModelChange)="setSteps(+$event)">
-            @for (n of stepChoices(); track n) {
-              <option [ngValue]="n">{{ n }}</option>
-            }
-          </select>
-          <p class="small muted blend-count">
-            {{ t('recipe.blends.tileCount', { count: blend()?.tiles?.length ?? 0 }) }}
-          </p>
-        </div>
-        @for (place of kindInfo().corners; track place; let c = $index) {
-          <div class="blend-corner">
-            <label class="form-label" [for]="'blend-corner-' + c">{{
-              t('recipe.blends.cornerLabel', { letter: letters[c], place: t(place) })
-            }}</label>
-            <select
-              class="form-select"
-              [id]="'blend-corner-' + c"
-              [ngModel]="cornerIds()[c] ?? ''"
-              (ngModelChange)="setCorner(c, $event)"
-            >
-              <option value="">{{ t('recipe.blends.chooseRecipe') }}</option>
-              @for (rec of myRecipes(); track rec._id) {
-                <option [value]="rec._id">{{ rec.title }}</option>
+        <div class="blend-fields">
+          <div class="blend-steps">
+            <label class="form-label" for="blend-steps">{{ t(kindInfo().steps) }}</label>
+            <select id="blend-steps" class="form-select" [ngModel]="steps()" (ngModelChange)="setSteps(+$event)">
+              @for (n of stepChoices(); track n) {
+                <option [ngValue]="n">{{ n }}</option>
               }
             </select>
+            <p class="small muted blend-count">
+              {{ t('recipe.blends.tileCount', { count: blend()?.tiles?.length ?? 0 }) }}
+            </p>
           </div>
+          @for (place of kindInfo().corners; track place; let c = $index) {
+            <div class="blend-corner">
+              <label class="form-label" [for]="'blend-corner-' + c">{{
+                t('recipe.blends.cornerLabel', { letter: letters[c], place: t(place) })
+              }}</label>
+              <select
+                class="form-select"
+                [id]="'blend-corner-' + c"
+                [ngModel]="cornerIds()[c] ?? ''"
+                (ngModelChange)="setCorner(c, $event)"
+              >
+                <option value="">{{ t('recipe.blends.chooseRecipe') }}</option>
+                @for (rec of myRecipes(); track rec._id) {
+                  <option [value]="rec._id">{{ rec.title }}</option>
+                }
+              </select>
+            </div>
+          }
+        </div>
+        @if (shownProblem()) {
+          <p class="blend-problem" role="status">{{ shownProblem() }}</p>
         }
-      </div>
-      @if (problem()) {
-        <p class="blend-problem" role="status">{{ problem() }}</p>
-      }
-    </section>
+      </section>
+    }
 
     @if (blend(); as b) {
       @if (tileRecipes()) {
@@ -292,6 +299,12 @@ interface TileRecipe {
     }
   </ng-container>`,
   styles: `
+    .blend-need-two-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin: 0;
+    }
     .blend-kinds {
       margin-bottom: 1rem;
     }
@@ -493,6 +506,18 @@ export class BlendsPage implements OnInit {
     return empty ? translate('recipe.blends.noAmounts', { title: empty.title }) : '';
   });
 
+  /** Whether a recipe has been chosen for a letter on the page, so asking for the rest is not an error before then. */
+  private readonly choseCorner = signal(false);
+  /**
+   * The problem as shown: "Choose a recipe for each letter" waits until a letter has a recipe
+   * (chosen here, or the recipe the page was opened from), rather than greeting the page in red.
+   */
+  protected readonly shownProblem = computed(() => {
+    const problem = this.problem();
+    if (problem && !this.choseCorner() && this.corners().every((corner) => !corner)) return '';
+    return problem;
+  });
+
   /** Each tile's recipe, as a percent of its base; null until every corner has a recipe with amounts. */
   protected readonly tileRecipes = computed<TileRecipe[] | null>(() => {
     const blend = this.blend();
@@ -545,6 +570,7 @@ export class BlendsPage implements OnInit {
   }
 
   protected setCorner(index: number, id: string): void {
+    this.choseCorner.set(true);
     this.savedTiles.set(new Set());
     this.cornerIds.update((ids) => {
       const next = [...ids];

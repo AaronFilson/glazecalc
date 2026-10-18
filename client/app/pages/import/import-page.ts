@@ -239,7 +239,7 @@ const HOW_NOTES: Partial<Record<MatchHow, string>> = {
                         @if (howNote(line); as note) {
                           <p
                             class="small import-how"
-                            [class.is-question]="line.how !== 'alias'"
+                            [class.is-question]="line.how === 'none' || line.how === 'choose'"
                             [id]="'import-how-' + r + '-' + i"
                           >
                             {{ t(note, { name: nameOf(line.choice) }) }}
@@ -425,6 +425,7 @@ const HOW_NOTES: Partial<Record<MatchHow, string>> = {
       margin: 0.2rem 0 0;
       color: var(--gc-muted);
     }
+    /* Red only where there is something to settle: not found, or several close. A best guess stays muted. */
     .import-how.is-question {
       color: var(--gc-danger-text);
     }
@@ -556,12 +557,15 @@ export class ImportPage implements OnInit {
       return;
     }
     const choices = this.choices();
+    const records = choices.map((c) => c.record);
     const names = new Set(choices.flatMap((c) => [c.record.name, ...(c.record.aliases ?? [])]).map(foldedName));
     const read = parsePaste(this.text(), {
       mark: typedDecimalMark(),
       locale: formatLocale(),
       reading: this.reading() ?? undefined,
-      isName: (text) => names.has(foldedName(text))
+      isName: (text) => names.has(foldedName(text)),
+      // A line that is like any material, even only closely, is never taken for a title ("Leach 4321").
+      known: (text) => matchName(text, records).how !== 'none'
     }).filter((recipe) => recipe.lines.length);
     const unsure = ambiguousNumbers(this.text(), typedDecimalMark());
     this.ambiguous.set(unsure);

@@ -220,7 +220,7 @@ const COUNTING: ReadonlyArray<{ value: Counting; label: string }> = [
       overflow-x: auto;
     }
     .compare-table-scroll:focus-visible {
-      outline: 3px solid rgba(var(--gc-primary-rgb), 0.5);
+      outline: 3px solid var(--gc-primary);
       outline-offset: 2px;
     }
     .compare-table,

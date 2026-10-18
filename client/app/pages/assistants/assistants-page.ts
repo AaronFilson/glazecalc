@@ -1,6 +1,6 @@
-import { DOCUMENT } from '@angular/common';
-import { Component, inject } from '@angular/core';
-import { TranslocoDirective } from '@jsverse/transloco';
+import { DOCUMENT, NgTemplateOutlet } from '@angular/common';
+import { Component, inject, signal } from '@angular/core';
+import { TranslocoDirective, translate } from '@jsverse/transloco';
 import { RichText } from '../../i18n/rich-text';
 import { PageHeader } from '../../shared/page-header';
 
@@ -17,7 +17,7 @@ const TOKEN = 'YOUR_TOKEN';
  */
 @Component({
   selector: 'gc-assistants-page',
-  imports: [PageHeader, RichText, TranslocoDirective],
+  imports: [NgTemplateOutlet, PageHeader, RichText, TranslocoDirective],
   template: `<ng-container *transloco="let t">
     <gc-page-header [title]="t('site.assistants.title')" [lead]="t('site.assistants.lead')" />
 
@@ -31,7 +31,10 @@ const TOKEN = 'YOUR_TOKEN';
     <section class="panel">
       <h2>{{ t('site.assistants.addressHeading') }}</h2>
       <p>{{ t('site.assistants.address') }}</p>
-      <pre class="setup"><code>{{ url }}</code></pre>
+      <ng-container
+        [ngTemplateOutlet]="setup"
+        [ngTemplateOutletContext]="{ id: 'address', code: url, name: t('site.assistants.copyAddress') }"
+      />
       <p><gc-rich [text]="t('site.assistants.token')" [links]="{ account: '/account' }" /></p>
     </section>
 
@@ -40,21 +43,56 @@ const TOKEN = 'YOUR_TOKEN';
 
       <h3 class="h5">Claude Code</h3>
       <p>{{ t('site.assistants.claudeCode') }}</p>
-      <pre class="setup"><code>{{ claudeCode }}</code></pre>
+      <ng-container
+        [ngTemplateOutlet]="setup"
+        [ngTemplateOutletContext]="{
+          id: 'claude-code',
+          code: claudeCode,
+          name: t('site.assistants.copyFor', { client: 'Claude Code' })
+        }"
+      />
       <p>{{ t('site.assistants.claudeCodeToken') }}</p>
-      <pre class="setup"><code>{{ claudeCodeToken }}</code></pre>
+      <ng-container
+        [ngTemplateOutlet]="setup"
+        [ngTemplateOutletContext]="{
+          id: 'claude-code-token',
+          code: claudeCodeToken,
+          name: t('site.assistants.copyForToken', { client: 'Claude Code' })
+        }"
+      />
 
       <h3 class="h5">VS Code</h3>
       <p>{{ t('site.assistants.vscode') }}</p>
-      <pre class="setup"><code>{{ vscode }}</code></pre>
+      <ng-container
+        [ngTemplateOutlet]="setup"
+        [ngTemplateOutletContext]="{
+          id: 'vscode',
+          code: vscode,
+          name: t('site.assistants.copyFor', { client: 'VS Code' })
+        }"
+      />
 
       <h3 class="h5">Cursor</h3>
       <p>{{ t('site.assistants.cursor') }}</p>
-      <pre class="setup"><code>{{ cursor }}</code></pre>
+      <ng-container
+        [ngTemplateOutlet]="setup"
+        [ngTemplateOutletContext]="{
+          id: 'cursor',
+          code: cursor,
+          name: t('site.assistants.copyFor', { client: 'Cursor' })
+        }"
+      />
 
       <h3 class="h5">Gemini CLI</h3>
       <p>{{ t('site.assistants.gemini') }}</p>
-      <pre class="setup"><code>{{ gemini }}</code></pre>
+      <ng-container
+        [ngTemplateOutlet]="setup"
+        [ngTemplateOutletContext]="{
+          id: 'gemini',
+          code: gemini,
+          name: t('site.assistants.copyFor', { client: 'Gemini CLI' })
+        }"
+      />
 
       <h3 class="h5">{{ t('site.assistants.appsHeading') }}</h3>
       <p>{{ t('site.assistants.apps') }}</p>
@@ -65,6 +103,20 @@ const TOKEN = 'YOUR_TOKEN';
       <p><gc-rich [text]="t('site.assistants.stop')" [links]="{ account: '/account' }" /></p>
       <p>{{ t('site.assistants.limits') }}</p>
     </section>
+
+    <!-- A setup to copy: on one line each, as written, scrolling sideways in its box rather than
+         breaking inside a string, with a Copy button that copies it exactly. -->
+    <ng-template #setup let-id="id" let-code="code" let-name="name">
+      <div class="setup-block">
+        <pre class="setup" tabindex="0" [id]="'setup-' + id"><code>{{ code }}</code></pre>
+        <div class="setup-copy">
+          <button type="button" class="btn btn-light border btn-sm" [attr.aria-label]="name" (click)="copy(id, code)">
+            {{ t('site.assistants.copy') }}
+          </button>
+          <span class="small" role="status">{{ said()?.id === id ? said()?.text : '' }}</span>
+        </div>
+      </div>
+    </ng-template>
   </ng-container>`,
   styles: `
     .setup {
@@ -72,14 +124,41 @@ const TOKEN = 'YOUR_TOKEN';
       border: 1px solid var(--bs-border-color);
       border-radius: 0.375rem;
       padding: 0.75rem 1rem;
-      white-space: pre-wrap;
-      overflow-wrap: anywhere;
+      margin-bottom: 0.4rem;
+      white-space: pre;
+      overflow-x: auto;
+    }
+    .setup-block {
+      margin-bottom: 1rem;
+    }
+    .setup-copy {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.25rem 0.75rem;
     }
   `
 })
 export class AssistantsPage {
+  /** What the last Copy did, beside its button. */
+  protected readonly said = signal<{ id: string; text: string } | null>(null);
+
+  protected async copy(id: string, code: string): Promise<void> {
+    try {
+      await navigator.clipboard.writeText(code);
+      this.said.set({ id, text: translate('site.assistants.copied') });
+    } catch {
+      // No clipboard (an older browser, or not allowed): the text is selected, to copy by hand.
+      const box = this.document.getElementById('setup-' + id);
+      const selection = box ? this.document.getSelection() : null;
+      if (box && selection) selection.selectAllChildren(box);
+      this.said.set({ id, text: translate('site.assistants.copyByHand') });
+    }
+  }
+
   /** The endpoint on this site, as the person's assistant reaches it. */
-  protected readonly url = (inject(DOCUMENT).location?.origin ?? 'https://glazecalcapp.com') + '/mcp';
+  private readonly document = inject(DOCUMENT);
+  protected readonly url = (this.document.location?.origin ?? 'https://glazecalcapp.com') + '/mcp';
   protected readonly claudeCode = `claude mcp add --transport http glazecalc ${this.url}`;
   protected readonly claudeCodeToken = `claude mcp add --transport http glazecalc ${this.url} \\\n  --header "Authorization: Bearer ${TOKEN}"`;
   protected readonly vscode = JSON.stringify(

@@ -68,6 +68,7 @@ type Confirming = 'password' | 'email' | 'delete';
       </section>
       <gc-settings />
       <gc-export />
+      <ng-container [ngTemplateOutlet]="trash" />
     } @else {
       <gc-page-header
         [title]="t('account.account.title')"
@@ -95,6 +96,7 @@ type Confirming = 'password' | 'email' | 'delete';
       }
       <gc-settings />
       <gc-export />
+      <ng-container [ngTemplateOutlet]="trash" />
       <gc-shared-recipes />
 
       <section class="auth-text">
@@ -308,6 +310,17 @@ type Confirming = 'password' | 'email' | 'delete';
         </div>
       }
     </ng-template>
+
+    <!-- What was removed waits in the Trash for 30 days: the way there. -->
+    <ng-template #trash>
+      <section class="auth-text" aria-labelledby="trash-heading">
+        <h2 id="trash-heading" tabindex="-1">{{ t('account.trash.heading') }}</h2>
+        <p>{{ t('account.trash.text') }}</p>
+        <p>
+          <a routerLink="/trash" class="btn btn-light border">{{ t('account.trash.open') }}</a>
+        </p>
+      </section>
+    </ng-template>
   </ng-container>`,
   styles: `
     .account-form {
@@ -342,6 +355,7 @@ export class AccountPage {
   protected readonly contents = computed(() => [
     { id: 'settings-heading', label: marker('account.settings.heading') },
     { id: 'export-heading', label: marker('account.export.heading') },
+    { id: 'trash-heading', label: marker('account.trash.heading') },
     { id: 'shared-heading', label: marker('account.shared.heading') },
     { id: 'password-heading', label: marker('account.account.changeHeading') },
     { id: 'mfa-heading', label: marker('account.mfa.heading') },

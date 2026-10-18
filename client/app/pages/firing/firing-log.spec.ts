@@ -19,6 +19,13 @@ describe('FiringLog', () => {
     ]);
   });
 
+  it('adds a field only once', () => {
+    const log = logWith(['Time'], [['1:00']]);
+    log.addField('Time');
+    expect(log.fields).toEqual(['Time']);
+    expect(log.rows).toEqual([['1:00']]);
+  });
+
   it('removes a field together with its column of cells', () => {
     const log = logWith(['Time', 'Cone', 'Damper'], [['1:00', '6', 'open']]);
     log.removeField(1);

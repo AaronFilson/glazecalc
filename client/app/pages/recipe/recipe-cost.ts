@@ -251,6 +251,10 @@ export class RecipeCost {
         unit: this.unit()
       });
     }
+    // Nothing priced yet: a total of nothing would mean nothing, so say what to do.
+    if (!cost.lines.some((line) => line.perKg !== null && line.grams > 0)) {
+      return translate('recipe.cost.none', { unit: this.unit() });
+    }
     const names = this.rows()
       .filter((row) => cost.missing.includes(row.key))
       .map((row) => row.name);

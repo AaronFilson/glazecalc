@@ -1,5 +1,5 @@
 import { DatePipe } from '../../shared/format-pipes';
-import { Component, OnInit, inject, signal } from '@angular/core';
+import { Component, OnInit, computed, inject, linkedSignal, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
 import { TranslocoDirective, translate } from '@jsverse/transloco';
@@ -108,7 +108,6 @@ import { FiringLog } from './firing-log';
 export class FiringPage implements OnInit {
   private readonly firings = inject(ApiResourceFactory).for<Firing>('firing');
 
-  protected readonly fieldOptions = FIRING_FIELDS;
   /** A column as the reader reads it; the log keeps its English name. */
   protected readonly fieldLabel = firingFieldLabel;
   protected readonly firstOf = firstOf;
@@ -119,8 +118,15 @@ export class FiringPage implements OnInit {
   protected readonly kiln = signal('');
   protected readonly date = signal('');
   protected readonly notes = signal('');
-  protected readonly selectedField = signal(FIRING_FIELDS[0]);
   protected readonly log = signal(new FiringLog());
+  /** The fields not in the log yet: one already added is not offered again. */
+  protected readonly fieldOptions = computed(() => FIRING_FIELDS.filter((field) => !this.log().fields.includes(field)));
+  /** The field chosen to add: kept while it is still offered, else the first that is. */
+  protected readonly selectedField = linkedSignal<string[], string>({
+    source: this.fieldOptions,
+    computation: (options, previous) =>
+      previous && options.includes(previous.value) ? previous.value : (options[0] ?? '')
+  });
   protected readonly checks = new FieldChecks(
     () => ({
       title: required(this.title, translate('notebook.firing.titleMissing')),

@@ -138,21 +138,33 @@ let charts = 0;
   styles: `
     .stull {
       margin: 0;
+      container-type: inline-size;
     }
+    /* The text is in the drawing's units, so it shrinks with it: on a phone, where the chart is
+       about 300px wide (a little under its 320 units), it is drawn larger so it reads at about 10px. */
     svg {
       display: block;
       width: 100%;
       max-width: 30rem;
       height: auto;
-      font-size: 9px;
+      font-size: 11px;
       color: var(--gc-text);
     }
     text {
       fill: currentColor;
     }
     .stull-name {
-      font-size: 8.5px;
+      font-size: 10.5px;
       fill: var(--gc-text);
+    }
+    /* Wider, the drawing is scaled up (to 1.5 times at 30rem), and the smaller sizes read at 12px and over. */
+    @container (min-width: 26rem) {
+      svg {
+        font-size: 9px;
+      }
+      .stull-name {
+        font-size: 8.5px;
+      }
     }
     .stull-region {
       fill: var(--gc-muted);
