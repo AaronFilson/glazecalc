@@ -436,9 +436,12 @@ describe('pages in each language', () => {
     const english = await site().get('/');
     expect(english.text).to.include('<html lang="en" dir="ltr">');
     const german = await site().get('/de/guides');
-    const { meta } = JSON.parse(fs.readFileSync(path.join(client, 'i18n', 'de.json'), 'utf8')) as {
-      meta: { guides: string; imageAlt: string };
-    };
+    type Meta = { meta: { guides?: string; imageAlt?: string } };
+    const messages = (code: string): Meta['meta'] =>
+      (JSON.parse(fs.readFileSync(path.join(client, 'i18n', code + '.json'), 'utf8')) as Meta).meta;
+    // A message changed in English and not yet translated again is missing
+    // from de.json (npm run i18n:sources), and the page shows the English.
+    const meta = { ...messages('en'), ...messages('de') };
     // The guides page's own description, not the site's.
     expect(german.text).to.include(`<meta property="og:description" content="${meta.guides}"`);
     expect(german.text).to.include(`<meta property="og:image:alt" content="${meta.imageAlt}"`);

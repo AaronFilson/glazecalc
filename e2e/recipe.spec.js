@@ -102,11 +102,16 @@ test("shows the recipe's hazards, and its cost from prices the account keeps", a
 
   await page.getByRole('button', { name: 'Cost of a batch' }).click();
   const cost = page.locator('.recipe-cost');
-  await expect(cost.locator('.recipe-cost-summary')).toContainText('Give a price for Silica and Whiting');
+  // With no price yet, it asks for them all; with some, it names the ones still missing.
+  await expect(cost.locator('.recipe-cost-summary')).toHaveText(
+    "Give each material's price per kilogram to see what a batch costs."
+  );
   // Prices are per kilogram here, in the account's currency (USD for a US browser with no region chosen).
   await page.getByRole('textbox', { name: 'Price of Silica per kilogram' }).fill('2');
   await page.getByRole('textbox', { name: 'Price of Silica per kilogram' }).blur();
-  await expect(cost.locator('.recipe-cost-summary')).toContainText('Give a price for Whiting');
+  await expect(cost.locator('.recipe-cost-summary')).toContainText(
+    'The materials with prices cost $1.20 in this batch. Give a price for Whiting for the whole cost.'
+  );
   await page.getByRole('textbox', { name: 'Price of Whiting per kilogram' }).fill('0.5');
   await page.getByRole('textbox', { name: 'Price of Whiting per kilogram' }).blur();
   // 1000 g of base: 600 g at 2 and 400 g at 0.5.

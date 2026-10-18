@@ -242,6 +242,10 @@ app.use(async (req, res, next) => {
   if ((req.method !== 'GET' && req.method !== 'HEAD') || looksLikeFile(req.path)) return next();
   const bare = withoutSlash(req.path);
   if (bare) return res.redirect(301, bare + queryOf(req));
+  // As the page's own <meta> (isAppOnlyPage); a copy not to be indexed has said
+  // more already. Before the page is read, so it is sent even where there is
+  // no client build to send (the 404 below).
+  if (isAppOnlyPage(req.path) && !res.get('X-Robots-Tag')) res.set('X-Robots-Tag', 'noindex');
   // A public page in a language offered is sent as it was rendered, if it was.
   const key = prerenderedKey(req.path);
   let html = key ? await readPrerendered(PRERENDERED, key) : undefined;
@@ -268,8 +272,6 @@ app.use(async (req, res, next) => {
     .set('Content-Security-Policy', contentSecurityPolicy(nonce))
     .set('Content-Language', code);
   if (isPrivatePage(req.path)) privateHeaders(res);
-  // As the page's own <meta> (isAppOnlyPage); a copy not to be indexed has said more already.
-  else if (isAppOnlyPage(req.path) && !res.get('X-Robots-Tag')) res.set('X-Robots-Tag', 'noindex');
   return res
     .status(isPage(req.path) ? 200 : 404)
     .type('html')

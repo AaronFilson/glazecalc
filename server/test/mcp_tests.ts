@@ -5,10 +5,11 @@ import chemistry from '../../lib/chemistry/index.js';
 import standardData from '../../data/index.js';
 import recipe from '../../lib/recipe/index.js';
 import { MOST_LINES, resetFits, FITS_PER_MINUTE, guarded, ToolProblem, UNEXPECTED } from '../mcp/common.ts';
+import { termsOf } from '../mcp/guides.ts';
 import { findMaterial } from '../mcp/library.ts';
 import { MOST_STREAMS_PER_ADDRESS, sdkSubscribers, streamsOpen } from '../mcp/index.ts';
 import { SERVER_INFO } from '../mcp/server.ts';
-import { readFileSync } from 'node:fs';
+import { readdirSync, readFileSync } from 'node:fs';
 import mongoose from 'mongoose';
 import * as site from '../lib/site.ts';
 import { hashToken } from '../lib/token_auth.ts';
@@ -20,6 +21,32 @@ import { api, base, expect, makeUser, sessionToken } from './support/app.ts';
 import { makeToken } from './support/tokens.ts';
 
 const PROTOCOL = '2025-06-18';
+
+const GUIDES = new URL('../../client/public/i18n/guides/', import.meta.url);
+const plain = (text: string): string => text.normalize('NFKD').replace(/\p{M}/gu, '').toLowerCase();
+/** A word in the English guides whose search term is in no guide in the language. */
+const onlyInEnglish = (language: string): string => {
+  const read = (file: string): string[] =>
+    readdirSync(GUIDES).flatMap((id) => {
+      try {
+        return [plain(readFileSync(new URL(`${id}/${file}`, GUIDES), 'utf8'))];
+      } catch {
+        return [];
+      }
+    });
+  const theirs = read(`${language}.md`).join(' ');
+  const words = new Set(
+    read('en.md')
+      .join(' ')
+      .match(/\b[a-z]{6,}\b/g)
+  );
+  const word = ['bucket', ...words].find(
+    (candidate) => words.has(candidate) && !theirs.includes(termsOf(candidate)[0]!)
+  );
+  if (!word) throw new Error(`Every word of the English guides is in the ${language} ones`);
+  return word;
+};
+
 const DAY = 24 * 60 * 60 * 1000;
 
 interface Answer {
@@ -452,7 +479,10 @@ describe('MCP: the guides, resources and prompts', () => {
     expect(german.results[0].url.startsWith(site.siteUrl() + '/de/guides/')).to.equal(true);
     expect(german.results[0].resource).to.match(/^glazecalc:\/\/guides\/de\//);
 
-    const fallback = await data('search_guides', { query: 'bucket', language: 'de' });
+    // A word of the English guides that the German ones do not have. Not a
+    // fixed word: a German guide shows a section in English until it is
+    // translated again (npm run i18n:sources), and the search finds it there.
+    const fallback = await data('search_guides', { query: onlyInEnglish('de'), language: 'de' });
     expect(fallback.language).to.equal('en');
     expect(fallback.note).to.include('English');
     expect(fallback.results[0].url).to.match(/\/de\/guides\//);
