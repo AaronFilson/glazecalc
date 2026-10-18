@@ -1,7 +1,8 @@
 // Glazecalc's look: a pottery palette (porcelain, iron, tenmoku rust, celadon)
 // in light and dark, on top of Bootstrap 5's compiled CSS (loaded first, see
 // angular.json). Text and button color pairs meet WCAG AA contrast.
-// No web fonts: system fonts are fast and send no data to a font host.
+// Lora and Noto Serif are served with the app (no font host), with size-matched
+// local fallbacks so text does not move when they arrive.
 //
 // Light or dark follows the device, unless Settings chooses one (data-theme on
 // <html>), and Settings can choose another palette for buttons, links and tabs
