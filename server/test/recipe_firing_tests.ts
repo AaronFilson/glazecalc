@@ -168,10 +168,42 @@ describe('recipe firing (lib/cones/firing.js)', () => {
       expect(firing.firingFromLines(['Lovely glossy surface'])).to.equal(null);
     });
 
-    it('keeps the firing lines of a paste as notes, not materials', () => {
-      const [recipe] = paste.parsePaste('Tenmoku\nCuster 50\nSilica 50\n06\nC/6\nox/red\n6½');
+    it('keeps the firing lines of a paste as notes, not materials; a number alone stays a total set aside', () => {
+      const [recipe] = paste.parsePaste('Tenmoku\nCuster 50\nSilica 50\n06\nC/6\nox/red\n6½ ox');
       expect(recipe!.lines.map((l) => l.name)).to.eql(['Custer', 'Silica']);
-      expect(recipe!.notes).to.include.members(['06', 'C/6', 'ox/red', '6½']);
+      expect(recipe!.notes).to.eql(['C/6', 'ox/red', '6½ ox']);
+      expect(recipe!.skipped.map((s) => [s.text, s.why])).to.eql([['06', 'total']]);
+    });
+
+    it('never lets a firing line split a recipe: it joins the firing of the recipe it is in', () => {
+      const recipes = paste.parsePaste('Whiting 20\nCone 6\nAdd:\nTin 2');
+      expect(recipes.length).to.equal(1);
+      expect(recipes[0]!.lines.map((l) => [l.name, l.addition])).to.eql([
+        ['Whiting', false],
+        ['Tin', true]
+      ]);
+      expect(recipes[0]!.notes).to.eql(['Cone 6']);
+      for (const line of ['C/6', '^6', 'Cone 10 reduction', 'oxidation']) {
+        const [one, ...more] = paste.parsePaste(`Shino\nCuster 50\n${line}\nSilica 50`);
+        expect([more.length, one!.notes, one!.lines.length]).to.eql([0, [line], 2]);
+      }
+      // A number alone between materials is what it was before: a total, set aside.
+      for (const line of ['06', '5.5']) {
+        const [one, ...more] = paste.parsePaste(`Shino\nCuster 50\n${line}\nSilica 50`);
+        expect([more.length, one!.skipped.map((s) => s.why), one!.lines.length]).to.eql([0, ['total'], 2]);
+      }
+      // A one-word name is still a recipe's title, not a firing.
+      const named = paste.parsePaste('Shino\nCuster 50\nSilica 50\nRed\nCuster 40\nRIO 5');
+      expect(named.map((r) => r.title)).to.eql(['Shino', 'Red']);
+    });
+
+    it('tells a clear firing line from a bare number or a weak word', () => {
+      for (const line of ['Cone 6', 'C/6', '^6', 'SK8', '1240°C', 'ox/red', '6 ox', 'wood fired']) {
+        expect(firing.isFiringLine(line), line).to.equal(true);
+      }
+      for (const line of ['06', '5.5', 'Red', 'Salt', 'Wood', 'Pit', 'Cone 6 floating blue']) {
+        expect(firing.isFiringLine(line), line).to.equal(false);
+      }
     });
   });
 });

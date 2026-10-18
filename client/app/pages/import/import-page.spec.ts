@@ -162,6 +162,31 @@ describe('ImportPage', () => {
     expect(sent.notes).toBe('cone 5-6\nox/red');
   });
 
+  it('reads a firing from a title only when it names a cone or a temperature, never from a one-word name', async () => {
+    const { fixture, paste, save } = await create();
+    await paste('Red
+Custer 40
+Whiting 20
+
+Salt
+Custer 50
+Silica 50
+
+Cone 6 Wood
+Custer 60
+Silica 40');
+    await save();
+    const sent = httpMock()
+      .match(API + '/recipe/create')
+      .map((req) => req.request.body as Recipe);
+    expect(sent.map((r) => [r.title, r.firedAt ?? null])).toEqual([
+      ['Red', null],
+      ['Salt', null],
+      ['Cone 6 Wood', { scale: 'orton', low: '6', tested: ['6'], processes: ['wood'] }]
+    ]);
+    expect(text(fixture, '.import-firing')).toContain('cone 6');
+  });
+
   it('asks for a choice where several materials are close, and saves once one is chosen or the line is left out', async () => {
     const { fixture, root, paste, save, selects } = await create();
     await paste('Test\nFeldspar 50\nSilica 50\nZircopax 5');

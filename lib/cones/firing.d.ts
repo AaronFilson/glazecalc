@@ -72,6 +72,8 @@ export interface ReadFiring {
   whole: boolean;
 }
 export function readFiring(line: string): ReadFiring | null;
+/** Whether a line is nothing but a firing, and clearly one (not a bare number or a weak word alone). */
+export function isFiringLine(line: string): boolean;
 export function firingFromLines(lines: string[] | undefined, fallbackScale?: ConeScale): FiringBlock | null;
 
 /** The cones of a scale a firing log names in its cone columns, in order, each once. */

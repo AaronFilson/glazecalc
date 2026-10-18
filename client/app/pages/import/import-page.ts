@@ -607,9 +607,10 @@ export class ImportPage implements OnInit {
       title: recipe.title ?? '',
       include: true,
       notes: recipe.notes,
-      // A title that is nothing but a firing ("Cone 6 ox") counts too.
+      // A title counts too, but only when it names a cone or a temperature ("Cone 6 Red"): a one-word
+      // name such as "Red", "Salt" or "Wood" is a glaze's name, not a firing.
       firedAt: firingFromLines(
-        [...(recipe.title && readFiring(recipe.title)?.whole ? [recipe.title] : []), ...recipe.notes],
+        [...(recipe.title && readFiring(recipe.title)?.scale ? [recipe.title] : []), ...recipe.notes],
         this.locale.cones()
       ),
       setAside: recipe.skipped.map((s) => s.text.trim()),
