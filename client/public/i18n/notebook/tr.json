@@ -17,6 +17,14 @@
         "title": "Reçeteler",
         "text": "Hammaddelerden ve miktarlardan bir sır oluşturun, Seger formülünü görün ve kaydedin."
       },
+      "import": {
+        "title": "Reçeteleri yapıştırma",
+        "text": "Bir web sitesinden, elektronik tablodan veya notlardan reçeteleri yapıştırın, okunanı kontrol edin ve kaydedin."
+      },
+      "blends": {
+        "title": "Test karoları için karışımlar",
+        "text": "İki, üç veya dört reçetenizi, her biri için neyin tartılacağıyla birlikte numaralı test karolarına karıştırın."
+      },
       "material": {
         "title": "Hammaddeler",
         "text": "Kimyasal bir formülden veya tedarikçinin analizinden kendi hammaddelerinizi ekleyin."
@@ -99,6 +107,35 @@
     "saveFailed": "Hata: sunucuya gönderilen istek başarısız oldu."
   },
   "trash": {
-    "title": "Çöp kutusu"
+    "title": "Çöp kutusu",
+    "lead": "Reçetelerinizden, hammaddelerinizden, notlarınızdan ve kayıtlarınızdan kaldırdıklarınız burada 30 gün bekler. Geri koyun veya kalıcı olarak silin.",
+    "listHeading": "Çöp kutusunda",
+    "none": "Çöp kutusu boş.",
+    "untitled": "Başlıksız",
+    "kinds": {
+      "recipes": "Reçete",
+      "materials": "Hammadde",
+      "additives": "Katkı",
+      "notes": "Not",
+      "firing": "Pişirim kaydı",
+      "advice": "Tavsiye",
+      "other": "Kayıt"
+    },
+    "removedOn": "Kaldırıldı: {date}",
+    "goesOn": "Kalıcı olarak silinme: {date}",
+    "byApp": "Bağlı bir uygulama tarafından kaldırıldı",
+    "putBack": "Geri koy",
+    "putBackName": "{name} öğesini geri koy",
+    "restored": "“{name}” eski yerine geri konuldu.",
+    "restoredAlready": "“{name}” zaten geri konulmuştu.",
+    "restoreFailed": "“{name}” geri konulamadı. Lütfen yeniden deneyin.",
+    "deleted": "“{name}” kalıcı olarak silindi.",
+    "empty": "Çöp kutusunu boşalt",
+    "emptyQuestion": "{count, plural, one {Çöp kutusundaki # kayıt} other {Çöp kutusundaki # kaydın tamamı}} kalıcı olarak silinsin mi? Bu işlem geri alınamaz.",
+    "emptyYes": "Evet, boşalt",
+    "emptying": "Boşaltılıyor...",
+    "emptied": "Çöp kutusu boş.",
+    "emptyFailed": "Çöp kutusu boşaltılamadı. Lütfen yeniden deneyin.",
+    "fetchFailed": "Çöp kutusu yüklenemedi. Lütfen yeniden deneyin."
   }
 }

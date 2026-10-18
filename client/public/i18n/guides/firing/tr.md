@@ -3,79 +3,79 @@ title: Basit bir fırında pişirim
 lead: Kiln sitter’lı ya da elle kumanda edilen anahtarlı bir elektrikli fırının nasıl pişirileceği: piramitlerin seçilmesi, yerleştirilmesi ve okunması; bisküvi ve sırlı pişirim için yayımlanmış programlarla.
 ---
 
-## Cones: what they measure {#cones lang=en}
+## Piramitler: neyi ölçerler {#cones}
 
 > [!NOTE]
-> Follow your kiln's own manual first. This guide gathers what cone and kiln makers publish about basic electric kilns; it does not replace the instructions for your model, and where the two differ, the manual wins.
+> Önce fırınınızın kendi kullanım kılavuzuna uyun. Bu rehber, piramit ve fırın üreticilerinin basit elektrikli fırınlar hakkında yayımladıklarını bir araya getirir; modelinizin talimatlarının yerini tutmaz ve ikisi farklı olduğunda kullanım kılavuzu geçerlidir.
 
-A **pyrometric cone** is a small, slender pyramid made from a standardized ceramic powder. When it has had enough heat, it softens and bends over in a repeatable way. You set cones in the kiln beside the ware and read how far they bent.
+**Pirometrik piramit**{{en: pyrometric cone}}, standart bir seramik tozundan yapılmış küçük, ince bir piramittir. Yeterince ısı aldığında yumuşar ve tekrarlanabilir biçimde eğilir. Piramitleri fırına ürünlerin yanına koyarsınız ve ne kadar eğildiklerini okursunuz.
 
-Cones measure **heatwork**, the combined effect of temperature and time. In the words of Orton, the main US cone maker, "Cones do not measure temperature alone." A cone heated slowly bends at a lower temperature than one heated fast, and a glaze behaves the same way. So Orton gives each cone's temperature for a stated heating rate over the last {{180 °F; 100 °C}} of the firing. Once a cone starts to move, it bends over a narrow range, "usually less than 40° F" (22 °C).
+Piramitler **ısı işini**{{en: heatwork}}, yani sıcaklık ve sürenin birlikte etkisini ölçer. ABD’nin başlıca piramit üreticisi Orton’un sözleriyle: “Piramitler yalnızca sıcaklığı ölçmez.” Yavaş ısıtılan bir piramit, hızlı ısıtılandan daha düşük bir sıcaklıkta eğilir; bir sır{{en: glaze}} da aynı şekilde davranır. Bu yüzden Orton her piramidin sıcaklığını, pişirimin son {{180 °F; 100 °C}} aralığında belirtilen bir ısıtma hızı için verir. Bir piramit hareket etmeye başladıktan sonra dar bir aralıkta, “genellikle 40° F’tan az” (22 °C) bir aralıkta eğilir.
 
-### Cone numbers
+### Piramit numaraları
 
-Cone numbers run from 022, the coolest, up to 42. A leading zero marks the cooler series and is read as "oh": cone 06 ("oh-six") is cooler than cone 04, and cone 01 needs less heat than cone 1. Orton warns that it is important not to mix the two series up. The gap is large: cone 06 bends more than {{400 °F; 220 °C}} cooler than cone 6.
+Piramit numaraları en soğuğu olan 022’den 42’ye kadar gider. Baştaki sıfır daha soğuk seriyi gösterir ve “sıfır” diye okunur: 06 numaralı piramit (“sıfır altı”) 04 numaralı piramitten daha soğuktur ve 01 numaralı piramit 1 numaralı piramitten daha az ısı ister. Orton, iki seriyi karıştırmamanın önemli olduğu konusunda uyarır. Aradaki fark büyüktür: 06 numaralı piramit, 6 numaralı piramitten {{400 °F; 220 °C}} değerinden de fazla daha düşük bir sıcaklıkta eğilir.
 
-Table: Common firing ranges, for self-supporting cones at {{108 °F/h; 60 °C/h}}
-Label: Firing ranges
+Table: Yaygın pişirim aralıkları, {{108 °F/h; 60 °C/h}} hızda kendiliğinden ayaklı piramitler için
+Label: Pişirim aralıkları
 
-| Range     | Cones |                    Temperature | Typical use                              |
-| --------- | ----- | -----------------------------: | ---------------------------------------- |
-| Low fire  | 06–04 |  {{1828–1945 °F; 998–1063 °C}} | Earthenware glazes; bisque               |
-| Mid fire  | 5–6   | {{2167–2232 °F; 1186–1222 °C}} | Electric-kiln stoneware and porcelain    |
-| High fire | 9–10  | {{2300–2345 °F; 1260–1285 °C}} | Mostly gas-fired stoneware and porcelain |
+| Aralık     | Piramitler |                       Sıcaklık | Tipik kullanım                                                                                         |
+| ---------- | ---------- | -----------------------------: | ------------------------------------------------------------------------------------------------------ |
+| Düşük ısı  | 06–04      |  {{1828–1945 °F; 998–1063 °C}} | Toprak seramik{{en: earthenware}} sırları; bisküvi{{en: bisque}}                                       |
+| Orta ısı   | 5–6        | {{2167–2232 °F; 1186–1222 °C}} | Elektrikli fırında stoneware{{en: stoneware}} (yüksek ısıda pişen, camlaşmaya yakın bünye) ve porselen |
+| Yüksek ısı | 9–10       | {{2300–2345 °F; 1260–1285 °C}} | Çoğunlukla gazlı fırında pişirilen stoneware ve porselen                                               |
 
-Suppliers in the UK, Europe, Australia and New Zealand often give a temperature in °C rather than a cone: find the nearest cone in the chart below and confirm it with a witness cone. Seger and Staffordshire cones, the older European series, should not be assumed to share Orton's numbers, so this guide uses Orton cones.
+Birleşik Krallık, Avrupa, Avustralya ve Yeni Zelanda’daki tedarikçiler genellikle piramit yerine °C cinsinden bir sıcaklık verir: aşağıdaki tabloda en yakın piramidi bulun ve bunu bir gözlem piramidiyle{{en: witness cone}} doğrulayın. Eski Avrupa serileri olan Seger piramitlerinin (Alman serisi) ve Staffordshire piramitlerinin Orton’la aynı numaraları paylaştığı varsayılmamalıdır; bu yüzden bu rehber Orton piramitlerini (dükkânlarda “Seger piramidi” olarak satılır) kullanır.
 
-### Holding adds heatwork
+### Bekletme ısı işini artırır
 
-A **hold** (also called a **soak**) keeps the kiln at one temperature for a while. Because cones measure heatwork, a hold at the top can stand in for a hotter peak. Orton gives these rough equivalents:
+**Bekletme**{{en: hold}} (İngilizcede **soak** da denir), fırını bir süre tek bir sıcaklıkta tutar. Piramitler ısı işini ölçtüğü için, en yüksek sıcaklıkta yapılan bir bekletme, en yüksek sıcaklığı artırmanın yerini tutabilir. Orton şu kaba eşdeğerleri verir:
 
-Table: What a hold at the peak is worth
-Label: Holds and heatwork
+Table: En yüksek sıcaklıkta bekletmenin karşılığı
+Label: Bekletme ve ısı işi
 
-| Hold             | Roughly the same heatwork as             |
-| ---------------- | ---------------------------------------- |
-| About 20 minutes | A peak {{18 °F; 10 °C}} hotter           |
-| 40–60 minutes    | A peak {{36 °F; 20 °C}} hotter           |
-| About 2 hours    | A peak {{54 °F; 30 °C}} hotter           |
-| 4–6 hours        | Enough to bend a cone two numbers hotter |
+| Bekletme           | Yaklaşık olarak şununla aynı ısı işi                     |
+| ------------------ | -------------------------------------------------------- |
+| Yaklaşık 20 dakika | En yüksek sıcaklığın {{18 °F; 10 °C}} daha yüksek olması |
+| 40–60 dakika       | En yüksek sıcaklığın {{36 °F; 20 °C}} daha yüksek olması |
+| Yaklaşık 2 saat    | En yüksek sıcaklığın {{54 °F; 30 °C}} daha yüksek olması |
+| 4–6 saat           | İki numara daha sıcak bir piramidi eğmeye yeter          |
 
-Orton adds that a hold of 1–2 hours "may be sufficient to deform the next higher cone number".
+Orton, 1–2 saatlik bir bekletmenin “bir numara daha sıcak piramidi deforme etmeye yetebileceğini” de ekler.
 
-So a hold is never free: if you add one, expect the cones to bend further, and lower the peak to match.
+Yani bekletme hiçbir zaman bedava değildir: bir bekletme eklerseniz piramitlerin daha fazla eğilmesini bekleyin ve en yüksek sıcaklığı buna göre düşürün.
 
-### Kinds of cone
+### Piramit türleri
 
-Orton makes four kinds. Two stand on the shelf to show what the ware received; two are for the kiln sitter.
+Orton dört tür piramit üretir. İkisi ürünün ne aldığını göstermek için rafta durur; ikisi kiln sitter (piramitli otomatik kapatma düzeneği) içindir.
 
-Table: Orton's four kinds of cone
-Label: Kinds of cone
+Table: Orton’un dört tür piramidi
+Label: Piramit türleri
 
-| Kind            | Used for                  | How it stands                                                                               |
-| --------------- | ------------------------- | ------------------------------------------------------------------------------------------- |
-| Self-supporting | Witness cone on the shelf | A built-in base sets the height, 1¾ in (44 mm), and the 8° lean; no holder needed           |
-| Large           | Witness cone on the shelf | Set in a plaque or a pat of clay with exactly 2 in (51 mm) showing, leaning 8° from upright |
-| Small (junior)  | Kiln sitter               | Lies across the sitter's supports; 15/16 in (24 mm) showing if stood on a shelf             |
-| Bar             | Kiln sitter               | The same powder as small cones, in an even bar shape                                        |
+| Tür                  | Kullanım              | Nasıl durur                                                                                                    |
+| -------------------- | --------------------- | -------------------------------------------------------------------------------------------------------------- |
+| Kendiliğinden ayaklı | Rafta gözlem piramidi | Yerleşik tabanı yüksekliği, 1¾ inç (44 mm), ve 8° eğimi belirler; tutucu gerekmez                              |
+| Büyük                | Rafta gözlem piramidi | Bir altlığa ya da bir parça çamura, dışarıda tam 2 inç (51 mm) kalacak şekilde, dikeyden 8° eğik yerleştirilir |
+| Küçük (junior)       | Kiln sitter           | Kiln sitter’ın desteklerinin üzerine yatırılır; rafa dikilirse 15/16 inç (24 mm) dışarıda kalır                |
+| Çubuk                | Kiln sitter           | Küçük piramitlerle aynı toz, düzgün bir çubuk biçiminde                                                        |
 
-Height matters: a ¼ in (6 mm) difference in the height of a large cone "can cause more than a half cone difference in bending". Cones do not go bad or age, and damp storage does not affect them.
+Yükseklik önemlidir: büyük bir piramidin yüksekliğindeki ¼ inçlik (6 mm) bir fark, “eğilmede yarım piramitten fazla fark yaratabilir”. Piramitler bozulmaz ya da eskimez; nemli yerde saklanmaları da onları etkilemez.
 
-### What "cone 6" means in practice
+### “6 numaralı piramit” pratikte ne demektir
 
-The chart gives a self-supporting cone 6 as {{2232 °F; 1222 °C}}, but only when the last {{180 °F; 100 °C}} climbs at {{108 °F/h; 60 °C/h}}. Climbing at {{270 °F/h; 150 °C/h}}, the same cone bends at {{2269 °F; 1243 °C}}. Real kilns differ again: Digitalfire reports that "Most kilns reach cone 6 at 2200°F, not 2232°F". So "cone 6" means the ware received the heatwork that bends a cone 6, whatever a thermometer read at the time.
+Tablo, kendiliğinden ayaklı 6 numaralı piramidi {{2232 °F; 1222 °C}} olarak verir, ama yalnızca son {{180 °F; 100 °C}} aralığında {{108 °F/h; 60 °C/h}} hızla çıkıldığında. {{270 °F/h; 150 °C/h}} hızla çıkıldığında aynı piramit {{2269 °F; 1243 °C}} sıcaklıkta eğilir. Gerçek fırınlar yine farklıdır: Digitalfire, “Çoğu fırın 6 numaralı piramide 2232°F sıcaklıkta değil, 2200°F sıcaklıkta ulaşır” diye bildirir. Yani “6 numaralı piramit”, o sırada termometre ne gösterirse göstersin, ürünün bir 6 numaralı piramidi eğecek kadar ısı işi aldığı anlamına gelir.
 
 :::orton
 
 > [!NOTE]
-> Fire by the cone, not the clock or the dial. Set a controller by cone number, and let a witness cone on the shelf confirm every firing.
+> Saate ya da kadrana göre değil, piramide göre pişirin. Kontrol ünitesini piramit numarasına göre ayarlayın ve her pişirimi raftaki bir gözlem piramidiyle doğrulayın.
 
 :::
 
 :::temperature
 
 > [!NOTE]
-> Firing by temperature, keep the end of every firing the same: the same last rate of climb, the same peak and the same hold. Then a glaze that worked once works again.
+> Sıcaklığa göre pişiriyorsanız her pişirimin sonunu aynı tutun: aynı son ısıtma hızı, aynı en yüksek sıcaklık ve aynı bekletme. O zaman bir kez işe yarayan sır yine işe yarar.
 
 :::
 
@@ -596,22 +596,22 @@ Kiln sitter, raftaki piramitler yatmadan devreyi keserse, L&L’nin önerdiği g
 
 **Pirometre**, fırın duvarından geçen bir ısı sondası olan **termokupldan** okunan bir sıcaklık göstergesidir. Fırının ne kadar hızlı çıktığını gösterir, böylece piramit tablosunun doğru sütununu seçebilirsiniz. Ama ürünün yanını değil, duvarın yakınını okur ve zamanla kayar. L&L, tekrarlanan 6 numaralı piramit pişirimlerinden sonra K tipi bir termokuplun {{25 °F; 14 °C}} değerinden fazla sapabileceğini, bunun “tam bir piramitten daha büyük bir fark” olduğunu, kendiliğinden ayaklı bir piramidin ise en fazla {{4 °F; 2 °C}} değiştiğini belirtir. Orton, pirometrelerin zaman zaman yeniden kalibre edilmesi gerektiğini ve bunları kontrol etmenin yolunun piramitler olduğunu söyler.
 
-## Venting, peeking and safety {#venting lang=en}
+## Havalandırma, içeri bakma ve güvenlik {#venting}
 
-### Venting
+### Havalandırma
 
-Early in a firing, clay and glaze give off water vapor and fumes, including carbon monoxide, and glazes can give off toxic fumes later in the firing too. L&L calls venting them "essential". With no vent system, that means the lid propped and the peepholes open in the early stages, as in the procedures above; slowing the heating during this time also helps the carbon burn out. In a kiln without a vent, Dawson, who made the sitter, also says to leave the top peephole open for the whole firing: the venting "will reduce deterioration of the kiln's metal parts and increase the life of the tube assembly". A **downdraft vent** (a powered vent fitted to the kiln) changes this. It does the venting, so Orton says the lid and peepholes stay closed for the whole firing except to check the cones, and L&L says to leave the vent on and plug the peepholes.
+Pişirimin başında çamur ve sır{{en: glaze}}, karbon monoksit de dahil olmak üzere su buharı, gaz ve duman çıkarır; sırlar pişirimin ilerleyen aşamalarında da zehirli gaz ve duman çıkarabilir. L&L bunların dışarı atılmasını “vazgeçilmez” olarak nitelendirir. Havalandırma sistemi yoksa bu, yukarıdaki yöntemlerde olduğu gibi ilk aşamalarda kapağın aralık, gözetleme deliklerinin açık olması demektir; bu süre içinde ısıtmayı yavaşlatmak karbonun yanıp gitmesine de yardımcı olur. Havalandırması olmayan bir fırında, kiln sitter’ı üreten Dawson da üst gözetleme deliğinin pişirim boyunca açık bırakılmasını söyler: havalandırma “fırının metal parçalarındaki yıpranmayı azaltır ve tüp düzeneğinin ömrünü uzatır”. **Alttan emişli bir aspiratör** (fırına takılan motorlu bir aspiratör) bunu değiştirir. Havalandırmayı o yaptığı için Orton, piramitleri{{en: cones}} kontrol etmek dışında kapağın ve gözetleme deliklerinin pişirim boyunca kapalı kalacağını söyler; L&L de aspiratörün açık bırakılmasını ve gözetleme deliklerinin tıkanmasını söyler.
 
-For venting the room, and for carbon monoxide alarms, see [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety).
+Odanın havalandırılması ve karbon monoksit dedektörleri için [Güvenli karıştırma ve havalandırma](/guides/safe-mixing) ve [Ailenizi zehirlemeyin](/guides/home-safety) rehberlerine bakın.
 
-### While the kiln is firing
+### Fırın pişirirken
 
-- Look through a peephole only with IR-rated shade 3 welding glasses; sunglasses are not enough. Skutt advises twisting the plugs into place so they do not fall out.
-- Do not leave the kiln unattended beyond its expected firing time; a sitter is not a fail-safe.
-- Never fire on or near anything that burns, such as a wood floor or carpet.
-- Keep the clearances in your manual. Published figures range from 12 in (30 cm) to 3 ft (91 cm); where the manual is silent, 18 in (46 cm) from walls and 3 ft (91 cm) from anything that burns is the safest choice.
-- Keep the space around the sitter's weight clear so it can drop.
-- When the firing ends, turn the switches off and turn off the breaker as well.
+- Gözetleme deliğinden yalnızca IR korumalı, koyuluk derecesi 3 olan kaynak gözlüğüyle bakın; güneş gözlüğü yeterli değildir. Skutt, düşmesinler diye tıpaları çevirerek yerlerine oturtmanızı önerir.
+- Fırını beklenen pişirim süresinin ötesinde gözetimsiz bırakmayın; kiln sitter arızaya karşı güvenli bir düzenek değildir.
+- Asla ahşap zemin ya da halı gibi yanabilecek bir şeyin üzerinde ya da yakınında pişirim yapmayın.
+- Kullanım kılavuzunuzdaki güvenlik mesafelerine uyun. Yayımlanmış değerler 12 inç (30 cm) ile 3 fit (91 cm) arasında değişir; kılavuz bir şey söylemiyorsa duvarlardan 18 inç (46 cm) ve yanabilecek her şeyden 3 fit (91 cm) uzaklık en güvenli seçimdir.
+- Kiln sitter ağırlığının düşebilmesi için çevresindeki boşluğu açık tutun.
+- Pişirim bittiğinde anahtarları kapatın, sigortayı da kapatın.
 
 ## Soğutma ve fırının boşaltılması {#cooling}
 

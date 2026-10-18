@@ -17,13 +17,17 @@
     "confirmEmail": "E-posta adresinizi doğrulayın - Glazecalc",
     "home": "Atölye defteriniz - Glazecalc",
     "recipe": "Reçeteler - Glazecalc",
+    "import": "Reçeteleri yapıştırma - Glazecalc",
+    "blends": "Test karoları için karışımlar - Glazecalc",
     "material": "Hammaddeler - Glazecalc",
     "additive": "Katkılar - Glazecalc",
     "firingLogs": "Pişirim kayıtları - Glazecalc",
     "notes": "Notlar - Glazecalc",
     "trash": "Çöp kutusu - Glazecalc",
     "account": "Hesabınız ve ayarlarınız - Glazecalc",
-    "notFound": "Bulunamadı - Glazecalc"
+    "notFound": "Bulunamadı - Glazecalc",
+    "shared": "Paylaşılan reçete - Glazecalc",
+    "assistants": "Glazecalc’i yapay zekâ asistanınızla kullanma - Glazecalc"
   },
   "nav": {
     "skip": "İçeriğe geç",
@@ -96,9 +100,14 @@
   },
   "remove": {
     "alreadyRemoved": "“{name}” zaten kaldırılmıştı.",
+    "trashed": "“{name}” çöp kutusuna taşındı.",
+    "undo": "Geri al",
+    "restored": "“{name}” geri konuldu.",
+    "restoreFailed": "“{name}” geri konulamadı. Hâlâ çöp kutusunda.",
     "failed": "Kaldırılamadı. Lütfen yeniden deneyin.",
     "question": "“{name}” kaldırılsın mı?",
     "cannotUndo": "Bu işlem geri alınamaz.",
+    "toTrash": "Onu 30 gün boyunca çöp kutusundan geri koyabilirsiniz.",
     "removing": "Kaldırılıyor...",
     "yes": "Evet, kaldır",
     "cancel": "İptal",

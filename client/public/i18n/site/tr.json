@@ -57,9 +57,13 @@
     "stackServer": "Node.js 24 ve Express 5 üzerinde, MongoDB 9 kullanan bir TypeScript API’si; 350’den fazla otomatik testle denetlenir.",
     "stackHosting": "Amazon Web Services üzerinde Docker’da çalışır; önünde Let's Encrypt’in sağladığı HTTPS ile nginx vardır.",
     "stackDeploy": "GitHub Actions ile yayına alınır: her değişiklikte imajlar oluşturulur ve test edilir; yayına alma işlemi, saklanmış anahtarlar olmadan AWS’de oturum açar.",
+    "creditsHeading": "Teşekkürler",
+    "credits": "Stull diyagramındaki bölgeler, Glazy’nin R. T. Stull’un 1912 tarihli diyagramını okumasından gelir; Derek Au tarafından (Copyright (c) 2017 Derek Au, MIT License). <notices>Tam bildirim</notices> kaynak kodundadır.",
     "whoHeading": "Kim yaptı",
     "who": "Glazecalc’ı Aaron Filson yapıyor. Bir sorun mu buldunuz ya da bir fikriniz mi var? <issues>GitHub’da bir konu açın</issues>.",
-    "studio": "Aaron Filson’ın el yapımı seramikleri, Washington eyaletinin Tacoma kentindeki <studio>Updraft Pottery Studio</studio> atölyesindedir. İşlere bir göz atın; size hitap eden bir parça olursa sipariş verin."
+    "studio": "Aaron Filson’ın el yapımı seramikleri, Washington eyaletinin Tacoma kentindeki <studio>Updraft Pottery Studio</studio> atölyesindedir. İşlere bir göz atın; size hitap eden bir parça olursa sipariş verin.",
+    "languagesHeading": "Diller",
+    "languages": "Glazecalc şu dillerde kullanılabilir. Her bağlantı bu sayfayı o dilde açar."
   },
   "privacy": {
     "title": "Gizlilik",
@@ -71,8 +75,15 @@
     "contact": "Verilerinizle ilgili soru sormak ya da haklarınızdan birini kullanmak için <mail>privacy@glazecalcapp.com</mail> adresine yazın. <issues>GitHub’da bir konu da açabilirsiniz</issues>, ancak konular herkese açıktır: e-posta adresinizi ya da kişisel herhangi bir bilgiyi asla bunlara yazmayın. Verilerinizle ilgili çoğu şeyi <account>hesap sayfanızda</account> kendiniz yapabilirsiniz.",
     "storedHeading": "Neler saklanır ve neden",
     "storedAccount": "<b>Hesabınız:</b> e-posta adresiniz ve parolanız; parola yalnızca tek yönlü bir özet (bcrypt) olarak saklanır, asla parolanın kendisi olarak değil. Ayarlarınız (dil, bölge ve birimler gibi) ve elinizdeki hammaddelerin listesi de hesapla birlikte saklanır. Bir hesap için e-posta adresi gerekir: oturum açmak ve unutulan parolayı sıfırlamak için. Hesap oluşturduğunuzda, adresin size ait olduğunu doğrulamak için bu adrese bir bağlantı gönderilir; o zamana kadar adrese yalnızca siz istediğinizde, örneğin parola sıfırlama için, e-posta gönderilir.",
+    "storedPrices": "<b>Fiyatlar, verirseniz:</b> her hammadde için ödediğiniz kilogram başına tutar ve geçerli oldukları para birimi; bir tartımın maliyeti için. İş verisidir; hesabınızla saklanır ve yalnızca hesabınıza özeldir: hiçbir zaman bir reçetenin parçası olmazlar, bu yüzden paylaştığınız hiçbir şey onları göstermez. Verilerimi indir bunları içerir, hesabı silmek de onları siler. Bir denemenin fiyatları, aynı para biriminde olduklarında, fiyat vermediğiniz hammaddeler için kayıtlarıyla birlikte hesabınıza taşınır.",
     "storedEmailChange": "<b>E-posta adresinizi değiştirme:</b> adresinizin son değiştiği tarih; böylece iki adımlı oturum açmayı devre dışı bırakma isteği, değişiklikten sonraki 30 gün içinde yeni bir adresten asla kabul edilmez.",
     "storedSignIn": "<b>İki adımlı oturum açma, etkinleştirirseniz:</b> etkin olup olmadığı; kimlik doğrulama uygulamanızın Glazecalc ile paylaştığı anahtar, şifrelenmiş olarak; her geçiş anahtarı için açık anahtarı (tek başına oturum açamaz), cihazınızın ona verdiği kimlik ve ayrıntılarla birlikte, ona verdiğiniz ad, ne zaman eklendiği ve en son ne zaman kullanıldığı; kurtarma kodlarınız, kimse geri okuyamasın diye yalnızca anahtarlı tek yönlü bir özet olarak; ve biri parolanızı girip ikinci adımı tamamlamazsa, Glazecalc’ın bu konuda size en son ne zaman e-posta gönderdiği (en fazla günde bir kez). Oturum açarken, parolanız ile ikinci adım arasında, sunucu oturum açmanın bir kaydını 5 dakika tutar ve sayfa kısa bir belirteci yalnızca kendi belleğinde tutar: yeni bir çerez yok, tarayıcınızın depolamasında hiçbir şey yok.",
+    "storedSaved": "<b>Kaydettikleriniz:</b> reçeteleriniz, hammaddeleriniz, katkılarınız, notlarınız, pişirim kayıtlarınız ve tavsiyeleriniz, yazdığınız gibi. Bir reçeteyi bağlantıyla paylaşmadıkça yalnızca siz görebilirsiniz.",
+    "storedTrash": "<b>Çöp kutusu ve önceki sürümler:</b> bir listeden kaldırdığınız şey çöp kutusunda bütün hâlde bekler, böylece geri koyabilirsiniz; bir kayıtta kaydettiğiniz her değişiklik de kaydı hemen öncesindeki hâliyle saklar, böylece değişikliği geri alabilirsiniz.",
+    "storedShares": "<b>Bağlantıyla paylaştığınız reçeteler, paylaşırsanız:</b> hangi reçete, bağlantısının ne zaman oluşturulduğu ve reçetenin notlarını gösterip göstermediği, bağlantının tek yönlü bir özetiyle (hash; bağlantının kendisi asla). Bağlantıya sahip herkes reçeteyi şu anki hâliyle, Seger formülüyle ve göstermeyi seçtiyseniz notlarıyla görebilir; e-postanızı, hesabınızı veya herhangi bir fiyatı asla. Paylaşılan reçeteler arama motorlarından uzak tutulur ve bağlantı sunucunun günlüklerine asla ulaşmaz. Kötüye kullanımı önlemek için her IP adresinden açılan paylaşılan reçeteler bellekte 15 dakika boyunca sayılır. Bir deneme paylaşım yapamaz.",
+    "storedTokens": "<b>Erişim belirteçleri ve bağlı uygulamalar, bir tane oluşturur veya onaylarsanız:</b> her biri için adı, neler yapabileceği, belirtecin tek yönlü özeti (hash; belirtecin kendisi asla) ve son 4 karakteri; ayrıca ne zaman oluşturulduğu, son kullanıldığı, sona erdiği ve iptal edildiği.",
+    "storedActivity": "<b>Belirteçlerin ve uygulamaların yaptıkları:</b> bir erişim belirtecinin veya bağlı uygulamanın oluşturduğu, değiştirdiği, çöp kutusuna taşıdığı, geri koyduğu veya geri aldığı her kayıt için bir satır: ne zaman, hangi belirteç veya uygulama, ne yaptığı ve kısaltılmış kayıt başlığı. Bir notun metni ya da kayıttaki başka hiçbir şey asla. Web sitesinde yaptığınız değişiklikler listelenmez.",
+    "storedLimits": "<b>Ne sıklıkta sınırları:</b> tahmin yürütmeyi ve kontrolden çıkmış betikleri durdurmak için, IP adresine veya hesaba göre oturum açma denemeleri, kayıtlar, sıfırlama istekleri ve denemeler; IP adresine göre çalışmayan erişim belirteçleri; belirteç başına her erişim belirtecinin çöp kutusuna taşıdığı kayıtlar; IP adresine göre açılan paylaşılan reçeteler ve hiçbir şey açmayan paylaşım bağlantıları; ve yapay zekâ asistanlarına yönelik araçlara (MCP) yapılan istekler sayılır: IP adresine göre dakikada 60 ve günde 2.000, ya da bir erişim belirteci kullanıldığında hesaba göre dakikada 120 ve günde 5.000; dakikada en fazla 10 değiştirme veya eşleştirme.",
     "storedTrial": "<b>Deneme (“Şimdi deneyin”):</b> e-posta ya da parola yoktur, yalnızca “speckled quiet kilns” gibi uydurma bir ad vardır. Deneme sırasında aynı tarayıcıda bir hesaba oturum açarsanız, denemede yaptıklarınız hesaba taşınır.",
     "storedResets": "<b>Parola sıfırlama ve e-posta bağlantıları:</b> hangi hesabın istediği, ne zaman istediği, adres doğrulama bağlantısının gönderildiği adres ve her bağlantının bir parmak izi (bağlantının kendisi değil).",
     "storedLogs": "<b>Günlükler:</b> web sunucusu her isteği kaydeder: IP adresinizi, zamanı, istenen sayfayı ve tarayıcınızın adını. Uygulama hataları oluştukları sayfayla birlikte kaydeder, e-posta adresinizi asla kaydetmez.",
@@ -95,6 +106,11 @@
     "choiceNoWarranty": "Glazecalc olduğu gibi, garanti olmaksızın sunulur. Projeyi sürdürenler, hesap oluşturma kararınız ya da hesabın verilerinin nerede saklandığı için hiçbir sorumluluk ya da yükümlülük kabul etmez.",
     "keptHeading": "Ne kadar süre saklanır",
     "keptAccount": "<b>Hesabınız ve kaydettikleriniz:</b> siz silene kadar. Hesaplar kullanılmadıkları için kaldırılmaz.",
+    "keptTrash": "<b>Çöp kutusu ve önceki sürümler:</b> kaldırılan bir kayıt, kaldırmanızdan 30 gün sonrasına kadar ya da onu kalıcı olarak silene veya çöp kutusunu boşaltana kadar; önceki sürümler 90 gün ve yalnızca her kaydın son 20’si (ve bir erişim belirtecinin değişikliklerinden öncekisi), ancak kayıttan uzun asla: çöp kutusundayken sürümleri kayıtla birlikte gider. Hesabınızı sildiğinizde ikisi de hemen gider.",
+    "keptShares": "<b>Paylaşım bağlantıları:</b> reçetenin paylaşımını durdurana, ona yeni bir bağlantı oluşturana, onu çöp kutusuna taşıyana veya hesabınızı silene kadar. Reçeteyi çöp kutusundan geri koymak onu yeniden paylaşmaz. Parolanızı sıfırlamak veya her yerde oturumu kapatmak da tüm bağlantılarınızı durdurur; parolanızı değiştirmek durdurmaz.",
+    "keptTokens": "<b>Erişim belirteçleri ve bağlı uygulamalar:</b> her biri sona ermesinden 30 gün sonrasına kadar (her biri en geç bir yıl içinde sona erer) ya da hesabınızı silene kadar. Bir parola sıfırlama veya Her yerde oturumu kapat hepsini birden durdurur.",
+    "keptActivity": "<b>Belirteçlerin ve uygulamaların yaptıkları:</b> 90 gün veya hesabınızı silene kadar.",
+    "keptLimits": "<b>Ne sıklıkta sınırları:</b> sayımlar yalnızca sunucunun belleğinde, 1 dakikadan 24 saate kadar tutulur ve sunucu yeniden başladığında kaybolur.",
     "keptTrial": "<b>Deneme:</b> başlangıcından itibaren 14 gün; ardından, saklamak için bir hesap oluşturmadığınız sürece içindeki her şeyle birlikte silinir.",
     "keptResets": "<b>Parola sıfırlama ve e-posta bağlantıları:</b> sıfırlama bağlantısı 30 dakika geçerlidir ve kaydı yaklaşık bir saat sonra silinir; adres doğrulama bağlantısı 24 saat geçerlidir ve o süre boyunca saklanır.",
     "keptSignIn": "<b>İki adımlı oturum açma:</b> her kimlik doğrulama uygulaması, geçiş anahtarı ve kurtarma kodu seti, siz onu kaldırana, iki adımlı oturum açmayı devre dışı bırakana veya hesabınızı silene kadar. İkinci adımını bekleyen bir oturum açma 5 dakika sonra, eklemeye başlayıp tamamlamadığınız bir uygulama veya geçiş anahtarı ise en fazla 10 dakika sonra silinir.",
@@ -112,6 +128,7 @@
     "rightsAsk": "Başka herhangi bir şey için, örneğin bir hata düzeltilirken verilerinizin kullanılmamasını istemek ya da nasıl kullanıldığına itiraz etmek için <mail>privacy@glazecalcapp.com</mail> adresine yazın. Bu ücretsizdir ve bir ay içinde yanıt alırsınız. Sizden yalnızca hesabın size ait olduğunu göstermeniz istenir; bunu oturum açarak ya da hesabın adresine gönderilen bir bağlantıyı açarak yaparsınız, asla kimlik belgesiyle değil.",
     "rightsComplain": "Memnun kalmazsanız bir veri koruma otoritesine şikâyette bulunabilirsiniz: AB’de <edpb>ülkenizdeki otoriteye</edpb>, Birleşik Krallık’ta ise <ico>Information Commissioner’s Office</ico> kurumuna.",
     "storageHeading": "Çerezler ve tarayıcı depolama alanı",
+    "storageIntro": "Glazecalc iki çerez ayarlar; ikincisini yalnızca Google veya GitHub ile oturum açarken ayarlar; ayrıca tarayıcınızda birkaç küçük değer saklar. Her biri sizin istediğiniz bir şey için vardır: oturumun açık kalması, Google veya GitHub ile oturum açma ya da yaptığınız bir seçimi hatırlama. Hiçbiri sizi izlemez ve hiçbiri paylaşılmaz; bu yüzden yasa önce sormayı gerektirmez ve çerez bildirimi yoktur.",
     "storageLabel": "Çerezler ve tarayıcı depolama alanı",
     "storageName": "Ad",
     "storagePurpose": "Ne için",
@@ -150,6 +167,7 @@
         "lasts": "Tarayıcınızın depolama alanını temizleyene kadar."
       },
       "print": {
+        "purpose": "Bir reçeteyi yazdırmak için son seçimleriniz: reçetenin tamamı, bir tartım veya çalışma sayfası ve tartım miktarı.",
         "lasts": "Tarayıcınızın depolama alanını temizleyene kadar."
       },
       "token": {
@@ -163,12 +181,19 @@
       "reloadedFor": {
         "purpose": "Sitenin yeni bir sürümü yayımlandıktan sonra hangi sayfanın ne zaman yeniden yüklendiği; böylece bir sayfa dakikada en fazla bir kez yeniden yüklenir.",
         "lasts": "Sekmeyi kapatana kadar."
+      },
+      "oauthCookie": {
+        "purpose": "Yalnızca Google veya GitHub ile oturum açarken: Google veya GitHub’ın yanıtını tarayıcınıza bağlar; böylece başka hiç kimse oturum açmanızı tamamlayamaz veya sizin adınıza bir tane başlatamaz. Sayfadaki betikler onu okuyamaz.",
+        "lasts": "Google ile devam et veya GitHub ile devam et düğmesine bastığınızda ya da hesap sayfanızdan birini bağladığınızda ayarlanır. Oturum açma bittiğinde veya 10 dakika sonra kaldırılır."
       }
     },
     "childrenHeading": "Çocuklar",
     "children": "Glazecalc seramikçiler için bir araçtır ve çocuklara yönelik değildir.",
     "changesHeading": "Değişiklikler",
-    "changes": "Bu bildirim değişirse sayfanın üstündeki tarih de değişir."
+    "changes": "Bu bildirim değişirse sayfanın üstündeki tarih de değişir.",
+    "storedProviders": "<b>Google veya GitHub, birinde oturum açarsanız:</b> hizmetin sizin için verdiği kimlik numarası (hiç değişmeyen bir sayı veya kod), bağladığınız zaman ve onunla son oturum açtığınız zaman, ve hesabınızın kendi parolasının olup olmadığı. Hizmetten başka hiçbir şey saklanmaz: adınız, resminiz ya da oradaki hesabınıza ait hiçbir anahtar değil. Oturum açarken sunucu, gerektiğinde hizmetin sizin dediği e-posta adresiyle birlikte, oturum açmanın bir notunu tutar: yeni bir hesap için, o adres hesabınızın e-postası olur; ya da bir Glazecalc hesabında bu e-posta zaten varsa, o hesapta oturum açtığınızda hizmeti ona bağlamak için. Not ve içindeki e-posta yaklaşık 10 dakika içinde silinir.",
+    "providers": "<b>Google veya GitHub ile oturum açma</b> sizin tercihinizdir ve yalnızca düğmesine bastığınızda gerçekleşir. Tarayıcınız o zaman Google veya GitHub’a gider; onlar da Glazecalc’e sizin kimlik numaranızı ve e-postanızı gönderir. Her biri ayrı bir şirkettir ve kendi gizlilik politikası uyarınca onunla paylaştıklarınızdan sorumludur. İkisinden de hiçbir betik veya görsel Glazecalc sayfalarında yüklenmez.",
+    "keptProviders": "<b>Google veya GitHub:</b> her bağlantı, bağlantısını kaldırana veya hesabınızı silene kadar. Devam eden bir oturum açma 10 dakika sonra silinir."
   },
   "notFound": {
     "heading": "Sayfa bulunamadı",
@@ -194,5 +219,27 @@
     "standardFetchFailed": "Sunucudaki tavsiye bilgileri alınırken bir hata oluştu.",
     "saved": "Tavsiye kayıtlarına başarıyla eklendi.",
     "saveFailed": "Tavsiye bilgileri gönderilirken bir hata oluştu."
+  },
+  "assistants": {
+    "title": "Glazecalc’i yapay zekâ asistanınızla kullanma",
+    "lead": "Claude, GitHub Copilot, Cursor ve Gemini gibi yapay zekâ asistanları, Model Context Protocol (MCP) aracılığıyla Glazecalc’in hesaplarını doğrudan kullanabilir.",
+    "whatHeading": "Neler yapabilir",
+    "what": "Hesap olmadan bir asistan kütüphanede hammadde arayabilir, bir reçetenin Seger formülünü hesaplayabilir, onu pişirimine ait sınırlarla karşılaştırarak kontrol edebilir, üretimi durdurulan hammaddeler için yedekler önerebilir, bir reçeteyi sizin adını verdiğiniz hammaddelerle yeniden yapabilir, piramitler ile sıcaklıklar arasında dönüşüm yapabilir ve rehberlerde arama yapıp okuyabilir. Gönderdiği hiçbir şey kaydedilmez; her sayfada olduğu gibi, web sunucusunun günlüğü her isteğin IP adresini, zamanını ve adresini (gönderilenleri asla) 14 gün boyunca kaydeder.",
+    "mine": "<account>Hesap sayfanızdan</account> alınan bir erişim belirteciyle, kendi reçetelerinizi, hammaddelerinizi, defterinizi, pişirim kayıtlarınızı ve elinizdeki hammaddeleri de okuyabilir. Bir belirteç yalnızca okuyabilir: hiçbir şeyi asla değiştirmez veya kaldırmaz.",
+    "caution": "Sınır kontrolleri, uygulamadaki gibi yayımlanmış sınırlardan çıkarılan uyarılardır; bir sırrın gıdaya uygun olduğunun kanıtı değildir. Her sırrı deneme pişirimiyle test edin ve gıdayla temas eden yüzeyler için sırları metal salımı açısından test ettirin.",
+    "addressHeading": "Adres",
+    "address": "Asistanınıza bu adresi verin, Streamable HTTP aktarımını kullanarak:",
+    "token": "Kendi kayıtlarınızı okumasına izin vermek için <account>hesap sayfanızda</account> bir belirteç oluşturun ve kopyalayın. Asistanınız onu bir Authorization başlığında, Bearer ve ardından belirteç olarak gönderir. Bir parola gibi, paylaştığınız veya commit ettiğiniz dosyalardan uzak tutun.",
+    "clientsHeading": "Glazecalc’i asistanınıza ekleme",
+    "claudeCode": "Bir terminalde:",
+    "claudeCodeToken": "Kendi kayıtlarınızı da okumak için bir erişim belirteciyle:",
+    "vscode": "Bir klasördeki .vscode/mcp.json dosyasında ya da kullanıcı ayarlarınızda. VS Code belirteci bir kez ister ve gizli tutar; hesap gerektirmeyen araçları kullanmak için headers ve inputs bölümlerini çıkarın:",
+    "cursor": "~/.cursor/mcp.json dosyasında veya bir projedeki .cursor/mcp.json dosyasında. Hesap gerektirmeyen araçları kullanmak için headers bölümünü çıkarın:",
+    "gemini": "~/.gemini/settings.json dosyasında. Hesap gerektirmeyen araçları kullanmak için headers bölümünü çıkarın:",
+    "appsHeading": "Claude, ChatGPT ve diğer uygulamalar",
+    "apps": "Yukarıdaki adresle özel bir bağlayıcı ekleyin. Bu uygulamalar henüz erişim belirteci gönderemez; bu yüzden hesap gerektirmeyen araçları alırlar. Kendi kayıtlarınıza onlardan erişim, uygulamadan oturum açmayla birlikte gelecek.",
+    "stopHeading": "Erişimi durdurma",
+    "stop": "<account>Hesap sayfanızda</account> bir belirteci istediğiniz zaman iptal edin. Her belirteç seçtiğiniz günde çalışmayı bırakır; parolanızı sıfırlarsanız veya her yerde oturumu kapatırsanız hepsi birden durur.",
+    "limits": "Her adres dakikada 60 ve günde 2.000 istek yapabilir; bir belirteç kullanan hesap dakikada 120 ve günde 5.000. Değiştirme ve eşleştirmeler dakikada 10 ile sınırlıdır."
   }
 }

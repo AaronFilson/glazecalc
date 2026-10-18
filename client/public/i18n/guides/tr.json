@@ -102,6 +102,9 @@
     "quartzAll": "Kuvars, tamamı kuvars olan toz için",
     "cristobaliteAll": "Kristobalit, tamamı kristobalit olan toz için",
     "allFree": "Tamamı serbest silis olan toz için kontrol konsantrasyonu",
+    "bandFromTo": "Serbest silis (SiO₂) oranı %{from}–{to} olan toz",
+    "bandOverTo": "Serbest silis oranı %{from} değerinden fazla ve en fazla %{to} olan toz",
+    "bandAbove": "Serbest silis oranı %{from} değerinden fazla olan toz",
     "recommended": "{abbr} tarafından önerilir",
     "value": "{value} mg/m³",
     "kind": {
@@ -160,7 +163,15 @@
       "myFlat": "Düz kaplar",
       "mySmall": "Küçük çukur kaplar",
       "myLarge": "Büyük çukur kaplar",
-      "myCooking": "Pişirme kapları"
+      "myCooking": "Pişirme kapları",
+      "idFlat": "İç derinliği en fazla 25 mm olan kaplar",
+      "idSmall": "İç derinliği 25 mm’den fazla olan, 1100 mL’den az hacimli kaplar",
+      "idLarge": "İç derinliği 25 mm’den fazla olan, 1100 mL veya daha fazla hacimli kaplar",
+      "thFlat": "Derinliği en fazla 25 mm olan kaplar",
+      "thSmall": "Derinliği 25 mm’den fazla olan, 1,1 L’den az hacimli kaplar",
+      "thLarge": "Derinliği 25 mm’den fazla olan, 1,1 L veya daha fazla hacimli kaplar",
+      "thInfant": "12 aya kadar olan bebeklerin yiyecekleri için kaplar",
+      "thCooking": "Pişirme kapları; pişirmenin ısısına dayanacak şekilde yapılmıştır"
     },
     "judged": {
       "average": "6 parçanın ortalaması",
