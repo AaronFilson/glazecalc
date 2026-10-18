@@ -22,58 +22,58 @@ Pasigaminti glazūrą{{en: glaze}} reiškia pagal receptą pasverti miltelių pa
 > [!WARNING]
 > **Sausi glazūros milteliai kelia dulkių pavojų.** Kristalinis silicio dioksidas{{en: crystalline silica}} gali sudaryti nuo 10 iki 60 % sausos glazūros, o Jungtinės Karalystės darbuotojų saugos ir sveikatos tarnyba Health and Safety Executive (HSE) įspėja, kad jo dulkės įprastoje šviesoje nematomos. Semkite atsargiai, iš nedidelio aukščio, laikykite indus uždengtus, kuo greičiau sudrėkinkite miltelius ir valykite drėgnu būdu, niekada ne šluota. Kol milteliai sausi, dėvėkite gerai priglundantį respiratorių (JAV – N95 arba P100, JK ir ES – FFP2 arba FFP3, Australijoje ir Naujojoje Zelandijoje – P2 arba P3). Dulkės, respiratoriai ir valymas išsamiai aprašyti vadove [Saugus maišymas ir vėdinimas](/guides/safe-mixing).
 
-## Buying materials {#buying-materials lang=en}
+## Žaliavų pirkimas {#buying-materials}
 
-### Where to buy
+### Kur pirkti
 
-Potters buy from ceramic suppliers, which sell clay, glaze materials and tools. The table shows some for your country, each checked on the shop's own site, and you can choose another country to see its shops. Stock changes, so check before you order. Large producers such as Sibelco and Imerys sell to industry; potters buy their materials through shops like these. The ceramics reference site Digitalfire keeps a directory of supplier stores for other places.
+Keramikai perka iš keramikos reikmenų tiekėjų, kurie parduoda molį, glazūrų žaliavas ir įrankius. Lentelėje pateikta keletas jūsų šalies tiekėjų, kiekvienas patikrintas jo paties svetainėje; pasirinkę kitą šalį, pamatysite jos parduotuves. Prekių asortimentas keičiasi, todėl prieš užsakydami pasitikrinkite. Stambūs gamintojai, tokie kaip Sibelco ir Imerys, parduoda pramonei; keramikai jų žaliavas perka per tokias parduotuves kaip šios. Kitų vietų tiekėjų parduotuvių katalogą tvarko keramikos žinių svetainė Digitalfire.
 
 ::shops
 
-### How much to buy
+### Kiek pirkti
 
-The standard sack is **50 lb (22.7 kg)** in the US and **25 kg (55 lb)** elsewhere, so the two are nearly the same. Many suppliers also sell 1, 2.5 or 5 kg packs (about 2.2, 5.5 or 11 lb) for tests. Glazy, the open recipe database, advises buying the materials you use steadily (feldspar, silica, kaolin, whiting, and frit for mid-fire) in full sacks, which are often 20 to 30% cheaper. Buy **colorants**, the metal oxides and stains that color a glaze, in small amounts: most are used at under 5%. Glazy's sample shopping lists came to about $515 for mid-fire and $397 for high-fire, at US prices.
+Standartinis maišas JAV sveria **50 lb (22,7 kg)**, o kitur – **25 kg (55 lb)**, taigi jie beveik vienodi. Daugelis tiekėjų bandymams parduoda ir 1; 2,5 arba 5 kg pakuotes (apie 2,2; 5,5 arba 11 lb). Glazy, atvira receptų duomenų bazė, pataria nuolat naudojamas žaliavas (lauko špatą{{en: feldspar}}, kvarcą{{en: silica}}, kaoliną{{en: kaolin}}, kreidą{{en: whiting}}, o vidutiniam degimui – ir fritą{{en: frit}}) pirkti pilnais maišais, kurie dažnai būna 20–30 % pigesni. **Dažiklius**{{en: colorants}} – metalų oksidus ir keramikos pigmentus{{en: stains}}, kurie nuspalvina glazūrą{{en: glaze}}, – pirkite nedideliais kiekiais: daugumos dedama mažiau nei 5 %. Glazy pavyzdiniai pirkinių sąrašai kainavo apie 515 USD vidutiniam degimui ir 397 USD aukštam degimui (JAV kainomis).
 
-### A starter set
+### Pradinis rinkinys
 
-Glazy's core list for any temperature is silica, kaolin, feldspar, whiting, zinc oxide, and dolomite or talc. Most mid-fire (cone 5 to 6) glazes also need boron, usually from a frit, which Glazy calls "consistent and less soluble than raw borates". The set below is our suggestion, drawn from Glazy's list and a forum list. The [glazing basics guide](/guides/glazing-basics) explains what each material does.
+Glazy pagrindinis sąrašas bet kuriai temperatūrai: kvarcas, kaolinas, lauko špatas, kreida, cinko oksidas ir dolomitas arba talkas. Daugumai vidutinio degimo (Ortono piroskopai{{en: cone}} 5–6) glazūrų reikia ir boro, dažniausiai iš frito, kurį Glazy vadina „pastovios sudėties ir mažiau tirpiu nei nefrituoti boratai“. Toliau pateiktas rinkinys – mūsų pasiūlymas, sudarytas pagal Glazy sąrašą ir vieno forumo sąrašą. Ką daro kiekviena žaliava, paaiškinta vadove [Glazūravimas nuo pagrindų](/guides/glazing-basics).
 
-Table: A starter set of materials (our suggestion)
-Label: Starter set
+Table: Pradinis žaliavų rinkinys (mūsų pasiūlymas)
+Label: Pradinis rinkinys
 
-| Material                              | What to buy                                                                      |
-| ------------------------------------- | -------------------------------------------------------------------------------- |
-| Silica (also called flint; see below) | 325 mesh, the finer grade Glazy prefers for glazes                               |
-| Kaolin (china clay in the UK)         | EPK in the US; Grolleg or another china clay in the UK; NZ kaolin in New Zealand |
-| Potash feldspar                       | Whichever is current where you live, such as Mahavir in the US                   |
-| Nepheline syenite                     | Any; Glazy notes its stronger fluxing power, often used at low and mid-fire      |
-| Whiting                               | Any                                                                              |
-| Talc                                  | Any asbestos-free grade; check its SDS (see Safe mixing)                         |
-| A boron frit, for mid-fire            | Ferro 3134, 3124 or 3195; in the UK, Potterycrafts P3124 or P3195                |
-| Bentonite and colorants               | Small amounts                                                                    |
+| Žaliava                                                  | Ką pirkti                                                                                                    |
+| -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
+| Kvarcas (dar vadinamas titnagu{{en: flint}}; žr. toliau) | 325 mesh – smulkesnis malimas, kuriam Glazy teikia pirmenybę glazūroms                                       |
+| Kaolinas (JK – china clay)                               | JAV – EPK; JK – Grolleg ar kitas china clay; Naujojoje Zelandijoje – Naujosios Zelandijos kaolinas           |
+| Kalio lauko špatas                                       | Tas, kuris šiuo metu parduodamas jūsų šalyje, pvz., JAV – Mahavir                                            |
+| Nefelino sienitas{{en: nepheline syenite}}               | Bet koks; Glazy pažymi jo didesnį fliuso{{en: flux}} stiprumą; dažnai naudojamas žemam ir vidutiniam degimui |
+| Kreida                                                   | Bet kokia                                                                                                    |
+| Talkas                                                   | Bet kokia be asbesto rūšis; patikrinkite jo saugos duomenų lapą (žr. Saugus maišymas ir vėdinimas)           |
+| Boro fritas vidutiniam degimui                           | Ferro 3134, 3124 arba 3195; JK – Potterycrafts P3124 arba P3195                                              |
+| Bentonitas ir dažikliai                                  | Nedideli kiekiai                                                                                             |
 
-### Data sheets and safety data sheets
+### Techninių duomenų lapai ir saugos duomenų lapai
 
-Ask for two documents for each material. A **technical data sheet** (TDS) gives its **chemical analysis**: the share of each oxide in the powder, by weight. Glazecalc works from these, and you can add a material from a supplier's analysis on the [Materials page](/material). A **safety data sheet** (SDS) says how to handle the raw powder. Keep each SDS, and read it before you mix.
+Kiekvienai žaliavai paprašykite dviejų dokumentų. **Techninių duomenų lape** (angl. TDS) pateikiama jos **cheminė analizė**: kiekvieno oksido dalis milteliuose masės procentais. Programa Glazecalc skaičiuoja pagal šiuos duomenis, o žaliavą pagal tiekėjo analizę galite pridėti [puslapyje Žaliavos](/material). **Saugos duomenų lape** (angl. SDS) nurodyta, kaip elgtis su pačiais milteliais. Kiekvieną saugos duomenų lapą pasilikite ir perskaitykite prieš maišydami.
 
-Analyses are averages, not promises. Valentine Clays prints "MEAN VALUES. THESE DO NOT REPRESENT A SPECIFICATION" on its flint data sheet, and Glazy's analyses of Custer feldspar from different years run from about 68.5% to 72.4% silica. We suggest writing each sack's **lot number** (its batch code) in your records, so you can tell whether a change in a trusted glaze came from the material.
+Analizės – tai vidurkiai, o ne pažadai. Valentine Clays savo titnago techninių duomenų lape spausdina „VIDUTINĖS VERTĖS. JOS NĖRA SPECIFIKACIJA“, o Glazy pateikiamose skirtingų metų lauko špato Custer analizėse silicio dioksido yra nuo maždaug 68,5 % iki 72,4 %. Siūlome savo įrašuose užsirašyti kiekvieno maišo **partijos numerį** (gamybos partijos kodą), kad galėtumėte nustatyti, ar patikimos glazūros pokytį lėmė žaliava.
 
-HSE warns that crystalline silica "can be wrongly labelled as 'amorphous silica'". And an SDS is about the powder, not the pot: it says nothing about whether a fired glaze is safe for food. Only a laboratory leach test of the fired pot can show that.
+HSE įspėja, kad kristalinis silicio dioksidas „gali būti klaidingai paženklintas kaip ‚amorfinis silicio dioksidas‘“. Be to, saugos duomenų lapas kalba apie miltelius, o ne apie dirbinį: jame nieko nesakoma apie tai, ar išdegta glazūra tinkama liestis su maistu{{en: food safe}}. Tai gali parodyti tik išdegto dirbinio laboratorinis metalų išsiskyrimo tyrimas.
 
-### Names change, so buy by chemistry
+### Pavadinimai keičiasi, todėl svarbi cheminė sudėtis
 
-Brand names come and go as mines close. Custer feldspar, mined in South Dakota for more than 75 years, ran out in late 2023. When Clay Art Center switched to G-200 AU and Mahavir, about half its glazes needed adjusting. G-200 and G-200 HP are gone too, and Laguna now imports Mahavir, whose chemistry is close to G-200.
+Prekių pavadinimai atsiranda ir išnyksta, kai uždaromos kasyklos. Lauko špatas Custer, daugiau nei 75 metus kastas Pietų Dakotoje, išseko 2023 m. pabaigoje. Kai bendrovė Clay Art Center perėjo prie žaliavų G-200 AU ir Mahavir, maždaug pusę jos glazūrų teko koreguoti. G-200 ir G-200 HP taip pat nebėra, o Laguna dabar importuoja Mahavir, kurio cheminė sudėtis artima G-200.
 
-**Gerstley Borate**, a natural boron mineral in many older recipes, has been scarce since its mine closed in 2000, though New Mexico Clay reported in November 2025 that Laguna was supplying "Gerstley Borate Original". Sources disagree about **Gillespie Borate** as a replacement. Its maker sells it as pound-for-pound. Berkeley Potters Studio says it "is not a direct substitute", and Digitalfire found it changed a glaze's color. The safe course is to compare the two by their oxides, then test.
+**Gerstley Borate** – natūralus boro mineralas, esantis daugelyje senesnių receptų, – sunkiai gaunamas nuo tada, kai 2000 m. buvo uždaryta jo kasykla, nors New Mexico Clay 2025 m. lapkritį pranešė, kad Laguna tiekia „Gerstley Borate Original“. Šaltiniai nesutaria, ar jį gali pakeisti **Gillespie Borate**. Gamintojas jį parduoda kaip pakaitalą svaras už svarą. Berkeley Potters Studio teigia, kad jis „nėra tiesioginis pakaitalas“, o Digitalfire nustatė, kad jis pakeitė glazūros spalvą. Saugiausia – palyginti abi žaliavas pagal jų oksidus, tada išbandyti.
 
-Regional names differ too. In North America, **flint**, quartz and silica mean the same ground silica, and Digitalfire says you probably won't find true flint powder from suppliers. In the UK, flint is its own product: Valentine's is calcined (heated) silica. Both are nearly pure silica, so we expect them to be close, but check the analysis. For kaolin, Glazy says one-for-one swaps, such as EPK for a china clay, "often work just fine, especially when amounts are \<10%".
+Skiriasi ir regioniniai pavadinimai. Šiaurės Amerikoje **titnagas** (flint), kvarcas (quartz) ir silicio dioksidas (silica) reiškia tą patį maltą silicio dioksidą, o Digitalfire teigia, kad tikrų titnago miltelių pas tiekėjus greičiausiai nerasite. Jungtinėje Karalystėje titnagas yra atskiras produktas: Valentine Clays titnagas – kalcinuotas (iškaitintas) silicio dioksidas. Abu yra beveik grynas silicio dioksidas, todėl tikimės, kad jie artimi, bet patikrinkite analizę. Dėl kaolino Glazy teigia, kad pakeitimai vienas už vieną, pvz., EPK vietoj china clay, „dažnai visai pavyksta, ypač kai kiekiai \<10 %“.
 
-Many recipes name materials that are sold in one country and not another. The table below takes each material in Glazecalc's library that is not sold where you buy, and finds the closest of its kind that is, by their analyses. The figure is how far apart the two are: the grams by which their fired oxides differ, per 100 g of material, added up over every oxide. Within about 15 g, one can usually stand in for the other in a first test. The names carry the makers' and shops' own codes, so you can ask for them by name.
+Daugelyje receptų nurodomos žaliavos, kurios parduodamos vienoje šalyje, bet ne kitoje. Toliau esanti lentelė kiekvienai programos Glazecalc bibliotekos žaliavai, kuri neparduodama ten, kur perkate, pagal analizes suranda artimiausią tos pačios rūšies žaliavą, kuri ten parduodama. Skaičius rodo, kiek jos skiriasi: kiek gramų skiriasi jų oksidai po degimo, skaičiuojant 100 g žaliavos ir sudėjus visus oksidus. Jei skirtumas ne didesnis kaip maždaug 15 g, per pirmąjį bandymą viena paprastai gali pakeisti kitą. Pavadinimuose nurodyti gamintojų ir parduotuvių kodai, todėl galite jų klausti pagal pavadinimą.
 
 ::local-equivalents
 
 > [!NOTE]
-> Glazecalc compares materials by what they bring to the fired glaze, not by name. A [recipe](/recipe) with a material no longer made says what is used now. **Suggest amounts and compare** works the amounts out again for a substitute, and **Match with what I have** makes the recipe again from the materials on your shelf. Both match the fired oxides only, so test a small batch first.
+> Programa Glazecalc žaliavas lygina pagal tai, ką jos duoda išdegtai glazūrai, o ne pagal pavadinimą. [Recepto puslapyje](/recipe), kai žaliava nebegaminama, nurodoma, kas naudojama dabar. Funkcija **Pasiūlyti kiekius ir palyginti** iš naujo apskaičiuoja kiekius pakaitalui, o funkcija **Sudaryti iš to, ką turiu** sudaro receptą iš naujo iš jūsų turimų žaliavų. Abi derina tik oksidus po degimo, todėl pirmiausia išbandykite nedidelį užmaišą.
 
 ## Žaliavų ir glazūrų laikymas {#storing}
 
@@ -163,55 +163,55 @@ Label: Sieto akučių dydis
 | Glazūros su dažikliais{{en: colorants}}, pvz., kobaltu ar geležimi | 100–120 mesh          |
 | Pelenų glazūros ir kitos su stambiai maltomis žaliavomis           | 60–80 mesh            |
 
-## Specific gravity {#specific-gravity lang=en}
+## Santykinis tankis {#specific-gravity}
 
-**Specific gravity** (SG) tells you how much powder is in your slurry. It is the weight of a volume of glaze divided by the weight of the same volume of water. Water is 1.00, and a glaze at {{SG 1.45}} weighs 145 g per 100 mL. Mixing to a measured SG is how you get the same thickness, and the same coat, every time. It has no units, so it is the same in grams or ounces.
+**Santykinis tankis**{{en: specific gravity}} (angl. SG) parodo, kiek miltelių yra glazūros suspensijoje{{en: slurry}}. Tai tam tikro glazūros{{en: glaze}} tūrio masė, padalyta iš tokio pat vandens tūrio masės. Vandens santykinis tankis – 1,00, o glazūros, kurios rodmuo {{SG 1.45}}, 100 mL sveria 145 g. Maišydami iki išmatuoto santykinio tankio, kaskart gausite tą patį tirštumą ir tokį pat sluoksnį. Santykinis tankis neturi matavimo vienetų, todėl yra toks pat ir gramais, ir uncijomis.
 
-### Measure it by weighing 100 mL
+### Matavimas sveriant 100 mL
 
-1. Stir the glaze so nothing has settled.
-2. Put a 100 mL **graduated cylinder** (a tall, marked measuring tube) or a 100 mL syringe on the scale, and tare it.
-3. Fill it with glaze to exactly 100 mL, reading the mark at eye level.
-4. Weigh it and divide the grams by 100: 145 g is SG 1.45.
+1. Išmaišykite glazūrą, kad niekas nebūtų nusėdę.
+2. Ant svarstyklių padėkite 100 mL **matavimo cilindrą** (aukštą matavimo indą su padalomis) arba 100 mL švirkštą ir nunulinkite svarstykles.
+3. Pripildykite jį glazūros lygiai iki 100 mL žymos, žymą žiūrėdami akių lygyje.
+4. Pasverkite ir gramus padalykite iš 100: 145 g atitinka santykinį tankį 1,45.
 
-Digitalfire also marks a cup at the level of 500 g of water, fills it to the mark with glaze, and divides the weight by 500; a bigger, fuller measure is more accurate. A **hydrometer**, a float read where it sits in the glaze, is quick but can misread thick or gelled glazes. UK hydrometers, such as Potclays', read in degrees Baumé (°Bé). By our arithmetic, SG = 145 ÷ (145 − °Bé), so 46 °Bé is about 1.46. Older UK books give a **pint weight**, the ounces in an imperial pint of glaze: divide it by 20, so 29 oz is about SG 1.45 (also our arithmetic).
+Digitalfire taip pat pasižymi puodelyje 500 g vandens lygį, pripildo jį glazūros iki žymos ir masę padalija iš 500; didesnis ir pilnesnis matas yra tikslesnis. **Areometras** – plūdė, kurios rodmuo nuskaitomas pagal tai, kiek ji panyra glazūroje, – greitas, bet tirštose ar sutirštintose glazūrose gali rodyti netiksliai. Jungtinės Karalystės areometrai, pvz., Potclays, rodo Baumé laipsniais (°Bé). Mūsų skaičiavimu, santykinis tankis = 145 ÷ (145 − °Bé), taigi 46 °Bé atitinka maždaug 1,46. Senesnėse Jungtinės Karalystės knygose nurodoma **pintos masė** – kiek uncijų sveria imperinė pinta glazūros: padalykite ją iš 20, taigi 29 oz atitinka maždaug santykinį tankį 1,45 (tai irgi mūsų skaičiavimas).
 
-### What to aim for
+### Siektinos vertės
 
-Sources disagree, most of all on brushing and spraying, where the UK supplier Potclays gives much higher figures (its own are "for guidance only"). Treat every number as a starting point. Digitalfire's core advice is to find the SG and gelling that work for each glaze, then repeat them and write them down.
+Šaltiniai nesutaria, labiausiai dėl tepimo teptuku ir purškimo, kur Jungtinės Karalystės tiekėjas Potclays nurodo daug didesnes vertes (jo paties vertės – „tik orientacinės“). Kiekvieną skaičių laikykite atspirties tašku. Pagrindinis Digitalfire patarimas – kiekvienai glazūrai rasti tinkamą santykinį tankį ir sutirštinimą, tada juos kartoti ir užsirašyti.
 
-Table: Specific gravity targets, where sources disagree
-Label: Specific gravity targets
+Table: Siektinas santykinis tankis (šaltiniai nesutaria)
+Label: Siektinas santykinis tankis
 
-| Use      | Digitalfire and Glazy                                                                                                                 | Potclays (UK)                               | Safe starting point                                     |
-| -------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------- |
-| Dipping  | {{SG 1.40}} (for a 5-second dip) to {{SG 1.50}} (for a 1-second dip); home-mixed glazes that are gelled do best at {{SG 1.43–1.45}}   | Clear {{SG 1.46–1.48}}; colored {{SG 1.61}} | {{SG 1.45}}; thin to {{SG 1.43}} and gel it if it drips |
-| Brushing | {{SG 1.25}} (thin clear) to {{SG 1.55}} (dark detail)                                                                                 | {{SG 1.71–1.81}}                            | Follow the product; use CMC gum or a brushing medium    |
-| Spraying | No figure; Hopper, writing for Ceramic Arts Network, says much thinner, with a deflocculant (an additive that makes a slurry runnier) | {{SG 1.71}}                                 | No reliable number; spray only in a spray booth         |
+| Paskirtis       | Digitalfire ir Glazy                                                                                                                                      | Potclays (JK)                                    | Saugus atspirties taškas                                                                       |
+| --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------ | ---------------------------------------------------------------------------------------------- |
+| Merkimas        | {{SG 1.40}} (merkiant 5 sekundes) – {{SG 1.50}} (merkiant 1 sekundę); namuose maišytoms sutirštintoms glazūroms geriausia {{SG 1.43–1.45}}                | Skaidri: {{SG 1.46–1.48}}; spalvota: {{SG 1.61}} | {{SG 1.45}}; jei varva, skieskite, kol rodmuo bus {{SG 1.43}}, ir sutirštinkite                |
+| Tepimas teptuku | {{SG 1.25}} (skysta skaidri) – {{SG 1.55}} (tamsios detalės)                                                                                              | {{SG 1.71–1.81}}                                 | Laikykitės produkto nurodymų; naudokite glazūros klijus CMC arba priemonę glazūravimui teptuku |
+| Purškimas       | Vertės nėra; Ceramic Arts Network straipsnyje (Hopper) rašoma: daug skystesnė, su deflokuliantu{{en: deflocculant}} (priedu, kuris suskystina suspensiją) | {{SG 1.71}}                                      | Patikimos vertės nėra; purkškite tik purškimo kameroje                                         |
 
-To check a dipping glaze by eye, AMACO dips for 5 seconds and looks for a coat about as thick as a US dime. Digitalfire fires tiles dipped for 5 seconds to check.
+AMACO glazūrą merkimui tikrina akimis: merkia 5 sekundes ir žiūri, ar sluoksnis maždaug tokio storio kaip JAV moneta dime. Digitalfire tikrinimui išdegina 5 sekundes merktus bandinius{{en: test tiles}}.
 
-### Water for a target SG: our estimate
+### Vanduo norimam santykiniam tankiui: mūsų įvertis
 
-The table below is our own arithmetic, not a source's. It assumes the powder's particles have a density of 2.6 g per cm³, which is an assumption, not a measurement. Clay, soluble materials and gelling all change a real glaze, so use it to start, then measure. As a check, it predicts {{SG 1.44}} for equal weights of powder and water, close to Digitalfire's measured {{SG 1.46}}. It also shows that 70 to 80 mL per 100 g starts you above {{SG 1.50}}, thicker than you need.
+Toliau pateikta lentelė – mūsų pačių skaičiavimas, ne šaltinio. Joje laikoma, kad miltelių dalelių tankis yra 2,6 g/cm³, – tai prielaida, o ne matavimas. Molis, tirpios žaliavos ir sutirštinimas keičia tikrą glazūrą, todėl lentele naudokitės pradžiai, o tada matuokite. Patikrinimui: vienodų miltelių ir vandens masių rodmuo pagal ją būtų {{SG 1.44}}, o Digitalfire išmatavo artimą – {{SG 1.46}}. Ji taip pat rodo, kad pradėjus nuo 70–80 mL 100 g rodmuo bus didesnis nei {{SG 1.50}} – glazūra bus tirštesnė, nei reikia.
 
-Table: Water for a target specific gravity (our estimate)
-Label: Water for a target specific gravity
+Table: Vanduo norimam santykiniam tankiui (mūsų įvertis)
+Label: Vanduo norimam santykiniam tankiui
 
-| Target      | Per 100 g of powder |  Per kilogram |         Per pound |
-| ----------- | ------------------: | ------------: | ----------------: |
-| {{SG 1.40}} |        about 115 mL | about 1150 mL | about 18 US fl oz |
-| {{SG 1.45}} |         about 98 mL |  about 980 mL | about 15 US fl oz |
-| {{SG 1.50}} |         about 85 mL |  about 850 mL | about 13 US fl oz |
-| {{SG 1.60}} |         about 64 mL |  about 640 mL | about 10 US fl oz |
+| Siektinas rodmuo | 100 g miltelių |   Kilogramui |            Svarui |
+| ---------------- | -------------: | -----------: | ----------------: |
+| {{SG 1.40}}      |    apie 115 mL | apie 1150 mL | apie 18 JAV fl oz |
+| {{SG 1.45}}      |     apie 98 mL |  apie 980 mL | apie 15 JAV fl oz |
+| {{SG 1.50}}      |     apie 85 mL |  apie 850 mL | apie 13 JAV fl oz |
+| {{SG 1.60}}      |     apie 64 mL |  apie 640 mL | apie 10 JAV fl oz |
 
-### Epsom salts, CMC gum and bentonite
+### Magnio sulfatas (Epsom druska), glazūros klijai CMC ir bentonitas
 
-**Epsom salts** make a glaze gel slightly when it stands still and flow again when it is stirred. This is called **flocculating** it, and a glaze that behaves this way is **thixotropic**: it goes on more evenly, drips less and settles less. Digitalfire suggests starting at about 2 g per gallon once the SG is right (roughly 0.5 g per liter, our conversion) and tuning the amount each time you mix, since no recipe should fix the dose. We suggest dissolving it in a little hot water first. In a Digitalfire example, a glaze at {{SG 1.45}} dripped, so water brought it down to {{SG 1.43}} and Epsom salts gelled it back to creamy, and it went on evenly. A rough check: stir, stop and watch. A gelled glaze moves on for about 2 or 3 seconds, then stops and springs back a little.
+**Magnio sulfatas (Epsom druska)** glazūrą, kai ji stovi ramiai, šiek tiek sutirština, o pamaišius ji vėl teka. Tai vadinama **flokuliacija**{{en: flocculating}}, o taip besielgianti glazūra yra **tiksotropinė**{{en: thixotropic}}: ji tolygiau dengiasi, mažiau varva ir mažiau nusėda. Digitalfire siūlo, kai santykinis tankis jau tinkamas, pradėti nuo maždaug 2 g galonui (mūsų perskaičiavimu, maždaug 0,5 g litrui) ir kiekį derinti kaskart maišant, nes dozės neturėtų nustatyti joks receptas. Siūlome druską pirmiausia ištirpinti nedideliame kiekyje karšto vandens. Digitalfire pavyzdyje glazūra ({{SG 1.45}}) varvėjo, todėl ją praskiedė vandeniu ({{SG 1.43}}), o Epsom druska vėl sutirštino iki kreminės konsistencijos, ir glazūra pasidengė tolygiai. Apytikris patikrinimas: išmaišykite, sustokite ir stebėkite. Sutirštinta glazūra dar maždaug 2 ar 3 sekundes juda, tada sustoja ir šiek tiek grįžta atgal.
 
-**CMC gum** (carboxymethyl cellulose) makes a slurry stickier and slower to dry, and leaves a harder coat that holds to the pot. It matters most for brushing glazes and glazes high in frit. Digitalfire's example blends 3.75 g into 1000 g of slurry, and it has to go in with a blender. A glaze with CMC will not gel with Epsom salts, and since microbes feed on the gum, it can change in the bucket and start to smell.
+**Glazūros klijai CMC** (karboksimetilceliuliozė) padaro suspensiją lipnesnę ir lėčiau džiūstančią bei palieka kietesnį sluoksnį, kuris laikosi ant dirbinio. Jie svarbiausi glazūroms tepimui teptuku ir glazūroms, kuriose daug frito{{en: frit}}. Digitalfire pavyzdyje į 1000 g suspensijos įmaišoma 3,75 g, ir tai būtina daryti trintuvu. Glazūra su CMC nuo Epsom druskos nesutirštėja, o kadangi klijais minta mikrobai, ji kibire gali pakisti ir pradėti dvokti.
 
-**Bentonite**, a very fine clay, helps hold the other particles in suspension. Dipping glazes usually rely on 15 to 25% raw clay for this. For a recipe short of clay, about 1 to 3% bentonite helps; Digitalfire says a glaze with more than 15% clay should not need more than 1%.
+**Bentonitas** – labai smulkus molis – padeda kitoms dalelėms išsilaikyti suspensijoje. Glazūrose merkimui tam paprastai naudojama 15–25 % nedegto molio. Receptui, kuriame molio trūksta, padeda maždaug 1–3 % bentonito; pasak Digitalfire, glazūrai, kurioje yra daugiau kaip 15 % molio, neturėtų reikėti daugiau kaip 1 %.
 
 ## Bandiniai ir linijinės bandinių serijos {#testing}
 
@@ -276,7 +276,7 @@ Label: Įrašo šablonas
 > [!NOTE]
 > Programoje Glazecalc įrašytame [recepte](/recipe) laikomas pats receptas. [Degimo žurnale](/firing) užrašomas kiekvienas degimas: krosnis, data, laikas, temperatūros, piroskopai ir pastabos. [Užrašuose](/notes) laikoma visa kita, pvz., anksčiau aprašytas užmaišo įrašas ir ką parodė kiekvienas bandinys{{en: tile}}.
 
-## Sources {#sources lang=en}
+## Šaltiniai {#sources}
 
 - [Glazy: Raw materials](https://help.glazy.org/concepts/materials)
 - [Glazy: Specific gravity](https://help.glazy.org/testing/specific-gravity)

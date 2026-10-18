@@ -49,6 +49,10 @@
         "title": "Vadovai",
         "text": "Nuo to, kas yra glazūra, iki jos degimo, ir kaip visą tą laiką užtikrinti visų saugumą."
       },
+      "trash": {
+        "title": "Šiukšlinė",
+        "text": "Grąžinkite tai, ką pašalinote per pastarąsias 30 dienų."
+      },
       "account": {
         "title": "Paskyra ir nustatymai",
         "text": "Nustatymai, jūsų slaptažodis, dviejų žingsnių prisijungimas ir visko, ką čia laikote, atsisiuntimas."
@@ -116,6 +120,7 @@
   },
   "trash": {
     "title": "Šiukšlinė",
+    "lead": "Tai, ką pašalinate (receptus, žaliavas, priedus, užrašus, degimo žurnalus ir patarimus), čia laukia 30 dienų. Grąžinkite arba panaikinkite visam laikui.",
     "listHeading": "Šiukšlinėje",
     "none": "Šiukšlinė tuščia.",
     "untitled": "Be pavadinimo",

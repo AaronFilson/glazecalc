@@ -45,6 +45,7 @@
     "account": "Konto",
     "trialAccount": "Testzugang",
     "accountTitle": "Ihr Konto und Ihre Einstellungen",
+    "trash": "Papierkorb",
     "signOut": "Abmelden",
     "createAccount": "Kostenloses Konto erstellen"
   },
@@ -90,7 +91,8 @@
     "advice": "Praktische Tipps von Glazecalc zum Anmischen, Glasieren und Brennen, dazu Ihre eigenen Tipps. Kostenlos für Töpferei und Keramik.",
     "about": "Glazecalc ist ein kostenloser Open-Source-Rechner für Glasurchemie, mit Notizbuch. Sehen Sie, wie er die Segerformel (UMF) berechnet und wie er aufgebaut ist.",
     "privacy": "Wie Glazecalc mit Ihren Daten umgeht: keine Werbung, keine Analyse, kein Tracking, kein Verkauf. Was gespeichert wird, warum und wie Sie Ihre Rechte nutzen.",
-    "signup": "Kostenloses Konto bei Glazecalc erstellen, für Ihre Glasurrezepte, Rohstoffe, Notizen und Brennprotokolle. Keine Werbung, und Ihre Daten werden nie verkauft."
+    "signup": "Kostenloses Konto bei Glazecalc erstellen, für Ihre Glasurrezepte, Rohstoffe, Notizen und Brennprotokolle. Keine Werbung, und Ihre Daten werden nie verkauft.",
+    "imageAlt": "Die Startseite von Glazecalc: kostenlose Glasurchemie für die Töpferei, neben einem Foto gebrannter Kegelsätze."
   },
   "notices": {
     "dismiss": "Schließen",
@@ -285,6 +287,7 @@
     "close": "Schließen"
   },
   "unity": {
+    "fluxes": "Flussmittel – R₂O und RO",
     "stabilizers": "Stabilisatoren – R₂O₃",
     "glassFormers": "Glasbildner – RO₂",
     "wildcards": "Sonstige Oxide",

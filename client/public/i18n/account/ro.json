@@ -207,6 +207,11 @@
     "recipes": "Rețete (CSV)",
     "materials": "Materii prime (CSV)"
   },
+  "trash": {
+    "heading": "Coșul de reciclare",
+    "text": "Ce ștergeți din caietul dumneavoastră așteaptă 30 de zile în coșul de reciclare. De acolo puteți pune la loc sau șterge definitiv.",
+    "open": "Deschideți coșul de reciclare"
+  },
   "shared": {
     "heading": "Rețete partajate",
     "text": "Rețetele pe care le partajați printr-un link, pe care le poate citi oricine are linkul, fără cont. Un link se arată o singură dată, când este creat, deci nu poate fi arătat aici. Ca să partajați din nou o rețetă, creați un link nou la Mai multe, în rețetă.",
@@ -301,6 +306,7 @@
         "saved": "S-a salvat: arderea la conuri Orton."
       },
       "sk": {
+        "label": "La conuri SK, JIS R 8101",
         "example": "SK 4a, SK 8",
         "saved": "S-a salvat: arderea la conuri SK."
       },

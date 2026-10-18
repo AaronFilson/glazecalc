@@ -370,83 +370,83 @@ Samonośne stożki Ortona są sprzedawane w Japonii pod nazwą 立つゼーゲ�
 
 :::
 
-## Bisque firing {#bisque lang=en}
+## Wypał biskwitowy {#bisque}
 
-The **bisque** firing (biscuit in the UK) is the first, lower firing that turns dry clay into hard, porous ware ready to glaze. It is usually fired to cone 06–04, {{1828–1945 °F; 998–1063 °C}} on Orton's chart; UK potters often fire to around {{1000 °C; 1832 °F}}, near cone 06. The bisque should stay porous, "generally more than 15%" (Digitalfire), so it soaks water out of the glaze. Too soft a bisque takes glaze on too thick, which then cracks and **crawls** (pulls back into islands, leaving bare clay). Under-fired bisque also "continues to shrink during glaze firing", which spoils the glaze fit. Loading is forgiving: pieces may touch, lids can be fired on their pots, and bowls go rim to rim rather than nested.
+**Wypał biskwitowy**{{en: bisque}} (w Wielkiej Brytanii biscuit) to pierwszy, niższy wypał, który zmienia suchą glinę w twarde, porowate wyroby gotowe do szkliwienia. Zwykle wypala się go do stożka{{en: cone}} 06–04, czyli {{1828–1945 °F; 998–1063 °C}} według tabeli Ortona; brytyjscy ceramicy często wypalają do około {{1000 °C; 1832 °F}}, w pobliżu stożka 06. Biskwit powinien pozostać porowaty, „zwykle ponad 15%” (Digitalfire), żeby wchłaniał wodę ze szkliwa{{en: glaze}}. Zbyt miękki biskwit przyjmuje za grubą warstwę szkliwa, która potem pęka i **zbiega się**{{en: crawls}} (ściąga się w wysepki, odsłaniając glinę). Niedopalony biskwit ponadto „nadal się kurczy podczas wypału szkliwa”, co psuje dopasowanie szkliwa do czerepu{{en: glaze fit}}. Załadunek wiele wybacza: wyroby mogą się stykać, pokrywki można wypalać na ich naczyniach, a miski ustawia się brzegiem do brzegu, a nie jedna w drugiej.
 
-### Why the early part goes slowly
+### Dlaczego początek wypału idzie powoli
 
-Water expands more than a thousandfold as it turns to steam, so damp ware has to be dried slowly. L&L and Orton advise that "Special care should be taken below 1500°F (815°C) to heat the body evenly", and that carbon must be burned out before about {{1200 °F; 650 °C}}. Above {{1500 °F; 816 °C}} the kiln can climb faster.
+Woda zwiększa objętość ponad tysiąckrotnie, gdy zamienia się w parę, więc wilgotne wyroby trzeba suszyć powoli. L&L i Orton zalecają, by „poniżej 1500°F (815°C) szczególnie dbać o równomierne nagrzewanie masy”, oraz by wypalić węgiel przed osiągnięciem około {{1200 °F; 650 °C}}. Powyżej {{1500 °F; 816 °C}} temperatura w piecu może rosnąć szybciej.
 
-Table: What happens as a bisque heats
-Label: What happens in a bisque
+Table: Co się dzieje, gdy biskwit się nagrzewa
+Label: Przebieg wypału biskwitowego
 
-|                        Temperature | What happens                                                |
-| ---------------------------------: | ----------------------------------------------------------- |
-|         {{300–500 °F; 149–260 °C}} | Binders burn off                                            |
-|           About {{450 °F; 232 °C}} | Organic matter starts to burn                               |
-|           Up to {{700 °F; 371 °C}} | Water keeps leaving the clay until above this temperature   |
-|        {{842–1022 °F; 450–550 °C}} | Chemically bound water leaves the clay                      |
-|                {{1063 °F; 573 °C}} | Quartz inversion: silica in the clay expands suddenly       |
-|          Above {{1112 °F; 600 °C}} | Sulfur burns out                                            |
-| Up to {{1200–1400 °F; 649–760 °C}} | Natural carbon burns off; this should finish below red heat |
-|          Above {{1544 °F; 840 °C}} | Calcium carbonate breaks down                               |
+|                     Temperatura | Co się dzieje                                                                                 |
+| ------------------------------: | --------------------------------------------------------------------------------------------- |
+|      {{300–500 °F; 149–260 °C}} | Wypalają się spoiwa                                                                           |
+|        Około {{450 °F; 232 °C}} | Zaczynają się palić substancje organiczne                                                     |
+|           Do {{700 °F; 371 °C}} | Woda uchodzi z gliny aż do przekroczenia tej temperatury                                      |
+|     {{842–1022 °F; 450–550 °C}} | Z gliny uchodzi woda związana chemicznie                                                      |
+|             {{1063 °F; 573 °C}} | Inwersja kwarcu: krzemionka w glinie gwałtownie się rozszerza                                 |
+|     Powyżej {{1112 °F; 600 °C}} | Wypala się siarka                                                                             |
+| Do {{1200–1400 °F; 649–760 °C}} | Wypala się węgiel naturalnie zawarty w glinie; powinno się to zakończyć przed czerwonym żarem |
+|     Powyżej {{1544 °F; 840 °C}} | Rozkłada się węglan wapnia                                                                    |
 
-**Quartz inversion** is the sudden change in size of the silica in clay at {{1063 °F; 573 °C}}: it expands on the way up and contracts on the way down. L&L's Slow Bisque slows through it, between {{1000 °F; 538 °C}} and {{1100 °F; 593 °C}}. Digitalfire found this "unnecessary for bisque firings", and Ceramics Monthly says it mainly matters when cooling dense ware. Slowing costs little, so our suggestion is to keep it for thick pieces.
+**Inwersja kwarcu**{{en: quartz inversion}} to nagła zmiana wymiarów krzemionki{{en: silica}} w glinie w temperaturze {{1063 °F; 573 °C}}: przy grzaniu krzemionka się rozszerza, a przy chłodzeniu kurczy. Program Slow Bisque firmy L&L zwalnia w tym zakresie, między {{1000 °F; 538 °C}} a {{1100 °F; 593 °C}}. Digitalfire uznał to za „zbędne przy wypałach biskwitowych”, a Ceramics Monthly pisze, że ma to znaczenie głównie przy chłodzeniu zwartych wyrobów. Spowolnienie niewiele kosztuje, więc proponujemy zachować je dla grubych wyrobów.
 
-### Candling: drying in the kiln
+### Podsuszanie: suszenie w piecu
 
-**Candling** means holding the kiln at a low temperature, with the lid propped or the vent running, until the last moisture has left the ware. Sources disagree about the temperature:
+**Podsuszanie**{{en: candling}} polega na utrzymywaniu pieca w niskiej temperaturze, z uchyloną pokrywą lub z włączonym wyciągiem, aż z wyrobów ujdzie resztka wilgoci. Źródła nie zgadzają się co do temperatury:
 
-Table: Candling temperatures
+Table: Temperatury podsuszania
 
-| Source           | Candling                                                                                 |
-| ---------------- | ---------------------------------------------------------------------------------------- |
-| Ceramics Monthly | Just short of boiling; for example, climbing at {{25 °F/h; 14 °C/h}} for 4–6 hours       |
-| L&L preheat      | Hold at {{150–200 °F; 66–93 °C}}                                                         |
-| Digitalfire      | Hold at {{250 °F; 121 °C}}, because holding below boiling "does not expel all the water" |
+| Źródło                    | Podsuszanie                                                                                             |
+| ------------------------- | ------------------------------------------------------------------------------------------------------- |
+| Ceramics Monthly          | Tuż poniżej temperatury wrzenia; na przykład przyrost {{25 °F/h; 14 °C/h}} przez 4–6 godzin             |
+| L&L, podgrzewanie wstępne | Przetrzymanie w {{150–200 °F; 66–93 °C}}                                                                |
+| Digitalfire               | Przetrzymanie w {{250 °F; 121 °C}}, bo przetrzymanie poniżej temperatury wrzenia „nie usuwa całej wody” |
 
 > [!NOTE]
-> Our starting point: climb slowly to no more than about {{250 °F; 121 °C}}, and hold until a mirror at the vent stays clear. Hold overnight for thick or damp ware.
+> Nasz punkt wyjścia: powoli podnieść temperaturę do najwyżej około {{250 °F; 121 °C}} i trzymać, aż lusterko przy otworze wentylacyjnym przestanie zaparowywać. Grube lub wilgotne wyroby trzymać tak przez noc.
 
-The **mirror test**: hold a room-temperature mirror at a vent hole or at the gap under a propped lid. If it fogs, water is still leaving; wait, then test again.
+**Próba lusterka**: przytrzymać lusterko o temperaturze pokojowej przy otworze wentylacyjnym lub przy szczelinie pod uchyloną pokrywą. Jeśli zaparuje, woda nadal uchodzi; odczekać i sprawdzić ponownie.
 
-### Controller schedules
+### Programy sterownika
 
-A **controller** is an electronic unit that fires the kiln through a **schedule**: a list of **segments**, each a rate of climb (the **ramp**), a target temperature and an optional hold. Below are two presets from L&L's DynaTrol and Bartlett controllers, and a schedule published by Digitalfire. "Peak" is the controller's own temperature for the cone you choose: for cone 04 it is {{1926 °F; 1052 °C}}, and for cone 06, {{1819 °F; 993 °C}}.
+**Sterownik** to urządzenie elektroniczne, które prowadzi wypał według **programu**: listy **segmentów**, z których każdy ma przyrost temperatury (**rampę**{{en: ramp}}), temperaturę docelową i opcjonalne przetrzymanie{{en: hold}}. Poniżej są dwa gotowe programy sterowników L&L DynaTrol i Bartlett oraz program opublikowany przez Digitalfire. „Temperatura maksymalna” to temperatura, którą sam sterownik przypisuje wybranemu stożkowi: dla stożka 04 jest to {{1926 °F; 1052 °C}}, a dla stożka 06 – {{1819 °F; 993 °C}}.
 
-Table: L&L and Bartlett bisque presets
-Label: Bisque presets
+Table: Programy wypału biskwitowego L&L i Bartlett
+Label: Programy biskwitowe
 
-| Segment                  |                                                           Climb to |            Slow Bisque |            Fast Bisque |
-| ------------------------ | -----------------------------------------------------------------: | ---------------------: | ---------------------: |
-| 1                        |                                                 {{250 °F; 121 °C}} |   {{80 °F/h; 44 °C/h}} |  {{120 °F/h; 67 °C/h}} |
-| 2                        |                                                {{1000 °F; 538 °C}} | {{200 °F/h; 111 °C/h}} | {{300 °F/h; 167 °C/h}} |
-| 3                        |                                                {{1100 °F; 593 °C}} |  {{100 °F/h; 56 °C/h}} |  {{150 °F/h; 83 °C/h}} |
-| 4                        | {{250 °F; 139 °C}} below the peak: {{1676 °F; 913 °C}} for cone 04 | {{180 °F/h; 100 °C/h}} | {{180 °F/h; 100 °C/h}} |
-| 5                        |                                                           The peak |   {{80 °F/h; 44 °C/h}} |  {{108 °F/h; 60 °C/h}} |
-| Heating time, empty kiln |                                                                    | About 13 hours or more |     About 10–11½ hours |
+| Segment                  |                                                                        Do temperatury |                Slow Bisque |            Fast Bisque |
+| ------------------------ | ------------------------------------------------------------------------------------: | -------------------------: | ---------------------: |
+| 1                        |                                                                    {{250 °F; 121 °C}} |       {{80 °F/h; 44 °C/h}} |  {{120 °F/h; 67 °C/h}} |
+| 2                        |                                                                   {{1000 °F; 538 °C}} |     {{200 °F/h; 111 °C/h}} | {{300 °F/h; 167 °C/h}} |
+| 3                        |                                                                   {{1100 °F; 593 °C}} |      {{100 °F/h; 56 °C/h}} |  {{150 °F/h; 83 °C/h}} |
+| 4                        | {{250 °F; 139 °C}} poniżej temperatury maksymalnej: {{1676 °F; 913 °C}} dla stożka 04 |     {{180 °F/h; 100 °C/h}} | {{180 °F/h; 100 °C/h}} |
+| 5                        |                                                                Temperatura maksymalna |       {{80 °F/h; 44 °C/h}} |  {{108 °F/h; 60 °C/h}} |
+| Czas grzania, pusty piec |                                                                                       | Około 13 godzin lub dłużej |   Około 10–11½ godziny |
 
-L&L's times are "for the fastest possible empty kilns"; a loaded kiln can take as much as four times longer, and any hold you add is extra heatwork the presets do not allow for. L&L advises Slow Bisque, with a preheat of 2–3 hours or longer, for large or damp pieces, and warns against fast firing, which "can cause defects like pinholes, cracking, and insufficient burnout".
+Czasy L&L dotyczą „najszybszych możliwych pustych pieców”; załadowany piec może potrzebować nawet cztery razy więcej czasu, a każde dodane przetrzymanie to dodatkowa praca cieplna{{en: heatwork}}, której gotowe programy nie uwzględniają. Do dużych lub wilgotnych wyrobów L&L zaleca Slow Bisque z podgrzewaniem wstępnym trwającym 2–3 godziny lub dłużej i ostrzega przed szybkim wypałem, który „może powodować wady, takie jak nakłucia, pęknięcia i niedostateczne wypalenie”.
 
-Table: Digitalfire BQ1000 bisque, to about cone 06
+Table: Digitalfire BQ1000: wypał biskwitowy do około stożka 06
 Label: Digitalfire BQ1000
 
-| Step |                   Rate |               Target | Hold                                      |
-| ---- | ---------------------: | -------------------: | ----------------------------------------- |
-| 1    | {{306 °F/h; 170 °C/h}} |   {{248 °F; 120 °C}} | 60 minutes; up to 10 hours for heavy ware |
-| 2    | {{306 °F/h; 170 °C/h}} |  {{1733 °F; 945 °C}} | None                                      |
-| 3    |  {{108 °F/h; 60 °C/h}} | {{1832 °F; 1000 °C}} | 15 minutes                                |
+| Krok |               Przyrost | Temperatura docelowa | Przetrzymanie                               |
+| ---- | ---------------------: | -------------------: | ------------------------------------------- |
+| 1    | {{306 °F/h; 170 °C/h}} |   {{248 °F; 120 °C}} | 60 minut; do 10 godzin dla ciężkich wyrobów |
+| 2    | {{306 °F/h; 170 °C/h}} |  {{1733 °F; 945 °C}} | Brak                                        |
+| 3    |  {{108 °F/h; 60 °C/h}} | {{1832 °F; 1000 °C}} | 15 minut                                    |
 
-BQ1000 takes about 7 hours 44 minutes. Its author finds up to {{500 °F/h; 278 °C/h}} fine for thin, dry ware, and slows the last step to even out the temperature through the load.
+BQ1000 trwa około 7 godzin 44 minut. Jego autor uważa, że dla cienkich, suchych wyrobów przyrost do {{500 °F/h; 278 °C/h}} jest w porządku, a ostatni krok spowalnia, żeby wyrównać temperaturę w całym wsadzie.
 
-### Controller cones and Orton's chart
+### Stożki w sterowniku a tabela Ortona
 
-L&L and Bartlett controllers use {{1926 °F; 1052 °C}} for cone 04 and {{1819 °F; 993 °C}} for cone 06, a little below Orton's {{1945 °F; 1063 °C}} and {{1828 °F; 998 °C}}; they agree at cone 6 and cone 10. Witness cones settle the difference: if they disagree with the controller, correct it with the cone offset.
+Sterowniki L&L i Bartlett przyjmują {{1926 °F; 1052 °C}} dla stożka 04 i {{1819 °F; 993 °C}} dla stożka 06, nieco poniżej wartości Ortona, {{1945 °F; 1063 °C}} i {{1828 °F; 998 °C}}; przy stożku 6 i stożku 10 wartości są zgodne. Różnicę rozstrzygają stożki kontrolne{{en: witness cones}}: jeśli nie zgadzają się ze sterownikiem, należy go poprawić korektą stożka.
 
-### On a manual kiln
+### W piecu sterowanym ręcznie
 
-A manual kiln follows the same plan by hand: dry slowly with the lid propped and the peepholes open, step the switches up from Low to Medium to High, and let the sitter end the firing. The published procedures are under Manual kilns in detail, below.
+Piec sterowany ręcznie prowadzi się według tego samego planu, tylko ręcznie: powoli suszyć przy uchylonej pokrywie i otwartych wziernikach, przestawiać przełączniki stopniowo z pozycji Niski na Średni i na Wysoki, a zakończenie wypału zostawić wyłącznikowi stożkowemu{{en: kiln sitter}}. Opublikowane procedury są opisane niżej, w części Szczegółowo o piecach sterowanych ręcznie.
 
 ## Wypał szkliwa {#glaze}
 

@@ -45,6 +45,7 @@
     "account": "Hesap",
     "trialAccount": "Deneme",
     "accountTitle": "Hesabınız ve ayarlarınız",
+    "trash": "Çöp kutusu",
     "signOut": "Oturumu kapat",
     "createAccount": "Ücretsiz hesap oluştur"
   },
@@ -90,7 +91,8 @@
     "advice": "Seramik sırı karıştırma, sırlama ve pişirim üzerine Glazecalc’tan pratik ipuçları ve kendi tavsiyeleriniz. Seramikçiler ve seramik sanatçıları için ücretsiz.",
     "about": "Glazecalc, ücretsiz ve açık kaynaklı bir seramik sır kimyası hesaplayıcısı ve defteridir. Seger formülünü (UMF) nasıl hesapladığını ve nasıl yapıldığını görün.",
     "privacy": "Glazecalc verilerinizi nasıl işler: reklam yok, analiz yok, izleme yok ve hiçbir şey satılmaz. Neler saklanır, neden ve haklarınızı nasıl kullanırsınız.",
-    "signup": "Seramik sır reçetelerinizi, hammaddelerinizi, notlarınızı ve pişirim kayıtlarınızı ücretsiz Glazecalc hesabında saklayın. Reklam yok; verileriniz asla satılmaz."
+    "signup": "Seramik sır reçetelerinizi, hammaddelerinizi, notlarınızı ve pişirim kayıtlarınızı ücretsiz Glazecalc hesabında saklayın. Reklam yok; verileriniz asla satılmaz.",
+    "imageAlt": "Glazecalc ana sayfası: çömlekçiler için ücretsiz sır kimyası, pişmiş piramit gruplarının fotoğrafının yanında."
   },
   "notices": {
     "dismiss": "Kapat",
@@ -285,6 +287,7 @@
     "close": "Kapat"
   },
   "unity": {
+    "fluxes": "Ergiticiler - R₂O ve RO",
     "stabilizers": "Stabilizatörler - R₂O₃",
     "glassFormers": "Cam yapıcılar - RO₂",
     "wildcards": "Diğer oksitler",

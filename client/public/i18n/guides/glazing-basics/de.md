@@ -18,40 +18,40 @@ Ein Rezept nennt Rohstoffe, etwa Feldspat{{en: feldspar}}, Kreide{{en: whiting}}
 > [!NOTE]
 > Eine Merkhilfe: Kieselsäure ist das Glas, die Flussmittel lassen es bei einer Temperatur schmelzen, die Ihr Ofen erreicht, und Tonerde macht es zäher, sodass es bleibt, wo Sie es aufgetragen haben.
 
-## Clay, coatings and the two firings {#clay-and-firings lang=en}
+## Ton, Überzüge und die zwei Brände {#clay-and-firings}
 
-### Clay bodies
+### Tonmassen
 
-The **clay body** is the clay a pot is made of. There are three main kinds.
+Die **Tonmasse**{{en: clay body}} ist der Ton, aus dem ein Gefäß gemacht ist. Es gibt drei Hauptarten.
 
-- **Earthenware**: a low-fire body, about cone 06–02, that stays porous. Often red or buff, it needs a glaze to hold water.
-- **Stoneware**: a mid- to high-fire body, about cone 5–10, that becomes vitreous or nearly so.
-- **Porcelain**: a white, high-fire body rich in kaolin, often translucent.
+- **Irdenware**{{en: earthenware}}: eine Masse für den niedrigen Brennbereich, etwa Kegel 06–02, die porös bleibt. Sie ist oft rot oder beige und braucht eine Glasur, um Wasser zu halten.
+- **Steinzeug**{{en: stoneware}}: eine Masse für den mittleren bis hohen Brennbereich, etwa Kegel 5–10, die dicht gesintert oder nahezu dicht wird.
+- **Porzellan**: eine weiße, kaolinreiche Masse für den hohen Brennbereich, oft durchscheinend.
 
-**Vitreous** means glassy and non-porous; **vitrification** is a body becoming so as it fires. UK potters often draw the line by temperature instead: stoneware is fired above {{2192 °F; 1200 °C}}, earthenware below. Mid fire, cone 5–6, falls just either side of that line.
+**Dicht gesintert** heißt glasig und nicht porös; die **Sinterung** ist der Vorgang, bei dem eine Masse im Brand so wird. In Großbritannien wird die Grenze oft stattdessen über die Temperatur gezogen: Steinzeug wird über {{2192 °F; 1200 °C}} gebrannt, Irdenware darunter. Der mittlere Brennbereich, Kegel 5–6, liegt knapp beiderseits dieser Grenze.
 
-### Coatings and drying
+### Überzüge und Trocknen
 
-**Slip** is clay suspended in water, for casting, joining or decorating. An **engobe** is a slip-like coating, often colored, with more non-clay materials. An **underglaze** is colored slip or oxide decoration, usually covered with a clear glaze.
+**Schlicker** ist in Wasser aufgeschlämmter Ton, zum Gießen, Verbinden oder Verzieren. Eine **Engobe** ist ein schlickerartiger, oft farbiger Überzug mit einem höheren Anteil an Rohstoffen, die kein Ton sind. Eine **Unterglasurfarbe** ist farbiger Schlicker oder eine Bemalung mit Oxiden, meist mit einer Transparentglasur überzogen.
 
-Unfired ware is **greenware** (sources disagree on whether the word covers all unfired ware or only dry ware). As it dries it becomes **leather-hard**, stiff but slightly damp, the stage for trimming and handles; then **bone dry**, with no free water left, very fragile and ready to fire.
+**Ungebrannte Ware** heißt auf Englisch **greenware** (die Quellen sind uneins, ob das Wort alle ungebrannte Ware meint oder nur trockene). Beim Trocknen wird sie zuerst **lederhart**: fest, aber noch etwas feucht, der Zeitpunkt, um abzudrehen und Henkel anzusetzen; dann **knochentrocken**: ohne freies Wasser, sehr zerbrechlich und bereit für den Brand.
 
-### The two firings
+### Die zwei Brände
 
-The first, lower firing is the **bisque** (UK: **biscuit**), usually cone 08–04 (most often 06–04), about {{1728–1945 °F; 942–1063 °C}}. It leaves ware strong but porous. Digitalfire, a glaze reference site, suggests generally more than 15% porosity, so the bisque draws water out of the glaze as it goes on. A soft bisque (cone 08–06) is more porous; a hard bisque (often cone 04) is sturdier but takes glaze less readily.
+Der erste, niedrigere Brand ist der **Schrühbrand**{{en: bisque}} (in britischen Quellen **biscuit**), meist Kegel 08–04 (am häufigsten 06–04), etwa {{1728–1945 °F; 942–1063 °C}}. Danach ist die Ware fest, aber porös. Digitalfire, eine Referenzseite zu Glasuren, empfiehlt im Allgemeinen mehr als 15 % Porosität, damit die geschrühte Ware der Glasur beim Auftragen Wasser entzieht. Niedrig geschrühte Ware (Kegel 08–06) ist poröser; hoch geschrühte (oft Kegel 04) ist fester, nimmt die Glasur aber schlechter an.
 
-Table: How the bisque changes glazing (Digitalfire)
-Label: How the bisque changes glazing
+Table: Wie der Schrühbrand das Glasieren beeinflusst (Digitalfire)
+Label: Wie der Schrühbrand das Glasieren beeinflusst
 
-| Bisque                                  | What happens                                                    |
-| --------------------------------------- | --------------------------------------------------------------- |
-| Under-fired, very absorbent             | Glaze goes on too thick, then cracks and crawls                 |
-| Over-fired, dense                       | Dipping and drying take longer                                  |
-| Fired hotter, or held longer at the top | More gas burns off now, so less bubbles through the glaze later |
+| Schrühbrand                                            | Was passiert                                                          |
+| ------------------------------------------------------ | --------------------------------------------------------------------- |
+| Zu schwach gebrannt, sehr saugfähig                    | Die Glasurschicht wird zu dick, reißt dann und rollt ab               |
+| Zu stark gebrannt, dicht                               | Tauchen und Trocknen dauern länger                                    |
+| Heißer gebrannt oder länger auf Endtemperatur gehalten | Mehr Gas brennt jetzt aus, also perlt später weniger durch die Glasur |
 
-Potclays, a UK supplier, describes biscuit firing to around {{1000 °C; 1832 °F}}, about cone 06. Reading these sources together, we suggest cone 06–04 for a first bisque: {{1828–1945 °F; 998–1063 °C}} at Orton's medium rate.
+Potclays, ein britischer Lieferant, beschreibt einen Schrühbrand auf etwa {{1000 °C; 1832 °F}}, etwa Kegel 06. Aus diesen Quellen zusammen empfehlen wir für einen ersten Schrühbrand Kegel 06–04: {{1828–1945 °F; 998–1063 °C}} bei der mittleren Heizrate nach Orton.
 
-The **glaze firing** (British potters may say **glost** firing) melts the glaze and, for stoneware, matures the clay too. **Once-firing** glazes unfired ware and fires it just once. Digitalfire reports a production case where raw-glazed ware crawled on its rims until a bisque firing cured it, so begin with two firings. [Firing a basic kiln](/guides/firing) gives schedules for both.
+Der **Glasurbrand**{{en: glaze firing}} (auch Glattbrand, in britischen Quellen **glost** firing) schmilzt die Glasur und brennt bei Steinzeug auch die Tonmasse dicht. Beim **Einbrand**{{en: once-firing}} wird ungebrannte Ware glasiert und nur ein einziges Mal gebrannt. Digitalfire berichtet von einem Fall aus der Produktion, in dem roh glasierte Ware an den Rändern abrollte, bis ein Schrühbrand das behob; beginnen Sie also mit zwei Bränden. Die Anleitung [Brennen mit einem einfachen Ofen](/guides/firing) enthält Brennkurven für beide.
 
 ## Kegel und Wärmearbeit {#cones}
 
@@ -238,30 +238,30 @@ Label: Häufige Glasurfehler
 | Ablaufen                     | Die Glasur läuft auf die Ofenplatte                                  | Zu wenig Tonerde; zu dick, etwa wo sich Güsse überlappen; viel Eisen                                                                   | Dünner auftragen; Tonerde zugeben; die Glasur deutlich oberhalb des Fußes enden lassen                                |
 | Kühlrisse{{en: dunting}}     | Risse im Gefäß durch Abkühlen oder Aufheizen                         | Schnelles Abkühlen durch den Quarzsprung{{en: quartz inversion}}, {{1063 °F; 573 °C}}; ungleich dicke Wände; schlechter Glasursitz     | Langsam durch {{1063 °F; 573 °C}} brennen, beim Aufheizen und beim Abkühlen; gleichmäßige Wände                       |
 
-## Food safety {#food-safety lang=en}
+## Lebensmitteleignung {#food-safety}
 
-**Leaching** is metal dissolving out of a fired glaze into food or drink, and a glaze can look perfect and still do it. The legal tests soak the fired piece in an acid solution and measure the lead and cadmium that come out.
+Bei der **Abgabe von Metallen**{{en: leaching}} löst sich Metall aus einer gebrannten Glasur und geht in Speisen oder Getränke über, und eine Glasur kann dabei tadellos aussehen. Bei den gesetzlich vorgesehenen Prüfungen wird das gebrannte Stück in eine saure Lösung gelegt, und das austretende Blei und Cadmium wird gemessen.
 
-### Lead-free is not the same as food-safe
+### Bleifrei ist nicht dasselbe wie lebensmittelgeeignet
 
-The rules in the US, the EU, the UK and Australia limit the lead and cadmium a fired piece releases, not what the glaze contains. "Lead-free" removes one hazard; it is not a food-safety rating. Other oxides leach too: Glazy warns that high-barium glazes "can leach and are generally not food-safe", Digitalfire says copper "can make a glaze leachable; test it", and Glazy no longer advises lead glazes for functional ware.
+Die Vorschriften in den USA, der EU, dem Vereinigten Königreich und Australien begrenzen, wie viel Blei und Cadmium ein gebranntes Stück abgibt, nicht, was die Glasur enthält. „Bleifrei“ beseitigt eine Gefahr; es ist keine Aussage über die Lebensmitteleignung{{en: food safety}}. Auch andere Oxide werden abgegeben: Glazy warnt, dass bariumreiche Glasuren „Metalle abgeben können und meist nicht lebensmittelgeeignet sind“, Digitalfire schreibt, Kupfer „kann dazu führen, dass eine Glasur Metalle abgibt; testen Sie sie“, und Glazy empfiehlt Bleiglasuren für Gebrauchsgeschirr nicht mehr.
 
-A **liner glaze** is a stable, usually clear or white glaze for surfaces that touch food. In our view, one with no colorant, barium, lead or lithium, that melts fully, does not craze and wears well, is the lower-risk choice. Lower risk is not proof.
+Eine **Innenglasur**{{en: liner glaze}} ist eine stabile, meist transparente oder weiße Glasur für Flächen, die mit Lebensmitteln in Berührung kommen. Unserer Ansicht nach ist eine Glasur ohne Färbemittel, Barium, Blei oder Lithium, die vollständig ausschmilzt, keine Haarrisse bekommt und sich wenig abnutzt, die risikoärmere Wahl. Geringeres Risiko ist kein Beweis.
 
-**Limit formulas** (Digitalfire prefers **target formulas**) give typical unity-formula ranges for stable glazes at a cone: Digitalfire's cone 6 targets put alumina at 0.285–0.64 and silica at 2.4–4.7. They guide you toward sound chemistry but prove nothing; Digitalfire avoids the word "limit" because it suggests glazes inside the ranges "are somehow safe". Glazecalc's tools for changing a recipe say when the new one goes past a recommended limit, such as a lot of boron at cone 6, and what the glaze will likely do.
+**Grenzformeln**{{en: limit formulas}} (Digitalfire spricht lieber von **Zielformeln**{{en: target formulas}}) geben typische Bereiche der Segerformel für stabile Glasuren bei einem Kegel an: Die Zielwerte von Digitalfire für Kegel 6 setzen Tonerde auf 0,285–0,64 und Kieselsäure auf 2,4–4,7. Sie lenken Sie zu einer soliden Chemie, beweisen aber nichts; Digitalfire meidet das Wort „limit“ (Grenze), weil es nahelegt, Glasuren innerhalb der Bereiche „seien irgendwie sicher“. Die Werkzeuge von Glazecalc zum Ändern eines Rezepts melden, wenn das neue Rezept eine empfohlene Grenze überschreitet, etwa viel Bor bei Kegel 6, und was die Glasur dann wahrscheinlich tut.
 
-The legal limits differ by country. The table shows those where you live, in the law's own units; choose another country to compare.
+Die gesetzlichen Grenzwerte sind von Land zu Land verschieden. Die Tabelle zeigt die Werte dort, wo Sie leben, in den Einheiten des jeweiligen Gesetzes; wählen Sie zum Vergleich ein anderes Land.
 
 ::food-limits
 
-In the US, decorative ceramic ware that looks usable for food is treated as food ware unless it carries a stick-on label and a permanent notice molded or fired onto its base, such as "Not for Food Use. May Poison Food", or has a hole through the food surface. The EU sets lead and cadmium limits in Directive 84/500/EEC, and the UK keeps the same figures in its own law. From 29 May 2026 the Netherlands, Belgium and Luxembourg allow about 130 to 150 times less lead, and about 15 times less cadmium. Australia sets limits for imported ware; we found no official limit for ware made in Australia or New Zealand.
+In den USA gilt dekorative Keramikware, die für Lebensmittel brauchbar aussieht, als Ware für Lebensmittel, es sei denn, sie trägt ein aufgeklebtes Etikett und einen dauerhaften Hinweis, der in ihren Boden geformt oder eingebrannt ist, etwa „Not for Food Use. May Poison Food“ (nicht für Lebensmittel; kann Lebensmittel vergiften), oder hat ein Loch durch die Fläche, die mit Lebensmitteln in Berührung käme. Die EU legt Grenzwerte für Blei und Cadmium in der Richtlinie 84/500/EWG fest, und das Vereinigte Königreich behält dieselben Werte in seinem eigenen Recht bei. Ab dem 29. Mai 2026 erlauben die Niederlande, Belgien und Luxemburg etwa 130- bis 150-mal weniger Blei und etwa 15-mal weniger Cadmium. Australien legt Grenzwerte für eingeführte Ware fest; für Ware, die in Australien oder Neuseeland hergestellt wird, haben wir keinen amtlichen Grenzwert gefunden.
 
-### Testing
+### Prüfen
 
-The FDA says home swab kits can show leachable lead, but Ceramics New Zealand warns that test pens are not designed for ceramics and give false positives. Treat a positive as a reason to stop using the piece, and a negative as proving nothing. A laboratory leach test of the fired piece (ASTM C738 in the US; EN 1388 or ISO 6486 in Europe) is the real answer.
+Laut FDA können Wischtests für zu Hause anzeigen, dass eine Glasur Blei abgeben kann, doch Ceramics New Zealand warnt, dass Teststifte nicht für Keramik gedacht sind und falsch positive Ergebnisse liefern. Nehmen Sie ein positives Ergebnis als Grund, das Stück nicht mehr zu benutzen, und werten Sie ein negatives nicht als Beweis. Eine Laborprüfung der Blei- und Cadmiumabgabe am gebrannten Stück (ASTM C738 in den USA; EN 1388 oder ISO 6486 in Europa) gibt die eigentliche Antwort.
 
 > [!WARNING]
-> "Food safe" means this glaze, on this clay, fired to this cone in this kiln and applied this way, releases less than the legal limits. Glazecalc can help you build a stable glaze, and **Replace lead** can rebuild an old lead recipe without lead, but no calculator can certify a pot. Only a test of the fired piece can.
+> „Lebensmittelgeeignet“{{en: food safe}} heißt: Diese Glasur, auf dieser Tonmasse, auf diesen Kegel in diesem Ofen gebrannt und auf diese Weise aufgetragen, gibt weniger ab, als die gesetzlichen Grenzwerte erlauben. Glazecalc kann Ihnen helfen, eine stabile Glasur aufzubauen, und **Blei ersetzen** kann ein altes Bleirezept ohne Blei neu aufbauen, aber kein Rechner kann ein Gefäß zertifizieren. Das kann nur eine Prüfung des gebrannten Stücks.
 
 ## Spezifisches Gewicht und Auftragen {#application}
 
@@ -298,171 +298,171 @@ Die Gase im Ofen, seine **Ofenatmosphäre**, verändern, wie Glasuren ausfallen.
 
 Jeder Ofen, auch ein Elektroofen, gibt Abgase ab; sorgen Sie also für Abluft. [Sicheres Anmischen und Lüften](/guides/safe-mixing) erklärt, wie.
 
-## Glossary {#glossary lang=en}
+## Glossar {#glossary}
 
-Additive
-: A colorant, opacifier or suspender added on top of a recipe's 100.
+Abdeckwachs (wax resist)
+: Wachs, das dort aufgetragen wird, wo keine Glasur hin darf, meist am Fuß.
 
-Alumina (Al₂O₃)
-: The main stabilizer: stops running and adds hardness. From clays and feldspars.
+Abgabe von Metallen (leaching)
+: Metalle, die sich aus einer gebrannten Glasur lösen und in Speisen oder Getränke übergehen.
 
-Ball clay
-: A plastic clay with more iron and organic matter than kaolin.
+Abplatzen (shivering)
+: Glasur, die an Kanten abplatzt, weil sie zu stark unter Druckspannung steht; eine Gefahr auf Gebrauchsgeschirr.
 
-Batch recipe
-: A glaze's raw materials by weight, usually adding up to 100.
+Abrollen (crawling)
+: Die Glasur zieht sich im Brand zu Tropfen zusammen und legt den Scherben frei.
 
-Bentonite
-: A very fine clay added at 1–3% to keep glaze from settling.
+Ball Clay
+: Ein plastischer Ton mit mehr Eisen und organischen Stoffen als Kaolin.
 
-Bisque (UK: biscuit)
-: The first, lower firing, usually cone 08–04 (most often 06–04), leaving ware strong but porous.
+Bentonit (bentonite)
+: Ein sehr feiner Ton, mit 1–3 % zugegeben, damit sich die Glasur nicht absetzt.
 
-Boron (B₂O₃)
-: Formally a glass former but used as a flux; essential from cone 06 to cone 6.
+Bor (B₂O₃; boron)
+: Formal ein Glasbildner, aber als Flussmittel eingesetzt; unverzichtbar von Kegel 06 bis Kegel 6.
 
-CMC gum
-: A cellulose gum that helps glaze brush on and stick; it burns away.
+Einbrand (once-firing, single firing)
+: Ungebrannte Ware glasieren und nur einmal brennen.
 
-Colorant and stain
-: A metal oxide or carbonate that colors glaze; a stain is a factory-made, more stable colorant.
+Entglasung (devitrification)
+: Kristalle, die früh beim Abkühlen aus dem Glas wachsen, wo sie nicht erwünscht sind.
 
-Cone
-: A calibrated ceramic pyramid that bends at a set heatwork. A witness cone shows what the pots received.
+Färbemittel und Farbkörper (colorant, stain)
+: Ein Metalloxid oder -carbonat, das Glasur färbt; ein Farbkörper ist ein industriell hergestelltes, stabileres Färbemittel.
 
-Crawling
-: Glaze pulling back into beads in firing, leaving bare clay.
+Feldspat (feldspar)
+: Ein Mineral, das Alkalien als Flussmittel zusammen mit Tonerde und Kieselsäure liefert: Kalifeldspat, Natronfeldspat oder Nephelin-Syenit.
 
-Crazing
-: Fine cracks in a glaze that shrinks more than its body; crackle when wanted.
+Flockungsmittel und Verflüssigungsmittel (flocculant, deflocculant)
+: Zusätze, die einen Glasurschlicker andicken (Bittersalz, Essig) oder verdünnen (Natronwasserglas, Darvan).
 
-Devitrification
-: Crystals growing out of the glass early in cooling, where they are not wanted.
+Flussmittel (flux)
+: Ein Oxid, das die Schmelztemperatur der Kieselsäure senkt.
 
-Dunting
-: Cracks in a pot from cooling or heating stress, often at quartz inversion, {{1063 °F; 573 °C}}.
+Fritte (frit)
+: Industriell hergestelltes Glas, geschmolzen, abgeschreckt und gemahlen, das lösliche oder giftige Oxide unlöslich macht.
 
-Earthenware
-: A low-fire body (about cone 06–02) that stays porous.
+Glänzend, seidenmatt und matt (gloss, satin, matte)
+: Spiegelnd und glatt; ein gedämpfter Schimmer; glanzlos.
 
-Feldspar
-: A mineral supplying alkali flux with alumina and silica: potash, soda or nepheline syenite.
+Glasbildner (glass former)
+: Das Oxid, das das Glas aufbaut, meist Kieselsäure.
 
-Flocculant and deflocculant
-: Additives that gel a slurry (Epsom salts, vinegar) or thin it (sodium silicate, Darvan).
+Glasur (glaze)
+: Eine Glasschicht, die im Brand schmilzt und ein Gefäß versiegelt und schmückt.
 
-Flux
-: An oxide that lowers the melting temperature of silica.
+Glasurbrand (glaze firing, UK: glost firing)
+: Der Brand, in dem die Glasur schmilzt.
 
-Food safe
-: In law, releasing less lead and cadmium than the limits in an acid test. Not the same as lead-free.
+Glasurkleber, CMC (CMC gum)
+: Ein Kleber aus Cellulose, mit dem sich Glasur besser streichen lässt und besser haftet; er brennt aus.
 
-Frit
-: Factory-made glass, melted, quenched and ground, that makes soluble or toxic oxides insoluble.
+Glasursitz (glaze fit)
+: Wie gut die Wärmeausdehnung von Glasur und Scherben zusammenpasst; bei gutem Glasursitz steht die Glasur unter leichter Druckspannung.
 
-Glass former
-: The oxide that builds the glass, usually silica.
+Glühverlust, GV (loss on ignition, LOI)
+: Gewicht, das im Brand als Wasser, Kohlendioxid, organische Stoffe oder Schwefel verloren geht.
 
-Glaze
-: A coat of glass that melts in firing to seal and decorate a pot.
+Grenzformel, Zielformel (limit formula, target formula)
+: Typische Bereiche der Segerformel für stabile Glasuren bei einem Kegel; eine Richtschnur, keine Garantie.
 
-Glaze firing (UK: glost firing)
-: The firing that melts the glaze.
+Haarrisse (crazing)
+: Feine Risse in einer Glasur, die stärker schrumpft als ihr Scherben; erwünscht heißen sie Craquelé.
 
-Glaze fit
-: How well glaze and body expansion match; a good fit leaves the glaze slightly compressed.
+Innenglasur (liner glaze)
+: Eine stabile, meist transparente oder weiße Glasur für Flächen, die mit Lebensmitteln in Berührung kommen.
 
-Gloss, satin and matte
-: Reflective and smooth; a subdued sheen; dull.
-
-Greenware
-: Unfired ware: leather-hard when stiff but damp, bone dry when no free water is left.
-
-Heatwork
-: The combined effect of temperature and time in a kiln; what cones measure.
+Irdenware (earthenware)
+: Eine Masse für den niedrigen Brennbereich (etwa Kegel 06–02), die porös bleibt.
 
 Kaolin (UK: china clay)
-: A pure white clay supplying alumina and silica; keeps glaze suspended. Australia: Eckalite.
+: Ein reiner, weißer Ton, der Tonerde und Kieselsäure liefert; hält Glasur in der Schwebe. Australien: Eckalite.
 
-Kiln wash
-: A heat-resisting coating that protects kiln shelves from drips.
+Kegel (cone)
+: Eine kalibrierte keramische Pyramide, die sich bei einer bestimmten Wärmearbeit biegt. Ein Messkegel zeigt, was die Stücke erhalten haben.
 
-Leaching
-: Metals dissolving out of a fired glaze into food or drink.
+Kieselsäure (SiO₂; silica)
+: Der Glasbildner; als Rohstoff auch Quarz oder Flint genannt.
 
-Limit formula (target formula)
-: Typical unity-formula ranges for stable glazes at a cone; a guide, not a guarantee.
+Kieselsäure-Tonerde-Verhältnis (silica to alumina ratio)
+: Kieselsäure geteilt durch Tonerde in der Segerformel: Ein höheres neigt zu Glanz, ein niedrigeres zu Matt.
 
-Line blend
-: Tests stepping one ingredient between two amounts. A triaxial blend varies three on a grid.
+Kreide (whiting)
+: Calciumcarbonat, das wichtigste Calcium-Flussmittel; verliert im Brand über 40 % seines Gewichts. Deutsche Lieferanten verkaufen es als Kreide.
 
-Liner glaze
-: A stable, usually clear or white glaze for surfaces that touch food.
+Kühlrisse (dunting)
+: Risse in einem Gefäß durch Spannungen beim Abkühlen oder Aufheizen, oft beim Quarzsprung, {{1063 °F; 573 °C}}.
 
-LOI (loss on ignition)
-: Weight lost in firing as water, carbon dioxide, organic matter or sulfur.
+Lebensmittelgeeignet (food safe)
+: Rechtlich: gibt in einer Prüfung mit Säure weniger Blei und Cadmium ab, als die Grenzwerte erlauben. Nicht dasselbe wie bleifrei.
 
-Once-firing (single firing)
-: Glazing unfired ware and firing it only once.
+Nadelstiche und Blasen (pinholing, blistering)
+: Kleine Löcher oder scharfkantige Krater, wo Gas durch die Schmelze entwichen ist.
 
-Opacifier
-: A material, such as zircon, tin oxide or titanium dioxide, that makes glaze opaque.
+Oxid (oxide)
+: Eine Verbindung eines Elements mit Sauerstoff; eine Oxidanalyse führt die Oxide in Gewichtsprozent auf.
 
-Oxidation and reduction
-: Firing with plenty of oxygen (electric kilns), or with oxygen restricted (usually gas or wood).
+Oxidation und Reduktion (oxidation, reduction)
+: Brennen mit reichlich Sauerstoff (Elektroöfen) oder mit eingeschränktem Sauerstoff (meist Gas oder Holz).
 
-Oxide
-: A compound of an element with oxygen; an oxide analysis lists them by weight percent.
+Porzellan (porcelain)
+: Eine weiße, kaolinreiche Masse für den hohen Brennbereich, oft durchscheinend.
 
-Pinholing and blistering
-: Small holes, or sharp-edged craters, where gas escaped through the melt.
+R₂O und RO
+: Die Alkalien als Flussmittel (Na₂O, K₂O, Li₂O) und die Erdalkalien als Flussmittel (CaO, MgO, BaO, SrO, dazu ZnO).
 
-Porcelain
-: A white, kaolin-rich, high-fire body, often translucent.
+Schlicker und Engobe (slip, engobe)
+: Ton in Wasser; eine Engobe ist ein schlickerartiger Überzug mit mehr Anteilen, die kein Ton sind.
 
-R₂O and RO
-: The alkali fluxes (Na₂O, K₂O, Li₂O) and alkaline-earth fluxes (CaO, MgO, BaO, SrO, with ZnO).
+Schrühbrand (bisque, UK: biscuit)
+: Der erste, niedrigere Brand, meist Kegel 08–04 (am häufigsten 06–04); danach ist die Ware fest, aber porös.
 
-Shivering
-: Glaze flaking off edges because it is over-compressed; a hazard on functional ware.
+Segerformel (unity molecular formula, UMF, Seger formula)
+: Die Oxide einer Glasur als Anzahlen von Molekülen, so umgerechnet, dass die Flussmittel zusammen 1 ergeben.
 
-Silica (SiO₂)
-: The glass former; also called flint or quartz.
+Sinterung (vitrification)
+: Eine Masse wird im Brand glasig und nicht porös.
 
-Silica to alumina ratio
-: Silica divided by alumina in the unity formula: higher tends to gloss, lower to matte.
+Spezifisches Gewicht (specific gravity, SG)
+: Das Gewicht eines Glasurschlickers im Vergleich zum gleichen Volumen Wasser. In älteren britischen Büchern: Pint-Gewicht (pint weight).
 
-Slip and engobe
-: Clay in water; an engobe is a slip-like coating with more non-clay material.
+Stabilisator (stabilizer)
+: Ein Oxid, vor allem Tonerde, das die Schmelze zäher und die Glasur beständiger macht.
 
-Specific gravity (SG)
-: A slurry's weight compared with the same volume of water. Older UK: pint weight.
+Steinzeug (stoneware)
+: Eine Masse für den mittleren bis hohen Brennbereich (etwa Kegel 5–10), die dicht gesintert oder nahezu dicht wird.
 
-Stabilizer
-: An oxide, mainly alumina, that stiffens the melt and adds durability.
+Testreihe (line blend)
+: Proben, bei denen ein Bestandteil schrittweise zwischen zwei Mengen verändert wird. Eine Dreistoffmischung variiert drei auf einem Raster.
 
-Stoneware
-: A mid- to high-fire body (about cone 5–10) that becomes vitreous or nearly so.
+Thixotropie (thixotropy)
+: Beim Rühren fließen, in Ruhe zu einem weichen Gel ansteifen.
 
-Thixotropy
-: Flowing when stirred, setting into a soft gel when still.
+Tonerde (Al₂O₃; alumina)
+: Der wichtigste Stabilisator: verhindert das Ablaufen und bringt Härte. Stammt aus Tonen und Feldspäten.
 
-Underglaze
-: Colored slip or oxide decoration, usually under a clear glaze.
+Trennmittel (kiln wash)
+: Ein hitzebeständiger Anstrich, der Ofenplatten vor Glasurtropfen schützt.
 
-Unity molecular formula (UMF, Seger formula)
-: A glaze's oxides as molecule counts, scaled so the fluxes add up to 1.
+Trübungsmittel (opacifier)
+: Ein Rohstoff wie Zirkonsilikat, Zinnoxid oder Titandioxid, der Glasur deckend macht.
 
-Vitrification
-: A body becoming glassy and non-porous in firing.
+Ungebrannte Ware (greenware)
+: Ware vor dem Brand: lederhart, wenn sie fest, aber noch feucht ist, knochentrocken, wenn kein freies Wasser mehr darin ist.
 
-Wax resist
-: Wax painted where glaze must not go, usually the foot.
+Unterglasurfarbe (underglaze)
+: Farbiger Schlicker oder Bemalung mit Oxiden, meist unter einer Transparentglasur.
 
-Whiting
-: Calcium carbonate, the main calcium flux; loses over 40% of its weight in firing. German: Kreide.
+Versatz (batch recipe)
+: Die Rohstoffe einer Glasur nach Gewicht, meist zusammen 100.
 
-## Sources {#sources lang=en}
+Wärmearbeit (heatwork)
+: Das Zusammenwirken von Temperatur und Zeit im Ofen; das, was Kegel messen.
+
+Zusatz (additive)
+: Ein Färbemittel, Trübungsmittel oder Stellmittel, das zu den 100 eines Rezepts hinzukommt.
+
+## Quellen {#sources}
 
 - [Glazy Help: Glaze](https://help.glazy.org/concepts/glaze)
 - [Glazy Help: Oxides](https://help.glazy.org/concepts/oxides)
@@ -472,7 +472,7 @@ Whiting
 - [Glazy Help: Firing](https://help.glazy.org/concepts/firing)
 - [Glazy Help: Defects](https://help.glazy.org/concepts/defects)
 - [Glazy Help: Specific gravity](https://help.glazy.org/testing/specific-gravity)
-- [Orton Ceramic Foundation: Pyrometric cone chart, °F (via The Ceramic Shop)](https://www.theceramicshop.com/technical_info/Cones/Orton-Cone-Chart-F-022-14.pdf)
+- [Orton Ceramic Foundation: Pyrometric cone chart, °F (über The Ceramic Shop)](https://www.theceramicshop.com/technical_info/Cones/Orton-Cone-Chart-F-022-14.pdf)
 - [Digitalfire: Bisque](https://digitalfire.com/glossary/bisque)
 - [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Unity molecular formula](https://digitalfire.com/glossary/unity+molecular+formula)

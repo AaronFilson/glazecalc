@@ -49,6 +49,10 @@
         "title": "Juhendid",
         "text": "Alates sellest, mis on glasuur, kuni selle põletamiseni, ning kuidas seejuures kõigi ohutus tagada."
       },
+      "trash": {
+        "title": "Prügikast",
+        "text": "Pange tagasi see, mille eemaldasite viimase 30 päeva jooksul."
+      },
       "account": {
         "title": "Konto ja seaded",
         "text": "Seaded, teie parool, kaheastmeline sisselogimine ja kõige, mida siin hoiate, allalaadimine."
@@ -116,6 +120,7 @@
   },
   "trash": {
     "title": "Prügikast",
+    "lead": "Eemaldatu (retseptid, toorained, lisaained, märkmed, põletuspäevikud ja nõuanded) ootab siin 30 päeva. Pange see tagasi või kustutage jäädavalt.",
     "listHeading": "Prügikastis",
     "none": "Prügikast on tühi.",
     "untitled": "Nimetu",

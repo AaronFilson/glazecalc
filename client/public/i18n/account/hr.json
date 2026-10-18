@@ -207,6 +207,11 @@
     "recipes": "Recepti (CSV)",
     "materials": "Sirovine (CSV)"
   },
+  "trash": {
+    "heading": "Koš za smeće",
+    "text": "Ono što uklonite iz svoje bilježnice čeka u Košu za smeće 30 dana. Odande to možete vratiti ili zauvijek izbrisati.",
+    "open": "Otvori Koš za smeće"
+  },
   "shared": {
     "heading": "Podijeljeni recepti",
     "text": "Recepti koje dijelite poveznicom i koje svatko tko ima poveznicu može čitati bez računa. Poveznica se prikazuje samo jednom, kad se izradi, pa se ovdje ne može prikazati. Da biste recept ponovno podijelili, izradite novu poveznicu u izborniku „Više” uz recept.",
@@ -301,6 +306,7 @@
         "saved": "Spremljeno: pečenje na Ortonove stošce."
       },
       "sk": {
+        "label": "Na stošce SK, JIS R 8101",
         "example": "SK 4a, SK 8",
         "saved": "Spremljeno: pečenje na stošce SK."
       },

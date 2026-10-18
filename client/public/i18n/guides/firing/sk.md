@@ -370,83 +370,83 @@ Samostojné Ortonove kužele sa v Japonsku predávajú pod názvom 立つゼー�
 
 :::
 
-## Bisque firing {#bisque lang=en}
+## Prežah {#bisque}
 
-The **bisque** firing (biscuit in the UK) is the first, lower firing that turns dry clay into hard, porous ware ready to glaze. It is usually fired to cone 06–04, {{1828–1945 °F; 998–1063 °C}} on Orton's chart; UK potters often fire to around {{1000 °C; 1832 °F}}, near cone 06. The bisque should stay porous, "generally more than 15%" (Digitalfire), so it soaks water out of the glaze. Too soft a bisque takes glaze on too thick, which then cracks and **crawls** (pulls back into islands, leaving bare clay). Under-fired bisque also "continues to shrink during glaze firing", which spoils the glaze fit. Loading is forgiving: pieces may touch, lids can be fired on their pots, and bowls go rim to rim rather than nested.
+**Prežah**{{en: bisque}} (v britskej angličtine biscuit) je prvý výpal na nižšiu teplotu, ktorý z vysušenej hliny urobí tvrdé, pórovité výrobky pripravené na glazovanie. Zvyčajne sa vypaľuje na kužeľ{{en: cone}} 06 – 04, teda {{1828–1945 °F; 998–1063 °C}} podľa Ortonovej tabuľky; britskí keramikári často vypaľujú na približne {{1000 °C; 1832 °F}}, blízko kužeľa 06. Prežahnutý črep má zostať pórovitý, „spravidla viac ako 15%“ (Digitalfire), aby z glazúry{{en: glaze}} nasával vodu. Príliš mäkký prežah naberie príliš hrubú vrstvu glazúry, ktorá potom popraská a **stiahne sa**{{en: crawls}} (zbehne sa do ostrovčekov a nechá holú hlinu). Nedopálený prežah navyše „sa počas ostrého výpalu{{en: glaze firing}} ďalej zmršťuje“, čo pokazí zladenie glazúry s črepom{{en: glaze fit}}. Nakladanie je zhovievavé: kusy sa môžu dotýkať, pokrievky sa môžu vypaľovať na svojich nádobách a misky sa kladú okrajom na okraj, nie jedna do druhej.
 
-### Why the early part goes slowly
+### Prečo začiatok prebieha pomaly
 
-Water expands more than a thousandfold as it turns to steam, so damp ware has to be dried slowly. L&L and Orton advise that "Special care should be taken below 1500°F (815°C) to heat the body evenly", and that carbon must be burned out before about {{1200 °F; 650 °C}}. Above {{1500 °F; 816 °C}} the kiln can climb faster.
+Voda sa pri premene na paru zväčší na viac ako tisícnásobok objemu, preto treba vlhké výrobky sušiť pomaly. L&L a Orton radia, že „Pod 1500°F (815°C) treba dbať najmä na rovnomerné ohriatie črepu{{en: body}}“, a že uhlík musí vyhorieť približne do {{1200 °F; 650 °C}}. Nad {{1500 °F; 816 °C}} môže teplota v peci stúpať rýchlejšie.
 
-Table: What happens as a bisque heats
-Label: What happens in a bisque
+Table: Čo sa deje pri ohreve prežahu
+Label: Čo sa deje pri prežahu
 
-|                        Temperature | What happens                                                |
-| ---------------------------------: | ----------------------------------------------------------- |
-|         {{300–500 °F; 149–260 °C}} | Binders burn off                                            |
-|           About {{450 °F; 232 °C}} | Organic matter starts to burn                               |
-|           Up to {{700 °F; 371 °C}} | Water keeps leaving the clay until above this temperature   |
-|        {{842–1022 °F; 450–550 °C}} | Chemically bound water leaves the clay                      |
-|                {{1063 °F; 573 °C}} | Quartz inversion: silica in the clay expands suddenly       |
-|          Above {{1112 °F; 600 °C}} | Sulfur burns out                                            |
-| Up to {{1200–1400 °F; 649–760 °C}} | Natural carbon burns off; this should finish below red heat |
-|          Above {{1544 °F; 840 °C}} | Calcium carbonate breaks down                               |
+|                         Teplota | Čo sa deje                                                                             |
+| ------------------------------: | -------------------------------------------------------------------------------------- |
+|      {{300–500 °F; 149–260 °C}} | Vyhorievajú spojivá                                                                    |
+|          Asi {{450 °F; 232 °C}} | Organické látky začínajú horieť                                                        |
+|           Do {{700 °F; 371 °C}} | Voda z hliny uniká, až kým teplota túto hodnotu neprekročí                             |
+|     {{842–1022 °F; 450–550 °C}} | Z hliny uniká chemicky viazaná voda                                                    |
+|             {{1063 °F; 573 °C}} | Modifikačná premena kremeňa{{en: quartz inversion}}: kremeň v hline náhle zväčší objem |
+|         Nad {{1112 °F; 600 °C}} | Vyhorieva síra                                                                         |
+| Do {{1200–1400 °F; 649–760 °C}} | Vyhorieva prírodný uhlík; malo by sa to skončiť pod červeným žiarom                    |
+|         Nad {{1544 °F; 840 °C}} | Uhličitan vápenatý sa rozkladá                                                         |
 
-**Quartz inversion** is the sudden change in size of the silica in clay at {{1063 °F; 573 °C}}: it expands on the way up and contracts on the way down. L&L's Slow Bisque slows through it, between {{1000 °F; 538 °C}} and {{1100 °F; 593 °C}}. Digitalfire found this "unnecessary for bisque firings", and Ceramics Monthly says it mainly matters when cooling dense ware. Slowing costs little, so our suggestion is to keep it for thick pieces.
+**Modifikačná premena kremeňa** je náhla zmena objemu kremeňa v hline pri {{1063 °F; 573 °C}}: pri ohreve sa rozpína a pri chladnutí sa zmršťuje. Program Slow Bisque od L&L cez ňu spomaľuje, medzi {{1000 °F; 538 °C}} a {{1100 °F; 593 °C}}. Digitalfire to považuje za „pri prežahu zbytočné“ a Ceramics Monthly uvádza, že to má význam hlavne pri chladnutí hutných výrobkov. Spomalenie stojí málo, preto odporúčame ponechať ho pri hrubých kusoch.
 
-### Candling: drying in the kiln
+### Dosušenie v peci (sušiaca fáza)
 
-**Candling** means holding the kiln at a low temperature, with the lid propped or the vent running, until the last moisture has left the ware. Sources disagree about the temperature:
+**Dosušenie v peci**{{en: candling}} znamená držať pec na nízkej teplote s pootvoreným vekom alebo zapnutým odsávaním, kým z výrobkov neunikne posledná vlhkosť. Zdroje sa nezhodujú v tom, aká má byť teplota:
 
-Table: Candling temperatures
+Table: Teploty pri dosušení v peci
 
-| Source           | Candling                                                                                 |
-| ---------------- | ---------------------------------------------------------------------------------------- |
-| Ceramics Monthly | Just short of boiling; for example, climbing at {{25 °F/h; 14 °C/h}} for 4–6 hours       |
-| L&L preheat      | Hold at {{150–200 °F; 66–93 °C}}                                                         |
-| Digitalfire      | Hold at {{250 °F; 121 °C}}, because holding below boiling "does not expel all the water" |
+| Zdroj            | Dosušenie                                                                                  |
+| ---------------- | ------------------------------------------------------------------------------------------ |
+| Ceramics Monthly | Tesne pod bodom varu; napríklad stúpanie rýchlosťou {{25 °F/h; 14 °C/h}} počas 4 – 6 hodín |
+| Sušiaca fáza L&L | Výdrž na {{150–200 °F; 66–93 °C}}                                                          |
+| Digitalfire      | Výdrž na {{250 °F; 121 °C}}, pretože výdrž pod bodom varu „neodstráni všetku vodu“         |
 
 > [!NOTE]
-> Our starting point: climb slowly to no more than about {{250 °F; 121 °C}}, and hold until a mirror at the vent stays clear. Hold overnight for thick or damp ware.
+> Odporúčame začať takto: teplotu zvyšujte pomaly, najviac na približne {{250 °F; 121 °C}}, a držte ju, kým sa zrkadlo pri vetracom otvore neprestane zarosovať. Pri hrubých alebo vlhkých výrobkoch držte teplotu celú noc.
 
-The **mirror test**: hold a room-temperature mirror at a vent hole or at the gap under a propped lid. If it fogs, water is still leaving; wait, then test again.
+**Skúška zrkadlom**: podržte zrkadlo s izbovou teplotou pri vetracom otvore alebo pri škáre pod pootvoreným vekom. Ak sa zarosí, voda ešte uniká; počkajte a skúšku zopakujte.
 
-### Controller schedules
+### Krivky výpalu pre regulátor
 
-A **controller** is an electronic unit that fires the kiln through a **schedule**: a list of **segments**, each a rate of climb (the **ramp**), a target temperature and an optional hold. Below are two presets from L&L's DynaTrol and Bartlett controllers, and a schedule published by Digitalfire. "Peak" is the controller's own temperature for the cone you choose: for cone 04 it is {{1926 °F; 1052 °C}}, and for cone 06, {{1819 °F; 993 °C}}.
+**Regulátor** je elektronická jednotka, ktorá riadi výpal podľa **krivky výpalu** (programu): zoznamu **segmentov**, z ktorých každý pozostáva z rýchlosti stúpania (**rampy**{{en: ramp}}), cieľovej teploty a voliteľnej výdrže{{en: hold}}. Nižšie sú dva prednastavené programy regulátorov L&L DynaTrol a Bartlett a krivka výpalu zverejnená na Digitalfire. „Konečná teplota“ je vlastná teplota regulátora pre zvolený kužeľ: pre kužeľ 04 je to {{1926 °F; 1052 °C}} a pre kužeľ 06 {{1819 °F; 993 °C}}.
 
-Table: L&L and Bartlett bisque presets
-Label: Bisque presets
+Table: Prednastavené programy prežahu L&L a Bartlett
+Label: Programy prežahu
 
-| Segment                  |                                                           Climb to |            Slow Bisque |            Fast Bisque |
-| ------------------------ | -----------------------------------------------------------------: | ---------------------: | ---------------------: |
-| 1                        |                                                 {{250 °F; 121 °C}} |   {{80 °F/h; 44 °C/h}} |  {{120 °F/h; 67 °C/h}} |
-| 2                        |                                                {{1000 °F; 538 °C}} | {{200 °F/h; 111 °C/h}} | {{300 °F/h; 167 °C/h}} |
-| 3                        |                                                {{1100 °F; 593 °C}} |  {{100 °F/h; 56 °C/h}} |  {{150 °F/h; 83 °C/h}} |
-| 4                        | {{250 °F; 139 °C}} below the peak: {{1676 °F; 913 °C}} for cone 04 | {{180 °F/h; 100 °C/h}} | {{180 °F/h; 100 °C/h}} |
-| 5                        |                                                           The peak |   {{80 °F/h; 44 °C/h}} |  {{108 °F/h; 60 °C/h}} |
-| Heating time, empty kiln |                                                                    | About 13 hours or more |     About 10–11½ hours |
+| Segment                 |                                                                Stúpanie na |             Slow Bisque |            Fast Bisque |
+| ----------------------- | -------------------------------------------------------------------------: | ----------------------: | ---------------------: |
+| 1                       |                                                         {{250 °F; 121 °C}} |    {{80 °F/h; 44 °C/h}} |  {{120 °F/h; 67 °C/h}} |
+| 2                       |                                                        {{1000 °F; 538 °C}} |  {{200 °F/h; 111 °C/h}} | {{300 °F/h; 167 °C/h}} |
+| 3                       |                                                        {{1100 °F; 593 °C}} |   {{100 °F/h; 56 °C/h}} |  {{150 °F/h; 83 °C/h}} |
+| 4                       | {{250 °F; 139 °C}} pod konečnou teplotou: {{1676 °F; 913 °C}} pre kužeľ 04 |  {{180 °F/h; 100 °C/h}} | {{180 °F/h; 100 °C/h}} |
+| 5                       |                                                            Konečná teplota |    {{80 °F/h; 44 °C/h}} |  {{108 °F/h; 60 °C/h}} |
+| Čas ohrevu, prázdna pec |                                                                            | Asi 13 hodín alebo viac |    Asi 10 – 11½ hodiny |
 
-L&L's times are "for the fastest possible empty kilns"; a loaded kiln can take as much as four times longer, and any hold you add is extra heatwork the presets do not allow for. L&L advises Slow Bisque, with a preheat of 2–3 hours or longer, for large or damp pieces, and warns against fast firing, which "can cause defects like pinholes, cracking, and insufficient burnout".
+Časy L&L platia „pre najrýchlejšie možné prázdne pece“; naložená pec môže potrebovať až štyrikrát viac času a každá výdrž, ktorú pridáte, je ďalšia tepelná práca{{en: heatwork}}, s ktorou prednastavené programy nepočítajú. Pre veľké alebo vlhké kusy L&L odporúča Slow Bisque so sušiacou fázou 2 – 3 hodiny alebo dlhšou a varuje pred rýchlym výpalom, ktorý „môže spôsobiť chyby ako vpichy{{en: pinholes}}, praskanie a nedostatočné vyhorenie organických látok“.
 
-Table: Digitalfire BQ1000 bisque, to about cone 06
+Table: Prežah Digitalfire BQ1000, približne na kužeľ 06
 Label: Digitalfire BQ1000
 
-| Step |                   Rate |               Target | Hold                                      |
-| ---- | ---------------------: | -------------------: | ----------------------------------------- |
-| 1    | {{306 °F/h; 170 °C/h}} |   {{248 °F; 120 °C}} | 60 minutes; up to 10 hours for heavy ware |
-| 2    | {{306 °F/h; 170 °C/h}} |  {{1733 °F; 945 °C}} | None                                      |
-| 3    |  {{108 °F/h; 60 °C/h}} | {{1832 °F; 1000 °C}} | 15 minutes                                |
+| Krok |               Rýchlosť |      Cieľová teplota | Výdrž                                       |
+| ---- | ---------------------: | -------------------: | ------------------------------------------- |
+| 1    | {{306 °F/h; 170 °C/h}} |   {{248 °F; 120 °C}} | 60 minút; pri ťažkých výrobkoch až 10 hodín |
+| 2    | {{306 °F/h; 170 °C/h}} |  {{1733 °F; 945 °C}} | Žiadna                                      |
+| 3    |  {{108 °F/h; 60 °C/h}} | {{1832 °F; 1000 °C}} | 15 minút                                    |
 
-BQ1000 takes about 7 hours 44 minutes. Its author finds up to {{500 °F/h; 278 °C/h}} fine for thin, dry ware, and slows the last step to even out the temperature through the load.
+BQ1000 trvá asi 7 hodín 44 minút. Jeho autor považuje pri tenkých, suchých výrobkoch za vhodnú rýchlosť až {{500 °F/h; 278 °C/h}} a posledný krok spomaľuje, aby sa teplota vo vsádzke vyrovnala.
 
-### Controller cones and Orton's chart
+### Kužele regulátora a Ortonova tabuľka
 
-L&L and Bartlett controllers use {{1926 °F; 1052 °C}} for cone 04 and {{1819 °F; 993 °C}} for cone 06, a little below Orton's {{1945 °F; 1063 °C}} and {{1828 °F; 998 °C}}; they agree at cone 6 and cone 10. Witness cones settle the difference: if they disagree with the controller, correct it with the cone offset.
+Regulátory L&L a Bartlett používajú pre kužeľ 04 teplotu {{1926 °F; 1052 °C}} a pre kužeľ 06 {{1819 °F; 993 °C}}, o niečo menej ako Ortonových {{1945 °F; 1063 °C}} a {{1828 °F; 998 °C}}; pri kuželi 6 a kuželi 10 sa zhodujú. Rozdiel rozhodnú kontrolné kužele{{en: witness cones}}: ak sa s regulátorom nezhodujú, opravte ho posunom kužeľa (offset).
 
-### On a manual kiln
+### V peci bez regulátora
 
-A manual kiln follows the same plan by hand: dry slowly with the lid propped and the peepholes open, step the switches up from Low to Medium to High, and let the sitter end the firing. The published procedures are under Manual kilns in detail, below.
+Pec bez regulátora (s ručným ovládaním) sa riadi rovnakým plánom, len ručne: výrobky pomaly sušte s pootvoreným vekom a otvorenými kontrolnými otvormi, prepínače postupne prepínajte z polohy Low (nízky výkon) na Medium (stredný) a potom na High (vysoký) a výpal nechajte ukončiť vypínač Kiln-Sitter. Zverejnené postupy nájdete nižšie v časti Pece bez regulátora podrobne.
 
 ## Ostrý výpal {#glaze}
 

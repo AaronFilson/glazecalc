@@ -49,6 +49,10 @@
         "title": "Gwidi",
         "text": "Minn x’inhu glejż sal-ħami tiegħu, u kif iżżomm lil kulħadd sikur matul it-triq."
       },
+      "trash": {
+        "title": "Barmil",
+        "text": "Poġġi lura dak li neħħejt fl-aħħar 30 jum."
+      },
       "account": {
         "title": "Kont u settings",
         "text": "Settings, il-password tiegħek, id-dħul f’żewġ passi, u tniżżil ta’ dak kollu li żżomm hawnhekk."
@@ -116,6 +120,7 @@
   },
   "trash": {
     "title": "Barmil",
+    "lead": "Dak li tneħħi (riċetti, materjali, addittivi, noti, reġistri tal-ħami u pariri) jistenna hawn għal 30 jum. Poġġih lura, jew ħassru għal dejjem.",
     "listHeading": "Fil-barmil",
     "none": "Il-barmil huwa vojt.",
     "untitled": "Mingħajr titlu",

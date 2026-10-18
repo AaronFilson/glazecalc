@@ -207,6 +207,11 @@
     "recipes": "Receitas (CSV)",
     "materials": "Matérias-primas (CSV)"
   },
+  "trash": {
+    "heading": "Lixo",
+    "text": "O que remover do seu caderno fica no Lixo durante 30 dias. Reponha-o a partir daí, ou elimine-o definitivamente.",
+    "open": "Abrir o Lixo"
+  },
   "shared": {
     "heading": "Receitas partilhadas",
     "text": "As receitas que partilha por ligação, que qualquer pessoa com a ligação pode ler sem conta. Uma ligação só é mostrada uma vez, quando é criada, por isso não pode ser mostrada aqui. Para partilhar uma receita outra vez, crie uma nova ligação em Mais, na receita.",
@@ -301,6 +306,7 @@
         "saved": "Guardado: cozedura por cones Orton."
       },
       "sk": {
+        "label": "Por cones SK, JIS R 8101",
         "example": "SK 4a, SK 8",
         "saved": "Guardado: cozedura por cones SK."
       },

@@ -49,6 +49,10 @@
         "title": "Ghiduri",
         "text": "De la ce este o glazură până la arderea ei, cu toată lumea în siguranță pe parcurs."
       },
+      "trash": {
+        "title": "Coșul de reciclare",
+        "text": "Puneți la loc ce ați șters în ultimele 30 de zile."
+      },
       "account": {
         "title": "Cont și setări",
         "text": "Setări, parola dumneavoastră, conectarea în doi pași și o descărcare a tot ce păstrați aici."
@@ -116,6 +120,7 @@
   },
   "trash": {
     "title": "Coșul de reciclare",
+    "lead": "Ce ștergeți (rețete, materii prime, aditivi, notițe, jurnale de ardere și sfaturi) așteaptă aici 30 de zile. Puneți la loc sau ștergeți definitiv.",
     "listHeading": "În coșul de reciclare",
     "none": "Coșul de reciclare este gol.",
     "untitled": "Fără titlu",

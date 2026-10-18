@@ -207,6 +207,11 @@
     "recipes": "Receptai (CSV)",
     "materials": "Žaliavos (CSV)"
   },
+  "trash": {
+    "heading": "Šiukšlinė",
+    "text": "Tai, ką pašalinate iš savo sąsiuvinio, 30 dienų laukia šiukšlinėje. Iš ten grąžinkite arba panaikinkite visam laikui.",
+    "open": "Atidaryti šiukšlinę"
+  },
   "shared": {
     "heading": "Bendrinami receptai",
     "text": "Receptai, kuriais dalijatės nuoroda ir kuriuos bet kas, turintis nuorodą, gali perskaityti be paskyros. Nuoroda parodoma tik vieną kartą, kai ji sukuriama, todėl čia jos parodyti negalima. Norėdami receptu dalytis dar kartą, sukurkite naują nuorodą recepto meniu Daugiau.",
@@ -301,6 +306,7 @@
         "saved": "Įrašyta: degimas pagal Ortono piroskopus."
       },
       "sk": {
+        "label": "Pagal SK piroskopus, JIS R 8101",
         "example": "SK 4a, SK 8",
         "saved": "Įrašyta: degimas pagal SK piroskopus."
       },

@@ -49,6 +49,10 @@
         "title": "Vodiči",
         "text": "Od toga što je glazura do njezina pečenja, uz brigu da svi pritom ostanu sigurni."
       },
+      "trash": {
+        "title": "Koš za smeće",
+        "text": "Vratite ono što ste uklonili u posljednjih 30 dana."
+      },
       "account": {
         "title": "Račun i postavke",
         "text": "Postavke, vaša lozinka, dvostupanjska prijava i preuzimanje svega što ovdje čuvate."
@@ -116,6 +120,7 @@
   },
   "trash": {
     "title": "Koš za smeće",
+    "lead": "Ono što uklonite (recepte, sirovine, dodatke, bilješke, zapisnike pečenja i savjete) čeka ovdje 30 dana. Vratite to ili izbrišite zauvijek.",
     "listHeading": "U Košu za smeće",
     "none": "Koš za smeće je prazan.",
     "untitled": "Bez naslova",

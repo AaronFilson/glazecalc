@@ -49,6 +49,10 @@
         "title": "Treoirleabhair",
         "text": "Ó cad is glónra ann go dtí é a bhácáil, agus gach duine a choinneáil slán ar an mbealach."
       },
+      "trash": {
+        "title": "Bruscar",
+        "text": "Cuir ar ais an méid a bhain tú sna 30 lá seo caite."
+      },
       "account": {
         "title": "Cuntas agus socruithe",
         "text": "Socruithe, do phasfhocal, síniú isteach dhá chéim, agus íoslódáil de gach rud a choinníonn tú anseo."
@@ -116,6 +120,7 @@
   },
   "trash": {
     "title": "Bruscar",
+    "lead": "Fanann an méid a bhaineann tú (oidis, ábhair, breiseáin, nótaí, taifid bhácála agus comhairle) anseo ar feadh 30 lá. Cuir ar ais é, nó scrios go buan é.",
     "listHeading": "Sa bhruscar",
     "none": "Tá an bruscar folamh.",
     "untitled": "Gan teideal",

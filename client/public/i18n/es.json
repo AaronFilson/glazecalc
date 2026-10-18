@@ -45,6 +45,7 @@
     "account": "Cuenta",
     "trialAccount": "Periodo de prueba",
     "accountTitle": "Su cuenta y ajustes",
+    "trash": "Papelera",
     "signOut": "Cerrar sesión",
     "createAccount": "Crear una cuenta gratuita"
   },
@@ -90,7 +91,8 @@
     "advice": "Consejos prácticos para preparar, aplicar y cocer esmaltes cerámicos, de Glazecalc, y los consejos que usted añada. Gratuito para alfareros y ceramistas.",
     "about": "Glazecalc: calculadora y cuaderno de química de esmaltes cerámicos, gratuitos y de código abierto. Vea cómo calcula la fórmula Seger (UMF) y cómo está hecho.",
     "privacy": "Cómo trata Glazecalc sus datos: sin anuncios, sin analítica y sin seguimiento, y nada se vende. Qué se conserva, por qué y cómo ejercer sus derechos.",
-    "signup": "Cree una cuenta gratuita en Glazecalc y guarde recetas de esmaltes cerámicos, materiales, notas y registros de cocción. Sin anuncios; sus datos nunca se venden."
+    "signup": "Cree una cuenta gratuita en Glazecalc y guarde recetas de esmaltes cerámicos, materiales, notas y registros de cocción. Sin anuncios; sus datos nunca se venden.",
+    "imageAlt": "La página de inicio de Glazecalc: química de esmaltes gratuita para ceramistas, junto a una foto de tríos de conos tras la cocción."
   },
   "notices": {
     "dismiss": "Cerrar",
@@ -285,6 +287,7 @@
     "close": "Cerrar"
   },
   "unity": {
+    "fluxes": "Fundentes - R₂O y RO",
     "stabilizers": "Estabilizantes - R₂O₃",
     "glassFormers": "Formadores de vidrio - RO₂",
     "wildcards": "Otros óxidos",

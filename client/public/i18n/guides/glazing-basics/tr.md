@@ -18,40 +18,40 @@ Bir reçete feldspat{{en: feldspar}}, kalsit{{en: whiting}} ve kaolen{{en: kaoli
 > [!NOTE]
 > Akılda tutmanın bir yolu: silis camdır, ergiticiler onun fırınınızın ulaşabileceği bir sıcaklıkta erimesini sağlar, alümina da onu koyulaştırır, böylece sır sürdüğünüz yerde kalır.
 
-## Clay, coatings and the two firings {#clay-and-firings lang=en}
+## Kil, kaplamalar ve iki pişirim {#clay-and-firings}
 
-### Clay bodies
+### Bünyeler
 
-The **clay body** is the clay a pot is made of. There are three main kinds.
+**Bünye**{{en: clay body}}, bir kabın yapıldığı kildir. Üç ana türü vardır.
 
-- **Earthenware**: a low-fire body, about cone 06–02, that stays porous. Often red or buff, it needs a glaze to hold water.
-- **Stoneware**: a mid- to high-fire body, about cone 5–10, that becomes vitreous or nearly so.
-- **Porcelain**: a white, high-fire body rich in kaolin, often translucent.
+- **Toprak seramik**{{en: earthenware}}: düşük ısıda, yaklaşık 06–02 numaralı Orton piramitlerinde pişen ve gözenekli kalan bir bünye. Çoğu zaman kırmızı ya da devetüyü renktedir; su tutması için sır gerekir.
+- **Stoneware**{{en: stoneware}}: orta ve yüksek ısıda, yaklaşık 5–10 numaralı piramitlerde pişen, camlaşan ya da camlaşmaya yaklaşan bir bünye.
+- **Porselen**: beyaz, kaolence zengin, yüksek ısıda pişen ve çoğu zaman yarı saydam bir bünye.
 
-**Vitreous** means glassy and non-porous; **vitrification** is a body becoming so as it fires. UK potters often draw the line by temperature instead: stoneware is fired above {{2192 °F; 1200 °C}}, earthenware below. Mid fire, cone 5–6, falls just either side of that line.
+**Camsı**, cam gibi ve gözeneksiz demektir; **camlaşma** ise bünyenin pişerken böyle hâle gelmesidir. Birleşik Krallık’taki seramikçiler bu ayrımı çoğu zaman sıcaklıkla yapar: stoneware {{2192 °F; 1200 °C}} üzerinde, toprak seramik bunun altında pişirilir. 5–6 numaralı piramitlerdeki orta ısı, bu çizginin hemen iki yanına düşer.
 
-### Coatings and drying
+### Kaplamalar ve kuruma
 
-**Slip** is clay suspended in water, for casting, joining or decorating. An **engobe** is a slip-like coating, often colored, with more non-clay materials. An **underglaze** is colored slip or oxide decoration, usually covered with a clear glaze.
+**Sıvı çamur**, suda askıda duran kildir; döküm, birleştirme ya da süsleme için kullanılır. **Astar**, sıvı çamura benzeyen, çoğu zaman renkli, kil olmayan hammaddeleri daha fazla olan bir kaplamadır. **Sır altı boya**, renkli sıvı çamurla ya da oksitle yapılan bir süslemedir; üzeri genellikle şeffaf bir sırla kapatılır.
 
-Unfired ware is **greenware** (sources disagree on whether the word covers all unfired ware or only dry ware). As it dries it becomes **leather-hard**, stiff but slightly damp, the stage for trimming and handles; then **bone dry**, with no free water left, very fragile and ready to fire.
+Pişmemiş ürüne **kuru yarımamul**{{en: greenware}} denir (kaynaklar, İngilizcedeki bu sözcüğün tüm pişmemiş ürünleri mi, yoksa yalnızca kurumuş olanları mı kapsadığı konusunda farklı görüşte). Ürün kurudukça önce **deri sertliğine** gelir: sert ama hafif nemlidir, dip kazıma ve kulp takma aşamasıdır; sonra **tam kuru** olur: içinde serbest su kalmamıştır, çok kırılgandır ve pişirime hazırdır.
 
-### The two firings
+### İki pişirim
 
-The first, lower firing is the **bisque** (UK: **biscuit**), usually cone 08–04 (most often 06–04), about {{1728–1945 °F; 942–1063 °C}}. It leaves ware strong but porous. Digitalfire, a glaze reference site, suggests generally more than 15% porosity, so the bisque draws water out of the glaze as it goes on. A soft bisque (cone 08–06) is more porous; a hard bisque (often cone 04) is sturdier but takes glaze less readily.
+İlk ve daha düşük sıcaklıktaki pişirim **bisküvi pişirimidir**{{en: bisque}} (Birleşik Krallık’ta **biscuit**); genellikle 08–04 numaralı piramitlerde (en sık 06–04), yaklaşık {{1728–1945 °F; 942–1063 °C}} sıcaklıkta yapılır. Ürünü sağlam ama gözenekli bırakır. Bir sır başvuru sitesi olan Digitalfire genel olarak %15’ten fazla gözeneklilik önerir; böylece bisküvi, sır sürülürken sırrın suyunu emer. Düşük ısıda bisküvi (08–06 numaralı piramitler) daha gözeneklidir; yüksek ısıda bisküvi (çoğu zaman 04 numaralı piramit) daha sağlamdır ama sırrı daha zor tutar.
 
-Table: How the bisque changes glazing (Digitalfire)
-Label: How the bisque changes glazing
+Table: Bisküvinin sırlamayı nasıl değiştirdiği (Digitalfire)
+Label: Bisküvinin sırlamayı nasıl değiştirdiği
 
-| Bisque                                  | What happens                                                    |
-| --------------------------------------- | --------------------------------------------------------------- |
-| Under-fired, very absorbent             | Glaze goes on too thick, then cracks and crawls                 |
-| Over-fired, dense                       | Dipping and drying take longer                                  |
-| Fired hotter, or held longer at the top | More gas burns off now, so less bubbles through the glaze later |
+| Bisküvi                                                            | Ne olur                                                                             |
+| ------------------------------------------------------------------ | ----------------------------------------------------------------------------------- |
+| Az pişmiş, çok emici                                               | Sır çok kalın tutar, sonra çatlar ve toplanır                                       |
+| Fazla pişmiş, sık (az gözenekli)                                   | Daldırma ve kuruma daha uzun sürer                                                  |
+| Daha sıcak pişmiş ya da en yüksek sıcaklıkta daha uzun bekletilmiş | Gazın daha fazlası şimdi yanıp gider, böylece sonra sırrın içinden daha azı kabarır |
 
-Potclays, a UK supplier, describes biscuit firing to around {{1000 °C; 1832 °F}}, about cone 06. Reading these sources together, we suggest cone 06–04 for a first bisque: {{1828–1945 °F; 998–1063 °C}} at Orton's medium rate.
+Birleşik Krallık’ta bir tedarikçi olan Potclays, bisküvi pişirimini yaklaşık {{1000 °C; 1832 °F}}, yani yaklaşık 06 numaralı piramit olarak tanımlar. Bu kaynakları birlikte okuyarak ilk bisküvi pişirimi için 06–04 numaralı piramitleri öneriyoruz: Orton’un orta hızında {{1828–1945 °F; 998–1063 °C}}.
 
-The **glaze firing** (British potters may say **glost** firing) melts the glaze and, for stoneware, matures the clay too. **Once-firing** glazes unfired ware and fires it just once. Digitalfire reports a production case where raw-glazed ware crawled on its rims until a bisque firing cured it, so begin with two firings. [Firing a basic kiln](/guides/firing) gives schedules for both.
+**Sırlı pişirim**{{en: glaze firing}} (İngiliz seramikçiler **glost** firing de diyebilir) sırrı eritir ve stoneware’de kili de olgunlaştırır. **Tek pişirimde**{{en: once-firing}} pişmemiş ürün sırlanır ve yalnızca bir kez pişirilir. Digitalfire, ham hâlde sırlanan ürünlerde ağız kenarlarındaki sır toplanmasının ancak bir bisküvi pişirimiyle giderildiği bir üretim örneği aktarır; bu yüzden işe iki pişirimle başlayın. [Basit bir fırında pişirim](/guides/firing) rehberi ikisi için de pişirim programları verir.
 
 ## Piramitler ve ısı işi {#cones}
 
@@ -238,30 +238,30 @@ Label: Yaygın sır kusurları
 | Akma           | Sır rafa akar                                                 | Çok az alümina; fazla kalınlık, örneğin dökülen sırların üst üste bindiği yerlerde; bol demir                     | Daha ince sürün; alümina ekleyin; sırrı dibin epey yukarısında bırakın                                 |
 | Soğuma çatlağı | Kabın kendisinde soğuma ya da ısınmadan kaynaklanan çatlaklar | {{1063 °F; 573 °C}} sıcaklıktaki kuvars dönüşümünden hızlı soğuyarak geçmek; eşit olmayan et kalınlığı; kötü uyum | {{1063 °F; 573 °C}} çevresinden hem ısıtırken hem soğuturken yavaş geçin; eşit et kalınlığı            |
 
-## Food safety {#food-safety lang=en}
+## Gıdaya uygunluk {#food-safety}
 
-**Leaching** is metal dissolving out of a fired glaze into food or drink, and a glaze can look perfect and still do it. The legal tests soak the fired piece in an acid solution and measure the lead and cadmium that come out.
+**Metal salımı**{{en: leaching}}, metalin pişmiş bir sırdan çözünüp yiyeceğe ya da içeceğe geçmesidir; bir sır kusursuz görünüp yine de metal salabilir. Yasal testler pişmiş parçayı asitli bir çözeltide bekletir ve çıkan kurşun ve kadmiyumu ölçer.
 
-### Lead-free is not the same as food-safe
+### Kurşunsuz, gıdaya uygun demek değildir
 
-The rules in the US, the EU, the UK and Australia limit the lead and cadmium a fired piece releases, not what the glaze contains. "Lead-free" removes one hazard; it is not a food-safety rating. Other oxides leach too: Glazy warns that high-barium glazes "can leach and are generally not food-safe", Digitalfire says copper "can make a glaze leachable; test it", and Glazy no longer advises lead glazes for functional ware.
+ABD’de, AB’de, Birleşik Krallık’ta ve Avustralya’da kurallar, sırrın ne içerdiğini değil, pişmiş bir parçanın saldığı kurşun ve kadmiyumu sınırlar. “Kurşunsuz” olmak bir tehlikeyi ortadan kaldırır; ama bir gıdaya uygunluk{{en: food safety}} derecesi değildir. Başka oksitler de salınır: Glazy, baryumu yüksek sırların “salım yapabileceği ve genellikle gıdaya uygun olmadığı” konusunda uyarır, Digitalfire bakırın “bir sırrı salım yapar hâle getirebileceğini; test edin” der ve Glazy artık kullanım eşyaları için kurşunlu sır önermiyor.
 
-A **liner glaze** is a stable, usually clear or white glaze for surfaces that touch food. In our view, one with no colorant, barium, lead or lithium, that melts fully, does not craze and wears well, is the lower-risk choice. Lower risk is not proof.
+**İç sır**{{en: liner glaze}}, yiyeceğe değen yüzeyler için kullanılan kararlı, genellikle şeffaf ya da beyaz bir sırdır. Bize göre renklendirici, baryum, kurşun ya da lityum içermeyen, tamamen eriyen, sır çatlağı yapmayan ve aşınmaya iyi dayanan bir iç sır daha az riskli bir seçimdir. Daha az risk, kanıt değildir.
 
-**Limit formulas** (Digitalfire prefers **target formulas**) give typical unity-formula ranges for stable glazes at a cone: Digitalfire's cone 6 targets put alumina at 0.285–0.64 and silica at 2.4–4.7. They guide you toward sound chemistry but prove nothing; Digitalfire avoids the word "limit" because it suggests glazes inside the ranges "are somehow safe". Glazecalc's tools for changing a recipe say when the new one goes past a recommended limit, such as a lot of boron at cone 6, and what the glaze will likely do.
+**Sınır formüller**{{en: limit formulas}} (Digitalfire **hedef formül** demeyi tercih eder) bir piramit için kararlı sırların tipik Seger formülü aralıklarını verir: Digitalfire’ın 6 numaralı Orton piramidi için hedefleri alüminayı 0,285–0,64, silisi 2,4–4,7 arasına koyar. Sizi sağlam bir kimyaya yönlendirirler ama hiçbir şeyi kanıtlamazlar; Digitalfire “sınır” sözcüğünden kaçınır, çünkü bu sözcük aralıkların içindeki sırların “bir şekilde güvenli” olduğunu düşündürür. Glazecalc’ın reçete değiştirme araçları, yeni reçete önerilen bir sınırı aştığında, örneğin 6 numaralı piramitte bol bor olduğunda, bunu ve sırrın büyük olasılıkla nasıl davranacağını söyler.
 
-The legal limits differ by country. The table shows those where you live, in the law's own units; choose another country to compare.
+Yasal sınır değerler ülkeden ülkeye değişir. Tablo, yaşadığınız yerdekileri yasanın kendi birimleriyle gösterir; karşılaştırmak için başka bir ülke seçin.
 
 ::food-limits
 
-In the US, decorative ceramic ware that looks usable for food is treated as food ware unless it carries a stick-on label and a permanent notice molded or fired onto its base, such as "Not for Food Use. May Poison Food", or has a hole through the food surface. The EU sets lead and cadmium limits in Directive 84/500/EEC, and the UK keeps the same figures in its own law. From 29 May 2026 the Netherlands, Belgium and Luxembourg allow about 130 to 150 times less lead, and about 15 times less cadmium. Australia sets limits for imported ware; we found no official limit for ware made in Australia or New Zealand.
+ABD’de gıdada kullanılabilir görünen dekoratif seramik ürünler gıda ürünü sayılır. Bunun istisnası, üzerinde hem yapışkan bir etiket hem de tabanına kalıpla ya da pişirilerek işlenmiş, “Not for Food Use. May Poison Food” gibi kalıcı bir uyarı bulunan ya da gıda yüzeyini delip geçen bir delik bulunan ürünlerdir. AB, kurşun ve kadmiyum sınırlarını 84/500/EEC sayılı Konsey Direktifinde belirler; Birleşik Krallık da aynı değerleri kendi yasasında korur. 29 Mayıs 2026’dan itibaren Hollanda, Belçika ve Lüksemburg yaklaşık 130 ila 150 kat daha az kurşuna ve yaklaşık 15 kat daha az kadmiyuma izin verir. Avustralya ithal ürünler için sınırlar koyar; Avustralya’da ya da Yeni Zelanda’da yapılan ürünler için resmî bir sınır bulamadık.
 
-### Testing
+### Test
 
-The FDA says home swab kits can show leachable lead, but Ceramics New Zealand warns that test pens are not designed for ceramics and give false positives. Treat a positive as a reason to stop using the piece, and a negative as proving nothing. A laboratory leach test of the fired piece (ASTM C738 in the US; EN 1388 or ISO 6486 in Europe) is the real answer.
+ABD Gıda ve İlaç Dairesi (FDA), evde kullanılan çubuklu test kitlerinin salınabilir kurşunu gösterebileceğini söyler; ama Ceramics New Zealand, test kalemlerinin seramik için tasarlanmadığı ve yanlış pozitif sonuç verdiği konusunda uyarır. Pozitif bir sonucu, parçayı kullanmayı bırakmak için bir neden sayın; negatif bir sonuç ise hiçbir şeyi kanıtlamaz. Pişmiş parçanın laboratuvarda yapılan bir salım testi{{en: leach test}} (ABD’de ASTM C738; Avrupa’da EN 1388 ya da ISO 6486) asıl cevaptır.
 
 > [!WARNING]
-> "Food safe" means this glaze, on this clay, fired to this cone in this kiln and applied this way, releases less than the legal limits. Glazecalc can help you build a stable glaze, and **Replace lead** can rebuild an old lead recipe without lead, but no calculator can certify a pot. Only a test of the fired piece can.
+> “Gıdaya uygun”, bu sırrın, bu kilin üzerinde, bu fırında bu piramide kadar pişirilip bu şekilde sürüldüğünde yasal sınır değerlerden daha azını saldığı anlamına gelir. Glazecalc kararlı bir sır oluşturmanıza yardım edebilir, **Kurşunu değiştir** özelliği eski bir kurşunlu reçeteyi kurşunsuz olarak yeniden kurabilir, ama hiçbir hesaplayıcı bir kabı onaylayamaz. Bunu yalnızca pişmiş parçanın testi yapabilir.
 
 ## Özgül ağırlık ve sırlama {#application}
 
@@ -298,171 +298,171 @@ Fırındaki gazlar, yani fırının **pişirim atmosferi**, sırların nasıl ç
 
 Elektrikli olanlar da dahil her fırın gaz ve duman çıkarır; bu yüzden fırını havalandırın. [Güvenli karıştırma ve havalandırma](/guides/safe-mixing) rehberi nasıl yapılacağını anlatır.
 
-## Glossary {#glossary lang=en}
+## Terimler sözlüğü {#glossary}
 
-Additive
-: A colorant, opacifier or suspender added on top of a recipe's 100.
+Alümina (Al₂O₃; alumina)
+: Başlıca stabilizatör: akmayı önler ve sertlik katar. Killerden ve feldspatlardan gelir.
 
-Alumina (Al₂O₃)
-: The main stabilizer: stops running and adds hardness. From clays and feldspars.
+Ball clay (plastik kil)
+: Kaolenden daha fazla demir ve organik madde içeren plastik bir kil.
 
-Ball clay
-: A plastic clay with more iron and organic matter than kaolin.
+Bentonit (bentonite)
+: Sırrın dibe çökmesini önlemek için %1–3 oranında eklenen çok ince bir kil.
 
-Batch recipe
-: A glaze's raw materials by weight, usually adding up to 100.
+Bisküvi pişirimi (bisque; Birleşik Krallık: biscuit)
+: İlk ve daha düşük sıcaklıktaki pişirim, genellikle 08–04 numaralı Orton piramitleri (en sık 06–04); ürünü sağlam ama gözenekli bırakır.
 
-Bentonite
-: A very fine clay added at 1–3% to keep glaze from settling.
+Bor (B₂O₃; boron)
+: Resmî olarak bir cam yapıcı, ama ergitici olarak kullanılır; 06 numaralı piramitten 6 numaralı piramide kadar vazgeçilmezdir.
 
-Bisque (UK: biscuit)
-: The first, lower firing, usually cone 08–04 (most often 06–04), leaving ware strong but porous.
+Cam yapıcı (glass former)
+: Camı kuran oksit, genellikle silis.
 
-Boron (B₂O₃)
-: Formally a glass former but used as a flux; essential from cone 06 to cone 6.
+Camlaşma (vitrification)
+: Bünyenin pişirimde camsı ve gözeneksiz hâle gelmesi.
 
-CMC gum
-: A cellulose gum that helps glaze brush on and stick; it burns away.
+CMC (CMC gum)
+: Sırrın fırçayla sürülmesine ve tutunmasına yardım eden selüloz kökenli bir zamk; yanıp gider.
 
-Colorant and stain
-: A metal oxide or carbonate that colors glaze; a stain is a factory-made, more stable colorant.
+Devitrifikasyon (devitrification)
+: Soğumanın başında, istenmedikleri yerde camın içinden kristallerin büyümesi.
 
-Cone
-: A calibrated ceramic pyramid that bends at a set heatwork. A witness cone shows what the pots received.
+Doğrusal karışım testi (line blend)
+: Bir malzemeyi iki miktar arasında adım adım değiştiren testler. Üçgen karışım testi (triaxial blend) üç malzemeyi bir ızgara üzerinde değiştirir.
 
-Crawling
-: Glaze pulling back into beads in firing, leaving bare clay.
+Ergitici (flux)
+: Silisin ergime sıcaklığını düşüren oksit.
 
-Crazing
-: Fine cracks in a glaze that shrinks more than its body; crackle when wanted.
+Feldspat (feldspar)
+: Alümina ve silisle birlikte alkali ergitici sağlayan bir mineral: potasyum feldspat, sodyum feldspat ya da nefelin siyenit.
 
-Devitrification
-: Crystals growing out of the glass early in cooling, where they are not wanted.
-
-Dunting
-: Cracks in a pot from cooling or heating stress, often at quartz inversion, {{1063 °F; 573 °C}}.
-
-Earthenware
-: A low-fire body (about cone 06–02) that stays porous.
-
-Feldspar
-: A mineral supplying alkali flux with alumina and silica: potash, soda or nepheline syenite.
-
-Flocculant and deflocculant
-: Additives that gel a slurry (Epsom salts, vinegar) or thin it (sodium silicate, Darvan).
-
-Flux
-: An oxide that lowers the melting temperature of silica.
-
-Food safe
-: In law, releasing less lead and cadmium than the limits in an acid test. Not the same as lead-free.
+Flokülan ve deflokülan (flocculant, deflocculant)
+: Sulu sırrı jelleştiren (Epsom tuzu, sirke) ya da inceltip akışkanlaştıran (sodyum silikat, Darvan) katkılar.
 
 Frit
-: Factory-made glass, melted, quenched and ground, that makes soluble or toxic oxides insoluble.
+: Eritilip şoklanarak soğutulan ve öğütülen, çözünür ya da zehirli oksitleri çözünmez hâle getiren fabrika yapımı cam.
 
-Glass former
-: The oxide that builds the glass, usually silica.
+Gıdaya uygun (food safe)
+: Yasal anlamda, asit testinde sınır değerlerden daha az kurşun ve kadmiyum salan. Kurşunsuz ile aynı şey değildir.
 
-Glaze
-: A coat of glass that melts in firing to seal and decorate a pot.
+Isı işi (heatwork)
+: Fırında sıcaklık ve sürenin birlikte etkisi; piramitlerin ölçtüğü şey.
 
-Glaze firing (UK: glost firing)
-: The firing that melts the glaze.
+İç sır (liner glaze)
+: Yiyeceğe değen yüzeyler için kararlı, genellikle şeffaf ya da beyaz sır.
 
-Glaze fit
-: How well glaze and body expansion match; a good fit leaves the glaze slightly compressed.
+İğne deliği ve kabarma (pinholing, blistering)
+: Gazın ergiyikten kaçtığı yerlerde oluşan küçük delikler ya da keskin kenarlı kraterler.
 
-Gloss, satin and matte
-: Reflective and smooth; a subdued sheen; dull.
+Kalsit (whiting)
+: Kalsiyum karbonat, başlıca kalsiyum ergiticisi; pişirimde ağırlığının %40’ından fazlasını kaybeder. Almancası: Kreide.
 
-Greenware
-: Unfired ware: leather-hard when stiff but damp, bone dry when no free water is left.
+Kaolen (kaolin; Birleşik Krallık: china clay)
+: Alümina ve silis sağlayan saf beyaz bir kil; sırrın askıda kalmasına yardım eder. Avustralya’da: Eckalite.
 
-Heatwork
-: The combined effect of temperature and time in a kiln; what cones measure.
+Katkı (additive)
+: Bir reçetenin 100’ünün üzerine eklenen renklendirici, opaklaştırıcı ya da askıda tutucu.
 
-Kaolin (UK: china clay)
-: A pure white clay supplying alumina and silica; keeps glaze suspended. Australia: Eckalite.
+Kızdırma kaybı (K.K.; LOI, loss on ignition)
+: Pişirimde su, karbondioksit, organik madde ya da kükürt olarak kaybedilen ağırlık.
 
-Kiln wash
-: A heat-resisting coating that protects kiln shelves from drips.
+Kuru yarımamul (greenware)
+: Pişmemiş ürün: sert ama nemliyken deri sertliğinde, içinde serbest su kalmadığında tam kuru.
 
-Leaching
-: Metals dissolving out of a fired glaze into food or drink.
+Metal salımı (leaching)
+: Metallerin pişmiş bir sırdan çözünüp yiyeceğe ya da içeceğe geçmesi.
 
-Limit formula (target formula)
-: Typical unity-formula ranges for stable glazes at a cone; a guide, not a guarantee.
+Oksidasyon ve redüksiyon (oxidation, reduction)
+: Bol oksijenle (elektrikli fırınlar) ya da oksijen kısıtlanarak (genellikle gazlı ya da odunlu fırınlar) yapılan pişirim.
 
-Line blend
-: Tests stepping one ingredient between two amounts. A triaxial blend varies three on a grid.
+Oksit (oxide)
+: Bir elementin oksijenle oluşturduğu bileşik; oksit analizi oksitleri ağırlıkça yüzde olarak sıralar.
 
-Liner glaze
-: A stable, usually clear or white glaze for surfaces that touch food.
+Opaklaştırıcı (opacifier)
+: Sırrı opak yapan, zirkon, kalay oksit ya da titanyum dioksit gibi bir hammadde.
 
-LOI (loss on ignition)
-: Weight lost in firing as water, carbon dioxide, organic matter or sulfur.
+Özgül ağırlık (specific gravity, SG)
+: Sulu sırrın, aynı hacimdeki suya göre ağırlığı. Eski İngiliz kaynaklarında: pint ağırlığı.
 
-Once-firing (single firing)
-: Glazing unfired ware and firing it only once.
+Parlak, saten ve mat (gloss, satin, matte)
+: Yansıtıcı ve pürüzsüz; hafif, bastırılmış bir parıltı; donuk.
 
-Opacifier
-: A material, such as zircon, tin oxide or titanium dioxide, that makes glaze opaque.
+Piramit (cone)
+: Belirli bir ısı işinde eğilen, ayarlı, seramikten bir piramit. Gözlem piramidi, parçaların ne aldığını gösterir.
 
-Oxidation and reduction
-: Firing with plenty of oxygen (electric kilns), or with oxygen restricted (usually gas or wood).
+Porselen (porcelain)
+: Beyaz, kaolence zengin, yüksek ısıda pişen, çoğu zaman yarı saydam bünye.
 
-Oxide
-: A compound of an element with oxygen; an oxide analysis lists them by weight percent.
+R₂O ve RO
+: Alkali ergiticiler (Na₂O, K₂O, Li₂O) ve toprak alkali ergiticiler (CaO, MgO, BaO, SrO, ZnO ile birlikte).
 
-Pinholing and blistering
-: Small holes, or sharp-edged craters, where gas escaped through the melt.
+Raf koruyucu (kiln wash)
+: Fırın raflarını damlalardan koruyan, ısıya dayanıklı kaplama.
 
-Porcelain
-: A white, kaolin-rich, high-fire body, often translucent.
+Renklendirici ve boya (colorant, stain)
+: Sırrı renklendiren metal oksit ya da karbonat; boya, fabrikada yapılmış, daha kararlı bir renklendiricidir.
 
-R₂O and RO
-: The alkali fluxes (Na₂O, K₂O, Li₂O) and alkaline-earth fluxes (CaO, MgO, BaO, SrO, with ZnO).
+Seger formülü (UMF; unity molecular formula)
+: Bir sırrın oksitleri, molekül sayısı olarak, ergiticilerin toplamı 1 olacak şekilde ölçeklenmiş.
 
-Shivering
-: Glaze flaking off edges because it is over-compressed; a hazard on functional ware.
+Sınır formül (limit formula; hedef formül, target formula)
+: Bir piramit için kararlı sırların tipik Seger formülü aralıkları; yol gösterir, güvence vermez.
 
-Silica (SiO₂)
-: The glass former; also called flint or quartz.
+Sır (glaze)
+: Pişirimde eriyerek bir kabı kapatan ve süsleyen cam kaplama.
 
-Silica to alumina ratio
-: Silica divided by alumina in the unity formula: higher tends to gloss, lower to matte.
+Sır altı boya (underglaze)
+: Genellikle şeffaf bir sırrın altında kalan, renkli sıvı çamurla ya da oksitle yapılan süsleme.
 
-Slip and engobe
-: Clay in water; an engobe is a slip-like coating with more non-clay material.
+Sır çatlağı (crazing)
+: Bünyesinden daha çok büzülen bir sırdaki ince çatlaklar; istendiğinde krakle.
 
-Specific gravity (SG)
-: A slurry's weight compared with the same volume of water. Older UK: pint weight.
+Sır kavlaması (shivering)
+: Aşırı sıkıştığı için sırrın kenarlardan pul pul kalkması; kullanım eşyalarında bir tehlike.
 
-Stabilizer
-: An oxide, mainly alumina, that stiffens the melt and adds durability.
+Sır reçetesi (batch recipe)
+: Bir sırrın hammaddeleri, ağırlıkça; toplamı genellikle 100.
+
+Sır-bünye uyumu (glaze fit)
+: Sırrın ve bünyenin genleşmesinin ne kadar iyi eşleştiği; iyi bir uyumda sır hafifçe sıkışmış kalır.
+
+Sırlı pişirim (glaze firing; Birleşik Krallık: glost firing)
+: Sırrı eriten pişirim.
+
+Sıvı çamur ve astar (slip, engobe)
+: Suda askıda duran kil; astar, kil olmayan hammaddesi daha fazla olan, sıvı çamura benzer bir kaplamadır.
+
+Silis (SiO₂; silica)
+: Cam yapıcı; flint ya da kuvars da denir.
+
+Silis/alümina oranı (silica to alumina ratio)
+: Seger formülünde silisin alüminaya bölümü: yüksek oran parlaklığa, düşük oran matlığa eğilimlidir.
+
+Soğuma çatlağı (dunting)
+: Kabın soğuma ya da ısınma gerilmesiyle çatlaması, çoğu zaman {{1063 °F; 573 °C}} sıcaklıktaki kuvars dönüşümünde.
+
+Stabilizatör (stabilizer)
+: Ergiyiği katılaştıran ve dayanıklılık katan oksit, başta alümina.
 
 Stoneware
-: A mid- to high-fire body (about cone 5–10) that becomes vitreous or nearly so.
+: Orta ve yüksek ısıda (yaklaşık 5–10 numaralı piramitler) pişen, camlaşan ya da camlaşmaya yaklaşan bünye.
 
-Thixotropy
-: Flowing when stirred, setting into a soft gel when still.
+Tek pişirim (once-firing, single firing)
+: Pişmemiş ürünü sırlayıp yalnızca bir kez pişirmek.
 
-Underglaze
-: Colored slip or oxide decoration, usually under a clear glaze.
+Tiksotropi (thixotropy)
+: Karıştırıldığında akma, durduğunda yumuşak bir jele dönüşme.
 
-Unity molecular formula (UMF, Seger formula)
-: A glaze's oxides as molecule counts, scaled so the fluxes add up to 1.
+Toplanma (crawling)
+: Sırrın pişirimde boncuklar hâlinde toplanıp çıplak kil bırakması.
 
-Vitrification
-: A body becoming glassy and non-porous in firing.
+Toprak seramik (earthenware)
+: Düşük ısıda (yaklaşık 06–02 numaralı piramitler) pişen ve gözenekli kalan bünye.
 
-Wax resist
-: Wax painted where glaze must not go, usually the foot.
+Wax resist (sır tutmaz mum)
+: Sırrın gitmemesi gereken yere, genellikle dibe, sürülen mum.
 
-Whiting
-: Calcium carbonate, the main calcium flux; loses over 40% of its weight in firing. German: Kreide.
-
-## Sources {#sources lang=en}
+## Kaynaklar {#sources}
 
 - [Glazy Help: Glaze](https://help.glazy.org/concepts/glaze)
 - [Glazy Help: Oxides](https://help.glazy.org/concepts/oxides)
@@ -472,7 +472,7 @@ Whiting
 - [Glazy Help: Firing](https://help.glazy.org/concepts/firing)
 - [Glazy Help: Defects](https://help.glazy.org/concepts/defects)
 - [Glazy Help: Specific gravity](https://help.glazy.org/testing/specific-gravity)
-- [Orton Ceramic Foundation: Pyrometric cone chart, °F (via The Ceramic Shop)](https://www.theceramicshop.com/technical_info/Cones/Orton-Cone-Chart-F-022-14.pdf)
+- [Orton Ceramic Foundation: Pyrometric cone chart, °F (The Ceramic Shop üzerinden)](https://www.theceramicshop.com/technical_info/Cones/Orton-Cone-Chart-F-022-14.pdf)
 - [Digitalfire: Bisque](https://digitalfire.com/glossary/bisque)
 - [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Unity molecular formula](https://digitalfire.com/glossary/unity+molecular+formula)

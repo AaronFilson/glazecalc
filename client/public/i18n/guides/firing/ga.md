@@ -370,83 +370,83 @@ Díoltar cóin fhéintacaithe Orton sa tSeapáin faoin ainm 立つゼーゲル (
 
 :::
 
-## Bisque firing {#bisque lang=en}
+## Brioscbhácáil {#bisque}
 
-The **bisque** firing (biscuit in the UK) is the first, lower firing that turns dry clay into hard, porous ware ready to glaze. It is usually fired to cone 06–04, {{1828–1945 °F; 998–1063 °C}} on Orton's chart; UK potters often fire to around {{1000 °C; 1832 °F}}, near cone 06. The bisque should stay porous, "generally more than 15%" (Digitalfire), so it soaks water out of the glaze. Too soft a bisque takes glaze on too thick, which then cracks and **crawls** (pulls back into islands, leaving bare clay). Under-fired bisque also "continues to shrink during glaze firing", which spoils the glaze fit. Loading is forgiving: pieces may touch, lids can be fired on their pots, and bowls go rim to rim rather than nested.
+Is í an **bhrioscbhácáil**{{en: bisque}} (biscuit i mBéarla na Ríochta Aontaithe) an chéad bhácáil, ag teocht níos ísle, a dhéanann gréithe crua póiriúla, réidh le glónrú, as cré thirim. Bácáiltear go cón{{en: cone}} 06–04 í de ghnáth, {{1828–1945 °F; 998–1063 °C}} ar thábla Orton; is minic a bhácálann potadóirí sa Ríocht Aontaithe go dtí thart ar {{1000 °C; 1832 °F}}, gar do chón 06. Ba cheart do na brioscghréithe fanacht póiriúil, “níos mó ná 15% go ginearálta” (Digitalfire), ionas go súnn siad an t-uisce as an nglónra{{en: glaze}}. Má bhíonn an bhrioscbhácáil róbhog, glacann na píosaí an glónra róthiubh, agus scoilteann sé ansin agus **snámhann** sé{{en: crawls}} (tarraingíonn sé siar ina oileáin, ag fágáil cré lom). Leanann brioscghréithe tearcbhácáilte freisin “ag crapadh le linn na bácála glónra”, rud a mhilleann oiriúint an ghlónra{{en: glaze fit}}. Ní gá a bheith ró-chúramach leis an lódáil: féadfaidh píosaí teagmháil a dhéanamh lena chéile, is féidir clúdaigh a bhácáil ar a bpotaí, agus cuirtear babhlaí béal le béal seachas ceann istigh i gceann eile.
 
-### Why the early part goes slowly
+### Cén fáth a dtéann an chéad chuid go mall
 
-Water expands more than a thousandfold as it turns to steam, so damp ware has to be dried slowly. L&L and Orton advise that "Special care should be taken below 1500°F (815°C) to heat the body evenly", and that carbon must be burned out before about {{1200 °F; 650 °C}}. Above {{1500 °F; 816 °C}} the kiln can climb faster.
+Méadaíonn uisce níos mó ná míle uair nuair a iompaíonn sé ina ghal uisce, mar sin ní mór píosaí taise a thriomú go mall. Molann L&L agus Orton “cúram ar leith a ghlacadh faoi bhun 1500°F (815°C) chun an cré-ábhar a théamh go cothrom”, agus deir siad nach mór an carbón a dhó amach roimh thart ar {{1200 °F; 650 °C}}. Os cionn {{1500 °F; 816 °C}} is féidir leis an áith ardú níos tapa.
 
-Table: What happens as a bisque heats
-Label: What happens in a bisque
+Table: Cad a tharlaíonn le linn téamh na brioscbhácála
+Label: Cad a tharlaíonn i mbrioscbhácáil
 
-|                        Temperature | What happens                                                |
-| ---------------------------------: | ----------------------------------------------------------- |
-|         {{300–500 °F; 149–260 °C}} | Binders burn off                                            |
-|           About {{450 °F; 232 °C}} | Organic matter starts to burn                               |
-|           Up to {{700 °F; 371 °C}} | Water keeps leaving the clay until above this temperature   |
-|        {{842–1022 °F; 450–550 °C}} | Chemically bound water leaves the clay                      |
-|                {{1063 °F; 573 °C}} | Quartz inversion: silica in the clay expands suddenly       |
-|          Above {{1112 °F; 600 °C}} | Sulfur burns out                                            |
-| Up to {{1200–1400 °F; 649–760 °C}} | Natural carbon burns off; this should finish below red heat |
-|          Above {{1544 °F; 840 °C}} | Calcium carbonate breaks down                               |
+|                               Teocht | Cad a tharlaíonn                                                                   |
+| -----------------------------------: | ---------------------------------------------------------------------------------- |
+|           {{300–500 °F; 149–260 °C}} | Dónn na ceanglóirí                                                                 |
+|          Thart ar {{450 °F; 232 °C}} | Tosaíonn ábhar orgánach ag dó                                                      |
+|           Suas go {{700 °F; 371 °C}} | Leanann an t-uisce ag fágáil na cré go dtí go dtéann an teocht thar an bpointe seo |
+|          {{842–1022 °F; 450–550 °C}} | Fágann uisce atá ceangailte go ceimiceach an chré                                  |
+|                  {{1063 °F; 573 °C}} | Aisiompú grianchloiche: téann an tsilice sa chré i méid go tobann                  |
+|         Os cionn {{1112 °F; 600 °C}} | Dónn an sulfar amach                                                               |
+| Suas go {{1200–1400 °F; 649–760 °C}} | Dónn an carbón nádúrtha; ba cheart dó sin críochnú faoi bhun na deargtheochta      |
+|         Os cionn {{1544 °F; 840 °C}} | Dianscaoileann carbónáit chailciam                                                 |
 
-**Quartz inversion** is the sudden change in size of the silica in clay at {{1063 °F; 573 °C}}: it expands on the way up and contracts on the way down. L&L's Slow Bisque slows through it, between {{1000 °F; 538 °C}} and {{1100 °F; 593 °C}}. Digitalfire found this "unnecessary for bisque firings", and Ceramics Monthly says it mainly matters when cooling dense ware. Slowing costs little, so our suggestion is to keep it for thick pieces.
+Is éard is **aisiompú grianchloiche**{{en: quartz inversion}} ann ná an t-athrú tobann ar mhéid na silice{{en: silica}} sa chré ag {{1063 °F; 573 °C}}: téann sí i méid agus an teocht ag ardú, agus crapann sí agus an teocht ag titim. Moillíonn an réamhshocrú Slow Bisque ó L&L tríd, idir {{1000 °F; 538 °C}} agus {{1100 °F; 593 °C}}. Fuair Digitalfire go raibh sé seo “neamhriachtanach do bhrioscbhácálacha”, agus deir Ceramics Monthly gur nuair a bhíonn gréithe dlútha á bhfuarú is mó a bhíonn tábhacht leis. Is beag a chosnaíonn moilliú, mar sin is é ár moladh é a choinneáil do phíosaí tiubha.
 
-### Candling: drying in the kiln
+### Triomú réamhbhácála: na píosaí a thriomú san áith
 
-**Candling** means holding the kiln at a low temperature, with the lid propped or the vent running, until the last moisture has left the ware. Sources disagree about the temperature:
+Is éard is **triomú réamhbhácála**{{en: candling}} ann ná an áith a choinneáil ag teocht íseal, agus an clúdach ardaithe ar thaca nó an gaothaire ar siúl, go dtí go mbíonn an taise dheireanach imithe as na píosaí. Ní réitíonn na foinsí le chéile faoin teocht:
 
-Table: Candling temperatures
+Table: Teochtaí an triomaithe réamhbhácála
 
-| Source           | Candling                                                                                 |
-| ---------------- | ---------------------------------------------------------------------------------------- |
-| Ceramics Monthly | Just short of boiling; for example, climbing at {{25 °F/h; 14 °C/h}} for 4–6 hours       |
-| L&L preheat      | Hold at {{150–200 °F; 66–93 °C}}                                                         |
-| Digitalfire      | Hold at {{250 °F; 121 °C}}, because holding below boiling "does not expel all the water" |
+| Foinse           | Triomú réamhbhácála                                                                                                     |
+| ---------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| Ceramics Monthly | Díreach faoi bhun an fhiuchphointe; mar shampla, ardú ag {{25 °F/h; 14 °C/h}} ar feadh 4–6 huaire an chloig             |
+| Réamhthéamh L&L  | Coinnigh ag {{150–200 °F; 66–93 °C}}                                                                                    |
+| Digitalfire      | Coinnigh ag {{250 °F; 121 °C}}, mar nuair a choinnítear faoi bhun an fhiuchphointe í, “ní dhíbrítear an t-uisce ar fad” |
 
 > [!NOTE]
-> Our starting point: climb slowly to no more than about {{250 °F; 121 °C}}, and hold until a mirror at the vent stays clear. Hold overnight for thick or damp ware.
+> Ár bpointe tosaigh: ardaigh go mall go dtí thart ar {{250 °F; 121 °C}} ar a mhéad, agus coinnigh ansin go dtí go bhfanann scáthán ag an ngaothaire glan gan cheo. Coinnigh thar oíche do phíosaí tiubha nó taise.
 
-The **mirror test**: hold a room-temperature mirror at a vent hole or at the gap under a propped lid. If it fogs, water is still leaving; wait, then test again.
+An **tástáil scátháin**: coinnigh scáthán atá ag teocht an tseomra ag poll aerála nó ag an mbearna faoi chlúdach atá ardaithe ar thaca. Má thagann ceo air, tá uisce fós ag teacht amach; fan, agus déan an tástáil arís.
 
-### Controller schedules
+### Cláir bhácála don rialaitheoir
 
-A **controller** is an electronic unit that fires the kiln through a **schedule**: a list of **segments**, each a rate of climb (the **ramp**), a target temperature and an optional hold. Below are two presets from L&L's DynaTrol and Bartlett controllers, and a schedule published by Digitalfire. "Peak" is the controller's own temperature for the cone you choose: for cone 04 it is {{1926 °F; 1052 °C}}, and for cone 06, {{1819 °F; 993 °C}}.
+Is éard is **rialaitheoir** ann ná aonad leictreonach a bhácálann an áith de réir **cláir bhácála**: liosta de **dheighleoga**, agus i ngach ceann acu ráta téimh (an **rampa**{{en: ramp}}), spriocteocht agus coinneáil{{en: hold}} roghnach. Thíos tá dhá réamhshocrú ó rialaitheoirí DynaTrol L&L agus Bartlett, agus clár bácála a d’fhoilsigh Digitalfire. Is í “an bhuaicteocht” teocht an rialaitheora féin don chón a roghnaíonn tú: do chón 04 is ionann í agus {{1926 °F; 1052 °C}}, agus do chón 06, {{1819 °F; 993 °C}}.
 
-Table: L&L and Bartlett bisque presets
-Label: Bisque presets
+Table: Réamhshocruithe brioscbhácála L&L agus Bartlett
+Label: Réamhshocruithe brioscbhácála
 
-| Segment                  |                                                           Climb to |            Slow Bisque |            Fast Bisque |
-| ------------------------ | -----------------------------------------------------------------: | ---------------------: | ---------------------: |
-| 1                        |                                                 {{250 °F; 121 °C}} |   {{80 °F/h; 44 °C/h}} |  {{120 °F/h; 67 °C/h}} |
-| 2                        |                                                {{1000 °F; 538 °C}} | {{200 °F/h; 111 °C/h}} | {{300 °F/h; 167 °C/h}} |
-| 3                        |                                                {{1100 °F; 593 °C}} |  {{100 °F/h; 56 °C/h}} |  {{150 °F/h; 83 °C/h}} |
-| 4                        | {{250 °F; 139 °C}} below the peak: {{1676 °F; 913 °C}} for cone 04 | {{180 °F/h; 100 °C/h}} | {{180 °F/h; 100 °C/h}} |
-| 5                        |                                                           The peak |   {{80 °F/h; 44 °C/h}} |  {{108 °F/h; 60 °C/h}} |
-| Heating time, empty kiln |                                                                    | About 13 hours or more |     About 10–11½ hours |
+| Deighleog              |                                                                   Ardaigh go |                             Slow Bisque |                    Fast Bisque |
+| ---------------------- | ---------------------------------------------------------------------------: | --------------------------------------: | -----------------------------: |
+| 1                      |                                                           {{250 °F; 121 °C}} |                    {{80 °F/h; 44 °C/h}} |          {{120 °F/h; 67 °C/h}} |
+| 2                      |                                                          {{1000 °F; 538 °C}} |                  {{200 °F/h; 111 °C/h}} |         {{300 °F/h; 167 °C/h}} |
+| 3                      |                                                          {{1100 °F; 593 °C}} |                   {{100 °F/h; 56 °C/h}} |          {{150 °F/h; 83 °C/h}} |
+| 4                      | {{250 °F; 139 °C}} faoi bhun na buaicteochta: {{1676 °F; 913 °C}} do chón 04 |                  {{180 °F/h; 100 °C/h}} |         {{180 °F/h; 100 °C/h}} |
+| 5                      |                                                              An bhuaicteocht |                    {{80 °F/h; 44 °C/h}} |          {{108 °F/h; 60 °C/h}} |
+| Am téimh, áith fholamh |                                                                              | Thart ar 13 huaire an chloig nó níos mó | Thart ar 10–11½ uair an chloig |
 
-L&L's times are "for the fastest possible empty kilns"; a loaded kiln can take as much as four times longer, and any hold you add is extra heatwork the presets do not allow for. L&L advises Slow Bisque, with a preheat of 2–3 hours or longer, for large or damp pieces, and warns against fast firing, which "can cause defects like pinholes, cracking, and insufficient burnout".
+Tá amanna L&L “do na háitheanna folmha is tapúla is féidir”; féadfaidh áith lódáilte suas le ceithre oiread ama a thógáil, agus is obair teasa{{en: heatwork}} bhreise í aon choinneáil a chuireann tú leis, rud nach gcuireann na réamhshocruithe san áireamh. Molann L&L Slow Bisque, le réamhthéamh 2–3 huaire an chloig nó níos faide, do phíosaí móra nó taise, agus tugann sé rabhadh faoi bhácáil thapa: “féadann sí máchaillí a chruthú, mar shampla poill bhioráin, scoilteadh agus dó amach neamhleor”.
 
-Table: Digitalfire BQ1000 bisque, to about cone 06
-Label: Digitalfire BQ1000
+Table: Brioscbhácáil BQ1000 ó Digitalfire, go dtí thart ar chón 06
+Label: BQ1000 Digitalfire
 
-| Step |                   Rate |               Target | Hold                                      |
-| ---- | ---------------------: | -------------------: | ----------------------------------------- |
-| 1    | {{306 °F/h; 170 °C/h}} |   {{248 °F; 120 °C}} | 60 minutes; up to 10 hours for heavy ware |
-| 2    | {{306 °F/h; 170 °C/h}} |  {{1733 °F; 945 °C}} | None                                      |
-| 3    |  {{108 °F/h; 60 °C/h}} | {{1832 °F; 1000 °C}} | 15 minutes                                |
+| Céim |                   Ráta |               Sprioc | Coinneáil                                                 |
+| ---- | ---------------------: | -------------------: | --------------------------------------------------------- |
+| 1    | {{306 °F/h; 170 °C/h}} |   {{248 °F; 120 °C}} | 60 nóiméad; suas le 10 n-uaire an chloig do phíosaí troma |
+| 2    | {{306 °F/h; 170 °C/h}} |  {{1733 °F; 945 °C}} | Gan choinneáil                                            |
+| 3    |  {{108 °F/h; 60 °C/h}} | {{1832 °F; 1000 °C}} | 15 nóiméad                                                |
 
-BQ1000 takes about 7 hours 44 minutes. Its author finds up to {{500 °F/h; 278 °C/h}} fine for thin, dry ware, and slows the last step to even out the temperature through the load.
+Tógann BQ1000 thart ar 7 n-uaire an chloig agus 44 nóiméad. Measann a údar go bhfuil suas le {{500 °F/h; 278 °C/h}} ceart go leor do phíosaí tanaí tirime, agus moillíonn sé an chéim dheireanach chun an teocht a chothromú ar fud an lochta.
 
-### Controller cones and Orton's chart
+### Cóin an rialaitheora agus tábla Orton
 
-L&L and Bartlett controllers use {{1926 °F; 1052 °C}} for cone 04 and {{1819 °F; 993 °C}} for cone 06, a little below Orton's {{1945 °F; 1063 °C}} and {{1828 °F; 998 °C}}; they agree at cone 6 and cone 10. Witness cones settle the difference: if they disagree with the controller, correct it with the cone offset.
+Úsáideann rialaitheoirí L&L agus Bartlett {{1926 °F; 1052 °C}} do chón 04 agus {{1819 °F; 993 °C}} do chón 06, beagán faoi bhun {{1945 °F; 1063 °C}} agus {{1828 °F; 998 °C}} Orton; réitíonn siad le chéile ag cón 6 agus ag cón 10. Socraíonn cóin fhianaise{{en: witness cones}} an difríocht: mura réitíonn siad leis an rialaitheoir, ceartaigh é leis an gceartú cóin.
 
-### On a manual kiln
+### Ar áith láimhe
 
-A manual kiln follows the same plan by hand: dry slowly with the lid propped and the peepholes open, step the switches up from Low to Medium to High, and let the sitter end the firing. The published procedures are under Manual kilns in detail, below.
+Leanann áith láimhe an plean céanna de láimh: triomaigh go mall agus an clúdach ardaithe ar thaca agus na poill faire ar oscailt, ardaigh na lasca céim ar chéim ó ‘Low’ (íseal) go ‘Medium’ (meánach) go ‘High’ (ard), agus lig don Kiln-Sitter deireadh a chur leis an mbácáil. Tá na nósanna imeachta foilsithe faoi ‘Áitheanna láimhe go mion’, thíos.
 
 ## Bácáil glónra {#glaze}
 

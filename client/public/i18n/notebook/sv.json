@@ -49,6 +49,10 @@
         "title": "Guider",
         "text": "Från vad en glasyr är till hur den bränns, och hur alla skyddas på vägen."
       },
+      "trash": {
+        "title": "Papperskorgen",
+        "text": "Lägg tillbaka det som togs bort de senaste 30 dagarna."
+      },
       "account": {
         "title": "Konto och inställningar",
         "text": "Inställningar, lösenordet, inloggning i två steg och en nedladdning av allt som sparas här."
@@ -116,6 +120,7 @@
   },
   "trash": {
     "title": "Papperskorgen",
+    "lead": "Det som tas bort (recept, råvaror, tillsatser, anteckningar, brännloggar och råd) ligger här i 30 dagar. Lägg tillbaka det, eller radera det för gott.",
     "listHeading": "I papperskorgen",
     "none": "Papperskorgen är tom.",
     "untitled": "Utan namn",

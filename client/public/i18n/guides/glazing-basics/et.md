@@ -18,40 +18,40 @@ Retseptis on loetletud toorained, näiteks põldpagu{{en: feldspar}}, kriit{{en:
 > [!NOTE]
 > Üks võimalus seda meeles pidada: ränidioksiid on klaas, sulandajad lasevad sel sulada temperatuuril, milleni teie ahi jõuab, ja alumiiniumoksiid muudab selle paksemaks, et see püsiks seal, kuhu selle kandsite.
 
-## Clay, coatings and the two firings {#clay-and-firings lang=en}
+## Savi, pinnakatted ja kaks põletust {#clay-and-firings}
 
-### Clay bodies
+### Savimassid
 
-The **clay body** is the clay a pot is made of. There are three main kinds.
+**Savimass**{{en: clay body}} on savi, millest ese on valmistatud. Peamisi liike on kolm.
 
-- **Earthenware**: a low-fire body, about cone 06–02, that stays porous. Often red or buff, it needs a glaze to hold water.
-- **Stoneware**: a mid- to high-fire body, about cone 5–10, that becomes vitreous or nearly so.
-- **Porcelain**: a white, high-fire body rich in kaolin, often translucent.
+- **Madalkuumuskeraamika**{{en: earthenware}}: madalkuumuses põletatav savimass, umbes koonused 06–02, mis jääb poorseks. See on sageli punane või beež ja vajab vee pidamiseks glasuuri{{en: glaze}}.
+- **Kivikeraamika**{{en: stoneware}}: kesk- kuni kõrgkuumuses põletatav savimass, umbes koonused 5–10, mis paakub või peaaegu paakub.
+- **Portselan**: valge, kaoliinirikas, kõrgkuumuses põletatav savimass, sageli läbikumav.
 
-**Vitreous** means glassy and non-porous; **vitrification** is a body becoming so as it fires. UK potters often draw the line by temperature instead: stoneware is fired above {{2192 °F; 1200 °C}}, earthenware below. Mid fire, cone 5–6, falls just either side of that line.
+**Paakunud** tähendab klaasjat ja mittepoorset; **paakumine** on savimassi muutumine selliseks põletamise käigus. Briti keraamikud tõmbavad piiri sageli hoopis temperatuuri järgi: kivikeraamikat põletatakse temperatuuril üle {{2192 °F; 1200 °C}}, madalkuumuskeraamikat alla selle. Keskkuumus, koonused 5–6, jääb just selle piiri ümber, mõlemale poole.
 
-### Coatings and drying
+### Pinnakatted ja kuivamine
 
-**Slip** is clay suspended in water, for casting, joining or decorating. An **engobe** is a slip-like coating, often colored, with more non-clay materials. An **underglaze** is colored slip or oxide decoration, usually covered with a clear glaze.
+**Lobri** on vees hõljuv savi valamiseks, liitmiseks või kaunistamiseks. **Angoob** on lobrilaadne, sageli värviline pinnakate, milles on rohkem muid tooraineid peale savi. **Glasuurialune värv** on värviline lobri või oksiididega kaunistus, mis kaetakse tavaliselt läbipaistva glasuuriga.
 
-Unfired ware is **greenware** (sources disagree on whether the word covers all unfired ware or only dry ware). As it dries it becomes **leather-hard**, stiff but slightly damp, the stage for trimming and handles; then **bone dry**, with no free water left, very fragile and ready to fire.
+**Põletamata ese**{{en: greenware}} on iga ese enne esimest põletust (allikad ei ole ühel meelel, kas ingliskeelne greenware hõlmab kõiki põletamata esemeid või ainult kuivi). Kuivades muutub ese **nahkkõvaks**: see on jäik, kuid veel veidi niiske, ja just siis esemeid treitakse ja neile kinnitatakse sangad. Seejärel muutub see **täiesti kuivaks**: vaba vett pole enam alles, ese on väga habras ja valmis põletamiseks.
 
-### The two firings
+### Kaks põletust
 
-The first, lower firing is the **bisque** (UK: **biscuit**), usually cone 08–04 (most often 06–04), about {{1728–1945 °F; 942–1063 °C}}. It leaves ware strong but porous. Digitalfire, a glaze reference site, suggests generally more than 15% porosity, so the bisque draws water out of the glaze as it goes on. A soft bisque (cone 08–06) is more porous; a hard bisque (often cone 04) is sturdier but takes glaze less readily.
+Esimene, madalama temperatuuriga põletus on **eelpõletus**{{en: bisque}} (Ühendkuningriigis **biscuit**), tavaliselt koonused 08–04 (kõige sagedamini 06–04), umbes {{1728–1945 °F; 942–1063 °C}}. Pärast seda on esemed tugevad, kuid poorsed. Glasuuriteabe veebileht Digitalfire soovitab poorsust üldiselt üle 15%, et eelpõletatud ese imaks pealekandmisel glasuurist vett. Madal eelpõletus (koonused 08–06) jätab eseme poorsemaks; kõrge eelpõletus (sageli koonus 04) annab tugevama eseme, mis aga võtab glasuuri vähem kergesti vastu.
 
-Table: How the bisque changes glazing (Digitalfire)
-Label: How the bisque changes glazing
+Table: Kuidas eelpõletus glasuurimist mõjutab (Digitalfire)
+Label: Eelpõletuse mõju glasuurimisele
 
-| Bisque                                  | What happens                                                    |
-| --------------------------------------- | --------------------------------------------------------------- |
-| Under-fired, very absorbent             | Glaze goes on too thick, then cracks and crawls                 |
-| Over-fired, dense                       | Dipping and drying take longer                                  |
-| Fired hotter, or held longer at the top | More gas burns off now, so less bubbles through the glaze later |
+| Eelpõletus                                 | Mis juhtub                                                                      |
+| ------------------------------------------ | ------------------------------------------------------------------------------- |
+| Alapõletatud, väga imav                    | Glasuurikiht jääb liiga paks, seejärel praguneb ja tõmbub kokku{{en: crawls}}   |
+| Ülepõletatud, tihe                         | Kastmine ja kuivamine võtavad kauem aega                                        |
+| Põletatud kuumemalt või hoitud tipus kauem | Rohkem gaase põleb välja kohe, nii et hiljem mullitab läbi glasuuri vähem gaasi |
 
-Potclays, a UK supplier, describes biscuit firing to around {{1000 °C; 1832 °F}}, about cone 06. Reading these sources together, we suggest cone 06–04 for a first bisque: {{1828–1945 °F; 998–1063 °C}} at Orton's medium rate.
+Briti tarnija Potclays kirjeldab eelpõletust temperatuurini umbes {{1000 °C; 1832 °F}}, umbes koonuseni 06. Neid allikaid koos lugedes soovitab see juhend esimeseks eelpõletuseks koonuseid 06–04: Ortoni keskmise kuumutuskiiruse juures {{1828–1945 °F; 998–1063 °C}}.
 
-The **glaze firing** (British potters may say **glost** firing) melts the glaze and, for stoneware, matures the clay too. **Once-firing** glazes unfired ware and fires it just once. Digitalfire reports a production case where raw-glazed ware crawled on its rims until a bisque firing cured it, so begin with two firings. [Firing a basic kiln](/guides/firing) gives schedules for both.
+**Glasuuripõletus**{{en: glaze firing}} (Briti keraamikud võivad öelda ka **glost firing**) sulatab glasuuri ja kivikeraamika puhul paagutab ka savimassi. **Ühekordse põletuse**{{en: once-firing}} puhul glasuuritakse põletamata ese ja põletatakse seda ainult üks kord. Digitalfire kirjeldab tootmisjuhtumit, kus toorele savile glasuuritud esemete servadel tõmbus glasuur kokku, kuni probleemi lahendas eelpõletus, seega alustage kahe põletusega. Juhendis [Põletamine lihtsas keraamikaahjus](/guides/firing) on põletusprogrammid mõlema jaoks.
 
 ## Koonused ja kuumustöö {#cones}
 
@@ -238,30 +238,30 @@ Label: Levinud glasuurivead
 | Voolamine                      | Glasuur voolab ahjuplaadile                          | Liiga vähe alumiiniumoksiidi; liiga paks kiht, näiteks seal, kus ülevalatud kihid kattuvad; palju rauda                           | Kandke õhem kiht; lisage alumiiniumoksiidi; lõpetage glasuur põhjast piisavalt kõrgemal                      |
 | Jahtumispraod{{en: dunting}}   | Praod esemes jahtumisel või kuumenemisel             | Kiire jahtumine läbi kvartsi ülemineku{{en: quartz inversion}}, {{1063 °F; 573 °C}}; ebaühtlase paksusega seinad; halb sobivus    | Põletage aeglaselt läbi {{1063 °F; 573 °C}}, nii kuumutamisel kui ka jahutamisel; ühtlase paksusega seinad   |
 
-## Food safety {#food-safety lang=en}
+## Toiduohutus {#food-safety}
 
-**Leaching** is metal dissolving out of a fired glaze into food or drink, and a glaze can look perfect and still do it. The legal tests soak the fired piece in an acid solution and measure the lead and cadmium that come out.
+**Metallide eraldumine**{{en: leaching}} tähendab, et metall lahustub põletatud glasuurist{{en: glaze}} toitu või jooki, ja see võib juhtuda ka glasuuriga, mis näeb välja laitmatu. Õigusaktidega ette nähtud katsetes leotatakse põletatud eset happelahuses ja mõõdetakse, kui palju pliid ja kaadmiumi sellest eraldub.
 
-### Lead-free is not the same as food-safe
+### Pliivaba ei tähenda toidunõudele sobivat
 
-The rules in the US, the EU, the UK and Australia limit the lead and cadmium a fired piece releases, not what the glaze contains. "Lead-free" removes one hazard; it is not a food-safety rating. Other oxides leach too: Glazy warns that high-barium glazes "can leach and are generally not food-safe", Digitalfire says copper "can make a glaze leachable; test it", and Glazy no longer advises lead glazes for functional ware.
+USA, EL-i, Ühendkuningriigi ja Austraalia eeskirjad piiravad plii ja kaadmiumi hulka, mis põletatud esemest eraldub, mitte seda, mida glasuur sisaldab. „Pliivaba“ kõrvaldab ühe ohu, kuid see ei ole toiduohutuse hinnang. Eralduda võivad ka teised oksiidid: Glazy hoiatab, et baariumirikkad glasuurid „võivad metalle eraldada ja ei ole üldiselt toidunõudele sobivad“, Digitalfire ütleb, et vask „võib muuta glasuuri selliseks, et sellest eraldub metalle; katsetage seda“, ning Glazy ei soovita enam pliiglasuure toidu- ja jooginõudele.
 
-A **liner glaze** is a stable, usually clear or white glaze for surfaces that touch food. In our view, one with no colorant, barium, lead or lithium, that melts fully, does not craze and wears well, is the lower-risk choice. Lower risk is not proof.
+**Toidunõuglasuur**{{en: liner glaze}} on stabiilne, tavaliselt läbipaistev või valge glasuur pindadele, mis puutuvad kokku toiduga. Selle juhendi hinnangul on väiksema riskiga valik selline glasuur, milles ei ole värvaineid{{en: colorant}}, baariumi, pliid ega liitiumi, mis sulab täielikult, ei juuspragune{{en: craze}} ja on kulumiskindel. Väiksem risk ei ole tõend.
 
-**Limit formulas** (Digitalfire prefers **target formulas**) give typical unity-formula ranges for stable glazes at a cone: Digitalfire's cone 6 targets put alumina at 0.285–0.64 and silica at 2.4–4.7. They guide you toward sound chemistry but prove nothing; Digitalfire avoids the word "limit" because it suggests glazes inside the ranges "are somehow safe". Glazecalc's tools for changing a recipe say when the new one goes past a recommended limit, such as a lot of boron at cone 6, and what the glaze will likely do.
+**Sihtvalemid** (inglise keeles limit formulas või, nagu Digitalfire eelistab, **target formulas**) annavad stabiilsete glasuuride tüüpilised Segeri valemi{{en: unity formula}} vahemikud ühe koonuse jaoks: Digitalfire’i koonuse 6 sihtväärtused on alumiiniumoksiidil 0,285–0,64 ja ränidioksiidil 2,4–4,7. Need suunavad teid usaldusväärse keemia poole, kuid ei tõesta midagi; Digitalfire väldib sõna limit („piir“), sest see jätab mulje, et vahemikesse jäävad glasuurid on „kuidagi ohutud“. Glazecalci tööriistad retsepti muutmiseks ütlevad, kui uus retsept ületab soovitatava piiri, näiteks kui koonuse 6 juures on palju boori, ja mida glasuur tõenäoliselt teeb.
 
-The legal limits differ by country. The table shows those where you live, in the law's own units; choose another country to compare.
+Seaduslikud piirnormid on riigiti erinevad. Tabelis on teie elukohariigi piirnormid õigusakti enda ühikutes; võrdlemiseks valige mõni teine riik.
 
 ::food-limits
 
-In the US, decorative ceramic ware that looks usable for food is treated as food ware unless it carries a stick-on label and a permanent notice molded or fired onto its base, such as "Not for Food Use. May Poison Food", or has a hole through the food surface. The EU sets lead and cadmium limits in Directive 84/500/EEC, and the UK keeps the same figures in its own law. From 29 May 2026 the Netherlands, Belgium and Luxembourg allow about 130 to 150 times less lead, and about 15 times less cadmium. Australia sets limits for imported ware; we found no official limit for ware made in Australia or New Zealand.
+USA-s käsitatakse dekoratiivset keraamikaeset, mis näib toidu jaoks kasutatav, toidunõuna, välja arvatud juhul, kui sellel on kleebitav silt ja selle põhja vormitud või sisse põletatud püsiv märge, näiteks „Not for Food Use. May Poison Food“ (mitte toidu jaoks; võib toitu mürgitada), või kui sellel on auk läbi toiduga kokkupuutuva pinna. EL kehtestab plii ja kaadmiumi piirnormid nõukogu direktiivis 84/500/EMÜ ning Ühendkuningriik säilitab samad arvud oma õigusaktides. Alates 29. maist 2026 lubavad Holland, Belgia ja Luksemburg umbes 130 kuni 150 korda vähem pliid ja umbes 15 korda vähem kaadmiumi. Austraalia kehtestab piirnormid imporditud esemetele; Austraalias või Uus-Meremaal valmistatud esemete kohta ametlikku piirnormi ei leitud.
 
-### Testing
+### Katsetamine
 
-The FDA says home swab kits can show leachable lead, but Ceramics New Zealand warns that test pens are not designed for ceramics and give false positives. Treat a positive as a reason to stop using the piece, and a negative as proving nothing. A laboratory leach test of the fired piece (ASTM C738 in the US; EN 1388 or ISO 6486 in Europe) is the real answer.
+FDA sõnul võivad kodused tampoontestid näidata pliid, mis võib eralduda, kuid Ceramics New Zealand hoiatab, et testpliiatsid ei ole mõeldud keraamika jaoks ja annavad valepositiivseid tulemusi. Pidage positiivset tulemust põhjuseks eseme kasutamine lõpetada ja negatiivset tulemust mitte millegi tõestuseks. Tegeliku vastuse annab põletatud eseme metallide eraldumise laborikatse (USA-s ASTM C738; Euroopas EN 1388 või ISO 6486).
 
 > [!WARNING]
-> "Food safe" means this glaze, on this clay, fired to this cone in this kiln and applied this way, releases less than the legal limits. Glazecalc can help you build a stable glaze, and **Replace lead** can rebuild an old lead recipe without lead, but no calculator can certify a pot. Only a test of the fired piece can.
+> „Toidunõudele sobiv“{{en: food safe}} tähendab, et see glasuur sellel savimassil, põletatuna selle koonuseni selles ahjus ja just nii peale kantud, eraldab vähem, kui seaduslikud piirnormid lubavad. Glazecalc aitab teil koostada stabiilse glasuuri ja funktsioon **Asenda plii** saab vana pliiretsepti ilma pliita uuesti koostada, kuid ükski kalkulaator ei saa eseme ohutust tõendada. Seda saab ainult põletatud eseme katse.
 
 ## Suhteline tihedus ja glasuuri pealekandmine {#application}
 
@@ -298,171 +298,171 @@ Ahjus olevad gaasid ehk **ahju atmosfäär** mõjutavad, milliseks glasuurid{{en
 
 Iga ahi, ka elektriahi, eraldab ahjuaure, seega juhtige need välja. Kuidas seda teha, selgitab juhend [Ohutu segamine ja ventilatsioon](/guides/safe-mixing).
 
-## Glossary {#glossary lang=en}
+## Sõnastik {#glossary}
 
-Additive
-: A colorant, opacifier or suspender added on top of a recipe's 100.
+Ahjuplaatide kaitseaine (kiln wash)
+: Kuumakindel kate, mis kaitseb ahjuplaate tilkade eest.
 
-Alumina (Al₂O₃)
-: The main stabilizer: stops running and adds hardness. From clays and feldspars.
+Alumiiniumoksiid (Al₂O₃; alumina)
+: Peamine stabilisaator: takistab voolamist ja lisab kõvadust. Tuleb savist ja põldpaost.
 
-Ball clay
-: A plastic clay with more iron and organic matter than kaolin.
+Bentoniit (bentonite)
+: Väga peen savi, mida lisatakse 1–3%, et glasuur ei setiks.
 
-Batch recipe
-: A glaze's raw materials by weight, usually adding up to 100.
+Boor (B₂O₃; boron)
+: Formaalselt klaasimoodustaja, kuid kasutatakse sulandajana; hädavajalik koonusest 06 koonuseni 6.
 
-Bentonite
-: A very fine clay added at 1–3% to keep glaze from settling.
+CMC, glasuuriliim (CMC gum)
+: Tselluloosipõhine liim, mis aitab glasuuril pintsliga peale minna ja kinnituda; põleb ära.
 
-Bisque (UK: biscuit)
-: The first, lower firing, usually cone 08–04 (most often 06–04), leaving ware strong but porous.
+Devitrifikatsioon (devitrification)
+: Soovimatute kristallide teke klaasis jahtumise alguses.
 
-Boron (B₂O₃)
-: Formally a glass former but used as a flux; essential from cone 06 to cone 6.
+Eelpõletus (bisque; Ühendkuningriigis biscuit)
+: Esimene, madalama temperatuuriga põletus, tavaliselt koonused 08–04 (kõige sagedamini 06–04), mis jätab esemed tugevaks, kuid poorseks.
 
-CMC gum
-: A cellulose gum that helps glaze brush on and stick; it burns away.
+Flokulant ja deflokulant (flocculant and deflocculant)
+: Lisaained, mis muudavad glasuurilahuse tarretunuks (inglise sool, äädikas) või vedelamaks (naatriumsilikaat, Darvan).
 
-Colorant and stain
-: A metal oxide or carbonate that colors glaze; a stain is a factory-made, more stable colorant.
+Fritt (frit)
+: Tehases valmistatud klaas, sulatatud, järsult jahutatud ja jahvatatud, mis muudab lahustuvad või mürgised oksiidid lahustumatuks.
 
-Cone
-: A calibrated ceramic pyramid that bends at a set heatwork. A witness cone shows what the pots received.
+Glasuur (glaze)
+: Klaasikiht, mis sulab põletamisel ning tihendab ja kaunistab eset.
 
-Crawling
-: Glaze pulling back into beads in firing, leaving bare clay.
+Glasuuri kokkutõmbumine (crawling)
+: Glasuur tõmbub põletamisel helmesteks kokku ja jätab savi paljaks.
 
-Crazing
-: Fine cracks in a glaze that shrinks more than its body; crackle when wanted.
+Glasuuri koorumine (shivering)
+: Glasuur koorub servadelt maha, sest on liiga suure survepinge all; oht toidu- ja jooginõudel.
 
-Devitrification
-: Crystals growing out of the glass early in cooling, where they are not wanted.
+Glasuuri sobivus savimassiga (glaze fit)
+: Kui hästi glasuuri ja savimassi soojuspaisumine kokku sobivad; hea sobivuse korral on glasuur kerge survepinge all.
 
-Dunting
-: Cracks in a pot from cooling or heating stress, often at quartz inversion, {{1063 °F; 573 °C}}.
+Glasuurialune värv (underglaze)
+: Värviline lobri või oksiididega kaunistus, tavaliselt läbipaistva glasuuri all.
 
-Earthenware
-: A low-fire body (about cone 06–02) that stays porous.
+Glasuuripõletus (glaze firing; Ühendkuningriigis glost firing)
+: Põletus, mis sulatab glasuuri.
 
-Feldspar
-: A mineral supplying alkali flux with alumina and silica: potash, soda or nepheline syenite.
+Hõõgumiskadu (LOI, loss on ignition)
+: Põletamisel vee, süsinikdioksiidi, orgaanilise aine või väävli eraldumise tõttu kaotatud mass.
 
-Flocculant and deflocculant
-: Additives that gel a slurry (Epsom salts, vinegar) or thin it (sodium silicate, Darvan).
+Hägustaja (opacifier)
+: Tooraine, näiteks tsirkoonsilikaat, tinaoksiid või titaandioksiid, mis muudab glasuuri katvaks.
 
-Flux
-: An oxide that lowers the melting temperature of silica.
+Jahtumispraod (dunting)
+: Praod esemes jahtumisel või kuumenemisel tekkivast pingest, sageli kvartsi ülemineku juures, {{1063 °F; 573 °C}}.
 
-Food safe
-: In law, releasing less lead and cadmium than the limits in an acid test. Not the same as lead-free.
+Juuspragunemine (crazing)
+: Peened praod glasuuris, mis tõmbub kokku rohkem kui savimass; kui see on soovitud, kraklee.
 
-Frit
-: Factory-made glass, melted, quenched and ground, that makes soluble or toxic oxides insoluble.
+Kaoliin (kaolin; Ühendkuningriigis china clay)
+: Puhas valge savi, mis annab alumiiniumoksiidi ja ränidioksiidi; hoiab glasuuri hõljumas. Austraalias: Eckalite.
 
-Glass former
-: The oxide that builds the glass, usually silica.
+Katserida (line blend)
+: Katsed, kus ühe tooraine kogus muutub samm-sammult kahe koguse vahel. Kolmnurkkatses muudetakse kolme segu vahekordi ruudustikul.
 
-Glaze
-: A coat of glass that melts in firing to seal and decorate a pot.
+Kivikeraamika (stoneware)
+: Kesk- kuni kõrgkuumuses põletatav savimass (umbes koonused 5–10), mis paakub või peaaegu paakub.
 
-Glaze firing (UK: glost firing)
-: The firing that melts the glaze.
+Klaasimoodustaja (glass former)
+: Oksiid, mis moodustab klaasi, tavaliselt ränidioksiid.
 
-Glaze fit
-: How well glaze and body expansion match; a good fit leaves the glaze slightly compressed.
+Koonus (cone)
+: Kalibreeritud keraamiline püramiid, mis paindub kindla kuumustöö juures. Kontrollkoonus näitab, kui palju kuumustööd esemed said.
 
-Gloss, satin and matte
-: Reflective and smooth; a subdued sheen; dull.
+Kriit (whiting)
+: Kaltsiumkarbonaat, peamine kaltsiumi sulandaja; kaotab põletamisel üle 40% oma massist. Saksa keeles: Kreide.
 
-Greenware
-: Unfired ware: leather-hard when stiff but damp, bone dry when no free water is left.
+Kuumustöö (heatwork)
+: Temperatuuri ja aja koosmõju ahjus; see, mida koonused mõõdavad.
 
-Heatwork
-: The combined effect of temperature and time in a kiln; what cones measure.
+Lisaaine (additive)
+: Värvaine, hägustaja või settimisvastane aine, mis tuleb retsepti 100 osale lisaks.
 
-Kaolin (UK: china clay)
-: A pure white clay supplying alumina and silica; keeps glaze suspended. Australia: Eckalite.
+Lobri ja angoob (slip and engobe)
+: Savi vees; angoob on lobrilaadne pinnakate, milles on rohkem muid tooraineid peale savi.
 
-Kiln wash
-: A heat-resisting coating that protects kiln shelves from drips.
+Läikiv, siidmatt ja matt (gloss, satin and matte)
+: Peegeldav ja sile; tagasihoidliku läikega; tuhm.
 
-Leaching
-: Metals dissolving out of a fired glaze into food or drink.
+Madalkuumuskeraamika (earthenware)
+: Madalkuumuses põletatav savimass (umbes koonused 06–02), mis jääb poorseks.
 
-Limit formula (target formula)
-: Typical unity-formula ranges for stable glazes at a cone; a guide, not a guarantee.
+Metallide eraldumine (leaching)
+: Metallide lahustumine põletatud glasuurist toitu või jooki.
 
-Line blend
-: Tests stepping one ingredient between two amounts. A triaxial blend varies three on a grid.
+Nõelaaugud ja kupud (pinholing and blistering)
+: Väikesed augud või teravaservalised kraatrid kohtades, kus gaas pääses sulatisest välja.
 
-Liner glaze
-: A stable, usually clear or white glaze for surfaces that touch food.
+Oksiid (oxide)
+: Elemendi ja hapniku ühend; oksiidanalüüs loetleb need massiprotsentides.
 
-LOI (loss on ignition)
-: Weight lost in firing as water, carbon dioxide, organic matter or sulfur.
+Oksüdeeriv ja redutseeriv põletus (oxidation and reduction)
+: Põletus rohke hapnikuga (elektriahjud) või piiratud hapnikuga (tavaliselt gaasi- või puuküttega ahjud).
 
-Once-firing (single firing)
-: Glazing unfired ware and firing it only once.
+Paakumine (vitrification)
+: Savimassi muutumine põletamisel klaasjaks ja mittepoorseks.
 
-Opacifier
-: A material, such as zircon, tin oxide or titanium dioxide, that makes glaze opaque.
+Pallsavi (ball clay)
+: Plastiline savi, milles on rohkem rauda ja orgaanilist ainet kui kaoliinis.
 
-Oxidation and reduction
-: Firing with plenty of oxygen (electric kilns), or with oxygen restricted (usually gas or wood).
+Portselan (porcelain)
+: Valge, kaoliinirikas, kõrgkuumuses põletatav savimass, sageli läbikumav.
 
-Oxide
-: A compound of an element with oxygen; an oxide analysis lists them by weight percent.
+Põldpagu (feldspar)
+: Mineraal, mis annab leelissulandajat koos alumiiniumoksiidi ja ränidioksiidiga: kaaliumpõldpagu, naatriumpõldpagu või nefeliinsüeniit.
 
-Pinholing and blistering
-: Small holes, or sharp-edged craters, where gas escaped through the melt.
+Põletamata ese (greenware)
+: Põletamata esemed: nahkkõvad, kui need on jäigad, kuid niisked; täiesti kuivad, kui vaba vett pole enam alles.
 
-Porcelain
-: A white, kaolin-rich, high-fire body, often translucent.
+R₂O ja RO
+: Leelissulandajad (Na₂O, K₂O, Li₂O) ja leelismuldmetallide sulandajad (CaO, MgO, BaO, SrO, lisaks ZnO).
 
-R₂O and RO
-: The alkali fluxes (Na₂O, K₂O, Li₂O) and alkaline-earth fluxes (CaO, MgO, BaO, SrO, with ZnO).
+Retsept (batch recipe)
+: Glasuuri toorained massi järgi, tavaliselt summaga 100.
 
-Shivering
-: Glaze flaking off edges because it is over-compressed; a hazard on functional ware.
+Ränidioksiid (SiO₂; silica)
+: Klaasimoodustaja; nimetatakse ka flindiks või kvartsiks.
 
-Silica (SiO₂)
-: The glass former; also called flint or quartz.
+Ränidioksiidi ja alumiiniumoksiidi suhe (silica to alumina ratio)
+: Ränidioksiid jagatud alumiiniumoksiidiga Segeri valemis: kõrgem suhe kaldub läikivaks, madalam matiks.
 
-Silica to alumina ratio
-: Silica divided by alumina in the unity formula: higher tends to gloss, lower to matte.
+Segeri valem (UMF; unity molecular formula, Seger formula)
+: Glasuuri oksiidid molekulide arvuna, teisendatud nii, et sulandajate summa on 1.
 
-Slip and engobe
-: Clay in water; an engobe is a slip-like coating with more non-clay material.
+Sihtvalem (limit formula, target formula)
+: Stabiilsete glasuuride tüüpilised Segeri valemi vahemikud ühe koonuse jaoks; suunis, mitte garantii.
 
-Specific gravity (SG)
-: A slurry's weight compared with the same volume of water. Older UK: pint weight.
+Stabilisaator (stabilizer)
+: Oksiid, peamiselt alumiiniumoksiid, mis muudab sulatise jäigemaks ja lisab vastupidavust.
 
-Stabilizer
-: An oxide, mainly alumina, that stiffens the melt and adds durability.
+Suhteline tihedus (specific gravity, SG)
+: Glasuurilahuse mass võrreldes sama ruumala veega. Vanem Briti nimetus: pindi kaal.
 
-Stoneware
-: A mid- to high-fire body (about cone 5–10) that becomes vitreous or nearly so.
+Sulandaja (flux)
+: Oksiid, mis alandab ränidioksiidi sulamistemperatuuri.
 
-Thixotropy
-: Flowing when stirred, setting into a soft gel when still.
+Tiksotroopia (thixotropy)
+: Omadus voolata segamisel ja tarretuda seistes pehmeks geeliks.
 
-Underglaze
-: Colored slip or oxide decoration, usually under a clear glaze.
+Toidunõudele sobiv (food safe)
+: Seaduse järgi: eraldab happekatses vähem pliid ja kaadmiumi, kui piirnormid lubavad. Ei ole sama mis pliivaba.
 
-Unity molecular formula (UMF, Seger formula)
-: A glaze's oxides as molecule counts, scaled so the fluxes add up to 1.
+Toidunõuglasuur (liner glaze)
+: Stabiilne, tavaliselt läbipaistev või valge glasuur pindadele, mis puutuvad kokku toiduga.
 
-Vitrification
-: A body becoming glassy and non-porous in firing.
+Vaha, külmvaha (wax resist)
+: Vaha, mida kantakse sinna, kuhu glasuur ei tohi minna, tavaliselt põhjale.
 
-Wax resist
-: Wax painted where glaze must not go, usually the foot.
+Värvaine ja pigment (colorant and stain)
+: Metallioksiid või -karbonaat, mis värvib glasuuri; pigment on tehases valmistatud, stabiilsem värvaine.
 
-Whiting
-: Calcium carbonate, the main calcium flux; loses over 40% of its weight in firing. German: Kreide.
+Ühekordne põletus (once-firing, single firing)
+: Põletamata eseme glasuurimine ja põletamine ainult üks kord.
 
-## Sources {#sources lang=en}
+## Allikad {#sources}
 
 - [Glazy Help: Glaze](https://help.glazy.org/concepts/glaze)
 - [Glazy Help: Oxides](https://help.glazy.org/concepts/oxides)
@@ -472,7 +472,7 @@ Whiting
 - [Glazy Help: Firing](https://help.glazy.org/concepts/firing)
 - [Glazy Help: Defects](https://help.glazy.org/concepts/defects)
 - [Glazy Help: Specific gravity](https://help.glazy.org/testing/specific-gravity)
-- [Orton Ceramic Foundation: Pyrometric cone chart, °F (via The Ceramic Shop)](https://www.theceramicshop.com/technical_info/Cones/Orton-Cone-Chart-F-022-14.pdf)
+- [Orton Ceramic Foundation: Pyrometric cone chart, °F (veebilehel The Ceramic Shop)](https://www.theceramicshop.com/technical_info/Cones/Orton-Cone-Chart-F-022-14.pdf)
 - [Digitalfire: Bisque](https://digitalfire.com/glossary/bisque)
 - [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Unity molecular formula](https://digitalfire.com/glossary/unity+molecular+formula)

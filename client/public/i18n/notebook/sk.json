@@ -49,6 +49,10 @@
         "title": "Návody",
         "text": "Od toho, čo je glazúra, až po jej výpal, a ako pritom udržať všetkých v bezpečí."
       },
+      "trash": {
+        "title": "Kôš",
+        "text": "Vráťte späť, čo ste za posledných 30 dní odstránili."
+      },
       "account": {
         "title": "Účet a nastavenia",
         "text": "Nastavenia, vaše heslo, dvojstupňové prihlásenie a stiahnutie všetkého, čo tu uchovávate."
@@ -116,6 +120,7 @@
   },
   "trash": {
     "title": "Kôš",
+    "lead": "To, čo odstránite (recepty, suroviny, prísady, poznámky, záznamy výpalov a rady), tu čaká 30 dní. Môžete to vrátiť späť, alebo natrvalo zmazať.",
     "listHeading": "V Koši",
     "none": "Kôš je prázdny.",
     "untitled": "Bez názvu",

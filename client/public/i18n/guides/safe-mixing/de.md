@@ -3,39 +3,39 @@ title: Sicheres Anmischen und Lüften
 lead: Wie Sie Glasurstaub aus Ihrer Lunge und Brenngase aus Ihrem Zuhause fernhalten: die Gewohnheiten, die Ausrüstung und die Rohstoffe, auf die es am meisten ankommt.
 ---
 
-## The main hazard: dust {#the-main-hazard lang=en}
+## Die größte Gefahr: Staub {#the-main-hazard}
 
-The main long-term hazard in glaze work is dust, above all **respirable crystalline silica**: particles of quartz or cristobalite (crystal forms of silica) small enough to reach deep into the lungs. Crystalline silica can make up about 10 to 60% of a glaze's dry weight, and most clays (except kaolin) and many feldspars also carry fine quartz. The UK's Health and Safety Executive (HSE) says this dust "is very fine and invisible under normal lighting", so a room that looks clean is not proof that the air is.
+Die größte langfristige Gefahr bei der Arbeit mit Glasuren{{en: glaze}} ist Staub, vor allem **alveolengängiger Quarzstaub**{{en: respirable crystalline silica}}: Teilchen aus Quarz oder Cristobalit (kristallinen Formen von Siliciumdioxid{{en: silica}}), die so klein sind, dass sie tief in die Lunge gelangen. Kristallines Siliciumdioxid kann etwa 10 bis 60 % des Trockengewichts einer Glasur ausmachen, und die meisten Tone (außer Kaolin{{en: kaolin}}) und viele Feldspäte{{en: feldspar}} enthalten ebenfalls feinen Quarz. Laut der britischen Arbeitsschutzbehörde Health and Safety Executive (HSE) ist dieser Staub „sehr fein und bei normaler Beleuchtung unsichtbar“; ein Raum, der sauber aussieht, beweist also nicht, dass auch die Luft sauber ist.
 
-Breathed in over time, it can cause **silicosis**, a lung disease that HSE describes as "serious and irreversible" and able to "cause permanent disablement and early death". It can also cause **COPD** (chronic obstructive pulmonary disease: long-term bronchitis and emphysema), which smoking makes worse. IARC, the World Health Organization's cancer agency, places inhaled crystalline silica in Group 1, "carcinogenic to humans".
+Wird dieser Staub über längere Zeit eingeatmet, kann er **Silikose** (Quarzstaublunge) verursachen, eine Lungenkrankheit, die die HSE als „schwerwiegend und unumkehrbar“ beschreibt und die „zu bleibender Behinderung und frühem Tod führen“ kann. Er kann auch **COPD** verursachen (chronisch obstruktive Lungenerkrankung: langanhaltende Bronchitis und Lungenemphysem), die durch Rauchen verschlimmert wird. Die IARC, die Krebsforschungsagentur der Weltgesundheitsorganisation, stuft eingeatmetes kristallines Siliciumdioxid in Gruppe 1 ein, „krebserregend beim Menschen“.
 
-Silica does not turn into fumes in the kiln, and a wet glaze is not an inhalation hazard unless it is sprayed: spray mist carries silica and dries to dust (see Spraying, below). The times to take care are when material is dry: opening bags, weighing, stirring powder into water, and cleaning up drips, overspray and slop once they have dried back into dust.
+Siliciumdioxid wird im Brennofen nicht zu Dampf, und von einer nassen Glasur geht beim Einatmen keine Gefahr aus, es sei denn, sie wird gespritzt: Sprühnebel enthält Siliciumdioxid und trocknet zu Staub (siehe „Spritzen“ weiter unten). Vorsicht ist geboten, solange das Material trocken ist: beim Öffnen von Säcken, beim Wiegen, beim Einrühren von Pulver in Wasser und beim Beseitigen von Tropfen, Overspray und Glasurresten, die wieder zu Staub getrocknet sind.
 
-### Exposure limits
+### Grenzwerte
 
-Workplace rules set an **exposure limit**: the most silica a worker may breathe, averaged over an 8-hour day, in milligrams (mg) or micrograms (µg, thousandths of a milligram) per cubic meter of air.
+Vorschriften für Arbeitsplätze legen einen **Arbeitsplatzgrenzwert** fest: die größte Menge Quarzstaub, die Beschäftigte einatmen dürfen, gemittelt über einen 8-Stunden-Tag, angegeben in Milligramm (mg) oder Mikrogramm (µg, Tausendstel eines Milligramms) pro Kubikmeter Luft.
 
-Table: Workplace limits for respirable crystalline silica (8-hour average)
-Label: Silica exposure limits
+Table: Arbeitsplatzgrenzwerte für alveolengängigen Quarzstaub (Mittelwert über 8 Stunden)
+Label: Grenzwerte für Quarzstaub
 
-| Region         |                 Limit | Notes                                                                             |
-| -------------- | --------------------: | --------------------------------------------------------------------------------- |
-| United States  | 0.05 mg/m³ (50 µg/m³) | OSHA's limit. Employers must start taking action at 25 µg/m³, the "action level". |
-| United Kingdom |             0.1 mg/m³ | Exposure must also be kept "as low as reasonably practicable".                    |
-| European Union |             0.1 mg/m³ | Binding limit (Directive 2017/2398). Some member states set lower ones.           |
-| Australia      |            0.05 mg/m³ | Since July 2020. In June 2026, most ministers did not support a cut to 0.025.     |
-| New Zealand    |           0.025 mg/m³ | Since 2023. WorkSafe's standards are guidance, not legal limits.                  |
+| Region                 |             Grenzwert | Hinweise                                                                                                        |
+| ---------------------- | --------------------: | --------------------------------------------------------------------------------------------------------------- |
+| USA                    | 0,05 mg/m³ (50 µg/m³) | Grenzwert der OSHA. Arbeitgeber müssen ab 25 µg/m³, dem „Auslösewert“, mit Maßnahmen beginnen.                  |
+| Vereinigtes Königreich |             0,1 mg/m³ | Die Exposition muss außerdem „so gering wie vernünftigerweise machbar“ gehalten werden.                         |
+| Europäische Union      |             0,1 mg/m³ | Verbindlicher Grenzwert (Richtlinie 2017/2398). Einige Mitgliedstaaten legen niedrigere fest.                   |
+| Australien             |            0,05 mg/m³ | Seit Juli 2020. Im Juni 2026 unterstützten die meisten Ministerinnen und Minister eine Senkung auf 0,025 nicht. |
+| Neuseeland             |           0,025 mg/m³ | Seit 2023. Die Standards von WorkSafe sind Empfehlungen, keine gesetzlichen Grenzwerte.                         |
 
-Some pages quote 0.025 mg/m³ for Australia, but the official limit is still 0.05. Either way, the advice is the same: keep dust as low as you can.
+Manche Seiten nennen für Australien 0,025 mg/m³, doch der offizielle Grenzwert liegt weiterhin bei 0,05. So oder so gilt derselbe Rat: Halten Sie den Staub so gering wie möglich.
 
-Several EU member states set lower limits than the EU's. The limit where you live, the law that sets it and the national body for safety at work:
+Mehrere EU-Mitgliedstaaten legen niedrigere Grenzwerte fest als die EU. Der Grenzwert dort, wo Sie leben, die Vorschrift, die ihn festlegt, und die nationale Stelle für Arbeitsschutz:
 
 ::silica-limit
 
 > [!NOTE]
-> These are workplace limits. They bind employers, so no one inspects a potter working alone at home, though community studios and schools with staff are usually covered (check your local rules). The dust is the same at home, and the limits show the scale of the hazard: 25 to 100 millionths of a gram in each cubic meter of air, averaged over a day.
+> Das sind Grenzwerte für Arbeitsplätze. Sie verpflichten Arbeitgeber; wer allein zu Hause töpfert, wird also von niemandem kontrolliert, Gemeinschaftswerkstätten und Schulen mit Personal fallen aber meist darunter (prüfen Sie die Vorschriften bei Ihnen vor Ort). Zu Hause ist der Staub derselbe, und die Grenzwerte zeigen die Größenordnung der Gefahr: 25 bis 100 Millionstel Gramm in jedem Kubikmeter Luft, gemittelt über einen Tag.
 
-Almost no one has measured dust in hobby studios, so we suggest treating every dry-powder task as a dusty one.
+In Hobbywerkstätten hat kaum jemand den Staub gemessen; wir schlagen deshalb vor, jede Arbeit mit trockenem Pulver als staubige Arbeit zu behandeln.
 
 ## Die wichtigsten Gewohnheiten {#habits}
 
@@ -65,49 +65,49 @@ Der meiste Schutz kommt von Gewohnheiten, nicht von Ausrüstung. Die Empfehlunge
 
 Diese Rangfolge ist unser Vorschlag, aufgebaut auf dem Grundsatz der HSE, zuerst Pulver zu vermeiden. Wiegen und Anrühren Schritt für Schritt finden Sie in [Eine Glasur ansetzen](/guides/making-a-glaze).
 
-## Respirators {#respirators lang=en}
+## Atemschutzmasken {#respirators}
 
-A **respirator** is a mask certified to filter fine particles from the air you breathe. It works only when it seals to your face, and it backs up good habits rather than replacing them.
+Eine **Atemschutzmaske** ist eine Maske, die zertifiziert ist, feine Partikel aus der Atemluft zu filtern. Sie wirkt nur, wenn sie dicht am Gesicht anliegt, und sie ergänzt gute Gewohnheiten, statt sie zu ersetzen.
 
-### Classes by region
+### Klassen nach Region
 
-Table: Particle respirator classes by region (rough equivalents for glaze dust)
-Label: Respirator classes
+Table: Partikelfiltrierende Atemschutzmasken: Klassen nach Region (ungefähre Entsprechungen für Glasurstaub)
+Label: Atemschutzklassen
 
-| Region                    | Everyday class | Higher class | Look for                                                                   |
-| ------------------------- | -------------- | ------------ | -------------------------------------------------------------------------- |
-| United States             | N95            | P100         | NIOSH approval on the mask or its packaging                                |
-| UK and EU                 | FFP2           | FFP3         | EN 149 on disposable masks; EN 140 half masks with EN 143 P2 or P3 filters |
-| Australia and New Zealand | P2             | P3           | AS/NZS 1716                                                                |
+| Region                    | Alltagsklasse | Höhere Klasse | Worauf Sie achten                                                             |
+| ------------------------- | ------------- | ------------- | ----------------------------------------------------------------------------- |
+| Vereinigte Staaten        | N95           | P100          | NIOSH-Zulassung auf der Maske oder ihrer Verpackung                           |
+| Großbritannien und EU     | FFP2          | FFP3          | EN 149 bei Einwegmasken; EN 140 bei Halbmasken mit EN 143 P2- oder P3-Filtern |
+| Australien und Neuseeland | P2            | P3            | AS/NZS 1716                                                                   |
 
-The higher class filters a larger share of fine particles. Sources disagree on what an Australian P3 filters (at least 99%, or at least 99.95%), so buy the certified class sold in your region. A reusable **half mask** (covering the nose and mouth, with replaceable filters) fitted with P100 filters (P3 outside the US) is a common studio choice.
+Die höhere Klasse filtert einen größeren Anteil feiner Partikel. Die Quellen sind sich uneinig, was ein australischer P3 filtert (mindestens 99 % oder mindestens 99,95 %), deshalb kaufen Sie die zertifizierte Klasse, die in Ihrer Region verkauft wird. Eine wiederverwendbare **Halbmaske** (sie bedeckt Nase und Mund, mit auswechselbaren Filtern) mit P100-Filtern (P3 außerhalb der USA) ist in Werkstätten eine verbreitete Wahl.
 
-### Fit and seal
+### Passform und Dichtsitz
 
-A mask that leaks lets dust in around its edges, whatever its class. HSE warns that stubble and beards "make it impossible to get a good seal".
+Eine Maske, die undicht ist, lässt an ihren Rändern Staub herein, ganz gleich, welcher Klasse sie angehört. Die HSE warnt, dass Stoppeln und Bärte „es unmöglich machen, einen guten Dichtsitz zu erreichen“.
 
-- **Shave shortly before you work.** Guidance differs on how recent "clean-shaven" must be. A UK maker, citing HSE, says shaved within 8 hours of starting work. The Australian and New Zealand fit-test standard asks for a shave before a fit test, "preferably within 12 hours". Shaving shortly before you work meets both.
-- **If you keep a beard,** a loose-fitting **powered respirator** (PAPR: a hood or helmet with a fan that supplies filtered air) needs no face seal.
-- **Get the size right.** Poor fit is a major cause of leaks. Workplaces use a **fit test**, a check that a particular mask seals on a particular face. At home, we suggest following the maker's instructions for checking the seal each time you put it on.
+- **Rasieren Sie sich kurz vor der Arbeit.** Die Empfehlungen unterscheiden sich darin, wie frisch die Rasur für „glatt rasiert“ sein muss. Ein britischer Hersteller nennt unter Berufung auf die HSE eine Rasur innerhalb von 8 Stunden vor Arbeitsbeginn. Die australische und neuseeländische Norm für die Anpassungsüberprüfung (Fit-Test) verlangt eine Rasur vor einem Fit-Test, „vorzugsweise innerhalb von 12 Stunden“. Eine Rasur kurz vor der Arbeit erfüllt beides.
+- **Wenn Sie einen Bart tragen,** braucht ein locker sitzendes **Gebläsefiltergerät** (PAPR: eine Haube oder ein Helm mit einem Gebläse, das gefilterte Luft zuführt) keinen Dichtsitz im Gesicht.
+- **Achten Sie auf die richtige Größe.** Schlechte Passform ist eine Hauptursache für Undichtigkeiten. Betriebe nutzen eine **Anpassungsüberprüfung** (Fit-Test), eine Prüfung, ob eine bestimmte Maske an einem bestimmten Gesicht dicht abschließt. Zu Hause schlagen wir vor, die Anleitung des Herstellers zur Prüfung des Dichtsitzes bei jedem Aufsetzen zu befolgen.
 
 > [!NOTE]
-> In our view, fit matters more than class: a well-fitted N95, FFP2 or P2 will usually do better than a loose P100.
+> Nach unserer Einschätzung zählt der Sitz mehr als die Klasse: Eine gut sitzende N95, FFP2 oder P2 schneidet meist besser ab als eine locker sitzende P100.
 
-### When to wear one
+### Wann man sie trägt
 
-HSE says a respirator is "normally not needed" where weighing and mixing happen in a ventilated enclosure, but "may be needed for maintenance and cleaning". Most home studios have no enclosure, so we suggest wearing one (N95, FFP2 or P2 at least; P100, FFP3 or P3 is better) whenever you:
+Die HSE sagt, eine Atemschutzmaske sei „normalerweise nicht nötig“, wo Wiegen und Mischen in einer belüfteten Einhausung stattfinden, könne aber „für Wartung und Reinigung nötig sein“. Die meisten Heimwerkstätten haben keine Einhausung, deshalb schlagen wir vor, eine zu tragen (mindestens N95, FFP2 oder P2; P100, FFP3 oder P3 ist besser), wann immer Sie:
 
-- open bags or tip out powder;
-- weigh powders and stir them into water;
-- scrape, sand or grind dried glaze or bisque;
-- do any dry cleanup, or empty a vacuum;
-- spray glaze (in a booth: see below).
+- Säcke öffnen oder Pulver ausschütten;
+- Pulver wiegen und in Wasser einrühren;
+- getrocknete Glasur oder Schrühware abkratzen, schmirgeln oder schleifen;
+- trocken reinigen oder einen Staubsauger leeren;
+- Glasur spritzen (in einer Kabine: siehe unten).
 
-### What is not a respirator
+### Was keine Atemschutzmaske ist
 
-- Surgical masks, cloth masks and "nuisance dust" masks without a NIOSH, EN 149 or AS/NZS 1716 marking. We would not rely on them for glaze dust.
-- A dust respirator "will not protect you against gases, vapors" (OSHA), so it does nothing for kiln fumes.
-- Look after yours: OSHA notes that a dirty or misused respirator "can become a hazard". Store it clean, away from dusty work clothes.
+- Operationsmasken, Stoffmasken und „Grobstaub“-Masken ohne NIOSH-, EN-149- oder AS/NZS-1716-Kennzeichnung. Wir würden uns bei Glasurstaub nicht auf sie verlassen.
+- Eine partikelfiltrierende Atemschutzmaske „schützt nicht vor Gasen und Dämpfen“ (OSHA), sie nützt also nichts gegen Ofendämpfe.
+- Pflegen Sie Ihre: OSHA weist darauf hin, dass eine verschmutzte oder falsch benutzte Atemschutzmaske „zu einer Gefahr werden kann“. Bewahren Sie sie sauber auf, fern von staubiger Arbeitskleidung.
 
 ## Reinigung, Kleidung und Hände {#cleaning}
 
@@ -181,36 +181,36 @@ Die Alternative ist eine **Ablufthaube** (ein Schirm über dem Ofen). Sie saugt 
 
 Raku erzeugt große Mengen Rauch und CO; Utah rät, Raku im Freien zu brennen, abseits von Luftansaugöffnungen und Fenstern. Zum Brennen selbst siehe [Brennen mit einem einfachen Ofen](/guides/firing).
 
-## Materials that need most care {#materials lang=en}
+## Rohstoffe, die am meisten Vorsicht verlangen {#materials}
 
-Most glaze materials, including silica, clays, feldspars and frits, are mainly a dust hazard, which the habits above control. A shorter list is toxic in its own right, by breathing, swallowing or skin contact. Digitalfire adds that stains are generally much safer than raw oxides, and that "unbalanced glazes that release toxic metals can be made from any materials": food safety depends on the whole recipe, not on one ingredient.
+Die meisten Glasurrohstoffe, darunter Quarz{{en: silica}}, Tone, Feldspäte{{en: feldspar}} und Fritten{{en: frit}}, sind vor allem als Staub gefährlich, und diese Gefahr lässt sich mit den Gewohnheiten oben beherrschen. Eine kürzere Liste von Rohstoffen ist schon für sich giftig: beim Einatmen, beim Verschlucken oder bei Hautkontakt. Digitalfire fügt hinzu, dass Farbkörper{{en: stain}} im Allgemeinen viel sicherer sind als reine Oxide und dass „unausgewogene Glasuren, die giftige Metalle abgeben, aus beliebigen Rohstoffen hergestellt werden können“: Ob eine Glasur{{en: glaze}} lebensmittelgeeignet{{en: food safe}} ist, hängt vom ganzen Rezept ab, nicht von einem einzelnen Bestandteil.
 
-An **IARC group** is a cancer classification: Group 1 means "carcinogenic to humans", Group 2A "probably carcinogenic to humans", Group 2B "possibly carcinogenic to humans", and Group 3 "not classifiable as to its carcinogenicity to humans", which means too little evidence to judge either way.
+Eine **IARC-Gruppe** ist eine Einstufung des Krebsrisikos: Gruppe 1 bedeutet „krebserregend beim Menschen“, Gruppe 2A „wahrscheinlich krebserregend beim Menschen“, Gruppe 2B „möglicherweise krebserregend beim Menschen“ und Gruppe 3 „hinsichtlich der Karzinogenität beim Menschen nicht klassifizierbar“, was bedeutet, dass die Belege zu gering sind, um in die eine oder andere Richtung zu urteilen.
 
-Table: Glaze materials that need extra care
-Label: Materials that need most care
+Table: Glasurrohstoffe, die besondere Vorsicht verlangen
+Label: Rohstoffe, die Vorsicht verlangen
 
-| Material                               | Hazard                                                                                                                                                                                                                                       | Precaution                                                                                                  |
-| -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| Lead compounds and lead frits          | "Highly toxic by inhalation or ingestion"; vaporizes in the kiln at lower temperatures than most glaze materials.                                                                                                                            | Avoid; Digitalfire says experts only. Assume any glaze not labeled "lead-free" or "leadless" contains lead. |
-| Barium carbonate                       | Insoluble in water but dissolves in stomach acid; affects the heart and muscles (irregular heartbeat, low potassium).                                                                                                                        | A barium frit or strontium where the recipe allows; respirator; labeled container.                          |
-| Manganese dioxide                      | Dust or fume can cause **manganism**, a nervous-system illness like Parkinson's disease, usually after 1 to 3 years of exposure. Fume can cause metal fume fever.                                                                            | Black stains at low percentages instead; vent the kiln.                                                     |
-| Potassium dichromate and chrome oxide  | Chromium(VI), as in dichromate, is IARC Group 1. That listing does not cover chromium(III), as in chrome oxide.                                                                                                                              | Avoid dichromate. We treat chrome oxide as far less hazardous, but keep its dust down.                      |
-| Cobalt                                 | Soluble cobalt(II) salts IARC 2A; cobalt(II) oxide 2B; black Co₃O₄ Group 3. Cobalt carbonate is classified in the EU as may cause cancer if breathed in, may damage fertility and suspected of causing genetic defects (H350i, H360F, H341). | Keep dust down; stains for blacks.                                                                          |
-| Nickel compounds                       | Among the University of Utah's known or probable human carcinogens.                                                                                                                                                                          | Stains rather than high percentages.                                                                        |
-| Cadmium and selenium, raw or in stains | Cadmium compounds are among Utah's known or probable human carcinogens.                                                                                                                                                                      | "Only by experts" (Digitalfire); read any stain's SDS.                                                      |
-| Antimony and vanadium                  | Trivalent antimony (as in antimony trioxide) IARC 2A; vanadium "highly toxic by inhalation".                                                                                                                                                 | Vanadium for experts only; keep antimony dust down.                                                         |
-| Copper and zinc                        | Kiln fume can cause metal fume fever; raw zinc oxide is "generally not considered hazardous".                                                                                                                                                | Vent the kiln.                                                                                              |
-| Lithium carbonate                      | "Highly toxic by inhalation". An EU expert committee concluded it may harm fertility, the unborn child and breast-fed children; formal adoption was not confirmed when we checked.                                                           | Gloves and respirator; keep from children. We suggest extra care in pregnancy and while breastfeeding.      |
-| Borax and boric acid                   | Classified in the EU as "may damage fertility; may damage the unborn child".                                                                                                                                                                 | Gloves; boron from a frit where you can.                                                                    |
-| Soda ash, potash, alkaline feldspars   | Skin irritants.                                                                                                                                                                                                                              | Gloves.                                                                                                     |
-| Fluorspar, cryolite, lepidolite        | Release fluorine gases in firing; fluorspar also irritates skin.                                                                                                                                                                             | Vent the kiln outdoors; gloves.                                                                             |
-| Talc                                   | IARC 2A since July 2024; talc contaminated with asbestos counts as asbestos, Group 1.                                                                                                                                                        | Platy (not fibrous), asbestos-free talc; check its SDS.                                                     |
+| Rohstoff                                       | Gefahr                                                                                                                                                                                                                                                                                | Vorsichtsmaßnahme                                                                                                                             |
+| ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| Bleiverbindungen und Bleifritten               | „Hochgiftig beim Einatmen oder Verschlucken“; verdampft im Ofen bei niedrigeren Temperaturen als die meisten Glasurrohstoffe.                                                                                                                                                         | Meiden; laut Digitalfire nur für Fachleute. Gehen Sie davon aus, dass jede Glasur, die nicht als „bleifrei“ gekennzeichnet ist, Blei enthält. |
+| Bariumcarbonat                                 | In Wasser unlöslich, löst sich aber in Magensäure; wirkt auf Herz und Muskeln (unregelmäßiger Herzschlag, niedriger Kaliumspiegel).                                                                                                                                                   | Eine Bariumfritte oder Strontium, wo das Rezept es zulässt; Atemschutzmaske; beschrifteter Behälter.                                          |
+| Mangandioxid (Braunstein)                      | Staub oder Dampf kann **Manganismus** verursachen, eine Erkrankung des Nervensystems ähnlich der Parkinson-Krankheit, meist nach 1 bis 3 Jahren Exposition. Dampf kann Metalldampffieber auslösen.                                                                                    | Stattdessen schwarze Farbkörper in geringen Anteilen; den Ofen entlüften.                                                                     |
+| Kaliumdichromat und Chromoxid                  | Chrom(VI), wie in Dichromat, ist IARC-Gruppe 1. Diese Einstufung gilt nicht für Chrom(III), wie in Chromoxid.                                                                                                                                                                         | Dichromat meiden. Chromoxid halten wir für weit weniger gefährlich, aber halten Sie seinen Staub gering.                                      |
+| Kobalt                                         | Lösliche Kobalt(II)-Salze IARC 2A; Kobalt(II)-oxid 2B; schwarzes Co₃O₄ Gruppe 3. Kobaltcarbonat ist in der EU wie folgt eingestuft: kann bei Einatmen Krebs erzeugen, kann die Fruchtbarkeit beeinträchtigen und kann vermutlich genetische Defekte verursachen (H350i, H360F, H341). | Staub gering halten; Farbkörper für Schwarztöne.                                                                                              |
+| Nickelverbindungen                             | Zählen bei der University of Utah zu den nachweislich oder wahrscheinlich beim Menschen krebserregenden Stoffen.                                                                                                                                                                      | Farbkörper statt hoher Anteile.                                                                                                               |
+| Cadmium und Selen, pur oder in Farbkörpern     | Cadmiumverbindungen zählen bei Utah zu den nachweislich oder wahrscheinlich beim Menschen krebserregenden Stoffen.                                                                                                                                                                    | „Nur durch Fachleute“ (Digitalfire); lesen Sie das Sicherheitsdatenblatt jedes Farbkörpers.                                                   |
+| Antimon und Vanadium                           | Dreiwertiges Antimon (wie in Antimontrioxid) IARC 2A; Vanadium „hochgiftig beim Einatmen“.                                                                                                                                                                                            | Vanadium nur für Fachleute; Antimonstaub gering halten.                                                                                       |
+| Kupfer und Zink                                | Dämpfe aus dem Ofen können Metalldampffieber auslösen; rohes Zinkoxid gilt „im Allgemeinen nicht als gefährlich“.                                                                                                                                                                     | Den Ofen entlüften.                                                                                                                           |
+| Lithiumcarbonat                                | „Hochgiftig beim Einatmen“. Ein Expertenausschuss der EU kam zu dem Schluss, dass es die Fruchtbarkeit beeinträchtigen sowie das Kind im Mutterleib und gestillte Kinder schädigen kann; eine förmliche Annahme war bei unserer Prüfung nicht bestätigt.                              | Handschuhe und Atemschutzmaske; von Kindern fernhalten. In der Schwangerschaft und Stillzeit schlagen wir besondere Vorsicht vor.             |
+| Borax und Borsäure                             | In der EU eingestuft als „Kann die Fruchtbarkeit beeinträchtigen. Kann das Kind im Mutterleib schädigen.“                                                                                                                                                                             | Handschuhe; Bor nach Möglichkeit aus einer Fritte.                                                                                            |
+| Soda, Pottasche{{en: potash}}, Alkalifeldspäte | Reizen die Haut.                                                                                                                                                                                                                                                                      | Handschuhe.                                                                                                                                   |
+| Flussspat, Kryolith, Lepidolith                | Setzen beim Brand fluorhaltige Gase frei; Flussspat reizt außerdem die Haut.                                                                                                                                                                                                          | Den Ofen ins Freie entlüften; Handschuhe.                                                                                                     |
+| Talkum                                         | Seit Juli 2024 IARC 2A; mit Asbest verunreinigtes Talkum gilt als Asbest, Gruppe 1.                                                                                                                                                                                                   | Plättchenförmiges (nicht faseriges), asbestfreies Talkum; prüfen Sie sein Sicherheitsdatenblatt.                                              |
 
-Borax, boric acid, soda ash and potash dissolve in water, so we treat them as the likeliest to be absorbed through broken skin or swallowed from unwashed hands.
+Borax, Borsäure, Soda und Pottasche lösen sich in Wasser; wir halten sie daher für die Stoffe, die am ehesten über verletzte Haut aufgenommen oder von ungewaschenen Händen verschluckt werden.
 
 > [!NOTE]
-> If a recipe calls for raw barium carbonate, a lot of manganese, or any lead or cadmium material, look for a version that uses a frit or a stain instead. Glazecalc can compare the chemistry of the original and the swap; then test the new glaze.
+> Wenn ein Rezept ungefrittetes Bariumcarbonat, viel Mangan oder irgendeinen blei- oder cadmiumhaltigen Rohstoff verlangt, suchen Sie nach einer Variante, die stattdessen eine Fritte oder einen Farbkörper verwendet. Glazecalc kann die Chemie von Original und Austausch vergleichen; testen Sie danach die neue Glasur.
 
 ## Handschuhe, Haut und Augen {#gloves-and-eyes}
 
@@ -252,18 +252,18 @@ Das sind die Primärquellen, deren Lektüre sich am meisten lohnt. Die meisten s
 - **Neuseeland:** WorkSafe New Zealand legt die Arbeitsplatzgrenzwerte fest; die [Geschichte des Grenzwerts für Quarzstaub](https://mbie.govt.nz/building-and-energy/building/building-and-construction-consultations/work-with-engineered-stone-and-materials-containing-crystalline-silica/annex-iii) des MBIE nennt die Daten.
 - **Brennöfen:** der [Leitfaden für den Ofenraum](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Designing-A-Kiln-Room-1.pdf) von Skutt, das [Merkblatt von Orton und CCSA zu Brenngasen](https://assets.noviams.com/novi-file-uploads/ccsa/Product_Safety/Fumes.pdf) und vor allem die Bedienungsanleitung Ihres eigenen Ofens.
 
-## Sources {#sources lang=en}
+## Quellen {#sources}
 
 - [OSHA: 29 CFR 1910.1053, Respirable crystalline silica](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.1053)
 - [OSHA: 29 CFR 1910.134 Appendix D, Information for employees using respirators when not required](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.134AppD)
 - [OSHA: 29 CFR 1910.1200 Appendix D, Safety data sheets](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.1200AppD)
-- [NIOSH: Silicosis alert (publication 92-107)](https://www.cdc.gov/niosh/docs/92-107)
+- [NIOSH: Silicosis alert (Veröffentlichung 92-107)](https://www.cdc.gov/niosh/docs/92-107)
 - [HSE: COSHH essentials CR1, Glaze and colour preparation](https://www.hse.gov.uk/PUBNS/guidance/cr1.pdf)
 - [HSE: COSHH essentials CR5, Spraying glazes and colours](https://www.hse.gov.uk/PUBNS/guidance/cr5.pdf)
 - [HSE: Fit testing basics](https://www.hse.gov.uk/respiratory-protective-equipment/fit-testing-basics.htm)
 - [Safe Work Australia: Research on a lower workplace exposure standard for respirable crystalline silica](https://www.safeworkaustralia.gov.au/safety-topic/hazards/crystalline-silica-and-silicosis/research-lower-workplace-exposure-standard-respirable-crystalline-silica-0)
 - [Enviliance: Report 16612, Australia's June 2026 decision on the silica exposure standard](https://enviliance.com/regions/oceania/au/report_16612)
-- [MBIE (New Zealand): Work with engineered stone and materials containing crystalline silica, Annex III](https://mbie.govt.nz/building-and-energy/building/building-and-construction-consultations/work-with-engineered-stone-and-materials-containing-crystalline-silica/annex-iii)
+- [MBIE (Neuseeland): Work with engineered stone and materials containing crystalline silica, Annex III](https://mbie.govt.nz/building-and-energy/building/building-and-construction-consultations/work-with-engineered-stone-and-materials-containing-crystalline-silica/annex-iii)
 - [IARC: Monographs Volume 100C](https://publications.iarc.who.int/120)
 - [IARC: Volume 131, Cobalt, antimony compounds and weapons-grade tungsten alloy](https://monographs.iarc.who.int/news-events/volume-131-cobalt-antimony-compounds-and-weapons-grade-tungsten-alloy)
 - [Science Media Centre Spain: IARC classifies talc (2024)](https://sciencemediacentre.es/en/node/3775)
@@ -282,4 +282,4 @@ Das sind die Primärquellen, deren Lektüre sich am meisten lohnt. Die meisten s
 - [Skutt: Kiln room design and product specifications](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Designing-A-Kiln-Room-1.pdf)
 - [CIRMA: Kiln safety bulletin (2025)](https://downloads.ccm-ct.org/pdf/Media-Library-Bulletins/KilnSafety-Bulletin-052825.pdf)
 - [Ceramic Arts Network: Dave Finkelnburg, How and why to use a kiln vent](https://ceramicartsnetwork.org/daily/article/How-and-Why-to-Use-a-Kiln-Vent)
-- [CCSA and Orton: What is so bad about fumes?](https://assets.noviams.com/novi-file-uploads/ccsa/Product_Safety/Fumes.pdf)
+- [CCSA und Orton: What is so bad about fumes?](https://assets.noviams.com/novi-file-uploads/ccsa/Product_Safety/Fumes.pdf)

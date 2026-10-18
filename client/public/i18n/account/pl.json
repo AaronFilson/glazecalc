@@ -207,6 +207,11 @@
     "recipes": "Receptury (CSV)",
     "materials": "Surowce (CSV)"
   },
+  "trash": {
+    "heading": "Kosz",
+    "text": "To, co zostanie usunięte z notatnika, czeka w koszu 30 dni. Można to stamtąd przywrócić albo usunąć na stałe.",
+    "open": "Otwórz kosz"
+  },
   "shared": {
     "heading": "Udostępnione receptury",
     "text": "Receptury udostępnione przez link, które może przeczytać bez konta każdy, kto ma ten link. Link jest pokazywany tylko raz, w chwili utworzenia, więc nie można go tu wyświetlić. Aby udostępnić recepturę ponownie, należy utworzyć nowy link w menu Więcej przy tej recepturze.",
@@ -301,6 +306,7 @@
         "saved": "Zapisano: wypał według stożków Ortona."
       },
       "sk": {
+        "label": "Według stożków SK, JIS R 8101",
         "example": "SK 4a, SK 8",
         "saved": "Zapisano: wypał według stożków SK."
       },

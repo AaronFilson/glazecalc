@@ -22,58 +22,58 @@ Sır{{en: glaze}} hazırlamak, toz hâlindeki **hammaddeleri** (öğütülmüş 
 > [!WARNING]
 > **Kuru sır tozu, toz tehlikesi yaratır.** Kristal silika kuru bir sırrın %10–60’ını oluşturabilir ve Birleşik Krallık’ın İş Sağlığı ve Güvenliği Kurumu (HSE), bu tozun normal ışıkta görünmediği konusunda uyarıyor. Tozu alçaktan ve yavaşça kepçeleyin, kapakları kapalı tutun, tozu olabildiğince çabuk ıslatın ve temizliği ıslak yapın, asla süpürgeyle yapmayın. Tozlar kuruyken yüzünüze tam oturan bir solunum koruyucu maske takın (ABD’de N95 veya P100, Birleşik Krallık’ta ve AB’de FFP2 veya FFP3, Avustralya’da ve Yeni Zelanda’da P2 veya P3). Toz, solunum koruyucu maskeler ve temizlik [Güvenli karıştırma ve havalandırma](/guides/safe-mixing) rehberinde ayrıntılı olarak anlatılıyor.
 
-## Buying materials {#buying-materials lang=en}
+## Hammaddelerin satın alınması {#buying-materials}
 
-### Where to buy
+### Nereden alınır
 
-Potters buy from ceramic suppliers, which sell clay, glaze materials and tools. The table shows some for your country, each checked on the shop's own site, and you can choose another country to see its shops. Stock changes, so check before you order. Large producers such as Sibelco and Imerys sell to industry; potters buy their materials through shops like these. The ceramics reference site Digitalfire keeps a directory of supplier stores for other places.
+Seramikçiler hammaddelerini çamur, sır hammaddeleri ve alet satan seramik malzemecilerinden alır. Tabloda ülkenize ait bazı mağazalar var, her biri mağazanın kendi sitesinde kontrol edildi; başka bir ülke seçerek oranın mağazalarını da görebilirsiniz. Stoklar değişir, bu yüzden sipariş vermeden önce kontrol edin. Sibelco ve Imerys gibi büyük üreticiler sanayiye satar; seramikçiler bu üreticilerin hammaddelerini bunlar gibi mağazalardan alır. Seramik başvuru sitesi Digitalfire, başka yerler için bir tedarikçi mağazaları listesi tutuyor.
 
 ::shops
 
-### How much to buy
+### Ne kadar alınır
 
-The standard sack is **50 lb (22.7 kg)** in the US and **25 kg (55 lb)** elsewhere, so the two are nearly the same. Many suppliers also sell 1, 2.5 or 5 kg packs (about 2.2, 5.5 or 11 lb) for tests. Glazy, the open recipe database, advises buying the materials you use steadily (feldspar, silica, kaolin, whiting, and frit for mid-fire) in full sacks, which are often 20 to 30% cheaper. Buy **colorants**, the metal oxides and stains that color a glaze, in small amounts: most are used at under 5%. Glazy's sample shopping lists came to about $515 for mid-fire and $397 for high-fire, at US prices.
+Standart çuval ABD’de **50 lb (22,7 kg)**, başka yerlerde ise **25 kg (55 lb)**; yani ikisi neredeyse aynıdır. Pek çok tedarikçi testler için 1, 2,5 veya 5 kg’lık paketler de (yaklaşık 2,2, 5,5 veya 11 lb) satar. Açık reçete veritabanı Glazy, sürekli kullandığınız hammaddeleri (feldspat{{en: feldspar}}, silis{{en: silica}}, kaolen{{en: kaolin}}, kalsit{{en: whiting}} ve orta ısı için frit{{en: frit}}) tam çuval almanızı tavsiye ediyor; tam çuvallar çoğu zaman %20–30 daha ucuzdur. Bir sırrı{{en: glaze}} renklendiren metal oksitleri ve boyaları{{en: stains}}, yani **renklendiricileri**{{en: colorants}}, az miktarda alın: çoğu %5’in altında kullanılır. Glazy’nin örnek alışveriş listeleri, ABD fiyatlarıyla orta ısı için yaklaşık 515 $, yüksek ısı için 397 $ tutuyordu.
 
-### A starter set
+### Başlangıç seti
 
-Glazy's core list for any temperature is silica, kaolin, feldspar, whiting, zinc oxide, and dolomite or talc. Most mid-fire (cone 5 to 6) glazes also need boron, usually from a frit, which Glazy calls "consistent and less soluble than raw borates". The set below is our suggestion, drawn from Glazy's list and a forum list. The [glazing basics guide](/guides/glazing-basics) explains what each material does.
+Glazy’nin her sıcaklık için temel listesi şudur: silis, kaolen, feldspat, kalsit, çinko oksit ve dolomit ya da talk. Orta ısı (5–6 numaralı Orton piramitleri{{en: cone}}) sırlarının çoğu ayrıca bor ister; bor genellikle bir fritten gelir ve Glazy fritleri “tutarlı ve ham boratlardan daha az çözünür” diye niteler. Aşağıdaki set bizim önerimizdir; Glazy’nin listesinden ve bir forum listesinden derlenmiştir. Her hammaddenin ne işe yaradığı [Sırlamanın temel ilkeleri](/guides/glazing-basics) rehberinde anlatılıyor.
 
-Table: A starter set of materials (our suggestion)
-Label: Starter set
+Table: Başlangıç için hammadde seti (bizim önerimiz)
+Label: Başlangıç seti
 
-| Material                              | What to buy                                                                      |
-| ------------------------------------- | -------------------------------------------------------------------------------- |
-| Silica (also called flint; see below) | 325 mesh, the finer grade Glazy prefers for glazes                               |
-| Kaolin (china clay in the UK)         | EPK in the US; Grolleg or another china clay in the UK; NZ kaolin in New Zealand |
-| Potash feldspar                       | Whichever is current where you live, such as Mahavir in the US                   |
-| Nepheline syenite                     | Any; Glazy notes its stronger fluxing power, often used at low and mid-fire      |
-| Whiting                               | Any                                                                              |
-| Talc                                  | Any asbestos-free grade; check its SDS (see Safe mixing)                         |
-| A boron frit, for mid-fire            | Ferro 3134, 3124 or 3195; in the UK, Potterycrafts P3124 or P3195                |
-| Bentonite and colorants               | Small amounts                                                                    |
+| Hammadde                                      | Ne alınmalı                                                                                               |
+| --------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| Silis (flint olarak da anılır; aşağıya bakın) | 325 mesh; Glazy’nin sırlar için tercih ettiği daha ince tür                                               |
+| Kaolen (Birleşik Krallık’ta china clay)       | ABD’de EPK; Birleşik Krallık’ta Grolleg ya da başka bir china clay; Yeni Zelanda’da NZ kaolin             |
+| Potasyum feldspat{{en: potash feldspar}}      | Yaşadığınız yerde o sırada hangisi satılıyorsa; örneğin ABD’de Mahavir                                    |
+| Nefelin siyenit{{en: nepheline syenite}}      | Herhangi biri; Glazy, daha güçlü ergitme gücüne dikkat çekiyor; çoğu zaman düşük ve orta ısıda kullanılır |
+| Kalsit                                        | Herhangi biri                                                                                             |
+| Talk                                          | Asbestsiz herhangi bir tür; güvenlik bilgi formuna bakın (bkz. Güvenli karıştırma ve havalandırma)        |
+| Orta ısı için borlu bir frit                  | Ferro 3134, 3124 veya 3195; Birleşik Krallık’ta Potterycrafts P3124 veya P3195                            |
+| Bentonit ve renklendiriciler                  | Az miktarda                                                                                               |
 
-### Data sheets and safety data sheets
+### Teknik veri formları ve güvenlik bilgi formları
 
-Ask for two documents for each material. A **technical data sheet** (TDS) gives its **chemical analysis**: the share of each oxide in the powder, by weight. Glazecalc works from these, and you can add a material from a supplier's analysis on the [Materials page](/material). A **safety data sheet** (SDS) says how to handle the raw powder. Keep each SDS, and read it before you mix.
+Her hammadde için iki belge isteyin. **Teknik veri formu** (TDS), hammaddenin **kimyasal analizini** verir: tozdaki her oksidin ağırlıkça payı. Glazecalc bu analizlerle çalışır; bir tedarikçinin analizinden [Hammaddeler sayfasında](/material) hammadde ekleyebilirsiniz. **Güvenlik bilgi formu** (GBF), ham tozla nasıl çalışılacağını anlatır. Her GBF’yi saklayın ve karıştırmadan önce okuyun.
 
-Analyses are averages, not promises. Valentine Clays prints "MEAN VALUES. THESE DO NOT REPRESENT A SPECIFICATION" on its flint data sheet, and Glazy's analyses of Custer feldspar from different years run from about 68.5% to 72.4% silica. We suggest writing each sack's **lot number** (its batch code) in your records, so you can tell whether a change in a trusted glaze came from the material.
+Analizler ortalamadır, söz değildir. Valentine Clays, flint teknik veri formuna “ORTALAMA DEĞERLERDİR. BUNLAR BİR SPESİFİKASYON DEĞİLDİR” yazıyor; Glazy’nin farklı yıllara ait Custer feldspat analizlerinde silis yaklaşık %68,5 ile %72,4 arasında değişiyor. Her çuvalın **parti numarasını** (üretim partisinin kodunu) kayıtlarınıza yazmanızı öneririz; böylece güvendiğiniz bir sırdaki değişikliğin hammaddeden gelip gelmediğini anlayabilirsiniz.
 
-HSE warns that crystalline silica "can be wrongly labelled as 'amorphous silica'". And an SDS is about the powder, not the pot: it says nothing about whether a fired glaze is safe for food. Only a laboratory leach test of the fired pot can show that.
+Birleşik Krallık’ın iş sağlığı kurumu HSE, kristal silikanın “yanlışlıkla ‘amorf silika’ olarak etiketlenebileceği” konusunda uyarıyor. Ayrıca bir GBF kapla değil, tozla ilgilidir: pişmiş bir sırrın gıdaya uygun{{en: food safe}} olup olmadığı hakkında hiçbir şey söylemez. Bunu ancak pişmiş kabın laboratuvarda yapılan salım testi gösterebilir.
 
-### Names change, so buy by chemistry
+### Adlar değişir, bu yüzden kimyasına göre alın
 
-Brand names come and go as mines close. Custer feldspar, mined in South Dakota for more than 75 years, ran out in late 2023. When Clay Art Center switched to G-200 AU and Mahavir, about half its glazes needed adjusting. G-200 and G-200 HP are gone too, and Laguna now imports Mahavir, whose chemistry is close to G-200.
+Madenler kapandıkça marka adları gelip gider. Güney Dakota’da 75 yıldan uzun süre çıkarılan Custer feldspat, 2023’ün sonlarında tükendi. Clay Art Center G-200 AU ve Mahavir’e geçtiğinde sırlarının yaklaşık yarısının ayarlanması gerekti. G-200 ve G-200 HP de artık yok; Laguna şimdi kimyası G-200’e yakın olan Mahavir’i ithal ediyor.
 
-**Gerstley Borate**, a natural boron mineral in many older recipes, has been scarce since its mine closed in 2000, though New Mexico Clay reported in November 2025 that Laguna was supplying "Gerstley Borate Original". Sources disagree about **Gillespie Borate** as a replacement. Its maker sells it as pound-for-pound. Berkeley Potters Studio says it "is not a direct substitute", and Digitalfire found it changed a glaze's color. The safe course is to compare the two by their oxides, then test.
+Pek çok eski reçetede geçen doğal bir bor minerali olan **Gerstley Borate**, madeni 2000’de kapandığından beri zor bulunuyor; yine de New Mexico Clay, Kasım 2025’te Laguna’nın “Gerstley Borate Original” sağladığını bildirdi. Kaynaklar, yerine **Gillespie Borate** kullanılması konusunda anlaşamıyor. Üreticisi onu miktarı değiştirmeden kullanılabilecek bir ikame olarak satıyor. Berkeley Potters Studio “doğrudan bir ikame olmadığını” söylüyor; Digitalfire ise bir sırrın rengini değiştirdiğini gördü. En güvenli yol, ikisini oksitlerine göre karşılaştırmak, sonra test etmektir.
 
-Regional names differ too. In North America, **flint**, quartz and silica mean the same ground silica, and Digitalfire says you probably won't find true flint powder from suppliers. In the UK, flint is its own product: Valentine's is calcined (heated) silica. Both are nearly pure silica, so we expect them to be close, but check the analysis. For kaolin, Glazy says one-for-one swaps, such as EPK for a china clay, "often work just fine, especially when amounts are \<10%".
+Bölgesel adlar da farklıdır. Kuzey Amerika’da **flint**, kuvars ve silis aynı öğütülmüş silisi anlatır; Digitalfire’a göre tedarikçilerde büyük olasılıkla gerçek flint (çakmaktaşı) tozu bulamazsınız. Birleşik Krallık’ta flint ayrı bir üründür: Valentine’ınki kalsine edilmiş (ısıtılmış) silistir. İkisi de neredeyse saf silis olduğu için birbirine yakın olmalarını bekliyoruz, ama analizi kontrol edin. Kaolen için Glazy, bir china clay yerine EPK gibi birebir değişimlerin “özellikle miktarlar \<%10 olduğunda çoğu zaman gayet iyi sonuç verdiğini” söylüyor.
 
-Many recipes name materials that are sold in one country and not another. The table below takes each material in Glazecalc's library that is not sold where you buy, and finds the closest of its kind that is, by their analyses. The figure is how far apart the two are: the grams by which their fired oxides differ, per 100 g of material, added up over every oxide. Within about 15 g, one can usually stand in for the other in a first test. The names carry the makers' and shops' own codes, so you can ask for them by name.
+Pek çok reçete, bir ülkede satılıp başka bir ülkede satılmayan hammaddeler içerir. Aşağıdaki tablo, Glazecalc kütüphanesinde olup alışveriş yaptığınız yerde satılmayan her hammaddeyi alır ve analizlerine göre orada satılan, aynı türden en yakın hammaddeyi bulur. Sayı, ikisinin birbirinden ne kadar uzak olduğunu gösterir: 100 g hammadde başına, pişmiş oksitlerinin gram cinsinden farkı, tüm oksitler üzerinden toplanmış olarak. Yaklaşık 15 g’a kadar, ilk testte biri genellikle diğerinin yerine kullanılabilir. Adlar üreticilerin ve mağazaların kendi kodlarını taşır; böylece onları adıyla isteyebilirsiniz.
 
 ::local-equivalents
 
 > [!NOTE]
-> Glazecalc compares materials by what they bring to the fired glaze, not by name. A [recipe](/recipe) with a material no longer made says what is used now. **Suggest amounts and compare** works the amounts out again for a substitute, and **Match with what I have** makes the recipe again from the materials on your shelf. Both match the fired oxides only, so test a small batch first.
+> Glazecalc hammaddeleri adlarına göre değil, pişmiş sırra kattıklarına göre karşılaştırır. Artık üretilmeyen bir hammadde içeren bir [reçete](/recipe), bugün onun yerine ne kullanıldığını söyler. **Miktar öner ve karşılaştır** özelliği bir ikame için miktarları yeniden hesaplar, **Elimdekilerle eşleştir** özelliği de reçeteyi elinizdeki hammaddelerle yeniden oluşturur. İkisi de yalnızca pişmiş oksitleri eşleştirir; bu yüzden önce küçük bir tartımı test edin.
 
 ## Hammaddelerin ve sırların saklanması {#storing}
 
@@ -163,55 +163,55 @@ Label: Elek meshi
 | Kobalt ya da demir gibi renklendiriciler içeren sırlar | 100–120 mesh               |
 | Kül sırları ve iri taneli hammadde içeren diğer sırlar | 60–80 mesh                 |
 
-## Specific gravity {#specific-gravity lang=en}
+## Özgül ağırlık {#specific-gravity}
 
-**Specific gravity** (SG) tells you how much powder is in your slurry. It is the weight of a volume of glaze divided by the weight of the same volume of water. Water is 1.00, and a glaze at {{SG 1.45}} weighs 145 g per 100 mL. Mixing to a measured SG is how you get the same thickness, and the same coat, every time. It has no units, so it is the same in grams or ounces.
+**Özgül ağırlık**{{en: specific gravity, SG}} size sulu sırrınızda{{en: slurry}} ne kadar toz olduğunu söyler. Belli bir hacimdeki sırrın{{en: glaze}} ağırlığının, aynı hacimdeki suyun ağırlığına bölümüdür. Suyun özgül ağırlığı 1,00’dır ve {{SG 1.45}} olan bir sır 100 mL’de 145 g gelir. Ölçülmüş bir özgül ağırlığa göre karıştırmak, her seferinde aynı kıvamı ve aynı sır tabakasını elde etmenin yoludur. Birimi yoktur; bu yüzden gram ya da ons kullansanız da aynıdır.
 
-### Measure it by weighing 100 mL
+### 100 mL’yi tartarak ölçün
 
-1. Stir the glaze so nothing has settled.
-2. Put a 100 mL **graduated cylinder** (a tall, marked measuring tube) or a 100 mL syringe on the scale, and tare it.
-3. Fill it with glaze to exactly 100 mL, reading the mark at eye level.
-4. Weigh it and divide the grams by 100: 145 g is SG 1.45.
+1. Hiçbir şey dibe çökmüş olmasın diye sırrı karıştırın.
+2. 100 mL’lik bir **dereceli silindiri** (uzun, çizgili bir ölçü tüpü) ya da 100 mL’lik bir şırıngayı teraziye koyun ve darasını alın.
+3. Göz hizasında çizgiyi okuyarak tam 100 mL’ye kadar sırla doldurun.
+4. Tartın ve gramı 100’e bölün: 145 g, özgül ağırlık 1,45 demektir.
 
-Digitalfire also marks a cup at the level of 500 g of water, fills it to the mark with glaze, and divides the weight by 500; a bigger, fuller measure is more accurate. A **hydrometer**, a float read where it sits in the glaze, is quick but can misread thick or gelled glazes. UK hydrometers, such as Potclays', read in degrees Baumé (°Bé). By our arithmetic, SG = 145 ÷ (145 − °Bé), so 46 °Bé is about 1.46. Older UK books give a **pint weight**, the ounces in an imperial pint of glaze: divide it by 20, so 29 oz is about SG 1.45 (also our arithmetic).
+Digitalfire ayrıca bir bardakta 500 g suyun geldiği seviyeyi işaretliyor, bardağı bu çizgiye kadar sırla dolduruyor ve ağırlığı 500’e bölüyor; daha büyük ve daha dolu bir ölçek daha doğru sonuç verir. **Boumetre**, yani sırda durduğu yerden okunan bir şamandıra, hızlıdır ama koyu ya da jelleşmiş sırlarda yanlış okuyabilir. Potclays’inki gibi Birleşik Krallık boumetreleri bome derecesi (°Bé) gösterir. Bizim hesabımıza göre özgül ağırlık = 145 ÷ (145 − °Bé); yani 46 °Bé yaklaşık 1,46’ya karşılık gelir. Eski Birleşik Krallık kitapları **pint ağırlığı** verir, yani bir İngiliz pintlik sırrın ons cinsinden ağırlığını: bunu 20’ye bölün; böylece 29 oz yaklaşık özgül ağırlık 1,45 eder (bu da bizim hesabımız).
 
-### What to aim for
+### Neyi hedeflemeli
 
-Sources disagree, most of all on brushing and spraying, where the UK supplier Potclays gives much higher figures (its own are "for guidance only"). Treat every number as a starting point. Digitalfire's core advice is to find the SG and gelling that work for each glaze, then repeat them and write them down.
+Kaynaklar anlaşamıyor, en çok da fırçayla sürme ve püskürtmede: Birleşik Krallık tedarikçisi Potclays çok daha yüksek değerler veriyor (kendi değerleri “yalnızca yol göstermek içindir”). Her sayıyı bir başlangıç noktası olarak görün. Digitalfire’ın temel tavsiyesi, her sır için işe yarayan özgül ağırlığı ve jelleşmeyi bulmak, sonra bunları tekrarlamak ve yazmaktır.
 
-Table: Specific gravity targets, where sources disagree
-Label: Specific gravity targets
+Table: Özgül ağırlık hedefleri, kaynakların anlaşamadığı yerler
+Label: Özgül ağırlık hedefleri
 
-| Use      | Digitalfire and Glazy                                                                                                                 | Potclays (UK)                               | Safe starting point                                     |
-| -------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------- |
-| Dipping  | {{SG 1.40}} (for a 5-second dip) to {{SG 1.50}} (for a 1-second dip); home-mixed glazes that are gelled do best at {{SG 1.43–1.45}}   | Clear {{SG 1.46–1.48}}; colored {{SG 1.61}} | {{SG 1.45}}; thin to {{SG 1.43}} and gel it if it drips |
-| Brushing | {{SG 1.25}} (thin clear) to {{SG 1.55}} (dark detail)                                                                                 | {{SG 1.71–1.81}}                            | Follow the product; use CMC gum or a brushing medium    |
-| Spraying | No figure; Hopper, writing for Ceramic Arts Network, says much thinner, with a deflocculant (an additive that makes a slurry runnier) | {{SG 1.71}}                                 | No reliable number; spray only in a spray booth         |
+| Kullanım       | Digitalfire ve Glazy                                                                                                                                                              | Potclays (Birleşik Krallık)                 | Güvenli başlangıç noktası                                         |
+| -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ----------------------------------------------------------------- |
+| Daldırma       | {{SG 1.40}} (5 saniyelik daldırma için) ile {{SG 1.50}} (1 saniyelik daldırma için) arası; evde karıştırılıp jelleştirilmiş sırlar en iyi sonucu {{SG 1.43–1.45}} değerinde verir | Şeffaf {{SG 1.46–1.48}}; renkli {{SG 1.61}} | {{SG 1.45}}; damlıyorsa {{SG 1.43}} değerine inceltip jelleştirin |
+| Fırçayla sürme | {{SG 1.25}} (ince şeffaf) ile {{SG 1.55}} (koyu ayrıntı) arası                                                                                                                    | {{SG 1.71–1.81}}                            | Ürünün önerisine uyun; CMC ya da fırça medyumu kullanın           |
+| Püskürtme      | Değer yok; Ceramic Arts Network için yazan Hopper, deflokülan{{en: deflocculant}} (sulu sırrı daha akışkan yapan bir katkı) ile çok daha ince olması gerektiğini söylüyor         | {{SG 1.71}}                                 | Güvenilir bir sayı yok; yalnızca sırlama kabininde püskürtün      |
 
-To check a dipping glaze by eye, AMACO dips for 5 seconds and looks for a coat about as thick as a US dime. Digitalfire fires tiles dipped for 5 seconds to check.
+AMACO, daldırma sırrını gözle kontrol etmek için 5 saniye daldırıyor ve yaklaşık bir ABD dime madeni parası kalınlığında bir tabaka arıyor. Digitalfire kontrol için 5 saniye daldırılmış karoları pişiriyor.
 
-### Water for a target SG: our estimate
+### Hedef özgül ağırlık için su: bizim tahminimiz
 
-The table below is our own arithmetic, not a source's. It assumes the powder's particles have a density of 2.6 g per cm³, which is an assumption, not a measurement. Clay, soluble materials and gelling all change a real glaze, so use it to start, then measure. As a check, it predicts {{SG 1.44}} for equal weights of powder and water, close to Digitalfire's measured {{SG 1.46}}. It also shows that 70 to 80 mL per 100 g starts you above {{SG 1.50}}, thicker than you need.
+Aşağıdaki tablo bir kaynağın değil, bizim kendi hesabımızdır. Tozun taneciklerinin yoğunluğunu cm³ başına 2,6 g kabul eder; bu bir ölçüm değil, bir varsayımdır. Kil, çözünür hammaddeler ve jelleşme gerçek bir sırrı değiştirir; bu yüzden tabloyu başlamak için kullanın, sonra ölçün. Bir sağlama olarak, eşit ağırlıkta toz ve su için {{SG 1.44}} öngörüyor; bu, Digitalfire’ın ölçtüğü {{SG 1.46}} değerine yakın. Ayrıca 100 g başına 70–80 mL ile başlamanın sizi {{SG 1.50}} değerinin üzerinde, yani gerekenden daha koyu bir kıvamda başlattığını gösteriyor.
 
-Table: Water for a target specific gravity (our estimate)
-Label: Water for a target specific gravity
+Table: Hedef özgül ağırlık için su (bizim tahminimiz)
+Label: Hedef özgül ağırlık için su
 
-| Target      | Per 100 g of powder |  Per kilogram |         Per pound |
-| ----------- | ------------------: | ------------: | ----------------: |
-| {{SG 1.40}} |        about 115 mL | about 1150 mL | about 18 US fl oz |
-| {{SG 1.45}} |         about 98 mL |  about 980 mL | about 15 US fl oz |
-| {{SG 1.50}} |         about 85 mL |  about 850 mL | about 13 US fl oz |
-| {{SG 1.60}} |         about 64 mL |  about 640 mL | about 10 US fl oz |
+| Hedef       | 100 g toz başına |  Kilogram başına |         Libre başına |
+| ----------- | ---------------: | ---------------: | -------------------: |
+| {{SG 1.40}} |  yaklaşık 115 mL | yaklaşık 1150 mL | yaklaşık 18 US fl oz |
+| {{SG 1.45}} |   yaklaşık 98 mL |  yaklaşık 980 mL | yaklaşık 15 US fl oz |
+| {{SG 1.50}} |   yaklaşık 85 mL |  yaklaşık 850 mL | yaklaşık 13 US fl oz |
+| {{SG 1.60}} |   yaklaşık 64 mL |  yaklaşık 640 mL | yaklaşık 10 US fl oz |
 
-### Epsom salts, CMC gum and bentonite
+### Epsom tuzu, CMC ve bentonit
 
-**Epsom salts** make a glaze gel slightly when it stands still and flow again when it is stirred. This is called **flocculating** it, and a glaze that behaves this way is **thixotropic**: it goes on more evenly, drips less and settles less. Digitalfire suggests starting at about 2 g per gallon once the SG is right (roughly 0.5 g per liter, our conversion) and tuning the amount each time you mix, since no recipe should fix the dose. We suggest dissolving it in a little hot water first. In a Digitalfire example, a glaze at {{SG 1.45}} dripped, so water brought it down to {{SG 1.43}} and Epsom salts gelled it back to creamy, and it went on evenly. A rough check: stir, stop and watch. A gelled glaze moves on for about 2 or 3 seconds, then stops and springs back a little.
+**Epsom tuzu**, sırrın dururken hafifçe jelleşmesini ve karıştırılınca yeniden akmasını sağlar. Buna sırrın **flokülasyonu**{{en: flocculating}} denir ve bu şekilde davranan bir sır **tiksotropiktir**{{en: thixotropic}}: daha düzgün sürülür, daha az damlar ve daha az çöker. Digitalfire, özgül ağırlık doğru olduktan sonra galon başına yaklaşık 2 g ile başlamayı (kabaca litre başına 0,5 g; bu bizim çevirimiz) ve miktarı her karıştırmada ayarlamayı öneriyor, çünkü dozu hiçbir reçete sabitlememelidir. Önce biraz sıcak suda çözmenizi öneririz. Digitalfire’ın bir örneğinde {{SG 1.45}} olan bir sır damlıyordu; su ile {{SG 1.43}} değerine indirildi, Epsom tuzu da onu yeniden krem kıvamına jelleştirdi ve sır düzgün sürüldü. Kabaca bir kontrol: karıştırın, durun ve izleyin. Jelleşmiş bir sır yaklaşık 2 ya da 3 saniye daha hareket eder, sonra durur ve biraz geri esner.
 
-**CMC gum** (carboxymethyl cellulose) makes a slurry stickier and slower to dry, and leaves a harder coat that holds to the pot. It matters most for brushing glazes and glazes high in frit. Digitalfire's example blends 3.75 g into 1000 g of slurry, and it has to go in with a blender. A glaze with CMC will not gel with Epsom salts, and since microbes feed on the gum, it can change in the bucket and start to smell.
+**CMC zamkı** (karboksimetil selüloz) sulu sırrı daha yapışkan ve daha geç kuruyan bir hâle getirir ve kaba tutunan daha sert bir tabaka bırakır. En çok fırçayla sürülen sırlarda ve fritçe zengin sırlarda önemlidir. Digitalfire’ın örneğinde 1000 g sulu sırra 3,75 g katılıyor ve bunun blenderla katılması gerekiyor. CMC içeren bir sır Epsom tuzuyla jelleşmez; mikroplar zamkla beslendiği için de kovada değişebilir ve kokmaya başlayabilir.
 
-**Bentonite**, a very fine clay, helps hold the other particles in suspension. Dipping glazes usually rely on 15 to 25% raw clay for this. For a recipe short of clay, about 1 to 3% bentonite helps; Digitalfire says a glaze with more than 15% clay should not need more than 1%.
+**Bentonit**, çok ince taneli bir kil, diğer taneciklerin süspansiyonda kalmasına yardım eder. Daldırma sırları bunun için genellikle %15–25 ham kile dayanır. Kili az olan bir reçetede yaklaşık %1–3 bentonit yardımcı olur; Digitalfire, %15’ten fazla kil içeren bir sırın %1’den fazlasına ihtiyaç duymaması gerektiğini söyler.
 
 ## Test karoları ve doğrusal karışım testleri {#testing}
 
@@ -276,7 +276,7 @@ Label: Kayıt şablonu
 > [!NOTE]
 > Glazecalc uygulamasında kayıtlı bir [reçete](/recipe) reçetenin kendisini tutar. Bir [pişirim kaydı](/firing) her pişirimi kaydeder: fırın, tarih, saatler, sıcaklıklar, piramitler ve notlar. [Notlar](/notes) geri kalan her şeyi tutar; örneğin yukarıdaki tartım kaydını ve her karonun ne gösterdiğini.
 
-## Sources {#sources lang=en}
+## Kaynaklar {#sources}
 
 - [Glazy: Raw materials](https://help.glazy.org/concepts/materials)
 - [Glazy: Specific gravity](https://help.glazy.org/testing/specific-gravity)

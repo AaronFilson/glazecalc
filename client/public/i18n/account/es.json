@@ -207,6 +207,11 @@
     "recipes": "Recetas (CSV)",
     "materials": "Materiales (CSV)"
   },
+  "trash": {
+    "heading": "Papelera",
+    "text": "Lo que quita de su cuaderno espera 30 días en la papelera. Recupérelo desde allí, o elimínelo para siempre.",
+    "open": "Abrir la papelera"
+  },
   "shared": {
     "heading": "Recetas compartidas",
     "text": "Las recetas que comparte con un enlace, que cualquiera que lo tenga puede leer sin una cuenta. Un enlace se muestra solo una vez, al crearlo, así que no se puede mostrar aquí. Para compartir una receta de nuevo, cree un enlace nuevo en Más, dentro de la receta.",
@@ -301,6 +306,7 @@
         "saved": "Guardado: cocción por conos Orton."
       },
       "sk": {
+        "label": "Por conos SK, JIS R 8101",
         "example": "SK 4a, SK 8",
         "saved": "Guardado: cocción por conos SK."
       },

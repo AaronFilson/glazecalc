@@ -49,6 +49,10 @@
         "title": "Guias",
         "text": "Desde o que é um vidrado até à sua cozedura, mantendo todos em segurança pelo caminho."
       },
+      "trash": {
+        "title": "Lixo",
+        "text": "Reponha o que removeu nos últimos 30 dias."
+      },
       "account": {
         "title": "Conta e definições",
         "text": "Definições, a sua palavra-passe, o início de sessão em dois passos e uma transferência de tudo o que guarda aqui."
@@ -116,6 +120,7 @@
   },
   "trash": {
     "title": "Lixo",
+    "lead": "O que remover (receitas, matérias-primas, aditivos, notas, registos de cozedura e conselhos) fica aqui 30 dias. Reponha-o, ou elimine-o definitivamente.",
     "listHeading": "No Lixo",
     "none": "O Lixo está vazio.",
     "untitled": "Sem título",

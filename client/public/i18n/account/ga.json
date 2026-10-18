@@ -207,6 +207,11 @@
     "recipes": "Oidis (CSV)",
     "materials": "Ábhair (CSV)"
   },
+  "trash": {
+    "heading": "Bruscar",
+    "text": "Fanann an méid a bhaineann tú de do leabhar nótaí sa bhruscar ar feadh 30 lá. Cuir ar ais as sin é, nó scrios go buan é.",
+    "open": "Oscail an bruscar"
+  },
   "shared": {
     "heading": "Oidis chomhroinnte",
     "text": "Na hoidis a chomhroinneann tú le nasc, ar féidir le haon duine a bhfuil an nasc aige iad a léamh gan chuntas. Ní thaispeántar nasc ach uair amháin, nuair a dhéantar é, mar sin ní féidir é a thaispeáint anseo. Chun oideas a chomhroinnt arís, déan nasc nua faoi ‘Tuilleadh’ ag an oideas.",
@@ -301,6 +306,7 @@
         "saved": "Sábháilte: bácáil go cóin Orton."
       },
       "sk": {
+        "label": "Go cóin SK, JIS R 8101",
         "example": "SK 4a, SK 8",
         "saved": "Sábháilte: bácáil go cóin SK."
       },

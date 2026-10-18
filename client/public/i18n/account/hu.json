@@ -207,6 +207,11 @@
     "recipes": "Receptek (CSV)",
     "materials": "Nyersanyagok (CSV)"
   },
+  "trash": {
+    "heading": "Lomtár",
+    "text": "Amit eltávolít a műhelyfüzetéből, 30 napig a Lomtárban vár. Onnan helyezheti vissza, vagy törölheti véglegesen.",
+    "open": "A Lomtár megnyitása"
+  },
   "shared": {
     "heading": "Megosztott receptek",
     "text": "A linkkel megosztott receptjei, amelyeket bárki elolvashat, aki rendelkezik a linkkel, fiók nélkül is. A linket csak egyszer, a létrehozásakor mutatjuk meg, ezért itt nem jeleníthető meg. Recept újbóli megosztásához készítsen új linket a recept „Több” menüjében.",
@@ -301,6 +306,7 @@
         "saved": "Mentve: égetés Orton-gúlák szerint."
       },
       "sk": {
+        "label": "SK-gúlák szerint, JIS R 8101",
         "example": "SK 4a, SK 8",
         "saved": "Mentve: égetés SK-gúlák szerint."
       },

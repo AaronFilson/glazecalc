@@ -207,6 +207,11 @@
     "recipes": "Recettes (CSV)",
     "materials": "Matières (CSV)"
   },
+  "trash": {
+    "heading": "Corbeille",
+    "text": "Ce que vous retirez de votre carnet attend 30 jours dans la corbeille. Remettez-le en place depuis la corbeille, ou supprimez-le définitivement.",
+    "open": "Ouvrir la corbeille"
+  },
   "shared": {
     "heading": "Recettes partagées",
     "text": "Les recettes que vous partagez par lien, que toute personne ayant le lien peut lire sans compte. Un lien n’est affiché qu’une seule fois, quand il est créé : il ne peut donc pas être affiché ici. Pour partager de nouveau une recette, créez un nouveau lien sous Plus, dans la recette.",
@@ -301,6 +306,7 @@
         "saved": "Enregistré : cuisson en cônes Orton."
       },
       "sk": {
+        "label": "En cônes SK, JIS R 8101",
         "example": "SK 4a, SK 8",
         "saved": "Enregistré : cuisson en cônes SK."
       },

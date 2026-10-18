@@ -49,6 +49,10 @@
         "title": "Útmutatók",
         "text": "Attól, hogy mi a máz, egészen az égetéséig, és hogy közben mindenki biztonságban maradjon."
       },
+      "trash": {
+        "title": "Lomtár",
+        "text": "Helyezze vissza, amit az elmúlt 30 napban eltávolított."
+      },
       "account": {
         "title": "Fiók és beállítások",
         "text": "Beállítások, a jelszava, a kétlépéses bejelentkezés, és mindazok letöltése, amit itt őriz."
@@ -116,6 +120,7 @@
   },
   "trash": {
     "title": "Lomtár",
+    "lead": "Amit eltávolít (recepteket, nyersanyagokat, adalékokat, jegyzeteket, égetési naplókat és tanácsokat), itt vár 30 napig. Helyezze vissza, vagy törölje véglegesen.",
     "listHeading": "A Lomtárban",
     "none": "A Lomtár üres.",
     "untitled": "Névtelen",

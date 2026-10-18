@@ -370,83 +370,83 @@ Ortoni isetoetuvaid koonuseid müüakse Jaapanis nime all 立つゼーゲル (�
 
 :::
 
-## Bisque firing {#bisque lang=en}
+## Eelpõletus {#bisque}
 
-The **bisque** firing (biscuit in the UK) is the first, lower firing that turns dry clay into hard, porous ware ready to glaze. It is usually fired to cone 06–04, {{1828–1945 °F; 998–1063 °C}} on Orton's chart; UK potters often fire to around {{1000 °C; 1832 °F}}, near cone 06. The bisque should stay porous, "generally more than 15%" (Digitalfire), so it soaks water out of the glaze. Too soft a bisque takes glaze on too thick, which then cracks and **crawls** (pulls back into islands, leaving bare clay). Under-fired bisque also "continues to shrink during glaze firing", which spoils the glaze fit. Loading is forgiving: pieces may touch, lids can be fired on their pots, and bowls go rim to rim rather than nested.
+**Eelpõletus**{{en: bisque}} (Ühendkuningriigis biscuit) on esimene, madalam põletus, mis muudab kuiva savi kõvaks, poorseks ja glasuurimiseks valmis esemeks. Tavaliselt põletatakse seda koonusteni 06–04, Ortoni tabeli järgi {{1828–1945 °F; 998–1063 °C}}; Briti keraamikud põletavad sageli umbes temperatuurini {{1000 °C; 1832 °F}}, koonuse 06 lähedale. Eelpõletatud ese peaks jääma poorseks, „üldiselt üle 15%“ (Digitalfire), et see imaks glasuurist vett. Liiga madalal temperatuuril eelpõletatud esemele jääb glasuur liiga paksult, mis seejärel praguneb ja **tõmbub kokku**{{en: crawls}} (koondub saarekesteks ja jätab savi paljaks). Alapõletatud ese ka „kahaneb glasuuripõletuse ajal edasi“, mis rikub **glasuuri sobivuse savimassiga**{{en: glaze fit}}. Pakkimine on andestav: esemed võivad üksteist puudutada, kaaned võib põletada oma nõude peal ja kausid pannakse serv serva vastu, mitte üksteise sisse.
 
-### Why the early part goes slowly
+### Miks algus läheb aeglaselt
 
-Water expands more than a thousandfold as it turns to steam, so damp ware has to be dried slowly. L&L and Orton advise that "Special care should be taken below 1500°F (815°C) to heat the body evenly", and that carbon must be burned out before about {{1200 °F; 650 °C}}. Above {{1500 °F; 816 °C}} the kiln can climb faster.
+Auruks muutudes paisub vesi rohkem kui tuhat korda, seepärast tuleb niisked esemed kuivatada aeglaselt. L&L ja Orton soovitavad: „Alla 1500°F (815°C) tuleks olla eriti hoolikas, et savimass{{en: body}} soojeneks ühtlaselt“, ja süsinik peab välja põlema, enne kui temperatuur ületab umbes {{1200 °F; 650 °C}}. Üle {{1500 °F; 816 °C}} võib ahi tõusta kiiremini.
 
-Table: What happens as a bisque heats
-Label: What happens in a bisque
+Table: Mis toimub eelpõletuse kuumenemise ajal
+Label: Mis toimub eelpõletuses
 
-|                        Temperature | What happens                                                |
-| ---------------------------------: | ----------------------------------------------------------- |
-|         {{300–500 °F; 149–260 °C}} | Binders burn off                                            |
-|           About {{450 °F; 232 °C}} | Organic matter starts to burn                               |
-|           Up to {{700 °F; 371 °C}} | Water keeps leaving the clay until above this temperature   |
-|        {{842–1022 °F; 450–550 °C}} | Chemically bound water leaves the clay                      |
-|                {{1063 °F; 573 °C}} | Quartz inversion: silica in the clay expands suddenly       |
-|          Above {{1112 °F; 600 °C}} | Sulfur burns out                                            |
-| Up to {{1200–1400 °F; 649–760 °C}} | Natural carbon burns off; this should finish below red heat |
-|          Above {{1544 °F; 840 °C}} | Calcium carbonate breaks down                               |
+|                       Temperatuur | Mis toimub                                                                |
+| --------------------------------: | ------------------------------------------------------------------------- |
+|        {{300–500 °F; 149–260 °C}} | Sideained põlevad ära                                                     |
+|          Umbes {{450 °F; 232 °C}} | Orgaaniline aine hakkab põlema                                            |
+|           Kuni {{700 °F; 371 °C}} | Vett eraldub savist seni, kuni see temperatuur on ületatud                |
+|       {{842–1022 °F; 450–550 °C}} | Keemiliselt seotud vesi eraldub savist                                    |
+|               {{1063 °F; 573 °C}} | Kvartsi üleminek: savis olev ränidioksiid paisub järsult                  |
+|           Üle {{1112 °F; 600 °C}} | Väävel põleb välja                                                        |
+| Kuni {{1200–1400 °F; 649–760 °C}} | Looduslik süsinik põleb ära; see peaks lõppema enne punase hõõguse algust |
+|           Üle {{1544 °F; 840 °C}} | Kaltsiumkarbonaat laguneb                                                 |
 
-**Quartz inversion** is the sudden change in size of the silica in clay at {{1063 °F; 573 °C}}: it expands on the way up and contracts on the way down. L&L's Slow Bisque slows through it, between {{1000 °F; 538 °C}} and {{1100 °F; 593 °C}}. Digitalfire found this "unnecessary for bisque firings", and Ceramics Monthly says it mainly matters when cooling dense ware. Slowing costs little, so our suggestion is to keep it for thick pieces.
+**Kvartsi üleminek**{{en: quartz inversion}} on savis oleva ränidioksiidi{{en: silica}} järsk mõõtmete muutus temperatuuril {{1063 °F; 573 °C}}: kuumenemisel see paisub ja jahtumisel tõmbub kokku. L&L-i programm Slow Bisque aeglustab tõusu selle ajal, {{1000 °F; 538 °C}} ja {{1100 °F; 593 °C}} vahel. Digitalfire leidis, et see on „eelpõletuste puhul tarbetu“, ja Ceramics Monthly ütleb, et see on oluline peamiselt tihedate esemete jahutamisel. Aeglustamine maksab vähe, nii et see juhend soovitab seda paksude esemete puhul säilitada.
 
-### Candling: drying in the kiln
+### Aurustamisfaas: kuivatamine ahjus
 
-**Candling** means holding the kiln at a low temperature, with the lid propped or the vent running, until the last moisture has left the ware. Sources disagree about the temperature:
+**Aurustamisfaas**{{en: candling}} tähendab ahju hoidmist madalal temperatuuril, kaas praokil või väljatõmme töötamas, kuni viimane niiskus on esemetest lahkunud. Allikad on temperatuuri osas eri meelt:
 
-Table: Candling temperatures
+Table: Aurustamisfaasi temperatuurid
 
-| Source           | Candling                                                                                 |
-| ---------------- | ---------------------------------------------------------------------------------------- |
-| Ceramics Monthly | Just short of boiling; for example, climbing at {{25 °F/h; 14 °C/h}} for 4–6 hours       |
-| L&L preheat      | Hold at {{150–200 °F; 66–93 °C}}                                                         |
-| Digitalfire      | Hold at {{250 °F; 121 °C}}, because holding below boiling "does not expel all the water" |
+| Allikas           | Aurustamisfaas                                                                                    |
+| ----------------- | ------------------------------------------------------------------------------------------------- |
+| Ceramics Monthly  | Veidi alla keemistemperatuuri; näiteks tõus kiirusega {{25 °F/h; 14 °C/h}} 4–6 tunni jooksul      |
+| L&L-i eelkuivatus | Hoid temperatuuril {{150–200 °F; 66–93 °C}}                                                       |
+| Digitalfire       | Hoid temperatuuril {{250 °F; 121 °C}}, sest hoid alla keemistemperatuuri „ei aja kogu vett välja“ |
 
 > [!NOTE]
-> Our starting point: climb slowly to no more than about {{250 °F; 121 °C}}, and hold until a mirror at the vent stays clear. Hold overnight for thick or damp ware.
+> Selle juhendi lähtepunkt: tõstke temperatuuri aeglaselt mitte üle umbes {{250 °F; 121 °C}} ja hoidke, kuni õhutusava juures hoitud peegel jääb selgeks. Paksude või niiskete esemete puhul hoidke üle öö.
 
-The **mirror test**: hold a room-temperature mirror at a vent hole or at the gap under a propped lid. If it fogs, water is still leaving; wait, then test again.
+**Peeglikatse**: hoidke toatemperatuuril peeglit õhutusava juures või praokil kaane all oleva pilu juures. Kui see tõmbub uduseks, eraldub veel vett; oodake ja proovige siis uuesti.
 
-### Controller schedules
+### Kontrolleri programmid
 
-A **controller** is an electronic unit that fires the kiln through a **schedule**: a list of **segments**, each a rate of climb (the **ramp**), a target temperature and an optional hold. Below are two presets from L&L's DynaTrol and Bartlett controllers, and a schedule published by Digitalfire. "Peak" is the controller's own temperature for the cone you choose: for cone 04 it is {{1926 °F; 1052 °C}}, and for cone 06, {{1819 °F; 993 °C}}.
+**Kontroller** on elektrooniline seade, mis juhib ahju **põletusprogrammi** järgi: see on **segmentide** loend, kus igaühel on tõusukiirus (**ramp**{{en: ramp}}), sihttemperatuur ja soovi korral hoid{{en: hold}}. Allpool on kaks L&L-i DynaTroli ja Bartletti kontrollerite valmisprogrammi ning Digitalfire’i avaldatud programm. „Lõpptemperatuur“ on kontrolleri enda temperatuur valitud koonuse jaoks: koonuse 04 puhul {{1926 °F; 1052 °C}} ja koonuse 06 puhul {{1819 °F; 993 °C}}.
 
-Table: L&L and Bartlett bisque presets
-Label: Bisque presets
+Table: L&L-i ja Bartletti eelpõletuse valmisprogrammid
+Label: Eelpõletuse valmisprogrammid
 
-| Segment                  |                                                           Climb to |            Slow Bisque |            Fast Bisque |
-| ------------------------ | -----------------------------------------------------------------: | ---------------------: | ---------------------: |
-| 1                        |                                                 {{250 °F; 121 °C}} |   {{80 °F/h; 44 °C/h}} |  {{120 °F/h; 67 °C/h}} |
-| 2                        |                                                {{1000 °F; 538 °C}} | {{200 °F/h; 111 °C/h}} | {{300 °F/h; 167 °C/h}} |
-| 3                        |                                                {{1100 °F; 593 °C}} |  {{100 °F/h; 56 °C/h}} |  {{150 °F/h; 83 °C/h}} |
-| 4                        | {{250 °F; 139 °C}} below the peak: {{1676 °F; 913 °C}} for cone 04 | {{180 °F/h; 100 °C/h}} | {{180 °F/h; 100 °C/h}} |
-| 5                        |                                                           The peak |   {{80 °F/h; 44 °C/h}} |  {{108 °F/h; 60 °C/h}} |
-| Heating time, empty kiln |                                                                    | About 13 hours or more |     About 10–11½ hours |
+| Segment               |                                                                      Tõus kuni |               Slow Bisque |            Fast Bisque |
+| --------------------- | -----------------------------------------------------------------------------: | ------------------------: | ---------------------: |
+| 1                     |                                                             {{250 °F; 121 °C}} |      {{80 °F/h; 44 °C/h}} |  {{120 °F/h; 67 °C/h}} |
+| 2                     |                                                            {{1000 °F; 538 °C}} |    {{200 °F/h; 111 °C/h}} | {{300 °F/h; 167 °C/h}} |
+| 3                     |                                                            {{1100 °F; 593 °C}} |     {{100 °F/h; 56 °C/h}} |  {{150 °F/h; 83 °C/h}} |
+| 4                     | {{250 °F; 139 °C}} alla lõpptemperatuuri: koonuse 04 puhul {{1676 °F; 913 °C}} |    {{180 °F/h; 100 °C/h}} | {{180 °F/h; 100 °C/h}} |
+| 5                     |                                                                Lõpptemperatuur |      {{80 °F/h; 44 °C/h}} |  {{108 °F/h; 60 °C/h}} |
+| Kuumutusaeg, tühi ahi |                                                                                | Umbes 13 tundi või rohkem |     Umbes 10–11½ tundi |
 
-L&L's times are "for the fastest possible empty kilns"; a loaded kiln can take as much as four times longer, and any hold you add is extra heatwork the presets do not allow for. L&L advises Slow Bisque, with a preheat of 2–3 hours or longer, for large or damp pieces, and warns against fast firing, which "can cause defects like pinholes, cracking, and insufficient burnout".
+L&L-i ajad on „kõige kiiremate võimalike tühjade ahjude kohta“; pakitud ahi võib võtta kuni neli korda kauem ning iga lisatud hoid on lisakuumustöö, millega valmisprogrammid ei arvesta. L&L soovitab suurte või niiskete esemete puhul programmi Slow Bisque koos eelkuivatusega, mis kestab 2–3 tundi või kauem, ja hoiatab kiire põletamise eest, mis „võib põhjustada selliseid vigu nagu nõelaaugud, pragunemine ja puudulik väljapõlemine“.
 
-Table: Digitalfire BQ1000 bisque, to about cone 06
+Table: Digitalfire BQ1000 eelpõletus, umbes koonuseni 06
 Label: Digitalfire BQ1000
 
-| Step |                   Rate |               Target | Hold                                      |
-| ---- | ---------------------: | -------------------: | ----------------------------------------- |
-| 1    | {{306 °F/h; 170 °C/h}} |   {{248 °F; 120 °C}} | 60 minutes; up to 10 hours for heavy ware |
-| 2    | {{306 °F/h; 170 °C/h}} |  {{1733 °F; 945 °C}} | None                                      |
-| 3    |  {{108 °F/h; 60 °C/h}} | {{1832 °F; 1000 °C}} | 15 minutes                                |
+| Samm |                 Kiirus |                 Siht | Hoid                                            |
+| ---- | ---------------------: | -------------------: | ----------------------------------------------- |
+| 1    | {{306 °F/h; 170 °C/h}} |   {{248 °F; 120 °C}} | 60 minutit; raskete esemete puhul kuni 10 tundi |
+| 2    | {{306 °F/h; 170 °C/h}} |  {{1733 °F; 945 °C}} | Puudub                                          |
+| 3    |  {{108 °F/h; 60 °C/h}} | {{1832 °F; 1000 °C}} | 15 minutit                                      |
 
-BQ1000 takes about 7 hours 44 minutes. Its author finds up to {{500 °F/h; 278 °C/h}} fine for thin, dry ware, and slows the last step to even out the temperature through the load.
+BQ1000 kestab umbes 7 tundi 44 minutit. Selle autor peab õhukeste kuivade esemete puhul sobivaks kuni {{500 °F/h; 278 °C/h}} ja aeglustab viimast sammu, et temperatuur kogu ahjutäies ühtlustuks.
 
-### Controller cones and Orton's chart
+### Kontrolleri koonused ja Ortoni tabel
 
-L&L and Bartlett controllers use {{1926 °F; 1052 °C}} for cone 04 and {{1819 °F; 993 °C}} for cone 06, a little below Orton's {{1945 °F; 1063 °C}} and {{1828 °F; 998 °C}}; they agree at cone 6 and cone 10. Witness cones settle the difference: if they disagree with the controller, correct it with the cone offset.
+L&L-i ja Bartletti kontrollerid kasutavad koonuse 04 jaoks temperatuuri {{1926 °F; 1052 °C}} ja koonuse 06 jaoks {{1819 °F; 993 °C}}, veidi alla Ortoni {{1945 °F; 1063 °C}} ja {{1828 °F; 998 °C}}; koonuste 6 ja 10 juures need ühtivad. Erinevuse lahendavad kontrollkoonused: kui need ei ühti kontrolleriga, korrigeerige seda koonuse nihkega.
 
-### On a manual kiln
+### Käsijuhtimisega ahjus
 
-A manual kiln follows the same plan by hand: dry slowly with the lid propped and the peepholes open, step the switches up from Low to Medium to High, and let the sitter end the firing. The published procedures are under Manual kilns in detail, below.
+Käsijuhtimisega ahi järgib sama plaani käsitsi: kuivatage aeglaselt, kaas praokil ja vaateavad lahti, keerake lülitid järk-järgult asendist Low (madal) asendisse Medium (keskmine) ja siis High (kõrge) ning laske Kiln-Sitteril põletus lõpetada. Avaldatud korrad on allpool, osas „Käsijuhtimisega ahjud lähemalt“.
 
 ## Glasuuripõletus {#glaze}
 

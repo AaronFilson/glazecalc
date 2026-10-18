@@ -49,6 +49,10 @@
         "title": "Oppaat",
         "text": "Siitä, mikä lasite on, aina sen polttamiseen asti, ja miten kaikki pysyvät turvassa matkan varrella."
       },
+      "trash": {
+        "title": "Roskakori",
+        "text": "Palauta se, mitä poistit viimeisten 30 päivän aikana."
+      },
       "account": {
         "title": "Tili ja asetukset",
         "text": "Asetukset, salasana, kaksivaiheinen kirjautuminen ja kaiken tänne tallennetun lataus."
@@ -116,6 +120,7 @@
   },
   "trash": {
     "title": "Roskakori",
+    "lead": "Poistamasi (reseptit, raaka-aineet, lisäaineet, muistiinpanot, polttopäiväkirjat ja neuvot) odottavat täällä 30 päivää. Palauta ne tai poista ne lopullisesti.",
     "listHeading": "Roskakorissa",
     "none": "Roskakori on tyhjä.",
     "untitled": "Nimetön",

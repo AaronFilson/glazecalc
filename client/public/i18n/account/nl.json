@@ -207,6 +207,11 @@
     "recipes": "Recepten (CSV)",
     "materials": "Grondstoffen (CSV)"
   },
+  "trash": {
+    "heading": "Prullenbak",
+    "text": "Wat u uit uw logboek verwijdert, blijft 30 dagen in de prullenbak staan. Zet het vandaar terug, of verwijder het definitief.",
+    "open": "De prullenbak openen"
+  },
   "shared": {
     "heading": "Gedeelde recepten",
     "text": "De recepten die u met een link deelt: iedereen met de link kan ze lezen, zonder account. Een link wordt maar één keer getoond, op het moment dat hij wordt gemaakt, dus hij kan hier niet worden getoond. Om een recept opnieuw te delen, maakt u een nieuwe link onder Meer bij het recept.",
@@ -301,6 +306,7 @@
         "saved": "Opgeslagen: stoken volgens Ortonkegels."
       },
       "sk": {
+        "label": "Volgens SK-kegels, JIS R 8101",
         "example": "SK 4a, SK 8",
         "saved": "Opgeslagen: stoken volgens SK-kegels."
       },

@@ -207,6 +207,11 @@
     "recipes": "Opskrifter (CSV)",
     "materials": "Råvarer (CSV)"
   },
+  "trash": {
+    "heading": "Papirkurv",
+    "text": "Det, der fjernes fra notesbogen, ligger i papirkurven i 30 dage. Sæt det tilbage derfra, eller slet det for altid.",
+    "open": "Åbn papirkurven"
+  },
   "shared": {
     "heading": "Delte opskrifter",
     "text": "De opskrifter, der deles med et link, som alle med linket kan læse uden en konto. Et link vises kun én gang, når det oprettes, så det kan ikke vises her. For at dele en opskrift igen oprettes et nyt link under Mere ved opskriften.",
@@ -301,6 +306,7 @@
         "saved": "Gemt: brænding efter Ortonkegler."
       },
       "sk": {
+        "label": "Efter SK-kegler, JIS R 8101",
         "example": "SK 4a, SK 8",
         "saved": "Gemt: brænding efter SK-kegler."
       },

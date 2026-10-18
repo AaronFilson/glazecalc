@@ -22,58 +22,58 @@ lead: Πώς να αγοράζετε, να αποθηκεύετε, να ζυγί
 > [!WARNING]
 > **Το ξερό υάλωμα σε σκόνη είναι επικίνδυνο λόγω της σκόνης του.** Το κρυσταλλικό διοξείδιο του πυριτίου μπορεί να αποτελεί από 10 έως 60% ενός ξερού υαλώματος, και η βρετανική Health and Safety Executive (HSE) προειδοποιεί ότι η σκόνη του είναι αόρατη στο κανονικό φως. Παίρνετε τη σκόνη με τη σέσουλα απαλά και από χαμηλό ύψος, κρατάτε τα καπάκια κλειστά, βρέχετε τη σκόνη το συντομότερο δυνατό και καθαρίζετε με υγρό καθαρισμό, ποτέ με σκούπα. Φοράτε μάσκα προστασίας της αναπνοής με σωστή εφαρμογή όσο οι σκόνες είναι ξερές (N95 ή P100 στις ΗΠΑ, FFP2 ή FFP3 στο Ηνωμένο Βασίλειο και την ΕΕ, P2 ή P3 στην Αυστραλία και τη Νέα Ζηλανδία). Ο [οδηγός για την ασφαλή ανάμειξη](/guides/safe-mixing) καλύπτει αναλυτικά τη σκόνη, τις μάσκες προστασίας της αναπνοής και τον καθαρισμό.
 
-## Buying materials {#buying-materials lang=en}
+## Αγορά υλικών {#buying-materials}
 
-### Where to buy
+### Πού να αγοράσετε
 
-Potters buy from ceramic suppliers, which sell clay, glaze materials and tools. The table shows some for your country, each checked on the shop's own site, and you can choose another country to see its shops. Stock changes, so check before you order. Large producers such as Sibelco and Imerys sell to industry; potters buy their materials through shops like these. The ceramics reference site Digitalfire keeps a directory of supplier stores for other places.
+Οι κεραμίστες αγοράζουν από καταστήματα ειδών κεραμικής, που πουλούν πηλό, πρώτες ύλες υαλωμάτων και εργαλεία. Ο πίνακας δείχνει μερικά για τη χώρα σας, το καθένα ελεγμένο στον δικό του ιστότοπο, και μπορείτε να επιλέξετε άλλη χώρα για να δείτε τα καταστήματά της. Τα διαθέσιμα προϊόντα αλλάζουν, οπότε ελέγξτε πριν παραγγείλετε. Μεγάλοι παραγωγοί όπως η Sibelco και η Imerys πουλούν στη βιομηχανία. Οι κεραμίστες αγοράζουν τα υλικά τους μέσα από καταστήματα σαν αυτά. Για άλλα μέρη, ο ιστότοπος αναφοράς για την κεραμική Digitalfire διατηρεί κατάλογο καταστημάτων.
 
 ::shops
 
-### How much to buy
+### Πόσο να αγοράσετε
 
-The standard sack is **50 lb (22.7 kg)** in the US and **25 kg (55 lb)** elsewhere, so the two are nearly the same. Many suppliers also sell 1, 2.5 or 5 kg packs (about 2.2, 5.5 or 11 lb) for tests. Glazy, the open recipe database, advises buying the materials you use steadily (feldspar, silica, kaolin, whiting, and frit for mid-fire) in full sacks, which are often 20 to 30% cheaper. Buy **colorants**, the metal oxides and stains that color a glaze, in small amounts: most are used at under 5%. Glazy's sample shopping lists came to about $515 for mid-fire and $397 for high-fire, at US prices.
+Το συνηθισμένο σακί είναι **50 lb (22,7 kg)** στις ΗΠΑ και **25 kg (55 lb)** αλλού, οπότε τα δύο είναι σχεδόν ίδια. Πολλά καταστήματα πουλούν επίσης συσκευασίες των 1, 2,5 ή 5 kg (περίπου 2,2, 5,5 ή 11 lb) για δοκιμές. Το Glazy, η ανοιχτή βάση δεδομένων συνταγών, συμβουλεύει να αγοράζετε σε ολόκληρα σακιά τα υλικά που χρησιμοποιείτε σταθερά (άστριο{{en: feldspar}}, πυριτικό{{en: silica}}, καολίνη{{en: kaolin}}, ανθρακικό ασβέστιο{{en: whiting}} και, για τη μέση θερμοκρασία, φρίτα{{en: frit}}), που συχνά είναι 20 έως 30% φθηνότερα. Αγοράζετε τις **χρωστικές**{{en: colorants}}, δηλαδή τα οξείδια μετάλλων και τα στέιν{{en: stains}} (έτοιμες, προψημένες χρωστικές) που χρωματίζουν ένα υάλωμα{{en: glaze}}, σε μικρές ποσότητες: οι περισσότερες χρησιμοποιούνται σε ποσοστό κάτω από 5%. Οι ενδεικτικές λίστες αγορών του Glazy έβγαιναν περίπου 515 $ για τη μέση θερμοκρασία και 397 $ για την υψηλή, σε τιμές ΗΠΑ.
 
-### A starter set
+### Ένα αρχικό σετ
 
-Glazy's core list for any temperature is silica, kaolin, feldspar, whiting, zinc oxide, and dolomite or talc. Most mid-fire (cone 5 to 6) glazes also need boron, usually from a frit, which Glazy calls "consistent and less soluble than raw borates". The set below is our suggestion, drawn from Glazy's list and a forum list. The [glazing basics guide](/guides/glazing-basics) explains what each material does.
+Η κύρια λίστα του Glazy για κάθε θερμοκρασία είναι: πυριτικό, καολίνης, άστριος, ανθρακικό ασβέστιο, οξείδιο του ψευδαργύρου, και δολομίτης ή ταλκ. Τα περισσότερα υαλώματα μέσης θερμοκρασίας (κώνοι{{en: cone}} Orton 5–6) χρειάζονται επίσης βόριο, συνήθως από φρίτα, την οποία το Glazy χαρακτηρίζει «σταθερή και λιγότερο διαλυτή από τα ωμά βορικά». Το σετ παρακάτω είναι δική μας πρόταση, βασισμένη στη λίστα του Glazy και σε μια λίστα από φόρουμ. Ο [οδηγός για τις βασικές αρχές των υαλωμάτων](/guides/glazing-basics) εξηγεί τι κάνει κάθε υλικό.
 
-Table: A starter set of materials (our suggestion)
-Label: Starter set
+Table: Ένα αρχικό σετ υλικών (δική μας πρόταση)
+Label: Αρχικό σετ
 
-| Material                              | What to buy                                                                      |
-| ------------------------------------- | -------------------------------------------------------------------------------- |
-| Silica (also called flint; see below) | 325 mesh, the finer grade Glazy prefers for glazes                               |
-| Kaolin (china clay in the UK)         | EPK in the US; Grolleg or another china clay in the UK; NZ kaolin in New Zealand |
-| Potash feldspar                       | Whichever is current where you live, such as Mahavir in the US                   |
-| Nepheline syenite                     | Any; Glazy notes its stronger fluxing power, often used at low and mid-fire      |
-| Whiting                               | Any                                                                              |
-| Talc                                  | Any asbestos-free grade; check its SDS (see Safe mixing)                         |
-| A boron frit, for mid-fire            | Ferro 3134, 3124 or 3195; in the UK, Potterycrafts P3124 or P3195                |
-| Bentonite and colorants               | Small amounts                                                                    |
+| Υλικό                                                           | Τι να αγοράσετε                                                                                                             |
+| --------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| Πυριτικό (λέγεται και πυριτόλιθος{{en: flint}}, δείτε παρακάτω) | 325 mesh, η λεπτότερη κοκκομετρία που προτιμά το Glazy για υαλώματα                                                         |
+| Καολίνης (China Clay στο Ηνωμένο Βασίλειο)                      | EPK στις ΗΠΑ, Grolleg ή άλλος China Clay στο Ηνωμένο Βασίλειο, καολίνης Νέας Ζηλανδίας στη Νέα Ζηλανδία                     |
+| Άστριος καλίου{{en: potash feldspar}}                           | Όποιος κυκλοφορεί εκεί που ζείτε, όπως ο Mahavir στις ΗΠΑ                                                                   |
+| Νεφελίνα{{en: nepheline syenite}}                               | Οποιαδήποτε. Το Glazy επισημαίνει την ισχυρότερη ευτηκτική δράση της, που αξιοποιείται συχνά σε χαμηλή και μέση θερμοκρασία |
+| Ανθρακικό ασβέστιο                                              | Οποιοδήποτε                                                                                                                 |
+| Ταλκ                                                            | Οποιοδήποτε χωρίς αμίαντο· ελέγξτε το ΔΔΑ του (δείτε Ασφαλής ανάμειξη)                                                      |
+| Φρίτα βορίου, για μέση θερμοκρασία                              | Ferro 3134, 3124 ή 3195. Στο Ηνωμένο Βασίλειο, Potterycrafts P3124 ή P3195                                                  |
+| Μπεντονίτης και χρωστικές                                       | Μικρές ποσότητες                                                                                                            |
 
-### Data sheets and safety data sheets
+### Τεχνικά δελτία και δελτία δεδομένων ασφαλείας
 
-Ask for two documents for each material. A **technical data sheet** (TDS) gives its **chemical analysis**: the share of each oxide in the powder, by weight. Glazecalc works from these, and you can add a material from a supplier's analysis on the [Materials page](/material). A **safety data sheet** (SDS) says how to handle the raw powder. Keep each SDS, and read it before you mix.
+Ζητήστε δύο έγγραφα για κάθε υλικό. Το **τεχνικό δελτίο** (TDS) δίνει τη **χημική ανάλυσή** του: το ποσοστό κάθε οξειδίου στη σκόνη, κατά βάρος. Το Glazecalc δουλεύει με αυτές τις αναλύσεις, και μπορείτε να προσθέσετε ένα υλικό από την ανάλυση ενός προμηθευτή στη [σελίδα Υλικά](/material). Το **δελτίο δεδομένων ασφαλείας** (ΔΔΑ) λέει πώς να χειρίζεστε την ωμή σκόνη. Κρατήστε κάθε ΔΔΑ και διαβάστε το πριν από την ανάμειξη.
 
-Analyses are averages, not promises. Valentine Clays prints "MEAN VALUES. THESE DO NOT REPRESENT A SPECIFICATION" on its flint data sheet, and Glazy's analyses of Custer feldspar from different years run from about 68.5% to 72.4% silica. We suggest writing each sack's **lot number** (its batch code) in your records, so you can tell whether a change in a trusted glaze came from the material.
+Οι αναλύσεις είναι μέσοι όροι, όχι υποσχέσεις. Η Valentine Clays τυπώνει στο τεχνικό δελτίο του πυριτόλιθού της «ΜΕΣΕΣ ΤΙΜΕΣ. ΔΕΝ ΑΠΟΤΕΛΟΥΝ ΠΡΟΔΙΑΓΡΑΦΗ», και οι αναλύσεις του Glazy για τον Custer feldspar από διαφορετικές χρονιές κυμαίνονται από περίπου 68,5% έως 72,4% πυριτικό. Προτείνουμε να γράφετε στα αρχεία σας τον **αριθμό παρτίδας** (Lot, τον κωδικό παραγωγής) κάθε σακιού, ώστε να μπορείτε να καταλάβετε αν μια αλλαγή σε ένα δοκιμασμένο υάλωμα οφείλεται στο υλικό.
 
-HSE warns that crystalline silica "can be wrongly labelled as 'amorphous silica'". And an SDS is about the powder, not the pot: it says nothing about whether a fired glaze is safe for food. Only a laboratory leach test of the fired pot can show that.
+Η HSE προειδοποιεί ότι το κρυσταλλικό διοξείδιο του πυριτίου «μπορεί να αναγράφεται λανθασμένα ως “άμορφο διοξείδιο του πυριτίου”». Και ένα ΔΔΑ αφορά τη σκόνη, όχι το κομμάτι: δεν λέει τίποτα για το αν ένα ψημένο υάλωμα είναι κατάλληλο για επαφή με τρόφιμα{{en: food safe}}. Μόνο μια εργαστηριακή δοκιμή απελευθέρωσης μετάλλων{{en: leach test}} στο ψημένο κομμάτι μπορεί να το δείξει.
 
-### Names change, so buy by chemistry
+### Τα ονόματα αλλάζουν, οπότε αγοράστε με βάση τη χημεία
 
-Brand names come and go as mines close. Custer feldspar, mined in South Dakota for more than 75 years, ran out in late 2023. When Clay Art Center switched to G-200 AU and Mahavir, about half its glazes needed adjusting. G-200 and G-200 HP are gone too, and Laguna now imports Mahavir, whose chemistry is close to G-200.
+Οι εμπορικές ονομασίες έρχονται και φεύγουν καθώς κλείνουν τα ορυχεία. Ο Custer feldspar, που εξορυσσόταν στη Νότια Ντακότα για περισσότερα από 75 χρόνια, εξαντλήθηκε στα τέλη του 2023. Όταν το Clay Art Center πέρασε στον G-200 AU και στον Mahavir, περίπου τα μισά υαλώματά του χρειάστηκαν διόρθωση. Ούτε ο G-200 ούτε ο G-200 HP κυκλοφορούν πια, και η Laguna εισάγει τώρα τον Mahavir, που η χημεία του είναι κοντά σε αυτή του G-200.
 
-**Gerstley Borate**, a natural boron mineral in many older recipes, has been scarce since its mine closed in 2000, though New Mexico Clay reported in November 2025 that Laguna was supplying "Gerstley Borate Original". Sources disagree about **Gillespie Borate** as a replacement. Its maker sells it as pound-for-pound. Berkeley Potters Studio says it "is not a direct substitute", and Digitalfire found it changed a glaze's color. The safe course is to compare the two by their oxides, then test.
+Το **Gerstley Borate**, ένα φυσικό ορυκτό βορίου που υπάρχει σε πολλές παλαιότερες συνταγές, είναι δυσεύρετο από τότε που έκλεισε το ορυχείο του το 2000, αν και η New Mexico Clay ανέφερε τον Νοέμβριο του 2025 ότι η Laguna διέθετε «Gerstley Borate Original». Οι πηγές διαφωνούν για το **Gillespie Borate** ως υποκατάστατο. Ο παραγωγός του το πουλά ως υποκατάστατο λίβρα προς λίβρα. Το Berkeley Potters Studio λέει ότι «δεν είναι άμεσο υποκατάστατο», και το Digitalfire διαπίστωσε ότι άλλαξε το χρώμα ενός υαλώματος. Η ασφαλής επιλογή είναι να συγκρίνετε τα δύο με βάση τα οξείδιά τους και μετά να κάνετε δοκιμή.
 
-Regional names differ too. In North America, **flint**, quartz and silica mean the same ground silica, and Digitalfire says you probably won't find true flint powder from suppliers. In the UK, flint is its own product: Valentine's is calcined (heated) silica. Both are nearly pure silica, so we expect them to be close, but check the analysis. For kaolin, Glazy says one-for-one swaps, such as EPK for a china clay, "often work just fine, especially when amounts are \<10%".
+Τα ονόματα διαφέρουν και από τόπο σε τόπο. Στη Βόρεια Αμερική, οι λέξεις **flint** (πυριτόλιθος), quartz (χαλαζίας) και silica (πυριτικό) σημαίνουν το ίδιο αλεσμένο πυριτικό, και το Digitalfire λέει ότι μάλλον δεν θα βρείτε πραγματικό πυριτόλιθο σε σκόνη στους προμηθευτές. Στο Ηνωμένο Βασίλειο, ο πυριτόλιθος είναι ξεχωριστό προϊόν: της Valentine είναι πυρωμένο (ψημένο) πυριτικό. Και τα δύο είναι σχεδόν καθαρό πυριτικό, οπότε περιμένουμε να είναι κοντά, αλλά ελέγξτε την ανάλυση. Για τον καολίνη, το Glazy λέει ότι οι αντικαταστάσεις ένα προς ένα, όπως EPK στη θέση ενός China Clay, «συχνά δουλεύουν μια χαρά, ειδικά όταν οι ποσότητες είναι \<10%».
 
-Many recipes name materials that are sold in one country and not another. The table below takes each material in Glazecalc's library that is not sold where you buy, and finds the closest of its kind that is, by their analyses. The figure is how far apart the two are: the grams by which their fired oxides differ, per 100 g of material, added up over every oxide. Within about 15 g, one can usually stand in for the other in a first test. The names carry the makers' and shops' own codes, so you can ask for them by name.
+Πολλές συνταγές αναφέρουν υλικά που πωλούνται σε μια χώρα και όχι σε άλλη. Ο παρακάτω πίνακας παίρνει κάθε υλικό της βιβλιοθήκης του Glazecalc που δεν πωλείται εκεί όπου αγοράζετε και βρίσκει, με βάση τις αναλύσεις, το πιο κοντινό υλικό του ίδιου είδους που πωλείται. Ο αριθμός δείχνει πόσο απέχουν τα δύο: τα γραμμάρια κατά τα οποία διαφέρουν τα οξείδιά τους μετά το ψήσιμο, ανά 100 g υλικού, αθροισμένα για όλα τα οξείδια. Με διαφορά έως περίπου 15 g, το ένα μπορεί συνήθως να πάρει τη θέση του άλλου σε μια πρώτη δοκιμή. Τα ονόματα περιέχουν τους κωδικούς των ίδιων των παραγωγών και των καταστημάτων, ώστε να μπορείτε να τα ζητήσετε με το όνομά τους.
 
 ::local-equivalents
 
 > [!NOTE]
-> Glazecalc compares materials by what they bring to the fired glaze, not by name. A [recipe](/recipe) with a material no longer made says what is used now. **Suggest amounts and compare** works the amounts out again for a substitute, and **Match with what I have** makes the recipe again from the materials on your shelf. Both match the fired oxides only, so test a small batch first.
+> Το Glazecalc συγκρίνει τα υλικά με βάση ό,τι δίνουν στο ψημένο υάλωμα, όχι με βάση το όνομα. Μια [συνταγή](/recipe) με υλικό που δεν παράγεται πια δείχνει τι χρησιμοποιείται σήμερα. Η **Πρόταση ποσοτήτων και σύγκριση** υπολογίζει ξανά τις ποσότητες για ένα υποκατάστατο, και η **Αντιστοίχιση με τα υλικά μου** ξαναφτιάχνει τη συνταγή από τα υλικά του αποθέματός σας. Και οι δύο ταιριάζουν μόνο τα οξείδια μετά το ψήσιμο, οπότε δοκιμάστε πρώτα μια μικρή παρτίδα.
 
 ## Αποθήκευση υλικών και υαλωμάτων {#storing}
 
@@ -163,55 +163,55 @@ Label: Mesh κόσκινου
 | Υαλώματα με χρωστικές{{en: colorants}} όπως κοβάλτιο ή σίδηρο | 100 έως 120 mesh          |
 | Υαλώματα στάχτης και άλλα με χονδρόκοκκα υλικά                | 60 έως 80 mesh            |
 
-## Specific gravity {#specific-gravity lang=en}
+## Ειδικό βάρος {#specific-gravity}
 
-**Specific gravity** (SG) tells you how much powder is in your slurry. It is the weight of a volume of glaze divided by the weight of the same volume of water. Water is 1.00, and a glaze at {{SG 1.45}} weighs 145 g per 100 mL. Mixing to a measured SG is how you get the same thickness, and the same coat, every time. It has no units, so it is the same in grams or ounces.
+Το **ειδικό βάρος**{{en: specific gravity, SG}} δείχνει πόση σκόνη υπάρχει στο υγρό σας υάλωμα{{en: slurry}}. Είναι το βάρος ενός όγκου υαλώματος διαιρεμένο με το βάρος του ίδιου όγκου νερού. Για το νερό είναι 1,00, και ένα υάλωμα{{en: glaze}} με {{SG 1.45}} ζυγίζει 145 g ανά 100 mL. Αν φτιάχνετε το υάλωμα σε μετρημένο ειδικό βάρος, πετυχαίνετε την ίδια πυκνότητα, και την ίδια στρώση, κάθε φορά. Δεν έχει μονάδες, οπότε είναι το ίδιο σε γραμμάρια ή σε ουγγιές.
 
-### Measure it by weighing 100 mL
+### Μετρήστε το ζυγίζοντας 100 mL
 
-1. Stir the glaze so nothing has settled.
-2. Put a 100 mL **graduated cylinder** (a tall, marked measuring tube) or a 100 mL syringe on the scale, and tare it.
-3. Fill it with glaze to exactly 100 mL, reading the mark at eye level.
-4. Weigh it and divide the grams by 100: 145 g is SG 1.45.
+1. Ανακατέψτε το υάλωμα ώστε να μην έχει καθιζήσει τίποτα.
+2. Βάλτε στη ζυγαριά έναν **ογκομετρικό κύλινδρο** 100 mL (ψηλό σωλήνα μέτρησης με χαραγές) ή μια σύριγγα 100 mL, και μηδενίστε τη ζυγαριά.
+3. Γεμίστε με υάλωμα ακριβώς ως τα 100 mL, διαβάζοντας τη χαραγή στο ύψος των ματιών.
+4. Ζυγίστε και διαιρέστε τα γραμμάρια με το 100: 145 g σημαίνουν ειδικό βάρος 1,45.
 
-Digitalfire also marks a cup at the level of 500 g of water, fills it to the mark with glaze, and divides the weight by 500; a bigger, fuller measure is more accurate. A **hydrometer**, a float read where it sits in the glaze, is quick but can misread thick or gelled glazes. UK hydrometers, such as Potclays', read in degrees Baumé (°Bé). By our arithmetic, SG = 145 ÷ (145 − °Bé), so 46 °Bé is about 1.46. Older UK books give a **pint weight**, the ounces in an imperial pint of glaze: divide it by 20, so 29 oz is about SG 1.45 (also our arithmetic).
+Το Digitalfire σημαδεύει επίσης ένα κύπελλο στη στάθμη που φτάνουν 500 g νερού, το γεμίζει με υάλωμα ως το σημάδι και διαιρεί το βάρος με το 500. Ένα μεγαλύτερο, πιο γεμάτο μέτρο είναι πιο ακριβές. Το **αραιόμετρο**, ένας πλωτήρας που διαβάζεται στο σημείο όπου ισορροπεί μέσα στο υάλωμα, είναι γρήγορο, αλλά μπορεί να δώσει λάθος ένδειξη σε πυκνά ή πηκτά υαλώματα. Τα βρετανικά αραιόμετρα, όπως αυτά της Potclays, δείχνουν βαθμούς Baumé (°Bé). Κατά τους υπολογισμούς μας, ειδ. βάρος = 145 ÷ (145 − °Bé), οπότε 46 °Bé αντιστοιχούν περίπου σε 1,46. Παλαιότερα βρετανικά βιβλία δίνουν το **βάρος πίντας**, τις ουγγιές σε μία αγγλική πίντα υαλώματος: διαιρέστε το με το 20, οπότε 29 oz αντιστοιχούν περίπου σε ειδικό βάρος 1,45 (επίσης δικός μας υπολογισμός).
 
-### What to aim for
+### Πού να στοχεύσετε
 
-Sources disagree, most of all on brushing and spraying, where the UK supplier Potclays gives much higher figures (its own are "for guidance only"). Treat every number as a starting point. Digitalfire's core advice is to find the SG and gelling that work for each glaze, then repeat them and write them down.
+Οι πηγές διαφωνούν, πάνω από όλα για το πινέλο και τον ψεκασμό, όπου ο βρετανικός προμηθευτής Potclays δίνει πολύ υψηλότερες τιμές (οι δικές του είναι «μόνο ενδεικτικές»). Θεωρήστε κάθε αριθμό σημείο εκκίνησης. Η κύρια συμβουλή του Digitalfire είναι να βρείτε το ειδικό βάρος και τον βαθμό πήξης που ταιριάζουν σε κάθε υάλωμα, και μετά να τα επαναλαμβάνετε και να τα καταγράφετε.
 
-Table: Specific gravity targets, where sources disagree
-Label: Specific gravity targets
+Table: Τιμές-στόχοι ειδικού βάρους, όπου οι πηγές διαφωνούν
+Label: Τιμές-στόχοι ειδικού βάρους
 
-| Use      | Digitalfire and Glazy                                                                                                                 | Potclays (UK)                               | Safe starting point                                     |
-| -------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------- |
-| Dipping  | {{SG 1.40}} (for a 5-second dip) to {{SG 1.50}} (for a 1-second dip); home-mixed glazes that are gelled do best at {{SG 1.43–1.45}}   | Clear {{SG 1.46–1.48}}; colored {{SG 1.61}} | {{SG 1.45}}; thin to {{SG 1.43}} and gel it if it drips |
-| Brushing | {{SG 1.25}} (thin clear) to {{SG 1.55}} (dark detail)                                                                                 | {{SG 1.71–1.81}}                            | Follow the product; use CMC gum or a brushing medium    |
-| Spraying | No figure; Hopper, writing for Ceramic Arts Network, says much thinner, with a deflocculant (an additive that makes a slurry runnier) | {{SG 1.71}}                                 | No reliable number; spray only in a spray booth         |
+| Χρήση    | Digitalfire και Glazy                                                                                                                                                    | Potclays (ΗΒ)                                      | Ασφαλές σημείο εκκίνησης                                                          |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------- | --------------------------------------------------------------------------------- |
+| Βύθιση   | Από {{SG 1.40}} (για βύθιση 5 δευτερολέπτων) έως {{SG 1.50}} (για βύθιση 1 δευτερολέπτου). Τα σπιτικά υαλώματα, όταν είναι πηκτά, δουλεύουν καλύτερα σε {{SG 1.43–1.45}} | Διάφανα: {{SG 1.46–1.48}}. Χρωματιστά: {{SG 1.61}} | {{SG 1.45}}. Αραιώστε μέχρι {{SG 1.43}} και κάντε το πηκτό, αν στάζει             |
+| Πινέλο   | Από {{SG 1.25}} (αραιό διάφανο) έως {{SG 1.55}} (σκούρες λεπτομέρειες)                                                                                                   | {{SG 1.71–1.81}}                                   | Ακολουθήστε τις οδηγίες του προϊόντος. Χρησιμοποιήστε κόλλα CMC ή μέσο για πινέλο |
+| Ψεκασμός | Χωρίς τιμή. Ο Hopper, σε άρθρο του για το Ceramic Arts Network, λέει πολύ πιο αραιό, με διασπορέα{{en: deflocculant}} (πρόσθετο που κάνει το υγρό υάλωμα πιο ρευστό)     | {{SG 1.71}}                                        | Δεν υπάρχει αξιόπιστος αριθμός. Ψεκάζετε μόνο σε θάλαμο ψεκασμού                  |
 
-To check a dipping glaze by eye, AMACO dips for 5 seconds and looks for a coat about as thick as a US dime. Digitalfire fires tiles dipped for 5 seconds to check.
+Για να ελέγξει με το μάτι ένα υάλωμα για βύθιση, η AMACO βυθίζει για 5 δευτερόλεπτα και κοιτάζει αν η στρώση έχει περίπου το πάχος ενός αμερικανικού κέρματος dime. Το Digitalfire, για έλεγχο, ψήνει δοκιμαστικά πλακίδια{{en: test tiles}} βυθισμένα για 5 δευτερόλεπτα.
 
-### Water for a target SG: our estimate
+### Νερό για ειδικό βάρος-στόχο: δική μας εκτίμηση
 
-The table below is our own arithmetic, not a source's. It assumes the powder's particles have a density of 2.6 g per cm³, which is an assumption, not a measurement. Clay, soluble materials and gelling all change a real glaze, so use it to start, then measure. As a check, it predicts {{SG 1.44}} for equal weights of powder and water, close to Digitalfire's measured {{SG 1.46}}. It also shows that 70 to 80 mL per 100 g starts you above {{SG 1.50}}, thicker than you need.
+Ο παρακάτω πίνακας βγαίνει από δικούς μας υπολογισμούς, όχι από κάποια πηγή. Υποθέτει ότι τα σωματίδια της σκόνης έχουν πυκνότητα 2,6 g ανά cm³, κάτι που είναι υπόθεση, όχι μέτρηση. Ο πηλός, τα διαλυτά υλικά και η πήξη αλλάζουν όλα ένα πραγματικό υάλωμα, οπότε χρησιμοποιήστε τον πίνακα για να ξεκινήσετε και μετά μετρήστε. Για έλεγχο: προβλέπει {{SG 1.44}} για ίσα βάρη σκόνης και νερού, κοντά στο {{SG 1.46}} που μέτρησε το Digitalfire. Δείχνει επίσης ότι με 70 έως 80 mL ανά 100 g ξεκινάτε πάνω από {{SG 1.50}}, πιο πυκνό από όσο χρειάζεστε.
 
-Table: Water for a target specific gravity (our estimate)
-Label: Water for a target specific gravity
+Table: Νερό για ειδικό βάρος-στόχο (δική μας εκτίμηση)
+Label: Νερό για ειδικό βάρος-στόχο
 
-| Target      | Per 100 g of powder |  Per kilogram |         Per pound |
-| ----------- | ------------------: | ------------: | ----------------: |
-| {{SG 1.40}} |        about 115 mL | about 1150 mL | about 18 US fl oz |
-| {{SG 1.45}} |         about 98 mL |  about 980 mL | about 15 US fl oz |
-| {{SG 1.50}} |         about 85 mL |  about 850 mL | about 13 US fl oz |
-| {{SG 1.60}} |         about 64 mL |  about 640 mL | about 10 US fl oz |
+| Στόχος      | Ανά 100 g σκόνης |        Ανά κιλό |           Ανά λίβρα |
+| ----------- | ---------------: | --------------: | ------------------: |
+| {{SG 1.40}} |   περίπου 115 mL | περίπου 1150 mL | περίπου 18 US fl oz |
+| {{SG 1.45}} |    περίπου 98 mL |  περίπου 980 mL | περίπου 15 US fl oz |
+| {{SG 1.50}} |    περίπου 85 mL |  περίπου 850 mL | περίπου 13 US fl oz |
+| {{SG 1.60}} |    περίπου 64 mL |  περίπου 640 mL | περίπου 10 US fl oz |
 
-### Epsom salts, CMC gum and bentonite
+### Αγγλικό άλας, κόλλα CMC και μπεντονίτης
 
-**Epsom salts** make a glaze gel slightly when it stands still and flow again when it is stirred. This is called **flocculating** it, and a glaze that behaves this way is **thixotropic**: it goes on more evenly, drips less and settles less. Digitalfire suggests starting at about 2 g per gallon once the SG is right (roughly 0.5 g per liter, our conversion) and tuning the amount each time you mix, since no recipe should fix the dose. We suggest dissolving it in a little hot water first. In a Digitalfire example, a glaze at {{SG 1.45}} dripped, so water brought it down to {{SG 1.43}} and Epsom salts gelled it back to creamy, and it went on evenly. A rough check: stir, stop and watch. A gelled glaze moves on for about 2 or 3 seconds, then stops and springs back a little.
+Το **αγγλικό άλας** (θειικό μαγνήσιο) κάνει ένα υάλωμα να πήζει ελαφρά όταν μένει ακίνητο και να ρέει ξανά όταν ανακατεύεται. Αυτό λέγεται **κροκίδωση**{{en: flocculating}}, και ένα υάλωμα που συμπεριφέρεται έτσι είναι **θιξοτροπικό**{{en: thixotropic}}: απλώνεται πιο ομοιόμορφα, στάζει λιγότερο και καθιζάνει λιγότερο. Το Digitalfire προτείνει να ξεκινήσετε με περίπου 2 g ανά γαλόνι, όταν το ειδικό βάρος είναι πια σωστό (περίπου 0,5 g ανά λίτρο, δική μας μετατροπή), και να ρυθμίζετε την ποσότητα κάθε φορά που αναμειγνύετε, γιατί καμία συνταγή δεν πρέπει να ορίζει τη δόση. Προτείνουμε να το διαλύετε πρώτα σε λίγο ζεστό νερό. Σε ένα παράδειγμα του Digitalfire, ένα υάλωμα με {{SG 1.45}} έσταζε, οπότε με νερό κατέβηκε σε {{SG 1.43}} και με αγγλικό άλας έγινε ξανά πηκτό και κρεμώδες, και απλώθηκε ομοιόμορφα. Ένας πρόχειρος έλεγχος: ανακατέψτε, σταματήστε και παρατηρήστε. Ένα πηκτό υάλωμα συνεχίζει να κινείται για περίπου 2 ή 3 δευτερόλεπτα, μετά σταματά και γυρίζει λίγο πίσω.
 
-**CMC gum** (carboxymethyl cellulose) makes a slurry stickier and slower to dry, and leaves a harder coat that holds to the pot. It matters most for brushing glazes and glazes high in frit. Digitalfire's example blends 3.75 g into 1000 g of slurry, and it has to go in with a blender. A glaze with CMC will not gel with Epsom salts, and since microbes feed on the gum, it can change in the bucket and start to smell.
+Η **κόλλα CMC** (καρβοξυμεθυλοκυτταρίνη) κάνει το υγρό υάλωμα πιο κολλώδες και πιο αργό στο στέγνωμα, και αφήνει πιο σκληρή στρώση που κρατιέται στο κομμάτι. Έχει τη μεγαλύτερη σημασία στα υαλώματα για πινέλο και στα υαλώματα με πολλή φρίτα{{en: frit}}. Στο παράδειγμα του Digitalfire, 3,75 g ανακατεύονται σε 1000 g υγρού υαλώματος, και πρέπει να μπουν με μπλέντερ. Ένα υάλωμα με CMC δεν πήζει με αγγλικό άλας, και επειδή τα μικρόβια τρέφονται με την κόλλα, μπορεί να αλλάξει μέσα στον κουβά και να αρχίσει να μυρίζει.
 
-**Bentonite**, a very fine clay, helps hold the other particles in suspension. Dipping glazes usually rely on 15 to 25% raw clay for this. For a recipe short of clay, about 1 to 3% bentonite helps; Digitalfire says a glaze with more than 15% clay should not need more than 1%.
+Ο **μπεντονίτης**, ένας πολύ λεπτόκοκκος πηλός, βοηθά να μένουν τα άλλα σωματίδια σε αιώρηση. Για τον σκοπό αυτό, τα υαλώματα για βύθιση στηρίζονται συνήθως σε 15 έως 25% ωμό πηλό. Σε συνταγή με λίγο πηλό, βοηθά περίπου 1 έως 3% μπεντονίτης· το Digitalfire λέει ότι ένα υάλωμα με πάνω από 15% πηλό δεν θα έπρεπε να χρειάζεται πάνω από 1%.
 
 ## Δοκιμαστικά πλακίδια και σειρές δοκιμών {#testing}
 
@@ -276,7 +276,7 @@ Label: Πρότυπο καταγραφής
 > [!NOTE]
 > Στο Glazecalc, μια αποθηκευμένη [συνταγή](/recipe) κρατά την ίδια τη συνταγή. Ένα [ημερολόγιο ψησίματος](/firing) καταγράφει κάθε ψήσιμο: το καμίνι, την ημερομηνία, τις ώρες, τις θερμοκρασίες, τους κώνους και σημειώσεις. Οι [Σημειώσεις](/notes) κρατούν όλα τα υπόλοιπα, όπως την παραπάνω καταγραφή παρτίδας και τι έδειξε κάθε πλακίδιο.
 
-## Sources {#sources lang=en}
+## Πηγές {#sources}
 
 - [Glazy: Raw materials](https://help.glazy.org/concepts/materials)
 - [Glazy: Specific gravity](https://help.glazy.org/testing/specific-gravity)

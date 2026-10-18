@@ -18,40 +18,40 @@ Reseptissä luetellaan raaka-aineita, kuten maasälpää{{en: feldspar}}, liitua
 > [!NOTE]
 > Näin asian voi muistaa: piidioksidi on lasi, sulattajat saavat sen sulamaan lämpötilassa, johon oma uuni yltää, ja alumiinioksidi jäykistää sitä, jotta se pysyy siinä, mihin se on levitetty.
 
-## Clay, coatings and the two firings {#clay-and-firings lang=en}
+## Savi, pinnoitteet ja kaksi polttoa {#clay-and-firings}
 
-### Clay bodies
+### Savimassat
 
-The **clay body** is the clay a pot is made of. There are three main kinds.
+**Savimassa**{{en: clay body}}, lyhyesti massa, on savi, josta esine on tehty. Päälajeja on kolme.
 
-- **Earthenware**: a low-fire body, about cone 06–02, that stays porous. Often red or buff, it needs a glaze to hold water.
-- **Stoneware**: a mid- to high-fire body, about cone 5–10, that becomes vitreous or nearly so.
-- **Porcelain**: a white, high-fire body rich in kaolin, often translucent.
+- **Savitavara**{{en: earthenware}}: matalapolttoinen massa, noin keilat 06–02, joka jää huokoiseksi. Se on usein punaista tai kellertävää, ja se tarvitsee lasitteen pitääkseen vettä.
+- **Kivitavara**{{en: stoneware}}: keski- tai korkeapolttoinen massa, noin keilat 5–10, joka sintraantuu tiiviiksi tai lähes tiiviiksi.
+- **Posliini**: valkoinen, korkeapolttoinen ja runsaasti kaoliinia sisältävä massa, usein läpikuultava.
 
-**Vitreous** means glassy and non-porous; **vitrification** is a body becoming so as it fires. UK potters often draw the line by temperature instead: stoneware is fired above {{2192 °F; 1200 °C}}, earthenware below. Mid fire, cone 5–6, falls just either side of that line.
+**Tiivis** (sintraantunut) tarkoittaa lasimaista, ei huokoista; **sintraantuminen** on sitä, että massa muuttuu sellaiseksi poltossa. Brittiläiset keraamikot vetävät rajan usein sen sijaan lämpötilan mukaan: kivitavara poltetaan yli lämpötilan {{2192 °F; 1200 °C}}, savitavara sen alle. Keskipoltto, keilat 5–6, sijoittuu aivan tämän rajan molemmin puolin.
 
-### Coatings and drying
+### Pinnoitteet ja kuivuminen
 
-**Slip** is clay suspended in water, for casting, joining or decorating. An **engobe** is a slip-like coating, often colored, with more non-clay materials. An **underglaze** is colored slip or oxide decoration, usually covered with a clear glaze.
+**Saviliete** on veteen lietettyä savea valamiseen, liittämiseen tai koristeluun. **Engobe** on savilietteen kaltainen pinnoite, usein värillinen, jossa on savilietettä enemmän muita kuin saviraaka-aineita. **Alilasiteväri** on värillistä savilietettä tai oksidikoristelua, joka peitetään yleensä läpinäkyvällä lasitteella.
 
-Unfired ware is **greenware** (sources disagree on whether the word covers all unfired ware or only dry ware). As it dries it becomes **leather-hard**, stiff but slightly damp, the stage for trimming and handles; then **bone dry**, with no free water left, very fragile and ready to fire.
+**Polttamaton esine**{{en: greenware}} on esine, jota ei ole vielä poltettu (lähteet ovat eri mieltä siitä, kattaako englannin greenware kaikki polttamattomat esineet vai vain kuivat). Kuivuessaan esine muuttuu ensin **nahkakuivaksi**, jäykäksi mutta hieman kosteaksi, jolloin se sorvataan ja siihen kiinnitetään korvat; sitten **täysin kuivaksi**, jolloin vapaata vettä ei ole jäljellä ja esine on hyvin hauras ja valmis poltettavaksi.
 
-### The two firings
+### Kaksi polttoa
 
-The first, lower firing is the **bisque** (UK: **biscuit**), usually cone 08–04 (most often 06–04), about {{1728–1945 °F; 942–1063 °C}}. It leaves ware strong but porous. Digitalfire, a glaze reference site, suggests generally more than 15% porosity, so the bisque draws water out of the glaze as it goes on. A soft bisque (cone 08–06) is more porous; a hard bisque (often cone 04) is sturdier but takes glaze less readily.
+Ensimmäinen, matalampi poltto on **raakapoltto**{{en: bisque}} (Isossa-Britanniassa **biscuit**), yleensä keilat 08–04 (useimmiten 06–04), noin {{1728–1945 °F; 942–1063 °C}}. Sen jälkeen esineet ovat lujia mutta huokoisia. Lasitteiden hakuteossivusto Digitalfire suosittaa yleensä yli 15 %:n huokoisuutta, jotta raakapoltettu esine imee vettä lasitteesta sitä levitettäessä. Matala raakapoltto (keilat 08–06) jättää esineen huokoisemmaksi; korkea raakapoltto (usein keila 04) jättää sen lujemmaksi, mutta se ottaa lasitetta huonommin vastaan.
 
-Table: How the bisque changes glazing (Digitalfire)
-Label: How the bisque changes glazing
+Table: Miten raakapoltto vaikuttaa lasittamiseen (Digitalfire)
+Label: Miten raakapoltto vaikuttaa lasittamiseen
 
-| Bisque                                  | What happens                                                    |
-| --------------------------------------- | --------------------------------------------------------------- |
-| Under-fired, very absorbent             | Glaze goes on too thick, then cracks and crawls                 |
-| Over-fired, dense                       | Dipping and drying take longer                                  |
-| Fired hotter, or held longer at the top | More gas burns off now, so less bubbles through the glaze later |
+| Raakapoltto                                                     | Mitä tapahtuu                                                                    |
+| --------------------------------------------------------------- | -------------------------------------------------------------------------------- |
+| Alipoltettu, imee voimakkaasti                                  | Lasitetta tarttuu liian paksu kerros, joka sitten halkeilee ja kuroutuu          |
+| Ylipoltettu, tiivis                                             | Upottaminen ja kuivuminen kestävät kauemmin                                      |
+| Poltettu kuumempana tai haudutettu pidempään huippulämpötilassa | Kaasua palaa pois enemmän jo nyt, joten myöhemmin lasitteen läpi kuplii vähemmän |
 
-Potclays, a UK supplier, describes biscuit firing to around {{1000 °C; 1832 °F}}, about cone 06. Reading these sources together, we suggest cone 06–04 for a first bisque: {{1828–1945 °F; 998–1063 °C}} at Orton's medium rate.
+Brittiläinen toimittaja Potclays kuvaa raakapolton noin lämpötilaan {{1000 °C; 1832 °F}}, eli suunnilleen keilaan 06. Näitä lähteitä yhdessä tarkastellen suosittelemme ensimmäiseen raakapolttoon keiloja 06–04: {{1828–1945 °F; 998–1063 °C}} Ortonin keskinopealla nousunopeudella.
 
-The **glaze firing** (British potters may say **glost** firing) melts the glaze and, for stoneware, matures the clay too. **Once-firing** glazes unfired ware and fires it just once. Digitalfire reports a production case where raw-glazed ware crawled on its rims until a bisque firing cured it, so begin with two firings. [Firing a basic kiln](/guides/firing) gives schedules for both.
+**Lasituspoltto**{{en: glaze firing}} (brittiläiset keraamikot voivat sanoa **glost** firing) sulattaa lasitteen ja kivitavarassa polttaa myös saven tiiviiksi. **Kertapoltossa**{{en: once-firing}} polttamaton esine lasitetaan ja poltetaan vain kerran. Digitalfire kertoo tuotannosta tapauksesta, jossa polttamattomina lasitettujen esineiden reunoilla lasite kuroutui, kunnes raakapoltto korjasi vian, joten aloita kahdella poltolla. Oppaassa [Polttaminen yksinkertaisessa keramiikkauunissa](/guides/firing) on polttokäyrät molempiin.
 
 ## Keilat ja lämpötyö {#cones}
 
@@ -238,30 +238,30 @@ Label: Yleiset lasitevirheet
 | Valuminen                         | Lasite valuu uunilevylle                                      | Liian vähän alumiinioksidia; liian paksu kerros, kuten kohdissa, joissa kaadot menevät päällekkäin; paljon rautaa                       | Lasita ohuemmin; lisää alumiinioksidia; pidä lasite reilusti pohjan yläpuolella                                  |
 | Jäähdytyshalkeamat{{en: dunting}} | Esineessä jäähtymisestä tai kuumenemisesta johtuvia halkeamia | Nopea jäähtyminen kvartsin muutoksen{{en: quartz inversion}} kohdalla, {{1063 °F; 573 °C}}; epätasaiset seinämät; huono yhteensopivuus  | Polta hitaasti lämpötilan {{1063 °F; 573 °C}} ohi sekä kuumennettaessa että jäähdytettäessä; tasapaksut seinämät |
 
-## Food safety {#food-safety lang=en}
+## Elintarviketurvallisuus {#food-safety}
 
-**Leaching** is metal dissolving out of a fired glaze into food or drink, and a glaze can look perfect and still do it. The legal tests soak the fired piece in an acid solution and measure the lead and cadmium that come out.
+**Metallien liukeneminen**{{en: leaching}} tarkoittaa, että poltetusta lasitteesta liukenee metallia ruokaan tai juomaan, ja lasite voi näyttää täydelliseltä ja silti luovuttaa metallia. Lakisääteisissä testeissä poltettu esine liotetaan happoliuoksessa ja siitä irtoava lyijy ja kadmium mitataan.
 
-### Lead-free is not the same as food-safe
+### Lyijytön ei tarkoita elintarvikekäyttöön sopivaa
 
-The rules in the US, the EU, the UK and Australia limit the lead and cadmium a fired piece releases, not what the glaze contains. "Lead-free" removes one hazard; it is not a food-safety rating. Other oxides leach too: Glazy warns that high-barium glazes "can leach and are generally not food-safe", Digitalfire says copper "can make a glaze leachable; test it", and Glazy no longer advises lead glazes for functional ware.
+Yhdysvaltojen, EU:n, Ison-Britannian ja Australian säännöt rajoittavat sitä, kuinka paljon lyijyä ja kadmiumia poltetusta esineestä irtoaa, eivät lasitteen sisältöä. ”Lyijytön” poistaa yhden vaaran; se ei ole elintarviketurvallisuuden luokitus. Muitakin oksideja liukenee: Glazy varoittaa, että runsaasti bariumia sisältävistä lasitteista ”voi liueta metalleja, eivätkä ne yleensä sovi elintarvikekäyttöön”, Digitalfiren mukaan kupari ”voi tehdä lasitteesta metalleja luovuttavan; testaa se”, eikä Glazy enää suosittele lyijylasitteita käyttöesineisiin.
 
-A **liner glaze** is a stable, usually clear or white glaze for surfaces that touch food. In our view, one with no colorant, barium, lead or lithium, that melts fully, does not craze and wears well, is the lower-risk choice. Lower risk is not proof.
+**Sisälasite**{{en: liner glaze}} on tasapainoinen, yleensä läpinäkyvä tai valkoinen lasite pinnoille, jotka joutuvat kosketuksiin ruoan kanssa. Meidän näkemyksemme mukaan sisälasite, jossa ei ole väriainetta, bariumia, lyijyä eikä litiumia ja joka sulaa täysin, ei säröile ja kestää kulutusta, on pienemmän riskin valinta. Pienempi riski ei ole todiste.
 
-**Limit formulas** (Digitalfire prefers **target formulas**) give typical unity-formula ranges for stable glazes at a cone: Digitalfire's cone 6 targets put alumina at 0.285–0.64 and silica at 2.4–4.7. They guide you toward sound chemistry but prove nothing; Digitalfire avoids the word "limit" because it suggests glazes inside the ranges "are somehow safe". Glazecalc's tools for changing a recipe say when the new one goes past a recommended limit, such as a lot of boron at cone 6, and what the glaze will likely do.
+**Rajakaavat**{{en: limit formulas}} (Digitalfire puhuu mieluummin **tavoitekaavoista**{{en: target formulas}}) antavat tasapainoisten lasitteiden tyypilliset Segerin kaavan vaihteluvälit tietylle keilalle: Digitalfiren tavoitteet keilalle 6 ovat alumiinioksidille 0,285–0,64 ja piidioksidille 2,4–4,7. Ne ohjaavat kohti hyvää kemiaa mutta eivät todista mitään; Digitalfire välttää sanaa ”raja”, koska se antaa ymmärtää, että vaihteluvälien sisällä olevat lasitteet ”ovat jotenkin turvallisia”. Glazecalcin työkalut reseptin muuttamiseen kertovat, kun uusi resepti ylittää suositellun rajan, kuten paljon booria keilassa 6, ja mitä lasite todennäköisesti tekee.
 
-The legal limits differ by country. The table shows those where you live, in the law's own units; choose another country to compare.
+Lakisääteiset raja-arvot vaihtelevat maittain. Taulukko näyttää oman asuinmaan raja-arvot lain omissa yksiköissä; valitse toinen maa vertailtavaksi.
 
 ::food-limits
 
-In the US, decorative ceramic ware that looks usable for food is treated as food ware unless it carries a stick-on label and a permanent notice molded or fired onto its base, such as "Not for Food Use. May Poison Food", or has a hole through the food surface. The EU sets lead and cadmium limits in Directive 84/500/EEC, and the UK keeps the same figures in its own law. From 29 May 2026 the Netherlands, Belgium and Luxembourg allow about 130 to 150 times less lead, and about 15 times less cadmium. Australia sets limits for imported ware; we found no official limit for ware made in Australia or New Zealand.
+Yhdysvalloissa koristeeksi tarkoitettu keraaminen esine, joka näyttää ruokakäyttöön sopivalta, katsotaan ruoka-astiaksi, ellei siinä ole tarraetikettiä ja pohjaan muotoiltua tai poltettua pysyvää merkintää, kuten ”Not for Food Use. May Poison Food” (ei ruokakäyttöön; voi myrkyttää ruoan), tai reikää ruoan kanssa kosketuksiin tulevan pinnan läpi. EU säätää lyijyn ja kadmiumin raja-arvoista direktiivissä 84/500/ETY, ja Iso-Britannia pitää samat luvut omassa lainsäädännössään. Alankomaissa, Belgiassa ja Luxemburgissa sallitaan 29. toukokuuta 2026 alkaen noin 130–150 kertaa vähemmän lyijyä ja noin 15 kertaa vähemmän kadmiumia. Australia asettaa raja-arvot tuontiesineille; emme löytäneet virallista raja-arvoa Australiassa tai Uudessa-Seelannissa valmistetuille esineille.
 
-### Testing
+### Testaaminen
 
-The FDA says home swab kits can show leachable lead, but Ceramics New Zealand warns that test pens are not designed for ceramics and give false positives. Treat a positive as a reason to stop using the piece, and a negative as proving nothing. A laboratory leach test of the fired piece (ASTM C738 in the US; EN 1388 or ISO 6486 in Europe) is the real answer.
+FDA:n mukaan kotikäyttöön tarkoitetut pyyhkäisytestit voivat paljastaa liukenevan lyijyn, mutta Ceramics New Zealand varoittaa, että testikyniä ei ole suunniteltu keramiikalle ja ne antavat vääriä positiivisia tuloksia. Pidä positiivista tulosta syynä lopettaa esineen käyttö, äläkä pidä negatiivista tulosta todisteena mistään. Poltetusta esineestä tehty metallien liukenemisen laboratoriotesti (Yhdysvalloissa ASTM C738; Euroopassa EN 1388 tai ISO 6486) antaa todellisen vastauksen.
 
 > [!WARNING]
-> "Food safe" means this glaze, on this clay, fired to this cone in this kiln and applied this way, releases less than the legal limits. Glazecalc can help you build a stable glaze, and **Replace lead** can rebuild an old lead recipe without lead, but no calculator can certify a pot. Only a test of the fired piece can.
+> ”Elintarvikekäyttöön sopiva”{{en: food safe}} tarkoittaa, että juuri tämä lasite tällä savella, tähän keilaan tässä uunissa poltettuna ja näin levitettynä luovuttaa vähemmän kuin lakisääteiset raja-arvot sallivat. Glazecalc voi auttaa rakentamaan tasapainoisen lasitteen, ja **Korvaa lyijy** -toiminto voi rakentaa vanhan lyijyreseptin uudelleen ilman lyijyä, mutta mikään laskin ei voi todistaa esinettä turvalliseksi. Vain poltetun esineen testi voi.
 
 ## Ominaispaino ja lasittaminen {#application}
 
@@ -298,171 +298,171 @@ Uunin kaasut eli **polttoatmosfääri** vaikuttavat siihen, millaisia lasitteist
 
 Jokaisesta uunista, myös sähköuunista, tulee savukaasuja, joten huolehdi uunin tuuletuksesta. Oppaassa [Turvallinen sekoittaminen ja ilmanvaihto](/guides/safe-mixing) kerrotaan, miten.
 
-## Glossary {#glossary lang=en}
+## Sanasto {#glossary}
 
-Additive
-: A colorant, opacifier or suspender added on top of a recipe's 100.
+Alilasiteväri (underglaze)
+: Värillinen saviliete tai oksidikoristelu, yleensä läpinäkyvän lasitteen alla.
 
-Alumina (Al₂O₃)
-: The main stabilizer: stops running and adds hardness. From clays and feldspars.
+Alumiinioksidi (Al₂O₃; alumina)
+: Tärkein tasapainottaja: estää valumista ja lisää kovuutta. Tulee savista ja maasälvistä.
 
-Ball clay
-: A plastic clay with more iron and organic matter than kaolin.
+Bentoniitti (bentonite)
+: Hyvin hienojakoinen savi, jota lisätään 1–3 % estämään lasitteen laskeutumista.
 
-Batch recipe
-: A glaze's raw materials by weight, usually adding up to 100.
+Boori (B₂O₃; boron)
+: Muodollisesti lasinmuodostaja, mutta käytetään sulattajana; välttämätön keilasta 06 keilaan 6.
 
-Bentonite
-: A very fine clay added at 1–3% to keep glaze from settling.
+CMC, lasiteliima (CMC gum)
+: Selluloosapohjainen liima-aine, joka auttaa lasitetta leviämään siveltimellä ja tarttumaan; palaa pois.
 
-Bisque (UK: biscuit)
-: The first, lower firing, usually cone 08–04 (most often 06–04), leaving ware strong but porous.
+Devitrifikaatio (devitrification)
+: Kiteitä kasvaa lasiin jäähtymisen alkuvaiheessa, missä niitä ei haluta.
 
-Boron (B₂O₃)
-: Formally a glass former but used as a flux; essential from cone 06 to cone 6.
+Elintarvikekäyttöön sopiva (food safe)
+: Lain mukaan: luovuttaa happotestissä vähemmän lyijyä ja kadmiumia kuin raja-arvot sallivat. Ei sama kuin lyijytön.
 
-CMC gum
-: A cellulose gum that helps glaze brush on and stick; it burns away.
+Flokkulantti ja deflokkulantti (flocculant and deflocculant)
+: Lisäaineet, jotka sakeuttavat lasitelietettä (Epsom-suola, etikka) tai ohentavat sitä (vesilasi, Darvan).
 
-Colorant and stain
-: A metal oxide or carbonate that colors glaze; a stain is a factory-made, more stable colorant.
+Fritti (frit)
+: Tehtaassa valmistettu lasi, sulatettu, äkillisesti jäähdytetty ja jauhettu, joka tekee liukenevista tai myrkyllisistä oksideista liukenemattomia.
 
-Cone
-: A calibrated ceramic pyramid that bends at a set heatwork. A witness cone shows what the pots received.
+Hapettava ja pelkistävä poltto (oxidation and reduction)
+: Poltto runsaalla hapella (sähköuunit) tai rajoitetulla hapella (yleensä kaasu- tai puu-uunit).
 
-Crawling
-: Glaze pulling back into beads in firing, leaving bare clay.
+Hilseily (shivering)
+: Lasite lohkeilee irti reunoilta, koska se on liian suuressa puristusjännityksessä; vaara käyttöesineissä.
 
-Crazing
-: Fine cracks in a glaze that shrinks more than its body; crackle when wanted.
+Jäähdytyshalkeamat (dunting)
+: Esineen halkeamat jäähtymisen tai kuumenemisen aiheuttamasta jännityksestä, usein kvartsin muutoksen kohdalla, {{1063 °F; 573 °C}}.
 
-Devitrification
-: Crystals growing out of the glass early in cooling, where they are not wanted.
+Kaoliini (kaolin; UK: china clay)
+: Puhdas valkoinen savi, joka tuo alumiinioksidia ja piidioksidia; pitää lasitteen seoksena. Australiassa: Eckalite.
 
-Dunting
-: Cracks in a pot from cooling or heating stress, often at quartz inversion, {{1063 °F; 573 °C}}.
+Keila (cone)
+: Kalibroitu keraaminen pyramidi, joka taipuu tietyn lämpötyön saatuaan. Tarkkailukeila näyttää, mitä esineet saivat.
 
-Earthenware
-: A low-fire body (about cone 06–02) that stays porous.
+Kertapoltto (once-firing, single firing)
+: Polttamattoman esineen lasittaminen ja polttaminen vain kerran.
 
-Feldspar
-: A mineral supplying alkali flux with alumina and silica: potash, soda or nepheline syenite.
+Kiiltävä, silkinhimmeä ja matta (gloss, satin and matte)
+: Heijastava ja sileä; vaimea kiilto; kiilloton.
 
-Flocculant and deflocculant
-: Additives that gel a slurry (Epsom salts, vinegar) or thin it (sodium silicate, Darvan).
+Kivitavara (stoneware)
+: Keski- tai korkeapolttoinen massa (noin keilat 5–10), joka sintraantuu tiiviiksi tai lähes tiiviiksi.
 
-Flux
-: An oxide that lowers the melting temperature of silica.
+Koesarja (line blend)
+: Koepalat, joissa yhden aineen määrä muuttuu vaiheittain kahden määrän välillä. Kolmiokokeessa vaihdellaan kolmea ainetta ruudukossa.
 
-Food safe
-: In law, releasing less lead and cadmium than the limits in an acid test. Not the same as lead-free.
+Kuroutuminen (crawling)
+: Lasite vetäytyy poltossa helmiksi ja jättää paljasta savea.
 
-Frit
-: Factory-made glass, melted, quenched and ground, that makes soluble or toxic oxides insoluble.
+Lasinmuodostaja (glass former)
+: Oksidi, joka rakentaa lasin, yleensä piidioksidi.
 
-Glass former
-: The oxide that builds the glass, usually silica.
+Lasite (glaze)
+: Lasikerros, joka sulaa poltossa tiivistämään ja koristamaan esineen.
 
-Glaze
-: A coat of glass that melts in firing to seal and decorate a pot.
+Lasitteen ja massan yhteensopivuus (glaze fit)
+: Kuinka hyvin lasitteen ja massan lämpölaajeneminen vastaavat toisiaan; hyvä yhteensopivuus jättää lasitteen lievään puristusjännitykseen.
 
-Glaze firing (UK: glost firing)
-: The firing that melts the glaze.
+Lasituspoltto (glaze firing; UK: glost firing)
+: Poltto, joka sulattaa lasitteen.
 
-Glaze fit
-: How well glaze and body expansion match; a good fit leaves the glaze slightly compressed.
+Liitu (whiting)
+: Kalsiumkarbonaatti, tärkein kalsiumsulattaja; menettää poltossa yli 40 % painostaan. Saksaksi: Kreide.
 
-Gloss, satin and matte
-: Reflective and smooth; a subdued sheen; dull.
+Lisäaine (additive)
+: Väriaine, opalisoiva aine tai sakanestoaine, joka lisätään reseptin 100:n päälle.
 
-Greenware
-: Unfired ware: leather-hard when stiff but damp, bone dry when no free water is left.
+Lämpötyö (heatwork)
+: Lämpötilan ja ajan yhteisvaikutus uunissa; se, mitä keilat mittaavat.
 
-Heatwork
-: The combined effect of temperature and time in a kiln; what cones measure.
+Maasälpä (feldspar)
+: Mineraali, joka tuo alkalisulattajaa sekä alumiinioksidia ja piidioksidia: kalimaasälpä, natronmaasälpä tai nefeliinisyeniitti.
 
-Kaolin (UK: china clay)
-: A pure white clay supplying alumina and silica; keeps glaze suspended. Australia: Eckalite.
+Metallien liukeneminen (leaching)
+: Metalleja liukenee poltetusta lasitteesta ruokaan tai juomaan.
 
-Kiln wash
-: A heat-resisting coating that protects kiln shelves from drips.
+Neulanreiät ja kupliminen (pinholing and blistering)
+: Pienet reiät tai teräväreunaiset kraatterit kohdissa, joissa kaasu on päässyt sulan läpi.
 
-Leaching
-: Metals dissolving out of a fired glaze into food or drink.
+Oksidi (oxide)
+: Alkuaineen ja hapen yhdiste; oksidianalyysi luettelee ne painoprosentteina.
 
-Limit formula (target formula)
-: Typical unity-formula ranges for stable glazes at a cone; a guide, not a guarantee.
+Ominaispaino, litrapaino (specific gravity, SG)
+: Lasitelietteen paino verrattuna samaan tilavuuteen vettä. Vanhoissa brittiläisissä lähteissä: pinttipaino (pint weight).
 
-Line blend
-: Tests stepping one ingredient between two amounts. A triaxial blend varies three on a grid.
+Opalisoiva aine (opacifier)
+: Raaka-aine, kuten sirkoonisilikaatti, tinaoksidi tai titaanidioksidi, joka tekee lasitteesta peittävän.
 
-Liner glaze
-: A stable, usually clear or white glaze for surfaces that touch food.
+Pallosavi (ball clay)
+: Plastinen savi, jossa on enemmän rautaa ja orgaanista ainesta kuin kaoliinissa.
 
-LOI (loss on ignition)
-: Weight lost in firing as water, carbon dioxide, organic matter or sulfur.
+Piidioksidi (SiO₂; silica)
+: Lasinmuodostaja; raaka-aineena myös nimillä flintti tai kvartsi.
 
-Once-firing (single firing)
-: Glazing unfired ware and firing it only once.
+Piidioksidin ja alumiinioksidin suhde (silica to alumina ratio)
+: Piidioksidi jaettuna alumiinioksidilla Segerin kaavassa: suurempi suhde vie kohti kiiltävää, pienempi kohti mattaa.
 
-Opacifier
-: A material, such as zircon, tin oxide or titanium dioxide, that makes glaze opaque.
+Poispalava vaha (wax resist)
+: Vaha, jota sivellään kohtiin, joihin lasitetta ei saa tulla, yleensä pohjaan.
 
-Oxidation and reduction
-: Firing with plenty of oxygen (electric kilns), or with oxygen restricted (usually gas or wood).
+Polttamaton esine (greenware)
+: Esine, jota ei ole poltettu: nahkakuiva, kun se on jäykkä mutta kostea, täysin kuiva, kun vapaata vettä ei ole jäljellä.
 
-Oxide
-: A compound of an element with oxygen; an oxide analysis lists them by weight percent.
+Polttohäviö (LOI, loss on ignition)
+: Paino, joka menetetään poltossa veden, hiilidioksidin, orgaanisen aineksen tai rikin poistuessa kaasuna.
 
-Pinholing and blistering
-: Small holes, or sharp-edged craters, where gas escaped through the melt.
+Posliini (porcelain)
+: Valkoinen, runsaasti kaoliinia sisältävä korkeapolttoinen massa, usein läpikuultava.
 
-Porcelain
-: A white, kaolin-rich, high-fire body, often translucent.
+R₂O ja RO
+: Alkalisulattajat (Na₂O, K₂O, Li₂O) ja maa-alkalisulattajat (CaO, MgO, BaO, SrO sekä ZnO).
 
-R₂O and RO
-: The alkali fluxes (Na₂O, K₂O, Li₂O) and alkaline-earth fluxes (CaO, MgO, BaO, SrO, with ZnO).
+Raakapoltto (bisque; UK: biscuit)
+: Ensimmäinen, matalampi poltto, yleensä keilat 08–04 (useimmiten 06–04), jonka jälkeen esineet ovat lujia mutta huokoisia.
 
-Shivering
-: Glaze flaking off edges because it is over-compressed; a hazard on functional ware.
+Rajakaava, tavoitekaava (limit formula, target formula)
+: Tasapainoisten lasitteiden tyypilliset Segerin kaavan vaihteluvälit tietylle keilalle; ohje, ei takuu.
 
-Silica (SiO₂)
-: The glass former; also called flint or quartz.
+Resepti, prosenttikaava (batch recipe)
+: Lasitteen raaka-aineet painon mukaan, yleensä yhteensä 100.
 
-Silica to alumina ratio
-: Silica divided by alumina in the unity formula: higher tends to gloss, lower to matte.
+Saviliete ja engobe (slip and engobe)
+: Savea vedessä; engobe on savilietteen kaltainen pinnoite, jossa on savilietettä enemmän muita kuin saviraaka-aineita.
 
-Slip and engobe
-: Clay in water; an engobe is a slip-like coating with more non-clay material.
+Savitavara (earthenware)
+: Matalapolttoinen massa (noin keilat 06–02), joka jää huokoiseksi.
 
-Specific gravity (SG)
-: A slurry's weight compared with the same volume of water. Older UK: pint weight.
+Segerin kaava (UMF; unity molecular formula, Seger formula)
+: Lasitteen oksidit molekyylien lukumäärinä, skaalattuna niin, että sulattajien summa on 1.
 
-Stabilizer
-: An oxide, mainly alumina, that stiffens the melt and adds durability.
+Sintraantuminen (vitrification)
+: Massa muuttuu poltossa lasimaiseksi ja huokosettomaksi.
 
-Stoneware
-: A mid- to high-fire body (about cone 5–10) that becomes vitreous or nearly so.
+Sisälasite (liner glaze)
+: Tasapainoinen, yleensä läpinäkyvä tai valkoinen lasite pinnoille, jotka joutuvat kosketuksiin ruoan kanssa.
 
-Thixotropy
-: Flowing when stirred, setting into a soft gel when still.
+Sulattaja (flux)
+: Oksidi, joka laskee piidioksidin sulamislämpötilaa.
 
-Underglaze
-: Colored slip or oxide decoration, usually under a clear glaze.
+Säröily (crazing)
+: Hienot halkeamat lasitteessa, joka kutistuu enemmän kuin massa; krakle, kun säröily on toivottua.
 
-Unity molecular formula (UMF, Seger formula)
-: A glaze's oxides as molecule counts, scaled so the fluxes add up to 1.
+Tasapainottaja (stabilizer)
+: Oksidi, pääasiassa alumiinioksidi, joka jäykistää sulaa ja lisää kestävyyttä.
 
-Vitrification
-: A body becoming glassy and non-porous in firing.
+Tiksotropia, lepojäykkyys (thixotropy)
+: Lasiteliete juoksee sekoitettaessa ja jähmettyy levossa pehmeäksi geeliksi.
 
-Wax resist
-: Wax painted where glaze must not go, usually the foot.
+Uunilevyn suoja-aine (kiln wash)
+: Tulenkestävä pinnoite, joka suojaa uunilevyjä valumilta.
 
-Whiting
-: Calcium carbonate, the main calcium flux; loses over 40% of its weight in firing. German: Kreide.
+Väriaine ja väripigmentti (colorant and stain)
+: Metallioksidi tai -karbonaatti, joka värjää lasitteen; väripigmentti on tehtaassa valmistettu, pysyvämpi väriaine.
 
-## Sources {#sources lang=en}
+## Lähteet {#sources}
 
 - [Glazy Help: Glaze](https://help.glazy.org/concepts/glaze)
 - [Glazy Help: Oxides](https://help.glazy.org/concepts/oxides)
@@ -472,7 +472,7 @@ Whiting
 - [Glazy Help: Firing](https://help.glazy.org/concepts/firing)
 - [Glazy Help: Defects](https://help.glazy.org/concepts/defects)
 - [Glazy Help: Specific gravity](https://help.glazy.org/testing/specific-gravity)
-- [Orton Ceramic Foundation: Pyrometric cone chart, °F (via The Ceramic Shop)](https://www.theceramicshop.com/technical_info/Cones/Orton-Cone-Chart-F-022-14.pdf)
+- [Orton Ceramic Foundation: Pyrometric cone chart, °F (sivustolla The Ceramic Shop)](https://www.theceramicshop.com/technical_info/Cones/Orton-Cone-Chart-F-022-14.pdf)
 - [Digitalfire: Bisque](https://digitalfire.com/glossary/bisque)
 - [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Unity molecular formula](https://digitalfire.com/glossary/unity+molecular+formula)

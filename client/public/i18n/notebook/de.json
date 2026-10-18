@@ -49,6 +49,10 @@
         "title": "Anleitungen",
         "text": "Von der Frage, was eine Glasur ist, bis zum Brennen – und wie dabei alle sicher bleiben."
       },
+      "trash": {
+        "title": "Papierkorb",
+        "text": "Stellen Sie wieder her, was Sie in den letzten 30 Tagen entfernt haben."
+      },
       "account": {
         "title": "Konto und Einstellungen",
         "text": "Einstellungen, Ihr Passwort, die Zwei-Schritt-Anmeldung und ein Download von allem, was Sie hier aufbewahren."
@@ -116,6 +120,7 @@
   },
   "trash": {
     "title": "Papierkorb",
+    "lead": "Was Sie entfernen (Rezepte, Rohstoffe, Zusätze, Notizen, Brennprotokolle und Tipps), bleibt hier 30 Tage liegen. Stellen Sie es wieder her oder löschen Sie es endgültig.",
     "listHeading": "Im Papierkorb",
     "none": "Der Papierkorb ist leer.",
     "untitled": "Ohne Titel",

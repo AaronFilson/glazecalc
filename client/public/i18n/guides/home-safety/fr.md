@@ -30,34 +30,34 @@ Nous vous suggérons d’enregistrer dès aujourd’hui les numéros de votre r�
 
 Si vous allez à l’hôpital, le NHS dit d’emporter l’emballage ou un échantillon si vous pouvez le faire sans danger. Pour une matière pour émail, cela veut dire l’étiquette du sac ou la fiche de données de sécurité.
 
-## What is most dangerous to swallow {#most-dangerous lang=en}
+## Ce qu’il est le plus dangereux d’avaler {#most-dangerous}
 
-Glaze materials can harm a family in two different ways:
+Les matières pour émaux{{en: glaze materials}} peuvent nuire à une famille de deux façons différentes :
 
-- The **acute** danger (harm from one dose, within hours) is swallowing a **soluble** material, one that dissolves in water or stomach acid. Locked storage and the numbers above deal with it.
-- The **chronic** danger (harm from many small doses) is dust, mainly silica and lead, which causes no symptoms at first and travels home on clothes. Clean habits deal with it.
+- Le danger **aigu** (les dommages causés par une seule dose, en quelques heures) est d’avaler une matière **soluble**, c’est-à-dire qui se dissout dans l’eau ou dans l’acide de l’estomac. Le rangement sous clé et les numéros ci-dessus permettent d’y faire face.
+- Le danger **chronique** (les dommages causés par de nombreuses petites doses) est la poussière, surtout de silice{{en: silica}} et de plomb, qui ne provoque d’abord aucun symptôme et que l’on rapporte dans la maison sur ses vêtements. De bonnes habitudes de propreté permettent d’y faire face.
 
-Most of a glaze is silica, kaolin and feldspar, which barely dissolve. We treat them as a long-term breathing hazard rather than a swallowing emergency. The soluble materials below are the ones to lock away first.
+Un émail se compose surtout de silice, de kaolin et de feldspath{{en: feldspar}}, qui se dissolvent à peine. Nous les considérons comme un danger à long terme quand on les respire, plutôt que comme une urgence quand on les avale. Les matières solubles ci-dessous sont celles à mettre sous clé en premier.
 
-Table: Soluble glaze materials: what they do if swallowed
-Label: Soluble materials
+Table: Matières solubles pour émaux : leurs effets en cas d’ingestion
+Label: Matières solubles
 
-| Material                    | What it does                                                                                                                                                                                                                                                                                                                                 | Reported doses                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Barium carbonate            | Once sold as rat poison. It barely dissolves in water but does dissolve in acid, so treat it as soluble once swallowed. Barium drives down the potassium in the blood, causing vomiting, diarrhea and muscle weakness that can progress to paralysis, breathing failure and an irregular heartbeat. Symptoms typically begin within 2 hours. | Sources disagree. A WHO review estimates the lethal dose of barium absorbed from the gut at 3 to 4 g in untreated cases, with toxic effects from 0.2 to 0.5 g, and lists a lowest reported lethal dose of barium chloride, a soluble barium salt, of 11.4 mg per kg of body weight. An emergency-medicine reference gives a lethal range of 1 to 30 g for barium salts, with harm possibly from about 200 mg. None gives a figure for children, so call for any amount. |
-| Borax and boric acid        | Nausea, vomiting, diarrhea and stomach pain come first; vomit and stool may be blue-green. Severe cases bring a bright red rash that later peels, seizures, kidney injury and shock.                                                                                                                                                         | Rough lowest lethal doses: 2 to 3 g for an infant, 5 to 6 g for a child. In one review of 784 swallowings, only 12% caused symptoms and none were fatal, but deaths do happen, and there is no antidote.                                                                                                                                                                                                                                                                |
-| Lithium carbonate           | A child weighing 15 kg (33 lb) who swallowed 300 mg had a short spell of involuntary muscle spasms and overactive reflexes (acute dystonia and hyperreflexia), which passed.                                                                                                                                                                 | Little has been written about young children. 300 mg is far less than a spoonful of powder.                                                                                                                                                                                                                                                                                                                                                                             |
-| Soda ash (sodium carbonate) | Dissolves readily in water. We found no reliable figures for what it does to a child.                                                                                                                                                                                                                                                        | None found. Call for any amount.                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| Potassium dichromate        | A chrome colorant used in some recipes. Fisher Scientific's safety data sheet warns that it "May be fatal if swallowed", causes burns in the gut and may damage the kidneys. The same sheet warns that it "May be fatal if inhaled" and may cause cancer, and of a "possible risk of harm to the unborn child".                              | Not established, and safety data sheets disagree on how toxic it is.                                                                                                                                                                                                                                                                                                                                                                                                    |
+| Matière                                  | Effets                                                                                                                                                                                                                                                                                                                                                                                                                                          | Doses rapportées                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| ---------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Carbonate de baryum                      | Autrefois vendu comme mort-aux-rats. Il se dissout à peine dans l’eau, mais il se dissout bien dans l’acide : considérez-le donc comme soluble une fois avalé. Le baryum fait chuter le potassium dans le sang, ce qui provoque vomissements, diarrhée et une faiblesse musculaire qui peut évoluer vers une paralysie, une insuffisance respiratoire et un rythme cardiaque irrégulier. Les symptômes commencent en général dans les 2 heures. | Les sources divergent. Une revue de l’OMS estime la dose mortelle de baryum absorbé par l’intestin entre 3 et 4 g dans les cas non traités, avec des effets toxiques à partir de 0,2 à 0,5 g, et cite comme plus faible dose mortelle rapportée du chlorure de baryum, un sel de baryum soluble, 11,4 mg par kg de poids corporel. Un ouvrage de référence en médecine d’urgence donne une fourchette mortelle de 1 à 30 g pour les sels de baryum, avec des effets nocifs possibles à partir d’environ 200 mg. Aucune de ces sources ne donne de chiffre pour les enfants : appelez donc quelle que soit la quantité. |
+| Borax et acide borique                   | Nausées, vomissements, diarrhée et douleurs d’estomac viennent d’abord ; les vomissures et les selles peuvent être bleu-vert. Les cas graves entraînent une éruption rouge vif qui pèle ensuite, des convulsions, une atteinte des reins et un état de choc.                                                                                                                                                                                    | Doses mortelles minimales approximatives : 2 à 3 g pour un nourrisson, 5 à 6 g pour un enfant. Dans une revue de 784 ingestions, seules 12 % ont provoqué des symptômes et aucune n’a été mortelle, mais des décès surviennent, et il n’existe pas d’antidote.                                                                                                                                                                                                                                                                                                                                                         |
+| Carbonate de lithium                     | Un enfant de 15 kg (33 lb) qui en avait avalé 300 mg a eu un bref épisode de spasmes musculaires involontaires et de réflexes exagérés (dystonie aiguë et hyperréflexie), qui est passé.                                                                                                                                                                                                                                                        | Peu de choses ont été écrites sur les jeunes enfants. 300 mg, c’est bien moins qu’une cuillerée de poudre.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| Carbonate de soude (carbonate de sodium) | Se dissout facilement dans l’eau. Nous n’avons trouvé aucun chiffre fiable sur ses effets chez un enfant.                                                                                                                                                                                                                                                                                                                                       | Aucune trouvée. Appelez quelle que soit la quantité.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Dichromate de potassium                  | Un colorant au chrome utilisé dans certaines recettes. La fiche de données de sécurité de Fisher Scientific avertit qu’il « Peut être mortel en cas d’ingestion », provoque des brûlures du tube digestif et peut endommager les reins. La même fiche avertit qu’il « Peut être mortel par inhalation » et peut provoquer le cancer, et d’un « risque possible pendant la grossesse d’effets néfastes pour l’enfant ».                          | Non établies, et les fiches de données de sécurité ne s’accordent pas sur sa toxicité.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 
 > [!NOTE]
-> These harmful amounts run from a few hundred milligrams to a few grams. Glaze materials are sold by the pound or kilogram, so one open bag or bucket holds far more than enough to harm a toddler.
+> Ces quantités nocives vont de quelques centaines de milligrammes à quelques grammes. Les matières pour émaux se vendent à la livre ou au kilogramme : un seul sac ou seau ouvert en contient donc bien plus qu’il n’en faut pour nuire à un tout-petit.
 
-### Colorants and lead
+### Colorants et plomb
 
-**Colorants** are the metal oxides and stains that give a glaze its color: copper, cobalt, chrome, manganese, nickel, cadmium-selenium stains and others. A university ceramics safety page names lead, cadmium, cobalt and chromium among the especially hazardous glaze ingredients. We found no reliable dose figures for any colorant, so call for any amount. A bucket of mixed glaze holds the same materials as the bags it came from, only wet.
+Les **colorants** sont les oxydes métalliques et les pigments{{en: stains}} qui donnent sa couleur à un émail{{en: glaze}} : cuivre, cobalt, chrome, manganèse, nickel, pigments au cadmium-sélénium et autres. Une page d’une université sur la sécurité en céramique cite le plomb, le cadmium, le cobalt et le chrome parmi les ingrédients d’émail particulièrement dangereux. Nous n’avons trouvé de chiffre de dose fiable pour aucun colorant : appelez donc quelle que soit la quantité. Un seau d’émail préparé contient les mêmes matières que les sacs dont il vient, simplement mouillées.
 
-Lead's main danger is different: not one spoonful, but small amounts of dust swallowed over weeks or months, with no warning signs (see Lead and children, below).
+Le principal danger du plomb est différent : non pas une cuillerée, mais de petites quantités de poussière avalées pendant des semaines ou des mois, sans aucun signe d’alerte (voir Le plomb et les enfants, plus bas).
 
 ## Ranger les matières à la maison {#storing-materials}
 
@@ -220,43 +220,43 @@ Un **émail intérieur**{{en: liner glaze}} est l’émail de l’intérieur d�
 
 Pour en savoir plus sur la fonte des émaux, sur la raison pour laquelle certains relarguent des métaux et sur ce que signifient les limites, voir [Les principes de base de l’émaillage](/guides/glazing-basics).
 
-## Sources {#sources lang=en}
+## Sources {#sources}
 
-- [America's Poison Centers: Poison Help](https://poisoncenters.org/)
-- [Poison Control (poison.org): webPOISONCONTROL](https://www.poison.org/)
-- [NHS: Poisoning](https://www.nhs.uk/conditions/poisoning/)
-- [National Poisons Information Service (UK)](https://www.npis.org/)
-- [National Poisons Information Centre of Ireland: Public Poisons Line](https://www.poisons.ie/)
-- [European Commission: 112, the European emergency number](https://digital-strategy.ec.europa.eu/en/policies/112)
-- [healthdirect: Poisoning](https://www.healthdirect.gov.au/poisoning)
-- [National Poisons Centre (New Zealand)](https://www.poisons.co.nz/)
-- [ASPCA: Animal Poison Control](https://www.aspca.org/pet-care/animal-poison-control)
+- [America’s Poison Centers : Poison Help](https://poisoncenters.org/)
+- [Poison Control (poison.org) : webPOISONCONTROL](https://www.poison.org/)
+- [NHS : Poisoning](https://www.nhs.uk/conditions/poisoning/)
+- [National Poisons Information Service (Royaume-Uni)](https://www.npis.org/)
+- [National Poisons Information Centre of Ireland : Public Poisons Line](https://www.poisons.ie/)
+- [European Commission : 112, the European emergency number](https://digital-strategy.ec.europa.eu/en/policies/112)
+- [healthdirect : Poisoning](https://www.healthdirect.gov.au/poisoning)
+- [National Poisons Centre (Nouvelle-Zélande)](https://www.poisons.co.nz/)
+- [ASPCA : Animal Poison Control](https://www.aspca.org/pet-care/animal-poison-control)
 - [Pet Poison Helpline](https://www.petpoisonhelpline.com/)
-- [Animal PoisonLine (UK)](https://www.animalpoisonline.co.uk/)
-- [Animal Poisons Helpline (Australia and New Zealand)](https://animalpoisons.com.au/)
-- [PubMed Central: Non-fatal acute barium carbonate poisoning, a case report (2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC11700400)
-- [WHO IPCS: Environmental Health Criteria 107, Barium (1990)](https://www.inchem.org/documents/ehc/ehc/ehc107.htm)
-- [Fisher Scientific: Potassium dichromate safety data sheet (2007)](https://fscimage.fishersci.com/msds/19370.htm)
-- [WikEM: Boron toxicity](https://wikem.org/wiki/Boron_toxicity)
-- [NPIC and US EPA: Recognition and Management of Pesticide Poisonings, chapter 9 (PDF)](https://www.npic.orst.edu/RMPP/rmpp_ch9.pdf)
-- [medlibrary.org: Lithium carbonate prescribing information](https://medlibrary.org/lib/rx/meds/lithium-carbonate-16/page/2/)
-- [CDC: About Lead in Jobs, Hobbies, or Other Activities](https://cdc.gov/lead-prevention/prevention/jobs-hobbies-activities.html)
-- [CDC: Blood Lead Reference Value](https://www.cdc.gov/nceh/lead/data/blood-lead-reference-value.htm)
-- [US EPA: Children's health booklet (2018, PDF)](https://19january2021snapshot.epa.gov/sites/static/files/2018-10/documents/childrenshealthbooklet2018_final-4_newlinks.pdf)
-- [Pennsylvania Department of Health: Non-Occupational Lead Exposure (PDF)](https://www.health.pa.gov:443/topics/Documents/Environmental%20Health/Non-Occupational%20Lead%20Exposure.pdf)
-- [Western Carolina University: Ceramics Safety](https://www.wcu.edu/discover/campus-services-and-operations/facilities-management/safety-and-risk-management/visual-arts-theatre-safety/ceramics-safety.aspx)
-- [Crafts Council (UK): How to make your pottery practice greener](https://craftscouncil.org.uk/stories/how-make-your-pottery-practice-greener)
-- [Pet Poison Helpline: Lead](https://www.petpoisonhelpline.com/poison/lead/)
-- [Vet Candy: Sparkler ingestion results in barium toxicity](https://www.myvetcandy.com/clinicalupdblog/2019/3/15/sparkler-ingestion-results-in-barium-toxicity)
-- [University of Illinois College of Veterinary Medicine: Bird toxins](https://vetmed.illinois.edu/pet-health-columns/bird-toxins-teflon-avocado-lead-zinc/)
-- [Skutt: Designing a Kiln Room (PDF)](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Designing-A-Kiln-Room-1.pdf)
-- [Kiln Management guide for schools (PDF)](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Kiln-Management-1.pdf)
-- [L&L Kiln: Front-loader installation checklist (PDF)](https://www.theceramicshop.com/downloads/LLFLChecklist.pdf)
-- [Rio Grande: PMC Kilns Handbook (PDF)](https://products.riogrande.com/content/Instruction-Sheets/RioGrande-PMC-Kilns-Handbook-IS.pdf)
-- [Dawson: Kiln-Sitter LT-3 manual (PDF)](https://oud.klei.nl/forum/bestanden/f675ae4a-d890-4b8b-a08e-173e652f25a6/KilnSitter%20lt3%20en%20lt3k.pdf)
-- [Ceramic Arts Network: In the Studio, Eye Health for Potters](https://ceramicartsnetwork.org/pottery-making-illustrated/pottery-making-illustrated-article/In-the-Studio-Eye-Health-for-Potters)
-- [FDA: Questions and Answers on Lead-Glazed Traditional Pottery](https://www.fda.gov/food/environmental-contaminants-food/questions-and-answers-lead-glazed-traditional-pottery)
-- [FDA: Compliance Policy Guide 545.450, lead in pottery (PDF)](https://www.fda.gov/media/71764/download)
-- [Digitalfire: Food Safe](https://digitalfire.com/glossary/food+safe)
-- [Ceramics NZ: Is it food safe?](https://ceramicsnz.org/news/is-it-food-safe/)
-- [Ceramic Arts Network: Techno File, Dirty Dishes](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/Techno-File-Dirty-Dishes)
+- [Animal PoisonLine (Royaume-Uni)](https://www.animalpoisonline.co.uk/)
+- [Animal Poisons Helpline (Australie et Nouvelle-Zélande)](https://animalpoisons.com.au/)
+- [PubMed Central : Non-fatal acute barium carbonate poisoning, a case report (2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC11700400)
+- [WHO IPCS : Environmental Health Criteria 107, Barium (1990)](https://www.inchem.org/documents/ehc/ehc/ehc107.htm)
+- [Fisher Scientific : Potassium dichromate safety data sheet (2007)](https://fscimage.fishersci.com/msds/19370.htm)
+- [WikEM : Boron toxicity](https://wikem.org/wiki/Boron_toxicity)
+- [NPIC et US EPA : Recognition and Management of Pesticide Poisonings, chapitre 9 (PDF)](https://www.npic.orst.edu/RMPP/rmpp_ch9.pdf)
+- [medlibrary.org : Lithium carbonate prescribing information](https://medlibrary.org/lib/rx/meds/lithium-carbonate-16/page/2/)
+- [CDC : About Lead in Jobs, Hobbies, or Other Activities](https://cdc.gov/lead-prevention/prevention/jobs-hobbies-activities.html)
+- [CDC : Blood Lead Reference Value](https://www.cdc.gov/nceh/lead/data/blood-lead-reference-value.htm)
+- [US EPA : livret sur la santé des enfants (2018, PDF)](https://19january2021snapshot.epa.gov/sites/static/files/2018-10/documents/childrenshealthbooklet2018_final-4_newlinks.pdf)
+- [Pennsylvania Department of Health : Non-Occupational Lead Exposure (PDF)](https://www.health.pa.gov:443/topics/Documents/Environmental%20Health/Non-Occupational%20Lead%20Exposure.pdf)
+- [Western Carolina University : Ceramics Safety](https://www.wcu.edu/discover/campus-services-and-operations/facilities-management/safety-and-risk-management/visual-arts-theatre-safety/ceramics-safety.aspx)
+- [Crafts Council (Royaume-Uni) : How to make your pottery practice greener](https://craftscouncil.org.uk/stories/how-make-your-pottery-practice-greener)
+- [Pet Poison Helpline : Lead](https://www.petpoisonhelpline.com/poison/lead/)
+- [Vet Candy : Sparkler ingestion results in barium toxicity](https://www.myvetcandy.com/clinicalupdblog/2019/3/15/sparkler-ingestion-results-in-barium-toxicity)
+- [University of Illinois College of Veterinary Medicine : Bird toxins](https://vetmed.illinois.edu/pet-health-columns/bird-toxins-teflon-avocado-lead-zinc/)
+- [Skutt : Designing a Kiln Room (PDF)](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Designing-A-Kiln-Room-1.pdf)
+- [Kiln Management, guide pour les écoles (PDF)](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Kiln-Management-1.pdf)
+- [L&L Kiln : Front-loader installation checklist (PDF)](https://www.theceramicshop.com/downloads/LLFLChecklist.pdf)
+- [Rio Grande : PMC Kilns Handbook (PDF)](https://products.riogrande.com/content/Instruction-Sheets/RioGrande-PMC-Kilns-Handbook-IS.pdf)
+- [Dawson : manuel du Kiln-Sitter LT-3 (PDF)](https://oud.klei.nl/forum/bestanden/f675ae4a-d890-4b8b-a08e-173e652f25a6/KilnSitter%20lt3%20en%20lt3k.pdf)
+- [Ceramic Arts Network : In the Studio, Eye Health for Potters](https://ceramicartsnetwork.org/pottery-making-illustrated/pottery-making-illustrated-article/In-the-Studio-Eye-Health-for-Potters)
+- [FDA : Questions and Answers on Lead-Glazed Traditional Pottery](https://www.fda.gov/food/environmental-contaminants-food/questions-and-answers-lead-glazed-traditional-pottery)
+- [FDA : Compliance Policy Guide 545.450, le plomb dans les poteries (PDF)](https://www.fda.gov/media/71764/download)
+- [Digitalfire : Food Safe](https://digitalfire.com/glossary/food+safe)
+- [Ceramics NZ : Is it food safe?](https://ceramicsnz.org/news/is-it-food-safe/)
+- [Ceramic Arts Network : Techno File, Dirty Dishes](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/Techno-File-Dirty-Dishes)

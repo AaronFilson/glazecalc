@@ -18,40 +18,40 @@ Receptē ir uzskaitītas izejvielas, piemēram, laukšpats{{en: feldspar}}, krī
 > [!NOTE]
 > Lai to vieglāk atcerētos: silīcija dioksīds ir stikls, kušņi ļauj tam izkust temperatūrā, ko jūsu krāsns var sasniegt, un alumīnija oksīds to padara stigrāku, lai tas paliktu tur, kur to uzklājāt.
 
-## Clay, coatings and the two firings {#clay-and-firings lang=en}
+## Māls, pārklājumi un divas apdedzināšanas {#clay-and-firings}
 
-### Clay bodies
+### Keramikas masas
 
-The **clay body** is the clay a pot is made of. There are three main kinds.
+**Masa**{{en: clay body}} jeb keramikas masa ir māls, no kura izgatavots trauks. Ir trīs galvenie veidi.
 
-- **Earthenware**: a low-fire body, about cone 06–02, that stays porous. Often red or buff, it needs a glaze to hold water.
-- **Stoneware**: a mid- to high-fire body, about cone 5–10, that becomes vitreous or nearly so.
-- **Porcelain**: a white, high-fire body rich in kaolin, often translucent.
+- **Māla keramika**{{en: earthenware}}: zemas temperatūras masa, ko apdedzina apmēram līdz konusiem 06–02 un kas paliek poraina. Tā bieži ir sarkana vai smilškrāsas, un, lai tā noturētu ūdeni, tai vajag glazūru{{en: glaze}}.
+- **Akmens masa**{{en: stoneware}}: vidējas līdz augstas temperatūras masa, ko apdedzina apmēram līdz konusiem 5–10 un kas saķep vai gandrīz saķep.
+- **Porcelāns**: balta, kaolīnu bagāta augstas temperatūras masa, bieži gaismcaurlaidīga.
 
-**Vitreous** means glassy and non-porous; **vitrification** is a body becoming so as it fires. UK potters often draw the line by temperature instead: stoneware is fired above {{2192 °F; 1200 °C}}, earthenware below. Mid fire, cone 5–6, falls just either side of that line.
+**Saķepusi** masa ir stiklveida un neporaina; **saķepšana** ir process, kurā masa apdedzināšanas laikā tāda kļūst. Britu keramiķi robežu bieži nosaka pēc temperatūras: akmens masu apdedzina virs {{2192 °F; 1200 °C}}, māla keramiku – zemākā temperatūrā. Vidējas temperatūras apdedzināšana, konusi 5–6, ir turpat abpus šai robežai.
 
-### Coatings and drying
+### Pārklājumi un žāvēšana
 
-**Slip** is clay suspended in water, for casting, joining or decorating. An **engobe** is a slip-like coating, often colored, with more non-clay materials. An **underglaze** is colored slip or oxide decoration, usually covered with a clear glaze.
+**Šlikeris** ir ūdenī suspendēts māls, ko izmanto liešanai, savienošanai vai dekorēšanai. **Angoba** ir šlikerim līdzīgs pārklājums, bieži krāsains, kurā ir vairāk izejvielu, kas nav māls. **Zemglazūra** ir krāsains šlikeris vai oksīdu dekors, ko parasti pārklāj ar caurspīdīgu glazūru.
 
-Unfired ware is **greenware** (sources disagree on whether the word covers all unfired ware or only dry ware). As it dries it becomes **leather-hard**, stiff but slightly damp, the stage for trimming and handles; then **bone dry**, with no free water left, very fragile and ready to fire.
+Neapdedzinātus izstrādājumus sauc par **jēlproduktiem**{{en: greenware}} (avoti nav vienisprātis, vai šis nosaukums attiecas uz visiem neapdedzinātiem izstrādājumiem vai tikai uz izžuvušajiem). Žūstot izstrādājums nonāk **ādas cietībā**: tas ir stingrs, bet vēl nedaudz mitrs, un šajā stadijā to apvirpo un tam piestiprina osas. Pēc tam tas kļūst **pilnīgi izžuvis**: tajā vairs nav brīva ūdens, tas ir ļoti trausls un gatavs apdedzināšanai.
 
-### The two firings
+### Divas apdedzināšanas
 
-The first, lower firing is the **bisque** (UK: **biscuit**), usually cone 08–04 (most often 06–04), about {{1728–1945 °F; 942–1063 °C}}. It leaves ware strong but porous. Digitalfire, a glaze reference site, suggests generally more than 15% porosity, so the bisque draws water out of the glaze as it goes on. A soft bisque (cone 08–06) is more porous; a hard bisque (often cone 04) is sturdier but takes glaze less readily.
+Pirmā, zemākas temperatūras apdedzināšana ir **biskvīta apdedzināšana**{{en: bisque}} (Apvienotajā Karalistē: **biscuit**), parasti līdz konusiem 08–04 (visbiežāk 06–04), apmēram {{1728–1945 °F; 942–1063 °C}}. Pēc tās izstrādājumi ir izturīgi, bet poraini. Digitalfire, glazūru uzziņu vietne, parasti iesaka porainību, kas pārsniedz 15%, lai biskvīts, uzklājot glazūru, uzsūktu no tās ūdeni. Zemas temperatūras biskvīts (konusi 08–06) ir poraināks; augstas temperatūras biskvīts (bieži konuss 04) ir izturīgāks, bet glazūru uzņem sliktāk.
 
-Table: How the bisque changes glazing (Digitalfire)
-Label: How the bisque changes glazing
+Table: Kā biskvīts ietekmē glazēšanu (Digitalfire)
+Label: Kā biskvīts ietekmē glazēšanu
 
-| Bisque                                  | What happens                                                    |
-| --------------------------------------- | --------------------------------------------------------------- |
-| Under-fired, very absorbent             | Glaze goes on too thick, then cracks and crawls                 |
-| Over-fired, dense                       | Dipping and drying take longer                                  |
-| Fired hotter, or held longer at the top | More gas burns off now, so less bubbles through the glaze later |
+| Biskvīts                                                       | Kas notiek                                                                               |
+| -------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| Nepietiekami apdedzināts, ļoti uzsūcošs                        | Glazūra uzklājas pārāk biezā kārtā, pēc tam saplaisā un savelkas{{en: crawling}}         |
+| Pārdedzināts, blīvs                                            | Iemērkšana un žūšana prasa vairāk laika                                                  |
+| Apdedzināts karstāk vai ilgāk noturēts maksimālajā temperatūrā | Vairāk gāzu izdalās jau biskvīta apdedzināšanā, tāpēc vēlāk caur glazūru izburbuļo mazāk |
 
-Potclays, a UK supplier, describes biscuit firing to around {{1000 °C; 1832 °F}}, about cone 06. Reading these sources together, we suggest cone 06–04 for a first bisque: {{1828–1945 °F; 998–1063 °C}} at Orton's medium rate.
+Britu piegādātājs Potclays apraksta biskvīta apdedzināšanu līdz apmēram {{1000 °C; 1832 °F}}, aptuveni konusam 06. Salīdzinot šos avotus, pirmajai biskvīta apdedzināšanai iesakām konusus 06–04: {{1828–1945 °F; 998–1063 °C}}, sildot ar Orton tabulas vidējo ātrumu.
 
-The **glaze firing** (British potters may say **glost** firing) melts the glaze and, for stoneware, matures the clay too. **Once-firing** glazes unfired ware and fires it just once. Digitalfire reports a production case where raw-glazed ware crawled on its rims until a bisque firing cured it, so begin with two firings. [Firing a basic kiln](/guides/firing) gives schedules for both.
+**Glazūras apdedzināšana**{{en: glaze firing}} (britu keramiķi to var saukt par **glost** firing) izkausē glazūru un akmens masai arī ļauj mālam pilnībā saķept. **Vienreizējā apdedzināšanā**{{en: once-firing}} glazē neapdedzinātus izstrādājumus un apdedzina tos tikai vienu reizi. Digitalfire apraksta gadījumu ražošanā, kad uz neapdedzinātiem glazētiem izstrādājumiem glazūra savilkās uz malām, līdz problēmu novērsa biskvīta apdedzināšana, tāpēc sāciet ar divām apdedzināšanām. Ceļvedī [Apdedzināšana vienkāršā krāsnī](/guides/firing) ir programmas abām.
 
 ## Konusi un siltuma iedarbība {#cones}
 
@@ -238,30 +238,30 @@ Label: Biežākie glazūras defekti
 | Notecēšana                        | Glazūra notek uz plaukta                          | Par maz alumīnija oksīda; pārāk bieza kārta, piemēram, kur apliešanas pārklājas; daudz dzelzs                                     | Uzklājiet plānāku kārtu; pievienojiet alumīnija oksīdu; beidziet glazūru krietni virs pamatnes            |
 | Atdzišanas plaisas{{en: dunting}} | Plaisas izstrādājumā no dzesēšanas vai sildīšanas | Ātra dzesēšana kvarca pārvērtības{{en: quartz inversion}} temperatūrā, {{1063 °F; 573 °C}}; nevienmērīgas sienas; slikta saderība | Ap {{1063 °F; 573 °C}} apdedziniet lēni, gan sildot, gan dzesējot; vienmērīgas sienas                     |
 
-## Food safety {#food-safety lang=en}
+## Saskare ar pārtiku {#food-safety}
 
-**Leaching** is metal dissolving out of a fired glaze into food or drink, and a glaze can look perfect and still do it. The legal tests soak the fired piece in an acid solution and measure the lead and cadmium that come out.
+**Izskalošanās**{{en: leaching}} ir metālu izšķīšana no apdedzinātas glazūras{{en: glaze}} ēdienā vai dzērienā, un glazūra var izskatīties nevainojami, bet no tās tomēr var izskaloties metāli. Likumā noteiktajās pārbaudēs apdedzināto izstrādājumu mērcē skābes šķīdumā un mēra, cik daudz svina un kadmija izdalās.
 
-### Lead-free is not the same as food-safe
+### Bezsvina nenozīmē, ka trauks ir piemērots saskarei ar pārtiku
 
-The rules in the US, the EU, the UK and Australia limit the lead and cadmium a fired piece releases, not what the glaze contains. "Lead-free" removes one hazard; it is not a food-safety rating. Other oxides leach too: Glazy warns that high-barium glazes "can leach and are generally not food-safe", Digitalfire says copper "can make a glaze leachable; test it", and Glazy no longer advises lead glazes for functional ware.
+ASV, ES, Apvienotās Karalistes un Austrālijas noteikumi ierobežo svina un kadmija daudzumu, kas izdalās no apdedzināta izstrādājuma, nevis to, ko satur glazūra. “Bezsvina” novērš vienu apdraudējumu, bet tas nav vērtējums par piemērotību saskarei ar pārtiku{{en: food safe}}. Izskaloties var arī citi oksīdi: Glazy brīdina, ka no glazūrām ar augstu bārija saturu “metāli var izskaloties, un tās parasti nav piemērotas saskarei ar pārtiku”, Digitalfire raksta, ka varš “var izraisīt glazūras izskalošanos; pārbaudiet to”, un Glazy vairs neiesaka svina glazūras lietošanas traukiem.
 
-A **liner glaze** is a stable, usually clear or white glaze for surfaces that touch food. In our view, one with no colorant, barium, lead or lithium, that melts fully, does not craze and wears well, is the lower-risk choice. Lower risk is not proof.
+**Iekšpuses glazūra**{{en: liner glaze}} ir stabila, parasti caurspīdīga vai balta glazūra virsmām, kas saskaras ar pārtiku. Mūsuprāt, mazāka riska izvēle ir glazūra bez krāsvielām{{en: colorants}}, bārija, svina vai litija, kas pilnībā izkūst, neveido matplaisas{{en: crazing}} un ir nodilumizturīga. Mazāks risks nav pierādījums.
 
-**Limit formulas** (Digitalfire prefers **target formulas**) give typical unity-formula ranges for stable glazes at a cone: Digitalfire's cone 6 targets put alumina at 0.285–0.64 and silica at 2.4–4.7. They guide you toward sound chemistry but prove nothing; Digitalfire avoids the word "limit" because it suggests glazes inside the ranges "are somehow safe". Glazecalc's tools for changing a recipe say when the new one goes past a recommended limit, such as a lot of boron at cone 6, and what the glaze will likely do.
+**Robežformulas**{{en: limit formulas}} (Digitalfire dod priekšroku nosaukumam **mērķa formulas**{{en: target formulas}}) norāda tipiskās Zēgera formulas{{en: unity formula}} robežas stabilām glazūrām konkrētam konusam{{en: cone}}: Digitalfire mērķa vērtības konusam 6 nosaka alumīnija oksīdu 0,285–0,64 un silīcija dioksīdu 2,4–4,7. Tās palīdz virzīties uz pareizu ķīmisko sastāvu, bet neko nepierāda; Digitalfire izvairās no vārda “limit” (robeža), jo tas liek domāt, ka glazūras šajās robežās “ir kaut kādā veidā drošas”. Lietotnes Glazecalc rīki receptes mainīšanai norāda, kad jaunā recepte pārsniedz ieteicamo robežu, piemēram, ja apdedzināšanai līdz konusam 6 tajā ir daudz bora, un kā glazūra, visticamāk, uzvedīsies.
 
-The legal limits differ by country. The table shows those where you live, in the law's own units; choose another country to compare.
+Likumā noteiktās robežvērtības dažādās valstīs atšķiras. Tabulā redzamas jūsu valsts robežvērtības likumā lietotajās mērvienībās; lai salīdzinātu, izvēlieties citu valsti.
 
 ::food-limits
 
-In the US, decorative ceramic ware that looks usable for food is treated as food ware unless it carries a stick-on label and a permanent notice molded or fired onto its base, such as "Not for Food Use. May Poison Food", or has a hole through the food surface. The EU sets lead and cadmium limits in Directive 84/500/EEC, and the UK keeps the same figures in its own law. From 29 May 2026 the Netherlands, Belgium and Luxembourg allow about 130 to 150 times less lead, and about 15 times less cadmium. Australia sets limits for imported ware; we found no official limit for ware made in Australia or New Zealand.
+ASV dekoratīvus keramikas izstrādājumus, kas šķiet lietojami pārtikai, uzskata par pārtikas izstrādājumiem, izņemot gadījumus, kad tiem ir uzlīme un pastāvīgs paziņojums, kas izveidots vai iededzināts to pamatnē, piemēram, “Not for Food Use. May Poison Food”, vai kad tiem ir caurums cauri virsmai, kas saskartos ar pārtiku. ES svina un kadmija robežvērtības nosaka Padomes Direktīva 84/500/EEK, un Apvienotā Karaliste savos tiesību aktos saglabā tos pašus skaitļus. No 2026. gada 29. maija Nīderlandē, Beļģijā un Luksemburgā atļauts apmēram 130 līdz 150 reižu mazāk svina un apmēram 15 reižu mazāk kadmija. Austrālija nosaka robežvērtības importētiem izstrādājumiem; oficiālu robežvērtību Austrālijā vai Jaunzēlandē ražotiem izstrādājumiem mēs neatradām.
 
-### Testing
+### Pārbaude
 
-The FDA says home swab kits can show leachable lead, but Ceramics New Zealand warns that test pens are not designed for ceramics and give false positives. Treat a positive as a reason to stop using the piece, and a negative as proving nothing. A laboratory leach test of the fired piece (ASTM C738 in the US; EN 1388 or ISO 6486 in Europe) is the real answer.
+FDA raksta, ka mājas pārbaudes komplekti ar tamponiem var uzrādīt svinu, kas var izskaloties, bet Ceramics New Zealand brīdina, ka testa zīmuļi nav paredzēti keramikai un dod kļūdaini pozitīvus rezultātus. Pozitīvu rezultātu uzskatiet par iemeslu pārtraukt izstrādājuma lietošanu, bet negatīvu – par tādu, kas neko nepierāda. Īsto atbildi dod apdedzinātā izstrādājuma metālu izskalošanās laboratorijas pārbaude (ASV – ASTM C738; Eiropā – EN 1388 vai ISO 6486).
 
 > [!WARNING]
-> "Food safe" means this glaze, on this clay, fired to this cone in this kiln and applied this way, releases less than the legal limits. Glazecalc can help you build a stable glaze, and **Replace lead** can rebuild an old lead recipe without lead, but no calculator can certify a pot. Only a test of the fired piece can.
+> “Piemērots saskarei ar pārtiku”{{en: food safe}} nozīmē, ka no šīs glazūras uz šī māla, apdedzinātas līdz šim konusam šajā krāsnī un uzklātas šādā veidā, izdalās mazāk, nekā pieļauj likumā noteiktās robežvērtības. Lietotne Glazecalc var palīdzēt izveidot stabilu glazūru, un poga **Aizstāt svinu** var sastādīt vecu svina recepti no jauna bez svina, bet neviens kalkulators nevar sertificēt trauku. To var tikai apdedzinātā izstrādājuma pārbaude.
 
 ## Relatīvais blīvums un uzklāšana {#application}
 
@@ -298,171 +298,171 @@ Gāzes krāsnī, tās **atmosfēra**, ietekmē to, kāda iznāk glazūra{{en: gl
 
 Katra krāsns, arī elektriskā, izdala izplūdes gāzes un tvaikus, tāpēc vēdiniet to. Kā to darīt, skaidro ceļvedis [Droša jaukšana un ventilācija](/guides/safe-mixing).
 
-## Glossary {#glossary lang=en}
+## Glosārijs {#glossary}
 
-Additive
-: A colorant, opacifier or suspender added on top of a recipe's 100.
+Adatas dūrieni un pūšļainums (pinholing and blistering)
+: Sīki caurumiņi vai krāteri ar asām malām, kur cauri kausējumam izgājusi gāze.
 
-Alumina (Al₂O₃)
-: The main stabilizer: stops running and adds hardness. From clays and feldspars.
+Akmens masa (stoneware)
+: Vidējas līdz augstas temperatūras masa (apmēram konusi 5–10), kas saķep vai gandrīz saķep.
 
-Ball clay
-: A plastic clay with more iron and organic matter than kaolin.
+Alumīnija oksīds, Al₂O₃ (alumina)
+: Galvenais stabilizators: neļauj glazūrai notecēt un piešķir cietību. Nāk no māliem un laukšpatiem.
 
-Batch recipe
-: A glaze's raw materials by weight, usually adding up to 100.
+Atdalīšanas līdzeklis (kiln wash)
+: Karstumizturīgs pārklājums, kas pasargā krāsns plauktus no pilieniem.
 
-Bentonite
-: A very fine clay added at 1–3% to keep glaze from settling.
+Atdzišanas plaisas (dunting)
+: Plaisas izstrādājumā no dzesēšanas vai sildīšanas spriegumiem, bieži kvarca pārvērtības temperatūrā, {{1063 °F; 573 °C}}.
 
-Bisque (UK: biscuit)
-: The first, lower firing, usually cone 08–04 (most often 06–04), leaving ware strong but porous.
+Bentonīts (bentonite)
+: Ļoti smalks māls, ko pievieno 1–3% apmērā, lai glazūra nenosēstos.
 
-Boron (B₂O₃)
-: Formally a glass former but used as a flux; essential from cone 06 to cone 6.
+Biskvīts, biskvīta apdedzināšana (bisque; Apvienotajā Karalistē: biscuit)
+: Pirmā, zemākas temperatūras apdedzināšana, parasti līdz konusiem 08–04 (visbiežāk 06–04); pēc tās izstrādājumi ir izturīgi, bet poraini.
 
-CMC gum
-: A cellulose gum that helps glaze brush on and stick; it burns away.
+Blāvotājs (opacifier)
+: Izejviela, piemēram, cirkons, alvas oksīds vai titāna dioksīds, kas padara glazūru necaurspīdīgu.
 
-Colorant and stain
-: A metal oxide or carbonate that colors glaze; a stain is a factory-made, more stable colorant.
+Bors, B₂O₃ (boron)
+: Formāli stikla veidotājs, bet to izmanto kā kusni; neaizstājams no konusa 06 līdz konusam 6.
 
-Cone
-: A calibrated ceramic pyramid that bends at a set heatwork. A witness cone shows what the pots received.
+CMC, karboksimetilceluloze (CMC gum)
+: Celulozes saistviela, kas palīdz glazūru uzklāt ar otu un pielipt; tā izdeg.
 
-Crawling
-: Glaze pulling back into beads in firing, leaving bare clay.
+Devitrifikācija (devitrification)
+: Kristāli, kas dzesēšanas sākumā izaug no stikla tur, kur tie nav vēlami.
 
-Crazing
-: Fine cracks in a glaze that shrinks more than its body; crackle when wanted.
+Flokulants un deflokulants (flocculant and deflocculant)
+: Piedevas, kas suspensiju sabiezina (Epsoma sāls, etiķis) vai sašķidrina (nātrija silikāts, Darvan).
 
-Devitrification
-: Crystals growing out of the glass early in cooling, where they are not wanted.
+Frite (frit)
+: Rūpnīcā ražots stikls – izkausēts, strauji atdzesēts un samalts –, kas padara šķīstošus vai toksiskus oksīdus nešķīstošus.
 
-Dunting
-: Cracks in a pot from cooling or heating stress, often at quartz inversion, {{1063 °F; 573 °C}}.
+Glazūra (glaze)
+: Stikla kārta, kas apdedzināšanā izkūst, lai noslēgtu un rotātu trauku.
 
-Earthenware
-: A low-fire body (about cone 06–02) that stays porous.
+Glazūras apdedzināšana (glaze firing; Apvienotajā Karalistē: glost firing)
+: Apdedzināšana, kurā izkūst glazūra.
 
-Feldspar
-: A mineral supplying alkali flux with alumina and silica: potash, soda or nepheline syenite.
+Glazūras atšķelšanās (shivering)
+: Glazūra atšķeļas no šķautnēm, jo ir pārāk lielā spiedes spriegumā; bīstami uz lietošanas traukiem.
 
-Flocculant and deflocculant
-: Additives that gel a slurry (Epsom salts, vinegar) or thin it (sodium silicate, Darvan).
+Glazūras savilkšanās (crawling)
+: Glazūra apdedzināšanā savelkas pilienos, atsedzot kailu mālu.
 
-Flux
-: An oxide that lowers the melting temperature of silica.
+Glazūras un masas saderība (glaze fit)
+: Cik labi sakrīt glazūras un masas termiskā izplešanās; ja saderība ir laba, glazūra ir nedaudz saspiesta.
 
-Food safe
-: In law, releasing less lead and cadmium than the limits in an acid test. Not the same as lead-free.
+Iekšpuses glazūra (liner glaze)
+: Stabila, parasti caurspīdīga vai balta glazūra virsmām, kas saskaras ar pārtiku.
 
-Frit
-: Factory-made glass, melted, quenched and ground, that makes soluble or toxic oxides insoluble.
+Izskalošanās (leaching)
+: Metālu izšķīšana no apdedzinātas glazūras ēdienā vai dzērienā.
 
-Glass former
-: The oxide that builds the glass, usually silica.
+Kaolīns (kaolin; Apvienotajā Karalistē: china clay)
+: Tīrs balts māls, kas dod alumīnija oksīdu un silīcija dioksīdu; palīdz noturēt glazūru suspensijā. Austrālijā: Eckalite.
 
-Glaze
-: A coat of glass that melts in firing to seal and decorate a pot.
+Karsēšanas zudumi, LOI (loss on ignition)
+: Masa, kas apdedzināšanā zūd, izdaloties ūdenim, oglekļa dioksīdam, organiskajām vielām vai sēram.
 
-Glaze firing (UK: glost firing)
-: The firing that melts the glaze.
+Konuss (cone)
+: Kalibrēta keramikas piramīda, kas saliecas, saņēmusi noteiktu siltuma iedarbību. Kontrolkonuss parāda, ko saņēma izstrādājumi.
 
-Glaze fit
-: How well glaze and body expansion match; a good fit leaves the glaze slightly compressed.
+Krāsviela un keramikas pigments (colorant and stain)
+: Metāla oksīds vai karbonāts, kas iekrāso glazūru; keramikas pigments ir rūpnīcā ražota, stabilāka krāsviela.
 
-Gloss, satin and matte
-: Reflective and smooth; a subdued sheen; dull.
+Krīts (whiting)
+: Kalcija karbonāts, galvenais kalcija kusnis; apdedzināšanā zaudē vairāk nekā 40% savas masas. Vāciski: Kreide.
 
-Greenware
-: Unfired ware: leather-hard when stiff but damp, bone dry when no free water is left.
+Kušņi (flux)
+: Oksīdi, kas pazemina silīcija dioksīda kušanas temperatūru.
 
-Heatwork
-: The combined effect of temperature and time in a kiln; what cones measure.
+Laukšpats (feldspar)
+: Minerāls, kas dod sārmu kušņus kopā ar alumīnija oksīdu un silīcija dioksīdu: kālija laukšpats, nātrija laukšpats vai nefelīna sienīts.
 
-Kaolin (UK: china clay)
-: A pure white clay supplying alumina and silica; keeps glaze suspended. Australia: Eckalite.
+Matplaisas (crazing)
+: Smalkas plaisas glazūrā, kas saraujas vairāk nekā tās masa; ja tās ir vēlamas, tās sauc par kraklē.
 
-Kiln wash
-: A heat-resisting coating that protects kiln shelves from drips.
+Māla keramika (earthenware)
+: Zemas temperatūras masa (apmēram konusi 06–02), kas paliek poraina.
 
-Leaching
-: Metals dissolving out of a fired glaze into food or drink.
+Neapdedzināts izstrādājums, jēlprodukts (greenware)
+: Neapdedzināti izstrādājumi: ādas cietībā, kad tie ir stingri, bet mitri, un pilnīgi izžuvuši, kad brīva ūdens vairs nav.
 
-Limit formula (target formula)
-: Typical unity-formula ranges for stable glazes at a cone; a guide, not a guarantee.
+Oksidējošā un reducējošā apdedzināšana (oxidation and reduction)
+: Apdedzināšana, kad skābekļa ir daudz (elektriskās krāsnis) vai kad skābeklis ir ierobežots (parasti gāzes vai malkas krāsnis).
 
-Line blend
-: Tests stepping one ingredient between two amounts. A triaxial blend varies three on a grid.
+Oksīds (oxide)
+: Elementa savienojums ar skābekli; oksīdu analīzē tie uzskaitīti masas procentos.
 
-Liner glaze
-: A stable, usually clear or white glaze for surfaces that touch food.
+Piedeva (additive)
+: Krāsviela, blāvotājs vai pretnogulšņu līdzeklis, ko pievieno papildus receptes 100.
 
-LOI (loss on ignition)
-: Weight lost in firing as water, carbon dioxide, organic matter or sulfur.
+Piemērots saskarei ar pārtiku (food safe)
+: Juridiski: skābes pārbaudē izdala mazāk svina un kadmija, nekā pieļauj robežvērtības. Nav tas pats, kas bezsvina.
 
-Once-firing (single firing)
-: Glazing unfired ware and firing it only once.
+Plastiskais māls (ball clay)
+: Plastisks māls ar vairāk dzelzs un organisko vielu nekā kaolīnā.
 
-Opacifier
-: A material, such as zircon, tin oxide or titanium dioxide, that makes glaze opaque.
+Porcelāns (porcelain)
+: Balta, kaolīnu bagāta augstas temperatūras masa, bieži gaismcaurlaidīga.
 
-Oxidation and reduction
-: Firing with plenty of oxygen (electric kilns), or with oxygen restricted (usually gas or wood).
+Provju rinda (line blend)
+: Proves, kurās vienas izejvielas daudzums pakāpeniski mainās starp diviem daudzumiem. Trīsstūra provju sērijā režģī maina trīs izejvielas.
 
-Oxide
-: A compound of an element with oxygen; an oxide analysis lists them by weight percent.
+R₂O un RO
+: Sārmu kušņi (Na₂O, K₂O, Li₂O) un sārmzemju kušņi (CaO, MgO, BaO, SrO, kopā ar ZnO).
 
-Pinholing and blistering
-: Small holes, or sharp-edged craters, where gas escaped through the melt.
+Recepte (batch recipe)
+: Glazūras izejvielas pēc masas, parasti kopā 100.
 
-Porcelain
-: A white, kaolin-rich, high-fire body, often translucent.
+Relatīvais blīvums, rel. blīvums (specific gravity, SG)
+: Suspensijas masa, salīdzinot ar tāda paša tilpuma ūdens masu. Vecākās britu grāmatās: pintes svars.
 
-R₂O and RO
-: The alkali fluxes (Na₂O, K₂O, Li₂O) and alkaline-earth fluxes (CaO, MgO, BaO, SrO, with ZnO).
+Robežformula, mērķa formula (limit formula, target formula)
+: Tipiskās Zēgera formulas robežas stabilām glazūrām konkrētam konusam; orientieris, nevis garantija.
 
-Shivering
-: Glaze flaking off edges because it is over-compressed; a hazard on functional ware.
+Saķepšana (vitrification)
+: Masa apdedzināšanā kļūst stiklveida un neporaina.
 
-Silica (SiO₂)
-: The glass former; also called flint or quartz.
+Silīcija dioksīda un alumīnija oksīda attiecība (silica to alumina ratio)
+: Silīcija dioksīds, dalīts ar alumīnija oksīdu Zēgera formulā: augstāka attiecība tiecas uz spīdīgu virsmu, zemāka – uz matētu.
 
-Silica to alumina ratio
-: Silica divided by alumina in the unity formula: higher tends to gloss, lower to matte.
+Silīcija dioksīds, SiO₂ (silica)
+: Stikla veidotājs; izejvielu sauc arī par kramu vai kvarcu.
 
-Slip and engobe
-: Clay in water; an engobe is a slip-like coating with more non-clay material.
+Siltuma iedarbība (heatwork)
+: Temperatūras un laika kopējā iedarbība krāsnī; to mēra konusi.
 
-Specific gravity (SG)
-: A slurry's weight compared with the same volume of water. Older UK: pint weight.
+Spīdīga, zīdaini matēta un matēta virsma (gloss, satin and matte)
+: Atstaro gaismu un ir gluda; ar maigu spīdumu; nespodra.
 
-Stabilizer
-: An oxide, mainly alumina, that stiffens the melt and adds durability.
+Stabilizators (stabilizer)
+: Oksīds, galvenokārt alumīnija oksīds, kas padara kausējumu stigrāku un palielina izturību.
 
-Stoneware
-: A mid- to high-fire body (about cone 5–10) that becomes vitreous or nearly so.
+Stikla veidotājs (glass former)
+: Oksīds, kas veido stiklu, parasti silīcija dioksīds.
 
-Thixotropy
-: Flowing when stirred, setting into a soft gel when still.
+Šlikeris un angoba (slip and engobe)
+: Māls ūdenī; angoba ir šlikerim līdzīgs pārklājums ar vairāk izejvielām, kas nav māls.
 
-Underglaze
-: Colored slip or oxide decoration, usually under a clear glaze.
+Tiksotropija (thixotropy)
+: Spēja plūst, kad maisa, un sastingt mīkstā želejā, kad ir mierā.
 
-Unity molecular formula (UMF, Seger formula)
-: A glaze's oxides as molecule counts, scaled so the fluxes add up to 1.
+Vaska emulsija (wax resist)
+: Vasks, ko uzklāj tur, kur nedrīkst nokļūt glazūra, parasti uz pamatnes.
 
-Vitrification
-: A body becoming glassy and non-porous in firing.
+Vienreizējā apdedzināšana (once-firing, single firing)
+: Neapdedzinātu izstrādājumu glazēšana un apdedzināšana tikai vienu reizi.
 
-Wax resist
-: Wax painted where glaze must not go, usually the foot.
+Zemglazūra (underglaze)
+: Krāsains šlikeris vai oksīdu dekors, parasti zem caurspīdīgas glazūras.
 
-Whiting
-: Calcium carbonate, the main calcium flux; loses over 40% of its weight in firing. German: Kreide.
+Zēgera formula, UMF (unity molecular formula, Seger formula)
+: Glazūras oksīdi kā molekulu skaits, pārrēķināti tā, lai kušņu summa būtu 1.
 
-## Sources {#sources lang=en}
+## Avoti {#sources}
 
 - [Glazy Help: Glaze](https://help.glazy.org/concepts/glaze)
 - [Glazy Help: Oxides](https://help.glazy.org/concepts/oxides)
@@ -472,7 +472,7 @@ Whiting
 - [Glazy Help: Firing](https://help.glazy.org/concepts/firing)
 - [Glazy Help: Defects](https://help.glazy.org/concepts/defects)
 - [Glazy Help: Specific gravity](https://help.glazy.org/testing/specific-gravity)
-- [Orton Ceramic Foundation: Pyrometric cone chart, °F (via The Ceramic Shop)](https://www.theceramicshop.com/technical_info/Cones/Orton-Cone-Chart-F-022-14.pdf)
+- [Orton Ceramic Foundation: Pyrometric cone chart, °F (vietnē The Ceramic Shop)](https://www.theceramicshop.com/technical_info/Cones/Orton-Cone-Chart-F-022-14.pdf)
 - [Digitalfire: Bisque](https://digitalfire.com/glossary/bisque)
 - [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Unity molecular formula](https://digitalfire.com/glossary/unity+molecular+formula)
@@ -488,6 +488,6 @@ Whiting
 - [Ceramic Arts Network: 8 ways to apply glaze (Robin Hopper)](https://ceramicartsnetwork.org/pottery-making-illustrated/pottery-making-illustrated-article/8-Ways-to-Apply-Glaze)
 - [Glendale Community College: Glaze color](https://gcc.glendale.edu/ceramics/glazecolor.html)
 - [Potclays: The difference between stoneware and earthenware](https://www.potclays.co.uk/clay-questions/difference-stoneware-earthenware)
-- [US FDA: Compliance Policy Guide Sec. 545.450, Pottery (ceramics), lead contamination](https://www.fda.gov/media/71764/download)
+- [ASV FDA: Compliance Policy Guide Sec. 545.450, Pottery (ceramics), lead contamination](https://www.fda.gov/media/71764/download)
 - [EUR-Lex: Council Directive 84/500/EEC on ceramic articles in contact with food](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:31984L0500)
 - [eCFR: 21 CFR 109.16, Ornamental and decorative ceramicware](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-109/subpart-A/section-109.16)

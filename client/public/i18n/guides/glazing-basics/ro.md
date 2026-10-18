@@ -18,40 +18,40 @@ O rețetă enumeră materii prime, cum ar fi feldspatul{{en: feldspar}}, carbona
 > [!NOTE]
 > Un mod de a ține minte: silicea este sticla, fondanții o lasă să se topească la o temperatură pe care cuptorul o poate atinge, iar alumina o îngroașă, ca să rămână acolo unde ați pus-o.
 
-## Clay, coatings and the two firings {#clay-and-firings lang=en}
+## Argila, straturile de acoperire și cele două arderi {#clay-and-firings}
 
-### Clay bodies
+### Pastele ceramice
 
-The **clay body** is the clay a pot is made of. There are three main kinds.
+**Pasta ceramică**{{en: clay body}} este argila din care este făcut un vas. Există trei tipuri principale.
 
-- **Earthenware**: a low-fire body, about cone 06–02, that stays porous. Often red or buff, it needs a glaze to hold water.
-- **Stoneware**: a mid- to high-fire body, about cone 5–10, that becomes vitreous or nearly so.
-- **Porcelain**: a white, high-fire body rich in kaolin, often translucent.
+- **Faianța**{{en: earthenware}}: o pastă de temperatură joasă, arsă cam la conul 06–02, care rămâne poroasă. Adesea roșie sau bej, are nevoie de glazură ca să țină apa.
+- **Gresia**{{en: stoneware}}: o pastă de temperatură medie spre înaltă, arsă cam la conul 5–10, care devine vitroasă sau aproape vitroasă.
+- **Porțelanul**: o pastă albă, de temperatură înaltă, bogată în caolin, adesea translucidă.
 
-**Vitreous** means glassy and non-porous; **vitrification** is a body becoming so as it fires. UK potters often draw the line by temperature instead: stoneware is fired above {{2192 °F; 1200 °C}}, earthenware below. Mid fire, cone 5–6, falls just either side of that line.
+**Vitros** înseamnă sticlos și neporos; **vitrificarea** este procesul prin care o pastă devine astfel în timpul arderii. Ceramiștii din Regatul Unit trasează adesea granița după temperatură: gresia se arde peste {{2192 °F; 1200 °C}}, faianța sub această temperatură. Temperatura medie, conul 5–6, se află chiar de o parte și de alta a acestei granițe.
 
-### Coatings and drying
+### Straturile de acoperire și uscarea
 
-**Slip** is clay suspended in water, for casting, joining or decorating. An **engobe** is a slip-like coating, often colored, with more non-clay materials. An **underglaze** is colored slip or oxide decoration, usually covered with a clear glaze.
+**Barbotina** este argilă în suspensie în apă, pentru turnare în forme, lipire sau decorare. O **angobă** este un strat asemănător barbotinei, adesea colorat, cu mai multe materii prime neargiloase. Un **underglaze** (culoare sub glazură) este o barbotină colorată sau un decor cu oxizi, acoperit de obicei cu o glazură transparentă.
 
-Unfired ware is **greenware** (sources disagree on whether the word covers all unfired ware or only dry ware). As it dries it becomes **leather-hard**, stiff but slightly damp, the stage for trimming and handles; then **bone dry**, with no free water left, very fragile and ready to fire.
+Piesele nearse sunt **piese crude**{{en: greenware}} (sursele nu sunt de acord dacă termenul acoperă toate piesele nearse sau doar pe cele uscate). Pe măsură ce se usucă, devin **semiuscate** („în stare de piele”): rigide, dar încă ușor umede, etapa pentru finisare și pentru atașarea toartelor; apoi **complet uscate**, fără apă liberă, foarte fragile și gata de ardere.
 
-### The two firings
+### Cele două arderi
 
-The first, lower firing is the **bisque** (UK: **biscuit**), usually cone 08–04 (most often 06–04), about {{1728–1945 °F; 942–1063 °C}}. It leaves ware strong but porous. Digitalfire, a glaze reference site, suggests generally more than 15% porosity, so the bisque draws water out of the glaze as it goes on. A soft bisque (cone 08–06) is more porous; a hard bisque (often cone 04) is sturdier but takes glaze less readily.
+Prima ardere, la temperatură mai joasă, este **arderea biscuit**{{en: bisque}} (în engleza britanică: **biscuit**), de obicei la conul 08–04 (cel mai adesea 06–04), cam {{1728–1945 °F; 942–1063 °C}}. După ea, piesele sunt rezistente, dar poroase. Digitalfire, un site de referință despre glazuri, recomandă în general o porozitate de peste 15 %, pentru ca biscuitul să absoarbă apa din glazură în timp ce aceasta se aplică. Un biscuit ars la temperatură joasă (conul 08–06) este mai poros; un biscuit ars la temperatură înaltă (adesea conul 04) este mai rezistent, dar preia glazura mai greu.
 
-Table: How the bisque changes glazing (Digitalfire)
-Label: How the bisque changes glazing
+Table: Cum influențează biscuitul glazurarea (Digitalfire)
+Label: Cum influențează biscuitul glazurarea
 
-| Bisque                                  | What happens                                                    |
-| --------------------------------------- | --------------------------------------------------------------- |
-| Under-fired, very absorbent             | Glaze goes on too thick, then cracks and crawls                 |
-| Over-fired, dense                       | Dipping and drying take longer                                  |
-| Fired hotter, or held longer at the top | More gas burns off now, so less bubbles through the glaze later |
+| Biscuitul                                                                 | Ce se întâmplă                                                                                |
+| ------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| Ars insuficient, foarte absorbant                                         | Glazura se depune prea groasă, apoi crapă și se retrage                                       |
+| Ars excesiv, dens                                                         | Imersia și uscarea durează mai mult                                                           |
+| Ars la temperatură mai înaltă sau menținut mai mult la temperatura maximă | Mai multe gaze se degajă acum, deci mai puține trec mai târziu prin glazură sub formă de bule |
 
-Potclays, a UK supplier, describes biscuit firing to around {{1000 °C; 1832 °F}}, about cone 06. Reading these sources together, we suggest cone 06–04 for a first bisque: {{1828–1945 °F; 998–1063 °C}} at Orton's medium rate.
+Potclays, un furnizor britanic, descrie arderea biscuit la aproximativ {{1000 °C; 1832 °F}}, cam conul 06. Citind aceste surse împreună, vă sugerăm conul 06–04 pentru o primă ardere biscuit: {{1828–1945 °F; 998–1063 °C}} la rata medie de încălzire din tabelul Orton.
 
-The **glaze firing** (British potters may say **glost** firing) melts the glaze and, for stoneware, matures the clay too. **Once-firing** glazes unfired ware and fires it just once. Digitalfire reports a production case where raw-glazed ware crawled on its rims until a bisque firing cured it, so begin with two firings. [Firing a basic kiln](/guides/firing) gives schedules for both.
+**Arderea de glazură**{{en: glaze firing}} (ceramiștii britanici îi pot spune **glost firing**) topește glazura și, în cazul gresiei, vitrifică totodată argila. **Monoarderea**{{en: once-firing}} înseamnă glazurarea pieselor nearse și arderea lor o singură dată. Digitalfire relatează un caz din producție în care, pe piesele crude glazurate, glazura se retrăgea pe buze până când o ardere biscuit a rezolvat problema, așa că începeți cu două arderi. Ghidul [Arderea într-un cuptor simplu](/guides/firing) oferă programe de ardere pentru amândouă.
 
 ## Conurile și lucrul termic {#cones}
 
@@ -238,30 +238,30 @@ Label: Defecte obișnuite ale glazurii
 | Curgere{{en: running}}              | Glazura curge pe placă                                    | Prea puțină alumină; strat prea gros, ca acolo unde turnările se suprapun; mult fier                                         | Aplicați un strat mai subțire; adăugați alumină; țineți glazura la bună distanță deasupra piciorului                |
 | Crăpare la răcire{{en: dunting}}    | Fisuri în vas din cauza răcirii sau a încălzirii          | Răcire rapidă la transformarea cuarțului{{en: quartz inversion}}, {{1063 °F; 573 °C}}; pereți inegali; compatibilitate slabă | Ardeți lent în jurul temperaturii de {{1063 °F; 573 °C}}, la încălzire și la răcire; pereți uniformi                |
 
-## Food safety {#food-safety lang=en}
+## Siguranța alimentară {#food-safety}
 
-**Leaching** is metal dissolving out of a fired glaze into food or drink, and a glaze can look perfect and still do it. The legal tests soak the fired piece in an acid solution and measure the lead and cadmium that come out.
+**Migrarea metalelor**{{en: leaching}} este dizolvarea metalului dintr-o glazură arsă în alimente sau băuturi, iar o glazură poate arăta perfect și totuși să cedeze metale. Testele prevăzute de lege țin piesa arsă într-o soluție acidă și măsoară plumbul și cadmiul eliberate.
 
-### Lead-free is not the same as food-safe
+### „Fără plumb” nu înseamnă „potrivit pentru contact alimentar”
 
-The rules in the US, the EU, the UK and Australia limit the lead and cadmium a fired piece releases, not what the glaze contains. "Lead-free" removes one hazard; it is not a food-safety rating. Other oxides leach too: Glazy warns that high-barium glazes "can leach and are generally not food-safe", Digitalfire says copper "can make a glaze leachable; test it", and Glazy no longer advises lead glazes for functional ware.
+Regulile din SUA, UE, Regatul Unit și Australia limitează plumbul și cadmiul pe care le eliberează o piesă arsă, nu ceea ce conține glazura. „Fără plumb” elimină un pericol; nu este o evaluare a siguranței alimentare. Și alți oxizi migrează: Glazy avertizează că glazurile bogate în bariu „pot ceda metale și, în general, nu sunt potrivite pentru contact alimentar”, Digitalfire spune că cuprul „poate face o glazură să cedeze metale; testați-o”, iar Glazy nu mai recomandă glazurile cu plumb pentru obiectele utilitare.
 
-A **liner glaze** is a stable, usually clear or white glaze for surfaces that touch food. In our view, one with no colorant, barium, lead or lithium, that melts fully, does not craze and wears well, is the lower-risk choice. Lower risk is not proof.
+O **glazură pentru interior**{{en: liner glaze}} este o glazură stabilă, de obicei transparentă sau albă, pentru suprafețele care ating alimentele. În opinia noastră, una fără colorant, bariu, plumb sau litiu, care se topește complet, nu fisurează și rezistă bine la uzură este alegerea cu risc mai mic. Un risc mai mic nu este o dovadă.
 
-**Limit formulas** (Digitalfire prefers **target formulas**) give typical unity-formula ranges for stable glazes at a cone: Digitalfire's cone 6 targets put alumina at 0.285–0.64 and silica at 2.4–4.7. They guide you toward sound chemistry but prove nothing; Digitalfire avoids the word "limit" because it suggests glazes inside the ranges "are somehow safe". Glazecalc's tools for changing a recipe say when the new one goes past a recommended limit, such as a lot of boron at cone 6, and what the glaze will likely do.
+**Formulele-limită**{{en: limit formulas}} (Digitalfire preferă **formule-țintă**{{en: target formulas}}) dau intervale tipice ale formulei Seger pentru glazurile stabile la un anumit con: valorile-țintă ale Digitalfire pentru conul 6 pun alumina la 0,285–0,64 și silicea la 2,4–4,7. Ele vă îndrumă spre o chimie solidă, dar nu dovedesc nimic; Digitalfire evită cuvântul „limită”, pentru că sugerează că glazurile din interiorul intervalelor „sunt cumva sigure”. Instrumentele din Glazecalc pentru modificarea unei rețete vă spun când noua rețetă depășește o limită recomandată, cum ar fi mult bor la conul 6, și ce va face probabil glazura.
 
-The legal limits differ by country. The table shows those where you live, in the law's own units; choose another country to compare.
+Limitele legale diferă de la o țară la alta. Tabelul arată limitele din țara în care locuiți, în unitățile legii respective; alegeți altă țară pentru comparație.
 
 ::food-limits
 
-In the US, decorative ceramic ware that looks usable for food is treated as food ware unless it carries a stick-on label and a permanent notice molded or fired onto its base, such as "Not for Food Use. May Poison Food", or has a hole through the food surface. The EU sets lead and cadmium limits in Directive 84/500/EEC, and the UK keeps the same figures in its own law. From 29 May 2026 the Netherlands, Belgium and Luxembourg allow about 130 to 150 times less lead, and about 15 times less cadmium. Australia sets limits for imported ware; we found no official limit for ware made in Australia or New Zealand.
+În SUA, piesele ceramice decorative care par utilizabile pentru alimente sunt tratate ca vase pentru alimente, cu excepția cazului în care poartă o etichetă autocolantă și o mențiune permanentă modelată în relief sau arsă pe baza lor, de exemplu „Not for Food Use. May Poison Food” (nu se folosește pentru alimente; poate otrăvi alimentele), sau au o gaură prin suprafața care vine în contact cu alimentele. UE stabilește limite pentru plumb și cadmiu în Directiva 84/500/CEE, iar Regatul Unit păstrează aceleași valori în propria legislație. De la 29 mai 2026, Țările de Jos, Belgia și Luxemburg permit de aproximativ 130 până la 150 de ori mai puțin plumb și de aproximativ 15 ori mai puțin cadmiu. Australia stabilește limite pentru piesele importate; nu am găsit nicio limită oficială pentru piesele fabricate în Australia sau în Noua Zeelandă.
 
-### Testing
+### Testarea
 
-The FDA says home swab kits can show leachable lead, but Ceramics New Zealand warns that test pens are not designed for ceramics and give false positives. Treat a positive as a reason to stop using the piece, and a negative as proving nothing. A laboratory leach test of the fired piece (ASTM C738 in the US; EN 1388 or ISO 6486 in Europe) is the real answer.
+FDA spune că trusele de testare cu tampon, pentru uz casnic, pot arăta plumbul care poate migra în alimente, dar Ceramics New Zealand avertizează că creioanele de testare nu sunt concepute pentru ceramică și dau rezultate fals pozitive. Tratați un rezultat pozitiv ca pe un motiv să nu mai folosiți piesa, iar unul negativ ca pe un rezultat care nu dovedește nimic. Un test de laborator privind migrarea metalelor{{en: leach test}} din piesa arsă (ASTM C738 în SUA; EN 1388 sau ISO 6486 în Europa) este adevăratul răspuns.
 
 > [!WARNING]
-> "Food safe" means this glaze, on this clay, fired to this cone in this kiln and applied this way, releases less than the legal limits. Glazecalc can help you build a stable glaze, and **Replace lead** can rebuild an old lead recipe without lead, but no calculator can certify a pot. Only a test of the fired piece can.
+> „Potrivit pentru contact alimentar”{{en: food safe}} înseamnă că această glazură, pe această argilă, arsă la acest con, în acest cuptor și aplicată în acest fel, eliberează mai puțin decât permit limitele legale. Glazecalc vă poate ajuta să construiți o glazură stabilă, iar funcția **Înlocuiți plumbul** poate reface fără plumb o rețetă veche cu plumb, dar niciun calculator nu poate certifica un vas. Doar un test al piesei arse poate face asta.
 
 ## Greutatea specifică și aplicarea {#application}
 
@@ -298,171 +298,171 @@ Gazele din cuptor, adică **atmosfera** lui, schimbă felul în care ies glazuri
 
 Orice cuptor, inclusiv cele electrice, degajă gaze și vapori de ardere, așa că aerisiți-l. Ghidul [Prepararea în siguranță și ventilația](/guides/safe-mixing) explică cum.
 
-## Glossary {#glossary lang=en}
+## Glosar {#glossary}
 
-Additive
-: A colorant, opacifier or suspender added on top of a recipe's 100.
+Aditiv (additive)
+: Un colorant, un opacifiant sau un agent de suspensie adăugat peste cei 100 ai unei rețete.
 
-Alumina (Al₂O₃)
-: The main stabilizer: stops running and adds hardness. From clays and feldspars.
+Alumină, Al₂O₃ (alumina)
+: Principalul stabilizator: împiedică curgerea și adaugă duritate. Provine din argile și feldspați.
 
-Ball clay
-: A plastic clay with more iron and organic matter than kaolin.
+Ardere biscuit (bisque; în engleza britanică: biscuit)
+: Prima ardere, la temperatură mai joasă, de obicei la conul 08–04 (cel mai adesea 06–04), după care piesele sunt rezistente, dar poroase.
 
-Batch recipe
-: A glaze's raw materials by weight, usually adding up to 100.
+Ardere de glazură (glaze firing; în engleza britanică: glost firing)
+: Arderea care topește glazura.
 
-Bentonite
-: A very fine clay added at 1–3% to keep glaze from settling.
+Ardere oxidantă și reducătoare (oxidation and reduction)
+: Arderea cu oxigen din belșug (cuptoarele electrice) sau cu oxigen limitat (de obicei cu gaz sau cu lemne).
 
-Bisque (UK: biscuit)
-: The first, lower firing, usually cone 08–04 (most often 06–04), leaving ware strong but porous.
+Argilă ball clay
+: O argilă plastică, cu mai mult fier și mai multe materii organice decât caolinul.
 
-Boron (B₂O₃)
-: Formally a glass former but used as a flux; essential from cone 06 to cone 6.
+Barbotină și angobă (slip and engobe)
+: Argilă în apă; o angobă este un strat asemănător barbotinei, cu mai multe materii prime neargiloase.
 
-CMC gum
-: A cellulose gum that helps glaze brush on and stick; it burns away.
+Bentonită (bentonite)
+: O argilă foarte fină, adăugată în proporție de 1–3 %, care împiedică sedimentarea glazurii.
 
-Colorant and stain
-: A metal oxide or carbonate that colors glaze; a stain is a factory-made, more stable colorant.
+Bor, B₂O₃ (boron)
+: Formal un formator de sticlă, dar folosit ca fondant; indispensabil de la conul 06 la conul 6.
 
-Cone
-: A calibrated ceramic pyramid that bends at a set heatwork. A witness cone shows what the pots received.
+Caolin (kaolin; în engleza britanică: china clay)
+: O argilă albă, pură, care aduce alumină și silice; menține glazura în suspensie. În Australia: Eckalite.
 
-Crawling
-: Glaze pulling back into beads in firing, leaving bare clay.
+Carbonat de calciu, cretă (whiting)
+: Principalul fondant de calciu; pierde peste 40 % din masă la ardere. În germană: Kreide.
 
-Crazing
-: Fine cracks in a glaze that shrinks more than its body; crackle when wanted.
+Ceară de protecție (wax resist)
+: Ceară aplicată cu pensula acolo unde glazura nu trebuie să ajungă, de obicei pe picior.
 
-Devitrification
-: Crystals growing out of the glass early in cooling, where they are not wanted.
+CMC, carboximetilceluloză (CMC gum)
+: Un liant din celuloză care ajută glazura să se întindă cu pensula și să adere; arde complet.
 
-Dunting
-: Cracks in a pot from cooling or heating stress, often at quartz inversion, {{1063 °F; 573 °C}}.
+Colorant și pigment ceramic (colorant and stain)
+: Un oxid sau un carbonat metalic care colorează glazura; un pigment ceramic este un colorant fabricat industrial, mai stabil.
 
-Earthenware
-: A low-fire body (about cone 06–02) that stays porous.
+Compatibilitatea glazurii cu ciobul (glaze fit)
+: Cât de bine se potrivesc dilatarea glazurii și cea a ciobului; o compatibilitate bună lasă glazura ușor comprimată.
 
-Feldspar
-: A mineral supplying alkali flux with alumina and silica: potash, soda or nepheline syenite.
+Con (cone)
+: O piramidă ceramică calibrată care se îndoaie la un anumit lucru termic. Un con martor arată ce au primit piesele.
 
-Flocculant and deflocculant
-: Additives that gel a slurry (Epsom salts, vinegar) or thin it (sodium silicate, Darvan).
+Crăpare la răcire (dunting)
+: Fisuri într-un vas din cauza tensiunilor la răcire sau la încălzire, adesea la transformarea cuarțului, {{1063 °F; 573 °C}}.
 
-Flux
-: An oxide that lowers the melting temperature of silica.
+Devitrifiere (devitrification)
+: Cristale care cresc din sticlă la începutul răcirii, acolo unde nu sunt dorite.
 
-Food safe
-: In law, releasing less lead and cadmium than the limits in an acid test. Not the same as lead-free.
+Exfoliere (shivering)
+: Glazura sare în așchii de pe muchii pentru că este prea comprimată; un pericol pe obiectele utilitare.
 
-Frit
-: Factory-made glass, melted, quenched and ground, that makes soluble or toxic oxides insoluble.
+Faianță (earthenware)
+: O pastă de temperatură joasă (arsă cam la conul 06–02) care rămâne poroasă.
 
-Glass former
-: The oxide that builds the glass, usually silica.
+Feldspat (feldspar)
+: Un mineral care aduce un fondant alcalin împreună cu alumină și silice: potasic, sodic sau nefelin-sienit.
 
-Glaze
-: A coat of glass that melts in firing to seal and decorate a pot.
+Fisurare (crazing)
+: Fisuri fine într-o glazură care se contractă mai mult decât ciobul; craquelé când sunt dorite.
 
-Glaze firing (UK: glost firing)
-: The firing that melts the glaze.
+Floculant și defloculant (flocculant and deflocculant)
+: Aditivi care gelifică glazura preparată (sare amară, oțet) sau o fluidifică (silicat de sodiu, Darvan).
 
-Glaze fit
-: How well glaze and body expansion match; a good fit leaves the glaze slightly compressed.
+Fondant (flux)
+: Un oxid care coboară temperatura de topire a silicei.
 
-Gloss, satin and matte
-: Reflective and smooth; a subdued sheen; dull.
+Formator de sticlă (glass former)
+: Oxidul care construiește sticla, de obicei silicea.
 
-Greenware
-: Unfired ware: leather-hard when stiff but damp, bone dry when no free water is left.
+Formula Seger, UMF (unity molecular formula, Seger formula)
+: Oxizii unei glazuri ca numere de molecule, recalculați astfel încât fondanții să însumeze 1.
 
-Heatwork
-: The combined effect of temperature and time in a kiln; what cones measure.
+Formulă-limită, formulă-țintă (limit formula, target formula)
+: Intervale tipice ale formulei Seger pentru glazurile stabile la un anumit con; un ghid, nu o garanție.
 
-Kaolin (UK: china clay)
-: A pure white clay supplying alumina and silica; keeps glaze suspended. Australia: Eckalite.
+Frită (frit)
+: Sticlă fabricată industrial, topită, răcită brusc și măcinată, care face insolubili oxizii solubili sau toxici.
 
-Kiln wash
-: A heat-resisting coating that protects kiln shelves from drips.
+Glazură (glaze)
+: Un strat de sticlă care se topește în timpul arderii ca să sigileze și să decoreze un vas.
 
-Leaching
-: Metals dissolving out of a fired glaze into food or drink.
+Glazură pentru interior (liner glaze)
+: O glazură stabilă, de obicei transparentă sau albă, pentru suprafețele care ating alimentele.
 
-Limit formula (target formula)
-: Typical unity-formula ranges for stable glazes at a cone; a guide, not a guarantee.
+Gresie (stoneware)
+: O pastă de temperatură medie spre înaltă (arsă cam la conul 5–10) care devine vitroasă sau aproape vitroasă.
 
-Line blend
-: Tests stepping one ingredient between two amounts. A triaxial blend varies three on a grid.
+Greutate specifică (specific gravity, SG)
+: Masa unei glazuri preparate comparată cu cea a aceluiași volum de apă. În cărțile britanice mai vechi: greutatea pintei (pint weight).
 
-Liner glaze
-: A stable, usually clear or white glaze for surfaces that touch food.
+Înțepături și bășicare (pinholing and blistering)
+: Găuri mici sau cratere cu margini ascuțite, acolo unde gazele au ieșit prin topitură.
 
-LOI (loss on ignition)
-: Weight lost in firing as water, carbon dioxide, organic matter or sulfur.
+Lucios, satinat și mat (gloss, satin and matte)
+: Reflectă lumina și este neted; un luciu discret; fără luciu.
 
-Once-firing (single firing)
-: Glazing unfired ware and firing it only once.
+Lucru termic (heatwork)
+: Efectul combinat al temperaturii și al timpului într-un cuptor; ceea ce măsoară conurile.
 
-Opacifier
-: A material, such as zircon, tin oxide or titanium dioxide, that makes glaze opaque.
+Migrarea metalelor (leaching)
+: Dizolvarea metalelor dintr-o glazură arsă în alimente sau băuturi.
 
-Oxidation and reduction
-: Firing with plenty of oxygen (electric kilns), or with oxygen restricted (usually gas or wood).
+Monoardere (once-firing, single firing)
+: Glazurarea pieselor nearse și arderea lor o singură dată.
 
-Oxide
-: A compound of an element with oxygen; an oxide analysis lists them by weight percent.
+Opacifiant (opacifier)
+: O materie primă, cum ar fi silicatul de zirconiu, oxidul de staniu sau dioxidul de titan, care face glazura opacă.
 
-Pinholing and blistering
-: Small holes, or sharp-edged craters, where gas escaped through the melt.
+Oxid (oxide)
+: Un compus al unui element cu oxigenul; o analiză a oxizilor îi enumeră în procente de masă.
 
-Porcelain
-: A white, kaolin-rich, high-fire body, often translucent.
+PC, pierdere la calcinare (LOI, loss on ignition)
+: Masa pierdută la ardere sub formă de apă, dioxid de carbon, materii organice sau sulf.
 
-R₂O and RO
-: The alkali fluxes (Na₂O, K₂O, Li₂O) and alkaline-earth fluxes (CaO, MgO, BaO, SrO, with ZnO).
+Piese crude (greenware)
+: Piese nearse: semiuscate când sunt rigide, dar umede, complet uscate când nu mai au apă liberă.
 
-Shivering
-: Glaze flaking off edges because it is over-compressed; a hazard on functional ware.
+Porțelan (porcelain)
+: O pastă albă, bogată în caolin, de temperatură înaltă, adesea translucidă.
 
-Silica (SiO₂)
-: The glass former; also called flint or quartz.
+Potrivit pentru contact alimentar (food safe)
+: În sensul legii: care eliberează la un test cu acid mai puțin plumb și cadmiu decât permit limitele. Nu este același lucru cu „fără plumb”.
 
-Silica to alumina ratio
-: Silica divided by alumina in the unity formula: higher tends to gloss, lower to matte.
+R₂O și RO
+: Fondanții alcalini (Na₂O, K₂O, Li₂O) și fondanții alcalino-pământoși (CaO, MgO, BaO, SrO, cu ZnO).
 
-Slip and engobe
-: Clay in water; an engobe is a slip-like coating with more non-clay material.
+Raportul silice–alumină (silica to alumina ratio)
+: Silicea împărțită la alumină în formula Seger: un raport mai mare tinde spre luciu, unul mai mic spre aspect mat.
 
-Specific gravity (SG)
-: A slurry's weight compared with the same volume of water. Older UK: pint weight.
+Retragerea glazurii (crawling)
+: Glazura se strânge în picături în timpul arderii și lasă argila neacoperită.
 
-Stabilizer
-: An oxide, mainly alumina, that stiffens the melt and adds durability.
+Rețetă (batch recipe)
+: Materiile prime ale unei glazuri, după masă, însumând de obicei 100.
 
-Stoneware
-: A mid- to high-fire body (about cone 5–10) that becomes vitreous or nearly so.
+Serie de teste (line blend)
+: Teste în care un ingredient variază treptat între două cantități. Un amestec triaxial variază trei, pe o rețea.
 
-Thixotropy
-: Flowing when stirred, setting into a soft gel when still.
+Silice, SiO₂ (silica)
+: Formatorul de sticlă; numită și flint (cremene) sau cuarț.
 
-Underglaze
-: Colored slip or oxide decoration, usually under a clear glaze.
+Stabilizator (stabilizer)
+: Un oxid, în principal alumina, care face topitura mai vâscoasă și adaugă durabilitate.
 
-Unity molecular formula (UMF, Seger formula)
-: A glaze's oxides as molecule counts, scaled so the fluxes add up to 1.
+Strat protector pentru plăci (kiln wash)
+: Un strat rezistent la căldură care protejează plăcile cuptorului de scurgerile de glazură.
 
-Vitrification
-: A body becoming glassy and non-porous in firing.
+Tixotropie (thixotropy)
+: Proprietatea de a curge când este amestecată și de a deveni un gel moale când stă nemișcată.
 
-Wax resist
-: Wax painted where glaze must not go, usually the foot.
+Underglaze (culoare sub glazură)
+: Barbotină colorată sau decor cu oxizi, de obicei sub o glazură transparentă.
 
-Whiting
-: Calcium carbonate, the main calcium flux; loses over 40% of its weight in firing. German: Kreide.
+Vitrificare (vitrification)
+: Procesul prin care o pastă devine sticloasă și neporoasă în timpul arderii.
 
-## Sources {#sources lang=en}
+## Surse {#sources}
 
 - [Glazy Help: Glaze](https://help.glazy.org/concepts/glaze)
 - [Glazy Help: Oxides](https://help.glazy.org/concepts/oxides)
@@ -472,7 +472,7 @@ Whiting
 - [Glazy Help: Firing](https://help.glazy.org/concepts/firing)
 - [Glazy Help: Defects](https://help.glazy.org/concepts/defects)
 - [Glazy Help: Specific gravity](https://help.glazy.org/testing/specific-gravity)
-- [Orton Ceramic Foundation: Pyrometric cone chart, °F (via The Ceramic Shop)](https://www.theceramicshop.com/technical_info/Cones/Orton-Cone-Chart-F-022-14.pdf)
+- [Orton Ceramic Foundation: Pyrometric cone chart, °F (pe site-ul The Ceramic Shop)](https://www.theceramicshop.com/technical_info/Cones/Orton-Cone-Chart-F-022-14.pdf)
 - [Digitalfire: Bisque](https://digitalfire.com/glossary/bisque)
 - [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Unity molecular formula](https://digitalfire.com/glossary/unity+molecular+formula)

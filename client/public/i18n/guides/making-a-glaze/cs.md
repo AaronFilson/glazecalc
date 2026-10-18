@@ -22,58 +22,58 @@ Připravit glazuru{{en: glaze}} znamená navážit podle receptu práškové **s
 > [!WARNING]
 > **Suchý prášek glazury je zdrojem nebezpečného prachu.** Krystalický oxid křemičitý může tvořit 10–60 % suché glazury a britský úřad Health and Safety Executive (HSE) varuje, že jeho prach je při běžném světle neviditelný. Nabírejte opatrně a z malé výšky, víka nechávejte nasazená, prášek co nejdříve navlhčete a uklízejte namokro, nikdy ne koštětem. Dokud jsou prášky suché, noste dobře přiléhající respirátor (N95 nebo P100 v USA, FFP2 nebo FFP3 ve Velké Británii a EU, P2 nebo P3 v Austrálii a na Novém Zélandu). [Návod k bezpečnému míchání](/guides/safe-mixing) podrobně popisuje prach, respirátory a úklid.
 
-## Buying materials {#buying-materials lang=en}
+## Nákup surovin {#buying-materials}
 
-### Where to buy
+### Kde nakupovat
 
-Potters buy from ceramic suppliers, which sell clay, glaze materials and tools. The table shows some for your country, each checked on the shop's own site, and you can choose another country to see its shops. Stock changes, so check before you order. Large producers such as Sibelco and Imerys sell to industry; potters buy their materials through shops like these. The ceramics reference site Digitalfire keeps a directory of supplier stores for other places.
+Keramici nakupují u dodavatelů keramických potřeb, kteří prodávají hlínu, suroviny pro glazury{{en: glaze}} a nástroje. Tabulka ukazuje některé z nich pro vaši zemi, každý ověřený přímo na webu obchodu, a můžete zvolit jinou zemi a zobrazit její obchody. Sortiment se mění, proto si ho před objednávkou ověřte. Velcí producenti jako Sibelco a Imerys prodávají průmyslu; keramici kupují jejich suroviny přes obchody, jako jsou tyto. Odborný web o keramice Digitalfire vede adresář obchodů dodavatelů pro další místa.
 
 ::shops
 
-### How much to buy
+### Kolik koupit
 
-The standard sack is **50 lb (22.7 kg)** in the US and **25 kg (55 lb)** elsewhere, so the two are nearly the same. Many suppliers also sell 1, 2.5 or 5 kg packs (about 2.2, 5.5 or 11 lb) for tests. Glazy, the open recipe database, advises buying the materials you use steadily (feldspar, silica, kaolin, whiting, and frit for mid-fire) in full sacks, which are often 20 to 30% cheaper. Buy **colorants**, the metal oxides and stains that color a glaze, in small amounts: most are used at under 5%. Glazy's sample shopping lists came to about $515 for mid-fire and $397 for high-fire, at US prices.
+Standardní pytel má v USA **50 lb (22,7 kg)** a jinde **25 kg (55 lb)**, takže jsou oba téměř stejné. Mnoho dodavatelů prodává na zkoušky i balení po 1; 2,5 nebo 5 kg (asi 2,2; 5,5 nebo 11 lb). Glazy, otevřená databáze receptů, radí kupovat suroviny, které používáte pravidelně (živec{{en: feldspar}}, křemen{{en: silica}}, kaolin{{en: kaolin}}, křídu{{en: whiting}} a pro středněteplotní výpal fritu{{en: frit}}), v celých pytlích, které bývají o 20–30 % levnější. **Barviva**{{en: colorants}}, tedy oxidy kovů a barvítka{{en: stains}}, které glazuru barví, kupujte v malých množstvích: většina se používá v množství pod 5 %. Vzorové nákupní seznamy Glazy vyšly asi na 515 USD pro středněteplotní a 397 USD pro vysokoteplotní výpal, v amerických cenách.
 
-### A starter set
+### Základní sada
 
-Glazy's core list for any temperature is silica, kaolin, feldspar, whiting, zinc oxide, and dolomite or talc. Most mid-fire (cone 5 to 6) glazes also need boron, usually from a frit, which Glazy calls "consistent and less soluble than raw borates". The set below is our suggestion, drawn from Glazy's list and a forum list. The [glazing basics guide](/guides/glazing-basics) explains what each material does.
+Základní seznam Glazy pro jakoukoli teplotu tvoří křemen, kaolin, živec, křída, oxid zinečnatý a dolomit nebo mastek. Většina středněteplotních glazur (Ortonova žároměrka{{en: cone}} 5–6) potřebuje také bor, obvykle z frity, kterou Glazy popisuje jako „stálou a méně rozpustnou než surové boráty“. Sada níže je náš návrh, sestavený ze seznamu Glazy a ze seznamu z diskusního fóra. [Návod o základech glazování](/guides/glazing-basics) vysvětluje, co která surovina dělá.
 
-Table: A starter set of materials (our suggestion)
-Label: Starter set
+Table: Základní sada surovin (náš návrh)
+Label: Základní sada
 
-| Material                              | What to buy                                                                      |
-| ------------------------------------- | -------------------------------------------------------------------------------- |
-| Silica (also called flint; see below) | 325 mesh, the finer grade Glazy prefers for glazes                               |
-| Kaolin (china clay in the UK)         | EPK in the US; Grolleg or another china clay in the UK; NZ kaolin in New Zealand |
-| Potash feldspar                       | Whichever is current where you live, such as Mahavir in the US                   |
-| Nepheline syenite                     | Any; Glazy notes its stronger fluxing power, often used at low and mid-fire      |
-| Whiting                               | Any                                                                              |
-| Talc                                  | Any asbestos-free grade; check its SDS (see Safe mixing)                         |
-| A boron frit, for mid-fire            | Ferro 3134, 3124 or 3195; in the UK, Potterycrafts P3124 or P3195                |
-| Bentonite and colorants               | Small amounts                                                                    |
+| Surovina                                    | Co koupit                                                                                                        |
+| ------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| Křemen (v angličtině také flint; viz níže)  | 325 mesh, jemnější zrnitost, které Glazy dává pro glazury přednost                                               |
+| Kaolin (ve Velké Británii China Clay)       | EPK v USA; Grolleg nebo jiný China Clay ve Velké Británii; novozélandský kaolin na Novém Zélandu                 |
+| Draselný živec                              | Ten, který se právě prodává tam, kde žijete, například Mahavir v USA                                             |
+| Nefelinický syenit{{en: nepheline syenite}} | Jakýkoli; Glazy uvádí jeho silnější tavicí účinek, často se používá při nízkoteplotním a středněteplotním výpalu |
+| Křída                                       | Jakákoli                                                                                                         |
+| Mastek                                      | Jakýkoli druh bez azbestu; zkontrolujte jeho bezpečnostní list (viz Bezpečné míchání)                            |
+| Boritá frita, pro středněteplotní výpal     | Ferro 3134, 3124 nebo 3195; ve Velké Británii Potterycrafts P3124 nebo P3195                                     |
+| Bentonit a barviva                          | Malá množství                                                                                                    |
 
-### Data sheets and safety data sheets
+### Technické a bezpečnostní listy
 
-Ask for two documents for each material. A **technical data sheet** (TDS) gives its **chemical analysis**: the share of each oxide in the powder, by weight. Glazecalc works from these, and you can add a material from a supplier's analysis on the [Materials page](/material). A **safety data sheet** (SDS) says how to handle the raw powder. Keep each SDS, and read it before you mix.
+Ke každé surovině si vyžádejte dva dokumenty. **Technický list** (TDS) uvádí její **chemický rozbor**: hmotnostní podíl každého oxidu v prášku. Glazecalc z těchto údajů vychází a surovinu podle rozboru od dodavatele můžete přidat na [stránce Suroviny](/material). **Bezpečnostní list** (SDS) říká, jak zacházet se surovinou v prášku. Každý bezpečnostní list si uschovejte a před mícháním si ho přečtěte.
 
-Analyses are averages, not promises. Valentine Clays prints "MEAN VALUES. THESE DO NOT REPRESENT A SPECIFICATION" on its flint data sheet, and Glazy's analyses of Custer feldspar from different years run from about 68.5% to 72.4% silica. We suggest writing each sack's **lot number** (its batch code) in your records, so you can tell whether a change in a trusted glaze came from the material.
+Rozbory jsou průměrné hodnoty, ne záruka. Valentine Clays uvádí na technickém listu svého pazourku{{en: flint}} „PRŮMĚRNÉ HODNOTY. NEPŘEDSTAVUJÍ SPECIFIKACI“ a rozbory živce Custer z různých let v databázi Glazy se pohybují zhruba od 68,5 % do 72,4 % oxidu křemičitého. Doporučujeme zapisovat si do záznamů **číslo šarže** každého pytle (označení výrobní série), abyste poznali, zda změna osvědčené glazury přišla od suroviny.
 
-HSE warns that crystalline silica "can be wrongly labelled as 'amorphous silica'". And an SDS is about the powder, not the pot: it says nothing about whether a fired glaze is safe for food. Only a laboratory leach test of the fired pot can show that.
+HSE varuje, že krystalický oxid křemičitý „může být chybně označen jako ‚amorfní oxid křemičitý‘“. A bezpečnostní list se týká prášku, ne výrobku: neříká nic o tom, zda je vypálená glazura vhodná pro styk s potravinami{{en: food safe}}. To může ukázat jen laboratorní zkouška uvolňování kovů{{en: leach test}} z vypáleného výrobku.
 
-### Names change, so buy by chemistry
+### Názvy se mění, proto nakupujte podle chemického složení
 
-Brand names come and go as mines close. Custer feldspar, mined in South Dakota for more than 75 years, ran out in late 2023. When Clay Art Center switched to G-200 AU and Mahavir, about half its glazes needed adjusting. G-200 and G-200 HP are gone too, and Laguna now imports Mahavir, whose chemistry is close to G-200.
+Obchodní názvy přicházejí a odcházejí, jak se zavírají doly. Živec Custer, který se v Jižní Dakotě těžil více než 75 let, došel koncem roku 2023. Když obchod Clay Art Center přešel na G-200 AU a Mahavir, bylo třeba upravit asi polovinu jeho glazur. G-200 a G-200 HP se už také nevyrábějí a firma Laguna nyní dováží Mahavir, jehož chemické složení se blíží G-200.
 
-**Gerstley Borate**, a natural boron mineral in many older recipes, has been scarce since its mine closed in 2000, though New Mexico Clay reported in November 2025 that Laguna was supplying "Gerstley Borate Original". Sources disagree about **Gillespie Borate** as a replacement. Its maker sells it as pound-for-pound. Berkeley Potters Studio says it "is not a direct substitute", and Digitalfire found it changed a glaze's color. The safe course is to compare the two by their oxides, then test.
+**Gerstley Borate**, přírodní minerál boru, který je v mnoha starších receptech, je od uzavření svého dolu v roce 2000 vzácný, i když obchod New Mexico Clay v listopadu 2025 uvedl, že firma Laguna dodává „Gerstley Borate Original“. O **Gillespie Borate** jako náhradě se zdroje neshodují. Jeho výrobce ho prodává jako náhradu libra za libru. Berkeley Potters Studio uvádí, že „není přímou náhradou“, a Digitalfire zjistil, že s ním glazura změnila barvu. Bezpečný postup je porovnat obě suroviny podle oxidů a pak je vyzkoušet.
 
-Regional names differ too. In North America, **flint**, quartz and silica mean the same ground silica, and Digitalfire says you probably won't find true flint powder from suppliers. In the UK, flint is its own product: Valentine's is calcined (heated) silica. Both are nearly pure silica, so we expect them to be close, but check the analysis. For kaolin, Glazy says one-for-one swaps, such as EPK for a china clay, "often work just fine, especially when amounts are \<10%".
+Liší se i regionální názvy. V Severní Americe znamenají **flint** (pazourek), quartz (křemen) a silica (oxid křemičitý) totéž, tedy mletý křemen, a podle Digitalfire pravý pazourkový prášek u dodavatelů pravděpodobně neseženete. Ve Velké Británii je flint samostatný výrobek: ten od Valentine Clays je kalcinovaný (tepelně zpracovaný) oxid křemičitý. Oba jsou téměř čistý oxid křemičitý, takže čekáme, že si budou blízké, ale rozbor si ověřte. U kaolinu Glazy uvádí, že záměny jedna za jednu, třeba EPK za China Clay, „často fungují docela dobře, zvlášť když je množství \<10 %“.
 
-Many recipes name materials that are sold in one country and not another. The table below takes each material in Glazecalc's library that is not sold where you buy, and finds the closest of its kind that is, by their analyses. The figure is how far apart the two are: the grams by which their fired oxides differ, per 100 g of material, added up over every oxide. Within about 15 g, one can usually stand in for the other in a first test. The names carry the makers' and shops' own codes, so you can ask for them by name.
+Mnoho receptů uvádí suroviny, které se prodávají v jedné zemi, ale ne v jiné. Tabulka níže vezme každou surovinu z knihovny aplikace Glazecalc, která se tam, kde nakupujete, neprodává, a podle rozborů najde nejbližší surovinu stejného druhu, která se tam prodává. Číslo udává, jak moc se od sebe liší: o kolik gramů se liší jejich oxidy po výpalu na 100 g suroviny, sečteno přes všechny oxidy. Při rozdílu do zhruba 15 g může jedna obvykle při první zkoušce zastoupit druhou. Názvy obsahují vlastní kódy výrobců a obchodů, takže si o ně můžete říct přímo názvem.
 
 ::local-equivalents
 
 > [!NOTE]
-> Glazecalc compares materials by what they bring to the fired glaze, not by name. A [recipe](/recipe) with a material no longer made says what is used now. **Suggest amounts and compare** works the amounts out again for a substitute, and **Match with what I have** makes the recipe again from the materials on your shelf. Both match the fired oxides only, so test a small batch first.
+> Glazecalc porovnává suroviny podle toho, co přinášejí do vypálené glazury, ne podle názvu. [Recept](/recipe) se surovinou, která se už nevyrábí, uvádí, co se používá dnes. Funkce **Navrhnout množství a porovnat** znovu spočítá množství pro náhradní surovinu a funkce **Sestavit z toho, co mám** sestaví recept znovu ze surovin ve vaší zásobě. Obě hledají shodu jen v oxidech po výpalu, proto nejprve vyzkoušejte malou dávku.
 
 ## Skladování surovin a glazur {#storing}
 
@@ -163,55 +163,55 @@ Label: Velikost oka síta
 | Glazury s barvivy{{en: colorants}}, jako je kobalt nebo železo | 100–120 mesh               |
 | Popelové glazury a další glazury s hrubými surovinami          | 60–80 mesh                 |
 
-## Specific gravity {#specific-gravity lang=en}
+## Měrná hmotnost {#specific-gravity}
 
-**Specific gravity** (SG) tells you how much powder is in your slurry. It is the weight of a volume of glaze divided by the weight of the same volume of water. Water is 1.00, and a glaze at {{SG 1.45}} weighs 145 g per 100 mL. Mixing to a measured SG is how you get the same thickness, and the same coat, every time. It has no units, so it is the same in grams or ounces.
+**Měrná hmotnost**{{en: specific gravity}} (SG) ukazuje, kolik prášku je ve vaší glazurové suspenzi{{en: slurry}}. Je to hmotnost určitého objemu glazury{{en: glaze}} dělená hmotností stejného objemu vody. Voda má 1,00 a když je {{SG 1.45}}, váží glazura 145 g na 100 mL. Mícháním na změřenou měrnou hmotnost dosáhnete pokaždé stejné hustoty a stejné vrstvy. Měrná hmotnost nemá jednotky, takže vychází stejně v gramech i v uncích.
 
-### Measure it by weighing 100 mL
+### Měření vážením 100 mL
 
-1. Stir the glaze so nothing has settled.
-2. Put a 100 mL **graduated cylinder** (a tall, marked measuring tube) or a 100 mL syringe on the scale, and tare it.
-3. Fill it with glaze to exactly 100 mL, reading the mark at eye level.
-4. Weigh it and divide the grams by 100: 145 g is SG 1.45.
+1. Rozmíchejte glazuru, aby nic nezůstalo usazené.
+2. Postavte na váhu **odměrný válec** na 100 mL (vysokou odměrnou trubici se stupnicí) nebo injekční stříkačku na 100 mL a váhu vytárujte.
+3. Naplňte válec nebo stříkačku glazurou přesně po značku 100 mL; značku odečítejte v úrovni očí.
+4. Glazuru zvažte a gramy vydělte 100: 145 g znamená měrnou hmotnost 1,45.
 
-Digitalfire also marks a cup at the level of 500 g of water, fills it to the mark with glaze, and divides the weight by 500; a bigger, fuller measure is more accurate. A **hydrometer**, a float read where it sits in the glaze, is quick but can misread thick or gelled glazes. UK hydrometers, such as Potclays', read in degrees Baumé (°Bé). By our arithmetic, SG = 145 ÷ (145 − °Bé), so 46 °Bé is about 1.46. Older UK books give a **pint weight**, the ounces in an imperial pint of glaze: divide it by 20, so 29 oz is about SG 1.45 (also our arithmetic).
+Digitalfire si také označí na kelímku hladinu 500 g vody, naplní ho glazurou po značku a hmotnost vydělí 500; větší a plnější odměrka je přesnější. **Hustoměr**, plovák, ze kterého se hodnota odečte podle toho, jak hluboko se v glazuře ponoří, je rychlý, ale u hustých nebo zgelovatělých glazur může ukazovat špatně. Britské hustoměry, jako ten od Potclays, ukazují stupně Baumé (°Bé). Podle našeho výpočtu je SG = 145 ÷ (145 − °Bé), takže 46 °Bé odpovídá asi 1,46. Starší britské knihy uvádějí **hmotnost pinty**, tedy počet uncí v britské pintě glazury: vydělte ji 20, takže 29 oz odpovídá měrné hmotnosti asi 1,45 (také náš výpočet).
 
-### What to aim for
+### Jaké hodnoty zvolit
 
-Sources disagree, most of all on brushing and spraying, where the UK supplier Potclays gives much higher figures (its own are "for guidance only"). Treat every number as a starting point. Digitalfire's core advice is to find the SG and gelling that work for each glaze, then repeat them and write them down.
+Zdroje se neshodují, nejvíc u nanášení štětcem a stříkání, kde britský dodavatel Potclays uvádí mnohem vyšší hodnoty (o svých vlastních píše, že jsou „pouze orientační“). Každé číslo berte jako výchozí bod. Hlavní rada Digitalfire zní: najděte pro každou glazuru měrnou hmotnost a míru zgelovatění, které fungují, pak je opakujte a zapisujte si je.
 
-Table: Specific gravity targets, where sources disagree
-Label: Specific gravity targets
+Table: Cílová měrná hmotnost, kde se zdroje neshodují
+Label: Cílová měrná hmotnost
 
-| Use      | Digitalfire and Glazy                                                                                                                 | Potclays (UK)                               | Safe starting point                                     |
-| -------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------- |
-| Dipping  | {{SG 1.40}} (for a 5-second dip) to {{SG 1.50}} (for a 1-second dip); home-mixed glazes that are gelled do best at {{SG 1.43–1.45}}   | Clear {{SG 1.46–1.48}}; colored {{SG 1.61}} | {{SG 1.45}}; thin to {{SG 1.43}} and gel it if it drips |
-| Brushing | {{SG 1.25}} (thin clear) to {{SG 1.55}} (dark detail)                                                                                 | {{SG 1.71–1.81}}                            | Follow the product; use CMC gum or a brushing medium    |
-| Spraying | No figure; Hopper, writing for Ceramic Arts Network, says much thinner, with a deflocculant (an additive that makes a slurry runnier) | {{SG 1.71}}                                 | No reliable number; spray only in a spray booth         |
+| Použití          | Digitalfire a Glazy                                                                                                                                                               | Potclays (Velká Británie)                             | Bezpečný výchozí bod                                                                 |
+| ---------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- | ------------------------------------------------------------------------------------ |
+| Namáčení         | {{SG 1.40}} (pro namáčení na 5 sekund) až {{SG 1.50}} (pro namáčení na 1 sekundu); doma míchaným zgelovatělým glazurám se nejlépe daří, když je {{SG 1.43–1.45}}                  | Transparentní: {{SG 1.46–1.48}}; barevné: {{SG 1.61}} | {{SG 1.45}}; pokud kape, zřeďte ji, dokud nebude {{SG 1.43}}, a nechte ji zgelovatět |
+| Nanášení štětcem | {{SG 1.25}} (řídká transparentní) až {{SG 1.55}} (tmavé detaily)                                                                                                                  | {{SG 1.71–1.81}}                                      | Podle pokynů výrobce; použijte CMC nebo glazovací médium                             |
+| Stříkání         | Hodnota neuvedena; Hopper v článku pro Ceramic Arts Network radí mnohem řidší glazuru se ztekucovadlem{{en: deflocculant}} (přísadou, díky které je glazurová suspenze tekutější) | {{SG 1.71}}                                           | Spolehlivá hodnota není; stříkejte jen ve stříkací kabině s odsáváním                |
 
-To check a dipping glaze by eye, AMACO dips for 5 seconds and looks for a coat about as thick as a US dime. Digitalfire fires tiles dipped for 5 seconds to check.
+Při kontrole glazury na namáčení od oka namáčí AMACO na 5 sekund a hledá vrstvu zhruba tak silnou jako americká deseticentová mince (dime). Digitalfire pro kontrolu vypaluje zkušební střípky{{en: test tiles}} namáčené na 5 sekund.
 
-### Water for a target SG: our estimate
+### Voda pro cílovou měrnou hmotnost: náš odhad
 
-The table below is our own arithmetic, not a source's. It assumes the powder's particles have a density of 2.6 g per cm³, which is an assumption, not a measurement. Clay, soluble materials and gelling all change a real glaze, so use it to start, then measure. As a check, it predicts {{SG 1.44}} for equal weights of powder and water, close to Digitalfire's measured {{SG 1.46}}. It also shows that 70 to 80 mL per 100 g starts you above {{SG 1.50}}, thicker than you need.
+Tabulka níže je náš vlastní výpočet, ne údaj ze zdroje. Předpokládá, že částice prášku mají hustotu 2,6 g na cm³, což je předpoklad, ne měření. Jíl, rozpustné suroviny i gelovatění skutečnou glazuru mění, proto tabulku použijte jako výchozí bod a pak měřte. Pro kontrolu: pro stejnou hmotnost prášku a vody z ní vychází {{SG 1.44}}, blízko hodnoty, kterou naměřil Digitalfire ({{SG 1.46}}). Ukazuje také, že při 70–80 mL na 100 g vychází na začátku víc než {{SG 1.50}}, tedy hustší glazura, než potřebujete.
 
-Table: Water for a target specific gravity (our estimate)
-Label: Water for a target specific gravity
+Table: Voda pro cílovou měrnou hmotnost (náš odhad)
+Label: Voda pro cílovou měrnou hmotnost
 
-| Target      | Per 100 g of powder |  Per kilogram |         Per pound |
-| ----------- | ------------------: | ------------: | ----------------: |
-| {{SG 1.40}} |        about 115 mL | about 1150 mL | about 18 US fl oz |
-| {{SG 1.45}} |         about 98 mL |  about 980 mL | about 15 US fl oz |
-| {{SG 1.50}} |         about 85 mL |  about 850 mL | about 13 US fl oz |
-| {{SG 1.60}} |         about 64 mL |  about 640 mL | about 10 US fl oz |
+| Cíl         | Na 100 g prášku | Na kilogram |        Na libru |
+| ----------- | --------------: | ----------: | --------------: |
+| {{SG 1.40}} |      asi 115 mL | asi 1150 mL | asi 18 US fl oz |
+| {{SG 1.45}} |       asi 98 mL |  asi 980 mL | asi 15 US fl oz |
+| {{SG 1.50}} |       asi 85 mL |  asi 850 mL | asi 13 US fl oz |
+| {{SG 1.60}} |       asi 64 mL |  asi 640 mL | asi 10 US fl oz |
 
-### Epsom salts, CMC gum and bentonite
+### Hořká sůl, CMC a bentonit
 
-**Epsom salts** make a glaze gel slightly when it stands still and flow again when it is stirred. This is called **flocculating** it, and a glaze that behaves this way is **thixotropic**: it goes on more evenly, drips less and settles less. Digitalfire suggests starting at about 2 g per gallon once the SG is right (roughly 0.5 g per liter, our conversion) and tuning the amount each time you mix, since no recipe should fix the dose. We suggest dissolving it in a little hot water first. In a Digitalfire example, a glaze at {{SG 1.45}} dripped, so water brought it down to {{SG 1.43}} and Epsom salts gelled it back to creamy, and it went on evenly. A rough check: stir, stop and watch. A gelled glaze moves on for about 2 or 3 seconds, then stops and springs back a little.
+**Hořká sůl** (síran hořečnatý) způsobí, že glazura v klidu mírně zgelovatí a po rozmíchání zase teče. Tomu se říká **flokulace**{{en: flocculating}} a glazura, která se takto chová, je **tixotropní**{{en: thixotropic}}: nanáší se rovnoměrněji, méně kape a méně se usazuje. Digitalfire doporučuje začít s asi 2 g na galon, jakmile je měrná hmotnost správná (zhruba 0,5 g na litr, náš přepočet), a množství ladit při každém míchání, protože žádný recept by neměl dávku pevně určovat. Doporučujeme hořkou sůl nejprve rozpustit v troše horké vody. V jednom příkladu od Digitalfire glazura kapala, když byla {{SG 1.45}}, a tak ji voda zředila, až byla {{SG 1.43}}, hořká sůl ji znovu zahustila do krémové konzistence a glazura se pak nanášela rovnoměrně. Hrubá kontrola: zamíchejte, přestaňte a pozorujte. Zgelovatělá glazura se pohybuje ještě asi 2 nebo 3 sekundy, pak se zastaví a trochu se vrátí zpět.
 
-**CMC gum** (carboxymethyl cellulose) makes a slurry stickier and slower to dry, and leaves a harder coat that holds to the pot. It matters most for brushing glazes and glazes high in frit. Digitalfire's example blends 3.75 g into 1000 g of slurry, and it has to go in with a blender. A glaze with CMC will not gel with Epsom salts, and since microbes feed on the gum, it can change in the bucket and start to smell.
+**CMC** (karboxymethylcelulóza) dělá glazurovou suspenzi lepivější a pomaleji schnoucí a zanechává tvrdší vrstvu, která na výrobku drží. Nejdůležitější je u glazur na nanášení štětcem a u glazur s vysokým podílem frity{{en: frit}}. V příkladu od Digitalfire se 3,75 g zamíchá do 1000 g suspenze a musí se přidat mixérem. Glazura s CMC se hořkou solí nezgelovatí a protože se tímto pojivem živí mikroby, může se v kbelíku měnit a začít zapáchat.
 
-**Bentonite**, a very fine clay, helps hold the other particles in suspension. Dipping glazes usually rely on 15 to 25% raw clay for this. For a recipe short of clay, about 1 to 3% bentonite helps; Digitalfire says a glaze with more than 15% clay should not need more than 1%.
+**Bentonit**, velmi jemný jíl, pomáhá udržet ostatní částice ve vznosu. Glazury na namáčení k tomu obvykle spoléhají na 15–25 % syrové hlíny. U receptu s nedostatkem hlíny pomůže asi 1–3 % bentonitu; podle Digitalfire by glazura s více než 15 % hlíny neměla potřebovat víc než 1 %.
 
 ## Zkušební střípky a zkušební řady {#testing}
 
@@ -276,7 +276,7 @@ Label: Šablona záznamu
 > [!NOTE]
 > V aplikaci Glazecalc uchovává uložený [recept](/recipe) samotný recept. Do [záznamu výpalu](/firing) se zapisuje každý výpal: pec, datum, časy, teploty, žároměrky a poznámky. [Poznámky](/notes) uchovávají vše ostatní, například výše uvedený záznam dávky a to, co ukázal každý střípek.
 
-## Sources {#sources lang=en}
+## Zdroje {#sources}
 
 - [Glazy: Raw materials](https://help.glazy.org/concepts/materials)
 - [Glazy: Specific gravity](https://help.glazy.org/testing/specific-gravity)

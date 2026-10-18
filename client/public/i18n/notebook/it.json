@@ -49,6 +49,10 @@
         "title": "Guide",
         "text": "Da che cos’è uno smalto alla sua cottura, e come tenere tutti al sicuro lungo il percorso."
       },
+      "trash": {
+        "title": "Cestino",
+        "text": "Ripristini ciò che ha rimosso negli ultimi 30 giorni."
+      },
       "account": {
         "title": "Account e impostazioni",
         "text": "Impostazioni, la Sua password, l’accesso in due passaggi e un download di tutto ciò che conserva qui."
@@ -116,6 +120,7 @@
   },
   "trash": {
     "title": "Cestino",
+    "lead": "Ciò che rimuove (ricette, materiali, additivi, note, registri di cottura e consigli) resta qui per 30 giorni. Lo ripristini, oppure lo elimini per sempre.",
     "listHeading": "Nel cestino",
     "none": "Il cestino è vuoto.",
     "untitled": "Senza titolo",

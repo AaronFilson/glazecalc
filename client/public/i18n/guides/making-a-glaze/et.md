@@ -22,58 +22,58 @@ Glasuuri{{en: glaze}} valmistamine tähendab, et pulbrilised **toorained** (jahv
 > [!WARNING]
 > **Kuiv glasuuripulber põhjustab tolmuohtu.** Kristalliline ränidioksiid võib moodustada 10–60% kuivast glasuurist ja Ühendkuningriigi tööohutusasutus Health and Safety Executive (HSE) hoiatab, et selle tolm on tavalises valguses nähtamatu. Tõstke pulbrit ettevaatlikult ja madalalt, hoidke kaaned peal, niisutage pulber nii kiiresti kui võimalik ja koristage märjalt, mitte kunagi luuaga. Kandke tihedalt istuvat respiraatorit seni, kuni pulbrid on kuivad (USA-s N95 või P100, Ühendkuningriigis ja EL-is FFP2 või FFP3, Austraalias ja Uus-Meremaal P2 või P3). Juhend [Ohutu segamine ja ventilatsioon](/guides/safe-mixing) käsitleb tolmu, respiraatoreid ja koristamist põhjalikult.
 
-## Buying materials {#buying-materials lang=en}
+## Toorainete ostmine {#buying-materials}
 
-### Where to buy
+### Kust osta
 
-Potters buy from ceramic suppliers, which sell clay, glaze materials and tools. The table shows some for your country, each checked on the shop's own site, and you can choose another country to see its shops. Stock changes, so check before you order. Large producers such as Sibelco and Imerys sell to industry; potters buy their materials through shops like these. The ceramics reference site Digitalfire keeps a directory of supplier stores for other places.
+Keraamikud ostavad keraamikatarvete poodidest, mis müüvad savi, glasuuri tooraineid ja tööriistu. Tabelis on mõned teie riigi poed, igaüks poe enda veebilehelt kontrollitud, ja teise riigi poodide nägemiseks saate valida teise riigi. Valik muutub, seega kontrollige enne tellimist. Suured tootjad, nagu Sibelco ja Imerys, müüvad tööstusele; keraamikud ostavad nende tooraineid selliste poodide kaudu. Keraamika teabesait Digitalfire haldab teiste piirkondade tarnijate poodide kataloogi.
 
 ::shops
 
-### How much to buy
+### Kui palju osta
 
-The standard sack is **50 lb (22.7 kg)** in the US and **25 kg (55 lb)** elsewhere, so the two are nearly the same. Many suppliers also sell 1, 2.5 or 5 kg packs (about 2.2, 5.5 or 11 lb) for tests. Glazy, the open recipe database, advises buying the materials you use steadily (feldspar, silica, kaolin, whiting, and frit for mid-fire) in full sacks, which are often 20 to 30% cheaper. Buy **colorants**, the metal oxides and stains that color a glaze, in small amounts: most are used at under 5%. Glazy's sample shopping lists came to about $515 for mid-fire and $397 for high-fire, at US prices.
+Tavaline kott on USA-s **50 lb (22,7 kg)** ja mujal **25 kg (55 lb)**, seega on need peaaegu ühesuurused. Paljud tarnijad müüvad katseteks ka 1; 2,5 või 5 kg pakke (umbes 2,2; 5,5 või 11 lb). Avatud retseptiandmebaas Glazy soovitab osta pidevalt kasutatavad toorained (põldpagu{{en: feldspar}}, kvarts{{en: silica}}, kaoliin{{en: kaolin}}, kriit{{en: whiting}} ja keskkuumuse jaoks fritt{{en: frit}}) täiskottidena, mis on sageli 20–30% odavamad. Ostke **värvaineid**{{en: colorants}}, s.o glasuuri{{en: glaze}} värvivaid metallioksiide ja pigmente{{en: stains}}, väikeste kogustena: enamikku neist kasutatakse alla 5%. Glazy näidisostunimekirjad maksid USA hindades umbes 515 dollarit keskkuumuse ja 397 dollarit kõrgkuumuse jaoks.
 
-### A starter set
+### Algkomplekt
 
-Glazy's core list for any temperature is silica, kaolin, feldspar, whiting, zinc oxide, and dolomite or talc. Most mid-fire (cone 5 to 6) glazes also need boron, usually from a frit, which Glazy calls "consistent and less soluble than raw borates". The set below is our suggestion, drawn from Glazy's list and a forum list. The [glazing basics guide](/guides/glazing-basics) explains what each material does.
+Glazy põhiloend mis tahes temperatuuri jaoks on kvarts, kaoliin, põldpagu, kriit, tsinkoksiid ning dolomiit või talk. Enamik keskkuumusglasuure (koonused{{en: cone}} 5–6) vajab ka boori, tavaliselt fritist, mis on Glazy sõnul „ühtlase koostisega ja looduslikest boraatidest vähem lahustuv“. Allolev komplekt on selle juhendi soovitus, mis põhineb Glazy loendil ja ühe foorumi loendil. Juhend [Glasuurimise alused](/guides/glazing-basics) selgitab, mida iga tooraine teeb.
 
-Table: A starter set of materials (our suggestion)
-Label: Starter set
+Table: Toorainete algkomplekt (selle juhendi soovitus)
+Label: Algkomplekt
 
-| Material                              | What to buy                                                                      |
-| ------------------------------------- | -------------------------------------------------------------------------------- |
-| Silica (also called flint; see below) | 325 mesh, the finer grade Glazy prefers for glazes                               |
-| Kaolin (china clay in the UK)         | EPK in the US; Grolleg or another china clay in the UK; NZ kaolin in New Zealand |
-| Potash feldspar                       | Whichever is current where you live, such as Mahavir in the US                   |
-| Nepheline syenite                     | Any; Glazy notes its stronger fluxing power, often used at low and mid-fire      |
-| Whiting                               | Any                                                                              |
-| Talc                                  | Any asbestos-free grade; check its SDS (see Safe mixing)                         |
-| A boron frit, for mid-fire            | Ferro 3134, 3124 or 3195; in the UK, Potterycrafts P3124 or P3195                |
-| Bentonite and colorants               | Small amounts                                                                    |
+| Tooraine                                 | Mida osta                                                                                                       |
+| ---------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| Kvarts (ka nimega flint; vt allpool)     | 325 mesh, peenem jahvatus, mida Glazy eelistab glasuuride jaoks                                                 |
+| Kaoliin (Ühendkuningriigis china clay)   | USA-s EPK; Ühendkuningriigis Grolleg või mõni muu china clay; Uus-Meremaal NZ kaolin                            |
+| Kaaliumpõldpagu{{en: potash feldspar}}   | See, mis teie piirkonnas praegu müügil on, näiteks USA-s Mahavir                                                |
+| Nefeliinsüeniit{{en: nepheline syenite}} | Ükskõik milline; Glazy märgib selle tugevamat sulandavat toimet, seda kasutatakse sageli madal- ja keskkuumuses |
+| Kriit                                    | Ükskõik milline                                                                                                 |
+| Talk                                     | Ükskõik milline asbestivaba sort; kontrollige selle ohutuskaarti (vt Ohutu segamine ja ventilatsioon)           |
+| Boorifritt keskkuumuse jaoks             | Ferro 3134, 3124 või 3195; Ühendkuningriigis Potterycrafts P3124 või P3195                                      |
+| Bentoniit ja värvained                   | Väikestes kogustes                                                                                              |
 
-### Data sheets and safety data sheets
+### Tehnilised andmelehed ja ohutuskaardid
 
-Ask for two documents for each material. A **technical data sheet** (TDS) gives its **chemical analysis**: the share of each oxide in the powder, by weight. Glazecalc works from these, and you can add a material from a supplier's analysis on the [Materials page](/material). A **safety data sheet** (SDS) says how to handle the raw powder. Keep each SDS, and read it before you mix.
+Küsige iga tooraine kohta kaht dokumenti. **Tehniline andmeleht** (TDS) annab selle **keemilise analüüsi**: iga oksiidi osakaalu pulbris massi järgi. Glazecalc töötab nende andmete põhjal ja lehel [Toorained](/material) saate lisada tooraine tarnija analüüsi järgi. **Ohutuskaart** (SDS) ütleb, kuidas pulbriga ümber käia. Hoidke iga ohutuskaart alles ja lugege see enne segamist läbi.
 
-Analyses are averages, not promises. Valentine Clays prints "MEAN VALUES. THESE DO NOT REPRESENT A SPECIFICATION" on its flint data sheet, and Glazy's analyses of Custer feldspar from different years run from about 68.5% to 72.4% silica. We suggest writing each sack's **lot number** (its batch code) in your records, so you can tell whether a change in a trusted glaze came from the material.
+Analüüsid on keskmised, mitte lubadused. Valentine Clays trükib oma flindi andmelehele „KESKMISED VÄÄRTUSED. NEED EI KUJUTA ENDAST SPETSIFIKATSIOONI“ ja Glazy eri aastate analüüsides on põldpaos Custer ränidioksiidi umbes 68,5%-st 72,4%-ni. See juhend soovitab kirjutada iga koti **partiinumbri** (selle tootmispartii koodi) oma märkmetesse, et saaksite aru, kas muutus järeleproovitud glasuuris tuli toorainest.
 
-HSE warns that crystalline silica "can be wrongly labelled as 'amorphous silica'". And an SDS is about the powder, not the pot: it says nothing about whether a fired glaze is safe for food. Only a laboratory leach test of the fired pot can show that.
+HSE hoiatab, et kristallilist ränidioksiidi „võidakse ekslikult märgistada kui „amorfset ränidioksiidi““. Ja ohutuskaart käsitleb pulbrit, mitte valmis eset: see ei ütle midagi selle kohta, kas põletatud glasuur on toidunõudele sobiv{{en: food safe}}. Seda saab näidata ainult põletatud eseme metallide eraldumise laborikatse.
 
-### Names change, so buy by chemistry
+### Muutuvad nimed: ostmine keemilise koostise järgi
 
-Brand names come and go as mines close. Custer feldspar, mined in South Dakota for more than 75 years, ran out in late 2023. When Clay Art Center switched to G-200 AU and Mahavir, about half its glazes needed adjusting. G-200 and G-200 HP are gone too, and Laguna now imports Mahavir, whose chemistry is close to G-200.
+Kaubanimed tulevad ja kaovad, kui kaevandusi suletakse. Põldpagu Custer, mida kaevandati Lõuna-Dakotas üle 75 aasta, sai otsa 2023. aasta lõpus. Kui Clay Art Center läks üle toorainetele G-200 AU ja Mahavir, tuli kohandada umbes pooled selle glasuuridest. Ka G-200 ja G-200 HP on kadunud ning Laguna impordib nüüd põldpagu Mahavir, mille keemiline koostis on lähedane G-200 koostisele.
 
-**Gerstley Borate**, a natural boron mineral in many older recipes, has been scarce since its mine closed in 2000, though New Mexico Clay reported in November 2025 that Laguna was supplying "Gerstley Borate Original". Sources disagree about **Gillespie Borate** as a replacement. Its maker sells it as pound-for-pound. Berkeley Potters Studio says it "is not a direct substitute", and Digitalfire found it changed a glaze's color. The safe course is to compare the two by their oxides, then test.
+**Gerstley Borate**, paljudes vanemates retseptides leiduv looduslik boorimineraal, on olnud raskesti saadaval alates 2000. aastast, mil selle kaevandus suleti, kuigi New Mexico Clay teatas 2025. aasta novembris, et Laguna tarnib toodet „Gerstley Borate Original“. Allikad on eri meelt, kas **Gillespie Borate** sobib selle asendajaks. Tootja müüb seda asendajana, mis sobib nael naela vastu. Berkeley Potters Studio ütleb, et see „ei ole otsene asendaja“, ja Digitalfire leidis, et see muutis glasuuri värvi. Kindlam on võrrelda neid kaht oksiidide järgi ja seejärel katsetada.
 
-Regional names differ too. In North America, **flint**, quartz and silica mean the same ground silica, and Digitalfire says you probably won't find true flint powder from suppliers. In the UK, flint is its own product: Valentine's is calcined (heated) silica. Both are nearly pure silica, so we expect them to be close, but check the analysis. For kaolin, Glazy says one-for-one swaps, such as EPK for a china clay, "often work just fine, especially when amounts are \<10%".
+Ka piirkondlikud nimetused erinevad. Põhja-Ameerikas tähendavad nimetused **flint**, quartz ja silica sama jahvatatud kvartsi ning Digitalfire ütleb, et päris flindipulbrit tarnijatelt tõenäoliselt ei leia. Ühendkuningriigis on flint eraldi toode: Valentine’i flint on kaltsineeritud (kuumutatud) kvarts. Mõlemad on peaaegu puhas ränidioksiid, seega võib eeldada, et need on lähedased, kuid kontrollige analüüsi. Kaoliini kohta ütleb Glazy, et asendused üks ühe vastu, näiteks EPK mõne china clay asemel, „toimivad sageli täiesti hästi, eriti kui kogused on \<10%“.
 
-Many recipes name materials that are sold in one country and not another. The table below takes each material in Glazecalc's library that is not sold where you buy, and finds the closest of its kind that is, by their analyses. The figure is how far apart the two are: the grams by which their fired oxides differ, per 100 g of material, added up over every oxide. Within about 15 g, one can usually stand in for the other in a first test. The names carry the makers' and shops' own codes, so you can ask for them by name.
+Paljudes retseptides on tooraineid, mida müüakse ühes riigis, aga mitte teises. Allolev tabel võtab Glazecalci teegist iga tooraine, mida teie ostukohas ei müüda, ja leiab analüüside järgi lähima samaliigilise tooraine, mida seal müüakse. Arv näitab, kui kaugel need teineteisest on: mitu grammi nende põletatud oksiidid 100 g tooraine kohta erinevad, liidetuna üle kõigi oksiidide. Kui erinevus jääb umbes 15 g piiresse, saab esimeses katses tavaliselt ühe teisega asendada. Nimedes on tootjate ja poodide enda koodid, nii et neid saab küsida nime järgi.
 
 ::local-equivalents
 
 > [!NOTE]
-> Glazecalc compares materials by what they bring to the fired glaze, not by name. A [recipe](/recipe) with a material no longer made says what is used now. **Suggest amounts and compare** works the amounts out again for a substitute, and **Match with what I have** makes the recipe again from the materials on your shelf. Both match the fired oxides only, so test a small batch first.
+> Glazecalc võrdleb tooraineid selle järgi, mida need põletatud glasuuri annavad, mitte nime järgi. [Retsept](/recipe), milles on tooraine, mida enam ei toodeta, ütleb, mida nüüd kasutatakse. Funktsioon **Paku kogused ja võrdle** arvutab asendustooraine jaoks kogused uuesti ja funktsioon **Koosta minu toorainetest** koostab retsepti uuesti teie varus olevatest toorainetest. Mõlemad vastavad ainult põletatud oksiididele, seega katsetage kõigepealt väikest segu.
 
 ## Toorainete ja glasuuride hoiustamine {#storing}
 
@@ -163,55 +163,55 @@ Label: Sõela mesh
 | Glasuurid, milles on värvaineid{{en: colorants}}, nagu koobalt või raud | 100–120 mesh                  |
 | Tuhaglasuurid ja muud jämedate toorainetega glasuurid                   | 60–80 mesh                    |
 
-## Specific gravity {#specific-gravity lang=en}
+## Suhteline tihedus {#specific-gravity}
 
-**Specific gravity** (SG) tells you how much powder is in your slurry. It is the weight of a volume of glaze divided by the weight of the same volume of water. Water is 1.00, and a glaze at {{SG 1.45}} weighs 145 g per 100 mL. Mixing to a measured SG is how you get the same thickness, and the same coat, every time. It has no units, so it is the same in grams or ounces.
+**Suhteline tihedus**{{en: specific gravity, SG}} näitab, kui palju pulbrit on teie glasuurilahuses{{en: slurry}}. See on teatud mahu glasuuri{{en: glaze}} mass jagatud sama mahu vee massiga. Vee suhteline tihedus on 1,00 ja glasuur, mille näit on {{SG 1.45}}, kaalub 145 g 100 mL kohta. Kui segate glasuuri mõõdetud suhtelise tiheduseni, saate iga kord sama paksuse ja sama glasuurikihi. Suhtelisel tihedusel pole ühikut, seega on see sama nii grammides kui untsides.
 
-### Measure it by weighing 100 mL
+### Mõõtmine 100 mL kaalumisega
 
-1. Stir the glaze so nothing has settled.
-2. Put a 100 mL **graduated cylinder** (a tall, marked measuring tube) or a 100 mL syringe on the scale, and tare it.
-3. Fill it with glaze to exactly 100 mL, reading the mark at eye level.
-4. Weigh it and divide the grams by 100: 145 g is SG 1.45.
+1. Segage glasuuri, et midagi poleks settinud.
+2. Asetage kaalule 100 mL **mõõtesilinder** (kõrge, jaotistega mõõtenõu) või 100 mL süstal ja tareerige.
+3. Täitke see glasuuriga täpselt 100 mL-ni, lugedes jaotist silmade kõrguselt.
+4. Kaaluge ja jagage grammid 100-ga: 145 g vastab suhtelisele tihedusele 1,45.
 
-Digitalfire also marks a cup at the level of 500 g of water, fills it to the mark with glaze, and divides the weight by 500; a bigger, fuller measure is more accurate. A **hydrometer**, a float read where it sits in the glaze, is quick but can misread thick or gelled glazes. UK hydrometers, such as Potclays', read in degrees Baumé (°Bé). By our arithmetic, SG = 145 ÷ (145 − °Bé), so 46 °Bé is about 1.46. Older UK books give a **pint weight**, the ounces in an imperial pint of glaze: divide it by 20, so 29 oz is about SG 1.45 (also our arithmetic).
+Digitalfire märgib ka tassile 500 g vee taseme, täidab tassi glasuuriga märgini ja jagab massi 500-ga; suurem ja täiem mõõtenõu on täpsem. **Areomeeter**, ujuk, mille näitu loetakse sealt, kus see glasuuris hõljub, on kiire, kuid võib paksude või tarretunud glasuuride puhul valesti näidata. Briti areomeetrid, näiteks Potclaysi oma, näitavad Baumé kraade (°Bé). Selle juhendi arvutuse järgi on suhteline tihedus = 145 ÷ (145 − °Bé), seega 46 °Bé vastab umbes 1,46-le. Vanemad Briti raamatud annavad **pindi kaalu**, s.o Briti pindi glasuuri massi untsides: jagage see 20-ga, seega 29 oz vastab suhtelisele tihedusele umbes 1,45 (samuti selle juhendi arvutus).
 
-### What to aim for
+### Millist näitu sihtida
 
-Sources disagree, most of all on brushing and spraying, where the UK supplier Potclays gives much higher figures (its own are "for guidance only"). Treat every number as a starting point. Digitalfire's core advice is to find the SG and gelling that work for each glaze, then repeat them and write them down.
+Allikad on eri meelt, kõige rohkem pintseldamise ja pritsimise osas, kus Briti tarnija Potclays annab palju suuremad arvud (tema enda sõnul on need „ainult orienteeruvad“). Käsitlege iga arvu lähtepunktina. Digitalfire’i põhisoovitus on leida iga glasuuri jaoks sobiv suhteline tihedus ja tarretumine, siis neid korrata ja need üles kirjutada.
 
-Table: Specific gravity targets, where sources disagree
-Label: Specific gravity targets
+Table: Suhtelise tiheduse sihtväärtused, milles allikad on eri meelt
+Label: Suhtelise tiheduse sihtväärtused
 
-| Use      | Digitalfire and Glazy                                                                                                                 | Potclays (UK)                               | Safe starting point                                     |
-| -------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------- |
-| Dipping  | {{SG 1.40}} (for a 5-second dip) to {{SG 1.50}} (for a 1-second dip); home-mixed glazes that are gelled do best at {{SG 1.43–1.45}}   | Clear {{SG 1.46–1.48}}; colored {{SG 1.61}} | {{SG 1.45}}; thin to {{SG 1.43}} and gel it if it drips |
-| Brushing | {{SG 1.25}} (thin clear) to {{SG 1.55}} (dark detail)                                                                                 | {{SG 1.71–1.81}}                            | Follow the product; use CMC gum or a brushing medium    |
-| Spraying | No figure; Hopper, writing for Ceramic Arts Network, says much thinner, with a deflocculant (an additive that makes a slurry runnier) | {{SG 1.71}}                                 | No reliable number; spray only in a spray booth         |
+| Kasutus       | Digitalfire ja Glazy                                                                                                                                                                 | Potclays (Ühendkuningriik)                            | Kindel lähtepunkt                                                                       |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| Sissekastmine | {{SG 1.40}} (5-sekundilise kastmise jaoks) kuni {{SG 1.50}} (1-sekundilise kastmise jaoks); kodus segatud tarretunud glasuurid toimivad kõige paremini, kui näit on {{SG 1.43–1.45}} | Läbipaistev: {{SG 1.46–1.48}}; värviline: {{SG 1.61}} | {{SG 1.45}}; kui glasuur tilgub, lahjendage, kuni näit on {{SG 1.43}}, ja tarretage see |
+| Pintseldamine | {{SG 1.25}} (õhuke läbipaistev) kuni {{SG 1.55}} (tumedad detailid)                                                                                                                  | {{SG 1.71–1.81}}                                      | Järgige toote juhiseid; kasutage CMC-d (glasuuriliimi) või pintslilisandit              |
+| Pritsimine    | Arv puudub; Hopper, kes kirjutab väljaandele Ceramic Arts Network, ütleb: palju vedelam, deflokulandiga{{en: deflocculant}} (lisaaine, mis muudab glasuurilahuse vedelamaks)         | {{SG 1.71}}                                           | Usaldusväärset arvu pole; pritsige ainult glasuurimiskapis                              |
 
-To check a dipping glaze by eye, AMACO dips for 5 seconds and looks for a coat about as thick as a US dime. Digitalfire fires tiles dipped for 5 seconds to check.
+Kastmisglasuuri silma järgi kontrollimiseks kastab AMACO 5 sekundit ja otsib umbes sama paksu kihti kui USA kümnesendine münt. Digitalfire põletab kontrolliks 5 sekundit kastetud proovitükke{{en: test tiles}}.
 
-### Water for a target SG: our estimate
+### Vee kogus soovitud suhtelise tiheduse jaoks: selle juhendi hinnang
 
-The table below is our own arithmetic, not a source's. It assumes the powder's particles have a density of 2.6 g per cm³, which is an assumption, not a measurement. Clay, soluble materials and gelling all change a real glaze, so use it to start, then measure. As a check, it predicts {{SG 1.44}} for equal weights of powder and water, close to Digitalfire's measured {{SG 1.46}}. It also shows that 70 to 80 mL per 100 g starts you above {{SG 1.50}}, thicker than you need.
+Allolev tabel on selle juhendi enda arvutus, mitte allika oma. See eeldab, et pulbri osakeste tihedus on 2,6 g/cm³, mis on eeldus, mitte mõõtmistulemus. Savi, lahustuvad toorained ja tarretumine muudavad päris glasuuri, seega kasutage tabelit alustamiseks ja seejärel mõõtke. Kontrolliks: võrdse massiga pulbri ja vee korral on arvutuse tulemuseks {{SG 1.44}}, mis on lähedane Digitalfire’i mõõtmistulemusele ({{SG 1.46}}). See näitab ka, et 70–80 mL vett 100 g kohta teeb glasuuri alguses paksemaks, kui vaja: näit on suurem kui {{SG 1.50}}.
 
-Table: Water for a target specific gravity (our estimate)
-Label: Water for a target specific gravity
+Table: Vee kogus soovitud suhtelise tiheduse jaoks (selle juhendi hinnang)
+Label: Vee kogus soovitud suhtelise tiheduse jaoks
 
-| Target      | Per 100 g of powder |  Per kilogram |         Per pound |
-| ----------- | ------------------: | ------------: | ----------------: |
-| {{SG 1.40}} |        about 115 mL | about 1150 mL | about 18 US fl oz |
-| {{SG 1.45}} |         about 98 mL |  about 980 mL | about 15 US fl oz |
-| {{SG 1.50}} |         about 85 mL |  about 850 mL | about 13 US fl oz |
-| {{SG 1.60}} |         about 64 mL |  about 640 mL | about 10 US fl oz |
+| Siht        | 100 g pulbri kohta | Kilogrammi kohta |        Naela kohta |
+| ----------- | -----------------: | ---------------: | -----------------: |
+| {{SG 1.40}} |       umbes 115 mL |    umbes 1150 mL | umbes 18 USA fl oz |
+| {{SG 1.45}} |        umbes 98 mL |     umbes 980 mL | umbes 15 USA fl oz |
+| {{SG 1.50}} |        umbes 85 mL |     umbes 850 mL | umbes 13 USA fl oz |
+| {{SG 1.60}} |        umbes 64 mL |     umbes 640 mL | umbes 10 USA fl oz |
 
-### Epsom salts, CMC gum and bentonite
+### Inglise sool, CMC ja bentoniit
 
-**Epsom salts** make a glaze gel slightly when it stands still and flow again when it is stirred. This is called **flocculating** it, and a glaze that behaves this way is **thixotropic**: it goes on more evenly, drips less and settles less. Digitalfire suggests starting at about 2 g per gallon once the SG is right (roughly 0.5 g per liter, our conversion) and tuning the amount each time you mix, since no recipe should fix the dose. We suggest dissolving it in a little hot water first. In a Digitalfire example, a glaze at {{SG 1.45}} dripped, so water brought it down to {{SG 1.43}} and Epsom salts gelled it back to creamy, and it went on evenly. A rough check: stir, stop and watch. A gelled glaze moves on for about 2 or 3 seconds, then stops and springs back a little.
+**Inglise sool** (magneesiumsulfaat) paneb glasuuri seistes kergelt tarretuma ja segamisel uuesti voolama. Seda nimetatakse **flokuleerimiseks**{{en: flocculating}} ja nii käituv glasuur on **tiksotroopne**{{en: thixotropic}}: see kandub peale ühtlasemalt, tilgub vähem ja settib vähem. Digitalfire soovitab alustada, kui suhteline tihedus on paigas, kogusega umbes 2 g galloni kohta (ligikaudu 0,5 g liitri kohta, selle juhendi ümberarvutus) ja kohandada kogust iga segamise korral, sest annus ei peaks olema retseptiga kindlaks määratud. See juhend soovitab inglise soola kõigepealt väheses kuumas vees lahustada. Ühes Digitalfire’i näites tilkus glasuur, mille näit oli {{SG 1.45}}; vett lisati, kuni näit oli {{SG 1.43}}, ja inglise sool tarretas glasuuri taas kreemjaks, nii et see kandus peale ühtlaselt. Ligikaudne kontroll: segage, lõpetage ja vaadake. Tarretunud glasuur liigub veel umbes 2 või 3 sekundit, siis peatub ja põrkab veidi tagasi.
 
-**CMC gum** (carboxymethyl cellulose) makes a slurry stickier and slower to dry, and leaves a harder coat that holds to the pot. It matters most for brushing glazes and glazes high in frit. Digitalfire's example blends 3.75 g into 1000 g of slurry, and it has to go in with a blender. A glaze with CMC will not gel with Epsom salts, and since microbes feed on the gum, it can change in the bucket and start to smell.
+**CMC** (karboksümetüültselluloos, glasuuriliim) muudab glasuurilahuse kleepuvamaks ja aeglasemalt kuivavaks ning jätab kõvema kihi, mis püsib esemel. See on kõige olulisem pintselglasuuride ja suure fritisisaldusega glasuuride puhul. Digitalfire’i näites segatakse 3,75 g 1000 g glasuurilahusesse ja see tuleb sisse segada blenderiga. CMC-ga glasuur ei tarretu inglise soolaga ja kuna mikroobid toituvad sellest liimainest, võib glasuur ämbris muutuda ja hakata haisema.
 
-**Bentonite**, a very fine clay, helps hold the other particles in suspension. Dipping glazes usually rely on 15 to 25% raw clay for this. For a recipe short of clay, about 1 to 3% bentonite helps; Digitalfire says a glaze with more than 15% clay should not need more than 1%.
+**Bentoniit**, väga peen savi, aitab hoida teisi osakesi hõljumas. Kastmisglasuurides teeb seda tavaliselt 15–25% toorest savi. Kui retseptis on savi vähe, aitab umbes 1–3% bentoniiti; Digitalfire’i sõnul ei peaks glasuur, milles on üle 15% savi, vajama üle 1%.
 
 ## Proovitükid ja katseread {#testing}
 
@@ -276,7 +276,7 @@ Label: Märkmete mall
 > [!NOTE]
 > Glazecalcis hoiab salvestatud [retsept](/recipe) retsepti ennast. [Põletuspäevik](/firing) salvestab iga põletuse: ahju, kuupäeva, kellaajad, temperatuurid, koonused ja märkused. [Märkmetes](/notes) on kõik muu, näiteks ülaltoodud segu andmed ja see, mida iga proovitükk näitas.
 
-## Sources {#sources lang=en}
+## Allikad {#sources}
 
 - [Glazy: Raw materials](https://help.glazy.org/concepts/materials)
 - [Glazy: Specific gravity](https://help.glazy.org/testing/specific-gravity)

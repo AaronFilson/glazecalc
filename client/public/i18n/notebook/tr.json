@@ -49,6 +49,10 @@
         "title": "Rehberler",
         "text": "Sırrın ne olduğundan pişirilmesine kadar, yol boyunca herkesi güvende tutarak."
       },
+      "trash": {
+        "title": "Çöp kutusu",
+        "text": "Son 30 günde kaldırdıklarınızı geri koyun."
+      },
       "account": {
         "title": "Hesap ve ayarlar",
         "text": "Ayarlar, parolanız, iki adımlı oturum açma ve burada sakladığınız her şeyin indirilmesi."
@@ -116,6 +120,7 @@
   },
   "trash": {
     "title": "Çöp kutusu",
+    "lead": "Kaldırdıklarınız (reçeteler, hammaddeler, katkılar, notlar, pişirim kayıtları ve tavsiyeler) burada 30 gün bekler. Geri koyun veya kalıcı olarak silin.",
     "listHeading": "Çöp kutusunda",
     "none": "Çöp kutusu boş.",
     "untitled": "Başlıksız",

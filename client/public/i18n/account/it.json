@@ -207,6 +207,11 @@
     "recipes": "Ricette (CSV)",
     "materials": "Materiali (CSV)"
   },
+  "trash": {
+    "heading": "Cestino",
+    "text": "Ciò che rimuove dal Suo quaderno resta 30 giorni nel cestino. Lo ripristini da lì, oppure lo elimini per sempre.",
+    "open": "Apri il cestino"
+  },
   "shared": {
     "heading": "Ricette condivise",
     "text": "Le ricette che condivide con un link, che chiunque abbia il link può leggere senza un account. Un link viene mostrato una sola volta, quando viene creato, quindi non può essere mostrato qui. Per condividere di nuovo una ricetta, crei un nuovo link da Altro, nella ricetta.",
@@ -301,6 +306,7 @@
         "saved": "Salvato: cottura a coni Orton."
       },
       "sk": {
+        "label": "A coni SK, JIS R 8101",
         "example": "SK 4a, SK 8",
         "saved": "Salvato: cottura a coni SK."
       },

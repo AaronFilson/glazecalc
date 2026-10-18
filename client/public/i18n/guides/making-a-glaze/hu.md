@@ -22,58 +22,58 @@ A mázkészítés azt jelenti, hogy egy recept szerint porított **nyersanyagoka
 > [!WARNING]
 > **A száraz mázpor porártalom veszélyével jár.** A száraz máz 10–60%-a kristályos szilícium-dioxid lehet, és a brit munkavédelmi hatóság, a Health and Safety Executive (HSE) figyelmeztet, hogy ennek pora normál megvilágításnál láthatatlan. Óvatosan, kis magasságból merjen, tartsa a fedeleket az edényeken, a port minél hamarabb nedvesítse meg, és nedvesen takarítson, soha ne seprűvel. Amíg a porok szárazak, viseljen jól illeszkedő légzésvédő maszkot (az Egyesült Államokban N95 vagy P100, az Egyesült Királyságban és az EU-ban FFP2 vagy FFP3, Ausztráliában és Új-Zélandon P2 vagy P3). A [biztonságos keverésről szóló útmutató](/guides/safe-mixing) részletesen foglalkozik a porral, a légzésvédőkkel és a takarítással.
 
-## Buying materials {#buying-materials lang=en}
+## A nyersanyagok beszerzése {#buying-materials}
 
-### Where to buy
+### Hol vásároljon?
 
-Potters buy from ceramic suppliers, which sell clay, glaze materials and tools. The table shows some for your country, each checked on the shop's own site, and you can choose another country to see its shops. Stock changes, so check before you order. Large producers such as Sibelco and Imerys sell to industry; potters buy their materials through shops like these. The ceramics reference site Digitalfire keeps a directory of supplier stores for other places.
+A fazekasok kerámiai szaküzletekben vásárolnak, amelyek agyagot, máznyersanyagokat és eszközöket árulnak. A táblázat mutat néhányat az Ön országából, mindegyiket a bolt saját honlapján ellenőriztük, és ha másik országot választ, annak boltjait is megnézheti. A kínálat változik, ezért rendelés előtt ellenőrizze. Az olyan nagy gyártók, mint a Sibelco és az Imerys, az iparnak adnak el; a fazekasok az ő nyersanyagaikat ilyen boltokon keresztül veszik meg. Más helyek forgalmazóiról a Digitalfire kerámiai szakoldal vezet jegyzéket.
 
 ::shops
 
-### How much to buy
+### Mennyit vásároljon?
 
-The standard sack is **50 lb (22.7 kg)** in the US and **25 kg (55 lb)** elsewhere, so the two are nearly the same. Many suppliers also sell 1, 2.5 or 5 kg packs (about 2.2, 5.5 or 11 lb) for tests. Glazy, the open recipe database, advises buying the materials you use steadily (feldspar, silica, kaolin, whiting, and frit for mid-fire) in full sacks, which are often 20 to 30% cheaper. Buy **colorants**, the metal oxides and stains that color a glaze, in small amounts: most are used at under 5%. Glazy's sample shopping lists came to about $515 for mid-fire and $397 for high-fire, at US prices.
+A szokásos zsák az Egyesült Államokban **50 lb (22,7 kg)**, máshol **25 kg (55 lb)**, vagyis a kettő majdnem ugyanakkora. Sok forgalmazó próbákhoz 1; 2,5 vagy 5 kg-os kiszerelést is árul (kb. 2,2; 5,5 vagy 11 lb). A Glazy, a nyílt receptadatbázis, azt tanácsolja, hogy a rendszeresen használt nyersanyagokat (földpát{{en: feldspar}}, kvarc{{en: silica}}, kaolin, mészkőliszt{{en: whiting}}, közepes tüzű égetéshez pedig fritt{{en: frit}}) egész zsákban vegye, mert így gyakran 20–30%-kal olcsóbbak. A **színezőanyagokat**{{en: colorants}}, vagyis a mázat{{en: glaze}} színező fém-oxidokat és színtesteket{{en: stains}}, kis mennyiségben vegye: többségüket 5% alatt használják. A Glazy minta-bevásárlólistái amerikai árakon közepes tüzű égetéshez kb. 515, magas tüzűhöz 397 dollárt tettek ki.
 
-### A starter set
+### Kezdőkészlet
 
-Glazy's core list for any temperature is silica, kaolin, feldspar, whiting, zinc oxide, and dolomite or talc. Most mid-fire (cone 5 to 6) glazes also need boron, usually from a frit, which Glazy calls "consistent and less soluble than raw borates". The set below is our suggestion, drawn from Glazy's list and a forum list. The [glazing basics guide](/guides/glazing-basics) explains what each material does.
+A Glazy minden hőfokra érvényes alaplistája: kvarc, kaolin, földpát, mészkőliszt, cink-oxid, valamint dolomit vagy talkum. A legtöbb közepes tüzű (5–6-os Orton-gúlás{{en: cone}}) máznak bórra is szüksége van, általában egy frittből, amely a Glazy szerint „egyenletes minőségű, és kevésbé oldódik, mint a nyers borátok”. Az alábbi készlet a mi javaslatunk, a Glazy listája és egy fórumon közzétett lista alapján. Hogy melyik nyersanyag mit csinál, azt a [mázazás alapjairól szóló útmutató](/guides/glazing-basics) magyarázza el.
 
-Table: A starter set of materials (our suggestion)
-Label: Starter set
+Table: Kezdő nyersanyagkészlet (a mi javaslatunk)
+Label: Kezdőkészlet
 
-| Material                              | What to buy                                                                      |
-| ------------------------------------- | -------------------------------------------------------------------------------- |
-| Silica (also called flint; see below) | 325 mesh, the finer grade Glazy prefers for glazes                               |
-| Kaolin (china clay in the UK)         | EPK in the US; Grolleg or another china clay in the UK; NZ kaolin in New Zealand |
-| Potash feldspar                       | Whichever is current where you live, such as Mahavir in the US                   |
-| Nepheline syenite                     | Any; Glazy notes its stronger fluxing power, often used at low and mid-fire      |
-| Whiting                               | Any                                                                              |
-| Talc                                  | Any asbestos-free grade; check its SDS (see Safe mixing)                         |
-| A boron frit, for mid-fire            | Ferro 3134, 3124 or 3195; in the UK, Potterycrafts P3124 or P3195                |
-| Bentonite and colorants               | Small amounts                                                                    |
+| Nyersanyag                                   | Mit vásároljon                                                                                                      |
+| -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| Kvarc (angolul flint néven is; lásd lent)    | 325 mesh-es, ez a finomabb őrlés, amelyet a Glazy a mázakhoz előnyben részesít                                      |
+| Kaolin (az Egyesült Királyságban China clay) | Az Egyesült Államokban EPK; az Egyesült Királyságban Grolleg vagy más China clay; Új-Zélandon új-zélandi kaolin     |
+| Káliföldpát{{en: potash feldspar}}           | Amelyik éppen kapható ott, ahol él, például az Egyesült Államokban a Mahavir                                        |
+| Nefelinszienit{{en: nepheline syenite}}      | Bármelyik; a Glazy megjegyzi, hogy erősebb az olvasztóhatása, gyakran használják alacsony és közepes tüzű égetéshez |
+| Mészkőliszt                                  | Bármelyik                                                                                                           |
+| Talkum                                       | Bármilyen azbesztmentes minőség; ellenőrizze a biztonsági adatlapját (lásd: Biztonságos keverés és szellőzés)       |
+| Bórfritt, közepes tüzű égetéshez             | Ferro 3134, 3124 vagy 3195; az Egyesült Királyságban Potterycrafts P3124 vagy P3195                                 |
+| Bentonit és színezőanyagok                   | Kis mennyiségben                                                                                                    |
 
-### Data sheets and safety data sheets
+### Műszaki és biztonsági adatlapok
 
-Ask for two documents for each material. A **technical data sheet** (TDS) gives its **chemical analysis**: the share of each oxide in the powder, by weight. Glazecalc works from these, and you can add a material from a supplier's analysis on the [Materials page](/material). A **safety data sheet** (SDS) says how to handle the raw powder. Keep each SDS, and read it before you mix.
+Minden nyersanyaghoz kérjen két dokumentumot. A **műszaki adatlap** (TDS) megadja a nyersanyag **kémiai összetételét**: az egyes oxidok tömeg szerinti arányát a porban. A Glazecalc ezekből számol, és a [Nyersanyagok oldalon](/material) egy forgalmazó által megadott összetétel alapján új nyersanyagot is felvehet. A **biztonsági adatlap** (SDS) leírja, hogyan kell bánni a nyers porral. Minden biztonsági adatlapot őrizzen meg, és keverés előtt olvassa el.
 
-Analyses are averages, not promises. Valentine Clays prints "MEAN VALUES. THESE DO NOT REPRESENT A SPECIFICATION" on its flint data sheet, and Glazy's analyses of Custer feldspar from different years run from about 68.5% to 72.4% silica. We suggest writing each sack's **lot number** (its batch code) in your records, so you can tell whether a change in a trusted glaze came from the material.
+Az összetételi adatok átlagok, nem ígéretek. A Valentine Clays a flint (kovakő) adatlapjára ezt nyomtatja: „ÁTLAGÉRTÉKEK. EZEK NEM JELENTENEK SPECIFIKÁCIÓT”, és a Custer földpát különböző évekből származó, a Glazy adatbázisában közölt összetételei kb. 68,5%-tól 72,4%-ig terjedő szilícium-dioxid-tartalmat mutatnak. Azt javasoljuk, hogy minden zsák **gyártási tételszámát** (LOT, vagyis a gyártási tétel kódját) írja fel a feljegyzéseibe, így meg tudja állapítani, hogy egy bevált máz változását a nyersanyag okozta-e.
 
-HSE warns that crystalline silica "can be wrongly labelled as 'amorphous silica'". And an SDS is about the powder, not the pot: it says nothing about whether a fired glaze is safe for food. Only a laboratory leach test of the fired pot can show that.
+A HSE figyelmeztet, hogy a kristályos szilícium-dioxidot „tévesen »amorf szilícium-dioxid« jelöléssel is elláthatják”. A biztonsági adatlap ráadásul a porról szól, nem az edényről: semmit sem mond arról, hogy a kiégetett máz alkalmas-e élelmiszerrel való érintkezésre{{en: food safe}}. Ezt csak a kiégetett edény laboratóriumi kioldódási vizsgálata mutathatja meg.
 
-### Names change, so buy by chemistry
+### A nevek változnak: vásároljon a kémiai összetétel alapján
 
-Brand names come and go as mines close. Custer feldspar, mined in South Dakota for more than 75 years, ran out in late 2023. When Clay Art Center switched to G-200 AU and Mahavir, about half its glazes needed adjusting. G-200 and G-200 HP are gone too, and Laguna now imports Mahavir, whose chemistry is close to G-200.
+A márkanevek jönnek-mennek, ahogy a bányák bezárnak. A Custer földpát, amelyet több mint 75 évig bányásztak Dél-Dakotában, 2023 végén elfogyott. Amikor a Clay Art Center a G-200 AU és a Mahavir földpátra tért át, a mázai kb. felét módosítani kellett. A G-200 és a G-200 HP is megszűnt, a Laguna pedig most a Mahavir földpátot importálja, amelynek kémiai összetétele közel áll a G-200 összetételéhez.
 
-**Gerstley Borate**, a natural boron mineral in many older recipes, has been scarce since its mine closed in 2000, though New Mexico Clay reported in November 2025 that Laguna was supplying "Gerstley Borate Original". Sources disagree about **Gillespie Borate** as a replacement. Its maker sells it as pound-for-pound. Berkeley Potters Studio says it "is not a direct substitute", and Digitalfire found it changed a glaze's color. The safe course is to compare the two by their oxides, then test.
+A **Gerstley Borate**, ez a sok régebbi receptben szereplő természetes bórásvány, nehezen beszerezhető, mióta 2000-ben bezárták a bányáját, bár a New Mexico Clay 2025 novemberében arról számolt be, hogy a Laguna szállítja a „Gerstley Borate Original” nevű terméket. A források nem egységesek abban, hogy a **Gillespie Borate** helyettesítheti-e. Gyártója úgy árulja, hogy fontra azonos mennyiségben helyettesíti. A Berkeley Potters Studio szerint „nem közvetlen helyettesítő”, a Digitalfire pedig azt tapasztalta, hogy megváltoztatta egy máz színét. A biztonságos út az, ha a kettőt az oxidjaik alapján hasonlítja össze, majd kipróbálja.
 
-Regional names differ too. In North America, **flint**, quartz and silica mean the same ground silica, and Digitalfire says you probably won't find true flint powder from suppliers. In the UK, flint is its own product: Valentine's is calcined (heated) silica. Both are nearly pure silica, so we expect them to be close, but check the analysis. For kaolin, Glazy says one-for-one swaps, such as EPK for a china clay, "often work just fine, especially when amounts are \<10%".
+A nevek régiónként is eltérnek. Észak-Amerikában a **flint** (kovakő), a quartz (kvarc) és a silica (szilícium-dioxid) ugyanazt az őrölt kvarcot jelenti, és a Digitalfire szerint valódi kovakőport valószínűleg nem fog találni a forgalmazóknál. Az Egyesült Királyságban a flint külön termék: a Valentine Clays flintje kalcinált (hevített) szilícium-dioxid. Mindkettő szinte tiszta szilícium-dioxid, ezért arra számítunk, hogy közel állnak egymáshoz, de ellenőrizze az összetételt. A kaolinnál a Glazy szerint az egy az egyben csere, például EPK egy China clay helyett, „gyakran teljesen jól működik, különösen ha a mennyiség \<10%”.
 
-Many recipes name materials that are sold in one country and not another. The table below takes each material in Glazecalc's library that is not sold where you buy, and finds the closest of its kind that is, by their analyses. The figure is how far apart the two are: the grams by which their fired oxides differ, per 100 g of material, added up over every oxide. Within about 15 g, one can usually stand in for the other in a first test. The names carry the makers' and shops' own codes, so you can ask for them by name.
+Sok recept olyan nyersanyagot ír elő, amelyet az egyik országban árulnak, a másikban nem. Az alábbi táblázat a Glazecalc könyvtárának minden olyan nyersanyagához, amelyet ott, ahol Ön vásárol, nem forgalmaznak, az összetételek alapján megkeresi a legközelebbi, ugyanolyan fajta nyersanyagot, amely ott kapható. A szám azt mutatja, mennyire tér el a kettő: hány grammal különböznek a kiégetett oxidjaik 100 g nyersanyagra vetítve, az összes oxidra összeadva. Kb. 15 g-on belül egy első próbában az egyik általában helyettesítheti a másikat. A nevek a gyártók és a boltok saját kódjait tartalmazzák, így név szerint kérheti őket.
 
 ::local-equivalents
 
 > [!NOTE]
-> Glazecalc compares materials by what they bring to the fired glaze, not by name. A [recipe](/recipe) with a material no longer made says what is used now. **Suggest amounts and compare** works the amounts out again for a substitute, and **Match with what I have** makes the recipe again from the materials on your shelf. Both match the fired oxides only, so test a small batch first.
+> A Glazecalc a nyersanyagokat aszerint hasonlítja össze, hogy mit adnak a kiégetett mázhoz, nem a nevük alapján. Ha egy [receptben](/recipe) már nem gyártott nyersanyag szerepel, a recept jelzi, mit használnak ma helyette. A **Mennyiségjavaslat és összehasonlítás** funkció újraszámolja a mennyiségeket egy helyettesítő anyaghoz, az **Összeállítás a meglévő nyersanyagaimból** funkció pedig a készletében lévő nyersanyagokból állítja össze újra a receptet. Mindkettő csak a kiégetett oxidokat egyezteti, ezért először egy kis adagot próbáljon ki.
 
 ## A nyersanyagok és a mázak tárolása {#storing}
 
@@ -163,55 +163,55 @@ Label: Szitaméret
 | Színezőanyagot{{en: colorants}}, például kobaltot vagy vasat tartalmazó mázak | 100–120 mesh              |
 | Hamumázak és más, durva nyersanyagot tartalmazó mázak                         | 60–80 mesh                |
 
-## Specific gravity {#specific-gravity lang=en}
+## Fajsúly {#specific-gravity}
 
-**Specific gravity** (SG) tells you how much powder is in your slurry. It is the weight of a volume of glaze divided by the weight of the same volume of water. Water is 1.00, and a glaze at {{SG 1.45}} weighs 145 g per 100 mL. Mixing to a measured SG is how you get the same thickness, and the same coat, every time. It has no units, so it is the same in grams or ounces.
+A **fajsúly**{{en: specific gravity}} (angolul: SG) megmutatja, mennyi por van a máziszapban{{en: slurry}}. Egy adott térfogatú máz{{en: glaze}} tömegének és ugyanakkora térfogatú víz tömegének a hányadosa. A víz értéke 1,00, egy máz pedig {{SG 1.45}} mellett 100 mL-enként 145 g. Ha mért fajsúlyra keveri, minden alkalommal ugyanazt a sűrűséget és ugyanolyan mázréteget kapja. Nincs mértékegysége, így grammban és unciában számolva is ugyanannyi.
 
-### Measure it by weighing 100 mL
+### Mérés 100 mL lemérésével
 
-1. Stir the glaze so nothing has settled.
-2. Put a 100 mL **graduated cylinder** (a tall, marked measuring tube) or a 100 mL syringe on the scale, and tare it.
-3. Fill it with glaze to exactly 100 mL, reading the mark at eye level.
-4. Weigh it and divide the grams by 100: 145 g is SG 1.45.
+1. Keverje fel a mázat, hogy semmi ne maradjon leülepedve.
+2. Tegyen a mérlegre egy 100 mL-es **mérőhengert** (magas, beosztásos mérőedényt) vagy egy 100 mL-es fecskendőt, és nullázza le a mérleget.
+3. Töltse meg mázzal pontosan 100 mL-ig, a jelet szemmagasságból leolvasva.
+4. Mérje le, és ossza el a grammokat 100-zal: 145 g esetén a fajsúly 1,45.
 
-Digitalfire also marks a cup at the level of 500 g of water, fills it to the mark with glaze, and divides the weight by 500; a bigger, fuller measure is more accurate. A **hydrometer**, a float read where it sits in the glaze, is quick but can misread thick or gelled glazes. UK hydrometers, such as Potclays', read in degrees Baumé (°Bé). By our arithmetic, SG = 145 ÷ (145 − °Bé), so 46 °Bé is about 1.46. Older UK books give a **pint weight**, the ounces in an imperial pint of glaze: divide it by 20, so 29 oz is about SG 1.45 (also our arithmetic).
+A Digitalfire egy poharon bejelöli 500 g víz szintjét, a jelig tölti mázzal, és a tömeget elosztja 500-zal; a nagyobb, teltebb mérőedény pontosabb. Az **areométer** (sűrűségmérő), egy úszótest, amelyről ott kell leolvasni az értéket, ahol a mázban megáll, gyors, de sűrű vagy bedermedt mázaknál tévesen mérhet. A brit areométerek, például a Potclays areométere, Baumé-fokban (°Bé) mérnek. Saját számításunk szerint fajsúly = 145 ÷ (145 − °Bé), így 46 °Bé kb. 1,46-nak felel meg. Régebbi brit könyvek **pint-súlyt** adnak meg, vagyis azt, hogy hány uncia egy angol pint máz: ezt ossza el 20-szal, így 29 oz kb. 1,45-ös fajsúlynak felel meg (ez is saját számításunk).
 
-### What to aim for
+### Célértékek
 
-Sources disagree, most of all on brushing and spraying, where the UK supplier Potclays gives much higher figures (its own are "for guidance only"). Treat every number as a starting point. Digitalfire's core advice is to find the SG and gelling that work for each glaze, then repeat them and write them down.
+A források eltérnek, leginkább az ecsetelésnél és a szórásnál, ahol a brit Potclays forgalmazó jóval magasabb értékeket ad meg (saját közlése szerint értékei „csak tájékoztató jellegűek”). Minden számot kiindulópontnak tekintsen. A Digitalfire fő tanácsa az, hogy minden mázhoz keresse meg a jól működő fajsúlyt és bedermesztést, majd ezeket ismételje meg és jegyezze fel.
 
-Table: Specific gravity targets, where sources disagree
-Label: Specific gravity targets
+Table: Fajsúly-célértékek, ahol a források eltérnek
+Label: Fajsúly-célértékek
 
-| Use      | Digitalfire and Glazy                                                                                                                 | Potclays (UK)                               | Safe starting point                                     |
-| -------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------- |
-| Dipping  | {{SG 1.40}} (for a 5-second dip) to {{SG 1.50}} (for a 1-second dip); home-mixed glazes that are gelled do best at {{SG 1.43–1.45}}   | Clear {{SG 1.46–1.48}}; colored {{SG 1.61}} | {{SG 1.45}}; thin to {{SG 1.43}} and gel it if it drips |
-| Brushing | {{SG 1.25}} (thin clear) to {{SG 1.55}} (dark detail)                                                                                 | {{SG 1.71–1.81}}                            | Follow the product; use CMC gum or a brushing medium    |
-| Spraying | No figure; Hopper, writing for Ceramic Arts Network, says much thinner, with a deflocculant (an additive that makes a slurry runnier) | {{SG 1.71}}                                 | No reliable number; spray only in a spray booth         |
+| Felhordás | Digitalfire és Glazy                                                                                                                                                                   | Potclays (Egyesült Királyság)                    | Biztonságos kiindulópont                                                        |
+| --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------ | ------------------------------------------------------------------------------- |
+| Mártás    | {{SG 1.40}} (5 másodperces mártáshoz) és {{SG 1.50}} (1 másodperces mártáshoz) között; a házilag kevert, bedermesztett mázak {{SG 1.43–1.45}} mellett a legjobbak                      | Színtelen: {{SG 1.46–1.48}}; színes: {{SG 1.61}} | {{SG 1.45}}; ha csepeg, hígítsa {{SG 1.43}} értékre, és dermessze be            |
+| Ecsetelés | {{SG 1.25}} (híg, színtelen máz) és {{SG 1.55}} (sötét részletek) között                                                                                                               | {{SG 1.71–1.81}}                                 | Kövesse a termék előírásait; használjon CMC mázragasztót vagy ecsetelő médiumot |
+| Szórás    | Nincs érték; Hopper a Ceramic Arts Network számára írt cikkében jóval hígabbat javasol, folyósítószerrel{{en: deflocculant}} (olyan adalékkal, amely hígfolyósabbá teszi a máziszapot) | {{SG 1.71}}                                      | Nincs megbízható szám; csak szórófülkében szórjon                               |
 
-To check a dipping glaze by eye, AMACO dips for 5 seconds and looks for a coat about as thick as a US dime. Digitalfire fires tiles dipped for 5 seconds to check.
+A mártómáz szemre történő ellenőrzéséhez az AMACO 5 másodpercig márt, és kb. egy amerikai tízcentes érme (dime) vastagságú mázréteget keres. A Digitalfire ellenőrzésképpen 5 másodpercig mártott próbalapokat{{en: test tiles}} éget ki.
 
-### Water for a target SG: our estimate
+### Víz a kívánt fajsúlyhoz: saját becslésünk
 
-The table below is our own arithmetic, not a source's. It assumes the powder's particles have a density of 2.6 g per cm³, which is an assumption, not a measurement. Clay, soluble materials and gelling all change a real glaze, so use it to start, then measure. As a check, it predicts {{SG 1.44}} for equal weights of powder and water, close to Digitalfire's measured {{SG 1.46}}. It also shows that 70 to 80 mL per 100 g starts you above {{SG 1.50}}, thicker than you need.
+Az alábbi táblázat a saját számításunk, nem egy forrásé. Azzal számol, hogy a por szemcséinek sűrűsége 2,6 g/cm³, ami feltételezés, nem mérési eredmény. Az agyag, az oldódó nyersanyagok és a bedermesztés mind módosítják a valódi mázat, ezért kiindulásnak használja, aztán mérjen. Ellenőrzésképpen: azonos tömegű por és víz esetén {{SG 1.44}} értéket ad, ami közel van a Digitalfire által mért {{SG 1.46}} értékhez. Azt is mutatja, hogy 100 g-onként 70–80 mL vízzel {{SG 1.50}} fölött kezd, vagyis sűrűbben, mint amire szükség van.
 
-Table: Water for a target specific gravity (our estimate)
-Label: Water for a target specific gravity
+Table: Víz a kívánt fajsúlyhoz (saját becslésünk)
+Label: Víz a kívánt fajsúlyhoz
 
-| Target      | Per 100 g of powder |  Per kilogram |         Per pound |
-| ----------- | ------------------: | ------------: | ----------------: |
-| {{SG 1.40}} |        about 115 mL | about 1150 mL | about 18 US fl oz |
-| {{SG 1.45}} |         about 98 mL |  about 980 mL | about 15 US fl oz |
-| {{SG 1.50}} |         about 85 mL |  about 850 mL | about 13 US fl oz |
-| {{SG 1.60}} |         about 64 mL |  about 640 mL | about 10 US fl oz |
+| Cél         | 100 g porhoz | Kilogrammonként |      Fontonként |
+| ----------- | -----------: | --------------: | --------------: |
+| {{SG 1.40}} |   kb. 115 mL |     kb. 1150 mL | kb. 18 US fl oz |
+| {{SG 1.45}} |    kb. 98 mL |      kb. 980 mL | kb. 15 US fl oz |
+| {{SG 1.50}} |    kb. 85 mL |      kb. 850 mL | kb. 13 US fl oz |
+| {{SG 1.60}} |    kb. 64 mL |      kb. 640 mL | kb. 10 US fl oz |
 
-### Epsom salts, CMC gum and bentonite
+### Keserűsó, CMC és bentonit
 
-**Epsom salts** make a glaze gel slightly when it stands still and flow again when it is stirred. This is called **flocculating** it, and a glaze that behaves this way is **thixotropic**: it goes on more evenly, drips less and settles less. Digitalfire suggests starting at about 2 g per gallon once the SG is right (roughly 0.5 g per liter, our conversion) and tuning the amount each time you mix, since no recipe should fix the dose. We suggest dissolving it in a little hot water first. In a Digitalfire example, a glaze at {{SG 1.45}} dripped, so water brought it down to {{SG 1.43}} and Epsom salts gelled it back to creamy, and it went on evenly. A rough check: stir, stop and watch. A gelled glaze moves on for about 2 or 3 seconds, then stops and springs back a little.
+A **keserűsó** (magnézium-szulfát) hatására a máz állás közben kissé bedermed, keveréskor pedig újra folyóssá válik. Ezt **flokkulálásnak**{{en: flocculating}} nevezik, az így viselkedő máz pedig **tixotróp**{{en: thixotropic}}: egyenletesebben hordható fel, kevésbé csepeg, és kevésbé ülepedik le. A Digitalfire azt javasolja, hogy ha a fajsúly már megfelelő, gallononként kb. 2 g-mal kezdje (saját átszámításunk szerint ez durván 0,5 g literenként), és a mennyiséget minden keverésnél állítsa be újra, mert az adagot egyetlen receptnek sem kellene rögzítenie. Azt javasoljuk, hogy előbb oldja fel kevés forró vízben. A Digitalfire egyik példájában egy máz {{SG 1.45}} mellett csepegett, ezért vízzel {{SG 1.43}} értékre hígították, keserűsóval pedig újra krémes állagúra dermesztették, és így egyenletesen felhordható lett. Egy durva próba: keverje meg, hagyja abba, és figyelje. A bedermesztett máz még kb. 2 vagy 3 másodpercig mozog, aztán megáll, és kicsit visszalendül.
 
-**CMC gum** (carboxymethyl cellulose) makes a slurry stickier and slower to dry, and leaves a harder coat that holds to the pot. It matters most for brushing glazes and glazes high in frit. Digitalfire's example blends 3.75 g into 1000 g of slurry, and it has to go in with a blender. A glaze with CMC will not gel with Epsom salts, and since microbes feed on the gum, it can change in the bucket and start to smell.
+A **CMC** (karboxi-metil-cellulóz) mázragasztó ragacsosabbá és lassabban száradóvá teszi a máziszapot, és keményebb mázréteget hagy, amely jól tapad az edényre. Leginkább az ecsetelhető mázaknál és a sok frittet{{en: frit}} tartalmazó mázaknál fontos. A Digitalfire példájában 3,75 g-ot kevernek 1000 g máziszapba, és ezt turmixgéppel kell bekeverni. A CMC-t tartalmazó máz keserűsóval nem dermeszthető be, és mivel a ragasztóval mikrobák táplálkoznak, a vödörben megváltozhat, és szagossá válhat.
 
-**Bentonite**, a very fine clay, helps hold the other particles in suspension. Dipping glazes usually rely on 15 to 25% raw clay for this. For a recipe short of clay, about 1 to 3% bentonite helps; Digitalfire says a glaze with more than 15% clay should not need more than 1%.
+A **bentonit**, ez a nagyon finom agyag, segít lebegésben tartani a többi szemcsét. A mártómázak ehhez általában 15–25% nyers agyagra támaszkodnak. Kevés agyagot tartalmazó receptnél kb. 1–3% bentonit segít; a Digitalfire szerint a 15%-nál több agyagot tartalmazó mázhoz nem kellene 1%-nál több.
 
 ## Próbalapok és próbasorok {#testing}
 
@@ -276,7 +276,7 @@ Label: Feljegyzéssablon
 > [!NOTE]
 > A Glazecalc alkalmazásban egy mentett [recept](/recipe) magát a receptet tartalmazza. Az [égetési napló](/firing) minden égetést rögzít: a kemencét, a dátumot, az időpontokat, a hőmérsékleteket, a gúlákat és a megjegyzéseket. Minden más a [jegyzetekbe](/notes) kerül, például a fenti adagfeljegyzés és az, hogy mit mutatott az egyes próbalap.
 
-## Sources {#sources lang=en}
+## Források {#sources}
 
 - [Glazy: Raw materials](https://help.glazy.org/concepts/materials)
 - [Glazy: Specific gravity](https://help.glazy.org/testing/specific-gravity)
@@ -298,10 +298,10 @@ Label: Feljegyzéssablon
 - [Derek Au: Mixing test glazes](https://www.derekau.net/blog/2016/02/24/mixing-test-glazes)
 - [Derek Au: Digital scales for weighing glazes](https://derekau.net/blog/digital-scales-for-weighing-glazes/)
 - [Derek Au: Triaxial testing](https://derekau.net/blog/triaxial-testing/)
-- [UT Austin ceramics wiki: How to mix glazes](https://cloud.wikis.utexas.edu/wiki/display/ceramics/How+To+Mix+Glazes)
+- [Az UT Austin kerámiawikije: How to mix glazes](https://cloud.wikis.utexas.edu/wiki/display/ceramics/How+To+Mix+Glazes)
 - [Potclays: The beginner's guide to glaze testing](https://www.potclays.co.uk/the-beginners-guide-to-glaze-testing/)
 - [Potclays: Glaze hydrometer](https://www.potclays.co.uk/glaze-hydrometer)
 - [Potterycrafts: Nordic Blue Mist powder glaze](https://potterycrafts.co.uk/products/potterycrafts-nordic-blue-mist-powder-glaze)
 - [HSE: Glaze and colour preparation (CR1)](https://www.hse.gov.uk/PUBNS/guidance/cr1.pdf)
 - [Valentine Clays: Flint technical data sheet](https://valentineclays.co.uk/cdn/shop/files/Flint_Damp_Dry_Technical_Data_Sheet.pdf)
-- [Ceramic Arts Daily forum: Ian Currie test tiles](https://community.ceramicartsdaily.org/topic/7974-ian-currie-test-tiles-forums/page/16/)
+- [Ceramic Arts Daily fórum: Ian Currie test tiles](https://community.ceramicartsdaily.org/topic/7974-ian-currie-test-tiles-forums/page/16/)

@@ -207,6 +207,11 @@
     "recipes": "Recept (CSV)",
     "materials": "Råvaror (CSV)"
   },
+  "trash": {
+    "heading": "Papperskorgen",
+    "text": "Det som tas bort från anteckningsboken ligger 30 dagar i papperskorgen. Lägg tillbaka det därifrån, eller radera det för gott.",
+    "open": "Öppna papperskorgen"
+  },
   "shared": {
     "heading": "Delade recept",
     "text": "Recepten som delas med en länk, som alla som har länken kan läsa utan konto. En länk visas bara en gång, när den skapas, så den kan inte visas här. För att dela ett recept igen, skapa en ny länk under Mer på receptet.",
@@ -301,6 +306,7 @@
         "saved": "Sparat: bränning efter Ortonkäglor."
       },
       "sk": {
+        "label": "Efter SK-käglor, JIS R 8101",
         "example": "SK 4a, SK 8",
         "saved": "Sparat: bränning efter SK-käglor."
       },

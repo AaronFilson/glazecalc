@@ -49,6 +49,10 @@
         "title": "Vejledninger",
         "text": "Fra hvad en glasur er, til hvordan den brændes, og hvordan alle holdes i sikkerhed undervejs."
       },
+      "trash": {
+        "title": "Papirkurv",
+        "text": "Sæt tilbage det, der er fjernet inden for de seneste 30 dage."
+      },
       "account": {
         "title": "Konto og indstillinger",
         "text": "Indstillinger, adgangskoden, login i to trin og en download af alt, der gemmes her."
@@ -116,6 +120,7 @@
   },
   "trash": {
     "title": "Papirkurv",
+    "lead": "Det, der fjernes (opskrifter, råvarer, tilsætninger, noter, brændingsjournaler og råd), bliver her i 30 dage. Sæt det tilbage, eller slet det for altid.",
     "listHeading": "I papirkurven",
     "none": "Papirkurven er tom.",
     "untitled": "Uden navn",

@@ -207,6 +207,11 @@
     "recipes": "Riċetti (CSV)",
     "materials": "Materjali (CSV)"
   },
+  "trash": {
+    "heading": "Barmil",
+    "text": "Dak li tneħħi mill-pitazz tiegħek jistenna fil-barmil għal 30 jum. Poġġih lura minn hemm, jew ħassru għal dejjem.",
+    "open": "Iftaħ il-barmil"
+  },
   "shared": {
     "heading": "Riċetti maqsuma",
     "text": "Ir-riċetti li taqsam b’link, li kull min għandu l-link jista’ jaqrahom mingħajr kont. Link jintwera darba biss, meta jinħoloq, għalhekk ma jistax jintwera hawn. Biex taqsam riċetta mill-ġdid, oħloq link ġdid taħt Iktar tar-riċetta.",
@@ -301,6 +306,7 @@
         "saved": "Issejvjat: ħami bil-koni Orton."
       },
       "sk": {
+        "label": "Bil-koni SK, JIS R 8101",
         "example": "SK 4a, SK 8",
         "saved": "Issejvjat: ħami bil-koni SK."
       },

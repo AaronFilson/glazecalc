@@ -45,6 +45,7 @@
     "account": "Konts",
     "trialAccount": "Izmēģinājums",
     "accountTitle": "Jūsu konts un iestatījumi",
+    "trash": "Atkritne",
     "signOut": "Izrakstīties",
     "createAccount": "Izveidot bezmaksas kontu"
   },
@@ -90,7 +91,8 @@
     "advice": "Praktiski padomi par keramikas glazūru jaukšanu, glazēšanu un apdedzināšanu no lietotnes Glazecalc, kā arī jūsu pašu padomi. Bez maksas keramiķiem.",
     "about": "Glazecalc ir bezmaksas keramikas glazūru ķīmijas kalkulators un burtnīca ar atvērtu pirmkodu. Uzziniet, kā tas aprēķina Zēgera formulu (UMF) un kā tas veidots.",
     "privacy": "Kā lietotne Glazecalc apstrādā jūsu datus: bez reklāmām, analītikas un izsekošanas, un nekas netiek pārdots. Ko glabājam, kāpēc un kā izmantot savas tiesības.",
-    "signup": "Izveidojiet bezmaksas Glazecalc kontu keramikas glazūru receptēm, izejvielām, piezīmēm un apdedzināšanas žurnāliem. Bez reklāmām; jūsu datus nekad nepārdod."
+    "signup": "Izveidojiet bezmaksas Glazecalc kontu keramikas glazūru receptēm, izejvielām, piezīmēm un apdedzināšanas žurnāliem. Bez reklāmām; jūsu datus nekad nepārdod.",
+    "imageAlt": "Glazecalc sākumlapa: bezmaksas glazūru ķīmija podniekiem blakus fotogrāfijai ar apdedzinātiem konusu komplektiem."
   },
   "notices": {
     "dismiss": "Aizvērt",
@@ -285,6 +287,7 @@
     "close": "Aizvērt"
   },
   "unity": {
+    "fluxes": "Kušņi – R₂O un RO",
     "stabilizers": "Stabilizatori – R₂O₃",
     "glassFormers": "Stikla veidotāji – RO₂",
     "wildcards": "Citi oksīdi",

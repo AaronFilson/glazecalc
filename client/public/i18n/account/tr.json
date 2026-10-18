@@ -207,6 +207,11 @@
     "recipes": "Reçeteler (CSV)",
     "materials": "Hammaddeler (CSV)"
   },
+  "trash": {
+    "heading": "Çöp kutusu",
+    "text": "Atölye defterinizden kaldırdıklarınız 30 gün boyunca Çöp kutusunda bekler. Oradan geri koyabilir ya da kalıcı olarak silebilirsiniz.",
+    "open": "Çöp kutusunu aç"
+  },
   "shared": {
     "heading": "Paylaşılan reçeteler",
     "text": "Bağlantıyla paylaştığınız reçeteler; bağlantıya sahip herkes bunları hesap olmadan okuyabilir. Bir bağlantı yalnızca oluşturulduğunda bir kez gösterilir, bu yüzden burada gösterilemez. Bir reçeteyi yeniden paylaşmak için reçetenin Daha fazla menüsünün altında yeni bir bağlantı oluşturun.",
@@ -301,6 +306,7 @@
         "saved": "Kaydedildi: Orton piramitlerine göre pişirim."
       },
       "sk": {
+        "label": "JIS R 8101 SK piramitlerine göre",
         "example": "SK 4a, SK 8",
         "saved": "Kaydedildi: SK piramitlerine göre pişirim."
       },

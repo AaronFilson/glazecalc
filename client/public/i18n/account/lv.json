@@ -207,6 +207,11 @@
     "recipes": "Receptes (CSV)",
     "materials": "Izejvielas (CSV)"
   },
+  "trash": {
+    "heading": "Atkritne",
+    "text": "Tas, ko noņemat no savas burtnīcas, 30 dienas gaida atkritnē. No turienes to varat atjaunot vai izdzēst neatgriezeniski.",
+    "open": "Atvērt atkritni"
+  },
   "shared": {
     "heading": "Kopīgotās receptes",
     "text": "Receptes, ar kurām dalāties, izmantojot saiti un kuras ikviens, kam ir saite, var izlasīt bez konta. Saite tiek parādīta tikai vienu reizi, kad tā tiek izveidota, tāpēc šeit to parādīt nevar. Lai recepti kopīgotu vēlreiz, izveidojiet jaunu saiti receptes izvēlnē Vairāk.",
@@ -301,6 +306,7 @@
         "saved": "Saglabāts: apdedzināšana pēc Ortona konusiem."
       },
       "sk": {
+        "label": "Pēc SK konusiem, JIS R 8101",
         "example": "SK 4a, SK 8",
         "saved": "Saglabāts: apdedzināšana pēc SK konusiem."
       },

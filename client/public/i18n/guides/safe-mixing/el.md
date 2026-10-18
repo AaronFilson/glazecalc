@@ -3,39 +3,39 @@ title: Ασφαλής ανάμειξη και εξαερισμός
 lead: Πώς να κρατάτε τη σκόνη των υαλωμάτων μακριά από τους πνεύμονές σας και τις αναθυμιάσεις του καμινιού έξω από το σπίτι σας: οι συνήθειες, ο εξοπλισμός και τα υλικά που μετράνε περισσότερο.
 ---
 
-## The main hazard: dust {#the-main-hazard lang=en}
+## Ο κύριος κίνδυνος: η σκόνη {#the-main-hazard}
 
-The main long-term hazard in glaze work is dust, above all **respirable crystalline silica**: particles of quartz or cristobalite (crystal forms of silica) small enough to reach deep into the lungs. Crystalline silica can make up about 10 to 60% of a glaze's dry weight, and most clays (except kaolin) and many feldspars also carry fine quartz. The UK's Health and Safety Executive (HSE) says this dust "is very fine and invisible under normal lighting", so a room that looks clean is not proof that the air is.
+Ο κύριος μακροχρόνιος κίνδυνος στη δουλειά με τα υαλώματα{{en: glazes}} είναι η σκόνη, πάνω από όλα η **αναπνεύσιμη σκόνη κρυσταλλικού διοξειδίου του πυριτίου**{{en: respirable crystalline silica}}: σωματίδια χαλαζία ή χριστοβαλίτη (κρυσταλλικές μορφές του πυριτικού{{en: silica}}) τόσο μικρά, που φτάνουν βαθιά στους πνεύμονες. Το κρυσταλλικό διοξείδιο του πυριτίου μπορεί να αποτελεί περίπου το 10 έως 60% του ξηρού βάρους ενός υαλώματος, και οι περισσότεροι πηλοί{{en: clays}} (εκτός από τον καολίνη{{en: kaolin}}) και πολλοί άστριοι{{en: feldspars}} περιέχουν επίσης λεπτόκοκκο χαλαζία. Η βρετανική Health and Safety Executive (HSE) λέει ότι αυτή η σκόνη «είναι πολύ λεπτή και αόρατη υπό κανονικό φωτισμό», άρα ένας χώρος που φαίνεται καθαρός δεν αποδεικνύει ότι και ο αέρας είναι καθαρός.
 
-Breathed in over time, it can cause **silicosis**, a lung disease that HSE describes as "serious and irreversible" and able to "cause permanent disablement and early death". It can also cause **COPD** (chronic obstructive pulmonary disease: long-term bronchitis and emphysema), which smoking makes worse. IARC, the World Health Organization's cancer agency, places inhaled crystalline silica in Group 1, "carcinogenic to humans".
+Όταν εισπνέεται για μεγάλο διάστημα, μπορεί να προκαλέσει **πυριτίαση**, μια πάθηση των πνευμόνων που η HSE περιγράφει ως «σοβαρή και μη αναστρέψιμη» και ικανή να «προκαλέσει μόνιμη αναπηρία και πρόωρο θάνατο». Μπορεί επίσης να προκαλέσει **ΧΑΠ** (χρόνια αποφρακτική πνευμονοπάθεια: χρόνια βρογχίτιδα και εμφύσημα), την οποία επιδεινώνει το κάπνισμα. Ο IARC, ο φορέας του Παγκόσμιου Οργανισμού Υγείας για τον καρκίνο, κατατάσσει το εισπνεόμενο κρυσταλλικό διοξείδιο του πυριτίου στην Ομάδα 1, «καρκινογόνο για τον άνθρωπο».
 
-Silica does not turn into fumes in the kiln, and a wet glaze is not an inhalation hazard unless it is sprayed: spray mist carries silica and dries to dust (see Spraying, below). The times to take care are when material is dry: opening bags, weighing, stirring powder into water, and cleaning up drips, overspray and slop once they have dried back into dust.
+Το πυριτικό δεν γίνεται αναθυμιάσεις στο καμίνι, και ένα υγρό υάλωμα δεν δημιουργεί κίνδυνο εισπνοής, εκτός αν ψεκάζεται: η ομίχλη του ψεκασμού μεταφέρει πυριτικό και στεγνώνει σε σκόνη (δείτε Ψεκασμός, παρακάτω). Χρειάζεται προσοχή όταν το υλικό είναι ξερό: όταν ανοίγετε σακιά, ζυγίζετε, ανακατεύετε τη σκόνη στο νερό, και όταν καθαρίζετε σταγόνες, υπολείμματα ψεκασμού και χυσίματα, αφού έχουν ξεραθεί και έχουν γίνει ξανά σκόνη.
 
-### Exposure limits
+### Οριακές τιμές έκθεσης
 
-Workplace rules set an **exposure limit**: the most silica a worker may breathe, averaged over an 8-hour day, in milligrams (mg) or micrograms (µg, thousandths of a milligram) per cubic meter of air.
+Οι κανόνες για τους χώρους εργασίας ορίζουν μια **οριακή τιμή επαγγελματικής έκθεσης**: τη μέγιστη ποσότητα πυριτικού που επιτρέπεται να εισπνέουν οι εργαζόμενοι, κατά μέσο όρο σε μια μέρα 8 ωρών, σε χιλιοστόγραμμα (mg) ή μικρογραμμάρια (µg, χιλιοστά του χιλιοστογράμμου) ανά κυβικό μέτρο αέρα.
 
-Table: Workplace limits for respirable crystalline silica (8-hour average)
-Label: Silica exposure limits
+Table: Οριακές τιμές στους χώρους εργασίας για την αναπνεύσιμη σκόνη κρυσταλλικού διοξειδίου του πυριτίου (μέσος όρος 8 ωρών)
+Label: Οριακές τιμές έκθεσης στο πυριτικό
 
-| Region         |                 Limit | Notes                                                                             |
-| -------------- | --------------------: | --------------------------------------------------------------------------------- |
-| United States  | 0.05 mg/m³ (50 µg/m³) | OSHA's limit. Employers must start taking action at 25 µg/m³, the "action level". |
-| United Kingdom |             0.1 mg/m³ | Exposure must also be kept "as low as reasonably practicable".                    |
-| European Union |             0.1 mg/m³ | Binding limit (Directive 2017/2398). Some member states set lower ones.           |
-| Australia      |            0.05 mg/m³ | Since July 2020. In June 2026, most ministers did not support a cut to 0.025.     |
-| New Zealand    |           0.025 mg/m³ | Since 2023. WorkSafe's standards are guidance, not legal limits.                  |
+| Περιοχή          |           Οριακή τιμή | Σημειώσεις                                                                                                       |
+| ---------------- | --------------------: | ---------------------------------------------------------------------------------------------------------------- |
+| ΗΠΑ              | 0,05 mg/m³ (50 µg/m³) | Η οριακή τιμή της OSHA. Οι εργοδότες πρέπει να αρχίζουν να λαμβάνουν μέτρα από τα 25 µg/m³, το «επίπεδο δράσης». |
+| Ηνωμένο Βασίλειο |             0,1 mg/m³ | Η έκθεση πρέπει επίσης να διατηρείται «όσο χαμηλά είναι ευλόγως εφικτό».                                         |
+| Ευρωπαϊκή Ένωση  |             0,1 mg/m³ | Δεσμευτική οριακή τιμή (οδηγία (ΕΕ) 2017/2398). Ορισμένα κράτη μέλη ορίζουν χαμηλότερες.                         |
+| Αυστραλία        |            0,05 mg/m³ | Από τον Ιούλιο του 2020. Τον Ιούνιο του 2026 οι περισσότεροι υπουργοί δεν υποστήριξαν μείωση στο 0,025.          |
+| Νέα Ζηλανδία     |           0,025 mg/m³ | Από το 2023. Τα πρότυπα της WorkSafe είναι συστάσεις, όχι νόμιμα όρια.                                           |
 
-Some pages quote 0.025 mg/m³ for Australia, but the official limit is still 0.05. Either way, the advice is the same: keep dust as low as you can.
+Κάποιες σελίδες αναφέρουν 0,025 mg/m³ για την Αυστραλία, αλλά η επίσημη οριακή τιμή εξακολουθεί να είναι 0,05. Όπως και να έχει, η συμβουλή είναι η ίδια: κρατήστε τη σκόνη όσο πιο χαμηλά μπορείτε.
 
-Several EU member states set lower limits than the EU's. The limit where you live, the law that sets it and the national body for safety at work:
+Αρκετά κράτη μέλη της ΕΕ ορίζουν χαμηλότερες οριακές τιμές από αυτή της ΕΕ. Η οριακή τιμή εκεί όπου ζείτε, ο νόμος που την ορίζει και ο εθνικός φορέας για την ασφάλεια στην εργασία:
 
 ::silica-limit
 
 > [!NOTE]
-> These are workplace limits. They bind employers, so no one inspects a potter working alone at home, though community studios and schools with staff are usually covered (check your local rules). The dust is the same at home, and the limits show the scale of the hazard: 25 to 100 millionths of a gram in each cubic meter of air, averaged over a day.
+> Αυτές είναι οριακές τιμές για τους χώρους εργασίας. Δεσμεύουν τους εργοδότες, άρα κανείς δεν ελέγχει όσους κάνουν κεραμική μόνοι τους στο σπίτι, αν και τα κοινόχρηστα εργαστήρια και οι σχολές με προσωπικό συνήθως καλύπτονται (ελέγξτε τους τοπικούς κανόνες). Η σκόνη είναι η ίδια και στο σπίτι, και οι οριακές τιμές δείχνουν το μέγεθος του κινδύνου: 25 έως 100 εκατομμυριοστά του γραμμαρίου σε κάθε κυβικό μέτρο αέρα, κατά μέσο όρο μέσα στη μέρα.
 
-Almost no one has measured dust in hobby studios, so we suggest treating every dry-powder task as a dusty one.
+Σχεδόν κανείς δεν έχει μετρήσει τη σκόνη σε ερασιτεχνικά εργαστήρια, γι’ αυτό προτείνουμε να θεωρείτε κάθε εργασία με ξερή σκόνη εργασία που σηκώνει σκόνη.
 
 ## Οι συνήθειες που μετράνε περισσότερο {#habits}
 
@@ -65,49 +65,49 @@ Almost no one has measured dust in hobby studios, so we suggest treating every d
 
 Αυτή η σειρά είναι δική μας πρόταση, με βάση την αρχή της HSE να αποφεύγεται πρώτα από όλα η σκόνη. Για τη ζύγιση και το ανακάτεμα βήμα βήμα, δείτε [Πώς να φτιάξετε ένα υάλωμα](/guides/making-a-glaze).
 
-## Respirators {#respirators lang=en}
+## Μάσκες προστασίας της αναπνοής {#respirators}
 
-A **respirator** is a mask certified to filter fine particles from the air you breathe. It works only when it seals to your face, and it backs up good habits rather than replacing them.
+Η **μάσκα προστασίας της αναπνοής** είναι μάσκα πιστοποιημένη να φιλτράρει τα λεπτά σωματίδια από τον αέρα που αναπνέετε. Λειτουργεί μόνο όταν εφαρμόζει στεγανά στο πρόσωπό σας, και συμπληρώνει τις καλές συνήθειες, δεν τις αντικαθιστά.
 
-### Classes by region
+### Κατηγορίες ανά περιοχή
 
-Table: Particle respirator classes by region (rough equivalents for glaze dust)
-Label: Respirator classes
+Table: Κατηγορίες μασκών για σωματίδια ανά περιοχή (κατά προσέγγιση αντίστοιχες για τη σκόνη των υαλωμάτων)
+Label: Κατηγορίες μασκών
 
-| Region                    | Everyday class | Higher class | Look for                                                                   |
-| ------------------------- | -------------- | ------------ | -------------------------------------------------------------------------- |
-| United States             | N95            | P100         | NIOSH approval on the mask or its packaging                                |
-| UK and EU                 | FFP2           | FFP3         | EN 149 on disposable masks; EN 140 half masks with EN 143 P2 or P3 filters |
-| Australia and New Zealand | P2             | P3           | AS/NZS 1716                                                                |
+| Περιοχή                    | Συνήθης κατηγορία | Ανώτερη κατηγορία | Τι να αναζητήσετε                                                         |
+| -------------------------- | ----------------- | ----------------- | ------------------------------------------------------------------------- |
+| ΗΠΑ                        | N95               | P100              | Έγκριση NIOSH στη μάσκα ή στη συσκευασία της                              |
+| Ηνωμένο Βασίλειο και ΕΕ    | FFP2              | FFP3              | EN 149 στις μάσκες μιας χρήσης. Ημιμάσκες EN 140 με φίλτρα EN 143 P2 ή P3 |
+| Αυστραλία και Νέα Ζηλανδία | P2                | P3                | AS/NZS 1716                                                               |
 
-The higher class filters a larger share of fine particles. Sources disagree on what an Australian P3 filters (at least 99%, or at least 99.95%), so buy the certified class sold in your region. A reusable **half mask** (covering the nose and mouth, with replaceable filters) fitted with P100 filters (P3 outside the US) is a common studio choice.
+Η ανώτερη κατηγορία φιλτράρει μεγαλύτερο ποσοστό των λεπτών σωματιδίων. Οι πηγές διαφωνούν για το τι φιλτράρει ένα αυστραλιανό P3 (τουλάχιστον 99% ή τουλάχιστον 99,95%), γι’ αυτό αγοράστε την πιστοποιημένη κατηγορία που πωλείται στην περιοχή σας. Μια επαναχρησιμοποιούμενη **ημιμάσκα** (καλύπτει τη μύτη και το στόμα, με φίλτρα που αλλάζουν) με φίλτρα P100 (P3 εκτός ΗΠΑ) είναι συνηθισμένη επιλογή στα εργαστήρια.
 
-### Fit and seal
+### Εφαρμογή και στεγανότητα
 
-A mask that leaks lets dust in around its edges, whatever its class. HSE warns that stubble and beards "make it impossible to get a good seal".
+Μια μάσκα που δεν κλείνει καλά αφήνει τη σκόνη να μπαίνει από τις άκρες της, όποια κι αν είναι η κατηγορία της. Η HSE προειδοποιεί ότι η αξυρισιά και τα γένια «κάνουν αδύνατη την καλή στεγανότητα».
 
-- **Shave shortly before you work.** Guidance differs on how recent "clean-shaven" must be. A UK maker, citing HSE, says shaved within 8 hours of starting work. The Australian and New Zealand fit-test standard asks for a shave before a fit test, "preferably within 12 hours". Shaving shortly before you work meets both.
-- **If you keep a beard,** a loose-fitting **powered respirator** (PAPR: a hood or helmet with a fan that supplies filtered air) needs no face seal.
-- **Get the size right.** Poor fit is a major cause of leaks. Workplaces use a **fit test**, a check that a particular mask seals on a particular face. At home, we suggest following the maker's instructions for checking the seal each time you put it on.
+- **Ξυριστείτε λίγο πριν δουλέψετε.** Οι οδηγίες διαφέρουν για το πόσο πρόσφατο πρέπει να είναι το ξύρισμα, ώστε το πρόσωπο να είναι «καλοξυρισμένο». Ένας βρετανικός κατασκευαστής, που επικαλείται την HSE, λέει ξύρισμα μέσα σε 8 ώρες πριν από την έναρξη της εργασίας. Το πρότυπο της Αυστραλίας και της Νέας Ζηλανδίας για τη δοκιμή εφαρμογής (fit test) ζητά ξύρισμα πριν από τη δοκιμή, «κατά προτίμηση μέσα σε 12 ώρες». Αν ξυρίζεστε λίγο πριν δουλέψετε, καλύπτετε και τα δύο.
+- **Αν κρατάτε γένια,** μια χαλαρή **συσκευή με ανεμιστήρα** (PAPR: κουκούλα ή κράνος με ανεμιστήρα που δίνει φιλτραρισμένο αέρα) δεν χρειάζεται στεγανή εφαρμογή στο πρόσωπο.
+- **Διαλέξτε το σωστό μέγεθος.** Η κακή εφαρμογή είναι μια σημαντική αιτία διαρροών. Στους χώρους εργασίας γίνεται **δοκιμή εφαρμογής**, ένας έλεγχος ότι μια συγκεκριμένη μάσκα κλείνει στεγανά σε ένα συγκεκριμένο πρόσωπο. Στο σπίτι, προτείνουμε να ακολουθείτε τις οδηγίες του κατασκευαστή για τον έλεγχο της στεγανότητας κάθε φορά που τη φοράτε.
 
 > [!NOTE]
-> In our view, fit matters more than class: a well-fitted N95, FFP2 or P2 will usually do better than a loose P100.
+> Κατά τη γνώμη μας, η εφαρμογή μετράει περισσότερο από την κατηγορία: μια N95, FFP2 ή P2 που εφαρμόζει καλά συνήθως θα προστατεύσει καλύτερα από μια P100 που κάθεται χαλαρά.
 
-### When to wear one
+### Πότε να τη φοράτε
 
-HSE says a respirator is "normally not needed" where weighing and mixing happen in a ventilated enclosure, but "may be needed for maintenance and cleaning". Most home studios have no enclosure, so we suggest wearing one (N95, FFP2 or P2 at least; P100, FFP3 or P3 is better) whenever you:
+Η HSE λέει ότι μάσκα προστασίας της αναπνοής «κανονικά δεν χρειάζεται» όπου η ζύγιση και το ανακάτεμα γίνονται σε κλειστό θάλαμο με εξαερισμό, αλλά «μπορεί να χρειαστεί για τη συντήρηση και τον καθαρισμό». Τα περισσότερα εργαστήρια στο σπίτι δεν έχουν τέτοιο θάλαμο, γι’ αυτό προτείνουμε να φοράτε μάσκα (τουλάχιστον N95, FFP2 ή P2, και καλύτερα P100, FFP3 ή P3) κάθε φορά που:
 
-- open bags or tip out powder;
-- weigh powders and stir them into water;
-- scrape, sand or grind dried glaze or bisque;
-- do any dry cleanup, or empty a vacuum;
-- spray glaze (in a booth: see below).
+- ανοίγετε σακιά ή αδειάζετε σκόνη,
+- ζυγίζετε σκόνες και τις ανακατεύετε στο νερό,
+- ξύνετε, τρίβετε με γυαλόχαρτο ή τροχίζετε ξερό υάλωμα{{en: glaze}} ή μπισκουί{{en: bisque}},
+- καθαρίζετε οτιδήποτε στεγνά, χωρίς νερό, ή αδειάζετε ηλεκτρική σκούπα,
+- ψεκάζετε υάλωμα (σε θάλαμο ψεκασμού: δείτε παρακάτω).
 
-### What is not a respirator
+### Τι δεν είναι μάσκα προστασίας της αναπνοής
 
-- Surgical masks, cloth masks and "nuisance dust" masks without a NIOSH, EN 149 or AS/NZS 1716 marking. We would not rely on them for glaze dust.
-- A dust respirator "will not protect you against gases, vapors" (OSHA), so it does nothing for kiln fumes.
-- Look after yours: OSHA notes that a dirty or misused respirator "can become a hazard". Store it clean, away from dusty work clothes.
+- Οι χειρουργικές μάσκες, οι υφασμάτινες μάσκες και οι απλές «μάσκες σκόνης» χωρίς σήμανση NIOSH, EN 149 ή AS/NZS 1716. Δεν θα βασιζόμασταν σε αυτές για τη σκόνη των υαλωμάτων.
+- Μια μάσκα προστασίας της αναπνοής για σκόνη «δεν θα σας προστατεύσει από αέρια, ατμούς» (OSHA), οπότε δεν κάνει τίποτα για τις αναθυμιάσεις του καμινιού.
+- Φροντίζετε τη δική σας: η OSHA σημειώνει ότι μια βρόμικη μάσκα ή μια μάσκα που χρησιμοποιείται λάθος «μπορεί να γίνει κίνδυνος». Φυλάγετέ τη καθαρή, μακριά από σκονισμένα ρούχα δουλειάς.
 
 ## Καθαρισμός, ρούχα και χέρια {#cleaning}
 
@@ -181,36 +181,36 @@ HSE says a respirator is "normally not needed" where weighing and mixing happen 
 
 Το ρακού βγάζει πολύ καπνό και CO. Το Πανεπιστήμιο της Γιούτα συμβουλεύει να γίνεται έξω, μακριά από στόμια εισαγωγής αέρα και παράθυρα. Για το ίδιο το ψήσιμο, δείτε [Ψήσιμο σε ένα απλό καμίνι](/guides/firing).
 
-## Materials that need most care {#materials lang=en}
+## Υλικά που θέλουν τη μεγαλύτερη προσοχή {#materials}
 
-Most glaze materials, including silica, clays, feldspars and frits, are mainly a dust hazard, which the habits above control. A shorter list is toxic in its own right, by breathing, swallowing or skin contact. Digitalfire adds that stains are generally much safer than raw oxides, and that "unbalanced glazes that release toxic metals can be made from any materials": food safety depends on the whole recipe, not on one ingredient.
+Τα περισσότερα υλικά υαλωμάτων{{en: glaze materials}}, όπως το πυριτικό{{en: silica}}, οι πηλοί{{en: clays}}, οι άστριοι{{en: feldspars}} και οι φρίτες{{en: frits}}, είναι κυρίως κίνδυνος λόγω της σκόνης τους, και αυτόν τον ελέγχουν οι παραπάνω συνήθειες. Ένας μικρότερος κατάλογος υλικών είναι τοξικός από μόνος του, με την εισπνοή, την κατάποση ή την επαφή με το δέρμα. Το Digitalfire προσθέτει ότι τα στέιν{{en: stains}} είναι γενικά πολύ ασφαλέστερα από τα ωμά οξείδια, και ότι «μη ισορροπημένα υαλώματα που απελευθερώνουν τοξικά μέταλλα μπορούν να φτιαχτούν από οποιαδήποτε υλικά»: η καταλληλότητα για επαφή με τρόφιμα{{en: food safety}} εξαρτάται από ολόκληρη τη συνταγή, όχι από ένα μόνο συστατικό.
 
-An **IARC group** is a cancer classification: Group 1 means "carcinogenic to humans", Group 2A "probably carcinogenic to humans", Group 2B "possibly carcinogenic to humans", and Group 3 "not classifiable as to its carcinogenicity to humans", which means too little evidence to judge either way.
+Η **ομάδα IARC** είναι μια ταξινόμηση για τον καρκίνο: η Ομάδα 1 σημαίνει «καρκινογόνο για τον άνθρωπο», η Ομάδα 2A «πιθανώς καρκινογόνο για τον άνθρωπο», η Ομάδα 2B «ενδεχομένως καρκινογόνο για τον άνθρωπο» και η Ομάδα 3 «μη ταξινομήσιμο ως προς την καρκινογονικότητά του για τον άνθρωπο», που σημαίνει ότι τα στοιχεία είναι πολύ λίγα για να κριθεί προς οποιαδήποτε κατεύθυνση.
 
-Table: Glaze materials that need extra care
-Label: Materials that need most care
+Table: Υλικά υαλωμάτων που θέλουν ιδιαίτερη προσοχή
+Label: Υλικά που θέλουν τη μεγαλύτερη προσοχή
 
-| Material                               | Hazard                                                                                                                                                                                                                                       | Precaution                                                                                                  |
-| -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| Lead compounds and lead frits          | "Highly toxic by inhalation or ingestion"; vaporizes in the kiln at lower temperatures than most glaze materials.                                                                                                                            | Avoid; Digitalfire says experts only. Assume any glaze not labeled "lead-free" or "leadless" contains lead. |
-| Barium carbonate                       | Insoluble in water but dissolves in stomach acid; affects the heart and muscles (irregular heartbeat, low potassium).                                                                                                                        | A barium frit or strontium where the recipe allows; respirator; labeled container.                          |
-| Manganese dioxide                      | Dust or fume can cause **manganism**, a nervous-system illness like Parkinson's disease, usually after 1 to 3 years of exposure. Fume can cause metal fume fever.                                                                            | Black stains at low percentages instead; vent the kiln.                                                     |
-| Potassium dichromate and chrome oxide  | Chromium(VI), as in dichromate, is IARC Group 1. That listing does not cover chromium(III), as in chrome oxide.                                                                                                                              | Avoid dichromate. We treat chrome oxide as far less hazardous, but keep its dust down.                      |
-| Cobalt                                 | Soluble cobalt(II) salts IARC 2A; cobalt(II) oxide 2B; black Co₃O₄ Group 3. Cobalt carbonate is classified in the EU as may cause cancer if breathed in, may damage fertility and suspected of causing genetic defects (H350i, H360F, H341). | Keep dust down; stains for blacks.                                                                          |
-| Nickel compounds                       | Among the University of Utah's known or probable human carcinogens.                                                                                                                                                                          | Stains rather than high percentages.                                                                        |
-| Cadmium and selenium, raw or in stains | Cadmium compounds are among Utah's known or probable human carcinogens.                                                                                                                                                                      | "Only by experts" (Digitalfire); read any stain's SDS.                                                      |
-| Antimony and vanadium                  | Trivalent antimony (as in antimony trioxide) IARC 2A; vanadium "highly toxic by inhalation".                                                                                                                                                 | Vanadium for experts only; keep antimony dust down.                                                         |
-| Copper and zinc                        | Kiln fume can cause metal fume fever; raw zinc oxide is "generally not considered hazardous".                                                                                                                                                | Vent the kiln.                                                                                              |
-| Lithium carbonate                      | "Highly toxic by inhalation". An EU expert committee concluded it may harm fertility, the unborn child and breast-fed children; formal adoption was not confirmed when we checked.                                                           | Gloves and respirator; keep from children. We suggest extra care in pregnancy and while breastfeeding.      |
-| Borax and boric acid                   | Classified in the EU as "may damage fertility; may damage the unborn child".                                                                                                                                                                 | Gloves; boron from a frit where you can.                                                                    |
-| Soda ash, potash, alkaline feldspars   | Skin irritants.                                                                                                                                                                                                                              | Gloves.                                                                                                     |
-| Fluorspar, cryolite, lepidolite        | Release fluorine gases in firing; fluorspar also irritates skin.                                                                                                                                                                             | Vent the kiln outdoors; gloves.                                                                             |
-| Talc                                   | IARC 2A since July 2024; talc contaminated with asbestos counts as asbestos, Group 1.                                                                                                                                                        | Platy (not fibrous), asbestos-free talc; check its SDS.                                                     |
+| Υλικό                                                                       | Κίνδυνος                                                                                                                                                                                                                                                                                                   | Προφύλαξη                                                                                                                                       |
+| --------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| Ενώσεις του μολύβδου και φρίτες μολύβδου                                    | «Πολύ τοξικές με την εισπνοή ή την κατάποση». Εξατμίζονται στο καμίνι σε χαμηλότερες θερμοκρασίες από τα περισσότερα υλικά υαλωμάτων.                                                                                                                                                                      | Αποφύγετέ τις. Το Digitalfire λέει μόνο για ειδικούς. Θεωρήστε ότι κάθε υάλωμα χωρίς την ένδειξη «αμόλυβδο» ή «χωρίς μόλυβδο» περιέχει μόλυβδο. |
+| Ανθρακικό βάριο                                                             | Αδιάλυτο στο νερό, αλλά διαλύεται στο οξύ του στομάχου. Επηρεάζει την καρδιά και τους μυς (ακανόνιστος καρδιακός ρυθμός, χαμηλό κάλιο).                                                                                                                                                                    | Φρίτα βαρίου ή στρόντιο, όπου το επιτρέπει η συνταγή. Μάσκα προστασίας της αναπνοής. Δοχείο με ετικέτα.                                         |
+| Διοξείδιο του μαγγανίου                                                     | Η σκόνη ή οι αναθυμιάσεις μπορούν να προκαλέσουν **μαγγανίαση**, μια ασθένεια του νευρικού συστήματος που μοιάζει με τη νόσο του Πάρκινσον, συνήθως ύστερα από 1 έως 3 χρόνια έκθεσης. Οι αναθυμιάσεις μπορούν να προκαλέσουν πυρετό από αναθυμιάσεις μετάλλων.                                            | Αντί γι’ αυτό, μαύρα στέιν σε χαμηλά ποσοστά. Αερίστε το καμίνι.                                                                                |
+| Διχρωμικό κάλιο και οξείδιο του χρωμίου                                     | Το χρώμιο(VI), όπως στο διχρωμικό, ανήκει στην Ομάδα 1 κατά IARC. Η κατάταξη αυτή δεν αφορά το χρώμιο(III), όπως στο οξείδιο του χρωμίου.                                                                                                                                                                  | Αποφύγετε το διχρωμικό. Θεωρούμε το οξείδιο του χρωμίου πολύ λιγότερο επικίνδυνο, αλλά περιορίστε τη σκόνη του.                                 |
+| Κοβάλτιο                                                                    | Διαλυτά άλατα του κοβαλτίου(II) IARC 2A, οξείδιο του κοβαλτίου(II) 2B, μαύρο Co₃O₄ Ομάδα 3. Το ανθρακικό κοβάλτιο ταξινομείται στην ΕΕ ως εξής: μπορεί να προκαλέσει καρκίνο σε περίπτωση εισπνοής, μπορεί να βλάψει τη γονιμότητα και είναι ύποπτο για πρόκληση γενετικών ανωμαλιών (H350i, H360F, H341). | Περιορίστε τη σκόνη. Στέιν για τα μαύρα.                                                                                                        |
+| Ενώσεις του νικελίου                                                        | Στις γνωστές ή πιθανές καρκινογόνες ουσίες για τον άνθρωπο κατά το Πανεπιστήμιο της Γιούτα.                                                                                                                                                                                                                | Στέιν αντί για υψηλά ποσοστά.                                                                                                                   |
+| Κάδμιο και σελήνιο, ωμά ή σε στέιν                                          | Οι ενώσεις του καδμίου είναι στις γνωστές ή πιθανές καρκινογόνες ουσίες για τον άνθρωπο κατά το Πανεπιστήμιο της Γιούτα.                                                                                                                                                                                   | «Μόνο από ειδικούς» (Digitalfire). Διαβάστε το δελτίο δεδομένων ασφαλείας (ΔΔΑ) κάθε στέιν.                                                     |
+| Αντιμόνιο και βανάδιο                                                       | Τρισθενές αντιμόνιο (όπως στο τριοξείδιο του αντιμονίου) IARC 2A. Βανάδιο «πολύ τοξικό με την εισπνοή».                                                                                                                                                                                                    | Βανάδιο μόνο για ειδικούς. Περιορίστε τη σκόνη του αντιμονίου.                                                                                  |
+| Χαλκός και ψευδάργυρος                                                      | Οι αναθυμιάσεις στο καμίνι μπορούν να προκαλέσουν πυρετό από αναθυμιάσεις μετάλλων. Το ωμό οξείδιο του ψευδαργύρου «γενικά δεν θεωρείται επικίνδυνο».                                                                                                                                                      | Αερίστε το καμίνι.                                                                                                                              |
+| Ανθρακικό λίθιο                                                             | «Πολύ τοξικό με την εισπνοή». Μια επιτροπή εμπειρογνωμόνων της ΕΕ κατέληξε ότι μπορεί να βλάψει τη γονιμότητα, το έμβρυο και τα παιδιά που τρέφονται με μητρικό γάλα. Η επίσημη υιοθέτηση δεν είχε επιβεβαιωθεί όταν το ελέγξαμε.                                                                          | Γάντια και μάσκα προστασίας της αναπνοής. Μακριά από παιδιά. Προτείνουμε ιδιαίτερη προσοχή στην εγκυμοσύνη και κατά τον θηλασμό.                |
+| Βόρακας και βορικό οξύ                                                      | Ταξινομημένα στην ΕΕ ως «Μπορεί να βλάψει τη γονιμότητα. Μπορεί να βλάψει το έμβρυο».                                                                                                                                                                                                                      | Γάντια. Βόριο από φρίτα όπου μπορείτε.                                                                                                          |
+| Ανθρακικό νάτριο, ανθρακικό κάλιο (ποτάσα){{en: potash}}, αλκαλικοί άστριοι | Ερεθίζουν το δέρμα.                                                                                                                                                                                                                                                                                        | Γάντια.                                                                                                                                         |
+| Φθορίτης, κρυόλιθος, λεπιδόλιθος                                            | Απελευθερώνουν αέρια φθορίου στο ψήσιμο. Ο φθορίτης ερεθίζει επίσης το δέρμα.                                                                                                                                                                                                                              | Αερίστε το καμίνι προς τα έξω. Γάντια.                                                                                                          |
+| Ταλκ                                                                        | IARC 2A από τον Ιούλιο του 2024. Το ταλκ επιμολυσμένο με αμίαντο λογίζεται ως αμίαντος, Ομάδα 1.                                                                                                                                                                                                           | Φυλλώδες (όχι ινώδες) ταλκ χωρίς αμίαντο. Ελέγξτε το ΔΔΑ του.                                                                                   |
 
-Borax, boric acid, soda ash and potash dissolve in water, so we treat them as the likeliest to be absorbed through broken skin or swallowed from unwashed hands.
+Ο βόρακας, το βορικό οξύ, το ανθρακικό νάτριο και το ανθρακικό κάλιο διαλύονται στο νερό, γι’ αυτό τα θεωρούμε τα πιο πιθανά να απορροφηθούν από τραυματισμένο δέρμα ή να καταποθούν από άπλυτα χέρια.
 
 > [!NOTE]
-> If a recipe calls for raw barium carbonate, a lot of manganese, or any lead or cadmium material, look for a version that uses a frit or a stain instead. Glazecalc can compare the chemistry of the original and the swap; then test the new glaze.
+> Αν μια συνταγή ζητά ωμό ανθρακικό βάριο, πολύ μαγγάνιο ή οποιοδήποτε υλικό με μόλυβδο ή κάδμιο, αναζητήστε μια παραλλαγή που χρησιμοποιεί φρίτα ή στέιν στη θέση τους. Το Glazecalc μπορεί να συγκρίνει τη χημεία της αρχικής συνταγής και της αντικατάστασης. Μετά δοκιμάστε το νέο υάλωμα.
 
 ## Γάντια, δέρμα και μάτια {#gloves-and-eyes}
 
@@ -252,24 +252,24 @@ Borax, boric acid, soda ash and potash dissolve in water, so we treat them as th
 - **Νέα Ζηλανδία:** η WorkSafe New Zealand ορίζει τα πρότυπα έκθεσης στους χώρους εργασίας. Το [ιστορικό του προτύπου για το πυριτικό](https://mbie.govt.nz/building-and-energy/building/building-and-construction-consultations/work-with-engineered-stone-and-materials-containing-crystalline-silica/annex-iii) του MBIE δίνει τις ημερομηνίες.
 - **Καμίνια:** ο [οδηγός της Skutt για τον χώρο του καμινιού](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Designing-A-Kiln-Room-1.pdf), το [φυλλάδιο της Orton και της CCSA για τις αναθυμιάσεις του καμινιού](https://assets.noviams.com/novi-file-uploads/ccsa/Product_Safety/Fumes.pdf), και πάνω από όλα το εγχειρίδιο του δικού σας καμινιού.
 
-## Sources {#sources lang=en}
+## Πηγές {#sources}
 
 - [OSHA: 29 CFR 1910.1053, Respirable crystalline silica](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.1053)
 - [OSHA: 29 CFR 1910.134 Appendix D, Information for employees using respirators when not required](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.134AppD)
 - [OSHA: 29 CFR 1910.1200 Appendix D, Safety data sheets](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.1200AppD)
-- [NIOSH: Silicosis alert (publication 92-107)](https://www.cdc.gov/niosh/docs/92-107)
+- [NIOSH: Silicosis alert (έκδοση 92-107)](https://www.cdc.gov/niosh/docs/92-107)
 - [HSE: COSHH essentials CR1, Glaze and colour preparation](https://www.hse.gov.uk/PUBNS/guidance/cr1.pdf)
 - [HSE: COSHH essentials CR5, Spraying glazes and colours](https://www.hse.gov.uk/PUBNS/guidance/cr5.pdf)
 - [HSE: Fit testing basics](https://www.hse.gov.uk/respiratory-protective-equipment/fit-testing-basics.htm)
 - [Safe Work Australia: Research on a lower workplace exposure standard for respirable crystalline silica](https://www.safeworkaustralia.gov.au/safety-topic/hazards/crystalline-silica-and-silicosis/research-lower-workplace-exposure-standard-respirable-crystalline-silica-0)
-- [Enviliance: Report 16612, Australia's June 2026 decision on the silica exposure standard](https://enviliance.com/regions/oceania/au/report_16612)
-- [MBIE (New Zealand): Work with engineered stone and materials containing crystalline silica, Annex III](https://mbie.govt.nz/building-and-energy/building/building-and-construction-consultations/work-with-engineered-stone-and-materials-containing-crystalline-silica/annex-iii)
+- [Enviliance: έκθεση 16612, η απόφαση της Αυστραλίας του Ιουνίου 2026 για την οριακή τιμή έκθεσης στο πυριτικό](https://enviliance.com/regions/oceania/au/report_16612)
+- [MBIE (Νέα Ζηλανδία): Work with engineered stone and materials containing crystalline silica, Annex III](https://mbie.govt.nz/building-and-energy/building/building-and-construction-consultations/work-with-engineered-stone-and-materials-containing-crystalline-silica/annex-iii)
 - [IARC: Monographs Volume 100C](https://publications.iarc.who.int/120)
 - [IARC: Volume 131, Cobalt, antimony compounds and weapons-grade tungsten alloy](https://monographs.iarc.who.int/news-events/volume-131-cobalt-antimony-compounds-and-weapons-grade-tungsten-alloy)
 - [Science Media Centre Spain: IARC classifies talc (2024)](https://sciencemediacentre.es/en/node/3775)
 - [ECHA: Risk Assessment Committee opinion on lithium carbonate, chloride and hydroxide (2021, PDF)](https://echa.europa.eu/documents/10162/e2a3c38e-85fe-505c-a325-293c70a74da5)
 - [PubChem: Cobalt carbonate, GHS classification, including its EU harmonised one](https://pubchem.ncbi.nlm.nih.gov/compound/10565#section=GHS-Classification)
-- [ECHA: Risk Assessment Committee document on boric acid and borates](https://echa.europa.eu/documents/10162/7d740d8c-5cd5-872b-5da2-e549983a9ff9)
+- [ECHA: έγγραφο της Επιτροπής Αξιολόγησης Κινδύνων για το βορικό οξύ και τα βορικά άλατα](https://echa.europa.eu/documents/10162/7d740d8c-5cd5-872b-5da2-e549983a9ff9)
 - [Coslaw: EU introduces new CMR classifications under the 24th ATP to the CLP Regulation](https://coslaw.eu/eu-introduces-new-cmr-classifications-under-the-24th-atp-to-the-clp-regulation/)
 - [University of Utah EHS: Arts safety: ceramics](https://www.ehs.utah.edu/guidelines/arts-safety-ceramics/)
 - [University of Calgary: Ceramics health hazards](https://arts.ucalgary.ca/sites/default/files/teams/36/Ceramics%20PDF.pdf)
@@ -282,4 +282,4 @@ Borax, boric acid, soda ash and potash dissolve in water, so we treat them as th
 - [Skutt: Kiln room design and product specifications](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Designing-A-Kiln-Room-1.pdf)
 - [CIRMA: Kiln safety bulletin (2025)](https://downloads.ccm-ct.org/pdf/Media-Library-Bulletins/KilnSafety-Bulletin-052825.pdf)
 - [Ceramic Arts Network: Dave Finkelnburg, How and why to use a kiln vent](https://ceramicartsnetwork.org/daily/article/How-and-Why-to-Use-a-Kiln-Vent)
-- [CCSA and Orton: What is so bad about fumes?](https://assets.noviams.com/novi-file-uploads/ccsa/Product_Safety/Fumes.pdf)
+- [CCSA και Orton: What is so bad about fumes?](https://assets.noviams.com/novi-file-uploads/ccsa/Product_Safety/Fumes.pdf)

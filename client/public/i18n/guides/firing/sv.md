@@ -370,83 +370,83 @@ Självstående Ortonkäglor säljs i Japan under namnet 立つゼーゲル (”s
 
 :::
 
-## Bisque firing {#bisque lang=en}
+## Skröjbränning {#bisque}
 
-The **bisque** firing (biscuit in the UK) is the first, lower firing that turns dry clay into hard, porous ware ready to glaze. It is usually fired to cone 06–04, {{1828–1945 °F; 998–1063 °C}} on Orton's chart; UK potters often fire to around {{1000 °C; 1832 °F}}, near cone 06. The bisque should stay porous, "generally more than 15%" (Digitalfire), so it soaks water out of the glaze. Too soft a bisque takes glaze on too thick, which then cracks and **crawls** (pulls back into islands, leaving bare clay). Under-fired bisque also "continues to shrink during glaze firing", which spoils the glaze fit. Loading is forgiving: pieces may touch, lids can be fired on their pots, and bowls go rim to rim rather than nested.
+**Skröjbränningen**{{en: bisque}} (i Storbritannien kallad biscuit) är den första, lägre bränningen, som gör torr lera till hårt, poröst gods som är klart att glasera. Den bränns oftast till kägla{{en: cone}} 06–04, {{1828–1945 °F; 998–1063 °C}} enligt Ortons tabell; brittiska keramiker bränner ofta till omkring {{1000 °C; 1832 °F}}, nära kägla 06. Skröjet bör förbli poröst, ”i allmänhet mer än 15 %” (Digitalfire), så att det suger upp vattnet ur glasyren{{en: glaze}}. Ett för lågt skröjat gods tar upp glasyren för tjockt, och den spricker sedan och **kryper**{{en: crawls}} (drar ihop sig till öar och lämnar bar lera). Underbränt skröj ”fortsätter också att krympa under glasyrbränningen{{en: glaze firing}}”, vilket förstör passningen mellan glasyr och skärv{{en: glaze fit}}. Att sätta ugnen är förlåtande: föremålen får röra vid varandra, lock kan brännas på sina krukor, och skålar ställs kant mot kant i stället för inuti varandra.
 
-### Why the early part goes slowly
+### Varför början går långsamt
 
-Water expands more than a thousandfold as it turns to steam, so damp ware has to be dried slowly. L&L and Orton advise that "Special care should be taken below 1500°F (815°C) to heat the body evenly", and that carbon must be burned out before about {{1200 °F; 650 °C}}. Above {{1500 °F; 816 °C}} the kiln can climb faster.
+Vatten expanderar mer än tusenfalt när det blir ånga, så fuktigt gods måste torkas långsamt. L&L och Orton råder att ”Särskild försiktighet bör iakttas under 1500°F (815°C) för att värma godset jämnt”, och att kolet måste vara utbränt före ungefär {{1200 °F; 650 °C}}. Över {{1500 °F; 816 °C}} kan ugnen stiga snabbare.
 
-Table: What happens as a bisque heats
-Label: What happens in a bisque
+Table: Vad som händer när skröjet värms upp
+Label: Vad som händer vid skröjbränning
 
-|                        Temperature | What happens                                                |
-| ---------------------------------: | ----------------------------------------------------------- |
-|         {{300–500 °F; 149–260 °C}} | Binders burn off                                            |
-|           About {{450 °F; 232 °C}} | Organic matter starts to burn                               |
-|           Up to {{700 °F; 371 °C}} | Water keeps leaving the clay until above this temperature   |
-|        {{842–1022 °F; 450–550 °C}} | Chemically bound water leaves the clay                      |
-|                {{1063 °F; 573 °C}} | Quartz inversion: silica in the clay expands suddenly       |
-|          Above {{1112 °F; 600 °C}} | Sulfur burns out                                            |
-| Up to {{1200–1400 °F; 649–760 °C}} | Natural carbon burns off; this should finish below red heat |
-|          Above {{1544 °F; 840 °C}} | Calcium carbonate breaks down                               |
+|                            Temperatur | Vad som händer                                                                                     |
+| ------------------------------------: | -------------------------------------------------------------------------------------------------- |
+|            {{300–500 °F; 149–260 °C}} | Bindemedel brinner bort                                                                            |
+|              Cirka {{450 °F; 232 °C}} | Organiskt material börjar brinna                                                                   |
+|           Upp till {{700 °F; 371 °C}} | Vatten fortsätter att lämna leran tills den här temperaturen har passerats                         |
+|           {{842–1022 °F; 450–550 °C}} | Kemiskt bundet vatten lämnar leran                                                                 |
+|                   {{1063 °F; 573 °C}} | Kvartsomvandling{{en: quartz inversion}}: kiseldioxiden{{en: silica}} i leran expanderar plötsligt |
+|              Över {{1112 °F; 600 °C}} | Svavel brinner ut                                                                                  |
+| Upp till {{1200–1400 °F; 649–760 °C}} | Naturligt kol brinner bort; det bör vara klart före rödglöd                                        |
+|              Över {{1544 °F; 840 °C}} | Kalciumkarbonat sönderdelas                                                                        |
 
-**Quartz inversion** is the sudden change in size of the silica in clay at {{1063 °F; 573 °C}}: it expands on the way up and contracts on the way down. L&L's Slow Bisque slows through it, between {{1000 °F; 538 °C}} and {{1100 °F; 593 °C}}. Digitalfire found this "unnecessary for bisque firings", and Ceramics Monthly says it mainly matters when cooling dense ware. Slowing costs little, so our suggestion is to keep it for thick pieces.
+**Kvartsomvandlingen** är den plötsliga storleksförändringen hos kiseldioxiden i leran vid {{1063 °F; 573 °C}}: den expanderar på vägen upp och drar ihop sig på vägen ned. L&L:s Slow Bisque går långsammare genom den, mellan {{1000 °F; 538 °C}} och {{1100 °F; 593 °C}}. Digitalfire fann detta ”onödigt vid skröjbränningar”, och Ceramics Monthly säger att den främst har betydelse när tätt gods kyls. Att sakta ned kostar lite, så vårt förslag är att behålla det för tjocka föremål.
 
-### Candling: drying in the kiln
+### Förvärmning: torkning i ugnen
 
-**Candling** means holding the kiln at a low temperature, with the lid propped or the vent running, until the last moisture has left the ware. Sources disagree about the temperature:
+**Förvärmning**{{en: candling}} innebär att ugnen hålls på låg temperatur, med locket på glänt eller utsuget igång, tills den sista fukten har lämnat godset. Källorna är oeniga om temperaturen:
 
-Table: Candling temperatures
+Table: Temperaturer för förvärmning
 
-| Source           | Candling                                                                                 |
-| ---------------- | ---------------------------------------------------------------------------------------- |
-| Ceramics Monthly | Just short of boiling; for example, climbing at {{25 °F/h; 14 °C/h}} for 4–6 hours       |
-| L&L preheat      | Hold at {{150–200 °F; 66–93 °C}}                                                         |
-| Digitalfire      | Hold at {{250 °F; 121 °C}}, because holding below boiling "does not expel all the water" |
+| Källa            | Förvärmning                                                                                    |
+| ---------------- | ---------------------------------------------------------------------------------------------- |
+| Ceramics Monthly | Strax under kokpunkten; till exempel en stigning på {{25 °F/h; 14 °C/h}} i 4–6 timmar          |
+| L&L, förvärmning | Håll vid {{150–200 °F; 66–93 °C}}                                                              |
+| Digitalfire      | Håll vid {{250 °F; 121 °C}}, eftersom en hålltid under kokpunkten ”inte driver ut allt vatten” |
 
 > [!NOTE]
-> Our starting point: climb slowly to no more than about {{250 °F; 121 °C}}, and hold until a mirror at the vent stays clear. Hold overnight for thick or damp ware.
+> Vår utgångspunkt: stig långsamt till högst ungefär {{250 °F; 121 °C}}, och håll tills en spegel vid ventilationshålet förblir klar. Håll över natten för tjockt eller fuktigt gods.
 
-The **mirror test**: hold a room-temperature mirror at a vent hole or at the gap under a propped lid. If it fogs, water is still leaving; wait, then test again.
+**Spegeltestet**: håll en rumstempererad spegel vid ett ventilationshål eller vid springan under ett lock som står på glänt. Om spegeln immar igen kommer det fortfarande ut vatten; vänta och testa sedan igen.
 
-### Controller schedules
+### Automatikens brännprogram
 
-A **controller** is an electronic unit that fires the kiln through a **schedule**: a list of **segments**, each a rate of climb (the **ramp**), a target temperature and an optional hold. Below are two presets from L&L's DynaTrol and Bartlett controllers, and a schedule published by Digitalfire. "Peak" is the controller's own temperature for the cone you choose: for cone 04 it is {{1926 °F; 1052 °C}}, and for cone 06, {{1819 °F; 993 °C}}.
+En **automatik** är en elektronisk styrenhet som bränner ugnen enligt ett **brännprogram**: en lista med **segment**, vart och ett med en stigning (**rampen**{{en: ramp}}), en måltemperatur och en valfri hålltid{{en: hold}}. Nedan finns två förinställda program från automatikerna DynaTrol (L&L) och Bartlett, och ett brännprogram som Digitalfire har publicerat. ”Topptemperaturen” är automatikens egen temperatur för den valda käglan: för kägla 04 är den {{1926 °F; 1052 °C}}, och för kägla 06 {{1819 °F; 993 °C}}.
 
-Table: L&L and Bartlett bisque presets
-Label: Bisque presets
+Table: Förinställda skröjprogram från L&L och Bartlett
+Label: Förinställda skröjprogram
 
-| Segment                  |                                                           Climb to |            Slow Bisque |            Fast Bisque |
-| ------------------------ | -----------------------------------------------------------------: | ---------------------: | ---------------------: |
-| 1                        |                                                 {{250 °F; 121 °C}} |   {{80 °F/h; 44 °C/h}} |  {{120 °F/h; 67 °C/h}} |
-| 2                        |                                                {{1000 °F; 538 °C}} | {{200 °F/h; 111 °C/h}} | {{300 °F/h; 167 °C/h}} |
-| 3                        |                                                {{1100 °F; 593 °C}} |  {{100 °F/h; 56 °C/h}} |  {{150 °F/h; 83 °C/h}} |
-| 4                        | {{250 °F; 139 °C}} below the peak: {{1676 °F; 913 °C}} for cone 04 | {{180 °F/h; 100 °C/h}} | {{180 °F/h; 100 °C/h}} |
-| 5                        |                                                           The peak |   {{80 °F/h; 44 °C/h}} |  {{108 °F/h; 60 °C/h}} |
-| Heating time, empty kiln |                                                                    | About 13 hours or more |     About 10–11½ hours |
+| Segment                  |                                                               Måltemperatur |               Slow Bisque |            Fast Bisque |
+| ------------------------ | --------------------------------------------------------------------------: | ------------------------: | ---------------------: |
+| 1                        |                                                          {{250 °F; 121 °C}} |      {{80 °F/h; 44 °C/h}} |  {{120 °F/h; 67 °C/h}} |
+| 2                        |                                                         {{1000 °F; 538 °C}} |    {{200 °F/h; 111 °C/h}} | {{300 °F/h; 167 °C/h}} |
+| 3                        |                                                         {{1100 °F; 593 °C}} |     {{100 °F/h; 56 °C/h}} |  {{150 °F/h; 83 °C/h}} |
+| 4                        | {{250 °F; 139 °C}} under topptemperaturen: {{1676 °F; 913 °C}} för kägla 04 |    {{180 °F/h; 100 °C/h}} | {{180 °F/h; 100 °C/h}} |
+| 5                        |                                                            Topptemperaturen |      {{80 °F/h; 44 °C/h}} |  {{108 °F/h; 60 °C/h}} |
+| Uppvärmningstid, tom ugn |                                                                             | Cirka 13 timmar eller mer |    Cirka 10–11½ timmar |
 
-L&L's times are "for the fastest possible empty kilns"; a loaded kiln can take as much as four times longer, and any hold you add is extra heatwork the presets do not allow for. L&L advises Slow Bisque, with a preheat of 2–3 hours or longer, for large or damp pieces, and warns against fast firing, which "can cause defects like pinholes, cracking, and insufficient burnout".
+L&L:s tider gäller ”för snabbast möjliga tomma ugnar”; en fylld ugn kan ta upp till fyra gånger längre tid, och varje hålltid som läggs till är extra värmearbete{{en: heatwork}} som de förinställda programmen inte räknar med. L&L rekommenderar Slow Bisque, med en förvärmning på 2–3 timmar eller längre, för stora eller fuktiga föremål, och varnar för snabb bränning, som ”kan orsaka fel som nålstick{{en: pinholes}}, sprickor och ofullständig utbränning”.
 
-Table: Digitalfire BQ1000 bisque, to about cone 06
+Table: Digitalfire BQ1000, skröjbränning till ungefär kägla 06
 Label: Digitalfire BQ1000
 
-| Step |                   Rate |               Target | Hold                                      |
-| ---- | ---------------------: | -------------------: | ----------------------------------------- |
-| 1    | {{306 °F/h; 170 °C/h}} |   {{248 °F; 120 °C}} | 60 minutes; up to 10 hours for heavy ware |
-| 2    | {{306 °F/h; 170 °C/h}} |  {{1733 °F; 945 °C}} | None                                      |
-| 3    |  {{108 °F/h; 60 °C/h}} | {{1832 °F; 1000 °C}} | 15 minutes                                |
+| Steg |              Hastighet |                  Mål | Hålltid                                       |
+| ---- | ---------------------: | -------------------: | --------------------------------------------- |
+| 1    | {{306 °F/h; 170 °C/h}} |   {{248 °F; 120 °C}} | 60 minuter; upp till 10 timmar för tungt gods |
+| 2    | {{306 °F/h; 170 °C/h}} |  {{1733 °F; 945 °C}} | Ingen                                         |
+| 3    |  {{108 °F/h; 60 °C/h}} | {{1832 °F; 1000 °C}} | 15 minuter                                    |
 
-BQ1000 takes about 7 hours 44 minutes. Its author finds up to {{500 °F/h; 278 °C/h}} fine for thin, dry ware, and slows the last step to even out the temperature through the load.
+BQ1000 tar ungefär 7 timmar och 44 minuter. Programmets författare anser att upp till {{500 °F/h; 278 °C/h}} går bra för tunt, torrt gods, och sänker stigningen i det sista steget för att jämna ut temperaturen i hela ugnsfyllningen.
 
-### Controller cones and Orton's chart
+### Automatikens käglor och Ortons tabell
 
-L&L and Bartlett controllers use {{1926 °F; 1052 °C}} for cone 04 and {{1819 °F; 993 °C}} for cone 06, a little below Orton's {{1945 °F; 1063 °C}} and {{1828 °F; 998 °C}}; they agree at cone 6 and cone 10. Witness cones settle the difference: if they disagree with the controller, correct it with the cone offset.
+Automatikerna från L&L och Bartlett använder {{1926 °F; 1052 °C}} för kägla 04 och {{1819 °F; 993 °C}} för kägla 06, lite under Ortons {{1945 °F; 1063 °C}} och {{1828 °F; 998 °C}}; vid kägla 6 och kägla 10 stämmer de överens. Kontrollkäglor{{en: witness cones}} avgör skillnaden: om de inte stämmer med automatiken, korrigera den med kägeloffset.
 
-### On a manual kiln
+### På en ugn utan automatik
 
-A manual kiln follows the same plan by hand: dry slowly with the lid propped and the peepholes open, step the switches up from Low to Medium to High, and let the sitter end the firing. The published procedures are under Manual kilns in detail, below.
+En ugn utan automatik följer samma plan för hand: torka långsamt med locket på glänt och titthålen öppna, vrid upp vreden från Low till Medium och sedan High, och låt Kiln-Sitter-brytaren avsluta bränningen. De publicerade tillvägagångssätten finns under Ugnar utan automatik i detalj nedan.
 
 ## Glasyrbränning {#glaze}
 

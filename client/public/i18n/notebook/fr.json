@@ -49,6 +49,10 @@
         "title": "Guides",
         "text": "De ce qu’est un émail jusqu’à sa cuisson, en protégeant tout le monde en chemin."
       },
+      "trash": {
+        "title": "Corbeille",
+        "text": "Remettez en place ce que vous avez retiré ces 30 derniers jours."
+      },
       "account": {
         "title": "Compte et réglages",
         "text": "Réglages, votre mot de passe, la connexion en deux étapes et un téléchargement de tout ce que vous conservez ici."
@@ -116,6 +120,7 @@
   },
   "trash": {
     "title": "Corbeille",
+    "lead": "Ce que vous retirez (recettes, matières, additifs, notes, relevés de cuisson et conseils) attend ici pendant 30 jours. Remettez-le en place, ou supprimez-le définitivement.",
     "listHeading": "Dans la corbeille",
     "none": "La corbeille est vide.",
     "untitled": "Sans titre",

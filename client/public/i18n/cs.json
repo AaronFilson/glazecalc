@@ -45,6 +45,7 @@
     "account": "Účet",
     "trialAccount": "Zkušební přístup",
     "accountTitle": "Váš účet a nastavení",
+    "trash": "Koš",
     "signOut": "Odhlásit se",
     "createAccount": "Vytvořit účet zdarma"
   },
@@ -90,7 +91,8 @@
     "advice": "Praktické tipy k míchání, glazování a výpalu od aplikace Glazecalc a k tomu vaše vlastní rady. Zdarma pro hrnčíře a keramiky.",
     "about": "Glazecalc je bezplatná open-source kalkulačka chemie glazur a zápisník receptů. Podívejte se, jak počítá Segerův vzorec (UMF) a jak je postavená.",
     "privacy": "Jak Glazecalc nakládá s vašimi daty: žádné reklamy, analytika ani sledování a nic se neprodává. Co se uchovává, proč a jak uplatnit svá práva.",
-    "signup": "Vytvořte si zdarma účet Glazecalc a uchovávejte své recepty glazur, suroviny, poznámky a záznamy výpalů. Bez reklam a vaše data se nikdy neprodávají."
+    "signup": "Vytvořte si zdarma účet Glazecalc a uchovávejte své recepty glazur, suroviny, poznámky a záznamy výpalů. Bez reklam a vaše data se nikdy neprodávají.",
+    "imageAlt": "Úvodní stránka Glazecalc: bezplatná chemie glazur pro keramiky, vedle fotografie vypálených žároměrek."
   },
   "notices": {
     "dismiss": "Zavřít",
@@ -285,6 +287,7 @@
     "close": "Zavřít"
   },
   "unity": {
+    "fluxes": "Taviva – R₂O a RO",
     "stabilizers": "Stabilizátory – R₂O₃",
     "glassFormers": "Sklotvorné oxidy – RO₂",
     "wildcards": "Ostatní oxidy",

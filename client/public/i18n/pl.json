@@ -45,6 +45,7 @@
     "account": "Konto",
     "trialAccount": "Okres próbny",
     "accountTitle": "Konto i ustawienia",
+    "trash": "Kosz",
     "signOut": "Wyloguj się",
     "createAccount": "Załóż bezpłatne konto"
   },
@@ -90,7 +91,8 @@
     "advice": "Praktyczne porady o rozrabianiu szkliw ceramicznych, szkliwieniu i wypale od Glazecalc oraz własne porady. Bezpłatnie dla garncarzy i ceramików.",
     "about": "Glazecalc to bezpłatny kalkulator chemii szkliw ceramicznych i notatnik open source. Jak oblicza wzór Segera (UMF) i jak jest zbudowany.",
     "privacy": "Jak Glazecalc postępuje z danymi: bez reklam, analityki i śledzenia, nic nie jest sprzedawane. Co jest przechowywane, dlaczego i jak skorzystać z praw.",
-    "signup": "Bezpłatne konto Glazecalc, by zachować receptury szkliw ceramicznych, surowce, notatki i dzienniki wypałów. Bez reklam, a dane nigdy nie są sprzedawane."
+    "signup": "Bezpłatne konto Glazecalc, by zachować receptury szkliw ceramicznych, surowce, notatki i dzienniki wypałów. Bez reklam, a dane nigdy nie są sprzedawane.",
+    "imageAlt": "Strona główna Glazecalc: darmowa chemia szkliw dla ceramików, obok zdjęcia wypalonych zestawów stożków."
   },
   "notices": {
     "dismiss": "Zamknij",
@@ -285,6 +287,7 @@
     "close": "Zamknij"
   },
   "unity": {
+    "fluxes": "Topniki – R₂O i RO",
     "stabilizers": "Stabilizatory – R₂O₃",
     "glassFormers": "Tlenki szkłotwórcze – RO₂",
     "wildcards": "Pozostałe",

@@ -207,6 +207,11 @@
     "recipes": "Recepty (CSV)",
     "materials": "Suroviny (CSV)"
   },
+  "trash": {
+    "heading": "Kôš",
+    "text": "To, čo odstránite zo svojho zápisníka, čaká v Koši 30 dní. Odtiaľ to môžete vrátiť späť, alebo natrvalo zmazať.",
+    "open": "Otvoriť Kôš"
+  },
   "shared": {
     "heading": "Zdieľané recepty",
     "text": "Recepty, ktoré zdieľate odkazom a ktoré môže bez účtu prečítať každý, kto odkaz má. Odkaz sa zobrazí len raz, pri vytvorení, takže ho tu nemožno zobraziť. Ak chcete recept zdieľať znova, vytvorte nový odkaz v ponuke Viac pri recepte.",
@@ -301,6 +306,7 @@
         "saved": "Uložené: výpal podľa Ortonových kužeľov."
       },
       "sk": {
+        "label": "Podľa kužeľov SK, JIS R 8101",
         "example": "SK 4a, SK 8",
         "saved": "Uložené: výpal podľa kužeľov SK."
       },

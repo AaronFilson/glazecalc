@@ -49,6 +49,10 @@
         "title": "Ceļveži",
         "text": "No tā, kas ir glazūra, līdz tās apdedzināšanai, un kā pa ceļam pasargāt visus."
       },
+      "trash": {
+        "title": "Atkritne",
+        "text": "Atjaunojiet to, ko noņēmāt pēdējo 30 dienu laikā."
+      },
       "account": {
         "title": "Konts un iestatījumi",
         "text": "Iestatījumi, jūsu parole, divpakāpju pierakstīšanās un visa, ko šeit glabājat, lejupielāde."
@@ -116,6 +120,7 @@
   },
   "trash": {
     "title": "Atkritne",
+    "lead": "Viss, ko noņemat (receptes, izejvielas, piedevas, piezīmes, apdedzināšanas žurnāli un padomi), šeit gaida 30 dienas. Atjaunojiet to vai izdzēsiet neatgriezeniski.",
     "listHeading": "Atkritnē",
     "none": "Atkritne ir tukša.",
     "untitled": "Bez nosaukuma",

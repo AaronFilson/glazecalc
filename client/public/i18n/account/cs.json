@@ -207,6 +207,11 @@
     "recipes": "Recepty (CSV)",
     "materials": "Suroviny (CSV)"
   },
+  "trash": {
+    "heading": "Koš",
+    "text": "To, co odeberete ze svého zápisníku, čeká v koši 30 dnů. Odtud to můžete vrátit zpět, nebo nadobro smazat.",
+    "open": "Otevřít koš"
+  },
   "shared": {
     "heading": "Sdílené recepty",
     "text": "Recepty, které sdílíte odkazem a které může bez účtu přečíst každý, kdo odkaz má. Odkaz se zobrazí jen jednou, při vytvoření, takže ho tu nelze zobrazit. Chcete-li recept sdílet znovu, vytvořte nový odkaz v nabídce Více u receptu.",
@@ -301,6 +306,7 @@
         "saved": "Uloženo: výpal na Ortonovy žároměrky."
       },
       "sk": {
+        "label": "Na žároměrky SK, JIS R 8101",
         "example": "SK 4a, SK 8",
         "saved": "Uloženo: výpal na žároměrky SK."
       },

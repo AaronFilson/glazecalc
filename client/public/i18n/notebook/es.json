@@ -49,6 +49,10 @@
         "title": "Guías",
         "text": "Desde qué es un esmalte hasta su cocción, y cómo mantener a salvo a todo el mundo por el camino."
       },
+      "trash": {
+        "title": "Papelera",
+        "text": "Recupere lo que quitó en los últimos 30 días."
+      },
       "account": {
         "title": "Cuenta y ajustes",
         "text": "Ajustes, su contraseña, el inicio de sesión en dos pasos y una descarga de todo lo que guarda aquí."
@@ -116,6 +120,7 @@
   },
   "trash": {
     "title": "Papelera",
+    "lead": "Lo que quita (recetas, materiales, aditivos, notas, registros de cocción y consejos) espera aquí 30 días. Recupérelo, o elimínelo para siempre.",
     "listHeading": "En la papelera",
     "none": "La papelera está vacía.",
     "untitled": "Sin título",

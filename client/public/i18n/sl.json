@@ -45,6 +45,7 @@
     "account": "Račun",
     "trialAccount": "Preizkus",
     "accountTitle": "Vaš račun in nastavitve",
+    "trash": "Koš",
     "signOut": "Odjava",
     "createAccount": "Ustvari brezplačen račun"
   },
@@ -90,7 +91,8 @@
     "advice": "Praktični nasveti za mešanje, glaziranje in žganje iz aplikacije Glazecalc ter vaši lastni nasveti. Brezplačno za lončarje in keramike.",
     "about": "Glazecalc je brezplačen odprtokoden kalkulator kemije glazur za keramiko in beležnica. Oglejte si, kako izračuna Segerjevo formulo (UMF) in kako je narejen.",
     "privacy": "Kako Glazecalc ravna z vašimi podatki: brez oglasov, analitike in sledenja, nič se ne prodaja. Kaj se hrani, zakaj in kako uveljavljate svoje pravice.",
-    "signup": "Ustvarite brezplačen račun Glazecalc za recepte za glazure, surovine, zapiske in dnevnike žganja. Brez oglasov, vaši podatki se nikoli ne prodajajo."
+    "signup": "Ustvarite brezplačen račun Glazecalc za recepte za glazure, surovine, zapiske in dnevnike žganja. Brez oglasov, vaši podatki se nikoli ne prodajajo.",
+    "imageAlt": "Domača stran Glazecalc: brezplačna kemija glazur za lončarje, ob fotografiji žganih stožcev."
   },
   "notices": {
     "dismiss": "Opusti",
@@ -285,6 +287,7 @@
     "close": "Zapri"
   },
   "unity": {
+    "fluxes": "Talila – R₂O in RO",
     "stabilizers": "Stabilizatorji – R₂O₃",
     "glassFormers": "Tvorci stekla – RO₂",
     "wildcards": "Drugi oksidi",

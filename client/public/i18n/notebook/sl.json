@@ -49,6 +49,10 @@
         "title": "Vodniki",
         "text": "Od tega, kaj je glazura, do njenega žganja, in kako pri tem poskrbeti za varnost vseh."
       },
+      "trash": {
+        "title": "Koš",
+        "text": "Vrnite nazaj, kar ste odstranili v zadnjih 30 dneh."
+      },
       "account": {
         "title": "Račun in nastavitve",
         "text": "Nastavitve, vaše geslo, dvostopenjska prijava in prenos vsega, kar tu hranite."
@@ -116,6 +120,7 @@
   },
   "trash": {
     "title": "Koš",
+    "lead": "Vse, kar odstranite (recepte, surovine, dodatke, zapiske, dnevnike žganja in nasvete), tu čaka 30 dni. Vrnite to nazaj ali pa to dokončno izbrišite.",
     "listHeading": "V košu",
     "none": "Koš je prazen.",
     "untitled": "Brez naslova",

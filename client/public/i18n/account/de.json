@@ -207,6 +207,11 @@
     "recipes": "Rezepte (CSV)",
     "materials": "Rohstoffe (CSV)"
   },
+  "trash": {
+    "heading": "Papierkorb",
+    "text": "Was Sie aus Ihrem Notizbuch entfernen, bleibt 30 Tage im Papierkorb. Stellen Sie es von dort wieder her oder löschen Sie es endgültig.",
+    "open": "Papierkorb öffnen"
+  },
   "shared": {
     "heading": "Geteilte Rezepte",
     "text": "Die Rezepte, die Sie per Link teilen und die jede Person mit dem Link ohne Konto lesen kann. Ein Link wird nur einmal angezeigt, nämlich wenn er erstellt wird, deshalb kann er hier nicht angezeigt werden. Um ein Rezept erneut zu teilen, erstellen Sie unter „Mehr“ beim Rezept einen neuen Link.",
@@ -301,6 +306,7 @@
         "saved": "Gespeichert: Brennen nach Ortonkegeln."
       },
       "sk": {
+        "label": "Nach SK-Kegeln, JIS R 8101",
         "example": "SK 4a, SK 8",
         "saved": "Gespeichert: Brennen nach SK-Kegeln."
       },

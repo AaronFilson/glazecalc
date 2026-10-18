@@ -49,6 +49,10 @@
         "title": "Gidsen",
         "text": "Van wat een glazuur is tot het stoken ervan, en hoe iedereen onderweg veilig blijft."
       },
+      "trash": {
+        "title": "Prullenbak",
+        "text": "Zet terug wat u de afgelopen 30 dagen hebt verwijderd."
+      },
       "account": {
         "title": "Account en instellingen",
         "text": "Instellingen, uw wachtwoord, inloggen in twee stappen en een download van alles wat u hier bewaart."
@@ -116,6 +120,7 @@
   },
   "trash": {
     "title": "Prullenbak",
+    "lead": "Wat u verwijdert (recepten, grondstoffen, toevoegingen, notities, stookverslagen en advies), blijft hier 30 dagen staan. Zet het terug, of verwijder het definitief.",
     "listHeading": "In de prullenbak",
     "none": "De prullenbak is leeg.",
     "untitled": "Zonder naam",

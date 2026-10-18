@@ -49,6 +49,10 @@
         "title": "Poradniki",
         "text": "Od tego, czym jest szkliwo, po jego wypał – z dbałością o bezpieczeństwo wszystkich po drodze."
       },
+      "trash": {
+        "title": "Kosz",
+        "text": "Można przywrócić to, co zostało usunięte w ciągu ostatnich 30 dni."
+      },
       "account": {
         "title": "Konto i ustawienia",
         "text": "Ustawienia, hasło, logowanie dwuetapowe i pobranie wszystkiego, co jest tu przechowywane."
@@ -116,6 +120,7 @@
   },
   "trash": {
     "title": "Kosz",
+    "lead": "To, co zostanie usunięte (receptury, surowce, dodatki, notatki, dzienniki wypałów i porady), czeka tutaj 30 dni. Można to przywrócić albo usunąć na stałe.",
     "listHeading": "W koszu",
     "none": "Kosz jest pusty.",
     "untitled": "Bez nazwy",

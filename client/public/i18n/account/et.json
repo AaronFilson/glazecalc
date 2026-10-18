@@ -207,6 +207,11 @@
     "recipes": "Retseptid (CSV)",
     "materials": "Toorained (CSV)"
   },
+  "trash": {
+    "heading": "Prügikast",
+    "text": "See, mille oma märkmikust eemaldate, ootab prügikastis 30 päeva. Pange see sealt tagasi või kustutage jäädavalt.",
+    "open": "Ava prügikast"
+  },
   "shared": {
     "heading": "Jagatud retseptid",
     "text": "Lingiga jagatud retseptid, mida iga lingi omanik saab ilma kontota lugeda. Link näidatakse ainult üks kord, selle tegemisel, seega ei saa seda siin näidata. Retsepti uuesti jagamiseks tehke retsepti menüüs „Veel“ uus link.",
@@ -301,6 +306,7 @@
         "saved": "Salvestatud: põletus Ortoni koonuste järgi."
       },
       "sk": {
+        "label": "SK-koonuste järgi, JIS R 8101",
         "example": "SK 4a, SK 8",
         "saved": "Salvestatud: põletus SK-koonuste järgi."
       },

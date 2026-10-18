@@ -18,40 +18,40 @@ Recept uvádí suroviny, například živec{{en: feldspar}}, křídu{{en: whitin
 > [!NOTE]
 > Dá se to zapamatovat takto: oxid křemičitý je sklo, taviva mu umožní roztavit se při teplotě, které vaše pec dosáhne, a oxid hlinitý ho zahustí, aby zůstalo tam, kam ho nanesete.
 
-## Clay, coatings and the two firings {#clay-and-firings lang=en}
+## Hlína, povlaky a dva výpaly {#clay-and-firings}
 
-### Clay bodies
+### Keramické hmoty
 
-The **clay body** is the clay a pot is made of. There are three main kinds.
+**Keramická hmota**{{en: clay body}} je hlína, ze které je nádoba vyrobená. Existují tři hlavní druhy.
 
-- **Earthenware**: a low-fire body, about cone 06–02, that stays porous. Often red or buff, it needs a glaze to hold water.
-- **Stoneware**: a mid- to high-fire body, about cone 5–10, that becomes vitreous or nearly so.
-- **Porcelain**: a white, high-fire body rich in kaolin, often translucent.
+- **Hrnčina**{{en: earthenware}}: nízkoteplotní hmota, vypalovaná zhruba na žároměrku{{en: cone}} 06–02, která zůstává pórovitá. Často je červená nebo nažloutlá, a aby udržela vodu, potřebuje glazuru{{en: glaze}}.
+- **Kamenina**{{en: stoneware}}: středně- až vysokoteplotní hmota, vypalovaná zhruba na žároměrku 5–10, která sline nebo téměř sline.
+- **Porcelán**: bílá vysokoteplotní hmota bohatá na kaolin, často průsvitná.
 
-**Vitreous** means glassy and non-porous; **vitrification** is a body becoming so as it fires. UK potters often draw the line by temperature instead: stoneware is fired above {{2192 °F; 1200 °C}}, earthenware below. Mid fire, cone 5–6, falls just either side of that line.
+**Slinutý** znamená sklovitý a nepórovitý; **slinování** je děj, při kterém se hmota během výpalu takovou stává. Britští keramici často vedou hranici raději podle teploty: kamenina se vypaluje nad {{2192 °F; 1200 °C}}, hrnčina pod ní. Středněteplotní výpal, žároměrka 5–6, leží těsně po obou stranách této hranice.
 
-### Coatings and drying
+### Povlaky a sušení
 
-**Slip** is clay suspended in water, for casting, joining or decorating. An **engobe** is a slip-like coating, often colored, with more non-clay materials. An **underglaze** is colored slip or oxide decoration, usually covered with a clear glaze.
+**Šlikr** je hlína rozmíchaná ve vodě, která slouží k lití, spojování nebo zdobení. **Engoba** je povlak podobný šlikru, často barevný, s větším podílem surovin jiných než hlína. **Podglazurní barva** je barevný šlikr nebo dekor z oxidů, obvykle překrytý transparentní glazurou.
 
-Unfired ware is **greenware** (sources disagree on whether the word covers all unfired ware or only dry ware). As it dries it becomes **leather-hard**, stiff but slightly damp, the stage for trimming and handles; then **bone dry**, with no free water left, very fragile and ready to fire.
+Nevypáleným výrobkům se říká **syrové výrobky**{{en: greenware}} (zdroje se neshodují, zda tento název zahrnuje všechny nevypálené výrobky, nebo jen suché). Při sušení se stanou **kožovitě tvrdými**, tedy pevnými, ale ještě mírně vlhkými, což je fáze, kdy se obtáčí a přidávají ucha; pak **zcela suchými**, bez volné vody, velmi křehkými a připravenými k výpalu.
 
-### The two firings
+### Dva výpaly
 
-The first, lower firing is the **bisque** (UK: **biscuit**), usually cone 08–04 (most often 06–04), about {{1728–1945 °F; 942–1063 °C}}. It leaves ware strong but porous. Digitalfire, a glaze reference site, suggests generally more than 15% porosity, so the bisque draws water out of the glaze as it goes on. A soft bisque (cone 08–06) is more porous; a hard bisque (often cone 04) is sturdier but takes glaze less readily.
+První, nižší výpal je **přežah**{{en: bisque}} (ve Velké Británii **biscuit**), obvykle na žároměrku 08–04 (nejčastěji 06–04), zhruba {{1728–1945 °F; 942–1063 °C}}. Výrobky jsou po něm pevné, ale pórovité. Digitalfire, web s informacemi o glazurách, doporučuje pórovitost obecně vyšší než 15 %, aby přežahnutý střep při nanášení odsával z glazury vodu. Nízký přežah (žároměrka 08–06) je pórovitější; vysoký přežah (často žároměrka 04) je pevnější, ale glazuru přijímá hůř.
 
-Table: How the bisque changes glazing (Digitalfire)
-Label: How the bisque changes glazing
+Table: Jak přežah ovlivňuje glazování (Digitalfire)
+Label: Jak přežah ovlivňuje glazování
 
-| Bisque                                  | What happens                                                    |
-| --------------------------------------- | --------------------------------------------------------------- |
-| Under-fired, very absorbent             | Glaze goes on too thick, then cracks and crawls                 |
-| Over-fired, dense                       | Dipping and drying take longer                                  |
-| Fired hotter, or held longer at the top | More gas burns off now, so less bubbles through the glaze later |
+| Přežah                                                   | Co se stane                                                                      |
+| -------------------------------------------------------- | -------------------------------------------------------------------------------- |
+| Nedopálený, velmi nasákavý                               | Glazura se nanese v příliš silné vrstvě, pak praská a stahuje se{{en: crawling}} |
+| Přepálený, hutný                                         | Namáčení i schnutí trvá déle                                                     |
+| Vypálený na vyšší teplotu nebo s delší výdrží na vrcholu | Víc plynů vyhoří už teď, takže jich později méně probublá glazurou               |
 
-Potclays, a UK supplier, describes biscuit firing to around {{1000 °C; 1832 °F}}, about cone 06. Reading these sources together, we suggest cone 06–04 for a first bisque: {{1828–1945 °F; 998–1063 °C}} at Orton's medium rate.
+Potclays, britský dodavatel, popisuje přežah na zhruba {{1000 °C; 1832 °F}}, tedy přibližně na žároměrku 06. Po zvážení těchto zdrojů doporučujeme pro první přežah žároměrku 06–04: {{1828–1945 °F; 998–1063 °C}} při střední rychlosti ohřevu podle Ortonovy tabulky.
 
-The **glaze firing** (British potters may say **glost** firing) melts the glaze and, for stoneware, matures the clay too. **Once-firing** glazes unfired ware and fires it just once. Digitalfire reports a production case where raw-glazed ware crawled on its rims until a bisque firing cured it, so begin with two firings. [Firing a basic kiln](/guides/firing) gives schedules for both.
+**Glazurový výpal**{{en: glaze firing}} (také ostrý výpal; britští keramici mu mohou říkat **glost** firing) roztaví glazuru a u kameniny při něm zároveň sline hlína. Při **jednožárovém výpalu**{{en: once-firing}} se glazují nevypálené výrobky a vypalují se jen jednou. Digitalfire popisuje případ z výroby, kdy se glazura na výrobcích glazovaných za syrova stahovala na okrajích, dokud to nevyřešil přežah; začněte proto se dvěma výpaly. Návod [Výpal v jednoduché peci](/guides/firing) uvádí vypalovací křivky pro oba.
 
 ## Žároměrky a tepelná expozice {#cones}
 
@@ -238,30 +238,30 @@ Label: Běžné vady glazur
 | Stékání                              | Glazura steče na pecní plát                         | Málo oxidu hlinitého; příliš silná vrstva, například tam, kde se polévání překrývá; hodně železa                                          | Nanášejte tenčí vrstvu; přidejte oxid hlinitý; glazuru končete dostatečně vysoko nade dnem           |
 | Praskání při chlazení{{en: dunting}} | Praskliny v nádobě vzniklé při chlazení nebo ohřevu | Rychlé chlazení přes modifikační přeměnu křemene{{en: quartz inversion}}, {{1063 °F; 573 °C}}; nestejně silné stěny; špatné sladění       | Přes {{1063 °F; 573 °C}} vypalujte pomalu, při ohřevu i chlazení; stejně silné stěny                 |
 
-## Food safety {#food-safety lang=en}
+## Vhodnost pro styk s potravinami {#food-safety}
 
-**Leaching** is metal dissolving out of a fired glaze into food or drink, and a glaze can look perfect and still do it. The legal tests soak the fired piece in an acid solution and measure the lead and cadmium that come out.
+**Uvolňování kovů**{{en: leaching}} znamená, že se kov z vypálené glazury{{en: glaze}} rozpouští do jídla nebo pití, a glazura přitom může vypadat dokonale. Při zkouškách předepsaných zákonem se vypálený kus máčí v kyselém roztoku a měří se olovo a kadmium, které se uvolní.
 
-### Lead-free is not the same as food-safe
+### Bezolovnatá neznamená vhodná pro styk s potravinami
 
-The rules in the US, the EU, the UK and Australia limit the lead and cadmium a fired piece releases, not what the glaze contains. "Lead-free" removes one hazard; it is not a food-safety rating. Other oxides leach too: Glazy warns that high-barium glazes "can leach and are generally not food-safe", Digitalfire says copper "can make a glaze leachable; test it", and Glazy no longer advises lead glazes for functional ware.
+Předpisy v USA, EU, Velké Británii a Austrálii omezují množství olova a kadmia, které vypálený kus uvolní, ne to, co glazura obsahuje. „Bezolovnatá“ znamená o jedno nebezpečí méně; není to hodnocení vhodnosti pro styk s potravinami{{en: food safe}}. Uvolňují se i jiné oxidy: Glazy varuje, že glazury s vysokým obsahem barya „mohou uvolňovat kovy a obecně nejsou vhodné pro styk s potravinami“, Digitalfire uvádí, že měď „může způsobit, že glazura bude uvolňovat kovy; otestujte ji“, a Glazy už nedoporučuje olovnaté glazury pro užitkovou keramiku.
 
-A **liner glaze** is a stable, usually clear or white glaze for surfaces that touch food. In our view, one with no colorant, barium, lead or lithium, that melts fully, does not craze and wears well, is the lower-risk choice. Lower risk is not proof.
+**Vnitřní glazura**{{en: liner glaze}} je stabilní, obvykle transparentní nebo bílá glazura na plochy, které přicházejí do styku s potravinami. Podle nás je méně rizikovou volbou glazura bez barviv{{en: colorants}}, barya, olova a lithia, která se plně protaví, netrhlinkuje a dobře odolává opotřebení. Nižší riziko není důkaz.
 
-**Limit formulas** (Digitalfire prefers **target formulas**) give typical unity-formula ranges for stable glazes at a cone: Digitalfire's cone 6 targets put alumina at 0.285–0.64 and silica at 2.4–4.7. They guide you toward sound chemistry but prove nothing; Digitalfire avoids the word "limit" because it suggests glazes inside the ranges "are somehow safe". Glazecalc's tools for changing a recipe say when the new one goes past a recommended limit, such as a lot of boron at cone 6, and what the glaze will likely do.
+**Mezní vzorce**{{en: limit formulas}} (Digitalfire dává přednost názvu **cílové vzorce**{{en: target formulas}}) udávají typická rozmezí Segerova vzorce pro stabilní glazury při dané žároměrce{{en: cone}}: cílové hodnoty Digitalfire pro žároměrku 6 uvádějí oxid hlinitý 0,285–0,64 a oxid křemičitý 2,4–4,7. Vedou vás ke správné chemii, ale nic nedokazují; Digitalfire se slovu „limit“ (mez) vyhýbá, protože to slovo naznačuje, že glazury v těchto rozmezích jsou „nějakým způsobem bezpečné“. Nástroje aplikace Glazecalc pro úpravu receptu upozorní, když nový recept překročí doporučenou mez, například při velkém množství boru u žároměrky 6, a uvedou, jak se glazura pravděpodobně zachová.
 
-The legal limits differ by country. The table shows those where you live, in the law's own units; choose another country to compare.
+Zákonné limity se v jednotlivých zemích liší. Tabulka ukazuje limity tam, kde žijete, v jednotkách daného předpisu; pro srovnání vyberte jinou zemi.
 
 ::food-limits
 
-In the US, decorative ceramic ware that looks usable for food is treated as food ware unless it carries a stick-on label and a permanent notice molded or fired onto its base, such as "Not for Food Use. May Poison Food", or has a hole through the food surface. The EU sets lead and cadmium limits in Directive 84/500/EEC, and the UK keeps the same figures in its own law. From 29 May 2026 the Netherlands, Belgium and Luxembourg allow about 130 to 150 times less lead, and about 15 times less cadmium. Australia sets limits for imported ware; we found no official limit for ware made in Australia or New Zealand.
+V USA se dekorativní keramika, která vypadá použitelně pro jídlo, považuje za nádobí pro potraviny, ledaže nese nalepovací štítek a trvalé upozornění vylisované nebo vypálené na dně, například „Not for Food Use. May Poison Food“ (nepoužívat pro potraviny, může jídlo otrávit), nebo má v ploše určené pro jídlo průchozí otvor. EU stanovuje limity pro olovo a kadmium ve směrnici Rady 84/500/EHS a Velká Británie si stejné hodnoty ponechává ve vlastním právu. Od 29. května 2026 povolují Nizozemsko, Belgie a Lucembursko zhruba 130 až 150krát méně olova a zhruba 15krát méně kadmia. Austrálie stanovuje limity pro dovážené výrobky; pro výrobky vyrobené v Austrálii nebo na Novém Zélandu jsme žádný úřední limit nenašli.
 
-### Testing
+### Zkoušky
 
-The FDA says home swab kits can show leachable lead, but Ceramics New Zealand warns that test pens are not designed for ceramics and give false positives. Treat a positive as a reason to stop using the piece, and a negative as proving nothing. A laboratory leach test of the fired piece (ASTM C738 in the US; EN 1388 or ISO 6486 in Europe) is the real answer.
+FDA uvádí, že domácí stěrové testy mohou odhalit olovo, které se uvolňuje, ale Ceramics New Zealand varuje, že testovací pera nejsou určena pro keramiku a dávají falešně pozitivní výsledky. Pozitivní výsledek berte jako důvod kus přestat používat a negativní tak, že nic nedokazuje. Skutečnou odpověď dá laboratorní zkouška uvolňování kovů z vypáleného kusu (ASTM C738 v USA; EN 1388 nebo ISO 6486 v Evropě).
 
 > [!WARNING]
-> "Food safe" means this glaze, on this clay, fired to this cone in this kiln and applied this way, releases less than the legal limits. Glazecalc can help you build a stable glaze, and **Replace lead** can rebuild an old lead recipe without lead, but no calculator can certify a pot. Only a test of the fired piece can.
+> „Vhodná pro styk s potravinami“ znamená, že tato glazura na této hlíně, vypálená na tuto žároměrku v této peci a nanesená tímto způsobem, uvolňuje méně, než povolují zákonné limity. Glazecalc vám může pomoci sestavit stabilní glazuru a funkce **Nahradit olovo** umí starý olovnatý recept sestavit znovu bez olova, ale žádná kalkulačka nemůže nádobu certifikovat. To dokáže jen zkouška vypáleného kusu.
 
 ## Měrná hmotnost a nanášení {#application}
 
@@ -298,171 +298,171 @@ Plyny v peci, její **atmosféra**, ovlivňují, jak glazury{{en: glazes}} vyjdo
 
 Každá pec, včetně elektrických, uvolňuje výpary, proto ji odvětrávejte. Jak na to, vysvětluje návod [Bezpečné míchání a větrání](/guides/safe-mixing).
 
-## Glossary {#glossary lang=en}
+## Slovník pojmů {#glossary}
 
-Additive
-: A colorant, opacifier or suspender added on top of a recipe's 100.
+Ball Clay, plastický jíl
+: Plastický jíl s větším obsahem železa a organických látek než kaolin.
 
-Alumina (Al₂O₃)
-: The main stabilizer: stops running and adds hardness. From clays and feldspars.
+Barvivo a barvítko (colorant and stain)
+: Oxid nebo uhličitan kovu, který barví glazuru; barvítko je barvivo vyrobené v továrně, stálejší.
 
-Ball clay
-: A plastic clay with more iron and organic matter than kaolin.
+Bentonit (bentonite)
+: Velmi jemný jíl, přidávaný v množství 1–3 %, aby glazura nesedala.
 
-Batch recipe
-: A glaze's raw materials by weight, usually adding up to 100.
+Bor, B₂O₃ (boron)
+: Formálně sklotvorný oxid, ale používá se jako tavivo; nezbytný od žároměrky 06 do žároměrky 6.
 
-Bentonite
-: A very fine clay added at 1–3% to keep glaze from settling.
+CMC, karboxymethylcelulóza (CMC gum)
+: Celulózové pojivo, díky kterému se glazura dobře nanáší štětcem a drží; při výpalu vyhoří.
 
-Bisque (UK: biscuit)
-: The first, lower firing, usually cone 08–04 (most often 06–04), leaving ware strong but porous.
+Flokulant a ztekucovadlo (flocculant and deflocculant)
+: Přísady, které suspenzi zgelují (hořká sůl, ocet), nebo ji ztekutí (vodní sklo, Darvan).
 
-Boron (B₂O₃)
-: Formally a glass former but used as a flux; essential from cone 06 to cone 6.
+Frita (frit)
+: Sklo vyrobené v továrně, roztavené, prudce zchlazené a semleté, které z rozpustných nebo toxických oxidů dělá nerozpustné.
 
-CMC gum
-: A cellulose gum that helps glaze brush on and stick; it burns away.
+Glazura (glaze)
+: Vrstva skla, která se při výpalu roztaví, nádobu uzavře a ozdobí.
 
-Colorant and stain
-: A metal oxide or carbonate that colors glaze; a stain is a factory-made, more stable colorant.
+Glazurový výpal, ostrý výpal (glaze firing; britsky glost firing)
+: Výpal, při kterém se roztaví glazura.
 
-Cone
-: A calibrated ceramic pyramid that bends at a set heatwork. A witness cone shows what the pots received.
+Hrnčina (earthenware)
+: Nízkoteplotní hmota (zhruba žároměrka 06–02), která zůstává pórovitá.
 
-Crawling
-: Glaze pulling back into beads in firing, leaving bare clay.
+Jednožárový výpal (once-firing, single firing)
+: Glazování nevypálených výrobků a jejich vypálení jen jednou.
 
-Crazing
-: Fine cracks in a glaze that shrinks more than its body; crackle when wanted.
+Kalivo (opacifier)
+: Surovina, například zirkonsilikát, oxid cíničitý nebo oxid titaničitý, která dělá glazuru krycí.
 
-Devitrification
-: Crystals growing out of the glass early in cooling, where they are not wanted.
+Kamenina (stoneware)
+: Středně- až vysokoteplotní hmota (zhruba žároměrka 5–10), která sline nebo téměř sline.
 
-Dunting
-: Cracks in a pot from cooling or heating stress, often at quartz inversion, {{1063 °F; 573 °C}}.
+Kaolin (britsky China Clay)
+: Čistý bílý jíl, který dodává oxid hlinitý a oxid křemičitý; udržuje glazuru ve vznosu. V Austrálii: Eckalite.
 
-Earthenware
-: A low-fire body (about cone 06–02) that stays porous.
+Křída (whiting)
+: Uhličitan vápenatý, hlavní vápenaté tavivo; při výpalu ztratí přes 40 % své hmotnosti. Německy: Kreide.
 
-Feldspar
-: A mineral supplying alkali flux with alumina and silica: potash, soda or nepheline syenite.
+Lesklá, polomatná a matná (gloss, satin and matte)
+: Odráží světlo a je hladká; má tlumený lesk; je bez lesku.
 
-Flocculant and deflocculant
-: Additives that gel a slurry (Epsom salts, vinegar) or thin it (sodium silicate, Darvan).
+Měrná hmotnost (specific gravity, SG)
+: Hmotnost suspenze v poměru ke stejnému objemu vody. Ve starších britských zdrojích: hmotnost pinty.
 
-Flux
-: An oxide that lowers the melting temperature of silica.
+Mezní vzorec, cílový vzorec (limit formula, target formula)
+: Typická rozmezí Segerova vzorce pro stabilní glazury při dané žároměrce; vodítko, ne záruka.
 
-Food safe
-: In law, releasing less lead and cadmium than the limits in an acid test. Not the same as lead-free.
+Nátěr na pláty (kiln wash)
+: Žáruvzdorný povlak, který chrání pecní pláty před stékajícími kapkami.
 
-Frit
-: Factory-made glass, melted, quenched and ground, that makes soluble or toxic oxides insoluble.
+Odprýskávání glazury (shivering)
+: Odlupování glazury z hran, protože je v příliš velkém tlakovém napětí; u užitkové keramiky nebezpečné.
 
-Glass former
-: The oxide that builds the glass, usually silica.
+Odskelnění, devitrifikace (devitrification)
+: Krystaly, které na začátku chlazení vyrůstají ze skla tam, kde nejsou žádoucí.
 
-Glaze
-: A coat of glass that melts in firing to seal and decorate a pot.
+Oxid (oxide)
+: Sloučenina prvku s kyslíkem; oxidový rozbor je uvádí v hmotnostních procentech.
 
-Glaze firing (UK: glost firing)
-: The firing that melts the glaze.
+Oxid hlinitý, Al₂O₃ (alumina)
+: Hlavní stabilizátor: brání stékání a dodává tvrdost. Pochází z jílů a živců.
 
-Glaze fit
-: How well glaze and body expansion match; a good fit leaves the glaze slightly compressed.
+Oxid křemičitý, SiO₂ (silica)
+: Sklotvorný oxid; surovině se říká křemen, anglicky také flint nebo quartz.
 
-Gloss, satin and matte
-: Reflective and smooth; a subdued sheen; dull.
+Oxidace a redukce (oxidation and reduction)
+: Výpal s dostatkem kyslíku (elektrické pece), nebo s omezeným přívodem kyslíku (obvykle plyn nebo dřevo).
 
-Greenware
-: Unfired ware: leather-hard when stiff but damp, bone dry when no free water is left.
+Podglazurní barva (underglaze)
+: Barevný šlikr nebo dekor z oxidů, obvykle pod transparentní glazurou.
 
-Heatwork
-: The combined effect of temperature and time in a kiln; what cones measure.
+Poměr oxidu křemičitého k oxidu hlinitému (silica to alumina ratio)
+: Oxid křemičitý dělený oxidem hlinitým v Segerově vzorci: vyšší hodnota směřuje k lesku, nižší k matu.
 
-Kaolin (UK: china clay)
-: A pure white clay supplying alumina and silica; keeps glaze suspended. Australia: Eckalite.
+Porcelán (porcelain)
+: Bílá vysokoteplotní hmota bohatá na kaolin, často průsvitná.
 
-Kiln wash
-: A heat-resisting coating that protects kiln shelves from drips.
+Praskání při chlazení (dunting)
+: Praskliny v nádobě způsobené napětím při chlazení nebo ohřevu, často při modifikační přeměně křemene, {{1063 °F; 573 °C}}.
 
-Leaching
-: Metals dissolving out of a fired glaze into food or drink.
+Přežah (bisque; britsky biscuit)
+: První, nižší výpal, obvykle na žároměrku 08–04 (nejčastěji 06–04), po kterém jsou výrobky pevné, ale pórovité.
 
-Limit formula (target formula)
-: Typical unity-formula ranges for stable glazes at a cone; a guide, not a guarantee.
+Přísada (additive)
+: Barvivo, kalivo nebo přísada proti sedání, přidávaná navíc ke 100 dílům receptu.
 
-Line blend
-: Tests stepping one ingredient between two amounts. A triaxial blend varies three on a grid.
+R₂O a RO
+: Alkalická taviva (Na₂O, K₂O, Li₂O) a taviva z oxidů alkalických zemin (CaO, MgO, BaO, SrO, se ZnO).
 
-Liner glaze
-: A stable, usually clear or white glaze for surfaces that touch food.
+Receptura (batch recipe)
+: Suroviny glazury podle hmotnosti, obvykle v součtu 100.
 
-LOI (loss on ignition)
-: Weight lost in firing as water, carbon dioxide, organic matter or sulfur.
+Segerův vzorec, UMF (unity molecular formula, Seger formula)
+: Oxidy glazury vyjádřené počty molekul a přepočtené tak, aby taviva dávala dohromady 1.
 
-Once-firing (single firing)
-: Glazing unfired ware and firing it only once.
+Sklotvorný oxid (glass former)
+: Oxid, který vytváří sklo, obvykle oxid křemičitý.
 
-Opacifier
-: A material, such as zircon, tin oxide or titanium dioxide, that makes glaze opaque.
+Sladění glazury se střepem (glaze fit)
+: Jak dobře si odpovídá roztažnost glazury a střepu; při dobrém sladění je glazura v mírném tlakovém napětí.
 
-Oxidation and reduction
-: Firing with plenty of oxygen (electric kilns), or with oxygen restricted (usually gas or wood).
+Slinování (vitrification)
+: Děj, při kterém se hmota při výpalu stává sklovitou a nepórovitou.
 
-Oxide
-: A compound of an element with oxygen; an oxide analysis lists them by weight percent.
+Stabilizátor (stabilizer)
+: Oxid, hlavně oxid hlinitý, který zvyšuje viskozitu taveniny a dodává odolnost.
 
-Pinholing and blistering
-: Small holes, or sharp-edged craters, where gas escaped through the melt.
+Stahování glazury (crawling)
+: Stažení glazury při výpalu do kapek, po kterém zůstane holá hlína.
 
-Porcelain
-: A white, kaolin-rich, high-fire body, often translucent.
+Syrové výrobky (greenware)
+: Nevypálené výrobky: kožovitě tvrdé, když jsou pevné, ale vlhké, a zcela suché, když v nich nezůstala žádná volná voda.
 
-R₂O and RO
-: The alkali fluxes (Na₂O, K₂O, Li₂O) and alkaline-earth fluxes (CaO, MgO, BaO, SrO, with ZnO).
+Šlikr a engoba (slip and engobe)
+: Hlína ve vodě; engoba je povlak podobný šlikru s větším podílem surovin jiných než hlína.
 
-Shivering
-: Glaze flaking off edges because it is over-compressed; a hazard on functional ware.
+Tavivo (flux)
+: Oxid, který snižuje teplotu tání oxidu křemičitého.
 
-Silica (SiO₂)
-: The glass former; also called flint or quartz.
+Tepelná expozice (heatwork)
+: Společné působení teploty a času v peci; to, co měří žároměrky.
 
-Silica to alumina ratio
-: Silica divided by alumina in the unity formula: higher tends to gloss, lower to matte.
+Tixotropie (thixotropy)
+: Schopnost při míchání téct a v klidu ztuhnout v měkký gel.
 
-Slip and engobe
-: Clay in water; an engobe is a slip-like coating with more non-clay material.
+Trhlinkování (crazing)
+: Jemné trhlinky v glazuře, která se smršťuje víc než střep; když jsou žádoucí, krakelé.
 
-Specific gravity (SG)
-: A slurry's weight compared with the same volume of water. Older UK: pint weight.
+Uvolňování kovů (leaching)
+: Rozpouštění kovů z vypálené glazury do jídla nebo pití.
 
-Stabilizer
-: An oxide, mainly alumina, that stiffens the melt and adds durability.
+Vhodný pro styk s potravinami (food safe)
+: Podle zákona: uvolňuje při zkoušce v kyselém roztoku méně olova a kadmia, než povolují limity. Není totéž co bezolovnatý.
 
-Stoneware
-: A mid- to high-fire body (about cone 5–10) that becomes vitreous or nearly so.
+Vnitřní glazura (liner glaze)
+: Stabilní, obvykle transparentní nebo bílá glazura na plochy, které přicházejí do styku s potravinami.
 
-Thixotropy
-: Flowing when stirred, setting into a soft gel when still.
+Vpichy a puchýře (pinholing and blistering)
+: Drobné dírky nebo krátery s ostrými okraji v místech, kde taveninou unikl plyn.
 
-Underglaze
-: Colored slip or oxide decoration, usually under a clear glaze.
+Vykrývací vosk (wax resist)
+: Vosk nanesený tam, kam glazura nesmí, obvykle na dno.
 
-Unity molecular formula (UMF, Seger formula)
-: A glaze's oxides as molecule counts, scaled so the fluxes add up to 1.
+Zkušební řada (line blend)
+: Zkoušky, ve kterých se jedna složka postupně mění mezi dvěma množstvími. Trojúhelníková zkušební řada mění tři složky na mřížce.
 
-Vitrification
-: A body becoming glassy and non-porous in firing.
+Ztráta žíháním, ZŽ (loss on ignition, LOI)
+: Hmotnost ztracená při výpalu, když odejde voda, oxid uhličitý, organické látky nebo síra.
 
-Wax resist
-: Wax painted where glaze must not go, usually the foot.
+Žároměrka (cone)
+: Kalibrovaný keramický jehlan, který se ohne při určité tepelné expozici. Kontrolní žároměrka ukazuje, co výrobky dostaly.
 
-Whiting
-: Calcium carbonate, the main calcium flux; loses over 40% of its weight in firing. German: Kreide.
+Živec (feldspar)
+: Minerál, který dodává alkalické tavivo spolu s oxidem hlinitým a oxidem křemičitým: draselný živec, sodný živec nebo nefelinický syenit.
 
-## Sources {#sources lang=en}
+## Zdroje {#sources}
 
 - [Glazy Help: Glaze](https://help.glazy.org/concepts/glaze)
 - [Glazy Help: Oxides](https://help.glazy.org/concepts/oxides)
@@ -472,7 +472,7 @@ Whiting
 - [Glazy Help: Firing](https://help.glazy.org/concepts/firing)
 - [Glazy Help: Defects](https://help.glazy.org/concepts/defects)
 - [Glazy Help: Specific gravity](https://help.glazy.org/testing/specific-gravity)
-- [Orton Ceramic Foundation: Pyrometric cone chart, °F (via The Ceramic Shop)](https://www.theceramicshop.com/technical_info/Cones/Orton-Cone-Chart-F-022-14.pdf)
+- [Orton Ceramic Foundation: Pyrometric cone chart, °F (na webu The Ceramic Shop)](https://www.theceramicshop.com/technical_info/Cones/Orton-Cone-Chart-F-022-14.pdf)
 - [Digitalfire: Bisque](https://digitalfire.com/glossary/bisque)
 - [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Unity molecular formula](https://digitalfire.com/glossary/unity+molecular+formula)
