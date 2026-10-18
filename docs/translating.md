@@ -35,6 +35,9 @@ share a name with a scope.
   keeps the meaning (a typo, plainer wording) can keep its translations:
   `npm run i18n:sources -- --keep recipe:page.itTakenOut` (a guide section:
   `--keep guides/firing:bisque`). Change the key too when the meaning changes.
+- **Commit translations first.** `npm run i18n:sources` refuses to run while a translation file has
+  uncommitted changes, since it could take them out (`--force` runs it anyway).
+  `npm run i18n:sources -- --dry-run` lists what it would change and changes nothing.
 
 ## In templates
 
