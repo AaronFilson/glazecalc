@@ -198,8 +198,16 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   glossary for each (Traditional Chinese as Taiwan writes it, never converted from Simplified),
   reviewed, made consistent and the safety text checked by translating it back. That found Korean
   advice softer than the English ("it is best" where the English says should or never) and a word
-  for overfiring that can read as underfiring, both fixed. That makes 29 languages. The password
-  emails are in all three; the other account emails are in English for now.
+  for overfiring that can read as underfiring, both fixed. That makes 29 languages. Every account
+  email is in all three.
+- **In Thai, Vietnamese and Indonesian** (ภาษาไทย, Tiếng Việt, Bahasa Indonesia), at their own
+  addresses (`/th/recipe`, `/vi/recipe`, `/id/recipe`), made the same way, every account email
+  included, and the regions of Thailand, Vietnam and Indonesia in their own language. Translating
+  the safety text back found the everyday Vietnamese word for a dust mask where the English means a
+  rated respirator, fixed (khẩu trang lọc bụi đạt chuẩn), as was the same slip in Chinese. Thai
+  pages were checked at phone width for clipped tone marks and labels that cannot wrap; none were
+  found. That makes 32 languages. Visitors from all three countries see the sign-up page's notice
+  on where accounts are kept.
 - **Where your account is kept, and your choice.** The sign-up page tells everyone outside the US
   (and anyone whose region is not known) that Glazecalc is a free, open-source project, that
   accounts are kept on servers in the United States, that the guides and a trial need no account,
