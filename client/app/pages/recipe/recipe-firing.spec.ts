@@ -1,5 +1,5 @@
 import { TestBed } from '@angular/core/testing';
-import { TranslocoService } from '@jsverse/transloco';
+import { TranslocoService, translate } from '@jsverse/transloco';
 import { FiringBlock } from '../../../../lib/cones/firing';
 import { httpMock, testProviders, text } from '../../testing/test-providers';
 import { firingLine, firingWords } from './firing-text';
@@ -163,5 +163,17 @@ describe('RecipeLimits band names', () => {
     transloco.setActiveLang('de');
     await fixture.whenStable();
     expect(names()).toContain('Mittelbrand');
+  });
+});
+
+describe('the recipe help on limits', () => {
+  beforeEach(() => TestBed.configureTestingModule({ providers: testProviders() }));
+
+  it("says the band comes from the recipe's Firing, a range across bands shows both, and the band picker overrides", () => {
+    TestBed.inject(TranslocoService);
+    const help = translate('recipe.help.numbers.limits');
+    expect(help).toContain('gives: its cone, or its range');
+    expect(help).toContain("shows both bands' checks side by side");
+    expect(help).toContain("which overrides the recipe's firing");
   });
 });
