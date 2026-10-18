@@ -17,13 +17,17 @@
     "confirmEmail": "Potwierdzenie adresu e-mail - Glazecalc",
     "home": "Notatnik pracowni - Glazecalc",
     "recipe": "Receptury - Glazecalc",
+    "import": "Wklejanie receptur - Glazecalc",
+    "blends": "Mieszanki do płytek testowych - Glazecalc",
     "material": "Surowce - Glazecalc",
     "additive": "Dodatki - Glazecalc",
     "firingLogs": "Dzienniki wypałów - Glazecalc",
     "notes": "Notatki - Glazecalc",
     "trash": "Kosz - Glazecalc",
     "account": "Konto i ustawienia - Glazecalc",
-    "notFound": "Nie znaleziono strony - Glazecalc"
+    "notFound": "Nie znaleziono strony - Glazecalc",
+    "shared": "Udostępniona receptura - Glazecalc",
+    "assistants": "Korzystanie z Glazecalc w asystencie AI - Glazecalc"
   },
   "nav": {
     "skip": "Przejdź do treści",
@@ -96,9 +100,14 @@
   },
   "remove": {
     "alreadyRemoved": "Element „{name}” został już usunięty.",
+    "trashed": "Przeniesiono „{name}” do kosza.",
+    "undo": "Cofnij",
+    "restored": "Przywrócono „{name}”.",
+    "restoreFailed": "Nie udało się przywrócić „{name}”. Nadal jest w koszu.",
     "failed": "Nie udało się usunąć. Proszę spróbować ponownie.",
     "question": "Usunąć „{name}”?",
     "cannotUndo": "Tej operacji nie można cofnąć.",
+    "toTrash": "Można to przywrócić z kosza w ciągu 30 dni.",
     "removing": "Usuwanie…",
     "yes": "Tak, usuń",
     "cancel": "Anuluj",

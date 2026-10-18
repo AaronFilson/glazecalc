@@ -17,6 +17,14 @@
         "title": "Receptury",
         "text": "Można zbudować szkliwo z surowców i ich ilości, zobaczyć jego wzór Segera (UMF) i je zapisać."
       },
+      "import": {
+        "title": "Wklejanie receptur",
+        "text": "Można wkleić receptury ze strony internetowej, arkusza kalkulacyjnego lub notatek, sprawdzić, co odczytano, i je zapisać."
+      },
+      "blends": {
+        "title": "Mieszanki do płytek testowych",
+        "text": "Można zmieszać dwie, trzy lub cztery własne receptury w numerowane płytki testowe, z podaniem, co odważyć dla każdej z nich."
+      },
       "material": {
         "title": "Surowce",
         "text": "Można dodać własne surowce, ze wzoru chemicznego lub ze składu podanego przez dostawcę."
@@ -99,6 +107,35 @@
     "saveFailed": "Błąd: żądanie do serwera nie powiodło się."
   },
   "trash": {
-    "title": "Kosz"
+    "title": "Kosz",
+    "lead": "To, co zostanie usunięte z receptur, surowców, notatek i dzienników, czeka tutaj 30 dni. Można to przywrócić albo usunąć na stałe.",
+    "listHeading": "W koszu",
+    "none": "Kosz jest pusty.",
+    "untitled": "Bez nazwy",
+    "kinds": {
+      "recipes": "Receptura",
+      "materials": "Surowiec",
+      "additives": "Dodatek",
+      "notes": "Notatka",
+      "firing": "Dziennik wypałów",
+      "advice": "Porada",
+      "other": "Zapis"
+    },
+    "removedOn": "Usunięto {date}",
+    "goesOn": "Usunięcie na stałe: {date}",
+    "byApp": "Usunięto przez połączoną aplikację",
+    "putBack": "Przywróć",
+    "putBackName": "Przywróć: {name}",
+    "restored": "Przywrócono „{name}” na dawne miejsce.",
+    "restoredAlready": "Pozycję „{name}” przywrócono już wcześniej.",
+    "restoreFailed": "Nie udało się przywrócić „{name}”. Proszę spróbować ponownie.",
+    "deleted": "Usunięto „{name}” na stałe.",
+    "empty": "Opróżnij kosz",
+    "emptyQuestion": "Usunąć na stałe {count, plural, one {# zapis} few {wszystkie # zapisy} many {wszystkie # zapisów} other {wszystkie # zapisu}} z kosza? Tej operacji nie można cofnąć.",
+    "emptyYes": "Tak, opróżnij",
+    "emptying": "Opróżnianie…",
+    "emptied": "Kosz jest pusty.",
+    "emptyFailed": "Nie udało się opróżnić kosza. Proszę spróbować ponownie.",
+    "fetchFailed": "Nie udało się wczytać kosza. Proszę spróbować ponownie."
   }
 }

@@ -57,9 +57,13 @@
     "stackServer": "API w języku TypeScript na Node.js 24 i Express 5, z bazą MongoDB 9, sprawdzane przez ponad 350 testów automatycznych.",
     "stackHosting": "Działa w kontenerach Docker w Amazon Web Services, za serwerem nginx, z HTTPS od Let's Encrypt.",
     "stackDeploy": "Wdrażana przez GitHub Actions: obrazy są budowane i testowane przy każdej zmianie, a wdrożenia logują się do AWS bez przechowywanych kluczy.",
+    "creditsHeading": "Podziękowania",
+    "credits": "Obszary na wykresie Stulla pochodzą z odczytu wykresu R. T. Stulla z 1912 roku wykonanego przez Glazy, autorstwa Dereka Au (Copyright (c) 2017 Derek Au, licencja MIT). <notices>Pełna informacja</notices> znajduje się w kodzie źródłowym.",
     "whoHeading": "Autor",
     "who": "Aplikację Glazecalc tworzy Aaron Filson. Problem lub pomysł można <issues>zgłosić w serwisie GitHub</issues>.",
-    "studio": "Ręcznie robiona ceramika Aarona Filsona jest w <studio>Updraft Pottery Studio</studio> w Tacomie w stanie Waszyngton. Można obejrzeć prace i zamówić tę, która przypadnie do gustu."
+    "studio": "Ręcznie robiona ceramika Aarona Filsona jest w <studio>Updraft Pottery Studio</studio> w Tacomie w stanie Waszyngton. Można obejrzeć prace i zamówić tę, która przypadnie do gustu.",
+    "languagesHeading": "Języki",
+    "languages": "Glazecalc jest dostępny w tych językach. Każdy link otwiera tę stronę w danym języku."
   },
   "privacy": {
     "title": "Prywatność",
@@ -71,8 +75,15 @@
     "contact": "Aby zapytać o swoje dane lub skorzystać z któregokolwiek z przysługujących praw, należy napisać na adres <mail>privacy@glazecalcapp.com</mail>. Można też <issues>zgłosić sprawę w serwisie GitHub</issues>, ale zgłoszenia są publiczne: nigdy nie należy umieszczać w nich adresu e-mail ani niczego osobistego. Większość spraw dotyczących danych można załatwić samodzielnie na <account>stronie konta</account>.",
     "storedHeading": "Co jest przechowywane i dlaczego",
     "storedAccount": "<b>Konto:</b> adres e-mail oraz hasło, przechowywane wyłącznie jako jednokierunkowy skrót (bcrypt), nigdy jako samo hasło. Razem z nimi przechowywane są ustawienia (np. język, region i jednostki) oraz lista posiadanych surowców. Konto wymaga adresu e-mail, aby można było się logować i zresetować zapomniane hasło. Po założeniu konta na ten adres wysyłany jest link, który potwierdza, że to własny adres osoby zakładającej konto; do tego czasu wiadomości trafiają na niego tylko na prośbę, np. przy resetowaniu hasła.",
+    "storedPrices": "<b>Ceny, jeśli zostały podane:</b> ile kosztuje każdy surowiec, za kilogram, oraz waluta, w której są podane, do obliczania kosztu porcji. To dane biznesowe, przechowywane razem z kontem i prywatne: nigdy nie są częścią receptury, więc nie widać ich w niczym, co zostanie udostępnione. Funkcja Pobieranie moich danych je zawiera, a usunięcie konta je usuwa. Ceny z okresu próbnego przechodzą na konto razem z jego zapisami, dla surowców, które nie mają jeszcze ceny, gdy obie są w tej samej walucie.",
     "storedEmailChange": "<b>Zmiana adresu e-mail:</b> data ostatniej zmiany adresu, aby prośba o wyłączenie logowania dwuetapowego nigdy nie została przyjęta z nowego adresu w ciągu 30 dni po zmianie.",
     "storedSignIn": "<b>Logowanie dwuetapowe, jeśli zostanie włączone:</b> informacja, czy jest włączone; klucz, który aplikacja uwierzytelniająca współdzieli z Glazecalc, w postaci zaszyfrowanej; dla każdego klucza dostępu jego klucz publiczny (który sam nie pozwala się zalogować) wraz z identyfikatorem i danymi nadanymi przez urządzenie, nadana nazwa oraz data dodania i ostatniego użycia; kody odzyskiwania, wyłącznie jako jednokierunkowy skrót z kluczem, aby nikt nie mógł ich odczytać; a także, jeśli ktoś wpisze hasło, ale nie dokończy drugiego kroku, data ostatniej wiadomości e-mail z Glazecalc o tym (najwyżej raz na dobę). Podczas logowania, między hasłem a drugim krokiem, serwer przechowuje notatkę o logowaniu przez 5 minut, a strona trzyma krótki token tylko w pamięci: bez nowego pliku cookie i bez niczego w pamięci przeglądarki.",
+    "storedSaved": "<b>To, co zostało zapisane:</b> receptury, surowce, dodatki, notatki, dzienniki wypałów i porady, w takiej postaci, w jakiej zostały napisane. Może je zobaczyć tylko właściciel konta, chyba że receptura zostanie udostępniona przez link.",
+    "storedTrash": "<b>Kosz i wcześniejsze wersje:</b> to, co zostanie usunięte z listy, czeka w koszu w całości, aby można było to przywrócić; a każda zapisana zmiana zapisu zachowuje zapis w postaci sprzed niej, aby można było tę zmianę cofnąć.",
+    "storedShares": "<b>Receptury udostępnione przez link, jeśli jakieś są:</b> która receptura, kiedy utworzono jej link i czy pokazuje notatki receptury, wraz z jednokierunkowym skrótem (hash) linku (nigdy sam link). Każdy, kto ma link, może zobaczyć recepturę w obecnej postaci, z jej wzorem Segera, a także notatki, jeśli wybrano ich pokazywanie; nigdy adresu e-mail, konta ani cen. Udostępnione receptury są ukryte przed wyszukiwarkami, a link nigdy nie trafia do logów serwera. Aby zapobiegać nadużyciom, udostępnione receptury otwierane z każdego adresu IP są liczone w pamięci przez 15 min. Okres próbny nie może udostępniać.",
+    "storedTokens": "<b>Tokeny dostępu i połączone aplikacje, jeśli jakieś zostaną utworzone lub zatwierdzone:</b> dla każdego nazwa, to, co może robić, jednokierunkowy skrót (hash) tokenu (nigdy sam token) i jego ostatnie 4 znaki oraz kiedy został utworzony, ostatnio użyty, kiedy wygasa i kiedy został unieważniony.",
+    "storedActivity": "<b>Co robiły tokeny i aplikacje:</b> wiersz dla każdego zapisu, który token dostępu lub połączona aplikacja utworzyły, zmieniły, przeniosły do kosza, przywróciły lub cofnęły: kiedy, który token lub aplikacja, co zrobiły i tytuł zapisu, skrócony. Nigdy treść notatki ani nic innego z zapisu. Zmiany wprowadzone na stronie internetowej nie są wymieniane.",
+    "storedLimits": "<b>Ograniczenia częstotliwości:</b> aby zapobiegać zgadywaniu i skryptom wymykającym się spod kontroli, liczone są próby logowania, rejestracje, prośby o reset i okresy próbne według adresu IP lub konta, niedziałające tokeny dostępu według adresu IP, zapisy przenoszone do kosza przez każdy token dostępu według tokenu, otwierane udostępnione receptury i linki udostępniania, które niczego nie otwierają, według adresu IP, oraz żądania do narzędzi dla asystentów AI (MCP): 60 na minutę i 2000 na dobę według adresu IP albo 120 na minutę i 5000 na dobę według konta, gdy używany jest token dostępu, przy najwyżej 10 zamianach lub dopasowaniach na minutę.",
     "storedTrial": "<b>Okres próbny („Wypróbuj teraz”):</b> bez adresu e-mail i hasła, tylko wymyślona nazwa, np. „speckled quiet kilns”. Jeśli w trakcie okresu próbnego nastąpi zalogowanie na konto w tej samej przeglądarce, to, co powstało w okresie próbnym, zostanie przeniesione na konto.",
     "storedResets": "<b>Linki do resetowania hasła i linki e-mail:</b> które konto poprosiło o link i kiedy, adres, na który wysłano link potwierdzający adres, oraz odcisk każdego linku (a nie sam link).",
     "storedLogs": "<b>Logi:</b> serwer WWW zapisuje każde żądanie: adres IP, czas, żądaną stronę i nazwę przeglądarki. Aplikacja zapisuje błędy wraz ze stroną, na której wystąpiły, nigdy z adresem e-mail.",
@@ -95,6 +106,11 @@
     "choiceNoWarranty": "Glazecalc jest udostępniany w stanie, w jakim jest, bez gwarancji. Jego opiekunowie nie przyjmują żadnej odpowiedzialności, w tym prawnej, za decyzję o założeniu konta ani za to, gdzie przechowywane są jego dane.",
     "keptHeading": "Jak długo dane są przechowywane",
     "keptAccount": "<b>Konto i zapisane dane:</b> do czasu ich usunięcia. Konta nie są usuwane z powodu nieużywania.",
+    "keptTrash": "<b>Kosz i wcześniejsze wersje:</b> usunięty zapis przez 30 dni od usunięcia albo do chwili, gdy zostanie usunięty na stałe lub kosz zostanie opróżniony; wcześniejsze wersje przez 90 dni i tylko ostatnie 20 każdego zapisu (oraz ta sprzed zmian wprowadzonych przez token dostępu), ale nigdy dłużej niż sam zapis: gdy zapis jest w koszu, jego wersje znikają razem z nim. Jedne i drugie znikają od razu po usunięciu konta.",
+    "keptShares": "<b>Linki udostępniania:</b> do chwili zakończenia udostępniania receptury, utworzenia dla niej nowego linku, przeniesienia jej do kosza lub usunięcia konta. Przywrócenie receptury z kosza nie udostępnia jej ponownie. Reset hasła lub wylogowanie ze wszystkich urządzeń także unieważnia wszystkie linki; zmiana hasła nie.",
+    "keptTokens": "<b>Tokeny dostępu i połączone aplikacje:</b> każdy do 30 dni po wygaśnięciu (każdy wygasa, najpóźniej w ciągu roku) albo do usunięcia konta. Reset hasła lub „Wyloguj ze wszystkich urządzeń” unieważnia je wszystkie naraz.",
+    "keptActivity": "<b>Co robiły tokeny i aplikacje:</b> 90 dni albo do usunięcia konta.",
+    "keptLimits": "<b>Ograniczenia częstotliwości:</b> liczniki są przechowywane tylko w pamięci serwera, od 1 minuty do 24 godzin, i znikają po jego ponownym uruchomieniu.",
     "keptTrial": "<b>Okres próbny:</b> 14 dni od jego rozpoczęcia, potem zostaje usunięty wraz z całą zawartością, chyba że zostanie założone konto, aby go zachować.",
     "keptResets": "<b>Linki do resetowania hasła i linki e-mail:</b> link do resetowania hasła działa przez 30 minut, a jego zapis jest usuwany po około godzinie; link potwierdzający adres działa i jest przechowywany przez 24 godziny.",
     "keptSignIn": "<b>Logowanie dwuetapowe:</b> każda aplikacja uwierzytelniająca, klucz dostępu i zestaw kodów odzyskiwania do czasu ich usunięcia, wyłączenia logowania dwuetapowego lub usunięcia konta. Logowanie oczekujące na drugi krok jest usuwane po 5 minutach, a aplikacja lub klucz dostępu, których dodawanie rozpoczęto, ale nie dokończono, po najwyżej 10.",
@@ -112,6 +128,7 @@
     "rightsAsk": "W każdej innej sprawie, np. aby poprosić o wstrzymanie wykorzystywania danych do czasu poprawienia błędu lub aby wnieść sprzeciw wobec sposobu ich wykorzystywania, należy napisać na adres <mail>privacy@glazecalcapp.com</mail>. Jest to bezpłatne, a odpowiedź nadejdzie w ciągu miesiąca. Poprosimy jedynie o wykazanie, że konto należy do osoby piszącej, przez zalogowanie się lub otwarcie linku wysłanego na adres konta, nigdy o dokument tożsamości.",
     "rightsComplain": "W razie niezadowolenia można złożyć skargę do organu ochrony danych: w UE do <edpb>organu we własnym kraju</edpb>, a w Wielkiej Brytanii do <ico>Information Commissioner’s Office</ico>.",
     "storageHeading": "Pliki cookie i pamięć przeglądarki",
+    "storageIntro": "Glazecalc ustawia dwa pliki cookie, drugi tylko podczas logowania przez Google lub GitHub, i przechowuje kilka małych wartości w przeglądarce. Każdy służy do czegoś, o co poproszono: pozostawania zalogowanym, logowania przez Google lub GitHub albo zapamiętania dokonanego wyboru. Żaden nie śledzi i żaden nie jest udostępniany, więc prawo nie wymaga uprzedniego pytania o zgodę i nie ma banera cookie.",
     "storageLabel": "Pliki cookie i pamięć przeglądarki",
     "storageName": "Nazwa",
     "storagePurpose": "Do czego służy",
@@ -150,6 +167,7 @@
         "lasts": "Do wyczyszczenia pamięci przeglądarki."
       },
       "print": {
+        "purpose": "Ostatnie wybory dotyczące drukowania receptury: cała receptura, porcja lub arkusz oraz wielkość porcji.",
         "lasts": "Do wyczyszczenia pamięci przeglądarki."
       },
       "token": {
@@ -163,12 +181,19 @@
       "reloadedFor": {
         "purpose": "Po wydaniu nowej wersji strony: która strona została przeładowana i kiedy, aby strona przeładowywała się najwyżej raz na minutę.",
         "lasts": "Do zamknięcia karty."
+      },
+      "oauthCookie": {
+        "purpose": "Tylko podczas logowania przez Google lub GitHub: łączy odpowiedź serwisu logowania z przeglądarką, aby nikt inny nie mógł dokończyć logowania ani rozpocząć go w czyimś imieniu. Skrypty na stronie nie mogą go odczytać.",
+        "lasts": "Ustawiany po naciśnięciu „Kontynuuj z Google” lub „Kontynuuj z GitHub” albo po połączeniu jednego z nich na stronie konta. Usuwany po zakończeniu logowania lub po 10 min."
       }
     },
     "childrenHeading": "Dzieci",
     "children": "Glazecalc to narzędzie dla ceramików i nie jest skierowane do dzieci.",
     "changesHeading": "Zmiany",
-    "changes": "Jeśli ta informacja się zmieni, zmieni się też data na górze strony."
+    "changes": "Jeśli ta informacja się zmieni, zmieni się też data na górze strony.",
+    "storedProviders": "<b>Google lub GitHub, jeśli logowanie odbywa się przez jeden z nich:</b> własny identyfikator serwisu dla danej osoby (liczba lub kod, który nigdy się nie zmienia), kiedy połączono konto i kiedy ostatnio użyto go do logowania, oraz czy konto ma własne hasło. Nic więcej z serwisu nie jest przechowywane: ani imię i nazwisko, ani zdjęcie, ani żaden klucz do konta tam. Podczas logowania serwer przechowuje notatkę o logowaniu, wraz z adresem e-mail, który serwis podaje jako należący do danej osoby, gdy jest potrzebny: dla nowego konta, gdzie staje się adresem e-mail konta, albo, gdy konto Glazecalc ma już taki adres, aby połączyć z nim konto serwisu po zalogowaniu na to konto. Notatka, a w niej adres e-mail, jest usuwana w ciągu około 10 min.",
+    "providers": "<b>Logowanie przez Google lub GitHub</b> jest dobrowolne i odbywa się tylko po naciśnięciu jego przycisku. Przeglądarka przechodzi wtedy do Google lub GitHub, które przesyłają Glazecalc swój identyfikator danej osoby i jej adres e-mail. Każdy z nich to osobna firma, odpowiedzialna za to, co się jej przekazuje, zgodnie z własną polityką prywatności. Żaden skrypt ani obraz z żadnego z nich nie jest ładowany na stronach Glazecalc.",
+    "keptProviders": "<b>Google lub GitHub:</b> każde połączenie do chwili jego odłączenia lub usunięcia konta. Trwające logowanie jest usuwane po 10 min."
   },
   "notFound": {
     "heading": "Nie znaleziono strony",
@@ -194,5 +219,27 @@
     "standardFetchFailed": "Wystąpił błąd podczas pobierania porad z serwera.",
     "saved": "Porada została dodana.",
     "saveFailed": "Wystąpił błąd podczas wysyłania porady."
+  },
+  "assistants": {
+    "title": "Korzystanie z Glazecalc w asystencie AI",
+    "lead": "Asystenci AI, tacy jak Claude, GitHub Copilot, Cursor i Gemini, mogą korzystać bezpośrednio z obliczeń Glazecalc za pośrednictwem Model Context Protocol (MCP).",
+    "whatHeading": "Co potrafi",
+    "what": "Bez konta asystent może wyszukiwać surowce w bibliotece, obliczać wzór Segera receptury, sprawdzać go z limitami dla danego wypału, proponować zamienniki wycofanych surowców, odtwarzać recepturę z podanych surowców, przeliczać stożki na temperatury i odwrotnie oraz przeszukiwać i czytać poradniki. Nic z tego, co wysyła, nie jest zapisywane; jak w przypadku każdej strony, logi serwera WWW rejestrują przez 14 dni adres IP, czas i adres każdego żądania (nigdy tego, co wysłano).",
+    "mine": "Z tokenem dostępu ze <account>strony konta</account> asystent może też odczytywać własne receptury, surowce, notatnik, dzienniki wypałów i posiadane surowce. Token może tylko odczytywać: nigdy niczego nie zmienia ani nie usuwa.",
+    "caution": "Kontrole limitów to ostrzeżenia oparte na opublikowanych limitach, tak samo jak w aplikacji, a nie dowód, że szkliwo jest bezpieczne w kontakcie z żywnością. Każde szkliwo należy wypalić na próbę, a szkliwa przeznaczone na powierzchnie mające kontakt z żywnością oddać do badania uwalniania metali.",
+    "addressHeading": "Adres",
+    "address": "Należy podać asystentowi ten adres, używając transportu Streamable HTTP:",
+    "token": "Aby asystent mógł odczytywać własne zapisy, należy utworzyć token na <account>stronie konta</account> i go skopiować. Asystent wysyła go w nagłówku Authorization, jako Bearer, a po nim token. Tak jak hasła, nie należy go umieszczać w plikach, które są udostępniane lub przekazywane do repozytorium.",
+    "clientsHeading": "Dodawanie Glazecalc do asystenta",
+    "claudeCode": "W terminalu:",
+    "claudeCodeToken": "Z tokenem dostępu, aby odczytywać także własne zapisy:",
+    "vscode": "W pliku .vscode/mcp.json w folderze albo w ustawieniach użytkownika. VS Code pyta o token raz i przechowuje go w ukryciu; aby używać tylko narzędzi niewymagających konta, należy pominąć headers i inputs:",
+    "cursor": "W pliku ~/.cursor/mcp.json albo .cursor/mcp.json w projekcie. Aby używać tylko narzędzi niewymagających konta, należy pominąć headers:",
+    "gemini": "W pliku ~/.gemini/settings.json. Aby używać tylko narzędzi niewymagających konta, należy pominąć headers:",
+    "appsHeading": "Claude, ChatGPT i inne aplikacje",
+    "apps": "Należy dodać własny konektor z powyższym adresem. Te aplikacje nie mogą jeszcze wysyłać tokenu dostępu, więc dostają narzędzia niewymagające konta. Dostęp do własnych zapisów z nich pojawi się wraz z logowaniem z poziomu aplikacji.",
+    "stopHeading": "Odbieranie dostępu",
+    "stop": "Token można w każdej chwili unieważnić na <account>stronie konta</account>. Każdy token przestaje działać w wybranym dniu, a wszystkie naraz po resecie hasła lub wylogowaniu ze wszystkich urządzeń.",
+    "limits": "Każdy adres może wysłać 60 żądań na minutę i 2000 na dobę; konto używające tokenu: 120 na minutę i 5000 na dobę. Zamiany i dopasowania są ograniczone do 10 na minutę."
   }
 }

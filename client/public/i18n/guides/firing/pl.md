@@ -3,79 +3,79 @@ title: Wypał w prostym piecu
 lead: Jak wypalać w piecu elektrycznym z wyłącznikiem stożkowym lub z ręcznymi przełącznikami: dobór, ustawianie i odczytywanie stożków oraz opublikowane programy wypału biskwitowego i wypału szkliwa.
 ---
 
-## Cones: what they measure {#cones lang=en}
+## Stożki: co mierzą {#cones}
 
 > [!NOTE]
-> Follow your kiln's own manual first. This guide gathers what cone and kiln makers publish about basic electric kilns; it does not replace the instructions for your model, and where the two differ, the manual wins.
+> Przede wszystkim należy postępować według instrukcji obsługi własnego pieca. Ten poradnik zbiera to, co producenci stożków i pieców publikują o prostych piecach elektrycznych; nie zastępuje instrukcji danego modelu, a tam, gdzie jedno różni się od drugiego, rozstrzyga instrukcja.
 
-A **pyrometric cone** is a small, slender pyramid made from a standardized ceramic powder. When it has had enough heat, it softens and bends over in a repeatable way. You set cones in the kiln beside the ware and read how far they bent.
+**Stożek pirometryczny**{{en: pyrometric cone}} to mała, smukła piramidka z ceramicznego proszku o znormalizowanym składzie. Gdy otrzyma dość ciepła, mięknie i pochyla się w powtarzalny sposób. Stożki ustawia się w piecu obok wyrobów i odczytuje, jak bardzo się zgięły.
 
-Cones measure **heatwork**, the combined effect of temperature and time. In the words of Orton, the main US cone maker, "Cones do not measure temperature alone." A cone heated slowly bends at a lower temperature than one heated fast, and a glaze behaves the same way. So Orton gives each cone's temperature for a stated heating rate over the last {{180 °F; 100 °C}} of the firing. Once a cone starts to move, it bends over a narrow range, "usually less than 40° F" (22 °C).
+Stożki mierzą **pracę cieplną**{{en: heatwork}}, czyli łączny wpływ temperatury i czasu. Jak pisze Orton, główny amerykański producent stożków: „Stożki nie mierzą samej temperatury”. Stożek grzany powoli zgina się w niższej temperaturze niż grzany szybko, a szkliwo{{en: glaze}} zachowuje się tak samo. Dlatego Orton podaje temperaturę każdego stożka dla określonej szybkości grzania w ostatnich {{180 °F; 100 °C}} wypału. Gdy stożek zacznie się ruszać, zgina się w wąskim zakresie, „zwykle mniejszym niż 40° F” (22 °C).
 
-### Cone numbers
+### Numery stożków
 
-Cone numbers run from 022, the coolest, up to 42. A leading zero marks the cooler series and is read as "oh": cone 06 ("oh-six") is cooler than cone 04, and cone 01 needs less heat than cone 1. Orton warns that it is important not to mix the two series up. The gap is large: cone 06 bends more than {{400 °F; 220 °C}} cooler than cone 6.
+Numery stożków biegną od 022, najchłodniejszego, do 42. Zero na początku oznacza chłodniejszą serię i czyta się je „zero”: stożek 06 („zero sześć”) jest chłodniejszy niż stożek 04, a stożek 01 potrzebuje mniej ciepła niż stożek 1. Orton ostrzega, że ważne jest, by nie pomylić tych dwóch serii. Różnica jest duża: stożek 06 zgina się w temperaturze o ponad {{400 °F; 220 °C}} niższej niż stożek 6.
 
-Table: Common firing ranges, for self-supporting cones at {{108 °F/h; 60 °C/h}}
-Label: Firing ranges
+Table: Typowe zakresy wypału, dla stożków samonośnych przy {{108 °F/h; 60 °C/h}}
+Label: Zakresy wypału
 
-| Range     | Cones |                    Temperature | Typical use                              |
-| --------- | ----- | -----------------------------: | ---------------------------------------- |
-| Low fire  | 06–04 |  {{1828–1945 °F; 998–1063 °C}} | Earthenware glazes; bisque               |
-| Mid fire  | 5–6   | {{2167–2232 °F; 1186–1222 °C}} | Electric-kiln stoneware and porcelain    |
-| High fire | 9–10  | {{2300–2345 °F; 1260–1285 °C}} | Mostly gas-fired stoneware and porcelain |
+| Zakres       | Stożki |                    Temperatura | Typowe zastosowanie                                                     |
+| ------------ | ------ | -----------------------------: | ----------------------------------------------------------------------- |
+| Niski wypał  | 06–04  |  {{1828–1945 °F; 998–1063 °C}} | Szkliwa do ceramiki porowatej{{en: earthenware}}; biskwit{{en: bisque}} |
+| Średni wypał | 5–6    | {{2167–2232 °F; 1186–1222 °C}} | Kamionka{{en: stoneware}} i porcelana z pieca elektrycznego             |
+| Wysoki wypał | 9–10   | {{2300–2345 °F; 1260–1285 °C}} | Głównie kamionka i porcelana z pieca gazowego                           |
 
-Suppliers in the UK, Europe, Australia and New Zealand often give a temperature in °C rather than a cone: find the nearest cone in the chart below and confirm it with a witness cone. Seger and Staffordshire cones, the older European series, should not be assumed to share Orton's numbers, so this guide uses Orton cones.
+Dostawcy w Wielkiej Brytanii, Europie, Australii i Nowej Zelandii często podają temperaturę w °C zamiast stożka: należy wtedy znaleźć najbliższy stożek w tabeli poniżej i potwierdzić go stożkiem kontrolnym{{en: witness cone}}. Nie należy zakładać, że stożki Segera i Staffordshire, starsze serie europejskie, mają te same numery co stożki Ortona, dlatego ten poradnik posługuje się stożkami Ortona.
 
-### Holding adds heatwork
+### Przetrzymanie dodaje pracy cieplnej
 
-A **hold** (also called a **soak**) keeps the kiln at one temperature for a while. Because cones measure heatwork, a hold at the top can stand in for a hotter peak. Orton gives these rough equivalents:
+**Przetrzymanie**{{en: hold}} (nazywane też **wytrzymaniem**{{en: soak}}) to utrzymywanie pieca przez pewien czas w jednej temperaturze. Ponieważ stożki mierzą pracę cieplną, przetrzymanie na szczycie wypału może zastąpić wyższą temperaturę maksymalną. Orton podaje takie przybliżone odpowiedniki:
 
-Table: What a hold at the peak is worth
-Label: Holds and heatwork
+Table: Ile jest warte przetrzymanie w temperaturze maksymalnej
+Label: Przetrzymanie a praca cieplna
 
-| Hold             | Roughly the same heatwork as             |
-| ---------------- | ---------------------------------------- |
-| About 20 minutes | A peak {{18 °F; 10 °C}} hotter           |
-| 40–60 minutes    | A peak {{36 °F; 20 °C}} hotter           |
-| About 2 hours    | A peak {{54 °F; 30 °C}} hotter           |
-| 4–6 hours        | Enough to bend a cone two numbers hotter |
+| Przetrzymanie  | Mniej więcej ta sama praca cieplna co            |
+| -------------- | ------------------------------------------------ |
+| Około 20 minut | Temperatura maksymalna wyższa o {{18 °F; 10 °C}} |
+| 40–60 minut    | Temperatura maksymalna wyższa o {{36 °F; 20 °C}} |
+| Około 2 godzin | Temperatura maksymalna wyższa o {{54 °F; 30 °C}} |
+| 4–6 godzin     | Tyle, by zgiąć stożek o dwa numery gorętszy      |
 
-Orton adds that a hold of 1–2 hours "may be sufficient to deform the next higher cone number".
+Orton dodaje, że przetrzymanie przez 1–2 godziny „może wystarczyć do odkształcenia stożka o kolejnym, wyższym numerze”.
 
-So a hold is never free: if you add one, expect the cones to bend further, and lower the peak to match.
+Przetrzymanie nigdy więc nie jest obojętne: po jego dodaniu należy się spodziewać, że stożki zegną się bardziej, i odpowiednio obniżyć temperaturę maksymalną.
 
-### Kinds of cone
+### Rodzaje stożków
 
-Orton makes four kinds. Two stand on the shelf to show what the ware received; two are for the kiln sitter.
+Orton produkuje cztery rodzaje. Dwa stoją na płycie i pokazują, jaką pracę cieplną otrzymały wyroby; dwa są przeznaczone do wyłącznika stożkowego{{en: kiln sitter}}.
 
-Table: Orton's four kinds of cone
-Label: Kinds of cone
+Table: Cztery rodzaje stożków Ortona
+Label: Rodzaje stożków
 
-| Kind            | Used for                  | How it stands                                                                               |
-| --------------- | ------------------------- | ------------------------------------------------------------------------------------------- |
-| Self-supporting | Witness cone on the shelf | A built-in base sets the height, 1¾ in (44 mm), and the 8° lean; no holder needed           |
-| Large           | Witness cone on the shelf | Set in a plaque or a pat of clay with exactly 2 in (51 mm) showing, leaning 8° from upright |
-| Small (junior)  | Kiln sitter               | Lies across the sitter's supports; 15/16 in (24 mm) showing if stood on a shelf             |
-| Bar             | Kiln sitter               | The same powder as small cones, in an even bar shape                                        |
+| Rodzaj        | Zastosowanie               | Jak stoi                                                                                                      |
+| ------------- | -------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| Samonośny     | Stożek kontrolny na płycie | Wbudowana podstawa wyznacza wysokość, 1¾ cala (44 mm), i pochylenie 8°; uchwyt nie jest potrzebny             |
+| Duży          | Stożek kontrolny na płycie | Osadzony w podstawce lub w placku gliny tak, by wystawał dokładnie na 2 cale (51 mm), pochylony o 8° od pionu |
+| Mały (junior) | Wyłącznik stożkowy         | Leży w poprzek podpórek wyłącznika; postawiony na płycie wystaje na 15/16 cala (24 mm)                        |
+| Pręt stożkowy | Wyłącznik stożkowy         | Ten sam proszek co w małych stożkach, w kształcie równego pręta                                               |
 
-Height matters: a ¼ in (6 mm) difference in the height of a large cone "can cause more than a half cone difference in bending". Cones do not go bad or age, and damp storage does not affect them.
+Wysokość ma znaczenie: różnica ¼ cala (6 mm) w wysokości dużego stożka „może spowodować różnicę w zgięciu większą niż pół stożka”. Stożki się nie psują ani nie starzeją, a przechowywanie w wilgoci im nie szkodzi.
 
-### What "cone 6" means in practice
+### Co w praktyce znaczy „stożek 6”
 
-The chart gives a self-supporting cone 6 as {{2232 °F; 1222 °C}}, but only when the last {{180 °F; 100 °C}} climbs at {{108 °F/h; 60 °C/h}}. Climbing at {{270 °F/h; 150 °C/h}}, the same cone bends at {{2269 °F; 1243 °C}}. Real kilns differ again: Digitalfire reports that "Most kilns reach cone 6 at 2200°F, not 2232°F". So "cone 6" means the ware received the heatwork that bends a cone 6, whatever a thermometer read at the time.
+Tabela podaje dla samonośnego stożka 6 temperaturę {{2232 °F; 1222 °C}}, ale tylko wtedy, gdy w ostatnich {{180 °F; 100 °C}} temperatura rośnie w tempie {{108 °F/h; 60 °C/h}}. Przy przyroście {{270 °F/h; 150 °C/h}} ten sam stożek zgina się w {{2269 °F; 1243 °C}}. Prawdziwe piece znów się różnią: Digitalfire podaje, że „Większość pieców osiąga stożek 6 przy 2200°F, a nie przy 2232°F”. „Stożek 6” oznacza więc, że wyroby otrzymały pracę cieplną, która zgina stożek 6, bez względu na to, co pokazywał wtedy termometr.
 
 :::orton
 
 > [!NOTE]
-> Fire by the cone, not the clock or the dial. Set a controller by cone number, and let a witness cone on the shelf confirm every firing.
+> Wypalać należy według stożka, a nie według zegara czy pokrętła. Sterownik ustawia się według numeru stożka, a każdy wypał należy potwierdzić stożkiem kontrolnym na płycie.
 
 :::
 
 :::temperature
 
 > [!NOTE]
-> Firing by temperature, keep the end of every firing the same: the same last rate of climb, the same peak and the same hold. Then a glaze that worked once works again.
+> Przy wypale według temperatury koniec każdego wypału powinien być taki sam: ten sam końcowy przyrost temperatury, ta sama temperatura maksymalna i to samo przetrzymanie. Wtedy szkliwo, które udało się raz, uda się znowu.
 
 :::
 
@@ -596,22 +596,22 @@ Jeśli wyłącznik zadziała, zanim stożki na płycie się zegną, następnym r
 
 **Pirometr** to wskaźnik temperatury odczytujący wskazania **termopary**, czyli czujnika temperatury wprowadzonego przez ścianę pieca. Pokazuje, jak szybko rośnie temperatura w piecu, dzięki czemu można wybrać właściwą kolumnę tabeli stożków. Mierzy jednak przy ścianie, a nie przy wyrobach, a jego wskazania z czasem się przesuwają. L&L zauważa, że po wielokrotnych wypałach na stożek 6 termopara typu K może się mylić o ponad {{25 °F; 14 °C}}, co daje „różnicę większą niż cały stożek”, podczas gdy stożek samonośny różni się najwyżej o {{4 °F; 2 °C}}. Orton pisze, że pirometry trzeba od czasu do czasu ponownie kalibrować, a sprawdza się je właśnie stożkami.
 
-## Venting, peeking and safety {#venting lang=en}
+## Odprowadzanie oparów, zaglądanie do pieca i bezpieczeństwo {#venting}
 
-### Venting
+### Odprowadzanie oparów
 
-Early in a firing, clay and glaze give off water vapor and fumes, including carbon monoxide, and glazes can give off toxic fumes later in the firing too. L&L calls venting them "essential". With no vent system, that means the lid propped and the peepholes open in the early stages, as in the procedures above; slowing the heating during this time also helps the carbon burn out. In a kiln without a vent, Dawson, who made the sitter, also says to leave the top peephole open for the whole firing: the venting "will reduce deterioration of the kiln's metal parts and increase the life of the tube assembly". A **downdraft vent** (a powered vent fitted to the kiln) changes this. It does the venting, so Orton says the lid and peepholes stay closed for the whole firing except to check the cones, and L&L says to leave the vent on and plug the peepholes.
+Na początku wypału z gliny i szkliwa uwalnia się para wodna i opary, w tym tlenek węgla (czad), a szkliwa mogą wydzielać toksyczne opary także później w trakcie wypału. L&L nazywa ich odprowadzanie „niezbędnym”. Bez układu wyciągowego oznacza to uchyloną pokrywę i otwarte wzierniki na wczesnym etapie, jak w opisanych wyżej procedurach; wolniejsze nagrzewanie w tym czasie pomaga też wypalić się węglowi. W piecu bez wyciągu Dawson, producent wyłącznika stożkowego{{en: kiln sitter}}, zaleca też, by górny wziernik pozostawał otwarty przez cały wypał: odprowadzanie oparów „zmniejszy zużycie metalowych części pieca i wydłuży żywotność zespołu rurki”. **Wyciąg dolny** (wyciąg z napędem, zamontowany w piecu) zmienia tę zasadę. Sam odprowadza opary, więc według Ortona pokrywa i wzierniki pozostają zamknięte przez cały wypał, z wyjątkiem sprawdzania stożków, a według L&L należy zostawić wyciąg włączony i zatkać wzierniki.
 
-For venting the room, and for carbon monoxide alarms, see [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety).
+Informacje o wentylacji pomieszczenia i o czujnikach czadu: zob. [Bezpieczne rozrabianie szkliw i wentylacja](/guides/safe-mixing) oraz [Jak nie otruć własnej rodziny](/guides/home-safety).
 
-### While the kiln is firing
+### Podczas wypału
 
-- Look through a peephole only with IR-rated shade 3 welding glasses; sunglasses are not enough. Skutt advises twisting the plugs into place so they do not fall out.
-- Do not leave the kiln unattended beyond its expected firing time; a sitter is not a fail-safe.
-- Never fire on or near anything that burns, such as a wood floor or carpet.
-- Keep the clearances in your manual. Published figures range from 12 in (30 cm) to 3 ft (91 cm); where the manual is silent, 18 in (46 cm) from walls and 3 ft (91 cm) from anything that burns is the safest choice.
-- Keep the space around the sitter's weight clear so it can drop.
-- When the firing ends, turn the switches off and turn off the breaker as well.
+- Przez wziernik wolno patrzeć wyłącznie w okularach spawalniczych z filtrem podczerwieni (IR), stopień ochrony 3; okulary przeciwsłoneczne nie wystarczą. Skutt radzi wkręcać zatyczki na miejsce, aby nie wypadały.
+- Nie zostawiać pieca bez nadzoru po upływie spodziewanego czasu wypału; wyłącznik stożkowy nie jest zabezpieczeniem niezawodnym.
+- Nigdy nie wypalać na ani w pobliżu czegokolwiek, co się pali, np. drewnianej podłogi lub dywanu.
+- Zachować odstępy podane w instrukcji. Publikowane wartości wahają się od 12 cali (30 cm) do 3 stóp (91 cm); gdy instrukcja milczy, najbezpieczniejszym wyborem jest 18 cali (46 cm) od ścian i 3 stopy (91 cm) od wszystkiego, co się pali.
+- Przestrzeń wokół ciężarka wyłącznika stożkowego zostawić wolną, aby mógł opaść.
+- Po zakończeniu wypału wyłączyć przełączniki i wyłączyć także bezpiecznik.
 
 ## Chłodzenie i rozładunek {#cooling}
 

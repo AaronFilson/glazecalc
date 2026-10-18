@@ -102,6 +102,9 @@
     "quartzAll": "Kwarc, dla pyłu składającego się wyłącznie z kwarcu",
     "cristobaliteAll": "Krystobalit, dla pyłu składającego się wyłącznie z krystobalitu",
     "allFree": "Stężenie kontrolne dla pyłu składającego się wyłącznie z wolnej krzemionki",
+    "bandFromTo": "Pył zawierający od {from} % do {to} % wolnej krzemionki (SiO₂)",
+    "bandOverTo": "Pył zawierający więcej niż {from} % i do {to} % wolnej krzemionki",
+    "bandAbove": "Pył zawierający więcej niż {from} % wolnej krzemionki",
     "recommended": "Wartość zalecana przez {abbr}",
     "value": "{value} mg/m³",
     "kind": {
@@ -160,7 +163,15 @@
       "myFlat": "Naczynia płaskie",
       "mySmall": "Małe naczynia głębokie",
       "myLarge": "Duże naczynia głębokie",
-      "myCooking": "Naczynia do gotowania"
+      "myCooking": "Naczynia do gotowania",
+      "idFlat": "Wyroby o głębokości wewnątrz do 25 mm",
+      "idSmall": "Wyroby o głębokości wewnątrz większej niż 25 mm, poniżej 1100 mL",
+      "idLarge": "Wyroby o głębokości wewnątrz większej niż 25 mm, 1100 mL lub więcej",
+      "thFlat": "Wyroby o głębokości do 25 mm",
+      "thSmall": "Wyroby o głębokości większej niż 25 mm, poniżej 1,1 L",
+      "thLarge": "Wyroby o głębokości większej niż 25 mm, 1,1 L lub więcej",
+      "thInfant": "Pojemniki na żywność dla niemowląt do 12 miesięcy życia",
+      "thCooking": "Naczynia do gotowania, przeznaczone do wytrzymywania ciepła gotowania"
     },
     "judged": {
       "average": "średnia z 6 sztuk",
