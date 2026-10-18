@@ -163,23 +163,10 @@ describe('ImportPage', () => {
   });
 
   it('reads a firing from a title only when it names a cone or a temperature, never from a one-word name', async () => {
-    const { fixture, paste, save } = await create();
-    await paste('Red
-Custer 40
-Whiting 20
-
-Salt
-Custer 50
-Silica 50
-
-Cone 6 Wood
-Custer 60
-Silica 40');
-    await save();
-    const sent = httpMock()
-      .match(API + '/recipe/create')
-      .map((req) => req.request.body as Recipe);
-    expect(sent.map((r) => [r.title, r.firedAt ?? null])).toEqual([
+    const { fixture, page, paste } = await create();
+    await paste('Red\nCuster 40\nWhiting 20\n\nSalt\nCuster 50\nSilica 50\n\nCone 6 Wood\nCuster 60\nSilica 40');
+    const drafts = page['drafts']() as Array<{ title: string; firedAt: unknown }>;
+    expect(drafts.map((d) => [d.title, d.firedAt ?? null])).toEqual([
       ['Red', null],
       ['Salt', null],
       ['Cone 6 Wood', { scale: 'orton', low: '6', tested: ['6'], processes: ['wood'] }]

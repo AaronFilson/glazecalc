@@ -192,6 +192,10 @@ describe('recipe firing (lib/cones/firing.js)', () => {
         const [one, ...more] = paste.parsePaste(`Shino\nCuster 50\n${line}\nSilica 50`);
         expect([more.length, one!.skipped.map((s) => s.why), one!.lines.length]).to.eql([0, ['total'], 2]);
       }
+      // Set off by a blank line with materials under it, a firing line is the next recipe's title.
+      const titled = paste.parsePaste('Shino\nCuster 50\n\nCone 6 Wood\nCuster 60\nSilica 40');
+      expect(titled.map((r) => r.title)).to.eql(['Shino', 'Cone 6 Wood']);
+      expect(paste.parsePaste('Shino\nCuster 50\n\nCone 6\nAdd:\nTin 2').length).to.equal(1);
       // A one-word name is still a recipe's title, not a firing.
       const named = paste.parsePaste('Shino\nCuster 50\nSilica 50\nRed\nCuster 40\nRIO 5');
       expect(named.map((r) => r.title)).to.eql(['Shino', 'Red']);

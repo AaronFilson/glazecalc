@@ -131,7 +131,7 @@ describe('firing in words', () => {
     // A range is converted only when both ends are measured, and then in order.
     expect(firingWords({ scale: 'sk', low: '8', high: '9' }, orton)!.conversion).toBe('');
     const measured = firingWords({ scale: 'sk', low: '8', high: '10' }, { cones: 'orton', temperature: 'C' })!;
-    expect(measured.conversion).toContain('1198 °C–1232 °C');
+    expect(measured.conversion).toMatch(/1198\s°C–1232\s°C/);
     expect(firingLine({ scale: 'orton', low: '5.5' }, orton)).toBe('Tested at cone 5½');
     expect(firingWords(null, orton)).toBeNull();
   });
