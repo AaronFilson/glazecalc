@@ -3,79 +3,79 @@ title: Brennen mit einem einfachen Ofen
 lead: Wie Sie einen Elektroofen mit Kiln-Sitter oder Handschaltung brennen: Kegel auswählen, aufstellen und ablesen, mit veröffentlichten Brennkurven für den Schrühbrand und den Glasurbrand.
 ---
 
-## Cones: what they measure {#cones lang=en}
+## Kegel: was sie messen {#cones}
 
 > [!NOTE]
-> Follow your kiln's own manual first. This guide gathers what cone and kiln makers publish about basic electric kilns; it does not replace the instructions for your model, and where the two differ, the manual wins.
+> Folgen Sie zuerst der Bedienungsanleitung Ihres Ofens. Diese Anleitung fasst zusammen, was Kegel- und Ofenhersteller über einfache Elektroöfen veröffentlichen; sie ersetzt nicht die Bedienungsanleitung für Ihr Modell, und wo beide voneinander abweichen, gilt die Bedienungsanleitung.
 
-A **pyrometric cone** is a small, slender pyramid made from a standardized ceramic powder. When it has had enough heat, it softens and bends over in a repeatable way. You set cones in the kiln beside the ware and read how far they bent.
+Ein **pyrometrischer Kegel**{{en: pyrometric cone}} ist eine kleine, schlanke Pyramide aus einem genormten keramischen Pulver. Hat er genug Hitze abbekommen, wird er weich und biegt sich auf wiederholbare Weise um. Sie stellen Kegel neben der Ware in den Ofen und lesen ab, wie weit sie sich gebogen haben.
 
-Cones measure **heatwork**, the combined effect of temperature and time. In the words of Orton, the main US cone maker, "Cones do not measure temperature alone." A cone heated slowly bends at a lower temperature than one heated fast, and a glaze behaves the same way. So Orton gives each cone's temperature for a stated heating rate over the last {{180 °F; 100 °C}} of the firing. Once a cone starts to move, it bends over a narrow range, "usually less than 40° F" (22 °C).
+Kegel messen die **Wärmearbeit**{{en: heatwork}}, das Zusammenwirken von Temperatur und Zeit. Mit den Worten von Orton, dem wichtigsten Kegelhersteller der USA: „Kegel messen nicht allein die Temperatur.“ Ein langsam erhitzter Kegel biegt sich bei einer niedrigeren Temperatur als ein schnell erhitzter, und eine Glasur{{en: glaze}} verhält sich genauso. Deshalb gibt Orton die Temperatur jedes Kegels für eine bestimmte Heizrate in den letzten {{180 °F; 100 °C}} des Brandes an. Hat ein Kegel einmal angefangen, sich zu bewegen, biegt er sich innerhalb einer kleinen Spanne um, „meist weniger als 40° F“ (22 °C).
 
-### Cone numbers
+### Kegelnummern
 
-Cone numbers run from 022, the coolest, up to 42. A leading zero marks the cooler series and is read as "oh": cone 06 ("oh-six") is cooler than cone 04, and cone 01 needs less heat than cone 1. Orton warns that it is important not to mix the two series up. The gap is large: cone 06 bends more than {{400 °F; 220 °C}} cooler than cone 6.
+Die Kegelnummern reichen von 022, dem kühlsten, bis 42. Eine vorangestellte Null kennzeichnet die kühlere Reihe und wird als „null“ gelesen: Kegel 06 („null sechs“) ist kühler als Kegel 04, und Kegel 01 braucht weniger Hitze als Kegel 1. Orton betont, wie wichtig es ist, die beiden Reihen nicht zu verwechseln. Der Abstand ist groß: Kegel 06 biegt sich bei einer um mehr als {{400 °F; 220 °C}} niedrigeren Temperatur als Kegel 6.
 
-Table: Common firing ranges, for self-supporting cones at {{108 °F/h; 60 °C/h}}
-Label: Firing ranges
+Table: Übliche Brennbereiche, für selbststehende Kegel bei {{108 °F/h; 60 °C/h}}
+Label: Brennbereiche
 
-| Range     | Cones |                    Temperature | Typical use                              |
-| --------- | ----- | -----------------------------: | ---------------------------------------- |
-| Low fire  | 06–04 |  {{1828–1945 °F; 998–1063 °C}} | Earthenware glazes; bisque               |
-| Mid fire  | 5–6   | {{2167–2232 °F; 1186–1222 °C}} | Electric-kiln stoneware and porcelain    |
-| High fire | 9–10  | {{2300–2345 °F; 1260–1285 °C}} | Mostly gas-fired stoneware and porcelain |
+| Brennbereich | Kegel |                     Temperatur | Typische Verwendung                                                  |
+| ------------ | ----- | -----------------------------: | -------------------------------------------------------------------- |
+| Niedrig      | 06–04 |  {{1828–1945 °F; 998–1063 °C}} | Glasuren für Irdenware{{en: earthenware}}; Schrühbrand{{en: bisque}} |
+| Mittel       | 5–6   | {{2167–2232 °F; 1186–1222 °C}} | Steinzeug{{en: stoneware}} und Porzellan aus dem Elektroofen         |
+| Hoch         | 9–10  | {{2300–2345 °F; 1260–1285 °C}} | Meist Steinzeug und Porzellan aus dem Gasofen                        |
 
-Suppliers in the UK, Europe, Australia and New Zealand often give a temperature in °C rather than a cone: find the nearest cone in the chart below and confirm it with a witness cone. Seger and Staffordshire cones, the older European series, should not be assumed to share Orton's numbers, so this guide uses Orton cones.
+Lieferanten in Großbritannien, Europa, Australien und Neuseeland geben oft eine Temperatur in °C statt eines Kegels an: Suchen Sie in der Tabelle unten den nächstliegenden Kegel und prüfen Sie ihn mit einem Messkegel{{en: witness cone}}. Gehen Sie nicht davon aus, dass Segerkegel und Staffordshire-Kegel, die älteren europäischen Reihen, dieselben Nummern wie Orton haben; deshalb verwendet diese Anleitung Ortonkegel.
 
-### Holding adds heatwork
+### Haltezeiten erhöhen die Wärmearbeit
 
-A **hold** (also called a **soak**) keeps the kiln at one temperature for a while. Because cones measure heatwork, a hold at the top can stand in for a hotter peak. Orton gives these rough equivalents:
+Bei einer **Haltezeit**{{en: hold}} (englisch auch **soak**) bleibt der Ofen eine Weile auf einer Temperatur. Weil Kegel die Wärmearbeit messen, kann eine Haltezeit ganz oben eine höhere Endtemperatur ersetzen. Orton nennt diese ungefähren Entsprechungen:
 
-Table: What a hold at the peak is worth
-Label: Holds and heatwork
+Table: Was eine Haltezeit bei der Endtemperatur ausmacht
+Label: Haltezeit und Wärmearbeit
 
-| Hold             | Roughly the same heatwork as             |
-| ---------------- | ---------------------------------------- |
-| About 20 minutes | A peak {{18 °F; 10 °C}} hotter           |
-| 40–60 minutes    | A peak {{36 °F; 20 °C}} hotter           |
-| About 2 hours    | A peak {{54 °F; 30 °C}} hotter           |
-| 4–6 hours        | Enough to bend a cone two numbers hotter |
+| Haltezeit       | Ungefähr dieselbe Wärmearbeit wie                      |
+| --------------- | ------------------------------------------------------ |
+| Etwa 20 Minuten | Eine um {{18 °F; 10 °C}} höhere Endtemperatur          |
+| 40–60 Minuten   | Eine um {{36 °F; 20 °C}} höhere Endtemperatur          |
+| Etwa 2 Stunden  | Eine um {{54 °F; 30 °C}} höhere Endtemperatur          |
+| 4–6 Stunden     | Genug, um einen zwei Nummern heißeren Kegel umzubiegen |
 
-Orton adds that a hold of 1–2 hours "may be sufficient to deform the next higher cone number".
+Orton fügt hinzu, dass eine Haltezeit von 1–2 Stunden „ausreichen kann, um die nächsthöhere Kegelnummer zu verformen“.
 
-So a hold is never free: if you add one, expect the cones to bend further, and lower the peak to match.
+Eine Haltezeit gibt es also nie umsonst: Wenn Sie eine hinzufügen, rechnen Sie damit, dass sich die Kegel weiter biegen, und senken Sie die Endtemperatur entsprechend.
 
-### Kinds of cone
+### Kegelarten
 
-Orton makes four kinds. Two stand on the shelf to show what the ware received; two are for the kiln sitter.
+Orton stellt vier Arten her. Zwei stehen auf der Ofenplatte und zeigen, was die Ware abbekommen hat; zwei sind für den Kiln-Sitter.
 
-Table: Orton's four kinds of cone
-Label: Kinds of cone
+Table: Die vier Kegelarten von Orton
+Label: Kegelarten
 
-| Kind            | Used for                  | How it stands                                                                               |
-| --------------- | ------------------------- | ------------------------------------------------------------------------------------------- |
-| Self-supporting | Witness cone on the shelf | A built-in base sets the height, 1¾ in (44 mm), and the 8° lean; no holder needed           |
-| Large           | Witness cone on the shelf | Set in a plaque or a pat of clay with exactly 2 in (51 mm) showing, leaning 8° from upright |
-| Small (junior)  | Kiln sitter               | Lies across the sitter's supports; 15/16 in (24 mm) showing if stood on a shelf             |
-| Bar             | Kiln sitter               | The same powder as small cones, in an even bar shape                                        |
+| Art                | Verwendung                   | Wie er steht                                                                                                         |
+| ------------------ | ---------------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| Selbststehend      | Messkegel auf der Ofenplatte | Ein angeformter Fuß gibt die Höhe, 1¾ Zoll (44 mm), und die Neigung von 8° vor; kein Halter nötig                    |
+| Groß (Normalkegel) | Messkegel auf der Ofenplatte | In eine Unterlegplatte oder einen Tonklumpen gesteckt, genau 2 Zoll (51 mm) sichtbar, 8° aus der Senkrechten geneigt |
+| Klein (Laborkegel) | Kiln-Sitter                  | Liegt quer über den Kegelauflagen des Kiln-Sitters; auf einer Ofenplatte aufgestellt 15/16 Zoll (24 mm) sichtbar     |
+| Temperaturstäbchen | Kiln-Sitter                  | Dasselbe Pulver wie bei kleinen Kegeln, in gleichmäßiger Stäbchenform                                                |
 
-Height matters: a ¼ in (6 mm) difference in the height of a large cone "can cause more than a half cone difference in bending". Cones do not go bad or age, and damp storage does not affect them.
+Die Höhe zählt: ¼ Zoll (6 mm) Unterschied in der Höhe eines Normalkegels „kann beim Biegen mehr als einen halben Kegel Unterschied ausmachen“. Kegel verderben oder altern nicht, und feuchte Lagerung schadet ihnen nicht.
 
-### What "cone 6" means in practice
+### Was „Kegel 6“ in der Praxis bedeutet
 
-The chart gives a self-supporting cone 6 as {{2232 °F; 1222 °C}}, but only when the last {{180 °F; 100 °C}} climbs at {{108 °F/h; 60 °C/h}}. Climbing at {{270 °F/h; 150 °C/h}}, the same cone bends at {{2269 °F; 1243 °C}}. Real kilns differ again: Digitalfire reports that "Most kilns reach cone 6 at 2200°F, not 2232°F". So "cone 6" means the ware received the heatwork that bends a cone 6, whatever a thermometer read at the time.
+Die Kegeltabelle gibt für einen selbststehenden Kegel 6 {{2232 °F; 1222 °C}} an, aber nur, wenn der Ofen in den letzten {{180 °F; 100 °C}} mit {{108 °F/h; 60 °C/h}} steigt. Bei einem Anstieg von {{270 °F/h; 150 °C/h}} biegt sich derselbe Kegel bei {{2269 °F; 1243 °C}}. Echte Öfen weichen noch einmal ab; Digitalfire berichtet: „Die meisten Öfen erreichen Kegel 6 bei 2200°F, nicht bei 2232°F“. „Kegel 6“ heißt also: Die Ware hat die Wärmearbeit bekommen, die einen Kegel 6 umbiegt, ganz gleich, was ein Thermometer dabei anzeigte.
 
 :::orton
 
 > [!NOTE]
-> Fire by the cone, not the clock or the dial. Set a controller by cone number, and let a witness cone on the shelf confirm every firing.
+> Brennen Sie nach dem Kegel, nicht nach der Uhr oder der Anzeige. Stellen Sie eine Steuerung nach Kegelnummer ein, und lassen Sie jeden Brand von einem Messkegel auf der Ofenplatte bestätigen.
 
 :::
 
 :::temperature
 
 > [!NOTE]
-> Firing by temperature, keep the end of every firing the same: the same last rate of climb, the same peak and the same hold. Then a glaze that worked once works again.
+> Wenn Sie nach Temperatur brennen, halten Sie das Ende jedes Brandes gleich: dieselbe Heizrate am Schluss, dieselbe Endtemperatur und dieselbe Haltezeit. Dann gelingt eine Glasur, die einmal gelungen ist, auch wieder.
 
 :::
 
@@ -596,22 +596,22 @@ Löst der Kiln-Sitter aus, bevor die Messkegel auf der Ofenplatte umgebogen sind
 
 Ein **Pyrometer** ist ein Temperaturmessgerät, das die Werte eines **Thermoelements** anzeigt, eines Temperaturfühlers durch die Ofenwand. Es zeigt, wie schnell der Ofen steigt, sodass Sie die richtige Spalte der Kegeltabelle wählen können. Aber es misst nahe der Wand, nicht an der Ware, und es driftet. L&L merkt an, dass ein Thermoelement vom Typ K nach wiederholten Bränden auf Kegel 6 um mehr als {{25 °F; 14 °C}} danebenliegen kann, „ein Unterschied von mehr als einem ganzen Kegel“, während ein selbststehender Kegel um nicht mehr als {{4 °F; 2 °C}} schwankt. Orton sagt, Pyrometer müssten von Zeit zu Zeit neu kalibriert werden, und mit Kegeln prüfen Sie sie.
 
-## Venting, peeking and safety {#venting lang=en}
+## Entlüften, Hineinschauen und Sicherheit {#venting}
 
-### Venting
+### Entlüften
 
-Early in a firing, clay and glaze give off water vapor and fumes, including carbon monoxide, and glazes can give off toxic fumes later in the firing too. L&L calls venting them "essential". With no vent system, that means the lid propped and the peepholes open in the early stages, as in the procedures above; slowing the heating during this time also helps the carbon burn out. In a kiln without a vent, Dawson, who made the sitter, also says to leave the top peephole open for the whole firing: the venting "will reduce deterioration of the kiln's metal parts and increase the life of the tube assembly". A **downdraft vent** (a powered vent fitted to the kiln) changes this. It does the venting, so Orton says the lid and peepholes stay closed for the whole firing except to check the cones, and L&L says to leave the vent on and plug the peepholes.
+Zu Beginn eines Brandes geben Ton und Glasur{{en: glaze}} Wasserdampf und Dämpfe ab, darunter Kohlenmonoxid, und Glasuren können auch später im Brand giftige Dämpfe abgeben. L&L nennt das Abführen dieser Dämpfe „unerlässlich“. Ohne Abluftanlage heißt das: Deckel angehoben und Schaulöcher offen in den frühen Phasen, wie in den Abläufen oben; langsameres Aufheizen in dieser Zeit hilft auch, den Kohlenstoff auszubrennen. Bei einem Ofen ohne Abluftanlage sagt auch Dawson, der Hersteller des Kiln-Sitters, das obere Schauloch solle den ganzen Brand über offen bleiben: Das Entlüften „verringert den Verschleiß der Metallteile des Ofens und verlängert die Lebensdauer der Rohrbaugruppe“. Eine **Bodenabsaugung** (eine motorbetriebene Abluftanlage am Ofen) ändert das. Sie übernimmt das Entlüften, deshalb sagt Orton, Deckel und Schaulöcher blieben den ganzen Brand über geschlossen, außer zum Prüfen der Kegel, und L&L sagt, die Absaugung eingeschaltet zu lassen und die Schaulöcher zu verschließen.
 
-For venting the room, and for carbon monoxide alarms, see [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety).
+Zum Lüften des Raums und zu Kohlenmonoxid-Meldern lesen Sie [Sicheres Anmischen und Lüften](/guides/safe-mixing) und [Vergiften Sie Ihre Familie nicht](/guides/home-safety).
 
-### While the kiln is firing
+### Während der Ofen brennt
 
-- Look through a peephole only with IR-rated shade 3 welding glasses; sunglasses are not enough. Skutt advises twisting the plugs into place so they do not fall out.
-- Do not leave the kiln unattended beyond its expected firing time; a sitter is not a fail-safe.
-- Never fire on or near anything that burns, such as a wood floor or carpet.
-- Keep the clearances in your manual. Published figures range from 12 in (30 cm) to 3 ft (91 cm); where the manual is silent, 18 in (46 cm) from walls and 3 ft (91 cm) from anything that burns is the safest choice.
-- Keep the space around the sitter's weight clear so it can drop.
-- When the firing ends, turn the switches off and turn off the breaker as well.
+- Schauen Sie nur mit einer Schweißerschutzbrille mit IR-Schutzfilter der Schutzstufe 3 durch ein Schauloch; Sonnenbrillen genügen nicht. Skutt rät, die Stopfen hineinzudrehen, damit sie nicht herausfallen.
+- Lassen Sie den Ofen nicht über die erwartete Brenndauer hinaus unbeaufsichtigt; ein Kiln-Sitter ist keine ausfallsichere Abschaltung.
+- Brennen Sie nie auf oder in der Nähe von etwas Brennbarem, etwa einem Holzfußboden oder Teppich.
+- Halten Sie die Sicherheitsabstände aus Ihrer Anleitung ein. Veröffentlichte Werte reichen von 12 Zoll (30 cm) bis 3 Fuß (91 cm); wo die Anleitung schweigt, sind 18 Zoll (46 cm) von Wänden und 3 Fuß (91 cm) von allem Brennbaren die sicherste Wahl.
+- Halten Sie den Raum um das Gewicht des Kiln-Sitters frei, damit es fallen kann.
+- Wenn der Brand endet, schalten Sie die Schalter aus und schalten Sie auch den Sicherungsautomaten aus.
 
 ## Abkühlen und Ausräumen {#cooling}
 

@@ -17,6 +17,14 @@
         "title": "Rezepte",
         "text": "Stellen Sie eine Glasur aus Rohstoffen und Mengen zusammen, sehen Sie ihre Segerformel (UMF) und speichern Sie sie."
       },
+      "import": {
+        "title": "Rezepte einfügen",
+        "text": "Fügen Sie Rezepte von einer Website, aus einer Tabelle oder aus Notizen ein, prüfen Sie, was gelesen wurde, und speichern Sie sie."
+      },
+      "blends": {
+        "title": "Mischreihen für Probeplättchen",
+        "text": "Mischen Sie zwei, drei oder vier Ihrer Rezepte zu nummerierten Probeplättchen, mit den Einwaagen für jedes."
+      },
       "material": {
         "title": "Rohstoffe",
         "text": "Fügen Sie eigene Rohstoffe hinzu, aus einer chemischen Formel oder der Analyse eines Lieferanten."
@@ -99,6 +107,35 @@
     "saveFailed": "Fehler: Die Anfrage an den Server ist fehlgeschlagen."
   },
   "trash": {
-    "title": "Papierkorb"
+    "title": "Papierkorb",
+    "lead": "Was Sie aus Ihren Rezepten, Rohstoffen, Notizen und Protokollen entfernen, bleibt hier 30 Tage liegen. Stellen Sie es wieder her oder löschen Sie es endgültig.",
+    "listHeading": "Im Papierkorb",
+    "none": "Der Papierkorb ist leer.",
+    "untitled": "Ohne Titel",
+    "kinds": {
+      "recipes": "Rezept",
+      "materials": "Rohstoff",
+      "additives": "Zusatz",
+      "notes": "Notiz",
+      "firing": "Brennprotokoll",
+      "advice": "Tipp",
+      "other": "Datensatz"
+    },
+    "removedOn": "Entfernt am {date}",
+    "goesOn": "Endgültig gelöscht am {date}",
+    "byApp": "Von einer verbundenen App entfernt",
+    "putBack": "Wiederherstellen",
+    "putBackName": "{name} wiederherstellen",
+    "restored": "„{name}“ wurde an seinem alten Platz wiederhergestellt.",
+    "restoredAlready": "„{name}“ wurde bereits wiederhergestellt.",
+    "restoreFailed": "„{name}“ konnte nicht wiederhergestellt werden. Bitte versuchen Sie es erneut.",
+    "deleted": "„{name}“ wurde endgültig gelöscht.",
+    "empty": "Papierkorb leeren",
+    "emptyQuestion": "{count, plural, one {Den # Datensatz} other {Alle # Datensätze}} im Papierkorb endgültig löschen? Das lässt sich nicht rückgängig machen.",
+    "emptyYes": "Ja, leeren",
+    "emptying": "Wird geleert …",
+    "emptied": "Der Papierkorb ist leer.",
+    "emptyFailed": "Der Papierkorb konnte nicht geleert werden. Bitte versuchen Sie es erneut.",
+    "fetchFailed": "Der Papierkorb konnte nicht geladen werden. Bitte versuchen Sie es erneut."
   }
 }

@@ -17,13 +17,17 @@
     "confirmEmail": "E-Mail-Adresse bestätigen - Glazecalc",
     "home": "Ihr Werkstatt-Notizbuch - Glazecalc",
     "recipe": "Rezepte - Glazecalc",
+    "import": "Rezepte einfügen - Glazecalc",
+    "blends": "Mischreihen für Probeplättchen - Glazecalc",
     "material": "Rohstoffe - Glazecalc",
     "additive": "Zusätze - Glazecalc",
     "firingLogs": "Brennprotokolle - Glazecalc",
     "notes": "Notizen - Glazecalc",
     "trash": "Papierkorb - Glazecalc",
     "account": "Ihr Konto und Ihre Einstellungen - Glazecalc",
-    "notFound": "Seite nicht gefunden - Glazecalc"
+    "notFound": "Seite nicht gefunden - Glazecalc",
+    "shared": "Geteiltes Rezept - Glazecalc",
+    "assistants": "Glazecalc mit Ihrem KI-Assistenten nutzen - Glazecalc"
   },
   "nav": {
     "skip": "Zum Inhalt springen",
@@ -96,9 +100,14 @@
   },
   "remove": {
     "alreadyRemoved": "„{name}“ war bereits entfernt.",
+    "trashed": "„{name}“ wurde in den Papierkorb gelegt.",
+    "undo": "Rückgängig",
+    "restored": "„{name}“ wurde wiederhergestellt.",
+    "restoreFailed": "„{name}“ konnte nicht wiederhergestellt werden. Es liegt weiterhin im Papierkorb.",
     "failed": "Das Entfernen ist fehlgeschlagen. Bitte versuchen Sie es erneut.",
     "question": "„{name}“ entfernen?",
     "cannotUndo": "Das lässt sich nicht rückgängig machen.",
+    "toTrash": "Sie können es 30 Tage lang aus dem Papierkorb wiederherstellen.",
     "removing": "Wird entfernt …",
     "yes": "Ja, entfernen",
     "cancel": "Abbrechen",

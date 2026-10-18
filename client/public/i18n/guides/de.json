@@ -102,6 +102,9 @@
     "quartzAll": "Quarz, für Staub, der ganz aus Quarz besteht",
     "cristobaliteAll": "Cristobalit, für Staub, der ganz aus Cristobalit besteht",
     "allFree": "Kontrollkonzentration für Staub, der ganz aus freiem Quarz besteht",
+    "bandFromTo": "Staub mit {from} % bis {to} % freiem Quarz (SiO₂)",
+    "bandOverTo": "Staub mit mehr als {from} % und bis zu {to} % freiem Quarz",
+    "bandAbove": "Staub mit mehr als {from} % freiem Quarz",
     "recommended": "Empfohlen von {abbr}",
     "value": "{value} mg/m³",
     "kind": {
@@ -160,7 +163,15 @@
       "myFlat": "Flachware",
       "mySmall": "Kleine Hohlware",
       "myLarge": "Große Hohlware",
-      "myCooking": "Kochgeschirr"
+      "myCooking": "Kochgeschirr",
+      "idFlat": "Gegenstände mit höchstens 25 mm Tiefe innen",
+      "idSmall": "Gegenstände mit mehr als 25 mm Tiefe innen, unter 1100 mL",
+      "idLarge": "Gegenstände mit mehr als 25 mm Tiefe innen, 1100 mL oder mehr",
+      "thFlat": "Gegenstände mit höchstens 25 mm Tiefe",
+      "thSmall": "Gegenstände mit mehr als 25 mm Tiefe, unter 1,1 L",
+      "thLarge": "Gegenstände mit mehr als 25 mm Tiefe, 1,1 L oder mehr",
+      "thInfant": "Behälter für Babynahrung bis 12 Monate",
+      "thCooking": "Kochgeschirr, das der Hitze beim Kochen standhalten soll"
     },
     "judged": {
       "average": "Mittelwert aus 6 Stücken",
