@@ -1,5 +1,6 @@
 // Starts Glazecalc: connects to MongoDB, deletes again any account a restored
-// backup brought back, dates Trash entries from before the Trash, serves the app (app.ts) on PORT, removes expired
+// backup brought back, dates Trash entries from before the Trash, waits for the
+// indexes, serves the app (app.ts) on PORT, removes expired
 // trials, sends access tokens' expiry reminders, and shuts down cleanly when
 // asked. Node runs this TypeScript as it is: node server/main.ts.
 import type http from 'node:http';
@@ -40,6 +41,15 @@ const start = async () => {
     if (dated) log.info('Dated old Trash entries', { count: dated });
   } catch (err) {
     log.error('Could not date old Trash entries', { err });
+  }
+
+  // Each model builds its indexes once connected. One that cannot be built (an
+  // index changed in place: IndexOptionsConflict) would otherwise fail without
+  // a word; deploy/deploy.sh rolls back on this line.
+  try {
+    await Promise.all(Object.values(mongoose.models).map((model) => model.init()));
+  } catch (err) {
+    log.error('Could not build the indexes', { err });
   }
 
   // Express 5 passes startup errors (such as a port in use) to this callback.

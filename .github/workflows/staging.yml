@@ -1,0 +1,146 @@
+name: Deploy staging
+
+# Puts any branch or commit on https://staging.glazecalcapp.com: builds its
+# image natively for arm64 (the t4g instance), pushes it to GHCR as
+# staging-<commit>, runs /opt/glazecalc/staging.sh with it through SSM Run
+# Command, as Deploy does for production, then checks the site from outside
+# (Live checks). staging.sh takes its own files, its Compose file and
+# staging's nginx site from the same commit.
+#
+# Run it from master (Actions → Deploy staging → Run workflow) and type the
+# branch or commit: the branch need not have this file, but it must be pushed
+# to a branch here. Only people who can push here can start it, and the deploy
+# waits for the staging environment's reviewer. The role it assumes may only run
+# the glazecalc-staging-deploy document (deploy/aws/staging-deploy-document.json),
+# never production's. That runs the branch's staging.sh as root on the instance
+# production shares, so approve only branches whose deploy/ changes you trust.
+#
+# Setup (once): deploy/aws/README.md, section 5, "Staging", then in the
+# repository settings an environment named "staging" (add yourself as a
+# required reviewer) with variables AWS_STAGING_ROLE_ARN and AWS_REGION.
+on:
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: 'Branch or commit to put on staging'
+        required: true
+        type: string
+
+permissions: {}
+
+concurrency:
+  group: deploy-staging
+  cancel-in-progress: false
+
+env:
+  IMAGE: ghcr.io/aaronfilson/glazecalc
+
+jobs:
+  build:
+    name: Build the arm64 image
+    runs-on: ubuntu-26.04-arm
+    timeout-minutes: 25
+    permissions:
+      contents: read
+      packages: write
+    outputs:
+      sha: ${{ steps.commit.outputs.sha }}
+      tag: ${{ steps.commit.outputs.tag }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ inputs.ref }}
+          # Every branch, with history, to find the commit on one.
+          fetch-depth: 0
+          persist-credentials: false
+
+      # staging.sh runs this commit's scripts as root on the instance production
+      # shares, so only commits on this repository's own branches, which only
+      # people who can push here make: never a fork's pull request
+      # (refs/pull/*), whose commits GitHub serves under this repository too.
+      - name: The commit
+        id: commit
+        run: |
+          if [ -z "$(git branch -r --contains HEAD)" ]; then
+            echo "$(git rev-parse HEAD) is on no branch of this repository; staging runs only those."
+            exit 1
+          fi
+          sha=$(git rev-parse HEAD)
+          echo "sha=$sha" >> "$GITHUB_OUTPUT"
+          echo "tag=staging-$sha" >> "$GITHUB_OUTPUT"
+          echo "Staging $(git log -1 --format='%h %s')" >> "$GITHUB_STEP_SUMMARY"
+
+      - uses: docker/login-action@dbcb813823bdd20940b903addbd779551569679f # v4.6.0
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      # Staging the same commit again (after a staging reset, say) needs no new build.
+      - name: Built already?
+        id: exists
+        env:
+          TAG: ${{ steps.commit.outputs.tag }}
+        run: |
+          if docker buildx imagetools inspect "$IMAGE:$TAG" > /dev/null 2>&1; then
+            echo "found=true" >> "$GITHUB_OUTPUT"
+            echo "$IMAGE:$TAG is built already."
+          fi
+
+      - uses: docker/setup-buildx-action@f87e5991a6d7451dcb8d9637bfbc97413f497069 # v4.4.1
+        if: steps.exists.outputs.found != 'true'
+
+      # The labels scripts/build-staging.sh gives: staging.sh checks the
+      # revision, and deploy.sh's image prune leaves com.glazecalcapp.staging alone.
+      - name: Build and push
+        if: steps.exists.outputs.found != 'true'
+        uses: docker/build-push-action@c3c9e263c25d99ce0380d002d59b67737d91b0dc # v7.4.0
+        with:
+          context: .
+          platforms: linux/arm64
+          push: true
+          provenance: false
+          tags: ${{ env.IMAGE }}:${{ steps.commit.outputs.tag }}
+          labels: |
+            org.opencontainers.image.source=https://github.com/${{ github.repository }}
+            org.opencontainers.image.revision=${{ steps.commit.outputs.sha }}
+            com.glazecalcapp.staging=1
+          # Production's publish cache to start from, never written to from a branch.
+          cache-from: |
+            type=gha,scope=staging-arm64
+            type=gha,scope=linux/arm64
+          cache-to: type=gha,mode=max,scope=staging-arm64
+
+  deploy:
+    name: Run staging.sh on the instance
+    needs: build
+    runs-on: ubuntu-26.04
+    timeout-minutes: 20
+    environment: staging
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+          sparse-checkout: .github/scripts
+
+      - uses: aws-actions/configure-aws-credentials@e1253824e5c10ff9df46874f81ed3ec929e19cfd # v6.3.0
+        with:
+          role-to-assume: ${{ vars.AWS_STAGING_ROLE_ARN }}
+          aws-region: ${{ vars.AWS_REGION }}
+
+      - name: Run staging.sh
+        env:
+          TAG: ${{ needs.build.outputs.tag }}
+        run: .github/scripts/ssm-run.sh glazecalc-staging-deploy '^staging-[0-9a-f]{40}$' "$TAG"
+
+  check:
+    needs: [build, deploy]
+    permissions:
+      contents: read
+    uses: ./.github/workflows/live-checks.yml
+    with:
+      url: https://staging.glazecalcapp.com
+      ref: ${{ needs.build.outputs.sha }}

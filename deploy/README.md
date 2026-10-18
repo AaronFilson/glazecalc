@@ -8,6 +8,10 @@ How the production setup fits together. The plan and reasoning are in
 GitHub: push to master ─► CI (tests, Docker check) ─► Publish image (amd64 + arm64)
                                                         └─► ghcr.io/aaronfilson/glazecalc:sha-<commit>, :latest
 GitHub: Actions → Deploy (manual, approved) ─OIDC─► AWS role ─SSM Run Command─► /opt/glazecalc/deploy.sh <tag>
+          deploy.sh: backup.sh ─► new image, healthy, indexes built ─► nginx files from the same commit
+        └─► Live checks: health, headers, every language's home page, pages in a browser, /mcp
+GitHub: Actions → Deploy staging <branch> (approved) ─► arm64 image :staging-<commit>
+          ─OIDC─► staging role ─SSM Run Command─► /opt/glazecalc/staging.sh staging-<commit> ─► Live checks
 
 EC2 (Debian 13, t4g.micro):
   nginx :80/:443 ─► 127.0.0.1:3000 app container ─► mongo:9.0 container (named volume)
@@ -22,43 +26,35 @@ app can be checked by IP address before the DNS switch: pages load, and curl can
 session cookie is `Secure`. After DNS points at the instance,
 `enable-https.sh` (run once) gets the certificate and switches nginx to `nginx/glazecalc.conf`.
 
-> **Required with the release that brings the Content-Security-Policy, the tools for AI
-> assistants (`/mcp`) and Google and GitHub sign-in:** once it is merged to master, run
->
-> ```sh
-> sudo /opt/glazecalc/enable-https.sh --with-staging
-> ```
->
-> on the instance (without `--with-staging` only where staging was never set up), right after
-> the Deploy of that release and before turning on provider sign-in. The nginx files reach the
-> instance only this way, never with a deploy. It installs, for production and staging alike:
-> the `Content-Security-Policy` header (`nginx/glazecalc-proxy.conf`, and its copy in
-> `nginx/glazecalc-staging.conf`); the unbuffered `location = /mcp`, without which an
-> assistant's streamed answers wait in nginx's buffer; and the access-log map that writes the
-> provider callback (`/api/auth/<provider>/callback`) without its query, which carries the
-> provider's one-time code and the state. Until it runs, the site has no CSP and those codes
-> would sit in `access.log` for 14 days. The script checks the files with `nginx -t` and puts
-> the old ones back if they fail; afterwards check that
-> `curl -sI https://glazecalcapp.com/ | grep -i content-security-policy` prints the header.
+**nginx's files come with each deploy.** Once HTTPS is on, `deploy.sh` installs them from the
+deployed image's commit with `install-nginx.sh` (production's site, its proxy and TLS snippets
+and the log rotation), and `staging.sh` installs staging's site from its own commit the same way.
+Each install is checked with `nginx -t` and the files in place go back if nginx rejects the new
+ones; the run then fails, saying so, with the app already on the new version. Files that have not
+changed are left alone and nginx is not reloaded. The Live checks after each deploy fail if the
+`Content-Security-Policy` or the other headers are missing. Before this, the files reached the
+instance only through `enable-https.sh`, run by hand after a merge; it still works, and now takes
+them from the commit production runs rather than from master.
 
-| File                                                     | Where it ends up                       | What it does                                                                                                                                                                                                                                                                                                                                 |
-| -------------------------------------------------------- | -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `cloud-init.yaml`                                        | launch template user data              | first-boot packages and settings; runs `setup-instance.sh`                                                                                                                                                                                                                                                                                   |
-| `setup-instance.sh`                                      | `/usr/local/sbin/glazecalc-setup.sh`   | installs the SSM agent, AWS CLI, Docker, nginx, certbot; installs the files below; first deploy                                                                                                                                                                                                                                              |
-| `compose.prod.yaml`                                      | `/opt/glazecalc/`                      | the app image from GHCR plus MongoDB with production settings                                                                                                                                                                                                                                                                                |
-| `deploy.sh`                                              | `/opt/glazecalc/`                      | deploys an image tag: pulls it first (only master builds that passed CI exist), then takes the Compose file and these scripts from the image's commit, re-running itself if `deploy.sh` changed; refreshes the secret; restarts the previous version if the new one fails; loads the standard materials, additives and advice from the image |
-| `enable-https.sh`                                        | `/opt/glazecalc/`                      | once, after the DNS switch: certificate from Let's Encrypt, nginx to HTTPS; re-run to refresh the nginx files                                                                                                                                                                                                                                |
-| `backup.sh`                                              | `/opt/glazecalc/`                      | `mongodump` (without the deletion log) to a local file, then to the S3 backup bucket once it is whole, with the log beside it                                                                                                                                                                                                                |
-| `restore.sh`                                             | `/opt/glazecalc/`                      | restores a dump, then deletes again every account in the deletion log before the app starts (see below)                                                                                                                                                                                                                                      |
-| `nginx/glazecalc-http.conf`                              | `/etc/nginx/sites-available/glazecalc` | first-boot site: plain HTTP to the app, plus Let's Encrypt's check path                                                                                                                                                                                                                                                                      |
-| `nginx/glazecalc.conf`                                   | `/etc/nginx/sites-available/glazecalc` | after `enable-https.sh`: HTTPS, http→https and www→bare-domain redirects, HSTS                                                                                                                                                                                                                                                               |
-| `nginx/glazecalc-proxy.conf`, `nginx/glazecalc-tls.conf` | `/etc/nginx/snippets/`                 | proxy settings and headers; TLS settings (Mozilla intermediate)                                                                                                                                                                                                                                                                              |
-| `logrotate/nginx`                                        | `/etc/logrotate.d/nginx`               | nginx's logs kept 14 days                                                                                                                                                                                                                                                                                                                    |
-| `journald/glazecalc.conf`                                | `/etc/systemd/journald.conf.d/`        | the system journal kept 14 days                                                                                                                                                                                                                                                                                                              |
-| `systemd/*`                                              | `/etc/systemd/system/`                 | the units listed above                                                                                                                                                                                                                                                                                                                       |
-| `compose.staging.yaml`, `staging.sh`                     | `/opt/glazecalc/` (by hand)            | the staging copy: see "Staging" below                                                                                                                                                                                                                                                                                                        |
-| `nginx/glazecalc-staging.conf`                           | `/etc/nginx/sites-available/`          | staging.glazecalcapp.com to 127.0.0.1:3001, after `enable-https.sh --with-staging`                                                                                                                                                                                                                                                           |
-| `aws/*.json`                                             | IAM, SSM, DLM                          | instance role, GitHub deploy role and its one command document, CLI user policy, snapshot policy                                                                                                                                                                                                                                             |
+| File                                                     | Where it ends up                       | What it does                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| -------------------------------------------------------- | -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `cloud-init.yaml`                                        | launch template user data              | first-boot packages and settings; runs `setup-instance.sh`                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| `setup-instance.sh`                                      | `/usr/local/sbin/glazecalc-setup.sh`   | installs the SSM agent, AWS CLI, Docker, nginx, certbot; installs the files below; first deploy                                                                                                                                                                                                                                                                                                                                                                            |
+| `compose.prod.yaml`                                      | `/opt/glazecalc/`                      | the app image from GHCR plus MongoDB with production settings                                                                                                                                                                                                                                                                                                                                                                                                              |
+| `deploy.sh`                                              | `/opt/glazecalc/`                      | deploys an image tag: pulls it first (only master builds that passed CI exist), backs up MongoDB (`backup.sh`), then takes the Compose file and these scripts from the image's commit, re-running itself if `deploy.sh` changed; refreshes the secret; restarts the previous version if the new one fails or cannot build its indexes; loads the standard materials, additives and advice from the image; installs nginx's files from the same commit (`install-nginx.sh`) |
+| `enable-https.sh`                                        | `/opt/glazecalc/`                      | once, after the DNS switch: certificate from Let's Encrypt, nginx to HTTPS; `--with-staging` adds staging's name                                                                                                                                                                                                                                                                                                                                                           |
+| `install-nginx.sh`                                       | `/opt/glazecalc/`                      | installs production's or staging's nginx files from a commit, checked with `nginx -t` and put back if rejected; run by `deploy.sh`, `staging.sh` and `enable-https.sh`                                                                                                                                                                                                                                                                                                     |
+| `backup.sh`                                              | `/opt/glazecalc/`                      | `mongodump` (without the deletion log) to a local file, then to the S3 backup bucket once it is whole, with the log beside it                                                                                                                                                                                                                                                                                                                                              |
+| `restore.sh`                                             | `/opt/glazecalc/`                      | restores a dump, then deletes again every account in the deletion log before the app starts (see below)                                                                                                                                                                                                                                                                                                                                                                    |
+| `nginx/glazecalc-http.conf`                              | `/etc/nginx/sites-available/glazecalc` | first-boot site: plain HTTP to the app, plus Let's Encrypt's check path                                                                                                                                                                                                                                                                                                                                                                                                    |
+| `nginx/glazecalc.conf`                                   | `/etc/nginx/sites-available/glazecalc` | after `enable-https.sh`: HTTPS, http→https and www→bare-domain redirects, HSTS                                                                                                                                                                                                                                                                                                                                                                                             |
+| `nginx/glazecalc-proxy.conf`, `nginx/glazecalc-tls.conf` | `/etc/nginx/snippets/`                 | proxy settings and headers; TLS settings (Mozilla intermediate)                                                                                                                                                                                                                                                                                                                                                                                                            |
+| `logrotate/nginx`                                        | `/etc/logrotate.d/nginx`               | nginx's logs kept 14 days                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| `journald/glazecalc.conf`                                | `/etc/systemd/journald.conf.d/`        | the system journal kept 14 days                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| `systemd/*`                                              | `/etc/systemd/system/`                 | the units listed above                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| `compose.staging.yaml`, `staging.sh`, `mongo-users.sh`   | `/opt/glazecalc/`                      | the staging copy: installed by hand once, then `staging.sh` updates them from each commit it deploys; see "Staging" below                                                                                                                                                                                                                                                                                                                                                  |
+| `nginx/glazecalc-staging.conf`                           | `/etc/nginx/sites-available/`          | staging.glazecalcapp.com to 127.0.0.1:3001, once `enable-https.sh --with-staging` has added the name; then from each staging deploy                                                                                                                                                                                                                                                                                                                                        |
+| `aws/*.json`                                             | IAM, SSM, DLM                          | instance role, GitHub deploy roles (production and staging) and their one command document each, CLI user policy, snapshot policy                                                                                                                                                                                                                                                                                                                                          |
 
 Settings come from SSM Parameter Store, never from the repository or user data:
 `/glazecalc/app-secret` (SecureString), `/glazecalc/mongo-password` (SecureString, the app's
@@ -71,9 +67,18 @@ the SES SMTP credentials that turn email on; see aws/README.md section 14), and 
 
 Day to day:
 
-- **Deploy:** Actions → Deploy → Run workflow (blank tag = the current master commit).
+- **Deploy:** after each merge to master, CI and Publish image run, then Deploy starts by
+  itself and waits for you: open the run (GitHub emails the reviewer) and approve it, or reject it
+  to leave production as it is. One deploy runs at a time: while one waits, the next waits
+  behind it, and a newer one replaces that (reject an older one to move on). By hand,
+  Actions → Deploy → Run workflow (blank tag = the current master commit). It backs
+  up MongoDB first (a deploy whose backup fails changes nothing; by hand,
+  `GLAZECALC_SKIP_BACKUP=1 /opt/glazecalc/deploy.sh <tag>` deploys without one), installs
+  nginx's files from the same commit, then runs the Live checks against the site. Live checks
+  can also be run alone (Actions → Live checks) or from the PC: `LIVE_URL=https://glazecalcapp.com npm run test:live`.
 - **Roll back:** run Deploy with the previous `sha-<commit>` tag (each deploy prints it). A
-  deploy whose image fails to pull or to become healthy rolls itself back and fails the run.
+  deploy whose image fails to pull, to become healthy or to build its indexes rolls itself back
+  and fails the run.
   `deploy.sh` refuses an image from before two-step sign-in (one without the Dockerfile's
   `com.glazecalcapp.two-step-sign-in` label): that code ignores the factors accounts have set
   and would sign them in with the password alone. If going back that far is truly needed, run it
@@ -85,11 +90,11 @@ Day to day:
   `/var/log/nginx/access.log` and `error.log`, `journalctl -u glazecalc-backup`.
 - **Certificate:** `sudo certbot certificates` (expiry), `systemctl list-timers certbot`
   (next renewal check), `sudo certbot renew --dry-run` (test a renewal).
-- **nginx changes:** edit the files in `deploy/nginx/`, merge, then run
-  `sudo /opt/glazecalc/enable-https.sh` on the instance (it checks the files with `nginx -t`
-  and puts the old ones back if they fail).
+- **nginx changes:** edit the files in `deploy/nginx/`, merge, deploy: the deploy installs them
+  (`install-nginx.sh`; `nginx -t` first, and the old ones back if they fail).
 - **Restore a dump:** `sudo /opt/glazecalc/restore.sh mongodump/glazecalc-<time>.archive.gz`; see below.
-- **Staging:** a branch on https://staging.glazecalcapp.com, deployed by hand; see "Staging" below.
+- **Staging:** a branch on https://staging.glazecalcapp.com: Actions → Deploy staging, with the
+  branch's name; see "Staging" below.
 - **Rate limits** (sign-in, sign-up, resets, second steps; `server/lib/rate_limit.ts`) count per
   client address or per account in the app's memory, so every deploy or restart starts them again.
 - **Session cookie:** in production it is `__Host-glazecalc_session` (Secure, `Path=/`, no
@@ -101,6 +106,28 @@ Day to day:
   include subdomains (`nginx/glazecalc.conf`): adding `includeSubDomains` would also stop a
   network from serving a fake `http://` subdomain, but it binds every future subdomain to HTTPS
   for a year, so it is left as an option for the owner.
+
+## An index the app cannot build
+
+The app builds each collection's indexes when it starts and logs `Could not build the indexes`
+if one fails, most often because a release changed an index that already exists under the same
+name (`IndexOptionsConflict`, `IndexKeySpecsConflict`). `deploy.sh` then starts the previous
+version again and the Deploy run fails, quoting the log line, which names the collection and the
+index. Before that check existed such failures passed without a word, so an old conflict can
+surface on the first deploy that checks. To fix it, in Session Manager (`sudo -i`):
+
+```bash
+cd /opt/glazecalc
+docker compose -f compose.prod.yaml exec mongo sh -c \
+  'mongosh --quiet -u glazecalc -p "$MONGO_APP_PASSWORD" --authenticationDatabase glazecalc glazecalc'
+# then, in mongosh, with the names from the log line:
+#   db.<collection>.getIndexes()
+#   db.<collection>.dropIndex('<index name>')
+```
+
+and run Deploy again: the new version builds the index as it now is. If the index cannot be
+dropped yet, `GLAZECALC_ALLOW_INDEX_ERRORS=1 /opt/glazecalc/deploy.sh sha-<commit>` (by hand
+only) keeps the new version with the old index in place.
 
 ## Restoring a backup
 
@@ -298,14 +325,13 @@ each, and `staging.sh` refuses production's secret. The callbacks are exactly:
      --value 'PROD_GITHUB_CLIENT_SECRET'
    ```
 
-4. **nginx, once, before the first provider sign-in** (the required step at the top of this
-   file, if it has not been done). Run `sudo /opt/glazecalc/enable-https.sh --with-staging`
-   (without the flag where staging is not set up), so that nginx's access logs write the
-   callback (`/api/auth/<provider>/callback`) without its query, which carries the provider's
-   one-time code and the state (the `$glazecalc_request` map in `nginx/glazecalc.conf`;
-   `nginx/glazecalc-staging.conf` has its own copy, `$glazecalc_staging_request`, so staging's
-   log strips it even when its file comes from a branch through `GLAZECALC_STAGING_REF`).
-   Until then those codes and states would sit in `access.log` for 14 days.
+4. **nginx, before the first provider sign-in.** Each deploy installs nginx's files from its
+   commit, so a deploy of the release that brought provider sign-in has done this. The files make
+   nginx's access logs write the callback (`/api/auth/<provider>/callback`) without its query,
+   which carries the provider's one-time code and the state (the `$glazecalc_request` map in
+   `nginx/glazecalc.conf`; `nginx/glazecalc-staging.conf` has its own copy,
+   `$glazecalc_staging_request`, so staging's log strips it even when its file comes from a
+   branch). Without them those codes and states would sit in `access.log` for 14 days.
 5. Run `staging.sh` (or Deploy for production). It prints `Sign in with google: on.` and
    `Sign in with github: on.`, or `off` with the parameter it did not find. The instance role
    already reads `/glazecalc/*`, so no policy changes.
@@ -336,7 +362,7 @@ Docker has no time limit for container logs. On a quiet day 50 MB reaches back m
 under load it is hours. The app writes error codes and request paths, never email addresses
 (a mail failure logs only the error's code), and MongoDB is started with `--slowms 2147483647`
 so it never writes a slow query with its filter. The logrotate file and the journal setting
-reach an existing instance when `enable-https.sh` is run again (logrotate) or by hand (journal, see below).
+reach an existing instance with each deploy (logrotate, `install-nginx.sh`) or by hand (journal, see below).
 
 ## MongoDB sign-in
 
@@ -434,7 +460,7 @@ but the user must exist for the deploy to work. No data is touched at any point.
    ./backup.sh
    ```
 
-7. **The log settings** on the existing instance. The nginx rotation arrives with `sudo /opt/glazecalc/enable-https.sh`;
+7. **The log settings** on the existing instance. The nginx rotation arrives with each deploy;
    the journal setting by hand:
 
    ```bash
@@ -451,12 +477,13 @@ To go back, deploy the previous `sha-<commit>` tag: its Compose file starts Mong
 
 A second copy of the app on the same instance, at **https://staging.glazecalcapp.com**, for testing
 a branch in real browsers (a phone's authenticator app, real passkeys, real email) before it is
-merged ([docs/mfa-plan.md](../docs/mfa-plan.md), "Phase 2"). It is deployed by hand: no CI, and
-production's deploys are unchanged.
+merged ([docs/mfa-plan.md](../docs/mfa-plan.md), "Phase 2"). The **Deploy staging** workflow
+puts a branch there (or it is done by hand, below); production's deploys are unchanged.
 
 ```
-PC: scripts/build-staging.sh <branch> ─► ghcr.io/aaronfilson/glazecalc:staging-<sha>  (or S3, --to-s3)
-Session Manager: /opt/glazecalc/staging.sh staging-<sha>
+GitHub: Actions → Deploy staging <branch> ─► arm64 image ghcr.io/aaronfilson/glazecalc:staging-<sha>
+          ─► (approved) SSM Run Command: /opt/glazecalc/staging.sh staging-<sha> ─► Live checks
+or by hand: PC scripts/build-staging.sh <branch>, then in Session Manager staging.sh staging-<sha>
   nginx :443 staging.glazecalcapp.com ─► 127.0.0.1:3001 app (project glazecalc-staging, 300 MB)
                                              └─► production's mongo container, database glazecalc_staging,
                                                  user glazecalc_staging (that database only)
@@ -483,9 +510,18 @@ What keeps it apart from production:
 - **Never backed up**, never copied from production. Its data is for testing and can be emptied at
   any time.
 
+What does not keep it apart: `staging.sh` runs as root on the same instance, and takes its own
+scripts and staging's nginx site from the commit it stages. A branch's `deploy/` is trusted as
+much as running it by hand would be, so stage only branches whose `deploy/` changes you have read.
+The Deploy staging workflow stages only commits on this repository's branches (never a fork's pull
+request), after your approval, and `install-nginx.sh` refuses a staging site that names any other
+host or makes itself the default server.
+
 ### One-time setup
 
-Each step is a command for the owner to review and run; none has been run. Steps 1 and 3 to 6 are
+Each step is a command for the owner to review and run. Steps 1 to 6 were done for the first
+staging round; step 9 is new with the Deploy staging workflow (step 3 then needs nothing: the
+next production deploy brings `staging.sh` up to date). Steps 1 and 3 to 6 are
 in a Session Manager shell on the instance as root (`sudo -i`); steps 2 and 7 on the PC with the
 operator profile (copper-bell). The instance role already reads `/glazecalc/*`
 (`aws/instance-policy.json`) and the operator policy already writes those parameters and changes
@@ -559,12 +595,14 @@ operator profile (copper-bell). The instance role already reads `/glazecalc/*`
      --value "$(openssl rand -hex 32)"
    ```
 
-3. **The files.** `staging.sh`, `mongo-users.sh` and `compose.staging.yaml` are not installed by `deploy.sh` or
-   `setup-instance.sh`; take them from a pushed branch or commit (`mfa` until it is merged, then
-   `master`). Run this again whenever they change.
+3. **The files.** `staging.sh`, `mongo-users.sh` and `compose.staging.yaml` are not installed by
+   `setup-instance.sh`; take them from master once, as below. From then on `staging.sh` updates
+   all three from each commit it deploys (and runs its new self if it changed). A `staging.sh` from
+   before it updated itself is replaced once by the next production deploy (`deploy.sh` prints
+   "Staging's scripts: now ..."), so an instance already set up needs nothing here.
 
    ```bash
-   ref=mfa
+   ref=master
    cd /opt/glazecalc
    for f in staging.sh mongo-users.sh compose.staging.yaml; do
      curl -fsSL "https://raw.githubusercontent.com/AaronFilson/glazecalc/$ref/deploy/$f" -o "$f.new"
@@ -614,24 +652,19 @@ operator profile (copper-bell). The instance role already reads `/glazecalc/*`
 
 5. **Certificate and nginx.** `enable-https.sh --with-staging` adds the name to the certificate
    (certbot `--expand`, checked against DNS first) and turns on `nginx/glazecalc-staging.conf`.
-   Until the branch is merged, the instance's `enable-https.sh` (master's) does not know the flag,
-   so run the branch's copy; production's nginx files still come from master.
 
    ```bash
-   curl -fsSL https://raw.githubusercontent.com/AaronFilson/glazecalc/mfa/deploy/enable-https.sh \
-     -o /var/tmp/enable-https.sh
-   GLAZECALC_STAGING_REF=mfa bash /var/tmp/enable-https.sh --with-staging --dry-run
-   GLAZECALC_STAGING_REF=mfa bash /var/tmp/enable-https.sh --with-staging
-   rm /var/tmp/enable-https.sh
+   /opt/glazecalc/enable-https.sh --with-staging --dry-run
+   /opt/glazecalc/enable-https.sh --with-staging
    ```
 
-   After the merge it is `/opt/glazecalc/enable-https.sh --with-staging`. Later runs without the
-   flag keep the staging name. While staging is stopped the site answers 503 "stopped".
+   Later runs without the flag keep the staging name, and each staging deploy then installs the
+   site from its own commit. While staging is stopped the site answers 503 "stopped".
 
 6. **Check:** `curl -sI https://staging.glazecalcapp.com/` answers 503 with `x-robots-tag`, and
    `sudo certbot certificates` lists the three names.
 
-7. **Docker on the PC.** The image is built where Docker runs: Docker Engine in WSL (`wsl -d Debian`),
+7. **Docker on the PC**, only for building by hand (the workflow builds on GitHub). The image is built where Docker runs: Docker Engine in WSL (`wsl -d Debian`),
    or Docker Desktop with Git Bash. The instance is arm64, so Docker needs arm64 emulation for the
    image's small runtime stages; Docker Desktop has it, Docker Engine in WSL gets it with one
    command, again after each WSL restart (`docker buildx inspect default` then lists `linux/arm64`):
@@ -665,40 +698,55 @@ operator profile (copper-bell). The instance role already reads `/glazecalc/*`
      '{"Rules":[{"ID":"expire-dumps","Status":"Enabled","Filter":{"Prefix":"mongodump/"},"Expiration":{"Days":30}},{"ID":"expire-staging-images","Status":"Enabled","Filter":{"Prefix":"staging-images/"},"Expiration":{"Days":7}}]}'
    ```
 
+9. **The Deploy staging workflow.** The admin makes its AWS role and command document
+   (aws/README.md, section 5, "Staging"); then, in the repository's settings, Environments → **New
+   environment** `staging`: add yourself as a required reviewer, and the variables
+   `AWS_STAGING_ROLE_ARN` = `arn:aws:iam::724654236968:role/glazecalc-github-staging` and
+   `AWS_REGION` = `us-west-2`; under Deployment branches, `master` only (aws/README.md,
+   section 12). The workflow needs a `staging.sh` that updates itself: the first production deploy
+   of this release installs it.
+
 ### A test round
+
+1. **Actions → Deploy staging → Run workflow**, from master, with the branch's name (or a commit)
+   in "Branch or commit". The branch must be pushed; it need not have the workflow. The workflow
+   builds the arm64 image on GitHub (a commit built before is reused), waits for your approval,
+   runs `staging.sh` on the instance through SSM, then runs the Live checks against staging. The
+   run's log shows `staging.sh`'s output.
+
+2. **Test** on the phone and the PC at https://staging.glazecalcapp.com, then **repeat** from 1
+   with the next commit.
+
+3. **Leave it running** between rounds, or stop it (`staging.sh stop`), as you like. It is capped
+   small (below), and while nobody uses it the kernel moves its memory to swap, so production gets
+   the memory back either way. Check with `staging.sh status`.
+
+**By hand**, without the workflow (from a PC with Docker, step 7):
 
 1. **Build and publish** on the PC, from the repository where Docker runs (step 7). Any branch or
    commit that has been committed; uncommitted changes are never included. It prints the next
    command. In WSL, from the repository's folder (`cd /mnt/c/Users/<you>/gh/glazecalc`):
 
    ```bash
-   scripts/build-staging.sh mfa                    # or: --to-s3 glazecalc-backups-724654236968
+   scripts/build-staging.sh <branch>               # or: --to-s3 glazecalc-backups-724654236968
    ```
 
-   `--to-s3` needs the AWS CLI where it runs (WSL has none until it is installed there). Until the
-   branch is merged, master's checkout has no `scripts/build-staging.sh`: run the branch's copy
-   (`git show mfa:scripts/build-staging.sh > /tmp/build-staging.sh && bash /tmp/build-staging.sh mfa`),
-   which builds the branch from a clean checkout of it whichever branch is checked out.
+   `--to-s3` needs the AWS CLI where it runs (WSL has none until it is installed there).
 
-2. **Deploy** in Session Manager (`sudo -i`), with the tag it printed:
+2. **Deploy** in Session Manager (`sudo -i`), with the tag it printed. The commit must be pushed:
+   `staging.sh` first takes its own files from it on GitHub.
 
    ```bash
    /opt/glazecalc/staging.sh staging-<sha>
    ```
 
-   It reads the parameters, pulls the image (checking that its label names the same commit),
-   writes the root-only `staging.env`, starts the app and waits for `/api/health` on 3001, then
-   loads the standard materials. If the new version does not become healthy, the staging version
-   that was running is started again (or staging is left stopped) and it says so. A master
-   build from CI works too: `staging.sh sha-<sha>`.
-
-3. **Test** on the phone and the PC at https://staging.glazecalcapp.com.
-
-4. **Repeat** from 1 with the next commit.
-
-5. **Leave it running** between rounds, or stop it (`staging.sh stop`), as you like. It is capped
-   small (below), and while nobody uses it the kernel moves its memory to swap, so production gets
-   the memory back either way. Check with `staging.sh status`.
+What `staging.sh` does, either way: it updates `staging.sh`, `compose.staging.yaml` and
+`mongo-users.sh` from the commit (running its new self if it changed), reads the parameters, pulls
+the image (checking that its label names the same commit), writes the root-only `staging.env`,
+starts the app and waits for `/api/health` on 3001, checks that it built its indexes, loads the
+standard materials, then installs staging's nginx site from the commit. If the new version does not
+become healthy, the staging version that was running is started again (or staging is left stopped)
+and it says so. A master build from CI works too: `staging.sh sha-<sha>` (by hand only).
 
 Also:
 
@@ -748,7 +796,8 @@ the registry refuses a version it already has).
 
 CI checks the endpoint with the official conformance suite and the Inspector on every push (`npm run test:mcp`).
 `MCP_URL=https://glazecalcapp.com/mcp npm run test:mcp` runs the same against the live site, but the suite
-sends more than the 60 requests a minute one address may make, so expect some 429 answers there.
+sends more than the 60 requests a minute one address may make, so most of it is refused (429) there;
+`MCP_INSPECTOR_ONLY=1` runs only the Inspector's few requests, as the Live checks after each deploy do.
 
 1. **Get `mcp-publisher`,** the registry's own CLI (a Go binary from its GitHub releases; the npm
    package of that name is someone else's):

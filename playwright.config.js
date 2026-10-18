@@ -24,6 +24,8 @@ process.env.E2E_OAUTH_PORT = oauthPort;
 
 module.exports = defineConfig({
   testDir: './e2e',
+  // The deployed site's checks, against LIVE_URL (playwright.live.config.js).
+  testIgnore: 'live/**',
   globalSetup: require.resolve('./e2e/global-setup'),
   // The workers share the server and its database: each test makes accounts
   // of its own (uniqueEmail) and reads only the email sent to them, and no test

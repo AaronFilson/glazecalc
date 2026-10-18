@@ -185,6 +185,22 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   its own Compose project, with its own MongoDB database and user, secrets and mail allowlist, and
   can stop it, empty its database and report on it; `enable-https.sh --with-staging` adds the name
   to the certificate and nginx. The owner's one-time steps are in deploy/README.md, "Staging".
+- **Fewer steps by hand for a release.** A **Deploy staging** workflow puts any pushed branch or
+  commit on staging: it builds the arm64 image on GitHub's own arm64 runners and runs `staging.sh`
+  through SSM with a role that may run only that, after the owner approves. `staging.sh` takes its
+  own files and staging's nginx site from the commit it deploys, and `deploy.sh` backs up MongoDB
+  before each production deploy, installs nginx's files from the deployed commit
+  (`deploy/install-nginx.sh`, checked with `nginx -t` and put back if rejected), and goes back to
+  the previous version if the app logs that it could not build its indexes. After each deploy the
+  **Live checks** workflow checks the site from outside: the health check and security headers,
+  every language's home page, the public pages in a browser with no Content-Security-Policy
+  violation, and the MCP endpoint (`npm run test:live`). **Deploy** now starts by itself once a
+  master commit's image is published, and waits for the owner's approval. One script,
+  `deploy/aws/setup-github-deploy.sh`, makes or updates the AWS roles and command documents both
+  workflows use, and the first production deploy brings staging's scripts up to date.
+- **More room for assistants with an access token:** the tools for AI assistants (MCP) allow an
+  account using a token 300 requests a minute and 20,000 a day (from 120 and 5,000); without a
+  token it stays 60 and 2,000 per address.
 - **Pages that search engines and link previews can read.** The public pages (home, guides,
   advice, about, privacy, sign-up) are drawn to plain HTML when the app is built, in every
   language, so the text is there before any script runs; the app then takes the page over in

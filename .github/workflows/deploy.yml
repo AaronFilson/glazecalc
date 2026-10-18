@@ -1,15 +1,30 @@
 name: Deploy
 
 # Deploys a published image to the EC2 instance tagged app=glazecalc, by running
-# /opt/glazecalc/deploy.sh through SSM Run Command. No SSH and no stored AWS
+# /opt/glazecalc/deploy.sh through SSM Run Command (.github/scripts/ssm-run.sh),
+# then checks the site from outside (Live checks). No SSH and no stored AWS
 # keys: GitHub signs in to AWS with OIDC and assumes a role that may only run
 # the glazecalc-deploy document (deploy/aws/deploy-document.json) on that
 # instance, whose tag parameter AWS checks against the same pattern as below.
+# deploy.sh backs up MongoDB first and installs nginx's files from the image's
+# commit, so a release needs nothing run by hand on the instance.
+#
+# It starts by itself once Publish image has published a master commit (named
+# in that run's title), and waits for the production environment's reviewer:
+# approve to deploy that commit, or reject to leave production as it is. One
+# deploy runs at a time; while one waits for approval, the next commit's waits
+# behind it, and a third replaces that one (GitHub keeps one pending), so
+# reject an older one to move on to the newest. Run it by hand to deploy
+# another tag (a rollback).
 #
 # Setup (once): the AWS side in deploy/aws/README.md, then in the repository
 # settings an environment named "production" (add yourself as a required
 # reviewer) with variables AWS_DEPLOY_ROLE_ARN and AWS_REGION.
 on:
+  workflow_run:
+    workflows: [Publish image]
+    types: [completed]
+    branches: [master]
   workflow_dispatch:
     inputs:
       tag:
@@ -19,18 +34,53 @@ on:
 
 permissions: {}
 
-concurrency:
-  group: deploy-production
-  cancel-in-progress: false
-
 jobs:
   deploy:
+    # After Publish image: only when it published (a run after a failed CI is
+    # skipped). The group is on the job, so a run skipped here never holds a place.
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
+    concurrency:
+      group: deploy-production
+      cancel-in-progress: false
     runs-on: ubuntu-26.04
-    timeout-minutes: 15
+    timeout-minutes: 20
     environment: production
     permissions:
+      contents: read
       id-token: write
+    outputs:
+      ref: ${{ steps.image.outputs.ref }}
     steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+          sparse-checkout: .github/scripts
+
+      # The tag to deploy, and its commit for the Live checks ("latest" is
+      # master's newest). After Publish image, the commit it built is the one in
+      # its run's title: a run started by another's end carries master's newest
+      # commit as its own, which may be later than the one built.
+      - name: The image
+        id: image
+        env:
+          EVENT: ${{ github.event_name }}
+          GIVEN: ${{ inputs.tag }}
+          PUBLISHED: ${{ github.event.workflow_run.display_title }}
+          THIS: ${{ github.sha }}
+        run: |
+          if [ "$EVENT" = workflow_run ]; then
+            if [[ ! "$PUBLISHED" =~ ^Publish\ image\ ([0-9a-f]{40})$ ]]; then
+              echo "Publish image's run is titled '$PUBLISHED', which names no commit; nothing deployed."
+              exit 1
+            fi
+            tag=sha-${BASH_REMATCH[1]}
+          else
+            tag=${GIVEN:-sha-$THIS}
+          fi
+          echo "tag=$tag" >> "$GITHUB_OUTPUT"
+          if [ "$tag" = latest ]; then echo "ref=master" >> "$GITHUB_OUTPUT"; else echo "ref=${tag#sha-}" >> "$GITHUB_OUTPUT"; fi
+          echo "Deploying $tag" >> "$GITHUB_STEP_SUMMARY"
+
       - uses: aws-actions/configure-aws-credentials@e1253824e5c10ff9df46874f81ed3ec929e19cfd # v6.3.0
         with:
           role-to-assume: ${{ vars.AWS_DEPLOY_ROLE_ARN }}
@@ -38,33 +88,14 @@ jobs:
 
       - name: Run deploy.sh on the instance
         env:
-          TAG: ${{ inputs.tag || format('sha-{0}', github.sha) }}
-        run: |
-          if [[ ! "$TAG" =~ ^(latest|sha-[0-9a-f]{40})$ ]]; then
-            echo "Tag must be 'latest' or sha-<full 40-character commit SHA>: $TAG"
-            exit 1
-          fi
-          command_id=$(aws ssm send-command \
-            --document-name glazecalc-deploy \
-            --targets Key=tag:app,Values=glazecalc \
-            --comment "deploy $TAG from GitHub run $GITHUB_RUN_ID" \
-            --parameters "tag=$TAG" \
-            --timeout-seconds 600 \
-            --query Command.CommandId --output text)
-          echo "SSM command: $command_id"
+          TAG: ${{ steps.image.outputs.tag }}
+        run: .github/scripts/ssm-run.sh glazecalc-deploy '^(latest|sha-[0-9a-f]{40})$' "$TAG"
 
-          for _ in $(seq 1 60); do
-            read -r status targets < <(aws ssm list-commands --command-id "$command_id" \
-              --query 'Commands[0].[Status,TargetCount]' --output text)
-            case "$status" in Pending|InProgress|Delayed) sleep 10 ;; *) break ;; esac
-          done
-          echo "Status: $status on $targets instance(s)"
-
-          aws ssm list-command-invocations --command-id "$command_id" --details \
-            --query 'CommandInvocations[].CommandPlugins[].[Status,Output]' --output text
-          # With no instance tagged app=glazecalc the command can finish with nothing deployed.
-          if [ "$targets" = 0 ]; then
-            echo 'No instance tagged app=glazecalc took the command; nothing was deployed.'
-            exit 1
-          fi
-          test "$status" = Success
+  check:
+    needs: deploy
+    permissions:
+      contents: read
+    uses: ./.github/workflows/live-checks.yml
+    with:
+      url: https://glazecalcapp.com
+      ref: ${{ needs.deploy.outputs.ref }}

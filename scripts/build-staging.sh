@@ -3,7 +3,8 @@
 # on the instance (docs/mfa-plan.md, "Phase 2"; deploy/README.md, "Staging").
 # Git Bash with Docker Desktop on Windows, or Docker Engine in WSL (with arm64
 # emulation: deploy/README.md, Staging, step 7), or any bash with Docker and buildx.
-# Production images still come only from CI (.github/workflows/publish.yml).
+# Production images still come only from CI (.github/workflows/publish.yml). The
+# Deploy staging workflow (.github/workflows/staging.yml) builds the same on GitHub.
 #
 #   scripts/build-staging.sh <git-ref>                  build and push ghcr.io/aaronfilson/glazecalc:staging-<sha>
 #   scripts/build-staging.sh <git-ref> --to-s3 <bucket> instead upload it as

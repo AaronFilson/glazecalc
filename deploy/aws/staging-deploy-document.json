@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "2.2",
+  "description": "Deploys a glazecalc staging image on this instance with /opt/glazecalc/staging.sh. The only command the GitHub staging role may run.",
+  "parameters": {
+    "tag": {
+      "type": "String",
+      "description": "staging-<full commit SHA>, or sha-<full commit SHA> (a master build)",
+      "allowedPattern": "^(staging|sha)-[0-9a-f]{40}$"
+    }
+  },
+  "mainSteps": [
+    {
+      "action": "aws:runShellScript",
+      "name": "stage",
+      "inputs": {
+        "timeoutSeconds": "900",
+        "runCommand": ["/opt/glazecalc/staging.sh '{{ tag }}'"]
+      }
+    }
+  ]
+}

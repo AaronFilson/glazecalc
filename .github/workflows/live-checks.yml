@@ -1,0 +1,89 @@
+name: Live checks
+
+# Checks a deployed site from outside, after Deploy and Deploy staging (or by
+# hand, Actions → Live checks): the health check and security headers, every
+# live language's home page and the English public pages (scripts/live-check.mjs);
+# the same pages in a browser with no Content-Security-Policy violation or
+# script error (e2e/live); and the MCP endpoint against the protocol
+# (scripts/mcp-conformance.mjs). Read-only: it signs in nowhere and saves nothing.
+on:
+  workflow_call:
+    inputs:
+      url:
+        description: 'The site, such as https://glazecalcapp.com'
+        required: true
+        type: string
+      ref:
+        description: 'The deployed commit, whose own checks are run (blank: these)'
+        required: false
+        type: string
+  workflow_dispatch:
+    inputs:
+      url:
+        description: 'The site to check'
+        required: true
+        type: choice
+        options:
+          - https://glazecalcapp.com
+          - https://staging.glazecalcapp.com
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    name: Live checks (${{ inputs.url }})
+    # 24.04 as CI: Playwright's browser dependencies install there.
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    env:
+      LIVE_URL: ${{ inputs.url }}
+    steps:
+      # The deployed commit's own checks, which expect what it serves; one from
+      # before the checks existed is checked with this workflow's.
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ inputs.ref }}
+          persist-credentials: false
+
+      - name: Has its own checks?
+        id: own
+        run: if [ -f scripts/live-check.mjs ] && [ -d e2e/live ]; then echo "yes=true" >> "$GITHUB_OUTPUT"; fi
+
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        if: steps.own.outputs.yes != 'true'
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install
+        run: npm ci --ignore-scripts
+
+      - name: Pages and headers
+        run: node scripts/live-check.mjs
+
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Pages in a browser
+        run: npx playwright test --config playwright.live.config.js
+
+      - name: Install the MCP conformance tools
+        working-directory: scripts/mcp-conformance
+        run: npm ci --ignore-scripts --no-audit --no-fund
+
+      - name: MCP endpoint
+        run: MCP_INSPECTOR_ONLY=1 MCP_URL="$LIVE_URL/mcp" npm run test:mcp
+
+      - name: Keep what failed (screenshots, traces)
+        if: failure()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: live-check-results
+          path: test-results/
+          retention-days: 14
+          if-no-files-found: ignore

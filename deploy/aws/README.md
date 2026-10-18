@@ -112,20 +112,32 @@ can do is run the `glazecalc-deploy` command document on instances tagged `app=g
 That document runs `deploy.sh` and nothing else, and AWS rejects any tag that is not `latest`
 or `sha-<40 hex characters>`, so even an approved workflow run cannot run other commands.
 
+**Staging** (the Deploy staging workflow, deploy/README.md, "Staging"): a second role, which only
+runs in the repository's `staging` environment can assume, and which may only run the
+`glazecalc-staging-deploy` document. That runs `staging.sh` with a tag AWS checks to be
+`staging-<40 hex>` or `sha-<40 hex>`; the role cannot run production's document or any other
+command. But `staging.sh` runs as root on the instance production shares, and takes its own
+scripts from the commit it stages: approving a staging run trusts that branch's `deploy/` as
+much as running it by hand would. The workflow stages only commits on this repository's branches
+(never a fork's pull request), and only after the `staging` environment's reviewer approves. The
+OIDC provider is shared.
+
+Both, with GitHub's OIDC provider, come from one script, run as the admin in CloudShell (the
+repository is public, so a clone needs no sign-in):
+
 ```bash
-aws iam create-open-id-connect-provider --url https://token.actions.githubusercontent.com \
-  --client-id-list sts.amazonaws.com
-aws iam create-role --role-name glazecalc-github-deploy \
-  --assume-role-policy-document file://deploy/aws/github-oidc-trust.json
-aws iam put-role-policy --role-name glazecalc-github-deploy --policy-name ssm-deploy \
-  --policy-document file://deploy/aws/deploy-policy.json
-aws ssm create-document --name glazecalc-deploy --document-type Command --document-format JSON \
-  --content file://deploy/aws/deploy-document.json --tags Key=app,Value=glazecalc
+git clone --depth 1 https://github.com/AaronFilson/glazecalc.git && cd glazecalc
+bash deploy/aws/setup-github-deploy.sh
 ```
 
-If `deploy-document.json` changes later:
-`aws ssm update-document --name glazecalc-deploy --content file://deploy/aws/deploy-document.json --document-version '$LATEST'`,
-then `aws ssm update-document-default-version --name glazecalc-deploy --document-version <new version>`.
+It makes what is missing and brings what exists up to date with the files in `deploy/aws/` (each
+role's trust and policy, each document, whose new version becomes its default), and changes
+nothing else; run it again whenever one of those files changes. The first run after the Deploy
+staging workflow was added makes the staging role and document, and raises production's
+document timeout from 600 to 900 seconds (deploys now back up first): run it before approving
+the first production deploy that backs up, or that deploy could be cut off at 600 seconds. It only
+changes AWS, so it can run before the merge, from the branch (`git clone --depth 1 -b
+deploy-automation ...`). It prints the two role ARNs for GitHub (section 12).
 
 ## 6. Security group: web traffic only
 
@@ -257,6 +269,11 @@ Sign in with a browser after `enable-https.sh`.
    required reviewer; add variables `AWS_DEPLOY_ROLE_ARN` =
    `arn:aws:iam::724654236968:role/glazecalc-github-deploy` and `AWS_REGION` = `us-west-2`.
 3. Actions → **Deploy** → Run workflow deploys the current master image.
+4. For staging, an environment `staging` the same way, with `AWS_STAGING_ROLE_ARN` =
+   `arn:aws:iam::724654236968:role/glazecalc-github-staging` and `AWS_REGION` = `us-west-2`.
+   Under **Deployment branches**, choose "Selected branches" and add `master`: the workflow is
+   always run from master (the branch to stage is its input), so a workflow file edited on
+   another branch can never assume the role.
 
 ## 13. DNS switch (after restoring data, see the plan)
 

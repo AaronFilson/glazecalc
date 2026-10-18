@@ -5,6 +5,7 @@ import chemistry from '../../lib/chemistry/index.js';
 import standardData from '../../data/index.js';
 import recipe from '../../lib/recipe/index.js';
 import { MOST_LINES, resetFits, FITS_PER_MINUTE, guarded, ToolProblem, UNEXPECTED } from '../mcp/common.ts';
+import { MCP_LIMITS } from '../lib/rate_limit.ts';
 import { termsOf } from '../mcp/guides.ts';
 import { findMaterial } from '../mcp/library.ts';
 import { MOST_STREAMS_PER_ADDRESS, sdkSubscribers, streamsOpen } from '../mcp/index.ts';
@@ -990,8 +991,11 @@ describe('MCP: limits', () => {
       if (answer.status !== 200) refused = answer;
     }
     expect(refused?.status).to.equal(429);
-    // The address is used up; a token is counted per account instead.
-    expect((await rpc('ping', {}, bearer(token))).status).to.equal(200);
+    // The address is used up; a token is counted per account instead, with its own, larger limit.
+    for (let i = 0; i < MCP_LIMITS.minute.account; i++) {
+      expect((await rpc('ping', {}, bearer(token))).status).to.equal(200);
+    }
+    expect((await rpc('ping', {}, bearer(token))).status).to.equal(429);
   });
 
   it('counts a batch as the one request it is, and answers none of its messages', async () => {
