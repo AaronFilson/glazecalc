@@ -453,3 +453,17 @@ describe('pages in each language', () => {
     expect(arabic.headers['cache-control']).to.equal('no-cache');
   });
 });
+
+describe('search result descriptions', () => {
+  // Search results cut a description at about 155-160 characters. Indonesian and
+  // Vietnamese ran to 190; other languages are checked when they are next translated.
+  it('keeps the Indonesian and Vietnamese ones to 160 characters', () => {
+    for (const code of ['id', 'vi']) {
+      const file = path.join(import.meta.dirname, '..', '..', 'client', 'public', 'i18n', code + '.json');
+      const { meta } = JSON.parse(fs.readFileSync(file, 'utf8')) as { meta: Record<string, string> };
+      for (const [key, text] of Object.entries(meta)) {
+        expect([...text].length, `${code} meta.${key}`).to.be.at.most(160);
+      }
+    }
+  });
+});

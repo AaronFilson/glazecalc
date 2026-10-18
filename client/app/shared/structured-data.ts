@@ -24,6 +24,24 @@ export function webApplication(description: string, language: string, address: s
   };
 }
 
+/**
+ * The home page's data: its WebApplication, and on the site's own home page
+ * (the English one at the root) a WebSite too, in one @graph, which is where
+ * Google reads the site's name for its results
+ * (https://developers.google.com/search/docs/appearance/site-names). The other
+ * languages' home pages are subdirectories, which Google does not read for the
+ * name, so they keep the WebApplication alone.
+ */
+export function homeData(description: string, language: string, address: string): object {
+  const app = webApplication(description, language, address);
+  if (address !== SITE + '/') return app;
+  const { '@context': context, ...rest } = app as Record<string, unknown>;
+  return {
+    '@context': context,
+    '@graph': [{ '@type': 'WebSite', name: 'Glazecalc', url: SITE + '/' }, rest]
+  };
+}
+
 /** A guide's Article (https://schema.org/Article); dateModified only where the guide's front matter has one. */
 export function article(
   headline: string,

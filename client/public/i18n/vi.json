@@ -80,16 +80,16 @@
     "notANumberPoint": "Nhập một số, chẳng hạn {example}, dùng dấu chấm cho phần thập phân."
   },
   "meta": {
-    "description": "Nhập một công thức men gốm và xem công thức Seger (UMF), tỷ lệ silica trên alumina và cân bằng chất trợ chảy. Miễn phí và mã nguồn mở, cho công thức men, nguyên liệu và nhật ký nung.",
+    "description": "Nhập công thức men gốm, xem công thức Seger (UMF), tỷ lệ silica/alumina, cân bằng chất trợ chảy. Miễn phí, nguồn mở, cho công thức, nguyên liệu, nhật ký nung.",
     "guides": "Các cẩm nang dễ hiểu cho thợ gốm mới: men là gì, cách làm và pha men an toàn, giữ an toàn cho gia đình bạn, và nung một lò gốm cơ bản.",
-    "glazingBasics": "Men được làm từ gì, lò nung biến men thành thủy tinh thế nào, và côn, frit, công thức Seger cùng các khuyết tật men có nghĩa là gì. Một cẩm nang cho thợ gốm mới.",
+    "glazingBasics": "Men làm từ gì, lò nung biến men thành thủy tinh thế nào, và côn, frit, công thức Seger cùng các khuyết tật men nghĩa là gì. Cẩm nang cho thợ gốm mới.",
     "makingAGlaze": "Cách mua, bảo quản, cân và pha men, làm cho lớp men có độ dày đúng, thử men trên đất của bạn và ghi chép lại để có thể làm lại.",
-    "safeMixing": "Cách giữ bụi men không vào phổi bạn và khói lò không vào nhà bạn: thói quen an toàn, khẩu trang lọc bụi đạt chuẩn, vệ sinh, thông gió và các nguyên liệu nguy hiểm.",
+    "safeMixing": "Cách giữ bụi men không vào phổi và khói lò không vào nhà bạn: thói quen an toàn, khẩu trang lọc bụi đạt chuẩn, vệ sinh, thông gió và các nguyên liệu nguy hiểm.",
     "homeSafety": "Phải làm gì nếu trẻ em hoặc thú cưng nuốt phải nguyên liệu làm men, và cách giữ an toàn cho nguyên liệu, bụi, lò nung và đồ gốm thủ công quanh gia đình bạn.",
     "firing": "Cách nung lò nung điện: chọn, đặt và đọc côn, và làm theo các đường cong nung đã công bố cho nung mộc và nung men, kèm bảng côn.",
     "advice": "Mẹo thực tế về pha men, tráng men và nung, từ Glazecalc, cùng lời khuyên của riêng bạn. Miễn phí cho thợ gốm và nghệ nhân gốm sứ.",
     "about": "Glazecalc là công cụ tính men và sổ tay hóa học men miễn phí, mã nguồn mở. Xem cách nó tính công thức Seger và cách nó được xây dựng.",
-    "privacy": "Cách Glazecalc xử lý dữ liệu của bạn: không quảng cáo, không phân tích, không theo dõi, và không bán gì cả. Những gì được lưu, vì sao, và cách thực hiện quyền của bạn.",
+    "privacy": "Cách Glazecalc xử lý dữ liệu của bạn: không quảng cáo, phân tích hay theo dõi, không bán gì cả. Những gì được lưu, vì sao, và cách thực hiện quyền của bạn.",
     "signup": "Tạo tài khoản Glazecalc miễn phí để lưu công thức men, nguyên liệu, ghi chú và nhật ký nung. Không quảng cáo, và dữ liệu của bạn không bao giờ bị bán.",
     "imageAlt": "Glazecalc: hiểu men của bạn, không chỉ pha chúng."
   },

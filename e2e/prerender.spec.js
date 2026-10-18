@@ -119,9 +119,12 @@ test.describe('structured data', () => {
     await page.goto('/');
     await expect(page.locator('h1')).toBeVisible();
     await expect.poll(() => jsonLd(page)).toHaveLength(1);
-    const [data] = await jsonLd(page);
+    const [graph] = await jsonLd(page);
+    // The site's own home page names the site too (WebSite), for search results.
+    expect(graph['@context']).toBe('https://schema.org');
+    expect(graph['@graph'][0]).toEqual({ '@type': 'WebSite', name: 'Glazecalc', url: 'https://glazecalcapp.com/' });
+    const data = graph['@graph'][1];
     expect(data).toMatchObject({
-      '@context': 'https://schema.org',
       '@type': 'WebApplication',
       name: 'Glazecalc',
       applicationCategory: 'DesignApplication',
@@ -132,6 +135,9 @@ test.describe('structured data', () => {
       url: 'https://glazecalcapp.com/'
     });
     expect(data.description).toMatch(SITE_DESCRIPTION);
+    // Another language's home page is a subdirectory, which Google does not read for the name.
+    await page.goto('/de/');
+    await expect.poll(async () => (await jsonLd(page)).map((block) => block['@type'])).toEqual(['WebApplication']);
   });
 
   test('a guide says what it is, in its language, and the block is data, not a script', async ({ page }) => {

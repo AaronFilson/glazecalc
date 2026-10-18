@@ -12,8 +12,9 @@ const TOKEN = 'YOUR_TOKEN';
  * and 32): what the MCP tools do, the address, and how to add it to Claude
  * Code, VS Code, Cursor and Gemini CLI, with and without an access token. The
  * setups are code, the same in every language, so they are not messages.
- * In English for now, and not yet a public page in the sitemap: it becomes
- * one with its translations.
+ * Translated into every language, but not a public page: it is not
+ * prerendered or in the sitemap, and search engines are told not to index it
+ * (server/lib/pages.ts, isAppOnlyPage). Making it public is the owner's call.
  */
 @Component({
   selector: 'gc-assistants-page',
