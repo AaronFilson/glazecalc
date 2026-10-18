@@ -8,6 +8,7 @@ import {
   approxCone,
   cleanFiring,
   coneLabel,
+  ordinal,
   testedCones
 } from '../../../../lib/cones/firing';
 import type { ConeSystem, TemperatureScale } from '../../core/preferences.service';
@@ -39,7 +40,6 @@ export const ATMOSPHERE_NAMES: Record<string, string> = {
 const BASIS: Record<ApproxBasis, string> = {
   'orton-60': marker('recipe.firing.basis.orton60'),
   kyoto: marker('recipe.firing.basis.kyoto'),
-  jis: marker('recipe.firing.basis.jis'),
   stated: marker('recipe.firing.basis.stated')
 };
 
@@ -91,10 +91,15 @@ export function scheduleText(block: FiringBlock, reader: Reader): string {
   return parts.join('; ');
 }
 
+/** Whether figures run low to high, so a range is never shown out of order. */
+const inOrder = (values: number[]): boolean => values.every((v, i) => i === 0 || v >= values[i - 1]!);
+
 /**
  * The approximate conversion beside the original, or '': the temperature
  * (for a cone) and, when the reader fires to another cone system, the nearest
- * fair cone in it. Each part says what it rests on.
+ * fair cone in it. Each part says what it rests on. A range is converted
+ * only when both ends have a figure and they run in order; otherwise that
+ * part is left out rather than shown half or backwards.
  */
 export function conversionText(block: FiringBlock, reader: Reader): string {
   if (!block.low) return '';
@@ -102,7 +107,7 @@ export function conversionText(block: FiringBlock, reader: Reader): string {
   const parts: string[] = [];
   if (block.scale !== 'temperature') {
     const temps = ends.map((cone) => approxCelsius(block.scale, cone));
-    if (temps.every((t) => t !== null)) {
+    if (temps.every((t) => t !== null) && inOrder(temps.map((t) => t!.celsius))) {
       const text = temps.map((t) => formatTemperature(t!.celsius, reader.temperature)).join('–');
       const bases = [...new Set(temps.map((t) => translate(BASIS[t!.basis])))];
       parts.push(translate('recipe.firing.approxTemperature', { temperature: text, basis: listOf(bases, 'unit') }));
@@ -110,7 +115,10 @@ export function conversionText(block: FiringBlock, reader: Reader): string {
   }
   if (reader.cones !== 'temperature' && reader.cones !== block.scale) {
     const cones = ends.map((cone) => approxCone(block.scale, cone, reader.cones));
-    if (cones.every((c) => c !== null)) {
+    if (
+      cones.every((c) => c !== null) &&
+      inOrder(cones.map((c) => ordinal(reader.cones as ConeScale, c!.cone)))
+    ) {
       const named = [...new Set(cones.map((c) => c!.cone))];
       const text = rangeText(reader.cones, named[0]!, named[1], reader);
       const bases = [...new Set(cones.map((c) => translate(BASIS[c!.basis])))];

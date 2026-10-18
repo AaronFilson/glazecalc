@@ -125,10 +125,13 @@ describe('firing in words', () => {
     expect(words.conversion).toContain("measured at 100 °C an hour by Kyoto's municipal institute");
     expect(words.conversion).toContain('≈ cone 7');
     expect(words.conversion).not.toContain('cone 10');
-    // A nominal SK figure gives a temperature, labelled, and no Orton cone.
-    const nominal = firingWords({ scale: 'sk', low: '9' }, orton)!;
-    expect(nominal.conversion).toContain('the JIS figure; kilns usually bend it cooler');
-    expect(nominal.conversion).not.toContain('≈ cone');
+    // An SK cone Kyoto did not measure gets no temperature and no Orton cone: the JIS figures are never shown.
+    expect(firingWords({ scale: 'sk', low: '9' }, orton)!.conversion).toBe('');
+    expect(firingWords({ scale: 'sk', low: '7' }, orton)!.conversion).toBe('');
+    // A range is converted only when both ends are measured, and then in order.
+    expect(firingWords({ scale: 'sk', low: '8', high: '9' }, orton)!.conversion).toBe('');
+    const measured = firingWords({ scale: 'sk', low: '8', high: '10' }, { cones: 'orton', temperature: 'C' })!;
+    expect(measured.conversion).toContain('1198 °C–1232 °C');
     expect(firingLine({ scale: 'orton', low: '5.5' }, orton)).toBe('Tested at cone 5½');
     expect(firingWords(null, orton)).toBeNull();
   });

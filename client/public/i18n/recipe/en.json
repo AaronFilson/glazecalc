@@ -930,7 +930,6 @@
     "basis": {
       "orton60": "Orton large cones at 60 °C an hour",
       "kyoto": "measured at 100 °C an hour by Kyoto's municipal institute",
-      "jis": "the JIS figure; kilns usually bend it cooler",
       "stated": "as given"
     },
     "rateText": "{rate} an hour over the last hour",

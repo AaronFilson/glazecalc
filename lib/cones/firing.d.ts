@@ -50,7 +50,7 @@ export function cleanFiring(block: FiringBlock | null | undefined): FiringBlock 
 export function isStated(block: FiringBlock | null | undefined): boolean;
 export function coneLabel(cone: string | undefined): string;
 
-export type ApproxBasis = 'orton-60' | 'kyoto' | 'jis' | 'stated';
+export type ApproxBasis = 'orton-60' | 'kyoto' | 'stated';
 export function approxCelsius(scale: ConeScale, cone: string): { celsius: number; basis: ApproxBasis } | null;
 export function approxCone(
   scale: ConeScale,

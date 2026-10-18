@@ -1,4 +1,5 @@
 import firing from '../../lib/cones/firing.js';
+import cones from '../../lib/cones/index.js';
 import paste from '../../lib/recipe/paste.js';
 import { api, expect, makeUser } from './support/app.ts';
 
@@ -82,10 +83,17 @@ describe('recipe firing (lib/cones/firing.js)', () => {
     expect(firing.firingBands(null)).to.eql([]);
   });
 
-  it('converts only approximately and says on what: Kyoto’s measured SK, not the JIS nominal figure', () => {
+  it('converts only approximately and says on what: Kyoto’s measured SK only, never the JIS nominal figure', () => {
     expect(firing.approxCelsius('orton', '6')).to.eql({ celsius: 1222, basis: 'orton-60' });
     expect(firing.approxCelsius('sk', '10')).to.eql({ celsius: 1232, basis: 'kyoto' });
-    expect(firing.approxCelsius('sk', '9')).to.eql({ celsius: 1280, basis: 'jis' });
+    expect(firing.approxCelsius('sk', '8')).to.eql({ celsius: 1198, basis: 'kyoto' });
+    // Only Kyoto's measured cones get a temperature: the JIS figures of their neighbours
+    // (SK 7 1230 °C, SK 9 1280 °C) would put SK 7 above SK 8.
+    for (const cone of ['7', '9', '6a', '11', '12', '022']) expect(firing.approxCelsius('sk', cone)).to.equal(null);
+    const shown = cones.SK.cones
+      .map((c: { cone: string }) => firing.approxCelsius('sk', c.cone)?.celsius)
+      .filter((c: number | undefined) => c !== undefined);
+    expect(shown).to.eql([...shown].sort((a: number, b: number) => a - b));
     expect(firing.approxCelsius('orton', '30')).to.equal(null);
     // SK 10 is not Orton 10; SK 12 is the institute's replacement for it.
     expect(firing.approxCone('sk', '10', 'orton')?.cone).to.not.equal('10');
