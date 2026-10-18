@@ -17,13 +17,17 @@
     "confirmEmail": "Sähköpostiosoitteen vahvistaminen – Glazecalc",
     "home": "Pajan muistikirja – Glazecalc",
     "recipe": "Reseptit – Glazecalc",
+    "import": "Reseptien liittäminen – Glazecalc",
+    "blends": "Seokset koepaloille – Glazecalc",
     "material": "Raaka-aineet – Glazecalc",
     "additive": "Lisäaineet – Glazecalc",
     "firingLogs": "Polttopäiväkirjat – Glazecalc",
     "notes": "Muistiinpanot – Glazecalc",
     "trash": "Roskakori – Glazecalc",
     "account": "Tili ja asetukset – Glazecalc",
-    "notFound": "Sivua ei löydy – Glazecalc"
+    "notFound": "Sivua ei löydy – Glazecalc",
+    "shared": "Jaettu resepti – Glazecalc",
+    "assistants": "Glazecalcin käyttäminen tekoälyavustajasta – Glazecalc"
   },
   "nav": {
     "skip": "Siirry sisältöön",
@@ -96,9 +100,14 @@
   },
   "remove": {
     "alreadyRemoved": "”{name}” oli jo poistettu.",
+    "trashed": "”{name}” siirrettiin roskakoriin.",
+    "undo": "Kumoa",
+    "restored": "”{name}” palautettiin.",
+    "restoreFailed": "Kohdetta ”{name}” ei voitu palauttaa. Se on yhä roskakorissa.",
     "failed": "Poistaminen ei onnistunut. Yritä uudelleen.",
     "question": "Poistetaanko ”{name}”?",
     "cannotUndo": "Toimintoa ei voi kumota.",
+    "toTrash": "Sen voi palauttaa roskakorista 30 päivän ajan.",
     "removing": "Poistetaan…",
     "yes": "Kyllä, poista",
     "cancel": "Peruuta",

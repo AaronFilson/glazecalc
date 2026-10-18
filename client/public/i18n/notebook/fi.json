@@ -17,6 +17,14 @@
         "title": "Reseptit",
         "text": "Kokoa lasite raaka-aineista ja määristä, katso sen Segerin kaava (UMF) ja tallenna se."
       },
+      "import": {
+        "title": "Reseptien liittäminen",
+        "text": "Liitä reseptejä verkkosivulta, taulukosta tai muistiinpanoista, tarkista, mitä luettiin, ja tallenna ne."
+      },
+      "blends": {
+        "title": "Seokset koepaloille",
+        "text": "Sekoita kaksi, kolme tai neljä omaa reseptiä numeroiduiksi koepaloiksi ja katso, mitä kullekin punnitaan."
+      },
       "material": {
         "title": "Raaka-aineet",
         "text": "Lisää omia raaka-aineita kemiallisesta kaavasta tai toimittajan analyysistä."
@@ -99,6 +107,35 @@
     "saveFailed": "Virhe: pyyntö palvelimelle ei onnistunut."
   },
   "trash": {
-    "title": "Roskakori"
+    "title": "Roskakori",
+    "lead": "Resepteistä, raaka-aineista, muistiinpanoista ja päiväkirjoista poistettu odottaa täällä 30 päivää. Palauta se tai poista se lopullisesti.",
+    "listHeading": "Roskakorissa",
+    "none": "Roskakori on tyhjä.",
+    "untitled": "Nimetön",
+    "kinds": {
+      "recipes": "Resepti",
+      "materials": "Raaka-aine",
+      "additives": "Lisäaine",
+      "notes": "Muistiinpano",
+      "firing": "Polttopäiväkirja",
+      "advice": "Neuvo",
+      "other": "Tietue"
+    },
+    "removedOn": "Poistettu {date}",
+    "goesOn": "Poistetaan lopullisesti {date}",
+    "byApp": "Yhdistetyn sovelluksen poistama",
+    "putBack": "Palauta",
+    "putBackName": "Palauta {name}",
+    "restored": "”{name}” palautettiin entiselle paikalleen.",
+    "restoredAlready": "”{name}” oli jo palautettu.",
+    "restoreFailed": "Kohdetta ”{name}” ei voitu palauttaa. Yritä uudelleen.",
+    "deleted": "”{name}” poistettiin lopullisesti.",
+    "empty": "Tyhjennä roskakori",
+    "emptyQuestion": "Poistetaanko roskakorissa {count, plural, one {oleva # tietue} other {olevat kaikki # tietuetta}} lopullisesti? Toimintoa ei voi kumota.",
+    "emptyYes": "Kyllä, tyhjennä",
+    "emptying": "Tyhjennetään…",
+    "emptied": "Roskakori on tyhjä.",
+    "emptyFailed": "Roskakorin tyhjentäminen ei onnistunut. Yritä uudelleen.",
+    "fetchFailed": "Roskakorin lataaminen ei onnistunut. Yritä uudelleen."
   }
 }

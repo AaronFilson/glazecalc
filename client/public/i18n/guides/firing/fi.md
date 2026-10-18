@@ -3,79 +3,79 @@ title: Polttaminen yksinkertaisessa keramiikkauunissa
 lead: Näin poltetaan sähköuunissa, jossa on Kiln-Sitter-katkaisin tai käsin käännettävät kytkimet: keilojen valinta, sijoittaminen ja lukeminen sekä julkaistut polttokäyrät raakapolttoon ja lasituspolttoon.
 ---
 
-## Cones: what they measure {#cones lang=en}
+## Keilat: mitä ne mittaavat {#cones}
 
 > [!NOTE]
-> Follow your kiln's own manual first. This guide gathers what cone and kiln makers publish about basic electric kilns; it does not replace the instructions for your model, and where the two differ, the manual wins.
+> Noudata ensin oman uunin käyttöohjetta. Tähän oppaaseen on koottu, mitä keilojen ja uunien valmistajat julkaisevat yksinkertaisista sähköuuneista; se ei korvaa oman uunimallin ohjeita, ja jos opas ja käyttöohje eroavat toisistaan, käyttöohje ratkaisee.
 
-A **pyrometric cone** is a small, slender pyramid made from a standardized ceramic powder. When it has had enough heat, it softens and bends over in a repeatable way. You set cones in the kiln beside the ware and read how far they bent.
+**Pyrometrinen keila**{{en: pyrometric cone}} on pieni, hoikka pyramidi, joka on tehty vakioidusta keraamisesta jauheesta. Kun se on saanut tarpeeksi lämpöä, se pehmenee ja taipuu joka kerta samalla tavalla. Keilat asetetaan uuniin esineiden viereen, ja niistä katsotaan, kuinka pitkälle ne taipuivat.
 
-Cones measure **heatwork**, the combined effect of temperature and time. In the words of Orton, the main US cone maker, "Cones do not measure temperature alone." A cone heated slowly bends at a lower temperature than one heated fast, and a glaze behaves the same way. So Orton gives each cone's temperature for a stated heating rate over the last {{180 °F; 100 °C}} of the firing. Once a cone starts to move, it bends over a narrow range, "usually less than 40° F" (22 °C).
+Keilat mittaavat **lämpötyötä**{{en: heatwork}}, lämpötilan ja ajan yhteisvaikutusta. Yhdysvaltain tärkeimmän keilavalmistajan Ortonin sanoin: ”Keilat eivät mittaa pelkkää lämpötilaa.” Hitaasti lämmitetty keila taipuu matalammassa lämpötilassa kuin nopeasti lämmitetty, ja lasite{{en: glaze}} käyttäytyy samoin. Siksi Orton ilmoittaa kunkin keilan lämpötilan tietyllä nousunopeudella polton viimeisten {{180 °F; 100 °C}} aikana. Kun keila alkaa liikkua, se taipuu kapealla lämpötila-alueella, ”yleensä alle 40° F” (22 °C).
 
-### Cone numbers
+### Keilojen numerot
 
-Cone numbers run from 022, the coolest, up to 42. A leading zero marks the cooler series and is read as "oh": cone 06 ("oh-six") is cooler than cone 04, and cone 01 needs less heat than cone 1. Orton warns that it is important not to mix the two series up. The gap is large: cone 06 bends more than {{400 °F; 220 °C}} cooler than cone 6.
+Keilojen numerot alkavat viileimmästä keilasta 022 ja päättyvät keilaan 42. Alussa oleva nolla merkitsee viileämpää sarjaa, ja se luetaan ”nolla”: keila 06 (”nolla kuusi”) on viileämpi kuin keila 04, ja keila 01 tarvitsee vähemmän lämpöä kuin keila 1. Orton varoittaa, että on tärkeää olla sekoittamatta näitä kahta sarjaa keskenään. Ero on suuri: keila 06 taipuu yli {{400 °F; 220 °C}} matalammassa lämpötilassa kuin keila 6.
 
-Table: Common firing ranges, for self-supporting cones at {{108 °F/h; 60 °C/h}}
-Label: Firing ranges
+Table: Tavalliset polttoalueet itsestään seisoville keiloille nousunopeudella {{108 °F/h; 60 °C/h}}
+Label: Polttoalueet
 
-| Range     | Cones |                    Temperature | Typical use                              |
-| --------- | ----- | -----------------------------: | ---------------------------------------- |
-| Low fire  | 06–04 |  {{1828–1945 °F; 998–1063 °C}} | Earthenware glazes; bisque               |
-| Mid fire  | 5–6   | {{2167–2232 °F; 1186–1222 °C}} | Electric-kiln stoneware and porcelain    |
-| High fire | 9–10  | {{2300–2345 °F; 1260–1285 °C}} | Mostly gas-fired stoneware and porcelain |
+| Alue         | Keilat |                      Lämpötila | Tyypillinen käyttö                                                  |
+| ------------ | ------ | -----------------------------: | ------------------------------------------------------------------- |
+| Matalapoltto | 06–04  |  {{1828–1945 °F; 998–1063 °C}} | Savitavaran{{en: earthenware}} lasitteet; raakapoltto{{en: bisque}} |
+| Keskipoltto  | 5–6    | {{2167–2232 °F; 1186–1222 °C}} | Sähköuunissa poltettava kivitavara{{en: stoneware}} ja posliini     |
+| Korkeapoltto | 9–10   | {{2300–2345 °F; 1260–1285 °C}} | Enimmäkseen kaasu-uunissa poltettava kivitavara ja posliini         |
 
-Suppliers in the UK, Europe, Australia and New Zealand often give a temperature in °C rather than a cone: find the nearest cone in the chart below and confirm it with a witness cone. Seger and Staffordshire cones, the older European series, should not be assumed to share Orton's numbers, so this guide uses Orton cones.
+Iso-Britannian, Euroopan, Australian ja Uuden-Seelannin toimittajat ilmoittavat usein keilan sijaan lämpötilan celsiusasteina: etsi lähin keila alla olevasta keilataulukosta ja varmista se tarkkailukeilalla{{en: witness cone}}. Seger- ja Staffordshire-keilojen, vanhempien eurooppalaisten sarjojen, ei pitäisi olettaa käyttävän samoja numeroita kuin Orton-keilat, joten tämä opas käyttää Orton-keiloja.
 
-### Holding adds heatwork
+### Haudutus lisää lämpötyötä
 
-A **hold** (also called a **soak**) keeps the kiln at one temperature for a while. Because cones measure heatwork, a hold at the top can stand in for a hotter peak. Orton gives these rough equivalents:
+**Haudutus**{{en: hold}} (englanniksi myös **soak**) tarkoittaa, että uunia pidetään jonkin aikaa samassa lämpötilassa. Koska keilat mittaavat lämpötyötä, haudutus huippulämpötilassa voi korvata kuumemman huipun. Orton antaa nämä karkeat vastaavuudet:
 
-Table: What a hold at the peak is worth
-Label: Holds and heatwork
+Table: Mitä haudutus huippulämpötilassa vastaa
+Label: Haudutus ja lämpötyö
 
-| Hold             | Roughly the same heatwork as             |
-| ---------------- | ---------------------------------------- |
-| About 20 minutes | A peak {{18 °F; 10 °C}} hotter           |
-| 40–60 minutes    | A peak {{36 °F; 20 °C}} hotter           |
-| About 2 hours    | A peak {{54 °F; 30 °C}} hotter           |
-| 4–6 hours        | Enough to bend a cone two numbers hotter |
+| Haudutus          | Suunnilleen sama lämpötyö kuin                      |
+| ----------------- | --------------------------------------------------- |
+| Noin 20 minuuttia | {{18 °F; 10 °C}} kuumempi huippu                    |
+| 40–60 minuuttia   | {{36 °F; 20 °C}} kuumempi huippu                    |
+| Noin 2 tuntia     | {{54 °F; 30 °C}} kuumempi huippu                    |
+| 4–6 tuntia        | Riittää taivuttamaan kaksi numeroa kuumemman keilan |
 
-Orton adds that a hold of 1–2 hours "may be sufficient to deform the next higher cone number".
+Orton lisää, että 1–2 tunnin haudutus ”voi riittää taivuttamaan seuraavaksi korkeamman keilanumeron”.
 
-So a hold is never free: if you add one, expect the cones to bend further, and lower the peak to match.
+Haudutus ei siis ole koskaan ilmainen: jos haudutuksen lisää, odota keilojen taipuvan pidemmälle ja laske huippulämpötilaa vastaavasti.
 
-### Kinds of cone
+### Keilojen lajit
 
-Orton makes four kinds. Two stand on the shelf to show what the ware received; two are for the kiln sitter.
+Orton valmistaa neljää keilalajia. Kaksi seisoo uunilevyllä ja näyttää, mitä esineet saivat; kaksi on Kiln-Sitter-katkaisinta{{en: kiln sitter}} varten.
 
-Table: Orton's four kinds of cone
-Label: Kinds of cone
+Table: Ortonin neljä keilalajia
+Label: Keilalajit
 
-| Kind            | Used for                  | How it stands                                                                               |
-| --------------- | ------------------------- | ------------------------------------------------------------------------------------------- |
-| Self-supporting | Witness cone on the shelf | A built-in base sets the height, 1¾ in (44 mm), and the 8° lean; no holder needed           |
-| Large           | Witness cone on the shelf | Set in a plaque or a pat of clay with exactly 2 in (51 mm) showing, leaning 8° from upright |
-| Small (junior)  | Kiln sitter               | Lies across the sitter's supports; 15/16 in (24 mm) showing if stood on a shelf             |
-| Bar             | Kiln sitter               | The same powder as small cones, in an even bar shape                                        |
+| Laji              | Käyttö                     | Miten se seisoo                                                                                                        |
+| ----------------- | -------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| Itsestään seisova | Tarkkailukeila uunilevyllä | Valmis jalusta määrää korkeuden, 1¾ tuumaa (44 mm), ja 8° kallistuksen; pidikettä ei tarvita                           |
+| Iso               | Tarkkailukeila uunilevyllä | Asetetaan keilapidikkeeseen tai savipetiin niin, että näkyvissä on tasan 2 tuumaa (51 mm), 8° kallellaan pystysuorasta |
+| Pieni (minikeila) | Kiln-Sitter-katkaisin      | Makaa poikittain katkaisimen tukien päällä; uunilevylle pystytettynä näkyvissä 15/16 tuumaa (24 mm)                    |
+| Keilatanko        | Kiln-Sitter-katkaisin      | Samaa jauhetta kuin pienet keilat, tasapaksun tangon muodossa                                                          |
 
-Height matters: a ¼ in (6 mm) difference in the height of a large cone "can cause more than a half cone difference in bending". Cones do not go bad or age, and damp storage does not affect them.
+Korkeudella on merkitystä: ¼ tuuman (6 mm) ero ison keilan korkeudessa ”voi aiheuttaa yli puolen keilan eron taipumisessa”. Keilat eivät pilaannu eivätkä vanhene, eikä kostea säilytys vaikuta niihin.
 
-### What "cone 6" means in practice
+### Mitä ”keila 6” tarkoittaa käytännössä
 
-The chart gives a self-supporting cone 6 as {{2232 °F; 1222 °C}}, but only when the last {{180 °F; 100 °C}} climbs at {{108 °F/h; 60 °C/h}}. Climbing at {{270 °F/h; 150 °C/h}}, the same cone bends at {{2269 °F; 1243 °C}}. Real kilns differ again: Digitalfire reports that "Most kilns reach cone 6 at 2200°F, not 2232°F". So "cone 6" means the ware received the heatwork that bends a cone 6, whatever a thermometer read at the time.
+Keilataulukko antaa itsestään seisovalle keilalle 6 lämpötilan {{2232 °F; 1222 °C}}, mutta vain kun polton viimeiset {{180 °F; 100 °C}} nousevat nopeudella {{108 °F/h; 60 °C/h}}. Nopeudella {{270 °F/h; 150 °C/h}} sama keila taipuu lämpötilassa {{2269 °F; 1243 °C}}. Todelliset uunit poikkeavat vielä tästäkin: Digitalfire kertoo, että ”useimmat uunit saavuttavat keilan 6 lämpötilassa 2200°F, eivät lämpötilassa 2232°F”. ”Keila 6” tarkoittaa siis, että esineet saivat keilan 6 taivuttavan lämpötyön, näytti lämpömittari silloin mitä tahansa.
 
 :::orton
 
 > [!NOTE]
-> Fire by the cone, not the clock or the dial. Set a controller by cone number, and let a witness cone on the shelf confirm every firing.
+> Polta keilan mukaan, älä kellon tai mittarin mukaan. Aseta automatiikka keilan numeron mukaan ja anna uunilevyllä olevan tarkkailukeilan vahvistaa jokainen poltto.
 
 :::
 
 :::temperature
 
 > [!NOTE]
-> Firing by temperature, keep the end of every firing the same: the same last rate of climb, the same peak and the same hold. Then a glaze that worked once works again.
+> Kun poltetaan lämpötilan mukaan, pidä jokaisen polton loppu samanlaisena: sama viimeinen nousunopeus, sama huippulämpötila ja sama haudutus. Silloin kerran onnistunut lasite onnistuu uudelleen.
 
 :::
 
@@ -596,22 +596,22 @@ Jos katkaisin laukeaa ennen kuin uunilevyn keilat ovat taipuneet, käytä katkai
 
 **Lämpömittari** (pyrometri) näyttää lämpötilan, jonka se lukee **termoelementistä**, uunin seinän läpi menevästä lämpöanturista. Se näyttää, kuinka nopeasti uunin lämpötila nousee, joten sen avulla voi valita keilataulukosta oikean sarakkeen. Se kuitenkin mittaa seinän lähellä eikä esineiden kohdalla, ja sen lukema muuttuu ajan myötä. L&L huomauttaa, että K-tyypin termoelementin lukema voi heittää yli {{25 °F; 14 °C}} toistuvien keilan 6 polttojen jälkeen, ”ero, joka on suurempi kuin kokonainen keila”, kun taas itsestään seisovan keilan vaihtelu on enintään {{4 °F; 2 °C}}. Ortonin mukaan lämpömittarit on kalibroitava aika ajoin uudelleen, ja keiloilla ne tarkistetaan.
 
-## Venting, peeking and safety {#venting lang=en}
+## Tuuletus, kurkistaminen ja turvallisuus {#venting}
 
-### Venting
+### Tuuletus
 
-Early in a firing, clay and glaze give off water vapor and fumes, including carbon monoxide, and glazes can give off toxic fumes later in the firing too. L&L calls venting them "essential". With no vent system, that means the lid propped and the peepholes open in the early stages, as in the procedures above; slowing the heating during this time also helps the carbon burn out. In a kiln without a vent, Dawson, who made the sitter, also says to leave the top peephole open for the whole firing: the venting "will reduce deterioration of the kiln's metal parts and increase the life of the tube assembly". A **downdraft vent** (a powered vent fitted to the kiln) changes this. It does the venting, so Orton says the lid and peepholes stay closed for the whole firing except to check the cones, and L&L says to leave the vent on and plug the peepholes.
+Polton alussa savesta ja lasitteesta{{en: glaze}} vapautuu vesihöyryä ja savukaasuja, myös häkää (hiilimonoksidia), ja lasitteista voi vapautua myrkyllisiä savukaasuja myöhemminkin poltossa. L&L pitää niiden poistamista ”välttämättömänä”. Jos uunissa ei ole imujärjestelmää, tämä tarkoittaa, että alkuvaiheissa kansi on raollaan ja tirkistysaukot auki, kuten edellä esitetyissä menettelyissä; lämmityksen hidastaminen tänä aikana auttaa myös hiiltä palamaan pois. Jos uunissa ei ole savukaasuimuria, myös Kiln-Sitter-katkaisimen{{en: kiln sitter}} valmistaja Dawson sanoo, että ylin tirkistysaukko jätetään auki koko polton ajaksi: tuuletus ”vähentää uunin metalliosien rappeutumista ja pidentää putkikokoonpanon käyttöikää”. **Uunin pohjasta imevä savukaasuimuri** (uuniin asennettu moottoroitu imuri) muuttaa tämän. Se hoitaa tuuletuksen, joten Ortonin mukaan kansi ja tirkistysaukot pysyvät kiinni koko polton ajan, paitsi keiloja tarkistettaessa, ja L&L sanoo, että imuri jätetään päälle ja tirkistysaukot tukitaan.
 
-For venting the room, and for carbon monoxide alarms, see [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety).
+Huoneen tuuletuksesta ja häkävaroittimista kerrotaan oppaissa [Turvallinen sekoittaminen ja ilmanvaihto](/guides/safe-mixing) ja [Älä myrkytä perhettäsi](/guides/home-safety).
 
-### While the kiln is firing
+### Uunin ollessa päällä
 
-- Look through a peephole only with IR-rated shade 3 welding glasses; sunglasses are not enough. Skutt advises twisting the plugs into place so they do not fall out.
-- Do not leave the kiln unattended beyond its expected firing time; a sitter is not a fail-safe.
-- Never fire on or near anything that burns, such as a wood floor or carpet.
-- Keep the clearances in your manual. Published figures range from 12 in (30 cm) to 3 ft (91 cm); where the manual is silent, 18 in (46 cm) from walls and 3 ft (91 cm) from anything that burns is the safest choice.
-- Keep the space around the sitter's weight clear so it can drop.
-- When the firing ends, turn the switches off and turn off the breaker as well.
+- Katso tirkistysaukosta vain IR-suojatuilla hitsauslaseilla, tummuusaste 3; aurinkolasit eivät riitä. Skutt neuvoo kiertämään tulpat paikoilleen, jotta ne eivät putoa.
+- Älä jätä uunia valvomatta odotetun polttoajan jälkeen; Kiln-Sitter ei ole vikaturvallinen varmistus.
+- Älä koskaan käytä uunia palavan materiaalin, kuten puulattian tai maton, päällä tai lähellä.
+- Noudata käyttöohjeen suojaetäisyyksiä. Julkaistut luvut vaihtelevat 12 tuumasta (30 cm) 3 jalkaan (91 cm); jos käyttöohje ei kerro, turvallisin valinta on 18 tuumaa (46 cm) seinistä ja 3 jalkaa (91 cm) kaikesta palavasta.
+- Pidä Kiln-Sitterin painon ympäristö vapaana, jotta paino pääsee putoamaan.
+- Kun poltto päättyy, käännä kytkimet pois päältä ja käännä myös uunin ryhmän automaattisulake pois päältä rakennuksen sähkökeskuksesta.
 
 ## Jäähdytys ja uunin purkaminen {#cooling}
 

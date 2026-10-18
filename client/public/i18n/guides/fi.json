@@ -102,6 +102,9 @@
     "quartzAll": "Kvartsi, kun pöly on kokonaan kvartsia",
     "cristobaliteAll": "Kristobaliitti, kun pöly on kokonaan kristobaliittia",
     "allFree": "Hallintapitoisuus, kun pöly on kokonaan vapaata piidioksidia",
+    "bandFromTo": "Pöly, jonka vapaan piidioksidin (SiO₂) pitoisuus on {from}–{to} %",
+    "bandOverTo": "Pöly, jonka vapaan piidioksidin pitoisuus on yli {from} % ja enintään {to} %",
+    "bandAbove": "Pöly, jonka vapaan piidioksidin pitoisuus on yli {from} %",
     "recommended": "Suositus ({abbr})",
     "value": "{value} mg/m³",
     "kind": {
@@ -160,7 +163,15 @@
       "myFlat": "Matalat astiat",
       "mySmall": "Pienet syvät astiat",
       "myLarge": "Suuret syvät astiat",
-      "myCooking": "Keittoastiat"
+      "myCooking": "Keittoastiat",
+      "idFlat": "Esineet, joiden sisäsyvyys on enintään 25 mm",
+      "idSmall": "Esineet, joiden sisäsyvyys on yli 25 mm, alle 1100 mL",
+      "idLarge": "Esineet, joiden sisäsyvyys on yli 25 mm, vähintään 1100 mL",
+      "thFlat": "Esineet, joiden syvyys on enintään 25 mm",
+      "thSmall": "Esineet, joiden syvyys on yli 25 mm, alle 1,1 L",
+      "thLarge": "Esineet, joiden syvyys on yli 25 mm, vähintään 1,1 L",
+      "thInfant": "Astiat enintään 12 kuukauden ikäisten vauvojen ruoalle",
+      "thCooking": "Keittoastiat, jotka on tehty kestämään keittämisen kuumuus"
     },
     "judged": {
       "average": "6 esineen keskiarvo",
