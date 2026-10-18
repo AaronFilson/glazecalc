@@ -44,7 +44,7 @@
             gcFieldName="fields"
           >
             <!-- Each column is saved by its English name, and shown in the page's language. -->
-            @for (field of fieldOptions; track field) {
+            @for (field of fieldOptions(); track field) {
               <option [value]="field">{{ fieldLabel(field) }}</option>
             }
           </select>

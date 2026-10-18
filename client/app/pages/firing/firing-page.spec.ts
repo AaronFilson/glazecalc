@@ -75,6 +75,28 @@ describe('FiringPage', () => {
     expect(page['log']().rows).toEqual([['', '1:00']]);
   });
 
+  it('offers only the fields not added yet, moving on to the next after each', async () => {
+    const { fixture, page } = await create();
+    const offered = () =>
+      [...(fixture.nativeElement.querySelector('#fieldselect') as HTMLSelectElement).options].map((o) => o.value);
+    expect(offered()[0]).toBe('Time');
+    expect(page['selectedField']()).toBe('Time');
+    page['addField']();
+    await fixture.whenStable();
+    expect(offered()).not.toContain('Time');
+    expect(page['selectedField']()).toBe('Gas');
+    // Chosen elsewhere, it is kept while it is still offered.
+    page['selectedField'].set('Cone');
+    page['addField']();
+    page['addField']();
+    await fixture.whenStable();
+    expect(page['log']().fields).toEqual(['Time', 'Cone', 'Gas']);
+    // Removed, a field is offered again.
+    page['removeField'](0);
+    await fixture.whenStable();
+    expect(offered()).toContain('Time');
+  });
+
   it('shows what is in each cell after a column moves or is removed', async () => {
     const { fixture, page } = await create();
     const boxes = () => [...fixture.nativeElement.querySelectorAll('.firing-cell')] as HTMLInputElement[];

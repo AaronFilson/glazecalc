@@ -298,6 +298,9 @@ test.describe('firing log', () => {
       await page.locator('#fieldselect').selectOption(field);
       await page.getByRole('button', { name: 'Add the field' }).click();
     }
+    // A field added is not offered again.
+    await expect(page.locator('#fieldselect option[value="Time"]')).toHaveCount(0);
+    await expect(page.locator('#fieldselect')).toHaveValue('Gas');
     await page.getByRole('button', { name: 'Add a row to the firing table' }).click();
     await page.getByRole('button', { name: 'Add a row to the firing table' }).click();
     await page.getByLabel('Time row 1').fill('8:00');
