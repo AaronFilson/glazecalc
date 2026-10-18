@@ -54,6 +54,9 @@ test.describe('home and navigation', () => {
     await page.goto('/home');
     await page.locator('.home-card', { hasText: 'Blends for test tiles' }).click();
     await expect(page).toHaveURL(/\/blends$/);
+    await page.goto('/home');
+    await page.locator('.home-card', { hasText: 'Trash' }).click();
+    await expect(page).toHaveURL(/\/trash$/);
     // Signed in, the site's root address goes home.
     await page.goto('/');
     await expect(page).toHaveURL(/\/home$/);
